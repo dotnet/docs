@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WS Transport Security"
 title: "WS Transport Security"
 ms.date: "03/30/2017"
 ms.assetid: 33a20358-5e1b-458a-a6a9-15753bc7b99b

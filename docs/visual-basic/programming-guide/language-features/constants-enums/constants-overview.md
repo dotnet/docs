@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Constants Overview (Visual Basic)"
 title: "Constants Overview"
 ms.date: 07/20/2015
 helpviewer_keywords: 

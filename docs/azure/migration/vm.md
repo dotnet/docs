@@ -21,7 +21,7 @@ These tutorials demonstrate the steps to create (or migrate) a virtual machine, 
   - [Create a new virtual machine for ASP.NET Applications](https://go.microsoft.com/fwlink/?linkid=863237)
   - [Migrate an existing on-premises VMWare virtual machine](/azure/migrate/tutorial-migrate-vmware)
   - [Migrate an existing on-premises Hyper-V virtual machine](/azure/migrate/tutorial-migrate-hyper-v)
-- [Publish your app using Visual Studio](https://go.microsoft.com/fwlink/?linkid=863240)
+- [Publish your app using Visual Studio](/azure/virtual-machines/windows/publish-web-app-from-visual-studio)
 - [Create a secure virtual network for your VMs](/azure/virtual-network/virtual-network-get-started-vnet-subnet)
 - [Create a CI/CD pipeline for your application](/vsts/build-release/apps/cd/deploy-webdeploy-iis-deploygroups)
 - [Move to a VM scale set for high availability and scalability](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataTables::GetNextString Method"
 title: "IMetaDataTables::GetNextString Method"
 ms.date: "03/30/2017"
 api_name: 

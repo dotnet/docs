@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Customize Feeds with the Entity Framework Provider (WCF Data Services)"
 title: "How to: Customize Feeds with the Entity Framework Provider (WCF Data Services)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
@@ -7,6 +8,8 @@ helpviewer_keywords:
 ms.assetid: fd16272e-36f2-415e-850e-8a81f2b17525
 ---
 # How to: Customize Feeds with the Entity Framework Provider (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 WCF Data Services enables you to customize the Atom serialization in a data service response so that properties of an entity may be mapped to unused elements that are defined in the AtomPub protocol. This topic shows how to define mapping attributes for the entity types in a data model that is defined in an .edmx file by using the Entity Framework provider. For more information, see [Feed Customization](feed-customization-wcf-data-services.md).  
   

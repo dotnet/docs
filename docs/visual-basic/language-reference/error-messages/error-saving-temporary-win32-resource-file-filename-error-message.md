@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30137: Error saving temporary Win32 resource file '<filename>': <error message>"
 title: "Error saving temporary Win32 resource file '<filename>': <error message>"
 ms.date: 07/20/2015
 f1_keywords:

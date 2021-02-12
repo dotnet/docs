@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugMergedAssemblyRecord::GetCulture Method"
 title: "ICorDebugMergedAssemblyRecord::GetCulture Method"
 ms.date: "03/30/2017"
 ms.assetid: 030b2f8c-8c21-40b7-855d-3afa78975a17

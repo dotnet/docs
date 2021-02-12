@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using a custom activity"
 title: "Using a custom activity"
 ms.date: "03/30/2017"
 ms.assetid: 8f356419-681a-4175-ae93-878eee970249

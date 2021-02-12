@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3371 - MtomMessageEncodingStart"
 title: "3371 - MtomMessageEncodingStart"
 ms.date: "03/30/2017"
 ms.assetid: b1ba417f-f765-4567-82e3-ea2080e0ac73

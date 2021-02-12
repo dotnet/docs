@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Time-Based Cache Policies"
 title: "Time-Based Cache Policies"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

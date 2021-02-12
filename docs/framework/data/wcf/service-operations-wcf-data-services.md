@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Service Operations (WCF Data Services)"
 title: "Service Operations (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs:
@@ -10,6 +11,8 @@ helpviewer_keywords:
 ms.assetid: 583a690a-e60f-4990-8991-d6efce069d76
 ---
 # Service Operations (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 WCF Data Services enables you to define service operations on a data service to expose methods on the server. Like other data service resources, service operations are addressed by URIs. Service operations enable you to expose business logic in a data service, such as to implement validation logic, to apply role-based security, or to expose specialized querying capabilities. Service operations are methods added to the data service class that derives from <xref:System.Data.Services.DataService%601>. Like all other data service resources, you can supply parameters to the service operation method. For example, the following service operation URI (based on the [quickstart](quickstart-wcf-data-services.md) data service) passes the value `London` to the `city` parameter:
 

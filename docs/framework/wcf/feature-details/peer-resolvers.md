@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Peer Resolvers"
 title: "Peer Resolvers"
 ms.date: "03/30/2017"
 ms.assetid: d86d12a1-7358-450f-9727-b6afb95adb9c

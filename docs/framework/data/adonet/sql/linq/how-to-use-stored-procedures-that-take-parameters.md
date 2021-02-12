@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Stored Procedures that Take Parameters"
 title: "How to: Use Stored Procedures that Take Parameters"
 ms.date: "03/30/2017"
 dev_langs: 

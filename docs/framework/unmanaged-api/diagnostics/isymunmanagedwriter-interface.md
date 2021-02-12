@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedWriter Interface"
 title: "ISymUnmanagedWriter Interface"
 ms.date: "03/30/2017"
 api_name: 

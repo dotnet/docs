@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WMI Class Reference"
 title: "WMI Class Reference"
 ms.date: "03/30/2017"
 ms.assetid: b95a51f5-8251-4619-ae05-7de88cb90f9a

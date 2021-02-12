@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugMDA::GetDescription Method"
 title: "ICorDebugMDA::GetDescription Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <clientCertificate> of <serviceCredentials>"
 title: "<clientCertificate> of <serviceCredentials>"
 ms.date: "03/30/2017"
 ms.assetid: 90ad03aa-2317-43dd-8a72-6d24cdcad15c

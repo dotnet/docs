@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Enable Access to the Data Service (WCF Data Services)"
 title: "How to: Enable Access to the Data Service (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -9,6 +10,8 @@ helpviewer_keywords:
 ms.assetid: 3d830bcd-32b4-4f26-9287-d58a071452c6
 ---
 # How to: Enable Access to the Data Service (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 In WCF Data Services, you must explicitly grant access to the resources that are exposed by a data service. This means that after you create a new data service, you must still explicitly provide access to individual resources as entity sets. This topic shows how to enable read and write access to five of the entity sets in the Northwind data service that is created when you complete the [quickstart](quickstart-wcf-data-services.md). Because the <xref:System.Data.Services.EntitySetRights> enumeration is defined by using the <xref:System.FlagsAttribute>, you can use a logical OR operator to specify multiple permissions for a single entity set.  
   

@@ -32,26 +32,24 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 
 | Operating System            | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
 |-----------------------------|---------------|---------------|--------|
-| Windows 10, Version 20H2    | ✔️           | ✔️            | ✔️    |
-| Windows 10, Version 2004    | ✔️           | ✔️            | ✔️    |
-| Windows 10, Version 1909    | ✔️           | ✔️            | ✔️    |
-| Windows 10, Version 1903    | ✔️           | ✔️            | ✔️    |
+| Windows 10 / Windows Server, Version 20H2    | ✔️           | ✔️            | ✔️    |
+| Windows 10 / Windows Server, Version 2004    | ✔️           | ✔️            | ✔️    |
+| Windows 10 / Windows Server, Version 1909    | ✔️           | ✔️            | ✔️    |
+| Windows 10 / Windows Server, Version 1903    | ✔️           | ✔️            | ✔️    |
 | Windows 10, Version 1809    | ✔️           | ✔️            | ✔️    |
 | Windows 10, Version 1803    | ✔️           | ✔️            | ✔️    |
 | Windows 10, Version 1709    | ✔️           | ✔️            | ✔️    |
 | Windows 10, Version 1607    | ✔️           | ✔️            | ✔️    |
 | Windows 8.1                 | ✔️           | ✔️            | ✔️    |
 | Windows 7 SP1 [ESU][esu]    | ✔️           | ✔️            | ✔️    |
-| Windows 10, Version 1607    | ✔️           | ✔️            | ✔️    |
-| Windows 10, Version 1607    | ✔️           | ✔️            | ✔️    |
-| Windows Server 2012 R2      | ✔️           | ✔️            | ✔️    |
+| Windows Server 2019<br>Windows Server 2016<br>Windows Server 2012 R2<br>      | ✔️           | ✔️            | ✔️    |
 | Windows Server Core 2012 R2 | ✔️           | ✔️            | ✔️    |
 | Nano Server, Version 1809+  | ✔️           | ✔️            | ✔️    |
 | Nano Server, Version 1803   | ✔️           | ✔️            | ❌    |
 
 ## Unsupported releases
 
-The following versions of .NET are ❌ no longer supported. The downloads for these still remain published:
+The following versions of .NET are ❌ no longer supported:
 
 - 3.0
 - 2.2
@@ -63,14 +61,14 @@ The runtime is used to run apps created with .NET. When an app author publishes 
 
 There are three different runtimes you can install on Windows:
 
-*ASP.NET Core runtime*\
-Runs ASP.NET Core apps. Includes the .NET runtime.
+- *ASP.NET Core runtime*\
+  Runs ASP.NET Core apps. Includes the .NET runtime.
 
-*Desktop runtime*\
-Runs .NET WPF and Windows Forms desktop apps for Windows. Includes the .NET runtime.
+- *Desktop runtime*\
+  Runs .NET WPF and Windows Forms desktop apps for Windows. Includes the .NET runtime.
 
-*.NET runtime*\
-This runtime is the simplest runtime and doesn't include any other runtime. It's highly recommended that you install both *ASP.NET Core runtime* and *Desktop runtime* for the best compatibility with .NET apps.
+- *.NET runtime*\
+  This runtime is the simplest runtime and doesn't include any other runtime. It's highly recommended that you install both *ASP.NET Core runtime* and *Desktop runtime* for the best compatibility with .NET apps.
 
 > [!div class="button"]
 > [Download .NET Runtime](https://dotnet.microsoft.com/download/dotnet-core)
@@ -169,6 +167,18 @@ The following Windows versions are supported with .NET Core 2.1:
 
 For more information about .NET Core 2.1 supported operating systems, distributions, and lifecycle policy, see [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md).
 
+### Offline install for Windows 7
+
+When doing an offline install for .NET Core 2.1 on Windows 7, you'll first need to make sure that the latest [Microsoft Root Certificate Authority 2011](https://www.microsoft.com/pkiops/Docs/Repository.htm) has been installed on the target machine.
+
+The _certmgr.exe_ tool can automate installing a certificate and is obtained from Visual Studio or the Windows SDK. The following command is used to install the certificate before running the .NET Core 2.1 installer:
+
+```console
+certmgr.exe /add MicRooCerAut2011_2011_03_22.crt /s /r localMachine root
+```
+
+Be sure to review the dependencies required for [Windows 7 below](#additional-deps).
+
 ---
 
 <!-- markdownlint-disable MD001 -->
@@ -179,7 +189,7 @@ More dependencies are required if you're installing the .NET SDK or runtime on t
 
 | Operating System         | Prerequisites                                                                    |
 |--------------------------|----------------------------------------------------------------------------------|
-| Windows 7 SP1 [ESU][esu] | - Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] <br> - KB3063858 [64-bit][kb64] / [32-bit][kb32] <br> - [MicrosoftRootCertificateAuthority2011.cer](https://go.microsoft.com/fwlink/?linkid=747875&clcid=0x409) (.NET Core 2.1 only) |
+| Windows 7 SP1 [ESU][esu] | - Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] <br> - KB3063858 [64-bit][kb64] / [32-bit][kb32] <br> - [Microsoft Root Certificate Authority 2011](https://www.microsoft.com/pkiops/Docs/Repository.htm) (.NET Core 2.1 offline installer only) |
 | Windows Vista SP 2       | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |
 | Windows 8.1              | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |
 | Windows Server 2008 R2   | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |
@@ -255,15 +265,35 @@ While Visual Studio Code doesn't come with an automated .NET Core installer like
 
 The [download page](https://dotnet.microsoft.com/download/dotnet-core) for .NET provides Windows Installer executables.
 
-When you use the MSI files to install .NET< you can customize the installation path by setting the `DOTNETHOME_X64` and `DOTNETHOME_X86` parameters:
+When you use the Windows installers to install .NET, you can customize the installation path by setting the `DOTNETHOME_X64` and `DOTNETHOME_X86` parameters:
 
 ```console
 dotnet-sdk-3.1.301-win-x64.exe DOTNETHOME_X64="F:\dotnet\x64" DOTNETHOME_X86="F:\dotnet\x86"
 ```
 
+If you want to install .NET silently, such as in a production environment or to support continuous integration, use the following switches:
+
+- `/install`\
+Installs .NET.
+
+- `/quiet`\
+Prevents any UI and prompts from displaying.
+
+- `norestart`\
+Suppresses any attempts to restart.
+
+```console
+dotnet-sdk-3.1.301-win-x64.exe /install /quiet /norestart
+```
+
+For more information, see [Standard Installer Command-Line Options](/windows/win32/msi/standard-installer-command-line-options).
+
+> [!TIP]
+> The installer returns an exit code of 0 for success and an exit code of 3010 to indicate that a restart is required. Any other value is generally an error code.
+
 ## Download and manually install
 
-As an alternative to the Windows installers for .NET, you can download and manually install the SDK or runtime. Manual install is usually performed as part of continuous integration testing. For a developer or user, it's generally better to use an [installer](https://dotnet.microsoft.com/download/dotnet-core).
+As an alternative to the Windows installers for .NET, you can download and manually install the SDK or runtime. Manual install is usually done as part of continuous integration testing. For a developer or user, it's generally better to use an [installer](https://dotnet.microsoft.com/download/dotnet-core).
 
 Both .NET SDK and .NET Runtime can be manually installed after they've been downloaded. If you install .NET SDK, you don't need to install the corresponding runtime. First, download a binary release for either the SDK or the runtime from one of the following sites:
 
@@ -306,5 +336,5 @@ For more information about using .NET in a Docker container, see [Introduction t
 [esu]: /troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq
 [vcc64]: https://aka.ms/vs/16/release/vc_redist.x64.exe
 [vcc32]: https://aka.ms/vs/16/release/vc_redist.x86.exe
-[kb64]: https://www.microsoft.com/en-us/download/details.aspx?id=47442
-[kb32]: https://www.microsoft.com/en-us/download/details.aspx?id=47409
+[kb64]: https://www.microsoft.com/download/details.aspx?id=47442
+[kb32]: https://www.microsoft.com/download/details.aspx?id=47409

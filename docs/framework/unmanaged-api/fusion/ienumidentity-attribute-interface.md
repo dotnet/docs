@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IEnumIDENTITY_ATTRIBUTE Interface"
 title: "IEnumIDENTITY_ATTRIBUTE Interface"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Internal error happened at <location>"
 title: "Internal error happened at <location>"
 ms.date: 07/20/2015
 ms.assetid: 0af78cbc-89ec-40ea-9dee-bac9f2cb7c1e

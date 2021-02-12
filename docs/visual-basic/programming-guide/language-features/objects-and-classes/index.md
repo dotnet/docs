@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Objects and classes in Visual Basic"
 title: "Objects and classes"
 ms.date: 05/26/2020
 helpviewer_keywords:

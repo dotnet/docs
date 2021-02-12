@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1104 - WorkflowActivityResume"
 title: "1104 - WorkflowActivityResume"
 ms.date: "03/30/2017"
 ms.assetid: 7fe95d1e-34bd-43ca-b92e-587d2d248fff

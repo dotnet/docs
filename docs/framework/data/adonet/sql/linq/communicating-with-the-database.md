@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Communicating with the Database"
 title: "Communicating with the Database"
 ms.date: "03/30/2017"
 ms.assetid: 659d9817-bcaa-457f-9639-169394177274

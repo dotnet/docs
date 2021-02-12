@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <serviceAuthenticationManager>"
 title: "<serviceAuthenticationManager>"
 ms.date: "03/30/2017"
 ms.assetid: 5d69e64f-f325-4d55-8e2d-0fb30f222dda

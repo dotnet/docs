@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorLocalRefPreservation Enumeration"
 title: "CorLocalRefPreservation Enumeration"
 ms.date: "03/30/2017"
 api_name: 

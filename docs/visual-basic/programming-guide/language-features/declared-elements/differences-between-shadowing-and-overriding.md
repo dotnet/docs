@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Differences Between Shadowing and Overriding (Visual Basic)"
 title: "Differences Between Shadowing and Overriding"
 ms.date: 07/20/2015
 helpviewer_keywords: 

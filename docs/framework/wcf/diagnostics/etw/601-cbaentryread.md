@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 601 - CBAEntryRead"
 title: "601 - CBAEntryRead"
 ms.date: "03/30/2017"
 ms.assetid: 7d8b757f-e8d8-4c12-927e-ba3776c17983

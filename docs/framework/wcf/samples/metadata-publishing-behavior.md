@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Metadata Publishing Behavior"
 title: "Metadata Publishing Behavior"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exit Statement (Visual Basic)"
 title: "Exit Statement"
 ms.date: 07/20/2015
 f1_keywords:

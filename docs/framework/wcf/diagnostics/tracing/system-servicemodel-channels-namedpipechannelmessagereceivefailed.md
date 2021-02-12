@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.NamedPipeChannelMessageReceiveFailed"
 title: "System.ServiceModel.Channels.NamedPipeChannelMessageReceiveFailed"
 ms.date: "03/30/2017"
 ms.assetid: 20e65df6-4539-428d-bf61-92e05c405bef

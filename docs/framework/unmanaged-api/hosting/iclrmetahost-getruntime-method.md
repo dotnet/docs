@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRMetaHost::GetRuntime Method"
 title: "ICLRMetaHost::GetRuntime Method"
 ms.date: "03/30/2017"
 api_name: 

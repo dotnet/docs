@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sorting and Filtering Data"
 title: "Sorting and Filtering Data"
 ms.date: "03/30/2017"
 dev_langs: 

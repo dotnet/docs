@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedScope::GetLocals Method"
 title: "ISymUnmanagedScope::GetLocals Method"
 ms.date: "03/30/2017"
 api_name: 

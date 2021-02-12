@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Deploy a COM+ Integration Application"
 title: "How to: Deploy a COM+ Integration Application"
 ms.date: "03/30/2017"
 ms.assetid: 2e5a0510-db3c-4988-a09c-696285836650

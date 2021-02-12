@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: EClrFailure Enumeration"
 title: "EClrFailure Enumeration"
 ms.date: "03/30/2017"
 api_name: 

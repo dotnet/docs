@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Configuring the Windows Process Activation Service for Use with Windows Communication Foundation"
 title: "Configuring the Windows Process Activation Service for Use with Windows Communication Foundation"
 ms.date: "03/30/2017"
 ms.assetid: 1d50712e-53cd-4773-b8bc-a1e1aad66b78

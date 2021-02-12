@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use EdmGen.exe to Validate Model and Mapping Files"
 title: "How to: Use EdmGen.exe to Validate Model and Mapping Files"
 ms.date: "03/30/2017"
 ms.assetid: 2641906a-971a-4d0b-8aee-13fabc02a1cc

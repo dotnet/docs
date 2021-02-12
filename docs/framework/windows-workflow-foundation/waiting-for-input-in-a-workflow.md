@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Waiting for Input in a Workflow"
 title: "Waiting for Input in a Workflow"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

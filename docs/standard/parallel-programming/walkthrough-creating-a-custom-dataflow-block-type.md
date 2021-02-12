@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Creating a Custom Dataflow Block Type"
 title: "Walkthrough: Creating a Custom Dataflow Block Type"
 ms.date: "03/30/2017"
 dev_langs: 

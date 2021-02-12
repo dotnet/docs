@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30251: Type '<typename>' has no constructors"
 title: "Type '<typename>' has no constructors"
 ms.date: 07/20/2015
 f1_keywords:

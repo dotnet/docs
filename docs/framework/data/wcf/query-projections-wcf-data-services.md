@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Query Projections (WCF Data Services)"
 title: "Query Projections (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs:
@@ -13,6 +14,8 @@ ms.assetid: a09f4985-9f0d-48c8-b183-83d67a3dfe5f
 ---
 
 # Query Projections (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Projection provides a mechanism in the Open Data Protocol (OData) to reduce the amount of data in the feed returned by a query by specifying that only certain properties of an entity are returned in the response. For more information, see section 4.8. Select System Query Option ($select) in [URI Conventions (OData Version 2.0)](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 

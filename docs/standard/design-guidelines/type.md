@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type Design Guidelines"
 title: "Type Design Guidelines"
 ms.date: "10/22/2008"
 helpviewer_keywords:

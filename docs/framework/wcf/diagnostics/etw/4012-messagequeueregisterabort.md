@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4012 - MessageQueueRegisterAbort"
 title: "4012 - MessageQueueRegisterAbort"
 ms.date: "03/30/2017"
 ms.assetid: b992f9ee-bae5-4bad-99ad-e141e2f0b036

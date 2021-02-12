@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Result Tree Fragment in Transformations"
 title: "Result Tree Fragment in Transformations"
 ms.date: "03/30/2017"
 ms.assetid: df363480-ba02-4233-9ddf-8434e421c4f1

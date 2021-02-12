@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Attached and Detached Child Tasks"
 title: "Attached and Detached Child Tasks"
 ms.date: "03/30/2017"
 dev_langs: 

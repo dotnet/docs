@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PeerNodeOpenFailed"
 title: "System.ServiceModel.Channels.PeerNodeOpenFailed"
 ms.date: "03/30/2017"
 ms.assetid: fd908a42-30d1-4301-bc33-35b503896634

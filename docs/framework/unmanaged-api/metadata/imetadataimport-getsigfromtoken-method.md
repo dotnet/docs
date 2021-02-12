@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::GetSigFromToken Method"
 title: "IMetaDataImport::GetSigFromToken Method"
 ms.date: "03/30/2017"
 api_name: 

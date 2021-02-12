@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Customize a System-Provided Binding"
 title: "How to: Customize a System-Provided Binding"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugEval::GetResult Method"
 title: "ICorDebugEval::GetResult Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30698: Unable to write temporary file because temporary path is not available"
 title: "Unable to write temporary file because temporary path is not available"
 ms.date: 07/20/2015
 f1_keywords:

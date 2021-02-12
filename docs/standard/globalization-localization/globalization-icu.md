@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .NET globalization and ICU"
 title: "Globalization and ICU"
 ms.date: "05/21/2020"
 helpviewer_keywords:

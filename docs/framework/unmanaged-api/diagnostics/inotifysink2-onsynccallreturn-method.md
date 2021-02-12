@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: INotifySink2::OnSyncCallReturn Method"
 title: "INotifySink2::OnSyncCallReturn Method"
 ms.date: "03/30/2017"
 api_name: 

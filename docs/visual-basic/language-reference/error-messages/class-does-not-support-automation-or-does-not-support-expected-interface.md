@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Class does not support Automation or does not support expected interface"
 title: "Class does not support Automation or does not support expected interface"
 ms.date: 07/20/2015
 f1_keywords: 

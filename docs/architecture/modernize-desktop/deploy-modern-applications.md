@@ -221,4 +221,4 @@ MSIX creates a user interface for installation automatically showing some proper
 Once you've generated the new MSIX package and moved it to the deployment server, you just have to edit the *.appinstaller* file to reflect these changes, mainly the version and the path to the new MSIX file. The next time the user launches the application, the system is going to detect the change and download the files for the new version in the background. When this is done, installation will execute on new application launch transparently for your user.
 
 >[!div class="step-by-step"]
->[Previous](example-migration-core.md)
+>[Previous](example-migration.md)

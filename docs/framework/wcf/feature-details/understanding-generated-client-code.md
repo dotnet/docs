@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Understanding Generated Client Code"
 title: "Understanding Generated Client Code"
 ms.date: "03/30/2017"
 dev_langs: 

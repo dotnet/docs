@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Performing Culture-Insensitive String Operations in Arrays"
 title: "Performing Culture-Insensitive String Operations in Arrays"
 ms.date: "03/30/2017"
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Diagnostics.FilterNotMatchedNodeQuotaExceeded"
 title: "System.ServiceModel.Diagnostics.FilterNotMatchedNodeQuotaExceeded"
 ms.date: "03/30/2017"
 ms.assetid: 067f27ba-4d9e-4efb-8fa7-c23d2654d967

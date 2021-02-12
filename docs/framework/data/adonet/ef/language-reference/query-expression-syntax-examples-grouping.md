@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Query Expression Syntax Examples: Grouping"
 title: "Query Expression Syntax Examples: Grouping"
 ms.date: "03/30/2017"
 dev_langs: 

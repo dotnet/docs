@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRRuntimeInfo::GetInterface Method"
 title: "ICLRRuntimeInfo::GetInterface Method"
 ms.date: "03/30/2017"
 api_name: 

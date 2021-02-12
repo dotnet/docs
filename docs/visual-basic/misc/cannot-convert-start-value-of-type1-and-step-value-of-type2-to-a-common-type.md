@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cannot convert start value of type '<type1>' and step value of type '<type2>' to a common type"
 title: "Cannot convert start value of type '<type1>' and step value of type '<type2>' to a common type"
 ms.date: 07/20/2015
 f1_keywords: 

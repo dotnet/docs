@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Expressions in LINQ to Entities Queries"
 title: "Expressions in LINQ to Entities Queries"
 ms.date: "03/30/2017"
 dev_langs: 

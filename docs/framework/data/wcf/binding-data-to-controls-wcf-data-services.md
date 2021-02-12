@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Binding Data to Controls (WCF Data Services)"
 title: "Binding Data to Controls (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -11,6 +12,8 @@ helpviewer_keywords:
 ms.assetid: b32e1d49-c214-4cb1-867e-88fbb3d08c8d
 ---
 # Binding Data to Controls (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 With WCF Data Services, you can bind controls such as the `ComboBox` and `ListView` controls to an instance of the <xref:System.Data.Services.Client.DataServiceCollection%601> class. This collection, which inherits from the <xref:System.Collections.ObjectModel.ObservableCollection%601> class, contains the data from an Open Data Protocol (OData) feed. This class represents a dynamic data collection that provides notifications when items get added or removed. When you use an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> for data binding, the WCF Data Services client libraries handle these events to ensure that objects tracked by the <xref:System.Data.Services.Client.DataServiceContext> remain synchronized with the data in the bound UI element.  
   

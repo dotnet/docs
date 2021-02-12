@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::AssemblyLoadFinished Method"
 title: "ICorProfilerCallback::AssemblyLoadFinished Method"
 ms.date: "03/30/2017"
 api_name: 

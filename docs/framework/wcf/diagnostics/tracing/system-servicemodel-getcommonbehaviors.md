@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.GetCommonBehaviors"
 title: "System.ServiceModel.GetCommonBehaviors"
 ms.date: "03/30/2017"
 ms.assetid: 20f4013b-15fa-4fe7-b129-4ec4d231e479

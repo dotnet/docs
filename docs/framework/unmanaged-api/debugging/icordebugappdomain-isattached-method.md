@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugAppDomain::IsAttached Method"
 title: "ICorDebugAppDomain::IsAttached Method"
 ms.date: "03/30/2017"
 api_name: 

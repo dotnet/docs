@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugValueBreakpoint::GetValue Method"
 title: "ICorDebugValueBreakpoint::GetValue Method"
 ms.date: "03/30/2017"
 api_name: 

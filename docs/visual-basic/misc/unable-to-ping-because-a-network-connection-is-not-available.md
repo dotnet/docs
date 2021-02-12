@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Unable to ping because a network connection is not available"
 title: "Unable to ping because a network connection is not available"
 ms.date: 07/20/2015
 f1_keywords: 

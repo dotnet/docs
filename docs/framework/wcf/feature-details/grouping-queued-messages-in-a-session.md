@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Grouping Queued Messages in a Session"
 title: "Grouping Queued Messages in a Session"
 ms.date: "03/30/2017"
 dev_langs: 

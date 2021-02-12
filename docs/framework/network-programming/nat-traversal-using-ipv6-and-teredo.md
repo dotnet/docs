@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NAT Traversal using IPv6 and Teredo"
 title: "NAT Traversal using IPv6 and Teredo"
 ms.date: "03/30/2017"
 ms.assetid: 568cd245-3300-49ef-a995-d81bf845d961

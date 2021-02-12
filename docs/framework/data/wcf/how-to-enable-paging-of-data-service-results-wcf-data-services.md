@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Enable Paging of Data Service Results (WCF Data Services)"
 title: "How to: Enable Paging of Data Service Results (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -9,6 +10,8 @@ helpviewer_keywords:
 ms.assetid: 9a316cbd-9612-4482-a541-a10bc78b2635
 ---
 # How to: Enable Paging of Data Service Results (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 WCF Data Services enables you to limit the number of entities returned by a data service query. Page limits are defined in the method that is called when the service is initialized and can be set separately for each entity set.  
   

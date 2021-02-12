@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: use SpinLock for low-level synchronization"
 title: "How to: use SpinLock for low-level synchronization"
 ms.date: "03/30/2017"
 dev_langs: 

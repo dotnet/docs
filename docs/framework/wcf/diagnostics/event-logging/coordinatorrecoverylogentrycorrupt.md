@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CoordinatorRecoveryLogEntryCorrupt"
 title: "CoordinatorRecoveryLogEntryCorrupt"
 ms.date: "03/30/2017"
 ms.assetid: 3cd0c3e3-84c8-4d43-a561-a8851c78e565

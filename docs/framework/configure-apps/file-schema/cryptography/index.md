@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cryptography Settings Schema"
 title: "Cryptography Settings Schema"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

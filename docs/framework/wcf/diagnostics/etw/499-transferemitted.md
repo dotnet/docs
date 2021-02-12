@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 499 - TransferEmitted"
 title: "499 - TransferEmitted"
 ms.date: "03/30/2017"
 ms.assetid: 07a26434-a7a0-40fc-b5d0-3520a04328ae

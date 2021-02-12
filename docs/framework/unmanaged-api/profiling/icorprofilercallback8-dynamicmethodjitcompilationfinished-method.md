@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback8::DynamicMethodJITCompilationFinished Method"
 title: "ICorProfilerCallback8::DynamicMethodJITCompilationFinished Method"
 ms.date: "04/10/2018"
 api_name: 

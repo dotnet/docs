@@ -14,7 +14,6 @@ Dumps can be collected in a variety of ways depending on which platform you are 
 
 > [!NOTE]
 > Collecting a dump inside a container requires PTRACE capability, which can be added via `--cap-add=SYS_PTRACE` or `--privileged`.
-
 > [!NOTE]
 > Dumps may contain sensitive information because they can contain the full memory of the running process. Handle them with any security restrictions and guidances in mind.
 
@@ -48,11 +47,10 @@ To collect dump at your own request, you can use `dotnet-dump`, which is a CLI t
 
 ## Analyze dumps
 
-You can anlayze dumps using the [`dotnet-dump`](dotnet-dump.md) CLI tool or with [Visual Studio](https://docs.microsoft.com/visualstudio/debugger/using-dump-files).
+You can anlayze dumps using the [`dotnet-dump`](dotnet-dump.md) CLI tool or with [Visual Studio](/visualstudio/debugger/using-dump-files).
 
 > [!NOTE]
 > Visual Studio version 16.8 and later allows you to [open Linux dumps](https://devblogs.microsoft.com/visualstudio/linux-managed-memory-dump-debugging/) generated on .NET Core 3.1.7 or later.  
-
 > [!NOTE]
 > If native debugging is necessary, the [SOS debugger extension](sos-debugging-extension.md) can be used with [LLDB on Linux and macOS](debug-linux-dumps.md#analyze-dumps-on-linux). SOS is also supported with [Windbg/cdb](/windows-hardware/drivers/debugger/debugger-download-tools) on Windows, although Visual Studio is recommended.
 

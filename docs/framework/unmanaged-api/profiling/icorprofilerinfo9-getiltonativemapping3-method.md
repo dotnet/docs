@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo9::GetILToNativeMapping3 Method"
 title: "ICorProfilerInfo9::GetILToNativeMapping3"
 ms.date: "08/06/2019"
 dev_langs:

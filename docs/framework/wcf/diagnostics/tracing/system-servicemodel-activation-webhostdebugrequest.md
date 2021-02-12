@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Activation.WebHostDebugRequest"
 title: "System.ServiceModel.Activation.WebHostDebugRequest"
 ms.date: "03/30/2017"
 ms.assetid: 632d8084-f492-47bd-a40d-f9281c130149

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC36635: Lambda expressions are not valid in the first expression of a 'Select Case' statement"
 title: "Lambda expressions are not valid in the first expression of a 'Select Case' statement"
 ms.date: 07/20/2015
 f1_keywords:

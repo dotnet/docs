@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DataMemberListEditor Class"
 title: "DataMemberListEditor Class"
 ms.date: "03/30/2017"
 ms.technology: "dotnet-winforms"

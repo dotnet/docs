@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DbConnection, DbCommand and DbException"
 title: "DbConnection, DbCommand and DbException"
 ms.date: "03/30/2017"
 dev_langs: 

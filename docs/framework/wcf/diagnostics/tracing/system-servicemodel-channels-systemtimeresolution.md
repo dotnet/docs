@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.SystemTimeResolution"
 title: "System.ServiceModel.Channels.SystemTimeResolution"
 ms.date: "03/30/2017"
 ms.assetid: eaab4ce9-b16a-4fe8-9271-3a1ab1dfa93a

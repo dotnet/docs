@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedWriter::CloseNamespace Method"
 title: "ISymUnmanagedWriter::CloseNamespace Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Property value is not valid"
 title: "Property value is not valid"
 ms.date: 07/20/2015
 f1_keywords: 

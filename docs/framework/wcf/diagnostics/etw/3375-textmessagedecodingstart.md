@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3375 - TextMessageDecodingStart"
 title: "3375 - TextMessageDecodingStart"
 ms.date: "03/30/2017"
 ms.assetid: a7152c0e-10e5-4446-b52d-60838fb99748

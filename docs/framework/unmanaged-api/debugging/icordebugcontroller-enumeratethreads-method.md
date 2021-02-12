@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugController::EnumerateThreads Method"
 title: "ICorDebugController::EnumerateThreads Method"
 ms.date: "03/30/2017"
 api_name: 

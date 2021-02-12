@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorAttributeTargets Enumeration"
 title: "CorAttributeTargets Enumeration"
 ms.date: "03/30/2017"
 api_name: 

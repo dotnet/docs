@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Invoking Activity Validation"
 title: "Invoking Activity Validation"
 ms.date: "03/30/2017"
 ms.assetid: 22bef766-c505-4fd4-ac0f-7b363b238969

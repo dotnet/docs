@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC31019: Unable to write to output file '<filename>': <error>"
 title: "Unable to write to output file '<filename>': <error>"
 ms.date: 07/20/2015
 f1_keywords:

@@ -76,11 +76,7 @@ The following example overloads the `Deconstruct` method to return various combi
 
 [!code-csharp[Class-deconstruct](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-class2.cs)]
 
-Because you can overload the `Deconstruct` method to reflect groups of data that are commonly extracted from an object, you should be careful to define `Deconstruct` methods with signatures that are distinctive and unambiguous. Multiple `Deconstruct` methods that have the same number of `out` parameters or the same number and type of `out` parameters in a different order can cause confusion.
-
-The overloaded `Deconstruct` method in the following example illustrates one possible source of confusion. The first overload returns the first name, middle name, last name, and age of a `Person` object, in that order. The second overload returns name information only along with annual income, but the first, middle, and last name are in a different order. This makes it easy to confuse the order of arguments when deconstructing a `Person` instance.
-
-[!code-csharp[Deconstruct-ambiguity](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-ambiguous.cs)]
+Multiple `Deconstruct` methods having the same number of parameters are ambiguous. You must be careful to define `Deconstruct` methods with different numbers of parameters, or "arity". `Deconstruct` methods with the same number of parameters cannot be distinguished during overload resolution.
 
 ## Deconstructing a user-defined type with discards
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3392 - TransactionScopeCreate"
 title: "3392 - TransactionScopeCreate"
 ms.date: "03/30/2017"
 ms.assetid: 2b6257a6-683b-4adc-aca5-6d095e4c03a0

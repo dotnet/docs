@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Attributes"
 title: "Attributes"
 ms.date: "10/22/2008"
 helpviewer_keywords:

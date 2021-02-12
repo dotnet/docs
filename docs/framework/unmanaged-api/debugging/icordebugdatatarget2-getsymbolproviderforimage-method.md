@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugDataTarget2::GetSymbolProviderForImage Method"
 title: "ICorDebugDataTarget2::GetSymbolProviderForImage Method"
 ms.date: "03/30/2017"
 ms.assetid: b7c0a2f0-e904-43b3-98e1-d669e8a589e8

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BindingError"
 title: "BindingError"
 ms.date: "03/30/2017"
 ms.assetid: 19d90e9d-c92a-4ca7-ba31-aa07882bb81e

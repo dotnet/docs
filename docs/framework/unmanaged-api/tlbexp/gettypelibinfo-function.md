@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GetTypeLibInfo Function"
 title: "GetTypeLibInfo Function"
 ms.date: "03/30/2017"
 api_name: 

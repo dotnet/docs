@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Other Canonical Functions"
 title: "Other Canonical Functions"
 ms.date: "03/30/2017"
 ms.assetid: 729bd47b-8e41-494c-a9a9-dcabf8b74312

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3416 - WebSocketConnectionRequestSendStop"
 title: "3416 - WebSocketConnectionRequestSendStop"
 ms.date: "03/30/2017"
 ms.assetid: 2288f390-9263-4acf-b0ef-b0cab82bbec1

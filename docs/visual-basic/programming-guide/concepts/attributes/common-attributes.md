@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Common Attributes (Visual Basic)"
 title: "Common Attributes"
 ms.date: 07/20/2015
 ms.assetid: 11fe4894-1bf9-4525-a36b-cddcd3a5d22b

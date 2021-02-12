@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess6::GetExportStepInfo Method"
 title: "ICorDebugProcess6::GetExportStepInfo Method"
 ms.date: "03/30/2017"
 ms.assetid: a927e0ac-f110-426d-bbec-9377a29c8f17

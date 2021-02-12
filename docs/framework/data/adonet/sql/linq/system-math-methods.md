@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.Math Methods"
 title: "System.Math Methods"
 ms.date: "03/30/2017"
 ms.assetid: 0f299521-6f41-4720-bd70-67c93fc50948

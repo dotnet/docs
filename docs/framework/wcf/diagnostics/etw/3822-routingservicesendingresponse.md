@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3822 - RoutingServiceSendingResponse"
 title: "3822 - RoutingServiceSendingResponse"
 ms.date: "03/30/2017"
 ms.assetid: 46965a31-eab0-4141-843d-800ccc0a6a7e

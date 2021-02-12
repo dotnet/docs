@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataInfo::GetFileMapping Method"
 title: "IMetaDataInfo::GetFileMapping Method"
 ms.date: "03/30/2017"
 api_name: 

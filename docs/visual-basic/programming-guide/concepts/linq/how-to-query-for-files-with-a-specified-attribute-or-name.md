@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Query for Files with a Specified Attribute or Name (Visual Basic)"
 title: "How to: Query for Files with a Specified Attribute or Name"
 ms.date: 07/20/2015
 ms.assetid: b26026a3-3f43-448f-a582-259997af6be0

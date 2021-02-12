@@ -14,7 +14,7 @@ In this article, you learn how to connect to a MongoDB instance from your .NET f
 
 ## Prerequisites
 
-1. Have a MongoDB server up and running with a [database and some collection](https://docs.mongodb.com/manual/core/databases-and-collections/) added to it (Download [this community server](https://www.mongodb.com/try/download/community) for a local server or you can try [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) for a cloud MongoDB service.)
+- Have a MongoDB server up and running with a [database and some collection](https://docs.mongodb.com/manual/core/databases-and-collections/) added to it (Download [this community server](https://www.mongodb.com/try/download/community) for a local server or you can try [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) for a cloud MongoDB service.)
 
 ## Set up your MongoDB instance
 
@@ -33,7 +33,7 @@ In order to get .NET for Apache Spark to talk to your MongoDB instance you need 
     )
     ```
 
-2. Make sure the IP address of the machine your .NET for Apache Spark application is running on is whitelisted for the MongoDB server to be able to connect to. You can refer to [this guide](https://docs.atlas.mongodb.com/security/add-ip-address-to-list/) to learn how to do that.
+2. Make sure the IP address of the machine your .NET for Apache Spark application is running on is allowlisted for the MongoDB server to be able to connect to. You can refer to [this guide](https://docs.atlas.mongodb.com/security/add-ip-address-to-list/) to learn how to do that.
 
 ## Configure your .NET for Apache Spark application
 
@@ -74,7 +74,7 @@ In order to get .NET for Apache Spark to talk to your MongoDB instance you need 
 
 ## Run your application
 
-In order to run your .NET for Apache Spark application, you should define the `mongo-spark-connector` module as part of the build definition in your Spark project, using `libraryDependency` in `build.sbt` for sbt projects. For Spark environments such as `spark-submit` (or `spark-shell`) you should use the `--packages` command-line option like so:
+In order to run your .NET for Apache Spark application, you should define the `mongo-spark-connector` module as part of the build definition in your Spark project, using `libraryDependency` in `build.sbt` for sbt projects. For Spark environments such as `spark-submit` (or `spark-shell`), use the `--packages` command-line option like so:
 
 ```bash
 spark-submit --master local --packages org.mongodb.spark:mongo-spark-connector_2.12:3.0.0 --class org.apache.spark.deploy.dotnet.DotnetRunner microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar yourApp.exe
@@ -83,7 +83,7 @@ spark-submit --master local --packages org.mongodb.spark:mongo-spark-connector_2
 > [!NOTE]
 > Make sure to include the package version in accordance with the version of Spark being run.
 
-The result as displayed is the DataFrame (`df`) as shown below:
+The result as displayed is the DataFrame (`df`) shown here:
 
 ```text
 +--------------------+----+-------+

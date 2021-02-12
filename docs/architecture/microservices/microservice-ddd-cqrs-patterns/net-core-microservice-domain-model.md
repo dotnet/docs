@@ -1,12 +1,12 @@
 ---
-title: Implementing a microservice domain model with .NET Core
+title: Implementing a microservice domain model with .NET
 description: .NET Microservices Architecture for Containerized .NET Applications | Get into the implementation details of a DDD-oriented domain model.
-ms.date: 10/08/2018
+ms.date: 02/02/2021
 ---
 
-# Implement a microservice domain model with .NET Core
+# Implement a microservice domain model with .NET
 
-In the previous section, the fundamental design principles and patterns for designing a domain model were explained. Now it is time to explore possible ways to implement the domain model by using .NET Core (plain C\# code) and EF Core. Your domain model will be composed simply of your code. It will have just the EF Core model requirements, but not real dependencies on EF. You should not have hard dependencies or references to EF Core or any other ORM in your domain model.
+In the previous section, the fundamental design principles and patterns for designing a domain model were explained. Now it is time to explore possible ways to implement the domain model by using .NET (plain C\# code) and EF Core. Your domain model will be composed simply of your code. It will have just the EF Core model requirements, but not real dependencies on EF. You should not have hard dependencies or references to EF Core or any other ORM in your domain model.
 
 ## Domain model structure in a custom .NET Standard Library
 
@@ -41,7 +41,7 @@ If you open any of the files in an aggregate folder, you can see how it is marke
 You implement a domain model in .NET by creating POCO classes that implement your domain entities. In the following example, the Order class is defined as an entity and also as an aggregate root. Because the Order class derives from the Entity base class, it can reuse common code related to entities. Bear in mind that these base classes and interfaces are defined by you in the domain model project, so it is your code, not infrastructure code from an ORM like EF.
 
 ```csharp
-// COMPATIBLE WITH ENTITY FRAMEWORK CORE 2.0
+// COMPATIBLE WITH ENTITY FRAMEWORK CORE 5.0
 // Entity is a custom base class with the ID
 public class Order : Entity, IAggregateRoot
 {

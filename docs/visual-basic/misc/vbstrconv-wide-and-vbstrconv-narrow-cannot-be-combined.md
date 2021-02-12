@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: VbStrConv.Wide and VbStrConv.Narrow cannot be combined"
 title: "VbStrConv.Wide and VbStrConv.Narrow cannot be combined"
 ms.date: 07/20/2015
 f1_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugType::GetFirstTypeParameter Method"
 title: "ICorDebugType::GetFirstTypeParameter Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <workflowControlEndpoint>"
 title: "<workflowControlEndpoint>"
 ms.date: "03/30/2017"
 ms.assetid: 6c89e76c-643b-4b6a-9b25-628f753d7027

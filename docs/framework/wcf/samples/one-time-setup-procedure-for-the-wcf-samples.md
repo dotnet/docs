@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: One-Time Setup Procedure for the Windows Communication Foundation Samples"
 title: "One-Time Setup Procedure for the Windows Communication Foundation Samples"
 ms.date: "03/30/2017"
 ms.assetid: a5848ffd-3eb5-432d-812e-bd948ccb6bca

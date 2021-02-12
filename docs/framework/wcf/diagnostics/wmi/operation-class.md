@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Operation class"
 title: "Operation class"
 ms.date: "03/30/2017"
 ms.assetid: b19d1496-ef06-4d0c-b2ae-e728ec00cca0

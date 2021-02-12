@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 2024 - InternalCacheMetadataStart"
 title: "2024 - InternalCacheMetadataStart"
 ms.date: "03/30/2017"
 ms.assetid: 18758528-6d3b-4d25-9427-12d2d3f4ec4e

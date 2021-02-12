@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Named Type Constructor (Entity SQL)"
 title: "Named Type Constructor (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 549dea04-d93d-4c87-a292-f81b1598dbfd

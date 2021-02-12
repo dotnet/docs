@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <supportPortability> Element"
 title: "<supportPortability> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

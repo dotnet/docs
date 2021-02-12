@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <netHttpBinding>"
 title: "<netHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: b0d81ca0-87c5-4090-8baa-e390fd3656d2

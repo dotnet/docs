@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Export Custom WSDL"
 title: "How to: Export Custom WSDL"
 ms.date: "03/30/2017"
 ms.assetid: 5c1e4b58-b76b-472b-9635-2f80d42a0734

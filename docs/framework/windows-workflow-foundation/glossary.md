@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Workflow Foundation Glossary for .NET Framework 4.5"
 title: "Windows Workflow Foundation Glossary for .NET Framework 4.5"
 ms.date: "03/30/2017"
 helpviewer_keywords:

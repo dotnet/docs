@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3377 - SocketReadStop"
 title: "3377 - SocketReadStop"
 ms.date: "03/30/2017"
 ms.assetid: 980c24e8-47d5-4f1e-86cc-1cb1c0736d19

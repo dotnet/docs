@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedVariable::GetName Method"
 title: "ISymUnmanagedVariable::GetName Method"
 ms.date: "03/30/2017"
 api_name: 

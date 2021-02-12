@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implementing Business Logic (LINQ to SQL)"
 title: "Implementing Business Logic (LINQ to SQL)"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -215,7 +215,7 @@ In the Blazor WebAssembly app, the host page is a simple static HTML file under 
 
 ```
 
-The root component to render is configured in the app's `Program.Main` method with the flexibility to register different services through dependency injection.You can refer add services to an app in [Blazor WebAssembly](https://docs.microsoft.com/aspnet/core/blazor/fundamentals/dependency-injection?view=aspnetcore-5.0#blazor-webassembly)
+The root component to render is specified in the app's `Program.Main` method with the flexibility to register services through dependency injection. For more information, see [ASP.NET Core Blazor dependency injection](/aspnet/core/blazor/fundamentals/dependency-injection?pivots=webassembly).
 
 ```csharp
 public class Program

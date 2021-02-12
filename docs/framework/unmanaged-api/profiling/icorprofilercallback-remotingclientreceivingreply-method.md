@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::RemotingClientReceivingReply Method"
 title: "ICorProfilerCallback::RemotingClientReceivingReply Method"
 ms.date: "03/30/2017"
 api_name: 

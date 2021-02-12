@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WmiRegistrationFailed"
 title: "WmiRegistrationFailed"
 ms.date: "03/30/2017"
 ms.assetid: 69ac6b2b-770c-49e1-9865-34773767971c

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3342 - EstablishConnectionStart"
 title: "3342 - EstablishConnectionStart"
 ms.date: "03/30/2017"
 ms.assetid: 2f2e3446-1f0c-4e8a-b14c-0e500de0f075

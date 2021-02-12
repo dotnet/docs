@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Bad record length"
 title: "Bad record length"
 ms.date: 07/20/2015
 f1_keywords: 

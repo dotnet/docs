@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Queued Rejected Messages"
 title: "Queued Rejected Messages"
 ms.date: "03/30/2017"
 ms.assetid: 8eb75a76-4fb3-4d33-bd9f-6d91e09c5843

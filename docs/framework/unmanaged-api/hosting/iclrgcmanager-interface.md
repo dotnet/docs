@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRGCManager Interface"
 title: "ICLRGCManager Interface"
 ms.date: "03/30/2017"
 api_name: 

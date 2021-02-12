@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostTaskManager::LeaveRuntime Method"
 title: "IHostTaskManager::LeaveRuntime Method"
 ms.date: "03/30/2017"
 api_name: 

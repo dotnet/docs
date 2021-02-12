@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IDebugAutoAttach::AutoAttach Method"
 title: "IDebugAutoAttach::AutoAttach Method"
 ms.date: "03/30/2017"
 api_name: 

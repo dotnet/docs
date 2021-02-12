@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Service Transaction Behavior"
 title: "Service Transaction Behavior"
 ms.date: "03/30/2017"
 helpviewer_keywords:

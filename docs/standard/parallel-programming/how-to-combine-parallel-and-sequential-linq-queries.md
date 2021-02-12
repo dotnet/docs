@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Combine Parallel and Sequential LINQ Queries"
 title: "How to: Combine Parallel and Sequential LINQ Queries"
 ms.date: "03/30/2017"
 dev_langs: 

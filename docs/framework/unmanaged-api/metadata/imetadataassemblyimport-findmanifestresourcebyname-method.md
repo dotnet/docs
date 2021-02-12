@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataAssemblyImport::FindManifestResourceByName Method"
 title: "IMetaDataAssemblyImport::FindManifestResourceByName Method"
 ms.date: "03/30/2017"
 api_name: 

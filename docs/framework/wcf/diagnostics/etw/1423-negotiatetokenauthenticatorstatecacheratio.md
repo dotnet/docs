@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1423 - NegotiateTokenAuthenticatorStateCacheRatio"
 title: "1423 - NegotiateTokenAuthenticatorStateCacheRatio"
 ms.date: "03/30/2017"
 ms.assetid: 6301db99-bb23-40d1-b8df-f0ae1793ce68

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ComIntegration.ComIntegrationTypedChannelBuilderLoaded"
 title: "System.ServiceModel.ComIntegration.ComIntegrationTypedChannelBuilderLoaded"
 ms.date: "03/30/2017"
 ms.assetid: ebb0fd0e-3f3b-4e35-b0a1-05e281ca9207

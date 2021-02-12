@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Operator Precedence (Entity SQL)"
 title: "Operator Precedence (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: e92e4ca5-2889-4266-9625-47f0eb01a948

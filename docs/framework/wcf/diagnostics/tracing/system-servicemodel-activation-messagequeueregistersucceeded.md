@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Activation.MessageQueueRegisterSucceeded"
 title: "System.ServiceModel.Activation.MessageQueueRegisterSucceeded"
 ms.date: "03/30/2017"
 ms.assetid: a75ea3ab-b0b8-4458-be9a-5e068a74af0f

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Oracle Schema Collections"
 title: "Oracle Schema Collections"
 ms.date: "03/30/2017"
 ms.assetid: 89a75de8-dee8-45e2-a97f-254d7e62e7e1

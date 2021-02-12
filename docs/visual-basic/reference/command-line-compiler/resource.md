@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: -resource (Visual Basic)"
 title: "-resource"
 ms.date: 03/13/2018
 helpviewer_keywords: 

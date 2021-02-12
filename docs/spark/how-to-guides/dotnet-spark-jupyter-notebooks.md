@@ -125,7 +125,7 @@ You can use different interfaces to interact with Jupyter. For a browser-based i
 1. When the notebook opens, install the `Microsoft.Spark` NuGet package. Make sure the version you install is the same as the .NET Worker.
 
     ```text
-    #r "nuget:Microsoft.Spark, 0.12.1"
+    #r "nuget:Microsoft.Spark, 1.0.0"
     ```
 
 1. Add the following using statement to the notebook.

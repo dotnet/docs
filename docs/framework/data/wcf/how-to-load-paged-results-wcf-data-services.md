@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Load Paged Results (WCF Data Services)"
 title: "How to: Load Paged Results (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -10,6 +11,8 @@ helpviewer_keywords:
 ms.assetid: bb786ea4-f3ef-4ad3-9a41-3a0b7feb6a1f
 ---
 # How to: Load Paged Results (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 WCF Data Services enables the data service to limit the number of entities that are returned in a single response feed. When this happens, the final entry in the feed contains a link to the next page of data. The URI for the next page of data is obtained by calling the <xref:System.Data.Services.Client.QueryOperationResponse%601.GetContinuation%2A> method of the <xref:System.Data.Services.Client.QueryOperationResponse%601>, which is returned when the <xref:System.Data.Services.Client.DataServiceQuery%601> is executed. The URI represented by this object is then used to load the next page of results. For more information, see [Loading Deferred Content](loading-deferred-content-wcf-data-services.md).  
   

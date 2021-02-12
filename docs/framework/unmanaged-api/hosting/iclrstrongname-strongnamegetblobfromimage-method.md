@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRStrongName::StrongNameGetBlobFromImage Method"
 title: "ICLRStrongName::StrongNameGetBlobFromImage Method"
 ms.date: "03/30/2017"
 api_name: 

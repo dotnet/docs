@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC31183: XML namespace URI `http://www.w3.org/XML/1998/namespace`; can be bound only to 'xmlns"
 title: "XML namespace URI '<uri>' can be bound only to 'xmlns'"
 ms.date: 07/20/2015
 f1_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: > (Greater Than) (Entity SQL)"
 title: "> (Greater Than) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 4cea865c-677c-4b06-99a1-010f2ae2394a

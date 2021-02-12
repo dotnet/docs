@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugValue3::GetSize64 Method"
 title: "ICorDebugValue3::GetSize64 Method"
 ms.date: "03/30/2017"
 api_name: 

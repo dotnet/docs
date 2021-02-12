@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Visual Basic compiler options listed by category"
 title: "Compiler Options Listed by Category"
 ms.date: 04/12/2018
 helpviewer_keywords: 

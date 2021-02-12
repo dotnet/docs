@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Implement a Client of the Event-based Asynchronous Pattern"
 title: "How to: Implement a Client of the Event-based Asynchronous Pattern"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Publishing and Retrieving Metadata Over a Custom Binding"
 title: "Publishing and Retrieving Metadata Over a Custom Binding"
 ms.date: "03/30/2017"
 ms.assetid: 904e11b4-d90e-45c6-9ee5-c3472c90008c

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reading from and Writing to the Registry (Visual Basic)"
 title: "Reading from and Writing to the Registry"
 ms.date: 07/20/2015
 helpviewer_keywords: 

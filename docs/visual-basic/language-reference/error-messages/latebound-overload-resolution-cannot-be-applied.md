@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30933: Latebound overload resolution cannot be applied to '<procedurename>' because the accessing instance is an interface type"
 title: "Latebound overload resolution cannot be applied to '<procedurename>' because the accessing instance is an interface type"
 ms.date: 07/20/2015
 f1_keywords:

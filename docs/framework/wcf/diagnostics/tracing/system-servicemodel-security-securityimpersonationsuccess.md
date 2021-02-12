@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Security.SecurityImpersonationSuccess"
 title: "System.ServiceModel.Security.SecurityImpersonationSuccess"
 ms.date: "03/30/2017"
 ms.assetid: e344c7a9-baae-4ffc-a851-85d2e8571d83

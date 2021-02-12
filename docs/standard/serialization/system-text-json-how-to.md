@@ -1,7 +1,7 @@
 ---
 title: "How to serialize and deserialize JSON using C# - .NET"
 description: "Learn how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. Includes sample code."
-ms.date: 01/04/2021
+ms.date: 01/12/2021
 ms.custom: contperf-fy21q2
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
@@ -25,7 +25,12 @@ The code examples refer to the following class and variants of it:
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
 
 > [!NOTE]
-> System.Text.Json uses [ref structs](../../csharp/language-reference/builtin-types/struct.md#ref-struct), which are not supported by Visual Basic. If you try to use System.Text.Json APIs with Visual Basic, you get BC40000 compile errors. The error message indicates that the problem is an obsolete API, but the actual issue is lack of `ref struct` support in the compiler.
+> Parts of System.Text.Json use [ref structs](../../csharp/language-reference/builtin-types/struct.md#ref-struct), which are not supported by Visual Basic. If you try to use System.Text.Json ref struct APIs with Visual Basic you get BC40000 compiler errors. The error message indicates that the problem is an obsolete API, but the actual issue is lack of ref struct support in the compiler. The following parts of System.Text.Json aren't usable from Visual Basic:
+>
+> * The <xref:System.Text.Json.Utf8JsonReader> class.
+> * Overloads of other APIs that include a <xref:System.Memory%601.Span> type. Most methods include overloads that use `String` instead of `Span`.
+>
+> These restrictions are in place because ref structs cannot be used safely without language support, even when just "passing data through." Subverting this error will result in Visual Basic code that can corrupt memory and should not be done.
 
 ## Namespaces
 

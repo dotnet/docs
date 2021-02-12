@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Parameter List (Visual Basic)"
 title: "Parameter List"
 ms.date: 07/20/2015
 helpviewer_keywords:

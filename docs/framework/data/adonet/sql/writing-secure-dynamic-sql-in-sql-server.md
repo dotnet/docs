@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Writing Secure Dynamic SQL in SQL Server"
 title: "Writing Secure Dynamic SQL in SQL Server"
 ms.date: "03/30/2017"
 ms.assetid: df5512b0-c249-40d2-82f9-f9a2ce6665bc

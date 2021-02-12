@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MissingNecessaryEnhancedKeyUsage"
 title: "MissingNecessaryEnhancedKeyUsage"
 ms.date: "03/30/2017"
 ms.assetid: 9dffd071-0b79-4e10-9027-06760b4cc3ca

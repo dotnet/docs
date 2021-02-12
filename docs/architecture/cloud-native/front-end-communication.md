@@ -2,7 +2,7 @@
 title: Front-end client communication
 description: Learn how front-end clients communicate with cloud-native systems
 author: robvet
-ms.date: 05/13/2020
+ms.date: 01/19/2021
 ---
 
 # Front-end client communication
@@ -50,7 +50,7 @@ To start, you could build your own API Gateway service. A quick search of GitHub
 
 For simple .NET cloud-native applications, you might consider the [Ocelot Gateway](https://github.com/ThreeMammals/Ocelot). Ocelot is an Open Source API Gateway created for .NET microservices that require a unified point of entry into their system. It's lightweight, fast, scalable.
 
-Like any API Gateway, its primary functionality is to forward incoming HTTP requests to downstream services. Additionally, it supports a wide variety of capabilities that are configurable in a .NET Core middleware pipeline. Its feature set is presented in following table.
+Like any API Gateway, its primary functionality is to forward incoming HTTP requests to downstream services. Additionally, it supports a wide variety of capabilities that are configurable in a .NET middleware pipeline. Its feature set is presented in following table.
 
 |Ocelot Features  | |
 | :-------- | :-------- |
@@ -123,7 +123,7 @@ It enables API Gateway features for the following use cases:
 
 - Microservices implemented using serverless technologies such as [Azure Functions](/azure/azure-functions/functions-overview) and [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/).
 - Azure backing service resources such as Service Bus queues and topics, Azure storage, and others.
-- Microservices where traffic has occasional large spikes but remains low the majority of the time.
+- Microservices where traffic has occasional large spikes but remains low most the time.
 
 The consumption tier uses the same underlying service API Management components, but employs an entirely different architecture based on dynamically allocated resources. It aligns perfectly with the serverless computing model:
 

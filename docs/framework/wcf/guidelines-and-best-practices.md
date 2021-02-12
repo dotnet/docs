@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Guidelines and Best Practices"
 title: "Guidelines and Best Practices"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

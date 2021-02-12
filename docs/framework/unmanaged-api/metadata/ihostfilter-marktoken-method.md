@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostFilter::MarkToken Method"
 title: "IHostFilter::MarkToken Method"
 ms.date: "03/30/2017"
 api_name: 

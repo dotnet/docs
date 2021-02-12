@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WebContentTypeMapper Sample"
 title: "WebContentTypeMapper Sample"
 ms.date: "03/30/2017"
 ms.assetid: a4fe59e7-44d8-43c6-a1f8-40c45223adca

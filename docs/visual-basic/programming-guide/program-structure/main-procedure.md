@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Main Procedure in Visual Basic"
 title: "Main Procedure"
 ms.date: 07/20/2015
 f1_keywords:

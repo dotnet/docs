@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ServiceMetadataBehavior"
 title: "ServiceMetadataBehavior"
 ms.date: "03/30/2017"
 ms.assetid: 0f194476-72f1-467e-bdce-674306316e64

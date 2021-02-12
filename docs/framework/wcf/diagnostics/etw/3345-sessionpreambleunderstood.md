@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3345 - SessionPreambleUnderstood"
 title: "3345 - SessionPreambleUnderstood"
 ms.date: "03/30/2017"
 ms.assetid: e8e9fcda-7dbc-4670-bb47-b365219f3046

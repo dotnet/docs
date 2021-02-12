@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Late-bound assignment to a field of value type '<typename>' is not valid when '<name>' is the result of a late-bound expression"
 title: "Late-bound assignment to a field of value type '<typename>' is not valid when '<name>' is the result of a late-bound expression"
 ms.date: 07/20/2015
 f1_keywords: 

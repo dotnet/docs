@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PnrpResolveException"
 title: "System.ServiceModel.Channels.PnrpResolveException"
 ms.date: "03/30/2017"
 ms.assetid: 398db8db-7394-439a-b599-3ad3f5cfcdb9

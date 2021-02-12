@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Paging Through a Query Result"
 title: "Paging Through a Query Result"
 ms.date: "03/30/2017"
 dev_langs: 

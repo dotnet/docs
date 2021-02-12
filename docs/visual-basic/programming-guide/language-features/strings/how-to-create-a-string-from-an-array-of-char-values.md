@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a String from An Array of Char Values (Visual Basic)"
 title: "How to: Create a String from An Array of Char Values"
 ms.date: 07/20/2015
 helpviewer_keywords: 

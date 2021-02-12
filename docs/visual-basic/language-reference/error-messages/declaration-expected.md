@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30188: Declaration expected"
 title: "Declaration expected"
 ms.date: 07/20/2015
 f1_keywords:

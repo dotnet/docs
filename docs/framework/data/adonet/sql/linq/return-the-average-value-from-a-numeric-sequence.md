@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Return the Average Value From a Numeric Sequence"
 title: "Return the Average Value From a Numeric Sequence"
 ms.date: "03/30/2017"
 dev_langs: 

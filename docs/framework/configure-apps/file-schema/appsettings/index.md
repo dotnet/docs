@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: App Settings schema"
 title: "App Settings schema"
 ms.date: "05/01/2017"
 helpviewer_keywords: 

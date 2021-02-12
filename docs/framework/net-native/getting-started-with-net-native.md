@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Getting Started with .NET Native"
 title: "Getting Started with .NET Native"
 ms.date: "03/30/2017"
 ms.assetid: fc9e04e8-2d05-4870-8cd6-5bd276814afc

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: || (OR) (Entity SQL)"
 title: "|| (OR) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 8e649648-eb9a-4380-9d74-36e62260628c

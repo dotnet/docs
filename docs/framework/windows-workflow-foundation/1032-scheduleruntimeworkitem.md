@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1032 - ScheduleRuntimeWorkItem"
 title: "1032 - ScheduleRuntimeWorkItem"
 ms.date: "03/30/2017"
 ms.assetid: 54688101-becf-42f3-80ca-f53a7b527620

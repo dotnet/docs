@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30617: 'Module' statements can occur only at file or namespace level"
 title: "'Module' statements can occur only at file or namespace level"
 ms.date: 07/20/2015
 f1_keywords:

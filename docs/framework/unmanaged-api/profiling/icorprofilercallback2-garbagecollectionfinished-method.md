@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback2::GarbageCollectionFinished Method"
 title: "ICorProfilerCallback2::GarbageCollectionFinished Method"
 ms.date: "03/30/2017"
 api_name: 

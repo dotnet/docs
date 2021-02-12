@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4035 - PendingSessionQueueRatio"
 title: "4035 - PendingSessionQueueRatio"
 ms.date: "03/30/2017"
 ms.assetid: fe40094f-6f2c-4dd8-b872-191c7812118e

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedReader::GetDocumentVersion Method"
 title: "ISymUnmanagedReader::GetDocumentVersion Method"
 ms.date: "03/30/2017"
 api_name: 

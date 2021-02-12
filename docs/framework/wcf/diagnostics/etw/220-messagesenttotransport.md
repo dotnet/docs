@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 220 - MessageSentToTransport"
 title: "220 - MessageSentToTransport"
 ms.date: "03/30/2017"
 ms.assetid: aef4e781-240b-45bc-bff8-400053037e71

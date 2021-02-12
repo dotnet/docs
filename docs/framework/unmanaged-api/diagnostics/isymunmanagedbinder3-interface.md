@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedBinder3 Interface"
 title: "ISymUnmanagedBinder3 Interface"
 ms.date: "03/30/2017"
 api_name: 

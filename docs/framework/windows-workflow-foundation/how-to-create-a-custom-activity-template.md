@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Custom Activity Template"
 title: "How to: Create a Custom Activity Template"
 ms.date: "03/30/2017"
 ms.assetid: 6760a5cc-6eb8-465f-b4fa-f89b39539429

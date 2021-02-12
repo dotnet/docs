@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Duplex Federated Binding"
 title: "How to: Create a Duplex Federated Binding"
 ms.date: "03/30/2017"
 ms.assetid: 4331d2bc-5455-492a-9189-634a82597726

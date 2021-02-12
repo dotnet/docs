@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.FailedToOpenIncomingChannel"
 title: "System.ServiceModel.FailedToOpenIncomingChannel"
 ms.date: "03/30/2017"
 ms.assetid: 7c6c6b1b-51b8-4f45-bf76-62d816a1fc0a

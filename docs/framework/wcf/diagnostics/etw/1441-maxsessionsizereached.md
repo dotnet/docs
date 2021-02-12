@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1441 - MaxSessionSizeReached"
 title: "1441 - MaxSessionSizeReached"
 ms.date: "03/30/2017"
 ms.assetid: ccf51232-cdbc-4004-a4b9-aed0c256dfe4

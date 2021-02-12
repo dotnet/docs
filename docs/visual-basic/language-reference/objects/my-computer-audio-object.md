@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: My.Computer.Audio Object"
 title: "My.Computer.Audio Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 

@@ -1,18 +1,18 @@
 ---
 title: Deploying eShopOnContainers to Azure
 description: Deploying the eShopOnContainers application using Azure Kubernetes Service, Helm, and DevSpaces.
-ms.date: 05/13/2020
+ms.date: 01/19/2021
 ---
 
 # Deploying eShopOnContainers to Azure
 
-The eShopOnContainers application can be deployed to a variety of Azure platforms. The recommended approach is to deploy the application to Azure Kubernetes Services (AKS). Helm, a Kubernetes deployment tool, is available to reduce deployment complexity. Optionally, developers may implement Azure Dev Spaces for Kubernetes to streamline their development process.
+The eShopOnContainers application can be deployed to various Azure platforms. The recommended approach is to deploy the application to Azure Kubernetes Services (AKS). Helm, a Kubernetes deployment tool, is available to reduce deployment complexity. Optionally, developers may implement Azure Dev Spaces for Kubernetes to streamline their development process.
 
 ## Azure Kubernetes Service
 
 To host eShop in AKS, the first step is to create an AKS cluster. To do so, you might use the Azure portal, which will walk you through the required steps. You could also create a cluster from the Azure CLI, taking care to enable Role-Based Access Control (RBAC) and application routing. The eShopOnContainers' documentation details the steps for creating your own AKS cluster. Once created, you can access and manage the cluster from the Kubernetes dashboard.
 
-You can now deploy the eShop application to the cluster leveraging Helm and Tiller.
+You can now deploy the eShop application to the cluster using Helm.
 
 ## Deploying to Azure Kubernetes Service using Helm
 

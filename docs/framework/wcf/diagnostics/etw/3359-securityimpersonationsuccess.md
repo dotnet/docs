@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3359 - SecurityImpersonationSuccess"
 title: "3359 - SecurityImpersonationSuccess"
 ms.date: "03/30/2017"
 ms.assetid: 80bcea7c-ae57-4b89-8032-5f9787545b07

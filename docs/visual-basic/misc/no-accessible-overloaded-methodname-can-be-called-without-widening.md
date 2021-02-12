@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: No accessible overloaded '<methodname>' can be called with these arguments without a widening conversion: <list>"
 title: "No accessible overloaded '<methodname>' can be called with these arguments without a widening conversion: <list>"
 ms.date: 07/20/2015
 f1_keywords: 

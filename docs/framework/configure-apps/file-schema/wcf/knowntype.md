@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <knownType>"
 title: "<knownType>"
 ms.date: "03/30/2017"
 ms.assetid: ee2b7be3-7148-4a3a-b861-48e7330615e5

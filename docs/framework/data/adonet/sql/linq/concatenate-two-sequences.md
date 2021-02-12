@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concatenate Two Sequences"
 title: "Concatenate Two Sequences"
 ms.date: "03/30/2017"
 dev_langs: 

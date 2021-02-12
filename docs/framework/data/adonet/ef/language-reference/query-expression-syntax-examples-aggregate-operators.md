@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Query Expression Syntax Examples: Aggregate Operators"
 title: "Query Expression Syntax Examples: Aggregate Operators"
 ms.date: "03/30/2017"
 dev_langs: 

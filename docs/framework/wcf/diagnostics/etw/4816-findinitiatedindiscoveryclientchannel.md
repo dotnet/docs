@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4816 - FindInitiatedInDiscoveryClientChannel"
 title: "4816 - FindInitiatedInDiscoveryClientChannel"
 ms.date: "03/30/2017"
 ms.assetid: e64ad429-3a9a-4df6-893a-36a116d393ee

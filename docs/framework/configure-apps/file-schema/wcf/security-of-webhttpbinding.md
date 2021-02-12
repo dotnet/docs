@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <security> of <webHttpBinding>"
 title: "<security> of <webHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 727cf3d2-6f56-48ad-a59f-ba423edb9c83

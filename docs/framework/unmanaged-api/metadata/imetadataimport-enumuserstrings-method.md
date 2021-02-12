@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::EnumUserStrings Method"
 title: "IMetaDataImport::EnumUserStrings Method"
 ms.date: "03/30/2017"
 api_name: 

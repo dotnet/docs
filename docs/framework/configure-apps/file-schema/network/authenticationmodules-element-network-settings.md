@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <authenticationModules> Element (Network Settings)"
 title: "<authenticationModules> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 

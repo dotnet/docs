@@ -1,7 +1,7 @@
 ---
 title: Applying CQRS and CQS approaches in a DDD microservice in eShopOnContainers
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the way CQRS is implemented in the ordering microservice in eShopOnContainers.
-ms.date: 03/03/2020
+ms.date: 01/13/2021
 ---
 # Apply CQRS and CQS approaches in a DDD microservice in eShopOnContainers
 
@@ -21,7 +21,7 @@ As shown in Figure 7-2 in the previous section, this guide suggests using DDD pa
 
 For implementing the "queries side", you can choose between many approaches, from your full-blown ORM like EF Core, AutoMapper projections, stored procedures, views, materialized views or a micro ORM.
 
-In this guide and in eShopOnContainers (specifically the ordering microservice) we chose to implement straight queries using a micro ORM like [Dapper](https://github.com/StackExchange/dapper-dot-net). This lets you implement any query based on SQL statements to get the best performance, thanks to a light framework with little overhead.
+In this guide and in eShopOnContainers (specifically the ordering microservice) we chose to implement straight queries using a micro ORM like [Dapper](https://github.com/StackExchange/dapper-dot-net). This guide lets you implement any query based on SQL statements to get the best performance, thanks to a light framework with little overhead.
 
 When you use this approach, any updates to your model that impact how entities are persisted to a SQL database also need separate updates to SQL queries used by Dapper or any other separate (non-EF) approaches to querying.
 
@@ -31,7 +31,7 @@ It's important to understand that CQRS and most DDD patterns (like DDD layers or
 
 Different Bounded Contexts (BCs) will employ different patterns. They have different responsibilities, and that leads to different solutions. It is worth emphasizing that forcing the same pattern everywhere leads to failure. Do not use CQRS and DDD patterns everywhere. Many subsystems, BCs, or microservices are simpler and can be implemented more easily using simple CRUD services or using another approach.
 
-There is only one application architecture: the architecture of the system or end-to-end application you are designing (for example, the microservices architecture). However, the design of each Bounded Context or microservice within that application reflects its own tradeoffs and internal design decisions at an architecture patterns level. Do not try to apply the same architectural patterns like CQRS or DDD everywhere.
+There is only one application architecture: the architecture of the system or end-to-end application you are designing (for example, the microservices architecture). However, the design of each Bounded Context or microservice within that application reflects its own tradeoffs and internal design decisions at an architecture patterns level. Do not try to apply the same architectural patterns as CQRS or DDD everywhere.
 
 ### Additional resources
 

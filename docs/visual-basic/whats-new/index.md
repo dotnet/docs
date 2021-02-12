@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: What's new for Visual Basic"
 title: What's new
 ms.date: 10/24/2018
 f1_keywords:
@@ -15,12 +16,15 @@ This topic lists key feature names for each version of Visual Basic, with detail
 
 ## Current version
 
-Visual Basic 16.0 / Visual Studio 2019 version 16.0\
-For new features, see [Visual Basic 16.0](#visual-basic-160).
+Visual Basic 16.9 / Visual Studio 2019 version 16.9\
+For new features, see [Visual Basic 16.9](#visual-basic-169).
 
 You can download the latest .NET SDK from the [.NET downloads page](https://dotnet.microsoft.com/download).
 
 ## Previous versions
+
+Visual Basic 16.0 / Visual Studio 2019 version 16.0\
+For new features, see [Visual Basic 16.0](#visual-basic-160).
 
 Visual Basic 15.8 / Visual Studio 2017 version 15.8\
 For new features, see [Visual Basic 15.8](#visual-basic-158).
@@ -57,6 +61,10 @@ Bit-shift operators, loop variable declaration
 
 Visual Basic / Visual Studio .NET 2002\
 The first release of Visual Basic .NET
+
+## Visual Basic 16.9
+
+Visual Basic 16.9 enables consumption of init-only properties.
 
 ## Visual Basic 16.0
 

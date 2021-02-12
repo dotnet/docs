@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorOpenFlags Enumeration"
 title: "CorOpenFlags Enumeration"
 ms.date: "03/30/2017"
 api_name: 

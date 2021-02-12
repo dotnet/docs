@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Transacted Operations Committed Per Second"
 title: "Transacted Operations Committed Per Second"
 ms.date: "03/30/2017"
 ms.assetid: 7318921b-47c4-4c8c-9fdd-41a92061c53f

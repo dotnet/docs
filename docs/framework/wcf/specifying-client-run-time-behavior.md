@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Specifying Client Run-Time Behavior"
 title: "Specifying Client Run-Time Behavior"
 ms.date: "03/30/2017"
 dev_langs: 

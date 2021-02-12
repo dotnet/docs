@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Emitting User-Code Traces"
 title: "Emitting User-Code Traces"
 ms.date: "03/30/2017"
 ms.assetid: fa54186a-8ffa-4332-b0e7-63867126fd49

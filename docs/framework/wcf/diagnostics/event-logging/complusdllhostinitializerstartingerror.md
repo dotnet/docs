@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ComPlusDllHostInitializerStartingError"
 title: "ComPlusDllHostInitializerStartingError"
 ms.date: "03/30/2017"
 ms.assetid: ad7d176a-cf40-412a-9335-eef64a25454a

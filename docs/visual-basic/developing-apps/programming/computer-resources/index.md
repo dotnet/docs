@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accessing computer resources (Visual Basic)"
 title: "Accessing computer resources"
 ms.date: 07/20/2015
 helpviewer_keywords:

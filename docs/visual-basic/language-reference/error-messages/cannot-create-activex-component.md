@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cannot create ActiveX Component"
 title: "Cannot create ActiveX Component"
 ms.date: 07/20/2015
 f1_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport2::GetPEKind Method"
 title: "IMetaDataImport2::GetPEKind Method"
 ms.date: "03/30/2017"
 api_name: 

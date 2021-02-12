@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataDispenser::OpenScopeOnMemory Method"
 title: "IMetaDataDispenser::OpenScopeOnMemory Method"
 ms.date: "03/30/2017"
 api_name: 

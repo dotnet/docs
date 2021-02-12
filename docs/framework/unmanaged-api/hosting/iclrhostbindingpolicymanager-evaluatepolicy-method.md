@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRHostBindingPolicyManager::EvaluatePolicy Method"
 title: "ICLRHostBindingPolicyManager::EvaluatePolicy Method"
 ms.date: "03/30/2017"
 api_name: 

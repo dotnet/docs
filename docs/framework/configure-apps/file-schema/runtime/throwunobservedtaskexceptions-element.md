@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <ThrowUnobservedTaskExceptions> Element"
 title: "<ThrowUnobservedTaskExceptions> Element"
 ms.date: "03/30/2017"
 dev_langs: 

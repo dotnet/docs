@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: -delaysign"
 title: "-delaysign"
 ms.date: 03/10/2018
 helpviewer_keywords:

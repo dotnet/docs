@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compute the Sum of Values in a Numeric Sequence"
 title: "Compute the Sum of Values in a Numeric Sequence"
 ms.date: "03/30/2017"
 dev_langs: 

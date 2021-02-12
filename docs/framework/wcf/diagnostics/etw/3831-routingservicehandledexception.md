@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3831 - RoutingServiceHandledException"
 title: "3831 - RoutingServiceHandledException"
 ms.date: "03/30/2017"
 ms.assetid: dd7351e4-3adb-4d53-9329-c88e968633af

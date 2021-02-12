@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.TxCompletionStatusCompletedForAutocomplete"
 title: "System.ServiceModel.TxCompletionStatusCompletedForAutocomplete"
 ms.date: "03/30/2017"
 ms.assetid: 79ec2a3f-8407-4c4c-a1bc-2b0e6e21c543

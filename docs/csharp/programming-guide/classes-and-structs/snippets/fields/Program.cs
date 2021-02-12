@@ -51,7 +51,7 @@ public class CalendarEntry
     {
         DateTime dt = Convert.ToDateTime(dateString);
 
-        if (dt.Ticks < date.Ticks)
+        if (dt.Ticks < _Date.Ticks)
         {
             return _Date - dt;
         }

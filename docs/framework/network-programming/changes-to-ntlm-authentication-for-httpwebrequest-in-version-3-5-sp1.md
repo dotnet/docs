@@ -46,7 +46,7 @@ To specify the host names that are mapped to the loopback address and can connec
 
 7. Quit Registry Editor, and then restart the IISAdmin service and run IISReset.
 
-A less secure work around is to disable the loop back check, as described in <https://support.microsoft.com/kb/896861>. This disables the protection against reflection attacks. So it is better to constrain the set of alternate names to only those you expect the machine to actually use.
+A less secure work around is to disable the loop back check. This disables the protection against reflection attacks. So it is better to constrain the set of alternate names to only those you expect the machine to actually use.
 
 ## See also
 

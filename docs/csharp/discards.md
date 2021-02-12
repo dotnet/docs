@@ -34,7 +34,7 @@ The `Deconstruct` method of a class, structure, or interface also allows you to 
 
 For more information on deconstructing user-defined types with discards, see [Deconstructing tuples and other types](deconstruct.md#deconstructing-a-user-defined-type-with-discards).
 
-## Pattern matching with `switch
+## Pattern matching with `switch`
 
 The *discard pattern* can be used in pattern matching with the [switch](language-reference/keywords/switch.md) keyword. Every expression always matches the discard pattern. (It can be used with [is](language-reference/keywords/is.md) expressions. However, that use is rare because the discard can be removed without changing its meaning).
 

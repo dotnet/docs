@@ -48,7 +48,7 @@ To analyze your entire project in Visual Studio, right-click on your project in 
 
 You can also use the [ApiPort console app](https://aka.ms/apiportdownload).
 
-Type the following command to analyze the current directory: 
+Type the following command to analyze the current directory:
 
 ```console
 ApiPort.exe analyze -f .

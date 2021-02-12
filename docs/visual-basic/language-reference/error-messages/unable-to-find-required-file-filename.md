@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: BC30655: Unable to find required file '<filename>"
+description: "Learn more about: BC30655: Unable to find required file '<filename>'"
 title: "Unable to find required file '<filename>'"
 ms.date: 07/20/2015
 f1_keywords:

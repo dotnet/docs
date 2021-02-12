@@ -25,7 +25,7 @@ Namespace Fields
     Public NotInheritable Class Program
 
         Public Shared Sub Main()
-            Dim json As String = "{""Date"":""2020-09-06T11:31:01.923395-07:00"",""TemperatureC"":-1,""Summary"":""Cold""}"
+            Dim json As String = "{""Date"":""2020-09-06T11:31:01.923395"",""TemperatureC"":-1,""Summary"":""Cold""}"
             Console.WriteLine($"Input JSON: {json}")
 
             Dim options As New JsonSerializerOptions With {
@@ -41,14 +41,13 @@ Namespace Fields
 
             Console.WriteLine($"Output JSON: {roundTrippedJson}")
 
-            options = New JsonSerializerOptions(JsonSerializerDefaults.Web)
             Dim forecast21 As Forecast2 = JsonSerializer.Deserialize(Of Forecast2)(json)
 
             Console.WriteLine($"forecast2.Date: {forecast21.[Date]}")
             Console.WriteLine($"forecast2.TemperatureC: {forecast21.TemperatureC}")
             Console.WriteLine($"forecast2.Summary: {forecast21.Summary}")
 
-            roundTrippedJson = JsonSerializer.Serialize(forecast21, options)
+            roundTrippedJson = JsonSerializer.Serialize(forecast21)
 
             Console.WriteLine($"Output JSON: {roundTrippedJson}")
         End Sub
@@ -59,12 +58,12 @@ End Namespace
 
 ' Produces output like the following example:
 '
-'Input JSON: { "date":"2020-09-06T11:31:01.923395-07:00","temperatureC":-1,"summary":"Cold"}
+'Input JSON: { "Date":"2020-09-06T11:31:01.923395","TemperatureC":-1,"Summary":"Cold"}
 'forecast.Date: 9/6/2020 11:31:01 AM
 'forecast.TemperatureC: -1
 'forecast.Summary: Cold
-'Output JSON: { "date":"2020-09-06T11:31:01.923395-07:00","temperatureC":-1,"summary":"Cold"}
+'Output JSON: { "Date":"2020-09-06T11:31:01.923395","TemperatureC":-1,"Summary":"Cold"}
 'forecast2.Date: 9/6/2020 11:31:01 AM
 'forecast2.TemperatureC: -1
 'forecast2.Summary: Cold
-'Output JSON: { "date":"2020-09-06T11:31:01.923395-07:00","temperatureC":-1,"summary":"Cold"}
+'Output JSON: { "Date":"2020-09-06T11:31:01.923395","TemperatureC":-1,"Summary":"Cold"}

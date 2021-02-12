@@ -44,7 +44,7 @@ namespace Fields
 
             Console.WriteLine($"Output JSON: {roundTrippedJson}");
 
-            options = new JsonSerializerOptions(JsonSerializerDefaults.Web);
+            options = new JsonSerializerOptions();
             var forecast2 = JsonSerializer.Deserialize<Forecast2>(json);
 
             Console.WriteLine($"forecast2.Date: {forecast2.Date}");
@@ -61,7 +61,7 @@ namespace Fields
 
 // Produces output like the following example:
 //
-//Input JSON: { "date":"2020-09-06T11:31:01.923395-07:00","temperatureC":-1,"summary":"Cold"}
+//Input JSON: { "Date":"2020-09-06T11:31:01.923395-07:00","TemperatureC":-1,"Summary":"Cold"}
 //forecast.Date: 9/6/2020 11:31:01 AM
 //forecast.TemperatureC: -1
 //forecast.Summary: Cold

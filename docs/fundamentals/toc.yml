@@ -192,6 +192,8 @@ items:
         href: ../core/tools/sdk-errors/netsdk1045.md
       - name: NETSDK1059
         href: ../core/tools/sdk-errors/netsdk1059.md
+      - name: NETSDK1064
+        href: ../core/tools/sdk-errors/netsdk1064.md
       - name: NETSDK1071
         href: ../core/tools/sdk-errors/netsdk1071.md
       - name: NETSDK1073
@@ -1259,6 +1261,8 @@ items:
             href: code-analysis/style-rules/ide0110.md
         - name: Miscellaneous rules
           items:
+          - name: Overview
+            href: code-analysis/style-rules/miscellaneous-rules.md
           - name: IDE0076
             href: code-analysis/style-rules/ide0076.md
           - name: IDE0077

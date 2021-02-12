@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Match a String against a Pattern (Visual Basic)"
 title: "How to: Match a String against a Pattern"
 ms.date: 07/20/2015
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: -linkresource (Visual Basic)"
 title: "-linkresource"
 ms.date: 03/10/2018
 helpviewer_keywords: 

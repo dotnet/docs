@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Invalid pattern string"
 title: "Invalid pattern string"
 ms.date: 07/20/2015
 ms.assetid: ec1aecdb-5339-4a93-be71-eec56b1d7438

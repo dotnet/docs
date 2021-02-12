@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Convert Strings into an Array of Bytes in Visual Basic"
 title: "How to: Convert Strings into an Array of Bytes"
 ms.date: 07/20/2015
 helpviewer_keywords: 

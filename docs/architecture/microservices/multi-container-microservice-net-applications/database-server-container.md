@@ -9,7 +9,7 @@ You can have your databases (SQL Server, PostgreSQL, MySQL, etc.) on regular sta
 
 ## SQL Server running as a container with a microservice-related database
 
-In eShopOnContainers, there's a container named `sqldata`, as defined in the [docker-compose.yml](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/docker-compose.yml) file, that runs a SQL Server for Linux instance with the SQL databases for all microservices that need one.
+In eShopOnContainers, there's a container named `sqldata`, as defined in the [docker-compose.yml](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/docker-compose.yml) file, that runs a SQL Server for Linux instance with the SQL databases for all microservices that need one.
 
 A key point in microservices is that each microservice owns its related data, so it should have its own database. However, the databases can be anywhere. In this case, they are all in the same container to keep Docker memory requirements as low as possible. Keep in mind that this is a good-enough solution for development and, perhaps, testing but not for production.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Get not supported (write-only property)"
 title: "Get not supported (write-only property)"
 ms.date: 07/20/2015
 f1_keywords: 

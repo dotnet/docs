@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Expression '<name>' is not a procedure, but occurs as the target of a procedure call"
 title: "Expression '<name>' is not a procedure, but occurs as the target of a procedure call"
 ms.date: 07/20/2015
 f1_keywords: 

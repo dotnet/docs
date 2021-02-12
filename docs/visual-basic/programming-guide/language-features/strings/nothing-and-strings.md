@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Nothing and Strings in Visual Basic"
 title: "Nothing and Strings"
 ms.date: 07/20/2015
 helpviewer_keywords: 

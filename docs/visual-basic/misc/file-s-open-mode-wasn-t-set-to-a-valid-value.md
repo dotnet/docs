@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: File's open mode wasn't set to a valid value"
 title: "File's open mode wasn't set to a valid value"
 ms.date: 07/20/2015
 ms.assetid: 969541f6-9ff6-4804-ba61-0d17370060ef

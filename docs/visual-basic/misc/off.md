@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Off (Visual Basic)"
 title: "Off"
 ms.date: 07/20/2015
 f1_keywords: 

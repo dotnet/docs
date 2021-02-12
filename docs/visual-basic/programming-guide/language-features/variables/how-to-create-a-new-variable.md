@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a New Variable (Visual Basic)"
 title: "How to: Create a New Variable"
 ms.date: 07/20/2015
 helpviewer_keywords:

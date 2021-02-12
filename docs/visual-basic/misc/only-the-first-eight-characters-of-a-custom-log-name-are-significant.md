@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Only the first eight characters of a custom log name are significant"
 title: "Only the first eight characters of a custom log name are significant"
 ms.date: 07/20/2015
 ms.assetid: db2a0252-9ddd-4e93-a239-6a690cc09557

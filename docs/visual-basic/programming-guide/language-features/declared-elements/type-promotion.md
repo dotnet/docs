@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type Promotion (Visual Basic)"
 title: "Type Promotion"
 ms.date: 07/20/2015
 helpviewer_keywords: 

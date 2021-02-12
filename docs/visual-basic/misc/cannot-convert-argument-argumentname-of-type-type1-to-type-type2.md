@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cannot convert argument '<argumentname>' of type '<type1>' to type '<type2>'"
 title: "Cannot convert argument '<argumentname>' of type '<type1>' to type '<type2>'"
 ms.date: 07/20/2015
 f1_keywords: 

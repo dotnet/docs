@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Fine-Tuning Your Async Application (Visual Basic)"
 title: "Fine-Tuning Your Async Application"
 ms.date: 07/20/2015
 ms.assetid: 4c3e7997-a95f-4fbe-a6ac-60ba042d30b9

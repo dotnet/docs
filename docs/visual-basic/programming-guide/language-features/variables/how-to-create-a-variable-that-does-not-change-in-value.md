@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Variable that Does Not Change in Value (Visual Basic)"
 title: "How to: Create a Variable that Does Not Change in Value"
 ms.date: 07/20/2015
 helpviewer_keywords:

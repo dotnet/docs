@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Logical and Bitwise Operators in Visual Basic"
 title: "Logical and Bitwise Operators"
 ms.date: 07/20/2015
 helpviewer_keywords: 

@@ -44,15 +44,13 @@ namespace Fields
 
             Console.WriteLine($"Output JSON: {roundTrippedJson}");
 
-            options = new JsonSerializerOptions();
             var forecast2 = JsonSerializer.Deserialize<Forecast2>(json);
 
             Console.WriteLine($"forecast2.Date: {forecast2.Date}");
             Console.WriteLine($"forecast2.TemperatureC: {forecast2.TemperatureC}");
             Console.WriteLine($"forecast2.Summary: {forecast2.Summary}");
 
-            roundTrippedJson =
-                JsonSerializer.Serialize<Forecast2>(forecast2, options);
+            roundTrippedJson = JsonSerializer.Serialize<Forecast2>(forecast2);
             
             Console.WriteLine($"Output JSON: {roundTrippedJson}");
         }

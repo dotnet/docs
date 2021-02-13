@@ -132,7 +132,7 @@ Both web and offline installers are designed for x86-based and x64-based compute
 
 - You must have administrative credentials to install .NET Framework 4.5 or later versions.
 
-- The .NET Framework 4.5 redistributable was updated on October 9, 2012 to correct an issue related to an improper timestamp on a digital certificate, which caused the digital signature on files produced and signed by Microsoft to expire prematurely. If you previously installed the .NET Framework 4.5 redistributable package dated August 16, 2012, we recommend that you update your copy with the latest redistributable from the [.NET Framework download page](https://dotnet.microsoft.com/download/dotnet-framework/net45). For more information about this issue, see [Microsoft Security Advisory 2749655](/security-updates/SecurityAdvisories/2012/2749655) and [Knowledge Base article 2770445](https://support.microsoft.com/kb/2770445).
+- The .NET Framework 4.5 redistributable was updated on October 9, 2012 to correct an issue related to an improper timestamp on a digital certificate, which caused the digital signature on files produced and signed by Microsoft to expire prematurely. If you previously installed the .NET Framework 4.5 redistributable package dated August 16, 2012, we recommend that you update your copy with the latest redistributable from the [.NET Framework download page](https://dotnet.microsoft.com/download/dotnet-framework/net45). For more information about this issue, see [Microsoft Security Advisory 2749655](/security-updates/SecurityAdvisories/2012/2749655).
 
 ## To install language packs
 

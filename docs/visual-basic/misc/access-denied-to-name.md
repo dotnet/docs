@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: Access denied to '<name>"
+description: "Learn more about: Access denied to '<name>'"
 title: "Access denied to '<name>'"
 ms.date: 07/20/2015
 ms.assetid: 196c7286-4833-41d9-bbcb-f64c17eb2a59

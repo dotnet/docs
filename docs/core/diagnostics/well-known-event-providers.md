@@ -111,6 +111,6 @@ To learn more about the events in ASP.NET Core and how to consume them, see [Log
 
 ## Entity Framework core
 
-EF Core also providers events to help you diagnose issues in EF Core. 
+EF Core also providers events to help you diagnose issues in EF Core.
 
 To learn more about the events in EF Core and how to consume them, see [.NET Events in EF Core](/ef/core/logging-events-diagnostics/events).

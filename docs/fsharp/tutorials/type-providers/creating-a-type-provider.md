@@ -10,7 +10,7 @@ The type provider mechanism in F# is a significant part of its support for infor
 
 The F# ecosystem contains a range of type providers for commonly used Internet and enterprise data services. For example:
 
-- [FSharp.Data](https://fsharp.github.io/FSharp.Data/) includes type providers for JSON, XML, CSV and HTML document formats.
+- FSharp.Data includes type providers for JSON, XML, CSV and HTML document formats.
 
 - [SQLProvider](https://fsprojects.github.io/SQLProvider/) provides strongly typed access to SQL databases through a object mapping and F# LINQ queries against these data sources.
 

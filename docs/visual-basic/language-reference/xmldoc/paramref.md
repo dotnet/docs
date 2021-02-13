@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <paramref> (Visual Basic)"
 title: "<paramref>"
 ms.date: 07/20/2015
 helpviewer_keywords: 

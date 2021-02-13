@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: BC30020: 'Is' requires operands that have reference types, but this operand has the value type '<typename>"
+description: "Learn more about: BC30020: 'Is' requires operands that have reference types, but this operand has the value type '<typename>'"
 title: "'Is' requires operands that have reference types, but this operand has the value type '<typename>'"
 ms.date: 07/20/2015
 f1_keywords:

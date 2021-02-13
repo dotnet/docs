@@ -191,7 +191,7 @@ Up to this point, the above code snippet has only shown the example of performin
   <https://github.com/dotnet/extensions/tree/v3.1.8/src/HttpClientFactory>
 
 - **Polly (.NET resilience and transient-fault-handling library)**  
-  <http://www.thepollyproject.org/>
+  <https://thepollyproject.azurewebsites.net/>
   
 - **Using IHttpClientFactory without dependency injection (GitHub issue)**  
   <https://github.com/dotnet/extensions/issues/1345>

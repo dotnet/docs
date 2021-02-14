@@ -221,8 +221,8 @@ Module Program
         If String.IsNullOrEmpty(term) Then Return source
         Dim elementType = source.ElementType
 
-        ' The logic for building the ParameterExpression And the LambdaExpression's body is the same as in the previous
-        ' example, but has been refactored into the ConstructBody function.
+        ' The logic for building the ParameterExpression And the LambdaExpression's body is the same as in
+        ' the previous example, but has been refactored into the ConstructBody function.
         Dim x As (Expression, ParameterExpression) = ConstructBody(elementType, term)
         Dim body As Expression = x.Item1
         Dim prm As ParameterExpression = x.Item2

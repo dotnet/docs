@@ -40,7 +40,20 @@ You can use lambda expressions in any code that requires instances of delegate t
 
 [!code-csharp-interactive[lambda is argument in LINQ](snippets/lambda-expressions/Introduction.cs#Argument)]
 
-When you use method-based syntax to call the <xref:System.Linq.Enumerable.Select%2A?displayProperty=nameWithType> method in the <xref:System.Linq.Enumerable?displayProperty=nameWithType> class, for example in LINQ to Objects and LINQ to XML, the parameter is a delegate type <xref:System.Func%602?displayProperty=nameWithType>. When you call the <xref:System.Linq.Queryable.Select%2A?displayProperty=nameWithType> method in the <xref:System.Linq.Queryable?displayProperty=nameWithType> class, for example in LINQ to SQL, the parameter type is an expression tree type [`Expression<Func<TSource,TResult>>`](<xref:System.Linq.Expressions.Expression%601>). In both cases you can use the same lambda expression to specify the parameter value. That makes the two `Select` calls to look similar although in fact the type of objects created from the lambdas is different.
+When you use method-based syntax to call the <xref:System.Linq.Enumerable.Select%2A?displayProperty=nameWithType> method in the <xref:System.Linq.Enumerable?displayProperty=nameWithType> class, for example in LINQ to Objects and LINQ to XML, the parameter is a delegate type <xref:System.Func%602?displayProperty=nameWithType>. When you call the <xref:System.Linq.Queryable.Select%2A?displayProperty=nameWithType> method in the <xref:System.Linq.Queryable?displayProperty=nameWithType> class, for example in LINQ to SQL, the parameter type is an expression tree type [`Expression<Func<TSource,TResult>>`](<xref:System.Linq.Expressions.Expression%601>).While in both cases you can use the same lambda expression to specify the parameter value, the target types are different, and thus the objects created from the lambda expression is different.
+
+When you target a delegate type with a lambda expression, you will get back an invokable delegate instance, as in the first example. But when you target an expression tree type with a lambda expression, you'll get back an object describing the code operations&mdash;e.g. "multiply the parameter `x` by itself", or "get the `Foo` property's value from parameter `y`". This expression tree object cannot be invoked:
+
+[!code-csharp-interactive[lambda is argument in LINQ](snippets/lambda-expressions/Introduction.cs#NonInvokableExpressionTree)]
+
+But you can inspect the expression tree:
+
+[!code-csharp-interactive[lambda is argument in LINQ](snippets/lambda-expressions/Introduction.cs#InspectExpressionTree)]
+
+and pass it to other code&mdash;such as a LINQ provider&mdash;which may perform further actions or return some result.
+
+> [!NOTE]
+> Some code operations aren't supported by a given expression tree consumer&mdash;e.g. `.ToString` in the Entity Framework LINQ provider. Consult the relevant documentation to find out which operations are supported.
   
 ## Expression lambdas
 

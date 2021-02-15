@@ -42,5 +42,28 @@ namespace lambda_expressions
             // 4 9 16 25
             // </SnippetArgument>
         }
+
+        private static void NonInvokableExpressionTree()
+        {
+            // <SnippetNonInvokableExpressionTree>
+            Expression<Func<int, int>> expr = (int x) => x * x;
+
+            // The following will not compile:
+            // expr(3);
+            // </SnippetNonInvokableExpressionTree>
+        }
+
+        private static void InspectExpressionTree()
+        {
+            // <SnippetInspectExpressionTree>
+            Func<int, int> fn = (int x) => x * x;
+            Console.WriteLine(expr.Parameters[0].Name);
+            // Output:
+            // x
+            Console.WriteLine(expr.Body.NodeType);
+            // Output: 
+            // Multiply
+            // </SnippetInspectExpressionTree>
+        }
     }
 }

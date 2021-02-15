@@ -134,7 +134,7 @@ For .NET 2.1, you must use the following switches with the `dotnet publish` comm
   This switch uses an identifier (RID) to specify the target platform. For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).
 
 - `--self-contained false`
-  This switch tells the .NET Core SDK to create an executable as an FDE.
+  This switch tells the .NET Core SDK to not create a self-contained deployment (SCD), which is the default when -r switch is used. 
 
 | Publish Mode                   | SDK Version | Command                                                     |
 |--------------------------------|-------------|-------------------------------------------------------------|

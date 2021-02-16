@@ -84,7 +84,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 - **`--buffersize <size>`**
 
-  Sets the size of the in-memory circular buffer, in megabytes. Default 256 MB.
+  Sets the size of the in-memory circular buffer, in megabytes. Default 256 MB.Install
 
 - **`--clreventlevel <clreventlevel>`**
 
@@ -189,6 +189,9 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 > [!NOTE]
 > To collect a trace using `dotnet-trace`, it needs to be run as the same user as the user running target process or as root. Otherwise, the tool will fail to establish a connection with the target process.
+
+> [!NOTE]
+> If you see the following error message: `[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`, you are trying to use `dotnet-trace` that has mismatched bitness against the target process. Make sure to download the correct bitness of the tool in the [install](#Install) link.
 
 ## dotnet-trace convert
 

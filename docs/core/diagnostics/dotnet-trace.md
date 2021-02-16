@@ -84,7 +84,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 - **`--buffersize <size>`**
 
-  Sets the size of the in-memory circular buffer, in megabytes. Default 256 MB.Install
+  Sets the size of the in-memory circular buffer, in megabytes. Default 256 MB.
 
 - **`--clreventlevel <clreventlevel>`**
 

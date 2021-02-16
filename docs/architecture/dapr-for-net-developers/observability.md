@@ -301,7 +301,7 @@ spec:
     enabled: false
 ```
 
-#### Visualizing Dapr metrics
+#### Visualize Dapr metrics
 
 With the Prometheus scraper collecting and publishing metrics into the monitoring backend, how do you make sense of the raw data? A popular visualization tool for analyzing metrics is [Grafana](https://grafana.com/grafana/). With Grafana, you can create dashboards from the available metrics. Here's an example of a dashboard displaying Dapr system services metrics:
 

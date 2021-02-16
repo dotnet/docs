@@ -134,7 +134,7 @@ Constructing expression trees using factory methods is relatively complex; it is
 
 For instance, the previous example (including the expression tree construction) could be rewritten as follows:
 
-:::code language="vbnet" source="../../../../../samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees/Program.vb" id="Dynamic_linq":::
+:::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees/Program.vb" id="Dynamic_linq":::
 
 ## See also
 

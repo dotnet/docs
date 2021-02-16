@@ -9,7 +9,7 @@ ms.date: 02/07/2021
 
 In the first two chapters, you learned basic concepts about Dapr. It's time to take it for a *test drive*. This chapter will guide you through preparing your local development environment and building two Dapr .NET applications.
 
-## Installing Dapr into your local environment
+## Install Dapr into your local environment
 
 You'll start by installing Dapr on your development computer. Once complete, you can build and run Dapr applications in [self-hosted mode](https://docs.dapr.io/operations/hosting/self-hosted/self-hosted-overview/).
 

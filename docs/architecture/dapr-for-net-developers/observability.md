@@ -282,7 +282,7 @@ Dapr generates a large set of metrics for Dapr system services and its runtime. 
 
 For more information on available metrics, see the [Dapr metrics documentation](https://docs.dapr.io/developing-applications/building-blocks/observability/metrics).
 
-#### Configuring Dapr metrics
+#### Configure Dapr metrics
 
 At runtime, you can disable the metrics collection endpoint by including the `--enable-metrics=false` argument in the Dapr command. Or, you can also change the default port for the endpoint with the `--metrics-port 9090` argument.
 

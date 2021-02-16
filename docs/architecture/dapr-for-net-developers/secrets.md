@@ -183,7 +183,7 @@ spec:
 
 All Dapr component configuration files require a `name` along with an optional `namespace` value. Additionally, the `type` field in the `spec` section specifies the type of secret store component. The properties in the `metadata` section differ per secret store.
 
-### Indirectly consuming Dapr secrets
+### Indirectly consume Dapr secrets
 
 As mentioned earlier in this chapter, applications can also consume secrets by referencing them in component configuration files. Consider a [state management component](state-management.md) that uses Redis cache for storing state:
 

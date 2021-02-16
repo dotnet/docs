@@ -318,7 +318,7 @@ public interface IEventBus
 }
 ```
 
-### Publishing events
+### Publish events
 
 In the updated eShopOnDapr, a single `DaprEventBus` implementation can support any Dapr-supported message broker. The following code block shows the simplified Publish method. Note how the `PublishAsync` method uses the Dapr client to publish an event:
 

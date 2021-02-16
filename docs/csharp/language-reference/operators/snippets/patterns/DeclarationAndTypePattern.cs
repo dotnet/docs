@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace patterns
+namespace Patterns
 {
     public static class DeclarationAndTypePattern
     {
@@ -34,17 +34,17 @@ namespace patterns
             var letters = new List<char> { 'a', 'b', 'c', 'd' };
             Console.WriteLine(GetCount(letters));  // output: 4
 
-            int GetCount<T>(IEnumerable<T> xs) => xs switch
+            static int GetCount<T>(IEnumerable<T> source) => source switch
             {
                 Array a => a.Length,
                 ICollection<T> c => c.Count,
-                _ => xs.Count(),
+                _ => source.Count(),
             };
             // </SwitchExpression>
         }
     }
 
-    namespace vehicles
+    namespace Vehicles
     {
         // <DiscardVariable>
         public abstract class Vehicle {}

@@ -1,7 +1,7 @@
 items:
 - name: C# documentation
   href: index.yml
-- name: Tour of C#
+- name: Get started
   items:
   - name: Introduction
     href: tour-of-csharp/index.md
@@ -11,37 +11,39 @@ items:
     href: tour-of-csharp/program-building-blocks.md
   - name: Major language areas
     href: tour-of-csharp/features.md
+  - name: Tutorials
+    items:
+    - name: Choose your first lesson
+      href: tour-of-csharp/tutorials/index.md
+    - name: Browser based tutorials
+      items:
+      - name: Hello world
+        href: tour-of-csharp/tutorials/hello-world.yml
+      - name: Numbers in C#
+        href: tour-of-csharp/tutorials/numbers-in-csharp.yml
+      - name: Branches and loops
+        href: tour-of-csharp/tutorials/branches-and-loops.yml
+      - name: List collections
+        href: tour-of-csharp/tutorials/list-collection.yml
+    - name: Work in your local environment
+      items:
+      - name: Set up your environment
+        href: tour-of-csharp/tutorials/local-environment.md
+      - name: Numbers in C#
+        href: tour-of-csharp/tutorials/numbers-in-csharp-local.md
+      - name: Branches and loops
+        href: tour-of-csharp/tutorials/branches-and-loops-local.md
+      - name: List collections
+        href: tour-of-csharp/tutorials/arrays-and-collections.md
 - name: Tutorials
   items:
   - name: Overview
     displayName: tutorials
     href: tutorials/index.md
-  - name: Introduction to programming with C#
-    items:
-    - name: Choose your first lesson
-      href: tutorials/intro-to-csharp/index.md
-    - name: Hello world
-      href: tutorials/intro-to-csharp/hello-world.yml
-    - name: Numbers in C#
-      href: tutorials/intro-to-csharp/numbers-in-csharp.yml
-    - name: Branches and loops
-      href: tutorials/intro-to-csharp/branches-and-loops.yml
-    - name: List collections
-      href: tutorials/intro-to-csharp/list-collection.yml
-    - name: Work in your local environment
-      items:
-      - name: Set up your environment
-        href: tutorials/intro-to-csharp/local-environment.md
-      - name: Numbers in C#
-        href: tutorials/intro-to-csharp/numbers-in-csharp-local.md
-      - name: Branches and loops
-        href: tutorials/intro-to-csharp/branches-and-loops-local.md
-      - name: List collections
-        href: tutorials/intro-to-csharp/arrays-and-collections.md
-      - name: Introduction to classes
-        href: tutorials/intro-to-csharp/introduction-to-classes.md
-      - name: Object-Oriented programming
-        href: tutorials/intro-to-csharp/object-oriented-programming.md
+  - name: Introduction to classes
+    href: tutorials/intro-to-csharp/introduction-to-classes.md
+  - name: Object-Oriented programming
+    href: tutorials/intro-to-csharp/object-oriented-programming.md
   - name: Explore record types
     href: tutorials/exploration/records.md
   - name: Explore top level statements
@@ -286,8 +288,6 @@ items:
     items:
     - name: What's inside a C# program
       href: programming-guide/inside-a-program/index.md
-    - name: Hello World -- Your First Program
-      href: programming-guide/inside-a-program/hello-world-your-first-program.md
     - name: General Structure of a C# Program
       href: programming-guide/inside-a-program/general-structure-of-a-csharp-program.md
     - name: Identifier names

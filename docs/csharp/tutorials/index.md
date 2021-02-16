@@ -7,57 +7,6 @@ ms.date: 10/25/2018
 
 Welcome to the C# tutorials. These start with interactive lessons that you can run in your browser. Later tutorials and more advanced tutorials help you work with the .NET development tools to create C# programs on your machine.
 
-## Introduction to C# interactive tutorials
-
-If you want to start your exploration in video format, the [C# 101 video series](https://aka.ms/dotnet3-csharp) provides an introduction to C#. You'll learn about concepts you can explore in these tutorials.
-
-The first lessons explain C# concepts using small snippets of code. You'll
-learn the basics of C# syntax and how to work with data types like strings,
-numbers, and booleans. It's all interactive, and you'll be writing and running code
-within minutes. These first lessons assume no prior knowledge of
-programming or the C# language.
-
-## [Hello world](intro-to-csharp/hello-world.yml)
-
-In the [Hello world](intro-to-csharp/hello-world.yml) tutorial, you'll create the most basic
-C# program. You'll explore the `string` type and how to work with text.
-
-## [Numbers in C#](intro-to-csharp/numbers-in-csharp.yml)
-
-In the [Numbers in C#](intro-to-csharp/numbers-in-csharp.yml) tutorial, you'll learn
-how computers store numbers and how to perform calculations with different
-numeric types. You'll learn the basics of rounding, and how to perform
-mathematical calculations using C#. This tutorial is also available
-[to run locally on your machine](intro-to-csharp/numbers-in-csharp-local.md).
-
-This tutorial assumes that you have finished the [Hello world](intro-to-csharp/hello-world.yml) lesson.
-
-## [Branches and loops](intro-to-csharp/branches-and-loops.yml)
-
-The [Branches and loops](intro-to-csharp/branches-and-loops.yml) tutorial teaches the basics of selecting
-different paths of code execution based on the values stored in variables. You'll learn the
-basics of control flow, which is the basis of how programs make decisions and choose
-different actions. This tutorial is also available
-[to run locally on your machine](intro-to-csharp/branches-and-loops-local.md).
-
-This tutorial assumes that you have finished the [Hello world](intro-to-csharp/hello-world.yml) and
-[Numbers in C#](intro-to-csharp/numbers-in-csharp.yml) lessons.
-
-## [List collection](intro-to-csharp/list-collection.yml)
-
-The [List collection](intro-to-csharp/list-collection.yml) lesson gives you
-a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and sort the lists. You'll explore different kinds of lists. This tutorial is also
-available [to run locally on your machine](intro-to-csharp/arrays-and-collections.md).
-
-This tutorial assumes that you have finished the lessons listed above.
-
-## [Introduction to C# -- work locally](intro-to-csharp/local-environment.md)
-
-All the introductory tutorials following the Hello World lesson are available in your own local development environment. At the end of each tutorial, you decide if you want to continue
-with the next lesson online or on your own machine. There are links
-to help you set up your environment and continue with the next tutorial
-on your machine.
-
 ## Explore new features in C\#
 
 * [String Interpolation](string-interpolation.md): demonstrates how to use string interpolation to create formatted strings in C#.

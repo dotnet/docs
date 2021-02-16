@@ -10,7 +10,7 @@ The first step in running a tutorial on your machine is to set up a development 
 * To use the .NET CLI and your choice of text or code editor, see the .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro). The tutorial has instructions for setting up a development environment on Windows, Linux, or macOS.
 * To use the .NET CLI and Visual Studio Code, install the [.NET SDK](https://dotnet.microsoft.com/download) and
 [Visual Studio Code](https://code.visualstudio.com/).
-* To use Visual Studio 2019 on Windows, see [Tutorial: Create a simple C# console app in Visual Studio](/visualstudio/get-started/csharp/tutorial-console).
+* To use Visual Studio 2019, see [Tutorial: Create a simple C# console app in Visual Studio](/visualstudio/get-started/csharp/tutorial-console).
 
 ## Basic application development flow
 
@@ -54,7 +54,3 @@ This tutorial assumes that you have finished the [Hello world](hello-world.yml) 
 The [List collection](arrays-and-collections.md) lesson gives you a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and sort the lists. You'll explore different kinds of lists.
 
 This tutorial assumes that you have finished the lessons listed above.
-
-## Introduction to classes
-
-In [Introduction to classes](introduction-to-classes.md), you'll build a console application and see the basic object-oriented features that are part of the C# language. This is the final introduction to C# tutorial. It's only available to run on your machine, using your own local development environment and .NET.

@@ -95,7 +95,7 @@ The Dapr secrets API also offers an operation to retrieve all the secrets the ap
 http://localhost:<dapr-port>/v1.0/secrets/<store-name>/bulk
 ```
 
-## Using the Dapr .NET SDK
+## Use the Dapr .NET SDK
 
 For .NET developers, the Dapr .NET SDK streamlines Dapr secret management. Consider the `DaprClient.GetSecretAsync` method. It enables you to retrieve a secret directly from any Dapr secret store with minimal effort. Here's an example of fetching a connection string secret for a SQL Server database:
 

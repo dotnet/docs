@@ -21,10 +21,10 @@ where `T` is the name of a type or a type parameter and `v` is the name of a new
 
 Declaration pattern `T v` matches expression `E` when the result of `E` is non-null and any of the following conditions is true:
 
-- the runtime type of `E` is `T`
-- the runtime type of `E` derives from type `T` or implements interface `T` or there exists another [implicit reference conversion](~/_csharplang/spec/conversions.md#implicit-reference-conversions) from it to type `T`
-- the runtime type of `E` is a [nullable value type](../builtin-types/nullable-value-types.md) with the underlying type `T`
-- there exists a [boxing](../../programming-guide/types/boxing-and-unboxing.md#boxing) or [unboxing](../../programming-guide/types/boxing-and-unboxing.md#unboxing) conversion from the runtime type of `E` to type `T`
+- The runtime type of `E` is `T`.
+- The runtime type of `E` derives from type `T` or implements interface `T` or there exists another [implicit reference conversion](~/_csharplang/spec/conversions.md#implicit-reference-conversions) from it to type `T`.
+- The runtime type of `E` is a [nullable value type](../builtin-types/nullable-value-types.md) with the underlying type `T`.
+- There exists a [boxing](../../programming-guide/types/boxing-and-unboxing.md#boxing) or [unboxing](../../programming-guide/types/boxing-and-unboxing.md#unboxing) conversion from the runtime type of `E` to type `T`.
 
 When `T v` matches `E`, the converted value of the result of `E` is assigned to variable `v`.
 

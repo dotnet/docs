@@ -5,7 +5,7 @@ author: amolenk
 ms.date: 02/07/2021
 ---
 
-# Getting started with Dapr
+# Get started with Dapr
 
 In the first two chapters, you learned basic concepts about Dapr. It's time to take it for a *test drive*. This chapter will guide you through preparing your local development environment and building two Dapr .NET applications.
 

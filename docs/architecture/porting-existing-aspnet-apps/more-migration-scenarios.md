@@ -9,7 +9,7 @@ ms.date: 02/11/2021
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-This section describes several different ASP.NET app scenarios and situation, and offers specific techniques for solving each of them. You can use this section to identify scenarios applicable to your app and evaluate which techniques will work for your app and its hosting environment.
+This section describes several different ASP.NET app scenarios, and offers specific techniques for solving each of them. You can use this section to identify scenarios applicable to your app, and evaluate which techniques will work for your app and its hosting environment.
 
 ## Migrate ASP.NET MVC 5 and WebApi 2 to ASP.NET Core MVC
 
@@ -42,18 +42,18 @@ protected IContainer RegisterContainer()
 }
 ```
 
-When upgrading these apps to use ASP.NET Core, this duplicate effort and the confusion that sometimes accompanies it is eliminated. ASP.NET Core MVC is a unified framework with one set of rules for routing, filters, and more. Dependency injection is built into ASP.NET Core itself. All of this can can be configured in `Startup.cs`, as is shown in the `eShopPorted` app in the sample.
+When upgrading these apps to use ASP.NET Core, this duplicate effort and the confusion that sometimes accompanies it is eliminated. ASP.NET Core MVC is a unified framework with one set of rules for routing, filters, and more. Dependency injection is built into .NET Core itself. All of this can can be configured in `Startup.cs`, as is shown in the `eShopPorted` app in the sample.
 
 ## Migrate HttpResponseMessage to ASP.NET Core
 
-Some ASP.NET Web API apps may have action methods that return `HttpResponseMessage`. This type does not exist in ASP.NET Core. Below is an example of its usage in a Delete action method, using the `ResponseMessage` helper method on the base `ApiController`:
+Some ASP.NET Web API apps may have action methods that return `HttpResponseMessage`. This type does not exist in ASP.NET Core. Below is an example of its usage in a `Delete` action method, using the `ResponseMessage` helper method on the base `ApiController`:
 
 ```csharp
-[HttpDelete]
 // DELETE api/<controller>/5
+[HttpDelete]
 public IHttpActionResult Delete(int id)
 {
-    var brandToDelete = service.GetCatalogBrands().FirstOrDefault(x => x.Id == id);
+    var brandToDelete = _service.GetCatalogBrands().FirstOrDefault(x => x.Id == id);
     if (brandToDelete == null)
     {
         return ResponseMessage(new HttpResponseMessage(HttpStatusCode.NotFound));
@@ -85,7 +85,7 @@ If you do find that you need to return a custom status code for which no helper 
 
 ## Migrate content negotiation from ASP.NET Web API to ASP.NET Core
 
-ASP.NET Web API 2 supports [content negotiation](https://docs.microsoft.com/aspnet/web-api/overview/formats-and-model-binding/content-negotiation) natively. The sample app includes a `BrandsController` demonstrates this support, listing its results in either XML or JSON based on whether request's `Accept` header includes `application/xml` or `application/json`.
+ASP.NET Web API 2 supports [content negotiation](https://docs.microsoft.com/aspnet/web-api/overview/formats-and-model-binding/content-negotiation) natively. The sample app includes a `BrandsController` that demonstrates this support by listing its results in either XML or JSON. This is based on the request's `Accept` header, and changes when it includes `application/xml` or `application/json`.
 
 ASP.NET MVC 5 apps do not have content negotiation support built in.
 

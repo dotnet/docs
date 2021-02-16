@@ -330,7 +330,7 @@ Dapr emits structured logging. Each log entry has the following format:
 
 When searching through logging entries in a troubleshooting scenario, the `time` and `level` fields are especially helpful. The time field orders log entries so that you can pinpoint specific time periods. When troubleshooting, log entries at the *debug level* provide more information on the behavior of the code.
 
-#### Plain text vs. JSON format
+#### Plain text versus JSON format
 
 By default, Dapr emits structured logging in plain-text format. Every log entry is formatted as a string containing key/value pairs. Here's an example of logging in plain text:
 

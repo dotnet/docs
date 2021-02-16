@@ -11,6 +11,14 @@ namespace SystemTextJsonHowTo
             PreserveReferences.Program.Main();
             Console.WriteLine();
 
+            Console.WriteLine("======== Custom converter Preserve references =========");
+            CustomConverterPreserveReferences.Program.Main();
+            Console.WriteLine();
+
+            Console.WriteLine("======== Preserve references Multiple calls =========");
+            PreserveReferencesMultipleCalls.Program.Main();
+            Console.WriteLine();
+
             Console.WriteLine("======== Immutable types =========");
             ImmutableTypes.Program.Main();
             Console.WriteLine();

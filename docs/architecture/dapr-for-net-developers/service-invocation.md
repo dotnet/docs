@@ -74,7 +74,7 @@ curl http://localhost:3500/v1.0/invoke/serviceb/method/catalog/items
 
 In the next section, you'll learn how to use the .NET SDK to simplify service invocation calls.
 
-## Using the Dapr .NET SDK
+## Use the Dapr .NET SDK
 
 The Dapr [.NET SDK](https://github.com/dapr/dotnet-sdk) provides .NET developers with an intuitive and language-specific way to interact with Dapr. The SDK offers developers three ways of making remote service invocation calls:
 

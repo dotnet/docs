@@ -347,7 +347,7 @@ For this example to work, the following prerequisites must be satisfied:
 
 The [Dapr Azure Key Vault secret store documentation](https://docs.dapr.io/operations/components/setup-secret-store/supported-secret-stores/azure-keyvault/) provides step-by-step instructions to create and configure a Key Vault environment.
 
-#### Using Key Vault when running in self-hosted mode
+#### Use Key Vault when running in self-hosted mode
 
 Consuming Azure Key Vault in Dapr self-hosted mode requires the following configuration file:
 

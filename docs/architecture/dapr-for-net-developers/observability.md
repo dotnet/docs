@@ -217,7 +217,7 @@ Because Dapr sidecars handle traffic between services, Zipkin can use the trace 
 
 The animated dots on the lines between the services represent requests and move from source to destination. Red dots indicate a failed request.
 
-#### Using a Jaeger or New Relic monitoring backend
+#### Use a Jaeger or New Relic monitoring backend
 
 Beyond Zipkin itself, other monitoring backend software also supports ingesting telemetry using the Zipkin format. [Jaeger](https://www.jaegertracing.io/) is an open source tracing system created by Uber Technologies. It's used to trace transactions between distributed services and troubleshoot complex microservices environments. [New Relic](https://newrelic.com/) is a *full-stack* observability platform. It links relevant data from a distributed application to provide a complete picture of your system. To try them out, specify an `endpointAddress` pointing to either a Jaeger or New Relic server in the Dapr configuration file. Here's an example of a configuration file that configures Dapr to send telemetry to a Jaeger server. The URL for Jaeger is identical to the URL for the Zipkin. The only difference is the port on which the server runs:
 

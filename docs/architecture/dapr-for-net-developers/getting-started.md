@@ -26,7 +26,7 @@ You'll start by installing Dapr on your development computer. Once complete, you
 
 Now that Dapr is installed, it's time to build your first Dapr application!
 
-## Building your first Dapr application
+## Build your first Dapr application
 
 You'll start by building a simple .NET Console application that consumes the [Dapr state management](state-management.md) building block.
 

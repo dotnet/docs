@@ -7,7 +7,7 @@ ms.date: 11/13/2020
 
 # Strategies for migrating incrementally
 
-The biggest challenge with migrating any large app is determining how to break the process into smaller tasks. There are several strategies that can be applied for this purpose, including breaking the app into horizontal layers such as UI, data access, business logic, or breaking up the app into separate, smaller apps. Another strategy is to upgrade some or all of the app to different framework versions on the way to a recent .NET Core release. One approach I've used successfully is to migrate [vertical slices](https://deviq.com/practices/vertical-slices) of the app, rather than attempting to migrate one horizontal layer at a time. Let's look at each of these different approaches.
+The biggest challenge with migrating any large app is determining how to break the process into smaller tasks. There are several strategies that can be applied for this purpose, including breaking the app into horizontal layers such as UI, data access, business logic, or breaking up the app into separate, smaller apps. Another strategy is to upgrade some or all of the app to different framework versions on the way to a recent .NET Core release. One approach you could use, is to migrate [vertical slices](https://deviq.com/practices/vertical-slices) of the app, rather than attempting to migrate one horizontal layer at a time. Let's consider each of these different approaches.
 
 Consider the challenge of migrating a large ASP.NET 4.5 app. One approach is to migrate the entire app directly from .NET Framework 4.5 to .NET Core 3.1. However, this approach needs to account for every breaking change between the two frameworks and versions, which are substantial.
 

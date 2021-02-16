@@ -383,7 +383,7 @@ The secret store type is `secretstores.azure.keyvault`. The `metadata` element t
 
 Now the application can retrieve the Redis password from the Azure Key Vault.
 
-#### Using Key Vault when running on Kubernetes
+#### Use Key Vault when running on Kubernetes
 
 Consuming Azure Key Vault with Dapr and Kubernetes also requires a service principal to authenticate against the Azure Key Vault.
 

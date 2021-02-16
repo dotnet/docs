@@ -32,7 +32,7 @@ The following example demonstrates the declaration pattern with the `is` operato
 
 :::code language="csharp" source="snippets/patterns/DeclarationAndTypePattern.cs" id="IsExpression":::
 
-When you use the declaration pattern with the `is` operator within the `if` statement, like in the preceding example, declared variables are assigned and can be used within the `if` statement only. For more information about the scope of variables, see the [Scope of pattern variables](~/_csharplang/proposals/csharp-7.0/pattern-matching.md#scope-of-pattern-variables) section of the [feature proposal note](~/_csharplang/proposals/csharp-7.0/pattern-matching.md).
+When you use the declaration pattern with the `is` operator within the `if` statement, like in the preceding example, declared variables are assigned and can be used within the `if` statement only. However, the variable's scope is the scope that contains the `if` statement. For more information about the scope of variables, see the [Scope of pattern variables](~/_csharplang/proposals/csharp-7.0/pattern-matching.md#scope-of-pattern-variables) section of the [feature proposal note](~/_csharplang/proposals/csharp-7.0/pattern-matching.md).
 
 The following example demonstrates the declaration pattern within the `switch` expression:
 

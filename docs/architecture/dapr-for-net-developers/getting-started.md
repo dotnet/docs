@@ -198,7 +198,7 @@ spec:
   - DaprCounter
 ```
 
-## Building a multi-container Dapr application
+## Build a multi-container Dapr application
 
 In the first example, you created a simple .NET console application that ran side-by-side with a Dapr sidecar. Modern distributed applications, however, often consist of many moving parts. They can simultaneously run independent microservices. These modern applications are typically containerized and require container orchestration tools such as Docker Compose or Kubernetes.
 

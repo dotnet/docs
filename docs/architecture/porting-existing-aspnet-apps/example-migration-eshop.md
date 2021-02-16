@@ -139,7 +139,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
     }
 
     app.UseStaticFiles();
-    
+
     // ...
 }
 ```
@@ -742,7 +742,7 @@ public class ApplicationModule : Module
     {
         _useMockData = useMockData;
     }
-    
+
     protected override void Load(ContainerBuilder builder)
     {
         if (_useMockData)

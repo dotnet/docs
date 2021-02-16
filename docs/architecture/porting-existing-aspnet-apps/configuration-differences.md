@@ -46,7 +46,7 @@ public class TestModel : PageModel
     public ContentResult OnGet()
     {
         var myKeyValue = _configuration["MyKey"];
-        
+
         // ...
     }
 }

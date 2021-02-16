@@ -74,7 +74,7 @@ In the figure, note how the trace represents a unique application transaction th
 
 The next sections discuss how to inspect tracing telemetry by publishing it to a monitoring backend.
 
-#### Using a Zipkin monitoring backend
+#### Use a Zipkin monitoring backend
 
 [Zipkin](https://zipkin.io/) is an open-source distributed tracing system. It can ingest and visualize telemetry data. Dapr offers default support for Zipkin. The following example demonstrates how to configure Zipkin to visualize Dapr telemetry.
 

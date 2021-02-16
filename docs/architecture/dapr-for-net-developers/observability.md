@@ -457,7 +457,7 @@ There's a large amount of information available through the dashboard. You can d
 
 Check out the [Dapr dashboard CLI command reference](https://docs.dapr.io/reference/cli/dapr-dashboard/) in the Dapr docs for more information on the Dapr dashboard commands.
 
-## Using the Dapr .NET SDK
+## Use the Dapr .NET SDK
 
 The Dapr .NET SDK doesn't contain any specific observability features. All observability features are offered at the Dapr level.
 

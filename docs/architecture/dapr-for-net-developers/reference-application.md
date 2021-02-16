@@ -36,7 +36,7 @@ The eShopOnContainers reference application has been widely accepted across the 
 
 ## eShop on Dapr
 
-An alternative version of the eShop application accompanies this book. It's called [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr). The updated version evolves (or, *Daprizes*, if you will) the earlier eShopOnContainers application by integrating Dapr building blocks and components. Figure 3-3 shows the new streamlined solution architecture:  
+An alternative version of the eShop application accompanies this book. It's called [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr). The updated version evolves the earlier eShopOnContainers application by integrating Dapr building blocks and components. Figure 3-3 shows the new streamlined solution architecture:  
 
 ![eShopOnDapr reference application architecture.](./media/reference-application/eshop-on-dapr.png)
 

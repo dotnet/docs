@@ -374,7 +374,7 @@ kubectl create namespace dapr-system
 helm install dapr dapr/dapr --namespace dapr-system --set global.logAsJson=true
 ```
 
-#### Collecting logs
+#### Collect logs
 
 The logs emitted by Dapr can be fed into a monitoring backend for analysis. A log collector is a component that collects logs from a system and sends them to a monitoring backend. A popular log collector is [Fluentd](https://www.fluentd.org/). Check out the [How-To: Set up Fluentd, Elastic search and Kibana in Kubernetes](https://docs.dapr.io/operations/monitoring/fluentd/) in the Dapr documentation. This article contains instructions for setting up Fluentd as log collector and the [ELK Stack](https://www.elastic.co/elastic-stack) (Elastic Search and Kibana) as a monitoring backend.
 

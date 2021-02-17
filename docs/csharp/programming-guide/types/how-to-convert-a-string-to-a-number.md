@@ -35,7 +35,7 @@ The following example illustrates one approach to parsing a string expected to i
 
 The following table lists some of the methods from the <xref:System.Convert> class that you can use to convert a string to a number.
 
-| Numeric Type | Method                                             |
+| Numeric type | Method                                             |
 |--------------|----------------------------------------------------|
 | `decimal`    | <xref:System.Convert.ToDecimal%28System.String%29> |
 | `float`      | <xref:System.Convert.ToSingle%28System.String%29>  |

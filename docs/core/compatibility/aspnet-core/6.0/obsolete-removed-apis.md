@@ -15,11 +15,11 @@ In ASP.NET Core 6.0 Preview 1, several APIs were either removed or marked as obs
 
 ## Old behavior
 
-APIs weren't removed or obsolete.
+In ASP.NET Core 5.0, the APIs weren't removed or obsolete.
 
 ## New behavior
 
-APIs are removed or obsoleted.
+In ASP.NET Core 6.0, the APIs are removed or obsoleted.
 
 ## Reason for change
 

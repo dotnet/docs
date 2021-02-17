@@ -173,7 +173,10 @@ The recommended way to deal with these diagnostics is to make sure you only call
 
 - **Delete the code**. Generally not what you want because it means you lose fidelity when your code is used by Windows users. For cases where a cross-platform alternative exists, you're likely better off using that over platform-specific APIs.
 
-- **Suppress the warning**. You can also simply suppress the warning, either via an EditorConfig entry or `#pragma warning disable ca1416`. However, this option should be a last resort when using platform-specific APIs.
+- **Suppress the warning**. You can also simply suppress the warning, either via an [EditorConfig](/visualstudio/ide/create-portable-custom-editor-options) entry or `#pragma warning disable CA1416`. However, this option should be a last resort when using platform-specific APIs.
+
+  > [!TIP]
+  > When disabling warnings using the `#pragma` pre-compiler directives, the identifiers you're targeting are case sensitive. For example, `ca1416` would not actually disable warning CA1416.
 
 ### Guard platform-specific APIs with guard methods
 

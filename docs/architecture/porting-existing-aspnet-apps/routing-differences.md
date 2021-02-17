@@ -111,7 +111,7 @@ public class ProductsController : ApiController
 {
     // matched by name and (lack of) parameters
     public IEnumerable<Product> GetAll() { }
-    
+
     // matched by GET and string parameter
     [HttpGet]
     public IEnumerable<Product> FindProductsByName(string name) { }

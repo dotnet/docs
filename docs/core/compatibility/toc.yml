@@ -24,6 +24,8 @@
         href: 6.0.md
       - name: ASP.NET Core
         items:
+        - name: "Nullable reference type annotations changed"
+          href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md
         - name: "Blazor: Parameter name changed in RequestImageFileAsync method"
           href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
         - name: "Kestrel: Log message attributes changed"
@@ -316,6 +318,8 @@
       items:
       - name: .NET 6.0
         items:
+        - name: "Nullable reference type annotations changed"
+          href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md        
         - name: "Blazor: Parameter name changed in RequestImageFileAsync method"
           href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
         - name: "Kestrel: Log message attributes changed"

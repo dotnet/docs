@@ -19,7 +19,7 @@ Not long ago, it was popular to store application secrets in a configuration fil
 
 A widely accepted methodology for constructing modern distributed applications is [The Twelve-Factor App](https://12factor.net/). It describes a set of principles and best practices. Its third factor prescribes that *configuration and secrets be externalized outside of the code base.*
 
-To address this concern, the .NET Core platform includes a [Secret Manager](https://docs.microsoft.com/aspnet/core/security/app-secrets#secret-manager) feature that stores sensitive data in a physical folder outside of the project tree. While secrets are outside of source control, this feature doesn't encrypt data. It's designed for **development purposes** only.
+To address this concern, the .NET Core platform includes a [Secret Manager](/aspnet/core/security/app-secrets#secret-manager) feature that stores sensitive data in a physical folder outside of the project tree. While secrets are outside of source control, this feature doesn't encrypt data. It's designed for **development purposes** only.
 
 A more modern and secure practice is to isolate secrets in a secrets management tool like **Hashicorp Vault** or **Azure Key Vault**.  These tools enable you to store secrets externally, vary credentials across environments, and reference them from application code. However, each tool has its complexities and learning curve.
 
@@ -113,7 +113,7 @@ Arguments for the `GetSecretAsync` method include:
 
 The method responds with a dictionary object as a secret can contain multiple key/value pairs. In the example above, the secret named `customerdb` is referenced from the collection to return a connection string.
 
-The Dapr .NET SDK also features a .NET configuration provider. It loads specified secrets into the underlying [.NET Core configuration API](https://docs.microsoft.com/dotnet/core/extensions/configuration). The running application can then reference secrets from the `IConfiguration` dictionary that is registered in ASP.NET Core dependency injection.
+The Dapr .NET SDK also features a .NET configuration provider. It loads specified secrets into the underlying [.NET Core configuration API](../../core/extensions/configuration.md). The running application can then reference secrets from the `IConfiguration` dictionary that is registered in ASP.NET Core dependency injection.
 
 The secrets configuration provider is available from the [Dapr.Extensions.Configuration](https://www.nuget.org/packages/Dapr.Extensions.Configuration) NuGet package. The provider can be registered in the `Program.cs` of an ASP.NET Web API application:  
 
@@ -339,7 +339,7 @@ For this example to work, the following prerequisites must be satisfied:
 
 - You've secured administrative access to an Azure subscription.
 - You've provisioned an Azure Key Vault named `eshopkv` that holds a secret named `redisPassword` that contains the password for connecting to the Redis server.
-- You've created [service principal](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal) in Azure Active Directory.
+- You've created [service principal](/azure/active-directory/develop/howto-create-service-principal-portal) in Azure Active Directory.
 - You've installed an X509 certificate for this service principal (containing both the public and private key) on the local filesystem.
 
 > [!NOTE]
@@ -429,7 +429,7 @@ At this point, an application running in Kubernetes can retrieve the Redis passw
 > [!IMPORTANT]
 > It's critical to keep the X509 certificate file for the service principal in a safe place. It's best to place it in a well-known folder outside the source-code repository. The configuration file can then reference the certificate file from this well-known folder. On a local development machine, you're responsible for copying the certificate to the folder. For automated deployments, the pipeline will copy the certificate to the machine where the application is deployed. It's a best practice to use a different service principal per environment. Doing so prevents the service principal from a DEVELOPMENT environment to access secrets in a PRODUCTION environment.
 
-When running in  Azure Kubernetes Service (AKS), it's preferable to use an [Azure Managed Identity](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) for authenticating against Azure Key Vault. Managed identities are outside of the scope of this book, but explained in the [Azure Key Vault with managed identities](https://docs.dapr.io/operations/components/setup-secret-store/supported-secret-stores/azure-keyvault-managed-identity/) documentation.
+When running in  Azure Kubernetes Service (AKS), it's preferable to use an [Azure Managed Identity](/azure/active-directory/managed-identities-azure-resources/overview) for authenticating against Azure Key Vault. Managed identities are outside of the scope of this book, but explained in the [Azure Key Vault with managed identities](https://docs.dapr.io/operations/components/setup-secret-store/supported-secret-stores/azure-keyvault-managed-identity/) documentation.
 
 ### Scope secrets
 

@@ -23,7 +23,7 @@ Keep in mind that ASP.NET Core 2.1 is the last LTS release of .NET Core that sup
 
 ## References
 
-[Migrating from ASP.NET to ASP.NET Core 2.1](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/?view=aspnetcore-2.1&preserve-view=true)
+[Migrating from ASP.NET to ASP.NET Core 2.1](/aspnet/core/migration/proper-to-2x/?preserve-view=true&view=aspnetcore-2.1)
 
 >[!div class="step-by-step"]
 >[Previous](migration-considerations.md)

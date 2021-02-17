@@ -15,7 +15,7 @@ Making calls between services in a distributed application may appear easy, but 
 
 - Where the other services are located.
 - How to call a service securely, given the service address.
-- How to handle retries when short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) occur.
+- How to handle retries when short-lived [transient errors](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) occur.
 
 Lastly, as distributed applications compose many different services, capturing insights across service call graphs are critical to diagnosing production issues.
 
@@ -238,7 +238,7 @@ The original [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnC
 
 Note the steps from the previous figure:
 
-1. The frontend calls the [API gateway](https://docs.microsoft.com/azure/architecture/microservices/design/gateway) using HTTP/REST.
+1. The frontend calls the [API gateway](/azure/architecture/microservices/design/gateway) using HTTP/REST.
 
 1. The API gateway forwards simple [CRUD](https://www.sumologic.com/glossary/crud/) (Create, Read, Update, Delete) requests directly to a core backend service using HTTP/REST.
 

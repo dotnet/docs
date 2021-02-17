@@ -246,7 +246,7 @@ You can implement readonly interface properties using a readwrite property. The 
 
 For more readability of your code, you can now use `TypeOf` with `IsNot`.
 
-[#Disable Warning \<ID> and #Enable Warning \<ID>](../language-reference/directives/index.md)
+[#Disable Warning \<ID> and #Enable Warning \<ID>](../language-reference/directives/disable-enable.md)
 
 You can disable and enable specific warnings for regions within a source file.
 

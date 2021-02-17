@@ -15,7 +15,7 @@ When migrating from ASP.NET Web API 2 to ASP.NET Core, the transition is straigh
 
 ## References
 
-- [Migrate from ASP.NET Web API to ASP.NET Core](https://docs.microsoft.com/aspnet/core/migration/webapi)
+- [Migrate from ASP.NET Web API to ASP.NET Core](/aspnet/core/migration/webapi)
 - [Ardalis.ApiEndpoints NuGet package](https://www.nuget.org/packages/Ardalis.ApiEndpoints/)
 
 >[!div class="step-by-step"]

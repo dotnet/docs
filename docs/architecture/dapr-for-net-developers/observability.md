@@ -19,7 +19,7 @@ The system information used to gain observability is referred to as **telemetry*
 1. **Logging** provides insight into how the code is executing and if errors have occurred.
 1. **Health** endpoints provide insight into the availability of a service.
 
-The depth of telemetry is determined by the observability features of an application platform. Consider the Azure cloud. It provides a rich telemetry experience that includes all of the telemetry categories. Without any configuration, most Azure IaaS and PaaS services propagate and publish telemetry to the [Azure Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview) service. Application Insights presents system logging, tracing, and problem areas with highly visual dashboards. It can even render a diagram showing the dependencies between services based on their communication.
+The depth of telemetry is determined by the observability features of an application platform. Consider the Azure cloud. It provides a rich telemetry experience that includes all of the telemetry categories. Without any configuration, most Azure IaaS and PaaS services propagate and publish telemetry to the [Azure Application Insights](/azure/azure-monitor/app/app-insights-overview) service. Application Insights presents system logging, tracing, and problem areas with highly visual dashboards. It can even render a diagram showing the dependencies between services based on their communication.
 
 However, what if an application can't use Azure PaaS and IaaS resources? Is it still possible to take advantage of the rich telemetry experience of Application Insights? The answer is yes. A non-Azure application can import libraries, add configuration, and instrument code to emit telemetry to Azure Application Insights. However, this approach **tightly couples** the application to Application Insights. Moving the app to a different monitoring platform could involve expensive refactoring. Wouldn't it be great to avoid tight coupling and consume observability outside of the code?
 
@@ -469,7 +469,7 @@ Observability in accompanying eShopOnDapr reference application consists of seve
 
 ### Custom health dashboard
 
-The **WebStatus** project in eShopOnDapr is a custom health dashboard that gives insight into the health of the eShop services. This dashboard doesn't use the Dapr health API but uses the built-in [health checks mechanism](https://docs.microsoft.com/aspnet/core/host-and-deploy/health-checks) of ASP.NET Core. The dashboard not only provides the health status of the services, but also the health of the dependencies of the services. For example, a service that uses a database also provides the health status of this database as shown in the following screenshot:
+The **WebStatus** project in eShopOnDapr is a custom health dashboard that gives insight into the health of the eShop services. This dashboard doesn't use the Dapr health API but uses the built-in [health checks mechanism](/aspnet/core/host-and-deploy/health-checks) of ASP.NET Core. The dashboard not only provides the health status of the services, but also the health of the dependencies of the services. For example, a service that uses a database also provides the health status of this database as shown in the following screenshot:
 
 ![eShopOnDapr custom health dashboard](media/observability/eshop-health-dashboard.png)
 
@@ -481,7 +481,7 @@ The eShopOnDapr application services emit structured logging using the [SeriLog]
 
 ### Application Insights
 
-eShopOnDapr services also send telemetry directly to Azure Application Insights using the Microsoft Application Insights SDK for .NET Core. For more information, see [Azure Application Insights for ASP.NET Core applications](https://docs.microsoft.com/azure/azure-monitor/app/asp-net-core) in the Microsoft docs.
+eShopOnDapr services also send telemetry directly to Azure Application Insights using the Microsoft Application Insights SDK for .NET Core. For more information, see [Azure Application Insights for ASP.NET Core applications](/azure/azure-monitor/app/asp-net-core) in the Microsoft docs.
 
 ## Summary
 
@@ -501,7 +501,7 @@ Dapr offers a dashboard that presents information about the Dapr services and co
 
 ## References
 
-- [Azure Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview/)
+- [Azure Application Insights](/azure/azure-monitor/app/app-insights-overview/)
 - [Open Telemetry](https://opentelemetry.io/)
 - [Zipkin](https://zipkin.io/)
 - [W3C Trace Context](https://www.w3.org/TR/trace-context/)

@@ -85,7 +85,7 @@ If you do find that you need to return a custom status code for which no helper 
 
 ## Migrate content negotiation from ASP.NET Web API to ASP.NET Core
 
-ASP.NET Web API 2 supports [content negotiation](https://docs.microsoft.com/aspnet/web-api/overview/formats-and-model-binding/content-negotiation) natively. The sample app includes a `BrandsController` that demonstrates this support by listing its results in either XML or JSON. This is based on the request's `Accept` header, and changes when it includes `application/xml` or `application/json`.
+ASP.NET Web API 2 supports [content negotiation](/aspnet/web-api/overview/formats-and-model-binding/content-negotiation) natively. The sample app includes a `BrandsController` that demonstrates this support by listing its results in either XML or JSON. This is based on the request's `Accept` header, and changes when it includes `application/xml` or `application/json`.
 
 ASP.NET MVC 5 apps do not have content negotiation support built in.
 
@@ -101,7 +101,7 @@ public ActionResult Index()
 }
 ```
 
-[ASP.NET Core MVC supports content negotiation natively](https://docs.microsoft.com/aspnet/core/web-api/advanced/formatting), provided an appropriate [return type](https://docs.microsoft.com/aspnet/core/web-api/action-return-types) is used. Content negotiation is implemented by [ObjectResult] which is returned by the status code-specific action results returned by the controller helper methods. The previous action method, implemented in ASP.NET Core MVC and using content negotiation, would be:
+[ASP.NET Core MVC supports content negotiation natively](/aspnet/core/web-api/advanced/formatting), provided an appropriate [return type](/aspnet/core/web-api/action-return-types) is used. Content negotiation is implemented by [ObjectResult] which is returned by the status code-specific action results returned by the controller helper methods. The previous action method, implemented in ASP.NET Core MVC and using content negotiation, would be:
 
 ```csharp
 public IActionResult Index()
@@ -110,12 +110,12 @@ public IActionResult Index()
 }
 ```
 
-This will default to returning the data in JSON format. XML and other formats will be used [if the app has been configured with the appropriate formatter](https://docs.microsoft.com/aspnet/core/web-api/advanced/formatting).
+This will default to returning the data in JSON format. XML and other formats will be used [if the app has been configured with the appropriate formatter](/aspnet/core/web-api/advanced/formatting).
 
 ## References
 
-- [ASP.NET Web API Content Negotiation](https://docs.microsoft.com/aspnet/web-api/overview/formats-and-model-binding/content-negotiation)
-- [Format response data in ASP.NET Core Web API](https://docs.microsoft.com/aspnet/core/web-api/advanced/formatting)
+- [ASP.NET Web API Content Negotiation](/aspnet/web-api/overview/formats-and-model-binding/content-negotiation)
+- [Format response data in ASP.NET Core Web API](/aspnet/core/web-api/advanced/formatting)
 
 >[!div class="step-by-step"]
 >[Previous](example-migration-eshop.md)

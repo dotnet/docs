@@ -3,6 +3,9 @@ title: How to handle overflow JSON with System.Text.Json
 description: "Learn how to handle overflow JSON while serializing to and deserializing from JSON in .NET."
 ms.date: 11/30/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
+dev_langs:
+  - "csharp"
+  - "vb"
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
@@ -19,6 +22,7 @@ In this article, you will learn how to handle overflow JSON with the `System.Tex
 While deserializing, you might receive data in the JSON that is not represented by properties of the target type. For example, suppose your target type is this:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
+:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WF":::
 
 And the JSON to be deserialized is this:
 
@@ -42,6 +46,7 @@ And the JSON to be deserialized is this:
 If you deserialize the JSON shown into the type shown, the `DatesAvailable` and `SummaryWords` properties have nowhere to go and are lost. To capture extra data such as these properties, apply the [[JsonExtensionData]](xref:System.Text.Json.Serialization.JsonExtensionDataAttribute) attribute to a property of type `Dictionary<string,object>` or `Dictionary<string,JsonElement>`:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithExtensionData":::
+:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFWithExtensionData":::
 
 When you deserialize the JSON shown earlier into this sample type, the extra data becomes key-value pairs of the `ExtensionData` property:
 

@@ -15,7 +15,7 @@ Making calls between services in a distributed application may appear easy, but 
 
 - Where the other services are located.
 - How to call a service securely, given the service address.
-- How to handle retries when short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) occur.
+- How to handle retries when short-lived [transient errors](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) occur.
 
 Lastly, as distributed applications compose many different services, capturing insights across service call graphs are critical to diagnosing production issues.
 
@@ -230,7 +230,7 @@ In the example above, DaprClient serializes the given `order` object using [Prot
 
 ## Reference application: eShopOnDapr
 
-The original [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) microservice reference architecture from Microsoft used a mix of HTTP/REST and gRPC services. The use of gRPC was limited to communication between an [aggregator service](../cloud-native/service-to-service-communication#service-aggregator-pattern) and core backend services. Figure 6-2 show the architecture:
+The original [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) microservice reference architecture from Microsoft used a mix of HTTP/REST and gRPC services. The use of gRPC was limited to communication between an [aggregator service](../cloud-native/service-to-service-communication.md#service-aggregator-pattern) and core backend services. Figure 6-2 show the architecture:
 
 ![gRPC and HTTP/REST calls in eShopOnContainers](./media/service-invocation/eshop-on-containers.png)
 
@@ -443,7 +443,7 @@ The eShopOnDapr reference architecture shows how the original eShopOnContainers 
 
 - [Dapr service invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/)
 
-- [Monitoring distributed cloud-native applications](../cloud-native/observability-patterns)
+- [Monitoring distributed cloud-native applications](../cloud-native/observability-patterns.md)
 
 > [!div class="step-by-step"]
 > [Previous](state-management.md)

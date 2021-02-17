@@ -25,7 +25,7 @@ By the time the app is running on .NET Core 3.1, migrating to the current .NET 5
 
 Another approach to the migration would be to identify vertical slices of functionality, and migrate them to the target platform one by one. The first step would be to create a new ASP.NET Core 3.1 or 5 app. Next, identify the individual page or API endpoint that will be migrated first. Build out just the necessary functionality to support this one route in the ASP.NET Core app. Then use HTTP rewriting and/or a reverse proxy to start sending requests for these pages or endpoints to the new app rather than the ASP.NET app.
 
-Some specific guidance on how to follow this strategy using IIS is covered in [Chapter 5, Deployment Scenarios](deployment-scenarios-md).
+Some specific guidance on how to follow this strategy using IIS is covered in [Chapter 5, Deployment Scenarios](deployment-scenarios.md).
 
 ## References
 

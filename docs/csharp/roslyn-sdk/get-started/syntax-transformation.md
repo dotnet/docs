@@ -76,7 +76,7 @@ Create a new <xref:Microsoft.CodeAnalysis.CSharp.Syntax.UsingDirectiveSyntax> no
 
 [!code-csharp[create a new subtree](../../../../samples/snippets/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#BuildNewUsing "Create the subtree with the replaced namespace")]
 
-Run the program and look carefully at the output. The `newusing` hasn't been placed in the root tree. The original tree hasn't been changed.
+Run the program and look carefully at the output. The `newUsing` hasn't been placed in the root tree. The original tree hasn't been changed.
 
 Add the following code using the <xref:Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceNode%2A> extension method to create a new tree. The new tree is the result of replacing the existing import with the updated `newUsing` node. You assign this new tree to the existing `root` variable:
 

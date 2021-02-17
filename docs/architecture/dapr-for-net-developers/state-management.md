@@ -111,7 +111,7 @@ curl -X POST http://localhost:3500/v1.0/state/<store-name> \
             "consistency": "strong"
           }
         }
-      ]' 
+      ]'
 ```
 
 > [!IMPORTANT]
@@ -157,7 +157,7 @@ curl -X POST http://localhost:3500/v1.0/state/<store-name> \
   -d '[
         { "key": "Key1", "value": "Value1" },
         { "key": "Key2", "value": "Value2" }
-      ]' 
+      ]'
 ```
 
 For bulk operations, Dapr will submit each key/value pair update as a separate request to the data store.
@@ -233,7 +233,7 @@ public async Task Put(WeatherForecast updatedForecast, [FromState("statestore", 
 
     // update state store
     var success = await currentForecast.TrySaveAsync();
-    
+
     // ... check result
 }
 ```
@@ -306,7 +306,7 @@ curl -X POST http://localhost:3500/v1.0/state/statestore \
             { "itemId": "DaprHoodie", "quantity": 1 }
           ]
         }
-     }]' 
+     }]'
 ```
 
 Using the Redis Console tool, look inside the Redis cache to see how the Redis state store component persisted the data:

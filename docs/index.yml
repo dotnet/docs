@@ -15,14 +15,18 @@ metadata:
   ms.date: 10/9/2020
 
 # highlightedContent section (optional)
+
 # Maximum of 8 items
+
 highlightedContent:
+
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
   items:
     # Card
     - title: "Download .NET"
       itemType: download
-      url: https://dotnet.microsoft.com/download
+      url: <https://dotnet.microsoft.com/download>
     # Card
     - title: "C# introduction. A quick interactive start."
       itemType: get-started
@@ -34,7 +38,7 @@ highlightedContent:
     # Card
     - title: "Create your first web app."
       itemType: learn
-      url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
+      url: <https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro>
     # Card
     - title: "Build .NET applications with C#"
       itemType: learn
@@ -53,8 +57,11 @@ highlightedContent:
       url: azure/index.yml
 
 # conceptualContent section (optional)
+
 conceptualContent:
+
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
   title: ".NET: Free. Cross platform. Open source." # < 60 chars (optional)
   summary: "A developer platform for building all your apps: web, mobile, desktop, gaming, IoT, and more. Supported on Windows, Linux, and macOS."
   items:
@@ -80,17 +87,17 @@ conceptualContent:
         - url: core/tutorials/index.md
           itemType: tutorial
           text: Tutorials
-        - url: https://dotnet.microsoft.com/platform/community
+        - url: <https://dotnet.microsoft.com/platform/community>
           itemType: whats-new
           text: Community
-        - url: https://dotnetfoundation.org/
+        - url: <https://dotnetfoundation.org/>
           itemType: overview
           text: .NET Foundation
     # Card
     - title: .NET concepts
       summary: Learn the fundamental concepts of .NET
       links:
-        - url: https://channel9.msdn.com/Series/NET-Core-101/What-is-NET
+        - url: <https://channel9.msdn.com/Series/NET-Core-101/What-is-NET>
           itemType: video
           text: What is .NET?
         - url: /answers/products/dotnet
@@ -161,28 +168,33 @@ conceptualContent:
         text: All architecture guides
 
 # tools section (optional)
-## Languages: C#, VB, F#, 
+
+## Languages: C#, VB, F#,
+
 tools:
   title: Programming languages # < 60 chars (optional)
   summary: "You can write .NET apps in C#, F#, or Visual Basic."
   items:
     # Card
     - title: "A modern, object-oriented, type-safe member of the C family"
-      imageSrc: https://docs.microsoft.com/media/logos/logo_Csharp.svg
+      imageSrc: <https://docs.microsoft.com/media/logos/logo_Csharp.svg>
       url: csharp/index.yml
     # Card
     - title: "A functional programming language for .NET"
-      imageSrc: https://docs.microsoft.com/media/logos/logo_Fsharp.svg
+      imageSrc: <https://docs.microsoft.com/media/logos/logo_Fsharp.svg>
       url: fsharp/index.yml
     # Card
     - title: "An approachable language with readable syntax"
-      imageSrc: https://docs.microsoft.com/media/logos/logo_VB.svg
+      imageSrc: <https://docs.microsoft.com/media/logos/logo_VB.svg>
       url: visual-basic/index.yml
 
 # Card with summary style
+
 additionalContent:
-  # Supports up to 3 sections
-  sections: 
+
+# Supports up to 3 sections
+
+  sections:
     - title: Create your application # < 60 chars (optional)
       summary: "You can choose web, mobile, desktop, gaming, IoT, and more." # < 160 chars (optional)
       items:
@@ -241,13 +253,13 @@ additionalContent:
       # Card
       - title: Gaming
         links:
-          - url: https://visualstudio.microsoft.com/vs/features/game-development/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link
+          - url: <https://visualstudio.microsoft.com/vs/features/game-development/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link>
             text: Game development with Visual Studio
-          - url: https://docs.cryengine.com/display/CEPROG/C%23+Programming
+          - url: <https://docs.cryengine.com/display/CEPROG/C%23+Programming>
             text: Learn how to use CRYENGINE to build games with C#
-          - url: https://docs.monogame.net/?page=main
+          - url: <https://docs.monogame.net/?page=main>
             text: Build games with C# using the MonoGame library
-          - url: https://docs.unity3d.com/Manual/index.html
+          - url: <https://docs.unity3d.com/Manual/index.html>
             text: Learn how to use Unity to build 2D and 3D games with C#
       # Card
       - title: Machine learning and AI
@@ -269,7 +281,7 @@ additionalContent:
             text: Get started in 5 minutes
           - url: ./iot/tutorials/blink-led.md
             text: Blink an LED
-          - url: https://aka.ms/IoTNet101
+          - url: <https://aka.ms/IoTNet101>
             text: .NET IoT 101 video series
 
     - title: API and language reference # < 60 chars (optional)
@@ -307,5 +319,7 @@ additionalContent:
       - title: "Visual Basic language reference"
         summary: Visual Basic language reference and specification
         url: visual-basic/language-reference/index.md
-  # footer (optional)
+
+# footer (optional)
+
   footer: "Contribute to .NET docs. Read our [contributor guide](/contribute/dotnet/dotnet-contribute)."

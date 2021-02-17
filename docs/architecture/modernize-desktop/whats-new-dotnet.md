@@ -4,7 +4,7 @@ description: Learn about .NET, differences between .NET and .NET Framework, and 
 ms.date: 12/29/2020
 ---
 
-# What's new with .NET for Desktop?
+# What's new with .NET for Desktop
 
 Starting with .NET Core 3.0, .NET supports Windows Forms and WPF. So, now you have a choice between .NET Framework and .NET for your desktop applications. This chapter will describe what is .NET and what are its benefits for desktop applications.
 

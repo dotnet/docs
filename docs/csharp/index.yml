@@ -10,98 +10,97 @@ metadata:
   ms.date: 11/19/2019
 
 landingContent:
-
-- title: "Learn to program in C#"
+  - title: "Learn to program in C#"
     linkLists:
-  - linkListType: get-started
+      - linkListType: get-started
         links:
-    - text: Online, interactive Hello world
+          - text: Online, interactive Hello world
             url: ./tour-of-csharp/tutorials/hello-world.yml
-    - text: "Math and numbers in C#"
+          - text: "Math and numbers in C#"
             url: ./tour-of-csharp/tutorials/numbers-in-csharp.yml
-    - text: Introductory tutorials
+          - text: Introductory tutorials
             url: ./tour-of-csharp/tutorials/index.md
-    - text: "Create C# apps with Visual Studio"
+          - text: "Create C# apps with Visual Studio"
             url: /visualstudio/get-started/csharp/tutorial-console
-    - text: C# on Q&A
+          - text: C# on Q&A
             url: /answers/topics/dotnet-csharp.html
-  - linkListType: video
+      - linkListType: video
         links:
-    - text: "What is C#?"
-            url: <https://channel9.msdn.com/Series/CSharp-101/What-is-C/player>
-    - text: "C# 101 video series"
-            url: <https://aka.ms/dotnet3-csharp>
-  - linkListType: download
+          - text: "What is C#?"
+            url: https://channel9.msdn.com/Series/CSharp-101/What-is-C/player
+          - text: "C# 101 video series"
+            url: https://aka.ms/dotnet3-csharp
+      - linkListType: download
         links:
-    - text: Download the .NET SDK
-            url: <https://dotnet.microsoft.com/download>
+          - text: Download the .NET SDK
+            url: https://dotnet.microsoft.com/download
 
-- title: "C# fundamentals"
+  - title: "C# fundamentals"
     linkLists:
-  - linkListType: overview
+      - linkListType: overview
         links:
-    - text: "A tour of C#"
+          - text: "A tour of C#"
             url: tour-of-csharp/index.md
-    - text: "Inside a C# program"
+          - text: "Inside a C# program"
             url: programming-guide/inside-a-program/index.md
-    - text: Main() and command-line arguments
+          - text: Main() and command-line arguments
             url: programming-guide/main-and-command-args/index.md
-  - linkListType: concept
+      - linkListType: concept
         links:
-    - text: "The C# and .NET type system"
+          - text: "The C# and .NET type system"
             url: programming-guide/types/index.md
-    - text: Language Integrated Query (LINQ)
+          - text: Language Integrated Query (LINQ)
             url: linq/index.md
-    - text: async and await
+          - text: async and await
             url: programming-guide/concepts/async/index.md
-  - linkListType: tutorial
+      - linkListType: tutorial
         links:
-    - text: Object-oriented inheritance
+          - text: Object-oriented inheritance
             url: tutorials/inheritance.md
-    - text: Use LINQ to query data
+          - text: Use LINQ to query data
             url: tutorials/working-with-linq.md
-    - text: Format text using string interpolation
+          - text: Format text using string interpolation
             url: tutorials/string-interpolation.md
-    - text: Browse all tutorials
+          - text: Browse all tutorials
             url: tutorials/index.md
   
-- title: "New features in C# 9.0"
+  - title: "New features in C# 9.0"
     linkLists:
-  - linkListType: whats-new
+      - linkListType: whats-new
         links:
-    - text: "What's new in C# 9.0"
+          - text: "What's new in C# 9.0"
             url: whats-new/csharp-9.md
 
-- title: "New features in C# 9.0"
+  - title: "New features in C# 9.0"
     linkLists:
-  - linkListType: whats-new
+      - linkListType: whats-new
         links:
-    - text: "What's new in C# 9.0"
+          - text: "What's new in C# 9.0"
             url: whats-new/csharp-9.md
-  - linkListType: tutorial
+      - linkListType: tutorial
         links:
-    - text: Explore record types
+          - text: Explore record types
             url: tutorials/exploration/records.md
-    - text: Explore top level statements
+          - text: Explore top level statements
             url: tutorials/exploration/top-level-statements.md
-    - text: Explore new patterns
+          - text: Explore new patterns
             url: tutorials/exploration/patterns-objects.md
-  - linkListType: reference
+      - linkListType: reference
         links:
-    - text: Breaking changes in the C# compiler
+          - text: Breaking changes in the C# compiler
             url: whats-new/breaking-changes.md
 
-- title: "C# language reference"
+  - title: "C# language reference"
     linkLists:
-  - linkListType: reference
+      - linkListType: reference
         links:
-    - text: "Language reference"
+          - text: "Language reference"
             url: language-reference/index.md
-    - text: "C# keywords"
+          - text: "C# keywords"
             url: language-reference/keywords/index.md
-    - text: "C# operators"
+          - text: "C# operators"
             url: language-reference/operators/index.md
-    - text: Configure language version
+          - text: Configure language version
             url: language-reference/configure-language-version.md
-    - text: "C# language specification"
+          - text: "C# language specification"
             url: ../../_csharplang/spec/introduction.md

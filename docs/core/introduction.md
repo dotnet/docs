@@ -385,9 +385,12 @@ For more information, see [Unsafe code and pointers](../csharp/programming-guide
 
 > [!div class="nextstepaction"]
 > [Choose a .NET tutorial](tutorials/index.md)
+
 > [!div class="nextstepaction"]
-> [Try .NET in your browser](../csharp/tour-of-csharp/tutorials/numbers-in-csharp.yml)
+> [Try .NET in your browser](../csharp/tutorials/intro-to-csharp/numbers-in-csharp.yml)
+
 > [!div class="nextstepaction"]
 > [Take a tour of C#](../csharp/tour-of-csharp/index.md)
+
 > [!div class="nextstepaction"]
 > [Take a tour of F#](../fsharp/tour.md)

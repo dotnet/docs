@@ -44,8 +44,11 @@ Authors:
 Participants and Reviewers:
 
 > **Nish Anil**, Senior Program Manager, .NET team, Microsoft
+
 > **Mike Rousos**, Principal Software Engineer, .NET team, Microsoft
+
 > **Scott Addie**, Senior Content Developer, .NET team, Microsoft
+
 > **David Pine**, Senior Content Developer, .NET team, Microsoft
 
 ## Version

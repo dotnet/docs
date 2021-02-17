@@ -9,7 +9,7 @@ ms.date: 11/13/2020
 
 The most fundamental question teams must answer when it comes to porting their apps to .NET Core is, should they port at all? In some cases, the best path forward is to remain on .NET Framework using ASP.NET MVC and/or Web API. This chapter considers reasons why moving to .NET Core makes sense. The chapter also considers scenarios and counterpoints for staying on .NET Framework.
 
-## Is migration to .NET Core appropriate
+## Is migration to .NET Core appropriate?
 
 Let's start with some of the reasons why you might want to move to .NET Core. There are quite a few, so don't consider this list exhaustive.
 
@@ -39,7 +39,7 @@ Staying on a modern, actively developed technology stack has a host of advantage
 
 There are many compelling reasons to consider migrating to .NET Core, which presumably is why you're reading this book! But let's consider some disadvantages and reasons why it may make more sense to remain on the .NET Framework.
 
-## When is .NET Framework appropriate
+## When is .NET Framework appropriate?
 
 The biggest reason to stay on .NET Framework is when an app isn't under active development and wouldn't benefit substantially from the advantages listed above. In that case, there probably isn't a good business case to incur the cost of porting the app. If your app might benefit from the advantages .NET Core offers, you may still need to stay on .NET Framework if you need certain technologies that are unavailable on .NET Core. There are some [.NET technologies that are unavailable on .NET Core](../../core/porting/net-framework-tech-unavailable.md), including AppDomains, Remoting, Code Access Security (CAS), Security Transparency, and `System.EnterpriseServices`. A brief summary of these technologies and their alternatives is included here. For more detailed guidance, see the documentation.
 

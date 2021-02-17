@@ -91,8 +91,6 @@ In this chapter, we discussed the adoption of distributed applications. We contr
 
 Now, sit back, relax, and let us introduce you the new world of Dapr.
 
-### References
-
 >[!div class="step-by-step"]
 >[Previous](foreword.md)
 >[Next](dapr-at-20000-feet.md)

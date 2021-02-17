@@ -243,7 +243,7 @@ You implement a binding with a Dapr component. These components are contributed 
 
 ### References
 
-[1]: https://docs.dapr.io/operations/components/setup-bindings/supported-bindings/ "Dapr documentation for resource bindings"
+- [Dapr documentation for resource bindings](https://docs.dapr.io/operations/components/setup-bindings/supported-bindings/)
 
 >[!div class="step-by-step"]
 >[Previous](publish-subscribe.md)

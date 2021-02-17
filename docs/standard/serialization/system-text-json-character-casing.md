@@ -3,6 +3,9 @@ title: How to enable case-insensitive property name matching with System.Text.Js
 description: "Learn how to enable case-insensitive property name matching while serializing to and deserializing from JSON in .NET."
 ms.date: 11/30/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
+dev_langs:
+  - "csharp"
+  - "vb"
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
@@ -22,6 +25,7 @@ By default, deserialization looks for case-sensitive property name matches betwe
 > The [web default](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions) is case-insensitive.
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeCaseInsensitive.cs" id="Deserialize":::
+:::code language="vb" source="snippets/system-text-json-how-to/vb/DeserializeCaseInsensitive.vb" id="Deserialize":::
 
 Here's example JSON with camel case property names. It can be deserialized into the following type that has Pascal case property names.
 
@@ -34,6 +38,7 @@ Here's example JSON with camel case property names. It can be deserialized into 
 ```
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
+:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WF":::
 
 ## See also
 

@@ -7,8 +7,6 @@ ms.date: 02/07/2021
 
 # The world is distributed
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 Just ask any 'cool kid': *Modern, distributed systems are in, and monolithic apps are out!*
 
 But, it's not just "cool kids." Progressive IT Leaders, corporate architects, and astute developers are echoing these same thoughts as they explore and evaluate modern distributed applications. Many have bought in. They're designing new and replatforming existing enterprise applications following the principles, patterns, and practices of distributed microservice applications.

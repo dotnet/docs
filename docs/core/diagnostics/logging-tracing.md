@@ -59,9 +59,6 @@ The following APIs are more event oriented. Rather than logging simple strings t
   - Allows in-process tracing of non-serializable objects.
   - Includes a bridge to allow selected fields of logged objects to be written to an <xref:System.Diagnostics.Tracing.EventSource>.
 
-- <xref:System.Diagnostics.Activity?displayProperty=nameWithType>
-  - Provides a definitive way to identify log messages resulting from a specific activity or transaction. This object can be used to correlate logs across different services.
-
 - <xref:System.Diagnostics.EventLog?displayProperty=nameWithType>
   - Windows only.
   - Writes messages to the Windows Event Log.

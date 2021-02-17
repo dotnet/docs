@@ -22,27 +22,23 @@ A PDB file is an auxiliary file produced by a compiler to provide other tools, e
 
 Neither portable PDBs nor Windows PDBs are supported everywhere, so you need to consider where your project will want to be used and debugged to decide which format to use. If you have a project that you want to be able to use and debug in both formats, you can use different build configurations and build the project twice to support both types of consumer.
 
-### Support for Windows PDBs
-
-Windows PDBs can only be written or read on Windows. All Windows tooling supports them, except for Visual Studio Code (as Visual Studio Code strives for consistent behavior across all platforms), and scenarios where Visual Studio is debugging to a remote Linux/OSX computer (as the PDBs must be read on the remote computer).
-
 ### Support for Portable PDBs
 
-Portable PDBs can be read on any operating system, but there are a number of places where they aren't supported yet:
+Portable PDBs can be read on any operating systems and is the recommended symbol format for managed code, but there are a number of legacy tools and applications where they aren't supported:
 
-* Older versions of the Visual Studio debugger (versions before VS 2015 Update 2)
+* Applications targeting .NET Framework 4.7.1 or earlier: printing stack traces with mappings back to line numbers (such as in an ASP.NET error page). The name of methods is unaffected, only the source file names and line numbers are unsupported.
 
-* Applications targeting .NET Framework 4.7.1 or earlie: printing stack traces with mappings back to line numbers (such as in an ASP.NET error page). The name of methods is unaffected, only the source file names and line numbers are unsupported
+* Using .NET decompilers such as ildasm or .NET reflector and expecting to see source line mappings or local parameter names.
 
-* C# Code analysis tools (such as FxCop) except Roslyn Analyzer
+* The latest versions of [DIA](/visualstudio/debugger/debug-interface-access/debug-interface-access-sdk) and tools using it for reading symbols, such as WinDBG support Portable PDBs, but older version do not.
 
-* Some symbol servers (for example, [SymbolSource](http://www.symbolsource.org) does not support portable PDBs, but [NuGet](https://nuget.org) does)
+* There may be older versions of profilers that do not support portable PDBs.
 
-* Running post-compilation build step that consumes or modifies the PDB using older versions of tools such as CCI, CodeContracts
+To use portable PDBs on tools that do not support them, you can try using Pdb2Pdb[https://github.com/dotnet/symreader-converter#pdb2pdb] which converts between Portable PDBs and Windows PDBs.
 
-* Using .NET decompilers such as ildasm or .NET reflector and expecting to see source line mappings or local parameter names
+### Support for Windows PDBs
 
-* MS DIA-based tools such as WinDBG.
+Windows PDBs can only be written or read on Windows. Using Windows PDBs for managed code is obsolete and is only needed for legacy tools. It is recommended that you use portable PDBs instead of Windows PDBs as some newer compiler features that are implemented for only portable PDBs.
 
 ## See also
 

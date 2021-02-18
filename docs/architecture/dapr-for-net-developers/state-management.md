@@ -10,9 +10,6 @@ ms.reviewer: robvet
 
 Distributed applications are composed of independent services. While each service should be stateless, some services must track state to complete business operations. Consider a shopping basket service for an eCommerce site. If the service can't track state, the customer could loose the shopping basket content by leaving the website, resulting in a lost sale and an unhappy customer experience. For these scenarios, state needs to be persisted to a distributed state store. The [Dapr state management building block](https://docs.dapr.io/developing-applications/building-blocks/state-management/) simplifies state tracking and offers advanced features across various data stores.
 
-> [!NOTE]
-> By storing the state in an **external** data store, a service is considered **stateless**. **Statefull** services typically store state locally on a single server either in memory or on disk. Stateless services are favored over stateful services. They don't require requests from a specific user to be handled by the same service instance. As a result, stateless services can scale horizontally as the request volume increases.
-
 To try out the state management building block, have a look at the [counter application sample in chapter 3](getting-started.md).
 
 ## What it solves
@@ -50,7 +47,7 @@ Figure 5-1 shows how a Dapr-enabled shopping basket service stores a key/value p
 
 Note the steps in the previous figure:
 
-1. The basket service calls the state management API from the Dapr sidecar. The body of the request encloses a JSON array that can contain multiple key/value pairs.
+1. The basket service calls the state management API on the Dapr sidecar. The body of the request encloses a JSON array that can contain multiple key/value pairs.
 1. The Dapr sidecar determines the state store based on the component configuration file. In this case, it's a Redis cache state store.
 1. The sidecar persists the data to the Redis cache.
 

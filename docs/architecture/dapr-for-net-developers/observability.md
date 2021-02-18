@@ -185,7 +185,7 @@ spec:
         app: simulation
       annotations:
         dapr.io/enabled: "true"
-        dapr.io/app-id: "simulation"
+        dapr.io/app-id: "ordering-api"
         dapr.io/config: "tracing-config"
     spec:
       containers:

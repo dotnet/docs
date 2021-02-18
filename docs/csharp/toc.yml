@@ -1355,6 +1355,18 @@ items:
     - name: Overview
       displayName: compiler options
       href: language-reference/compiler-options/index.md
+    - name: Optimizations
+      displayName: FileAlignment, Optimize
+      href: language-reference/compiler-options/optimizations.md
+## Output
+## Assemblies
+## Debugging / Error checking
+## Preprocessor
+## Resources
+## Miscellaneous (try to remove)
+## Obsolete
+
+
     - name: C# Compiler Options Listed by Category
       href: language-reference/compiler-options/listed-by-category.md
     - name: C# Compiler Options Listed Alphabetically
@@ -1386,8 +1398,6 @@ items:
         href: language-reference/compiler-options/doc-compiler-option.md
       - name: -errorreport
         href: language-reference/compiler-options/errorreport-compiler-option.md
-      - name: -filealign
-        href: language-reference/compiler-options/filealign-compiler-option.md
       - name: -fullpaths
         href: language-reference/compiler-options/fullpaths-compiler-option.md
       - name: -help, -?
@@ -1422,8 +1432,6 @@ items:
         href: language-reference/compiler-options/nowin32manifest-compiler-option.md
       - name: -nullable
         href: language-reference/compiler-options/nullable-compiler-option.md
-      - name: -optimize
-        href: language-reference/compiler-options/optimize-compiler-option.md
       - name: -out
         href: language-reference/compiler-options/out-compiler-option.md
       - name: -pathmap

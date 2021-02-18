@@ -37,7 +37,6 @@ The following compiler options are sorted alphabetically. For a categorical list
 |-errorendlocation|Output line and column of the end location of each error.|
 |-errorlog:\<file>|Specify a file to log all compiler and analyzer diagnostics.|
 |[-errorreport](errorreport-compiler-option.md)|Specifies how to handle internal compiler errors: prompt, send, or none. The default is none.|
-|[-filealign](filealign-compiler-option.md)|Specifies the alignment used for output file sections.|
 |[-fullpaths](fullpaths-compiler-option.md)|Causes the compiler to generate fully qualified paths.|
 |[-help](help-compiler-option.md)|Displays a usage message to stdout.|
 |[-highentropyva](highentropyva-compiler-option.md)|Specifies that high entropy ASLR is supported.|
@@ -57,7 +56,6 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-nowarn](nowarn-compiler-option.md)|Disables specific warning messages|
 |[-nowin32manifest](nowin32manifest-compiler-option.md)|Instructs the compiler not to embed an application manifest in the executable file.|
 |[-nullable](nullable-compiler-option.md)|Specifies nullable context option.|
-|[-optimize](optimize-compiler-option.md)|Enables/disables optimizations.|
 |[-out](out-compiler-option.md)|Specifies the output file name (default: base name of file with main class or first file).|
 |-parallel[+&#124;-]|Specifies whether to use concurrent build (+).|
 |[-pathmap](pathmap-compiler-option.md)|Specifies a mapping for source path names output by the compiler.|

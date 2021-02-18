@@ -13,13 +13,6 @@ ms.assetid: 96437ecc-6502-4cd3-b070-e9386a298e83
 
 The following compiler options are sorted by category. For an alphabetical list, see [C# Compiler Options Listed Alphabetically](listed-alphabetically.md).
 
-## Optimization
-
-|Option|Purpose|
-|------------|-------------|
-|[-filealign](filealign-compiler-option.md)|Specifies the size of sections in the output file.|
-|[-optimize](optimize-compiler-option.md)|Enables/disables optimizations.|
-
 ## Output Files
 
 |Option|Purpose|

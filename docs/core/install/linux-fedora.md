@@ -94,9 +94,9 @@ This section provides information on common errors you may get while using the p
 
 For more information on installing .NET without a package manager, see one of the following articles:
 
-- [Install the .NET SDK or the .NET Runtime with Snap.](../linux-snap.md)
-- [Install the .NET SDK or the .NET Runtime with a script.](../linux-scripted-manual.md#scripted-install)
-- [Install the .NET SDK or the .NET Runtime manually.](../linux-scripted-manual.md#manual-install)
+- [Install the .NET SDK or the .NET Runtime with Snap.](linux-snap.md)
+- [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
+- [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
 
 ### Failed to fetch
 

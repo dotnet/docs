@@ -10,9 +10,6 @@ ms.reviewer: robvet
 
 Distributed applications are composed of independent services. While each service should be stateless, some services must track state to complete business operations. Consider a shopping basket service for an e-Commerce site. If the service can't track state, the customer could loose the shopping basket content by leaving the website, resulting in a lost sale and an unhappy customer experience. For these scenarios, state needs to be persisted to a distributed state store. The [Dapr state management building block](https://docs.dapr.io/developing-applications/building-blocks/state-management/) simplifies state tracking and offers advanced features across various data stores.
 
-> [!NOTE]
-> By storing the state in an **external** data store, a service is considered **stateless**. **Statefull** services typically store state locally on a single server either in memory or on disk. Stateless services are favored over stateful services. They don't require requests from a specific user to be handled by the same service instance. As a result, stateless services can scale horizontally as the request volume increases.
-
 To try out the state management building block, have a look at the [counter application sample in chapter 3](getting-started.md).
 
 ## What it solves
@@ -50,7 +47,7 @@ Figure 5-1 shows how a Dapr-enabled shopping basket service stores a key/value p
 
 Note the steps in the previous figure:
 
-1. The basket service calls the state management API from the Dapr sidecar. The body of the request encloses a JSON array that can contain multiple key/value pairs.
+1. The basket service calls the state management API on the Dapr sidecar. The body of the request encloses a JSON array that can contain multiple key/value pairs.
 1. The Dapr sidecar determines the state store based on the component configuration file. In this case, it's a Redis cache state store.
 1. The sidecar persists the data to the Redis cache.
 
@@ -111,7 +108,7 @@ curl -X POST http://localhost:3500/v1.0/state/<store-name> \
             "consistency": "strong"
           }
         }
-      ]' 
+      ]'
 ```
 
 > [!IMPORTANT]
@@ -157,7 +154,7 @@ curl -X POST http://localhost:3500/v1.0/state/<store-name> \
   -d '[
         { "key": "Key1", "value": "Value1" },
         { "key": "Key2", "value": "Value2" }
-      ]' 
+      ]'
 ```
 
 For bulk operations, Dapr will submit each key/value pair update as a separate request to the data store.
@@ -220,7 +217,7 @@ public ActionResult<WeatherForecast> Get([FromState("statestore", "city")] State
 }
 ```
 
-In the example, the controller loads the weather forecast using the `FromState` attribute. The first attribute parameter is the state store, `statestore`. The second attribute parameter, `city`, is the name of the [route template](/aspnet/core/mvc/controllers/routing?#route-templates) variable to get the state key. If you omit the second parameter, the name of the bound method parameter (`forecast`) is used to look up the route template variable.
+In the example, the controller loads the weather forecast using the `FromState` attribute. The first attribute parameter is the state store, `statestore`. The second attribute parameter, `city`, is the name of the [route template](/aspnet/core/mvc/controllers/routing#route-templates) variable to get the state key. If you omit the second parameter, the name of the bound method parameter (`forecast`) is used to look up the route template variable.
 
 The `StateEntry` class contains properties for all the information that is retrieved for a single key/value pair: `StoreName`, `Key`, `Value`, and `ETag`. The ETag is useful for implementing optimistic concurrency control (OCC) strategy. The class also provides methods to delete or update retrieved key/value data without requiring a `DaprClient` instance. In the next example, the `TrySaveAsync` method is used to update the retrieved weather forecast using OCC.
 
@@ -233,7 +230,7 @@ public async Task Put(WeatherForecast updatedForecast, [FromState("statestore", 
 
     // update state store
     var success = await currentForecast.TrySaveAsync();
-    
+
     // ... check result
 }
 ```
@@ -306,7 +303,7 @@ curl -X POST http://localhost:3500/v1.0/state/statestore \
             { "itemId": "DaprHoodie", "quantity": 1 }
           ]
         }
-     }]' 
+     }]'
 ```
 
 Using the Redis Console tool, look inside the Redis cache to see how the Redis state store component persisted the data:

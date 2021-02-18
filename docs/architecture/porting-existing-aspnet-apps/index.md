@@ -57,7 +57,7 @@ This guide covers **.NET Core 3.1** and updates related to the same technology "
 
 ## Who should use this guide
 
-This guide's audience is developers, development leads, and architects who are interested in migrating their existing apps written for ASP.NET MVC and Web API (.NET Framework 4.x) to .NET Core. ASP.NET Web Forms developers will benefit from this guide but should also read the [Blazor for ASP.NET Web Forms Developers](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/) e-book.
+This guide's audience is developers, development leads, and architects who are interested in migrating their existing apps written for ASP.NET MVC and Web API (.NET Framework 4.x) to .NET Core. ASP.NET Web Forms developers will benefit from this guide but should also read the [Blazor for ASP.NET Web Forms Developers](../blazor-for-web-forms-developers/index.md) e-book.
 
 A secondary audience is technical decision-makers planning when to move their apps to .NET Core.
 

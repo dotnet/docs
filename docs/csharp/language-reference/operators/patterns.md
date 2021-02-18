@@ -1,7 +1,7 @@
 ---
 title: "Patterns - C# reference"
 description: "Learn about the patterns supported by C# switch and is expressions and C# switch statement - C# reference"
-ms.date: 02/15/2021
+ms.date: 02/18/2021
 helpviewer_keywords: 
   - "pattern matching [C#]"
 ---
@@ -11,36 +11,27 @@ Intro.
 
 ## Declaration and type patterns
 
-The *declaration pattern* has the following form:
+You use the declaration and type patterns to check if the runtime type of an expression is compatible with the given type. In case of the declaration pattern, you can also declare a new local variable. That variable is assigned a converted expression result when a pattern matches an expression.
 
-```csharp
-T v
-```
-
-where `T` is the name of a type or a type parameter and `v` is the name of a new local variable of type `T`.
-
-Declaration pattern `T v` matches expression `E` when the result of `E` is non-null and any of the following conditions is true:
+Beginning with C# 7.0, *declaration pattern* `T v` matches expression `E` when the result of `E` is non-null and any of the following conditions is true:
 
 - The runtime type of `E` is `T`.
-- The runtime type of `E` derives from type `T` or implements interface `T` or there exists another [implicit reference conversion](~/_csharplang/spec/conversions.md#implicit-reference-conversions) from it to type `T`.
+
+- The runtime type of `E` derives from type `T` or implements interface `T` or there exists another [implicit reference conversion](~/_csharplang/spec/conversions.md#implicit-reference-conversions) from it to type `T`. The following example demonstrates two cases when this condition is true:
+
+  :::code language="csharp" source="snippets/patterns/DeclarationAndTypePattern.cs" id="ReferenceConversion":::
+
+  In the preceding example, at the first call to the `GetSourceLabel` method, an argument value is matched by the first pattern because its runtime type `int[]` derives from the <xref:System.Array> type. At the second call to the `GetSourceLabel` method, the runtime type of an argument is <xref:System.Collections.Generic.List%601> that doesn't derive from the <xref:System.Array> type but implements the <xref:System.Collections.Generic.ICollection%601> interface.
+
 - The runtime type of `E` is a [nullable value type](../builtin-types/nullable-value-types.md) with the underlying type `T`.
+
 - There exists a [boxing](../../programming-guide/types/boxing-and-unboxing.md#boxing) or [unboxing](../../programming-guide/types/boxing-and-unboxing.md#unboxing) conversion from the runtime type of `E` to type `T`.
 
-When `T v` matches `E`, the converted value of the result of `E` is assigned to variable `v`.
+The following example demonstrates the last two of the preceding conditions:
 
-The following example demonstrates the declaration pattern with the `is` operator:
+:::code language="csharp" source="snippets/patterns/DeclarationAndTypePattern.cs" id="NullableAndUnboxing":::
 
-:::code language="csharp" source="snippets/patterns/DeclarationAndTypePattern.cs" id="IsExpression":::
-
-When you use the declaration pattern with the `is` operator within the `if` statement, like in the preceding example, declared variables are assigned and can be used within the `if` statement only. However, the variable's scope is the scope that contains the `if` statement. For more information about the scope of variables, see the [Scope of pattern variables](~/_csharplang/proposals/csharp-7.0/pattern-matching.md#scope-of-pattern-variables) section of the [feature proposal note](~/_csharplang/proposals/csharp-7.0/pattern-matching.md).
-
-The following example demonstrates the declaration pattern within the `switch` expression:
-
-:::code language="csharp" source="snippets/patterns/DeclarationAndTypePattern.cs" id="SwitchExpression":::
-
-In a `switch` expression, the scope of the declared variable is the corresponding switch expression arm. In a `switch` statement, the scope of the declared variable is the corresponding switch section.
-
-If you want to check only the type of an expression, you can use a discard `_` in place of a variable name like the following example shows:
+If you want to check only the type of an expression, you can use a discard `_` in place of a variable name as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/DeclarationAndTypePattern.cs" id="DiscardVariable":::
 
@@ -48,7 +39,7 @@ Beginning with C# 9.0, for that purpose you can use the *type pattern* as the fo
 
 :::code language="csharp" source="snippets/patterns/DeclarationAndTypePattern.cs" id="TypePattern":::
 
-The declaration pattern is available in C# 7.0 and later.
+Like a declaration pattern, a type pattern matches an expression when an expression result is non-null and its runtime type satisfies any of the conditions listed above.
 
 ## C# language specification
 

@@ -8,13 +8,31 @@ namespace Patterns
     {
         public static void Examples()
         {
-            IsExpression();
-            SwitchExpression();
+            ReferenceConversion();
+            NullableAndUnboxing();
         }
 
-        private static void IsExpression()
+        private static void ReferenceConversion()
         {
-            // <IsExpression>
+            // <ReferenceConversion>
+            var numbers = new int[] { 10, 20, 30 };
+            Console.WriteLine(GetSourceLabel(numbers));  // output: 1
+
+            var letters = new List<char> { 'a', 'b', 'c', 'd' };
+            Console.WriteLine(GetSourceLabel(letters));  // output: 2
+
+            static int GetSourceLabel<T>(IEnumerable<T> source) => source switch
+            {
+                Array a => 1,
+                ICollection<T> c => 2,
+                _ => 3,
+            };
+            // </ReferenceConversion>
+        }
+
+        private static void NullableAndUnboxing()
+        {
+            // <NullableAndUnboxing>
             int? xNullable = 7;
             int y = 23;
             object yBoxed = y;
@@ -22,25 +40,7 @@ namespace Patterns
             {
                 Console.WriteLine(a + b);  // output: 30
             }
-            // </IsExpression>
-        }
-
-        private static void SwitchExpression()
-        {
-            // <SwitchExpression>
-            var numbers = new int[] { 10, 20, 30 };
-            Console.WriteLine(GetCount(numbers));  // output: 3
-
-            var letters = new List<char> { 'a', 'b', 'c', 'd' };
-            Console.WriteLine(GetCount(letters));  // output: 4
-
-            static int GetCount<T>(IEnumerable<T> source) => source switch
-            {
-                Array a => a.Length,
-                ICollection<T> c => c.Count,
-                _ => source.Count(),
-            };
-            // </SwitchExpression>
+            // </NullableAndUnboxing>
         }
     }
 

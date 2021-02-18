@@ -19,12 +19,12 @@ Tracking state in a distributed application can be challenging. For example:
 - The application may require different types of data stores.
 - Different consistency levels may be required for accessing and updating data.
 - Multiple users may update data at the same time, requiring  conflict resolution.
-- Services must retry any short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) that  occur while interacting with the data store.
+- Services must retry any short-lived [transient errors](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) that  occur while interacting with the data store.
 
 The Dapr state management building block addresses these challenges. It streamlines tracking state without dependencies or a learning curve on third-party storage SDKs.
 
 > [!IMPORTANT]
-> Dapr state management offers a [key/value](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview#keyvalue-stores) API. The feature doesn't support relational or graph data storage.
+> Dapr state management offers a [key/value](/azure/architecture/guide/technology-choices/data-store-overview#keyvalue-stores) API. The feature doesn't support relational or graph data storage.
 
 ## How it works
 
@@ -108,7 +108,7 @@ curl -X POST http://localhost:3500/v1.0/state/<store-name> \
             "consistency": "strong"
           }
         }
-      ]' 
+      ]'
 ```
 
 > [!IMPORTANT]
@@ -154,7 +154,7 @@ curl -X POST http://localhost:3500/v1.0/state/<store-name> \
   -d '[
         { "key": "Key1", "value": "Value1" },
         { "key": "Key2", "value": "Value2" }
-      ]' 
+      ]'
 ```
 
 For bulk operations, Dapr will submit each key/value pair update as a separate request to the data store.
@@ -193,7 +193,7 @@ The SDK provides other methods to retrieve data in bulk, delete data, and execut
 
 ### ASP.NET Core integration
 
-Dapr also supports ASP.NET Core, a cross-platform framework for building modern cloud-based web applications. The Dapr SDK integrates state management capabilities directly into the [ASP.NET Core model binding](https://docs.microsoft.com/aspnet/core/mvc/models/model-binding) capabilities. Configuration is simple. Add the `IMVCBuilder.AddDapr` by appending the `.AddDapr` extension method in your `Startup.cs` class as shown in the next example:
+Dapr also supports ASP.NET Core, a cross-platform framework for building modern cloud-based web applications. The Dapr SDK integrates state management capabilities directly into the [ASP.NET Core model binding](/aspnet/core/mvc/models/model-binding) capabilities. Configuration is simple. Add the `IMVCBuilder.AddDapr` by appending the `.AddDapr` extension method in your `Startup.cs` class as shown in the next example:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -217,7 +217,7 @@ public ActionResult<WeatherForecast> Get([FromState("statestore", "city")] State
 }
 ```
 
-In the example, the controller loads the weather forecast using the `FromState` attribute. The first attribute parameter is the state store, `statestore`. The second attribute parameter, `city`, is the name of the [route template](https://docs.microsoft.com/aspnet/core/mvc/controllers/routing?#route-templates) variable to get the state key. If you omit the second parameter, the name of the bound method parameter (`forecast`) is used to look up the route template variable.
+In the example, the controller loads the weather forecast using the `FromState` attribute. The first attribute parameter is the state store, `statestore`. The second attribute parameter, `city`, is the name of the [route template](/aspnet/core/mvc/controllers/routing#route-templates) variable to get the state key. If you omit the second parameter, the name of the bound method parameter (`forecast`) is used to look up the route template variable.
 
 The `StateEntry` class contains properties for all the information that is retrieved for a single key/value pair: `StoreName`, `Key`, `Value`, and `ETag`. The ETag is useful for implementing optimistic concurrency control (OCC) strategy. The class also provides methods to delete or update retrieved key/value data without requiring a `DaprClient` instance. In the next example, the `TrySaveAsync` method is used to update the retrieved weather forecast using OCC.
 
@@ -230,7 +230,7 @@ public async Task Put(WeatherForecast updatedForecast, [FromState("statestore", 
 
     // update state store
     var success = await currentForecast.TrySaveAsync();
-    
+
     // ... check result
 }
 ```
@@ -303,7 +303,7 @@ curl -X POST http://localhost:3500/v1.0/state/statestore \
             { "itemId": "DaprHoodie", "quantity": 1 }
           ]
         }
-     }]' 
+     }]'
 ```
 
 Using the Redis Console tool, look inside the Redis cache to see how the Redis state store component persisted the data:

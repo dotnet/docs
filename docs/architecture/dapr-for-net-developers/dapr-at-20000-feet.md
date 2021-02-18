@@ -156,7 +156,7 @@ As the jet completes its fly over of Dapr, you look back once more and can see h
 
 ### Sidecar architecture
 
-Dapr exposes its building blocks and components through a [sidecar architecture](https://docs.microsoft.com/azure/architecture/patterns/sidecar). A sidecar enables Dapr to run in a separate memory process or separate container alongside your service. Sidecars provide isolation and encapsulation as they aren't part of the service, but connected to it. This separation enables each to have its own runtime environment and be built upon different programming platforms. Figure 2-4 shows a sidecar pattern.
+Dapr exposes its building blocks and components through a [sidecar architecture](/azure/architecture/patterns/sidecar). A sidecar enables Dapr to run in a separate memory process or separate container alongside your service. Sidecars provide isolation and encapsulation as they aren't part of the service, but connected to it. This separation enables each to have its own runtime environment and be built upon different programming platforms. Figure 2-4 shows a sidecar pattern.
 
 ![Sidecar architecture](./media/dapr-at-20000-feet/sidecar-generic.png)
 

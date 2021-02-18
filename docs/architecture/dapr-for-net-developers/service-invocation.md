@@ -238,7 +238,7 @@ The original [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnC
 
 Note the steps from the previous figure:
 
-1. The frontend calls the [API gateway](https://docs.microsoft.com/azure/architecture/microservices/design/gateway) using HTTP/REST.
+1. The frontend calls the [API gateway](/azure/architecture/microservices/design/gateway) using HTTP/REST.
 
 1. The API gateway forwards simple [CRUD](https://www.sumologic.com/glossary/crud/) (Create, Read, Update, Delete) requests directly to a core backend service using HTTP/REST.
 
@@ -391,7 +391,7 @@ public class CatalogService : ICatalogService
     public Task<IEnumerable<CatalogItem>> GetCatalogItemsAsync(IEnumerable<int> ids)
     {
         var requestUri = $"api/v1/catalog/items?ids={string.Join(",", ids)}";
-      
+
         return _httpClient.GetFromJsonAsync<IEnumerable<CatalogItem>>(requestUri);
     }
 
@@ -420,7 +420,7 @@ public class BasketService : IBasketService
             Content = JsonContent.Create(currentBasket)
         };
         request.Headers.Authorization = new AuthenticationHeaderValue(accessToken);
-       
+
         var response = await _httpClient.SendAsync(request);
         response.EnsureSuccessStatusCode();
     }

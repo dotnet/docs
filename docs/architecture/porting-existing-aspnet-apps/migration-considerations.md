@@ -41,7 +41,7 @@ There are many compelling reasons to consider migrating to .NET Core, which pres
 
 ## When is .NET Framework appropriate?
 
-The biggest reason to stay on .NET Framework is when an app isn't under active development and wouldn't benefit substantially from the advantages listed above. In that case, there probably isn't a good business case to incur the cost of porting the app. If your app might benefit from the advantages .NET Core offers, you may still need to stay on .NET Framework if you need certain technologies that are unavailable on .NET Core. There are some [.NET technologies that are unavailable on .NET Core](https://docs.microsoft.com/dotnet/core/porting/net-framework-tech-unavailable), including AppDomains, Remoting, Code Access Security (CAS), Security Transparency, and `System.EnterpriseServices`. A brief summary of these technologies and their alternatives is included here. For more detailed guidance, see the documentation.
+The biggest reason to stay on .NET Framework is when an app isn't under active development and wouldn't benefit substantially from the advantages listed above. In that case, there probably isn't a good business case to incur the cost of porting the app. If your app might benefit from the advantages .NET Core offers, you may still need to stay on .NET Framework if you need certain technologies that are unavailable on .NET Core. There are some [.NET technologies that are unavailable on .NET Core](../../core/porting/net-framework-tech-unavailable.md), including AppDomains, Remoting, Code Access Security (CAS), Security Transparency, and `System.EnterpriseServices`. A brief summary of these technologies and their alternatives is included here. For more detailed guidance, see the documentation.
 
 ### Application domains
 
@@ -51,7 +51,7 @@ Application domains (AppDomains) isolate apps from one another. AppDomains requi
 
 Server-side WCF isn't supported in .NET Core. .NET Core supports WCF clients but not WCF hosts. Apps that require this functionality will need to upgrade to a different communication technology (such as gRPC or REST) as part of a migration.
 
-There is a [WCF client port available from the .NET Foundation](https://docs.microsoft.com/dotnet/core/dotnet-five#windows-communication-foundation). It is entirely open source, cross platform, and supported by Microsoft. There is also a community-supported [CoreWCF project](https://github.com/CoreWCF/CoreWCF) that is *not* officially supported by Microsoft.
+There is a [WCF client port available from the .NET Foundation](../../core/dotnet-five.md#windows-communication-foundation). It is entirely open source, cross platform, and supported by Microsoft. There is also a community-supported [CoreWCF project](https://github.com/CoreWCF/CoreWCF) that is *not* officially supported by Microsoft.
 
 ### Remoting
 
@@ -63,7 +63,7 @@ Neither of these technologies are supported by .NET Core. Instead, the recommend
 
 ## References
 
-[.NET Framework Technologies Unavailable on .NET Core](https://docs.microsoft.com/dotnet/core/porting/net-framework-tech-unavailable)
+[.NET Framework Technologies Unavailable on .NET Core](../../core/porting/net-framework-tech-unavailable.md)
 
 >[!div class="step-by-step"]
 >[Previous](introduction.md)

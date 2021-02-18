@@ -109,7 +109,7 @@ Each component provides the necessary implementation through a common state mana
    Set(req *SetRequest) error
    BulkSet(req []SetRequest) error
 }
-```
+ ```
 
 > [!TIP]
 > The Dapr runtime as well as all of the Dapr components have been written in the Golang, or Go, language. Go is a popular language across the open source community and attests to cross-platform commitment of Dapr.
@@ -134,7 +134,7 @@ Perhaps you start with Azure Redis Cache as your state store. You specify it wit
      value: <bool> # Optional. Allowed: true, false.
    - name: failover
      value: <bool> # Optional. Allowed: true, false.
-```
+ ```
 
 In the **spec** section, you configure Dapr to use the Redis Cache for state management. The section also contains component-specific metadata. In this case, you can use it to configure additional Redis settings.
 
@@ -152,7 +152,7 @@ At the time of this writing, the following component types are provided by Dapr:
 | [Secret stores](https://github.com/dapr/components-contrib/tree/master/secretstores) | Provides a uniform interface to interact with external secret stores, including cloud, edge, commercial, open-source services. |
 | [Tracing exporters](https://github.com/dapr/components-contrib/tree/master/exporters) | Provides a uniform interface to open telemetry wrappers. |
 
-As the jet completes it fly over of Dapr, you look back once more and can see how it connects together.
+As the jet completes its fly over of Dapr, you look back once more and can see how it connects together.
 
 ### Sidecar architecture
 

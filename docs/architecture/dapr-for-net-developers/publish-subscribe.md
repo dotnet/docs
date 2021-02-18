@@ -155,7 +155,7 @@ await daprClient.PublishEventAsync<OrderData>("pubsub", "newOrder", data);
 ```
 
 - The first argument `pubsub` is the name of the Dapr component that provides the message broker implementation. We'll address components later in this chapter.
-- The second argument `neworder` provides the name of the topic to send the message.
+- The second argument `neworder` provides the name of the topic to send the message to.
 - The third argument is the payload of the message.
 - You can specify the .NET type of the message using the generic type parameter of the method.
 
@@ -215,7 +215,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 The call to `UseCloudEvents` adds **CloudEvents** middleware into to the ASP.NET Core middleware pipeline. This middleware will unwrap requests that use the CloudEvents structured format, so the receiving method can read the event payload directly.
 
-> [CloudEvents](https://cloudevents.io/) is a standardized messaging format, providing a common way to describe event information across platforms. Dapr embraces CloudEvents. For more about CloudEvents, see the [cloudevents specification](https://github.com/cloudevents/spec/tree/v1.0).
+> [CloudEvents](https://cloudevents.io/) is a standardized messaging format, providing a common way to describe event information across platforms. Dapr embraces CloudEvents. For more information about CloudEvents, see the [cloudevents specification](https://github.com/cloudevents/spec/tree/v1.0).
 
 The call to `MapSubscribeHandler` in the endpoint routing configuration will add a Dapr subscribe endpoint to the application. This endpoint will respond to requests on `/dapr/subscribe`. When this endpoint is called, it will automatically find all WebAPI action methods decorated with the `Topic` attribute and instruct Dapr to create subscriptions for them.
 

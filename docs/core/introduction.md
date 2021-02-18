@@ -255,7 +255,7 @@ For more information, see [Cleaning up unmanaged resources](../standard/garbage-
 
 * Publishing an app as *self-contained* produces an executable file that includes the .NET [runtime](#sdk-and-runtimes) and [libraries](#runtime-libraries), and the application and its dependencies. Users of the application can run it on a machine that doesn't have the .NET runtime installed. Self-contained apps are platform-specific, and they can optionally be published using a form of [AOT compilation](#aot-compiler).
 
-* Publishing an app as *framework-dependent* produces an executable file and binary files (*.dll* files) that include only the application itself and its dependencies. Users of the application have to separately install the .NET [runtime](#sdk-and-runtimes). The executable file is platform-specific, but The *.dll* files of framework-dependent applications are cross-platform.
+* Publishing an app as *framework-dependent* produces an executable file and binary files (*.dll* files) that include only the application itself and its dependencies. Users of the application have to separately install the .NET [runtime](#sdk-and-runtimes). The executable file is platform-specific, but the *.dll* files of framework-dependent applications are cross-platform.
 
   You can install multiple versions of the runtime side by side to run framework-dependent apps that target different versions of the runtime. For more information, see [Target frameworks](../standard/frameworks.md).
 

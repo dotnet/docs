@@ -100,7 +100,7 @@ Consider, the Dapr **state store** component. It provides a uniform way to manag
 
 Each component provides the necessary implementation through a common state management interface:
 
- ```go
+```go
  type Store interface {
    Init(metadata Metadata) error
    Delete(req *DeleteRequest) error
@@ -109,7 +109,7 @@ Each component provides the necessary implementation through a common state mana
    Set(req *SetRequest) error
    BulkSet(req []SetRequest) error
 }
- ```
+```
 
 > [!TIP]
 > The Dapr runtime as well as all of the Dapr components have been written in the Golang, or Go, language. Go is a popular language across the open source community and attests to cross-platform commitment of Dapr.

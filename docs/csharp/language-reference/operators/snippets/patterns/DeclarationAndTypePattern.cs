@@ -23,8 +23,8 @@ namespace Patterns
 
             static int GetSourceLabel<T>(IEnumerable<T> source) => source switch
             {
-                Array a => 1,
-                ICollection<T> c => 2,
+                Array array => 1,
+                ICollection<T> collection => 2,
                 _ => 3,
             };
             // </ReferenceConversion>

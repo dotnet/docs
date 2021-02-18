@@ -11,9 +11,9 @@ Intro.
 
 ## Declaration and type patterns
 
-You use the declaration and type patterns to check if the runtime type of an expression is compatible with the given type. In case of the declaration pattern, you can also declare a new local variable. That variable is assigned a converted expression result when a pattern matches an expression.
+You use the declaration and type patterns to check if the runtime type of an expression is compatible with the given type. With the declaration pattern, you can also declare a new local variable. That variable is assigned a converted expression result when a pattern matches an expression.
 
-Beginning with C# 7.0, *declaration pattern* `T v` matches expression `E` when the result of `E` is non-null and any of the following conditions is true:
+Beginning with C# 7.0, *declaration pattern* `T v` matches expression `E` when the result of `E` is non-null and any of the following conditions are true:
 
 - The runtime type of `E` is `T`.
 
@@ -25,7 +25,7 @@ Beginning with C# 7.0, *declaration pattern* `T v` matches expression `E` when t
 
 - The runtime type of `E` is a [nullable value type](../builtin-types/nullable-value-types.md) with the underlying type `T`.
 
-- There exists a [boxing](../../programming-guide/types/boxing-and-unboxing.md#boxing) or [unboxing](../../programming-guide/types/boxing-and-unboxing.md#unboxing) conversion from the runtime type of `E` to type `T`.
+- A [boxing](../../programming-guide/types/boxing-and-unboxing.md#boxing) or [unboxing](../../programming-guide/types/boxing-and-unboxing.md#unboxing) conversion exists from the runtime type of `E` to type `T`.
 
 The following example demonstrates the last two of the preceding conditions:
 

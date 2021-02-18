@@ -374,8 +374,8 @@ spec:
 The secret store type is `secretstores.azure.keyvault`. The `metadata` element to configure access to Key Vault requires the following properties:
 
 - The `vaultName` contains the name of the Azure Key Vault.
-- The `spnTenantId` contains the *tenant id* of the service principal used to authenticate against the Key Vault.
-- The `spnClientId` contains the *app id* of the service principal used to authenticate against the Key Vault.
+- The `spnTenantId` contains the *tenant ID* of the service principal used to authenticate against the Key Vault.
+- The `spnClientId` contains the *app ID* of the service principal used to authenticate against the Key Vault.
 - The `spnCertificateFile` contains the path to the certificate file for the service principal to authenticate against the Key Vault.
 
 > [!TIP]

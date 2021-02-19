@@ -59,6 +59,160 @@ Use the `NetStandardImplicitPackageVersion` property when you want to specify a 
 </PropertyGroup>
 ```
 
+## Assembly info generation properties
+
+- [GenerateAssemblyInfo](#generateassemblyinfo)
+- [GeneratedAssemblyInfoFile](#generatedassemblyinfofile)
+- [GenerateAssemblyCompanyAttribute](#generateassemblycompanyattribute)
+- [GenerateAssemblyConfigurationAttribute](#generateassemblyconfigurationattribute)
+- [GenerateAssemblyCopyrightAttribute](#generateassemblycopyrightattribute)
+- [GenerateAssemblyDescriptionAttribute](#generateassemblydescriptionattribute)
+- [GenerateAssemblyFileVersionAttribute](#generateassemblyfileversionattribute)
+- [GenerateAssemblyInformationalVersionAttribute](#generateassemblyinformationalversionattribute)
+- [GenerateAssemblyProductAttribute](#generateassemblyproductattribute)
+- [GenerateAssemblyTitleAttribute](#generateassemblytitleattribute)
+- [GenerateAssemblyVersionAttribute](#generateassemblyversionattribute)
+- [GenerateNeutralResourcesLanguageAttribute](#generateneutralresourceslanguageattribute)
+
+### GenerateAssemblyInfo
+
+Controls `AssemblyInfo` attribute generation for the project. The default value is `true`. Use `false` to disable generation of the file:
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+</PropertyGroup>
+```
+
+The name of the file generated is controlled by the [GeneratedAssemblyInfoFile](#generatedassemblyinfofile) setting.
+
+When this value is `true`, project properties are transformed into `AssemblyInfo` attributes. The following table lists the project properties that generate the attributes, and the property that can disable it:
+
+| Property               | Attribute                                                      | Property to disable                                                                               |
+|------------------------|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| `Company`              | <xref:System.Reflection.AssemblyCompanyAttribute>              | [`GenerateAssemblyCompanyAttribute`](#generateassemblycompanyattribute)                           |
+| `Configuration`        | <xref:System.Reflection.AssemblyConfigurationAttribute>        | [`GenerateAssemblyConfigurationAttribute`](#generateassemblyconfigurationattribute)               |
+| `Copyright`            | <xref:System.Reflection.AssemblyCopyrightAttribute>            | [`GenerateAssemblyCopyrightAttribute`](#generateassemblycopyrightattribute)                       |
+| `Description`          | <xref:System.Reflection.AssemblyDescriptionAttribute>          | [`GenerateAssemblyDescriptionAttribute`](#generateassemblydescriptionattribute)                   |
+| `FileVersion`          | <xref:System.Reflection.AssemblyFileVersionAttribute>          | [`GenerateAssemblyFileVersionAttribute`](#generateassemblyfileversionattribute)                   |
+| `InformationalVersion` | <xref:System.Reflection.AssemblyInformationalVersionAttribute> | [`GenerateAssemblyInformationalVersionAttribute`](#generateassemblyinformationalversionattribute) |
+| `Product`              | <xref:System.Reflection.AssemblyProductAttribute>              | [`GenerateAssemblyProductAttribute`](#generateassemblyproductattribute)                           |
+| `AssemblyTitle`        | <xref:System.Reflection.AssemblyTitleAttribute>                | [`GenerateAssemblyTitleAttribute`](#generateassemblytitleattribute)                               |
+| `AssemblyVersion`      | <xref:System.Reflection.AssemblyVersionAttribute>              | [`GenerateAssemblyVersionAttribute`](#generateassemblyversionattribute)                           |
+| `NeutralLanguage`      | <xref:System.Resources.NeutralResourcesLanguageAttribute>      | [`GenerateNeutralResourcesLanguageAttribute`](#generateneutralresourceslanguageattribute)         |
+
+SDK projects don't contain a code file with assembly info attributes like older .NET Framework project templates did. These older projects typically included a file with assembly info at *.\Properties\AssemblyInfo.cs* or *.\Properties\AssemblyInfo.vb*. This file contained all of the assembly info metadata, such as title or version.
+
+### GenerateAssemblyInfo
+
+The relative or absolute path of the generated assembly info file. Defaults to a file named *[project-name].AssemblyInfo.[cs|vb]* in the `$(IntermediateOutputPath)` (usually the *obj*) directory.
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+</PropertyGroup>
+```
+
+### GenerateAssemblyCompanyAttribute
+
+This property controls whether or not the `Company` property generates the <xref:System.Reflection.AssemblyCompanyAttribute> for the assembly. The default value is `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+</PropertyGroup>
+```
+
+### GenerateAssemblyConfigurationAttribute
+
+This property controls whether or not the `Configuration` property generates the <xref:System.Reflection.AssemblyConfigurationAttribute> for the assembly. The default value is `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+</PropertyGroup>
+```
+
+### GenerateAssemblyCopyrightAttribute
+
+This property controls whether or not the `Copyright` property generates the <xref:System.Reflection.AssemblyCopyrightAttribute> for the assembly. The default value is `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+</PropertyGroup>
+```
+
+### GenerateAssemblyDescriptionAttribute
+
+This property controls whether or not the `Description` property generates the <xref:System.Reflection.AssemblyDescriptionAttribute> for the assembly. The default value is `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+</PropertyGroup>
+```
+
+### GenerateAssemblyFileVersionAttribute
+
+This property controls whether or not the `FileVersion` property generates the <xref:System.Reflection.AssemblyFileVersionAttribute> for the assembly. The default value is `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+</PropertyGroup>
+```
+
+### GenerateAssemblyInformationalVersionAttribute
+
+This property controls whether or not the `InformationalVersion` property generates the <xref:System.Reflection.AssemblyInformationalVersionAttribute> for the assembly. The default value is `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+</PropertyGroup>
+```
+
+### GenerateAssemblyProductAttribute
+
+This property controls whether or not the `Product` property generates the <xref:System.Reflection.AssemblyProductAttribute> for the assembly. The default value is `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+</PropertyGroup>
+```
+
+### GenerateAssemblyTitleAttribute
+
+This property controls whether or not the `AssemblyTitle` property generates the <xref:System.Reflection.AssemblyTitleAttribute> for the assembly. The default value is `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+</PropertyGroup>
+```
+
+### GenerateAssemblyVersionAttribute
+
+This property controls whether or not the `AssemblyVersion` property generates the <xref:System.Reflection.AssemblyVersionAttribute> for the assembly. The default value is `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+</PropertyGroup>
+```
+
+### GenerateNeutralResourcesLanguageAttribute
+
+This property controls whether or not the `NeutralLanguage` property generates the <xref:System.Resources.NeutralResourcesLanguageAttribute> for the assembly. The default value is `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
+</PropertyGroup>
+```
+
 ## Package properties
 
 You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`, `Title`, and `Description` to describe the package that gets created from your project. For information about these and other properties, see [pack target](/nuget/reference/msbuild-targets#pack-target).

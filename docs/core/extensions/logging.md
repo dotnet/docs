@@ -143,7 +143,7 @@ echo $Logging__LogLevel__Microsoft
 ```
 
 > [!NOTE]
-> When configuring environment variables with names that contain periods `.`, consider the "Exporting a variable with a dot (.) in it" question on **Stack Exchange** and its corresponding [accepted answer](https://unix.stackexchange.com/a/93533).
+> When configuring environment variables with names that contain `.` (periods), consider the "Exporting a variable with a dot (.) in it" question on **Stack Exchange** and its corresponding [accepted answer](https://unix.stackexchange.com/a/93533).
 
 ---
 

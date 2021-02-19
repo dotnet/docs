@@ -30,8 +30,6 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-debug](debug-compiler-option.md)|Emits debugging information.|
 |[-define](define-compiler-option.md)|Defines conditional compilation symbols.|
 |[-delaysign](delaysign-compiler-option.md)|Delay-signs the assembly by using only the public part of the strong name key.|
-|[-deterministic](deterministic-compiler-option.md)|Causes the compiler to output an assembly whose binary content is identical across compilations if inputs are identical.|
-|[-doc](doc-compiler-option.md)|Specifies an XML Documentation file to generate.|
 |-embed|Embed all source files in the PDB.|
 |-embed:\<file list>|Embed specific files in the PDB.|
 |-errorendlocation|Output line and column of the end location of each error.|
@@ -48,30 +46,21 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-link](link-compiler-option.md)|Makes COM type information in specified assemblies available to the project.|
 |[-linkresource](linkresource-compiler-option.md)|Links the specified resource to this assembly.|
 |[-main](main-compiler-option.md)|Specifies the type that contains the entry point (ignore all other possible entry points).|
-|[-moduleassemblyname](moduleassemblyname-compiler-option.md)|Specifies an assembly whose non-public types a .netmodule can access.|
-|-modulename:\<string>|Specify the name of the source module|
 |[-noconfig](noconfig-compiler-option.md)|Instructs the compiler not to auto include CSC.RSP file.|
 |[-nologo](nologo-compiler-option.md)|Suppresses compiler copyright message.|
 |[-nostdlib](nostdlib-compiler-option.md)|Instructs the compiler not to reference standard library (mscorlib.dll).|
 |[-nowarn](nowarn-compiler-option.md)|Disables specific warning messages|
 |[-nowin32manifest](nowin32manifest-compiler-option.md)|Instructs the compiler not to embed an application manifest in the executable file.|
 |[-nullable](nullable-compiler-option.md)|Specifies nullable context option.|
-|[-out](out-compiler-option.md)|Specifies the output file name (default: base name of file with main class or first file).|
 |-parallel[+&#124;-]|Specifies whether to use concurrent build (+).|
-|[-pathmap](pathmap-compiler-option.md)|Specifies a mapping for source path names output by the compiler.|
-|[-pdb](pdb-compiler-option.md)|Specifies the file name and location of the .pdb file.|
-|[-platform](platform-compiler-option.md)|Limits which platforms this code can run on: x86, Itanium, x64, anycpu, or anycpu32bitpreferred. The default is anycpu.|
 |[-preferreduilang](preferreduilang-compiler-option.md)|Specifies the language to be used for compiler output.|
 |[-publicsign](publicsign-compiler-option.md)|Apply a public key without signing the assembly, but set the bit in the assembly indicating the assembly is signed.|
 |[-recurse](recurse-compiler-option.md)|Includes all files in the current directory and subdirectories according to the wildcard specifications.|
 |[-reference](reference-compiler-option.md)|References metadata from the specified assembly files.|
-|[-refout](refout-compiler-option.md)|Generate a reference assembly in addition to the primary assembly.|
-|[-refonly](refonly-compiler-option.md)|Generate a reference assembly instead of a primary assembly.|
 |-reportanalyzer|Report additional analyzer information, such as execution time.|
 |[-resource](resource-compiler-option.md)|Embeds the specified resource.|
 |-ruleset:\<file>|Specify a ruleset file that disables specific diagnostics.|
 |[-subsystemversion](subsystemversion-compiler-option.md)|Specifies the minimum version of the subsystem that the executable file can use.|
-|[-target](target-compiler-option.md)|Specifies the format of the output file by using one of the following options: [-target:appcontainerexe](target-appcontainerexe-compiler-option.md), [-target:exe](target-exe-compiler-option.md), [-target:library](target-library-compiler-option.md), [-target:module](target-module-compiler-option.md), [-target:winexe](target-winexe-compiler-option.md),  [-target:winmdobj](target-winmdobj-compiler-option.md).|
 |[-unsafe](unsafe-compiler-option.md)|Allows [unsafe](../keywords/unsafe.md) code.|
 |[-utf8output](utf8output-compiler-option.md)|Outputs compiler messages in UTF-8 encoding.|
 |-version|Display the compiler version number and exit.|

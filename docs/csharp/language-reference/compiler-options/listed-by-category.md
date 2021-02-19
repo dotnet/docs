@@ -13,22 +13,6 @@ ms.assetid: 96437ecc-6502-4cd3-b070-e9386a298e83
 
 The following compiler options are sorted by category. For an alphabetical list, see [C# Compiler Options Listed Alphabetically](listed-alphabetically.md).
 
-## Output Files
-
-|Option|Purpose|
-|------------|-------------|
-|[-deterministic](deterministic-compiler-option.md)|Causes the compiler to output an assembly whose binary content is identical across compilations if inputs are identical.|
-|[-doc](doc-compiler-option.md)|Specifies an XML file where processed documentation comments are to be written.|
-|[-out](out-compiler-option.md)|Specifies the output file.|
-|[-pathmap](pathmap-compiler-option.md)|Specify a mapping for source path names output by the compiler|
-|[-pdb](pdb-compiler-option.md)|Specifies the file name and location of the .pdb file.|
-|[-platform](platform-compiler-option.md)|Specify the output platform.|
-|[-preferreduilang](preferreduilang-compiler-option.md)|Specify a language for compiler output.|
-|[-refout](refout-compiler-option.md)|Generate a reference assembly in addition to the primary assembly.|
-|[-refonly](refonly-compiler-option.md)|Generate a reference assembly instead of a primary assembly.|
-|[-target](target-compiler-option.md)|Specifies the format of the output file using one of the following options: [-target:appcontainerexe](target-appcontainerexe-compiler-option.md), [-target:exe](target-exe-compiler-option.md), [-target:library](target-library-compiler-option.md), [-target:module](target-module-compiler-option.md), [-target:winexe](target-winexe-compiler-option.md), or [-target:winmdobj](target-winmdobj-compiler-option.md).|
-|-modulename:\<string>|Specify the name of the source module|
-
 ## .NET Assemblies
 
 |Option|Purpose|
@@ -39,7 +23,6 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[-keyfile](keyfile-compiler-option.md)|Specifies the filename containing the cryptographic key.|
 |[-lib](lib-compiler-option.md)|Specifies the location of assemblies referenced by means of [-reference](reference-compiler-option.md).|
 |[-nostdlib](nostdlib-compiler-option.md)|Instructs the compiler not to import the standard library (mscorlib.dll).|
-|[-publicsign](publicsign-compiler-option.md)|Apply a public key without signing the assembly, but set the bit in the assembly indicating the assembly is signed.|
 |[-reference](reference-compiler-option.md)|Imports metadata from a file that contains an assembly.|
 |-analyzer|Run the analyzers from this assembly (Short form: /a)|
 |-additionalfile|Names additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings.|
@@ -103,6 +86,8 @@ The following compiler options are sorted by category. For an alphabetical list,
 |Option|Purpose|
 |---|---|
 |-incremental|Enables incremental compilation.|
+|[-preferreduilang](preferreduilang-compiler-option.md)|OBSOLETE Specify a language for compiler output.|
+|[-publicsign](publicsign-compiler-option.md)|Apply a public key without signing the assembly, but set the bit in the assembly indicating the assembly is signed.|
 
 ## See also
 

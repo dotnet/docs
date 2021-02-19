@@ -1356,8 +1356,11 @@ items:
       displayName: compiler options
       href: language-reference/compiler-options/index.md
     - name: Optimizations
-      displayName: FileAlignment, Optimize
+      displayName: FileAlignment, filealigh, Optimize, optimize
       href: language-reference/compiler-options/optimizations.md
+    - name: Control Output
+      displayName: Deterministic, DocumentationFile, OutputPath
+      href: language-reference/compiler-options/output.md
 ## Output
 ## Assemblies
 ## Debugging / Error checking
@@ -1392,10 +1395,6 @@ items:
         href: language-reference/compiler-options/define-compiler-option.md
       - name: -delaysign
         href: language-reference/compiler-options/delaysign-compiler-option.md
-      - name: -deterministic
-        href: language-reference/compiler-options/deterministic-compiler-option.md
-      - name: -doc
-        href: language-reference/compiler-options/doc-compiler-option.md
       - name: -errorreport
         href: language-reference/compiler-options/errorreport-compiler-option.md
       - name: -fullpaths
@@ -1418,8 +1417,6 @@ items:
         href: language-reference/compiler-options/linkresource-compiler-option.md
       - name: -main
         href: language-reference/compiler-options/main-compiler-option.md
-      - name: -moduleassemblyname
-        href: language-reference/compiler-options/moduleassemblyname-compiler-option.md
       - name: -noconfig
         href: language-reference/compiler-options/noconfig-compiler-option.md
       - name: -nologo
@@ -1432,14 +1429,6 @@ items:
         href: language-reference/compiler-options/nowin32manifest-compiler-option.md
       - name: -nullable
         href: language-reference/compiler-options/nullable-compiler-option.md
-      - name: -out
-        href: language-reference/compiler-options/out-compiler-option.md
-      - name: -pathmap
-        href: language-reference/compiler-options/pathmap-compiler-option.md
-      - name: -pdb
-        href: language-reference/compiler-options/pdb-compiler-option.md
-      - name: -platform
-        href: language-reference/compiler-options/platform-compiler-option.md
       - name: -preferreduilang
         href: language-reference/compiler-options/preferreduilang-compiler-option.md
       - name: -publicsign
@@ -1448,29 +1437,10 @@ items:
         href: language-reference/compiler-options/recurse-compiler-option.md
       - name: -reference
         href: language-reference/compiler-options/reference-compiler-option.md
-      - name: -refout
-        href: language-reference/compiler-options/refout-compiler-option.md
-      - name: -refonly
-        href: language-reference/compiler-options/refonly-compiler-option.md
       - name: -resource
         href: language-reference/compiler-options/resource-compiler-option.md
       - name: -subsystemversion
         href: language-reference/compiler-options/subsystemversion-compiler-option.md
-      - name: -target
-        href: language-reference/compiler-options/target-compiler-option.md
-        items:
-        - name: "-target:appcontainerexe"
-          href: language-reference/compiler-options/target-appcontainerexe-compiler-option.md
-        - name: "-target:exe"
-          href: language-reference/compiler-options/target-exe-compiler-option.md
-        - name: "-target:library"
-          href: language-reference/compiler-options/target-library-compiler-option.md
-        - name: "-target:module"
-          href: language-reference/compiler-options/target-module-compiler-option.md
-        - name: "-target:winexe"
-          href: language-reference/compiler-options/target-winexe-compiler-option.md
-        - name: "-target:winmdobj"
-          href: language-reference/compiler-options/target-winmdobj-compiler-option.md
       - name: -unsafe
         href: language-reference/compiler-options/unsafe-compiler-option.md
       - name: -utf8output

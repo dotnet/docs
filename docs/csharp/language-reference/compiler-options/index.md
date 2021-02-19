@@ -24,6 +24,12 @@ This section describes the options interpreted by the C# compiler. There are two
 > [!IMPORTANT]
 > This section applies to .NET Framework projects only.
 
+The word for some compiler options changed from *csc.exe* and .NET Framework projects to the new MSBuild system. The new syntax is used throughout this section. Both versions are listed at the top of each page. For *csc.exe*, any arguments are listed following the option and a colon. For example, the `-doc` option would be:
+
+```console
+-doc:DocFile.xml
+```
+
 You can invoke the C# compiler by typing the name of its executable file (*csc.exe*) at a command prompt.
 
 For .NET Framework projects, you can also run `csc.exe` from the command line. Every compiler option is available in two forms: **-option** and **/option**. In .NET Framework web projects, you specify options for compiling code behind in the *web.config* file. For more information, see [\<compiler> Element](../../../framework/configure-apps/file-schema/compiler/compiler-element.md).

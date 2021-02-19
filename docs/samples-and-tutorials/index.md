@@ -8,7 +8,7 @@ ms.date: 02/01/2021
 
 # .NET samples and tutorials
 
-The .NET documentation contains a set of samples and tutorials that teach you about .NET. This article describes how to find, view, and download .NET, ASP.NET Core, and C# samples and tutorials. Find resources to learn the F# programming language on the [F# Foundation's site](https://fsharp.org/learn/). If you're interested in exploring C# using an online code editor, start with [this interactive tutorial](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1) and continue with [C# interactive tutorial](../csharp/tutorials/intro-to-csharp/index.md). For instructions on how to view and download sample code, see the [Viewing and downloading samples](#view-and-download-samples) section.
+The .NET documentation contains a set of samples and tutorials that teach you about .NET. This article describes how to find, view, and download .NET, ASP.NET Core, and C# samples and tutorials. Find resources to learn the F# programming language on the [F# Foundation's site](https://fsharp.org/learn/). If you're interested in exploring C# using an online code editor, start with [this interactive tutorial](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1) and continue with [C# interactive tutorial](../csharp/tour-of-csharp/tutorials/index.md). For instructions on how to view and download sample code, see the [Viewing and downloading samples](#view-and-download-samples) section.
 
 ## .NET
 

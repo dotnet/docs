@@ -101,15 +101,28 @@ When this value is `true`, project properties are transformed into `AssemblyInfo
 | `AssemblyVersion`      | <xref:System.Reflection.AssemblyVersionAttribute>              | [`GenerateAssemblyVersionAttribute`](#generateassemblyversionattribute)                           |
 | `NeutralLanguage`      | <xref:System.Resources.NeutralResourcesLanguageAttribute>      | [`GenerateNeutralResourcesLanguageAttribute`](#generateneutralresourceslanguageattribute)         |
 
-SDK projects don't contain a code file with assembly info attributes like older .NET Framework project templates did. These older projects typically included a file with assembly info at *.\Properties\AssemblyInfo.cs* or *.\Properties\AssemblyInfo.vb*. This file contained all of the assembly info metadata, such as title or version.
+Notes about these settings:
 
-### GenerateAssemblyInfo
+- `AssemblyVersion` and `FileVersion` default to the value of `$(Version)` without the suffix. For example, if `$(Version)` is `1.2.3-beta.4`, then the value would be `1.2.3`.
+- `InformationalVersion` defaults to the value of `$(Version)`.
+- If the `$(SourceRevisionId)` property is present, it's appended to `InformationalVersion`. You can disable this behavior using `IncludeSourceRevisionInInformationalVersion`.
+- `Copyright` and `Description` properties are also used for NuGet metadata.
+- `Configuration`, which defaults to `Debug`, is shared with all MSBuild targets. You can set it via the `--configuration` option of `dotnet` commands, for example, [dotnet pack](../tools/dotnet-pack.md).
+
+#### Migrating from .NET Framework
+
+.NET Framework project templates created a code file with these assembly info attributes set, typically located at *.\Properties\AssemblyInfo.cs* or *.\Properties\AssemblyInfo.vb*. Newer SDK-style projects generate this file for you based on the project settings. **You can't have both.** When porting your code to .NET 5 (and .NET Core 3.1) or later, do one of the following:
+
+- Disable the generation of temporary code file that contains the assembly info attributes by setting `GenerateAssemblyInfo` to `false`. This enables you to keep your *AssemblyInfo* file.
+- Migrate the settings in the `AssemblyInfo` file to the project, and delete the `AssemblyInfo` file.
+
+### GeneratedAssemblyInfoFile
 
 The relative or absolute path of the generated assembly info file. Defaults to a file named *[project-name].AssemblyInfo.[cs|vb]* in the `$(IntermediateOutputPath)` (usually the *obj*) directory.
 
 ```xml
 <PropertyGroup>
-  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  <GeneratedAssemblyInfoFile>false</GeneratedAssemblyInfoFile>
 </PropertyGroup>
 ```
 

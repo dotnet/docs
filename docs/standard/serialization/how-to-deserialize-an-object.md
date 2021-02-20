@@ -25,10 +25,11 @@ When you deserialize an object, the transport format determines whether you will
     ' of object that is being deserialized.
     Dim mySerializer As New XmlSerializer(GetType(MySerializableClass))
     ' To read the file, create a FileStream.
-    Dim myFileStream As New FileStream("myFileName.xml", FileMode.Open)
-    ' Call the Deserialize method and cast to the object type.
-    Dim myObject = CType( _
-    mySerializer.Deserialize(myFileStream), MySerializableClass)
+    Using myFileStream As New FileStream("myFileName.xml", FileMode.Open)
+        ' Call the Deserialize method and cast to the object type.
+        Dim myObject = CType( _
+             mySerializer.Deserialize(myFileStream), MySerializableClass)
+     End Using
     ```
 
     ```csharp

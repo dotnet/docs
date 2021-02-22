@@ -72,7 +72,7 @@ However, you can use the following environment variables to set up an EventPipe 
 
 * `COMPlus_EventPipeOutputPath`: The path to the output EventPipe trace file when it's configured to run via `COMPlus_EnableEventPipe`. The default value is `trace.nettrace`, which will be created in the same directory that the app is running from.
 
-* `COMPlus_CircularBufferMB`: The size of the internal buffer that is used by EventPipe when it's configured to run via `COMPlus_EnableEventPipe`, in megabytes. The default value is 1024.
+* `COMPlus_CircularBufferMB`: A numeric value that represents the size of the internal buffer used by EventPipe when it's configured to run via `COMPlus_EnableEventPipe`, in megabytes. The default value is `1024`.
 
 * `COMPlus_EventPipeConfig`: Sets up the EventPipe session configuration when starting an EventPipe session with `COMPlus_EnableEventPipe`.
 

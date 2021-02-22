@@ -25,8 +25,8 @@ dotnet nuget add source -h|--help
 
 The `dotnet nuget add source` command adds a new package source to your NuGet configuration files.
 
-> [IMPORTANT]
-> Avoid having the public `nuget.org` feed along with other feeds. For more information, see [Dependency confusion attack](https://www.msn.com/en-us/money/other/microsoft-warns-enterprises-of-new-dependency-confusion-attack-technique/ar-BB1dynJl).
+> [!WARNING]
+> Be careful when adding multiple feeds not to introduce a [dependency confusion attack](https://aka.ms/pkg-sec-wp).
 
 ## Arguments
 

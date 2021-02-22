@@ -27,7 +27,7 @@ Because .NET Core is an open-source project, many issues are discovered, reporte
   - [Docs](https://github.com/dotnet/docs)
   - [Docs Samples](https://github.com/dotnet/samples)
   - [Try Convert](https://github.com/dotnet/try-convert)
-  - [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant) 
+  - [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant)
 - [.NET Architecture Reference Apps](https://github.com/dotnet-architecture)
   - [eShopModernizing](https://github.com/dotnet-architecture/eShopModernizing)
   - [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb)

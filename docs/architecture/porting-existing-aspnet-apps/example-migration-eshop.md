@@ -17,7 +17,7 @@ The initial version of the project is shown in Figure 4-1. It's a fairly standar
 
 **Figure 4-1.** The *eShopModernizing* MVC sample project structure.
 
-This chapter demonstrates how to perform many of the upgrade steps by hand. Note that you can use the [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant) to perform many of the initial steps, like converting the project file, changing the target framework, and updating NuGet packages.
+This chapter demonstrates how to perform many of the upgrade steps by hand. Alternatively, you can use the [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant) to perform many of the initial steps, like converting the project file, changing the target framework, and updating NuGet packages.
 
 ## Run *ApiPort* to identify problematic APIs
 

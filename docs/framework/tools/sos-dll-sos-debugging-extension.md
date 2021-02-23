@@ -201,4 +201,4 @@ The following command displays information about the metadata token at the addre
 ## See also
 
 - [Tools](index.md)
-- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md)

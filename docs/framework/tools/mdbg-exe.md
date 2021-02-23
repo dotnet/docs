@@ -103,4 +103,4 @@ mdbg>
 ## See also
 
 - [Tools](index.md)
-- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md)

@@ -23,7 +23,7 @@ ms.assetid: 4c7be9c8-72ae-481f-a01c-1a4716806e99
 
 The Global Assembly Cache tool allows you to view and manipulate the contents of the global assembly cache and download cache.
 
-This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md).
 
 At the command prompt, type the following:
 
@@ -176,4 +176,4 @@ gacutil /l
 - [Tools](index.md)
 - [Global Assembly Cache](../app-domains/gac.md)
 - [Regasm.exe (Assembly Registration Tool)](regasm-exe-assembly-registration-tool.md)
-- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md)

@@ -245,4 +245,4 @@ You can use the **Log Settings** dialog to perform the following actions.
 - [Tools](index.md)
 - [Global Assembly Cache](../app-domains/gac.md)
 - [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md)
-- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md)

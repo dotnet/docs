@@ -1,40 +1,112 @@
 ﻿// <snippet03>
 using System;
-using System.IO;
-using System.Threading;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
-using System.Drawing;
 
-public class Example
+namespace ParallelExample
 {
-    public static void Main()
+    class Program
     {
-        // A simple source for demonstration purposes. Modify this path as necessary.
-        string[] files = Directory.GetFiles(@"C:\Users\Public\Pictures\Sample Pictures", "*.jpg");
-        string newDir = @"C:\Users\Public\Pictures\Sample Pictures\Modified";
-        Directory.CreateDirectory(newDir);
+        static void Main(string[] args)
+        {
+            // 2 million
+            int limit = 2 * 1000000;
+            var inputs = new List<int>(limit);
+            Random radomGenerator = new Random();
+            for (int index = 0; index < limit; index++)
+            {
+                inputs.Add(radomGenerator.Next());
+            }
 
-        // Method signature: Parallel.ForEach(IEnumerable<TSource> source, Action<TSource> body)
-        Parallel.ForEach(files, (currentFile) =>
-                                {
-                                    // The more computational work you do here, the greater
-                                    // the speedup compared to a sequential foreach loop.
-                                    string filename = Path.GetFileName(currentFile);
-                                    var bitmap = new Bitmap(currentFile);
+            var watch = new Stopwatch();
+            watch.Start();
+            var primeNumbers = GetPrimeList(inputs);
+            watch.Stop();
 
-                                    bitmap.RotateFlip(RotateFlipType.Rotate180FlipNone);
-                                    bitmap.Save(Path.Combine(newDir, filename));
+            var watchForParallel = new Stopwatch();
+            watchForParallel.Start();
+            var primeNumbersFromParallel = GetPrimeListWithParallel(inputs);
+            watchForParallel.Stop();
 
-                                    // Peek behind the scenes to see how work is parallelized.
-                                    // But be aware: Thread contention for the Console slows down parallel loops!!!
+            Console.WriteLine($"Classical For loop    | Total prime numbers : {primeNumbersFromParallel.Count} | Time Taken : {watch.ElapsedMilliseconds} ms.");
+            Console.WriteLine($"Parallel.ForEach loop | Total prime numbers : {primeNumbersFromParallel.Count} | Time Taken : {watchForParallel.ElapsedMilliseconds} ms.");
 
-                                    Console.WriteLine($"Processing {filename} on thread {Thread.CurrentThread.ManagedThreadId}");
-                                    //close lambda expression and method invocation
-                                });
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadLine();
+        }
 
-        // Keep the console window open in debug mode.
-        Console.WriteLine("Processing complete. Press any key to exit.");
-        Console.ReadKey();
+        /// <summary>
+        /// GetPrimeList returns Prime numbers by using sequential ForEach
+        /// </summary>
+        /// <param name="inputs"></param>
+        /// <returns></returns>
+        static IList<int> GetPrimeList(IList<int> inputs)
+        {
+            var primeNumbers = new List<int>();
+
+            foreach (var item in inputs)
+            {
+                if (IsPrime(item))
+                {
+                    primeNumbers.Add(item);
+                }
+            }
+
+            return primeNumbers;
+        }
+
+        /// <summary>
+        /// GetPrimeListWithParallel returns Prime numbers by using Parallel.ForEach
+        /// </summary>
+        /// <param name="inputs"></param>
+        /// <returns></returns>
+        static IList<int> GetPrimeListWithParallel(IList<int> inputs)
+        {
+            var primeNumbers = new ConcurrentBag<int>();
+
+            Parallel.ForEach(inputs, item =>
+            {
+                if (IsPrime(item))
+                {
+                    primeNumbers.Add(item);
+                }
+            });
+
+            return primeNumbers.ToList();
+        }
+
+        /// <summary>
+        /// IsPrime returns true if number is Prime, else false.(https://en.wikipedia.org/wiki/Prime_number)
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
+        static bool IsPrime(int number)
+        {
+
+            if (number <= 1)
+            {
+                return false;
+            }
+
+            if (number == 2 || number % 2 == 0)
+            {
+                return true;
+            }
+
+            int limit = (int)Math.Floor(Math.Sqrt(number));
+
+            for (int index = 3; index <= limit; index += 2)
+            {
+                if (number % index == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }
 // </snippet03>

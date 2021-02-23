@@ -8,10 +8,7 @@ ms.reviewer: robvet
 
 # The Dapr state management building block
 
-Distributed applications are composed of independent services. While each service should be stateless, some services must track state to complete business operations. Consider a shopping basket service for an eCommerce site. If the service can't track state, the customer could loose the shopping basket content by leaving the website, resulting in a lost sale and an unhappy customer experience. For these scenarios, state needs to be persisted to a distributed state store. The [Dapr state management building block](https://docs.dapr.io/developing-applications/building-blocks/state-management/) simplifies state tracking and offers advanced features across various data stores.
-
-> [!NOTE]
-> By storing the state in an **external** data store, a service is considered **stateless**. **Statefull** services typically store state locally on a single server either in memory or on disk. Stateless services are favored over stateful services. They don't require requests from a specific user to be handled by the same service instance. As a result, stateless services can scale horizontally as the request volume increases.
+Distributed applications are composed of independent services. While each service should be stateless, some services must track state to complete business operations. Consider a shopping basket service for an e-Commerce site. If the service can't track state, the customer could loose the shopping basket content by leaving the website, resulting in a lost sale and an unhappy customer experience. For these scenarios, state needs to be persisted to a distributed state store. The [Dapr state management building block](https://docs.dapr.io/developing-applications/building-blocks/state-management/) simplifies state tracking and offers advanced features across various data stores.
 
 To try out the state management building block, have a look at the [counter application sample in chapter 3](getting-started.md).
 
@@ -22,12 +19,12 @@ Tracking state in a distributed application can be challenging. For example:
 - The application may require different types of data stores.
 - Different consistency levels may be required for accessing and updating data.
 - Multiple users may update data at the same time, requiring  conflict resolution.
-- Services must retry any short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) that  occur while interacting with the data store.
+- Services must retry any short-lived [transient errors](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) that  occur while interacting with the data store.
 
 The Dapr state management building block addresses these challenges. It streamlines tracking state without dependencies or a learning curve on third-party storage SDKs.
 
 > [!IMPORTANT]
-> Dapr state management offers a [key/value](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview#keyvalue-stores) API. The feature doesn't support relational or graph data storage.
+> Dapr state management offers a [key/value](/azure/architecture/guide/technology-choices/data-store-overview#keyvalue-stores) API. The feature doesn't support relational or graph data storage.
 
 ## How it works
 
@@ -50,7 +47,7 @@ Figure 5-1 shows how a Dapr-enabled shopping basket service stores a key/value p
 
 Note the steps in the previous figure:
 
-1. The basket service calls the state management API from the Dapr sidecar. The body of the request encloses a JSON array that can contain multiple key/value pairs.
+1. The basket service calls the state management API on the Dapr sidecar. The body of the request encloses a JSON array that can contain multiple key/value pairs.
 1. The Dapr sidecar determines the state store based on the component configuration file. In this case, it's a Redis cache state store.
 1. The sidecar persists the data to the Redis cache.
 
@@ -86,7 +83,7 @@ The [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) is a set of princip
 
 The theorem states that distributed data systems offer a trade-off between consistency, availability, and partition tolerance. And, that any datastore can only *guarantee two of the three properties*:
 
-- *Consistency* (**C**). Every node in the cluster responds with the most recent data, even if the system must block the request until all replicas update. If you query a "consistent system" for an item that is currently updating, you'll not get a response until all replicas successfully update. However, you'll always receive the most current data.
+- *Consistency* (**C**). Every node in the cluster responds with the most recent data, even if the system must block the request until all replicas update. If you query a "consistent system" for an item that is currently updating, you won't get a response until all replicas successfully update. However, you'll always receive the most current data.
 
 - *Availability* (**A**). Every node returns an immediate response, even if that response isn't the most recent data. If you query an "available system" for an item that is updating, you'll get the best possible answer the service can provide at that moment.
 
@@ -111,7 +108,7 @@ curl -X POST http://localhost:3500/v1.0/state/<store-name> \
             "consistency": "strong"
           }
         }
-      ]' 
+      ]'
 ```
 
 > [!IMPORTANT]
@@ -119,7 +116,7 @@ curl -X POST http://localhost:3500/v1.0/state/<store-name> \
 
 ### Concurrency
 
-In a multi-user application, there's a chance that multiple users will update the same data concurrently (at the same time). Dapr supports optimistic concurrency control (OCC) to manage conflicts. OCC is based on an assumption that update conflicts are uncommon because users work on different parts of the data. It's more efficient to assume an update will succeed and retry if it doesn't. The alternative, implementing pessimistic locking, can impact performance with long-running locking causing data contention.
+In a multi-user application, there's a chance that multiple users will update the same data concurrently (at the same time). Dapr supports optimistic concurrency control (OCC) to manage conflicts. OCC is based on an assumption that update conflicts are uncommon because users work on different parts of the data. It's more efficient to assume an update will succeed and retry if it doesn't. The alternative, implementing pessimistic locking, can affect performance with long-running locking causing data contention.
 
 Dapr supports optimistic concurrency control (OCC) using ETags. An ETag is a value associated with a specific version of a stored key/value pair. Each time a key/value pair updates, the ETag value updates as well. When a client retrieves a key/value pair, the response includes the current ETag value. When a client updates or deletes a key/value pair, it must send that ETag value back in the request body. If another client has updated the data in the meantime, the ETags won't match and the request will fail. At this point, the client must retrieve the updated data, make the change again, and resubmit the update. This strategy is called **first-write-wins**.
 
@@ -157,7 +154,7 @@ curl -X POST http://localhost:3500/v1.0/state/<store-name> \
   -d '[
         { "key": "Key1", "value": "Value1" },
         { "key": "Key2", "value": "Value2" }
-      ]' 
+      ]'
 ```
 
 For bulk operations, Dapr will submit each key/value pair update as a separate request to the data store.
@@ -196,7 +193,7 @@ The SDK provides other methods to retrieve data in bulk, delete data, and execut
 
 ### ASP.NET Core integration
 
-Dapr also supports ASP.NET Core, a cross-platform framework for building modern cloud-based web applications. The Dapr SDK integrates state management capabilities directly into the [ASP.NET Core model binding](https://docs.microsoft.com/aspnet/core/mvc/models/model-binding) capabilities. Configuration is simple. Add the `IMVCBuilder.AddDapr` by appending the `.AddDapr` extension method in your `Startup.cs` class as shown in the next example:
+Dapr also supports ASP.NET Core, a cross-platform framework for building modern cloud-based web applications. The Dapr SDK integrates state management capabilities directly into the [ASP.NET Core model binding](/aspnet/core/mvc/models/model-binding) capabilities. Configuration is simple. Add the `IMVCBuilder.AddDapr` by appending the `.AddDapr` extension method in your `Startup.cs` class as shown in the next example:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -220,7 +217,7 @@ public ActionResult<WeatherForecast> Get([FromState("statestore", "city")] State
 }
 ```
 
-In the example, the controller loads the weather forecast using the `FromState` attribute. The first attribute parameter is the state store, `statestore`. The second attribute parameter, `city`, is the name of the [route template](https://docs.microsoft.com/aspnet/core/mvc/controllers/routing?#route-templates) variable to get the state key. If you omit the second parameter, the name of the bound method parameter (`forecast`) is used to look up the route template variable.
+In the example, the controller loads the weather forecast using the `FromState` attribute. The first attribute parameter is the state store, `statestore`. The second attribute parameter, `city`, is the name of the [route template](/aspnet/core/mvc/controllers/routing#route-templates) variable to get the state key. If you omit the second parameter, the name of the bound method parameter (`forecast`) is used to look up the route template variable.
 
 The `StateEntry` class contains properties for all the information that is retrieved for a single key/value pair: `StoreName`, `Key`, `Value`, and `ETag`. The ETag is useful for implementing optimistic concurrency control (OCC) strategy. The class also provides methods to delete or update retrieved key/value data without requiring a `DaprClient` instance. In the next example, the `TrySaveAsync` method is used to update the retrieved weather forecast using OCC.
 
@@ -233,7 +230,7 @@ public async Task Put(WeatherForecast updatedForecast, [FromState("statestore", 
 
     // update state store
     var success = await currentForecast.TrySaveAsync();
-    
+
     // ... check result
 }
 ```
@@ -306,7 +303,7 @@ curl -X POST http://localhost:3500/v1.0/state/statestore \
             { "itemId": "DaprHoodie", "quantity": 1 }
           ]
         }
-     }]' 
+     }]'
 ```
 
 Using the Redis Console tool, look inside the Redis cache to see how the Redis state store component persisted the data:
@@ -322,7 +319,7 @@ Using the Redis Console tool, look inside the Redis cache to see how the Redis s
 4) "1"
 ```
 
-The output shows the full Redis **key** for the data as `basketservice||basket1`. By default, Dapr uses the `application id` of the Dapr instance (`basketservice`) as a prefix for the key. This naming convention enables multiple Dapr instances to share the same data store without key name collisions. For the developer, it's critical always to specify the same `application id` when running the application with Dapr. If omitted, Dapr will generate a unique application Id. If the `application id` changes, the application can no longer access the state stored with the previous key prefix.
+The output shows the full Redis **key** for the data as `basketservice||basket1`. By default, Dapr uses the `application id` of the Dapr instance (`basketservice`) as a prefix for the key. This naming convention enables multiple Dapr instances to share the same data store without key name collisions. For the developer, it's critical always to specify the same `application id` when running the application with Dapr. If omitted, Dapr will generate a unique application ID. If the `application id` changes, the application can no longer access the state stored with the previous key prefix.
 
 That said, it's possible to configure a *constant value* for the key prefix in the `keyPrefix` metadata field in the state store component file. Consider the following example:
 
@@ -444,7 +441,12 @@ The Dapr implementation also simplifies changing the underlying data store. For 
 
 ## Summary
 
-The Dapr state management building block offers an API for storing key/value data across various data stores. The API provides support for bulk operations, strong and eventual consistency, optimistic concurrency control, and multi-item transactions.
+The Dapr state management building block offers an API for storing key/value data across various data stores. The API provides support for:
+
+- Bulk operations
+- Strong and eventual consistency
+- Optimistic concurrency control
+- Multi-item transactions
 
 The .NET SDK provides language-specific support for .NET Core and ASP.NET Core. Model binding integration simplifies accessing and updating state from ASP.NET Core controller action methods.
 

@@ -26,13 +26,13 @@ To start, let's rewind and look at the past 15 years. During this period, we typ
 
 Note how the modules for Ordering, Identity, and Marketing execute in a single-server process. Application data is stored in a shared database. Business functionality is exposed via HTML and RESTful interfaces.
 
-In many ways, monolithic apps are `straightforward`. They're straightforward to...
+In many ways, monolithic apps are `straightforward`. They're straightforward to:
 
-- build
-- test
-- deploy
-- troubleshoot
-- scale vertically (scale up)
+- Build
+- Test
+- Deploy
+- Troubleshoot
+- Scale vertically (scale up)
 
 However, monolithic architectures can present significant challenges.
 
@@ -48,7 +48,7 @@ Over time, you may reach a point where you begin to lose control...
 - Architectural erosion sets in as the code base deteriorates with never-ending "special cases."
 - Eventually the consultants come in and tell you to rewrite it.
 
-IT practitioners call this condition `the Fear Cycle`. If you've been in the technology business for any length of time, good chance you've experienced it. It's stressful and exhausts your IT budget. Instead of building new and innovative solutions, the majority of your budget is spent maintaining legacy apps.
+IT practitioners call this condition `the Fear Cycle`. If you've been in the technology business for any length of time, good chance you've experienced it. It's stressful and exhausts your IT budget. Instead of building new and innovative solutions, most of your budget is spent maintaining legacy apps.
 
 Instead of fear, businesses require `speed and agility`. They seek an architectural style with which they can rapidly respond to market conditions. They need to instantaneously update and individually scale small areas of a live application.
 
@@ -68,7 +68,7 @@ Nowadays, many organizations have realized speed and agility by adopting a distr
 
 **Figure 1-3**. Distributed architecture.
 
-Note how the same application is decomposed across a set of distributed services. Each is self-contained and encapsulates its own code, data, and dependencies. Each is deployed in a software container and managed by a container orchestrator. Instead of a single database shared by multiple services, each service owns a private database. Other services cannot access this database directly and can only get to data that is exposed through the public API of the service that owns it. Note how some services require a full relational database, but others, a NoSQL datastore. The basket service stores its state in a distributed key/value cache. Note how inbound traffic routes through an API Gateway service. It's responsible for directing calls to  services and enforcing cross-cutting concerns. Most importantly, the application takes full advantage of the scalability, availability, and resiliency features found in modern cloud platforms.
+Note how the same application is decomposed across a set of distributed services. Each is self-contained and encapsulates its own code, data, and dependencies. Each is deployed in a software container and managed by a container orchestrator. Instead of a single database shared by multiple services, each service owns a private database. Other services can't access this database directly and can only get to data that is exposed through the public API of the service that owns it. Note how some services require a full relational database, but others, a NoSQL datastore. The basket service stores its state in a distributed key/value cache. Note how inbound traffic routes through an API Gateway service. It's responsible for directing calls to  services and enforcing cross-cutting concerns. Most importantly, the application takes full advantage of the scalability, availability, and resiliency features found in modern cloud platforms.
 
 But, while distributed services can provide agility and speed, they present a different set of challenges. Consider the following...
 

@@ -27,7 +27,7 @@ string connectionString =
 
 In ASP.NET Core apps, configuration is, itself, configurable. However, most apps use a set of defaults provided as part of the standard project templates and the `ConfigureWebHostDefaults` method used in them. The default settings use JSON formatted files, with the ability to override settings in the base *appsettings.json* file with environment-specific files like *appsettings.Development.json*. Additionally, the default configuration system further overrides all file-based settings with any environment variable that exists for the same named setting. This is useful in many scenarios and is especially useful when deploying to a hosting environment, since it eliminates the need to worry about whether deploying configuration files will accidentally overwrite important production configuration settings. Configuration values can also be provided as command line arguments.
 
-Accessing configuration values can be done in many ways in .NET Core. Because dependency injection is built into .NET Core, configuration values are generally accessed through an interface that is injected into classes that need them. This can involve passing a interface like <xref:Microsoft.Extensions.Configuration.IConfiguration>, but usually it's better to pass just the settings required by the class using the [options pattern](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/options).
+Accessing configuration values can be done in many ways in .NET Core. Because dependency injection is built into .NET Core, configuration values are generally accessed through an interface that is injected into classes that need them. This can involve passing a interface like <xref:Microsoft.Extensions.Configuration.IConfiguration>, but usually it's better to pass just the settings required by the class using the [options pattern](/aspnet/core/fundamentals/configuration/options).
 
 Figure 2-2 shows how to pass `IConfiguration` into a Razor Page and access configuration settings from it:
 
@@ -100,9 +100,9 @@ If you're still maintaining the ASP.NET app, it may be helpful to avoid static r
 
 ## References
 
-- [Configuration in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/)
-- [Options pattern in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/options)
-- [Migrate configuration to ASP.NET Core](https://docs.microsoft.com/aspnet/core/migration/configuration)
+- [Configuration in ASP.NET Core](/aspnet/core/fundamentals/configuration/)
+- [Options pattern in ASP.NET Core](/aspnet/core/fundamentals/configuration/options)
+- [Migrate configuration to ASP.NET Core](/aspnet/core/migration/configuration)
 - [Refactoring Static Config Access](https://ardalis.com/refactoring-static-config-access/)
 
 >[!div class="step-by-step"]

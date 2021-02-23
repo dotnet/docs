@@ -4,7 +4,7 @@ The .NET Core 2.1 SDK now includes common CLI tooling, and you no longer need to
 
 #### Change description
 
-In .NET Core 2.0, projects reference external .NET tools with the `<DotNetCliToolReference>` project setting. In .NET Core 2.1, some of these tools are now  included with the .NET Core SDK and the setting is no longer needed. If reference to these tools are included in your project, you'll receive an error similar to the following: **The tool 'Microsoft.EntityFrameworkCore.Tools.DotNet' is now included in the .NET Core SDK.**
+In .NET Core 2.0, projects reference external .NET tools with the `<DotNetCliToolReference>` project setting. In .NET Core 2.1, some of these tools are included with the .NET Core SDK, and the setting is no longer needed. If you include references to these tools in your project, you'll receive an error similar to the following: **The tool 'Microsoft.EntityFrameworkCore.Tools.DotNet' is now included in the .NET Core SDK.**
 
 Tools now included in .NET Core 2.1 SDK:
 

@@ -52,7 +52,7 @@ For additional information on using Ngen.exe and the native image service, see [
 > [!NOTE]
 > Ngen.exe syntax for versions 1.0 and 1.1 of the .NET Framework can be found in [Native Image Generator (Ngen.exe) Legacy Syntax](/previous-versions/dotnet/netframework-4.0/ms165073(v=vs.100)).
 
-This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use the [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md).
 
 At the command prompt, type the following:
 

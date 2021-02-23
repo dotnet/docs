@@ -14,7 +14,7 @@ ms.assetid: a487d61b-d166-467b-a7ca-d8b52fbff42d
 
 The Type Library Exporter generates a type library that describes the types defined in a common language runtime assembly.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   

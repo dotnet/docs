@@ -16,7 +16,7 @@ ms.assetid: ec0a8d63-11b3-4acd-b398-da1e37e97382
 
 The Type Library Importer converts the type definitions found within a COM type library into equivalent definitions in a common language runtime assembly. The output of Tlbimp.exe is a binary file (an assembly) that contains runtime metadata for the types defined within the original type library. You can examine this file with tools such as [Ildasm.exe](ildasm-exe-il-disassembler.md).  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   

@@ -23,7 +23,7 @@ ms.assetid: 4c7be9c8-72ae-481f-a01c-1a4716806e99
 
 The Global Assembly Cache tool allows you to view and manipulate the contents of the global assembly cache and download cache.
 
-This tool is automatically installed with Visual Studio. To run the tool, use the [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md).
 
 At the command prompt, type the following:
 

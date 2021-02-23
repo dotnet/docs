@@ -26,7 +26,7 @@ The SqlMetal command-line tool generates code and mapping for the [!INCLUDE[vbte
 > [!NOTE]
 > Developers who use Visual Studio can also use the Object Relational Designer to generate entity classes. The command-line approach scales well for large databases. Because SqlMetal is a command-line tool, you can use it in a build process.  
   
- To run the tool, use the [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md).At the command prompt, type the following:  
+ To run the tool, use [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md). At the command prompt, enter the following command:  
   
 ## Syntax  
   

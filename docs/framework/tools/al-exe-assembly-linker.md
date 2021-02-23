@@ -16,7 +16,7 @@ The Assembly Linker generates a file that has an assembly manifest from one or m
 > [!NOTE]
 > Starting with Visual Studio 2008, both the C# and Visual Basic compilers automatically embed a Win32 manifest into the assembly. For more information, see [-win32manifest (C# Compiler Options)](../../csharp/language-reference/compiler-options/win32manifest-compiler-option.md).
 
-This tool is automatically installed with Visual Studio. To run the tool, use the [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md).
 
 At the command prompt, type the following:
 

@@ -1,7 +1,7 @@
 ---
-title: "Developer Command Prompt for Visual Studio"
-description: Learn to use the Developer Command Prompt for Visual Studio, which lets you use .NET tools more easily. It automatically sets specific environment variables.
-ms.date: 01/05/2020
+title: Developer Command Prompt for Visual Studio
+description: Learn how to find and use the Developer Command Prompt for Visual Studio, which lets you use .NET tools more easily. It automatically sets specific environment variables.
+ms.date: 02/23/2021
 helpviewer_keywords:
   - "command prompt, Windows SDK"
   - "Visual Studio command prompt"
@@ -14,7 +14,7 @@ ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 ---
 # Developer Command Prompt for Visual Studio
 
-Developer Command Prompt for Visual Studio enables you to use .NET Framework tools more easily. It's a command prompt that automatically sets specific environment variables. After opening Developer Command Prompt, you can enter the commands for [.NET Framework tools](index.md) such as `ildasm` or `clrver`.
+Developer Command Prompt for Visual Studio is a specialized command prompt that enables you to use .NET Framework tools more easily. Developer Command Prompt is a command prompt that has specific environment variables set. After opening Developer Command Prompt for Visual Studio, you can enter the commands for [.NET Framework tools](index.md) such as `ildasm` or `clrver` without having to know where they're located.
 
 ## Prerequisites
 
@@ -60,31 +60,13 @@ Usually, the shortcuts for the command prompts you have installed are placed at 
 
 ## Start the command prompt from inside Visual Studio
 
-For easier access, you can add Developer Command Prompt, or any other command prompt, to the Tools menu in Visual Studio. To make the tool available, add it to the external tools list. Here are the steps:
+Follow these steps to open Developer Command Prompt from within Visual Studio:
 
 1. Open Visual Studio.
 
-1. On the start window, choose **Continue without code**.
+1. On the menu bar, choose **Tools** > **Command Line** > **Developer Command Prompt**.
 
-1. On the menu bar, choose **Tools** > **External Tools**.
-
-1. On the **External Tools** dialog box, choose the **Add** button. A new entry appears.
-
-1. Enter a **Title** for your new menu item such as `Command Prompt`.
-
-1. In the **Command** field, specify the file you want to launch, such as `%comspec%` or `C:\Windows\System32\cmd.exe`.
-
-1. In the **Arguments** field, specify where to find the specific command prompt you want to use, such as `/k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat"`. This command launches the Developer Command Prompt that's installed with Visual Studio 2019 Community. Change this value according to your Visual Studio version, edition, and installation location.
-
-1. In the **Initial directory** field, specify the directory in which the command prompt will start. Choose a value such as **Project Directory** by selecting the arrow next to the field.
-
-1. Choose the **OK** button.
-
-   ![External Tools dialog with the field values filled out.](./media/developer-command-prompt-for-vs/add-external-tool.png)
-
-   The new menu item is added, and you can access the command prompt from the Tools menu.
-
-   ![Command prompt menu item in Visual Studio](./media/developer-command-prompt-for-vs/command-prompt-vs-menu.png)
+   ![Command prompt menu item in Visual Studio](./media/developer-command-prompt-for-vs/vs-menu.png)
 
 ## See also
 

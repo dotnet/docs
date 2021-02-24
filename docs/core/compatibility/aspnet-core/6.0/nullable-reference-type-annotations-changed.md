@@ -3,7 +3,7 @@ title: "Breaking change: Nullable reference type annotations changed"
 description: "Learn about the breaking change in ASP.NET Core 6.0 titled Nullable reference type annotations changed"
 author: scottaddie
 ms.author: scaddie
-ms.date: 02/23/2021
+ms.date: 02/24/2021
 ---
 # Nullable reference type annotations changed
 
@@ -126,6 +126,8 @@ Update code calling these APIs to reflect the revised nullability contracts.
 * <xref:Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager%601.SendUsersAsync(System.Collections.Generic.IReadOnlyList{System.String},System.String,System.Object[],System.Threading.CancellationToken)?displayProperty=nameWithType>
 * <xref:Microsoft.AspNetCore.SignalR.IClientProxy.SendCoreAsync%2A?displayProperty=nameWithType>
 * <xref:Microsoft.AspNetCore.SignalR.HubConnectionContext.User?displayProperty=nameWithType>
+* <xref:Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseNullableQuery(System.String)?displayProperty=nameWithType>
+* <xref:Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(System.String)?displayProperty=nameWithType>
 
 <!--
 
@@ -226,5 +228,7 @@ ASP.NET Core
 - `M:Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager%601.SendUsersAsync(System.Collections.Generic.IReadOnlyList{System.String},System.String,System.Object[],System.Threading.CancellationToken)`
 - `Overload:Microsoft.AspNetCore.SignalR.IClientProxy.SendCoreAsync`
 - `P:Microsoft.AspNetCore.SignalR.HubConnectionContext.User`
+- `M:Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseNullableQuery(System.String)`
+- `M:Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(System.String)`
 
 -->

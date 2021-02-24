@@ -85,7 +85,7 @@ If you have other SDKs installed, such as the [Windows 10 SDK](https://developer
 
 ### Manually locate the file
 
-Usually, the shortcuts for the command prompts you have installed are placed at the **Start Menu** folder for Visual Studio, such as in *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools*. But if, for some reason, searching for the command prompt doesn't produce the expected results, you can try to manually locate the shortcut on your machine. Search for the name of the command prompt file, which is *VsDevCmd.bat*, or go to the Tools folder, such as *%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\Tools* (path changes according to your Visual Studio version, edition, and installation location).
+Usually, the shortcuts for the command prompts you have installed are placed in the **Start Menu** folder for Visual Studio, such as in *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools*. But if searching for the command prompt doesn't produce the expected results, you can try to manually locate the shortcut on your machine. Search for the name of the command prompt file, which is *VsDevCmd.bat*, or go to the Tools folder, such as *%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\Tools* (path changes according to your Visual Studio version, edition, and installation location).
 
 Once you've located the command prompt file, open it using the following commands in a regular command prompt window (but change the directory to match your installation of Visual Studio):
 
@@ -94,7 +94,7 @@ cd %ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\Tools
 VsDevCmd.bat
 ```
 
-Or, enter the following command from the Windows **Run** dialog box:
+Or enter the following command from the Windows **Run** dialog box:
 
 ```cmd
 %comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat"

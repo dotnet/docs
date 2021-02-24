@@ -2,7 +2,7 @@
 title: Get started with Dapr
 description: A guide for preparing your local development environment and building your first .NET applications with Dapr.
 author: amolenk 
-ms.date: 02/07/2021
+ms.date: 02/17/2021
 ---
 
 # Get started with Dapr

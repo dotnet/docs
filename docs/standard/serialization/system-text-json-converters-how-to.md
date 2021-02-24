@@ -142,7 +142,7 @@ You can throw other exceptions as needed, but they don't automatically include J
 
 ## Registration sample - Converters collection
 
-Here's an example that makes the <xref:System.ComponentModel.DateTimeOffsetConverter> the default for properties of type <xref:System.DateTimeOffset>:
+Here's an example that makes the [DateTimeOffsetConverter](#sample-basic-converter) the default for properties of type <xref:System.DateTimeOffset>:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RegisterConverterWithConvertersCollection.cs" id="Serialize":::
 

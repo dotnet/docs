@@ -21,7 +21,7 @@ The .NET Services Installation tool performs the following actions:
   
 - Configures services that you have added programmatically to your class.  
   
- To run the tool, use a [command-line shell for developers](developer-command-prompt-for-vs.md)).  
+ To run the tool, use a [command-line shell for developers](developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   

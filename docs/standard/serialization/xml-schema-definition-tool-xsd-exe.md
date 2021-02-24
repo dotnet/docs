@@ -230,7 +230,7 @@ xsd myAssembly.dll
 - <xref:System.Data.DataSet>
 - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
 - [Tools](../../framework/tools/index.md)
-- [Developer Command Prompt for Visual Studio](../../framework/tools/developer-command-prompt-for-vs.md)
+- [Developer command-line shells](../../framework/tools/developer-command-prompt-for-vs.md)
 - [LINQ to DataSet Overview](../../framework/data/adonet/linq-to-dataset-overview.md)
 - [Querying Typed DataSets](../../framework/data/adonet/querying-typed-datasets.md)
 - [LINQ (Language-Integrated Query) (C#)](../../csharp/programming-guide/concepts/linq/index.md)

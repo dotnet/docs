@@ -13,7 +13,7 @@ The Manifest Generation and Editing Tool (*Mage.exe*) is a command-line tool tha
 
 You can also use *MageUI.exe*, a graphical application, instead of *Mage.exe*. For more information, see [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](mageui-exe-manifest-generation-and-editing-tool-graphical-client.md).
 
-This tool is automatically installed with Visual Studio. To run the tool, use a [command-line shell for developers](developer-command-prompt-for-vs.md)).
+This tool is automatically installed with Visual Studio. To run the tool, use a [command-line shell for developers](developer-command-prompt-for-vs.md).
 
 Two versions of *Mage.exe* and *MageUI.exe* are included with Visual Studio. To see version information, run *MageUI.exe*, select **Help**, and select **About**. This documentation describes version 4.0.x.x of *Mage.exe* and *MageUI.exe*.
 

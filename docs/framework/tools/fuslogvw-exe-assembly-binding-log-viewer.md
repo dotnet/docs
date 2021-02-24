@@ -18,7 +18,7 @@ The Assembly Binding Log Viewer displays details for assembly binds. This inform
 > [!IMPORTANT]
 > You must run fuslogvw.exe with administrator privileges.
 
-This tool is automatically installed with Visual Studio. To run the tool, use a [command-line shell for developers](developer-command-prompt-for-vs.md)) with administrator credentials.
+This tool is automatically installed with Visual Studio. To run the tool, use a [command-line shell for developers](developer-command-prompt-for-vs.md) with administrator credentials.
 
 At the command prompt, enter the following command:
 

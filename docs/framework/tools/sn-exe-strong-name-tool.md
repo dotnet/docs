@@ -21,7 +21,7 @@ The Strong Name tool (Sn.exe) helps sign assemblies with [strong names](../../st
 
  For more information on strong naming and strong-named assemblies, see [Strong-Named Assemblies](../../standard/assembly/strong-named.md) and [How to: Sign an Assembly with a Strong Name](../../standard/assembly/sign-strong-name.md).  
   
- The Strong Name tool is automatically installed with Visual Studio. To start the tool, use a [command-line shell for developers](developer-command-prompt-for-vs.md)).  
+ The Strong Name tool is automatically installed with Visual Studio. To start the tool, use a [command-line shell for developers](developer-command-prompt-for-vs.md).  
 
 > [!NOTE]
 > On 64-bit computers, run the 32-bit version of Sn.exe by using the Developer Command Prompt for Visual Studio and the 64-bit version by using the Visual Studio x64 Win64 Command Prompt.

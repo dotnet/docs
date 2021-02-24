@@ -19,7 +19,7 @@ This example shows how to use a <xref:System.Threading.Tasks.Parallel.ForEach%2A
 
 ## Example
 
-This example showcases the power of Parallel.ForEach for CPU intensive operations. Only for demonstration purpose we have picked up operation around Prime numbers. When you run the example, it randomly generates 2 million numbers and tries to filter only Prime Numbers. In first case we iterate over the collection via simple for loop, in second case we iterate over the collection via Parallel.ForEach. In the end we display the time taken in both the cases.
+This example demonstrates <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> for CPU intensive operations. When you run the example, it randomly generates 2 million numbers and tries to filter to prime numbers. The first case iterates over the collection via a `for` loop. The second case iterates over the collection via <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType>. The resulting time taken by each iteration is displayed when the application is finished.
 
 [!code-csharp[TPL_Parallel#03](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_parallel/cs/simpleforeach.cs#03)]
 [!code-vb[TPL_Parallel#03](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_parallel/vb/simpleforeach.vb#03)]

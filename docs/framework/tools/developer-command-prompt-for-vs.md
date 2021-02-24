@@ -11,9 +11,9 @@ helpviewer_keywords:
   - "Visual Studio terminal"
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 ---
-# Developer command-line tools
+# Command-line shells for developers
 
-Visual Studio 2019 includes three command-line tools for developers:
+Visual Studio 2019 includes three command-line shells for developers:
 
 - Developer Command Prompt for Visual Studio
 - Developer PowerShell

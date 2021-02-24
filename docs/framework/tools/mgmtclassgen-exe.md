@@ -152,4 +152,4 @@ public class App
 - <xref:System.Management.ManagementClass.GetStronglyTypedClassCode%2A?displayProperty=nameWithType>
 - <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>
 - [Tools](index.md)
-- [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md)
+- [Developer command-line shells](developer-command-prompt-for-vs.md)

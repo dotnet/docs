@@ -11,7 +11,7 @@ ms.assetid: 66e70056-dd20-453c-a9b3-507e0478b015
 
 You can invoke the C# compiler by typing the name of its executable file (*csc.exe*) at a command prompt.
 
-If you use **Developer Command Prompt for Visual Studio**, all the necessary environment variables are set for you. For information on how to access this tool, see [Developer Command Prompt for Visual Studio](../../../framework/tools/developer-command-prompt-for-vs.md).
+If you use one of the command-line shells that Visual Studio installs, all the necessary environment variables are set for you. For information on how to access these shells, see [Developer command-line shells](../../../framework/tools/developer-command-prompt-for-vs.md).
 
 If you use a regular command prompt, you must adjust your path before you can invoke *csc.exe* from any subdirectory on your computer. You also must run *VsDevCmd.bat* to set the appropriate environment variables to support command-line builds. For more information about *VsDevCmd.bat*, including instructions for how to find and run it, see [How to set environment variables for the Visual Studio Command Line](./how-to-set-environment-variables-for-the-visual-studio-command-line.md).
 

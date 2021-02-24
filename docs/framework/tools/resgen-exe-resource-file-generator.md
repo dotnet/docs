@@ -49,7 +49,7 @@ resgen /?
   
  If you use Resgen.exe to generate binary .resources files, you can use a language compiler to embed the binary files into executable assemblies, or you can use the [Assembly Linker (Al.exe)](al-exe-assembly-linker.md) to compile them into satellite assemblies.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use a [command-line shell for developers](developer-command-prompt-for-vs.md)).  
   
  At the command prompt, type the following:  
   
@@ -346,4 +346,4 @@ resgen StringResources.txt /str:vb,,StringResources
 - [Resources in Desktop Apps](../resources/index.md)
 - [Creating Resource Files](../resources/creating-resource-files-for-desktop-apps.md)
 - [Al.exe (Assembly Linker)](al-exe-assembly-linker.md)
-- [Developer Command Prompt for Visual Studio](developer-command-prompt-for-vs.md)
+- [Developer command-line shells](developer-command-prompt-for-vs.md)

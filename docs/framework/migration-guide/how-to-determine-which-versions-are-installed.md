@@ -202,7 +202,7 @@ The .NET Framework CLR installed with .NET Framework is versioned separately. Th
 
 - **The Clrver.exe tool**
 
-  Use the [CLR Version tool (Clrver.exe)](../tools/clrver-exe-clr-version-tool.md) to determine which versions of the CLR are installed on a computer. Open a [command-line shell for developers](../tools/developer-command-prompt-for-vs.md)) and enter `clrver`.
+  Use the [CLR Version tool (Clrver.exe)](../tools/clrver-exe-clr-version-tool.md) to determine which versions of the CLR are installed on a computer. Open a [command-line shell for developers](../tools/developer-command-prompt-for-vs.md) and enter `clrver`.
 
   Sample output:
 

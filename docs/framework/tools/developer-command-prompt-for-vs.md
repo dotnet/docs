@@ -22,6 +22,8 @@ Developer Command Prompt for Visual Studio is a command prompt that has specific
 - C/C++ compile tools, such as [`CL`](/cpp/build/reference/compiler-command-line-syntax) and [`NMAKE`](/cpp/build/reference/running-nmake).
 - Additional C/C++ build tools, such as [`LIB`](/cpp/build/reference/lib-reference) AND [`DUMPBIN`](/cpp/build/reference/dumpbin-reference).
 
+When you [open Developer Command Prompt from Visual Studio](#start-the-command-prompt-from-inside-visual-studio), it opens to the directory of your current solution. That makes it convenient to run commands on the solution or its projects.
+
 ## Prerequisites
 
 - [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)

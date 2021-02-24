@@ -24,4 +24,4 @@ The Visual Basic compiler calls the Assembly Linker (Al.exe, also known as Alink
 ## See also
 
 - [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)
-- [Visual Studio feedback options](/visualstudio/ide/feedback-options)
+- [Talk to Us](/visualstudio/ide/feedback-options)

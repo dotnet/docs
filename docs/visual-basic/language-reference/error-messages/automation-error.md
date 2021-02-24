@@ -19,4 +19,4 @@ An error occurred while executing a method or getting or setting a property of a
 ## See also
 
 - [Error Types](../../programming-guide/language-features/error-types.md)
-- [Visual Studio feedback options](/visualstudio/ide/feedback-options)
+- [Talk to Us](/visualstudio/ide/feedback-options)

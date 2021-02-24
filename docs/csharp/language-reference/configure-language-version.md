@@ -74,7 +74,7 @@ To configure multiple projects, you can create a **Directory.Build.props** file 
 </Project>
 ```
 
-Builds in all subdirectories of the directory containing that file will use the preview C# version. For more information, see [Customize your build](/visualstudio/msbuild/customize-your-build).
+Builds in all subdirectories of the directory containing that file will use the preview C# version. For more information, see the article on [Customize your build](/visualstudio/msbuild/customize-your-build).
 
 ## C# language version reference
 
@@ -89,7 +89,7 @@ The following table shows all current C# language versions. Your compiler may no
 > csc -langversion:?
 > ```
 >
-> Querying the [-langversion](compiler-options/langversion-compiler-option.md) compile option like this prints something similar to the following:
+> Questioning the [-langversion](compiler-options/langversion-compiler-option.md) compile option like this, will print something similar to the following:
 >
 > ```CMD
 > Supported language versions:

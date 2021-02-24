@@ -58,4 +58,4 @@ The following web sites provide guidance and can help you find answers to common
 ## See also
 
 - [Get started with Visual Basic](index.md)
-- [Visual Studio feedback options](/visualstudio/ide/feedback-options)
+- [Talk to Us](/visualstudio/ide/feedback-options)

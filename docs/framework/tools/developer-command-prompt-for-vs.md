@@ -1,34 +1,41 @@
 ---
-title: Developer Command Prompt for Visual Studio
-description: Learn how to find and use the Developer Command Prompt for Visual Studio, which lets you use .NET tools more easily. It automatically sets specific environment variables.
-ms.date: 02/23/2021
+title: Developer command-line tools
+description: Learn how to find and use the Developer Command Prompt for Visual Studio, Developer PowerShell, and Visual Studio terminal, which let you use .NET and C++ tools more easily.
+ms.date: 02/24/2021
+ms.custom: contperf-fy21q3
 helpviewer_keywords:
-  - "command prompt, Windows SDK"
   - "Visual Studio command prompt"
   - "command prompt, Visual Studio"
-  - "SDK command prompt"
-  - "tools [.NET Framework], setting environment variables"
-  - "environment variables, setting for tools"
   - "developer command prompt"
+  - "developer PowerShell"
+  - "Visual Studio terminal"
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 ---
-# Developer Command Prompt for Visual Studio
+# Developer command-line tools
 
-Developer Command Prompt for Visual Studio is a command prompt that has specific environment variables set. It enables you to use command-line developer tools more easily. After opening Developer Command Prompt for Visual Studio, you can enter the commands for different utilities without having to know where they're located. The commands you can run from Developer Command Prompt include:
+Visual Studio 2019 includes three command-line tools for developers:
+
+- Developer Command Prompt for Visual Studio
+- Developer PowerShell
+- Visual Studio terminal
+
+All three of these tools have specific environment variables set that enable you to use command-line developer tools more easily. After opening one of these windows, you can enter the commands for different utilities without having to know where they're located. The commands you can run include:
 
 - [`MSBuild`](/visualstudio/msbuild/msbuild-command-line-reference), to build a project or solution.
-- [.NET CLI commands](../../core/tools/index.md), such as [`dotnet`](../../core/tools/dotnet.md) and [`dotnet run`](../../core/tools/dotnet-run.md).
-- [.NET Framework toolS](index.md), such as [`clrver`](clrver-exe-clr-version-tool.md) and [`ildasm`](ildasm-exe-il-disassembler.md).
+- [.NET Framework tools](index.md), such as [`clrver`](clrver-exe-clr-version-tool.md) and [`ildasm`](ildasm-exe-il-disassembler.md).
 - C/C++ compile tools, such as [`CL`](/cpp/build/reference/compiler-command-line-syntax) and [`NMAKE`](/cpp/build/reference/running-nmake).
 - Additional C/C++ build tools, such as [`LIB`](/cpp/build/reference/lib-reference) AND [`DUMPBIN`](/cpp/build/reference/dumpbin-reference).
+- [.NET CLI commands](../../core/tools/index.md), such as [`dotnet`](../../core/tools/dotnet.md) and [`dotnet run`](../../core/tools/dotnet-run.md). (These commands are available from a regular command prompt, too.)
 
-When you [open Developer Command Prompt from Visual Studio](#start-the-command-prompt-from-inside-visual-studio), it opens to the directory of your current solution. That makes it convenient to run commands on the solution or its projects.
+:::image type="content" source="media/developer-command-prompt-for-vs/command-prompt.png" alt-text="Developer Command Prompt for Visual Studio showing clrver tool":::
+
+When you open one of these windows from Visual Studio, it opens to the directory of your current solution (if you have a solution loaded). This behavior makes it convenient to run commands against the solution or its projects.
 
 ## Prerequisites
 
 - [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 
-## Find and open Developer Command Prompt
+## Developer Command Prompt
 
 There are a few ways you can open Developer Command Prompt for Visual Studio, including from Visual Studio, from the Windows Start menu, or by running the command to start Developer Command Prompt for Visual Studio.
 
@@ -80,12 +87,26 @@ If you have other SDKs installed, such as the [Windows 10 SDK](https://developer
 
 Usually, the shortcuts for the command prompts you have installed are placed at the **Start Menu** folder for Visual Studio, such as in *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools*. But if, for some reason, searching for the command prompt doesn't produce the expected results, you can try to manually locate the shortcut on your machine. Search for the name of the command prompt file, which is *VsDevCmd.bat*, or go to the Tools folder, such as *%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\Tools* (path changes according to your Visual Studio version, edition, and installation location).
 
-## Related tools
+Once you've located the command prompt file, open it using the following commands in a regular command prompt window (but change the directory to match your installation of Visual Studio):
 
-In additional to Developer Command Prompt, Visual Studio 2019 also includes two other related features:
+```cmd
+cd %ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\Tools
+VsDevCmd.bat
+```
 
-- [Developer PowerShell](https://devblogs.microsoft.com/visualstudio/the-powershell-you-know-and-love-now-with-a-side-of-visual-studio/), which you can open from the **Tools** > **Command Line** > **Developer PowerShell** menu.
-- An integrated [Terminal](https://devblogs.microsoft.com/visualstudio/say-hello-to-the-new-visual-studio-terminal/), which you can open from the **View** > **Terminal** menu.
+Or, enter the following command from the Windows **Run** dialog box:
+
+```cmd
+%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat"
+```
+
+## Developer PowerShell
+
+To open [Developer PowerShell](https://devblogs.microsoft.com/visualstudio/the-powershell-you-know-and-love-now-with-a-side-of-visual-studio/), choose **Tools** > **Command Line** > **Developer PowerShell** from the menu bar.
+
+## Visual Studio Terminal
+
+To open the integrated [Terminal](https://devblogs.microsoft.com/visualstudio/say-hello-to-the-new-visual-studio-terminal/) in Visual Studio, choose **View** > **Terminal** from the menu bar.
 
 ## See also
 

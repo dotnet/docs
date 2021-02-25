@@ -135,12 +135,12 @@ spec:
   type: state.redis
   version: v1
   metadata:
-    - name: redisHost
-      value: localhost:6379
-    - name: redisPassword
-      value: ""
-    - name: actorStateStore
-      value: "true"
+  - name: redisHost
+    value: localhost:6379
+  - name: redisPassword
+    value: ""
+  - name: actorStateStore
+    value: "true"
 ```
 
 > [!NOTE]
@@ -165,12 +165,12 @@ spec:
   type: state.redis
   version: v1
   metadata:
-    - name: redisHost
-      value: localhost:6379
-    - name: redisPassword
-      value: ""
-    - name: actorStateStore
-      value: "true"
+  - name: redisHost
+    value: localhost:6379
+  - name: redisPassword
+    value: ""
+  - name: actorStateStore
+    value: "true"
 ```
 
 > [!IMPORTANT]
@@ -188,14 +188,14 @@ spec:
   type: state.redis
   version: v1
   metadata:
-    - name: redisHost
-      value: localhost:6379
-    - name: redisPassword
-      value: ""
-    - name: actorStateStore
-      value: "true"
-    scopes:
-      - DaprCounter
+  - name: redisHost
+    value: localhost:6379
+  - name: redisPassword
+    value: ""
+  - name: actorStateStore
+    value: "true"
+  scopes:
+  - DaprCounter
 ```
 
 ## Build a multi-container Dapr application
@@ -531,7 +531,7 @@ In this chapter, you had an opportunity to *test drive* Dapr. Using the Dapr .NE
 
 The first example was a simple, stateful, .NET Console application that used the Dapr state management building block.
 
-The second example involved a multi-container application running in Docker. By using Visual Studio with Docker Compose, you experienced the familiar _F5 debugging experience_ available across all .NET apps.
+The second example involved a multi-container application running in Docker. By using Visual Studio with Docker Compose, you experienced the familiar *F5 debugging experience* available across all .NET apps.
 
 You also got a closer look at Dapr component configuration files. They configure the actual infrastructure implementation used by the Dapr building blocks. You can use namespaces and scopes to restrict component access to particular environments and applications.
 

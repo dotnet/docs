@@ -2304,10 +2304,21 @@ items:
       href: ../core/tools/cli-msbuild-architecture.md
     - name: Migrate from DNX
       href: ../core/migration/from-dnx.md
+
   - name: Port from .NET Framework
     items:
     - name: Overview
       href: ../core/porting/index.md
+    - name: .NET Upgrade Assistant tool
+      items:
+      - name: Overview
+        href: ../core/porting/upgrade-assistant-overview.md
+      - name: Windows Presentation Foundation
+        href: ../core/porting/upgrade-assistant-wpf-framework
+      - name: Windows Forms
+        href: ../core/porting/upgrade-assistant-winforms-framework
+      - name: ASP.NET Core
+        href: ../core/porting/upgrade-assistant-aspnetmvc
     - name: Analyze third-party dependencies
       href: ../core/porting/third-party-deps.md
     - name: Port libraries

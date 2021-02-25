@@ -61,7 +61,7 @@ If you define properties by using standard property syntax but omit the access m
 
 A record type is not necessarily immutable. You can declare properties with `set` accessors and fields that aren't `readonly`. But while records can be mutable, they make it easier to create immutable data models.
 
-Immutability can be useful when you need a data-centric type to be thread-safe or you're depending on a hash code remaining the same in a hash table. Immutability isn't appropriate for all data scenarios, however. Entity Framework Core 5, for example, doesn't support updating with immutable entity types.
+Immutability can be useful when you need a data-centric type to be thread-safe or you're depending on a hash code remaining the same in a hash table. Immutability isn't appropriate for all data scenarios, however. [Entity Framework Core](/ef/core/), for example, doesn't support updating with immutable entity types.
 
 Init-only properties, whether created from positional parameters or by specifying `init` accessors, have *shallow immutability*. After initialization, you can't change the value of value-type properties or the reference of reference-type properties. However, the data that a reference-type property refers to can be changed. The following example shows that the content of a reference-type immutable property (an array in this case) is mutable:
 
@@ -71,7 +71,11 @@ The features unique to record types are implemented by compiler-synthesized meth
 
 ## Value equality
 
-Value equality means that two variables of a record type are equal if the types match and all property and field values match. For other reference types, equality means identity. That is, two variables of a reference type are equal if they refer to the same object. The following example illustrates value equality of record types:
+Value equality means that two variables of a record type are equal if the types match and all property and field values match. For other reference types, equality means identity. That is, two variables of a reference type are equal if they refer to the same object.
+
+Reference equality is required for some data models. For example, [Entity Framework Core](/ef/core/) depends on reference equality to ensure that it uses only one instance of an entity type for what is conceptually one entity. For this reason, record types aren't appropriate for use as entity types in Entity Framework Core.
+
+The following example illustrates value equality of record types:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="Equality":::
 

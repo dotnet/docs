@@ -331,7 +331,7 @@ Now, you'll configure communication between the services using Dapr [service inv
 
 In the final part of this example, you'll add container support and run the solution using Docker Compose.
 
-1.Right-click the `DaprFrontEnd` project, and choose **Add** > **Container Orchestrator Support**. The **Add Container Orchestrator Support** dialog appears:
+1. Right-click the `DaprFrontEnd` project, and choose **Add** > **Container Orchestrator Support**. The **Add Container Orchestrator Support** dialog appears:
 
     ![Screenshot of adding container orchestrator support](./media/getting-started/multicontainer-addorchestrator.png)
 
@@ -416,7 +416,7 @@ In the final part of this example, you'll add container support and run the solu
     FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
     WORKDIR /app
     EXPOSE 80
-    
+
     FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
     WORKDIR /src
     COPY ["DaprBackEnd/DaprBackEnd.csproj", "DaprBackEnd/"]
@@ -424,10 +424,10 @@ In the final part of this example, you'll add container support and run the solu
     COPY . .
     WORKDIR "/src/DaprBackEnd"
     RUN dotnet build "DaprBackEnd.csproj" -c Release -o /app/build
-    
+
     FROM build AS publish
     RUN dotnet publish "DaprBackEnd.csproj" -c Release -o /app/publish
-    
+
     FROM base AS final
     WORKDIR /app
     COPY --from=publish /app/publish .
@@ -459,14 +459,14 @@ In the final part of this example, you'll add container support and run the solu
 
     ```yaml
     version: '3.4'
-    
+
     services:
       daprfrontend:
         image: ${DOCKER_REGISTRY-}daprfrontend
         build:
           context: .
           dockerfile: DaprFrontEnd/Dockerfile
-    
+
       daprbackend:
         image: ${DOCKER_REGISTRY-}daprbackend
         build:
@@ -478,7 +478,7 @@ In the final part of this example, you'll add container support and run the solu
 
     ```yaml
     version: '3.4'
-    
+
     services:
       daprfrontend:
         image: ${DOCKER_REGISTRY-}daprfrontend
@@ -486,15 +486,15 @@ In the final part of this example, you'll add container support and run the solu
           context: .
           dockerfile: DaprFrontEnd/Dockerfile
         ports:
-          - "51000:50001" 
-    
+          - "51000:50001"
+
       daprfrontend-dapr:
         image: "daprio/daprd:latest"
         command: [ "./daprd", "-app-id", "daprfrontend", "-app-port", "80" ]
         depends_on:
           - daprfrontend
         network_mode: "service:daprfrontend"
-    
+
       daprbackend:
         image: ${DOCKER_REGISTRY-}daprbackend
         build:
@@ -502,7 +502,7 @@ In the final part of this example, you'll add container support and run the solu
           dockerfile: DaprBackEnd/Dockerfile
         ports:
           - "52000:50001"
-    
+
       daprbackend-dapr:
         image: "daprio/daprd:latest"
         command: [ "./daprd", "-app-id", "daprbackend", "-app-port", "80" ]

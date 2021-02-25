@@ -7,7 +7,7 @@ ms.date: 02/25/2021
 
 # Get started with Dapr
 
-In the first two chapters, you learned basic concepts about Dapr. It's time to take it for a _test drive_. This chapter will guide you through preparing your local development environment and building two Dapr .NET applications.
+In the first two chapters, you learned basic concepts about Dapr. It's time to take it for a *test drive*. This chapter will guide you through preparing your local development environment and building two Dapr .NET applications.
 
 ## Install Dapr into your local environment
 
@@ -18,7 +18,7 @@ You'll start by installing Dapr on your development computer. Once complete, you
 1. Install [Docker Desktop](https://docs.docker.com/get-docker/). If you're running on Windows, make sure that **Docker Desktop for Windows** is configured to use Linux containers.
 
 > [!NOTE]
-> By default, Dapr uses Docker containers to provide you the best out-of-the-box experience. To run Dapr outside of Docker, you can skip this step and [execute a _slim_ initialization](https://docs.dapr.io/operations/hosting/self-hosted/self-hosted-no-docker/). The examples in this chapter require you use Docker containers.
+> By default, Dapr uses Docker containers to provide you the best out-of-the-box experience. To run Dapr outside of Docker, you can skip this step and [execute a *slim* initialization](https://docs.dapr.io/operations/hosting/self-hosted/self-hosted-no-docker/). The examples in this chapter require you use Docker containers.
 
 1. [Initialize Dapr](https://docs.dapr.io/getting-started/install-dapr/). This step sets up your development environment by installing the latest Dapr binaries and container images.
 
@@ -107,7 +107,7 @@ You can invoke Dapr APIs across any development platform using Dapr's native sup
 1. The Dapr CLI `run` command starts the application. It invokes the underlying Dapr runtime and enables both the application and Dapr sidecar to run together. If you omit the `app-id`, Dapr will generate a unique name for the application. The final segment of the command, `dotnet run`, instructs the Dapr runtime to run the .NET core application.
 
     > [!IMPORTANT]
-    > Care must be taken to always pass an explicit `app-id` parameter when consuming the state management building block. The block uses the application id value as a _prefix_ for its state key for each key/value pair. If the application id changes, you can no longer access the previously stored state.
+    > Care must be taken to always pass an explicit `app-id` parameter when consuming the state management building block. The block uses the application id value as a *prefix* for its state key for each key/value pair. If the application id changes, you can no longer access the previously stored state.
 
     Now run the application with the following command:
 
@@ -130,17 +130,17 @@ When you first initialized Dapr for your local environment, it automatically pro
 apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
-    name: statestore
+  name: statestore
 spec:
-    type: state.redis
-    version: v1
-    metadata:
-        - name: redisHost
-          value: localhost:6379
-        - name: redisPassword
-          value: ""
-        - name: actorStateStore
-          value: "true"
+  type: state.redis
+  version: v1
+  metadata:
+    - name: redisHost
+      value: localhost:6379
+    - name: redisPassword
+      value: ""
+    - name: actorStateStore
+      value: "true"
 ```
 
 > [!NOTE]
@@ -159,18 +159,18 @@ To do so, you could define a `namespace` for the production environment. You mig
 apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
-    name: statestore
-    namespace: production
+  name: statestore
+  namespace: production
 spec:
-    type: state.redis
-    version: v1
-    metadata:
-        - name: redisHost
-          value: localhost:6379
-        - name: redisPassword
-          value: ""
-        - name: actorStateStore
-          value: "true"
+  type: state.redis
+  version: v1
+  metadata:
+    - name: redisHost
+      value: localhost:6379
+    - name: redisPassword
+      value: ""
+    - name: actorStateStore
+      value: "true"
 ```
 
 > [!IMPORTANT]
@@ -182,20 +182,20 @@ If needed, you could further restrict a component to a particular application. W
 apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
-    name: statestore
-    namespace: production
+  name: statestore
+  namespace: production
 spec:
-    type: state.redis
-    version: v1
-    metadata:
-        - name: redisHost
-          value: localhost:6379
-        - name: redisPassword
-          value: ""
-        - name: actorStateStore
-          value: "true"
+  type: state.redis
+  version: v1
+  metadata:
+    - name: redisHost
+      value: localhost:6379
+    - name: redisPassword
+      value: ""
+    - name: actorStateStore
+      value: "true"
     scopes:
-        - DaprCounter
+      - DaprCounter
 ```
 
 ## Build a multi-container Dapr application
@@ -239,7 +239,7 @@ Now, you'll configure communication between the services using Dapr [service inv
     > [!NOTE]
     > If you're targeting a version of `Dapr.AspNetCore` that is in prerelease, you need to specify the `-Prerelease` flag.
 
-1. In the `DaprFrontEnd` project, open the _Startup.cs_ file, and replace the `ConfigureServices` method with the following code:
+1. In the `DaprFrontEnd` project, open the *Startup.cs* file, and replace the `ConfigureServices` method with the following code:
 
     ```csharp
     // This method gets called by the runtime. Use this method to add services to the container.
@@ -252,7 +252,7 @@ Now, you'll configure communication between the services using Dapr [service inv
 
     The call to `AddDapr` registers the `DaprClient` class with the ASP.NET Core dependency injection system. You'll use the `DaprClient` class later on to communicate with the Dapr sidecar.
 
-1. Add a new C# class file named _WeatherForecast_ to the `DaprFrontEnd` project:
+1. Add a new C# class file named *WeatherForecast* to the `DaprFrontEnd` project:
 
     ```csharp
     using System;
@@ -272,7 +272,7 @@ Now, you'll configure communication between the services using Dapr [service inv
     }
     ```
 
-1. Open the _Index.cshtml.cs_ file in the _Pages_ folder, and replace its contents with the following code:
+1. Open the *Index.cshtml.cs* file in the *Pages* folder, and replace its contents with the following code:
 
     ```csharp
     using System;
@@ -308,7 +308,7 @@ Now, you'll configure communication between the services using Dapr [service inv
 
     You add Dapr capabilities into the web app by injecting the `DaprClient` class into `IndexModel` constructor. In the `OnGet` method, you call the API service with the Dapr service invocation building block. The `OnGet` method is invoked whenever a user visits the home page. You use the `DaprClient.InvokeMethodAsync` method to invoke the `weatherforecast` method of the `daprbackend` service. You'll configure the web API to use `daprbackend` as its application ID later on when configuring it to run with Dapr. Finally, the service response is saved in view data.
 
-1. Replace the contents of the _Index.cshtml_ file in the _Pages_ folder, with the following code. It displays the weather forecasts stored in the view data to the user:
+1. Replace the contents of the *Index.cshtml* file in the *Pages* folder, with the following code. It displays the weather forecasts stored in the view data to the user:
 
     ```html
     @page
@@ -341,28 +341,28 @@ In the final part of this example, you'll add container support and run the solu
 
     ![Screenshot of selecting Docker target OS](./media/getting-started/multicontainer-targetos.png)
 
-    Visual Studio creates a _docker-compose.yml_ file and a _.dockerignore_ file in the **docker-compose** folder in the solution:
+    Visual Studio creates a *docker-compose.yml*file and a *.dockerignore* file in the **docker-compose** folder in the solution:
 
     ![Screenshot of the docker-compose project](./media/getting-started/multicontainer-dockersolution.png)
 
-    The _docker-compose.yml_ file has the following content:
+    The *docker-compose.yml* file has the following content:
 
     ```yaml
     version: "3.4"
 
     services:
-        daprfrontend:
-            image: ${DOCKER_REGISTRY-}daprfrontend
-            build:
-                context: .
-                dockerfile: DaprFrontEnd/Dockerfile
+      daprfrontend:
+        image: ${DOCKER_REGISTRY-}daprfrontend
+        build:
+          context: .
+          dockerfile: DaprFrontEnd/Dockerfile
     ```
 
-    The _.dockerignore_ file contains file types and extensions that you don't want Docker to include in the container. These files are associated with the development environment and source control and not the app or service you're deploying.
+    The *.dockerignore* file contains file types and extensions that you don't want Docker to include in the container. These files are associated with the development environment and source control and not the app or service you're deploying.
 
-    In the root of the _DaprFrontEnd_ project directory, a new _Dockerfile_ was created. A _Dockerfile_ is a sequence of commands that are used to build an image. For more information, see [Dockerfile reference](https://docs.docker.com/engine/reference/builder).
+    In the root of the *DaprFrontEnd* project directory, a new *Dockerfile* was created. A *Dockerfile* is a sequence of commands that are used to build an image. For more information, see [Dockerfile reference](https://docs.docker.com/engine/reference/builder).
 
-    The _Dockerfile_ contains the following:
+    The *Dockerfile* contains the YAML:
 
     ```yml
     FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
@@ -387,30 +387,30 @@ In the final part of this example, you'll add container support and run the solu
     ENTRYPOINT ["dotnet", "DaprFrontEnd.dll"]
     ```
 
-    The preceding _Dockerfile_ sequentially performs the following steps when invoked:
+    The preceding *Dockerfile* sequentially performs the following steps when invoked:
 
     1. Pulls the `mcr.microsoft.com/dotnet/aspnet:3.1` image and names it `base`.
-    1. Sets the working directory to _/app_.
+    1. Sets the working directory to */app*.
     1. Exposes port `80` and `443`.
     1. Pulls the `mcr.microsoft.com/dotnet/sdk:3.1` image and names it `build`.
-    1. Sets the working directory to _/src_.
-    1. Copies the _DaprFrontEnd/DaprFrontEnd.csproj_ to a new directory named _DaprFrontEnd/_.
+    1. Sets the working directory to */src*.
+    1. Copies the _DaprFrontEnd/DaprFrontEnd.csproj_ to a new directory named *DaprFrontEnd/*.
     1. Calls [`dotnet restore`](../../core/tools/dotnet-restore.md) on the project.
     1. Copies everything from the root directory into the image's root.
     1. Sets the working directory to _/src/DaprFrontEnd_.
     1. Calls [`dotnet build`](../../core/tools/dotnet-build.md) on the project.
-        - Targeting the _Release_ configuration and outputs to */app/build*.
+        - Targeting the **Release** configuration and outputs to */app/build*.
     1. Initializes a new build stage from the existing `build` base image and names it `publish`.
     1. Calls `dotnet publish` on the project.
-        - Targeting the _Release_ configuration and outputs to */app/publish*.
+        - Targeting the **Release** configuration and outputs to */app/publish*.
     1. Initializes a new build stage from the existing `publish` base image and names it `final`.
-    1. Sets the working directory to _/app_.
+    1. Sets the working directory to */app*.
     1. Copies the `/app/publish` directory from the `publish` image into the root of the `final` image.
     1. Sets the entry point as the image to `dotnet` and passes the `DaprFrontEnd.dll` as an arg.
 
 1. In the `DaprBackEnd` web API project, right-click on the project node, and choose **Add** > **Container Orchestrator Support**. Choose **Docker Compose**, and then select **Linux** again as the target OS.
 
-    In the root of the _DaprBackEnd_ project directory, a new _Dockerfile_ was created. The _Dockerfile_ contains the following:
+    In the root of the _DaprBackEnd_ project directory, a new *Dockerfile* was created. The *Dockerfile* contains the following YAML:
 
     ```yml
     FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
@@ -434,81 +434,81 @@ In the final part of this example, you'll add container support and run the solu
     ENTRYPOINT ["dotnet", "DaprBackEnd.dll"]
     ```
 
-    The preceding _Dockerfile_ sequentially performs the following steps when invoked:
+    The preceding *Dockerfile* sequentially performs the following steps when invoked:
 
     1. Pulls the `mcr.microsoft.com/dotnet/aspnet:3.1` image and names it `base`.
-    1. Sets the working directory to _/app_.
+    1. Sets the working directory to */app*.
     1. Exposes port `80`.
     1. Pulls the `mcr.microsoft.com/dotnet/sdk:3.1` image and names it `build`.
-    1. Sets the working directory to _/src_.
+    1. Sets the working directory to */src*.
     1. Copies the _DaprBackEnd/DaprBackEnd.csproj_ to a new directory named _DaprBackEnd/_.
     1. Calls [`dotnet restore`](../../core/tools/dotnet-restore.md) on the project.
     1. Copies everything from the root directory into the image's root.
     1. Sets the working directory to _/src/DaprBackEnd_.
     1. Calls [`dotnet build`](../../core/tools/dotnet-build.md) on the project.
-        - Targeting the _Release_ configuration and outputs to */app/build*.
+        - Targeting the **Release** configuration and outputs to */app/build*.
     1. Initializes a new build stage from the existing `build` base image and names it `publish`.
     1. Calls `dotnet publish` on the project.
-        - Targeting the _Release_ configuration and outputs to */app/publish*.
+        - Targeting the **Release** configuration and outputs to */app/publish*.
     1. Initializes a new build stage from the existing `publish` base image and names it `final`.
-    1. Sets the working directory to _/app_.
+    1. Sets the working directory to */app*.
     1. Copies the `/app/publish` directory from the `publish` image into the root of the `final` image.
     1. Sets the entry point as the image to `dotnet` and passes the `DaprBackEnd.dll` as an arg.
 
-    Open the _docker-compose.yml_ file again and examine its contents. Visual Studio has updated the Docker Compose file. Now both services are included:
+    Open the *docker-compose.yml* file again and examine its contents. Visual Studio has updated the **Docker Compose** file. Now both services are included:
 
     ```yaml
-    version: "3.4"
-
+    version: '3.4'
+    
     services:
-        daprfrontend:
-            image: ${DOCKER_REGISTRY-}daprfrontend
-            build:
-                context: .
-                dockerfile: DaprFrontEnd/Dockerfile
-
-        daprbackend:
-            image: ${DOCKER_REGISTRY-}daprbackend
-            build:
-                context: .
-                dockerfile: DaprBackEnd/Dockerfile
+      daprfrontend:
+        image: ${DOCKER_REGISTRY-}daprfrontend
+        build:
+          context: .
+          dockerfile: DaprFrontEnd/Dockerfile
+    
+      daprbackend:
+        image: ${DOCKER_REGISTRY-}daprbackend
+        build:
+          context: .
+          dockerfile: DaprBackEnd/Dockerfile
     ```
 
-1. To use Dapr building blocks from inside a containerized application, you'll need to add the Dapr sidecars containers to your Compose file. Carefully update the content of the _docker-compose.yml_ file to match the following example. Pay close attention to the formatting and spacing and don't use tabs.
+1. To use Dapr building blocks from inside a containerized application, you'll need to add the Dapr sidecars containers to your Compose file. Carefully update the content of the *docker-compose.yml* file to match the following example. Pay close attention to the formatting and spacing and don't use tabs.
 
     ```yaml
-    version: "3.4"
-
+    version: '3.4'
+    
     services:
-        daprfrontend:
-            image: ${DOCKER_REGISTRY-}daprfrontend
-            build:
-                context: .
-                dockerfile: DaprFrontEnd/Dockerfile
-            ports:
-                - "51000:50001"
-
-        daprfrontend-dapr:
-            image: "daprio/daprd:latest"
-            command: ["./daprd", "-app-id", "daprfrontend", "-app-port", "80"]
-            depends_on:
-                - daprfrontend
-            network_mode: "service:daprfrontend"
-
-        daprbackend:
-            image: ${DOCKER_REGISTRY-}daprbackend
-            build:
-                context: .
-                dockerfile: DaprBackEnd/Dockerfile
-            ports:
-                - "52000:50001"
-
-        daprbackend-dapr:
-            image: "daprio/daprd:latest"
-            command: ["./daprd", "-app-id", "daprbackend", "-app-port", "80"]
-            depends_on:
-                - daprfrontend
-            network_mode: "service:daprbackend"
+      daprfrontend:
+        image: ${DOCKER_REGISTRY-}daprfrontend
+        build:
+          context: .
+          dockerfile: DaprFrontEnd/Dockerfile
+        ports:
+          - "51000:50001" 
+    
+      daprfrontend-dapr:
+        image: "daprio/daprd:latest"
+        command: [ "./daprd", "-app-id", "daprfrontend", "-app-port", "80" ]
+        depends_on:
+          - daprfrontend
+        network_mode: "service:daprfrontend"
+    
+      daprbackend:
+        image: ${DOCKER_REGISTRY-}daprbackend
+        build:
+          context: .
+          dockerfile: DaprBackEnd/Dockerfile
+        ports:
+          - "52000:50001"
+    
+      daprbackend-dapr:
+        image: "daprio/daprd:latest"
+        command: [ "./daprd", "-app-id", "daprbackend", "-app-port", "80" ]
+        depends_on:
+          - daprfrontend
+        network_mode: "service:daprbackend"
     ```
 
     In the updated file, we've added `daprfrontend-dapr` and `daprbackend-dapr` sidecars for the `daprfrontend` and `daprbackend` services respectively. In the updated file, pay close attention to the following changes:
@@ -517,7 +517,7 @@ In the final part of this example, you'll add container support and run the solu
     - Each service defined in the Compose file has its own network namespace for network isolation purposes. The sidecars use `network_mode: "service:..."` to ensure they run in the same network namespace as the application. Doing so allows the sidecar and the application to communicate using `localhost`.
     - The ports on which the Dapr sidecars are listening for gRPC communication (by default 50001) must be exposed to allow the sidecars to communicate with each other.
 
-1.  Run the solution (<kbd>F5</kbd> or <kbd>Ctrl+F5</kbd>) to verify that it works as expected. If everything is configured correctly, you should see the weather forecast data:
+1. Run the solution (<kbd>F5</kbd> or <kbd>Ctrl+F5</kbd>) to verify that it works as expected. If everything is configured correctly, you should see the weather forecast data:
 
     ![Screenshot of the final solution showing the weather forecast data](./media/getting-started/multicontainer-result.png)
 
@@ -527,7 +527,7 @@ In the final part of this example, you'll add container support and run the solu
 
 ## Summary
 
-In this chapter, you had an opportunity to _test drive_ Dapr. Using the Dapr .NET SDK, you saw how Dapr integrates with the .NET application platform.
+In this chapter, you had an opportunity to *test drive* Dapr. Using the Dapr .NET SDK, you saw how Dapr integrates with the .NET application platform.
 
 The first example was a simple, stateful, .NET Console application that used the Dapr state management building block.
 
@@ -539,7 +539,9 @@ In the upcoming chapters, you'll dive deep into the building blocks offered by D
 
 ### References
 
--   [Dapr documentation - Getting started](https://docs.dapr.io/getting-started)
--   [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr)
+- [Dapr documentation - Getting started](https://docs.dapr.io/getting-started)
+- [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr)
 
-> [!div class="step-by-step"] > [Previous](dapr-at-20000-feet.md) > [Next](reference-application.md)
+> [!div class="step-by-step"]
+> [Previous](dapr-at-20000-feet.md)
+> [Next](reference-application.md)

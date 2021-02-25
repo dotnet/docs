@@ -61,7 +61,7 @@ If you define properties by using standard property syntax but omit the access m
 
 ## Immutability
 
-A record type is not necessarily immutable. You can declare properties with `set` accessors and fields that aren't `readonly`. But while records can be mutable, they are primarily intended to support immutable data models.
+A record type is not necessarily immutable. You can declare properties with `set` accessors and fields that aren't `readonly`. But while records can be mutable, they make it easier to create immutable data models.
 
 Immutability can be useful when you need a data-centric type to be thread-safe or you're depending on a hash code remaining the same in a hash table. Immutability isn't appropriate for all data scenarios, however. Entity Framework Core 5, for example, doesn't support updating with immutable entity types.
 

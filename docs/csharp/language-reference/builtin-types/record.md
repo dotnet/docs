@@ -170,7 +170,7 @@ You can provide your own implementation of the `PrintMembers` method. If you do 
 
 * For a `sealed` record that derives from `object` (doesn't declare a base record): `private bool PrintMembers(StringBuilder builder)`;
 * For a `sealed` record that derives from another record: `protected sealed override bool PrintMembers(StringBuilder builder)`;
-* For a record that isn't `sealed` and derives from object (doesn't declare a base record): `protected virtual bool PrintMembers(StringBuilder builder);`
+* For a record that isn't `sealed` and derives from object: `protected virtual bool PrintMembers(StringBuilder builder);`
 * For a record that isn't `sealed` and derives from another record: `protected override bool PrintMembers(StringBuilder builder);`
 
 Here is an example of code that replaces the synthesized `PrintMembers` methods, one for a record type that derives from object, and one for a record type that derives from another record:

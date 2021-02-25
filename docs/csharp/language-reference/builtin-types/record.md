@@ -19,7 +19,9 @@ You can also create record types with mutable properties and fields:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="MutableRecord":::
 
-While records can be mutable, they are primarily intended for supporting immutable data models. The record type offers the following features:
+Positional records create immutable data models. You can add additional properties that are mutable to positional records. You can control the mutability of any property in non-positional record types.
+
+ The record type offers the following features:
 
 * [Concise syntax for creating a reference type with immutable properties](#positional-syntax-for-property-definition)
 * Built-in behavior useful for a data-centric reference type:

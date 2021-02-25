@@ -7,7 +7,6 @@ f1_keywords:
 helpviewer_keywords: 
   - "record keyword [C#]"
   - "record type [C#]"
-  - "record type [C#]"
 ---
 # Records (C# reference)
 

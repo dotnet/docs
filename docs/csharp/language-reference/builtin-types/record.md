@@ -81,9 +81,7 @@ To implement value equality, the compiler synthesizes the following methods:
 
   This method is used as the basis for the <xref:System.Object.Equals(System.Object,System.Object)?displayProperty=nameWithType> static method when both parameters are non-null.
 
-* A virtual `Equals` method whose parameter is the record type.
-
-  The record type implements <xref:System.IEquatable%601> where `T` is the record type.
+* A virtual `Equals` method whose parameter is the record type. This method implements <xref:System.IEquatable%601>.
 
 * An override of <xref:System.Object.GetHashCode?displayProperty=nameWithType>.
 

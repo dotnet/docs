@@ -404,6 +404,9 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 </PropertyGroup>
 ```
 
+> [!NOTE]
+> This property applies specifically to the built-in analyzers in the .NET 5+ SDK. It should not be used when you install a NuGet code analysis package.
+
 ### EnforceCodeStyleInBuild
 
 > [!NOTE]

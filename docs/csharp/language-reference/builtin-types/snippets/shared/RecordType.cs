@@ -345,11 +345,11 @@ namespace builtin_types
                 Point p2 = p1 with { X = 5, Y = 6, Zbase = 7 }; // Can't set Name or Zderived
                 Console.WriteLine(p2 is NamedPoint);  // output: True
                 Console.WriteLine(p2);
-                // output: NamedPoint { X = 5, Y = 6, Z1 = 7, Name = A, Zderived = 4 }
+                // output: NamedPoint { X = 5, Y = 6, Zbase = 7, Name = A, Zderived = 4 }
 
                 Point p3 = (NamedPoint)p1 with { Name = "B", X = 5, Y = 6, Zbase = 7, Zderived = 8 };
                 Console.WriteLine(p3);
-                // output: NamedPoint { X = 5, Y = 6, Z1 = 7, Name = B, Zderived = 8 }
+                // output: NamedPoint { X = 5, Y = 6, Zbase = 7, Name = B, Zderived = 8 }
             }
             // </WithExpressionInheritance>
         }

@@ -85,7 +85,7 @@ To implement value equality, the compiler synthesizes the following methods:
 
 * A virtual `Equals` method whose parameter is the record type.
 
-  The record type implements <xref:System.IEquatable%601>
+  The record type implements <xref:System.IEquatable%601> where `T` is the record type.
 
 * An override of <xref:System.Object.GetHashCode?displayProperty=nameWithType>.
 

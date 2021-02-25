@@ -123,7 +123,7 @@ For reference types, the type name of the object that the property refers to is 
 Person { FirstName = Nancy, LastName = Davolio, ChildNames = System.String[] } 
 ```
 
-To implement this feature, the compiler synthesizes a `PrintMembers` method and a <xref:System.Object.ToString%2A> override.
+To implement this feature, the compiler synthesizes a virtual `PrintMembers` method and a <xref:System.Object.ToString%2A> override.
 The `ToString` override creates a <xref:System.Text.StringBuilder> object with the type name followed by an opening bracket. It calls `PrintMembers` to add property names and values, then adds the closing bracket. The following example shows code similar to what the synthesized override contains:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="ToStringOverrideDefault":::

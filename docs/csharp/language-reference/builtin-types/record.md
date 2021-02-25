@@ -179,7 +179,7 @@ Here is an example of code that replaces the synthesized `PrintMembers` methods,
 
 ### Deconstructor behavior in derived records
 
-The `Deconstructor` method of a derived record returns the values of all positional properties of the compile-time type. If the variable type is a base record, only the base record properties are deconstructed unless the object is cast to the derived type. The following example demonstrates calling a deconstructor on a derived record.
+The `Deconstruct` method of a derived record returns the values of all positional properties of the compile-time type. If the variable type is a base record, only the base record properties are deconstructed unless the object is cast to the derived type. The following example demonstrates calling a deconstructor on a derived record.
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="DeconstructorInheritance":::
 

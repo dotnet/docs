@@ -1352,23 +1352,25 @@ items:
       href: language-reference/preprocessor-directives/preprocessor-pragma-checksum.md
   - name: Compiler options
     items:
-    - name: Overview
+    - name: Setting options
       displayName: compiler options
       href: language-reference/compiler-options/index.md
-    - name: Optimizations
-      displayName: FileAlignment, filealigh, Optimize, optimize
-      href: language-reference/compiler-options/optimizations.md
-    - name: Control Output
+    - name: Output options
       displayName: Deterministic, DocumentationFile, OutputPath
       href: language-reference/compiler-options/output.md
-## Output
-## Assemblies
-## Debugging / Error checking
-## Preprocessor
+    - name: Input options
+      displayName: Reference, AddModules
+      href: language-reference/compiler-options/input.md
+    - name: Optimization options
+      displayName: FileAlignment, filealigh, Optimize, optimize
+      href: language-reference/compiler-options/optimizations.md
 ## Resources
-## Miscellaneous (try to remove)
-## Obsolete
-
+## Code Generation
+## Errors and Warnings
+## Language
+## Security
+## Miscellaneous
+## Advanced
 
     - name: C# Compiler Options Listed by Category
       href: language-reference/compiler-options/listed-by-category.md
@@ -1377,8 +1379,6 @@ items:
       items:
       - name: "@"
         href: language-reference/compiler-options/response-file-compiler-option.md
-      - name: -addmodule
-        href: language-reference/compiler-options/addmodule-compiler-option.md
       - name: -appconfig
         href: language-reference/compiler-options/appconfig-compiler-option.md
       - name: -baseaddress
@@ -1435,8 +1435,6 @@ items:
         href: language-reference/compiler-options/publicsign-compiler-option.md
       - name: -recurse
         href: language-reference/compiler-options/recurse-compiler-option.md
-      - name: -reference
-        href: language-reference/compiler-options/reference-compiler-option.md
       - name: -resource
         href: language-reference/compiler-options/resource-compiler-option.md
       - name: -subsystemversion

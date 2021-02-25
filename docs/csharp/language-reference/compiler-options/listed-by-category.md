@@ -17,15 +17,11 @@ The following compiler options are sorted by category. For an alphabetical list,
 
 |Option|Purpose|
 |------------|-------------|
-|[-addmodule](addmodule-compiler-option.md)|Specifies one or more modules to be part of this assembly.|
 |[-delaysign](delaysign-compiler-option.md)|Instructs the compiler to add the public key but to leave the assembly unsigned.|
 |[-keycontainer](keycontainer-compiler-option.md)|Specifies the name of the cryptographic key container.|
 |[-keyfile](keyfile-compiler-option.md)|Specifies the filename containing the cryptographic key.|
 |[-lib](lib-compiler-option.md)|Specifies the location of assemblies referenced by means of [-reference](reference-compiler-option.md).|
 |[-nostdlib](nostdlib-compiler-option.md)|Instructs the compiler not to import the standard library (mscorlib.dll).|
-|[-reference](reference-compiler-option.md)|Imports metadata from a file that contains an assembly.|
-|-analyzer|Run the analyzers from this assembly (Short form: /a)|
-|-additionalfile|Names additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings.|
 |-embed|Embed all source files in the PDB.|
 |-embed:\<file list>|Embed specific files in the PDB.|
 
@@ -54,7 +50,6 @@ The following compiler options are sorted by category. For an alphabetical list,
 
 |Option|Purpose|
 |------------|-------------|
-|[-link](link-compiler-option.md)|Makes COM type information in specified assemblies available to the project.|
 |[-linkresource](linkresource-compiler-option.md)|Creates a link to a managed resource.|
 |[-resource](resource-compiler-option.md)|Embeds a .NET resource into the output file.|
 |[-win32icon](win32icon-compiler-option.md)|Specifies an .ico file to insert into the output file.|
@@ -74,7 +69,6 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[-main](main-compiler-option.md)|Specifies the location of the **Main** method.|
 |[-noconfig](noconfig-compiler-option.md)|Instructs the compiler not to compile with csc.rsp.|
 |[-nologo](nologo-compiler-option.md)|Suppresses compiler banner information.|
-|[-recurse](recurse-compiler-option.md)|Searches subdirectories for source files to compile.|
 |[-subsystemversion](subsystemversion-compiler-option.md)|Specifies the minimum version of the subsystem that the executable file can use.|
 |[-unsafe](unsafe-compiler-option.md)|Enables compilation of code that uses the [unsafe](../keywords/unsafe.md) keyword.|
 |[-utf8output](utf8output-compiler-option.md)|Displays compiler output using UTF-8 encoding.|
@@ -88,6 +82,10 @@ The following compiler options are sorted by category. For an alphabetical list,
 |-incremental|Enables incremental compilation.|
 |[-preferreduilang](preferreduilang-compiler-option.md)|OBSOLETE Specify a language for compiler output.|
 |[-publicsign](publicsign-compiler-option.md)|Apply a public key without signing the assembly, but set the bit in the assembly indicating the assembly is signed.|
+|[-recurse](recurse-compiler-option.md)|Searches subdirectories for source files to compile. (Listed in input section in Roslyn repo)|
+|[-link](link-compiler-option.md)|Makes COM type information in specified assemblies available to the project. (Listed in the input section of the roslyn repo)|
+|-analyzer|Run the analyzers from this assembly (Short form: /a)  |
+|-additionalfile|Names additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings. (Listed in the input section on the roslyn repo)|
 
 ## See also
 

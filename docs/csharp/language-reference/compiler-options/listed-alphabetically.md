@@ -19,7 +19,6 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[@](response-file-compiler-option.md)|Reads a response file for more options.|
 |[-?](help-compiler-option.md)|Displays a usage message to stdout.|
 |-additionalfile|Names additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings.|
-|[-addmodule](addmodule-compiler-option.md)|Links the specified modules into this assembly|
 |-analyzer|Run the analyzers from this assembly (Short form: -a)|
 |[-appconfig](appconfig-compiler-option.md)|Specifies the location of app.config at assembly binding time.|
 |[-baseaddress](baseaddress-compiler-option.md)|Specifies the base address for the library to be built.|
@@ -56,7 +55,6 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-preferreduilang](preferreduilang-compiler-option.md)|Specifies the language to be used for compiler output.|
 |[-publicsign](publicsign-compiler-option.md)|Apply a public key without signing the assembly, but set the bit in the assembly indicating the assembly is signed.|
 |[-recurse](recurse-compiler-option.md)|Includes all files in the current directory and subdirectories according to the wildcard specifications.|
-|[-reference](reference-compiler-option.md)|References metadata from the specified assembly files.|
 |-reportanalyzer|Report additional analyzer information, such as execution time.|
 |[-resource](resource-compiler-option.md)|Embeds the specified resource.|
 |-ruleset:\<file>|Specify a ruleset file that disables specific diagnostics.|

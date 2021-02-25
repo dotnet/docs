@@ -46,7 +46,7 @@ When you use the positional syntax for property definition, the compiler creates
 * A primary constructor whose parameters match the positional parameters on the record declaration.
 * A `Deconstruct` method with an `out` parameter for each positional parameter provided in the record declaration. This method is provided only if there are two or more positional parameters. The method deconstructs properties defined by using positional syntax; it ignores properties that are defined by using standard property syntax.
 
-If the generated auto-property definition isn't what you want, you can define your own property of the same name, and the generated constructor and deconstructor will use that one. For instance, the following example makes the `FirstName` positional property `protected` instead of `public`.
+If the generated auto-property definition isn't what you want, you can define your own property of the same name. If you do that, the generated constructor and deconstructor will use your property definition. For instance, the following example makes the `FirstName` positional property `protected` instead of `public`.
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PositionalWithManualProperty":::
 
@@ -79,7 +79,7 @@ To implement value equality, the compiler synthesizes the following methods:
 
 * An override of <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>.
 
-  This is used as the basis for the <xref:System.Object.Equals(System.Object,System.Object)?displayProperty=nameWithType> static method when both parameters are non-null.
+  This method is used as the basis for the <xref:System.Object.Equals(System.Object,System.Object)?displayProperty=nameWithType> static method when both parameters are non-null.
 
 * A virtual `Equals` method whose parameter is the record type.
 
@@ -89,7 +89,7 @@ To implement value equality, the compiler synthesizes the following methods:
 
 * Overrides of operators `==` and `!=`.
 
-In `class` types, you could manually override equality methods and operators to achieve value equality, but developing and testing that code would be time-consuming and error-prone. Having this functionality built-in prevents bugs that would result from writing custom overrides, then forgetting to update the override code when properties or fields are added or changed.
+In `class` types, you could manually override equality methods and operators to achieve value equality, but developing and testing that code would be time-consuming and error-prone. Having this functionality built-in prevents bugs that would result from forgetting to update custom override code when properties or fields are added or changed.
 
 You can write your own implementations to replace any of these synthesized methods. If a record type has a method that matches the signature of any synthesized method, the compiler doesn't synthesize that method.
 
@@ -97,13 +97,13 @@ If you provide your own implementation of `Equals` in a record type, provide an 
 
 ## Nondestructive mutation
 
-If you need to mutate immutable properties of a record instance, you can use concise syntax for *nondestructive mutation*. A `with` expression does this by making a new record instance that is a copy of an existing record instance, with specified properties and fields modified. You use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify the values to be changed, as shown in the following example:
+If you need to mutate immutable properties of a record instance, you can use a `with` expression to achieve *nondestructive mutation*. A `with` expression makes a new record instance that is a copy of an existing record instance, with specified properties and fields modified. You use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify the values to be changed, as shown in the following example:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="WithExpressions":::
 
 The `with` expression can set positional properties or properties created by using standard property syntax. Non-positional properties must have an `init` or `set` accessor to be changed in a `with` expression.
 
-The result of a `with` expression is a *shallow copy*, which means that for a reference property, only the reference to an instance is copied. Both the original record and the copy end up with a reference to the same instance in the case of a reference-type property.
+The result of a `with` expression is a *shallow copy*, which means that for a reference property, only the reference to an instance is copied. Both the original record and the copy end up with a reference to the same instance.
 
 To implement this feature, the compiler synthesizes a clone method and a copy constructor. The constructor takes an instance of the record to be copied and calls the clone method. When you use a `with` expression, the compiler creates code that calls the copy constructor and then sets the properties that are specified in the `with` expression.
 
@@ -113,7 +113,7 @@ You can't override the clone method, and you can't create a member named `Clone`
 
 ## Built-in formatting for display
 
-Built-in display formatting means that record types have a compiler-generated <xref:System.Object.ToString%2A> method that displays all of the names and values of public properties and fields in a record type. The `ToString` method returns a string of the following format:
+Record types have a compiler-generated <xref:System.Object.ToString%2A> method that displays the names and values of public properties and fields. The `ToString` method returns a string of the following format:
 
 > \<record type name> { \<property name> = \<value>, \<property name> = \<value>, ...}
 
@@ -156,7 +156,7 @@ When comparing two instances of a derived type, the synthesized equality methods
 
 ### `with` expressions in derived records
 
-Because the synthesized clone method uses a [covariant return type](~/_csharplang/proposals/csharp-9.0/covariant-returns.md), the result of a `with` expression has the same run-time type as the expression's operand. All properties of the run-time type get copied, but you can only set properties that are defined in the compile-time type, as the following example shows:
+Because the synthesized clone method uses a [covariant return type](~/_csharplang/proposals/csharp-9.0/covariant-returns.md), the result of a `with` expression has the same run-time type as the expression's operand. All properties of the run-time type get copied, but you can only set properties of the compile-time type, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="WithExpressionInheritance":::
 
@@ -174,7 +174,7 @@ You can provide your own implementation of the `PrintMembers` method. If you do 
 
 Here is an example of code that replaces the synthesized `PrintMembers` methods, one for a record type that derives from object, and one for a record type that derives from another record:
 
-:::code language="csharp" source="snippets/shared/RecordType.cs" id="PrintMembersImplementation:::
+:::code language="csharp" source="snippets/shared/RecordType.cs" id="PrintMembersImplementation":::
 
 ### Deconstructor behavior in derived records
 

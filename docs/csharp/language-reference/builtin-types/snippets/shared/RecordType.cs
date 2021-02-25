@@ -295,6 +295,7 @@ namespace builtin_types
             {
                 Person teacher = new Teacher("Nancy", "Davolio", 3);
                 Console.WriteLine(teacher);
+                // output: Teacher { FirstName = Nancy, LastName = Davolio, Grade = 3 }
             }
             // </ToStringInheritance>
         }
@@ -315,10 +316,10 @@ namespace builtin_types
             {
                 Person teacher = new Teacher("Nancy", "Davolio", 3);
                 var (firstName, lastName) = teacher; // Doesn't deconstruct Grade
-                Console.WriteLine($"{firstName}, {lastName}");// output: Nancy Davolio
+                Console.WriteLine($"{firstName}, {lastName}");// output: Nancy, Davolio
 
                 var (fName, lName, grade) = (Teacher)teacher;
-                Console.WriteLine($"{fName}, {lName}, {grade}");// output: Nancy Davolio 3
+                Console.WriteLine($"{fName}, {lName}, {grade}");// output: Nancy, Davolio, 3
             }
             // </DeconstructorInheritance>
         }

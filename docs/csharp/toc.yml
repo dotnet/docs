@@ -1364,7 +1364,9 @@ items:
     - name: Optimization options
       displayName: FileAlignment, filealigh, Optimize, optimize
       href: language-reference/compiler-options/optimizations.md
-## Resources
+    - name: Resources options
+      displayName: Win32Resource, Win32Icon, Win32Manifest, NoWin32Manifest, Resources, LinkResources
+      href: language-reference/compiler-options/resources.md
 ## Code Generation
 ## Errors and Warnings
 ## Language
@@ -1425,8 +1427,6 @@ items:
         href: language-reference/compiler-options/nostdlib-compiler-option.md
       - name: -nowarn
         href: language-reference/compiler-options/nowarn-compiler-option.md
-      - name: -nowin32manifest
-        href: language-reference/compiler-options/nowin32manifest-compiler-option.md
       - name: -nullable
         href: language-reference/compiler-options/nullable-compiler-option.md
       - name: -preferreduilang
@@ -1435,8 +1435,6 @@ items:
         href: language-reference/compiler-options/publicsign-compiler-option.md
       - name: -recurse
         href: language-reference/compiler-options/recurse-compiler-option.md
-      - name: -resource
-        href: language-reference/compiler-options/resource-compiler-option.md
       - name: -subsystemversion
         href: language-reference/compiler-options/subsystemversion-compiler-option.md
       - name: -unsafe
@@ -1447,12 +1445,6 @@ items:
         href: language-reference/compiler-options/warn-compiler-option.md
       - name: -warnaserror
         href: language-reference/compiler-options/warnaserror-compiler-option.md
-      - name: -win32icon
-        href: language-reference/compiler-options/win32icon-compiler-option.md
-      - name: -win32manifest
-        href: language-reference/compiler-options/win32manifest-compiler-option.md
-      - name: -win32res
-        href: language-reference/compiler-options/win32res-compiler-option.md
   - name: Compiler errors
     href: language-reference/compiler-messages/index.md
   - name: C# 6.0 draft specification

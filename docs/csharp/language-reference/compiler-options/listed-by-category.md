@@ -46,15 +46,6 @@ The following compiler options are sorted by category. For an alphabetical list,
 |------------|-------------|
 |[-define](define-compiler-option.md)|Defines preprocessor symbols.|
 
-## Resources
-
-|Option|Purpose|
-|------------|-------------|
-|[-linkresource](linkresource-compiler-option.md)|Creates a link to a managed resource.|
-|[-resource](resource-compiler-option.md)|Embeds a .NET resource into the output file.|
-|[-win32icon](win32icon-compiler-option.md)|Specifies an .ico file to insert into the output file.|
-|[-win32res](win32res-compiler-option.md)|Specifies a Win32 resource to insert into the output file.|
-
 ## Miscellaneous
 
 |Option|Purpose|

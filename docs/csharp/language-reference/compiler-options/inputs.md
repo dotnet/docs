@@ -5,8 +5,8 @@ ms.date: 02/18/2021
 f1_keywords: 
   - "cs.build.options"
 helpviewer_keywords: 
-  - "FileAlignment compiler option [C#]"
-  - "Optimize compiler option [C#]"
+  - "AddModules compiler option [C#]"
+  - "References compiler option [C#]"
 ---
 # C# Compiler Options that specify inputs
 
@@ -24,7 +24,8 @@ The following options control compiler inputs. The new MSBuild syntax is shown i
 This option adds a module that was created with the `<TargetType>module</TargetType>` switch to the current compilation:
 
 ```xml
-<AddModules>file1,file2</AddModules>
+<AddModule Include=file1 />
+<AddModule Include=file2 />
 ```
 
 Where `file`, `file2` are output files that contain metadata. The file cannot contain an assembly manifest. To import more than one file, separate file names with either a comma or a semicolon. All modules added with **AddModules** must be in the same directory as the output file at run time. That is, you can specify a module in any directory at compile time but the module must be in the application directory at run time. If the module is not in the application directory at run time, you will get a <xref:System.TypeLoadException>. `file` cannot contain an assembly. For example, if the output file was created with [-target:module](./target-module-compiler-option.md), its metadata can be imported with **AddModules**.

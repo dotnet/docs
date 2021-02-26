@@ -43,20 +43,17 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-langversion:\<string>](langversion-compiler-option.md)|Specify language version: Default, ISO-1, ISO-2, 3, 4, 5, 6, 7, 7.1, 7.2, 7.3, or Latest |
 |[-lib](lib-compiler-option.md)|Specifies additional directories in which to search for references.|
 |[-link](link-compiler-option.md)|Makes COM type information in specified assemblies available to the project.|
-|[-linkresource](linkresource-compiler-option.md)|Links the specified resource to this assembly.|
 |[-main](main-compiler-option.md)|Specifies the type that contains the entry point (ignore all other possible entry points).|
 |[-noconfig](noconfig-compiler-option.md)|Instructs the compiler not to auto include CSC.RSP file.|
 |[-nologo](nologo-compiler-option.md)|Suppresses compiler copyright message.|
 |[-nostdlib](nostdlib-compiler-option.md)|Instructs the compiler not to reference standard library (mscorlib.dll).|
 |[-nowarn](nowarn-compiler-option.md)|Disables specific warning messages|
-|[-nowin32manifest](nowin32manifest-compiler-option.md)|Instructs the compiler not to embed an application manifest in the executable file.|
 |[-nullable](nullable-compiler-option.md)|Specifies nullable context option.|
 |-parallel[+&#124;-]|Specifies whether to use concurrent build (+).|
 |[-preferreduilang](preferreduilang-compiler-option.md)|Specifies the language to be used for compiler output.|
 |[-publicsign](publicsign-compiler-option.md)|Apply a public key without signing the assembly, but set the bit in the assembly indicating the assembly is signed.|
 |[-recurse](recurse-compiler-option.md)|Includes all files in the current directory and subdirectories according to the wildcard specifications.|
 |-reportanalyzer|Report additional analyzer information, such as execution time.|
-|[-resource](resource-compiler-option.md)|Embeds the specified resource.|
 |-ruleset:\<file>|Specify a ruleset file that disables specific diagnostics.|
 |[-subsystemversion](subsystemversion-compiler-option.md)|Specifies the minimum version of the subsystem that the executable file can use.|
 |[-unsafe](unsafe-compiler-option.md)|Allows [unsafe](../keywords/unsafe.md) code.|
@@ -64,9 +61,6 @@ The following compiler options are sorted alphabetically. For a categorical list
 |-version|Display the compiler version number and exit.|
 |[-warn](warn-compiler-option.md)|Sets the warning level (0-4).|
 |[-warnaserror](warnaserror-compiler-option.md)|Reports specific warnings as errors.|
-|[-win32icon](win32icon-compiler-option.md)|Uses this icon for the output.|
-|[-win32manifest](win32manifest-compiler-option.md)|Specifies a custom win32 manifest file.|
-|[-win32res](win32res-compiler-option.md)|Specifies the win32 resource file (.res).|
 
 ## See also
 

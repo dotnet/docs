@@ -935,8 +935,16 @@
             "redirect_url": "/dotnet/csharp/language-reference/compiler-options"
         },
         {
+            "source_path": "docs/csharp/language-reference/compiler-options/linkresource-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/resources"
+        },
+        {
             "source_path": "docs/csharp/language-reference/compiler-options/moduleassemblyname-compiler-option.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-options/output"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/nowin32manifest-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/resources"
         },
         {
             "source_path": "docs/csharp/language-reference/compiler-options/optimize-compiler-option.md",
@@ -971,6 +979,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/compiler-options/optimizations"
         },
         {
+            "source_path": "docs/csharp/language-reference/compiler-options/resource-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/resources"
+        },
+        {
             "source_path": "docs/csharp/language-reference/compiler-options/target-compiler-option.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-options/optimizations"
         },
@@ -997,6 +1009,18 @@
         {
             "source_path": "docs/csharp/language-reference/compiler-options/target-winmdobj-compiler-option.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-options/optimizations"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/win32icon-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/resources"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/win32manifest-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/resources"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/win32res-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/resources"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/access-keywords.md",

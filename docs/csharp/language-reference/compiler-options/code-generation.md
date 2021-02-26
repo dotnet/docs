@@ -1,0 +1,90 @@
+---
+description: "C# Compiler Options to control code generation"
+title: "C# Compiler Options - code generation options"
+ms.date: 02/18/2021
+f1_keywords: 
+  - "cs.build.options"
+helpviewer_keywords: 
+  - "DebugType compiler option [C#]"
+  - "Optimize compiler option [C#]"
+  - "Deterministic compiler option [C#]"
+---
+# C# Compiler Options that control code generation
+
+The following options control compiler inputs. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
+
+- **DebugType** / `-debug`: Emit (or do not Emit) debugging information.
+- **Optimize** / `-reference` or `-references`: Reference metadata from the specified assembly file or files.
+- **Deterministic** / `-deterministic`: Produce byte-for-byte equivalent output from the same input source.
+- **ProduceOnlyReferenceAssembly** / `-refonly`: Produce a reference assembly, instead of a full assembly, as the primary output.
+
+## DebugType
+
+The **DebugType** option causes the compiler to generate debugging information and place it in the output file or files. This may be affected by the selected build configuration: *Debug* or *Release*.
+
+```xml
+<DebugType>Full</DebugType>
+```
+
+The value of this element can be either `full` or `pdbonly`. The *full* argument, which is in effect if you do not specify *pdbonly*, enables attaching a debugger to the running program. Specifying *pdbonly* allows source code debugging when the program is started in the debugger but will only display assembler when the running program is attached to the debugger. Use this option to create debug builds. If **-debug**, **-debug+**, or **-debug:full** is not specified, you will not be able to debug the output file of your program. If you use *full*, be aware that there is some impact on the speed and size of JIT optimized code and a small impact on code quality with *full*. We recommend *pdbonly* or no PDB for generating release code.
+
+> [!NOTE]
+> One difference between *pdbonly* and *full* is that with *full* the compiler emits a <xref:System.Diagnostics.DebuggableAttribute>, which is used to tell the JIT compiler that debug information is available. Therefore, you will get an error if your code contains the <xref:System.Diagnostics.DebuggableAttribute> set to false if you use *full*.
+
+For more information on how to configure the debug performance of an application, see [Making an Image Easier to Debug](../../../framework/debug-trace-profile/making-an-image-easier-to-debug.md). To change the location of the .pdb file, see [**Pdb**](./outputs.md#pdb).
+
+## Optimize
+
+The **Optimize** option enables or disables optimizations performed by the compiler to make your output file smaller, faster, and more efficient.
+
+```xml
+<Optimize>true</Optimize>
+```
+
+You set the **Optimize** option from **Build** properties page for your project in Visual Studio.
+
+**Optimize** also tells the common language runtime to optimize code at runtime. By default, optimizations are disabled. Specify **Optimize+** to enable optimizations. When building a module to be used by an assembly, use the same **Optimize** settings as used by the assembly. It's possible to combine the **Optimize** and [Debug](./debug-compiler-option.md) options.
+
+## Deterministic
+
+Causes the compiler to produce an assembly whose byte-for-byte output is identical across compilations for identical inputs.
+
+```xml
+<Deterministic></Deterministic>
+```
+
+By default, compiler output from a given set of inputs is unique, since the compiler adds a timestamp and an MVID that is generated from random numbers. You use the `<Deterministic>` option to produce a *deterministic assembly*, one whose binary content is identical across compilations as long as the input remains the same. In such a build, the timestamp and MVID fields will be replaced with values derived from a hash of all the compilation inputs. The compiler considers the following inputs that affect determinism:
+
+- The sequence of command-line parameters.
+- The contents of the compiler's .rsp response file.
+- The precise version of the compiler used, and its referenced assemblies.
+- The current directory path.
+- The binary contents of all files explicitly passed to the compiler either directly or indirectly, including:
+  - Source files
+  - Referenced assemblies
+  - Referenced modules
+  - Resources
+  - The strong name key file
+  - @ response files
+  - Analyzers
+  - Rulesets
+  - Other files that may be used by analyzers
+- The current culture (for the language in which diagnostics and exception messages are produced).
+- The default encoding (or the current code page) if the encoding isn't specified.
+- The existence, non-existence, and contents of files on the compiler's search paths (specified, for example, by `-lib` or `-recurse`).
+- The Common Language Runtime (CLR) platform on which the compiler is run.
+- The value of `%LIBPATH%`, which can affect analyzer dependency loading.
+
+Deterministic compilation can be used for establishing whether a binary is compiled from a trusted source. This can be useful when the source is publicly available. It can also determine whether build steps that are dependent on changes to binary used in the build process.
+
+## ProduceOnlyReferenceAssembly
+
+The **ProduceOnlyReferenceAssembly** option indicates that a reference assembly should be output instead of an implementation assembly, as the primary output. The **ProduceOnlyReferenceAssembly** parameter silently disables outputting PDBs, as reference assemblies cannot be executed.
+
+```xml
+<ProduceOnlyReferenceAssembly></ProduceOnlyReferenceAssembly>
+```
+
+Reference assemblies are a special type of assembly. Reference assemblies contain only the minimum amount of metadata required to represent the library's public API surface. They include declarations for all members that are significant when referencing an assembly in build tools, but exclude all member implementations and declarations of private members that have no observable impact on their API contract. For more information, see [Reference assemblies](../../../standard/assembly/reference-assemblies.md) in .NET Guide.
+
+The **ProduceOnlyReferenceAssembly** and **ProduceReferenceAssembly** options are mutually exclusive.

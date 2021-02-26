@@ -1362,12 +1362,14 @@ items:
       displayName: Reference, AddModules
       href: language-reference/compiler-options/input.md
     - name: Optimization options
-      displayName: FileAlignment, filealigh, Optimize, optimize
+      displayName: FileAlignment, filealigh
       href: language-reference/compiler-options/optimizations.md
     - name: Resources options
       displayName: Win32Resource, Win32Icon, Win32Manifest, NoWin32Manifest, Resources, LinkResources
       href: language-reference/compiler-options/resources.md
-## Code Generation
+    - name: Code Generation
+      displayName: Debug, Optimize, ProduceOnlyReferenceAssembly
+      href: language-reference/compiler-options/code-generation.md
 ## Errors and Warnings
 ## Language
 ## Security
@@ -1391,8 +1393,6 @@ items:
         href: language-reference/compiler-options/checked-compiler-option.md
       - name: -codepage
         href: language-reference/compiler-options/codepage-compiler-option.md
-      - name: -debug
-        href: language-reference/compiler-options/debug-compiler-option.md
       - name: -define
         href: language-reference/compiler-options/define-compiler-option.md
       - name: -delaysign

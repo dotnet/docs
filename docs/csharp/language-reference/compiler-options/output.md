@@ -4,18 +4,7 @@ title: "C# Compiler Options - Output options"
 ms.date: 02/18/2021
 f1_keywords: 
   - "cs.build.options"
-  - "Deterministic"
-  - "DocumentationFile"
-  - "ModuleAssemblyName"
-  - "OutputAssembly"
-  - "PathMap"
-  - "PdbFile"
-  - "PlatformTarget"
-  - "ProduceReferenceAssembly"
-  - "ProduceOnlyReferenceAssembly"
-  - "Target"
 helpviewer_keywords: 
-  - "Deterministic compiler option [C#]"
   - "DocumentationFile compiler option [C#]"
   - "ModuleAssemblyName compiler option [C#]"
   - "OutputAssembly compiler option [C#]"
@@ -23,14 +12,12 @@ helpviewer_keywords:
   - "Pdb compiler option [C#]"
   - "PlatformTarget compiler option [C#]"
   - "ProduceReferenceAssembly compiler option [C#]"
-  - "ProduceOnlyReferenceAssembly compiler option [C#]"
   - "Target compiler option [C#]"
 ---
 # C# Compiler Options for optimization
 
 The following options control compiler optimizations for size and speed. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
 
-- **Deterministic** / `-deterministic`: Produce byte-for-byte equivalent output from the same input source.
 - **Doc** / `-doc`: Generate XML doc file from `///` comments
 - **ModuleAssemblyName** / `-moduleassemblyname`: Specify the output name of the module.
 - **OutputAssembly** / `-out`: Specify the output assembly file.
@@ -38,40 +25,7 @@ The following options control compiler optimizations for size and speed. The new
 - **PdbFile** / `-pdb`: Specify the location of the output pdb file.
 - **PlatformTarget** / `-platform`: Specify the target platform CPU.
 - **ProduceReferenceAssembly** / `-refout`: Generate a reference assembly.
-- **ProduceOnlyReferenceAssembly** `-refonly`: Product only a reference assembly.
 - **Target** `-target`: Specify the type of the output assembly.
-
-## Deterministic
-
-Causes the compiler to produce an assembly whose byte-for-byte output is identical across compilations for identical inputs.
-
-```xml
-<Deterministic></Deterministic>
-```
-
-By default, compiler output from a given set of inputs is unique, since the compiler adds a timestamp and an MVID that is generated from random numbers. You use the `<Deterministic>` option to produce a *deterministic assembly*, one whose binary content is identical across compilations as long as the input remains the same. In such a build, the timestamp and MVID fields will be replaced with values derived from a hash of all the compilation inputs. The compiler considers the following inputs that affect determinism:
-
-- The sequence of command-line parameters.
-- The contents of the compiler's .rsp response file.
-- The precise version of the compiler used, and its referenced assemblies.
-- The current directory path.
-- The binary contents of all files explicitly passed to the compiler either directly or indirectly, including:
-  - Source files
-  - Referenced assemblies
-  - Referenced modules
-  - Resources
-  - The strong name key file
-  - @ response files
-  - Analyzers
-  - Rulesets
-  - Other files that may be used by analyzers
-- The current culture (for the language in which diagnostics and exception messages are produced).
-- The default encoding (or the current code page) if the encoding isn't specified.
-- The existence, non-existence, and contents of files on the compiler's search paths (specified, for example, by `-lib` or `-recurse`).
-- The Common Language Runtime (CLR) platform on which the compiler is run.
-- The value of `%LIBPATH%`, which can affect analyzer dependency loading.
-
-Deterministic compilation can be used for establishing whether a binary is compiled from a trusted source. This can be useful when the source is publicly available. It can also determine whether build steps that are dependent on changes to binary used in the build process.
 
 ## DocumentationFile
 
@@ -183,18 +137,6 @@ The **ProduceReferenceAssembly** option specifies a file path where the referenc
 Reference assemblies are a special type of assembly that contain only the minimum amount of metadata required to represent the library's public API surface. They include declarations for all members that are significant when referencing an assembly in build tools, but exclude all member implementations and declarations of private members that have no observable impact on their API contract. For more information, see [Reference assemblies](../../../standard/assembly/reference-assemblies.md) in .NET Guide.
 
 The **ProduceReferenceAssembly** and **ProduceOnlyReferenceAssembly** options are mutually exclusive.
-
-## ProduceOnlyReferenceAssembly
-
-The **ProduceOnlyReferenceAssembly** option indicates that a reference assembly should be output instead of an implementation assembly, as the primary output. The **ProduceOnlyReferenceAssembly** parameter silently disables outputting PDBs, as reference assemblies cannot be executed.
-
-```xml
-<ProduceOnlyReferenceAssembly></ProduceOnlyReferenceAssembly>
-```
-
-Reference assemblies are a special type of assembly. Reference assemblies contain only the minimum amount of metadata required to represent the library's public API surface. They include declarations for all members that are significant when referencing an assembly in build tools, but exclude all member implementations and declarations of private members that have no observable impact on their API contract. For more information, see [Reference assemblies](../../../standard/assembly/reference-assemblies.md) in .NET Guide.
-
-The **ProduceOnlyReferenceAssembly** and **ProduceReferenceAssembly** options are mutually exclusive.
 
 ## TargetType
 

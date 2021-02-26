@@ -31,7 +31,6 @@ The following compiler options are sorted by category. For an alphabetical list,
 |------------|-------------|
 |[-bugreport](bugreport-compiler-option.md)|Creates a file that contains information that makes it easy to report a bug.|
 |[-checked](checked-compiler-option.md)|Specifies whether integer arithmetic that overflows the bounds of the data type will cause an exception at run time.|
-|[-debug](debug-compiler-option.md)|Instruct the compiler to emit debugging information.|
 |[-errorreport](errorreport-compiler-option.md)|Sets error reporting behavior.|
 |[-fullpaths](fullpaths-compiler-option.md)|Specifies the absolute path to the file in compiler output.|
 |[-nowarn](nowarn-compiler-option.md)|Suppresses the compiler's generation of specified warnings.|
@@ -77,6 +76,7 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[-link](link-compiler-option.md)|Makes COM type information in specified assemblies available to the project. (Listed in the input section of the roslyn repo)|
 |-analyzer|Run the analyzers from this assembly (Short form: /a)  |
 |-additionalfile|Names additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings. (Listed in the input section on the roslyn repo)|
+|-sourcelink|Source link info to embed into PDB. (Listed in the code generation section on roslyn repo)  |
 
 ## See also
 

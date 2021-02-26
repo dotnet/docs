@@ -26,7 +26,6 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-checked](checked-compiler-option.md)|Causes the compiler to generate overflow checks.|
 |-checksumalgorithm:\<alg>|Specifies the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA256 (default) or SHA1.<br>Due to collision problems with SHA1, Microsoft recommends SHA256. |
 |[-codepage](codepage-compiler-option.md)|Specifies the codepage to use when opening source files.|
-|[-debug](debug-compiler-option.md)|Emits debugging information.|
 |[-define](define-compiler-option.md)|Defines conditional compilation symbols.|
 |[-delaysign](delaysign-compiler-option.md)|Delay-signs the assembly by using only the public part of the strong name key.|
 |-embed|Embed all source files in the PDB.|

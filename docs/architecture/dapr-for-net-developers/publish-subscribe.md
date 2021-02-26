@@ -7,11 +7,11 @@ ms.date: 02/07/2021
 
 # The Dapr publish & subscribe building block
 
-The [Publish-Subscribe pattern](https://docs.microsoft.com/azure/architecture/patterns/publisher-subscriber) (often referred to as "pub/sub") is a well-known and widely used messaging pattern. Architects commonly embrace it in distributed applications. However, the plumbing to implement it can be complex. There are often subtle feature differences across different messaging products. Dapr offers a building block that significantly simplifies implementing pub/sub functionality.
+The [Publish-Subscribe pattern](/azure/architecture/patterns/publisher-subscriber) (often referred to as "pub/sub") is a well-known and widely used messaging pattern. Architects commonly embrace it in distributed applications. However, the plumbing to implement it can be complex. There are often subtle feature differences across different messaging products. Dapr offers a building block that significantly simplifies implementing pub/sub functionality.
 
 ## What it solves
 
-The primary advantage of the Publish-Subscribe pattern is **loose coupling**, sometimes referred to as [temporal decoupling](https://docs.microsoft.com/azure/architecture/guide/technology-choices/messaging#decoupling). The pattern decouples services that send messages (the **publishers**) from services that consume messages (the **subscribers**). Both publishers and subscribers are unaware of each other - both are dependent on a centralized **message broker** that distributes the messages.
+The primary advantage of the Publish-Subscribe pattern is **loose coupling**, sometimes referred to as [temporal decoupling](/azure/architecture/guide/technology-choices/messaging#decoupling). The pattern decouples services that send messages (the **publishers**) from services that consume messages (the **subscribers**). Both publishers and subscribers are unaware of each other - both are dependent on a centralized **message broker** that distributes the messages.
 
 Figure 7-1 shows the high-level architecture of the pub/sub pattern.
 
@@ -28,7 +28,7 @@ From the previous figure, note the steps of the pattern:
 
 Most message brokers encapsulate a queueing mechanism that can persist messages once received. With it, the message broker guarantees **durability** by storing the message. Subscribers don't need to be immediately available or even online when a publisher sends a message. Once available, the subscriber receives and processes the message.  Dapr guarantees **At-Least-Once** semantics for message delivery. Once a message is published, it will be delivered at least once to any interested subscriber.
 
- > If your service can only process a message once, you'll need to provide an [idempotency check](https://docs.microsoft.com/azure/architecture/microservices/design/api-design#idempotent-operations) to ensure that the same message is not processed multiple times. While such logic can be coded, some message brokers, such as Azure Service Bus, provide built-in *duplicate detection* messaging capabilities.
+ > If your service can only process a message once, you'll need to provide an [idempotency check](/azure/architecture/microservices/design/api-design#idempotent-operations) to ensure that the same message is not processed multiple times. While such logic can be coded, some message brokers, such as Azure Service Bus, provide built-in *duplicate detection* messaging capabilities.
 
 There are several message broker products available - both commercially and open-source. Each has advantages and drawbacks. Your job is to match your system requirements to the appropriate broker. Once selected, it's a best practice to decouple your application from message broker plumbing. You achieve this functionality by wrapping the broker inside an *abstraction*. The abstraction encapsulates the message plumbing and exposes generic pub/sub operations to your code. Your code communicates with the abstraction, not the actual message broker. While a wise decision, you'll have to write and maintain the abstraction and its underlying implementation. This approach requires custom code that can be complex, repetitive, and error-prone.
 
@@ -36,7 +36,7 @@ The Dapr publish & subscribe building block provides the messaging abstraction a
 
 ## How it works
 
-The Dapr publish & subscribe building block provides a platform-agnostic API framework to send and receive messages. Your services publish messages to a named [topic](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions#topics-and-subscriptions). Your services subscribe to a topic to consume messages.
+The Dapr publish & subscribe building block provides a platform-agnostic API framework to send and receive messages. Your services publish messages to a named [topic](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions#topics-and-subscriptions). Your services subscribe to a topic to consume messages.
 
 The service calls the pub/sub API on the Dapr sidecar. The sidecar then makes calls into a pre-defined Dapr pub/sub component that encapsulates a specific message broker product. Figure 7-2 shows the Dapr pub/sub messaging stack.
 
@@ -118,7 +118,7 @@ In the example, the message is handled successfully. But if something goes wrong
 }
 ```
 
-These are the available `status` values:
+The following table shows the available `status` values:
 
 | Status           | Action                                                       |
 | ---------------- | ------------------------------------------------------------ |
@@ -155,7 +155,7 @@ await daprClient.PublishEventAsync<OrderData>("pubsub", "newOrder", data);
 ```
 
 - The first argument `pubsub` is the name of the Dapr component that provides the message broker implementation. We'll address components later in this chapter.
-- The second argument `neworder` provides the name of the topic to send the message.
+- The second argument `neworder` provides the name of the topic to send the message to.
 - The third argument is the payload of the message.
 - You can specify the .NET type of the message using the generic type parameter of the method.
 
@@ -215,7 +215,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 The call to `UseCloudEvents` adds **CloudEvents** middleware into to the ASP.NET Core middleware pipeline. This middleware will unwrap requests that use the CloudEvents structured format, so the receiving method can read the event payload directly.
 
-> [CloudEvents](https://cloudevents.io/) is a standardized messaging format, providing a common way to describe event information across platforms. Dapr embraces CloudEvents. For more about CloudEvents, see the [cloudevents specification](https://github.com/cloudevents/spec/tree/v1.0).
+> [CloudEvents](https://cloudevents.io/) is a standardized messaging format, providing a common way to describe event information across platforms. Dapr embraces CloudEvents. For more information about CloudEvents, see the [cloudevents specification](https://github.com/cloudevents/spec/tree/v1.0).
 
 The call to `MapSubscribeHandler` in the endpoint routing configuration will add a Dapr subscribe endpoint to the application. This endpoint will respond to requests on `/dapr/subscribe`. When this endpoint is called, it will automatically find all WebAPI action methods decorated with the `Topic` attribute and instruct Dapr to create subscriptions for them.
 
@@ -263,7 +263,7 @@ spec:
 
 In this example, you can see that you can specify any message broker-specific configuration in the `metadata` block. In this case, RabbitMQ is configured to create durable queues. But the RabbitMQ component has more configuration options. Each of the components' configuration will have its own set of possible fields. You can read which fields are available in the documentation of each [pub/sub component](https://docs.dapr.io/operations/components/setup-pubsub/supported-pubsub/).
 
-Next to the programmatic way of subscribing to a topic from  code, Dapr pub/sub also provides a declarative way of subscribing to a topic. This approach removes the Dapr dependency from the application code. Therefore it also enables an existing application to subscribe to topics without without any changes to the code. Below you see an example of a Dapr configuration file for configuring a subscription:
+Next to the programmatic way of subscribing to a topic from code, Dapr pub/sub also provides a declarative way of subscribing to a topic. This approach removes the Dapr dependency from the application code. Therefore, it also enables an existing application to subscribe to topics without any changes to the code. The following example shows a Dapr configuration file for configuring a subscription:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
@@ -351,7 +351,7 @@ public class DaprEventBus : IEventBus
 As you can see in the code snippet, the topic name is derived from event type's name. Because all eShop services use the `IEventBus` abstraction, retrofitting Dapr required *absolutely no change* to the mainline application code.
 
 > [!IMPORTANT]
-> The Dapr SDK uses `System.Text.Json` to serialize/deserialize messages. However, `System.Text.Json` does not serialize properties of derived classes by default. In the eShop code, an event is sometimes explicitly declared as an `IntegrationEvent`, the base class for integration events. This is done because the concrete event type is determined dynamically at runtime based on business-logic. As a result, the event is serialized using the type information of the base class and not the derived class. To force `System.Text.Json` to serialize all properties of the derived class in this case, the code uses `object` as the generic type parameter. For more information, see the [.NET documentation](https://docs.microsoft.com/dotnet/standard/serialization/system-text-json-polymorphism).
+> The Dapr SDK uses `System.Text.Json` to serialize/deserialize messages. However, `System.Text.Json` doesn't serialize properties of derived classes by default. In the eShop code, an event is sometimes explicitly declared as an `IntegrationEvent`, the base class for integration events. This is done because the concrete event type is determined dynamically at run time based on business logic. As a result, the event is serialized using the type information of the base class and not the derived class. To force `System.Text.Json` to serialize all properties of the derived class in this case, the code uses `object` as the generic type parameter. For more information, see the [.NET documentation](../../standard/serialization/system-text-json-polymorphism.md).
 
 With Dapr, the infrastructure code is **dramatically simplified**. It doesn't need to distinguish between the different message brokers. Dapr provides this abstraction for you. And if needed, you can easily swap out message brokers or configure multiple message broker components.
 

@@ -426,6 +426,8 @@ items:
         href: ../core/diagnostics/well-known-event-providers.md
       - name: Distributed Tracing
         href: ../core/diagnostics/distributed-tracing.md
+    - name: Symbols
+      href: ../core/diagnostics/symbols.md
     - name: Runtime events
       items:
       - name: Overview
@@ -2306,6 +2308,16 @@ items:
     items:
     - name: Overview
       href: ../core/porting/index.md
+    - name: .NET Upgrade Assistant tool
+      items:
+      - name: Overview
+        href: ../core/porting/upgrade-assistant-overview.md
+      - name: Windows Presentation Foundation
+        href: ../core/porting/upgrade-assistant-wpf-framework.md
+      - name: Windows Forms
+        href: ../core/porting/upgrade-assistant-winforms-framework.md
+      - name: ASP.NET Core
+        href: ../core/porting/upgrade-assistant-aspnetmvc.md
     - name: Analyze third-party dependencies
       href: ../core/porting/third-party-deps.md
     - name: Port libraries

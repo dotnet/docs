@@ -164,7 +164,7 @@ Because the synthesized clone method uses a [covariant return type](~/_csharplan
 
 ### `PrintMembers` formatting in derived records
 
-the synthesized `PrintMembers` method of a derived record type calls the base implementation. The result is that all public properties and fields of both derived and base types are included in the `ToString` output, as shown in the following example:
+The synthesized `PrintMembers` method of a derived record type calls the base implementation. The result is that all public properties and fields of both derived and base types are included in the `ToString` output, as shown in the following example:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="ToStringInheritance":::
 

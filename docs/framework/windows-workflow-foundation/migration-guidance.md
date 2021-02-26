@@ -18,25 +18,25 @@ Thus, the decision to adopt .NET Framework 4 is decoupled from your decision to 
 
 ## WF migration white papers and cookbooks
 
- [WF Migration Overview](https://download.microsoft.com/download/5/9/9/599CF8A9-5FE2-426A-A536-A83F84D38BF9/WF Migration Overview.docx)\
+ [WF Migration Overview](https://download.microsoft.com/download/5/9/9/599CF8A9-5FE2-426A-A536-A83F84D38BF9/WF%20Migration%20Overview.docx)\
  Describes the relationship between WF3 and WF4, and the choices you have as a user or a potential user of workflow technology in .NET Framework 4.
 
- [WF Migration: Best Practices for WF3 Development](https://download.microsoft.com/download/5/9/9/599CF8A9-5FE2-426A-A536-A83F84D38BF9/WF Migration Best Practices.docx)\
+ [WF Migration: Best Practices for WF3 Development](https://download.microsoft.com/download/5/9/9/599CF8A9-5FE2-426A-A536-A83F84D38BF9/WF%20Migration%20Best%20Practices.docx)\
  Discusses how to design WF3 artifacts so they can be more easily migrated to WF4.
 
- [WF Guidance: Rules](https://download.microsoft.com/download/5/9/9/599CF8A9-5FE2-426A-A536-A83F84D38BF9/WF4 Rules Guidance.docx)\
+ [WF Guidance: Rules](https://download.microsoft.com/download/5/9/9/599CF8A9-5FE2-426A-A536-A83F84D38BF9/WF4%20Rules%20Guidance.docx)\
  Discusses how to bring rules-related investments forward into .NET Framework 4 solutions.
 
- [WF Guidance: State Machine](https://download.microsoft.com/download/5/9/9/599CF8A9-5FE2-426A-A536-A83F84D38BF9/WF4 State Machine Guidance.doc)
+ [WF Guidance: State Machine](https://download.microsoft.com/download/5/9/9/599CF8A9-5FE2-426A-A536-A83F84D38BF9/WF4%20State%20Machine%20Guidance.doc)
  Discusses WF4 control flow modeling in the absence of a State-Machine activity. This guidance only applies to workflow projects that target .NET Framework 4. State Machine workflows were added in .NET Framework 4.0.1 with the release of Platform Update 1, and were included as part of .NET Framework 4.5. For more information about state machine workflows in .NET Framework 4.0.1 - 4.0.3 and .NET Framework 4.5, see [Update 4.0.1 for Microsoft .NET Framework 4 Features](/previous-versions/dotnet/netframework-4.0/hh290669(v=vs.100)) and [State Machine Workflows](state-machine-workflows.md).
 
- [WF Migration Cookbook: Custom Activities](https://download.microsoft.com/download/5/9/9/599CF8A9-5FE2-426A-A536-A83F84D38BF9/WF Migration Cookbook Custom Activities.docx)\
+ [WF Migration Cookbook: Custom Activities](https://download.microsoft.com/download/5/9/9/599CF8A9-5FE2-426A-A536-A83F84D38BF9/WF%20Migration%20Cookbook%20Custom%20Activities.docx)\
  Provides examples and instructions for redesigning WF3 custom activities on WF4.
 
  [WF Migration Cookbook: Advanced Custom Activities](https://download.microsoft.com/download/5/9/9/599CF8A9-5FE2-426A-A536-A83F84D38BF9/WF%20Migration%20Cookbook%20Advanced%20Custom%20Activities.docx)\
  Provides guidance for redesigning advanced WF3 custom activities that use WF3 queues and schedule child activities as WF4 custom activities.
-
- [WF Migration Cookbook: Workflows](https://download.microsoft.com/download/5/9/9/599CF8A9-5FE2-426A-A536-A83F84D38BF9/WF Migration Cookbook Workflows.docx)\
+%20
+ [WF Migration Cookbook: Workflows](https://download.microsoft.com/download/5/9/9/599CF8A9-5FE2-426A-A536-A83F84D38BF9/WF%20Migration%20Cookbook%20Workflows.docx)\
  Provides examples and instructions for redesigning WF3 workflows on WF4.
 
  [WF Migration Cookbook: Workflow Hosting](https://download.microsoft.com/download/5/9/9/599CF8A9-5FE2-426A-A536-A83F84D38BF9/WF%20Migration%20Cookbook%20Workflow%20Hosting.docx)\

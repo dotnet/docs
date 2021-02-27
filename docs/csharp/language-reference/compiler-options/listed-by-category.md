@@ -33,11 +33,7 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[-checked](checked-compiler-option.md)|Specifies whether integer arithmetic that overflows the bounds of the data type will cause an exception at run time.|
 |[-errorreport](errorreport-compiler-option.md)|Sets error reporting behavior.|
 |[-fullpaths](fullpaths-compiler-option.md)|Specifies the absolute path to the file in compiler output.|
-|[-nowarn](nowarn-compiler-option.md)|Suppresses the compiler's generation of specified warnings.|
 |[-nullable](nullable-compiler-option.md)|Specifies nullable context option.|
-|[-warn](warn-compiler-option.md)|Sets the warning level.|
-|[-warnaserror](warnaserror-compiler-option.md)|Promotes warnings to errors.|
-|-ruleset:\<file>|Specify a ruleset file that disables specific diagnostics.|
 
 ## Preprocessor
 
@@ -77,6 +73,8 @@ The following compiler options are sorted by category. For an alphabetical list,
 |-analyzer|Run the analyzers from this assembly (Short form: /a)  |
 |-additionalfile|Names additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings. (Listed in the input section on the roslyn repo)|
 |-sourcelink|Source link info to embed into PDB. (Listed in the code generation section on roslyn repo)  |
+|-ruleset:\<file>|Specify a ruleset file that disables specific diagnostics. (In the errors and warnings section) |
+|-reportanalyzer|Report additional analyzer information, such as execution time. (In the errors and warnings section) |
 
 ## See also
 

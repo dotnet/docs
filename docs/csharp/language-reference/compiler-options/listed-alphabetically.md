@@ -46,7 +46,6 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-noconfig](noconfig-compiler-option.md)|Instructs the compiler not to auto include CSC.RSP file.|
 |[-nologo](nologo-compiler-option.md)|Suppresses compiler copyright message.|
 |[-nostdlib](nostdlib-compiler-option.md)|Instructs the compiler not to reference standard library (mscorlib.dll).|
-|[-nowarn](nowarn-compiler-option.md)|Disables specific warning messages|
 |[-nullable](nullable-compiler-option.md)|Specifies nullable context option.|
 |-parallel[+&#124;-]|Specifies whether to use concurrent build (+).|
 |[-preferreduilang](preferreduilang-compiler-option.md)|Specifies the language to be used for compiler output.|
@@ -58,8 +57,6 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-unsafe](unsafe-compiler-option.md)|Allows [unsafe](../keywords/unsafe.md) code.|
 |[-utf8output](utf8output-compiler-option.md)|Outputs compiler messages in UTF-8 encoding.|
 |-version|Display the compiler version number and exit.|
-|[-warn](warn-compiler-option.md)|Sets the warning level (0-4).|
-|[-warnaserror](warnaserror-compiler-option.md)|Reports specific warnings as errors.|
 
 ## See also
 

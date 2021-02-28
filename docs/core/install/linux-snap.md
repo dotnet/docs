@@ -83,6 +83,14 @@ sudo snap alias dotnet-runtime-50.dotnet dotnet
 
 The command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-runtime-50.dotnet dotnet50`. When you use the command `dotnet50`, you'll invoke a specific version of .NET. But choosing a different alias is incompatible with most tutorials and examples as they expect a `dotnet` command to be available.
 
+## Global Tool Execution errors
+
+When .NET is installed through Snap, some global tools are not able to located the *DOTNET_ROOT* correctly. It may require that you set the environment variable for *DOTNET_ROOT* in your profile. The path for snaps should be the following:
+
+```bash
+export DOTNET_ROOT=/snap/dotnet-sdk/current
+```
+
 ## TLS/SSL Certificate errors
 
 When .NET is installed through Snap, it's possible that on some distros the .NET TLS/SSL certificates may not be found and you may receive an error during `restore`:

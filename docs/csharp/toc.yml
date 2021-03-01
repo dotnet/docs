@@ -1379,6 +1379,9 @@ items:
     - name: Security options
       displayName: DelaySign
       href: language-reference/compiler-options/security.md
+    - name: Miscellaneous
+      displayName: ResponseFile, @
+      href: language-reference/compiler-options/miscellaneous.md
 ## Miscellaneous
 ## Advanced
 
@@ -1387,8 +1390,6 @@ items:
     - name: C# Compiler Options Listed Alphabetically
       href: language-reference/compiler-options/listed-alphabetically.md
       items:
-      - name: "@"
-        href: language-reference/compiler-options/response-file-compiler-option.md
       - name: -appconfig
         href: language-reference/compiler-options/appconfig-compiler-option.md
       - name: -baseaddress
@@ -1413,10 +1414,6 @@ items:
         href: language-reference/compiler-options/linkresource-compiler-option.md
       - name: -main
         href: language-reference/compiler-options/main-compiler-option.md
-      - name: -noconfig
-        href: language-reference/compiler-options/noconfig-compiler-option.md
-      - name: -nologo
-        href: language-reference/compiler-options/nologo-compiler-option.md
       - name: -nostdlib
         href: language-reference/compiler-options/nostdlib-compiler-option.md
       - name: -nullable

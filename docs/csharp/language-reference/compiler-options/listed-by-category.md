@@ -35,18 +35,13 @@ The following compiler options are sorted by category. For an alphabetical list,
 
 |Option|Purpose|
 |------------|-------------|
-|[@](response-file-compiler-option.md)|Specifies a response file.|
-|[-?](help-compiler-option.md)|Lists compiler options to stdout.|
 |[-baseaddress](baseaddress-compiler-option.md)|Specifies the preferred base address at which to load a DLL.|
 |[-codepage](codepage-compiler-option.md)|Specifies the code page to use for all source code files in the compilation.|
 |[-help](help-compiler-option.md)|Lists compiler options to stdout.|
 |[-main](main-compiler-option.md)|Specifies the location of the **Main** method.|
-|[-noconfig](noconfig-compiler-option.md)|Instructs the compiler not to compile with csc.rsp.|
-|[-nologo](nologo-compiler-option.md)|Suppresses compiler banner information.|
 |[-subsystemversion](subsystemversion-compiler-option.md)|Specifies the minimum version of the subsystem that the executable file can use.|
 |[-unsafe](unsafe-compiler-option.md)|Enables compilation of code that uses the [unsafe](../keywords/unsafe.md) keyword.|
 f|[-utf8output](utf8output-compiler-option.md)|Displays compiler output using UTF-8 encoding.|
-|-parallel[+&#124;-]|Specifies whether to use concurrent build (+).|
 |-checksumalgorithm:\<alg>|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA256 (default) or SHA1.<br>Due to collision problems with SHA1, Microsoft recommends SHA256.|
 
 ## Obsolete Options
@@ -64,6 +59,8 @@ f|[-utf8output](utf8output-compiler-option.md)|Displays compiler output using UT
 |-ruleset:\<file>|Specify a ruleset file that disables specific diagnostics. (In the errors and warnings section) |
 |-reportanalyzer|Report additional analyzer information, such as execution time. (In the errors and warnings section) |
 |[-highentropyva](highentropyva-compiler-option.md)|Specifies that the executable file supports address space layout randomization (ASLR). (Listed in security)|
+|[-?](help-compiler-option.md)|Lists compiler options to stdout. (Listed in Misc)|
+|-parallel[+&#124;-]|Specifies whether to use concurrent build (+). (Listed in Misc)|
 
 ## See also
 

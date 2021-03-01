@@ -16,7 +16,6 @@ The following compiler options are sorted alphabetically. For a categorical list
 
 |Option|Purpose|
 |------------|-------------|
-|[@](response-file-compiler-option.md)|Reads a response file for more options.|
 |[-?](help-compiler-option.md)|Displays a usage message to stdout.|
 |-additionalfile|Names additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings.|
 |-analyzer|Run the analyzers from this assembly (Short form: -a)|
@@ -37,8 +36,6 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-lib](lib-compiler-option.md)|Specifies additional directories in which to search for references.|
 |[-link](link-compiler-option.md)|Makes COM type information in specified assemblies available to the project.|
 |[-main](main-compiler-option.md)|Specifies the type that contains the entry point (ignore all other possible entry points).|
-|[-noconfig](noconfig-compiler-option.md)|Instructs the compiler not to auto include CSC.RSP file.|
-|[-nologo](nologo-compiler-option.md)|Suppresses compiler copyright message.|
 |[-nostdlib](nostdlib-compiler-option.md)|Instructs the compiler not to reference standard library (mscorlib.dll).|
 |[-nullable](nullable-compiler-option.md)|Specifies nullable context option.|
 |-parallel[+&#124;-]|Specifies whether to use concurrent build (+).|

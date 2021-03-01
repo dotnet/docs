@@ -36,7 +36,7 @@ For more information on deconstructing user-defined types with discards, see [De
 
 ## Pattern matching with `switch`
 
-The *discard pattern* can be used in pattern matching with the [switch expression](language-reference/operators/switch-expression.md). Every expression always matches the discard pattern.
+The *discard pattern* can be used in pattern matching with the [switch expression](language-reference/operators/switch-expression.md). Every expression, including `null`,  always matches the discard pattern.
 
 The following example defines a `ProvidesFormatInfo` method that uses a `switch` expression to determine whether an object provides an <xref:System.IFormatProvider> implementation and tests whether the object is `null`. It also uses the discard pattern to handle non-null objects of any other type.
 

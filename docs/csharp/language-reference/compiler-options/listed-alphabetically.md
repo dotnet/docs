@@ -23,10 +23,8 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-appconfig](appconfig-compiler-option.md)|Specifies the location of app.config at assembly binding time.|
 |[-baseaddress](baseaddress-compiler-option.md)|Specifies the base address for the library to be built.|
 |[-bugreport](bugreport-compiler-option.md)|Creates a 'Bug Report' file. This file will be sent together with any crash information if it is used with -errorreport:prompt or -errorreport:send.|
-|[-checked](checked-compiler-option.md)|Causes the compiler to generate overflow checks.|
 |-checksumalgorithm:\<alg>|Specifies the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA256 (default) or SHA1.<br>Due to collision problems with SHA1, Microsoft recommends SHA256. |
 |[-codepage](codepage-compiler-option.md)|Specifies the codepage to use when opening source files.|
-|[-define](define-compiler-option.md)|Defines conditional compilation symbols.|
 |[-delaysign](delaysign-compiler-option.md)|Delay-signs the assembly by using only the public part of the strong name key.|
 |-embed|Embed all source files in the PDB.|
 |-embed:\<file list>|Embed specific files in the PDB.|
@@ -39,7 +37,6 @@ The following compiler options are sorted alphabetically. For a categorical list
 |-incremental|Enables incremental compilation [obsolete].|
 |[-keycontainer](keycontainer-compiler-option.md)|Specifies a strong name key container.|
 |[-keyfile](keyfile-compiler-option.md)|Specifies a strong name key file.|
-|[-langversion:\<string>](langversion-compiler-option.md)|Specify language version: Default, ISO-1, ISO-2, 3, 4, 5, 6, 7, 7.1, 7.2, 7.3, or Latest |
 |[-lib](lib-compiler-option.md)|Specifies additional directories in which to search for references.|
 |[-link](link-compiler-option.md)|Makes COM type information in specified assemblies available to the project.|
 |[-main](main-compiler-option.md)|Specifies the type that contains the entry point (ignore all other possible entry points).|
@@ -54,7 +51,6 @@ The following compiler options are sorted alphabetically. For a categorical list
 |-reportanalyzer|Report additional analyzer information, such as execution time.|
 |-ruleset:\<file>|Specify a ruleset file that disables specific diagnostics.|
 |[-subsystemversion](subsystemversion-compiler-option.md)|Specifies the minimum version of the subsystem that the executable file can use.|
-|[-unsafe](unsafe-compiler-option.md)|Allows [unsafe](../keywords/unsafe.md) code.|
 |[-utf8output](utf8output-compiler-option.md)|Outputs compiler messages in UTF-8 encoding.|
 |-version|Display the compiler version number and exit.|
 

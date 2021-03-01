@@ -30,16 +30,9 @@ The following compiler options are sorted by category. For an alphabetical list,
 |Option|Purpose|
 |------------|-------------|
 |[-bugreport](bugreport-compiler-option.md)|Creates a file that contains information that makes it easy to report a bug.|
-|[-checked](checked-compiler-option.md)|Specifies whether integer arithmetic that overflows the bounds of the data type will cause an exception at run time.|
 |[-errorreport](errorreport-compiler-option.md)|Sets error reporting behavior.|
 |[-fullpaths](fullpaths-compiler-option.md)|Specifies the absolute path to the file in compiler output.|
 |[-nullable](nullable-compiler-option.md)|Specifies nullable context option.|
-
-## Preprocessor
-
-|Option|Purpose|
-|------------|-------------|
-|[-define](define-compiler-option.md)|Defines preprocessor symbols.|
 
 ## Miscellaneous
 
@@ -51,13 +44,12 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[-codepage](codepage-compiler-option.md)|Specifies the code page to use for all source code files in the compilation.|
 |[-help](help-compiler-option.md)|Lists compiler options to stdout.|
 |[-highentropyva](highentropyva-compiler-option.md)|Specifies that the executable file supports address space layout randomization (ASLR).|
-|[-langversion](langversion-compiler-option.md)|Specify language version: Default, ISO-1, ISO-2, 3, 4, 5, 6, 7, 7.1, 7.2, 7.3, or Latest |
 |[-main](main-compiler-option.md)|Specifies the location of the **Main** method.|
 |[-noconfig](noconfig-compiler-option.md)|Instructs the compiler not to compile with csc.rsp.|
 |[-nologo](nologo-compiler-option.md)|Suppresses compiler banner information.|
 |[-subsystemversion](subsystemversion-compiler-option.md)|Specifies the minimum version of the subsystem that the executable file can use.|
 |[-unsafe](unsafe-compiler-option.md)|Enables compilation of code that uses the [unsafe](../keywords/unsafe.md) keyword.|
-|[-utf8output](utf8output-compiler-option.md)|Displays compiler output using UTF-8 encoding.|
+f|[-utf8output](utf8output-compiler-option.md)|Displays compiler output using UTF-8 encoding.|
 |-parallel[+&#124;-]|Specifies whether to use concurrent build (+).|
 |-checksumalgorithm:\<alg>|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA256 (default) or SHA1.<br>Due to collision problems with SHA1, Microsoft recommends SHA256.|
 

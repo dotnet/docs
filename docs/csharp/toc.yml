@@ -1373,7 +1373,9 @@ items:
     - name: Errors and warnings
       displayName: Debug, Optimize, ProduceOnlyReferenceAssembly
       href: language-reference/compiler-options/errors-warnings.md
-## Language
+    - name: Language 
+      displayName: checked, CheckForOverflowUnderflow, unsafe, AllowUnsafeCodeBlocks, DefineConstants, define
+      href: language-reference/compileroptions/language.md
 ## Security
 ## Miscellaneous
 ## Advanced
@@ -1391,12 +1393,8 @@ items:
         href: language-reference/compiler-options/baseaddress-compiler-option.md
       - name: -bugreport
         href: language-reference/compiler-options/bugreport-compiler-option.md
-      - name: -checked
-        href: language-reference/compiler-options/checked-compiler-option.md
       - name: -codepage
         href: language-reference/compiler-options/codepage-compiler-option.md
-      - name: -define
-        href: language-reference/compiler-options/define-compiler-option.md
       - name: -delaysign
         href: language-reference/compiler-options/delaysign-compiler-option.md
       - name: -errorreport
@@ -1411,8 +1409,6 @@ items:
         href: language-reference/compiler-options/keycontainer-compiler-option.md
       - name: -keyfile
         href: language-reference/compiler-options/keyfile-compiler-option.md
-      - name: -langversion
-        href: language-reference/compiler-options/langversion-compiler-option.md
       - name: -lib
         href: language-reference/compiler-options/lib-compiler-option.md
       - name: -link
@@ -1437,8 +1433,6 @@ items:
         href: language-reference/compiler-options/recurse-compiler-option.md
       - name: -subsystemversion
         href: language-reference/compiler-options/subsystemversion-compiler-option.md
-      - name: -unsafe
-        href: language-reference/compiler-options/unsafe-compiler-option.md
       - name: -utf8output
         href: language-reference/compiler-options/utf8output-compiler-option.md
   - name: Compiler errors

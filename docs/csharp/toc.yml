@@ -1375,8 +1375,10 @@ items:
       href: language-reference/compiler-options/errors-warnings.md
     - name: Language 
       displayName: checked, CheckForOverflowUnderflow, unsafe, AllowUnsafeCodeBlocks, DefineConstants, define
-      href: language-reference/compileroptions/language.md
-## Security
+      href: language-reference/compiler-options/language.md
+    - name: Security options
+      displayName: DelaySign
+      href: language-reference/compiler-options/security.md
 ## Miscellaneous
 ## Advanced
 
@@ -1395,8 +1397,6 @@ items:
         href: language-reference/compiler-options/bugreport-compiler-option.md
       - name: -codepage
         href: language-reference/compiler-options/codepage-compiler-option.md
-      - name: -delaysign
-        href: language-reference/compiler-options/delaysign-compiler-option.md
       - name: -errorreport
         href: language-reference/compiler-options/errorreport-compiler-option.md
       - name: -fullpaths
@@ -1405,10 +1405,6 @@ items:
         href: language-reference/compiler-options/help-compiler-option.md
       - name: -highentropyva
         href: language-reference/compiler-options/highentropyva-compiler-option.md
-      - name: -keycontainer
-        href: language-reference/compiler-options/keycontainer-compiler-option.md
-      - name: -keyfile
-        href: language-reference/compiler-options/keyfile-compiler-option.md
       - name: -lib
         href: language-reference/compiler-options/lib-compiler-option.md
       - name: -link

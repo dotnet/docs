@@ -25,7 +25,6 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-bugreport](bugreport-compiler-option.md)|Creates a 'Bug Report' file. This file will be sent together with any crash information if it is used with -errorreport:prompt or -errorreport:send.|
 |-checksumalgorithm:\<alg>|Specifies the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA256 (default) or SHA1.<br>Due to collision problems with SHA1, Microsoft recommends SHA256. |
 |[-codepage](codepage-compiler-option.md)|Specifies the codepage to use when opening source files.|
-|[-delaysign](delaysign-compiler-option.md)|Delay-signs the assembly by using only the public part of the strong name key.|
 |-embed|Embed all source files in the PDB.|
 |-embed:\<file list>|Embed specific files in the PDB.|
 |-errorendlocation|Output line and column of the end location of each error.|
@@ -35,8 +34,6 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-help](help-compiler-option.md)|Displays a usage message to stdout.|
 |[-highentropyva](highentropyva-compiler-option.md)|Specifies that high entropy ASLR is supported.|
 |-incremental|Enables incremental compilation [obsolete].|
-|[-keycontainer](keycontainer-compiler-option.md)|Specifies a strong name key container.|
-|[-keyfile](keyfile-compiler-option.md)|Specifies a strong name key file.|
 |[-lib](lib-compiler-option.md)|Specifies additional directories in which to search for references.|
 |[-link](link-compiler-option.md)|Makes COM type information in specified assemblies available to the project.|
 |[-main](main-compiler-option.md)|Specifies the type that contains the entry point (ignore all other possible entry points).|

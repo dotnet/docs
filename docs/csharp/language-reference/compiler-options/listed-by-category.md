@@ -17,9 +17,6 @@ The following compiler options are sorted by category. For an alphabetical list,
 
 |Option|Purpose|
 |------------|-------------|
-|[-delaysign](delaysign-compiler-option.md)|Instructs the compiler to add the public key but to leave the assembly unsigned.|
-|[-keycontainer](keycontainer-compiler-option.md)|Specifies the name of the cryptographic key container.|
-|[-keyfile](keyfile-compiler-option.md)|Specifies the filename containing the cryptographic key.|
 |[-lib](lib-compiler-option.md)|Specifies the location of assemblies referenced by means of [-reference](reference-compiler-option.md).|
 |[-nostdlib](nostdlib-compiler-option.md)|Instructs the compiler not to import the standard library (mscorlib.dll).|
 |-embed|Embed all source files in the PDB.|
@@ -43,7 +40,6 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[-baseaddress](baseaddress-compiler-option.md)|Specifies the preferred base address at which to load a DLL.|
 |[-codepage](codepage-compiler-option.md)|Specifies the code page to use for all source code files in the compilation.|
 |[-help](help-compiler-option.md)|Lists compiler options to stdout.|
-|[-highentropyva](highentropyva-compiler-option.md)|Specifies that the executable file supports address space layout randomization (ASLR).|
 |[-main](main-compiler-option.md)|Specifies the location of the **Main** method.|
 |[-noconfig](noconfig-compiler-option.md)|Instructs the compiler not to compile with csc.rsp.|
 |[-nologo](nologo-compiler-option.md)|Suppresses compiler banner information.|
@@ -67,6 +63,7 @@ f|[-utf8output](utf8output-compiler-option.md)|Displays compiler output using UT
 |-sourcelink|Source link info to embed into PDB. (Listed in the code generation section on roslyn repo)  |
 |-ruleset:\<file>|Specify a ruleset file that disables specific diagnostics. (In the errors and warnings section) |
 |-reportanalyzer|Report additional analyzer information, such as execution time. (In the errors and warnings section) |
+|[-highentropyva](highentropyva-compiler-option.md)|Specifies that the executable file supports address space layout randomization (ASLR). (Listed in security)|
 
 ## See also
 

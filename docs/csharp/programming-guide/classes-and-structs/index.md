@@ -109,7 +109,7 @@ Classes and structs are two of the basic constructs of the common type system in
 
 ## Records
 
-C# 9 introduces the `record` type, a reference type that you can create instead of a class or a struct. Records are classes with built-in behavior intended mainly for scenarios where you want to encapsulate data in immutable types. A record provides the following features:
+C# 9 introduces the `record` type, a reference type that you can create instead of a class or a struct. Records are classes with built-in behavior for encapsulating data in immutable types. A record provides the following features:
 
 * Concise syntax for creating a reference type with immutable properties.
 
@@ -127,7 +127,7 @@ C# 9 introduces the `record` type, a reference type that you can create instead 
 
 * Support for inheritance hierarchies.
 
-  Inheritance is supported because under the covers, a record is a class, not a struct.
+  Inheritance is supported because a record is a class under the covers, not a struct.
 
 For more information, see [Records](../../language-reference/builtin-types/record.md).
 

@@ -1,7 +1,7 @@
 ---
 title: "Patterns - C# reference"
 description: "Learn about the patterns supported by C# switch and is expressions and C# switch statement - C# reference"
-ms.date: 02/18/2021
+ms.date: 03/02/2021
 helpviewer_keywords: 
   - "pattern matching [C#]"
 ---
@@ -40,6 +40,37 @@ Beginning with C# 9.0, for that purpose you can use the *type pattern* as the fo
 :::code language="csharp" source="snippets/patterns/DeclarationAndTypePattern.cs" id="TypePattern":::
 
 Like a declaration pattern, a type pattern matches an expression when an expression result is non-null and its runtime type satisfies any of the conditions listed above.
+
+## Constant pattern
+
+Beginning with C# 7.0, you use the *constant pattern* to test if an expression result equals a specified constant, as the following example shows:
+
+:::code language="csharp" source="snippets/patterns/ConstantPattern.cs" id="BasicExample":::
+
+In a constant pattern, you can use any constant expression, such as:
+
+- an [integer](../builtin-types/integral-numeric-types.md) or [floating-point](../builtin-types/floating-point-numeric-types.md) numerical literal
+- a [char](../builtin-types/char.md) or a [string](../builtin-types/reference-types.md#the-string-type) literal
+- a Boolean value `true` or `false`
+- an [enum](../builtin-types/enum.md) value
+- the name of a declared [const](../keywords/const.md) field or local
+- `null`
+
+Use the constant pattern to check for `null`, as the following example shows:
+
+:::code language="csharp" source="snippets/patterns/ConstantPattern.cs" id="NullCheck":::
+
+The compiler guarantees that no user-overloaded equality operator `==` is invoked when expression `x is null` is evaluated.
+
+## Discard pattern
+
+Beginning with C# 8.0, you use the *discard pattern* `_` to match any expression, including `null`, as the following example shows:
+
+:::code language="csharp" source="snippets/patterns/DiscardPattern.cs" id="BasicExample":::
+
+The discard pattern is useful in `switch` expressions. If none of a `switch` expression's patterns matches an input, the runtime throws an exception. To guarantee that a `switch` expression handles all possible values of its input as you want, provide an arm with the discard pattern. As a `switch` expression evaluates its arms in text order, the arm with the discard pattern must be last.
+
+The discard pattern cannot be a pattern in an `is` expression or a `switch` statement.
 
 ## C# language specification
 

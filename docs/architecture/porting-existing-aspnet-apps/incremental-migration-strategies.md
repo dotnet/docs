@@ -21,6 +21,8 @@ Once the app is running on ASP.NET Core 2.1, migrating it to ASP.NET Core 3.1 in
 
 By the time the app is running on .NET Core 3.1, migrating to the current .NET 5.0 release is relatively painless. The process primarily involves updating the target framework of your project files and their associated NuGet package dependencies. While there are several [breaking changes to consider](../../core/compatibility/5.0.md), most apps don't require significant modifications to move from .NET Core 3.1 to .NET 5.0. The primary deciding factor in [choosing between .NET Core 3.1 and .NET 5.0 is likely to be support](choose-net-core-version.md).
 
+Instead of a "bottom up" approach, another alternative is to start with the web app (or even the entire solution) and use an automated tool to assist with the upgrade. The [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant) can be used to help upgrade .NET Framework apps to .NET Core / .NET 5. It automates many of the common tasks related to upgrading apps, such as modifying project file format, setting appropriate target frameworks, updating NuGet dependencies, and more.
+
 ## Migrating slice by slice
 
 Another approach to the migration would be to identify vertical slices of functionality, and migrate them to the target platform one by one. The first step would be to create a new ASP.NET Core 3.1 or 5 app. Next, identify the individual page or API endpoint that will be migrated first. Build out just the necessary functionality to support this one route in the ASP.NET Core app. Then use HTTP rewriting and/or a reverse proxy to start sending requests for these pages or endpoints to the new app rather than the ASP.NET app.
@@ -32,6 +34,7 @@ Some specific guidance on how to follow this strategy using IIS is covered in [C
 - [What is .NET Standard?](https://dotnet.microsoft.com/platform/dotnet-standard)
 - [Introducing .NET 5](https://devblogs.microsoft.com/dotnet/introducing-net-5/)
 - [Migrate from ASP.NET Core 3.1 to 5.0](/aspnet/core/migration/31-to-50)
+- [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant)
 
 >[!div class="step-by-step"]
 >[Previous](choose-net-core-version.md)

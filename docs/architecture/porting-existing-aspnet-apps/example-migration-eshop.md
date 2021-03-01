@@ -17,6 +17,8 @@ The initial version of the project is shown in Figure 4-1. It's a fairly standar
 
 **Figure 4-1.** The *eShopModernizing* MVC sample project structure.
 
+This chapter demonstrates how to perform many of the upgrade steps by hand. Alternatively, you can use the [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant) to perform many of the initial steps, like converting the project file, changing the target framework, and updating NuGet packages.
+
 ## Run *ApiPort* to identify problematic APIs
 
 The first step in preparing to migrate is to run the *ApiPort* tool. The tool identifies how many .NET Framework APIs the app calls and how many of these have .NET Standard or .NET Core equivalents. Focus primarily on your own app's logic, not third-party dependencies, and pay attention to `System.Web` dependencies that will need to be ported. The ApiPort tool was introduced in the last chapter on [understanding and updating dependencies](/understand-update-dependencies.md).
@@ -844,6 +846,7 @@ Rather than relying on config files for its settings, WCF clients and other .NET
 ## References
 
 - [eShopModernizing GitHub repository](https://github.com/dotnet-architecture/eShopModernizing)
+- [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant)
 - [Your API and ViewModels Should Not Reference Domain Models](https://ardalis.com/your-api-and-view-models-should-not-reference-domain-models/)
 - [Developer Exception Page Middleware](/aspnet/core/fundamentals/error-handling#developer-exception-page)
 - [Deep Dive into EF Core HasData](/archive/msdn-magazine/2018/august/data-points-deep-dive-into-ef-core-hasdata-seeding)

@@ -27,8 +27,7 @@ The .NET SIMD-accelerated types include the following types:
   > [!NOTE]
   > The <xref:System.Numerics.Vector%601> type is not included in the .NET Framework. You must install the [System.Numerics.Vectors](https://www.nuget.org/packages/System.Numerics.Vectors) NuGet package to get access to this type.
   
-The SIMD-accelerated types are implemented in such a way that they can be used with non-SIMD-accelerated hardware or JIT compilers. To take advantage of SIMD instructions, your 64-bit apps must be run by the runtime that uses the **RyuJIT** compiler. A **RyuJIT** compiler is included in .NET Core and in .NET Framework 4.6 and later. SIMD support is only provided when targeting 64-bit processors.
-
+The SIMD-accelerated types are implemented in such a way that they can be used with non-SIMD-accelerated hardware or JIT compilers. To take advantage of SIMD instructions, your 64-bit apps must be run by the runtime that uses the **RyuJIT** compiler. A **RyuJIT** compiler is included in .NET Core, .NET 5 and in .NET Framework 4.6 and later.
 ## How to use SIMD?
 
 Before executing custom SIMD algorithms, it's possible to check if the host machine supports SIMD by using <xref:System.Numerics.Vector.IsHardwareAccelerated?displayProperty=nameWithType>, which returns a <xref:System.Boolean>. This doesn't guarantee that SIMD-acceleration is enabled for a specific type, but is an indicator that it's supported by some types.

@@ -227,9 +227,9 @@ Next, add the `const` token to the declaration using the following code:
 
 ```csharp
 // Insert the const token into the modifiers list, creating a new modifiers list.
-var newModifiers = trimmedLocal.Modifiers.Insert(0, constToken);
+SyntaxTokenList newModifiers = trimmedLocal.Modifiers.Insert(0, constToken);
 // Produce the new local declaration.
-var newLocal = trimmedLocal
+LocalDeclarationStatementSyntax newLocal = trimmedLocal
     .WithModifiers(newModifiers)
     .WithDeclaration(localDeclaration.Declaration);
 ```
@@ -268,58 +268,19 @@ Open the *MakeConstUnitTests.cs* file in the unit test project. The template cre
 
 The template uses [Microsoft.CodeAnalysis.Testing](https://github.com/dotnet/roslyn-sdk/blob/master/src/Microsoft.CodeAnalysis.Testing/README.md) packages for unit testing.
 
-You can create a new data row for this test by defining any code fragment that should not cause your diagnostic to trigger a warning. This overload of `VerifyCSharpDiagnostic` passes when there are no diagnostics triggered for the source code fragment.
+Add the following test method to the `MakeConstUnitTest` class:
 
-Next, replace `TestMethod2` with this test that ensures a diagnostic is raised and a code fix applied for the source code fragment:
+[!code-csharp[test method for fix test](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#FirstFixTest "test method for fix test")]
 
-```csharp
-[DataTestMethod]
-[DataRow(LocalIntCouldBeConstant, LocalIntCouldBeConstantFixed, 10, 13)]
-public void WhenDiagnosticIsRaisedFixUpdatesCode(
-    string test,
-    string fixTest,
-    int line,
-    int column)
-{
-    var expected = new DiagnosticResult
-    {
-        Id = MakeConstAnalyzer.DiagnosticId,
-        Message = new LocalizableResourceString(nameof(MakeConst.Resources.AnalyzerMessageFormat), MakeConst.Resources.ResourceManager, typeof(MakeConst.Resources)).ToString(),
-        Severity = DiagnosticSeverity.Warning,
-        Locations =
-            new[] {
-                    new DiagnosticResultLocation("Test0.cs", line, column)
-                }
-    };
-
-    VerifyCSharpDiagnostic(test, expected);
-
-    VerifyCSharpFix(test, fixTest);
-}
-```
-
-The preceding code also made a couple changes to the code that builds the expected diagnostic result. It uses the public constants registered in the `MakeConst` analyzer. In addition, it uses two string constants for the input and fixed source. Add the following string constants to the `UnitTest` class:
-
-[!code-csharp[string constants for fix test](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#FirstFixTest "string constants for fix test")]
-
-Run these two tests to make sure they pass. In Visual Studio, open the **Test Explorer** by selecting **Test** > **Windows** > **Test Explorer**. Then select the **Run All** link.
+Run these two tests to make sure they pass. In Visual Studio, open the **Test Explorer** by selecting **Test** > **Windows** > **Test Explorer**. Then select the **Run All** option.
 
 ## Create tests for valid declarations
 
-As a general rule, analyzers should exit as quickly as possible, doing minimal work. Visual Studio calls registered analyzers as the user edits code. Responsiveness is a key requirement. There are several test cases for code that should not raise your diagnostic. Your analyzer already handles one of those tests, the case where a variable is assigned after being initialized. Add the following string constant to your tests to represent that case:
+As a general rule, analyzers should exit as quickly as possible, doing minimal work. Visual Studio calls registered analyzers as the user edits code. Responsiveness is a key requirement. There are several test cases for code that should not raise your diagnostic. Your analyzer already handles one of those tests, the case where a variable is assigned after being initialized. Add the following test method to represent that case:
 
 [!code-csharp[variable assigned](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#VariableAssigned "a variable that is assigned after being initialized won't raise the diagnostic")]
 
-Then, add a data row for this test as shown in the snippet below:
-
-```csharp
-[DataTestMethod]
-[DataRow(""),
- DataRow(VariableAssigned)]
-public void WhenTestCodeIsValidNoDiagnosticIsTriggered(string testCode)
-```
-
-This test passes as well. Next, add constants for conditions you haven't handled yet:
+This test passes as well. Next, add test methods for conditions you haven't handled yet:
 
 - Declarations that are already `const`, because they are already const:
 
@@ -337,18 +298,7 @@ It can be even more complicated because C# allows multiple declarations as one s
 
 [!code-csharp[multiple initializers](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#MultipleInitializers "A declaration can be made constant only if all variables in that statement can be made constant")]
 
-The variable `i` can be made constant, but the variable `j` cannot. Therefore, this statement cannot be made a const declaration. Add the `DataRow` declarations for all these tests:
-
-```csharp
-[DataTestMethod]
-[DataRow(""),
-    DataRow(VariableAssigned),
-    DataRow(AlreadyConst),
-    DataRow(NoInitializer),
-    DataRow(InitializerNotConstant),
-    DataRow(MultipleInitializers)]
-public void WhenTestCodeIsValidNoDiagnosticIsTriggered(string testCode)
-```
+The variable `i` can be made constant, but the variable `j` cannot. Therefore, this statement cannot be made a const declaration.
 
 Run your tests again, and you'll see these new test cases fail.
 

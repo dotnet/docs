@@ -1,6 +1,4 @@
-﻿Imports System
-Imports System.Collections
-Imports System.Globalization
+﻿Imports System.Globalization
 
 Namespace ca1024
     ' <snippet1>
@@ -9,7 +7,7 @@ Namespace ca1024
         Shared discountScale As Double() = {5.0, 10.0, 33.0}
         Private customerName As String
         Private customerID As Long
-        Private [when] As DateTime
+        Private [when] As Date
 
         ' Static constructor.
         Shared Sub New()
@@ -50,28 +48,28 @@ Namespace ca1024
         Public Function GetWeekDay() As DayOfWeek
             Return [when].DayOfWeek
         End Function
-    
+
         Public Sub SetCustomerName(customerName As String)
             Me.customerName = customerName
         End Sub
-    
+
         Public Function GetCustomerName() As String
             Return customerName
         End Function
-    
+
         Public Sub SetCustomerID(customerID As Long)
             Me.customerID = customerID
         End Sub
-    
+
         Public Function GetCustomerID() As Long
             Return customerID
         End Function
-    
-        Public Sub SetScheduleTime([when] As DateTime)
+
+        Public Sub SetScheduleTime([when] As Date)
             Me.[when] = [when]
         End Sub
-    
-        Public Function GetScheduleTime() As DateTime
+
+        Public Function GetScheduleTime() As Date
             Return [when]
         End Function
 

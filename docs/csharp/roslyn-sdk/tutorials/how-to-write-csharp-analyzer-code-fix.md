@@ -210,7 +210,7 @@ Next, change the last line to register a code fix. Your fix will create a new do
 You'll notice red squiggles in the code you just added on the symbol `MakeConstAsync`. Add a declaration for `MakeConstAsync` like the following code:
 
 ```csharp
-private async Task<Document> MakeConstAsync(Document document,
+private static async Task<Document> MakeConstAsync(Document document,
     LocalDeclarationStatementSyntax localDeclaration,
     CancellationToken cancellationToken)
 {

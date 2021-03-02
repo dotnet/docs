@@ -10,7 +10,8 @@ ms.assetid: f7f67b05-0983-4cdb-96af-1855d24c967c
 ---
 # Using Properties (C# Programming Guide)
 
-Properties combine aspects of both fields and methods. To the user of an object, a property appears to be a field, accessing the property requires the same syntax. To the implementer of a class, a property is one or two code blocks, representing a [get](../../language-reference/keywords/get.md) accessor and/or a [set](../../language-reference/keywords/set.md) accessor. The code block for the `get` accessor is executed when the property is read; the code block for the `set` accessor is executed when the property is assigned a new value. A property without a `set` accessor is considered read-only. A property without a `get` accessor is considered write-only. A property that has both accessors is read-write.
+Properties combine aspects of both fields and methods. To the user of an object, a property appears to be a field, accessing the property requires the same syntax. To the implementer of a class, a property is one or two code blocks, representing a [get](../../language-reference/keywords/get.md) accessor and/or a [set](../../language-reference/keywords/set.md) accessor. The code block for the `get` accessor is executed when the property is read; the code block for the `set` accessor is executed when the property is assigned a new value. A property without a `set` accessor is considered read-only. A property without a `get` accessor is considered write-only. A property that has both accessors is read-write. In C# 9 and later, you can use an `init` accessor instead of a `set` accessor to make the property read-only.
+
 
 Unlike fields, properties are not classified as variables. Therefore, you cannot pass a property as a [ref](../../language-reference/keywords/ref.md) or [out](../../language-reference/keywords/out-parameter-modifier.md) parameter.
 
@@ -24,7 +25,7 @@ In this example, `Month` is declared as a property so that the `set` accessor ca
 
 Auto-implemented properties provide simplified syntax for simple property declarations. For more information, see [Auto-Implemented Properties](auto-implemented-properties.md).
 
-## The get Accessor
+## The get accessor
 
 The body of the `get` accessor resembles that of a method. It must return a value of the property type. The execution of the `get` accessor is equivalent to reading the value of the field. For example, when you are returning the private variable from the `get` accessor and optimizations are enabled, the call to the `get` accessor method is inlined by the compiler so there is no method-call overhead. However, a virtual `get` accessor method cannot be inlined because the compiler does not know at compile-time which method may actually be called at run time. The following is a `get` accessor that returns the value of a private field `_name`:
 
@@ -46,7 +47,7 @@ The `get` accessor can be used to return the field value or to compute it and re
 
 In the previous code segment, if you do not assign a value to the `Name` property, it will return the value `NA`.
 
-## The set Accessor
+## The set accessor
 
 The `set` accessor resembles a method whose return type is [void](../../language-reference/builtin-types/void.md). It uses an implicit parameter called `value`, whose type is the type of the property. In the following example, a `set` accessor is added to the `Name` property:
 
@@ -57,6 +58,10 @@ When you assign a value to the property, the `set` accessor is invoked by using 
 [!code-csharp[csProgGuideProperties#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideProperties/CS/Properties.cs#13)]
 
 It is an error to use the implicit parameter name, `value`, for a local variable declaration in a `set` accessor.
+
+## The init accessor
+
+The code to create an `init` accessor is the same as the code to create a `set` accessor. The difference is that the `init` accessor can only be called during object initialization by using [object-initializer](object-and-collection-initializers.md) syntax.
 
 ## Remarks
 

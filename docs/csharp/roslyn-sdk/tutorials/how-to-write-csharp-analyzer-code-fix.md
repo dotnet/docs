@@ -95,7 +95,7 @@ The first step is to update the registration constants and `Initialize` method s
 - Change `AnalyzerMessageFormat` to ":::no-loc text="Variable '{0}' can be made constant":::".
 - Change `AnalyzerTitle` to ":::no-loc text="Variable can be made constant":::.
 
-Also, change the **Access Modifier** drop-down to `public`. That makes it easier to use these constants in unit tests. When you have finished, the resource editor should appear as follow figure shows:
+When you have finished, the resource editor should appear as follow figure shows:
 
 ![Update string resources](media/how-to-write-csharp-analyzer-code-fix/update-string-resources.png)
 
@@ -266,18 +266,7 @@ Your analyzer and code fix work on a simple case of a single declaration that ca
 
 Open the *MakeConstUnitTests.cs* file in the unit test project. The template created two tests that follow the two common patterns for an analyzer and code fix unit test. `TestMethod1` shows the pattern for a test that ensures the analyzer doesn't report a diagnostic when it shouldn't. `TestMethod2` shows the pattern for reporting a diagnostic and running the code fix.
 
-The code for almost every test for your analyzer follows one of these two patterns. For the first step, you can rework these tests as data driven tests. Then, it will be easy to create new tests by adding new string constants to represent different test inputs.
-
-For efficiency, the first step is to refactor the two tests into data driven tests. Then, you only need to define a couple string constants for each new test. While you are refactoring, rename both methods to better names. Replace `TestMethod1` with this test that ensures no diagnostic is raised:
-
-```csharp
-[DataTestMethod]
-[DataRow("")]
-public void WhenTestCodeIsValidNoDiagnosticIsTriggered(string testCode)
-{
-    VerifyCSharpDiagnostic(testCode);
-}
-```
+The template uses [Microsoft.CodeAnalysis.Testing](https://github.com/dotnet/roslyn-sdk/blob/master/src/Microsoft.CodeAnalysis.Testing/README.md) packages for unit testing.
 
 You can create a new data row for this test by defining any code fragment that should not cause your diagnostic to trigger a warning. This overload of `VerifyCSharpDiagnostic` passes when there are no diagnostics triggered for the source code fragment.
 
@@ -426,33 +415,29 @@ The first `foreach` loop examines each variable declaration using syntactic anal
 
 ## Add the final polish
 
-You're almost done. There are a few more conditions for your analyzer to handle. Visual Studio calls analyzers while the user is writing code. It's often the case that your analyzer will be called for code that doesn't compile. The diagnostic analyzer's `AnalyzeNode` method does not check to see if the constant value is convertible to the variable type. So, the current implementation will happily convert an incorrect declaration such as int i = "abc"' to a local constant. Add a source string constant for that condition:
+You're almost done. There are a few more conditions for your analyzer to handle. Visual Studio calls analyzers while the user is writing code. It's often the case that your analyzer will be called for code that doesn't compile. The diagnostic analyzer's `AnalyzeNode` method does not check to see if the constant value is convertible to the variable type. So, the current implementation will happily convert an incorrect declaration such as int i = "abc"' to a local constant. Add a test method for this case:
 
-[!code-csharp[Mismatched types don't raise diagnostics](~/samples/snippets/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#DeclarationIsInvalid "When the variable type and the constant type don't match, there's no diagnostic")]
+[!code-csharp[Mismatched types don't raise diagnostics](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#DeclarationIsInvalid "When the variable type and the constant type don't match, there's no diagnostic")]
 
 In addition, reference types are not handled properly. The only constant value allowed for a reference type is `null`, except in this case of <xref:System.String?displayProperty=nameWithType>, which allows string literals. In other words, `const string s = "abc"` is legal, but `const object s = "abc"` is not. This code snippet verifies that condition:
 
-[!code-csharp[Reference types don't raise diagnostics](~/samples/snippets/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#DeclarationIsntString "When the variable type is a reference type other than string, there's no diagnostic")]
+[!code-csharp[Reference types don't raise diagnostics](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#DeclarationIsntString "When the variable type is a reference type other than string, there's no diagnostic")]
 
 To be thorough, you need to add another test to make sure that you can create a constant declaration for a string. The following snippet defines both the code that raises the diagnostic, and the code after the fix has been applied:
 
-[!code-csharp[string reference types raise diagnostics](~/samples/snippets/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#ConstantIsString "When the variable type is string, it can be constant")]
+[!code-csharp[string reference types raise diagnostics](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#ConstantIsString "When the variable type is string, it can be constant")]
 
 Finally, if a variable is declared with the `var` keyword, the code fix does the wrong thing and generates a `const var` declaration, which is not supported by the C# language. To fix this bug, the code fix must replace the `var` keyword with the inferred type's name:
 
-[!code-csharp[var references need to use the inferred types](~/samples/snippets/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#VarDeclarations "Declarations made using var must have the type replaced with the inferred type")]
-
-These changes update the data row declarations for both tests. The following code shows these tests with all data row attributes:
-
-[!code-csharp[The finished tests](~/samples/snippets/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#FinishedTests "The finished tests for the make const analyzer")]
+[!code-csharp[var references need to use the inferred types](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#VarDeclarations "Declarations made using var must have the type replaced with the inferred type")]
 
 Fortunately, all of the above bugs can be addressed using the same techniques that you just learned.
 
-To fix the first bug, first open **DiagnosticAnalyzer.cs** and locate the foreach loop where each of the local declaration's initializers are checked to ensure that they're assigned with constant values. Immediately _before_ the first foreach loop, call `context.SemanticModel.GetTypeInfo()` to retrieve detailed information about the declared type of the local declaration:
+To fix the first bug, first open *DiagnosticAnalyzer.cs* and locate the foreach loop where each of the local declaration's initializers are checked to ensure that they're assigned with constant values. Immediately _before_ the first foreach loop, call `context.SemanticModel.GetTypeInfo()` to retrieve detailed information about the declared type of the local declaration:
 
 ```csharp
 TypeSyntax variableTypeName = localDeclaration.Declaration.Type;
-TypeInfo variableType = context.SemanticModel.GetTypeInfo(variableTypeName).ConvertedType;
+ITypeSymbol variableType = context.SemanticModel.GetTypeInfo(variableTypeName).ConvertedType;
 ```
 
 Then, inside your `foreach` loop, check each initializer to make sure it's convertible to the variable type. Add the following check after ensuring that the initializer is a constant:

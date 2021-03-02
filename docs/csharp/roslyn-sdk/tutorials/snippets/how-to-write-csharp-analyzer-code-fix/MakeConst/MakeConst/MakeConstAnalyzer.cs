@@ -47,7 +47,7 @@ namespace MakeConst
             }
 
             TypeSyntax variableTypeName = localDeclaration.Declaration.Type;
-            TypeInfo variableType = context.SemanticModel.GetTypeInfo(variableTypeName).ConvertedType;
+            ITypeSymbol variableType = context.SemanticModel.GetTypeInfo(variableTypeName).ConvertedType;
 
             // Ensure that all variables in the local declaration have initializers that
             // are assigned with constant values.

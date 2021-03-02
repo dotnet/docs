@@ -17,7 +17,7 @@ no-loc: cmdlet
 Visual Studio 2019 includes two command-line shells for developers:
 
 - **Developer Command Prompt for Visual Studio** - A standard command prompt with certain environment variables set to make using command-line developer tools easier.
-- **Developer PowerShell** - More powerful than a command prompt. For example, you can pass the output of one command (known as a *cmdlet*) to another cmdlet.
+- **Developer PowerShell** - More powerful than a command prompt. For example, you can pass the output of one command (known as a *cmdlet*) to another cmdlet. This shell has the same certain environment variables set as Developer Command Prompt.
 
 Both shells have specific environment variables set that enable you to use command-line developer tools more easily. After opening one of these shells, you can enter the commands for different utilities without having to know where they're located. The commands you can run include:
 
@@ -108,22 +108,14 @@ Or enter the following command in the Windows **Run** dialog box:
 
 #### Developer PowerShell
 
-Search for a file named *Microsoft.VisualStudio.DevShell.dll*, or go to the Tools folder for Visual Studio, such as *%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\Tools* (path changes according to your Visual Studio version, edition, and installation location).
-
-Once you've located the Developer PowerShell assembly file, open it by entering the following command in a PowerShell window:
+Search for a PowerShell script file named *Launch-VsDevShell.ps1*, or go to the Tools folder for Visual Studio, such as *%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\Tools*. (The path changes according to your Visual Studio version, edition, and installation location.) Once you've located the PowerShell file, run it by entering the following command at a Windows PowerShell or PowerShell 6 prompt:
 
 ```powershell
-Import-Module 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\Microsoft.VisualStudio.DevShell.dll'; Enter-VsDevShell 0449c295
-```
-
-Or enter the following command in the Windows **Run** dialog box:
-
-```cmd
-powershell -noexit -command "& { Import-Module 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\Microsoft.VisualStudio.DevShell.dll'; Enter-VsDevShell 0449c295 }"
+& 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\Launch-VsDevShell.ps1'
 ```
 
 > [!TIP]
-> You'll need to edit the path and instance ID (the final number) to match your Visual Studio installation. You can get the information from the *Target* value in the properties of the Developer PowerShell shortcut, which is located in the *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools* folder.
+> The [execution policy](/powershell/module/microsoft.powershell.core/about/about_execution_policies) must be set in order for the cmdlet to run.
 
 ## See also
 

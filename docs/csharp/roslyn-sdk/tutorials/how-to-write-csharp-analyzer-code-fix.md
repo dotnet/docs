@@ -154,12 +154,12 @@ You'll perform some semantic analysis using the <xref:Microsoft.CodeAnalysis.Dia
 
 ```csharp
 // Perform data flow analysis on the local declaration.
-var dataFlowAnalysis = context.SemanticModel.AnalyzeDataFlow(localDeclaration);
+DataFlowAnalysis dataFlowAnalysis = context.SemanticModel.AnalyzeDataFlow(localDeclaration);
 
 // Retrieve the local symbol for each variable in the local declaration
 // and ensure that it is not written outside of the data flow analysis region.
-var variable = localDeclaration.Declaration.Variables.Single();
-var variableSymbol = context.SemanticModel.GetDeclaredSymbol(variable);
+VariableDeclaratorSyntax variable = localDeclaration.Declaration.Variables.Single();
+ISymbol variableSymbol = context.SemanticModel.GetDeclaredSymbol(variable);
 if (dataFlowAnalysis.WrittenOutside.Contains(variableSymbol))
 {
     return;
@@ -375,12 +375,12 @@ In your `AnalyzeNode` method, replace the original semantic analysis:
 
 ```csharp
 // Perform data flow analysis on the local declaration.
-var dataFlowAnalysis = context.SemanticModel.AnalyzeDataFlow(localDeclaration);
+DataFlowAnalysis dataFlowAnalysis = context.SemanticModel.AnalyzeDataFlow(localDeclaration);
 
 // Retrieve the local symbol for each variable in the local declaration
 // and ensure that it is not written outside of the data flow analysis region.
-var variable = localDeclaration.Declaration.Variables.Single();
-var variableSymbol = context.SemanticModel.GetDeclaredSymbol(variable);
+VariableDeclaratorSyntax variable = localDeclaration.Declaration.Variables.Single();
+ISymbol variableSymbol = context.SemanticModel.GetDeclaredSymbol(variable);
 if (dataFlowAnalysis.WrittenOutside.Contains(variableSymbol))
 {
     return;
@@ -392,15 +392,15 @@ with the following code snippet:
 ```csharp
 // Ensure that all variables in the local declaration have initializers that
 // are assigned with constant values.
-foreach (var variable in localDeclaration.Declaration.Variables)
+foreach (VariableDeclaratorSyntax variable in localDeclaration.Declaration.Variables)
 {
-    var initializer = variable.Initializer;
+    EqualsValueClauseSyntax initializer = variable.Initializer;
     if (initializer == null)
     {
         return;
     }
 
-    var constantValue = context.SemanticModel.GetConstantValue(initializer.Value);
+    Optional<object> constantValue = context.SemanticModel.GetConstantValue(initializer.Value);
     if (!constantValue.HasValue)
     {
         return;
@@ -408,13 +408,13 @@ foreach (var variable in localDeclaration.Declaration.Variables)
 }
 
 // Perform data flow analysis on the local declaration.
-var dataFlowAnalysis = context.SemanticModel.AnalyzeDataFlow(localDeclaration);
+DataFlowAnalysis dataFlowAnalysis = context.SemanticModel.AnalyzeDataFlow(localDeclaration);
 
-foreach (var variable in localDeclaration.Declaration.Variables)
+foreach (VariableDeclaratorSyntax variable in localDeclaration.Declaration.Variables)
 {
     // Retrieve the local symbol for each variable in the local declaration
     // and ensure that it is not written outside of the data flow analysis region.
-    var variableSymbol = context.SemanticModel.GetDeclaredSymbol(variable);
+    ISymbol variableSymbol = context.SemanticModel.GetDeclaredSymbol(variable);
     if (dataFlowAnalysis.WrittenOutside.Contains(variableSymbol))
     {
         return;
@@ -451,8 +451,8 @@ Fortunately, all of the above bugs can be addressed using the same techniques th
 To fix the first bug, first open **DiagnosticAnalyzer.cs** and locate the foreach loop where each of the local declaration's initializers are checked to ensure that they're assigned with constant values. Immediately _before_ the first foreach loop, call `context.SemanticModel.GetTypeInfo()` to retrieve detailed information about the declared type of the local declaration:
 
 ```csharp
-var variableTypeName = localDeclaration.Declaration.Type;
-var variableType = context.SemanticModel.GetTypeInfo(variableTypeName).ConvertedType;
+TypeSyntax variableTypeName = localDeclaration.Declaration.Type;
+TypeInfo variableType = context.SemanticModel.GetTypeInfo(variableTypeName).ConvertedType;
 ```
 
 Then, inside your `foreach` loop, check each initializer to make sure it's convertible to the variable type. Add the following check after ensuring that the initializer is a constant:
@@ -460,7 +460,7 @@ Then, inside your `foreach` loop, check each initializer to make sure it's conve
 ```csharp
 // Ensure that the initializer value can be converted to the type of the
 // local declaration without a user-defined conversion.
-var conversion = context.SemanticModel.ClassifyConversion(initializer.Value, variableType);
+Conversion conversion = context.SemanticModel.ClassifyConversion(initializer.Value, variableType);
 if (!conversion.Exists || conversion.IsUserDefined)
 {
     return;

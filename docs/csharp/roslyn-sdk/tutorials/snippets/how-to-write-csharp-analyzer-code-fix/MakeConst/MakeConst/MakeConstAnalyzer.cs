@@ -46,20 +46,20 @@ namespace MakeConst
                 return;
             }
 
-            var variableTypeName = localDeclaration.Declaration.Type;
-            var variableType = context.SemanticModel.GetTypeInfo(variableTypeName).ConvertedType;
+            TypeSyntax variableTypeName = localDeclaration.Declaration.Type;
+            TypeInfo variableType = context.SemanticModel.GetTypeInfo(variableTypeName).ConvertedType;
 
             // Ensure that all variables in the local declaration have initializers that
             // are assigned with constant values.
-            foreach (var variable in localDeclaration.Declaration.Variables)
+            foreach (VariableDeclaratorSyntax variable in localDeclaration.Declaration.Variables)
             {
-                var initializer = variable.Initializer;
+                EqualsValueClauseSyntax initializer = variable.Initializer;
                 if (initializer == null)
                 {
                     return;
                 }
 
-                var constantValue = context.SemanticModel.GetConstantValue(initializer.Value);
+                Optional<object> constantValue = context.SemanticModel.GetConstantValue(initializer.Value);
                 if (!constantValue.HasValue)
                 {
                     return;
@@ -67,7 +67,7 @@ namespace MakeConst
 
                 // Ensure that the initializer value can be converted to the type of the
                 // local declaration without a user-defined conversion.
-                var conversion = context.SemanticModel.ClassifyConversion(initializer.Value, variableType);
+                Conversion conversion = context.SemanticModel.ClassifyConversion(initializer.Value, variableType);
                 if (!conversion.Exists || conversion.IsUserDefined)
                 {
                     return;
@@ -94,7 +94,7 @@ namespace MakeConst
             // Perform data flow analysis on the local declaration.
             var dataFlowAnalysis = context.SemanticModel.AnalyzeDataFlow(localDeclaration);
 
-            foreach (var variable in localDeclaration.Declaration.Variables)
+            foreach (VariableDeclaratorSyntax variable in localDeclaration.Declaration.Variables)
             {
                 // Retrieve the local symbol for each variable in the local declaration
                 // and ensure that it is not written outside of the data flow analysis region.

@@ -1,13 +1,13 @@
 ---
 title: "Tutorial: Write your first analyzer and code fix"
 description: This tutorial provides step-by-step instructions to build an analyzer and code fix using the .NET Compiler SDK (Roslyn APIs).
-ms.date: 08/01/2018
+ms.date: 03/02/2021
 ms.custom: mvc
 ---
 
 # Tutorial: Write your first analyzer and code fix
 
-The .NET Compiler Platform SDK provides the tools you need to create custom diagnostics and diagnostic suppressors that target C# or Visual Basic code. An **analyzer** contains code that recognizes violations of your rule. Your **code fix** contains the code that fixes the violation. The rules you implement can be anything from code structure to coding style to naming conventions and more. The .NET Compiler Platform provides the framework for running analysis as developers are writing code, and all the Visual Studio UI features for fixing code: showing squiggles in the editor, populating the Visual Studio Error List, creating the "light bulb" suggestions and showing the rich preview of the suggested fixes.
+The .NET Compiler Platform SDK provides the tools you need to create custom diagnostics (analyzers), code fixes, code refactoring, and diagnostic suppressors that target C# or Visual Basic code. An **analyzer** contains code that recognizes violations of your rule. Your **code fix** contains the code that fixes the violation. The rules you implement can be anything from code structure to coding style to naming conventions and more. The .NET Compiler Platform provides the framework for running analysis as developers are writing code, and all the Visual Studio UI features for fixing code: showing squiggles in the editor, populating the Visual Studio Error List, creating the "light bulb" suggestions and showing the rich preview of the suggested fixes.
 
 In this tutorial, you'll explore the creation of an **analyzer** and an accompanying **code fix** using the Roslyn APIs. An analyzer is a way to perform source code analysis and report a problem to the user. Optionally, a code fix can be associated with the analyzer to represent a modification to the user's source code. This tutorial creates an analyzer that finds local variable declarations that could be declared using the `const` modifier but are not. The accompanying code fix modifies those declarations to add the `const` modifier.
 
@@ -27,29 +27,21 @@ There are several steps to creating and validating your analyzer:
 1. Implement the code fix to accept recommendations.
 1. Improve the analysis through unit tests.
 
-## Explore the analyzer template
-
-Your analyzer reports to the user any local variable declarations that can be converted to local constants. For example, consider the following code:
-
-```csharp
-int x = 0;
-Console.WriteLine(x);
-```
-
-In the code above, `x` is assigned a constant value and is never modified. It can be declared using the `const` modifier:
-
-```csharp
-const int x = 0;
-Console.WriteLine(x);
-```
-
-The analysis to determine whether a variable can be made constant is involved, requiring syntactic analysis, constant analysis of the initializer expression and dataflow analysis to ensure that the variable is never written to. The .NET Compiler Platform provides APIs that make it easier to perform this analysis. The first step is to create a new C# **Analyzer with code fix** project.
+## Create the solution
 
 - In Visual Studio, choose **File > New > Project...** to display the New Project dialog.
 - Under **Visual C# > Extensibility**, choose **Analyzer with code fix (.NET Standard)**.
 - Name your project "**MakeConst**" and click OK.
 
-The analyzer with code fix template creates three projects: one contains the analyzer and code fix, the second is a unit test project, and the third is the VSIX project. The default startup project is the VSIX project. Press <kbd>F5</kbd> to start the VSIX project. This starts a second instance of Visual Studio that has loaded your new analyzer.
+## Explore the analyzer template
+
+The analyzer with code fix template creates five projects:
+
+- **MakeConst**, which contains the analyzer.
+- **MakeConst.CodeFixes**, which contains the code fix.
+- **MakeConst.Package**, which is used to produce NuGet package for the analyzer and code fix.
+- **MakeConst.Test**, which is a unit test project.
+- **MakeConst.Vsix**, which is the default startup project that starts a second instance of Visual Studio that has loaded your new analyzer. Press <kbd>F5</kbd> to start the VSIX project.
 
 > [!TIP]
 > When you run your analyzer, you start a second copy of Visual Studio. This second copy uses a different registry hive to store settings. That enables you to differentiate the visual settings in the two copies of Visual Studio. You can pick a different theme for the experimental run of Visual Studio. In addition, don't roam your settings or login to your Visual Studio account using the experimental run of Visual Studio. That keeps the settings different.
@@ -66,6 +58,22 @@ You don't have to start a second copy of Visual Studio and create new code to te
 
 > [!TIP]
 > Analyzer unit tests are a great tool when you know what code constructs should and shouldn't trigger your analyzer. Loading your analyzer in another copy of Visual Studio is a great tool to explore and find constructs you may not have thought about yet.
+
+In this tutorial, you write an analyzer that reports to the user any local variable declarations that can be converted to local constants. For example, consider the following code:
+
+```csharp
+int x = 0;
+Console.WriteLine(x);
+```
+
+In the code above, `x` is assigned a constant value and is never modified. It can be declared using the `const` modifier:
+
+```csharp
+const int x = 0;
+Console.WriteLine(x);
+```
+
+The analysis to determine whether a variable can be made constant is involved, requiring syntactic analysis, constant analysis of the initializer expression and dataflow analysis to ensure that the variable is never written to. The .NET Compiler Platform provides APIs that make it easier to perform this analysis.
 
 ## Create analyzer registrations
 
@@ -177,8 +185,9 @@ The light bulb should appear, and your analyzer should report a diagnostic. Howe
 
 An analyzer can provide one or more code fixes. A code fix defines an edit that addresses the reported issue. For the analyzer that you created, you can provide a code fix that inserts the const keyword:
 
-```csharp
-const int x = 0;
+```diff
+- int x = 0;
++ const int x = 0;
 Console.WriteLine(x);
 ```
 
@@ -192,11 +201,11 @@ Next, delete the `MakeUppercaseAsync` method. It no longer applies.
 
 All code fix providers derive from <xref:Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider>. They all override <xref:Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.RegisterCodeFixesAsync(Microsoft.CodeAnalysis.CodeFixes.CodeFixContext)?displayProperty=nameWithType> to report available code fixes. In `RegisterCodeFixesAsync`, change the ancestor node type you're searching for to a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.LocalDeclarationStatementSyntax> to match the diagnostic:
 
-[!code-csharp[Find local declaration node](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstCodeFixProvider.cs#FindDeclarationNode  "Find the local declaration node that raised the diagnostic")]
+[!code-csharp[Find local declaration node](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.CodeFixes/MakeConstCodeFixProvider.cs#FindDeclarationNode  "Find the local declaration node that raised the diagnostic")]
 
 Next, change the last line to register a code fix. Your fix will create a new document that results from adding the `const` modifier to an existing declaration:
 
-[!code-csharp[Register the new code fix](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstCodeFixProvider.cs#RegisterCodeFix  "Register the new code fix")]
+[!code-csharp[Register the new code fix](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.CodeFixes/MakeConstCodeFixProvider.cs#RegisterCodeFix  "Register the new code fix")]
 
 You'll notice red squiggles in the code you just added on the symbol `MakeConstAsync`. Add a declaration for `MakeConstAsync` like the following code:
 
@@ -212,7 +221,7 @@ Your new `MakeConstAsync` method will transform the <xref:Microsoft.CodeAnalysis
 
 You create a new `const` keyword token to insert at the front of the declaration statement. Be careful to first remove any leading trivia from the first token of the declaration statement and attach it to the `const` token. Add the following code to the `MakeConstAsync` method:
 
-[!code-csharp[Create a new const keyword token](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstCodeFixProvider.cs#CreateConstToken  "Create the new const keyword token")]
+[!code-csharp[Create a new const keyword token](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.CodeFixes/MakeConstCodeFixProvider.cs#CreateConstToken  "Create the new const keyword token")]
 
 Next, add the `const` token to the declaration using the following code:
 
@@ -227,7 +236,7 @@ var newLocal = trimmedLocal
 
 Next, format the new declaration to match C# formatting rules. Formatting your changes to match existing code creates a better experience. Add the following statement immediately after the existing code:
 
-[!code-csharp[Format the new declaration](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstCodeFixProvider.cs#FormatLocal  "Format the new declaration")]
+[!code-csharp[Format the new declaration](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.CodeFixes/MakeConstCodeFixProvider.cs#FormatLocal  "Format the new declaration")]
 
 A new namespace is required for this code. Add the following `using` directive to the top of the file:
 
@@ -243,7 +252,7 @@ The final step is to make your edit. There are three steps to this process:
 
 Add the following code to the end of the `MakeConstAsync` method:
 
-[!code-csharp[replace the declaration](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstCodeFixProvider.cs#ReplaceDocument  "Generate a new document by replacing the declaration")]
+[!code-csharp[replace the declaration](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.CodeFixes/MakeConstCodeFixProvider.cs#ReplaceDocument  "Generate a new document by replacing the declaration")]
 
 Your code fix is ready to try.  Press <kbd>F5</kbd> to run the analyzer project in a second instance of Visual Studio. In the second Visual Studio instance, create a new C# Console Application project and add a few local variable declarations initialized with constant values to the Main method. You'll see that they are reported as warnings as below.
 
@@ -479,7 +488,7 @@ else if (variableType.IsReferenceType && constantValue.Value != null)
 }
 ```
 
-You must write a bit more code in your code fix provider to replace the `var` keyword with the correct type name. Return to **CodeFixProvider.cs**. The code you'll add does the following steps:
+You must write a bit more code in your code fix provider to replace the `var` keyword with the correct type name. Return to *MakeConstCodeFixProvider.cs*. The code you'll add does the following steps:
 
 - Check if the declaration is a `var` declaration, and if it is:
 - Create a new type for the inferred type.
@@ -489,7 +498,7 @@ You must write a bit more code in your code fix provider to replace the `var` ke
 
 That sounds like a lot of code. It's not. Replace the line that declares and initializes `newLocal` with the following code. It goes immediately after the initialization of `newModifiers`:
 
-[!code-csharp[Replace Var designations](~/samples/snippets/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst/MakeConstCodeFixProvider.cs#ReplaceVar "Replace a var designation with the explicit type")]
+[!code-csharp[Replace Var designations](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.CodeFixes/MakeConstCodeFixProvider.cs#ReplaceVar "Replace a var designation with the explicit type")]
 
 You'll need to add one `using` directive to use the <xref:Microsoft.CodeAnalysis.Simplification.Simplifier> type:
 

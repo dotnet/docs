@@ -3,7 +3,7 @@ title: Remove the .NET runtime and SDK
 description: This article describes how to determine which versions of the .NET Runtime and SDK are currently installed, and then, how to remove them on Windows, Mac, and Linux.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/20/2020
+ms.date: 03/02/2021
 zone_pivot_groups: operating-systems-set-one
 ---
 

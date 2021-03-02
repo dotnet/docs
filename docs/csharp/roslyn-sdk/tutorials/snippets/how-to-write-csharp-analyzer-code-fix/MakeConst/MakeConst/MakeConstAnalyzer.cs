@@ -52,8 +52,10 @@ namespace MakeConst
             }
             // </SnippetBailOutOnConst>
 
+            // <SnippetVariableConvertedType>
             TypeSyntax variableTypeName = localDeclaration.Declaration.Type;
-            ITypeSymbol variableType = context.SemanticModel.GetTypeInfo(variableTypeName).ConvertedType;
+            ITypeSymbol variableType = context.SemanticModel.GetTypeInfo(variableTypeName, context.CancellationToken).ConvertedType;
+            // </SnippetVariableConvertedType>
 
             // Ensure that all variables in the local declaration have initializers that
             // are assigned with constant values.
@@ -65,12 +67,13 @@ namespace MakeConst
                     return;
                 }
 
-                Optional<object> constantValue = context.SemanticModel.GetConstantValue(initializer.Value);
+                Optional<object> constantValue = context.SemanticModel.GetConstantValue(initializer.Value, context.CancellationToken);
                 if (!constantValue.HasValue)
                 {
                     return;
                 }
 
+                // <SnippetBailOutOnUserDefinedConversion>
                 // Ensure that the initializer value can be converted to the type of the
                 // local declaration without a user-defined conversion.
                 Conversion conversion = context.SemanticModel.ClassifyConversion(initializer.Value, variableType);
@@ -78,7 +81,9 @@ namespace MakeConst
                 {
                     return;
                 }
+                // </SnippetBailOutOnUserDefinedConversion>
 
+                // <SnippetHandleSpecialCases>
                 // Special cases:
                 //  * If the constant value is a string, the type of the local declaration
                 //    must be System.String.
@@ -95,6 +100,7 @@ namespace MakeConst
                 {
                     return;
                 }
+                // </SnippetHandleSpecialCases>
             }
 
             // Perform data flow analysis on the local declaration.
@@ -104,7 +110,7 @@ namespace MakeConst
             {
                 // Retrieve the local symbol for each variable in the local declaration
                 // and ensure that it is not written outside of the data flow analysis region.
-                ISymbol variableSymbol = context.SemanticModel.GetDeclaredSymbol(variable);
+                ISymbol variableSymbol = context.SemanticModel.GetDeclaredSymbol(variable, context.CancellationToken);
                 if (dataFlowAnalysis.WrittenOutside.Contains(variableSymbol))
                 {
                     return;

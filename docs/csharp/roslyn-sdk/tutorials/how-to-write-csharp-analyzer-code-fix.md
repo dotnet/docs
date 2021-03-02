@@ -149,7 +149,7 @@ DataFlowAnalysis dataFlowAnalysis = context.SemanticModel.AnalyzeDataFlow(localD
 // Retrieve the local symbol for each variable in the local declaration
 // and ensure that it is not written outside of the data flow analysis region.
 VariableDeclaratorSyntax variable = localDeclaration.Declaration.Variables.Single();
-ISymbol variableSymbol = context.SemanticModel.GetDeclaredSymbol(variable);
+ISymbol variableSymbol = context.SemanticModel.GetDeclaredSymbol(variable, context.CancellationToken);
 if (dataFlowAnalysis.WrittenOutside.Contains(variableSymbol))
 {
     return;
@@ -313,7 +313,7 @@ DataFlowAnalysis dataFlowAnalysis = context.SemanticModel.AnalyzeDataFlow(localD
 // Retrieve the local symbol for each variable in the local declaration
 // and ensure that it is not written outside of the data flow analysis region.
 VariableDeclaratorSyntax variable = localDeclaration.Declaration.Variables.Single();
-ISymbol variableSymbol = context.SemanticModel.GetDeclaredSymbol(variable);
+ISymbol variableSymbol = context.SemanticModel.GetDeclaredSymbol(variable, context.CancellationToken);
 if (dataFlowAnalysis.WrittenOutside.Contains(variableSymbol))
 {
     return;
@@ -333,7 +333,7 @@ foreach (VariableDeclaratorSyntax variable in localDeclaration.Declaration.Varia
         return;
     }
 
-    Optional<object> constantValue = context.SemanticModel.GetConstantValue(initializer.Value);
+    Optional<object> constantValue = context.SemanticModel.GetConstantValue(initializer.Value, context.CancellationToken);
     if (!constantValue.HasValue)
     {
         return;
@@ -347,7 +347,7 @@ foreach (VariableDeclaratorSyntax variable in localDeclaration.Declaration.Varia
 {
     // Retrieve the local symbol for each variable in the local declaration
     // and ensure that it is not written outside of the data flow analysis region.
-    ISymbol variableSymbol = context.SemanticModel.GetDeclaredSymbol(variable);
+    ISymbol variableSymbol = context.SemanticModel.GetDeclaredSymbol(variable, context.CancellationToken);
     if (dataFlowAnalysis.WrittenOutside.Contains(variableSymbol))
     {
         return;
@@ -379,43 +379,15 @@ Fortunately, all of the above bugs can be addressed using the same techniques th
 
 To fix the first bug, first open *DiagnosticAnalyzer.cs* and locate the foreach loop where each of the local declaration's initializers are checked to ensure that they're assigned with constant values. Immediately _before_ the first foreach loop, call `context.SemanticModel.GetTypeInfo()` to retrieve detailed information about the declared type of the local declaration:
 
-```csharp
-TypeSyntax variableTypeName = localDeclaration.Declaration.Type;
-ITypeSymbol variableType = context.SemanticModel.GetTypeInfo(variableTypeName).ConvertedType;
-```
+[!code-csharp[Retrieve type information](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#VariableConvertedType "Retrieve type information")]
 
 Then, inside your `foreach` loop, check each initializer to make sure it's convertible to the variable type. Add the following check after ensuring that the initializer is a constant:
 
-```csharp
-// Ensure that the initializer value can be converted to the type of the
-// local declaration without a user-defined conversion.
-Conversion conversion = context.SemanticModel.ClassifyConversion(initializer.Value, variableType);
-if (!conversion.Exists || conversion.IsUserDefined)
-{
-    return;
-}
-```
+[!code-csharp[Ensure non-user-defined conversion](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#BailOutOnUserDefinedConversion "Bail-out on user-defined conversion")]
 
 The next change builds upon the last one. Before the closing curly brace of the first foreach loop, add the following code to check the type of the local declaration when the constant is a string or null.
 
-```csharp
-// Special cases:
-//  * If the constant value is a string, the type of the local declaration
-//    must be System.String.
-//  * If the constant value is null, the type of the local declaration must
-//    be a reference type.
-if (constantValue.Value is string)
-{
-    if (variableType.SpecialType != SpecialType.System_String)
-    {
-        return;
-    }
-}
-else if (variableType.IsReferenceType && constantValue.Value != null)
-{
-    return;
-}
-```
+[!code-csharp[Handle special cases](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#HandleSpecialCases "Handle special cases")]
 
 You must write a bit more code in your code fix provider to replace the `var` keyword with the correct type name. Return to *MakeConstCodeFixProvider.cs*. The code you'll add does the following steps:
 

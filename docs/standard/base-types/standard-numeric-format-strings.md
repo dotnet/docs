@@ -20,11 +20,11 @@ helpviewer_keywords:
 ---
 # Standard numeric format strings
 
-Standard numeric format strings are used to format common numeric types. A standard numeric format string takes the form `Axxx`, where:
+Standard numeric format strings are used to format common numeric types. A standard numeric format string takes the form *`[format specifier][precision specifier]`*, where:
 
-- `A` is a single alphabetic character called the *format specifier*. Any numeric format string that contains more than one alphabetic character, including white space, is interpreted as a custom numeric format string. For more information, see [Custom Numeric Format Strings](custom-numeric-format-strings.md).
+- *Format specifier* is a single alphabetic character that specifies the type of number format, for example, currency or percent. Any numeric format string that contains more than one alphabetic character, including white space, is interpreted as a custom numeric format string. For more information, see [Custom numeric format strings](custom-numeric-format-strings.md).
 
-- `xxx` is an optional integer called the *precision specifier*. The precision specifier affects the number of digits in the resulting string. In .NET 6 and later versions, the maximum precision value is <xref:System.Int32.MaxValue?displayProperty=nameWithType>. In previous .NET versions, the precision can range from 0 to 99. The precision specifier controls the number of digits in the string representation of a number. It does not round the number itself. To perform a rounding operation, use the <xref:System.Math.Ceiling%2A?displayProperty=nameWithType>, <xref:System.Math.Floor%2A?displayProperty=nameWithType>, or <xref:System.Math.Round%2A?displayProperty=nameWithType> method.
+- *Precision specifier* is an optional integer that affects the number of digits in the resulting string. In .NET 6 and later versions, the maximum precision value is <xref:System.Int32.MaxValue?displayProperty=nameWithType>. In previous .NET versions, the precision can range from 0 to 99. The precision specifier controls the number of digits in the string representation of a number. It does not round the number itself. To perform a rounding operation, use the <xref:System.Math.Ceiling%2A?displayProperty=nameWithType>, <xref:System.Math.Floor%2A?displayProperty=nameWithType>, or <xref:System.Math.Round%2A?displayProperty=nameWithType> method.
 
   When *precision specifier* controls the number of fractional digits in the result string, the result string reflects a number that is rounded to a representable result nearest to the infinitely precise result. If there are two equally near representable results:
   - **On .NET Framework and .NET Core up to .NET Core 2.0**, the runtime selects the result with the greater least significant digit (that is, using <xref:System.MidpointRounding.AwayFromZero?displayProperty=nameWithType>).

@@ -5,15 +5,17 @@ ms.date: 02/26/2021
 ---
 # Standard numeric format parsing precision
 
-In .NET 6+, .NET supports precision up to <xref:System.Int32.MaxValue?displayProperty=nameWithType> when formatting numbers as strings using `ToString` and `TryFormat`.
+In .NET 6+, .NET supports greater precision values when formatting numbers as strings using `ToString` and `TryFormat`.
 
 ## Change description
 
-In previous .NET versions, the standard numeric format parsing logic is limited to a precision of 99 or less. Some numeric types have more precision, but `ToString(string format)` does not expose it correctly. If you specify a precision greater than 99, for example, `32.ToString("C100")`, the format string is interpreted as a custom numeric format string instead of "currency with precision 100". In custom numeric format strings, characters are interpreted as character literals. In addition, a format string that contains an invalid format specifier (that is, the character at the beginning of the string) is interpreted differently depending on the precision value. `H99` throws a <xref:System.FormatException> for the invalid format specifier, while `H100` is interpreted as a custom numeric format string.
+When formatting numbers as strings, the *precision specifier* in the format string represents the number of digits in the resulting string. Depending on the *format specifier*, the precision can represent the total number of digits, the number of significant digits, or the number of decimal digits.
+
+In previous .NET versions, the standard numeric format parsing logic is limited to a precision of 99 or less. Some numeric types have more precision, but `ToString(string format)` does not expose it correctly. If you specify a precision greater than 99, for example, `32.ToString("C100")`, the format string is interpreted as a custom numeric format string instead of "currency with precision 100". In custom numeric format strings, characters are interpreted as [character literals](../../../../standard/base-types/custom-numeric-format-strings.md#character-literals). In addition, a format string that contains an invalid format specifier (that is, the character at the beginning of the string) is interpreted differently depending on the precision value. `H99` throws a <xref:System.FormatException> for the invalid format specifier, while `H100` is interpreted as a custom numeric format string.
 
 Starting in .NET 6, .NET supports precision up to <xref:System.Int32.MaxValue?displayProperty=nameWithType>. A format string that consists of a valid format specifier with any number of digits is interpreted as a standard numeric format string with precision. If you specify a precision that's greater than <xref:System.Int32.MaxValue?displayProperty=nameWithType>, a <xref:System.FormatException> is thrown. This change was implemented in the parsing logic that affects all numeric types.
 
-The following table shows how the behavior for various format strings changed.
+The following table shows the behavior changes for various format strings.
 
 | Format string | Previous behavior | .NET 6+ behavior |
 | - | - | - |
@@ -34,7 +36,7 @@ This change corrects unexpected behavior when using higher precision for numeric
 
 In most cases, no action is necessary and the correct precision will be shown in the resulting strings.
 
-However, if you want to revert to the previous (incorrect) behavior where the alphabetic character in the format string is interpreted as a literal character when the precision is greater than 99, you can wrap the first character in single quotes or escape it with a backslash. For example, in previous .NET versions, `42.ToString("G999")` returns `G999`. To maintain that behavior, change the format string to `"'G'999"`. This will work on .NET Framework, .NET Core, and .NET 5+.
+However, if you want to revert to the previous (incorrect) behavior where the format specifier is interpreted as a literal character when the precision is greater than 99, you can wrap that character in single quotes or escape it with a backslash. For example, in previous .NET versions, `42.ToString("G999")` returns `G999`. To maintain that behavior, change the format string to `"'G'999"` or `"\\G999"`. This will work on .NET Framework, .NET Core, and .NET 5+.
 
 The following format strings will continue to be interpreted as custom numeric format strings:
 

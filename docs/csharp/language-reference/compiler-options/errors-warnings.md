@@ -5,8 +5,11 @@ ms.date: 02/27/2021
 f1_keywords: 
   - "cs.build.options"
 helpviewer_keywords: 
-  - "FileAlignment compiler option [C#]"
-  - "Optimize compiler option [C#]"
+  - "TreatWarningsAsErrors compiler option [C#]"
+  - "WarningsAsErrors compiler option [C#]"
+  - "WarningsNotAsErrors compiler option [C#]"
+  - "WarningLevel compiler option [C#]"
+  - "DisabledWarnings compiler option [C#]"
 ---
 # C# Compiler Options to report errors and warnings
 
@@ -17,10 +20,9 @@ The following options control how the compiler reports errors and warnings. The 
 - **WarningsNotAsErrors** / `-warnaserror`: Treat one or more warnings not as errors
 - **WarningLevel** / `-warn`: Set warning level.
 - **DisabledWarnings** / `-nowarn`: Set a list of disabled warnings.
-
-`-ruleset` is not documented
-`-errorlog` is not documented.
-`-reportanalyzer` is not documented.
+- **??** / `-ruleset`: Specify a ruleset file that disables specific diagnostics.
+- **??** / `-errorlog`: Specify a file to log all compiler and analyzer diagnostics.
+- **?** / `-reportanalyzer`:  Report additional analyzer information, such as execution time.
 
 ## TreatWarningsAsErrors
 
@@ -69,3 +71,15 @@ The **DisabledWarnings** option lets you suppress the compiler from displaying o
 - Compiler Warning (level 1) CS2002  
 - Compiler Warning (level 1) CS2023
 - Compiler Warning (level 1) CS2029
+
+## ruleset
+
+TODO
+
+## errorlog
+
+TODO
+
+## reportAnalyzer
+
+TODO

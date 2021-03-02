@@ -8,13 +8,15 @@ helpviewer_keywords:
   - "DebugType compiler option [C#]"
   - "Optimize compiler option [C#]"
   - "Deterministic compiler option [C#]"
+  - "ProduceOnlyReferenceAssembly compiler option [C#]"
 ---
 # C# Compiler Options that control code generation
 
 The following options control compiler inputs. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
 
 - **DebugType** / `-debug`: Emit (or do not Emit) debugging information.
-- **Optimize** / `-reference` or `-references`: Reference metadata from the specified assembly file or files.
+- **??** / `-sourcelink`: Source link info to embed into PDB.
+- **Optimize** / `-optimize`: Enable optimizations.
 - **Deterministic** / `-deterministic`: Produce byte-for-byte equivalent output from the same input source.
 - **ProduceOnlyReferenceAssembly** / `-refonly`: Produce a reference assembly, instead of a full assembly, as the primary output.
 
@@ -32,6 +34,10 @@ The value of this element can be either `full` or `pdbonly`. The *full* argument
 > One difference between *pdbonly* and *full* is that with *full* the compiler emits a <xref:System.Diagnostics.DebuggableAttribute>, which is used to tell the JIT compiler that debug information is available. Therefore, you will get an error if your code contains the <xref:System.Diagnostics.DebuggableAttribute> set to false if you use *full*.
 
 For more information on how to configure the debug performance of an application, see [Making an Image Easier to Debug](../../../framework/debug-trace-profile/making-an-image-easier-to-debug.md). To change the location of the .pdb file, see [**Pdb**](./outputs.md#pdb).
+
+## sourcelink
+
+TODO
 
 ## Optimize
 

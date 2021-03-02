@@ -5,27 +5,21 @@ ms.date: 02/18/2021
 f1_keywords: 
   - "cs.build.options"
 helpviewer_keywords: 
-  - "DocumentationFile compiler option [C#]"
-  - "ModuleAssemblyName compiler option [C#]"
   - "OutputAssembly compiler option [C#]"
-  - "PathMap compiler option [C#]"
-  - "Pdb compiler option [C#]"
-  - "PlatformTarget compiler option [C#]"
   - "ProduceReferenceAssembly compiler option [C#]"
   - "Target compiler option [C#]"
+  - "DocumentationFile compiler option [C#]"
+  - "PlatformTarget compiler option [C#]"
 ---
 # C# Compiler Options for optimization
 
 The following options control compiler optimizations for size and speed. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
 
-- **Doc** / `-doc`: Generate XML doc file from `///` comments
-- **ModuleAssemblyName** / `-moduleassemblyname`: Specify the output name of the module.
 - **OutputAssembly** / `-out`: Specify the output assembly file.
-- **PathMap** / `-pathmap`: Specify the mapping from source file paths
-- **PdbFile** / `-pdb`: Specify the location of the output pdb file.
-- **PlatformTarget** / `-platform`: Specify the target platform CPU.
 - **ProduceReferenceAssembly** / `-refout`: Generate a reference assembly.
 - **Target** `-target`: Specify the type of the output assembly.
+- **Doc** / `-doc`: Generate XML doc file from `///` comments
+- **PlatformTarget** / `-platform`: Specify the target platform CPU.
 
 ## DocumentationFile
 
@@ -41,22 +35,6 @@ The source code file that contains Main is output first into the XML. You'll oft
 > The -doc option applies to all files in the project. To disable warnings related to documentation comments for a specific file or section of code, use [#pragma warning](../preprocessor-directives/preprocessor-pragma-warning.md).
 
 You set the **Optimize** option from **Build** properties page for your project in Visual Studio.
-
-## ModuleAssemblyName
-
-Specifies an assembly whose non-public types a *.netmodule* can access. The `assembly_name` value specifies the name of the assembly whose non-public types the *.netmodule* can access.  
-
-```xml
-<ModuleAssemblyName>assembly_name</ModuleAssemblyName>
-```
-
-**ModuleAssemblyName** should be used when building a *.netmodule*, and where the following conditions are true:
-
-- The *.netmodule* needs access to non-public types in an existing assembly.
-- You know the name of the assembly into which the .netmodule will be built.
-- The existing assembly has granted friend assembly access to the assembly into which the .netmodule will be built.
-
-For more information on building a .netmodule, see [-target:module (C# Compiler Options)](./target-module-compiler-option.md). For more information on friend assemblies, see [Friend Assemblies](../../../standard/assembly/friend.md).
 
 ## OutputAssembly
 
@@ -74,30 +52,6 @@ Specify the full name and extension of the file you want to create. If you don't
 Any modules produced as part of a compilation become files associated with any assembly also produced in the compilation. Use [ildasm.exe](../../../framework/tools/ildasm-exe-il-disassembler.md) to view the assembly manifest to see the associated files.
 
 The **OutputAssembly** compiler option is required in order for an exe to be the target of a [friend assembly](../../../standard/assembly/friend.md).
-
-## PathMap
-
-The **PathMap** compiler option specifies how to map physical paths to source path names output by the compiler. This option maps each physical path on the machine where the compiler runs to a corresponding path that should be written in the output files. In the following example, `path1` is the full path to the source files in the current environment, and `sourcePath1` is the source path substituted for `path1` in any output files. To specify multiple mapped source paths, separate each with a semicolon.
-
-```xml
-<PathMap>path1=sourcePath1;path2=sourcePath2</PathMap>
-```
-
-The compiler writes the source path into its output for the following reasons:
-
-1. The source path is substituted for an argument when the <xref:System.Runtime.CompilerServices.CallerFilePathAttribute> is applied to an optional parameter.
-1. The source path is embedded in a PDB file.
-1. The path of the PDB file is embedded into a PE (portable executable) file.
-
-## PdbFile
-
-The **PdbFile** compiler option specifies the name and location of the debug symbols file.  The `filename` value specifies the name and location of the debug symbols file.  
-
-```xml
-<PdbFile>filename</PdbFile>
-```
-
-When you specify [-debug](./debug-compiler-option.md), the compiler will create a *.pdb* file in the same directory where the compiler will create the output file (.exe or .dll). The *.pdb* file has the same base file name as the name of the output file. **PdbFile** allows you to specify a non-default file name and location for the .pdb file. This compiler option cannot be set in the Visual Studio development environment, nor can it be changed programmatically.  
 
 ## PlatformTarget
 

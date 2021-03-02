@@ -1356,78 +1356,50 @@ items:
       displayName: compiler options
       href: language-reference/compiler-options/index.md
     - name: Output options
-      displayName: Deterministic, DocumentationFile, OutputPath
+      displayName: OutputAssembly, out, ProduceReferenceAssembly, refout, Target, target, Doc, doc, PlatformTarget, platform
       href: language-reference/compiler-options/output.md
     - name: Input options
-      displayName: Reference, AddModules
+      displayName: recurse, References, reference, references, AddModules, addmodule, link, analyzer, additionalfile
       href: language-reference/compiler-options/input.md
-    - name: Optimization options
-      displayName: FileAlignment, filealigh
-      href: language-reference/compiler-options/optimizations.md
     - name: Resources options
-      displayName: Win32Resource, Win32Icon, Win32Manifest, NoWin32Manifest, Resources, LinkResources
+      displayName: Win32Resource, win32res, Win32Icon, win32icon, Win32Manifest, win32manifest, NoWin32Manifest, nowin32manifest, Resources, resource, LinkResources
       href: language-reference/compiler-options/resources.md
     - name: Code Generation
-      displayName: Debug, Optimize, ProduceOnlyReferenceAssembly
+      displayName: DebugType, debug, sourcelink, Optimize, optimize, Deterministic, deterministic, ProduceOnlyReferenceAssembly, refonly
       href: language-reference/compiler-options/code-generation.md
     - name: Errors and warnings
-      displayName: Debug, Optimize, ProduceOnlyReferenceAssembly
+      displayName: TreatWarningsAsErrors, warnaserror, WarningsAsErrors, WarningsNotAsErrors, WarningLevel, warn, DisabledWarnings, nowarn, ruleset, errorlog, reportanalyzer
       href: language-reference/compiler-options/errors-warnings.md
     - name: Language 
-      displayName: checked, CheckForOverflowUnderflow, unsafe, AllowUnsafeCodeBlocks, DefineConstants, define
+      displayName: CheckForOverflowUnderflow, checked, AllowUnsafeBlocks, unsafe, *DefineConstants, define, *LangVersion, langversion, Nullable, nullable
       href: language-reference/compiler-options/language.md
     - name: Security options
-      displayName: DelaySign
+      displayName: DelaySign, delaysign, KeyFile, keyfile, KeyContainer, keycontainer, highentropyva
       href: language-reference/compiler-options/security.md
     - name: Miscellaneous
       displayName: ResponseFile, @
       href: language-reference/compiler-options/miscellaneous.md
-## Miscellaneous
-## Advanced
+    - name: Advanced
+      displayName: BaseAddress
+      href: language-reference/compiler-options/advanced.md
 
     - name: C# Compiler Options Listed by Category
       href: language-reference/compiler-options/listed-by-category.md
     - name: C# Compiler Options Listed Alphabetically
       href: language-reference/compiler-options/listed-alphabetically.md
       items:
-      - name: -appconfig
-        href: language-reference/compiler-options/appconfig-compiler-option.md
-      - name: -baseaddress
-        href: language-reference/compiler-options/baseaddress-compiler-option.md
       - name: -bugreport
         href: language-reference/compiler-options/bugreport-compiler-option.md
-      - name: -codepage
-        href: language-reference/compiler-options/codepage-compiler-option.md
-      - name: -errorreport
-        href: language-reference/compiler-options/errorreport-compiler-option.md
-      - name: -fullpaths
-        href: language-reference/compiler-options/fullpaths-compiler-option.md
       - name: -help, -?
         href: language-reference/compiler-options/help-compiler-option.md
       - name: -highentropyva
         href: language-reference/compiler-options/highentropyva-compiler-option.md
-      - name: -lib
-        href: language-reference/compiler-options/lib-compiler-option.md
-      - name: -link
-        href: language-reference/compiler-options/link-compiler-option.md
       - name: -linkresource
         href: language-reference/compiler-options/linkresource-compiler-option.md
-      - name: -main
-        href: language-reference/compiler-options/main-compiler-option.md
-      - name: -nostdlib
-        href: language-reference/compiler-options/nostdlib-compiler-option.md
-      - name: -nullable
-        href: language-reference/compiler-options/nullable-compiler-option.md
       - name: -preferreduilang
         href: language-reference/compiler-options/preferreduilang-compiler-option.md
       - name: -publicsign
         href: language-reference/compiler-options/publicsign-compiler-option.md
-      - name: -recurse
-        href: language-reference/compiler-options/recurse-compiler-option.md
-      - name: -subsystemversion
-        href: language-reference/compiler-options/subsystemversion-compiler-option.md
-      - name: -utf8output
-        href: language-reference/compiler-options/utf8output-compiler-option.md
   - name: Compiler errors
     href: language-reference/compiler-messages/index.md
   - name: C# 6.0 draft specification

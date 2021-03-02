@@ -119,9 +119,7 @@ private void AnalyzeNode(SyntaxNodeAnalysisContext context)
 
 Change the `Category` to ":::no-loc text="Usage":::" in *MakeConstAnalyzer.cs* as shown in the following code:
 
-```csharp
-private const string Category = "Usage";
-```
+[!code-csharp[Category constant](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs#Category  "Change category to Usage")]
 
 ## Find local declarations that could be const
 
@@ -134,19 +132,11 @@ Console.WriteLine(x);
 
 The first step is to find local declarations. Add the following code to `AnalyzeNode` in *MakeConstAnalyzer.cs*:
 
-```csharp
-var localDeclaration = (LocalDeclarationStatementSyntax)context.Node;
-```
+[!code-csharp[localDeclaration variable](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs#LocalDeclaration  "Add localDeclaration variable")]
 
 This cast always succeeds because your analyzer registered for changes to local declarations, and only local declarations. No other node type triggers a call to your `AnalyzeNode` method. Next, check the declaration for any `const` modifiers. If you find them, return immediately. The following code looks for any `const` modifiers on the local declaration:
 
-```csharp
-// make sure the declaration isn't already const:
-if (localDeclaration.Modifiers.Any(SyntaxKind.ConstKeyword))
-{
-    return;
-}
-```
+[!code-csharp[bail-out on const keyword](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs#BailOutOnConst  "bail-out on const keyword")]
 
 Finally, you need to check that the variable could be `const`. That means making sure it is never assigned after it is initialized.
 
@@ -168,9 +158,7 @@ if (dataFlowAnalysis.WrittenOutside.Contains(variableSymbol))
 
 The code just added ensures that the variable isn't modified, and can therefore be made `const`. It's time to raise the diagnostic. Add the following code as the last line in `AnalyzeNode`:
 
-```csharp
-context.ReportDiagnostic(Diagnostic.Create(Rule, context.Node.GetLocation()));
-```
+[!code-csharp[Call ReportDiagnostic](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs#ReportDiagnostic  "Call ReportDiagnostic")]
 
 You can check your progress by pressing <kbd>F5</kbd> to run your analyzer. You can load the console application you created earlier and then add the following test code:
 
@@ -267,6 +255,12 @@ Your analyzer and code fix work on a simple case of a single declaration that ca
 Open the *MakeConstUnitTests.cs* file in the unit test project. The template created two tests that follow the two common patterns for an analyzer and code fix unit test. `TestMethod1` shows the pattern for a test that ensures the analyzer doesn't report a diagnostic when it shouldn't. `TestMethod2` shows the pattern for reporting a diagnostic and running the code fix.
 
 The template uses [Microsoft.CodeAnalysis.Testing](https://github.com/dotnet/roslyn-sdk/blob/master/src/Microsoft.CodeAnalysis.Testing/README.md) packages for unit testing.
+
+> [!TIP]
+> The testing library supports a special markup syntax, including the following:
+>
+> - `[|text|]`: indicates that a diagnostic is reported for `text`.
+> - `{|ExpectedDiagnosticId:text|}`: indicates that a diagnostic with <xref:Microsoft.CodeAnalysis.Diagnostic.Id> `ExpectedDiagnosticId` is reported for `text`.
 
 Add the following test method to the `MakeConstUnitTest` class:
 

@@ -29,9 +29,9 @@ namespace MakeConst
         public override void Initialize(AnalysisContext context)
         {
              // See https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Actions%20Semantics.md for more information
-             // <SnippetRegisterNodeAction>
-            context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.Analyze | GeneratedCodeAnalysisFlags.None);
+            context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
             context.EnableConcurrentExecution();
+            // <SnippetRegisterNodeAction>
             context.RegisterSyntaxNodeAction(AnalyzeNode, SyntaxKind.LocalDeclarationStatement);
             // </SnippetRegisterNodeAction>
         }
@@ -40,7 +40,7 @@ namespace MakeConst
         {
             var localDeclaration = (LocalDeclarationStatementSyntax)context.Node;
 
-            // does not have const
+            // make sure the declaration isn't already const:
             if (localDeclaration.Modifiers.Any(SyntaxKind.ConstKeyword))
             {
                 return;

@@ -20,10 +20,6 @@ namespace MakeConst
     [ExportCodeFixProvider(LanguageNames.CSharp, Name = nameof(MakeConstCodeFixProvider)), Shared]
     public class MakeConstCodeFixProvider : CodeFixProvider
     {
-        // <SnippetCodeFixTitle>
-        private const string title = "Make constant";
-        // </SnippetCodeFixTitle>
-
         public sealed override ImmutableArray<string> FixableDiagnosticIds
         {
             get { return ImmutableArray.Create(MakeConstAnalyzer.DiagnosticId); }
@@ -52,14 +48,16 @@ namespace MakeConst
             // Register a code action that will invoke the fix.
             context.RegisterCodeFix(
                 CodeAction.Create(
-                    title: title,
+                    title: CodeFixResources.CodeFixTitle,
                     createChangedDocument: c => MakeConstAsync(context.Document, declaration, c),
-                    equivalenceKey: title),
+                    equivalenceKey: nameof(CodeFixResources.CodeFixTitle)),
                 diagnostic);
             // </SnippetRegisterCodeFix>
         }
 
-        private async Task<Document> MakeConstAsync(Document document, LocalDeclarationStatementSyntax localDeclaration, CancellationToken cancellationToken)
+        private async Task<Document> MakeConstAsync(Document document,
+            LocalDeclarationStatementSyntax localDeclaration,
+            CancellationToken cancellationToken)
         {
             // <SnippetCreateConstToken>
             // Remove the leading trivia from the local declaration.

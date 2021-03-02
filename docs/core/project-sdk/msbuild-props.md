@@ -84,9 +84,9 @@ Controls `AssemblyInfo` attribute generation for the project. The default value 
 </PropertyGroup>
 ```
 
-The name of the file generated is controlled by the [GeneratedAssemblyInfoFile](#generatedassemblyinfofile) setting.
+The [GeneratedAssemblyInfoFile](#generatedassemblyinfofile) setting controls the name of the generated file.
 
-When this value is `true`, project properties are transformed into `AssemblyInfo` attributes. The following table lists the project properties that generate the attributes, and the property that can disable it:
+When the `GenerateAssemblyInfo` value is `true`, project properties are transformed into `AssemblyInfo` attributes. The following table lists the project properties that generate the attributes, and the properties that can disable that generation:
 
 | Property               | Attribute                                                      | Property to disable                                                                               |
 |------------------------|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
@@ -111,14 +111,14 @@ Notes about these settings:
 
 #### Migrating from .NET Framework
 
-.NET Framework project templates created a code file with these assembly info attributes set, typically located at *.\Properties\AssemblyInfo.cs* or *.\Properties\AssemblyInfo.vb*. Newer SDK-style projects generate this file for you based on the project settings. **You can't have both.** When porting your code to .NET 5 (and .NET Core 3.1) or later, do one of the following:
+.NET Framework project templates create a code file with these assembly info attributes set. The file is typically located at *.\Properties\AssemblyInfo.cs* or *.\Properties\AssemblyInfo.vb*. SDK-style projects generate this file for you based on the project settings. **You can't have both.** When porting your code to .NET 5 (and .NET Core 3.1) or later, do one of the following:
 
-- Disable the generation of temporary code file that contains the assembly info attributes by setting `GenerateAssemblyInfo` to `false`. This enables you to keep your *AssemblyInfo* file.
-- Migrate the settings in the `AssemblyInfo` file to the project, and delete the `AssemblyInfo` file.
+- Disable the generation of the temporary code file that contains the assembly info attributes by setting `GenerateAssemblyInfo` to `false`. This enables you to keep your *AssemblyInfo* file.
+- Migrate the settings in the `AssemblyInfo` file to the project file, and delete the `AssemblyInfo` file.
 
 ### GeneratedAssemblyInfoFile
 
-The relative or absolute path of the generated assembly info file. Defaults to a file named *[project-name].AssemblyInfo.[cs|vb]* in the `$(IntermediateOutputPath)` (usually the *obj*) directory.
+The property defines the relative or absolute path of the generated assembly info file. Defaults to a file named *[project-name].AssemblyInfo.[cs|vb]* in the `$(IntermediateOutputPath)` (usually the *obj*) directory.
 
 ```xml
 <PropertyGroup>

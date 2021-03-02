@@ -14,7 +14,7 @@ The following steps show how you can use Http retries with Polly integrated into
 
 **Reference the .NET Core 3.1 packages**
 
-`IHttpClientFactory` is available since .NET Core 2.1 however we recommend you to use the latest .NET Core 3.1 packages from NuGet in your project. You typically also need to reference the extension package `Microsoft.Extensions.Http.Polly`.
+`IHttpClientFactory` is available since .NET Core 2.1 however we recommend you to use the latest .NET 5 packages from NuGet in your project. You typically also need to reference the extension package `Microsoft.Extensions.Http.Polly`.
 
 **Configure a client with Polly's Retry policy, in Startup**
 

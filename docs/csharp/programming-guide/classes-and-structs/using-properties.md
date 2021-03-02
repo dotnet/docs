@@ -61,11 +61,11 @@ It is an error to use the implicit parameter name, `value`, for a local variable
 
 ## The init accessor
 
-The code to create an `init` accessor is the same as the code to create a `set` accessor. The difference is that the `init` accessor can only be called during object initialization by using [object-initializer](object-and-collection-initializers.md) syntax.
+The code to create an `init` accessor is the same as the code to create a `set` accessor except that you use the `init` keyword instead of `set`. The difference is that the `init` accessor can only be used in the constructor or by using an [object-initializer](object-and-collection-initializers.md).
 
 ## Remarks
 
-Properties can be marked as `public`, `private`, `protected`, `internal`, `protected internal` or `private protected`. These access modifiers define how users of the class can access the property. The `get` and `set` accessors for the same property may have different access modifiers. For example, the `get` may be `public` to allow read-only access from outside the type, and the `set` may be `private` or `protected`. For more information, see [Access Modifiers](./access-modifiers.md).
+Properties can be marked as `public`, `private`, `protected`, `internal`, `protected internal`, or `private protected`. These access modifiers define how users of the class can access the property. The `get` and `set` accessors for the same property may have different access modifiers. For example, the `get` may be `public` to allow read-only access from outside the type, and the `set` may be `private` or `protected`. For more information, see [Access Modifiers](./access-modifiers.md).
 
 A property may be declared as a static property by using the `static` keyword. This makes the property available to callers at any time, even if no instance of the class exists. For more information, see [Static Classes and Static Class Members](./static-classes-and-static-class-members.md).
 

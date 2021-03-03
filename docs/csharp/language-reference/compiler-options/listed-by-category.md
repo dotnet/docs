@@ -20,12 +20,6 @@ The following compiler options are sorted by category. For an alphabetical list,
 |-embed|Embed all source files in the PDB.|
 |-embed:\<file list>|Embed specific files in the PDB.|
 
-## Miscellaneous
-
-|Option|Purpose|
-|------------|-------------|
-|[-help](help-compiler-option.md)|Lists compiler options to stdout.|
-
 ## Obsolete Options
 
 |Option|Purpose|
@@ -33,8 +27,6 @@ The following compiler options are sorted by category. For an alphabetical list,
 |-incremental|Enables incremental compilation.|
 |[-preferreduilang](preferreduilang-compiler-option.md)|OBSOLETE Specify a language for compiler output. (listed in advanced)|
 |[-publicsign](publicsign-compiler-option.md)|Apply a public key without signing the assembly, but set the bit in the assembly indicating the assembly is signed.|
-|[-?](help-compiler-option.md)|Lists compiler options to stdout. (Listed in Misc)|
-|-parallel[+&#124;-]|Specifies whether to use concurrent build (+). (Listed in Misc)|
 |[-bugreport](bugreport-compiler-option.md)|Creates a file that contains information that makes it easy to report a bug. (Listed in Advanced)|
 |-checksumalgorithm:\<alg>|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA256 (default) or SHA1.<br>Due to collision problems with SHA1, Microsoft recommends SHA256. (listed in Advanced)|
 |-errorendlocation|Output line and column of the end location of each error. (Listed in Advanced)|

@@ -5,7 +5,7 @@ ms.date: 02/28/2021
 f1_keywords: 
   - "cs.build.options"
 helpviewer_keywords: 
-  - "DelaySign compiler option [C#]"
+  - "ResponseFiles compiler option [C#]"
   - "NoLogo compiler option [C#]"
   - "NoConfig compiler option [C#]"
 ---
@@ -34,6 +34,17 @@ The `response_file` specifies the file that lists compiler options or source cod
 -target:exe -out:MyExe.exe source1.cs source2.cs
 ```
 
+## -help, -? (C# Compiler Options)
+
+This option sends a listing of compiler options, and a brief description of each option, to stdout.
+
+```console
+-help
+-?
+```
+
+If this option is included in a compilation, no output file will be created and no compilation will take place. This compiler option is unavailable in Visual Studio and cannot be changed programmatically.
+
 ## NoLogo
 
 The **NoLogo** option suppresses display of the sign-on banner when the compiler starts up and display of informational messages during compiling.
@@ -53,3 +64,7 @@ The **NoConfig** option tells the compiler not to compile with the csc.rsp file,
 ```
 
 The csc.rsp file references all the assemblies shipped with .NET Framework. The actual references that the Visual Studio .NET development environment includes depend on the project type. You can modify the csc.rsp file and specify additional compiler options that should be included in every compilation from the command line with csc.exe (except the **NoConfig** option). The compiler processes the options passed to the **csc** command last. Therefore, any option on the command line overrides the setting of the same option in the csc.rsp file. If you do not want the compiler to look for and use the settings in the csc.rsp file, specify **NoConfig**. This compiler option is unavailable in Visual Studio and cannot be changed programmatically.
+
+## -parallel
+
+TODO

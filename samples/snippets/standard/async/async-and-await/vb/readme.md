@@ -21,7 +21,7 @@ The code for the *MainWindow.xaml.vb* file from this sample is included in the a
 
 ## Sample prerequisites
 
-This sample is written in Visual Basic and targets .NET Core 3.0 running on Windows. It requires the [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+This sample is written in Visual Basic and targets .NET Core 3.1 running on Windows. It requires the [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet/3.1).
 
 ## Building the sample
 

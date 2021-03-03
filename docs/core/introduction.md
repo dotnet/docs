@@ -126,7 +126,7 @@ The integrated development environments for .NET include:
 
 The [.NET SDK](sdk.md) is a set of libraries and tools for developing and running .NET applications.
 
-When you [download .NET](https://dotnet.microsoft.com/download/dotnet-core/), you can choose the SDK or a *runtime*, such as the .NET runtime or the ASP.NET Core runtime. Install a runtime on a machine that you want to prepare for running .NET apps. Install the SDK on a machine that you want to use for development. When you download the SDK, you automatically get the runtimes with it.
+When you [download .NET](https://dotnet.microsoft.com/download/dotnet), you can choose the SDK or a *runtime*, such as the .NET runtime or the ASP.NET Core runtime. Install a runtime on a machine that you want to prepare for running .NET apps. Install the SDK on a machine that you want to use for development. When you download the SDK, you automatically get the runtimes with it.
 
 The SDK download includes the following components:
 
@@ -334,7 +334,7 @@ Some of the terminology for .NET can be confusing because the same word is used 
   |Context  |"runtime" meaning |
   |---------|---------|
   | [Common Language Runtime (CLR)](#clr)| The execution environment for a managed program. The OS is part of the runtime environment but isn't part of the .NET runtime. |
-  | [.NET runtime on the .NET download page](https://dotnet.microsoft.com/download/dotnet-core) | The [CLR](#clr) and [runtime libraries](#runtime-libraries), which together provide support for running [framework-dependent](#deployment-models) apps. The page also offers runtime choices for ASP.NET Core server apps and Windows desktop apps. |
+  | [.NET runtime on the .NET download page](https://dotnet.microsoft.com/download/dotnet) | The [CLR](#clr) and [runtime libraries](#runtime-libraries), which together provide support for running [framework-dependent](#deployment-models) apps. The page also offers runtime choices for ASP.NET Core server apps and Windows desktop apps. |
   | [Runtime Identifier (RID)](rid-catalog.md) | The OS platform and CPU architecture that a .NET app runs on. For example: Windows x64, Linux x64. |
 
 * **framework**
@@ -344,7 +344,7 @@ Some of the terminology for .NET can be confusing because the same word is used 
   | .NET Framework | The original, Windows-only implementation of .NET. "Framework" is capitalized. |
   | target framework | The collection of APIs that a .NET app or library relies on. Examples: .NET Core 3.1, .NET Standard 2.0 |
   | Target Framework Moniker (TFM)  | A TFM is a standardized token format for specifying the target framework of a .NET app or library. Example: `net462` for .NET Framework 4.6.2. |
-  | framework-dependent app | An app that can only run on a machine where you've installed the runtime from the [.NET download page](https://dotnet.microsoft.com/download/dotnet-core). "Framework" in this usage is the same thing as the "runtime" that you download from the .NET download page. |
+  | framework-dependent app | An app that can only run on a machine where you've installed the runtime from the [.NET download page](https://dotnet.microsoft.com/download/dotnet). "Framework" in this usage is the same thing as the "runtime" that you download from the .NET download page. |
   | framework libraries | Sometimes used as a synonym for [runtime libraries](#runtime-libraries). |
 
 * **SDK**

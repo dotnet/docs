@@ -48,7 +48,7 @@ A target framework is typically referenced by a TFM. The following table shows t
 
 ### .NET 5+ OS-specific TFMs
 
-The `net5.0` and `net6.0` TFMs only include technologies that work across different platforms. Specifying an *OS-specific TFM* makes APIs that are specific to an operating system available to your app, for example, Windows Forms or iOS bindings. OS-specific TFMs also inherit every API available to their base TFM, for example, the `net5.0` TFM.
+The `net5.0` and `net6.0` TFMs include technologies that work across different platforms. Specifying an *OS-specific TFM* makes APIs that are specific to an operating system available to your app, for example, Windows Forms or iOS bindings. OS-specific TFMs also inherit every API available to their base TFM, for example, the `net5.0` TFM.
 
 .NET 5 introduced the `net5.0-windows` OS-specific TFM, which includes Windows-specific bindings for WinForms, WPF, and UWP APIs. .NET 6 introduces further OS-specific TFMs.
 
@@ -80,7 +80,7 @@ Use these guidelines to determine which TFM to use in your app:
 
 #### OS version in TFMs
 
-You can also specify an optional OS version at the end of the TFM, for example, `net6.0-ios13.0`, which indicates what APIs are available to your app. (The .NET 6 SDK will be updated to include support for newer OS versions as they are released.) To gain access to newly released APIs, increment the OS version in the TFM. You can still make your app compatible with earlier OS versions (and add guards around calls to later-version APIs) by adding the `SupportedOSPlatformVersion` element to your project file. The `SupportedOSPlatformVersion` element indicates the minimum OS version required to run your app.
+You can also specify an optional OS version at the end of the TFM, for example, `net6.0-ios13.0`, which indicates what APIs are available to your app. (The corresponding .NET SDK will be updated to include support for newer OS versions as they are released.) To gain access to newly released APIs, increment the OS version in the TFM. You can still make your app compatible with earlier OS versions (and add guards around calls to later-version APIs) by adding the `SupportedOSPlatformVersion` element to your project file. The `SupportedOSPlatformVersion` element indicates the minimum OS version required to run your app.
 
 For example, the following project file excerpt specifies that iOS 14 APIs are available to the app, but it can run on iOS 13 or later machines.
 

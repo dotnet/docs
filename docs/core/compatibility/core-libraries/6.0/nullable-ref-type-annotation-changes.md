@@ -57,6 +57,12 @@ The following table lists the affected APIs:
 | <xref:System.Data.IDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)?displayProperty=nameWithType> | `buffer` parameter type is nullable | Breaking | Preview 1 |
 | <xref:System.Data.Common.DbDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)?displayProperty=nameWithType> | `buffer` parameter type is nullable | Breaking | Preview 1 |
 | <xref:System.Data.Common.DbDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)?displayProperty=nameWithType> | `buffer` parameter type is nullable | Breaking | Preview 1 |
+| <xref:System.Net.HttpListenerContext.AcceptWebSocketAsync%2A?displayProperty=fullName> | `subProtocol` parameter type is nullable | Nonbreaking | Preview 2 |
+| Methods that override <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> and [many others that return `bool`](https://github.com/dotnet/runtime/pull/47598/files) | `[NotNullWhen(true)]` added to first, nullable parameter | Breaking | Preview 2 |
+
+## See also
+
+- [Nullable reference type annotation changes in ASP.NET Core](../../aspnet-core/6.0/nullable-reference-type-annotations-changed.md)
 
 <!--
 

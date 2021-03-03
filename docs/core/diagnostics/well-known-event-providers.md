@@ -108,3 +108,9 @@ This provider logs information on the [Task Parallel Library](../../standard/par
 ASP.NET Core also provides several events to help you diagnose issues in the ASP.NET Core stack.
 
 To learn more about the events in ASP.NET Core and how to consume them, see [Logging in .NET Core and ASP.NET Core](/aspnet/core/fundamentals/logging/).
+
+## Entity Framework core
+
+EF Core also provides events to help you diagnose issues in EF Core.
+
+To learn more about the events in EF Core and how to consume them, see [.NET Events in EF Core](/ef/core/logging-events-diagnostics/events).

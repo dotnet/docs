@@ -22,7 +22,7 @@ You'll start by installing Dapr on your development computer. Once complete, you
 
 1. [Initialize Dapr](https://docs.dapr.io/getting-started/install-dapr/). This step sets up your development environment by installing the latest Dapr binaries and container images.
 
-1. Install the [.NET Core 3 Development Tools](https://dotnet.microsoft.com/download/dotnet-core/3.1) for .NET Core 3.1.
+1. Install the [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet/3.1).
 
 Now that Dapr is installed, it's time to build your first Dapr application!
 

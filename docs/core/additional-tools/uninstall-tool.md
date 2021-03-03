@@ -299,8 +299,8 @@ Since this tool has a destructive behavior, it's **highly** recommended that you
 > [!CAUTION]
 > Keep in mind the following caveats:
 >
->- This tool can uninstall versions of the .NET SDK that are required by `global.json` files on your machine. You can reinstall .NET SDKs from the [Download .NET](https://dotnet.microsoft.com/download/dotnet-core) page.
->- This tool can uninstall versions of the .NET Runtime that are required by framework dependent applications on your machine. You can reinstall .NET Runtimes from the [Download .NET](https://dotnet.microsoft.com/download/dotnet-core) page.
+>- This tool can uninstall versions of the .NET SDK that are required by `global.json` files on your machine. You can reinstall .NET SDKs from the [Download .NET](https://dotnet.microsoft.com/download/dotnet) page.
+>- This tool can uninstall versions of the .NET Runtime that are required by framework dependent applications on your machine. You can reinstall .NET Runtimes from the [Download .NET](https://dotnet.microsoft.com/download/dotnet) page.
 >- This tool can uninstall versions of the .NET SDK and runtime that Visual Studio relies on. If you break your Visual Studio installation, run "Repair" in the Visual Studio installer to get back to a working state.
 
 By default, all commands keep the .NET SDKs and runtimes that may be required by Visual Studio or other SDKs. These SDKs and runtimes can be uninstalled by listing them explicitly as arguments or by using the `--force` option.

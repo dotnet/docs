@@ -68,7 +68,7 @@ The following options are for `dotnet` by itself. For example, `dotnet --info`. 
 
 - **`--version`**
 
-  Prints out the version of the .NET SDK in use.
+ Prints out the version of the .NET SDK used by dotnet commands. Includes the effects of any global.json
 
 - **`--list-runtimes`**
 

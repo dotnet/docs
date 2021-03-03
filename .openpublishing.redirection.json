@@ -453,8 +453,15 @@
         },
         {
             "source_path": "docs/core/migrating-from-dnx.md",
-            "redirect_url": "/dotnet/core/migration/from-dnx",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/core/tools"
+        },
+        {
+            "source_path": "docs/core/migration/from-dnx.md",
+            "redirect_url": "/dotnet/core/tools"
+        },
+        {
+            "source_path": "docs/core/migration/index.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
         },
         {
             "source_path": "docs/core/packages.md",
@@ -601,8 +608,7 @@
         },
         {
             "source_path": "docs/core/preview3/tools/layering.md",
-            "redirect_url": "/dotnet/core/tools/cli-msbuild-architecture",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
         },
         {
             "source_path": "docs/core/preview3/tools/telemetry.md",
@@ -648,6 +654,10 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/core/tools/cli-msbuild-architecture.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
+        },
+        {
             "source_path": "docs/core/tools/csproj.md",
             "redirect_url": "/dotnet/core/project-sdk/msbuild-props"
         },
@@ -657,7 +667,11 @@
         },
         {
             "source_path": "docs/core/tools/project-json.md",
-            "redirect_url": "/dotnet/core/tools/project-json-to-csproj"
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
+        },
+        {
+            "source_path": "docs/core/tools/project-json-to-csproj.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
         },
         {
             "source_path": "docs/core/tools/test-protocol.md",
@@ -689,7 +703,7 @@
         },
         {
             "source_path": "docs/core/tutorials/target-dotnetcore-with-msbuild.md",
-            "redirect_url": "/dotnet/core/tools/cli-msbuild-architecture"
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
         },
         {
             "source_path": "docs/core/tutorials/using-on-mac-vs-full-solution.md",
@@ -11380,7 +11394,7 @@
         },
         {
             "source_path": "docs/scenarios/solution-authoring/target-dotnetcore-with-msbuild.md",
-            "redirect_url": "/dotnet/core/tools/cli-msbuild-architecture"
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
         },
         {
             "source_path": "docs/spark/tutorials/ml-sentment-analysis.md",

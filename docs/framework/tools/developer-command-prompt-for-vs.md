@@ -114,6 +114,8 @@ Search for a PowerShell script file named *Launch-VsDevShell.ps1*, or go to the 
 & 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\Launch-VsDevShell.ps1'
 ```
 
+By default, the Developer PowerShell that launches is configured for the Visual Studio installation whose install path the *Launch-VsDevShell.ps1* file is located in.
+
 > [!TIP]
 > The [execution policy](/powershell/module/microsoft.powershell.core/about/about_execution_policies) must be set in order for the cmdlet to run.
 

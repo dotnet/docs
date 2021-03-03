@@ -12,9 +12,9 @@ helpviewer_keywords:
   - "Resources compiler option [C#]"
   - "LinkResources compiler option [C#]"
 ---
-# C# Compiler Options that specify inputs
+# C# Compiler Options that specify resources
 
-The following options control compiler inputs. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
+The following options control compiler resources. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
 
 - **Win32Resource** / `-win32res`: Specify a Win32 resource file (.res)
 - **Win32Icon** / `-win32icon`: Reference metadata from the specified assembly file or files.

@@ -33,7 +33,7 @@ The value of this element can be either `full` or `pdbonly`. The *full* argument
 > [!NOTE]
 > One difference between *pdbonly* and *full* is that with *full* the compiler emits a <xref:System.Diagnostics.DebuggableAttribute>, which is used to tell the JIT compiler that debug information is available. Therefore, you will get an error if your code contains the <xref:System.Diagnostics.DebuggableAttribute> set to false if you use *full*.
 
-For more information on how to configure the debug performance of an application, see [Making an Image Easier to Debug](../../../framework/debug-trace-profile/making-an-image-easier-to-debug.md). To change the location of the .pdb file, see [**Pdb**](./outputs.md#pdb).
+For more information on how to configure the debug performance of an application, see [Making an Image Easier to Debug](../../../framework/debug-trace-profile/making-an-image-easier-to-debug.md). To change the location of the .pdb file, see [**PdbFile**](./advanced.md#pdbfile).
 
 ## sourcelink
 

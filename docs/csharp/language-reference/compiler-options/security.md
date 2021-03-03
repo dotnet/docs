@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "DelaySign compiler option [C#]"
   - "KeyFile compiler option [C#]"
   - "KeyContainer compiler option [C#]"
+  - "PUblicSign compiler option [C#]"
 ---
 # C# Compiler Options for security options
 
@@ -16,6 +17,7 @@ The following options control compiler inputs. The new MSBuild syntax is shown i
 - **DelaySign** / `-delaysign`: Delay-sign the assembly using only the public portion of the strong name key.
 - **KeyFile** / `-keyfile` : Specify a strong name key file.
 - **KeyContainer** / `-keycontainer`: Specify a strong name key container.
+- **PublicSign** / `-publicsign`: Publicly sign the assembly.
 - **??** / `-highentropyva`: Enable high-entropy ASLR
 
 ## DelaySign
@@ -49,6 +51,16 @@ Specifies the name of the cryptographic key container.
 ```
 
 `container` is the name of the strong name key container. When the **KeyContainer** option is used, the compiler creates a sharable component. The compiler inserts a public key from the specified container into the assembly manifest and signs the final assembly with the private key. To generate a key file, type `sn -k file` at the command line. `sn -i` installs the key pair into a container. This option is not supported when the compiler runs on CoreCLR. To sign an assembly when building on CoreCLR, use the **KeyFile** option. If you compile with [-target:module](./target-module-compiler-option.md), the name of the key file is held in the module and incorporated into the assembly when you compile this module into an assembly with [-addmodule](./addmodule-compiler-option.md). You can also specify this option as a custom attribute (<xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=nameWithType>) in the source code for any Microsoft intermediate language (MSIL) module. You can also pass your encryption information to the compiler with **KeyFile**. Use **DelaySign** if you want the public key added to the assembly manifest but want to delay signing the assembly until it has been tested. For more information, see [Creating and Using Strong-Named Assemblies](../../../standard/assembly/create-use-strong-named.md) and [Delay Signing an Assembly](../../../standard/assembly/delay-sign.md).
+
+## PublicSign
+
+This option causes the compiler to apply a public key but does not actually sign the assembly. The **PublicSign** option also sets a bit in the assembly that tells the runtime that the file is actually signed.
+
+```xml
+<PublicSign>true</PublicSign>
+```
+
+The **PublicSign** option requires the use of the [-keyfile](keyfile-compiler-option.md) or [-keycontainer](keycontainer-compiler-option.md). The **keyfile** or **keycontainer** options specify the public key. The **PublicSign** and **PublicSign** options are mutually exclusive. Sometimes called "fake sign" or "OSS sign", public signing includes the public key in an output assembly and sets the "signed" flag, but doesn't actually sign the assembly with a private key. This is useful for open source projects where people want to build assemblies which are compatible with the released "fully signed" assemblies, but don't have access to the private key used to sign the assemblies. Since almost no consumers actually need to check if the assembly is fully signed, these publicly built assemblies are useable in almost every scenario where the fully signed one would be used.
 
 ## highentropyva
 

@@ -35,7 +35,7 @@ A target framework is typically referenced by a TFM. The following table shows t
 
 | Target Framework           | TFM |
 | -------------------------- | --- |
-| .NET 5+ (and .NET Core)    | netcoreapp1.0<br>netcoreapp1.1<br>netcoreapp2.0<br>netcoreapp2.1<br>netcoreapp2.2<br>netcoreapp3.0<br>netcoreapp3.1<br>net5.0<br>net6.0* |
+| .NET 5+ (and .NET Core)    | netcoreapp1.0<br>netcoreapp1.1<br>netcoreapp2.0<br>netcoreapp2.1<br>netcoreapp2.2<br>netcoreapp3.0<br>netcoreapp3.1<br>net5.0*<br>net6.0* |
 | .NET Standard              | netstandard1.0<br>netstandard1.1<br>netstandard1.2<br>netstandard1.3<br>netstandard1.4<br>netstandard1.5<br>netstandard1.6<br>netstandard2.0<br>netstandard2.1 |
 | .NET Framework             | net11<br>net20<br>net35<br>net40<br>net403<br>net45<br>net451<br>net452<br>net46<br>net461<br>net462<br>net47<br>net471<br>net472<br>net48 |
 | Windows Store              | netcore [netcore45]<br>netcore45 [win] [win8]<br>netcore451 [win81] |
@@ -44,31 +44,29 @@ A target framework is typically referenced by a TFM. The following table shows t
 | Windows Phone              | wp [wp7]<br>wp7<br>wp75<br>wp8<br>wp81<br>wpa81 |
 | Universal Windows Platform | uap [uap10.0]<br>uap10.0 [win10] [netcore50] |
 
-\* .NET 6 and later TFMs include operating system-specific variations. For more information, see the following section, [.NET 6 OS-specific TFMs](#net-6-os-specific-tfms).
+\* .NET 5 and later TFMs include some operating system-specific variations. For more information, see the following section, [.NET 5+ OS-specific TFMs](#net-5-os-specific-tfms).
 
 ### .NET 5+ OS-specific TFMs
 
-In .NET 5, the Windows-specific TFM `net5.0-windows` is available. Starting in .NET 6, even more OS-specific TFMs are available. These TFMs include OS-specific bindings. These variations are shown in the following table.
+The `net5.0` and `net6.0` TFMs only include technologies that work across different platforms. Specifying an *OS-specific TFM* makes APIs that are specific to an operating system available to your app, for example, Windows Forms or iOS bindings. OS-specific TFMs also inherit every API available to their base TFM, for example, the `net5.0` TFM.
 
-| OS-specific format | Example        |
-|--------------------|----------------|
-| \<base-tfm>-android | net6.0-android |
-| \<base-tfm>-ios     | net6.0-ios     |
-| \<base-tfm>-macos   | net6.0-macos   |
-| \<base-tfm>-tvos    | net6.0-tvos    |
-| \<base-tfm>-watchos | net6.0-watchos |
-| \<base-tfm>-windows | net6.0-windows |
+.NET 5 introduced the `net5.0-windows` OS-specific TFM, which includes Windows-specific bindings for WinForms, WPF, and UWP APIs. .NET 6 introduces further OS-specific TFMs.
 
-The `net5.0` and `net6.0` TFMs only includes technologies that work across different platforms. Specifying an OS-specific TFM makes APIs that are specific to an operating system available to your app, for example, Windows Forms or iOS bindings. OS-specific TFMs also inherit every API available to their base TFM, for example, `net6.0`.
+The following table shows the compatibility of the .NET 5+ TFMs.
+
+| TFM                | Compatible with                                                                                                         |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------|
+| net5.0             | net1..4 (with NU1701 warning)<br />netcoreapp1..3.1 (warning when WinForms or WPF is referenced)<br />netstandard1..2.1 |
+| net5.0-windows     | netcoreapp1..3.1 (plus everything else inherited from `net5.0`)                                                         |
+| net6.0             | (subsequent version of `net5.0`)                                                                                        |
+| net6.0-android     | `xamarin.android` (+everything else inherited from `net6.0`)                                                            |
+| net6.0-ios         | `xamarin.ios` (+everything else inherited from `net6.0`)                                                                |
+| net6.0-macos       | `xamarin.mac` (+everything else inherited from `net6.0`)                                                                |
+| net6.0-maccatalyst | `xamarin.ios` (+everything else inherited from `net6.0`)                                                                |
+| net6.0-tvos        | `xamarin.tvos` (+everything else inherited from `net6.0`)                                                               |
+| net6.0-windows     | (subsequent version of `net5.0-windows`)                                                                                |
 
 To make your app portable across different platforms but still have access to OS-specific APIs, you can target multiple OS-specific TFMs and add platform guards around OS-specific API calls using `#if` preprocessor directives.
-
-The following table shows the compatibility of the .NET 5 TFMs with TFMs for previous .NET versions.
-
-| TFM             | Compatible with                                            | Notes |
-|-----------------|------------------------------------------------------------|-|
-| net5.0          | net1..4 (with NU1701 warning)<br />netcoreapp1..3.1 (warning when WinForms or WPF is referenced)<br />netstandard1..2.1 | |
-| net5.0-windows  | netcoreapp1..3.1 (plus everything else inherited from `net5.0`) | Includes WinForms, WPF, and UWP APIs.<br />For information, see [Call Windows Runtime APIs in desktop apps](/windows/apps/desktop/modernize/desktop-to-uwp-enhance). |
 
 #### Suggested targets
 
@@ -181,6 +179,7 @@ The following target frameworks are deprecated. Packages that target these targe
 ## See also
 
 - [Target framework names in .NET 5](https://github.com/dotnet/designs/blob/master/accepted/2020/net5/net5.md)
+- [Call Windows Runtime APIs in desktop apps](/windows/apps/desktop/modernize/desktop-to-uwp-enhance)
 - [Developing Libraries with Cross Platform Tools](../core/tutorials/libraries.md)
 - [.NET Standard](net-standard.md)
 - [.NET Core Versioning](../core/versions/index.md)

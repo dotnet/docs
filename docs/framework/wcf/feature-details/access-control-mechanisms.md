@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Access Control Mechanisms"
 title: "Access Control Mechanisms"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

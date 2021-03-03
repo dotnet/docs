@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC36563: Method does not have a signature compatible with the delegate"
 title: "Method does not have a signature compatible with the delegate"
 ms.date: 07/20/2015
 f1_keywords:

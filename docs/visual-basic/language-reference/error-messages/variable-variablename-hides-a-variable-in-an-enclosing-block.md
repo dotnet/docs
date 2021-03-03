@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30616: Variable '<variablename>' hides a variable in an enclosing block"
 title: "Variable '<variablename>' hides a variable in an enclosing block"
 ms.date: 07/20/2015
 f1_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Find Existing Files and Directories in Isolated Storage"
 title: "How to: Find Existing Files and Directories in Isolated Storage"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Find the Maximum Value in a Numeric Sequence"
 title: "Find the Maximum Value in a Numeric Sequence"
 ms.date: "03/30/2017"
 dev_langs: 

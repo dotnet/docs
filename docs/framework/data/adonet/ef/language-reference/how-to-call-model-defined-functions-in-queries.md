@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Call Model-Defined Functions in Queries"
 title: "How to: Call Model-Defined Functions in Queries"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Working with Data Definition Language"
 title: "Working with Data Definition Language"
 ms.date: "03/30/2017"
 dev_langs: 

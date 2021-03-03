@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo::GetAssemblyInfo Method"
 title: "ICorProfilerInfo::GetAssemblyInfo Method"
 ms.date: "03/30/2017"
 api_name: 

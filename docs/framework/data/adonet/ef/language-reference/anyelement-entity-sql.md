@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ANYELEMENT (Entity SQL)"
 title: "ANYELEMENT (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 475a9ad6-8c8d-4f49-9970-af273e5360f1

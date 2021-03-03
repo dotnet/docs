@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 452 - MessageLogWarning"
 title: "452 - MessageLogWarning"
 ms.date: "03/30/2017"
 ms.assetid: 22a9f6ea-5b5f-4110-8a4e-9be9c983fbbb

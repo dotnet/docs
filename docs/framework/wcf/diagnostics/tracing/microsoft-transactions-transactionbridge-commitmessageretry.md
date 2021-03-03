@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft.Transactions.TransactionBridge.CommitMessageRetry"
 title: "Microsoft.Transactions.TransactionBridge.CommitMessageRetry"
 ms.date: "03/30/2017"
 ms.assetid: 4abe01f0-6398-4fba-b2f3-c054b7f7e971

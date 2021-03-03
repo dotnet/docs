@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <serviceAuthorization> element"
 title: "<serviceAuthorization> element"
 ms.date: "03/30/2017"
 ms.assetid: 18cddad5-ddcb-4839-a0ac-1d6f6ab783ca

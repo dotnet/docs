@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo10::RequestReJITWithInliners Method"
 title: "ICorProfilerInfo10::RequestReJITWithInliners"
 ms.date: "08/06/2019"
 dev_langs:
@@ -55,7 +56,7 @@ HRESULT RequestReJITWithInliners( [in]                       DWORD       dwRejit
 
 **Library:** CorGuids.lib
 
-**.NET Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
+**.NET Versions:** [!INCLUDE[net_core_30](../../../../includes/net-core-30-md.md)]
 
 ## See also
 

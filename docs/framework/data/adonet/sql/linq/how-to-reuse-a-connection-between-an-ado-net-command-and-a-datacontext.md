@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Reuse a Connection Between an ADO.NET Command and a DataContext"
 title: "How to: Reuse a Connection Between an ADO.NET Command and a DataContext"
 ms.date: "03/30/2017"
 dev_langs: 

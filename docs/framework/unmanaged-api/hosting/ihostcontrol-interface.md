@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostControl Interface"
 title: "IHostControl Interface"
 ms.date: "03/30/2017"
 api_name: 

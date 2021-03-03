@@ -33,7 +33,7 @@ A [dump](./dumps.md) is a file that contains a snapshot of the process at the ti
 
 ## Symbols
 
-Symbols are a fundamental requirement for debugging and other diagnostic tools. The contents of symbol files vary between languages, compilers, and platforms. At a very high level symbols are a mapping between the source code and the binary produced by the compiler. These mappings are used to provide things like line number information and names of your local variables in diagnostics tools such as [Visual Studio](/visualstudio/debugger/what-is-debugging) and [Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging).  The following link contains a detailed explanation of [symbols](/windows/win32/dxtecharts/debugging-with-symbols) for Windows, although many of the concepts apply to other platforms as well. [.NET portable symbols](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) have a "PDB" file extension similar to Windows PDB, though are not compatible with the Windows PDB format.
+[Symbols](./symbols.md) are a mapping between the source code and the binary produced by the compiler. These are commonly used by .NET debuggers to resolve source line numbers, local variable names, and other types of diagnostic information.
 
 ## Collect diagnostics in containers
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Removing Attributes from an Element Node in the DOM"
 title: "Removing Attributes from an Element Node in the DOM"
 ms.date: "03/30/2017"
 ms.assetid: 7ede6f9e-a3ac-49a4-8488-ab8360a44aa4

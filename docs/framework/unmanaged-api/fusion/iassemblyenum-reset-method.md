@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAssemblyEnum::Reset Method"
 title: "IAssemblyEnum::Reset Method"
 ms.date: "03/30/2017"
 api_name: 

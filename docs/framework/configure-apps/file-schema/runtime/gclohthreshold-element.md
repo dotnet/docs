@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GCLOHThreshold element"
 title: GCLOHThreshold element
 ms.date: 11/20/2019
 helpviewer_keywords:

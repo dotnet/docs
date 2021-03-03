@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedENCUpdate::UpdateMethodLines Method"
 title: "ISymUnmanagedENCUpdate::UpdateMethodLines Method"
 ms.date: "03/30/2017"
 api_name: 

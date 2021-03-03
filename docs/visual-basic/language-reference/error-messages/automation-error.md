@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Automation error"
 title: "Automation error"
 ms.date: 07/20/2015
 f1_keywords: 
@@ -18,4 +19,4 @@ An error occurred while executing a method or getting or setting a property of a
 ## See also
 
 - [Error Types](../../programming-guide/language-features/error-types.md)
-- [Talk to Us](/visualstudio/ide/feedback-options)
+- [Visual Studio feedback options](/visualstudio/ide/feedback-options)

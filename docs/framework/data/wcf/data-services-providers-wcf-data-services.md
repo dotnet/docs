@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Services Providers (WCF Data Services)"
 title: "Data Services Providers (WCF Data Services)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
@@ -6,6 +7,8 @@ helpviewer_keywords:
 ms.assetid: a0160b1b-3d9c-4cc8-8391-cb0986a60a41
 ---
 # Data Services Providers (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 WCF Data Services supports multiple provider models for exposing data as an Open Data Protocol (OData) feed. This topic provides information to enable you to select the best WCF Data Services provider for your data source.  
   

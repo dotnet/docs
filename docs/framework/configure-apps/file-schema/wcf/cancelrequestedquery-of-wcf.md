@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <cancelRequestedQuery> of WCF"
 title: "<cancelRequestedQuery> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: b690d870-02eb-4c56-8bc3-e5ca99d7097b

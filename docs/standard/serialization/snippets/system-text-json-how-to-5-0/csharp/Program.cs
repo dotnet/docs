@@ -11,8 +11,20 @@ namespace SystemTextJsonHowTo
             PreserveReferences.Program.Main();
             Console.WriteLine();
 
+            Console.WriteLine("======== Custom converter Preserve references =========");
+            CustomConverterPreserveReferences.Program.Main();
+            Console.WriteLine();
+
+            Console.WriteLine("======== Preserve references Multiple calls =========");
+            PreserveReferencesMultipleCalls.Program.Main();
+            Console.WriteLine();
+
             Console.WriteLine("======== Immutable types =========");
             ImmutableTypes.Program.Main();
+            Console.WriteLine();
+
+            Console.WriteLine("======== Immutable types =========");
+            ImmutableTypesCtorParms.Program.Main();
             Console.WriteLine();
 
             Console.WriteLine("======== Record support =========");
@@ -33,6 +45,10 @@ namespace SystemTextJsonHowTo
 
             Console.WriteLine("======== Custom converter handle null =========");
             CustomConverterHandleNull.Program.Main();
+            Console.WriteLine();
+
+            Console.WriteLine("======== Custom converter inferred types to object =========");
+            CustomConverterInferredTypesToObject.Program.Main();
             Console.WriteLine();
 
             Console.WriteLine("======== Ignore value type default on serialize =========");

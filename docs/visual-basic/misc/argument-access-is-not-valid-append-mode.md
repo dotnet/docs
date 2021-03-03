@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Argument 'Access' is not valid. Valid values for Append mode are 'OpenAccess.Write' and 'OpenAccess.Default"
 title: "Argument 'Access' is not valid. Valid values for Append mode are 'OpenAccess.Write' and 'OpenAccess.Default'"
 ms.date: 07/20/2015
 f1_keywords: 

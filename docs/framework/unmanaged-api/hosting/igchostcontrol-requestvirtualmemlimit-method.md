@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IGCHostControl::RequestVirtualMemLimit Method"
 title: "IGCHostControl::RequestVirtualMemLimit Method"
 ms.date: "03/30/2017"
 api_name: 

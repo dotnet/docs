@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.MessageProcessingPaused"
 title: "System.ServiceModel.MessageProcessingPaused"
 ms.date: "03/30/2017"
 ms.assetid: 36b5302a-93cc-478a-9bb2-8a1601fba1df

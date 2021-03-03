@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::GetPinvokeMap Method"
 title: "IMetaDataImport::GetPinvokeMap Method"
 ms.date: "03/30/2017"
 api_name: 

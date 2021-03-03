@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Known Issues and Considerations in LINQ to Entities"
 title: "Known Issues and Considerations in LINQ to Entities"
 ms.date: "03/30/2017"
 dev_langs: 

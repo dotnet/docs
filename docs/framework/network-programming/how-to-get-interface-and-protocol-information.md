@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Get Interface and Protocol Information"
 title: "How to: Get Interface and Protocol Information"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

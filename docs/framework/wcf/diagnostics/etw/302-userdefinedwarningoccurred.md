@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 302 - UserDefinedWarningOccurred"
 title: "302 - UserDefinedWarningOccurred"
 ms.date: "03/30/2017"
 ms.assetid: 8d1f0bf1-0151-45e6-be92-573d397b54de

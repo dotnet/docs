@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Application-defined or object-defined error"
 title: "Application-defined or object-defined error"
 ms.date: 07/20/2015
 f1_keywords: 

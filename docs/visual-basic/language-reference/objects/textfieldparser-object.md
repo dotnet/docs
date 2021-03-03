@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TextFieldParser Object"
 title: "TextFieldParser Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 

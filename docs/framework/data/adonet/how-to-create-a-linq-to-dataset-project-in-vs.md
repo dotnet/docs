@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a LINQ to DataSet project in Visual Studio"
 title: Create a LINQ to DataSet project in Visual Studio
 ms.date: 08/15/2018
 ms.assetid: 49ba6cb0-cdd2-4571-aeaa-25bf0f40e9b3

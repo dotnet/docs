@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3350 - ListenerOpenStop"
 title: "3350 - ListenerOpenStop"
 ms.date: "03/30/2017"
 ms.assetid: 67211588-3c52-465a-92dd-20185e7edcf0

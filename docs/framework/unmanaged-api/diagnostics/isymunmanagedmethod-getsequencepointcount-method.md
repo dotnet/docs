@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedMethod::GetSequencePointCount Method"
 title: "ISymUnmanagedMethod::GetSequencePointCount Method"
 ms.date: "03/30/2017"
 api_name: 

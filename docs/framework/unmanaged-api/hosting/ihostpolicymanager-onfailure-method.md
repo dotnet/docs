@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostPolicyManager::OnFailure Method"
 title: "IHostPolicyManager::OnFailure Method"
 ms.date: "03/30/2017"
 api_name: 

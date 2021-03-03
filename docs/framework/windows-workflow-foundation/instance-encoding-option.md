@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Instance Encoding Option"
 title: "Instance Encoding Option"
 ms.date: "03/30/2017"
 ms.assetid: 89e4b029-4f68-438c-8117-9b21fe094ef4

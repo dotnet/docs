@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Schema Restrictions"
 title: "Schema Restrictions"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Function Overload Resolution (Entity SQL)"
 title: "Function Overload Resolution (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 9c648054-3808-4a69-9d3e-98e6a4f9c5ca

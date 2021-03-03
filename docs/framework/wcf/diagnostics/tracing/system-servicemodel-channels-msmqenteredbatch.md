@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.MsmqEnteredBatch"
 title: "System.ServiceModel.Channels.MsmqEnteredBatch"
 ms.date: "03/30/2017"
 ms.assetid: 5b787c18-1962-4083-93d1-adb680295189

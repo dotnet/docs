@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Host a WCF Service Written with .NET Framework 3.5 in IIS Running Under .NET Framework 4"
 title: "How to: Host a WCF Service Written with .NET Framework 3.5 in IIS Running Under .NET Framework 4"
 ms.date: "03/30/2017"
 ms.assetid: 9aabc785-068d-4d32-8841-3ef39308d8d6

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Argument BasePath must be a path to a folder"
 title: "Argument BasePath must be a path to a folder"
 ms.date: 07/20/2015
 ms.assetid: b180ce60-ad57-41a6-a313-491d86d84cc7

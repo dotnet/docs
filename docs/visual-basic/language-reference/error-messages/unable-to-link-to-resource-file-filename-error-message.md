@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30144: Unable to link to resource file '<filename>': <error message>"
 title: "Unable to link to resource file '<filename>': <error message>"
 ms.date: 07/20/2015
 f1_keywords:
@@ -23,4 +24,4 @@ The Visual Basic compiler calls the Assembly Linker (Al.exe, also known as Alink
 ## See also
 
 - [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)
-- [Talk to Us](/visualstudio/ide/feedback-options)
+- [Visual Studio feedback options](/visualstudio/ide/feedback-options)

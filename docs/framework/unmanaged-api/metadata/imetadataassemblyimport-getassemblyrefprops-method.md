@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataAssemblyImport::GetAssemblyRefProps Method"
 title: "IMetaDataAssemblyImport::GetAssemblyRefProps Method"
 ms.date: "03/30/2017"
 api_name: 

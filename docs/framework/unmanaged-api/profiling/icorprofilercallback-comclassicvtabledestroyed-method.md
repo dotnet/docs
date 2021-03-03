@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::COMClassicVTableDestroyed Method"
 title: "ICorProfilerCallback::COMClassicVTableDestroyed Method"
 ms.date: "03/30/2017"
 api_name: 

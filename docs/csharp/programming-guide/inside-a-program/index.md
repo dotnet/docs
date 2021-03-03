@@ -13,8 +13,6 @@ The section discusses the general structure of a C# program, and includes the st
 
 ## In this section
 
-- [Hello World -- Your First Program](hello-world-your-first-program.md)
-
 - [General Structure of a C# Program](general-structure-of-a-csharp-program.md)
 
 - [Identifier names](identifier-names.md)
@@ -23,7 +21,7 @@ The section discusses the general structure of a C# program, and includes the st
 
 ## Related sections
 
-- [Getting Started with C#](../../getting-started/index.md)
+- [Get Started with C#](../../tour-of-csharp/index.md)
 
 - [C# Programming Guide](../index.md)
 

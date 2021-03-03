@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message Security with Mutual Certificates"
 title: "Message Security with Mutual Certificates"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::DefinePermissionSet Method"
 title: "IMetaDataEmit::DefinePermissionSet Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using .NET Framework 3.0 WF Activities in .NET Framework 4 with the Interop Activity"
 title: "Using .NET Framework 3.0 WF Activities in .NET Framework 4 with the Interop Activity"
 ms.date: "03/30/2017"
 ms.assetid: 71f112ba-abb0-46f7-b05f-a5d2eb9d0c5c

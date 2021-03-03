@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: StrongNameSignatureSize Function"
 title: "StrongNameSignatureSize Function"
 ms.date: "03/30/2017"
 api_name: 

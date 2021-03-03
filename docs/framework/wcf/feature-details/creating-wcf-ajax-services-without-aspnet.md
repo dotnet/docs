@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating WCF AJAX Services without ASP.NET"
 title: "Creating WCF AJAX Services without ASP.NET"
 ms.date: "03/30/2017"
 ms.assetid: ba4a7d1b-e277-4978-9f62-37684e6dc934

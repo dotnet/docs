@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Retrieving Metadata"
 title: "Retrieving Metadata"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

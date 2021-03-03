@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Extending WCF"
 title: "Extending WCF"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Application Scenarios (WCF Data Services)"
 title: "Application Scenarios (WCF Data Services)"
 ms.date: "03/30/2017"
 helpviewer_keywords:
@@ -8,6 +9,8 @@ ms.assetid: 7c82658f-e7c0-46b6-834d-6592f67ab5ea
 ---
 
 # Application Scenarios (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 WCF Data Services supports a core set of scenarios for exposing and consuming data as Open Data Protocol (OData) feeds. This topic points you to the topics relevant to these scenarios.
 

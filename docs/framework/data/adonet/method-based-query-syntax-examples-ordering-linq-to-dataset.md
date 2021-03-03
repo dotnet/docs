@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Method-Based Query Syntax Examples: Ordering (LINQ to DataSet)"
 title: "Method-Based Query Syntax Examples: Ordering (LINQ to DataSet)"
 ms.date: "03/30/2017"
 dev_langs: 

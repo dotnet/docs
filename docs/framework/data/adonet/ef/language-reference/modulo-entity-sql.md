@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: (Modulo) (Entity SQL)"
 title: "(Modulo) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 243ddc4f-3c4e-41e1-a3ef-4ed39e36248b

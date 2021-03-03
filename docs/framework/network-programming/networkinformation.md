@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NetworkInformation"
 title: "NetworkInformation"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

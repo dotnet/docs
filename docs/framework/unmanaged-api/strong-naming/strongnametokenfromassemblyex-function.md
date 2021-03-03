@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: StrongNameTokenFromAssemblyEx Function"
 title: "StrongNameTokenFromAssemblyEx Function"
 ms.date: "03/30/2017"
 api_name: 

@@ -311,22 +311,16 @@ items:
       tocHref: /dotnet/csharp/
       topicHref: /dotnet/csharp/index
       items:
-      - name: Introduction to C#
-        tocHref: /dotnet/csharp/tutorials/intro-to-csharp/
-        topicHref: /dotnet/csharp/tutorials/intro-to-csharp/index
       - name: Get started
-        tocHref: /dotnet/csharp/getting-started/
-        topicHref: /dotnet/csharp/getting-started/index
+        tocHref: /dotnet/csharp/tour-of-csharp/
+        topicHref: /dotnet/csharp/tour-of-csharp/index
         items:
-        - name: Tour of C#
-          tocHref: /dotnet/csharp/tour-of-csharp/
-          topicHref: /dotnet/csharp/tour-of-csharp/index
+        - name: Tutorials
+          tocHref: /dotnet/csharp/tour-of-csharp/tutorials/
+          topicHref: /dotnet/csharp/tour-of-csharp/tutorials/index
       - name: Tutorials
         tocHref: /dotnet/csharp/tutorials/
         topicHref: /dotnet/csharp/tutorials/index
-      - name: Tour
-        tocHref: /dotnet/csharp/tour-of-csharp/
-        topicHref: /dotnet/csharp/tour-of-csharp/index
       - name: What's new
         tocHref: /dotnet/csharp/whats-new/
         topicHref: /dotnet/csharp/whats-new/index
@@ -581,3 +575,6 @@ items:
     - name: .NET IoT Libraries
       tocHref: /dotnet/iot/
       topicHref: /dotnet/iot/index
+    - name: What's new
+      tocHref: /dotnet/whats-new/
+      topicHref: /dotnet/whats-new/index

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Determine if Any or All Elements in a Sequence Satisfy a Condition"
 title: "Determine if Any or All Elements in a Sequence Satisfy a Condition"
 ms.date: "03/30/2017"
 dev_langs: 

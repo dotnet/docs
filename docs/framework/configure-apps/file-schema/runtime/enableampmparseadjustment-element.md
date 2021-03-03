@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <EnableAmPmParseAdjustment> Element"
 title: "<EnableAmPmParseAdjustment> Element"
 ms.date: "03/30/2017"
 ms.assetid: fda998a5-f538-4f8b-a18c-ee7f35e16938

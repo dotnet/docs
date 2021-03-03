@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Calling Windows APIs (Visual Basic)"
 title: "Walkthrough: Calling Windows APIs"
 ms.date: 07/20/2015
 helpviewer_keywords: 

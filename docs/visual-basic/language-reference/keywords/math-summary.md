@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Math Summary (Visual Basic)"
 title: "Math Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 

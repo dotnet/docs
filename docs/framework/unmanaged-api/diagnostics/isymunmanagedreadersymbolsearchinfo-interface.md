@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedReaderSymbolSearchInfo Interface"
 title: "ISymUnmanagedReaderSymbolSearchInfo Interface"
 ms.date: "03/30/2017"
 api_name: 

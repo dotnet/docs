@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Customize Feeds with the Reflection Provider (WCF Data Services)"
 title: "How to: Customize Feeds with the Reflection Provider (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -10,6 +11,8 @@ helpviewer_keywords:
 ms.assetid: 00c23dcf-9bb8-459a-a012-6c4d9bcad7e9
 ---
 # How to: Customize Feeds with the Reflection Provider (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 WCF Data Services enables you to customize the Atom serialization in a data service response so that properties of an entity may be mapped to unused elements that are defined in the AtomPub protocol. This topic shows how to define mapping attributes for the entity types in a data model that is defined by using the reflection provider. For more information, see [Feed Customization](feed-customization-wcf-data-services.md).  
   

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC42017: Late bound resolution; runtime errors could occur"
 title: "Late bound resolution; runtime errors could occur"
 ms.date: 07/20/2015
 f1_keywords:

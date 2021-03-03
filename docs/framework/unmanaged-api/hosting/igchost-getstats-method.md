@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IGCHost::GetStats Method"
 title: "IGCHost::GetStats Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Custom Composite Designers - Workflow Item Presenter"
 title: "Custom Composite Designers - Workflow Item Presenter"
 ms.date: "03/30/2017"
 ms.assetid: f85224cf-9e30-44a5-9a81-3bc438a34364

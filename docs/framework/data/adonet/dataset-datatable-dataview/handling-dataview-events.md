@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Handling DataView Events"
 title: "Handling DataView Events"
 ms.date: "03/30/2017"
 dev_langs: 

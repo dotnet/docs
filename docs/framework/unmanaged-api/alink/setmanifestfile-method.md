@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SetManifestFile Method"
 title: "SetManifestFile Method"
 ms.date: "03/30/2017"
 api_name: 

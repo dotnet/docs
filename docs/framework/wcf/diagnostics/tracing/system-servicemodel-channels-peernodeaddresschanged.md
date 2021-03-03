@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PeerNodeAddressChanged"
 title: "System.ServiceModel.Channels.PeerNodeAddressChanged"
 ms.date: "03/30/2017"
 ms.assetid: 14bd4be6-1ff1-4df5-b89f-af7950f62ef4

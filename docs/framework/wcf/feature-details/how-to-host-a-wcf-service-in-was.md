@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Host a WCF Service in WAS"
 title: "How to: Host a WCF Service in WAS"
 ms.date: "03/30/2017"
 ms.assetid: 9e3e213e-2dce-4f98-81a3-f62f44caeb54

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30002: Type '<typename>' is not defined"
 title: "Type '<typename>' is not defined"
 ms.date: 07/20/2015
 f1_keywords:

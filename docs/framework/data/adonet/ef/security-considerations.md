@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Security Considerations (Entity Framework)"
 title: "Security Considerations (Entity Framework)"
 ms.date: "03/30/2017"
 ms.assetid: 84758642-9b72-4447-86f9-f831fef46962

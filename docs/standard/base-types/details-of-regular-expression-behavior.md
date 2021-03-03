@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Details of regular expression behavior"
 title: Regular Expression behavior
 ms.date: "03/30/2017"
 ms.topic: conceptual

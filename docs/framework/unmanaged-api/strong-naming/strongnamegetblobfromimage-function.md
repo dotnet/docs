@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: StrongNameGetBlobFromImage Function"
 title: "StrongNameGetBlobFromImage Function"
 ms.date: "03/30/2017"
 api_name: 

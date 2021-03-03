@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SqlStreamChars.CanSeek Property"
 title: SqlStreamChars.CanSeek Property (System.Data.SqlTypes)
 author: stevestein
 ms.author: sstein

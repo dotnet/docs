@@ -338,7 +338,12 @@ The `EnableDefaultNoneItems` property controls whether `None` items (files that 
 
 ### AnalysisLevel
 
-The `AnalysisLevel` property lets you specify a code analysis level. For example, if you want access to preview code analyzers, set `AnalysisLevel` to `preview`. The default value is `latest`.
+The `AnalysisLevel` property lets you specify a code-analysis level. For example, if you want access to preview code analyzers, set `AnalysisLevel` to `preview`.
+
+Default value:
+
+- If your project targets .NET 5.0 or later, or if you've added the [AnalysisMode](#analysismode) property, the default value is `latest`.
+- Otherwise, this property is omitted unless you explicitly add it to the project file.
 
 ```xml
 <PropertyGroup>
@@ -354,6 +359,9 @@ The following table shows the available options.
 | `preview` | The latest code analyzers are used, even if they are in preview. |
 | `5.0` | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
 | `5` | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
+
+> [!NOTE]
+> This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
 
 ### AnalysisMode
 
@@ -373,6 +381,9 @@ The following table shows the available options.
 | `AllEnabledByDefault` | Aggressive or opt-out mode, where all rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. |
 | `AllDisabledByDefault` | Conservative or opt-in mode, where all rules are disabled by default. You can selectively [opt into](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them. |
 
+> [!NOTE]
+> This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
+
 ### CodeAnalysisTreatWarningsAsErrors
 
 The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code quality analysis warnings (CAxxxx) should be treated as warnings and break the build. If you use the `-warnaserror` flag when you build your projects, [.NET code quality analysis](../../fundamentals/code-analysis/overview.md#code-quality-analysis) warnings are also treated as errors. If you do not want code quality analysis warnings to be treated as errors, you can set the `CodeAnalysisTreatWarningsAsErrors` MSBuild property to `false` in your project file.
@@ -385,16 +396,13 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 
 ### EnableNETAnalyzers
 
-[.NET code quality analysis](../../fundamentals/code-analysis/overview.md#code-quality-analysis) is enabled, by default, for projects that target .NET 5.0 or later. You can enable .NET code analysis for projects that target earlier versions of .NET by setting the `EnableNETAnalyzers` property to `true`. To disable code analysis in any project, set this property to `false`.
+[.NET code quality analysis](../../fundamentals/code-analysis/overview.md#code-quality-analysis) is enabled, by default, for projects that target .NET 5.0 or later. You can enable .NET code analysis for SDK-style projects that target earlier versions of .NET by setting the `EnableNETAnalyzers` property to `true`. To disable code analysis in any project, set this property to `false`.
 
 ```xml
 <PropertyGroup>
   <EnableNETAnalyzers>true</EnableNETAnalyzers>
 </PropertyGroup>
 ```
-
-> [!TIP]
-> Another way to enable .NET code analysis on projects that target .NET versions prior to .NET 5.0 is to set the [AnalysisLevel](#analysislevel) property to `latest`.
 
 ### EnforceCodeStyleInBuild
 

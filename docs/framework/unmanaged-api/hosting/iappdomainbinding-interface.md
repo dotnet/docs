@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAppDomainBinding Interface"
 title: "IAppDomainBinding Interface"
 ms.date: "03/30/2017"
 api_name: 

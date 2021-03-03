@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Query typed DataSets"
 title: "Querying Typed DataSets"
 ms.date: 08/15/2018
 dev_langs:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4026 - WasConnected"
 title: "4026 - WasConnected"
 ms.date: "03/30/2017"
 ms.assetid: e0ba2cbf-28cf-4b8b-b40b-bfdb8a77afa0

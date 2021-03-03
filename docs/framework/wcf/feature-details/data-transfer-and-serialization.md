@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Transfer and Serialization"
 title: "Data Transfer and Serialization"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

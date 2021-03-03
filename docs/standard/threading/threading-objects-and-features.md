@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Threading objects and features"
 title: "Threading objects and features"
 ms.date: "10/01/2018"
 helpviewer_keywords: 

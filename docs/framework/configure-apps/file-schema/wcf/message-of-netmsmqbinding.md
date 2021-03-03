@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <message> of <netMsmqBinding>"
 title: "<message> of <netMsmqBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 6ebf0240-d7be-4493-b0fe-f00fd5989d77

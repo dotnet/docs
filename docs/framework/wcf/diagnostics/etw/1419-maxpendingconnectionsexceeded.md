@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1419 - MaxPendingConnectionsExceeded"
 title: "1419 - MaxPendingConnectionsExceeded"
 ms.date: "03/30/2017"
 ms.assetid: e48e438e-f4c1-4f4f-85d6-c6c820a81df9

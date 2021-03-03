@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MailBnfHelper class"
 title: MailBnfHelper class (System.Net)
 ms.date: 06/12/2020
 ms.technology: dotnet-networking

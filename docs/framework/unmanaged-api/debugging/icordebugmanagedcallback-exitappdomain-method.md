@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugManagedCallback::ExitAppDomain Method"
 title: "ICorDebugManagedCallback::ExitAppDomain Method"
 ms.date: "03/30/2017"
 api_name: 

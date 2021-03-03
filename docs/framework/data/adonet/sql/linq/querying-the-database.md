@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Querying the Database"
 title: "Querying the Database"
 ms.date: "03/30/2017"
 ms.assetid: eefb8b0c-ff07-4e86-a3d3-567479523fe9

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WebHeaderCollection.AddInternal method"
 title: WebHeaderCollection.AddInternal method (System.Net)
 ms.date: 06/12/2020
 ms.technology: dotnet-networking

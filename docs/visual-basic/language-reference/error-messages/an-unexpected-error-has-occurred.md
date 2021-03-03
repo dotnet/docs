@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: An unexpected error has occurred because an operating system resource required for single instance startup cannot be acquired"
 title: "An unexpected error has occurred because an operating system resource required for single instance startup cannot be acquired"
 ms.date: 07/20/2015
 f1_keywords: 
@@ -29,4 +30,4 @@ The application could not acquire a necessary operating system resource. Some of
 
 - [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic)
 - [Debugger Basics](/visualstudio/debugger/debugger-basics)
-- [Talk to Us](/visualstudio/ide/feedback-options)
+- [Visual Studio feedback options](/visualstudio/ide/feedback-options)

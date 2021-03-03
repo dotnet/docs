@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Property array index is not valid"
 title: "Property array index is not valid"
 ms.date: 07/20/2015
 f1_keywords: 

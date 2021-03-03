@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Filter at the DataContext Level"
 title: "How to: Filter at the DataContext Level"
 ms.date: "03/30/2017"
 dev_langs: 

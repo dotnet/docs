@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.CommunicationObjectCloseFailed"
 title: "System.ServiceModel.CommunicationObjectCloseFailed"
 ms.date: "03/30/2017"
 ms.assetid: 60270eab-6f57-4136-bec5-62d3edd23880

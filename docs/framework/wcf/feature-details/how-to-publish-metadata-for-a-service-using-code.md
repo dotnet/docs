@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Publish Metadata for a Service Using Code"
 title: "How to: Publish Metadata for a Service Using Code"
 ms.date: "03/30/2017"
 dev_langs: 

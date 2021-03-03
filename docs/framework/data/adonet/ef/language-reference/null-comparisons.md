@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Null Comparisons"
 title: "Null Comparisons"
 ms.date: "03/30/2017"
 dev_langs: 

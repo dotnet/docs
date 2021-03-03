@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SqlChars.Stream Property"
 title: SqlChars.Stream Property (System.Data.SqlTypes)
 author: stevestein
 ms.author: sstein

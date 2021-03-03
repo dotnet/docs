@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DataSet-Specific Operator Examples (LINQ to DataSet)"
 title: "DataSet-Specific Operator Examples (LINQ to DataSet)"
 ms.date: "03/30/2017"
 dev_langs: 

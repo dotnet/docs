@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30145: Unable to emit assembly: <error message>"
 title: "Unable to emit assembly: <error message>"
 ms.date: 08/14/2018
 f1_keywords:
@@ -32,8 +33,6 @@ The Visual Basic compiler calls the Assembly Linker (*Al.exe*, also known as Ali
 
 3. Open the [Developer Command Prompt for Visual Studio](../../../framework/tools/developer-command-prompt-for-vs.md).
 
-   In Windows 10, enter **Developer command prompt** into the search box on the task bar. Then, select **Developer Command Prompt for VS 2017** from the results list.
-
 4. Change the directory to the directory where you want to place your assembly wrapper.
 
 5. Enter the following command:
@@ -58,4 +57,4 @@ The Visual Basic compiler calls the Assembly Linker (*Al.exe*, also known as Ali
 - [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)
 - [Sn.exe (Strong Name Tool)](../../../framework/tools/sn-exe-strong-name-tool.md)
 - [How to: Create a Public-Private Key Pair](../../../standard/assembly/create-public-private-key-pair.md)
-- [Talk to Us](/visualstudio/ide/feedback-options)
+- [Visual Studio feedback options](/visualstudio/ide/feedback-options)

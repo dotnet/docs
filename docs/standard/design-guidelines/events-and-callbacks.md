@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Events and Callbacks"
 title: "Events and Callbacks"
 ms.date: "10/22/2008"
 helpviewer_keywords:

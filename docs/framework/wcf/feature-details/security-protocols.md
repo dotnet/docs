@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Security Protocols"
 title: "Security Protocols"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

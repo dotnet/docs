@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30251: Type '<typename>' has no constructors"
 title: "Type '<typename>' has no constructors"
 ms.date: 07/20/2015
 f1_keywords:
@@ -27,4 +28,4 @@ A type does not support a call to `Sub New()`. One possible cause is a corrupted
 ## See also
 
 - [Objects and Classes](../../programming-guide/language-features/objects-and-classes/index.md)
-- [Talk to Us](/visualstudio/ide/feedback-options)
+- [Visual Studio feedback options](/visualstudio/ide/feedback-options)

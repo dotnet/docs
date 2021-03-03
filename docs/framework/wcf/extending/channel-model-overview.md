@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Channel Model Overview"
 title: "Channel Model Overview"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

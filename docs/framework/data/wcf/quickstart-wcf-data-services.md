@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Quickstart (WCF Data Services)"
 title: "Quickstart (WCF Data Services)"
 ms.date: 08/24/2018
 helpviewer_keywords:
@@ -7,6 +8,8 @@ helpviewer_keywords:
 ms.assetid: 7b18ca1e-d4d6-4c7a-afb9-ce3cebb98a8d
 ---
 # Quickstart (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 This quickstart helps you become familiar with WCF Data Services and the Open Data Protocol (OData) through a series of tasks that support the topics in [Getting Started](getting-started-with-wcf-data-services.md).
 

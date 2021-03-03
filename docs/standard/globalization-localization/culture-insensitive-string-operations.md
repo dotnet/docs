@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Culture-insensitive string operations"
 title: "Culture-Insensitive String Operations"
 ms.date: "03/30/2017"
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Query Plan Caching (Entity SQL)"
 title: "Query Plan Caching (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 90b0c685-5ef2-461b-98b4-c3c0a2b253c7

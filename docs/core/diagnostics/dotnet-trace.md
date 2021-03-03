@@ -174,6 +174,8 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
   - `Provider` is in the form: `KnownProviderName[:Flags[:Level][:KeyValueArgs]]`.
   - `KeyValueArgs` is in the form: `[key1=value1][;key2=value2]`.
 
+  To learn more about some of the well-known providers in .NET, refer to [Well-known Event Providers](./well-known-event-providers.md).
+
 - **`-- <command>` (for target applications running .NET 5.0 only)**
 
   After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application with at least a 5.0 runtime. This may be helpful when diagnosing issues that happen early in the process, such as startup performance issue or assembly loader and binder errors.
@@ -189,6 +191,9 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 > [!NOTE]
 > To collect a trace using `dotnet-trace`, it needs to be run as the same user as the user running target process or as root. Otherwise, the tool will fail to establish a connection with the target process.
+
+> [!NOTE]
+> If you see an error message similar to the following one: `[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`, you are trying to use `dotnet-trace` that has mismatched bitness against the target process. Make sure to download the correct bitness of the tool in the [install](#install) link.
 
 ## dotnet-trace convert
 

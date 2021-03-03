@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugModuleDebugEvent Interface"
 title: "ICorDebugModuleDebugEvent Interface"
 ms.date: "03/30/2017"
 ms.assetid: 41950c52-1ac8-4212-b814-c77e20879f91

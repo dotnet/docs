@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Export Metadata from Service Endpoints"
 title: "How to: Export Metadata from Service Endpoints"
 ms.date: "03/30/2017"
 dev_langs: 

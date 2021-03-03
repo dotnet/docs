@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FailedToTraceEvent"
 title: "FailedToTraceEvent"
 ms.date: "03/30/2017"
 ms.assetid: a13f19e3-a6e0-4e58-bb45-73bed6cf4421

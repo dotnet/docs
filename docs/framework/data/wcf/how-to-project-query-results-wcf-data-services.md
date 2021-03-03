@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Project Query Results (WCF Data Services)"
 title: "How to: Project Query Results (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -12,6 +13,8 @@ helpviewer_keywords:
 ms.assetid: 474ac625-8770-43ba-8320-d3315ea9530f
 ---
 # How to: Project Query Results (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Projection provides a mechanism to reduce the amount of data returned by a query by specifying that only certain properties of an entity are returned in the response. You can perform projections on the results of an WCF Data Services query either by using the `$select` query option or by using the [select](../../../csharp/language-reference/keywords/select-clause.md) clause ([Select](../../../visual-basic/language-reference/queries/select-clause.md) in Visual Basic) in a LINQ query. For more information, see [Querying the Data Service](querying-the-data-service-wcf-data-services.md).  
   

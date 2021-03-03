@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: - (Subtract) (Entity SQL)"
 title: "- (Subtract) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: bc4327f9-09c0-438f-a008-927c5c478040

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <Subtypes> Element (.NET Native)"
 title: "<Subtypes> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: fb854070-248b-46cf-9dab-c322e2b4d624

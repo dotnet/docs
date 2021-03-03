@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: The stream passed to TextFieldParser cannot be read"
 title: "The stream passed to TextFieldParser cannot be read"
 ms.date: 07/20/2015
 f1_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ImpersonationSuccess"
 title: "ImpersonationSuccess"
 ms.date: "03/30/2017"
 ms.assetid: 20b2ab9c-7ced-45d6-8bb0-d480e186102e

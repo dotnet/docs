@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAssemblyEnum::Clone Method"
 title: "IAssemblyEnum::Clone Method"
 ms.date: "03/30/2017"
 api_name: 

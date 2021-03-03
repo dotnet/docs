@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Execute Queries in a Batch (WCF Data Services)"
 title: "How to: Execute Queries in a Batch (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -9,6 +10,8 @@ helpviewer_keywords:
 ms.assetid: 3b4db7df-bd33-43a1-8ea4-63a18e131f97
 ---
 # How to: Execute Queries in a Batch (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 By using the WCF Data Services client library, you can execute more than one query against the data service in a single batch. For more information, see [Batching Operations](batching-operations-wcf-data-services.md).  
   

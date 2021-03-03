@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit2::ResetENCLog Method"
 title: "IMetaDataEmit2::ResetENCLog Method"
 ms.date: "03/30/2017"
 api_name: 

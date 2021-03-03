@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Security Validation and Authentication Failures"
 title: "Security Validation and Authentication Failures"
 ms.date: "03/30/2017"
 ms.assetid: 0d4e3666-dfc6-421c-baf8-9479c22f7050

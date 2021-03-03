@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <relativeBindForResources> Element"
 title: "<relativeBindForResources> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

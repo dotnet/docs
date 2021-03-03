@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3354 - ServiceSecurityNegotiationCompleted"
 title: "3354 - ServiceSecurityNegotiationCompleted"
 ms.date: "03/30/2017"
 ms.assetid: 093aeefe-1609-4409-b6d2-00f71772bcf7

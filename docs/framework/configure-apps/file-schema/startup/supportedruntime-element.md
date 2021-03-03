@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <supportedRuntime> element"
 title: "<supportedRuntime> configuration element - .NET"
 ms.date: "04/02/2019"
 f1_keywords: 

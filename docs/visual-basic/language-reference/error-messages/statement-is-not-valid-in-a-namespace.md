@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30001: Statement is not valid in a namespace"
 title: "Statement is not valid in a namespace"
 ms.date: 07/20/2015
 f1_keywords:

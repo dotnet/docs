@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo10::IsFrozenObject Method"
 title: "ICorProfilerInfo10::IsFrozenObject"
 ms.date: "08/06/2019"
 dev_langs:
@@ -41,7 +42,7 @@ HRESULT IsFrozenObject( [in]  ObjectID objectId,
 
 **Library:** CorGuids.lib
 
-**.NET Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
+**.NET Versions:** [!INCLUDE[net_core_30](../../../../includes/net-core-30-md.md)]
 
 ## See also
 

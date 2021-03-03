@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TransportBindingElement"
 title: "TransportBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: 54ecfbee-53c0-410c-a7fa-a98f2e40c545

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .NET Native and Compilation"
 title: ".NET Native and Compilation"
 ms.date: "03/30/2017"
 ms.assetid: e38ae4f3-3e3d-42c3-a4b8-db1aa9d84f85

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Service Host"
 title: "Windows Service Host"
 ms.date: "03/30/2017"
 helpviewer_keywords:

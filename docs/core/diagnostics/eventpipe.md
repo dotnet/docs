@@ -72,10 +72,11 @@ However, you can use the following environment variables to set up an EventPipe 
 
 * `COMPlus_EventPipeOutputPath`: The path to the output EventPipe trace file when it's configured to run via `COMPlus_EnableEventPipe`. The default value is `trace.nettrace`, which will be created in the same directory that the app is running from.
 
-* `COMPlus_CircularBufferMB`: The size of the internal buffer that is used by EventPipe when it's configured to run via `COMPlus_EnableEventPipe`.
+* `COMPlus_EventPipeCircularMB`: A hexadecimal value that represents the size of EventPipe's internal buffer in megabytes. This configuration value is only used when EventPipe is configured to run via `COMPlus_EnableEventPipe`. The default buffer size is 1024MB which translates to this environment variable being set to `400`, since `0x400` == `1024`.
+
+* `COMPlus_EventPipeProcNumbers`: Set this to `1` to enable capturing processor numbers in EventPipe event headers. The default value is `0`.
 
 * `COMPlus_EventPipeConfig`: Sets up the EventPipe session configuration when starting an EventPipe session with `COMPlus_EnableEventPipe`.
-
   The syntax is as follows:
 
   `<provider>:<keyword>:<level>`
@@ -89,3 +90,5 @@ However, you can use the following environment variables to set up an EventPipe 
   - `Microsoft-Windows-DotNETRuntime:4c14fccbd:5`
   - `Microsoft-Windows-DotNETRuntimePrivate:4002000b:5`
   - `Microsoft-DotNETCore-SampleProfiler:0:5`
+
+  To learn more about some of the well-known providers in .NET, refer to [Well-known Event Providers](./well-known-event-providers.md).

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Aggregate Functions (SqlClient for Entity Framework)"
 title: "Aggregate Functions (SqlClient for Entity Framework)"
 ms.date: "03/30/2017"
 ms.assetid: 03303f01-b591-4efc-9875-f9c608edff0b

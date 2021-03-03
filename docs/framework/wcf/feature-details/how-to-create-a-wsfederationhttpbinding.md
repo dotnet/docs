@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a WSFederationHttpBinding"
 title: "How to: Create a WSFederationHttpBinding"
 ms.date: "03/30/2017"
 dev_langs: 

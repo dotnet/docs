@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Imperative Code-Based Validation"
 title: "Imperative Code-Based Validation"
 ms.date: "03/30/2017"
 ms.assetid: ae12537c-455e-42b1-82f4-cea4c46c023e

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Attach an Existing Entity to the DataServiceContext (WCF Data Services)"
 title: "How to: Attach an Existing Entity to the DataServiceContext (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -9,6 +10,8 @@ helpviewer_keywords:
 ms.assetid: e3f2d71d-434c-4e98-91c3-95adae4702b6
 ---
 # How to: Attach an Existing Entity to the DataServiceContext (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 When an entity already exists in a data service, the WCF Data Services client library enables you to attach an object that represents the entity directly to the <xref:System.Data.Services.Client.DataServiceContext> without first executing a query. For more information, see [Updating the Data Service](updating-the-data-service-wcf-data-services.md).  
   

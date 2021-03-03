@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4022 - WebhostUnregisterProtocolFailed"
 title: "4022 - WebhostUnregisterProtocolFailed"
 ms.date: "03/30/2017"
 ms.assetid: cdebf42c-d880-4509-82be-8fdc9f88d203

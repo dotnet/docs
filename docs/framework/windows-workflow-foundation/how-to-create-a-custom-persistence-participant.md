@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Custom Persistence Participant"
 title: "How to: Create a Custom Persistence Participant"
 ms.date: "03/30/2017"
 ms.assetid: 1d9cc47a-8966-4286-94d5-4221403d9c06

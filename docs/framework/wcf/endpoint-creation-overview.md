@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Endpoint Creation Overview"
 title: "Endpoint Creation Overview"
 ms.date: "03/30/2017"
 dev_langs:

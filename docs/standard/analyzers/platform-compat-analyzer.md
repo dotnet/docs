@@ -30,7 +30,7 @@ The platform compatibility analyzer is one of the Roslyn code quality analyzers.
   - The attribute can be applied multiple times to indicate **multiple platform support** (`[SupportedOSPlatform("windows"), SupportedOSPlatform("Android6.0")]`).
   - The analyzer will produce a **warning** if platform-specific APIs are referenced without a proper **platform context**:
     - **Warns** if the project doesn't target the supported platform (for example, a Windows-specific API call and the project targets `<TargetFramework>net5.0-ios14.0</TargetFramework>`).
-    - **Warns** if the project is multi-targeted (`<TargetFramework>net5.0</TargetFramework>`).
+    - **Warns** if the project is multi-targeted (for example, `<TargetFrameworks>net5.0;netstandard2.0</TargetFrameworks>`).
     - **Doesn't warn** if the platform-specific API is referenced within a project that targets any of the **specified platforms** (for example, for a Windows-specific API call and the project targets `<TargetFramework>net5.0-windows</TargetFramework>`).
     - **Doesn't warn** if the platform-specific API call is guarded by corresponding platform-check methods (for example, `if(OperatingSystem.IsWindows())`).
     - **Doesn't warn** if the platform-specific API is referenced from the same platform-specific context (**call site also attributed** with `[SupportedOSPlatform("platform")`).
@@ -173,7 +173,10 @@ The recommended way to deal with these diagnostics is to make sure you only call
 
 - **Delete the code**. Generally not what you want because it means you lose fidelity when your code is used by Windows users. For cases where a cross-platform alternative exists, you're likely better off using that over platform-specific APIs.
 
-- **Suppress the warning**. You can also simply suppress the warning, either via an EditorConfig entry or `#pragma warning disable ca1416`. However, this option should be a last resort when using platform-specific APIs.
+- **Suppress the warning**. You can also simply suppress the warning, either via an [EditorConfig](/visualstudio/ide/create-portable-custom-editor-options) entry or `#pragma warning disable CA1416`. However, this option should be a last resort when using platform-specific APIs.
+
+  > [!TIP]
+  > When disabling warnings using the `#pragma` pre-compiler directives, the identifiers you're targeting are case sensitive. For example, `ca1416` would not actually disable warning CA1416.
 
 ### Guard platform-specific APIs with guard methods
 

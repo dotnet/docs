@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Assignment Operators (Visual Basic)"
 title: "Assignment Operators"
 ms.date: 07/20/2015
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.TxSourceTxScopeRequiredIsAttachedTransaction"
 title: "System.ServiceModel.TxSourceTxScopeRequiredIsAttachedTransaction"
 ms.date: "03/30/2017"
 ms.assetid: 40d7b227-ee00-4b2c-a04c-1cd28b103f94

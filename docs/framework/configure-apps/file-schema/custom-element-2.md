@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Custom element for NameValueSectionHandler and DictionarySectionHandler"
 title: "Custom element for NameValueSectionHandler and DictionarySectionHandler"
 ms.date: "05/01/2017"
 f1_keywords:

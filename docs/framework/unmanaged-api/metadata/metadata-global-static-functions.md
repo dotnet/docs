@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Metadata Global Static Functions"
 title: "Metadata Global Static Functions"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

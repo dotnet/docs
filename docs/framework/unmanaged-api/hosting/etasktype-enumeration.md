@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ETaskType Enumeration"
 title: "ETaskType Enumeration"
 ms.date: "03/30/2017"
 api_name: 

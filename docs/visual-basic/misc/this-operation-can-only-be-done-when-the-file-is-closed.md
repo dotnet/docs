@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: This operation can only be done when the File is closed"
 title: "This operation can only be done when the File is closed"
 ms.date: 07/20/2015
 ms.assetid: 79fe95ae-4aff-469f-beda-d5a85c91d421

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Extending Dispatchers"
 title: "Extending Dispatchers"
 ms.date: "03/30/2017"
 helpviewer_keywords:

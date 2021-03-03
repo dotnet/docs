@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: THEN (Entity SQL)"
 title: "THEN (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 54222642-23c6-4f61-9861-67caca53ac5f

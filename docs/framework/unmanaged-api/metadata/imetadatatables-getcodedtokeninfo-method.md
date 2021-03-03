@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataTables::GetCodedTokenInfo Method"
 title: "IMetaDataTables::GetCodedTokenInfo Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: File specified by FileName does not use the encoding specified by FileEncoding"
 title: "File specified by FileName does not use the encoding specified by FileEncoding"
 ms.date: 07/20/2015
 ms.assetid: 2129f8df-96cd-4c2e-a4ca-f08a49f07d3f

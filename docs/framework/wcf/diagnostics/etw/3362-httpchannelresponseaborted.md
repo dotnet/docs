@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3362 - HttpChannelResponseAborted"
 title: "3362 - HttpChannelResponseAborted"
 ms.date: "03/30/2017"
 ms.assetid: 94bb6f7c-fa87-400c-9f11-75a139f51de4

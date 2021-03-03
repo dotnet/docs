@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Working with Application Logs in Visual Basic"
 title: "Working with Application Logs"
 ms.date: 07/20/2015
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CoordinatorRecoveryLogEntryCreationFailure"
 title: "CoordinatorRecoveryLogEntryCreationFailure"
 ms.date: "03/30/2017"
 ms.assetid: 9f2b1a5c-f5a6-4203-87ff-601635b9ae40

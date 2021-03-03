@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4820 - SynchronizationContextReset"
 title: "4820 - SynchronizationContextReset"
 ms.date: "03/30/2017"
 ms.assetid: 8a5c1597-5270-4b0a-9c8c-bf5f07f7e816

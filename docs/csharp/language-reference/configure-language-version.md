@@ -48,7 +48,7 @@ If you must specify your C# version explicitly, you can do so in several ways:
 - Configure the [`-langversion` compiler option](compiler-options/langversion-compiler-option.md).
 
 > [!TIP]
-> To know what language version you're currently using, put `#error version` (case sensitive) in your code. This makes the compiler produce a diagnostic, CS8304, with a message containing the compiler version being used and the current selected language version.
+> To know what language version you're currently using, put `#error version` (case sensitive) in your code. This makes the compiler report a compiler error, CS8304, with a message containing the compiler version being used and the current selected language version. See [#error (C# Reference)](preprocessor-directives/preprocessor-error.md) for more information.
 
 ### Edit the project file
 
@@ -74,7 +74,7 @@ To configure multiple projects, you can create a **Directory.Build.props** file 
 </Project>
 ```
 
-Builds in all subdirectories of the directory containing that file will use the preview C# version. For more information, see the article on [Customize your build](/visualstudio/msbuild/customize-your-build).
+Builds in all subdirectories of the directory containing that file will use the preview C# version. For more information, see [Customize your build](/visualstudio/msbuild/customize-your-build).
 
 ## C# language version reference
 
@@ -83,13 +83,13 @@ The following table shows all current C# language versions. Your compiler may no
 [!INCLUDE [langversion-table](includes/langversion-table.md)]
 
 > [!TIP]
-> Open the [Developer Command Prompt for Visual Studio](../../framework/tools/developer-command-prompt-for-vs.md), and run the following command to see the listing of language versions available on your machine.
+> Open [Developer Command Prompt for Visual Studio](../../framework/tools/developer-command-prompt-for-vs.md), and run the following command to see the listing of language versions available on your machine.
 >
 > ```CMD
 > csc -langversion:?
 > ```
 >
-> Questioning the [-langversion](compiler-options/langversion-compiler-option.md) compile option like this, will print something similar to the following:
+> Querying the [-langversion](compiler-options/langversion-compiler-option.md) compile option like this prints something similar to the following:
 >
 > ```CMD
 > Supported language versions:

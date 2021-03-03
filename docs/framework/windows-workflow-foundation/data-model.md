@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Workflow Foundation Data Model"
 title: "Windows Workflow Foundation Data Model"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

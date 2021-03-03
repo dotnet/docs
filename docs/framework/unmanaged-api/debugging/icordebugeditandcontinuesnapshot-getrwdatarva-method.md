@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugEditAndContinueSnapshot::GetRwDataRVA Method"
 title: "ICorDebugEditAndContinueSnapshot::GetRwDataRVA Method"
 ms.date: "03/30/2017"
 api_name: 

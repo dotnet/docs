@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1125 - InvokeMethodIsNotStatic"
 title: "1125 - InvokeMethodIsNotStatic"
 ms.date: "03/30/2017"
 ms.assetid: ea2b3827-63da-497b-b2c3-d5cebefe57a1

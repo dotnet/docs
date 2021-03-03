@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugAppDomain3 Interface"
 title: "ICorDebugAppDomain3 Interface"
 ms.date: "03/30/2017"
 api_name: 

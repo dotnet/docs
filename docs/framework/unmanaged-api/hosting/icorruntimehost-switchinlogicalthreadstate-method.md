@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorRuntimeHost::SwitchInLogicalThreadState Method"
 title: "ICorRuntimeHost::SwitchInLogicalThreadState Method"
 ms.date: "03/30/2017"
 api_name: 

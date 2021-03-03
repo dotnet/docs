@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 226 - IdleServicesClosed"
 title: "226 - IdleServicesClosed"
 ms.date: "03/30/2017"
 ms.assetid: b5e72de3-33c6-46a2-998a-3809b520bb30

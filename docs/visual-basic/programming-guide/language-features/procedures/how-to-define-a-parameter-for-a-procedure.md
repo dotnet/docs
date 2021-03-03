@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Define a Parameter for a Procedure (Visual Basic)"
 title: "How to: Define a Parameter for a Procedure"
 ms.date: 07/20/2015
 helpviewer_keywords: 

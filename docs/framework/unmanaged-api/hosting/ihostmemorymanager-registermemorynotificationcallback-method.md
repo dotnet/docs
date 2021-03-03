@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostMemoryManager::RegisterMemoryNotificationCallback Method"
 title: "IHostMemoryManager::RegisterMemoryNotificationCallback Method"
 ms.date: "03/30/2017"
 api_name: 

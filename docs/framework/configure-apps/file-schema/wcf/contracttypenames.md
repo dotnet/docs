@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <contractTypeNames>"
 title: "<contractTypeNames>"
 ms.date: "03/30/2017"
 ms.assetid: 5ec5efc6-87f8-4160-9be0-dcd2e01df3df

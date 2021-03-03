@@ -9,7 +9,9 @@ ms.date: 04/20/2020
 
 **This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
-This tutorial demonstrates the tools to analyze a .NET Core memory leak.
+A memory leak may happen when your app references objects that it no longer needs to perform the desired task. Referencing said objects makes the garbage collector to be unable to reclaim the memory used, often resulting in performance degradation and potentially end up throwing a <xref:System.OutOfMemoryException>.
+
+This tutorial demonstrates the tools to analyze a memory leak in a .NET Core app using the .NET diagnostics CLI tools. If you are on Windows, you may be able to [use Visual Studio's Memory Diagnostic tools](/visualstudio/profiling/memory-usage) to debug the memory leak.
 
 This tutorial uses a sample app, which is designed to intentionally leak memory. The sample is provided as an exercise. You can analyze an app that is unintentionally leaking memory too.
 
@@ -25,8 +27,7 @@ In this tutorial, you will:
 
 The tutorial uses:
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) or a later version.
-- [dotnet-trace](dotnet-trace.md) to list processes.
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version.
 - [dotnet-counters](dotnet-counters.md) to check managed memory usage.
 - [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file.
 - A [sample debug target](/samples/dotnet/samples/diagnostic-scenarios/) app to diagnose.
@@ -43,10 +44,10 @@ Open a console window and navigate to the directory where you downloaded and unz
 dotnet run
 ```
 
-From a separate console, find the process ID using the [dotnet-trace](dotnet-trace.md) tool:
+From a separate console, find the process ID:
 
 ```console
-dotnet-trace ps
+dotnet-counters ps
 ```
 
 The output should be similar to:
@@ -233,6 +234,7 @@ You can also delete the dump file that was created.
 - [dotnet-counters](dotnet-counters.md) to check managed memory usage
 - [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file
 - [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/master/documentation/tutorial)
+- [Use Visual Studio to debug memory leaks](/visualstudio/profiling/memory-usage)
 
 ## Next steps
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugEval::NewObjectNoConstructor Method"
 title: "ICorDebugEval::NewObjectNoConstructor Method"
 ms.date: "03/30/2017"
 api_name: 

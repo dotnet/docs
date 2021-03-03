@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostTask::Join Method"
 title: "IHostTask::Join Method"
 ms.date: "03/30/2017"
 api_name: 

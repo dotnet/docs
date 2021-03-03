@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Guide to the Documentation"
 title: "Guide to the Documentation"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

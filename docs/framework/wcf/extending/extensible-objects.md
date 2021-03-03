@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Extensible Objects"
 title: "Extensible Objects"
 ms.date: "03/30/2017"
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC42033: Bad checksum value, non hex digits or odd number of hex digits"
 title: "Bad checksum value, non hex digits or odd number of hex digits"
 ms.date: 07/20/2015
 f1_keywords:
@@ -29,4 +30,4 @@ A checksum value contains invalid hexadecimal digits or has an odd number of dig
 ## See also
 
 - [ASP.NET Overview](/aspnet/overview)
-- [Talk to Us](/visualstudio/ide/feedback-options)
+- [Visual Studio feedback options](/visualstudio/ide/feedback-options)

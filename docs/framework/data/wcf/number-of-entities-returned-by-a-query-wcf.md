@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Determine the Number of Entities Returned by a Query (WCF Data Services)"
 title: "How to: Determine the Number of Entities Returned by a Query (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -9,6 +10,8 @@ helpviewer_keywords:
 ms.assetid: 03d41a82-df95-40ac-8439-a6c327d37ba8
 ---
 # How to: Determine the Number of Entities Returned by a Query (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 With WCF Data Services, you can determine the number of entities that are in the entity set specified by a query URI. This count can be included either along with the query result or as an integer value. For more information, see [Querying the Data Service](querying-the-data-service-wcf-data-services.md).  
   

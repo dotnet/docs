@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Variance in Delegates (Visual Basic)"
 title: "Variance in Delegates"
 ms.date: 07/20/2015
 ms.assetid: 38e9353f-74f8-4211-a8f0-7a495414df4a

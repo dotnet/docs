@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Custom Principal Identity"
 title: "How to: Create a Custom Principal Identity"
 ms.date: "03/30/2017"
 dev_langs: 

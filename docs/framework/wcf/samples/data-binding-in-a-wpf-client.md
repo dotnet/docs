@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Binding in a Windows Presentation Foundation Client"
 title: "Data Binding in a Windows Presentation Foundation Client"
 ms.date: "03/30/2017"
 ms.assetid: bb8c8293-5973-4aef-9b07-afeff5d3293c

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: @ServiceHost"
 title: "@ServiceHost"
 ms.date: "03/30/2017"
 ms.assetid: 96ba6967-00f2-422f-9aa7-15de4d33ebf3

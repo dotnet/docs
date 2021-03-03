@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: String Manipulation Summary (Visual Basic)"
 title: "String Manipulation Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 

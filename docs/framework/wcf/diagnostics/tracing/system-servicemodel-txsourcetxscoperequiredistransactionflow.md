@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.TxSourceTxScopeRequiredIsTransactionFlow"
 title: "System.ServiceModel.TxSourceTxScopeRequiredIsTransactionFlow"
 ms.date: "03/30/2017"
 ms.assetid: 41a3a5d7-bb16-4d16-bb51-db7ac0cfb748

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Member Overloading"
 title: "Member Overloading"
 ms.date: "10/22/2008"
 helpviewer_keywords:

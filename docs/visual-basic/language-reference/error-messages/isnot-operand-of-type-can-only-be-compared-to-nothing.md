@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC32128: 'IsNot' operand of type 'typename' can only be compared to 'Nothing', because 'typename' is a nullable type"
 title: "'IsNot' operand of type 'typename' can only be compared to 'Nothing', because 'typename' is a nullable type"
 ms.date: 07/20/2015
 f1_keywords:

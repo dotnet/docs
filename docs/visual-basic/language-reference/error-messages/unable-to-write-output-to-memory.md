@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC31020: Unable to write output to memory"
 title: "Unable to write output to memory"
 ms.date: 07/20/2015
 f1_keywords:
@@ -26,4 +27,4 @@ There was a problem writing output to memory.
 
 ## See also
 
-- [Talk to Us](/visualstudio/ide/feedback-options)
+- [Visual Studio feedback options](/visualstudio/ide/feedback-options)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo10 Interface"
 title: "ICorProfilerInfo10 Interface"
 ms.date: "08/06/2019"
 author: "davmason"
@@ -23,7 +24,7 @@ A subclass of [ICorProfilerInfo9](icorprofilerinfo9-interface.md) that provides 
 
 **Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).  
 **Header:** CorProf.idl, CorProf.h  
-**.NET Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
+**.NET Versions:** [!INCLUDE[net_core_30](../../../../includes/net-core-30-md.md)]
 
 ## See also
 

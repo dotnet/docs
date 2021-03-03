@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo9::GetILToNativeMapping3 Method"
 title: "ICorProfilerInfo9::GetILToNativeMapping3"
 ms.date: "08/06/2019"
 dev_langs:
@@ -55,7 +56,7 @@ When tiered compilation is enabled, a method may have more than one native code 
 
 **Library:** CorGuids.lib
 
-**.NET Framework Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)]
+**.NET Framework Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]
 
 ## See also
 

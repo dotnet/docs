@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CLR Hosting Interfaces Added in the .NET Framework 4 and 4.5"
 title: "CLR Hosting Interfaces Added in the .NET Framework 4 and 4.5"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

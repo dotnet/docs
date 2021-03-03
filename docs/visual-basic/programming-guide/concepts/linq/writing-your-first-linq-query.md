@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Writing Your First LINQ Query (Visual Basic)"
 title: "Writing Your First LINQ Query"
 ms.date: 07/20/2015
 helpviewer_keywords: 

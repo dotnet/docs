@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Protected Friend (Visual Basic)"
 title: "Protected Friend"
 ms.date: 05/10/2018
 f1_keywords:

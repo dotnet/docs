@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Composite Data Types (Visual Basic)"
 title: "Composite Data Types"
 ms.date: 04/25/2017
 helpviewer_keywords: 

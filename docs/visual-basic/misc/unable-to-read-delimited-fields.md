@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Unable to read delimited fields because a double quote is not a legal delimiter when EscapeQuotes is set to True"
 title: "Unable to read delimited fields because a double quote is not a legal delimiter when EscapeQuotes is set to True"
 ms.date: 07/20/2015
 f1_keywords: 

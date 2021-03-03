@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedWriter::SetSymAttribute Method"
 title: "ISymUnmanagedWriter::SetSymAttribute Method"
 ms.date: "03/30/2017"
 api_name: 

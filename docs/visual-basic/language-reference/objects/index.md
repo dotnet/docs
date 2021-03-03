@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Objects (Visual Basic)"
 title: "Objects"
 ms.date: 07/20/2015
 helpviewer_keywords: 

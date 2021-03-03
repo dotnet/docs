@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <mexHttpsBinding>"
 title: "<mexHttpsBinding>"
 ms.date: "03/30/2017"
 ms.assetid: f2ed3774-78b9-4a15-b79b-655f1ad68b86

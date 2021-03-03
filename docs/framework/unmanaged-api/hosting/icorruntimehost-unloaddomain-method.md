@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorRuntimeHost::UnloadDomain Method"
 title: "ICorRuntimeHost::UnloadDomain Method"
 ms.date: "03/30/2017"
 api_name: 

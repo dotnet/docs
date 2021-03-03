@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cannot calculate rate using the arguments provided"
 title: "Cannot calculate rate using the arguments provided"
 ms.date: 07/20/2015
 f1_keywords: 

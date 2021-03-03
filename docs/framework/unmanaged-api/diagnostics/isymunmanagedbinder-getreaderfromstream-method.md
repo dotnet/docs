@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedBinder::GetReaderFromStream Method"
 title: "ISymUnmanagedBinder::GetReaderFromStream Method"
 ms.date: "03/30/2017"
 api_name: 

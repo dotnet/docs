@@ -22,7 +22,7 @@ There are several situations when splitting a class definition is desirable:
 
 - To split a class definition, use the [partial](../../language-reference/keywords/partial-type.md) keyword modifier, as shown here:
 
-  [!code-csharp[csProgGuideObjects#26](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#26)]
+  [!code-csharp[EmployeeExample#1](snippets/partial-classes-and-methods/Program.cs#1)]
 
 The `partial` keyword indicates that other parts of the class, struct, or interface can be defined in the namespace. All the parts must use the `partial` keyword. All the parts must be available at compile time to form the final type. All the parts must have the same accessibility, such as `public`, `private`, and so on.
 
@@ -35,15 +35,15 @@ All the parts that specify a base class must agree, but parts that omit a base c
 
 The following example shows that nested types can be partial, even if the type they are nested within is not partial itself.
 
-[!code-csharp[csProgGuideObjects#25](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#25)]
+[!code-csharp[NestedPartialTypes#2](snippets/partial-classes-and-methods/Program.cs#2)]
 
 At compile time, attributes of partial-type definitions are merged. For example, consider the following declarations:
 
-[!code-csharp[csProgGuideObjects#23](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#23)]
+[!code-csharp[PartialMoonDeclarations#3](snippets/partial-classes-and-methods/Program.cs#3)]
 
 They are equivalent to the following declarations:
 
-[!code-csharp[csProgGuideObjects#24](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#24)]
+[!code-csharp[SingleMoonDeclaration#4](snippets/partial-classes-and-methods/Program.cs#4)]
 
 The following are merged from all the partial-type definitions:
 
@@ -59,11 +59,11 @@ The following are merged from all the partial-type definitions:
 
 For example, consider the following declarations:
 
-[!code-csharp[csProgGuideObjects#21](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#21)]
+[!code-csharp[PartialEarthDeclarations#5](snippets/partial-classes-and-methods/Program.cs#5)]
 
 They are equivalent to the following declarations:
 
-[!code-csharp[csProgGuideObjects#22](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#22)]
+[!code-csharp[SingleEarthDeclaration#6](snippets/partial-classes-and-methods/Program.cs#6)]
 
 ### Restrictions
 
@@ -71,13 +71,13 @@ There are several rules to follow when you are working with partial class defini
 
 - All partial-type definitions meant to be parts of the same type must be modified with `partial`. For example, the following class declarations generate an error:
 
-  [!code-csharp[csProgGuideObjects#20](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#20)]
+  [!code-csharp[AllDefinitionsMustBePartials#7](snippets/partial-classes-and-methods/Program.cs#7)]
 
 - The `partial` modifier can only appear immediately before the keywords `class`, `struct`, or `interface`.
 
 - Nested partial types are allowed in partial-type definitions as illustrated in the following example:
 
-  [!code-csharp[csProgGuideObjects#19](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#19)]
+  [!code-csharp[NestedPartialTypes#8](snippets/partial-classes-and-methods/Program.cs#8)]
 
 - All partial-type definitions meant to be parts of the same type must be defined in the same assembly and the same module (.exe or .dll file). Partial definitions cannot span multiple modules.
 
@@ -113,7 +113,7 @@ In the following example, the fields and the constructor of the class, `Coords`,
 
 ### Code
 
-[!code-csharp[csProgGuideObjects#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#17)]
+[!code-csharp[CoordsExample#9](snippets/partial-classes-and-methods/Program.cs#9)]
 
 ## Example 2
 
@@ -123,7 +123,7 @@ The following example shows that you can also develop partial structs and interf
 
 ### Code
 
-[!code-csharp[csProgGuideObjects#18](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#18)]
+[!code-csharp[PartialStructsAndInterfaces#10](snippets/partial-classes-and-methods/Program.cs#10)]
 
 ## Partial Methods
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Map unique XML Schema (XSD) Constraints to DataSet Constraints"
 title: "Map unique XML Schema (XSD) Constraints to DataSet Constraints"
 ms.date: "03/30/2017"
 ms.assetid: 56da90bf-21d3-4d1a-8bb8-de908866b78d

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: StrongNameSignatureGenerationEx Function"
 title: "StrongNameSignatureGenerationEx Function"
 ms.date: "03/30/2017"
 api_name: 

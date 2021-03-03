@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo10::EnumerateObjectReferences Method"
 title: "ICorProfilerInfo10::EnumerateObjectReferences"
 ms.date: "08/06/2019"
 dev_langs:
@@ -50,7 +51,7 @@ The `EnumerateObjectReferences` method is similar to [ObjectReferences](icorprof
 
 **Library:** CorGuids.lib
 
-**.NET Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
+**.NET Versions:** [!INCLUDE[net_core_30](../../../../includes/net-core-30-md.md)]
 
 ## See also
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <returns> (Visual Basic)"
 title: "<returns>"
 ms.date: 07/20/2015
 helpviewer_keywords: 

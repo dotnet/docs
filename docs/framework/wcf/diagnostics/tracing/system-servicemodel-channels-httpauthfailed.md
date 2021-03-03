@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.HttpAuthFailed"
 title: "System.ServiceModel.Channels.HttpAuthFailed"
 ms.date: "03/30/2017"
 ms.assetid: a3254ef2-cd3d-4a8a-ae3d-a51fc389af53

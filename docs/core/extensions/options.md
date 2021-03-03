@@ -3,7 +3,7 @@ title: Options pattern in .NET
 author: IEvangelist
 description: Learn how to use the options pattern to represent groups of related settings in .NET apps.
 ms.author: dapine
-ms.date: 01/06/2021
+ms.date: 01/21/2021
 ---
 
 # Options pattern in .NET
@@ -344,3 +344,4 @@ services.PostConfigureAll<CustomOptions>(customOptions =>
 ## See also
 
 - [Configuration in .NET](configuration.md)
+- [Options pattern guidance for .NET library authors](options-library-authors.md)

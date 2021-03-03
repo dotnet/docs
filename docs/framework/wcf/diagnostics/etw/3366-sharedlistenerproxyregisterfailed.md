@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3366 - SharedListenerProxyRegisterFailed"
 title: "3366 - SharedListenerProxyRegisterFailed"
 ms.date: "03/30/2017"
 ms.assetid: 28f6151c-650f-473d-a807-cb06b56f67f1

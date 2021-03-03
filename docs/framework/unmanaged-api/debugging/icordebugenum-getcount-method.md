@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugEnum::GetCount Method"
 title: "ICorDebugEnum::GetCount Method"
 ms.date: "03/30/2017"
 api_name: 

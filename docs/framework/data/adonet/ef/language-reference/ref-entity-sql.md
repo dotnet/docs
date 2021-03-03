@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: REF (Entity SQL)"
 title: "REF (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: c5f4cb35-69e9-44cc-b63b-ee38922bbda1

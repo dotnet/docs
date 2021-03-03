@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Distributed Application Security"
 title: "Distributed Application Security"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Binding Scenarios"
 title: "Data Binding Scenarios"
 ms.date: "03/30/2017"
 ms.assetid: a2c10dc4-84af-4dab-baee-e9c84ca26ebf

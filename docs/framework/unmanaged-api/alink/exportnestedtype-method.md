@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ExportNestedType Method"
 title: "ExportNestedType Method"
 ms.date: "03/30/2017"
 api_name: 

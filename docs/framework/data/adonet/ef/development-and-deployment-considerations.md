@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Development and Deployment Considerations"
 title: "Development and Deployment Considerations"
 ms.date: "03/30/2017"
 ms.assetid: 535e6611-02de-484c-b5ff-6ffeed04d740

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FLATTEN (Entity SQL)"
 title: "FLATTEN (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 1a670c63-0a29-4738-80e6-101f66af05c3

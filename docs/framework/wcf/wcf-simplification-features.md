@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WCF Simplification Features"
 title: "WCF Simplification Features"
 ms.date: "03/30/2017"
 ms.assetid: 4535a511-6064-4da0-b361-80262a891663

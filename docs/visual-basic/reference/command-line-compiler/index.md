@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Visual Basic command-line compiler"
 title: "Command-line compiler"
 ms.date: 02/20/2018
 helpviewer_keywords: 
@@ -25,4 +26,3 @@ Lists compiler options in an alphabetical table
 
 [Visual Basic Compiler Options Listed by Category](compiler-options-listed-by-category.md)  
 Presents compiler options in functional groups.
-  

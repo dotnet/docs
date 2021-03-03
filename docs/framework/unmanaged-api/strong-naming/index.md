@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Strong Naming (Unmanaged API Reference)"
 title: "Strong Naming (Unmanaged API Reference)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

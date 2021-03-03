@@ -34,7 +34,7 @@ dotnet --list-sdks
 
 Each version of the .NET SDK is available in both x86 and x64 architecture. The project might be trying to find the .NET SDK for the wrong architecture, or the .NET SDK for the architecture your project needs might not be installed. Check the installation folders for the architecture you need. For example, on Windows, the x86 version of the .NET SDK is installed in *C:\Program Files (x86)\dotnet* and the x64 version is installed in *C:\Program Files\dotnet*. See [How to check that .NET is already installed](../../install/how-to-detect-installed-versions.md) and choose your operating system to find out how to detect what's installed on your machine.
 
-If the version you need is not installed, download it from [here](https://dotnet.microsoft.com/download/dotnet-core).
+If the version you need isn't installed, find the one you need at the [.NET Downloads](https://dotnet.microsoft.com/download/dotnet) page.
 
 ## Preview not enabled
 

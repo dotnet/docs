@@ -19,7 +19,7 @@ In this article, you'll learn how to install .NET on macOS. .NET is made up of t
 The latest version of .NET is 5.0.
 
 > [!div class="button"]
-> [Download .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
+> [Download .NET Core](https://dotnet.microsoft.com/download/dotnet)
 
 ## Supported releases
 
@@ -57,7 +57,7 @@ There are two different runtimes you can install on macOS:
   This runtime is the simplest runtime and doesn't include any other runtime. It's highly recommended that you install *ASP.NET Core runtime* for the best compatibility with .NET apps.
 
 > [!div class="button"]
-> [Download .NET Runtime](https://dotnet.microsoft.com/download/dotnet-core)
+> [Download .NET Runtime](https://dotnet.microsoft.com/download/dotnet)
 
 ## SDK information
 
@@ -101,20 +101,20 @@ brew install mono-libgdiplus
 
 macOS has standalone installers that can be used to install the .NET 5.0 SDK:
 
-- [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/5.0)
+- [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet/5.0)
 
 ## Download and manually install
 
 <!-- Note, this content is taken from includes/linux-install-manual.md but changed for macOS. Any fixes should be applied there too, though content may be different -->
 
-As an alternative to the macOS installers for .NET, you can download and manually install the SDK and runtime. Manual install is usually performed as part of continuous integration testing. For a developer or user, it's generally better to use an [installer](https://dotnet.microsoft.com/download/dotnet-core).
+As an alternative to the macOS installers for .NET, you can download and manually install the SDK and runtime. Manual install is usually performed as part of continuous integration testing. For a developer or user, it's generally better to use an [installer](https://dotnet.microsoft.com/download/dotnet).
 
 If you install .NET SDK, you don't need to install the corresponding runtime. First, download a **binary** release for either the SDK or the runtime from one of the following sites:
 
 - ✔️ [.NET 5.0 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
-- ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-- ✔️ [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1)
-- [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet-core)
+- ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet/3.1)
+- ✔️ [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet/2.1)
+- [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)
 
 Next, extract the downloaded file and use the `export` command to set variables used by .NET and then ensure .NET is in PATH.
 
@@ -165,7 +165,7 @@ Visual Studio Code is a powerful and lightweight source code editor that runs on
 While Visual Studio Code doesn't come with an automated .NET installer like Visual Studio does, adding .NET support is simple.
 
 01. [Download and install Visual Studio Code](https://code.visualstudio.com/Download).
-01. [Download and install the .NET SDK](https://dotnet.microsoft.com/download/dotnet-core).
+01. [Download and install the .NET SDK](https://dotnet.microsoft.com/download/dotnet).
 01. [Install the C# extension from the Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
 
 ## Install with bash automation

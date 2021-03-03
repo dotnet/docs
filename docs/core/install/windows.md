@@ -19,7 +19,7 @@ In this article, you'll learn how to install .NET on Windows. .NET is made up of
 The latest version of .NET is 5.0.
 
 > [!div class="button"]
-> [Download .NET](https://dotnet.microsoft.com/download/dotnet-core)
+> [Download .NET](https://dotnet.microsoft.com/download/dotnet)
 
 ## Supported releases
 
@@ -71,7 +71,7 @@ There are three different runtimes you can install on Windows:
   This runtime is the simplest runtime and doesn't include any other runtime. It's highly recommended that you install both *ASP.NET Core runtime* and *Desktop runtime* for the best compatibility with .NET apps.
 
 > [!div class="button"]
-> [Download .NET Runtime](https://dotnet.microsoft.com/download/dotnet-core)
+> [Download .NET Runtime](https://dotnet.microsoft.com/download/dotnet)
 
 ## SDK information
 
@@ -258,12 +258,12 @@ Visual Studio Code is a powerful and lightweight source code editor that runs on
 While Visual Studio Code doesn't come with an automated .NET Core installer like Visual Studio does, adding .NET Core support is simple.
 
 01. [Download and install Visual Studio Code](https://code.visualstudio.com/Download).
-01. [Download and install the .NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core).
+01. [Download and install the .NET Core SDK](https://dotnet.microsoft.com/download/dotnet).
 01. [Install the C# extension from the Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
 
 ## Windows Installer
 
-The [download page](https://dotnet.microsoft.com/download/dotnet-core) for .NET provides Windows Installer executables.
+The [download page](https://dotnet.microsoft.com/download/dotnet) for .NET provides Windows Installer executables.
 
 When you use the Windows installers to install .NET, you can customize the installation path by setting the `DOTNETHOME_X64` and `DOTNETHOME_X86` parameters:
 
@@ -293,14 +293,14 @@ For more information, see [Standard Installer Command-Line Options](/windows/win
 
 ## Download and manually install
 
-As an alternative to the Windows installers for .NET, you can download and manually install the SDK or runtime. Manual install is usually done as part of continuous integration testing. For a developer or user, it's generally better to use an [installer](https://dotnet.microsoft.com/download/dotnet-core).
+As an alternative to the Windows installers for .NET, you can download and manually install the SDK or runtime. Manual install is usually done as part of continuous integration testing. For a developer or user, it's generally better to use an [installer](https://dotnet.microsoft.com/download/dotnet).
 
 Both .NET SDK and .NET Runtime can be manually installed after they've been downloaded. If you install .NET SDK, you don't need to install the corresponding runtime. First, download a binary release for either the SDK or the runtime from one of the following sites:
 
 - [.NET 5.0 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
-- [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-- [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1)
-- [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet-core)
+- [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet/3.1)
+- [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet/2.1)
+- [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)
 
 Create a directory to extract .NET to, for example `%USERPROFILE%\dotnet`. Then, extract the downloaded zip file into that directory.
 

@@ -15,7 +15,7 @@ This article teaches you how to build your .NET for Apache Spark applications on
 
 If you already have all of the following prerequisites, skip to the [build](#build) steps.
 
-1. Download and install **[.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1)** - installing the SDK adds the `dotnet` toolchain to your path.  .NET Core 2.1, 2.2 and 3.1 are supported.
+1. Download and install **[.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet/3.1)** - installing the SDK adds the `dotnet` toolchain to your path.  .NET Core 2.1, 2.2 and 3.1 are supported.
 
 2. Install **[OpenJDK 8](https://openjdk.java.net/install/)**.
 

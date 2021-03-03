@@ -26,6 +26,8 @@
         items:
         - name: "Nullable reference type annotations changed"
           href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md
+        - name: "Obsoleted and removed APIs"
+          href: aspnet-core/6.0/obsolete-removed-apis.md
         - name: "Blazor: Parameter name changed in RequestImageFileAsync method"
           href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
         - name: "Kestrel: Log message attributes changed"
@@ -319,7 +321,9 @@
       - name: .NET 6.0
         items:
         - name: "Nullable reference type annotations changed"
-          href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md        
+          href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md
+        - name: "Obsoleted and removed APIs"
+          href: aspnet-core/6.0/obsolete-removed-apis.md
         - name: "Blazor: Parameter name changed in RequestImageFileAsync method"
           href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
         - name: "Kestrel: Log message attributes changed"
@@ -548,7 +552,7 @@
           href: msbuild/5.0/publishdepsfilepath-behavior-change.md
         - name: TargetFramework change from netcoreapp to net
           href: msbuild/5.0/targetframework-name-change.md
-      - name: .NET 3.0
+      - name: .NET Core 2.1 - 3.1
         href: msbuild.md
     - name: Networking
       items:

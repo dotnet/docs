@@ -900,14 +900,14 @@ For lambda expressions, you may also want to consider placing the body of a lamb
 let printListWithOffset a list1 =
     List.iter
         (fun elem ->
-             printfn $"%d{a + elem}")
+             printfn $"A very long line to format the value: %d{a + elem}")
         list1
 
 let printListWithOffsetPiped a list1 =
     list1
     |> List.iter
            (fun elem ->
-                printfn $"%d{a + elem}")
+                printfn $"A very long line to format the value: %d{a + elem}")
 ```
 
 If the body of a lambda expression is multiple lines long, you should consider refactoring it into a locally-scoped function.
@@ -917,7 +917,7 @@ The parameters should always be indented relative to the function or `fun` keywo
 ```fsharp
 // With 4 spaces indentation
 list1
-|> List.iter
+|> List.fold
        someLongParam
        anotherLongParam
 
@@ -928,7 +928,7 @@ list1
 
 // With 2 spaces indentation
 list1
-|> List.iter
+|> List.fold
      someLongParam
      anotherLongParam
 

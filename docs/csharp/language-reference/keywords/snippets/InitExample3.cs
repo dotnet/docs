@@ -1,4 +1,3 @@
-﻿
 class InitExampleExpressionBodied
 {
     private double _seconds;

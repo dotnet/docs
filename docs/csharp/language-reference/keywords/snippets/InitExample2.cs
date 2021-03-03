@@ -1,4 +1,4 @@
-﻿    class InitExampleAutoProperty
-    {
-        public double Hours { get; init; }
-    }
+class InitExampleAutoProperty
+{
+    public double Hours { get; init; }
+}

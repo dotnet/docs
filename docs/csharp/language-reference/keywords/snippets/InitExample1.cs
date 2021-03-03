@@ -1,4 +1,3 @@
-﻿
 class InitExample
 {
      private double _seconds;
@@ -6,6 +5,6 @@ class InitExample
      public double Seconds
      {
          get { return _seconds; }
-         set { _seconds = value; }
+         init { _seconds = value; }
      }
 }

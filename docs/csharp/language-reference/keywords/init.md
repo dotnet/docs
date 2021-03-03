@@ -1,10 +1,10 @@
 ---
 description: "init keyword - C# Reference"
 title: "init keyword - C# Reference"
-ms.date: 03/10/2017
+ms.date: 03/03/2021
 f1_keywords: 
   - "init"
-  - "init_CSharpKeyword"ss
+  - "init_CSharpKeyword"
 helpviewer_keywords: 
   - "init keyword [C#]"
 ---

@@ -113,7 +113,6 @@ The listener can be used to collect tracing data, sample, or force creating the 
 The `ActivityListener` class provides a different callbacks to handle different events.
 
 ```csharp
-
 ActivityListener listener = new ActivityListener
 {
     ShouldListenTo = (activitySource) => object.ReferenceEquals(source, activitySource),

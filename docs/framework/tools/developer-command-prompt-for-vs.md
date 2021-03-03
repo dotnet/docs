@@ -17,7 +17,7 @@ no-loc: cmdlet
 Visual Studio 2019 includes two command-line shells for developers:
 
 - **Developer Command Prompt for Visual Studio** - A standard command prompt with certain environment variables set to make using command-line developer tools easier.
-- **Developer PowerShell** - More powerful than a command prompt. For example, you can pass the output of one command (known as a *cmdlet*) to another cmdlet. This shell has the same certain environment variables set as Developer Command Prompt.
+- **Developer PowerShell** - More powerful than a command prompt. For example, you can pass the output of one command (known as a *cmdlet*) to another cmdlet. This shell has the same environment variables set as Developer Command Prompt.
 
 Both shells have specific environment variables set that enable you to use command-line developer tools more easily. After opening one of these shells, you can enter the commands for different utilities without having to know where they're located. The commands you can run include:
 

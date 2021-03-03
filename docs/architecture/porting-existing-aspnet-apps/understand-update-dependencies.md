@@ -17,15 +17,23 @@ After identifying the sequence in which the app's individual projects must be mi
 
 Large apps typically involve multiple projects, and most projects other than the ASP.NET MVC web project are likely to be class libraries. Class libraries tend to be the easiest to port between .NET platforms, especially compared to ASP.NET projects, which are among the most difficult (and typically need to be re-created).
 
-Teams can consider the [try-convert tool](https://github.com/dotnet/try-convert) for migrating class libraries to .NET Core. The try-convert tool analyzes a .NET Framework project file and attempts to migrate it to the .NET Core project file format, making any modifications it can safely perform in the process. This tool won't work on an ASP.NET project, but can help speed up the process of migrating class libraries.
+Teams can consider the [try-convert tool](https://github.com/dotnet/try-convert) or the [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant) for migrating class libraries to .NET Core. These tools analyze a .NET Framework project file and attempt to migrate it to the .NET Core project file format, making any modifications it can safely perform in the process. The tools may require some manual assistance to work with ASP.NET projects, but can usually help speed up the process of migrating class libraries.
 
-The try-convert tool is deployed as a .NET Core command line tool. It only runs on Windows, since it's designed to work with .NET Framework apps. You can install it by running the following command from a command prompt:
+The try-convert and Upgrade Assistant tools are deployed as .NET Core command line tools. They only run on Windows, since they're designed to work with .NET Framework apps. You can install try-convert by running the following command from a command prompt:
 
 ```dotnetcli
 dotnet tool install -g try-convert
 ```
 
 Once you've successfully installed the tool, you can run `try-convert` in the folder where the class library's project file is located.
+
+Install the .NET Upgrade Assistant with the following command (after installing try-convert):
+
+```dotnetcli
+dotnet tool install -g upgrade-assistant
+```
+
+Run the tool with the command `upgrade-assistant <project>` in the folder where the project file is located.
 
 ## Update NuGet package dependencies
 
@@ -45,6 +53,7 @@ The next chapter digs into details of how to migrate from ASP.NET MVC and Web AP
 
 ## References
 
+- [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant)
 - [try-convert tool](https://github.com/dotnet/try-convert)
 - [apiport tool](https://github.com/microsoft/dotnet-apiport)
 

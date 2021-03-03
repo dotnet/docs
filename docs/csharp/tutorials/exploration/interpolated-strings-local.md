@@ -1,4 +1,3 @@
-
 ---
 title: String interpolation - C# tutorial
 description: This tutorial shows you how to use the C# string interpolation feature to include formatted expression results in a larger string.

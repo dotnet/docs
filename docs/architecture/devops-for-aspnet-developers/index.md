@@ -16,7 +16,7 @@ By [Cam Soper](https://twitter.com/camsoper) and [Scott Addie](https://twitter.c
 
 This guide is available as a [downloadable PDF e-book](https://aka.ms/devopsbook).
 
-## Welcome 
+## Welcome
 
 Welcome to the Azure Development Lifecycle guide for .NET! This guide introduces the basic concepts of building a development lifecycle around Azure using .NET tools and processes. After finishing this guide, you'll reap the benefits of a mature DevOps toolchain.
 

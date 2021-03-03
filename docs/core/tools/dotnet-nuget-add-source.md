@@ -26,7 +26,7 @@ dotnet nuget add source -h|--help
 The `dotnet nuget add source` command adds a new package source to your NuGet configuration files.
 
 > [!WARNING]
-> When adding multiple package sources, be careful not to introduce a [dependency confusion attack](https://aka.ms/pkg-sec-wp).
+> When adding multiple package sources, be careful not to introduce a [dependency confusion vulnerability](https://aka.ms/pkg-sec-wp).
 
 ## Arguments
 

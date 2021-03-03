@@ -94,6 +94,6 @@ When the application entry point returns a `Task` or `Task<int>`, the compiler g
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [C# Reference](../index.md)
+- [C# Reference](../../language-reference/index.md)
 - [Main() and Command-Line Arguments](index.md)
 - [How to display command line arguments](./how-to-display-command-line-arguments.md)

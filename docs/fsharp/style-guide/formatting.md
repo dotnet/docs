@@ -605,10 +605,10 @@ type MyRecord =
 let foo a =
     a
     |> Option.map
-        (fun x ->
-            {
-                MyField = x
-            })
+           (fun x ->
+               {
+                   MyField = x
+               })
 ```
 
 The same rules apply for list and array elements.
@@ -820,10 +820,10 @@ Pattern matching of anonymous functions, starting by `function`, should generall
 ```fsharp
 lambdaList
 |> List.map
-    (function
-        | Abs(x, body) -> 1 + sizeLambda 0 body
-        | App(lam1, lam2) -> sizeLambda (sizeLambda 0 lam1) lam2
-        | Var v -> 1)
+       (function
+           | Abs(x, body) -> 1 + sizeLambda 0 body
+           | App(lam1, lam2) -> sizeLambda (sizeLambda 0 lam1) lam2
+           | Var v -> 1)
 ```
 
 Pattern matching in functions defined by `let` or `let rec` should be indented four spaces after starting of `let`, even if `function` keyword is used:
@@ -906,11 +906,27 @@ let printListWithOffset a list1 =
 let printListWithOffsetPiped a list1 =
     list1
     |> List.iter
-        (fun elem ->
-            printfn $"%d{a + elem}")
+           (fun elem ->
+               printfn $"%d{a + elem}")
 ```
 
 If the body of a lambda expression is multiple lines long, you should consider refactoring it into a locally-scoped function.
+
+The parameters should always be indented relative to the function, regardless of the context in which the function appears:
+
+```fsharp
+// With 4 spaces indentation
+list1
+|> List.iter
+       someLongParam
+       anotherLongParam
+
+// With 2 spaces indentation
+list1
+|> List.iter
+     someLongParam
+     anotherLongParam
+```
 
 ### Formatting infix operators
 

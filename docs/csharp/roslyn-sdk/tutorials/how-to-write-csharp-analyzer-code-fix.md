@@ -259,7 +259,7 @@ The template uses [Microsoft.CodeAnalysis.Testing](https://github.com/dotnet/ros
 > [!TIP]
 > The testing library supports a special markup syntax, including the following:
 >
-> - `[|text|]`: indicates that a diagnostic is reported for `text`.
+> - `[|text|]`: indicates that a diagnostic is reported for `text`. By default, this form may only be used for testing analyzers with exactly one `DiagnosticDescriptor` provided by `DiagnosticAnalyzer.SupportedDiagnostics`.
 > - `{|ExpectedDiagnosticId:text|}`: indicates that a diagnostic with <xref:Microsoft.CodeAnalysis.Diagnostic.Id> `ExpectedDiagnosticId` is reported for `text`.
 
 Add the following test method to the `MakeConstUnitTest` class:

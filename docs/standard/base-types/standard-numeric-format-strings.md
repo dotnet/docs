@@ -46,6 +46,8 @@ Standard numeric format strings are supported by:
 > [!TIP]
 > You can download the **Formatting Utility**, a .NET Core Windows Forms application that lets you apply format strings to either numeric or date and time values and displays the result string. Source code is available for [C#](/samples/dotnet/samples/windowsforms-formatting-utility-cs) and [Visual Basic](/samples/dotnet/samples/windowsforms-formatting-utility-vb).
 
+## Standard format specifiers
+
 <a name="table"></a> The following table describes the standard numeric format specifiers and displays sample output produced by each format specifier. See the [Notes](#NotesStandardFormatting) section for additional information about using standard numeric format strings, and the [Example](#example) section for a comprehensive illustration of their use.
 
 |Format specifier|Name|Description|Examples|
@@ -63,7 +65,7 @@ Standard numeric format strings are supported by:
 
 <a name="Using"></a>
 
-## Using Standard Numeric Format Strings
+## Use standard numeric format strings
 
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
@@ -93,7 +95,7 @@ The following sections provide detailed information about each of the standard n
 
 <a name="CFormatString"></a>
 
-## The Currency ("C") Format Specifier
+## Currency format specifier (C)
 
 The "C" (or currency) format specifier converts a number to a string that represents a currency amount. The precision specifier indicates the desired number of decimal places in the result string. If the precision specifier is omitted, the default precision is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits%2A?displayProperty=nameWithType> property.
 
@@ -122,7 +124,7 @@ The following example formats a <xref:System.Double> value with the currency for
 
 <a name="DFormatString"></a>
 
-## The Decimal ("D") Format Specifier
+## Decimal format specifier (D)
 
 The "D" (or decimal) format specifier converts a number to a string of decimal digits (0-9), prefixed by a minus sign if the number is negative. This format is supported only for integral types.
 
@@ -144,7 +146,7 @@ The following example formats an <xref:System.Int32> value with the decimal form
 
 <a name="EFormatString"></a>
 
-## The Exponential ("E") Format Specifier
+## Exponential format specifier (E)
 
 The exponential ("E") format specifier converts a number to a string of the form "-d.ddd…E+ddd" or "-d.ddd…e+ddd", where each "d" indicates a digit (0-9). The string starts with a minus sign if the number is negative. Exactly one digit always precedes the decimal point.
 
@@ -170,7 +172,7 @@ The following example formats a <xref:System.Double> value with the exponential 
 
 <a name="FFormatString"></a>
 
-## The Fixed-Point ("F") Format Specifier
+## Fixed-point format specifier (F)
 
 The fixed-point ("F") format specifier converts a number to a string of the form "-ddd.ddd…" where each "d" indicates a digit (0-9). The string starts with a minus sign if the number is negative.
 
@@ -194,7 +196,7 @@ The following example formats a <xref:System.Double> and an <xref:System.Int32> 
 
 <a name="GFormatString"></a>
 
-## The General ("G") Format Specifier
+## General format specifier (G)
 
 The general ("G") format specifier converts a number to the more compact of either fixed-point or scientific notation, depending on the type of the number and whether a precision specifier is present. The precision specifier defines the maximum number of significant digits that can appear in the result string. If the precision specifier is omitted or zero, the type of the number determines the default precision, as indicated in the following table.
 
@@ -241,7 +243,7 @@ The following example formats assorted floating-point values with the general fo
 
 <a name="NFormatString"></a>
 
-## The Numeric ("N") Format Specifier
+## Numeric format specifier (N)
 
 The numeric ("N") format specifier converts a number to a string of the form "-d,ddd,ddd.ddd…", where "-" indicates a negative number symbol if required, "d" indicates a digit (0-9), "," indicates a group separator, and "." indicates a decimal point symbol. The precision specifier indicates the desired number of digits after the decimal point. If the precision specifier is omitted, the number of decimal places is defined by the current <xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits%2A?displayProperty=nameWithType> property.
 
@@ -266,7 +268,7 @@ The following example formats assorted floating-point values with the number for
 
 <a name="PFormatString"></a>
 
-## The Percent ("P") Format Specifier
+## Percent format specifier (P)
 
 The percent ("P") format specifier multiplies a number by 100 and converts it to a string that represents a percentage. The precision specifier indicates the desired number of decimal places. If the precision specifier is omitted, the default numeric precision supplied by the current <xref:System.Globalization.NumberFormatInfo.PercentDecimalDigits%2A> property is used.
 
@@ -293,7 +295,7 @@ The following example formats floating-point values with the percent format spec
 
 <a name="RFormatString"></a>
 
-## The Round-trip ("R") Format Specifier
+## Round-trip format specifier (R)
 
 The round-trip ("R") format specifier attempts to ensure that a numeric value that is converted to a string is parsed back into the same numeric value. This format is supported only for the <xref:System.Single>, <xref:System.Double>, and <xref:System.Numerics.BigInteger> types.
 
@@ -328,7 +330,7 @@ To work around the problem of <xref:System.Double> values formatted with the "R"
 
 <a name="XFormatString"></a>
 
-## The Hexadecimal ("X") Format Specifier
+## Hexadecimal format specifier (X)
 
 The hexadecimal ("X") format specifier converts a number to a string of hexadecimal digits. The case of the format specifier indicates whether to use uppercase or lowercase characters for hexadecimal digits that are greater than 9. For example, use "X" to produce "ABCDEF", and "x" to produce "abcdef". This format is supported only for integral types.
 
@@ -348,24 +350,24 @@ The following example formats <xref:System.Int32> values with the hexadecimal fo
 
 ## Notes
 
-### Control Panel Settings
+### Control Panel settings
 
 The settings in the **Regional and Language Options** item in Control Panel influence the result string produced by a formatting operation. Those settings are used to initialize the <xref:System.Globalization.NumberFormatInfo> object associated with the current thread culture, which provides values used to govern formatting. Computers that use different settings generate different result strings.
 
 In addition, if the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%29> constructor is used to instantiate a new <xref:System.Globalization.CultureInfo> object that represents the same culture as the current system culture, any customizations established by the **Regional and Language Options** item in Control Panel will be applied to the new <xref:System.Globalization.CultureInfo> object. You can use the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29> constructor to create a <xref:System.Globalization.CultureInfo> object that does not reflect a system's customizations.
 
-### NumberFormatInfo Properties
+### NumberFormatInfo properties
 
 Formatting is influenced by the properties of the current <xref:System.Globalization.NumberFormatInfo> object, which is provided implicitly by the current thread culture or explicitly by the <xref:System.IFormatProvider> parameter of the method that invokes formatting. Specify a <xref:System.Globalization.NumberFormatInfo> or <xref:System.Globalization.CultureInfo> object for that parameter.
 
 > [!NOTE]
 > For information about customizing the patterns or strings used in formatting numeric values, see the <xref:System.Globalization.NumberFormatInfo> class topic.
 
-### Integral and Floating-Point Numeric Types
+### Integral and floating-point numeric types
 
 Some descriptions of standard numeric format specifiers refer to integral or floating-point numeric types. The integral numeric types are <xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, and <xref:System.Numerics.BigInteger>. The floating-point numeric types are <xref:System.Decimal>, <xref:System.Single>, and <xref:System.Double>.
 
-### Floating-Point Infinities and NaN
+### Floating-point infinities and NaN
 
 Regardless of the format string, if the value of a <xref:System.Single> or <xref:System.Double> floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A>, <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A>, or <xref:System.Globalization.NumberFormatInfo.NaNSymbol%2A> property that is specified by the currently applicable <xref:System.Globalization.NumberFormatInfo> object.
 

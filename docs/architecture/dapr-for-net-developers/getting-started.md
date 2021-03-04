@@ -212,19 +212,19 @@ Additionally, you'll need complete this sample using [Visual Studio 2019](https:
 
 1. In Visual Studio 2019, create an **ASP.NET Core Web App** project:
 
-    ![Screenshot of creating a new project](./media/getting-started/multicontainer-createproject.png)
+    :::image type="content" source="./media/getting-started/multicontainer-createproject.png" alt-text="Screenshot of creating a new project":::
 
 1. Name your project `DaprFrontEnd` and your solution `DaprMultiContainer`:
 
-    ![Screenshot of configuring your new project](./media/getting-started/multicontainer-configureproject.png)
+    :::image type="content" source="./media/getting-started/multicontainer-configureproject.png" alt-text="Screenshot of configuring your new project":::
 
 1. Select **Web Application** to create a web application with Razor pages. Don't select **Enable Docker Support**. You'll add Docker support later.
 
-    ![Screenshot of creating a new ASP.NET Core web application](./media/getting-started/multicontainer-createwebapp.png)
+    :::image type="content" source="./media/getting-started/multicontainer-createwebapp.png" alt-text="Screenshot of creating a new ASP.NET Core web application":::
 
 1. Add a ASP.NET Core Web API project to the same solution and call it _DaprBackEnd_. Select **API** as the project type. By default, a Dapr sidecar relies on the network boundary to limit access to its public API. So, clear the checkbox for **Configure for HTTPS**.
 
-    ![Screenshot of creating the  web API](./media/getting-started/multicontainer-createwebapi.png)
+    :::image type="content" source="./media/getting-started/multicontainer-createwebapi.png" alt-text="Screenshot of creating the web API":::
 
 ### Add Dapr service invocation
 
@@ -333,17 +333,17 @@ In the final part of this example, you'll add container support and run the solu
 
 1. Right-click the `DaprFrontEnd` project, and choose **Add** > **Container Orchestrator Support**. The **Add Container Orchestrator Support** dialog appears:
 
-    ![Screenshot of adding container orchestrator support](./media/getting-started/multicontainer-addorchestrator.png)
+    :::image type="content" source="./media/getting-started/multicontainer-addorchestrator.png" alt-text="Screenshot of adding container orchestrator support":::
 
     Choose **Docker Compose**.
 
 1. In the next dialog, select **Linux** as the Target OS:
 
-    ![Screenshot of selecting Docker target OS](./media/getting-started/multicontainer-targetos.png)
+    :::image type="content" source="./media/getting-started/multicontainer-targetos.png" alt-text="Screenshot of selecting Docker target OS":::
 
     Visual Studio creates a *docker-compose.yml*file and a *.dockerignore* file in the **docker-compose** folder in the solution:
 
-    ![Screenshot of the docker-compose project](./media/getting-started/multicontainer-dockersolution.png)
+    :::image type="content" source="./media/getting-started/multicontainer-dockersolution.png" alt-text="Screenshot of the docker-compose project":::
 
     The *docker-compose.yml* file has the following content:
 
@@ -519,7 +519,7 @@ In the final part of this example, you'll add container support and run the solu
 
 1. Run the solution (<kbd>F5</kbd> or <kbd>Ctrl+F5</kbd>) to verify that it works as expected. If everything is configured correctly, you should see the weather forecast data:
 
-    ![Screenshot of the final solution showing the weather forecast data](./media/getting-started/multicontainer-result.png)
+    :::image type="content" source="./media/getting-started/multicontainer-result.png" alt-text="Screenshot of the final solution showing the weather forecast data":::
 
     Running locally with Docker Compose and Visual Studio 2019, you can set breakpoints and debug into the application. For production scenarios, it's recommended to host your application in Kubernetes. This book includes an accompanying reference application, [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr), that contains scripts to deploy to Kubernetes.
 

@@ -310,7 +310,7 @@ Now, you'll configure communication between the services using Dapr [service inv
 
 1. Replace the contents of the *Index.cshtml* file in the *Pages* folder, with the following code. It displays the weather forecasts stored in the view data to the user:
 
-    ```html
+    ```razor
     @page
     @model IndexModel
     @{
@@ -478,7 +478,7 @@ In the final part of this example, you'll add container support and run the solu
 
     ```yaml
     version: '3.4'
-
+    
     services:
       daprfrontend:
         image: ${DOCKER_REGISTRY-}daprfrontend

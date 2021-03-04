@@ -65,7 +65,7 @@ Alternatively, you can first call `GetCodeInfo4` with a zero-length `codeInfos` 
 
 **Library:** CorGuids.lib
 
-**.NET Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)]
+**.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]
 
 ## See also
 

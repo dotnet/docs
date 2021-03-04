@@ -46,7 +46,7 @@ After updating to .NET Core 3.1 the project file for the same project should loo
 </Project>
 ```
 
-Make these changes, in particular delete the `PackageReference` element, to eliminate the warning. For more information, see [Remove obsolete package references](aspnet/core/migration/22-to-30#remove-obsolete-package-references).
+Make these changes, in particular delete the `PackageReference` element, to eliminate the warning. For more information, see [Remove obsolete package references](/aspnet/core/migration/22-to-30#remove-obsolete-package-references).
 
 ## Class library project
 

@@ -86,7 +86,7 @@ namespace SystemTextJsonSamples
     // <WFWithConverterAttribute>
     public class WeatherForecastWithConverterAttribute
     {
-        [JsonConverter(typeof(DateTimeOffsetConverter))]
+        [JsonConverter(typeof(DateTimeOffsetJsonConverter))]
         public DateTimeOffset Date { get; set; }
         public int TemperatureCelsius { get; set; }
         public string Summary { get; set; }

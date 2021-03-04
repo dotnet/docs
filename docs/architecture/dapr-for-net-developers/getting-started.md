@@ -22,7 +22,7 @@ You'll start by installing Dapr on your development computer. Once complete, you
 
 1. [Initialize Dapr](https://docs.dapr.io/getting-started/install-dapr/). This step sets up your development environment by installing the latest Dapr binaries and container images.
 
-1. Install the [.NET Core 3 Development Tools](https://dotnet.microsoft.com/download/dotnet-core/3.1) for .NET Core 3.1.
+1. Install the [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet/3.1).
 
 Now that Dapr is installed, it's time to build your first Dapr application!
 
@@ -204,7 +204,7 @@ In the first example, you created a simple .NET console application that ran sid
 
 In the next example, you'll create a multi-container application. You'll also use the [Dapr service invocation](service-invocation.md) building block to communicate between services. The solution will consist of a web application that retrieves weather forecasts from a web API. They will each run in a Docker container. You'll use Docker Compose to run the container locally and enable debugging capabilities.
 
-Make sure you've configured your local environment for Dapr and installed the [.NET Core 3 Development Tools](https://dotnet.microsoft.com/download/dotnet-core/3.1) (instructions are available at the beginning of this chapter).
+Make sure you've configured your local environment for Dapr and installed the [.NET Core 3 Development Tools](https://dotnet.microsoft.com/download/dotnet/3.1) (instructions are available at the beginning of this chapter).
 
 Additionally, you'll need complete this sample using [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) with the **.NET Core cross-platform development** workload installed.
 

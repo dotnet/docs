@@ -23,6 +23,8 @@ By the time the app is running on .NET Core 3.1, migrating to the current .NET 5
 
 Instead of a "bottom up" approach, another alternative is to start with the web app (or even the entire solution) and use an automated tool to assist with the upgrade. The [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant) can be used to help upgrade .NET Framework apps to .NET Core / .NET 5. It automates many of the common tasks related to upgrading apps, such as modifying project file format, setting appropriate target frameworks, updating NuGet dependencies, and more.
 
+Instead of a "bottom up" approach, another alternative is to start with the web app (or even the entire solution) and use an automated tool to assist with the upgrade. The [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant) can be used to help upgrade .NET Framework apps to .NET Core / .NET 5. It automates many of the common tasks related to upgrading apps, such as modifying project file format, setting appropriate target frameworks, updating NuGet dependencies, and more.
+
 ## Migrating slice by slice
 
 Another approach to the migration would be to identify vertical slices of functionality, and migrate them to the target platform one by one. The first step would be to create a new ASP.NET Core 3.1 or 5 app. Next, identify the individual page or API endpoint that will be migrated first. Build out just the necessary functionality to support this one route in the ASP.NET Core app. Then use HTTP rewriting and/or a reverse proxy to start sending requests for these pages or endpoints to the new app rather than the ASP.NET app.

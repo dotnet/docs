@@ -495,13 +495,23 @@ type Volume =
 
 ## Formatting discriminated unions
 
+Use a space before parenthesized/tupled parameters to discriminated union cases:
+
+```fsharp
+// OK
+let opt = Some ("A", 1)
+
+// Not OK
+let opt = Some("A", 1)
+```
+
 Instantiated Discriminated Unions that split across multiple lines should give contained data a new scope with indentation:
 
 ```fsharp
 let tree1 =
     BinaryNode
-        (BinaryNode(BinaryValue 1, BinaryValue 2),
-         BinaryNode(BinaryValue 3, BinaryValue 4))
+        (BinaryNode (BinaryValue 1, BinaryValue 2),
+         BinaryNode (BinaryValue 3, BinaryValue 4))
 ```
 
 The closing parenthesis can also be on a new line:
@@ -509,8 +519,8 @@ The closing parenthesis can also be on a new line:
 ```fsharp
 let tree1 =
     BinaryNode(
-        BinaryNode(BinaryValue 1, BinaryValue 2),
-        BinaryNode(BinaryValue 3, BinaryValue 4)
+        BinaryNode (BinaryValue 1, BinaryValue 2),
+        BinaryNode (BinaryValue 3, BinaryValue 4)
     )
 ```
 

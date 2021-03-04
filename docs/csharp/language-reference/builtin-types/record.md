@@ -42,11 +42,11 @@ You can use positional parameters to declare properties of a record and to initi
 
 When you use the positional syntax for property definition, the compiler creates:
 
-* A public init-only auto-property for each positional parameter provided in the record declaration. An [init-only](../../whats-new/csharp-9.md#init-only-setters) property can only be set in the constructor or by using a property initializer.
+* A public init-only auto-implemented property for each positional parameter provided in the record declaration. An [init-only](../../whats-new/csharp-9.md#init-only-setters) property can only be set in the constructor or by using a property initializer.
 * A primary constructor whose parameters match the positional parameters on the record declaration.
 * A `Deconstruct` method with an `out` parameter for each positional parameter provided in the record declaration. This method is provided only if there are two or more positional parameters. The method deconstructs properties defined by using positional syntax; it ignores properties that are defined by using standard property syntax.
 
-If the generated auto-property definition isn't what you want, you can define your own property of the same name. If you do that, the generated constructor and deconstructor will use your property definition. For instance, the following example makes the `FirstName` positional property `protected` instead of `public`.
+If the generated auto-implemented property definition isn't what you want, you can define your own property of the same name. If you do that, the generated constructor and deconstructor will use your property definition. For instance, the following example makes the `FirstName` positional property `internal` instead of `public`.
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PositionalWithManualProperty":::
 
@@ -130,7 +130,7 @@ The `ToString` override creates a <xref:System.Text.StringBuilder> object with t
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="ToStringOverrideDefault":::
 
-You can provide your own implementation of `PrintMembers` or the `ToString` override. Examples are provided in the [inheritance section](#printmembers-formatting-in-derived-records) later in this article.
+You can provide your own implementation of `PrintMembers` or the `ToString` override. Examples are provided in the [`PrintMembers` formatting in derived records](#printmembers-formatting-in-derived-records) section later in this article.
 
 ## Inheritance
 
@@ -146,7 +146,7 @@ The following example illustrates inheritance with positional property syntax:
 
 ### Equality in inheritance hierarchies
 
-For two record variables to be equal, the run-time type must be equal. The type of the containing variable might be different. This is illustrated in the following code example:
+For two record variables to be equal, the run-time type must be equal. The types of the containing variables might be different. This is illustrated in the following code example:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="InheritanceEquality":::
 

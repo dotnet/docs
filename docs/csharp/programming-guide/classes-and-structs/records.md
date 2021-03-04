@@ -34,7 +34,7 @@ Not all data models work well with value equality. For example, [Entity Framewor
 The same syntax that [declares](classes.md#declaring-classes) and [instantiates](classes.md#creating-objects) classes can be used with records. Just substitute the `record` keyword for the `class` keyword. Likewise, the same syntax for expressing inheritance relationships is supported by records. Records differ from classes in the following ways:
 
 * You can use [positional parameters](../../language-reference/builtin-types/record.md#positional-syntax-for-property-definition) to create and instantiate a type with immutable properties.
-* The same methods and operators that indicate reference equality or inequality in classes (such as <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>) and `==`), indicate [value equality or inequality](../../language-reference/builtin-types/record.md#value-equality) in records.
+* The same methods and operators that indicate reference equality or inequality in classes (such as <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> and `==`), indicate [value equality or inequality](../../language-reference/builtin-types/record.md#value-equality) in records.
 * You can use a [`with` expression](../../language-reference/builtin-types/record.md#nondestructive-mutation) to create a copy of an immutable object with new values in selected properties.
 * A record's `ToString` method creates a formatted string that shows an object's type name and the names and values of all its public properties.
 * A record can [inherit from another record](../../language-reference/builtin-types/record.md#inheritance). A record can't inherit from a class, and a class can't inherit from a record.

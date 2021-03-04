@@ -180,7 +180,8 @@ namespace builtin_types
             public static void Main()
             {
                 Person teacher = new Teacher("Nancy", "Davolio", 3);
-                Console.WriteLine(teacher); // output: 
+                Console.WriteLine(teacher);
+                // output: Teacher { FirstName = Nancy, LastName = Davolio, Grade = 3 }
             }
             // </PositionalInheritance>
         }

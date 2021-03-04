@@ -1,0 +1,158 @@
+---
+title: Deploy an app to App Service - DevOps with .NET Core and GitHub Actions
+description: Deploy a .NET Core app to Azure App Service, the first step for DevOps with .NET Core and GitHub Actions.
+author: colindembovsky
+ms.date: 03/04/2021
+---
+# Deploy an app to App Service - DevOps with .NET Core and GitHub Actions
+
+## Build Workflow
+[GitHub Actions](https://github.com/features/actions) allow you to automate workflows in response to events that are triggered in GitHub. Common workflows include Continuous Integration (CI) workflows, but Actions can be used to automate other processes such as sending out welcome emails when people join a repo.
+
+Workflows are captured in YML files and all have:
+- a `name`
+- a trigger, defined by an `on` section
+- one or more `job` sections, composed of one or more `steps`
+- optional attributes such as `environment` variables
+
+Jobs are run on _runners_. You can use _hosted runners_ which are spun up by GitHub for the duration of the workflow and then thrown away. Hosted runners are great because you don't have to maintain your own build infrastructure. For workflows that require specific build environment, or for running workflows on a private network, you can also use _private_ runners. To create a private runner, you can install the runner on any machine that supports .NET Core.
+
+Each `job` will specify what runner GitHub should use to execute the `steps`. You can also specify dependencies between jobs using the `needs` attribute. Deployments jobs can also specify an `environment` to target.
+
+`Steps` can be as simple as inline commands or they can be Actions. Most CI workflows will have a combination of `run` steps (for executing scripts) and Actions. Actions are pulled into the workflow by referencing the Action repo (and optionally a tag or commit hash for specific verions) and specifying any parameters using the `with` keyword.
+
+> [!TIP]
+> You can read more about GitHub Actions YAML syntax [here](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions).
+
+## Create a Basic Build Workflow
+One important principle of effective DevOps is to build once, deploy many times. You are going to start by creating a workflow that will build a simple .NET web app. In the next step, you will publish the output so that you are ready to deploy.
+
+1. Navigate to your GitHub repo and click on Actions tab.
+1. GitHub detects that there is .NET Core code in the repo and suggests a .NET workflow template. Click `Set up this workflow` to create a new YAML workflow file:
+
+   - ![Creating a new workflow](images/build/new-action.jpg)
+
+1. The default workflow uses the latest major version of .NET. The Simple Feed Reader uses .NET 2, so you need to update the .NET version for the `Setup .NET` step:
+```yml
+  - name: Setup .NET
+    uses: actions/setup-dotnet@v1
+    with:
+      dotnet-version: 2.1.x   # <-- update this line
+```
+1. Commit the file onto the main branch. Since you have defined a trigger condition for _commits to master_, this commit should trigger the workflow to run.
+    - ![Commit the YAML file](images/build/commit-workflow.jpg)
+1. Click on the Actions tab again. You should see a running workflow. Once the workflow has completed, you should see a successful run.
+    - ![Successful build view](images/build/build-action-success.jpg)
+1. Opening the logs, you can see that the .NET build succeeded and the tests ran and passed.
+    - ![Checking the logs](images/build/build-action-success-logs.jpg)
+> Note: If any of the tests fail, the workflow will fail.
+
+## Disecting the Workflow File
+Let's have a look at the workflow YAML file that you have so far:
+```yml
+name: .NET
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 2.1.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+```
+You can see the following:
+1. There is a `name` that names the workflow.
+1. The `on` object specifies when this workflow should run. This workflow has two events that trigger it: `push` to `master` and `pull_request` to `master`. Any time anyone commits to master or creates a Pull Request (PR) to master, this workflow will execute.
+1. There is a single `job` called `build`. This build should run on a hosted agent - `ubuntu_latest` specifies the most recent ubuntu hosted agent.
+1. There are five steps:
+    1. `acions/checkout@2` is an action that checks out the code in the repo onto the runner.
+    1. `actions/setup-dotnet@v1` is an action that sets up the .NET CLI. This step also specifies a `name` attribute for the logs as well as the `dotnet-version` parameter within the `with` object.
+    1. Three `run` steps that execute `dotnet restore`, `dotnet build` and `dotnet test`. `name` attributes are also specified for thest `run` steps to make the logs look pretty.
+
+## Publishing the output
+Now that you have successfully built and tested the code, you will want to add steps that publish the output so that you can deploy the web app. 
+1. Navigate to the `.github/workflows/dotnet.yml` file and click the pencil icon to edit it.
+    - ![Edit the YML file](images/build/click-edit.jpg)
+1. Add the following step at the bottom of the file, below the `Test` step, to run the `dotnet publish` command to publish the website:
+```yml
+    - name: Test
+      run: dotnet test --no-build --verbosity normal # <-- this is the current bottom line
+
+    - name: Publish
+      run: dotnet publish SimpleFeedReader/SimpleFeedReader.csproj -c Release -o website
+```
+1. This publishes the web app to a folder on the hosted agent. We now want to _upload_ the site as a build artifact that we can deploy to Azure. To do this, we are going to use an existing action.
+1. On the list of Actions in the Actions Helper pane on the right, search for `artifact` and click on the `Upload a Build Artifact (By actions)` action.
+    - ![Accessing the snippet](images/build/search-upload-artifact.jpg)
+1. Edit the version to `v2.2.2` to display a sample snippet. Click the clipboard icon to copy the snippet and paste it into the workflow below the publish step.
+    - ![Accessing the snippet](images/build/copy-snippet.jpg)
+1. Edit the YAML for this step to look as follows:
+```yml
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.2
+      with:
+        name: website
+        path: SimpleFeedReader/website/**
+        if-no-files-found: error
+```
+1. Commit the file.
+1. Once the workflow completes, you will be able to see the artifact from the Home tab:
+    - ![Checking the logs](images/build/view-uploaded-artifact.jpg)
+
+### Final Workflow File
+<details>
+  <summary>The final workflow file should look like this:</summary>
+  
+```yml
+name: .NET
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 2.1.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+    - name: Publish
+      run: dotnet publish SimpleFeedReader/SimpleFeedReader.csproj -c Release -o website
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.2
+      with:
+        name: website
+        path: SimpleFeedReader/website/**
+        if-no-files-found: error
+```
+
+</details>

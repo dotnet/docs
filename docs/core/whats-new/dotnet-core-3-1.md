@@ -18,7 +18,7 @@ Visual Studio for Mac also supports and includes .NET Core 3.1 in Visual Studio 
 
 For more information about the release, see the [.NET Core 3.1 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-1/).
 
-- [Download and get started with .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1) on Windows, macOS, or Linux.
+- [Download and get started with .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1) on Windows, macOS, or Linux.
 
 ## Long-term support
 

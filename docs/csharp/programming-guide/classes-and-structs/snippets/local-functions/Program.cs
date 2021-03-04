@@ -71,7 +71,7 @@ namespace local_functions
         //</FactorialWithLambda>
 
         //<AsyncWithLambda>
-        public Task<string> PerformLongRunningWorkLambda(string address, int index, string name)
+        public async Task<string> PerformLongRunningWorkLambda(string address, int index, string name)
         {
             if (string.IsNullOrWhiteSpace(address))
                 throw new ArgumentException(message: "An address is required", paramName: nameof(address));
@@ -87,12 +87,12 @@ namespace local_functions
                 return $"The results are {interimResult} and {secondResult}. Enjoy.";
             };
 
-            return longRunningWorkImplementation();
+            return await longRunningWorkImplementation();
         }
         //</AsyncWithLambda>
 
         //<AsyncWithLocal>
-        public Task<string> PerformLongRunningWork(string address, int index, string name)
+        public async Task<string> PerformLongRunningWork(string address, int index, string name)
         {
             if (string.IsNullOrWhiteSpace(address))
                 throw new ArgumentException(message: "An address is required", paramName: nameof(address));
@@ -101,7 +101,7 @@ namespace local_functions
             if (string.IsNullOrWhiteSpace(name))
                 throw new ArgumentException(message: "You must supply a name", paramName: nameof(name));
 
-            return longRunningWorkImplementation();
+            return await longRunningWorkImplementation();
 
             async Task<string> longRunningWorkImplementation()
             {

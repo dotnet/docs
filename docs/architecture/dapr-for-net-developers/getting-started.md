@@ -434,27 +434,6 @@ In the final part of this example, you'll add container support and run the solu
     ENTRYPOINT ["dotnet", "DaprBackEnd.dll"]
     ```
 
-    The preceding *Dockerfile* sequentially performs the following steps when invoked:
-
-    1. Pulls the `mcr.microsoft.com/dotnet/aspnet:3.1` image and names it `base`.
-    1. Sets the working directory to */app*.
-    1. Exposes port `80`.
-    1. Pulls the `mcr.microsoft.com/dotnet/sdk:3.1` image and names it `build`.
-    1. Sets the working directory to */src*.
-    1. Copies the _DaprBackEnd/DaprBackEnd.csproj_ to a new directory named _DaprBackEnd/_.
-    1. Calls [`dotnet restore`](../../core/tools/dotnet-restore.md) on the project.
-    1. Copies everything from the root directory into the image's root.
-    1. Sets the working directory to _/src/DaprBackEnd_.
-    1. Calls [`dotnet build`](../../core/tools/dotnet-build.md) on the project.
-        - Targeting the **Release** configuration and outputs to */app/build*.
-    1. Initializes a new build stage from the existing `build` base image and names it `publish`.
-    1. Calls `dotnet publish` on the project.
-        - Targeting the **Release** configuration and outputs to */app/publish*.
-    1. Initializes a new build stage from the existing `publish` base image and names it `final`.
-    1. Sets the working directory to */app*.
-    1. Copies the `/app/publish` directory from the `publish` image into the root of the `final` image.
-    1. Sets the entry point as the image to `dotnet` and passes the `DaprBackEnd.dll` as an arg.
-
     Open the *docker-compose.yml* file again and examine its contents. Visual Studio has updated the **Docker Compose** file. Now both services are included:
 
     ```yaml

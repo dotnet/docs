@@ -48,7 +48,7 @@ The `dotnet-install` scripts perform a non-admin installation of the .NET SDK, w
 * A bash script that works on Linux/macOS.
 
 > [!NOTE]
-> .NET collects telemetry data. To learn more more and how to opt out, see [.NET SDK telemetry](telemetry.md).
+> .NET collects telemetry data. To learn more and how to opt out, see [.NET SDK telemetry](telemetry.md).
 
 ### Purpose
 

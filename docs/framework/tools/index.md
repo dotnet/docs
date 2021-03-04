@@ -17,15 +17,12 @@ Most of the .NET Framework tools described in this section are automatically ins
 
 You can run all the tools from the command line, with the exception of the Assembly Cache Viewer (*Shfusion.dll*). You must access *Shfusion.dll* from File Explorer.
   
-The best way to run the command-line tools is by using one of the developer shells that Visual Studio installs. These utilities enable you to run the tools easily, without having to navigate to the installation folder. For more information, see [Developer command-line shells](developer-command-prompt-for-vs.md).
+The best way to run the command-line tools is by using one of the developer shells that Visual Studio installs. These utilities enable you to run the tools easily, without having to navigate to the installation folder. For more information, see [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell).
 
 > [!NOTE]
 > Some tools are specific to either 32-bit computers or 64-bit computers. Be sure to run the appropriate version of the tool for your computer.
 
 ## In this section
-
-- [Developer command-line shells](developer-command-prompt-for-vs.md)  
-Enables you to use .NET Framework and other developer tools more easily.
 
 - [Al.exe (Assembly Linker)](al-exe-assembly-linker.md)  
 Generates a file that has an assembly manifest from modules or resource files.

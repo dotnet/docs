@@ -103,4 +103,4 @@ mdbg>
 ## See also
 
 - [Tools](index.md)
-- [Developer command-line shells](developer-command-prompt-for-vs.md)
+- [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

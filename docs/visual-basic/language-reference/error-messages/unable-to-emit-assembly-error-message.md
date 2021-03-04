@@ -31,7 +31,7 @@ The Visual Basic compiler calls the Assembly Linker (*Al.exe*, also known as Ali
 
 2. Delete the COM reference that is generating the error from your project.
 
-3. Open a [developer command-line shell](../../../framework/tools/developer-command-prompt-for-vs.md).
+3. Open a [developer command-line shell](/visualstudio/ide/reference/command-prompt-powershell).
 
    In Windows 10, enter **Developer command prompt** into the search box on the task bar. Then, select **Developer Command Prompt for VS 2017** from the results list.
 

@@ -40,7 +40,7 @@ gacutil -i <assembly name>
 
 In this command, *\<assembly name>* is the name of the assembly to install in the global assembly cache.
 
-If *gacutil.exe* isn't in your system path, use a [command-line shell for developers](../tools/developer-command-prompt-for-vs.md).
+If *gacutil.exe* isn't in your system path, use a [command-line shell for developers](/visualstudio/ide/reference/command-prompt-powershell).
 
 The following example installs an assembly with the file name *hello.dll* into the global assembly cache.
 

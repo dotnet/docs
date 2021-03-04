@@ -464,7 +464,7 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
 
 Now that you've built the Windows service, you can install it. To install a Windows service, you must have administrator credentials on the computer where it's installed.
 
-1. Open [Developer Command Prompt for Visual Studio](../tools/developer-command-prompt-for-vs.md) with administrative credentials.
+1. Open [Developer Command Prompt for Visual Studio](/visualstudio/ide/reference/command-prompt-powershell) with administrative credentials.
 
 2. In **Developer Command Prompt for Visual Studio**, navigate to the folder that contains your project's output (by default, the *\bin\Debug* subdirectory of your project).
 

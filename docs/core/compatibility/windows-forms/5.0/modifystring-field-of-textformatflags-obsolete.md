@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: TextFormatFlags.ModifyString is obsolete"
-description: Learn about the breaking change in .NET 5.0 where the TextFormatFlags.ModifyString field is obsolete as a warning.
+description: Learn about the breaking change in .NET 5 where the TextFormatFlags.ModifyString field is obsolete as a warning.
 ms.date: 11/05/2020
 ---
 # TextFormatFlags.ModifyString is obsolete
@@ -9,7 +9,7 @@ The <xref:System.Windows.Forms.TextFormatFlags.ModifyString?displayProperty=name
 
 ## Change description
 
-In previous .NET versions, the <xref:System.Windows.Forms.TextFormatFlags.ModifyString?displayProperty=nameWithType> enumeration field is not marked obsolete. In .NET 5.0 and later versions, it is marked obsolete as a warning. This field may be removed in a future .NET version.
+In previous .NET versions, the <xref:System.Windows.Forms.TextFormatFlags.ModifyString?displayProperty=nameWithType> enumeration field is not marked obsolete. In .NET 5 and later versions, it is marked obsolete as a warning. This field may be removed in a future .NET version.
 
 ## Reason for change
 

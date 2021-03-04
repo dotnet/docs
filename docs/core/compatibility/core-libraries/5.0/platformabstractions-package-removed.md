@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Microsoft.DotNet.PlatformAbstractions package removed"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where the Microsoft.DotNet.PlatformAbstractions package has been removed.
+description: Learn about the .NET 5 breaking change in core .NET libraries where the Microsoft.DotNet.PlatformAbstractions package has been removed.
 ms.date: 11/01/2020
 ---
 # Microsoft.DotNet.PlatformAbstractions package removed
@@ -13,7 +13,7 @@ Previously, new versions of the <xref:Microsoft.DotNet.PlatformAbstractions?disp
 
 The <xref:Microsoft.DotNet.PlatformAbstractions?displayProperty=fullName> library overlaps with APIs that are already established in the System.\* namespaces. Also, some <xref:Microsoft.DotNet.PlatformAbstractions> APIs weren't designed with the same level of scrutiny and long-term supportability as the rest of the System.\* APIs. For example, <xref:Microsoft.DotNet.PlatformAbstractions> uses the `Platform` enumeration to describe the current operating system platform. This enumeration design was explicitly rejected when the <xref:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform)?displayProperty=nameWithType> API was designed, to allow for new platforms and future flexibility.
 
-The scenarios enabled by the <xref:Microsoft.DotNet.PlatformAbstractions?displayProperty=fullName> library are now possible without it. Existing versions will continue to work, even in .NET 5.0 and later, and will be serviced along with previous versions of .NET Core. However, new functionality won't be added to the library. Instead, new functionality will be added to other libraries and APIs.
+The scenarios enabled by the <xref:Microsoft.DotNet.PlatformAbstractions?displayProperty=fullName> library are now possible without it. Existing versions will continue to work, even in .NET 5 and later, and will be serviced along with previous versions of .NET Core. However, new functionality won't be added to the library. Instead, new functionality will be added to other libraries and APIs.
 
 ## Version introduced
 

@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Serialize throws exception when type parameter is null"
-description: Learn about the breaking change in .NET 5.0 where JsonSerialize serialization methods that have a Type parameter now throw an exception whenever null is passed for that parameter.
+description: Learn about the breaking change in .NET 5 where JsonSerialize serialization methods that have a Type parameter now throw an exception whenever null is passed for that parameter.
 ms.date: 10/18/2020
 ---
 # JsonSerializer.Serialize throws ArgumentNullException when type parameter is null
@@ -9,7 +9,7 @@ ms.date: 10/18/2020
 
 ## Change description
 
-In .NET Core 3.1, the <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType>, <xref:System.Text.Json.JsonSerializer.SerializeAsync(System.IO.Stream,System.Object,System.Type,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)?displayProperty=nameWithType>, and <xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes(System.Object,System.Type,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> overloads that have a <xref:System.Type> parameter throw an <xref:System.ArgumentNullException> when `null` is passed for the `Type inputType` parameter, but not if the `Object value` parameter is also `null`. Starting in .NET 5.0, these methods *always* throw an <xref:System.ArgumentNullException> when `null` is passed for the <xref:System.Type> parameter.
+In .NET Core 3.1, the <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType>, <xref:System.Text.Json.JsonSerializer.SerializeAsync(System.IO.Stream,System.Object,System.Type,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)?displayProperty=nameWithType>, and <xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes(System.Object,System.Type,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> overloads that have a <xref:System.Type> parameter throw an <xref:System.ArgumentNullException> when `null` is passed for the `Type inputType` parameter, but not if the `Object value` parameter is also `null`. Starting in .NET 5, these methods *always* throw an <xref:System.ArgumentNullException> when `null` is passed for the <xref:System.Type> parameter.
 
 Behavior in .NET Core 3.1:
 
@@ -21,7 +21,7 @@ JsonSerializer.Serialize(null, null);
 JsonSerializer.SerializeToUtf8Bytes(null, null);
 ```
 
-Behavior in .NET 5.0 and later:
+Behavior in .NET 5 and later:
 
 ```csharp
 // Throws ArgumentNullException: "Value cannot be null. (Parameter 'inputType')".

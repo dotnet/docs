@@ -10,6 +10,9 @@ helpviewer_keywords:
   - "WarningsNotAsErrors compiler option [C#]"
   - "WarningLevel compiler option [C#]"
   - "DisabledWarnings compiler option [C#]"
+  - "CodeAnalysisRuleSet compiler option [C#]"
+  - "ErrorLog compiler option [C#]"
+  - "ReportAnalyzer compiler option [C#]"
 ---
 # C# Compiler Options to report errors and warnings
 
@@ -20,9 +23,9 @@ The following options control how the compiler reports errors and warnings. The 
 - **WarningsNotAsErrors** / `-warnaserror`: Treat one or more warnings not as errors
 - **WarningLevel** / `-warn`: Set warning level.
 - **DisabledWarnings** / `-nowarn`: Set a list of disabled warnings.
-- **??** / `-ruleset`: Specify a ruleset file that disables specific diagnostics.
-- **??** / `-errorlog`: Specify a file to log all compiler and analyzer diagnostics.
-- **?** / `-reportanalyzer`:  Report additional analyzer information, such as execution time.
+- **CodeAnalysisRuleSet** / `-ruleset`: Specify a ruleset file that disables specific diagnostics.
+- **ErrorLog** / `-errorlog`: Specify a file to log all compiler and analyzer diagnostics.
+- **ReportAnalyzer** / `-reportanalyzer`:  Report additional analyzer information, such as execution time.
 
 ## TreatWarningsAsErrors
 
@@ -72,14 +75,32 @@ The **DisabledWarnings** option lets you suppress the compiler from displaying o
 - Compiler Warning (level 1) CS2023
 - Compiler Warning (level 1) CS2029
 
-## ruleset
+## CodeAnalysisRuleSet
 
-TODO
+Specify a ruleset file that configures specific diagnostics.
 
-## errorlog
+```xml
+<CodeAnalysisRuleSet>MyConfiguration.ruleset</CodeAnalysisRuleSet>
+```
 
-TODO
+Where `MyConfiguration.ruleset` is the path to the ruleset file. For more information on using rule sets set the article in the [Visual Studio documentation on Rule sets](visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules).
 
-## reportAnalyzer
+## ErrorLog
 
-TODO
+Specify a file to log all compiler and analyzer diagnostics.
+
+```xml
+<ErrorLog>MyConfiguration.ruleset</ErrorLog>
+```
+
+This causes the compiler to output a [Static Analysis Results Interchange Format (SARIF) log](https://github.com/microsoft/sarif-tutorials/blob/main/docs/1-Introduction.md#:~:text=What%20is%20SARIF%3F,for%20use%20by%20simpler%20tools) as a part of the build. SARIF logs are typically read by other tools that analyze the results from compiler and analyzer diagnostics.
+
+## ReportAnalyzer
+
+Report additional analyzer information, such as execution time.
+
+```xml
+<ReportAnalyzer>true</ReportAnalyzer>
+```
+
+The **ReportAnalyzer** options causes the compiler to emit extra MSBuild log information that details the performance characteristics of analyzers in the build. It is typically used by analyzer authors as part of validating the analyzer.

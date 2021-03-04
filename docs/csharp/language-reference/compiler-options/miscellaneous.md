@@ -14,10 +14,8 @@ helpviewer_keywords:
 The following options control compiler inputs. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
 
 - **ResponseFiles** / `-@`: Read response file for more options.
-- **??** / `-help`: Display a usage message.
 - **NoLogo** / `-nologo` : Suppress compiler copyright message.
 - **NoConfig** / `-noconfig`: Do not auto include *CSC.RSP* file.
-- **??** / `-parallel`: Concurrent build.
 
 ## ResponseFiles
 
@@ -33,17 +31,6 @@ The `response_file` specifies the file that lists compiler options or source cod
 # build the first output file
 -target:exe -out:MyExe.exe source1.cs source2.cs
 ```
-
-## -help, -? (C# Compiler Options)
-
-This option sends a listing of compiler options, and a brief description of each option, to stdout.
-
-```console
--help
--?
-```
-
-If this option is included in a compilation, no output file will be created and no compilation will take place. This compiler option is unavailable in Visual Studio and cannot be changed programmatically.
 
 ## NoLogo
 
@@ -64,7 +51,3 @@ The **NoConfig** option tells the compiler not to compile with the csc.rsp file,
 ```
 
 The csc.rsp file references all the assemblies shipped with .NET Framework. The actual references that the Visual Studio .NET development environment includes depend on the project type. You can modify the csc.rsp file and specify additional compiler options that should be included in every compilation from the command line with csc.exe (except the **NoConfig** option). The compiler processes the options passed to the **csc** command last. Therefore, any option on the command line overrides the setting of the same option in the csc.rsp file. If you do not want the compiler to look for and use the settings in the csc.rsp file, specify **NoConfig**. This compiler option is unavailable in Visual Studio and cannot be changed programmatically.
-
-## -parallel
-
-TODO

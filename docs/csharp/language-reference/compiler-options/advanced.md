@@ -6,6 +6,7 @@ f1_keywords:
   - "cs.build.options"
 helpviewer_keywords: 
   - "BaseAddress compiler option [C#]"
+  - "ChecksumAlgorithm compiler option [C#]"
   - "CodePage compiler option [C#]"
   - "Utf8Output compiler option [C#]"
   - "MainEntryPoint compiler option [C#]"
@@ -13,7 +14,9 @@ helpviewer_keywords:
   - "FileAlignment compiler option [C#]"
   - "PathMap compiler option [C#]"
   - "PdbFile compiler option [C#]"
+  - "ErrorEndLocation compiler option [C#]"
   - "NoStandardLib compiler option [C#]"
+  - "PreferredUILang compiler option [C#]"
   - "SubsystemVersion compiler option [C#]"
   - "AdditionalLibPaths compiler option [C#]"
   - "ErrorReport compiler option [C#]"
@@ -26,8 +29,7 @@ helpviewer_keywords:
 The following options support advanced scenarios. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
 
 - **BaseAddress** / `-baseaddress`: Specify the base address for the library to be built.
-- **??** / `-bugreport`: Create a 'Bug Report' file.
-- **??** / `-checksumalgorithm` : Specify algorithm for calculating source file checksum stored in PDB. Supported values are: `SHA1` (default) or `SHA256`.
+- **ChecksumAlgorithm** / `-checksumalgorithm` : Specify algorithm for calculating source file checksum stored in PDB. Supported values are: `SHA1` (default) or `SHA256`.
 - **CodePage** / `-codepage`: Reference metadata from the specified assembly file or files.
 - **Utf8Output** / `-utf8output`: Include all files in the current directory and subdirectories according to the wildcard specifications
 - **MainEntryPoint**, **StartupObject** / `-main`: Embed metadata from the specified interop assembly files.
@@ -35,8 +37,8 @@ The following options support advanced scenarios. The new MSBuild syntax is show
 - **FileAlignment** / `-filealign`: Add additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings.
 - **PathMap** / `-pathmap`: Specify a mapping for source path names output by the compiler. Two consecutive separator characters are treated as a single character that is part of the key or value (i.e. `==` stands for `=` and `,,` for `,`).
 - **PdbFile** / `-pdb`: Specify debug information file name (default: output file name with .pdb extension).
-- **??** / `-errorendlocation`: Output line and column of the end location of each error.
-- **??** / `-preferreduilang`: Specify the preferred output language name.
+- **ErrorEndLocation** / `-errorendlocation`: Output line and column of the end location of each error.
+- **PreferredUILang** / `-preferreduilang`: Specify the preferred output language name.
 - **NoStandardLib** / `-nostdlib`: Do not reference standard library *mscorlib.dll*.
 - **SubsystemVersion** / `-subsystemversion`: Specify subsystem version of this assembly.
 - **AdditionalLibPaths** / `-lib`: Specify additional directories to search in for references.
@@ -54,31 +56,15 @@ The **BaseAddress** option lets you specify the preferred base address at which 
 
 Where `address` is the base address for the DLL. This address can be specified as a decimal, hexadecimal, or octal number. The default base address for a DLL is set by the .NET common language runtime. Be aware that the lower-order word in this address will be rounded. For example, if you specify `0x11110001`, it will be rounded to `0x11110000`. To complete the signing process for a DLL, use SN.EXE with the -R option.
 
-## -bugreport
+## ChecksumAlgorithm
 
-Specifies that debug information should be placed in a file for later analysis.
-  
-```console
--bugreport:file
+This controls the checksum algorithm we use to encode source files in the PDB.
+
+```xml
+<ChecksumAlgorithm>algorithm</ChecksumAlgorithm>
 ```
 
-Where `file` is the name of the file that you want to contain your bug report.
-
-The **-bugreport** option specifies that the following information should be placed in `file`:
-
-- A copy of all source code files in the compilation.
-- A listing of the compiler options used in the compilation.
-- Version information about your compiler, run time, and operating system.
-- Referenced assemblies and modules, saved as hexadecimal digits, except assemblies that are shipped with .NET and the .NET SDK.
-- Compiler output, if any.
-- A description of the problem, which you will be prompted for.
-- A description of how you think the problem should be fixed, which you will be prompted for.
-
-If this option is used with **-errorreport:prompt** or **-errorreport:send**, the information in the file will be sent to Microsoft Corporation. Because a copy of all source code files will be placed in `file`, you might want to reproduce the suspected code defect in the shortest possible program. Notice that contents of the generated file expose source code that could result in inadvertent information disclosure.
-
-## -checksumalgorithm
-
-TODO.
+The `algorithm` must be either `SHA1` (default) or `SHA256`. 
 
 ## CodePage
 
@@ -160,19 +146,25 @@ The **PdbFile** compiler option specifies the name and location of the debug sym
 
 When you specify [-debug](./debug-compiler-option.md), the compiler will create a *.pdb* file in the same directory where the compiler will create the output file (.exe or .dll). The *.pdb* file has the same base file name as the name of the output file. **PdbFile** allows you to specify a non-default file name and location for the .pdb file. This compiler option cannot be set in the Visual Studio development environment, nor can it be changed programmatically.  
 
-## errorendlocation
+## ErrorEndLocation
 
-TODO.
+Instructs the compiler to output line and column of the end location of each error.
 
-## -preferreduilang
-
-By using the `-preferreduilang` compiler option, you can specify the language in which the C# compiler displays output, such as error messages.
-
-```console
--preferreduilang: language
+```xml
+<ErrorEndLocation>filename</ErrorEndLocation>
 ```
 
-Where `language` is the [language name](/windows/desktop/Intl/language-names) of the language to use for compiler output. You can use the `-preferreduilang` compiler option to specify the language that you want the C# compiler to use for error messages and other command-line output. If the language pack for the language is not installed, the language setting of the operating system is used instead, and no error is reported.
+By default, the compiler writes the starting location in source for all errors and warnings. When this option is set to true, the compiler writes both the starting and end location for each error and warning.
+
+## PreferredUILang
+
+By using the **PreferredUILang** compiler option, you can specify the language in which the C# compiler displays output, such as error messages.
+
+```xml
+<PreferredUILang>language</PreferredUILang>
+```
+
+Where `language` is the [language name](/windows/desktop/Intl/language-names) of the language to use for compiler output. You can use the **PreferredUILang** compiler option to specify the language that you want the C# compiler to use for error messages and other command-line output. If the language pack for the language is not installed, the language setting of the operating system is used instead, and no error is reported.
 
 ## NoStandardLib
 

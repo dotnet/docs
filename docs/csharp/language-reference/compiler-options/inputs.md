@@ -7,27 +7,17 @@ f1_keywords:
 helpviewer_keywords: 
   - "References compiler option [C#]"
   - "AddModules compiler option [C#]"
+  - "EmbedInteropTypes compiler option [C#]"
 ---
 # C# Compiler Options that specify inputs
 
 The following options control compiler inputs. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
 
-- **??** / `-recurse`: Include all files in the current directory and subdirectories according to the wildcard specifications
 - **References** / `-reference` or `-references`: Reference metadata from the specified assembly file or files.
 - **AddModules** / `-addmodule`: Add a module (created with `target:module` to this assembly.)
-- **??** / `-link`: Embed metadata from the specified interop assembly files.
-- **??** / `-analyzer`: Run the analyzers from the specified assembly.
-- **??** / `-additionalfile`: Add additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings.
-
-## -recurse
-
-The **-recurse** option enables you to compile source code files in all child directories of either the specified directory (dir) or of the project directory.
-
-```console
--recurse:[dir\]file
-```
-
-`dir` (optional) is the directory in which you want the search to begin. If this is not specified, the search begins in the project directory. `file` is the file(s) to search for. Wildcard characters are allowed. The **-recurse** option lets you compile source code files in all child directories of either the specified directory (`dir`) or of the project directory. You can use wildcards in a file name to compile all matching files in the project directory without using **-recurse**.
+- **EmbedInteropTypes** / `-link`: Embed metadata from the specified interop assembly files.
+- **Analyzer** / `-analyzer`: Run the analyzers from the specified assembly.
+- **AdditionalFiles** / `-additionalfile`: Add additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings.
 
 ## AddModules
 
@@ -63,27 +53,22 @@ In the previous example, `LS` is the valid C# identifier that represents a root 
 > [!NOTE]
 > In Visual Studio, use the **Add Reference** command. For more information, see [How to: Add or Remove References By Using the Reference Manager](/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager).
 
-## Link
+## EmbedInteropTypes
 
 Causes the compiler to make COM type information in the specified assemblies available to the project that you are currently compiling.
 
-```console
--link:fileList
-// -or-
--l:fileList
+```xml
+<References>
+  <EmbedInteropTypes>file1;file2;file3</EmbedInteropTypes>
+</References>
 ```
 
-Where  `fileList` is a comma-delimited list of assembly file names. If the file name contains a space, enclose the name in quotation marks. The `-link` option enables you to deploy an application that has embedded type information. The application can then use types in a runtime assembly that implement the embedded type information without requiring a reference to the runtime assembly. If various versions of the runtime assembly are published, the application that contains the embedded type information can work with the various versions without having to be recompiled. For an example, see [Walkthrough: Embedding Types from Managed Assemblies](../../../standard/assembly/embed-types-visual-studio.md).
+Where  `file`;file2;file3` is a semicolon-delimited list of assembly file names. If the file name contains a space, enclose the name in quotation marks. The **EmbedInteropTypes** option enables you to deploy an application that has embedded type information. The application can then use types in a runtime assembly that implement the embedded type information without requiring a reference to the runtime assembly. If various versions of the runtime assembly are published, the application that contains the embedded type information can work with the various versions without having to be recompiled. For an example, see [Walkthrough: Embedding Types from Managed Assemblies](../../../standard/assembly/embed-types-visual-studio.md).
 
-Using the `-link` option is especially useful when you are working with COM interop. You can embed COM types so that your application no longer requires a primary interop assembly (PIA) on the target computer. The `-link` option instructs the compiler to embed the COM type information from the referenced interop assembly into the resulting compiled code. The COM type is identified by the CLSID (GUID) value. As a result, your application can run on a target computer that has installed the same COM types with the same CLSID values. Applications that automate Microsoft Office are a good example. Because applications like Office usually keep the same CLSID value across different versions, your application can use the referenced COM types as long as .NET Framework 4 or later is installed on the target computer and your application uses methods, properties, or events that are included in the referenced COM types. The `-link` option embeds only interfaces, structures, and delegates. Embedding COM classes is not supported.
+Using the **EmbedInteropTypes** option is especially useful when you are working with COM interop. You can embed COM types so that your application no longer requires a primary interop assembly (PIA) on the target computer. The **EmbedInteropTypes** option instructs the compiler to embed the COM type information from the referenced interop assembly into the resulting compiled code. The COM type is identified by the CLSID (GUID) value. As a result, your application can run on a target computer that has installed the same COM types with the same CLSID values. Applications that automate Microsoft Office are a good example. Because applications like Office usually keep the same CLSID value across different versions, your application can use the referenced COM types as long as .NET Framework 4 or later is installed on the target computer and your application uses methods, properties, or events that are included in the referenced COM types. The **EmbedInteropTypes** option embeds only interfaces, structures, and delegates. Embedding COM classes is not supported.
 
 > [!NOTE]
 > When you create an instance of an embedded COM type in your code, you must create the instance by using the appropriate interface. Attempting to create an instance of an embedded COM type by using the CoClass causes an error.
-
-To set the `-link` option in Visual Studio, add an assembly reference and set the `Embed Interop Types` property to **true**. The default for the `Embed Interop Types` property is **false**. If you link to a COM assembly (Assembly A) which itself references another COM assembly (Assembly B), you also have to link to Assembly B if either of the following is true:
-
-- A type from Assembly A inherits from a type or implements an interface from Assembly B.
-- A field, property, event, or method that has a return type or parameter type from Assembly B is invoked.
 
 Like the [-reference](./reference-compiler-option.md) compiler option, the `-link` compiler option uses the Csc.rsp response file, which references frequently used .NET assemblies. Use the [-noconfig](./noconfig-compiler-option.md) compiler option if you do not want the compiler to use the Csc.rsp file.
 
@@ -96,11 +81,3 @@ Types that have a generic parameter whose type is embedded from an interop assem
 In the following example, client code can call the method that returns the <xref:System.Collections.IList> generic interface without error.
 
 [!code-csharp[VbLinkCompilerCS#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/vblinkcompilercs/cs/program.cs#5)]
-
-## analyzer
-
-TODO
-
-## additionalfile
-
-TODO

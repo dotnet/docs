@@ -1,40 +1,84 @@
 ﻿// <snippet03>
 using System;
-using System.IO;
-using System.Threading;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
-using System.Drawing;
 
-public class Example
+namespace ParallelExample
 {
-    public static void Main()
+    class Program
     {
-        // A simple source for demonstration purposes. Modify this path as necessary.
-        string[] files = Directory.GetFiles(@"C:\Users\Public\Pictures\Sample Pictures", "*.jpg");
-        string newDir = @"C:\Users\Public\Pictures\Sample Pictures\Modified";
-        Directory.CreateDirectory(newDir);
+        static void Main()
+        {
+            // 2 million
+            var limit = 2_000_000;
+            var numbers = Enumerable.Range(0, limit).ToList();
 
-        // Method signature: Parallel.ForEach(IEnumerable<TSource> source, Action<TSource> body)
-        Parallel.ForEach(files, (currentFile) =>
-                                {
-                                    // The more computational work you do here, the greater
-                                    // the speedup compared to a sequential foreach loop.
-                                    string filename = Path.GetFileName(currentFile);
-                                    var bitmap = new Bitmap(currentFile);
+            var watch = Stopwatch.StartNew();
+            var primeNumbersFromForeach = GetPrimeList(numbers);
+            watch.Stop();
 
-                                    bitmap.RotateFlip(RotateFlipType.Rotate180FlipNone);
-                                    bitmap.Save(Path.Combine(newDir, filename));
+            var watchForParallel = Stopwatch.StartNew();
+            var primeNumbersFromParallelForeach = GetPrimeListWithParallel(numbers);
+            watchForParallel.Stop();
 
-                                    // Peek behind the scenes to see how work is parallelized.
-                                    // But be aware: Thread contention for the Console slows down parallel loops!!!
+            Console.WriteLine($"Classical foreach loop | Total prime numbers : {primeNumbersFromForeach.Count} | Time Taken : {watch.ElapsedMilliseconds} ms.");
+            Console.WriteLine($"Parallel.ForEach loop  | Total prime numbers : {primeNumbersFromParallelForeach.Count} | Time Taken : {watchForParallel.ElapsedMilliseconds} ms.");
 
-                                    Console.WriteLine($"Processing {filename} on thread {Thread.CurrentThread.ManagedThreadId}");
-                                    //close lambda expression and method invocation
-                                });
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadLine();
+        }
 
-        // Keep the console window open in debug mode.
-        Console.WriteLine("Processing complete. Press any key to exit.");
-        Console.ReadKey();
+        /// <summary>
+        /// GetPrimeList returns Prime numbers by using sequential ForEach
+        /// </summary>
+        /// <param name="inputs"></param>
+        /// <returns></returns>
+        private static IList<int> GetPrimeList(IList<int> numbers) => numbers.Where(IsPrime).ToList();
+
+        /// <summary>
+        /// GetPrimeListWithParallel returns Prime numbers by using Parallel.ForEach
+        /// </summary>
+        /// <param name="numbers"></param>
+        /// <returns></returns>
+        private static IList<int> GetPrimeListWithParallel(IList<int> numbers)
+        {
+            var primeNumbers = new ConcurrentBag<int>();
+
+            Parallel.ForEach(numbers, number =>
+            {
+                if (IsPrime(number))
+                {
+                    primeNumbers.Add(number);
+                }
+            });
+
+            return primeNumbers.ToList();
+        }
+
+        /// <summary>
+        /// IsPrime returns true if number is Prime, else false.(https://en.wikipedia.org/wiki/Prime_number)
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
+        private static bool IsPrime(int number)
+        {
+            if (number < 2)
+            {
+                return false;
+            }
+
+            for (var divisor = 2; divisor <= Math.Sqrt(number); divisor++)
+            {
+                if (number % divisor == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }
 // </snippet03>

@@ -27,8 +27,7 @@ In this tutorial, you will:
 
 The tutorial uses:
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) or a later version.
-- [dotnet-trace](dotnet-trace.md) to list processes.
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version.
 - [dotnet-counters](dotnet-counters.md) to check managed memory usage.
 - [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file.
 - A [sample debug target](/samples/dotnet/samples/diagnostic-scenarios/) app to diagnose.
@@ -45,10 +44,10 @@ Open a console window and navigate to the directory where you downloaded and unz
 dotnet run
 ```
 
-From a separate console, find the process ID using the [dotnet-trace](dotnet-trace.md) tool:
+From a separate console, find the process ID:
 
 ```console
-dotnet-trace ps
+dotnet-counters ps
 ```
 
 The output should be similar to:

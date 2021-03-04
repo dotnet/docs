@@ -68,6 +68,9 @@ Or:
 try-convert -w "<path to your solution>"
 ```
 
+> [!NOTE]
+> The try-convert tool is run automatically as part of the [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant). Consider running the full Upgrade Assistant and not just Try Convert.
+
 After the tool attempts the conversion, reload your files in Visual Studio to run and test. There's a possibility that Try Convert won't be able to perform the conversion due to the specifics of your project. In that case, you can refer the below steps.
 
 #### Migrate manually

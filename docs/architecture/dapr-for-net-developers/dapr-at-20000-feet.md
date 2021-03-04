@@ -23,7 +23,7 @@ Dapr addresses a large challenge inherent in modern distributed applications: **
 
 Through an architecture of pluggable components, Dapr greatly simplifies the plumbing behind distributed applications. It provides a **dynamic glue** that binds your application with infrastructure capabilities from the Dapr runtime.
 
-Consider the need for state management. What if your service required a state store? You could write custom code to target Redis Cache and inject it into your service at runtime. However, Dapr simplifies your experience by providing a distributed cache capability out-of-the-box. Your service invokes a Dapr **building block** that dynamically binds to Redis Cache **component** via a Dapr **configuration**. With this model, your service delegates the call to Dapr, which calls Redis on your behalf. Your service has no SDK, library, or direct reference to Redis. You code against the common Dapr state management API, not the Redis Cache API.
+Consider a requirement to make one of your services stateful? What would be your design? You could write custom code that targets a state store such as Redis Cache. However, Dapr provides state management capabilities out-of-the-box. Your service invokes a Dapr state management **building block** that dynamically binds to a state store **component** via a Dapr **configuration**. Dapr ships with several pre-built state store components, including Redis. With this model, your service delegates state management to the Dapr runtime. Your service has no SDK, library, or direct reference to the underlying component. You can even change state stores, say, from Redis to MySQL or Cassandra, with no code changes.
 
 Figure 2-1 shows Dapr from 20,000 feet.
 

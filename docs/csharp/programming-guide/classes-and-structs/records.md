@@ -51,7 +51,7 @@ The following example demonstrates value equality in records:
 
 The following example demonstrates use of a `with` expression to copy an immutable object and change one of the properties:
 
-:::code language="csharp" source="../../language-reference/builtin-types/snippets/shared/RecordType.cs" id="WithExpression":::
+:::code language="csharp" source="../../language-reference/builtin-types/snippets/shared/RecordType.cs" id="WithExpressions":::
 
 For more information, see [Records (C# reference)](../../language-reference/builtin-types/record.md).
   

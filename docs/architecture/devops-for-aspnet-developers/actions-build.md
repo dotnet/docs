@@ -6,9 +6,17 @@ ms.date: 03/04/2021
 ---
 # Deploy an app to App Service - DevOps with .NET Core and GitHub Actions
 
-## Build Workflow
 [GitHub Actions](https://github.com/features/actions) allow you to automate workflows in response to events that are triggered in GitHub. Common workflows include Continuous Integration (CI) workflows, but Actions can be used to automate other processes such as sending out welcome emails when people join a repo.
 
+To explore how you can move code to cloud, you are going to build a GitHub Actions workflow file for the Simple Feed Reader application you have already deployed to Azure App Services.
+
+In this article you will:
+> [!div class="checklist"]    
+> * learn the basic structure of a GitHub Action workflow YAML file
+> * Use a template to create a basic build workflow
+> * Publish the compiled application so that it is ready for deployment
+
+## Workflow Structure
 Workflows are captured in YML files and all have:
 - a `name`
 - a trigger, defined by an `on` section
@@ -25,30 +33,44 @@ Each `job` will specify what runner GitHub should use to execute the `steps`. Yo
 > You can read more about GitHub Actions YAML syntax [here](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions).
 
 ## Create a Basic Build Workflow
-One important principle of effective DevOps is to build once, deploy many times. You are going to start by creating a workflow that will build a simple .NET web app. In the next step, you will publish the output so that you are ready to deploy.
+One important principle of effective DevOps is to build once, deploy many times. You are going to start by creating a workflow that will build a simple .NET Core application. In the next step, you will publish the output so that you are ready to deploy.
 
 1. Navigate to your GitHub repo and click on Actions tab.
 1. GitHub detects that there is .NET Core code in the repo and suggests a .NET workflow template. Click `Set up this workflow` to create a new YAML workflow file:
-
-   - ![Creating a new workflow](images/build/new-action.jpg)
+    
+    ![Creating a new workflow](./media/actions/build/new-action.jpg)
+    **Figure 1** Creating a new workflow.
 
 1. The default workflow uses the latest major version of .NET. The Simple Feed Reader uses .NET 2, so you need to update the .NET version for the `Setup .NET` step:
+
 ```yml
   - name: Setup .NET
     uses: actions/setup-dotnet@v1
     with:
       dotnet-version: 2.1.x   # <-- update this line
 ```
+
 1. Commit the file onto the main branch. Since you have defined a trigger condition for _commits to master_, this commit should trigger the workflow to run.
-    - ![Commit the YAML file](images/build/commit-workflow.jpg)
+
+    ![Commit the YAML file](./media/actions/build/commit-workflow.jpg)
+    **Figure 2** Commit the YAML file.
+
 1. Click on the Actions tab again. You should see a running workflow. Once the workflow has completed, you should see a successful run.
-    - ![Successful build view](images/build/build-action-success.jpg)
+
+    ![Successful build view](./media/actions/build/build-action-success.jpg)
+    **Figure 3** Successful build view.
+
 1. Opening the logs, you can see that the .NET build succeeded and the tests ran and passed.
-    - ![Checking the logs](images/build/build-action-success-logs.jpg)
-> Note: If any of the tests fail, the workflow will fail.
+    
+    ![Checking the logs](./media/actions/build/build-action-success-logs.jpg)
+    **Figure 4** Checking the logs.
+
+> [!NOTE]
+> If any of the tests fail, the workflow will fail.
 
 ## Disecting the Workflow File
 Let's have a look at the workflow YAML file that you have so far:
+
 ```yml
 name: .NET
 
@@ -76,6 +98,7 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
 ```
+
 You can see the following:
 1. There is a `name` that names the workflow.
 1. The `on` object specifies when this workflow should run. This workflow has two events that trigger it: `push` to `master` and `pull_request` to `master`. Any time anyone commits to master or creates a Pull Request (PR) to master, this workflow will execute.
@@ -88,8 +111,12 @@ You can see the following:
 ## Publishing the output
 Now that you have successfully built and tested the code, you will want to add steps that publish the output so that you can deploy the web app. 
 1. Navigate to the `.github/workflows/dotnet.yml` file and click the pencil icon to edit it.
-    - ![Edit the YML file](images/build/click-edit.jpg)
+
+    ![Edit the YML file](./media/actions/build/click-edit.jpg)
+    **Figure 5** Edit the YML file.
+
 1. Add the following step at the bottom of the file, below the `Test` step, to run the `dotnet publish` command to publish the website:
+
 ```yml
     - name: Test
       run: dotnet test --no-build --verbosity normal # <-- this is the current bottom line
@@ -97,11 +124,17 @@ Now that you have successfully built and tested the code, you will want to add s
     - name: Publish
       run: dotnet publish SimpleFeedReader/SimpleFeedReader.csproj -c Release -o website
 ```
+
 1. This publishes the web app to a folder on the hosted agent. We now want to _upload_ the site as a build artifact that we can deploy to Azure. To do this, we are going to use an existing action.
 1. On the list of Actions in the Actions Helper pane on the right, search for `artifact` and click on the `Upload a Build Artifact (By actions)` action.
-    - ![Accessing the snippet](images/build/search-upload-artifact.jpg)
+    ![Accessing the Actions helper](./media/actions/build/search-upload-artifact.jpg)
+    **Figure 6** Accessing the snippet helper.
+
 1. Edit the version to `v2.2.2` to display a sample snippet. Click the clipboard icon to copy the snippet and paste it into the workflow below the publish step.
-    - ![Accessing the snippet](images/build/copy-snippet.jpg)
+
+    ![Copying a snippet](./media/actions/build/copy-snippet.jpg)
+    **Figure 8** Copying a snippet.
+
 1. Edit the YAML for this step to look as follows:
 ```yml
     - name: Upload a Build Artifact
@@ -113,7 +146,9 @@ Now that you have successfully built and tested the code, you will want to add s
 ```
 1. Commit the file.
 1. Once the workflow completes, you will be able to see the artifact from the Home tab:
-    - ![Checking the logs](images/build/view-uploaded-artifact.jpg)
+
+    ![Viewing artifacts in the summary page](./media/actions/build/view-uploaded-artifact.jpg)
+    **Figure 8** Viewing artifacts in the summary page.
 
 ### Final Workflow File
 <details>

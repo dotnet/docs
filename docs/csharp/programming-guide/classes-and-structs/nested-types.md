@@ -44,3 +44,4 @@ In the previous declaration, the full name of class `Nested` is `Container.Neste
 - [Classes and Structs](./index.md)
 - [Access Modifiers](./access-modifiers.md)
 - [Constructors](./constructors.md)
+- [CA1034 warning](~/docs/fundamentals/code-analysis/quality-rules/ca1034.md)

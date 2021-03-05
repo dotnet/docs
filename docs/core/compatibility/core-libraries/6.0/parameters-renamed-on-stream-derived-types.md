@@ -9,9 +9,9 @@ In .NET 6, some parameters of methods on types derived from <xref:System.IO.Stre
 
 ## Change description
 
-In previous .NET versions, several types derived from <xref:System.IO.Stream> override methods with different parameter names than those used by the base type. For example, the byte array parameter of <xref:System.IO.Compression.DeflateStream.Read(System.Byte[],System.Int32,System.Int32)?displayProperty=nameWithType> is named `array` while the corresponding argument in the base class method is named `buffer`.
+In previous .NET versions, several types derived from <xref:System.IO.Stream> override methods but use different parameter names than those used by the base type. For example, the byte array parameter of <xref:System.IO.Compression.DeflateStream.Read(System.Byte[],System.Int32,System.Int32)?displayProperty=nameWithType> is named `array` while the corresponding argument in the base class method is named `buffer`.
 
-In .NET 6, all <xref:System.IO.Stream?displayProperty=fullName> types that had mismatched parameter names have been brought into conformance with the base type by using the same parameter names as the base type.
+In .NET 6, all types the derive from <xref:System.IO.Stream?displayProperty=fullName> that had mismatched parameter names have been brought into conformance with the base type by using the same parameter names as the base type.
 
 ## Version introduced
 
@@ -23,7 +23,7 @@ There are several reasons for the change:
 
 - If an invalid argument was passed and an exception was thrown, that exception might have contained the base parameter's name or the derived parameter's name, depending on the implementation. Since the caller may have been using a reference typed as the base or as the derived type, it's impossible for the argument name in the exception to always be correct.
 - Having different parameter names makes it harder to consistently validate behavior across all <xref:System.IO.Stream> implementations.
-- .NET 6 adds a public method on <xref:System.IO.Stream> for validating arguments, and the needs to have a consistent parameter name to use.
+- .NET 6 adds a public method on <xref:System.IO.Stream> for validating arguments, and that methods needs to have a consistent parameter name to use.
 
 ## Recommended action
 

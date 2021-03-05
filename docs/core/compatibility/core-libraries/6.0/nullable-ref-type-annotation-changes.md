@@ -13,7 +13,7 @@ In previous .NET versions, some nullable reference type annotations are incorrec
 
 Some of these changes are considered to be *breaking* because they can lead to new build-time warnings. When you migrate to .NET 6.0, code that references these APIs will need to be updated.
 
-Other changes that aren't considered to be breaking are also documented on this page. Any code that references the updated APIs may benefit from removing operators or pragmas that are no longer unnecessary.
+Other changes that aren't considered to be breaking are also documented on this page. Any code that references the updated APIs may benefit from removing operators or pragmas that are no longer necessary.
 
 ## Version introduced
 

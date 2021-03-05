@@ -912,7 +912,7 @@ let printListWithOffsetPiped a list1 =
 
 If the body of a lambda expression is multiple lines long, you should consider refactoring it into a locally-scoped function.
 
-The parameters should always be indented relative to the function or `fun`/`function` keyword, regardless of the context in which the function appears:
+The parameters should generally be indented relative to the function or `fun`/`function` keyword, regardless of the context in which the function appears:
 
 ```fsharp
 // With 4 spaces indentation

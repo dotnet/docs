@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Built-in support for WinRT is removed from .NET"
-description: Learn about the interop breaking change in .NET 5.0 where built-in support for WinRT is removed from .NET.
+description: Learn about the interop breaking change in .NET 5 where built-in support for WinRT is removed from .NET.
 ms.date: 10/13/2020
 ---
 # Built-in support for WinRT is removed from .NET
@@ -13,7 +13,7 @@ Built-in support for consumption of [Windows runtime (WinRT)](/uwp/winrt-cref/wi
 
 ## Change description
 
-Previously, CoreCLR could consume [Windows metadata (WinMD) files](/uwp/winrt-cref/winmd-files) to active and consume WinRT types. Starting in .NET 5.0, CoreCLR can no longer consume WinMD files directly.
+Previously, CoreCLR could consume [Windows metadata (WinMD) files](/uwp/winrt-cref/winmd-files) to active and consume WinRT types. Starting in .NET 5, CoreCLR can no longer consume WinMD files directly.
 
 If you attempt to reference an unsupported assembly, you'll get a <xref:System.IO.FileNotFoundException>. If you activate a WinRT class, you'll get a <xref:System.PlatformNotSupportedException>.
 
@@ -32,7 +32,7 @@ This breaking change was made for the following reasons:
   <TargetFramework>net5.0-windows10.0.19041</TargetFramework>
   ```
 
-- Use the [C#/WinRT](/windows/uwp/csharp-winrt/) tool chain to generate or customize WinRT APIs and types for .NET 5.0 and later versions.
+- Use the [C#/WinRT](/windows/uwp/csharp-winrt/) tool chain to generate or customize WinRT APIs and types for .NET 5 and later versions.
 
 ## Affected APIs
 

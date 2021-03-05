@@ -1,12 +1,12 @@
 ---
 title: Unsupported APIs on .NET Core and .NET 5+
 titleSuffix: ""
-description: Learn which .NET APIs always throw an exception on .NET Core and .NET 5.0 and later versions.
+description: Learn which .NET APIs always throw an exception on .NET Core and .NET 5 and later versions.
 ms.date: 10/13/2020
 ---
 # APIs that always throw exceptions on .NET Core and .NET 5+
 
-The following APIs will always throw a <xref:System.PlatformNotSupportedException> on .NET 5.0 and later versions (including all versions of .NET Core) on all or a subset of platforms.
+The following APIs will always throw a <xref:System.PlatformNotSupportedException> on .NET 5 and later versions (including all versions of .NET Core) on all or a subset of platforms.
 
 This article organizes the affected APIs by namespace.
 

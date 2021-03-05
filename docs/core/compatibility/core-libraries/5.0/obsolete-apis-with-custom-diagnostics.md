@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: API obsoletions with non-default diagnostic IDs"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
+description: Learn about the .NET 5 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
 ms.date: 11/01/2020
 ---
 # API obsoletions with non-default diagnostic IDs
@@ -9,7 +9,7 @@ Some APIs have been marked as obsolete, starting in .NET 5.0. This breaking chan
 
 ## Change description
 
-In previous .NET versions, these APIs can be used without any build warning. In .NET 5.0 and later versions, use of these APIS produces a compile-time warning or error with a custom diagnostic ID. The use of custom diagnostic IDs allows you to suppress the obsoletion warnings individually instead of blanket-suppressing all obsoletion warnings.
+In previous .NET versions, these APIs can be used without any build warning. In .NET 5 and later versions, use of these APIS produces a compile-time warning or error with a custom diagnostic ID. The use of custom diagnostic IDs allows you to suppress the obsoletion warnings individually instead of blanket-suppressing all obsoletion warnings.
 
 The following table lists the custom diagnostic IDs and their corresponding warning messages for obsoleted APIs.
 

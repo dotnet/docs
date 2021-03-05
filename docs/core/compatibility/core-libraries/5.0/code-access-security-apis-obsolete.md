@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Most code access security APIs are obsolete"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where most code access security (CAS)-related types in .NET are now obsolete as warning.
+description: Learn about the .NET 5 breaking change in core .NET libraries where most code access security (CAS)-related types in .NET are now obsolete as warning.
 ms.date: 11/01/2020
 ---
 # Most code access security APIs are obsolete
@@ -48,7 +48,7 @@ public void DoDeny()
 }
 ```
 
-In .NET 5.0 and later versions, most CAS-related APIs are obsolete and produce compile-time warning `SYSLIB0003`.
+In .NET 5 and later versions, most CAS-related APIs are obsolete and produce compile-time warning `SYSLIB0003`.
 
 ```csharp
 [SocketPermission(SecurityAction.Assert, Host = "contoso.com", Port = "443")] // warning SYSLIB0003
@@ -59,7 +59,7 @@ public void DoSomething()
 }
 ```
 
-This is a compile-time only change. There is no run-time change from previous versions of .NET Core. Methods that perform no operation in .NET Core 2.x - 3.x will continue to perform no operation at run time in .NET 5.0 and later. Methods that throw <xref:System.PlatformNotSupportedException> in .NET Core 2.x - 3.x will continue to throw a <xref:System.PlatformNotSupportedException> at run time in .NET 5.0 and later.
+This is a compile-time only change. There is no run-time change from previous versions of .NET Core. Methods that perform no operation in .NET Core 2.x - 3.x will continue to perform no operation at run time in .NET 5 and later. Methods that throw <xref:System.PlatformNotSupportedException> in .NET Core 2.x - 3.x will continue to throw a <xref:System.PlatformNotSupportedException> at run time in .NET 5 and later.
 
 ## Reason for change
 

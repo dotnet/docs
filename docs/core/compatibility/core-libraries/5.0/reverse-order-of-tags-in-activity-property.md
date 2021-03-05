@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Order of tags in Activity.Tags is reversed"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where Activity.Tags now stores items in the list according to the order they are added.
+description: Learn about the .NET 5 breaking change in core .NET libraries where Activity.Tags now stores items in the list according to the order they are added.
 ms.date: 11/01/2020
 ---
 # Order of tags in Activity.Tags is reversed
@@ -9,7 +9,7 @@ ms.date: 11/01/2020
 
 ## Change description
 
-In previous .NET versions, <xref:System.Diagnostics.Activity.Tags?displayProperty=nameWithType> stores items in the reverse order from which they're added. That is, the first item added is last in the list. Starting in .NET 5.0, the order of the items is reversed, and the first item added is always first in the list.
+In previous .NET versions, <xref:System.Diagnostics.Activity.Tags?displayProperty=nameWithType> stores items in the reverse order from which they're added. That is, the first item added is last in the list. Starting in .NET 5, the order of the items is reversed, and the first item added is always first in the list.
 
 ## Version introduced
 
@@ -17,7 +17,7 @@ In previous .NET versions, <xref:System.Diagnostics.Activity.Tags?displayPropert
 
 ## Recommended action
 
-If your app has a dependency on the <xref:System.Diagnostics.Activity.Tags?displayProperty=nameWithType> list order and you're upgrading to .NET 5.0 or later, you'll need to change this part of your code.
+If your app has a dependency on the <xref:System.Diagnostics.Activity.Tags?displayProperty=nameWithType> list order and you're upgrading to .NET 5 or later, you'll need to change this part of your code.
 
 ## Affected APIs
 

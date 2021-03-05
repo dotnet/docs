@@ -1,15 +1,15 @@
 ---
 title: "Breaking change: WinForms objects not accessible from native code"
-description: Learn about the breaking change in .NET 5.0 where Windows Forms objects are no longer accessible from native code.
+description: Learn about the breaking change in .NET 5 where Windows Forms objects are no longer accessible from native code.
 ms.date: 01/29/2021
 ---
 # Native code can't access Windows Forms objects
 
-Starting in .NET 5.0, you can no longer access Windows Forms objects from native code.
+Starting in .NET 5, you can no longer access Windows Forms objects from native code.
 
 ## Change description
 
-In previous .NET versions, some Windows Forms types were decorated as visible to COM interop, and thus were accessible to native code. Starting in .NET 5.0, no Windows Forms API are visible to COM interop or accessible to native code. The .NET runtime no longer supports creating custom type libraries out of the box. In addition, the .NET runtime can't depend on the type library for .NET Framework (which would require maintaining the shape of classes as they were in .NET Framework).
+In previous .NET versions, some Windows Forms types were decorated as visible to COM interop, and thus were accessible to native code. Starting in .NET 5, no Windows Forms API are visible to COM interop or accessible to native code. The .NET runtime no longer supports creating custom type libraries out of the box. In addition, the .NET runtime can't depend on the type library for .NET Framework (which would require maintaining the shape of classes as they were in .NET Framework).
 
 ## Reason for change
 
@@ -61,7 +61,7 @@ public class Form1 : Form
 }
 ```
 
-There are two possible ways to make the example work on .NET 5.0 and later versions:
+There are two possible ways to make the example work on .NET 5 and later versions:
 
 - Introduce a user-declared `ObjectForScripting` object that supports `IDispatch` (which is applied by default, unless changed explicitly at the project level).
 

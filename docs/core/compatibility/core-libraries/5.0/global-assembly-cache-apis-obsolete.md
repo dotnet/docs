@@ -1,11 +1,11 @@
 ---
 title: "Breaking change: Global assembly cache APIs are obsolete"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where APIs that deal with the GAC either fail or perform no operation.
+description: Learn about the .NET 5 breaking change in core .NET libraries where APIs that deal with the GAC either fail or perform no operation.
 ms.date: 11/01/2020
 ---
 # Global assembly cache APIs are obsolete
 
-.NET Core and .NET 5.0 and later versions eliminate the concept of the global assembly cache (GAC) that was present in .NET Framework. As such, all .NET Core and .NET 5+ APIs that deal with the GAC either fail or perform no operation.
+.NET Core and .NET 5 and later versions eliminate the concept of the global assembly cache (GAC) that was present in .NET Framework. As such, all .NET Core and .NET 5+ APIs that deal with the GAC either fail or perform no operation.
 
 To help steer developers away from these APIs, some GAC-related APIs are marked as obsolete, and generate a `SYSLIB0005` warning at compile time. These APIs may be removed in a future version of .NET.
 
@@ -25,7 +25,7 @@ Assembly asm = typeof(object).Assembly;
 Console.WriteLine(asm.GlobalAssemblyCache);
 ```
 
-In .NET 5.0 and later versions, the <xref:System.Reflection.Assembly.GlobalAssemblyCache> property continues to always return `false`. However, the property getter is also marked as obsolete to indicate to callers that they should stop accessing the property. Libraries and apps should not use the <xref:System.Reflection.Assembly.GlobalAssemblyCache> API to make determinations about run-time behavior, as it always returns `false` in .NET Core and .NET 5.0 and later versions.
+In .NET 5 and later versions, the <xref:System.Reflection.Assembly.GlobalAssemblyCache> property continues to always return `false`. However, the property getter is also marked as obsolete to indicate to callers that they should stop accessing the property. Libraries and apps should not use the <xref:System.Reflection.Assembly.GlobalAssemblyCache> API to make determinations about run-time behavior, as it always returns `false` in .NET Core and .NET 5 and later versions.
 
 ```csharp
 Assembly asm = typeof(object).Assembly;
@@ -37,7 +37,7 @@ This is a compile-time only change. There is no run-time change from previous ve
 
 ## Reason for change
 
-The global assembly cache (GAC) does not exist as a concept in .NET Core and .NET 5.0 and later versions.
+The global assembly cache (GAC) does not exist as a concept in .NET Core and .NET 5 and later versions.
 
 ## Version introduced
 

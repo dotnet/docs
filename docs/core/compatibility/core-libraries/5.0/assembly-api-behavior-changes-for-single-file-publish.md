@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Assembly-related API behavior changes for single-file publishing format"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where multiple APIs related to an assembly's file location have behavior changes when they're invoked in a single-file publishing format.
+description: Learn about the .NET 5 breaking change in core .NET libraries where multiple APIs related to an assembly's file location have behavior changes when they're invoked in a single-file publishing format.
 ms.date: 11/01/2020
 ---
 # Assembly-related API behavior changes for single-file publishing format
@@ -9,9 +9,9 @@ Multiple APIs related to an assembly's file location have behavior changes when 
 
 ## Change description
 
-In single-file publishing for .NET 5.0 and later versions, bundled assemblies are loaded from memory instead of extracted to disk. For single-file published apps, this means that certain location-related APIs return different values on .NET 5.0 and later than on previous versions of .NET. The changes are as follows:
+In single-file publishing for .NET 5 and later versions, bundled assemblies are loaded from memory instead of extracted to disk. For single-file published apps, this means that certain location-related APIs return different values on .NET 5 and later than on previous versions of .NET. The changes are as follows:
 
-| API | Previous versions | .NET 5.0 and later |
+| API | Previous versions | .NET 5 and later |
 | - | - | - |
 | <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> | Returns extracted DLL file path | Returns empty string for bundled assemblies |
 | <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> | Returns extracted DLL file path | Throws exception for bundled assemblies |

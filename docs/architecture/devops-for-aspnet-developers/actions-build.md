@@ -41,15 +41,6 @@ One important principle of effective DevOps is to build once, deploy many times.
     ![Creating a new workflow](./media/actions/build/new-action.jpg)
     **Figure 1** Creating a new workflow.
 
-1. The default workflow uses the latest major version of .NET. The Simple Feed Reader uses .NET 2, so you need to update the .NET version for the `Setup .NET` step:
-
-```yml
-  - name: Setup .NET
-    uses: actions/setup-dotnet@v1
-    with:
-      dotnet-version: 2.1.x   # <-- update this line
-```
-
 1. Commit the file onto the main branch. Since you have defined a trigger condition for _commits to main_, this commit should trigger the workflow to run.
 
     ![Commit the YAML file](./media/actions/build/commit-workflow.jpg)
@@ -90,7 +81,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 2.1.x
+        dotnet-version: 5.0.x
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
@@ -173,7 +164,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 2.1.x
+        dotnet-version: 5.0.x
     - name: Restore dependencies
       run: dotnet restore
     - name: Build

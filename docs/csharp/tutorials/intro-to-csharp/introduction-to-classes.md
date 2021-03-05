@@ -208,7 +208,7 @@ Run your program to see the results.
 
 ## Next steps
 
-If you got stuck, you can see the source for this tutorial [in our GitHub repo](https://github.com/dotnet/docs/tree/master/docs/csharp/tutorials/intro-to-csharp/snippets/introduction-to-classes).
+If you got stuck, you can see the source for this tutorial [in our GitHub repo](https://github.com/dotnet/docs/tree/main/docs/csharp/tutorials/intro-to-csharp/snippets/introduction-to-classes).
 
 You can continue with the [object oriented programming](object-oriented-programming.md) tutorial.
 

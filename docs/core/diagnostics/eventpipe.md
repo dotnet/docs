@@ -74,6 +74,9 @@ However, you can use the following environment variables to set up an EventPipe 
 
 * `COMPlus_EventPipeCircularMB`: A hexadecimal value that represents the size of EventPipe's internal buffer in megabytes. This configuration value is only used when EventPipe is configured to run via `COMPlus_EnableEventPipe`. The default buffer size is 1024MB which translates to this environment variable being set to `400`, since `0x400` == `1024`.
 
+  > [!NOTE]
+  > If the process is writing events too frequently, it can overflow this buffer which results in some events to get dropped. When too many events are getting dropped, increasing the buffer size may help.
+
 * `COMPlus_EventPipeProcNumbers`: Set this to `1` to enable capturing processor numbers in EventPipe event headers. The default value is `0`.
 
 * `COMPlus_EventPipeConfig`: Sets up the EventPipe session configuration when starting an EventPipe session with `COMPlus_EnableEventPipe`.

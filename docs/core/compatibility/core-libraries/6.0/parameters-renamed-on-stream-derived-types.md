@@ -11,7 +11,7 @@ In .NET 6, some parameters of methods on types derived from <xref:System.IO.Stre
 
 In previous .NET versions, several types derived from <xref:System.IO.Stream> override methods but use different parameter names than those used by the base type. For example, the byte array parameter of <xref:System.IO.Compression.DeflateStream.Read(System.Byte[],System.Int32,System.Int32)?displayProperty=nameWithType> is named `array` while the corresponding argument in the base class method is named `buffer`.
 
-In .NET 6, all types the derive from <xref:System.IO.Stream?displayProperty=fullName> that had mismatched parameter names have been brought into conformance with the base type by using the same parameter names as the base type.
+In .NET 6, all types that derive from <xref:System.IO.Stream?displayProperty=fullName> that had mismatched parameter names have been brought into conformance with the base type by using the same parameter names as the base type.
 
 ## Version introduced
 
@@ -29,7 +29,7 @@ There are several reasons for the change:
 
 The effect of this breaking change is minimal:
 
-- For existing binaries, its impact is limited to code that uses reflection to examine the names of parameters on the derived types.
+- For existing binaries, its impact is limited to code that uses reflection to examine the names of parameters on the affected derived types.
 - For source code, its impact is limited to code that uses named parameters to invoke methods on the derived stream type using a variable typed as that derived type.
 
 In both cases, the recommended action is to consistently use the base parameter name.

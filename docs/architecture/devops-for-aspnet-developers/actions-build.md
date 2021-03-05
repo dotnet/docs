@@ -12,6 +12,7 @@ To explore how you can move code to cloud, you are going to build a GitHub Actio
 
 In this article you will:
 > [!div class="checklist"]
+
 > * learn the basic structure of a GitHub Action workflow YAML file
 > * Use a template to create a basic build workflow that build the .NET application and executes unit tests
 > * Publish the compiled application so that it is ready for deployment
@@ -40,7 +41,7 @@ One important principle of effective DevOps is to build once, deploy many times.
 
 1. Navigate to your GitHub repo and click on Actions tab.
 1. GitHub detects that there is .NET code in the repo and suggests a .NET workflow template. Click `Set up this workflow` to create a new YAML workflow file:
-    
+
     ![Creating a new workflow](./media/actions/build/new-action.jpg)
     **Figure 1** Creating a new workflow.
 
@@ -55,7 +56,7 @@ One important principle of effective DevOps is to build once, deploy many times.
     **Figure 3** Successful build view.
 
 1. Opening the logs, you can see that the .NET build succeeded and the tests ran and passed.
-    
+
     ![Checking the logs](./media/actions/build/build-action-success-logs.jpg)
     **Figure 4** Checking the logs.
 
@@ -135,6 +136,7 @@ Now that you have successfully built and tested the code, you will want to add s
     **Figure 8** Copying a snippet.
 
 1. Edit the YAML for this step to look as follows:
+
 ```yml
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.2
@@ -143,6 +145,7 @@ Now that you have successfully built and tested the code, you will want to add s
         path: SimpleFeedReader/website/**
         if-no-files-found: error
 ```
+
 1. Commit the file.
 1. Once the workflow completes, you will be able to see the artifact from the Home tab:
 
@@ -151,8 +154,7 @@ Now that you have successfully built and tested the code, you will want to add s
 
 ### Final Workflow File
 
-<details>
-  <summary>The final workflow file should look like this:</summary>
+The final workflow file should look something like this:
   
 ```yml
 name: .NET
@@ -189,5 +191,3 @@ jobs:
         path: SimpleFeedReader/website/**
         if-no-files-found: error
 ```
-
-</details>

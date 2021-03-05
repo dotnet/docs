@@ -11,13 +11,15 @@ ms.date: 03/04/2021
 To explore how you can move code to cloud, you are going to build a GitHub Actions workflow file for the Simple Feed Reader application you have already deployed to Azure App Services.
 
 In this article you will:
-> [!div class="checklist"]    
+> [!div class="checklist"]
 > * learn the basic structure of a GitHub Action workflow YAML file
 > * Use a template to create a basic build workflow that build the .NET application and executes unit tests
 > * Publish the compiled application so that it is ready for deployment
 
 ## Workflow Structure
+
 Workflows are captured in YML files and all have:
+
 - a `name`
 - a trigger, defined by an `on` section
 - one or more `job` sections, composed of one or more `steps`
@@ -33,6 +35,7 @@ Each `job` will specify what runner GitHub should use to execute the `steps`. Yo
 > You can read more about GitHub Actions YAML syntax [here](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions).
 
 ## Create a Basic Build Workflow
+
 One important principle of effective DevOps is to build once, deploy many times. You are going to start by creating a workflow that will build a simple .NET application. In the next step, you will publish the output so that you are ready to deploy.
 
 1. Navigate to your GitHub repo and click on Actions tab.
@@ -60,6 +63,7 @@ One important principle of effective DevOps is to build once, deploy many times.
 > If any of the tests fail, the workflow will fail.
 
 ## Disecting the Workflow File
+
 Let's have a look at the workflow YAML file that you have so far:
 
 ```yml
@@ -91,6 +95,7 @@ jobs:
 ```
 
 You can see the following:
+
 1. There is a `name` that names the workflow.
 1. The `on` object specifies when this workflow should run. This workflow has two events that trigger it: `push` to `main` and `pull_request` to `main`. Any time anyone commits to main or creates a Pull Request (PR) to main, this workflow will execute.
 1. There is a single `job` called `build`. This build should run on a hosted agent - `ubuntu_latest` specifies the most recent ubuntu hosted agent.
@@ -100,7 +105,9 @@ You can see the following:
     1. Three `run` steps that execute `dotnet restore`, `dotnet build` and `dotnet test`. `name` attributes are also specified for thest `run` steps to make the logs look pretty.
 
 ## Publishing the output
-Now that you have successfully built and tested the code, you will want to add steps that publish the output so that you can deploy the web app. 
+
+Now that you have successfully built and tested the code, you will want to add steps that publish the output so that you can deploy the web app.
+
 1. Navigate to the `.github/workflows/dotnet.yml` file and click the pencil icon to edit it.
 
     ![Edit the YML file](./media/actions/build/click-edit.jpg)
@@ -118,6 +125,7 @@ Now that you have successfully built and tested the code, you will want to add s
 
 1. This publishes the web app to a folder on the hosted agent. We now want to _upload_ the site as a build artifact that we can deploy to Azure. To do this, we are going to use an existing action.
 1. On the list of Actions in the Actions Helper pane on the right, search for `artifact` and click on the `Upload a Build Artifact (By actions)` action.
+
     ![Accessing the Actions helper](./media/actions/build/search-upload-artifact.jpg)
     **Figure 6** Accessing the snippet helper.
 
@@ -142,6 +150,7 @@ Now that you have successfully built and tested the code, you will want to add s
     **Figure 8** Viewing artifacts in the summary page.
 
 ### Final Workflow File
+
 <details>
   <summary>The final workflow file should look like this:</summary>
   

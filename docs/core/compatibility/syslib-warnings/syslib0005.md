@@ -6,7 +6,7 @@ ms.date: 10/20/2020
 ---
 # SYSLIB0005: The global assembly cache (GAC) is not supported
 
-.NET Core and .NET 5.0 and later versions eliminate the concept of the global assembly cache (GAC) that was present in .NET Framework. To help steer developers away from these APIs, some GAC-related APIs are marked as obsolete, starting in .NET 5.0. Using these APIs generates warning `SYSLIB0005` at compile time.
+.NET Core and .NET 5 and later versions eliminate the concept of the global assembly cache (GAC) that was present in .NET Framework. To help steer developers away from these APIs, some GAC-related APIs are marked as obsolete, starting in .NET 5.0. Using these APIs generates warning `SYSLIB0005` at compile time.
 
 The following GAC-related APIs are marked obsolete:
 

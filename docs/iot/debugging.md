@@ -21,7 +21,7 @@ Debugging .NET on Raspberry Pi from Visual Studio Code requires configuration st
 
 ### Enable SSH on the Raspberry Pi
 
-SSH is required for remote debugging. To enable SSH, [refer to *Enable SSH* in the Raspberry Pi documentation](https://www.raspberrypi.org/documentation/remote-access/ssh/) <span class="docon docon-navigate-external x-hidden-focus"></span>.
+SSH is required for remote debugging. To enable SSH, [refer to *Enable SSH* in the Raspberry Pi documentation](https://www.raspberrypi.org/documentation/remote-access/ssh/).
 
 ### Install the Visual Studio Remote Debugger on the Raspberry Pi
 
@@ -41,7 +41,7 @@ Within a Bash console on the Raspberry Pi (either locally or via SSH), complete 
 
 1. Visual Studio Code uses the SSH protocol to debug remotely. For security purposes, `root` is not permitted to log on via SSH by default. To enable `root` to log on via SSH, complete the following steps:
 
-    1. Execute the following command to open */etc/ssh/sshd_config* in [nano](https://www.nano-editor.org/docs.php) <span class="docon docon-navigate-external x-hidden-focus"></span>.
+    1. Execute the following command to open */etc/ssh/sshd_config* in [nano](https://www.nano-editor.org/docs.php).
 
         ```bash
         sudo nano /etc/ssh/sshd_config
@@ -105,7 +105,7 @@ Notice the following:
 - `pipeArgs` are the parameters to be passed to the SSH client. Be sure to specify the password parameter, as well as the `root` user in the format `<user>@<hostname>`.
 
 > [!IMPORTANT]
-> The above example uses *plink*, a component of the [PuTTY](https://www.ssh.com/ssh/putty/)<span class="docon docon-navigate-external x-hidden-focus"></span> SSH client. [OpenSSH](https://www.openssh.com/)<span class="docon docon-navigate-external x-hidden-focus"></span>, which is included in recent versions of Windows and Linux, may be used instead. However, OpenSSH doesn't support sending passwords as a command-line parameter. To use OpenSSH, [configure your Raspberry Pi for passwordless SSH access](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md) <span class="docon docon-navigate-external x-hidden-focus"></span>.
+> The above example uses *plink*, a component of the [PuTTY](https://www.ssh.com/ssh/putty/)<span class="docon docon-navigate-external x-hidden-focus"></span> SSH client. [OpenSSH](https://www.openssh.com/)<span class="docon docon-navigate-external x-hidden-focus"></span>, which is included in recent versions of Windows and Linux, may be used instead. However, OpenSSH doesn't support sending passwords as a command-line parameter. To use OpenSSH, [configure your Raspberry Pi for passwordless SSH access](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md).
 
 ### Deploy the app
 
@@ -117,7 +117,7 @@ On the **Run** tab, select the **.NET Core Launch (remote console)** configurati
 
 ## References
 
-[Remote debugging with VS Code on Windows to a Raspberry Pi using .NET Core on ARM](https://www.hanselman.com/blog/remote-debugging-with-vs-code-on-windows-to-a-raspberry-pi-using-net-core-on-arm) <span class="docon docon-navigate-external x-hidden-focus"></span>
+[Remote debugging with VS Code on Windows to a Raspberry Pi using .NET Core on ARM](https://www.hanselman.com/blog/remote-debugging-with-vs-code-on-windows-to-a-raspberry-pi-using-net-core-on-arm)
 
 ::: zone-end
 

@@ -55,7 +55,7 @@ C# provides a standard set of built-in numeric types to represent integers, floa
   
 ## Custom types
 
-You use the [struct](language-reference/builtin-types/struct.md), [class](language-reference/keywords/class.md), [interface](language-reference/keywords/interface.md), and [enum](language-reference/builtin-types/enum.md) constructs to create your own custom types. The .NET class library itself is a collection of custom types provided by Microsoft that you can use in your own applications. By default, the most frequently used types in the class library are available in any C# program. Others become available only when you explicitly add a project reference to the assembly in which they are defined. After the compiler has a reference to the assembly, you can declare variables (and constants) of the types declared in that assembly in source code.
+You use the [struct](language-reference/builtin-types/struct.md), [class](language-reference/keywords/class.md), [record](language-reference/builtin-types/record.md), [interface](language-reference/keywords/interface.md), and [enum](language-reference/builtin-types/enum.md) constructs to create your own custom types. The .NET class library itself is a collection of custom types provided by Microsoft that you can use in your own applications. By default, the most frequently used types in the class library are available in any C# program. Others become available only when you explicitly add a project reference to the assembly in which they are defined. After the compiler has a reference to the assembly, you can declare variables (and constants) of the types declared in that assembly in source code.
   
 ## Generic types
 

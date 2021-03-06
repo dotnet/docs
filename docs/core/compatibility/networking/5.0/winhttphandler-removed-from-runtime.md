@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: WinHttpHandler removed from .NET runtime"
-description: Learn about the breaking change in .NET 5.0 where WinHttpHandler was removed from the .NET runtime.
+description: Learn about the breaking change in .NET 5 where WinHttpHandler was removed from the .NET runtime.
 ms.date: 10/18/2020
 ---
 # WinHttpHandler removed from .NET runtime
@@ -13,7 +13,7 @@ The `WinHttpHandler` class was removed from the *System.Net.Http.dll* assembly. 
 
 ## Change description
 
-In previous .NET versions, the <xref:System.Net.Http.WinHttpHandler> class is available as part of the core .NET libraries. Starting in .NET 5.0, the <xref:System.Net.Http.WinHttpHandler> class is only available as a separately installed [NuGet package](https://www.nuget.org/packages/System.Net.Http.WinHttpHandler/).
+In previous .NET versions, the <xref:System.Net.Http.WinHttpHandler> class is available as part of the core .NET libraries. Starting in .NET 5, the <xref:System.Net.Http.WinHttpHandler> class is only available as a separately installed [NuGet package](https://www.nuget.org/packages/System.Net.Http.WinHttpHandler/).
 
 ## Recommended action
 

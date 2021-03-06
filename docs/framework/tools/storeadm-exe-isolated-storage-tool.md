@@ -14,7 +14,7 @@ ms.assetid: b81202b8-d91d-4b23-9c53-4a112f74a44a
 
 The Isolated Storage tool lists or removes all existing stores for the current user.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use a [command-line shell for developers](/visualstudio/ide/reference/command-prompt-powershell).
   
  At the command prompt, type the following:  
   
@@ -59,4 +59,4 @@ storeadm [/list][/machine][/remove][/roaming][/quiet]
 
 - [Tools](index.md)
 - [Isolated Storage](../../standard/io/isolated-storage.md)
-- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

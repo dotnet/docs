@@ -31,7 +31,7 @@ Popular tools like Visual Studio and Visual Studio Code have extensions availabl
 
 In addition to using the Azure portal, you will want to install the Azure CLI to create and manage Azure resources.
 
-* [Install the Azure CLI for Windows](/cli/azure/install-azure-cli-windows?tabs=azure-cli))
+* [Install the Azure CLI for Windows](/cli/azure/install-azure-cli-windows?tabs=azure-cli)
 * [Install the Azure CLI for macOS](/cli/azure/install-azure-cli-macos)
 * [Install the Azure CLI for Linux](/cli/azure/install-azure-cli-linux)
 

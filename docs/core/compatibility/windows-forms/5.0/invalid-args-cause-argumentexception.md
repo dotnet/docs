@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: WinForms methods now throw ArgumentException"
-description: Learn about the breaking change in .NET 5.0 where some Windows Forms methods now throw an ArgumentException for invalid arguments.
+description: Learn about the breaking change in .NET 5 where some Windows Forms methods now throw an ArgumentException for invalid arguments.
 ms.date: 07/18/2020
 ---
 # WinForms methods now throw ArgumentException
@@ -9,7 +9,7 @@ Some Windows Forms methods now throw an <xref:System.ArgumentException> for inva
 
 ## Change description
 
-Previously, passing arguments of an unexpected or incorrect type to certain Windows Forms methods would result in an indeterminate state. Starting in .NET 5.0, these methods now throw an <xref:System.ArgumentException> when passed invalid arguments.
+Previously, passing arguments of an unexpected or incorrect type to certain Windows Forms methods would result in an indeterminate state. Starting in .NET 5, these methods now throw an <xref:System.ArgumentException> when passed invalid arguments.
 
 Throwing an <xref:System.ArgumentException> conforms to the behavior of the .NET runtime. It also improves the debugging experience by clearly communicating which argument is invalid.
 

@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: System.Security.Cryptography APIs not supported on Blazor WebAssembly"
-description: Learn about the breaking change in .NET 5.0 where cryptography APIs throw an exception when run on a browser.
+description: Learn about the breaking change in .NET 5 where cryptography APIs throw an exception when run on a browser.
 ms.date: 09/16/2020
 ---
 # System.Security.Cryptography APIs not supported on Blazor WebAssembly
@@ -9,10 +9,10 @@ ms.date: 09/16/2020
 
 ## Change description
 
-In previous .NET versions, most of the <xref:System.Security.Cryptography> APIs aren't available to Blazor WebAssembly apps. Starting in .NET 5.0, Blazor WebAssembly apps target the full .NET 5 API surface area, however, not all .NET 5 APIs are supported due to browser sandbox constraints. In .NET 5.0 and later versions, the unsupported <xref:System.Security.Cryptography> APIs throw a <xref:System.PlatformNotSupportedException> when running on WebAssembly.
+In previous .NET versions, most of the <xref:System.Security.Cryptography> APIs aren't available to Blazor WebAssembly apps. Starting in .NET 5, Blazor WebAssembly apps target the full .NET 5 API surface area, however, not all .NET 5 APIs are supported due to browser sandbox constraints. In .NET 5 and later versions, the unsupported <xref:System.Security.Cryptography> APIs throw a <xref:System.PlatformNotSupportedException> when running on WebAssembly.
 
 > [!TIP]
-> The [Platform compatibility analyzer](../../code-analysis/5.0/ca1416-platform-compatibility-analyzer.md) will flag any calls to the affected APIs when you build a project that supports the browser platform. This analyzer runs by default in .NET 5.0 and later apps.
+> The [Platform compatibility analyzer](../../code-analysis/5.0/ca1416-platform-compatibility-analyzer.md) will flag any calls to the affected APIs when you build a project that supports the browser platform. This analyzer runs by default in .NET 5 and later apps.
 
 ## Reason for change
 

@@ -55,7 +55,7 @@ protected override void CacheMetadata(NativeActivityMetadata metadata)
 
 In order to pass data to child activities that are to be scheduled by an activity using variables, it is necessary to add the variables as implementation variables; public variables cannot have their values set this way. The reason for this is that activities are intended to be executed more as implementations of functions (which have parameters), rather than encapsulated classes (which have properties). However, there are situations in which the arguments must be explicitly set, such as when using <xref:System.Activities.NativeActivityContext.ScheduleActivity%2A>, since the scheduled activity doesn't have access to the parent activity's arguments in the way a child activity would.
 
-The following code snippet demonstrates how to pass an argument form a native activity into a scheduled activity using <xref:System.Activities.Activity.CacheMetadata%2A>.
+The following code snippet demonstrates how to pass an argument from a native activity into a scheduled activity using <xref:System.Activities.Activity.CacheMetadata%2A>.
 
 ```csharp
 public sealed class ChildActivity : NativeActivity

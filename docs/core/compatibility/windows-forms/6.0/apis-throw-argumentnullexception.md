@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Some APIs throw ArgumentNullException"
-description: Learn about the breaking change in .NET 6.0 where some APIs validate arguments and now throw an ArgumentNullException.
+description: Learn about the breaking change in .NET 6 where some APIs validate arguments and now throw an ArgumentNullException.
 ms.date: 01/29/2021
 ---
 # Some APIs throw ArgumentNullException
@@ -11,7 +11,7 @@ Some APIs now validate input parameters and throw an <xref:System.ArgumentNullEx
 
 In previous .NET versions, the affected APIs throw a <xref:System.NullReferenceException> if invoked with an argument that's `null`.
 
-Starting in .NET 6.0, the affected APIs throw an <xref:System.ArgumentNullException> if invoked with an argument that's `null`.
+Starting in .NET 6, the affected APIs throw an <xref:System.ArgumentNullException> if invoked with an argument that's `null`.
 
 ## Reason for change
 

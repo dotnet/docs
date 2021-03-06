@@ -147,7 +147,7 @@ var data = new OrderData
   orderId = "123456",
   productId = "67890",
   amount = 2
-}
+};
 
 var daprClient = new DaprClientBuilder().Build();
 

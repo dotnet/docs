@@ -14,7 +14,7 @@ If you're unsure what .NET is, start with the [.NET introduction](introduction.m
 
 ## Create an application
 
-First, download and install the [.NET SDK](https://dotnet.microsoft.com/download/dotnet-core) on your computer.
+First, download and install the [.NET SDK](https://dotnet.microsoft.com/download/dotnet) on your computer.
 
 Next, open a terminal such as **PowerShell**, **Command Prompt**, or **bash**. Enter the following `dotnet` commands to create and run a C# application:
 

@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: StringInfo and TextElementEnumerator are now UAX29-compliant"
-description: Learn about the globalization breaking change in .NET 5.0 where StringInfo and TextElementEnumerator process grapheme clusters according to the latest version of the Unicode Standard.
+description: Learn about the globalization breaking change in .NET 5 where StringInfo and TextElementEnumerator process grapheme clusters according to the latest version of the Unicode Standard.
 ms.date: 04/07/2020
 ---
 # StringInfo and TextElementEnumerator are now UAX29-compliant

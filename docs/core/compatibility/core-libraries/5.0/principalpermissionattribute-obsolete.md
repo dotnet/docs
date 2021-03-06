@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: PrincipalPermissionAttribute is obsolete as error"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where the PrincipalPermissionAttribute constructor is obsolete and produces a compile-time error.
+description: Learn about the .NET 5 breaking change in core .NET libraries where the PrincipalPermissionAttribute constructor is obsolete and produces a compile-time error.
 ms.date: 11/01/2020
 ---
 # PrincipalPermissionAttribute is obsolete as error
@@ -19,13 +19,13 @@ public void MyMethod()
 }
 ```
 
-Starting in .NET 5.0, you cannot apply the <xref:System.Security.Permissions.PrincipalPermissionAttribute> attribute to a method. The constructor for the attribute is obsolete and produces a compile-time error. Unlike other obsoletion warnings, you can't suppress the error.
+Starting in .NET 5, you cannot apply the <xref:System.Security.Permissions.PrincipalPermissionAttribute> attribute to a method. The constructor for the attribute is obsolete and produces a compile-time error. Unlike other obsoletion warnings, you can't suppress the error.
 
 ## Reason for change
 
-The <xref:System.Security.Permissions.PrincipalPermissionAttribute> type, like other types that subclass <xref:System.Security.Permissions.SecurityAttribute>, is part of .NET's Code Access Security (CAS) infrastructure. In .NET Framework 2.x - 4.x, the runtime enforces <xref:System.Security.Permissions.PrincipalPermissionAttribute> annotations on method entry, even if the application is running under a full-trust scenario. .NET Core and .NET 5.0 and later don't support CAS attributes, and the runtime ignores them.
+The <xref:System.Security.Permissions.PrincipalPermissionAttribute> type, like other types that subclass <xref:System.Security.Permissions.SecurityAttribute>, is part of .NET's Code Access Security (CAS) infrastructure. In .NET Framework 2.x - 4.x, the runtime enforces <xref:System.Security.Permissions.PrincipalPermissionAttribute> annotations on method entry, even if the application is running under a full-trust scenario. .NET Core and .NET 5 and later don't support CAS attributes, and the runtime ignores them.
 
-This difference in behavior from .NET Framework to .NET Core and .NET 5.0 can result in a "fail open" scenario, where access should have been blocked but instead has been allowed. To prevent the "fail open" scenario, you can no longer apply the attribute in code that targets .NET 5.0 or later.
+This difference in behavior from .NET Framework to .NET Core and .NET 5 can result in a "fail open" scenario, where access should have been blocked but instead has been allowed. To prevent the "fail open" scenario, you can no longer apply the attribute in code that targets .NET 5 or later.
 
 ## Version introduced
 

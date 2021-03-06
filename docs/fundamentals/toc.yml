@@ -200,6 +200,8 @@ items:
         href: ../core/tools/sdk-errors/netsdk1073.md
       - name: NETSDK1079
         href: ../core/tools/sdk-errors/netsdk1079.md
+      - name: NETSDK1080
+        href: ../core/tools/sdk-errors/netsdk1080.md
       - name: NETSDK1145
         href: ../core/tools/sdk-errors/netsdk1145.md
   - name: .NET CLI
@@ -2294,20 +2296,22 @@ items:
     items:
     - name: .NET Core 2.0 to 2.1
       href: ../core/migration/20-21.md
-    - name: Migrate from project.json
-      href: ../core/migration/index.md
-    - name: Map between project.json and csproj
-      href: ../core/tools/project-json-to-csproj.md
     - name: Map AssemblyInfo attributes to properties
       href: ../core/migration/assembly-info.md
-    - name: Changes in CLI overview
-      href: ../core/tools/cli-msbuild-architecture.md
-    - name: Migrate from DNX
-      href: ../core/migration/from-dnx.md
   - name: Port from .NET Framework
     items:
     - name: Overview
       href: ../core/porting/index.md
+    - name: .NET Upgrade Assistant tool
+      items:
+      - name: Overview
+        href: ../core/porting/upgrade-assistant-overview.md
+      - name: Windows Presentation Foundation
+        href: ../core/porting/upgrade-assistant-wpf-framework.md
+      - name: Windows Forms
+        href: ../core/porting/upgrade-assistant-winforms-framework.md
+      - name: ASP.NET
+        href: ../core/porting/upgrade-assistant-aspnetmvc.md
     - name: Analyze third-party dependencies
       href: ../core/porting/third-party-deps.md
     - name: Port libraries

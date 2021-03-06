@@ -37,37 +37,49 @@
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "master",
-      "branch_mapping": {}
+      "branch_mapping": {
+        "main": "master"
+      }
     },
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
       "branch": "master",
-      "branch_mapping": {}
+      "branch_mapping": {
+        "main": "master"
+      }
     },
     {
       "path_to_root": "_csharplang",
       "url": "https://github.com/dotnet/csharplang",
       "branch": "master",
-      "branch_mapping": {}
+      "branch_mapping": {
+        "main": "master"
+      }
     },
     {
       "path_to_root": "_vblang",
       "url": "https://github.com/dotnet/vblang",
       "branch": "master",
-      "branch_mapping": {}
+      "branch_mapping": {
+        "main": "master"
+      }
     },
     {
       "path_to_root": "machinelearning-samples",
       "url": "https://github.com/dotnet/machinelearning-samples",
       "branch": "master",
-      "branch_mapping": {}
+      "branch_mapping": {
+        "main": "master"
+      }
     },
     {
       "path_to_root": "iot-samples",
       "url": "https://github.com/MicrosoftDocs/dotnet-iot-assets",
       "branch": "master",
-      "branch_mapping": {}
+      "branch_mapping": {
+        "main": "master"
+      }
     }
   ],
   "branch_target_mapping": {

@@ -87,7 +87,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
   Sets the size of the in-memory circular buffer, in megabytes. Default 256 MB.
 
   > [!NOTE]
-  > If the target process is writing events too frequently, it can overflow this buffer which results in some events to get dropped. When too many events are getting dropped, increasing the buffer size may help.
+  > If the target process writes events too frequently, it can overflow this buffer and some events might be dropped. If too many events are getting dropped, increase the buffer size to see if the number of dropped events reduces. If the number of dropped events does not decrease with a larger buffer size, it may be due to a slow reader blocking the target process' buffers to be flushed.
 
 - **`--clreventlevel <clreventlevel>`**
 

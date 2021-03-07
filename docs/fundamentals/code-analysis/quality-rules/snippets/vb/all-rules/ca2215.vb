@@ -33,8 +33,7 @@ Namespace ca2215
             If Not disposing Then
                 MyBase.Dispose(False)
             End If
-
-        End Sub ' Dispose
+        End Sub
 
     End Class
 

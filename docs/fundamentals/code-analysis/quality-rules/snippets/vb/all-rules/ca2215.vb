@@ -30,7 +30,6 @@ Namespace ca2215
         Inherits TypeA
 
         Protected Overrides Sub Dispose(disposing As Boolean)
-
             If Not disposing Then
                 MyBase.Dispose(False)
             End If

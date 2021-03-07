@@ -9,8 +9,7 @@ Namespace ca2215
             End If
             
             ' free native resources
-
-        End Sub ' Dispose
+        End Sub
 
         Public Overloads Sub Dispose() Implements IDisposable.Dispose
 

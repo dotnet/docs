@@ -22,8 +22,7 @@ Namespace ca2215
 
             Dispose(False)
             MyBase.Finalize()
-
-        End Sub ' Finalize
+        End Sub
 
     End Class
 

@@ -1,0 +1,24 @@
+- name: "DevOps with ASP.NET Core and Azure"
+  href: index.md
+  items:       
+  - name: Tools and downloads - DevOps with ASP.NET Core and Azure 
+    href: tools-and-downloads.md
+  - name: Deploy an app to App Service - DevOps with ASP.NET Core and Azure
+    href: deploying-to-app-service.md
+  - name: Continuous integration and deployment - DevOps with ASP.NET Core and Azure
+    href: cicd.md
+  - name: Monitor and debug - DevOps with ASP.NET Core and Azure
+    href: monitoring.md
+  - name: Next steps - DevOps with ASP.NET Core and Azure
+    href: next-steps.md      
+  - name: CI/CD with GitHub Actions
+    href: mock.md
+    items:
+    - name: Comparison of GHA and Azure Pipelines
+      href: mock.md
+    - name: Basic Build Workflow 
+      href: mock.md
+    - name: Adding deployment steps
+      href: mock.md
+    - name: Securing .NET code with GitHub Actions and CodeQL
+      href: mock.md

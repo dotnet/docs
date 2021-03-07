@@ -12,7 +12,6 @@ Namespace ca2215
         End Sub
 
         Public Overloads Sub Dispose() Implements IDisposable.Dispose
-
             Dispose(True)
             GC.SuppressFinalize(Me)
         End Sub

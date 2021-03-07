@@ -26,18 +26,18 @@ Workflows are captured in YML files and all have:
 - one or more `job` sections, composed of one or more `steps`
 - optional attributes such as `environment` variables
 
-Jobs are run on _runners_. You can use _hosted runners_ which are spun up by GitHub for the duration of the workflow and then thrown away. Hosted runners are great because you don't have to maintain your own build infrastructure. For workflows that require specific build environment, or for running workflows on a private network, you can also use _private_ runners. To create a private runner, you can install the runner on any machine that supports .NET.
+Jobs are run on _runners_. You can use _hosted runners_, which are spun up by GitHub during the workflow and then thrown away. Hosted runners are great because you don't have to maintain your own build infrastructure. For workflows that require specific build environment, or for running workflows on a private network, you can also use _private_ runners. To create a private runner, you can install the runner on any machine that supports .NET.
 
 Each `job` will specify what runner GitHub should use to execute the `steps`. You can also specify dependencies between jobs using the `needs` attribute. Deployments jobs can also specify an `environment` to target.
 
-`Steps` can be as simple as inline commands or they can be Actions. Most CI workflows will have a combination of `run` steps (for executing scripts) and Actions. Actions are pulled into the workflow by referencing the Action repo (and optionally a tag or commit hash for specific verions) and specifying any parameters using the `with` keyword.
+`Steps` can be as easy as inline commands or they can be Actions. Most CI workflows will have a combination of `run` steps (for executing scripts) and Actions. Actions are pulled into the workflow by referencing the Action repo (and optionally a tag or commit hash for specific versions) and specifying any parameters using the `with` keyword.
 
 > [!TIP]
 > You can read more about GitHub Actions YAML syntax [here](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions).
 
 ## Create a Basic Build Workflow
 
-One important principle of effective DevOps is to build once, deploy many times. You are going to start by creating a workflow that will build a simple .NET application. In the next step, you will publish the output so that you are ready to deploy.
+One important principle of effective DevOps is to build once, deploy many times. You are going to start by creating a workflow that will build a basic .NET application. In the next step, you will publish the output so that you are ready to deploy.
 
 1. Navigate to your GitHub repo and click on Actions tab.
 1. GitHub detects that there is .NET code in the repo and suggests a .NET workflow template. Click `Set up this workflow` to create a new YAML workflow file:
@@ -63,7 +63,7 @@ One important principle of effective DevOps is to build once, deploy many times.
 > [!NOTE]
 > If any of the tests fail, the workflow will fail.
 
-## Disecting the Workflow File
+## Dissecting the Workflow File
 
 Let's have a look at the workflow YAML file that you have so far:
 
@@ -98,12 +98,12 @@ jobs:
 You can see the following:
 
 1. There is a `name` that names the workflow.
-1. The `on` object specifies when this workflow should run. This workflow has two events that trigger it: `push` to `main` and `pull_request` to `main`. Any time anyone commits to main or creates a Pull Request (PR) to main, this workflow will execute.
+1. The `on` object specifies when this workflow should run. This workflow has two events that trigger it: `push` to `main` and `pull_request` to `main`. Anytime anyone commits to main or creates a Pull Request (PR) to main, this workflow will execute.
 1. There is a single `job` called `build`. This build should run on a hosted agent - `ubuntu_latest` specifies the most recent ubuntu hosted agent.
 1. There are five steps:
     1. `acions/checkout@2` is an action that checks out the code in the repo onto the runner.
-    1. `actions/setup-dotnet@v1` is an action that sets up the .NET CLI. This step also specifies a `name` attribute for the logs as well as the `dotnet-version` parameter within the `with` object.
-    1. Three `run` steps that execute `dotnet restore`, `dotnet build` and `dotnet test`. `name` attributes are also specified for thest `run` steps to make the logs look pretty.
+    1. `actions/setup-dotnet@v1` is an action that sets up the .NET CLI. This step also specifies a `name` attribute for the logs and the `dotnet-version` parameter within the `with` object.
+    1. Three `run` steps that execute `dotnet restore`, `dotnet build` and `dotnet test`. `name` attributes are also specified for these `run` steps to make the logs look pretty.
 
 ## Publishing the output
 
@@ -124,7 +124,7 @@ Now that you have successfully built and tested the code, you will want to add s
       run: dotnet publish SimpleFeedReader/SimpleFeedReader.csproj -c Release -o website
 ```
 
-1. This publishes the web app to a folder on the hosted agent. We now want to _upload_ the site as a build artifact that we can deploy to Azure. To do this, we are going to use an existing action.
+1. This publishes the web app to a folder on the hosted agent. We now want to _upload_ the site as a build artifact that we can deploy to Azure. To do this activity, we are going to use an existing action.
 1. On the list of Actions in the Actions Helper pane on the right, search for `artifact` and click on the `Upload a Build Artifact (By actions)` action.
 
     ![Accessing the Actions helper](./media/actions/build/search-upload-artifact.jpg)

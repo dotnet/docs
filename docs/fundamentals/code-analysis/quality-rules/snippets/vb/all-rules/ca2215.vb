@@ -19,7 +19,6 @@ Namespace ca2215
 
         ' Disposable types implement a finalizer.
         Protected Overrides Sub Finalize()
-
             Dispose(False)
             MyBase.Finalize()
         End Sub

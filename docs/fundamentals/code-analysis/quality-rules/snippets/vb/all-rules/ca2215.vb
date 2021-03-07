@@ -15,8 +15,7 @@ Namespace ca2215
 
             Dispose(True)
             GC.SuppressFinalize(Me)
-
-        End Sub ' Dispose
+        End Sub
 
         ' Disposable types implement a finalizer.
         Protected Overrides Sub Finalize()

@@ -4,7 +4,6 @@ Namespace ca2215
         Implements IDisposable
 
         Protected Overridable Overloads Sub Dispose(disposing As Boolean)
-
             If disposing Then
                 ' dispose managed resources
             End If

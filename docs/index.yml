@@ -12,7 +12,7 @@ metadata:
   ms.collection: collection
   author: BillWagner
   ms.author: wiwagn
-  ms.date: 10/9/2020
+  ms.date: 03/08/2021
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -201,6 +201,7 @@ additionalContent:
             text: ASP.NET MVC apps in Windows containers
           - url: /aspnet/core/blazor/
             text: "Blazor: Interactive client-side web UI with .NET"
+
       # Card
       - title: Cloud native and microservices
         links:
@@ -214,6 +215,7 @@ additionalContent:
             text: "Serverless apps: Architecture, patterns, and Azure implementation"
           - url: architecture/microservices/index.md
             text: ".NET Microservices: Architecture for Containerized .NET Applications"
+
       # Card
       - title: Mobile
         links:
@@ -225,6 +227,7 @@ additionalContent:
             text: Xamarin.Forms
           - url: /azure/developer/mobile-apps
             text: Develop Xamarin apps with Azure
+
       # Card
       - title: Desktop
         links:
@@ -249,6 +252,7 @@ additionalContent:
             text: Build games with C# using the MonoGame library
           - url: https://docs.unity3d.com/Manual/index.html
             text: Learn how to use Unity to build 2D and 3D games with C#
+
       # Card
       - title: Machine learning and AI
         links:
@@ -275,7 +279,11 @@ additionalContent:
     - title: API and language reference # < 60 chars (optional)
       summary: Search the .NET API and language reference documentation. # < 160 chars (optional)
       items:
-        # Card
+      # Card
+      - title: ".NET API reference"
+        summary: API reference documentation for .NET
+        url: ../api/index.md?view=net-5.0
+      # Card
       - title: ".NET Core API reference"
         summary: API reference documentation for .NET Core
         url: ../api/index.md?view=netcore-3.1

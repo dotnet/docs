@@ -10,7 +10,7 @@ namespace HelloWorld
         public static void Main(string[] args)
         {
             // <MainMethod>
-            Console.WriteLine("What is your name? ");
+            Console.WriteLine("What is your name?");
             var name = Console.ReadLine();
             var date = DateTime.Now;
             Console.WriteLine($"{Environment.NewLine}Hello, {name}, on {date:d} at {date:t}!");

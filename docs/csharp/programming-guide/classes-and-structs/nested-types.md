@@ -20,7 +20,7 @@ You can also specify an [access modifier](../../language-reference/keywords/acce
 
    However, defining a `protected`, `protected internal` or `private protected` nested class inside a [sealed class](../../language-reference/keywords/sealed.md) generates compiler warning [CS0628](../../misc/cs0628.md), "new protected member declared in sealed class."
 
-   Also be aware that making a nested type externally visible will trigger the [CA1034](~/docs/fundamentals/code-analysis/quality-rules/ca1034.md) "Nested types should not be visible" compiler warning.
+   Also be aware that making a nested type externally visible violates the code quality rule [CA1034](../../../fundamentals/code-analysis/quality-rules/ca1034.md) "Nested types should not be visible".
 
 - Nested types of a **struct** can be [public](../../language-reference/keywords/public.md), [internal](../../language-reference/keywords/internal.md), or [private](../../language-reference/keywords/private.md).
 
@@ -44,4 +44,4 @@ In the previous declaration, the full name of class `Nested` is `Container.Neste
 - [Classes and Structs](./index.md)
 - [Access Modifiers](./access-modifiers.md)
 - [Constructors](./constructors.md)
-- [CA1034 warning](~/docs/fundamentals/code-analysis/quality-rules/ca1034.md)
+- [CA1034 rule](../../../fundamentals/code-analysis/quality-rules/ca1034.md)

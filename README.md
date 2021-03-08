@@ -1,6 +1,6 @@
 # .NET Docs
 
-![Markdownlint](https://github.com/dotnet/docs/workflows/Markdownlint/badge.svg)
+![Markdownlint](https://github.com/dotnet/docs/workflows/Markdownlint/badge.svg) [![target supported version](https://github.com/dotnet/docs/actions/workflows/version-sweep.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/version-sweep.yml)
 
 This repository contains the conceptual documentation for .NET. The [.NET documentation site](https://docs.microsoft.com/dotnet) is built from multiple repositories in addition to this one:
 

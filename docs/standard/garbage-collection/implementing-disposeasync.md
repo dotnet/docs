@@ -118,11 +118,10 @@ In the preceding example, each asynchronous clean up operation is implicitly sco
 
 ### Unacceptable pattern
 
-If an exception is thrown from the `AnotherAsyncDisposable` constructor, then `objOne` does not get properly disposed:
+The highlighted lines in the following code show what it means to have "stacked usings". If an exception is thrown from the `AnotherAsyncDisposable` constructor, then `objOne` does not get properly disposed.
 
 :::code language="csharp" id="dontdothis" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs" highlight="9-10":::
 
-In the preceding code, the highlighted lines show what it means to have "stacked usings".
 
 > [!TIP]
 > Avoid this pattern as it could lead to unexpected behavior.

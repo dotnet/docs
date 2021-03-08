@@ -2,14 +2,14 @@
 title: Upgrade Windows Forms apps to .NET 5
 description: Use the .NET Upgrade Assistant to upgrade an existing .NET Framework Windows Forms app to .NET 5. The .NET Upgrade Assistant is a CLI tool that helps migrating an app from .NET Framework to .NET 5.
 author: ardalis
-ms.date: 02/25/2021
+ms.date: 03/08/2021
 ---
 # Upgrade a Windows Forms App to .NET 5 with the .NET Upgrade Assistant
 
 The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can assist with upgrading .NET Framework Windows Forms (WinForms) apps to .NET 5. This article provides:
 
-* A demonstration of how to run the tool against a .NET Framework Windows Forms app
-* Troubleshooting tips
+- A demonstration of how to run the tool against a .NET Framework Windows Forms app
+- Troubleshooting tips
 
 ## Upgrade .NET Framework Windows Forms apps
 

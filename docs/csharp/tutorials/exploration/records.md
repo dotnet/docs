@@ -17,7 +17,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You’ll need to set up your machine to run .NET 5 or later, including the C# 9.0 or later compiler. The C# 9.0 compiler is available starting with [Visual Studio 2019 version 16.8](https://visualstudio.microsoft.com/vs) or the [.NET 5.0 SDK](https://dotnet.microsoft.com/download).
+You'll need to set up your machine to run .NET 5 or later, including the C# 9.0 or later compiler. The C# 9.0 compiler is available starting with [Visual Studio 2019 version 16.8](https://visualstudio.microsoft.com/vs) or the [.NET 5.0 SDK](https://dotnet.microsoft.com/download).
 
 ## Characteristics of records
 
@@ -149,8 +149,8 @@ Run the finished application to see the results.
 
 ## Summary
 
-This tutorial showed several aspects of records. Records provide concise syntax for reference types where the fundamental use is storing data. For object-oriented classes, the fundamental use is defining responsibilities. This tutorial focused on *positional records*, where you can use a concise syntax to declare the init-only properties for a record. The compiler synthesizes several members of the record for copying and comparing records. You can add any other members you need for your record types. You can create immutable record types knowing that none of the compiler-generated members would mutate state. For positional records, `with` expressions make it easy to support non-destructive mutation.
+This tutorial showed several aspects of records. Records provide concise syntax for reference types where the fundamental use is storing data. For object-oriented classes, the fundamental use is defining responsibilities. This tutorial focused on *positional records*, where you can use a concise syntax to declare the init-only properties for a record. The compiler synthesizes several members of the record for copying and comparing records. You can add any other members you need for your record types. You can create immutable record types knowing that none of the compiler-generated members would mutate state. And `with` expressions make it easy to support non-destructive mutation.
 
 Records add another way to define types. You use `class` definitions to create object-oriented hierarchies that focus on the responsibilities and behavior of objects. You create `struct` types for data structures that store data and are small enough to copy efficiently. You create records when you want value-based equality and comparison, don't want to copy values, and want to use reference variables.
 
-You can learn the complete description of records by reading the [proposed record type specification](~/_csharplang/proposals/csharp-9.0/records.md).
+You can learn the complete description of records by reading the [C# language reference article for the record type)](../../language-reference/builtin-types/record.md) and the [proposed record type specification](~/_csharplang/proposals/csharp-9.0/records.md).

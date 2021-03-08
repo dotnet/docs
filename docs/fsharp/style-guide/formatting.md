@@ -495,13 +495,23 @@ type Volume =
 
 ## Formatting discriminated unions
 
+Use a space before parenthesized/tupled parameters to discriminated union cases:
+
+```fsharp
+// OK
+let opt = Some ("A", 1)
+
+// Not OK
+let opt = Some("A", 1)
+```
+
 Instantiated Discriminated Unions that split across multiple lines should give contained data a new scope with indentation:
 
 ```fsharp
 let tree1 =
     BinaryNode
-        (BinaryNode(BinaryValue 1, BinaryValue 2),
-         BinaryNode(BinaryValue 3, BinaryValue 4))
+        (BinaryNode (BinaryValue 1, BinaryValue 2),
+         BinaryNode (BinaryValue 3, BinaryValue 4))
 ```
 
 The closing parenthesis can also be on a new line:
@@ -509,8 +519,8 @@ The closing parenthesis can also be on a new line:
 ```fsharp
 let tree1 =
     BinaryNode(
-        BinaryNode(BinaryValue 1, BinaryValue 2),
-        BinaryNode(BinaryValue 3, BinaryValue 4)
+        BinaryNode (BinaryValue 1, BinaryValue 2),
+        BinaryNode (BinaryValue 3, BinaryValue 4)
     )
 ```
 
@@ -912,6 +922,20 @@ let printListWithOffsetPiped a list1 =
 
 If the body of a lambda expression is multiple lines long, you should consider refactoring it into a locally-scoped function.
 
+When the function take a single multiline tuple argument, the same rules for [Formatting constructors, static members, and member invocations](#formatting-constructors-static-members-and-member-invocations) apply.
+
+```fsharp
+let myFunction (a: int, b: string, c: int, d: bool) =
+    ()
+
+myFunction(
+    478815516,
+    "A very long string making all of this multi-line",
+    1515,
+    false
+)
+```
+
 ### Formatting infix operators
 
 Separate operators by spaces. Obvious exceptions to this rule are the `!` and `.` operators.
@@ -1068,6 +1092,26 @@ let untypedRes =
         sourceText,
         parsingOptionsWithDefines
     )
+```
+
+The same rules apply even if there is only a single multiline argument.
+
+```fsharp
+let poemBuilder = StringBuilder()
+poemBuilder.AppendLine(
+    """
+The last train is nearly due
+The Underground is closing soon
+And in the dark, deserted station
+Restless in anticipation
+A man waits in the shadows
+    """
+)
+
+Option.traverse(
+    create
+    >> Result.setError [ invalidHeader "Content-Checksum" ]
+)
 ```
 
 ## Formatting attributes

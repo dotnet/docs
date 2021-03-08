@@ -33,7 +33,7 @@ Provides download links for Visual Studio versions that come with Visual Basic s
 - [Object-Oriented Programming](../programming-guide/concepts/object-oriented-programming.md)
 Provides links to pages that introduce object-oriented programming and describe how to create your own objects and how to use objects to simplify your coding.
 
-- [Samples](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic)
+- [Samples](https://github.com/dotnet/docs/tree/main/samples/snippets/visualbasic)
 Provides links to sample code in Visual Basic.
 
 - [Walkthroughs](../walkthroughs.md)

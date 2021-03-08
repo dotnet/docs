@@ -3,7 +3,7 @@ title: Remove the .NET runtime and SDK
 description: This article describes how to determine which versions of the .NET Runtime and SDK are currently installed, and then, how to remove them on Windows, Mac, and Linux.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/20/2020
+ms.date: 03/02/2021
 zone_pivot_groups: operating-systems-set-one
 ---
 
@@ -66,15 +66,15 @@ For machines that have installed only the runtime, and not the SDK, the package 
 
 If you installed using a tarball, you must remove .NET using the manual method.
 
-On Linux, you must remove the SDKs and runtimes separately, by removing the versioned directories. Removing them deletes the SDK and runtime from disk. For example, to remove the 1.0.1 SDK and runtime, you would use the following bash commands:
+On Linux, you must remove the SDKs and runtimes separately, by removing the versioned directories. These directories may vary depending on your Linux distribution. Removing them deletes the SDK and runtime from disk. For example, to remove the 1.0.1 SDK and runtime, you would use the following bash commands:
 
 ```bash
 version="1.0.1"
-sudo rm -rf /usr/local/share/dotnet/sdk/$version
-sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.NETCore.App/$version
-sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.All/$version
-sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/$version
-sudo rm -rf /usr/local/share/dotnet/host/fxr/$version
+sudo rm -rf /usr/share/dotnet/sdk/$version
+sudo rm -rf /usr/share/dotnet/shared/Microsoft.NETCore.App/$version
+sudo rm -rf /usr/share/dotnet/shared/Microsoft.AspNetCore.All/$version
+sudo rm -rf /usr/share/dotnet/shared/Microsoft.AspNetCore.App/$version
+sudo rm -rf /usr/share/dotnet/host/fxr/$version
 ```
 
 The parent directories for the SDK and runtime are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.
@@ -102,6 +102,8 @@ The parent directories for the SDK and runtime are listed in the output from the
 
 The [.NET Uninstall Tool](../additional-tools/uninstall-tool.md) (`dotnet-core-uninstall`) lets you remove .NET SDKs and runtimes from a system. A collection of options is available to specify which versions should be uninstalled.
 
+::: zone pivot="os-windows"
+
 ## Visual Studio dependency on .NET Core SDK versions
 
 Before Visual Studio 2019 version 16.3, Visual Studio installers called the standalone .NET Core SDK installer. As a result, the SDK versions appear in the Windows **Apps & features** dialog. Removing .NET Core SDKs that were installed by Visual Studio using the standalone installer may break Visual Studio. If Visual Studio has problems after you uninstall SDKs, run Repair on that specific version of Visual Studio. The following table shows some of the Visual Studio dependencies on .NET Core SDK versions:
@@ -115,6 +117,8 @@ Before Visual Studio 2019 version 16.3, Visual Studio installers called the stan
 | Visual Studio 2017 version 15.8 | .NET Core SDK 2.1.4xx          |
 
 Starting with Visual Studio 2019 version 16.3, Visual Studio is in charge of its own copy of the .NET SDK. For that reason, you no longer see those SDK versions in the **Apps & features** dialog.
+
+::: zone-end
 
 ## Remove the NuGet fallback folder
 

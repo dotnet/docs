@@ -28,4 +28,4 @@ A type does not support a call to `Sub New()`. One possible cause is a corrupted
 ## See also
 
 - [Objects and Classes](../../programming-guide/language-features/objects-and-classes/index.md)
-- [Talk to Us](/visualstudio/ide/feedback-options)
+- [Visual Studio feedback options](/visualstudio/ide/feedback-options)

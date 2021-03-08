@@ -38,6 +38,10 @@ namespace builtin_types
             StructType.Examples();
             Console.WriteLine();
 
+            Console.WriteLine("========== Records ===============");
+            RecordType.Examples();
+            Console.WriteLine();
+
             Console.WriteLine("===== Nullable reference types ===");
             NullableReferenceTypes.Examples();
             Console.WriteLine();

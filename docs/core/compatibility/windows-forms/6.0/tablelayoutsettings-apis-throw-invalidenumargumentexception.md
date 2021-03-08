@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Some TableLayoutSettings properties throw InvalidEnumArgumentException"
-description: Learn about the breaking change in .NET 6.0 where some TableLayoutSettings APIs now throw an InvalidEnumArgumentException for invalid arguments.
+description: Learn about the breaking change in .NET 6 where some TableLayoutSettings APIs now throw an InvalidEnumArgumentException for invalid arguments.
 ms.date: 01/18/2021
 ---
 # Selected TableLayoutSettings properties throw InvalidEnumArgumentException
@@ -9,7 +9,7 @@ Selected <xref:System.Windows.Forms.TableLayoutSettings> properties now throw an
 
 ## Change description
 
-In previous .NET versions, these properties throw an <xref:System.ArgumentOutOfRangeException> if you attempt to assign an incorrect value. Starting in .NET 6.0, these properties throw an <xref:System.ComponentModel.InvalidEnumArgumentException> in such cases.
+In previous .NET versions, these properties throw an <xref:System.ArgumentOutOfRangeException> if you attempt to assign an incorrect value. Starting in .NET 6, these properties throw an <xref:System.ComponentModel.InvalidEnumArgumentException> in such cases.
 
 ## Reason for change
 

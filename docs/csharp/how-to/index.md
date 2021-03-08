@@ -19,9 +19,9 @@ There are several tips and tricks that are common C# developer practices:
 - Even C# programmers may want to [use the `My` namespace from Visual Basic](../programming-guide/namespaces/how-to-use-the-my-namespace.md).
 - [Create a new method for an `enum` type using extension methods](../programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).
 
-### Class and struct members
+### Class, record, and struct members
 
-You create classes and structs to implement your program. These techniques are commonly used when writing classes or structs.
+You create classes, records, and structs to implement your program. These techniques are commonly used when writing classes, records, or structs.
 
 - [Declare auto implemented properties](../programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md).
 - [Declare and use read/write properties](../programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties.md).

@@ -21,4 +21,4 @@ A file that is required by Visual Studio is missing or damaged.
 
 ## See also
 
-- [Talk to Us](/visualstudio/ide/feedback-options)
+- [Visual Studio feedback options](/visualstudio/ide/feedback-options)

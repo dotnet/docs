@@ -1,7 +1,7 @@
 ﻿Module Program
     Sub Main(args As String())
         ' <MainMethod>
-        Console.WriteLine($"{Environment.NewLine}What is your name? ")
+        Console.WriteLine("What is your name? ")
         Dim name = Console.ReadLine()
         Dim currentDate = DateTime.Now
         Console.WriteLine($"{Environment.NewLine}Hello, {name}, on {currentDate:d} at {currentDate:t}")

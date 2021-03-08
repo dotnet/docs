@@ -777,18 +777,6 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst.Test" #MakeConst.Test.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/samples/snippets/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst" #MakeConst.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
     directory: "/samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_cancellationwinforms/vb/cancellationwinforms" #cancellationwinforms.vbproj
     schedule:
       interval: "weekly"

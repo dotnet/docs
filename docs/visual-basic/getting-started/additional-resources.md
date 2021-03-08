@@ -26,7 +26,7 @@ The following web sites provide guidance and can help you find answers to common
 
 |URL|Description|
 |----------|----------------|
-|[Visual Basic documentation samples](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic)|Contains the samples used throughout the Visual Basic and .NET documentation.|
+|[Visual Basic documentation samples](https://github.com/dotnet/docs/tree/main/samples/snippets/visualbasic)|Contains the samples used throughout the Visual Basic and .NET documentation.|
 |[Samples browser](https://docs.microsoft.com/samples/browse/?languages=vb)|Contains code samples written in Visual Basic|
 
 ### Forums

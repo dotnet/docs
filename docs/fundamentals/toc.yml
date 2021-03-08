@@ -200,6 +200,8 @@ items:
         href: ../core/tools/sdk-errors/netsdk1073.md
       - name: NETSDK1079
         href: ../core/tools/sdk-errors/netsdk1079.md
+      - name: NETSDK1080
+        href: ../core/tools/sdk-errors/netsdk1080.md
       - name: NETSDK1145
         href: ../core/tools/sdk-errors/netsdk1145.md
   - name: .NET CLI
@@ -2289,11 +2291,6 @@ items:
   items:
   - name: Overview
     href: ../core/porting/index.md
-  - name: Breaking changes
-    displayName: app compatibility
-    href: ../core/compatibility/
-  - name: Map AssemblyInfo attributes to properties
-    href: ../core/migration/assembly-info.md
   - name: .NET Upgrade Assistant tool
     items:
     - name: Overview
@@ -2304,6 +2301,11 @@ items:
       href: ../core/porting/upgrade-assistant-winforms-framework.md
     - name: ASP.NET Core
       href: ../core/porting/upgrade-assistant-aspnetmvc.md
+  - name: Breaking changes
+    displayName: app compatibility
+    href: ../core/compatibility/
+  - name: Map project AssemblyInfo attributes to properties
+    href: ../core/migration/assembly-info.md
   - name: Analyze third-party dependencies
     href: ../core/porting/third-party-deps.md
   - name: Port libraries
@@ -2312,8 +2314,6 @@ items:
     href: ../core/porting/project-structure.md
   - name: Unavailable technologies
     href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-  - name: Tools
-    href: ../core/porting/tools.md
   - name: Use the Windows Compatibility Pack
     href: ../core/porting/windows-compat-pack.md
   - name: Port Windows Forms projects

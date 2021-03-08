@@ -1,6 +1,6 @@
 ---
-title: "How to define value equality for a type - C# Programming Guide"
-description: Learn how to define value equality for a type. See code examples and view additional available resources.
+title: "How to define value equality for a class or struct - C# Programming Guide"
+description: Learn how to define value equality for a class or struct. See code examples and view additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "overriding Equals method [C#]"
@@ -10,9 +10,9 @@ helpviewer_keywords:
   - "equivalence [C#]"
 ms.assetid: 4084581e-b931-498b-9534-cf7ef5b68690
 ---
-# How to define value equality for a type (C# Programming Guide)
+# How to define value equality for a class or struct (C# Programming Guide)
 
-When you define a class or struct, you decide whether it makes sense to create a custom definition of value equality (or equivalence) for the type. Typically, you implement value equality when objects of the type are expected to be added to a collection of some sort, or when their primary purpose is to store a set of fields or properties. You can base your definition of value equality on a comparison of all the fields and properties in the type, or you can base the definition on a subset.
+When you define a [record](../classes-and-structs/records.md), the compiler automatically implements value equality. When you define a class or struct, you decide whether it makes sense to create a custom definition of value equality (or equivalence) for the type. Typically, you implement value equality when objects of the type are expected to be added to a collection of some sort, or when their primary purpose is to store a set of fields or properties. You can base your definition of value equality on a comparison of all the fields and properties in the type, or you can base the definition on a subset.
 
 In either case, and in both classes and structs, your implementation should follow the five guarantees of equivalence (For the following rules, assume that `x`, `y` and `z` are not null):  
   

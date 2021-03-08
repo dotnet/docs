@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Cryptography.Oid is functionally init-only"
-description: Learn about the breaking change in .NET 5.0 where property setters on the Cryptography.Oid class now throw an exception if you attempt to change a value.
+description: Learn about the breaking change in .NET 5 where property setters on the Cryptography.Oid class now throw an exception if you attempt to change a value.
 ms.date: 08/16/2020
 ---
 # System.Security.Cryptography.Oid is functionally init-only
@@ -11,7 +11,7 @@ The <xref:System.Security.Cryptography.Oid?displayProperty=fullName> class, whic
 
 In previous versions, the property setters on <xref:System.Security.Cryptography.Oid> can be used to change the value of the <xref:System.Security.Cryptography.Oid.FriendlyName> and <xref:System.Security.Cryptography.Oid.Value> properties.
 
-In .NET 5.0 and later versions, the property setters can only be used to initialize the value. Once the property has a value, either from a constructor or a previous call to the property setter, the property setter always throws a <xref:System.PlatformNotSupportedException>.
+In .NET 5 and later versions, the property setters can only be used to initialize the value. Once the property has a value, either from a constructor or a previous call to the property setter, the property setter always throws a <xref:System.PlatformNotSupportedException>.
 
 ## Reason for change
 

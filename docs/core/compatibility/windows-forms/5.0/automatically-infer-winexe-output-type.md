@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: OutputType set to WinExe for WPF and WinForms apps"
 description: Learn about the breaking change in .NET SDK 5.0.100 where OutputType is automatically set to WinExe for Windows Forms apps.
-ms.date: 09/18/2020
+ms.date: 02/08/2021
 ---
 # OutputType set to WinExe for WPF and WinForms apps
 

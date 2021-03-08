@@ -556,13 +556,15 @@ items:
       href: programming-guide/types/using-type-dynamic.md
     - name: "Walkthrough: Creating and Using Dynamic Objects (C# and Visual Basic)"
       href: programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md
-  - name: Classes and Structs
+  - name: Classes, Records, and Structs
     items:
     - name: Overview
-      displayName: classes
+      displayName: classes, records
       href: programming-guide/classes-and-structs/index.md
     - name: Classes
       href: programming-guide/classes-and-structs/classes.md
+    - name: Records
+      href: programming-guide/classes-and-structs/records.md
     - name: Objects
       href: programming-guide/classes-and-structs/objects.md
     - name: Inheritance

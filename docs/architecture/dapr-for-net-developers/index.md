@@ -60,7 +60,7 @@ Participants and Reviewers:
 Editors:
 
 > **David Pine**, Senior Content Developer, .NET team, Microsoft
-
+>
 > **Maira Wenzel**, Senior Program Manager, .NET team, Microsoft
 
 ## Version

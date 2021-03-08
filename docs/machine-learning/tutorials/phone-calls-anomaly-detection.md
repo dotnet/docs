@@ -27,7 +27,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Create a console application
 
-1. Create a **C# .NET Core Console Application** called "ProductSalesAnomalyDetection".
+1. Create a **C# .NET Core Console Application** called "PhoneCallsAnomalyDetection".
 
 2. Create a directory named *Data* in your project to save your data set files.
 

@@ -119,9 +119,9 @@ The Dapr .NET SDK provides language-specific support for .NET Core developers. I
 private async Task SendSMSAsync([FromServices] DaprClient daprClient)
 {
     var message = "Welcome to this awesome service";
-    var metadata = new Dictionary<string, string> 
-    { 
-      { "toNumber", "555-3277" } 
+    var metadata = new Dictionary<string, string>
+    {
+      { "toNumber", "555-3277" }
     };
     await daprClient.InvokeBindingAsync("sms", "create", message, metadata);
 }
@@ -220,7 +220,7 @@ public Task Handle(OrderStartedDomainEvent notification, CancellationToken cance
 {
     var string message = CreateEmailBody(notification);
     var metadata = new Dictionary<string, string>
-    { 
+    {
         {"emailFrom", "eShopOn@dapr.io"},
         {"emailTo", notification.UserName},
         {"subject", $"Your eShopOnDapr order #{notification.Order.Id}"}

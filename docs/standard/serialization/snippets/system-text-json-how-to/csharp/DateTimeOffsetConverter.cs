@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
 {
-    public class DateTimeOffsetConverter : JsonConverter<DateTimeOffset>
+    public class DateTimeOffsetJsonConverter : JsonConverter<DateTimeOffset>
     {
         public override DateTimeOffset Read(
             ref Utf8JsonReader reader,

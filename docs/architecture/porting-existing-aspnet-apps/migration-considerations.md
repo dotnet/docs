@@ -11,7 +11,7 @@ The most fundamental question teams must answer when it comes to porting their a
 
 ## Is migration to .NET Core appropriate?
 
-Let's start with some of the reasons why you might want to move to .NET Core. There are quite a few, so don't consider this list exhaustive.
+Let's start with some of the reasons why you might want to move to .NET Core (or .NET 5). There are quite a few, so don't consider this list exhaustive.
 
 ### Cross-platform support
 

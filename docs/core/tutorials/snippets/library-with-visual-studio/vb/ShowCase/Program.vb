@@ -22,9 +22,7 @@ Module Program
             Console.ReadKey()
         End If   
         Console.Clear()
-        Console.WriteLine($"{Environment.NewLine}Press <Enter> only to exit; otherwise, enter a string and press <Enter>:{Environment.NewLine}",
-                          vbCrLf)
+        Console.WriteLine($"{Environment.NewLine}Press <Enter> only to exit; otherwise, enter a string and press <Enter>:{Environment.NewLine}")
         row = 3  
     End Sub
 End Module
-

@@ -116,13 +116,13 @@ Now that you've successfully built and tested the code, add steps that publish t
 
 1. Add the following step at the bottom of the file, below the `Test` step, to run the `dotnet publish` command to publish the website:
 
-```yml
-    - name: Test
-      run: dotnet test --no-build --verbosity normal # <-- this is the current bottom line
+  ```yml
+      - name: Test
+        run: dotnet test --no-build --verbosity normal # <-- this is the current bottom line
 
-    - name: Publish
-      run: dotnet publish SimpleFeedReader/SimpleFeedReader.csproj -c Release -o website
-```
+      - name: Publish
+        run: dotnet publish SimpleFeedReader/SimpleFeedReader.csproj -c Release -o website
+  ```
 
 1. This publishes the web app to a folder on the hosted agent. We now want to _upload_ the site as a build artifact that we can deploy to Azure. To do this activity, we are going to use an existing action.
 1. On the list of Actions in the Actions Helper pane on the right, search for `artifact` and click on the `Upload a Build Artifact (By actions)` action.
@@ -137,14 +137,14 @@ Now that you've successfully built and tested the code, add steps that publish t
 
 1. Edit the YAML for this step to look as follows:
 
-```yml
-    - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v2.2.2
-      with:
-        name: website
-        path: SimpleFeedReader/website/**
-        if-no-files-found: error
-```
+  ```yml
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2.2.2
+        with:
+          name: website
+          path: SimpleFeedReader/website/**
+          if-no-files-found: error
+  ```
 
 1. Commit the file.
 1. Once the workflow completes, you will be able to see the artifact from the Home tab:

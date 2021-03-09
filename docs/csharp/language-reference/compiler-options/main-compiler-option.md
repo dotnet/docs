@@ -33,7 +33,7 @@ If your compilation includes more than one type with a [Main](../../programming-
 This option is for use when compiling an *.exe* file.
 
 > [!NOTE]
-> This option can't be used for a project that includes [top-level statements](../../programming-guide/main-and-command-args/top-level-statements.md), even if that project contains multiple `Main` methods.
+> This option can't be used for a project that includes [top-level statements](../../programming-guide/main-and-command-args/top-level-statements.md), even if that project contains one or more `Main` methods.
 
 ### To set this compiler option in the Visual Studio development environment
 

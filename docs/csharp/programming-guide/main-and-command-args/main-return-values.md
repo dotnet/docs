@@ -19,7 +19,7 @@ It can also return an `int`:
 
 If the return value from `Main` is not used, returning `void` allows for slightly simpler code. However, returning an integer enables the program to communicate status information to other programs or scripts that invoke the executable file. The return value from `Main` is treated as the exit code for the process. If `void` is returned from `Main`, the exit code will be implicitly `0`. The following example shows how the return value from `Main` can be accessed.
 
-An application that uses [top-level statements](top-level-statements.md) can return an exit code by using the same syntax, as if it had a `Main` method defined with an `int` or `Task<int>` return value.
+An application that uses [top-level statements](top-level-statements.md) can also return an exit code. For more information, see [Top-level statements (C# Programming Guide)](top-level-statements.md#the-application-can-return-an-int).
 
 ## Example
 

@@ -22,7 +22,7 @@ The following sections explain the rules on what you can and can't do with top-l
 
 ### Only one file can have top-level statements
 
-An application must have only one entry point, so it can only have one file with top-level statements. Putting top-level statements in more than one file in a project results in the following compiler error:
+An application must have only one entry point, so a project can have only one file with top-level statements. Putting top-level statements in more than one file in a project results in the following compiler error:
 
 > CS8802 Only one compilation unit can have top-level statements.
 
@@ -34,7 +34,7 @@ You can write a `Main` method explicitly, but it can't function as an entry poin
 
 In a project with top-level statements, you can't use the [-main](../../language-reference/compiler-options/main-compiler-option.md) compiler option to select the application's entry point.
 
-### `Using` directives are allowed
+### `using` directives are allowed
 
 If you include using directives, they must come first in the file, as in this example:
 
@@ -52,15 +52,9 @@ A file with top-level statements can also contain namespaces and type definition
 
 ### `args` is available.
 
-Top-level statements can reference the args variable, which contains any command-line arguments that were entered. The args variable is never null but has `Length` 0 if no command-line arguments were provided.
+Top-level statements can reference the args variable, which contains any command-line arguments that were entered. The `args` variable is never null but has `Length` 0 if no command-line arguments were provided.
 
 :::code language="csharp" source="snippets/top-level-statements-3/Program.cs":::
-
-You can test this application by running the following command that submits multiple arguments:
-
-```dotnetcli
-dotnet run <app name> -- Argument1 Argument2
-```
 
 ### `await` is available
 
@@ -68,9 +62,9 @@ You can call an async method by using `await`. For example:
 
 :::code language="csharp" source="snippets/top-level-statements-4/Program.cs":::
 
-### The app can return an `int`
+### The application can return an `int`
 
-To return an `int` value when the application ends, use the return statement as you would in a Main method that return an int. For example:
+To return an `int` value when the application ends, use the `return` statement as you would in a `Main` method that returns an `int`. For example:
 
 :::code language="csharp" source="snippets/top-level-statements-4/Program.cs":::
 

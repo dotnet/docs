@@ -1,9 +1,9 @@
 ﻿using System;
 
-TestClass.TestMethod();
-TestNamespace.TestClass.TestMethod();
+MyClass.TestMethod();
+MyNamespace.MyClass.MyMethod();
 
-public class TestClass
+public class MyClass
 {
     public static void TestMethod()
     {
@@ -12,13 +12,13 @@ public class TestClass
 
 }
 
-namespace TestNamespace
+namespace MyNamespace
 {
-    class TestClass
+    class MyClass
     {
-        public static void TestMethod()
+        public static void MyMethod()
         {
-            Console.WriteLine("Hello World from TestNamespace!");
+            Console.WriteLine("Hello World from MyNamespace.MyClass.MyMethod!");
         }
     }
 }

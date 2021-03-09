@@ -134,7 +134,7 @@ For more information, see [.NET API analyzer](../../standard/analyzers/api-analy
 
 ## Considerations when porting
 
-When porting your application to .NET, consider the following suggestions.
+When porting your application to .NET, consider the following suggestions in order.
 
 ✔️ CONSIDER using the [.NET Upgrade Assistant](upgrade-assistant-overview.md) to migrate your projects. Even though this tool is in preview, it automates most of the manual steps detailed in this article and gives you a great starting point for continuing your migration path.
 

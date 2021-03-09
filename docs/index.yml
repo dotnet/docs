@@ -128,14 +128,14 @@ conceptualContent:
           itemType: overview
           text: .NET Core CLI overview
         - url: core/porting/index.md
-          itemType: how-to-guide
-          text: Port from .NET Framework to .NET Core
+          itemType: overview
+          text: Port from .NET Framework to .NET
         - url: core/compatibility/index.md
           itemType: concept
           text: .NET Core breaking changes
-        - url: /dotnet/desktop/wpf/overview/
-          itemType: overview
-          text: Create .NET Core desktop apps for Windows
+        - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-5.0
+          itemType: tutorial
+          text: Create .NET desktop apps for Windows
         - url: standard/library-guidance/index.md
           itemType: concept
           text: Open source library guidance
@@ -217,12 +217,14 @@ additionalContent:
         links:
           - url: /uwp
             text: Universal Windows apps
-          - url: /dotnet/desktop/wpf
-            text: Windows Presentation Foundation (.NET Core)
+          - url: /dotnet/desktop/wpf/?view=netdesktop-5.0
+            text: Windows Presentation Foundation (.NET 5)
           - url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8
             text: Windows Presentation Foundation (.NET Framework)
+          - url: /dotnet/desktop/winforms/?view=netdesktop-5.0
+            text: Windows Forms (.NET 5)
           - url: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8
-            text: Windows Forms
+            text: Windows Forms (.NET Framework)
           - url: /xamarin/mac
             text: Xamarin for macOS
       # Card

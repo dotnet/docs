@@ -14,7 +14,7 @@ Here's a *Program.cs* file that is a complete C# program in C# 9:
 
 :::code language="csharp" source="snippets/top-level-statements-1/Program.cs":::
 
-Top-level statements simplify the code that you write for small utilities such as Azure Functions and GitHub Actions. They also make it simpler for new C# programmers to get started learning and writing code.
+Top-level statements simplify the code for small utilities such as Azure Functions and GitHub Actions. They also make it simpler for new C# programmers to get started learning and writing code.
 
 ## Rules for top-level statements.
 
@@ -56,7 +56,7 @@ Top-level statements can reference the args variable, which contains any command
 
 :::code language="csharp" source="snippets/top-level-statements-3/Program.cs":::
 
-You can test this application with multiple arguments by running the following commands:
+You can test this application by running the following command that submits multiple arguments:
 
 ```dotnetcli
 dotnet run <app name> -- Argument1 Argument2
@@ -78,12 +78,12 @@ To return an `int` value when the application ends, use the return statement as 
 
 The compiler generates an implicit `Main` method with a signature that depends on what code is found within the top-level statements.
 
-| Top-level code               | Implicit signature                           |
-|------------------------------|----------------------------------------------|
-| Neither `await` nor `return` | `static void Main(string[] args)`            |
-| `await`                      | `static async Task Main(string[] args)`      |
-| `await` and `return`         | `static async Task<int> Main(string[] args)` |
-| `return`                     | `static int Main(string[] args)`             |
+| Top-level code contains| Implicit `Main` signature                    |
+|------------------------|----------------------------------------------|
+| `await` and `return`   | `static async Task<int> Main(string[] args)` |
+| `await`                | `static async Task Main(string[] args)`      |
+| `return`               | `static int Main(string[] args)`             |
+| No `await` or `return` | `static void Main(string[] args)`            |
 
 ## C# language specification
 

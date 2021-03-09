@@ -53,7 +53,7 @@ The tool prompts for a custom path for the backup, or to use the default, which 
 
 Once the project format has been updated, the next step is to update the TFM of the project.
 
-:::image type="content" source="media/upgrade-assistant-winforms-framework/update-tfm.png" alt-text=".NET Upgrade Assistant convert project to SDK style":::
+:::image type="content" source="media/upgrade-assistant-winforms-framework/update-tfm.png" alt-text=".NET Upgrade Assistant update TFM":::
 
 Next, the tool updates the project's NuGet packages.
 

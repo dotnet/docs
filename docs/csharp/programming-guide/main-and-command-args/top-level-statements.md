@@ -70,7 +70,7 @@ To return an `int` value when the application ends, use the `return` statement a
 
 ## Implicit `Main` method signature
 
-The compiler generates an implicit `Main` method with a signature that depends on what code is found within the top-level statements.
+The compiler generates a method to serve as the program entry point for a project with top-level statements. The name of this method isn't actually `Main`, it's an implementation detail. The signature of the method depends on whether the top-level statements code contains the `await` keyword or the `return` statement. The following table shows what the method signature would be depending on the top-level statements code, using the method name `Main` in the table for convenience.
 
 | Top-level code contains| Implicit `Main` signature                    |
 |------------------------|----------------------------------------------|

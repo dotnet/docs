@@ -29,13 +29,13 @@ The following options control how the compiler reports errors and warnings. The 
 
 ## TreatWarningsAsErrors
 
-The **TreatWarningsAsErrors** option treats all warnings as errors. You can also use the **WarningsAsError** to set only some warnings as errors. If you turn on **TreatWarningsAsErrors**, you can use **WarningsNotAsError** to list warnings that should not be treated as errors.
+The **TreatWarningsAsErrors** option treats all warnings as errors. You can also use the **WarningsAsError** to set only some warnings as errors. If you turn on **TreatWarningsAsErrors**, you can use **WarningsNotAsError** to list warnings that shouldn't be treated as errors.
 
 ```xml
 <TreatWarningsAsErrors></TreatWarningsAsErrors>
 ```
 
-Any messages that would ordinarily be reported as warnings are instead reported as errors, and the build process is halted (no output files are built). By default, **TreatWarningsAsErrors** isn't in effect, which means warnings don't prevent the generation of an output file. Optionally, if you want only a few specific warnings to be treated as errors, you may specify a comma-separated list of warning numbers to treat as errors. The set of all nullability warnings can be specified with the **Nullable** shorthand. Use **WarningLevel** to specify the level of warnings that you want the compiler to display. Use **DisabledWarnings** to disable certain warnings.
+All warning messages are instead reported as errors. The build process halts (no output files are built). By default, **TreatWarningsAsErrors** isn't in effect, which means warnings don't prevent the generation of an output file. Optionally, if you want only a few specific warnings to be treated as errors, you may specify a comma-separated list of warning numbers to treat as errors. The set of all nullability warnings can be specified with the **Nullable** shorthand. Use **WarningLevel** to specify the level of warnings that you want the compiler to display. Use **DisabledWarnings** to disable certain warnings.
 
 ## WarningLevel
 
@@ -45,7 +45,7 @@ The **WarningLevel** option specifies the warning level for the compiler to disp
 <WarningLevel>3</WarningLevel>
 ```
 
-The element value is the warning level you want displayed for the compilation: Lower numbers show only high severity warnings; higher numbers show more warnings. The value must be zero or a positive integer:
+The element value is the warning level you want displayed for the compilation: Lower numbers show only high severity warnings. Higher numbers show more warnings. The value must be zero or a positive integer:
 
 |Warning level|Meaning|
 |-------------------|-------------|
@@ -67,7 +67,7 @@ The **DisabledWarnings** option lets you suppress the compiler from displaying o
 <DisabledWarnings>number2, number2</DisabledWarnings>
 ```
 
-`number1`, `number2` Warning number(s) that you want the compiler to suppress. You should only specify the numeric part of the warning identifier. For example, if you want to suppress *CS0028*, you could specify `<DisabledWarnings>28</DisabledWarnings>`. The compiler will silently ignore warning numbers passed to **DisabledWarnings** that were valid in previous releases, but that have been removed from the compiler. For example, *CS0679* was valid in the compiler in Visual Studio .NET 2002 but was subsequently removed.
+`number1`, `number2` Warning number(s) that you want the compiler to suppress. You specify the numeric part of the warning identifier. For example, if you want to suppress *CS0028*, you could specify `<DisabledWarnings>28</DisabledWarnings>`. The compiler silently ignores warning numbers passed to **DisabledWarnings** that were valid in previous releases, but that have been removed. For example, *CS0679* was valid in the compiler in Visual Studio .NET 2002 but was removed later.
 
  The following warnings cannot be suppressed by the **DisabledWarnings** option:
 
@@ -83,7 +83,7 @@ Specify a ruleset file that configures specific diagnostics.
 <CodeAnalysisRuleSet>MyConfiguration.ruleset</CodeAnalysisRuleSet>
 ```
 
-Where `MyConfiguration.ruleset` is the path to the ruleset file. For more information on using rule sets set the article in the [Visual Studio documentation on Rule sets](visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules).
+Where `MyConfiguration.ruleset` is the path to the ruleset file. For more information on using rule sets, see the article in the [Visual Studio documentation on Rule sets](/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules).
 
 ## ErrorLog
 
@@ -93,7 +93,7 @@ Specify a file to log all compiler and analyzer diagnostics.
 <ErrorLog>MyConfiguration.ruleset</ErrorLog>
 ```
 
-This causes the compiler to output a [Static Analysis Results Interchange Format (SARIF) log](https://github.com/microsoft/sarif-tutorials/blob/main/docs/1-Introduction.md#:~:text=What%20is%20SARIF%3F,for%20use%20by%20simpler%20tools) as a part of the build. SARIF logs are typically read by other tools that analyze the results from compiler and analyzer diagnostics.
+The **ErrorLog** option causes the compiler to output a [Static Analysis Results Interchange Format (SARIF) log](https://github.com/microsoft/sarif-tutorials/blob/main/docs/1-Introduction.md#:~:text=What%20is%20SARIF%3F,for%20use%20by%20simpler%20tools). SARIF logs are typically read by tools that analyze the results from compiler and analyzer diagnostics.
 
 ## ReportAnalyzer
 
@@ -103,4 +103,4 @@ Report additional analyzer information, such as execution time.
 <ReportAnalyzer>true</ReportAnalyzer>
 ```
 
-The **ReportAnalyzer** options causes the compiler to emit extra MSBuild log information that details the performance characteristics of analyzers in the build. It is typically used by analyzer authors as part of validating the analyzer.
+The **ReportAnalyzer** option causes the compiler to emit extra MSBuild log information that details the performance characteristics of analyzers in the build. It's typically used by analyzer authors as part of validating the analyzer.

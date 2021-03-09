@@ -18,18 +18,18 @@ The following options control compiler inputs. The new MSBuild syntax is shown i
 - **CheckForOverflowUnderflow** / `-checked`: Generate overflow checks.
 - **AllowUnsafeBlocks** / `-unsafe` : Allow 'unsafe' code.
 - **DefineConstants** / `-define`: Define conditional compilation symbol(s).
-- **LangVersion** / `-langversion`: Specify language version such as `default` (latest major version), or latest (latest version, including minor versions)
+- **LangVersion** / `-langversion`: Specify language version such as `default` (latest major version), or latest (latest version, including minor versions).
 - **Nullable** / `-nullable`: Enable nullable context, or nullable warnings.
 
 ## CheckForOverflowUnderflow
 
-The **CheckForOverflowUnderflow** option specifies whether an integer arithmetic statement that results in a value that is outside the range of the data type, and that is not in the scope of a [checked](../keywords/checked.md) or [unchecked](../keywords/unchecked.md) keyword, causes a run-time exception.  
+The **CheckForOverflowUnderflow** option specifies whether an integer arithmetic statement that results in a value that is outside the range of the data type, and that isn't in the scope of a [checked](../keywords/checked.md) or [unchecked](../keywords/unchecked.md) keyword, causes a run-time exception.  
 
 ```xml
 <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
 ```
 
-An integer arithmetic statement that is in the scope of a `checked` or `unchecked` keyword is not subject to the effect of the **CheckForOverflowUnderflow** option. If an integer arithmetic statement that is not in the scope of a `checked` or `unchecked` keyword results in a value outside the range of the data type, and **CheckForOverflowUnderflow+** (or **CheckForOverflowUnderflow**) is used in the compilation, that statement causes an exception at run time. If **CheckForOverflowUnderflow-** is used in the compilation, that statement does not cause an exception at run time. The default value for this option is **CheckForOverflowUnderflow-**; overflow checking is disabled.
+An integer arithmetic statement that is in the scope of a `checked` or `unchecked` keyword isn't subject to the effect of the **CheckForOverflowUnderflow** option. If an integer arithmetic statement that isn't in the scope of a `checked` or `unchecked` keyword results in a value outside the range of the data type, and **CheckForOverflowUnderflow** is `true`, that statement causes an exception at run time. If **CheckForOverflowUnderflow** is `false`, that statement doesn't cause an exception at run time. The default value for this option is `false`; overflow checking is disabled.
 
 ## AllowUnsafeBlocks
 
@@ -43,13 +43,13 @@ For more information about unsafe code, see [Unsafe Code and Pointers](../../pro
 
 ## DefineConstants
 
-The **DefineConstants** option defines `name` as a symbol in all source code files your program.
+The **DefineConstants** option defines symbols in all source code files your program.
 
 ```xml
 <DefineConstants>name;name2</DefineConstants>
 ```
 
-`name`, `name2` are the name of one or more symbols that you want to define. The **DefineConstants** option has the same effect as using a [#define](../preprocessor-directives/preprocessor-define.md) preprocessor directive except that the compiler option is in effect for all files in the project. A symbol remains defined in a source file until an [#undef](../preprocessor-directives/preprocessor-undef.md) directive in the source file removes the definition. When you use the -define option, an `#undef` directive in one file has no effect on other source code files in the project. You can use symbols created by this option with [#if](../preprocessor-directives/preprocessor-if.md), [#else](../preprocessor-directives/preprocessor-else.md), [#elif](../preprocessor-directives/preprocessor-elif.md), and [#endif](../preprocessor-directives/preprocessor-endif.md) to compile source files conditionally. The C# compiler itself defines no symbols or macros that you can use in your source code; all symbol definitions must be user-defined.
+`name`, `name2` are the name of one or more symbols that you want to define. The **DefineConstants** option has the same effect as the [#define](../preprocessor-directives/preprocessor-define.md) preprocessor directive except that the compiler option is in effect for all files in the project. A symbol remains defined in a source file until an [#undef](../preprocessor-directives/preprocessor-undef.md) directive in the source file removes the definition. When you use the -define option, an `#undef` directive in one file has no effect on other source code files in the project. You can use symbols created by this option with [#if](../preprocessor-directives/preprocessor-if.md), [#else](../preprocessor-directives/preprocessor-else.md), [#elif](../preprocessor-directives/preprocessor-elif.md), and [#endif](../preprocessor-directives/preprocessor-endif.md) to compile source files conditionally. The C# compiler itself defines no symbols or macros that you can use in your source code; all symbol definitions must be user-defined.
 
 > [!NOTE]
 > The C# `#define` does not allow a symbol to be given a value, as in languages such as C++. For example, `#define` cannot be used to create a macro or to define a constant. If you need to define a constant, use an `enum` variable. If you want to create a C++ style macro, consider alternatives such as generics. Since macros are notoriously error-prone, C# disallows their use but provides safer alternatives.
@@ -68,9 +68,9 @@ The following values are valid:
 
 The default language version depends on the target framework for your application and the version of the SDK or Visual Studio installed. Those rules are defined in the [configuring the language version](../configure-language-version.md#defaults) article.
 
-Metadata referenced by your C# application is not subject to **LangVersion** compiler option. Because each version of the C# compiler contains extensions to the language specification, **LangVersion** does not give you the equivalent functionality of an earlier version of the compiler.
+Metadata referenced by your C# application isn't subject to **LangVersion** compiler option. Because each version of the C# compiler contains extensions to the language specification, **LangVersion** doesn't give you the equivalent functionality of an earlier version of the compiler.
 
-Additionally, while C# version updates generally coincide with major .NET Framework releases, the new syntax and features are not necessarily tied to that specific framework version. While the new features definitely require a new compiler update that is also released alongside the C# revision, each specific feature has its own minimum .NET API or common language runtime requirements that may allow it to run on downlevel frameworks by including NuGet packages or other libraries.
+Additionally, while C# version updates generally coincide with major .NET Framework releases, the new syntax and features aren't necessarily tied to that specific framework version. While the new features definitely require a new compiler update that is also released alongside the C# revision, each specific feature has its own minimum .NET API or common language runtime requirements that may allow it to run on downlevel frameworks by including NuGet packages or other libraries.
 
 Regardless of which **LangVersion** setting you use, use the current version of the common language runtime to create your .exe or .dll. One exception is friend assemblies and [-moduleassemblyname (C# Compiler Option)](./moduleassemblyname-compiler-option.md), which work under **-langversion:ISO-1**.
 

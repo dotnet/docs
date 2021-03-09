@@ -18,23 +18,21 @@ The following options control compiler optimizations for size and speed. The new
 - **OutputAssembly** / `-out`: Specify the output assembly file.
 - **ProduceReferenceAssembly** / `-refout`: Generate a reference assembly.
 - **TargetType** `-target`: Specify the type of the output assembly.
-- **Doc** / `-doc`: Generate XML doc file from `///` comments
+- **Doc** / `-doc`: Generate XML doc file from `///` comments.
 - **PlatformTarget** / `-platform`: Specify the target platform CPU.
 
 ## DocumentationFile
 
-The **-doc** option allows you to place documentation comments in an XML file. To learn more about documenting your code, see the article on [Recommended Tags for Documentation Comments](../../programming-guide/xmldoc/recommended-tags-for-documentation-comments.md). The value specifies the path to the output XML file. The XML file contains the comments in the source code files of the compilation.
+The **DocumentationFile** option allows you to place documentation comments in an XML file. To learn more about documenting your code, see the article on [Recommended Tags for Documentation Comments](../../programming-guide/xmldoc/recommended-tags-for-documentation-comments.md). The value specifies the path to the output XML file. The XML file contains the comments in the source code files of the compilation.
 
 ```xml
 <DocumentationFile>path/to/file.xml</DocumentationFile>
 ```
 
-The source code file that contains Main is output first into the XML. You'll often want to use the generated .xml file with [IntelliSense](/visualstudio/ide/using-intellisense). The .xml filename must be the same as the assembly name. The .xml file must be in the same directory as the assembly. When the assembly is referenced in a Visual Studio project, the .xml file is found as well. For more information about generating code comments, see [Supplying Code Comments](/visualstudio/ide/reference/generate-xml-documentation-comments). Unless you compile with [`<TargetType:Module>`](#targettype), `file` will contain `<assembly>` and `</assembly>` tags specifying the name of the file containing the assembly manifest for the output file.
+The source code file that contains Main is output first into the XML. You'll often want to use the generated .xml file with [IntelliSense](/visualstudio/ide/using-intellisense). The *.xml* filename must be the same as the assembly name. The *.xml* file must be in the same directory as the assembly. When the assembly is referenced in a Visual Studio project, the *.xml* file is found as well. For more information about generating code comments, see [Supplying Code Comments](/visualstudio/ide/reference/generate-xml-documentation-comments). Unless you compile with [`<TargetType:Module>`](#targettype), `file` will contain `<assembly>` and `</assembly>` tags specifying the name of the file containing the assembly manifest for the output file.
 
 > [!NOTE]
-> The -doc option applies to all files in the project. To disable warnings related to documentation comments for a specific file or section of code, use [#pragma warning](../preprocessor-directives/preprocessor-pragma-warning.md).
-
-You set the **Optimize** option from **Build** properties page for your project in Visual Studio.
+> The **DocumentationFile** option applies to all files in the project. To disable warnings related to documentation comments for a specific file or section of code, use [#pragma warning](../preprocessor-directives/preprocessor-pragma-warning.md).
 
 ## OutputAssembly
 
@@ -44,9 +42,9 @@ The **OutputAssembly** option specifies the name of the output file. The output 
 <OutputAssembly>folder</OutputAssembly>
 ```
 
-Specify the full name and extension of the file you want to create. If you don't specify the name of the output file:
+Specify the full name and extension of the file you want to create. If you don't specify the name of the output file, MSBuild uses the name of the project to specify the name of the output assembly. Old style projects use the following rules:
 
-- An .exe will take its name from the source code file that contains the **Main** method.  
+- An .exe will take its name from the source code file that contains the `Main` method.  
 - A .dll or .netmodule will take its name from the first source code file.
 
 Any modules produced as part of a compilation become files associated with any assembly also produced in the compilation. Use [ildasm.exe](../../../framework/tools/ildasm-exe-il-disassembler.md) to view the assembly manifest to see the associated files.
@@ -82,13 +80,13 @@ You set the **PlatformTarget** option from **Build** properties page for your pr
 
 ## ProduceReferenceAssembly
 
-The **ProduceReferenceAssembly** option specifies a file path where the reference assembly should be output. It translates to `metadataPeStream` in the Emit API. This option corresponds to the [ProduceReferenceAssembly](/visualstudio/msbuild/common-msbuild-project-properties) project property of MSBuild.  The `filepath` specifies the path for the reference assembly. It should generally match that of the primary assembly. The recommended convention (used by MSBuild) is to place the reference assembly in a "ref/" subfolder relative to the primary assembly.
+The **ProduceReferenceAssembly** option specifies a file path where the reference assembly should be output. It translates to `metadataPeStream` in the Emit API. The `filepath` specifies the path for the reference assembly. It should generally match that of the primary assembly. The recommended convention (used by MSBuild) is to place the reference assembly in a "ref/" subfolder relative to the primary assembly.
 
 ```xml
 <ProduceReferenceAssembly>filepath</ProduceReferenceAssembly>
 ```
 
-Reference assemblies are a special type of assembly that contain only the minimum amount of metadata required to represent the library's public API surface. They include declarations for all members that are significant when referencing an assembly in build tools, but exclude all member implementations and declarations of private members that have no observable impact on their API contract. For more information, see [Reference assemblies](../../../standard/assembly/reference-assemblies.md) in .NET Guide.
+Reference assemblies are a special type of assembly that contains only the minimum amount of metadata required to represent the library's public API surface. They include declarations for all members that are significant when referencing an assembly in build tools. Reference assemblies exclude all member implementations and declarations of private members. Those members have no observable impact on their API contract. For more information, see [Reference assemblies](../../../standard/assembly/reference-assemblies.md) in the .NET Guide.
 
 The **ProduceReferenceAssembly** and **ProduceOnlyReferenceAssembly** options are mutually exclusive.
 
@@ -112,15 +110,15 @@ The **TargetType** compiler option can be specified in one of the following form
 
 The compiler creates only one assembly manifest per compilation. Information about all files in a compilation is placed in the assembly manifest. When producing multiple output files at the command line, only one assembly manifest can be created and it must go into the first output file specified on the command line.
 
-If you create an assembly, you can indicate that all or part of your code is CLS compliant with the <xref:System.CLSCompliantAttribute> attribute.
+If you create an assembly, you can indicate that all or part of your code is CLS-compliant with the <xref:System.CLSCompliantAttribute> attribute.
 
 ### library
 
-The **library** option causes the compiler to create a dynamic-link library (DLL) rather than an executable file (EXE). The DLL will be created with the .dll extension. Unless otherwise specified with the [-out](./out-compiler-option.md) option, the output file name takes the name of the first input file. When building a .dll file, a [Main](../../programming-guide/main-and-command-args/index.md) method isn't required.
+The **library** option causes the compiler to create a dynamic-link library (DLL) rather than an executable file (EXE). The DLL will be created with the *.dll* extension. Unless otherwise specified with the [-out](./out-compiler-option.md) option, the output file name takes the name of the first input file. When building a *.dll* file, a [`Main`](../../programming-guide/main-and-command-args/index.md) method isn't required.
 
 ### exe
 
-The **exe** option causes the compiler to create an executable (EXE), console application. The executable file will be created with the .exe extension. Use **winexe** to create a Windows program executable. Unless otherwise specified with the **OutputAssembly** option, the output file name takes the name of the input file that contains the [Main](../../programming-guide/main-and-command-args/index.md) method. One and only one **Main** method is required in the source code files that are compiled into an .exe file. The [-main](./main-compiler-option.md) compiler option lets you specify which class contains the **Main** method, in cases where your code has more than one class with a **Main** method.  
+The **exe** option causes the compiler to create an executable (EXE), console application. The executable file will be created with the .exe extension. Use **winexe** to create a Windows program executable. Unless otherwise specified with the **OutputAssembly** option, the output file name takes the name of the input file that contains the [Main](../../programming-guide/main-and-command-args/index.md) method. One and only one **Main** method is required in the source code files that are compiled into an .exe file. The [-main](./main-compiler-option.md) compiler option lets you specify which class contains the `Main` method, in cases where your code has more than one class with a `Main` method.  
 
 ### module
 
@@ -132,9 +130,9 @@ The **winexe** option causes the compiler to create an executable (EXE), Windows
 
 ### winmdobj
 
-If you use the **winmdobj** compiler option, the compiler creates an intermediate .winmdobj file that you can convert to a Windows Runtime binary (*.winmd*) file. The *.winmd* file can then be consumed by JavaScript and C++ programs, in addition to managed language programs.
+If you use the **winmdobj** compiler option, the compiler creates an intermediate *.winmdobj* file that you can convert to a Windows Runtime binary (*.winmd*) file. The *.winmd* file can then be consumed by JavaScript and C++ programs, in addition to managed language programs.
 
-The **winmdobj** setting signals to the compiler that an intermediate module is required. In response, Visual Studio compiles the C# class library as a *.winmdobj* file. The .winmdobj file can then be fed through the <xref:Microsoft.Build.Tasks.WinMDExp> export tool to produce a Windows metadata (*.winmd*) file. The *.winmd* file contains both the code from the original library and the WinMD metadata that is used by JavaScript or C++ and by the Windows Runtime. The output of a file that’s compiled by using the **winmdobj** compiler option is used only as input for the WimMDExp export tool; the *.winmdobj* file itself isn’t referenced directly. Unless you use the **OutputAssembly** option, the output file name takes the name of the first input file. A [Main](../../programming-guide/main-and-command-args/index.md) method isn’t required.
+The **winmdobj** setting signals to the compiler that an intermediate module is required. The *.winmdobj* file can then be fed through the <xref:Microsoft.Build.Tasks.WinMDExp> export tool to produce a Windows metadata (*.winmd*) file. The *.winmd* file contains both the code from the original library and the WinMD metadata that is used by JavaScript or C++ and by the Windows Runtime. The output of a file that’s compiled by using the **winmdobj** compiler option is used only as input for the WimMDExp export tool. The *.winmdobj* file itself isn’t referenced directly. Unless you use the **OutputAssembly** option, the output file name takes the name of the first input file. A [Main](../../programming-guide/main-and-command-args/index.md) method isn’t required.
 
 ### appcontainerexe
 

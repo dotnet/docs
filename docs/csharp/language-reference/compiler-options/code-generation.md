@@ -14,25 +14,25 @@ helpviewer_keywords:
 
 The following options control compiler inputs. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
 
-- **DebugType** / `-debug`: Emit (or do not Emit) debugging information.
+- **DebugType** / `-debug`: Emit (or don't Emit) debugging information.
 - **Optimize** / `-optimize`: Enable optimizations.
 - **Deterministic** / `-deterministic`: Produce byte-for-byte equivalent output from the same input source.
 - **ProduceOnlyReferenceAssembly** / `-refonly`: Produce a reference assembly, instead of a full assembly, as the primary output.
 
 ## DebugType
 
-The **DebugType** option causes the compiler to generate debugging information and place it in the output file or files. This may be affected by the selected build configuration: *Debug* or *Release*.
+The **DebugType** option causes the compiler to generate debugging information and place it in the output file or files. Debugging information may be affected by the selected build configuration: *Debug* or *Release*.
 
 ```xml
 <DebugType>Full</DebugType>
 ```
 
-The value of this element can be either `full` or `pdbonly`. The *full* argument, which is in effect if you do not specify *pdbonly*, enables attaching a debugger to the running program. Specifying *pdbonly* allows source code debugging when the program is started in the debugger but will only display assembler when the running program is attached to the debugger. Use this option to create debug builds. If **-debug**, **-debug+**, or **-debug:full** is not specified, you will not be able to debug the output file of your program. If you use *full*, be aware that there is some impact on the speed and size of JIT optimized code and a small impact on code quality with *full*. We recommend *pdbonly* or no PDB for generating release code.
+The value of this element can be either `full` or `pdbonly`. The *full* argument, which is in effect if you don't specify *pdbonly*, enables attaching a debugger to the running program. Specifying *pdbonly* allows source code debugging when the program is started in the debugger but will only display assembler when the running program is attached to the debugger. Use this option to create debug builds. If **-debug**, **-debug+**, or **-debug:full** isn't specified, you can't debug the output file of your program. If you use *full*, be aware that there's some impact on the speed and size of JIT optimized code and a small impact on code quality with *full*. We recommend *pdbonly* or no PDB for generating release code.
 
 > [!NOTE]
 > One difference between *pdbonly* and *full* is that with *full* the compiler emits a <xref:System.Diagnostics.DebuggableAttribute>, which is used to tell the JIT compiler that debug information is available. Therefore, you will get an error if your code contains the <xref:System.Diagnostics.DebuggableAttribute> set to false if you use *full*.
 
-For more information on how to configure the debug performance of an application, see [Making an Image Easier to Debug](../../../framework/debug-trace-profile/making-an-image-easier-to-debug.md). To change the location of the .pdb file, see [**PdbFile**](./advanced.md#pdbfile).
+For more information on how to configure the debug performance of an application, see [Making an Image Easier to Debug](../../../framework/debug-trace-profile/making-an-image-easier-to-debug.md). To change the location of the *.pdb* file, see [**PdbFile**](./advanced.md#pdbfile).
 
 ## Optimize
 
@@ -76,7 +76,7 @@ By default, compiler output from a given set of inputs is unique, since the comp
 - The Common Language Runtime (CLR) platform on which the compiler is run.
 - The value of `%LIBPATH%`, which can affect analyzer dependency loading.
 
-Deterministic compilation can be used for establishing whether a binary is compiled from a trusted source. This can be useful when the source is publicly available. It can also determine whether build steps that are dependent on changes to binary used in the build process.
+Deterministic compilation can be used for establishing whether a binary is compiled from a trusted source. Deterministic output can be useful when the source is publicly available. It can also determine whether build steps that are dependent on changes to binary used in the build process.
 
 ## ProduceOnlyReferenceAssembly
 

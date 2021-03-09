@@ -29,22 +29,22 @@ helpviewer_keywords:
 The following options support advanced scenarios. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
 
 - **BaseAddress** / `-baseaddress`: Specify the base address for the library to be built.
-- **ChecksumAlgorithm** / `-checksumalgorithm` : Specify algorithm for calculating source file checksum stored in PDB. Supported values are: `SHA1` (default) or `SHA256`.
-- **CodePage** / `-codepage`: Reference metadata from the specified assembly file or files.
-- **Utf8Output** / `-utf8output`: Include all files in the current directory and subdirectories according to the wildcard specifications
-- **MainEntryPoint**, **StartupObject** / `-main`: Embed metadata from the specified interop assembly files.
-- **GenerateFullPaths** / `-fullpath`: Run the analyzers from the specified assembly.
-- **FileAlignment** / `-filealign`: Add additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings.
-- **PathMap** / `-pathmap`: Specify a mapping for source path names output by the compiler. Two consecutive separator characters are treated as a single character that is part of the key or value (i.e. `==` stands for `=` and `,,` for `,`).
-- **PdbFile** / `-pdb`: Specify debug information file name (default: output file name with .pdb extension).
+- **ChecksumAlgorithm** / `-checksumalgorithm` : Specify algorithm for calculating source file checksum stored in PDB.
+- **CodePage** / `-codepage`: Specify the codepage to use when opening source files.
+- **Utf8Output** / `-utf8output`: Output compiler messages in UTF-8 encoding.
+- **MainEntryPoint**, **StartupObject** / `-main`: Specify the type that contains the entry point.
+- **GenerateFullPaths** / `-fullpath`: Compiler generates fully qualified paths.
+- **FileAlignment** / `-filealign`: Specify the alignment used for output file sections.
+- **PathMap** / `-pathmap`: Specify a mapping for source path names output by the compiler.
+- **PdbFile** / `-pdb`: Specify debug information file name.
 - **ErrorEndLocation** / `-errorendlocation`: Output line and column of the end location of each error.
 - **PreferredUILang** / `-preferreduilang`: Specify the preferred output language name.
-- **NoStandardLib** / `-nostdlib`: Do not reference standard library *mscorlib.dll*.
+- **NoStandardLib** / `-nostdlib`: Don't reference standard library *mscorlib.dll*.
 - **SubsystemVersion** / `-subsystemversion`: Specify subsystem version of this assembly.
 - **AdditionalLibPaths** / `-lib`: Specify additional directories to search in for references.
-- **ErrorReport** / `-errorreport`: Specify how to handle internal compiler errors: `prompt`, `send`, `queue`, or `none`. The default is `queue`.
+- **ErrorReport** / `-errorreport`: Specify how to handle internal compiler errors.
 - **ApplicationConfiguration** / `-appconfig`: Specify an application configuration file containing assembly binding settings.
-- **ModuleAssemblyName** / `-moduleassemblyname`: Name of the assembly which this module will be a part of.
+- **ModuleAssemblyName** / `-moduleassemblyname`: Name of the assembly that this module will be a part of.
 
 ## BaseAddress
 
@@ -54,27 +54,27 @@ The **BaseAddress** option lets you specify the preferred base address at which 
 <BaseAddress>address</BaseAddress>
 ```
 
-Where `address` is the base address for the DLL. This address can be specified as a decimal, hexadecimal, or octal number. The default base address for a DLL is set by the .NET common language runtime. Be aware that the lower-order word in this address will be rounded. For example, if you specify `0x11110001`, it will be rounded to `0x11110000`. To complete the signing process for a DLL, use SN.EXE with the -R option.
+Where `address` is the base address for the DLL. This address can be specified as a decimal, hexadecimal, or octal number. The default base address for a DLL is set by the .NET common language runtime. The lower-order word in this address will be rounded. For example, if you specify `0x11110001`, it will be rounded to `0x11110000`. To complete the signing process for a DLL, use SN.EXE with the -R option.
 
 ## ChecksumAlgorithm
 
-This controls the checksum algorithm we use to encode source files in the PDB.
+This option controls the checksum algorithm we use to encode source files in the PDB.
 
 ```xml
 <ChecksumAlgorithm>algorithm</ChecksumAlgorithm>
 ```
 
-The `algorithm` must be either `SHA1` (default) or `SHA256`. 
+The `algorithm` must be either `SHA1` (default) or `SHA256`.
 
 ## CodePage
 
-This option specifies which codepage to use during compilation if the required page is not the current default codepage for the system.
+This option specifies which codepage to use during compilation if the required page isn't the current default codepage for the system.
   
 ```xml
 <CodePage>id</CodePage>
 ```
 
-Where `id` is the id of the code page to use for all source code files in the compilation. The compiler will first attempt to interpret all source files as UTF-8. If your source code files are in an encoding other than UTF-8 and use characters other than 7-bit ASCII characters, use the **CodePage** option to specify which code page should be used. **-codepage** applies to all source code files in your compilation. See [GetCPInfo](/windows/desktop/api/winnls/nf-winnls-getcpinfo) for information on how to find which code pages are supported on your system.
+Where `id` is the id of the code page to use for all source code files in the compilation. The compiler will first attempt to interpret all source files as UTF-8. If your source code files are in an encoding other than UTF-8 and use characters other than 7-bit ASCII characters, use the **CodePage** option to specify which code page should be used. **CodePage** applies to all source code files in your compilation. See [GetCPInfo](/windows/desktop/api/winnls/nf-winnls-getcpinfo) for information on how to find which code pages are supported on your system.
 
 ## Utf8Output
 
@@ -84,7 +84,7 @@ The **Utf8Output** option displays compiler output using UTF-8 encoding.
 <Utf8Output>true</Utf8Output>
 ```
 
-In some international configurations, compiler output cannot correctly be displayed in the console. In these configurations, use **Utf8Output** and redirect compiler output to a file.
+In some international configurations, compiler output cannot correctly be displayed in the console. Use **Utf8Output** and redirect compiler output to a file.
 
 ## MainEntryPoint or StartupObject
 
@@ -100,7 +100,7 @@ or
 <MainEntryPoint>MyNamespace.Program</MainEntryPoint>
 ```
 
-Where `Program` is the type that contains the `Main` method. The provided class name must be fully qualified; it must include the full namespace containing the class, followed by the class name. For example, when the `Main` method is located inside the `Program` class in the `MyApplication.Core` namespace, the compiler option has to be `-main:MyApplication.Core.Program`. If your compilation includes more than one type with a [Main](../../programming-guide/main-and-command-args/index.md) method, you can specify which type contains the **Main** method that you want to use as the entry point into the program.
+Where `Program` is the type that contains the `Main` method. The provided class name must be fully qualified; it must include the full namespace containing the class, followed by the class name. For example, when the `Main` method is located inside the `Program` class in the `MyApplication.Core` namespace, the compiler option has to be `-main:MyApplication.Core.Program`. If your compilation includes more than one type with a [Main](../../programming-guide/main-and-command-args/index.md) method, you can specify which type contains the **Main** method.
 
 ## GenerateFullPaths
 
@@ -120,7 +120,7 @@ The **FileAlignment** option lets you specify the size of sections in your outpu
 <FileAlignment>number</FileAlignment>
 ```
 
-You set the **FileAlignment** option from the **Advanced** page of the **Build** properties for your project in Visual Studio. Each section will be aligned on a boundary that is a multiple of the **FileAlignment** value. There's no fixed default. If **FileAlignment** is not specified, the common language runtime picks a default at compile time. By specifying the section size, you affect the size of the output file. Modifying section size may be useful for programs that will run on smaller devices. Use [DUMPBIN](/cpp/build/reference/dumpbin-options) to see information about sections in your output file.
+You set the **FileAlignment** option from the **Advanced** page of the **Build** properties for your project in Visual Studio. Each section will be aligned on a boundary that is a multiple of the **FileAlignment** value. There's no fixed default. If **FileAlignment** isn't specified, the common language runtime picks a default at compile time. By specifying the section size, you affect the size of the output file. Modifying section size may be useful for programs that will run on smaller devices. Use [DUMPBIN](/cpp/build/reference/dumpbin-options) to see information about sections in your output file.
 
 ## PathMap
 
@@ -164,7 +164,7 @@ By using the **PreferredUILang** compiler option, you can specify the language i
 <PreferredUILang>language</PreferredUILang>
 ```
 
-Where `language` is the [language name](/windows/desktop/Intl/language-names) of the language to use for compiler output. You can use the **PreferredUILang** compiler option to specify the language that you want the C# compiler to use for error messages and other command-line output. If the language pack for the language is not installed, the language setting of the operating system is used instead, and no error is reported.
+Where `language` is the [language name](/windows/desktop/Intl/language-names) of the language to use for compiler output. You can use the **PreferredUILang** compiler option to specify the language that you want the C# compiler to use for error messages and other command-line output. If the language pack for the language isn't installed, the language setting of the operating system is used instead.
 
 ## NoStandardLib
 
@@ -176,11 +176,11 @@ Where `language` is the [language name](/windows/desktop/Intl/language-names) of
 <NoStandardLib>true</NoStandardLib>
 ```
 
-Use this option if you want to define or create your own System namespace and objects. If you do not specify **NoStandardLib**, mscorlib.dll is imported into your program (same as specifying `<NoStandardLib>false</NoStandardLib>`).
+Use this option if you want to define or create your own System namespace and objects. If you don't specify **NoStandardLib**, mscorlib.dll is imported into your program (same as specifying `<NoStandardLib>false</NoStandardLib>`).
 
 ## SubsystemVersion
 
-Specifies the minimum version of the subsystem on which the generated executable file can run, thereby determining the versions of Windows on which the executable file can run. Most commonly, this option ensures that the executable file can leverage particular security features that aren’t available with older versions of Windows.
+Specifies the minimum version of the subsystem on which the executable file runs. Most commonly, this option ensures that the executable file can use security features that aren’t available with older versions of Windows.
 
 > [!NOTE]
 > To specify the subsystem itself, use the [-target](./target-compiler-option.md) compiler option.
@@ -189,7 +189,7 @@ Specifies the minimum version of the subsystem on which the generated executable
 <SubsystemVersion>major.minor</SubsystemVersion>
 ```
 
-The `major.minor` specify the minimum required version of the subsystem, as expressed in a dot notation for major and minor versions. For example, you can specify that an application can't run on an operating system that's older than Windows 7 if you set the value of this option to 6.01, as the table later in this topic describes. You must specify the values for `major` and `minor` as integers. Leading zeroes in the `minor` version don't change the version, but trailing zeroes do. For example, 6.1 and 6.01 refer to the same version, but 6.10 refers to a different version. We recommend expressing the minor version as two digits to avoid confusion.
+The `major.minor` specify the minimum required version of the subsystem, as expressed in a dot notation for major and minor versions. For example, you can specify that an application can't run on an operating system that's older than Windows 7. Set the value of this option to 6.01, as the table later in this article describes. You specify the values for `major` and `minor` as integers. Leading zeroes in the `minor` version don't change the version, but trailing zeroes do. For example, 6.1 and 6.01 refer to the same version, but 6.10 refers to a different version. We recommend expressing the minor version as two digits to avoid confusion.
 
 The following table lists common subsystem versions of Windows.
 
@@ -210,24 +210,24 @@ The default value of the **SubsystemVersion** compiler option depends on the con
   - [-target:winmdobj](./target-winmdobj-compiler-option.md)
   - [-platform:arm](./platform-compiler-option.md)
 - The default value is 6.00 if you're using MSBuild, you're targeting .NET Framework 4.5, and you haven't set any of the compiler options that were specified earlier in this list.
-- The default value is 4.00 if none of the previous conditions is true.
+- The default value is 4.00 if none of the previous conditions are true.
 
 ## AdditionalLibPaths
 
-The **AdditionalLibPaths** option specifies the location of assemblies referenced by means of the [-reference (C# Compiler Options)](./reference-compiler-option.md) option.
+The **AdditionalLibPaths** option specifies the location of assemblies referenced with the [-reference (C# Compiler Options)](./reference-compiler-option.md) option.
 
 ```xml
 <AdditionalLibPaths>dir1[,dir2]</AdditionalLibPaths>
 ```
 
-Where `dir1` is a directory for the compiler to look in if a referenced assembly is not found in the current working directory (the directory from which you are invoking the compiler) or in the common language runtime's system directory. `dir2` is one or more additional directories to search in for assembly references. Separate additional directory names with a comma, and without white space between them. The compiler searches for assembly references that are not fully qualified in the following order:  
+Where `dir1` is a directory for the compiler to look in if a referenced assembly isn't found in the current working directory (the directory from which you're invoking the compiler) or in the common language runtime's system directory. `dir2` is one or more additional directories to search in for assembly references. Separate directory names with a comma, and without white space between them. The compiler searches for assembly references that aren't fully qualified in the following order:  
 
-1. Current working directory. This is the directory from which the compiler is invoked.
+1. Current working directory.
 1. The common language runtime system directory.
 1. Directories specified by **AdditionalLibPaths**.
 1. Directories specified by the LIB environment variable.
 
-Use **Reference** to specify an assembly reference. **AdditionalLibPaths** is additive; specifying it more than once appends to any prior values. An alternative to using **AdditionalLibPaths** is to copy into the working directory any required assemblies; this will allow you to simply pass the assembly name to **Reference**. You can then delete the assemblies from the working directory. Since the path to the dependent assembly is not specified in the assembly manifest, the application can be started on the target computer and will find and use the assembly in the global assembly cache. Because the compiler can reference the assembly does not imply the common language runtime will be able to find and load the assembly at runtime. See [How the Runtime Locates Assemblies](../../../framework/deployment/how-the-runtime-locates-assemblies.md) for details on how the runtime searches for referenced assemblies.  
+Use **Reference** to specify an assembly reference. **AdditionalLibPaths** is additive. Specifying it more than once appends to any prior values. Since the path to the dependent assembly isn't specified in the assembly manifest, the application will find and use the assembly in the global assembly cache. The compiler referencing the assembly doesn't imply the common language runtime can find and load the assembly at runtime. See [How the Runtime Locates Assemblies](../../../framework/deployment/how-the-runtime-locates-assemblies.md) for details on how the runtime searches for referenced assemblies.  
 
 ## ErrorReport
 
@@ -242,14 +242,14 @@ This option provides a convenient way to report a C# internal compiler error to 
 
 The argument must be one of:
 
-- **none**: Reports about internal compiler errors will not be collected or sent to Microsoft.
+- **none**: Reports about internal compiler errors won't be collected or sent to Microsoft.
 - **prompt**: Prompts you to send a report when you receive an internal compiler error. **prompt** is the default when you compile an application in the development environment.
-- **queue**: Queues the error report. When you log on with administrative credentials, you can report any failures since the last time that you were logged on. You will not be prompted to send reports for failures more than once every three days. **queue** is the default when you compile an application at the command line.
+- **queue**: Queues the error report. When you sign in with administrative credentials, you can report any failures since the last time that you were logged on. You won't be prompted to send reports for failures more than once every three days. **queue** is the default when you compile an application at the command line.
 - **send**: Automatically sends reports of internal compiler errors to Microsoft. To enable this option, you must first agree to the Microsoft data collection policy. The first time that you specify `<ErrorReport>send</ErrorReport>` on a computer, a compiler message will refer you to a Web site that contains the Microsoft data collection policy.
 
-An internal compiler error (ICE) results when the compiler cannot process a source code file. When an ICE occurs, the compiler does not produce an output file or any useful diagnostic that you can use to fix your code.
+An internal compiler error (ICE) results when the compiler can't process a source code file. When an ICE occurs, the compiler doesn't produce an output file or any useful diagnostic that you can use to fix your code.
 
-In previous releases, when you received an ICE, you were encouraged to contact Microsoft Product Support Services to report the problem. By using **ErrorReport**, you can provide ICE information to the Visual C# team. Your error reports can help improve future compiler releases. A user's ability to send reports depends on computer and user policy permissions.
+By using **ErrorReport**, you can provide ICE information to the C# team. Your error reports can help improve future compiler releases. A user's ability to send reports depends on computer and user policy permissions.
 
 ## ApplicationConfiguration
 
@@ -295,6 +295,6 @@ Specifies an assembly whose non-public types a *.netmodule* can access. The `ass
 
 - The *.netmodule* needs access to non-public types in an existing assembly.
 - You know the name of the assembly into which the .netmodule will be built.
-- The existing assembly has granted friend assembly access to the assembly into which the .netmodule will be built.
+- The existing assembly has granted friend assembly access to the assembly into which the .*netmodule* will be built.
 
 For more information on building a .netmodule, see [-target:module (C# Compiler Options)](./target-module-compiler-option.md). For more information on friend assemblies, see [Friend Assemblies](../../../standard/assembly/friend.md).

@@ -122,7 +122,6 @@ The highlighted lines in the following code show what it means to have "stacked 
 
 :::code language="csharp" id="dontdothis" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs" highlight="9-10":::
 
-
 > [!TIP]
 > Avoid this pattern as it could lead to unexpected behavior.
 

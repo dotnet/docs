@@ -57,11 +57,9 @@
     {
       "path_to_root": "_vblang",
       "url": "https://github.com/dotnet/vblang",
-      "branch": "master",
+      "branch": "main",
       "include_in_build": true,
-      "branch_mapping": {
-        "main": "master"
-      }
+      "branch_mapping": {}
     },
     {
       "path_to_root": "machinelearning-samples",

@@ -1,43 +1,89 @@
 ---
 title: "Top-level statements - C# Programming Guide"
 description: Learn about top-level statements in C# 9 and later.
-ms.date: 03/04/2021
+ms.date: 03/08/2021
 helpviewer_keywords:
   - "C# language, top-level statements"
   - "C# language, Main method"
 ---
 # Top-level statements (C# Programming Guide)
 
-The `Main` method is the entry point of a C# application. (Libraries and services do not require a `Main` method as an entry point.) When the application is started, the `Main` method is the first method that is invoked.
+Starting in C# 9, you don't have to explicitly include a `Main` method in a console application project. Instead, you can use the *top-level statements* feature to minimize the code you have to write. In this case, the compiler provides an implicit class and `Main` method entry point for the application.
 
-There can only be one entry point in a C# program. If you have more than one class that has a `Main` method, you must compile your program with the `-main` compiler option to specify which `Main` method to use as the entry point. For more information, see [-main (C# Compiler Options)](../../language-reference/compiler-options/main-compiler-option.md).
+Here's a *Program.cs* file that is a complete C# program in C# 9:
 
-[!code-csharp[csProgGuideMain#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class1.cs#17)]
+:::code language="csharp" source="snippets/top-level-statements-1/Program.cs":::
 
-## Overview
+Top-level statements simplify the code that you write for small utilities such as Azure Functions and GitHub Actions. They also make it simpler for new C# programmers to get started learning and writing code.
 
-- The `Main` method is the entry point of an executable program; it is where the program control starts and ends.
-- `Main` is declared inside a class or struct. `Main` must be [static](../../language-reference/keywords/static.md) and it need not be [public](../../language-reference/keywords/public.md). (In the earlier example, it receives the default access of [private](../../language-reference/keywords/private.md).) The enclosing class or struct is not required to be static.
-- `Main` can either have a `void`, `int`, or, starting with C# 7.1, `Task`, or `Task<int>` return type.
-- If and only if `Main` returns a `Task` or `Task<int>`, the declaration of `Main` may include the [`async`](../../language-reference/keywords/async.md) modifier. Note that this specifically excludes an `async void Main` method.
-- The `Main` method can be declared with or without a `string[]` parameter that contains command-line arguments. When using Visual Studio to create Windows applications, you can add the parameter manually or else use the <xref:System.Environment.GetCommandLineArgs> method to obtain the [command-line arguments](command-line-arguments.md). Parameters are read as zero-indexed command-line arguments. Unlike C and C++, the name of the program is not treated as the first command-line argument in the `args` array, but it is the first element of the <xref:System.Environment.GetCommandLineArgs> method.
+## Rules for top-level statements.
 
-The following is a list of valid `Main` signatures:
+The following sections explain the rules on what you can and can't do with top-level statements.
 
-```csharp
-public static void Main() { }
-public static int Main() { }
-public static void Main(string[] args) { }
-public static int Main(string[] args) { }
-public static async Task Main() { }
-public static async Task<int> Main() { }
-public static async Task Main(string[] args) { }
-public static async Task<int> Main(string[] args) { }
+### Only one file can have top-level statements
+
+An application must have only one entry point, so it can only have one file with top-level statements. Putting top-level statements in more than one file in a project results in the following compiler error:
+
+> CS8802 Only one compilation unit can have top-level statements.
+
+### No other entry points
+
+You can write a `Main` method explicitly, but it can't function as an entry point. The compiler issues the following warning:
+
+> CS7022 The entry point of the program is global code; ignoring 'Main()' entry point.
+
+In a project with top-level statements, you can't use the [-main](../../language-reference/compiler-options/main-compiler-option.md) compiler option to select the application's entry point.
+
+### `Using` directives are allowed
+
+If you include using directives, they must come first in the file, as in this example:
+
+:::code language="csharp" source="snippets/top-level-statements-1/Program.cs":::
+
+### Global namespace
+
+Top-level statements are implicitly in the global namespace. A class and a `Main` method are implicitly generated, but there is no implicitly generated namespace.
+
+### Namespaces and type definitions are allowed
+
+A file with top-level statements can also contain namespaces and type definitions, but they must come after the top-level statements. Here's an example:
+
+:::code language="csharp" source="snippets/top-level-statements-2/Program.cs":::
+
+### `args` is available.
+
+Top-level statements can reference the args variable, which contains any command-line arguments that were entered. The args variable is never null but has `Length` 0 if no command-line arguments were provided.
+
+:::code language="csharp" source="snippets/top-level-statements-3/Program.cs":::
+
+You can test this application with multiple arguments by running the following commands:
+
+```dotnetcli
+dotnet run <app name> -- Argument1 Argument2
 ```
 
-The preceding examples all use the public accessor modifier. That is typical, but not required.
+### `await` is available
 
-The addition of `async` and `Task`, `Task<int>` return types simplifies program code when console applications need to start and `await` asynchronous operations in `Main`.
+You can call an async method by using `await`. For example:
+
+:::code language="csharp" source="snippets/top-level-statements-4/Program.cs":::
+
+### The app can return an `int`
+
+To return an `int` value when the application ends, use the return statement as you would in a Main method that return an int. For example:
+
+:::code language="csharp" source="snippets/top-level-statements-4/Program.cs":::
+
+## Implicit `Main` method signature
+
+The compiler generates an implicit `Main` method with a signature that depends on what code is found within the top-level statements.
+
+| Top-level code               | Implicit signature                           |
+|------------------------------|----------------------------------------------|
+| Neither `await` nor `return` | `static void Main(string[] args)`            |
+| `await`                      | `static async Task Main(string[] args)`      |
+| `await` and `return`         | `static async Task<int> Main(string[] args)` |
+| `return`                     | `static int Main(string[] args)`             |
 
 ## C# language specification
 
@@ -45,7 +91,6 @@ The addition of `async` and `Task`, `Task<int>` return types simplifies program 
 
 ## See also
 
-- [Command-line Building With csc.exe](../../language-reference/compiler-options/command-line-building-with-csc-exe.md)
 - [C# Programming Guide](../index.md)
 - [Methods](../classes-and-structs/methods.md)
 - [Inside a C# Program](../inside-a-program/index.md)

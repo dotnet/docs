@@ -1,7 +1,7 @@
 ---
 title: "Methods - C# Programming Guide"
 description: A method in C# is a code block that contains a series of statements. A program runs the statements by calling the method and specifying arguments.
-ms.date: 07/20/2015
+ms.date: 03/08/2021
 helpviewer_keywords:
   - "methods [C#]"
   - "C# language, methods"
@@ -9,7 +9,7 @@ ms.assetid: cc738f07-e8cd-4683-9585-9f40c0667c37
 ---
 # Methods (C# Programming Guide)
 
-A method is a code block that contains a series of statements. A program causes the statements to be executed by calling the method and specifying any required method arguments. In C#, every executed instruction is performed in the context of a method. The `Main` method is the entry point for every C# application and it's called by the common language runtime (CLR) when the program is started.
+A method is a code block that contains a series of statements. A program causes the statements to be executed by calling the method and specifying any required method arguments. In C#, every executed instruction is performed in the context of a method. The `Main` method is the entry point for every C# application and it's called by the common language runtime (CLR) when the program is started. In an application that uses [top-level statements](../main-and-command-args/top-level-statements.md), the `Main` method is implicit.
 
 > [!NOTE]
 > This article discusses named methods. For information about anonymous functions, see [Anonymous Functions](../statements-expressions-operators/anonymous-functions.md).

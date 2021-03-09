@@ -1,7 +1,7 @@
 ---
 title: "Main() and command-line arguments - C# Programming Guide"
 description: Learn about Main() and command-line arguments. The 'Main' method is the entry point of an executable program.
-ms.date: 08/02/2017
+ms.date: 03/08/2021
 f1_keywords:
   - "main_CSharpKeyword"
   - "Main"
@@ -21,8 +21,11 @@ There can only be one entry point in a C# program. If you have more than one cla
 
 [!code-csharp[csProgGuideMain#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class1.cs#17)]
 
-Starting in C# 9, you can omit the Main method, and writte C# stattements as if they were in the Main method, as in the following example:
+Starting in C# 9, you can omit the `Main` method, and write C# statements as if they were in the `Main` method, as in the following example:
 
+:::code language="csharp" source="snippets/top-level-statements-1/Program.cs":::
+
+For information about how to write application code without a `Main` method, see [Top-level statements](top-level-statements.md).
 
 ## Overview
 

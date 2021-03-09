@@ -7,11 +7,11 @@ no-loc: ["package.config", PackageReference]
 ---
 # Overview of porting from .NET Framework to .NET
 
-This article provides an overview of what you should consider when porting your code from .NET Framework to .NET (formerly named .NET Core). Porting to .NET from .NET Framework for many projects is relatively straightforward. Depending on the complexity of your projects, you'll have varying degrees of situations to handle after the initial migration of the project files.
+This article provides an overview of what you should consider when porting your code from .NET Framework to .NET (formerly named .NET Core). Porting to .NET from .NET Framework for many projects is relatively straightforward. The complexity of your projects dictates how much work you'll do after the initial migration of the project files.
 
-Projects where the app-model is available in .NET (such as libraries, console apps, and desktop apps) usually require little change. Projects that require a new app model, such as moving to ASP.NET Core from ASP.NET, require a bit more work. Many patterns from the old app model have equivalents that can be used during the conversion.
+Projects where the app-model is available in .NET (such as libraries, console apps, and desktop apps) usually require little change. Projects that require a new app model, such as moving to ASP.NET Core from ASP.NET, require more work. Many patterns from the old app model have equivalents that can be used during the conversion.
 
-## Technologies that are unavailable
+## Unavailable technologies
 
 There are a few technologies in .NET Framework that don't exist in .NET:
 
@@ -45,7 +45,7 @@ For more information about these unsupported technologies, see [.NET Framework t
 
 Many applications created for .NET Framework use a desktop technology such as Windows Forms or Windows Presentation Foundation (WPF). Both Windows Forms and WPF have been ported to .NET, but these remain Windows-only technologies.
 
-There may be some friction involved when porting a Windows Forms or WPF application:
+Consider the following dependencies before you migrate a Windows Forms or WPF application:
 
 01. Project files for .NET use a different format than .NET Framework.
 01. Your project may use an API that isn't available in .NET.
@@ -61,7 +61,7 @@ For tutorials on migrating your desktop application to .NET 5, see one of the fo
 
 ## Windows-specific APIs
 
-Applications can still P/Invoke native libraries on platforms supported by .NET, this technology isn't limited to Windows. However, if the library you're referencing is Windows-specific, such as a _user32.dll_ or _kernal32.dll_, then the code only works on Windows. For each platform you want your app to run on, you'll have to either find platform-specific versions, or make your code generic enough to run on all platforms.
+Applications can still P/Invoke native libraries on platforms supported by .NET. This technology isn't limited to Windows. However, if the library you're referencing is Windows-specific, such as a _user32.dll_ or _kernal32.dll_, then the code only works on Windows. For each platform you want your app to run on, you'll have to either find platform-specific versions, or make your code generic enough to run on all platforms.
 
 When porting an application from .NET Framework to .NET, your application probably used a library provided distributed with the .NET Framework. Many APIs that were available in .NET Framework weren't ported to .NET because they relied on Windows-specific technology, such as the Windows Registry or the GDI+ drawing model.
 
@@ -82,11 +82,11 @@ The .NET Framework compatibility mode was introduced in .NET Standard 2.0. This 
 - Automation
 - ASP.NET sites
 
-.NET Framework is a Windows-only component. When your code uses Windows-specific technologies or APIs, such as Windows Forms and Windows Presentation Foundation (WPF), the code can still run on .NET but it probably won't run on other operating systems.
+.NET Framework is a Windows-only component. When your code uses Windows-specific technologies or APIs, such as Windows Forms and Windows Presentation Foundation (WPF), the code can still run on .NET but it won't run on other operating systems.
 
 It's possible that your library or console-based application can be used cross-platform without changing much. When porting to .NET, you may want to take this into consideration and test your application on other platforms.
 
-## What happened to .NET Standard
+## The future of .NET Standard
 
 [.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that are available on multiple .NET implementations. The motivation behind .NET Standard was to establish greater uniformity in the .NET ecosystem. Starting with .NET 5, a different approach to establishing uniformity has been adopted, and this new approach eliminates the need for .NET Standard in many scenarios. For more information, see [.NET 5 and .NET Standard](../../standard/net-standard.md#net-5-and-net-standard).
 

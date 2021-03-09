@@ -3,7 +3,7 @@ title: Implement a DisposeAsync method
 description: Learn how to implement DisposeAsync and DisposeAsyncCore methods to perform asynchronous resource cleanup.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/09/2020
+ms.date: 03/08/2021
 dev_langs:
   - "csharp"
 helpviewer_keywords:
@@ -118,9 +118,9 @@ In the preceding example, each asynchronous clean up operation is implicitly sco
 
 ### Unacceptable pattern
 
-If an exception is thrown from the `AnotherAsyncDisposable` constructor, then `objOne` does not get properly disposed:
+The highlighted lines in the following code show what it means to have "stacked usings". If an exception is thrown from the `AnotherAsyncDisposable` constructor, then `objOne` does not get properly disposed.
 
-:::code language="csharp" id="dontdothis" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
+:::code language="csharp" id="dontdothis" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs" highlight="9-10":::
 
 > [!TIP]
 > Avoid this pattern as it could lead to unexpected behavior.

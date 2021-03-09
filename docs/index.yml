@@ -12,7 +12,7 @@ metadata:
   ms.collection: collection
   author: BillWagner
   ms.author: wiwagn
-  ms.date: 03/08/2021
+  ms.date: 03/09/2021
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -201,39 +201,23 @@ additionalContent:
             text: ASP.NET MVC apps in Windows containers
           - url: /aspnet/core/blazor/
             text: "Blazor: Interactive client-side web UI with .NET"
-
-      # Card
-      - title: Cloud native and microservices
-        links:
-          - url: ./azure/index.yml
-            text: Azure for .NET documentation
-          - url: /azure/storage
-            text: Storage
-          - url: ./fsharp/using-fsharp-on-azure/index.md
-            text: Using F# on Azure
-          - url: architecture/serverless/index.md
-            text: "Serverless apps: Architecture, patterns, and Azure implementation"
-          - url: architecture/microservices/index.md
-            text: ".NET Microservices: Architecture for Containerized .NET Applications"
-
       # Card
       - title: Mobile
         links:
-          - url: /xamarin/ios/
+          - url: /xamarin/xamarin-forms
+            text: Xamarin.Forms
+          - url: /xamarin/ios
             text: Xamarin.iOS
           - url: /xamarin/android
             text: Xamarin.Android
-          - url: /xamarin/xamarin-forms
-            text: Xamarin.Forms
           - url: /azure/developer/mobile-apps
             text: Develop Xamarin apps with Azure
-
       # Card
       - title: Desktop
         links:
           - url: /uwp
             text: Universal Windows apps
-          - url: /dotnet/desktop/wpf/
+          - url: /dotnet/desktop/wpf
             text: Windows Presentation Foundation (.NET Core)
           - url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8
             text: Windows Presentation Foundation (.NET Framework)
@@ -242,7 +226,20 @@ additionalContent:
           - url: /xamarin/mac
             text: Xamarin for macOS
       # Card
-      - title: Gaming
+      - title: Microservices
+        links:
+          - url: architecture/dapr-for-net-developers/index.md
+            text: Dapr for .NET Developers
+          - url: architecture/cloud-native/index.md
+            text: Cloud native .NET apps
+          - url: https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/intro
+            text: Your first .NET microservice
+          - url: architecture/serverless/index.md
+            text: "Serverless apps: Architecture, patterns, and Azure implementation"
+          - url: architecture/microservices/index.md
+            text: ".NET Microservices: Architecture for Containerized .NET Applications"
+      # Card
+      - title: Game Development
         links:
           - url: https://visualstudio.microsoft.com/vs/features/game-development/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link
             text: Game development with Visual Studio
@@ -252,7 +249,6 @@ additionalContent:
             text: Build games with C# using the MonoGame library
           - url: https://docs.unity3d.com/Manual/index.html
             text: Learn how to use Unity to build 2D and 3D games with C#
-
       # Card
       - title: Machine learning and AI
         links:
@@ -264,6 +260,19 @@ additionalContent:
             text: Azure machine learning
           - url: spark/index.yml
             text: .NET for Apache Spark
+      # Card
+      - title: Cloud
+        links:
+          - url: ./azure/index.yml
+            text: Azure for .NET developers
+          - url: /dotnet/azure/migration/app-service?view=azure-dotnet
+            text: Migrate .NET web app or service
+          - url: /dotnet/azure/key-azure-services
+            text: Azure services for .NET developers
+          - url: /dotnet/azure/sdk/azure-sdk-for-dotnet
+            text: Azure .NET SDK
+          - url: ./fsharp/using-fsharp-on-azure/index.md
+            text: Use F# on Azure
       # Card
       - title: Internet of things (IoT)
         links:
@@ -315,5 +324,6 @@ additionalContent:
       - title: "Visual Basic language reference"
         summary: Visual Basic language reference and specification
         url: visual-basic/language-reference/index.md
+
   # footer (optional)
   footer: "Contribute to .NET docs. Read our [contributor guide](/contribute/dotnet/dotnet-contribute)."

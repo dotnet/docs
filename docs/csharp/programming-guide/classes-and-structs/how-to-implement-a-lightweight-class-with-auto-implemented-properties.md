@@ -15,13 +15,13 @@ This example shows how to create an immutable lightweight class that serves only
 
 You can make an immutable property in the following ways:
 
-- Declare the [set](../../language-reference/keywords/set.md) accessor to be [private](../../language-reference/keywords/private.md).  The property is settable within the type, but it is immutable to consumers.
-
-  When you declare a private `set` accessor, you cannot use an object initializer to initialize the property. You must use a constructor or a factory method.
+- Declare only the [get](../../language-reference/keywords/get.md) accessor, which makes the property immutable everywhere except in the type's constructor.
 
 - Declare an [init](../../language-reference/keywords/init.md) accessor instead of a `set` accessor, which makes the property settable only in the constructor or by using an [object initializer](object-and-collection-initializers.md).
 
-- Declare only the [get](../../language-reference/keywords/get.md) accessor, which makes the property immutable everywhere except in the type's constructor.
+- Declare the [set](../../language-reference/keywords/set.md) accessor to be [private](../../language-reference/keywords/private.md).  The property is settable within the type, but it is immutable to consumers.
+
+  When you declare a private `set` accessor, you cannot use an object initializer to initialize the property. You must use a constructor or a factory method.
 
 The following example shows how a property with only get accessor differs than one with get and private set.
 

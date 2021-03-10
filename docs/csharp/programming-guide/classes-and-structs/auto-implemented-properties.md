@@ -27,9 +27,9 @@ public string FirstName { get; set; } = "Jane";
 
 The class that is shown in the previous example is mutable. Client code can change the values in objects after creation. In complex classes that contain significant behavior (methods) as well as data, it's often necessary to have public properties. However, for small classes or structs that just encapsulate a set of values (data) and have little or no behaviors, you should use one of the following options for making the objects immutable:
 
-* Declare the `set` accessor as [private](../../language-reference/keywords/private.md) (immutable to consumers).
 * Declare only a `get` accessor (immutable everywhere except the constructor).
 * Declare a `get` accessor and an `init` accessor (immutable everywhere except during object construction).
+* Declare the `set` accessor as [private](../../language-reference/keywords/private.md) (immutable to consumers).
 
 For more information, see [How to implement a lightweight class with auto-implemented properties](./how-to-implement-a-lightweight-class-with-auto-implemented-properties.md).
 

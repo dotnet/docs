@@ -238,28 +238,6 @@ additionalContent:
           - url: architecture/microservices/index.md
             text: ".NET Microservices: Architecture for Containerized .NET Applications"
       # Card
-      - title: Game Development
-        links:
-          - url: https://visualstudio.microsoft.com/vs/features/game-development/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link
-            text: Game development with Visual Studio
-          - url: https://docs.cryengine.com/display/CEPROG/C%23+Programming
-            text: Learn how to use CRYENGINE to build games with C#
-          - url: https://docs.monogame.net/?page=main
-            text: Build games with C# using the MonoGame library
-          - url: https://docs.unity3d.com/Manual/index.html
-            text: Learn how to use Unity to build 2D and 3D games with C#
-      # Card
-      - title: Machine learning and AI
-        links:
-          - url: machine-learning/index.yml
-            text: Build custom AI solutions with ML.NET
-          - url: /azure/cognitive-services/
-            text: Azure Cognitive Services
-          - url: /azure/machine-learning
-            text: Azure machine learning
-          - url: spark/index.yml
-            text: .NET for Apache Spark
-      # Card
       - title: Cloud
         links:
           - url: ./azure/index.yml
@@ -272,6 +250,28 @@ additionalContent:
             text: Azure .NET SDK
           - url: ./fsharp/using-fsharp-on-azure/index.md
             text: Use F# on Azure
+      # Card
+      - title: Machine learning and AI
+        links:
+          - url: machine-learning/index.yml
+            text: Build custom AI solutions with ML.NET
+          - url: /azure/cognitive-services/
+            text: Azure Cognitive Services
+          - url: /azure/machine-learning
+            text: Azure machine learning
+          - url: spark/index.yml
+            text: .NET for Apache Spark
+      # Card
+      - title: Game Development
+        links:
+          - url: https://visualstudio.microsoft.com/vs/features/game-development/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link
+            text: Game development with Visual Studio
+          - url: https://docs.cryengine.com/display/CEPROG/C%23+Programming
+            text: Learn how to use CRYENGINE to build games with C#
+          - url: https://docs.monogame.net/?page=main
+            text: Build games with C# using the MonoGame library
+          - url: https://docs.unity3d.com/Manual/index.html
+            text: Learn how to use Unity to build 2D and 3D games with C#
       # Card
       - title: Internet of things (IoT)
         links:

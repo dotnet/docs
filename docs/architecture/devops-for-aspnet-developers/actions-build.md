@@ -124,7 +124,7 @@ Now that you have successfully built and tested the code, you will want to add s
       run: dotnet publish SimpleFeedReader/SimpleFeedReader.csproj -c Release -o website
 ```
 
-1. This publishes the web app to a folder on the hosted agent. We now want to _upload_ the site as a build artifact that we can deploy to Azure. To do this, we are going to use an existing action.
+1. This publishes the web app to a folder on the hosted agent. We now want to _upload_ the site as a build artifact that we can deploy to Azure. To do this activity, we are going to use an existing action.
 1. On the list of Actions in the Actions Helper pane on the right, search for `artifact` and click on the `Upload a Build Artifact (By actions)` action.
 
     ![Accessing the Actions helper](./media/actions/build/search-upload-artifact.jpg)

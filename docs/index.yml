@@ -138,20 +138,23 @@ conceptualContent:
           text: Open source library guidance
     # Card
     - title: .NET architectural guides
-      summary: Read foundational development and architectural guidance for .NET
+      summary: Explore architectural guidance for .NET
       links:
+        - url: architecture/dapr-for-net-developers/index.md
+          itemType: architecture
+          text: "Dapr for .NET developers"
         - url: architecture/microservices/index.md
           itemType: architecture
-          text: ".NET Microservices: Architecture for containerized .NET apps"
+          text: "Architecture for containerized .NET apps"
         - url: architecture/modern-web-apps-azure/index.md
           itemType: architecture
-          text: Architect modern web applications with ASP.NET Core and Azure
+          text: Modern web apps with ASP.NET Core and Azure
         - url: architecture/containerized-lifecycle/index.md
           itemType: architecture
-          text: "Containerized Docker application lifecycle with Microsoft platform and tools"
+          text: "Containerized Docker app lifecycle"
         - url: architecture/modernize-with-azure-containers/index.md
           itemType: architecture
-          text: "Modernize existing .NET applications with Azure cloud and Windows containers"
+          text: Modernize .NET apps with Azure
       # footerLink (optional)
       footerLink:
         url: architecture/index.yml

@@ -1353,10 +1353,9 @@ items:
   - name: Compiler options
     items:
     - name: Setting options
-      displayName: compiler options
       href: language-reference/compiler-options/index.md
     - name: Output options
-      displayName: OutputAssembly, out, ProduceReferenceAssembly, refout, Target, target, Doc, doc, PlatformTarget, platform
+      displayName: OutputAssembly, out, ProduceReferenceAssembly, refout, TargetType, target, Doc, doc, PlatformTarget, platform
       href: language-reference/compiler-options/output.md
     - name: Input options
       displayName: recurse, References, reference, references, AddModules, addmodule, link

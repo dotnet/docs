@@ -29,13 +29,13 @@ The following options control how the compiler reports errors and warnings. The 
 
 ## TreatWarningsAsErrors
 
-The **TreatWarningsAsErrors** option treats all warnings as errors. You can also use the **WarningsAsError** to set only some warnings as errors. If you turn on **TreatWarningsAsErrors**, you can use **WarningsNotAsError** to list warnings that shouldn't be treated as errors.
+The **TreatWarningsAsErrors** option treats all warnings as errors. You can also use the **TreatWarningsAsErrors** to set only some warnings as errors. If you turn on **TreatWarningsAsErrors**, you can use **TreatWarningsAsErrors** to list warnings that shouldn't be treated as errors.
 
 ```xml
 <TreatWarningsAsErrors></TreatWarningsAsErrors>
 ```
 
-All warning messages are instead reported as errors. The build process halts (no output files are built). By default, **TreatWarningsAsErrors** isn't in effect, which means warnings don't prevent the generation of an output file. Optionally, if you want only a few specific warnings to be treated as errors, you may specify a comma-separated list of warning numbers to treat as errors. The set of all nullability warnings can be specified with the **Nullable** shorthand. Use **WarningLevel** to specify the level of warnings that you want the compiler to display. Use **DisabledWarnings** to disable certain warnings.
+All warning messages are instead reported as errors. The build process halts (no output files are built). By default, **TreatWarningsAsErrors** isn't in effect, which means warnings don't prevent the generation of an output file. Optionally, if you want only a few specific warnings to be treated as errors, you may specify a comma-separated list of warning numbers to treat as errors. The set of all nullability warnings can be specified with the [**Nullable**](language.md#nullable) shorthand. Use [**WarningLevel**](#warninglevel) to specify the level of warnings that you want the compiler to display. Use [**DisabledWarnings**](#disabledwarnings) to disable certain warnings.
 
 ## WarningLevel
 
@@ -57,7 +57,7 @@ The element value is the warning level you want displayed for the compilation: L
 |5|Displays level 4 warnings plus [additional warnings](https://github.com/dotnet/roslyn/blob/a6013f3213c902c0973b2d371c3007217d610533/docs/compilers/CSharp/Warnversion%20Warning%20Waves.md) from the compiler shipped with C# 9.0.|
 |Greater than 5|Any value greater than 5 will be treated as 5. You generally put arbitrary large value (for example, `9999`) to make sure you always have all warnings if the compiler is updated with new warning levels.|
 
-To get information about an error or warning, you can look up the error code in the Help Index. For other ways to get information about an error or warning, see [C# Compiler Errors](../compiler-messages/index.md). Use **TreatWarningsAsErrors** to treat all warnings as errors. Use **DisabledWarnings** to disable certain warnings.  
+To get information about an error or warning, you can look up the error code in the Help Index. For other ways to get information about an error or warning, see [C# Compiler Errors](../compiler-messages/index.md). Use [**TreatWarningsAsErrors**](#treatwarningsaserrors) to treat all warnings as errors. Use **DisabledWarnings** to disable certain warnings.  
 
 ## DisabledWarnings
 

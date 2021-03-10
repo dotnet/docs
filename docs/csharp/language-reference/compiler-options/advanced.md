@@ -100,7 +100,7 @@ or
 <MainEntryPoint>MyNamespace.Program</MainEntryPoint>
 ```
 
-Where `Program` is the type that contains the `Main` method. The provided class name must be fully qualified; it must include the full namespace containing the class, followed by the class name. For example, when the `Main` method is located inside the `Program` class in the `MyApplication.Core` namespace, the compiler option has to be `-main:MyApplication.Core.Program`. If your compilation includes more than one type with a [Main](../../programming-guide/main-and-command-args/index.md) method, you can specify which type contains the **Main** method.
+Where `Program` is the type that contains the `Main` method. The provided class name must be fully qualified; it must include the full namespace containing the class, followed by the class name. For example, when the `Main` method is located inside the `Program` class in the `MyApplication.Core` namespace, the compiler option has to be `-main:MyApplication.Core.Program`. If your compilation includes more than one type with a [`Main`](../../programming-guide/main-and-command-args/index.md) method, you can specify which type contains the `Main` method.
 
 ## GenerateFullPaths
 
@@ -144,7 +144,7 @@ The **PdbFile** compiler option specifies the name and location of the debug sym
 <PdbFile>filename</PdbFile>
 ```
 
-When you specify [-debug](./debug-compiler-option.md), the compiler will create a *.pdb* file in the same directory where the compiler will create the output file (.exe or .dll). The *.pdb* file has the same base file name as the name of the output file. **PdbFile** allows you to specify a non-default file name and location for the .pdb file. This compiler option cannot be set in the Visual Studio development environment, nor can it be changed programmatically.  
+When you specify [**DebugType**](code-generation.md#debugtype), the compiler will create a *.pdb* file in the same directory where the compiler will create the output file (.exe or .dll). The *.pdb* file has the same base file name as the name of the output file. **PdbFile** allows you to specify a non-default file name and location for the .pdb file. This compiler option cannot be set in the Visual Studio development environment, nor can it be changed programmatically.  
 
 ## ErrorEndLocation
 
@@ -169,8 +169,6 @@ Where `language` is the [language name](/windows/desktop/Intl/language-names) of
 ## NoStandardLib
 
 **NoStandardLib** prevents the import of mscorlib.dll, which defines the entire System namespace.
-
-### Syntax
 
 ```xml
 <NoStandardLib>true</NoStandardLib>
@@ -214,7 +212,7 @@ The default value of the **SubsystemVersion** compiler option depends on the con
 
 ## AdditionalLibPaths
 
-The **AdditionalLibPaths** option specifies the location of assemblies referenced with the [-reference (C# Compiler Options)](./reference-compiler-option.md) option.
+The **AdditionalLibPaths** option specifies the location of assemblies referenced with the [**References**](inputs.md#references) option.
 
 ```xml
 <AdditionalLibPaths>dir1[,dir2]</AdditionalLibPaths>
@@ -297,4 +295,4 @@ Specifies an assembly whose non-public types a *.netmodule* can access. The `ass
 - You know the name of the assembly into which the .netmodule will be built.
 - The existing assembly has granted friend assembly access to the assembly into which the .*netmodule* will be built.
 
-For more information on building a .netmodule, see [-target:module (C# Compiler Options)](./target-module-compiler-option.md). For more information on friend assemblies, see [Friend Assemblies](../../../standard/assembly/friend.md).
+For more information on building a .netmodule, see [**TargetType**](output.md#targettype) option of **module**. For more information on friend assemblies, see [Friend Assemblies](../../../standard/assembly/friend.md).

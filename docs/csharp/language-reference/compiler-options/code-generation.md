@@ -21,13 +21,14 @@ The following options control compiler inputs. The new MSBuild syntax is shown i
 
 ## DebugType
 
-The **DebugType** option causes the compiler to generate debugging information and place it in the output file or files. Debugging information may be affected by the selected build configuration: *Debug* or *Release*.
+The **DebugType** option causes the compiler to generate debugging information and place it in the output file or files. Debugging information is added by default for the *Debug* build configuration. It is off by default for the *Release* build configuration.
+may be affected by the selected build configuration: *Debug* or *Release*.
 
 ```xml
 <DebugType>Full</DebugType>
 ```
 
-The value of this element can be either `full` or `pdbonly`. The *full* argument, which is in effect if you don't specify *pdbonly*, enables attaching a debugger to the running program. Specifying *pdbonly* allows source code debugging when the program is started in the debugger but will only display assembler when the running program is attached to the debugger. Use this option to create debug builds. If **-debug**, **-debug+**, or **-debug:full** isn't specified, you can't debug the output file of your program. If you use *full*, be aware that there's some impact on the speed and size of JIT optimized code and a small impact on code quality with *full*. We recommend *pdbonly* or no PDB for generating release code.
+The value of this element can be either `full` or `pdbonly`. The *full* argument, which is in effect if you don't specify *pdbonly*, enables attaching a debugger to the running program. Specifying *pdbonly* allows source code debugging when the program is started in the debugger but will only display assembler when the running program is attached to the debugger. Use this option to create debug builds. If you use *Full*, be aware that there's some impact on the speed and size of JIT optimized code and a small impact on code quality with *full*. We recommend *pdbonly* or no PDB for generating release code.
 
 > [!NOTE]
 > One difference between *pdbonly* and *full* is that with *full* the compiler emits a <xref:System.Diagnostics.DebuggableAttribute>, which is used to tell the JIT compiler that debug information is available. Therefore, you will get an error if your code contains the <xref:System.Diagnostics.DebuggableAttribute> set to false if you use *full*.
@@ -36,7 +37,7 @@ For more information on how to configure the debug performance of an application
 
 ## Optimize
 
-The **Optimize** option enables or disables optimizations performed by the compiler to make your output file smaller, faster, and more efficient.
+The **Optimize** option enables or disables optimizations performed by the compiler to make your output file smaller, faster, and more efficient. The *Optimize* option is enabled by default for a *Release* build configuration. It is off by default for a *Debug* build configuration.
 
 ```xml
 <Optimize>true</Optimize>
@@ -44,7 +45,7 @@ The **Optimize** option enables or disables optimizations performed by the compi
 
 You set the **Optimize** option from **Build** properties page for your project in Visual Studio.
 
-**Optimize** also tells the common language runtime to optimize code at runtime. By default, optimizations are disabled. Specify **Optimize+** to enable optimizations. When building a module to be used by an assembly, use the same **Optimize** settings as used by the assembly. It's possible to combine the **Optimize** and [Debug](./debug-compiler-option.md) options.
+**Optimize** also tells the common language runtime to optimize code at runtime. By default, optimizations are disabled. Specify **Optimize+** to enable optimizations. When building a module to be used by an assembly, use the same **Optimize** settings as used by the assembly. It's possible to combine the **Optimize** and [**Debug**](#debug) options.
 
 ## Deterministic
 
@@ -88,4 +89,4 @@ The **ProduceOnlyReferenceAssembly** option indicates that a reference assembly 
 
 Reference assemblies are a special type of assembly. Reference assemblies contain only the minimum amount of metadata required to represent the library's public API surface. They include declarations for all members that are significant when referencing an assembly in build tools, but exclude all member implementations and declarations of private members that have no observable impact on their API contract. For more information, see [Reference assemblies](../../../standard/assembly/reference-assemblies.md) in .NET Guide.
 
-The **ProduceOnlyReferenceAssembly** and **ProduceReferenceAssembly** options are mutually exclusive.
+The **ProduceOnlyReferenceAssembly** and [**ProduceReferenceAssembly**](output.md#producereferenceassembly) options are mutually exclusive.

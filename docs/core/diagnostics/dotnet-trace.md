@@ -68,7 +68,7 @@ The `dotnet-trace` tool:
 
 ## dotnet-trace collect
 
-Collects a diagnostic trace from a running process or launch a child process and trace it (on .NET 5.0 or later only). Append `--` to the collect command to have the tool run a child process and trace it from its startup (on .NET 5.0 or later only).
+Collects a diagnostic trace from a running process or launches a child process and traces it (.NET 5+ only). To have the tool run a child process and trace it from its startup, append `--` to the collect command.
 
 ### Synopsis
 
@@ -182,7 +182,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
   > [!NOTE]
   > Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
 
-- **`--show-child-io`
+- **`--show-child-io`**
 
   Shows the input and output streams of a launched child process in the current console.
 

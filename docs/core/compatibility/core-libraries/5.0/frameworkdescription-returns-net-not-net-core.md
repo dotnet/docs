@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: FrameworkDescription's value is .NET instead of .NET Core"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where RuntimeInformation.FrameworkDescription now returns ".NET" instead of ".NET Core".
+description: Learn about the .NET 5 breaking change in core .NET libraries where RuntimeInformation.FrameworkDescription now returns ".NET" instead of ".NET Core".
 ms.date: 11/01/2020
 ---
 # FrameworkDescription's value is .NET instead of .NET Core
@@ -11,7 +11,7 @@ ms.date: 11/01/2020
 
 In previous .NET versions, <xref:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription?displayProperty=nameWithType> returns ".NET Core" as part of the description string, for example, `.NET Core 3.1.1`.
 
-Starting in .NET 5.0, <xref:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription?displayProperty=nameWithType> returns ".NET" as part of the description string, for example, `.NET 5.0.0`.
+Starting in .NET 5, <xref:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription?displayProperty=nameWithType> returns ".NET" as part of the description string, for example, `.NET 5.0.0`.
 
 ## Reason for change
 

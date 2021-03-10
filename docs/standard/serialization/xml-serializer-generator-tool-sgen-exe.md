@@ -61,4 +61,4 @@ sgen Data.dll
 ## See also
 
 - [Tools](../../framework/tools/index.md)
-- [Command Prompts](../../framework/tools/developer-command-prompt-for-vs.md)
+- [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

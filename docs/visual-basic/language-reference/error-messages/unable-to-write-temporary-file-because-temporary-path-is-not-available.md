@@ -23,4 +23,4 @@ Visual Basic could not determine the path where temporary files are stored.
 
 ## See also
 
-- [Talk to Us](/visualstudio/ide/feedback-options)
+- [Visual Studio feedback options](/visualstudio/ide/feedback-options)

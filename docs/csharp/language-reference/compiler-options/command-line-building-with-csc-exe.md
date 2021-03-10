@@ -11,9 +11,9 @@ ms.assetid: 66e70056-dd20-453c-a9b3-507e0478b015
 
 You can invoke the C# compiler by typing the name of its executable file (*csc.exe*) at a command prompt.
 
-If you use the **Developer Command Prompt for Visual Studio** window, all the necessary environment variables are set for you. For information on how to access this tool, see the [Developer Command Prompt for Visual Studio](../../../framework/tools/developer-command-prompt-for-vs.md) topic.
+If you use one of the command-line shells that Visual Studio installs, all the necessary environment variables are set for you. For information on how to access these shells, see [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell).
 
-If you use a standard Command Prompt window, you must adjust your path before you can invoke *csc.exe* from any subdirectory on your computer. You also must run *VsDevCmd.bat* to set the appropriate environment variables to support command-line builds. For more information about *VsDevCmd.bat*, including instructions for how to find and run it, see [How to set environment variables for the Visual Studio Command Line](./how-to-set-environment-variables-for-the-visual-studio-command-line.md).
+If you use a regular command prompt, you must adjust your path before you can invoke *csc.exe* from any subdirectory on your computer. You also must run *VsDevCmd.bat* to set the appropriate environment variables to support command-line builds. For more information about *VsDevCmd.bat*, including instructions for how to find and run it, see [How to set environment variables for the Visual Studio Command Line](./how-to-set-environment-variables-for-the-visual-studio-command-line.md).
 
 If you're working on a computer that has only the Windows Software Development Kit (SDK), you can use the C# compiler at the **SDK Command Prompt**, which you open from the **Microsoft .NET Framework SDK** menu option.
 
@@ -23,14 +23,6 @@ The *csc.exe* executable file usually is located in the Microsoft.NET\Framework\
 
 > [!TIP]
 > When you build a project by using the Visual Studio IDE, you can display the **csc** command and its associated compiler options in the **Output** window. To display this information, follow the instructions in [How to: View, Save, and Configure Build Log Files](/visualstudio/ide/how-to-view-save-and-configure-build-log-files#to-change-the-amount-of-information-included-in-the-build-log) to change the verbosity level of the log data to **Normal** or **Detailed**. After you rebuild your project, search the **Output** window for **csc** to find the invocation of the C# compiler.
-
- **In this topic**
-
-- [Rules for command-line syntax](#rules-for-command-line-syntax-for-the-c-compiler)
-
-- [Sample command lines](#sample-command-lines-for-the-c-compiler)
-
-- [Differences between C# compiler and C++ compiler output](#differences-between-c-compiler-and-c-compiler-output)
 
 ## Rules for command-line syntax for the C# compiler
 

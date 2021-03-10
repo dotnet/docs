@@ -16,7 +16,7 @@ The ML.NET CLI generates good quality ML.NET models and source code using automa
 
 ## Pre-requisites
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet/3.1)
 
 - (Optional) [Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
 

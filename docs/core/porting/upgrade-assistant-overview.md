@@ -2,14 +2,14 @@
 title: Overview of the .NET Upgrade Assistant
 description: Introducing the .NET Upgrade Assistant tool that helps migrate from .NET Framework and upgrades your projects to .NET 5.
 author: ardalis
-ms.date: 02/25/2021
+ms.date: 03/08/2021
 ---
 # Overview of the .NET Upgrade Assistant
 
 You might have apps that currently run on the .NET Framework that you're interested in porting to .NET 5. The .NET Upgrade Assistant tool can assist with this process. This article provides:
 
-* An overview of the .NET Upgrade Assistant.
-* How to install the .NET Upgrade Assistant.
+- An overview of the .NET Upgrade Assistant.
+- How to install the .NET Upgrade Assistant.
 
 ## What is the .NET Upgrade Assistant
 
@@ -38,9 +38,17 @@ The [Get Started tutorial](https://aka.ms/dotnet-upgrade-assistant-install) walk
 
 ### Installation steps
 
-The tool can be installed as a .NET CLI tool by running: `dotnet tool install -g upgrade-assistant --add-source https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json`
+The tool can be installed as a .NET CLI tool by running:
 
-Similarly, because the .NET Upgrade Assistant is installed as a .NET CLI tool, it can be easily updated by running: `https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json`
+```dotnet
+dotnet tool install -g upgrade-assistant
+```
+
+Similarly, because the .NET Upgrade Assistant is installed as a .NET CLI tool, it can be easily updated by running:
+
+```dotnet
+dotnet tool update -g upgrade-assistant
+```
 
 For detailed installation instructions, please refer to the project's [README](https://github.com/dotnet/upgrade-assistant).
 

@@ -29,7 +29,7 @@ Before you begin writing your app, you need to set up some prerequisite dependen
 
 To start building .NET apps, you need to download and install the .NET SDK (Software Development Kit).
 
-Download and install the [.NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1). Installing the SDK adds the `dotnet` toolchain to your PATH.
+Download and install the [.NET Core SDK](https://dotnet.microsoft.com/download/dotnet/3.1). Installing the SDK adds the `dotnet` toolchain to your PATH.
 
 Once you've installed the .NET Core SDK, open a new command prompt or terminal and run `dotnet`.
 

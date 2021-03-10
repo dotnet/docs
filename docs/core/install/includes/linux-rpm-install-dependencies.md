@@ -4,6 +4,7 @@ When you install with a package manager, these libraries are installed for you. 
 - krb5-libs
 - libicu
 - openssl-libs
+- zlib
 
 If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need to install **compat-openssl10**.
 

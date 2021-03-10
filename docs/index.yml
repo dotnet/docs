@@ -158,13 +158,13 @@ conceptualContent:
         text: All architecture guides
 
 # tools section (optional)
-## Languages: C#, VB, F#, 
+## Languages: C#, F#, and VB
 tools:
   title: Programming languages # < 60 chars (optional)
   summary: "You can write .NET apps in C#, F#, or Visual Basic."
   items:
     # Card
-    - title: "A modern, object-oriented, type-safe member of the C family"
+    - title: "A modern, object-oriented, and type-safe language"
       imageSrc: https://docs.microsoft.com/media/logos/logo_Csharp.svg
       url: csharp/index.yml
     # Card

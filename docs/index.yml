@@ -59,7 +59,7 @@ conceptualContent:
   summary: "A developer platform for building all your apps: web, mobile, desktop, gaming, IoT, and more. Supported on Windows, Linux, and macOS."
   items:
     # Card
-    - title: Open-source .NET
+    - title: Open source .NET
       summary: Learn about .NET
       links:
         - url: core/introduction.md
@@ -235,11 +235,11 @@ additionalContent:
           - url: architecture/cloud-native/index.md
             text: Cloud native .NET apps
           - url: https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/intro
-            text: Your first .NET microservice
+            text: Create your first .NET microservice
           - url: architecture/serverless/index.md
-            text: "Serverless apps: Architecture, patterns, and Azure implementation"
+            text: Serverless apps with Azure
           - url: architecture/microservices/index.md
-            text: ".NET Microservices: Architecture for Containerized .NET Applications"
+            text: Architecture for Containerized .NET apps
       # Card
       - title: Cloud
         links:

@@ -25,7 +25,7 @@ Starting in C# 9, you can omit the `Main` method, and write C# statements as if 
 
 :::code language="csharp" source="snippets/top-level-statements-1/Program.cs":::
 
-For information about how to write application code with an implicit `Main` method, see [Top-level statements](top-level-statements.md).
+For information about how to write application code with an implicit entry point method, see [Top-level statements](top-level-statements.md).
 
 ## Overview
 

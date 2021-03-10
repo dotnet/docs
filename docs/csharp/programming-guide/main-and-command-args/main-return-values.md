@@ -20,7 +20,7 @@ It can also return an `int`:
 If the return value from `Main` is not used, returning `void` allows for slightly simpler code. However, returning an integer enables the program to communicate status information to other programs or scripts that invoke the executable file.
 
 The return value from `Main` is treated as the exit code for the process. If `void` is returned from `Main`, the exit code will be implicitly `0`.
-An application that uses [top-level statements](top-level-statements.md#the-application-can-return-an-int) can also return an exit code.
+An application that uses [top-level statements](top-level-statements.md#exit-code-for-the-process) can also return an exit code.
 
 The following example shows how the exit code for the process can be accessed.
 

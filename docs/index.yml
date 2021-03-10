@@ -63,25 +63,22 @@ conceptualContent:
       links:
         - url: core/introduction.md
           itemType: overview
-          text: Overview of .NET
-        - url: core/dotnet-five.md
-          itemType: whats-new
-          text: What's new in .NET 5
+          text: .NET overview
         - url: core/tutorials/index.md
           itemType: tutorial
           text: .NET tutorials
+        - url: core/dotnet-five.md
+          itemType: whats-new
+          text: What's new in .NET 5
         - url: core/deploying/index.md
           itemType: deploy
           text: Deploy .NET apps
-        - url: core/docker/build-container.md
-          itemType: tutorial
-          text: Containerize .NET apps with Docker
-        - url: https://dotnet.microsoft.com/platform/community
-          itemType: whats-new
-          text: .NET developer community
         - url: https://dotnetfoundation.org
           itemType: overview
           text: .NET Foundation
+        - url: https://dotnet.microsoft.com/platform/community
+          itemType: whats-new
+          text: .NET developer community
         - url: standard/library-guidance/index.md
           itemType: concept
           text: Open source library guidance
@@ -124,6 +121,9 @@ conceptualContent:
         - url: core/porting/index.md
           itemType: overview
           text: Port from .NET Framework to .NET
+        - url: core/docker/build-container.md
+          itemType: tutorial
+          text: Containerize .NET apps with Docker
         - url: core/compatibility/index.md
           itemType: concept
           text: .NET breaking changes

@@ -27,4 +27,4 @@ For more examples, check out these open source extensions that currently leverag
 
 ## Getting started: end users
 
-In general, the end user should not need to interact with the .NET install tool for extension authors at all. If you are having problems with the extension, check out our [troubleshooting page](https://github.com/dotnet/vscode-dotnet-runtime/blob/master/Documentation/troubleshooting.md) or file an issue on our [GitHub](https://github.com/dotnet/vscode-dotnet-runtime/issues).
+In general, the end user should not need to interact with the .NET install tool for extension authors at all. If you are having problems with the extension, check out our [troubleshooting page](https://github.com/dotnet/vscode-dotnet-runtime/blob/master/Documentation/troubleshooting-runtime.md) or file an issue on our [GitHub](https://github.com/dotnet/vscode-dotnet-runtime/issues).

@@ -18,6 +18,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
 |[dynamic](../builtin-types/reference-types.md)|Defines a reference type that enables operations in which it occurs to bypass compile-time type checking.|  
 |[get](./get.md)|Defines an accessor method for a property or an indexer.|  
 |[global](../operators/namespace-alias-qualifier.md)|Alias of the global namespace, which is otherwise unnamed.|  
+|[init](./init.md)|Defines an accessor method for a property or an indexer.|  
 |[partial](./partial-type.md)|Defines partial classes, structs, and interfaces throughout the same compilation unit.|  
 |[remove](./remove.md)|Defines a custom event accessor that is invoked when client code unsubscribes from the event.|  
 |[set](./set.md)|Defines an accessor method for a property or an indexer.|  

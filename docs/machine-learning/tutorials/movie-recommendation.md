@@ -165,20 +165,6 @@ Add the following code in the `Main()` method to call your `LoadData()` method a
 
 ## Build and train your model
 
-There are three major concepts in ML.NET: [Data](../resources/glossary.md#data), [Transformers](../resources/glossary.md#transformer), and [Estimators](../resources/glossary.md#estimator).
-
-Machine learning training algorithms require data in a certain format. `Transformers` are used to transform tabular data to a compatible format.
-
-![Diagram of the Transformer dataflow.](./media/movie-recommendation/data-transformer-transformed.png)
-
-You create `Transformers` in ML.NET by creating `Estimators`. `Estimators` take in data and return `Transformers`.
-
-![Diagram of the Estimator dataflow.](./media/movie-recommendation/data-estimator-transformer.png)
-
-The recommendation training algorithm you will use for training your model is an example of an `Estimator`.
-
-Build an `Estimator` with the following steps:
-
 Create the `BuildAndTrainModel()` method, just after the `LoadData()` method, using the following code:
 
 ```csharp
@@ -225,6 +211,8 @@ Fit the model to the `Train` data and return the trained model by adding the fol
 [!code-csharp[FitModel](./snippets/movie-recommendation/csharp/Program.cs#FitModel "Call the Fit method and return back the trained model")]
 
 The [Fit()](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Fit%28Microsoft.ML.IDataView,Microsoft.ML.IDataView%29) method trains your model with the provided training dataset. Technically, it executes the `Estimator` definitions by transforming the data and applying the training, and it returns back the trained model, which is a `Transformer`.
+
+For more information on the model training workflow in ML.NET, see [What is ML.NET and how does it work?](../how-does-mldotnet-work.md#code-workflow).
 
 Add the following as the next line of code in the `Main()` method to call your `BuildAndTrainModel()` method and return the trained model:
 

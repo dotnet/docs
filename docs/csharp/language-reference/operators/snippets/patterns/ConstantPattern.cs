@@ -30,5 +30,15 @@ namespace Patterns
             }
             // </NullCheck>
         }
+
+        private static void NonNullCheck(object input)
+        {
+            // <NonNullCheck>
+            if (input is not null)
+            {
+                // ...
+            }
+            // </NonNullCheck>
+        }
     }
 }

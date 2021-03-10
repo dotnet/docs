@@ -29,6 +29,21 @@ A scenario is a description of the type of prediction you want to make using you
 - detect whether a banking transaction is fraudulent
 - route customer feedback issues to the correct team in your company
 
+Each scenario maps to a different Machine Learning Task which include:
+
+- Binary classification
+- Multiclass classification
+- Regression
+- Clustering
+- Anomaly detection
+- Ranking
+- Recommendation
+- Forecasting
+
+For example, the scenario of classifying sentiments as positive or negative would fall under the binary classification task.
+
+For more information about the different ML Tasks supported by ML.NET see [Machine learning tasks in ML.NET](/resources/tasks).
+
 ### Which machine learning scenario is right for me?
 
 In Model Builder, you need to select a scenario. The type of scenario depends on what type of prediction you are trying to make.
@@ -43,7 +58,7 @@ Classification is used to categorize data into categories.
 
 #### Value prediction
 
-Regression is used to predict numbers.
+Value prediction, which falls under the regression task, is used to predict numbers.
 
 ![Diagram showing regression examples such as price prediction, sales forecasting, and predictive maintenance](media/regression-examples.png)
 

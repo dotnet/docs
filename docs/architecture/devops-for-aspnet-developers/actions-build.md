@@ -30,7 +30,7 @@ Jobs are run on _runners_. You can use _hosted runners_, which are spun up by Gi
 
 Each `job` will specify what runner GitHub should use to execute the `steps`. You can also specify dependencies between jobs using the `needs` attribute. Deployments jobs can also specify an `environment` to target.
 
-`Steps` can be as simple as inline commands or they can be Actions. Most CI workflows will have a combination of `run` steps (for executing scripts) and Actions. Actions are pulled into the workflow by referencing the Action repo (and optionally a tag or commit hash for specific verions) and specifying any parameters using the `with` keyword.
+`Steps` can be as easy as inline commands or they can be Actions. Most CI workflows will have a combination of `run` steps (for executing scripts) and Actions. Actions are pulled into the workflow by referencing the Action repo (and optionally a tag or commit hash for specific versions) and specifying any parameters using the `with` keyword.
 
 > [!TIP]
 > You can read more about GitHub Actions YAML syntax [here](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions).

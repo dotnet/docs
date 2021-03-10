@@ -154,6 +154,9 @@ PerfView will display the list of views that are supported based on the data con
 
 For more information on how to interpret views in PerfView, see help links in the view itself, or from the main window in PerfView, choose **Help->Users Guide**.
 
+> [!NOTE]
+> Events written via <xref:System.Diagnostics.Tracing.EventSource?displayProperty=nameWithType> API (including the events from Framework) won't show up under their provider name. Instead, they are written as `EventSourceEvent` events under `Microsoft-Windows-DotNETRuntime` provider and their payloads are JSON serialized.
+
 ### Use TraceCompass to open the trace file
 
 [Eclipse TraceCompass](https://www.eclipse.org/tracecompass/) is another option you can use to view the traces. `TraceCompass` works on Linux machines as well, so you don't need to move your trace over to a Windows machine. To use `TraceCompass` to open your trace file, you will need to unzip the file.

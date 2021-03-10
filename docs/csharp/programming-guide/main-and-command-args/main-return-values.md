@@ -17,9 +17,12 @@ It can also return an `int`:
 
  [!code-csharp[csProgGuideMain#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#13)]
 
-If the return value from `Main` is not used, returning `void` allows for slightly simpler code. However, returning an integer enables the program to communicate status information to other programs or scripts that invoke the executable file. The return value from `Main` is treated as the exit code for the process. If `void` is returned from `Main`, the exit code will be implicitly `0`. The following example shows how the return value from `Main` can be accessed.
+If the return value from `Main` is not used, returning `void` allows for slightly simpler code. However, returning an integer enables the program to communicate status information to other programs or scripts that invoke the executable file.
 
-An application that uses [top-level statements](top-level-statements.md) can also return an exit code. For more information, see [Top-level statements (C# Programming Guide)](top-level-statements.md#the-application-can-return-an-int).
+The return value from `Main` is treated as the exit code for the process. If `void` is returned from `Main`, the exit code will be implicitly `0`.
+An application that uses [top-level statements](top-level-statements.md#the-application-can-return-an-int) can also return an exit code.
+
+The following example shows how the exit code for the process can be accessed.
 
 ## Example
 

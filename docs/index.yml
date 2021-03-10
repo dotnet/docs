@@ -1,12 +1,12 @@
 ### YamlMime:Hub
 
 title: .NET documentation
-summary: Learn to use .NET to create applications on any platform using C#, Visual Basic, and F#. Browse API reference, sample code, tutorials, and more.
+summary: Learn to use .NET to create applications on any platform using C#, F#, and Visual Basic. Browse API reference, sample code, tutorials, and more.
 brand: dotnet
 
 metadata:
   title: .NET documentation
-  description: Learn to use .NET to create applications on any platform using C#, Visual Basic, and F#. Browse API reference, sample code, tutorials, and more.
+  description: Learn to use .NET to create applications on any platform using C#, F#, and Visual Basic. Browse API reference, sample code, tutorials, and more.
   ms.product: dotnet
   ms.topic: hub-page
   ms.collection: collection
@@ -24,33 +24,33 @@ highlightedContent:
       itemType: download
       url: https://dotnet.microsoft.com/download
     # Card
-    - title: "C# introduction. A quick interactive start."
-      itemType: get-started
-      url: ./csharp/tour-of-csharp/tutorials/hello-world.yml
+    - title: "Build .NET apps with C#"
+      itemType: learn
+      url: /learn/paths/build-dotnet-applications-csharp
     # Card
-    - title: "Create your first console app."
+    - title: Create your first console app
       itemType: tutorial
       url: core/get-started.md
     # Card
-    - title: "Create your first web app."
+    - title: Create your first web app
       itemType: learn
       url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
     # Card
-    - title: "Build .NET applications with C#"
-      itemType: learn
-      url: /learn/paths/build-dotnet-applications-csharp/
-    # Card
-    - title: "Browse all .NET Learning paths and modules"
+    - title: "Browse .NET learning paths"
       itemType: learn
       url: /learn/dotnet/
+    # Card
+    - title: "Azure for .NET developers"
+      itemType: overview
+      url: azure/index.yml
     # Card
     - title: "What's new in .NET docs"
       itemType: whats-new
       url: whats-new/index.yml
     # Card
-    - title: "Azure for .NET developers"
-      itemType: overview
-      url: azure/index.yml
+    - title: "Introduction to C#"
+      itemType: get-started
+      url: ./csharp/tour-of-csharp/tutorials/hello-world.yml
 
 # conceptualContent section (optional)
 conceptualContent:

@@ -12,7 +12,7 @@ metadata:
   ms.collection: collection
   author: BillWagner
   ms.author: wiwagn
-  ms.date: 03/09/2021
+  ms.date: 03/10/2021
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -48,7 +48,7 @@ highlightedContent:
       itemType: whats-new
       url: whats-new/index.yml
     # Card
-    - title: "Introduction to C#"
+    - title: "Interactive introduction to C#"
       itemType: get-started
       url: ./csharp/tour-of-csharp/tutorials/hello-world.yml
 
@@ -70,10 +70,10 @@ conceptualContent:
           text: What's new in .NET 5
         - url: core/deploying/index.md
           itemType: deploy
-          text: Deploy .NET Core apps
+          text: Deploy .NET apps
         - url: core/docker/build-container.md
           itemType: tutorial
-          text: Containerize .NET Core apps with Docker
+          text: Containerize .NET apps with Docker
         - url: core/tutorials/index.md
           itemType: tutorial
           text: Tutorials
@@ -120,16 +120,16 @@ conceptualContent:
       links:
         - url: core/sdk.md
           itemType: download
-          text: Download the .NET Core SDK
+          text: Download the .NET SDK
         - url: core/tools/index.md
           itemType: overview
-          text: .NET Core CLI overview
+          text: .NET CLI overview
         - url: core/porting/index.md
           itemType: overview
           text: Port from .NET Framework to .NET
         - url: core/compatibility/index.md
           itemType: concept
-          text: .NET Core breaking changes
+          text: .NET breaking changes
         - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-5.0
           itemType: tutorial
           text: Create .NET desktop apps for Windows
@@ -189,8 +189,6 @@ additionalContent:
       # Card
       - title: Web
         links:
-          - url: /aspnet/core/getting-started
-            text: Create your first web app
           - url: /aspnet/core/tutorials
             text: ASP.NET Core tutorials
           - url: /aspnet/core

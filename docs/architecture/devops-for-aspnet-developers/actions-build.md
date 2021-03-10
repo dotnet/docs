@@ -63,7 +63,7 @@ One important principle of effective DevOps is to build once, deploy many times.
 > [!NOTE]
 > If any of the tests fail, the workflow will fail.
 
-## Disecting the Workflow File
+## Dissecting the Workflow File
 
 Let's have a look at the workflow YAML file that you have so far:
 

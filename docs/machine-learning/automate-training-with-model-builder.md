@@ -42,7 +42,7 @@ Each scenario maps to a different Machine Learning Task which include:
 
 For example, the scenario of classifying sentiments as positive or negative would fall under the binary classification task.
 
-For more information about the different ML Tasks supported by ML.NET see [Machine learning tasks in ML.NET](/resources/tasks).
+For more information about the different ML Tasks supported by ML.NET see [Machine learning tasks in ML.NET](resources/tasks.md).
 
 ### Which machine learning scenario is right for me?
 

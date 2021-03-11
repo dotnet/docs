@@ -32,8 +32,8 @@ For new features, see [Visual Basic 15.5](#visual-basic-155).
 Visual Basic 15.3 / Visual Studio 2017 version 15.3\
 For new features, see [Visual Basic 15.3](#visual-basic-153).
 
-Visual Basic 2017 / Visual Studio 2017\
-For new features, see [Visual Basic 2017](#visual-basic-2017).
+Visual Basic 15 / Visual Studio 2017\
+For new features, see [Visual Basic 2017](#visual-basic-15).
 
 Visual Basic / Visual Studio 2015\
 For new features, see [Visual Basic 14](#visual-basic-14).
@@ -155,7 +155,7 @@ When you assign the value of tuple elements from variables, Visual Basic infers 
 
 The Visual Basic command-line compiler now supports the [**-refout**](../reference/command-line-compiler/refout-compiler-option.md) and [**-refonly**](../reference/command-line-compiler/refonly-compiler-option.md) compiler options to control the output of reference assemblies. **-refout** defines the output directory of the reference assembly, and **-refonly** specifies that only a reference assembly is to be output by compilation.
 
-## Visual Basic 2017
+## Visual Basic 15
 
 [**Tuples**](../programming-guide/language-features/data-types/tuples.md)
 

@@ -98,7 +98,7 @@ Beginning with C# 9.0, you use the `not`, `and`, and `or` pattern combinators to
 
   :::code language="csharp" source="snippets/patterns/PatternCombinators.cs" id="NotPattern":::
 
-- *Conjunctive* `and` pattern that matches an expression when both patterns match the expression. For example, you can combine [relational patterns](#relational-patterns) to check if a value is at a certain range, as the following code shows:
+- *Conjunctive* `and` pattern that matches an expression when both patterns match the expression. For example, you can combine [relational patterns](#relational-patterns) to check if a value is in a certain range, as the following code shows:
 
   :::code language="csharp" source="snippets/patterns/PatternCombinators.cs" id="AndPattern":::
 

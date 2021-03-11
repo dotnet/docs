@@ -82,7 +82,7 @@ Beginning with C# 9.0, you use a *relational pattern* to compare an expression r
 
 :::code language="csharp" source="snippets/patterns/RelationalPatterns.cs" id="BasicExample":::
 
-In a relational pattern, you can use any of the [relational operators](comparison-operators.md) `<`, `>`, `<=`, or `>=`. A constant to compare with can be of an [integral](../builtin-types/integral-numeric-types.md), [floating-point](../builtin-types/floating-point-numeric-types.md), [char](../builtin-types/char.md), or [enum](../builtin-types/enum.md) type.
+In a relational pattern, you can use any of the [relational operators](comparison-operators.md) `<`, `>`, `<=`, or `>=`. The right-hand part of a relational pattern must be a constant expression. That constant expression can be of an [integral](../builtin-types/integral-numeric-types.md), [floating-point](../builtin-types/floating-point-numeric-types.md), [char](../builtin-types/char.md), or [enum](../builtin-types/enum.md) type.
 
 To check if an expression value is at a certain range, match it against a [combined pattern](#pattern-combinators), as the following example shows:
 

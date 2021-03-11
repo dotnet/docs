@@ -26,9 +26,6 @@ You can download the latest .NET SDK from the [.NET downloads page](https://dotn
 Visual Basic 16.0 / Visual Studio 2019 version 16.0\
 For new features, see [Visual Basic 16.0](#visual-basic-160).
 
-Visual Basic 15.8 / Visual Studio 2017 version 15.8\
-For new features, see [Visual Basic 15.8](#visual-basic-158).
-
 Visual Basic 15.5 / Visual Studio 2017 version 15.5\
 For new features, see [Visual Basic 15.5](#visual-basic-155).
 
@@ -83,8 +80,6 @@ Public Sub Main()
         & "WHERE Publishers.State = 'CA'"
 End Sub
 ```
-
-## Visual Basic 15.8
 
 **Optimized floating-point to integer conversion**
 

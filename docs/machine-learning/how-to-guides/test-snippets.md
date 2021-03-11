@@ -12,8 +12,8 @@ ms.custom: mvc,how-to
 
 This one is from `dotnet/docs`
 
-    [!code-csharp [Person](../tutorials/snippets/test-snippets/Person.cs)]
+[!code-csharp [Person](../tutorials/snippets/test-snippets/Person.cs)]
 
 This one is from `dotnet/samples`
 
-    [!code-csharp [Person](~/samples/machine-learning/tutorials/TestSnippet/Person.cs)]
+[!code-csharp [Person](~/samples/machine-learning/tutorials/TestSnippet/Person.cs)]

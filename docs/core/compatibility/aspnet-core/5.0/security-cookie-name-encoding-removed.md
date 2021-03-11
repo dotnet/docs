@@ -40,8 +40,8 @@ If you're moving projects to ASP.NET Core 5.0 or later, ensure that their cookie
 
 - <xref:Microsoft.AspNetCore.Http.HttpRequest.Cookies%2A?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Http.HttpResponse.Cookies%2A?displayProperty=nameWithType>
-- `Microsoft.Owin.IOwinRequest.Cookies`
-- `Microsoft.Owin.IOwinResponse.Cookies`
+- <xref:Microsoft.Owin.IOwinRequest.Cookies?displayProperty=nameWithType>
+- <xref:Microsoft.Owin.IOwinResponse.Cookies?displayProperty=nameWithType>
 
 <!--
 

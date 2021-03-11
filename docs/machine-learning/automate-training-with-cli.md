@@ -32,7 +32,6 @@ Currently, the ML Tasks supported by the ML.NET CLI are:
 - regression
 - recommendation
 - image classification
-- Future: other machine learning tasks such as ranking, anomaly detection, clustering
 
 Example of usage (classification scenario):
 

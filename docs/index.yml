@@ -12,7 +12,7 @@ metadata:
   ms.collection: collection
   author: BillWagner
   ms.author: wiwagn
-  ms.date: 03/10/2021
+  ms.date: 03/11/2021
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -127,7 +127,7 @@ conceptualContent:
         - url: core/compatibility/index.md
           itemType: concept
           text: .NET breaking changes
-        - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-5.0
+        - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-5.0&preserve-view=true
           itemType: tutorial
           text: Create .NET desktop apps for Windows
     # Card
@@ -138,7 +138,7 @@ conceptualContent:
           text: Dapr for .NET developers
         - url: architecture/microservices/index.md
           itemType: architecture
-          text: Architecture for containerized .NET apps
+          text: .NET microservices architecture guidance
         - url: architecture/modern-web-apps-azure/index.md
           itemType: architecture
           text: Modern web apps with ASP.NET Core and Azure
@@ -211,13 +211,13 @@ additionalContent:
         links:
           - url: /uwp
             text: Universal Windows apps
-          - url: /dotnet/desktop/wpf/?view=netdesktop-5.0
+          - url: /dotnet/desktop/wpf/?view=netdesktop-5.0&preserve-view=true
             text: Windows Presentation Foundation (.NET 5)
-          - url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8
+          - url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8&preserve-view=true
             text: Windows Presentation Foundation (.NET Framework)
-          - url: /dotnet/desktop/winforms/?view=netdesktop-5.0
+          - url: /dotnet/desktop/winforms/?view=netdesktop-5.0&preserve-view=true
             text: Windows Forms (.NET 5)
-          - url: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8
+          - url: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8&preserve-view=true
             text: Windows Forms (.NET Framework)
           - url: /xamarin/mac
             text: Xamarin for macOS
@@ -239,7 +239,7 @@ additionalContent:
         links:
           - url: azure/index.yml
             text: Azure for .NET developers
-          - url: /dotnet/azure/migration/app-service?view=azure-dotnet
+          - url: /dotnet/azure/migration/app-service?view=azure-dotnet&preserve-view=true
             text: Migrate on-premises .NET web apps or services
           - url: /dotnet/azure/key-azure-services
             text: Azure services for .NET developers
@@ -291,23 +291,23 @@ additionalContent:
       # Card
       - title: ".NET Core API reference"
         summary: API reference documentation for .NET Core
-        url: ../api/index.md?view=netcore-3.1
+        url: ../api/index.md?view=netcore-3.1&preserve-view=true
       # Card
       - title: ".NET Framework API reference"
         summary: API reference documentation for .NET Framework
-        url: ../api/index.md?view=netframework-4.8
+        url: ../api/index.md?view=netframework-4.8&preserve-view=true
       # Card
       - title: "ASP.NET Core API reference"
         summary: API reference documentation for ASP.NET Core
-        url: ../api/index.md?view=aspnetcore-3.1
+        url: ../api/index.md?view=aspnetcore-3.1&preserve-view=true
       # Card
       - title: "ML.NET API reference"
         summary: API reference documentation for ML.NET
-        url: ../api/index.md?view=ml-dotnet
+        url: ../api/index.md?view=ml-dotnet&preserve-view=true
       # Card
       - title: ".NET for Apache Spark API reference"
         summary: API reference documentation for .NET for Apache Spark
-        url: ../api/index.md?view=spark-dotnet
+        url: ../api/index.md?view=spark-dotnet&preserve-view=true
       # Card
       - title: "C# language reference"
         summary: C# language reference and specification

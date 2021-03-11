@@ -13,7 +13,7 @@ To explore how you can move code to cloud, you are going to build a GitHub Actio
 In this article, you will:
 > [!div class="checklist"]
 
-> * learn the basic structure of a GitHub Action workflow YAML file
+> * Learn the basic structure of a GitHub Action workflow YAML file.
 > * Use a template to create a basic build workflow that build the .NET application and executes unit tests
 > * Publish the compiled application so that it is ready for deployment
 

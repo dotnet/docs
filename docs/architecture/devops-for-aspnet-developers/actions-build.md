@@ -15,7 +15,7 @@ In this article, you will:
 
 > * Learn the basic structure of a GitHub Action workflow YAML file.
 > * Use a template to create a basic build workflow that build the .NET application and executes unit tests
-> * Publish the compiled application so that it is ready for deployment
+> * Publish the compiled app so that it's ready for deployment.
 
 ## Workflow Structure
 

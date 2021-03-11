@@ -28,7 +28,7 @@ ms.assetid: bb2d9958-62fc-47c7-9511-6311171f119f
 
 The `<returns>` tag should be used in the comment for a method declaration to describe the return value.
 
-Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.
+Compile with [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) to process documentation comments to a file.
 
 ## Example
 

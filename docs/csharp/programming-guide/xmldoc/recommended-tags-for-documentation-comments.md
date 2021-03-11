@@ -42,5 +42,5 @@ If you want angle brackets to appear in the text of a documentation comment, use
 ## See also
 
 - [C# programming guide](../index.md)
-- [-doc (C# compiler options)](../../language-reference/compiler-options/doc-compiler-option.md)
+- [**DocumentationFile** (C# compiler options)](../../language-reference/compiler-options/output.md#documentationfile)
 - [XML documentation comments](./index.md)

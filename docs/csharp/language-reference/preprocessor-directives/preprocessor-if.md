@@ -28,7 +28,7 @@ A conditional directive beginning with a `#if` directive must explicitly be term
 
 `#define` lets you define a symbol. By then using the symbol as the expression passed to the `#if` directive, the expression evaluates to `true`.
 
-You can also define a symbol with the [-define](../compiler-options/define-compiler-option.md) compiler option. You can undefine a symbol with [#undef](preprocessor-undef.md).
+You can also define a symbol with the [**DefineConstants**](../compiler-options/language.md#defineconstants) compiler option. You can undefine a symbol with [#undef](preprocessor-undef.md).
 
 A symbol that you define with `-define` or with `#define` doesn't conflict with a variable of the same name. That is, a variable name should not be passed to a preprocessor directive, and a symbol can only be evaluated by a preprocessor directive.
 

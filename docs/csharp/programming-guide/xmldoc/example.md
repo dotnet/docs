@@ -28,7 +28,7 @@ ms.assetid: 32d6e73b-2554-4abb-83ee-a1e321334fd2
 
 The `<example>` tag lets you specify an example of how to use a method or other library member. This commonly involves using the [\<code>](./code.md) tag.
 
-Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.
+Compile with [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) to process documentation comments to a file.
 
 ## Example
 

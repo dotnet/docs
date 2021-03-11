@@ -105,7 +105,7 @@ conceptualContent:
           text: .NET Framework (Windows) apps
         - url: /answers/products/dotnet
           itemType: get-started
-          text: .NET on Q&A
+          text: .NET Q&A
     # Card
     - title: Develop .NET apps
       links:
@@ -157,7 +157,7 @@ conceptualContent:
         text: All architecture guides
 
 # tools section (optional)
-## Languages: C#, F#, and VB
+## Languages: C#, F#, and Visual Basic
 tools:
   title: Programming languages # < 60 chars (optional)
   summary: "You can write .NET apps in C#, F#, or Visual Basic."
@@ -225,22 +225,22 @@ additionalContent:
       - title: Microservices
         links:
           - url: architecture/dapr-for-net-developers/index.md
-            text: Dapr for .NET Developers
+            text: Dapr for .NET developers
           - url: architecture/cloud-native/index.md
             text: Cloud native .NET apps
-          - url: https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/intro
+          - url: /learn/aspnet/microservice-tutorial/intro
             text: Create your first .NET microservice
           - url: architecture/serverless/index.md
             text: Serverless apps with Azure
           - url: architecture/microservices/index.md
-            text: Architecture for Containerized .NET apps
+            text: Architecture for containerized .NET apps
       # Card
       - title: Cloud
         links:
           - url: azure/index.yml
             text: Azure for .NET developers
           - url: /dotnet/azure/migration/app-service?view=azure-dotnet
-            text: Migrate .NET web app or service
+            text: Migrate on-premises .NET web apps or services
           - url: /dotnet/azure/key-azure-services
             text: Azure services for .NET developers
           - url: /dotnet/azure/sdk/azure-sdk-for-dotnet

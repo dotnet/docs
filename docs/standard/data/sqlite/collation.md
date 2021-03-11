@@ -15,7 +15,7 @@ Collating sequences are used by SQLite when comparing TEXT values to determine o
 
 ## Custom collation
 
-You can also define your own collating sequences or override the built-in ones using <xref:Microsoft.Data.Sqlite.SqliteConnection.CreateCollation%2A>. The following example shows overriding the NOCASE collation to support Unicode characters. The [full sample code](https://github.com/dotnet/docs/blob/master/samples/snippets/standard/data/sqlite/CollationSample/Program.cs) is available on GitHub.
+You can also define your own collating sequences or override the built-in ones using <xref:Microsoft.Data.Sqlite.SqliteConnection.CreateCollation%2A>. The following example shows overriding the NOCASE collation to support Unicode characters. The [full sample code](https://github.com/dotnet/docs/blob/main/samples/snippets/standard/data/sqlite/CollationSample/Program.cs) is available on GitHub.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/CollationSample/Program.cs?name=snippet_Collation)]
 

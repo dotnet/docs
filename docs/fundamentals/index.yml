@@ -7,7 +7,7 @@ metadata:
   title: .NET documentation
   description: Learn about .NET, an open-source developer platform for building many different types of applications.
   ms.topic: landing-page
-  ms.date: 08/31/2020
+  ms.date: 03/10/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -24,11 +24,7 @@ landingContent:
         links:
           - text: What is .NET?
             url: https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet
-          - text: Tour of .NET
-            url: ../core/introduction.md
-          - text: Introduction to .NET Core
-            url: ../core/introduction.md
-          - text: .NET Core overview
+          - text: Introduction to .NET
             url: ../core/introduction.md
           - text: .NET Core SDK overview
             url: ../core/sdk.md
@@ -44,8 +40,6 @@ landingContent:
         links:
           - text: .NET Standard
             url: ../standard/net-standard.md
-          - text: .NET Core
-            url: ../core/introduction.md
           - text: Target frameworks
             url: ../standard/frameworks.md
           - text: Common Language Runtime (CLR)

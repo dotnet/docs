@@ -46,7 +46,7 @@ using System;
 Console.WriteLine("Hello World!");
 ```
 
-This action simplifies what's needed to begin exploring new ideas. You can use top-level statements for scripting scenarios, or to explore. Once you've got the basics working, you can start refactoring the code and create methods, classes, or other assemblies for reusable components you've built. Top-level statements do enable quick experimentation and beginner tutorials. They also provide a smooth path from experimentation to full programs.
+This feature simplifies what's needed to begin exploring new ideas. You can use top-level statements for scripting scenarios, or to explore. Once you've got the basics working, you can start refactoring the code and create methods, classes, or other assemblies for reusable components you've built. Top-level statements do enable quick experimentation and beginner tutorials. They also provide a smooth path from experimentation to full programs.
 
 Top-level statements are executed in the order they appear in the file. Top-level statements can only be used in one source file in your application. The compiler generates an error if you use them in more than one file.
 
@@ -150,7 +150,7 @@ Console.WriteLine();
 
 string[] answers =
 {
-    "It is certain.",       "Reply hazy, try again.",     "Don’t count on it.",
+    "It is certain.",       "Reply hazy, try again.",     "Don't count on it.",
     "It is decidedly so.",  "Ask again later.",           "My reply is no.",
     "Without a doubt.",     "Better not tell you now.",   "My sources say no.",
     "Yes – definitely.",    "Cannot predict now.",        "Outlook not so good.",
@@ -200,7 +200,7 @@ The preceding code creates a local function inside your main method. That's stil
 
 :::code language="csharp" source="snippets/top-level-statements/UtilitiesPassOne.cs" ID="SnippetUtilities":::
 
-Top-level statements can only be in one file, and that file cannot contain namespaces or types.
+A file that has top-level statements can also contain namespaces and types at the end of the file, after the top-level statements. But for this tutorial you put the animation method in a separate file to make it more readily reusable.
 
 Finally, you can clean the animation code to remove some duplication:
 
@@ -216,4 +216,4 @@ This adds the call to `Utilities.ShowConsoleAnimation`, and adds an additional `
 
 Top-level statements make it easier to create simple programs for use to explore new algorithms. You can experiment with algorithms by trying different snippets of code. Once you've learned what works, you can refactor the code to be more maintainable.
 
-Top-level statements simplify programs that are based on console applications. These include Azure functions, GitHub actions, and other small utilities.
+Top-level statements simplify programs that are based on console applications. These include Azure functions, GitHub actions, and other small utilities. For more information, see [Top-level statements (C# Programming Guide)](../../programming-guide/main-and-command-args/top-level-statements.md).

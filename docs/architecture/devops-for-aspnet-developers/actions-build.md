@@ -10,7 +10,7 @@ ms.date: 03/04/2021
 
 To explore how you can move code to cloud, you are going to build a GitHub Actions workflow file for the Simple Feed Reader application you have already deployed to Azure App Service.
 
-In this article you will:
+In this article, you will:
 > [!div class="checklist"]
 
 > * learn the basic structure of a GitHub Action workflow YAML file

@@ -36,10 +36,10 @@ namespace Patterns
 
             static string GetCalendarSeason(DateTime date) => date.Month switch
             {
-                >= 3 and <= 5 => "spring",
-                >= 6 and <= 8 => "summer",
-                >= 9 and <= 11 => "autumn",
-                12 or (>= 1 and <= 2) => "winter",
+                >= 3 and < 6 => "spring",
+                >= 6 and < 9 => "summer",
+                >= 9 and < 12 => "autumn",
+                12 or (>= 1 and < 3) => "winter",
                 _ => throw new ArgumentOutOfRangeException(nameof(date), $"Date with unexpected month: {date.Month}."),
             };
             // </WithCombinators>

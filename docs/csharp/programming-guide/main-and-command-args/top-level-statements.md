@@ -82,6 +82,7 @@ The compiler generates a method to serve as the program entry point for a projec
 ## C# language specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+[Top-level statements](~/_csharplang/proposals/csharp-9.0/top-level-statements.md)
 
 ## See also
 

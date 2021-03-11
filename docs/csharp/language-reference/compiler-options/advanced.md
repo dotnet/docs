@@ -102,6 +102,9 @@ or
 
 Where `Program` is the type that contains the `Main` method. The provided class name must be fully qualified; it must include the full namespace containing the class, followed by the class name. For example, when the `Main` method is located inside the `Program` class in the `MyApplication.Core` namespace, the compiler option has to be `-main:MyApplication.Core.Program`. If your compilation includes more than one type with a [`Main`](../../programming-guide/main-and-command-args/index.md) method, you can specify which type contains the `Main` method.
 
+> [!NOTE]
+> This option can't be used for a project that includes [top-level statements](../../programming-guide/main-and-command-args/top-level-statements.md), even if that project contains one or more `Main` methods.
+
 ## GenerateFullPaths
 
 The **GenerateFullPaths** option causes the compiler to specify the full path to the file when listing compilation errors and warnings.

@@ -28,10 +28,10 @@ You can generate those assets from your own datasets without coding by yourself,
 
 Currently, the ML Tasks supported by the ML.NET CLI are:
 
-- classification (binary and multi-class)
+- classification
 - regression
 - recommendation
-- Future: other machine learning tasks such as image-classification, ranking, anomaly-detection, clustering
+- image classification
 
 Example of usage (classification scenario):
 

@@ -103,7 +103,7 @@ You can see the following:
 1. There are five steps:
     1. `acions/checkout@2` is an action that checks out the code in the repo onto the runner.
     1. `actions/setup-dotnet@v1` is an action that sets up the .NET CLI. This step also specifies a `name` attribute for the logs and the `dotnet-version` parameter within the `with` object.
-    1. Three `run` steps that execute `dotnet restore`, `dotnet build` and `dotnet test`. `name` attributes are also specified for these `run` steps to make the logs look pretty.
+    1. Three `run` steps that execute `dotnet restore`, `dotnet build`, and `dotnet test`. `name` attributes are also specified for these `run` steps to make the logs look pretty.
 
 ## Publishing the output
 

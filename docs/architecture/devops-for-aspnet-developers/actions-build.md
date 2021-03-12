@@ -99,7 +99,7 @@ You can see the following:
 
 1. There is a `name` that names the workflow.
 1. The `on` object specifies when this workflow should run. This workflow has two events that trigger it: `push` to `main` and `pull_request` to `main`. Each time someone commits to `main` or creates a pull request (PR) to `main`, this workflow will execute.
-1. There is a single `job` called `build`. This build should run on a hosted agent - `ubuntu_latest` specifies the most recent ubuntu hosted agent.
+1. There is a single `job` called `build`. This build should run on a hosted agent. `ubuntu_latest` specifies the most recent Ubuntu hosted agent.
 1. There are five steps:
     1. `acions/checkout@2` is an action that checks out the code in the repo onto the runner.
     1. `actions/setup-dotnet@v1` is an action that sets up the .NET CLI. This step also specifies a `name` attribute for the logs and the `dotnet-version` parameter within the `with` object.

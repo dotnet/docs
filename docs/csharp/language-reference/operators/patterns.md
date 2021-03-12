@@ -1,7 +1,7 @@
 ---
 title: "Patterns - C# reference"
 description: "Learn about the patterns supported by C# switch and is expressions and C# switch statement - C# reference"
-ms.date: 03/02/2021
+ms.date: 03/10/2021
 helpviewer_keywords: 
   - "pattern matching [C#]"
 ---
@@ -62,6 +62,10 @@ Use the constant pattern to check for `null`, as the following example shows:
 
 The compiler guarantees that no user-overloaded equality operator `==` is invoked when expression `x is null` is evaluated.
 
+Beginning with C# 9.0, you can use the [negated](#pattern-combinators) `null` constant pattern to check for non-null, as the following example shows:
+
+:::code language="csharp" source="snippets/patterns/ConstantPattern.cs" id="NonNullCheck":::
+
 ## Discard pattern
 
 Beginning with C# 8.0, you use the *discard pattern* `_` to match any expression, including `null`, as the following example shows:
@@ -71,6 +75,40 @@ Beginning with C# 8.0, you use the *discard pattern* `_` to match any expression
 The discard pattern is useful in `switch` expressions. If none of a `switch` expression's patterns matches an input, the runtime throws an exception. To guarantee that a `switch` expression handles all possible values of its input as you want, provide an arm with the discard pattern. As a `switch` expression evaluates its arms in text order, the arm with the discard pattern must be last.
 
 The discard pattern cannot be a pattern in an `is` expression or a `switch` statement.
+
+## Relational patterns
+
+Beginning with C# 9.0, you use a *relational pattern* to compare an expression result with a constant, as the following example shows:
+
+:::code language="csharp" source="snippets/patterns/RelationalPatterns.cs" id="BasicExample":::
+
+In a relational pattern, you can use any of the [relational operators](comparison-operators.md) `<`, `>`, `<=`, or `>=`. The right-hand part of a relational pattern must be a constant expression. That constant expression can be of an [integral](../builtin-types/integral-numeric-types.md), [floating-point](../builtin-types/floating-point-numeric-types.md), [char](../builtin-types/char.md), or [enum](../builtin-types/enum.md) type.
+
+To check if an expression value is at a certain range, match it against a [combined pattern](#pattern-combinators), as the following example shows:
+
+:::code language="csharp" source="snippets/patterns/RelationalPatterns.cs" id="WithCombinators":::
+
+A relational pattern doesn't match an expression if an expression result is `null` or it fails to convert to the type of a constant by a nullable or unboxing conversion.
+
+## Pattern combinators
+
+Beginning with C# 9.0, you use the `not`, `and`, and `or` pattern combinators to create the following patterns from other patterns:
+
+- *Negation* `not` pattern that matches an expression when the negated pattern doesn't match the expression. For example, you can negate the [constant](#constant-pattern) `null` pattern to check if an expression is non-null, as the following code shows:
+
+  :::code language="csharp" source="snippets/patterns/PatternCombinators.cs" id="NotPattern":::
+
+- *Conjunctive* `and` pattern that matches an expression when both patterns match the expression. For example, you can combine [relational patterns](#relational-patterns) to check if a value is in a certain range, as the following code shows:
+
+  :::code language="csharp" source="snippets/patterns/PatternCombinators.cs" id="AndPattern":::
+
+- *Disjunctive* `or` pattern that matches an expression when either of patterns matches the expression, as the following example shows:
+
+  :::code language="csharp" source="snippets/patterns/PatternCombinators.cs" id="OrPattern":::
+
+As the preceding example shows, you can repeatedly use the pattern combinators in a pattern. When you use both `and` and `or` pattern combinators within one pattern, `and` has higher precedence than `or`. To explicitly specify the precedence, use parentheses, as the following example shows:
+
+:::code language="csharp" source="snippets/patterns/PatternCombinators.cs" id="WithParentheses":::
 
 ## C# language specification
 

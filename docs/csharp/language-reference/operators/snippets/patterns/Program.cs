@@ -17,6 +17,14 @@ namespace Patterns
             Console.WriteLine("--- Discard pattern -------------------------");
             DiscardPattern.Examples();
             Console.WriteLine();
+
+            Console.WriteLine("--- Relational patterns ---------------------");
+            RelationalPatterns.Examples();
+            Console.WriteLine();
+
+            Console.WriteLine("--- Pattern combinators ---------------------");
+            PatternCombinators.Examples();
+            Console.WriteLine();
         }
     }
 }

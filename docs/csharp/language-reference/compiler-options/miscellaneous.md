@@ -1,7 +1,7 @@
 ---
-description: "Miscellaneous C# Compiler Options"
+description: "Miscellaneous C# Compiler Options. These options provide general options to the compiler."
 title: "C# Compiler Options that don't fit other categories"
-ms.date: 02/28/2021
+ms.date: 03/12/2021
 f1_keywords: 
   - "cs.build.options"
 helpviewer_keywords: 
@@ -11,7 +11,7 @@ helpviewer_keywords:
 ---
 # Miscellaneous C# Compiler Options
 
-The following options control compiler inputs. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
+The following options control miscellaneous compiler behavior. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
 
 - **ResponseFiles** / `-@`: Read response file for more options.
 - **NoLogo** / `-nologo` : Suppress compiler copyright message.

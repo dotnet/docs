@@ -1,7 +1,7 @@
 ---
-description: "Advanced C# Compiler Options"
+description: "Advanced C# Compiler Options. These options are used in advanced scenarios."
 title: "C# Compiler Options - advanced scenarios"
-ms.date: 02/18/2021
+ms.date: 03/12/2021
 f1_keywords: 
   - "cs.build.options"
 helpviewer_keywords: 

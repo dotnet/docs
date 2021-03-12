@@ -1,7 +1,7 @@
 ---
-description: "C# Compiler Options to control input files for compilation"
+description: "C# Compiler Options to control input files for compilation. These options specify how the compiler reads metadata from dependent assemblies and modules."
 title: "C# Compiler Options - input file options"
-ms.date: 02/18/2021
+ms.date: 03/12/2021
 f1_keywords: 
   - "cs.build.options"
 helpviewer_keywords: 

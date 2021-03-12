@@ -1,7 +1,7 @@
 ---
-description: "C# Compiler Options for security options"
+description: "C# Compiler Options for security. Thee options control signing assemblies or address space layout."
 title: "C# Compiler Options - security options"
-ms.date: 02/28/2021
+ms.date: 03/12/2021
 f1_keywords: 
   - "cs.build.options"
 helpviewer_keywords: 
@@ -12,7 +12,7 @@ helpviewer_keywords:
 ---
 # C# Compiler Options for security options
 
-The following options control compiler inputs. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
+The following options control compiler security options. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
 
 - **DelaySign** / `-delaysign`: Delay-sign the assembly using only the public portion of the strong name key.
 - **KeyFile** / `-keyfile` : Specify a strong name key file.

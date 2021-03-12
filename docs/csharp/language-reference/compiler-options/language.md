@@ -1,7 +1,7 @@
 ---
-description: "C# Compiler Options for language feature rules"
+description: "C# Compiler Options for language feature rules. These options control how the compiler interprets certain language constructs."
 title: "C# Compiler Options - language feature rules"
-ms.date: 02/28/2021
+ms.date: 03/12/2021
 f1_keywords: 
   - "cs.build.options"
 helpviewer_keywords: 
@@ -13,7 +13,7 @@ helpviewer_keywords:
 ---
 # C# Compiler Options for language feature rules
 
-The following options control compiler inputs. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
+The following options control how the compiler interprets language features. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
 
 - **CheckForOverflowUnderflow** / `-checked`: Generate overflow checks.
 - **AllowUnsafeBlocks** / `-unsafe` : Allow 'unsafe' code.

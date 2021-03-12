@@ -1,7 +1,7 @@
 ---
-description: "C# Compiler Options that affect compiler output"
+description: "C# Compiler Options that affect compiler output. These options control the assembly generation from a compilation."
 title: "C# Compiler Options - Output options"
-ms.date: 02/18/2021
+ms.date: 03/122021
 f1_keywords: 
   - "cs.build.options"
 helpviewer_keywords: 
@@ -13,12 +13,12 @@ helpviewer_keywords:
 ---
 # C# Compiler Options for optimization
 
-The following options control compiler optimizations for size and speed. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
+The following options control compiler output generation. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
 
+- **DocumentationFile** / `-doc`: Generate XML doc file from `///` comments.
 - **OutputAssembly** / `-out`: Specify the output assembly file.
 - **ProduceReferenceAssembly** / `-refout`: Generate a reference assembly.
 - **TargetType** `-target`: Specify the type of the output assembly.
-- **Doc** / `-doc`: Generate XML doc file from `///` comments.
 - **PlatformTarget** / `-platform`: Specify the target platform CPU.
 
 ## DocumentationFile
@@ -78,7 +78,7 @@ The **anycpu32bitpreferred** setting is valid only for executable (.EXE) files, 
 
 You set the **PlatformTarget** option from **Build** properties page for your project in Visual Studio.
 
-The behavior of **anycpu** has some additional nuances on .NET Core and .NET 5 and later releases. When you set **anycpu**, publish your app and execute it with either the x86 `dotnet.exe` or the x64 `dotnet.exe`. For self-contained apps, the `dotnet publish` step packages the executable for the configure RID. 
+The behavior of **anycpu** has some additional nuances on .NET Core and .NET 5 and later releases. When you set **anycpu**, publish your app and execute it with either the x86 `dotnet.exe` or the x64 `dotnet.exe`. For self-contained apps, the `dotnet publish` step packages the executable for the configure RID.
 
 ## ProduceReferenceAssembly
 

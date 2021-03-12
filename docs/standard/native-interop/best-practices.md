@@ -215,7 +215,7 @@ A Windows `PVOID` which is a C `void*` can be marshaled as either `IntPtr` or `U
 
 There are rare instances when built-in support for a type is removed.
 
-The [`UnmanagedType.HString`](xref:System.Runtime.InteropServices.UnmanagedType) built-in marshal support was removed in the .NET 5 release. Binaries built that use this marshalling type and that target previous framework must be recompiled. Marshalling of this type is still possible but must be done manually. Below is an example that will work in moving forward and that is compatible with previous frameworks.
+The [`UnmanagedType.HString`](xref:System.Runtime.InteropServices.UnmanagedType) built-in marshal support was removed in the .NET 5 release. You must recompile binaries that use this marshalling type and that target a previous framework. It's still possible to marshal this type, but you must marshal it manually, as the following code example shows. This code will work moving forward and is also compatible with previous frameworks.
 
 ```csharp
 static class HSTRING

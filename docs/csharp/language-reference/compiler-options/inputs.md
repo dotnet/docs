@@ -13,22 +13,9 @@ helpviewer_keywords:
 
 The following options control compiler inputs. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
 
-- **AddModules** / `-addmodule`: Add a module (created with `target:module` to this assembly.)
 - **References** / `-reference` or `-references`: Reference metadata from the specified assembly file or files.
+- **AddModules** / `-addmodule`: Add a module (created with `target:module` to this assembly.)
 - **EmbedInteropTypes** / `-link`: Embed metadata from the specified interop assembly files.
-
-## AddModules
-
-This option adds a module that was created with the `<TargetType>module</TargetType>` switch to the current compilation:
-
-```xml
-<AddModule Include=file1 />
-<AddModule Include=file2 />
-```
-
-Where `file`, `file2` are output files that contain metadata. The file can't contain an assembly manifest. To import more than one file, separate file names with either a comma or a semicolon. All modules added with **AddModules** must be in the same directory as the output file at run time. That is, you can specify a module in any directory at compile time but the module must be in the application directory at run time. If the module isn't in the application directory at run time, you'll get a <xref:System.TypeLoadException>. `file` can't contain an assembly. For example, if the output file was created with [**TargetType**](output.md#targettype) option of **module**, its metadata can be imported with **AddModules**.
-
-If the output file was created with a [**TargetType**](output.md#targettype) option other than **module**, its metadata cannot be imported with **AddModules** but can be imported with [**References**](#references) option.
 
 ## References
 
@@ -50,6 +37,19 @@ In the previous example, `LS` is the valid C# identifier that represents a root 
 
 > [!NOTE]
 > In Visual Studio, use the **Add Reference** command. For more information, see [How to: Add or Remove References By Using the Reference Manager](/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager).
+
+## AddModules
+
+This option adds a module that was created with the `<TargetType>module</TargetType>` switch to the current compilation:
+
+```xml
+<AddModule Include=file1 />
+<AddModule Include=file2 />
+```
+
+Where `file`, `file2` are output files that contain metadata. The file can't contain an assembly manifest. To import more than one file, separate file names with either a comma or a semicolon. All modules added with **AddModules** must be in the same directory as the output file at run time. That is, you can specify a module in any directory at compile time but the module must be in the application directory at run time. If the module isn't in the application directory at run time, you'll get a <xref:System.TypeLoadException>. `file` can't contain an assembly. For example, if the output file was created with [**TargetType**](output.md#targettype) option of **module**, its metadata can be imported with **AddModules**.
+
+If the output file was created with a [**TargetType**](output.md#targettype) option other than **module**, its metadata cannot be imported with **AddModules** but can be imported with [**References**](#references) option.
 
 ## EmbedInteropTypes
 

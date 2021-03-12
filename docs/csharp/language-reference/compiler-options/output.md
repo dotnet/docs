@@ -1,25 +1,25 @@
 ---
-description: "C# Compiler Options that affect compiler output. These options control the assembly generation from a compilation."
+description: "C# Compiler Options that control compiler output. These options control the assembly generation from a compilation."
 title: "C# Compiler Options - Output options"
-ms.date: 03/122021
+ms.date: 03/12/2021
 f1_keywords: 
   - "cs.build.options"
 helpviewer_keywords: 
-  - "OutputAssembly compiler option [C#]"
-  - "ProduceReferenceAssembly compiler option [C#]"
-  - "Target compiler option [C#]"
   - "DocumentationFile compiler option [C#]"
+  - "OutputAssembly compiler option [C#]"
   - "PlatformTarget compiler option [C#]"
+  - "ProduceReferenceAssembly compiler option [C#]"
+  - "TargetType compiler option [C#]"
 ---
-# C# Compiler Options for optimization
+# C# Compiler Options that control compiler output
 
 The following options control compiler output generation. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
 
 - **DocumentationFile** / `-doc`: Generate XML doc file from `///` comments.
 - **OutputAssembly** / `-out`: Specify the output assembly file.
+- **PlatformTarget** / `-platform`: Specify the target platform CPU.
 - **ProduceReferenceAssembly** / `-refout`: Generate a reference assembly.
 - **TargetType** `-target`: Specify the type of the output assembly.
-- **PlatformTarget** / `-platform`: Specify the target platform CPU.
 
 ## DocumentationFile
 

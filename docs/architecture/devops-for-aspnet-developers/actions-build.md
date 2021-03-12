@@ -152,7 +152,7 @@ Now that you've successfully built and tested the code, add steps that publish t
     ![Viewing artifacts in the summary page](./media/actions/build/view-uploaded-artifact.jpg)
     **Figure 8** Viewing artifacts in the summary page.
 
-### Final Workflow File
+### Final workflow file
 
 The final workflow file should look something like this:
   

@@ -65,7 +65,7 @@ One important principle of effective DevOps is to build once, deploy many times.
 
 ## Dissect the workflow file
 
-Let's have a look at the workflow YAML file that you have so far:
+Let's look at the workflow YAML file that you have so far:
 
 ```yml
 name: .NET

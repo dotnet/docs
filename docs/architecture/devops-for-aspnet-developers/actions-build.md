@@ -19,7 +19,7 @@ In this article, you will:
 
 ## Workflow Structure
 
-Workflows are captured in YML files and all have:
+Workflows are captured in YAML files and all have the following things:
 
 - a `name`
 - a trigger, defined by an `on` section

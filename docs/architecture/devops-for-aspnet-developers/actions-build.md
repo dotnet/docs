@@ -45,7 +45,7 @@ One important principle of effective DevOps is to build once, deploy many times.
     ![Creating a new workflow](./media/actions/build/new-action.jpg)
     **Figure 1** Creating a new workflow.
 
-1. Commit the file onto the main branch. Since you have defined a trigger condition for _commits to main_, this commit should trigger the workflow to run.
+1. Commit the file onto the `main` branch. Since you have defined a trigger condition for *commits to main*, this commit should trigger the workflow to run.
 
     ![Commit the YAML file](./media/actions/build/commit-workflow.jpg)
     **Figure 2** Commit the YAML file.

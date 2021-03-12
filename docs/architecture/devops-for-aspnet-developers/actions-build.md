@@ -35,7 +35,7 @@ Each `job` will specify what runner GitHub should use to execute the `steps`. Yo
 > [!TIP]
 > You can read more about GitHub Actions YAML syntax [here](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions).
 
-## Create a Basic Build Workflow
+## Create a basic build workflow
 
 One important principle of effective DevOps is to build once, deploy many times. You are going to start by creating a workflow that will build a basic .NET application. In the next step, you will publish the output so that you are ready to deploy.
 

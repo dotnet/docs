@@ -3,7 +3,7 @@ title: 'Tutorial: Detect objects in images with Model Builder'
 description: This tutorial illustrates how to build an object detection model using ML.NET Model Builder and Azure ML to detect stop signs in images.
 author: briacht
 ms.author: brachtma
-ms.date: 3/11/2021
+ms.date: 3/12/2021
 ms.topic: tutorial
 ms.custom: mlnet-tooling
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to detect stop signs in images using Model Builder.
@@ -47,7 +47,7 @@ Some use cases for object detection include:
 - Object Counting
 - Activity Recognition
 
-This sample creates a C# .NET Core console application that detects stop signs in images using a machine learning model built with Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://sourcecodehere.com) GitHub repository.
+This sample creates a C# .NET Core console application that detects stop signs in images using a machine learning model built with Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/modelbuilder/ObjectDetection_StopSigns) GitHub repository.
 
 ## Prepare and understand the data
 
@@ -55,14 +55,13 @@ This sample creates a C# .NET Core console application that detects stop signs i
 
 The Stop Sign dataset consists of 50 images, each of which contain at least one stop sign.
 
-The first thing you need to do is annotate your images, or draw bounding boxes around the stop signs in each image.
+The first thing you need to do is annotate your images, or draw bounding boxes around the stop signs in each image. In this tutorial, you will annotate your images with a tool called [VoTT](https://github.com/microsoft/VoTT).
 
-In this tutorial, you will annotate your images with a tool called [VoTT](https://github.com/microsoft/VoTT).
-
-> If you want to skip the data labeling step, you can use the [X.json](https://linkhere.com) provided in the repo.
+TODO: If you want to skip the data labeling step, you can use the JSON file in the [assets folder](https://linkhere.com) provided in the repo.
 
 ### Create a new VoTT project
 
+TODO:
 1. [Download the dataset](https://datasetlinkhere) of 50 stop sign images and unzip.
 1. [Download VoTT](https://github.com/Microsoft/VoTT/releases) (Visual Object Tagging Tool).
 1. Open VoTT and select **New Project**.
@@ -209,30 +208,34 @@ Two projects are created as a result of the training process.
 - *StopSignDetectionML.Model*: A .NET Standard class library containing the data models that define the schema of input and output model data, the saved version of the best performing model during training, and a helper class called `ConsumeModel` to make predictions.
 
 1. In the code step of Model Builder, select **Add Projects** to add the auto-generated projects to the solution.
-1. Open the *Program.cs* file in the *StopSignDetection* project.
-1. Add the following using statement to reference the *StopSignDetectionML.Model* project:
+1. Open the *Program.cs* file in the *StopSignDetection* project, and add the following using statement at the top of the file to reference the *StopSignDetectionML.Model* project:
 
-    [!code-csharp [ProgramUsings](~/machinelearning-samples/samples/modelbuilder/MulticlassClassification_RestaurantViolations/RestaurantViolations/Program.cs#L2)]
+    [!code-csharp [ProgramUsings](~/machinelearning-samples/samples/modelbuilder/ObjectDetection_StopSigns/StopSignDetection/Program.cs#L2)]
 
-1. To make a prediction on new images using the model, create a new instance of the `ModelInput` class with the `Input` property set to the url of your test image inside the `Main` method of your application.
+1. Download the following [test image](~/machinelearning-samples/samples/modelbuilder/ObjectDetection_StopSigns/StopSignDetection/test-image1.jpeg).
+1. Create a new instance of the `ModelInput` class with the `ImageSource` property set to the filepath of your test image inside the `Main` method of your application. Replace the "Hello World" statement with the following code:
 
-    [!code-csharp [TestData](~/machinelearning-samples/samples/modelbuilder/MulticlassClassification_RestaurantViolations/RestaurantViolations/Program.cs#L11-L15)]
+    [!code-csharp [InputData](~/machinelearning-samples/samples/modelbuilder/ObjectDetection_StopSigns/StopSignDetection/Program.cs#L11-L15)]
 
-1. Use the `Predict` method from the `ConsumeModel` class. The `Predict` method loads the trained model, creates a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) for the model, and uses it to make predictions on new data.
+1. Use the `Predict` method from the `ConsumeModel` class to load the trained model, create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) for the model, and make predictions on new data. Add the following code below the `ModelInput` statement:
 
-    [!code-csharp [Prediction](~/machinelearning-samples/samples/modelbuilder/MulticlassClassification_RestaurantViolations/RestaurantViolations/Program.cs#L17-L24)]
+    [!code-csharp [Prediction](~/machinelearning-samples/samples/modelbuilder/ObjectDetection_StopSigns/StopSignDetection/Program.cs#L15)]
+
+1. Print out the Prediction's output, including the label, coordinates, and score by adding the following code:
+
+    [!code-csharp [PrintResults](~/machinelearning-samples/samples/modelbuilder/ObjectDetection_StopSigns/StopSignDetection/Program.cs#L17-L18)]
 
 1. Run the application.
 
     The output generated by the program should look similar to the snippet below:
 
     ```bash
-    Inspection Type: Complaint
-    Violation Description: Inadequate sewage or wastewater disposal
-    Risk Category: Moderate Risk
+    Predicted Boxes:
+    
+    Top: 89.453415, Left: 481.95343, Right: 724.8073, Bottom: 388.32385, Label: Stop-Sign, Score: 0.99539465
     ```
 
-Congratulations! You've successfully built a machine learning model to detect stop signs in images using Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/modelbuilder/MulticlassClassification_RestaurantViolations) GitHub repository.
+Congratulations! You've successfully built a machine learning model to detect stop signs in images using Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/modelbuilder/ObjectDetection_StopSigns) GitHub repository.
 
 ## Additional resources
 

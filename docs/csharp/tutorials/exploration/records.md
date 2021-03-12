@@ -39,7 +39,7 @@ You can also declare *positional records* using a more concise syntax. The compi
 
 ## Build temperature data
 
-Data and statistics are among the scenarios where you'll want to use records. For this tutorial, you'll build an application that computes *degree days* for different uses. *Degree days* are a measure of heat (or lack of heat) over a period of days, weeks, or months. Degree days track and predict energy usage. More hotter days means more air conditioning, and more colder days means more furnace usage. Degree days help manage plant populations. Degree days correlate to plant growth as the seasons change. Degree days help track animal migrations for species that travel to match climate.
+Data and statistics are among the scenarios where you'll want to use records. For this tutorial, you'll build an application that computes *degree days* for different uses. *Degree days* are a measure of heat (or lack of heat) over a period of days, weeks, or months. Degree days track and predict energy usage. More hotter days means more air conditioning, and more colder days means more furnace usage. Degree days help manage plant populations and correlate to plant growth as the seasons change. Degree days help track animal migrations for species that travel to match climate.
 
 The formula is based on the mean temperature on a given day and a baseline temperature. To compute degree days over time, you'll need the high and low temperature each day for a period of time. Let's start by creating a new application. Make a new console application. Create a new record type in a new file named "DailyTemperature.cs":
 
@@ -71,7 +71,7 @@ DailyTemperature { HighTemp = 80, LowTemp = 60, Mean = 70 }
 DailyTemperature { HighTemp = 85, LowTemp = 66, Mean = 75.5 }
 ```
 
-The preceding code shows the output from the override of `ToString` synthesized by the compiler. If you prefer different text, you can write your own version of `ToString`. That prevents the compiler from synthesizing a version for you.
+The preceding code shows the output from the override of `ToString` synthesized by the compiler. If you prefer different text, you can write your own version of `ToString` that prevents the compiler from synthesizing a version for you.
 
 ## Compute degree days
 
@@ -151,6 +151,6 @@ Run the finished application to see the results.
 
 This tutorial showed several aspects of records. Records provide concise syntax for reference types where the fundamental use is storing data. For object-oriented classes, the fundamental use is defining responsibilities. This tutorial focused on *positional records*, where you can use a concise syntax to declare the init-only properties for a record. The compiler synthesizes several members of the record for copying and comparing records. You can add any other members you need for your record types. You can create immutable record types knowing that none of the compiler-generated members would mutate state. And `with` expressions make it easy to support non-destructive mutation.
 
-Records add another way to define types. You use `class` definitions to create object-oriented hierarchies that focus on the responsibilities and behavior of objects. You create `struct` types for data structures that store data and are small enough to copy efficiently. You create records when you want value-based equality and comparison, don't want to copy values, and want to use reference variables.
+Records add another way to define types. You use `class` definitions to create object-oriented hierarchies that focus on the responsibilities and behavior of objects. You create `struct` types for data structures that store data and are small enough to copy efficiently. You create `record` types when you want value-based equality and comparison, don't want to copy values, and want to use reference variables.
 
 You can learn the complete description of records by reading the [C# language reference article for the record type)](../../language-reference/builtin-types/record.md) and the [proposed record type specification](~/_csharplang/proposals/csharp-9.0/records.md).

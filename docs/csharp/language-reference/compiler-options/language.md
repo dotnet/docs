@@ -121,7 +121,6 @@ The **Nullable** option lets you specify the nullable context.
 
 ```xml
 <Nullable>enable</Nullable>
-</Project>
 ```
 
 The argument must be one of `enable`, `disable`, `warnings`, or `annotations`. This option specifies the nullable context option. The `enable` argument enables the nullable context. Specifying `disable` will disable nullable context. When providing the `warnings` argument the nullable warning context is enabled. When specifying the `annotations` argument, the nullable annotation context is enabled.

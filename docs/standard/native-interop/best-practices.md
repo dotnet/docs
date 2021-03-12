@@ -211,7 +211,7 @@ A Windows `PVOID` which is a C `void*` can be marshaled as either `IntPtr` or `U
 
 [Data Type Ranges](/cpp/cpp/data-type-ranges)
 
-### Formally built-in supported types
+### Formerly built-in supported types
 
 There are rare instances when built-in support for a type is removed.
 

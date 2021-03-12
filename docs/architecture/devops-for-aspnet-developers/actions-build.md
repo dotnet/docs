@@ -33,7 +33,7 @@ Each `job` will specify what runner GitHub should use to execute the `steps`. Yo
 `Steps` can be as easy as inline commands or they can be Actions. Most CI workflows will have a combination of `run` steps (for executing scripts) and Actions. Actions are pulled into the workflow by referencing the Action repo (and optionally a tag or commit hash for specific versions) and specifying any parameters using the `with` keyword.
 
 > [!TIP]
-> You can read more about GitHub Actions YAML syntax [here](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions).
+> You can read more about GitHub Actions YAML syntax [here](https://docs.github.com/actions/reference/workflow-syntax-for-github-actions).
 
 ## Create a basic build workflow
 

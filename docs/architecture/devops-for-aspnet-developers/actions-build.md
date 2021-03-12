@@ -50,7 +50,7 @@ One important principle of effective DevOps is to build once, deploy many times.
     ![Commit the YAML file](./media/actions/build/commit-workflow.jpg)
     **Figure 2** Commit the YAML file.
 
-1. Click on the Actions tab again. You should see a running workflow. Once the workflow has completed, you should see a successful run.
+1. Click on the **Actions** tab again. You should see a running workflow. Once the workflow has completed, you should see a successful run.
 
     ![Successful build view](./media/actions/build/build-action-success.jpg)
     **Figure 3** Successful build view.

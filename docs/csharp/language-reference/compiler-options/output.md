@@ -29,7 +29,7 @@ The **DocumentationFile** option allows you to place documentation comments in a
 <DocumentationFile>path/to/file.xml</DocumentationFile>
 ```
 
-The source code file that contains Main is output first into the XML. You'll often want to use the generated .xml file with [IntelliSense](/visualstudio/ide/using-intellisense). The *.xml* filename must be the same as the assembly name. The *.xml* file must be in the same directory as the assembly. When the assembly is referenced in a Visual Studio project, the *.xml* file is found as well. For more information about generating code comments, see [Supplying Code Comments](/visualstudio/ide/reference/generate-xml-documentation-comments). Unless you compile with [`<TargetType:Module>`](#targettype), `file` will contain `<assembly>` and `</assembly>` tags specifying the name of the file containing the assembly manifest for the output file.
+The source code file that contains Main is output first into the XML. You'll often want to use the generated .xml file with [IntelliSense](/visualstudio/ide/using-intellisense). The *.xml* filename must be the same as the assembly name. The *.xml* file must be in the same directory as the assembly. When the assembly is referenced in a Visual Studio project, the *.xml* file is found as well. For more information about generating code comments, see [Supplying Code Comments](/visualstudio/ide/reference/generate-xml-documentation-comments). Unless you compile with [`<TargetType:Module>`](#targettype), `file` will contain `<assembly>` and `</assembly>` tags specifying the name of the file containing the assembly manifest for the output file. For examples, see the article on [How to use the XML documentation features](../../programming-guide/xmldoc/how-to-use-the-xml-documentation-features.md).
 
 > [!NOTE]
 > The **DocumentationFile** option applies to all files in the project. To disable warnings related to documentation comments for a specific file or section of code, use [#pragma warning](../preprocessor-directives/preprocessor-pragma-warning.md).
@@ -77,6 +77,8 @@ On a 64-bit Windows operating system:
 The **anycpu32bitpreferred** setting is valid only for executable (.EXE) files, and it requires .NET Framework 4.5 or later. For more information about developing an application to run on a Windows 64-bit operating system, see [64-bit Applications](../../../framework/64-bit-apps.md).
 
 You set the **PlatformTarget** option from **Build** properties page for your project in Visual Studio.
+
+The behavior of **anycpu** has some additional nuances on .NET Core and .NET 5 and later releases. When you set **anycpu**, publish your app and execute it with either the x86 `dotnet.exe` or the x64 `dotnet.exe`. For self-contained apps, the `dotnet publish` step packages the executable for the configure RID. 
 
 ## ProduceReferenceAssembly
 

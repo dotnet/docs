@@ -211,6 +211,46 @@ A Windows `PVOID` which is a C `void*` can be marshaled as either `IntPtr` or `U
 
 [Data Type Ranges](/cpp/cpp/data-type-ranges)
 
+### Formally built-in supported types
+
+There are rare instances when built-in support for a type is removed.
+
+The [`UnmanagedType.HString`](xref:System.Runtime.InteropServices.UnmanagedType) built-in marshal support was removed in the .NET 5 release. Binaries built that use this marshalling type and that target previous framework must be recompiled. Marshalling of this type is still possible but must be done manually. Below is an example that will work in moving forward and that is compatible with previous frameworks.
+
+```CSharp
+static class HSTRING
+{
+    public static IntPtr FromString(string s)
+    {
+        Marshal.ThrowExceptionForHR(WindowsCreateString(s, s.Length, out IntPtr h));
+        return h;
+    }
+
+    public static void Delete(IntPtr s)
+    {
+        Marshal.ThrowExceptionForHR(WindowsDeleteString(s));
+    }
+
+    [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll", CallingConvention = CallingConvention.StdCall, ExactSpelling = true)]
+    private static extern int WindowsCreateString(
+        [MarshalAs(UnmanagedType.LPWStr)] string sourceString, int length, out IntPtr hstring);
+
+    [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll", CallingConvention = CallingConvention.StdCall, ExactSpelling = true)]
+    private static extern int WindowsDeleteString(IntPtr hstring);
+}
+
+// Usage example
+IntPtr hstring = HSTRING.FromString("HSTRING from .NET to WinRT API");
+try
+{
+    // Pass hstring to WinRT or Win32 API.
+}
+finally
+{
+    HSTRING.Delete(hstring);
+}
+```
+
 ## Structs
 
 Managed structs are created on the stack and aren't removed until the method returns. By definition then, they are "pinned" (it won't get moved by the GC). You can also simply take the address in unsafe code blocks if native code won't use the pointer past the end of the current method.

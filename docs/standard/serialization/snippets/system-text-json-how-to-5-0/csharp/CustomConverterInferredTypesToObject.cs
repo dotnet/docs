@@ -59,7 +59,7 @@ namespace CustomConverterInferredTypesToObject
 }
 
 // Produces output like the following example:
-//
+
 //Type of Date property   no converter = System.Text.Json.JsonElement
 //Type of Date property with converter = System.DateTime
 //{

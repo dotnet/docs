@@ -37,7 +37,7 @@ Each `job` will specify what runner GitHub should use to execute the `steps`. Yo
 
 ## Create a basic build workflow
 
-One important principle of effective DevOps is to build once, deploy many times. You are going to start by creating a workflow that will build a basic .NET application. In the next step, you will publish the output so that you are ready to deploy.
+One important principle of effective DevOps is to build once, deploy many times. You'll start by creating a workflow to build a basic .NET app. In the next step, you'll publish the output to prepare for deployment.
 
 1. Navigate to your GitHub repositorysitory and select the **Actions** tab.
 1. GitHub detects that there's .NET code in the repositorysitory and suggests a .NET workflow template. Select **Set up this workflow** to create a new YAML workflow file:

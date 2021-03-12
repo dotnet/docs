@@ -17,7 +17,7 @@ In this article, you will:
 > * Use a template to create a basic build workflow that builds the .NET app and executes unit tests.
 > * Publish the compiled app so that it's ready for deployment.
 
-## Workflow Structure
+## Workflow structure
 
 Workflows are captured in YAML files and all have the following things:
 

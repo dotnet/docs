@@ -8,7 +8,7 @@ ms.date: 03/04/2021
 
 [GitHub Actions](https://github.com/features/actions) allow you to automate workflows in response to events that are triggered in GitHub. Common workflows include Continuous Integration (CI) workflows, but Actions can be used to automate other processes such as sending out welcome emails when people join a repository.
 
-To explore how you can move code to cloud, you are going to build a GitHub Actions workflow file for the Simple Feed Reader application you have already deployed to Azure App Service.
+To explore how you can move code to the cloud, you'll build a GitHub Actions workflow file for the Simple Feed Reader app you've already deployed to Azure App Service.
 
 In this article, you will:
 > [!div class="checklist"]

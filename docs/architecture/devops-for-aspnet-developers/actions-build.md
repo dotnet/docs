@@ -28,7 +28,7 @@ Workflows are captured in YAML files and all have the following things:
 
 Jobs are run on _runners_. You can use _hosted runners_, which are spun up by GitHub during the workflow and then thrown away. Hosted runners are great because you don't have to maintain your own build infrastructure. For workflows that require a specific build environment, or for running workflows on a private network, you can also use _private_ runners. To create a private runner, you can install the runner on any machine that supports .NET.
 
-Each `job` will specify what runner GitHub should use to execute the `steps`. You can also specify dependencies between jobs using the `needs` attribute. Deployments jobs can also specify an `environment` to target.
+Each `job` will specify what runner GitHub should use to execute the `steps`. You can also specify dependencies between jobs using the `needs` attribute. Deployment jobs can also specify an `environment` to target.
 
 `Steps` can be as easy as inline commands or they can be Actions. Most CI workflows will have a combination of `run` steps (for executing scripts) and Actions. Actions are pulled into the workflow by referencing the Action repo (and optionally a tag or commit hash for specific versions) and specifying any parameters using the `with` keyword.
 

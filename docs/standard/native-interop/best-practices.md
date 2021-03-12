@@ -217,7 +217,7 @@ There are rare instances when built-in support for a type is removed.
 
 The [`UnmanagedType.HString`](xref:System.Runtime.InteropServices.UnmanagedType) built-in marshal support was removed in the .NET 5 release. Binaries built that use this marshalling type and that target previous framework must be recompiled. Marshalling of this type is still possible but must be done manually. Below is an example that will work in moving forward and that is compatible with previous frameworks.
 
-```CSharp
+```csharp
 static class HSTRING
 {
     public static IntPtr FromString(string s)

@@ -105,7 +105,7 @@ You can see the following:
     1. `actions/setup-dotnet@v1` is an action that sets up the .NET CLI. This step also specifies a `name` attribute for the logs and the `dotnet-version` parameter within the `with` object.
     1. Three `run` steps that execute `dotnet restore`, `dotnet build`, and `dotnet test`. `name` attributes are also specified for these `run` steps to make the logs look pretty.
 
-## Publishing the output
+## Publish the output
 
 Now that you've successfully built and tested the code, add steps that publish the output so you can deploy the web app.
 

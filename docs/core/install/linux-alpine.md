@@ -57,9 +57,17 @@ The following versions of .NET are no longer supported. The downloads for these 
 - libstdc++
 - zlib
 
-You can use a command like `apk add bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib`
+You can use a command like this:
 
-To install libgdiplus you may need to specify a repository: `apk add libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/`
+```bash
+apk add bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib
+```
+
+To install libgdiplus you may need to specify a repository:
+
+```bash
+apk add libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/
+```
 
 ## Next steps
 

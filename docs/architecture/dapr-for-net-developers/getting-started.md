@@ -250,7 +250,7 @@ Now, you'll configure communication between the services using Dapr [service inv
     }
     ```
 
-    The call to `AddDapr` registers the `DaprClient` class with the ASP.NET Core dependency injection system. That done, you can now inject an instance of `DaprClient` into your service code to communicate with the Dapr sidecar, building blocks, and components.
+    The call to `AddDapr` registers the `DaprClient` class with the ASP.NET Core dependency injection system. With the client registered, you can now inject an instance of `DaprClient` into your service code to communicate with the Dapr sidecar, building blocks, and components.
 
 1. Add a new C# class file named *WeatherForecast* to the `DaprFrontEnd` project:
 

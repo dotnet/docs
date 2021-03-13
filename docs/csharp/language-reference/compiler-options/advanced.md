@@ -286,7 +286,7 @@ The default value of the **SubsystemVersion** compiler option depends on the con
 
 ## ModuleAssemblyName
 
-Specifies an assembly whose non-public types a *.netmodule* can access. The `assembly_name` value specifies the name of the assembly whose non-public types the *.netmodule* can access.  
+Specifies the name of an assembly whose non-public types a *.netmodule* can access.
 
 ```xml
 <ModuleAssemblyName>assembly_name</ModuleAssemblyName>

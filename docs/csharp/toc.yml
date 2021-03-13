@@ -1352,9 +1352,9 @@ items:
       href: language-reference/preprocessor-directives/preprocessor-pragma-checksum.md
   - name: Compiler options
     items:
-    - name: Setting options
+    - name: How to set options
       href: language-reference/compiler-options/index.md
-    - name: Language 
+    - name: Language options
       displayName: CheckForOverflowUnderflow, checked, AllowUnsafeBlocks, unsafe, DefineConstants, define, LangVersion, langversion, Nullable, nullable
       href: language-reference/compiler-options/language.md
     - name: Output options
@@ -1363,10 +1363,10 @@ items:
     - name: Input options
       displayName: References, reference, references, AddModules, addmodule, EmbedInteropTypes, link
       href: language-reference/compiler-options/inputs.md
-    - name: Errors and warnings
+    - name: Error and warning options
       displayName: WarningLevel, warn, TreatWarningsAsErrors, warnaserror, WarningsAsErrors, WarningsNotAsErrors, DisabledWarnings, nowarn, CodeAnalysisRuleSet, ruleset, ErrorLog, errorlog, ReportAnalyzer, reportanalyzer
       href: language-reference/compiler-options/errors-warnings.md
-    - name: Code Generation
+    - name: Code generation options
       displayName: DebugType, debug, Optimize, optimize, Deterministic, deterministic, ProduceOnlyReferenceAssembly, refonly
       href: language-reference/compiler-options/code-generation.md
     - name: Security options
@@ -1375,10 +1375,10 @@ items:
     - name: Resources options
       displayName: Win32Resource, win32res, Win32Icon, win32icon, Win32Manifest, win32manifest, NoWin32Manifest, nowin32manifest, Resources, resource, LinkResources
       href: language-reference/compiler-options/resources.md
-    - name: Miscellaneous
+    - name: Miscellaneous options
       displayName: ResponseFiles, @, NoLogo, nologo, NoConfig, noconfig
       href: language-reference/compiler-options/miscellaneous.md
-    - name: Advanced
+    - name: Advanced options
       displayName: MainEntryPoint, StartupObject, main, PdbFile, pdb, PathMap, pathmap, ErrorReport, errorreport, ApplicationConfiguration, appconfig, AdditionalLibPaths, lib, GenerateFullPaths, fullpath, PreferredUILang, preferreduilang, BaseAddress, baseaddress, ChecksumAlgorithm, checksumalgorithm, CodePage, codepage, Utf8Output, utf8output, FileAlignment, filealign, ErrorEndLocation, errorendlocation, NoStandardLib, nostdlib, SubsystemVersion, subsystemversion, ModuleAssemblyName, moduleassemblyname
       href: language-reference/compiler-options/advanced.md
   - name: Compiler errors

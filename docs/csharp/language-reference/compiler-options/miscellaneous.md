@@ -11,7 +11,7 @@ helpviewer_keywords:
 ---
 # Miscellaneous C# Compiler Options
 
-The following options control miscellaneous compiler behavior. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
+The following options control miscellaneous compiler behavior. The new MSBuild syntax is shown in **Bold**. The older *csc.exe* syntax is shown in `code style`.
 
 - **ResponseFiles** / `-@`: Read response file for more options.
 - **NoLogo** / `-nologo` : Suppress compiler copyright message.

@@ -13,17 +13,17 @@ helpviewer_keywords:
 ---
 # C# Compiler Options for language feature rules
 
-The following options control how the compiler interprets language features. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
+The following options control how the compiler interprets language features. The new MSBuild syntax is shown in **Bold**. The older *csc.exe* syntax is shown in `code style`.
 
 - **CheckForOverflowUnderflow** / `-checked`: Generate overflow checks.
-- **AllowUnsafeBlocks** / `-unsafe` : Allow 'unsafe' code.
+- **AllowUnsafeBlocks** / `-unsafe`: Allow 'unsafe' code.
 - **DefineConstants** / `-define`: Define conditional compilation symbol(s).
-- **LangVersion** / `-langversion`: Specify language version such as `default` (latest major version), or latest (latest version, including minor versions).
+- **LangVersion** / `-langversion`: Specify language version such as `default` (latest major version), or `latest` (latest version, including minor versions).
 - **Nullable** / `-nullable`: Enable nullable context, or nullable warnings.
 
 ## CheckForOverflowUnderflow
 
-The **CheckForOverflowUnderflow** option specifies whether an integer arithmetic statement that results in a value that is outside the range of the data type, and that isn't in the scope of a [checked](../keywords/checked.md) or [unchecked](../keywords/unchecked.md) keyword, causes a run-time exception.  
+The **CheckForOverflowUnderflow** option specifies whether an integer arithmetic statement that results in a value that is outside the range of the data type causes a run-time exception.  
 
 ```xml
 <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
@@ -43,16 +43,16 @@ For more information about unsafe code, see [Unsafe Code and Pointers](../../pro
 
 ## DefineConstants
 
-The **DefineConstants** option defines symbols in all source code files your program.
+The **DefineConstants** option defines symbols in all source code files of your program.
 
 ```xml
 <DefineConstants>name;name2</DefineConstants>
 ```
 
-`name`, `name2` are the name of one or more symbols that you want to define. The **DefineConstants** option has the same effect as the [#define](../preprocessor-directives/preprocessor-define.md) preprocessor directive except that the compiler option is in effect for all files in the project. A symbol remains defined in a source file until an [#undef](../preprocessor-directives/preprocessor-undef.md) directive in the source file removes the definition. When you use the -define option, an `#undef` directive in one file has no effect on other source code files in the project. You can use symbols created by this option with [#if](../preprocessor-directives/preprocessor-if.md), [#else](../preprocessor-directives/preprocessor-else.md), [#elif](../preprocessor-directives/preprocessor-elif.md), and [#endif](../preprocessor-directives/preprocessor-endif.md) to compile source files conditionally. The C# compiler itself defines no symbols or macros that you can use in your source code; all symbol definitions must be user-defined.
+This option specifies the names of one or more symbols that you want to define. The **DefineConstants** option has the same effect as the [#define](../preprocessor-directives/preprocessor-define.md) preprocessor directive except that the compiler option is in effect for all files in the project. A symbol remains defined in a source file until an [#undef](../preprocessor-directives/preprocessor-undef.md) directive in the source file removes the definition. When you use the `-define` option, an `#undef` directive in one file has no effect on other source code files in the project. You can use symbols created by this option with [#if](../preprocessor-directives/preprocessor-if.md), [#else](../preprocessor-directives/preprocessor-else.md), [#elif](../preprocessor-directives/preprocessor-elif.md), and [#endif](../preprocessor-directives/preprocessor-endif.md) to compile source files conditionally. The C# compiler itself defines no symbols or macros that you can use in your source code; all symbol definitions must be user-defined.
 
 > [!NOTE]
-> The C# `#define` does not allow a symbol to be given a value, as in languages such as C++. For example, `#define` cannot be used to create a macro or to define a constant. If you need to define a constant, use an `enum` variable. If you want to create a C++ style macro, consider alternatives such as generics. Since macros are notoriously error-prone, C# disallows their use but provides safer alternatives.
+> The C# `#define` directive does not allow a symbol to be given a value, as in languages such as C++. For example, `#define` cannot be used to create a macro or to define a constant. If you need to define a constant, use an `enum` variable. If you want to create a C++ style macro, consider alternatives such as generics. Since macros are notoriously error-prone, C# disallows their use but provides safer alternatives.
 
 ## LangVersion
 
@@ -66,15 +66,15 @@ The following values are valid:
 
 [!INCLUDE [lang-versions-table](../includes/langversion-table.md)]
 
-The default language version depends on the target framework for your application and the version of the SDK or Visual Studio installed. Those rules are defined in the [configuring the language version](../configure-language-version.md#defaults) article.
+The default language version depends on the target framework for your application and the version of the SDK or Visual Studio installed. Those rules are defined in [C# language versioning](../configure-language-version.md#defaults).
 
-Metadata referenced by your C# application isn't subject to **LangVersion** compiler option. Because each version of the C# compiler contains extensions to the language specification, **LangVersion** doesn't give you the equivalent functionality of an earlier version of the compiler.
+Metadata referenced by your C# application isn't subject to the **LangVersion** compiler option. Because each version of the C# compiler contains extensions to the language specification, **LangVersion** doesn't give you the equivalent functionality of an earlier version of the compiler.
 
 Additionally, while C# version updates generally coincide with major .NET Framework releases, the new syntax and features aren't necessarily tied to that specific framework version. While the new features definitely require a new compiler update that is also released alongside the C# revision, each specific feature has its own minimum .NET API or common language runtime requirements that may allow it to run on downlevel frameworks by including NuGet packages or other libraries.
 
 Regardless of which **LangVersion** setting you use, use the current version of the common language runtime to create your .exe or .dll. One exception is friend assemblies and [**ModuleAssemblyName**](advanced.md#moduleassemblyname), which work under **-langversion:ISO-1**.
 
-For other ways to specify the C# language version, see the [Select the C# language version](../configure-language-version.md) article.
+For other ways to specify the C# language version, see [C# language versioning](../configure-language-version.md).
 
 For information about how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.LanguageVersion%2A>.
 
@@ -123,7 +123,7 @@ The **Nullable** option lets you specify the nullable context.
 <Nullable>enable</Nullable>
 ```
 
-The argument must be one of `enable`, `disable`, `warnings`, or `annotations`. This option specifies the nullable context option. The `enable` argument enables the nullable context. Specifying `disable` will disable nullable context. When providing the `warnings` argument the nullable warning context is enabled. When specifying the `annotations` argument, the nullable annotation context is enabled.
+The argument must be one of `enable`, `disable`, `warnings`, or `annotations`. The `enable` argument enables the nullable context. Specifying `disable` will disable the nullable context. When providing the `warnings` argument the nullable warning context is enabled. When specifying the `annotations` argument, the nullable annotation context is enabled.
 
 Flow analysis is used to infer the nullability of variables within executable code. The inferred nullability of a variable is independent of the variable's declared nullability. Method calls are analyzed even when they're conditionally omitted. For instance, <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> in release mode.
 

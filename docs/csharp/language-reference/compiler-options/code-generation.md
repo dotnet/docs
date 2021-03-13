@@ -12,9 +12,9 @@ helpviewer_keywords:
 ---
 # C# Compiler Options that control code generation
 
-The following options control code generation by the compiler. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
+The following options control code generation by the compiler. The new MSBuild syntax is shown in **Bold**. The older *csc.exe* syntax is shown in `code style`.
 
-- **DebugType** / `-debug`: Emit (or don't Emit) debugging information.
+- **DebugType** / `-debug`: Emit (or don't emit) debugging information.
 - **Optimize** / `-optimize`: Enable optimizations.
 - **Deterministic** / `-deterministic`: Produce byte-for-byte equivalent output from the same input source.
 - **ProduceOnlyReferenceAssembly** / `-refonly`: Produce a reference assembly, instead of a full assembly, as the primary output.
@@ -22,13 +22,12 @@ The following options control code generation by the compiler. The new MSBuild s
 ## DebugType
 
 The **DebugType** option causes the compiler to generate debugging information and place it in the output file or files. Debugging information is added by default for the *Debug* build configuration. It is off by default for the *Release* build configuration.
-may be affected by the selected build configuration: *Debug* or *Release*.
 
 ```xml
 <DebugType>pdbonly</DebugType>
 ```
 
-For all compiler after C# 6.0, there is no difference between *pdbonly* and *full*. Choose *pdbonly*. To change the location of the *.pdb* file, see [**PdbFile**](./advanced.md#pdbfile).
+For all compiler versions starting with C# 6.0, there is no difference between *pdbonly* and *full*. Choose *pdbonly*. To change the location of the *.pdb* file, see [**PdbFile**](./advanced.md#pdbfile).
 
 > [!IMPORTANT]
 > This section applies only to compilers older than C# 6.0.
@@ -86,6 +85,6 @@ The **ProduceOnlyReferenceAssembly** option indicates that a reference assembly 
 <ProduceOnlyReferenceAssembly></ProduceOnlyReferenceAssembly>
 ```
 
-Reference assemblies are a special type of assembly. Reference assemblies contain only the minimum amount of metadata required to represent the library's public API surface. They include declarations for all members that are significant when referencing an assembly in build tools, but exclude all member implementations and declarations of private members that have no observable impact on their API contract. For more information, see [Reference assemblies](../../../standard/assembly/reference-assemblies.md) in .NET Guide.
+Reference assemblies are a special type of assembly. Reference assemblies contain only the minimum amount of metadata required to represent the library's public API surface. They include declarations for all members that are significant when referencing an assembly in build tools, but exclude all member implementations and declarations of private members that have no observable impact on their API contract. For more information, see [Reference assemblies](../../../standard/assembly/reference-assemblies.md).
 
 The **ProduceOnlyReferenceAssembly** and [**ProduceReferenceAssembly**](output.md#producereferenceassembly) options are mutually exclusive.

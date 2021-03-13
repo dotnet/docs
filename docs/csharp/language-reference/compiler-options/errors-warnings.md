@@ -16,7 +16,7 @@ helpviewer_keywords:
 ---
 # C# Compiler Options to report errors and warnings
 
-The following options control how the compiler reports errors and warnings. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
+The following options control how the compiler reports errors and warnings. The new MSBuild syntax is shown in **Bold**. The older *csc.exe* syntax is shown in `code style`.
 
 - **WarningLevel** / `-warn`: Set warning level.
 - **TreatWarningsAsErrors** / `-warnaserror`: Treat all warnings as errors
@@ -45,9 +45,9 @@ The element value is the warning level you want displayed for the compilation: L
 |3|Displays level 2 warnings plus certain, less-severe warnings, such as warnings about expressions that always evaluate to `true` or `false`.|
 |4 (the default)|Displays all level 3 warnings plus informational warnings.|
 |5|Displays level 4 warnings plus [additional warnings](https://github.com/dotnet/roslyn/blob/a6013f3213c902c0973b2d371c3007217d610533/docs/compilers/CSharp/Warnversion%20Warning%20Waves.md) from the compiler shipped with C# 9.0.|
-|Greater than 5|Any value greater than 5 will be treated as 5. You generally put arbitrary large value (for example, `9999`) to make sure you always have all warnings if the compiler is updated with new warning levels.|
+|Greater than 5|Any value greater than 5 will be treated as 5. To make sure you always have all warnings if the compiler is updated with new warning levels, put an arbitrary large value (for example, `9999`).
 
-To get information about an error or warning, you can look up the error code in the Help Index. For other ways to get information about an error or warning, see [C# Compiler Errors](../compiler-messages/index.md). Use [**TreatWarningsAsErrors**](#treatwarningsaserrors) to treat all warnings as errors. Use **DisabledWarnings** to disable certain warnings.  
+To get information about an error or warning, you can look up the error code in the Help Index. For other ways to get information about an error or warning, see [C# Compiler Errors](../compiler-messages/index.md). Use [**TreatWarningsAsErrors**](#treatwarningsaserrors) to treat all warnings as errors. Use [**DisabledWarnings**](#disabledwarnings) to disable certain warnings.  
 
 ## TreatWarningsAsErrors
 
@@ -82,7 +82,7 @@ You use **WarningsAsErrors** to configure a set of warnings as errors. Use **War
 The **DisabledWarnings** option lets you suppress the compiler from displaying one or more warnings. Separate multiple warning numbers with a comma.
 
 ```xml
-<DisabledWarnings>number2, number2</DisabledWarnings>
+<DisabledWarnings>number1, number2</DisabledWarnings>
 ```
 
 `number1`, `number2` Warning number(s) that you want the compiler to suppress. You specify the numeric part of the warning identifier. For example, if you want to suppress *CS0028*, you could specify `<DisabledWarnings>28</DisabledWarnings>`. The compiler silently ignores warning numbers passed to **DisabledWarnings** that were valid in previous releases, but that have been removed. For example, *CS0679* was valid in the compiler in Visual Studio .NET 2002 but was removed later.

@@ -13,7 +13,7 @@ helpviewer_keywords:
 ---
 # C# Compiler Options that control compiler output
 
-The following options control compiler output generation. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
+The following options control compiler output generation. The new MSBuild syntax is shown in **Bold**. The older *csc.exe* syntax is shown in `code style`.
 
 - **DocumentationFile** / `-doc`: Generate XML doc file from `///` comments.
 - **OutputAssembly** / `-out`: Specify the output assembly file.
@@ -23,13 +23,13 @@ The following options control compiler output generation. The new MSBuild syntax
 
 ## DocumentationFile
 
-The **DocumentationFile** option allows you to place documentation comments in an XML file. To learn more about documenting your code, see the article on [Recommended Tags for Documentation Comments](../../programming-guide/xmldoc/recommended-tags-for-documentation-comments.md). The value specifies the path to the output XML file. The XML file contains the comments in the source code files of the compilation.
+The **DocumentationFile** option allows you to place documentation comments in an XML file. To learn more about documenting your code, see [Recommended Tags for Documentation Comments](../../programming-guide/xmldoc/recommended-tags-for-documentation-comments.md). The value specifies the path to the output XML file. The XML file contains the comments in the source code files of the compilation.
 
 ```xml
 <DocumentationFile>path/to/file.xml</DocumentationFile>
 ```
 
-The source code file that contains Main is output first into the XML. You'll often want to use the generated .xml file with [IntelliSense](/visualstudio/ide/using-intellisense). The *.xml* filename must be the same as the assembly name. The *.xml* file must be in the same directory as the assembly. When the assembly is referenced in a Visual Studio project, the *.xml* file is found as well. For more information about generating code comments, see [Supplying Code Comments](/visualstudio/ide/reference/generate-xml-documentation-comments). Unless you compile with [`<TargetType:Module>`](#targettype), `file` will contain `<assembly>` and `</assembly>` tags specifying the name of the file containing the assembly manifest for the output file. For examples, see the article on [How to use the XML documentation features](../../programming-guide/xmldoc/how-to-use-the-xml-documentation-features.md).
+The source code file that contains Main or top-level statements is output first into the XML. You'll often want to use the generated .xml file with [IntelliSense](/visualstudio/ide/using-intellisense). The *.xml* filename must be the same as the assembly name. The *.xml* file must be in the same directory as the assembly. When the assembly is referenced in a Visual Studio project, the *.xml* file is found as well. For more information about generating code comments, see [Supplying Code Comments](/visualstudio/ide/reference/generate-xml-documentation-comments). Unless you compile with [`<TargetType:Module>`](#targettype), `file` will contain `<assembly>` and `</assembly>` tags specifying the name of the file containing the assembly manifest for the output file. For examples, see [How to use the XML documentation features](../../programming-guide/xmldoc/how-to-use-the-xml-documentation-features.md).
 
 > [!NOTE]
 > The **DocumentationFile** option applies to all files in the project. To disable warnings related to documentation comments for a specific file or section of code, use [#pragma warning](../preprocessor-directives/preprocessor-pragma-warning.md).
@@ -44,7 +44,7 @@ The **OutputAssembly** option specifies the name of the output file. The output 
 
 Specify the full name and extension of the file you want to create. If you don't specify the name of the output file, MSBuild uses the name of the project to specify the name of the output assembly. Old style projects use the following rules:
 
-- An .exe will take its name from the source code file that contains the `Main` method.  
+- An .exe will take its name from the source code file that contains the `Main` method or top-level statements.  
 - A .dll or .netmodule will take its name from the first source code file.
 
 Any modules produced as part of a compilation become files associated with any assembly also produced in the compilation. Use [ildasm.exe](../../../framework/tools/ildasm-exe-il-disassembler.md) to view the assembly manifest to see the associated files.
@@ -120,7 +120,7 @@ The **library** option causes the compiler to create a dynamic-link library (DLL
 
 ### exe
 
-The **exe** option causes the compiler to create an executable (EXE), console application. The executable file will be created with the .exe extension. Use **winexe** to create a Windows program executable. Unless otherwise specified with the [**OutputAssembly**](#outputassembly) option, the output file name takes the name of the input file that contains the [Main](../../programming-guide/main-and-command-args/index.md) method. One and only one `Main` method is required in the source code files that are compiled into an .exe file. The [**StartupObject**](./advanced.md#mainentrypoint-or-startupobject) compiler option lets you specify which class contains the `Main` method, in cases where your code has more than one class with a `Main` method.  
+The **exe** option causes the compiler to create an executable (EXE), console application. The executable file will be created with the .exe extension. Use **winexe** to create a Windows program executable. Unless otherwise specified with the [**OutputAssembly**](#outputassembly) option, the output file name takes the name of the input file that contains the entry point ([Main](../../programming-guide/main-and-command-args/index.md) method or top-level statements). One and only one entry point is required in the source code files that are compiled into an .exe file. The [**StartupObject**](./advanced.md#mainentrypoint-or-startupobject) compiler option lets you specify which class contains the `Main` method, in cases where your code has more than one class with a `Main` method.  
 
 ### module
 

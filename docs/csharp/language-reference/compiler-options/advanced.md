@@ -222,7 +222,7 @@ In some international configurations, compiler output cannot correctly be displa
 
 ## FileAlignment
 
-The **FileAlignment** option lets you specify the size of sections in your output file. The `number` argument specifies the size of sections in the output file. Valid values are 512, 1024, 2048, 4096, and 8192. These values are in bytes.
+The **FileAlignment** option lets you specify the size of sections in your output file. Valid values are 512, 1024, 2048, 4096, and 8192. These values are in bytes.
 
 ```xml
 <FileAlignment>number</FileAlignment>

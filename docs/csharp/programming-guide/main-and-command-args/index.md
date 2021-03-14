@@ -17,7 +17,7 @@ ms.assetid: 73a17231-cf96-44ea-aa8a-54807c6fb1f4
 
 The `Main` method is the entry point of a C# application. (Libraries and services do not require a `Main` method as an entry point.) When the application is started, the `Main` method is the first method that is invoked.
 
-There can only be one entry point in a C# program. If you have more than one class that has a `Main` method, you must compile your program with the `-main` compiler option to specify which `Main` method to use as the entry point. For more information, see [-main (C# Compiler Options)](../../language-reference/compiler-options/main-compiler-option.md).
+There can only be one entry point in a C# program. If you have more than one class that has a `Main` method, you must compile your program with the **StartupObject** compiler option to specify which `Main` method to use as the entry point. For more information, see [**StartupObject** (C# Compiler Options)](../../language-reference/compiler-options/advanced.md#mainentrypoint-or-startupobject).
 
 [!code-csharp[csProgGuideMain#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class1.cs#17)]
 
@@ -58,7 +58,6 @@ The addition of `async` and `Task`, `Task<int>` return types simplifies program 
 
 ## See also
 
-- [Command-line Building With csc.exe](../../language-reference/compiler-options/command-line-building-with-csc-exe.md)
 - [C# Programming Guide](../index.md)
 - [Methods](../classes-and-structs/methods.md)
 - [Inside a C# Program](../inside-a-program/index.md)

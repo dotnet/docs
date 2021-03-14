@@ -27,7 +27,7 @@ ms.assetid: 08dbadaf-9ab6-43d9-9493-98e43bed199a
 
 The `<value>` tag lets you describe the value that a property represents. When you add a property via code wizard in the Visual Studio .NET development environment, it adds a [\<summary>](./summary.md) tag for the new property. You should then manually add a `<value>` tag to describe the value that the property represents.
 
-Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.
+Compile with [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) to process documentation comments to a file.
 
 ## Example
 

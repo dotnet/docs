@@ -31,7 +31,7 @@ Unsafe code has the following properties:
 
 - Using unsafe code introduces security and stability risks.
 
-- The code that contains unsafe blocks must be compiled with the [-unsafe](../../language-reference/compiler-options/unsafe-compiler-option.md) compiler option.
+- The code that contains unsafe blocks must be compiled with the [**AllowUnsafeBlocks**](../../language-reference/compiler-options/language.md#allowunsafeblocks) compiler option.
   
 ## Related sections
 

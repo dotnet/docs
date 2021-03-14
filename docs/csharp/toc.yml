@@ -1352,135 +1352,35 @@ items:
       href: language-reference/preprocessor-directives/preprocessor-pragma-checksum.md
   - name: Compiler options
     items:
-    - name: Overview
-      displayName: compiler options
+    - name: How to set options
       href: language-reference/compiler-options/index.md
-    - name: Command-line Building With csc.exe
-      href: language-reference/compiler-options/command-line-building-with-csc-exe.md
-    - name: "How to set environment variables for the Visual Studio Command Line"
-      href: language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md
-    - name: C# Compiler Options Listed by Category
-      href: language-reference/compiler-options/listed-by-category.md
-    - name: C# Compiler Options Listed Alphabetically
-      href: language-reference/compiler-options/listed-alphabetically.md
-      items:
-      - name: "@"
-        href: language-reference/compiler-options/response-file-compiler-option.md
-      - name: -addmodule
-        href: language-reference/compiler-options/addmodule-compiler-option.md
-      - name: -appconfig
-        href: language-reference/compiler-options/appconfig-compiler-option.md
-      - name: -baseaddress
-        href: language-reference/compiler-options/baseaddress-compiler-option.md
-      - name: -bugreport
-        href: language-reference/compiler-options/bugreport-compiler-option.md
-      - name: -checked
-        href: language-reference/compiler-options/checked-compiler-option.md
-      - name: -codepage
-        href: language-reference/compiler-options/codepage-compiler-option.md
-      - name: -debug
-        href: language-reference/compiler-options/debug-compiler-option.md
-      - name: -define
-        href: language-reference/compiler-options/define-compiler-option.md
-      - name: -delaysign
-        href: language-reference/compiler-options/delaysign-compiler-option.md
-      - name: -deterministic
-        href: language-reference/compiler-options/deterministic-compiler-option.md
-      - name: -doc
-        href: language-reference/compiler-options/doc-compiler-option.md
-      - name: -errorreport
-        href: language-reference/compiler-options/errorreport-compiler-option.md
-      - name: -filealign
-        href: language-reference/compiler-options/filealign-compiler-option.md
-      - name: -fullpaths
-        href: language-reference/compiler-options/fullpaths-compiler-option.md
-      - name: -help, -?
-        href: language-reference/compiler-options/help-compiler-option.md
-      - name: -highentropyva
-        href: language-reference/compiler-options/highentropyva-compiler-option.md
-      - name: -keycontainer
-        href: language-reference/compiler-options/keycontainer-compiler-option.md
-      - name: -keyfile
-        href: language-reference/compiler-options/keyfile-compiler-option.md
-      - name: -langversion
-        href: language-reference/compiler-options/langversion-compiler-option.md
-      - name: -lib
-        href: language-reference/compiler-options/lib-compiler-option.md
-      - name: -link
-        href: language-reference/compiler-options/link-compiler-option.md
-      - name: -linkresource
-        href: language-reference/compiler-options/linkresource-compiler-option.md
-      - name: -main
-        href: language-reference/compiler-options/main-compiler-option.md
-      - name: -moduleassemblyname
-        href: language-reference/compiler-options/moduleassemblyname-compiler-option.md
-      - name: -noconfig
-        href: language-reference/compiler-options/noconfig-compiler-option.md
-      - name: -nologo
-        href: language-reference/compiler-options/nologo-compiler-option.md
-      - name: -nostdlib
-        href: language-reference/compiler-options/nostdlib-compiler-option.md
-      - name: -nowarn
-        href: language-reference/compiler-options/nowarn-compiler-option.md
-      - name: -nowin32manifest
-        href: language-reference/compiler-options/nowin32manifest-compiler-option.md
-      - name: -nullable
-        href: language-reference/compiler-options/nullable-compiler-option.md
-      - name: -optimize
-        href: language-reference/compiler-options/optimize-compiler-option.md
-      - name: -out
-        href: language-reference/compiler-options/out-compiler-option.md
-      - name: -pathmap
-        href: language-reference/compiler-options/pathmap-compiler-option.md
-      - name: -pdb
-        href: language-reference/compiler-options/pdb-compiler-option.md
-      - name: -platform
-        href: language-reference/compiler-options/platform-compiler-option.md
-      - name: -preferreduilang
-        href: language-reference/compiler-options/preferreduilang-compiler-option.md
-      - name: -publicsign
-        href: language-reference/compiler-options/publicsign-compiler-option.md
-      - name: -recurse
-        href: language-reference/compiler-options/recurse-compiler-option.md
-      - name: -reference
-        href: language-reference/compiler-options/reference-compiler-option.md
-      - name: -refout
-        href: language-reference/compiler-options/refout-compiler-option.md
-      - name: -refonly
-        href: language-reference/compiler-options/refonly-compiler-option.md
-      - name: -resource
-        href: language-reference/compiler-options/resource-compiler-option.md
-      - name: -subsystemversion
-        href: language-reference/compiler-options/subsystemversion-compiler-option.md
-      - name: -target
-        href: language-reference/compiler-options/target-compiler-option.md
-        items:
-        - name: "-target:appcontainerexe"
-          href: language-reference/compiler-options/target-appcontainerexe-compiler-option.md
-        - name: "-target:exe"
-          href: language-reference/compiler-options/target-exe-compiler-option.md
-        - name: "-target:library"
-          href: language-reference/compiler-options/target-library-compiler-option.md
-        - name: "-target:module"
-          href: language-reference/compiler-options/target-module-compiler-option.md
-        - name: "-target:winexe"
-          href: language-reference/compiler-options/target-winexe-compiler-option.md
-        - name: "-target:winmdobj"
-          href: language-reference/compiler-options/target-winmdobj-compiler-option.md
-      - name: -unsafe
-        href: language-reference/compiler-options/unsafe-compiler-option.md
-      - name: -utf8output
-        href: language-reference/compiler-options/utf8output-compiler-option.md
-      - name: -warn
-        href: language-reference/compiler-options/warn-compiler-option.md
-      - name: -warnaserror
-        href: language-reference/compiler-options/warnaserror-compiler-option.md
-      - name: -win32icon
-        href: language-reference/compiler-options/win32icon-compiler-option.md
-      - name: -win32manifest
-        href: language-reference/compiler-options/win32manifest-compiler-option.md
-      - name: -win32res
-        href: language-reference/compiler-options/win32res-compiler-option.md
+    - name: Language options
+      displayName: CheckForOverflowUnderflow, checked, AllowUnsafeBlocks, unsafe, DefineConstants, define, LangVersion, langversion, Nullable, nullable
+      href: language-reference/compiler-options/language.md
+    - name: Output options
+      displayName: DocumentationFile, doc, OutputAssembly, out, PlatformTarget, platform, ProduceReferenceAssembly, refout, TargetType, target, 
+      href: language-reference/compiler-options/output.md
+    - name: Input options
+      displayName: References, reference, references, AddModules, addmodule, EmbedInteropTypes, link
+      href: language-reference/compiler-options/inputs.md
+    - name: Error and warning options
+      displayName: WarningLevel, warn, TreatWarningsAsErrors, warnaserror, WarningsAsErrors, WarningsNotAsErrors, DisabledWarnings, nowarn, CodeAnalysisRuleSet, ruleset, ErrorLog, errorlog, ReportAnalyzer, reportanalyzer
+      href: language-reference/compiler-options/errors-warnings.md
+    - name: Code generation options
+      displayName: DebugType, debug, Optimize, optimize, Deterministic, deterministic, ProduceOnlyReferenceAssembly, refonly
+      href: language-reference/compiler-options/code-generation.md
+    - name: Security options
+      displayName: DelaySign, delaysign, KeyFile, keyfile, KeyContainer, keycontainer, PublicSign, publicsign, highentropyva, HighEntropyVA
+      href: language-reference/compiler-options/security.md
+    - name: Resources options
+      displayName: Win32Resource, win32res, Win32Icon, win32icon, Win32Manifest, win32manifest, NoWin32Manifest, nowin32manifest, Resources, resource, LinkResources
+      href: language-reference/compiler-options/resources.md
+    - name: Miscellaneous options
+      displayName: ResponseFiles, @, NoLogo, nologo, NoConfig, noconfig
+      href: language-reference/compiler-options/miscellaneous.md
+    - name: Advanced options
+      displayName: MainEntryPoint, StartupObject, main, PdbFile, pdb, PathMap, pathmap, ErrorReport, errorreport, ApplicationConfiguration, appconfig, AdditionalLibPaths, lib, GenerateFullPaths, fullpath, PreferredUILang, preferreduilang, BaseAddress, baseaddress, ChecksumAlgorithm, checksumalgorithm, CodePage, codepage, Utf8Output, utf8output, FileAlignment, filealign, ErrorEndLocation, errorendlocation, NoStandardLib, nostdlib, SubsystemVersion, subsystemversion, ModuleAssemblyName, moduleassemblyname
+      href: language-reference/compiler-options/advanced.md
   - name: Compiler errors
     href: language-reference/compiler-messages/index.md
   - name: C# 6.0 draft specification

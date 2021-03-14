@@ -13,7 +13,7 @@ If you embed type information from a strong-named managed assembly, you can loos
 
 Type embedding is frequently used with COM interop, such as an application that uses automation objects from Microsoft Office. Embedding type information enables the same build of a program to work with different versions of Microsoft Office on different computers. However, you can also use type embedding with fully managed solutions.
 
-After you specify the public interfaces that can be embedded, you create runtime classes that implement those interfaces. A client program can embed the type information for the interfaces at design time by referencing the assembly that contains the public interfaces and setting the `Embed Interop Types` property of the reference to `True`. The client program can then load instances of the runtime objects typed as those interfaces. This is equivalent to using the command line compiler and referencing the assembly by using the [-link compiler option](../../csharp/language-reference/compiler-options/link-compiler-option.md).
+After you specify the public interfaces that can be embedded, you create runtime classes that implement those interfaces. A client program can embed the type information for the interfaces at design time by referencing the assembly that contains the public interfaces and setting the `Embed Interop Types` property of the reference to `True`. The client program can then load instances of the runtime objects typed as those interfaces. This is equivalent to using the command line compiler and referencing the assembly by using the [**EmbedInteropTypes** compiler option](../../csharp/language-reference/compiler-options/inputs.md#embedinteroptypes).
 
 If you create a new version of your strong-named runtime assembly, the client program doesn't have to be recompiled. The client program continues to use whichever version of the runtime assembly is available to it, using the embedded type information for the public interfaces.
 
@@ -312,7 +312,7 @@ Go to the build output folder location and run *TypeEquivalenceClient.exe*. Note
 
 ## See also
 
-- [-link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md)
+- [**EmbedInteropTypes** (C# Compiler Options)](../../csharp/language-reference/compiler-options/inputs.md#embedinteroptypes)
 - [-link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md)
 - [C# programming guide](../../csharp/programming-guide/index.md)
 - [Programming concepts (Visual Basic)](../../visual-basic/programming-guide/concepts/index.md)

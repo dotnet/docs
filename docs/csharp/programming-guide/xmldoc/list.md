@@ -49,7 +49,7 @@ Each item in the list is specified with an `<item>` block. When creating a defin
 
 A list or table can have as many `<item>` blocks as needed.
 
-Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.
+Compile with [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) to process documentation comments to a file.
 
 ## Example
 

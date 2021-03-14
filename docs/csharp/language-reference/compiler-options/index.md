@@ -29,7 +29,6 @@ In addition to the mechanisms described above, you can set compiler options usin
 - **Command line arguments for .NET Framework projects**: .NET Framework projects use *csc.exe* instead of `dotnet build` to build projects. You can specify command line arguments to *csc.exe* for .NET Framework projects.
 - **Compiled ASP.NET pages**: .NET Framework projects use a section of the *web.config* file for compiling pages. For the new build system, and ASP.NET Core projects, options are taken from the project file.
 
-
 The word for some compiler options changed from *csc.exe* and .NET Framework projects to the new MSBuild system. The new syntax is used throughout this section. Both versions are listed at the top of each page. For *csc.exe*, any arguments are listed following the option and a colon. For example, the `-doc` option would be:
 
 ```console

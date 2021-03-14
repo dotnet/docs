@@ -63,7 +63,7 @@ You can use a command like this:
 apk add bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib
 ```
 
-To install libgdiplus you may need to specify a repository:
+To install libgdiplus, you may need to specify a repository:
 
 ```bash
 apk add libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/

@@ -18,12 +18,17 @@ This section describes the options interpreted by the C# compiler. There are two
 
 - ***Specify option in your \*.csproj file***: You can add XML elements for any compiler option in your *\*.csproj* file. The element name is the same as the compiler option. The value of the XML element sets the value of the compiler option. For more information on setting options in project files, see the article [MSBuild properties for .NET SDK Projects](../../../core/project-sdk/msbuild-props.md).
 - ***Using the Visual Studio Property pages***: Visual Studio provides property pages to edit build properties. To learn more about them, see [Manage project and solution properties - Windows](/visualstudio/ide/managing-project-and-solution-properties#c-visual-basic-and-f-projects) or [Manage project and solution properties - Mac](/visualstudio/mac/managing-solutions-and-project-properties).
-- **Compiler ASP.NET pages**: .NET Framework projects use a section of the *web.config* file for compiling pages. For the new build system, and ASP.NET Core projects, options are taken from the project file.
 
 ## .NET Framework projects
 
 > [!IMPORTANT]
 > This section applies to .NET Framework projects only.
+
+In addition to the mechanisms described above, you can set compiler options using two additional methods for .NET Framework projects:
+
+- **Command line arguments for .NET Framework projects**: .NET Framework projects use *csc.exe* instead of `dotnet build` to build projects. You can specify command line arguments to *csc.exe* for .NET Framework projects.
+- **Compiled ASP.NET pages**: .NET Framework projects use a section of the *web.config* file for compiling pages. For the new build system, and ASP.NET Core projects, options are taken from the project file.
+
 
 The word for some compiler options changed from *csc.exe* and .NET Framework projects to the new MSBuild system. The new syntax is used throughout this section. Both versions are listed at the top of each page. For *csc.exe*, any arguments are listed following the option and a colon. For example, the `-doc` option would be:
 

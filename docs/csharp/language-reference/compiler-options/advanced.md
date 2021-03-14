@@ -255,7 +255,7 @@ Use this option if you want to define or create your own System namespace and ob
 Specifies the minimum version of the subsystem on which the executable file runs. Most commonly, this option ensures that the executable file can use security features that aren’t available with older versions of Windows.
 
 > [!NOTE]
-> To specify the subsystem itself, use the [-target](./target-compiler-option.md) compiler option.
+> To specify the subsystem itself, use the [**TargetType**](./output.md#targettype) compiler option.
 
 ```xml
 <SubsystemVersion>major.minor</SubsystemVersion>

@@ -33,7 +33,7 @@ An integer arithmetic statement that is in the scope of a `checked` or `unchecke
 
 ## AllowUnsafeBlocks
 
-The **AllowUnsafeBlocks** compiler option allows code that uses the [unsafe](../keywords/unsafe.md) keyword to compile.
+The **AllowUnsafeBlocks** compiler option allows code that uses the [unsafe](../keywords/unsafe.md) keyword to compile. The default value for this option is `false`, meaning unsafe code is not allowed.
 
 ```xml
 <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -68,7 +68,9 @@ The following values are valid:
 
 The default language version depends on the target framework for your application and the version of the SDK or Visual Studio installed. Those rules are defined in [C# language versioning](../configure-language-version.md#defaults).
 
-Metadata referenced by your C# application isn't subject to the **LangVersion** compiler option. Because each version of the C# compiler contains extensions to the language specification, **LangVersion** doesn't give you the equivalent functionality of an earlier version of the compiler.
+Metadata referenced by your C# application isn't subject to the **LangVersion** compiler option.
+
+Because each version of the C# compiler contains extensions to the language specification, **LangVersion** doesn't give you the equivalent functionality of an earlier version of the compiler.
 
 Additionally, while C# version updates generally coincide with major .NET Framework releases, the new syntax and features aren't necessarily tied to that specific framework version. While the new features definitely require a new compiler update that is also released alongside the C# revision, each specific feature has its own minimum .NET API or common language runtime requirements that may allow it to run on downlevel frameworks by including NuGet packages or other libraries.
 

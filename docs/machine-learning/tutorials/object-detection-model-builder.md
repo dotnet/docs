@@ -143,7 +143,7 @@ To create an Azure ML experiment, you first need to configure your environment i
 
 - An Azure subscription
 - A **workspace**: an Azure ML resource that provides a central place for all Azure ML resources and artifacts created as part of a training run.
-- A **compute**: an Azure Machine Learning compute is a cloud-based Linux VM used for training. Learn more about [compute types supported by Model Builder](../resources/azure-training-concepts-model-builder#what-is-an-azure-machine-learning-compute).
+- A **compute**: an Azure Machine Learning compute is a cloud-based Linux VM used for training. Learn more about [compute types supported by Model Builder](../resources/azure-training-concepts-model-builder.md#what-is-an-azure-machine-learning-compute).
 
 ### Set up an Azure ML workspace
 

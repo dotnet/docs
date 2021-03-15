@@ -34,7 +34,7 @@ You can use the following operators to work with pointers:
 For information about pointer types, see [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md).
 
 > [!NOTE]
-> Any operation with pointers requires an [unsafe](../keywords/unsafe.md) context. The code that contains unsafe blocks must be compiled with the [`-unsafe`](../compiler-options/unsafe-compiler-option.md) compiler option.
+> Any operation with pointers requires an [unsafe](../keywords/unsafe.md) context. The code that contains unsafe blocks must be compiled with the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option.
 
 ## <a name="address-of-operator-"></a> Address-of operator &amp;
 

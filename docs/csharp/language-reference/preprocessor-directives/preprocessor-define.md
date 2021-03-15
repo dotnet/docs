@@ -25,7 +25,7 @@ You use `#define` to define a symbol. When you use the symbol as the expression 
   
  You can define a symbol, but you cannot assign a value to a symbol. The `#define` directive must appear in the file before you use any instructions that aren't also preprocessor directives.  
   
- You can also define a symbol with the [-define](../compiler-options/define-compiler-option.md) compiler option. You can undefine a symbol with [#undef](./preprocessor-undef.md).  
+ You can also define a symbol with the [**DefineConstants**](../compiler-options/language.md#defineconstants) compiler option. You can undefine a symbol with [#undef](./preprocessor-undef.md).  
   
  A symbol that you define with `-define` or with `#define` does not conflict with a variable of the same name. That is, a variable name should not be passed to a preprocessor directive and a symbol can only be evaluated by a preprocessor directive.  
   

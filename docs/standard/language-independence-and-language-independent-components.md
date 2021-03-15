@@ -589,8 +589,6 @@ To compile the C# source code file into a module, use this command:
 csc /t:module NumberUtil.cs
 ```
 
-For more information about the command-line syntax of the C# compiler, see [Command-line Building With csc.exe](../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md).
-
 You then use the [Linker options](/cpp/build/reference/linker-options) to compile the two modules into an assembly:
 
 ```console

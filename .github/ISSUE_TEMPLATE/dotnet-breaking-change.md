@@ -1,7 +1,7 @@
 ---
 name: ".NET breaking change"
-about: Report a change in .NET that breaks something that worked in a previous
-  version (intended mostly for product-team use)
+about: Report a change in .NET that breaks something that worked in a previous version
+  (intended mostly for product-team use)
 title: ''
 labels: ''
 assignees: ''

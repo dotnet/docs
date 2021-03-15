@@ -134,7 +134,8 @@ The following example shows the JSON that results from the preceding code:
 }
 ```
 
-For more information about polymorphic **serialization**, and for information about **deserialization**, see [How to migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md#polymorphic-serialization).
+> [!NOTE]
+> This article is about serialization, not deserialization. Polymorphic deserialization is not supported, but as a workaround you can write a custom converter, such as the example in [Support polymorphic deserialization](system-text-json-converters-how-to.md#support-polymorphic-deserialization).
 
 ## See also
 

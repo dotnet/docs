@@ -45,7 +45,7 @@ If you must specify your C# version explicitly, you can do so in several ways:
 
 - Manually edit your [project file](#edit-the-project-file).
 - Set the language version [for multiple projects in a subdirectory](#configure-multiple-projects).
-- Configure the [`-langversion` compiler option](compiler-options/langversion-compiler-option.md).
+- Configure the [**LangVersion** compiler option](compiler-options/language.md#langversion).
 
 > [!TIP]
 > To know what language version you're currently using, put `#error version` (case sensitive) in your code. This makes the compiler report a compiler error, CS8304, with a message containing the compiler version being used and the current selected language version. See [#error (C# Reference)](preprocessor-directives/preprocessor-error.md) for more information.
@@ -89,7 +89,7 @@ The following table shows all current C# language versions. Your compiler may no
 > csc -langversion:?
 > ```
 >
-> Querying the [-langversion](compiler-options/langversion-compiler-option.md) compile option like this prints something similar to the following:
+> Querying the [**LangVersion](compiler-options/language.md#langversion) compile option like this prints something similar to the following:
 >
 > ```CMD
 > Supported language versions:

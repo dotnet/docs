@@ -140,6 +140,75 @@ The preceding method has the `async` modifier in its signature. That signals to 
 
 The previous change illustrated an important technique for working with asynchronous code. You compose tasks by separating the operations into a new method that returns a task. You can choose when to await that task. You can start other tasks concurrently.
 
+## Asynchronous exceptions
+
+Up to this point, you've implicitly assumed that all these tasks complete successfully. Asynchronous methods throw exceptions, just like their synchronous counterparts. Asynchronous support for exceptions and error handling strives for the same goals as asynchronous support in general: You should be able to write code that reads like a series of synchronous statements. Tasks throw exceptions when they cannot complete successfully. The client code can catch those exceptions when a started task is `awaited`. For example, let's assume that the toaster catches fire while making the toast. You can simulate that by modifying the `ToastBreadAsync` method to match the following code:
+
+```csharp
+private static async Task<Toast> ToastBreadAsync(int slices)
+{
+    for (int slice = 0; slice < slices; slice++)
+    {
+        Console.WriteLine("Putting a slice of bread in the toaster");
+    }
+    Console.WriteLine("Start toasting...");
+    await Task.Delay(2000);
+    Console.WriteLine("Fire! Toast is ruined!");
+    throw new InvalidOperationException("The toaster is on fire");
+    await Task.Delay(1000);
+    Console.WriteLine("Remove toast from toaster");
+
+    return new Toast();
+}
+```
+
+> [!NOTE]
+> You'll get a warning when you compile the preceding code regarding unreachable code. That's intentional, because once the toaster catches fire, operations won't proceed normally.
+
+Run the application after making these changes, and you'll output similar to the following text:
+
+```console
+Pouring coffee
+coffee is ready
+Warming the egg pan...
+putting 3 slices of bacon in the pan
+cooking first side of bacon...
+Putting a slice of bread in the toaster
+Putting a slice of bread in the toaster
+Start toasting...
+Fire! Toast is ruined!
+flipping a slice of bacon
+flipping a slice of bacon
+flipping a slice of bacon
+cooking the second side of bacon...
+cracking 2 eggs
+cooking the eggs ...
+Put bacon on plate
+Put eggs on plate
+eggs are ready
+bacon is ready
+Unhandled exception. System.InvalidOperationException: The toaster is on fire
+   at AsyncBreakfast.Program.ToastBreadAsync(Int32 slices) in Program.cs:line 65
+   at AsyncBreakfast.Program.MakeToastWithButterAndJamAsync(Int32 number) in Program.cs:line 36
+   at AsyncBreakfast.Program.Main(String[] args) in Program.cs:line 24
+   at AsyncBreakfast.Program.<Main>(String[] args)
+```
+
+Notice that there's quite a few tasks completing between when the toaster catches fire and the exception is observed. When a task that runs asynchronously throws an exception, that Task is ***faulted***. The Task object holds the exception thrown in the <xref:System.Threading.Tasks.Task.Exception?displayProperty=nameWithType> property. Faulted tasks throw an exception when they are awaited.
+
+There are two important mechanisms to understand: how an exception is stored in a faulted task, and how an exception is unpackaged and re-thrown when code awaits a faulted task.
+
+When code running asynchronously throws an exception, that exception is stored in the `Task`. The <xref:System.Threading.Tasks.Task.Exception?displayProperty=nameWithType> property is an <xref:System.AggregateException?displayProperty=nameWithType> because more than one exception may be thrown during the course of asynchronous work. Any exception thrown is added to the <xref:System.AggregateException.InnerExceptions?displayProperty=nameWithType> collection. If that `Exception` property is null, a new `AggregateException` is created and the thrown exception is the first item in the collection.
+
+The most common scenario for a faulted task is that the `Exception` property contains exactly one exception. When code `awaits` a faulted task, the first exception in the <xref:System.AggregateException.InnerExceptions?displayProperty=nameWithType> collection is rethrown. That's why the output from this example shows an `InvalidOperationException` instead of an `AggregateException`. This is another design decision to make working with asynchronous methods as similar as possible to working with their synchronous counterparts. You can examine the `Exception` property in your code when your scenario may generate multiple exceptions.
+
+Before going on, comment out these two lines in your `ToastBreadAsync` method. You don't want to start another fire:
+
+```csharp
+Console.WriteLine("Fire! Toast is ruined!");
+throw new InvalidOperationException("The toaster is on fire");
+```
+
 ## Await tasks efficiently
 
 The series of `await` statements at the end of the preceding code can be improved by using methods of the `Task` class. One of those APIs is <xref:System.Threading.Tasks.Task.WhenAll%2A>, which returns a <xref:System.Threading.Tasks.Task> that completes when all the tasks in its argument list have completed, as shown in the following code:

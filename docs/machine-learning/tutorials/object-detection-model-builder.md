@@ -63,7 +63,7 @@ The first thing you need to do is annotate your images, or draw bounding boxes a
 1. [Download VoTT](https://github.com/Microsoft/VoTT/releases) (Visual Object Tagging Tool).
 1. Open VoTT and select **New Project**.
 
-![VoTT Home Screen](./media/object-detection-model-builder/vott.png)
+    ![VoTT Home Screen](./media/object-detection-model-builder/vott.png)
 
 1. In **Project Settings**, change the **Display Name** to "StopSignObjDetection".
 1. Change the **Security Token** to *Generate New Security Token*.

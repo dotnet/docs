@@ -96,7 +96,7 @@ You should now see a window with preview images of all the training images on th
 1. Click on the preview image for the next image in the dataset and repeat this process.
 1. Continue steps 3-4 for every stop sign in every image.
 
-    ![VoTT Annotating Images gif](./media/object-detection-model-builder/vott-annotating.gif)
+    ![VoTT Annotating Images](./media/object-detection-model-builder/vott-annotating.gif)
 
 ### Export your VoTT JSON
 

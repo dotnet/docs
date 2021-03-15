@@ -27,10 +27,10 @@ TRACKING:
 
 - Use the Azure DevOps template to create a tracking item
   - Required:
-    - [ ] Includes tag “content-perf” and “FY21Q3”
+    - [ ] Includes tag "content-perf" and "FY21Q3"
     - [ ] Set M1 and M2 fields
     - [ ] Area path. Set to your team’s path as you see fit
-- Writers add “ms.custom: contperfq3”” to their updated articles to help with data reporting.
+- Writers add "ms.custom: contperfq3" to their updated articles to help with data reporting.
 
 NOTE: For those teams that aren’t currently using the [mseng TechnicalContent project](https://dev.azure.com/mseng/TechnicalContent), you’ll still need to set up your items in it so we have an accurate inventory and ability to track. 
 

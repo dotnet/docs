@@ -1,10 +1,10 @@
 ---
-title: Deploy an app to App Service - DevOps with .NET and GitHub Actions
-description: Deploy a .NET app to Azure App Service, the first step for DevOps with .NET and GitHub Actions.
+title: DevOps with .NET and GitHub Actions - Build a .NET Web App
+description: Start your journey of DevOps with .NET and GitHub Actions by building a .NET Web app
 author: colindembovsky
 ms.date: 03/04/2021
 ---
-# Deploy an app to App Service - DevOps with .NET and GitHub Actions
+# Build a .NET Web App using GitHub Actions
 
 [GitHub Actions](https://github.com/features/actions) allow you to automate workflows in response to events that are triggered in GitHub. A common workflow is Continuous Integration (CI), but Actions can automate other processes. For example, sending welcome emails when people join a repository.
 
@@ -191,3 +191,6 @@ jobs:
         path: SimpleFeedReader/website/**
         if-no-files-found: error
 ```
+
+>[!div class="step-by-step"]
+>[Next](actions-deploy.md)

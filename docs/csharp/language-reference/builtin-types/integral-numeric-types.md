@@ -51,15 +51,21 @@ C# supports the following predefined integral types:
 |`uint`|0 to 4,294,967,295|Unsigned 32-bit integer|<xref:System.UInt32?displayProperty=nameWithType>|
 |`long`|-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807|Signed 64-bit integer|<xref:System.Int64?displayProperty=nameWithType>|
 |`ulong`|0 to 18,446,744,073,709,551,615|Unsigned 64-bit integer|<xref:System.UInt64?displayProperty=nameWithType>|
+|`nint`|Depends on platform|Signed 32-bit or 64-bit integer|<xref:System.IntPtr?displayProperty=nameWithType>|
+|`nuint`|Depends on platform|Unsigned 32-bit or 64-bit integer|<xref:System.UIntPtr?displayProperty=nameWithType>|
 
-In the preceding table, each C# type keyword from the leftmost column is an alias for the corresponding .NET type. They are interchangeable. For example, the following declarations declare variables of the same type:
+In all of the table rows except the last two, each C# type keyword from the leftmost column is an alias for the corresponding .NET type. The keyword and .NET type name are interchangeable. For example, the following declarations declare variables of the same type:
 
 ```csharp
 int a = 123;
 System.Int32 b = 123;
 ```
 
-The default value of each integral type is zero, `0`. Each of the integral types has the `MinValue` and `MaxValue` constants that provide the minimum and maximum value of that type.
+The `nint` and `nuint` types in the last two rows of the table are native-sized integers. They are represented internally by the indicated .NET types, but in each case the keyword and the .NET type are not interchangeable. The compiler provides operations and conversions for `nint` and `nuint` as integer types that it doesn't provide for the pointer types `System.IntPtr` and `System.UIntPtr`.
+
+For information about the native-sized integer types, see [`nint` and `nuint`](nint-nuint.md).
+
+The default value of each integral type is zero, `0`. Each of the integral types except the native-sized types has `MinValue` and `MaxValue` constants that provide the minimum and maximum value of that type.
 
 Use the <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure to represent a signed integer with no upper or lower bounds.
 
@@ -94,7 +100,7 @@ The type of an integer literal is determined by its suffix as follows:
 
 If the value represented by an integer literal exceeds <xref:System.UInt64.MaxValue?displayProperty=nameWithType>, a compiler error [CS1021](../../misc/cs1021.md) occurs.
 
-If the determined type of an integer literal is `int` and the value represented by the literal is within the range of the destination type, the value can be implicitly converted to `sbyte`, `byte`, `short`, `ushort`, `uint`, or `ulong`:
+If the determined type of an integer literal is `int` and the value represented by the literal is within the range of the destination type, the value can be implicitly converted to `sbyte`, `byte`, `short`, `ushort`, `uint`, `ulong`, `nint` or `nuint`:
 
 ```csharp
 byte a = 17;

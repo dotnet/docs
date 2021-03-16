@@ -1,11 +1,10 @@
 ---
 title: "Built-in types - C# reference"
 description: "Learn C# built-in value and reference types"
-ms.date: 02/04/2020
+ms.date: 03/15/2021
 helpviewer_keywords: 
   - "types [C#], built-in"
   - "built-in C# types"
-ms.assetid: 54f901f2-bf2f-472c-ae8d-73e8ecfc57fe
 ---
 # Built-in types (C# reference)
 
@@ -22,10 +21,14 @@ The following table lists the C# built-in [value](value-types.md) types:
 |[`float`](floating-point-numeric-types.md)|<xref:System.Single?displayProperty=nameWithType>|
 |[`int`](integral-numeric-types.md)|<xref:System.Int32?displayProperty=nameWithType>|
 |[`uint`](integral-numeric-types.md)|<xref:System.UInt32?displayProperty=nameWithType>|
+|[`nint`](integral-numeric-types.md)|<xref:System.IntPtr?displayProperty=nameWithType> \*|
+|[`nuint`](integral-numeric-types.md)|<xref:System.UIntPtr?displayProperty=nameWithType> \*|
 |[`long`](integral-numeric-types.md)|<xref:System.Int64?displayProperty=nameWithType>|
 |[`ulong`](integral-numeric-types.md)|<xref:System.UInt64?displayProperty=nameWithType>|
 |[`short`](integral-numeric-types.md)|<xref:System.Int16?displayProperty=nameWithType>|
 |[`ushort`](integral-numeric-types.md)|<xref:System.UInt16?displayProperty=nameWithType>|
+
+\* For more information, see [`nint` and `nuint` types](nint-nuint.md).
 
 The following table lists the C# built-in [reference](../keywords/reference-types.md) types:
 

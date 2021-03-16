@@ -1379,7 +1379,7 @@ items:
       displayName: ResponseFiles, @, NoLogo, nologo, NoConfig, noconfig
       href: language-reference/compiler-options/miscellaneous.md
     - name: Advanced options
-      displayName: MainEntryPoint, StartupObject, main, PdbFile, pdb, PathMap, pathmap, ErrorReport, errorreport, ApplicationConfiguration, appconfig, AdditionalLibPaths, lib, GenerateFullPaths, fullpath, PreferredUILang, preferreduilang, BaseAddress, baseaddress, ChecksumAlgorithm, checksumalgorithm, CodePage, codepage, Utf8Output, utf8output, FileAlignment, filealign, ErrorEndLocation, errorendlocation, NoStandardLib, nostdlib, SubsystemVersion, subsystemversion, ModuleAssemblyName, moduleassemblyname
+      displayName: MainEntryPoint, StartupObject, main, PdbFile, pdb, PathMap, pathmap, ApplicationConfiguration, appconfig, AdditionalLibPaths, lib, GenerateFullPaths, fullpath, PreferredUILang, preferreduilang, BaseAddress, baseaddress, ChecksumAlgorithm, checksumalgorithm, CodePage, codepage, Utf8Output, utf8output, FileAlignment, filealign, ErrorEndLocation, errorendlocation, NoStandardLib, nostdlib, SubsystemVersion, subsystemversion, ModuleAssemblyName, moduleassemblyname
       href: language-reference/compiler-options/advanced.md
   - name: Compiler errors
     href: language-reference/compiler-messages/index.md

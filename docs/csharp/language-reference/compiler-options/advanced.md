@@ -19,7 +19,6 @@ helpviewer_keywords:
   - "PreferredUILang compiler option [C#]"
   - "SubsystemVersion compiler option [C#]"
   - "AdditionalLibPaths compiler option [C#]"
-  - "ErrorReport compiler option [C#]"
   - "ApplicationConfiguration compiler option [C#]"
   - "ModuleAssemblyName compiler option [C#]"
 
@@ -31,7 +30,6 @@ The following options support advanced scenarios. The new MSBuild syntax is show
 - **MainEntryPoint**, **StartupObject** / `-main`: Specify the type that contains the entry point.
 - **PdbFile** / `-pdb`: Specify debug information file name.
 - **PathMap** / `-pathmap`: Specify a mapping for source path names output by the compiler.
-- **ErrorReport** / `-errorreport`: Specify how to handle internal compiler errors.
 - **ApplicationConfiguration** / `-appconfig`: Specify an application configuration file containing assembly binding settings.
 - **AdditionalLibPaths** / `-lib`: Specify additional directories to search in for references.
 - **GenerateFullPaths** / `-fullpath`: Compiler generates fully qualified paths.
@@ -88,28 +86,6 @@ The compiler writes the source path into its output for the following reasons:
 1. The source path is substituted for an argument when the <xref:System.Runtime.CompilerServices.CallerFilePathAttribute> is applied to an optional parameter.
 1. The source path is embedded in a PDB file.
 1. The path of the PDB file is embedded into a PE (portable executable) file.
-
-## ErrorReport
-
-This option provides a convenient way to report a C# internal compiler error to Microsoft.
-
-> [!NOTE]
-> On Windows Vista and Windows Server 2008, the error reporting settings that you make for Visual Studio do not override the settings made through Windows Error Reporting (WER). WER settings always take precedence over Visual Studio error reporting settings.
-
-```xml
-<ErrorReport>setting</ErrorReport>
-```
-
-The argument must be one of:
-
-- **none**: Reports about internal compiler errors won't be collected or sent to Microsoft.
-- **prompt**: Prompts you to send a report when you receive an internal compiler error. **prompt** is the default when you compile an application in the development environment.
-- **queue**: Queues the error report. When you sign in with administrative credentials, you can report any failures since the last time that you were logged on. You won't be prompted to send reports for failures more than once every three days. **queue** is the default when you compile an application at the command line.
-- **send**: Automatically sends reports of internal compiler errors to Microsoft. To enable this option, you must first agree to the Microsoft data collection policy. The first time that you specify `<ErrorReport>send</ErrorReport>` on a computer, a compiler message will refer you to a Web site that contains the Microsoft data collection policy.
-
-An internal compiler error (ICE) results when the compiler can't process a source code file. When an ICE occurs, the compiler doesn't produce an output file or any useful diagnostic that you can use to fix your code.
-
-By using **ErrorReport**, you can provide ICE information to the C# team. Your error reports can help improve future compiler releases. A user's ability to send reports depends on computer and user policy permissions.
 
 ## ApplicationConfiguration
 

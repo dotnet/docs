@@ -24,7 +24,7 @@ Now that you'e published an artifact that is _potentially deployable_, you're go
 
 In this walkthrough, you'll be deploying to two environments: `PRE-PROD` and `PROD`. In a typical development lifecylce, you'll want to deploy the latest code to a _soft_ environment (typically `DEV`) that is expected to be a bit unstable. You'll use `PRE-PROD` as this _soft_ environment. The "higher" environments (like `UAT` and `PROD`) are _harder_ environments that are expected to be more stable. To enforce this, you can build protection rules into higher environments. You'll configure an approval protection rule on the `PROD` environment: whenever a deployment job targets an environment with an approval rule, it will pause until approval is granted before executing.
 
-GitHub environments are _logical_ - they represent the physical (or virtual) resources that you're deploying to. In this case, the `PRE-PROD` is just a deployment slot on the Azure Web App. `PROD` is the production slot. The `PRE-PROD` deployment job will deploy the published .NET app to the staging slot, and the `PROD` deplyment job will simply swap the slots. 
+GitHub environments are _logical_ - they represent the physical (or virtual) resources that you're deploying to. In this case, the `PRE-PROD` is just a deployment slot on the Azure Web App. `PROD` is the production slot. The `PRE-PROD` deployment job will deploy the published .NET app to the staging slot, and the `PROD` deplyment job will simply swap the slots.
 
 Once you have these steps in place, you'll update the workflow to handle environment specific configuration using environment secrets.
 
@@ -35,6 +35,7 @@ Once you have these steps in place, you'll update the workflow to handle environ
 > At the time of writing, the GitHub Environments feature is in beta.
 
 ## Azure Authentication
+
 To perform actions such as deploying code to an Azure resource, you need the correct permissions. For deployment to Azure Web Apps, you can use a publishing profile. However, if you want to deploy to a staging slot, then you'll need the publishing profile for the slot too. Instead, you can use a service principal (SPN) and assign permission to this service principal. You can then authenticate using credentials for the SPN before using any commands that the SPN has permissions to perform.
 
 Once you have an SPN you'll create a [repository secret](https://docs.github.com/actions/reference/encrypted-secrets) to securely store the credentials. You can then simply refer to the secret whenever you need to authenticate. The secret is encrypted and once it has been saved, can never be viewed or edited (only deleted or re-created).
@@ -66,7 +67,7 @@ Once you have an SPN you'll create a [repository secret](https://docs.github.com
 
 1. Now you're going to create an encrypted secret to store the credentials. You'll create this secret at the repository level.
 1. Navigate to GitHub and select your repo `Settings` tab and then select `Secrets`. Select `New repository secret`:
-    
+
     - ![Create a secret](./media/actions/deploy/add-repo-secret.jpg)
     **Figure 1**: Create a secret.
 
@@ -89,12 +90,12 @@ In this case, the only difference between the environments is the slot that you'
 > Precendence works from Environment to Repo. If a targeted environment has a secret called `MY_SECRET`, then that value is used. If not, the repository value of `MY_SECRET` (if any) is used.
 
 1. Select `Settings` and then `Environments` in your repo. Select `New Environment`:
-    
+
     - ![Create an environment](./media/actions/deploy/new-env.jpg)
     **Figure 3**: Create an environment.
 
 1. Enter `PRE-PROD` and select `Configure environment`:
-    
+
     - ![Name the environment](./media/actions/deploy/pre-prod-env.jpg)
     **Figure 4**: Name the environment.
 
@@ -167,7 +168,7 @@ You can now add additional jobs to the workflow to deploy to the environments! Y
     ```
 
 Notice the following things:
-    
+
   1. You're creating a new job called `deploy_staging`
   1. You specify a dependency using `needs`. This job needs the `build` job to complete successfully before it starts.
   1. This job also runs on the latest Ubuntu hosted agent, as specified with the `runs-on` attribute.
@@ -177,7 +178,6 @@ Notice the following things:
   1. You then perform a `webapp-deploy`, specifying the `app-name`, `slot-name` and path to the downloaded artifact (`package`). This action also defines an `output` parameter which you use to set the `url` of the environment above.
   1. Finally, you execute a `logout` to logout of the Azure context
 
-
 1. Commit the file.
 1. When the run completes, you should see two successful jobs. The URL for the `PRE-PROD` stage has been set and selecting it will navigate you to your web app staging slot:
 
@@ -185,12 +185,12 @@ Notice the following things:
     **Figure 6**: Deployment to PRE-PROD is successful.
 
 1. Notice how the URL contains `-staging` in the name since this is the direct URL to the staging slot:
-    
+
     - ![The staging slot running](./media/actions/deploy/deployed-to-staging.jpg)
     **Figure 7**: The staging slot running.
 
 1. You can also now see deployments. Navigate to `https://{your repo url}/deployments` to view your deployments:
-    
+
     - ![View deployments](./media/actions/deploy/deployments.jpg)
     **Figure 8**: View deployments.
 
@@ -200,6 +200,7 @@ Now that you've deployed successfully to `PRE-PROD`, you'll want to deploy to `P
 
 1. Navigate to the `.github/workflows/dotnet.yml` file and select the pencil icon to edit the file.
 1. Add a new job below the `deploy_staging` job as follows:
+
     ```yml
           run: az logout  # <-- last line of previous job: insert below this line
 
@@ -276,7 +277,7 @@ You now have an end-to-end build and deploy workflow, including approvals! One m
 1. To see the `Run workflow` button, select the `Actions` tab. Select the `.NET` workflow in the list of workflows. At the top of the list of runs, you'll see the `Run workflow` button. If you select it, you'll be able to select the branch to run the workflow against and queue it:
 
   - ![Manual dispatch](./media/actions/deploy/manual-dispatch.jpg)
-    **Figure 13**: Manual dispatch.
+  **Figure 13**: Manual dispatch.
 
 ## Handle Environment Configuration
 
@@ -300,15 +301,15 @@ To show how environment configuration can be handled, you're going to add a secr
 1. Select `Add secret` and add a secret called `index_header` with the value `PRE PROD News Reader`. Select `Add secret`.
 
   - ![Add an environment secret](./media/actions/deploy/add-env-secret.jpg)
-    **Figure 14**: Add an environment secret.
+  **Figure 14**: Add an environment secret.
 
 1. Repeat these steps to add a secret called `index_header` with the value `PROD News Reader` for the `PROD` environment.
 1. If you select `Settings` and `Secrets` in the repo, you'll see the changes. They should look something like this:
 
   - ![View secrets](./media/actions/deploy/env-secrets.jpg)
-    **Figure 15**: View secrets.
+  **Figure 15**: View secrets.
 
-### Updat the Workflow
+### Update the workflow to handle configuration
 
 1. Navigate to the `.github/workflows/dotnet.yml` file and select the pencil icon to edit the file.
 1. Add the following step before the `az cli logout` step in the `deploy_staging` job:
@@ -355,7 +356,7 @@ To show how environment configuration can be handled, you're going to add a secr
 1. You should see the following headers on the index page for both sites:
 
   - ![Settings changed in the environments](./media/actions/deploy/settings-in-both-envs.jpg)
-    **Figure 15**: Settings changed in the environments.
+  **Figure 15**: Settings changed in the environments.
 
 ## Final Workflow File
 

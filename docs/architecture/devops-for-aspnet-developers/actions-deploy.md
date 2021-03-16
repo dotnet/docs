@@ -167,7 +167,7 @@ You can now add additional jobs to the workflow to deploy to the environments! Y
           run: az logout
     ```
 
-  Notice the following things:
+    Notice the following things:
 
     1. You're creating a new job called `deploy_staging`
     1. You specify a dependency using `needs`. This job needs the `build` job to complete successfully before it starts.
@@ -229,15 +229,15 @@ Now that you've deployed successfully to `PRE-PROD`, you'll want to deploy to `P
           run: az logout
     ```
 
-Notice the following things:
+    Notice the following things:
   
     1. Once again, you specify a new job `deploy_prod` that `needs` `deploy_staging` to complete before starting.
     1. You're targeting the `PROD` environment this time. Also, the `url` value is different from before.
     1. For the steps, you don't need to download the artifact since you're just going to perform a slot swap. You start by executing a `login` to the Azure context.
     1. The `Swap staging slot into production` step is a multi-line `run` command (note the use of the pipe symbol `|`). You also specify an `id` for this step so that you can refer to it (you refer to it in the `url` property of the `environment`). The first line executes the slot swap using the variables you defined above in the workflow. The second line uses an `az webapp show` command to extract the URL of the target web app. This final line uses `::set-output` in an echo to create an output variable for this task, setting the value to the web app URL.
 
-  > [!NOTE]
-  > The URL _must_ start with `http://` or `https://` or it will not render.
+    > [!NOTE]
+    > The URL _must_ start with `http://` or `https://` or it will not render.
 
 1. Commit the file.
 1. Let the workflow run for a couple minutes until it has deployed to `PRE-PROD`. At this point the workflow will pause and wait for the required approval since you're targeting the `PROD` environment, which requires an approval as defined earlier:

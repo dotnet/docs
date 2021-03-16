@@ -1,6 +1,6 @@
 ---
 title: DevOps with .NET and GitHub Actions - Build a .NET Web App
-description: Start your journey of DevOps with .NET and GitHub Actions by building a .NET Web app
+description: Start your journey of DevOps with .NET and GitHub Actions by building a .NET web app
 author: colindembovsky
 ms.date: 03/04/2021
 ---

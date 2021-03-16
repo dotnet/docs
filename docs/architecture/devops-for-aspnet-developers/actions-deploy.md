@@ -169,14 +169,14 @@ You can now add additional jobs to the workflow to deploy to the environments! Y
 
   Notice the following things:
 
-  1. You're creating a new job called `deploy_staging`
-  1. You specify a dependency using `needs`. This job needs the `build` job to complete successfully before it starts.
-  1. This job also runs on the latest Ubuntu hosted agent, as specified with the `runs-on` attribute.
-  1. You specify that this job is targeting the `PRE-PROD` environment using the `environment` object. You also specify the `url` property - this URL will be displayed in the workflow diagram, giving users an easy way to navigate to the environment. The value of this property is set as the `output` of the `step` with `id` `deploywebapp` which is defined below.
-  1. You're executing a `download-artifact` step to download the artifact (compiled web app) from the `build` job.
-  1. You then `login` to Azure using the `AZURE_CREDENTIALS` secret you saved earlier. Note the `${{ }}` notation for dereferencing variables.
-  1. You then perform a `webapp-deploy`, specifying the `app-name`, `slot-name` and path to the downloaded artifact (`package`). This action also defines an `output` parameter which you use to set the `url` of the environment above.
-  1. Finally, you execute a `logout` to logout of the Azure context
+    1. You're creating a new job called `deploy_staging`
+    1. You specify a dependency using `needs`. This job needs the `build` job to complete successfully before it starts.
+    1. This job also runs on the latest Ubuntu hosted agent, as specified with the `runs-on` attribute.
+    1. You specify that this job is targeting the `PRE-PROD` environment using the `environment` object. You also specify the `url` property - this URL will be displayed in the workflow diagram, giving users an easy way to navigate to the environment. The value of this property is set as the `output` of the `step` with `id` `deploywebapp` which is defined below.
+    1. You're executing a `download-artifact` step to download the artifact (compiled web app) from the `build` job.
+    1. You then `login` to Azure using the `AZURE_CREDENTIALS` secret you saved earlier. Note the `${{ }}` notation for dereferencing variables.
+    1. You then perform a `webapp-deploy`, specifying the `app-name`, `slot-name` and path to the downloaded artifact (`package`). This action also defines an `output` parameter which you use to set the `url` of the environment above.
+    1. Finally, you execute a `logout` to logout of the Azure context
 
 1. Commit the file.
 1. When the run completes, you should see two successful jobs. The URL for the `PRE-PROD` stage has been set and selecting it will navigate you to your web app staging slot:
@@ -230,6 +230,7 @@ Now that you've deployed successfully to `PRE-PROD`, you'll want to deploy to `P
     ```
 
 Notice the following things:
+  
     1. Once again, you specify a new job `deploy_prod` that `needs` `deploy_staging` to complete before starting.
     1. You're targeting the `PROD` environment this time. Also, the `url` value is different from before.
     1. For the steps, you don't need to download the artifact since you're just going to perform a slot swap. You start by executing a `login` to the Azure context.
@@ -276,8 +277,8 @@ You now have an end-to-end build and deploy workflow, including approvals! One m
 1. Commit the file.
 1. To see the `Run workflow` button, select the `Actions` tab. Select the `.NET` workflow in the list of workflows. At the top of the list of runs, you'll see the `Run workflow` button. If you select it, you'll be able to select the branch to run the workflow against and queue it:
 
-  - ![Manual dispatch](./media/actions/deploy/manual-dispatch.jpg)
-  **Figure 13**: Manual dispatch.
+    - ![Manual dispatch](./media/actions/deploy/manual-dispatch.jpg)
+    **Figure 13**: Manual dispatch.
 
 ## Handle Environment Configuration
 

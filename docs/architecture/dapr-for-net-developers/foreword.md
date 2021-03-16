@@ -2,7 +2,7 @@
 title: Foreword
 description: A foreword to Dapr for .NET Developers by Mark Russinovich
 author: markrussinovich
-ms.date: 02/14/2021
+ms.date: 02/17/2021
 ---
 
 # Foreword

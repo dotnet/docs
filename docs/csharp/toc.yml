@@ -187,8 +187,6 @@ items:
       href: linq/handle-null-values-in-query-expressions.md
     - name: Handle exceptions in query expressions
       href: linq/handle-exceptions-in-query-expressions.md
-  - name: Asynchronous programming
-    href: async.md
   - name: Pattern Matching
     href: pattern-matching.md
   - name: Write safe, efficient code
@@ -318,6 +316,8 @@ items:
       - name: Overview
         displayName: asynchronous programming
         href: programming-guide/concepts/async/index.md
+      - name: Asynchronous programming scenarios
+        href: async.md
       - name: Task asynchronous programming model
         href: programming-guide/concepts/async/task-asynchronous-programming-model.md
       - name: Async return types

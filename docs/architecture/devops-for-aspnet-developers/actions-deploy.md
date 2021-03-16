@@ -66,9 +66,9 @@ Once you have an SPN you'll create a [repository secret](https://docs.github.com
 ### Create a Repository Secret
 
 1. Now you're going to create an encrypted secret to store the credentials. You'll create this secret at the repository level.
-1. Navigate to GitHub and select your repo `Settings` tab and then select `Secrets`. Select `New repository secret`:
+1. Navigate to GitHub and select your repository **Settings** tab and then select **Secrets**. Select `New repository secret`:
 
-    - ![Create a secret](./media/actions/deploy/add-repo-secret.jpg)
+    - ![Create a secret](./media/actions/deploy/add-repository-secret.jpg)
     **Figure 1**: Create a secret.
 
 1. Copy and paste the JSON from the `az ad sp create-for-rbac` command into the body of the secret. You can create this JSON by hand too if you have the relevant fields for your SPN. The secret should be named `AZURE_CREDENTIALS`. Select `Add secret` to save the new secret:
@@ -87,9 +87,9 @@ For this example, you're going to split the actual Azure environment into two _l
 In this case, the only difference between the environments is the slot that you're deploying to. In real life, there would typically be different web apps (and separate web app plans), separate resource groups and even separate subscriptions. Typically there is an SPN per environment, so you may want to override the `AZURE_CREDENTIAL` value which you saved as a repository secret by creating it as an _environment secret_.
 
 > [!NOTE]
-> Precendence works from Environment to Repo. If a targeted environment has a secret called `MY_SECRET`, then that value is used. If not, the repository value of `MY_SECRET` (if any) is used.
+> Precendence works from Environment to repository. If a targeted environment has a secret called `MY_SECRET`, then that value is used. If not, the repository value of `MY_SECRET` (if any) is used.
 
-1. Select `Settings` and then `Environments` in your repo. Select `New Environment`:
+1. Select `Settings` and then `Environments` in your repository. Select `New Environment`:
 
     - ![Create an environment](./media/actions/deploy/new-env.jpg)
     **Figure 3**: Create an environment.
@@ -189,7 +189,7 @@ You can now add additional jobs to the workflow to deploy to the environments! Y
     - ![The staging slot running](./media/actions/deploy/deployed-to-staging.jpg)
     **Figure 7**: The staging slot running.
 
-1. You can also now see deployments. Navigate to `https://{your repo url}/deployments` to view your deployments:
+1. You can also now see deployments. Navigate to `https://{your repository url}/deployments` to view your deployments:
 
     - ![View deployments](./media/actions/deploy/deployments.jpg)
     **Figure 8**: View deployments.
@@ -262,7 +262,7 @@ Now that you've deployed successfully to `PRE-PROD`, you'll want to deploy to `P
 
 ## Add a Manual Queue Option
 
-You now have an end-to-end build and deploy workflow, including approvals! One more change you can make is to add a manual trigger to the workflow so that the workflow can be triggered from within the `Actions` tab of the repo.
+You now have an end-to-end build and deploy workflow, including approvals! One more change you can make is to add a manual trigger to the workflow so that the workflow can be triggered from within the **Actions** tab of the repository.
 
 1. Navigate to the `.github/workflows/dotnet.yml` file and select the pencil icon to edit the file.
 1. Add a new trigger between `on` and `push` on lines 3 and 4:
@@ -273,9 +273,9 @@ You now have an end-to-end build and deploy workflow, including approvals! One m
       push:
     ```
 
-1. The `workflow_dispatch` trigger displays a `Run workflow` button in the `Actions` tab of the repo - _but only if the trigger is defined in the default branch_. However, once this trigger is defined in the workflow, you can select the branch for the run.
+1. The `workflow_dispatch` trigger displays a `Run workflow` button in the **Actions** tab of the repository - _but only if the trigger is defined in the default branch_. However, once this trigger is defined in the workflow, you can select the branch for the run.
 1. Commit the file.
-1. To see the `Run workflow` button, select the `Actions` tab. Select the `.NET` workflow in the list of workflows. At the top of the list of runs, you'll see the `Run workflow` button. If you select it, you'll be able to select the branch to run the workflow against and queue it:
+1. To see the `Run workflow` button, select the **Actions** tab. Select the `.NET` workflow in the list of workflows. At the top of the list of runs, you'll see the `Run workflow` button. If you select it, you'll be able to select the branch to run the workflow against and queue it:
 
     - ![Manual dispatch](./media/actions/deploy/manual-dispatch.jpg)
     **Figure 13**: Manual dispatch.
@@ -305,7 +305,7 @@ To show how environment configuration can be handled, you're going to add a secr
     **Figure 14**: Add an environment secret.
 
 1. Repeat these steps to add a secret called `index_header` with the value `PROD News Reader` for the `PROD` environment.
-1. If you select `Settings` and `Secrets` in the repo, you'll see the changes. They should look something like this:
+1. If you select `Settings` and `Secrets` in the repository, you'll see the changes. They should look something like this:
 
     - ![View secrets](./media/actions/deploy/env-secrets.jpg)
     **Figure 15**: View secrets.

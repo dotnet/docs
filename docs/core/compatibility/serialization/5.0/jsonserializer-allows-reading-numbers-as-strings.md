@@ -35,7 +35,7 @@ For ASP.NET Core MVC and web API apps, you can configure the option in `Startup`
 
 ```csharp
 services.AddControllers()
-   .AddJsonOptions(options.NumberHandling = JsonNumberHandling.Strict);
+   .AddJsonOptions(options => options.JsonSerializerOptions.NumberHandling = JsonNumberHandling.Strict);
 ```
 
 ## Affected APIs

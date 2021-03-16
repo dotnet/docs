@@ -167,7 +167,7 @@ You can now add additional jobs to the workflow to deploy to the environments! Y
           run: az logout
     ```
 
-Notice the following things:
+  Notice the following things:
 
   1. You're creating a new job called `deploy_staging`
   1. You specify a dependency using `needs`. This job needs the `build` job to complete successfully before it starts.
@@ -285,13 +285,13 @@ Your workflow is deploying the same binary to each environment. This is an impor
 
 For this simple application there is no database connection string. However, there is an example configuration setting that you can modify for each environment. If you open the `simple-feed-reader/SimpleFeedReader/appsettings.json` file you'll see that the configuration includes a setting for the Header text on the Index page:
 
-    ```yml
-      "UI": {
-        "Index": {
-          "Header": "Simple News Reader"
-        }
-      },
-    ```
+```yml
+  "UI": {
+    "Index": {
+      "Header": "Simple News Reader"
+    }
+  },
+```
 
 To show how environment configuration can be handled, you're going to add a secret to each environment and then substitute that value into the settings as you deploy.
 
@@ -300,14 +300,14 @@ To show how environment configuration can be handled, you're going to add a secr
 1. Select `Settings` on your repository and then `Environments` and select `PRE-PROD`.
 1. Select `Add secret` and add a secret called `index_header` with the value `PRE PROD News Reader`. Select `Add secret`.
 
-  - ![Add an environment secret](./media/actions/deploy/add-env-secret.jpg)
-  **Figure 14**: Add an environment secret.
+    - ![Add an environment secret](./media/actions/deploy/add-env-secret.jpg)
+    **Figure 14**: Add an environment secret.
 
 1. Repeat these steps to add a secret called `index_header` with the value `PROD News Reader` for the `PROD` environment.
 1. If you select `Settings` and `Secrets` in the repo, you'll see the changes. They should look something like this:
 
-  - ![View secrets](./media/actions/deploy/env-secrets.jpg)
-  **Figure 15**: View secrets.
+    - ![View secrets](./media/actions/deploy/env-secrets.jpg)
+    **Figure 15**: View secrets.
 
 ### Update the workflow to handle configuration
 
@@ -355,8 +355,8 @@ To show how environment configuration can be handled, you're going to add a secr
 1. Let the workflow run and approve the deployment to `PROD` once the approval is reached.
 1. You should see the following headers on the index page for both sites:
 
-  - ![Settings changed in the environments](./media/actions/deploy/settings-in-both-envs.jpg)
-  **Figure 15**: Settings changed in the environments.
+    - ![Settings changed in the environments](./media/actions/deploy/settings-in-both-envs.jpg)
+    **Figure 15**: Settings changed in the environments.
 
 ## Final Workflow File
 

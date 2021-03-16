@@ -27,7 +27,7 @@ Tracing is a way for you to monitor the execution of your application while it i
   
 - **Performance counters** - Components that allow you to track the performance of your application. For more information, see [Performance Counters](performance-counters.md).  
   
-- **Event logs** - Components that allow you receive and track major events in the execution of your application. For more information, see the <xref:System.Diagnostics.EventLog> class.  
+- **Event logs** - Components that allow you to receive and track major events in the execution of your application. For more information, see the <xref:System.Diagnostics.EventLog> class.  
   
  Instrumenting your application by placing trace statements at strategic locations in your code is especially useful for distributed applications. By using trace statements you can instrument an application not only to display information when things go wrong, but also to monitor how well the application is performing.  
   

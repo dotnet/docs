@@ -25,6 +25,10 @@ namespace Patterns
             Console.WriteLine("--- Pattern combinators ---------------------");
             PatternCombinators.Examples();
             Console.WriteLine();
+
+            Console.WriteLine("--- Property pattern ------------------------");
+            PropertyPattern.Examples();
+            Console.WriteLine();
         }
     }
 }

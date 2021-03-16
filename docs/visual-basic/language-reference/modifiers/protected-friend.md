@@ -13,11 +13,7 @@ helpviewer_keywords:
 The `Protected Friend` keyword combination is a member access modifier. It confers both [Friend](friend.md) access and [Protected](protected.md) access on the declared elements, so they are accessible from anywhere in the same assembly, from their own class, and from derived classes. You can specify `Protected Friend` only on members of classes; you cannot apply `Protected Friend` to members of a structure because structures cannot be inherited.
 
 > [!NOTE]
-> In Visual Studio, selecting F1 help on `protected friend` provides help for either [protected](protected.md) or [friend](friend.md). The IDE picks the single token under the cursor rather than the compound word.
-
-## Rules
-
-**Declaration Context.** You can use `Protected Friend` only at the class level. This means the declaration context for a `Protected` element must be a class, and cannot be a source file, namespace, interface, module, structure, or procedure.
+> In Visual Studio, selecting F1 help on `Protected Friend` provides help for either [Protected](protected.md) or [Friend](friend.md). The IDE picks the single token under the cursor rather than the compound word.
 
 ## See also
 

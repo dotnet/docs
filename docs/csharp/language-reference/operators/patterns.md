@@ -114,9 +114,11 @@ As the preceding example shows, you can repeatedly use the pattern combinators i
 
 ## Property pattern
 
-Beginning with C# 8.0, you use a *property pattern* to check that an expression result is non-null and match its properties or fields against nested patterns, as the following example shows:
+Beginning with C# 8.0, you use a *property pattern* to match expression's properties or fields against nested patterns, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="BasicExample":::
+
+A property pattern matches an expression when an expression result is non-null and every nested pattern matches the corresponding property or field of the expression result.
 
 You can also add a runtime type check and a variable declaration to a property pattern, as the following example shows:
 

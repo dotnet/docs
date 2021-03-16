@@ -181,8 +181,8 @@ If you got stuck, you can see the source for this tutorial [in our GitHub repo](
 
 This tutorial demonstrated many of the techniques used in Object-Oriented programming:
 
-- You used *Abstraction* when you kept many details `private` in each class.
-- You used *Encapsulation* when you defined classes for each of the different account types. Those classes described the behavior for that type of account.
+- You used *Abstraction* when you defined classes for each of the different account types. Those classes described the behavior for that type of account.
+- You used *Encapsulation* when you kept many details `private` in each class.
 - You used *Inheritance* when you leveraged the implementation already created in the `BankAccount` class to save code.
 - You used *Polymorphism* when you created `virtual` methods that derived classes could override to create specific behavior for that account type.
 

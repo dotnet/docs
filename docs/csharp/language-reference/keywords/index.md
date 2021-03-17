@@ -61,6 +61,273 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
   
 ## The sme table using triple-colon rows
 
+## Table option A
+
+:::row:::
+   :::column span="":::
+      [add](add.md)
+   :::column-end:::
+   :::column span="":::
+      [alias](extern-alias.md)
+   :::column-end:::
+   :::column span="":::
+      [ascending](ascending.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [async](async.md)
+   :::column-end:::
+   :::column span="":::
+      [await](../operators/await.md)
+   :::column-end:::
+   :::column span="":::
+      [by](by.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [descending](descending.md)
+   :::column-end:::
+   :::column span="":::
+      [dynamic](../builtin-types/reference-types.md)
+   :::column-end:::
+   :::column span="":::
+      [equals](equals.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [from](from-clause.md)
+   :::column-end:::
+   :::column span="":::
+      [get](get.md)
+   :::column-end:::
+   :::column span="":::
+      [global](../operators/namespace-alias-qualifier.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [group](group-clause.md)
+   :::column-end:::
+   :::column span="":::
+      [into](into.md)
+   :::column-end:::
+   :::column span="":::
+      [join](join-clause.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      |[let](let-clause.md)
+   :::column-end:::
+   :::column span="":::
+      [nameof](../operators/nameof.md)
+   :::column-end:::
+   :::column span="":::
+      [nint](../builtin-types/nint-nuint.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [notnull](../../programming-guide/generics/constraints-on-type-parameters.md#notnull-constraint)
+   :::column-end:::
+   :::column span="":::
+      [nuint](../builtin-types/nint-nuint.md)
+   :::column-end:::
+   :::column span="":::
+      [on](on.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [orderby](orderby-clause.md)
+   :::column-end:::
+   :::column span="":::
+      [partial (type)](partial-type.md)
+   :::column-end:::
+   :::column span="":::
+      [partial (method)](partial-method.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [remove](remove.md)
+   :::column-end:::
+   :::column span="":::
+      [select](select-clause.md)
+   :::column-end:::
+   :::column span="":::
+      [set](set.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [unmanaged (generic type constraint)](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint)
+   :::column-end:::
+   :::column span="":::
+      [value](value.md)
+   :::column-end:::
+   :::column span="":::
+      [var](var.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [when (filter condition)](when.md)
+   :::column-end:::
+   :::column span="":::
+      [where (generic type constraint)](where-generic-type-constraint.md)
+   :::column-end:::
+   :::column span="":::
+      [where (query clause)](where-clause.md)|
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [with](../operators/with-expression.md)
+   :::column-end:::
+   :::column span="":::
+      [yield](yield.md)
+   :::column-end:::
+   :::column span="":::
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [add](add.md)
+   :::column-end:::
+   :::column span="":::
+      [alias](extern-alias.md)
+   :::column-end:::
+   :::column span="":::
+      [ascending](ascending.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [async](async.md)
+   :::column-end:::
+   :::column span="":::
+      [await](../operators/await.md)
+   :::column-end:::
+   :::column span="":::
+      [by](by.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [descending](descending.md)
+   :::column-end:::
+   :::column span="":::
+      [dynamic](../builtin-types/reference-types.md)
+   :::column-end:::
+   :::column span="":::
+      [equals](equals.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [from](from-clause.md)
+   :::column-end:::
+   :::column span="":::
+      [get](get.md)
+   :::column-end:::
+   :::column span="":::
+      [global](../operators/namespace-alias-qualifier.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [group](group-clause.md)
+   :::column-end:::
+   :::column span="":::
+      [into](into.md)
+   :::column-end:::
+   :::column span="":::
+      [join](join-clause.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      |[let](let-clause.md)
+   :::column-end:::
+   :::column span="":::
+      [nameof](../operators/nameof.md)
+   :::column-end:::
+   :::column span="":::
+      [nint](../builtin-types/nint-nuint.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [notnull](../../programming-guide/generics/constraints-on-type-parameters.md#notnull-constraint)
+   :::column-end:::
+   :::column span="":::
+      [nuint](../builtin-types/nint-nuint.md)
+   :::column-end:::
+   :::column span="":::
+      [on](on.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [orderby](orderby-clause.md)
+   :::column-end:::
+   :::column span="":::
+      [partial (type)](partial-type.md)
+   :::column-end:::
+   :::column span="":::
+      [partial (method)](partial-method.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [remove](remove.md)
+   :::column-end:::
+   :::column span="":::
+      [select](select-clause.md)
+   :::column-end:::
+   :::column span="":::
+      [set](set.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [unmanaged (generic type constraint)](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint)
+   :::column-end:::
+   :::column span="":::
+      [value](value.md)
+   :::column-end:::
+   :::column span="":::
+      [var](var.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [when (filter condition)](when.md)
+   :::column-end:::
+   :::column span="":::
+      [where (generic type constraint)](where-generic-type-constraint.md)
+   :::column-end:::
+   :::column span="":::
+      [where (query clause)](where-clause.md)|
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [with](../operators/with-expression.md)
+   :::column-end:::
+   :::column span="":::
+      [yield](yield.md)
+   :::column-end:::
+   :::column span="":::
+   :::column-end:::
+:::row-end:::
+
+## Same table using html breaks
+
 :::row:::
    :::column span="":::
       [add](add.md)<br><br>
@@ -104,7 +371,6 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
       [where (query clause)](where-clause.md)|
    :::column-end:::
 :::row-end:::
-
 
 ## See also
 

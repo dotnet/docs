@@ -7,8 +7,6 @@ ms.custom: updateeachrelease
 ---
 # MSBuild reference for .NET SDK projects
 
-<xref:Android.Util.Half.HalfToIntBits(System.Int16)>
-
 This page is a reference for the MSBuild properties and items that you can use to configure .NET projects.
 
 > [!NOTE]

@@ -307,7 +307,8 @@ Formatting interpolated strings
 Interpolated strings (and plain strings literals) can just be left on a single line, regardless of how long the line is.
 
 ```fsharp
-let serviceStorageConnection = $"DefaultEndpointsProtocol=https;AccountName=%s{serviceStorageAccount.Name};AccountKey=%s{serviceStorageAccountKey.Value}"
+let serviceStorageConnection =
+    $"DefaultEndpointsProtocol=https;AccountName=%s{serviceStorageAccount.Name};AccountKey=%s{serviceStorageAccountKey.Value}"
 ```
 
 ## Naming conventions

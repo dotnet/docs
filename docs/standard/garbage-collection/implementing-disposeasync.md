@@ -3,7 +3,7 @@ title: Implement a DisposeAsync method
 description: Learn how to implement DisposeAsync and DisposeAsyncCore methods to perform asynchronous resource cleanup.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/08/2021
+ms.date: 03/17/2021
 dev_langs:
   - "csharp"
 helpviewer_keywords:

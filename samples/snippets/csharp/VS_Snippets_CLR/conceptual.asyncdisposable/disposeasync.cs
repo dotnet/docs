@@ -35,7 +35,7 @@ public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
     {
         if (_jsonWriter is not null)
         {
-            await _jsonWriter.DisposeAsync();
+            await _jsonWriter.DisposeAsync().ConfigureAwait(false);
         }
 
         _jsonWriter = null;

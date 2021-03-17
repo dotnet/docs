@@ -1,5 +1,5 @@
 ---
-description: "C# preprocessor directives"
+description: "Learn the different C# preprocessor directives that control conditional compilation, warnings, nullable analysis, and more"
 title: "C# preprocessor directives"
 ms.date: 03/17/2021
 f1_keywords: 
@@ -14,7 +14,7 @@ Although the compiler doesn't have a separate preprocessor, the directives descr
 
 A preprocessor directive must be the only instruction on a line.
 
-## #if (C# reference)
+## #if
 
 When the C# compiler encounters an `#if` directive, followed eventually by an [#endif](preprocessor-endif.md) directive, it compiles the code between the directives only if the specified symbol is defined. Unlike C and C++, you cannot assign a numeric value to a symbol. The `#if` statement in C# is Boolean and only tests whether the symbol has been defined or not. For example:
 
@@ -24,34 +24,22 @@ When the C# compiler encounters an `#if` directive, followed eventually by an [#
 #endif
 ```
 
-You can use the operators [==](../operators/equality-operators.md#equality-operator-) (equality) and [!=](../operators/equality-operators.md#inequality-operator-) (inequality) only to test for the [bool](../builtin-types/bool.md) values `true` or `false`. `true` means the symbol is defined. The statement `#if DEBUG` has the same meaning as `#if (DEBUG == true)`. You can use the [&& (and)](../operators/boolean-logical-operators.md#conditional-logical-and-operator-), [&#124;&#124; (or)](../operators/boolean-logical-operators.md#conditional-logical-or-operator-), and [! (not)](../operators/boolean-logical-operators.md#logical-negation-operator-) operators to evaluate whether multiple symbols have been defined. You can also group symbols and operators with parentheses.
+You can use the operators [`==`](operators/equality-operators.md#equality-operator-) (equality) and [`!=`](operators/equality-operators.md#inequality-operator-) (inequality) only to test for the [`bool`](builtin-types/bool.md) values `true` or `false`. `true` means the symbol is defined. The statement `#if DEBUG` has the same meaning as `#if (DEBUG == true)`. You can use the [`&&` (and)](operators/boolean-logical-operators.md#conditional-logical-and-operator-), [`||` (or)](operators/boolean-logical-operators.md#conditional-logical-or-operator-), and [`!` (not)](operators/boolean-logical-operators.md#logical-negation-operator-) operators to evaluate whether multiple symbols have been defined. You can also group symbols and operators with parentheses.
 
-### Remarks
+`#if`, along with the [`#else`](#-else), [`#elif`](#-elif), [`#endif`](#-endif), [`#define`](#-define), and [`#undef`](#-undef) directives, lets you include or exclude code based on the existence of one or more symbols. This can be useful when compiling code for a debug build or when compiling for a specific configuration.
 
-`#if`, along with the [#else](preprocessor-else.md), [#elif](preprocessor-elif.md), [#endif](preprocessor-endif.md), [#define](preprocessor-define.md), and [#undef](preprocessor-undef.md) directives, lets you include or exclude code based on the existence of one or more symbols. This can be useful when compiling code for a debug build or when compiling for a specific configuration.
+A conditional directive beginning with a `#if` directive must explicitly be terminated with a `#endif` directive. `#define` lets you define a symbol. By then using the symbol as the expression passed to the `#if` directive, the expression evaluates to `true`. You can also define a symbol with the [**DefineConstants**](../compiler-options/language.md#defineconstants) compiler option. You can undefine a symbol with [#undef](preprocessor-undef.md). The scope of a symbol created with `#define` is the file in which it was defined. A symbol that you define with **DefineConstants** or with `#define` doesn't conflict with a variable of the same name. That is, a variable name should not be passed to a preprocessor directive, and a symbol can only be evaluated by a preprocessor directive.
 
-A conditional directive beginning with a `#if` directive must explicitly be terminated with a `#endif` directive.
-
-`#define` lets you define a symbol. By then using the symbol as the expression passed to the `#if` directive, the expression evaluates to `true`.
-
-You can also define a symbol with the [**DefineConstants**](../compiler-options/language.md#defineconstants) compiler option. You can undefine a symbol with [#undef](preprocessor-undef.md).
-
-A symbol that you define with `-define` or with `#define` doesn't conflict with a variable of the same name. That is, a variable name should not be passed to a preprocessor directive, and a symbol can only be evaluated by a preprocessor directive.
-
-The scope of a symbol created with `#define` is the file in which it was defined.
-
-The build system is also aware of predefined preprocessor symbols representing different [target frameworks](../../../standard/frameworks.md) in SDK-style projects. They're useful when creating applications that can target more than one .NET version.
+The build system is also aware of predefined preprocessor symbols representing different [target frameworks](../../standard/frameworks.md) in SDK-style projects. They're useful when creating applications that can target more than one .NET version.
 
 [!INCLUDE [Preprocessor symbols](~/includes/preprocessor-symbols.md)]
 
 > [!NOTE]
 > For traditional, non-SDK-style projects, you have to manually configure the conditional compilation symbols for the different target frameworks in Visual Studio via the project's properties pages.
 
-Other predefined symbols include the DEBUG and TRACE constants. You can override the values set for the project using `#define`. The DEBUG symbol, for example, is automatically set depending on your build configuration properties ("Debug" or "Release" mode).
+Other predefined symbols include the `DEBUG` and `TRACE` constants. You can override the values set for the project using `#define`. The DEBUG symbol, for example, is automatically set depending on your build configuration properties ("Debug" or "Release" mode).
 
-### Examples
-
-The following example shows you how to define a MYTEST symbol on a file and then test the values of the MYTEST and DEBUG symbols. The output of this example depends on whether you built the project on Debug or Release configuration mode.
+The following example shows you how to define a `MYTEST` symbol on a file and then test the values of the `MYTEST` and `DEBUG` symbols. The output of this example depends on whether you built the project on **Debug** or **Release** configuration mode.
 
 ```csharp
 #define MYTEST
@@ -90,174 +78,136 @@ public class MyClass
 }
 ```
 
-### Add symbols for a project
+## #else
 
-You can define symbols for a project using the **DefineConstants** element of a project file.  See the [language compiler options](../compiler-options/language.md#defineconstants) for more information.
+`#else` lets you create a compound conditional directive, so that, if none of the expressions in the preceding [`#if`](#-if) or (optional) [`#elif`](#-elif) directives evaluate to `true`, the compiler will evaluate all code between `#else` and the subsequent `#endif`. `#endif`(#-endif) must be the next preprocessor directive after `#else`. See [`#if`](#-if) for an example of how to use `#else`.
 
-## #else (C# Reference)
+## #elif
 
-`#else` lets you create a compound conditional directive, so that, if none of the expressions in the preceding [#if](./preprocessor-if.md) or (optional) [#elif](./preprocessor-elif.md) directives evaluate to `true`, the compiler will evaluate all code between `#else` and the subsequent `#endif`.  
-  
-### Remarks  
+`#elif` lets you create a compound conditional directive. The `#elif` expression will be evaluated if neither the preceding [`#if`](#-if.md) nor any preceding, optional, `#elif` directive expressions evaluate to `true`. If a `#elif` expression evaluates to `true`, the compiler evaluates all the code between the `#elif` and the next conditional directive. For example:
 
- [#endif](./preprocessor-endif.md) must be the next preprocessor directive after `#else`. See [#if](./preprocessor-if.md) for an example of how to use `#else`.  
-  
-## #elif (C# Reference)
-
-`#elif` lets you create a compound conditional directive. The `#elif` expression will be evaluated if neither the preceding [#if](./preprocessor-if.md) nor any preceding, optional, `#elif` directive expressions evaluate to `true`. If a `#elif` expression evaluates to `true`, the compiler evaluates all the code between the `#elif` and the next conditional directive. For example:  
-  
 ```csharp
-#define VC7  
-//...  
-#if debug  
-    Console.WriteLine("Debug build");  
-#elif VC7  
-    Console.WriteLine("Visual Studio 7");  
-#endif  
-```  
-  
- You can use the operators `==` (equality), `!=` (inequality), `&&` (and), and `||` (or), to evaluate multiple symbols. You can also group symbols and operators with parentheses.  
-  
-### Remarks  
+#define VC7
+//...
+#if debug
+    Console.WriteLine("Debug build");
+#elif VC7
+    Console.WriteLine("Visual Studio 7");
+#endif
+```
 
- `#elif` is equivalent to using:  
-  
+You can use the operators `==` (equality), `!=` (inequality), `&&` (and), and `||` (or), to evaluate multiple symbols. You can also group symbols and operators with parentheses. `#elif` is equivalent to using:
+
 ```csharp
-#else  
-#if  
-```  
-  
- Using `#elif` is simpler, because each `#if` requires a [#endif](./preprocessor-endif.md), whereas a `#elif` can be used without a matching `#endif`.  
-  
- See [#if](./preprocessor-if.md) for an example of how to use `#elif`.  
+#else
+#if
+```
 
-## #endif (C# Reference)
+Using `#elif` is simpler, because each `#if` requires a [`#endif`](#-endif), whereas a `#elif` can be used without a matching `#endif`. See [`#if`](#-if) for an example of how to use `#elif`.
 
-`#endif` specifies the end of a conditional directive, which began with the [#if](./preprocessor-if.md) directive. For example,  
-  
+## #endif
+
+`#endif` specifies the end of a conditional directive, which began with the [`#if`](#-if) directive. For example,
+
 ```csharp
-#define DEBUG  
-// ...  
-#if DEBUG  
-    Console.WriteLine("Debug version");  
-#endif  
-```  
-  
-### Remarks  
+#define DEBUG
+// ...
+#if DEBUG
+    Console.WriteLine("Debug version");
+#endif
+```
 
- A conditional directive, beginning with a `#if` directive, must explicitly be terminated with a `#endif` directive. See [#if](./preprocessor-if.md) for an example of how to use `#endif`.  
-  
-## #define (C# Reference)
+A conditional directive, beginning with a `#if` directive, must explicitly be terminated with a `#endif` directive. See [`#if`](#-if) for an example of how to use `#endif`.
 
-You use `#define` to define a symbol. When you use the symbol as the expression that's passed to the [#if](./preprocessor-if.md) directive, the expression will evaluate to `true`, as the following example shows:  
+## #define
+
+You use `#define` to define a symbol. When you use the symbol as the expression that's passed to the [`#if`](#-if) directive, the expression will evaluate to `true`, as the following example shows:
 
  ```csharp
  #define DEBUG
  ```
-  
-### Remarks  
-  
-> [!NOTE]
-> The `#define` directive cannot be used to declare constant values as is typically done in C and C++. Constants in C# are best defined as static members of a class or struct. If you have several such constants, consider creating a separate "Constants" class to hold them.  
-  
- Symbols can be used to specify conditions for compilation. You can test for the symbol with either [#if](./preprocessor-if.md) or [#elif](./preprocessor-elif.md). You can also use the <xref:System.Diagnostics.ConditionalAttribute> to perform conditional compilation.  
-  
- You can define a symbol, but you cannot assign a value to a symbol. The `#define` directive must appear in the file before you use any instructions that aren't also preprocessor directives.  
-  
- You can also define a symbol with the [**DefineConstants**](../compiler-options/language.md#defineconstants) compiler option. You can undefine a symbol with [#undef](./preprocessor-undef.md).  
-  
- A symbol that you define with `-define` or with `#define` does not conflict with a variable of the same name. That is, a variable name should not be passed to a preprocessor directive and a symbol can only be evaluated by a preprocessor directive.  
-  
- The scope of a symbol that was created by using `#define` is the file in which the symbol was defined.  
-  
- As the following example shows, you must put `#define` directives at the top of the file.  
-  
-```csharp  
-#define DEBUG  
-//#define TRACE  
-#undef TRACE  
-  
-using System;  
-  
-public class TestDefine  
-{  
-    static void Main()  
-    {  
-#if (DEBUG)  
-        Console.WriteLine("Debugging is enabled.");  
-#endif  
-  
-#if (TRACE)  
-     Console.WriteLine("Tracing is enabled.");  
-#endif  
-    }  
-}  
-// Output:  
-// Debugging is enabled.  
-```  
-  
- For an example of how to undefine a symbol, see [#undef](./preprocessor-undef.md).  
-  
-## #undef (C# Reference)
 
-`#undef` lets you undefine a symbol, such that, by using the symbol as the expression in a [#if](./preprocessor-if.md) directive, the expression will evaluate to `false`.  
-  
- A symbol can be defined either with the [#define](./preprocessor-define.md) directive or the [**DefineConstants**](../compiler-options/language.md#defineconstants) compiler option. The `#undef` directive must appear in the file before you use any statements that are not also directives.  
-  
-### Example  
+> [!NOTE]
+> The `#define` directive cannot be used to declare constant values as is typically done in C and C++. Constants in C# are best defined as static members of a class or struct. If you have several such constants, consider creating a separate "Constants" class to hold them.
+
+Symbols can be used to specify conditions for compilation. You can test for the symbol with either [`#if`](#-if) or [`#elif`](#-elif). You can also use the <xref:System.Diagnostics.ConditionalAttribute> to perform conditional compilation. You can define a symbol, but you cannot assign a value to a symbol. The `#define` directive must appear in the file before you use any instructions that aren't also preprocessor directives. You can also define a symbol with the [**DefineConstants**](compiler-options/language.md#defineconstants) compiler option. You can undefine a symbol with [`#undef`](#-undef). As the following example shows, you must put `#define` directives at the top of the file.
 
 ```csharp
-// preprocessor_undef.cs  
-// compile with: /d:DEBUG  
-#undef DEBUG  
-using System;  
-class MyClass
-{  
+#define DEBUG
+//#define TRACE
+#undef TRACE
+
+using System;
+
+public class TestDefine
+{
     static void Main()
-    {  
-#if DEBUG  
-        Console.WriteLine("DEBUG is defined");  
-#else  
-        Console.WriteLine("DEBUG is not defined");  
-#endif  
-    }  
-}  
+    {
+#if (DEBUG)
+        Console.WriteLine("Debugging is enabled.");
+#endif
+
+#if (TRACE)
+     Console.WriteLine("Tracing is enabled.");
+#endif
+    }
+}
+// Output:
+// Debugging is enabled.
 ```
 
-**DEBUG is not defined**
+## #undef
 
-## #warning (C# Reference)
+`#undef` lets you undefine a symbol, such that, by using the symbol as the expression in a [`#if`](#-if.md) directive, the expression will evaluate to `false`.
 
-`#warning` lets you generate a [CS1030](../../misc/cs1030.md) level one compiler warning from a specific location in your code. For example:  
-  
+A symbol can be defined either with the [`#define`](#-define) directive or the [**DefineConstants**](compiler-options/language.md#defineconstants) compiler option. The `#undef` directive must appear in the file before you use any statements that are not also directives.
+
 ```csharp
-#warning Deprecated code in this method.  
-```  
-  
-### Remarks
+// preprocessor_undef.cs
+// compile with: /d:DEBUG
+#undef DEBUG
+using System;
+class MyClass
+{
+    static void Main()
+    {
+#if DEBUG
+        Console.WriteLine("DEBUG is defined");
+#else
+        Console.WriteLine("DEBUG is not defined");
+#endif
+    }
+}
+```
 
- A common use of `#warning` is in a conditional directive. It is also possible to generate a user-defined error with [#error](./preprocessor-error.md).  
-  
-### Example  
+## #warning
+
+`#warning` lets you generate a [CS1030](../misc/cs1030.md) level one compiler warning from a specific location in your code. For example:
+
+```csharp
+#warning Deprecated code in this method.
+```
+
+A common use of `#warning` is in a conditional directive. It is also possible to generate a user-defined error with [`#error`](#-error.md).
 
 ```csharp
 // preprocessor_warning.cs  
-// CS1030 expected  
-#define DEBUG  
+// CS1030 expected
+#define DEBUG
 class MainClass
-{  
+{
     static void Main()
-    {  
-#if DEBUG  
-#warning DEBUG is defined  
-#endif  
-    }  
-}  
-```  
+    {
+#if DEBUG
+#warning DEBUG is defined
+#endif
+    }
+}
+```
 
-## #error (C# Reference)
+## #error
 
-`#error` lets you generate a [CS1029](../compiler-messages/cs1029.md) user-defined error from a specific location in your code. For example:
+`#error` lets you generate a [CS1029](compiler-messages/cs1029.md) user-defined error from a specific location in your code. For example:
 
 ```csharp
 #error Deprecated code in this method.
@@ -266,13 +216,7 @@ class MainClass
 > [!NOTE]
 > The compiler treats `#error version` in a special way and reports a compiler error, CS8304, with a message containing the used compiler and language versions.
 
-### Remarks
-
-A common use of `#error` is in a conditional directive.
-
-It is also possible to generate a user-defined warning with [#warning](./preprocessor-warning.md).
-
-### Example
+A common use of `#error` is in a conditional directive. It is also possible to generate a user-defined warning with [`#warning`](#-warning.md).
 
 ```csharp
 // preprocessor_error.cs
@@ -289,7 +233,7 @@ class MainClass
 }
 ```
 
-## #line (C# Reference)
+## #line
 
 `#line` lets you modify the compiler's line numbering and (optionally) the file name output for errors and warnings.
 
@@ -324,8 +268,6 @@ MainClass.cs(12,16): warning CS0168: The variable 's' is declared but never used
 MainClass.cs(13,16): warning CS0168: The variable 'd' is declared but never used
 ```
 
-### Remarks
-
 The `#line` directive might be used in an automated, intermediate step in the build process. For example, if lines were removed from the original source code file, but you still wanted the compiler to generate output based on the original line numbering in the file, you could remove lines and then simulate the original line numbering with `#line`.
 
 The `#line hidden` directive hides the successive lines from the debugger, such that when the developer steps through the code, any lines between a `#line hidden` and the next `#line` directive (assuming that it is not another `#line hidden` directive) will be stepped over. This option can also be used to allow ASP.NET to differentiate between user-defined and machine-generated code. Although ASP.NET is the primary consumer of this feature, it is likely that more source generators will make use of it.
@@ -335,8 +277,6 @@ A `#line hidden` directive does not affect file names or line numbers in error r
 The `#line filename` directive specifies the file name you want to appear in the compiler output. By default, the actual name of the source code file is used. The file name must be in double quotation marks ("") and must be preceded by a line number.
 
 A source code file can have any number of `#line` directives.
-
-### Example 1
 
 The following example shows how the debugger ignores the hidden lines in the code. When you run the example, it will display three lines of text. However, when you set a break point, as shown in the example, and hit F10 to step through the code, you will notice that the debugger ignores the hidden line. Notice also that even if you set a break point at the hidden line, the debugger will still ignore it.
 
@@ -356,7 +296,7 @@ class MainClass
 }
 ```
 
-## #nullable (C# Reference)
+## #nullable
 
 The `#nullable` preprocessor directive sets the *nullable annotation context* and *nullable warning context*. This directive controls whether nullable annotations have effect, and whether nullability warnings are given. Each context is either *disabled* or *enabled*.
 
@@ -374,88 +314,66 @@ The effect of the directives is as follows:
 - `#nullable enable warnings`: Sets the nullable warning context to *enabled*.
 - `#nullable restore warnings`: Restores the nullable warning context to project settings.
 
-## #region (C# Reference)
+## #region
 
-`#region` lets you specify a block of code that you can expand or collapse when using the [outlining](/visualstudio/ide/outlining) feature of the code editor. In longer code files, it is convenient to be able to collapse or hide one or more regions so that you can focus on the part of the file that you are currently working on. The following example shows how to define a region:  
-  
+`#region` lets you specify a block of code that you can expand or collapse when using the [outlining](/visualstudio/ide/outlining) feature of the code editor. In longer code files, it is convenient to be able to collapse or hide one or more regions so that you can focus on the part of the file that you are currently working on. The following example shows how to define a region:
+
 ```csharp
-#region MyClass definition  
+#region MyClass definition
 public class MyClass
-{  
+{
     static void Main()
-    {  
-    }  
-}  
-#endregion  
-```  
-  
-## Remarks  
+    {
+    }
+}
+#endregion
+```
 
- A `#region` block must be terminated with a [#endregion](./preprocessor-endregion.md) directive.  
-  
- A `#region` block cannot overlap with a [#if](./preprocessor-if.md) block. However, a `#region` block can be nested in a `#if` block, and a `#if` block can be nested in a `#region` block.  
-  
-## #endregion (C# Reference)
+A `#region` block must be terminated with a [`#endregion`](#-endregion) directive. A `#region` block cannot overlap with a [`#if`](#-if) block. However, a `#region` block can be nested in a `#if` block, and a `#if` block can be nested in a `#region` block.
 
-`#endregion` marks the end of a [#region](./preprocessor-region.md) block. For example:  
-  
+## #endregion
+
+`#endregion` marks the end of a [#region](./preprocessor-region.md) block. For example:
+
 ```csharp
-#region MyClass definition  
+#region MyClass definition
 class MyClass
-{  
+{
     static void Main()
-    {  
-    }  
-}  
-#endregion  
-```  
+    {
+    }
+}
+#endregion
+```
 
-## #pragma (C# Reference)
+## #pragma
 
-`#pragma` gives the compiler special instructions for the compilation of the file in which it appears. The instructions must be supported by the compiler. In other words, you cannot use `#pragma` to create custom preprocessing instructions. The Microsoft C# compiler supports the following two `#pragma` instructions:  
+`#pragma` gives the compiler special instructions for the compilation of the file in which it appears. The instructions must be supported by the compiler. In other words, you cannot use `#pragma` to create custom preprocessing instructions. The Microsoft C# compiler supports the following two `#pragma` instructions:
   
- [#pragma warning](./preprocessor-pragma-warning.md)  
-  
- [#pragma checksum](./preprocessor-pragma-checksum.md)  
-  
-### Syntax  
+- [#pragma warning](./preprocessor-pragma-warning.md)  
+- [#pragma checksum](./preprocessor-pragma-checksum.md)  
   
 ```csharp
-#pragma pragma-name pragma-arguments  
-```  
-  
-### Parameters  
+#pragma pragma-name pragma-arguments
+```
 
- `pragma-name`  
- The name of a recognized pragma.  
-  
- `pragma-arguments`  
- Pragma-specific arguments.  
-  
-## #pragma warning (C# Reference)
+Where `pragma-name` is the name of a recognized pragma and `pragma-arguments` is the pragma-specific arguments.  
+
+### #pragma warning
 
 `#pragma warning` can enable or disable certain warnings.
-
-### Syntax
 
 ```csharp
 #pragma warning disable warning-list
 #pragma warning restore warning-list
 ```
 
-### Parameters
-
- `warning-list`
- A comma-separated list of warning numbers. The "CS" prefix is optional.
-
- When no warning numbers are specified, `disable` disables all warnings and `restore` enables all warnings.
+Where `warning-list` is a comma-separated list of warning numbers. The "CS" prefix is optional. When no warning numbers are specified, `disable` disables all warnings and `restore` enables all warnings.
 
 > [!NOTE]
 > To find warning numbers in Visual Studio, build your project and then look for the warning numbers in the **Output** window.
 
 The `disable` takes affect beginning on the next line of the source file. The warning is restored on the line following the `restore`. If there is no `restore` in the file, the warnings are restored to their default state at the first line of any later files in the same compilation.
-
-### Example
 
 ```csharp
 // pragma_warning.cs
@@ -481,46 +399,30 @@ public class D
 }
 ```
 
-## #pragma checksum (C# Reference)
+### #pragma checksum
 
-Generates checksums for source files to aid with debugging ASP.NET pages.  
-  
-### Syntax  
-  
+Generates checksums for source files to aid with debugging ASP.NET pages.
+
 ```csharp
-#pragma checksum "filename" "{guid}" "checksum bytes"  
-```  
-  
-### Parameters  
+#pragma checksum "filename" "{guid}" "checksum bytes"
+```
 
- `"filename"`  
- The name of the file that requires monitoring for changes or updates.  
-  
- `"{guid}"`  
- The Globally Unique Identifier (GUID) for the hash algorithm.  
-  
- `"checksum_bytes"`  
- The string of hexadecimal digits representing the bytes of the checksum. Must be an even number of hexadecimal digits. An odd number of digits results in a compile-time warning, and the directive are ignored.  
-  
-### Remarks  
+Where `"filename"` is the name of the file that requires monitoring for changes or updates, `"{guid}"` is the Globally Unique Identifier (GUID) for the hash algorithm, and `"checksum_bytes"` is the string of hexadecimal digits representing the bytes of the checksum. Must be an even number of hexadecimal digits. An odd number of digits results in a compile-time warning, and the directive are ignored.
 
- The Visual Studio debugger uses a checksum to make sure  that it always finds the right source. The compiler computes the checksum for a source file, and then emits the output to the program database (PDB) file. The debugger then uses the PDB to compare against the checksum that it computes for the source file.  
-  
- This solution does not work for ASP.NET projects, because the computed checksum is for the generated source file, rather than the .aspx file. To address this problem, `#pragma checksum` provides checksum support for ASP.NET pages.  
-  
- When you create an ASP.NET project in Visual C#, the generated source file contains a checksum for the .aspx file, from which the source is generated. The compiler then writes this information into the PDB file.  
-  
- If the compiler encounters no `#pragma checksum` directive in the file, it computes the checksum and writes the value to the PDB file.  
-  
-### Example  
-  
+The Visual Studio debugger uses a checksum to make sure  that it always finds the right source. The compiler computes the checksum for a source file, and then emits the output to the program database (PDB) file. The debugger then uses the PDB to compare against the checksum that it computes for the source file.
+
+This solution does not work for ASP.NET projects, because the computed checksum is for the generated source file, rather than the .aspx file. To address this problem, `#pragma checksum` provides checksum support for ASP.NET pages.
+
+When you create an ASP.NET project in Visual C#, the generated source file contains a checksum for the .aspx file, from which the source is generated. The compiler then writes this information into the PDB file.
+
+If the compiler encounters no `#pragma checksum` directive in the file, it computes the checksum and writes the value to the PDB file.
+
 ```csharp
-class TestClass  
-{  
-    static int Main()  
-    {  
-        #pragma checksum "file.cs" "{406EA660-64CF-4C82-B6F0-42D48172A799}" "ab007f1d23d9" // New checksum  
-    }  
-}  
-```  
-  
+class TestClass
+{
+    static int Main()
+    {
+        #pragma checksum "file.cs" "{406EA660-64CF-4C82-B6F0-42D48172A799}" "ab007f1d23d9" // New checksum
+    }
+}
+```

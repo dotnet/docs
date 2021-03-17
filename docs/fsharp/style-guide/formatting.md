@@ -301,6 +301,15 @@ Inline comments should capitalize the first letter.
 let f x = x + 1 // Increment by one.
 ```
 
+Formatting interpolated strings
+-------------------------------
+
+Interpolated strings (and plain strings literals) can just be left on a single line, regardless of how long the line is.
+
+```fsharp
+let serviceStorageConnection = $"DefaultEndpointsProtocol=https;AccountName=%s{serviceStorageAccount.Name};AccountKey=%s{serviceStorageAccountKey.Value}"
+```
+
 ## Naming conventions
 
 ### Use camelCase for class-bound, expression-bound, and pattern-bound values and functions

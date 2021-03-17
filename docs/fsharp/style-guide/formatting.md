@@ -301,10 +301,10 @@ Inline comments should capitalize the first letter.
 let f x = x + 1 // Increment by one.
 ```
 
-Formatting interpolated strings
+Formatting string literals and interpolated strings
 -------------------------------
 
-Interpolated strings (and plain strings literals) can just be left on a single line, regardless of how long the line is.
+String literals and interpolated strings can just be left on a single line, regardless of how long the line is.
 
 ```fsharp
 let serviceStorageConnection =

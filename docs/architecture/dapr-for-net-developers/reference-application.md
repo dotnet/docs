@@ -2,7 +2,7 @@
 title: Introduction to the eShopOnDapr reference application
 description: An overview of the eShopOnDapr reference application and its history.
 author: amolenk
-ms.date: 02/07/2021
+ms.date: 02/17/2021
 ---
 
 # Dapr reference application

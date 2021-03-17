@@ -187,8 +187,6 @@ items:
       href: linq/handle-null-values-in-query-expressions.md
     - name: Handle exceptions in query expressions
       href: linq/handle-exceptions-in-query-expressions.md
-  - name: Asynchronous programming
-    href: async.md
   - name: Pattern Matching
     href: pattern-matching.md
   - name: Write safe, efficient code
@@ -318,6 +316,8 @@ items:
       - name: Overview
         displayName: asynchronous programming
         href: programming-guide/concepts/async/index.md
+      - name: Asynchronous programming scenarios
+        href: async.md
       - name: Task asynchronous programming model
         href: programming-guide/concepts/async/task-asynchronous-programming-model.md
       - name: Async return types
@@ -1379,7 +1379,7 @@ items:
       displayName: ResponseFiles, @, NoLogo, nologo, NoConfig, noconfig
       href: language-reference/compiler-options/miscellaneous.md
     - name: Advanced options
-      displayName: MainEntryPoint, StartupObject, main, PdbFile, pdb, PathMap, pathmap, ErrorReport, errorreport, ApplicationConfiguration, appconfig, AdditionalLibPaths, lib, GenerateFullPaths, fullpath, PreferredUILang, preferreduilang, BaseAddress, baseaddress, ChecksumAlgorithm, checksumalgorithm, CodePage, codepage, Utf8Output, utf8output, FileAlignment, filealign, ErrorEndLocation, errorendlocation, NoStandardLib, nostdlib, SubsystemVersion, subsystemversion, ModuleAssemblyName, moduleassemblyname
+      displayName: MainEntryPoint, StartupObject, main, PdbFile, pdb, PathMap, pathmap, ApplicationConfiguration, appconfig, AdditionalLibPaths, lib, GenerateFullPaths, fullpath, PreferredUILang, preferreduilang, BaseAddress, baseaddress, ChecksumAlgorithm, checksumalgorithm, CodePage, codepage, Utf8Output, utf8output, FileAlignment, filealign, ErrorEndLocation, errorendlocation, NoStandardLib, nostdlib, SubsystemVersion, subsystemversion, ModuleAssemblyName, moduleassemblyname
       href: language-reference/compiler-options/advanced.md
   - name: Compiler errors
     href: language-reference/compiler-messages/index.md

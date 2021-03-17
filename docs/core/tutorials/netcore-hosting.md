@@ -78,7 +78,7 @@ The native host can now call the managed method and pass it the desired paramete
 
 The following steps detail how to use the `coreclrhost.h` API to start the .NET Core runtime in a native application and call into a managed static method. The code snippets in this document use some Windows-specific APIs, but the [full sample host](https://github.com/dotnet/samples/tree/master/core/hosting/HostWithCoreClrHost) shows both Windows and Linux code paths.
 
-The [Unix CoreRun host](https://github.com/dotnet/runtime/tree/master/src/coreclr/hosts/unixcorerun) shows a more complex, real-world example of hosting using `coreclrhost.h`.
+The [corerun host](https://github.com/dotnet/runtime/tree/main/src/coreclr/hosts/corerun) shows a more complex, real-world, cross-platform example of hosting using `coreclrhost.h`.
 
 ### Step 1 - Find and load CoreCLR
 

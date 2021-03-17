@@ -10,11 +10,13 @@ ms.date: 03/04/2021
 [CodeQL](https://codeql.github.com/docs/codeql-overview/about-codeql/) is a static code analysis engine that can automate security and quality checks. With CodeQL, you can perform _variant analysis_, which uses known vulnerabilities as seeds to find similar issues. CodeQL is part of [GitHub Advanced Security](https://docs.github.com/github/getting-started-with-github/about-github-advanced-security) which includes:
 
 > [!div class="checklist"]
+
 > * Code scanning - find potential security vulnerabilities in your code.
 > * Secret scanning - detect secrets and tokens that are committed.
 > * Dependency scanning - detect vulnerabilities in packages that you consume.
 
 CodeQL [supports some of the most popular programming languages and compilers](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/):
+
 - C/C++
 - Java
 - C#
@@ -28,6 +30,7 @@ CodeQL is a very powerful language and security professionals can create custom 
 In this article, you'll set up a GitHub Workflow that will scan code in your repository using CodeQL. You will:
 
 > [!div class="checklist"]
+
 > * Create a Code Scanning Action.
 > * Edit the workflow file to include custom scan settings.
 > * See scanning results.
@@ -46,7 +49,7 @@ You can use a starter workflow for code scanning by navigating to the Security t
 
 1. This creates a new workflow file in your `.github/workflows` folder.
 1. Select `Start Commit` on the upper right to save the default workflow. You can commit to the `main` branch.
-    
+
     - ![Commit the file](./media/actions/codeql/start-commit.jpg)
     **Figure 2:** Commit the file.
 
@@ -110,7 +113,7 @@ Notice the following things:
 1. The `Autobuild` step will attempt to automatically build the source code using common conventions. If this fails, you can replace this step with your own custom build steps.
 1. After building, the CodeQL analysis is performed, where suites of queries are run against the code database.
 1. The run should complete successfully: however, there appear to be no issues!
-    
+
     - ![No results to the intial scan](./media/actions/codeql/no-results.jpg)
     **Figure 4:** No results to the intial scan.
 
@@ -122,18 +125,19 @@ The CodeQL scan is not reporting any security issues - this sample is very simpl
     > For other CodeQL config options, see [this article](https://docs.github.com/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-codeql-code-scanning-in-your-ci-system)
 
 1. Navigate to the `.github` folder in the **Code** tab and select `Add File`
-    
+
     - ![Create a new file](./media/actions/codeql/create-new-file.jpg)
     **Figure 5:** Create a new file.
 
 1. Enter `codeql/codeql-config.yml` as the name (this creates the file in a folder) and paste in the following code:
+
     ```yml
     name: "Security and Quality"
 
     queries:
       - uses: security-and-quality
     ```
-    
+
     - ![Create the CodeQL config file](./media/actions/codeql/codeql-config.jpg)
     **Figure 6:** Create the CodeQL config file.
 
@@ -162,7 +166,6 @@ When the last CodeQL workflow run completes, you should see two issues in the **
 
 - ![View security alerts](./media/actions/codeql/security-alerts.jpg)
 **Figure 7:** View security alerts.
-
 
 1. Select the first alert to open it.
 1. In this case, the alert is for a generated file that is not commited to the repository, so the preview is unavailable.

@@ -65,8 +65,8 @@ The following members of <xref:System.IntPtr> and <xref:System.UIntPtr> aren't s
 * <xref:System.IntPtr.CompareTo%2A>
 * <xref:System.IntPtr.Size> - Use [sizeOf()](#run-time-integer-size) instead. Although `nint.Size` isn't supported, you can use `IntPtr.Size` to get an equivalent value.
 * <xref:System.IntPtr.Subtract(System.IntPtr,System.Int32)>
-* <xref:System.IntPtr.ToInt32%2A?displayProperty=nameWithType>
-* <xref:System.IntPtr.ToInt64%2A?displayProperty=nameWithType>
+* <xref:System.IntPtr.ToInt32%2A>
+* <xref:System.IntPtr.ToInt64%2A>
 * <xref:System.IntPtr.ToPointer%2A>
 * <xref:System.IntPtr.Zero> - Use 0 instead.
 

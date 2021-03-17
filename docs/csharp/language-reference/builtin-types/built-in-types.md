@@ -21,7 +21,7 @@ The following table lists the C# built-in [value](value-types.md) types:
 |[`float`](floating-point-numeric-types.md)|<xref:System.Single?displayProperty=nameWithType>|
 |[`int`](integral-numeric-types.md)|<xref:System.Int32?displayProperty=nameWithType>|
 |[`uint`](integral-numeric-types.md)|<xref:System.UInt32?displayProperty=nameWithType>|
-|[`nint`](nint-nuint.md)|[<xref:System.IntPtr?displayProperty=nameWithType>\*|
+|[`nint`](nint-nuint.md)|<xref:System.IntPtr?displayProperty=nameWithType>\*|
 |[`nuint`](nint-nuint.md)|<xref:System.UIntPtr?displayProperty=nameWithType>\*|
 |[`long`](integral-numeric-types.md)|<xref:System.Int64?displayProperty=nameWithType>|
 |[`ulong`](integral-numeric-types.md)|<xref:System.UInt64?displayProperty=nameWithType>|

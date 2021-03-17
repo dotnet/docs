@@ -46,14 +46,28 @@ The following versions of .NET are no longer supported. The downloads for these 
 
 .NET on Alpine Linux requires the following dependencies installed:
 
+- bash
 - icu-libs
 - krb5-libs
 - libgcc
+- libgdiplus (if the .NET app requires the *System.Drawing.Common* assembly)
 - libintl
 - libssl1.1 (Alpine v3.9 or greater)
 - libssl1.0 (Alpine v3.8 or lower)
 - libstdc++
 - zlib
+
+To install the needed requirements, run the following command:
+
+```bash
+apk add bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib
+```
+
+To install **libgdiplus**, you may need to specify a repository:
+
+```bash
+apk add libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/
+```
 
 ## Next steps
 

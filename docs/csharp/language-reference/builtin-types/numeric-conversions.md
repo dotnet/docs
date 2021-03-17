@@ -69,6 +69,8 @@ The following table shows the predefined explicit conversions between the built-
 |[float](floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `decimal`, `nint`, or `nuint`|
 |[double](floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `decimal`, `nint`, or `nuint`|
 |[decimal](floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `nint`, or `nuint`|
+|[nint](nint-nuint.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, or `nuint`|
+|[nuint](nint-nuint.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, or `nint`|
 
 > [!NOTE]
 > An explicit numeric conversion might result in data loss or throw an exception, typically an <xref:System.OverflowException>.

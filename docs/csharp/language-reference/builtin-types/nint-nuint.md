@@ -28,7 +28,7 @@ To get the size of a native-sized integer at run time, you can use `sizeof()`. H
 
 :::code language="csharp" source="snippets/shared/NativeIntegerTypes.cs" id="SizeOf":::
 
-You can also the equivalent value from the static <xref:System.IntPtr.Size?displayProperty=nameWithType> and <xref:System.UIntPtr.Size?displayProperty=nameWithType> properties.
+You can also get the equivalent value from the static <xref:System.IntPtr.Size?displayProperty=nameWithType> and <xref:System.UIntPtr.Size?displayProperty=nameWithType> properties.
 
 ## MinValue and MaxValue
 

@@ -1,13 +1,15 @@
 ---
 title: "Patterns - C# reference"
 description: "Learn about the patterns supported by C# switch and is expressions and C# switch statement - C# reference"
-ms.date: 03/10/2021
+ms.date: 03/16/2021
 helpviewer_keywords: 
   - "pattern matching [C#]"
 ---
 # Patterns (C# reference)
 
 Intro.
+
+[Logical](#pattern-combinators), [property](#property-pattern), and positional patterns are recursive patterns. That is, they can contain other patterns.
 
 ## Declaration and type patterns
 
@@ -109,6 +111,24 @@ Beginning with C# 9.0, you use the `not`, `and`, and `or` pattern combinators to
 As the preceding example shows, you can repeatedly use the pattern combinators in a pattern. When you use both `and` and `or` pattern combinators within one pattern, `and` has higher precedence than `or`. To explicitly specify the precedence, use parentheses, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/PatternCombinators.cs" id="WithParentheses":::
+
+## Property pattern
+
+Beginning with C# 8.0, you use a *property pattern* to match an expression's properties or fields against nested patterns, as the following example shows:
+
+:::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="BasicExample":::
+
+A property pattern matches an expression when an expression result is non-null and every nested pattern matches the corresponding property or field of the expression result.
+
+You can also add a runtime type check and a variable declaration to a property pattern, as the following example shows:
+
+:::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="WithTypeCheck":::
+
+A property pattern is an example of a recursive pattern. That is, you can use any pattern as a nested pattern. Use a property pattern to match parts of data against nested patterns, as the following example shows:
+
+:::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="RecursivePropertyPattern":::
+
+The preceding example uses two features available in C# 9.0 and later: `or` [pattern combinator](#pattern-combinators) and record types.
 
 ## C# language specification
 

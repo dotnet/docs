@@ -59,6 +59,50 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
 |[when (filter condition)](when.md)|[where (generic type constraint)](where-generic-type-constraint.md)|[where (query clause)](where-clause.md)|
 |[with](../operators/with-expression.md)|[yield](yield.md)||
   
+:::row:::
+   :::column span="":::
+      [add](add.md)
+   :::column-end:::
+   :::column span="":::
+      [alias](extern-alias.md)
+   :::column-end:::
+   :::column span="":::
+      [ascending](ascending.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [async](async.md)
+   :::column-end:::
+   :::column span="":::
+      [await](../operators/await.md)
+   :::column-end:::
+   :::column span="":::
+      [by](by.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [descending](descending.md)
+   :::column-end:::
+   :::column span="":::
+      [dynamic](../builtin-types/reference-types.md)
+   :::column-end:::
+   :::column span="":::
+      [equals](equals.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [with](../operators/with-expression.md)
+   :::column-end:::
+   :::column span="":::
+      [yield](yield.md)
+   :::column-end:::
+   :::column span="":::
+   :::column-end:::
+:::row-end:::
+
 ## See also
 
 - [C# reference](../index.md)

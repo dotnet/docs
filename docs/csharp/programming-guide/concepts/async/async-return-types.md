@@ -33,12 +33,7 @@ In the following example, the `WaitAndApologizeAsync` method doesn't contain a `
 
 :::code language="csharp" source="snippets/async-return-types/async-returns2.cs" id="TaskReturn":::
 
-`WaitAndApologizeAsync` is awaited by using an await statement instead of an await expression, similar to the calling statement for a synchronous void-returning method. The application of an await operator in this case doesn't produce a value. To clarify the terms statement and expression, refer to the table below:
-
-| Await kind | Example                                      | Type                                   |
-|------------|----------------------------------------------|----------------------------------------|
-| Statement  | `await SomeTaskMethodAsync()`                | <xref:System.Threading.Tasks.Task>     |
-| Expression | `T result = await SomeTaskMethodAsync<T>();` | <xref:System.Threading.Tasks.Task%601> |
+`WaitAndApologizeAsync` is awaited by using an await statement instead of an await expression, similar to the calling statement for a synchronous void-returning method. The application of an await operator in this case doesn't produce a value. When the right operand of an `await` is a <xref:System.Threading.Tasks.Task%601>, the `await` expression produces a result of `T`. When the right operand of an `await` is a <xref:System.Threading.Tasks.Task>, the `await` and its operand are a statement.
 
 You can separate the call to `WaitAndApologizeAsync` from the application of an await operator, as the following code shows. However, remember that a `Task` doesn't have a `Result` property, and that no value is produced when an await operator is applied to a `Task`.
 
@@ -79,7 +74,7 @@ The following example shows the behavior of an async event handler. In the examp
 
 ## Generalized async return types and ValueTask\<TResult\>
 
-Starting with C# 7.0, an async method can return any type that has an accessible `GetAwaiter` method.
+Starting with C# 7.0, an async method can return any type that has an accessible `GetAwaiter` method that returns an instance of an *awaiter type*. In addition, the type returned from the `GetAwaiter` method must have the <xref:System.Runtime.CompilerServices.AsyncMethodBuilderAttribute?displayProperty=nameWithType> attribute. You can learn more in the feature spec for [Task like return types](../../../../_csharplang/proposals/csharp-7.0/task-types.md).
 
 Because <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> are reference types, memory allocation in performance-critical paths, particularly when allocations occur in tight loops, can adversely affect performance. Support for generalized return types means that you can return a lightweight value type instead of a reference type to avoid additional memory allocations.
 

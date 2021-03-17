@@ -310,6 +310,8 @@ let serviceStorageConnection =
     $"DefaultEndpointsProtocol=https;AccountName=%s{serviceStorageAccount.Name};AccountKey=%s{serviceStorageAccountKey.Value}"
 ```
 
+Multi-line interpolated expressions are strongly discouraged. Instead, bind the expression result to a value and use that in the interpolated string.
+
 ## Naming conventions
 
 ### Use camelCase for class-bound, expression-bound, and pattern-bound values and functions

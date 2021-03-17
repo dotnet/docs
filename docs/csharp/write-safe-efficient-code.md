@@ -158,12 +158,7 @@ can't be modified. Attempts to do so result in a compile-time error.
 
 The `readonly` modifier is required on the declaration of `originReference`.
 
-The compiler enforces that the caller can't modify the reference. Attempts
-to assign the value directly generate a compile-time error. However, the compiler
-can't know if any member method modifies the state of the struct.
-To ensure that the object isn't modified, the compiler creates a copy and
-calls member references using that copy. Any modifications are to that
-defensive copy.
+The compiler enforces that the caller can't modify the reference. Attempts to assign the value directly generate a compile-time error. In other cases, the compiler allocates a defensive copy unless it can safely use the readonly reference. Static analysis rules determine if the struct could be modified. The compiler doesn't create a defensive copy when the struct is a `readonly struct` or the member is a `readonly` member of the struct. Defensive copies aren't needed to pass the struct as an `in` argument.
 
 ## Apply the `in` modifier to `readonly struct` parameters larger than `System.IntPtr.Size`
 

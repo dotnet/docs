@@ -54,7 +54,7 @@ You'll find many other ways to connect with .NET developers on the [.NET Communi
 
 - [Overview of porting from .NET Framework to .NET Core](../../core/porting/index.md)
 - [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant)
-- [Migrate from ASP.NET to ASP.NET Core](/aspnet/core/migration/proper-to-2x)
+- [Migrate from ASP.NET to ASP.NET Core](../../core/porting/index.md)
 - [.NET Community Resources](https://dotnet.microsoft.com/platform/community)
 
 >[!div class="step-by-step"]

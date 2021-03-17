@@ -28,7 +28,7 @@ In classes, encapsulation is achieved by limiting outside access to the class's 
 
 ### Dependency inversion
 
-The direction of dependency within the application should be in the direction of abstraction, not implementation details. Most applications are written such that compile-time dependency flows in the direction of runtime execution, producing a direct dependency graph. That is, if class A calls a method of class B and class B calls a method of class Ce C, then at compile time class A will depend on classB, and class B will depend on C, as shown in Figure 4-1.
+The direction of dependency within the application should be in the direction of abstraction, not implementation details. Most applications are written such that compile-time dependency flows in the direction of runtime execution, producing a direct dependency graph. That is, if class A calls a method of class B and class B calls a method of class C, then at compile time class A will depend on class B, and the class B will depend on class C, as shown in Figure 4-1.
 
 ![Direct dependency graph](./media/image4-1.png)
 

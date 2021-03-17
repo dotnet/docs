@@ -7,6 +7,8 @@ ms.custom: updateeachrelease
 ---
 # MSBuild reference for .NET SDK projects
 
+<xref:Android.Util.Half.HalfToIntBits(System.Int16)>
+
 This page is a reference for the MSBuild properties and items that you can use to configure .NET projects.
 
 > [!NOTE]
@@ -570,6 +572,14 @@ The project file snippet in the following example references the [System.Runtime
 ```xml
 <ItemGroup>
   <PackageReference Include="System.Runtime" Version="4.3.0" />
+</ItemGroup>
+```
+
+You can also use the `PackageReference` item with the `Update` attribute to override the metadata of a package that has already been included, usually as part of a group. In the following example, the `PrivateAssets` metadata of the "NETStandard.Library" package reference is overridden.
+
+```xml
+<ItemGroup>
+  <PackageReference Update="NETStandard.Library" PrivateAssets="all" />
 </ItemGroup>
 ```
 

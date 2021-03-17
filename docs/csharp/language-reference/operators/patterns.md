@@ -9,7 +9,7 @@ helpviewer_keywords:
 
 Intro.
 
-With [property](#property-pattern) and positional patterns, you can perform *recursive* pattern matching. That is, to match parts of data against nested patterns, or sub-patterns.
+[Logical](#pattern-combinators), [property](#property-pattern), and positional patterns are recursive patterns. That is, they can contain other patterns.
 
 ## Declaration and type patterns
 
@@ -124,7 +124,7 @@ You can also add a runtime type check and a variable declaration to a property p
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="WithTypeCheck":::
 
-As you can use any pattern as a nested pattern in a property pattern, you can perform *recursive* pattern matching. That is, you can match parts of data against nested patterns, as the following example shows:
+A property pattern is an example of a recursive pattern. That is, you can use any pattern as a nested pattern. Use a property pattern to match parts of data against nested patterns, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="RecursivePropertyPattern":::
 

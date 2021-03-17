@@ -1140,6 +1140,68 @@ Option.traverse(
 )
 ```
 
+Formatting generic type arguments and constraints
+-------------------------------------------------
+
+Note that due to current F# indentation rules, the formatting in this section violates the “avoid name sensitive alignment” clause mentioned previously in this document.
+
+The guidelines below apply to both functions, members, and type definitions.
+
+Keep generic type arguments and constraints on a single line if it’s not too long:
+
+```fsharp
+let f<'a, 'b when 'a : equality and 'b : comparison> param =
+    // function body
+```
+
+If both generic type arguments/constraints and function parameters don’t fit, but the type parameters/constraints alone do, place the parameters on new lines:
+
+```fsharp
+let f<'a, 'b when 'a : equality and 'b : comparison>
+    param
+    =
+    // function body
+```
+
+If the constraints are too long, break and align them as shown below. Keep each constraint on a single line regardless of its length. Place `>` at the end of the last line. Note that in the case of statically resolved type parameters, the required space between `<` and `^` influences the indentation.
+
+```fsharp
+let inline f< ^a, ^b when
+              ^a : (static member Foo1: unit -> ^b)
+              and ^b : (member Foo2: unit -> int)
+              and ^b : (member Foo3: string -> ^a option)>
+    arg1
+    arg2
+    =
+    // function body
+```
+
+Even if the constraints are broken, you can keep the list of generic type parameters on a single line if they fit, as shown above. Otherwise place each type parameter on a new line and `when` after the last one:
+
+```fsharp
+let inline f<'param1,
+             'param2,
+             'param3, when
+             'param1 : equality
+             and 'param2 : comparison
+    arg1
+    arg2
+    =
+    // function body
+```
+
+If the type parameters/constraints are broken up, but there are no normal function parameters, place the `=` on a new line regardless:
+
+```f#
+   
+let inline f< ^a, ^b when
+              ^a : (static member Foo1: unit -> ^b)
+              and ^b : (member Foo2: unit -> int)
+              and ^b : (member Foo3: string -> ^a option)>
+    =
+    // function body
+```
+
 ## Formatting attributes
 
 [Attributes](../language-reference/attributes.md) are placed above a construct:

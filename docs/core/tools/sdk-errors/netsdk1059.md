@@ -11,4 +11,4 @@ f1_keywords:
 
 **This article applies to:** ✔️ .NET Core 2.1.100 SDK and later versions
 
-When the .NET SDK issues warning NETSDK1059, your project contains an obsolete .NET CLI tool. As of .NET Core 2.1, these tools are included in the .NET SDK and do not need to be explicitly referenced by the project. More information for migrating to .NET Core 2.1 can be found [here](../../migration/20-21.md).
+When the .NET SDK issues warning NETSDK1059, your project contains an obsolete .NET CLI tool. As of .NET Core 2.1, these tools are included in the .NET SDK and do not need to be explicitly referenced by the project. For more information, see [Project tools now included in SDK](../../compatibility/2.1.md#project-tools-now-included-in-sdk).

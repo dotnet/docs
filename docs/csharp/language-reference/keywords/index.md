@@ -59,49 +59,48 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
 |[when (filter condition)](when.md)|[where (generic type constraint)](where-generic-type-constraint.md)|[where (query clause)](where-clause.md)|
 |[with](../operators/with-expression.md)|[yield](yield.md)||
   
-## Table option B
+## The sme table using triple-colon rows
 
-\
 :::row:::
    :::column span="":::
-      [add](add.md)<br>
-      [async](async.md)<br>
-      [by](by.md)<br>
-      [from](from-clause.md)<br>
-      [group](group-clause.md)<br>
-      |[let](let-clause.md)<br>
-      [notnull](../../programming-guide/generics/constraints-on-type-parameters.md#notnull-constraint)<br>
-      [orderby](orderby-clause.md)<br>
-      [remove](remove.md)<br>
-      [unmanaged (generic type constraint)](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint)<br>
-      [when (filter condition)](when.md)<br>
+      [add](add.md)<br><br>
+      [async](async.md)<br><br>
+      [by](by.md)<br><br>
+      [from](from-clause.md)<br><br>
+      [group](group-clause.md)<br><br>
+      [let](let-clause.md)<br><br>
+      [notnull](../../programming-guide/generics/constraints-on-type-parameters.md#notnull-constraint)<br><br>
+      [orderby](orderby-clause.md)<br><br>
+      [remove](remove.md)<br><br>
+      [unmanaged (generic type constraint)](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint)<br><br>
+      [when (filter condition)](when.md)<br><br>
       [with](../operators/with-expression.md)
    :::column-end:::
    :::column span="":::
-      [alias](extern-alias.md)<br>
-      [await](../operators/await.md)<br>
-      [dynamic](../builtin-types/reference-types.md)<br>
-      [get](get.md)<br>
-      [into](into.md)<br>
-      [nameof](../operators/nameof.md)<br>
-      [nuint](../builtin-types/nint-nuint.md)<br>
-      [partial (type)](partial-type.md)<br>
-      [select](select-clause.md)<br>
-      [value](value.md)<br>
-      [where (generic type constraint)](where-generic-type-constraint.md)<br>
+      [alias](extern-alias.md)<br><br>
+      [await](../operators/await.md)<br><br>
+      [dynamic](../builtin-types/reference-types.md)<br><br>
+      [get](get.md)<br><br>
+      [into](into.md)<br><br>
+      [nameof](../operators/nameof.md)<br><br>
+      [nuint](../builtin-types/nint-nuint.md)<br><br>
+      [partial (type)](partial-type.md)<br><br>
+      [select](select-clause.md)<br><br>
+      [value](value.md)<br><br>
+      [where (generic type constraint)](where-generic-type-constraint.md)<br><br>
       [yield](yield.md)
    :::column-end:::
    :::column span="":::
-      [ascending](ascending.md)<br>
-      [descending](descending.md)<br>
-      [equals](equals.md)<br>
-      [global](../operators/namespace-alias-qualifier.md)<br>
-      [join](join-clause.md)<br>
-      [nint](../builtin-types/nint-nuint.md)<br>
-      [on](on.md)<br>
-      [partial (method)](partial-method.md)<br>
-      [set](set.md)<br>
-      [var](var.md)<br>
+      [ascending](ascending.md)<br><br>
+      [descending](descending.md)<br><br>
+      [equals](equals.md)<br><br>
+      [global](../operators/namespace-alias-qualifier.md)<br><br>
+      [join](join-clause.md)<br><br>
+      [nint](../builtin-types/nint-nuint.md)<br><br>
+      [on](on.md)<br><br>
+      [partial (method)](partial-method.md)<br><br>
+      [set](set.md)<br><br>
+      [var](var.md)<br><br>
       [where (query clause)](where-clause.md)|
    :::column-end:::
 :::row-end:::

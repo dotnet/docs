@@ -1,7 +1,7 @@
 ---
 description: "C# Keywords"
 title: "C# Keywords"
-ms.date: 03/07/2017
+ms.date: 03/17/2021
 f1_keywords: 
   - "cs.keywords"
 helpviewer_keywords:
@@ -10,7 +10,6 @@ helpviewer_keywords:
   - "Visual C#, keywords"
   - "@ keyword"
 ms.custom: "updateeachrelease"
-ms.assetid: e929b0f2-4b92-4d37-8060-23d323b098ad
 ---
 # C# Keywords
 

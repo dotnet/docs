@@ -1,24 +1,16 @@
 ---
 title: "Integral numeric types - C# reference"
 description: "Learn the range, storage size, and uses for each of the integral numeric types."
-ms.date: 10/22/2019
+ms.date: 03/17/2021
 f1_keywords:
-  - "byte"
   - "byte_CSharpKeyword"
   - "sbyte_CSharpKeyword"
-  - "sbyte"
-  - "short"
   - "short_CSharpKeyword"
-  - "ushort"
   - "ushort_CSharpKeyword"
   - "int_CSharpKeyword"
-  - "int"
-  - "uint"
   - "uint_CSharpKeyword"
   - "long_CSharpKeyword"
-  - "long"
   - "ulong_CSharpKeyword"
-  - "ulong"
 helpviewer_keywords: 
   - "integral types, C#"
   - "Visual C#, integral types"

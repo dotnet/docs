@@ -1140,8 +1140,7 @@ Option.traverse(
 )
 ```
 
-Formatting generic type arguments and constraints
--------------------------------------------------
+## Formatting generic type arguments and constraints
 
 Note that due to current F# indentation rules, the formatting in this section violates the “avoid name sensitive alignment” clause mentioned previously in this document.
 

@@ -114,7 +114,7 @@ As the preceding example shows, you can repeatedly use the pattern combinators i
 
 ## Property pattern
 
-Beginning with C# 8.0, you use a *property pattern* to match expression's properties or fields against nested patterns, as the following example shows:
+Beginning with C# 8.0, you use a *property pattern* to match an expression's properties or fields against nested patterns, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="BasicExample":::
 

@@ -84,6 +84,10 @@ public class MyClass
 }
 ```
 
+## Add symbols for a project
+
+You can define symbols for a project using the **DefineConstants** element of a project file.  See the [language compiler options](../compiler-options/language.md#defineconstants) for more information.
+
 ## See also
 
 - [C# Reference](../index.md)

@@ -29,6 +29,8 @@ ms.assetid: 723493d5-9753-4cec-babb-54e2b8eb36b6
 > [!NOTE]
 > To find warning numbers in Visual Studio, build your project and then look for the warning numbers in the **Output** window.
 
+The `disable` takes affect beginning on the next line of the source file. The warning is restored on the line following the `restore`. If there is no `restore` in the file, the warnings are restored to their default state at the first line of any later files in the same compilation.
+
 ## Example
 
 ```csharp

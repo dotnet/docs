@@ -301,8 +301,7 @@ Inline comments should capitalize the first letter.
 let f x = x + 1 // Increment by one.
 ```
 
-Formatting string literals and interpolated strings
--------------------------------
+## Formatting string literals and interpolated strings
 
 String literals and interpolated strings can just be left on a single line, regardless of how long the line is.
 

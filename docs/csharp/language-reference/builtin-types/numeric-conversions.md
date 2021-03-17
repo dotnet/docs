@@ -32,7 +32,6 @@ The following table shows the predefined implicit conversions between the built-
 |[nint](nint-nuint.md)|`long`, `float`, `double`, or `decimal`|
 |[nuint](nint-nuint.md)|`ulong`, `float`, `double`, or `decimal`|
 
-
 > [!NOTE]
 > The implicit conversions from `int`, `uint`, `long`, `ulong`, `nint`, or `nuint` to `float` and from `long`, `ulong`, `nint`, or `nuint` to `double` may cause a loss of precision, but never a loss of an order of magnitude. The other implicit numeric conversions never lose any information.
 

@@ -28,11 +28,8 @@ GitHub environments are *logical*. They represent the physical (or virtual) reso
 
 Once you have these steps in place, you'll update the workflow to handle environment-specific configuration using environment secrets.
 
-> [!INFORMATION]
-> You can read more about GitHub Actions Environments [here](https://docs.github.com/actions/reference/environments).
-
 > [!NOTE]
-> At the time of writing, the GitHub Environments feature is in beta.
+> You can read more about GitHub Actions Environments [here](https://docs.github.com/actions/reference/environments). At the time of writing, the GitHub Environments feature is in beta.
 
 ## Azure authentication
 
@@ -68,12 +65,12 @@ Once you have an SPN, you'll create a [repository secret](https://docs.github.co
 1. Now you're going to create an encrypted secret to store the credentials. You'll create this secret at the repository level.
 1. Navigate to GitHub and select your repository **Settings** tab. Then select **Secrets**. Select **New repository secret**:
 
-    - ![Create a secret](./media/actions/deploy/add-repository-secret.jpg)
+    ![Create a secret](./media/actions/deploy/add-repo-secret.jpg)
     **Figure 1**: Create a secret.
 
 1. Copy and paste the JSON from the `az ad sp create-for-rbac` command into the body of the secret. You can create this JSON by hand too if you have the relevant fields for your SPN. The secret should be named `AZURE_CREDENTIALS`. Select `Add secret` to save the new secret:
 
-    - ![Add Azure credentials](./media/actions/deploy/azure-credentials.jpg)
+    ![Add Azure credentials](./media/actions/deploy/azure-credentials.jpg)
     **Figure 2**: Add Azure credentials.
 
 1. You'll consume this secret in a workflow in later steps. To access it, you can use the variable notation `${{}}`. In this case, `${{ AZURE_CREDENTIAL }}` will be populated with the JSON you saved.
@@ -91,12 +88,12 @@ In this case, the only difference between the environments is the slot that you'
 
 1. Select **Settings** and then **Environments** in your repository. Select **New Environment**:
 
-    - ![Create an environment](./media/actions/deploy/new-env.jpg)
+    ![Create an environment](./media/actions/deploy/new-env.jpg)
     **Figure 3**: Create an environment.
 
 1. Enter `PRE-PROD` and select **Configure environment**:
 
-    - ![Name the environment](./media/actions/deploy/pre-prod-env.jpg)
+    ![Name the environment](./media/actions/deploy/pre-prod-env.jpg)
     **Figure 4**: Name the environment.
 
 1. Since deploying to a staging slot doesn't affect the web app, you can safely deploy to the slot without requiring an approval first. A reviewer could be added if desired. For this example, leave the Environment protection rules empty.
@@ -108,7 +105,7 @@ In this case, the only difference between the environments is the slot that you'
 
 1. Check the **Required reviewers** rule and add yourself as a reviewer. Don't forget to select **Save protection rules**:
 
-    - ![Add protection rules](./media/actions/deploy/env-protection-rule.jpg)
+    ![Add protection rules](./media/actions/deploy/env-protection-rule.jpg)
     **Figure 5**: Add protection rules.
 
 ## Deploy to pre-production
@@ -116,7 +113,7 @@ In this case, the only difference between the environments is the slot that you'
 You can now add additional jobs to the workflow to deploy to the environments! You'll start by adding a deployment to the `PRE-PROD` environment, which in this case is the web app staging slot.
 
 1. Navigate to the `.github/workflows/dotnet.yml` file and select the pencil icon to edit the file.
-1. You're going to use the web app name a few times in this workflow, and will need the name of the resource group too. You'll define these as variables so that you only have to maintain the value in one place in the workflow file.
+1. You're going to use the web app name a few times in this workflow, and will need the name of the resource group too. You'll define the app and resource group names as variables. With the variables, you can maintain the values in one place in the workflow file.
 1. Add this snippet below the `on` block and above the `jobs` block:
 
     ```yml
@@ -176,27 +173,27 @@ You can now add additional jobs to the workflow to deploy to the environments! Y
     1. You're executing a `download-artifact` step to download the artifact (compiled web app) from the `build` job.
     1. You then `login` to Azure using the `AZURE_CREDENTIALS` secret you saved earlier. Note the `${{ }}` notation for dereferencing variables.
     1. You then perform a `webapp-deploy`, specifying the `app-name`, `slot-name`, and path to the downloaded artifact (`package`). This action also defines an `output` parameter that you use to set the `url` of the environment above.
-    1. Finally, you execute a `logout` to logout of the Azure context
+    1. Finally, you execute a `logout` to log out of the Azure context.
 
 1. Commit the file.
 1. When the run completes, you should see two successful jobs. The URL for the `PRE-PROD` stage has been set and selecting it will navigate you to your web app staging slot:
 
-    - ![Deployment to PRE-PROD is successful](./media/actions/deploy/deploy-to-staging-completed.jpg)
+    ![Deployment to PRE-PROD is successful](./media/actions/deploy/deploy-to-staging-completed.jpg)
     **Figure 6**: Deployment to PRE-PROD is successful.
 
-1. Notice how the URL contains `-staging` in the name since this is the direct URL to the staging slot:
+1. Notice how the stating slot's direct URL contains `-staging`:
 
-    - ![The staging slot running](./media/actions/deploy/deployed-to-staging.jpg)
+    ![The staging slot running](./media/actions/deploy/deployed-to-staging.jpg)
     **Figure 7**: The staging slot running.
 
 1. You can also now see deployments. Navigate to `https://{your repository url}/deployments` to view your deployments:
 
-    - ![View deployments](./media/actions/deploy/deployments.jpg)
+    ![View deployments](./media/actions/deploy/deployments.jpg)
     **Figure 8**: View deployments.
 
 ## Deploy to production
 
-Now that you've deployed successfully to `PRE-PROD`, you'll want to deploy to `PROD`. Deployment to `PROD` will be slightly different since you don't need to copy the website again - you just need to swap the `staging` slot with the production slot. you'll do this using an Azure CLI (`az`) command.
+Now that you've deployed successfully to `PRE-PROD`, you'll want to deploy to `PROD`. Deployment to `PROD` will be slightly different since you don't need to copy the website again - you just need to swap the `staging` slot with the production slot. You'll do this using an Azure CLI (`az`) command.
 
 1. Navigate to the `.github/workflows/dotnet.yml` file and select the pencil icon to edit the file.
 1. Add a new job below the `deploy_staging` job as follows:
@@ -242,27 +239,27 @@ Now that you've deployed successfully to `PRE-PROD`, you'll want to deploy to `P
 1. Commit the file.
 1. Let the workflow run for a couple minutes until it has deployed to `PRE-PROD`. At this point, the workflow will pause and wait for the required approval since you're targeting the `PROD` environment, which requires an approval as defined earlier:
 
-    - ![Waiting for an approval](./media/actions/deploy/waiting-for-approval.jpg)
+    ![Waiting for an approval](./media/actions/deploy/waiting-for-approval.jpg)
     **Figure 9**: Waiting for an approval.
 
 1. Select **Review deployments**, select the **PROD** checkbox, optionally add a comment, and then select **Approve and deploy** to start the `PROD` job.
 
-    - ![Approve the PROD deployment](./media/actions/deploy/approval.jpg)
+    ![Approve the PROD deployment](./media/actions/deploy/approval.jpg)
     **Figure 10**: Approve the PROD deployment.
 
 1. The deployment should only take a few seconds. Once it has completed, the URL for the `PROD` environment will update.
 
-    - ![PROD deployment completed](./media/actions/deploy/prod-deploy-complete.jpg)
+    ![PROD deployment completed](./media/actions/deploy/prod-deploy-complete.jpg)
     **Figure 11**: PROD deployment completed.
 
 1. Selecting the `PROD` URL will navigate you to the `PROD` site.
 
-    - ![The PROD site](./media/actions/deploy/deployed-to-prod.jpg)
+    ![The PROD site](./media/actions/deploy/deployed-to-prod.jpg)
     **Figure 12**: The PROD site.
 
 ## Add a manual queue option
 
-You now have an end-to-end build and deploy workflow, including approvals! One more change you can make is to add a manual trigger to the workflow so that the workflow can be triggered from within the **Actions** tab of the repository.
+You now have an end-to-end build and deploy workflow, including approvals. One more change you can make is to add a manual trigger to the workflow so that the workflow can be triggered from within the **Actions** tab of the repository.
 
 1. Navigate to the `.github/workflows/dotnet.yml` file and select the pencil icon to edit the file.
 1. Add a new trigger between `on` and `push` on lines 3 and 4:
@@ -273,11 +270,11 @@ You now have an end-to-end build and deploy workflow, including approvals! One m
       push:
     ```
 
-1. The `workflow_dispatch` trigger displays a `Run workflow` button in the **Actions** tab of the repository - _but only if the trigger is defined in the default branch_. However, once this trigger is defined in the workflow, you can select the branch for the run.
+1. The `workflow_dispatch` trigger displays a `Run workflow` button in the **Actions** tab of the repository&mdash; _but only if the trigger is defined in the default branch_. However, once this trigger is defined in the workflow, you can select the branch for the run.
 1. Commit the file.
 1. To see the **Run workflow** button, select the **Actions** tab. Select the `.NET` workflow in the list of workflows. At the top of the list of runs, you'll see the **Run workflow** button. If you select it, you can choose the branch to run the workflow against and queue it:
 
-    - ![Manual dispatch](./media/actions/deploy/manual-dispatch.jpg)
+    ![Manual dispatch](./media/actions/deploy/manual-dispatch.jpg)
     **Figure 13**: Manual dispatch.
 
 ## Handle environment configuration
@@ -301,13 +298,13 @@ To show how environment configuration can be handled, you're going to add a secr
 1. On your repository, select **Settings** > **Environments** > **PRE-PROD**.
 1. Select **Add secret** and add a secret called `index_header` with the value `PRE PROD News Reader`. Select **Add secret**.
 
-    - ![Add an environment secret](./media/actions/deploy/add-env-secret.jpg)
+    ![Add an environment secret](./media/actions/deploy/add-env-secret.jpg)
     **Figure 14**: Add an environment secret.
 
 1. Repeat these steps to add a secret called `index_header` with the value `PROD News Reader` for the `PROD` environment.
 1. If you select **Settings** > **Secrets** in the repository, you'll see the changes. They should look something like this:
 
-    - ![View secrets](./media/actions/deploy/env-secrets.jpg)
+    ![View secrets](./media/actions/deploy/env-secrets.jpg)
     **Figure 15**: View secrets.
 
 ### Update the workflow to handle configuration
@@ -356,7 +353,7 @@ To show how environment configuration can be handled, you're going to add a secr
 1. Let the workflow run and approve the deployment to `PROD` once the approval is reached.
 1. You should see the following headers on the index page for both sites:
 
-    - ![Settings changed in the environments](./media/actions/deploy/settings-in-both-envs.jpg)
+    ![Settings changed in the environments](./media/actions/deploy/settings-in-both-envs.jpg)
     **Figure 15**: Settings changed in the environments.
 
 ## Final Workflow File

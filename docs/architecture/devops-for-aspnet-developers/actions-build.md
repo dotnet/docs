@@ -1,10 +1,10 @@
 ---
 title: DevOps with .NET and GitHub Actions - Build a .NET Web App
-description: Start your journey of DevOps with .NET and GitHub Actions by building a .NET Web app
+description: Start your journey of DevOps with .NET and GitHub Actions by building a .NET web app
 author: colindembovsky
 ms.date: 03/04/2021
 ---
-# Build a .NET Web App using GitHub Actions
+# Build a .NET web app using GitHub Actions
 
 [GitHub Actions](https://github.com/features/actions) allow you to automate workflows in response to events that are triggered in GitHub. A common workflow is Continuous Integration (CI), but Actions can automate other processes. For example, sending welcome emails when people join a repository.
 

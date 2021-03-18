@@ -609,13 +609,13 @@ The `EnableDynamicLoading` property indicates that an assembly is a dynamically 
 - [Reference](#reference)
 - [TrimmerRootAssembly](#trimmerrootassembly)
 
-You can use any of the standard [item attributes](/visualstudio/msbuild/item-element-msbuild?view=vs-2019#attributes-and-elements), for example, `Include`, `Version`, and `Update`, on these items.
+You can use any of the standard [item attributes](/visualstudio/msbuild/item-element-msbuild#attributes-and-elements), for example, `Include`, `Version`, and `Update`, on these items.
 
 ### PackageReference
 
 The `PackageReference` item defines a reference to a NuGet package.
 
-The `Include` attribute specifies the package ID. The `Version` attribute specifies the version or version range. For information about how to specify a minimum version, maximum version, range, or exact match, see [Version ranges](/nuget/concepts/package-versioning#version-ranges). You can also add [asset metadata](#asset-metadata) to a package reference.
+The `Include` attribute specifies the package ID. The `Version` attribute specifies the version or version range. For information about how to specify a minimum version, maximum version, range, or exact match, see [Version ranges](/nuget/concepts/package-versioning#version-ranges).
 
 The project file snippet in the following example references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package.
 
@@ -679,7 +679,7 @@ The following XML excludes the `System.Security` assembly from trimming.
 
 ## Item metadata
 
-In addition to the standard [MSBUild item attributes](/visualstudio/msbuild/item-element-msbuild?view=vs-2019#attributes-and-elements), the following item metadata tags are made available by the .NET SDK:
+In addition to the standard [MSBUild item attributes](/visualstudio/msbuild/item-element-msbuild#attributes-and-elements), the following item metadata tags are made available by the .NET SDK:
 
 - [CopyToPublishDirectory](#copytopublishdirectory)
 - [LinkBase](#linkbase)

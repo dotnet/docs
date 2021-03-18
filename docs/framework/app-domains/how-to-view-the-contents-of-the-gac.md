@@ -19,7 +19,7 @@ Use the [global assembly cache tool (gacutil.exe)](../tools/gacutil-exe-gac-tool
 
 ## View the assemblies in the GAC
 
-To view a list of the assemblies in the global assembly cache, open a [command-line shell for developers](/visualstudio/ide/reference/command-prompt-powershell), and then enter the following command:
+To view a list of the assemblies in the global assembly cache, open [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell), and then enter the following command:
 
 ```shell
 gacutil -l

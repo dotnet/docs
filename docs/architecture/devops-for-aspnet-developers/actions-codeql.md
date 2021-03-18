@@ -36,19 +36,19 @@ In this article, you'll set up a GitHub Workflow that will scan code in your rep
 > * See scanning results.
 
 > [!NOTE]
-> In order to see Security Alerts for your repository, you must be a repository owner.
+> To see security alerts for your repository, you must be a repository owner.
 
-## Create the Code Scanning Workflow
+## Create the code scanning workflow
 
 You can use a starter workflow for code scanning by navigating to the Security tab of your repository.
 
-1. Navigate to your GitHub repository and select the **Security** tab. Select `Code Scanning Alerts`. The top recommended workflow should be CodeQL Analysis. Select `Set up this workflow`.
+1. Navigate to your GitHub repository and select the **Security** > **Code Scanning Alerts**. The top recommended workflow should be CodeQL Analysis. Select **Set up this workflow**.
 
     - ![Create a new code scanning workflow](./media/actions/codeql/setup-workflow.jpg)
     **Figure 1:** Create a new code scanning workflow.
 
 1. This creates a new workflow file in your `.github/workflows` folder.
-1. Select `Start Commit` on the upper right to save the default workflow. You can commit to the `main` branch.
+1. Select **Start Commit** on the upper right to save the default workflow. You can commit to the `main` branch.
 
     - ![Commit the file](./media/actions/codeql/start-commit.jpg)
     **Figure 2:** Commit the file.
@@ -114,17 +114,17 @@ Notice the following things:
 1. After building, the CodeQL analysis is performed, where suites of queries are run against the code database.
 1. The run should complete successfully: however, there appear to be no issues!
 
-    - ![No results to the intial scan](./media/actions/codeql/no-results.jpg)
-    **Figure 4:** No results to the intial scan.
+    - ![No results to the initial scan](./media/actions/codeql/no-results.jpg)
+    **Figure 4:** No results to the initial scan.
 
-## Customize CodeQL Settings
+## Customize CodeQL settings
 
-The CodeQL scan is not reporting any security issues - this sample is very simple and this is expected. However, CodeQL can also scan for _quality_ issues. The current workflow is using the default `security-extended` suite. You can add quality scanning in by adding a configuration file to customize the scanning suites. In this step you will configure CodeQL to use the `security-and-quality` suites.
+The CodeQL scan is not reporting any security issues - this sample is very simple and this is expected. CodeQL can also scan for _quality_ issues. The current workflow is using the default `security-extended` suite. You can add quality scanning in by adding a configuration file to customize the scanning suites. In this step you will configure CodeQL to use the `security-and-quality` suites.
 
 > [!INFORMATION]
 > For other CodeQL config options, see [this article](https://docs.github.com/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-codeql-code-scanning-in-your-ci-system)
 
-1. Navigate to the `.github` folder in the **Code** tab and select `Add File`
+1. Navigate to the `.github` folder in the **Code** tab and select **Add File**
 
     - ![Create a new file](./media/actions/codeql/create-new-file.jpg)
     **Figure 5:** Create a new file.
@@ -141,7 +141,7 @@ The CodeQL scan is not reporting any security issues - this sample is very simpl
     - ![Create the CodeQL config file](./media/actions/codeql/codeql-config.jpg)
     **Figure 6:** Create the CodeQL config file.
 
-1. Select `Commit to master` at bottom of the editor to commit the file.
+1. Select **Commit to master** at bottom of the editor to commit the file.
 1. You must now edit the CodeQL workflow to use the new configuration file. Navigate to `.github/workflows/codeql-analysis.yml` and click the pencil icon. Add a new property to the `with` section as shown below:
 
   ```yml
@@ -152,9 +152,9 @@ The CodeQL scan is not reporting any security issues - this sample is very simpl
       config-file: ./.github/codeql/codeql-config.yml  # <-- add this line
   ```
 
-1. Select `Start Commit` and commit to the `main` branch.
+1. Select **Start Commit** and commit to the `main` branch.
 
-## Review the Security Alerts
+## Review the security alerts
 
 > [!IMPORTANT]
 > You must be a repository owner in order to view Security alerts.
@@ -170,7 +170,7 @@ When the last CodeQL workflow run completes, you should see two issues in the **
 1. Select the first alert to open it.
 1. In this case, the alert is for a generated file that is not commited to the repository, so the preview is unavailable.
 1. Notice the tags that are applied - these can be used for filtering issues.
-1. Select `Show More` under the rule information to expand additional help and recommendations.
+1. Select **Show more** under the rule information to expand additional help and recommendations.
 
     - ![Open an alert](./media/actions/codeql/alert.jpg)
     **Figure 8:** Open an alert.

@@ -24,7 +24,7 @@ Now that you've published an artifact that is _potentially deployable_, you're g
 
 In this walkthrough, you'll be deploying to two environments: `PRE-PROD` and `PROD`. In a typical development lifecycle, you'll want to deploy the latest code to a _soft_ environment (typically `DEV`) that is expected to be a bit unstable. You'll use `PRE-PROD` as this _soft_ environment. The "higher" environments (like `UAT` and `PROD`) are _harder_ environments that are expected to be more stable. To enforce this, you can build protection rules into higher environments. You'll configure an approval protection rule on the `PROD` environment: whenever a deployment job targets an environment with an approval rule, it will pause until approval is granted before executing.
 
-GitHub environments are *logical*. They represent the physical (or virtual) resources that you're deploying to. In this case, the `PRE-PROD` is just a deployment slot on the Azure Web App. `PROD` is the production slot. The `PRE-PROD` deployment job will deploy the published .NET app to the staging slot. The `PROD` deplyment job will swap the slots.
+GitHub environments are *logical*. They represent the physical (or virtual) resources that you're deploying to. In this case, the `PRE-PROD` is just a deployment slot on the Azure Web App. `PROD` is the production slot. The `PRE-PROD` deployment job will deploy the published .NET app to the staging slot. The `PROD` deployment job will swap the slots.
 
 Once you have these steps in place, you'll update the workflow to handle environment-specific configuration using environment secrets.
 
@@ -36,15 +36,15 @@ Once you have these steps in place, you'll update the workflow to handle environ
 
 ## Azure authentication
 
-To perform actions such as deploying code to an Azure resource, you need the correct permissions. For deployment to Azure Web Apps, you can use a publishing profile. However, if you want to deploy to a staging slot, then you'll need the publishing profile for the slot too. Instead, you can use a service principal (SPN) and assign permission to this service principal. You can then authenticate using credentials for the SPN before using any commands that the SPN has permissions to perform.
+To perform actions such as deploying code to an Azure resource, you need the correct permissions. For deployment to Azure Web Apps, you can use a publishing profile. If you want to deploy to a staging slot, then you'll need the publishing profile for the slot too. Instead, you can use a service principal (SPN) and assign permission to this service principal. You can then authenticate using credentials for the SPN before using any commands that the SPN has permissions to perform.
 
-Once you have an SPN, you'll create a [repository secret](https://docs.github.com/actions/reference/encrypted-secrets) to securely store the credentials. You can then simply refer to the secret whenever you need to authenticate. The secret is encrypted and once it has been saved, can never be viewed or edited (only deleted or re-created).
+Once you have an SPN, you'll create a [repository secret](https://docs.github.com/actions/reference/encrypted-secrets) to securely store the credentials. You can then refer to the secret whenever you need to authenticate. The secret is encrypted and once it has been saved, can never be viewed or edited (only deleted or re-created).
 
 ### Create an SPN
 
-1. In your terminal or Cloud Shell, run the following command to create a Service Principal with `contributor` permissions to the Web App you created earlier:
+1. In your terminal or Cloud Shell, run the following command to create a service principal with contributor permissions to the web app you created earlier:
 
-    ```bash
+    ```azurecli
     az ad sp create-for-rbac --name "{sp-name}" --sdk-auth --role contributor \
     --scopes /subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.Web/sites/{webappname}
     ```
@@ -61,9 +61,9 @@ Once you have an SPN, you'll create a [repository secret](https://docs.github.co
     }
     ```
 
-1. Make sure to record the `clientId`, `clientSecret`, `subscription` and `tenantId`. You can also leave the terminal open for copy/paste later.
+1. Make sure to record the `clientId`, `clientSecret`, `subscription`, and `tenantId`. You can also leave the terminal open for copy/paste later.
 
-### Create a rpository secret
+### Create a repository secret
 
 1. Now you're going to create an encrypted secret to store the credentials. You'll create this secret at the repository level.
 1. Navigate to GitHub and select your repository **Settings** tab. Then select **Secrets**. Select **New repository secret**:
@@ -82,19 +82,19 @@ Once you have an SPN, you'll create a [repository secret](https://docs.github.co
 
 [Environments](https://docs.github.com/actions/reference/environments) are used as a _logical boundary_. You can add approvals to environments to ensure quality. You can also track deployments to environments and specify environment-specific values (secrets) for configuration.
 
-For this example, you're going to split the actual Azure environment into two _logical_ environments called `PRE-PROD` and `PROD`. When you deploy the web app, you'll deploy to the the staging slot of the Azure web app, represented by the `PRE-PROD` environment. When you're ready to deploy to `PROD`, you'll just perform a slot swap.
+For this example, you're going to split the actual Azure environment into two _logical_ environments called `PRE-PROD` and `PROD`. When you deploy the web app, you'll deploy to the staging slot of the Azure web app, represented by the `PRE-PROD` environment. When you're ready to deploy to `PROD`, you'll just perform a slot swap.
 
 In this case, the only difference between the environments is the slot that you're deploying to. In real life, there would typically be different web apps (and separate web app plans), separate resource groups, and even separate subscriptions. Typically, there's an SPN per environment. You may want to override the `AZURE_CREDENTIAL` value that you saved as a repository secret by creating it as an _environment secret_.
 
 > [!NOTE]
-> Precendence works from Environment to repository. If a targeted environment has a secret called `MY_SECRET`, then that value is used. If not, the repository value of `MY_SECRET` (if any) is used.
+> Precedence works from Environment to repository. If a targeted environment has a secret called `MY_SECRET`, then that value is used. If not, the repository value of `MY_SECRET` (if any) is used.
 
-1. Select `Settings` and then `Environments` in your repository. Select `New Environment`:
+1. Select **Settings** and then **Environments** in your repository. Select **New Environment**:
 
     - ![Create an environment](./media/actions/deploy/new-env.jpg)
     **Figure 3**: Create an environment.
 
-1. Enter `PRE-PROD` and select `Configure environment`:
+1. Enter `PRE-PROD` and select **Configure environment**:
 
     - ![Name the environment](./media/actions/deploy/pre-prod-env.jpg)
     **Figure 4**: Name the environment.
@@ -104,14 +104,14 @@ In this case, the only difference between the environments is the slot that you'
 > [!NOTE]
 > If you target an environment in a workflow and it does not exist, an "empty" environment is created automatically. The environment would look exactly the same as the `PRE-PROD` environment - it would exist, but would not have any protection rules enabled.
 
-1. Select `Environments` again and again select `New Environment`. Now enter `PROD` as the name and select `Configure environment`.
+1. Select **Environments** again and again select **New Environment**. Now enter `PROD` as the name and select **Configure environment**.
 
 1. Check the **Required reviewers** rule and add yourself as a reviewer. Don't forget to select **Save protection rules**:
 
     - ![Add protection rules](./media/actions/deploy/env-protection-rule.jpg)
     **Figure 5**: Add protection rules.
 
-## Deploy to PRE PROD
+## Deploy to pre-production
 
 You can now add additional jobs to the workflow to deploy to the environments! You'll start by adding a deployment to the `PRE-PROD` environment, which in this case is the web app staging slot.
 
@@ -169,13 +169,13 @@ You can now add additional jobs to the workflow to deploy to the environments! Y
 
     Notice the following things:
 
-    1. You're creating a new job called `deploy_staging`
+    1. You're creating a new job called `deploy_staging`.
     1. You specify a dependency using `needs`. This job needs the `build` job to complete successfully before it starts.
     1. This job also runs on the latest Ubuntu hosted agent, as specified with the `runs-on` attribute.
-    1. You specify that this job is targeting the `PRE-PROD` environment using the `environment` object. You also specify the `url` property - this URL will be displayed in the workflow diagram, giving users an easy way to navigate to the environment. The value of this property is set as the `output` of the `step` with `id` `deploywebapp`, which is defined below.
+    1. You specify that this job is targeting the `PRE-PROD` environment using the `environment` object. You also specify the `url` property. This URL will be displayed in the workflow diagram, giving users an easy way to navigate to the environment. The value of this property is set as the `output` of the `step` with `id` `deploywebapp`, which is defined below.
     1. You're executing a `download-artifact` step to download the artifact (compiled web app) from the `build` job.
     1. You then `login` to Azure using the `AZURE_CREDENTIALS` secret you saved earlier. Note the `${{ }}` notation for dereferencing variables.
-    1. You then perform a `webapp-deploy`, specifying the `app-name`, `slot-name` and path to the downloaded artifact (`package`). This action also defines an `output` parameter that you use to set the `url` of the environment above.
+    1. You then perform a `webapp-deploy`, specifying the `app-name`, `slot-name`, and path to the downloaded artifact (`package`). This action also defines an `output` parameter that you use to set the `url` of the environment above.
     1. Finally, you execute a `logout` to logout of the Azure context
 
 1. Commit the file.
@@ -194,7 +194,7 @@ You can now add additional jobs to the workflow to deploy to the environments! Y
     - ![View deployments](./media/actions/deploy/deployments.jpg)
     **Figure 8**: View deployments.
 
-## Deploy to PROD
+## Deploy to production
 
 Now that you've deployed successfully to `PRE-PROD`, you'll want to deploy to `PROD`. Deployment to `PROD` will be slightly different since you don't need to copy the website again - you just need to swap the `staging` slot with the production slot. you'll do this using an Azure CLI (`az`) command.
 
@@ -245,7 +245,7 @@ Now that you've deployed successfully to `PRE-PROD`, you'll want to deploy to `P
     - ![Waiting for an approval](./media/actions/deploy/waiting-for-approval.jpg)
     **Figure 9**: Waiting for an approval.
 
-1. Select **Review deployments**, check the `PROD` checkbox, optionally add a comment and then select **Approve and deploy** to start the `PROD` job.
+1. Select **Review deployments**, select the **PROD** checkbox, optionally add a comment, and then select **Approve and deploy** to start the `PROD` job.
 
     - ![Approve the PROD deployment](./media/actions/deploy/approval.jpg)
     **Figure 10**: Approve the PROD deployment.
@@ -280,11 +280,11 @@ You now have an end-to-end build and deploy workflow, including approvals! One m
     - ![Manual dispatch](./media/actions/deploy/manual-dispatch.jpg)
     **Figure 13**: Manual dispatch.
 
-## Handle Environment Configuration
+## Handle environment configuration
 
 Your workflow is deploying the same binary to each environment. This concept is important to ensure that the binaries you test in one environment are the same that you deploy to the next. However, environments typically have different settings like database connection strings: you want to ensure that the `DEV` application is using `DEV` settings and the `PROD` application is using `PROD` settings!
 
-For this simple app, there's no database connection string. However, there is an example configuration setting that you can modify for each environment. If you open the `simple-feed-reader/SimpleFeedReader/appsettings.json` file you'll see that the configuration includes a setting for the Header text on the Index page:
+For this simple app, there's no database connection string. However, there is an example configuration setting that you can modify for each environment. If you open the `simple-feed-reader/SimpleFeedReader/appsettings.json` file, you'll see that the configuration includes a setting for the Header text on the Index page:
 
 ```yml
   "UI": {
@@ -296,16 +296,16 @@ For this simple app, there's no database connection string. However, there is an
 
 To show how environment configuration can be handled, you're going to add a secret to each environment and then substitute that value into the settings as you deploy.
 
-### Add Environment Secrets
+### Add environment secrets
 
-1. Select `Settings` on your repository and then `Environments` and select `PRE-PROD`.
-1. Select `Add secret` and add a secret called `index_header` with the value `PRE PROD News Reader`. Select `Add secret`.
+1. On your repository, select **Settings** > **Environments** > **PRE-PROD**.
+1. Select **Add secret** and add a secret called `index_header` with the value `PRE PROD News Reader`. Select **Add secret**.
 
     - ![Add an environment secret](./media/actions/deploy/add-env-secret.jpg)
     **Figure 14**: Add an environment secret.
 
 1. Repeat these steps to add a secret called `index_header` with the value `PROD News Reader` for the `PROD` environment.
-1. If you select `Settings` and `Secrets` in the repository, you'll see the changes. They should look something like this:
+1. If you select **Settings** > **Secrets** in the repository, you'll see the changes. They should look something like this:
 
     - ![View secrets](./media/actions/deploy/env-secrets.jpg)
     **Figure 15**: View secrets.

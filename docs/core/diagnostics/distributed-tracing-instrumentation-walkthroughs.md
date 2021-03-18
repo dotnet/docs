@@ -434,7 +434,7 @@ kind parameter on
 When work occurs in batch processing systems a single Activity might represent work on behalf of many
 different requests simultaneously, each of which has its own trace-id. Although Activity is restricted
 to have a single parent, it can link to additional trace-ids using
-<xref:System.Diagnostics.ActivityLink%2A?displayProperty=nameWithType>. Each ActivityLink is
+<xref:System.Diagnostics.ActivityLink?displayProperty=nameWithType>. Each ActivityLink is
 populated with an <xref:System.Diagnostics.ActivityContext> that
 stores ID information about the Activity being linked to. ActivityContext can be retrieved from in-process
 Activity objects using <xref:System.Diagnostics.Activity.Context%2A?displayProperty=nameWithType> or

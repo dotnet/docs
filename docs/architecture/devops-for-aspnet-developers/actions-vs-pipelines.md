@@ -5,11 +5,11 @@ author: colindembovsky
 ms.date: 03/04/2021
 ---
 
-# Comparing and Contrasting GitHub Actions and Azure Pipelines
+# Comparing and contrasting GitHub Actions and Azure Pipelines
 
 GitHub Actions and Azure Pipelines have a common history - in fact, the Actions agent is a fork of the Pipelines agent! There are many similarities between GitHub Actions and Azure Pipelines and it is worth comparing and contrasting them.
 
-## Pipelines as Code
+## Pipelines as code
 
 Before you compare GitHub Actions and Azure Pipelines, you should consider the benefits of _pipelines as code_. Pipelines as code:
 
@@ -18,7 +18,7 @@ Before you compare GitHub Actions and Azure Pipelines, you should consider the b
 > * Benefit from standard source control practices (such as code reviews via pull request and versioning).
 > * Can be audited for changes just like any other files in the repository.
 > * Don’t require accessing a separate system or UI to edit.
-> * Can fully codify the build, test and deploy process for code.
+> * Can fully codify the build, test, and deploy process for code.
 > * Can usually be templatized to empower teams to create standard processes across multiple repositories.
 
 > [!INFORMATION]
@@ -27,7 +27,7 @@ Before you compare GitHub Actions and Azure Pipelines, you should consider the b
 > [!INFORMATION]
 > In this article references to _Azure Pipelines_ are referring to [YAML Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#define-pipelines-using-yaml-syntax), and not the older UI-based [Classic Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#define-pipelines-using-the-classic-interface).
 
-## Agents and Runners
+## Agents and runners
 
 Before you examine pipelines themselves, you must consider how these pipelines _execute_. Both GitHub Actions and Azure Pipelines are really _orchestration engines_: when a pipeline is triggered, the system finds an "agent" and tells the agent to execute the jobs defined in the pipeline file.
 
@@ -35,14 +35,14 @@ Azure Pipelines run on _agents_. The agent is written in .NET, so it will run wh
 
 GitHub Workflows execute on _runners_. The runner code is essentially a fork of the Azure Pipelines code, so it is very similar. It is also cross-platform and you can also utilize _hosted_ or _self-hosted_ runners.
 
-### Hosted Agents and Runners
+### Hosted agents and runners
 
 Hosted agents (Azure Pipelines) and hosted runners (GitHub) are agents that are spun up and managed by Azure DevOps or GitHub respectively. You do not need to maintain any build infrastructure. When a pipeline triggers that targets a hosted agent, an instance of the specified agent image is spun up. The job is run by the agent on the instance, and once the job completes, the instance is destroyed. The same applies for hosted runners running GitHub workflows.
 
 > [!INFORMATION]
 > The list of software installed on Azure Pipeline images is listed in [this repo](https://github.com/actions/virtual-environments/tree/master/images). You can click into the platform folder and examine the README.md files. You can find information on GitHub hosted runners [here](https://docs.github.com/en/actions/reference/specifications-for-github-hosted-runners).
 
-### Private Agents and Self-Hosted Runners
+### Private agents and self-hosted runners
 
 There are times when you can't utilize hosted images:
 
@@ -56,11 +56,11 @@ There are times when you can't utilize hosted images:
 > [!INFORMATION]
 > It is possible to install tools and SDKs when running pipelines on hosted agents. If the install steps do not take long, this is viable. However, if the tools/software take a long time to install, then you may be better off with a private agent or self-hosted runner, since the install steps will need to execute for every run of the workflow.
 
-### Azure DevOps Agents
+### Azure DevOps agents
 
 Every Azure DevOps account has a Hosted pool with a single agent that can run one job at a time and some amount of free build minutes. You can purchase additional "hosted pipelines" in Azure DevOps. When you purchase an additional hosted pipeline, you’re really removing the build minutes limit and adding _concurrency_: one pipeline can run one job at a time, two pipelines can run two jobs simultaneously and so on.
 
-### Comparison of Agents
+### Comparison of agents
 
 Feature|GitHub|Azure Pipelines|Links
 --|--|--|--
@@ -69,13 +69,13 @@ Hosted agents for private repos/projects|2000 minutes free per month, 3000 minut
 Cross-platform|Yes|Yes|
 Scale set agents|No|Yes|Read about scale-set agents [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops)
 
-## Comparison of GitHub Actions vs Azure Pipelines
+## Comparison of GitHub Actions and Azure Pipelines
 
 Azure Pipelines (YAML pipelines) provide a mature set of features such as approvals, artifact storage, deployment jobs, environments, gates, stages, templates, triggers, variable groups and more. For a full list of Azure Pipelines features, refer to the table [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#feature-availability).
 
-GitHub Actions are evolving rapidly and also provide a set of features such as triggers for almost all GitHub events, artifact storage, environments and environment rules, starter templates, matrices and more. Read more about the full feature set of GitHub Actions [here](https://docs.github.com/en/actions).
+GitHub Actions are evolving rapidly and provide a set of features such as triggers for almost all GitHub events, artifact storage, environments and environment rules, starter templates, matrices and more. Read more about the full feature set of GitHub Actions [here](https://docs.github.com/en/actions).
 
-### Feature Comparison
+### Feature comparison
 
 (As of March 2021)
 
@@ -102,7 +102,7 @@ Triggers|Set of events that cause the pipeline to trigger|Yes|Yes
 Variables|Variables that can be passed in, statically or dynamically defined|Yes|Yes
 Variable Groups|Store values for use across multiple pipelines|No|Yes
 
-## Recommendation Table for common scenarios
+## Recommendation table for common scenarios
 
 The following table shows some common scenarios as well as a recommendation for which platform to use. As always, there will be exceptions, so consider your exact scenario carefully.
 

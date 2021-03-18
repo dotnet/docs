@@ -32,7 +32,7 @@ In the [Deploy](actions-build.md) article, you'll:
 > * Extend the workflow YAML file to add deployment steps.
 > * Add a manual dispatch trigger.
 
-## Securing Code with CodeQL
+## Securing code with CodeQL
 
 In addition to building and deploying code, [GitHub Advanced Security](https://docs.github.com/github/getting-started-with-github/about-github-advanced-security) offers a suite of tools for "shifting left" with security (that is, integrating security early on in the software delivery lifecycle). [CodeQL](https://codeql.github.com/docs/codeql-overview/about-codeql/) is a code scanning language that can be used to run a suite of queries that find potential vulnerabilities or quality issues in your code. CodeQL is run using an Actions workflow.
 
@@ -44,6 +44,6 @@ In the [CodeQL](actions-codeql.md) article you'll:
 > * Edit the workflow file to include custom scan settings.
 > * See scanning results.
 
-## Comparing and Contrasting GitHub Actions and Azure Pipelines
+## Comparing and contrasting GitHub Actions and Azure Pipelines
 
 GitHub Actions and Azure Pipelines have a common lineage and are similar in many respects. However, there are some crucial differences between Actions and Pipelines that you need to know about if you're deciding which platform to use for building, testing and deploying apps. In the [Comparison](actions-vs-pipelines.md) article, you'll deep-dive into these platforms, compare and contrast them, and learn how to select the correct platform for your CI/CD needs.

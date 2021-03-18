@@ -1160,7 +1160,7 @@ let f<'a, 'b when 'a : equality and 'b : comparison>
     // function body
 ```
 
-If the type parameters or constraints are too long, break and align them as shown below. Keep the list of type parameters on the same line as the function, regardless of its length. For constraints, place `when` on the first line, and keep each constraint on a single line regardless of its length. Place `>` at the end of the last line.
+If the type parameters or constraints are too long, break and align them as shown below. Keep the list of type parameters on the same line as the function, regardless of its length. For constraints, place `when` on the first line, and keep each constraint on a single line regardless of its length. Place `>` at the end of the last line. Indent the constraints by one level.
 
 ```fsharp
 let inline f< ^a, ^b

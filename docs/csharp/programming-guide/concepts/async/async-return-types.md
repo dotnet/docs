@@ -82,7 +82,7 @@ This feature is the complement to [awaitable expressions](../../../../../_csharp
 
 :::code language="csharp" source="snippets/async-return-types/async-valuetask.cs":::
 
-Writing a generalized async return type is an advanced scenario. You should use `Task`, `Task<T>` and `ValueTask<T>`. Those types cover most scenarios for asynchronous code.
+Writing a generalized async return type is an advanced scenario. Consider using the `Task`, `Task<T>` and `ValueTask<T>` types instead, which cover most scenarios for asynchronous code.
 
 ## Async streams with IAsyncEnumerable\<T\>
 

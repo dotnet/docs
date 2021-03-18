@@ -486,3 +486,4 @@ jobs:
 
 >[!div class="step-by-step"]
 >[Previous](actions-build.md)
+>[Next](actions-codeql.md)

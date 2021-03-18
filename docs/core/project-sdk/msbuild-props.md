@@ -605,8 +605,6 @@ The `EnableDynamicLoading` property indicates that an assembly is a dynamically 
 [MSBuild items](/visualstudio/msbuild/msbuild-items) are inputs into the build system. Items are specified according to their type, which is the element name. For example, `Compile` and `Reference` are two [common item types](/visualstudio/msbuild/common-msbuild-project-items). The following additional item types are made available by the .NET SDK:
 
 - [PackageReference](#packagereference)
-- [ProjectReference](#projectreference)
-- [Reference](#reference)
 - [TrimmerRootAssembly](#trimmerrootassembly)
 
 You can use any of the standard [item attributes](/visualstudio/msbuild/item-element-msbuild#attributes-and-elements), for example, `Include`, `Version`, and `Update`, on these items.
@@ -637,34 +635,6 @@ You can also [control dependency assets](/nuget/consume-packages/package-referen
 
 For more information, see [Package references in project files](/nuget/consume-packages/package-references-in-project-files).
 
-### ProjectReference
-
-The `ProjectReference` item defines a reference to another project. The referenced project is added as a NuGet package dependency, that is, it's treated the same as a `PackageReference`.
-
-The `Include` attribute specifies the path to the project. You can also add the following metadata to a project reference: `IncludeAssets`, `ExcludeAssets`, and `PrivateAssets`.
-
-The project file snippet in the following example references a project named `Project2`.
-
-```xml
-<ItemGroup>
-  <ProjectReference Include="..\Project2.csproj" />
-</ItemGroup>
-```
-
-### Reference
-
-The `Reference` item defines a reference to an assembly file.
-
-The `Include` attribute specifies the name of the file, and the `HintPath` metadata specifies the path to the assembly.
-
-```xml
-<ItemGroup>
-  <Reference Include="MyAssembly">
-    <HintPath>..\..\Assemblies\MyAssembly.dll</HintPath>
-  </Reference>
-</ItemGroup>
-```
-
 ### TrimmerRootAssembly
 
 The `TrimmerRootAssembly` item lets you exclude an assembly from [*trimming*](../deploying/trim-self-contained.md). Trimming is the process of removing unused parts of the runtime from a packaged application. In some cases, trimming might incorrectly remove required references.
@@ -679,7 +649,7 @@ The following XML excludes the `System.Security` assembly from trimming.
 
 ## Item metadata
 
-In addition to the standard [MSBUild item attributes](/visualstudio/msbuild/item-element-msbuild#attributes-and-elements), the following item metadata tags are made available by the .NET SDK:
+In addition to the standard [MSBuild item attributes](/visualstudio/msbuild/item-element-msbuild#attributes-and-elements), the following item metadata tags are made available by the .NET SDK:
 
 - [CopyToPublishDirectory](#copytopublishdirectory)
 - [LinkBase](#linkbase)

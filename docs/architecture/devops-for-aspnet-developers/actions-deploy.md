@@ -68,12 +68,12 @@ Once you have an SPN, you'll create a [repository secret](https://docs.github.co
     ![Create a secret](./media/actions/deploy/add-repo-secret.jpg)
     **Figure 1**: Create a secret.
 
-1. Copy and paste the JSON from the `az ad sp create-for-rbac` command into the body of the secret. You can create this JSON by hand too if you have the relevant fields for your SPN. The secret should be named `AZURE_CREDENTIALS`. Select `Add secret` to save the new secret:
+1. Copy and paste the JSON from the `az ad sp create-for-rbac` command into the body of the secret. You can create this JSON by hand too if you have the relevant fields for your SPN. The secret should be named `AZURE_CREDENTIALS`. Select **Add secret** to save the new secret:
 
     ![Add Azure credentials](./media/actions/deploy/azure-credentials.jpg)
     **Figure 2**: Add Azure credentials.
 
-1. You'll consume this secret in a workflow in later steps. To access it, you can use the variable notation `${{}}`. In this case, `${{ AZURE_CREDENTIAL }}` will be populated with the JSON you saved.
+1. You'll consume this secret in a workflow in later steps. To access it, use the variable notation `${{}}`. In this case, `${{ AZURE_CREDENTIAL }}` will be populated with the JSON you saved.
 
 ## Add environments
 
@@ -234,7 +234,7 @@ Now that you've deployed successfully to `PRE-PROD`, you'll want to deploy to `P
     1. The `Swap staging slot into production` step is a multi-line `run` command (note the use of the pipe symbol `|`). You also specify an `id` for this step so that you can refer to it (you refer to it in the `url` property of the `environment`). The first line executes the slot swap using the variables you defined above in the workflow. The second line uses an `az webapp show` command to extract the URL of the target web app. This final line uses `::set-output` in an echo to create an output variable for this task, setting the value to the web app URL.
 
     > [!NOTE]
-    > The URL _must_ start with `http://` or `https://` or it will not render.
+    > The URL _must_ start with `http://` or `https://` or it won't render.
 
 1. Commit the file.
 1. Let the workflow run for a couple minutes until it has deployed to `PRE-PROD`. At this point, the workflow will pause and wait for the required approval since you're targeting the `PROD` environment, which requires an approval as defined earlier:
@@ -279,9 +279,9 @@ You now have an end-to-end build and deploy workflow, including approvals. One m
 
 ## Handle environment configuration
 
-Your workflow is deploying the same binary to each environment. This concept is important to ensure that the binaries you test in one environment are the same that you deploy to the next. However, environments typically have different settings like database connection strings: you want to ensure that the `DEV` application is using `DEV` settings and the `PROD` application is using `PROD` settings!
+Your workflow is deploying the same binary to each environment. This concept is important to ensure that the binaries you test in one environment are the same that you deploy to the next. However, environments typically have different settings like database connection strings. You want to ensure that the `DEV` app is using `DEV` settings and the `PROD` app is using `PROD` settings.
 
-For this simple app, there's no database connection string. However, there is an example configuration setting that you can modify for each environment. If you open the `simple-feed-reader/SimpleFeedReader/appsettings.json` file, you'll see that the configuration includes a setting for the Header text on the Index page:
+For this simple app, there's no database connection string. However, there's an example configuration setting that you can modify for each environment. If you open the `simple-feed-reader/SimpleFeedReader/appsettings.json` file, you'll see that the configuration includes a setting for the Header text on the Index page:
 
 ```yml
   "UI": {
@@ -356,7 +356,7 @@ To show how environment configuration can be handled, you're going to add a secr
     ![Settings changed in the environments](./media/actions/deploy/settings-in-both-envs.jpg)
     **Figure 15**: Settings changed in the environments.
 
-## Final Workflow File
+## Final workflow file
 
 The final workflow file should look like this:
 

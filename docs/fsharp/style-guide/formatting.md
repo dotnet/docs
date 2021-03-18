@@ -1176,7 +1176,6 @@ let inline f< ^a, ^b
 If the type parameters/constraints are broken up, but there are no normal function parameters, place the `=` on a new line regardless:
 
 ```f#
-   
 let inline f<^a, ^b
     when ^a : (static member Foo1: unit -> ^b)
     and ^b : (member Foo2: unit -> int)

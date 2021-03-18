@@ -48,6 +48,7 @@ Replace the contents of the generated Program.cs with this example source:
 
 ```C#
 using OpenTelemetry;
+using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using System;
 using System.Threading.Tasks;
@@ -59,6 +60,7 @@ namespace Sample.DistributedTracing
         static async Task Main(string[] args)
         {
             using var tracerProvider = Sdk.CreateTracerProviderBuilder()
+                .SetResourceBuilder(ResourceBuilder.CreateDefault().AddService("MySample"))
                 .AddSource("Sample.DistributedTracing")
                 .AddConsoleExporter()
                 .Build();
@@ -117,6 +119,7 @@ start Activity objects. Add the static ActivitySource variable above Main() and
 
 ```csharp
 using OpenTelemetry;
+using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using System;
 using System.Diagnostics;
@@ -175,16 +178,14 @@ Running the app now shows the new Activity being logged:
 
 ```dotnetcli
 > dotnet run
-dotnet run
-Activity.Id:          00-9a41c8f2144cef45a99b9164db9da0b6-5cbc0f6836635245-01
+Activity.Id:          00-f443e487a4998c41a6fd6fe88bae644e-5b7253de08ed474f-01
 Activity.DisplayName: SomeWork
 Activity.Kind:        Internal
-Activity.StartTime:   2021-03-15T08:39:24.7379085Z
-Activity.Duration:    00:00:01.5198773
+Activity.StartTime:   2021-03-18T10:36:51.4720202Z
+Activity.Duration:    00:00:01.5025842
 Resource associated with Activity:
-    service.name: unknown_service:temp
-
-Example work done
+    service.name: MySample
+    service.instance.id: 067f4bb5-a5a8-4898-a288-dec569d6dbef
 ```
 
 #### Notes
@@ -221,16 +222,17 @@ may be useful for diagnostics. Update DoSomeWork() to include them:
 
 ```dotnetcli
 > dotnet run
-Activity.Id:          00-fd2d1084980a7549bf18a464029e4301-a16b0c92310baf4f-01
+Activity.Id:          00-2b56072db8cb5a4496a4bfb69f46aa06-7bc4acda3b9cce4d-01
 Activity.DisplayName: SomeWork
 Activity.Kind:        Internal
-Activity.StartTime:   2021-03-15T09:24:00.5920611Z
-Activity.Duration:    00:00:01.5323726
+Activity.StartTime:   2021-03-18T10:37:31.4949570Z
+Activity.Duration:    00:00:01.5417719
 Activity.TagObjects:
     foo: banana
     bar: 8
 Resource associated with Activity:
-    service.name: unknown_service:temp
+    service.name: MySample
+    service.instance.id: 25bbc1c3-2de5-48d9-9333-062377fea49c
 
 Example work done
 ```
@@ -281,19 +283,20 @@ some events to the Activity:
 
 ```dotnetcli
 > dotnet run
-Activity.Id:          00-e10a3a418850ff45804fef674b6ce446-7c51cbc310b93943-01
+Activity.Id:          00-82cf6ea92661b84d9fd881731741d04e-33fff2835a03c041-01
 Activity.DisplayName: SomeWork
 Activity.Kind:        Internal
-Activity.StartTime:   2021-03-15T09:48:44.2058595Z
-Activity.Duration:    00:00:01.5274439
+Activity.StartTime:   2021-03-18T10:39:10.6902609Z
+Activity.Duration:    00:00:01.5147582
 Activity.TagObjects:
     foo: banana
     bar: 8
 Activity.Events:
-    Part way there [3/15/2021 9:48:44 AM +00:00]
-    Done now [3/15/2021 9:48:45 AM +00:00]
+    Part way there [3/18/2021 10:39:11 AM +00:00]
+    Done now [3/18/2021 10:39:12 AM +00:00]
 Resource associated with Activity:
-    service.name: unknown_service:temp
+    service.name: MySample
+    service.instance.id: ea7f0fcb-3673-48e0-b6ce-e4af5a86ce4f
 
 Example work done
 ```
@@ -369,39 +372,42 @@ Update StepOne and StepTwo to add more tracing around these separate steps:
 
 ```dotnetcli
 > dotnet run
-Activity.Id:          00-2bdfa9c9c73d2f41a1cdde848d686a04-2cdd7f434ce3774f-01
-Activity.ParentId:    00-2bdfa9c9c73d2f41a1cdde848d686a04-53dfb7fc5b5b3147-01
+Activity.Id:          00-9d5aa439e0df7e49b4abff8d2d5329a9-39cac574e8fda44b-01
+Activity.ParentId:    00-9d5aa439e0df7e49b4abff8d2d5329a9-f16529d0b7c49e44-01
 Activity.DisplayName: StepOne
 Activity.Kind:        Internal
-Activity.StartTime:   2021-03-15T10:45:32.3626090Z
-Activity.Duration:    00:00:00.5147581
+Activity.StartTime:   2021-03-18T10:40:51.4278822Z
+Activity.Duration:    00:00:00.5051364
 Resource associated with Activity:
-    service.name: unknown_service:temp
+    service.name: MySample
+    service.instance.id: e0a8c12c-249d-4bdd-8180-8931b9b6e8d0
 
-Activity.Id:          00-2bdfa9c9c73d2f41a1cdde848d686a04-cbb2cc0e664cd846-01
-Activity.ParentId:    00-2bdfa9c9c73d2f41a1cdde848d686a04-53dfb7fc5b5b3147-01
+Activity.Id:          00-9d5aa439e0df7e49b4abff8d2d5329a9-4ccccb6efdc59546-01
+Activity.ParentId:    00-9d5aa439e0df7e49b4abff8d2d5329a9-f16529d0b7c49e44-01
 Activity.DisplayName: StepTwo
 Activity.Kind:        Internal
-Activity.StartTime:   2021-03-15T10:45:32.8894885Z
-Activity.Duration:    00:00:01.0094402
+Activity.StartTime:   2021-03-18T10:40:51.9441095Z
+Activity.Duration:    00:00:01.0052729
 Resource associated with Activity:
-    service.name: unknown_service:temp
+    service.name: MySample
+    service.instance.id: e0a8c12c-249d-4bdd-8180-8931b9b6e8d0
 
-Activity.Id:          00-2bdfa9c9c73d2f41a1cdde848d686a04-53dfb7fc5b5b3147-01
+Activity.Id:          00-9d5aa439e0df7e49b4abff8d2d5329a9-f16529d0b7c49e44-01
 Activity.DisplayName: SomeWork
 Activity.Kind:        Internal
-Activity.StartTime:   2021-03-15T10:45:32.3606482Z
-Activity.Duration:    00:00:01.5404880
+Activity.StartTime:   2021-03-18T10:40:51.4256627Z
+Activity.Duration:    00:00:01.5286408
 Activity.TagObjects:
     foo: banana
     bar: 8
     otel.status_code: ERROR
     otel.status_description: Use this text give more information about the error
 Activity.Events:
-    Part way there [3/15/2021 10:45:32 AM +00:00]
-    Done now [3/15/2021 10:45:33 AM +00:00]
+    Part way there [3/18/2021 10:40:51 AM +00:00]
+    Done now [3/18/2021 10:40:52 AM +00:00]
 Resource associated with Activity:
-    service.name: unknown_service:temp
+    service.name: MySample
+    service.instance.id: e0a8c12c-249d-4bdd-8180-8931b9b6e8d0
 
 Example work done
 ```

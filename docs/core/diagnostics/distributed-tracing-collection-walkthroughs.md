@@ -112,6 +112,7 @@ Update Program.cs with additional OpenTelemetry using statments:
 
 ```C#
 using OpenTelemetry;
+using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using System;
 using System.Diagnostics;
@@ -124,6 +125,7 @@ Update Main() to create the OpenTelemetry TracerProvider:
         public static async Task Main()
         {
             using var tracerProvider = Sdk.CreateTracerProviderBuilder()
+                .SetResourceBuilder(ResourceBuilder.CreateDefault().AddService("MySample"))
                 .AddSource("Sample.DistributedTracing")
                 .AddConsoleExporter()
                 .Build();
@@ -137,31 +139,34 @@ Now the app collects distributed trace information and displays it to the consol
 
 ```dotnetcli
 > dotnet run
-Activity.Id:          00-35c0e68b0dac3c49be08a9d9cab32579-0b7477e11aa20d40-01
-Activity.ParentId:    00-35c0e68b0dac3c49be08a9d9cab32579-d95f666d24193f40-01
+Activity.Id:          00-7759221f2c5599489d455b84fa0f90f4-6081a9b8041cd840-01
+Activity.ParentId:    00-7759221f2c5599489d455b84fa0f90f4-9a52f72c08a9d447-01
 Activity.DisplayName: StepOne
 Activity.Kind:        Internal
-Activity.StartTime:   2021-03-15T01:58:10.7661575Z
-Activity.Duration:    00:00:00.5013965
+Activity.StartTime:   2021-03-18T10:46:46.8649754Z
+Activity.Duration:    00:00:00.5069226
 Resource associated with Activity:
-    service.name: unknown_service:temp
+    service.name: MySample
+    service.instance.id: 909a4624-3b2e-40e4-a86b-4a2c8003219e
 
-Activity.Id:          00-35c0e68b0dac3c49be08a9d9cab32579-7ba0fc6d480c9841-01
-Activity.ParentId:    00-35c0e68b0dac3c49be08a9d9cab32579-d95f666d24193f40-01
+Activity.Id:          00-7759221f2c5599489d455b84fa0f90f4-d2b283db91cf774c-01
+Activity.ParentId:    00-7759221f2c5599489d455b84fa0f90f4-9a52f72c08a9d447-01
 Activity.DisplayName: StepTwo
 Activity.Kind:        Internal
-Activity.StartTime:   2021-03-15T01:58:11.2894853Z
-Activity.Duration:    00:00:01.0188689
+Activity.StartTime:   2021-03-18T10:46:47.3838737Z
+Activity.Duration:    00:00:01.0142278
 Resource associated with Activity:
-    service.name: unknown_service:temp
+    service.name: MySample
+    service.instance.id: 909a4624-3b2e-40e4-a86b-4a2c8003219e
 
-Activity.Id:          00-35c0e68b0dac3c49be08a9d9cab32579-d95f666d24193f40-01
+Activity.Id:          00-7759221f2c5599489d455b84fa0f90f4-9a52f72c08a9d447-01
 Activity.DisplayName: SomeWork
 Activity.Kind:        Internal
-Activity.StartTime:   2021-03-15T01:58:10.7647839Z
-Activity.Duration:    00:00:01.5450288
+Activity.StartTime:   2021-03-18T10:46:46.8634510Z
+Activity.Duration:    00:00:01.5402045
 Resource associated with Activity:
-    service.name: unknown_service:temp
+    service.name: MySample
+    service.instance.id: 909a4624-3b2e-40e4-a86b-4a2c8003219e
 
 Example work done
 ```

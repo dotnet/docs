@@ -66,7 +66,11 @@ The following APIs are more event oriented. Rather than logging simple strings t
 
 ## Distributed Tracing
 
-[Distributed Tracing](./distributed-tracing.md) is the way to publish and observe the tracing data in a distributed system.
+[Distributed Tracing](./distributed-tracing.md) is a diagnostic technique that helps engineers
+localize failures and performance issues within applications, especially those that may be
+distributed across multiple machines or processes. This technique tracks requests through an
+application correlating together work done by different application components and separating
+it from other work the application may be doing for concurrent requests.
 
 ## ILogger and logging frameworks
 

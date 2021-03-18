@@ -1175,7 +1175,7 @@ let inline f< ^a, ^b when
     // function body
 ```
 
-Even if the constraints are broken, you can keep the list of generic type parameters on a single line if they fit, as shown above. Otherwise place each type parameter on a new line and `when` after the last one:
+Even if the constraints are broken up, you can keep the list of generic type parameters on a single line if they fit, as shown above. Otherwise place each type parameter on a new line and `when` after the last one:
 
 ```fsharp
 let inline f<'param1,

@@ -17,7 +17,6 @@ In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 >
-> - Create a .NET app
 > - Containerize the .NET app
 > - Define action inputs and outputs
 > - Compose the workflow
@@ -29,58 +28,31 @@ In this tutorial, you learn how to:
 - An integrated development environment (IDE)
   - Screen captures depict the [Visual Studio IDE](https://visualstudio.microsoft.com)
 
-The companion sample source code is [available on GitHub](https://github.com/dotnet/samples/tree/main/github-actions/DotNet.GitHubAction).
+## The intent of the app
 
-## Create a .NET app
+The app in this tutorial performs code metric analysis, when ran it will:
 
-You need to create a .NET console application. From the .NET CLI in a working directory, run the [dotnet new](../core/tools/dotnet-new.md) command:
+- Scan and discover **.csproj* and **.vbproj* project files.
+- Analyze the discovered source code for:
 
-```dotnetcli
-dotnet new console -n DotNet.GitHubAction
-```
+  - Cyclomatic complexity
+  - Maintainability index
+  - Depth of inheritance
+  - Class coupling
+  - Number of lines of source code
+  - Approximated lines of executable code
 
-This will create a new directory named "DotNet.GitHubAction" that contains a *DotNet.GitHubAction.csproj* project file, and *Program.cs* source file. This is your new .NET console app. From the same command line session, change directories into the *DotNet.GitHubAction* directory, and then [run the app](../core/tools/dotnet-run.md) to verify it works correctly.
+- Create (or update) a *CODE_METRICS.md* file.
 
-```dotnetcli
-cd DotNet.GitHubAction && dotnet run
-```
+The app is not responsible for creating a pull request with the changes to the *CODE_METRICS.md* file. That is managed as part of the workflow composition. The complete app code is [available on GitHub](https://github.com/dotnet/samples/tree/main/github-actions/DotNet.GitHubAction).
 
-At this point, your app should have restored, compiled, ran, and printed `"Hello World!"` to the console.
-
-### Add package references
-
-Add the [`CommandLineParser` NuGet](https://www.nuget.org/packages/CommandLineParser) package to the project using the [dotnet add package](../core/tools/dotnet-add-package.md) command.
-
-```dotnetcli
-dotnet add package CommandLineParser
-```
-
-The `CommandLineParser` package is used as a convenience for parsing arguments in standard form. For more information, see [Command Line Parser on GitHub](https://github.com/commandlineparser/commandline).
-
-You will also need to add two more package references to your project.
-
-1. Add the hosting extensions package, [`Microsoft.Extensions.Hosting`](https://www.nuget.org/packages/Microsoft.Extensions.Hosting).
-
-    ```dotnetcli
-    dotnet add package Microsoft.Extensions.Hosting
-    ```
-
-    For more information on hosting, see [.NET Generic Host](../core/extensions/generic-host.md).
-
-1. Add the dependency injection abstractions package, [`Microsoft.Extensions.DependencyInjection.Abstractions`](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection.Abstractions).
-
-    ```dotnetcli
-    dotnet add package Microsoft.Extensions.DependencyInjection.Abstractions
-    ```
-
-    For more information on dependency injection, see [Dependency injection in .NET](../core/extensions/dependency-injection.md).
 
 ### Create action inputs class
 
 Open the project in your favorite .NET IDE, and create a new class named *ActionInputs.cs*.
 
-- From **Visual Studio**, right-click on the project and select **Add** > **Class**
-- From **Visual Studio Code**, in the Explorer, select **New File**
+- From **Visual Studio**, right-click on the project and select **Add** > **Class**.
+- From **Visual Studio Code**, in the Explorer, select **New File**.
 
 Copy and paste the following C# code into the newly created `ActionInputs` class.
 
@@ -154,126 +126,15 @@ namespace DotNet.GitHubAction
 }
 ```
 
-The preceding action inputs class defines several inputs that are required in order for your console application to run successfully. The constructor will write the `"GREETINGS"` environment variable value if present. The `Name` and `Branch` properties are parsed and assigned from the segments.
+The preceding action inputs class defines several required inputs for your console application to run successfully. The constructor will write the `"GREETINGS"` environment variable value, if one is available in the current execution environment. The `Name` and `Branch` properties are parsed and assigned from the last segment of a `"/"` delimited string.
 
 ### Update the program file
 
 With the action inputs class defined, copy and paste the following C# source code and replace the *Program.cs* file contents.
 
-```csharp
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using CommandLine;
-using DotNet.CodeAnalysis;
-using DotNet.GitHubAction;
-using DotNet.GitHubAction.Analyzers;
-using DotNet.GitHubAction.Extensions;
-using Microsoft.CodeAnalysis.CodeMetrics;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.FileSystemGlobbing;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using static CommandLine.Parser;
+:::code language="csharp" source="snippets/DotNet.GitHubAction/Program.cs":::
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices((_, services) => services.AddGitHubActionServices())
-    .Build();
-
-static TService Get<TService>(IHost host)
-    where TService : notnull =>
-    host.Services.GetRequiredService<TService>();
-
-static async Task StartAnalysisAsync(ActionInputs inputs, IHost host)
-{
-    using ProjectWorkspace workspace = Get<ProjectWorkspace>(host);
-    using CancellationTokenSource tokenSource = new();
-
-    Console.CancelKeyPress += delegate
-    {
-        tokenSource.Cancel();
-    };
-
-    var projectAnalyzer = Get<ProjectMetricDataAnalyzer>(host);
-
-    Matcher matcher = new();
-    matcher.AddIncludePatterns(new[] { "**/*.csproj", "**/*.vbproj" });
-
-    Dictionary<string, CodeAnalysisMetricData> metricData = new(StringComparer.OrdinalIgnoreCase);
-    var projects = matcher.GetResultsInFullPath(inputs.Directory);
-
-    foreach (var project in projects)
-    {
-        var metrics =
-            await projectAnalyzer.AnalyzeAsync(
-                workspace, project, tokenSource.Token);
-
-        foreach (var (path, metric) in metrics)
-        {
-            metricData[path] = metric;
-        }
-    }
-
-    var updatedMetrics = false;
-    var title = "";
-    StringBuilder summary = new();
-    if (metricData is { Count: > 0 })
-    {
-        var fileName = "CODE_METRICS.md";
-        var fullPath = Path.Combine(inputs.Directory, fileName);
-        var logger = Get<ILoggerFactory>(host).CreateLogger(nameof(StartAnalysisAsync));
-        var fileExists = File.Exists(fullPath);
-
-        logger.LogInformation(
-            $"{(fileExists ? "Updating" : "Creating")} {fileName} markdown file with latest code metric data.");
-
-        summary.AppendLine(
-            title = $"{(fileExists ? "Updated" : "Created")} {fileName} file, analyzed metrics for {metricData.Count} projects.");
-
-        foreach (var (path, _) in metricData)
-        {
-            summary.AppendLine($"- *{path}*");
-        }
-
-        await File.WriteAllTextAsync(
-            fullPath,
-            metricData.ToMarkDownBody(inputs),
-            tokenSource.Token);
-
-        updatedMetrics = true;
-    }
-    else
-    {
-        summary.Append("No metrics were determined.");
-    }
-
-    // https://docs.github.com/actions/reference/workflow-commands-for-github-actions#setting-an-output-parameter
-    Console.WriteLine($"::set-output name=updated-metrics::{updatedMetrics}");
-    Console.WriteLine($"::set-output name=summary-title::{title}");
-    Console.WriteLine($"::set-output name=summary-details::{summary}");
-
-    Environment.Exit(0);
-}
-
-var parser = Default.ParseArguments<ActionInputs>(() => new(), args);
-parser.WithNotParsed(
-    errors =>
-    {
-        Get<ILoggerFactory>(host)
-            .CreateLogger("DotNet.GitHubAction.Program")
-            .LogError(
-                string.Join(Environment.NewLine, errors.Select(error => error.ToString())));
-        
-        Environment.Exit(2);
-    });
-
-await parser.WithParsedAsync(options => StartAnalysisAsync(options, host));
-await host.RunAsync();
-```
+<https://docs.github.com/actions/reference/workflow-commands-for-github-actions#setting-an-output-parameter>
 
 ## Containerize a .NET app
 
@@ -331,6 +192,11 @@ Show a consuming GitHub action workflow
 ## Summary
 
 ...
+
+## See also
+
+- [.NET Generic Host](../core/extensions/generic-host.md)
+- [Dependency injection in .NET](../core/extensions/dependency-injection.md)
 
 ## Next steps
 

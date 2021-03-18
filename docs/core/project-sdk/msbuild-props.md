@@ -607,7 +607,7 @@ The `EnableDynamicLoading` property indicates that an assembly is a dynamically 
 - [PackageReference](#packagereference)
 - [TrimmerRootAssembly](#trimmerrootassembly)
 
-You can use any of the standard [item attributes](/visualstudio/msbuild/item-element-msbuild#attributes-and-elements), for example, `Include`, `Version`, and `Update`, on these items.
+You can use any of the standard [item attributes](/visualstudio/msbuild/item-element-msbuild#attributes-and-elements), for example, `Include` and `Update`, on these items. Use `Include` to add a new item, and use `Update` to modify an existing item. For example, `Update` is often used to modify an item that has implicitly been added by the .NET SDK.
 
 ### PackageReference
 

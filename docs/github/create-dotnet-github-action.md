@@ -42,7 +42,9 @@ The app in this tutorial performs code metric analysis by:
 
 - Creating (or updating) a *CODE_METRICS.md* file.
 
-The app is *not* responsible for creating a pull request with the changes to the *CODE_METRICS.md* file. These changes are managed as part of the [workflow composition](#workflow-composition). The complete app code is [available on GitHub](https://github.com/dotnet/samples/tree/main/github-actions/DotNet.GitHubAction).
+The app is *not* responsible for creating a pull request with the changes to the *CODE_METRICS.md* file. These changes are managed as part of the [workflow composition](#workflow-composition).
+
+References to the source code in this tutorial have portions of the app omitted for brevity. The complete app code is [available on GitHub](https://github.com/dotnet/samples/tree/main/github-actions/DotNet.GitHubAction).
 
 ### Explore the app
 
@@ -75,7 +77,7 @@ GitHub Actions support two variations of app development, either
 - JavaScript (optionally [TypeScript](https://www.typescriptlang.org))
 - Docker container (any app that runs on [Docker](https://docs.github.com/actions/creating-actions/creating-a-docker-container-action))
 
-Since .NET is *not* natively supported by GitHub Actions, the .NET app needs to be containerized. For more information, see [Containerize a .NET Core app](../core/docker/build-container.md).
+Since .NET is *not* natively supported by GitHub Actions, the .NET app needs to be containerized. For more information, see [Containerize a .NET app](../core/docker/build-container.md).
 
 ### The Dockerfile
 
@@ -137,7 +139,7 @@ Focusing on the `steps` node, the composition is more obvious:
 
 :::code language="yml" source="snippets/workflow.yml" range="22-47":::
 
-The workflow composition is a `jobs/steps`. Steps are orchestrated such that they're sequential, communicative, and composable. With various GitHub Actions representing steps, each having inputs and outputs, workflows can be composed.
+The `jobs/steps` represents the *workflow composition*. Steps are orchestrated such that they're sequential, communicative, and composable. With various GitHub Actions representing steps, each having inputs and outputs, workflows can be composed.
 
 In the preceding steps, you can observe:
 
@@ -156,7 +158,12 @@ In the preceding steps, you can observe:
 
 ## Putting it all together
 
-// TODO:
+The [dotnet/samples](https://github.com/dotnet/samples) GitHub repository is home to many .NET sample source code projects, including the app in this tutorial.
+
+- The app is available in the [samples browser](/samples/browse/create-dotnet-github-action).
+- The generated [*CODE_METRICS.md*](https://github.com/dotnet/samples/blob/008f9e197fb5d0ebb3a41216ee5fdde01869368f/github-actions/DotNet.GitHubAction/CODE_METRICS.md) file is navigable.
+
+The *CODE_METRICS.md* file represents the hierarchy of the projects it analyzed. Each project has a top-level section, and an emoji the represents the overall status of the highest cyclomatic complexity for nested objects. As you navigate the file, each section exposes drill-down opportunities with a summary of each area - progressing from assembly to namespace, namespace to named-type, and each named-type has a table with links to line numbers and their overall ratings for code metrics.
 
 ## See also
 
@@ -167,6 +174,4 @@ In the preceding steps, you can observe:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [.NET GitHub Action sample code](https://github.com/dotnet/samples/tree/main/github-actions/DotNet.GitHubAction)
-
-<!-- Update link to point to the samples browser permalink -->
+> [.NET GitHub Action sample code](/samples/browse/create-dotnet-github-action)

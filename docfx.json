@@ -10,8 +10,7 @@
       {
         "files": [
           "**/*.md",
-          "**/*.yml",
-          "!**/snippets/*.yml"
+          "**/*.yml"
         ],
         "src": "docs",
         "dest": ".",
@@ -19,7 +18,8 @@
           "samples/**/*.*",
           "**/includes/**",
           "**/util/**",
-          "***/contributing.md"
+          "***/contributing.md",
+          "**/snippets/*.yml"
         ]
       },
       {

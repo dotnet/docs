@@ -16,10 +16,10 @@
         "dest": ".",
         "exclude": [
           "samples/**/*.*",
+          "**/snippets/**/*.*",
           "**/includes/**",
           "**/util/**",
-          "***/contributing.md",
-          "**/snippets/*.yml"
+          "***/contributing.md"
         ]
       },
       {

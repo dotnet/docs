@@ -174,6 +174,12 @@ The hierarchy progresses from:
   - Links to line numbers for fields, methods, and properties
   - Individual ratings for code metrics
 
+### In action
+
+The workflow specifies that `on` a `push` to the `main` branch, the action is triggered to run. When it runs, the **Actions** tab in GitHub will report the live log stream of its execution. Here is an example log from the `.NET code metrics` run:
+
+:::image type="content" source="media/action-log.png" lightbox="media/action-log.png" border="true" alt-text=".NET code metrics - GitHub Action log":::
+
 ## See also
 
 <!-- TODO: Add DevOps eBook link when published -->

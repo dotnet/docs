@@ -36,4 +36,4 @@ Notifies the profiler whenever an EventPipe provider is created.
 - [Profiling Interfaces](profiling-interfaces.md)
 - [ICorProfilerCallback10 Interface](icorprofilercallback10-interface.md)
 - [ICorProfilerInfo12 Interface](icorprofilerinfo12-interface.md)
-- [ICorProfilerInfo12.EventPipeAddProviderToSession Method](icorprofilerinfo12-eventpipeaddprovidertosession.md)
+- [ICorProfilerInfo12.EventPipeAddProviderToSession Method](icorprofilerinfo12-eventpipeaddprovidertosession-method.md)

@@ -82,4 +82,4 @@ Notifies the profiler whenever an EventPipe event has been delivered to the prof
 - [Profiling Interfaces](profiling-interfaces.md)
 - [ICorProfilerCallback10 Interface](icorprofilercallback10-interface.md)
 - [ICorProfilerInfo12 Interface](icorprofilerinfo12-interface.md)
-- [ICorProfilerInfo12.EventPipeStartSession Method](icorprofilerinfo12-eventpipestartsession.md)
+- [ICorProfilerInfo12.EventPipeStartSession Method](icorprofilerinfo12-eventpipestartsession-method.md)

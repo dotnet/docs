@@ -107,7 +107,7 @@ Notice the following things:
 
 1. There's a single job called `analyze` that runs on the `ubuntu-latest` hosted agent.
 1. This workflow defines a `strategy` with a `matrix` on the array of `language`. In this case, there's only `csharp`. If the repository contained other languages, you could just add them to this array. This causes the job to "fan out" and create an instance per value of the matrix.
-1. There are four steps, starting with `checkout`
+1. There are four steps, starting with `checkout`.
 1. The second step initializes the CodeQL scanner for the `language` this job is going to scan. CodeQL intercepts calls to the compiler to build a database of the code while the code is being built.
 1. The `Autobuild` step will attempt to automatically build the source code using common conventions. If this fails, you can replace this step with your own custom build steps.
 1. After building, the CodeQL analysis is performed, where suites of queries are run against the code database.
@@ -159,7 +159,7 @@ The CodeQL scan isn't reporting any security issues. That's expected with this b
 > You must be a repository owner in order to view Security alerts.
 
 > [!NOTE]
-> This demo repository is small and as such does not contain any major security or quality issues. However, "real world" repositories will more than likely have at least some issues!
+> This demo repository is small. As such, it doesn't contain any major security or quality issues. However, "Real world" repositories will likely have some issues.
 
 When the last CodeQL workflow run completes, you should see two issues in the **Security** tab:
 

@@ -22,7 +22,7 @@ System.IntPtr a = 1;
 
 The compiler provides operations and conversions for `nint` and `nuint` that are appropriate for integer types.
 
-## Run-time integer size
+## Run-time native integer size
 
 To get the size of a native-sized integer at run time, you can use `sizeof()`. However, the code must be compiled in an unsafe context. For example:
 
@@ -49,7 +49,7 @@ The compiler provides implicit and explicit conversions to other numeric types. 
 
 ## Literals
 
-There's no direct syntax for native-sized integer literals. You can use implicit or explicit casts of other integer values instead. For example:
+There's no direct syntax for native-sized integer literals. There's no suffix to indicate that a literal is a native-sized integer, such as `L` to indicate a `long`. You can use implicit or explicit casts of other integer values instead. For example:
 
 ```csharp
 nint a = 42

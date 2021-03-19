@@ -163,7 +163,7 @@ The CodeQL scan isn't reporting any security issues. That's expected with this b
 
 When the last CodeQL workflow run completes, you should see two issues in the **Security** tab:
 
-- ![View security alerts](./media/actions/codeql/security-alerts.jpg)
+![View security alerts](./media/actions/codeql/security-alerts.jpg)
 **Figure 7:** View security alerts.
 
 1. Select the first alert to open it.

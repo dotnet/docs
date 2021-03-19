@@ -58,7 +58,7 @@ With the defined action inputs class, focus on the *Program.cs* file.
 
 :::code language="csharp" source="snippets/DotNet.GitHubAction/Program.cs":::
 
-The mechanics in place demonstrate the boilerplate code required to use:
+The `Program` file is simplified for brevity, to explore the full sample source, see [*Program.cs*](https://github.com/dotnet/samples/blob/008f9e197fb5d0ebb3a41216ee5fdde01869368f/github-actions/DotNet.GitHubAction/DotNet.GitHubAction/Program.cs). The mechanics in place demonstrate the boilerplate code required to use:
 
 - [Top-level statements](../csharp/tutorials/exploration/top-level-statements.md)
 - [Generic Host](../core/extensions/generic-host.md)

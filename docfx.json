@@ -10,7 +10,8 @@
       {
         "files": [
           "**/*.md",
-          "**/*.yml"
+          "**/*.yml",
+          "!**/snippets/*.yml"
         ],
         "src": "docs",
         "dest": ".",

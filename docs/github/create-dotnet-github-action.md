@@ -7,8 +7,6 @@ ms.date: 03/19/2021
 ms.topic: tutorial
 ---
 
-<!-- https://docs.github.com/en/actions/creating-actions -->
-
 # Tutorial: Create a GitHub Action with .NET
 
 Learn how to create a .NET app that can be used as a GitHub Action. [GitHub Actions](https://github.com/features/actions) enable workflow automation and composition. With GitHub Actions, you can build, test, and deploy source code from GitHub. Additionally, actions expose the ability to programmatically interact with issues, create pull requests, perform code reviews, and manage branches. For more information on continuous integration with GitHub Actions, see [Building and testing .NET](https://docs.github.com/actions/guides/building-and-testing-net).
@@ -169,4 +167,6 @@ In the preceding steps, you can observe:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [.NET GitHub Action sample code](contribute-how-to-mvc-tutorial.md)
+> [.NET GitHub Action sample code](https://github.com/dotnet/samples/tree/main/github-actions/DotNet.GitHubAction)
+
+<!-- Update link to point to the samples browser permalink -->

@@ -12,7 +12,7 @@ ms.assetid: ef900f8f-71ca-4dde-9b8c-95ddb0d7d89c
 
 The CorFlags Conversion tool allows you to configure the CorFlags section of the header of a portable executable image.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use a [command-line shell for developers](/visualstudio/ide/reference/command-prompt-powershell).  
+ This tool is automatically installed with Visual Studio. To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).  
   
  At the command prompt, type the following:  
   

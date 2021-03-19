@@ -1,10 +1,10 @@
 ---
-title: CI/CD with .NET and GitHub Actions Overview
+title: Continuous integration and deployment with GitHub Actions Overview
 description: See how GitHub Actions is a great platform for .NET DevOps
 author: colindembovsky
 ms.date: 03/04/2021
 ---
-# .NET CI/CD with GitHub Actions
+# Continuous integration and deployment with GitHub Actions
 
 GitHub has long been the home for millions of open-source developers around the globe. Most developers associate source control with GitHub. However, GitHub is an evolving platform that can be used for more than just synchronizing Git repositories.
 
@@ -13,6 +13,9 @@ GitHub has long been the home for millions of open-source developers around the 
 GitHub Actions is a workflow engine that can be used to automate workflows for nearly all events that occur on the GitHub platform. Actions is a greate solution for Continuous Integration/Continuous Deployment (CI/CD) pipelines.
 
 In this section of articles, you'll learn how to create an Actions workflow to build, test and deploy a .NET web app to Azure Web Apps.
+
+> [!NOTE]
+> Before you begin, complete the **Publish the app's code to GitHub** and **Disconnect local Git deployment** sections of the [Continuous integration and deployment with Azure DevOps](cicd.md) section to publish your code to GitHub. Then proceed to the [Build](actions-build.md) article.
 
 In the [Build](actions-build.md) article, you'll create the initial workflow to build and test the .NET app. You'll:
 

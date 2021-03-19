@@ -49,6 +49,10 @@ namespace builtin_types
             Console.WriteLine("=========== Value tuples =========");
             ValueTuples.Examples();
             Console.WriteLine();
+
+            Console.WriteLine("====== Native integer types ======");
+            NativeIntegerTypes.Examples();
+            Console.WriteLine();
         }
     }
 }

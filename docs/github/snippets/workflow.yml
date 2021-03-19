@@ -15,7 +15,7 @@ on:
         default: 'Manual run'
 
 jobs:
-  build:
+  analysis:
 
     runs-on: ubuntu-latest
 
@@ -26,6 +26,7 @@ jobs:
       if: ${{ github.event_name == 'workflow_dispatch' }}
       run: |
         echo 'Reason: ${{ github.event.inputs.reason }}'
+
     - name: .NET code metrics
       id: dotnet-code-metrics
       uses: dotnet/samples/github-actions/DotNet.GitHubAction@main

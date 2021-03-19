@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using CommandLine;
 
 namespace DotNet.GitHubAction
@@ -10,8 +10,7 @@ namespace DotNet.GitHubAction
 
         public ActionInputs()
         {
-            var greetings = Environment.GetEnvironmentVariable("GREETINGS");
-            if (greetings is { Length: > 0 })
+            if (Environment.GetEnvironmentVariable("GREETINGS") is { Length: > 0 } greetings)
             {
                 Console.WriteLine(greetings);
             }

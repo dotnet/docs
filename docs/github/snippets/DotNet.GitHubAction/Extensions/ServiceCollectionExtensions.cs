@@ -1,6 +1,4 @@
-using DotNet.CodeAnalysis;
-using DotNet.GitHubAction.Analyzers;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 
 namespace DotNet.GitHubAction.Extensions
 {

@@ -163,7 +163,15 @@ The [dotnet/samples](https://github.com/dotnet/samples) GitHub repository is hom
 - The app is available in the [samples browser](/samples/browse/create-dotnet-github-action).
 - The generated [*CODE_METRICS.md*](https://github.com/dotnet/samples/blob/008f9e197fb5d0ebb3a41216ee5fdde01869368f/github-actions/DotNet.GitHubAction/CODE_METRICS.md) file is navigable.
 
-The *CODE_METRICS.md* file represents the hierarchy of the projects it analyzed. Each project has a top-level section, and an emoji the represents the overall status of the highest cyclomatic complexity for nested objects. As you navigate the file, each section exposes drill-down opportunities with a summary of each area - progressing from assembly to namespace, namespace to named-type, and each named-type has a table with links to line numbers and their overall ratings for code metrics.
+The *CODE_METRICS.md* file represents the hierarchy of the projects it analyzed. Each project has a top-level section, and an emoji the represents the overall status of the highest cyclomatic complexity for nested objects. As you navigate the file, each section exposes drill-down opportunities with a summary of each area. The markdown has collapsible section.
+
+It progresses from:
+
+- assembly to namespace
+- namespace to named-type
+- each named-type has a table
+  - links to line numbers for fields, methods, and properties
+  - overall ratings for code metrics
 
 ## See also
 

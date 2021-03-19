@@ -22,7 +22,7 @@ Magicians use this technique because every card is in a known location after eac
 
 For your purposes, it is a light hearted look at manipulating sequences of data. The application you'll build constructs a card deck and then performs a sequence of shuffles, writing the sequence out each time. You'll also compare the updated order to the original order.
 
-This tutorial has multiple steps. After each step, you can run the application and see the progress. You can also see the [completed sample](https://github.com/dotnet/samples/blob/master/csharp/getting-started/console-linq) in the dotnet/samples GitHub repository. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
+This tutorial has multiple steps. After each step, you can run the application and see the progress. You can also see the [completed sample](https://github.com/dotnet/samples/blob/main/csharp/getting-started/console-linq) in the dotnet/samples GitHub repository. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
 
 ## Prerequisites
 

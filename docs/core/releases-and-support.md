@@ -99,7 +99,7 @@ End of support refers to the date after which Microsoft no longer provides fixes
 
 When an operating system version goes out of support, we stop testing that version and providing support for that version. Users need to move forward to a supported operating system version to get support.
 
-For more information, see the [.NET OS Lifecycle Policy](https://github.com/dotnet/core/blob/master/os-lifecycle-policy.md).
+For more information, see the [.NET OS Lifecycle Policy](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
 ## Get support
 

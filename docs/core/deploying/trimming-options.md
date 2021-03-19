@@ -156,4 +156,4 @@ Several feature areas of the framework libraries come with linker directives tha
 
     Strip exception messages for `System.*` assemblies. When an exception is thrown from a `System.*` assembly, the message will be a simplified resource ID instead of the full message.
 
- These properties will cause the related code to be trimmed and will also disable features via the [runtimeconfig](../run-time-config/index.md) file. For more information about these properties, including the corresponding runtimeconfig options, see [feature switches](https://github.com/dotnet/runtime/blob/master/docs/workflow/trimming/feature-switches.md). Some SDKs may have default values for these properties.
+ These properties will cause the related code to be trimmed and will also disable features via the [runtimeconfig](../run-time-config/index.md) file. For more information about these properties, including the corresponding runtimeconfig options, see [feature switches](https://github.com/dotnet/runtime/blob/main/docs/workflow/trimming/feature-switches.md). Some SDKs may have default values for these properties.

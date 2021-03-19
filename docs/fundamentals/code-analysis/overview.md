@@ -47,7 +47,7 @@ The following rules are enabled, by default, in .NET 5.0.
 
 You can change the severity of these rules to disable them or elevate them to errors. You can also [enable more rules](#enable-additional-rules).
 
-- For a list of rules that are included with each .NET SDK version, see [Analyzer releases](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
+- For a list of rules that are included with each .NET SDK version, see [Analyzer releases](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
 - For a list of all the code quality rules, see [Code quality rules](quality-rules/index.md).
 
 ### Enable additional rules
@@ -60,7 +60,7 @@ You can change the severity of these rules to disable them or elevate them to er
 | `AllEnabledByDefault` | This is the most aggressive mode. All rules are enabled as build warnings. You can selectively [opt out of](configuration-options.md) individual rules to disable them.<br /><br />`<AnalysisMode>AllEnabledByDefault</AnalysisMode>` |
 | `Default` | The default mode, where a handful of rules are enabled as warnings, others are enabled only as Visual Studio IDE suggestions with corresponding code fixes, and the rest are disabled completely. You can selectively [opt into or out of](configuration-options.md) individual rules to disable them.<br /><br />`<AnalysisMode>Default</AnalysisMode>` |
 
-To find the default severity for each available rule and whether or not the rule is enabled in the default analysis mode, see the [full list of rules](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
+To find the default severity for each available rule and whether or not the rule is enabled in the default analysis mode, see the [full list of rules](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
 
 ### Treat warnings as errors
 

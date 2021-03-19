@@ -34,7 +34,7 @@ It provides about 20,000 APIs, including Windows-only and cross-platform APIs fr
 - Windows Runtime Caching
 - Windows Services
 
-For more information, see the [specification of the compatibility pack](https://github.com/dotnet/designs/blob/master/accepted/2018/compat-pack/compat-pack.md).
+For more information, see the [specification of the compatibility pack](https://github.com/dotnet/designs/blob/main/accepted/2018/compat-pack/compat-pack.md).
 
 ## Get started
 

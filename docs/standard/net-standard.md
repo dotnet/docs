@@ -55,9 +55,9 @@ The .NET Standard specification is a standardized set of APIs. The specification
 
 ### Official artifacts
 
-The official specification is a set of *.cs* files that define the APIs that are part of the standard. The [ref directory](https://github.com/dotnet/standard/tree/master/src/netstandard/ref) in the [dotnet/standard repository](https://github.com/dotnet/standard) defines the .NET Standard APIs.
+The official specification is a set of *.cs* files that define the APIs that are part of the standard. The [ref directory](https://github.com/dotnet/standard/tree/main/src/netstandard/ref) in the [dotnet/standard repository](https://github.com/dotnet/standard) defines the .NET Standard APIs.
 
-The [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) metapackage ([source](https://github.com/dotnet/standard/blob/master/src/netstandard/pkg/NETStandard.Library.dependencies.props)) describes the set of libraries that define (in part) one or more .NET Standard versions.
+The [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) metapackage ([source](https://github.com/dotnet/standard/blob/main/src/netstandard/pkg/NETStandard.Library.dependencies.props)) describes the set of libraries that define (in part) one or more .NET Standard versions.
 
 A given component, like `System.Runtime`, describes:
 
@@ -66,7 +66,7 @@ A given component, like `System.Runtime`, describes:
 
 Derivative artifacts are provided to enable more convenient reading and to enable certain developer scenarios (for example, using a compiler).
 
-- [API list in markdown](https://github.com/dotnet/standard/tree/master/docs/versions)
+- [API list in markdown](https://github.com/dotnet/standard/tree/main/docs/versions)
 - Reference assemblies, distributed as NuGet packages and referenced by the [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library/) metapackage.
 
 ### Package representation
@@ -160,7 +160,7 @@ Here are some problems with .NET Standard that help explain why .NET 5 is the be
 
 ## See also
 
-- [.NET Standard versions (source)](https://github.com/dotnet/standard/blob/master/docs/versions.md)
+- [.NET Standard versions (source)](https://github.com/dotnet/standard/blob/main/docs/versions.md)
 - [.NET Standard versions (interactive UI)](https://dotnet.microsoft.com/platform/dotnet-standard#versions)
 - [Build a .NET Standard library](../core/tutorials/library-with-visual-studio.md)
 - [Cross-platform targeting](./library-guidance/cross-platform-targeting.md)

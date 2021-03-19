@@ -167,13 +167,16 @@ The *CODE_METRICS.md* file represents the hierarchy of the projects it analyzed.
 
 It progresses from:
 
-- assembly to namespace
-- namespace to named-type
-- each named-type has a table
+- Project file to assembly
+- Assembly to namespace
+- Namespace to named-type
+- Each named-type has a table
   - links to line numbers for fields, methods, and properties
   - overall ratings for code metrics
 
 ## See also
+
+<!-- TODO: Add DevOps eBook link when published -->
 
 - [.NET Generic Host](../core/extensions/generic-host.md)
 - [Dependency injection in .NET](../core/extensions/dependency-injection.md)

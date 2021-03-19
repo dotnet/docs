@@ -44,7 +44,7 @@ Defines an EventPipe event on an existing provider. This provider can be used to
  [in] The ID of the event being defined.
 
  `keywords`
- [in] The keywords of the event being defined. 
+ [in] The keywords of the event being defined.
 
  `eventVersion`
  [in] The version of the event being defined.

@@ -1,1 +1,1 @@
-Available since .NET Core 5.0
+Available since .NET 5.0

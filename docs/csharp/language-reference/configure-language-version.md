@@ -83,7 +83,7 @@ The following table shows all current C# language versions. Your compiler may no
 [!INCLUDE [langversion-table](includes/langversion-table.md)]
 
 > [!TIP]
-> Open a [developer command-line shell](/visualstudio/ide/reference/command-prompt-powershell), and run the following command to see the listing of language versions available on your machine.
+> Open [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell), and run the following command to see the listing of language versions available on your machine.
 >
 > ```CMD
 > csc -langversion:?

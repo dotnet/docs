@@ -13,7 +13,7 @@ ms.assetid: e190e342-36ef-4651-a0b4-0e8c2c0281cb
 
 The Assembly Registration tool reads the metadata within an assembly and adds the necessary entries to the registry, which allows COM clients to create .NET Framework classes transparently. Once a class is registered, any COM client can use it as though the class were a COM class. The class is registered only once, when the assembly is installed. Instances of classes within the assembly cannot be created from COM until they are actually registered.
 
-To run the tool, use a [developer command-line shell](/visualstudio/ide/reference/command-prompt-powershell).
+To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
 
 At the command prompt, type the following:
 

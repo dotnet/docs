@@ -16,7 +16,7 @@ ms.assetid: f4f46f9e-8d08-4e66-a94b-0c69c9b0bbfa
 
 The PEVerify tool helps developers who generate Microsoft intermediate language (MSIL) (such as compiler writers and script engine developers) to determine whether their MSIL code and associated metadata meet type safety requirements. Some compilers generate verifiably type-safe code only if you avoid using certain language constructs. If you're using such a compiler, you may want to verify that you have not compromised the type safety of your code. You can run the PEVerify tool on your files to check the MSIL and metadata.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use a [command-line shell for developers](/visualstudio/ide/reference/command-prompt-powershell).
+ This tool is automatically installed with Visual Studio. To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
   
 ## Syntax  
   

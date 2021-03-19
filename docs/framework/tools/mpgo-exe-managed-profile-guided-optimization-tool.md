@@ -18,7 +18,7 @@ Profile-guided optimization improves application startup time, memory utilizatio
 
 When you encounter performance issues with startup time and working set size for Intermediate Language (IL) assemblies, we recommend that you first use Ngen.exe to eliminate just-in-time (JIT) compilation costs and to facilitate code sharing. If you need additional improvements, you can then use Mpgo.exe to further optimize your application. You can use the performance data from the un-optimized native image assemblies as a baseline to evaluate the performance gains. Using Mpgo.exe may result in faster cold startup times and a smaller working set size. Mpgo.exe adds information to IL assemblies that Ngen.exe uses to create optimized native image assemblies. For more information, see the entry [Improving Launch Performance for your Desktop Applications](https://devblogs.microsoft.com/dotnet/improving-launch-performance-for-your-desktop-applications/) in the .NET blog.
 
-This tool is automatically installed with Visual Studio. To run the tool, use a [developer command-line shell](/visualstudio/ide/reference/command-prompt-powershell) with administrator credentials.
+This tool is automatically installed with Visual Studio. To run the tool, use [Developer Command Prompt or Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell) with administrator credentials.
 
 Enter the following command at the command prompt:
 

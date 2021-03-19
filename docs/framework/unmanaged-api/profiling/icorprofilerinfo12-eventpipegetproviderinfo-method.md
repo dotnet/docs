@@ -25,7 +25,7 @@ Creates an EventPipe provider that the profiler can use to write events for othe
                       WCHAR      providerName[]);
 ```  
   
-## Parameters 
+## Parameters
 
  `provider`
  [in] The ID of the provider to provide the name for.

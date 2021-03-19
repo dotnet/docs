@@ -26,7 +26,7 @@ Writes an EventPipe event to any listeners who have enabled this event.
                 [in] LPCGUID            pRelatedActivityId);
 ```  
   
-## Parameters 
+## Parameters
 
  `event`
  [in] The ID of the event being written.

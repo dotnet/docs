@@ -25,7 +25,7 @@ Gets an environment variable from the process. On non-Windows platforms the runt
                              WCHAR szValue[]);
 ```  
   
-## Parameters 
+## Parameters
 
  `szName`
  [in] A pointer to a null terminated wide character string containing the name of the environment variable to get.
@@ -37,7 +37,7 @@ Gets an environment variable from the process. On non-Windows platforms the runt
  [out] A pointer to the total character length of `szValue`.
 
  `szValue`
- [out] A caller provided wide character buffer. When the function returns the buffer will contain the value of the environment variable. 
+ [out] A caller provided wide character buffer. When the function returns the buffer will contain the value of the environment variable.
 
 ## Requirements  
 

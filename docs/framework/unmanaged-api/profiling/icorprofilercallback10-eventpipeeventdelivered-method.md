@@ -32,14 +32,14 @@ Notifies the profiler whenever an EventPipe event has been delivered to the prof
         [in, length_is(numStackFrames)] UINT_PTR stackFrames[]); 
 ```  
   
-## Parameters 
+## Parameters
 
  `provider`
  [in] The provider that this event originated from.
 
  `eventId`
  [in] The ID of the event being delivered.
- 
+
  `eventVersion`
  [in] The version of the event being delivered.
 
@@ -59,7 +59,7 @@ Notifies the profiler whenever an EventPipe event has been delivered to the prof
  [in] A pointer to the GUID that represents the event's activity ID, or NULL.
 
  `pRelatedActivityId`
- [in] A pointer to the GUID that represents the event's related activity ID, or NULL. 
+ [in] A pointer to the GUID that represents the event's related activity ID, or NULL.
 
  `eventThread`
  [in] The ID of the thread the event occurred on.
@@ -69,7 +69,6 @@ Notifies the profiler whenever an EventPipe event has been delivered to the prof
 
  `stackFrames`
  [in] An array of code addresses representing the managed callstack of the event.
-
 
 ## Requirements  
 

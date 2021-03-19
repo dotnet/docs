@@ -25,7 +25,7 @@ Starts an EventPipe session. The session can be used by the profiler to write ev
         [out] EVENTPIPE_SESSION*                pSession);
 ```  
   
-## Parameters 
+## Parameters
 
  `cProviderConfigs`
  [in] The number of providers in `pProviderConfigs`.

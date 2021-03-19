@@ -20,7 +20,7 @@ Notifies the profiler whenever an EventPipe provider is created.
     HRESULT EventPipeProviderCreated([in] EVENTPIPE_PROVIDER provider); 
 ```  
   
-## Parameters 
+## Parameters
 
  `provider`
  [in] The provider that was created.

@@ -21,11 +21,11 @@ Stops an EventPipe session, preventing any future events from being written to t
         [in] EVENTPIPE_SESSION session);
 ```  
   
-## Parameters 
- 
+## Parameters
+
  `session`
  [in] The ID of the session to stop.
- 
+
 ## Requirements  
 
 **Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).

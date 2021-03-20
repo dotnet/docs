@@ -27,7 +27,7 @@ CodeQL [supports some of the most popular programming languages and compilers](h
 
 CodeQL is a powerful language and security professionals can create custom queries using CodeQL. However, teams can benefit immensely from the large open-source collection of queries that the security community has created without having to write any custom CodeQL.
 
-In this article, you'll set up a GitHub Workflow that will scan code in your repository using CodeQL. You will:
+In this article, you'll set up a GitHub workflow that will scan code in your repository using CodeQL. You will:
 
 > [!div class="checklist"]
 

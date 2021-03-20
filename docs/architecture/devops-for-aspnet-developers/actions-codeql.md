@@ -103,7 +103,7 @@ Notice the following things:
 1. This workflow triggers on `push` and `pull_request` events to the `main` branch. There's also a `cron` trigger. The `cron` trigger lets you define a schedule for triggering this workflow and is randomly generated for you. In this case, this workflow will run at 14:40 UTC every Saturday.
 
     > [!TIP]
-    > If you edit the workflow file and mouse-over the cron expression, a tooltip will show you the English text for the cron expression.
+    > If you edit the workflow file and hover over the cron expression, a tooltip will show you the English text for the cron expression.
 
 1. There's a single job called `analyze` that runs on the `ubuntu-latest` hosted agent.
 1. This workflow defines a `strategy` with a `matrix` on the array of `language`. In this case, there's only `csharp`. If the repository contained other languages, you could just add them to this array. This causes the job to "fan out" and create an instance per value of the matrix.

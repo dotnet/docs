@@ -138,7 +138,7 @@ The CodeQL scan isn't reporting any security issues. That's expected with this b
     ```
 
     ![Create the CodeQL config file](./media/actions/codeql/codeql-config.jpg)
-    **Figure 6:** Create the CodeQL config file.
+    **Figure 6:** Create the CodeQL configuration file.
 
 1. Select **Commit to master** at bottom of the editor to commit the file.
 1. You must now edit the CodeQL workflow to use the new configuration file. Navigate to `.github/workflows/codeql-analysis.yml` and click the pencil icon. Add a new property to the `with` section as shown below:

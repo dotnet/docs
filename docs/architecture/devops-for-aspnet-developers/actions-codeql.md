@@ -40,7 +40,7 @@ In this article, you'll set up a GitHub workflow that will scan code in your rep
 
 ## Create the code scanning workflow
 
-You can use a starter workflow for code scanning by navigating to the Security tab of your repository.
+You can use a starter workflow for code scanning by navigating to the **Security** tab of your repository.
 
 1. Navigate to your GitHub repository and select the **Security** > **Code Scanning Alerts**. The top recommended workflow should be CodeQL Analysis. Select **Set up this workflow**.
 

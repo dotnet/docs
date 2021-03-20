@@ -29,6 +29,8 @@ api_type:
 
 ## See also
 
+- [EventPipe Overview](../../../core/diagnostics/eventpipe)
+- [Well Known EventProviders](../../../core/diagnostics/well-known-event-providers)
 - [Profiling Interfaces](profiling-interfaces.md)
 - [ICorProfilerInfo12 Interface](ICorProfilerInfo12-interface.md)
 - [ICorProfilerInfo12.EventPipeStartSession method](ICorProfilerInfo12-eventpipestartsession-method.md)

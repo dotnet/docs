@@ -75,6 +75,8 @@ Defines an EventPipe event on an existing provider. This provider can be used to
   
 ## See also
 
+- [EventPipe Overview](../../../core/diagnostics/eventpipe)
+- [Well Known EventProviders](../../../core/diagnostics/well-known-event-providers)
 - [Profiling Interfaces](profiling-interfaces.md)
 - [ICorProfilerCallback10 Interface](icorprofilercallback10-interface.md)
 - [ICorProfilerInfo12 Interface](icorprofilerinfo12-interface.md)

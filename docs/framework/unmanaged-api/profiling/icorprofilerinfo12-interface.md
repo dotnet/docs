@@ -34,5 +34,7 @@ api_type:
 
 ## See also
 
+- [EventPipe Overview](../../../core/diagnostics/eventpipe)
+- [Well Known EventProviders](../../../core/diagnostics/well-known-event-providers)
 - [Profiling Interfaces](profiling-interfaces.md)
 - [ICorProfilerCallback10 Interface](icorprofilercallback10-interface.md)

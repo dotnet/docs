@@ -31,7 +31,7 @@ In this article, you'll set up a GitHub workflow that will scan code in your rep
 
 > [!div class="checklist"]
 
-> * Create a Code Scanning Action.
+> * Create a code scanning action.
 > * Edit the workflow file to include custom scan settings.
 > * See scanning results.
 

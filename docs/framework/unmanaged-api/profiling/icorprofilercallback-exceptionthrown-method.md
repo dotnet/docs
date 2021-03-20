@@ -33,9 +33,8 @@ HRESULT ExceptionThrown(
   
 ## Parameters
 
-- `thrownObjectId`
-
-  \[in] The ID of the object that caused the exception to be thrown.
+`thrownObjectId`
+[in] The ID of the object that caused the exception to be thrown.
   
 ## Remarks  
 

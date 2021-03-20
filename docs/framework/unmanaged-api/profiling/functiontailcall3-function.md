@@ -28,9 +28,8 @@ void __stdcall FunctionTailcall3 (FunctionOrRemappedID functionOrRemappedID);
   
 ## Parameters
 
-- `functionOrRemappedID`
-
-  \[in] The identifier of the currently executing function that is about to make a tail call.
+`functionOrRemappedID`
+[in] The identifier of the currently executing function that is about to make a tail call.
 
 ## Remarks  
 

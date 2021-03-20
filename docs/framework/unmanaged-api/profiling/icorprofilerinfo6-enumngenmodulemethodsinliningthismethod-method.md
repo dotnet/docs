@@ -22,19 +22,19 @@ HRESULT EnumNgenModuleMethodsInliningThisMethod(
 
 ## Parameters
 
-`inlinersModuleId`\
+`inlinersModuleId`
 [in] The identifier of an NGen module.
 
-`inlineeModuleId`\
+`inlineeModuleId`
 [in] The identifier of a module that defines `inlineeMethodId`. See the Remarks section for more information.
 
-`inlineeMethodId`\
+`inlineeMethodId`
 [in] The identifier of an inlined method. See the Remarks section for more information.
 
-`incompleteData`\
+`incompleteData`
 [out] A flag that indicates whether `ppEnum` contains all methods inlining a given method.  See the Remarks section for more information.
 
-`ppEnum`\
+`ppEnum`
 [out] A pointer to the address of an enumerator
 
 ## Remarks

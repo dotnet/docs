@@ -48,7 +48,7 @@ This sample demonstrates the syntax and features for C# indexers. The [completed
 
 **[Delegates and Events](../csharp/delegates-overview.md)**
 
-This sample demonstrates the syntax and features for C# delegates and events. The [completed sample](https://github.com/dotnet/samples/tree/master/csharp/delegates-and-events) is available in the dotnet/samples repository on GitHub. A [second sample](https://github.com/dotnet/samples/tree/main/csharp/events) focused on events is also in the same repository.
+This sample demonstrates the syntax and features for C# delegates and events. The [completed sample](https://github.com/dotnet/samples/tree/main/csharp/delegates-and-events) is available in the dotnet/samples repository on GitHub. A [second sample](https://github.com/dotnet/samples/tree/main/csharp/events) focused on events is also in the same repository.
 
 **[Expression Trees](../csharp/expression-trees.md)**
 

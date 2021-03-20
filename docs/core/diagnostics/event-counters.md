@@ -154,7 +154,7 @@ _requestRateCounter = new IncrementingPollingCounter("request-rate", this, () =>
 There are two primary ways of consuming EventCounters, either in-proc, or out-of-proc. The consumption of EventCounters can be distinguished into three layers of various consuming technologies.
 
 - Transporting events in a raw stream via ETW or EventPipe:
-  - ETW APIs come with the Windows OS, and EventPipe is accessible as a [.NET API](https://github.com/dotnet/diagnostics/blob/master/documentation/design-docs/diagnostics-client-library.md#1-attaching-to-a-process-and-dumping-out-all-the-runtime-gc-events-in-real-time-to-the-console), or the diagnostic [IPC protocol](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/ipc-protocol.md).
+  - ETW APIs come with the Windows OS, and EventPipe is accessible as a [.NET API](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/diagnostics-client-library.md#1-attaching-to-a-process-and-dumping-out-all-the-runtime-gc-events-in-real-time-to-the-console), or the diagnostic [IPC protocol](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/ipc-protocol.md).
 - Decoding the binary event stream into events:
   - The [TraceEvent library](https://www.nuget.org/packages/Microsoft.Diagnostics.Tracing.TraceEvent) handles both ETW and EventPipe stream formats.
 - Command-line and GUI tools:

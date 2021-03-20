@@ -87,7 +87,7 @@ Starting with .NET Core 2.2, you can use a startup hook to inject code prior to 
 
 We expect hosting providers to define custom configuration and policy, including settings that potentially influence the load behavior of the main entry point, such as the <xref:System.Runtime.Loader.AssemblyLoadContext?displayProperty=nameWithType> behavior. The hook can be used to set up tracing or telemetry injection, to set up callbacks for handling, or to define other environment-dependent behavior. The hook is separate from the entry point, so that user code doesn't need to be modified.
 
-See [Host startup hook](https://github.com/dotnet/core-setup/blob/main/Documentation/design-docs/host-startup-hook.md) for more information.
+See [Host startup hook](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/host-startup-hook.md) for more information.
 
 ## See also
 

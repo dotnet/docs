@@ -55,8 +55,8 @@ You can use a starter workflow for code scanning by navigating to the **Security
 
 1. Select the **Actions** tab. In the left-hand tree, you'll see a **CodeQL** node. Click on this node to filter for CodeQL workflow runs.
 
-    ![View the CodeQL Workflow runs](./media/actions/codeql/codeql-run.jpg)
-    **Figure 3:** View the CodeQL Workflow runs.
+    ![View the CodeQL workflow runs](./media/actions/codeql/codeql-run.jpg)
+    **Figure 3:** View the CodeQL workflow runs.
 
 Take a look at the workflow file while it runs. If you remove the comments from the file, you'll see the following YAML:
 

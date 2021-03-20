@@ -156,10 +156,9 @@ The CodeQL scan isn't reporting any security issues. That's expected with this b
 ## Review the security alerts
 
 > [!IMPORTANT]
-> You must be a repository owner in order to view Security alerts.
-
-> [!NOTE]
-> This demo repository is small. As such, it doesn't contain any major security or quality issues. However, "Real world" repositories will likely have some issues.
+> You must be a repository owner to view security alerts.
+>
+> This sample repository is small. As such, it doesn't contain any major security or quality issues. However, "real world" repositories will likely have some issues.
 
 When the last CodeQL workflow run completes, you should see two issues in the **Security** tab:
 

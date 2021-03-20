@@ -31,13 +31,11 @@ HRESULT ExceptionCatcherEnter(
   
 ## Parameters
 
-- `functionId`
-
-  \[in] The identifier of the function containing the `catch` block.
+`functionId`
+[in] The identifier of the function containing the `catch` block.
   
-- `objectId`
-
-  \[in] The identifier of the exception being handled.
+`objectId`
+[in] The identifier of the exception being handled.
 
 ## Remarks  
 

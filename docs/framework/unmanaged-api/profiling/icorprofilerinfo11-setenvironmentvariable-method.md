@@ -24,11 +24,11 @@ Sets an environment variable in the process. On non-Windows platforms the runtim
   
 ## Parameters
 
- `szName`
- [in] A pointer to a null terminated wide character string containing the name of the environment variable to set.
+`szName`
+[in] A pointer to a null terminated wide character string containing the name of the environment variable to set.
 
- `szValue`
- [in] A pointer to a null terminated wide character string containing the value of the environment variable to set.
+`szValue`
+[in] A pointer to a null terminated wide character string containing the value of the environment variable to set.
 
 ## Requirements  
 

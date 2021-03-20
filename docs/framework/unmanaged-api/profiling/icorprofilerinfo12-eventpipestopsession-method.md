@@ -23,8 +23,8 @@ Stops an EventPipe session, preventing any future events from being written to t
   
 ## Parameters
 
- `session`
- [in] The ID of the session to stop.
+`session`
+[in] The ID of the session to stop.
 
 ## Requirements  
 

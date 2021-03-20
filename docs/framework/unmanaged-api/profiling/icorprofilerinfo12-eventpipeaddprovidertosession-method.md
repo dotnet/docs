@@ -24,11 +24,11 @@ Adds a provider to an existing EventPipe session.
   
 ## Parameters
 
- `session`
- [in] The ID of the session to add the provider to.
+`session`
+[in] The ID of the session to add the provider to.
 
- `providerConfig`
- [in] A `COR_PRF_EVENTPIPE_PROVIDER_CONFIG` describing the provider to add to the session.
+`providerConfig`
+[in] A `COR_PRF_EVENTPIPE_PROVIDER_CONFIG` describing the provider to add to the session.
 
 ## Requirements  
 

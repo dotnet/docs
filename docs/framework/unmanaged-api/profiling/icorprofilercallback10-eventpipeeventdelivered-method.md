@@ -34,41 +34,41 @@ Notifies the profiler whenever an EventPipe event has been delivered to the prof
   
 ## Parameters
 
- `provider`
- [in] The provider that this event originated from.
+`provider`
+[in] The provider that this event originated from.
 
- `eventId`
- [in] The ID of the event being delivered.
+`eventId`
+[in] The ID of the event being delivered.
 
- `eventVersion`
- [in] The version of the event being delivered.
+`eventVersion`
+[in] The version of the event being delivered.
 
- `cbMetadataBlob`
- [in] The length, in bytes, of `metadataBlob`.
+`cbMetadataBlob`
+[in] The length, in bytes, of `metadataBlob`.
 
- `metadataBlob`
- [in] A pointer to the metadata blob for the event.
+`metadataBlob`
+[in] A pointer to the metadata blob for the event.
 
- `cbEventData`
- [in] The length, in bytes, of `eventData`.
+`cbEventData`
+[in] The length, in bytes, of `eventData`.
 
- `eventData`
- [in] The payload for the event.
+`eventData`
+[in] The payload for the event.
 
- `pActivityId`
- [in] A pointer to the GUID that represents the event's activity ID, or NULL.
+`pActivityId`
+[in] A pointer to the GUID that represents the event's activity ID, or NULL.
 
- `pRelatedActivityId`
- [in] A pointer to the GUID that represents the event's related activity ID, or NULL.
+`pRelatedActivityId`
+[in] A pointer to the GUID that represents the event's related activity ID, or NULL.
 
- `eventThread`
- [in] The ID of the thread the event occurred on.
+`eventThread`
+[in] The ID of the thread the event occurred on.
 
- `numStackFrames`
- [in] The number of elements in the `stackFrames` array.
+`numStackFrames`
+[in] The number of elements in the `stackFrames` array.
 
- `stackFrames`
- [in] An array of code addresses representing the managed callstack of the event.
+`stackFrames`
+[in] An array of code addresses representing the managed callstack of the event.
 
 ## Requirements  
 

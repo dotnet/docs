@@ -22,8 +22,8 @@ Notifies the profiler whenever an EventPipe provider is created.
   
 ## Parameters
 
- `provider`
- [in] The provider that was created.
+`provider`
+[in] The provider that was created.
 
 ## Requirements  
 

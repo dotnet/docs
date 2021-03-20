@@ -27,17 +27,17 @@ Starts an EventPipe session. The session can be used by the profiler to write ev
   
 ## Parameters
 
- `cProviderConfigs`
- [in] The number of providers in `pProviderConfigs`.
+`cProviderConfigs`
+[in] The number of providers in `pProviderConfigs`.
 
- `pProviderConfigs`
- [in] An array of `COR_PRF_EVENTPIPE_PROVIDER_CONFIG` used to specify what providers should be enabled for the session.
+`pProviderConfigs`
+[in] An array of `COR_PRF_EVENTPIPE_PROVIDER_CONFIG` used to specify what providers should be enabled for the session.
 
- `requestRundown`
- [in] A `BOOL` indicating whether to emit rundown events when the session is closed.
+`requestRundown`
+[in] A `BOOL` indicating whether to emit rundown events when the session is closed.
 
- `pSession`
- [out] A caller provided pointer that will be filled with the session ID when the method returns.
+`pSession`
+[out] A caller provided pointer that will be filled with the session ID when the method returns.
 
 ## Requirements  
 

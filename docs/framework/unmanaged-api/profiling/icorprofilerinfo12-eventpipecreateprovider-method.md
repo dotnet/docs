@@ -24,11 +24,11 @@ Creates an EventPipe provider that the profiler can use to write events for othe
   
 ## Parameters
 
- `providerName`
- [in] The name of the provider to create.
+`providerName`
+[in] The name of the provider to create.
 
- `pProvider`
- [out] A caller provided pointer that will be filled with the ID of the provider when the function returns.
+`pProvider`
+[out] A caller provided pointer that will be filled with the ID of the provider when the function returns.
 
 ## Requirements  
 

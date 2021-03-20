@@ -27,17 +27,17 @@ Gets an environment variable from the process. On non-Windows platforms the runt
   
 ## Parameters
 
- `szName`
- [in] A pointer to a null terminated wide character string containing the name of the environment variable to get.
+`szName`
+[in] A pointer to a null terminated wide character string containing the name of the environment variable to get.
 
- `cchValue`
- [in] The length, in characters, of `szValue`.
+`cchValue`
+[in] The length, in characters, of `szValue`.
 
- `pcchValue`
- [out] A pointer to the total character length of `szValue`.
+`pcchValue`
+[out] A pointer to the total character length of `szValue`.
 
- `szValue`
- [out] A caller provided wide character buffer. When the function returns the buffer will contain the value of the environment variable.
+`szValue`
+[out] A caller provided wide character buffer. When the function returns the buffer will contain the value of the environment variable.
 
 ## Requirements  
 

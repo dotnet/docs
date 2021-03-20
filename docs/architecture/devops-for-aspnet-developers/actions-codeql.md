@@ -123,7 +123,7 @@ The CodeQL scan isn't reporting any security issues. That's expected with this b
 > [!INFORMATION]
 > For other CodeQL configuration options, see [this article](https://docs.github.com/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-codeql-code-scanning-in-your-ci-system).
 
-1. Navigate to the `.github` folder in the **Code** tab and select **Add File**
+1. Navigate to the `.github` folder in the **Code** tab and select **Add File**:
 
     ![Create a new file](./media/actions/codeql/create-new-file.jpg)
     **Figure 5:** Create a new file.

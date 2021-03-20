@@ -19,6 +19,8 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
 |[get](./get.md)|Defines an accessor method for a property or an indexer.|  
 |[global](../operators/namespace-alias-qualifier.md)|Alias of the global namespace, which is otherwise unnamed.|  
 |[init](./init.md)|Defines an accessor method for a property or an indexer.|  
+|[nint](../builtin-types/nint-nuint.md)|Defines a native-sized integer data type.|  
+|[nuint](../builtin-types/nint-nuint.md)|Defines a native-sized unsigned integer data type.|  
 |[partial](./partial-type.md)|Defines partial classes, structs, and interfaces throughout the same compilation unit.|  
 |[remove](./remove.md)|Defines a custom event accessor that is invoked when client code unsubscribes from the event.|  
 |[set](./set.md)|Defines an accessor method for a property or an indexer.|  

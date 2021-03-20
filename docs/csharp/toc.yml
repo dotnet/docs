@@ -932,7 +932,9 @@ items:
         displayName: "value types, simple types"
       - name: Integral numeric types
         href: language-reference/builtin-types/integral-numeric-types.md
-        displayName: sbyte, byte, short, ushort, int, uint, long, ulong, integer, literal
+        displayName: sbyte, byte, short, ushort, int, uint, nint, nuint, long, ulong, integer, literal
+      - name: nint and nuint native integer types
+        href: language-reference/builtin-types/nint-nuint.md
       - name: Floating-point numeric types
         href: language-reference/builtin-types/floating-point-numeric-types.md
         displayName: float, decimal, double, rational, real, literal

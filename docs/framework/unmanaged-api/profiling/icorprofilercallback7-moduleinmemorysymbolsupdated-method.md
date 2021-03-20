@@ -27,8 +27,8 @@ HRESULT ModuleInMemorySymbolsUpdated(
   
 ## Parameters  
 
- [in] `moduleId`  
- The identifier of the in-memory module whose symbol stream is updated.  
+ `moduleId`  
+ [in] The identifier of the in-memory module whose symbol stream is updated.  
   
 ## Remarks  
 

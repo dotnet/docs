@@ -34,7 +34,7 @@ Portable PDBs can be read on any operating systems and is the recommended symbol
 
 * There may be older versions of profilers that do not support portable PDBs.
 
-To use portable PDBs on tools that do not support them, you can try using Pdb2Pdb[https://github.com/dotnet/symreader-converter#pdb2pdb] which converts between Portable PDBs and Windows PDBs.
+To use portable PDBs on tools that do not support them, you can try using [Pdb2Pdb](https://github.com/dotnet/symreader-converter#pdb2pdb) which converts between Portable PDBs and Windows PDBs.
 
 ### Support for Windows PDBs
 

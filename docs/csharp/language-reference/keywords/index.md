@@ -1,7 +1,7 @@
 ---
 description: "C# Keywords"
 title: "C# Keywords"
-ms.date: 03/07/2017
+ms.date: 03/17/2021
 f1_keywords: 
   - "cs.keywords"
 helpviewer_keywords:
@@ -10,7 +10,6 @@ helpviewer_keywords:
   - "Visual C#, keywords"
   - "@ keyword"
 ms.custom: "updateeachrelease"
-ms.assetid: e929b0f2-4b92-4d37-8060-23d323b098ad
 ---
 # C# Keywords
 
@@ -52,13 +51,14 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
 |[descending](descending.md)|[dynamic](../builtin-types/reference-types.md)|[equals](equals.md)|
 |[from](from-clause.md)|[get](get.md)|[global](../operators/namespace-alias-qualifier.md)|
 |[group](group-clause.md)|[into](into.md)|[join](join-clause.md)|
-|[let](let-clause.md)|[nameof](../operators/nameof.md)|[notnull](../../programming-guide/generics/constraints-on-type-parameters.md#notnull-constraint)|
-|[on](on.md)|[orderby](orderby-clause.md)|[partial (type)](partial-type.md)|
-|[partial (method)](partial-method.md)|[remove](remove.md)|[select](select-clause.md)|
-|[set](set.md)|[unmanaged (generic type constraint)](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint)|[value](value.md)|
-|[var](var.md)|[when (filter condition)](when.md)|[where (generic type constraint)](where-generic-type-constraint.md)|
-|[where (query clause)](where-clause.md)|[with](../operators/with-expression.md)|[yield](yield.md)|
-  
+|[let](let-clause.md)|[nameof](../operators/nameof.md)|[nint](../builtin-types/nint-nuint.md)|
+|[notnull](../../programming-guide/generics/constraints-on-type-parameters.md#notnull-constraint)|[nuint](../builtin-types/nint-nuint.md)|[on](on.md)|
+|[orderby](orderby-clause.md)|[partial (type)](partial-type.md)|[partial (method)](partial-method.md)|
+|[remove](remove.md)|[select](select-clause.md)|[set](set.md)|
+|[unmanaged (generic type constraint)](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint)|[value](value.md)|[var](var.md)|
+|[when (filter condition)](when.md)|[where (generic type constraint)](where-generic-type-constraint.md)|[where (query clause)](where-clause.md)|
+|[with](../operators/with-expression.md)|[yield](yield.md)||
+
 ## See also
 
 - [C# reference](../index.md)

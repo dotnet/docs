@@ -64,6 +64,12 @@ This section describes the unmanaged enumerations that the profiling API uses.
   
  [COR_PRF_TRANSITION_REASON Enumeration](cor-prf-transition-reason-enumeration.md)  
  Indicates the reason for a transition from managed to unmanaged code, or vice versa.  
+
+ [COR_PRF_EVENTPIPE_PARAM_TYPE](cor-prf-eventpipe-param-type-enumeration.md)
+ Indicates the type of an EventPipe parameter.
+
+ [COR_PRF_EVENTPIPE_LEVEL](cor-prf-eventpipe-level-enumeration.md)
+ Indivates the level of an EventPipe event.
   
 ## Related Sections  
 

@@ -121,7 +121,7 @@ Notice the following things:
 The CodeQL scan isn't reporting any security issues. That's expected with this basic sample. CodeQL can also scan for _quality_ issues. The current workflow is using the default `security-extended` suite. You can add quality scanning in by adding a configuration file to customize the scanning suites. In this step, you'll configure CodeQL to use the `security-and-quality` suites.
 
 > [!INFORMATION]
-> For other CodeQL config options, see [this article](https://docs.github.com/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-codeql-code-scanning-in-your-ci-system)
+> For other CodeQL configuration options, see [this article](https://docs.github.com/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-codeql-code-scanning-in-your-ci-system).
 
 1. Navigate to the `.github` folder in the **Code** tab and select **Add File**
 

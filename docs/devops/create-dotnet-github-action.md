@@ -23,14 +23,14 @@ In this tutorial, you learn how to:
 
 - A [GitHub account](https://github.com/join)
 - The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
-- A .NET  integrated development environment (IDE)
+- A .NET integrated development environment (IDE)
   - Feel free to use the [Visual Studio IDE](https://visualstudio.microsoft.com)
 
 ## The intent of the app
 
 The app in this tutorial performs code metric analysis by:
 
-- Scanning and discovering **.csproj* and **.vbproj* project files.
+- Scanning and discovering *\*.csproj* and *\*.vbproj* project files.
 - Analyzing the discovered source code within these projects for:
 
   - Cyclomatic complexity
@@ -156,7 +156,7 @@ In the preceding steps, you can observe:
 > [!IMPORTANT]
 > GitHub allows for the creation of [encrypted secrets](https://docs.github.com/actions/reference/encrypted-secrets). Secrets can be used within workflow composition, using the `${{ secrets.SECRET_NAME }}` syntax. In the context of a GitHub Action, there is a GitHub token that is automatically populated by default: `${{ secrets.GITHUB_TOKEN }}`. For more information, see [Context and expression syntax for GitHub Actions](https://docs.github.com/actions/reference/context-and-expression-syntax-for-github-actions).
 
-## Putting it all together
+## Put it all together
 
 The [dotnet/samples](https://github.com/dotnet/samples) GitHub repository is home to many .NET sample source code projects, including the app in this tutorial.
 

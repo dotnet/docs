@@ -112,7 +112,7 @@ The following options are available when `dotnet` runs an application. For examp
 
 - **`--additional-deps <PATH>`**
 
-  Path to an additional *.deps.json* file. A *deps.json* file contains a list of dependencies, compilation dependencies, and version information used to address assembly conflicts. For more information, see [Runtime Configuration Files](https://github.com/dotnet/cli/blob/main/Documentation/specs/runtime-configuration-file.md) on GitHub.
+  Path to an additional *.deps.json* file. A *deps.json* file contains a list of dependencies, compilation dependencies, and version information used to address assembly conflicts. For more information, see [Runtime Configuration Files](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md) on GitHub.
 
 - **`--depsfile <PATH_TO_DEPSFILE>`**
 
@@ -275,7 +275,7 @@ dotnet myapp.dll
 
 - `DOTNET_MULTILEVEL_LOOKUP`
 
-  Specifies whether .NET runtime, shared framework, or SDK are resolved from the global location. If not set, it defaults to 1 (logical `true`). Set to 0 (logical `false`) to not resolve from the global location and have isolated .NET installations. For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/main/Documentation/design-docs/multilevel-sharedfx-lookup.md).
+  Specifies whether .NET runtime, shared framework, or SDK are resolved from the global location. If not set, it defaults to 1 (logical `true`). Set to 0 (logical `false`) to not resolve from the global location and have isolated .NET installations. For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
 
 - `DOTNET_ROLL_FORWARD` **Available starting with .NET Core 3.x.**
 
@@ -339,5 +339,5 @@ dotnet myapp.dll
 
 ## See also
 
-- [Runtime Configuration Files](https://github.com/dotnet/cli/blob/main/Documentation/specs/runtime-configuration-file.md)
+- [Runtime Configuration Files](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md)
 - [.NET run-time configuration settings](../run-time-config/index.md)

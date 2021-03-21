@@ -1,7 +1,7 @@
 ---
 title: "Patterns - C# reference"
 description: "Learn about the patterns supported by C# switch and is expressions and C# switch statement - C# reference"
-ms.date: 03/16/2021
+ms.date: 03/22/2021
 helpviewer_keywords: 
   - "pattern matching [C#]"
 ---
@@ -9,7 +9,7 @@ helpviewer_keywords:
 
 Intro.
 
-[Logical](#pattern-combinators), [property](#property-pattern), and positional patterns are recursive patterns. That is, they can contain other patterns.
+[Logical](#pattern-combinators), [property](#property-pattern), and [positional](#positional-pattern) patterns are recursive patterns. That is, they can contain other patterns.
 
 ## Declaration and type patterns
 
@@ -124,11 +124,39 @@ You can also add a runtime type check and a variable declaration to a property p
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="WithTypeCheck":::
 
-A property pattern is an example of a recursive pattern. That is, you can use any pattern as a nested pattern. Use a property pattern to match parts of data against nested patterns, as the following example shows:
+A property pattern is a recursive pattern. That is, you can use any pattern as a nested pattern. Use a property pattern to match parts of data against nested patterns, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="RecursivePropertyPattern":::
 
 The preceding example uses two features available in C# 9.0 and later: `or` [pattern combinator](#pattern-combinators) and record types.
+
+## Positional pattern
+
+Beginning with C# 8.0, you use a *positional pattern* to deconstruct an expression result and match the resulting values against the corresponding nested patterns, as the following example shows:
+
+:::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="BasicExample":::
+
+At the preceding example, the type of an expression contains the [Deconstruct](../../deconstruct.md) method, which is used to deconstruct an expression result. You can also match expressions of [tuple types](../builtin-types/value-tuples.md) against positional patterns. In that way, you can match multiple inputs against various patterns, as the following example shows:
+
+:::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="MatchTuple":::
+
+The preceding example uses [relational patterns](#relational-patterns) and [pattern combinators](#pattern-combinators), which are available in C# 9.0 and later.
+
+You can also add a runtime type check and a variable declaration to a positional pattern, as the following example shows:
+
+:::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="WithTypeCheck":::
+
+The preceding example uses positional records, which implicitly provide the `Deconstruct` method.
+
+You can also use a [property pattern](#property-pattern) within a positional pattern, as the following example shows:
+
+:::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="WithPropertyPattern":::
+
+At last, you can combine two preceding usages in one pattern, as the following example shows:
+
+:::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="CompletePositionalPattern":::
+
+A positional pattern is a recursive pattern. That is, you can use any pattern as a nested pattern.
 
 ## C# language specification
 

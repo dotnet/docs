@@ -29,6 +29,10 @@ namespace Patterns
             Console.WriteLine("--- Property pattern ------------------------");
             PropertyPattern.Examples();
             Console.WriteLine();
+
+            Console.WriteLine("--- Positional pattern ----------------------");
+            PositionalPattern.Examples();
+            Console.WriteLine();
         }
     }
 }

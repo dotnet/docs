@@ -26,8 +26,8 @@ C# 8.0 is also part of this release, which includes the [nullable reference type
 
 Tutorials related to C# 8.0 language features:
 
-- [Tutorial: Express your design intent more clearly with nullable and non-nullable reference types](../../csharp/tutorials/nullable-reference-types.md)
-- [Tutorial: Generate and consume async streams using C# 8.0 and .NET Core 3.0](../../csharp/tutorials/generate-consume-asynchronous-stream.md)
+- [Tutorial: Express your design intent more clearly with nullable and non-nullable reference types](../../csharp/whats-new/tutorials/nullable-reference-types.md)
+- [Tutorial: Generate and consume async streams using C# 8.0 and .NET Core 3.0](../../csharp/whats-new/tutorials/generate-consume-asynchronous-stream.md)
 - [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../csharp/tutorials/pattern-matching.md)
 
 Language enhancements were added to support the following API features detailed below:
@@ -450,7 +450,7 @@ There's also the <xref:System.Range?displayProperty=nameWithType> type, which co
 var slice = a[i1..i2]; // { 3, 4, 5 }
 ```
 
-For more information, see the [ranges and indices tutorial](../../csharp/tutorials/ranges-indexes.md).
+For more information, see the [ranges and indices tutorial](../../csharp/whats-new/tutorials/ranges-indexes.md).
 
 ### Async streams
 
@@ -470,7 +470,7 @@ async IAsyncEnumerable<int> GetBigResultsAsync()
 
 In addition to being able to `await foreach`, you can also create async iterators, for example, an iterator that returns an `IAsyncEnumerable/IAsyncEnumerator` that you can both `await` and `yield` in. For objects that need to be disposed, you can use `IAsyncDisposable`, which various BCL types implement, such as `Stream` and `Timer`.
 
-For more information, see the [async streams tutorial](../../csharp/tutorials/generate-consume-asynchronous-stream.md).
+For more information, see the [async streams tutorial](../../csharp/whats-new/tutorials/generate-consume-asynchronous-stream.md).
 
 ### IEEE Floating-point
 

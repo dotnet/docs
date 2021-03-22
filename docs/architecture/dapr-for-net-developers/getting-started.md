@@ -457,7 +457,7 @@ In the final part of this example, you'll add container support and run the solu
 
     ```yaml
     version: '3.4'
-    
+
     services:
       daprfrontend:
         image: ${DOCKER_REGISTRY-}daprfrontend

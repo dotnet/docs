@@ -176,7 +176,7 @@ Available in C# 8.0 and later, the `^` operator indicates the element position f
 
 As the preceding example shows, expression `^e` is of the <xref:System.Index?displayProperty=nameWithType> type. In expression `^e`, the result of `e` must be implicitly convertible to `int`.
 
-You can also use the `^` operator with the [range operator](#range-operator-) to create a range of indices. For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
+You can also use the `^` operator with the [range operator](#range-operator-) to create a range of indices. For more information, see [Indices and ranges](../../whats-new/tutorials/ranges-indexes.md).
 
 ## Range operator ..
 
@@ -194,7 +194,7 @@ You can omit any of the operands of the `..` operator to obtain an open-ended ra
 
 [!code-csharp[ranges with omitted operands](snippets/shared/MemberAccessOperators.cs#RangesOptional)]
 
-For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
+For more information, see [Indices and ranges](../../whats-new/tutorials/ranges-indexes.md).
 
 ## Operator overloadability
 

@@ -27,11 +27,11 @@ CodeQL [supports some of the most popular programming languages and compilers](h
 
 CodeQL is a powerful language and security professionals can create custom queries using CodeQL. However, teams can benefit immensely from the large open-source collection of queries that the security community has created without having to write any custom CodeQL.
 
-In this article, you'll set up a GitHub Workflow that will scan code in your repository using CodeQL. You will:
+In this article, you'll set up a GitHub workflow that will scan code in your repository using CodeQL. You will:
 
 > [!div class="checklist"]
 
-> * Create a Code Scanning Action.
+> * Create a code scanning action.
 > * Edit the workflow file to include custom scan settings.
 > * See scanning results.
 
@@ -40,7 +40,7 @@ In this article, you'll set up a GitHub Workflow that will scan code in your rep
 
 ## Create the code scanning workflow
 
-You can use a starter workflow for code scanning by navigating to the Security tab of your repository.
+You can use a starter workflow for code scanning by navigating to the **Security** tab of your repository.
 
 1. Navigate to your GitHub repository and select the **Security** > **Code Scanning Alerts**. The top recommended workflow should be CodeQL Analysis. Select **Set up this workflow**.
 
@@ -53,10 +53,10 @@ You can use a starter workflow for code scanning by navigating to the Security t
     ![Commit the file](./media/actions/codeql/start-commit.jpg)
     **Figure 2:** Commit the file.
 
-1. Select the **Actions** tab. In the left hand tree, you will now see a CodeQL node. Select this node to filter for CodeQL workflow runs.
+1. Select the **Actions** tab. In the left-hand tree, you'll see a **CodeQL** node. Click on this node to filter for CodeQL workflow runs.
 
-    ![View the CodeQL Workflow runs](./media/actions/codeql/codeql-run.jpg)
-    **Figure 3:** View the CodeQL Workflow runs.
+    ![View the CodeQL workflow runs](./media/actions/codeql/codeql-run.jpg)
+    **Figure 3:** View the CodeQL workflow runs.
 
 Take a look at the workflow file while it runs. If you remove the comments from the file, you'll see the following YAML:
 
@@ -103,7 +103,7 @@ Notice the following things:
 1. This workflow triggers on `push` and `pull_request` events to the `main` branch. There's also a `cron` trigger. The `cron` trigger lets you define a schedule for triggering this workflow and is randomly generated for you. In this case, this workflow will run at 14:40 UTC every Saturday.
 
     > [!TIP]
-    > If you edit the workflow file and mouse-over the cron expression, a tooltip will show you the English text for the cron expression.
+    > If you edit the workflow file and hover over the cron expression, a tooltip will show you the English text for the cron expression.
 
 1. There's a single job called `analyze` that runs on the `ubuntu-latest` hosted agent.
 1. This workflow defines a `strategy` with a `matrix` on the array of `language`. In this case, there's only `csharp`. If the repository contained other languages, you could add them to this array. This causes the job to "fan out" and create an instance per value of the matrix.
@@ -121,9 +121,9 @@ Notice the following things:
 The CodeQL scan isn't reporting any security issues. That's expected with this basic sample. CodeQL can also scan for _quality_ issues. The current workflow is using the default `security-extended` suite. You can add quality scanning in by adding a configuration file to customize the scanning suites. In this step, you'll configure CodeQL to use the `security-and-quality` suites.
 
 > [!INFORMATION]
-> For other CodeQL config options, see [this article](https://docs.github.com/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-codeql-code-scanning-in-your-ci-system)
+> For other CodeQL configuration options, see [this article](https://docs.github.com/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-codeql-code-scanning-in-your-ci-system).
 
-1. Navigate to the `.github` folder in the **Code** tab and select **Add File**
+1. Navigate to the `.github` folder in the **Code** tab and select **Add File**:
 
     ![Create a new file](./media/actions/codeql/create-new-file.jpg)
     **Figure 5:** Create a new file.
@@ -138,7 +138,7 @@ The CodeQL scan isn't reporting any security issues. That's expected with this b
     ```
 
     ![Create the CodeQL config file](./media/actions/codeql/codeql-config.jpg)
-    **Figure 6:** Create the CodeQL config file.
+    **Figure 6:** Create the CodeQL configuration file.
 
 1. Select **Commit to main** at bottom of the editor to commit the file.
 1. Edit the CodeQL workflow to use the new configuration file. Navigate to `.github/workflows/codeql-analysis.yml` and select the pencil icon. Add a new property to the `with` section as shown below:
@@ -156,10 +156,9 @@ The CodeQL scan isn't reporting any security issues. That's expected with this b
 ## Review the security alerts
 
 > [!IMPORTANT]
-> You must be a repository owner in order to view Security alerts.
-
-> [!NOTE]
-> This demo repository is small. As such, it doesn't contain any major security or quality issues. However, "Real world" repositories will likely have some issues.
+> You must be a repository owner to view security alerts.
+>
+> This sample repository is small. As such, it doesn't contain any major security or quality issues. However, "real world" repositories will likely have some issues.
 
 When the last CodeQL workflow run completes, you should see two issues in the **Security** tab:
 

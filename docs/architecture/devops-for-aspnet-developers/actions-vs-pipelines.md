@@ -7,7 +7,7 @@ ms.date: 03/04/2021
 
 # Comparing and contrasting GitHub Actions and Azure Pipelines
 
-GitHub Actions and Azure Pipelines have a common history - in fact, the Actions agent is a fork of the Pipelines agent! There are many similarities between GitHub Actions and Azure Pipelines and it is worth comparing and contrasting them.
+GitHub Actions and Azure Pipelines have a common history - in fact, the Actions agent is a fork of the Pipelines agent. There are many similarities between GitHub Actions and Azure Pipelines and it is worth comparing and contrasting them.
 
 ## Pipelines as code
 
@@ -29,7 +29,7 @@ Before you compare GitHub Actions and Azure Pipelines, you should consider the b
 
 ## Agents and runners
 
-Before you examine pipelines themselves, you must consider how these pipelines _execute_. Both GitHub Actions and Azure Pipelines are really _orchestration engines_: when a pipeline is triggered, the system finds an "agent" and tells the agent to execute the jobs defined in the pipeline file.
+Before you examine pipelines themselves, you should consider how these pipelines _execute_. Both GitHub Actions and Azure Pipelines are really _orchestration engines_: when a pipeline is triggered, the system finds an "agent" and tells the agent to execute the jobs defined in the pipeline file.
 
 Azure Pipelines run on _agents_. The agent is written in .NET, so it will run wherever .NET can run: Windows, Mac and Linux. Agents can even run in containers! Agents are registered to a [pool](https://docs.microsoft.com/azure/devops/pipelines/agents/pools-queues?view=azure-devops) in Azure Pipelines or to a repository or organization in GitHub. Agents can be _hosted_ or _private_.
 

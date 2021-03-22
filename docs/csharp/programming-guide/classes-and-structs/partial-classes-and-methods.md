@@ -1,7 +1,7 @@
 ---
 title: "Partial Classes and Methods - C# Programming Guide"
 description: Partial classes and methods in C# split the definition of a class, a struct, an interface, or a method over two or more source files.
-ms.date: 07/20/2015
+ms.date: 03/22/2021
 helpviewer_keywords:
   - "partial methods [C#]"
   - "partial classes [C#]"
@@ -127,7 +127,7 @@ The following example shows that you can also develop partial structs and interf
 
 ## Partial Methods
 
-A partial class or struct may contain a partial method. One part of the class contains the signature of the method. An optional implementation may be defined in the same part or another part. If the implementation is not supplied, then the method and all calls to the method are removed at compile time.
+A partial class or struct may contain a partial method. One part of the class contains the signature of the method. An implementation can be defined in the same part or another part. If the implementation is not supplied, then the method and all calls to the method are removed at compile time. Implementation part may be required depending on method signature.
 
 Partial methods enable the implementer of one part of a class to define a method, similar to an event. The implementer of the other part of the class can decide whether to implement the method or not. If the method is not implemented, then the compiler removes the method signature and all calls to the method. The calls to the method, including any results that would occur from evaluation of arguments in the calls, have no effect at run time. Therefore, any code in the partial class can freely use a partial method, even if the implementation is not supplied. No compile-time or run-time errors will result if the method is called but not implemented.
 
@@ -137,28 +137,32 @@ A partial method declaration consists of two parts: the definition, and the impl
 
 ```csharp
 // Definition in file1.cs
-partial void onNameChanged();
+partial void OnNameChanged();
 
 // Implementation in file2.cs
-partial void onNameChanged()
+partial void OnNameChanged()
 {
   // method body
 }
 ```
 
-- Partial method declarations must begin with the contextual keyword [partial](../../language-reference/keywords/partial-type.md) and the method must return [void](../../language-reference/builtin-types/void.md).
-
-- Partial methods can have [in](../../language-reference/keywords/in-parameter-modifier.md) or [ref](../../language-reference/keywords/ref.md) but not [out](../../language-reference/keywords/out-parameter-modifier.md) parameters.
-
-- Partial methods are implicitly [private](../../language-reference/keywords/private.md), and therefore they cannot be [virtual](../../language-reference/keywords/virtual.md).
-
-- Partial methods cannot be [extern](../../language-reference/keywords/extern.md), because the presence of the body determines whether they are defining or implementing.
+- Partial method declarations must begin with the contextual keyword [partial](../../language-reference/keywords/partial-type.md).
 
 - Partial methods can have [static](../../language-reference/keywords/static.md) and [unsafe](../../language-reference/keywords/unsafe.md) modifiers.
 
 - Partial methods can be generic. Constraints are put on the defining partial method declaration, and may optionally be repeated on the implementing one. Parameter and type parameter names do not have to be the same in the implementing declaration as in the defining one.
 
 - You can make a [delegate](../../language-reference/builtin-types/reference-types.md) to a partial method that has been defined and implemented, but not to a partial method that has only been defined.
+
+Partial method must have an implementation part in following cases:
+
+- It has any accessibility modifiers (even [private](../../language-reference/keywords/private.md)).
+
+- It has any return type other than [void](../../language-reference/builtin-types/void.md).
+
+- It has [out](../../language-reference/keywords/out-parameter-modifier.md) parameter.
+
+- It has a [virtual](../../language-reference/keywords/virtual.md), [override](../../language-reference/keywords/override.md), [sealed](../../language-reference/keywords/sealed.md), [new](../../language-reference/keywords/new-modifier.md), or [extern](../../language-reference/keywords/extern.md) modifier.
 
 ## C# Language Specification
 

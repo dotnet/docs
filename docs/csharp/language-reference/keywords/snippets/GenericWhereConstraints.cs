@@ -8,7 +8,7 @@ using static keywords.UnmanagedExtensions;
 namespace keywords
 {
     // <Snippet1>
-    public class AGenericClass<T> where T : IComparable<T> { }
+    public class MyGenericClass<T> where T : IComparable<T> { }
     // </Snippet1>
 
     // <SNippet2>

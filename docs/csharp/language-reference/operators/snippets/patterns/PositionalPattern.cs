@@ -23,8 +23,8 @@ namespace Patterns
         static string Classify(Point point) => point switch
         {
             (0, 0) => "Origin",
-            (1, 0) => "X basis end",
-            (0, 1) => "Y basis end",
+            (1, 0) => "positive X basis end",
+            (0, 1) => "positive Y basis end",
             _ => "Just a point",
         };
         // </BasicExample>

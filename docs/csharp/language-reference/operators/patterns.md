@@ -152,7 +152,7 @@ You can also use a [property pattern](#property-pattern) within a positional pat
 
 :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="WithPropertyPattern":::
 
-At last, you can combine two preceding usages in one pattern, as the following example shows:
+You can also combine two preceding usages in one pattern, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="CompletePositionalPattern":::
 

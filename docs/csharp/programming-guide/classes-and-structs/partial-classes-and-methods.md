@@ -148,6 +148,8 @@ partial void OnNameChanged()
 
 - Partial method declarations must begin with the contextual keyword [partial](../../language-reference/keywords/partial-type.md).
 
+- Partial method signatures in both parts of the partial type must match.
+
 - Partial methods can have [static](../../language-reference/keywords/static.md) and [unsafe](../../language-reference/keywords/unsafe.md) modifiers.
 
 - Partial methods can be generic. Constraints are put on the defining partial method declaration, and may optionally be repeated on the implementing one. Parameter and type parameter names do not have to be the same in the implementing declaration as in the defining one.
@@ -160,7 +162,7 @@ Partial method must have an implementation part in following cases:
 
 - It has any return type other than [void](../../language-reference/builtin-types/void.md).
 
-- It has [out](../../language-reference/keywords/out-parameter-modifier.md) parameter.
+- It has [out](../../language-reference/keywords/out-parameter-modifier.md) parameters.
 
 - It has a [virtual](../../language-reference/keywords/virtual.md), [override](../../language-reference/keywords/override.md), [sealed](../../language-reference/keywords/sealed.md), [new](../../language-reference/keywords/new-modifier.md), or [extern](../../language-reference/keywords/extern.md) modifier.
 

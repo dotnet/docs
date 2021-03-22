@@ -1,7 +1,7 @@
 ---
 description: "partial method - C# Reference"
 title: "partial method - C# Reference"
-ms.date: 07/20/2015
+ms.date: 03/22/2021
 f1_keywords: 
   - "partialmethod_CSharpKeyword"
 helpviewer_keywords: 
@@ -14,9 +14,15 @@ A partial method has its signature defined in one part of a partial type, and it
 
 - Signatures in both parts of the partial type must match.
 
-- The method must return void.
+Partial method must have an implementation part in following cases:
 
-- No access modifiers are allowed. Partial methods are implicitly private.
+- It has any accessibility modifiers (even [private](../../language-reference/keywords/private.md)).
+
+- It has any return type other than [void](../../language-reference/builtin-types/void.md).
+
+- It has [out](../../language-reference/keywords/out-parameter-modifier.md) parameters.
+
+- It has a [virtual](../../language-reference/keywords/virtual.md), [override](../../language-reference/keywords/override.md), [sealed](../../language-reference/keywords/sealed.md), [new](../../language-reference/keywords/new-modifier.md), or [extern](../../language-reference/keywords/extern.md) modifier.
 
 The following example shows a partial method defined in two parts of a partial class:
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using attributes;
 
 namespace AttributeExamples
 {
@@ -8,6 +9,7 @@ namespace AttributeExamples
         {
             TraceExample.Main();
             ObsoleteProgram.Main();
+            ModuleInitializerExampleMain.Main();
         }
     }
 }

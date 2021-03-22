@@ -58,7 +58,7 @@ With the defined action inputs class, focus on the *Program.cs* file.
 
 :::code language="csharp" source="snippets/DotNet.GitHubAction/Program.cs":::
 
-The `Program` file is simplified for brevity, to explore the full sample source, see [*Program.cs*](https://github.com/dotnet/samples/blob/008f9e197fb5d0ebb3a41216ee5fdde01869368f/github-actions/DotNet.GitHubAction/DotNet.GitHubAction/Program.cs). The mechanics in place demonstrate the boilerplate code required to use:
+The `Program` file is simplified for brevity, to explore the full sample source, see [*Program.cs*](https://github.com/dotnet/samples/blob/main/github-actions/DotNet.GitHubAction/DotNet.GitHubAction/Program.cs). The mechanics in place demonstrate the boilerplate code required to use:
 
 - [Top-level statements](../csharp/tutorials/exploration/top-level-statements.md)
 - [Generic Host](../core/extensions/generic-host.md)
@@ -161,7 +161,7 @@ In the preceding steps, you can observe:
 The [dotnet/samples](https://github.com/dotnet/samples) GitHub repository is home to many .NET sample source code projects, including the app in this tutorial.
 
 - The app is available in the [samples browser](/samples/browse/create-dotnet-github-action).
-- The generated [*CODE_METRICS.md*](https://github.com/dotnet/samples/blob/008f9e197fb5d0ebb3a41216ee5fdde01869368f/github-actions/DotNet.GitHubAction/CODE_METRICS.md) file is navigable.
+- The generated [*CODE_METRICS.md*](https://github.com/dotnet/samples/blob/main/github-actions/DotNet.GitHubAction/CODE_METRICS.md) file is navigable.
 
 The *CODE_METRICS.md* file represents the hierarchy of the projects it analyzed. Each project has a top-level section, and an emoji the represents the overall status of the highest cyclomatic complexity for nested objects. As you navigate the file, each section exposes drill-down opportunities with a summary of each area. The markdown has collapsible sections as an added convenience.
 

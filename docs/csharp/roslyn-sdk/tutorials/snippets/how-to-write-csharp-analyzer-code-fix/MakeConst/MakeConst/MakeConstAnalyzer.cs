@@ -118,7 +118,7 @@ namespace MakeConst
             }
 
             // <SnippetReportDiagnostic>
-            context.ReportDiagnostic(Diagnostic.Create(Rule, context.Node.GetLocation()));
+            context.ReportDiagnostic(Diagnostic.Create(Rule, context.Node.GetLocation(), localDeclaration.Declaration.Variables.First().Identifier.ValueText));
             // </SnippetReportDiagnostic>
         }
     }

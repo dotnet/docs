@@ -53,7 +53,7 @@ You can use a starter workflow for code scanning by navigating to the **Security
     ![Commit the file](./media/actions/codeql/start-commit.jpg)
     **Figure 2:** Commit the file.
 
-1. Select the **Actions** tab. In the left-hand tree, you'll see a **CodeQL** node. Click on this node to filter for CodeQL workflow runs.
+1. Select the **Actions** tab. In the left-hand tree, you'll see a **CodeQL** node. Select this node to filter for CodeQL workflow runs.
 
     ![View the CodeQL workflow runs](./media/actions/codeql/codeql-run.jpg)
     **Figure 3:** View the CodeQL workflow runs.

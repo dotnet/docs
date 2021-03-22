@@ -47,7 +47,7 @@ Some use cases for object detection include:
 - Object Counting
 - Activity Recognition
 
-This sample creates a C# .NET Core console application that detects stop signs in images using a machine learning model built with Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/modelbuilder/ObjectDetection_StopSigns) GitHub repository.
+This sample creates a C# .NET Core console application that detects stop signs in images using a machine learning model built with Model Builder. You can find the source code for this tutorial at the [samples browser](https://docs.microsoft.com/samples/dotnet/machinelearning-samples/mlnet-object-detection-model-builder/).
 
 ## Prepare and understand the data
 
@@ -253,7 +253,7 @@ Two projects are created as a result of the training process.
     Top: 89.453415, Left: 481.95343, Right: 724.8073, Bottom: 388.32385, Label: Stop-Sign, Score: 0.99539465
     ```
 
-Congratulations! You've successfully built a machine learning model to detect stop signs in images using Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/modelbuilder/ObjectDetection_StopSigns) GitHub repository.
+Congratulations! You've successfully built a machine learning model to detect stop signs in images using Model Builder. You can find the source code for this tutorial at the [samples browser](https://docs.microsoft.com/samples/dotnet/machinelearning-samples/mlnet-object-detection-model-builder).
 
 ## Additional resources
 

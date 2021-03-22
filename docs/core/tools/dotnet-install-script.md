@@ -261,4 +261,4 @@ The install scripts do not update the registry on Windows. They just download th
 ## See also
 
 - [.NET releases](https://github.com/dotnet/core/releases)
-- [.NET Runtime and SDK download archive](https://github.com/dotnet/core/blob/master/release-notes/download-archive.md)
+- [.NET Runtime and SDK download archive](https://github.com/dotnet/core/blob/main/release-notes/download-archive.md)

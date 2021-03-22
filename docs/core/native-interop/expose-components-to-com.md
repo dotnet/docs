@@ -82,7 +82,7 @@ The resulting output will now also have a `ProjectName.X.manifest` file. This fi
 
 ## Sample
 
-There is a fully functional [COM server sample](https://github.com/dotnet/samples/tree/master/core/extensions/COMServerDemo) in the dotnet/samples repository on GitHub.
+There is a fully functional [COM server sample](https://github.com/dotnet/samples/tree/main/core/extensions/COMServerDemo) in the dotnet/samples repository on GitHub.
 
 ## Additional notes
 

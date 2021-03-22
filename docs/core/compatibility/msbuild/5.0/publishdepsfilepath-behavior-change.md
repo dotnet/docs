@@ -21,7 +21,7 @@ Starting in .NET 5, `PublishDepsFilePath` is empty for single-file applications 
 
 This change was made for a couple of reasons:
 
-- Due to a refactoring of the publish logic in order to support [improved single-file apps](https://github.com/dotnet/designs/blob/master/accepted/2020/single-file/design.md) in .NET 5.
+- Due to a refactoring of the publish logic in order to support [improved single-file apps](https://github.com/dotnet/designs/blob/main/accepted/2020/single-file/design.md) in .NET 5.
 
 - In single-file apps, to help guard against targets that try to rewrite the *deps.json* file after *deps.json* has already been bundled, thus silently not affecting the app. For this reason, `PublishDepsFilePath` is empty for single-file applications.
 

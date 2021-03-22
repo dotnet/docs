@@ -112,7 +112,7 @@ Each of these subdirectories contains two additional prefixed subdirectories:
 
 In this tutorial, only bridge deck images are used.
 
-1. Download the [dataset](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification/assets.zip) and unzip.
+1. Download the [dataset](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification/assets.zip) and unzip.
 1. Create a directory named "assets" in your project to save your dataset files.
 1. Copy the *CD* and *UD* subdirectories from the recently unzipped directory to the *assets* directory.
 

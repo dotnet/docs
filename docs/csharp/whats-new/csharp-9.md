@@ -104,7 +104,7 @@ The previous line creates a new `Person` record where the `LastName` property is
 
 Any of the synthesized members except the "clone" method may be written by you. If a record type has a method that matches the signature of any synthesized method, the compiler doesn't synthesize that method. The earlier `Dog` record example contains a hand coded <xref:System.String.ToString> method as an example.
 
-Learn more about record types in this [exploration of records](../tutorials/exploration/records.md) tutorial.
+Learn more about record types in this [exploration of records](../whats-new/tutorials/records.md) tutorial.
 
 ## Init only setters
 

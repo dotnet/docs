@@ -73,7 +73,7 @@ There are three specific settings that `dotnet restore` ignores:
 
 - [trustedSigners](/nuget/schema/nuget-config-file#trustedsigners-section)
 
-  Support for cross platform package signature verification was added in the .NET 5.0.100 SDK.
+  Support for cross-platform package signature verification was added in the .NET 5.0.100 SDK.
 
 ## Arguments
 

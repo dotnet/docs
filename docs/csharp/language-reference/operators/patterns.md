@@ -13,7 +13,7 @@ Intro.
 
 ## Declaration and type patterns
 
-You use the declaration and type patterns to check if the runtime type of an expression is compatible with the given pattern type. With the declaration pattern, you can also declare a new local variable. That variable is assigned a converted expression result when a pattern matches an expression, as the following example shows:
+You use the declaration and type patterns to check if the runtime type of an expression is compatible with the given type. With the declaration pattern, you can also declare a new local variable. That variable is assigned a converted expression result when a pattern matches an expression, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="BasicExample":::
 

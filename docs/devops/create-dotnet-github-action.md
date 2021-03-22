@@ -86,7 +86,7 @@ A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of i
 :::code language="dockerfile" source="snippets/Dockerfile" highlight="23":::
 
 > [!NOTE]
-> The .NET app in this tutorial relies on the .NET SDK as part of its functionality, as such, the highlighted line relayers the .NET SDK anew with the build output. For applications that ***do not*** require the .NET SDK as part of their functionality, they should relayer with just the .NET Runtime instead. This will greatly reduce the size of the image.
+> The .NET app in this tutorial relies on the .NET SDK as part of its functionality, as such, the highlighted line relayers the .NET SDK anew with the build output. For applications that ***do not*** require the .NET SDK as part of their functionality, they should rely on just the .NET Runtime instead. This greatly reduces the size of the image.
 >
 > ```dockerfile
 > FROM mcr.microsoft.com/dotnet/runtime:5.0
@@ -103,7 +103,7 @@ The preceding *Dockerfile* steps include:
 - Defining the entry point, which delegates to [`dotnet /DotNet.GitHubAction.dll`](../core/tools/dotnet.md).
 
 > [!TIP]
-> You may be asking yourself, "what is the `mcr.microsoft.com` url". The MCR stands for "Microsoft Container Registry", and is Microsoft's syndicated container catalog from the official Docker hub. For more information, see [Microsoft syndicates container catalog](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/).
+> The MCR in `mcr.microsoft.com` stands for "Microsoft Container Registry", and is Microsoft's syndicated container catalog from the official Docker hub. For more information, see [Microsoft syndicates container catalog](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/).
 
 ## Define action inputs and outputs
 
@@ -130,8 +130,8 @@ With the [.NET app containerized](#prepare-the-net-app-for-github-actions), and 
 The preceding workflow YAML file defines three primary nodes:
 
 - The `name`, which is simply the name of the workflow. This name is also what's used when creating a [workflow status badge](https://docs.github.com/actions/managing-workflow-runs/adding-a-workflow-status-badge).
-- The `on` node, defines when and how the action is triggered.
-- The `jobs` node, outlines the various jobs and steps within each job. Individual steps consume GitHub Actions.
+- The `on` node defines when and how the action is triggered.
+- The `jobs` node outlines the various jobs and steps within each job. Individual steps consume GitHub Actions.
 
 For more information, see [Creating your first workflow](https://docs.github.com/actions/quickstart#creating-your-first-workflow).
 

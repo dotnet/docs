@@ -112,13 +112,13 @@ The following example illustrates use of multiple module initializer methods. Th
 
 :::code language="csharp" source="snippets/ModuleInitializerExampleModule.cs" :::
 
-A typical use for module initializers is by source code generators, as they sometimes need to generate initialization code. Module initializers provide a standard place for that code to reside.
+Source code generators sometimes need to generate initialization code. Module initializers provide a standard place for that code to reside.
 
 ## `SkipLocalsInit` attribute
 
-Starting in c# 9, the `SkipLocalsInit` attribute prevents the compiler from setting the `.locals init` flag when emitting to metadata. The `SkipLocalsInit` attribute is a single-use attribute and can be applied to any entity that allows attributes. `SkipLocalsInit` is an alias for <xref:System.Runtime.CompilerServices.SkipLocalsInitAttribute>.
+Starting in C# 9, the `SkipLocalsInit` attribute prevents the compiler from setting the `.locals init` flag when emitting to metadata. The `SkipLocalsInit` attribute is a single-use attribute and can be applied to a method, a property, a class, a struct, an interface, or a module, but not to an assembly. `SkipLocalsInit` is an alias for <xref:System.Runtime.CompilerServices.SkipLocalsInitAttribute>.
 
-The `.locals init` flag causes the CLR to initialize all of the local variables declared in a method to their default values. Since the compiler also makes sure that you never use a variable before assigning some value to it, `.locals init` is typically not necessary. However, the extra zero-initialization may have measurable performance impact in some scenarios, such as when you use `stackalloc` to allocate an array on the stack. In those cases, you can add the `SkipLocalsInit` attribute. You can add it to a method, a property, a class, a struct, an interface, or a module but not to an assembly. If applied to a method directly, the attribute applies to that method and all its nested functions, including lambdas and local functions. If applied to a type or module, it applies to all methods nested inside. This attribute does not affect abstract methods, as it only affects code generated for the implementation.
+The `.locals init` flag causes the CLR to initialize all of the local variables declared in a method to their default values. Since the compiler also makes sure that you never use a variable before assigning some value to it, `.locals init` is typically not necessary. However, the extra zero-initialization may have measurable performance impact in some scenarios, such as when you use `stackalloc` to allocate an array on the stack. In those cases, you can add the `SkipLocalsInit` attribute. If applied to a method directly, the attribute affects that method and all its nested functions, including lambdas and local functions. If applied to a type or module, it affects all methods nested inside. This attribute does not affect abstract methods, but it affects code generated for the implementation.
 
 This attribute requires the [AllowUnsafeBlocks](../compiler-options/language.md#allowunsafeblocks) compiler option. This is to signal that in some cases code could view unassigned memory (for example, reading from uninitialized stack-allocated memory).
 
@@ -126,7 +126,7 @@ The following example illustrates the effect of `SkipLocalsInit` attribute on a 
 
 :::code language="csharp" source="snippets/SkipLocalsInitExample.cs" id="ReadUninitializedMemory":::
 
-To try this code yourself, remember to set the `unsafe` compiler option in your *.csproj* file:
+To try this code yourself, set the `unsafe` compiler option in your *.csproj* file:
 
 ```xml
 <PropertyGroup>

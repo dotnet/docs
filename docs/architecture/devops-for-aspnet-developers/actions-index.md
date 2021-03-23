@@ -1,5 +1,5 @@
 ---
-title: Continuous integration and deployment with GitHub Actions Overview
+title: Continuous integration and deployment with GitHub Actions overview
 description: See how GitHub Actions is a great platform for .NET DevOps
 author: colindembovsky
 ms.date: 03/04/2021
@@ -10,9 +10,9 @@ GitHub has long been the home for millions of open-source developers around the 
 
 ## GitHub Actions
 
-GitHub Actions is a workflow engine that can be used to automate workflows for nearly all events that occur on the GitHub platform. Actions is a greate solution for Continuous Integration/Continuous Deployment (CI/CD) pipelines.
+[GitHub Actions](https://docs.github.com/actions) is a workflow engine that can be used to automate workflows for nearly all events that occur on the GitHub platform. Actions is a greate solution for Continuous Integration/Continuous Deployment (CI/CD) pipelines.
 
-In this section of articles, you'll learn how to create an Actions workflow to build, test and deploy a .NET web app to Azure Web Apps.
+In this set of articles, you'll learn how to create an Actions workflow to build, test and deploy a .NET web app to Azure Web Apps.
 
 > [!NOTE]
 > Before you begin, complete the **Publish the app's code to GitHub** and **Disconnect local Git deployment** sections of the [Continuous integration and deployment with Azure DevOps](cicd.md) section to publish your code to GitHub. Then proceed to the [Build](actions-build.md) article.
@@ -49,4 +49,4 @@ In the [CodeQL](actions-codeql.md) article you'll:
 
 ## Comparing and contrasting GitHub Actions and Azure Pipelines
 
-GitHub Actions and Azure Pipelines have a common lineage and are similar in many respects. However, there are some crucial differences between Actions and Pipelines that you need to know about if you're deciding which platform to use for building, testing and deploying apps. In the [Comparison](actions-vs-pipelines.md) article, you'll deep-dive into these platforms, compare and contrast them, and learn how to select the correct platform for your CI/CD needs.
+GitHub Actions and [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops&preserve-view=true) have a common lineage and are similar in many respects. However, there are some crucial differences between Actions and Pipelines that you need to know about if you're deciding which platform to use for building, testing and deploying apps. In the [Comparison](actions-vs-pipelines.md) article, you'll deep-dive into these platforms, compare and contrast them, and learn how to select the correct platform for your CI/CD needs.

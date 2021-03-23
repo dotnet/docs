@@ -12,10 +12,9 @@
   - name: Next steps - DevOps with ASP.NET Core and Azure
     href: next-steps.md      
   - name: CI/CD with GitHub Actions
-    href: mock.md
     items:
-    - name: Comparison of GHA and Azure Pipelines
-      href: mock.md
+    - name: Comparison of GitHub Actions and Azure Pipelines
+      href: actions-vs-pipelines.md
     - name: Basic build workflow 
       href: actions-build.md
     - name: Adding deployment steps

@@ -7,7 +7,7 @@ ms.date: 03/04/2021
 
 # Compare and contrast GitHub Actions and Azure Pipelines
 
-GitHub Actions and Azure Pipelines have a common history. In fact, the Actions agent is a fork of the Pipelines agent. There are many similarities between GitHub Actions and Azure Pipelines and it's worth comparing and contrasting them.
+[GitHub Actions](https://docs.github.com/actions) and [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops) have a common history. In fact, the Actions agent is a fork of the Pipelines agent. There are many similarities between GitHub Actions and Azure Pipelines and it's worth comparing and contrasting them.
 
 ## Pipelines as code
 
@@ -50,7 +50,7 @@ There are times when you can't utilize hosted images. For example, when you:
 - Need more storage or memory than is provided to the hosted agent images.
 - Need more time than the maximum build time limit for hosted agents.
 
-> [!INFORMATION]
+> [!IMPORTANT]
 > It's possible to install tools and SDKs when running pipelines on hosted agents. If the install steps don't take long, this is viable. However, if the tools/software take a long time to install, then you may be better off with a private agent or self-hosted runner, since the install steps will need to execute for every run of the workflow.
 
 ### Azure DevOps agents
@@ -82,7 +82,7 @@ Approvals|Define approval conditions before moving further in the pipeline|Yes|Y
 Artifacts|Upload, store and download artifacts from jobs|Yes|Yes
 Caching|Cache folders or files for subsequent runs|Yes|Yes
 Conditions|Specify conditions for steps or jobs|Yes|Yes
-Container Jobs|Run jobs inside a container|No|Yes
+Container Jobs|Run jobs inside a container|Yes|Yes
 Demands|Specify demands that must be met to match jobs to agents|No|Yes
 Dependencies|Specify dependencies between jobs or stages|Yes|Yes
 Deployment Groups|A logical set of target machines for deployments|No|Yes
@@ -93,7 +93,7 @@ Jobs|Sequence of steps that are executed on an agent|Yes|Yes
 Service Containers|Manage the lifecycle of a containerized service instance availalbe for the duration of a job|Yes|Yes
 Service Connections|Abstract credentials to external systems|No|Yes
 Stages|Organize jobs in a pipeline|No|Yes
-Templates|Define reusable, parameterized building blocks|No|Yes
+Templates|Define reusable, parameterized building blocks for steps, jobs or variables|No|Yes
 Starter Templates|Defines a starter workflow based on the type of code detected in a repo|Yes|No
 Triggers|Set of events that cause the pipeline to trigger|Yes|Yes
 Variables|Variables that can be passed in, statically or dynamically defined|Yes|Yes

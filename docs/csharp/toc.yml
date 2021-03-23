@@ -35,6 +35,28 @@ items:
         href: tour-of-csharp/tutorials/branches-and-loops-local.md
       - name: List collections
         href: tour-of-csharp/tutorials/arrays-and-collections.md
+- name: Fundamental concepts
+  items:
+  - name: Type system
+    items:
+    - name: Overview
+      href: programming-guide/types/index.md
+    - name: Namespaces
+      href: programming-guide/namespaces/index.md
+    - name: Basic Types
+      href: basic-types.md
+    # TODO: tuples
+    - name: Records
+      href: programming-guide/classes-and-structs/records.md
+    - name: Classes
+      href: programming-guide/classes-and-structs/classes.md
+    # TODO: structs
+    - name: Interfaces
+      href: programming-guide/interfaces/index.md
+    - name: Generics
+      href: programming-guide/generics/index.md    
+    - name: Anonymous Types
+      href: programming-guide/classes-and-structs/anonymous-types.md
 - name: What's new in C#
   items:
   - name: C# 9.0
@@ -98,22 +120,12 @@ items:
     href: tutorials/pattern-matching.md
 - name: C# concepts
   items:
-  - name: C# type system
-    href: programming-guide/types/index.md
   - name: Nullable reference types
     href: nullable-references.md
   - name: Choose a strategy for enabling nullable reference types
     href: nullable-migration-strategies.md
-  - name: Namespaces
-    href: programming-guide/namespaces/index.md
-  - name: Basic Types
-    href: basic-types.md
-  - name: Classes
-    href: programming-guide/classes-and-structs/classes.md
   - name: Deconstructing tuples and other types
     href: deconstruct.md
-  - name: Interfaces
-    href: programming-guide/interfaces/index.md
   - name: Methods
     href: methods.md
   - name: Properties
@@ -541,8 +553,6 @@ items:
         href: programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md
   - name: Types
     items:
-    - name: Use and define types
-      href: programming-guide/types/index.md
     - name: Casting and Type Conversions
       href: programming-guide/types/casting-and-type-conversions.md
     - name: Boxing and Unboxing
@@ -562,10 +572,6 @@ items:
     - name: Overview
       displayName: classes, structs, records
       href: programming-guide/classes-and-structs/index.md
-    - name: Classes
-      href: programming-guide/classes-and-structs/classes.md
-    - name: Records
-      href: programming-guide/classes-and-structs/records.md
     - name: Objects
       href: programming-guide/classes-and-structs/objects.md
     - name: Inheritance
@@ -679,9 +685,6 @@ items:
       href: programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md
   - name: Interfaces
     items:
-    - name: Overview
-      displayName: interfaces
-      href: programming-guide/interfaces/index.md
     - name: Explicit Interface Implementation
       href: programming-guide/interfaces/explicit-interface-implementation.md
     - name: "How to explicitly implement interface members"
@@ -779,9 +782,6 @@ items:
       href: programming-guide/generics/generics-and-attributes.md
   - name: Namespaces
     items:
-    - name: Overview
-      displayName: namespaces
-      href: programming-guide/namespaces/index.md
     - name: Using namespaces
       href: programming-guide/namespaces/using-namespaces.md
     - name: "How to use the My namespace"

@@ -6,8 +6,8 @@ namespace Patterns
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("--- Declaration and type pattern examples ---");
-            DeclarationAndTypePattern.Examples();
+            Console.WriteLine("--- Declaration and type patterns -----------");
+            DeclarationAndTypePatterns.Examples();
             Console.WriteLine();
 
             Console.WriteLine("--- Constant pattern ------------------------");

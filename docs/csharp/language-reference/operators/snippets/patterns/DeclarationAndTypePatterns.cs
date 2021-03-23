@@ -3,12 +3,24 @@ using System.Collections.Generic;
 
 namespace Patterns
 {
-    public static class DeclarationAndTypePattern
+    public static class DeclarationAndTypePatterns
     {
         public static void Examples()
         {
+            BasicExample();
             ReferenceConversion();
             NullableAndUnboxing();
+        }
+
+        private static void BasicExample()
+        {
+            // <BasicExample>
+            object greeting = "Hello, World!";
+            if (greeting is string message)
+            {
+                Console.WriteLine(message.ToLower());  // output: hello, world!
+            }
+            // </BasicExample>
         }
 
         private static void ReferenceConversion()

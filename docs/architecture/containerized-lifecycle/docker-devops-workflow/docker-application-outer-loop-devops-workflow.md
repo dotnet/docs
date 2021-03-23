@@ -79,7 +79,7 @@ With these Visual Studio Team Services tasks, a build Linux-Docker Host/VM provi
 
   An easy way to create one of these agents is to use Docker to run a container based on the Azure DevOps Services agent Docker image.
 
-> [!INFORMATION]
+> [!TIP]
 > To read more about assembling an Azure DevOps Services Docker CI pipeline and view the walkthroughs, visit these sites:
 >
 > - Running a Visual Studio Team Services (Now Azure DevOps Services) agent as a Docker container: \
@@ -131,7 +131,7 @@ Using the Docker tasks, you can push a set of service images defined by a `docke
 
 **Figure 5-5**. Using Azure DevOps Services to publishing custom images to a Docker Registry
 
-> [!INFORMATION]
+> [!TIP]
 > For more information about Azure Container Registry, see <https://aka.ms/azurecontainerregistry>.
 
 ## Step 4: CD, Deploy
@@ -192,7 +192,7 @@ Figure 5-11 demonstrates how you can edit the Deploy to Kubernetes task with the
 
 **Figure 5-11**. Docker Deploy task definition deploying to ACS DC/OS
 
-> [!INFORMATION]
+> [!TIP]
 > To read more about the CD pipeline with Azure DevOps Services and Docker, visit <https://azure.microsoft.com/services/devops/pipelines>
 
 ## Step 5: Run and manage

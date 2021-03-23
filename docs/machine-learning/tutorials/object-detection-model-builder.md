@@ -249,7 +249,7 @@ Two projects are created as a result of the training process.
 
     ```bash
     Predicted Boxes:
-    
+
     Top: 89.453415, Left: 481.95343, Right: 724.8073, Bottom: 388.32385, Label: Stop-Sign, Score: 0.99539465
     ```
 

@@ -291,7 +291,7 @@ else
 }
 ```
 
-In .NET 6 a new type has been introduced to help ameliorate this issue - [`CLong` and `CULong`](https://github.com/dotnet/runtime/issues/13788). In .NET 6 the following is now possible.
+In .NET 6 a new type has been introduced to help ameliorate this issue - [`CLong` and `CULong`](https://github.com/dotnet/runtime/issues/13788). In .NET 6 the following is now possible. The example is for `CLong`, but you can use `CULong` to abstract C's `unsigned long` in a similar way.
 
 ```csharp
 // Cross platform C function

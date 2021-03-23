@@ -3,7 +3,7 @@ title: "Tutorial: Create a GitHub Action with .NET"
 description: Learn how to create a GitHub action with a containerized .NET app.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/19/2021
+ms.date: 03/23/2021
 ms.topic: tutorial
 ---
 
@@ -129,7 +129,7 @@ With the [.NET app containerized](#prepare-the-net-app-for-github-actions), and 
 
 The preceding workflow YAML file defines three primary nodes:
 
-- The `name`, which is simply the name of the workflow. This name is also what's used when creating a [workflow status badge](https://docs.github.com/actions/managing-workflow-runs/adding-a-workflow-status-badge).
+- The `name` of the workflow. This name is also what's used when creating a [workflow status badge](https://docs.github.com/actions/managing-workflow-runs/adding-a-workflow-status-badge).
 - The `on` node defines when and how the action is triggered.
 - The `jobs` node outlines the various jobs and steps within each job. Individual steps consume GitHub Actions.
 
@@ -147,9 +147,9 @@ In the preceding steps, you can observe:
 1. A message is printed to the workflow log, when [manually ran](https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch).
 1. A step identified as `dotnet-code-metrics`:
 
-    - `uses: dotnet/samples/github-actions/DotNet.GitHubAction@main`, which is the location of the containerized .NET app in this tutorial.
-    - `env`, creates an environment variable `"GREETING"`, which is printed in the execution of the app.
-    - `with`, specifies each of the required action inputs
+    - `uses: dotnet/samples/github-actions/DotNet.GitHubAction@main` is the location of the containerized .NET app in this tutorial.
+    - `env` creates an environment variable `"GREETING"`, which is printed in the execution of the app.
+    - `with` specifies each of the required action inputs.
 
 1. A conditional step, named `Create pull request` runs when the `dotnet-code-metrics` step specifies an output parameter of `updated-metrics` with a value of `true`.
 
@@ -160,7 +160,7 @@ In the preceding steps, you can observe:
 
 The [dotnet/samples](https://github.com/dotnet/samples) GitHub repository is home to many .NET sample source code projects, including the app in this tutorial.
 
-- The app is available in the [samples browser](/samples/browse/create-dotnet-github-action).
+- The app is available in the [samples browser](/samples/dotnet/samples/create-dotnet-github-action).
 - The generated [*CODE_METRICS.md*](https://github.com/dotnet/samples/blob/main/github-actions/DotNet.GitHubAction/CODE_METRICS.md) file is navigable.
 
 The *CODE_METRICS.md* file represents the hierarchy of the projects it analyzed. Each project has a top-level section, and an emoji the represents the overall status of the highest cyclomatic complexity for nested objects. As you navigate the file, each section exposes drill-down opportunities with a summary of each area. The markdown has collapsible sections as an added convenience.
@@ -191,4 +191,4 @@ The workflow specifies that `on` a `push` to the `main` branch, the action is tr
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [.NET GitHub Action sample code](/samples/browse/create-dotnet-github-action)
+> [.NET GitHub Action sample code](/samples/dotnet/samples/create-dotnet-github-action)

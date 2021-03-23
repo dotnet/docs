@@ -27,13 +27,13 @@ The following web sites provide guidance and can help you find answers to common
 |URL|Description|
 |----------|----------------|
 |[Visual Basic documentation samples](https://github.com/dotnet/docs/tree/main/samples/snippets/visualbasic)|Contains the samples used throughout the Visual Basic and .NET documentation.|
-|[Samples browser](https://docs.microsoft.com/samples/browse/?languages=vb)|Contains code samples written in Visual Basic|
+|[Samples browser](/samples/browse/?languages=vb)|Contains code samples written in Visual Basic|
 
 ### Forums
 
 |URL|Description|
 |----------|----------------|
-|[Microsoft Q&A](https://docs.microsoft.com/answers/topics/dotnet-visual-basic.html)|Technical questions about Visual Basic programming language.|
+|[Microsoft Q&A](/answers/topics/dotnet-visual-basic.html)|Technical questions about Visual Basic programming language.|
 
 ### Videos and webcasts
 

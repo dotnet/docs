@@ -50,7 +50,7 @@ You set the **Optimize** option from **Build** properties page for your project 
 Causes the compiler to produce an assembly whose byte-for-byte output is identical across compilations for identical inputs.
 
 ```xml
-<Deterministic></Deterministic>
+<Deterministic>true</Deterministic>
 ```
 
 By default, compiler output from a given set of inputs is unique, since the compiler adds a timestamp and an MVID that is generated from random numbers. You use the `<Deterministic>` option to produce a *deterministic assembly*, one whose binary content is identical across compilations as long as the input remains the same. In such a build, the timestamp and MVID fields will be replaced with values derived from a hash of all the compilation inputs. The compiler considers the following inputs that affect determinism:
@@ -82,7 +82,7 @@ Deterministic compilation can be used for establishing whether a binary is compi
 The **ProduceOnlyReferenceAssembly** option indicates that a reference assembly should be output instead of an implementation assembly, as the primary output. The **ProduceOnlyReferenceAssembly** parameter silently disables outputting PDBs, as reference assemblies cannot be executed.
 
 ```xml
-<ProduceOnlyReferenceAssembly></ProduceOnlyReferenceAssembly>
+<ProduceOnlyReferenceAssembly>true</ProduceOnlyReferenceAssembly>
 ```
 
 Reference assemblies are a special type of assembly. Reference assemblies contain only the minimum amount of metadata required to represent the library's public API surface. They include declarations for all members that are significant when referencing an assembly in build tools, but exclude all member implementations and declarations of private members that have no observable impact on their API contract. For more information, see [Reference assemblies](../../../standard/assembly/reference-assemblies.md).

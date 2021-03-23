@@ -205,7 +205,7 @@ gRPC is a modern, high-performance framework that evolves the age-old [remote pr
 - Bidirectional full-duplex communication for sending both client requests and server responses simultaneously.
 - Built-in streaming enabling requests and responses to asynchronously stream large data sets.
 
-To learn more, check out the [gRPC overview](https://docs.microsoft.com/dotnet/architecture/cloud-native/grpc#what-is-grpc) from the [Architecting Cloud-Native .NET Apps for Azure](https://docs.microsoft.com/dotnet/architecture/cloud-native/) eBook.  
+To learn more, check out the [gRPC overview](../cloud-native/grpc.md#what-is-grpc) from the [Architecting Cloud-Native .NET Apps for Azure](../cloud-native/index.md) eBook.  
 
 ## Dapr and service meshes
 

@@ -39,6 +39,6 @@ You can invoke the C# compiler by typing the name of its executable file (*csc.e
 
 For .NET Framework projects, you can also run *csc.exe* from the command line. Every compiler option is available in two forms: **-option** and **/option**. In .NET Framework web projects, you specify options for compiling code-behind in the *web.config* file. For more information, see [\<compiler> Element](../../../framework/configure-apps/file-schema/compiler/compiler-element.md).
 
-If you use the **Developer Command Prompt for Visual Studio** window, all the necessary environment variables are set for you. For information on how to access this tool, see [Developer Command Prompt for Visual Studio](../../../framework/tools/developer-command-prompt-for-vs.md).
+If you use the **Developer Command Prompt for Visual Studio** window, all the necessary environment variables are set for you. For information on how to access this tool, see [Developer Command Prompt for Visual Studio](/visualstudio/ide/reference/command-prompt-powershell).
 
 The *csc.exe* executable file is usually located in the Microsoft.NET\Framework\\*\<Version>* folder under the *Windows* directory. Its location might vary depending on the exact configuration of a particular computer. If more than one version of .NET Framework is installed on your computer, you'll find multiple versions of this file. For more information about such installations, see [How to: determine which versions of the .NET Framework are installed](../../../framework/migration-guide/how-to-determine-which-versions-are-installed.md).

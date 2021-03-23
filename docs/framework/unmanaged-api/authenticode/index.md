@@ -34,7 +34,6 @@ Supports the Authenticode XrML license creation and verification module.
  [AXL_AUTHENTICODE_TIMESTAMPER_INFO Structure](axl-authenticode-timestamper-info-structure.md)  
  Defines the Authenticode time stamper information.  
 
-
 ## Requirements
 
 **Library**: clr.dll

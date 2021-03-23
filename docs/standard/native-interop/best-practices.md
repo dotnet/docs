@@ -264,7 +264,7 @@ The `long` in C is defined to have ["at least 32"](https://en.cppreference.com/w
 | Windows     | 32     | 32     |
 | macOS/\*nix | 32     | 64     |
 
-These differences make authoring cross-platform P/Invokes difficult when the native function is defined to use `long` on all platforms. It is recommended for .NET 5 and prior .NET version to declare a Windows and a non-Windows signature to handle the problem.
+These differences make authoring cross-platform P/Invokes difficult when the native function is defined to use `long` on all platforms. When targeting .NET 5 and prior .NET versions, you should declare separate Windows and non-Windows signatures to handle the problem.
 
 ```csharp
     // Cross platform C function

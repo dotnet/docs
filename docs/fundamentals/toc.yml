@@ -1373,6 +1373,11 @@ items:
       href: ../core/docker/build-container.md
     - name: Container tools in Visual Studio
       href: /visualstudio/containers/overview
+- name: DevOps
+  items:
+  - name: Create a GitHub Action with .NET
+    href: ../devops/create-dotnet-github-action.md
+    displayName: "continuous integration, continuous deployment, ci, cd, ci/cd, github, github action, github actions, lifecycle"
 - name: Fundamental coding components
   items:
   - name: Base types overview

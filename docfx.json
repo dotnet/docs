@@ -16,6 +16,7 @@
         "dest": ".",
         "exclude": [
           "samples/**/*.*",
+          "**/snippets/**",
           "**/includes/**",
           "**/util/**",
           "***/contributing.md"

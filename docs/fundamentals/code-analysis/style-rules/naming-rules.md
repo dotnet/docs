@@ -170,5 +170,5 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 
 - [Language rules](language-rules.md)
 - [Formatting rules](formatting-rules.md)
-- [Roslyn naming rules](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
+- [Roslyn naming rules](https://github.com/dotnet/roslyn/blob/main/.editorconfig#L63)
 - [.NET code style rules reference](index.md)

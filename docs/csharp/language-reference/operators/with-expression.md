@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # with expression (C# reference)
 
-Available in C# 9.0 and later, a `with` expression produces a copy of its [record](../../whats-new/csharp-9.md#record-types) operand with the specified properties and fields modified:
+Available in C# 9.0 and later, a `with` expression produces a copy of its [record](../builtin-types/record.md) operand with the specified properties and fields modified:
 
 :::code language="csharp" source="snippets/with-expression/BasicExample.cs" :::
 
@@ -39,3 +39,4 @@ For more information, see the following sections of the [records feature proposa
 
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
+- [Records](../builtin-types/record.md)

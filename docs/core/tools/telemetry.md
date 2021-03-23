@@ -136,4 +136,4 @@ Because of this, custom builds of the .NET SDK shouldn't be located in directori
 ## See also
 
 - [.NET CLI Telemetry Data](https://dotnet.microsoft.com/platform/telemetry)
-- [Telemetry reference source (dotnet/sdk repository)](https://github.com/dotnet/sdk/tree/master/src/Cli/dotnet/Telemetry)
+- [Telemetry reference source (dotnet/sdk repository)](https://github.com/dotnet/sdk/tree/main/src/Cli/dotnet/Telemetry)

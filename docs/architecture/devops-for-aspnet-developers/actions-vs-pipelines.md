@@ -7,7 +7,7 @@ ms.date: 03/04/2021
 
 # Compare and contrast GitHub Actions and Azure Pipelines
 
-[GitHub Actions](https://docs.github.com/actions) and [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops) have a common history. In fact, the Actions agent is a fork of the Pipelines agent. There are many similarities between GitHub Actions and Azure Pipelines and it's worth comparing and contrasting them.
+[GitHub Actions](https://docs.github.com/actions) and [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops&preserve-view=true) have a common history. In fact, the Actions agent is a fork of the Pipelines agent. There are many similarities between GitHub Actions and Azure Pipelines and it's worth comparing and contrasting them.
 
 ## Pipelines as code
 
@@ -22,13 +22,13 @@ Before you compare GitHub Actions and Azure Pipelines, you should consider the b
 > * Can usually be templatized to empower teams to create standard processes across multiple repositories.
 
 > [!NOTE]
-> The term "pipelines" can also be referred to by several different interchangeable words: _pipeline_, _workflow_ and _build_ are common terms. In this article, references to _Azure Pipelines_ are referring to [YAML Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#define-pipelines-using-yaml-syntax), and not the older UI-based [Classic Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#define-pipelines-using-the-classic-interface).
+> The term "pipelines" can also be referred to by several different interchangeable words: _pipeline_, _workflow_ and _build_ are common terms. In this article, references to _Azure Pipelines_ are referring to [YAML Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#define-pipelines-using-yaml-syntax&preserve-view=true), and not the older UI-based [Classic Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#define-pipelines-using-the-classic-interface&preserve-view=true).
 
 ## Agents and runners
 
 Before you examine pipelines themselves, you should consider how these pipelines _execute_. Both GitHub Actions and Azure Pipelines are really _orchestration engines_: when a pipeline is triggered, the system finds an "agent" and tells the agent to execute the jobs defined in the pipeline file.
 
-Azure Pipelines run on _agents_. The agent is written in .NET, so it'll run wherever .NET can run: Windows, macOS and Linux. Agents can even run in containers. Agents are registered to a [pool](https://docs.microsoft.com/azure/devops/pipelines/agents/pools-queues?view=azure-devops) in Azure Pipelines or to a repository or organization in GitHub. Agents can be _hosted_ or _private_.
+Azure Pipelines run on _agents_. The agent is written in .NET, so it'll run wherever .NET can run: Windows, macOS and Linux. Agents can even run in containers. Agents are registered to a [pool](https://docs.microsoft.com/azure/devops/pipelines/agents/pools-queues?view=azure-devops&preserve-view=true) in Azure Pipelines or to a repository or organization in GitHub. Agents can be _hosted_ or _private_.
 
 GitHub Workflows execute on _runners_. The runner code is essentially a fork of the Azure Pipelines code, so it's very similar. It's also cross-platform and you can also use _hosted_ or _self-hosted_ runners.
 
@@ -61,14 +61,14 @@ Every Azure DevOps account has a hosted pool with a single agent that can run on
 
 Feature|GitHub|Azure Pipelines|Links
 --|--|--|--
-Hosted agents for public repos/projects|Free|[No free minutes](https://devblogs.microsoft.com/devops/change-in-azure-pipelines-grant-for-public-projects/) for public projects|[Azure Pipelines](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#capabilities-and-limitations) [GitHub](https://github.com/features/actions)
+Hosted agents for public repos/projects|Free|[No free minutes](https://devblogs.microsoft.com/devops/change-in-azure-pipelines-grant-for-public-projects/) for public projects|[Azure Pipelines](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#capabilities-and-limitations&preserve-view=true) [GitHub](https://github.com/features/actions)
 Hosted agents for private repos/projects|2,000 minutes free per month, 3,000 minutes for Pro and Team licenses, 50,000 minutes for Enterprise license. Additional minutes may be purchased.|One free parallel job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month. You can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours).
 Cross-platform|Yes|Yes|
-Scale set agents|No|Yes|Read about scale-set agents [here](/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops)
+Scale set agents|No|Yes|Read about scale-set agents [here](/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops&preserve-view=true)
 
 ## Comparison of GitHub Actions and Azure Pipelines
 
-Azure Pipelines (YAML pipelines) provide a mature set of features such as approvals, artifact storage, deployment jobs, environments, gates, stages, templates, triggers, variable groups and more. For a full list of Azure Pipelines features, refer to the table [here](/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#feature-availability).
+Azure Pipelines (YAML pipelines) provide a mature set of features such as approvals, artifact storage, deployment jobs, environments, gates, stages, templates, triggers, variable groups and more. For a full list of Azure Pipelines features, refer to the table [here](/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#feature-availability&preserve-view=true).
 
 GitHub Actions are evolving rapidly and provide a set of features such as triggers for almost all GitHub events, artifact storage, environments and environment rules, starter templates, matrices and more. Read more about the full feature set of GitHub Actions [here](https://docs.github.com/actions).
 

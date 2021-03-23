@@ -12,7 +12,7 @@ uid: azure/devops/index
 
 [![Cover Image](./media/cover-large.png)](https://aka.ms/devopsbook)
 
-By [Cam Soper](https://twitter.com/camsoper), [Scott Addie](https://twitter.com/scottaddie) and [Colin Dembovsky](https://twitter.com/colindembovsky)
+By [Cam Soper](https://twitter.com/camsoper), [Scott Addie](https://twitter.com/scottaddie), and [Colin Dembovsky](https://twitter.com/colindembovsky)
 
 This guide is available as a [downloadable PDF e-book](https://aka.ms/devopsbook).
 

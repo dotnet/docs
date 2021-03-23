@@ -55,4 +55,4 @@ There was a problem creating the file.
 
 ## See also
 
-- [Visual Studio feedback options](/visualstudio/ide/feedback-options)
+- [Talk to Us](/visualstudio/ide/feedback-options)

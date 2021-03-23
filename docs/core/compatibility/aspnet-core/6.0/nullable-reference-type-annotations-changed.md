@@ -95,10 +95,6 @@ Update code calling these APIs to reflect the revised nullability contracts.
 * <xref:Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions.ForwardDefaultSelector?displayProperty=nameWithType>
 * <xref:Microsoft.Net.Http.Headers.RangeConditionHeaderValue.%23ctor(Microsoft.Net.Http.Headers.EntityTagHeaderValue)?displayProperty=nameWithType>
 
-## See also
-
-- [Nullable reference type annotation changes in core .NET libraries](../../core-libraries/6.0/nullable-ref-type-annotation-changes.md)
-
 <!--
 
 ## Category

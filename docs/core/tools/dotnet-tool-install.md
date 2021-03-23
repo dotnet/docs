@@ -65,15 +65,15 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 ## Options
 
-- **`--add-source <SOURCE>`**
+- **`add-source <SOURCE>`**
 
   Adds an additional NuGet package source to use during installation.
 
-- **`--configfile <FILE>`**
+- **`configfile <FILE>`**
 
   The NuGet configuration (*nuget.config*) file to use.
 
-- **`--framework <FRAMEWORK>`**
+- **`framework <FRAMEWORK>`**
 
   Specifies the [target framework](../../standard/frameworks.md) to install the tool for. By default, the .NET SDK tries to choose the most appropriate target framework.
 
@@ -85,7 +85,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Prints out a short help for the command.
 
-- **`--tool-path <PATH>`**
+- **`tool-path <PATH>`**
 
   Specifies the location where to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Omitting both `--global` and `--tool-path` specifies a local tool installation.
 

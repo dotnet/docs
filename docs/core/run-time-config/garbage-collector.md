@@ -466,7 +466,7 @@ Example:
 ## Standalone GC
 
 - Specifies a path to the library containing the garbage collector that the runtime intends to load.
-- For more information, see [Standalone GC loader design](https://github.com/dotnet/runtime/blob/master/docs/design/features/standalone-gc-loading.md).
+- For more information, see [Standalone GC loader design](https://github.com/dotnet/runtime/blob/main/docs/design/features/standalone-gc-loading.md).
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |

@@ -50,6 +50,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Alpine                      | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |-----------------------------|---------------|---------------|----------------|
+| ✔️ [3.13](linux-alpine.md)  | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [3.12](linux-alpine.md)  | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [3.11](linux-alpine.md)  | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [3.10](linux-alpine.md)  | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |

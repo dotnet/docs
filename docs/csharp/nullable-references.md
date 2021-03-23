@@ -210,6 +210,6 @@ In the preceding example, the declaration of the array shows it holds non-nullab
 ## See also
 
 - [Draft nullable reference types specification](~/_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md)
-- [Intro to nullable references tutorial](tutorials/nullable-reference-types.md)
+- [Intro to nullable references tutorial](whats-new/tutorials/nullable-reference-types.md)
 - [Migrate an existing codebase to nullable references](tutorials/upgrade-to-nullable-references.md)
 - [**Nullable** (C# Compiler option)](language-reference/compiler-options/language.md#nullable)

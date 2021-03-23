@@ -48,13 +48,13 @@ Supported processor architectures include:
 
 .NET lets you use platform-specific capabilities, such as operating system APIs. Examples are Windows Forms and WPF on Windows and the native bindings to each mobile platform from Xamarin.
 
-For more information, see [Supported OS lifecycle policy](https://github.com/dotnet/core/blob/master/os-lifecycle-policy.md) and [.NET RID Catalog](rid-catalog.md).
+For more information, see [Supported OS lifecycle policy](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) and [.NET RID Catalog](rid-catalog.md).
 
 ## Open source
 
-.NET is open source, using [MIT and Apache 2 licenses](https://github.com/dotnet/runtime/blob/master/LICENSE.TXT). .NET is a project of the [.NET Foundation](https://dotnetfoundation.org/).
+.NET is open source, using [MIT and Apache 2 licenses](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT). .NET is a project of the [.NET Foundation](https://dotnetfoundation.org/).
 
-For more information, see the [list of project repositories on GitHub.com](https://github.com/dotnet/core/blob/master/Documentation/core-repos.md).
+For more information, see the [list of project repositories on GitHub.com](https://github.com/dotnet/core/blob/main/Documentation/core-repos.md).
 
 ## Support
 
@@ -277,7 +277,7 @@ Here are some examples of types defined in the .NET runtime libraries:
 * [Serialization](../standard/serialization/index.md) utility types, such as <xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> and <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>.
 * High-performance types, such as <xref:System.Span%601?displayProperty=nameWithType>, <xref:System.Numerics.Vector?displayProperty=nameWithType>, and [Pipelines](../standard/io/pipelines.md).
 
-For more information, see the [Runtime libraries overview](../standard/runtime-libraries-overview.md). The source code for the libraries is in [the GitHub dotnet/runtime repository](https://github.com/dotnet/runtime/tree/master/src/libraries).
+For more information, see the [Runtime libraries overview](../standard/runtime-libraries-overview.md). The source code for the libraries is in [the GitHub dotnet/runtime repository](https://github.com/dotnet/runtime/tree/main/src/libraries).
 
 ### Extensions to the runtime libraries
 

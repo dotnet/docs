@@ -67,6 +67,6 @@ available [to run locally on your machine](arrays-and-collections.md).
 
 This tutorial assumes that you've finished the lessons listed above.
 
-## [101 Linq Samples](https://github.com/dotnet/try-samples/tree/master/101-linq-samples)
+## [101 Linq Samples](https://github.com/dotnet/try-samples/tree/main/101-linq-samples)
 
 This sample requires the [dotnet-try](https://github.com/dotnet/try/blob/main/README.md#setup) global tool. Once you install the tool, and clone the [try-samples](https://github.com/dotnet/try-samples) repo, you can learn Language Integrated Query (LINQ) through a set of 101 samples you can run interactively. You can explore different ways to query, explore, and transform data sequences.

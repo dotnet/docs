@@ -122,7 +122,7 @@ Record types have a compiler-generated <xref:System.Object.ToString%2A> method t
 For reference types, the type name of the object that the property refers to is displayed instead of the property value. In the following example, the array is a reference type, so `System.String[]` is displayed instead of the actual array element values:
 
 ```
-Person { FirstName = Nancy, LastName = Davolio, ChildNames = System.String[] } 
+Person { FirstName = Nancy, LastName = Davolio, ChildNames = System.String[] }
 ```
 
 To implement this feature, the compiler synthesizes a virtual `PrintMembers` method and a <xref:System.Object.ToString%2A> override.

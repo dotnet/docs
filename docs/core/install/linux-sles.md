@@ -85,7 +85,7 @@ When you install with a package manager, these libraries are installed for you. 
 
 If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need to install **compat-openssl10**.
 
-For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
+For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
 
 For .NET apps that use the *System.Drawing.Common* assembly, you'll also need the following dependency:
 

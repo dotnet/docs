@@ -38,16 +38,16 @@ The .NET IoT Libraries are composed of two NuGet packages:
 
 The `Iot.Device.Bindings` package:
 
-* Contains [device bindings](https://github.com/dotnet/iot/blob/master/src/devices/README.md) to streamline app development by wrapping System.Device.Gpio.
+* Contains [device bindings](https://github.com/dotnet/iot/blob/main/src/devices/README.md) to streamline app development by wrapping System.Device.Gpio.
 * Is community-supported, and additional bindings are added continually.
 
 Commonly used device bindings include:
 
-- [CharacterLcd - LCD character display](https://github.com/dotnet/iot/tree/master/src/devices/CharacterLcd)
-- [SN74HC595 - 8-bit shift register](https://github.com/dotnet/iot/tree/master/src/devices/Sn74hc595)
-- [BrickPi3](https://github.com/dotnet/iot/tree/master/src/devices/BrickPi3)
-- [Max7219 - LED Matrix driver](https://github.com/dotnet/iot/tree/master/src/devices/Max7219)
-- [RGBLedMatrix - RGB LED Matrix](https://github.com/dotnet/iot/tree/master/src/devices/RGBLedMatrix)
+- [CharacterLcd - LCD character display](https://github.com/dotnet/iot/tree/main/src/devices/CharacterLcd)
+- [SN74HC595 - 8-bit shift register](https://github.com/dotnet/iot/tree/main/src/devices/Sn74hc595)
+- [BrickPi3](https://github.com/dotnet/iot/tree/main/src/devices/BrickPi3)
+- [Max7219 - LED Matrix driver](https://github.com/dotnet/iot/tree/main/src/devices/Max7219)
+- [RGBLedMatrix - RGB LED Matrix](https://github.com/dotnet/iot/tree/main/src/devices/RGBLedMatrix)
 
 ## Supported operating systems
 

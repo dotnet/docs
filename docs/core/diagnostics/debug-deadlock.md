@@ -262,7 +262,7 @@ The second thread is similar. It's also trying to acquire a lock that it already
 - [dotnet-trace](dotnet-trace.md) to list processes
 - [dotnet-counters](dotnet-counters.md) to check managed memory usage
 - [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file
-- [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/master/documentation/tutorial)
+- [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/main/documentation/tutorial)
 
 ## Next steps
 

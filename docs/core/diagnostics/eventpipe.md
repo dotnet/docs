@@ -17,7 +17,7 @@ This article is a high-level overview of EventPipe describing when and how to us
 
 EventPipe aggregates events emitted by runtime components - for example, the Just-In-Time compiler or the garbage collector - and events written from [EventSource](xref:System.Diagnostics.Tracing.EventSource) instances in the libraries and user code.
 
-The events are then serialized and can be written directly to a file or consumed through a Diagnostics Port from out-of-proces. On Windows, Diagnostic Ports are implemented as `NamedPipe`s. On non-Windows platforms, such as Linux or macOS, it is implemented using Unix Domain Sockets. For more information about the Diagnostics Port and how to interact with it via its custom inter-process communication protocol, see the [diagnostics IPC protocol documentation](https://github.com/dotnet/diagnostics/blob/master/documentation/design-docs/ipc-protocol.md).
+The events are then serialized and can be written directly to a file or consumed through a Diagnostics Port from out-of-proces. On Windows, Diagnostic Ports are implemented as `NamedPipe`s. On non-Windows platforms, such as Linux or macOS, it is implemented using Unix Domain Sockets. For more information about the Diagnostics Port and how to interact with it via its custom inter-process communication protocol, see the [diagnostics IPC protocol documentation](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/ipc-protocol.md).
 
 EventPipe then writes the serialized events in the `.nettrace` file format, either as a stream via Diagnostic Ports or directly to a file. To learn more about the EventPipe serialization format, refer to the [EventPipe format documentation](https://github.com/microsoft/perfview/blob/master/src/TraceEvent/EventPipe/EventPipeFormat.md).
 
@@ -44,7 +44,7 @@ You can use EventPipe to trace your .NET application in many ways:
 
 * Use one of the [diagnostics tools](#tools-that-use-eventpipe) that are built on top of EventPipe.
 
-* Use [Microsoft.Diagnostics.NETCore.Client](https://github.com/dotnet/diagnostics/blob/master/documentation/diagnostics-client-library-instructions.md) library to write your own tool to configure and start EventPipe sessions yourself.
+* Use [Microsoft.Diagnostics.NETCore.Client](https://github.com/dotnet/diagnostics/blob/main/documentation/diagnostics-client-library-instructions.md) library to write your own tool to configure and start EventPipe sessions yourself.
 
 * Use [environment variables](#trace-using-environment-variables) to start EventPipe.
 

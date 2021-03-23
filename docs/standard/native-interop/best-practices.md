@@ -251,6 +251,59 @@ finally
 }
 ```
 
+## Windows and non-Windows data type considerations
+
+There are types in the C language that have latitude in how they are defined. When writing cross-platform interop, cases can arise where platforms differ and can cause issues if not considered.
+
+### C `long`
+
+The `long` in C is defined to have ["at least 32"](https://en.cppreference.com/w/c/language/arithmetic_types) bits. This means there is a minimum required but platforms are not limited to that. The table below illustrates the differences in provided bits for the C `long` data type between platforms.
+
+|             | 32-bit | 64-bit |
+|:------------|:-------|:-------|
+| Windows     | 32     | 32     |
+| macOS/\*nix | 32     | 64     |
+
+These differences make authoring cross-platform P/Invokes difficult when the native function is defined to use `long` on all platforms. It is recommended for .NET 5 and prior .NET version to declare a Windows and a non-Windows signature to handle the problem.
+
+```csharp
+    // Cross platform C function
+    // void Function(long a);
+#if WINDOWS
+    [DllImport("NativeLib", EntryPoint = "Function")]
+    extern static void Function32(int a);
+    [DllImport("NativeLib", EntryPoint = "Function")]
+    extern static void Function64(int a);
+#else
+    [DllImport("NativeLib", EntryPoint = "Function")]
+    extern static void Function32(int a);
+    [DllImport("NativeLib", EntryPoint = "Function")]
+    extern static void Function64(long a);
+#endif
+    
+// Usage
+if (IntPtr.Size == 4)
+{
+    Function32(a);
+}
+else
+{
+    Function64(a);
+}
+```
+
+In .NET 6 a new type has been introduced to help ameliorate this issue - [`CLong` and `CULong`](https://github.com/dotnet/runtime/issues/13788). In .NET 6 the following is now possible.
+
+```csharp
+// Cross platform C function
+// void Function(long a);
+[DllImport("NativeLib")]
+extern static void Function(CLong a);
+    
+// Usage
+Function(a);
+```
+
 ## Structs
 
 Managed structs are created on the stack and aren't removed until the method returns. By definition then, they are "pinned" (it won't get moved by the GC). You can also simply take the address in unsafe code blocks if native code won't use the pointer past the end of the current method.

@@ -92,7 +92,7 @@ In this case `NonInheritedAttribute` isn't applied to `DClass` via inheritance.
 
 ## `ModuleInitializer` attribute
 
-The `ModuleInitializer` attribute marks a method that is called by the runtime when the assembly loads. `ModuleInitializer` is an alias for <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute>.
+Starting with C# 9, the `ModuleInitializer` attribute marks a method that the runtime calls when the assembly loads. `ModuleInitializer` is an alias for <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute>.
 
 The `ModuleInitializer` attribute can only be applied to a method that:
 
@@ -106,7 +106,7 @@ The `ModuleInitializer` attribute can only be applied to a method that:
 
 The `ModuleInitializer` attribute can be applied to multiple methods. In that case, the order in which the runtime calls them is deterministic but not specified.
 
-The following example illustrates multiple module initializer methods. The `Init1` and `Init2` methods run before `Main`, and each adds a string to the `Text` property. So when `Main` runs, the `Text` property already has strings from both initializer methods.
+The following example illustrates use of multiple module initializer methods. The `Init1` and `Init2` methods run before `Main`, and each adds a string to the `Text` property. So when `Main` runs, the `Text` property already has strings from both initializer methods.
 
 :::code language="csharp" source="snippets/ModuleInitializerExampleMain.cs" :::
 
@@ -116,13 +116,24 @@ A typical use for module initializers is by source code generators, as they some
 
 ## `SkipLocalsInit` attribute
 
-The `SkipLocalsInit` attribute prevents the compiler from emitting the `localsinit` flag. The `SkipLocalsInit` attribute is a single-use attribute and can be applied to any entity that allows attributes. `SkipLocalsInit` is an alias for <xref:System.Runtime.CompilerServices.SkipLocalsInitAttribute>.
+Starting in c# 9, the `SkipLocalsInit` attribute prevents the compiler from setting the `.locals init` flag when emitting to metadata. The `SkipLocalsInit` attribute is a single-use attribute and can be applied to any entity that allows attributes. `SkipLocalsInit` is an alias for <xref:System.Runtime.CompilerServices.SkipLocalsInitAttribute>.
 
-The `localsinit` flag causes the CLR to initialize all of the local variables declared in a method to their default values. Since the compiler also makes sure that you never use a variable before assigning some value to it, localsinit is typically not necessary, and eliminating it can improve performance.
+The `.locals init` flag causes the CLR to initialize all of the local variables declared in a method to their default values. Since the compiler also makes sure that you never use a variable before assigning some value to it, `.locals init` is typically not necessary. However, the extra zero-initialization may have measurable performance impact in some scenarios, such as when you use `stackalloc` to allocate an array on the stack. In those cases, you can add the `SkipLocalsInit` attribute. You can add it to a method, a property, a class, a struct, an interface, or a module but not to an assembly. If applied to a method directly, the attribute applies to that method and all its nested functions, including lambdas and local functions. If applied to a type or module, it applies to all methods nested inside. This attribute does not affect abstract methods, as it only affects code generated for the implementation.
 
-Even if youMeaning, regardless to which default value you have chosen to set your local variable to (in our case, the variable x gets the value of 4), the platform will always make sure that before our code will execute, the local variable x will necesserily be initialized to its legal, default value (in this case, 0).
+This attribute requires the [AllowUnsafeBlocks](../compiler-options/language.md#allowunsafeblocks) compiler option. This is to signal that in some cases code could view unassigned memory (for example, reading from uninitialized stack-allocated memory).
 
-In Microsoft's implementation of the CLI, this flag always exists in the method's header (assuming there are local variables declared in its body). This could make us wonder why would the compiler insist on reporting an error every time a programmer forgets the initialize its local variables before using them. This constraint held by the compiler may seem redundant, but in fact, there's several reason to why it is quite necessary.
+The following example illustrates the effect of `SkipLocalsInit` attribute on a method that uses `stackalloc`. The method displays whatever was in memory when the array of integers was allocated.
+
+:::code language="csharp" source="snippets/SkipLocalsInitExample.cs" id="ReadUninitializedMemory":::
+
+To try this code yourself, remember to set the `unsafe` compiler option in your *.csproj* file:
+
+```xml
+<PropertyGroup>
+  ...
+  <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+</PropertyGroup>
+```
 
 ## See also
 

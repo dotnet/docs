@@ -10,6 +10,7 @@ namespace AttributeExamples
             TraceExample.Main();
             ObsoleteProgram.Main();
             ModuleInitializerExampleMain.Main();
+            SkipLocalsInitExample.Main();
         }
     }
 }

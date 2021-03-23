@@ -1,60 +1,37 @@
 ﻿'<snippet03>
-Imports System.Collections.Concurrent
+Imports System.IO
+Imports System.Threading
+Imports System.Threading.Tasks
+Imports System.Drawing
 
-Namespace ParallelExample
-    Class Program
-        Shared Sub Main()
-            ' 2 million
-            Dim limit = 2_000_000
-            Dim numbers = Enumerable.Range(0, limit).ToList()
+Module ForEachDemo
 
-            Dim watch = Stopwatch.StartNew()
-            Dim primeNumbersFromForeach = GetPrimeList(numbers)
-            watch.Stop()
+    Sub Main()
+        ' A simple source for demonstration purposes. Modify this path as necessary.
+        Dim files As String() = Directory.GetFiles("C:\Users\Public\Pictures\Sample Pictures", "*.jpg")
+        Dim newDir As String = "C:\Users\Public\Pictures\Sample Pictures\Modified"
+        Directory.CreateDirectory(newDir)
 
-            Dim watchForParallel = Stopwatch.StartNew()
-            Dim primeNumbersFromParallelForeach = GetPrimeListWithParallel(numbers)
-            watchForParallel.Stop()
+        Parallel.ForEach(files, Sub(currentFile)
+                                    ' The more computational work you do here, the greater 
+                                    ' the speedup compared to a sequential foreach loop.
+                                    Dim filename As String = Path.GetFileName(currentFile)
+                                    Dim bitmap As New Bitmap(currentFile)
 
-            Console.WriteLine($"Classical foreach loop | Total prime numbers : {primeNumbersFromForeach.Count} | Time Taken : {watch.ElapsedMilliseconds} ms.")
-            Console.WriteLine($"Parallel.ForEach loop  | Total prime numbers : {primeNumbersFromParallelForeach.Count} | Time Taken : {watchForParallel.ElapsedMilliseconds} ms.")
+                                    bitmap.RotateFlip(System.Drawing.RotateFlipType.Rotate180FlipNone)
+                                    bitmap.Save(Path.Combine(newDir, filename))
 
-            Console.WriteLine("Press any key to exit.")
-            Console.ReadLine()
-        End Sub
+                                    ' Peek behind the scenes to see how work is parallelized.
+                                    ' But be aware: Thread contention for the Console slows down parallel loops!!!
 
-        ' GetPrimeList returns Prime numbers by using sequential ForEach
-        Private Shared Function GetPrimeList(numbers As IList(Of Integer)) As IList(Of Integer)
-            Return numbers.Where(AddressOf IsPrime).ToList()
-        End Function
+                                    Console.WriteLine($"Processing {filename} on thread {Thread.CurrentThread.ManagedThreadId}")
+                                    'close lambda expression and method invocation
+                                End Sub)
 
-        ' GetPrimeListWithParallel returns Prime numbers by using Parallel.ForEach
-        Private Shared Function GetPrimeListWithParallel(numbers As IList(Of Integer)) As IList(Of Integer)
-            Dim primeNumbers = New ConcurrentBag(Of Integer)()
-            Parallel.ForEach(numbers, Sub(number)
 
-                                          If IsPrime(number) Then
-                                              primeNumbers.Add(number)
-                                          End If
-                                      End Sub)
-            Return primeNumbers.ToList()
-        End Function
-
-        ' IsPrime returns true if number is Prime, else false.(https://en.wikipedia.org/wiki/Prime_number)
-        Private Shared Function IsPrime(number As Integer) As Boolean
-            If number < 2 Then
-                Return False
-            End If
-
-            For divisor = 2 To Math.Sqrt(number)
-
-                If number Mod divisor = 0 Then
-                    Return False
-                End If
-            Next
-
-            Return True
-        End Function
-    End Class
-End Namespace
+        ' Keep the console window open in debug mode.
+        Console.WriteLine("Processing complete. Press any key to exit.")
+        Console.ReadKey()
+    End Sub
+End Module
 '</snippet03>

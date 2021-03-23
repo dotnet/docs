@@ -2294,8 +2294,16 @@ items:
     items:
     - name: .NET Core 2.0 to 2.1
       href: ../core/migration/20-21.md
+    - name: Migrate from project.json
+      href: ../core/migration/index.md
+    - name: Map between project.json and csproj
+      href: ../core/tools/project-json-to-csproj.md
     - name: Map AssemblyInfo attributes to properties
       href: ../core/migration/assembly-info.md
+    - name: Changes in CLI overview
+      href: ../core/tools/cli-msbuild-architecture.md
+    - name: Migrate from DNX
+      href: ../core/migration/from-dnx.md
   - name: Port from .NET Framework
     items:
     - name: Overview

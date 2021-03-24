@@ -257,7 +257,7 @@ There are types in the C language that have latitude in how they are defined. Wh
 
 ### C `long`
 
-The `long` in C is defined to have ["at least 32"](https://en.cppreference.com/w/c/language/arithmetic_types) bits. This means there is a minimum required but platforms are not limited to that. The table below illustrates the differences in provided bits for the C `long` data type between platforms.
+The `long` keyword in C is defined to have ["at least 32"](https://en.cppreference.com/w/c/language/arithmetic_types) bits. This means there is a minimum required but platforms are not limited to that. The table below illustrates the differences in provided bits for the C `long` data type between platforms.
 
 |             | 32-bit | 64-bit |
 |:------------|:-------|:-------|

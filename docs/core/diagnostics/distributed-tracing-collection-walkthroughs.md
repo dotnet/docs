@@ -10,7 +10,7 @@ ms.date: 03/14/2021
 **This article applies to: ✔️** .NET Core 2.1 and later versions **and** .NET Framework 4.5 and later versions
 
 Instrumented code can create <xref:System.Diagnostics.Activity> objects as part of a distributed trace, but the information
-in these objects needs to be collected into a centralized persistant store so that the entire trace can be
+in these objects needs to be collected into centralized storage so that the entire trace can be
 reviewed later. In this tutorial you will collect the distributed trace telemetry in different ways so that it is
 available to diagnose application issues when needed. See
 [the instrumentation tutorial](distributed-tracing-instrumentation-walkthroughs.md) if you need to add new instrumentation.
@@ -19,11 +19,15 @@ available to diagnose application issues when needed. See
 
 ### Prerequisites
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
+- [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
 
 ### Create an example application
 
-First you will create an example application that has some distributed trace instrumentation but nothing is being collected.
+Before any distributed trace telemetry can be collected we need to produce it. Often this instrumentation might be
+in libraries but for simplicity you will create a small app that has some example instrumentation using
+<xref:System.Diagnostics.ActivitySource.StartActivity%2A>. At this point no collection is happening yet,
+StartActivity() has no side-effect and returns null. See
+[the instrumentation tutorial](distributed-tracing-instrumentation-walkthroughs.md) for more details.
 
 ```dotnetcli
 dotnet new console
@@ -213,7 +217,7 @@ it to the console.
 
 ### Prerequisites
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
+- [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
 
 ### Create an example application
 
@@ -334,9 +338,10 @@ the W3C TraceContext ID format by default but earlier .NET versions default to u
 during the lifetime of an Activity.
 
 - <xref:System.Diagnostics.ActivityListener.ShouldListenTo> - Each
-Activity is associated with an ActivitySource which acts as a namespace for a set of Activities.
-This callback is invoked once for each ActivitySource in the process. Returning true indicates
-the listener should be notified about Activities associated with this source.
+Activity is associated with an ActivitySource which acts as its namespace and producer.
+This callback is invoked once for each ActivitySource in the process. Return true
+if you are interested in performing sampling or being notified about start/stop events
+for Activities produced by this source.
 - <xref:System.Diagnostics.ActivityListener.Sample> - By default
 <xref:System.Diagnostics.ActivitySource.StartActivity%2A> does not
 create an Activity object unless some ActivityListener indicates it should be sampled. Returning

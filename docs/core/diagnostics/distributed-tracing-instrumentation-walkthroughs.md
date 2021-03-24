@@ -17,7 +17,7 @@ produced by this instrumentation.
 
 ## Prerequisites
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
+- [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
 
 ## An initial app
 

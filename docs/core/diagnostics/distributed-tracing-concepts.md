@@ -82,12 +82,13 @@ W3C TraceContext ID format .NET will also use the HTTP headers recommended by
 [the standard](https://www.w3.org/TR/trace-context/) to transmit this information. When using the
 <xref:System.Diagnostics.ActivityIdFormat.Hierarchical> ID format
 .NET uses a custom request-id HTTP header to transmit the ID. Unlike many other language runtimes
-.NET in-box libraries natively understand how to decode and encode Activity IDs on HTTP messages
-as well as how to flow the ID through sychronous and asynchronous calls. This means that .NET
-applications that receive and emit HTTP messages participate in flowing distributed trace IDs
-automatically, with no special coding by the app developer nor 3rd party library dependencies.
-3rd party libraries may add support for transmitting IDs over non-HTTP message protocols or
-supporting custom encoding conventions for HTTP.
+.NET in-box libraries such as the ASP.NET web server and System.Net.Http natively understand how to
+decode and encode Activity IDs on HTTP messages. The runtime also understands how to flow the ID
+through sychronous and asynchronous calls. This means that .NET applications that receive and
+emit HTTP messages participate in flowing distributed trace IDs automatically, with no special
+coding by the app developer nor 3rd party library dependencies. 3rd party libraries may add
+support for transmitting IDs over non-HTTP message protocols or supporting custom encoding
+conventions for HTTP.
 
 ### Collecting traces
 
@@ -115,7 +116,7 @@ conventions.
 For improved performance in high throughput applications, distributed tracing on .NET supports
 sampling only a subset of requests rather than recording all of them. For activites created with
 the recommended <xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=nameWithType>
-API, logging libraries can control sampling with the
+API, telemetry collection libraries can control sampling with the
 <xref:System.Diagnostics.ActivityListener.Sample%2A?displayProperty=nameWithType> callback.
 The logging library can elect not to create the Activity at all, to create it with minimal
 information necessary to propagate distributing tracing IDs, or to populate it with complete

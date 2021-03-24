@@ -1,7 +1,7 @@
 ---
-title: "Decrypting Data"
+title: "Decrypting data"
 description: Learn how to decrypt data in .NET, using a symmetric algorithm or an asymmetric algorithm.
-ms.date: 07/16/2020
+ms.date: 03/22/2021
 dev_langs:
   - "csharp"
   - "vb"
@@ -13,11 +13,11 @@ helpviewer_keywords:
 ms.assetid: 9b266b6c-a9b2-4d20-afd8-b3a0d8fd48a0
 ---
 
-# Decrypting Data
+# Decrypting data
 
 Decryption is the reverse operation of encryption. For secret-key encryption, you must know both the key and IV that were used to encrypt the data. For public-key encryption, you must know either the public key (if the data was encrypted using the private key) or the private key (if the data was encrypted using the public key).
 
-## Symmetric Decryption
+## Symmetric decryption
 
 The decryption of data encrypted with symmetric algorithms is similar to the process used to encrypt data with symmetric algorithms. The <xref:System.Security.Cryptography.CryptoStream> class is used with symmetric cryptography classes provided by .NET to decrypt data read from any managed stream object.
 
@@ -25,12 +25,14 @@ The following example illustrates how to create a new instance of the default im
 
 ```vb
 Dim aes As Aes = Aes.Create()
-Dim cryptStream As New CryptoStream(myStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read)
+Dim cryptStream As New CryptoStream(
+    myStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read)
 ```
 
 ```csharp
 Aes aes = Aes.Create();
-CryptoStream cryptStream = new CryptoStream(myStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read);
+CryptoStream cryptStream = new CryptoStream(
+    myStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read);
 ```
 
 The following example shows the entire process of creating a stream, decrypting the stream, reading from the stream, and closing the streams. A file stream object is created that reads a file named *TestData.txt*. The file stream is then decrypted using the **CryptoStream** class and the **Aes** class. This example specifies key value that is used in the symmetric encryption example for [Encrypting Data](encrypting-data.md). It does not show the code needed to encrypt and transfer these values.
@@ -40,7 +42,7 @@ The following example shows the entire process of creating a stream, decrypting 
 
 The preceding example uses the same key, and algorithm used in the symmetric encryption example for [Encrypting Data](encrypting-data.md). It decrypts the *TestData.txt* file that is created by that example and displays the original text on the console.
 
-## Asymmetric Decryption
+## Asymmetric decryption
 
 Typically, a party (party A) generates both a public and private key and stores the key either in memory or in a cryptographic key container. Party A then sends the public key to another party (party B). Using the public key, party B encrypts data and sends the data back to party A. After receiving the data, party A decrypts it using the private key that corresponds. Decryption will be successful only if party A uses the private key that corresponds to the public key Party B used to encrypt the data.
 
@@ -74,10 +76,10 @@ symmetricIV = rsa.Decrypt(encryptedSymmetricIV , RSAEncryptionPadding.Pkcs1);
 
 ## See also
 
-- [Generating Keys for Encryption and Decryption](generating-keys-for-encryption-and-decryption.md)
-- [Encrypting Data](encrypting-data.md)
-- [Cryptographic Services](cryptographic-services.md)
-- [Cryptography Model](cryptography-model.md)
-- [Cross-Platform Cryptography](cross-platform-cryptography.md)
+- [Generating keys for encryption and decryption](generating-keys-for-encryption-and-decryption.md)
+- [Encrypting data](encrypting-data.md)
+- [Cryptographic services](cryptographic-services.md)
+- [Cryptography model](cryptography-model.md)
+- [Cross-platform cryptography](cross-platform-cryptography.md)
 - [Timing vulnerabilities with CBC-mode symmetric decryption using padding](vulnerabilities-cbc-mode.md)
-- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)
+- [ASP.NET Core data protection](/aspnet/core/security/data-protection/introduction)

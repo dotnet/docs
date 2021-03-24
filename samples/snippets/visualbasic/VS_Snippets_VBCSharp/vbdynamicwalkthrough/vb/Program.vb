@@ -1,8 +1,8 @@
-﻿Module Module1
+﻿Module Program
 
     Sub Main()
         '<Snippet8>
-        Dim rFile As Object = New ReadOnlyFile("..\..\TextFile1.txt")
+        Dim rFile As Object = New ReadOnlyFile("..\..\..\TextFile1.txt")
         For Each line In rFile.Customer
             Console.WriteLine(line)
         Next

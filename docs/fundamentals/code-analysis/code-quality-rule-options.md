@@ -100,7 +100,7 @@ This section lists some of the available options. To see the full list of availa
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Names of null-check validation methods that validate that arguments passed to the method are non-null | Allowed method name formats (separated by `|`):<br/> - Method name only (includes all methods with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](https://github.com/dotnet/csharplang/blob/main/spec/documentation-comments.md#id-string-format), with an optional `M:` prefix | None | [CA1062](quality-rules/ca1062.md) |
+| Names of null-check validation methods that validate that arguments passed to the method are non-null | Allowed method name formats (separated by `|`):<br/> - Method name only (includes all methods with the name, regardless of the containing type or namespace)<br/> - Fully qualified names in the symbol's [documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format), with an optional `M:` prefix | None | [CA1062](quality-rules/ca1062.md) |
 
 ### additional_string_formatting_methods
 

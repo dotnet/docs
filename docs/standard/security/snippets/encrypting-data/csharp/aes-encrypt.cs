@@ -39,6 +39,8 @@ public class EncryptExample
             //Write to the stream.  
             sWriter.WriteLine("Hello World!");
 
+            cryptStream.FlushFinalBlock();
+
             //Inform the user that the message was written  
             //to the stream.  
             Console.WriteLine("The file was encrypted.");

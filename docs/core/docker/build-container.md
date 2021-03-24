@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with Docker tutorial
 description: In this tutorial, you'll learn how to containerize a .NET Core application with Docker.
-ms.date: 04/27/2020
+ms.date: 03/22/2021
 ms.topic: tutorial
 ms.custom: "mvc"
 #Customer intent: As a developer, I want to containerize my .NET Core app so that I can deploy it to the cloud.
@@ -235,6 +235,13 @@ The `COPY` command tells Docker to copy the specified folder on your computer to
 The `WORKDIR` command changes the **current directory** inside of the container to *App*.
 
 The next command, `ENTRYPOINT`, tells Docker to configure the container to run as an executable. When the container starts, the `ENTRYPOINT` command runs. When this command ends, the container will automatically stop.
+
+> [!TIP]
+> For added security, you can opt-out of the diagnostic pipeline. When you opt-out this allows the container to run as readonly. In order to do this, specify a `COMPlus_EnableDiagnostics` environment variable as `0` (just before the `ENTRYPOINT` step):
+>
+> ```dockerfile
+> ENV COMPlus_EnableDiagnostics=0
+> ```
 
 From your terminal, run `docker build -t counter-image -f Dockerfile .` and when that command finishes, run `docker images`.
 

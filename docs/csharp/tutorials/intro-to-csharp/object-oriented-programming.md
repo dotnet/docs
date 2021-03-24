@@ -186,4 +186,4 @@ This tutorial demonstrated many of the techniques used in Object-Oriented progra
 - You used *Inheritance* when you leveraged the implementation already created in the `BankAccount` class to save code.
 - You used *Polymorphism* when you created `virtual` methods that derived classes could override to create specific behavior for that account type.
 
-Congratulations, you've finished all of our introduction to C# tutorials. To learn more, try more of our [tutorials](../index.md).
+Congratulations, you've finished all of our introduction to C# tutorials. To learn more, try more of our [tutorials](introduction-to-classes.md).

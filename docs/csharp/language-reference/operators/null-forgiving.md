@@ -48,4 +48,4 @@ For more information, see [The null-forgiving operator](~/_csharplang/proposals/
 
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
-- [Tutorial: Design with nullable reference types](../../tutorials/nullable-reference-types.md)
+- [Tutorial: Design with nullable reference types](../../whats-new/tutorials/nullable-reference-types.md)

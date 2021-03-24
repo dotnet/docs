@@ -134,8 +134,6 @@ items:
     href: indexers.md
   - name: Discards
     href: discards.md
-  - name: Generics
-    href: programming-guide/generics/index.md
   - name: Iterators
     href: iterators.md
   - name: Delegates & events
@@ -679,8 +677,6 @@ items:
       href: programming-guide/classes-and-structs/nested-types.md
     - name: Partial Classes and Methods
       href: programming-guide/classes-and-structs/partial-classes-and-methods.md
-    - name: Anonymous Types
-      href: programming-guide/classes-and-structs/anonymous-types.md
     - name: "How to return subsets of element properties in a query"
       href: programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md
   - name: Interfaces
@@ -755,9 +751,6 @@ items:
       href: programming-guide/events/how-to-implement-custom-event-accessors.md
   - name: Generics
     items:
-    - name: Overview
-      displayName: generics
-      href: programming-guide/generics/index.md
     - name: Generic Type Parameters
       href: programming-guide/generics/generic-type-parameters.md
     - name: Constraints on Type Parameters

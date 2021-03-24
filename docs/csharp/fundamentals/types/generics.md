@@ -38,18 +38,6 @@ The following code example shows how client code uses the generic `GenericList<T
 - Generic classes may be constrained to enable access to methods on particular data types.
 - Information on the types that are used in a generic data type may be obtained at run-time by using reflection.
 
-## Related sections
-
-- [Generic Type Parameters](generic-type-parameters.md)
-- [Constraints on Type Parameters](constraints-on-type-parameters.md)
-- [Generic Classes](generic-classes.md)
-- [Generic Interfaces](generic-interfaces.md)
-- [Generic Methods](generic-methods.md)
-- [Generic Delegates](generic-delegates.md)
-- [Differences Between C++ Templates and C# Generics](differences-between-cpp-templates-and-csharp-generics.md)
-- [Generics and Reflection](generics-and-reflection.md)
-- [Generics in the Run Time](generics-in-the-run-time.md)
-
 ## C# language specification
 
 For more information, see the [C# Language Specification](~/_csharplang/spec/types.md#constructed-types).
@@ -57,8 +45,4 @@ For more information, see the [C# Language Specification](~/_csharplang/spec/typ
 ## See also
 
 - <xref:System.Collections.Generic>
-- [C# Programming Guide](../index.md)
-- [Types](../types/index.md)
-- [\<typeparam>](../xmldoc/typeparam.md)
-- [\<typeparamref>](../xmldoc/typeparamref.md)
 - [Generics in .NET](../../../standard/generics/index.md)

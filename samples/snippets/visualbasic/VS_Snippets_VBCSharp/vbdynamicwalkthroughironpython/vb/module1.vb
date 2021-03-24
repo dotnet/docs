@@ -1,6 +1,7 @@
 ﻿'<Snippet1>
 Imports Microsoft.Scripting.Hosting
 Imports IronPython.Hosting
+Imports System.Linq
 '</Snippet1>
 
 Module Module1
@@ -10,7 +11,7 @@ Module Module1
         ' Set the current directory to the IronPython libraries.
         My.Computer.FileSystem.CurrentDirectory = 
            My.Computer.FileSystem.SpecialDirectories.ProgramFiles &
-           "\IronPython 2.6 for .NET 4.0\Lib"
+           "\IronPython 2.7\Lib"
 
         ' Create an instance of the random.py IronPython library.
         Console.WriteLine("Loading random.py")

@@ -10,7 +10,7 @@ performance issues within applications, especially those that may be distributed
 multiple machines or processes. This technique tracks requests through an application
 correlating together work done by different application components and separating it from
 other work the application may be doing for concurrent requests. For example a request to a
-typical web service might be first received by a load balancer, then forwarded to web server
+typical web service might be first received by a load balancer, then forwarded to a web server
 process, which then makes several queries to a database. Using distributed tracing allows
 engineers to distinguish if any of those steps failed, how long each step took, and potentially
 logging messages produced by each step as it ran.
@@ -24,8 +24,8 @@ then use a corresponding library to transmit the distributed tracing telemetry t
 service. [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started/README.md)
 is a vendor neutral library that supports several services,
 [Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/distributed-tracing)
-is provided by Microsoft, and there are many high quality 3rd party APM vendors that offer
-integrated .NET solutions.
+is a full featured service provided by Microsoft, and there are many high quality 3rd party APM vendors
+that offer integrated .NET solutions.
 
 - [Understand distributed tracing concepts](distributed-tracing-concepts.md)
 - Guides

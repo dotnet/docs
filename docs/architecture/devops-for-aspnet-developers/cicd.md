@@ -8,7 +8,10 @@ ms.custom: "devx-track-csharp, mvc, seodec18"
 no-loc: [appsettings.json, "ASP.NET Core Identity", cookie, Cookie, Blazor, "Blazor Server", "Blazor WebAssembly", "Identity", "Let's Encrypt", Razor, SignalR]
 uid: azure/devops/cicd
 ---
-# Continuous integration and deployment
+# Continuous integration and deployment with Azure DevOps
+
+> [!NOTE]
+> This section details continuous integration and deployment with Azure DevOps. GitHub Actions is a workflow engine built into GitHub that can also be used for continuous integration and deployment. To follow the guide for building and deploying to Azure using GitHub, complete the **Publish the app's code to GitHub** and **Disconnect local Git deployment** sections below and then proceed to the [GitHub Actions section](actions-index.md).
 
 In the previous chapter, you created a local Git repository for the Simple Feed Reader app. In this chapter, you'll publish that code to a GitHub repository and construct an Azure DevOps Services pipeline using Azure Pipelines. The pipeline enables continuous builds and deployments of the app. Any commit to the GitHub repository triggers a build and a deployment to the Azure Web App's staging slot.
 

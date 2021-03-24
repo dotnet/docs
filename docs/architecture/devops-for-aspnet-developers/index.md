@@ -12,7 +12,7 @@ uid: azure/devops/index
 
 [![Cover Image](./media/cover-large.png)](https://aka.ms/devopsbook)
 
-By [Cam Soper](https://twitter.com/camsoper) and [Scott Addie](https://twitter.com/scottaddie)
+By [Cam Soper](https://twitter.com/camsoper), [Scott Addie](https://twitter.com/scottaddie), and [Colin Dembovsky](https://twitter.com/colindembovsky)
 
 This guide is available as a [downloadable PDF e-book](https://aka.ms/devopsbook).
 
@@ -40,9 +40,13 @@ Learn where to acquire the tools used in this guide.
 
 Learn the various methods for deploying an ASP.NET Core app to Azure App Service.
 
-### [Continuous integration and deployment](xref:azure/devops/cicd)
+### [Continuous integration and deployment with Azure DevOps](xref:azure/devops/cicd)
 
 Build an end-to-end continuous integration and deployment solution for your ASP.NET Core app with GitHub, Azure DevOps Services, and Azure.
+
+### [Continuous integration and deployment with GitHub Actions]
+
+Build an end-to-end continuous integration and deployment solution for your ASP.NET Core app with GitHub, GitHub Actions, and Azure, including code scanning for security and quality using CodeQL.
 
 ### [Monitor and debug](xref:azure/devops/monitor)
 

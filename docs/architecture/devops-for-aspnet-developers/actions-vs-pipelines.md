@@ -26,7 +26,7 @@ Before you compare GitHub Actions and Azure Pipelines, you should consider the b
 
 ## Agents and runners
 
-Before you examine pipelines themselves, you should consider how these pipelines _execute_. Both GitHub Actions and Azure Pipelines are really _orchestration engines_: when a pipeline is triggered, the system finds an "agent" and tells the agent to execute the jobs defined in the pipeline file.
+Before you examine pipelines themselves, you should consider how these pipelines _execute_. Both GitHub Actions and Azure Pipelines are really _orchestration engines_. When a pipeline is triggered, the system finds an "agent" and tells the agent to execute the jobs defined in the pipeline file.
 
 Azure Pipelines run on _agents_. The agent is written in .NET, so it will run wherever .NET can run: Windows, macOS, and Linux. Agents can even run in containers. Agents are registered to a [pool](/azure/devops/pipelines/agents/pools-queues?view=azure-devops&preserve-view=true) in Azure Pipelines or to a repository or organization in GitHub. Agents can be _hosted_ or _private_.
 

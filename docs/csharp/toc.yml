@@ -35,28 +35,28 @@ items:
         href: tour-of-csharp/tutorials/branches-and-loops-local.md
       - name: List collections
         href: tour-of-csharp/tutorials/arrays-and-collections.md
-- name: Fundamental concepts
+- name: Fundamentals
   items:
   - name: Type system
     items:
     - name: Overview
-      href: programming-guide/types/index.md
+      href: fundamentals/types/index.md
     - name: Namespaces
-      href: programming-guide/namespaces/index.md
+      href: fundamentals/types/namespaces.md
     - name: Basic Types
-      href: basic-types.md
+      href: fundamentals/types/basic-types.md
     # TODO: tuples
     - name: Records
-      href: programming-guide/classes-and-structs/records.md
+      href: fundamentals/types/records.md
     - name: Classes
-      href: programming-guide/classes-and-structs/classes.md
+      href: fundamentals/types/classes.md
     # TODO: structs
     - name: Interfaces
-      href: programming-guide/interfaces/index.md
+      href: fundamentals/types/interfaces.md
     - name: Generics
-      href: programming-guide/generics/index.md    
+      href: fundamentals/types/generics.md    
     - name: Anonymous Types
-      href: programming-guide/classes-and-structs/anonymous-types.md
+      href: fundamentals/types/anonymous-types.md
 - name: What's new in C#
   items:
   - name: C# 9.0

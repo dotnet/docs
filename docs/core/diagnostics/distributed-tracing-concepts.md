@@ -114,7 +114,7 @@ conventions.
 ### Sampling
 
 For improved performance in high throughput applications, distributed tracing on .NET supports
-sampling only a subset of requests rather than recording all of them. For activites created with
+sampling only a subset of traces rather than recording all of them. For activites created with
 the recommended <xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=nameWithType>
 API, telemetry collection libraries can control sampling with the
 <xref:System.Diagnostics.ActivityListener.Sample%2A?displayProperty=nameWithType> callback.

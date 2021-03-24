@@ -448,9 +448,12 @@ void DoBatchWork(ActivityContext[] requestContexts)
     using(Activity activity = s_source.StartActivity(name: "BigBatchOfWork",
                                                      kind: ActivityKind.Internal,
                                                      parentContext: null,
-                                                     links: requestIds.Select(ctx => new ActivityLink(ctx))
+                                                     links: requestContexts.Select(ctx => new ActivityLink(ctx))
     {
         // do the batch of work here
     }
 }
 ```
+
+Unlike events and Tags that can be added on-demand, links must be added during StartActivity() and
+are immutable afterwards.

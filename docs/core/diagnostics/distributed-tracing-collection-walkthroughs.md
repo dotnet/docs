@@ -88,7 +88,7 @@ namespace Sample.DistributedTracing
 }
 ```
 
-Running the app does not record any tracing information yet
+Running the app does not collect any trace data yet:
 
 ```dotnetcli
 > dotnet run
@@ -104,11 +104,9 @@ OpenTelemetry can be reconfigured to send it elsewhere. See the
 [OpenTelemetry getting started guide](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started/README.md)
 for more information.
 
-Add the [OpenTelemetry](https://www.nuget.org/packages/OpenTelemetry/) and
-[OpenTelemetry.Exporter.Console](https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/) NuGet packages.
+Add the [OpenTelemetry.Exporter.Console](https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/) NuGet package.
 
 ```dotnetcli
-dotnet add package OpenTelemetry
 dotnet add package OpenTelemetry.Exporter.Console
 ```
 
@@ -289,7 +287,7 @@ Running the app does not collect any trace data yet:
 Example work done
 ```
 
-### Add code to observe the Activities
+### Add code to collect the traces
 
 Update Main() with this code:
 

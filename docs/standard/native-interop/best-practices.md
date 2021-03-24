@@ -267,27 +267,25 @@ The `long` keyword in C is defined to have ["at least 32"](https://en.cppreferen
 These differences make authoring cross-platform P/Invokes difficult when the native function is defined to use `long` on all platforms. When targeting .NET 5 and prior .NET versions, you should declare separate Windows and non-Windows signatures to handle the problem.
 
 ```csharp
+static readonly bool IsWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
+
 // Cross platform C function
 // void Function(long a);
-[DllImport("NativeLib", EntryPoint = "Function")]
-extern static void Function32(int a);
 
-#if WINDOWS
-    [DllImport("NativeLib", EntryPoint = "Function")]
-    extern static void Function64(int a);
-#else
-    [DllImport("NativeLib", EntryPoint = "Function")]
-    extern static void Function64(long a);
-#endif
-    
+[DllImport("NativeLib", EntryPoint = "Function")]
+extern static void FunctionWindows(int a);
+
+[DllImport("NativeLib", EntryPoint = "Function")]
+extern static void FunctionUnix(nint a);
+
 // Usage
-if (IntPtr.Size == 4)
+if (IsWindows)
 {
-    Function32(a);
+    FunctionWindows(a);
 }
 else
 {
-    Function64(a);
+    FunctionUnix(a);
 }
 ```
 

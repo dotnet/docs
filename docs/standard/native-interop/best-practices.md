@@ -280,7 +280,7 @@ extern static CLong Function(CLong a);
 nint result = Function(new CLong(10)).Value;
 ```
 
-When targeting .NET 5 and prior .NET versions, you should declare separate Windows and non-Windows signatures to handle the problem.
+When targeting .NET 5 and earlier .NET versions, you should declare separate Windows and non-Windows signatures to handle the problem.
 
 ```csharp
 static readonly bool IsWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);

@@ -33,7 +33,7 @@ The following code illustrates a vector class that has just two operators, one f
 
 ## Creating New Operators
 
-You can overload all the standard operators, but you can also create new operators out of sequences of certain characters. Allowed operator characters are `!`, `%`, `&`, `*`, `+`, `-`, `.`, `/`, `<`, `=`, `>`, `?`, `@`, `^`, `|`, and `~`. The `~` character has the special meaning of making an operator unary, and is not part of the operator character sequence. Not all operators can be made unary.
+You can overload all the standard operators, but you can also create new operators out of sequences of certain characters. Allowed operator characters are `!`, `$`, `%`, `&`, `*`, `+`, `-`, `.`, `/`, `<`, `=`, `>`, `?`, `@`, `^`, `|`, and `~`. The `~` character has the special meaning of making an operator unary, and is not part of the operator character sequence. Not all operators can be made unary.
 
 Depending on the exact character sequence you use, your operator will have a certain precedence and associativity. Associativity can be either left to right or right to left and is used whenever operators of the same level of precedence appear in sequence without parentheses.
 
@@ -103,6 +103,7 @@ Other combinations of operator characters that are not listed here can be used a
 |`/`|`Divide`|
 |`=`|`Equals`|
 |`~`|`Twiddle`|
+|`$`|`Dollar`|
 |`%`|`Percent`|
 |`.`|`Dot`|
 |`&`|`Amp`|

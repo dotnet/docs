@@ -427,7 +427,15 @@ items:
       - name: Well-known event providers
         href: ../core/diagnostics/well-known-event-providers.md
       - name: Distributed Tracing
-        href: ../core/diagnostics/distributed-tracing.md
+        items:
+        - name: Overview
+          href: ../core/diagnostics/distributed-tracing.md
+        - name: Concepts
+          href: ../core/diagnostics/distributed-tracing-concepts.md
+        - name: Instrumentation
+          href: ../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
+        - name: Collection
+          href: ../core/diagnostics/distributed-tracing-collection-walkthroughs.md
     - name: Symbols
       href: ../core/diagnostics/symbols.md
     - name: Runtime events

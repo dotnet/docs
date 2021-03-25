@@ -37,7 +37,7 @@ Once the facade is in place, you can route part of it to a new ASP.NET Core app.
 
 ## Multi-targeting approaches
 
-Large apps that target .NET Framework may be migrated to ASP.NET Core over time by using multi-targeting and separate code paths for each framework. For example, code that must run in both environments could be modified with [preprocessor `#if`](..\..\csharp\language-reference\preprocessor-directives.md) directives to implement different functionality or use different dependencies when run in .NET Framework versus .NET Core. Another option is to modify project files to include different sets of files based on which framework is being targeted. Project files can use different globbing patterns, such as `*.core.cs`, to include different sets of source files depending on the framework being targeted.
+Large apps that target .NET Framework may be migrated to ASP.NET Core over time by using multi-targeting and separate code paths for each framework. For example, code that must run in both environments could be modified with [preprocessor `#if`](/dotnet/csharp/language-reference/preprocessor-directives) directives to implement different functionality or use different dependencies when run in .NET Framework versus .NET Core. Another option is to modify project files to include different sets of files based on which framework is being targeted. Project files can use different globbing patterns, such as `*.core.cs`, to include different sets of source files depending on the framework being targeted.
 
 These techniques allow a single common codebase to be maintained while new functionality is added and (parts of) the app are ported to use .NET Core.
 

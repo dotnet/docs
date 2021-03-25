@@ -28,7 +28,7 @@ This section provides reference material about C# keywords, operators, special c
  [C# Special Characters](./tokens/index.md)  
  Provides links to information about special contextual characters in C# and their usage.  
 
- [C# Preprocessor Directives](preprocessor-directives.md)  
+ [C# Preprocessor Directives](/dotnet/csharp/language-reference/preprocessor-directives)  
  Provides links to information about compiler commands for embedding in C# source code.  
   
  [C# Compiler Options](./compiler-options/index.md)  

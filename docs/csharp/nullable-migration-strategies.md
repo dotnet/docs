@@ -63,7 +63,7 @@ Which of these strategies you pick depends on how much active development is tak
 > 1. Start the file name with *TemporaryGeneratedFile_*
 > 1. End the file name with *.designer.cs*, *.generated.cs*, *.g.cs*, or *.g.i.cs*.
 >
-> Generators can opt-in using the [`#nullable`](language-reference/preprocessor-directives/preprocessor-nullable.md) preprocessor directive.
+> Generators can opt-in using the [`#nullable`](/dotnet/csharp/language-reference/preprocessor-directives) preprocessor directive.
 
 ## Should nullable warnings introduce breaking changes?
 

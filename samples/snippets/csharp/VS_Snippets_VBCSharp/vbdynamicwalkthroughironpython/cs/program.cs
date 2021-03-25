@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 //<Snippet1>
+using System.Linq;
 using Microsoft.Scripting.Hosting;
 using IronPython.Hosting;
 //</Snippet1>
@@ -17,7 +17,7 @@ namespace IronPythonSample
             // Set the current directory to the IronPython libraries.
             System.IO.Directory.SetCurrentDirectory(
                Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) +
-               @"\IronPython 2.6 for .NET 4.0\Lib");
+               @"\IronPython 2.7\Lib");
 
             // Create an instance of the random.py IronPython library.
             Console.WriteLine("Loading random.py");

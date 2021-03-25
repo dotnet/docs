@@ -138,6 +138,6 @@ The **winmdobj** setting signals to the compiler that an intermediate module is 
 
 ### appcontainerexe
 
-If you use the **appcontainerexe** compiler option, the compiler creates a Windows executable (*.exe*) file that must be run in an app container. This option is equivalent to [-target:winexe](./target-winexe-compiler-option.md) but is designed for Windows 8.x Store apps.
+If you use the **appcontainerexe** compiler option, the compiler creates a Windows executable (*.exe*) file that must be run in an app container. This option is equivalent to [-target:winexe](output.md) but is designed for Windows 8.x Store apps.
 
 To require the app to run in an app container, this option sets a bit in the [Portable Executable](/windows/desktop/Debug/pe-format) (PE) file. When that bit is set, an error occurs if the CreateProcess method tries to launch the executable file outside an app container. Unless you use the [**OutputAssembly**](#outputassembly) option, the output file name takes the name of the input file that contains the [`Main`](../../programming-guide/main-and-command-args/index.md) method.

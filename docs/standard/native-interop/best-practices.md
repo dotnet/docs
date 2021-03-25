@@ -277,7 +277,7 @@ In .NET 6 a new type has been introduced to help ameliorate this issue - [`CLong
 extern static CLong Function(CLong a);
     
 // Usage
-int result = Function(new CLong(10)).Value;
+nint result = Function(new CLong(10)).Value;
 ```
 
 When targeting .NET 5 and prior .NET versions, you should declare separate Windows and non-Windows signatures to handle the problem.

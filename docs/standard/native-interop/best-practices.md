@@ -259,7 +259,7 @@ There are types in the C/C++ language that have latitude in how they are defined
 
 C/C++ `long` and C# `long` are not the same types. Using C# `long` to interop with C/C++ `long` is almost never correct.
 
-The `long` keyword in C/C++ is defined to have ["at least 32"](https://en.cppreference.com/w/c/language/arithmetic_types) bits. This means there is a minimum required but platforms are not limited to that. The table below illustrates the differences in provided bits for the C/C++ `long` data type between platforms.
+The `long` type in C/C++ is defined to have ["at least 32"](https://en.cppreference.com/w/c/language/arithmetic_types) bits. This means there is a minimum number of required bits, but platforms can choose to use more bits if desired. The following table illustrates the differences in provided bits for the C/C++ `long` data type between platforms.
 
 |             | 32-bit | 64-bit |
 |:------------|:-------|:-------|

@@ -523,4 +523,4 @@ In the upcoming chapters, you'll dive deep into the building blocks offered by D
 
 > [!div class="step-by-step"]
 > [Previous](dapr-at-20000-feet.md)
-> [Next](reference-application.md)
+> [Next](sample-application.md)

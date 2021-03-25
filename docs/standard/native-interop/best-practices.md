@@ -295,14 +295,14 @@ extern static int FunctionWindows(int a);
 extern static nint FunctionUnix(nint a);
 
 // Usage
-int result;
+nint result;
 if (IsWindows)
 {
-    result = (int)FunctionWindows(10);
+    result = FunctionWindows(10);
 }
 else
 {
-    result = (int)FunctionUnix(10);
+    result = FunctionUnix(10);
 }
 ```
 

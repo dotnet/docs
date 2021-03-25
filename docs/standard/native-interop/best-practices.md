@@ -169,29 +169,29 @@ Here is a list of data types commonly used in Windows APIs and which C# types to
 
 The following types are the same size on 32-bit and 64-bit Windows, despite their names.
 
-| Width | Windows          | C (Windows)          | C#       | Alternative                          |
-|:------|:-----------------|:---------------------|:---------|:-------------------------------------|
-| 32    | `BOOL`           | `int`                | `int`    | `bool`                               |
-| 8     | `BOOLEAN`        | `unsigned char`      | `byte`   | `[MarshalAs(UnmanagedType.U1)] bool` |
-| 8     | `BYTE`           | `unsigned char`      | `byte`   |                                      |
-| 8     | `CHAR`           | `char`               | `sbyte`  |                                      |
-| 8     | `UCHAR`          | `unsigned char`      | `byte`   |                                      |
-| 16    | `SHORT`          | `short`              | `short`  |                                      |
-| 16    | `CSHORT`         | `short`              | `short`  |                                      |
-| 16    | `USHORT`         | `unsigned short`     | `ushort` |                                      |
-| 16    | `WORD`           | `unsigned short`     | `ushort` |                                      |
-| 16    | `ATOM`           | `unsigned short`     | `ushort` |                                      |
-| 32    | `INT`            | `int`                | `int`    |                                      |
-| 32    | `LONG`           | `long`               | `int`    |  See `CLong` and `CULong` below.     |
-| 32    | `ULONG`          | `unsigned long`      | `uint`   |  See `CLong` and `CULong` below.     |
-| 32    | `DWORD`          | `unsigned long`      | `uint`   |  See `CLong` and `CULong` below.     |
-| 64    | `QWORD`          | `long long`          | `long`   |                                      |
-| 64    | `LARGE_INTEGER`  | `long long`          | `long`   |                                      |
-| 64    | `LONGLONG`       | `long long`          | `long`   |                                      |
-| 64    | `ULONGLONG`      | `unsigned long long` | `ulong`  |                                      |
-| 64    | `ULARGE_INTEGER` | `unsigned long long` | `ulong`  |                                      |
-| 32    | `HRESULT`        | `int`                | `int`    |                                      |
-| 32    | `NTSTATUS`       | `int`                | `int`    |                                      |
+| Width | Windows          | C#       | Alternative                          |
+|:------|:-----------------|:---------|:-------------------------------------|
+| 32    | `BOOL`           | `int`    | `bool`                               |
+| 8     | `BOOLEAN`        | `byte`   | `[MarshalAs(UnmanagedType.U1)] bool` |
+| 8     | `BYTE`           | `byte`   |                                      |
+| 8     | `CHAR`           | `sbyte`  |                                      |
+| 8     | `UCHAR`          | `byte`   |                                      |
+| 16    | `SHORT`          | `short`  |                                      |
+| 16    | `CSHORT`         | `short`  |                                      |
+| 16    | `USHORT`         | `ushort` |                                      |
+| 16    | `WORD`           | `ushort` |                                      |
+| 16    | `ATOM`           | `ushort` |                                      |
+| 32    | `INT`            | `int`    |                                      |
+| 32    | `LONG`           | `int`    |  See `CLong` and `CULong` below.     |
+| 32    | `ULONG`          | `uint`   |  See `CLong` and `CULong` below.     |
+| 32    | `DWORD`          | `uint`   |                                      |
+| 64    | `QWORD`          | `long`   |                                      |
+| 64    | `LARGE_INTEGER`  | `long`   |                                      |
+| 64    | `LONGLONG`       | `long`   |                                      |
+| 64    | `ULONGLONG`      | `ulong`  |                                      |
+| 64    | `ULARGE_INTEGER` | `ulong`  |                                      |
+| 32    | `HRESULT`        | `int`    |                                      |
+| 32    | `NTSTATUS`       | `int`    |                                      |
 
 The following types, being pointers, do follow the width of the platform. Use `IntPtr`/`UIntPtr` for these.
 

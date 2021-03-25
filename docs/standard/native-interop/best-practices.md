@@ -266,7 +266,7 @@ The `long` keyword in C is defined to have ["at least 32"](https://en.cppreferen
 | Windows     | 32     | 32     |
 | macOS/\*nix | 32     | 64     |
 
-These differences make authoring cross-platform P/Invokes difficult when the native function is defined to use `long` on all platforms. 
+These differences make authoring cross-platform P/Invokes difficult when the native function is defined to use `long` on all platforms.
 
 In .NET 6 a new type has been introduced to help ameliorate this issue - [`CLong` and `CULong`](https://github.com/dotnet/runtime/issues/13788). In .NET 6 the following is now possible. The example is for `CLong`, but you can use `CULong` to abstract C's `unsigned long` in a similar way.
 

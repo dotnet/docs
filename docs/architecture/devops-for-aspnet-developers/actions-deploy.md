@@ -20,9 +20,9 @@ In this article, you'll:
 
 ## Environments
 
-Now that you've published an artifact that is _potentially deployable_, you're going to add _deployment_ jobs to the workflow. There's nothing special about a deployment job, other than the fact that it references an _environment_. Environments are _logical_ constructs that allow you to specify environment protection rules (such as approvals) on any group of resources that you're targeting.
+Now that you've published an artifact that's *potentially deployable*, you'll add *deployment* jobs to the workflow. There's nothing special about a deployment job, other than the fact that it references an *environment*. Environments are *logical* constructs that allow you to specify environment protection rules, such as approvals, on any group of resources that you're targeting.
 
-In this walkthrough, you'll be deploying to two environments: `PRE-PROD` and `PROD`. In a typical development lifecycle, you'll want to deploy the latest code to a _soft_ environment (typically `DEV`) that is expected to be a bit unstable. You'll use `PRE-PROD` as this _soft_ environment. The "higher" environments (like `UAT` and `PROD`) are _harder_ environments that are expected to be more stable. To enforce this, you can build protection rules into higher environments. You'll configure an approval protection rule on the `PROD` environment: whenever a deployment job targets an environment with an approval rule, it will pause until approval is granted before executing.
+In this walkthrough, you'll be deploying to two environments: `PRE-PROD` and `PROD`. In a typical development lifecycle, you'll want to deploy the latest code to a *soft* environment (typically `DEV`) that is expected to be a bit unstable. You'll use `PRE-PROD` as this *soft* environment. The "higher" environments (like `UAT` and `PROD`) are *harder* environments that are expected to be more stable. To enforce this, you can build protection rules into higher environments. You'll configure an approval protection rule on the `PROD` environment: whenever a deployment job targets an environment with an approval rule, it will pause until approval is granted before executing.
 
 GitHub environments are *logical*. They represent the physical (or virtual) resources that you're deploying to. In this case, the `PRE-PROD` is just a deployment slot on the Azure Web App. `PROD` is the production slot. The `PRE-PROD` deployment job will deploy the published .NET app to the staging slot. The `PROD` deployment job will swap the slots.
 
@@ -77,11 +77,11 @@ Once you have an SPN, you'll create a [repository secret](https://docs.github.co
 
 ## Add environments
 
-[Environments](https://docs.github.com/actions/reference/environments) are used as a _logical boundary_. You can add approvals to environments to ensure quality. You can also track deployments to environments and specify environment-specific values (secrets) for configuration.
+[Environments](https://docs.github.com/actions/reference/environments) are used as a *logical boundary*. You can add approvals to environments to ensure quality. You can also track deployments to environments and specify environment-specific values (secrets) for configuration.
 
-For this example, you're going to split the actual Azure environment into two _logical_ environments called `PRE-PROD` and `PROD`. When you deploy the web app, you'll deploy to the staging slot of the Azure web app, represented by the `PRE-PROD` environment. When you're ready to deploy to `PROD`, you'll just perform a slot swap.
+For this example, you're going to split the actual Azure environment into two *logical* environments called `PRE-PROD` and `PROD`. When you deploy the web app, you'll deploy to the staging slot of the Azure web app, represented by the `PRE-PROD` environment. When you're ready to deploy to `PROD`, you'll just perform a slot swap.
 
-In this case, the only difference between the environments is the slot that you're deploying to. In real life, there would typically be different web apps (and separate web app plans), separate resource groups, and even separate subscriptions. Typically, there's an SPN per environment. You may want to override the `AZURE_CREDENTIAL` value that you saved as a repository secret by creating it as an _environment secret_.
+In this case, the only difference between the environments is the slot that you're deploying to. In real life, there would typically be different web apps (and separate web app plans), separate resource groups, and even separate subscriptions. Typically, there's an SPN per environment. You may want to override the `AZURE_CREDENTIAL` value that you saved as a repository secret by creating it as an *environment secret*.
 
 > [!NOTE]
 > Precedence works from Environment to repository. If a targeted environment has a secret called `MY_SECRET`, then that value is used. If not, the repository value of `MY_SECRET` (if any) is used.
@@ -234,7 +234,7 @@ Now that you've deployed successfully to `PRE-PROD`, you'll want to deploy to `P
     1. The `Swap staging slot into production` step is a multi-line `run` command (note the use of the pipe symbol `|`). You also specify an `id` for this step so that you can refer to it (you refer to it in the `url` property of the `environment`). The first line executes the slot swap using the variables you defined above in the workflow. The second line uses an `az webapp show` command to extract the URL of the target web app. This final line uses `::set-output` in an echo to create an output variable for this task, setting the value to the web app URL.
 
     > [!NOTE]
-    > The URL _must_ start with `http://` or `https://` or it won't render.
+    > The URL *must* start with `http://` or `https://` or it won't render.
 
 1. Commit the file.
 1. Let the workflow run for a couple minutes until it has deployed to `PRE-PROD`. At this point, the workflow will pause and wait for the required approval since you're targeting the `PROD` environment, which requires an approval as defined earlier:
@@ -270,7 +270,7 @@ You now have an end-to-end build and deploy workflow, including approvals. One m
       push:
     ```
 
-1. The `workflow_dispatch` trigger displays a `Run workflow` button in the **Actions** tab of the repository&mdash; _but only if the trigger is defined in the default branch_. However, once this trigger is defined in the workflow, you can select the branch for the run.
+1. The `workflow_dispatch` trigger displays a `Run workflow` button in the **Actions** tab of the repository&mdash;*but only if the trigger is defined in the default branch*. However, once this trigger is defined in the workflow, you can select the branch for the run.
 1. Commit the file.
 1. To see the **Run workflow** button, select the **Actions** tab. Select the `.NET` workflow in the list of workflows. At the top of the list of runs, you'll see the **Run workflow** button. If you select it, you can choose the branch to run the workflow against and queue it:
 

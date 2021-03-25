@@ -1,7 +1,7 @@
 ---
-title: Next steps - DevOps with ASP.NET Core and Azure
+title: Next steps - DevOps for ASP.NET Core Developers
 author: CamSoper
-description: Additional learning paths for DevOps with ASP.NET Core and Azure.
+description: Additional learning paths for DevOps for ASP.NET Core Developers.
 ms.author: casoper
 ms.custom: "devx-track-csharp, mvc, seodec18"
 ms.date: 10/24/2018

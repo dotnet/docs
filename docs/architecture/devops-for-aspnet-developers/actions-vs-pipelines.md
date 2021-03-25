@@ -11,7 +11,7 @@ ms.date: 03/04/2021
 
 ## Pipelines as code
 
-Before you compare GitHub Actions and Azure Pipelines, you should consider the benefits of _pipelines as code_. Pipelines as code:
+Before you compare GitHub Actions and Azure Pipelines, you should consider the benefits of *pipelines as code*. Pipelines as code:
 
 > [!div class="checklist"]
 
@@ -22,15 +22,15 @@ Before you compare GitHub Actions and Azure Pipelines, you should consider the b
 > * Can usually be templatized to empower teams to create standard processes across multiple repositories.
 
 > [!NOTE]
-> The term "pipelines" can also be referred to by several different interchangeable words: _pipeline_, _workflow_ and _build_ are common terms. In this article, references to _Azure Pipelines_ are referring to [YAML Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops&preserve-view=true#define-pipelines-using-yaml-syntax), and not the older UI-based [Classic Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops&preserve-view=true#define-pipelines-using-the-classic-interface).
+> The term "pipelines" can also be referred to by several different interchangeable words: *pipeline*, *workflow*, and *build* are common terms. In this article, references to *Azure Pipelines* are referring to [YAML Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops&preserve-view=true#define-pipelines-using-yaml-syntax), and not the older UI-based [Classic Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops&preserve-view=true#define-pipelines-using-the-classic-interface).
 
 ## Agents and runners
 
-Before you examine pipelines themselves, you should consider how these pipelines _execute_. Both GitHub Actions and Azure Pipelines are really _orchestration engines_. When a pipeline is triggered, the system finds an "agent" and tells the agent to execute the jobs defined in the pipeline file.
+Before you examine pipelines themselves, you should consider how these pipelines *execute*. Both GitHub Actions and Azure Pipelines are really *orchestration engines*. When a pipeline is triggered, the system finds an "agent" and tells the agent to execute the jobs defined in the pipeline file.
 
-Azure Pipelines run on _agents_. The agent is written in .NET, so it will run wherever .NET can run: Windows, macOS, and Linux. Agents can even run in containers. Agents are registered to a [pool](/azure/devops/pipelines/agents/pools-queues?view=azure-devops&preserve-view=true) in Azure Pipelines or to a repository or organization in GitHub. Agents can be _hosted_ or _private_.
+Azure Pipelines run on *agents*. The agent is written in .NET, so it will run wherever .NET can run: Windows, macOS, and Linux. Agents can even run in containers. Agents are registered to a [pool](/azure/devops/pipelines/agents/pools-queues?view=azure-devops&preserve-view=true) in Azure Pipelines or to a repository or organization in GitHub. Agents can be *hosted* or *private*.
 
-GitHub Workflows execute on _runners_. The runner code is essentially a fork of the Azure Pipelines code, so it's very similar. It's also cross-platform and you can also use _hosted_ or _self-hosted_ runners.
+GitHub Workflows execute on *runners*. The runner code is essentially a fork of the Azure Pipelines code, so it's very similar. It's also cross-platform and you can also use *hosted* or *self-hosted* runners.
 
 ### Hosted agents and runners
 
@@ -55,7 +55,7 @@ There are times when you can't use hosted images. For example, when you:
 
 ### Azure DevOps agents
 
-Every Azure DevOps account has a hosted pool with a single agent that can run one job at a time. Also included is a set number of free build minutes. You may purchase additional "hosted pipelines" in Azure DevOps. When you purchase an additional hosted pipeline, you're really removing the build minutes limit and adding _concurrency_. One pipeline can run one job at a time. Two pipelines can run two jobs simultaneously, and so on.
+Every Azure DevOps account has a hosted pool with a single agent that can run one job at a time. Also included is a set number of free build minutes. You may purchase additional "hosted pipelines" in Azure DevOps. When you purchase an additional hosted pipeline, you're really removing the build minutes limit and adding *concurrency*. One pipeline can run one job at a time. Two pipelines can run two jobs simultaneously, and so on.
 
 ### Comparison of agents
 
@@ -68,13 +68,25 @@ Every Azure DevOps account has a hosted pool with a single agent that can run on
 
 ## Comparison of GitHub Actions and Azure Pipelines
 
-Azure Pipelines (YAML pipelines) provide a mature set of features. Features include approvals, artifact storage, deployment jobs, environments, gates, stages, templates, triggers, variable groups, and more. For a full list of Azure Pipelines features, refer to the table [here](/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops&preserve-view=true#feature-availability).
+Azure Pipelines (YAML pipelines) provide a mature set of features. Some of the features include:
+
+* Approvals
+* Artifact storage
+* Deployment jobs
+* Environments
+* Gates
+* Stages
+* Templates
+* Triggers
+* Variable groups
+
+For a full list of Azure Pipelines features, refer to the table [here](/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops&preserve-view=true#feature-availability).
 
 GitHub Actions are evolving rapidly and provide features such as triggers for almost all GitHub events, artifact storage, environments and environment rules, starter templates, and matrices. Read more about the full GitHub Actions feature set [here](https://docs.github.com/actions).
 
 ### Feature comparison
 
-(As of March 2021)
+The following table is current as of March 2021.
 
 |Feature|Description|GitHub Actions|Azure Pipelines|
 |-------|-----------|--------------|---------------|

@@ -26,7 +26,7 @@ Workflows are captured in YAML files and all have the following things:
 - one or more `job` sections composed of one or more `steps`
 - optional attributes such as `environment` variables
 
-Jobs are run on _runners_. You can use _hosted runners_, which are spun up by GitHub during the workflow and then thrown away. Hosted runners are great because you don't have to maintain your own build infrastructure. For workflows that require a specific build environment, or for running workflows on a private network, you can also use _private_ runners. To create a private runner, install the runner on any machine that supports .NET.
+Jobs are run on *runners*. You can use *hosted runners*, which are spun up by GitHub during the workflow and then thrown away. Hosted runners are great because you don't have to maintain your own build infrastructure. For workflows that require a specific build environment, or for running workflows on a private network, you can also use *private* runners. To create a private runner, install the runner on any machine that supports .NET.
 
 Each `job` will specify what runner GitHub should use to execute the `steps`. You can also specify dependencies between jobs using the `needs` attribute. Deployment jobs can also specify an `environment` to target.
 
@@ -65,7 +65,7 @@ One important principle of effective DevOps is to build once, deploy many times.
 
 ## Dissect the workflow file
 
-Let's look at the workflow YAML file that you have so far:
+Let's examine the workflow YAML file you have so far:
 
 ```yml
 name: .NET
@@ -124,7 +124,7 @@ Now that you've successfully built and tested the code, add steps that publish t
         run: dotnet publish SimpleFeedReader/SimpleFeedReader.csproj -c Release -o website
     ```
 
-1. This publishes the web app to a folder on the hosted agent. Now you'll want to _upload_ the site as a build artifact that can be deployed to Azure. To complete this activity, you'll use an existing action.
+1. This publishes the web app to a folder on the hosted agent. Now you'll want to *upload* the site as a build artifact that can be deployed to Azure. To complete this activity, you'll use an existing action.
 1. On the list of actions in the **Actions Helper** pane on the right, search for `artifact`. Select on the `Upload a Build Artifact (By actions)` action.
 
     ![Accessing the Actions helper](./media/actions/build/search-upload-artifact.jpg)

@@ -1,5 +1,5 @@
 ---
-title: Monitor and debug - DevOps with ASP.NET Core and Azure
+title: Monitor and debug - DevOps for ASP.NET Core Developers
 author: CamSoper
 description: Monitoring and debugging your code as part of a DevOps solution with ASP.NET Core and Azure
 ms.author: casoper

@@ -1,7 +1,7 @@
 ---
-title: Tools and downloads - DevOps with ASP.NET Core and Azure 
+title: Tools and downloads - DevOps for ASP.NET Core Developers 
 author: CamSoper
-description: Tools and downloads required for DevOps with ASP.NET Core and Azure.
+description: Tools and downloads required for DevOps for ASP.NET Core Developers.
 ms.author: casoper
 ms.custom: "devx-track-csharp, mvc, seodec18"
 ms.date: 10/24/2018

@@ -1,5 +1,5 @@
 ---
-title: DevOps with ASP.NET Core and Azure
+title: DevOps for ASP.NET Core Developers
 author: CamSoper
 description: A guide that provides end-to-end guidance on building a DevOps pipeline for an ASP.NET Core app hosted in Azure.
 ms.author: casoper
@@ -8,7 +8,7 @@ ms.custom: "devx-track-csharp, mvc, seodec18"
 no-loc: [appsettings.json, "ASP.NET Core Identity", cookie, Cookie, Blazor, "Blazor Server", "Blazor WebAssembly", "Identity", "Let's Encrypt", Razor, SignalR]
 uid: azure/devops/index
 ---
-# DevOps with ASP.NET Core and Azure
+# DevOps for ASP.NET Core Developers
 
 [![Cover Image](./media/cover-large.png)](https://aka.ms/devopsbook)
 

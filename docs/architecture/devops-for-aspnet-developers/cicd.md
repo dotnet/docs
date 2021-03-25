@@ -1,7 +1,7 @@
 ---
-title: Continuous integration and deployment - DevOps with ASP.NET Core and Azure
+title: Continuous integration and deployment - DevOps for ASP.NET Core Developers
 author: CamSoper
-description: Continuous integration and deployment in DevOps with ASP.NET Core and Azure
+description: Continuous integration and deployment in DevOps for ASP.NET Core Developers
 ms.author: scaddie
 ms.date: 10/24/2018
 ms.custom: "devx-track-csharp, mvc, seodec18"

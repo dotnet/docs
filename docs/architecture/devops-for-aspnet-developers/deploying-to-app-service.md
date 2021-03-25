@@ -1,7 +1,7 @@
 ---
-title: Deploy an app to App Service - DevOps with ASP.NET Core and Azure
+title: Deploy an app to App Service - DevOps for ASP.NET Core Developers
 author: CamSoper
-description: Deploy an ASP.NET Core app to Azure App Service, the first step for DevOps with ASP.NET Core and Azure.
+description: Deploy an ASP.NET Core app to Azure App Service, the first step for DevOps for ASP.NET Core Developers.
 ms.author: casoper
 ms.custom: "devx-track-csharp, mvc, seodec18, devx-track-azurecli"
 ms.date: 10/24/2018

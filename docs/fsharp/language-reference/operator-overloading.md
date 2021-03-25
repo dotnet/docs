@@ -41,6 +41,8 @@ The operator character `.` does not affect precedence, so that, for example, if 
 
 Only the operators `?` and `?<-` may start with `?`.
 
+The `$` operator must stand alone and without additional symbols.
+
 A table that shows the precedence of all operators in F# can be found in [Symbol and Operator Reference](./symbol-and-operator-reference/index.md).
 
 ## Overloaded Operator Names

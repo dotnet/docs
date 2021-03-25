@@ -80,6 +80,7 @@ hr = CLRCreateInstance (CLSID_CLRDebugging, IID_ICLRDebugging,
 ```  
 
 The `CreateInterface` function is aliased to `CLRCreateInstance`.  Both `CLRCreateInstance` and `CreateInterface` functions can be used interchangeably. For example:
+
 ```cpp
 HMODULE hModule = LoadLibrary(L"mscoree.dll");
 CreateInterfaceFnPtr createInterface = (CreateInterfaceFnPtr)GetProcAddress(hModule, "CreateInterface");
@@ -87,8 +88,7 @@ HRESULT hr;
 hr = createInterface(CLSID_CLRMetaHost, IID_ICLRMetaHost, (LPVOID*)&pMetaHost);
 hr = createInterface (CLSID_CLRMetaHostPolicy, IID_ICLRMetaHostPolicy,  (LPVOID*)&pMetaHostPolicy);  
 hr = createInterface (CLSID_CLRDebugging, IID_ICLRDebugging,  (LPVOID*)&pCLRDebugging); 
-``` 
-
+```
   
 ## Requirements  
 

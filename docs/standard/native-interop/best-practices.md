@@ -182,8 +182,8 @@ The following types are the same size on 32-bit and 64-bit Windows, despite thei
 | 16    | `WORD`           | `ushort` |                                      |
 | 16    | `ATOM`           | `ushort` |                                      |
 | 32    | `INT`            | `int`    |                                      |
-| 32    | `LONG`           | `int`    |  See [`CLong` and `CULong`](#cc-long).     |
-| 32    | `ULONG`          | `uint`   |  See [`CLong` and `CULong`](#cc-long).      |
+| 32    | `LONG`           | `int`    |  See [`CLong` and `CULong`](#cc-long). |
+| 32    | `ULONG`          | `uint`   |  See [`CLong` and `CULong`](#cc-long). |
 | 32    | `DWORD`          | `uint`   |                                      |
 | 64    | `QWORD`          | `long`   |                                      |
 | 64    | `LARGE_INTEGER`  | `long`   |                                      |
@@ -261,7 +261,7 @@ C/C++ `long` and C# `long` are not the same types. Using C# `long` to interop wi
 
 The `long` type in C/C++ is defined to have ["at least 32"](https://en.cppreference.com/w/c/language/arithmetic_types) bits. This means there is a minimum number of required bits, but platforms can choose to use more bits if desired. The following table illustrates the differences in provided bits for the C/C++ `long` data type between platforms.
 
-| Platform | 32-bit | 64-bit |
+| Platform    | 32-bit | 64-bit |
 |:------------|:-------|:-------|
 | Windows     | 32     | 32     |
 | macOS/\*nix | 32     | 64     |

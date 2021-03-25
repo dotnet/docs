@@ -253,13 +253,13 @@ finally
 
 ## Cross-platform data type considerations
 
-There are types in the C language that have latitude in how they are defined. When writing cross-platform interop, cases can arise where platforms differ and can cause issues if not considered.
+There are types in the C/C++ language that have latitude in how they are defined. When writing cross-platform interop, cases can arise where platforms differ and can cause issues if not considered.
 
-### C `long`
+### C/C++ `long`
 
-C `long` and C# `long` are not the same types. Using C# `long` to interop with C `long` is almost never correct.
+C/C++ `long` and C# `long` are not the same types. Using C# `long` to interop with C/C++ `long` is almost never correct.
 
-The `long` keyword in C is defined to have ["at least 32"](https://en.cppreference.com/w/c/language/arithmetic_types) bits. This means there is a minimum required but platforms are not limited to that. The table below illustrates the differences in provided bits for the C `long` data type between platforms.
+The `long` keyword in C/C++ is defined to have ["at least 32"](https://en.cppreference.com/w/c/language/arithmetic_types) bits. This means there is a minimum required but platforms are not limited to that. The table below illustrates the differences in provided bits for the C/C++ `long` data type between platforms.
 
 |             | 32-bit | 64-bit |
 |:------------|:-------|:-------|
@@ -268,7 +268,7 @@ The `long` keyword in C is defined to have ["at least 32"](https://en.cppreferen
 
 These differences can make authoring cross-platform P/Invokes difficult when the native function is defined to use `long` on all platforms.
 
-In .NET 6 and later versions, use [`CLong` and `CULong`](https://github.com/dotnet/runtime/issues/13788) types for interop with C `long` and `ulong` data types. The example is for `CLong`, but you can use `CULong` to abstract C's `unsigned long` in a similar way.
+In .NET 6 and later versions, use [`CLong` and `CULong`](https://github.com/dotnet/runtime/issues/13788) types for interop with C/C++ `long` and `unsigned long` data types. The example is for `CLong`, but you can use `CULong` to abstract `unsigned long` in a similar way.
 
 ```csharp
 // Cross platform C function

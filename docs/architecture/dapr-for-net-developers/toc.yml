@@ -13,9 +13,9 @@
   - name: Getting started
     href: getting-started.md
     displayName: dapr, distributed system, distributed application, service invocation, state management, install dapr, component configuration files, multi-container dapr application
-  - name: Reference application
-    href: reference-application.md
-    displayName: dapr, distributed system, distributed application, dapr building blocks, dapr components, microservice, eshop
+  - name: Sample application
+    href: sample-application.md
+    displayName: dapr, distributed system, distributed application, dapr building blocks, dapr components, microservice, traffic control
   - name: State management
     href: state-management.md
     displayName: dapr, distributed system, distributed application, state management, dapr state management building block, cap theorem, concurrency, transactions
@@ -34,6 +34,9 @@
   - name: Secrets
     href: secrets.md
     displayName: dapr, distributed system, distributed application, secrets, dapr secrets building block, kubernetes secrets, azure key vault
+  - name: Reference application
+    href: reference-application.md
+    displayName: dapr, distributed system, distributed application, dapr building blocks, dapr components, microservice, eshop
   - name: Summary and the road ahead
     href: summary.md
     displayName: dapr, distributed system, distributed application, dapr building blocks, dapr components, microservice, sidecar architecture, dapr futures

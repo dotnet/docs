@@ -190,8 +190,8 @@ The following types are the same size on 32-bit and 64-bit Windows, despite thei
 | 64    | `LONGLONG`       | `long long`          | `long`   |                                      |
 | 64    | `ULONGLONG`      | `unsigned long long` | `ulong`  |                                      |
 | 64    | `ULARGE_INTEGER` | `unsigned long long` | `ulong`  |                                      |
-| 32    | `HRESULT`        | `long`               | `int`    |                                      |
-| 32    | `NTSTATUS`       | `long`               | `int`    |                                      |
+| 32    | `HRESULT`        | `int`                | `int`    |                                      |
+| 32    | `NTSTATUS`       | `int`                | `int`    |                                      |
 
 The following types, being pointers, do follow the width of the platform. Use `IntPtr`/`UIntPtr` for these.
 

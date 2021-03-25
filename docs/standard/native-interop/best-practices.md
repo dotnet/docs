@@ -182,9 +182,9 @@ The following types are the same size on 32-bit and 64-bit Windows, despite thei
 | 16    | `WORD`           | `unsigned short`     | `ushort` |                                      |
 | 16    | `ATOM`           | `unsigned short`     | `ushort` |                                      |
 | 32    | `INT`            | `int`                | `int`    |                                      |
-| 32    | `LONG`           | `long`               | `int`    |                                      |
-| 32    | `ULONG`          | `unsigned long`      | `uint`   |                                      |
-| 32    | `DWORD`          | `unsigned long`      | `uint`   |                                      |
+| 32    | `LONG`           | `long`               | `int`    |  See `CLong` and `CULong` below.     |
+| 32    | `ULONG`          | `unsigned long`      | `uint`   |  See `CLong` and `CULong` below.     |
+| 32    | `DWORD`          | `unsigned long`      | `uint`   |  See `CLong` and `CULong` below.     |
 | 64    | `QWORD`          | `long long`          | `long`   |                                      |
 | 64    | `LARGE_INTEGER`  | `long long`          | `long`   |                                      |
 | 64    | `LONGLONG`       | `long long`          | `long`   |                                      |
@@ -251,12 +251,14 @@ finally
 }
 ```
 
-## Windows and non-Windows data type considerations
+## Cross-platform data type considerations
 
 There are types in the C language that have latitude in how they are defined. When writing cross-platform interop, cases can arise where platforms differ and can cause issues if not considered.
 
 ### C `long`
+
 C `long` and C# `long` are not the same types. Using C# `long` to interop with C `long` is almost never correct.
+
 The `long` keyword in C is defined to have ["at least 32"](https://en.cppreference.com/w/c/language/arithmetic_types) bits. This means there is a minimum required but platforms are not limited to that. The table below illustrates the differences in provided bits for the C `long` data type between platforms.
 
 |             | 32-bit | 64-bit |
@@ -264,41 +266,44 @@ The `long` keyword in C is defined to have ["at least 32"](https://en.cppreferen
 | Windows     | 32     | 32     |
 | macOS/\*nix | 32     | 64     |
 
-These differences make authoring cross-platform P/Invokes difficult when the native function is defined to use `long` on all platforms. When targeting .NET 5 and prior .NET versions, you should declare separate Windows and non-Windows signatures to handle the problem.
-
-```csharp
-static readonly bool IsWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
-
-// Cross platform C function
-// void Function(long a);
-
-[DllImport("NativeLib", EntryPoint = "Function")]
-extern static void FunctionWindows(int a);
-
-[DllImport("NativeLib", EntryPoint = "Function")]
-extern static void FunctionUnix(nint a);
-
-// Usage
-if (IsWindows)
-{
-    FunctionWindows(a);
-}
-else
-{
-    FunctionUnix(a);
-}
-```
+These differences make authoring cross-platform P/Invokes difficult when the native function is defined to use `long` on all platforms. 
 
 In .NET 6 a new type has been introduced to help ameliorate this issue - [`CLong` and `CULong`](https://github.com/dotnet/runtime/issues/13788). In .NET 6 the following is now possible. The example is for `CLong`, but you can use `CULong` to abstract C's `unsigned long` in a similar way.
 
 ```csharp
 // Cross platform C function
-// void Function(long a);
+// long Function(long a);
 [DllImport("NativeLib")]
-extern static void Function(CLong a);
+extern static CLong Function(CLong a);
     
 // Usage
-Function(a);
+int result = Function(new CLong(10)).Value;
+```
+
+When targeting .NET 5 and prior .NET versions, you should declare separate Windows and non-Windows signatures to handle the problem.
+
+```csharp
+static readonly bool IsWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
+
+// Cross platform C function
+// long Function(long a);
+
+[DllImport("NativeLib", EntryPoint = "Function")]
+extern static int FunctionWindows(int a);
+
+[DllImport("NativeLib", EntryPoint = "Function")]
+extern static nint FunctionUnix(nint a);
+
+// Usage
+int result;
+if (IsWindows)
+{
+    result = (int)FunctionWindows(10);
+}
+else
+{
+    result = (int)FunctionUnix(10);
+}
 ```
 
 ## Structs

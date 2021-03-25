@@ -33,6 +33,10 @@ namespace Patterns
             Console.WriteLine("--- Positional pattern ----------------------");
             PositionalPattern.Examples();
             Console.WriteLine();
+
+            Console.WriteLine("--- var pattern -----------------------------");
+            VarPattern.Examples();
+            Console.WriteLine();
         }
     }
 }

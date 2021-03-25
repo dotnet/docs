@@ -60,5 +60,15 @@ namespace Patterns
         // <WithParentheses>
         static bool IsLetter(char c) => c is (>= 'a' and <= 'z') or (>= 'A' and <= 'Z');
         // </WithParentheses>
+
+        private static void ChangedPrecedence(object input)
+        {
+            // <ChangedPrecedence>
+            if (input is not (float or double))
+            {
+                return;
+            }
+            // </ChangedPrecedence>
+        }
     }
 }

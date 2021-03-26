@@ -196,9 +196,7 @@ public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem productToUp
            _catalogContext.CatalogItems.Update(catalogItem);
            await _catalogContext.SaveChangesAsync();
 
-           // Save to EventLog only if product price changed
-           if(raiseProductPriceChangedEvent)
-               await _integrationEventLogService.SaveEventAsync(priceChangedEvent);
+           await _integrationEventLogService.SaveEventAsync(priceChangedEvent);
 
            transaction.Commit();
         }

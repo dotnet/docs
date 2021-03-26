@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <endpoint> of <client>"
 title: "<endpoint> of <client>"
 ms.date: "03/30/2017"
 ms.assetid: de6238ae-bbf8-48e9-a1b5-e24c0bea8afa

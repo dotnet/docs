@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Configuring System-Provided Bindings"
 title: "Configuring System-Provided Bindings"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

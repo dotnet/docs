@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SQL Server Compact and LINQ to SQL"
 title: "SQL Server Compact and LINQ to SQL"
 ms.date: "03/30/2017"
 ms.assetid: 59022359-a5a2-4c42-9a6a-5c0259c3ad17

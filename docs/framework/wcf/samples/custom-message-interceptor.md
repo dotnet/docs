@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Custom Message Interceptor"
 title: "Custom Message Interceptor"
 ms.date: "03/30/2017"
 ms.assetid: 73f20972-53f8-475a-8bfe-c133bfa225b0

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ServiceAuthorizationSuccess"
 title: "ServiceAuthorizationSuccess"
 ms.date: "03/30/2017"
 ms.assetid: 4e379f38-23f3-498b-b3fd-28cedefbf878

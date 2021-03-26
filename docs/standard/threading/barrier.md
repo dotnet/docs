@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Barrier"
 title: "Barrier"
 ms.date: "09/14/2018"
 dev_langs: 

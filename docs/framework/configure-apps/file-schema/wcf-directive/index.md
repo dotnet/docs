@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WCF Directive Syntax"
 title: "WCF Directive Syntax"
 ms.date: "03/30/2017"
 ms.assetid: e471b042-d5e3-491c-bc81-758655016a3a

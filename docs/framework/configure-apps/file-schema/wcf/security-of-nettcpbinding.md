@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <security> of <netTcpBinding>"
 title: "<security> of <netTcpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 286cd191-4fd5-4c4e-a223-9c71cf7fdead

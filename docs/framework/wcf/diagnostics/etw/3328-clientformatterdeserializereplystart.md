@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3328 - ClientFormatterDeserializeReplyStart"
 title: "3328 - ClientFormatterDeserializeReplyStart"
 ms.date: "03/30/2017"
 ms.assetid: 3e8cb064-3052-481e-8a81-3e311d9ce138

@@ -38,7 +38,7 @@ A symbol represents a distinct element declared by the source code or imported f
 A variety of methods and properties on the <xref:Microsoft.CodeAnalysis.Compilation> type help you find symbols. For example, you can find a symbol for a declared type by its common metadata name. You can also access the entire symbol table as a tree of symbols rooted by the global namespace.
 
 Symbols also contain additional information that the compiler determines from the source or metadata, such as other referenced symbols. Each kind of symbol is represented by a separate interface derived from <xref:Microsoft.CodeAnalysis.ISymbol>, each with its own methods and properties detailing the information the compiler has gathered. Many of these properties directly reference other symbols. For example, the <xref:Microsoft.CodeAnalysis.IMethodSymbol.ReturnType?displayProperty=nameWithType> property
-tells you the actual type symbol that the method declaration references.
+tells you the actual type symbol that the method returns.
 
 Symbols present a common representation of namespaces, types, and members, between source code and metadata. For example, a method that was declared in source code and a method that was imported from metadata are both represented by an <xref:Microsoft.CodeAnalysis.IMethodSymbol> with the same properties.
 

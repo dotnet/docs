@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How To: Service Versioning"
 title: "How To: Service Versioning"
 ms.date: "03/30/2017"
 ms.assetid: 4287b6b3-b207-41cf-aebe-3b1d4363b098

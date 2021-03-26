@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugILFrame::SetIP Method"
 title: "ICorDebugILFrame::SetIP Method"
 ms.date: "03/30/2017"
 api_name: 

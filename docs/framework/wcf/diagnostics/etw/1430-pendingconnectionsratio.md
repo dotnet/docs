@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1430 - PendingConnectionsRatio"
 title: "1430 - PendingConnectionsRatio"
 ms.date: "03/30/2017"
 ms.assetid: c9df7da9-26e7-444f-9e36-86de1676442d

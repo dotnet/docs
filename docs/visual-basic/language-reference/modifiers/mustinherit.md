@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MustInherit (Visual Basic)"
 title: "MustInherit"
 ms.date: 07/20/2015
 f1_keywords: 

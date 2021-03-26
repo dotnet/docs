@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Turn Off Deferred Loading"
 title: "How to: Turn Off Deferred Loading"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC31026: Unable to create strong-named assembly from key file '<filename>': <error>"
 title: "Unable to create strong-named assembly from key file '<filename>': <error>"
 ms.date: 07/20/2015
 f1_keywords:

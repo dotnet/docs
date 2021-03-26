@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <supportPortability> Element"
 title: "<supportPortability> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
@@ -77,5 +78,5 @@ The following example enables an application to have references to both the .NET
   
 ## See also
 
-- [-appconfig (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/appconfig-compiler-option.md)
+- [-appconfig (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/advanced.md#applicationconfiguration)
 - [.NET Framework Assembly Unification Overview](/previous-versions/dotnet/netframework-4.0/db7849ey(v=vs.100))

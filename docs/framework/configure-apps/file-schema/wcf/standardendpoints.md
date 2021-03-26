@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <standardEndpoints>"
 title: "<standardEndpoints>"
 ms.date: "03/30/2017"
 ms.assetid: d62153d7-a6e6-462a-a784-cca61e9c2ba1

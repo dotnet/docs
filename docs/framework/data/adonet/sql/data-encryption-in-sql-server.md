@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Encryption in SQL Server"
 title: "Data Encryption in SQL Server"
 ms.date: "03/30/2017"
 ms.assetid: 83b992f7-b351-4678-b4b9-f4ffd58134cc

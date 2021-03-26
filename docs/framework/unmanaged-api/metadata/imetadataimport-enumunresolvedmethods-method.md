@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::EnumUnresolvedMethods Method"
 title: "IMetaDataImport::EnumUnresolvedMethods Method"
 ms.date: "03/30/2017"
 api_name: 

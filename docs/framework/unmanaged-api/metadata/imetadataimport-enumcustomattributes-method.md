@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::EnumCustomAttributes Method"
 title: "IMetaDataImport::EnumCustomAttributes Method"
 ms.date: "03/30/2017"
 api_name: 

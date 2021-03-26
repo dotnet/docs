@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Package and deploy custom My extensions (Visual Basic)"
 title: "Packaging and deploying custom My extensions"
 ms.date: 08/14/2018
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Order Preservation in PLINQ"
 title: "Order Preservation in PLINQ"
 ms.date: "03/30/2017"
 dev_langs: 

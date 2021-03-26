@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedBinder3::GetReaderFromCallback Method"
 title: "ISymUnmanagedBinder3::GetReaderFromCallback Method"
 ms.date: "03/30/2017"
 api_name: 

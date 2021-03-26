@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::DefineSecurityAttributeSet Method"
 title: "IMetaDataEmit::DefineSecurityAttributeSet Method"
 ms.date: "03/30/2017"
 api_name: 

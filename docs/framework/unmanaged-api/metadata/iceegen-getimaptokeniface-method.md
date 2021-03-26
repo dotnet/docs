@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICeeGen::GetIMapTokenIface Method"
 title: "ICeeGen::GetIMapTokenIface Method"
 ms.date: "03/30/2017"
 api_name: 

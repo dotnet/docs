@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Request-Reply Contract"
 title: "How to: Create a Request-Reply Contract"
 ms.date: "03/30/2017"
 ms.assetid: 801d90da-3d45-4284-9c9f-56c8aadb4060

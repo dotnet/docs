@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.CommunicationObjectClosing"
 title: "System.ServiceModel.CommunicationObjectClosing"
 ms.date: "03/30/2017"
 ms.assetid: 2b395653-7615-4dbe-8ee6-2dc11b659221

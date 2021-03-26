@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AppDomainInfo"
 title: "AppDomainInfo"
 ms.date: "03/30/2017"
 ms.assetid: 6610b7d8-81eb-4bec-a543-9b72ad7b6f73

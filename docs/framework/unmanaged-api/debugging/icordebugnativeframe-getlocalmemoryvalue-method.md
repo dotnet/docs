@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugNativeFrame::GetLocalMemoryValue Method"
 title: "ICorDebugNativeFrame::GetLocalMemoryValue Method"
 ms.date: "03/30/2017"
 api_name: 

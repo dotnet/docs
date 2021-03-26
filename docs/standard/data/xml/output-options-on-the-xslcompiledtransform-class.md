@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Output Options on the XslCompiledTransform Class"
 title: "Output Options on the XslCompiledTransform Class"
 ms.date: "03/30/2017"
 ms.assetid: 91ce8cba-386c-411e-bb38-0891a0393c0a

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC42324: Using the iteration variable in a lambda expression may have unexpected results"
 title: "Using the iteration variable in a lambda expression may have unexpected results"
 ms.date: 07/20/2015
 f1_keywords:

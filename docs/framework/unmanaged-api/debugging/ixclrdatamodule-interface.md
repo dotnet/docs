@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IXCLRDataModule Interface"
 title: "IXCLRDataModule Interface"
 ms.date: "01/16/2019"
 api.name:

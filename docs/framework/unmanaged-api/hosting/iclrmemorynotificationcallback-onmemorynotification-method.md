@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRMemoryNotificationCallback::OnMemoryNotification Method"
 title: "ICLRMemoryNotificationCallback::OnMemoryNotification Method"
 ms.date: "03/30/2017"
 api_name: 

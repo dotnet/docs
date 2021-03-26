@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Activation.WebHostCompilation"
 title: "System.ServiceModel.Activation.WebHostCompilation"
 ms.date: "03/30/2017"
 ms.assetid: 33ee56f8-30bb-445a-964d-050294c85ac6

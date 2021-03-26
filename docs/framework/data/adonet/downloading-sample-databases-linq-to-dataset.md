@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Download sample databases (LINQ to DataSet)"
 title: "Downloading Sample Databases (LINQ to DataSet)"
 ms.date: "03/30/2017"
 ms.assetid: eb42a7af-d410-4b7f-b4a8-13c72ce6fd09

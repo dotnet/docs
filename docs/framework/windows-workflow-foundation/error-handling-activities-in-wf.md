@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Error Handling Activities in WF"
 title: "Error Handling Activities in WF"
 ms.date: "03/30/2017"
 ms.assetid: 24b68bd3-cef5-4413-ab82-2e2625f209aa

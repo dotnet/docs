@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Queues in Windows Communication Foundation"
 title: "Queues in Windows Communication Foundation"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

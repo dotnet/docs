@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.MessageWritten"
 title: "System.ServiceModel.MessageWritten"
 ms.date: "03/30/2017"
 ms.assetid: 5d8ce118-acdc-429c-ac89-34e943267c99

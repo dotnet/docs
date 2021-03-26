@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::ExceptionSearchFunctionEnter Method"
 title: "ICorProfilerCallback::ExceptionSearchFunctionEnter Method"
 ms.date: "03/30/2017"
 api_name: 
@@ -29,9 +30,8 @@ HRESULT ExceptionSearchFunctionEnter(
   
 ## Parameters
 
-- `functionId`
-
-  \[in] The ID of the function that has been entered.
+`functionId`
+[in] The ID of the function that has been entered.
   
 ## Requirements  
 

@@ -17,7 +17,7 @@ namespace SystemTextJsonSamples
                 WriteIndented = true,
                 Converters =
                 {
-                    new DateTimeOffsetConverter()
+                    new DateTimeOffsetJsonConverter()
                 }
             };
             
@@ -27,7 +27,7 @@ namespace SystemTextJsonSamples
 
             // <Deserialize>
             var deserializeOptions = new JsonSerializerOptions();
-            deserializeOptions.Converters.Add(new DateTimeOffsetConverter());
+            deserializeOptions.Converters.Add(new DateTimeOffsetJsonConverter());
             weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString, deserializeOptions);
             // </Deserialize>
             weatherForecast.DisplayPropertyValues();

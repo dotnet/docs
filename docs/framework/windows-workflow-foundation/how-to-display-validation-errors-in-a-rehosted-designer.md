@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Display Validation Errors in a Rehosted Designer"
 title: "How to: Display Validation Errors in a Rehosted Designer"
 ms.date: "03/30/2017"
 ms.assetid: 5aa8fb53-8f75-433b-bc06-7c7d33583d5d

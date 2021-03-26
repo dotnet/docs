@@ -27,7 +27,7 @@ The Code Access Security (CAS) Policy tool (Caspol.exe) enables users and admini
 > [!NOTE]
 > 64-bit computers include both 64-bit and 32-bit versions of security policy. To ensure that your policy changes apply to both 32-bit and 64-bit applications, run both the 32-bit and 64-bit versions of Caspol.exe.  
   
- The Code Access Security Policy tool is automatically installed with the .NET Framework and with Visual Studio. You can find Caspol.exe in %windir%\Microsoft.NET\Framework\\*version* on 32-bit systems or %windir%\Microsoft.NET\Framework64\\*version* on 64-bit systems. (For example, the location is %windir%\Microsoft.NET\Framework64\v4.030319\caspol.exe for the .NET Framework 4 on a 64-bit system.) Multiple versions of the tool might be installed if your computer is running multiple versions of the .NET Framework side by side. You can run the tool from the installation directory. However, we recommend that you use the [Command Prompts](developer-command-prompt-for-vs.md), which does not require you to navigate to the installation folder.  
+ The Code Access Security Policy tool is automatically installed with .NET Framework and with Visual Studio. You can find Caspol.exe in %windir%\Microsoft.NET\Framework\\*version* on 32-bit systems or %windir%\Microsoft.NET\Framework64\\*version* on 64-bit systems. (For example, the location is %windir%\Microsoft.NET\Framework64\v4.030319\caspol.exe for .NET Framework 4 on a 64-bit system.) Multiple versions of the tool might be installed if your computer is running multiple versions of .NET Framework side by side. You can run the tool from the installation directory. However, we recommend that you use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell), which does not require you to navigate to the installation folder.  
   
  At the command prompt, type the following:  
   
@@ -249,4 +249,4 @@ caspol -all -resolveperm testassembly
 ## See also
 
 - [Tools](index.md)
-- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

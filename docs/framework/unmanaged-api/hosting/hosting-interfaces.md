@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Hosting Interfaces"
 title: "Hosting Interfaces"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3355 - SecurityNegotiationProcessingFailure"
 title: "3355 - SecurityNegotiationProcessingFailure"
 ms.date: "03/30/2017"
 ms.assetid: 504f85f0-d11d-4de0-a0ab-ea580a476d18

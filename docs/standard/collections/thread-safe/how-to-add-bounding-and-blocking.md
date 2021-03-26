@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Add Bounding and Blocking Functionality to a Collection"
 title: "How to: Add Bounding and Blocking Functionality to a Collection"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.Runtime.Serialization.XsdExportBegin"
 title: "System.Runtime.Serialization.XsdExportBegin"
 ms.date: "03/30/2017"
 ms.assetid: d7457aa5-c147-4643-bdb9-eaafa6674013

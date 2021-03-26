@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Support for the msxsl:node-set() Function"
 title: "Support for the msxsl:node-set() Function"
 ms.date: "03/30/2017"
 ms.assetid: d0cbf517-d9f6-4097-9851-4fa62903decd

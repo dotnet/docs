@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Security Context Token for a Secure Session"
 title: "How to: Create a Security Context Token for a Secure Session"
 ms.date: "03/30/2017"
 dev_langs: 

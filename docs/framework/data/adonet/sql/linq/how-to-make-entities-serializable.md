@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Make Entities Serializable"
 title: "How to: Make Entities Serializable"
 ms.date: "03/30/2017"
 ms.assetid: a6c5bf6e-064a-4f77-b74c-76b3a5dec309

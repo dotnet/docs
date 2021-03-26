@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: * (Multiply) (Entity SQL)"
 title: "* (Multiply) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 508ce246-4e86-47dd-a605-4af4bebb9891

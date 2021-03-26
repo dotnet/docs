@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Customizing the Workflow Design Experience"
 title: "Customizing the Workflow Design Experience"
 ms.date: "03/30/2017"
 helpviewer_keywords:

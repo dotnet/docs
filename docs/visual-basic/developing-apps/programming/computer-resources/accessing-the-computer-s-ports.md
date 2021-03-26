@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accessing the Computer's Ports (Visual Basic)"
 title: "Accessing the Computer's Ports"
 ms.date: 07/20/2015
 helpviewer_keywords: 

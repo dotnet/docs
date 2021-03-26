@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.OpenedListener"
 title: "System.ServiceModel.Channels.OpenedListener"
 ms.date: "03/30/2017"
 ms.assetid: 474830b3-b76c-4f3c-a363-20d9124fece5

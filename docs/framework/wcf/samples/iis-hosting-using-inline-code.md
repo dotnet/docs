@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IIS Hosting Using Inline Code"
 title: "IIS Hosting Using Inline Code"
 ms.date: "03/30/2017"
 helpviewer_keywords:

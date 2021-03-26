@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 202 - ClientMessageInspectorBeforeSendInvoked"
 title: "202 - ClientMessageInspectorBeforeSendInvoked"
 ms.date: "03/30/2017"
 ms.assetid: 0b02ca82-8a55-45e3-b2e2-ddfe28a7269c

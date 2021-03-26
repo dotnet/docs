@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Round-trip Date and Time Values"
 title: "How to: Round-trip Date and Time Values"
 ms.date: "03/30/2017"
 dev_langs:

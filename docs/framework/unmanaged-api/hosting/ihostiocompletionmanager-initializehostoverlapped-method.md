@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostIoCompletionManager::InitializeHostOverlapped Method"
 title: "IHostIoCompletionManager::InitializeHostOverlapped Method"
 ms.date: "03/30/2017"
 api_name: 

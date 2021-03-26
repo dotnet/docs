@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_PRF_FUNCTION_ARGUMENT_INFO Structure"
 title: "COR_PRF_FUNCTION_ARGUMENT_INFO Structure"
 ms.date: "03/30/2017"
 api_name: 

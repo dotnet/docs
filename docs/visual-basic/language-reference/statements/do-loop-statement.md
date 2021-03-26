@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Do...Loop Statement (Visual Basic)"
 title: "Do...Loop Statement"
 ms.date: 07/20/2015
 f1_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 106 - CancelRequestRecord"
 title: "106 - CancelRequestRecord"
 ms.date: "03/30/2017"
 ms.assetid: f72a59aa-8093-4a8e-94df-40acaffb1ffb

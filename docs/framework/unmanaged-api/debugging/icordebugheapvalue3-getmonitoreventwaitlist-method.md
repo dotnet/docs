@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugHeapValue3::GetMonitorEventWaitList Method"
 title: "ICorDebugHeapValue3::GetMonitorEventWaitList Method"
 ms.date: "03/30/2017"
 api_name: 

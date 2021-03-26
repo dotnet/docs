@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <Method> Element (.NET Native)"
 title: "<Method> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: 348b49e5-589d-4eb2-a597-d6ff60ab52d1

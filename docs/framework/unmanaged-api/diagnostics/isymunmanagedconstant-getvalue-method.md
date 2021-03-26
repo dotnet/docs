@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedConstant::GetValue Method"
 title: "ISymUnmanagedConstant::GetValue Method"
 ms.date: "03/30/2017"
 api_name: 

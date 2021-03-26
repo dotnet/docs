@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <mexNamedPipeBinding>"
 title: "<mexNamedPipeBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 193412fa-3260-414c-92c6-b32ed3b94a34

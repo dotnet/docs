@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1416 - MaxReceivedMessageSizeExceeded"
 title: "1416 - MaxReceivedMessageSizeExceeded"
 ms.date: "03/30/2017"
 ms.assetid: ee5562dd-29e1-432d-9c78-0bdc3ae365c4

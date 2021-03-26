@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <idn> Element (Uri Settings)"
 title: "<idn> Element (Uri Settings)"
 ms.date: "03/30/2017"
 ms.assetid: 16c8e869-1791-4cf5-9244-3d3c738f60ec

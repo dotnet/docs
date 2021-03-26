@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo3::GetRuntimeInformation Method"
 title: "ICorProfilerInfo3::GetRuntimeInformation Method"
 ms.date: "03/30/2017"
 api_name: 

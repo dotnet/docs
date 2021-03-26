@@ -63,12 +63,12 @@ layer has no dependencies on Visual Studio components.
 
 ### Diagnostic APIs
 
-As part of its analysis the compiler may produce a set of diagnostics
+As part of its analysis, the compiler may produce a set of diagnostics
 covering everything from syntax, semantic, and definite assignment errors
 to various warnings and informational diagnostics. The Compiler API layer
 exposes diagnostics through an extensible API that allows user-defined
 analyzers to be plugged into the compilation process. It allows user-defined
-diagnostics, such as those produced by tools like StyleCop or FxCop, to be
+diagnostics, such as those produced by tools like StyleCop, to be
 produced alongside compiler-defined diagnostics. Producing diagnostics in this
 way has the benefit of integrating naturally with tools such as MSBuild
 and Visual Studio, which depend on diagnostics for experiences such as

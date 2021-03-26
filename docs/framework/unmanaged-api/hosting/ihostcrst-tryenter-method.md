@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostCrst::TryEnter Method"
 title: "IHostCrst::TryEnter Method"
 ms.date: "03/30/2017"
 api_name: 

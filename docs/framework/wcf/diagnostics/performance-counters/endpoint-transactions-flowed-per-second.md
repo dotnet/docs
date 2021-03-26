@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Endpoint: Transactions Flowed Per Second"
 title: "Endpoint: Transactions Flowed Per Second"
 ms.date: "03/30/2017"
 ms.assetid: 0f370ff1-a913-450b-bccb-c279ad165b3d

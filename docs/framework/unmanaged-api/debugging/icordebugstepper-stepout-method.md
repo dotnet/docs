@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugStepper::StepOut Method"
 title: "ICorDebugStepper::StepOut Method"
 ms.date: "03/30/2017"
 api_name: 

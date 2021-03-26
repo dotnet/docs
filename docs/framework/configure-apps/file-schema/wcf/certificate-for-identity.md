@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <certificate> for <identity>"
 title: "<certificate> for <identity>"
 ms.date: "03/30/2017"
 ms.assetid: 4aeccaf7-8f23-495c-aa5f-5bd8b5d4a10c

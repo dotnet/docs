@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4803 - DiscoveryClientReceivedMulticastSuppression"
 title: "4803 - DiscoveryClientReceivedMulticastSuppression"
 ms.date: "03/30/2017"
 ms.assetid: 4a0aa0f5-e20e-4004-bdeb-15c19a5477d9

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess8 Interface"
 title: "ICorDebugProcess8 Interface"
 ms.date: "03/30/2017"
 ms.assetid: 7ab1a70f-ec11-46ff-8869-cd8ca679cc51

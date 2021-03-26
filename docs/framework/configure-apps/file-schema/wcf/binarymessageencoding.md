@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <binaryMessageEncoding>"
 title: "<binaryMessageEncoding>"
 ms.date: "03/30/2017"
 ms.assetid: e4ae3cd4-6b67-4ce1-af4b-9400e0a38dba

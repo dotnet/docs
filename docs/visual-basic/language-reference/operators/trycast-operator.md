@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TryCast Operator (Visual Basic)"
 title: "TryCast Operator"
 ms.date: 07/20/2015
 f1_keywords: 

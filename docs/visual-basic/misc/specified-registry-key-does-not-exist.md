@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Specified registry key does not exist"
 title: "Specified registry key does not exist"
 ms.date: 07/20/2015
 ms.assetid: 837e925a-aac5-4745-8eaa-d08bebbcbcd3

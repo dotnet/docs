@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <namedPipeTransport>"
 title: "<namedPipeTransport>"
 ms.date: "03/30/2017"
 ms.assetid: 9fc3f42f-43e2-4ab1-8bc7-3c95a9220df1

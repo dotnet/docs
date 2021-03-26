@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Blocking Application Execution Using an AsyncWaitHandle"
 title: "Blocking Application Execution Using an AsyncWaitHandle"
 ms.date: "03/30/2017"
 dev_langs: 

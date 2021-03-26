@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recoverable XSLT Errors"
 title: "Recoverable XSLT Errors"
 ms.date: "03/30/2017"
 ms.assetid: 484929b0-fefb-4629-87ee-ebdde70ff1f8

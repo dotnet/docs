@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FunctionEnter3 Function"
 title: "FunctionEnter3 Function"
 ms.date: "03/30/2017"
 api_name: 
@@ -27,9 +28,8 @@ void __stdcall FunctionEnter3(FunctionOrRemappedID functionOrRemappedID);
   
 ## Parameters
 
-- `functionOrRemappedID`
-
-  \[in] The identifier of the function to which control is passed.
+`functionOrRemappedID`
+[in] The identifier of the function to which control is passed.
 
 ## Remarks  
 

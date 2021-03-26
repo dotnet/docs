@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.ConnectionPoolMaxOutboundConnectionsPerEndpointQuotaReached"
 title: "System.ServiceModel.Channels.ConnectionPoolMaxOutboundConnectionsPerEndpointQuotaReached"
 ms.date: "03/30/2017"
 ms.assetid: 01c1fd61-84ef-43b8-a2e8-ae64ebbd0d18

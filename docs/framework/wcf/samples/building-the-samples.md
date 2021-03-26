@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Building the Windows Communication Foundation Samples"
 title: "Building the Windows Communication Foundation Samples"
 ms.date: "03/30/2017"
 ms.assetid: 2899e7a5-9cb2-4e8d-b8d2-f31391549198

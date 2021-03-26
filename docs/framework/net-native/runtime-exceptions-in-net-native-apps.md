@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Runtime Exceptions in .NET Native Apps"
 title: "Runtime Exceptions in .NET Native Apps"
 ms.date: "03/30/2017"
 ms.assetid: 5f050181-8fdd-4a4e-9d16-f84c22a88a97

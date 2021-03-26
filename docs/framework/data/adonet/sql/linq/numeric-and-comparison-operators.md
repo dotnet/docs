@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Numeric and Comparison Operators"
 title: "Numeric and Comparison Operators"
 ms.date: "03/30/2017"
 ms.assetid: 25b4a26a-06f2-4f80-87a9-76705ed46197

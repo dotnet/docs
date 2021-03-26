@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <compositeDuplex>"
 title: "<compositeDuplex>"
 ms.date: "03/30/2017"
 ms.assetid: 725004d1-ce88-4405-a220-78e89844f81f

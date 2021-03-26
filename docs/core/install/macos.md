@@ -19,7 +19,7 @@ In this article, you'll learn how to install .NET on macOS. .NET is made up of t
 The latest version of .NET is 5.0.
 
 > [!div class="button"]
-> [Download .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
+> [Download .NET Core](https://dotnet.microsoft.com/download/dotnet)
 
 ## Supported releases
 
@@ -48,16 +48,16 @@ The following versions of .NET are ❌ no longer supported. The downloads for th
 
 The runtime is used to run apps created with .NET. When an app author publishes an app, they can include the runtime with their app. If they don't include the runtime, it's up to the user to install the runtime.
 
-There are three different runtimes you can install on macOS:
+There are two different runtimes you can install on macOS:
 
-*ASP.NET Core runtime*\
-Runs ASP.NET Core apps. Includes the .NET runtime.
+- *ASP.NET Core runtime*\
+  Runs ASP.NET Core apps. Includes the .NET runtime.
 
-*.NET runtime*\
-This runtime is the simplest runtime and doesn't include any other runtime. It's highly recommended that you install *ASP.NET Core runtime* for the best compatibility with .NET apps.
+- *.NET runtime*\
+  This runtime is the simplest runtime and doesn't include any other runtime. It's highly recommended that you install *ASP.NET Core runtime* for the best compatibility with .NET apps.
 
 > [!div class="button"]
-> [Download .NET Runtime](https://dotnet.microsoft.com/download/dotnet-core)
+> [Download .NET Runtime](https://dotnet.microsoft.com/download/dotnet)
 
 ## SDK information
 
@@ -72,11 +72,11 @@ The SDK is used to build and publish .NET apps and libraries. Installing the SDK
 
 | .NET Core Version | macOS                 | Architectures | More information    |
 | ----------------- | --------------------- | --------------| --- |
-| 5.0               | High Sierra (10.13+)  | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0-supported-os.md) |
-| 3.1               | High Sierra (10.13+)  | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md) |
-| 3.0               | High Sierra (10.13+)  | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) |
-| 2.2               | Sierra (10.12+)       | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md) |
-| 2.1               | Sierra (10.12+)       | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) |
+| 5.0               | High Sierra (10.13+)  | x64 | [More information](https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md) |
+| 3.1               | High Sierra (10.13+)  | x64 | [More information](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md) |
+| 3.0               | High Sierra (10.13+)  | x64 | [More information](https://github.com/dotnet/core/blob/main/release-notes/3.0/3.0-supported-os.md) |
+| 2.2               | Sierra (10.12+)       | x64 | [More information](https://github.com/dotnet/core/blob/main/release-notes/2.2/2.2-supported-os.md) |
+| 2.1               | Sierra (10.12+)       | x64 | [More information](https://github.com/dotnet/core/blob/main/release-notes/2.1/2.1-supported-os.md) |
 
 Beginning with macOS Catalina (version 10.15), all software built after June 1, 2019 that is distributed with Developer ID, must be notarized. This requirement applies to the .NET runtime, .NET SDK, and software created with .NET.
 
@@ -101,39 +101,34 @@ brew install mono-libgdiplus
 
 macOS has standalone installers that can be used to install the .NET 5.0 SDK:
 
-- [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/5.0)
+- [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet/5.0)
 
 ## Download and manually install
 
 <!-- Note, this content is taken from includes/linux-install-manual.md but changed for macOS. Any fixes should be applied there too, though content may be different -->
 
-As an alternative to the macOS installers for .NET, you can download and manually install the SDK and runtime. Manual install is usually performed as part of continuous integration testing. For a developer or user, it's generally better to use an [installer](https://dotnet.microsoft.com/download/dotnet-core).
+As an alternative to the macOS installers for .NET, you can download and manually install the SDK and runtime. Manual install is usually performed as part of continuous integration testing. For a developer or user, it's generally better to use an [installer](https://dotnet.microsoft.com/download/dotnet).
 
 If you install .NET SDK, you don't need to install the corresponding runtime. First, download a **binary** release for either the SDK or the runtime from one of the following sites:
 
 - ✔️ [.NET 5.0 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
-- ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-- ✔️ [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1)
-- [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet-core)
+- ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet/3.1)
+- ✔️ [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet/2.1)
+- [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)
 
 Next, extract the downloaded file and use the `export` command to set variables used by .NET and then ensure .NET is in PATH.
 
 To extract the runtime and make the .NET CLI commands available at the terminal, first download a .NET binary release. Then, open a terminal and run the following commands from the directory where the file was saved. The archive file name may be different depending on what you downloaded.
 
-**Use the following command to extract the runtime**:
+**Use the following commands to extract the runtime or SDK that you downloaded.** Remember to change the `DOTNET_FILE` value to your file name:
 
 ```bash
-mkdir -p "$HOME/dotnet" && tar zxf aspnetcore-runtime-5.0.0-osx-x64.tar.gz -C "$HOME/dotnet"
+DOTNET_FILE=dotnet-sdk-5.0.102-linux-x64.tar.gz
 export DOTNET_ROOT=$HOME/dotnet
-export PATH=$PATH:$HOME/dotnet
-```
 
-**Use the following command to extract the SDK**:
+mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
 
-```bash
-mkdir -p "$HOME/dotnet" && tar zxf dotnet-sdk-5.0.100-osx-x64.tar.gz -C "$HOME/dotnet"
-export DOTNET_ROOT=$HOME/dotnet
-export PATH=$PATH:$HOME/dotnet
+export PATH=$PATH:$DOTNET_ROOT
 ```
 
 > [!TIP]
@@ -170,7 +165,7 @@ Visual Studio Code is a powerful and lightweight source code editor that runs on
 While Visual Studio Code doesn't come with an automated .NET installer like Visual Studio does, adding .NET support is simple.
 
 01. [Download and install Visual Studio Code](https://code.visualstudio.com/Download).
-01. [Download and install the .NET SDK](https://dotnet.microsoft.com/download/dotnet-core).
+01. [Download and install the .NET SDK](https://dotnet.microsoft.com/download/dotnet).
 01. [Install the C# extension from the Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
 
 ## Install with bash automation
@@ -194,7 +189,7 @@ Containers provide a lightweight way to isolate your application from the rest o
 
 Microsoft provides images that are tailored for specific scenarios. For example, the [ASP.NET Core repository](https://hub.docker.com/_/microsoft-dotnet-aspnet) provides images that are built for running ASP.NET Core apps in production.
 
-For more information about using .NET Core in a Docker container, see [Introduction to .NET and Docker](../docker/introduction.md) and [Samples](https://github.com/dotnet/dotnet-docker/blob/master/samples/README.md).
+For more information about using .NET Core in a Docker container, see [Introduction to .NET and Docker](../docker/introduction.md) and [Samples](https://github.com/dotnet/dotnet-docker/blob/main/samples/README.md).
 
 ## Next steps
 
@@ -204,9 +199,9 @@ For more information about using .NET Core in a Docker container, see [Introduct
 - [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.md).
 - [Tutorial: Containerize a .NET Core app](../docker/build-container.md).
 
-[release-notes-21]: https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md
-[release-notes-31]: https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md
-[release-notes-50]: https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0-supported-os.md
-[release-notes-20]: https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md
-[release-notes-22]: https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md
-[release-notes-30]: https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md
+[release-notes-21]: https://github.com/dotnet/core/blob/main/release-notes/2.1/2.1-supported-os.md
+[release-notes-31]: https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md
+[release-notes-50]: https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md
+[release-notes-20]: https://github.com/dotnet/core/blob/main/release-notes/2.0/2.0-supported-os.md
+[release-notes-22]: https://github.com/dotnet/core/blob/main/release-notes/2.2/2.2-supported-os.md
+[release-notes-30]: https://github.com/dotnet/core/blob/main/release-notes/3.0/3.0-supported-os.md

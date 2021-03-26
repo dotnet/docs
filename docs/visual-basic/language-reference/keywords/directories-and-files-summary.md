@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Directories and Files Summary (Visual Basic)"
 title: "Directories and Files Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 

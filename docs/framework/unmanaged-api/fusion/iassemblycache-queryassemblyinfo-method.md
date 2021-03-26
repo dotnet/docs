@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAssemblyCache::QueryAssemblyInfo Method"
 title: "IAssemblyCache::QueryAssemblyInfo Method"
 ms.date: "03/30/2017"
 api_name: 

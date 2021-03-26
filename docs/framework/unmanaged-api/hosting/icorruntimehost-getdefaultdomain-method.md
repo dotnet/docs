@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorRuntimeHost::GetDefaultDomain Method"
 title: "ICorRuntimeHost::GetDefaultDomain Method"
 ms.date: "03/30/2017"
 api_name: 

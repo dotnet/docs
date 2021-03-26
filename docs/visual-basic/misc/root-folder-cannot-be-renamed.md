@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Root folder cannot be renamed"
 title: "Root folder cannot be renamed"
 ms.date: 07/20/2015
 ms.assetid: 325eb73c-d5fe-4b65-8926-5dabff007277

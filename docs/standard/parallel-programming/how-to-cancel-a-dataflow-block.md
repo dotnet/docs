@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Cancel a Dataflow Block"
 title: "How to: Cancel a Dataflow Block"
 ms.date: "03/30/2017"
 dev_langs: 

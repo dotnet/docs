@@ -173,30 +173,38 @@ items:
   - name: Overview
     displayName: diagnostics,tools,tooling,productivity,instrumentation
     href: tools-and-productivity.md
-  - name: .NET Core SDK
+  - name: .NET SDK
     items:
     - name: Overview
       displayName: '.net sdk,software development kit,software dev kit,tool'
       href: ../core/sdk.md
     - name: Error messages
       items:
+      - name: NETSDK1004
+        href: ../core/tools/sdk-errors/netsdk1004.md
       - name: NETSDK1005 and NETSDK1047
         href: ../core/tools/sdk-errors/netsdk1005.md
       - name: NETSDK1013
         href: ../core/tools/sdk-errors/netsdk1013.md
       - name: NETSDK1022
         href: ../core/tools/sdk-errors/netsdk1022.md
+      - name: NETSDK1045
+        href: ../core/tools/sdk-errors/netsdk1045.md
       - name: NETSDK1059
         href: ../core/tools/sdk-errors/netsdk1059.md
+      - name: NETSDK1064
+        href: ../core/tools/sdk-errors/netsdk1064.md
       - name: NETSDK1071
         href: ../core/tools/sdk-errors/netsdk1071.md
       - name: NETSDK1073
         href: ../core/tools/sdk-errors/netsdk1073.md
       - name: NETSDK1079
         href: ../core/tools/sdk-errors/netsdk1079.md
+      - name: NETSDK1080
+        href: ../core/tools/sdk-errors/netsdk1080.md
       - name: NETSDK1145
         href: ../core/tools/sdk-errors/netsdk1145.md
-  - name: .NET Core CLI
+  - name: .NET CLI
     items:
     - name: Overview
       displayName: '.net cli,command-line interface,cli,tool'
@@ -341,6 +349,8 @@ items:
           href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
         - name: Microsoft.NET.Sdk.Razor
           href: /aspnet/core/razor-pages/sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+        - name: Microsoft.NET.Sdk.Desktop
+          href: ../core/project-sdk/msbuild-props-desktop.md
     - name: Target frameworks
       href: ../standard/frameworks.md
     - name: Dependency management
@@ -416,6 +426,18 @@ items:
         href: ../core/diagnostics/logging-tracing.md
       - name: Well-known event providers
         href: ../core/diagnostics/well-known-event-providers.md
+      - name: Distributed Tracing
+        items:
+        - name: Overview
+          href: ../core/diagnostics/distributed-tracing.md
+        - name: Concepts
+          href: ../core/diagnostics/distributed-tracing-concepts.md
+        - name: Instrumentation
+          href: ../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
+        - name: Collection
+          href: ../core/diagnostics/distributed-tracing-collection-walkthroughs.md
+    - name: Symbols
+      href: ../core/diagnostics/symbols.md
     - name: Runtime events
       items:
       - name: Overview
@@ -438,7 +460,7 @@ items:
         href: ../fundamentals/diagnostics/runtime-type-events.md
     - name: Collect diagnostics in containers
       href: ../core/diagnostics/diagnostics-in-containers.md
-    - name: .NET Core CLI global tools
+    - name: .NET CLI global tools
       items:
       - name: dotnet-counters
         href: ../core/diagnostics/dotnet-counters.md
@@ -452,7 +474,7 @@ items:
         href: ../core/diagnostics/dotnet-symbol.md
       - name: dotnet-sos
         href: ../core/diagnostics/dotnet-sos.md
-    - name: .NET Core diagnostics tutorials
+    - name: .NET diagnostics tutorials
       items:
       - name: Collect performance trace in Linux with PerfCollect
         href: ../core/diagnostics/trace-perfcollect-lttng.md
@@ -477,6 +499,8 @@ items:
         href: code-analysis/configuration-options.md
       - name: Configuration files
         href: code-analysis/configuration-files.md
+      - name: How to suppress warnings
+        href: code-analysis/suppress-warnings.md
       - name: Code quality rules
         items:
         - name: Rule options
@@ -489,6 +513,8 @@ items:
           href: code-analysis/code-style-rule-options.md
     - name: Rule reference
       items:
+      - name: Categories
+        href: code-analysis/categories.md
       - name: Code quality rules
         items:
         - name: Overview
@@ -1247,20 +1273,16 @@ items:
             href: code-analysis/style-rules/ide0110.md
         - name: Miscellaneous rules
           items:
+          - name: Overview
+            href: code-analysis/style-rules/miscellaneous-rules.md
           - name: IDE0076
             href: code-analysis/style-rules/ide0076.md
           - name: IDE0077
             href: code-analysis/style-rules/ide0077.md
         - name: Formatting rules
-          items:
-          - name: Overview
-            displayName: "formatting rules"
-            href: code-analysis/style-rules/formatting-rules.md
+          href: code-analysis/style-rules/formatting-rules.md
         - name: Naming rules
-          items:
-          - name: Overview
-            displayName: "naming rules"
-            href: code-analysis/style-rules/naming-rules.md
+          href: code-analysis/style-rules/naming-rules.md
     - name: Platform compatibility analyzer
       href: ../standard/analyzers/platform-compat-analyzer.md
     - name: API analyzer
@@ -1293,17 +1315,19 @@ items:
         href: ../core/dependency-loading/loading-resources.md
       - name: Load unmanaged libraries
         href: ../core/dependency-loading/loading-unmanaged.md
+      - name: Collect detailed assembly loading information
+        href: ../core/dependency-loading/collect-details.md
     - name: Tutorials
       items:
-      - name: Create a .NET Core application with plugins
+      - name: Create a .NET application with plugins
         href: ../core/tutorials/creating-app-with-plugin-support.md
-      - name: How to use and debug assembly unloadability in .NET Core
+      - name: How to use and debug assembly unloadability in .NET
         href: ../core/../standard/assembly/unloadability.md
   - name: Versioning
     items:
     - name: Overview
       href: ../core/versions/index.md
-    - name: .NET Core version selection
+    - name: .NET version selection
       href: ../core/versions/selection.md
   - name: Run-time configuration
     items:
@@ -1353,10 +1377,15 @@ items:
     items:
     - name: Introduction to .NET and Docker
       href: ../core/docker/introduction.md
-    - name: Containerize a .NET Core app
+    - name: Containerize a .NET app
       href: ../core/docker/build-container.md
     - name: Container tools in Visual Studio
       href: /visualstudio/containers/overview
+- name: DevOps
+  items:
+  - name: Create a GitHub Action with .NET
+    href: ../devops/create-dotnet-github-action.md
+    displayName: "continuous integration, continuous deployment, ci, cd, ci/cd, github, github action, github actions, lifecycle"
 - name: Fundamental coding components
   items:
   - name: Base types overview
@@ -1835,6 +1864,8 @@ items:
       displayName: custom configuration,custom config,custom configuration provider,custom config provider
     - name: Options pattern
       href: ../core/extensions/options.md
+    - name: Options pattern guidance for library authors
+      href: ../core/extensions/options-library-authors.md
   - name: Logging
     items:
     - name: Overview
@@ -2053,7 +2084,7 @@ items:
     href: ../core/testing/unit-testing-code-coverage.md
   - name: Unit test published output
     href: ../core/testing/unit-testing-published-output.md
-  - name: Live unit test .NET Core projects with Visual Studio
+  - name: Live unit test .NET projects with Visual Studio
     href: /visualstudio/test/live-unit-testing-start
 - name: Security
   href: ../standard/security/
@@ -2128,13 +2159,15 @@ items:
       href: ../standard/native-interop/customize-struct-marshaling.md
     - name: Customize parameter marshaling
       href: ../standard/native-interop/customize-parameter-marshaling.md
+    - name: Cross platform P/Invoke
+      href: ../standard/native-interop/cross-platform.md
     - name: Interop guidance
       href: ../standard/native-interop/best-practices.md
     - name: Charsets and marshaling
       href: ../standard/native-interop/charset.md
-    - name: Expose .NET Core components to COM
+    - name: Expose .NET components to COM
       href: ../core/native-interop/expose-components-to-com.md
-    - name: Host .NET Core from native code
+    - name: Host .NET from native code
       href: ../core/tutorials/netcore-hosting.md
     - name: COM interop
       items:
@@ -2156,7 +2189,7 @@ items:
       href: ../standard/native-interop/apply-interop-attributes.md
     - name: Exceptions
       href: ../standard/native-interop/exceptions-interoperability.md
-  - name: .NET Core distribution packaging
+  - name: .NET distribution packaging
     href: ../core/distribution-packaging.md
   - name: Globalization and localization
     href: ../standard/globalization-localization/
@@ -2269,44 +2302,38 @@ items:
         href: ../standard/design-guidelines/dependency-properties.md
 - name: Migration guide
   items:
+  - name: Overview
+    href: ../core/porting/index.md
+  - name: .NET Upgrade Assistant tool
+    items:
+    - name: Overview
+      href: ../core/porting/upgrade-assistant-overview.md
+    - name: Windows Presentation Foundation
+      href: ../core/porting/upgrade-assistant-wpf-framework.md
+    - name: Windows Forms
+      href: ../core/porting/upgrade-assistant-winforms-framework.md
+    - name: ASP.NET Core
+      href: ../core/porting/upgrade-assistant-aspnetmvc.md
   - name: Breaking changes
     displayName: app compatibility
     href: ../core/compatibility/
-  - name: Migration
-    items:
-    - name: .NET Core 2.0 to 2.1
-      href: ../core/migration/20-21.md
-    - name: Migrate from project.json
-      href: ../core/migration/index.md
-    - name: Map between project.json and csproj
-      href: ../core/tools/project-json-to-csproj.md
-    - name: Map AssemblyInfo attributes to properties
-      href: ../core/migration/assembly-info.md
-    - name: Changes in CLI overview
-      href: ../core/tools/cli-msbuild-architecture.md
-    - name: Migrate from DNX
-      href: ../core/migration/from-dnx.md
-  - name: Port from .NET Framework
-    items:
-    - name: Overview
-      href: ../core/porting/index.md
-    - name: Analyze third-party dependencies
-      href: ../core/porting/third-party-deps.md
-    - name: Port libraries
-      href: ../core/porting/libraries.md
-    - name: Organize projects for .NET Core
-      href: ../core/porting/project-structure.md
-    - name: Unavailable technologies
-      href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-    - name: Tools
-      href: ../core/porting/tools.md
-    - name: Use the Windows Compatibility Pack
-      href: ../core/porting/windows-compat-pack.md
-    - name: Port Windows Forms projects
-      href: /dotnet/desktop/winforms/migration/?view=netdesktop-5.0
-    - name: Port WPF projects
-      href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework
-    - name: Port C++/CLI projects
-      href: ../core/porting/cpp-cli.md
+  - name: Map project AssemblyInfo attributes to properties
+    href: ../core/migration/assembly-info.md
+  - name: Analyze third-party dependencies
+    href: ../core/porting/third-party-deps.md
+  - name: Port libraries
+    href: ../core/porting/libraries.md
+  - name: Organize projects for .NET
+    href: ../core/porting/project-structure.md
+  - name: Unavailable technologies
+    href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: Use the Windows Compatibility Pack
+    href: ../core/porting/windows-compat-pack.md
+  - name: Port Windows Forms projects
+    href: /dotnet/desktop/winforms/migration/?view=netdesktop-5.0
+  - name: Port WPF projects
+    href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0
+  - name: Port C++/CLI projects
+    href: ../core/porting/cpp-cli.md
   - name: Choose between .NET 5 and .NET Framework for server apps
     href: ../standard/choosing-core-framework-server.md

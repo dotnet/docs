@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reading from Files in Visual Basic"
 title: "Reading from Files"
 ms.date: 07/20/2015
 helpviewer_keywords: 

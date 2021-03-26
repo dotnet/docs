@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TraceCodeRemovedBadFilter"
 title: "TraceCodeRemovedBadFilter"
 ms.date: "03/30/2017"
 ms.assetid: 22f169ae-ea2c-444c-b211-50d3b7bece34

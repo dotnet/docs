@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <bindings>"
 title: "<bindings>"
 ms.date: "01/22/2018"
 ms.assetid: b62cd369-5409-4030-8490-9759a462dd3a

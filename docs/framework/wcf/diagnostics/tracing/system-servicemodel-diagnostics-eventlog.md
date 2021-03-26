@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Diagnostics.EventLog"
 title: "System.ServiceModel.Diagnostics.EventLog"
 ms.date: "03/30/2017"
 ms.assetid: 5e8b517b-4f89-4067-8070-e86915b608c4

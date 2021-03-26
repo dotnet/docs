@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAssemblyName::IsEqual Method"
 title: "IAssemblyName::IsEqual Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Parallel Diagnostic Tools"
 title: "Parallel Diagnostic Tools"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Develop a WCF data service running on IIS"
 title: "How to: Develop a WCF Data Service Running on IIS"
 ms.date: "03/30/2017"
 dev_langs:
@@ -11,6 +12,8 @@ helpviewer_keywords:
 ms.assetid: f6f768c5-4989-49e3-a36f-896ab4ded86e
 ---
 # How to: Develop a WCF data service running on IIS
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 This article shows how to use WCF Data Services to create a data service that's based on the Northwind sample database that's hosted by an ASP.NET Web app running on Internet Information Services (IIS). For an example of how to create the same Northwind data service as an ASP.NET Web app that runs on the ASP.NET Development Server, see the [WCF Data Services quickstart](quickstart-wcf-data-services.md).
 

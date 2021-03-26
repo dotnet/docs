@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Setting Up a Profiling Environment"
 title: "Setting Up a Profiling Environment"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

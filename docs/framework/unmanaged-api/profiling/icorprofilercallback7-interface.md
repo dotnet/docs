@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback7 Interface"
 title: "ICorProfilerCallback7 Interface"
 ms.date: "03/30/2017"
 api_name: 

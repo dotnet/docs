@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30481: 'Class' statement must end with a matching 'End Class"
 title: "'Class' statement must end with a matching 'End Class'"
 ms.date: 07/20/2015
 f1_keywords:

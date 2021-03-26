@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using an AsyncCallback Delegate and State Object"
 title: "Using an AsyncCallback Delegate and State Object"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC40032: Underlying type <typename> of Enum is not CLS-compliant"
 title: "Underlying type <typename> of Enum is not CLS-compliant"
 ms.date: 07/20/2015
 f1_keywords:

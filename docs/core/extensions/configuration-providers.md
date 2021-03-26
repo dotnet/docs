@@ -3,7 +3,7 @@ title: Configuration providers in .NET
 description: Learn how the Configuration provider API is used to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/04/2020
+ms.date: 03/08/2021
 ---
 
 # Configuration providers in .NET
@@ -52,13 +52,11 @@ An example *appsettings.json* file with various configuration settings follows:
 
 From the <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder> instance, after configuration providers have been added you can call <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType> to get the <xref:Microsoft.Extensions.Configuration.IConfigurationRoot> object. The configuration root represents the root of a configuration hierarchy. Sections from the configuration can be bound to instances of .NET objects, and later provided as <xref:Microsoft.Extensions.Options.IOptions%601> through dependency injection.
 
-Consider the `TransientFaultHandlingOptions` record type defined as follows:
+Consider the `TransientFaultHandlingOptions` class defined as follows:
 
 :::code language="csharp" source="snippets/configuration/console-json/TransientFaultHandlingOptions.cs":::
 
-For information on record types, see [Record types in C# 9](../../csharp/whats-new/csharp-9.md#record-types).
-
-The following code builds the configuration root, binds a section to the `TransientFaultHandlingOptions` record type, and prints the bound values to the console window:
+The following code builds the configuration root, binds a section to the `TransientFaultHandlingOptions` class type, and prints the bound values to the console window:
 
 :::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="31-38":::
 

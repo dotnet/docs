@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Refer to an Enumeration Member (Visual Basic)"
 title: "How to: Refer to an Enumeration Member"
 ms.date: 07/20/2015
 helpviewer_keywords: 

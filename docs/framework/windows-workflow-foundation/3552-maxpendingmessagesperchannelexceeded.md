@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3552 - MaxPendingMessagesPerChannelExceeded"
 title: "3552 - MaxPendingMessagesPerChannelExceeded"
 ms.date: "03/30/2017"
 ms.assetid: fc8309d9-eb3a-4636-a6f0-dd0018c1361d

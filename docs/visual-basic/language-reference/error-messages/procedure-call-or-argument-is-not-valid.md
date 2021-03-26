@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Procedure call or argument is not valid (Visual Basic)"
 title: "Procedure call or argument is not valid"
 ms.date: 07/20/2015
 f1_keywords: 

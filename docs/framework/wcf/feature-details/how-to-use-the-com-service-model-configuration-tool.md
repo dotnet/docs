@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use the COM+ Service Model Configuration Tool"
 title: "How to: Use the COM+ Service Model Configuration Tool"
 ms.date: "03/30/2017"
 helpviewer_keywords:

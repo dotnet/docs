@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: LocalServiceSecuritySettings"
 title: "LocalServiceSecuritySettings"
 ms.date: "03/30/2017"
 ms.assetid: 490aa0e5-5242-4f8d-b505-5ec6287633b4

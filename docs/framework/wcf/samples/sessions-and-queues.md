@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sessions and queues"
 title: "Sessions and Queues"
 ms.date: "03/30/2017"
 ms.assetid: 47d7c5c2-1e6f-4619-8003-a0ff67dcfbd6

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: User-Defined Functions (Entity SQL)"
 title: "User-Defined Functions (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 3f9e6bbd-8e5a-43e1-809f-f8a61338e522

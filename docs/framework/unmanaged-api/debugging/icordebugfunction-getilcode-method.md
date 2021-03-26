@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugFunction::GetILCode Method"
 title: "ICorDebugFunction::GetILCode Method"
 ms.date: "03/30/2017"
 api_name: 

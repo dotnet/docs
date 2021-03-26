@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::RemotingServerInvocationStarted Method"
 title: "ICorProfilerCallback::RemotingServerInvocationStarted Method"
 ms.date: "03/30/2017"
 api_name: 

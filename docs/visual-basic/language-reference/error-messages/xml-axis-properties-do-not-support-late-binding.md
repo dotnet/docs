@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC31168: XML axis properties do not support late binding"
 title: "XML axis properties do not support late binding"
 ms.date: 07/20/2015
 f1_keywords:

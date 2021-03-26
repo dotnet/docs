@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <GCHeapAffinitizeMask> element"
 title: GCHeapAffinitizeMask element
 ms.date: 11/08/2019
 helpviewer_keywords:

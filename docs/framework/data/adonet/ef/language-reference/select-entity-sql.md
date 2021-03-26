@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SELECT (Entity SQL)"
 title: "SELECT (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 9a33bd0d-ded1-41e7-ba3c-305502755e3b

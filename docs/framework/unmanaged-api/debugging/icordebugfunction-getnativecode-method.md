@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugFunction::GetNativeCode Method"
 title: "ICorDebugFunction::GetNativeCode Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <allowAccounts>"
 title: "<allowAccounts>"
 ms.date: "03/30/2017"
 ms.assetid: 166923a9-a8ac-478f-92f9-529d9667f3a6

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exception class and properties"
 title: "Exception Class and Properties"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

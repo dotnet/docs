@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback7::ModuleInMemorySymbolsUpdated Method"
 title: "ICorProfilerCallback7::ModuleInMemorySymbolsUpdated Method"
 ms.date: "03/30/2017"
 api_name: 
@@ -26,8 +27,8 @@ HRESULT ModuleInMemorySymbolsUpdated(
   
 ## Parameters  
 
- [in] `moduleId`  
- The identifier of the in-memory module whose symbol stream is updated.  
+ `moduleId`  
+ [in] The identifier of the in-memory module whose symbol stream is updated.  
   
 ## Remarks  
 

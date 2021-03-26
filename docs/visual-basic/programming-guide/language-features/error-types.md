@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Error Types (Visual Basic)"
 title: "Error Types"
 ms.date: 07/20/2015
 helpviewer_keywords: 

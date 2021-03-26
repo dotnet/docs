@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Services and Transactions"
 title: "Services and Transactions"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,7 +1,7 @@
 ---
 title: When to choose .NET 5 for Docker containers
 description: .NET Microservices Architecture for Containerized .NET Applications | When to choose .NET for Docker containers
-ms.date: 01/13/2021
+ms.date: 02/02/2021
 ---
 # When to choose .NET for Docker containers
 
@@ -27,7 +27,7 @@ In addition to the IDEs and editors, you can use the [.NET CLI](../../../core/to
 
 ## Using containers for new ("green-field") projects
 
-Containers are commonly used in conjunction with a microservices architecture, although they can also be used to containerize web apps or services that follow any architectural pattern. You can use .NET Framework on Windows Containers, but the modularity and lightweight nature of .NET 5 makes it perfect for containers and microservices architectures. When you create and deploy a container, its image is far smaller with .NET Core than with .NET Framework.
+Containers are commonly used in conjunction with a microservices architecture, although they can also be used to containerize web apps or services that follow any architectural pattern. You can use .NET Framework on Windows Containers, but the modularity and lightweight nature of .NET 5 makes it perfect for containers and microservices architectures. When you create and deploy a container, its image is far smaller with .NET 5 than with .NET Framework.
 
 ## Create and deploy microservices on containers
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <netPeerTcpBinding>"
 title: "<netPeerTcpBinding>"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

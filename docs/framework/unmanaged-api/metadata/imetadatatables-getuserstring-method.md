@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataTables::GetUserString Method"
 title: "IMetaDataTables::GetUserString Method"
 ms.date: "03/30/2017"
 api_name:

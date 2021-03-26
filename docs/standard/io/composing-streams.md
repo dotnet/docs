@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compose streams"
 title: "Compose streams"
 ms.date: "01/21/2019"
 dev_langs: 

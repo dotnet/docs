@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cross-Table Queries (LINQ to DataSet)"
 title: "Cross-Table Queries (LINQ to DataSet)"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Object Identity"
 title: "Object Identity"
 ms.date: "03/30/2017"
 dev_langs: 

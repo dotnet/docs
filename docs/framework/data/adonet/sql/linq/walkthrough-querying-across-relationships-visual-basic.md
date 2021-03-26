@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Querying Across Relationships (Visual Basic)"
 title: "Walkthrough: Querying Across Relationships (Visual Basic)"
 ms.date: "03/30/2017"
 dev_langs: 

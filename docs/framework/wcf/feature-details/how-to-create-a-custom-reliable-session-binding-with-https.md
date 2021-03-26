@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Custom Reliable Session Binding with HTTPS"
 title: "How to: Create a Custom Reliable Session Binding with HTTPS"
 ms.date: "03/30/2017"
 ms.assetid: fa772232-da1f-4c66-8c94-e36c0584b549

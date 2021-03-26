@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Ordered Processing of Messages in Single Concurrency Mode"
 title: "Ordered Processing of Messages in Single Concurrency Mode"
 ms.date: "03/30/2017"
 ms.assetid: a90f5662-a796-46cd-ae33-30a4072838af

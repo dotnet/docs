@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Analytic Tracing with ETW"
 title: "Analytic Tracing with ETW"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

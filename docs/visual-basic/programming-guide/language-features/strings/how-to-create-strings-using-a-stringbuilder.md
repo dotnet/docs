@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: create strings using a StringBuilder in Visual Basic"
 title: "How to: create strings using a StringBuilder"
 ms.date: 07/20/2015
 helpviewer_keywords:

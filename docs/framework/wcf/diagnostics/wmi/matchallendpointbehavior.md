@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MatchAllEndpointBehavior"
 title: "MatchAllEndpointBehavior"
 ms.date: "03/30/2017"
 ms.assetid: 510977a7-ec38-40be-8cd8-4774dc4f75ec

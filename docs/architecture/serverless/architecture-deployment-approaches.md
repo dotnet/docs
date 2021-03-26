@@ -95,7 +95,7 @@ For more information about Docker containers, see [What is Docker](../microservi
 
 Managing containers across hosts typically requires an orchestration tool such as Kubernetes. Configuring and managing orchestration solutions may add additional overhead and complexity to projects. Fortunately, many cloud providers provide orchestration services through PaaS solutions to simplify the management of containers.
 
-The following image illustrates an example Kubernetes installation. Nodes in the installation address scale out and failover. They run Docker container instances that are managed by the master server. The *kubelet* is the client that relays commands from Kubernetes to Docker.
+The following image illustrates an example Kubernetes installation. Nodes in the installation address scale out and failover. They run Docker container instances that are managed by the primary server. The *kubelet* is the client that relays commands from Kubernetes to Docker.
 
 ![Kubernetes](./media/kubernetes-example.png)
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <entries>"
 title: "<entries>"
 ms.date: "03/30/2017"
 ms.assetid: 202e430c-c1b9-4343-abe2-ac78c181a3b7

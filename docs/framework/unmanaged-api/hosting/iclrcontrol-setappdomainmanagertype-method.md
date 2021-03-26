@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRControl::SetAppDomainManagerType Method"
 title: "ICLRControl::SetAppDomainManagerType Method"
 ms.date: "03/30/2017"
 api_name: 

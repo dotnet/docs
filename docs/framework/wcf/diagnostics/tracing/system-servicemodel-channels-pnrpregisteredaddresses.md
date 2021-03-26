@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PnrpRegisteredAddresses"
 title: "System.ServiceModel.Channels.PnrpRegisteredAddresses"
 ms.date: "03/30/2017"
 ms.assetid: b770e042-0555-4668-9b41-e20da092c16a

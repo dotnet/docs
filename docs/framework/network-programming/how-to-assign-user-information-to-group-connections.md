@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Assign User Information to Group Connections"
 title: "How to: Assign User Information to Group Connections"
 ms.date: "03/30/2017"
 dev_langs: 

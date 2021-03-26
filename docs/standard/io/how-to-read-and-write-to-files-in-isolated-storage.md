@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Read and Write to Files in Isolated Storage"
 title: "How to: Read and Write to Files in Isolated Storage"
 ms.date: "03/30/2017"
 dev_langs: 

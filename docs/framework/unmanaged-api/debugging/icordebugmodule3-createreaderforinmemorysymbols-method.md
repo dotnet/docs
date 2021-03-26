@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugModule3::CreateReaderForInMemorySymbols Method"
 title: "ICorDebugModule3::CreateReaderForInMemorySymbols Method"
 ms.date: "03/30/2017"
 api_name: 

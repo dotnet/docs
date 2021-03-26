@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Develop and Deploy WCF Data Services"
 title: "Developing and Deploying WCF Data Services"
 ms.date: "03/30/2017"
 helpviewer_keywords:
@@ -9,6 +10,8 @@ helpviewer_keywords:
 ms.assetid: 6557c0e3-5aea-4f6e-bc14-77ad317a168b
 ---
 # Develop and Deploy WCF Data Services
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 This article provides information about developing and deploying WCF Data Services. For more basic information about WCF Data Services, see [Getting Started](getting-started-with-wcf-data-services.md) and [Overview](wcf-data-services-overview.md).
 

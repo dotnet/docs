@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Merging DataSet Contents"
 title: "Merging DataSet Contents"
 ms.date: "03/30/2017"
 dev_langs:

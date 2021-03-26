@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostSyncManager::CreateCrstWithSpinCount Method"
 title: "IHostSyncManager::CreateCrstWithSpinCount Method"
 ms.date: "03/30/2017"
 api_name: 

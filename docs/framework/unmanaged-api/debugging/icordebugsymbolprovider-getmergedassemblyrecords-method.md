@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugSymbolProvider::GetMergedAssemblyRecords Method"
 title: "ICorDebugSymbolProvider::GetMergedAssemblyRecords Method"
 ms.date: "03/30/2017"
 ms.assetid: cc4c510d-550d-4941-af34-81987caf3425

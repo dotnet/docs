@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ITypeName::GetModifiers Method"
 title: "ITypeName::GetModifiers Method"
 ms.date: "03/30/2017"
 api_name: 

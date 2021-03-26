@@ -3,7 +3,7 @@ title: Use code coverage for unit testing
 description: Learn how to use the code coverage capabilities for .NET unit tests.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/01/2020
+ms.date: 02/10/2021
 ---
 
 # Use code coverage for unit testing
@@ -266,7 +266,7 @@ Below is the example *coverage.cobertura.xml* file.
 > dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura
 > ```
 >
-> The resulting *coverage.cobertura.xml* file is output.  
+> The resulting *coverage.cobertura.xml* file is output.
 > You can follow msbuild integration guide [here](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md)
 
 ## Generate reports

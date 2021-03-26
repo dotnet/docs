@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Oracle Sequences"
 title: "Oracle Sequences"
 ms.date: "03/30/2017"
 ms.assetid: 27cd371d-8252-414d-b5b2-5d31fa44b585

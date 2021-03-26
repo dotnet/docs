@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugAppDomain::EnumerateAssemblies Method"
 title: "ICorDebugAppDomain::EnumerateAssemblies Method"
 ms.date: "03/30/2017"
 api_name: 

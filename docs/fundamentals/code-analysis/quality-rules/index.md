@@ -278,7 +278,7 @@ The following table shows the type of information that is provided for each rule
 | **Fix is breaking or non-breaking** |Whether the fix for a violation of the rule is a breaking change. Breaking change means that an assembly that has a dependency on the target that caused the violation will not recompile with the new fixed version or might fail at run time because of the change. When multiple fixes are available and at least one fix is a breaking change and one fix is not, both 'Breaking' and 'Non-breaking' are specified.|
 |Cause|The specific managed code that causes the rule to generate a warning.|
 |Description|Discusses the issues that are behind the warning.|
-|How to Fix Violations|Explains how to change the source code to satisfy the rule and prevent it from generating a warning.|
-|When to Suppress Warnings|Describes when it is safe to suppress a warning from the rule.|
-|Example Code|Examples that violate the rule and corrected examples that satisfy the rule.|
-|Related Rules|Related rules.|
+|How to fix violations|Explains how to change the source code to satisfy the rule and prevent it from generating a warning.|
+|When to suppress warnings|Describes when it is safe to suppress a warning from the rule.|
+|Example code|Examples that violate the rule and corrected examples that satisfy the rule.|
+|Related rules|Related rules.|

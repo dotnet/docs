@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Write to Binary Files in Visual Basic"
 title: "How to: Write to Binary Files"
 ms.date: 07/20/2015
 helpviewer_keywords:

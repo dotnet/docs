@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugMergedAssemblyRecord Interface"
 title: "ICorDebugMergedAssemblyRecord Interface"
 ms.date: "03/30/2017"
 ms.assetid: fe280b11-9479-4e34-a07c-0d1ea8088422

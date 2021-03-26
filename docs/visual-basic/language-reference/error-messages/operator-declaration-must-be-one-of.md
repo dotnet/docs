@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC33000: Operator declaration must be one of:  +,-,*,,/,^, &amp;, Like, Mod, And, Or, Xor, Not, <<, >>..."
 title: "Operator declaration must be one of:  +,-,*,-,-,^, &amp;, Like, Mod, And, Or, Xor, Not, <<, >>, =, <>, <, <=, >, >=, CType, IsTrue, IsFalse"
 ms.date: 07/20/2015
 f1_keywords:

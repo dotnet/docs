@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugCode2::GetCompilerFlags Method"
 title: "ICorDebugCode2::GetCompilerFlags Method"
 ms.date: "03/30/2017"
 api_name:

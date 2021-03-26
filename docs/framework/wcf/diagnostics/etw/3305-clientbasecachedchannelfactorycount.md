@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3305 - ClientBaseCachedChannelFactoryCount"
 title: "3305 - ClientBaseCachedChannelFactoryCount"
 ms.date: "03/30/2017"
 ms.assetid: 6ae6f58f-cee3-4bb1-8402-4445401f3436

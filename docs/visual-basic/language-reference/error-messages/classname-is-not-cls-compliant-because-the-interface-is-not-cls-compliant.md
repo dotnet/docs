@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC40029: '<classname>' is not CLS-compliant because the interface '<interfacename>' it implements is not CLS-compliant"
 title: "'<classname>' is not CLS-compliant because the interface '<interfacename>' it implements is not CLS-compliant"
 ms.date: 07/20/2015
 f1_keywords:

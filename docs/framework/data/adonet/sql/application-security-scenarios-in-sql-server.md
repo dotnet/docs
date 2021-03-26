@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Application Security Scenarios in SQL Server"
 title: "Application Security Scenarios in SQL Server"
 ms.date: "03/30/2017"
 ms.assetid: 0164f3a4-406e-4693-bec3-03c8e18b46d7

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FindPrivateKey sample"
 title: "FindPrivateKey sample"
 ms.date: "12/04/2017"
 helpviewer_keywords: 

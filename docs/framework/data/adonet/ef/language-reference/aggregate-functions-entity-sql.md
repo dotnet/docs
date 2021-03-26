@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Aggregate Functions (Entity SQL)"
 title: "Aggregate Functions (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: acfd3149-f519-4c6e-8fe1-b21d243a0e58

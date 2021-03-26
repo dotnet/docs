@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.TcpChannelMessageReceived"
 title: "System.ServiceModel.Channels.TcpChannelMessageReceived"
 ms.date: "03/30/2017"
 ms.assetid: eb896d04-e4a5-404f-9df6-5fcaa93e5b60

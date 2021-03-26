@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: File Encodings (Visual Basic)"
 title: "File Encodings"
 ms.date: 07/20/2015
 helpviewer_keywords:

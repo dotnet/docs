@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugValue::GetType Method"
 title: "ICorDebugValue::GetType Method"
 ms.date: "03/30/2017"
 api_name: 

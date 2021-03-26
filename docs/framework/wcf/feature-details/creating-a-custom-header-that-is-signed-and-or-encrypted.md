@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating a custom header that is signed and-or encrypted"
 title: "Creating a custom header that is signed and-or encrypted"
 ms.date: "03/30/2017"
 ms.assetid: e8668b37-c79f-4714-9de5-afcb88b9ff02

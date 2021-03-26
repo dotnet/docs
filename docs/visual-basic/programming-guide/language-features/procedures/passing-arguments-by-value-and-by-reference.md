@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Passing Arguments by Value and by Reference (Visual Basic)"
 title: "Passing Arguments by Value and by Reference"
 ms.date: 07/20/2015
 helpviewer_keywords: 

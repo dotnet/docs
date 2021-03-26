@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Web Services Protocols Supported by System-Provided Interoperability Bindings"
 title: "Web Services Protocols Supported by System-Provided Interoperability Bindings"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

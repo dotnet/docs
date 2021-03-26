@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <states> of <activityStateQuery>"
 title: "<states> of <activityStateQuery>"
 ms.date: "03/30/2017"
 ms.topic: "reference"

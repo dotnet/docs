@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Cookie path handling now conforms to RFC 6265"
-description: Learn about the breaking change in .NET 5.0 where path-handling algorithms defined in RFC 6265 were implemented for the Cookie and CookieContainer classes.
+description: Learn about the breaking change in .NET 5 where path-handling algorithms defined in RFC 6265 were implemented for the Cookie and CookieContainer classes.
 ms.date: 08/18/2020
 ---
 # Cookie path handling now conforms to RFC 6265

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GetALinkMessageDll Function"
 title: "GetALinkMessageDll Function"
 ms.date: "03/30/2017"
 api_name: 

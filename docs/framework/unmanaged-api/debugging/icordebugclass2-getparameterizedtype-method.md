@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugClass2::GetParameterizedType Method"
 title: "ICorDebugClass2::GetParameterizedType Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.TxCompletionStatusCompletedForAsyncAbort"
 title: "System.ServiceModel.TxCompletionStatusCompletedForAsyncAbort"
 ms.date: "03/30/2017"
 ms.assetid: 155c3203-2e17-4709-b896-2254e22da45e

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugStringValue::GetLength Method"
 title: "ICorDebugStringValue::GetLength Method"
 ms.date: "03/30/2017"
 api_name: 

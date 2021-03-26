@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IValidator::FormatEventInfo Method"
 title: "IValidator::FormatEventInfo Method"
 ms.date: "03/30/2017"
 api_name: 

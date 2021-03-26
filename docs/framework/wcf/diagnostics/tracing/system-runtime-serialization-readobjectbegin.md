@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.Runtime.Serialization.ReadObjectBegin"
 title: "System.Runtime.Serialization.ReadObjectBegin"
 ms.date: "03/30/2017"
 ms.assetid: 1b08ba6d-f201-4ace-9dce-aaf539e323b3

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Getting Started with WCF Data Services"
 title: "Getting Started with WCF Data Services"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
@@ -6,6 +7,8 @@ helpviewer_keywords:
 ms.assetid: c832fa5b-cf86-4690-be5a-a226c0e49530
 ---
 # Getting Started with WCF Data Services
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 The topics in this section help you quickly understand Open Data Protocol (OData) and how to use WCF Data Services to expose and consume OData feeds by explaining the underlying technologies. This section includes both conceptual content and a [quickstart](quickstart-wcf-data-services.md) tutorial.  
   

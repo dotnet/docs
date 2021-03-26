@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Return a LINQ Query Result as a Specific Type (Visual Basic)"
 title: "How to: Return a LINQ Query Result as a Specific Type"
 ms.date: 07/20/2015
 helpviewer_keywords: 

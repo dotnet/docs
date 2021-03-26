@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <TypeParameter> Element (.NET Native)"
 title: "<TypeParameter> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: d37bb1b7-1ddc-4c6d-8ecf-583f804a2479

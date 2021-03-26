@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugModule::GetEditAndContinueSnapshot Method"
 title: "ICorDebugModule::GetEditAndContinueSnapshot Method"
 ms.date: "03/30/2017"
 api_name: 

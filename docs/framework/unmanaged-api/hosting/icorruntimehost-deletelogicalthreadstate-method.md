@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorRuntimeHost::DeleteLogicalThreadState Method"
 title: "ICorRuntimeHost::DeleteLogicalThreadState Method"
 ms.date: "03/30/2017"
 api_name: 

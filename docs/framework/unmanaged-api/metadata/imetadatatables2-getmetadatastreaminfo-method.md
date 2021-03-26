@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataTables2::GetMetaDataStreamInfo Method"
 title: "IMetaDataTables2::GetMetaDataStreamInfo Method"
 ms.date: "03/30/2017"
 api_name: 

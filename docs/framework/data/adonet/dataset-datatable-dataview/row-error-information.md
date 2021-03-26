@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Row Error Information"
 title: "Row Error Information"
 ms.date: "03/30/2017"
 dev_langs: 

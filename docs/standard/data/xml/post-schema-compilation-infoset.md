@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Post-Schema Compilation Infoset"
 title: "Post-Schema Compilation Infoset"
 ms.date: "03/30/2017"
 dev_langs: 

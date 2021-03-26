@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRReferenceAssemblyEnum::Get Method"
 title: "ICLRReferenceAssemblyEnum::Get Method"
 ms.date: "03/30/2017"
 api_name: 

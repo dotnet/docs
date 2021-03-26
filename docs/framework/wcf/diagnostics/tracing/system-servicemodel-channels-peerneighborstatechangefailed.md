@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PeerNeighborStateChangeFailed"
 title: "System.ServiceModel.Channels.PeerNeighborStateChangeFailed"
 ms.date: "03/30/2017"
 ms.assetid: 95153aa1-0e04-4857-83d9-9963f5e40b4e

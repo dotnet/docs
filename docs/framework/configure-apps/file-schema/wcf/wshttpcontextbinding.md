@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <wsHttpContextBinding>"
 title: "<wsHttpContextBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 1e40b5c9-0df2-4d66-afc5-a99d0e4ae7a4

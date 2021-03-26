@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1004 - WorkflowInstanceAborted"
 title: "1004 - WorkflowInstanceAborted"
 ms.date: "03/30/2017"
 ms.assetid: edb9ab8c-0b9a-488d-aa96-9c8c7984b53c

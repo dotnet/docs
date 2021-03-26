@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedWriter3::Commit Method"
 title: "ISymUnmanagedWriter3::Commit Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAssemblyName::GetProperty Method"
 title: "IAssemblyName::GetProperty Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Design Guidelines for Exceptions"
 title: "Design Guidelines for Exceptions"
 ms.date: "10/22/2008"
 helpviewer_keywords: 

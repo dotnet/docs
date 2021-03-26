@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FILESTREAM Data"
 title: "FILESTREAM Data"
 ms.date: "03/30/2017"
 ms.assetid: bd8b845c-0f09-4295-b466-97ef106eefa8

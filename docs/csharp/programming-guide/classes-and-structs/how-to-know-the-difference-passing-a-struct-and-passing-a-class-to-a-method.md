@@ -22,7 +22,7 @@ The following example demonstrates how passing a [struct](../../language-referen
   
 ## Example  
 
- [!code-csharp[csProgGuideObjects#32](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#32)]  
+ [!code-csharp[PassingStructVsClass](snippets/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method/Program.cs)]  
   
 ## See also
 

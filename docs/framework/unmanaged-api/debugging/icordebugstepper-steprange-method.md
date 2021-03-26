@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugStepper::StepRange Method"
 title: "ICorDebugStepper::StepRange Method"
 ms.date: "03/30/2017"
 api_name: 

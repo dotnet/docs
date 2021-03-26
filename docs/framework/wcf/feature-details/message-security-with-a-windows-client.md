@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message Security with a Windows Client"
 title: "Message Security with a Windows Client"
 ms.date: "03/30/2017"
 dev_langs: 

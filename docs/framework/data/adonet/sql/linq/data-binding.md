@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Binding"
 title: "Data Binding"
 ms.date: "03/30/2017"
 dev_langs:

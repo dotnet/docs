@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugNativeFrame2::IsMatchingParentFrame Method"
 title: "ICorDebugNativeFrame2::IsMatchingParentFrame Method"
 ms.date: "03/30/2017"
 api_name: 

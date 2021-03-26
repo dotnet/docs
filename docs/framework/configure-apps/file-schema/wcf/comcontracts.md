@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <comContracts>"
 title: "<comContracts>"
 ms.date: "03/30/2017"
 ms.assetid: 42e74148-223d-4888-a8ed-1d928527eb09

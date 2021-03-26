@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Migrate Your Windows Store App to .NET Native"
 title: "Migrating Your Windows Store App to .NET Native"
 ms.date: "03/30/2017"
 ms.assetid: 4153aa18-6f56-4a0a-865b-d3da743a1d05
@@ -153,7 +154,7 @@ The use of localized resources with the <xref:System.Diagnostics.Tracing.EventSo
 
 - The [TypeInfo.GUID](xref:System.Type.GUID) property throws a <xref:System.PlatformNotSupportedException> exception if a <xref:System.Runtime.InteropServices.GuidAttribute> attribute isn't applied to the type. The GUID is used primarily for COM support.
 
-- The <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> method correctly parses strings that contain short dates in .NET Native. However, it doesn't maintain compatibility with the changes in date and time parsing described in the Microsoft Knowledge Base articles [KB2803771](https://support.microsoft.com/kb/2803771) and [KB2803755](https://support.microsoft.com/kb/2803755).
+- The <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> method correctly parses strings that contain short dates in .NET Native. However, it doesn't maintain compatibility with certain changes in date and time parsing.
 
 - <xref:System.Numerics.BigInteger.ToString%2A?displayProperty=nameWithType> `("E")` is correctly rounded in .NET Native. In some versions of the CLR, the result string is truncated instead of rounded.
 

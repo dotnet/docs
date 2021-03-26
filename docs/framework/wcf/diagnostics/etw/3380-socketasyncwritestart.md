@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3380 - SocketAsyncWriteStart"
 title: "3380 - SocketAsyncWriteStart"
 ms.date: "03/30/2017"
 ms.assetid: 1de37c02-e14b-42ad-a23a-9ee8edc354b5

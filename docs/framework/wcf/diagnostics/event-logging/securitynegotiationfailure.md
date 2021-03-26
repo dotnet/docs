@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SecurityNegotiationFailure"
 title: "SecurityNegotiationFailure"
 ms.date: "03/30/2017"
 ms.assetid: 2060a678-f97b-4491-acd9-6c57c732afd7

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Outputs from an XslTransform"
 title: "Outputs from an XslTransform"
 ms.date: "03/30/2017"
 ms.assetid: 8e149d32-4b2f-493f-9e4b-d0d93475acde

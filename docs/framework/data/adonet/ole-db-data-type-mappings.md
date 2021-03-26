@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE DB Data Type Mappings"
 title: "OLE DB Data Type Mappings"
 ms.date: "03/30/2017"
 ms.assetid: 04bcb259-59d3-4fd7-894d-4f0dd0c68069

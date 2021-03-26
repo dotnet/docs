@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Handling DataSet Events"
 title: "Handling DataSet Events"
 ms.date: "03/30/2017"
 dev_langs: 

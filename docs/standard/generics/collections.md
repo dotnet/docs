@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Generic collections in .NET"
 title: "Generic Collections in .NET"
 ms.date: "02/15/2018"
 dev_langs: 

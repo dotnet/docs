@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 716 - ClientChannelOpenStop"
 title: "716 - ClientChannelOpenStop"
 ms.date: "03/30/2017"
 ms.assetid: 55dc74a8-348f-47f3-aaca-4aef6cd75651

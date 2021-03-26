@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Configure COM+ Service Settings"
 title: "How to: Configure COM+ Service Settings"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

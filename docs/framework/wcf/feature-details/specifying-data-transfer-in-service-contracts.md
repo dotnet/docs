@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Specifying Data Transfer in Service Contracts"
 title: "Specifying Data Transfer in Service Contracts"
 ms.date: "03/30/2017"
 dev_langs: 

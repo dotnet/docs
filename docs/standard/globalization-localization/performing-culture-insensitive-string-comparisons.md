@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Performing Culture-Insensitive String Comparisons"
 title: "Performing Culture-Insensitive String Comparisons"
 ms.date: "08/22/2018"
 dev_langs: 

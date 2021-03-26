@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback2::FinalizeableObjectQueued Method"
 title: "ICorProfilerCallback2::FinalizeableObjectQueued Method"
 ms.date: "03/30/2017"
 api_name: 

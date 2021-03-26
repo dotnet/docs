@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a One-Way Contract"
 title: "How to: Create a One-Way Contract"
 ms.date: "03/30/2017"
 dev_langs: 

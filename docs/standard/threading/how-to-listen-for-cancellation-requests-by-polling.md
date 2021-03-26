@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Listen for Cancellation Requests by Polling"
 title: "How to: Listen for Cancellation Requests by Polling"
 ms.date: "03/30/2017"
 dev_langs: 

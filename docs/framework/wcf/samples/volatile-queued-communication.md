@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Volatile Queued Communication"
 title: "Volatile Queued Communication"
 ms.date: "03/30/2017"
 ms.assetid: 0d012f64-51c7-41d0-8e18-c756f658ee3d

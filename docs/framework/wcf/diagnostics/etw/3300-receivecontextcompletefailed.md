@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3300 - ReceiveContextCompleteFailed"
 title: "3300 - ReceiveContextCompleteFailed"
 ms.date: "03/30/2017"
 ms.assetid: 6d6b3a31-5c12-4886-b682-2d0d86407d82

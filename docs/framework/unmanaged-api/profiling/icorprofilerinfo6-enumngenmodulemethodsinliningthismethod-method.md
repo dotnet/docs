@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo6::EnumNgenModuleMethodsInliningThisMethod Method"
 title: "ICorProfilerInfo6::EnumNgenModuleMethodsInliningThisMethod Method"
 ms.date: "03/30/2017"
 ms.assetid: b933dfe6-7833-40cb-aad8-40842dc3034f
@@ -21,19 +22,19 @@ HRESULT EnumNgenModuleMethodsInliningThisMethod(
 
 ## Parameters
 
-`inlinersModuleId`\
+`inlinersModuleId`
 [in] The identifier of an NGen module.
 
-`inlineeModuleId`\
+`inlineeModuleId`
 [in] The identifier of a module that defines `inlineeMethodId`. See the Remarks section for more information.
 
-`inlineeMethodId`\
+`inlineeMethodId`
 [in] The identifier of an inlined method. See the Remarks section for more information.
 
-`incompleteData`\
+`incompleteData`
 [out] A flag that indicates whether `ppEnum` contains all methods inlining a given method.  See the Remarks section for more information.
 
-`ppEnum`\
+`ppEnum`
 [out] A pointer to the address of an enumerator
 
 ## Remarks

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: String length exceeds maximum length of 32767 characters for 'FileSystem' APIs"
 title: "String length exceeds maximum length of 32767 characters for 'FileSystem' APIs"
 ms.date: 07/20/2015
 f1_keywords: 

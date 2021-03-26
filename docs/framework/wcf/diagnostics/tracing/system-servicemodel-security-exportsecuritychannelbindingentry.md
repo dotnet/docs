@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Security.ExportSecurityChannelBindingEntry"
 title: "System.ServiceModel.Security.ExportSecurityChannelBindingEntry"
 ms.date: "03/30/2017"
 ms.assetid: 043bad66-0a09-47c2-ae90-d1f225f52a24

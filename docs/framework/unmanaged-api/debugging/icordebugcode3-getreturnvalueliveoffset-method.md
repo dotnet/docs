@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugCode3::GetReturnValueLiveOffset Method"
 title: "ICorDebugCode3::GetReturnValueLiveOffset Method"
 ms.date: "03/30/2017"
 dev_langs: 

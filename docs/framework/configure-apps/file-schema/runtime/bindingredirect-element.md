@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <bindingRedirect> Element"
 title: "<bindingRedirect> Element"
 ms.date: "03/30/2017"
 f1_keywords: 

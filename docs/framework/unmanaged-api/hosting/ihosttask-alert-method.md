@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostTask::Alert Method"
 title: "IHostTask::Alert Method"
 ms.date: "03/30/2017"
 api_name: 

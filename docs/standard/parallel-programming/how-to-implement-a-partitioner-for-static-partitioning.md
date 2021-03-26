@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Implement a Partitioner for Static Partitioning"
 title: "How to: Implement a Partitioner for Static Partitioning"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

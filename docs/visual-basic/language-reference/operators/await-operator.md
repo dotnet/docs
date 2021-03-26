@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Await Operator (Visual Basic)"
 title: "Await Operator"
 ms.date: 07/20/2015
 f1_keywords:

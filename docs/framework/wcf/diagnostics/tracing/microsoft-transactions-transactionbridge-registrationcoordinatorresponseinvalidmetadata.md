@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Diagnostics.MessageCountLimitExceeded"
 title: "System.ServiceModel.Diagnostics.MessageCountLimitExceeded"
 ms.date: "03/30/2017"
 ms.assetid: d80e2009-d421-40bb-8e68-eb5ca4a0e91a

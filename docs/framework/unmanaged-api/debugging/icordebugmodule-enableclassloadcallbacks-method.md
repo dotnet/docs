@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugModule::EnableClassLoadCallbacks Method"
 title: "ICorDebugModule::EnableClassLoadCallbacks Method"
 ms.date: "03/30/2017"
 api_name: 

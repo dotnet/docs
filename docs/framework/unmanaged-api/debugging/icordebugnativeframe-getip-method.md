@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugNativeFrame::GetIP Method"
 title: "ICorDebugNativeFrame::GetIP Method"
 ms.date: "03/30/2017"
 api_name: 

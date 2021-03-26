@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 704 - ServiceChannelBeginCallStart"
 title: "704 - ServiceChannelBeginCallStart"
 ms.date: "03/30/2017"
 ms.assetid: 708819d3-45cc-46c3-938c-80f38b1fa9e2

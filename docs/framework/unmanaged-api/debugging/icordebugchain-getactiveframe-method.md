@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugChain::GetActiveFrame Method"
 title: "ICorDebugChain::GetActiveFrame Method"
 ms.date: "03/30/2017"
 api_name: 

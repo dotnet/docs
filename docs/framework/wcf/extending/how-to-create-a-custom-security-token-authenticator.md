@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: create a custom security token authenticator"
 title: "How to: create a custom security token authenticator"
 ms.date: "03/30/2017"
 dev_langs: 

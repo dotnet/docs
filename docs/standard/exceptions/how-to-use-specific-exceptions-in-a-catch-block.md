@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to use specific exceptions in a catch block"
 title: "How to: Use Specific Exceptions in a Catch Block"
 ms.date: "03/30/2017"
 dev_langs: 

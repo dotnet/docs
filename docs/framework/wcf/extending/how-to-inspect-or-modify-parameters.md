@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Inspect or Modify Parameters"
 title: "How to: Inspect or Modify Parameters"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugVariableHome Interface"
 title: "ICorDebugVariableHome Interface"
 ms.date: "03/30/2017"
 dev_langs: 

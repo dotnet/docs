@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Eliminate Duplicate Elements from a Sequence"
 title: "Eliminate Duplicate Elements from a Sequence"
 ms.date: "03/30/2017"
 dev_langs: 

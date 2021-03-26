@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <udpTransportSettings> of <udpAnnouncementEndpoint>"
 title: "<udpTransportSettings> of <udpAnnouncementEndpoint>"
 ms.date: "03/30/2017"
 ms.assetid: a7ddff1a-5eed-4bbc-8580-b95ef8890e1f

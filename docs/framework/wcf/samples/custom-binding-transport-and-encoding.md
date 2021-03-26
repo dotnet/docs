@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Custom Binding Transport and Encoding"
 title: "Custom Binding Transport and Encoding"
 ms.date: "03/30/2017"
 dev_langs: 

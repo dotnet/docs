@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <typeparam> (Visual Basic)"
 title: "<typeparam>"
 ms.date: 07/20/2015
 helpviewer_keywords: 

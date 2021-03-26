@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataDispenserEx::GetCORSystemDirectory Method"
 title: "IMetaDataDispenserEx::GetCORSystemDirectory Method"
 ms.date: "03/30/2017"
 api_name: 

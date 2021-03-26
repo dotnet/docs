@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1409 - InactivityTimeout"
 title: "1409 - InactivityTimeout"
 ms.date: "03/30/2017"
 ms.assetid: 38fb99b7-b00d-4b55-b9d0-48bd17c441aa

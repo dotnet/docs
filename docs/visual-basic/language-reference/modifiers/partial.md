@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Partial (Visual Basic)"
 title: "Partial"
 ms.date: 07/20/2015
 f1_keywords: 

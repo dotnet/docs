@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use a Service Moniker with WSDL Contracts"
 title: "How to: Use a Service Moniker with WSDL Contracts"
 ms.date: "03/30/2017"
 ms.assetid: a88d9650-bb50-4f48-8c85-12f5ce98a83a

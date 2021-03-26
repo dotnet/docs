@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Profiling Overview"
 title: "Profiling Overview"
 ms.date: "03/30/2017"
 helpviewer_keywords:

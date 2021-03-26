@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::EnumFieldsWithName Method"
 title: "IMetaDataImport::EnumFieldsWithName Method"
 ms.date: "03/30/2017"
 api_name: 

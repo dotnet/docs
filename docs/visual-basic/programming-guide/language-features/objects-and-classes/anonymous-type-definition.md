@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Anonymous Type Definition (Visual Basic)"
 title: "Anonymous Type Definition"
 ms.date: 07/20/2015
 helpviewer_keywords:

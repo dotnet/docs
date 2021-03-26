@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use time zones in date and time arithmetic"
 title: "How to: Use time zones in date and time arithmetic"
 ms.date: "04/10/2017"
 dev_langs: 

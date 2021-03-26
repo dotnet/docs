@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Security.SecurityIdentityDeterminationFailure"
 title: "System.ServiceModel.Security.SecurityIdentityDeterminationFailure"
 ms.date: "03/30/2017"
 ms.assetid: bc5446e2-86f4-4d17-8ecc-4304b0fde7ec

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedDocumentWriter::SetCheckSum Method"
 title: "ISymUnmanagedDocumentWriter::SetCheckSum Method"
 ms.date: "03/30/2017"
 api_name: 

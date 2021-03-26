@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRDataTarget::GetPointerSize Method"
 title: "ICLRDataTarget::GetPointerSize Method"
 ms.date: "03/30/2017"
 api_name: 

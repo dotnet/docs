@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Automation object does not have a default value"
 title: "Automation object does not have a default value"
 ms.date: 07/20/2015
 f1_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedSymbolSearchInfo::GetSearchPath Method"
 title: "ISymUnmanagedSymbolSearchInfo::GetSearchPath Method"
 ms.date: "03/30/2017"
 api_name: 

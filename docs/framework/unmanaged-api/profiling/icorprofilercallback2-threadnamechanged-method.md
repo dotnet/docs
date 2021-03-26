@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback2::ThreadNameChanged Method"
 title: "ICorProfilerCallback2::ThreadNameChanged Method"
 ms.date: "03/30/2017"
 api_name: 

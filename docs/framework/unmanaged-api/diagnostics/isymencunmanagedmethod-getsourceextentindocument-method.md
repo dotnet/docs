@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymENCUnmanagedMethod::GetSourceExtentInDocument Method"
 title: "ISymENCUnmanagedMethod::GetSourceExtentInDocument Method"
 ms.date: "03/30/2017"
 api_name: 

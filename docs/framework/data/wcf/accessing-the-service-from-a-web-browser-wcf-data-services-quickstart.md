@@ -6,6 +6,8 @@ ms.assetid: 5a6fa180-3094-4e6e-ba2b-8c80975d18d1
 ---
 # Accessing the Service from a Web Browser (WCF Data Services Quickstart)
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 This is the second task of the WCF Data Services quickstart. In this task, you start the WCF Data Services from Visual Studio and optionally disable feed reading in the Web browser. You then retrieve the service definition document as well as access data service resources by submitting HTTP GET requests through a Web browser to the exposed resources.
 
 > [!NOTE]

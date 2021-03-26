@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISOSDacInterface::GetModuleData Method"
 title: "ISOSDacInterface::GetModuleData Method"
 ms.date: "02/01/2019"
 api.name:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugHandleValue::Dispose Method"
 title: "ICorDebugHandleValue::Dispose Method"
 ms.date: "03/30/2017"
 api_name: 

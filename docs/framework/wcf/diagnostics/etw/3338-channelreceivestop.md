@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3338 - ChannelReceiveStop"
 title: "3338 - ChannelReceiveStop"
 ms.date: "03/30/2017"
 ms.assetid: e8f0c71e-69e5-4390-aef3-e51c67d0bf0d

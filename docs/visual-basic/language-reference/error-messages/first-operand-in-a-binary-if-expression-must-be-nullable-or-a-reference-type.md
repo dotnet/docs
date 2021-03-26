@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC33107: First operand in a binary 'If' expression must be nullable or a reference type"
 title: "First operand in a binary 'If' expression must be nullable or a reference type"
 ms.date: 07/20/2015
 f1_keywords:

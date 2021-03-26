@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedConstant Interface"
 title: "ISymUnmanagedConstant Interface"
 ms.date: "03/30/2017"
 api_name: 

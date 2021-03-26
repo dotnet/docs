@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XPathNavigator in Transformations"
 title: "XPathNavigator in Transformations"
 ms.date: "03/30/2017"
 dev_langs: 

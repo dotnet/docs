@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accessing Services Using a Client"
 title: "Accessing Services Using a Client"
 ms.date: "03/30/2017"
 dev_langs: 

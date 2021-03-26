@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess::ModifyLogSwitch Method"
 title: "ICorDebugProcess::ModifyLogSwitch Method"
 ms.date: "03/30/2017"
 api_name: 

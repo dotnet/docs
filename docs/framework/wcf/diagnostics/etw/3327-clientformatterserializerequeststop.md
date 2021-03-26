@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3327 - ClientFormatterSerializeRequestStop"
 title: "3327 - ClientFormatterSerializeRequestStop"
 ms.date: "03/30/2017"
 ms.assetid: 823b34b0-b386-4df4-bb93-4625515761ef

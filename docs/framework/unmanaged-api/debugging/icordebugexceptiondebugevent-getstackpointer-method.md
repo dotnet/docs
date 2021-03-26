@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugExceptionDebugEvent::GetStackPointer Method"
 title: "ICorDebugExceptionDebugEvent::GetStackPointer Method"
 ms.date: "03/30/2017"
 ms.assetid: d8f66a1c-16be-4264-afc5-bc2dfbb4a682

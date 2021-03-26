@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: String Functions (Visual Basic)"
 title: "String Functions"
 ms.date: 07/20/2015
 helpviewer_keywords:

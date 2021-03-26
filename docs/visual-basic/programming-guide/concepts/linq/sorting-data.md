@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sorting Data (Visual Basic)"
 title: "Sorting Data"
 ms.date: 07/20/2015
 ms.assetid: 6f81065c-0c89-4bf3-a6d8-442273f8810e

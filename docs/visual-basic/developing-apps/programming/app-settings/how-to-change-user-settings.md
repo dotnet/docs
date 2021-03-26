@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Change User Settings in Visual Basic"
 title: "How to: Change User Settings"
 ms.date: 07/20/2015
 helpviewer_keywords: 

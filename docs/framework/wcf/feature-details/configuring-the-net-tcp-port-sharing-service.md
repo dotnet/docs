@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Configuring the Net.TCP Port Sharing Service"
 title: "Configuring the Net.TCP Port Sharing Service"
 ms.date: "03/30/2017"
 ms.assetid: b6dd81fa-68b7-4e1b-868e-88e5901b7ea0

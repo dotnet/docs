@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resolving External Resources"
 title: "Resolving External Resources"
 ms.date: "03/30/2017"
 ms.assetid: ad3fa320-4b8f-4e5c-b549-01157591007a

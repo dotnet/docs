@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: LINQ to DataSet Overview"
 title: "LINQ to DataSet Overview"
 ms.date: "03/30/2017"
 ms.assetid: dc20a8fb-03f6-4b68-9c2b-7f7299e3070b

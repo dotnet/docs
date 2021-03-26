@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FailedToCreateMessageLoggingTraceSource"
 title: "FailedToCreateMessageLoggingTraceSource"
 ms.date: "03/30/2017"
 ms.assetid: 75e91aad-6d83-4e5e-8c70-fed1625e522f

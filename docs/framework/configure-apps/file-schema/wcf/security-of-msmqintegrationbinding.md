@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <security> of <msmqIntegrationBinding>"
 title: "<security> of <msmqIntegrationBinding>"
 ms.date: "03/30/2017"
 ms.assetid: ae5c68a8-14a2-4c6e-b9e0-3e94e3e9135e

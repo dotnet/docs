@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: -- (Comment) (Entity SQL)"
 title: "-- (Comment) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 5d9de735-2099-47f1-b7e7-60856f494924

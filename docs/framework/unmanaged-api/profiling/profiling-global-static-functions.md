@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Profiling Global Static Functions"
 title: "Profiling Global Static Functions"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

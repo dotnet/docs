@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Getting Started (Entity Framework)"
 title: "Getting Started (Entity Framework)"
 ms.date: "03/30/2017"
 ms.assetid: 4735a220-3301-4ec4-8833-7209abb7208f

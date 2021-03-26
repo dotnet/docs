@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICoreClrDebugTarget::FreeMemory Method"
 title: "ICoreClrDebugTarget::FreeMemory Method"
 ms.date: "03/30/2017"
 api_name: 

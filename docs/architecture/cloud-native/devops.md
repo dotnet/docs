@@ -1,7 +1,7 @@
 ---
 title: DevOps
 description: DevOps considerations for cloud-native applications
-ms.date: 05/13/2020
+ms.date: 01/19/2021
 ---
 
 # DevOps
@@ -42,7 +42,7 @@ Azure DevOps is divided into five major components:
 
 **Azure Boards** - Provides an issue and work item tracking tool that strives to allow users to pick the workflows that work best for them. It comes with a number of pre-configured templates including ones to support SCRUM and Kanban styles of development.
 
-**Azure Pipelines** - A build and release management system that supports tight integration with Azure. Builds can be run on a variety of platforms from Windows to Linux to MacOS. Build agents may be provisioned in the cloud or on-premises.
+**Azure Pipelines** - A build and release management system that supports tight integration with Azure. Builds can be run on various platforms from Windows to Linux to macOS. Build agents may be provisioned in the cloud or on-premises.
 
 **Azure Test Plans** - No QA person will be left behind with the test management and exploratory testing support offered by the Test Plans feature.
 
@@ -74,7 +74,7 @@ Splitting up code for microservices within the Azure DevOps project can be sligh
 
 ### Repository per microservice
 
-At first glance, this seems like the most logical approach to splitting up the source code for microservices. Each repository can contain the code needed to build the one microservice. The advantages to this approach are readily visible:
+At first glance, this approach seems like the most logical approach to splitting up the source code for microservices. Each repository can contain the code needed to build the one microservice. The advantages to this approach are readily visible:
 
 1. Instructions for building and maintaining the application can be added to a README file at the root of each repository. When flipping through the repositories, it's easy to find these instructions, reducing spin-up time for developers.
 2. Every service is located in a logical place, easily found by knowing the name of the service.
@@ -95,19 +95,19 @@ Another disadvantage presents itself when moving code between services. Although
 
 The final and most important disadvantage is coordinating changes. In a true microservices application, there should be no deployment dependencies between services. It should be possible to deploy services A, B, and C in any order as they have loose coupling. In reality, however, there are times when it's desirable to make a change that crosses multiple repositories at the same time. Some examples include updating a library to close a security hole or changing a communication protocol used by all services.
 
-To do a cross-repository change requires a commit to each repository be made in succession. Each change in each repository will need to be pull-requested and reviewed separately. This can be difficult to coordinate.
+To do a cross-repository change requires a commit to each repository be made in succession. Each change in each repository will need to be pull-requested and reviewed separately. This activity can be difficult to coordinate.
 
 An alternative to using many repositories is to put all the source code together in a giant, all knowing, single repository.
 
 ### Single repository
 
-In this approach, sometimes referred to as a [monorepository](https://danluu.com/monorepo/), all the source code for every service is put into the same repository. At first, this seems like a terrible idea likely to make dealing with source code unwieldy. There are, however, some marked advantages to working this way.
+In this approach, sometimes referred to as a [monorepository](https://danluu.com/monorepo/), all the source code for every service is put into the same repository. At first, this approach seems like a terrible idea likely to make dealing with source code unwieldy. There are, however, some marked advantages to working this way.
 
 The first advantage is that it's easier to manage dependencies between projects. Instead of relying on some external artifact feed, projects can directly import one another. This means that updates are instant, and conflicting versions are likely to be found at compile time on the developer's workstation. In effect, shifting some of the integration testing left.
 
 When moving code between projects, it's now easier to preserve the history as the files will be detected as having been moved rather than being rewritten.
 
-Another advantage is that wide ranging changes that cross service boundaries can be made in a single commit. This reduces the overhead of having potentially dozens of changes to review individually.
+Another advantage is that wide ranging changes that cross service boundaries can be made in a single commit. This activity reduces the overhead of having potentially dozens of changes to review individually.
 
 There are many tools that can perform static analysis of code to detect insecure programming practices or problematic use of APIs. In a multi-repository world, each repository will need to be iterated over to find the problems in them. The single repository allows running the analysis all in one place.
 

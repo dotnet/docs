@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <federationConfiguration>"
 title: "<federationConfiguration>"
 ms.date: "03/30/2017"
 ms.assetid: 8b14054c-6d07-46ab-ab58-03f14beac0f2

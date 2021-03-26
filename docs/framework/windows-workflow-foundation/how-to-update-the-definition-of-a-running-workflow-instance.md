@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Update the Definition of a Running Workflow Instance"
 title: "How to: Update the Definition of a Running Workflow Instance"
 ms.date: "03/30/2017"
 dev_langs:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Make Model and Mapping Files Embedded Resources"
 title: "How to: Make Model and Mapping Files Embedded Resources"
 ms.date: "03/30/2017"
 ms.assetid: 20dfae4d-e95a-4264-9540-f5ad23b462d3

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugILCode::GetEHClauses Method"
 title: "ICorDebugILCode::GetEHClauses Method"
 ms.date: "03/30/2017"
 dev_langs: 

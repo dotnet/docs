@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiling Apps with .NET Native"
 title: "Compiling Apps with .NET Native"
 ms.date: "03/30/2017"
 helpviewer_keywords:

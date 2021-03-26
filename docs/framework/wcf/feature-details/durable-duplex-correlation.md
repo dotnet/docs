@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Durable Duplex Correlation"
 title: "Durable Duplex Correlation"
 ms.date: "03/30/2017"
 ms.assetid: 8eb0e49a-6d3b-4f7e-a054-0d4febee2ffb

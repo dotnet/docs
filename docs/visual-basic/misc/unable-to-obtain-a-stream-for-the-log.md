@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Unable to obtain a stream for the log"
 title: "Unable to obtain a stream for the log"
 ms.date: 07/20/2015
 f1_keywords: 

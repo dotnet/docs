@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Role-Based Security"
 title: "Role-Based Security"
 ms.date: 07/15/2020
 helpviewer_keywords: 

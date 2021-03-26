@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Measure PLINQ Query Performance"
 title: "How to: Measure PLINQ Query Performance"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostMemoryManager::VirtualQuery Method"
 title: "IHostMemoryManager::VirtualQuery Method"
 ms.date: "03/30/2017"
 api_name: 

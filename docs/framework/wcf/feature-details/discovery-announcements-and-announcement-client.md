@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Discovery Announcements and Announcement Client"
 title: "Discovery Announcements and Announcement Client"
 ms.date: "03/30/2017"
 ms.assetid: 426c6437-f8d2-4968-b23a-18afd671aa4b

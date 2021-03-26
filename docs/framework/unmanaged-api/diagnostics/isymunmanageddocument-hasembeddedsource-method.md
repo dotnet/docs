@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedDocument::HasEmbeddedSource Method"
 title: "ISymUnmanagedDocument::HasEmbeddedSource Method"
 ms.date: "03/30/2017"
 api_name: 

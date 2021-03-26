@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BaseLogName cannot be Nothing or an empty String"
 title: "BaseLogName cannot be Nothing or an empty String"
 ms.date: 07/20/2015
 f1_keywords: 

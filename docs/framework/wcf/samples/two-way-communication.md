@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Two-Way Communication"
 title: "Two-Way Communication"
 ms.date: "03/30/2017"
 ms.assetid: fb64192d-b3ea-4e02-9fb3-46a508d26c60

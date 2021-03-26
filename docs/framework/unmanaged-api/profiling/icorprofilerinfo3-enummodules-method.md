@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo3::EnumModules Method"
 title: "ICorProfilerInfo3::EnumModules Method"
 ms.date: "03/30/2017"
 api_name: 

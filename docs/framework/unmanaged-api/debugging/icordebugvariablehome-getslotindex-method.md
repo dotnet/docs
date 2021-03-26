@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugVariableHome::GetSlotIndex Method"
 title: "ICorDebugVariableHome::GetSlotIndex Method"
 ms.date: "03/30/2017"
 api_name: 

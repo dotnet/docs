@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit2::SetGenericParamProps Method"
 title: "IMetaDataEmit2::SetGenericParamProps Method"
 ms.date: "03/30/2017"
 api_name: 

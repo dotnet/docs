@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.SocketConnectionAbort"
 title: "System.ServiceModel.Channels.SocketConnectionAbort"
 ms.date: "03/30/2017"
 ms.assetid: 5e1a7716-b23a-46c5-952a-19c53b447a71

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: entity set"
 title: "entity set"
 ms.date: "03/30/2017"
 ms.assetid: 59ec6ab0-88e5-4d25-b112-7a4eccbe61f0

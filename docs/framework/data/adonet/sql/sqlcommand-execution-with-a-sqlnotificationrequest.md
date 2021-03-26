@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SqlCommand Execution with a SqlNotificationRequest"
 title: "SqlCommand Execution with a SqlNotificationRequest"
 ms.date: "03/30/2017"
 dev_langs:

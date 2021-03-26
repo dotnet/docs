@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Garbage Collection Notifications"
 title: "Garbage Collection Notifications"
 ms.date: "03/30/2017"
 dev_langs: 

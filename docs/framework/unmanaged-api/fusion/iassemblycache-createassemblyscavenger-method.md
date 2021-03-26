@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAssemblyCache::CreateAssemblyScavenger Method"
 title: "IAssemblyCache::CreateAssemblyScavenger Method"
 ms.date: "03/30/2017"
 api_name: 

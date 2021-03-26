@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugEditAndContinueSnapshot::GetMvid Method"
 title: "ICorDebugEditAndContinueSnapshot::GetMvid Method"
 ms.date: "03/30/2017"
 api_name: 

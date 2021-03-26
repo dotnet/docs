@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1014 - ScheduleCompletionWorkItem"
 title: "1014 - ScheduleCompletionWorkItem"
 ms.date: "03/30/2017"
 ms.assetid: 84203735-478d-42d8-a320-c175dbddcb38

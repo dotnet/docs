@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorErrorIfEmitOutOfOrder Enumeration"
 title: "CorErrorIfEmitOutOfOrder Enumeration"
 ms.date: "03/30/2017"
 api_name: 

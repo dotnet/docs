@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: One or more folders in the target path do not exist"
 title: "One or more folders in the target path do not exist"
 ms.date: 07/20/2015
 ms.assetid: b33b00f6-0eb6-47fa-a639-269f97e790cd

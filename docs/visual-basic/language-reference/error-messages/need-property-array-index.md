@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Need property array index"
 title: "Need property array index"
 ms.date: 07/20/2015
 f1_keywords: 
@@ -16,4 +17,4 @@ This property value consists of an array rather than a single value. You did not
 ## See also
 
 - [Error Types](../../programming-guide/language-features/error-types.md)
-- [Talk to Us](/visualstudio/ide/feedback-options)
+- [Visual Studio feedback options](/visualstudio/ide/feedback-options)

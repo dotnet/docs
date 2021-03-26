@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3301 - ReceiveContextAbandonFailed"
 title: "3301 - ReceiveContextAbandonFailed"
 ms.date: "03/30/2017"
 ms.assetid: 4495e0c4-3518-4a40-a203-760782e2b1f0

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugDataTarget2::EnumerateThreadIDs Method"
 title: "ICorDebugDataTarget2::EnumerateThreadIDs Method"
 ms.date: "03/30/2017"
 ms.assetid: af02460f-2a45-496e-bc4e-a1ac4f80fe11

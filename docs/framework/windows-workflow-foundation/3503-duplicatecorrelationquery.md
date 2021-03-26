@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3503 - DuplicateCorrelationQuery"
 title: "3503 - DuplicateCorrelationQuery"
 ms.date: "03/30/2017"
 ms.assetid: b857f8e6-ce4d-4da4-bc9d-6cd63fa558a4

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Retrieve Metadata Over a non-MEX Binding"
 title: "How to: Retrieve Metadata Over a non-MEX Binding"
 ms.date: "03/30/2017"
 ms.assetid: 2292e124-81b2-4317-b881-ce9c1ec66ecb

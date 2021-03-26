@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ServicePointManager.CloseConnectionGroups method"
 title: ServicePointManager.CloseConnectionGroups method (System.Net)
 ms.date: 06/12/2020
 ms.technology: dotnet-networking

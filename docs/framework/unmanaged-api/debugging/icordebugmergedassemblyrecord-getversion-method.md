@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugMergedAssemblyRecord::GetVersion Method"
 title: "ICorDebugMergedAssemblyRecord::GetVersion Method"
 ms.date: "03/30/2017"
 ms.assetid: c6858b06-ae26-4312-b325-ea6025016675

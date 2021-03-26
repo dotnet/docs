@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::ClassUnloadFinished Method"
 title: "ICorProfilerCallback::ClassUnloadFinished Method"
 ms.date: "03/30/2017"
 api_name: 
@@ -30,13 +31,11 @@ HRESULT ClassUnloadFinished(
   
 ## Parameters
 
-- `classId`
+`classId`
+[in] Identifies the class that was unloaded.
 
-  \[in] Identifies the class that was unloaded.
-
-- `hrStatus`
-
-  \[in] An HRESULT that indicates whether the class was unloaded successfully.
+`hrStatus`
+[in] An HRESULT that indicates whether the class was unloaded successfully.
   
 ## Remarks  
 

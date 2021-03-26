@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Parsing text files with the TextFieldParser object (Visual Basic)"
 title: "Parsing text files with the TextFieldParser object"
 ms.date: 07/20/2015
 helpviewer_keywords: 

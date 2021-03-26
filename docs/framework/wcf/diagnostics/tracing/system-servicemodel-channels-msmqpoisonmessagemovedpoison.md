@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.MsmqPoisonMessageMovedPoison"
 title: "System.ServiceModel.Channels.MsmqPoisonMessageMovedPoison"
 ms.date: "03/30/2017"
 ms.assetid: d5587606-f2f3-46f8-9e76-cb8ad83088bd

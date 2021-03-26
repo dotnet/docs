@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Line <number> cannot be read because it exceeds the maximum line size."
 title: "Line <number> cannot be read because it exceeds the maximum line size."
 ms.date: 07/20/2015
 f1_keywords: 

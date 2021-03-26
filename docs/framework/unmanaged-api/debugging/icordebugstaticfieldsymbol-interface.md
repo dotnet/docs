@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugStaticFieldSymbol Interface"
 title: "ICorDebugStaticFieldSymbol Interface"
 ms.date: "03/30/2017"
 ms.assetid: c0b93609-631e-4b15-878a-189ede922631

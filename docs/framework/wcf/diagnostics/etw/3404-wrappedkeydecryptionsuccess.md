@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3404 - WrappedKeyDecryptionSuccess"
 title: "3404 - WrappedKeyDecryptionSuccess"
 ms.date: "03/30/2017"
 ms.assetid: 35ae79a1-ec00-4db7-9073-4a5dbd62dc82

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SQL Server Express User Instances"
 title: "SQL Server Express User Instances"
 ms.date: "03/30/2017"
 dev_langs: 

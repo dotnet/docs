@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Comparison Semantics (Entity SQL)"
 title: "Comparison Semantics (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: b36ce28a-2fe4-4236-b782-e5f7c054deae

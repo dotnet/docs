@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRHostProtectionManager::SetEagerSerializeGrantSets Method"
 title: "ICLRHostProtectionManager::SetEagerSerializeGrantSets Method"
 ms.date: "03/30/2017"
 api_name: 

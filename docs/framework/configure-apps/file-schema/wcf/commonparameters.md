@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <commonParameters>"
 title: "<commonParameters>"
 ms.date: "03/30/2017"
 ms.assetid: ffc20832-34d6-4622-8174-81924fd53514

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Execute a Parameterized Entity SQL Query Using EntityCommand"
 title: "How to: Execute a Parameterized Entity SQL Query Using EntityCommand"
 ms.date: "03/30/2017"
 dev_langs: 

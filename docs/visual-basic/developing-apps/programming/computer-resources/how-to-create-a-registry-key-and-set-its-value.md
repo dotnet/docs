@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Registry Key and Set Its Value in Visual Basic"
 title: "How to: Create a Registry Key and Set Its Value"
 ms.date: 07/20/2015
 f1_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC36593: Expression of type <type> is not queryable"
 title: "Expression of type <type> is not queryable"
 ms.date: 07/20/2015
 f1_keywords:

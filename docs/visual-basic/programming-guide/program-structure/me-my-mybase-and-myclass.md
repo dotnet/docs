@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Me, My, MyBase, and MyClass in Visual Basic"
 title: "Me, My, MyBase, and MyClass"
 ms.date: 07/20/2015
 f1_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC31180: XML entity references are not supported"
 title: "XML entity references are not supported"
 ms.date: 07/20/2015
 f1_keywords:

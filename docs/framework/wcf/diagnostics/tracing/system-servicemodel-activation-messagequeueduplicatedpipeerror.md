@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Activation.MessageQueueDuplicatedPipeError"
 title: "System.ServiceModel.Activation.MessageQueueDuplicatedPipeError"
 ms.date: "03/30/2017"
 ms.assetid: ebfe9af1-76f7-4416-abf9-1d777708e0f1

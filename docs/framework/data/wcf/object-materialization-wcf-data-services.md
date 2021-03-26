@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Object Materialization (WCF Data Services)"
 title: "Object Materialization (WCF Data Services)"
 ms.date: "03/30/2017"
 helpviewer_keywords:
@@ -7,6 +8,8 @@ helpviewer_keywords:
 ms.assetid: f0dbf7b0-0292-4e31-9ae4-b98288336dc1
 ---
 # Object Materialization (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 When you use the **Add Service Reference** dialog to consume an Open Data Protocol (OData) feed in a .NET Framework-based client application, equivalent data classes are generated for each entity type in the data model exposed by the feed. For more information, see [Generating the Data Service Client Library](generating-the-data-service-client-library-wcf-data-services.md). Entity data that is returned by a query is materialized into an instance of one of these generated client data service classes. For information about merge options and identity resolution for tracked objects, see [Managing the Data Service Context](managing-the-data-service-context-wcf-data-services.md).
 

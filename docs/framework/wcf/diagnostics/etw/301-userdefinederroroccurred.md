@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 301 - UserDefinedErrorOccurred"
 title: "301 - UserDefinedErrorOccurred"
 ms.date: "03/30/2017"
 ms.assetid: a0285d1c-550f-4c14-9c36-a96e97f1c4e4

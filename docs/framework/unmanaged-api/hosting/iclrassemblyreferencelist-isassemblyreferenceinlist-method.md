@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRAssemblyReferenceList::IsAssemblyReferenceInList Method"
 title: "ICLRAssemblyReferenceList::IsAssemblyReferenceInList Method"
 ms.date: "03/30/2017"
 api_name: 

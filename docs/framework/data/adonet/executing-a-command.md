@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Executing a Command"
 title: "Executing a Command"
 ms.date: "03/30/2017"
 dev_langs: 

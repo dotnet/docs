@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TransactionFlowBindingElement"
 title: "TransactionFlowBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: 0a9656fe-2400-45ca-ad79-92715c8cf190

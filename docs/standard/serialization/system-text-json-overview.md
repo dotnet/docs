@@ -18,6 +18,8 @@ The library design emphasizes high performance and low memory allocation over an
 
 The library also provides classes for working with an in-memory document object model (DOM). This feature enables random read-only access of the elements in a JSON file or string.
 
+There are some limitations on what parts of the library that you can use from Visual Basic code. For more information, see [Visual Basic support](system-text-json-how-to.md#visual-basic-support).
+
 ## How to get the library
 
 * The library is built-in as part of the shared framework for .NET Core 3.0 and later versions.

@@ -8,7 +8,7 @@ ms.date: 11/20/2020
 ---
 # Blazor app hosting models
 
-Blazor apps can be hosted in IIS just like ASP.NET Web Forms apps. Blazor apps can also be hosted in one of the following ways:
+Blazor apps can be hosted in one of the following ways:
 
 - Client-side in the browser on WebAssembly.
 - Server-side in an ASP.NET Core app.

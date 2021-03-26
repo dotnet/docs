@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XmlDocument Input to XslTransform"
 title: "XmlDocument Input to XslTransform"
 ms.date: "03/30/2017"
 dev_langs: 

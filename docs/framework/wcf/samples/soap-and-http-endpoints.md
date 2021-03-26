@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SOAP and HTTP Endpoints"
 title: "SOAP and HTTP Endpoints"
 ms.date: "03/30/2017"
 ms.assetid: e3c8be75-9dda-4afa-89b6-a82cb3b73cf8

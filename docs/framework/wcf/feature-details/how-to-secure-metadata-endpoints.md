@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Secure Metadata Endpoints"
 title: "How to: Secure Metadata Endpoints"
 ms.date: "03/30/2017"
 dev_langs:

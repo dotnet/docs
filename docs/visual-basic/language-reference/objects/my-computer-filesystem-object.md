@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: My.Computer.FileSystem Object"
 title: "My.Computer.FileSystem Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 

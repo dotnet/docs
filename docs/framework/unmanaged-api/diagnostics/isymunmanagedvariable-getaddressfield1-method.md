@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedVariable::GetAddressField1 Method"
 title: "ISymUnmanagedVariable::GetAddressField1 Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Transform a Node Fragment"
 title: "How to: Transform a Node Fragment"
 ms.date: "03/30/2017"
 dev_langs: 

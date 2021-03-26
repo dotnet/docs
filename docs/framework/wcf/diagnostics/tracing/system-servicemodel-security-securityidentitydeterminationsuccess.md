@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Security.SecurityIdentityDeterminationSuccess"
 title: "System.ServiceModel.Security.SecurityIdentityDeterminationSuccess"
 ms.date: "03/30/2017"
 ms.assetid: cee8df47-b568-44e3-aeff-e74618326093

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <section> element"
 title: "<section> element"
 ms.date: "05/01/2017"
 f1_keywords: 

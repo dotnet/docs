@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: The file is currently open for writing"
 title: "The file is currently open for writing"
 ms.date: 07/20/2015
 ms.assetid: 80b3c5e8-3a5c-4d60-b1ac-b7460f0b30b0

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugDataTarget2::GetImageFromPointer Method"
 title: "ICorDebugDataTarget2::GetImageFromPointer Method"
 ms.date: "03/30/2017"
 ms.assetid: 939cabe1-b647-4090-b662-eeec23c6c58d

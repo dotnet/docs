@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC42110: The type for variable '<variablename>' will not be inferred because it is bound to a field in an enclosing scope"
 title: "The type for variable '<variablename>' will not be inferred because it is bound to a field in an enclosing scope"
 ms.date: 07/20/2015
 f1_keywords:

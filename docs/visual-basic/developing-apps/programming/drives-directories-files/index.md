@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Processing Drives, Directories, and Files (Visual Basic)"
 title: "Processing Drives, Directories, and Files"
 ms.date: 07/20/2015
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: -highentropyva (Visual Basic)"
 title: "-highentropyva"
 ms.date: 03/10/2018
 helpviewer_keywords: 

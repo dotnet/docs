@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Execute a Query that Returns Nested Collections"
 title: "How to: Execute a Query that Returns Nested Collections"
 ms.date: "03/30/2017"
 dev_langs: 

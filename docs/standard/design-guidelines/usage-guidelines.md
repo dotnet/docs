@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Usage guidelines"
 title: "Usage guidelines"
 ms.date: "10/22/2008"
 helpviewer_keywords: 

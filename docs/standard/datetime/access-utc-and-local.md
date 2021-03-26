@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Access the predefined UTC and local time zone objects"
 title: "How to: Access the predefined UTC and local time zone objects"
 ms.date: "04/10/2017"
 dev_langs: 

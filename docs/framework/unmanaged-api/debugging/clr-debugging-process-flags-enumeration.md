@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CLR_DEBUGGING_PROCESS_FLAGS Enumeration"
 title: "CLR_DEBUGGING_PROCESS_FLAGS Enumeration"
 ms.date: "03/30/2017"
 api_name: 

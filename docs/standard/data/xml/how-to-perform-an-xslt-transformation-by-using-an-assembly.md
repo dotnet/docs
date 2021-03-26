@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Perform an XSLT Transformation by Using an Assembly"
 title: "How to: Perform an XSLT Transformation by Using an Assembly"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -178,4 +179,3 @@ in the example above. For more information on the Assembly.Load method, see <xre
 - <xref:System.Xml.Xsl.XslCompiledTransform>
 - [XSLT Compiler (xsltc.exe)](xslt-compiler-xsltc-exe.md)
 - [XSLT Transformations](xslt-transformations.md)
-- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)

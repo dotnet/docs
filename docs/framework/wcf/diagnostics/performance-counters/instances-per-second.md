@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Instances Per Second"
 title: "Instances Per Second"
 ms.date: "03/30/2017"
 ms.assetid: 74579397-1058-4278-80cf-2d00854a480f

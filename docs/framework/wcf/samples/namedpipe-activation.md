@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NamedPipe Activation"
 title: "NamedPipe Activation"
 ms.date: "03/30/2017"
 ms.assetid: f3c0437d-006c-442e-bfb0-6b29216e4e29
@@ -6,7 +7,7 @@ ms.assetid: f3c0437d-006c-442e-bfb0-6b29216e4e29
 
 # NamedPipe Activation
 
-This sample demonstrates hosting a service that uses Windows Process Activation Service (WAS) to activate a service that communicates over names pipes. This sample is based on the [Getting Started](getting-started-sample.md) and requires Windows Vista to run.
+This sample demonstrates hosting a service that uses Windows Process Activation Service (WAS) to activate a service that communicates over named pipes. This sample is based on the [Getting Started](getting-started-sample.md) and requires Windows Vista to run.
 
 > [!NOTE]
 > The set-up procedure and build instructions for this sample are located at the end of this topic.

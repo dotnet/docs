@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Memory- and span-related types"
 title: "Memory and spans"
 ms.date: "10/03/2018"
 helpviewer_keywords:
@@ -15,7 +16,7 @@ Starting with .NET Core 2.1, .NET includes a number of interrelated types that r
 
 - <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, an immutable version of the <xref:System.Span%601> structure.
 
-- <xref:System.Memory%601?displayProperty=nameWithType>, a contiguous region of memory that is allocated on the managed heap rather than the stack. A <xref:System.Memory%601> instance can be backed by an array of type `T` or a <xref:System.String>. Because it can be stored on the managed heap, <xref:System.Memory%601> has none of the limitations of <xref:System.Span%601>.
+- <xref:System.Memory%601?displayProperty=nameWithType>, a wrapper over a contiguous region of memory. A <xref:System.Memory%601> instance can be backed by an array of type `T`, or a <xref:System.String>, or a memory manager. As it can be stored on the managed heap, <xref:System.Memory%601> has none of the limitations of <xref:System.Span%601>.
 
 - <xref:System.ReadOnlyMemory%601?displayProperty=nameWithType>, an immutable version of the <xref:System.Memory%601> structure.
 
@@ -28,6 +29,8 @@ Starting with .NET Core 2.1, .NET includes a number of interrelated types that r
 - <xref:System.ArraySegment%601>, a wrapper for a particular number of array elements starting at a particular index.
 
 - <xref:System.MemoryExtensions?displayProperty=nameWithType>, a collection of extension methods for converting strings, arrays, and array segments to <xref:System.Memory%601> blocks.
+
+<xref:System.Span%601?displayProperty=nameWithType>, <xref:System.Memory%601?displayProperty=nameWithType>, and their readonly counterparts are designed to allow the creation of algorithms that avoid copying memory or allocating on the managed heap more than necessary. Creating them (either via `Slice` or their constructors) does not involve duplicating the underlying buffers: only the relevant references and offsets, which represent the "view" of the wrapped memory, are updated.
 
 > [!NOTE]
 > For earlier frameworks, <xref:System.Span%601> and <xref:System.Memory%601> are available in the [System.Memory NuGet package](https://www.nuget.org/packages/System.Memory/).

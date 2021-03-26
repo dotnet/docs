@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Property Design"
 title: "Property Design"
 ms.date: "10/22/2008"
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataConverter::GetTypeLibFromMetaData Method"
 title: "IMetaDataConverter::GetTypeLibFromMetaData Method"
 ms.date: "03/30/2017"
 api_name: 

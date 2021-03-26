@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Troubleshooting Correlation"
 title: "Troubleshooting Correlation"
 ms.date: "03/30/2017"
 ms.assetid: 98003875-233d-4512-a688-4b2a1b0b5371

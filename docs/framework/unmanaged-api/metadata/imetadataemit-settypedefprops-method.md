@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::SetTypeDefProps Method"
 title: "IMetaDataEmit::SetTypeDefProps Method"
 ms.date: "03/30/2017"
 api_name: 

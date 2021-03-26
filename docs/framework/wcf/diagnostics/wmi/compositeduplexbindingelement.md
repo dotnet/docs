@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CompositeDuplexBindingElement"
 title: "CompositeDuplexBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: 05e985aa-6462-431d-a831-0d601f3a3835

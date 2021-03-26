@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <customBinding>"
 title: "<customBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 9da4f960-f64e-4d8a-894d-2b09eba5ce4b

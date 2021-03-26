@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::ExceptionSearchFunctionLeave Method"
 title: "ICorProfilerCallback::ExceptionSearchFunctionLeave Method"
 ms.date: "03/30/2017"
 api_name: 

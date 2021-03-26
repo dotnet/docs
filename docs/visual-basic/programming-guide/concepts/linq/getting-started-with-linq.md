@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Getting Started with LINQ in Visual Basic"
 title: "Getting Started with LINQ"
 ms.date: 07/20/2015
 helpviewer_keywords: 

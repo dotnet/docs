@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CLRDATA_ADDRESS_RANGE Structure"
 title: "CLRDATA_ADDRESS_RANGE Structure"
 ms.date: "01/16/2019"
 api.name:

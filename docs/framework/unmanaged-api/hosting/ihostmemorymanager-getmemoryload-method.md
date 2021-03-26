@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostMemoryManager::GetMemoryLoad Method"
 title: "IHostMemoryManager::GetMemoryLoad Method"
 ms.date: "03/30/2017"
 api_name: 

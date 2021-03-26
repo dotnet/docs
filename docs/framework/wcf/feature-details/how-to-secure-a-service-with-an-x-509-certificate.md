@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Secure a Service with an X.509 Certificate"
 title: "How to: Secure a Service with an X.509 Certificate"
 ms.date: "03/30/2017"
 dev_langs: 

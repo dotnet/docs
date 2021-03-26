@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Changes to NTLM authentication for HttpWebRequest in Version 3.5 SP1"
 title: "Changes to NTLM authentication for HttpWebRequest in Version 3.5 SP1"
 ms.date: "03/30/2017"
 ms.assetid: 8bf0b428-5a21-4299-8d6e-bf8251fd978a
@@ -45,7 +46,7 @@ To specify the host names that are mapped to the loopback address and can connec
 
 7. Quit Registry Editor, and then restart the IISAdmin service and run IISReset.
 
-A less secure work around is to disable the loop back check, as described in <https://support.microsoft.com/kb/896861>. This disables the protection against reflection attacks. So it is better to constrain the set of alternate names to only those you expect the machine to actually use.
+A less secure work around is to disable the loop back check. This disables the protection against reflection attacks. So it is better to constrain the set of alternate names to only those you expect the machine to actually use.
 
 ## See also
 

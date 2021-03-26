@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4008 - DispatchSessionStart"
 title: "4008 - DispatchSessionStart"
 ms.date: "03/30/2017"
 ms.assetid: 488c78a7-aee0-4754-98d5-44afa838fed7

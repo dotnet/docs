@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorPinvokeMap Enumeration"
 title: "CorPinvokeMap Enumeration"
 ms.date: "03/30/2017"
 api_name: 

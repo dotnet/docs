@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Specify Client Credentials for a Data Service Request (WCF Data Services)"
 title: "How to: Specify Client Credentials for a Data Service Request (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -9,6 +10,8 @@ helpviewer_keywords:
 ms.assetid: 1632f9af-e45f-4363-9222-03823daa8e28
 ---
 # How to: Specify Client Credentials for a Data Service Request (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 By default, the client library does not supply credentials when sending a request to an OData service. However, you can specify that credentials be sent to authenticate requests to the data service by supplying a <xref:System.Net.NetworkCredential> for the <xref:System.Data.Services.Client.DataServiceContext.Credentials%2A> property of the <xref:System.Data.Services.Client.DataServiceContext>. For more information, see [Securing WCF Data Services](securing-wcf-data-services.md). The example in this topic shows how to explicitly provide credentials that are used by the WCF Data Services client when requesting data from the data service.  
   

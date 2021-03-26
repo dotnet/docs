@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Hold More Than One Value in a Variable (Visual Basic)"
 title: "How to: Hold More Than One Value in a Variable"
 ms.date: 07/20/2015
 helpviewer_keywords:

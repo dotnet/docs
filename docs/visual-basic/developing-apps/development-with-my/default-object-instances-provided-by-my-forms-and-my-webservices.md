@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Default Object Instances Provided by My.Forms and My.WebServices (Visual Basic)"
 title: "Default Object Instances Provided by My.Forms and My.WebServices"
 ms.date: 07/20/2015
 helpviewer_keywords: 

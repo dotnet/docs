@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Managed classes derived from a COM class cannot be called late-bound."
 title: "Managed classes derived from a COM class cannot be called late-bound."
 ms.date: 07/20/2015
 f1_keywords:

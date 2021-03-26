@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Array dimensions do not match those specified in the 'VBFixedArray' attribute"
 title: "Array dimensions do not match those specified in the 'VBFixedArray' attribute"
 ms.date: 07/20/2015
 f1_keywords: 

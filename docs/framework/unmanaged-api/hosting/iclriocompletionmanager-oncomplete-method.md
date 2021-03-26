@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRIoCompletionManager::OnComplete Method"
 title: "ICLRIoCompletionManager::OnComplete Method"
 ms.date: "03/30/2017"
 api_name: 

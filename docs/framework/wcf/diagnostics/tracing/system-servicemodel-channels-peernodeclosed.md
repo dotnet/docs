@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PeerNodeClosed"
 title: "System.ServiceModel.Channels.PeerNodeClosed"
 ms.date: "03/30/2017"
 ms.assetid: c1cf92c3-3d31-4978-b0df-750fcd21909f

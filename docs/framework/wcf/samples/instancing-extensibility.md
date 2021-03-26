@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Instancing Extensibility"
 title: "Instancing Extensibility"
 ms.date: "03/30/2017"
 ms.assetid: 7a2f8b51-472b-4b71-8602-d3dbc6e1cb07

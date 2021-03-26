@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Batching Operations (WCF Data Services)"
 title: "Batching Operations (WCF Data Services)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
@@ -6,6 +7,8 @@ helpviewer_keywords:
 ms.assetid: 962a49d1-cc11-4b96-bc7d-071dd6607d6c
 ---
 # Batching Operations (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 The Open Data Protocol (OData) supports batch processing of requests to an OData-based service. For more information, see [OData: Batch Processing](https://www.odata.org/documentation/odata-version-2-0/batch-processing/). In WCF Data Services, each operation that uses the <xref:System.Data.Services.Client.DataServiceContext>, such as executing a query or saving changes, results in a separate request being sent to the data service. In order to maintain a logical scope for sets of operations, you can explicitly define operational batches. This ensures that all operations in the batch are sent to the data service in a single HTTP request, enables the server to process the operations atomically, and reduces the number of round trips to the data service.  
   

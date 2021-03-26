@@ -2,7 +2,7 @@
 title: Introduction to cloud-native applications
 description: Learn about cloud-native computing
 author: robvet
-ms.date: 05/13/2020
+ms.date: 01/19/2021
 ---
 
 # Introduction to cloud-native applications
@@ -37,7 +37,7 @@ Not all is bad. Monoliths offer some distinct advantages. For example, they're s
 - troubleshoot
 - scale
 
-Many successful apps that exist today were created as monoliths. The app is a hit and continues to evolve, iteration after iteration, adding more and more functionality.
+Many successful apps that exist today were created as monoliths. The app is a hit and continues to evolve, iteration after iteration, adding more functionality.
 
 At some point, however, you begin to feel uncomfortable. You find yourself losing control of the application. As time goes on, the feeling becomes more intense and you eventually enter a state known as the `Fear Cycle`.
 

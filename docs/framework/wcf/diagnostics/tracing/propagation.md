@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Propagation"
 title: "Propagation"
 ms.date: "03/30/2017"
 ms.assetid: f8181e75-d693-48d1-b333-a776ad3b382a

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accessing the Keyboard (Visual Basic)"
 title: "Accessing the Keyboard"
 ms.date: 07/20/2015
 helpviewer_keywords: 

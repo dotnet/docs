@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implicit and Explicit Conversions (Visual Basic)"
 title: "Implicit and Explicit Conversions"
 ms.date: 07/20/2015
 helpviewer_keywords:

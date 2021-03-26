@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PrematureDatagramEof"
 title: "System.ServiceModel.Channels.PrematureDatagramEof"
 ms.date: "03/30/2017"
 ms.assetid: ec07be8b-b537-4090-be7e-086679dba78d

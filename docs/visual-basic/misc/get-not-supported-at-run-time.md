@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Get not supported at run time"
 title: "Get not supported at run time"
 ms.date: 07/20/2015
 f1_keywords: 

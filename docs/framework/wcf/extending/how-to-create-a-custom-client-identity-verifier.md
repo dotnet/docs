@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Custom Client Identity Verifier"
 title: "How to: Create a Custom Client Identity Verifier"
 ms.date: "03/30/2017"
 dev_langs: 

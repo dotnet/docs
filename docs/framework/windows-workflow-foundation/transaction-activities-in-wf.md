@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Transaction Activities in WF"
 title: "Transaction Activities in WF"
 ms.date: "03/30/2017"
 ms.assetid: fb33378e-82c6-4ea0-870f-76dc77e7f0fe

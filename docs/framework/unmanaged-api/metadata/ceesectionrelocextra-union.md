@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CeeSectionRelocExtra Union"
 title: "CeeSectionRelocExtra Union"
 ms.date: "03/30/2017"
 api_name: 

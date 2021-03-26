@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo5::GetEventMask2 Method"
 title: "ICorProfilerInfo5::GetEventMask2 Method"
 ms.date: "03/30/2017"
 dev_langs: 

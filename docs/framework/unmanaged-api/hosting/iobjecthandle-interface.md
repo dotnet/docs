@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IObjectHandle Interface"
 title: "IObjectHandle Interface"
 ms.date: "03/30/2017"
 api_name: 

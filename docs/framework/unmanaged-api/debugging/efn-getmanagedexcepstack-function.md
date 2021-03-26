@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _EFN_GetManagedExcepStack Function"
 title: "_EFN_GetManagedExcepStack Function"
 ms.date: "03/30/2017"
 api_name: 

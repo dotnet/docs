@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorPublishAppDomainEnum Interface"
 title: "ICorPublishAppDomainEnum Interface"
 ms.date: "03/30/2017"
 api_name: 

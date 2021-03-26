@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRErrorReportingManager::BeginCustomDump Method"
 title: "ICLRErrorReportingManager::BeginCustomDump Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IInstallReferenceItem Interface"
 title: "IInstallReferenceItem Interface"
 ms.date: "03/30/2017"
 api_name: 

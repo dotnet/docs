@@ -12,7 +12,7 @@ ms.assetid: 57e3ba27-9a82-4067-aca7-5ca446b7bf93
 ---
 # Lambda expressions (C# reference)
 
-A *lambda expression* is an expression of any of the following two forms:
+You use a *lambda expression* to create an anonymous function. Use the [lambda declaration operator `=>`](lambda-operator.md) to separate the lambda's parameter list from its body. A lambda expression can be of any of the following two forms:
 
 - [Expression lambda](#expression-lambdas) that has an expression as its body:
 
@@ -26,7 +26,7 @@ A *lambda expression* is an expression of any of the following two forms:
   (input-parameters) => { <sequence-of-statements> }
   ```
 
-Use the [lambda declaration operator `=>`](lambda-operator.md) to separate the lambda's parameter list from its body. To create a lambda expression, you specify input parameters (if any) on the left side of the lambda operator and an expression or a statement block on the other side.
+To create a lambda expression, you specify input parameters (if any) on the left side of the lambda operator and an expression or a statement block on the other side.
 
 Any lambda expression can be converted to a [delegate](../builtin-types/reference-types.md#the-delegate-type) type. The delegate type to which a lambda expression can be converted is defined by the types of its parameters and return value. If a lambda expression doesn't return a value, it can be converted to one of the `Action` delegate types; otherwise, it can be converted to one of the `Func` delegate types. For example, a lambda expression that has two parameters and returns no value can be converted to an <xref:System.Action%602> delegate. A lambda expression that has one parameter and returns a value can be converted to a <xref:System.Func%602> delegate. In the following example, the lambda expression `x => x * x`, which specifies a parameter that's named `x` and returns the value of `x` squared, is assigned to a variable of a delegate type:
 

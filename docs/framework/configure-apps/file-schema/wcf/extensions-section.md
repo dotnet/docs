@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <extensions> section"
 title: "<extensions> section"
 ms.date: "03/30/2017"
 ms.assetid: 53a59fb6-dede-47ec-9384-b3c2e8f0c1fa

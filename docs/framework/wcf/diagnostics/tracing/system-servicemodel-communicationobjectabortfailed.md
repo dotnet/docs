@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.CommunicationObjectAbortFailed"
 title: "System.ServiceModel.CommunicationObjectAbortFailed"
 ms.date: "03/30/2017"
 ms.assetid: f3cab70b-ec5d-412c-a7c2-e09377bc6d46

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC31019: Unable to write to output file '<filename>': <error>"
 title: "Unable to write to output file '<filename>': <error>"
 ms.date: 07/20/2015
 f1_keywords:
@@ -54,4 +55,4 @@ There was a problem creating the file.
 
 ## See also
 
-- [Talk to Us](/visualstudio/ide/feedback-options)
+- [Visual Studio feedback options](/visualstudio/ide/feedback-options)

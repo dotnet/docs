@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Configure a Custom WS-Metadata Exchange Binding"
 title: "How to: Configure a Custom WS-Metadata Exchange Binding"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

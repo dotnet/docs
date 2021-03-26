@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How To: Access a Service From a Workflow Application"
 title: "How To: Access a Service From a Workflow Application"
 ms.date: "03/30/2017"
 ms.assetid: 925ef8ea-5550-4c9d-bb7b-209e20c280ad

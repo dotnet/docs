@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: For Further Reading (Parallel Programming)"
 title: "For Further Reading (Parallel Programming)"
 ms.date: "04/26/2018"
 helpviewer_keywords: 

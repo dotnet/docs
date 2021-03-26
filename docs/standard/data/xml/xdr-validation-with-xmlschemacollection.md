@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XDR Validation with XmlSchemaCollection"
 title: "XDR Validation with XmlSchemaCollection"
 ms.date: "03/30/2017"
 dev_langs: 

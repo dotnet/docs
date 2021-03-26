@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .NET Framework 4 Hosting Global Static Functions"
 title: ".NET Framework 4 Hosting Global Static Functions"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

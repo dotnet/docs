@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Sort or Filter Text Data by Any Word or Field (LINQ) (Visual Basic)"
 title: "How to: Sort or Filter Text Data by Any Word or Field (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: 9df137fe-335b-46e0-aecf-ea8a9eddd4e3

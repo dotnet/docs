@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerModuleEnum Interface"
 title: "ICorProfilerModuleEnum Interface"
 ms.date: "03/30/2017"
 api_name: 

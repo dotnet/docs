@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Migrating .NET Remoting Applications to WCF"
 title: "Migrating .NET Remoting Applications to WCF"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

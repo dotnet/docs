@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Control How Much Related Data Is Retrieved"
 title: "How to: Control How Much Related Data Is Retrieved"
 ms.date: "03/30/2017"
 dev_langs: 

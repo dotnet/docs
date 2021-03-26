@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PeerNeighborManagerOffline"
 title: "System.ServiceModel.Channels.PeerNeighborManagerOffline"
 ms.date: "03/30/2017"
 ms.assetid: 15b19e0f-cee5-49ff-8498-f404c39b712f

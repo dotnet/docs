@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostAutoEvent::Set Method"
 title: "IHostAutoEvent::Set Method"
 ms.date: "03/30/2017"
 api_name: 

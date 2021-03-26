@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <customCookieHandler>"
 title: "<customCookieHandler>"
 ms.date: "03/30/2017"
 ms.assetid: a03b153d-5ec6-4915-9031-6f0c3fd348be

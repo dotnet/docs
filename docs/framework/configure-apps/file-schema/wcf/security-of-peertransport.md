@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <security> of <peerTransport>"
 title: "<security> of <peerTransport>"
 ms.date: "03/30/2017"
 ms.assetid: f73634ed-f896-4968-bf74-5e5ac52d3b6b

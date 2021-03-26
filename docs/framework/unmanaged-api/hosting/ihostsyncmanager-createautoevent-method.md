@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostSyncManager::CreateAutoEvent Method"
 title: "IHostSyncManager::CreateAutoEvent Method"
 ms.date: "03/30/2017"
 api_name: 

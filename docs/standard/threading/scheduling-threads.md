@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Scheduling threads"
 title: "Scheduling threads"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

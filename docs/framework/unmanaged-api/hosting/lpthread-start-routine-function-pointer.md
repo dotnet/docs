@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: LPTHREAD_START_ROUTINE Function Pointer"
 title: "LPTHREAD_START_ROUTINE Function Pointer"
 ms.date: "03/30/2017"
 api_name: 

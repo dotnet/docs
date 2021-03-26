@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GROUPPARTITION (Entity SQL)"
 title: "GROUPPARTITION (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: d0482e9b-086c-451c-9dfa-ccb024a9efb6

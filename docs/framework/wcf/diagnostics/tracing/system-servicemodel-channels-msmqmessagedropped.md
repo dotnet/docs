@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.MsmqMessageDropped"
 title: "System.ServiceModel.Channels.MsmqMessageDropped"
 ms.date: "03/30/2017"
 ms.assetid: 8b6e644d-fa68-4be7-abe9-3659671a37c1

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::AssemblyUnloadStarted Method"
 title: "ICorProfilerCallback::AssemblyUnloadStarted Method"
 ms.date: "03/30/2017"
 api_name: 
@@ -29,9 +30,8 @@ HRESULT AssemblyUnloadStarted(
   
 ## Parameters
 
-- `assemblyId`
-
-  \[in] Identifies the assembly that is being unloaded.
+`assemblyId`
+[in] Identifies the assembly that is being unloaded.
 
 ## Remarks  
 

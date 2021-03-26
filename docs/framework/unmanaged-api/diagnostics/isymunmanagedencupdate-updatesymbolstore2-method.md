@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedENCUpdate::UpdateSymbolStore2 Method"
 title: "ISymUnmanagedENCUpdate::UpdateSymbolStore2 Method"
 ms.date: "03/30/2017"
 api_name: 

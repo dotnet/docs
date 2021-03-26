@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: EApiCategories Enumeration"
 title: "EApiCategories Enumeration"
 ms.date: "03/30/2017"
 api_name: 

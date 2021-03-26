@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRDebugManager::BeginConnection Method"
 title: "ICLRDebugManager::BeginConnection Method"
 ms.date: "03/30/2017"
 api_name: 

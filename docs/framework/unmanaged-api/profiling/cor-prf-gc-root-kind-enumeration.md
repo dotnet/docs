@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_PRF_GC_ROOT_KIND Enumeration"
 title: "COR_PRF_GC_ROOT_KIND Enumeration"
 ms.date: "03/30/2017"
 api_name: 

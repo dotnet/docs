@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Stand-Alone JSON Serialization using DataContractJsonSerializer"
 title: "Stand-Alone JSON Serialization using DataContractJsonSerializer"
 ms.date: "03/30/2017"
 ms.assetid: 312bd7b2-1300-4b12-801e-ebe742bd2287

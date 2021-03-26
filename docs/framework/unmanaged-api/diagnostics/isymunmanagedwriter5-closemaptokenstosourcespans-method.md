@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedWriter5::CloseMapTokensToSourceSpans Method"
 title: "ISymUnmanagedWriter5::CloseMapTokensToSourceSpans Method"
 ms.date: "03/30/2017"
 ms.assetid: f8a0c0a2-a11d-436c-aa85-bc110215cfd6

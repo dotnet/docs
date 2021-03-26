@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.MessageClosedAgain"
 title: "System.ServiceModel.MessageClosedAgain"
 ms.date: "03/30/2017"
 ms.assetid: 24c274d4-65cd-4c91-9869-bc6eb34ef979

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess7::SetWriteableMetadataUpdateMode Method"
 title: "ICorDebugProcess7::SetWriteableMetadataUpdateMode Method"
 ms.date: "03/30/2017"
 dev_langs: 

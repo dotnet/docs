@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Controlling Serialization and Deserialization with SerializationBinder"
 title: "Controlling Serialization and Deserialization with SerializationBinder"
 ms.date: "07/14/2020"
 ms.assetid: ba8dcecf-acc7-467c-939d-021bbac797d4

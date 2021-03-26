@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Generate Customized Code by Modifying a DBML File"
 title: "How to: Generate Customized Code by Modifying a DBML File"
 ms.date: "03/30/2017"
 ms.assetid: 50ad597a-8598-42d3-82dd-fc7d702ebc37

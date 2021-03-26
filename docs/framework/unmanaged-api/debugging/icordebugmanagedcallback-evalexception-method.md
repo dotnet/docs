@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugManagedCallback::EvalException Method"
 title: "ICorDebugManagedCallback::EvalException Method"
 ms.date: "03/30/2017"
 api_name: 

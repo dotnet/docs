@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Custom Service Host"
 title: Custom Service Host
 ms.date: "03/30/2017"
 ms.assetid: fe16ff50-7156-4499-9c32-13d8a79dc100

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FailFast"
 title: "FailFast"
 ms.date: "03/30/2017"
 ms.assetid: 4fc4e476-997b-4166-90af-8d164f775924

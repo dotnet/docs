@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Convert a Type to a Generic IEnumerable"
 title: "Convert a Type to a Generic IEnumerable"
 ms.date: "03/30/2017"
 dev_langs: 

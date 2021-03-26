@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo2::GetRVAStaticAddress Method"
 title: "ICorProfilerInfo2::GetRVAStaticAddress Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess5::GetTypeFields Method"
 title: "ICorDebugProcess5::GetTypeFields Method"
 ms.date: "03/30/2017"
 api_name: 

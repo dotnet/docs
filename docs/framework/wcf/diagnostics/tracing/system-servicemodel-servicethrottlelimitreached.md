@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ServiceThrottleLimitReached"
 title: "System.ServiceModel.ServiceThrottleLimitReached"
 ms.date: "03/30/2017"
 ms.assetid: f554a370-c3f8-4131-8639-7c36f926fbf9

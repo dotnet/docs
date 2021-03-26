@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4804 - DiscoveryMessageReceivedAfterOperationCompleted"
 title: "4804 - DiscoveryMessageReceivedAfterOperationCompleted"
 ms.date: "03/30/2017"
 ms.assetid: 61d2791c-e1a2-400a-a57e-66818ac5962e

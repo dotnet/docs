@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_VERSION Structure"
 title: "COR_VERSION Structure"
 ms.date: "03/30/2017"
 api_name: 

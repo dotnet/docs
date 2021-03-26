@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Specifying a Custom Crypto Algorithm"
 title: "Specifying a Custom Crypto Algorithm"
 ms.date: "03/30/2017"
 ms.assetid: d662a305-8e09-451d-9a59-b0f12b012f1d

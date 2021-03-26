@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Access a Variable Hidden by a Derived Class (Visual Basic)"
 title: "How to: Access a Variable Hidden by a Derived Class"
 ms.date: 07/20/2015
 helpviewer_keywords:

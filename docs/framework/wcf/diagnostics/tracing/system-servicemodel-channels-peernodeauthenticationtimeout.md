@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PeerNodeAuthenticationTimeout"
 title: "System.ServiceModel.Channels.PeerNodeAuthenticationTimeout"
 ms.date: "03/30/2017"
 ms.assetid: f294ee94-be83-426c-b40d-6e8a4e5e987c

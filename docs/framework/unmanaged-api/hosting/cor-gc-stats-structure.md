@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_GC_STATS Structure"
 title: "COR_GC_STATS Structure"
 ms.date: "03/30/2017"
 api_name: 

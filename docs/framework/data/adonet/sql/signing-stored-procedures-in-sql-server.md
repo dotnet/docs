@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Signing Stored Procedures in SQL Server"
 title: "Signing Stored Procedures in SQL Server"
 ms.date: "01/05/2018"
 ms.assetid: eeed752c-0084-48e5-9dca-381353007a0d

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4031 - DispatchSessionFailed"
 title: "4031 - DispatchSessionFailed"
 ms.date: "03/30/2017"
 ms.assetid: c9fe9959-aeac-4446-a488-7c7c94c92cef

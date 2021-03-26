@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Managed and unmanaged threading in Windows"
 title: "Managed and Unmanaged Threading in Windows"
 ms.date: "10/24/2018"
 elpviewer_keywords: 

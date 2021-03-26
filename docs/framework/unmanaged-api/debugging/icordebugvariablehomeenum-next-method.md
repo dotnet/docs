@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugVariableHomeEnum::Next Method"
 title: "ICorDebugVariableHomeEnum::Next Method"
 ms.date: "03/30/2017"
 api_name: 

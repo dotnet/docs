@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Return Rowsets"
 title: "How to: Return Rowsets"
 ms.date: "03/30/2017"
 dev_langs: 

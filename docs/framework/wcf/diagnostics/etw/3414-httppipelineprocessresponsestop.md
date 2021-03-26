@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3414 - HttpPipelineProcessResponseStop"
 title: "3414 - HttpPipelineProcessResponseStop"
 ms.date: "03/30/2017"
 ms.assetid: 71ebd2ee-aedd-47ef-9a2b-00f778f7e225

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::GetNameFromToken Method"
 title: "IMetaDataImport::GetNameFromToken Method"
 ms.date: "03/30/2017"
 api_name: 

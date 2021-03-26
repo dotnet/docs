@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: LINQ to Objects (Visual Basic)"
 title: "LINQ to Objects"
 ms.date: 07/20/2015
 ms.assetid: dd4c30bc-1c9b-4781-a482-b5eada38deb2

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: EmitAssembly Method"
 title: "EmitAssembly Method"
 ms.date: "03/30/2017"
 api_name: 

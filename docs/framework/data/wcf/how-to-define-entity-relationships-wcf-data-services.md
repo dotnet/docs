@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Define Entity Relationships (WCF Data Services)"
 title: "How to: Define Entity Relationships (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -9,6 +10,8 @@ helpviewer_keywords:
 ms.assetid: cc255524-1534-4fae-b83c-250933d5a72b
 ---
 # How to: Define Entity Relationships (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 When you add a new entity in WCF Data Services, any relationships between the new entity and related entities are not automatically defined. You can create and change relationships between entity instances and have the client library reflect those changes in the data service. For more information, see [Updating the Data Service](updating-the-data-service-wcf-data-services.md).  
   

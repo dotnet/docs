@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedAsyncMethod::HasCatchHandlerILOffset Method"
 title: "ISymUnmanagedAsyncMethod::HasCatchHandlerILOffset Method"
 ms.date: "03/30/2017"
 ms.assetid: a9ce105c-6495-49ab-b0e5-903a48ebadb3

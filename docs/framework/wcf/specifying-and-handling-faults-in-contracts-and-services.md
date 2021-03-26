@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Specifying and Handling Faults in Contracts and Services"
 title: "Specifying and Handling Faults in Contracts and Services"
 ms.date: "03/30/2017"
 helpviewer_keywords:

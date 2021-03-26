@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC42107: Property '<propertyname>' doesn't return a value on all code paths"
 title: "Property '<propertyname>' doesn't return a value on all code paths"
 ms.date: 07/20/2015
 f1_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorThreadpool::CorCreateTimer Method"
 title: "ICorThreadpool::CorCreateTimer Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: -optionstrict"
 title: "-optionstrict"
 ms.date: 07/20/2015
 f1_keywords:

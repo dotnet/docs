@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorDebugStepReason Enumeration"
 title: "CorDebugStepReason Enumeration"
 ms.date: "03/30/2017"
 api_name: 

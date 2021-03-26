@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedReader::GetSymbolStoreFileName Method"
 title: "ISymUnmanagedReader::GetSymbolStoreFileName Method"
 ms.date: "03/30/2017"
 api_name: 

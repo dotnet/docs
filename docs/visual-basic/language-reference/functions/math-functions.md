@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Math Functions (Visual Basic)"
 title: Math functions
 ms.date: 01/27/2020
 helpviewer_keywords: 

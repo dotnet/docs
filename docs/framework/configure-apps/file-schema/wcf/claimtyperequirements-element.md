@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <claimTypeRequirements> element"
 title: "<claimTypeRequirements> element"
 ms.date: "03/30/2017"
 ms.assetid: a26efe73-4bad-4731-8cad-27f00d54354b

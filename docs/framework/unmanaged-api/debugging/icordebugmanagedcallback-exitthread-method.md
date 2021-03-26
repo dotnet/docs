@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugManagedCallback::ExitThread Method"
 title: "ICorDebugManagedCallback::ExitThread Method"
 ms.date: "03/30/2017"
 api_name: 

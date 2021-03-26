@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Set not supported (read-only property)"
 title: "Set not supported (read-only property)"
 ms.date: 07/20/2015
 f1_keywords: 

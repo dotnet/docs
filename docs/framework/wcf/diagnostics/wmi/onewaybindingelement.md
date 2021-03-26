@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OneWayBindingElement"
 title: "OneWayBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: 5c7e17c3-39b9-4214-ae08-9e6141734305

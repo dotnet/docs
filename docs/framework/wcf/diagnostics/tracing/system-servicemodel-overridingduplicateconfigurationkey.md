@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.OverridingDuplicateConfigurationKey"
 title: "System.ServiceModel.OverridingDuplicateConfigurationKey"
 ms.date: "03/30/2017"
 ms.assetid: 7d11700b-c035-467e-af02-686bca3b207a

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Develop for multiple platforms with .NET Framework"
 title: "Developing for Multiple Platforms with .NET Framework"
 ms.date: 10/21/2020
 ms.assetid: b153baaa-130c-4169-860b-e580591de91e

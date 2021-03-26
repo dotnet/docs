@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Test Whether Two Objects Are the Same (Visual Basic)"
 title: "How to: Test Whether Two Objects Are the Same"
 ms.date: 07/20/2015
 helpviewer_keywords: 

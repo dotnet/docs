@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Call User-Defined Functions Inline"
 title: "How to: Call User-Defined Functions Inline"
 ms.date: "03/30/2017"
 dev_langs: 

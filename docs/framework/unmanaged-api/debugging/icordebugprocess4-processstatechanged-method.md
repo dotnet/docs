@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess4::ProcessStateChanged Method"
 title: "ICorDebugProcess4::ProcessStateChanged Method"
 ms.date: "02/07/2019"
 api_name:

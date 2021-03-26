@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exceptions, Transactions, and Compensation"
 title: "Exceptions, Transactions, and Compensation"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Custom Secure Metadata Endpoint"
 title: "Custom Secure Metadata Endpoint"
 ms.date: "03/30/2017"
 ms.assetid: 9e369e99-ea4a-49ff-aed2-9fdf61091a48

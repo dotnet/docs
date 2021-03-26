@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: INotifySink2::OnSyncCallExit Method"
 title: "INotifySink2::OnSyncCallExit Method"
 ms.date: "03/30/2017"
 api_name: 

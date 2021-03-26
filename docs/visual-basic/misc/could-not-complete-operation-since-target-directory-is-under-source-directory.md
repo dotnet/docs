@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Could not complete operation since target directory is under source directory"
 title: "Could not complete operation since target directory is under source directory"
 ms.date: 07/20/2015
 f1_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Const Statement (Visual Basic)"
 title: "Const Statement"
 ms.date: 05/12/2018
 f1_keywords:

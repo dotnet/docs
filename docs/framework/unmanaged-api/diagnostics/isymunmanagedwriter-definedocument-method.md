@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedWriter::DefineDocument Method"
 title: "ISymUnmanagedWriter::DefineDocument Method"
 ms.date: "03/30/2017"
 api_name: 

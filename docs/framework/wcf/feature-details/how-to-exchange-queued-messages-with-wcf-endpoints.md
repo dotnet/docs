@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Exchange Queued Messages with WCF Endpoints"
 title: "How to: Exchange Queued Messages with WCF Endpoints"
 ms.date: "03/30/2017"
 dev_langs: 

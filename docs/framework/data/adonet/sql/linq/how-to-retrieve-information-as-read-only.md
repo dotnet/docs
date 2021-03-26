@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Retrieve Information As Read-Only"
 title: "How to: Retrieve Information As Read-Only"
 ms.date: "03/30/2017"
 dev_langs: 

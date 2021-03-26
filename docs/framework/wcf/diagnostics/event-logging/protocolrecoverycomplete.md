@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ProtocolRecoveryComplete"
 title: "ProtocolRecoveryComplete"
 ms.date: "03/30/2017"
 ms.assetid: 71b2a222-f3a5-4e71-8ecd-ca53c8f8ef00

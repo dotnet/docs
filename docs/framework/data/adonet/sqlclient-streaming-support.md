@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SqlClient Streaming Support"
 title: "SqlClient Streaming Support"
 ms.date: "03/30/2017"
 ms.assetid: c449365b-470b-4edb-9d61-8353149f5531

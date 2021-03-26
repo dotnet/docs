@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::GetClassLayout Method"
 title: "IMetaDataImport::GetClassLayout Method"
 ms.date: "03/30/2017"
 api_name: 

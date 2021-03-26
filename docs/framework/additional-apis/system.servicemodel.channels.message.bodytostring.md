@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message.BodyToString Method"
 title: Message.BodyToString Method (System.ServiceModel.Channels)
 ms.date: 11/01/2019
 topic_type:

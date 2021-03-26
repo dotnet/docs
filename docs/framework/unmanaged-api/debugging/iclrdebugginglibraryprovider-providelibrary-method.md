@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRDebuggingLibraryProvider::ProvideLibrary Method"
 title: "ICLRDebuggingLibraryProvider::ProvideLibrary Method"
 ms.date: "03/30/2017"
 api_name:

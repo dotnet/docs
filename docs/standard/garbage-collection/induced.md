@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Induced Collections"
 title: "Induced Collections"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

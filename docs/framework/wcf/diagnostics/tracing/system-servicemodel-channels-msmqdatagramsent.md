@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.MsmqDatagramSent"
 title: "System.ServiceModel.Channels.MsmqDatagramSent"
 ms.date: "03/30/2017"
 ms.assetid: eab449e8-e01b-4af8-bd8e-0f3a24689c82

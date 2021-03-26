@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Custom Security Token Provider"
 title: "How to: Create a Custom Security Token Provider"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4806 - DiscoveryMessageWithInvalidRelatesToOrOperationCompleted"
 title: "4806 - DiscoveryMessageWithInvalidRelatesToOrOperationCompleted"
 ms.date: "03/30/2017"
 ms.assetid: 19e9a660-25f3-4332-b716-a12a59f2cbbb

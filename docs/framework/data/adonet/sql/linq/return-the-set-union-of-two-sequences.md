@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Return the Set Union of Two Sequences"
 title: "Return the Set Union of Two Sequences"
 ms.date: "03/30/2017"
 dev_langs: 

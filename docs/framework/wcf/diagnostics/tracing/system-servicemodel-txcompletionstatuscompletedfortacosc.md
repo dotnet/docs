@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.TxCompletionStatusCompletedForTACOSC"
 title: "System.ServiceModel.TxCompletionStatusCompletedForTACOSC"
 ms.date: "03/30/2017"
 ms.assetid: 089b982d-63a1-4ef2-8ef2-ad83758c9ec4

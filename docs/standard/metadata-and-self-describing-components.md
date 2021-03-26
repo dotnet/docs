@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Metadata and Self-Describing Components"
 title: "Metadata and Self-Describing Components"
 ms.date: "03/30/2017"
 dev_langs:

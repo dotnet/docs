@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Modify XML Data using XPathNavigator"
 title: "Modify XML Data using XPathNavigator"
 ms.date: "03/30/2017"
 dev_langs: 

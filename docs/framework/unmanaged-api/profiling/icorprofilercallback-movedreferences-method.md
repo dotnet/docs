@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::MovedReferences Method"
 title: "ICorProfilerCallback::MovedReferences Method"
 ms.date: "03/30/2017"
 api_name: 

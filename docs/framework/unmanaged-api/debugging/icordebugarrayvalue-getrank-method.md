@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugArrayValue::GetRank Method"
 title: "ICorDebugArrayValue::GetRank Method"
 ms.date: "03/30/2017"
 api_name: 

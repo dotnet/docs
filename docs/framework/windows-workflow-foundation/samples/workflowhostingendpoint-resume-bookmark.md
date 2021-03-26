@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WorkflowHostingEndpoint Resume Bookmark"
 title: "WorkflowHostingEndpoint Resume Bookmark"
 ms.date: "03/30/2017"
 ms.assetid: a708064f-50b0-4751-b44e-d5410d08d451

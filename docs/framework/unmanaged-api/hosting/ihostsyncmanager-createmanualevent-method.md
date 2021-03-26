@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostSyncManager::CreateManualEvent Method"
 title: "IHostSyncManager::CreateManualEvent Method"
 ms.date: "03/30/2017"
 api_name: 

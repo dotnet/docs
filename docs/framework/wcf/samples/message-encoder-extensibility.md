@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message Encoder Extensibility"
 title: "Message Encoder Extensibility"
 ms.date: "03/30/2017"
 ms.assetid: 842cccc5-4e6b-4c69-a28b-a827c6918df5

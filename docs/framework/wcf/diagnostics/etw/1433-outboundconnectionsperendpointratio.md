@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1433 - OutboundConnectionsPerEndpointRatio"
 title: "1433 - OutboundConnectionsPerEndpointRatio"
 ms.date: "03/30/2017"
 ms.assetid: 5f17f20d-7035-45f7-85a6-a6743f77fe70

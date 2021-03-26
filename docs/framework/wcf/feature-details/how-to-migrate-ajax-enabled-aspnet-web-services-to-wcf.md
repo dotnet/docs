@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Migrate AJAX-Enabled ASP.NET Web Services to WCF"
 title: "How to: Migrate AJAX-Enabled ASP.NET Web Services to WCF"
 ms.date: "03/30/2017"
 ms.assetid: 1428df4d-b18f-4e6d-bd4d-79ab3dd5147c

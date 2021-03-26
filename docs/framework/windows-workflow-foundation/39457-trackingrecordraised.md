@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 39457 - TrackingRecordRaised"
 title: "39457 - TrackingRecordRaised"
 ms.date: "03/30/2017"
 ms.assetid: 5a2731d1-c731-4b79-bb69-016cb69ef481

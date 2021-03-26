@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Public member '<membername>' on type '<typename>' not found"
 title: "Public member '<membername>' on type '<typename>' not found"
 ms.date: 07/20/2015
 f1_keywords: 

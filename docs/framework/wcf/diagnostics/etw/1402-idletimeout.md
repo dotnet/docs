@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1402 - IdleTimeout"
 title: "1402 - IdleTimeout"
 ms.date: "03/30/2017"
 ms.assetid: 581233aa-ce1a-49b6-9497-8bff88664036

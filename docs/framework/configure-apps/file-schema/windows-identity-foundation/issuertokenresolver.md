@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <issuerTokenResolver>"
 title: "<issuerTokenResolver>"
 ms.date: "03/30/2017"
 ms.assetid: f74392f6-3f5b-4880-bd8a-3a9130d31e65

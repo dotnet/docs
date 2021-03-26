@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GROUP BY (Entity SQL)"
 title: "GROUP BY (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: cf4f4972-4724-4945-ba44-943a08549139

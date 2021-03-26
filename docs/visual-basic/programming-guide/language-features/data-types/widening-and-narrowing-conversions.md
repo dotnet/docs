@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Widening and Narrowing Conversions (Visual Basic)"
 title: "Widening and Narrowing Conversions"
 ms.date: 07/20/2015
 helpviewer_keywords: 

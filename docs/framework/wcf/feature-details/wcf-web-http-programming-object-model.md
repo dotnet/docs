@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WCF Web HTTP Programming Object Model"
 title: "WCF Web HTTP Programming Object Model"
 ms.date: "03/30/2017"
 ms.assetid: ed96b5fc-ca2c-4b0d-bdba-d06b77c3cb2a

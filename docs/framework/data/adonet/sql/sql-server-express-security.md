@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SQL Server Express Security"
 title: "SQL Server Express Security"
 ms.date: "03/30/2017"
 ms.assetid: cf9cf6d9-4b05-43e9-ac7b-6cefbfcd6d4e

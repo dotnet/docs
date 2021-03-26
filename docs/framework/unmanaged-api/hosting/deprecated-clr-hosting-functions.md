@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Deprecated CLR Hosting Functions"
 title: "Deprecated CLR Hosting Functions"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

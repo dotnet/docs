@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <c> (Visual Basic)"
 title: "<c>"
 ms.date: 07/20/2015
 helpviewer_keywords: 

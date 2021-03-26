@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: String Basics in Visual Basic"
 title: "String Basics"
 ms.date: 07/20/2015
 helpviewer_keywords: 

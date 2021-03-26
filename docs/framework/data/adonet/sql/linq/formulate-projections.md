@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Formulate Projections"
 title: "Formulate Projections"
 ms.date: "03/30/2017"
 dev_langs: 

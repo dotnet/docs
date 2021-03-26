@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.ConnectionPoolLeaseTimeoutReached"
 title: "System.ServiceModel.Channels.ConnectionPoolLeaseTimeoutReached"
 ms.date: "03/30/2017"
 ms.assetid: bba612da-25ab-4051-916a-c0fba1ae6189

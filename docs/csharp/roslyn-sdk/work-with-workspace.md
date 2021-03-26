@@ -19,7 +19,7 @@ The <xref:Microsoft.CodeAnalysis.Workspace> provides access to the current model
 
 You can also create stand-alone workspaces that are disconnected from the host environment or used in an application that has no host environment.
 
-## Solutions, projects, documents
+## Solutions, projects, and documents
 
 Although a workspace may change every time a key is pressed, you can work with the model of the solution in isolation.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugMetaDataLocator::GetMetaData Method"
 title: "ICorDebugMetaDataLocator::GetMetaData Method"
 ms.date: "03/30/2017"
 api_name: 

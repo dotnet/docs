@@ -38,7 +38,7 @@ The following step-by-step tutorials run on Windows, Linux, or macOS, except as 
 
 ## Resources for learning .NET languages
 
-* [Get started with C#](../csharp/getting-started/index.md)
+* [Get started with C#](../csharp/tour-of-csharp/index.md)
 * [Get started with F#](../fsharp/get-started/index.md)
 * [Get started with Visual Basic](../visual-basic/getting-started/index.md)
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IDENTITY_ATTRIBUTE Structure"
 title: "IDENTITY_ATTRIBUTE Structure"
 ms.date: "03/30/2017"
 api_name: 

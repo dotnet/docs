@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Error messages in Visual Basic"
 title: Visual Basic error messages
 titleSuffix: ""
 ms.date: 10/13/2020

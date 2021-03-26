@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Configuring Discovery in a Configuration File"
 title: "Configuring Discovery in a Configuration File"
 ms.date: "03/30/2017"
 ms.assetid: b9884c11-8011-4763-bc2c-c526b80175d0

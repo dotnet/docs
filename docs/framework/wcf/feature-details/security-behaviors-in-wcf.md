@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Security Behaviors in WCF"
 title: "Security Behaviors in WCF"
 ms.date: "03/30/2017"
 ms.assetid: 513232c0-39fd-4409-bda6-5ebd5e0ea7b0

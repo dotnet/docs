@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Bind Data to Windows Presentation Foundation Elements (WCF Data Services)"
 title: "How to: Bind Data to Windows Presentation Foundation Elements (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -10,6 +11,8 @@ helpviewer_keywords:
 ms.assetid: d6538ab0-0abe-426a-b9d9-e6f3a5ca2016
 ---
 # How to: Bind Data to Windows Presentation Foundation Elements (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 With WCF Data Services, you can bind Windows Presentation Foundation (WPF) elements such as a <xref:System.Windows.Controls.ListBox> or <xref:System.Windows.Controls.ComboBox> to an instance of <xref:System.Data.Services.Client.DataServiceCollection%601>, which handles the events raised by the controls to keep the <xref:System.Data.Services.Client.DataServiceContext> synchronized with changes made to data in the controls. For more information, see [Binding Data to Controls](binding-data-to-controls-wcf-data-services.md).  
   

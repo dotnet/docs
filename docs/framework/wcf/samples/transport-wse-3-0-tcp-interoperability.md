@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Transport: WSE 3.0 TCP Interoperability"
 title: "Transport: WSE 3.0 TCP Interoperability"
 ms.date: "03/30/2017"
 ms.assetid: 5f7c3708-acad-4eb3-acb9-d232c77d1486

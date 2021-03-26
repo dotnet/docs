@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: -nowin32manifest (Visual Basic)"
 title: "-nowin32manifest"
 ms.date: 03/13/2018
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.Runtime.Serialization.WriteObjectEnd"
 title: "System.Runtime.Serialization.WriteObjectEnd"
 ms.date: "03/30/2017"
 ms.assetid: 586d2b65-d8eb-4186-9400-40ae4e163161

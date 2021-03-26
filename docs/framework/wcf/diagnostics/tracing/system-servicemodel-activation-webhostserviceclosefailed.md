@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Activation.WebHostServiceCloseFailed"
 title: "System.ServiceModel.Activation.WebHostServiceCloseFailed"
 ms.date: "03/30/2017"
 ms.assetid: 3cab9856-a5cf-4f0e-a0cb-89425e368f8e

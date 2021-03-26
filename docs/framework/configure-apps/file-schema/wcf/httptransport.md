@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <httpTransport>"
 title: "<httpTransport>"
 ms.date: "03/30/2017"
 ms.assetid: 8b30c065-b32a-4fa3-8eb4-5537a9c6b897

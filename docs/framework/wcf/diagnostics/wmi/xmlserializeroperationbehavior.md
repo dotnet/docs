@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XmlSerializerOperationBehavior"
 title: "XmlSerializerOperationBehavior"
 ms.date: "03/30/2017"
 ms.assetid: 8911aa1b-e34b-4161-a3ae-7468d89a6861

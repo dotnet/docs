@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Get WorkflowInstanceId"
 title: "Get WorkflowInstanceId"
 ms.date: "03/30/2017"
 ms.assetid: bd7eea3b-1c28-4b84-9a67-003bc553aa81

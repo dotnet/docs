@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedWriter::GetDebugInfo Method"
 title: "ISymUnmanagedWriter::GetDebugInfo Method"
 ms.date: "03/30/2017"
 api_name: 

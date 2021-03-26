@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Let users resolve ambiguous times"
 title: "How to: Let users resolve ambiguous times"
 ms.date: "04/10/2017"
 helpviewer_keywords: 

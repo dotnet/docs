@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IsFrameworkAssembly Function"
 title: "IsFrameworkAssembly Function"
 ms.date: "03/30/2017"
 api_name: 

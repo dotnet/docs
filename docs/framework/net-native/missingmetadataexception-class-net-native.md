@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MissingMetadataException Class (.NET Native)"
 title: "MissingMetadataException Class (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: 408f25c4-6d60-475c-92b1-7b52b777c6db

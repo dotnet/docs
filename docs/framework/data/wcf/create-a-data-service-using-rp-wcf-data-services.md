@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Data Service Using the Reflection Provider (WCF Data Services)"
 title: "How to: Create a Data Service Using the Reflection Provider (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -9,6 +10,8 @@ helpviewer_keywords:
 ms.assetid: 7315c6d8-f452-4fb2-a0c1-76ab0593c146
 ---
 # How to: Create a Data Service Using the Reflection Provider (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 WCF Data Services enables you to define a data model that is based on arbitrary classes as long as those classes are exposed as objects that implement the <xref:System.Linq.IQueryable%601> interface. For more information, see [Data Services Providers](data-services-providers-wcf-data-services.md).  
   

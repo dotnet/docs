@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::ExceptionCLRCatcherExecute Method"
 title: "ICorProfilerCallback::ExceptionCLRCatcherExecute Method"
 ms.date: "03/30/2017"
 api_name: 

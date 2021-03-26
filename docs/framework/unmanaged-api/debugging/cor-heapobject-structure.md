@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_HEAPOBJECT Structure"
 title: "COR_HEAPOBJECT Structure"
 ms.date: "03/30/2017"
 api_name: 

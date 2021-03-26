@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugSymbolProvider::GetMethodProps Method"
 title: "ICorDebugSymbolProvider::GetMethodProps Method"
 ms.date: "03/30/2017"
 ms.assetid: 8f836b80-b7a5-460b-bf76-5f0e45652aea

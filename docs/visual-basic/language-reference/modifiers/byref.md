@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ByRef (Visual Basic)"
 title: "ByRef"
 ms.date: 07/20/2015
 f1_keywords: 

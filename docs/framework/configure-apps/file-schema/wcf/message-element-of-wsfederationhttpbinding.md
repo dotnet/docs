@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <message> element of <wsFederationHttpBinding>"
 title: "<message> element of <wsFederationHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 9d710389-d9d8-4454-9bf2-da4ccda31cec

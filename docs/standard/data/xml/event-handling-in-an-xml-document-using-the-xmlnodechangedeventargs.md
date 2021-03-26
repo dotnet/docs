@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Event Handling in an XML Document Using the XmlNodeChangedEventArgs"
 title: "Event Handling in an XML Document Using the XmlNodeChangedEventArgs"
 ms.date: "03/30/2017"
 dev_langs: 

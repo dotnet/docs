@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Structures and Classes (Visual Basic)"
 title: "Structures and Classes"
 ms.date: 07/20/2015
 helpviewer_keywords: 

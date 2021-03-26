@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Constructor Design"
 title: "Constructor Design"
 ms.date: "10/22/2008"
 helpviewer_keywords:

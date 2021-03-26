@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <behavior> of <endpointBehaviors>"
 title: "<behavior> of <endpointBehaviors>"
 ms.date: "03/30/2017"
 ms.assetid: b90ca3bc-3c22-4174-b903-e3a39898bd27

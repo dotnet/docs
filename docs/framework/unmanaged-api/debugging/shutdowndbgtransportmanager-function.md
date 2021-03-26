@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ShutdownDbgTransportManager Function"
 title: "ShutdownDbgTransportManager Function"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Serialization and Metadata"
 title: "Serialization and Metadata"
 ms.date: "03/30/2017"
 ms.assetid: 619ecf1c-1ca5-4d66-8934-62fe7aad78c6

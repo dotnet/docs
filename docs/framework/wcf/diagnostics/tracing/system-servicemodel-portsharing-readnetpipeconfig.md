@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.PortSharing.ReadNetPipeConfig"
 title: "System.ServiceModel.PortSharing.ReadNetPipeConfig"
 ms.date: "03/30/2017"
 ms.assetid: a782f971-0195-4bad-a151-55d35656ae86

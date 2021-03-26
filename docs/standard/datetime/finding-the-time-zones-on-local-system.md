@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Finding the time zones defined on a local system"
 title: "Finding the time zones defined on a local system"
 ms.date: "04/10/2017"
 helpviewer_keywords: 

@@ -231,6 +231,9 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 > [!NOTE]
 > To monitor metrics using `dotnet-counters`, it needs to be run as the same user as the user running target process or as root.
 
+> [!NOTE]
+> If you see an error message similar to the following one: `[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`, you are trying to use `dotnet-counters` that has mismatched bitness against the target process. Make sure to download the correct bitness of the tool in the [install](#install) link.
+
 ### Examples
 
 - Monitor all counters from `System.Runtime` at a refresh interval of 3 seconds:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Else Statement (Visual Basic)"
 title: "Else Statement"
 ms.date: 07/20/2015
 f1_keywords: 

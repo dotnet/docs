@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Workflow Transactions"
 title: "Workflow Transactions"
 ms.date: "03/30/2017"
 ms.assetid: 6081fb02-c0f2-483d-97b8-f3b7dc03011d

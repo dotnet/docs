@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: User Name Password Validator"
 title: "User Name Password Validator"
 ms.date: "03/30/2017"
 ms.assetid: 42f03841-286b-42d8-ba58-18c75422bc8e

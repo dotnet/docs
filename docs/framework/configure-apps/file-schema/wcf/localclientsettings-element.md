@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <localClientSettings> element"
 title: "<localClientSettings> element"
 ms.date: "03/30/2017"
 ms.assetid: 4680ace5-f4e1-4fcb-b9d8-a4a4af5cd7ae

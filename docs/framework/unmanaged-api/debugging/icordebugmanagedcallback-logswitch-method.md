@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugManagedCallback::LogSwitch Method"
 title: "ICorDebugManagedCallback::LogSwitch Method"
 ms.date: "03/30/2017"
 api_name: 

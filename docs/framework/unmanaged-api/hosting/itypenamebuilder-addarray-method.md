@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ITypeNameBuilder::AddArray Method"
 title: "ITypeNameBuilder::AddArray Method"
 ms.date: "03/30/2017"
 api_name: 

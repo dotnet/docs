@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Querying the Data Service (WCF Data Services)"
 title: "Querying the Data Service (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs:
@@ -11,6 +12,8 @@ helpviewer_keywords:
 ms.assetid: 823e9444-27aa-4f1f-be8e-0486d67f54c0
 ---
 # Querying the Data Service (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 The WCF Data Services client library enables you to execute queries against a data service by using familiar .NET Framework programming patterns, including using language integrated query (LINQ). The client library translates a query, which is defined on the client as an instance of the <xref:System.Data.Services.Client.DataServiceQuery%601> class, into an HTTP GET request message. The library receives the response message and translates it into instances of client data service classes. These classes are tracked by the <xref:System.Data.Services.Client.DataServiceContext> to which the <xref:System.Data.Services.Client.DataServiceQuery%601> belongs.
 

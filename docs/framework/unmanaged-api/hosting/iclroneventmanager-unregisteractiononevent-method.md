@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLROnEventManager::UnregisterActionOnEvent Method"
 title: "ICLROnEventManager::UnregisterActionOnEvent Method"
 ms.date: "03/30/2017"
 api_name: 

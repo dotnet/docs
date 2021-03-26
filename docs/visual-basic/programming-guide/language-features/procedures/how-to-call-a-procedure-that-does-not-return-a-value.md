@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Call a Procedure that Does Not Return a Value (Visual Basic)"
 title: "How to: Call a Procedure that Does Not Return a Value"
 ms.date: 07/20/2015
 helpviewer_keywords: 

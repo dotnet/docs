@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Too many DLL application clients"
 title: "Too many DLL application clients"
 ms.date: 07/20/2015
 f1_keywords: 

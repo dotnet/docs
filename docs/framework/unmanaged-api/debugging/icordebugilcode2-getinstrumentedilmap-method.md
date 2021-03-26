@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugILCode2::GetInstrumentedILMap Method"
 title: "ICorDebugILCode2::GetInstrumentedILMap Method"
 ms.date: "03/30/2017"
 dev_langs: 

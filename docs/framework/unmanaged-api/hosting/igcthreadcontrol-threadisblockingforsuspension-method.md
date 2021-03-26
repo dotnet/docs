@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IGCThreadControl::ThreadIsBlockingForSuspension Method"
 title: "IGCThreadControl::ThreadIsBlockingForSuspension Method"
 ms.date: "03/30/2017"
 api_name: 

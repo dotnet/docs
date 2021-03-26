@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Introduction to LINQ in Visual Basic"
 title: "Introduction to LINQ"
 ms.date: 08/28/2018
 helpviewer_keywords: 

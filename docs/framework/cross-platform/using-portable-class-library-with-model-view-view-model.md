@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Portable Class Library with Model-View-View Model"
 title: "Using Portable Class Library with Model-View-View Model"
 ms.date: "07/18/2018"
 dev_langs:

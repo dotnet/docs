@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: -win32resource"
 title: "-win32resource"
 ms.date: 03/13/2018
 f1_keywords: 

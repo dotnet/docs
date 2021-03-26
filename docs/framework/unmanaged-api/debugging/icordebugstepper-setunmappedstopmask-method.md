@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugStepper::SetUnmappedStopMask Method"
 title: "ICorDebugStepper::SetUnmappedStopMask Method"
 ms.date: "03/30/2017"
 api_name: 

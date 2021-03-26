@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4024 - WasCloseAllListenerChannelInstancesFailed"
 title: "4024 - WasCloseAllListenerChannelInstancesFailed"
 ms.date: "03/30/2017"
 ms.assetid: 73f0dc73-f0b7-4c13-8328-9fdc262009ec

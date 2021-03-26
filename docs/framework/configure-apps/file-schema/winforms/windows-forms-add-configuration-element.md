@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Forms Add Configuration Element"
 title: "Windows Forms Add Configuration Element"
 ms.date: "04/07/2017"
 helpviewer_keywords:

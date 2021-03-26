@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugModule2::SetJITCompilerFlags Method"
 title: "ICorDebugModule2::SetJITCompilerFlags Method"
 ms.date: "03/30/2017"
 api_name: 

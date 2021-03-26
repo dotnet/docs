@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Map key XML Schema (XSD) Constraints to DataSet Constraints"
 title: "Map key XML Schema (XSD) Constraints to DataSet Constraints"
 ms.date: "03/30/2017"
 ms.assetid: 22664196-f270-4ebc-a169-70e16a83dfa1

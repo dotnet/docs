@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ReliableSessionBindingElement"
 title: "ReliableSessionBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: effda125-b8d3-4de6-8c0e-f59f5ea8f6eb

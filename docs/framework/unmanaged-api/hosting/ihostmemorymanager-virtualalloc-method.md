@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostMemoryManager::VirtualAlloc Method"
 title: "IHostMemoryManager::VirtualAlloc Method"
 ms.date: "03/30/2017"
 api_name: 

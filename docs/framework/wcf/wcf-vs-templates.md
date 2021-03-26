@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WCF Visual Studio Templates"
 title: "WCF Visual Studio Templates"
 ms.date: "03/30/2017"
 ms.assetid: 6a608575-3535-4190-89da-911e24c8374f

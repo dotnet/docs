@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: EMemoryAvailable Enumeration"
 title: "EMemoryAvailable Enumeration"
 ms.date: "03/30/2017"
 api_name: 

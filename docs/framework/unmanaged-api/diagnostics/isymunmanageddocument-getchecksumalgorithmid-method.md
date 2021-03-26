@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedDocument::GetCheckSumAlgorithmId Method"
 title: "ISymUnmanagedDocument::GetCheckSumAlgorithmId Method"
 ms.date: "03/30/2017"
 api_name: 

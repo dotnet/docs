@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CASE (Entity SQL)"
 title: "CASE (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 26a47873-e87d-4ba2-9e2c-3787c21efe89

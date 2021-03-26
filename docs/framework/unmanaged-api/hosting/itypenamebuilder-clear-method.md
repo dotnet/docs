@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ITypeNameBuilder::Clear Method"
 title: "ITypeNameBuilder::Clear Method"
 ms.date: "03/30/2017"
 api_name: 

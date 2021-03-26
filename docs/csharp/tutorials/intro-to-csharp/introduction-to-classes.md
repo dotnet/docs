@@ -6,7 +6,11 @@ ms.custom: mvc
 ---
 # Explore object oriented programming with classes and objects
 
-This tutorial expects that you have a machine you can use for development. The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting up your local development environment on Windows, Linux, or macOS. A quick overview of the commands you'll use is in the [Become familiar with the development tools](local-environment.md) with links to more details.
+In this tutorial, you'll build a console application and see the basic object-oriented features that are part of the C# language.
+
+## Prerequisites
+
+The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI to create, build, and run applications. On Windows, you can use Visual Studio 2019. For setup instructions, see [Set up your local environment](../../tour-of-csharp/tutorials/local-environment.md).
 
 ## Create your application
 
@@ -204,7 +208,7 @@ Run your program to see the results.
 
 ## Next steps
 
-If you got stuck, you can see the source for this tutorial [in our GitHub repo](https://github.com/dotnet/docs/tree/master/docs/csharp/tutorials/intro-to-csharp/snippets/introduction-to-classes).
+If you got stuck, you can see the source for this tutorial [in our GitHub repo](https://github.com/dotnet/docs/tree/main/docs/csharp/tutorials/intro-to-csharp/snippets/introduction-to-classes).
 
 You can continue with the [object oriented programming](object-oriented-programming.md) tutorial.
 

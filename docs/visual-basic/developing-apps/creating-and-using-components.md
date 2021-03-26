@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating and Using Components in Visual Basic"
 title: "Creating and Using Components"
 ms.date: 07/20/2015
 helpviewer_keywords: 

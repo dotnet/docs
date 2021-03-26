@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ComIntegration.ComIntegrationInstanceCreationSuccess"
 title: "System.ServiceModel.ComIntegration.ComIntegrationInstanceCreationSuccess"
 ms.date: "03/30/2017"
 ms.assetid: fac5288a-139b-4cb1-8931-d2a153a19971

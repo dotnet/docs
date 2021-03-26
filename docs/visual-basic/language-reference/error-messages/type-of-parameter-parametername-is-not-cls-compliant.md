@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC40028: Type of parameter '<parametername>' is not CLS-compliant"
 title: "Type of parameter '<parametername>' is not CLS-compliant"
 ms.date: 07/20/2015
 f1_keywords:

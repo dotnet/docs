@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Database Access Activities"
 title: "Database Access Activities"
 ms.date: "03/30/2017"
 ms.assetid: 174a381e-1343-46a8-a62c-7c2ae2c4f0b2

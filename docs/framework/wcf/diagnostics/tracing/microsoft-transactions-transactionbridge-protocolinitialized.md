@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft.Transactions.TransactionBridge.ProtocolInitialized"
 title: "Microsoft.Transactions.TransactionBridge.ProtocolInitialized"
 ms.date: "03/30/2017"
 ms.assetid: 166dfa2d-10de-447a-b76f-3b64752a2967

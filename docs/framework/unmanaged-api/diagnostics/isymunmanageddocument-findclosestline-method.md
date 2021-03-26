@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedDocument::FindClosestLine Method"
 title: "ISymUnmanagedDocument::FindClosestLine Method"
 ms.date: "03/30/2017"
 api_name: 

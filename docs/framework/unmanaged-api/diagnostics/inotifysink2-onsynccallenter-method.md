@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: INotifySink2::OnSyncCallEnter Method"
 title: "INotifySink2::OnSyncCallEnter Method"
 ms.date: "03/30/2017"
 api_name: 

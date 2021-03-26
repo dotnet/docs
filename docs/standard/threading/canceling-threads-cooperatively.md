@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Canceling threads cooperatively"
 title: "Canceling threads cooperatively"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC40008: '<elementname>' is obsolete (Visual Basic Warning)"
 title: "'<elementname>' is obsolete (Visual Basic Warning)"
 ms.date: 07/20/2015
 f1_keywords:

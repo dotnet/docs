@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 201 - ClientMessageInspectorAfterReceiveInvoked"
 title: "201 - ClientMessageInspectorAfterReceiveInvoked"
 ms.date: "03/30/2017"
 ms.assetid: 9ff637f1-cc26-4400-ab9b-546f70e5057d

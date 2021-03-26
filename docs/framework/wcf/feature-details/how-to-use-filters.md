@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How To: Use Filters"
 title: "How To: Use Filters"
 ms.date: "03/30/2017"
 ms.assetid: f2c7255f-c376-460e-aa20-14071f1666e5

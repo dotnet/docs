@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Potential pitfalls with PLINQ"
 title: "Potential pitfalls with PLINQ"
 ms.date: "03/30/2017"
 dev_langs:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CoInitializeEE Function"
 title: "CoInitializeEE Function"
 ms.date: "03/30/2017"
 api_name: 

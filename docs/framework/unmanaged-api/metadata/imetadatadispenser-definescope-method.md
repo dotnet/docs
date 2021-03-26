@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataDispenser::DefineScope Method"
 title: "IMetaDataDispenser::DefineScope Method"
 ms.date: "03/30/2017"
 api_name: 

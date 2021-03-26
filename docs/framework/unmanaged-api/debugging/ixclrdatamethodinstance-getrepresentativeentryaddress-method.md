@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IXCLRDataMethodInstance::GetRepresentativeEntryAddress Method"
 title: "IXCLRDataMethodInstance::GetRepresentativeEntryAddress Method"
 ms.date: "02/01/2019"
 api.name:

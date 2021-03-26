@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using and Creating Activities"
 title: "Using and Creating Activities"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

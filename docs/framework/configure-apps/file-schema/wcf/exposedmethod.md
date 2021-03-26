@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <exposedMethod>"
 title: "<exposedMethod>"
 ms.date: "03/30/2017"
 ms.assetid: 61c938cd-4ee9-4b06-ab28-922ef491ab11

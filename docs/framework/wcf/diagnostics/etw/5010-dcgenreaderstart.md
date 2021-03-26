@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 5010 - DCGenReaderStart"
 title: "5010 - DCGenReaderStart"
 ms.date: "03/30/2017"
 ms.assetid: 199ff3ce-b811-4151-a9c2-e726c109e87b

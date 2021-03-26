@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Collection Object Summary (Visual Basic)"
 title: "Collection Object Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 

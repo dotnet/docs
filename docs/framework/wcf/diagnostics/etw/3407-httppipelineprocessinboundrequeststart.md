@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3407 - HttpPipelineProcessInboundRequestStart"
 title: "3407 - HttpPipelineProcessInboundRequestStart"
 ms.date: "03/30/2017"
 ms.assetid: f9cc34e8-f4e1-43c8-823f-6186ee5e676f

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <inheritdoc> (C# Programming Guide)"
 title: "<inheritdoc> - C# Programming Guide"
 ms.date: 01/21/2020
 f1_keywords: 

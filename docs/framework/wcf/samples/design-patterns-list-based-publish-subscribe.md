@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Design Patterns: List-Based Publish-Subscribe"
 title: "Design Patterns: List-Based Publish-Subscribe"
 ms.date: "03/30/2017"
 ms.assetid: f4257abc-12df-4736-a03b-0731becf0fd4

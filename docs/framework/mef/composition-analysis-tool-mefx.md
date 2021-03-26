@@ -124,11 +124,11 @@ from: ClassLibrary1.ChainOne from: AssemblyCatalog (Assembly="ClassLibrary1, Ver
   
 <a name="white_lists"></a>
 
-## White Lists  
+## Allow lists
 
- The `/whitelist` option enables you to specify a text file that lists parts that are expected to be rejected. Unexpected rejections will then be flagged. This can be useful when you analyze an incomplete library, or a sub-library that is missing some dependencies. The `/whitelist` option can be applied to the `/rejected` or `/causes` actions.  
+ The `/whitelist` option enables you to specify a text file that lists parts that are expected to be rejected. Unexpected rejections will then be flagged. This can be useful when you analyze an incomplete library, or a sublibrary that's missing some dependencies. The `/whitelist` option can be applied to the `/rejected` or `/causes` actions.  
   
- Consider a file named test.txt that contains the text "ClassLibrary1.ChainOne". If you run the `/rejected` action with the `/whitelist` option on the previous example, it will produce the following output:  
+ Consider a file named test.txt that contains the text "ClassLibrary1.ChainOne". If you run the `/rejected` action with the `/whitelist` option on the previous example, it produces the following output:  
   
 ```console
 mefx /file:ClassLibrary1.dll /rejected /whitelist:test.txt  

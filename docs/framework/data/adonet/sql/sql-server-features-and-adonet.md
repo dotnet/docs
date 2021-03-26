@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SQL Server Features and ADO.NET"
 title: "SQL Server Features and ADO.NET"
 titleSuffix: ""
 ms.date: "03/30/2017"

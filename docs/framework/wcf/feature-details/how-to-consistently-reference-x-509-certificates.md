@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Consistently Reference X.509 Certificates"
 title: "How to: Consistently Reference X.509 Certificates"
 ms.date: "03/30/2017"
 dev_langs: 

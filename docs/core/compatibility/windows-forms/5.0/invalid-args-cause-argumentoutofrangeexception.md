@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: WinForms properties now throw ArgumentOutOfRangeException"
-description: Learn about the breaking change in .NET 5.0 where Some Windows Forms properties now throw an ArgumentOutOfRangeException for invalid arguments.
+description: Learn about the breaking change in .NET 5 where Some Windows Forms properties now throw an ArgumentOutOfRangeException for invalid arguments.
 ms.date: 06/18/2020
 ---
 # WinForms properties now throw ArgumentOutOfRangeException
@@ -9,7 +9,7 @@ Some Windows Forms properties now throw an <xref:System.ArgumentOutOfRangeExcept
 
 ## Change description
 
-Previously, these properties threw various exceptions, such as <xref:System.NullReferenceException>, <xref:System.IndexOutOfRangeException>, or <xref:System.ArgumentException>, when passed out-of-range arguments. Starting in .NET 5.0, these properties now throw an <xref:System.ArgumentOutOfRangeException> when passed arguments that are out of range.
+Previously, these properties threw various exceptions, such as <xref:System.NullReferenceException>, <xref:System.IndexOutOfRangeException>, or <xref:System.ArgumentException>, when passed out-of-range arguments. Starting in .NET 5, these properties now throw an <xref:System.ArgumentOutOfRangeException> when passed arguments that are out of range.
 
 Throwing an <xref:System.ArgumentOutOfRangeException> conforms to the behavior of the .NET runtime. It also improves the debugging experience by clearly communicating which argument is invalid.
 

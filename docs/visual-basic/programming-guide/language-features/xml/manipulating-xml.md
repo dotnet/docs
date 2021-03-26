@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Manipulating XML in Visual Basic"
 title: "Manipulating XML"
 ms.date: 07/20/2015
 helpviewer_keywords: 

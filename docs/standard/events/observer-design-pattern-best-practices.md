@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Observer Design Pattern Best Practices"
 title: "Observer Design Pattern Best Practices"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

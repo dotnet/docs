@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Authenticode (Unmanaged API Reference)"
 title: "Authenticode (Unmanaged API Reference)"
 ms.date: "03/30/2017"
 ms.assetid: 7e8cc303-6e77-4116-aa8b-7ea297a3a467
@@ -35,6 +36,10 @@ Supports the Authenticode XrML license creation and verification module.
   
  [AXL_AUTHENTICODE_TIMESTAMPER_INFO Structure](axl-authenticode-timestamper-info-structure.md)  
  Defines the Authenticode time stamper information.  
+
+## Requirements
+
+**Library**: clr.dll
   
 ## See also
 

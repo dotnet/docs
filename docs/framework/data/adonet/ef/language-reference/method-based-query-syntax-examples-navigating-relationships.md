@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Method-Based Query Syntax Examples: Navigating Relationships"
 title: "Method-Based Query Syntax Examples: Navigating Relationships"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating Application Roles in SQL Server"
 title: "Creating Application Roles in SQL Server"
 ms.date: "03/30/2017"
 ms.assetid: 27442435-dfb2-4062-8c59-e2960833a638

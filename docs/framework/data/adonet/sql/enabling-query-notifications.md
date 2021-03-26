@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Enabling Query Notifications"
 title: "Enabling Query Notifications"
 ms.date: "03/30/2017"
 dev_langs: 

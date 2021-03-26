@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo7 Interface"
 title: "ICorProfilerInfo7 Interface"
 ms.date: "03/30/2017"
 ms.assetid: cf37c462-73c5-412a-a7f8-bb26ca746313

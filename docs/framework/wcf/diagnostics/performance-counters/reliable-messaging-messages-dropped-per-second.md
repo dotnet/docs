@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reliable Messaging Messages Dropped Per Second"
 title: "Reliable Messaging Messages Dropped Per Second"
 ms.date: "03/30/2017"
 ms.assetid: a11b0b80-b242-48e1-b0bb-7f756db5486b

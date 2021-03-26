@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedWriter::SetMethodSourceRange Method"
 title: "ISymUnmanagedWriter::SetMethodSourceRange Method"
 ms.date: "03/30/2017"
 api_name: 

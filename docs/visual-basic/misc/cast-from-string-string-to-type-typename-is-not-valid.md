@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cast from string &quot;<string>&quot; to type '<typename>' is not valid"
 title: "Cast from string &quot;<string>&quot; to type '<typename>' is not valid"
 ms.date: 07/20/2015
 f1_keywords: 

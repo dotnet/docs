@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: My.Computer.Mouse Object"
 title: "My.Computer.Mouse Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 

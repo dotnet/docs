@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Custom Credential and Credential Validation"
 title: "Custom Credential and Credential Validation"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

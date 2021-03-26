@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NetTCPBinding"
 title: "NetTCPBinding"
 ms.date: "03/30/2017"
 ms.assetid: 1690b42f-acfd-4bb3-8f0d-0b17cd5ca36c

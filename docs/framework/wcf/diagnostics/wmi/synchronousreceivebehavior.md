@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SynchronousReceiveBehavior"
 title: "SynchronousReceiveBehavior"
 ms.date: "03/30/2017"
 ms.assetid: b31a26a9-ae96-4df0-8406-e07d6f59087c

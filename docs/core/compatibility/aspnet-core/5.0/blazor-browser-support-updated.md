@@ -4,6 +4,7 @@ description: "Learn about the breaking change in ASP.NET Core 5.0 titled Blazor:
 author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
+no-loc: [Blazor, "Blazor WebAssembly", "Blazor Server"]
 ---
 # Blazor: Updated browser support
 

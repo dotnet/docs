@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Service Versioning (WCF Data Services)"
 title: "Data Service Versioning (WCF Data Services)"
 ms.date: "03/30/2017"
 helpviewer_keywords:
@@ -8,6 +9,8 @@ helpviewer_keywords:
 ms.assetid: e3e899cc-7f25-4f67-958f-063f01f79766
 ---
 # Data Service Versioning (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 The Open Data Protocol (OData) enables you to create data services so that clients can access data as resources using URIs that are based on a data model. OData also supports the definition of service operations. After initial deployment, and potentially several times during their lifetime, these data services may need to be changed for a variety of reasons, such as changing business needs, information technology requirements, or to address other issues. When you make changes to an existing data service, you must consider whether to define a new version of your data service and how best to minimize the impact on existing client applications. This topic provides guidance on when and how to create a new version of a data service. It also describes how WCF Data Services handles an exchange between clients and data services that support different versions of the OData protocol.
 

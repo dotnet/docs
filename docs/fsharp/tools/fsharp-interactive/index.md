@@ -85,7 +85,7 @@ F# scripting is natively supported in [Visual Studio](../../get-started/get-star
 ## Referencing packages in F# Interactive
 
 > [!NOTE]
-> Package management system is extensible, read more [about other extensions](https://github.com/dotnet/fsharp/tree/main/src/fsharp/Microsoft.DotNet.DependencyManager).
+> Package management system is extensible, read more [about other extensions](https://fsharp.github.io/FSharp.Compiler.Service/reference/Microsoft.DotNet.DependencyManager.html).
 
 F# Interactive supports referencing NuGet packages with the `#r "nuget:"` syntax and an optional version:
 
@@ -120,7 +120,7 @@ printfn $"{f (dsharp.tensor 1.2)}"
 You can also specify a package source with the `#i` command. The following example specifies a remote and a local source:
 
 ```fsharp
-#i "nuget:https://my-remote-package-source/index.json
+#i "nuget:https://my-remote-package-source/index.json"
 #i @"path-to-my-local-source"
 ```
 
@@ -131,7 +131,7 @@ You can specify as many package references as you like in a script.
 > [!NOTE]
 > There's currently a limitation for scripts that use framework references (e.g.`Microsoft.NET.Sdk.Web` or  `Microsoft.NET.Sdk.WindowsDesktop`). Packages like Saturn, Giraffe, WinForms are not available. This is being tracked in issue [#9417](https://github.com/dotnet/fsharp/issues/9417).
 
-For more information, see [package management extensibility and other extensions](https://github.com/dotnet/fsharp/tree/main/src/fsharp/Microsoft.DotNet.DependencyManager).
+For more information, see [package management extensibility and other extensions](https://fsharp.github.io/FSharp.Compiler.Service/reference/Microsoft.DotNet.DependencyManager.html).
 
 ## Referencing assemblies on disk with F# interactive
 
@@ -162,7 +162,7 @@ You can specify as many assembly references as you like in a script.
 
 ## Loading other scripts
 
-When scripting, it can often be helpful to use different scripts for different tasks. Sometimes you may want to reuse code from on script in another. Rather than copy-pasting its contents into your file, you can simple load and evaluate it with `#load`.
+When scripting, it can often be helpful to use different scripts for different tasks. Sometimes you may want to reuse code from one script in another. Rather than copy-pasting its contents into your file, you can simply load and evaluate it with `#load`.
 
 Consider the following `Script1.fsx`:
 

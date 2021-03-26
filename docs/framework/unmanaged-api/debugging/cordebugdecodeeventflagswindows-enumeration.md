@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorDebugDecodeEventFlagsWindows Enumeration"
 title: "CorDebugDecodeEventFlagsWindows Enumeration"
 ms.date: "03/30/2017"
 api_name: 

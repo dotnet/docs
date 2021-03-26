@@ -2,7 +2,7 @@
 title: Service-to-service communication
 description: Learn how back-end cloud-native microservices communicate with other back-end microservices.
 author: robvet
-ms.date: 05/13/2020
+ms.date: 01/19/2021
 ---
 
 # Service-to-service communication
@@ -25,7 +25,7 @@ Microservice systems typically use a combination of these interaction types when
 
 ## Queries
 
-Many times, one microservice might need to *query* another, requiring an immediate response to complete an operation. A shopping basket microservice may need product information and a price to add an item to its basket. There are a number of approaches for implementing query operations.
+Many times, one microservice might need to *query* another, requiring an immediate response to complete an operation. A shopping basket microservice may need product information and a price to add an item to its basket. There are many approaches for implementing query operations.
 
 ### Request/Response Messaging
 

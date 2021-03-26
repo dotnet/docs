@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.Runtime.Serialization.ElementIgnored"
 title: "System.Runtime.Serialization.ElementIgnored"
 ms.date: "03/30/2017"
 ms.assetid: 795fc64f-07af-4b88-9256-1b154d2b209d

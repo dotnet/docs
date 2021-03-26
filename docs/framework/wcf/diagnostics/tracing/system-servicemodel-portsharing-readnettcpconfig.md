@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.PortSharing.ReadNetTcpConfig"
 title: "System.ServiceModel.PortSharing.ReadNetTcpConfig"
 ms.date: "03/30/2017"
 ms.assetid: c0d3350f-9d70-4529-a958-eb56a277e401

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3365 - SharedListenerProxyRegisterStop"
 title: "3365 - SharedListenerProxyRegisterStop"
 ms.date: "03/30/2017"
 ms.assetid: a74173b3-13e8-41b0-9753-8eaef9b71b90

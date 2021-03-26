@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo::GetModuleMetaData Method"
 title: "ICorProfilerInfo::GetModuleMetaData Method"
 ms.date: "03/30/2017"
 api_name: 

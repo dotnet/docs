@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: App Resources for Libraries That Target Multiple Platforms"
 title: "App Resources for Libraries That Target Multiple Platforms"
 ms.date: "07/18/2018"
 dev_langs:

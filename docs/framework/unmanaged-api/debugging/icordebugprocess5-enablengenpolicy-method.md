@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess5::EnableNGENPolicy Method"
 title: "ICorDebugProcess5::EnableNGENPolicy Method"
 ms.date: "03/30/2017"
 api_name: 

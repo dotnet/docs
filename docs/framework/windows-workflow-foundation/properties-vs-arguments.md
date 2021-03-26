@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Properties vs. Arguments"
 title: "Properties vs. Arguments"
 ms.date: "03/30/2017"
 ms.assetid: 14651389-4a49-4cbb-9ddf-c83fdc155df1

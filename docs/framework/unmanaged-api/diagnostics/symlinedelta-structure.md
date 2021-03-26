@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SYMLINEDELTA Structure"
 title: "SYMLINEDELTA Structure"
 ms.date: "03/30/2017"
 api_name: 

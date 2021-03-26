@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IXCLRDataProcess::GetAppDomainByUniqueId Method"
 title: "IXCLRDataProcess::GetAppDomainByUniqueId Method"
 ms.date: "01/16/2019"
 api.name:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <appSettings> element for <configuration>"
 title: "<appSettings> element for <configuration>"
 ms.date: "05/01/2017"
 f1_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Miscellaneous Data Types (Visual Basic)"
 title: "Miscellaneous Data Types"
 ms.date: 07/20/2015
 helpviewer_keywords: 

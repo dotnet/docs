@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::GetNativeCallConvFromSig Method"
 title: "IMetaDataImport::GetNativeCallConvFromSig Method"
 ms.date: "03/30/2017"
 api_name: 

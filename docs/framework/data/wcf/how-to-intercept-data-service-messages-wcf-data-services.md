@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Intercept Data Service Messages (WCF Data Services)"
 title: "How to: Intercept Data Service Messages (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -10,6 +11,8 @@ helpviewer_keywords:
 ms.assetid: 24b9df1b-b54b-4795-a033-edf333675de6
 ---
 # How to: Intercept Data Service Messages (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 With WCF Data Services, you can intercept request messages so that you can add custom logic to an operation. To intercept a message, you use specially attributed methods in the data service. For more information, see [Interceptors](interceptors-wcf-data-services.md).  
   

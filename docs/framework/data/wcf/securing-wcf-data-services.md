@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Securing WCF Data Services"
 title: "Securing WCF Data Services"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -10,6 +11,8 @@ helpviewer_keywords:
 ms.assetid: 99fc2baa-a040-4549-bc4d-f683d60298af
 ---
 # Securing WCF Data Services
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 This article describes security considerations that are specific to developing, deploying, and running WCF Data Services and applications that access services that support the Open Data Protocol (OData). You should also follow recommendations for creating secure .NET Framework applications.  
   

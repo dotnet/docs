@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Copying DataSet Contents"
 title: "Copying DataSet Contents"
 ms.date: "03/30/2017"
 dev_langs: 

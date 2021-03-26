@@ -83,6 +83,25 @@ sudo snap alias dotnet-runtime-50.dotnet dotnet
 
 The command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-runtime-50.dotnet dotnet50`. When you use the command `dotnet50`, you'll invoke a specific version of .NET. But choosing a different alias is incompatible with most tutorials and examples as they expect a `dotnet` command to be available.
 
+## Export the install location
+
+The `DOTNET_ROOT` environment variable is often used by tools to determine where .NET is installed. When .NET is installed through Snap, this environment variable isn't configured. You should configure the *DOTNET_ROOT* environment variable in your profile. The path to the snap uses the following format: `/snap/{package}/current`. For example, if you installed the `dotnet-sdk` snap, use the following command to set the environment variable to where .NET is located:
+
+```bash
+export DOTNET_ROOT=/snap/dotnet-sdk/current
+```
+
+> [!TIP]
+> The preceding `export` command only sets the environment variable for the terminal session in which it was run.
+>
+> You can edit your shell profile to permanently add the commands. There are a number of different shells available for Linux and each has a different profile. For example:
+>
+> - **Bash Shell**: *~/.bash_profile*, *~/.bashrc*
+> - **Korn Shell**: *~/.kshrc* or *.profile*
+> - **Z Shell**: *~/.zshrc* or *.zprofile*
+>
+> Edit the appropriate source file for your shell and add `export DOTNET_ROOT=/snap/dotnet-sdk/current`.
+
 ## TLS/SSL Certificate errors
 
 When .NET is installed through Snap, it's possible that on some distros the .NET TLS/SSL certificates may not be found and you may receive an error during `restore`:

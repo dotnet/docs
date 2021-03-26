@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRTask::Reset Method"
 title: "ICLRTask::Reset Method"
 ms.date: "03/30/2017"
 api_name: 

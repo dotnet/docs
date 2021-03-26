@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Activation.MessageQueueClosed"
 title: "System.ServiceModel.Activation.MessageQueueClosed"
 ms.date: "03/30/2017"
 ms.assetid: 92c40c72-4f0d-4d8a-bde0-1731aaaeaf89

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::ExceptionOSHandlerEnter Method"
 title: "ICorProfilerCallback::ExceptionOSHandlerEnter Method"
 ms.date: "03/30/2017"
 api_name: 

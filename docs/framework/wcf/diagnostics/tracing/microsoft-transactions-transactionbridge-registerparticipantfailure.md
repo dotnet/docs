@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft.Transactions.TransactionBridge.RegisterParticipantFailure"
 title: "Microsoft.Transactions.TransactionBridge.RegisterParticipantFailure"
 ms.date: "03/30/2017"
 ms.assetid: 3a4ead79-8550-4037-84e3-fd70ff56e001

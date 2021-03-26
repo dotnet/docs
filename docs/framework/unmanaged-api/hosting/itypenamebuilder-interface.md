@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ITypeNameBuilder Interface"
 title: "ITypeNameBuilder Interface"
 ms.date: "03/30/2017"
 api_name: 

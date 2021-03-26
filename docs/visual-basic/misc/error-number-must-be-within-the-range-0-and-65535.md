@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Error number must be within the range 0 and 65535"
 title: "Error number must be within the range 0 and 65535"
 ms.date: 07/20/2015
 f1_keywords: 

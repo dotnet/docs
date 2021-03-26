@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugEval2::NewParameterizedObject Method"
 title: "ICorDebugEval2::NewParameterizedObject Method"
 ms.date: "03/30/2017"
 api_name: 

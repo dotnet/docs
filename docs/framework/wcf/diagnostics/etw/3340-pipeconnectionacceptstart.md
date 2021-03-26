@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3340 - PipeConnectionAcceptStart"
 title: "3340 - PipeConnectionAcceptStart"
 ms.date: "03/30/2017"
 ms.assetid: c18d0db8-6f44-42ab-b297-5e0209789e5c

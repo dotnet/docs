@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Register a Custom Protocol Using WebRequest"
 title: "How to: Register a Custom Protocol Using WebRequest"
 ms.date: "03/30/2017"
 dev_langs: 

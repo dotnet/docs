@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Membership and Role Provider"
 title: "Membership and Role Provider"
 ms.date: "03/30/2017"
 ms.assetid: 0d11a31c-e75f-4fcf-9cf4-b7f26e056bcd

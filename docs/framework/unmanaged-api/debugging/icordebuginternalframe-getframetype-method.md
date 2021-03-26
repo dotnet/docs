@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugInternalFrame::GetFrameType Method"
 title: "ICorDebugInternalFrame::GetFrameType Method"
 ms.date: "03/30/2017"
 api_name: 

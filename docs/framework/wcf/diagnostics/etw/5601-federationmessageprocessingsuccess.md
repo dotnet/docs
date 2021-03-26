@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 5601 - FederationMessageProcessingSuccess"
 title: "5601 - FederationMessageProcessingSuccess"
 ms.date: "03/30/2017"
 ms.assetid: 767591c3-2674-4d7e-a61b-e76da3b159ae

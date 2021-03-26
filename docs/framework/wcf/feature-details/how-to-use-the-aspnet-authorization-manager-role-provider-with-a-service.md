@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use the ASP.NET Authorization Manager Role Provider with a Service"
 title: "How to: Use the ASP.NET Authorization Manager Role Provider with a Service"
 ms.date: "03/30/2017"
 ms.assetid: f21deb81-91ef-49ef-94d6-494785143271

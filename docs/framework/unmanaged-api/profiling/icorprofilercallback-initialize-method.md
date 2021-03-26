@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::Initialize Method"
 title: "ICorProfilerCallback::Initialize Method"
 ms.date: "03/30/2017"
 api_name: 
@@ -29,9 +30,8 @@ HRESULT Initialize(
   
 ## Parameters
 
-- `pICorProfilerInfoUnk`
-
-  \[in] Pointer to an [IUnknown](/cpp/atl/iunknown) interface that the profiler must query for an [ICorProfilerInfo](icorprofilerinfo-interface.md) interface pointer.  
+`pICorProfilerInfoUnk`
+[in] Pointer to an [IUnknown](/cpp/atl/iunknown) interface that the profiler must query for an [ICorProfilerInfo](icorprofilerinfo-interface.md) interface pointer.  
 
 ## Remarks  
 

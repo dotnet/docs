@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRDataEnumMemoryRegions::EnumMemoryRegions Method"
 title: "ICLRDataEnumMemoryRegions::EnumMemoryRegions Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30205: End of statement expected"
 title: "End of statement expected"
 ms.date: 07/20/2015
 f1_keywords:

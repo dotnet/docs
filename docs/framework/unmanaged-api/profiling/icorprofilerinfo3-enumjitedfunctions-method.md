@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo3::EnumJITedFunctions Method"
 title: "ICorProfilerInfo3::EnumJITedFunctions Method"
 ms.date: "03/30/2017"
 api_name: 

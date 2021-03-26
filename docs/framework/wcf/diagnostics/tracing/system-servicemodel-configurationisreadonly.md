@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ConfigurationIsReadOnly"
 title: "System.ServiceModel.ConfigurationIsReadOnly"
 ms.date: "03/30/2017"
 ms.assetid: a6734380-8ecf-454a-ab45-8832d6a27871

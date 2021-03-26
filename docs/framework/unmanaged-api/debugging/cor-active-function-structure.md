@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_ACTIVE_FUNCTION Structure"
 title: "COR_ACTIVE_FUNCTION Structure"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30298: Constructor '<name>' cannot call itself"
 title: "Constructor '<name>' cannot call itself"
 ms.date: 07/20/2015
 f1_keywords:

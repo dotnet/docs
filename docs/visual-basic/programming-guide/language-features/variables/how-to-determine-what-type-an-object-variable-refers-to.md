@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Determine What Type an Object Variable Refers To (Visual Basic)"
 title: "How to: Determine What Type an Object Variable Refers To"
 ms.date: 07/20/2015
 helpviewer_keywords:

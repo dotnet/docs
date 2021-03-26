@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Support for JSON and Other Data Transfer Formats"
 title: "Support for JSON and Other Data Transfer Formats"
 ms.date: "03/30/2017"
 ms.assetid: a527f1be-4e37-4beb-9a95-291480d19627

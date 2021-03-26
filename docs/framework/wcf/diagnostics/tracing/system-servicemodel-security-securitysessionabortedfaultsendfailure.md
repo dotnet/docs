@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Security.SecuritySessionAbortedFaultSendFailure"
 title: "System.ServiceModel.Security.SecuritySessionAbortedFaultSendFailure"
 ms.date: "03/30/2017"
 ms.assetid: 7dc1a319-0978-46ed-b2ef-1de2317e7e2d

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICeeGen::EmitString Method"
 title: "ICeeGen::EmitString Method"
 ms.date: "03/30/2017"
 api_name: 

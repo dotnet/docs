@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GetFileDef Method"
 title: "GetFileDef Method"
 ms.date: "03/30/2017"
 api_name: 

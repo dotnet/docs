@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo2::GetBoxClassLayout Method"
 title: "ICorProfilerInfo2::GetBoxClassLayout Method"
 ms.date: "03/30/2017"
 api_name: 

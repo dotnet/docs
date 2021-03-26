@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Deprecated CLR Hosting Interfaces and Coclasses"
 title: "Deprecated CLR Hosting Interfaces and Coclasses"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::EnumMethodSemantics Method"
 title: "IMetaDataImport::EnumMethodSemantics Method"
 ms.date: "03/30/2017"
 api_name: 

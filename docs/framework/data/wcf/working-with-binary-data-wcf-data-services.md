@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Working with Binary Data (WCF Data Services)"
 title: "Working with Binary Data (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs:
@@ -10,6 +11,8 @@ helpviewer_keywords:
 ms.assetid: aeccc45c-d5c5-4671-ad63-a492ac8043ac
 ---
 # Working with Binary Data (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 The WCF Data Services client library enables you to retrieve and update binary data from an Open Data Protocol (OData) feed in one of the following ways:
 

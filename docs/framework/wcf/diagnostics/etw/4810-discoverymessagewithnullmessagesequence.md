@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4810 - DiscoveryMessageWithNullMessageSequence"
 title: "4810 - DiscoveryMessageWithNullMessageSequence"
 ms.date: "03/30/2017"
 ms.assetid: aa70573e-8a76-486a-9616-ccca8c7008b6

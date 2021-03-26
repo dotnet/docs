@@ -2,6 +2,7 @@
 title: "Custom numeric format strings"
 description: Learn how to create a custom numeric format string to format numeric data in .NET. A custom numeric format string has one or more custom numeric specifiers.
 ms.date: "06/25/2018"
+ms.topic: reference
 dev_langs:
   - "csharp"
   - "vb"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Security.SecurityNegotiationProcessingFailure"
 title: "System.ServiceModel.Security.SecurityNegotiationProcessingFailure"
 ms.date: "03/30/2017"
 ms.assetid: 12185f75-c86b-4006-afd7-5be308647dcc

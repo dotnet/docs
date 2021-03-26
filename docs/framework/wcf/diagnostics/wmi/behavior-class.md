@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Behavior class"
 title: "Behavior class"
 ms.date: "03/30/2017"
 ms.assetid: 75d117f5-87f9-40fb-84c6-9e2fef6da6af

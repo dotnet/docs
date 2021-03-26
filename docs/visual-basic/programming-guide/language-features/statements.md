@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Statements in Visual Basic"
 title: "Statements"
 ms.date: 07/20/2015
 helpviewer_keywords: 

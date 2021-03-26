@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Export Custom Policy Assertions"
 title: "How to: Export Custom Policy Assertions"
 ms.date: "03/30/2017"
 dev_langs: 

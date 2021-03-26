@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MessageQueueDuplicatedSocketLeak"
 title: "MessageQueueDuplicatedSocketLeak"
 ms.date: "03/30/2017"
 ms.assetid: 9721a463-15d1-43dc-8e3a-cae44448de91

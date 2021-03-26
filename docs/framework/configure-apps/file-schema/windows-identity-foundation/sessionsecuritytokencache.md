@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <sessionSecurityTokenCache>"
 title: "<sessionSecurityTokenCache>"
 ms.date: "03/30/2017"
 ms.assetid: d43e676c-0153-485c-ab31-0257a2db7507

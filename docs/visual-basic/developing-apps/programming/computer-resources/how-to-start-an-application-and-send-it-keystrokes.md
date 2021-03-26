@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: start an application and send it keystrokes (Visual Basic)"
 title: "How to: start an Application and send it Keystrokes - Visual Basic"
 ms.date: 10/23/2019
 helpviewer_keywords: 

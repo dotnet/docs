@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Identity Foundation Configuration Schema"
 title: "Windows Identity Foundation Configuration Schema"
 ms.date: "03/30/2017"
 ms.assetid: 4d4f6d76-49a5-4bad-b345-097b2e2844e9

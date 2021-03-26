@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugGenericValue::GetValue Method"
 title: "ICorDebugGenericValue::GetValue Method"
 ms.date: "03/30/2017"
 api_name: 

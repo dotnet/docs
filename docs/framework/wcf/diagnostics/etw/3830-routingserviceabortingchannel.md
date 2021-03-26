@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3830 - RoutingServiceAbortingChannel"
 title: "3830 - RoutingServiceAbortingChannel"
 ms.date: "03/30/2017"
 ms.assetid: fba86ec8-4360-43e5-be54-cce43270af21

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICeeGen::AllocateMethodBuffer Method"
 title: "ICeeGen::AllocateMethodBuffer Method"
 ms.date: "03/30/2017"
 api_name: 

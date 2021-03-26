@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP"
 title: "Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

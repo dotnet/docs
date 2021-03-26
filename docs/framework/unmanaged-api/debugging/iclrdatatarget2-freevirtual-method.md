@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRDataTarget2::FreeVirtual Method"
 title: "ICLRDataTarget2::FreeVirtual Method"
 ms.date: "03/30/2017"
 api_name: 

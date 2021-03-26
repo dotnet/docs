@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICatalogServices::Autodone Method"
 title: "ICatalogServices::Autodone Method"
 ms.date: "03/30/2017"
 api_name: 

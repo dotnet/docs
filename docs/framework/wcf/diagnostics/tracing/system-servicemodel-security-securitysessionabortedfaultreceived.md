@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Security.SecuritySessionAbortedFaultReceived"
 title: "System.ServiceModel.Security.SecuritySessionAbortedFaultReceived"
 ms.date: "03/30/2017"
 ms.assetid: a6c27cbf-30c0-4f8b-ad21-0e4e25e5fc7a

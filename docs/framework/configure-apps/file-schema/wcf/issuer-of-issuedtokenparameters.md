@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <issuer> of <issuedTokenParameters>"
 title: "<issuer> of <issuedTokenParameters>"
 ms.date: "03/30/2017"
 ms.assetid: d6a95f32-d58c-40fc-8658-dd92564d3c90

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Endpoint: Transactions Flowed"
 title: "Endpoint: Transactions Flowed"
 ms.date: "03/30/2017"
 ms.assetid: 66e83f05-349b-4e4f-ac4a-58345e503a30

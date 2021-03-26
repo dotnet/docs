@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Queued Poison Messages"
 title: "Queued Poison Messages"
 ms.date: "03/30/2017"
 ms.assetid: 8257ba45-08ac-4301-93c3-c93b4b78737a

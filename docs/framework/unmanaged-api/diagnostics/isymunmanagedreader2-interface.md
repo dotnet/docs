@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedReader2 Interface"
 title: "ISymUnmanagedReader2 Interface"
 ms.date: "03/30/2017"
 api_name: 

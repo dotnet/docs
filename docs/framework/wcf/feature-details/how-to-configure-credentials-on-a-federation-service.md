@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Configure Credentials on a Federation Service"
 title: "How to: Configure Credentials on a Federation Service"
 ms.date: "03/30/2017"
 dev_langs: 

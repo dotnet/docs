@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedVariable Interface"
 title: "ISymUnmanagedVariable Interface"
 ms.date: "03/30/2017"
 api_name: 

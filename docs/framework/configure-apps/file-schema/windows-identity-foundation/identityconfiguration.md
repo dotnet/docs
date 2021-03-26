@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <identityConfiguration>"
 title: "<identityConfiguration>"
 ms.date: "03/30/2017"
 ms.assetid: 1db76253-07da-447b-9e7a-3705c7228cf4

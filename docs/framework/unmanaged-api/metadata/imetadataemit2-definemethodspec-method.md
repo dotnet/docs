@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit2::DefineMethodSpec Method"
 title: "IMetaDataEmit2::DefineMethodSpec Method"
 ms.date: "03/30/2017"
 api_name: 

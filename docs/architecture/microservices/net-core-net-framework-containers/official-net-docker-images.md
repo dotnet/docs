@@ -43,7 +43,7 @@ When you explore the .NET image repositories at Docker Hub, you will find multip
 | Image | Comments |
 |-------|----------|
 | mcr.microsoft.com/dotnet/aspnet:**5.0** | ASP.NET Core, with runtime only and ASP.NET Core optimizations, on Linux and Windows (multi-arch) |
-| mcr.microsoft.com/dotnet/sdk:**5.01** | .NET 5, with SDKs included, on Linux and Windows (multi-arch) |
+| mcr.microsoft.com/dotnet/sdk:**5.0** | .NET 5, with SDKs included, on Linux and Windows (multi-arch) |
 
 > [!div class="step-by-step"]
 > [Previous](net-container-os-targets.md)

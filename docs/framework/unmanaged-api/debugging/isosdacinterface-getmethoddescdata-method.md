@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISOSDacInterface::GetMethodDescData Method"
 title: "ISOSDacInterface::GetMethodDescData Method"
 ms.date: "01/16/2019"
 api.name:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorAssemblyFlags Enumeration"
 title: "CorAssemblyFlags Enumeration"
 ms.date: "03/30/2017"
 api_name: 

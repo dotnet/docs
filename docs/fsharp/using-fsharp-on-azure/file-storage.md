@@ -1,13 +1,13 @@
 ---
-title: Get started with Azure File storage using F#
-description: Store file data in the cloud with Azure File storage, and mount your cloud file share from an Azure virtual machine (VM) or from an on-premises application running Windows.
+title: Get started with Azure File Storage using F#
+description: Store file data in the cloud with Azure File Storage, and mount your cloud file share from an Azure virtual machine (VM) or from an on-premises application running Windows.
 author: sylvanc
 ms.date: 09/20/2016
 ms.custom: "devx-track-fsharp"
 ---
-# Get started with Azure File storage using F\#
+# Get started with Azure File Storage using F\#
 
-Azure File storage is a service that offers file shares in the cloud using the standard [Server Message Block (SMB) Protocol](/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview). Both SMB 2.1 and SMB 3.0 are supported. With Azure File storage, you can migrate legacy applications that rely on file shares to Azure quickly and without costly rewrites. Applications running in Azure virtual machines or cloud services or from on-premises clients can mount a file share in the cloud, just as a desktop application mounts a typical SMB share. Any number of application components can then mount and access the File storage share simultaneously.
+Azure File Storage is a service that offers file shares in the cloud using the standard [Server Message Block (SMB) Protocol](/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview). Both SMB 2.1 and SMB 3.0 are supported. With Azure File Storage, you can migrate legacy applications that rely on file shares to Azure quickly and without costly rewrites. Applications running in Azure virtual machines or cloud services or from on-premises clients can mount a file share in the cloud, just as a desktop application mounts a typical SMB share. Any number of application components can then mount and access the File storage share simultaneously.
 
 For a conceptual overview of file storage, see [the .NET guide for file storage](/azure/storage/storage-dotnet-how-to-use-files).
 
@@ -86,7 +86,7 @@ Here you download the file just created, appending the contents to a local file.
 
 ### Set the maximum size for a file share
 
-The example below shows how to check the current usage for a share and how to set the quota for the share. `FetchAttributes` must be called to populate a share's `Properties`, and `SetProperties` to propagate local changes to Azure File storage.
+The example below shows how to check the current usage for a share and how to set the quota for the share. `FetchAttributes` must be called to populate a share's `Properties`, and `SetProperties` to propagate local changes to Azure File Storage.
 
 [!code-fsharp[FileStorage](~/samples/snippets/fsharp/azure/file-storage.fsx#L62-L72)]
 
@@ -128,7 +128,7 @@ You can enable metrics for File storage from the [Azure portal](https://portal.a
 
 ## Next steps
 
-For more information about Azure File storage, see these links.
+For more information about Azure File Storage, see these links.
 
 ### Conceptual articles and videos
 
@@ -148,7 +148,7 @@ For more information about Azure File storage, see these links.
 
 ### Blog posts
 
-- [Azure File storage is now generally available](https://azure.microsoft.com/blog/azure-file-storage-now-generally-available/)
+- [Azure File Storage is now generally available](https://azure.microsoft.com/blog/azure-file-storage-now-generally-available/)
 - [Inside Azure File Storage](https://azure.microsoft.com/blog/inside-azure-file-storage/)
 - [Introducing Microsoft Azure File Service](/archive/blogs/windowsazurestorage/introducing-microsoft-azure-file-service)
 - [Persisting connections to Microsoft Azure Files](/archive/blogs/windowsazurestorage/persisting-connections-to-microsoft-azure-files)

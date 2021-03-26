@@ -1,7 +1,7 @@
 ---
 title: Windows 10 migration
 description: Deep dive in Windows 10 features such as packaging and XAML Islands.
-ms.date: 09/16/2019
+ms.date: 12/29/2020
 ---
 
 # Windows 10 migration
@@ -14,9 +14,9 @@ With the release of Windows 10, Microsoft introduced many innovations to support
 - Use a pen to draw or handwrite text that is automatically recognized and digitalized.
 - Run locally customized AI models built on the cloud using WinML.
 
-All these features are enabled for Windows developers through Windows Runtime (WinRT) libraries. You can take advantage of these features in your existing desktop apps because the libraries are exposed to both the .NET Framework and .NET Core as well. You can even modernize your UI with the use of XAML Islands and improve the visuals and behavior of your apps according to the times.
+All these features are enabled for Windows developers through Windows Runtime (WinRT) libraries. You can take advantage of these features in your existing desktop apps because the libraries are exposed to both the .NET Framework and .NET as well. You can even modernize your UI with the use of XAML Islands and improve the visuals and behavior of your apps according to the times.
 
-One important thing to note here is that you don't need to abandon .NET Framework technology to follow this modernization path. You can safely stay on there and have all the benefits of Windows 10 without the pressure to migrate to .NET Core. So, you get both the power and the flexibility to choose your modernization path.
+One important thing to note here is that you don't need to abandon .NET Framework technology to follow this modernization path. You can safely stay on there and have all the benefits of Windows 10 without the pressure to migrate to .NET. So, you get both the power and the flexibility to choose your modernization path.
 
 ## WinRT APIs
 
@@ -272,7 +272,7 @@ To see a walkthrough about how to use XAML Islands, see:
 
 A XAML custom control is a control (or user control) created by you or by third parties (including WinUI 2.x controls). To host a custom UWP control in a Windows Forms or WPF app, you'll need:
 
-- To use the `WindowsXamlHost` UWP control in your .NET Core 3.x app.
+- To use the `WindowsXamlHost` UWP control in your .NET app.
 - To create a UWP app project that defines a `XamlApplication` object.
 
 Your WPF or Windows Forms project must have access to an instance of the `Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplication` class provided by the Windows Community Toolkit. This object acts as a root metadata provider for loading metadata for custom UWP XAML types in assemblies in the current directory of your application. The recommended way to do this is to add a Blank
@@ -326,7 +326,7 @@ WinUI 3 will address this critical feedback adding **WinUI in desktop apps**. Th
 Within this aggregation, WinUI 3 will let developers easily mix and match the right combination of:
 
 * App model: UWP, Win32
-* Platform: .NET Core or Native
+* Platform: .NET or Native
 * Language: .NET (C\#, Visual Basic), standard C++
 * Packaging: MSIX, AppX for the Microsoft Store, unpackaged
 * Interop: use WinUI 3 to extend existing WPF, WinForms, and MFC apps using WinUI XAML Islands.
@@ -335,4 +335,4 @@ If you want to know more details, Microsoft is sharing this roadmap in <https://
 
 >[!div class="step-by-step"]
 >[Previous](migrate-modern-applications.md)
->[Next](example-migration-core.md)
+>[Next](example-migration.md)

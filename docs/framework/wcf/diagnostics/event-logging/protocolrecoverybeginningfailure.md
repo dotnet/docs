@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ProtocolRecoveryBeginningFailure"
 title: "ProtocolRecoveryBeginningFailure"
 ms.date: "03/30/2017"
 ms.assetid: 4b6ddabf-3861-4c40-b9a2-b153cf1e4d35

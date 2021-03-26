@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accessing data in Visual Basic applications"
 title: "Accessing data in Visual Basic applications"
 ms.date: 07/20/2015
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Syndication"
 title: "Syndication"
 ms.date: "03/30/2017"
 ms.assetid: 502c50b2-9982-46af-ac92-53ad9f61d486

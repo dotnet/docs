@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: entity type"
 title: "entity type"
 ms.date: "03/30/2017"
 ms.assetid: a6dee9ab-9e4a-48f2-a169-3f79cc15821c

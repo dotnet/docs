@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PeerNeighborStateChanged"
 title: "System.ServiceModel.Channels.PeerNeighborStateChanged"
 ms.date: "03/30/2017"
 ms.assetid: 94a30661-7177-4a63-ad07-54457137e9f2

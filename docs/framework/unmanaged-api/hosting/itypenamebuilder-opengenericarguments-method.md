@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ITypeNameBuilder::OpenGenericArguments Method"
 title: "ITypeNameBuilder::OpenGenericArguments Method"
 ms.date: "03/30/2017"
 api_name: 

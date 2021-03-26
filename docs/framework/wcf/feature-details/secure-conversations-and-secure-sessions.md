@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Secure Conversations and Secure Sessions"
 title: "Secure Conversations and Secure Sessions"
 ms.date: "03/30/2017"
 ms.assetid: 48cb104a-532d-40ae-aa57-769dae103fda

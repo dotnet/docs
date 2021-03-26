@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Transport: UDP"
 title: "Transport: UDP"
 ms.date: "03/30/2017"
 ms.assetid: 738705de-ad3e-40e0-b363-90305bddb140

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Best Practices for Queued Communication"
 title: "Best Practices for Queued Communication"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

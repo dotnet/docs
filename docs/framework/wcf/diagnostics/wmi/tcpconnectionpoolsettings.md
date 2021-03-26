@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TcpConnectionPoolSettings"
 title: "TcpConnectionPoolSettings"
 ms.date: "03/30/2017"
 ms.assetid: 19acfba3-c057-4dbc-bac7-8674d7844d83

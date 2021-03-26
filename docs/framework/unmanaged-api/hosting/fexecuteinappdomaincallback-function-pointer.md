@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FExecuteInAppDomainCallback Function Pointer"
 title: "FExecuteInAppDomainCallback Function Pointer"
 ms.date: "03/30/2017"
 api_name: 

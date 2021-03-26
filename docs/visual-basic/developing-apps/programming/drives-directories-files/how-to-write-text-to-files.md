@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Write Text to Files in Visual Basic"
 title: "How to: Write Text to Files"
 ms.date: 07/20/2015
 helpviewer_keywords: 

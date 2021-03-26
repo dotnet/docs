@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugSymbolProvider::GetAssemblyImageMetadata Method"
 title: "ICorDebugSymbolProvider::GetAssemblyImageMetadata Method"
 ms.date: "03/30/2017"
 ms.assetid: c3c9de67-b865-4ecf-b887-1f1d0719a0c0

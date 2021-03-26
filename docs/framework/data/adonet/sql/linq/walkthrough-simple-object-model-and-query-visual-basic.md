@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Simple Object Model and Query (Visual Basic)"
 title: "Walkthrough: Simple Object Model and Query (Visual Basic)"
 ms.date: "03/30/2017"
 dev_langs:

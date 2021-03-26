@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create time zones with adjustment rules"
 title: "How to: Create time zones with adjustment rules"
 ms.date: "04/10/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3558 - ServiceActivationStart"
 title: "3558 - ServiceActivationStart"
 ms.date: "03/30/2017"
 ms.assetid: 9062c6f4-2252-460c-ad29-f8effa72fcd1

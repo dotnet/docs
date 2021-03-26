@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Add, Modify, and Delete Entities (WCF Data Services)"
 title: "How to: Add, Modify, and Delete Entities (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -9,6 +10,8 @@ helpviewer_keywords:
 ms.assetid: a00f8933-b232-4445-95ba-adc634f055d8
 ---
 # How to: Add, Modify, and Delete Entities (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 With the WCF Data Services client libraries, you can create, update, and delete entity data in a data service by performing equivalent actions on objects in the <xref:System.Data.Services.Client.DataServiceContext>. For more information, see [Updating the Data Service](updating-the-data-service-wcf-data-services.md).  
   

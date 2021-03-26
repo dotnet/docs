@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.MsmqQueueOpened"
 title: "System.ServiceModel.Channels.MsmqQueueOpened"
 ms.date: "03/30/2017"
 ms.assetid: 282e108a-73b0-499d-8b9e-e37d1198dda6

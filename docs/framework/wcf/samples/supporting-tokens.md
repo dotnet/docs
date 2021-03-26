@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Supporting Tokens"
 title: "Supporting Tokens"
 ms.date: "03/30/2017"
 ms.assetid: 65a8905d-92cc-4ab0-b6ed-1f710e40784e

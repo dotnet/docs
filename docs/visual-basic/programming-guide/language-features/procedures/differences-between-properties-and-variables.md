@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Differences Between Properties and Variables in Visual Basic"
 title: "Differences Between Properties and Variables"
 ms.date: 07/20/2015
 helpviewer_keywords: 

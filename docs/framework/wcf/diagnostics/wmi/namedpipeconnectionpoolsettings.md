@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NamedPipeConnectionPoolSettings"
 title: "NamedPipeConnectionPoolSettings"
 ms.date: "03/30/2017"
 ms.assetid: 079bccb8-54b5-4436-a43d-5567763f72ce

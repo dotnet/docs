@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GetXmlNamespace Operator (Visual Basic)"
 title: "GetXmlNamespace Operator"
 ms.date: 07/20/2015
 f1_keywords: 

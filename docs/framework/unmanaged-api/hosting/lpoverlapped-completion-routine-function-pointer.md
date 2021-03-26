@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: LPOVERLAPPED_COMPLETION_ROUTINE Function Pointer"
 title: "LPOVERLAPPED_COMPLETION_ROUTINE Function Pointer"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Specify Database Data Types"
 title: "How to: Specify Database Data Types"
 ms.date: "03/30/2017"
 ms.assetid: 2228fdad-7e6a-4b1b-b4d1-79d0198b7c28

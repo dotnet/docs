@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4015 - MessageQueueRegisterCompleted"
 title: "4015 - MessageQueueRegisterCompleted"
 ms.date: "03/30/2017"
 ms.assetid: d8d65570-9dcc-436c-b446-a33404e31652

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <Application> Element (.NET Native)"
 title: "<Application> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: b4e9b37a-059b-4076-8f56-cb3f9cef0cd9

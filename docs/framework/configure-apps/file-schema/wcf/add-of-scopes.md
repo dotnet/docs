@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <add> of <scopes>"
 title: "<add> of <scopes>"
 ms.date: "03/30/2017"
 ms.assetid: 0563a7d8-fc84-4c85-9066-af32665857c2

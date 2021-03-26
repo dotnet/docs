@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Security.SecurityClientSessionCloseSent"
 title: "System.ServiceModel.Security.SecurityClientSessionCloseSent"
 ms.date: "03/30/2017"
 ms.assetid: 6933e77d-ac9b-47cc-bc07-95f957d2299f

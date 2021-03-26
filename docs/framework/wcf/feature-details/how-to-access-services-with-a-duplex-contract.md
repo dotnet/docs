@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Access services with a duplex contract"
 title: "How to: Access services with a duplex contract"
 ms.date: "03/30/2017"
 dev_langs:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Loop control variable of type '<typename>' does not implement the 'System.IComparable' interface"
 title: "Loop control variable of type '<typename>' does not implement the 'System.IComparable' interface"
 ms.date: 07/20/2015
 f1_keywords: 

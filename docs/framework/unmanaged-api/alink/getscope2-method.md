@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GetScope2 Method"
 title: "GetScope2 Method"
 ms.date: "03/30/2017"
 api_name: 

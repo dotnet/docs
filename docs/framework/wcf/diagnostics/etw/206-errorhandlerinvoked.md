@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 206 - ErrorHandlerInvoked"
 title: "206 - ErrorHandlerInvoked"
 ms.date: "03/30/2017"
 ms.assetid: 97340f4d-4e09-4e42-a17a-982b3868dbcf

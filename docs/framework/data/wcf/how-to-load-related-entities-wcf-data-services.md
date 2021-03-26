@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Load Related Entities (WCF Data Services)"
 title: "How to: Load Related Entities (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -10,6 +11,8 @@ helpviewer_keywords:
 ms.assetid: 6f143d30-d997-4e6b-bcf0-d5c394ecb108
 ---
 # How to: Load Related Entities (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 When you need to load associated entities in WCF Data Services, you can use the <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A> method on the <xref:System.Data.Services.Client.DataServiceContext> class. You can also use the <xref:System.Data.Services.Client.DataServiceQuery%601.Expand%2A> method on the <xref:System.Data.Services.Client.DataServiceQuery%601> to require that related entities be eagerly loaded in the same query response.  
   

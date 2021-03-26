@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: While...End While Statement (Visual Basic)"
 title: "While...End While Statement"
 ms.date: 07/20/2015
 f1_keywords: 

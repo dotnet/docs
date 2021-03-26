@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Retrieve Metadata"
 title: "Retrieve Metadata"
 ms.date: "03/30/2017"
 ms.assetid: e8a6ef8c-a195-495a-a15e-7d92bdf0b28c

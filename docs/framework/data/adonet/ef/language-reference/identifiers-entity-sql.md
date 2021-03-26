@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Identifiers (Entity SQL)"
 title: "Identifiers (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: d58a5edd-7b5c-48e1-b5d7-a326ff426aa4

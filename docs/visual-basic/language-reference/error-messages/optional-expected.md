@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30202: 'Optional' expected"
 title: "'Optional' expected"
 ms.date: 07/20/2015
 f1_keywords:

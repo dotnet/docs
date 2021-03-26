@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Encrypting and Decrypting Strings in Visual Basic"
 title: "Encrypting and Decrypting Strings"
 ms.date: 07/20/2015
 helpviewer_keywords: 

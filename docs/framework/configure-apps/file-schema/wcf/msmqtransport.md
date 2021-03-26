@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <msmqTransport>"
 title: "<msmqTransport>"
 ms.date: "03/30/2017"
 ms.assetid: 19d89f35-76ac-49dc-832b-e8bec2d5e33b

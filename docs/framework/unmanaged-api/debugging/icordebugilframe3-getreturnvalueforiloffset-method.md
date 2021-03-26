@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugILFrame3::GetReturnValueForILOffset Method"
 title: "ICorDebugILFrame3::GetReturnValueForILOffset Method"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to:Determine the Discovery Version of a Probe Request"
 title: "How to:Determine the Discovery Version of a Probe Request"
 ms.date: "03/30/2017"
 ms.assetid: b3c4e2e2-2957-4074-ae6a-776a5ca84278

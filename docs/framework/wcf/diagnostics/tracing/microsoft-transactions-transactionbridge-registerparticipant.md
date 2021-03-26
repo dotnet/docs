@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft.Transactions.TransactionBridge.RegisterParticipant"
 title: "Microsoft.Transactions.TransactionBridge.RegisterParticipant"
 ms.date: "03/30/2017"
 ms.assetid: 8888fd0a-d454-4123-88de-fa3290102306

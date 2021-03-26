@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Diagnostics Symbol Store Interfaces"
 title: "Diagnostics Symbol Store Interfaces"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

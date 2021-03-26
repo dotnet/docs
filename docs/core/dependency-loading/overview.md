@@ -35,3 +35,7 @@ The tutorial [Create a .NET Core application with plugins](../tutorials/creating
 ## How to use and debug assembly unloadability in .NET Core
 
 The [How to use and debug assembly unloadability in .NET Core](../../standard/assembly/unloadability.md) article is a step-by-step tutorial. It shows how to load a .NET Core application, execute, and then unload it. The article also provides debugging tips.
+
+## Collect detailed assembly loading information
+
+The [Collect detailed assembly loading information](collect-details.md) article describes how to collect detailed information about managed assembly loading in the runtime. It uses the [dotnet-trace](../diagnostics/dotnet-trace.md) tool to capture assembly loader events in a trace of a running process.

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::ModuleAttachedToAssembly Method"
 title: "ICorProfilerCallback::ModuleAttachedToAssembly Method"
 ms.date: "03/30/2017"
 api_name: 

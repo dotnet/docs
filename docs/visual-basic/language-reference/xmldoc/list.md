@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <list> (Visual Basic)"
 title: "<list>"
 ms.date: 07/20/2015
 helpviewer_keywords: 

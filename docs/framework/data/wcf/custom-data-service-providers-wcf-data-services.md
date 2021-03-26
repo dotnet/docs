@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Custom Data Service Providers (WCF Data Services)"
 title: "Custom Data Service Providers (WCF Data Services)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
@@ -6,6 +7,8 @@ helpviewer_keywords:
 ms.assetid: e702ecdb-3419-4743-92a9-c3c0e7d44082
 ---
 # Custom Data Service Providers (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 WCF Data Services includes a set of providers that enables you to define a data model based on late-bound data types.  
   

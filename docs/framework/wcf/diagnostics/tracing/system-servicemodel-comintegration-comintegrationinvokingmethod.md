@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ComIntegration.ComIntegrationInvokingMethod"
 title: "System.ServiceModel.ComIntegration.ComIntegrationInvokingMethod"
 ms.date: "03/30/2017"
 ms.assetid: dea076f0-1c05-40af-a329-c3e3f7a805c1

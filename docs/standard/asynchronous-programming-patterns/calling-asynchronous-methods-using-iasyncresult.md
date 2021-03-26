@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Calling Asynchronous Methods Using IAsyncResult"
 title: "Calling Asynchronous Methods Using IAsyncResult"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

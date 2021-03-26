@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Specify the Certificate Authority Certificate Chain Used to Verify Signatures (WCF)"
 title: "How to: Specify the Certificate Authority Certificate Chain Used to Verify Signatures (WCF)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

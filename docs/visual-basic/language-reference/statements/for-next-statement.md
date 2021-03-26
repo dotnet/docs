@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: For...Next Statement (Visual Basic)"
 title: "For...Next Statement"
 ms.date: 07/20/2015
 f1_keywords:

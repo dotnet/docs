@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Prevent a Child Task from Attaching to its Parent"
 title: "How to: Prevent a Child Task from Attaching to its Parent"
 ms.date: "03/30/2017"
 dev_langs: 

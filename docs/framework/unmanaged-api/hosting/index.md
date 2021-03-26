@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Hosting (Unmanaged API Reference)"
 title: "Hosting (Unmanaged API Reference)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

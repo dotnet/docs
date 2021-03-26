@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SQL Workflow Instance Store"
 title: "SQL Workflow Instance Store"
 ms.date: "03/30/2017"
 ms.assetid: 8cd2f8a5-4bf8-46ea-8909-c7fdb314fabc

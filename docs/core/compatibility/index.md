@@ -1,21 +1,21 @@
 ---
 title: Types of breaking changes
-description: Learn how .NET Core attempts to maintain compatibility for developers across .NET versions, and what kind of change is considered a breaking change.
-ms.date: 06/10/2019
+description: Learn how .NET attempts to maintain compatibility for developers across .NET versions, and what kind of change is considered a breaking change.
+ms.date: 01/28/2021
 ---
 # Changes that affect compatibility
 
-Throughout its history, .NET has attempted to maintain a high level of compatibility from version to version and across flavors of .NET. This continues to be true for .NET Core. Although .NET Core can be considered as a new technology that is independent of the .NET Framework, two major factors limit the ability of .NET Core to diverge from .NET Framework:
+Throughout its history, .NET has attempted to maintain a high level of compatibility from version to version and across implementations of .NET. Although .NET 5 (and .NET Core) and later versions can be considered as a new technology compared to .NET Framework, two major factors limit the ability of this implementation of .NET to diverge from .NET Framework:
 
 - A large number of developers either originally developed or continue to develop .NET Framework applications. They expect consistent behavior across .NET implementations.
 
-- .NET Standard library projects allow developers to create libraries that target common APIs shared by .NET Core and .NET Framework. Developers expect that a library used in a .NET Core application should behave identically to the same library used in a .NET Framework application.
+- .NET Standard library projects allow developers to create libraries that target common APIs shared by .NET Framework and .NET 5 (and .NET Core) and later versions. Developers expect that a library used in a .NET 5 application should behave identically to the same library used in a .NET Framework application.
 
-Along with compatibility across .NET implementations, developers expect a high level of compatibility across .NET Core versions. In particular, code written for an earlier version of .NET Core should run seamlessly on a later version of .NET Core. In fact, many developers expect that the new APIs found in newly released versions of .NET Core should also be compatible with the pre-release versions in which those APIs were introduced.
+Along with compatibility across .NET implementations, developers expect a high level of compatibility across versions of a given implementation of .NET. In particular, code written for an earlier version of .NET Core should run seamlessly on .NET 5 or a later version. In fact, many developers expect that the new APIs found in newly released versions of .NET should also be compatible with the pre-release versions in which those APIs were introduced.
 
 This article outlines changes that affect compatibility and the way in which the .NET team evaluates each type of change. Understanding how the .NET team approaches possible breaking changes is particularly helpful for developers who open pull requests that modify the behavior of [existing .NET APIs](https://github.com/dotnet/runtime).
 
-The following sections describe the categories of changes made to .NET Core APIs and their impact on application compatibility. Changes are either allowed ✔️, disallowed ❌, or require judgment and an evaluation of how predictable, obvious, and consistent the previous behavior was ❓.
+The following sections describe the categories of changes made to .NET APIs and their impact on application compatibility. Changes are either allowed ✔️, disallowed ❌, or require judgment and an evaluation of how predictable, obvious, and consistent the previous behavior was ❓.
 
 > [!NOTE]
 >

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugManagedCallback2::ChangeConnection Method"
 title: "ICorDebugManagedCallback2::ChangeConnection Method"
 ms.date: "03/30/2017"
 api_name: 

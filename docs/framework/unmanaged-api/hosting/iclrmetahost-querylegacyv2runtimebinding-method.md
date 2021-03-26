@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRMetaHost::QueryLegacyV2RuntimeBinding Method"
 title: "ICLRMetaHost::QueryLegacyV2RuntimeBinding Method"
 ms.date: "03/30/2017"
 api_name: 

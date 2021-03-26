@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorRuntimeHost::MapFile Method"
 title: "ICorRuntimeHost::MapFile Method"
 ms.date: "03/30/2017"
 api_name: 

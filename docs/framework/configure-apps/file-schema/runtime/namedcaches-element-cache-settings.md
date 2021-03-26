@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <namedCaches> Element (Cache Settings)"
 title: "<namedCaches> Element (Cache Settings)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

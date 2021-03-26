@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30594: Events of shared WithEvents variables cannot be handled by non-shared methods"
 title: "Events of shared WithEvents variables cannot be handled by non-shared methods"
 ms.date: 07/20/2015
 f1_keywords:

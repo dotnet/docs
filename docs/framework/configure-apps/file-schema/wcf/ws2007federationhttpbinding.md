@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <ws2007FederationHttpBinding>"
 title: "<ws2007FederationHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 9af4ec79-cdef-457e-9dca-09d5eb821594

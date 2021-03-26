@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICatalogServices::NotAutodone Method"
 title: "ICatalogServices::NotAutodone Method"
 ms.date: "03/30/2017"
 api_name: 

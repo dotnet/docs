@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XSLT Stylesheet Scripting Using <msxsl:script>"
 title: "XSLT Stylesheet Scripting Using <msxsl:script>"
 ms.date: "03/30/2017"
 dev_langs: 

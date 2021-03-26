@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRRuntimeInfo::IsLoaded Method"
 title: "ICLRRuntimeInfo::IsLoaded Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Separate X.509 Certificates for Signing and Encryption"
 title: "How to: Use Separate X.509 Certificates for Signing and Encryption"
 ms.date: "03/30/2017"
 dev_langs:

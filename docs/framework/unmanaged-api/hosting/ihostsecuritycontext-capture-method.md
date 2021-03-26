@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostSecurityContext::Capture Method"
 title: "IHostSecurityContext::Capture Method"
 ms.date: "03/30/2017"
 api_name: 

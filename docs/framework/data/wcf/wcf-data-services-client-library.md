@@ -10,6 +10,8 @@ ms.assetid: 21075e50-8917-413e-a8ea-35a0f6e65aa5
 ---
 # WCF Data Services Client Library
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 Any application can interact with an Open Data Protocol (OData)-based data service if it can send an HTTP request and process the OData feed that a data service returns. This interoperability enables you to access OData-based services from a broad range of Web-enabled applications. WCF Data Services includes client libraries that provide a richer programming experience when you consume OData feeds from .NET Framework or Silverlight-based applications.  
   
  The two main classes of the client library are the <xref:System.Data.Services.Client.DataServiceContext> class and the <xref:System.Data.Services.Client.DataServiceQuery%601> class. The <xref:System.Data.Services.Client.DataServiceContext> class encapsulates operations that are supported against a specified data service. Although OData services are stateless, the context is not. Therefore, you can use the <xref:System.Data.Services.Client.DataServiceContext> class to maintain state on the client between interactions with the data service in order to support features such as change management. This class also manages identities and tracks changes. The <xref:System.Data.Services.Client.DataServiceQuery%601> class represents a query against a specific entity set.  

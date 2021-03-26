@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC36599: Range variable name can be inferred only from a simple or qualified name with no arguments"
 title: "Range variable name can be inferred only from a simple or qualified name with no arguments"
 ms.date: 07/20/2015
 f1_keywords:

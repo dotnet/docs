@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Configure WCF Services to Interoperate with WSE 3.0 Clients"
 title: "How to: Configure WCF Services to Interoperate with WSE 3.0 Clients"
 ms.date: "03/30/2017"
 ms.assetid: 0f38c4a0-49a6-437c-bdde-ad1d138d3c4a

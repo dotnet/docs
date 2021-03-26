@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30910: '<typename>' cannot inherit from <type> '<basetypename>' because it expands the access of the base <type> outside the assembly"
 title: "'<typename>' cannot inherit from <type> '<basetypename>' because it expands the access of the base <type> outside the assembly"
 ms.date: 07/20/2015
 f1_keywords:

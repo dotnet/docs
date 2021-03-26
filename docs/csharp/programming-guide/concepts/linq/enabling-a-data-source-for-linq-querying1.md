@@ -26,7 +26,7 @@ There are various ways to extend LINQ to enable any data source to be queried in
   
 ### Remote Data  
 
- The best option for enabling LINQ querying of a remote data source is to implement the <xref:System.Linq.IQueryable%601> interface. However, this differs from extending a provider such as [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] for a data source. No provider models for extending existing LINQ technologies, such as [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)], to other types of data source are available in Visual Studio 2008.
+ The best option for enabling LINQ querying of a remote data source is to implement the <xref:System.Linq.IQueryable%601> interface. However, this differs from extending a provider such as [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] for a data source.
   
 ## IQueryable LINQ Providers  
 

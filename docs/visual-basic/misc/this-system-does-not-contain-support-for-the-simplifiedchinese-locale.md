@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: This system does not contain support for the SimplifiedChinese locale"
 title: "This system does not contain support for the SimplifiedChinese locale"
 ms.date: 07/20/2015
 f1_keywords: 

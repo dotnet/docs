@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Endpoint: Calls Failed Per Second"
 title: "Endpoint: Calls Failed Per Second"
 ms.date: "03/30/2017"
 ms.assetid: bcbe9da4-c8dd-4e27-b630-11611adc7580

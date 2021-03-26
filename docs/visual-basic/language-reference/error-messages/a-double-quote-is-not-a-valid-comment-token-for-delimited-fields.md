@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: A double quote is not a valid comment token for delimited fields where EscapeQuote is set to True"
 title: "A double quote is not a valid comment token for delimited fields where EscapeQuote is set to True"
 ms.date: 07/20/2015
 f1_keywords: 

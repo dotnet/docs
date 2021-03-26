@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorPublishAppDomainEnum::Next Method"
 title: "ICorPublishAppDomainEnum::Next Method"
 ms.date: "03/30/2017"
 api_name: 

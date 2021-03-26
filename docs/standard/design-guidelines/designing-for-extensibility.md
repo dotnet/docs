@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Designing for Extensibility"
 title: "Designing for Extensibility"
 ms.date: "10/22/2008"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugArrayValue::GetCount Method"
 title: "ICorDebugArrayValue::GetCount Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -496,7 +496,7 @@ namespace WrapContravariance
 
             // Declare a delegate type for processing a book:
             //<Snippet16>
-            public delegate void ProcessBookDelegate(Book book);
+            public delegate void ProcessBookCallback(Book book);
             //</Snippet16>
 
             // Maintains a book database.
@@ -512,7 +512,7 @@ namespace WrapContravariance
                 }
 
                 // Call a passed-in delegate on each paperback book to process it:
-                public void ProcessPaperbackBooks(ProcessBookDelegate processBook)
+                public void ProcessPaperbackBooks(ProcessBookCallback processBook)
                 {
                     foreach (Book b in list)
                     {

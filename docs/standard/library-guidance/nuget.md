@@ -45,7 +45,7 @@ A NuGet package supports many [metadata properties](/nuget/reference/nuspec). Th
 | `Title`                            | `title`                    | A human-friendly title of the package. It defaults to the `PackageId`.             |
 | `Description`                      | `description`              | A long description of the package displayed in UI.             |
 | `Authors`                          | `authors`                  | A comma-separated list of package authors, matching the profile names on nuget.org.             |
-| `PackageTags`                      | `tags`                     | A space-delimited list of tags and keywords that describe the package. Tags are used when searching for packages.             |
+| `PackageTags`                      | `tags`                     | A space or semicolon-delimited list of tags and keywords that describe the package. Tags are used when searching for packages.             |
 | `PackageIcon`                   | `icon`                  | A path to an image in the package to use as a package icon. Read more about [`icon` metadata](/nuget/reference/nuspec#icon). |
 | `PackageProjectUrl`                | `projectUrl`               | A URL for the project homepage or source repository.             |
 | `PackageLicenseExpression`         | `license`                  | The project license's [SPDX identifier](https://spdx.org/licenses/). Only OSI and FSF approved licenses can use an identifier. Other licenses should use `PackageLicenseFile`. Read more about [`license` metadata](/nuget/reference/nuspec#license). |
@@ -89,7 +89,7 @@ Symbol files (`*.pdb`) are produced by the .NET compiler alongside assemblies. S
 NuGet.org hosts its own [symbols server repository](/nuget/create-packages/symbol-packages-snupkg#nugetorg-symbol-server). Developers can use the symbols published to the NuGet.org symbol server by adding `https://symbols.nuget.org/download/symbols` to their [symbol sources in Visual Studio](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).
 
 > [!IMPORTANT]
-> The NuGet.org symbol server only supports the new [portable symbol files](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) (`*.pdb`) created by SDK-style projects.
+> The NuGet.org symbol server only supports the new [portable symbol files](https://github.com/dotnet/core/blob/main/Documentation/diagnostics/portable_pdb.md) (`*.pdb`) created by SDK-style projects.
 >
 > To use the NuGet.org symbol server when debugging a .NET library, developers must have Visual Studio 2017 version 15.9 or later.
 

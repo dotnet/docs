@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugFunctionBreakpoint::GetOffset Method"
 title: "ICorDebugFunctionBreakpoint::GetOffset Method"
 ms.date: "03/30/2017"
 api_name: 

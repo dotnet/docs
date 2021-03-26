@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ComPlusServiceHostStartingServiceError"
 title: "ComPlusServiceHostStartingServiceError"
 ms.date: "03/30/2017"
 ms.assetid: 10994991-3717-4352-ad58-c22c3eff60d5

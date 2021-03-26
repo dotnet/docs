@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Names of Declared XML Elements and Attributes (Visual Basic)"
 title: "Names of Declared XML Elements and Attributes"
 ms.date: 07/20/2015
 helpviewer_keywords: 

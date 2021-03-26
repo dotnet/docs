@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Override the identity of a service for authentication"
 title: "Overriding the Identity of a Service for Authentication"
 ms.date: "03/30/2017"
 dev_langs: 

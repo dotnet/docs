@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedAsyncMethodPropertiesWriter::DefineAsyncStepInfo Method"
 title: "ISymUnmanagedAsyncMethodPropertiesWriter::DefineAsyncStepInfo Method"
 ms.date: "03/30/2017"
 ms.assetid: f738a6ed-7cd9-4106-a5cd-355481e5771c

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Endpoint Performance Counters"
 title: "Endpoint Performance Counters"
 ms.date: "03/30/2017"
 ms.assetid: 7d44d576-bd4e-453b-8b76-a818ce90b806

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugFunctionBreakpoint Interface"
 title: "ICorDebugFunctionBreakpoint Interface"
 ms.date: "03/30/2017"
 api_name: 

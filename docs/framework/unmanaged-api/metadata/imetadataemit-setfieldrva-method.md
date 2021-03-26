@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::SetFieldRVA Method"
 title: "IMetaDataEmit::SetFieldRVA Method"
 ms.date: "03/30/2017"
 api_name: 

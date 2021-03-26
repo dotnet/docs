@@ -21,7 +21,7 @@ The .NET Services Installation tool performs the following actions:
   
 - Configures services that you have added programmatically to your class.  
   
- To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
+ To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).  
   
  At the command prompt, type the following:  
   
@@ -86,4 +86,4 @@ regsvcs /appname:myTargetApp /tlb:newTest.tlb myTest.dll
 
 - [Tools](index.md)
 - [How to: Sign an Assembly with a Strong Name](../../standard/assembly/sign-strong-name.md)
-- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

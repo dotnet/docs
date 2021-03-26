@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Obtain a Certificate (WCF)"
 title: "How to: Obtain a Certificate (WCF)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

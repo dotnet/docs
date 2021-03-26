@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Creating COM Objects with Visual Basic"
 title: "Walkthrough: Creating COM Objects"
 ms.date: 07/20/2015
 helpviewer_keywords: 

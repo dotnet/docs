@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Annotation in Queries"
 title: "Using Annotation in Queries"
 ms.date: "03/30/2017"
 ms.topic: "reference"

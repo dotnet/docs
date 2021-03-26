@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 702 - ServiceChannelOpenStop"
 title: "702 - ServiceChannelOpenStop"
 ms.date: "03/30/2017"
 ms.assetid: 190298c4-8216-4eb5-b8b0-8072400838c5

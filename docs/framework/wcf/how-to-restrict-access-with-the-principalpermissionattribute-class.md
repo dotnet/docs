@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Restrict Access with the PrincipalPermissionAttribute Class"
 title: "How to: Restrict Access with the PrincipalPermissionAttribute Class"
 ms.date: "03/30/2017"
 dev_langs: 

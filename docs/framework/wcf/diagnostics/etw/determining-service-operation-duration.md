@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Determining service operation duration"
 title: "Determining service operation duration"
 ms.date: "03/30/2017"
 ms.assetid: e8a93a2c-2c20-48b3-8986-57e90e9aa908

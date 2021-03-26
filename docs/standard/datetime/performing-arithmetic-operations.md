@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Performing arithmetic operations with dates and times"
 title: "Performing arithmetic operations with dates and times"
 ms.date: "04/10/2017"
 dev_langs: 

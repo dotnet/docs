@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRTask::SwitchIn Method"
 title: "ICLRTask::SwitchIn Method"
 ms.date: "03/30/2017"
 api_name: 

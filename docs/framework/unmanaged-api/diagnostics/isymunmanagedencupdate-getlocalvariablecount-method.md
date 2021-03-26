@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedENCUpdate::GetLocalVariableCount Method"
 title: "ISymUnmanagedENCUpdate::GetLocalVariableCount Method"
 ms.date: "03/30/2017"
 api_name: 

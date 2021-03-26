@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Data Service Using an ADO.NET Entity Framework Data Source (WCF Data Services)"
 title: "How to: Create a Data Service Using an ADO.NET Entity Framework Data Source (WCF Data Services)"
 ms.date: 08/24/2018
 helpviewer_keywords:
@@ -7,6 +8,8 @@ helpviewer_keywords:
 ms.assetid: 6d11fec8-0108-42f5-8719-2a7866d04428
 ---
 # How to: Create a Data Service Using an ADO.NET Entity Framework Data Source (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 WCF Data Services exposes entity data as a data service. This entity data is provided by the ADO.NETEntity Framework when the data source is a relational database. This topic shows you how to create an Entity Framework-based data model in a Visual Studio Web application that is based on an existing database and use this data model to create a new data service.
 

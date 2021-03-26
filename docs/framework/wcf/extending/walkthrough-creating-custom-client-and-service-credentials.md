@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Creating Custom Client and Service Credentials"
 title: "Walkthrough: Creating Custom Client and Service Credentials"
 ms.date: "03/30/2017"
 dev_langs:

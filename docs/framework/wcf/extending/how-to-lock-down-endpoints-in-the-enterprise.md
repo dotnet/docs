@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Lock Down Endpoints in the Enterprise"
 title: "How to: Lock Down Endpoints in the Enterprise"
 ms.date: "03/30/2017"
 ms.assetid: 1b7eaab7-da60-4cf7-9d6a-ec02709cf75d

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MissingRuntimeArtifactException Class (.NET Native)"
 title: "MissingRuntimeArtifactException Class (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: d5b3d13e-689f-4584-8ba6-44f5167a8590

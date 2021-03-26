@@ -33,9 +33,9 @@ and embedding of C# and Visual Basic in domain-specific languages.
 
 The .NET Compiler Platform SDK enables you to build ***analyzers*** and
 ***code fixes*** that find and correct coding mistakes. ***Analyzers***
-understand the syntax and structure of code and detect practices that
+understand the syntax (structure of code) and semantics to detect practices that
 should be corrected. ***Code fixes*** provide one or more suggested fixes
-for addressing coding mistakes found by analyzers. Typically, an analyzer
+for addressing coding mistakes found by analyzers or compiler diagnostics. Typically, an analyzer
 and the associated code fixes are packaged together in a single project.
 
 Analyzers and code fixes use static analysis to understand code. They
@@ -43,7 +43,8 @@ do not run the code or provide other testing benefits. They can, however,
 point out practices that often lead to bugs, unmaintainable code, or
 standard guideline violation.
 
-The .NET Compiler Platform SDK provides a single set of APIs that enable
+In addition to analyzers and code fixes, The .NET Compiler Platform SDK also enables you to build ***code refactorings***.
+It also provides a single set of APIs that enable
 you to examine and understand a C# or Visual Basic codebase. Because you
 can use this single codebase, you can write analyzers and code fixes more
 easily by leveraging the syntactic and semantic analysis APIs provided by
@@ -83,6 +84,9 @@ Teams can build analyzers and code fixes that look for the most common
 practices that violate team coding practices. These can be installed on
 each developer's machine to enforce the standards.
 
+> [!TIP]
+> Before building your own analyzer, check out the built-in ones. For more information, see [Code-style rules](../../fundamentals/code-analysis/overview.md#code-style-analysis).
+
 ## Provide guidance with library packages
 
 There is a wealth of libraries available for .NET developers on NuGet.
@@ -103,7 +107,7 @@ and suggested corrections.
 
 ## Provide general guidance
 
-The .NET developer community has discovered through experience patterns that
+The .NET developer community has discovered, through experience, patterns that
 work well and patterns that are best avoided. Several community members
 have created analyzers that enforce those recommended patterns. As we learn
 more, there is always room for new ideas.

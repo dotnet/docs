@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Retrieve Entity Conflict Information"
 title: "How to: Retrieve Entity Conflict Information"
 ms.date: "03/30/2017"
 dev_langs: 

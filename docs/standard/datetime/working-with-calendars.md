@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Work with calendars"
 title: "Working with calendars"
 ms.date: "04/01/2019"
 dev_langs:

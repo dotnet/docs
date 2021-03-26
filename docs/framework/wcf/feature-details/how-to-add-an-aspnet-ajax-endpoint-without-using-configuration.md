@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Add an ASP.NET AJAX Endpoint Without Using Configuration"
 title: "How to: Add an ASP.NET AJAX Endpoint Without Using Configuration"
 ms.date: "03/30/2017"
 ms.assetid: b05c1742-8d0a-4673-9d71-725b18a3008e

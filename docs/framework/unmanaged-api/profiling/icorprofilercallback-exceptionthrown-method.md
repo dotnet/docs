@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::ExceptionThrown Method"
 title: "ICorProfilerCallback::ExceptionThrown Method"
 ms.date: "03/30/2017"
 api_name: 
@@ -32,9 +33,8 @@ HRESULT ExceptionThrown(
   
 ## Parameters
 
-- `thrownObjectId`
-
-  \[in] The ID of the object that caused the exception to be thrown.
+`thrownObjectId`
+[in] The ID of the object that caused the exception to be thrown.
   
 ## Remarks  
 

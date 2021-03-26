@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostSemaphore Interface"
 title: "IHostSemaphore Interface"
 ms.date: "03/30/2017"
 api_name: 

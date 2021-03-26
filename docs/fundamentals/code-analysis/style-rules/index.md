@@ -26,6 +26,10 @@ ms.author: gewarren
 
    Rules that pertain to the naming of code elements. For example, you can specify that `async` method names must have an "Async" suffix.
 
+- [Miscellaneous rules](miscellaneous-rules.md)
+
+   Rules that do not belong in other categories.
+
 ## Index
 
 The following table list all the code style rules by ID and options, if any.

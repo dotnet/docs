@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Implementing IEnumerable(Of T) in Visual Basic"
 title: "Implementing IEnumerable"
 ms.date: 07/31/2018
 helpviewer_keywords: 

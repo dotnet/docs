@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a List of Items"
 title: "How to: Create a List of Items"
 ms.date: 07/20/2015
 helpviewer_keywords: 

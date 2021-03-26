@@ -22,9 +22,6 @@ When deploying legacy .NET Framework applications you have to target Windows Ser
 
 You can also create your own Docker image in cases where you want to use a different Linux distro or where you want an image with versions not provided by Microsoft. For example, you might create an image with ASP.NET Core running on the traditional .NET Framework and Windows Server Core, which is a not-so-common scenario for Docker.
 
-> [!IMPORTANT]
-> When using Windows Server Core images, you might find that some DLLs are missing, when compared to full Windows images. You might be able to solve this problem by creating a custom Server Core image, adding the missing files at image build time, as mentioned in this [GitHub comment](https://github.com/microsoft/dotnet-framework-docker/issues/299#issuecomment-511537448).
-
 When you add the image name to your Dockerfile file, you can select the operating system and version depending on the tag you use, as in the following examples:
 
 | Image | Comments |
@@ -33,11 +30,6 @@ When you add the image name to your Dockerfile file, you can select the operatin
 | mcr.microsoft.com/dotnet/aspnet:5.0 | ASP.NET Core 5.0 multi-architecture: Supports Linux and Windows Nano Server depending on the Docker host. <br/> The aspnetcore image has a few optimizations for ASP.NET Core. |
 | mcr.microsoft.com/dotnet/aspnet:5.0-buster-slim | .NET 5 runtime-only on Linux Debian distro |
 | mcr.microsoft.com/dotnet/aspnet:5.0-nanoserver-1809 | .NET 5 runtime-only on Windows Nano Server (Windows Server version 1809) |
-
-## Additional resources
-
-- **BitmapDecoder fails due to missing WindowsCodecsExt.dll (GitHub issue)**  
-  <https://github.com/microsoft/dotnet-framework-docker/issues/299>
 
 > [!div class="step-by-step"]
 > [Previous](container-framework-choice-factors.md)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Return Values for the CStr Function (Visual Basic)"
 title: "Return Values for the CStr Function"
 ms.date: 07/20/2015
 helpviewer_keywords: 

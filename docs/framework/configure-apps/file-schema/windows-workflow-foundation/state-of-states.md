@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <state> of <states>"
 title: "<state> of <states>"
 ms.date: "03/30/2017"
 ms.topic: "reference"

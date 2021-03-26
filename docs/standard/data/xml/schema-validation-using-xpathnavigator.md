@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Schema Validation using XPathNavigator"
 title: "Schema Validation using XPathNavigator"
 ms.date: "03/30/2017"
 dev_langs: 

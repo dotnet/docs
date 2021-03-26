@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3507 - ServiceEndpointAdded"
 title: "3507 - ServiceEndpointAdded"
 ms.date: "03/30/2017"
 ms.assetid: c068fc0e-07ee-4551-9824-ea7216e1fe37

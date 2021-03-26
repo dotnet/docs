@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft.Transactions.TransactionBridge.RegisterCoordinator"
 title: "Microsoft.Transactions.TransactionBridge.RegisterCoordinator"
 ms.date: "03/30/2017"
 ms.assetid: ebd69e9a-7a89-4a42-8f68-e756f8807a1a

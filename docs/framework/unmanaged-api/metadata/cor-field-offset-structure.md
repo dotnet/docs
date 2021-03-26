@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_FIELD_OFFSET Structure"
 title: "COR_FIELD_OFFSET Structure"
 ms.date: "03/30/2017"
 api_name: 

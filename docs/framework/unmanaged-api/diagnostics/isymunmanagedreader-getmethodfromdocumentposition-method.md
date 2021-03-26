@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedReader::GetMethodFromDocumentPosition Method"
 title: "ISymUnmanagedReader::GetMethodFromDocumentPosition Method"
 ms.date: "03/30/2017"
 api_name: 

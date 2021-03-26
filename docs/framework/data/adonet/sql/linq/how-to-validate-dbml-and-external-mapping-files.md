@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Validate DBML and External Mapping Files"
 title: "How to: Validate DBML and External Mapping Files"
 ms.date: "03/30/2017"
 ms.assetid: d9ea37f5-0a9e-4401-8fc3-1e6fd44c49f9

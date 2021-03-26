@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .NET Framework Support for Microsoft Store Apps and Windows Runtime"
 title: ".NET Framework Support for Microsoft Store Apps and Windows Runtime"
 ms.date: "03/30/2017"
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Durable Instance Context"
 title: "Durable Instance Context"
 ms.date: "03/30/2017"
 ms.assetid: 97bc2994-5a2c-47c7-927a-c4cd273153df

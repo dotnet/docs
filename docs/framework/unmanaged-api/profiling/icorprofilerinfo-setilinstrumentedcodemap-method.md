@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo::SetILInstrumentedCodeMap Method"
 title: "ICorProfilerInfo::SetILInstrumentedCodeMap Method"
 ms.date: "03/30/2017"
 api_name:
@@ -35,16 +36,16 @@ HRESULT SetILInstrumentedCodeMap(
 
 ## Parameters
 
-`functionId`\
+`functionId`
 [in] The ID of the function for which to set the code map.
 
-`fStartJit`\
+`fStartJit`
 [in] A Boolean value that indicates whether the call to the `SetILInstrumentedCodeMap` method is the first for a particular `FunctionID`. Set `fStartJit` to `true` in the first call to `SetILInstrumentedCodeMap` for a given `FunctionID`, and to `false` thereafter.
 
-`cILMapEntries`\
+`cILMapEntries`
 [in] The number of elements in the `cILMapEntries` array.
 
-`rgILMapEntries`\
+`rgILMapEntries`
 [in] An array of COR_IL_MAP structures, each of which specifies an MSIL offset.
 
 ## Remarks

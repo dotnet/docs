@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 5606 - PrincipalSettingFromSessionTokenStarted"
 title: "5606 - PrincipalSettingFromSessionTokenStarted"
 ms.date: "03/30/2017"
 ms.assetid: f307ffda-8a89-4527-a7e5-915b820508ee

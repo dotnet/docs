@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugLoadedModule::GetName Method"
 title: "ICorDebugLoadedModule::GetName Method"
 ms.date: "03/30/2017"
 ms.assetid: 88c304d5-edaa-4c0e-a8e1-144e8a76877e

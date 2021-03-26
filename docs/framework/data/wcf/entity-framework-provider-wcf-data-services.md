@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Entity Framework Provider (WCF Data Services)"
 title: "Entity Framework Provider (WCF Data Services)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
@@ -6,6 +7,8 @@ helpviewer_keywords:
 ms.assetid: 650b5eb6-c71d-4dc1-8b64-b6beaf752114
 ---
 # Entity Framework Provider (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Like WCF Data Services, the ADO.NET Entity Framework is based on the Entity Data Model, which is a type of entity-relationship model. The Entity Framework translates operations against its implementation of the Entity Data Model, which is called the *conceptual model*, into equivalent operations against a data source. This makes the Entity Framework an ideal provider for data services that are based on relational data, and any database that has a data provider that supports the Entity Framework can be used with WCF Data Services. For a list of the data sources that currently support the Entity Framework, see [Entity Framework Providers](/ef/ef6/fundamentals/providers/).
   

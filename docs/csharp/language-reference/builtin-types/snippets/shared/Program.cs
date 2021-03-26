@@ -38,12 +38,20 @@ namespace builtin_types
             StructType.Examples();
             Console.WriteLine();
 
+            Console.WriteLine("========== Records ===============");
+            RecordType.Examples();
+            Console.WriteLine();
+
             Console.WriteLine("===== Nullable reference types ===");
             NullableReferenceTypes.Examples();
             Console.WriteLine();
 
             Console.WriteLine("=========== Value tuples =========");
             ValueTuples.Examples();
+            Console.WriteLine();
+
+            Console.WriteLine("====== Native integer types ======");
+            NativeIntegerTypes.Examples();
             Console.WriteLine();
         }
     }

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Declare Enumerations (Visual Basic)"
 title: "How to: Declare Enumerations"
 ms.date: 07/20/2015
 helpviewer_keywords: 

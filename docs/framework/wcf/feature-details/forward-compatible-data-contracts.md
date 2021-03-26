@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Forward-Compatible Data Contracts"
 title: "Forward-Compatible Data Contracts"
 ms.date: "03/30/2017"
 dev_langs: 

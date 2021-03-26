@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC40039: Name <namespacename> in the root namespace <fullnamespacename> is not CLS-compliant"
 title: "Name <namespacename> in the root namespace <fullnamespacename> is not CLS-compliant"
 ms.date: 07/20/2015
 f1_keywords:

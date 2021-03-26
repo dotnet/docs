@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: != (Not Equal To) (Entity SQL)"
 title: "!= (Not Equal To) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 3b4a02ad-ddfc-4c42-8dfa-676234461312

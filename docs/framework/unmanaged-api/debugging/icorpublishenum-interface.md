@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorPublishEnum Interface"
 title: "ICorPublishEnum Interface"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 5011 - DCGenReaderStop"
 title: "5011 - DCGenReaderStop"
 ms.date: "03/30/2017"
 ms.assetid: 7d59368a-5ef0-4d3c-8bfe-8bb509b90afa

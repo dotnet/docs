@@ -7,8 +7,8 @@ ms.date: 09/30/2020
 
 C# is an object-oriented language. Four of the key techniques used in object-oriented programming are:
 
-- *Abstraction* means hiding the unnecessary details from type consumers.
-- *Encapsulation* means that a group of related properties, methods, and other members are treated as a single unit or object.
+- *Abstraction* means that a group of related properties, methods, and other members are treated as a single unit or object.
+- *Encapsulation* means hiding the unnecessary details from type consumers.
 - *Inheritance* describes the ability to create new classes based on an existing class.
 - *Polymorphism* means that you can have multiple classes that can be used interchangeably, even though each class implements the same properties or methods in different ways.
 
@@ -93,7 +93,16 @@ The override applies the monthly deposit set in the constructor. Add the followi
 
 Verify the results. Now, add a similar set of test code for the `LineOfCreditAccount`:
 
-:::code language="csharp" source="./snippets/object-oriented-programming/Program.cs" ID="TestLineOfCredit":::
+```
+    var lineOfCredit = new LineOfCreditAccount("line of credit", 0);
+    // How much is too much to borrow?
+    lineOfCredit.MakeWithdrawal(1000m, DateTime.Now, "Take out monthly advance");
+    lineOfCredit.MakeDeposit(50m, DateTime.Now, "Pay back small amount");
+    lineOfCredit.MakeWithdrawal(5000m, DateTime.Now, "Emergency funds for repairs");
+    lineOfCredit.MakeDeposit(150m, DateTime.Now, "Partial restoration on repairs");
+    lineOfCredit.PerformMonthEndTransactions();
+    Console.WriteLine(lineOfCredit.GetAccountHistory());
+ ```
 
 When you add the preceding code and run the program, you'll see something like the following error:
 
@@ -168,13 +177,13 @@ Run the program, and check the results.
 
 ## Summary
 
-If you got stuck, you can see the source for this tutorial [in our GitHub repo](https://github.com/dotnet/docs/tree/master/docs/csharp/tutorials/intro-to-csharp/snippets/object-oriented-programming).
+If you got stuck, you can see the source for this tutorial [in our GitHub repo](https://github.com/dotnet/docs/tree/main/docs/csharp/tutorials/intro-to-csharp/snippets/object-oriented-programming).
 
 This tutorial demonstrated many of the techniques used in Object-Oriented programming:
 
-- You used *Abstraction* when you kept many details `private` in each class.
-- You used *Encapsulation* when you defined classes for each of the different account types. Those classes described the behavior for that type of account.
+- You used *Abstraction* when you defined classes for each of the different account types. Those classes described the behavior for that type of account.
+- You used *Encapsulation* when you kept many details `private` in each class.
 - You used *Inheritance* when you leveraged the implementation already created in the `BankAccount` class to save code.
 - You used *Polymorphism* when you created `virtual` methods that derived classes could override to create specific behavior for that account type.
 
-Congratulations, you've finished all of our introduction to C# tutorials. To learn more, try more of our [tutorials](../index.md).
+Congratulations, you've finished all of our introduction to C# tutorials. To learn more, try more of our [tutorials](introduction-to-classes.md).

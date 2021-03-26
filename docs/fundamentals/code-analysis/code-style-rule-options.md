@@ -251,5 +251,5 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case
 - [Enforce code style on build](overview.md#code-style-analysis)
 - [Quick Actions in Visual Studio](/visualstudio/ide/quick-actions)
 - [Create portable custom editor options in Visual Studio](/visualstudio/ide/create-portable-custom-editor-options)
-- [.NET Compiler Platform "Roslyn" .editorconfig file](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
-- [.NET Compiler Platform Runtime .editorconfig file](https://github.com/dotnet/runtime/blob/master/.editorconfig)
+- [.NET Compiler Platform "Roslyn" .editorconfig file](https://github.com/dotnet/roslyn/blob/main/.editorconfig)
+- [.NET runtime .editorconfig file](https://github.com/dotnet/runtime/blob/main/.editorconfig)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Security Concepts Used in WCF"
 title: "Security Concepts Used in WCF"
 ms.date: "03/30/2017"
 ms.assetid: 3b9dfcf5-4bf1-4f35-9070-723171c823a1

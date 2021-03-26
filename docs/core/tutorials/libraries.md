@@ -11,11 +11,11 @@ This article covers how to write libraries for .NET using the .NET CLI. The CLI 
 
 ## Prerequisites
 
-You need [the .NET SDK and CLI](https://dotnet.microsoft.com/download) installed on your machine.
+You need the [.NET SDK](https://dotnet.microsoft.com/download) installed on your machine.
 
-For the sections of this document dealing with .NET Framework versions, you need the [.NET Framework](https://dotnet.microsoft.com) installed on a Windows machine.
+For the sections of this document dealing with .NET Framework versions, you need the [.NET Framework](https://dotnet.microsoft.com/download/dotnet-framework) installed on a Windows machine.
 
-Additionally, if you wish to support older .NET Framework targets, you need to install targeting packs or developer packs from the [.NET download archives page](https://dotnet.microsoft.com/download/archives). Refer to this table:
+Additionally, if you wish to support older .NET Framework targets, you need to install targeting packs or developer packs from the [.NET Framework downloads page](https://dotnet.microsoft.com/download/dotnet-framework). Refer to this table:
 
 | .NET Framework version | What to download                                       |
 | ---------------------- | ------------------------------------------------------ |

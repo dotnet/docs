@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use the Windows Communication Foundation Service Moniker without Registration"
 title: "How to: Use the Windows Communication Foundation Service Moniker without Registration"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

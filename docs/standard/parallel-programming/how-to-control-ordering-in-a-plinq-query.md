@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Control Ordering in a PLINQ Query"
 title: "How to: Control Ordering in a PLINQ Query"
 ms.date: "03/30/2017"
 dev_langs: 

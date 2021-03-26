@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Convert a Sequence to an Array"
 title: "Convert a Sequence to an Array"
 ms.date: "03/30/2017"
 dev_langs: 

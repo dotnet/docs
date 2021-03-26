@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <claimsAuthorizationManager>"
 title: "<claimsAuthorizationManager>"
 ms.date: "03/30/2017"
 ms.assetid: 9354eee3-f692-4ad6-8427-3169686b8bcc

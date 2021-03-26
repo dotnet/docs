@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3801 - RoutingServiceChannelFaulted"
 title: "3801 - RoutingServiceChannelFaulted"
 ms.date: "03/30/2017"
 ms.assetid: 06cd2a1a-ee5f-4f44-900c-15b5bb6e302b

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Navigating DataRelations"
 title: "Navigating DataRelations"
 ms.date: "03/30/2017"
 dev_langs: 

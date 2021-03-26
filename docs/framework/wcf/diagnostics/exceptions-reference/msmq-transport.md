@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MSMQ Transport"
 title: "MSMQ Transport"
 ms.date: "03/30/2017"
 ms.assetid: 3f29a2fe-24df-4614-b64c-b0c084fb7003

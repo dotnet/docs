@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Collection index must be in the range 1 to the size of the collection"
 title: "Collection index must be in the range 1 to the size of the collection"
 ms.date: 07/20/2015
 f1_keywords: 

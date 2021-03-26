@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Store and Reuse Queries"
 title: "How to: Store and Reuse Queries"
 ms.date: "03/30/2017"
 dev_langs: 

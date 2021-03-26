@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Handling COM Interop Exceptions"
 title: "Handling COM Interop Exceptions"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

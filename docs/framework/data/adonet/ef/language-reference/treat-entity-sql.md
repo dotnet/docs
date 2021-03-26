@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TREAT (Entity SQL)"
 title: "TREAT (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 5b77f156-55de-4cb4-8154-87f707d4c635

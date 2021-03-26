@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRPolicyManager::SetDefaultAction Method"
 title: "ICLRPolicyManager::SetDefaultAction Method"
 ms.date: "03/30/2017"
 api_name: 

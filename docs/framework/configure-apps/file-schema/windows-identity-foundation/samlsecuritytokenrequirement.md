@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <samlSecurityTokenRequirement>"
 title: "<samlSecurityTokenRequirement>"
 ms.date: "03/30/2017"
 ms.assetid: 09202d12-88d3-49cc-953b-703bcc1690eb

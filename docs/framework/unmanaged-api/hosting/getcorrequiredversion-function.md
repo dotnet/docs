@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GetCORRequiredVersion Function"
 title: "GetCORRequiredVersion Function"
 ms.date: "03/30/2017"
 api_name: 

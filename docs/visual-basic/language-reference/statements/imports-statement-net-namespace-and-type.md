@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Imports Statement (.NET Namespace and Type)"
 title: "Imports Statement - .NET Namespace and Type"
 ms.date: 07/20/2015
 f1_keywords: 

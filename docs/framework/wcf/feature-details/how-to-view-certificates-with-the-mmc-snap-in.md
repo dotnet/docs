@@ -45,7 +45,7 @@ The following procedure demonstrates how to examine the stores on your local dev
   
 6. In the **Add or Remove Snap-in** window, select **OK**.  
   
-    ![Add certificate snap-in](./media/mmc-certificate-snap-in-selected.png)
+    ![Add or Remove Snap-ins window with OK button highlighted](./media/mmc-certificate-snap-in-selected.png)
 
 7. Optional: From the **File** menu, select **Save** or **Save As** to save the MMC console file for later use.  
 

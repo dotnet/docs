@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ServiceAppDomain"
 title: "ServiceAppDomain"
 ms.date: "03/30/2017"
 ms.assetid: f28e5186-a66d-46c1-abe9-b50e07f8cb4f

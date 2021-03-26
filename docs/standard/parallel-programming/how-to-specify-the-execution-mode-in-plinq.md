@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Specify the Execution Mode in PLINQ"
 title: "How to: Specify the Execution Mode in PLINQ"
 ms.date: "03/30/2017"
 dev_langs: 

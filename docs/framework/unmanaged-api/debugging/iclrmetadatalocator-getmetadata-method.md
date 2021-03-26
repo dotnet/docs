@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRMetadataLocator::GetMetadata Method"
 title: "ICLRMetadataLocator::GetMetadata Method"
 ms.date: "03/30/2017"
 api_name: 

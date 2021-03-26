@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::AssemblyLoadFinished Method"
 title: "ICorProfilerCallback::AssemblyLoadFinished Method"
 ms.date: "03/30/2017"
 api_name: 
@@ -30,13 +31,11 @@ HRESULT AssemblyLoadFinished(
   
 ## Parameters
 
-- `assemblyId`
+`assemblyId`
+[in] Identifies the assembly that was loaded.
 
-  \[in] Identifies the assembly that was loaded.
-
-- `hrStatus`
-
-  \[in] An HRESULT that indicates whether the assembly finished loading successfully.
+`hrStatus`
+[in] An HRESULT that indicates whether the assembly finished loading successfully.
 
 ## Remarks  
 

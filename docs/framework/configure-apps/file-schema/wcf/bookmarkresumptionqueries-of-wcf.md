@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <bookmarkResumptionQueries> of WCF"
 title: "<bookmarkResumptionQueries> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: ed086712-1dc7-4932-a592-d1116a0155f3

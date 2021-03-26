@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft.Transactions.TransactionBridge.CreateTransactionFailure"
 title: "Microsoft.Transactions.TransactionBridge.CreateTransactionFailure"
 ms.date: "03/30/2017"
 ms.assetid: c3468e23-49a9-4a84-972d-a79a658851b3

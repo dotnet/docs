@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Inheritance Basics (Visual Basic)"
 title: "Inheritance Basics"
 ms.date: 07/20/2015
 helpviewer_keywords:

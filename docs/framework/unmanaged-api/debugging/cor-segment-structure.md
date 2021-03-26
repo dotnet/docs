@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_SEGMENT Structure"
 title: "COR_SEGMENT Structure"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using a Custom Binding with the Discovery Client Channel"
 title: "Using a Custom Binding with the Discovery Client Channel"
 ms.date: "03/30/2017"
 ms.assetid: 36f95e75-04f7-44f3-a995-a0d623624d7f

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport2::EnumGenericParams Method"
 title: "IMetaDataImport2::EnumGenericParams Method"
 ms.date: "03/30/2017"
 api_name: 

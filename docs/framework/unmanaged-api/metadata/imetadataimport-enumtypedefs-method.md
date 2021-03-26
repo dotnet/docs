@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::EnumTypeDefs Method"
 title: "IMetaDataImport::EnumTypeDefs Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Security.SecurityClientSessionKeyRenewed"
 title: "System.ServiceModel.Security.SecurityClientSessionKeyRenewed"
 ms.date: "03/30/2017"
 ms.assetid: c99048ee-062b-4b21-bb9b-77c465a318c6

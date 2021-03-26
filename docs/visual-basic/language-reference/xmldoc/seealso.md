@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <seealso> (Visual Basic)"
 title: "<seealso>"
 ms.date: 07/20/2015
 helpviewer_keywords: 

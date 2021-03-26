@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <transportConfigurationTypes>"
 title: "<transportConfigurationTypes>"
 ms.date: "03/30/2017"
 ms.assetid: 929c8b0a-5460-4f66-a098-2cb8d4e10b69

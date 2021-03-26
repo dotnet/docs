@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: APIs That Rely on Reflection"
 title: "APIs That Rely on Reflection"
 ms.date: "03/30/2017"
 ms.assetid: f9532629-6594-4a41-909f-d083f30a42f3

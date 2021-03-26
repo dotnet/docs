@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC31103: 'Get' accessor of property '<propertyname>' is not accessible"
 title: "'Get' accessor of property '<propertyname>' is not accessible"
 ms.date: 07/20/2015
 f1_keywords:

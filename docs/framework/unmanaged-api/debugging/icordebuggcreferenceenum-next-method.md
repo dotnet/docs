@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugGCReferenceEnum::Next Method"
 title: "ICorDebugGCReferenceEnum::Next Method"
 ms.date: "03/30/2017"
 api_name: 

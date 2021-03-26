@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Activation.ServiceShutdown"
 title: "System.ServiceModel.Activation.ServiceShutdown"
 ms.date: "03/30/2017"
 ms.assetid: fc356855-f996-4c0d-9ff9-503103803d91

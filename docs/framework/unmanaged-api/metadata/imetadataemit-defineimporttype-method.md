@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::DefineImportType Method"
 title: "IMetaDataEmit::DefineImportType Method"
 ms.date: "03/30/2017"
 api_name: 

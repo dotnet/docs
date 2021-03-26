@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ActivityTransfer"
 title: "ActivityTransfer"
 ms.date: "03/30/2017"
 ms.assetid: fc40ef17-2a92-4ce2-853c-6ba8e5d571f3

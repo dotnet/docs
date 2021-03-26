@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::DefineTypeRefByName Method"
 title: "IMetaDataEmit::DefineTypeRefByName Method"
 ms.date: "03/30/2017"
 api_name: 

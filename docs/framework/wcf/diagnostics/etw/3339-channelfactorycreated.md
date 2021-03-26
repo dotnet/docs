@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3339 - ChannelFactoryCreated"
 title: "3339 - ChannelFactoryCreated"
 ms.date: "03/30/2017"
 ms.assetid: 97a395dd-d0d4-471b-b42f-eb4368cd15e4

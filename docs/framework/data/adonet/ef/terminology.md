@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Entity Framework Terminology"
 title: "Entity Framework Terminology"
 ms.date: "03/30/2017"
 ms.assetid: fa2a1bd1-6118-487b-8673-eebc66b92945

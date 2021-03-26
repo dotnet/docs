@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dynamic Update"
 title: "Dynamic Update"
 ms.date: "03/30/2017"
 ms.assetid: 8b6ef19b-9691-4b4b-824c-3c651a9db96e

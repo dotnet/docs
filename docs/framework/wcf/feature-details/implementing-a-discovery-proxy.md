@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implementing a Discovery Proxy"
 title: "Implementing a Discovery Proxy"
 ms.date: "03/30/2017"
 ms.assetid: dda20e79-8df3-438e-a281-69d779d978ec

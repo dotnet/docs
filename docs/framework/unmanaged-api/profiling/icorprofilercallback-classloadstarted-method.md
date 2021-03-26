@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::ClassLoadStarted Method"
 title: "ICorProfilerCallback::ClassLoadStarted Method"
 ms.date: "03/30/2017"
 api_name: 
@@ -29,9 +30,8 @@ HRESULT ClassLoadStarted(
   
 ## Parameters
 
-- `classId`
-
-  \[in] Identifies the class that is being loaded.
+`classId`
+[in] Identifies the class that is being loaded.
 
 ## Remarks  
 

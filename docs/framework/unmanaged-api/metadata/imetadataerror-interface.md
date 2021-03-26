@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataError Interface"
 title: "IMetaDataError Interface"
 ms.date: "03/30/2017"
 api_name: 

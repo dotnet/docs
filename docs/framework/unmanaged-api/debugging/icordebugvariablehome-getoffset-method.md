@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugVariableHome::GetOffset Method"
 title: "ICorDebugVariableHome::GetOffset Method"
 ms.date: "03/30/2017"
 api_name: 

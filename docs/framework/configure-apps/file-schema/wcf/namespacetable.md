@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <namespaceTable>"
 title: "<namespaceTable>"
 ms.date: "03/30/2017"
 ms.assetid: 64801766-01b7-4c65-9ce6-70ad5af67689

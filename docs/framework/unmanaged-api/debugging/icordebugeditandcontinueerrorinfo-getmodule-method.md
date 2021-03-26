@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugEditAndContinueErrorInfo::GetModule Method"
 title: "ICorDebugEditAndContinueErrorInfo::GetModule Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugNativeFrame::GetLocalRegisterValue Method"
 title: "ICorDebugNativeFrame::GetLocalRegisterValue Method"
 ms.date: "03/30/2017"
 api_name: 

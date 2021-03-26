@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FunctionTailcall2 Function"
 title: "FunctionTailcall2 Function"
 ms.date: "03/30/2017"
 api_name: 
@@ -31,19 +32,16 @@ void __stdcall FunctionTailcall2 (
   
 ## Parameters
 
-- `funcId`
+`funcId`
+[in] The identifier of the currently executing function that is about to make a tail call.
 
-  \[in] The identifier of the currently executing function that is about to make a tail call.
-
-- `clientData`
-
-  \[in] The remapped function identifier, which the profiler previously specified via [FunctionIDMapper](functionidmapper-function.md), of the currently executing function that is about to make a tail call.
+`clientData`
+[in] The remapped function identifier, which the profiler previously specified via [FunctionIDMapper](functionidmapper-function.md), of the currently executing function that is about to make a tail call.
   
-- `func`
+`func`
+[in] A `COR_PRF_FRAME_INFO` value that points to information about the stack frame.
 
-  \[in] A `COR_PRF_FRAME_INFO` value that points to information about the stack frame.
-
-  The profiler should treat this as an opaque handle that can be passed back to the execution engine in the [ICorProfilerInfo2::GetFunctionInfo2](icorprofilerinfo2-getfunctioninfo2-method.md) method.
+The profiler should treat this as an opaque handle that can be passed back to the execution engine in the [ICorProfilerInfo2::GetFunctionInfo2](icorprofilerinfo2-getfunctioninfo2-method.md) method.
 
 ## Remarks  
 

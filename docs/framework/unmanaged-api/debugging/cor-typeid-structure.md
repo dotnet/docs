@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_TYPEID Structure"
 title: "COR_TYPEID Structure"
 ms.date: "03/30/2017"
 api_name: 

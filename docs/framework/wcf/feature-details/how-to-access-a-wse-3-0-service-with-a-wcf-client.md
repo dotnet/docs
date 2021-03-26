@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Access a WSE 3.0 Service with a WCF Client"
 title: "How to: Access a WSE 3.0 Service with a WCF Client"
 ms.date: "03/30/2017"
 dev_langs: 

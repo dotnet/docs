@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: LoadStringRC Function"
 title: "LoadStringRC Function"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Finding Rows"
 title: "Finding Rows"
 ms.date: "03/30/2017"
 dev_langs: 

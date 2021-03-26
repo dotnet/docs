@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebug::Terminate Method"
 title: "ICorDebug::Terminate Method"
 ms.date: "03/30/2017"
 api_name: 

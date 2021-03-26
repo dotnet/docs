@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess6::MarkDebuggerAttached Method"
 title: "ICorDebugProcess6::MarkDebuggerAttached Method"
 ms.date: "03/30/2017"
 ms.assetid: bf94f090-5265-4112-8e57-5b4e20e070d0

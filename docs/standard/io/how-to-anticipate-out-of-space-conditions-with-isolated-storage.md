@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Anticipate Out-of-Space Conditions with Isolated Storage"
 title: "How to: Anticipate Out-of-Space Conditions with Isolated Storage"
 ms.date: "03/30/2017"
 dev_langs:

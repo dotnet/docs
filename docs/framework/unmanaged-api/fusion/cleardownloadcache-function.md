@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ClearDownloadCache Function"
 title: "ClearDownloadCache Function"
 ms.date: "03/30/2017"
 api_name: 

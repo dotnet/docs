@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ?. and ?() null-conditional operators (Visual Basic)"
 title: "Null-conditional Operators"
 ms.date: 10/19/2018
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRMetaHostPolicy::GetRequestedRuntime Method"
 title: "ICLRMetaHostPolicy::GetRequestedRuntime Method"
 ms.date: "03/30/2017"
 api_name:

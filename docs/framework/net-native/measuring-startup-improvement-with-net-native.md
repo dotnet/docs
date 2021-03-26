@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Measuring Startup Improvement with .NET Native"
 title: "Measuring Startup Improvement with .NET Native"
 ms.date: "03/30/2017"
 ms.assetid: c4d25b24-9c1a-4b3e-9705-97ba0d6c0289

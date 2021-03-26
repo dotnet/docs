@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::ExceptionUnwindFunctionEnter Method"
 title: "ICorProfilerCallback::ExceptionUnwindFunctionEnter Method"
 ms.date: "03/30/2017"
 api_name: 
@@ -29,9 +30,8 @@ HRESULT ExceptionUnwindFunctionEnter(
   
 ## Parameters
 
-- `functionId`
-
-  \[in] The ID of the function that is being unwound.
+`functionId`
+[in] The ID of the function that is being unwound.
 
 ## Remarks  
 

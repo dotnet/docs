@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Or Operator (Visual Basic)"
 title: "Or Operator"
 ms.date: 07/20/2015
 f1_keywords: 

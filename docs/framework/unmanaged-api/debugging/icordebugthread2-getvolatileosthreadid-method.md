@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugThread2::GetVolatileOSThreadID Method"
 title: "ICorDebugThread2::GetVolatileOSThreadID Method"
 ms.date: "03/30/2017"
 api_name: 

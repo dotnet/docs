@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRValidator::Validate Method"
 title: "ICLRValidator::Validate Method"
 ms.date: "03/30/2017"
 api_name: 

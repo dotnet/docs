@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugVirtualUnwinder Interface"
 title: "ICorDebugVirtualUnwinder Interface"
 ms.date: "03/30/2017"
 ms.assetid: a09e9ccc-0b37-43e3-95c1-bc5fa7ee5f42

@@ -1,6 +1,6 @@
 ---
 title: "Unsafe code and pointers - C# Programming Guide"
-Description: Learn about unsafe code and pointers. C# doesn't support pointers, but you can define an unsafe context in which pointers can be used with an 'unsafe' keyword.
+description: Learn about unsafe code and pointers. C# doesn't support pointers, but you can define an unsafe context in which pointers can be used with an 'unsafe' keyword.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "security [C#], type safety"
@@ -31,7 +31,7 @@ Unsafe code has the following properties:
 
 - Using unsafe code introduces security and stability risks.
 
-- The code that contains unsafe blocks must be compiled with the [-unsafe](../../language-reference/compiler-options/unsafe-compiler-option.md) compiler option.
+- The code that contains unsafe blocks must be compiled with the [**AllowUnsafeBlocks**](../../language-reference/compiler-options/language.md#allowunsafeblocks) compiler option.
   
 ## Related sections
 

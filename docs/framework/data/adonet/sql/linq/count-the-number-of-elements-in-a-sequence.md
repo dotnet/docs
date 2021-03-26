@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Count the Number of Elements in a Sequence"
 title: "Count the Number of Elements in a Sequence"
 ms.date: "03/30/2017"
 dev_langs: 

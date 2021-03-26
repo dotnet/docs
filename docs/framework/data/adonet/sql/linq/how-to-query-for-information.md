@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Query for Information"
 title: "How to: Query for Information"
 ms.date: "03/30/2017"
 dev_langs: 

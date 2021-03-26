@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COM Interoperability in .NET Framework Applications (Visual Basic)"
 title: "COM Interoperability in .NET Framework Applications"
 ms.date: 07/20/2015
 helpviewer_keywords: 

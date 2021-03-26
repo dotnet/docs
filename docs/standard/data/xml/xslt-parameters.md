@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XSLT Parameters"
 title: "XSLT Parameters"
 ms.date: "03/30/2017"
 dev_langs: 

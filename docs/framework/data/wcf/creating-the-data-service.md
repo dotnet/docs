@@ -9,6 +9,8 @@ ms.assetid: 34d1d971-5e18-4c22-9bf6-d3612e27ea59
 ---
 # Create the data service
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 In this topic, you create a sample data service that uses WCF Data Services to expose an Open Data Protocol (OData) feed that's based on the Northwind sample database. The task involves the following basic steps:
 
 1. Create an ASP.NET Web application.

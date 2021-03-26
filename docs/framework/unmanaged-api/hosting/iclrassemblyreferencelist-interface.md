@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRAssemblyReferenceList Interface"
 title: "ICLRAssemblyReferenceList Interface"
 ms.date: "03/30/2017"
 api_name: 

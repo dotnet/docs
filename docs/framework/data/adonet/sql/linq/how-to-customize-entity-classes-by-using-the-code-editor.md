@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Customize Entity Classes by Using the Code Editor"
 title: "How to: Customize Entity Classes by Using the Code Editor"
 ms.date: "03/30/2017"
 ms.assetid: ec28332f-9f3c-4e0a-baca-60f9141a68c0

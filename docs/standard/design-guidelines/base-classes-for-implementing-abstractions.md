@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Base Classes for Implementing Abstractions"
 title: "Base Classes for Implementing Abstractions"
 ms.date: "10/22/2008"
 helpviewer_keywords:

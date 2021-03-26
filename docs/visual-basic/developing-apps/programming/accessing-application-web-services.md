@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accessing Application Web Services (Visual Basic)"
 title: "Accessing Application Web Services"
 ms.date: 07/20/2015
 helpviewer_keywords:

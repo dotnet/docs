@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostCrst::Enter Method"
 title: "IHostCrst::Enter Method"
 ms.date: "03/30/2017"
 api_name: 

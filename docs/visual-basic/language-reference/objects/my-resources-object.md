@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: My.Resources Object"
 title: "My.Resources Object"
 ms.date: 07/20/2015
 f1_keywords: 

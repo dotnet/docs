@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Programmatically Add Discoverability to a WCF Service and Client"
 title: "How to: Programmatically Add Discoverability to a WCF Service and Client"
 ms.date: "03/30/2017"
 ms.assetid: 4f7ae7ab-6fc8-4769-9730-c14d43f7b9b1

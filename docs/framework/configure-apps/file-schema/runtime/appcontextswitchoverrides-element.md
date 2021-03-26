@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <AppContextSwitchOverrides> element"
 title: "AppContextSwitchOverrides Element"
 ms.date: "04/18/2019"
 helpviewer_keywords:

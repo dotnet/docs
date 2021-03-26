@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3357 - SecurityIdentityVerificationFailure"
 title: "3357 - SecurityIdentityVerificationFailure"
 ms.date: "03/30/2017"
 ms.assetid: e5629542-9067-42ba-b1cc-e8af61484643

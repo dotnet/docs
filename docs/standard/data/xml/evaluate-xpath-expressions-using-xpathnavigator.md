@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Evaluate XPath Expressions using XPathNavigator"
 title: "Evaluate XPath Expressions using XPathNavigator"
 ms.date: "03/30/2017"
 dev_langs: 

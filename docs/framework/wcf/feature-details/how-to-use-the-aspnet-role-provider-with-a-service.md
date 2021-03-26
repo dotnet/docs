@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use the ASP.NET Role Provider with a Service"
 title: "How to: Use the ASP.NET Role Provider with a Service"
 ms.date: "03/30/2017"
 ms.assetid: 88d33a81-8ac7-48de-978c-5c5b1257951e

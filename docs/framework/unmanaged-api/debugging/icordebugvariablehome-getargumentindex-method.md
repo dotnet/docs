@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugVariableHome::GetArgumentIndex Method"
 title: "ICorDebugVariableHome::GetArgumentIndex Method"
 ms.date: "03/30/2017"
 api_name:

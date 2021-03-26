@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: International Resource Identifier Support in System.Uri"
 title: "International Resource Identifier Support in System.Uri"
 ms.date: "03/30/2017"
 ms.assetid: b5e994c3-3535-4aff-8e1b-b69be22e9a22

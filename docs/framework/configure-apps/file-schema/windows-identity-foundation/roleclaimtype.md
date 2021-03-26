@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <roleClaimType>"
 title: "<roleClaimType>"
 ms.date: "03/30/2017"
 ms.assetid: 69a49deb-6369-41ba-806b-ae8d21fac64b

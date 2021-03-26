@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Transaction and Bulk Copy Operations"
 title: "Transaction and Bulk Copy Operations"
 ms.date: "03/30/2017"
 dev_langs: 

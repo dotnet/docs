@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.PortSharing.PortSharingClosed"
 title: "System.ServiceModel.PortSharing.PortSharingClosed"
 ms.date: "03/30/2017"
 ms.assetid: 8f93c5b3-d56c-412f-9c26-68da85f4bd92

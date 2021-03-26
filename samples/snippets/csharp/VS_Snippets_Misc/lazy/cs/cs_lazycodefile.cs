@@ -211,16 +211,16 @@ namespace CS_lazy
             //<snippet10>
             // Assume that _orders contains null values, and
             // we only need to initialize them if displayOrderInfo is true
-            if(displayOrderInfo == true)
+            if (displayOrderInfo == true)
             {
                 for (int i = 0; i < _orders.Length; i++)
                 {
                     // Lazily initialize the orders without wrapping them in a Lazy<T>
                     LazyInitializer.EnsureInitialized(ref _orders[i], () =>
-                        {
-                            // Returns the value that will be placed in the ref parameter.
-                            return GetOrderForIndex(i);
-                        });
+                    {
+                        // Returns the value that will be placed in the ref parameter.
+                        return GetOrderForIndex(i);
+                    });
                 }
             }
             //</snippet10>

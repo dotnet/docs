@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Configuration file schema for the .NET Framework"
 title: "Configuration file schema for the .NET Framework"
 ms.date: "05/01/2017"
 helpviewer_keywords: 

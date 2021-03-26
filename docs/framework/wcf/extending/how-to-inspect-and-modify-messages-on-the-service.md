@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Inspect and Modify Messages on the Service"
 title: "How to: Inspect and Modify Messages on the Service"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Extending Control Over Error Handling and Reporting"
 title: "Extending Control Over Error Handling and Reporting"
 ms.date: "03/30/2017"
 ms.assetid: 45f996a7-fa00-45cb-9d6f-b368f5778aaa

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Declare Faults in Service Contracts"
 title: "How to: Declare Faults in Service Contracts"
 ms.date: "03/30/2017"
 dev_langs:

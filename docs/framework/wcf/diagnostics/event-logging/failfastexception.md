@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FailFastException"
 title: "FailFastException"
 ms.date: "03/30/2017"
 ms.assetid: f30de0d9-3a91-4800-9d09-3504d7e5a10f

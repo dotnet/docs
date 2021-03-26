@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft.Transactions.TransactionBridge.VolatileOutcomeTimeout"
 title: "Microsoft.Transactions.TransactionBridge.VolatileOutcomeTimeout"
 ms.date: "03/30/2017"
 ms.assetid: 2dbe34c5-57c7-4b64-9257-63021911d03c

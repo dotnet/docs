@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <message> of <ws2007HttpBinding>"
 title: "<message> of <ws2007HttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 9ffd8db6-84a8-4b38-a9fe-2cb1a87a1c97

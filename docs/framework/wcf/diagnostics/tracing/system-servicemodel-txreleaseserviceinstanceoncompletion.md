@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.TxReleaseServiceInstanceOnCompletion"
 title: "System.ServiceModel.TxReleaseServiceInstanceOnCompletion"
 ms.date: "03/30/2017"
 ms.assetid: e167bad3-861f-43e4-9e78-9c275cf64a29

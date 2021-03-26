@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::RuntimeThreadResumed Method"
 title: "ICorProfilerCallback::RuntimeThreadResumed Method"
 ms.date: "03/30/2017"
 api_name: 

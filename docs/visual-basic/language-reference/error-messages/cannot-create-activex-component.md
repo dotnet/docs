@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cannot create ActiveX Component"
 title: "Cannot create ActiveX Component"
 ms.date: 07/20/2015
 f1_keywords: 
@@ -16,4 +17,4 @@ You tried to place an ActiveX control on a form at design time or add a form to 
 ## See also
 
 - [Error Types](../../programming-guide/language-features/error-types.md)
-- [Talk to Us](/visualstudio/ide/feedback-options)
+- [Visual Studio feedback options](/visualstudio/ide/feedback-options)

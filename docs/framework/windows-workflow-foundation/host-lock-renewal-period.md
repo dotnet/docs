@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Host Lock Renewal Period"
 title: "Host Lock Renewal Period"
 ms.date: "03/30/2017"
 ms.assetid: f8ba94fc-27e0-4d8e-8f85-50a6d2a3cd43

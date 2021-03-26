@@ -1,7 +1,7 @@
 ---
 title: Create a .NET console application using Visual Studio
 description: Learn how to create a .NET console application with C# or Visual Basic using Visual Studio.
-ms.date: 06/08/2020
+ms.date: 03/26/2021
 dev_langs:
   - "csharp"
   - "vb"
@@ -94,7 +94,7 @@ Enhance the application to prompt the user for their name and display it along w
    :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="MainMethod":::
    :::code language="vb" source="./snippets/with-visual-studio/vb/Program.vb" id="MainMethod":::
 
-   This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date` (`currentDate` in Visual Basic). And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> method to wait for user input.
+   This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> method to wait for user input.
 
    <xref:System.Environment.NewLine> is a platform-independent and language-independent way to represent a line break. Alternatives are `\n` in C# and `vbCrLf` in Visual Basic.
 

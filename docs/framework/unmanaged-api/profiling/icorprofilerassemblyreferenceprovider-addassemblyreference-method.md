@@ -30,9 +30,8 @@ HRESULT AddAssemblyReference(
   
 ## Parameters
 
-- `pAssemblyRefInfo`
-
-  A pointer to a [COR_PRF_ASSEMBLY_REFERENCE_INFO](cor-prf-assembly-reference-info-structure.md) structure that provides the CLR with information about an assembly reference that it should consider when performing an assembly reference closure walk.
+`pAssemblyRefInfo`
+A pointer to a [COR_PRF_ASSEMBLY_REFERENCE_INFO](cor-prf-assembly-reference-info-structure.md) structure that provides the CLR with information about an assembly reference that it should consider when performing an assembly reference closure walk.
   
 ## Remarks  
 

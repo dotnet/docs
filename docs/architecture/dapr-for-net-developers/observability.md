@@ -2,7 +2,7 @@
 title: The Dapr observability building block
 description: A description of the observability building block, its features, benefits, and how to apply it
 author: edwinvw
-ms.date: 02/07/2021
+ms.date: 02/17/2021
 ms.reviewer: robvet
 ---
 
@@ -35,7 +35,7 @@ As Dapr abstracts away the plumbing, the application is unaware of how observabi
 
 Dapr's [sidecar architecture](dapr-at-20000-feet.md#sidecar-architecture) enables built-in observability features. As services communicate, Dapr sidecars intercept the traffic and extract tracing, metrics, and logging information. Telemetry is published in an open standards format. By default, Dapr supports [OpenTelemetry](https://opentelemetry.io/) and [Zipkin](https://zipkin.io/).
 
-Dapr provides [collectors](https://docs.dapr.io/operations/monitoring/open-telemetry-collector/) that can publish telemetry to different back-end monitoring tools. These tools present Dapr telemetry for analysis and querying. Figure 9-1 shows the Dapr observability architecture:
+Dapr provides [collectors](https://docs.dapr.io/operations/monitoring/tracing/open-telemetry-collector/) that can publish telemetry to different back-end monitoring tools. These tools present Dapr telemetry for analysis and querying. Figure 9-1 shows the Dapr observability architecture:
 
 ![Dapr observability architecture](media/observability/observability-architecture.png)
 
@@ -280,7 +280,7 @@ Dapr generates a large set of metrics for Dapr system services and its runtime. 
 | dapr_http_server_request_count     | Runtime | Number of HTTP requests started in an HTTP server.           |
 | dapr_http/client/sent_bytes        | Runtime | Total bytes sent in request body (not including headers) by an HTTP client. |
 
-For more information on available metrics, see the [Dapr metrics documentation](https://docs.dapr.io/developing-applications/building-blocks/observability/metrics).
+For more information on available metrics, see the [Dapr metrics documentation](https://docs.dapr.io/operations/monitoring/metrics/).
 
 #### Configure Dapr metrics
 
@@ -307,7 +307,7 @@ With the Prometheus scraper collecting and publishing metrics into the monitorin
 
 ![Grafana dashboard displaying Dapr system services metrics](media/observability/grafana-sample.png)
 
-The Dapr documentation includes a [tutorial for installing Prometheus and Grafana](https://docs.dapr.io/operations/monitoring/grafana/).
+The Dapr documentation includes a [tutorial for installing Prometheus and Grafana](https://docs.dapr.io/operations/monitoring/metrics/grafana/).
 
 ### Logging
 
@@ -376,7 +376,7 @@ helm install dapr dapr/dapr --namespace dapr-system --set global.logAsJson=true
 
 #### Collect logs
 
-The logs emitted by Dapr can be fed into a monitoring back end for analysis. A log collector is a component that collects logs from a system and sends them to a monitoring back end. A popular log collector is [Fluentd](https://www.fluentd.org/). Check out the [How-To: Set up Fluentd, Elastic search and Kibana in Kubernetes](https://docs.dapr.io/operations/monitoring/fluentd/) in the Dapr documentation. This article contains instructions for setting up Fluentd as log collector and the [ELK Stack](https://www.elastic.co/elastic-stack) (Elastic Search and Kibana) as a monitoring back end.
+The logs emitted by Dapr can be fed into a monitoring back end for analysis. A log collector is a component that collects logs from a system and sends them to a monitoring back end. A popular log collector is [Fluentd](https://www.fluentd.org/). Check out the [How-To: Set up Fluentd, Elastic search and Kibana in Kubernetes](https://docs.dapr.io/operations/monitoring/logging/fluentd/) in the Dapr documentation. This article contains instructions for setting up Fluentd as log collector and the [ELK Stack](https://www.elastic.co/elastic-stack) (Elastic Search and Kibana) as a monitoring back end.
 
 ### Health status
 

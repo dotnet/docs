@@ -100,7 +100,7 @@ Subsequent revisions to the standards have been developed by the TC49-TG2 (C#) a
 The following official Ecma documents are available for [C#](https://www.ecma-international.org/publications-and-standards/standards/ecma-334/) and the [CLI](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/) ([TR-84](https://www.ecma-international.org/publications-and-standards/technical-reports/ecma-tr-84/)):
 
 - **The C# Language Standard (version 5.0)**: [ECMA-334.pdf](https://www.ecma-international.org/wp-content/uploads/ECMA-334_5th_edition_december_2017.pdf)
-- **The Common Language Infrastructure**: [ECMA-335.pdf](hhttps://www.ecma-international.org/wp-content/uploads/ECMA-335_6th_edition_june_2012.pdf).
+- **The Common Language Infrastructure**: [ECMA-335.pdf](https://www.ecma-international.org/wp-content/uploads/ECMA-335_6th_edition_june_2012.pdf).
 - **Information Derived from the Partition IV XML File**: [ECMA-084.pdf](https://www.ecma-international.org/publications/files/ECMA-TR/ECMA%20TR-084.pdf) format.
 
 The official ISO/IEC documents are available from the ISO/IEC [Publicly Available Standards](https://standards.iso.org/ittf/PubliclyAvailableStandards/) page. These links are direct from that page:

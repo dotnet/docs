@@ -277,7 +277,7 @@ by 3.  Here are a few hints:
 - The `for` loop can help you repeat a series of steps for all the numbers 1 through 20.
 
 Try it yourself. Then check how you did. You should get 63 for an answer. You can see one possible answer by
-[viewing the completed code on GitHub](https://github.com/dotnet/samples/tree/master/csharp/branches-quickstart/Program.cs#L46-L54).
+[viewing the completed code on GitHub](https://github.com/dotnet/samples/blob/main/csharp/branches-quickstart/Program.cs#L87-L95).
 
 You've completed the "branches and loops" tutorial.
 

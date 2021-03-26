@@ -25,9 +25,8 @@ HRESULT GetLOHObjectSizeThreshold( [out] DWORD *pThreshold );
 
 ## Parameters
 
-- `pThreshold`
-
-  \[out] The large object heap threshold in bytes.
+`pThreshold`
+[out] The large object heap threshold in bytes.
 
 ## Remarks
 

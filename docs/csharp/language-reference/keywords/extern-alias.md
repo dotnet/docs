@@ -65,4 +65,4 @@ using Class1V2 = GridV2::Namespace.Class1;
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
 - [:: Operator](../operators/namespace-alias-qualifier.md)
-- [-reference (C# Compiler Options)](../compiler-options/reference-compiler-option.md)
+- [**References** (C# Compiler Options)](../compiler-options/inputs.md#references)

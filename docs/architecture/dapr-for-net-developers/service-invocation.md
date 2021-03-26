@@ -2,7 +2,7 @@
 title: The Dapr service invocation building block
 description: A description of the service invocation building block, its features, benefits, and how to apply it
 author: amolenk
-ms.date: 02/07/2021
+ms.date: 02/17/2021
 ---
 
 # The Dapr service invocation building block

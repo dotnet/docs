@@ -72,11 +72,11 @@ The SDK is used to build and publish .NET apps and libraries. Installing the SDK
 
 | .NET Core Version | macOS                 | Architectures | More information    |
 | ----------------- | --------------------- | --------------| --- |
-| 5.0               | High Sierra (10.13+)  | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0-supported-os.md) |
-| 3.1               | High Sierra (10.13+)  | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md) |
-| 3.0               | High Sierra (10.13+)  | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) |
-| 2.2               | Sierra (10.12+)       | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md) |
-| 2.1               | Sierra (10.12+)       | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) |
+| 5.0               | High Sierra (10.13+)  | x64 | [More information](https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md) |
+| 3.1               | High Sierra (10.13+)  | x64 | [More information](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md) |
+| 3.0               | High Sierra (10.13+)  | x64 | [More information](https://github.com/dotnet/core/blob/main/release-notes/3.0/3.0-supported-os.md) |
+| 2.2               | Sierra (10.12+)       | x64 | [More information](https://github.com/dotnet/core/blob/main/release-notes/2.2/2.2-supported-os.md) |
+| 2.1               | Sierra (10.12+)       | x64 | [More information](https://github.com/dotnet/core/blob/main/release-notes/2.1/2.1-supported-os.md) |
 
 Beginning with macOS Catalina (version 10.15), all software built after June 1, 2019 that is distributed with Developer ID, must be notarized. This requirement applies to the .NET runtime, .NET SDK, and software created with .NET.
 
@@ -189,7 +189,7 @@ Containers provide a lightweight way to isolate your application from the rest o
 
 Microsoft provides images that are tailored for specific scenarios. For example, the [ASP.NET Core repository](https://hub.docker.com/_/microsoft-dotnet-aspnet) provides images that are built for running ASP.NET Core apps in production.
 
-For more information about using .NET Core in a Docker container, see [Introduction to .NET and Docker](../docker/introduction.md) and [Samples](https://github.com/dotnet/dotnet-docker/blob/master/samples/README.md).
+For more information about using .NET Core in a Docker container, see [Introduction to .NET and Docker](../docker/introduction.md) and [Samples](https://github.com/dotnet/dotnet-docker/blob/main/samples/README.md).
 
 ## Next steps
 
@@ -199,9 +199,9 @@ For more information about using .NET Core in a Docker container, see [Introduct
 - [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.md).
 - [Tutorial: Containerize a .NET Core app](../docker/build-container.md).
 
-[release-notes-21]: https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md
-[release-notes-31]: https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md
-[release-notes-50]: https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0-supported-os.md
-[release-notes-20]: https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md
-[release-notes-22]: https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md
-[release-notes-30]: https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md
+[release-notes-21]: https://github.com/dotnet/core/blob/main/release-notes/2.1/2.1-supported-os.md
+[release-notes-31]: https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md
+[release-notes-50]: https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md
+[release-notes-20]: https://github.com/dotnet/core/blob/main/release-notes/2.0/2.0-supported-os.md
+[release-notes-22]: https://github.com/dotnet/core/blob/main/release-notes/2.2/2.2-supported-os.md
+[release-notes-30]: https://github.com/dotnet/core/blob/main/release-notes/3.0/3.0-supported-os.md

@@ -1034,7 +1034,7 @@ for (int i = 0; i < x.Length; i++)
 for (int i = 0;i < x.Length;i++)
 ```
 
-##### csharp_space_before_semicolon_in_for_statement
+#### csharp_space_before_semicolon_in_for_statement
 
 |Property|Value|
 |-|-|

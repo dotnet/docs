@@ -14,6 +14,8 @@ This page is a reference for the MSBuild properties and items that you can use t
 
 ## Framework properties
 
+The following MSBuild properties are documented in this section:
+
 - [TargetFramework](#targetframework)
 - [TargetFrameworks](#targetframeworks)
 - [NetStandardImplicitPackageVersion](#netstandardimplicitpackageversion)
@@ -241,45 +243,18 @@ You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`,
 </PropertyGroup>
 ```
 
-## Publish properties, items, and metadata
+## Publish-related properties
+
+The following MSBuild properties are documented in this section:
 
 - [AppendRuntimeIdentifierToOutputPath](#appendruntimeidentifiertooutputpath)
 - [AppendTargetFrameworkToOutputPath](#appendtargetframeworktooutputpath)
 - [CopyLocalLockFileAssemblies](#copylocallockfileassemblies)
-- [CopyToPublishDirectory](#copytopublishdirectory)
-- [LinkBase](#linkbase)
 - [PreserveCompilationContext](#preservecompilationcontext)
 - [PreserveCompilationReferences](#preservecompilationreferences)
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
-- [TrimmerRootAssembly](#trimmerrootassembly)
 - [UseAppHost](#useapphost)
-
-### CopyToPublishDirectory
-
-The `CopyToPublishDirectory` metadata on an MSBuild item controls when the item is copied to the publish directory. Allowable values are `PreserveNewest`, which only copies the item if it has changed, `Always`, which always copies the item, and `Never`, which never copies the item. From a performance standpoint, `PreserveNewest` is preferable because it enables an incremental build.
-
-```xml
-<ItemGroup>
-  <None Update="appsettings.Development.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
-</ItemGroup>
-```
-
-### LinkBase
-
-For an item that's outside of the project directory and its subdirectories, the publish target uses the item's [Link metadata](/visualstudio/msbuild/common-msbuild-item-metadata) to determine where to copy the item to. `Link` also determines how items outside of the project tree are displayed in the Solution Explorer window of Visual Studio.
-
-If `Link` is not specified for an item that's outside of the project cone, it defaults to `%(LinkBase)\%(RecursiveDir)%(Filename)%(Extension)`. `LinkBase` lets you specify a sensible base folder for items outside of the project cone. The folder hierarchy under the base folder is preserved via `RecursiveDir`. If `LinkBase` is not specified, it's omitted from the `Link` path.
-
-```xml
-<ItemGroup>
-  <Content Include="..\Extras\**\*.cs" LinkBase="Shared"/>
-</ItemGroup>
-```
-
-The following image shows how a file that's included via the previous item `Include` glob displays in Solution Explorer.
-
-:::image type="content" source="media/solution-explorer-linkbase.png" alt-text="Solution Explorer showing item with LinkBase metadata.":::
 
 ### AppendTargetFrameworkToOutputPath
 
@@ -365,18 +340,6 @@ The `RuntimeIdentifiers` property lets you specify a semicolon-delimited list of
 </PropertyGroup>
 ```
 
-### TrimmerRootAssembly
-
-The `TrimmerRootAssembly` item lets you exclude an assembly from [*trimming*](../deploying/trim-self-contained.md). Trimming is the process of removing unused parts of the runtime from a packaged application. In some cases, trimming might incorrectly remove required references.
-
-The following XML excludes the `System.Security` assembly from trimming.
-
-```xml
-<ItemGroup>
-  <TrimmerRootAssembly Include="System.Security" />
-</ItemGroup>
-```
-
 ### UseAppHost
 
 The `UseAppHost` property controls whether or not a native executable is created for a deployment. A native executable is required for self-contained deployments.
@@ -391,7 +354,9 @@ In .NET Core 3.0 and later versions, a framework-dependent executable is created
 
 For more information about deployment, see [.NET application deployment](../deploying/index.md).
 
-## Compile properties
+## Compilation-related properties
+
+The following MSBuild properties are documented in this section:
 
 - [EmbeddedResourceUseDependentUponConvention](#embeddedresourceusedependentuponconvention)
 - [LangVersion](#langversion)
@@ -424,6 +389,8 @@ The `LangVersion` property lets you specify a specific programming language vers
 For more information, see [C# language versioning](../../csharp/language-reference/configure-language-version.md#override-a-default).
 
 ## Default item inclusion properties
+
+The following MSBuild properties are documented in this section:
 
 - [DefaultExcludesInProjectFolder](#defaultexcludesinprojectfolder)
 - [DefaultItemExcludes](#defaultitemexcludes)
@@ -498,6 +465,8 @@ The `EnableDefaultNoneItems` property controls whether `None` items (files that 
 
 ## Code analysis properties
 
+The following MSBuild properties are documented in this section:
+
 - [AnalysisLevel](#analysislevel)
 - [AnalysisMode](#analysismode)
 - [CodeAnalysisTreatWarningsAsErrors](#codeanalysistreatwarningsaserrors)
@@ -571,6 +540,9 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
   <EnableNETAnalyzers>true</EnableNETAnalyzers>
 </PropertyGroup>
 ```
+
+> [!NOTE]
+> This property applies specifically to the built-in analyzers in the .NET 5+ SDK. It should not be used when you install a NuGet code analysis package.
 
 ### EnforceCodeStyleInBuild
 
@@ -691,13 +663,12 @@ The `TieredCompilationQuickJitForLoops` property configures whether the JIT comp
 </PropertyGroup>
 ```
 
-## Reference properties and items
+## Reference properties
+
+The following MSBuild properties are documented in this section:
 
 - [AssetTargetFallback](#assettargetfallback)
 - [DisableImplicitFrameworkReferences](#disableimplicitframeworkreferences)
-- [PackageReference](#packagereference)
-- [ProjectReference](#projectreference)
-- [Reference](#reference)
 - [Restore-related properties](#restore-related-properties)
 
 ### AssetTargetFallback
@@ -724,75 +695,6 @@ Set this property to `true` to disable implicit `FrameworkReference` or [Package
 </PropertyGroup>
 ```
 
-### PackageReference
-
-The `PackageReference` item defines a reference to a NuGet package.
-
-The `Include` attribute specifies the package ID. The `Version` attribute specifies the version or version range. For information about how to specify a minimum version, maximum version, range, or exact match, see [Version ranges](/nuget/concepts/package-versioning#version-ranges). You can also add [asset attributes](#asset-attributes) to a package reference.
-
-The project file snippet in the following example references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package.
-
-```xml
-<ItemGroup>
-  <PackageReference Include="System.Runtime" Version="4.3.0" />
-</ItemGroup>
-```
-
-For more information, see [Package references in project files](/nuget/consume-packages/package-references-in-project-files).
-
-#### Asset attributes
-
-The `IncludeAssets`, `ExcludeAssets`, and `PrivateAssets` metadata can be added to a package reference.
-
-| Attribute | Description |
-| - | - |
-| `IncludeAssets` | Specifies which assets belonging to the package specified by `<PackageReference>` should be consumed. By default, all package assets are included. |
-| `ExcludeAssets`| Specifies which assets belonging to the package specified by `<PackageReference>` should not be consumed. |
-| `PrivateAssets` | Specifies which assets belonging to the package specified by `<PackageReference>` should be consumed but not flow to the next project. The `Analyzers`, `Build`, and `ContentFiles` assets are private by default when this attribute is not present. |
-
-These attributes can contain one or more of the following items, separated by a semicolon `;` if more than
-one is listed:
-
-- `Compile` – the contents of the *lib* folder are available to compile against.
-- `Runtime` – the contents of the *runtime* folder are distributed.
-- `ContentFiles` – the contents of the *contentfiles* folder are used.
-- `Build` – the props/targets in the *build* folder are used.
-- `Native` – the contents from native assets are copied to the *output* folder for runtime.
-- `Analyzers` – the analyzers are used.
-
-Alternatively, the attribute can contain:
-
-- `None` – none of the assets are used.
-- `All` – all assets are used.
-
-### ProjectReference
-
-The `ProjectReference` item defines a reference to another project. The referenced project is added as a NuGet package dependency, that is, it's treated the same as a `PackageReference`.
-
-The `Include` attribute specifies the path to the project. You can also add the following metadata to a project reference: `IncludeAssets`, `ExcludeAssets`, and `PrivateAssets`.
-
-The project file snippet in the following example references a project named `Project2`.
-
-```xml
-<ItemGroup>
-  <ProjectReference Include="..\Project2.csproj" />
-</ItemGroup>
-```
-
-### Reference
-
-The `Reference` item defines a reference to an assembly file.
-
-The `Include` attribute specifies the name of the file, and the `HintPath` metadata specifies the path to the assembly.
-
-```xml
-<ItemGroup>
-  <Reference Include="MyAssembly">
-    <HintPath>..\..\Assemblies\MyAssembly.dll</HintPath>
-  </Reference>
-</ItemGroup>
-```
-
 ### Restore-related properties
 
 Restoring a referenced package installs all of its direct dependencies and all the dependencies of those dependencies. You can customize package restoration by specifying properties such as `RestorePackagesPath` and `RestoreIgnoreFailedSources`. For more information about these and other properties, see [restore target](/nuget/reference/msbuild-targets#restore-target).
@@ -803,7 +705,7 @@ Restoring a referenced package installs all of its direct dependencies and all t
 </PropertyGroup>
 ```
 
-## Run properties
+## Run-related properties
 
 The following properties are used for launching an app with the [`dotnet run`](../tools/dotnet-run.md) command:
 
@@ -833,7 +735,9 @@ The `RunWorkingDirectory` property defines the working directory for the applica
 </PropertyGroup>
 ```
 
-## Hosting properties
+## Hosting-related properties
+
+The following MSBuild properties are documented in this section:
 
 - [EnableComHosting](#enablecomhosting)
 - [EnableDynamicLoading](#enabledynamicloading)
@@ -863,6 +767,86 @@ The `EnableDynamicLoading` property indicates that an assembly is a dynamically 
   <EnableDynamicLoading>true</EnableDynamicLoading>
 </PropertyGroup>
 ```
+
+## Items
+
+[MSBuild items](/visualstudio/msbuild/msbuild-items) are inputs into the build system. Items are specified according to their type, which is the element name. For example, `Compile` and `Reference` are two [common item types](/visualstudio/msbuild/common-msbuild-project-items). The following additional item types are made available by the .NET SDK:
+
+- [PackageReference](#packagereference)
+- [TrimmerRootAssembly](#trimmerrootassembly)
+
+You can use any of the standard [item attributes](/visualstudio/msbuild/item-element-msbuild#attributes-and-elements), for example, `Include` and `Update`, on these items. Use `Include` to add a new item, and use `Update` to modify an existing item. For example, `Update` is often used to modify an item that has implicitly been added by the .NET SDK.
+
+### PackageReference
+
+The `PackageReference` item defines a reference to a NuGet package.
+
+The `Include` attribute specifies the package ID. The `Version` attribute specifies the version or version range. For information about how to specify a minimum version, maximum version, range, or exact match, see [Version ranges](/nuget/concepts/package-versioning#version-ranges).
+
+The project file snippet in the following example references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package.
+
+```xml
+<ItemGroup>
+  <PackageReference Include="System.Runtime" Version="4.3.0" />
+</ItemGroup>
+```
+
+You can also [control dependency assets](/nuget/consume-packages/package-references-in-project-files#controlling-dependency-assets) using metadata such as `PrivateAssets`.
+
+```xml
+<ItemGroup>
+  <PackageReference Include="Contoso.Utility.UsefulStuff" Version="3.6.0">
+    <PrivateAssets>all</PrivateAssets>
+  </PackageReference>
+</ItemGroup>
+```
+
+For more information, see [Package references in project files](/nuget/consume-packages/package-references-in-project-files).
+
+### TrimmerRootAssembly
+
+The `TrimmerRootAssembly` item lets you exclude an assembly from [*trimming*](../deploying/trim-self-contained.md). Trimming is the process of removing unused parts of the runtime from a packaged application. In some cases, trimming might incorrectly remove required references.
+
+The following XML excludes the `System.Security` assembly from trimming.
+
+```xml
+<ItemGroup>
+  <TrimmerRootAssembly Include="System.Security" />
+</ItemGroup>
+```
+
+## Item metadata
+
+In addition to the standard [MSBuild item attributes](/visualstudio/msbuild/item-element-msbuild#attributes-and-elements), the following item metadata tags are made available by the .NET SDK:
+
+- [CopyToPublishDirectory](#copytopublishdirectory)
+- [LinkBase](#linkbase)
+
+### CopyToPublishDirectory
+
+The `CopyToPublishDirectory` metadata on an MSBuild item controls when the item is copied to the publish directory. Allowable values are `PreserveNewest`, which only copies the item if it has changed, `Always`, which always copies the item, and `Never`, which never copies the item. From a performance standpoint, `PreserveNewest` is preferable because it enables an incremental build.
+
+```xml
+<ItemGroup>
+  <None Update="appsettings.Development.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+</ItemGroup>
+```
+
+### LinkBase
+
+For an item that's outside of the project directory and its subdirectories, the publish target uses the item's [Link metadata](/visualstudio/msbuild/common-msbuild-item-metadata) to determine where to copy the item to. `Link` also determines how items outside of the project tree are displayed in the Solution Explorer window of Visual Studio.
+
+If `Link` is not specified for an item that's outside of the project cone, it defaults to `%(LinkBase)\%(RecursiveDir)%(Filename)%(Extension)`. `LinkBase` lets you specify a sensible base folder for items outside of the project cone. The folder hierarchy under the base folder is preserved via `RecursiveDir`. If `LinkBase` is not specified, it's omitted from the `Link` path.
+
+```xml
+<ItemGroup>
+  <Content Include="..\Extras\**\*.cs" LinkBase="Shared"/>
+</ItemGroup>
+```
+
+The following image shows how a file that's included via the previous item `Include` glob displays in Solution Explorer.
+
+:::image type="content" source="media/solution-explorer-linkbase.png" alt-text="Solution Explorer showing item with LinkBase metadata.":::
 
 ## See also
 

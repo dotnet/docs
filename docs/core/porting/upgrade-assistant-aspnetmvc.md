@@ -2,14 +2,14 @@
 title: Upgrade ASP.NET MVC apps to .NET 5
 description: Use the .NET Upgrade Assistant to upgrade an existing .NET Framework ASP.NET MVC app to .NET 5. The .NET Upgrade Assistant is a CLI tool that assists in migrating an app from .NET Framework to .NET 5.
 author: ardalis
-ms.date: 02/25/2021
+ms.date: 03/08/2021
 ---
 # Upgrade an ASP.NET MVC App to .NET 5 with the .NET Upgrade Assistant
 
 The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can assist with upgrading .NET Framework ASP.NET MVC apps to .NET 5. This article provides:
 
-* A demonstration of how to run the tool against a .NET Framework ASP.NET MVC app
-* Troubleshooting tips
+- A demonstration of how to run the tool against a .NET Framework ASP.NET MVC app
+- Troubleshooting tips
 
 ## Upgrade .NET Framework ASP.NET MVC apps
 
@@ -57,7 +57,7 @@ The tool prompts for a custom path for the backup, or to use the default, which 
 
 Once the project format has been updated, the next step is to update the TFM of the project.
 
-:::image type="content" source="media/upgrade-assistant-aspnetmvc/update-tfm.png" alt-text=".NET Upgrade Assistant convert project to SDK style":::
+:::image type="content" source="media/upgrade-assistant-aspnetmvc/update-tfm.png" alt-text=".NET Upgrade Assistant update TFM":::
 
 Next, the tool updates the project's NuGet packages. Several packages need updates, and a new analyzer package is added.
 
@@ -80,7 +80,7 @@ Next, the tool migrates config files. The tool identifies app settings and disab
 
 The tool completes the migration of config files by migrating `system.web.webPages.razor/pages/namespaces`.
 
-:::image type="content" source="media/upgrade-assistant-aspnetmvc/migrate-config2.png" alt-text=".NET Upgrade Assistant migrate config":::
+:::image type="content" source="media/upgrade-assistant-aspnetmvc/migrate-config2.png" alt-text=".NET Upgrade Assistant migrate config completed":::
 
 The tool applies known fixes to migrate C# references to their new counterparts.
 
@@ -107,7 +107,7 @@ Once this process has completed, open the project file and review it. Look for s
   </ItemGroup>
 ```
 
-Static files that should be served by the web server should be moved to an appropriate folder within a root level folder named `wwwroot`. See [Static files in ASP.NET Core](/aspnet/core/fundamentals/static-files?view=aspnetcore-5.0) for details. Once the files have been moved, the `<Content>` elements in the project file corresponding to these files can be deleted. In fact, all `<Content>` elements and their containing groups can be removed. Also, any `<PackageReference>` to a client-side library like `bootstrap` or `jQuery` should be removed.
+Static files that should be served by the web server should be moved to an appropriate folder within a root level folder named `wwwroot`. See [Static files in ASP.NET Core](/aspnet/core/fundamentals/static-files?view=aspnetcore-5.0&preserve-view=true) for details. Once the files have been moved, the `<Content>` elements in the project file corresponding to these files can be deleted. In fact, all `<Content>` elements and their containing groups can be removed. Also, any `<PackageReference>` to a client-side library like `bootstrap` or `jQuery` should be removed.
 
 By default, the project will be converted as a class library. Change the first line's `Sdk` attribute to `Microsoft.NET.Sdk.Web` and set the `<TargetFramework>` to `net5.0`. Compile the project. At this point, the number of errors should be fairly small. When porting a new ASP.NET 4.6.1 MVC project, the remaining errors refer to files in the `App_Start` folder:
 
@@ -117,7 +117,7 @@ By default, the project will be converted as a class library. Change the first l
 
 These files - and the entire `App_Start` folder - can be deleted. Likewise, the `Global.asax` and `Global.asax.cs` files can be removed.
 
-At this point the only errors that remain are related to bundling. There are [several ways to configure bundling and minification in ASP.NET Core](/aspnet/core/migration/mvc?view=aspnetcore-5.0#configure-bundling-and-minification). Choose whatever makes the most sense for your project.
+At this point the only errors that remain are related to bundling. There are [several ways to configure bundling and minification in ASP.NET Core](/aspnet/core/migration/mvc?view=aspnetcore-5.0&preserve-view=true#configure-bundling-and-minification). Choose whatever makes the most sense for your project.
 
 ## Troubleshooting tips
 

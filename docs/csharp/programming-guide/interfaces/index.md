@@ -25,7 +25,7 @@ The definition of `IEquatable<T>` doesn't provide an implementation for `Equals`
 
 For more information about abstract classes, see [Abstract and Sealed Classes and Class Members](../classes-and-structs/abstract-and-sealed-classes-and-class-members.md).
 
-Interfaces can contain instance methods, properties, events, indexers, or any combination of those four member types. Interfaces may contain static constructors, fields, constants, or operators. For links to examples, see [Related Sections](./index.md#BKMK_RelatedSections). An interface can't contain instance fields, instance constructors, or finalizers. Interface members are public by default.
+Interfaces can contain instance methods, properties, events, indexers, or any combination of those four member types. Interfaces may contain static constructors, fields, constants, or operators. For links to examples, see [Related Sections](./index.md#BKMK_RelatedSections). An interface can't contain instance fields, instance constructors, or finalizers. Interface members are public by default, and you can explicitly specify accessibility modifiers, such as `public`, `protected`, `internal`, `private`, `protected internal`, or `private protected`. A `private` member must have a default implementation.
 
 To implement an interface member, the corresponding member of the implementing class must be public, non-static, and have the same name and signature as the interface member.
 
@@ -45,7 +45,7 @@ A base class can also implement interface members by using virtual members. In t
 
 An interface has the following properties:
 
-- An interface is typically like an abstract base class with only abstract members. Any class or struct that implements the interface must implement all its members. Optionally, an interface may define default implementations for some or all of its members. For more information, see [default interface methods](../../tutorials/default-interface-methods-versions.md).
+- An interface is typically like an abstract base class with only abstract members. Any class or struct that implements the interface must implement all its members. Optionally, an interface may define default implementations for some or all of its members. For more information, see [default interface methods](../../whats-new/tutorials/default-interface-methods-versions.md).
 - An interface can't be instantiated directly. Its members are implemented by any class or struct that implements the interface.
 - A class or struct can implement multiple interfaces. A class can inherit a base class and also implement one or more interfaces.
 

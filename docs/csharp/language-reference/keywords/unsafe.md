@@ -37,7 +37,7 @@ unsafe
 }
 ```
 
-To compile unsafe code, you must specify the [`-unsafe`](../compiler-options/unsafe-compiler-option.md) compiler option. Unsafe code is not verifiable by the common language runtime.
+To compile unsafe code, you must specify the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option. Unsafe code is not verifiable by the common language runtime.
 
 ## Example
 

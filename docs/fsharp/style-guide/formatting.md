@@ -301,6 +301,17 @@ Inline comments should capitalize the first letter.
 let f x = x + 1 // Increment by one.
 ```
 
+## Formatting string literals and interpolated strings
+
+String literals and interpolated strings can just be left on a single line, regardless of how long the line is.
+
+```fsharp
+let serviceStorageConnection =
+    $"DefaultEndpointsProtocol=https;AccountName=%s{serviceStorageAccount.Name};AccountKey=%s{serviceStorageAccountKey.Value}"
+```
+
+Multi-line interpolated expressions are strongly discouraged. Instead, bind the expression result to a value and use that in the interpolated string.
+
 ## Naming conventions
 
 ### Use camelCase for class-bound, expression-bound, and pattern-bound values and functions
@@ -615,10 +626,10 @@ type MyRecord =
 let foo a =
     a
     |> Option.map
-        (fun x ->
-            {
-                MyField = x
-            })
+           (fun x ->
+                {
+                    MyField = x
+                })
 ```
 
 The same rules apply for list and array elements.
@@ -830,10 +841,10 @@ Pattern matching of anonymous functions, starting by `function`, should generall
 ```fsharp
 lambdaList
 |> List.map
-    (function
-        | Abs(x, body) -> 1 + sizeLambda 0 body
-        | App(lam1, lam2) -> sizeLambda (sizeLambda 0 lam1) lam2
-        | Var v -> 1)
+       (function
+            | Abs(x, body) -> 1 + sizeLambda 0 body
+            | App(lam1, lam2) -> sizeLambda (sizeLambda 0 lam1) lam2
+            | Var v -> 1)
 ```
 
 Pattern matching in functions defined by `let` or `let rec` should be indented four spaces after starting of `let`, even if `function` keyword is used:
@@ -910,17 +921,57 @@ For lambda expressions, you may also want to consider placing the body of a lamb
 let printListWithOffset a list1 =
     List.iter
         (fun elem ->
-            printfn $"%d{a + elem}")
+             printfn $"A very long line to format the value: %d{a + elem}")
         list1
 
 let printListWithOffsetPiped a list1 =
     list1
     |> List.iter
-        (fun elem ->
-            printfn $"%d{a + elem}")
+           (fun elem ->
+                printfn $"A very long line to format the value: %d{a + elem}")
 ```
 
 If the body of a lambda expression is multiple lines long, you should consider refactoring it into a locally-scoped function.
+
+Parameters should generally be indented relative to the function or `fun`/`function` keyword, regardless of the context in which the function appears:
+
+```fsharp
+// With 4 spaces indentation
+list1
+|> List.fold
+       someLongParam
+       anotherLongParam
+
+list1
+|> List.iter
+       (fun elem ->
+            printfn $"A very long line to format the value: %d{elem}")
+
+// With 2 spaces indentation
+list1
+|> List.fold
+     someLongParam
+     anotherLongParam
+
+list1
+|> List.iter
+       (fun elem ->
+          printfn $"A very long line to format the value: %d{elem}")
+```
+
+When the function take a single multiline tuple argument, the same rules for [Formatting constructors, static members, and member invocations](#formatting-constructors-static-members-and-member-invocations) apply.
+
+```fsharp
+let myFunction (a: int, b: string, c: int, d: bool) =
+    ()
+
+myFunction(
+    478815516,
+    "A very long string making all of this multi-line",
+    1515,
+    false
+)
+```
 
 ### Formatting infix operators
 
@@ -1078,6 +1129,70 @@ let untypedRes =
         sourceText,
         parsingOptionsWithDefines
     )
+```
+
+The same rules apply even if there is only a single multiline argument.
+
+```fsharp
+let poemBuilder = StringBuilder()
+poemBuilder.AppendLine(
+    """
+The last train is nearly due
+The Underground is closing soon
+And in the dark, deserted station
+Restless in anticipation
+A man waits in the shadows
+    """
+)
+
+Option.traverse(
+    create
+    >> Result.setError [ invalidHeader "Content-Checksum" ]
+)
+```
+
+## Formatting generic type arguments and constraints
+
+The guidelines below apply to both functions, members, and type definitions.
+
+Keep generic type arguments and constraints on a single line if it’s not too long:
+
+```fsharp
+let f<'a, 'b when 'a : equality and 'b : comparison> param =
+    // function body
+```
+
+If both generic type arguments/constraints and function parameters don’t fit, but the type parameters/constraints alone do, place the parameters on new lines:
+
+```fsharp
+let f<'a, 'b when 'a : equality and 'b : comparison>
+    param
+    =
+    // function body
+```
+
+If the type parameters or constraints are too long, break and align them as shown below. Keep the list of type parameters on the same line as the function, regardless of its length. For constraints, place `when` on the first line, and keep each constraint on a single line regardless of its length. Place `>` at the end of the last line. Indent the constraints by one level.
+
+```fsharp
+let inline f< ^a, ^b
+    when ^a : (static member Foo1: unit -> ^b)
+    and ^b : (member Foo2: unit -> int)
+    and ^b : (member Foo3: string -> ^a option)>
+    arg1
+    arg2
+    =
+    // function body
+```
+
+If the type parameters/constraints are broken up, but there are no normal function parameters, place the `=` on a new line regardless:
+
+```f#
+let inline f<^a, ^b
+    when ^a : (static member Foo1: unit -> ^b)
+    and ^b : (member Foo2: unit -> int)
+    and ^b : (member Foo3: string -> ^a option)>
+    =
+    // function body
 ```
 
 ## Formatting attributes

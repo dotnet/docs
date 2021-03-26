@@ -137,7 +137,7 @@ The following library project targets APIs of .NET Standard (`netstandard1.4`) a
 </Project>
 ```
 
-Within your library or app, you write conditional code using [preprocessor directives](../csharp/language-reference/preprocessor-directives/preprocessor-if.md) to compile for each target framework:
+Within your library or app, you write conditional code using [preprocessor directives](../csharp/language-reference/preprocessor-directives.md) to compile for each target framework:
 
 ```csharp
 public class MyClass

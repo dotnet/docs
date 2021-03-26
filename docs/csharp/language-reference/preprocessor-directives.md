@@ -157,7 +157,12 @@ You use the following two preprocessor directives to define or undefine symbols 
 You use `#define` to define a symbol. When you use the symbol as the expression that's passed to the `#if` directive, the expression will evaluate to `true`, as the following example shows:
 
  ```csharp
- #define DEBUG
+ #define VERBOSE
+
+#if VERBOSE
+    Console.WriteLine("Verbose output version");
+#endif
+
  ```
 
 > [!NOTE]

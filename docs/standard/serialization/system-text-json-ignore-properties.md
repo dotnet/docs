@@ -100,7 +100,7 @@ To ignore all null-value properties, set the <xref:System.Text.Json.JsonSerializ
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
-To ignore all null-value properties when serializing, set the <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> property to `true`, as shown in the following example:
+To ignore all null-value properties when serializing or deserializing, set the <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> property to `true`. The following example shows this option used for serialization:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeExcludeNullValueProperties.cs" id="Serialize":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/SerializeExcludeNullValueProperties.vb" id="Serialize":::

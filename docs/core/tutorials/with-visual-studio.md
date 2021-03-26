@@ -5,7 +5,7 @@ ms.date: 06/08/2020
 dev_langs:
   - "csharp"
   - "vb"
-ms.custom: "vs-dotnet,contperfq3"
+ms.custom: "vs-dotnet,contperf-fy21q3"
 ---
 # Tutorial: Create a .NET console application using Visual Studio
 

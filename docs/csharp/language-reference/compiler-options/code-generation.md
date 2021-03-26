@@ -29,8 +29,17 @@ The **DebugType** option causes the compiler to generate debugging information a
 
 For all compiler versions starting with C# 6.0, there is no difference between *pdbonly* and *full*. Choose *pdbonly*. To change the location of the *.pdb* file, see [**PdbFile**](./advanced.md#pdbfile).
 
+The following values are valid:
+
+| Value      | Meaning                                                                                                 |
+|------------|---------------------------------------------------------------------------------------------------------|
+| `full`     | Emit debugging information to _.pdb_ file using default format for the current platform:<br>**Windows**: A Windows pdb file. <br>**Linux/macOS**: A [Portable PDB](https://github.com/dotnet/core/blob/main/Documentation/diagnostics/portable_pdb.md) file. |
+| `pdbonly`  | Same as `full`. See the note below for more information. |
+| `portable` | Emit debugging information to to .pdb file using cross-platform [Portable PDB](https://github.com/dotnet/core/blob/main/Documentation/diagnostics/portable_pdb.md) format. |
+| `embedded` | 	Emit debugging information into the _.dll/.exe_ itself (_.pdb_ file is not produced) using [Portable PDB](https://github.com/dotnet/core/blob/main/Documentation/diagnostics/portable_pdb.md) format. |
+
 > [!IMPORTANT]
-> This section applies only to compilers older than C# 6.0.
+> The following information applies only to compilers older than C# 6.0.
 > The value of this element can be either `full` or `pdbonly`. The *full* argument, which is in effect if you don't specify *pdbonly*, enables attaching a debugger to the running program. Specifying *pdbonly* allows source code debugging when the program is started in the debugger but will only display assembler when the running program is attached to the debugger. Use this option to create debug builds. If you use *Full*, be aware that there's some impact on the speed and size of JIT optimized code and a small impact on code quality with *full*. We recommend *pdbonly* or no PDB for generating release code. One difference between *pdbonly* and *full* is that with *full* the compiler emits a <xref:System.Diagnostics.DebuggableAttribute>, which is used to tell the JIT compiler that debug information is available. Therefore, you will get an error if your code contains the <xref:System.Diagnostics.DebuggableAttribute> set to false if you use *full*. For more information on how to configure the debug performance of an application, see [Making an Image Easier to Debug](../../../framework/debug-trace-profile/making-an-image-easier-to-debug.md).
 
 ## Optimize

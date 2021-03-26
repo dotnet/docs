@@ -1,7 +1,7 @@
 ---
 title: "Patterns - C# reference"
 description: "Learn about the patterns supported by C# switch and is expressions and C# switch statement - C# reference"
-ms.date: 03/23/2021
+ms.date: 03/25/2021
 helpviewer_keywords: 
   - "pattern matching [C#]"
 ---
@@ -72,13 +72,13 @@ Beginning with C# 9.0, you can use the [negated](#pattern-combinators) `null` co
 
 ## Discard pattern
 
-Beginning with C# 8.0, you use the *discard pattern* `_` to match any expression, including `null`, as the following example shows:
+Beginning with C# 8.0, you use a *discard pattern* `_` to match any expression, including `null`, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/DiscardPattern.cs" id="BasicExample":::
 
-The discard pattern is useful in `switch` expressions. If none of a `switch` expression's patterns matches an input, the runtime throws an exception. To guarantee that a `switch` expression handles all possible values of its input as you want, provide an arm with the discard pattern. As a `switch` expression evaluates its arms in text order, the arm with the discard pattern must be last.
+A discard pattern is useful in `switch` expressions. If none of a `switch` expression's patterns matches an input, the runtime throws an exception. To guarantee that a `switch` expression handles all possible values of its input as you want, provide an arm with a discard pattern. As a `switch` expression evaluates its arms in text order, the arm with a discard pattern must be last.
 
-The discard pattern cannot be a pattern in an `is` expression or a `switch` statement.
+A discard pattern cannot be a pattern in an `is` expression or a `switch` statement. In those cases, to match any expression, use a [`var` pattern](#var-pattern) with a discard: `var _`.
 
 ## Relational patterns
 
@@ -159,6 +159,28 @@ You can also combine two preceding usages in one pattern, as the following examp
 :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="CompletePositionalPattern":::
 
 A positional pattern is a recursive pattern. That is, you can use any pattern as a nested pattern.
+
+## `var` pattern
+
+Beginning with C# 7.0, you use a *`var` pattern* to match any expression, including `null`, and assign its result to a declared variable, as the following example shows:
+
+:::code language="csharp" source="snippets/patterns/VarPattern.cs" id="KeepInterimResult":::
+
+As the preceding example shows, a `var` pattern is useful when you need a temporary variable within a Boolean expression to hold the result of intermediate calculations.
+
+You can also use a `var` pattern when you need to perform additional checks in `when` case guards of a `switch` expression or statement, as the following example shows:
+
+:::code language="csharp" source="snippets/patterns/VarPattern.cs" id="WithCaseGuards":::
+
+In the preceding example, pattern `var (x, y)` is equivalent to a [positional pattern](#positional-pattern) `(var x, var y)`.
+
+In a `var` pattern, the type of a declared variable is the compile-time type of the expression that is matched against the pattern.
+
+## Parenthesized pattern
+
+Beginning with C# 9.0, you can put parentheses around any pattern. Typically, you do that to emphasize or change the precedence in [logical patterns](#pattern-combinators), as the following example shows:
+
+:::code language="csharp" source="snippets/patterns/PatternCombinators.cs" id="ChangedPrecedence":::
 
 ## C# language specification
 

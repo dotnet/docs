@@ -5,7 +5,7 @@ ms.date: 06/08/2020
 dev_langs:
   - "csharp"
   - "vb"
-ms.custom: "vs-dotnet"
+ms.custom: "vs-dotnet,contperfq3"
 ---
 # Tutorial: Create a .NET console application using Visual Studio
 
@@ -13,7 +13,7 @@ This tutorial shows how to create and run a .NET console application in Visual S
 
 ## Prerequisites
 
-- [Visual Studio 2019 version 16.8 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the **.NET Core cross-platform development** workload installed. The .NET 5.0 SDK is automatically installed when you select this workload.
+- [Visual Studio 2019 version 16.9.2 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the **.NET Core cross-platform development** workload installed. The .NET 5.0 SDK is automatically installed when you select this workload.
 
   For more information, see [Install the .NET SDK with Visual Studio](../install/windows.md#install-with-visual-studio).
 
@@ -22,12 +22,6 @@ This tutorial shows how to create and run a .NET console application in Visual S
 Create a .NET console app project named "HelloWorld".
 
 1. Start Visual Studio 2019.
-
-1. Select **Tools** > **Options** > **Environment** > **Preview features**, and then select **Show all .NET Core templates in the New project (requires restart)**.
-
-   :::image type="content" source="media/with-visual-studio/dotnet-options.png" alt-text="Show all .NET templates option":::
-
-1. Close and reopen Visual Studio.
 
 1. On the start page, choose **Create a new project**.
 

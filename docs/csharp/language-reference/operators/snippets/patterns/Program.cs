@@ -22,8 +22,8 @@ namespace Patterns
             RelationalPatterns.Examples();
             Console.WriteLine();
 
-            Console.WriteLine("--- Pattern combinators ---------------------");
-            PatternCombinators.Examples();
+            Console.WriteLine("--- Logical patterns ------------------------");
+            LogicalPatterns.Examples();
             Console.WriteLine();
 
             Console.WriteLine("--- Property pattern ------------------------");

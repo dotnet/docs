@@ -9,7 +9,7 @@ helpviewer_keywords:
 
 Intro.
 
-[Logical](#pattern-combinators), [property](#property-pattern), and [positional](#positional-pattern) patterns are recursive patterns. That is, they can contain other patterns.
+[Logical](#logical-patterns), [property](#property-pattern), and [positional](#positional-pattern) patterns are recursive patterns. That is, they can contain other patterns.
 
 ## Declaration and type patterns
 
@@ -66,7 +66,7 @@ Use the constant pattern to check for `null`, as the following example shows:
 
 The compiler guarantees that no user-overloaded equality operator `==` is invoked when expression `x is null` is evaluated.
 
-Beginning with C# 9.0, you can use the [negated](#pattern-combinators) `null` constant pattern to check for non-null, as the following example shows:
+Beginning with C# 9.0, you can use the [negated](#logical-patterns) `null` constant pattern to check for non-null, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/ConstantPattern.cs" id="NonNullCheck":::
 
@@ -88,15 +88,15 @@ Beginning with C# 9.0, you use a *relational pattern* to compare an expression r
 
 In a relational pattern, you can use any of the [relational operators](comparison-operators.md) `<`, `>`, `<=`, or `>=`. The right-hand part of a relational pattern must be a constant expression. That constant expression can be of an [integral](../builtin-types/integral-numeric-types.md), [floating-point](../builtin-types/floating-point-numeric-types.md), [char](../builtin-types/char.md), or [enum](../builtin-types/enum.md) type.
 
-To check if an expression value is at a certain range, match it against a [combined pattern](#pattern-combinators), as the following example shows:
+To check if an expression value is in a certain range, match it against a [conjunctive `and` pattern](#logical-patterns), as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/RelationalPatterns.cs" id="WithCombinators":::
 
 A relational pattern doesn't match an expression if an expression result is `null` or it fails to convert to the type of a constant by a nullable or unboxing conversion.
 
-## Pattern combinators
+## Logical patterns
 
-Beginning with C# 9.0, you use the `not`, `and`, and `or` pattern combinators to create the following patterns from other patterns:
+Beginning with C# 9.0, you use the `not`, `and`, and `or` pattern combinators to create the following *logical patterns*:
 
 - *Negation* `not` pattern that matches an expression when the negated pattern doesn't match the expression. For example, you can negate the [constant](#constant-pattern) `null` pattern to check if an expression is non-null, as the following code shows:
 
@@ -110,7 +110,7 @@ Beginning with C# 9.0, you use the `not`, `and`, and `or` pattern combinators to
 
   :::code language="csharp" source="snippets/patterns/PatternCombinators.cs" id="OrPattern":::
 
-As the preceding example shows, you can repeatedly use the pattern combinators in a pattern. When you use both `and` and `or` pattern combinators within one pattern, `and` has higher precedence than `or`. To explicitly specify the precedence, use parentheses, as the following example shows:
+As the preceding example shows, you can repeatedly use the pattern combinators in a pattern. When you use both `and` and `or` combinators within one pattern, `and` has higher precedence than `or`. To explicitly specify the precedence, use parentheses, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/PatternCombinators.cs" id="WithParentheses":::
 
@@ -130,7 +130,7 @@ A property pattern is a recursive pattern. That is, you can use any pattern as a
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="RecursivePropertyPattern":::
 
-The preceding example uses two features available in C# 9.0 and later: `or` [pattern combinator](#pattern-combinators) and record types.
+The preceding example uses two features available in C# 9.0 and later: `or` [pattern combinator](#logical-patterns) and record types.
 
 ## Positional pattern
 
@@ -142,7 +142,7 @@ At the preceding example, the type of an expression contains the [Deconstruct](.
 
 :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="MatchTuple":::
 
-The preceding example uses [relational patterns](#relational-patterns) and [pattern combinators](#pattern-combinators), which are available in C# 9.0 and later.
+The preceding example uses [relational](#relational-patterns) and [logical](#logical-patterns) patterns, which are available in C# 9.0 and later.
 
 You can also add a runtime type check and a variable declaration to a positional pattern, as the following example shows:
 
@@ -178,7 +178,7 @@ In a `var` pattern, the type of a declared variable is the compile-time type of 
 
 ## Parenthesized pattern
 
-Beginning with C# 9.0, you can put parentheses around any pattern. Typically, you do that to emphasize or change the precedence in [logical patterns](#pattern-combinators), as the following example shows:
+Beginning with C# 9.0, you can put parentheses around any pattern. Typically, you do that to emphasize or change the precedence in [logical patterns](#logical-patterns), as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/PatternCombinators.cs" id="ChangedPrecedence":::
 

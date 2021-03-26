@@ -102,7 +102,7 @@ Save the project file. Before building the template pack, verify that your folde
 
 ```console
 working
-|   templatepack.csproj
+│   templatepack.csproj
 └───templates
     ├───extensions
     │   └───.template.config

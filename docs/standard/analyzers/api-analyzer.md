@@ -62,7 +62,7 @@ Any warnings can be suppressed by right-clicking on the highlighted member and s
 
 ### Suppress warnings locally
 
-To suppress warnings locally, right-click on the member you want to suppress warnings for and then select **Quick Actions and Refactorings** > **Suppress *diagnostic ID*\<diagnostic ID>** > **in Source**. The [#pragma](../../csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning.md) warning preprocessor directive is added to your source code in the scope defined:
+To suppress warnings locally, right-click on the member you want to suppress warnings for and then select **Quick Actions and Refactorings** > **Suppress *diagnostic ID*\<diagnostic ID>** > **in Source**. The [#pragma](../../csharp/language-reference/preprocessor-directives.md#pragma-warning) warning preprocessor directive is added to your source code in the scope defined:
 ![Screenshot of code framed with #pragma warning disable.](media/api-analyzer/suppress-in-source.jpg)
 
 ### Suppress warnings globally

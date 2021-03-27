@@ -457,7 +457,7 @@
         },
         {
             "source_path": "docs/core/migration/20-21.md",
-            "redirect_url": "/dotnet/core/porting/index.md"
+            "redirect_url": "/dotnet/core/compatibility/2.1"
         },
         {
             "source_path": "docs/core/migration/from-dnx.md",
@@ -466,6 +466,10 @@
         {
             "source_path": "docs/core/migration/index.md",
             "redirect_url": "/dotnet/core/tools/dotnet-migrate"
+        },
+        {
+            "source_path": "docs/core/migration/assembly-info.md",
+            "redirect_url": "/dotnet/core/project-sdk/msbuild-props#assembly-info-generation-properties"
         },
         {
             "source_path": "docs/core/packages.md",
@@ -1569,6 +1573,71 @@
         {
             "source_path": "docs/csharp/language-reference/operators/xor-operator.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/boolean-logical-operators#logical-exclusive-or-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives",
+            "redirect_document_id":true
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-define.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-else.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-elif.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-endif.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-endregion.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-error.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-if.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-line.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-nullable.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-pragma.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-pragma-checksum.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-region.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-undef.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-warning.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
         },
         {
             "source_path": "docs/csharp/language-reference/proposals/csharp-7.0/index.md",

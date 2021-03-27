@@ -1319,40 +1319,8 @@ items:
       displayName: Conditional, Obsolete, AttributeUsage, ModuleInitializer, SkipLocalsInit
       href: language-reference/attributes/general.md
   - name: Preprocessor directives
-    items:
-    - name: Overview
-      displayName: preprocessor directives
-      href: language-reference/preprocessor-directives/index.md
-    - name: "#if"
-      href: language-reference/preprocessor-directives/preprocessor-if.md
-    - name: "#else"
-      href: language-reference/preprocessor-directives/preprocessor-else.md
-    - name: "#elif"
-      href: language-reference/preprocessor-directives/preprocessor-elif.md
-    - name: "#endif"
-      href: language-reference/preprocessor-directives/preprocessor-endif.md
-    - name: "#define"
-      href: language-reference/preprocessor-directives/preprocessor-define.md
-    - name: "#undef"
-      href: language-reference/preprocessor-directives/preprocessor-undef.md
-    - name: "#warning"
-      href: language-reference/preprocessor-directives/preprocessor-warning.md
-    - name: "#error"
-      href: language-reference/preprocessor-directives/preprocessor-error.md
-    - name: "#line"
-      href: language-reference/preprocessor-directives/preprocessor-line.md
-    - name: "#nullable"
-      href: language-reference/preprocessor-directives/preprocessor-nullable.md
-    - name: "#region"
-      href: language-reference/preprocessor-directives/preprocessor-region.md
-    - name: "#endregion"
-      href: language-reference/preprocessor-directives/preprocessor-endregion.md
-    - name: "#pragma"
-      href: language-reference/preprocessor-directives/preprocessor-pragma.md
-    - name: "#pragma warning"
-      href: language-reference/preprocessor-directives/preprocessor-pragma-warning.md
-    - name: "#pragma checksum"
-      href: language-reference/preprocessor-directives/preprocessor-pragma-checksum.md
+    href: language-reference/preprocessor-directives.md
+    displayName: \#if, \#else, \#elif, \#endif, \#define, \#undef, \#warning, \#error, \#line, \#nullable, \#region, \#endregion, \#pragma, warning, checksum
   - name: Compiler options
     items:
     - name: How to set options

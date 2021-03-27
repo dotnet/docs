@@ -86,7 +86,7 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 - **`-t|--timeout <TIMEOUT>`**
 
-  Specifies the timeout for pushing to a server in seconds. Defaults to 300 seconds (5 minutes). Specifying 0 (zero seconds) applies the default value.
+  Specifies the timeout for pushing to a server in seconds. Defaults to 300 seconds (5 minutes). Specifying 0 applies the default value.
 
 ## Examples
 

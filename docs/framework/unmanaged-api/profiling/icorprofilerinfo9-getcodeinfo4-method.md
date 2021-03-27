@@ -65,4 +65,4 @@ Alternatively, you can first call `GetCodeInfo4` with a zero-length `codeInfos` 
 
 ## See also
 
-- [ICorProfilerInfo9 Interface](ICorProfilerInfo9-interface.md)
+- [ICorProfilerInfo9 Interface](icorprofilerinfo9-interface.md)

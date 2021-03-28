@@ -11,4 +11,4 @@ jobs:
       uses: actions/checkout@v1
 
     - name: Validate links
-      uses: Youssef1313/markdown-links-verifier@2036df69357a50671868742849aa202e29d1703a #@v0.0.8
+      uses: Youssef1313/markdown-links-verifier@b3f470e17f1324c6e5401098b910b926515734fb #@v0.0.9

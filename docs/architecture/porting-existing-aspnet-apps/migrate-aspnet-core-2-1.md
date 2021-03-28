@@ -7,7 +7,7 @@ ms.date: 11/13/2020
 
 # Migrate to ASP.NET Core 2.1
 
-ASP.NET Core 2.1 is an interesting release because it's the only currently supported .NET Core release to support both .NET Core and .NET Framework runtimes. As such, it may offer an easier upgrade path for some apps when compared to upgrading all parts of the app to .NET Core at once. As an LTS release, support for .NET Core 2.1 will continue through August 2021. Support for ASP.NET Core 2.1 running on .NET Framework will continue for as long as its underlying .NET Framework is supported.
+ASP.NET Core 2.1 is an interesting release because it's the only currently supported ASP.NET Core release to support both .NET Core and .NET Framework runtimes. As such, it may offer an easier upgrade path for some apps when compared to upgrading all parts of the app to .NET Core at once. As an LTS release, support for .NET Core 2.1 will continue through August 2021. Support for ASP.NET Core 2.1 running on .NET Framework will continue for as long as its underlying .NET Framework is supported.
 
 ## Should apps run on .NET Framework with ASP.NET Core 2.1
 

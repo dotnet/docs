@@ -87,7 +87,7 @@ private static async Task<int> AsyncConsoleWork()
 
 Now, this can be replaced by:
 
-[!code-csharp[AsyncMain](../../../../samples/snippets/csharp/main-arguments/program.cs#AsyncMain)]
+[!code-csharp[AsyncMain](../../../../samples/snippets/csharp/main-arguments/Program.cs#AsyncMain)]
 
 The advantage of the new syntax is that the compiler always generates the correct code.
 

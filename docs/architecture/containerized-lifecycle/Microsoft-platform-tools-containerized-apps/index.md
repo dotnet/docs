@@ -48,5 +48,5 @@ The Microsoft platform and tools for containerized Docker apps, as defined in Ta
 Thus, Microsoft offers a complete foundation for an end-to-end containerized Docker application life cycle. However, it's *a collection of products and technologies that allow you to optionally select and integrate with existing tools and processes*. The flexibility in a broad approach along with the strength in the depth of capabilities place Microsoft in a strong position for containerized Docker application development.
 
 >[!div class="step-by-step"]
->[Previous](../Docker-application-lifecycle/containers-foundation-for-devops-collaboration.md)
+>[Previous](../docker-application-lifecycle/containers-foundation-for-devops-collaboration.md)
 >[Next](../design-develop-containerized-apps/index.md)

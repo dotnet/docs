@@ -279,6 +279,7 @@ let myFunBad (a: decimal) b c:decimal = a + b + c
 In all cases, the right-hand side of a binding either all goes on one line, or (if it's too long) goes on a new line indented one scope.
 
 For example, the following are non-compliant:
+
 ```fsharp
 let a = """
 foobar, long string
@@ -301,6 +302,7 @@ let d = while f do
 ```
 
 The following are compliant:
+
 ```fsharp
 let a =
     """

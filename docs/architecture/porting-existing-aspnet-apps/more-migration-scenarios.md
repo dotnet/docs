@@ -165,12 +165,49 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
+## Media Formatters
+
+ASP.NET Web API supports multiple media formats and can be extended by using custom media formatters. The docs describe an [example CSV Media Formatter](/aspnet/web-api/overview/formats-and-model-binding/media-formatters#example-creating-a-csv-media-formatter) that can be used to send data in a comma-separated value format. If your Web API app uses custom media formatters, you'll need to convert them to [ASP.NET Core custom formatters](/aspnet/core/web-api/advanced/custom-formatters).
+
+To create a custom formatters in Web API 2, you inherited from an appropriate base class and then added the formatter to the Web API pipeline using the `HttpConfiguration` object:
+
+```csharp
+public static void ConfigureApis(HttpConfiguration config)
+{
+    config.Formatters.Add(new ProductCsvFormatter()); 
+}
+```
+
+In ASP.NET Core, the process is similar. ASP.NET Core supports both input formatters (used by model binding) and output formatters (used to format responses). Adding a custom formatter to output responses in a specific way involves inheriting from an appropriate base class and adding the formatter to MVC in `Startup`:
+
+```
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddControllers(options =>
+    {
+        options.InputFormatters.Insert(0, new CustomInputFormatter());
+        options.OutputFormatters.Insert(0, new CustomOutputFormatter());
+    });
+}
+```
+
+You'll find a complete list of base classes in the [Microsoft.AspNetCore.Mvc.Formatters namespace](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.formatters).
+
+The steps to migrate from a Web API formatter to an ASP.NET Core MVC formatter are:
+
+1. Identify an appropriate base class for the new formatter.
+2. Create a new instance of the base class and implement its required methods.
+3. Copy over the functionality from the Web API formatter to the new implementation.
+4. Configure MVC in the ASP.NET Core App's `ConfigureServices` method to use the new formatter.
+
 ## References
 
 - [ASP.NET Web API Content Negotiation](/aspnet/web-api/overview/formats-and-model-binding/content-negotiation)
 - [Format response data in ASP.NET Core Web API](/aspnet/core/web-api/advanced/formatting)
 - [Custom Model Binders in ASP.NET Web API](/aspnet/web-api/overview/formats-and-model-binding/parameter-binding-in-aspnet-web-api#model-binders)
 - [Custom Model Binders in ASP.NET Core](/aspnet/core/mvc/advanced/custom-model-binding#custom-model-binder-sample)
+- [Media Formatters in ASP.NET Web API 2](/aspnet/web-api/overview/formats-and-model-binding/media-formatters)\
+- [Custom formatters in ASP.NET Core Web API](/aspnet/core/web-api/advanced/custom-formatters)
 
 >[!div class="step-by-step"]
 >[Previous](example-migration-eshop.md)

@@ -112,10 +112,65 @@ public IActionResult Index()
 
 This will default to returning the data in JSON format. XML and other formats will be used [if the app has been configured with the appropriate formatter](/aspnet/core/web-api/advanced/formatting).
 
+## Custom model binding
+
+Most ASP.NET MVC and Web API apps make use of model binding. The default model binding syntax migrates fairly seamlessly between these apps and ASP.NET Core MVC. However, in some cases customers have written [custom model binders](/aspnet/web-api/overview/formats-and-model-binding/parameter-binding-in-aspnet-web-api#model-binders) to support specific model types or usage scenarios. Custom model binders in ASP.NET MVC and Web API projects use separate `IModelBinder` interfaces defined in `System.Mvc` and `System.Web.Http` namespaces, respectively. In both cases, the custom binder exposes a `Bind` method that accepts a controller or action context and a model binding context as arguments.
+
+Once the custom binder was created, it must be registered with the app. This step requires creating another type, a `ModelBinderProvider`, which act as a factory and creates the model binder during a request. Binders can be added during `ApplicationStart` in MVC apps as shown:
+
+```csharp
+ModelBinderProviders.BinderProviders.Insert(0, new MyCustomBinderProvider()); // MVC
+```
+
+In Web API apps, custom binders can be referenced using attributes. The `ModelBinder` attribute can be added to action method parameters or to the parameter's type definition, as shown:
+
+```csharp
+// attribute on action method parameter
+public HttpResponseMessage([ModelBinder(typeof(MyCustomBinder))CustomDTO custom])
+{
+}
+
+// attribute on type
+[ModelBinder(typeof(MyCustomBinder))
+public class CustomDTO
+{
+}
+```
+
+To register a model binder globally in ASP.NET Web API, its provider must be added during app startup:
+
+```csharp
+public static class WebApiConfig
+{
+    public static void Register(HttpConfiguration config)
+    {
+        var provider = new CustomModelBinderProvider(
+            typeof(CustomDTO), new CustomModelBinder());
+        config.Services.Insert(typeof(ModelBinderProvider), 0, provider);
+
+        // ...
+    }
+}
+```
+
+When migrating [custom model providers to ASP.NET Core](/aspnet/core/mvc/advanced/custom-model-binding#custom-model-binder-sample), the Web API pattern is closer to the ASP.NET Core approach than the ASP.NET MVC 5 one is. The main differences between ASP.NET Core's `IModelBinder` interface and Web API's is that the ASP.NET Core method is async (`BindModelAsync`) and it only requires a single `BindingModelContext` instead of two parameters like Web API's version required. In ASP.NET Core, you can use a `[ModelBinder]` attribute on individual action method parameters or their associated types. You can also create a `ModelBinderProvider` that will be used globally within the app where appropriate. To configure such a provider, you would add code to `Startup` in `ConfigureServices`:
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddControllers(options =>
+    {
+        options.ModelBinderProviders.Insert(0, new CustomModelBinderProvider());
+    });
+}
+```
+
 ## References
 
 - [ASP.NET Web API Content Negotiation](/aspnet/web-api/overview/formats-and-model-binding/content-negotiation)
 - [Format response data in ASP.NET Core Web API](/aspnet/core/web-api/advanced/formatting)
+- [Custom Model Binders in ASP.NET Web API](/aspnet/web-api/overview/formats-and-model-binding/parameter-binding-in-aspnet-web-api#model-binders)
+- [Custom Model Binders in ASP.NET Core](/aspnet/core/mvc/advanced/custom-model-binding#custom-model-binder-sample)
 
 >[!div class="step-by-step"]
 >[Previous](example-migration-eshop.md)

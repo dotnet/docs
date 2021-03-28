@@ -8,7 +8,7 @@ jobs:
 
     steps:
     - name: Checkout the repository
-      uses: actions/checkout@v1
+      uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2
 
     - name: Validate links
       uses: Youssef1313/markdown-links-verifier@b3f470e17f1324c6e5401098b910b926515734fb #@v0.0.9

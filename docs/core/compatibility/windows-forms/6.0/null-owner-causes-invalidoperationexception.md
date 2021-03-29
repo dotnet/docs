@@ -28,8 +28,8 @@ Review your code and, if necessary, update it to prevent constructing the affect
 The following table lists the affected properties and methods:
 
 > [!div class="mx-tdBreakAll"]
-> | Affected method or property | Validated property | Version added |
-> |-|-|-|
+> | Affected method or property | Version added |
+> |-|-|
 > | <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell.DataGridViewTopLeftHeaderCellAccessibleObject.Bounds?displayProperty=fullName> | Preview 4 |
 > | <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell.DataGridViewTopLeftHeaderCellAccessibleObject.DefaultAction?displayProperty=fullName> | Preview 4 |
 > | <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell.DataGridViewTopLeftHeaderCellAccessibleObject.Name?displayProperty=fullName> | Preview 4 |

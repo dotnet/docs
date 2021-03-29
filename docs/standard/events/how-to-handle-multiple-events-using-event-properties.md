@@ -15,7 +15,7 @@ ms.assetid: 30047cba-e2fd-41c6-b9ca-2ad7a49003db
 ---
 # How to: Handle Multiple Events Using Event Properties
 
-To use event properties, you define the event properties in the class that raises the events, and then set the delegates for the event properties in classes that handle the events. To implement multiple event properties in a class, the class must internally store and maintain the delegate defined for each event. A typical approach is to implement a delegate collection that is indexed by an event key.  
+To use event properties, you define the event properties in the class that raises the events, and then set the delegates for the event properties in classes that handle the events. To implement multiple event properties in a class, the class should internally store and maintain the delegate defined for each event. For each field-like-event, a corresponding backing-field reference type is generated. This can lead to unnecessary allocations when the number of events increases. As an alternative, a common approach is to maintain an <xref:System.ComponentModel.EventHandlerList> which stores events by key.
   
  To store the delegates for each event, you can use the <xref:System.ComponentModel.EventHandlerList> class, or implement your own collection. The collection class must provide methods for setting, accessing, and retrieving the event handler delegate based on the event key. For example, you could use a <xref:System.Collections.Hashtable> class, or derive a custom class from the <xref:System.Collections.DictionaryBase> class. The implementation details of the delegate collection do not need to be exposed outside your class.  
   

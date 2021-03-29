@@ -23,7 +23,7 @@ Review your code and, if necessary, update it to prevent constructing the affect
 
 ## Affected APIs
 
-The following table lists the affected properties and parameters:
+The following table lists the affected APIs:
 
 > [!div class="mx-tdBreakAll"]
 > | Affected method or property | Validated property | Version added |

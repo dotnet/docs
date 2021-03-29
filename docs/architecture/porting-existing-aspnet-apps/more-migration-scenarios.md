@@ -378,6 +378,78 @@ In ASP.NET Core, there are three built-in ways to enable CORS:
 
 Each of these approaches is covered in detail in the docs, which are linked from the above options. Which one you choose will largely depend on how your existing app supports CORS. If the app uses attributes, you can probably migrate to use the `EnableCors` attribute most easily. If your app uses filters, you could continue using that approach (though it's not the typical approach used in ASP.NET Core, it should still work), or migrate to use attributes or policy, most likely. Endpoint routing is a relatively new feature introduced with ASP.NET Core 3 and as such it doesn't have a close analog in ASP.NET MVC 5 or ASP.NET Web API 2 apps.
 
+## Custom Areas
+
+Many ASP.NET MVC apps use Areas to organize the project. Areas typically reside in an *Areas* folder in the root of the project, and must be registered when the application starts, typically in `Application_Start()`:
+
+```csharp
+AreaRegistration.RegisterAllAreas();
+```
+
+An alternative to registering all areas in startup is to use the `RouteArea` attribute on individual controllers:
+
+```csharp
+[RouteArea("Admin")]
+public class SomeController : Controller
+```
+
+When using Areas, additional arguments are passed into HTML Helper methods to generate links to actions in different areas:
+
+```html
+@Html.ActionLink("News", "Index", "News", new { area = "News" }, null)
+```
+
+ASP.NET Web API apps don't typically use areas explicitly, since their controllers can be placed in any folder in the project. Teams can use any folder structure they like to organize their API controllers.
+
+[Areas](/aspnet/core/mvc/controllers/areas) are supported in ASP.NET Core MVC. The approach used is nearly identical to the use of areas in ASP.NET MVC 5. Developers migrating code using areas should keep in mind the following differences:
+
+- `AreaRegistration.RegisterAllAreas` is not used in ASP.NET Core MVC
+- Areas are applied using the `[Area("name")]` attribute (not `RouteArea` as in ASP.NET MVC 5)
+- Areas can be added to the route table templates, if desired (or they can use attribute routing)
+
+To add area support to the route table in ASP.NET Core MVC, you would add the following in `Configure` in *Startup.cs*:
+
+```csharp
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "MyArea",
+        pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+});
+```
+
+Areas can also be used with attribute routing, using the `{area}` keyword in the route definition (it's one of several [reserved routing names](/aspnet/core/mvc/controllers/routing#reserved-routing-names) that can be used with route templates).
+
+Tag helpers support areas with the `asp-area` attribute, which can be used to generate links in Razor views and pages:
+
+```html
+<ul>
+    <li>
+        <a asp-area="Products" asp-controller="Home" asp-action="About">
+            Products/Home/About
+        </a>
+    </li>
+    <li>
+        <a asp-area="Services" asp-controller="Home" asp-action="About">
+            Services About
+        </a>
+    </li>
+    <li>
+        <a asp-area="" asp-controller="Home" asp-action="About">
+            /Home/About
+        </a>
+    </li>
+</ul>
+```
+
+If you're migrating to Razor Pages you will need to use an *Areas* folder in your *Pages* folder. Refer to [Areas with Razor Pages](/aspnet/core/mvc/controllers/areas#areas-with-razor-pages) for more details.
+
+In addition to the above guidance, teams should review [how routing in ASP.NET Core works with areas](/aspnet/core/mvc/controllers/routing#areas) as part of their migration planning process.
+
 ## References
 
 - [ASP.NET Web API Content Negotiation](/aspnet/web-api/overview/formats-and-model-binding/content-negotiation)
@@ -394,6 +466,7 @@ Each of these approaches is covered in detail in the docs, which are linked from
 - [Simple CORS control in MVC 5 and Web API 2](https://stackoverflow.com/questions/6290053/setting-access-control-allow-origin-in-asp-net-mvc-simplest-possible-method)
 - [Enabling Cross-Origin Requests in Web API](/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api#enable-cors)
 - [Enable Cross-Origin Requests (CORS) in ASP.NET Core](/aspnet/core/security/cors)
+- [Areas in ASP.NET Core](/aspnet/core/mvc/controllers/areas)
 
 >[!div class="step-by-step"]
 >[Previous](example-migration-eshop.md)

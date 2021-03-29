@@ -288,6 +288,48 @@ public class RouteConfig
 
 Migrating route constraint usage as well as custom route constraints to ASP.NET Core is typically very straightforward.
 
+## Custom Route Handlers
+
+Another fairly advanced feature of ASP.NET MVC 5 is route handlers. Custom route handlers implement `IRouteHandler`, which just includes a single method that returns an `IHttpHandler` for a give request. The `IHttpHandler`, in turn, exposes an `IsReusable` property and a single method, `ProcessRequest`. In ASP.NET MVC 5, you can configure a particular route in the route table to use your custom handler:
+
+```csharp
+public static void RegisterRoutes(RouteCollection routes)
+{
+    routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+ 
+    routes.Add(new Route("custom", new CustomRouteHandler()));
+}
+```
+
+To migrate custom route handlers from ASP.NET MVC 5 to ASP.NET Core, you can either use a filter (such as an action filter) or a custom [`IRouter`](/dotnet/api/microsoft.aspnetcore.routing.irouter). The filter approach is relatively straightforward, and can be added as a global filter when MVC is added to `ConfigureServices` in *Startup.cs*.
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddMvc(options =>
+    {
+        options.Filters.Add(typeof(CustomActionFilter));
+    });
+}
+```
+
+The `IRouter` option requires implementing the interface's `RouteAsync` and `GetVirtualPath` methods. The custom router is added to the app at startup when MVC is added to the request pipeline in the `Configure` method in *Startup.cs*.
+
+```csharp
+public void Configure(IApplicationBuilder app)
+{
+    // ...
+    app.UseMvc(routes =>
+    {
+        routes.Routes.Add(new CustomRouter(routes.DefaultHandler));
+    });
+}
+```
+
+In ASP.NET Web API, these handlers are referred to as [custom message handlers](/aspnet/web-api/overview/advanced/http-message-handlers#custom-message-handlers), rather than *route handlers*. Message handlers must derive from `DelegatingHandler` and override its `SendAsync` method. Message handlers can be chained together to form a pipeline in a fashion that is very similar to ASP.NET Core middleware and its request pipeline.
+
+ASP.NET Core has no `DelegatingHandler` type or separate message handler pipeline. Instead, such handlers should be migrated using global filters, custom `IRouter` instances (see above), or custom middleware. ASP.NET Core MVC filters and `IRouter` types have the advantage of having built-in access to MVC constructs like controllers and actions, while middleware is a lower level approach that has no ties to MVC (making it more flexible but also more effort if it requires access to MVC components).
+
 ## References
 
 - [ASP.NET Web API Content Negotiation](/aspnet/web-api/overview/formats-and-model-binding/content-negotiation)
@@ -300,6 +342,7 @@ Migrating route constraint usage as well as custom route constraints to ASP.NET 
 - [Route constraints in ASP.NET Web API 2](/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2#route-constraints)
 - [Route constraints in ASP.NET MVC 5](https://devblogs.microsoft.com/aspnet/attribute-routing-in-asp-net-mvc-5/#route-constraints)
 - [ASP.NET Core Route Constraint Reference](/aspnet/core/fundamentals/routing#route-constraint-reference)
+- [Custom message handlers in ASP.NET Web API 2](/aspnet/web-api/overview/advanced/http-message-handlers#custom-message-handlers)
 
 >[!div class="step-by-step"]
 >[Previous](example-migration-eshop.md)

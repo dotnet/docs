@@ -393,6 +393,7 @@ Each of these approaches is covered in detail in the docs, which are linked from
 - [Custom message handlers in ASP.NET Web API 2](/aspnet/web-api/overview/advanced/http-message-handlers#custom-message-handlers)
 - [Simple CORS control in MVC 5 and Web API 2](https://stackoverflow.com/questions/6290053/setting-access-control-allow-origin-in-asp-net-mvc-simplest-possible-method)
 - [Enabling Cross-Origin Requests in Web API](/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api#enable-cors)
+- [Enable Cross-Origin Requests (CORS) in ASP.NET Core](/aspnet/core/security/cors)
 
 >[!div class="step-by-step"]
 >[Previous](example-migration-eshop.md)

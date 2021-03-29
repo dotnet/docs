@@ -54,7 +54,7 @@ public class TestModel : PageModel
 
 **Figure 2-2.** Accessing configuration values with `IConfiguration`.
 
-Using the [options pattern](/aspnet/core/fundamentals/configuration/options), settings access is similar but is strongly typed and more specific to the setting(s) needed by the consuming class, as Figure 2-3 demonstrates.
+Using the [options pattern](/dotnet/core/extensions/options), settings access is similar but is strongly typed and more specific to the setting(s) needed by the consuming class, as Figure 2-3 demonstrates.
 
 ```csharp
 public class PositionOptions

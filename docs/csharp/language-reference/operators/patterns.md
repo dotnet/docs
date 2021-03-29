@@ -172,7 +172,7 @@ Beginning with C# 8.0, you use a *discard pattern* `_` to match any expression, 
 
 :::code language="csharp" source="snippets/patterns/DiscardPattern.cs" id="BasicExample":::
 
-In the preceding example, a discard pattern is used to handle `null` and any integer value that doesn't have the corresponding member of the <xref:System.DayOfWeek> enumeration. That guarantees that a `switch` expression in the example handles all possible values of its input. If you don't use a discard pattern in a `switch` expression and none of the expression's patterns matches an input, the runtime [throws an exception](switch-expression.md#non-exhaustive-switch-expressions).The compiler generates a warning if a `switch` expression doesn't handle all possible input values. 
+In the preceding example, a discard pattern is used to handle `null` and any integer value that doesn't have the corresponding member of the <xref:System.DayOfWeek> enumeration. That guarantees that a `switch` expression in the example handles all possible values of its input. If you don't use a discard pattern in a `switch` expression and none of the expression's patterns matches an input, the runtime [throws an exception](switch-expression.md#non-exhaustive-switch-expressions).The compiler generates a warning if a `switch` expression doesn't handle all possible input values.
 
 A discard pattern cannot be a pattern in an `is` expression or a `switch` statement. In those cases, to match any expression, use a [`var` pattern](#var-pattern) with a discard: `var _`.
 

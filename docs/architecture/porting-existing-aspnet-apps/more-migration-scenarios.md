@@ -450,6 +450,18 @@ If you're migrating to Razor Pages you will need to use an *Areas* folder in you
 
 In addition to the above guidance, teams should review [how routing in ASP.NET Core works with areas](/aspnet/core/mvc/controllers/routing#areas) as part of their migration planning process.
 
+## WCF Client Configuration
+
+If your app currently relies on WCF services as a client, this scenario is supported. However, you will need to [migrate your configuration](/aspnet/core/migration/configuration) from *web.config* to use the new *appsettings.json* file. Another option is to add any necessary configuration to your clients programmatically when you create them. For example:
+
+```csharp
+var wcfClient = new OrderServiceClient(
+            new BasicHttpBinding(BasicHttpSecurityMode.None),
+            new EndpointAddress("http://localhost:5050/OrderService.svc"));
+```
+
+If your organization has extensive services built using WCF that your app relies on, consider migrating them to use gRPC instead. For more details on gRPC, why you may wish to migrate, and a detailed migration guide, consult the [gRPC for WCF Developers](/dotnet/architecture/grpc-for-wcf-developers/) ebook.
+
 ## References
 
 - [ASP.NET Web API Content Negotiation](/aspnet/web-api/overview/formats-and-model-binding/content-negotiation)

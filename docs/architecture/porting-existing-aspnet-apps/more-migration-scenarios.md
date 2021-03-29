@@ -330,6 +330,54 @@ In ASP.NET Web API, these handlers are referred to as [custom message handlers](
 
 ASP.NET Core has no `DelegatingHandler` type or separate message handler pipeline. Instead, such handlers should be migrated using global filters, custom `IRouter` instances (see above), or custom middleware. ASP.NET Core MVC filters and `IRouter` types have the advantage of having built-in access to MVC constructs like controllers and actions, while middleware is a lower level approach that has no ties to MVC (making it more flexible but also more effort if it requires access to MVC components).
 
+## CORS Support
+
+CORS, or Cross-Origin Resource Sharing, is a W3C standard that allows servers to accept requests that don't originate from responses they've served. ASP.NET MVC 5 and ASP.NET Web API 2 support CORS in different ways. The simplest way to enable CORS support in ASP.NET MVC 5 is with an action filter like this one:
+
+```csharp
+public class AllowCrossSiteAttribute : ActionFilterAttribute
+{
+    public override void OnActionExecuting(ActionExecutingContext filterContext)
+    {
+        filterContext.RequestContext.HttpContext.Response.AddHeader("Access-Control-Allow-Origin", "ardalis.com");
+        base.OnActionExecuting(filterContext);
+    }
+}
+```
+
+ASP.NET Web API can also use such a filter, but it has [built-in support for enabling CORS](/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api#enable-cors) as well:
+
+```csharp
+public static class WebApiConfig
+{
+    public static void Register(HttpConfiguration config)
+    {
+        config.EnableCors();
+        // ...
+    }
+}
+```
+
+Once this is added, you can configure allowed origins, headers, and methods using the `EnableCors` attribute, like so:
+
+```csharp
+[EnableCors(origins: "https://ardalis.com", headers: "*", methods: "*")]
+public class TestController : ApiController
+{
+    // Controller methods not shown...
+}
+```
+
+Before migrating your CORS implementation from ASP.NET MVC 5 or ASP.NET Web API 2, be sure to review [how CORS works](/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api#how-cors-works) and ideally create some automated tests that demonstrate CORS is working as expected in your current system.
+
+In ASP.NET Core, there are three built-in ways to enable CORS:
+
+- [Configured via policy](/aspnet/core/security/cors?#cors-with-named-policy-and-middleware) in `ConfigureServices`
+- Enabled with [endpoint routing](/aspnet/core/security/cors?#enable-cors-with-endpoint-routing)
+- Enabled with the [`EnableCors` attribute](/aspnet/core/security/cors?view=aspnetcore-5.0#enable-cors-with-attributes)
+
+Each of these approaches is covered in detail in the docs, which are linked from the above options. Which one you choose will largely depend on how your existing app supports CORS. If the app uses attributes, you can probably migrate to use the `EnableCors` attribute most easily. If your app uses filters, you could continue using that approach (though it's not the typical approach used in ASP.NET Core, it should still work), or migrate to use attributes or policy, most likely. Endpoint routing is a relatively new feature introduced with ASP.NET Core 3 and as such it doesn't have a close analog in ASP.NET MVC 5 or ASP.NET Web API 2 apps.
+
 ## References
 
 - [ASP.NET Web API Content Negotiation](/aspnet/web-api/overview/formats-and-model-binding/content-negotiation)
@@ -343,6 +391,8 @@ ASP.NET Core has no `DelegatingHandler` type or separate message handler pipelin
 - [Route constraints in ASP.NET MVC 5](https://devblogs.microsoft.com/aspnet/attribute-routing-in-asp-net-mvc-5/#route-constraints)
 - [ASP.NET Core Route Constraint Reference](/aspnet/core/fundamentals/routing#route-constraint-reference)
 - [Custom message handlers in ASP.NET Web API 2](/aspnet/web-api/overview/advanced/http-message-handlers#custom-message-handlers)
+- [Simple CORS control in MVC 5 and Web API 2](https://stackoverflow.com/questions/6290053/setting-access-control-allow-origin-in-asp-net-mvc-simplest-possible-method)
+- [Enabling Cross-Origin Requests in Web API](/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api#enable-cors)
 
 >[!div class="step-by-step"]
 >[Previous](example-migration-eshop.md)

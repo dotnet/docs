@@ -14,10 +14,6 @@ namespace Patterns
             ConstantPattern.Examples();
             Console.WriteLine();
 
-            Console.WriteLine("--- Discard pattern -------------------------");
-            DiscardPattern.Examples();
-            Console.WriteLine();
-
             Console.WriteLine("--- Relational patterns ---------------------");
             RelationalPatterns.Examples();
             Console.WriteLine();
@@ -36,6 +32,10 @@ namespace Patterns
 
             Console.WriteLine("--- var pattern -----------------------------");
             VarPattern.Examples();
+            Console.WriteLine();
+
+            Console.WriteLine("--- Discard pattern -------------------------");
+            DiscardPattern.Examples();
             Console.WriteLine();
         }
     }

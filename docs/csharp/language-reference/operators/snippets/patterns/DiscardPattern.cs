@@ -12,16 +12,20 @@ namespace Patterns
         private static void BasicExample()
         {
             // <BasicExample>
-            Console.WriteLine(NumberToAction(1));  // output: run
-            Console.WriteLine(NumberToAction(7413));  // output: do nothing
-            Console.WriteLine(NumberToAction(null));  // output: do nothing
+            Console.WriteLine(GetDiscountInPercent(DayOfWeek.Friday));  // output: 5.0
+            Console.WriteLine(GetDiscountInPercent(null));  // output: 0.0
+            Console.WriteLine(GetDiscountInPercent((DayOfWeek)10));  // output: 0.0
 
-            static string NumberToAction(int? number) => number switch
+            static decimal GetDiscountInPercent(DayOfWeek? dayOfWeek) => dayOfWeek switch
             {
-                0 => "cook",
-                1 => "run",
-                2 => "think",
-                _ => "do nothing",
+                DayOfWeek.Monday => 0.5m,
+                DayOfWeek.Tuesday => 12.5m,
+                DayOfWeek.Wednesday => 7.5m,
+                DayOfWeek.Thursday => 12.5m,
+                DayOfWeek.Friday => 5.0m,
+                DayOfWeek.Saturday => 2.5m,
+                DayOfWeek.Sunday => 2.0m,
+                _ => 0.0m,
             };
             // </BasicExample>
         }

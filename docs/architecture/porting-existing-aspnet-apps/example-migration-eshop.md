@@ -307,19 +307,13 @@ Building again reveals one more error loading jQuery Validation on the *Create* 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" integrity="sha512-O/nUTF5mdFkhEoQHFn9N5wmgYyW323JO6v8kr6ltSRKriZyTr/8417taVWeabVS4iONGk2V444QD0P2cwhuTkg==" crossorigin="anonymous"></script>
 ```
 
-The last thing to fix in the views is the reference to `Session` to display how long the app has been running, and on which machine. We can collect this data in `Startup` as a static variable holding the app's last start time and display the information on the layout page. Add the following property to *Startup.cs*:
-
-```csharp
-public static DateTime StartTime { get; } = DateTime.UtcNow;
-```
-
-Then replace the content of the footer in the layout with the following code:
+The last thing to fix in the views is the reference to `Session` to display how long the app has been running, and on which machine. We can display this data directly in the site's *_Layout.cshtml* by using `System.Environment.MachineName` and `System.Diagnostics.Process.GetCurrentProcess().StartTime`:
 
 ```razor
 <section class="col-sm-6">
     <img class="esh-app-footer-text hidden-xs" src="~/images/main_footer_text.png" width="335" height="26" alt="footer text image" />
     <br />
-<small>@Environment.MachineName - @eShopPorted.Startup.StartTime.ToString() UTC</small>
+<small>@Environment.MachineName - @System.Diagnostics.Process.GetCurrentProcess().StartTime.ToString() UTC</small>
 </section>
 ```
 

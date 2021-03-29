@@ -21,7 +21,7 @@ namespace ValueEqualityClass
 
         public bool Equals(TwoDPoint p)
         {
-            if (Object.ReferenceEquals(p, null))
+            if (p is null)
             {
                 return false;
             }
@@ -48,9 +48,9 @@ namespace ValueEqualityClass
 
         public static bool operator ==(TwoDPoint lhs, TwoDPoint rhs)
         {
-            if (Object.ReferenceEquals(lhs, null))
+            if (lhs is null)
             {
-                if (Object.ReferenceEquals(rhs, null))
+                if (rhs is null)
                 {
                     return true;
                 }
@@ -84,7 +84,7 @@ namespace ValueEqualityClass
 
         public bool Equals(ThreeDPoint p)
         {
-            if (Object.ReferenceEquals(p, null))
+            if (p is null)
             {
                 return false;
             }
@@ -112,9 +112,9 @@ namespace ValueEqualityClass
 
         public static bool operator ==(ThreeDPoint lhs, ThreeDPoint rhs)
         {
-            if (Object.ReferenceEquals(lhs, null))
+            if (lhs is null)
             {
-                if (Object.ReferenceEquals(rhs, null))
+                if (rhs is null)
                 {
                     // null == null = true.
                     return true;

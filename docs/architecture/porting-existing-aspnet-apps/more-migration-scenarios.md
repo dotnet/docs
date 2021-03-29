@@ -231,6 +231,63 @@ When migrating async code (or code that should be async), teams should consider 
 
 Most ASP.NET MVC and Web API apps do not use a large number of custom filters. Since the approach to filters in ASP.NET Core MVC is closely aligned with filters in ASP.NET MVC and Web API, the migration of custom filters is generally fairly straightforward. Be sure to read the detailed documentation on filters in ASP.NET Core's docs, and once you're sure you have a good understanding of them, port the logic from the old system to the new system's filters.
 
+# Route constraints
+
+ASP.NET Core uses route constraints to help ensure requests are routed properly to route a request. [ASP.NET Core supports a large number of different route constraints for this purpose]/aspnet/core/fundamentals/routing#route-constraint-reference). Route constraints can be applied in the route table, but most apps built with ASP.NET MVC 5 and/or [ASP.NET Web API 2](/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2#route-constraints) use inline route constraints applied to attribute routes. Inline route constraints use a format like this one:
+
+```csharp
+[Route("/customer/{id:int})]
+```
+
+The `:int` after the `id` route parameter serves to constrain the value to match that particular type. One benefit of using route constraints is that they allow for two otherwise-identical routes to exist where the parameters differ only by their type. This allows for the equivalent of [method overloading](/dotnet/standard/design-guidelines/member-overloading) of routes based solely on parameter type.
+
+The set of route constraints, their syntax, and usage is very similar between all three approaches. Custom route constraints are fairly rare in customer applications. Iut if your app uses a custom route constraint and needs to port to ASP.NET Core, the docs include examples showing [how to create custom route constraints in ASP.NET Core](/aspnet/core/fundamentals/routing#custom-route-constraints). Essentially all that's required is to implement `IRouteConstraint` and its `Match` method, and then add the custom constraint when configuring routing for the app:
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddControllers();
+
+    services.AddRouting(options =>
+    {
+        options.ConstraintMap.Add("customName", typeof(MyCustomConstraint));
+    });
+}
+```
+
+This is very similar to how custom constraints are used in ASP.NET Web API, which uses `IHttpRouteConstraint` and configures it using a resolver and a call to `HttpConfiguration.MapHttpAttributeRoutes`:
+
+```csharp
+public static class WebApiConfig
+{
+    public static void Register(HttpConfiguration config)
+    {
+        var constraintResolver = new DefaultInlineConstraintResolver();
+        constraintResolver.ConstraintMap.Add("nonzero", typeof(CustomConstraint));
+
+        config.MapHttpAttributeRoutes(constraintResolver);
+    }
+}
+```
+
+ASP.NET MVC 5 follows a very similar approach, using `IRouteConstraint` for its interface name and configuring the constraint as part of route configuration:
+
+```csharp
+public class RouteConfig
+{
+    public static void RegisterRoutes(RouteCollection routes)
+    {
+        routes.IgnoreRoute(“{resource}.axd/{*pathInfo}”);
+ 
+        var constraintsResolver = new DefaultInlineConstraintResolver();
+        constraintsResolver.ConstraintMap.Add(“values”, typeof(ValuesConstraint));
+        routes.MapMvcAttributeRoutes(constraintsResolver);
+    }
+}
+```
+
+Migrating route constraint usage as well as custom route constraints to ASP.NET Core is typically very straightforward.
+
 ## References
 
 - [ASP.NET Web API Content Negotiation](/aspnet/web-api/overview/formats-and-model-binding/content-negotiation)
@@ -240,6 +297,9 @@ Most ASP.NET MVC and Web API apps do not use a large number of custom filters. S
 - [Media Formatters in ASP.NET Web API 2](/aspnet/web-api/overview/formats-and-model-binding/media-formatters)\
 - [Custom formatters in ASP.NET Core Web API](/aspnet/core/web-api/advanced/custom-formatters)
 - [Filters in ASP.NET Core](/aspnet/core/mvc/controllers/filters)
+- [Route constraints in ASP.NET Web API 2](/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2#route-constraints)
+- [Route constraints in ASP.NET MVC 5](https://devblogs.microsoft.com/aspnet/attribute-routing-in-asp-net-mvc-5/#route-constraints)
+- [ASP.NET Core Route Constraint Reference](/aspnet/core/fundamentals/routing#route-constraint-reference)
 
 >[!div class="step-by-step"]
 >[Previous](example-migration-eshop.md)

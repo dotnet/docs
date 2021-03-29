@@ -15,12 +15,24 @@ ms.assetid: 46d329b1-5b84-4537-9e17-73ca97313e4e
 ## Syntax  
   
 ```xml  
-<inheritdoc/>
+<inheritdoc [cref=""] [path=""]/>
 ```  
 
 ## InheritDoc
 
 Inherit XML comments from base classes, interfaces, and similar methods. This eliminates unwanted copying and pasting of duplicate XML comments and automatically keeps XML comments synchronized.
+
+## Attributes
+
+#### cref
+
+Specify the member to inherit documentation from.  
+Already defined tags on the current member are not overridden by the inherited ones.
+
+#### path
+
+The XPath expression query that will result in a node set to show.  
+You can use this attribute to filter which tags to include or exclude from the inherited documentation.
   
 ## Remarks  
 

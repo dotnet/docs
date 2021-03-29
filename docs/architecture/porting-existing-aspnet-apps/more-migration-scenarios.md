@@ -200,6 +200,37 @@ The steps to migrate from a Web API formatter to an ASP.NET Core MVC formatter a
 3. Copy over the functionality from the Web API formatter to the new implementation.
 4. Configure MVC in the ASP.NET Core App's `ConfigureServices` method to use the new formatter.
 
+## Custom Filters
+
+Filters are used in ASP.NET Core apps to execute code before and/or after certain stages in the request processing pipeline. ASP.NET MVC and Web API also use filters in much the same way, but the details vary. For instance, [ASP.NET MVC supports four kinds of filters](/aspnet/mvc/overview/older-versions-1/controllers-and-routing/understanding-action-filters-cs#the-different-types-of-filters). ASP.NET Web API 2 supports similar filters, and both MVC and Web API included attributes to [override filters](/dotnet/api/system.web.mvc.filters.ioverridefilter).
+
+The most common filter used in ASP.NET MVC and Web API apps is the action filter, which is defined by an [IActionFilter interface](/dotnet/api/system.web.mvc.iactionfilter). This interface provides methods for `OnActionExecuting` (before) and `OnActionExecuted` (after) which can be used to execute code before and/or after an action executes, as noted for each method.
+
+ASP.NET Core continues to support filters, and its unification of MVC and Web API means there is only one approach to their implementation. The [docs include detailed coverage of the five (5) kinds of filters built into ASP.NET Core MVC](/aspnet/core/mvc/controllers/filters#filter-types). All of the filter variants supported in ASP.NET MVC and ASP.NET Web API have associated versions in ASP.NET Core, so migration is generally just a matter of identifying the appropriate interface and/or base class and migrating the code over.
+
+In addition to the synchronous interfaces, ASP.NET Core also provides async interfaces like `IAsyncActionFilter` which provide a single async method that can be used to incorporate code to run both before and after the action, as shown:
+
+```csharp
+public class SampleAsyncActionFilter : IAsyncActionFilter
+{
+    public async Task OnActionExecutionAsync(
+        ActionExecutingContext context,
+        ActionExecutionDelegate next)
+    {
+        // Do something before the action executes.
+
+        // next() calls the action method.
+        var resultContext = await next();
+        // resultContext.Result is set.
+        // Do something after the action executes.
+    }
+}
+```
+
+When migrating async code (or code that should be async), teams should consider leveraging the built in async types that are provided for this purpose.
+
+Most ASP.NET MVC and Web API apps do not use a large number of custom filters. Since the approach to filters in ASP.NET Core MVC is closely aligned with filters in ASP.NET MVC and Web API, the migration of custom filters is generally fairly straightforward. Be sure to read the detailed documentation on filters in ASP.NET Core's docs, and once you're sure you have a good understanding of them, port the logic from the old system to the new system's filters.
+
 ## References
 
 - [ASP.NET Web API Content Negotiation](/aspnet/web-api/overview/formats-and-model-binding/content-negotiation)
@@ -208,6 +239,7 @@ The steps to migrate from a Web API formatter to an ASP.NET Core MVC formatter a
 - [Custom Model Binders in ASP.NET Core](/aspnet/core/mvc/advanced/custom-model-binding#custom-model-binder-sample)
 - [Media Formatters in ASP.NET Web API 2](/aspnet/web-api/overview/formats-and-model-binding/media-formatters)\
 - [Custom formatters in ASP.NET Core Web API](/aspnet/core/web-api/advanced/custom-formatters)
+- [Filters in ASP.NET Core](/aspnet/core/mvc/controllers/filters)
 
 >[!div class="step-by-step"]
 >[Previous](example-migration-eshop.md)

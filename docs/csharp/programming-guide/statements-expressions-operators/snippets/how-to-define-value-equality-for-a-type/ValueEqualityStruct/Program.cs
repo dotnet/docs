@@ -1,51 +1,32 @@
-﻿namespace ValueEqualityStruct
+﻿using System;
+
+namespace ValueEqualityStruct
 {
-    using System;
     struct TwoDPoint : IEquatable<TwoDPoint>
     {
-        // Read/write auto-implemented properties.
         public int X { get; private set; }
         public int Y { get; private set; }
 
         public TwoDPoint(int x, int y)
             : this()
         {
-            if ((x < 1) || (x > 2000) || (y < 1) || (y > 2000))
+            if (x is (< 1 or > 2000) || y is (< 1 or > 2000))
             {
-                throw new System.ArgumentException("Point must be in range 1 - 2000");
+                throw new ArgumentException("Point must be in range 1 - 2000");
             }
             X = x;
             Y = y;
         }
 
-        public override bool Equals(object obj)
-        {
-            if (obj is TwoDPoint)
-            {
-                return this.Equals((TwoDPoint)obj);
-            }
-            return false;
-        }
+        public override bool Equals(object obj) => obj is TwoDPoint other && this.Equals(other);
 
-        public bool Equals(TwoDPoint p)
-        {
-            return (X == p.X) && (Y == p.Y);
-        }
+        public bool Equals(TwoDPoint p) => X == p.X && Y == p.Y;
 
-        public override int GetHashCode()
-        {
-            return X * 0x00010000 + Y;
-        }
+        public override int GetHashCode() => (X, Y).GetHashCode();
 
-        public static bool operator ==(TwoDPoint lhs, TwoDPoint rhs)
-        {
-            return lhs.Equals(rhs);
-        }
+        public static bool operator ==(TwoDPoint lhs, TwoDPoint rhs) => lhs.Equals(rhs);
 
-        public static bool operator !=(TwoDPoint lhs, TwoDPoint rhs)
-        {
-            return !(lhs.Equals(rhs));
-        }
+        public static bool operator !=(TwoDPoint lhs, TwoDPoint rhs) => !(lhs == rhs);
     }
 
     class Program
@@ -56,7 +37,6 @@
             TwoDPoint pointB = new TwoDPoint(3, 4);
             int i = 5;
 
-            // Compare using virtual Equals, static Equals, and == and != operators.
             // True:
             Console.WriteLine("pointA.Equals(pointB) = {0}", pointA.Equals(pointB));
             // True:
@@ -97,7 +77,6 @@
             // True:
             Console.WriteLine("pointD == (pointC = 3,4) = {0}", pointD == pointC);
 
-            // Keep the console window open in debug mode.
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }

@@ -1,13 +1,12 @@
-﻿namespace ValueEqualityClass
+﻿using System;
+
+namespace ValueEqualityClass
 {
-    using System;
     class TwoDPoint : IEquatable<TwoDPoint>
     {
-        // Readonly auto-implemented properties.
         public int X { get; private set; }
         public int Y { get; private set; }
 
-        // Set the properties in the constructor.
         public TwoDPoint(int x, int y)
         {
             if ((x < 1) || (x > 2000) || (y < 1) || (y > 2000))
@@ -18,14 +17,10 @@
             this.Y = y;
         }
 
-        public override bool Equals(object obj)
-        {
-            return this.Equals(obj as TwoDPoint);
-        }
+        public override bool Equals(object obj) => this.Equals(obj as TwoDPoint);
 
         public bool Equals(TwoDPoint p)
         {
-            // If parameter is null, return false.
             if (Object.ReferenceEquals(p, null))
             {
                 return false;
@@ -49,19 +44,14 @@
             return (X == p.X) && (Y == p.Y);
         }
 
-        public override int GetHashCode()
-        {
-            return X * 0x00010000 + Y;
-        }
+        public override int GetHashCode() => (X, Y).GetHashCode();
 
         public static bool operator ==(TwoDPoint lhs, TwoDPoint rhs)
         {
-            // Check for null on left side.
             if (Object.ReferenceEquals(lhs, null))
             {
                 if (Object.ReferenceEquals(rhs, null))
                 {
-                    // null == null = true.
                     return true;
                 }
 
@@ -72,10 +62,7 @@
             return lhs.Equals(rhs);
         }
 
-        public static bool operator !=(TwoDPoint lhs, TwoDPoint rhs)
-        {
-            return !(lhs == rhs);
-        }
+        public static bool operator !=(TwoDPoint lhs, TwoDPoint rhs) => !(lhs == rhs);
     }
 
     // For the sake of simplicity, assume a ThreeDPoint IS a TwoDPoint.
@@ -88,19 +75,15 @@
         {
             if ((z < 1) || (z > 2000))
             {
-                throw new System.ArgumentException("Point must be in range 1 - 2000");
+                throw new ArgumentException("Point must be in range 1 - 2000");
             }
             this.Z = z;
         }
 
-        public override bool Equals(object obj)
-        {
-            return this.Equals(obj as ThreeDPoint);
-        }
+        public override bool Equals(object obj) => this.Equals(obj as ThreeDPoint);
 
         public bool Equals(ThreeDPoint p)
         {
-            // If parameter is null, return false.
             if (Object.ReferenceEquals(p, null))
             {
                 return false;
@@ -125,14 +108,10 @@
             }
         }
 
-        public override int GetHashCode()
-        {
-            return (X * 0x100000) + (Y * 0x1000) + Z;
-        }
+        public override int GetHashCode() => (X, Y, Z).GetHashCode();
 
         public static bool operator ==(ThreeDPoint lhs, ThreeDPoint rhs)
         {
-            // Check for null.
             if (Object.ReferenceEquals(lhs, null))
             {
                 if (Object.ReferenceEquals(rhs, null))
@@ -148,10 +127,7 @@
             return lhs.Equals(rhs);
         }
 
-        public static bool operator !=(ThreeDPoint lhs, ThreeDPoint rhs)
-        {
-            return !(lhs == rhs);
-        }
+        public static bool operator !=(ThreeDPoint lhs, ThreeDPoint rhs) => !(lhs == rhs);
     }
 
     class Program

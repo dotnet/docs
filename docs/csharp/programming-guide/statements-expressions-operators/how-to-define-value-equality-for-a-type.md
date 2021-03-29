@@ -68,7 +68,7 @@ The `==` and `!=` operators can be used with classes even if the class does not 
 >
 > This code reports that `p1` equals `p2` despite the difference in `z` values. The difference is ignored because the compiler picks the `TwoDPoint` implementation of `IEquatable` based on the compile-time type.
 >
-> The built-in value equality of `record` types handles scenarios like this correctly . If `TwoDPoint` and `ThreeDPoint` were `record` types, the result of `p1.Equals(p2)` would be `False`. For more information, see [Equality in `record` type inheritance hierarchies](../../language-reference/builtin-types/record.md#equality-in-inheritance-hierarchies).
+> The built-in value equality of `record` types handles scenarios like this correctly. If `TwoDPoint` and `ThreeDPoint` were `record` types, the result of `p1.Equals(p2)` would be `False`. For more information, see [Equality in `record` type inheritance hierarchies](../../language-reference/builtin-types/record.md#equality-in-inheritance-hierarchies).
 
 ## Struct example
 

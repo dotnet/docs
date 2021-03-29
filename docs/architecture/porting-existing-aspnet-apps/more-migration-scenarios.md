@@ -450,6 +450,44 @@ If you're migrating to Razor Pages you will need to use an *Areas* folder in you
 
 In addition to the above guidance, teams should review [how routing in ASP.NET Core works with areas](/aspnet/core/mvc/controllers/routing#areas) as part of their migration planning process.
 
+## Integration tests for ASP.NET MVC and ASP.NET Web API
+
+Integration tests are automated tests that verify several different parts of an app work correctly, together. Writing integration tests for ASP.NET MVC and ASP.NET Web API usually involved deploying the app to a real web server, such as a local instance of IIS or IIS Express, and then making requests to this hosted application using an HTTP client. Some of these tests may interact with the client-side user interface using browser automation tools like Selenium, though often these are referred to as *UI tests* rather than integration tests.
+
+If your migrated app shares the same behavior as its original version, whatever existing technology the team is using to perform integration tests (an UI tests) should continue to work just as it did before. These tests are usually indifferent to the underlying technology used to host the app they're testing, and interact with it only through HTTP requests. Where things may get more challenging is with how the tests interact with the app to get it into a known good state prior to each test. This may require some migration effort, since configuration and startup are significantly different in ASP.NET Core compared to ASP.NET MVC or ASP.NET Web API.
+
+Teams should strongly consider migrating their integration tests to use [ASP.NET Core's built in integration testing](https://docs.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-5.0) support. In ASP.NET Core, apps can be tested by deploying them to a `TestHost`, which is configured using a `WebApplicationFactory`. There's a little bit of setup required to host the app for testing, but once this is in place, creating individual integration tests is very straightforward.
+
+One of the best features of ASP.NET Core's integration testing support is that the app is hosted in memory. There's no need to configure a real webserver to host the app. There's no need to use a browser automation tool (if you're only testing ASP.NET Core and not client-side behavior). Many of the problems that can be encountered when trying to use a real webserver for automated integration tests, such as firewall issues or process start/stop issues, are eliminated with this new approach. Since the requests are all made in memory with no network requirement, the tests also tend to run much faster than tests that must setup a separate webserver and communicate with it over the network (even if it's running on the same machine).
+
+Below you can see an example ASP.NET Core integration test (sometimes referred to as *functional tests* to distinguish them from lower-level integration tests) from the [eShopOnWeb reference application](https://github.com/dotnet-architecture/eShopOnWeb):
+
+```csharp
+public class GetByIdEndpoint : IClassFixture<ApiTestFixture>
+{
+    JsonSerializerOptions _jsonOptions = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+
+    public GetByIdEndpoint(ApiTestFixture factory)
+    {
+        Client = factory.CreateClient();
+    }
+
+    public HttpClient Client { get; }
+
+    [Fact]
+    public async Task ReturnsItemGivenValidId()
+    {
+        var response = await Client.GetAsync("api/catalog-items/5");
+        response.EnsureSuccessStatusCode();
+        var stringResponse = await response.Content.ReadAsStringAsync();
+        var model = stringResponse.FromJson<GetByIdCatalogItemResponse>();
+
+        Assert.Equal(5, model.CatalogItem.Id);
+        Assert.Equal("Roslyn Red Sheet", model.CatalogItem.Name);
+    }
+}
+```
+
 ## WCF Client Configuration
 
 If your app currently relies on WCF services as a client, this scenario is supported. However, you will need to [migrate your configuration](/aspnet/core/migration/configuration) from *web.config* to use the new *appsettings.json* file. Another option is to add any necessary configuration to your clients programmatically when you create them. For example:
@@ -479,6 +517,7 @@ If your organization has extensive services built using WCF that your app relies
 - [Enabling Cross-Origin Requests in Web API](/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api#enable-cors)
 - [Enable Cross-Origin Requests (CORS) in ASP.NET Core](/aspnet/core/security/cors)
 - [Areas in ASP.NET Core](/aspnet/core/mvc/controllers/areas)
+- [Integration tests in ASP.NET Core](/aspnet/core/test/integration-tests)
 
 >[!div class="step-by-step"]
 >[Previous](example-migration-eshop.md)

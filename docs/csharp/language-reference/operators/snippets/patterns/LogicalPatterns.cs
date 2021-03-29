@@ -2,7 +2,7 @@ using System;
 
 namespace Patterns
 {
-    public static class PatternCombinators
+    public static class LogicalPatterns
     {
         public static void Examples()
         {

@@ -1,7 +1,7 @@
 ---
 title: "Patterns - C# reference"
 description: "Learn about the patterns supported by C# switch and is expressions and C# switch statement - C# reference"
-ms.date: 03/25/2021
+ms.date: 03/30/2021
 helpviewer_keywords: 
   - "pattern matching [C#]"
 ---
@@ -45,6 +45,8 @@ Beginning with C# 9.0, for that purpose you can use a *type pattern*, as the fol
 
 Like a declaration pattern, a type pattern matches an expression when an expression result is non-null and its runtime type satisfies any of the conditions listed above.
 
+For more information, see the [Declaration pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#declaration-pattern) and [Type pattern](~/_csharplang/proposals/csharp-9.0/patterns3.md#type-patterns) sections of the feature proposal notes.
+
 ## Constant pattern
 
 Beginning with C# 7.0, you use the *constant pattern* to test if an expression result equals a specified constant, as the following example shows:
@@ -70,6 +72,8 @@ Beginning with C# 9.0, you can use the [negated](#logical-patterns) `null` const
 
 :::code language="csharp" source="snippets/patterns/ConstantPattern.cs" id="NonNullCheck":::
 
+For more information, see the [Constant pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#constant-pattern) section of the feature proposal note.
+
 ## Relational patterns
 
 Beginning with C# 9.0, you use a *relational pattern* to compare an expression result with a constant, as the following example shows:
@@ -83,6 +87,8 @@ To check if an expression value is in a certain range, match it against a [conju
 :::code language="csharp" source="snippets/patterns/RelationalPatterns.cs" id="WithCombinators":::
 
 A relational pattern doesn't match an expression if an expression result is `null` or it fails to convert to the type of a constant by a nullable or unboxing conversion.
+
+For more information, see the [Relational patterns](~/_csharplang/proposals/csharp-9.0/patterns3.md#relational-patterns) section of the feature proposal note.
 
 ## Logical patterns
 
@@ -104,6 +110,8 @@ As the preceding example shows, you can repeatedly use the pattern combinators i
 
 :::code language="csharp" source="snippets/patterns/PatternCombinators.cs" id="WithParentheses":::
 
+For more information, see the [Pattern combinators](~/_csharplang/proposals/csharp-9.0/patterns3.md#pattern-combinators) section of the feature proposal note.
+
 ## Property pattern
 
 Beginning with C# 8.0, you use a *property pattern* to match an expression's properties or fields against nested patterns, as the following example shows:
@@ -121,6 +129,8 @@ A property pattern is a recursive pattern. That is, you can use any pattern as a
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="RecursivePropertyPattern":::
 
 The preceding example uses two features available in C# 9.0 and later: `or` [pattern combinator](#logical-patterns) and record types.
+
+For more information, see the [Property pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#property-pattern) section of the feature proposal note.
 
 ## Positional pattern
 
@@ -150,6 +160,8 @@ You can also combine two preceding usages in one pattern, as the following examp
 
 A positional pattern is a recursive pattern. That is, you can use any pattern as a nested pattern.
 
+For more information, see the [Positional pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#positional-pattern) section of the feature proposal note.
+
 ## `var` pattern
 
 Beginning with C# 7.0, you use a *`var` pattern* to match any expression, including `null`, and assign its result to a declared variable, as the following example shows:
@@ -166,6 +178,8 @@ In the preceding example, pattern `var (x, y)` is equivalent to a [positional pa
 
 In a `var` pattern, the type of a declared variable is the compile-time type of the expression that is matched against the pattern.
 
+For more information, see the [Var pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#var-pattern) section of the feature proposal note.
+
 ## Discard pattern
 
 Beginning with C# 8.0, you use a *discard pattern* `_` to match any expression, including `null`, as the following example shows:
@@ -175,6 +189,8 @@ Beginning with C# 8.0, you use a *discard pattern* `_` to match any expression, 
 In the preceding example, a discard pattern is used to handle `null` and any integer value that doesn't have the corresponding member of the <xref:System.DayOfWeek> enumeration. That guarantees that a `switch` expression in the example handles all possible values of its input. If you don't use a discard pattern in a `switch` expression and none of the expression's patterns matches an input, the runtime [throws an exception](switch-expression.md#non-exhaustive-switch-expressions).The compiler generates a warning if a `switch` expression doesn't handle all possible input values.
 
 A discard pattern cannot be a pattern in an `is` expression or a `switch` statement. In those cases, to match any expression, use a [`var` pattern](#var-pattern) with a discard: `var _`.
+
+For more information, see the [Discard pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#discard-pattern) section of the feature proposal note.
 
 ## Parenthesized pattern
 

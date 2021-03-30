@@ -5,11 +5,11 @@ ms.date: 03/31/2021
 ---
 # New System.Linq.Queryable method overloads
 
-New public method overloads have been added to <xref:System.Linq.Queryable?displayProperty=fullName> as part of the new features implemented in <https://github.com/dotnet/runtime/pull/47231>. If your reflection code isn't sufficiently robust when looking up methods, these additions can break your query provider implementations.
+Additional public method overloads have been added to <xref:System.Linq.Queryable?displayProperty=fullName> as part of the new features implemented in <https://github.com/dotnet/runtime/pull/47231>. If your reflection code isn't sufficiently robust when looking up methods, these additions can break your query provider implementations.
 
 ## Change description
 
-In .NET 6, new overloads were added to the methods listed in the [Affected APIs](#affected-apis) section. Reflection code such as that shown in the following example may break as a result of these additions:
+In .NET 6, new overloads were added to the methods listed in the [Affected APIs](#affected-apis) section. Reflection code, such as that shown in the following example, may break as a result of these additions:
 
 ```csharp
 typeof(System.Linq.Queryable)

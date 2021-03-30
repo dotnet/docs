@@ -77,12 +77,8 @@ For .NET apps that use the *System.Drawing.Common* assembly, you'll also need th
 
 The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the **SDK** and **Runtime**. You can download the script from <https://dot.net/v1/dotnet-install.sh>.
 
-The script currently requires bash. On some distros this needs to be installed. On Alpine, for example, you would install bash with:
-
-```bash
-apk add bash
-```
-
+>![IMPORTANT]
+>Bash is required to run the script.
 The script defaults to installing the latest SDK [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 3.1. To install the current release, which may not be an (LTS) version, use the `-c Current` parameter.
 
 ```bash

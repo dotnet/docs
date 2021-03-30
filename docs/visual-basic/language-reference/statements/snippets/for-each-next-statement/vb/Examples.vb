@@ -1,13 +1,8 @@
-﻿Imports System.Diagnostics
-Imports System.Collections.Generic
-
-Public Class Class9
-    ' ebce3120-95c3-42b1-b70b-fa7da40c75e2
-    ' For Each...Next Statement (Visual Basic)
+Module Module1
 
     Public Sub Process()
 
-        '<Snippet121>
+        '<init>
         ' Create a list of strings by using a
         ' collection initializer.
         Dim lst As New List(Of String) _
@@ -19,10 +14,10 @@ Public Class Class9
         Next
         Debug.WriteLine("")
         'Output: abc def ghi
-        '</Snippet121>
+        '</init>
 
 
-        '<Snippet122>
+        '<nested>
         ' Create lists of numbers and letters
         ' by using array initializers.
         Dim numbers() As Integer = {1, 4, 7}
@@ -36,15 +31,15 @@ Public Class Class9
         Next
         Debug.WriteLine("")
         'Output: 1a 1b 1c 4a 4b 4c 7a 7b 7c 
-        '</Snippet122>
+        '</nested>
 
 
-        '<Snippet123>
+        '<exitcontinue>
         Dim numberSeq() As Integer =
             {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
 
         For Each number As Integer In numberSeq
-            ' If number is between 5 and 7, continue
+            ' If number is between 5 and 8, continue
             ' with the next iteration.
             If number >= 5 And number <= 8 Then
                 Continue For
@@ -60,20 +55,20 @@ Public Class Class9
         Next
         Debug.WriteLine("")
         ' Output: 1 2 3 4 9 10
-        '</Snippet123>
+        '</exitcontinue>
 
 
-        '<Snippet124>
+        '<foreachdir>
         Dim dInfo As New System.IO.DirectoryInfo("c:\")
         For Each dir As System.IO.DirectoryInfo In dInfo.GetDirectories()
             Debug.WriteLine(dir.Name)
         Next
-        '</Snippet124>
+        '</foreachdir>
     End Sub
 
 
 
-    '<Snippet125>
+    '<sort>
     Public Sub ListCars()
 
         ' Create some new cars.
@@ -141,9 +136,9 @@ Public Class Class9
             Return compare
         End Function
     End Class
-    '</Snippet125>
+    '</sort>
 
-    '<Snippet127>
+    '<iterator>
     Public Sub ListEvenNumbers()
         For Each number As Integer In EvenSequence(5, 18)
             Debug.Write(number & " ")
@@ -163,6 +158,6 @@ Public Class Class9
             End If
         Next
     End Function
-    '</Snippet127>
+    '</iterator>
 
-End Class
+End Module

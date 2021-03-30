@@ -274,6 +274,58 @@ let expensiveToComputeBad2 :int = 2
 let myFunBad (a: decimal) b c:decimal = a + b + c
 ```
 
+### Formatting bindings
+
+In all cases, the right-hand side of a binding either all goes on one line, or (if it's too long) goes on a new line indented one scope.
+
+For example, the following are non-compliant:
+
+```fsharp
+let a = """
+foobar, long string
+"""
+
+type File =
+    member this.SaveAsync(path: string) : Async<unit> = async {
+        // IO operation
+        return ()
+    }
+
+let c = {
+    Name = "Bilbo"
+    Age = 111
+    Region = "The Shire"
+}
+
+let d = while f do
+    printfn "%A" x
+```
+
+The following are compliant:
+
+```fsharp
+let a =
+    """
+foobar, long string
+"""
+
+type File =
+    member this.SaveAsync(path: string) : Async<unit> =
+        async {
+            // IO operation
+            return ()
+        }
+
+let c =
+    { Name = "Bilbo"
+      Age = 111
+      Region = "The Shire" }
+
+let d =
+    while f do
+        printfn "%A" x
+```
+
 ## Formatting blank lines
 
 * Separate top-level function and class definitions with two blank lines.
@@ -850,7 +902,8 @@ lambdaList
 Pattern matching in functions defined by `let` or `let rec` should be indented four spaces after starting of `let`, even if `function` keyword is used:
 
 ```fsharp
-let rec sizeLambda acc = function
+let rec sizeLambda acc = 
+    function
     | Abs(x, body) -> sizeLambda (succ acc) body
     | App(lam1, lam2) -> sizeLambda (sizeLambda acc lam1) lam2
     | Var v -> succ acc

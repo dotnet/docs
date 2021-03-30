@@ -10,8 +10,9 @@
     - name: Azure DevOps
       href: cicd.md
     - name: GitHub Actions
-      href: actions-index.md
       items:
+      - name: Overview
+        href: actions-index.md
       - name: Comparison of GitHub Actions and Azure Pipelines
         href: actions-vs-pipelines.md
       - name: Basic build workflow

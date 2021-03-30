@@ -395,7 +395,7 @@ public class SomeController : Controller
 
 When using Areas, additional arguments are passed into HTML Helper methods to generate links to actions in different areas:
 
-```html
+```cshtml
 @Html.ActionLink("News", "Index", "News", new { area = "News" }, null)
 ```
 

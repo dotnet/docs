@@ -2,7 +2,8 @@
 title: Continuous integration and deployment with GitHub Actions overview
 description: See how GitHub Actions is a great platform for .NET DevOps
 author: colindembovsky
-ms.date: 03/04/2021
+ms.date: 03/30/2021
+uid: azure/devops/github-actions
 ---
 # Continuous integration and deployment with GitHub Actions
 

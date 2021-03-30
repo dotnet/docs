@@ -131,35 +131,35 @@ You can now add additional jobs to the workflow to deploy to the environments! Y
 
     ```yml
             if-no-files-found: error  # <-- last line of build job: insert below this line
-      
+
       deploy_staging:
         needs: build
         runs-on: ubuntu-latest
-      
+
         environment:
           name: PRE-PROD
           url: ${{ steps.deploywebapp.outputs.webapp-url }}
-        
+
         steps:
         - name: Download a Build Artifact
           uses: actions/download-artifact@v2.0.8
           with:
             name: website
             path: website
-        
+
         - name: Login via Azure CLI
           uses: azure/login@v1
           with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
-        
+
         - name: Deploy web app
           id: deploywebapp
           uses: azure/webapps-deploy@v2
-          with: 
+          with:
             app-name: ${{ env.app-name }}
             slot-name: staging
             package: website
-        
+
         - name: az cli logout
           run: az logout
     ```
@@ -204,24 +204,24 @@ Now that you've deployed successfully to `PRE-PROD`, you'll want to deploy to `P
       deploy_prod:
         needs: deploy_staging
         runs-on: ubuntu-latest
-      
+
         environment:
           name: PROD
           url: ${{ steps.slot_swap.outputs.url }}
-        
+
         steps:
         - name: Login via Azure CLI
           uses: azure/login@v1
           with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
-        
+
         - name: Swap staging slot into production
           id: slot_swap
           run: |
             az webapp deployment slot swap -g ${{ env.rg-name }} -n ${{ env.app-name }} -s staging
             url=$(az webapp show -g ${{ env.rg-name }} -n ${{ env.app-name }} --query "defaultHostName" -o tsv)
             echo "::set-output name=url::http://$url"
-          
+
         - name: az cli logout
           run: az logout
     ```
@@ -326,7 +326,7 @@ To show how environment configuration can be handled, you're going to add a secr
                     "slotSetting": true
                 }
             ]
-        
+
         - name: az cli logout   # <-- this exists already
     ```
 
@@ -345,7 +345,7 @@ To show how environment configuration can be handled, you're going to add a secr
                     "slotSetting": true
                 }
             ]
-            
+
         - name: az cli logout # <-- this exists already
     ```
 
@@ -403,31 +403,31 @@ jobs:
   deploy_staging:
     needs: build
     runs-on: ubuntu-latest
-   
+
     environment:
       name: PRE-PROD
       url: ${{ steps.deploywebapp.outputs.webapp-url }}
-    
+
     steps:
     - name: Download a Build Artifact
       uses: actions/download-artifact@v2.0.8
       with:
         name: website
         path: website
-    
+
     - name: Login via Azure CLI
       uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-    
+
     - name: Deploy web app
       id: deploywebapp
       uses: azure/webapps-deploy@v2
-      with: 
+      with:
         app-name: ${{ env.app-name }}
         slot-name: staging
         package: website
-    
+
     - name: Update config
       uses: Azure/appservice-settings@v1
       with:
@@ -441,31 +441,31 @@ jobs:
                  "slotSetting": true
              }
          ]
-    
+
     - name: az cli logout
       run: az logout
-      
+
   deploy_prod:
     needs: deploy_staging
     runs-on: ubuntu-latest
-   
+
     environment:
       name: PROD
       url: ${{ steps.slot_swap.outputs.url }}
-    
+
     steps:
     - name: Login via Azure CLI
       uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-    
+
     - name: Swap staging slot into production
       id: slot_swap
       run: |
         az webapp deployment slot swap -g ${{ env.rg-name }} -n ${{ env.app-name }} -s staging
         url=$(az webapp show -g ${{ env.rg-name }} -n ${{ env.app-name }} --query "defaultHostName" -o tsv)
         echo "::set-output name=url::http://$url"
-    
+
     - name: Update config
       uses: Azure/appservice-settings@v1
       with:
@@ -478,7 +478,7 @@ jobs:
                  "slotSetting": true
              }
          ]
-         
+
     - name: az cli logout
       run: az logout
 

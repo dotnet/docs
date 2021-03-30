@@ -41,7 +41,7 @@ This sample creates a .NET core console application that detects objects within 
 
 Object detection is a computer vision problem. While closely related to image classification, object detection performs image classification at a more granular scale. Object detection both locates _and_ categorizes entities within images. Use object detection when images contain multiple objects of different types.
 
-![Screenshots showing Image Classification versus Object Classification.](./media/object-detection-onnx/img-classification-obj-detection.PNG)
+![Screenshots showing Image Classification versus Object Classification.](./media/object-detection-onnx/img-classification-obj-detection.png)
 
 Some use cases for object detection include:
 
@@ -181,7 +181,7 @@ Initialize the `mlContext` variable with a new instance of `MLContext` by adding
 
 The model segments an image into a `13 x 13` grid, where each grid cell is `32px x 32px`. Each grid cell contains 5 potential object bounding boxes. A bounding box has  25 elements:
 
-![Grid sample on the left, and Bounding Box sample on the right](./media/object-detection-onnx/model-output-description.PNG)
+![Grid sample on the left, and Bounding Box sample on the right](./media/object-detection-onnx/model-output-description.png)
 
 - `x` the x position of the bounding box center relative to the grid cell it's associated with.
 - `y` the y position of the bounding box center relative to the grid cell it's associated with.

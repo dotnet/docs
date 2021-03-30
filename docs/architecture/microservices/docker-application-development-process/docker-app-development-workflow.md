@@ -417,7 +417,7 @@ At the time of this writing, Visual Studio supports **Docker Compose** and **Kub
 
 After you add orchestrator support to your solution in Visual Studio, you will also see a new node (in the `docker-compose.dcproj` project file) in Solution Explorer that contains the added docker-compose.yml files, as shown in Figure 5-8.
 
-![Screenshot of docker-compose node in Solution Explorer.](./media/docker-app-development-workflow/docker-compose-tree-node.PNG)
+![Screenshot of docker-compose node in Solution Explorer.](./media/docker-app-development-workflow/docker-compose-tree-node.png)
 
 **Figure 5-8**. The **docker-compose** tree node added in Visual Studio 2019 Solution Explorer
 

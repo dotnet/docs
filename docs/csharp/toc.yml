@@ -786,22 +786,6 @@ items:
       href: programming-guide/namespaces/using-namespaces.md
     - name: "How to use the My namespace"
       href: programming-guide/namespaces/how-to-use-the-my-namespace.md
-  - name: Unsafe Code and Pointers
-    items:
-    - name: Overview and restrictions
-      displayName: unsafe code pointers
-      href: programming-guide/unsafe-code-pointers/index.md
-    - name: Fixed size buffers
-      href: programming-guide/unsafe-code-pointers/fixed-size-buffers.md
-    - name: Pointer types
-      items:
-      - name: Overview
-        displayName: pointer types
-        href: programming-guide/unsafe-code-pointers/pointer-types.md
-      - name: Pointer conversions
-        href: programming-guide/unsafe-code-pointers/pointer-conversions.md
-      - name: "How to use pointers to copy an array of bytes"
-        href: programming-guide/unsafe-code-pointers/how-to-use-pointers-to-copy-an-array-of-bytes.md
   - name: XML documentation comments
     items:
     - name: Overview
@@ -1318,6 +1302,19 @@ items:
     - name: Miscellaneous
       displayName: Conditional, Obsolete, AttributeUsage, ModuleInitializer, SkipLocalsInit
       href: language-reference/attributes/general.md
+  - name: Unsafe Code and Pointers
+    items:
+    - name: Overview and restrictions
+      displayName: unsafe code pointers
+      href: language-reference/unsafe-code/index.md
+    - name: Fixed size buffers
+      href: language-reference/unsafe-code/fixed-size-buffers.md
+    - name: Pointer types
+      href: language-reference/unsafe-code/pointer-types.md
+    - name: Pointer conversions
+      href: language-reference/unsafe-code/pointer-conversions.md
+    - name: "How to use pointers to copy an array of bytes"
+      href: language-reference/unsafe-code/how-to-use-pointers-to-copy-an-array-of-bytes.md
   - name: Preprocessor directives
     href: language-reference/preprocessor-directives.md
     displayName: \#if, \#else, \#elif, \#endif, \#define, \#undef, \#warning, \#error, \#line, \#nullable, \#region, \#endregion, \#pragma, warning, checksum

@@ -180,7 +180,7 @@ public static void ConfigureApis(HttpConfiguration config)
 
 In ASP.NET Core, the process is similar. ASP.NET Core supports both input formatters (used by model binding) and output formatters (used to format responses). Adding a custom formatter to output responses in a specific way involves inheriting from an appropriate base class and adding the formatter to MVC in `Startup`:
 
-```
+```csharp
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddControllers(options =>

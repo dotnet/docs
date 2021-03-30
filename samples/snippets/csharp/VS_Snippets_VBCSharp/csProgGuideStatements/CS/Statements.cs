@@ -121,8 +121,7 @@
         //</Snippet18>
     }
 
-    // Replaced on 10-13-08 with new correct version.
-    // This goes into new topic "how to: implement value equality in a type"
+    // This is no longer in docs, replaced by ~docs\docs\csharp\programming-guide\statements-expressions-operators\snippets\how-to-define-value-equality-for-a-type\ValueEqualityClass\Program.cs
     //<Snippet19>
     namespace ValueEquality
     {
@@ -400,6 +399,7 @@
         }
     }
 
+    // This is no longer in docs, replaced by ~docs\docs\csharp\programming-guide\statements-expressions-operators\snippets\how-to-define-value-equality-for-a-type\ValueEqualityStruct\Program.cs
     namespace ValueEqualityValueTypes
     {
         //<Snippet20>

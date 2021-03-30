@@ -70,7 +70,6 @@ For more details, you can refer [Polly: Retry with Jitter](https://github.com/Ap
 - **Polly (.NET resilience and transient-fault-handling library)**  
   <https://github.com/App-vNext/Polly>
 
-
 - **Marc Brooker. Jitter: Making Things Better With Randomness**  
   <https://brooker.co.za/blog/2015/03/21/backoff.html>
 

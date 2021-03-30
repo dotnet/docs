@@ -44,7 +44,7 @@ Learn the various methods for deploying an ASP.NET Core app to Azure App Service
 
 Build an end-to-end continuous integration and deployment solution for your ASP.NET Core app with GitHub, Azure DevOps Services, and Azure.
 
-### [Continuous integration and deployment with GitHub Actions](xref:azure/devops/actions-index)
+### [Continuous integration and deployment with GitHub Actions](xref:azure/devops/github-actions)
 
 Build an end-to-end continuous integration and deployment solution for your ASP.NET Core app with GitHub, GitHub Actions, and Azure, including code scanning for security and quality using CodeQL.
 

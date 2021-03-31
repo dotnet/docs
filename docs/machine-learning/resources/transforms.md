@@ -24,20 +24,20 @@ Other data transformations don't require training data. For example: the <xref:M
 | --- | --- | --- |
 | <xref:Microsoft.ML.TransformExtensionsCatalog.Concatenate%2A> | Concatenate one or more input columns into a new output column | Yes |
 | <xref:Microsoft.ML.TransformExtensionsCatalog.CopyColumns%2A> | Copy and rename one or more input columns | Yes |
-| <xref:Microsoft.ML.TransformExtensionsCatalog.DropColumns%2A> | Drop one or more input columns | No |
+| <xref:Microsoft.ML.TransformExtensionsCatalog.DropColumns%2A> | Drop one or more input columns | Yes |
 | <xref:Microsoft.ML.TransformExtensionsCatalog.SelectColumns%2A> | Select one or more columns to keep from the input data | Yes |
 
 ## Normalization and scaling
 
 | Transform | Definition | ONNX Exportable |
 | --- | --- | --- |
-| <xref:Microsoft.ML.NormalizationCatalog.NormalizeMeanVariance%2A> | Subtract the mean (of the training data) and divide by the variance (of the training data) |  |
-| <xref:Microsoft.ML.NormalizationCatalog.NormalizeLogMeanVariance%2A> | Normalize based on the logarithm of the training data |
-| <xref:Microsoft.ML.NormalizationCatalog.NormalizeLpNorm%2A> | Scale input vectors by their [lp-norm](https://en.wikipedia.org/wiki/Lp_space#The_p-norm_in_finite_dimensions), where p is 1, 2 or infinity. Defaults to the l2 (Euclidean distance) norm |
-| <xref:Microsoft.ML.NormalizationCatalog.NormalizeGlobalContrast%2A> | Scale each value in a row by subtracting the mean of the row data and divide by either the standard deviation or l2-norm (of the row data), and multiply by a configurable scale factor (default 2) |
-| <xref:Microsoft.ML.NormalizationCatalog.NormalizeBinning%2A> | Assign the input value to a bin index and divide by the number of bins to produce a float value between 0 and 1. The bin boundaries are calculated to evenly distribute the training data across bins |
-| <xref:Microsoft.ML.NormalizationCatalog.NormalizeSupervisedBinning%2A> | Assign the input value to a bin based on its correlation with label column |
-| <xref:Microsoft.ML.NormalizationCatalog.NormalizeMinMax%2A> | Scale the input by the difference between the minimum and maximum values in the training data |
+| <xref:Microsoft.ML.NormalizationCatalog.NormalizeMeanVariance%2A> | Subtract the mean (of the training data) and divide by the variance (of the training data) | Yes |
+| <xref:Microsoft.ML.NormalizationCatalog.NormalizeLogMeanVariance%2A> | Normalize based on the logarithm of the training data | Yes |
+| <xref:Microsoft.ML.NormalizationCatalog.NormalizeLpNorm%2A> | Scale input vectors by their [lp-norm](https://en.wikipedia.org/wiki/Lp_space#The_p-norm_in_finite_dimensions), where p is 1, 2 or infinity. Defaults to the l2 (Euclidean distance) norm | Yes |
+| <xref:Microsoft.ML.NormalizationCatalog.NormalizeGlobalContrast%2A> | Scale each value in a row by subtracting the mean of the row data and divide by either the standard deviation or l2-norm (of the row data), and multiply by a configurable scale factor (default 2) | Yes |
+| <xref:Microsoft.ML.NormalizationCatalog.NormalizeBinning%2A> | Assign the input value to a bin index and divide by the number of bins to produce a float value between 0 and 1. The bin boundaries are calculated to evenly distribute the training data across bins |  Yes |
+| <xref:Microsoft.ML.NormalizationCatalog.NormalizeSupervisedBinning%2A> | Assign the input value to a bin based on its correlation with label column | Yes |
+| <xref:Microsoft.ML.NormalizationCatalog.NormalizeMinMax%2A> | Scale the input by the difference between the minimum and maximum values in the training data | Yes |
 
 ## Conversions between data types
 
@@ -59,7 +59,7 @@ Other data transformations don't require training data. For example: the <xref:M
 | <xref:Microsoft.ML.TextCatalog.TokenizeIntoWords%2A> | Split one or more text columns into individual words | Yes |
 | <xref:Microsoft.ML.TextCatalog.TokenizeIntoCharactersAsKeys%2A> | Split one or more text columns into individual characters floats over a set of topics | Yes |
 | <xref:Microsoft.ML.TextCatalog.NormalizeText%2A> | Change case, remove diacritical marks, punctuation marks, and numbers | Yes |
-| <xref:Microsoft.ML.TextCatalog.ProduceNgrams%2A> | Transform text column into a bag of counts of ngrams (sequences of consecutive words)|
+| <xref:Microsoft.ML.TextCatalog.ProduceNgrams%2A> | Transform text column into a bag of counts of ngrams (sequences of consecutive words)| Yes |
 | <xref:Microsoft.ML.TextCatalog.ProduceWordBags%2A> | Transform text column into a bag of counts of ngrams vector | No |
 | <xref:Microsoft.ML.TextCatalog.ProduceHashedNgrams%2A> | Transform text column into a vector of hashed ngram counts | No |
 | <xref:Microsoft.ML.TextCatalog.ProduceHashedWordBags%2A> | Transform text column into a bag of hashed ngram counts | Yes |
@@ -128,10 +128,10 @@ Other data transformations don't require training data. For example: the <xref:M
 
 | Transform | Definition | ONNX Exportable |
 | --- | --- |--- |
-|<xref:Microsoft.ML.BinaryClassificationCatalog.CalibratorsCatalog.Platt%28System.String%2CSystem.String%2CSystem.String%29> | Transforms a binary classifier raw score into a class probability using logistic regression with parameters estimated using the training data |
-| <xref:Microsoft.ML.BinaryClassificationCatalog.CalibratorsCatalog.Platt%28System.Double%2CSystem.Double%2CSystem.String%29> | Transforms a binary classifier raw score into a class probability using logistic regression with fixed parameters |
-| <xref:Microsoft.ML.BinaryClassificationCatalog.CalibratorsCatalog.Naive%2A> | Transforms a binary classifier raw score into a class probability by assigning scores to bins, and calculating the probability based on the distribution among the bins |
-| <xref:Microsoft.ML.BinaryClassificationCatalog.CalibratorsCatalog.Isotonic%2A> | Transforms a binary classifier raw score into a class probability by assigning scores to bins, where the position of boundaries and the size of bins are estimated using the training data  |
+|<xref:Microsoft.ML.BinaryClassificationCatalog.CalibratorsCatalog.Platt%28System.String%2CSystem.String%2CSystem.String%29> | Transforms a binary classifier raw score into a class probability using logistic regression with parameters estimated using the training data | Yes |
+| <xref:Microsoft.ML.BinaryClassificationCatalog.CalibratorsCatalog.Platt%28System.Double%2CSystem.Double%2CSystem.String%29> | Transforms a binary classifier raw score into a class probability using logistic regression with fixed parameters | Yes |
+| <xref:Microsoft.ML.BinaryClassificationCatalog.CalibratorsCatalog.Naive%2A> | Transforms a binary classifier raw score into a class probability by assigning scores to bins, and calculating the probability based on the distribution among the bins | Yes |
+| <xref:Microsoft.ML.BinaryClassificationCatalog.CalibratorsCatalog.Isotonic%2A> | Transforms a binary classifier raw score into a class probability by assigning scores to bins, where the position of boundaries and the size of bins are estimated using the training data  | No |
 
 ## Deep learning transformations
 

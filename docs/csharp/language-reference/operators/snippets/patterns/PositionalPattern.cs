@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Patterns
 {
@@ -6,7 +7,7 @@ namespace Patterns
     {
         public static void Examples()
         {
-            Console.WriteLine("No example output");
+            UseIdentifiers();
         }
 
         // <BasicExample>
@@ -42,6 +43,29 @@ namespace Patterns
                 _ => 0.0m,
             };
         // </MatchTuple>
+
+        private static void UseIdentifiers()
+        {
+            // <UseIdentifiers>
+            var numbers = new List<int> { 1, 2, 3 };
+            if (SumAndCount(numbers) is (Sum: var sum, Count: > 0))
+            {
+                Console.WriteLine($"Sum of [{string.Join(" ", numbers)}] is {sum}");  // output: Sum of [1 2 3] is 6
+            }
+            
+            static (double Sum, int Count) SumAndCount(IEnumerable<int> numbers)
+            {
+                int sum = 0;
+                int count = 0;
+                foreach (int number in numbers)
+                {
+                    sum += number;
+                    count++;
+                }
+                return (sum, count);
+            }
+            // </UseIdentifiers>
+        }
 
         // <WithTypeCheck>
         public record Point2D(int X, int Y);

@@ -39,3 +39,6 @@ Beyond web hosting and DevOps, Azure has a wide array of Platform-as-a-Service (
 [Azure Search](/azure/search/) is used to create an enterprise search solution over private, heterogenous content.
 
 [Service Fabric](/azure/service-fabric/) is a distributed systems platform that makes it easy to package, deploy, and manage scalable and reliable microservices and containers.
+
+>[!div class="step-by-step"]
+>[Previous](monitoring.md)

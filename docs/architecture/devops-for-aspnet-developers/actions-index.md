@@ -51,3 +51,7 @@ In the [CodeQL](actions-codeql.md) article, you'll:
 ## Compare and contrast GitHub Actions and Azure Pipelines
 
 GitHub Actions and Azure Pipelines have a common lineage and are similar in many respects. However, you should understand the differences before selecting a platform for building, testing, and deploying apps. In the [Comparison](actions-vs-pipelines.md) article, you'll deep dive into these platforms and compare and contrast them. You'll also learn how to select the correct platform for your CI/CD needs.
+
+>[!div class="step-by-step"]
+>[Previous](cicd.md)
+>[Next](actions-vs-pipelines.md)

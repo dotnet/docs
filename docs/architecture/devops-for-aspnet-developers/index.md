@@ -64,3 +64,6 @@ If this is your first exposure to cloud computing, these articles explain the ba
 * [Examples of Cloud Computing](https://azure.microsoft.com/overview/examples-of-cloud-computing/)
 * [What is IaaS?](https://azure.microsoft.com/overview/what-is-iaas/)
 * [What is PaaS?](https://azure.microsoft.com/overview/what-is-paas/)
+
+>[!div class="step-by-step"]
+>[Next](tools-and-downloads.md)

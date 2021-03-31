@@ -239,3 +239,7 @@ In the next section, you'll learn how to build a DevOps pipeline with Azure Pipe
 * [Build a .NET Core and SQL Database web app in Azure App Service](/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb)
 * [Configure deployment credentials for Azure App Service](/azure/app-service/app-service-deployment-credentials)
 * [Set up staging environments in Azure App Service](/azure/app-service/web-sites-staged-publishing)
+
+>[!div class="step-by-step"]
+>[Previous](tools-and-downloads.md)
+>[Next](cicd.md)

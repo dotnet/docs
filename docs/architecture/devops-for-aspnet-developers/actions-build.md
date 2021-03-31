@@ -193,4 +193,5 @@ jobs:
 ```
 
 >[!div class="step-by-step"]
+>[Previous](actions-vs-pipelines.md)
 >[Next](actions-deploy.md)

@@ -40,3 +40,7 @@ The following tools are required:
   * ASP.NET and web development
   * Azure development
   * .NET Core cross-platform development
+
+>[!div class="step-by-step"]
+>[Previous](index.md)
+>[Next](deploying-to-app-service.md)

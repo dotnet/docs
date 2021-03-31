@@ -1,11 +1,9 @@
-﻿' ebce3120-95c3-42b1-b70b-fa7da40c75e2
-' For Each...Next Statement (Visual Basic)
-
-'<Snippet89>
 Option Strict On
 
-Module Module1
-    Sub Main()
+Imports System
+
+Module Program
+    Sub Main(args As String())
         ' The assignment of m to n causes a compiler error when 
         ' Option Strict is on.
         Dim m As Long = 987
@@ -24,8 +22,5 @@ Module Module1
         'For Each number As Integer In New Long() {45, 3, 9876543210}
         '    Console.Write(number & " ")
         'Next
-
-        Console.ReadKey()
     End Sub
 End Module
-'</Snippet89>

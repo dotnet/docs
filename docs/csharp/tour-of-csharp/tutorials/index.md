@@ -23,7 +23,7 @@ You can try these tutorials in different environments. The concepts you'll learn
 
 - [In your browser, on the docs platform](hello-world.yml): This experience embeds a runnable C# code window in docs pages. You write and execute C# code in the browser.
 - [In the Microsoft Learn experience](/learn/paths/csharp-first-steps/). This learning path contains several modules that teach the basics of C#.
-- [In Jupyter on Binder](https://mybinder.org/v2/gh/dotnet/try-samples/master?filepath=hello-csharp%2Fhello-world.ipynb). You can experiment with C# code in a Jupyter notebook on binder.
+- [In Jupyter on Binder](https://mybinder.org/v2/gh/dotnet/try-samples/main?filepath=hello-csharp%2Fhello-world.ipynb). You can experiment with C# code in a Jupyter notebook on binder.
 - [On your local machine](numbers-in-csharp-local.md). After you've explored online, you can [download](https://dotnet.microsoft.com/download) the .NET Core SDK and build programs on your machine.
 
 All the introductory tutorials following the Hello World lesson are available using
@@ -36,7 +36,7 @@ on your machine.
 ## [Hello world](hello-world.yml)
 
 In the [Hello world](hello-world.yml) tutorial, you'll create the most basic
-C# program. You'll explore the `string` type and how to work with text. You can also use the path on [Microsoft Learn](/learn/paths/csharp-first-steps/) or [Jupyter on Binder](https://mybinder.org/v2/gh/dotnet/try-samples/master?filepath=hello-csharp%2Fhello-world.ipynb).
+C# program. You'll explore the `string` type and how to work with text. You can also use the path on [Microsoft Learn](/learn/paths/csharp-first-steps/) or [Jupyter on Binder](https://mybinder.org/v2/gh/dotnet/try-samples/main?filepath=hello-csharp%2Fhello-world.ipynb).
 
 ## [Numbers in C#](numbers-in-csharp.yml)
 

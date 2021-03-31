@@ -149,49 +149,49 @@ These trainers create a multiclass trainer from a binary trainer. Use with <xref
 
 This multiclass classifier trains one binary classifier for each class, which distinguishes that class from all other classes. Is limited in scale by the number of classes to categorize.
 
-|Trainer|ONNX Exportable|
-|---------|----------|
-|[OneVersusAllTrainer\<BinaryClassificationTrainer>](xref:Microsoft.ML.Trainers.OneVersusAllTrainer)|Yes|
+|Trainer|Task|ONNX Exportable|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.OneVersusAllTrainer>|Multiclass classification|Yes|
 
 ### Pairwise coupling
 
 This multiclass classifier trains a binary classification algorithm on each pair of classes. Is limited in scale by the number of classes, as each combination of two classes must be trained.
 
-|Trainer|ONNX Exportable|
-|---------|----------|
-|[PairwiseCouplingTrainer\<BinaryClassificationTrainer>](xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer)|No|
+|Trainer|Task|ONNX Exportable|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer>|Multiclass classification|No|
 
 ## K-Means
 
 Used for clustering.
 
-|Trainer|ONNX Exportable|
-|---------|----------|
-|<xref:Microsoft.ML.Trainers.KMeansTrainer>|Yes|
+|Trainer|Task|ONNX Exportable|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.KMeansTrainer>|Clustering|Yes|
 
 ## Principal component analysis
 
 Used for anomaly detection.
 
-|Trainer|ONNX Exportable|
-|---------|----------|
-|<xref:Microsoft.ML.Trainers.RandomizedPcaTrainer>|No|
+|Trainer|Task|ONNX Exportable|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.RandomizedPcaTrainer>|Anomaly detection|No|
 
 ## Naive Bayes
 
 Use this multi-class classification algorithm when the features are independent, and the training dataset is small.
 
-|Trainer|ONNX Exportable|
-|---------|----------|
-|<xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer>|Yes|
+|Trainer|Task|ONNX Exportable|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer>|Multiclass classification|Yes|
 
 ## Prior Trainer
 
 Use this binary classification algorithm to baseline the performance of other trainers. To be effective, the metrics of the other trainers should be better than the prior trainer.
 
-|Trainer|ONNX Exportable|
-|---------|----------|
-|<xref:Microsoft.ML.Trainers.PriorTrainer>|Yes|
+|Trainer|Task|ONNX Exportable|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.PriorTrainer>|Binary classification|Yes|
 
 ## Local Deep SVM
 
@@ -199,6 +199,6 @@ Support vector machines (SVMs) are an extremely popular and well-researched clas
 
 Recent research has focused on ways to optimize these models to efficiently scale to larger training sets. In this implementation from Microsoft Research, the kernel function that is used for mapping data points to feature space is specifically designed to reduce the time needed for training while maintaining most of the classification accuracy.
 
-|Trainer|ONNX Exportable|
-|---------|----------|
-|<xref:Microsoft.ML.Trainers.LdSvmTrainer>|Yes|
+|Trainer|Task|ONNX Exportable|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.LdSvmTrainer>|Binary classification|Yes|

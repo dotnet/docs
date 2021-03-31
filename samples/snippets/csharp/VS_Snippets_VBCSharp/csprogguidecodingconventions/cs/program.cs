@@ -166,25 +166,26 @@ namespace Coding_Conventions_Examples
             }
             //</snippet18>
 
+
             //<snippet19>
             var instance1 = new ExampleClass();
-            ExampleClass instance2 = new();
             //</snippet19>
+            // Can't show `ExampleClass instance1 = new()` because this projet targets net48.
 
             //<snippet20>
-            ExampleClass instance3 = new ExampleClass();
+            ExampleClass instance2 = new ExampleClass();
             //</snippet20>
 
             //<snippet21a>
-            var instance4 = new ExampleClass { Name = "Desktop", ID = 37414,
+            var instance3 = new ExampleClass { Name = "Desktop", ID = 37414,
                 Location = "Redmond", Age = 2.3 };
             //</snippet21a>
             //<snippet21b>
-            var instance5 = new ExampleClass();
-            instance5.Name = "Desktop";
-            instance5.ID = 37414;
-            instance5.Location = "Redmond";
-            instance5.Age = 2.3;
+            var instance4 = new ExampleClass();
+            instance4.Name = "Desktop";
+            instance4.ID = 37414;
+            instance4.Location = "Redmond";
+            instance4.Age = 2.3;
             //</snippet21b>
 
             // #22 and #23 are in Coding_Conventions_WF, below.

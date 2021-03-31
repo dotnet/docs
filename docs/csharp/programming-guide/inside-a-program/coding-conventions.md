@@ -75,14 +75,14 @@ The following sections describe practices that the C# team follows to prepare co
 - To append strings in loops, especially when you're working with large amounts of text, use a <xref:System.Text.StringBuilder> object.  
   
   :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet7":::
- 
+
 ### Implicitly Typed Local Variables  
   
 - Use [implicit typing](../classes-and-structs/implicitly-typed-local-variables.md) for local variables when the type of the variable is obvious from the right side of the assignment, or when the precise type is not important.  
   
   :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet8":::
   
-- Don't use [var](../../language-reference/keywords/var.md) when the type is not apparent from the right side of the assignment. Don't assume the type is clear from a method name. A variable type is considered clear if it's a new operator or an explicit cast.
+- Don't use [var](../../language-reference/keywords/var.md) when the type is not apparent from the right side of the assignment. Don't assume the type is clear from a method name. A variable type is considered clear if it's a `new` operator or an explicit cast.
   
   :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet9":::
 
@@ -163,13 +163,17 @@ To avoid exceptions and increase performance by skipping unnecessary comparisons
 
 If the divisor is 0, the second clause in the `if` statement would cause a run-time error. But the && operator short circuits when the first expression is false. That is, it doesn't evaluate the second expression. The & operator would evaluate both, resulting in a run-time error when `divisor` is 0.
   
-### New Operator  
+### `new` operator  
   
-- Use one of the concise forms of object instantiation, as shown in the following declarations. The second line shows syntax that is available starting in C# 9.  
+- Use one of the concise forms of object instantiation, as shown in the following declarations. The second example shows syntax that is available starting in C# 9.  
   
   :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet19":::
   
-  The previous lines are equivalent to the following declaration.  
+  ```csharp
+  ExampleClass instance2 = new();
+  ```
+  
+  The preceding declarations are equivalent to the following declaration.  
   
   :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet20":::
 

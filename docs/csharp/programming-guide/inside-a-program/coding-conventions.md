@@ -89,7 +89,7 @@ The following sections describe practices that the C# team follows to prepare co
 
   :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet10":::
 
-- Avoid the use of `var` in place of [dynamic](../../language-reference/builtin-types/reference-types.md).  
+- Avoid the use of `var` in place of [dynamic](../../language-reference/builtin-types/reference-types.md). Use `dynamic` when you want run-time type inference. For more information, see [Using type dynamic (C# Programming Guide)](../types/using-type-dynamic.md).
   
 - Use implicit typing to determine the type of the loop variable in [for](../../language-reference/keywords/for.md) loops.  
   
@@ -232,5 +232,6 @@ Follow the guidelines in [Secure Coding Guidelines](../../../standard/security/s
   
 ## See also
 
+- [.NET runtime coding guidelines](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md)
 - [Visual Basic Coding Conventions](../../../visual-basic/programming-guide/program-structure/coding-conventions.md)
 - [Secure Coding Guidelines](../../../standard/security/secure-coding-guidelines.md)

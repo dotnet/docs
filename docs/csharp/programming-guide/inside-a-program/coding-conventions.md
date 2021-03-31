@@ -123,7 +123,7 @@ If you use explicit instantiation, you can use `var`.
 
 If you specify an array size, you have to initialize the elements one at a time.
   
-:::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet1":::
+:::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet13c":::
   
 ### Delegates  
   

@@ -1,12 +1,11 @@
 ---
 title: "C# Coding Conventions - C# Programming Guide"
 description: Learn about coding conventions in C#. Coding conventions create a consistent look to the code and facilitate copying, changing, and maintaining the code.
-ms.date: 07/20/2015
+ms.date: 03/31/2021
 helpviewer_keywords: 
   - "coding conventions, C#"
   - "Visual C#, coding conventions"
   - "C# language, coding conventions"
-ms.assetid: f4f60de9-d49b-4fb6-bab1-20e19ea24710
 ---
 # C# Coding Conventions (C# Programming Guide)
 
@@ -22,7 +21,7 @@ Coding conventions serve the following purposes:
 
 The guidelines in this article are used by Microsoft to develop samples and documentation.  
   
-## Naming Conventions  
+## Naming conventions  
   
 - In short examples that don't include [using directives](../../language-reference/keywords/using-directive.md), use namespace qualifications. If you know that a namespace is imported by default in a project, you don't have to fully qualify the names from that namespace. Qualified names can be broken after a dot (.) if they are too long for a single line, as shown in the following example.
 
@@ -30,7 +29,7 @@ The guidelines in this article are used by Microsoft to develop samples and docu
 
 - You don't have to change the names of objects that were created by using the Visual Studio designer tools to make them fit other guidelines.  
   
-## Layout Conventions  
+## Layout conventions  
 
 Good layout uses formatting to emphasize the structure of your code and to make the code easier to read. Microsoft examples and samples conform to the following conventions:  
   
@@ -48,7 +47,7 @@ Good layout uses formatting to emphasize the structure of your code and to make 
   
   :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet2":::
 
-## Commenting Conventions  
+## Commenting conventions  
   
 - Place the comment on a separate line, not at the end of a line of code.  
   
@@ -62,11 +61,11 @@ Good layout uses formatting to emphasize the structure of your code and to make 
 
 - Don't create formatted blocks of asterisks around comments.  
   
-## Language Guidelines  
+## Language guidelines  
 
 The following sections describe practices that the C# team follows to prepare code examples and samples.  
   
-### String Data Type  
+### String data type  
   
 - Use [string interpolation](../../language-reference/tokens/interpolated.md) to concatenate short strings, as shown in the following code.  
   
@@ -76,7 +75,7 @@ The following sections describe practices that the C# team follows to prepare co
   
   :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet7":::
 
-### Implicitly Typed Local Variables  
+### Implicitly typed local variables  
   
 - Use [implicit typing](../classes-and-structs/implicitly-typed-local-variables.md) for local variables when the type of the variable is obvious from the right side of the assignment, or when the precise type is not important.  
   
@@ -107,7 +106,7 @@ The following sections describe practices that the C# team follows to prepare co
   > [!NOTE]
   > Be careful not to accidentally change a type of an element of the iterable collection. For example, it is easy to switch from <xref:System.Linq.IQueryable?displayProperty=nameWithType> to <xref:System.Collections.IEnumerable?displayProperty=nameWithType> in a `foreach` statement, which changes the execution of a query.
 
-### Unsigned Data Type  
+### Unsigned data types  
   
 In general, use `int` rather than unsigned types. The use of `int` is common throughout C#, and it is easier to interact with other libraries when you use `int`.  
   
@@ -139,7 +138,7 @@ The following declaration uses the full syntax.
 
   :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet15b":::
 
-### try-catch and using Statements in Exception Handling  
+### `try`-`catch` and `using` statements in exception handling  
   
 - Use a [try-catch](../../language-reference/keywords/try-catch.md) statement for most exception handling.  
   
@@ -155,13 +154,13 @@ The following declaration uses the full syntax.
 
   :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet17b":::
 
-### && and &#124;&#124; Operators  
+### && and &#124;&#124; operators  
   
 To avoid exceptions and increase performance by skipping unnecessary comparisons, use [&&](../../language-reference/operators/boolean-logical-operators.md#conditional-logical-and-operator-) instead of [&](../../language-reference/operators/boolean-logical-operators.md#logical-and-operator-) and [&#124;&#124;](../../language-reference/operators/boolean-logical-operators.md#conditional-logical-or-operator-) instead of [&#124;](../../language-reference/operators/boolean-logical-operators.md#logical-or-operator-) when you perform comparisons, as shown in the following example.  
   
   :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet18":::
 
-If the divisor is 0, the second clause in the `if` statement would cause a run-time error. But the && operator short circuits when the first expression is false. That is, it doesn't evaluate the second expression. The & operator would evaluate both, resulting in a run-time error when `divisor` is 0.
+If the divisor is 0, the second clause in the `if` statement would cause a run-time error. But the && operator short-circuits when the first expression is false. That is, it doesn't evaluate the second expression. The & operator would evaluate both, resulting in a run-time error when `divisor` is 0.
   
 ### `new` operator  
   
@@ -185,7 +184,7 @@ If the divisor is 0, the second clause in the `if` statement would cause a run-t
   
   :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet21b":::
 
-### Event Handling  
+### Event handling  
   
 If you're defining an event handler that you don't need to remove later, use a lambda expression.  
   
@@ -195,11 +194,11 @@ The lambda expression shortens the following traditional definition.
 
 :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet23":::
 
-### Static Members  
+### Static members  
   
 Call [static](../../language-reference/keywords/static.md) members by using the class name: *ClassName.StaticMember*. This practice makes code more readable by making static access clear.  Don't qualify a static member defined in a base class with the name of a derived class.  While that code compiles, the code readability is misleading, and the code may break in the future if you add a static member with the same name to the derived class.  
   
-### LINQ Queries  
+### LINQ queries  
   
 - Use meaningful names for query variables. The following example uses `seattleCustomers` for customers who are located in Seattle.  
   

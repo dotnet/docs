@@ -125,6 +125,14 @@ Best for problems that perform well with tree algorithms but where explainabilit
 
 ## Matrix factorization
 
+### Matrix Factorization
+
+Used for [collaborative filtering](https://en.wikipedia.org/wiki/Collaborative_filtering) in recommendation.
+
+|Trainer|Task|ONNX Exportable|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer>|Recommendation|No|
+
 ### Field Aware Factorization Machine
 
  Best for sparse categorical data, with large datasets.

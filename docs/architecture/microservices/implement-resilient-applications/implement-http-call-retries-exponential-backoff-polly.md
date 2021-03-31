@@ -46,7 +46,7 @@ With Polly, you can define a Retry policy with the number of retries, the expone
 
 ## Add a jitter strategy to the retry policy
 
-A regular Retry policy can affect your system in cases of high concurrency and scalability and under high contention. To overcome peaks of similar retries coming from many clients in partial outages, a good workaround is to add a jitter strategy to the retry algorithm/policy. This strategy can improve the overall performance of the end-to-end system by adding a smooth and even distribution of retry intervals. A good jitter formula can be characterized by smooth and even distribution of retry intervals, a well-controlled median initial retry delay, and broadly exponential backoff. This approach helps to spread out the spikes when the issue arises. The principle is illustrated by the following example:
+A regular Retry policy can affect your system in cases of high concurrency and scalability and under high contention. To overcome peaks of similar retries coming from many clients in partial outages, a good workaround is to add a jitter strategy to the retry algorithm/policy. This strategy can improve the overall performance of the end-to-end system. As recommended in [[Polly: Retry with Jitter](https://github.com/App-vNext/Polly/wiki/Retry-with-jitter), a good jitter strategy can be implemented by smooth and evenly distributed retry intervals applied with a well-controlled median initial retry delay on an exponential backoff. This approach helps to spread out the spikes when the issue arises. The principle is illustrated by the following example:
 
 ```csharp
 
@@ -56,8 +56,6 @@ var retryPolicy = Policy
     .Handle<FooException>()
     .WaitAndRetryAsync(delay);
 ```
-
-For more details, you can refer [Polly: Retry with Jitter](https://github.com/App-vNext/Polly/wiki/Retry-with-jitter)
 
 ## Additional resources
 

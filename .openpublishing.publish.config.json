@@ -61,7 +61,8 @@
       "path_to_root": "machinelearning-samples",
       "url": "https://github.com/dotnet/machinelearning-samples",
       "branch": "main",
-      "branch_mapping": {}
+      "branch_mapping": {},
+      "include_in_build": true
     },
     {
       "path_to_root": "iot-samples",
@@ -69,7 +70,8 @@
       "branch": "master",
       "branch_mapping": {
         "main": "master"
-      }
+      },
+      "include_in_build": true
     }
   ],
   "branch_target_mapping": {

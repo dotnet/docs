@@ -202,3 +202,13 @@ Recent research has focused on ways to optimize these models to efficiently scal
 |Trainer|Task|ONNX Exportable|
 |---------|----------|----------|
 |<xref:Microsoft.ML.Trainers.LdSvmTrainer>|Binary classification|Yes|
+
+## Ordinary least squares
+
+Ordinary least squares (OLS) is one of the most commonly used techniques in linear regression.
+
+Ordinary least squares refers to the loss function, which computes error as the sum of the square of distance from the actual value to the predicted line, and fits the model by minimizing the squared error. This method assumes a strong linear relationship between the inputs and the dependent variable.
+
+|Trainer|Task|ONNX Exportable|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.OlsTrainer>|Regression|Yes|

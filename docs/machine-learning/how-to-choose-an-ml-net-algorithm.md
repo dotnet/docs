@@ -192,3 +192,13 @@ Use this binary classification algorithm to baseline the performance of other tr
 |Trainer|ONNX Exportable|
 |---------|----------|
 |<xref:Microsoft.ML.Trainers.PriorTrainer>|Yes|
+
+## Local Deep SVM
+
+Support vector machines (SVMs) are an extremely popular and well-researched class of supervised learning models, which can be used in linear and non-linear classification tasks.
+
+Recent research has focused on ways to optimize these models to efficiently scale to larger training sets. In this implementation from Microsoft Research, the kernel function that is used for mapping data points to feature space is specifically designed to reduce the time needed for training while maintaining most of the classification accuracy.
+
+|Trainer|ONNX Exportable|
+|---------|----------|
+|<xref:Microsoft.ML.Trainers.LdSvmTrainer>|Yes|

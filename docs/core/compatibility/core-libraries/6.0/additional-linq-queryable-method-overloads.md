@@ -37,6 +37,7 @@ If you're a query-provider library author, ensure that your reflection code is t
 New overloads were added for the following <xref:System.Linq.Queryable> extension methods:
 
 - <xref:System.Linq.Queryable.ElementAt%2A?displayProperty=fullName>
+- <xref:System.Linq.Queryable.ElementAtOrDefault%2A?displayProperty=fullName>
 - <xref:System.Linq.Queryable.Take%2A?displayProperty=fullName>
 - <xref:System.Linq.Queryable.Min%2A?displayProperty=fullName>
 - <xref:System.Linq.Queryable.Max%2A?displayProperty=fullName>
@@ -55,6 +56,7 @@ New overloads were added for the following <xref:System.Linq.Queryable> extensio
 ### Affected APIs
 
 - `Overload:System.Linq.Queryable.ElementAt`
+- `Overload:System.Linq.Queryable.ElementAtOrDefault`
 - `Overload:System.Linq.Queryable.Take`
 - `Overload:System.Linq.Queryable.Min`
 - `Overload:System.Linq.Queryable.Max`

@@ -181,4 +181,3 @@ When the last CodeQL workflow run completes, you should see two issues in the **
 >[!div class="step-by-step"]
 >[Previous](actions-deploy.md)
 >[Next](monitoring.md)
-

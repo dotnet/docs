@@ -1303,18 +1303,8 @@ items:
       displayName: Conditional, Obsolete, AttributeUsage, ModuleInitializer, SkipLocalsInit
       href: language-reference/attributes/general.md
   - name: Unsafe Code and Pointers
-    items:
-    - name: Overview and restrictions
-      displayName: unsafe code pointers
-      href: language-reference/unsafe-code/index.md
-    - name: Fixed size buffers
-      href: language-reference/unsafe-code/fixed-size-buffers.md
-    - name: Pointer types
-      href: language-reference/unsafe-code/pointer-types.md
-    - name: Pointer conversions
-      href: language-reference/unsafe-code/pointer-conversions.md
-    - name: "How to use pointers to copy an array of bytes"
-      href: language-reference/unsafe-code/how-to-use-pointers-to-copy-an-array-of-bytes.md
+    displayName: unsafe code, pointers, fixed buffer, function pointer
+    href: language-reference/unsafe-code.md
   - name: Preprocessor directives
     href: language-reference/preprocessor-directives.md
     displayName: \#if, \#else, \#elif, \#endif, \#define, \#undef, \#warning, \#error, \#line, \#nullable, \#region, \#endregion, \#pragma, warning, checksum

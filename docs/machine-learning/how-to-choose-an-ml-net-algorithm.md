@@ -53,7 +53,7 @@ Tuning not needed for good default performance.
 
 ### L-BFGS
 
-Use when number of features is large. Produces logistic regression training statistics, but doesn't scale as well as the AveragedPerceptronTrainer
+Use when number of features is large. Produces logistic regression training statistics, but doesn't scale as well as the AveragedPerceptronTrainer.
 
 |Trainer|Task|ONNX Exportable|
 |---------|----------|----------|
@@ -63,11 +63,19 @@ Use when number of features is large. Produces logistic regression training stat
 
 ### Symbolic stochastic gradient descent
 
-Fastest and most accurate linear binary classification trainer. Scales well with number of processors
+Fastest and most accurate linear binary classification trainer. Scales well with number of processors.
 
 |Trainer|Task|ONNX Exportable|
 |---------|----------|----------|
 |<xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>|Binary classification|Yes|
+
+### Online gradient descent
+
+Implements the standard (non-batch) stochastic gradient descent, with a choice of loss functions, and an option to update the weight vector using the average of the vectors seen over time.
+
+|Trainer|Task|ONNX Exportable|
+|---------|----------|----------|
+|<xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer>|Regression|Yes|
 
 ## Decision tree algorithms
 

@@ -136,3 +136,7 @@ In this section, you completed the following tasks:
 * [Enable diagnostics logging for web apps in Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log)
 * [Troubleshoot a web app in Azure App Service using Visual Studio](/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio)
 * [Create classic metric alerts in Azure Monitor for Azure services - Azure portal](/azure/monitoring-and-diagnostics/insights-alerts-portal)
+
+>[!div class="step-by-step"]
+>[Previous](actions-codeql.md)
+>[Next](next-steps.md)

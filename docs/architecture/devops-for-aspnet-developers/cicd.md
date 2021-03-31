@@ -284,3 +284,7 @@ The subscription, resource group, service type, web app name, and deployment slo
 * [Create your first pipeline with Azure Pipelines](/azure/devops/pipelines/get-started-yaml)
 * [Build and .NET Core project](/azure/devops/pipelines/languages/dotnet-core)
 * [Deploy a web app with Azure Pipelines](/azure/devops/pipelines/targets/webapp)
+
+>[!div class="step-by-step"]
+>[Previous](deploying-to-app-service.md)
+>[Next](actions-index.md)

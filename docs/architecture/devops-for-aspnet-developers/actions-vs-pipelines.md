@@ -128,3 +128,7 @@ The following table shows some common scenarios and platform recommendations for
 |I need a simple workflow for building and deploying open-source repositories to a small set of environments|GitHub Actions|
 |I need to model workflows for scenarios other than CI/CD. For example, custom alerts on pull requests|GitHub Actions|
 |I need to create custom tasks that are open-source|Both|
+
+>[!div class="step-by-step"]
+>[Previous](actions-index.md)
+>[Next](actions-build.md)

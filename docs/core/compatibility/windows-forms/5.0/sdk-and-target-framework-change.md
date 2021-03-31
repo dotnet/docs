@@ -52,7 +52,7 @@ In your WPF or Windows Forms project file:
 
 ## Affected APIs
 
-Not detectable via API analysis.
+None.
 
 <!--
 

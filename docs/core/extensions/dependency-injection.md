@@ -188,9 +188,6 @@ Register singleton services with <xref:Microsoft.Extensions.DependencyInjection.
 
 In apps that process requests, singleton services are disposed when the <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider> is disposed on application shutdown. Because memory is not released until the app is shut down, consider memory use with a singleton service.
 
-> [!WARNING]
-> Do ***not*** resolve a scoped service from a singleton. It may cause the service to have incorrect state when processing subsequent requests. It's fine to resolve a singleton service from a scoped or transient service.
-
 ## Service registration methods
 
 The framework provides service registration extension methods that are useful in specific scenarios:

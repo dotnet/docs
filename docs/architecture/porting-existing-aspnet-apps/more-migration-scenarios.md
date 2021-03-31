@@ -196,9 +196,9 @@ You'll find a complete list of base classes in the [Microsoft.AspNetCore.Mvc.For
 The steps to migrate from a Web API formatter to an ASP.NET Core MVC formatter are:
 
 1. Identify an appropriate base class for the new formatter.
-2. Create a new instance of the base class and implement its required methods.
-3. Copy over the functionality from the Web API formatter to the new implementation.
-4. Configure MVC in the ASP.NET Core App's `ConfigureServices` method to use the new formatter.
+1. Create a new instance of the base class and implement its required methods.
+1. Copy over the functionality from the Web API formatter to the new implementation.
+1. Configure MVC in the ASP.NET Core App's `ConfigureServices` method to use the new formatter.
 
 ## Custom filters
 

@@ -68,6 +68,9 @@ var retryPolicy = Policy
 - **Polly (.NET resilience and transient-fault-handling library)**  
   <https://github.com/App-vNext/Polly>
 
+- **Polly: Retry with Jitter**  
+  <https://github.com/App-vNext/Polly/wiki/Retry-with-jitter>
+
 - **Marc Brooker. Jitter: Making Things Better With Randomness**  
   <https://brooker.co.za/blog/2015/03/21/backoff.html>
 

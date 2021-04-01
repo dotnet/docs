@@ -126,17 +126,25 @@ If you specify an array size, you have to initialize the elements one at a time.
   
 ### Delegates  
   
-Use the concise syntax to create instances of a delegate type. In the `Program` class, define the delegate type and a method that has a matching signature.  
+Use [`Func<>` and `Action<>`](../../../standard/delegates-lambdas.md) instead of defining delegate types. In a class, define the delegate method.  
+
+:::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet14a":::
+
+Call the method using the signature defined by the `Func<>` or `Action<>` delegate:
+
+:::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet15a":::
+
+If you create instances of a delegate type, use the concise syntax. In a class, define the delegate type and a method that has a matching signature.  
   
-  :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet14":::
+  :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet14b":::
 
-In the `Main` method, create an instance of the delegate type. The following declaration shows the condensed syntax.
+Create an instance of the delegate type and call it. The following declaration shows the condensed syntax.
 
-  :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet15a":::
+  :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet15b":::
 
 The following declaration uses the full syntax.
 
-  :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet15b":::
+  :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet15c":::
 
 ### `try`-`catch` and `using` statements in exception handling  
   

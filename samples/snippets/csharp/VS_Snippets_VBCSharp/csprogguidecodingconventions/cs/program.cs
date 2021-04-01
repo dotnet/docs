@@ -9,14 +9,21 @@ namespace Coding_Conventions_Examples
 {
     class Program
     {
-        //<snippet14>
+        //<snippet14a>
+        public static Action<string> ActionExample1 = x => Console.WriteLine($"x is: {x}");
+        public static Action<string, string> ActionExample2 = (x, y) => 
+            Console.WriteLine($"x is: {x}, y is {y}");
+        public static Func<string, int> FuncExample1 = x => Convert.ToInt32(x);
+        public static Func<int, int, int> FuncExample2 = (x, y) => x + y;
+        //</snippet14a>
+        //<snippet14b>
         public delegate void Del(string message);
 
         public static void DelMethod(string str)
         {
             Console.WriteLine("DelMethod argument: {0}", str);
         }
-        //</snippet14>
+        //</snippet14b>
 
         static void Main(string[] args)
         {
@@ -114,15 +121,22 @@ namespace Coding_Conventions_Examples
             // And so on.
             //</snippet13c>
 
+
             //<snippet15a>
-            Del exampleDel2 = DelMethod;
+            ActionExample1("string for x");
+            ActionExample2("string for x", "string for y");
+            Console.WriteLine($"The value is {FuncExample1("1")}");
+            Console.WriteLine($"The sum is {FuncExample2(1, 2)}");
             //</snippet15a>
             //<snippet15b>
-            Del exampleDel1 = new Del(DelMethod);
+            Del exampleDel2 = DelMethod;
+            exampleDel2("Hey");
             //</snippet15b>
-
+            //<snippet15c>
+            Del exampleDel1 = new Del(DelMethod);
             exampleDel1("Hey");
-            exampleDel2(" hey");
+            //</snippet15c>
+
 
             // #16 is below Main.
             Console.WriteLine(GetValueFromArray(vowels1, 1));

@@ -159,9 +159,13 @@ namespace Coding_Conventions_Examples
             //<snippet17b>
             using (Font font2 = new Font("Arial", 10.0f))
             {
-                byte charset = font2.GdiCharSet;
+                byte charset2 = font2.GdiCharSet;
             }
             //</snippet17b>
+            //<snippet17c>
+            using Font font3 = new Font("Arial", 10.0f);
+            byte charset3 = font3.GdiCharSet;
+            //</snippet17c>
 
             //<snippet18>
             Console.Write("Enter a dividend: ");

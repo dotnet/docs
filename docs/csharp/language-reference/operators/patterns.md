@@ -1,7 +1,7 @@
 ---
 title: "Patterns - C# reference"
 description: "Learn about the patterns supported by C# switch and is expressions and C# switch statement - C# reference"
-ms.date: 03/30/2021
+ms.date: 03/31/2021
 helpviewer_keywords: 
   - "pattern matching [C#]"
 ---
@@ -96,19 +96,19 @@ Beginning with C# 9.0, you use the `not`, `and`, and `or` pattern combinators to
 
 - *Negation* `not` pattern that matches an expression when the negated pattern doesn't match the expression. For example, you can negate the [constant](#constant-pattern) `null` pattern to check if an expression is non-null, as the following code shows:
 
-  :::code language="csharp" source="snippets/patterns/PatternCombinators.cs" id="NotPattern":::
+  :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="NotPattern":::
 
 - *Conjunctive* `and` pattern that matches an expression when both patterns match the expression. For example, you can combine [relational patterns](#relational-patterns) to check if a value is in a certain range, as the following code shows:
 
-  :::code language="csharp" source="snippets/patterns/PatternCombinators.cs" id="AndPattern":::
+  :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="AndPattern":::
 
 - *Disjunctive* `or` pattern that matches an expression when either of patterns matches the expression, as the following example shows:
 
-  :::code language="csharp" source="snippets/patterns/PatternCombinators.cs" id="OrPattern":::
+  :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="OrPattern":::
 
 As the preceding example shows, you can repeatedly use the pattern combinators in a pattern. When you use both `and` and `or` combinators within one pattern, `and` has higher precedence than `or`. To explicitly specify the precedence, use parentheses, as the following example shows:
 
-:::code language="csharp" source="snippets/patterns/PatternCombinators.cs" id="WithParentheses":::
+:::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="WithParentheses":::
 
 For more information, see the [Pattern combinators](~/_csharplang/proposals/csharp-9.0/patterns3.md#pattern-combinators) section of the feature proposal note.
 
@@ -143,6 +143,10 @@ At the preceding example, the type of an expression contains the [Deconstruct](.
 :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="MatchTuple":::
 
 The preceding example uses [relational](#relational-patterns) and [logical](#logical-patterns) patterns, which are available in C# 9.0 and later.
+
+You can use the names of tuple elements and `Deconstruct` parameters in a positional pattern, as the following example shows:
+
+:::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="UseIdentifiers":::
 
 You can also add a runtime type check and a variable declaration to a positional pattern, as the following example shows:
 
@@ -196,7 +200,7 @@ For more information, see the [Discard pattern](~/_csharplang/proposals/csharp-8
 
 Beginning with C# 9.0, you can put parentheses around any pattern. Typically, you do that to emphasize or change the precedence in [logical patterns](#logical-patterns), as the following example shows:
 
-:::code language="csharp" source="snippets/patterns/PatternCombinators.cs" id="ChangedPrecedence":::
+:::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="ChangedPrecedence":::
 
 ## C# language specification
 

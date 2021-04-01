@@ -36,7 +36,7 @@ namespace Patterns
                 >= 20.0 => "Too high",
                 double.NaN => "Unknown",
             };
-            // <AndPattern>
+            // </AndPattern>
         }
 
         private static void OrPattern()

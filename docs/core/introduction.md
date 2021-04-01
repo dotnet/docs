@@ -23,7 +23,7 @@ ms.custom: "updateeachrelease"
 * [Console apps](tutorials/with-visual-studio-code.md)
 * [Windows services](/aspnet/core/host-and-deploy/windows-service)
 
-Share functionality among different apps and app types by using [class libraries](gone-fishing.md).
+Share functionality among different apps and app types by using [class libraries](gone-phishing.md).
 
 With .NET, your code and project files look and feel the same no matter which type of app you're building. You have access to the same runtime, API, and language capabilities with each app.
 

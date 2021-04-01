@@ -11,6 +11,10 @@ namespace SystemTextJsonHowTo
             PreserveReferences.Program.Main();
             Console.WriteLine();
 
+            Console.WriteLine("======== Custom converter Unix Epoch Dates =========");
+            CustomConverterUnixEpochDate.Program.Main();
+            Console.WriteLine();
+
             Console.WriteLine("======== Custom converter Preserve references =========");
             CustomConverterPreserveReferences.Program.Main();
             Console.WriteLine();

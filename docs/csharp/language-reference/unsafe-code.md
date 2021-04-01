@@ -181,6 +181,30 @@ This example accesses the elements of both arrays using indices rather than a se
 
 :::code language="csharp" source="snippets/unsafe-code/FixedKeywordExamples.cs" ID="8":::
 
+## Function pointers
+
+C# provides [`delegate`](../builtin-types/reference-types.md#the-delegate-type) types to define safe function pointer objects. Invoking a delegate involves instantiating a type derived from <xref:System.Delegate?displayProperty=nameWithType> and making a virtual method call to its `Invoke` method. This virtual call uses the `callvirt` IL instruction. In performance critical code paths, using the `calli` IL instruction is more efficient.
+
+You can define a function pointer using the `delegate*` syntax. The compiler will call the function using the `calli` instruction rather than instantiating a `delegate` object and calling `Invoke`. The following code declares two methods that use a `delegate` or a `delegate*` to combine two objects of the same type. The first method uses a <xref:System.Func%603?displayProperty=nameWithType> delegate type. The second method uses a `delegate*` declaration with the same parameters and return type:
+
+:::code language="csharp" source="snippets/unsafe-code/FunctionPointers.cs" ID="UseDelecateOrPointer":::
+
+The following code shows how you would declare a static local function and invoke the `UnsafeCombine` method using a pointer to that local function:
+
+:::code language="csharp" source="snippets/unsafe-code/FunctionPointers.cs" ID="InvokeViaFunctionPointer":::
+
+The preceding code illustrates several of the rules on the function accessed as a function pointer:
+
+- Function pointers can only be declared in an `unsafe` context.
+- Methods that take a `delegate*` (or return a `delegate*`) can only be called in an `unsafe` context.
+- The `&` operator to obtain the address of a function is allowed only on `static` functions. (This applies to both member functions and local functions).
+
+You can specify the calling convention for a `delegate*` using the keywords `managed` and `unmanaged`. In addition, for `unmanaged` function pointers, you can specify the calling convention. The following declarations show examples of each. The first uses the `managed` calling convention, which is the default. The next three use an `unmanaged` calling convention. Each specifies one of the ECMA 335 calling conventions: `Cdecl`, `Stdcall`, `Fastcall` and `Thiscall`. The last uses the `unmanaged` calling convention, instructing the CLR to pick the default calling convention for the platform. The CLR will choose the calling convention at runtime.
+
+:::code language="csharp" source="snippets/unsafe-code/FunctionPointers.cs" ID="UnmanagedFunctionPointers":::
+
+You can learn more about function pointers in the [Function pointer](~/_csharplang/proposals/csharp-9.0/function-pointers.md) proposal for C# 9.0.
+
 ## C# language specification
 
 For more information, see the [Unsafe code](~/_csharplang/spec/unsafe-code.md) topic of the [C# language specification](~/_csharplang/spec/introduction.md).

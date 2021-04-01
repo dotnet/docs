@@ -12,6 +12,9 @@ namespace UnsafeCodePointers
 
             Console.WriteLine("=================    Conversion Examples   ======================");
             ClassConvert.Conversions();
+
+            Console.WriteLine("===================   Function pointers   =======================");
+            FunctionPointers.PointerExamples();
         }
     }
 }

@@ -11,9 +11,12 @@ namespace Coding_Conventions_Examples
     {
         //<snippet14a>
         public static Action<string> ActionExample1 = x => Console.WriteLine($"x is: {x}");
+
         public static Action<string, string> ActionExample2 = (x, y) => 
             Console.WriteLine($"x is: {x}, y is {y}");
+
         public static Func<string, int> FuncExample1 = x => Convert.ToInt32(x);
+
         public static Func<int, int, int> FuncExample2 = (x, y) => x + y;
         //</snippet14a>
         //<snippet14b>
@@ -124,8 +127,11 @@ namespace Coding_Conventions_Examples
 
             //<snippet15a>
             ActionExample1("string for x");
+
             ActionExample2("string for x", "string for y");
+
             Console.WriteLine($"The value is {FuncExample1("1")}");
+
             Console.WriteLine($"The sum is {FuncExample2(1, 2)}");
             //</snippet15a>
             //<snippet15b>

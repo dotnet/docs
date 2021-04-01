@@ -902,7 +902,7 @@ lambdaList
 Pattern matching in functions defined by `let` or `let rec` should be indented four spaces after starting of `let`, even if `function` keyword is used:
 
 ```fsharp
-let rec sizeLambda acc = 
+let rec sizeLambda acc =
     function
     | Abs(x, body) -> sizeLambda (succ acc) body
     | App(lam1, lam2) -> sizeLambda (sizeLambda acc lam1) lam2

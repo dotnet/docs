@@ -305,7 +305,7 @@ Update Main() with this code:
                 ActivityStarted = activity => Console.WriteLine("Started: {0,-15} {1,-60}", activity.OperationName, activity.Id),
                 ActivityStopped = activity => Console.WriteLine("Stopped: {0,-15} {1,-60} {2,-15}", activity.OperationName, activity.Id, activity.Duration)
             });
-            
+
             await DoSomeWork();
             Console.WriteLine("Example work done");
         }

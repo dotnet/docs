@@ -174,7 +174,7 @@ To create a custom formatter in Web API 2, you inherited from an appropriate bas
 ```csharp
 public static void ConfigureApis(HttpConfiguration config)
 {
-    config.Formatters.Add(new ProductCsvFormatter()); 
+    config.Formatters.Add(new ProductCsvFormatter());
 }
 ```
 
@@ -278,7 +278,7 @@ public class RouteConfig
     public static void RegisterRoutes(RouteCollection routes)
     {
         routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
- 
+
         var constraintsResolver = new DefaultInlineConstraintResolver();
         constraintsResolver.ConstraintMap.Add("values", typeof(ValuesConstraint));
         routes.MapMvcAttributeRoutes(constraintsResolver);
@@ -296,7 +296,7 @@ Another fairly advanced feature of ASP.NET MVC 5 is route handlers. Custom route
 public static void RegisterRoutes(RouteCollection routes)
 {
     routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
- 
+
     routes.Add(new Route("custom", new CustomRouteHandler()));
 }
 ```

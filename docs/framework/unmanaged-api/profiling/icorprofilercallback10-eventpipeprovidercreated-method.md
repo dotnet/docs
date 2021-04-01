@@ -17,7 +17,7 @@ Notifies the profiler whenever an EventPipe provider is created.
 ## Syntax  
   
 ```cpp  
-    HRESULT EventPipeProviderCreated([in] EVENTPIPE_PROVIDER provider); 
+    HRESULT EventPipeProviderCreated([in] EVENTPIPE_PROVIDER provider);
 ```  
   
 ## Parameters

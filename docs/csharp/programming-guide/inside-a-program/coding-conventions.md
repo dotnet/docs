@@ -130,7 +130,7 @@ Use [`Func<>` and `Action<>`](../../../standard/delegates-lambdas.md) instead of
 
 :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet14a":::
 
-Call the method using the signature defined by the `Func<>` or `Action<>` delegate:
+Call the method using the signature defined by the `Func<>` or `Action<>` delegate.
 
 :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet15a":::
 

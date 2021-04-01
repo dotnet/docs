@@ -31,7 +31,7 @@ namespace CustomConverterUnixEpochDate
         public string Summary { get; set; }
     }
 
-    // <ConverterOnly>>
+    // <ConverterOnly>
     sealed class UnixEpochDateConverter : JsonConverter<DateTimeOffset>
     {
         static readonly DateTimeOffset s_epoch = new DateTimeOffset(1970, 1, 1, 0, 0, 0, TimeSpan.Zero);
@@ -71,6 +71,6 @@ namespace CustomConverterUnixEpochDate
             writer.WriteStringValue(formatted);
         }
     }
-    // </ConverterOnly>>
+    // </ConverterOnly>
 }
 

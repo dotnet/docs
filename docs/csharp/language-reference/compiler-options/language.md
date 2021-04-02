@@ -39,7 +39,7 @@ The **AllowUnsafeBlocks** compiler option allows code that uses the [unsafe](../
 <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 ```
 
-For more information about unsafe code, see [Unsafe Code and Pointers](../../programming-guide/unsafe-code-pointers/index.md).
+For more information about unsafe code, see [Unsafe Code and Pointers](/dotnet/csharp/language-reference/unsafe-code).
 
 ## DefineConstants
 

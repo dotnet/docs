@@ -69,5 +69,5 @@ For more information, see [The fixed statement](~/_csharplang/spec/unsafe-code.m
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [unsafe](unsafe.md)
-- [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
+- [Pointer types](/dotnet/csharp/language-reference/unsafe-code/#pointer-types)
 - [Fixed Size Buffers](../../programming-guide/unsafe-code-pointers/fixed-size-buffers.md)

@@ -170,7 +170,7 @@ C# provides [`delegate`](builtin-types/reference-types.md#the-delegate-type) typ
 
 You can define a function pointer using the `delegate*` syntax. The compiler will call the function using the `calli` instruction rather than instantiating a `delegate` object and calling `Invoke`. The following code declares two methods that use a `delegate` or a `delegate*` to combine two objects of the same type. The first method uses a <xref:System.Func%603?displayProperty=nameWithType> delegate type. The second method uses a `delegate*` declaration with the same parameters and return type:
 
-:::code language="csharp" source="snippets/unsafe-code/FunctionPointers.cs" ID="UseDelecateOrPointer":::
+:::code language="csharp" source="snippets/unsafe-code/FunctionPointers.cs" ID="UseDelegateOrPointer":::
 
 The following code shows how you would declare a static local function and invoke the `UnsafeCombine` method using a pointer to that local function:
 

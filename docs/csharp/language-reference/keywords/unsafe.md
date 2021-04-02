@@ -54,4 +54,4 @@ For more information, see [Unsafe code](~/_csharplang/spec/unsafe-code.md) in th
 - [C# Keywords](index.md)
 - [fixed Statement](fixed-statement.md)
 - [Unsafe Code and Pointers](../unsafe-code.md)
-- [Fixed Size Buffers](../unsafe-code.md#fixed-sized-buffers)
+- [Fixed Size Buffers](../unsafe-code.md#fixed-size-buffers)

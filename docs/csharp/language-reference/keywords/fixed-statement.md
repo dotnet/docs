@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # fixed Statement (C# Reference)
 
-The `fixed` statement prevents the garbage collector from relocating a movable variable. The `fixed` statement is only permitted in an [unsafe](unsafe.md) context. You can also use the `fixed` keyword to create [fixed size buffers](../unsafe-code.md#fixed-sized-buffers).
+The `fixed` statement prevents the garbage collector from relocating a movable variable. The `fixed` statement is only permitted in an [unsafe](unsafe.md) context. You can also use the `fixed` keyword to create [fixed size buffers](../unsafe-code.md#fixed-size-buffers).
 
 The `fixed` statement sets a pointer to a managed variable and "pins" that variable during the execution of the statement. Pointers to movable managed variables are useful only in a `fixed` context. Without a `fixed` context, garbage collection could relocate the variables unpredictably. The C# compiler only lets you assign a pointer to a managed variable in a `fixed` statement.
 
@@ -70,4 +70,4 @@ For more information, see [The fixed statement](~/_csharplang/spec/unsafe-code.m
 - [C# Keywords](index.md)
 - [unsafe](unsafe.md)
 - [Pointer types](/dotnet/csharp/language-reference/unsafe-code/#pointer-types)
-- [Fixed Size Buffers](../unsafe-code.md#fixed-sized-buffers)
+- [Fixed Size Buffers](../unsafe-code.md#fixed-size-buffers)

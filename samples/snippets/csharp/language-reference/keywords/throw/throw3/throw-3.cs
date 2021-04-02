@@ -1,6 +1,8 @@
 ﻿// <Snippet3>
 using System;
 
+namespace Throw
+{
 public class Sentence
 {
    public Sentence(string s)
@@ -36,3 +38,4 @@ public class Example
 //       at Sentence.GetFirstCharacter()
 //       at Example.Main()
 // </Snippet3>
+}

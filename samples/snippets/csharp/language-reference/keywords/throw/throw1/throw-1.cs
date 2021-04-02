@@ -2,6 +2,8 @@
 // <Snippet1>
 using System;
 
+namespace Throw2
+{
 public class NumberGenerator
 {
    int[] numbers = { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 };
@@ -42,4 +44,5 @@ public class Example
 // The example displays the following output:
 //        IndexOutOfRangeException: 10 is outside the bounds of the array
 // </Snippet2>
+}
 }

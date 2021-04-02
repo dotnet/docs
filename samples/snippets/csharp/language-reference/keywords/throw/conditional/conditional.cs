@@ -1,5 +1,7 @@
 ﻿using System;
 
+namespace Conditional
+{
 class Program
 {
    static void Main(string[] args)
@@ -25,4 +27,5 @@ class Program
          Console.WriteLine($"{arg} is not a number.");
    }
 // </Snippet1>
+}
 }

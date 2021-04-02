@@ -16,7 +16,7 @@ ms.assetid: b0fcca10-a92d-4f2a-835b-b0ccae6739ee
 
 Most of the C# code you write is "verifiably safe code". *Verifiably safe code* means .NET tools can verify the code is safe. In general, safe code doesn't access memory directly using pointers. It also doesn't allocate raw memory. It creates managed objects instead.
 
-C# supports an [`unsafe`](../keywords/unsafe.md) context, in which you may write *unverifiable* code. In an `unsafe` context, code may use pointers, allocate and free blocks of memory, and call methods using function pointers. Unsafe code in C# isn't necessarily dangerous; it's just code whose safety cannot be verified.
+C# supports an [`unsafe`](keywords/unsafe.md) context, in which you may write *unverifiable* code. In an `unsafe` context, code may use pointers, allocate and free blocks of memory, and call methods using function pointers. Unsafe code in C# isn't necessarily dangerous; it's just code whose safety cannot be verified.
 
 Unsafe code has the following properties:
 
@@ -24,7 +24,7 @@ Unsafe code has the following properties:
 - In some cases, unsafe code may increase an application's performance by removing array bounds checks.
 - Unsafe code is required when you call native functions that require pointers.
 - Using unsafe code introduces security and stability risks.
-- The code that contains unsafe blocks must be compiled with the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option.
+- The code that contains unsafe blocks must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.
 
 ## Pointer types
 
@@ -35,9 +35,9 @@ type* identifier;
 void* identifier; //allowed but not recommended
 ```
 
-The type specified before the `*` in a pointer type is called the **referent type**. Only an [unmanaged type](../builtin-types/unmanaged-types.md) can be a referent type.
+The type specified before the `*` in a pointer type is called the **referent type**. Only an [unmanaged type](builtin-types/unmanaged-types.md) can be a referent type.
 
-Pointer types don't inherit from [object](../builtin-types/reference-types.md) and no conversions exist between pointer types and `object`. Also, boxing and unboxing don't support pointers. However, you can convert between different pointer types and between pointer types and integral types.
+Pointer types don't inherit from [object](builtin-types/reference-types.md) and no conversions exist between pointer types and `object`. Also, boxing and unboxing don't support pointers. However, you can convert between different pointer types and between pointer types and integral types.
 
 When you declare multiple pointers in the same declaration, you write the asterisk (`*`) together with the underlying type only. It isn't used as a prefix to each pointer name. For example:
 
@@ -46,7 +46,7 @@ int* p1, p2, p3;   // Ok
 int *p1, *p2, *p3;   // Invalid in C#
 ```
 
-A pointer can't point to a reference or to a [struct](../builtin-types/struct.md) that contains references, because an object reference can be garbage collected even if a pointer is pointing to it. The garbage collector doesn't keep track of whether an object is being pointed to by any pointer types.
+A pointer can't point to a reference or to a [struct](builtin-types/struct.md) that contains references, because an object reference can be garbage collected even if a pointer is pointing to it. The garbage collector doesn't keep track of whether an object is being pointed to by any pointer types.
 
 The value of the pointer variable of type `MyType*` is the address of a variable of type `MyType`. The following are examples of pointer type declarations:
 
@@ -64,7 +64,7 @@ int* myVariable;
 
 The expression `*myVariable` denotes the `int` variable found at the address contained in `myVariable`.
 
-There are several examples of pointers in the articles on the [fixed Statement](../keywords/fixed-statement.md). The following example uses the `unsafe` keyword and the `fixed` statement, and shows how to increment an interior pointer.  You can paste this code into the Main function of a console application to run it. These examples must be compiled with the [**AllowUnsafeBlocks**](../../language-reference/compiler-options/language.md#allowunsafeblocks) compiler option set.
+There are several examples of pointers in the articles on the [fixed Statement](keywords/fixed-statement.md). The following example uses the `unsafe` keyword and the `fixed` statement, and shows how to increment an interior pointer.  You can paste this code into the Main function of a console application to run it. These examples must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option set.
 
 :::code language="csharp" source="snippets/unsafe-code/FixedKeywordExamples.cs" ID="5":::
 
@@ -85,10 +85,10 @@ The following table lists the operators and statements that can operate on point
 |`++` and `--`|Increments and decrements pointers.|
 |`+` and `-`|Performs pointer arithmetic.|
 |`==`, `!=`, `<`, `>`, `<=`, and `>=`|Compares pointers.|
-|[`stackalloc`](../operators/stackalloc.md)|Allocates memory on the stack.|
-|[`fixed` statement](../keywords/fixed-statement.md)|Temporarily fixes a variable so that its address may be found.|
+|[`stackalloc`](operators/stackalloc.md)|Allocates memory on the stack.|
+|[`fixed` statement](keywords/fixed-statement.md)|Temporarily fixes a variable so that its address may be found.|
 
-For more information about pointer-related operators, see [Pointer related operators](../operators/pointer-related-operators.md).
+For more information about pointer-related operators, see [Pointer related operators](operators/pointer-related-operators.md).
 
 Any pointer type can be implicitly converted to a `void*` type. Any pointer type can be assigned the value `null`. Any pointer type can be explicitly converted to any other pointer type using a cast expression. You can also convert any integral type to a pointer type, or any pointer type to an integral type. These conversions require an explicit cast.
 
@@ -98,13 +98,13 @@ The following example converts an `int*` to a `byte*`. Notice that the pointer p
 
 ## Fixed Size Buffers
 
-In C#, you can use the [fixed](../keywords/fixed-statement.md) statement to create a buffer with a fixed size array in a data structure. Fixed size buffers are useful when you write methods that interop with data sources from other languages or platforms. The fixed array can take any attributes or modifiers that are allowed for regular struct members. The only restriction is that the array type must be `bool`, `byte`, `char`, `short`, `int`, `long`, `sbyte`, `ushort`, `uint`, `ulong`, `float`, or `double`.
+In C#, you can use the [fixed](keywords/fixed-statement.md) statement to create a buffer with a fixed size array in a data structure. Fixed size buffers are useful when you write methods that interop with data sources from other languages or platforms. The fixed array can take any attributes or modifiers that are allowed for regular struct members. The only restriction is that the array type must be `bool`, `byte`, `char`, `short`, `int`, `long`, `sbyte`, `ushort`, `uint`, `ulong`, `float`, or `double`.
 
 ```csharp
 private fixed char name[30];
 ```
 
-In safe code, a C# struct that contains an array doesn't contain the array elements. The struct contains a reference to the elements instead. You can embed an array of fixed size in a [struct](../builtin-types/struct.md) when it's used in an [unsafe](../keywords/unsafe.md) code block.
+In safe code, a C# struct that contains an array doesn't contain the array elements. The struct contains a reference to the elements instead. You can embed an array of fixed size in a [struct](builtin-types/struct.md) when it's used in an [unsafe](keywords/unsafe.md) code block.
 
 Size of the following `struct` doesn't depend on the number of elements in the array, since `pathName` is a reference:
 
@@ -114,13 +114,13 @@ A `struct` can contain an embedded array in unsafe code. In the following exampl
 
 :::code language="csharp" source="snippets/unsafe-code/FixedKeywordExamples.cs" ID="7":::
 
-The size of the 128 element `char` array is 256 bytes. Fixed size [char](../builtin-types/char.md) buffers always take 2 bytes per character, regardless of the encoding. This size is true even when char buffers are marshaled to API methods or structs with `CharSet = CharSet.Auto` or `CharSet = CharSet.Ansi`. For more information, see <xref:System.Runtime.InteropServices.CharSet>.
+The size of the 128 element `char` array is 256 bytes. Fixed size [char](builtin-types/char.md) buffers always take 2 bytes per character, regardless of the encoding. This size is true even when char buffers are marshaled to API methods or structs with `CharSet = CharSet.Auto` or `CharSet = CharSet.Ansi`. For more information, see <xref:System.Runtime.InteropServices.CharSet>.
 
 The  preceding example demonstrates accessing `fixed` fields without pinning, which is available starting with C# 7.3.
 
-Another common fixed-size array is the [bool](../builtin-types/bool.md) array. The elements in a `bool` array are always 1 byte in size. `bool` arrays aren't appropriate for creating bit arrays or buffers.
+Another common fixed-size array is the [bool](builtin-types/bool.md) array. The elements in a `bool` array are always 1 byte in size. `bool` arrays aren't appropriate for creating bit arrays or buffers.
 
-Fixed size buffers are compiled with the <xref:System.Runtime.CompilerServices.UnsafeValueTypeAttribute?displayProperty=nameWithType>, which instructs the common language runtime (CLR) that a type contains an unmanaged array that can potentially overflow. Memory allocated using [stackalloc](../operators/stackalloc.md) also automatically enables buffer overrun detection features in the CLR. The previous example shows how a fixed size buffer could exist in an `unsafe struct`.
+Fixed size buffers are compiled with the <xref:System.Runtime.CompilerServices.UnsafeValueTypeAttribute?displayProperty=nameWithType>, which instructs the common language runtime (CLR) that a type contains an unmanaged array that can potentially overflow. Memory allocated using [stackalloc](operators/stackalloc.md) also automatically enables buffer overrun detection features in the CLR. The previous example shows how a fixed size buffer could exist in an `unsafe struct`.
 
 ```csharp
 internal unsafe struct Buffer
@@ -158,7 +158,7 @@ Fixed size buffers differ from regular arrays in the following ways:
 
 The following example uses pointers to copy bytes from one array to another.
 
-This example uses the [unsafe](../keywords/unsafe.md) keyword, which enables you to use pointers in the `Copy` method. The [fixed](../keywords/fixed-statement.md) statement is used to declare pointers to the source and destination arrays. The `fixed` statement *pins* the location of the source and destination arrays in memory so that they will not be moved by garbage collection. The memory blocks for the arrays are unpinned when the `fixed` block is completed. Because the `Copy` method in this example uses the `unsafe` keyword, it must be compiled with the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option.
+This example uses the [unsafe](keywords/unsafe.md) keyword, which enables you to use pointers in the `Copy` method. The [fixed](keywords/fixed-statement.md) statement is used to declare pointers to the source and destination arrays. The `fixed` statement *pins* the location of the source and destination arrays in memory so that they will not be moved by garbage collection. The memory blocks for the arrays are unpinned when the `fixed` block is completed. Because the `Copy` method in this example uses the `unsafe` keyword, it must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.
 
 This example accesses the elements of both arrays using indices rather than a second unmanaged pointer. The declaration of the `pSource` and `pTarget` pointers pins the arrays. This feature is available starting with C# 7.3.
 
@@ -166,7 +166,7 @@ This example accesses the elements of both arrays using indices rather than a se
 
 ## Function pointers
 
-C# provides [`delegate`](../builtin-types/reference-types.md#the-delegate-type) types to define safe function pointer objects. Invoking a delegate involves instantiating a type derived from <xref:System.Delegate?displayProperty=nameWithType> and making a virtual method call to its `Invoke` method. This virtual call uses the `callvirt` IL instruction. In performance critical code paths, using the `calli` IL instruction is more efficient.
+C# provides [`delegate`](builtin-types/reference-types.md#the-delegate-type) types to define safe function pointer objects. Invoking a delegate involves instantiating a type derived from <xref:System.Delegate?displayProperty=nameWithType> and making a virtual method call to its `Invoke` method. This virtual call uses the `callvirt` IL instruction. In performance critical code paths, using the `calli` IL instruction is more efficient.
 
 You can define a function pointer using the `delegate*` syntax. The compiler will call the function using the `calli` instruction rather than instantiating a `delegate` object and calling `Invoke`. The following code declares two methods that use a `delegate` or a `delegate*` to combine two objects of the same type. The first method uses a <xref:System.Func%603?displayProperty=nameWithType> delegate type. The second method uses a `delegate*` declaration with the same parameters and return type:
 

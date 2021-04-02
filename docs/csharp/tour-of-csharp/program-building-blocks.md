@@ -14,7 +14,7 @@ The members of a `class` are either ***static members*** or ***instance members*
 The following list provides an overview of the kinds of members a class can contain.
 
 - **Constants**: Constant values associated with the class
-- **Fields**:  Variables that are associated of the class
+- **Fields**:  Variables that are associated with the class
 - **Methods**:  Actions that can be performed by the class
 - **Properties**: Actions associated with reading and writing named properties of the class
 - **Indexers**: Actions associated with indexing instances of the class like an array

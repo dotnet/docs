@@ -12,10 +12,12 @@ public class Sentence
 
    public char GetFirstCharacter()
    {
-      try {
+      try
+      {
          return Value[0];
-        }
-      catch (NullReferenceException e) {
+      }
+      catch (NullReferenceException e)
+      {
          throw;
       }
    }

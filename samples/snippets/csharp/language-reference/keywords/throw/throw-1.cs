@@ -8,7 +8,8 @@ public class NumberGenerator
 
    public int GetNumber(int index)
    {
-      if (index < 0 || index >= numbers.Length) {
+      if (index < 0 || index >= numbers.Length)
+      {
          throw new IndexOutOfRangeException();
       }
       return numbers[index];
@@ -27,7 +28,8 @@ public class Example
    {
       var gen = new NumberGenerator();
       int index = 10;
-      try {
+      try
+      {
           int value = gen.GetNumber(index);
           Console.WriteLine($"Retrieved {value}");
       }

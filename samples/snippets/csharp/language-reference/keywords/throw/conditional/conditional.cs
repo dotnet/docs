@@ -1,13 +1,17 @@
 ﻿using System;
 
+namespace Conditional
+{
 class Program
 {
    static void Main(string[] args)
    {
-      try {
+      try
+      {
          DisplayFirstNumber(args);
       }
-      catch (ArgumentException e) {
+      catch (ArgumentException e)
+      {
          Console.WriteLine(e.Message);
       }
    }
@@ -23,4 +27,5 @@ class Program
          Console.WriteLine($"{arg} is not a number.");
    }
 // </Snippet1>
+}
 }

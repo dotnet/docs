@@ -379,7 +379,7 @@ For more information, see [Native interoperability](../standard/native-interop/i
 
 Depending on language support, the CLR lets you access native memory and do pointer arithmetic via `unsafe` code. These operations are needed for certain algorithms and system interoperability. Although powerful, use of unsafe code is discouraged unless it's necessary to interoperate with system APIs or implement the most efficient algorithm. Unsafe code may not execute the same way in different environments and also loses the benefits of a garbage collector and type safety. It's recommended to confine and centralize unsafe code as much as possible and test that code thoroughly.
 
-For more information, see [Unsafe code and pointers](/dotnet/csharp/language-reference/unsafe-code).
+For more information, see [Unsafe code and pointers](../csharp/language-reference/unsafe-code.md).
 
 ## Next steps
 

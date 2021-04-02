@@ -96,7 +96,7 @@ The following example converts an `int*` to a `byte*`. Notice that the pointer p
 
 :::code language="csharp" source="snippets/unsafe-code/Conversions.cs" ID="Conversion":::
 
-## Fixed Size Buffers
+## Fixed size buffers
 
 In C#, you can use the [fixed](keywords/fixed-statement.md) statement to create a buffer with a fixed size array in a data structure. Fixed size buffers are useful when you write methods that interop with data sources from other languages or platforms. The fixed array can take any attributes or modifiers that are allowed for regular struct members. The only restriction is that the array type must be `bool`, `byte`, `char`, `short`, `int`, `long`, `sbyte`, `ushort`, `uint`, `ulong`, `float`, or `double`.
 

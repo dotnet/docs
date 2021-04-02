@@ -3,7 +3,7 @@ title: "Tutorial: Create a GitHub Action with .NET"
 description: Learn how to create a GitHub action with a containerized .NET app.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/23/2021
+ms.date: 04/01/2021
 ms.topic: tutorial
 ---
 
@@ -126,6 +126,9 @@ For more information, see [Metadata syntax for GitHub Actions](https://docs.gith
 With the [.NET app containerized](#prepare-the-net-app-for-github-actions), and the [action inputs and outputs](#define-action-inputs-and-outputs) defined, you're ready to consume the action. GitHub Actions are *not* required to be published in the GitHub Marketplace to be used. Workflows are defined in the *.github/workflows* directory of a repository as YAML files.
 
 :::code language="yml" source="snippets/workflow.yml":::
+
+> [!IMPORTANT]
+> For containerized GitHub Actions, you're required to use `runs-on: ubuntu-latest`. For more information, see [Workflow syntax `jobs.<job_id>.runs-on`](https://docs.github.com/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on).
 
 The preceding workflow YAML file defines three primary nodes:
 

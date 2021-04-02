@@ -1,0 +1,10 @@
+on: [pull_request]
+
+jobs:
+  status_checker_job:
+    runs-on: ubuntu-latest
+    name: Checks the OPS status check for build warnings
+    steps:
+    - uses: dotnet/samples/.github/actions/status-checker@main
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}

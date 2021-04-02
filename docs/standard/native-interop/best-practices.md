@@ -275,7 +275,7 @@ In .NET 6 and later versions, use the [`CLong` and `CULong`](https://github.com/
 // long Function(long a);
 [DllImport("NativeLib")]
 extern static CLong Function(CLong a);
-    
+
 // Usage
 nint result = Function(new CLong(10)).Value;
 ```

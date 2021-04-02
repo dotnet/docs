@@ -133,7 +133,7 @@ namespace Sample.DistributedTracing
 
         static async Task Main(string[] args)
         {
-            ...    
+            ...
 ```
 
 #### Best Practices
@@ -334,7 +334,7 @@ Update DoSomeWork() to set status:
                 activity?.AddEvent(new ActivityEvent("Part way there"));
                 await StepTwo();
                 activity?.AddEvent(new ActivityEvent("Done now"));
-                
+
                 // Pretend something went wrong
                 activity?.SetTag("otel.status_code", "ERROR");
                 activity?.SetTag("otel.status_description", "Use this text give more information about the error");

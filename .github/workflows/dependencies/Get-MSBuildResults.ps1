@@ -31,10 +31,10 @@
     None
 
 .NOTES
-    Version:        1.4
+    Version:        1.5
     Author:         adegeo@microsoft.com
-    Creation Date:  12/11/2020
-    Purpose/Change: Add support for config file. Select distinct on project files.
+    Creation Date:  04/02/2021
+    Purpose/Change: Add extra logging info.
 #>
 
 [CmdletBinding()]
@@ -165,6 +165,10 @@ foreach ($item in $workingSet) {
                   throw "snippets.5000.json file isn't valid."
                 }
             }
+
+            Write-Host "run.bat contents: "
+            Get-Content .\run.bat | Write-Host
+            Write-Host
 
             $result = Invoke-Expression ".\run.bat" | Out-String
             $thisExitCode = 0

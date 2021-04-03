@@ -1,6 +1,8 @@
 ﻿// <Snippet3>
 using System;
 
+namespace Throw
+{
 public class Sentence
 {
    public Sentence(string s)
@@ -12,10 +14,12 @@ public class Sentence
 
    public char GetFirstCharacter()
    {
-      try {
+      try
+      {
          return Value[0];
-        }
-      catch (NullReferenceException e) {
+      }
+      catch (NullReferenceException e)
+      {
          throw;
       }
    }
@@ -34,3 +38,4 @@ public class Example
 //       at Sentence.GetFirstCharacter()
 //       at Example.Main()
 // </Snippet3>
+}

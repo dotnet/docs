@@ -1,7 +1,6 @@
 ---
 title: "Breaking change: Nullable reference type annotations changed"
 description: "Learn about the breaking change in ASP.NET Core 6.0 titled Nullable reference type annotations changed"
-author: scottaddie
 ms.author: scaddie
 ms.date: 02/24/2021
 ---

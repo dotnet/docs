@@ -1,7 +1,6 @@
 ---
 title: "Breaking change: Middleware: HTTPS Redirection Middleware throws exception on ambiguous HTTPS ports"
 description: "Learn about the breaking change in ASP.NET Core 6.0 titled Middleware: HTTPS Redirection Middleware throws exception on ambiguous HTTPS ports"
-author: scottaddie
 ms.author: scaddie
 ms.date: 02/04/2021
 ---

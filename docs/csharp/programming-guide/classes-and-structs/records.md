@@ -62,7 +62,7 @@ For more information, see [Records (C# reference)](../../language-reference/buil
 ## See also
 
 - [Classes (C# Programming Guide)](classes.md)
-- [Records (C# reference)](../../language-reference/builtin-types/record.md).
+- [Records (C# reference)](../../language-reference/builtin-types/record.md)
 - [C# Programming Guide](../index.md)
 - [Object-Oriented Programming](../../tutorials/intro-to-csharp/object-oriented-programming.md)
 - [Polymorphism](polymorphism.md)

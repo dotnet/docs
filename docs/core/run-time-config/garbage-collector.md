@@ -282,7 +282,7 @@ Example:
 - This setting only applies to 64-bit computers.
 - If the process is running inside a container that has a specified memory limit, the percentage is calculated as a percentage of that memory limit.
 - This setting is ignored if the [Per-object-heap limits](#per-object-heap-limits) are configured.
-- The default value, which only applies in certain cases, is the lesser of 20 MB or 75% of the memory limit on the container. The default value applies if:
+- The default value, which only applies in certain cases, is the greater of 20 MB or 75% of the memory limit on the container. The default value applies if:
 
   - The process is running inside a container that has a specified memory limit.
   - [System.GC.HeapHardLimit](#heap-limit) is not set.

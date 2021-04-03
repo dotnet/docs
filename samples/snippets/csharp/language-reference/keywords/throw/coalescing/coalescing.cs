@@ -1,5 +1,7 @@
 ﻿using System;
 
+namespace Coalescing
+{
 public class Person
 {
    string name;
@@ -22,4 +24,5 @@ class Program
       string name = null;
       p.Name = name;
    }
+}
 }

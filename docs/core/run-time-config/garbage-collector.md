@@ -371,7 +371,7 @@ The high memory load threshold can be adjusted by the `COMPlus_GCHighMemPercent`
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.HighMemoryPercent` | *decimal value* | .NET 5.0 |
-| **Environment variable** | `COMPlus_GCHighMemPercent` | *hexadecimal value* | |
+| **Environment variable** | `COMPlus_GCHighMemPercent` | *hexadecimal value* | .NET Core 3.0<br/>.NET Framework 4.7.2 |
 
 > [!TIP]
 > If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to set the high memory threshold to 75%, the values would be 75 for the JSON file and 0x4B or 4B for the environment variable.

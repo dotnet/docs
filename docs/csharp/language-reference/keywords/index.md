@@ -52,7 +52,7 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
 |[equals](equals.md)|[from](from-clause.md)|[get](get.md)|
 |[global](../operators/namespace-alias-qualifier.md)|[group](group-clause.md)|[init](init.md)|
 |[into](into.md)|[join](join-clause.md)|[let](let-clause.md)|
-|[nameof](../operators/nameof.md)|[nint](../builtin-types/nint-nuint.md)|[not](../operators/patterns.md#logical-patterns.md)|
+|[nameof](../operators/nameof.md)|[nint](../builtin-types/nint-nuint.md)|[not](../operators/patterns.md#logical-patterns)|
 |[notnull](../../programming-guide/generics/constraints-on-type-parameters.md#notnull-constraint)|[nuint](../builtin-types/nint-nuint.md)|[on](on.md)|
 |[or](../operators/patterns.md#logical-patterns)|[orderby](orderby-clause.md)|[partial (type)](partial-type.md)|
 |[partial (method)](partial-method.md)|[remove](remove.md)|[select](select-clause.md)|

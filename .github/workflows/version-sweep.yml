@@ -35,7 +35,7 @@ jobs:
       # Start the .NET version sweeper, scan projects/slns for non-LTS (or currrent) versions
       - name: .NET version sweeper
         id: dotnet-version-sweeper
-        uses: dotnet/versionsweeper@v1.2
+        uses: dotnet/versionsweeper@v1.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:

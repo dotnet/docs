@@ -1,19 +1,44 @@
 ---
 title: "Patterns - C# reference"
-description: "Learn about the patterns supported by C# switch and is expressions and C# switch statement - C# reference"
-ms.date: 03/31/2021
+description: "Learn about the patterns supported by C# pattern matching expressions and statements - C# reference"
+ms.date: 04/05/2021
+f1_keywords: 
+  - "and_CSharpKeyword"
+  - "or_CSharpKeyword"
+  - "not_CSharpKeyword"
 helpviewer_keywords: 
   - "pattern matching [C#]"
+  - "and keyword [C#]"
+  - "or keyword [C#]"
+  - "not keyword [C#]"
 ---
 # Patterns (C# reference)
 
-Intro.
+Beginning with C# 7.0, the following C# expressions and statements support pattern matching:
 
-[Logical](#logical-patterns), [property](#property-pattern), and [positional](#positional-pattern) patterns are recursive patterns. That is, they can contain other patterns.
+- [`is` expression](../keywords/is.md)
+- `switch` [statement](../keywords/switch.md)
+- `switch` [expression](switch-expression.md) (introduced in C# 8.0)
+
+In those constructs, you can match an input expression against any of the following patterns:
+
+- [Declaration pattern](#declaration-and-type-patterns): to check the runtime type of an expression and, if a match succeeds, assign an expression result to a declared variable. Introduced in C# 7.0.
+- [Type pattern](#declaration-and-type-patterns): to check the runtime type of an expression. Introduced in C# 9.0.
+- [Constant pattern](#constant-pattern): to test if an expression result equals a specified constant. Introduced in C# 7.0.
+- [Relational patterns](#relational-patterns): to compare an expression result with a specified constant. Introduced in C# 9.0.
+- [Logical patterns](#logical-patterns): to test if an expression matches a logical combination of patterns. Introduced in C# 9.0.
+- [Property pattern](#property-pattern): to test if an expression's properties or fields match nested patterns. Introduced in C# 8.0.
+- [Positional pattern](#positional-pattern): to deconstruct an expression result and test if the resulting values match nested patterns. Introduced in C# 8.0.
+- [`var` pattern](#var-pattern): to match any expression and assign its result to a declared variable. Introduced in C# 7.0.
+- [Discard pattern](#discard-pattern): to match any expression. Introduced in C# 8.0.
+
+[Logical](#logical-patterns), [property](#property-pattern), and [positional](#positional-pattern) patterns are *recursive* patterns. That is, they can contain *nested* patterns.
+
+For the example of how to use those patterns to build a data-driven algorithm, see [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../tutorials/pattern-matching.md).
 
 ## Declaration and type patterns
 
-You use the declaration and type patterns to check if the runtime type of an expression is compatible with the given type. With the declaration pattern, you can also declare a new local variable. That variable is assigned a converted expression result when a pattern matches an expression, as the following example shows:
+You use declaration and type patterns to check if the runtime type of an expression is compatible with a given type. With a declaration pattern, you can also declare a new local variable. When a declaration pattern matches an expression, that variable is assigned a converted expression result, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="BasicExample":::
 
@@ -21,21 +46,21 @@ Beginning with C# 7.0, a *declaration pattern* with type `T` matches an expressi
 
 - The runtime type of an expression result is `T`.
 
-- The runtime type of an expression result derives from type `T` or implements interface `T` or another [implicit reference conversion](~/_csharplang/spec/conversions.md#implicit-reference-conversions) exists from it to type `T`. The following example demonstrates two cases when this condition is true:
+- The runtime type of an expression result derives from type `T` or implements interface `T` or another [implicit reference conversion](~/_csharplang/spec/conversions.md#implicit-reference-conversions) exists from it to `T`. The following example demonstrates two cases when this condition is true:
 
   :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="ReferenceConversion":::
 
-  In the preceding example, at the first call to the `GetSourceLabel` method, an argument value is matched by the first pattern because its runtime type `int[]` derives from the <xref:System.Array> type. At the second call to the `GetSourceLabel` method, the runtime type of an argument is <xref:System.Collections.Generic.List%601> that doesn't derive from the <xref:System.Array> type but implements the <xref:System.Collections.Generic.ICollection%601> interface.
+  In the preceding example, at the first call to the `GetSourceLabel` method, the first pattern matches an argument value because the argument's runtime type `int[]` derives from the <xref:System.Array> type. At the second call to the `GetSourceLabel` method, the argument's runtime type <xref:System.Collections.Generic.List%601> doesn't derive from the <xref:System.Array> type but implements the <xref:System.Collections.Generic.ICollection%601> interface.
 
 - The runtime type of an expression result is a [nullable value type](../builtin-types/nullable-value-types.md) with the underlying type `T`.
 
 - A [boxing](../../programming-guide/types/boxing-and-unboxing.md#boxing) or [unboxing](../../programming-guide/types/boxing-and-unboxing.md#unboxing) conversion exists from the runtime type of an expression result to type `T`.
 
-The following example demonstrates the last two of the preceding conditions:
+The following example demonstrates the last two conditions:
 
 :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="NullableAndUnboxing":::
 
-If you want to check only the type of an expression, you can use a discard `_` in place of a variable name, as the following example shows:
+If you want to check only the type of an expression, you can use a discard `_` in place of a variable's name, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="DiscardVariable":::
 
@@ -49,7 +74,7 @@ For more information, see the [Declaration pattern](~/_csharplang/proposals/csha
 
 ## Constant pattern
 
-Beginning with C# 7.0, you use the *constant pattern* to test if an expression result equals a specified constant, as the following example shows:
+Beginning with C# 7.0, you use a *constant pattern* to test if an expression result equals a specified constant, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/ConstantPattern.cs" id="BasicExample":::
 
@@ -62,13 +87,13 @@ In a constant pattern, you can use any constant expression, such as:
 - the name of a declared [const](../keywords/const.md) field or local
 - `null`
 
-Use the constant pattern to check for `null`, as the following example shows:
+Use a constant pattern to check for `null`, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/ConstantPattern.cs" id="NullCheck":::
 
 The compiler guarantees that no user-overloaded equality operator `==` is invoked when expression `x is null` is evaluated.
 
-Beginning with C# 9.0, you can use the [negated](#logical-patterns) `null` constant pattern to check for non-null, as the following example shows:
+Beginning with C# 9.0, you can use a [negated](#logical-patterns) `null` constant pattern to check for non-null, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/ConstantPattern.cs" id="NonNullCheck":::
 
@@ -80,13 +105,13 @@ Beginning with C# 9.0, you use a *relational pattern* to compare an expression r
 
 :::code language="csharp" source="snippets/patterns/RelationalPatterns.cs" id="BasicExample":::
 
-In a relational pattern, you can use any of the [relational operators](comparison-operators.md) `<`, `>`, `<=`, or `>=`. The right-hand part of a relational pattern must be a constant expression. That constant expression can be of an [integral](../builtin-types/integral-numeric-types.md), [floating-point](../builtin-types/floating-point-numeric-types.md), [char](../builtin-types/char.md), or [enum](../builtin-types/enum.md) type.
+In a relational pattern, you can use any of the [relational operators](comparison-operators.md) `<`, `>`, `<=`, or `>=`. The right-hand part of a relational pattern must be a constant expression. The constant expression can be of an [integer](../builtin-types/integral-numeric-types.md), [floating-point](../builtin-types/floating-point-numeric-types.md), [char](../builtin-types/char.md), or [enum](../builtin-types/enum.md) type.
 
-To check if an expression value is in a certain range, match it against a [conjunctive `and` pattern](#logical-patterns), as the following example shows:
+To check if an expression result is in a certain range, match it against a [conjunctive `and` pattern](#logical-patterns), as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/RelationalPatterns.cs" id="WithCombinators":::
 
-A relational pattern doesn't match an expression if an expression result is `null` or it fails to convert to the type of a constant by a nullable or unboxing conversion.
+If an expression result is `null` or fails to convert to the type of a constant by a nullable or unboxing conversion, a relational pattern doesn't match an expression.
 
 For more information, see the [Relational patterns](~/_csharplang/proposals/csharp-9.0/patterns3.md#relational-patterns) section of the feature proposal note.
 
@@ -94,11 +119,11 @@ For more information, see the [Relational patterns](~/_csharplang/proposals/csha
 
 Beginning with C# 9.0, you use the `not`, `and`, and `or` pattern combinators to create the following *logical patterns*:
 
-- *Negation* `not` pattern that matches an expression when the negated pattern doesn't match the expression. For example, you can negate the [constant](#constant-pattern) `null` pattern to check if an expression is non-null, as the following code shows:
+- *Negation* `not` pattern that matches an expression when the negated pattern doesn't match the expression. The following example shows how you can negate a [constant](#constant-pattern) `null` pattern to check if an expression is non-null:
 
   :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="NotPattern":::
 
-- *Conjunctive* `and` pattern that matches an expression when both patterns match the expression. For example, you can combine [relational patterns](#relational-patterns) to check if a value is in a certain range, as the following code shows:
+- *Conjunctive* `and` pattern that matches an expression when both patterns match the expression. The following example shows how you can combine [relational patterns](#relational-patterns) to check if a value is in a certain range:
 
   :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="AndPattern":::
 
@@ -106,9 +131,14 @@ Beginning with C# 9.0, you use the `not`, `and`, and `or` pattern combinators to
 
   :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="OrPattern":::
 
-As the preceding example shows, you can repeatedly use the pattern combinators in a pattern. When you use both `and` and `or` combinators within one pattern, `and` has higher precedence than `or`. To explicitly specify the precedence, use parentheses, as the following example shows:
+As the preceding example shows, you can repeatedly use the pattern combinators in a pattern.
+
+The `and` pattern combinator has higher precedence than `or`. To explicitly specify the precedence, use parentheses, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="WithParentheses":::
+
+> [!NOTE]
+> The order in which patterns are checked is undefined. At run time, the right-hand nested patterns of `or` and `and` patterns can be checked first.
 
 For more information, see the [Pattern combinators](~/_csharplang/proposals/csharp-9.0/patterns3.md#pattern-combinators) section of the feature proposal note.
 
@@ -128,7 +158,7 @@ A property pattern is a recursive pattern. That is, you can use any pattern as a
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="RecursivePropertyPattern":::
 
-The preceding example uses two features available in C# 9.0 and later: `or` [pattern combinator](#logical-patterns) and record types.
+The preceding example uses two features available in C# 9.0 and later: `or` [pattern combinator](#logical-patterns) and [record types](../builtin-types/record.md).
 
 For more information, see the [Property pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#property-pattern) section of the feature proposal note.
 
@@ -148,19 +178,21 @@ You can use the names of tuple elements and `Deconstruct` parameters in a positi
 
 :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="UseIdentifiers":::
 
-You can also add a runtime type check and a variable declaration to a positional pattern, as the following example shows:
+You can also extend a positional pattern in any of the following ways:
 
-:::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="WithTypeCheck":::
+- Add a runtime type check and a variable declaration, as the following example shows:
 
-The preceding example uses positional records, which implicitly provide the `Deconstruct` method.
+  :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="WithTypeCheck":::
 
-You can also use a [property pattern](#property-pattern) within a positional pattern, as the following example shows:
+  The preceding example uses [positional records](../builtin-types/record.md#positional-syntax-for-property-definition) that implicitly provide the `Deconstruct` method.
 
-:::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="WithPropertyPattern":::
+- Use a [property pattern](#property-pattern) within a positional pattern, as the following example shows:
 
-You can also combine two preceding usages in one pattern, as the following example shows:
+  :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="WithPropertyPattern":::
 
-:::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="CompletePositionalPattern":::
+- Combine two preceding usages, as the following example shows:
+
+  :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="CompletePositionalPattern":::
 
 A positional pattern is a recursive pattern. That is, you can use any pattern as a nested pattern.
 
@@ -168,13 +200,11 @@ For more information, see the [Positional pattern](~/_csharplang/proposals/cshar
 
 ## `var` pattern
 
-Beginning with C# 7.0, you use a *`var` pattern* to match any expression, including `null`, and assign its result to a declared variable, as the following example shows:
+Beginning with C# 7.0, you use a *`var` pattern* to match any expression, including `null`, and assign its result to a new local variable, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/VarPattern.cs" id="KeepInterimResult":::
 
-As the preceding example shows, a `var` pattern is useful when you need a temporary variable within a Boolean expression to hold the result of intermediate calculations.
-
-You can also use a `var` pattern when you need to perform additional checks in `when` case guards of a `switch` expression or statement, as the following example shows:
+A `var` pattern is useful when you need a temporary variable within a Boolean expression to hold the result of intermediate calculations. You can also use a `var` pattern when you need to perform additional checks in `when` case guards of a `switch` expression or statement, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/VarPattern.cs" id="WithCaseGuards":::
 
@@ -190,7 +220,7 @@ Beginning with C# 8.0, you use a *discard pattern* `_` to match any expression, 
 
 :::code language="csharp" source="snippets/patterns/DiscardPattern.cs" id="BasicExample":::
 
-In the preceding example, a discard pattern is used to handle `null` and any integer value that doesn't have the corresponding member of the <xref:System.DayOfWeek> enumeration. That guarantees that a `switch` expression in the example handles all possible values of its input. If you don't use a discard pattern in a `switch` expression and none of the expression's patterns matches an input, the runtime [throws an exception](switch-expression.md#non-exhaustive-switch-expressions).The compiler generates a warning if a `switch` expression doesn't handle all possible input values.
+In the preceding example, a discard pattern is used to handle `null` and any integer value that doesn't have the corresponding member of the <xref:System.DayOfWeek> enumeration. That guarantees that a `switch` expression in the example handles all possible input values. If you don't use a discard pattern in a `switch` expression and none of the expression's patterns matches an input, the runtime [throws an exception](switch-expression.md#non-exhaustive-switch-expressions). The compiler generates a warning if a `switch` expression doesn't handle all possible input values.
 
 A discard pattern cannot be a pattern in an `is` expression or a `switch` statement. In those cases, to match any expression, use a [`var` pattern](#var-pattern) with a discard: `var _`.
 

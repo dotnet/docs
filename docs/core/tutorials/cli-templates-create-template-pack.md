@@ -112,7 +112,7 @@ working
                 template.json
 ```
 
-The _templates_ folder has two templates: _extensions_ and _consoleasync_.
+The _templates_ folder has two folders: _extensions_ and _consoleasync_.
 
 In your terminal, from the _working_ folder, run the `dotnet pack` command. This command builds your project and creates a NuGet package in the _working\bin\Debug_ folder, as indicated by the following output:
 

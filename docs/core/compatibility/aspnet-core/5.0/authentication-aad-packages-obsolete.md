@@ -1,7 +1,6 @@
 ---
 title: "Breaking change: Authentication: AzureAD.UI and AzureADB2C.UI APIs and packages marked obsolete"
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled Authentication: AzureAD.UI and AzureADB2C.UI APIs and packages marked obsolete"
-author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
 ---

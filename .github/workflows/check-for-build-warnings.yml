@@ -1,4 +1,4 @@
-name: 'Check for build warnings'
+name: 'Status checker'
 
 on: 
   pull_request:
@@ -12,6 +12,7 @@ on:
 
 jobs:
   status_checker_job:
+    name: Look for build warnings
     runs-on: ubuntu-latest
     steps:
     - uses: dotnet/samples/.github/actions/status-checker@main

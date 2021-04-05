@@ -34,6 +34,8 @@ List<int> xs = new();
 List<int>? ys = new();
 ```
 
+In pattern matching, the `var` keyword is used in a [`var` pattern](../operators/patterns.md#var-pattern).
+
 ## Example
 
 The following example shows two query expressions. In the first expression, the use of `var` is permitted but is not required, because the type of the query result can be stated explicitly as an `IEnumerable<string>`. However, in the second expression, `var` allows the result to be a collection of anonymous types, and the name of that type is not accessible except to the compiler itself. Use of `var` eliminates the requirement to create a new class for the result. Note that in Example #2, the `foreach` iteration variable `item` must also be implicitly typed.

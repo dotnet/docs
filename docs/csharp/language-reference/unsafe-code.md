@@ -1,5 +1,5 @@
 ---
-title: "Unsafe code, pointers to data and function pointers"
+title: "Unsafe code, pointers to data, and function pointers"
 description: Learn about unsafe code, pointers, and function pointers. C# requires you to declare an unsafe context to use these features to directly manipulate memory or function pointers.
 ms.date: 04/01/2021
 helpviewer_keywords: 
@@ -14,7 +14,7 @@ ms.assetid: b0fcca10-a92d-4f2a-835b-b0ccae6739ee
 ---
 # Unsafe code and pointer types
 
-Most of the C# code you write is "verifiably safe code". *Verifiably safe code* means .NET tools can verify the code is safe. In general, safe code doesn't access memory directly using pointers. It also doesn't allocate raw memory. It creates managed objects instead.
+Most of the C# code you write is "verifiably safe code." *Verifiably safe code* means .NET tools can verify that the code is safe. In general, safe code doesn't directly access memory using pointers. It also doesn't allocate raw memory. It creates managed objects instead.
 
 C# supports an [`unsafe`](keywords/unsafe.md) context, in which you may write *unverifiable* code. In an `unsafe` context, code may use pointers, allocate and free blocks of memory, and call methods using function pointers. Unsafe code in C# isn't necessarily dangerous; it's just code whose safety cannot be verified.
 
@@ -64,7 +64,7 @@ int* myVariable;
 
 The expression `*myVariable` denotes the `int` variable found at the address contained in `myVariable`.
 
-There are several examples of pointers in the articles on the [fixed Statement](keywords/fixed-statement.md). The following example uses the `unsafe` keyword and the `fixed` statement, and shows how to increment an interior pointer.  You can paste this code into the Main function of a console application to run it. These examples must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option set.
+There are several examples of pointers in the articles on the [`fixed` statement](keywords/fixed-statement.md). The following example uses the `unsafe` keyword and the `fixed` statement, and shows how to increment an interior pointer.  You can paste this code into the Main function of a console application to run it. These examples must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option set.
 
 :::code language="csharp" source="snippets/unsafe-code/FixedKeywordExamples.cs" ID="5":::
 
@@ -88,7 +88,7 @@ The following table lists the operators and statements that can operate on point
 |[`stackalloc`](operators/stackalloc.md)|Allocates memory on the stack.|
 |[`fixed` statement](keywords/fixed-statement.md)|Temporarily fixes a variable so that its address may be found.|
 
-For more information about pointer-related operators, see [Pointer related operators](operators/pointer-related-operators.md).
+For more information about pointer-related operators, see [Pointer-related operators](operators/pointer-related-operators.md).
 
 Any pointer type can be implicitly converted to a `void*` type. Any pointer type can be assigned the value `null`. Any pointer type can be explicitly converted to any other pointer type using a cast expression. You can also convert any integral type to a pointer type, or any pointer type to an integral type. These conversions require an explicit cast.
 
@@ -96,9 +96,9 @@ The following example converts an `int*` to a `byte*`. Notice that the pointer p
 
 :::code language="csharp" source="snippets/unsafe-code/Conversions.cs" ID="Conversion":::
 
-## Fixed size buffers
+## Fixed-size buffers
 
-In C#, you can use the [fixed](keywords/fixed-statement.md) statement to create a buffer with a fixed size array in a data structure. Fixed size buffers are useful when you write methods that interop with data sources from other languages or platforms. The fixed array can take any attributes or modifiers that are allowed for regular struct members. The only restriction is that the array type must be `bool`, `byte`, `char`, `short`, `int`, `long`, `sbyte`, `ushort`, `uint`, `ulong`, `float`, or `double`.
+In C#, you can use the [fixed](keywords/fixed-statement.md) statement to create a buffer with a fixed size array in a data structure. Fixed size buffers are useful when you write methods that interoperate with data sources from other languages or platforms. The fixed array can take any attributes or modifiers that are allowed for regular struct members. The only restriction is that the array type must be `bool`, `byte`, `char`, `short`, `int`, `long`, `sbyte`, `ushort`, `uint`, `ulong`, `float`, or `double`.
 
 ```csharp
 private fixed char name[30];
@@ -106,7 +106,7 @@ private fixed char name[30];
 
 In safe code, a C# struct that contains an array doesn't contain the array elements. The struct contains a reference to the elements instead. You can embed an array of fixed size in a [struct](builtin-types/struct.md) when it's used in an [unsafe](keywords/unsafe.md) code block.
 
-Size of the following `struct` doesn't depend on the number of elements in the array, since `pathName` is a reference:
+The size of the following `struct` doesn't depend on the number of elements in the array, since `pathName` is a reference:
 
 :::code language="csharp" source="snippets/unsafe-code/FixedKeywordExamples.cs" ID="6":::
 
@@ -114,7 +114,7 @@ A `struct` can contain an embedded array in unsafe code. In the following exampl
 
 :::code language="csharp" source="snippets/unsafe-code/FixedKeywordExamples.cs" ID="7":::
 
-The size of the 128 element `char` array is 256 bytes. Fixed size [char](builtin-types/char.md) buffers always take 2 bytes per character, regardless of the encoding. This size is true even when char buffers are marshaled to API methods or structs with `CharSet = CharSet.Auto` or `CharSet = CharSet.Ansi`. For more information, see <xref:System.Runtime.InteropServices.CharSet>.
+The size of the 128 element `char` array is 256 bytes. Fixed size [char](builtin-types/char.md) buffers always take 2 bytes per character, regardless of the encoding. This array size is the same even when char buffers are marshaled to API methods or structs with `CharSet = CharSet.Auto` or `CharSet = CharSet.Ansi`. For more information, see <xref:System.Runtime.InteropServices.CharSet>.
 
 The  preceding example demonstrates accessing `fixed` fields without pinning, which is available starting with C# 7.3.
 
@@ -129,7 +129,7 @@ internal unsafe struct Buffer
 }
 ```
 
-The compiler-generated C# for `Buffer`, is attributed as follows:
+The compiler-generated C# for `Buffer` is attributed as follows:
 
 ```csharp
 internal struct Buffer
@@ -184,7 +184,7 @@ The preceding code illustrates several of the rules on the function accessed as 
 
 The syntax has parallels with declaring `delegate` types and using pointers. The `*` suffix on `delegate` indicates the declaration is a *function pointer*. The `&` when assigning a method group to a function pointer indicates the operation takes the address of the method.
 
-You can specify the calling convention for a `delegate*` using the keywords `managed` and `unmanaged`. In addition, for `unmanaged` function pointers, you can specify the calling convention. The following declarations show examples of each. The first uses the `managed` calling convention, which is the default. The next three use an `unmanaged` calling convention. Each specifies one of the ECMA 335 calling conventions: `Cdecl`, `Stdcall`, `Fastcall`, and `Thiscall`. The last uses the `unmanaged` calling convention, instructing the CLR to pick the default calling convention for the platform. The CLR will choose the calling convention at runtime.
+You can specify the calling convention for a `delegate*` using the keywords `managed` and `unmanaged`. In addition, for `unmanaged` function pointers, you can specify the calling convention. The following declarations show examples of each. The first declaration uses the `managed` calling convention, which is the default. The next three use an `unmanaged` calling convention. Each specifies one of the ECMA 335 calling conventions: `Cdecl`, `Stdcall`, `Fastcall`, or `Thiscall`. The last declarations uses the `unmanaged` calling convention, instructing the CLR to pick the default calling convention for the platform. The CLR will choose the calling convention at run time.
 
 :::code language="csharp" source="snippets/unsafe-code/FunctionPointers.cs" ID="UnmanagedFunctionPointers":::
 

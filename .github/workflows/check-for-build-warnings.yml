@@ -1,3 +1,5 @@
+name: 'Check for build warnings'
+
 on: 
   pull_request:
     types: [opened, synchronize, reopened]
@@ -11,7 +13,6 @@ on:
 jobs:
   status_checker_job:
     runs-on: ubuntu-latest
-    name: Checks the OPS status check for build warnings
     steps:
     - uses: dotnet/samples/.github/actions/status-checker@main
       with:

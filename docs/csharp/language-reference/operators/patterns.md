@@ -14,7 +14,7 @@ helpviewer_keywords:
 ---
 # Patterns (C# reference)
 
-Beginning with C# 7.0, the following C# expressions and statements support pattern matching:
+C# introduced pattern matching in C# 7.0. Since then, each major C# version extends pattern matching capabilities. The following C# expressions and statements support pattern matching:
 
 - [`is` expression](../keywords/is.md)
 - `switch` [statement](../keywords/switch.md)

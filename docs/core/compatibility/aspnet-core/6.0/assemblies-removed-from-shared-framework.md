@@ -23,7 +23,7 @@ In addition, the following assemblies were removed from the ASP.NET Core runtime
 
 ## Old behavior
 
-Applications could use APIs provided by these libraries by referencing the *Microsoft.AspNetCore.App* shared framework.
+Applications could use APIs provided by these libraries by referencing the [Microsoft.AspNetCore.App](/aspnet/core/fundamentals/metapackage-app) shared framework.
 
 ## New behavior
 

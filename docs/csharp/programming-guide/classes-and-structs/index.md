@@ -14,11 +14,11 @@ helpviewer_keywords:
 ---
 # Classes, structs, and records (C# programming guide)
 
-Classes and structs are two of the basic constructs of the common type system in .NET. C# 9 adds records, which are a kind of class. Each is essentially a data structure that encapsulates a set of data and behaviors that belong together as a logical unit. The data and behaviors are the *members* of the class or struct, and they include its methods, properties, events, and so on, as listed later in this article.
+Classes and structs are two of the basic constructs of the common type system in .NET. C# 9 adds records, which are a kind of class. Each is essentially a data structure that encapsulates a set of data and behaviors that belong together as a logical unit. The data and behaviors are the *members* of the class, struct, or record, and they include its methods, properties, events, and so on, as listed later in this article.
 
-A class or struct declaration is like a blueprint that is used to create instances or objects at run time. If you define a class or struct called `Person`, `Person` is the name of the type. If you declare and initialize a variable `p` of type `Person`, `p` is said to be an object or instance of `Person`. Multiple instances of the same `Person` type can be created, and each instance can have different values in its properties and fields.  
+A class, struct, or record declaration is like a blueprint that is used to create instances or objects at run time. If you define a class, struct, or record named `Person`, `Person` is the name of the type. If you declare and initialize a variable `p` of type `Person`, `p` is said to be an object or instance of `Person`. Multiple instances of the same `Person` type can be created, and each instance can have different values in its properties and fields.  
   
-A class is a reference type. When an object of the class is created, the variable to which the object is assigned holds only a reference to that memory. When the object reference is assigned to a new variable, the new variable refers to the original object. Changes made through one variable are reflected in the other variable because they both refer to the same data.
+A class or a record is a reference type. When an object of the type is created, the variable to which the object is assigned holds only a reference to that memory. When the object reference is assigned to a new variable, the new variable refers to the original object. Changes made through one variable are reflected in the other variable because they both refer to the same data.
   
 A struct is a value type. When a struct is created, the variable to which the struct is assigned holds the struct's actual data. When the struct is assigned to a new variable, it is copied. The new variable and the original variable therefore contain two separate copies of the same data. Changes made to one copy do not affect the other copy.  
   
@@ -38,7 +38,7 @@ In general, classes are used to model more complex behavior, or data that is int
 
 All methods, fields, constants, properties, and events must be declared within a type; these are called the *members* of the type. In C#, there are no global variables or methods as there are in some other languages. Even a program's entry point, the `Main` method, must be declared within a class or struct (implicitly in the case of [top-level statements](../main-and-command-args/top-level-statements.md)).
 
-The following list includes all the various kinds of members that may be declared in a class or struct.  
+The following list includes all the various kinds of members that may be declared in a class, struct, or record.
   
 - [Fields](./fields.md)  
 - [Constants](./constants.md)
@@ -72,19 +72,19 @@ Classes may be declared as [abstract](../../language-reference/keywords/abstract
   
 ## Interfaces  
 
-Classes and structs can inherit multiple interfaces. To inherit from an interface means that the type implements all the methods defined in the interface. For more information, see [Interfaces](../interfaces/index.md).  
+Classes, structs, and records can inherit multiple interfaces. To inherit from an interface means that the type implements all the methods defined in the interface. For more information, see [Interfaces](../interfaces/index.md).  
   
 ## Generic Types  
 
- Classes and structs can be defined with one or more type parameters. Client code supplies the type when it creates an instance of the type. For example The <xref:System.Collections.Generic.List%601> class in the <xref:System.Collections.Generic> namespace is defined with one type parameter. Client code creates an instance of a `List<string>` or `List<int>` to specify the type that the list will hold. For more information, see [Generics](../generics/index.md).  
+ Classes, structs, and records can be defined with one or more type parameters. Client code supplies the type when it creates an instance of the type. For example The <xref:System.Collections.Generic.List%601> class in the <xref:System.Collections.Generic> namespace is defined with one type parameter. Client code creates an instance of a `List<string>` or `List<int>` to specify the type that the list will hold. For more information, see [Generics](../generics/index.md).  
   
 ## Static Types  
 
-Classes (but not structs) can be declared as [static](../../language-reference/keywords/static.md). A static class can contain only static members and can't be instantiated with the `new` keyword. One copy of the class is loaded into memory when the program loads, and its members are accessed through the class name. Both classes and structs can contain static members. For more information, see [Static classes and static class members](./static-classes-and-static-class-members.md).
+Classes (but not structs or records) can be declared as [static](../../language-reference/keywords/static.md). A static class can contain only static members and can't be instantiated with the `new` keyword. One copy of the class is loaded into memory when the program loads, and its members are accessed through the class name. Classes, structs, and records can contain static members. For more information, see [Static classes and static class members](./static-classes-and-static-class-members.md).
   
 ## Nested Types
 
-A class or struct can be nested within another class or struct. For more information, see [Nested Types](./nested-types.md).
+A class, struct, or record can be nested within another class, struct, or record. For more information, see [Nested Types](./nested-types.md).
   
 ## Partial Types  
 

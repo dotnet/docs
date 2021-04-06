@@ -48,6 +48,6 @@ For more information, see [The sizeof operator](~/_csharplang/spec/unsafe-code.m
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Pointer related operators](pointer-related-operators.md)
-- [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
+- [Pointer types](../unsafe-code.md#pointer-types)
 - [Memory and span-related types](../../../standard/memory-and-spans/index.md)
 - [Generics in .NET](../../../standard/generics/index.md)

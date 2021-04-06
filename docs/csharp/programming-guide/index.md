@@ -55,7 +55,7 @@ This section provides detailed information on key C# language features and featu
   
  [Namespaces](./namespaces/index.md)  
   
- [Unsafe Code and Pointers](./unsafe-code-pointers/index.md)  
+ [Unsafe Code and Pointers](../language-reference/unsafe-code.md)  
   
  [XML Documentation Comments](./xmldoc/index.md)  
   

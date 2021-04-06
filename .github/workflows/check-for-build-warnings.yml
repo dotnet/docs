@@ -3,12 +3,6 @@ name: 'Status checker'
 on: 
   pull_request:
     types: [opened, synchronize, reopened]
-  workflow_dispatch:
-    inputs:
-      reason:
-        description: 'The reason for running the workflow'
-        required: true
-        default: 'Manual run'
 
 jobs:
   status_checker_job:

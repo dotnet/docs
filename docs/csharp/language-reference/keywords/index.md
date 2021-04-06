@@ -46,18 +46,19 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
   
 ||||  
 |---|---|---|  
-|[add](add.md)|[alias](extern-alias.md)|[ascending](ascending.md)|
-|[async](async.md)|[await](../operators/await.md)|[by](by.md)|
-|[descending](descending.md)|[dynamic](../builtin-types/reference-types.md)|[equals](equals.md)|
-|[from](from-clause.md)|[get](get.md)|[global](../operators/namespace-alias-qualifier.md)|
-|[group](group-clause.md)|[init](init.md)|[into](into.md)|
-|[join](join-clause.md)|[let](let-clause.md)|[nameof](../operators/nameof.md)|
-|[nint](../builtin-types/nint-nuint.md)|[notnull](../../programming-guide/generics/constraints-on-type-parameters.md#notnull-constraint)|[nuint](../builtin-types/nint-nuint.md)|
-|[on](on.md)|[orderby](orderby-clause.md)|[partial (type)](partial-type.md)|
+|[add](add.md)|[and](../operators/patterns.md#logical-patterns)|[alias](extern-alias.md)|
+|[ascending](ascending.md)|[async](async.md)|[await](../operators/await.md)|
+|[by](by.md)|[descending](descending.md)|[dynamic](../builtin-types/reference-types.md)|
+|[equals](equals.md)|[from](from-clause.md)|[get](get.md)|
+|[global](../operators/namespace-alias-qualifier.md)|[group](group-clause.md)|[init](init.md)|
+|[into](into.md)|[join](join-clause.md)|[let](let-clause.md)|
+|[nameof](../operators/nameof.md)|[nint](../builtin-types/nint-nuint.md)|[not](../operators/patterns.md#logical-patterns)|
+|[notnull](../../programming-guide/generics/constraints-on-type-parameters.md#notnull-constraint)|[nuint](../builtin-types/nint-nuint.md)|[on](on.md)|
+|[or](../operators/patterns.md#logical-patterns)|[orderby](orderby-clause.md)|[partial (type)](partial-type.md)|
 |[partial (method)](partial-method.md)|[remove](remove.md)|[select](select-clause.md)|
 |[set](set.md)|[unmanaged (generic type constraint)](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint)|[value](value.md)|
 |[var](var.md)|[when (filter condition)](when.md)|[where (generic type constraint)](where-generic-type-constraint.md)|
-|[where (query clause)](where-clause.md)|[with](../operators/with-expression.md)|[yield](yield.md)||
+|[where (query clause)](where-clause.md)|[with](../operators/with-expression.md)|[yield](yield.md)|
 
 ## See also
 

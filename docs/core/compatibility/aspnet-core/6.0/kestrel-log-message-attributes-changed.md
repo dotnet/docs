@@ -1,7 +1,6 @@
 ---
 title: "Breaking change: Kestrel: Log message attributes changed"
 description: "Learn about the breaking change in ASP.NET Core 6.0 titled Kestrel: Log message attributes changed"
-author: scottaddie
 ms.author: scaddie
 ms.date: 02/01/2021
 ---

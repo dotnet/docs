@@ -1,15 +1,16 @@
 ---
-title: "Classes and Structs - C# Programming Guide"
-description: Describes the use of classes and structures (structs) in C#.
-ms.date: 02/25/2021
+title: "Classes, structs, and records - C# Programming Guide"
+description: Describes the use of classes, structures (structs), and records in C#.
+ms.date: 04/06/2021
 helpviewer_keywords: 
   - "structs [C#], about structs"
+  - "records [C#], about records"
   - "classes [C#], overview"
   - "C# language, structs"
+  - "C# language, records"
   - "C# language, objects"
   - "objects [C#]"
   - "C# language, classes"
-ms.assetid: cc39dbda-8754-423e-b5b1-16a1db0734c0
 ---
 # Classes, structs, and records (C# programming guide)
 

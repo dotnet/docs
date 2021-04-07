@@ -7,6 +7,6 @@ ms.custom: include
 ---
 
 > [!TIP]
-> With regard to dependency injection, when registering services in an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>, the [service lifetime](../../../core/extensions/dependency-injection.md#service-lifetimes) is managed implicitly on your behalf. The <xref:System.IServiceProvider?displayProperty=nameWithType> and corresponding <xref:Microsoft.Extensions.Hosting.IHost?displayProperty=nameWithType> orchestrate resource cleanup. Specifically, implementations of <xref:System.IDisposable?displayProperty=nameWithType> and <xref:System.IAsyncDisposable?displayProperty=nameWithType> are properly disposed at the end of their specified lifetime.
+> With regard to dependency injection, when registering services in an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>, the [service lifetime](/dotnet/core/extensions/dependency-injection.md#service-lifetimes) is managed implicitly on your behalf. The <xref:System.IServiceProvider?displayProperty=nameWithType> and corresponding <xref:Microsoft.Extensions.Hosting.IHost?displayProperty=nameWithType> orchestrate resource cleanup. Specifically, implementations of <xref:System.IDisposable?displayProperty=nameWithType> and <xref:System.IAsyncDisposable?displayProperty=nameWithType> are properly disposed at the end of their specified lifetime.
 >
 > For more information, see [Dependency injection in .NET](../../../core/extensions/dependency-injection.md).

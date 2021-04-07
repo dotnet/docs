@@ -39,10 +39,6 @@ namespace CustomConverterUnixEpochDate
 
         public override DateTimeOffset Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
-            if (typeToConvert != typeof(DateTimeOffset))
-            {
-                throw new ArgumentException($"Unexpected type '{typeToConvert}'.");
-            }
 
             string formatted = reader.GetString();
             Match match = s_regex.Match(formatted);
@@ -73,4 +69,3 @@ namespace CustomConverterUnixEpochDate
     }
     // </ConverterOnly>
 }
-

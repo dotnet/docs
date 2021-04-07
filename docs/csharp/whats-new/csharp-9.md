@@ -11,10 +11,11 @@ C# 9.0 adds the following features and enhancements to the C# language:
 - [Init only setters](#init-only-setters)
 - [Top-level statements](#top-level-statements)
 - [Pattern matching enhancements](#pattern-matching-enhancements)
-- [Fit and finish features](#fit-and-finish-features)
+- [Performance and interop](#performance-and-interop)
   - Native sized integers
   - Function pointers
   - Suppress emitting localsinit flag
+- [Fit and finish features](#fit-and-finish-features)
   - Target-typed new expressions
   - static anonymous functions
   - Target-typed conditional expressions
@@ -32,7 +33,7 @@ You can download the latest .NET SDK from the [.NET downloads page](https://dotn
 
 ## Record types
 
-C# 9.0 introduces ***record types***. You use the `record` keyword to define a [reference type](../language-reference/builtin-types/reference-types.md) that provides built-in functionality for encapsulating data. You can create record types with immutable properties by using positional parameters or standard property syntax:
+C# 9.0 introduces ***record types***. You use the `record` keyword to define a reference type that provides built-in functionality for encapsulating data. You can create record types with immutable properties by using positional parameters or standard property syntax:
 
 :::code language="csharp" source="../language-reference/builtin-types/snippets/shared/RecordType.cs" id="PositionalRecord":::
 :::code language="csharp" source="../language-reference/builtin-types/snippets/shared/RecordType.cs" id="ImmutableRecord":::
@@ -44,19 +45,19 @@ You can also create record types with mutable properties and fields:
 While records can be mutable, they are primarily intended for supporting immutable data models. The record type offers the following features:
 
 * [Concise syntax for creating a reference type with immutable properties](#positional-syntax-for-property-definition)
-* Built-in behavior useful for a data-centric reference type:
+* Behavior useful for a data-centric reference type:
   * [Value equality](#value-equality)
   * [Concise syntax for nondestructive mutation](#nondestructive-mutation)
   * [Built-in formatting for display](#built-in-formatting-for-display)
 * [Support for inheritance hierarchies](#inheritance)
 
-You can also use [structure types](../language-reference/builtin-types/struct.md) to design data-centric types that provide value equality and little or no behavior. But for relatively large data models, structure types have some disadvantages:
+You can use [structure types](../language-reference/builtin-types/struct.md) to design data-centric types that provide value equality and little or no behavior. But for relatively large data models, structure types have some disadvantages:
 
 * They don't support inheritance.
 * They're less efficient at determining value equality. For value types, the <xref:System.ValueType.Equals%2A?displayProperty=nameWithType> method uses reflection to find all fields. For records, the compiler generates the `Equals` method. In practice, the implementation of value equality in records is measurably faster.
 * They use more memory in some scenarios, since every instance has a complete copy of all of the data. Record types are [reference types](../language-reference/builtin-types/reference-types.md), so a record instance contains only a reference to the data.
 
-## Positional syntax for property definition
+### Positional syntax for property definition
 
 You can use positional parameters to declare properties of a record and to initialize the property values when you create an instance:
 
@@ -64,9 +65,9 @@ You can use positional parameters to declare properties of a record and to initi
 
 When you use the positional syntax for property definition, the compiler creates:
 
-* A public init-only auto-implemented property for each positional parameter provided in the record declaration. An [init-only](../../whats-new/csharp-9.md#init-only-setters) property can only be set in the constructor or by using a property initializer.
+* A public init-only auto-implemented property for each positional parameter provided in the record declaration. An [init-only](../language-reference/keywords/init.md) property can only be set in the constructor or by using a property initializer.
 * A primary constructor whose parameters match the positional parameters on the record declaration.
-* A `Deconstruct` method with an `out` parameter for each positional parameter provided in the record declaration. This method is provided only if there are two or more positional parameters. The method deconstructs properties defined by using positional syntax; it ignores properties that are defined by using standard property syntax.
+* A `Deconstruct` method with an `out` parameter for each positional parameter provided in the record declaration.
 
 For more information, see [Positional syntax](../language-reference/builtin-types/record.md#positional-syntax-for-property-definition) in the C# language reference article about records.
 
@@ -84,7 +85,7 @@ Value equality means that two variables of a record type are equal if the types 
 
 The following example illustrates value equality of record types:
 
-:::code language="csharp" source="snippets/shared/RecordType.cs" id="Equality":::
+:::code language="csharp" source="../language-reference/builtin-types/snippets/shared/RecordType.cs" id="Equality":::
 
 In `class` types, you could manually override equality methods and operators to achieve value equality, but developing and testing that code would be time-consuming and error-prone. Having this functionality built-in prevents bugs that would result from forgetting to update custom override code when properties or fields are added or changed.
 
@@ -94,7 +95,7 @@ For more information, see [Value equality](../language-reference/builtin-types/r
 
 If you need to mutate immutable properties of a record instance, you can use a `with` expression to achieve *nondestructive mutation*. A `with` expression makes a new record instance that is a copy of an existing record instance, with specified properties and fields modified. You use [object initializer](../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify the values to be changed, as shown in the following example:
 
-:::code language="csharp" source="snippets/shared/RecordType.cs" id="WithExpressions":::
+:::code language="csharp" source="../language-reference/builtin-types/snippets/shared/RecordType.cs" id="WithExpressions":::
 
 For more information, see [Nondestructive mutation](../language-reference/builtin-types/record.md#nondestructive-mutation) in the C# language reference article about records.
 
@@ -118,17 +119,17 @@ A record can inherit from another record. However, a record can't inherit from a
 
 The following example illustrates inheritance with positional property syntax:
 
-:::code language="csharp" source="snippets/shared/RecordType.cs" id="PositionalInheritance":::
+:::code language="csharp" source="../language-reference/builtin-types/snippets/shared/RecordType.cs" id="PositionalInheritance":::
 
 For two record variables to be equal, the run-time type must be equal. The types of the containing variables might be different. This is illustrated in the following code example:
 
-:::code language="csharp" source="snippets/shared/RecordType.cs" id="InheritanceEquality":::
+:::code language="csharp" source="../language-reference/builtin-types/snippets/shared/RecordType.cs" id="InheritanceEquality":::
 
-In the example, all instances have the same properties and the same property values. But `student == teacher` returns `False` although both are `Person`-type variables, and `student == student2` returns `True` although one is a `Person` variable and one is a `Student` variable.
+In the example, all instances have the same properties and the same property values. But `student == teacher` returns `False` although both are `Person`-type variables. And `student == student2` returns `True` although one is a `Person` variable and one is a `Student` variable.
 
 All public properties and fields of both derived and base types are included in the `ToString` output, as shown in the following example:
 
-:::code language="csharp" source="snippets/shared/RecordType.cs" id="ToStringInheritance":::
+:::code language="csharp" source="../language-reference/builtin-types/snippets/shared/RecordType.cs" id="ToStringInheritance":::
 
 For more information, see [Inheritance](../language-reference/builtin-types/record.md#inheritance) in the C# language reference article about records.
 
@@ -152,6 +153,8 @@ now.TemperatureInCelsius = 18;
 ```
 
 Init only setters can be useful to set base class properties from derived classes. They can also set derived properties through helpers in a base class. Positional records declare properties using init only setters. Those setters are used in with-expressions. You can declare init only setters for any `class`, `struct`, or `record` you define.
+
+For more information, see [init (C# Reference)](../language-reference/keywords/init.md).
 
 ## Top-level statements
 
@@ -219,6 +222,8 @@ if (e is not null)
 ```
 
 Any of these patterns can be used in any context where patterns are allowed: `is` pattern expressions, `switch` expressions, nested patterns, and the pattern of a `switch` statement's `case` label.
+
+For more information, see [Patterns (C# reference)](../language-reference/operators/patterns.md).
 
 ## Performance and interop
 

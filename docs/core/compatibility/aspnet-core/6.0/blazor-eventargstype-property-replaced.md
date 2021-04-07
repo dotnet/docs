@@ -13,7 +13,7 @@ Starting in ASP.NET Core 6.0, the <xref:Microsoft.AspNetCore.Components.RenderTr
 
 ## Version introduced
 
-6.0
+ASP.NET Core 6.0
 
 ## Old behavior
 

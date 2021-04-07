@@ -52,7 +52,7 @@ By convention, extension methods on `ILoggingBuilder` are used to register the c
 
 :::code language="csharp" source="snippets/configuration/console-custom-logging/Extensions/ColorConsoleLoggerExtensions.cs":::
 
-Running this simple application will render similar color output to the console window:
+Running this simple application will render color output to the console window similar to the following image:
 
 :::image type="content" source="media/color-console-logger.png" alt-text="Color console logger sample output":::
 

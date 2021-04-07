@@ -162,10 +162,10 @@ public static int SumPositiveNumbers(IEnumerable<object> sequence)
 }
 ```
 
-- `case 0:` is the familiar constant pattern.
-- `case IEnumerable<int> childSequence:` is a type pattern.
-- `case int n when n > 0:` is a type pattern with an additional `when` condition.
-- `case null:` is the null pattern.
+- `case 0:` is a [constant pattern](../language-reference/operators/patterns.md#constant-pattern).
+- `case IEnumerable<int> childSequence:` is a [declaration pattern](../language-reference/operators/patterns.md#declaration-and-type-patterns).
+- `case int n when n > 0:` is a declaration pattern with an additional `when` condition.
+- `case null:` is the `null` constant pattern.
 - `default:` is the familiar default case.
 
 Beginning with C# 7.1, the pattern expression for `is` and the `switch` type pattern may have the type of a generic type parameter. This can be most useful when checking types that may be either `struct` or `class` types, and you want to avoid boxing.

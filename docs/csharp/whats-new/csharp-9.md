@@ -16,7 +16,7 @@ C# 9.0 adds the following features and enhancements to the C# language:
   - Function pointers
   - Suppress emitting localsinit flag
 - [Fit and finish features](#fit-and-finish-features)
-  - Target-typed new expressions
+  - Target-typed `new` expressions
   - static anonymous functions
   - Target-typed conditional expressions
   - Covariant return types

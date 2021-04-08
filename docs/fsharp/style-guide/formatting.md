@@ -556,6 +556,38 @@ type Volume =
 | ImperialPint of float
 ```
 
+If there is a single short union you can omit the leading `|`.
+
+```fsharp
+type Address = Address of string
+```
+
+For a longer or multiline union, keep the `|`.
+
+```fsharp
+[<NoEquality; NoComparison>]
+type SynBinding =
+    SynBinding of
+        accessibility: SynAccess option *
+        kind: SynBindingKind *
+        mustInline: bool *
+        isMutable: bool *
+        attributes: SynAttributes *
+        xmlDoc: PreXmlDoc *
+        valData: SynValData *
+        headPat: SynPat *
+        returnInfo: SynBindingReturnInfo option *
+        expr: SynExpr *
+        range: range *
+        seqPoint: DebugPointAtBinding
+```
+
+```fsharp
+type Foobar =
+    /// Code comment
+    | Foobar of int
+```
+
 ## Formatting discriminated unions
 
 Use a space before parenthesized/tupled parameters to discriminated union cases:

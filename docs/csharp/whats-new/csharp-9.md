@@ -192,6 +192,8 @@ if (e is not null)
 
 Any of these patterns can be used in any context where patterns are allowed: `is` pattern expressions, `switch` expressions, nested patterns, and the pattern of a `switch` statement’s `case` label.
 
+For more information, see the [Relational patterns](../language-reference/operators/patterns.md#relational-patterns) and [Logical patterns](../language-reference/operators/patterns.md#logical-patterns) sections of the [Patterns](../language-reference/operators/patterns.md) article.
+
 ## Performance and interop
 
 Three new features improve support for native interop and low-level libraries that require high performance: native sized integers, function pointers, and omitting the `localsinit` flag.

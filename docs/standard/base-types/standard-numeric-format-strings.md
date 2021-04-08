@@ -1,7 +1,7 @@
 ---
 title: Standard numeric format strings
 description: In this article, learn to use standard numeric format strings to format common numeric types into text representations in .NET.
-ms.date: 02/26/2021
+ms.date: 04/08/2021
 ms.topic: reference
 dev_langs:
   - "csharp"
@@ -251,6 +251,9 @@ The following example formats assorted floating-point values with the number for
 [!code-cpp[Formatting.Numeric.Standard#6](../../../samples/snippets/cpp/VS_Snippets_CLR/Formatting.Numeric.Standard/cpp/Standard.cpp#6)]
 [!code-csharp[Formatting.Numeric.Standard#6](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/Standard.cs#6)]
 [!code-vb[Formatting.Numeric.Standard#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/Standard.vb#6)]
+
+> [!IMPORTANT]
+> The format for a specific culture may change over time. Operating system settings, user settings, environment variables, and changes to .NET itself, may affect the format of a specific culture. Starting with .NET 5.0, .NET tries to unify cultural formats across platforms. For more information, see [.NET globalization and ICU](../globalization-localization/globalization-icu.md).
 
 <a name="PFormatString"></a>
 

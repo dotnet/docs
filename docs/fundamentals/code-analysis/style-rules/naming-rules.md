@@ -129,9 +129,9 @@ The order in which naming rules are defined in an EditorConfig file doesn't matt
 
 If you don't specify any custom naming rules, the following default styles are used:
 
-- For classes, structs, enumerations, properties, methods, and events with `public`, `private`, `internal`, `protected`, or `protected_internal` accessibility, the default naming style is Pascal case.
+- For classes, structs, enumerations, properties, methods, and events with `public`, `private`, `internal`, `protected`, `private_protected`, or `protected_internal` accessibility, the default naming style is Pascal case.
 
-- For interfaces with `public`, `private`, `internal`, `protected`, or `protected_internal` accessibility, the default naming style is Pascal case with a required prefix of **I**.
+- For interfaces with `public`, `private`, `internal`, `protected`, `private_protected`, or `protected_internal` accessibility, the default naming style is Pascal case with a required prefix of **I**.
 
 ## <a name="rule-id-ide1006-naming-rule-violation"></a>Code Rule ID: `IDE1006 (Naming rule violation)`
 

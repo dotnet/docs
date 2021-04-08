@@ -25,6 +25,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
 |[nuint](../builtin-types/nint-nuint.md)|Defines a native-sized unsigned integer data type.|  
 |[or](../operators/patterns.md#logical-patterns)|Creates a pattern that matches when either of nested patterns matches.|  
 |[partial](./partial-type.md)|Defines partial classes, structs, and interfaces throughout the same compilation unit.|  
+|[record](../builtin-types/record.md)|Used to define a record type.|  
 |[remove](./remove.md)|Defines a custom event accessor that is invoked when client code unsubscribes from the event.|  
 |[set](./set.md)|Defines an accessor method for a property or an indexer.|  
 |[value](./value.md)|Used to set accessors and to add or remove event handlers.|  

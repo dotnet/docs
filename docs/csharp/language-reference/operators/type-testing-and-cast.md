@@ -56,19 +56,11 @@ For information about C# conversions, see the [Conversions](~/_csharplang/spec/c
 
 ### Type testing with pattern matching
 
-Beginning with C# 7.0, the `is` operator also tests an expression result against a pattern. In particular, it supports the type pattern in the following form:
+Beginning with C# 7.0, the `is` operator also tests an expression result against a pattern. The following example shows how to use a [declaration pattern](patterns.md#declaration-and-type-patterns) to check the runtime type of an expression:
 
-```csharp
-E is T v
-```
+[!code-csharp-interactive[is with declaration pattern](snippets/shared/TypeTestingAndConversionOperators.cs#IsDeclarationPattern)]
 
-where `E` is an expression that returns a value, `T` is the name of a type or a type parameter, and `v` is a new local variable of type `T`. If the result of `E` is non-null and can be converted to `T` by a reference, boxing, or unboxing conversion, the `E is T v` expression returns `true` and the converted value of the result of `E` is assigned to variable `v`.
-
-The following example demonstrates the usage of the `is` operator with the type pattern:
-
-[!code-csharp-interactive[is with type pattern](snippets/shared/TypeTestingAndConversionOperators.cs#IsTypePattern)]
-
-For more information about the type pattern and other supported patterns, see [Pattern matching with is](../keywords/is.md#pattern-matching-with-is).
+For information about the supported patterns, see [Patterns](patterns.md).
 
 ## as operator
 

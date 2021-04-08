@@ -556,7 +556,7 @@ type Volume =
 | ImperialPint of float
 ```
 
-If there is a single short union, you can omit the leading `|`.
+When there is a single short union, you can omit the leading `|`.
 
 ```fsharp
 type Address = Address of string
@@ -567,7 +567,7 @@ For a longer or multiline union, keep the `|`.
 ```fsharp
 [<NoEquality; NoComparison>]
 type SynBinding =
-    SynBinding of
+    | SynBinding of
         accessibility: SynAccess option *
         kind: SynBindingKind *
         mustInline: bool *
@@ -581,6 +581,8 @@ type SynBinding =
         range: range *
         seqPoint: DebugPointAtBinding
 ```
+
+You can also use triple-slash `///` comments.
 
 ```fsharp
 type Foobar =

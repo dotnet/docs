@@ -556,7 +556,7 @@ type Volume =
 | ImperialPint of float
 ```
 
-If there is a single short union you can omit the leading `|`.
+If there is a single short union, you can omit the leading `|`.
 
 ```fsharp
 type Address = Address of string

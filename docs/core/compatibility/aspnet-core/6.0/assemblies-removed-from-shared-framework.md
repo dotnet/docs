@@ -19,7 +19,7 @@ In addition, the following assemblies were removed from the ASP.NET Core runtime
 
 ## Version introduced
 
-6.0
+ASP.NET Core 6.0
 
 ## Old behavior
 
@@ -28,6 +28,8 @@ Applications could use APIs provided by these libraries by referencing the [Micr
 ## New behavior
 
 If you use APIs from the affected assemblies without having a [PackageReference](../../../project-sdk/msbuild-props.md#packagereference) in your project file, you might see run-time errors. For example, an application that uses reflection to access APIs from one of these assemblies without adding an explicit reference to the package will have run-time errors. The `PackageReference` ensures that the assemblies are present as part of the application output.
+
+For discussion, see <https://github.com/dotnet/aspnetcore/issues/31007>.
 
 ## Reason for change
 

@@ -25,7 +25,10 @@ Both views and application types are included in a single *AppName.dll* assembly
 
 ## Reason for change
 
-Removing the two-step compilation process improves build performance for applications that use Razor views. This change also allows Razor views to participate in the "hot reload" experience for Visual Studio.
+Removing the two-step compilation process:
+
+ * Improves build performance for applications that use Razor views.
+ * Allows Razor views to participate in the "hot reload" experience for Visual Studio.
 
 ## Recommended action
 

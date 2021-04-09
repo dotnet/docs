@@ -1,7 +1,7 @@
 ---
 title: "Implement a Dispose method"
 description: In this article, learn to implement the Dispose method, which releases unmanaged resources used by your code in .NET.
-ms.date: 09/08/2020
+ms.date: 04/07/2021
 dev_langs:
   - "csharp"
   - "vb"
@@ -20,6 +20,8 @@ The [.NET garbage collector](index.md) does not allocate or release unmanaged me
 To help ensure that resources are always cleaned up appropriately, a <xref:System.IDisposable.Dispose%2A> method should be idempotent, such that it is callable multiple times without throwing an exception. Furthermore, subsequent invocations of <xref:System.IDisposable.Dispose%2A> should do nothing.
 
 The code example provided for the <xref:System.GC.KeepAlive%2A?displayProperty=nameWithType> method shows how garbage collection can cause a finalizer to run, while an unmanaged reference to the object or its members is still in use. It may make sense to utilize <xref:System.GC.KeepAlive%2A?displayProperty=nameWithType> to make the object ineligible for garbage collection from the start of the current routine to the point where this method is called.
+
+[!INCLUDE [disposables-and-dependency-injection](includes/disposables-and-dependency-injection.md)]
 
 ## Safe handles
 
@@ -145,6 +147,7 @@ The following example illustrates the dispose pattern for a derived class, `Disp
 
 ## See also
 
+- [Disposal of services](../../core/extensions/dependency-injection-guidelines.md#disposal-of-services)
 - <xref:System.GC.SuppressFinalize%2A>
 - <xref:System.IDisposable>
 - <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>

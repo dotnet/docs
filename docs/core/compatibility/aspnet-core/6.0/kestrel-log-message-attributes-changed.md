@@ -10,7 +10,7 @@ Kestrel log messages have associated IDs and names. These attributes uniquely id
 
 ## Version introduced
 
-6.0
+ASP.NET Core 6.0
 
 ## Old behavior
 

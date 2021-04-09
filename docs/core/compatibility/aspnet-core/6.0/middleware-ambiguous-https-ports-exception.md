@@ -12,7 +12,7 @@ For discussion, see GitHub issue [dotnet/aspnetcore#29222](https://github.com/do
 
 ## Version introduced
 
-6.0
+ASP.NET Core 6.0
 
 ## Old behavior
 

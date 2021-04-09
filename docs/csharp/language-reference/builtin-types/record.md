@@ -42,7 +42,7 @@ You can use positional parameters to declare properties of a record and to initi
 
 When you use the positional syntax for property definition, the compiler creates:
 
-* A public init-only auto-implemented property for each positional parameter provided in the record declaration. An [init-only](../../whats-new/csharp-9.md#init-only-setters) property can only be set in the constructor or by using a property initializer.
+* A public init-only auto-implemented property for each positional parameter provided in the record declaration. An [init-only](../keywords/init.md) property can only be set in the constructor or by using a property initializer.
 * A primary constructor whose parameters match the positional parameters on the record declaration.
 * A `Deconstruct` method with an `out` parameter for each positional parameter provided in the record declaration. This method is provided only if there are two or more positional parameters. The method deconstructs properties defined by using positional syntax; it ignores properties that are defined by using standard property syntax.
 

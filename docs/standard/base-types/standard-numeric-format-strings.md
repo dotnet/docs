@@ -1,7 +1,7 @@
 ---
 title: Standard numeric format strings
 description: In this article, learn to use standard numeric format strings to format common numeric types into text representations in .NET.
-ms.date: 02/26/2021
+ms.date: 04/08/2021
 ms.topic: reference
 dev_langs:
   - "csharp"
@@ -49,6 +49,8 @@ Standard numeric format strings are supported by:
 ## Standard format specifiers
 
 The following table describes the standard numeric format specifiers and displays sample output produced by each format specifier. See the [Notes](#notes) section for additional information about using standard numeric format strings, and the [Code example](#code-example) section for a comprehensive illustration of their use.
+
+> The result of a formatted string for a specific culture might differ from the following examples. Operating system settings, user settings, environment variables, and the .NET version you're using can all affect the format. For example, starting with .NET 5, .NET tries to unify cultural formats across platforms. For more information, see [.NET globalization and ICU](../globalization-localization/globalization-icu.md).
 
 |Format specifier|Name|Description|Examples|
 |----------------------|----------|-----------------|--------------|

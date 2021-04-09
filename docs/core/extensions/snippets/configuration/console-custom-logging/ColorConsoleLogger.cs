@@ -14,7 +14,7 @@ public class ColorConsoleLogger : ILogger
     public IDisposable BeginScope<TState>(TState state) => default;
 
     public bool IsEnabled(LogLevel logLevel) =>
-        logLevel == _config.LogLevel;
+        _config.LogLevels.ContainsKey(logLevel);
 
     public void Log<TState>(
         LogLevel logLevel,
@@ -32,7 +32,7 @@ public class ColorConsoleLogger : ILogger
         {
             ConsoleColor originalColor = Console.ForegroundColor;
 
-            Console.ForegroundColor = _config.Color;
+            Console.ForegroundColor = _config.LogLevels[logLevel];
             Console.WriteLine($"[{eventId.Id,2}: {logLevel,-12}]");
             
             Console.ForegroundColor = originalColor;

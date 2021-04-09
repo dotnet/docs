@@ -53,7 +53,7 @@ namespace attributes
         {
             if (value is null) throw new ArgumentNullException(valueExpression);
         }
-        // </ThrownWhenNull>
+        // </ThrowWhenNull>
 
         // <ExtractComponent>
         string GetTopLevelDomainFromFullUrl(string url)
@@ -84,7 +84,7 @@ namespace attributes
             set => _screenName = value ?? GenerateRandomScreenName();
         }
         private string _screenName = GenerateRandomScreenName();
-        // <T/AllowNullableProperty>
+        // </AllowNullableProperty>
         private static string GenerateRandomScreenName() => throw new NotImplementedException();
 
         // <DisallowNullProperty>

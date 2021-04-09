@@ -1,6 +1,6 @@
 ---
 title: "C# Reserved attributes: Nullable static analysis"
-ms.date: 02/02/2021
+ms.date: 04/09/2021
 description: These attributes are interpreted by the compiler to provide better static analysis for nullable and non-nullable reference types.
 ---
 # Reserved attributes contribute to the compiler's null state static analysis
@@ -103,11 +103,7 @@ You can't specify that the return value is `T?`. The method returns `null` when 
 
 The preceding code informs callers that the contract implies a non-nullable type, but the return value *may* actually be null.  Use the `MaybeNull` attribute when your API should be a non-nullable type, typically a generic type parameter, but there may be instances where `null` would be returned.
 
-TODO: REPLACE WITH THROW HELPER EXAMPLE
-
-CODE IS REPLACED
-
-You can also specify that a return value or an `out` or `ref` argument isn't null even though the type is a nullable reference type. Consider a method that ensures an array is large enough to hold a number of elements. If the argument doesn't have capacity, the routine would allocate a new array and copy all the existing elements into it. If the argument is `null`, the routine would allocate new storage. If there's sufficient capacity, the routine does nothing:
+You can also specify that a return value or an argument isn't null even though the type is a nullable reference type. The following method is a helper method that throws if its first argument is `null`:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="ThrowWhenNull" :::
 
@@ -115,11 +111,11 @@ You could call this routine as follows:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="TestThrowHelper" :::
 
-After enabling null reference types, you want to ensure that the preceding code compiles without warnings. When the method returns, the `storage` argument is guaranteed to be not null. However, it's acceptable to call `EnsureCapacity` with a null reference. You can make `storage` a nullable reference type, and add the `NotNull` post-condition to the parameter declaration:
+After enabling null reference types, you want to ensure that the preceding code compiles without warnings. When the method returns, the `value` argument is guaranteed to be not null. However, it's acceptable to call `ThrowWhenNull` with a null reference. You can make `value` a nullable reference type, and add the `NotNull` post-condition to the parameter declaration:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="NotNullThrowHelper" :::
 
-The preceding code expresses the existing contract clearly: Callers can pass a variable with the `null` value, but the return value is guaranteed to never be null. The `NotNull` attribute is most useful for `ref` and `out` arguments where `null` may be passed as an argument, but that argument is guaranteed to be not null when the method returns.
+The preceding code expresses the existing contract clearly: Callers can pass a variable with the `null` value, but the argument is guaranteed to never be null if the method returns without throwing an exception.
 
 You specify unconditional postconditions using the following attributes:
 

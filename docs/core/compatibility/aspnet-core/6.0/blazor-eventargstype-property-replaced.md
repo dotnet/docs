@@ -3,7 +3,7 @@ title: "Breaking change: Blazor: WebEventDescriptor.EventArgsType property repla
 description: "Learn about the breaking change in ASP.NET Core 6.0 where the WebEventDescriptor.EventArgsType property is replaced by the EventName property."
 ms.author: scaddie
 ms.date: 02/24/2021
-no-loc: [Blazor]
+no-loc: [ Blazor ]
 ---
 # Blazor: :::no-loc text="WebEventDescriptor.EventArgsType"::: property replaced
 

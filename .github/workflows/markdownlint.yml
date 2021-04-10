@@ -7,12 +7,6 @@ on:
       - ".markdownlint.json"
       - ".github/workflows/markdownlint.yml"
       - ".github/workflows/markdownlint-problem-matcher.json"
-  pull_request:
-    paths:
-      - "**/*.md"
-      - ".markdownlint.json"
-      - ".github/workflows/markdownlint.yml"
-      - ".github/workflows/markdownlint-problem-matcher.json"
 
 jobs:
   lint:

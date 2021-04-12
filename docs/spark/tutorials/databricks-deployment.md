@@ -158,9 +158,9 @@ Next, you publish the *mySparkApp* created in the [.NET for Apache Spark - Get S
     cd <path-to-db-init-and-install-worker>
     databricks fs cp db-init.sh dbfs:/spark-dotnet/db-init.sh
     ```
+
 > [!Note]
 > You can find more information on how to submit a .NET for Apache Spark job to Databricks in [this article](https://docs.microsoft.com/dotnet/spark/how-to-guides/databricks-deploy-methods).
-
 
 ## Upload files
 

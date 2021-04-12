@@ -46,7 +46,7 @@ The analyzer with code fix template creates five projects:
 > [!TIP]
 > When you run your analyzer, you start a second copy of Visual Studio. This second copy uses a different registry hive to store settings. That enables you to differentiate the visual settings in the two copies of Visual Studio. You can pick a different theme for the experimental run of Visual Studio. In addition, don't roam your settings or login to your Visual Studio account using the experimental run of Visual Studio. That keeps the settings different.
 >
-> The experimental hive includes not only the analyzer under development, but also any previous analyzers opened in it. To reset the experimental hive, you need to run **Reset the Visual Studio 2019 Experimental Instance** installed with Visual Studio that you can find in the start menu.
+> The hive includes not only the analyzer under development, but also any previous analyzers opened. To reset Roslyn hive, you need to manually delete it from *%LocalAppData%\\Microsoft\\VisualStudio*. The folder name of Roslyn hive will end in `Roslyn`, for example, `16.0_9ae182f9Roslyn`. Note that you may need to clean the solution and rebuild it after deleting the hive.
 
 In the second Visual Studio instance that you just started, create a new C# Console Application project (any target framework will work -- analyzers work at the source level.) Hover over the token with a wavy underline, and the warning text provided by an analyzer appears.
 

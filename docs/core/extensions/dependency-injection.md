@@ -3,7 +3,7 @@ title: Dependency injection in .NET
 description: Learn how .NET implements dependency injection and how to use it.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: overview
 ---
 
@@ -132,16 +132,17 @@ The `ConfigureServices` method registers services that the app uses, including p
 
 The following table lists a small sample of these framework-registered services:
 
-| Service Type                                                                       | Lifetime  |
-|------------------------------------------------------------------------------------|-----------|
-| <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime>                       | Singleton |
-| <xref:Microsoft.Extensions.Logging.ILogger%601?displayProperty=fullName>           | Singleton |
-| <xref:Microsoft.Extensions.Logging.ILoggerFactory?displayProperty=fullName>        | Singleton |
-| <xref:Microsoft.Extensions.ObjectPool.ObjectPoolProvider?displayProperty=fullName> | Singleton |
-| <xref:Microsoft.Extensions.Options.IConfigureOptions%601?displayProperty=fullName> | Transient |
-| <xref:Microsoft.Extensions.Options.IOptions%601?displayProperty=fullName>          | Singleton |
-| <xref:System.Diagnostics.DiagnosticListener?displayProperty=fullName>              | Singleton |
-| <xref:System.Diagnostics.DiagnosticSource?displayProperty=fullName>                | Singleton |
+| Service Type                                                                                  | Lifetime  |
+|-----------------------------------------------------------------------------------------------|-----------|
+| <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory?displayProperty=fullName> | Singleton |
+| <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime>                                  | Singleton |
+| <xref:Microsoft.Extensions.Logging.ILogger%601?displayProperty=fullName>                      | Singleton |
+| <xref:Microsoft.Extensions.Logging.ILoggerFactory?displayProperty=fullName>                   | Singleton |
+| <xref:Microsoft.Extensions.ObjectPool.ObjectPoolProvider?displayProperty=fullName>            | Singleton |
+| <xref:Microsoft.Extensions.Options.IConfigureOptions%601?displayProperty=fullName>            | Transient |
+| <xref:Microsoft.Extensions.Options.IOptions%601?displayProperty=fullName>                     | Singleton |
+| <xref:System.Diagnostics.DiagnosticListener?displayProperty=fullName>                         | Singleton |
+| <xref:System.Diagnostics.DiagnosticSource?displayProperty=fullName>                           | Singleton |
 
 ## Service lifetimes
 

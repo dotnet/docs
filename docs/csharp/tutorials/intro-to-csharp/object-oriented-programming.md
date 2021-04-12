@@ -5,12 +5,12 @@ ms.date: 09/30/2020
 ---
 # Object-Oriented programming (C#)
 
-C# is an object-oriented language. Four of the key techniques used in object-oriented programming are:
+C# is an object-oriented programming language. The four basic principles of object-oriented programming are:
 
-- *Encapsulation* means that a group of related properties, methods, and other members are treated as a single unit or object.
-- *Abstraction* means hiding the unnecessary details from type consumers.
-- *Inheritance* describes the ability to create new classes based on an existing class.
-- *Polymorphism* means that you can have multiple classes that can be used interchangeably, even though each class implements the same properties or methods in different ways.
+- *Encapsulation* Ability to organize internal complexities of a system into single objects.
+- *Abstraction* Ability to access or restrict access to properties, methods, or members of something encapsulated.
+- *Inheritance* Ability to create new abstractions based on existing abstractions.
+- *Polymorphism* Ability to implement inherited properties or methods in different ways across multiple abstractions.
 
 In the preceding tutorial, [introduction to classes](introduction-to-classes.md) you saw both *abstraction* and *encapsulation*. The `BankAccount` class provided an abstraction for the concept of a bank account. You could modify its implementation without affecting any of the code that used the `BankAccount` class. Both the `BankAccount` and `Transaction` classes provide encapsulation of the components needed to describe those concepts in code.
 

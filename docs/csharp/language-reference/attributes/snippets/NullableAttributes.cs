@@ -187,7 +187,8 @@ namespace attributes
             if (url is null)
             {
                 return null;
-            } else
+            }
+            else
             {
                 return ".com";
             }

@@ -9,7 +9,7 @@ Modern .NET supports multiple operating systems and devices. It's important for 
 
 ## .NET and .NET Standard targets
 
-.NET and .NET Standard targets are the best way to add cross-platform suppor to a .NET library.
+.NET and .NET Standard targets are the best way to add cross-platform support to a .NET library.
 
 * [.NET Standard](../net-standard.md) is a specification of .NET APIs that are available on all .NET implementations. Targeting .NET Standard lets you produce libraries that are constrained to use APIs that are in a given version of .NET Standard, which means it's usable by all platforms that implement that version of .NET Standard.
 * .NET 5 is an implementation of .NET that Microsoft is actively developing. It's a single product with a uniform set of capabilities and APIs that can be used for Windows desktop apps and cross-platform console apps, cloud services, and websites.

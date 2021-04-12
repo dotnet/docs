@@ -52,7 +52,7 @@ In the preceding code, the `AddMyLibraryService`:
 
 - Extends an instance of <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>
 - Defines an <xref:Microsoft.Extensions.Configuration.IConfiguration> parameter `namedConfigurationSection`
-- Calls <xref:Microsoft.Extensions.Options.ConfigureOptions%601.Configure%2A> passing the generic type parameter of `LibraryOptions` and the `namedConfigurationSection` instance to configure
+- Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,Microsoft.Extensions.Configuration.IConfiguration)> passing the generic type parameter of `LibraryOptions` and the `namedConfigurationSection` instance to configure
 
 Consumers in this pattern provide the scoped `IConfiguration` instance of the named section:
 

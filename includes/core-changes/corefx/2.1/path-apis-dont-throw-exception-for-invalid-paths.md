@@ -44,7 +44,7 @@ If your code relied on these APIs to check for invalid characters, you can add a
 - <xref:System.IO.Directory.SetLastAccessTimeUtc(System.String,System.DateTime)?displayProperty=fullName>
 - <xref:System.IO.Directory.SetLastWriteTime(System.String,System.DateTime)?displayProperty=fullName>
 - <xref:System.IO.Directory.SetLastWriteTimeUtc(System.String,System.DateTime)?displayProperty=fullName>
-- <xref:System.IO.DirectoryInfo.%23ctor(System.String)>
+- [System.IO.DirectoryInfo ctor](xref:System.IO.DirectoryInfo.%23ctor(System.String))
 - <xref:System.IO.Directory.GetDirectories%2A?displayProperty=fullName>
 - <xref:System.IO.Directory.GetFiles%2A?displayProperty=fullName>
 - <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A?displayProperty=fullName>
@@ -86,10 +86,10 @@ If your code relied on these APIs to check for invalid characters, you can add a
 - <xref:System.IO.File.WriteAllLines%2A?displayProperty=fullName>
 - <xref:System.IO.File.WriteAllLinesAsync%2A?displayProperty=fullName>
 - <xref:System.IO.File.WriteAllText%2A?displayProperty=fullName>
-- <xref:System.IO.FileInfo.%23ctor(System.String)>
+- [System.IO.FileInfo ctor](xref:System.IO.FileInfo.%23ctor(System.String))
 - <xref:System.IO.FileInfo.CopyTo%2A?displayProperty=fullName>
 - <xref:System.IO.FileInfo.MoveTo%2A?displayProperty=fullName>
-- <xref:System.IO.FileStream.%23ctor%2A>
+- [System.IO.FileStream ctor](xref:System.IO.FileStream.%23ctor%2A)
 - <xref:System.IO.Path.GetFullPath(System.String)?displayProperty=fullName>
 - <xref:System.IO.Path.IsPathRooted(System.String)?displayProperty=fullName>
 - <xref:System.IO.Path.GetPathRoot(System.String)?displayProperty=fullName>

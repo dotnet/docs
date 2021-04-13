@@ -3,7 +3,7 @@ title: 'Tutorial: Detect objects in images with Model Builder'
 description: This tutorial illustrates how to build an object detection model using ML.NET Model Builder and Azure ML to detect stop signs in images.
 author: briacht
 ms.author: brachtma
-ms.date: 03/12/2021
+ms.date: 04/13/2021
 ms.topic: tutorial
 ms.custom: mlnet-tooling
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to detect stop signs in images using Model Builder.
@@ -11,7 +11,7 @@ ms.custom: mlnet-tooling
 
 # Tutorial: Detect stop signs in images with Model Builder
 
-Learn how to build an object detection model using ML.NET Model Builder and Azure ML to detect and locate stop signs in images.
+Learn how to build an object detection model using ML.NET Model Builder and Azure Machine Learning to detect and locate stop signs in images.
 
 In this tutorial, you learn how to:
 
@@ -34,7 +34,9 @@ For a list of prerequisites and installation instructions, visit the [Model Buil
 
 ## Model Builder object detection overview
 
-Object detection is a computer vision problem. While closely related to image classification, object detection performs image classification at a more granular scale. Object detection both locates _and_ categorizes entities within images. Use object detection when images contain multiple objects of different types.
+Object detection is a computer vision problem. While closely related to image classification, object detection performs image classification at a more granular scale. Object detection both locates _and_ categorizes entities within images. Object detection models are commonly trained using deep learning and neural networks. See [Deep learning vs machine learning](/azure/machine-learning/concept-deep-learning-vs-machine-learning) for more information.
+
+Use object detection when images contain multiple objects of different types. 
 
 ![Screenshots showing Image Classification versus Object Classification.](./media/object-detection-onnx/img-classification-obj-detection.PNG)
 

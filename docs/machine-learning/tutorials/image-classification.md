@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: ML.NET image classification model from TensorFlow'
 description: Learn how to transfer the knowledge from an existing TensorFlow model into a new ML.NET image classification model. The TensorFlow model was trained to classify images into a thousand categories. The ML.NET model makes use of transfer learning to classify images into fewer broader categories.
-ms.date: 06/30/2020
+ms.date: 04/13/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
 #Customer intent: As a developer, I want to use a pre-trained TensorFlow model with ML.NET so that I can classify images with a small amount of training data.
@@ -64,6 +64,8 @@ Image Classification is a common Machine Learning task that allows us to automat
 > * "220px-Pepperoni_pizza.jpg" Public Domain, <https://commons.wikimedia.org/w/index.php?curid=79505>,
 > * "119px-Nalle_-_a_small_brown_teddy_bear.jpg" By [Jonik](https://commons.wikimedia.org/wiki/User:Jonik) - Self-photographed, CC BY-SA 2.0, <https://commons.wikimedia.org/w/index.php?curid=48166>.
 > * "193px-Broodrooster.jpg" By [M.Minderhoud](https://nl.wikipedia.org/wiki/Gebruiker:Michiel1972) - Own work, CC BY-SA 3.0, <https://commons.wikimedia.org/w/index.php?curid=27403>
+
+See [Deep learning vs. machine learning](/azure/machine-learning/concept-deep-learning-vs-machine-learning) for more information on deep learning and neural networks.
 
 The `Inception model` is trained to classify images into a thousand categories, but for this tutorial, you need to classify images in a smaller category set, and only those categories. Enter the `transfer` part of `transfer learning`. You can transfer the `Inception model`'s ability to recognize and classify images to the new limited categories of your custom image classifier.
 

@@ -41,7 +41,7 @@ HTTP response log entry:
 For request and response content:
 
 - Content stream as text or bytes depending on the Content-Type header.
-     > [!NOTE}
+     > [!NOTE]
      > Content logging is disabled by default. To enable it, set `Diagnostics.IsLoggingContentEnabled` to `true` in `ClientOptions`.
 
 Event logs are output usually at one of these three levels:

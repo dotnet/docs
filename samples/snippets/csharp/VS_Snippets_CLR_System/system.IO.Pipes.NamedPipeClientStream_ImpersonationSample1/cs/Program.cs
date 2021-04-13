@@ -59,6 +59,10 @@ public class PipeClient
     private static void StartClients()
     {
         string currentProcessName = Environment.CommandLine;
+
+        // Remove extra characters when launched from Visual Studio
+        currentProcessName = currentProcessName.Trim('"', ' ');
+
         currentProcessName = Path.ChangeExtension(currentProcessName, ".exe");
         Process[] plist = new Process[numClients];
 

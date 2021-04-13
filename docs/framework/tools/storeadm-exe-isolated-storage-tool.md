@@ -44,7 +44,7 @@ storeadm [/list][/machine][/remove][/roaming][/quiet]
   
  Applications have a choice of saving to one of two stores for a user or to the machine store:  
   
-- The local store exists in a location that is guaranteed not to roam (on Windows 2000 and later) even if user data roaming is enabled for the user.  
+- The local store exists in a location that is guaranteed not to roam, even if user data roaming is enabled for the user.  
   
 - The roaming store exists in a location that is able to roam, but can only do so if roaming is enabled for the user via Windows NT administration.  
   

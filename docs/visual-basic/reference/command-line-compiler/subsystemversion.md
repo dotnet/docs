@@ -35,8 +35,6 @@ The following table lists common subsystem versions of Windows.
 
 |Windows version|Subsystem version|
 |---------------------|-----------------------|
-|Windows 2000|5.00|
-|Windows XP|5.01|
 |Windows Server 2003|5.02|
 |Windows Vista|6.00|
 |Windows 7|6.01|

@@ -10,7 +10,7 @@ ms.custom: mvc, title-hack-0612
 
 Learn how to train a classification model to categorize images using a pre-trained TensorFlow model for image processing.
 
-The TensorFlow model was trained to classify images into a thousand categories. The ML.NET model makes use of part of the TensorFlow model in its pipeline to convert raw images into features or inputs to train a classification model.
+The TensorFlow model was trained to classify images into a thousand categories. Because the TensorFlow model knows how to recognize patterns in images, the ML.NET model can make use of part of the TensorFlow model in its pipeline to convert raw images into features or inputs to train a classification model.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -360,7 +360,7 @@ An ML.NET model pipeline is a chain of estimators. Note that no execution happen
     Image: toaster3.jpg predicted as: appliance with score: 0.9646884
     ```
 
-Congratulations! You've now successfully built a machine learning model for image classification by applying transfer learning to a `TensorFlow` model in ML.NET.
+Congratulations! You've now successfully built a classification model in ML.NET to categorize images by using a pre-trained TensorFlow for image processing.
 
 You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/TransferLearningTF) repository.
 

@@ -22,7 +22,7 @@ Public Key Infrastructure (PKI) is a system of digital certificates, certificati
   
 ### Kerberos Protocol  
 
- The *Kerberos protocol* is a specification for creating a security mechanism that authenticates users on a Windows domain. It allows a user to establish a secure context with other entities within a domain. Windows 2000 and later platforms use the Kerberos protocol by default. Understanding the mechanisms of the system is useful when creating a service that will interact with intranet clients. In addition, since the *Web Services Security Kerberos Binding* is widely published, you can use the Kerberos protocol to communicate with Internet clients (that is, the Kerberos protocol is interoperable). For more information about how the Kerberos protocol is implemented in Windows, see  [Microsoft Kerberos](/windows/win32/secauthn/microsoft-kerberos).  
+ The *Kerberos protocol* is a specification for creating a security mechanism that authenticates users on a Windows domain. It allows a user to establish a secure context with other entities within a domain. Windows uses the Kerberos protocol by default. Understanding the mechanisms of the system is useful when creating a service that will interact with intranet clients. In addition, since the *Web Services Security Kerberos Binding* is widely published, you can use the Kerberos protocol to communicate with Internet clients (that is, the Kerberos protocol is interoperable). For more information about how the Kerberos protocol is implemented in Windows, see  [Microsoft Kerberos](/windows/win32/secauthn/microsoft-kerberos).  
   
 ### X.509 Certificates  
 

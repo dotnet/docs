@@ -32,7 +32,7 @@ ms.assetid: 0200de01-7e2f-45c4-9094-829d61236383
 
 - `href="link"`
 
-  A clickable link to a given URL.
+  A clickable link to a given URL. For example, `<see href="https://github.com">GitHub</see>` produces a clickable link with text :::no-loc text="GitHub"::: that links to `https://github.com`.
 
 - `langword="keyword"`
 

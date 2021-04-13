@@ -124,7 +124,13 @@ Trimming will remove IL that is not statically reachable. Apps that use reflecti
 
 This will include warnings about the entire app, including your own code, library code, and framework code.
 
-## 
+## Roslyn analyzer
+
+Setting `PublishTrimmed` in .NET 6+ will also enable a Roslyn analyzer that shows a _limited_ set of analysis warnings. The analyzer may also be enabled or disabled independently of `PublishTrimmed`.
+
+- `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>`
+
+    Enable a Roslyn analyzer for a subset of trim analysis warnings.
 
 ## Warning versions
 

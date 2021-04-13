@@ -32,11 +32,11 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ### Deep learning
 
-[Deep learning](https://en.wikipedia.org/wiki/Deep_learning) is a subset of Machine Learning, which is revolutionizing areas like Computer Vision and Speech Recognition.
+[Deep learning](https://en.wikipedia.org/wiki/Deep_learning) is a subset of Machine Learning, which is revolutionizing areas like computer vision and speech recognition.
 
 Deep learning models are trained by using large sets of [labeled data](https://en.wikipedia.org/wiki/Labeled_data) and [neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network) that contain multiple learning layers. Deep learning:
 
-* Performs better on some tasks like Computer Vision.
+* Performs better on some tasks like computer vision.
 * Requires huge amounts of training data.
 
 Image classification is a specific classification task that allows us to automatically classify images into categories such as:

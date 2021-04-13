@@ -18,17 +18,23 @@ ms.assetid: 8e157f3f-f220-4fcf-9010-88905b080b18
 
 ## Syntax
 
-```xml
-<seealso cref="member"/>
+```csharp
+/// <seealso cref="member"/>
+// or
+/// <seealso href="link">Link Text</seealso>
 ```
 
 ## Parameters
 
-- cref = " `member`"
+- `cref="member"`
 
   A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML.`member` must appear within double quotation marks (" ").
 
   For information on how to create a cref reference to a generic type, see [cref attribute](./cref-attribute.md).
+
+- `href="link"`
+
+  A clickable link to a given URL.
 
 ## Remarks
 

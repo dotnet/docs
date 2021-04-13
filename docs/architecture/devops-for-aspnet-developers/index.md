@@ -3,7 +3,7 @@ title: DevOps for ASP.NET Core Developers
 author: CamSoper
 description: A guide that provides end-to-end guidance on building a DevOps pipeline for an ASP.NET Core app hosted in Azure.
 ms.author: casoper
-ms.date: 03/30/2021
+ms.date: 04/13/2021
 ms.custom: "devx-track-csharp, mvc, seodec18"
 no-loc: [appsettings.json, "ASP.NET Core Identity", cookie, Cookie, Blazor, "Blazor Server", "Blazor WebAssembly", "Identity", "Let's Encrypt", Razor, SignalR]
 uid: azure/devops/index
@@ -12,9 +12,47 @@ uid: azure/devops/index
 
 [![Cover Image](./media/cover-large.png)](https://aka.ms/devopsbook)
 
-By [Cam Soper](https://twitter.com/camsoper), [Scott Addie](https://twitter.com/scottaddie), and [Colin Dembovsky](https://twitter.com/colindembovsky)
+**EDITION v1.1.0**
+
+Refer [changelog](https://aka.ms/devops-ebook-changelog) for the book updates and community contributions.
 
 This guide is available as a [downloadable PDF e-book](https://aka.ms/devopsbook).
+
+PUBLISHED BY
+
+Microsoft Developer Division, .NET, and Visual Studio product teams
+
+A division of Microsoft Corporation
+
+One Microsoft Way
+
+Redmond, Washington 98052-6399
+
+Copyright &copy; 2021 by Microsoft Corporation
+
+All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
+
+This book is provided "as-is" and expresses the author's views and opinions. The views, opinions, and information expressed in this book, including URL and other Internet website references, may change without notice.
+
+Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.
+
+Microsoft and the trademarks listed at <https://www.microsoft.com> on the "Trademarks" webpage are trademarks of the Microsoft group of companies.
+
+Mac and macOS are trademarks of Apple Inc.
+
+The Docker whale logo is a registered trademark of Docker, Inc. Used by permission.
+
+All other marks and logos are property of their respective owners.
+
+## Credits
+
+Authors:
+
+> [Cam Soper](https://twitter.com/camsoper)
+>
+> [Scott Addie](https://twitter.com/scottaddie)
+>
+> [Colin Dembovsky](https://twitter.com/colindembovsky)
 
 ## Welcome
 

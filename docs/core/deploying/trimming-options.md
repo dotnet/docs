@@ -9,27 +9,47 @@ ms.date: 08/25/2020
 
 The following MSBuild properties and items influence the behavior of [trimmed self-contained deployments](trim-self-contained.md). Some of the options mention `ILLink`, which is the name of the underlying tool that implements trimming. More information about the underlying tool can be found at the [Linker documentation](https://github.com/mono/linker/tree/master/docs).
 
+Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other options are available only in .NET 5 and above.
+
 ## Enable trimming
 
 - `<PublishTrimmed>true</PublishTrimmed>`
 
    Enable trimming during publish, with the default settings defined by the SDK.
 
-When using `Microsoft.NET.Sdk`, this will perform assembly-level trimming of the framework assemblies from the netcoreapp runtime pack. Application code and non-framework libraries are not trimmed. Other SDKs may define different defaults.
+When using `Microsoft.NET.Sdk`, this will trim the framework assemblies from the netcoreapp runtime pack. Application code and non-framework libraries are not trimmed. Other SDKs may define different defaults.
 
 ## Trimming granularity
 
 The following granularity settings control how aggressively unused IL is discarded. This can be set as a property, or as metadata on an [individual assembly](#trimmed-assemblies).
 
-- `<TrimMode>copyused</TrimMode>`
-
-   Enable assembly-level trimming, which will keep an entire assembly if any part of it is used (in a statically understood way).
-
 - `<TrimMode>link</TrimMode>`
 
     Enable member-level trimming, which removes unused members from types.
 
-Assemblies with `<IsTrimmable>true</IsTrimmable>` metadata but no explicit `TrimMode` will use the global `TrimMode`. The default `TrimMode` for `Microsoft.NET.Sdk` is `copyused`.
+- `<TrimMode>copyused</TrimMode>`
+
+   Enable assembly-level trimming, which will keep an entire assembly if any part of it is used (in a statically understood way).
+
+Assemblies with `<IsTrimmable>true</IsTrimmable>` metadata but no explicit `TrimMode` will use the global `TrimMode`. The default `TrimMode` for `Microsoft.NET.Sdk` is `link` in .NET 6+, and `copyused` in previous versions.
+
+## Trim additional assemblies
+
+In .NET 6+, `PublishTrimmed` trims assemblies with the assembly-level attribute
+
+```csharp
+[AssemblyMetadata("IsTrimmable", "True")]
+```
+
+which includes the framework libraries. In .NET 6+, you can also opt in to trimming for a library without this attribute, specifying the assembly by name (without the `.dll` extension).
+
+```xml
+<ItemGroup>
+  <TrimmableAssembly Include="MyAssembly" />
+</ItemGroup>
+```
+
+This is equivalent to setting MSBuild metadata `<IsTrimmable>true</IsTrimmable>` for the assembly in `ManagedAssemblyToLink` (see below).
 
 ## Trimmed assemblies
 
@@ -46,6 +66,8 @@ When publishing a trimmed app, the SDK computes an `ItemGroup` called `ManagedAs
 </Target>
 ```
 
+You can also use this to override the trimming behavior specified by the library author, by setting `<IsTrimmable>false</IsTrimmable>` for an assembly with `[AssemblyMetadata("IsTrimmable", "True"])`.
+
 Do not add or remove items to/from `ManagedAssemblyToLink`, because the SDK computes this set during publish and expects it not to change. The supported metadata is:
 
 - `<IsTrimmable>true</IsTrimmable>`
@@ -55,6 +77,10 @@ Do not add or remove items to/from `ManagedAssemblyToLink`, because the SDK comp
 - `<TrimMode>copyused</TrimMode>` or `<TrimMode>link</TrimMode>`
 
   Control the [trimming granularity](#trimming-granularity) of this assembly. This takes precedence over the global `TrimMode`. Setting `TrimMode` on an assembly implies `<IsTrimmable>true</IsTrimmable>`.
+
+- `<TrimmerSingleWarn>True</TrimmerSingleWarn>` or `<TrimmerSingleWarn>False<TrimmerSingleWarn>`
+
+  Control whether to show [single warnings](#showing-detailed-warnings) for this assembly.
 
 ## Root assemblies
 
@@ -98,6 +124,8 @@ Trimming will remove IL that is not statically reachable. Apps that use reflecti
 
 This will include warnings about the entire app, including your own code, library code, and framework code.
 
+## 
+
 ## Warning versions
 
 Trim analysis respects the [`AnalysisLevel`](../project-sdk/msbuild-props.md#analysislevel) property that controls the version of analysis warnings across the SDK. There is another property that controls the version of trim analysis warnings independently (similar to `WarningLevel` for the compiler):
@@ -113,6 +141,16 @@ Individual [warning codes](https://github.com/mono/linker/blob/master/docs/error
 - `<ILLinkTreatWarningsAsErrors>false</ILLinkTreatWarningsAsErrors>`
 
     Don't treat ILLink warnings as errors. This may be useful to avoid turning trim analysis warnings into errors when treating compiler warnings as errors globally.
+
+## Showing detailed warnings
+
+In .NET 6+, trim analysis will produce at most one warning for each assembly that comes from a `PackageReference`, indicating that the assembly's internals are not compatible with trimming. You can also show individual warnings for all assemblies:
+
+- `<TrimmerSingleWarn>false</TrimmerSingleWarn>`
+
+    Show detailed warnings for all assemblies, instead of collapsing them to a single warning per assembly.
+
+The defaults show detailed warnings for the project assembly and `ProjectReference`s. `<TrimmerSingleWarn>` can also be set as metadata on an [individual assembly](#trimmed-assemblies) to control the warning behavior for that assembly only.
 
 ## Removing symbols
 

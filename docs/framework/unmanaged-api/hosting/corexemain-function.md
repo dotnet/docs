@@ -35,7 +35,7 @@ __int32 STDMETHODCALLTYPE _CorExeMain ();
   
  The operating system loader calls this method regardless of the entry point specified in the image file.  
   
- In Windows 98, Windows ME, Windows NT, and Windows 2000, the `_CorExeMain` function is called indirectly through a fixup in the operating system loader. In all other versions of Windows, it is called directly by the operating system loader.  
+ In Windows NT and Windows 2000, the `_CorExeMain` function is called indirectly through a fixup in the operating system loader. In all other versions of Windows, it is called directly by the operating system loader.  
   
  For additional information, see the Remarks section in the [_CorValidateImage](corvalidateimage-function.md) topic.  
   

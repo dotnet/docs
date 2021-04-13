@@ -10,7 +10,7 @@ ms.custom: mvc, title-hack-0612
 
 Learn how to train a classification model to categorize images using a pre-trained TensorFlow model for image processing.
 
-The TensorFlow model was trained to classify images into a thousand categories. Because the TensorFlow model knows how to recognize patterns in images, the ML.NET model can make use of part of the TensorFlow model in its pipeline to convert raw images into features or inputs to train a classification model.
+The TensorFlow model was trained to classify images into a thousand categories. Because the TensorFlow model knows how to recognize patterns in images, the ML.NET model can make use of part of it in its pipeline to convert raw images into features or inputs to train a classification model.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]

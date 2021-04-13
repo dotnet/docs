@@ -34,7 +34,7 @@ ms.assetid: 8e157f3f-f220-4fcf-9010-88905b080b18
 
 - `href="link"`
 
-  A clickable link to a given URL.
+  A clickable link to a given URL. For example, `<seealso href="https://github.com">GitHub</seealso>` produces a clickable link with text :::no-loc text="GitHub"::: that links to `https://github.com`.
 
 ## Remarks
 

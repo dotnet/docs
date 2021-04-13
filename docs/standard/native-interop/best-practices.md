@@ -268,7 +268,7 @@ The `long` type in C/C++ is defined to have ["at least 32"](https://en.cpprefere
 
 These differences can make authoring cross-platform P/Invokes difficult when the native function is defined to use `long` on all platforms.
 
-In .NET 6 and later versions, use the [`CLong` and `CULong`](https://github.com/dotnet/runtime/issues/13788) types for interop with C/C++ `long` and `unsigned long` data types. The following example is for `CLong`, but you can use `CULong` to abstract `unsigned long` in a similar way.
+In .NET 6 and later versions, use the [`CLong`](xref:system.runtime.interopservices.clong) and [`CULong`](xref:system.runtime.interopservices.culong) types for interop with C/C++ `long` and `unsigned long` data types. The following example is for `CLong`, but you can use `CULong` to abstract `unsigned long` in a similar way.
 
 ```csharp
 // Cross platform C function

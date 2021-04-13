@@ -305,6 +305,23 @@ The root service provider is created when <xref:Microsoft.Extensions.DependencyI
 
 Scoped services are disposed by the container that created them. If a scoped service is created in the root container, the service's lifetime is effectively promoted to singleton because it's only disposed by the root container when the app shuts down. Validating service scopes catches these situations when `BuildServiceProvider` is called.
 
+## Scope scenarios
+
+The <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory> is always registered as a singleton but the <xref:System.IServiceProvider> can vary based on the lifetime of the containing class. For example, if you're to create, and resolve services from a scope, and any of those services take an <xref:System.IServiceProvider>, it'll be a scoped instance.
+
+To achieve scoping services within implementations of <xref:Microsoft.Extensions.Hosting.IHostedService>, such as the <xref:Microsoft.Extensions.Hosting.BackgroundService>, do *not* inject the service dependencies via constructor injection. Instead, inject <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>, create a scope, then resolve dependencies from the scope to use the appropriate service lifetime.
+
+:::code language="csharp" source="snippets/configuration/worker-scope/Worker.cs" highlight="13,15-16,22":::
+
+In the preceding code, while the app is running the background service:
+
+- Depends on the <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>.
+- Creates an <xref:Microsoft.Extensions.DependencyInjection.IServiceScope> for resolving additional services.
+- Resolves scoped services for consumption.
+- Works on processing objects and then relaying them, and finally marks them as processed.
+
+From the sample source code, you can see how implementations of <xref:Microsoft.Extensions.Hosting.IHostedService> can benefit from scoped service lifetimes.
+
 ## See also
 
 - [Use dependency injection in .NET](dependency-injection-usage.md)

@@ -2,7 +2,7 @@
 title: Breaking changes reference overview
 description: Learn how to navigate the .NET breaking changes reference.
 ms.date: 11/16/2020
-ms-topic: conceptual
+ms.topic:: conceptual
 ---
 # Breaking changes reference overview
 

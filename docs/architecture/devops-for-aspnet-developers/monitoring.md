@@ -130,7 +130,7 @@ In this section, you completed the following tasks:
 
 ## Additional reading
 
-* <xref:test/troubleshoot-azure-iis>
+* [Troubleshooting ASP.NET Core on Azure App Service and IIS](/aspnet/core/test/troubleshoot-azure-iis)
 * <xref:host-and-deploy/azure-iis-errors-reference>
 * [Monitor Azure web app performance with Application Insights](/azure/application-insights/app-insights-azure-web-apps)
 * [Enable diagnostics logging for web apps in Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log)

@@ -17,11 +17,11 @@ Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other option
 
    Enable trimming during publish, with the default settings defined by the SDK.
 
-When using `Microsoft.NET.Sdk`, this will trim the framework assemblies from the netcoreapp runtime pack. Application code and non-framework libraries are not trimmed. Other SDKs may define different defaults.
+This will trim any assemblies which have been configured for trimming. With `Microsoft.NET.Sdk` in .NET 6, this includes the any assemblies with `[AssemblyMetadata("IsTrimmable", "True")]`, which is the case for framework assemblies. In .NET 5, framework assemblies from the netcoreapp runtime pack are configured for trimming via `<IsTrimmable>` MSBuild metadata. Other SDKs may define different defaults.
 
 ## Trimming granularity
 
-The following granularity settings control how aggressively unused IL is discarded. This can be set as a property, or as metadata on an [individual assembly](#trimmed-assemblies).
+The following granularity settings control how aggressively unused IL is discarded. This can be set as a property affecting all trimmer input assemblies, or as metadata on an [individual assembly](#trimmed-assemblies) which overrides the property setting.
 
 - `<TrimMode>link</TrimMode>`
 

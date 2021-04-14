@@ -154,7 +154,7 @@ In .NET 6+, trim analysis will produce at most one warning for each assembly tha
 
 - `<TrimmerSingleWarn>false</TrimmerSingleWarn>`
 
-    Show detailed warnings for all assemblies, instead of collapsing them to a single warning per assembly.
+    Show all detailed warnings, instead of collapsing them to a single warning per assembly.
 
 The defaults show detailed warnings for the project assembly and `ProjectReference`s. `<TrimmerSingleWarn>` can also be set as metadata on an [individual assembly](#trimmed-assemblies) to control the warning behavior for that assembly only.
 

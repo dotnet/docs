@@ -22,7 +22,7 @@ If your app only uses parts of a library that are compatible with trimming, cons
 
 These instructions show how to enable and resolve static analysis warnings to prepare a library for trimming. Follow these steps if you are authoring a library and either want to proactively make your library trimmable, or have been contacted by app authors who encountered trim warnings from your library.
 
-Use the .NET 6 SDK for the best experience. It is possible to [show analysis warnings](trimming-options.md#analysis-warnings) in .NET 5, but this will show detailed warnings for every library, including framework libraries. These instructions assume you are using the .NET 6 SDK.
+Use the .NET 6 SDK for the best experience. It is possible to [show analysis warnings](trimming-options.md#analysis-warnings) in .NET 5, but not all framework assemblies were annotated correctly in .NET 5. Also, this will show detailed warnings for every library, including framework libraries. These instructions assume you are using the .NET 6 SDK.
 
 ### Incomplete Roslyn analyzer
 

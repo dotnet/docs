@@ -2,7 +2,7 @@
 title: .NET Runtime Identifier (RID) catalog
 description: Learn about the Runtime Identifier (RID) and how RIDs are used in .NET.
 ms.date: 01/28/2021
-ms.topic:: reference
+ms.topic: reference
 ---
 # .NET RID Catalog
 

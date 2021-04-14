@@ -2,7 +2,7 @@
 title: Types of breaking changes
 description: Learn how .NET attempts to maintain compatibility for developers across .NET versions, and what kind of change is considered a breaking change.
 ms.date: 01/28/2021
-ms.topic:: conceptual
+ms.topic: conceptual
 ---
 # Changes that affect compatibility
 

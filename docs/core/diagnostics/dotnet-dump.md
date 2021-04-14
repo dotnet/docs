@@ -2,7 +2,7 @@
 title: dotnet-dump diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-dump CLI tool to collect and analyze Windows and Linux dumps without any native debugger.
 ms.date: 11/17/2020
-ms.topic:: reference
+ms.topic: reference
 ---
 # Dump collection and analysis utility (dotnet-dump)
 

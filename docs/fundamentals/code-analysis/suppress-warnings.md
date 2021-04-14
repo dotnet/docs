@@ -2,6 +2,7 @@
 title: Suppress code analysis warnings
 description: Learn the different ways you can suppress .NET code analysis violations.
 ms.date: 01/28/2021
+ms-topic: how-to
 dev_langs:
   - CSharp
   - VB

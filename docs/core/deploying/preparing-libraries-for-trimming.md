@@ -14,7 +14,7 @@ When publishing an app, `PublishTrimmed` will produce trim analysis [warnings](t
 
 You will encounter detailed warnings originating from your own code and `ProjectReference` dependencies. You may also see warnings like `warning IL2104: Assembly 'SomeAssembly' produced trim warnings` for `PackageReference` libraries. This means that the library contained patterns which are not guaranteed to work in the context of the trimmed app, and may result in a broken app. Consider contacting the author to see if the library can be annotated for trimming.
 
-To resolve warnings originating from the app code, jump ahead to the instructions below to [resolve trim warnings](resolving-trim-warnings.md). If you are interested in making your own `ProjectReference` libraries trim friendly, follow the instructions to [enable library trim warnings](enabling-library-trim-warnings).
+To resolve warnings originating from the app code, jump ahead to the instructions on [resolving trim warnings](resolving-trim-warnings.md). If you are interested in making your own `ProjectReference` libraries trim friendly, follow the instructions to [enable library trim warnings](enabling-library-trim-warnings).
 
 If your app only uses parts of a library that are compatible with trimming, consider [enabling trimming](trimming-options.md#trim-additional-assemblies) of this library if it is not already being trimmed. This will only produce warnings if your app uses problematic parts of the library. (You can also [show detailed warnings](trimming-options.md#showing-detailed-warnings) for the library to see which parts of it are problematic.)
 
@@ -64,7 +64,7 @@ dotnet publish -c Release
 
 - `<TrimmerDefaultAction>link</TrimmerDefaultAction>` ensures that only used parts of dependencies are analyzed. Without this option, you would see warnings originating from _any_ part of a dependency that doesn't set `[AssemblyMetadata("IsTrimmable", "True")]`, including parts that are unused by your library.
 
-- `<SuppressTrimAnalysisWarnings>link</SuppressTrimAnalysisWarnings>` is implied by `PublishTrimmed` in the .NET SDK. It is only needed if the app targets form factors like Android where the trim analysis warnings are disabled by default. Consult the documentation for your SDK.
+- `<SuppressTrimAnalysisWarnings>false</SuppressTrimAnalysisWarnings>` is implied by `PublishTrimmed` in the .NET SDK. It is only needed if the app targets form factors like Android where the trim analysis warnings are disabled by default. Consult the documentation for your SDK.
 
 You can also follow the same pattern for multiple libraries, adding them all to the same project as `ProjectReference` and `TrimmerRootAssembly` item to see trim analysis warnings for more than one library at a time, but note that this will warn about dependencies if _any_ of the root libraries use a trim-unfriendly API in a dependency. To see warnings that have to do with only a particular library, reference that library only.
 
@@ -126,7 +126,7 @@ public class MyLibrary
 }
 ```
 
-Here, `Foo` is calling a method which takes a `Type` argument that is annotated with a [`DynamicallyAccessedMembers`](https://docs.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.dynamicallyaccessedmembersattribute?view=net-5.0) requirement. The requirement states that the value passed in as this argument must represent a type whose public methods are available. In this case, you can fix this by adding the same requirement to the parameter of `Foo`. Like above, once you have bubbled up such warnings to public APIs, you are done.
+Here, `Foo` is calling a method which takes a `Type` argument that is annotated with a [`DynamicallyAccessedMembers`](https://docs.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.dynamicallyaccessedmembersattribute?view=net-5.0) requirement. The requirement states that the value passed in as this argument must represent a type whose public methods are available. In this case, you can fix this by adding the same requirement to the parameter of `Foo`. Like with `RequiresUnreferencedCode`, once you have bubbled up such warnings to public APIs, you are done.
 
 ```csharp
     static Type type;

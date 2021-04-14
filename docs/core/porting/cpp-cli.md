@@ -84,3 +84,4 @@ There are a couple known issues to look out for when working with C++/CLI projec
           }
     }
     ```
+* On Windows 7, loading a .NET Core C++/CLI assembly when the entry application is native may exhibit failing behavior. This failing behavior is due to the Windows 7 loader not respecting non-`mscoree.dll` entry points for C++/CLI assemblies. The recommended course of action is to convert the entry application to managed code. Scenarios involving Thread Local Storage (TLS) are specifically unsupported in all cases on Windows 7.

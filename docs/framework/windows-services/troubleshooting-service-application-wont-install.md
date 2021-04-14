@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "troubleshooting service applications"
   - "services, troubleshooting"
   - "services, debugging"
-  - "Windows NT services, troubleshooting"
+  - "Windows services, troubleshooting"
   - "troubleshooting NT services"
   - "Windows Service applications, troubleshooting"
 ms.assetid: 45c48e2e-b97d-44bc-8896-14f328e0ce33

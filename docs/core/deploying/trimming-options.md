@@ -25,7 +25,7 @@ The following granularity settings control how aggressively unused IL is discard
 
 - `<TrimMode>link</TrimMode>`
 
-    Enable member-level trimming, which removes unused members from types.
+    Enable member-level trimming, which removes unused members from types. This is the default in .NET 6+.
 
 - `<TrimMode>copyused</TrimMode>`
 

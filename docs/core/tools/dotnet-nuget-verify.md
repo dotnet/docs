@@ -50,7 +50,7 @@ The `dotnet nuget verify` command verifies a signed NuGet package.
 
   Sets the [MSBuild verbosity level](/visualstudio/msbuild/obtaining-build-logs-with-msbuild#verbosity-settings). Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`.
 
-    The details that are displayed on each verbosity level are described below. Each level displays the same as the level below plus whatever is specified in that level. In that sense, `quiet` will display the least amount of information, while `diagnostic` the most.
+    The following table shows what is displayed for each verbosity level.
 
     ​                                  | `q[uiet]` | `m[inimal]` | `n[ormal]` | `d[etailed]` | `diag[nostic]`
     ----------------------------------| --------- | ----------- | ---------- | -----------| --------------

@@ -1,12 +1,12 @@
 ---
-title: Trimming libraries
+title: Preparing libraries for trimming
 description: Learn how to prepare libraries for trimming.
 author: sbomer
 ms.author: svbomer
 ms.date: 08/25/2020
 ---
 
-# Trimming libraries
+# Preparing libraries for trimming
 
 ## Trim warnings in apps
 

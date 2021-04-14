@@ -181,7 +181,7 @@ In this case the trim analysis will simply keep public methods of `System.Tuple`
 
 ### Recommendations
 
-In general, try to avoid reflection if possible, and when using reflection limit it in scope so that it is reachable only from a small part of the library. For example, avoid using non-understood patterns in places like static constructors that will result in the warning propagating to all members of the class.
+In general, try to avoid reflection if possible. When using reflection, limit it in scope so that it is reachable only from a small part of the library. For example, avoid using non-understood patterns in places like static constructors that will result in the warning propagating to all members of the class.
 
 - In some cases, you will be able to mechanically propagate warnings through your code without issues. Sometimes this will result in much of your public API being annotated with `RequiresUnreferencedCode`, which is the right thing to do if the library indeed behaves in ways that can't be understood statically by the trim analysis.
 - In other cases, you might discover that your code uses patterns which can't be expressed in terms of the `DynamicallyAccessedMembers` attributes, even if it only uses reflection to operate on statically-known types. In these cases, you may need to reorganize some of your code to make it follow an analyzable pattern.

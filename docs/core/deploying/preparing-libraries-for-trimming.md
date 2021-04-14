@@ -97,7 +97,18 @@ public class MyLibrary
 ```
 
 This means the library calls a method which has explicitly been annotated as incompatible with trimming, using [`RequiresUnreferencedCodeAttribute`](
-https://docs.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.requiresunreferencedcodeattribute?view=net-5.0). To get rid of the warning, consider whether `Foo` needs to call `Bar` to do its job. If so, annotate the caller `Foo` with `RequiresUnreferencedCode` as well; this will "bubble up" the warning so that callers of `Foo` get a warning instead. Once you have "bubbled up" the attribute all the way to public APIs (so that these warnings are produced only for public methods, if at all), you are done. Apps which call your library will now get warnings if they call those public APIs, but these will no longer produce warnings like `IL2104: Assembly 'MyLibrary' produced trim warnings`.
+https://docs.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.requiresunreferencedcodeattribute?view=net-5.0). To get rid of the warning, consider whether `Foo` needs to call `Bar` to do its job. If so, annotate the caller `Foo` with `RequiresUnreferencedCode` as well; this will "bubble up" the warning so that callers of `Foo` get a warning instead:
+
+```csharp
+    // Warn for calls to Foo, but not for Foo's call to Bar.
+    [RequiresUnreferencedCode("Calls Bar.")]
+    public static void Foo()
+    {
+        // ...
+    }
+```
+
+Once you have "bubbled up" the attribute all the way to public APIs (so that these warnings are produced only for public methods, if at all), you are done. Apps which call your library will now get warnings if they call those public APIs, but these will no longer produce warnings like `IL2104: Assembly 'MyLibrary' produced trim warnings`.
 
 ### DynamicallyAccessedMembers
 
@@ -126,7 +137,21 @@ public class MyLibrary
 }
 ```
 
-Here, `Foo` is calling a method which takes a `Type` argument that is annotated with a [`DynamicallyAccessedMembers`](https://docs.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.dynamicallyaccessedmembersattribute?view=net-5.0) requirement. The requirement states that the value passed in as this argument must represent a type whose public methods are available. In this case, you can fix this by adding the same requirement to the parameter of `Foo`. Like with `RequiresUnreferencedCode`, once you have bubbled up such warnings to public APIs, you are done.
+Here, `Foo` is calling a method which takes a `Type` argument that is annotated with a [`DynamicallyAccessedMembers`](https://docs.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.dynamicallyaccessedmembersattribute?view=net-5.0) requirement. The requirement states that the value passed in as this argument must represent a type whose public methods are available. In this case, you can fix this by adding the same requirement to the parameter of `Foo`.
+
+```csharp
+    public static void Foo(
+        // Propagate the requirement to Foo's parameter.
+        [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
+        Type type)
+    {
+        // ...
+    }
+```
+
+Like with `RequiresUnreferencedCode`, once you have bubbled up such warnings to public APIs, you are done.
+
+Here is another example where an unknown `Type` flows into the annotated method parameter, this time from a field:
 
 ```csharp
     static Type type;

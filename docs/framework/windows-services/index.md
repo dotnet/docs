@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "ServiceInstaller class, Windows Service applications"
   - "Service class, Windows Service applications"
   - "Windows Service applications"
-  - "Windows NT services"
+  - "Windows services"
   - "ServiceProcessInstaller class, Windows Service applications"
   - "services"
   - ".NET applications, Windows applications"

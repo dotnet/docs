@@ -173,7 +173,7 @@ items:
   - name: Overview
     displayName: diagnostics,tools,tooling,productivity,instrumentation
     href: tools-and-productivity.md
-  - name: .NET Core SDK
+  - name: .NET SDK
     items:
     - name: Overview
       displayName: '.net sdk,software development kit,software dev kit,tool'
@@ -200,6 +200,8 @@ items:
         href: ../core/tools/sdk-errors/netsdk1073.md
       - name: NETSDK1079
         href: ../core/tools/sdk-errors/netsdk1079.md
+      - name: NETSDK1080
+        href: ../core/tools/sdk-errors/netsdk1080.md
       - name: NETSDK1145
         href: ../core/tools/sdk-errors/netsdk1145.md
   - name: .NET CLI
@@ -425,7 +427,15 @@ items:
       - name: Well-known event providers
         href: ../core/diagnostics/well-known-event-providers.md
       - name: Distributed Tracing
-        href: ../core/diagnostics/distributed-tracing.md
+        items:
+        - name: Overview
+          href: ../core/diagnostics/distributed-tracing.md
+        - name: Concepts
+          href: ../core/diagnostics/distributed-tracing-concepts.md
+        - name: Instrumentation
+          href: ../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
+        - name: Collection
+          href: ../core/diagnostics/distributed-tracing-collection-walkthroughs.md
     - name: Symbols
       href: ../core/diagnostics/symbols.md
     - name: Runtime events
@@ -1371,6 +1381,11 @@ items:
       href: ../core/docker/build-container.md
     - name: Container tools in Visual Studio
       href: /visualstudio/containers/overview
+- name: DevOps
+  items:
+  - name: Create a GitHub Action with .NET
+    href: ../devops/create-dotnet-github-action.md
+    displayName: "continuous integration, continuous deployment, ci, cd, ci/cd, github, github action, github actions, lifecycle"
 - name: Fundamental coding components
   items:
   - name: Base types overview
@@ -2287,54 +2302,36 @@ items:
         href: ../standard/design-guidelines/dependency-properties.md
 - name: Migration guide
   items:
+  - name: Overview
+    href: ../core/porting/index.md
+  - name: .NET Upgrade Assistant tool
+    items:
+    - name: Overview
+      href: ../core/porting/upgrade-assistant-overview.md
+    - name: Windows Presentation Foundation
+      href: ../core/porting/upgrade-assistant-wpf-framework.md
+    - name: Windows Forms
+      href: ../core/porting/upgrade-assistant-winforms-framework.md
+    - name: ASP.NET Core
+      href: ../core/porting/upgrade-assistant-aspnetmvc.md
   - name: Breaking changes
     displayName: app compatibility
     href: ../core/compatibility/
-  - name: Migration
-    items:
-    - name: .NET Core 2.0 to 2.1
-      href: ../core/migration/20-21.md
-    - name: Migrate from project.json
-      href: ../core/migration/index.md
-    - name: Map between project.json and csproj
-      href: ../core/tools/project-json-to-csproj.md
-    - name: Map AssemblyInfo attributes to properties
-      href: ../core/migration/assembly-info.md
-    - name: Changes in CLI overview
-      href: ../core/tools/cli-msbuild-architecture.md
-    - name: Migrate from DNX
-      href: ../core/migration/from-dnx.md
-  - name: Port from .NET Framework
-    items:
-    - name: Overview
-      href: ../core/porting/index.md
-    - name: .NET Upgrade Assistant tool
-      items:
-      - name: Overview
-        href: ../core/porting/upgrade-assistant-overview.md
-      - name: Windows Presentation Foundation
-        href: ../core/porting/upgrade-assistant-wpf-framework.md
-      - name: Windows Forms
-        href: ../core/porting/upgrade-assistant-winforms-framework.md
-      - name: ASP.NET Core
-        href: ../core/porting/upgrade-assistant-aspnetmvc.md
-    - name: Analyze third-party dependencies
-      href: ../core/porting/third-party-deps.md
-    - name: Port libraries
-      href: ../core/porting/libraries.md
-    - name: Organize projects for .NET
-      href: ../core/porting/project-structure.md
-    - name: Unavailable technologies
-      href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-    - name: Tools
-      href: ../core/porting/tools.md
-    - name: Use the Windows Compatibility Pack
-      href: ../core/porting/windows-compat-pack.md
-    - name: Port Windows Forms projects
-      href: /dotnet/desktop/winforms/migration/?view=netdesktop-5.0
-    - name: Port WPF projects
-      href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework
-    - name: Port C++/CLI projects
-      href: ../core/porting/cpp-cli.md
+  - name: Analyze third-party dependencies
+    href: ../core/porting/third-party-deps.md
+  - name: Port libraries
+    href: ../core/porting/libraries.md
+  - name: Organize projects for .NET
+    href: ../core/porting/project-structure.md
+  - name: Unavailable technologies
+    href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: Use the Windows Compatibility Pack
+    href: ../core/porting/windows-compat-pack.md
+  - name: Port Windows Forms projects
+    href: /dotnet/desktop/winforms/migration/?view=netdesktop-5.0
+  - name: Port WPF projects
+    href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0
+  - name: Port C++/CLI projects
+    href: ../core/porting/cpp-cli.md
   - name: Choose between .NET 5 and .NET Framework for server apps
     href: ../standard/choosing-core-framework-server.md

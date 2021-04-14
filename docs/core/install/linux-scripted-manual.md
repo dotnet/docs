@@ -40,7 +40,7 @@ It's possible that when you install .NET, specific dependencies may not be insta
 - [SLES](linux-sles.md#dependencies)
 - [Ubuntu](linux-ubuntu.md#dependencies)
 
-For generic information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
+For generic information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
 
 ### RPM dependencies
 
@@ -77,6 +77,9 @@ For .NET apps that use the *System.Drawing.Common* assembly, you'll also need th
 
 The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the **SDK** and **Runtime**. You can download the script from <https://dot.net/v1/dotnet-install.sh>.
 
+> ![IMPORTANT]
+> Bash is required to run the script.
+
 The script defaults to installing the latest SDK [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 3.1. To install the current release, which may not be an (LTS) version, use the `-c Current` parameter.
 
 ```bash
@@ -106,9 +109,9 @@ As an alternative to the package managers, you can download and manually install
 If you install .NET SDK, you don't need to install the corresponding runtime. First, download a **binary** release for either the SDK or the runtime from one of the following sites:
 
 - ✔️ [.NET 5.0 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
-- ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-- ✔️ [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1)
-- [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet-core)
+- ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet/3.1)
+- ✔️ [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet/2.1)
+- [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)
 
 Next, extract the downloaded file and use the `export` command to set variables used by .NET and then ensure .NET is in PATH.
 

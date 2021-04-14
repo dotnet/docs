@@ -33,21 +33,17 @@ HRESULT COMClassicVTableCreated(
   
 ## Parameters
 
-- `wrappedClasId`
+`wrappedClasId`
+[in] The ID of the class for which the vtable has been created.
 
-  \[in] The ID of the class for which the vtable has been created.
+`implementedIID`
+[in] The ID of the interface implemented by the class. This value may be NULL if the interface is internal only.
 
-- `implementedIID`
+`pVTable`
+[in] A pointer to the start of the vtable.
 
-  \[in] The ID of the interface implemented by the class. This value may be NULL if the interface is internal only.
-
-- `pVTable`
-
-  \[in] A pointer to the start of the vtable.
-
-- `cSlots`
-
-  \[in] The number of slots that are in the vtable.
+`cSlots`
+[in] The number of slots that are in the vtable.
 
 ## Remarks  
 

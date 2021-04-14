@@ -63,7 +63,7 @@ Which of these strategies you pick depends on how much active development is tak
 > 1. Start the file name with *TemporaryGeneratedFile_*
 > 1. End the file name with *.designer.cs*, *.generated.cs*, *.g.cs*, or *.g.i.cs*.
 >
-> Generators can opt-in using the [`#nullable`](language-reference/preprocessor-directives/preprocessor-nullable.md) preprocessor directive.
+> Generators can opt-in using the [`#nullable`](language-reference/preprocessor-directives.md#nullable-context) preprocessor directive.
 
 ## Should nullable warnings introduce breaking changes?
 
@@ -210,5 +210,5 @@ You'll never observe an actual null value at runtime except as a result of a pro
 
 ## See also
 
-- [Migrate an existing codebase to nullable references](tutorials/upgrade-to-nullable-references.md)
+- [Migrate an existing codebase to nullable references](whats-new/tutorials/upgrade-to-nullable-references.md)
 - [Working with Nullable Reference Types in EF Core](/ef/core/miscellaneous/nullable-reference-types)

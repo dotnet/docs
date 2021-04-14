@@ -11,7 +11,7 @@ The .NET runtime and libraries implement and publish several [`EventCounter`](./
 
 ## System.Runtime counters
 
-The following counters are published as part of .NET runtime (CoreCLR) and are maintained in the [`RuntimeEventSource.cs`](https://github.com/dotnet/coreclr/blob/master/src/System.Private.CoreLib/src/System/Diagnostics/Eventing/RuntimeEventSource.cs).
+The following counters are published as part of .NET runtime (CoreCLR) and are maintained in the [`RuntimeEventSource.cs`](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Private.CoreLib/src/System/Diagnostics/Tracing/RuntimeEventSource.cs).
 
 | Counter | Description |
 |--|--|
@@ -38,10 +38,11 @@ The following counters are published as part of .NET runtime (CoreCLR) and are m
 | :::no-loc text="Working Set"::: (`working-set`) | The amount of physical memory mapped to the process context at a point in time base on <xref:System.Environment.WorkingSet?displayProperty=nameWithType> |
 | :::no-loc text="IL Bytes Jitted"::: (`il-bytes-jitted`) | The total size of ILs that are JIT-compiled, in bytes (available on .NET 5 and later versions) |
 | :::no-loc text="Method Jitted Count"::: (`method-jitted-count`) | The number of methods that are JIT-compiled (available on .NET 5 and later versions) |
+| :::no-loc text="GC Committed Bytes"::: (`gc-committed-bytes`) | The number of bytes committed by the GC (available on .NET 6 and later versions) |
 
 ## "Microsoft.AspNetCore.Hosting" counters
 
-The following counters are published as part of [ASP.NET Core](/aspnet/core) and are maintained in [`HostingEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/Hosting/Hosting/src/Internal/HostingEventSource.cs).
+The following counters are published as part of [ASP.NET Core](/aspnet/core) and are maintained in [`HostingEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/main/src/Hosting/Hosting/src/Internal/HostingEventSource.cs).
 
 | Counter | Description |
 |--|--|
@@ -52,7 +53,7 @@ The following counters are published as part of [ASP.NET Core](/aspnet/core) and
 
 ## "Microsoft.AspNetCore.Http.Connections" counters
 
-The following counters are published as part of [ASP.NET Core SignalR](/aspnet/core/signalr/introduction) and are maintained in [`HttpConnectionsEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/SignalR/common/Http.Connections/src/Internal/HttpConnectionsEventSource.cs).
+The following counters are published as part of [ASP.NET Core SignalR](/aspnet/core/signalr/introduction) and are maintained in [`HttpConnectionsEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/common/Http.Connections/src/Internal/HttpConnectionsEventSource.cs).
 
 | Counter | Description |
 |--|--|
@@ -64,7 +65,7 @@ The following counters are published as part of [ASP.NET Core SignalR](/aspnet/c
 
 ## "Microsoft-AspNetCore-Server-Kestrel" counters
 
-The following counters are published as part of the [ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel) and are maintained in [`KestrelEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/Servers/Kestrel/Core/src/Internal/Infrastructure/KestrelEventSource.cs).
+The following counters are published as part of the [ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel) and are maintained in [`KestrelEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/main/src/Servers/Kestrel/Core/src/Internal/Infrastructure/KestrelEventSource.cs).
 
 | Counter | Description |
 |--|--|

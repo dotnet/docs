@@ -34,7 +34,7 @@ The `<param>` tag should be used in the comment for a method declaration to desc
 
 The text for the `<param>` tag is displayed in IntelliSense, the Object Browser, and the Code Comment Web Report.
 
-Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.
+Compile with [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) to process documentation comments to a file.
 
 ## Example
 

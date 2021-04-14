@@ -49,7 +49,7 @@ Finally, the compiler has new options:
 
 The remainder of this article provides an overview of each feature. For each feature, you'll learn the reasoning behind it and the syntax. You can explore these features in your environment using the `dotnet try` global tool:
 
-1. Install the [dotnet-try](https://github.com/dotnet/try/blob/master/README.md#setup) global tool.
+1. Install the [dotnet-try](https://github.com/dotnet/try/blob/main/DotNetTryLocal.md) global tool.
 1. Clone the [dotnet/try-samples](https://github.com/dotnet/try-samples) repository.
 1. Set the current directory to the *csharp7* subdirectory for the *try-samples* repository.
 1. Run `dotnet try`.
@@ -162,10 +162,10 @@ public static int SumPositiveNumbers(IEnumerable<object> sequence)
 }
 ```
 
-- `case 0:` is the familiar constant pattern.
-- `case IEnumerable<int> childSequence:` is a type pattern.
-- `case int n when n > 0:` is a type pattern with an additional `when` condition.
-- `case null:` is the null pattern.
+- `case 0:` is a [constant pattern](../language-reference/operators/patterns.md#constant-pattern).
+- `case IEnumerable<int> childSequence:` is a [declaration pattern](../language-reference/operators/patterns.md#declaration-and-type-patterns).
+- `case int n when n > 0:` is a declaration pattern with an additional `when` condition.
+- `case null:` is the `null` constant pattern.
 - `default:` is the familiar default case.
 
 Beginning with C# 7.1, the pattern expression for `is` and the `switch` type pattern may have the type of a generic type parameter. This can be most useful when checking types that may be either `struct` or `class` types, and you want to avoid boxing.
@@ -523,18 +523,18 @@ New compiler options support new build and DevOps scenarios for C# programs.
 ### Reference assembly generation
 
 There are two new compiler options that generate *reference-only assemblies*:
-[-refout](../language-reference/compiler-options/refout-compiler-option.md)
-and [-refonly](../language-reference/compiler-options/refonly-compiler-option.md).
+[**ProduceReferenceAssembly**](../language-reference/compiler-options/output.md#producereferenceassembly)
+and [**ProduceOnlyReferenceAssembly**](../language-reference/compiler-options/code-generation.md#produceonlyreferenceassembly).
 The linked articles explain these options and reference assemblies in more detail.
 
 ### Public or Open Source signing
 
-The `-publicsign` compiler option instructs the compiler to sign the assembly using a public key. The assembly is marked as signed, but the signature is taken from the public key. This option enables you to build signed assemblies from open-source projects using a public key.
+The **PublicSign** compiler option instructs the compiler to sign the assembly using a public key. The assembly is marked as signed, but the signature is taken from the public key. This option enables you to build signed assemblies from open-source projects using a public key.
 
-For more information, see the [-publicsign compiler option](../language-reference/compiler-options/publicsign-compiler-option.md) article.
+For more information, see the [**PublicSign** compiler option](../language-reference/compiler-options/security.md#publicsign) article.
 
 ### pathmap
 
-The `-pathmap` compiler option instructs the compiler to replace source paths from the build environment with mapped source paths. The `-pathmap` option controls the source path written by the compiler to PDB files or for the <xref:System.Runtime.CompilerServices.CallerFilePathAttribute>.
+The **PathMap** compiler option instructs the compiler to replace source paths from the build environment with mapped source paths. The **PathMap** option controls the source path written by the compiler to PDB files or for the <xref:System.Runtime.CompilerServices.CallerFilePathAttribute>.
 
-For more information, see the [-pathmap compiler option](../language-reference/compiler-options/pathmap-compiler-option.md) article.
+For more information, see the [**PathMap** compiler option](../language-reference/compiler-options/advanced.md#pathmap) article.

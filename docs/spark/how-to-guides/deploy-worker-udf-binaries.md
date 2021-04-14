@@ -22,7 +22,7 @@ When deploying workers and writing UDFs, there are a few commonly used environme
 | :--------------------------- | :----------
 | DOTNET_WORKER_DIR            | Path where the <code>Microsoft.Spark.Worker</code> binary has been generated.</br>It's used by the Spark driver and will be passed to Spark executors. If this variable is not set up, the Spark executors will search the path specified in the <code>PATH</code> environment variable.</br>_e.g. "C:\bin\Microsoft.Spark.Worker"_
 | DOTNET_ASSEMBLY_SEARCH_PATHS | Comma-separated paths where <code>Microsoft.Spark.Worker</code> will load assemblies.</br>Note that if a path starts with ".", the working directory will be prepended. If in **yarn mode**, "." would represent the container's working directory.</br>_e.g. "C:\Users\\&lt;user name&gt;\\&lt;mysparkapp&gt;\bin\Debug\\&lt;dotnet version&gt;"_
-| DOTNET_WORKER_DEBUG          | If you want to <a href="https://github.com/dotnet/spark/blob/master/docs/developer-guide.md#debugging-user-defined-function-udf">debug a UDF</a>, then set this environment variable to <code>1</code> before running <code>spark-submit</code>.
+| DOTNET_WORKER_DEBUG          | If you want to <a href="https://github.com/dotnet/spark/blob/main/docs/developer-guide.md#debugging-user-defined-function-udf">debug a UDF</a>, then set this environment variable to <code>1</code> before running <code>spark-submit</code>.
 
 ### Parameter options
 

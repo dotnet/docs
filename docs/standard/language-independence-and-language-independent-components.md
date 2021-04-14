@@ -21,7 +21,7 @@ ms.assetid: 4f0b77d0-4844-464f-af73-6e06bedeafc6
 > [!NOTE]
 > This first part of this article discusses creating language-independent components—that is, components that can be consumed by apps that are written in any language. You can also create a single component or app from source code written in multiple languages; see [Cross-Language Interoperability](#CrossLang) in the second part of this article.
 
-To fully interact with other objects written in any language, objects must expose to callers only those features that are common to all languages. This common set of features is defined by the Common Language Specification (CLS), which is a set of rules that apply to generated assemblies. The Common Language Specification is defined in Partition I, Clauses 7 through 11 of the [ECMA-335 Standard: Common Language Infrastructure](https://www.ecma-international.org/publications/standards/Ecma-335.htm).
+To fully interact with other objects written in any language, objects must expose to callers only those features that are common to all languages. This common set of features is defined by the Common Language Specification (CLS), which is a set of rules that apply to generated assemblies. The Common Language Specification is defined in Partition I, Clauses 7 through 11 of the [ECMA-335 Standard: Common Language Infrastructure](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/).
 
 If your component conforms to the Common Language Specification, it is guaranteed to be CLS-compliant and can be accessed from code in assemblies written in any programming language that supports the CLS. You can determine whether your component conforms to the Common Language Specification at compile time by applying the <xref:System.CLSCompliantAttribute> attribute to your source code. For more information, see [The CLSCompliantAttribute attribute](#CLSAttribute).
 
@@ -67,7 +67,7 @@ In this article:
 
 ## CLS compliance rules
 
-This section discusses the rules for creating a CLS-compliant component. For a complete list of rules, see Partition I, Clause 11 of the [ECMA-335 Standard: Common Language Infrastructure](https://www.ecma-international.org/publications/standards/Ecma-335.htm).
+This section discusses the rules for creating a CLS-compliant component. For a complete list of rules, see Partition I, Clause 11 of the [ECMA-335 Standard: Common Language Infrastructure](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/).
 
 > [!NOTE]
 > The Common Language Specification discusses each rule for CLS compliance as it applies to consumers (developers who are programmatically accessing a component that is CLS-compliant), frameworks (developers who are using a language compiler to create CLS-compliant libraries), and extenders (developers who are creating a tool such as a language compiler or a code parser that creates CLS-compliant components). This article focuses on the rules as they apply to frameworks. Note, though, that some of the rules that apply to extenders may also apply to assemblies that are created using Reflection.Emit.
@@ -95,7 +95,7 @@ A library's public interface consists of the following:
 
 - Parameters and return types of public methods of public classes, and parameters and return types of methods accessible to derived classes.
 
-The rules for CLS compliance are listed in the following table. The text of the rules is taken verbatim from the [ECMA-335 Standard: Common Language Infrastructure](https://www.ecma-international.org/publications/standards/Ecma-335.htm), which is Copyright 2012 by Ecma International. More detailed information about these rules is found in the following sections.
+The rules for CLS compliance are listed in the following table. The text of the rules is taken verbatim from the [ECMA-335 Standard: Common Language Infrastructure](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/), which is Copyright 2012 by Ecma International. More detailed information about these rules is found in the following sections.
 
 |Category|See|Rule|Rule number|
 |--------------|---------|----------|-----------------|
@@ -588,8 +588,6 @@ To compile the C# source code file into a module, use this command:
 ```console
 csc /t:module NumberUtil.cs
 ```
-
-For more information about the command-line syntax of the C# compiler, see [Command-line Building With csc.exe](../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md).
 
 You then use the [Linker options](/cpp/build/reference/linker-options) to compile the two modules into an assembly:
 

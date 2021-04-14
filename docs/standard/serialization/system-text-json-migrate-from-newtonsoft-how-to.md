@@ -17,7 +17,7 @@ helpviewer_keywords:
 
 This article shows how to migrate from [Newtonsoft.Json](https://www.newtonsoft.com/json) to <xref:System.Text.Json>.
 
-The `System.Text.Json` namespace provides functionality for serializing to and deserializing from JavaScript Object Notation (JSON). The `System.Text.Json` library is included in the runtime for [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1) and later versions. For other target frameworks, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The package supports:
+The `System.Text.Json` namespace provides functionality for serializing to and deserializing from JavaScript Object Notation (JSON). The `System.Text.Json` library is included in the runtime for [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1) and later versions. For other target frameworks, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The package supports:
 
 * .NET Standard 2.0 and later versions
 * .NET Framework 4.7.2 and later versions
@@ -38,6 +38,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 * Not supported, workaround is not practical or possible. If you rely on these `Newtonsoft.Json` features, migration will not be possible without significant changes.
 
 ::: zone pivot="dotnet-5-0"
+
 | Newtonsoft.Json feature                               | System.Text.Json equivalent |
 |-------------------------------------------------------|-----------------------------|
 | Case-insensitive deserialization by default           | ✔️ [PropertyNameCaseInsensitive global setting](#case-insensitive-deserialization) |
@@ -80,6 +81,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
+
 | Newtonsoft.Json feature                               | System.Text.Json equivalent |
 |-------------------------------------------------------|-----------------------------|
 | Case-insensitive deserialization by default           | ✔️ [PropertyNameCaseInsensitive global setting](#case-insensitive-deserialization) |
@@ -365,7 +367,7 @@ For more information, see [Preserve references and handle circular references](s
 ### Dictionary with non-string key
 
 ::: zone pivot="dotnet-5-0"
-Both `Newtonsoft.Json` and `System.Text.Json` support collections of type `Dictionary<TKey, TValue>`.
+Both `Newtonsoft.Json` and `System.Text.Json` support collections of type `Dictionary<TKey, TValue>`. However, in `System.Text.Json`, `TKey` must be a primitive type, not a custom type. For more information, see [Supported key types](system-text-json-supported-collection-types.md#supported-key-types).
 
 > [!CAUTION]
 > Deserializing to a `Dictionary<TKey, TValue>` where `TKey` is typed as anything other than `string` could introduce a security vulnerability in the consuming application. For more information, see [dotnet/runtime#4761](https://github.com/dotnet/runtime/issues/4761).
@@ -541,7 +543,11 @@ The required properties converter would require additional logic if you need to 
 * The `DateTimeZoneHandling` setting can be used to serialize all `DateTime` values as UTC dates.
 * The `DateFormatString` setting and `DateTime` converters can be used to customize the format of date strings.
 
-<xref:System.Text.Json> supports ISO 8601-1:2019, including the RFC 3339 profile. This format is widely adopted, unambiguous, and makes round trips precisely. To use any other format, create a custom converter. For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md).
+<xref:System.Text.Json> supports ISO 8601-1:2019, including the RFC 3339 profile. This format is widely adopted, unambiguous, and makes round trips precisely. To use any other format, create a custom converter. For example, the following converter serializes and deserializes JSON that uses Unix epoch with time zone format (values such as `/Date(1590863400000-0700)/`):
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
+
+For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md).
 
 ### Callbacks
 

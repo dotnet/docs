@@ -25,9 +25,8 @@ HRESULT GetLOHObjectSizeThreshold( [out] DWORD *pThreshold );
 
 ## Parameters
 
-- `pThreshold`
-
-  \[out] The large object heap threshold in bytes.
+`pThreshold`
+[out] The large object heap threshold in bytes.
 
 ## Remarks
 
@@ -41,7 +40,7 @@ Objects larger than the large object heap threshold will be allocated on the lar
 
 **Library:** CorGuids.lib
 
-**.NET Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
+**.NET Versions:** [!INCLUDE[net_core_30](../../../../includes/net-core-30-md.md)]
 
 ## See also
 

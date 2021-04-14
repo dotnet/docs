@@ -453,8 +453,23 @@
         },
         {
             "source_path": "docs/core/migrating-from-dnx.md",
-            "redirect_url": "/dotnet/core/migration/from-dnx",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/core/tools"
+        },
+        {
+            "source_path": "docs/core/migration/20-21.md",
+            "redirect_url": "/dotnet/core/compatibility/2.1"
+        },
+        {
+            "source_path": "docs/core/migration/from-dnx.md",
+            "redirect_url": "/dotnet/core/tools"
+        },
+        {
+            "source_path": "docs/core/migration/index.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
+        },
+        {
+            "source_path": "docs/core/migration/assembly-info.md",
+            "redirect_url": "/dotnet/core/project-sdk/msbuild-props#assembly-info-generation-properties"
         },
         {
             "source_path": "docs/core/packages.md",
@@ -463,6 +478,10 @@
         {
             "source_path": "docs/core/porting/nuget-packages.md",
             "redirect_url": "/dotnet/core/deploying"
+        },
+        {
+            "source_path": "docs/core/porting/tools.md",
+            "redirect_url": "/dotnet/core/porting/#tools-to-assist-porting"
         },
         {
             "source_path": "docs/core/porting/winforms.md",
@@ -601,8 +620,7 @@
         },
         {
             "source_path": "docs/core/preview3/tools/layering.md",
-            "redirect_url": "/dotnet/core/tools/cli-msbuild-architecture",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
         },
         {
             "source_path": "docs/core/preview3/tools/telemetry.md",
@@ -648,6 +666,10 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/core/tools/cli-msbuild-architecture.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
+        },
+        {
             "source_path": "docs/core/tools/csproj.md",
             "redirect_url": "/dotnet/core/project-sdk/msbuild-props"
         },
@@ -657,7 +679,11 @@
         },
         {
             "source_path": "docs/core/tools/project-json.md",
-            "redirect_url": "/dotnet/core/tools/project-json-to-csproj"
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
+        },
+        {
+            "source_path": "docs/core/tools/project-json-to-csproj.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
         },
         {
             "source_path": "docs/core/tools/test-protocol.md",
@@ -689,7 +715,7 @@
         },
         {
             "source_path": "docs/core/tutorials/target-dotnetcore-with-msbuild.md",
-            "redirect_url": "/dotnet/core/tools/cli-msbuild-architecture"
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
         },
         {
             "source_path": "docs/core/tutorials/using-on-mac-vs-full-solution.md",
@@ -889,8 +915,256 @@
             "redirect_url": "/dotnet/csharp/language-reference/operators/lambda-expressions"
         },
         {
+            "source_path": "docs/csharp/language-reference/compiler-options/addmodule-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/inputs"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/appconfig-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/advanced"
+        },
+        {
             "source_path": "docs/csharp/language-reference/compiler-options/app-deployment.md",
             "redirect_url": "/dotnet/framework/deployment/deployment-guide-for-developers"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/baseaddress-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/advanced"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/bugreport-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/checked-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/language"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/codepage-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/advanced"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/debug-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/code-generation"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/deterministic-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/code-generation"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/define-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/language"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/delaysign-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/security"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/doc-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/output"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/errorreport-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/filealign-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/advanced"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/fullpaths-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/advanced"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/help-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/miscellaneous"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/highentropyva-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/security"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/keycontainer-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/security"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/keyfile-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/security"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/langversion-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/language"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/lib-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/advanced"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/link-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/inputs"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/linkresource-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/resources"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/listed-alphabetically.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/listed-by-category.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/main-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/advanced"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/moduleassemblyname-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/advanced"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/noconfig-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/miscellaneous"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/nologo-file-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/miscellaneous"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/nowarn-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/errors-warnings"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/nowin32manifest-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/resources"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/nullable-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/language"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/optimize-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/code-generation"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/nostdlib-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/advanced"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/out-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/output"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/pathmap-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/advanced"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/pdb-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/advanced"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/platform-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/output"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/preferreduilang-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/advanced"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/publicsign-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/security"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/recurse-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/reference-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/inputs"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/refout-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/output"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/refonly-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/code-generation"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/resource-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/resources"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/response-file-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/miscellaneous"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/subsystemversion-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/advanced"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/target-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/output"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/target-appcontainerexe-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/output"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/target-exe-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/output"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/target-library-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/output"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/target-module-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/output"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/target-winexe-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/output"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/target-winmdobj-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/output"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/unsafe-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/language"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/utf8output-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/advanced"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/warn-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/errors-warnings"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/warnaserror-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/errors-warnings"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/win32icon-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/resources"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/win32manifest-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/resources"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/win32res-compiler-option.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-options/resources"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/access-keywords.md",
@@ -1299,6 +1573,71 @@
         {
             "source_path": "docs/csharp/language-reference/operators/xor-operator.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/boolean-logical-operators#logical-exclusive-or-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives",
+            "redirect_document_id":true
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-define.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-else.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-elif.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-endif.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-endregion.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-error.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-if.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-line.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-nullable.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-pragma.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-pragma-checksum.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-region.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-undef.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-warning.md",
+            "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives"
         },
         {
             "source_path": "docs/csharp/language-reference/proposals/csharp-7.0/index.md",
@@ -2558,6 +2897,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/operators/pointer-related-operators#pointer-arithmetic-operators"
         },
         {
+            "source_path": "docs/csharp/programming-guide/unsafe-code-pointers/fixed-size-buffers.md",
+            "redirect_url": "/dotnet/csharp/language-reference/unsafe-code#fixed-size-buffers"
+        },
+        {
             "source_path": "docs/csharp/programming-guide/unsafe-code-pointers/how-to-access-a-member-with-a-pointer.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/pointer-related-operators#pointer-member-access-operator--"
         },
@@ -2578,6 +2921,14 @@
             "redirect_url": "/dotnet/csharp/language-reference/operators/pointer-related-operators#pointer-indirection-operator-"
         },
         {
+            "source_path": "docs/csharp/programming-guide/unsafe-code-pointers/how-to-use-pointers-to-copy-an-array-of-bytes.md",
+            "redirect_url": "/dotnet/csharp/language-reference/unsafe-code#how-to-use-pointers-to-copy-an-array-of-bytes"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/unsafe-code-pointers/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/unsafe-code"
+        },
+        {
             "source_path": "docs/csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/pointer-related-operators"
         },
@@ -2586,8 +2937,16 @@
             "redirect_url": "/dotnet/csharp/language-reference/operators/pointer-related-operators#pointer-comparison-operators"
         },
         {
+            "source_path": "docs/csharp/programming-guide/unsafe-code-pointers/pointer-conversions.md",
+            "redirect_url": "/dotnet/csharp/language-reference/unsafe-code#pointer-types"
+        },
+        {
             "source_path": "docs/csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/pointer-related-operators"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/unsafe-code-pointers/pointer-types.md",
+            "redirect_url": "/dotnet/csharp/language-reference/unsafe-code#pointer-types"
         },
         {
             "source_path": "docs/csharp/programming-guide/xmldoc/xml-documentation-comments.md",
@@ -2710,7 +3069,27 @@
         },
         {
             "source_path": "docs/csharp/tutorials/default-interface-members-versions.md",
-            "redirect_url": "/dotnet/csharp/tutorials/default-interface-methods-versions"
+            "redirect_url": "/dotnet/csharp/whats-new/tutorials/default-interface-methods-versions"
+        },
+        {
+            "source_path": "docs/csharp/tutorials/generate-consume-asynchronous-stream.md",
+            "redirect_url": "/dotnet/csharp/whats-new/tutorials/generate-consume-asynchronous-stream"
+        },
+        {
+            "source_path": "docs/csharp/tutorials/mixins-with-default-interface-methods.md",
+            "redirect_url": "/dotnet/csharp/whats-new/tutorials/mixins-with-default-interface-methods"
+        },
+        {
+            "source_path": "docs/csharp/tutorials/nullable-reference-types.md",
+            "redirect_url": "/dotnet/csharp/whats-new/tutorials/nullable-reference-types"
+        },
+        {
+            "source_path": "docs/csharp/tutorials/ranges-indexes.md",
+            "redirect_url": "/dotnet/csharp/whats-new/tutorials/ranges-indexes"
+        },
+        {
+            "source_path": "docs/csharp/tutorials/upgrade-to-nullable-references.md",
+            "redirect_url": "/dotnet/csharp/whats-new/tutorials/upgrade-to-nullable-references"
         },
         {
             "source_path": "docs/csharp/tutorials/exploration/csharp-6.yml",
@@ -2719,6 +3098,18 @@
         {
             "source_path": "docs/csharp/tutorials/exploration/csharp-7.yml",
             "redirect_url": "/dotnet/csharp/whats-new/csharp-7"
+        },
+        {
+            "source_path": "docs/csharp/tutorials/exploration/patterns-objects.md",
+            "redirect_url": "/dotnet/csharp/whats-new/tutorials/patterns-objects"
+        },
+        {
+            "source_path": "docs/csharp/tutorials/exploration/records.md",
+            "redirect_url": "/dotnet/csharp/whats-new/tutorials/records"
+        },
+        {
+            "source_path": "docs/csharp/tutorials/exploration/top-level-statements.md",
+            "redirect_url": "/dotnet/csharp/whats-new/tutorials/top-level-statements"
         },
         {
             "source_path": "docs/csharp/tutorials/intro-to-csharp/index.md",
@@ -2756,7 +3147,10 @@
             "source_path": "docs/csharp/tutorials/intro-to-csharp/arrays-and-collections.md",
             "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/arrays-and-collections"
         },
-
+        {
+            "source_path": "docs/csharp/tutorials/index.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/introduction-to-classes"
+        },
         {
             "source_path": "docs/csharp/tutorials/intro-to-csharp/interpolated-strings-local.md",
             "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings-local"
@@ -3034,6 +3428,10 @@
         {
             "source_path": "docs/desktop-wpf/xaml-services/xuid-directive.md",
             "redirect_url": "/dotnet/desktop/xaml-services/xuid-directive"
+        },
+        {
+            "source_path": "docs/fundamentals/code-analysis/quality-rules/ca1071.md",
+            "redirect_url": "/dotnet/fundamentals/code-analysis/quality-rules/index"
         },
         {
             "source_path": "docs/fundamentals/code-analysis/style-rules/ide0003.md",
@@ -3750,6 +4148,10 @@
             "redirect_url": "/previous-versions/dotnet/framework/security/wstrustchannelfactory-and-wstrustchannel"
         },
         {
+            "source_path": "docs/framework/tools/developer-command-prompt-for-vs.md",
+            "redirect_url": "/visualstudio/ide/reference/command-prompt-powershell"
+        },
+        {
             "source_path": "docs/framework/ui-automation/ui-automation-specification-and-community-promise.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/bb986605(v=vs.100)"
         },
@@ -4296,6 +4698,11 @@
         {
             "source_path": "docs/framework/windows-workflow-foundation/using-the-interop-activity-in-a-net-framework-4-workflow.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee264174(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/wf-migration-guidance.md",
+            "redirect_url": "/dotnet/framework/windows-workflow-foundation/migration-guidance",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/framework/winforms/additional-security-considerations-in-windows-forms.md",
@@ -11371,7 +11778,7 @@
         },
         {
             "source_path": "docs/scenarios/solution-authoring/target-dotnetcore-with-msbuild.md",
-            "redirect_url": "/dotnet/core/tools/cli-msbuild-architecture"
+            "redirect_url": "/dotnet/core/tools/dotnet-migrate"
         },
         {
             "source_path": "docs/spark/tutorials/ml-sentment-analysis.md",

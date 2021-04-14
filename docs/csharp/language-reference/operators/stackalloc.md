@@ -30,7 +30,7 @@ You can assign the result of a `stackalloc` expression to a variable of one of t
   > [!NOTE]
   > We recommend using <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> types to work with stack allocated memory whenever possible.
 
-- A [pointer type](../../programming-guide/unsafe-code-pointers/pointer-types.md), as the following example shows:
+- A [pointer type](../unsafe-code.md#pointer-types), as the following example shows:
 
   [!code-csharp[stackalloc pointer](snippets/shared/StackallocOperator.cs#AssignToPointer)]
 
@@ -69,6 +69,6 @@ For more information, see the [Stack allocation](~/_csharplang/spec/unsafe-code.
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Pointer related operators](pointer-related-operators.md)
-- [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
+- [Pointer types](../unsafe-code.md#pointer-types)
 - [Memory and span-related types](../../../standard/memory-and-spans/index.md)
 - [Dos and Don'ts of stackalloc](https://vcsjones.dev/2020/02/24/stackalloc/)

@@ -1,3 +1,4 @@
+items:
 - name: What are breaking changes?
   href: index.md
 - name: Types of compatibility
@@ -18,39 +19,55 @@
   - name: Breaking changes by version
     expanded: true
     items:
-    - name: .NET 6.0
+    - name: .NET 6
       items:
       - name: Overview
         href: 6.0.md
       - name: ASP.NET Core
         items:
-        - name: "Nullable reference type annotations changed"
+        - name: Assemblies removed from shared framework
+          href: aspnet-core/6.0/assemblies-removed-from-shared-framework.md
+        - name: Nullable reference type annotations changed
           href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md
-        - name: "Obsoleted and removed APIs"
+        - name: Obsoleted and removed APIs
           href: aspnet-core/6.0/obsolete-removed-apis.md
         - name: "Blazor: Parameter name changed in RequestImageFileAsync method"
           href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
+        - name: "Blazor: WebEventDescriptor.EventArgsType property replaced"
+          href: aspnet-core/6.0/blazor-eventargstype-property-replaced.md
         - name: "Kestrel: Log message attributes changed"
           href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
+        - name: "MessagePack: Library changed in @microsoft/signalr-protocol-msgpack"
+          href: aspnet-core/6.0/messagepack-library-change.md
         - name: "Middleware: HTTPS Redirection Middleware throws exception on ambiguous HTTPS ports"
           href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
+        - name: "Razor: Compiler generates single assembly"
+          href: aspnet-core/6.0/razor-compiler-doesnt-produce-views-assembly.md
         - name: "Razor: RazorEngine APIs marked obsolete"
           href: aspnet-core/6.0/razor-engine-apis-obsolete.md
       - name: Core .NET libraries
         items:
         - name: Nullability annotation changes
           href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
+        - name: New Queryable method overloads
+          href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
+        - name: Parameters renamed in Stream-derived types
+          href: core-libraries/6.0/parameters-renamed-on-stream-derived-types.md
+        - name: Standard numeric format parsing precision
+          href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
       - name: Windows Forms
         items:
         - name: APIs throw ArgumentNullException
           href: windows-forms/6.0/apis-throw-argumentnullexception.md
+        - name: DataGridView APIs throw InvalidOperationException
+          href: windows-forms/6.0/null-owner-causes-invalidoperationexception.md
         - name: NotifyIcon.Text maximum text length increased
           href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
         - name: TableLayoutSettings properties throw InvalidEnumArgumentException
           href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
         - name: TreeNodeCollection.Item throws exception if node is assigned elsewhere
           href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
-    - name: .NET 5.0
+    - name: .NET 5
       items:
       - name: Overview
         href: 5.0.md
@@ -318,21 +335,29 @@
     items:
     - name: ASP.NET Core
       items:
-      - name: .NET 6.0
+      - name: .NET 6
         items:
-        - name: "Nullable reference type annotations changed"
+        - name: Assemblies removed from shared framework
+          href: aspnet-core/6.0/assemblies-removed-from-shared-framework.md
+        - name: Nullable reference type annotations changed
           href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md
-        - name: "Obsoleted and removed APIs"
+        - name: Obsoleted and removed APIs
           href: aspnet-core/6.0/obsolete-removed-apis.md
         - name: "Blazor: Parameter name changed in RequestImageFileAsync method"
           href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
+        - name: "Blazor: WebEventDescriptor.EventArgsType property replaced"
+          href: aspnet-core/6.0/blazor-eventargstype-property-replaced.md
         - name: "Kestrel: Log message attributes changed"
           href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
+        - name: "MessagePack: Library changed in @microsoft/signalr-protocol-msgpack"
+          href: aspnet-core/6.0/messagepack-library-change.md
         - name: "Middleware: HTTPS Redirection Middleware throws exception on ambiguous HTTPS ports"
           href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
+        - name: "Razor: Compiler generates single assembly"
+          href: aspnet-core/6.0/razor-compiler-doesnt-produce-views-assembly.md
         - name: "Razor: RazorEngine APIs marked obsolete"
           href: aspnet-core/6.0/razor-engine-apis-obsolete.md
-      - name: .NET 5.0
+      - name: .NET 5
         items:
         - name: ASP.NET Core apps deserialize quoted numbers
           href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
@@ -410,7 +435,7 @@
         href: aspnetcore.md
     - name: Code analysis
       items:
-      - name: .NET 5.0
+      - name: .NET 5
         items:
         - name: CA1416 warning
           href: code-analysis/5.0/ca1416-platform-compatibility-analyzer.md
@@ -430,11 +455,17 @@
           href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
     - name: Core .NET libraries
       items:
-      - name: .NET 6.0
+      - name: .NET 6
         items:
         - name: Nullability annotation changes
           href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
-      - name: .NET 5.0
+        - name: New Queryable method overloads
+          href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
+        - name: Parameters renamed in Stream-derived types
+          href: core-libraries/6.0/parameters-renamed-on-stream-derived-types.md
+        - name: Standard numeric format parsing precision
+          href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
+      - name: .NET 5
         items:
         - name: Assembly-related API changes for single-file publishing
           href: core-libraries/5.0/assembly-api-behavior-changes-for-single-file-publish.md
@@ -496,7 +527,7 @@
         href: corefx.md
     - name: Cryptography
       items:
-      - name: .NET 5.0
+      - name: .NET 5
         items:
         - name: Cryptography APIs not supported on browser
           href: cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md
@@ -518,7 +549,7 @@
         href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Globalization
       items:
-      - name: .NET 5.0
+      - name: .NET 5
         items:
         - name: Use ICU libraries on Windows
           href: globalization/5.0/icu-globalization-api.md
@@ -532,7 +563,7 @@
         href: globalization.md
     - name: Interop
       items:
-      - name: .NET 5.0
+      - name: .NET 5
         items:
         - name: Support for WinRT is removed
           href: interop/5.0/built-in-support-for-winrt-removed.md
@@ -542,7 +573,7 @@
           href: interop/5.0/function-suffix-pinvoke.md
     - name: MSBuild
       items:
-      - name: .NET 5.0
+      - name: .NET 5
         items:
         - name: Directory.Packages.props files imported by default
           href: msbuild/5.0/directory-packages-props-imported-by-default.md
@@ -552,11 +583,11 @@
           href: msbuild/5.0/publishdepsfilepath-behavior-change.md
         - name: TargetFramework change from netcoreapp to net
           href: msbuild/5.0/targetframework-name-change.md
-      - name: .NET 3.0
+      - name: .NET Core 2.1 - 3.1
         href: msbuild.md
     - name: Networking
       items:
-      - name: .NET 5.0
+      - name: .NET 5
         items:
         - name: Cookie path handling conforms to RFC 6265
           href: networking/5.0/cookie-path-conforms-to-rfc6265.md
@@ -572,7 +603,7 @@
         href: networking.md
     - name: Security
       items:
-      - name: .NET 5.0
+      - name: .NET 5
         items:
         - name: Code access security APIs are obsolete
           href: core-libraries/5.0/code-access-security-apis-obsolete.md
@@ -582,7 +613,7 @@
           href: core-libraries/5.0/utf-7-code-paths-obsolete.md
     - name: Serialization
       items:
-      - name: .NET 5.0
+      - name: .NET 5
         items:
         - name: BinaryFormatter.Deserialize rewraps exceptions
           href: serialization/5.0/binaryformatter-deserialize-rewraps-exceptions.md
@@ -602,17 +633,19 @@
         href: visualbasic.md
     - name: Windows Forms
       items:
-      - name: .NET 6.0
+      - name: .NET 6
         items:
         - name: APIs throw ArgumentNullException
           href: windows-forms/6.0/apis-throw-argumentnullexception.md
+        - name: DataGridView APIs throw InvalidOperationException
+          href: windows-forms/6.0/null-owner-causes-invalidoperationexception.md
         - name: NotifyIcon.Text maximum text length increased
           href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
         - name: TableLayoutSettings properties throw InvalidEnumArgumentException
           href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
         - name: TreeNodeCollection.Item throws exception if node is assigned elsewhere
           href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
-      - name: .NET 5.0
+      - name: .NET 5
         items:
         - name: Native code can't access Windows Forms objects
           href: windows-forms/5.0/winforms-objects-not-accessible-from-native-code.md
@@ -638,7 +671,7 @@
         href: winforms.md
     - name: WPF
       items:
-      - name: .NET 5.0
+      - name: .NET 5
         items:
         - name: OutputType set to WinExe
           href: windows-forms/5.0/automatically-infer-winexe-output-type.md

@@ -17,7 +17,7 @@ In this topic, you will use .NET to read environmental conditions from a sensor.
 ## Prerequisites
 
 - [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
-- [BME280](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout) <span class="docon docon-navigate-external x-hidden-focus"></span> humidity/barometric pressure/temperature sensor breakout
+- [BME280](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout) humidity/barometric pressure/temperature sensor breakout
 - Jumper wires
 - Breadboard (optional)
 - Raspberry Pi GPIO breakout board (optional)
@@ -97,7 +97,7 @@ Congratulations! You've used I2C to read values from a temperature/humidity/baro
 
 ## Get the source code
 
-The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/SensorTutorial) <span class="docon docon-navigate-external x-hidden-focus"></span>.
+The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/SensorTutorial).
 
 ## Next steps
 

@@ -13,7 +13,7 @@ Data Source=:memory:
 
 ## Shareable in-memory databases
 
-In-memory databases can be shared between multiple connections by using `Mode=Memory` and `Cache=Shared` in the connection string. The `Data Source` keyword is used to give the in-memory database a name. Connection strings using the same name will access the same in-memory database. The database persists as long as at least one connection to it remains open. A [sample](https://github.com/dotnet/docs/blob/master/samples/snippets/standard/data/sqlite/InMemorySample/Program.cs) demonstrating this is available on GitHub.
+In-memory databases can be shared between multiple connections by using `Mode=Memory` and `Cache=Shared` in the connection string. The `Data Source` keyword is used to give the in-memory database a name. Connection strings using the same name will access the same in-memory database. The database persists as long as at least one connection to it remains open. A [sample](https://github.com/dotnet/docs/blob/main/samples/snippets/standard/data/sqlite/InMemorySample/Program.cs) demonstrating this is available on GitHub.
 
 ```connectionstring
 Data Source=InMemorySample;Mode=Memory;Cache=Shared

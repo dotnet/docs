@@ -16,6 +16,7 @@
         "dest": ".",
         "exclude": [
           "samples/**/*.*",
+          "**/snippets/**",
           "**/includes/**",
           "**/util/**",
           "***/contributing.md"
@@ -204,6 +205,11 @@
         "docs/framework/**/*how-to*.md": "how-to",
         "docs/framework/additional-apis/**/**.md": "managed-reference",
         "docs/framework/unmanaged-api/**/**.md": "reference",
+        "docs/framework/wcf/diagnostics/etw/**.md": "reference",
+        "docs/framework/wcf/diagnostics/event-logging/**.md": "reference",
+        "docs/framework/wcf/diagnostics/performance-counters/**.md": "reference",
+        "docs/framework/wcf/diagnostics/tracing/**.md": "reference",
+        "docs/framework/wcf/diagnostics/wmi/**.md": "reference",
         "docs/fsharp/language-reference/**/**.md": "language-reference",
         "docs/standard/**/*how-to*.md": "how-to",
         "docs/standard/base-types/*.md": "how-to"

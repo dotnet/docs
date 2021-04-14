@@ -30,7 +30,7 @@ The collected trace file can be viewed on Windows using the Events view in [Perf
 
 ## Example (on Windows)
 
-This example uses the [assembly loading extension points sample](https://github.com/dotnet/samples/tree/master/core/extensions/AssemblyLoading). The application attempts to load an assembly `MyLibrary` - an assembly that is not referenced by the application and thus requires handling in an assembly loading extension point to be successfully loaded.
+This example uses the [assembly loading extension points sample](https://docs.microsoft.com/samples/dotnet/samples/assembly-loading-extension-points/). The application attempts to load an assembly `MyLibrary` - an assembly that is not referenced by the application and thus requires handling in an assembly loading extension point to be successfully loaded.
 
 ### Collect the trace
 

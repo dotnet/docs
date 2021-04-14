@@ -2,7 +2,7 @@
 title: The Dapr publish & subscribe building block
 description: A description of the Dapr publish & subscribe building-block and how to apply it
 author: edwinvw
-ms.date: 02/07/2021
+ms.date: 02/17/2021
 ---
 
 # The Dapr publish & subscribe building block
@@ -147,7 +147,7 @@ var data = new OrderData
   orderId = "123456",
   productId = "67890",
   amount = 2
-}
+};
 
 var daprClient = new DaprClientBuilder().Build();
 
@@ -288,7 +288,7 @@ You have to specify several elements with every subscription:
 
 ## Reference application: eShopOnDapr
 
-The accompanying [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr) app provides an end-to-end reference architecture for constructing a microservices application implementing Dapr. eShopOnDapr is an evolution of the widely popular [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainer) app, created several years ago. Both versions use the pub/sub pattern for communicating [integration events](https://devblogs.microsoft.com/cesardelatorre/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/#integration-events) across microservices. Integration events include:
+The accompanying [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr) app provides an end-to-end reference architecture for constructing a microservices application implementing Dapr. eShopOnDapr is an evolution of the widely popular [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) app, created several years ago. Both versions use the pub/sub pattern for communicating [integration events](https://devblogs.microsoft.com/cesardelatorre/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/#integration-events) across microservices. Integration events include:
 
 - When a user checks-out a shopping basket.
 - When a payment for an order has succeeded.

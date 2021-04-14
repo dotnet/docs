@@ -169,29 +169,29 @@ Here is a list of data types commonly used in Windows APIs and which C# types to
 
 The following types are the same size on 32-bit and 64-bit Windows, despite their names.
 
-| Width | Windows          | C (Windows)          | C#       | Alternative                          |
-|:------|:-----------------|:---------------------|:---------|:-------------------------------------|
-| 32    | `BOOL`           | `int`                | `int`    | `bool`                               |
-| 8     | `BOOLEAN`        | `unsigned char`      | `byte`   | `[MarshalAs(UnmanagedType.U1)] bool` |
-| 8     | `BYTE`           | `unsigned char`      | `byte`   |                                      |
-| 8     | `CHAR`           | `char`               | `sbyte`  |                                      |
-| 8     | `UCHAR`          | `unsigned char`      | `byte`   |                                      |
-| 16    | `SHORT`          | `short`              | `short`  |                                      |
-| 16    | `CSHORT`         | `short`              | `short`  |                                      |
-| 16    | `USHORT`         | `unsigned short`     | `ushort` |                                      |
-| 16    | `WORD`           | `unsigned short`     | `ushort` |                                      |
-| 16    | `ATOM`           | `unsigned short`     | `ushort` |                                      |
-| 32    | `INT`            | `int`                | `int`    |                                      |
-| 32    | `LONG`           | `long`               | `int`    |                                      |
-| 32    | `ULONG`          | `unsigned long`      | `uint`   |                                      |
-| 32    | `DWORD`          | `unsigned long`      | `uint`   |                                      |
-| 64    | `QWORD`          | `long long`          | `long`   |                                      |
-| 64    | `LARGE_INTEGER`  | `long long`          | `long`   |                                      |
-| 64    | `LONGLONG`       | `long long`          | `long`   |                                      |
-| 64    | `ULONGLONG`      | `unsigned long long` | `ulong`  |                                      |
-| 64    | `ULARGE_INTEGER` | `unsigned long long` | `ulong`  |                                      |
-| 32    | `HRESULT`        | `long`               | `int`    |                                      |
-| 32    | `NTSTATUS`       | `long`               | `int`    |                                      |
+| Width | Windows          | C#       | Alternative                          |
+|:------|:-----------------|:---------|:-------------------------------------|
+| 32    | `BOOL`           | `int`    | `bool`                               |
+| 8     | `BOOLEAN`        | `byte`   | `[MarshalAs(UnmanagedType.U1)] bool` |
+| 8     | `BYTE`           | `byte`   |                                      |
+| 8     | `CHAR`           | `sbyte`  |                                      |
+| 8     | `UCHAR`          | `byte`   |                                      |
+| 16    | `SHORT`          | `short`  |                                      |
+| 16    | `CSHORT`         | `short`  |                                      |
+| 16    | `USHORT`         | `ushort` |                                      |
+| 16    | `WORD`           | `ushort` |                                      |
+| 16    | `ATOM`           | `ushort` |                                      |
+| 32    | `INT`            | `int`    |                                      |
+| 32    | `LONG`           | `int`    |  See [`CLong` and `CULong`](#cc-long). |
+| 32    | `ULONG`          | `uint`   |  See [`CLong` and `CULong`](#cc-long). |
+| 32    | `DWORD`          | `uint`   |                                      |
+| 64    | `QWORD`          | `long`   |                                      |
+| 64    | `LARGE_INTEGER`  | `long`   |                                      |
+| 64    | `LONGLONG`       | `long`   |                                      |
+| 64    | `ULONGLONG`      | `ulong`  |                                      |
+| 64    | `ULARGE_INTEGER` | `ulong`  |                                      |
+| 32    | `HRESULT`        | `int`    |                                      |
+| 32    | `NTSTATUS`       | `int`    |                                      |
 
 The following types, being pointers, do follow the width of the platform. Use `IntPtr`/`UIntPtr` for these.
 
@@ -210,6 +210,101 @@ A Windows `PVOID` which is a C `void*` can be marshaled as either `IntPtr` or `U
 [Windows Data Types](/windows/desktop/WinProg/windows-data-types)
 
 [Data Type Ranges](/cpp/cpp/data-type-ranges)
+
+### Formerly built-in supported types
+
+There are rare instances when built-in support for a type is removed.
+
+The [`UnmanagedType.HString`](xref:System.Runtime.InteropServices.UnmanagedType) built-in marshal support was removed in the .NET 5 release. You must recompile binaries that use this marshalling type and that target a previous framework. It's still possible to marshal this type, but you must marshal it manually, as the following code example shows. This code will work moving forward and is also compatible with previous frameworks.
+
+```csharp
+static class HSTRING
+{
+    public static IntPtr FromString(string s)
+    {
+        Marshal.ThrowExceptionForHR(WindowsCreateString(s, s.Length, out IntPtr h));
+        return h;
+    }
+
+    public static void Delete(IntPtr s)
+    {
+        Marshal.ThrowExceptionForHR(WindowsDeleteString(s));
+    }
+
+    [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll", CallingConvention = CallingConvention.StdCall, ExactSpelling = true)]
+    private static extern int WindowsCreateString(
+        [MarshalAs(UnmanagedType.LPWStr)] string sourceString, int length, out IntPtr hstring);
+
+    [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll", CallingConvention = CallingConvention.StdCall, ExactSpelling = true)]
+    private static extern int WindowsDeleteString(IntPtr hstring);
+}
+
+// Usage example
+IntPtr hstring = HSTRING.FromString("HSTRING from .NET to WinRT API");
+try
+{
+    // Pass hstring to WinRT or Win32 API.
+}
+finally
+{
+    HSTRING.Delete(hstring);
+}
+```
+
+## Cross-platform data type considerations
+
+There are types in the C/C++ language that have latitude in how they are defined. When writing cross-platform interop, cases can arise where platforms differ and can cause issues if not considered.
+
+### C/C++ `long`
+
+C/C++ `long` and C# `long` are not the same types. Using C# `long` to interop with C/C++ `long` is almost never correct.
+
+The `long` type in C/C++ is defined to have ["at least 32"](https://en.cppreference.com/w/c/language/arithmetic_types) bits. This means there is a minimum number of required bits, but platforms can choose to use more bits if desired. The following table illustrates the differences in provided bits for the C/C++ `long` data type between platforms.
+
+| Platform    | 32-bit | 64-bit |
+|:------------|:-------|:-------|
+| Windows     | 32     | 32     |
+| macOS/\*nix | 32     | 64     |
+
+These differences can make authoring cross-platform P/Invokes difficult when the native function is defined to use `long` on all platforms.
+
+In .NET 6 and later versions, use the [`CLong` and `CULong`](https://github.com/dotnet/runtime/issues/13788) types for interop with C/C++ `long` and `unsigned long` data types. The following example is for `CLong`, but you can use `CULong` to abstract `unsigned long` in a similar way.
+
+```csharp
+// Cross platform C function
+// long Function(long a);
+[DllImport("NativeLib")]
+extern static CLong Function(CLong a);
+
+// Usage
+nint result = Function(new CLong(10)).Value;
+```
+
+When targeting .NET 5 and earlier versions, you should declare separate Windows and non-Windows signatures to handle the problem.
+
+```csharp
+static readonly bool IsWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
+
+// Cross platform C function
+// long Function(long a);
+
+[DllImport("NativeLib", EntryPoint = "Function")]
+extern static int FunctionWindows(int a);
+
+[DllImport("NativeLib", EntryPoint = "Function")]
+extern static nint FunctionUnix(nint a);
+
+// Usage
+nint result;
+if (IsWindows)
+{
+    result = FunctionWindows(10);
+}
+else
+{
+    result = FunctionUnix(10);
+}
+```
 
 ## Structs
 

@@ -2,8 +2,7 @@
 title: Deconstructing tuples and other types
 description: Learn how to deconstruct tuples and other types.
 ms.technology: csharp-fundamentals
-ms.date: 11/23/2017
-ms.assetid: 0b0c4b0f-4a47-4f66-9b8e-f5c63b195960
+ms.date: 03/22/2021
 ---
 # Deconstructing tuples and other types
 
@@ -60,7 +59,7 @@ The following example illustrates the use of tuples with discards. The `QueryCit
 
 ## Deconstructing user-defined types
 
-C# does not offer built-in support for deconstructing non-tuple types. However, as the author of a class, a struct, or an interface, you can allow instances of the type to be deconstructed by implementing one or more `Deconstruct` methods. The method returns void, and each value to be deconstructed is indicated by an [out](language-reference/keywords/out-parameter-modifier.md) parameter in the method signature. For example, the following `Deconstruct` method of a `Person` class returns the first, middle, and last name:
+C# does not offer built-in support for deconstructing non-tuple types other than the [`record`](#deconstructing-a-record-type) and [DictionaryEntry](xref:System.Collections.DictionaryEntry.Deconstruct%2A) types. However, as the author of a class, a struct, or an interface, you can allow instances of the type to be deconstructed by implementing one or more `Deconstruct` methods. The method returns void, and each value to be deconstructed is indicated by an [out](language-reference/keywords/out-parameter-modifier.md) parameter in the method signature. For example, the following `Deconstruct` method of a `Person` class returns the first, middle, and last name:
 
 [!code-csharp[Class-deconstruct](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-class1.cs#1)]
 
@@ -93,6 +92,10 @@ If you didn't author a class, struct, or interface, you can still deconstruct ob
 The following example defines two `Deconstruct` extension methods for the <xref:System.Reflection.PropertyInfo?displayProperty=nameWithType> class. The first returns a set of values that indicate the characteristics of the property, including its type, whether it's static or instance, whether it's read-only, and whether it's indexed. The second indicates the property's accessibility. Because the accessibility of get and set accessors can differ, Boolean values indicate whether the property has separate get and set accessors and, if it does, whether they have the same accessibility. If there is only one accessor or both the get and the set accessor have the same accessibility, the `access` variable indicates the accessibility of the property as a whole. Otherwise, the accessibility of the get and set accessors are indicated by the `getAccess` and `setAccess` variables.
 
 [!code-csharp[Extension-deconstruct](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-extension1.cs)]
+
+## Deconstructing a `record` type
+
+When you declare a [record](language-reference/builtin-types/record.md) type by using two or more positional parameters, the compiler creates a `Deconstruct` method with an `out` parameter for each positional parameter in the `record` declaration. For more information, see [Positional syntax for property definition](language-reference/builtin-types/record.md#positional-syntax-for-property-definition) and [Deconstructor behavior in derived records](language-reference/builtin-types/record.md#deconstructor-behavior-in-derived-records).
 
 ## See also
 

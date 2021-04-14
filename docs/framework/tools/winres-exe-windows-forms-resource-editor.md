@@ -17,7 +17,7 @@ ms.assetid: cb8bc835-9221-4888-af53-1a4f5fad6c48
 
 The Windows Resource Localization Editor, Winres.exe, is a visual layout tool that helps localization experts localize Windows Forms user interface (UI) resources used by forms. The .resx or .resources files that are used as input to Winres.exe can be created using a visual design environment such as Microsoft Visual Studio. For information on deploying resources in .NET Framework applications, see [Resources in Desktop Apps](../resources/index.md).
 
-Winres.exe is installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio. For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
+Winres.exe is installed with Visual Studio. To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
 
 ## Syntax
 

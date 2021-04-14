@@ -31,9 +31,7 @@ The Visual Basic compiler calls the Assembly Linker (*Al.exe*, also known as Ali
 
 2. Delete the COM reference that is generating the error from your project.
 
-3. Open the [Developer Command Prompt for Visual Studio](../../../framework/tools/developer-command-prompt-for-vs.md).
-
-   In Windows 10, enter **Developer command prompt** into the search box on the task bar. Then, select **Developer Command Prompt for VS 2017** from the results list.
+3. Open [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
 
 4. Change the directory to the directory where you want to place your assembly wrapper.
 
@@ -59,4 +57,4 @@ The Visual Basic compiler calls the Assembly Linker (*Al.exe*, also known as Ali
 - [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)
 - [Sn.exe (Strong Name Tool)](../../../framework/tools/sn-exe-strong-name-tool.md)
 - [How to: Create a Public-Private Key Pair](../../../standard/assembly/create-public-private-key-pair.md)
-- [Talk to Us](/visualstudio/ide/feedback-options)
+- [Visual Studio feedback options](/visualstudio/ide/feedback-options)

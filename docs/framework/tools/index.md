@@ -1,7 +1,7 @@
 ---
-title: ".NET Framework Tools"
+title: .NET Framework tools
 description: See a list of .NET tools that make it easier for you to create, deploy, and manage applications and components that target .NET.
-ms.date: "03/30/2017"
+ms.date: 03/30/2017
 helpviewer_keywords:
   - "command line, .NET Framework tools"
   - ".NET Framework, tools"
@@ -9,15 +9,15 @@ helpviewer_keywords:
   - "running .NET Framework tools"
 ms.assetid: a2ca532d-91f7-426a-9303-417c2ee1247c
 ---
-# .NET Framework Tools
+# .NET Framework tools
 
 The .NET Framework tools make it easier for you to create, deploy, and manage applications and components that target the .NET Framework.
 
 Most of the .NET Framework tools described in this section are automatically installed with Visual Studio. To download Visual Studio, visit the [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) page.
 
-You can run all the tools from the command line with the exception of the Assembly Cache Viewer (*Shfusion.dll*). You must access *Shfusion.dll* from File Explorer.
+You can run all the tools from the command line, with the exception of the Assembly Cache Viewer (*Shfusion.dll*). You must access *Shfusion.dll* from File Explorer.
   
-The best way to run the command-line tools is by using the Developer Command Prompt for Visual Studio. These utilities enable you to run the tools easily, without navigating to the installation folder. For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
+The best way to run the command-line tools is by using one of the developer shells that Visual Studio installs. These utilities enable you to run the tools easily, without having to navigate to the installation folder. For more information, see [Developer Command Prompt and Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
 
 > [!NOTE]
 > Some tools are specific to either 32-bit computers or 64-bit computers. Be sure to run the appropriate version of the tool for your computer.
@@ -41,9 +41,6 @@ Manages certificates, certificate trust lists (CTLs), and certificate revocation
 
 - [Clrver.exe (CLR Version Tool)](clrver-exe-clr-version-tool.md)  
 Reports all the installed versions of the common language runtime (CLR) on the computer.
-
-- [Command Prompts](developer-command-prompt-for-vs.md)  
-Enables you to use .NET Framework tools more easily. It is a command prompt that automatically sets specific environment variables.
 
 - [CorFlags.exe (CorFlags Conversion Tool)](corflags-exe-corflags-conversion-tool.md)  
 Lets you configure the CorFlags section of the header of a portable executable (PE) image.

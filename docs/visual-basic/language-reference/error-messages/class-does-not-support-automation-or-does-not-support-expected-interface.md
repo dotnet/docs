@@ -19,4 +19,4 @@ Either the class you specified in the `GetObject` or `CreateObject` function cal
 ## See also
 
 - [Error Types](../../programming-guide/language-features/error-types.md)
-- [Talk to Us](/visualstudio/ide/feedback-options)
+- [Visual Studio feedback options](/visualstudio/ide/feedback-options)

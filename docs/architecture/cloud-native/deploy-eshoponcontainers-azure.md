@@ -50,7 +50,7 @@ Note how the template describes a dynamic set of key/value pairs. When the templ
 
 You'll find the eShopOnContainers helm charts in the /k8s/helm folder. Figure 2-6 shows how the different components of the application are organized into a folder structure used by helm to define and managed deployments.
 
-![eShopOnContainers Architecture](./media/eshoponcontainers-helm-folder.png)
+![The eShopOnContainers helm folder](./media/eshoponcontainers-helm-folder.png)
 **Figure 2-6**. The eShopOnContainers helm folder.
 
 Each individual component is installed using a `helm install` command. eShop includes a "deploy all" script that loops through and installs the components using their respective helm charts. The result is a repeatable process, versioned with the application in source control, that anyone on the team can deploy to an AKS cluster with a one-line script command.
@@ -65,12 +65,12 @@ Developers share a running (development) instance in an AKS cluster that contain
 
 In Figure 2-7, you can see that Developer Susie has deployed an updated version of the Bikes microservice into her dev space. She's then able to test her changes using a custom URL starting with the name of her space (susie.s.dev.myapp.eus.azds.io).
 
-![eShopOnContainers Architecture](./media/azure-devspaces-one.png)
+![eShopOnContainers Architecture showing Bikes microservice](./media/azure-devspaces-one.png)
 **Figure 2-7**. Developer Susie deploys her own version of the Bikes microservice and tests it.
 
 At the same time, developer John is customizing the Reservations microservice and needs to test his changes. He deploys his changes to his own dev space without conflicting with Susie's changes as shown in Figure 2-8. John then tests his changes using his own URL that is prefixed with the name of his space (john.s.dev.myapp.eus.azds.io).
 
-![eShopOnContainers Architecture](./media/azure-devspaces-two.png)
+![eShopOnContainers Architecture showing John's version of Reservations microservice](./media/azure-devspaces-two.png)
 **Figure 2-8**. Developer John deploys his own version of the Reservations microservice and tests it without conflicting with other developers.
 
 Using Azure Dev Spaces, teams can work directly with AKS while independently changing, deploying, and testing their changes. This approach reduces the need for separate dedicated hosted environments since every developer effectively has their own AKS environment. Developers can work with Azure Dev Spaces using its CLI or launch their application to Azure Dev Spaces directly from Visual Studio. [Learn more about how Azure Dev Spaces works and is configured.](/azure/dev-spaces/how-dev-spaces-works)

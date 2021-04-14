@@ -17,7 +17,7 @@ This article is a high-level overview of EventPipe describing when and how to us
 
 EventPipe aggregates events emitted by runtime components - for example, the Just-In-Time compiler or the garbage collector - and events written from [EventSource](xref:System.Diagnostics.Tracing.EventSource) instances in the libraries and user code.
 
-The events are then serialized and can be written directly to a file or consumed through a Diagnostics Port from out-of-proces. On Windows, Diagnostic Ports are implemented as `NamedPipe`s. On non-Windows platforms, such as Linux or macOS, it is implemented using Unix Domain Sockets. For more information about the Diagnostics Port and how to interact with it via its custom inter-process communication protocol, see the [diagnostics IPC protocol documentation](https://github.com/dotnet/diagnostics/blob/master/documentation/design-docs/ipc-protocol.md).
+The events are then serialized and can be written directly to a file or consumed through a Diagnostics Port from out-of-proces. On Windows, Diagnostic Ports are implemented as `NamedPipe`s. On non-Windows platforms, such as Linux or macOS, it is implemented using Unix Domain Sockets. For more information about the Diagnostics Port and how to interact with it via its custom inter-process communication protocol, see the [diagnostics IPC protocol documentation](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/ipc-protocol.md).
 
 EventPipe then writes the serialized events in the `.nettrace` file format, either as a stream via Diagnostic Ports or directly to a file. To learn more about the EventPipe serialization format, refer to the [EventPipe format documentation](https://github.com/microsoft/perfview/blob/master/src/TraceEvent/EventPipe/EventPipeFormat.md).
 
@@ -44,7 +44,7 @@ You can use EventPipe to trace your .NET application in many ways:
 
 * Use one of the [diagnostics tools](#tools-that-use-eventpipe) that are built on top of EventPipe.
 
-* Use [Microsoft.Diagnostics.NETCore.Client](https://github.com/dotnet/diagnostics/blob/master/documentation/diagnostics-client-library-instructions.md) library to write your own tool to configure and start EventPipe sessions yourself.
+* Use [Microsoft.Diagnostics.NETCore.Client](https://github.com/dotnet/diagnostics/blob/main/documentation/diagnostics-client-library-instructions.md) library to write your own tool to configure and start EventPipe sessions yourself.
 
 * Use [environment variables](#trace-using-environment-variables) to start EventPipe.
 
@@ -72,10 +72,14 @@ However, you can use the following environment variables to set up an EventPipe 
 
 * `COMPlus_EventPipeOutputPath`: The path to the output EventPipe trace file when it's configured to run via `COMPlus_EnableEventPipe`. The default value is `trace.nettrace`, which will be created in the same directory that the app is running from.
 
-* `COMPlus_CircularBufferMB`: The size of the internal buffer that is used by EventPipe when it's configured to run via `COMPlus_EnableEventPipe`.
+* `COMPlus_EventPipeCircularMB`: A hexadecimal value that represents the size of EventPipe's internal buffer in megabytes. This configuration value is only used when EventPipe is configured to run via `COMPlus_EnableEventPipe`. The default buffer size is 1024MB which translates to this environment variable being set to `400`, since `0x400` == `1024`.
+
+  > [!NOTE]
+  > If the target process writes events too frequently, it can overflow this buffer and some events might be dropped. If too many events are getting dropped, increase the buffer size to see if the number of dropped events reduces. If the number of dropped events does not decrease with a larger buffer size, it may be due to a slow reader preventing the target process' buffers from being flushed.
+
+* `COMPlus_EventPipeProcNumbers`: Set this to `1` to enable capturing processor numbers in EventPipe event headers. The default value is `0`.
 
 * `COMPlus_EventPipeConfig`: Sets up the EventPipe session configuration when starting an EventPipe session with `COMPlus_EnableEventPipe`.
-
   The syntax is as follows:
 
   `<provider>:<keyword>:<level>`

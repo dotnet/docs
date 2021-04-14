@@ -10,11 +10,11 @@ namespace HelloWorld
         public static void Main(string[] args)
         {
             // <MainMethod>
-            Console.WriteLine("\nWhat is your name? ");
+            Console.WriteLine("What is your name?");
             var name = Console.ReadLine();
-            var date = DateTime.Now;
-            Console.WriteLine($"\nHello, {name}, on {date:d} at {date:t}!");
-            Console.Write("\nPress any key to exit...");
+            var currentDate = DateTime.Now;
+            Console.WriteLine($"{Environment.NewLine}Hello, {name}, on {currentDate:d} at {currentDate:t}!");
+            Console.Write($"{Environment.NewLine}Press any key to exit...");
             Console.ReadKey(true);
             // </MainMethod>
         }

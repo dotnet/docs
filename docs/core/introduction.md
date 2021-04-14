@@ -48,13 +48,13 @@ Supported processor architectures include:
 
 .NET lets you use platform-specific capabilities, such as operating system APIs. Examples are Windows Forms and WPF on Windows and the native bindings to each mobile platform from Xamarin.
 
-For more information, see [Supported OS lifecycle policy](https://github.com/dotnet/core/blob/master/os-lifecycle-policy.md) and [.NET RID Catalog](rid-catalog.md).
+For more information, see [Supported OS lifecycle policy](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) and [.NET RID Catalog](rid-catalog.md).
 
 ## Open source
 
-.NET is open source, using [MIT and Apache 2 licenses](https://github.com/dotnet/runtime/blob/master/LICENSE.TXT). .NET is a project of the [.NET Foundation](https://dotnetfoundation.org/).
+.NET is open source, using [MIT and Apache 2 licenses](https://github.com/dotnet/runtime/blob/main/LICENSE.TXT). .NET is a project of the [.NET Foundation](https://dotnetfoundation.org/).
 
-For more information, see the [list of project repositories on GitHub.com](https://github.com/dotnet/core/blob/master/Documentation/core-repos.md).
+For more information, see the [list of project repositories on GitHub.com](https://github.com/dotnet/core/blob/main/Documentation/core-repos.md).
 
 ## Support
 
@@ -126,7 +126,7 @@ The integrated development environments for .NET include:
 
 The [.NET SDK](sdk.md) is a set of libraries and tools for developing and running .NET applications.
 
-When you [download .NET](https://dotnet.microsoft.com/download/dotnet-core/), you can choose the SDK or a *runtime*, such as the .NET runtime or the ASP.NET Core runtime. Install a runtime on a machine that you want to prepare for running .NET apps. Install the SDK on a machine that you want to use for development. When you download the SDK, you automatically get the runtimes with it.
+When you [download .NET](https://dotnet.microsoft.com/download/dotnet), you can choose the SDK or a *runtime*, such as the .NET runtime or the ASP.NET Core runtime. Install a runtime on a machine that you want to prepare for running .NET apps. Install the SDK on a machine that you want to use for development. When you download the SDK, you automatically get the runtimes with it.
 
 The SDK download includes the following components:
 
@@ -277,7 +277,7 @@ Here are some examples of types defined in the .NET runtime libraries:
 * [Serialization](../standard/serialization/index.md) utility types, such as <xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> and <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>.
 * High-performance types, such as <xref:System.Span%601?displayProperty=nameWithType>, <xref:System.Numerics.Vector?displayProperty=nameWithType>, and [Pipelines](../standard/io/pipelines.md).
 
-For more information, see the [Runtime libraries overview](../standard/runtime-libraries-overview.md). The source code for the libraries is in [the GitHub dotnet/runtime repository](https://github.com/dotnet/runtime/tree/master/src/libraries).
+For more information, see the [Runtime libraries overview](../standard/runtime-libraries-overview.md). The source code for the libraries is in [the GitHub dotnet/runtime repository](https://github.com/dotnet/runtime/tree/main/src/libraries).
 
 ### Extensions to the runtime libraries
 
@@ -334,7 +334,7 @@ Some of the terminology for .NET can be confusing because the same word is used 
   |Context  |"runtime" meaning |
   |---------|---------|
   | [Common Language Runtime (CLR)](#clr)| The execution environment for a managed program. The OS is part of the runtime environment but isn't part of the .NET runtime. |
-  | [.NET runtime on the .NET download page](https://dotnet.microsoft.com/download/dotnet-core) | The [CLR](#clr) and [runtime libraries](#runtime-libraries), which together provide support for running [framework-dependent](#deployment-models) apps. The page also offers runtime choices for ASP.NET Core server apps and Windows desktop apps. |
+  | [.NET runtime on the .NET download page](https://dotnet.microsoft.com/download/dotnet) | The [CLR](#clr) and [runtime libraries](#runtime-libraries), which together provide support for running [framework-dependent](#deployment-models) apps. The page also offers runtime choices for ASP.NET Core server apps and Windows desktop apps. |
   | [Runtime Identifier (RID)](rid-catalog.md) | The OS platform and CPU architecture that a .NET app runs on. For example: Windows x64, Linux x64. |
 
 * **framework**
@@ -344,7 +344,7 @@ Some of the terminology for .NET can be confusing because the same word is used 
   | .NET Framework | The original, Windows-only implementation of .NET. "Framework" is capitalized. |
   | target framework | The collection of APIs that a .NET app or library relies on. Examples: .NET Core 3.1, .NET Standard 2.0 |
   | Target Framework Moniker (TFM)  | A TFM is a standardized token format for specifying the target framework of a .NET app or library. Example: `net462` for .NET Framework 4.6.2. |
-  | framework-dependent app | An app that can only run on a machine where you've installed the runtime from the [.NET download page](https://dotnet.microsoft.com/download/dotnet-core). "Framework" in this usage is the same thing as the "runtime" that you download from the .NET download page. |
+  | framework-dependent app | An app that can only run on a machine where you've installed the runtime from the [.NET download page](https://dotnet.microsoft.com/download/dotnet). "Framework" in this usage is the same thing as the "runtime" that you download from the .NET download page. |
   | framework libraries | Sometimes used as a synonym for [runtime libraries](#runtime-libraries). |
 
 * **SDK**
@@ -379,7 +379,7 @@ For more information, see [Native interoperability](../standard/native-interop/i
 
 Depending on language support, the CLR lets you access native memory and do pointer arithmetic via `unsafe` code. These operations are needed for certain algorithms and system interoperability. Although powerful, use of unsafe code is discouraged unless it's necessary to interoperate with system APIs or implement the most efficient algorithm. Unsafe code may not execute the same way in different environments and also loses the benefits of a garbage collector and type safety. It's recommended to confine and centralize unsafe code as much as possible and test that code thoroughly.
 
-For more information, see [Unsafe code and pointers](../csharp/programming-guide/unsafe-code-pointers/index.md).
+For more information, see [Unsafe code and pointers](../csharp/language-reference/unsafe-code.md).
 
 ## Next steps
 

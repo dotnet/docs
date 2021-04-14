@@ -1,17 +1,17 @@
 ---
 title: "Breaking change: ASP.NET Core apps allow deserializing quoted numbers"
-description: Learn about the breaking change in .NET 5.0 where ASP.NET Core apps will successfully deserialize numbers that are represented as JSON strings instead of throwing an exception.
+description: Learn about the breaking change in .NET 5 where ASP.NET Core apps will successfully deserialize numbers that are represented as JSON strings instead of throwing an exception.
 ms.date: 10/21/2020
 ---
 # ASP.NET Core apps allow deserializing quoted numbers
 
-Starting in .NET 5.0, ASP.NET Core apps use the default deserialization options as specified by <xref:System.Text.Json.JsonSerializerDefaults.Web?displayProperty=nameWithType>. The <xref:System.Text.Json.JsonSerializerDefaults.Web> set of options includes setting <xref:System.Text.Json.JsonSerializerOptions.NumberHandling> to <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString?displayProperty=nameWithType>. This change means that ASP.NET Core apps will successfully deserialize numbers that are represented as JSON strings instead of throwing an exception.
+Starting in .NET 5, ASP.NET Core apps use the default deserialization options as specified by <xref:System.Text.Json.JsonSerializerDefaults.Web?displayProperty=nameWithType>. The <xref:System.Text.Json.JsonSerializerDefaults.Web> set of options includes setting <xref:System.Text.Json.JsonSerializerOptions.NumberHandling> to <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString?displayProperty=nameWithType>. This change means that ASP.NET Core apps will successfully deserialize numbers that are represented as JSON strings instead of throwing an exception.
 
 ## Change description
 
 In .NET Core 3.0 - 3.1, <xref:System.Text.Json.JsonSerializer> throws a <xref:System.Text.Json.JsonException> during deserialization if it encounters a quoted number in a JSON payload. The quoted numbers are used to map with number properties in object graphs. In .NET Core 3.0 - 3.1, numbers are only read from <xref:System.Text.Json.JsonTokenType.Number?displayProperty=nameWithType> tokens.
 
-Starting in .NET 5.0, quoted numbers in JSON payloads are considered valid, by default, for ASP.NET Core apps. No exception is thrown during deserialization of quoted numbers.
+Starting in .NET 5, quoted numbers in JSON payloads are considered valid, by default, for ASP.NET Core apps. No exception is thrown during deserialization of quoted numbers.
 
 > [!TIP]
 >
@@ -35,7 +35,7 @@ For ASP.NET Core MVC and web API apps, you can configure the option in `Startup`
 
 ```csharp
 services.AddControllers()
-   .AddJsonOptions(options.NumberHandling = JsonNumberHandling.Strict);
+   .AddJsonOptions(options => options.JsonSerializerOptions.NumberHandling = JsonNumberHandling.Strict);
 ```
 
 ## Affected APIs

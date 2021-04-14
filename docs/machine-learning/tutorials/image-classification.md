@@ -22,7 +22,7 @@ In this tutorial, you learn how to:
 > * Train and evaluate the ML.NET model
 > * Classify a test image
 
-You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TransferLearningTF) repository. Note that by default, the .NET project configuration for this tutorial targets .NET core 2.2.
+You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/TransferLearningTF) repository. Note that by default, the .NET project configuration for this tutorial targets .NET core 2.2.
 
 ## What is transfer learning?
 
@@ -33,7 +33,7 @@ For this tutorial, you use part of a TensorFlow model - trained to classify imag
 ## Prerequisites
 
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later or Visual Studio 2017 version 15.6 or later with the ".NET Core cross-platform development" workload installed.
-* [The tutorial assets directory .ZIP file](https://github.com/dotnet/samples/blob/master/machine-learning/tutorials/TransferLearningTF/image-classifier-assets.zip)
+* [The tutorial assets directory .ZIP file](https://github.com/dotnet/samples/blob/main/machine-learning/tutorials/TransferLearningTF/image-classifier-assets.zip)
 * [The InceptionV1 machine learning model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip)
 
 ## Select the right machine learning task
@@ -129,7 +129,7 @@ The training and testing images are located in the assets folders that you'll do
 
 ### Download assets
 
-1. Download [The project assets directory zip file](https://github.com/dotnet/samples/blob/master/machine-learning/tutorials/TransferLearningTF/image-classifier-assets.zip), and unzip.
+1. Download [The project assets directory zip file](https://github.com/dotnet/samples/blob/main/machine-learning/tutorials/TransferLearningTF/image-classifier-assets.zip), and unzip.
 
 1. Copy the `assets` directory into your *TransferLearningTF* project directory. This directory and its subdirectories contain the data and support files (except for the Inception model, which you'll download and add in the next step) needed for this tutorial.
 
@@ -366,7 +366,7 @@ An ML.NET model pipeline is a chain of estimators. Note that no execution happen
 
 Congratulations! You've now successfully built a machine learning model for image classification by applying transfer learning to a `TensorFlow` model in ML.NET.
 
-You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TransferLearningTF) repository.
+You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/TransferLearningTF) repository.
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]

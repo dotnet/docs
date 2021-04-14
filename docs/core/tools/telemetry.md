@@ -72,6 +72,11 @@ The telemetry feature collects the following data:
 | >=2.1.300     | Libc release/version. |
 | >=3.0.100     | Whether the output was redirected (true or false). |
 | >=3.0.100     | On a CLI/SDK crash, the exception type and its stack trace (only CLI/SDK code is included in the stack trace sent). For more information, see [.NET CLI/SDK crash exception telemetry collected](#net-clisdk-crash-exception-telemetry-collected). |
+| >=5.0.202     | Elapsed time from process start until entering the CLI program's main method, measuring host and runtime startup. |
+| >=5.0.202     | Elapsed time for the step that adds .NET Tools to the path on first run. |
+| >=5.0.202     | Elapsed time to display first time use notice on first run. |
+| >=5.0.202     | Elapsed time for generating ASP.NET Certificate on first run. |
+| >=5.0.202     | Elapsed time to parse the CLI input. |
 
 ### Collected options
 
@@ -136,4 +141,4 @@ Because of this, custom builds of the .NET SDK shouldn't be located in directori
 ## See also
 
 - [.NET CLI Telemetry Data](https://dotnet.microsoft.com/platform/telemetry)
-- [Telemetry reference source (dotnet/sdk repository)](https://github.com/dotnet/sdk/tree/master/src/Cli/dotnet/Telemetry)
+- [Telemetry reference source (dotnet/sdk repository)](https://github.com/dotnet/sdk/tree/main/src/Cli/dotnet/Telemetry)

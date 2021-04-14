@@ -29,7 +29,7 @@ For more information on type parameters in generic types and methods, see [Gener
 
 Use this tag to enable consumers of the documentation file to format the word in some distinct way, for example in italics.
 
-Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.
+Compile with [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) to process documentation comments to a file.
 
 ## Example
 

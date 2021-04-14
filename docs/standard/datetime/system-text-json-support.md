@@ -114,6 +114,12 @@ the converter successfully parses the data using <xref:System.DateTime.Parse(Sys
 
 [!code-csharp[example-showing-datetime-parse-as-fallback](~/samples/snippets/standard/datetime/json/csharp/datetime-converter-examples/example3/Program.cs)]
 
+#### Using Unix epoch date format
+
+The following converter handles Unix epoch with time zone format (values such as `/Date(1590863400000-0700)/`):
+
+:::code language="csharp" source="../serialization/snippets/system-text-json-how-to-5-0/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
+
 ### When writing with <xref:System.Text.Json.Utf8JsonWriter>
 
 If you want to write a custom <xref:System.DateTime> or <xref:System.DateTimeOffset> text representation with <xref:System.Text.Json.Utf8JsonWriter>,

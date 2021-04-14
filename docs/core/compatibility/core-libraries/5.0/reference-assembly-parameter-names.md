@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Parameter names changed in reference assemblies"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where some reference assembly parameter names have changed to match parameter names in the implementation assemblies.
+description: Learn about the .NET 5 breaking change in core .NET libraries where some reference assembly parameter names have changed to match parameter names in the implementation assemblies.
 ms.date: 11/01/2020
 ---
 # Parameter names changed in reference assemblies
@@ -11,7 +11,7 @@ Some reference assembly parameter names have changed to match parameter names in
 
 In previous .NET versions, some [reference assembly](../../../../standard/assembly/reference-assemblies.md) parameter names are different to their corresponding parameters in the implementation assembly. This can cause problems while using named arguments and reflection.
 
-In .NET 5.0, these mismatched parameter names were updated in the reference assemblies to exactly match the corresponding parameter names in the implementation assemblies.
+In .NET 5, these mismatched parameter names were updated in the reference assemblies to exactly match the corresponding parameter names in the implementation assemblies.
 
 The following table shows the APIs and parameter names that changed.
 

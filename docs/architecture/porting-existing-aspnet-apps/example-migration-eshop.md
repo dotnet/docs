@@ -21,7 +21,7 @@ This chapter demonstrates how to perform many of the upgrade steps by hand. Alte
 
 ## Run *ApiPort* to identify problematic APIs
 
-The first step in preparing to migrate is to run the *ApiPort* tool. The tool identifies how many .NET Framework APIs the app calls and how many of these have .NET Standard or .NET Core equivalents. Focus primarily on your own app's logic, not third-party dependencies, and pay attention to `System.Web` dependencies that will need to be ported. The ApiPort tool was introduced in the last chapter on [understanding and updating dependencies](/understand-update-dependencies.md).
+The first step in preparing to migrate is to run the *ApiPort* tool. The tool identifies how many .NET Framework APIs the app calls and how many of these have .NET Standard or .NET Core equivalents. Focus primarily on your own app's logic, not third-party dependencies, and pay attention to `System.Web` dependencies that will need to be ported. The ApiPort tool was introduced in the last chapter on [understanding and updating dependencies](understand-update-dependencies.md).
 
 After [installing and configuring the *ApiPort* tool](../../standard/analyzers/portability-analyzer.md), run the analysis from within Visual Studio, as shown in Figure 4-2.
 
@@ -53,7 +53,7 @@ Most of the incompatible types refer to `Controller` and various related attribu
 
 ## Update project files and NuGet reference syntax
 
-Next, migrate from the older *.csproj* file structure to the newer, simpler structure introduced with .NET Core. In doing so, you'll also migrate from using a *packages.config* file for NuGet references to using `<PackageReference>` elements in the project file.
+Next, migrate from the older *.csproj* file structure to the newer, simpler structure introduced with .NET Core. In doing so, you'll also migrate from using a *packages.config* file for NuGet references to using `<PackageReference>` elements in the project file. Old-style project files may also use `<PackageReference>` elements, so it usually makes sense to migrate all NuGet package references to this format first, before upgrading to the new project file format.
 
 The original project's *eShopLegacyMVC.csproj* file is 418 lines long. A sample of the project file is shown in Figure 4-6. To offer a sense of its overall size and complexity, the right side of the image contains a miniature view of the entire file.
 
@@ -69,7 +69,7 @@ In addition to the C# project file, NuGet dependencies are stored in a separate 
 
 **Figure 4-7.** The *packages.config* file.
 
-After upgrading to the new *.csproj* file format, you can migrate *packages.config* in class library projects using Visual Studio. This functionality doesn't work with ASP.NET projects, however. [Learn more about migrating *packages.config* to `<PackageReference>` in Visual Studio](/nuget/consume-packages/migrate-packages-config-to-package-reference). If you have a large number of projects to migrate, [this community tool may help](https://github.com/MarkKharitonov/NuGetPCToPRMigrator).
+You can migrate *packages.config* in class library projects using Visual Studio. This functionality doesn't work with ASP.NET projects, however. [Learn more about migrating *packages.config* to `<PackageReference>` in Visual Studio](/nuget/consume-packages/migrate-packages-config-to-package-reference). If you have a large number of projects to migrate, [this community tool may help](https://github.com/MarkKharitonov/NuGetPCToPRMigrator). If you're using a tool to migrate the project file to the new format, you should do that after you've finished migrating all NuGet references to use `<PackageReverence>`.
 
 ## Create new ASP.NET Core project
 
@@ -307,20 +307,13 @@ Building again reveals one more error loading jQuery Validation on the *Create* 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" integrity="sha512-O/nUTF5mdFkhEoQHFn9N5wmgYyW323JO6v8kr6ltSRKriZyTr/8417taVWeabVS4iONGk2V444QD0P2cwhuTkg==" crossorigin="anonymous"></script>
 ```
 
-The last thing to fix in the views is the reference to `Session` to display how long the app has been running, and on which machine. We can collect this data in `Startup` as static variables and display the variables on the layout page. Add the following properties to *Startup.cs*:
-
-```csharp
-public static DateTime StartTime { get; } = DateTime.UtcNow;
-public static string MachineName { get; } = Environment.MachineName;
-```
-
-Then replace the content of the footer in the layout with the following code:
+The last thing to fix in the views is the reference to `Session` to display how long the app has been running, and on which machine. We can display this data directly in the site's *_Layout.cshtml* by using `System.Environment.MachineName` and `System.Diagnostics.Process.GetCurrentProcess().StartTime`:
 
 ```razor
 <section class="col-sm-6">
     <img class="esh-app-footer-text hidden-xs" src="~/images/main_footer_text.png" width="335" height="26" alt="footer text image" />
     <br />
-<small>@eShopPorted.Startup.MachineName - @eShopPorted.Startup.StartTime.ToString() UTC</small>
+<small>@Environment.MachineName - @System.Diagnostics.Process.GetCurrentProcess().StartTime.ToString() UTC</small>
 </section>
 ```
 
@@ -442,7 +435,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-The preceding code is the minimal configuration required to get MVC features working. There are many additional features that can be configured from this call, but for now this will suffice to build the app. Running it now routes the default request properly, but since we've not yet configured DI, an error occurs while activating `CatalogController`, because no implementation of type `ICatalogService` has been provided yet. We'll return to configure MVC further in a moment. For now, let's migrate the app's dependency injection.
+The preceding code is the minimal configuration required to get MVC features working. There are many additional features that can be configured from this call (some of which are detailed later in this chapter), but for now this will suffice to build the app. Running it now routes the default request properly, but since we've not yet configured DI, an error occurs while activating `CatalogController`, because no implementation of type `ICatalogService` has been provided yet. We'll return to configure MVC further in a moment. For now, let's migrate the app's dependency injection.
 
 #### Migrate dependency injection configuration
 

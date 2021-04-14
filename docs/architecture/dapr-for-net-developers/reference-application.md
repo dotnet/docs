@@ -2,7 +2,7 @@
 title: Introduction to the eShopOnDapr reference application
 description: An overview of the eShopOnDapr reference application and its history.
 author: amolenk
-ms.date: 02/07/2021
+ms.date: 02/17/2021
 ---
 
 # Dapr reference application
@@ -114,9 +114,9 @@ In this chapter, you're introduced to the eShopOnDapr reference application. It'
 
 ### References
 
-- [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr)
+- [eShopOnDapr on GitHub](https://github.com/dotnet-architecture/eShopOnDapr)
 
-- [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers)
+- [eShopOnContainers on GitHub](https://github.com/dotnet-architecture/eShopOnContainers)
 
 - [.NET Microservices for Containerized .NET Applications](https://dotnet.microsoft.com/download/e-book/microservices-architecture/pdf)
 

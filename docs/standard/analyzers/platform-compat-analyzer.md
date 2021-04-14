@@ -38,7 +38,7 @@ The platform compatibility analyzer is one of the Roslyn code quality analyzers.
   - The attribute can be applied multiple times with different platforms, for example, `[UnsupportedOSPlatform("iOS"), UnsupportedOSPlatform("Android6.0")]`.
   - The analyzer produces a **warning** only if the `platform` is effective for the call site:
     - **Warns** if the project targets the platform that's attributed as unsupported (for example, if the API is attributed with `[UnsupportedOSPlatform("windows")]` and the call site targets `<TargetFramework>net5.0-windows</TargetFramework>`).
-    - **Warns** if the project is multi-targeted and the `platform` is included in the default [MSBuild `<SupportedPlatform>`](https://github.com/dotnet/sdk/blob/master/src/Tasks/Microsoft.NET.Build.Tasks/targets/Microsoft.NET.SupportedPlatforms.props) items group, or the `platform` is manually included within the `MSBuild` \<SupportedPlatform> items group:
+    - **Warns** if the project is multi-targeted and the `platform` is included in the default [MSBuild `<SupportedPlatform>`](https://github.com/dotnet/sdk/blob/main/src/Tasks/Microsoft.NET.Build.Tasks/targets/Microsoft.NET.SupportedPlatforms.props) items group, or the `platform` is manually included within the `MSBuild` \<SupportedPlatform> items group:
 
       ```XML
       <ItemGroup>
@@ -46,7 +46,7 @@ The platform compatibility analyzer is one of the Roslyn code quality analyzers.
       </ItemGroup>
       ```
 
-    - **Doesn't warn** if you're building an app that doesn't target the unsupported platform or is multi-targeted and the platform is not included in the default [MSBuild `<SupportedPlatform>`](https://github.com/dotnet/sdk/blob/master/src/Tasks/Microsoft.NET.Build.Tasks/targets/Microsoft.NET.SupportedPlatforms.props) items group.
+    - **Doesn't warn** if you're building an app that doesn't target the unsupported platform or is multi-targeted and the platform is not included in the default [MSBuild `<SupportedPlatform>`](https://github.com/dotnet/sdk/blob/main/src/Tasks/Microsoft.NET.Build.Tasks/targets/Microsoft.NET.SupportedPlatforms.props) items group.
 - Both attributes can be instantiated with or without version numbers as part of the platform name.
   - Version numbers are in the format of `major.minor[.build[.revision]]`; `major.minor` is required and the `build` and `revision` parts are optional. For example, "Windows7.0" indicates Windows version 7.0, but "Windows" is interpreted as Windows 0.0.
 
@@ -377,8 +377,8 @@ All the conditional checks used in the [platform guard examples](#guard-platform
 
 ## See also
 
-- [Target Framework Names in .NET 5](https://github.com/dotnet/designs/blob/master/accepted/2020/net5/net5.md)
-- [Annotating platform-specific APIs and detecting its use](https://github.com/dotnet/designs/blob/master/accepted/2020/platform-checks/platform-checks.md)
-- [Annotating APIs as unsupported on specific platforms](https://github.com/dotnet/designs/blob/master/accepted/2020/platform-exclusion/platform-exclusion.md)
+- [Target Framework Names in .NET 5](https://github.com/dotnet/designs/blob/main/accepted/2020/net5/net5.md)
+- [Annotating platform-specific APIs and detecting its use](https://github.com/dotnet/designs/blob/main/accepted/2020/platform-checks/platform-checks.md)
+- [Annotating APIs as unsupported on specific platforms](https://github.com/dotnet/designs/blob/main/accepted/2020/platform-exclusion/platform-exclusion.md)
 - [CA1416 Platform compatibility analyzer](../../fundamentals/code-analysis/quality-rules/ca1416.md)
 - [.NET API analyzer](../../standard/analyzers/api-analyzer.md)

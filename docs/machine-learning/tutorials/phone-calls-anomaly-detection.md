@@ -17,17 +17,17 @@ In this tutorial, you learn how to:
 > * Detect period for a time series
 > * Detect anomaly for a periodical time series
 
-You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/PhoneCallsAnomalyDetection) repository.
+You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/PhoneCallsAnomalyDetection) repository.
 
 ## Prerequisites
 
 * [Visual Studio 2019 version 16.7.8 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the ".NET Core cross-platform development" workload installed.
 
-* [The phone-calls.csv dataset](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrEntireDetection/Data/phone-calls.csv).
+* [The phone-calls.csv dataset](https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrEntireDetection/Data/phone-calls.csv).
 
 ## Create a console application
 
-1. Create a **C# .NET Core Console Application** called "ProductSalesAnomalyDetection".
+1. Create a **C# .NET Core Console Application** called "PhoneCallsAnomalyDetection".
 
 2. Create a directory named *Data* in your project to save your data set files.
 
@@ -45,7 +45,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 1. Download the dataset and save it to the *Data* folder you previously created:
 
-    Right click on [*phone-calls.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrEntireDetection/Data/phone-calls.csv) and select "Save Link (or Target) As..."
+    Right click on [*phone-calls.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/main/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrEntireDetection/Data/phone-calls.csv) and select "Save Link (or Target) As..."
 
      Make sure you either save the \*.csv file to the *Data* folder, or after you save it elsewhere, move the \*.csv file to the *Data* folder.
 
@@ -244,7 +244,7 @@ Index   Data    Anomaly AnomalyScore    Mag     ExpectedValue   BoundaryUnit    
 
 Congratulations! You've now successfully built machine learning models for detecting period and anomaly on a periodical series.
 
-You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/PhoneCallsAnomalyDetection) repository.
+You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/PhoneCallsAnomalyDetection) repository.
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
@@ -257,4 +257,4 @@ In this tutorial, you learned how to:
 
 Check out the Machine Learning samples GitHub repository to explore a Power Consumption Anomaly Detection sample.
 > [!div class="nextstepaction"]
-> [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/AnomalyDetection_PowerMeterReadings)
+> [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/AnomalyDetection_PowerMeterReadings)

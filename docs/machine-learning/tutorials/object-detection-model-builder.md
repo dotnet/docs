@@ -36,7 +36,7 @@ For a list of prerequisites and installation instructions, visit the [Model Buil
 
 Object detection is a computer vision problem. While closely related to image classification, object detection performs image classification at a more granular scale. Object detection both locates _and_ categorizes entities within images. Object detection models are commonly trained using deep learning and neural networks. See [Deep learning vs machine learning](/azure/machine-learning/concept-deep-learning-vs-machine-learning) for more information.
 
-Use object detection when images contain multiple objects of different types. 
+Use object detection when images contain multiple objects of different types.
 
 ![Screenshots showing Image Classification versus Object Classification.](./media/object-detection-onnx/img-classification-obj-detection.PNG)
 

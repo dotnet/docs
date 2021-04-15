@@ -133,6 +133,7 @@ Now that you've successfully built and tested the code, add steps that publish t
 1. On the list of actions in the **Actions Helper** pane on the right, search for `artifact`. Select on the `Upload a Build Artifact (By actions)` action.
 
     ![Accessing the Actions helper](./media/actions/build/search-upload-artifact.jpg)
+
     **Figure 6**: Accessing the snippet helper.
 
 1. Edit the version to `v2.2.2` to display a sample snippet. Select the clipboard icon to copy the snippet and paste it into the workflow below the publish step.

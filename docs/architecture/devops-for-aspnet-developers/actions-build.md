@@ -157,6 +157,7 @@ Now that you've successfully built and tested the code, add steps that publish t
 1. Once the workflow completes, you'll see the artifact from the **Home** tab:
 
     ![Viewing artifacts in the summary page](./media/actions/build/view-uploaded-artifact.jpg)
+
     **Figure 8**: Viewing artifacts in the summary page.
 
 ### Final workflow file

@@ -49,6 +49,7 @@ One important principle of effective DevOps is to build once, deploy many times.
 1. Commit the file onto the `main` branch. Since you've defined a trigger condition for *commits to main*, this commit should trigger the workflow to run.
 
     ![Commit the YAML file](./media/actions/build/commit-workflow.jpg)
+
     **Figure 2**: Commit the YAML file.
 
 1. Select the **Actions** tab again. You should see a running workflow. Once the workflow has completed, you should see a successful run.

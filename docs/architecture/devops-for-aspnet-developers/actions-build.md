@@ -139,6 +139,7 @@ Now that you've successfully built and tested the code, add steps that publish t
 1. Edit the version to `v2.2.2` to display a sample snippet. Select the clipboard icon to copy the snippet and paste it into the workflow below the publish step.
 
     ![Copying a snippet](./media/actions/build/copy-snippet.jpg)
+
     **Figure 7**: Copying a snippet.
 
 1. Edit the YAML for this step to look as follows:

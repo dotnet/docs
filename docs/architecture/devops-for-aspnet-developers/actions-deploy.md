@@ -283,7 +283,7 @@ Your workflow is deploying the same binary to each environment. This concept is 
 
 For this simple app, there's no database connection string. However, there's an example configuration setting that you can modify for each environment. If you open the `simple-feed-reader/SimpleFeedReader/appsettings.json` file, you'll see that the configuration includes a setting for the Header text on the Index page:
 
-```yml
+```json
   "UI": {
     "Index": {
       "Header": "Simple News Reader"

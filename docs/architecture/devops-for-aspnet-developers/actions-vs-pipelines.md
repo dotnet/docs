@@ -14,7 +14,7 @@ ms.date: 03/04/2021
 Before you compare GitHub Actions and Azure Pipelines, you should consider the benefits of *pipelines as code*. Pipelines as code:
 
 > [!div class="checklist"]
-
+> 
 > * Benefit from standard source control practices (such as code reviews via pull request and versioning).
 > * Can be audited for changes just like any other files in the repository.
 > * Don’t require accessing a separate system or UI to edit.
@@ -37,7 +37,7 @@ GitHub Workflows execute on *runners*. The runner code is essentially a fork of 
 Hosted agents (Azure Pipelines) and hosted runners (GitHub) are agents that are spun up and managed by Azure DevOps or GitHub respectively. You don't need to maintain any build infrastructure. When a pipeline triggers that targets a hosted agent, an instance of the specified agent image is created. The job is run by the agent on the instance, and once the job completes, the instance is destroyed. The same applies for hosted runners running GitHub workflows.
 
 > [!NOTE]
-> The list of software installed on Azure Pipeline images is listed in [this repository](https://github.com/actions/virtual-environments/tree/main/images). You can select the platform folder and examine the *README.md* files. You can find information on GitHub hosted runners [here](https://docs.github.com/actions/reference/specifications-for-github-hosted-runners).
+> The list of software installed on Azure Pipeline images is listed in [this repository](https://github.com/actions/virtual-environments/tree/main/images). You can select the platform folder and examine the *README.md* files. You can find information on [GitHub hosted runners](https://docs.github.com/actions/reference/specifications-for-github-hosted-runners).
 
 ### Private agents and self-hosted runners
 
@@ -64,7 +64,7 @@ Every Azure DevOps account has a hosted pool with a single agent that can run on
 |Hosted agents for public repos/projects|Free|[No free minutes](https://devblogs.microsoft.com/devops/change-in-azure-pipelines-grant-for-public-projects/) for public projects|[Azure Pipelines](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml&preserve-view=true#capabilities-and-limitations) [GitHub](https://github.com/features/actions)|
 |Hosted agents for private repos/projects|2,000 minutes free per month, 3,000 minutes for Pro and Team licenses, 50,000 minutes for Enterprise license. Additional minutes may be purchased.|One free parallel job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month. You can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours).||
 |Cross-platform|Yes|Yes||
-|Scale set agents|No|Yes|Read about scale-set agents [here](/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops&preserve-view=true)|
+|Scale set agents|No|Yes| [Azure virtual machine scale set agents](/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops)|
 
 ## Comparison of GitHub Actions and Azure Pipelines
 
@@ -80,9 +80,9 @@ Azure Pipelines (YAML pipelines) provide a mature set of features. Some of the f
 * Triggers
 * Variable groups
 
-For a full list of Azure Pipelines features, refer to the table [here](/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops&preserve-view=true#feature-availability).
+For a full list of Azure Pipelines features, refer to the [Feature availability](/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops&preserve-view=true#feature-availability) table.
 
-GitHub Actions are evolving rapidly and provide features such as triggers for almost all GitHub events, artifact storage, environments and environment rules, starter templates, and matrices. Read more about the full GitHub Actions feature set [here](https://docs.github.com/actions).
+GitHub Actions are evolving rapidly and provide features such as triggers for almost all GitHub events, artifact storage, environments and environment rules, starter templates, and matrices. Read more about the entire feature set refer [GitHub Actions](https://docs.github.com/actions).
 
 ### Feature comparison
 

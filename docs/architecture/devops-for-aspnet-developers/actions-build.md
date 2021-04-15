@@ -12,7 +12,7 @@ To explore moving code to the cloud, you'll build a GitHub Actions workflow file
 
 In this article, you will:
 > [!div class="checklist"]
-
+> 
 > * Learn the basic structure of a GitHub Action workflow YAML file.
 > * Use a template to create a basic build workflow that builds the .NET app and executes unit tests.
 > * Publish the compiled app so that it's ready for deployment.
@@ -33,7 +33,7 @@ Each `job` will specify what runner GitHub should use to execute the `steps`. Yo
 `Steps` can be as easy as inline commands or they can be Actions. Most CI workflows will have a combination of `run` steps (for executing scripts) and Actions. Actions are pulled into the workflow by referencing the Action repository (and optionally a tag or commit hash for specific versions) and specifying any parameters using the `with` keyword.
 
 > [!TIP]
-> You can read more about GitHub Actions YAML syntax [here](https://docs.github.com/actions/reference/workflow-syntax-for-github-actions).
+> You can read more about GitHub Actions YAML syntax [Workflow syntax for GitHub Actions](https://docs.github.com/actions/reference/workflow-syntax-for-github-actions).
 
 ## Create a basic build workflow
 

@@ -106,7 +106,7 @@ Logs can also be [streamed via Azure CLI or Azure PowerShell](/azure/app-service
 
 Azure Monitor also provides [real time alerts](/azure/monitoring-and-diagnostics/insights-alerts-portal) based on metrics, administrative events, and other criteria.
 
-> *Note: Currently alerting on web app metrics is only available in the Alerts (classic) service.*
+> [!NOTE]: Currently alerting on web app metrics is only available in the Alerts (classic) service.*
 
 The [Alerts (classic) service](/azure/monitoring-and-diagnostics/monitor-quick-resource-metric-alert-portal) can be found in Azure Monitor or under the **Monitoring** section of the App Service settings.
 

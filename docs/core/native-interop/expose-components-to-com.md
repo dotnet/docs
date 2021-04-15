@@ -86,7 +86,7 @@ Unlike in .NET Framework, there is no support in .NET Core or .NET 5 or newer fo
 
 In .NET 6 Preview 5 or newer, the .NET SDK supports embedding already-compiled TLBs into the COM host as part of your project build.
 
-To embed a type library into your application, you follow these steps:
+To embed a type library into your application, follow these steps:
 
 1. Open the `.csproj` project file and add `<ComHostTypeLibrary Include="path/to/typelib.tlb" Id="<id>" />` inside an `<ItemGroup></ItemGroup>` tag.
 2. Replace `<id>` with a positive integer value. The value must be unique among the TLBs you specify to be embedded in the COM host.

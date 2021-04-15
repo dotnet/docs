@@ -55,6 +55,7 @@ One important principle of effective DevOps is to build once, deploy many times.
 1. Select the **Actions** tab again. You should see a running workflow. Once the workflow has completed, you should see a successful run.
 
     ![Successful build view](./media/actions/build/build-action-success.jpg)
+
     **Figure 3**: Successful build view.
 
 1. Opening the logs, you can see that the .NET build succeeded and the tests ran and passed.

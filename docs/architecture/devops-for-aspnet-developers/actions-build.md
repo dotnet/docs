@@ -116,6 +116,7 @@ Now that you've successfully built and tested the code, add steps that publish t
 1. Navigate to the `.github/workflows/dotnet.yml` file and select the pencil icon to edit it.
 
     ![Edit the YAML file](./media/actions/build/click-edit.jpg)
+
     **Figure 5**: Edit the YAML file.
 
 1. Add the following `Publish` step below the `Test` step. The step runs the `dotnet publish` command to publish the web app:

@@ -48,7 +48,7 @@ Once you have an SPN, you'll create a [repository secret](https://docs.github.co
 
 1. The command should output JSON that has credentials embedded:
 
-    ```yml
+    ```json
     {
       "clientId": "<GUID>",
       "clientSecret": "<GUID>",

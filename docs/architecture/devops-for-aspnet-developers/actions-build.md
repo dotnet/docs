@@ -43,6 +43,7 @@ One important principle of effective DevOps is to build once, deploy many times.
 1. GitHub detects that there's .NET code in the repository and suggests a .NET workflow template. Select **Set up this workflow** to create a new YAML workflow file:
 
     ![Creating a new workflow](./media/actions/build/new-action.jpg)
+
     **Figure 1**: Creating a new workflow.
 
 1. Commit the file onto the `main` branch. Since you've defined a trigger condition for *commits to main*, this commit should trigger the workflow to run.

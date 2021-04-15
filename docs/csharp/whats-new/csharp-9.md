@@ -12,20 +12,20 @@ C# 9.0 adds the following features and enhancements to the C# language:
 - [Top-level statements](#top-level-statements)
 - [Pattern matching enhancements](#pattern-matching-enhancements)
 - [Performance and interop](#performance-and-interop)
-  - Native sized integers
-  - Function pointers
-  - Suppress emitting localsinit flag
+  - [Native sized integers](~/_csharplang/proposals/csharp-9.0/native-integers.md)
+  - [Function pointers](~/_csharplang/proposals/csharp-9.0/function-pointers.md)
+  - [Suppress emitting localsinit flag](~/_csharplang/proposals/csharp-9.0/skip-localsinit.md)
 - [Fit and finish features](#fit-and-finish-features)
-  - Target-typed `new` expressions
-  - static anonymous functions
-  - Target-typed conditional expressions
-  - Covariant return types
-  - Extension `GetEnumerator` support for `foreach` loops
-  - Lambda discard parameters
-  - Attributes on local functions
+  - [Target-typed `new` expressions](~/_csharplang/proposals/csharp-9.0/target-typed-new.md)
+  - [`static` anonymous functions](~/_csharplang/proposals/csharp-9.0/static-anonymous-functions.md)
+  - [Target-typed conditional expressions](~/_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md)
+  - [Covariant return types](~/_csharplang/proposals/csharp-9.0/covariant-returns.md)
+  - [Extension `GetEnumerator` support for `foreach` loops](~/_csharplang/proposals/csharp-9.0/extension-getenumerator.md)
+  - [Lambda discard parameters](~/_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md)
+  - [Attributes on local functions](~/_csharplang/proposals/csharp-9.0/local-function-attributes.md)
 - [Support for code generators](#support-for-code-generators)
-  - Module initializers
-  - New features for partial methods
+  - [Module initializers](~/_csharplang/proposals/csharp-9.0/module-initializers.md)
+  - [New features for partial methods](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md)
 
 C# 9.0 is supported on **.NET 5**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 

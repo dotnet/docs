@@ -174,7 +174,7 @@ Similarly, here the problem is that the field `type` is passed into a parameter 
 
 In this case the trim analysis will simply keep public methods of `System.Tuple`, and will not produce further warnings.
 
-### Recommendations
+## Recommendations
 
 In general, try to avoid reflection if possible. When using reflection, limit it in scope so that it is reachable only from a small part of the library.
 
@@ -183,3 +183,67 @@ In general, try to avoid reflection if possible. When using reflection, limit it
 - In some cases, you will be able to mechanically propagate warnings through your code without issues. Sometimes this will result in much of your public API being annotated with `RequiresUnreferencedCode`, which is the right thing to do if the library indeed behaves in ways that can't be understood statically by the trim analysis.
 - In other cases, you might discover that your code uses patterns which can't be expressed in terms of the `DynamicallyAccessedMembers` attributes, even if it only uses reflection to operate on statically-known types. In these cases, you may need to reorganize some of your code to make it follow an analyzable pattern.
 - Sometimes the existing design of an API will render it mostly trim-incompatible, and you may need to find other ways to accomplish what it is doing. A common example is reflection-based serializers. In these cases, consider adopting other technology like source generators to produce code that is more easily statically analyzed.
+
+## Resolving warnings for non-analyzable patterns
+
+You should prefer resolving warnings by expressing the intent of your code using `RequiresUnreferencedCode` and `DynamicallyAccessedMembers` when possible. However, in some cases you may be interested in enabling trimming of a library that uses patterns which can't be expressed with those attributes, or without refactoring existing code. This section describes additional advanced ways to resolve trim analysis warnings.
+
+> [!WARNING]
+> These techniques might break your code if used incorrectly.
+
+When suppressing warnings, you are responsible for guaranteeing the trim compatibility of your code based on invariants that you know to be true by inspection. Be very careful with these annotations, because if they are incorrect, or if invariants of your code change, they might end up hiding real issues.
+
+### UnconditionalSuppressMessage
+
+If the intent of your code can't be expressed with the annotations, but you know that the warning doesn't represent a real issue at runtime, you can suppress the warnings using [`UnconditionalSuppressMessageAttribute`](https://docs.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.unconditionalsuppressmessageattribute?view=net-5.0). This is similar to `SuppressMessageAttribute`, but it is persisted in IL and respected during trim analysis. For example:
+
+```csharp
+class TypeCollection
+{
+    Type[] types;u
+
+    // Ensure that only types with ctors are stored in the array
+    [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicParameterlessConstructor)]
+    public Type this[int i]
+    {
+        // warning IL2063: TypeCollection.Item.get: Value returned from method 'TypeCollection.Item.get'
+        // can not be statically determined and may not meet 'DynamicallyAccessedMembersAttribute' requirements.
+        get => types[i];
+        set => types[i] = value;
+    }
+}
+
+class TypeCreator
+{
+    TypeCollection types;
+
+    public void CreateType(int i)
+    {
+        types[i] = typeof(TypeWithConstructor);
+        Activator.CreateInstance(types[i]); // No warning!
+    }
+}
+
+class TypeWithConstructor
+{
+}
+```
+
+Here, the indexer property has been annotated so that the returned `Type` meets the requirements of `CreateInstance`. This already ensures that the `TypeWithConstructor` constructor is kept, and that the call to `CreateInstance` doesn't warn. Furthermore, the indexer setter annotation ensures that any types stored in the `Type[]` have a constructor. However, the analysis isn't able to see this, and still produces a warning for the getter, because it doesn't know that the returned type has its constructor preserved.
+
+If you are sure that the requirements are met, you can silence this warning by adding `UnconditionalSuppressMessage` to the getter:
+
+```csharp
+    [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicParameterlessConstructor)]
+    public Type this[int i]
+    {
+        [UnconditionalSuppressMessage("ReflectionAnalysis", "IL2063",
+            Justification = "The list only contains types stored through the annotated setter.")]
+        get => types[i];
+        set => types[i] = value;
+    }
+```
+
+
+
+

@@ -113,7 +113,7 @@ Notice the following things:
 
 Now that you've successfully built and tested the code, add steps that publish the output so you can deploy the web app.
 
-1. Navigate to the `.github/workflows/dotnet.yml` file and select the pencil icon to edit it.
+1. Navigate to the *.github/workflows/dotnet.yml* file and select the pencil icon to edit it.
 
     ![Edit the YAML file](./media/actions/build/click-edit.jpg)
 

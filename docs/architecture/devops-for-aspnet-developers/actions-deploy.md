@@ -102,8 +102,8 @@ In this case, the only difference between the environments is the slot that you'
 
 1. Since deploying to a staging slot doesn't affect the web app, you can safely deploy to the slot without requiring an approval first. A reviewer could be added if desired. For this example, leave the Environment protection rules empty.
 
-> [!NOTE]
-> If you target an environment in a workflow and it does not exist, an "empty" environment is created automatically. The environment would look exactly the same as the `PRE-PROD` environment - it would exist, but would not have any protection rules enabled.
+    > [!NOTE]
+    > If you target an environment in a workflow and it does not exist, an "empty" environment is created automatically. The environment would look exactly the same as the `PRE-PROD` environment - it would exist, but would not have any protection rules enabled.
 
 1. Select **Environments** again and again select **New Environment**. Now enter `PROD` as the name and select **Configure environment**.
 
@@ -117,7 +117,7 @@ In this case, the only difference between the environments is the slot that you'
 
 You can now add additional jobs to the workflow to deploy to the environments! You'll start by adding a deployment to the `PRE-PROD` environment, which in this case is the web app staging slot.
 
-1. Navigate to the `.github/workflows/dotnet.yml` file and select the pencil icon to edit the file.
+1. Navigate to the *.github/workflows/dotnet.yml* file and select the pencil icon to edit the file.
 1. You're going to use the web app name a few times in this workflow, and will need the name of the resource group too. You'll define the app and resource group names as variables. With the variables, you can maintain the values in one place in the workflow file.
 1. Add this snippet below the `on` block and above the `jobs` block:
 
@@ -203,7 +203,7 @@ You can now add additional jobs to the workflow to deploy to the environments! Y
 
 Now that you've deployed successfully to `PRE-PROD`, you'll want to deploy to `PROD`. Deployment to `PROD` will be slightly different since you don't need to copy the website again - you just need to swap the `staging` slot with the production slot. You'll do this using an Azure CLI (`az`) command.
 
-1. Navigate to the `.github/workflows/dotnet.yml` file and select the pencil icon to edit the file.
+1. Navigate to the *.github/workflows/dotnet.yml* file and select the pencil icon to edit the file.
 1. Add a new job below the `deploy_staging` job as follows:
 
     ```yml
@@ -273,7 +273,7 @@ Now that you've deployed successfully to `PRE-PROD`, you'll want to deploy to `P
 
 You now have an end-to-end build and deploy workflow, including approvals. One more change you can make is to add a manual trigger to the workflow so that the workflow can be triggered from within the **Actions** tab of the repository.
 
-1. Navigate to the `.github/workflows/dotnet.yml` file and select the pencil icon to edit the file.
+1. Navigate to the *.github/workflows/dotnet.yml* file and select the pencil icon to edit the file.
 1. Add a new trigger between `on` and `push` on lines 3 and 4:
 
     ```yml
@@ -294,7 +294,7 @@ You now have an end-to-end build and deploy workflow, including approvals. One m
 
 Your workflow is deploying the same binary to each environment. This concept is important to ensure that the binaries you test in one environment are the same that you deploy to the next. However, environments typically have different settings like database connection strings. You want to ensure that the `DEV` app is using `DEV` settings and the `PROD` app is using `PROD` settings.
 
-For this simple app, there's no database connection string. However, there's an example configuration setting that you can modify for each environment. If you open the `simple-feed-reader/SimpleFeedReader/appsettings.json` file, you'll see that the configuration includes a setting for the Header text on the Index page:
+For this simple app, there's no database connection string. However, there's an example configuration setting that you can modify for each environment. If you open the *simple-feed-reader/SimpleFeedReader/appsettings.json* file, you'll see that the configuration includes a setting for the Header text on the Index page:
 
 ```json
   "UI": {
@@ -324,7 +324,7 @@ To show how environment configuration can be handled, you're going to add a secr
 
 ### Update the workflow to handle configuration
 
-1. Navigate to the `.github/workflows/dotnet.yml` file and select the pencil icon to edit the file.
+1. Navigate to the *.github/workflows/dotnet.yml* file and select the pencil icon to edit the file.
 1. Add the following step before the `az cli logout` step in the `deploy_staging` job:
 
     ```yml

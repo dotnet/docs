@@ -17,14 +17,16 @@ In the previous chapter, you created a local Git repository for the Simple Feed 
 
 In this section, you'll complete the following tasks:
 
-* Publish the app's code to GitHub
-* Disconnect local Git deployment
-* Create an Azure DevOps organization
-* Create a team project in Azure DevOps Services
-* Create a build definition
-* Create a release pipeline
-* Commit changes to GitHub and automatically deploy to Azure
-* Examine the Azure Pipelines pipeline
+> [!div class="checklist"]
+>
+> * Publish the app's code to GitHub
+> * Disconnect local Git deployment
+> * Create an Azure DevOps organization
+> * Create a team project in Azure DevOps Services
+> * Create a build definition
+> * Create a release pipeline
+> * Commit changes to GitHub and automatically deploy to Azure
+> * Examine the Azure Pipelines pipeline
 
 ## Publish the app's code to GitHub
 
@@ -231,7 +233,7 @@ The build definition's **Tasks** tab lists the individual steps being used. Ther
 
 1. **Restore** &mdash; Executes the `dotnet restore` command to restore the app's NuGet packages. The default package feed used is nuget.org.
 1. **Build** &mdash; Executes the `dotnet build --configuration release` command to compile the app's code. This `--configuration` option is used to produce an optimized version of the code, which is suitable for deployment to a production environment. Modify the *BuildConfiguration* variable on the build definition's **Variables** tab if, for example, a debug configuration is needed.
-1. **Test** &mdash; Executes the `dotnet test --configuration release --logger trx --results-directory <local_path_on_build_agent>` command to run the app's unit tests. Unit tests are executed within any C# project matching the `**/*Tests/*.csproj` glob pattern. Test results are saved in a *.trx* file at the location specified by the `--results-directory` option. If any tests fail, the build fails and isn't deployed.
+1. **Test** &mdash; Executes the `dotnet test --configuration release --logger trx --results-directory <local_path_on_build_agent>` command to run the app's unit tests. Unit tests are executed within any C# project matching the ***/*Tests/*.csproj* glob pattern. Test results are saved in a *.trx* file at the location specified by the `--results-directory` option. If any tests fail, the build fails and isn't deployed.
 
     > [!NOTE]
     > To verify the unit tests work, modify *SimpleFeedReader.Tests\Services\NewsServiceTests.cs* to purposefully break one of the tests. For example, change `Assert.True(result.Count > 0);` to `Assert.False(result.Count > 0);` in the `Returns_News_Stories_Given_Valid_Uri` method. Commit and push the change to GitHub. The build is triggered and fails. The build pipeline status changes to **failed**. Revert the change, commit, and push again. The build succeeds.

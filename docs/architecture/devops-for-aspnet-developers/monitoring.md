@@ -14,13 +14,15 @@ Having deployed the app and built a DevOps pipeline, it's important to understan
 
 In this section, you'll complete the following tasks:
 
-* Find basic monitoring and troubleshooting data in the Azure portal
-* Learn how Azure Monitor provides a deeper look at metrics across all Azure services
-* Connect the web app with Application Insights for app profiling
-* Turn on logging and learn where to download logs
-* Stream logs in real time
-* Learn where to set up alerts
-* Learn about remote debugging Azure App Service web apps.
+> [!div class="checklist"]
+>
+> * Find basic monitoring and troubleshooting data in the Azure portal
+> * Learn how Azure Monitor provides a deeper look at metrics across all Azure services
+> * Connect the web app with Application Insights for app profiling
+> * Turn on logging and learn where to download logs
+> * Stream logs in real time
+> * Learn where to set up alerts
+> * Learn about remote debugging Azure App Service web apps.
 
 ## Basic monitoring and troubleshooting
 
@@ -106,7 +108,8 @@ Logs can also be [streamed via Azure CLI or Azure PowerShell](/azure/app-service
 
 Azure Monitor also provides [real time alerts](/azure/monitoring-and-diagnostics/insights-alerts-portal) based on metrics, administrative events, and other criteria.
 
-> [!NOTE]: Currently alerting on web app metrics is only available in the Alerts (classic) service.*
+> [!NOTE]
+> Currently alerting on web app metrics is only available in the Alerts (classic) service.
 
 The [Alerts (classic) service](/azure/monitoring-and-diagnostics/monitor-quick-resource-metric-alert-portal) can be found in Azure Monitor or under the **Monitoring** section of the App Service settings.
 

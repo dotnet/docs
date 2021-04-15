@@ -48,7 +48,7 @@ You can use a starter workflow for code scanning by navigating to the **Security
 
     **Figure 1:** Create a new code scanning workflow.
 
-1. A new workflow file is created in your `.github/workflows` folder.
+1. A new workflow file is created in your *.github/workflows* folder.
 1. Select **Start Commit** on the upper right to save the default workflow. You can commit to the `main` branch.
 
     ![Commit the file](./media/actions/codeql/start-commit.jpg)
@@ -127,13 +127,13 @@ The CodeQL scan isn't reporting any security issues. That's expected with this b
 > [!INFORMATION]
 > For other CodeQL configuration options, see [Configuring CodeQL code scanning in your CI system](https://docs.github.com/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-codeql-code-scanning-in-your-ci-system).
 
-1. Navigate to the `.github` folder in the **Code** tab and select **Add File**:
+1. Navigate to the *.github* folder in the **Code** tab and select **Add File**:
 
     ![Create a new file](./media/actions/codeql/create-new-file.jpg)
 
     **Figure 5:** Create a new file.
 
-1. Enter `codeql/codeql-config.yml` as the name. This creates the file in a folder. Paste in the following code:
+1. Enter *codeql/codeql-config.yml* as the name. This creates the file in a folder. Paste in the following code:
 
     ```yml
     name: "Security and Quality"
@@ -147,7 +147,7 @@ The CodeQL scan isn't reporting any security issues. That's expected with this b
     **Figure 6:** Create the CodeQL configuration file.
 
 1. Select **Commit to main** at bottom of the editor to commit the file.
-1. Edit the CodeQL workflow to use the new configuration file. Navigate to `.github/workflows/codeql-analysis.yml` and select the pencil icon. Add a new property to the `with` section as shown below:
+1. Edit the CodeQL workflow to use the new configuration file. Navigate to *.github/workflows/codeql-analysis.yml* and select the pencil icon. Add a new property to the `with` section as shown below:
 
   ```yml
   - name: Initialize CodeQL

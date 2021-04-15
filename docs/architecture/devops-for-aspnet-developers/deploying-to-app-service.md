@@ -14,13 +14,15 @@ uid: azure/devops/deploy-to-app-service
 
 In this section, you'll accomplish the following tasks:
 
-* Download and build the sample app.
-* Create an Azure App Service Web App using the Azure Cloud Shell.
-* Deploy the sample app to Azure using Git.
-* Deploy a change to the app using Visual Studio.
-* Add a staging slot to the web app.
-* Deploy an update to the staging slot.
-* Swap the staging and production slots.
+> [!div class="checklist"]
+>
+> * Download and build the sample app.
+> * Create an Azure App Service Web App using the Azure Cloud Shell.
+> * Deploy the sample app to Azure using Git.
+> * Deploy a change to the app using Visual Studio.
+> * Add a staging slot to the web app.
+> * Deploy an update to the staging slot.
+> * Swap the staging and production slots.
 
 ## Download and test the app
 
@@ -30,7 +32,8 @@ Feel free to review the code, but it's important to understand that there's noth
 
 From a command shell, download the code, build the project, and run it as follows.
 
-> [!Note]: Linux/macOS users should make appropriate changes for paths, e.g., using forward slash (`/`) rather than back slash (`\`).*
+> [!Note]
+> Linux/macOS users should make appropriate changes for paths, e.g., using forward slash (`/`) rather than back slash (`\`).*
 
 1. Clone the code to a folder on your local machine.
 
@@ -116,7 +119,7 @@ To deploy the app, you'll need to create an App Service [Web App](/azure/app-ser
     echo Web app URL: http://$webappname.azurewebsites.net
     ```
 
-3. Using a command shell on your local machine, navigate to the web app's project folder (for example, `.\simple-feed-reader\SimpleFeedReader`). Execute the following commands to set up Git to push to the deployment URL:
+3. Using a command shell on your local machine, navigate to the web app's project folder (for example, *.\simple-feed-reader\SimpleFeedReader*). Execute the following commands to set up Git to push to the deployment URL:
 
     a. Add the remote URL to the local repository.
 
@@ -136,7 +139,8 @@ To deploy the app, you'll need to create an App Service [Web App](/azure/app-ser
 
 ## Deployment with Visual Studio
 
-> [!Note]: This section applies to Windows only. Linux and macOS users should make the change described in step 2 below. Save the file, and commit the change to the local repository with `git commit`. Finally, push the change with `git push`, as in the first section.*
+> [!Note]
+> This section applies to Windows only. Linux and macOS users should make the change described in step 2 below. Save the file, and commit the change to the local repository with `git commit`. Finally, push the change with `git push`, as in the first section.*
 
 The app has already been deployed from the command shell. Let's use Visual Studio's integrated tools to deploy an update to the app. Behind the scenes, Visual Studio accomplishes the same thing as the command line tooling, but within Visual Studio's familiar UI.
 

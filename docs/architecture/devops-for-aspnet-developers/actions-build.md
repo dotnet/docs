@@ -61,6 +61,7 @@ One important principle of effective DevOps is to build once, deploy many times.
 1. Opening the logs, you can see that the .NET build succeeded and the tests ran and passed.
 
     ![Checking the logs](./media/actions/build/build-action-success-logs.jpg)
+
     **Figure 4**: Checking the logs.
 
 > [!NOTE]

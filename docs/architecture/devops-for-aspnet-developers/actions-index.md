@@ -21,7 +21,7 @@ In this section of articles, you'll learn how to create an Actions workflow. The
 In the [Build](actions-build.md) article, you'll create the initial workflow to build and test the .NET app. You'll:
 
 > [!div class="checklist"]
-> 
+>
 > * Learn the basic structure of a GitHub Action workflow YAML file.
 > * Use a template to create a basic build workflow that builds a .NET app and executes unit tests.
 > * Publish the compiled app so that it's ready for deployment.
@@ -29,7 +29,7 @@ In the [Build](actions-build.md) article, you'll create the initial workflow to 
 In the [Deploy](actions-build.md) article, you'll:
 
 > [!div class="checklist"]
-> 
+>
 > * Learn about environments in GitHub Actions.
 > * Create two environments and specify environment protection rules.
 > * Create environment secrets for managing environment-specific configuration.
@@ -43,7 +43,7 @@ In addition to building and deploying code, [GitHub Advanced Security](https://d
 In the [CodeQL](actions-codeql.md) article, you'll:
 
 > [!div class="checklist"]
-> 
+>
 > * Create a Code Scanning Action.
 > * Edit the workflow file to include custom scan settings.
 > * See scanning results.

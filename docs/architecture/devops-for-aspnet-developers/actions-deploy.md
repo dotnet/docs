@@ -11,7 +11,7 @@ ms.date: 03/04/2021
 
 In this article, you'll:
 > [!div class="checklist"]
-> 
+>
 > * Learn about Environments in GitHub Actions.
 > * Create two environments and specify environment protection rules.
 > * Create environment secrets for managing environment-specific configuration.
@@ -287,7 +287,7 @@ You now have an end-to-end build and deploy workflow, including approvals. One m
 1. To see the **Run workflow** button, select the **Actions** tab. Select the `.NET` workflow in the list of workflows. At the top of the list of runs, you'll see the **Run workflow** button. If you select it, you can choose the branch to run the workflow against and queue it:
 
     ![Manual dispatch](./media/actions/deploy/manual-dispatch.jpg)
-    
+
     **Figure 13**: Manual dispatch.
 
 ## Handle environment configuration
@@ -312,14 +312,14 @@ To show how environment configuration can be handled, you're going to add a secr
 1. Select **Add secret** and add a secret called `index_header` with the value `PRE PROD News Reader`. Select **Add secret**.
 
     ![Add an environment secret](./media/actions/deploy/add-env-secret.jpg)
-    
+
     **Figure 14**: Add an environment secret.
 
 1. Repeat these steps to add a secret called `index_header` with the value `PROD News Reader` for the `PROD` environment.
 1. If you select **Settings** > **Secrets** in the repository, you'll see the changes. They should look something like this:
 
     ![View secrets](./media/actions/deploy/env-secrets.jpg)
-    
+
     **Figure 15**: View secrets.
 
 ### Update the workflow to handle configuration
@@ -369,7 +369,7 @@ To show how environment configuration can be handled, you're going to add a secr
 1. You should see the following headers on the index page for both sites:
 
     ![Settings changed in the environments](./media/actions/deploy/settings-in-both-envs.jpg)
-    
+
     **Figure 16**: Settings changed in the environments.
 
 ## Final workflow file

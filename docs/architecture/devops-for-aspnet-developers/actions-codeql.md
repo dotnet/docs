@@ -10,7 +10,7 @@ ms.date: 03/04/2021
 [CodeQL](https://codeql.github.com/docs/codeql-overview/about-codeql/) is a static code analysis engine that can automate security and quality checks. With CodeQL, you can perform *variant analysis*, which uses known vulnerabilities as seeds to find similar issues. CodeQL is part of [GitHub Advanced Security](https://docs.github.com/github/getting-started-with-github/about-github-advanced-security) that includes:
 
 > [!div class="checklist"]
-> 
+>
 > * Code scanning&mdash;find potential security vulnerabilities in your code.
 > * Secret scanning&mdash;detect secrets and tokens that are committed.
 > * Dependency scanning&mdash;detect vulnerabilities in packages that you consume.
@@ -30,7 +30,7 @@ CodeQL is a powerful language and security professionals can create custom queri
 In this article, you'll set up a GitHub workflow that will scan code in your repository using CodeQL. You will:
 
 > [!div class="checklist"]
-> 
+>
 > * Create a code scanning action.
 > * Edit the workflow file to include custom scan settings.
 > * See scanning results.

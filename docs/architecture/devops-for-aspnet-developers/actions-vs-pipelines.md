@@ -14,7 +14,7 @@ ms.date: 03/04/2021
 Before you compare GitHub Actions and Azure Pipelines, you should consider the benefits of *pipelines as code*. Pipelines as code:
 
 > [!div class="checklist"]
-> 
+>
 > * Benefit from standard source control practices (such as code reviews via pull request and versioning).
 > * Can be audited for changes just like any other files in the repository.
 > * Don’t require accessing a separate system or UI to edit.

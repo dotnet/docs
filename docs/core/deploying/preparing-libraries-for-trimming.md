@@ -53,7 +53,7 @@ Publishing a self-contained app ensures that the library is analyzed in a contex
 
   <ItemGroup>
     <ProjectReference Include="path/to/MyLibrary.csproj" />
-    <!-- Analyze the whole library -->
+    <!-- Analyze the whole library, even if attributed with "IsTrimmable" -->
     <TrimmerRootAssembly Include="MyLibrary" />
   </ItemGroup>
 

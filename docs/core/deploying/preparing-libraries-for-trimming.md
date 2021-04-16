@@ -105,12 +105,12 @@ This means the library calls a method which has explicitly been annotated as inc
 https://docs.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.requiresunreferencedcodeattribute?view=net-5.0). To get rid of the warning, consider whether `Method` needs to call `DynamicBehavior` to do its job. If so, annotate the caller `Method` with `RequiresUnreferencedCode` as well; this will "bubble up" the warning so that callers of `Method` get a warning instead:
 
 ```csharp
-    // Warn for calls to Method, but not for Method's call to DynamicBehavior.
-    [RequiresUnreferencedCode("Calls DynamicBehavior.")]
-    public static void Method()
-    {
-        DynamicBehavior(); // OK. Doesn't warn now.
-    }
+// Warn for calls to Method, but not for Method's call to DynamicBehavior.
+[RequiresUnreferencedCode("Calls DynamicBehavior.")]
+public static void Method()
+{
+    DynamicBehavior(); // OK. Doesn't warn now.
+}
 ```
 
 Once you have "bubbled up" the attribute all the way to public APIs (so that these warnings are produced only for public methods, if at all), you are done. Apps which call your library will now get warnings if they call those public APIs, but these will no longer produce warnings like `IL2104: Assembly 'MyLibrary' produced trim warnings`.

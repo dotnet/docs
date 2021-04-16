@@ -35,8 +35,7 @@ try
 
     Console.WriteLine($"The decrypted original message: {decryptedMessage}");
 }
-catch (Execption ex)
+catch (Exception ex)
 {
     Console.WriteLine($"The decryption failed. {ex}");
-    throw;
 }

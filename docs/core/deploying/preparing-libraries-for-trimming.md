@@ -151,15 +151,15 @@ Now any calls to `UseMethods` will produce warnings if they pass in values which
 Here is another example where an unknown `Type` flows into the annotated method parameter, this time from a field:
 
 ```csharp
-    static Type type;
+static Type type;
 
-    static void UseMethodsHelper()
-    {
-        // warning IL2077: MyLibrary.UseMethodsHelper(Type): 'type' argument does not satisfy
-        // 'DynamicallyAccessedMemberTypes.PublicMethods' in call to 'MyLibrary.UseMethods(Type)'.
-        // The field 'System.Type MyLibrary::type' does not have matching annotations.
-        UseMethods(type);
-    }
+static void UseMethodsHelper()
+{
+    // warning IL2077: MyLibrary.UseMethodsHelper(Type): 'type' argument does not satisfy
+    // 'DynamicallyAccessedMemberTypes.PublicMethods' in call to 'MyLibrary.UseMethods(Type)'.
+    // The field 'System.Type MyLibrary::type' does not have matching annotations.
+    UseMethods(type);
+}
 ```
 
 Similarly, here the problem is that the field `type` is passed into a parameter with these requinements. You can fix it by adding `DynamicallyAccessedMembers` to the field. This will warn about code that assigns incompatible values to the field instead. Sometimes this process will continue until a public API is annotated, and other times it will end when a concrete type flows into a location with these requirements. For example:

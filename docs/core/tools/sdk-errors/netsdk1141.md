@@ -2,11 +2,11 @@
 title: "NETSDK1141: Unable to resolve the .NET SDK version as specified in the global.json"
 description: Learn about .NET SDK error NETSDK1141, which occurs when the SDK version could not be resolved in global.json.
 ms.topic: error-reference
-ms.date: 01/29/2021
+ms.date: 04/16/2021
 f1_keywords:
-- NETSDK1004
+- NETSDK1141
 ---
-# NETSDK1004: Assets file not found
+# NETSDK1141: Unable to resolve the .NET SDK version as specified in the global.json
 
 **This article applies to:** ✔️ .NET Core 2.1.100 SDK and later versions
 

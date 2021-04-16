@@ -18,7 +18,7 @@ The following example demonstrates a `switch` expression, which converts values 
 
 The preceding example shows the basic elements of a `switch` expression:
 
-- The *input expression* that is the expression on the left-hand side of the `switch` keyword. At the preceding example, it's the `direction` method parameter.
+- An expression followed by the `switch` keyword. In the preceding example, it's the `direction` method parameter.
 - The *`switch` expression arms*, separated by commas. Each `switch` expression arm contains a *pattern*, an optional [*case guard*](#case-guards), the `=>` token, and an *expression*.
 
 At the preceding example, a `switch` expression uses the following patterns:

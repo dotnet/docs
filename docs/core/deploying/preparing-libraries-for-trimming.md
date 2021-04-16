@@ -237,12 +237,12 @@ Here, the indexer property has been annotated so that the returned `Type` meets 
 If you are sure that the requirements are met, you can silence this warning by adding `UnconditionalSuppressMessage` to the getter:
 
 ```csharp
-    [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicParameterlessConstructor)]
-    public Type this[int i]
-    {
-        [UnconditionalSuppressMessage("ReflectionAnalysis", "IL2063",
-            Justification = "The list only contains types stored through the annotated setter.")]
-        get => types[i];
-        set => types[i] = value;
-    }
+[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicParameterlessConstructor)]
+public Type this[int i]
+{
+    [UnconditionalSuppressMessage("ReflectionAnalysis", "IL2063",
+        Justification = "The list only contains types stored through the annotated setter.")]
+    get => types[i];
+    set => types[i] = value;
+}
 ```

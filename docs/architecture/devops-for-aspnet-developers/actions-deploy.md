@@ -381,6 +381,11 @@ name: .NET
 
 on:
   workflow_dispatch:
+    inputs:
+      reason:
+        description: 'The reason for running the workflow'
+        required: true
+        default: 'Manual build from GitHub UI'
   push:
     branches: [ master ]
   pull_request:

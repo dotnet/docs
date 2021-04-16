@@ -75,7 +75,7 @@ You can also follow the same pattern for multiple libraries, adding them all to 
 > [!NOTE]
 > The analysis results depend on the implementation details of your dependencies. If you update to a new version of a dependency, this may introduce analysis warnings if the new version added non-understood reflection patterns, even if there were no API changes. In other words, introducing trim analysis warnings to a library is a breaking change when the library is used with `PublishTrimmed`.
 
-## Resolving trim warnings
+## Resolve trim warnings
 
 The above steps will produce warnings about code that may cause problems when used in a trimmed app. Here are a few examples of the most common kinds of warnings you may encounter, with recommendations for fixing them.
 

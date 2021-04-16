@@ -72,7 +72,8 @@ dotnet publish -c Release
 
 You can also follow the same pattern for multiple libraries, adding them all to the same project as `ProjectReference` and `TrimmerRootAssembly` item to see trim analysis warnings for more than one library at a time, but note that this will warn about dependencies if _any_ of the root libraries use a trim-unfriendly API in a dependency. To see warnings that have to do with only a particular library, reference that library only.
 
-Note that the analysis results depend on the implementation details of your dependencies. If you update to a new version of a dependency, this may introduce analysis warnings if the new version added non-understood reflection patterns, even if there were no API changes. In other words, introducing trim analysis warnings to a library is a breaking change when the library is used with `PublishTrimmed`.
+> [!NOTE]
+> The analysis results depend on the implementation details of your dependencies. If you update to a new version of a dependency, this may introduce analysis warnings if the new version added non-understood reflection patterns, even if there were no API changes. In other words, introducing trim analysis warnings to a library is a breaking change when the library is used with `PublishTrimmed`.
 
 ## Resolving trim warnings
 

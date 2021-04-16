@@ -387,7 +387,7 @@ on:
         required: true
         default: 'Manual build from GitHub UI'
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
     branches: [ master ]
 

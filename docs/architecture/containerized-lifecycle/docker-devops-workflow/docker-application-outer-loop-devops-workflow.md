@@ -100,7 +100,7 @@ With these Visual Studio Team Services tasks, a build Linux-Docker Host/VM provi
 > - Building a Linux-based Visual Studio Team Service build machine with Docker support: \
 >   <https://www.donovanbrown.com/post/Building-a-Linux-Based-Visual-Studio-Team-Service-Build-Machine-with-Docker-Support>
 
-### Implementing the CI pipeline with GitHub Actions
+### Implement a CI pipeline with GitHub Actions
 
 GitHub Actions allow you to create automation scripts that can build Docker images, push Docker images to an authenticated Docker registry, run Docker images, or run other operations offered by the Docker CLI.
 

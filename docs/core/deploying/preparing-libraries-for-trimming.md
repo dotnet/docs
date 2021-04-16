@@ -14,7 +14,7 @@ When publishing an app, `PublishTrimmed` will produce trim analysis [warnings](t
 
 You will encounter detailed warnings originating from your own code and `ProjectReference` dependencies. You may also see warnings like `warning IL2104: Assembly 'SomeAssembly' produced trim warnings` for `PackageReference` libraries. This means that the library contained patterns which are not guaranteed to work in the context of the trimmed app, and may result in a broken app. Consider contacting the author to see if the library can be annotated for trimming.
 
-To resolve warnings originating from the app code, jump ahead to the instructions on [resolving trim warnings](#resolving-trim-warnings). If you are interested in making your own `ProjectReference` libraries trim friendly, follow the instructions to [enable library trim warnings](#enabling-library-trim-warnings).
+To resolve warnings originating from the app code, see [resolving trim warnings](#resolve-trim-warnings). If you are interested in making your own `ProjectReference` libraries trim friendly, follow the instructions to [enable library trim warnings](#enable-library-trim-warnings).
 
 If your app only uses parts of a library that are compatible with trimming, consider [enabling trimming](trimming-options.md#trim-additional-assemblies) of this library if it is not already being trimmed. This will only produce warnings if your app uses problematic parts of the library. (You can also [show detailed warnings](trimming-options.md#showing-detailed-warnings) for the library to see which parts of it are problematic.)
 

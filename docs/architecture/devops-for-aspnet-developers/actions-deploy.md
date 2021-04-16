@@ -402,6 +402,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: 'Print manual run reason'
+      if: ${{ github.event_name == 'workflow_dispatch' }}
+      run: |
+        echo 'Reason: ${{ github.event.inputs.reason }}'
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:

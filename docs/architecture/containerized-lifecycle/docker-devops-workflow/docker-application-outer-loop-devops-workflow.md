@@ -62,16 +62,11 @@ Here are the basic CI workflow steps with Docker and Azure DevOps Services:
 Here are the basic CI workflow steps with Docker and GitHub:
 
 1. The developer pushes a commit to a GitHub repo.
-
-2. CI is built in, so Actions will trigger base on the event filters.
-
-3. GitHub pulls the SCC repository, including the Dockerfile describing the image, as well as the application and test code.
-
-4. GitHub builds a Docker image and labels it with a build number.
-
-5. GitHub instantiates the Docker container within the provisioned Docker Host, and runs the appropriate tests.
-
-6. If the tests are successful, the image is first relabeled to a meaningful name so that you know it's a "blessed build" (like "/1.0.0" or any other label), and then pushed up to your Docker Registry (Docker Hub, Azure Container Registry, DTR, etc.)
+1. CI is built in, so Actions will trigger base on the event filters.
+1. GitHub pulls the SCC repository, including the _Dockerfile_ describing the image, as well as the application and test code.
+1. GitHub builds a Docker image and labels it with a build number.
+1. GitHub instantiates the Docker container within the provisioned Docker Host, and runs the appropriate tests.
+1. If the tests are successful, the image is first relabeled to a meaningful name so that you know it's a "blessed build" (like "/1.0.0" or any other label), and then pushed up to your Docker Registry (Docker Hub, Azure Container Registry, DTR, etc.)
 
 ### Implementing the CI pipeline with Azure DevOps Services and the Docker extension for Azure DevOps Services
 

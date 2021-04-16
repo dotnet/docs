@@ -52,6 +52,9 @@ Participants and reviewers:
 > **Miguel Veloso**, Software Development Engineer at Plain Concepts
 >
 > **Sumit Ghosh**, Principal Consultant at Neudesic
+>
+> **Colin Dembovsky**, DevOps Practice Lead, Cognizant Microsoft Business Group
+
 
 ## Copyright
 

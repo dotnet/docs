@@ -42,7 +42,7 @@ The Microsoft platform and tools for containerized Docker apps, as defined in Ta
     Even if you're familiar with Linux commands, you can manage your container applications using Microsoft Windows and PowerShell with a Linux Subsystem command line and the products (Docker, Kubernetes…) clients running on this Linux Subsystem capability. You'll learn more about using these tools under Linux Subsystem using your favorite Microsoft Windows OS later in this book.
 
   - **Open-source tools** Because AKS exposes the standard API endpoints for the orchestration engine, the most popular tools are compatible with AKS and, in most cases, will work out of the box—including visualizers, monitoring, command-line tools, and even future tools as they become available.
-   
+  
   - **GitHub Advanced Security** [GitHub Advanced Security](https://docs.github.com/github/getting-started-with-github/about-github-advanced-security) offers a suite of tools for securing the software supply chain that can seamlessly integrate security into the daily workflow of teams developing containerized applications.
 
   - **Azure Monitor** Is Azure's solution to monitor every angle of your production environment. You can monitor production Docker applications by just setting up its SDK into your services so that you can get system-generated log data from the applications.

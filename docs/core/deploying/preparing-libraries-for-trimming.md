@@ -8,15 +8,17 @@ ms.date: 04/16/2021
 
 # Prepare .NET libraries for trimming
 
+The .NET SDK makes it possible to reduce the size of self-contained apps by [trimming](trim-self-contained.md), removing unused code from the app and its dependencies. Not all code is compatible with trimming, so .NET 6 provides trim analysis [warnings](trimming-options.md#analysis-warnings) to detect patterns that may break trimmed apps. This document describes how to prepare libraries for trimming with the aid of these warnings, including recommendations for fixing some common cases.
+
 ## Trim warnings in apps
 
-In .NET 6+, when publishing an app, the `PublishTrimmed` project file element will produce trim analysis [warnings](trimming-options.md#analysis-warnings) for patterns that are not statically understood to be compatible with trimming, including patterns in your code and in dependencies.
+In .NET 6+, when publishing an app, the `PublishTrimmed` project file element will produce trim analysis warnings for patterns that are not statically understood to be compatible with trimming, including patterns in your code and in dependencies.
 
 You will encounter detailed warnings originating from your own code and `ProjectReference` dependencies. You may also see warnings like `warning IL2104: Assembly 'SomeAssembly' produced trim warnings` for `PackageReference` libraries. This warning means that the library contained patterns which are not guaranteed to work in the context of the trimmed app, and may result in a broken app. Consider contacting the author to see if the library can be annotated for trimming.
 
 To resolve warnings originating from the app code, see [resolving trim warnings](#resolve-trim-warnings). If you are interested in making your own `ProjectReference` libraries trim friendly, follow the instructions to [enable library trim warnings](#enable-library-trim-warnings).
 
-If your app only uses parts of a library that are compatible with trimming, consider [enabling trimming](trimming-options.md#trim-additional-assemblies) of this library if it is not already being trimmed. This will only produce warnings if your app uses problematic parts of the library. (You can also [show detailed warnings](trimming-options.md#showing-detailed-warnings) for the library to see which parts of it are problematic.)
+If your app only uses parts of a library that are compatible with trimming, consider [enabling trimming](trimming-options.md#trim-additional-assemblies) of this library if it is not already being trimmed. This will only produce warnings if your app uses problematic parts of the library. (You can also [show detailed warnings](trimming-options.md#show-detailed-warnings) for the library to see which parts of it are problematic.)
 
 ## Enable library trim warnings
 

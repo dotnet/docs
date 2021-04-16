@@ -80,7 +80,7 @@ Do not add or remove items to/from `ManagedAssemblyToLink`, because the SDK comp
 
 - `<TrimmerSingleWarn>True</TrimmerSingleWarn>` or `<TrimmerSingleWarn>False<TrimmerSingleWarn>`
 
-  Control whether to show [single warnings](#showing-detailed-warnings) for this assembly.
+  Control whether to show [single warnings](#show-detailed-warnings) for this assembly.
 
 ## Root assemblies
 

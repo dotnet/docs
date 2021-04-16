@@ -38,7 +38,7 @@ From a command shell, download the code, build the project, and run it as follow
 1. Clone the code to a folder on your local machine.
 
     ```console
-    git clone hhttps://github.com/dotnet-architecture/simple-feed-reader/
+    git clone https://github.com/dotnet-architecture/simple-feed-reader/
     ```
 
 2. Change your working folder to the *simple-feed-reader* folder that was created.
@@ -101,19 +101,25 @@ To deploy the app, you'll need to create an App Service [Web App](/azure/app-ser
     az webapp create --name $webappname --resource-group AzureTutorial --plan $webappname
     ```
 
-    e. Set the deployment credentials. These deployment credentials apply to all the web apps in your subscription. Don't use special characters in the user name.
+    e. Set the deployment branch to `main` in the `appsettings` configuration.
+
+    ```azurecli
+    az webapp config appsettings set --name $webappname --resource-group AzureTutorial --settings DEPLOYMENT_BRANCH=main
+    ```
+
+    f. Set the deployment credentials. These deployment credentials apply to all the web apps in your subscription. Don't use special characters in the user name.
 
     ```azurecli
     az webapp deployment user set --user-name REPLACE_WITH_USER_NAME --password REPLACE_WITH_PASSWORD
     ```
 
-    f. Configure the web app to accept deployments from local Git and display the *Git deployment URL*. **Note this URL for reference later**.
+    g. Configure the web app to accept deployments from local Git and display the *Git deployment URL*. **Note this URL for reference later**.
 
     ```azurecli
     echo Git deployment URL: $(az webapp deployment source config-local-git --name $webappname --resource-group AzureTutorial --query url --output tsv)
     ```
 
-    g. Display the *web app URL*. Browse to this URL to see the blank web app. **Note this URL for reference later**.
+    h. Display the *web app URL*. Browse to this URL to see the blank web app. **Note this URL for reference later**.
 
     ```console
     echo Web app URL: http://$webappname.azurewebsites.net
@@ -127,10 +133,10 @@ To deploy the app, you'll need to create an App Service [Web App](/azure/app-ser
     git remote add azure-prod GIT_DEPLOYMENT_URL
     ```
 
-    b. Push the local default branch (*master*) to the *azure-prod* remote's default branch (*master*).
+    b. Push the local default branch (*main*) to the *azure-prod* remote's deployment branch (*main*).
 
     ```console
-    git push azure-prod master
+    git push azure-prod main
     ```
 
     You'll be prompted for the deployment credentials you created earlier. Observe the output in the command shell. Azure builds the ASP.NET Core app remotely.
@@ -173,13 +179,19 @@ Deployment slots support the staging of changes without impacting the app runnin
     az webapp deployment slot create --name $webappname --resource-group AzureTutorial --slot staging
     ```
 
-    b. Configure the staging slot to use deployment from local Git and get the **staging** deployment URL. **Note this URL for reference later**.
+    b. Set the deployment branch to `main` in the `appsettings` configuration.
+
+    ```azurecli
+    az webapp config appsettings set --name $webappname --resource-group AzureTutorial --slot staging --settings DEPLOYMENT_BRANCH=main
+    ```
+
+    c. Configure the staging slot to use deployment from local Git and get the **staging** deployment URL. **Note this URL for reference later**.
 
     ```azurecli
     echo Git deployment URL for staging: $(az webapp deployment source config-local-git --name $webappname --resource-group AzureTutorial --slot staging --query url --output tsv)
     ```
 
-    c. Display the staging slot's URL. Browse to the URL to see the empty staging slot. **Note this URL for reference later**.
+    d. Display the staging slot's URL. Browse to the URL to see the empty staging slot. **Note this URL for reference later**.
 
     ```console
     echo Staging web app URL: http://$webappname-staging.azurewebsites.net
@@ -201,10 +213,10 @@ Deployment slots support the staging of changes without impacting the app runnin
     git remote add azure-staging <Git_staging_deployment_URL>
     ```
 
-    b. Push the local default branch (*master*) to the *azure-staging* remote's default branch (*master*).
+    b. Push the local default branch (*main*) to the *azure-staging* remote's deployment branch (*main*).
 
     ```console
-    git push azure-staging master
+    git push azure-staging main
     ```
 
     Wait while Azure builds and deploys the app.

@@ -389,7 +389,7 @@ on:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 env:
   app-name: "cd-simplefeedreader"

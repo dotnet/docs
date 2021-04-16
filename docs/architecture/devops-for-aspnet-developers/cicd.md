@@ -53,7 +53,7 @@ In this section, you'll complete the following tasks:
 1. Publish your local Git repository to the newly created GitHub repository. Execute the following command:
 
     ```console
-    git push -u origin master
+    git push -u origin main
     ```
 
 1. Open a browser window, and navigate to `https://github.com/<GitHub_username>/simple-feed-reader/`. Validate that your code appears in the GitHub repository.

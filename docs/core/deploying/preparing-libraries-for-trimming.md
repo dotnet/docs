@@ -32,7 +32,9 @@ The Roslyn analyzer is useful for a fast feedback cycle with IDE integration, bu
 
 ### Showing all warnings
 
-To show all analysis warnings for your library, including warnings about dependencies, create a project like the following that references your library, and publish it with `PublishTrimmed`.
+To show all analysis warnings for your library, including warnings about dependencies, create a separate app project like the following that references your library, and publish it with `PublishTrimmed`.
+
+Publishing a self-contained app ensures that the library is analyzed in a context where its dependencies are available, so that you are alerted if your library uses any code from dependencies that is incompatible with trimming.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -43,13 +45,15 @@ To show all analysis warnings for your library, including warnings about depende
     <!-- Use a RID of your choice. -->
     <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
     <PublishTrimmed>true</PublishTrimmed>
+    <!-- Prevent warnings from unused code in dependencies -->
     <TrimmerDefaultAction>link</TrimmerDefaultAction>
-    <!-- Optional, for non-default workloads -->
+    <!-- Enable warnings if the SDK you are using disables them -->
     <SuppressTrimAnalysisWarnings>false</SuppressTrimAnalysisWarnings>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="path/to/MyLibrary.csproj" />
+    <!-- Analyze the whole library -->
     <TrimmerRootAssembly Include="MyLibrary" />
   </ItemGroup>
 
@@ -59,8 +63,6 @@ To show all analysis warnings for your library, including warnings about depende
 ```dotnetcli
 dotnet publish -c Release
 ```
-
-- Publishing a self-contained app ensures that the library is analyzed in a context where its dependencies are available, so that you are alerted if your library uses any code from dependencies that is incompatible with trimming.
 
 - `TrimmerRootAssembly` ensures that every part of the library is analyzed. This is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`, which would otherwise let trimming remove the unused library without analyzing it.
 

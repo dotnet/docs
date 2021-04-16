@@ -166,13 +166,13 @@ static void UseMethodsHelper()
 Similarly, here the problem is that the field `type` is passed into a parameter with these requinements. You can fix it by adding `DynamicallyAccessedMembers` to the field. This will warn about code that assigns incompatible values to the field instead. Sometimes this process will continue until a public API is annotated, and other times it will end when a concrete type flows into a location with these requirements. For example:
 
 ```csharp
-    [DynamicallyAccessedMembers(DynamicallyAccessedMembers.PublicMethods)]
-    static Type type;
+[DynamicallyAccessedMembers(DynamicallyAccessedMembers.PublicMethods)]
+static Type type;
 
-    static void InitializeTypeField()
-    {
-        MyLibrary.type = typeof(System.Tuple);
-    }
+static void InitializeTypeField()
+{
+    MyLibrary.type = typeof(System.Tuple);
+}
 ```
 
 In this case the trim analysis will simply keep public methods of `System.Tuple`, and will not produce further warnings.

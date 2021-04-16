@@ -10,7 +10,7 @@ ms.date: 04/16/2021
 
 ## Trim warnings in apps
 
-When publishing an app, `PublishTrimmed` will produce trim analysis [warnings](trimming-options.md#analysis-warnings) (in .NET 6+) for patterns that are not statically understood to be compatible with trimming, including patterns in your code and in dependencies.
+In .NET 6+, when publishing an app, the `PublishTrimmed` project file element will produce trim analysis [warnings](trimming-options.md#analysis-warnings) for patterns that are not statically understood to be compatible with trimming, including patterns in your code and in dependencies.
 
 You will encounter detailed warnings originating from your own code and `ProjectReference` dependencies. You may also see warnings like `warning IL2104: Assembly 'SomeAssembly' produced trim warnings` for `PackageReference` libraries. This warning means that the library contained patterns which are not guaranteed to work in the context of the trimmed app, and may result in a broken app. Consider contacting the author to see if the library can be annotated for trimming.
 

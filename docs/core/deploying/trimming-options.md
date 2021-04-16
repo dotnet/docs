@@ -158,7 +158,7 @@ In .NET 6+, trim analysis will produce at most one warning for each assembly tha
 
 The defaults show detailed warnings for the project assembly and `ProjectReference`s. `<TrimmerSingleWarn>` can also be set as metadata on an [individual assembly](#trimmed-assemblies) to control the warning behavior for that assembly only.
 
-## Removing symbols
+## Remove symbols
 
 Symbols will normally be trimmed to match the trimmed assemblies. You can also remove all symbols:
 

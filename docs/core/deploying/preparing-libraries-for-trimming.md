@@ -187,7 +187,7 @@ In general, try to avoid reflection if possible. When using reflection, limit it
 - In other cases, you might discover that your code uses patterns which can't be expressed in terms of the `DynamicallyAccessedMembers` attributes, even if it only uses reflection to operate on statically-known types. In these cases, you may need to reorganize some of your code to make it follow an analyzable pattern.
 - Sometimes the existing design of an API will render it mostly trim-incompatible, and you may need to find other ways to accomplish what it is doing. A common example is reflection-based serializers. In these cases, consider adopting other technology like source generators to produce code that is more easily statically analyzed.
 
-## Resolving warnings for non-analyzable patterns
+## Resolve warnings for non-analyzable patterns
 
 You should prefer resolving warnings by expressing the intent of your code using `RequiresUnreferencedCode` and `DynamicallyAccessedMembers` when possible. However, in some cases you may be interested in enabling trimming of a library that uses patterns which can't be expressed with those attributes, or without refactoring existing code. This section describes additional advanced ways to resolve trim analysis warnings.
 

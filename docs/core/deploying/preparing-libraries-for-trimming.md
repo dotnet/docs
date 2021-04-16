@@ -18,7 +18,7 @@ To resolve warnings originating from the app code, jump ahead to the instruction
 
 If your app only uses parts of a library that are compatible with trimming, consider [enabling trimming](trimming-options.md#trim-additional-assemblies) of this library if it is not already being trimmed. This will only produce warnings if your app uses problematic parts of the library. (You can also [show detailed warnings](trimming-options.md#showing-detailed-warnings) for the library to see which parts of it are problematic.)
 
-## Enabling library trim warnings
+## Enable library trim warnings
 
 These instructions show how to enable and resolve static analysis warnings to prepare a library for trimming. Follow these steps if you are authoring a library and either want to proactively make your library trimmable, or have been contacted by app authors who encountered trim warnings from your library.
 

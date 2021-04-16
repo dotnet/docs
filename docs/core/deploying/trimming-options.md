@@ -148,7 +148,7 @@ Individual [warning codes](https://github.com/mono/linker/blob/master/docs/error
 
     Don't treat ILLink warnings as errors. This may be useful to avoid turning trim analysis warnings into errors when treating compiler warnings as errors globally.
 
-## Showing detailed warnings
+## Show detailed warnings
 
 In .NET 6+, trim analysis will produce at most one warning for each assembly that comes from a `PackageReference`, indicating that the assembly's internals are not compatible with trimming. You can also show individual warnings for all assemblies:
 

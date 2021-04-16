@@ -6,7 +6,7 @@ ms.author: svbomer
 ms.date: 04/16/2021
 ---
 
-# Preparing libraries for trimming
+# Prepare .NET libraries for trimming
 
 ## Trim warnings in apps
 

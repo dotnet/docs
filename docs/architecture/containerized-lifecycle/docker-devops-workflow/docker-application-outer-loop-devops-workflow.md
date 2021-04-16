@@ -219,6 +219,9 @@ Figure 5-11 demonstrates how you can edit the Deploy to Kubernetes task with the
 > [!TIP]
 > To read more about the CD pipeline with Azure DevOps Services and Docker, visit <https://azure.microsoft.com/services/devops/pipelines>
 
+> [!TIP]
+> To see GitHub Actions workflows for CI, visit <https://github.com/dotnet-architecture/eShopOnContainers/wiki/GitHub-Actions>. For a walkthrough of GitHub Actions performing deployment to an Azure Kubernetes environment, visit <https://github.com/dotnet-architecture/eShopOnContainers/wiki/Deployment-With-GitHub-Actions>.
+
 ## Step 5: Run and manage
 
 Because running and managing applications at enterprise-production level is a major subject in and of itself, and due to the type of operations and people working at that level (IT operations) as well as the large scope of this area, the entire next chapter is devoted to explaining it.

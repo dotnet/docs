@@ -55,7 +55,6 @@ Participants and reviewers:
 >
 > **Colin Dembovsky**, DevOps Practice Lead, Cognizant Microsoft Business Group
 
-
 ## Copyright
 
 PUBLISHED BY

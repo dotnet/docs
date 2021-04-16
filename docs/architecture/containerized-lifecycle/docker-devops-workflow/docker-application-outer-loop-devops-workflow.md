@@ -68,7 +68,7 @@ Here are the basic CI workflow steps with Docker and GitHub:
 1. GitHub instantiates the Docker container within the provisioned Docker Host, and runs the appropriate tests.
 1. If the tests are successful, the image is first relabeled to a meaningful name so that you know it's a "blessed build" (like "/1.0.0" or any other label), and then pushed up to your Docker Registry (Docker Hub, Azure Container Registry, DTR, etc.)
 
-### Implementing the CI pipeline with Azure DevOps Services and the Docker extension for Azure DevOps Services
+### Implement a CI pipeline with Azure DevOps Services and the Docker extension for Azure DevOps Services
 
 Visual Studio Azure DevOps Services contains Build & Release Templates that you can use in your CI/CD pipeline with which you can build Docker images, push Docker images to an authenticated Docker registry, run Docker images, or run other operations offered by the Docker CLI. It also adds a Docker Compose task that you can use to build, push, and run multi-container Docker applications, or run other operations offered by the Docker Compose CLI, as shown in Figure 5-3.
 

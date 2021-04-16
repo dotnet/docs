@@ -30,7 +30,7 @@ Set `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` (in .NET 6+) in your library
 
 The Roslyn analyzer is useful for a fast feedback cycle with IDE integration, but is currently incomplete. It doesn't cover all trim analysis warnings, but the set of patterns it understands will improve over time to give more complete coverage. The Roslyn analyzer also isn't able to analyze the implementations of reference assemblies that you depend on. It is important to follow the next steps to ensure that your library is fully compatible with trimming.
 
-### Showing all warnings
+### Show all warnings
 
 To show all analysis warnings for your library, including warnings about dependencies, create a separate app project like the following that references your library, and publish it with `PublishTrimmed`.
 

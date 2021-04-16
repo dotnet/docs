@@ -430,7 +430,7 @@ jobs:
     runs-on: ubuntu-latest
 
     environment:
-      name: PRE-PROD
+      name: STAGING
       url: ${{ steps.deploywebapp.outputs.webapp-url }}
 
     steps:

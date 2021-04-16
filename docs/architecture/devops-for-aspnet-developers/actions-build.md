@@ -19,7 +19,7 @@ In this article, you will:
 
 ## Workflow structure
 
-Workflows are captured in YAML files and all have the following things:
+Workflows are defined in YAML files, and contain several common nodes:
 
 - a `name`
 - a trigger, defined by an `on` section
@@ -30,14 +30,14 @@ Jobs are run on *runners*. You can use *hosted runners*, which are spun up by Gi
 
 Each `job` will specify what runner GitHub should use to execute the `steps`. You can also specify dependencies between jobs using the `needs` attribute. Deployment jobs can also specify an `environment` to target.
 
-Steps can be as easy as inline commands or they can be Actions. Most CI workflows will have a combination of `run` steps (for executing scripts) and Actions. Actions are pulled into the workflow by referencing the Action repository (and optionally a tag or commit hash for specific versions) and specifying any parameters using the `with` keyword.
+Steps are either inline commands or calls to GitHub Actions. Most CI workflows will have a combination of `run` steps (for executing scripts) and actions. Actions are pulled into the workflow by referencing the action repository (and optionally a tag or commit hash for specific versions) and specifying any parameters using the `with` keyword.
 
 > [!TIP]
 > You can read more about GitHub Actions YAML syntax [Workflow syntax for GitHub Actions](https://docs.github.com/actions/reference/workflow-syntax-for-github-actions).
 
 ## Create a basic build workflow
 
-One important principle of effective DevOps is to build once, deploy many times. You'll start by creating a workflow to build a basic .NET app. In the next step, you'll publish the output to prepare for deployment.
+A primary principle of effective DevOps is to "build once, and deploy many times". You'll start by creating a workflow to build a basic .NET app. In the next step, you'll publish the output to prepare for deployment.
 
 1. Navigate to your GitHub repository and select the **Actions** tab.
 1. GitHub detects that there's .NET code in the repository and suggests a .NET workflow template. Select **Set up this workflow** to create a new YAML workflow file:
@@ -105,7 +105,7 @@ Notice the following things:
 1. The `on` object specifies when this workflow should run. This workflow has two events that trigger it: `push` to `main` and `pull_request` to `main`. Each time someone commits to `main` or creates a pull request (PR) to `main`, this workflow will execute.
 1. There's a single `job` called `build`. This build should run on a hosted agent. `ubuntu_latest` specifies the most recent Ubuntu hosted agent.
 1. There are five steps:
-    1. `actions/checkout@2` is an action that checks out the code in the repository onto the runner.
+    1. `actions/checkout@v2` is an action that checks out the code in the repository onto the runner.
     1. `actions/setup-dotnet@v1` is an action that sets up the .NET CLI. This step also specifies a `name` attribute for the logs and the `dotnet-version` parameter within the `with` object.
     1. Three `run` steps that execute `dotnet restore`, `dotnet build`, and `dotnet test`. `name` attributes are also specified for these `run` steps to make the logs look pretty.
 

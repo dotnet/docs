@@ -26,7 +26,7 @@ Ensure you are using the .NET 6 SDK for these steps. They will not work correctl
 
 ## Enable Roslyn analyzer
 
-During development, set `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` (in .NET 6+) in your library project. This will not have any effect on the output, but it will enable trim analysis during build via a Roslyn analyzer.
+Set `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` (in .NET 6+) in your library project. This will not have any effect on the output, but it will enable trim analysis during build via a Roslyn analyzer.
 
 The Roslyn analyzer is useful for a fast feedback cycle with IDE integration, but is currently incomplete. It doesn't cover all trim analysis warnings, but the set of patterns it understands will improve over time to give more complete coverage. The Roslyn analyzer also isn't able to analyze the implementations of reference assemblies that you depend on. It is important to follow the next steps to ensure that your library is fully compatible with trimming.
 

@@ -10,7 +10,7 @@ Module Module1
 
         Try
             ' Create a file stream.
-            Using fileStream As FileStream = New FileStream("TestData.txt", FileMode.Open)
+            Using fileStream As New FileStream("TestData.txt", FileMode.Open)
 
                 ' Create a new instance of the default Aes implementation class
                 Using aes As Aes = Aes.Create()

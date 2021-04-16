@@ -6,7 +6,7 @@ Module Module1
     Sub Main()
         Try
             ' Create a file stream
-            Using fileStream As FileStream = New FileStream("TestData.txt", FileMode.OpenOrCreate)
+            Using fileStream As New FileStream("TestData.txt", FileMode.OpenOrCreate)
 
                 ' Create a new instance of the default Aes implementation class  
                 ' and configure encryption key.

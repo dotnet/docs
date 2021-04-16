@@ -1,4 +1,5 @@
 ﻿using System;
+using System;
 using System.IO;
 using System.Security.Cryptography;
 
@@ -21,8 +22,8 @@ try
         0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16
     };
 
-    //Create a CryptoStream, pass it the file stream, and decrypt
-    //it with the Aes class using the key and IV.
+    // Create a CryptoStream, pass it the file stream, and decrypt
+    // it with the Aes class using the key and IV.
     using CryptoStream cryptoStream = new(
        fileStream,
        aes.CreateDecryptor(key, iv),
@@ -35,8 +36,8 @@ try
 
     Console.WriteLine($"The decrypted original message: {decryptedMessage}");
 }
-catch
+catch (Execption ex)
 {
-    Console.WriteLine("The decryption failed.");
+    Console.WriteLine($"The decryption failed. {ex}");
     throw;
 }

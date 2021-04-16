@@ -1,4 +1,5 @@
 ﻿using System;
+using System;
 using System.IO;
 using System.Security.Cryptography;
 
@@ -41,9 +42,7 @@ try
 
     Console.WriteLine("The file was encrypted.");
 }
-catch
+catch (Exception ex)
 {
-    //Inform the user that an exception was raised.
-    Console.WriteLine("The encryption failed.");
-    throw;
+    Console.WriteLine($"The encryption failed. {ex}");
 }

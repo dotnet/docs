@@ -138,13 +138,13 @@ public class MyLibrary
 Here, `UseMethods` is calling a reflection method which has a [`DynamicallyAccessedMembers`](https://docs.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.dynamicallyaccessedmembersattribute?view=net-5.0) requirement. The requirement states that the type's public methods are available. In this case, you can fix this by adding the same requirement to the parameter of `UseMethods`.
 
 ```csharp
-    static void UseMethods(
-        // State the requirement in the UseMethods parameter.
-        [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
-        Type type)
-    {
-        // ...
-    }
+static void UseMethods(
+    // State the requirement in the UseMethods parameter.
+    [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
+    Type type)
+{
+    // ...
+}
 ```
 
 Now any calls to `UseMethods` will produce warnings if they pass in values which don't satisfy the `PublicMethods` requirement. Like with `RequiresUnreferencedCode`, once you have bubbled up such warnings to public APIs, you are done.

@@ -1,5 +1,5 @@
 ---
-title: Preparing libraries for trimming
+title: Prepare .NET libraries for trimming
 description: Learn how to prepare libraries for trimming.
 author: sbomer
 ms.author: svbomer

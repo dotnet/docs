@@ -88,7 +88,7 @@ After echoing the question, you can add the code to generate the random answer. 
 
 :::code language="csharp" source="snippets/top-level-statements/ProgramSnippets.cs" ID="Answers":::
 
-This array has 12 answers that are affirmative, six that are non-committal, and six that are negative. Next, add the following code to generate and display a random answer from the array:
+This array has ten answers that are affirmative, five that are non-committal, and five that are negative. Next, add the following code to generate and display a random answer from the array:
 
 :::code language="csharp" source="snippets/top-level-statements/ProgramSnippets.cs" ID="GenerateAnswer":::
 

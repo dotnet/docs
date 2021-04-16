@@ -48,7 +48,30 @@ The `dotnet nuget verify` command verifies a signed NuGet package.
 
 * **`-v|--verbosity <LEVEL>`**
 
-  Sets the MSBuild verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `normal`.
+  Sets the [MSBuild verbosity level](/visualstudio/msbuild/obtaining-build-logs-with-msbuild#verbosity-settings). Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`.
+
+    The following table shows what is displayed for each verbosity level.
+
+    ​                                  | `q[uiet]` | `m[inimal]` | `n[ormal]` | `d[etailed]` | `diag[nostic]`
+    ----------------------------------| --------- | ----------- | ---------- | -----------| --------------
+    `Certificate chain Information`   | ❌       | ❌          | ❌         | ✔️         | ✔️
+    `Path to package being verified`  | ❌       | ❌          | ✔️         | ✔️         | ✔️
+    `Hashing algorithm used for signature`        | ❌       | ❌          | ✔️         | ✔️         | ✔️
+    `Author/Repository Certificate -> SHA1 hash`| ❌       | ❌          | ✔️         | ✔️         | ✔️
+    `Author/Repository Certificate -> Issued By`| ❌       | ❌          | ✔️         | ✔️         | ✔️
+    `Timestamp Certificate -> Issued By`| ❌       | ❌          | ✔️         | ✔️         | ✔️
+    `Timestamp Certificate -> SHA-256 hash`| ❌       | ❌          | ✔️         | ✔️         | ✔️
+    `Timestamp Certificate -> Validity period`| ❌       | ❌          | ✔️         | ✔️         | ✔️
+    `Timestamp Certificate -> SHA1 hash`| ❌       | ❌          | ✔️         | ✔️         | ✔️
+    `Timestamp Certificate -> Subject name`| ❌       | ❌          | ✔️         | ✔️         | ✔️
+    `Author/Repository Certificate -> Subject name`| ❌       | ✔️          | ✔️         | ✔️         | ✔️
+    `Author/Repository Certificate -> SHA-256 hash`| ❌       | ✔️          | ✔️         | ✔️         | ✔️
+    `Author/Repository Certificate -> Validity period`| ❌       | ✔️          | ✔️         | ✔️         | ✔️
+    `Author/Repository Certificate -> Service index URL (If applicable)`| ❌       | ✔️          | ✔️         | ✔️         | ✔️
+    `Package name being verified`                    | ❌       | ✔️          | ✔️         | ✔️         | ✔️
+    `Type of signature (author or repository)`| ❌       | ✔️          | ✔️         | ✔️         | ✔️
+
+    ❌ indicates details that are **not** displayed. ✔️ indicates details that are displayed.
 
 * **`-h|--help`**
 

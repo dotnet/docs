@@ -43,6 +43,9 @@ The analyzer with code fix template creates five projects:
 - **MakeConst.Test**, which is a unit test project.
 - **MakeConst.Vsix**, which is the default startup project that starts a second instance of Visual Studio that has loaded your new analyzer. Press <kbd>F5</kbd> to start the VSIX project.
 
+> [!NOTE]
+> Analyzers should target .NET Standard 2.0 because they can run in .NET Core environment (command line builds) and .NET Framework enviroenment (Visual Studio).
+
 > [!TIP]
 > When you run your analyzer, you start a second copy of Visual Studio. This second copy uses a different registry hive to store settings. That enables you to differentiate the visual settings in the two copies of Visual Studio. You can pick a different theme for the experimental run of Visual Studio. In addition, don't roam your settings or login to your Visual Studio account using the experimental run of Visual Studio. That keeps the settings different.
 >

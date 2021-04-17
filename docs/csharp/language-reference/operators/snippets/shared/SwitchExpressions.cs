@@ -4,11 +4,10 @@ using System.Linq;
 
 namespace operators
 {
-
     // <SnippetBasicStructure>
     public static class SwitchExample
     {
-        public enum Directions
+        public enum Direction
         {
             Up,
             Down,
@@ -24,19 +23,23 @@ namespace operators
             West
         }
 
+        public static Orientation ToOrientation(Direction direction) => direction switch
+        {
+            Direction.Up    => Orientation.North,
+            Direction.Right => Orientation.East,
+            Direction.Down  => Orientation.South,
+            Direction.Left  => Orientation.West,
+            _ => throw new ArgumentOutOfRangeException(nameof(direction), $"Not expected direction value: {direction}"),
+        };
+
         public static void Main()
         {
-            var direction = Directions.Right;
+            var direction = Direction.Right;
             Console.WriteLine($"Map view direction is {direction}");
-
-            var orientation = direction switch
-            {
-                Directions.Up    => Orientation.North,
-                Directions.Right => Orientation.East,
-                Directions.Down  => Orientation.South,
-                Directions.Left  => Orientation.West,
-            };
-            Console.WriteLine($"Cardinal orientation is {orientation}");
+            Console.WriteLine($"Cardinal orientation is {ToOrientation(direction)}");
+            // Output:
+            // Map view direction is Right
+            // Cardinal orientation is East
         }
     }
     // </SnippetBasicStructure>
@@ -46,92 +49,25 @@ namespace operators
         public static void Examples()
         {
             SwitchExample.Main();
-
-            var collection = new int[]{1,2,3,4,5,6,7,8,9};
-            var item = TypeExample(collection);
-            Console.WriteLine(item);
-            item = RecursiveExample(collection);
-            Console.WriteLine(item);
-
-            item = RecursiveExample(collection[0..0]);
-            Console.WriteLine(item);
-            item = RecursiveExample(collection[0..1]);
-            Console.WriteLine(item);
-            item = RecursiveExample(collection[0..2]);
-            Console.WriteLine(item);
-
-            item = CaseGuardExample(collection.AsEnumerable());
-            Console.WriteLine(item);
-            item = CaseGuardExample(collection[0..0].AsEnumerable());
-            Console.WriteLine(item);
-            item = CaseGuardExample(collection[0..1].AsEnumerable());
-            Console.WriteLine(item);
-            item = CaseGuardExample(collection[0..2].AsEnumerable());
-            try {
-                item = ExhaustiveExample(default(List<int>));
-                Console.WriteLine(item);
-            } catch (ArgumentNullException e)
-            {
-                Console.WriteLine($"Caught expected exception: {e.Message}");
-            }
-
         }
 
-        // <SnippetTypePattern>
-        public static T TypeExample<T>(IEnumerable<T> sequence) =>
-            sequence switch
-            {
-                System.Array array => (T)array.GetValue(2),
-                IList<T> list      => list[2],
-                IEnumerable<T> seq => seq.Skip(2).First(),
-            };
-        // </SnippetTypePattern>
+        // <CaseGuardExample>
+        public readonly struct Point
+        {
+            public Point(int x, int y) => (X, Y) = (x, y);
+            
+            public int X { get; }
+            public int Y { get; }
+        }
 
-        // <SnippetRecursivePattern>
-        public static T RecursiveExample<T>(IEnumerable<T> sequence) =>
-            sequence switch
-            {
-                System.Array { Length : 0}       => default(T),
-                System.Array { Length : 1} array => (T)array.GetValue(0),
-                System.Array { Length : 2} array => (T)array.GetValue(1),
-                System.Array array               => (T)array.GetValue(2),
-                IList<T> list                    => list[2],
-                IEnumerable<T> seq               => seq.Skip(2).First(),
-            };
-        // </SnippetRecursivePattern>
-
-        // <SnippetGuardCase>
-        public static T CaseGuardExample<T>(IEnumerable<T> sequence) =>
-            sequence switch
-            {
-                System.Array { Length : 0}                => default(T),
-                System.Array { Length : 1} array          => (T)array.GetValue(0),
-                System.Array { Length : 2} array          => (T)array.GetValue(1),
-                System.Array array                        => (T)array.GetValue(2),
-                IEnumerable<T> list when !list.Any()      => default(T),
-                IEnumerable<T> list when list.Count() < 3 => list.Last(),
-                IList<T> list                             => list[2],
-                IEnumerable<T> seq                        => seq.Skip(2).First(),
-            };
-        // </SnippetGuardCase>
-
-        // <SnippetExhaustive>
-        public static T ExhaustiveExample<T>(IEnumerable<T> sequence) =>
-            sequence switch
-            {
-                System.Array { Length : 0}       => default(T),
-                System.Array { Length : 1} array => (T)array.GetValue(0),
-                System.Array { Length : 2} array => (T)array.GetValue(1),
-                System.Array array               => (T)array.GetValue(2),
-                IEnumerable<T> list
-                    when !list.Any()             => default(T),
-                IEnumerable<T> list
-                    when list.Count() < 3        => list.Last(),
-                IList<T> list                    => list[2],
-                null                             => throw new ArgumentNullException(nameof(sequence)),
-                _                                => sequence.Skip(2).First(),
-            };
-        // </SnippetExhaustive>
+        static Point Transform(Point point) => point switch
+        {
+            { X: 0, Y: 0 }                    => new Point(0, 0),
+            { X: var x, Y: var y } when x < y => new Point(x + y, y),
+            { X: var x, Y: var y } when x > y => new Point(x - y, y),
+            { X: var x, Y: var y }            => new Point(2 * x, 2 * y),
+        };
+        // </CaseGuardExample>
     }
 }
 

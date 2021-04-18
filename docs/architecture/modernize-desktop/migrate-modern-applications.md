@@ -151,7 +151,7 @@ to Microsoft Access using the <xref:System.Data.Odbc> library.
 
 ## Consuming services
 
-With the raise of service-oriented architectures, desktop applications began to evolve from a client-server model to the three-layer approach. In the client-server approach, a direct database connection is established from the client holding the business logic usually inside a single EXE file. On the other hand, the three-layer approach establishes an intermediate service layer implementing business logic and database access allowing for better security, scalability, and reusability. Instead of working directly with datasets of data, the layer approach relies in a set of services implementing contracts and types objects as a way to implement data transfer.
+With the rise of service-oriented architectures, desktop applications began to evolve from a client-server model to the three-layer approach. In the client-server approach, a direct database connection is established from the client holding the business logic, usually inside a single EXE file. On the other hand, the three-layer approach establishes an intermediate service layer implementing business logic and database access, allowing for better security, scalability, and reusability. Instead of working directly with underlying data, the layered approach relies on a set of services implementing contracts and typed objects for data transfer.
 
 If you have a desktop application using a WCF service and you want to migrate it to .NET, there are some things to consider.
 

@@ -11,8 +11,8 @@ Public Class PipeServer
         Dim i As Integer
         Dim servers(numThreads) As Thread
 
-        Console.WriteLine(vbNewLine + "*** Named pipe server stream with impersonation example ***" + vbNewLine)
-        Console.WriteLine("Waiting for client connect..." + vbNewLine)
+        Console.WriteLine(vbCrLf + "*** Named pipe server stream with impersonation example ***" + vbCrLf)
+        Console.WriteLine("Waiting for client connect..." + vbCrLf)
         For i = 0 To numThreads - 1
             servers(i) = New Thread(AddressOf ServerThread)
             servers(i).Start()
@@ -21,7 +21,7 @@ Public Class PipeServer
         While i > 0
             For j As Integer = 0 To numThreads - 1
                 If Not (servers(j) Is Nothing) Then
-                    if servers(j).Join(250)
+                    If servers(j).Join(250) Then
                         Console.WriteLine("Server thread[{0}] finished.", servers(j).ManagedThreadId)
                         servers(j) = Nothing
                         i -= 1    ' decrement the thread watch count
@@ -29,7 +29,7 @@ Public Class PipeServer
                 End If
             Next j
         End While
-        Console.WriteLine(vbNewLine + "Server threads exhausted, exiting.")
+        Console.WriteLine(vbCrLf + "Server threads exhausted, exiting.")
     End Sub
 
     Private Shared Sub ServerThread(data As Object)
@@ -89,7 +89,7 @@ Public Class StreamString
         Dim inBuffer As Array = Array.CreateInstance(GetType(Byte), len)
         ioStream.Read(inBuffer, 0, len)
 
-        Return streamEncoding.GetString(inBuffer)
+        Return streamEncoding.GetString(CType(inBuffer, Byte()))
     End Function
 
     Public Function WriteString(outString As String) As Integer

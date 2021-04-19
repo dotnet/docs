@@ -4,6 +4,7 @@ description: Learn how to control trimming of self-contained apps.
 author: sbomer
 ms.author: svbomer
 ms.date: 08/25/2020
+ms.topic: reference
 ---
 # Trimming options
 

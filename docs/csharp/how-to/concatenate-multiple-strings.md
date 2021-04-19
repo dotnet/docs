@@ -59,7 +59,7 @@ At last, you can use [LINQ](../programming-guide/concepts/linq/index.md)
 and the <xref:System.Linq.Enumerable.Aggregate%2A?displayProperty=nameWithType> method to join strings from a collection. This method combines
 the source strings using a lambda expression. The lambda expression does the
 work to add each string to the existing accumulation. The following example
-combines an array of words by adding a space between each word in the array:
+combines an array of words, adding a space between each word in the array:
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/Concatenate.cs" id="Snippet6":::
 

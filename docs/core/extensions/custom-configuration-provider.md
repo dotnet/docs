@@ -54,12 +54,12 @@ An `AddEntityConfiguration` extension method permits adding the configuration so
 
 :::code language="csharp" source="snippets/configuration/custom-provider/Extensions/ConfigurationBuilderExtensions.cs":::
 
+> [!IMPORTANT]
+> The use of a temporary configuration to acquire the connection string is important. The current `builder` has it's configuration constructed temporary by calling <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType>, and <xref:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetConnectionString%2A>. After obtaining the connection string, the `builder` adds the `EntityConfigurationSource` given the `connectionString`.
+
 The following code shows how to use the custom `EntityConfigurationProvider` in *Program.cs*:
 
 :::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="33":::
-
-> [!IMPORTANT]
-> The use of a temporary configuration to acquire the connection string is important. The current `builder` has it's configuration constructed temporary by calling <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType>, and <xref:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetConnectionString%2A>. After obtaining the connection string, the `builder` adds the `EntityConfigurationSource` given the `connectionString`.
 
 ## Consume provider
 

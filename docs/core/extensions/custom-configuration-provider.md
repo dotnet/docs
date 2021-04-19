@@ -58,6 +58,9 @@ The following code shows how to use the custom `EntityConfigurationProvider` in 
 
 :::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="33":::
 
+> [!IMPORTANT]
+> The use of a temporary configuration to acquire the connection string is important. The current `builder` has it's configuration constructed temporary by calling <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType>, and <xref:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetConnectionString%2A>. After obtaining the connection string, the `builder` adds the `EntityConfigurationSource` given the `connectionString`.
+
 ## Consume provider
 
 To consume the custom configuration provider, you can use the [options pattern](options.md). With the sample app in place, define an options object to represent the widget settings.

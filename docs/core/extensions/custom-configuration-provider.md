@@ -66,7 +66,7 @@ To consume the custom configuration provider, you can use the [options pattern](
 
 With a call to <xref:Microsoft.Extensions.Hosting.IHostBuilder.ConfigureServices%2A>, you'll configure the mapping of the options.
 
-:::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="17-24,38-40":::
+:::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="16-19,35-37":::
 
 The preceding code, configures the `WidgetOptions` object from the `"WidgetOptions"` section of the configuration. This enables the options pattern, exposing a dependency injection-ready `IOptions<WidgetOptions>` representation of the EF settings. The options are ultimately provided from the custom configuration provider.
 

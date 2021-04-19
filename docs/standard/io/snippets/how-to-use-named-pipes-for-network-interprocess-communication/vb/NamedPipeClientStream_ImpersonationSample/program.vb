@@ -17,7 +17,7 @@ Public Class PipeClient
                     PipeDirection.InOut, PipeOptions.None, _
                     TokenImpersonationLevel.Impersonation)
 
-                Console.WriteLine("Connecting to server..." + vbNewLine)
+                Console.WriteLine("Connecting to server..." + vbCrLf)
                 pipeClient.Connect()
 
                 '<snippet2>
@@ -40,7 +40,7 @@ Public Class PipeClient
                 Thread.Sleep(4000)
             End If
         Else
-            Console.WriteLine(vbNewLine + "*** Named pipe client stream with impersonation example ***" + vbNewLine)
+            Console.WriteLine(vbCrLf + "*** Named pipe client stream with impersonation example ***" + vbCrLf)
             StartClients()
         End If
     End Sub
@@ -50,7 +50,7 @@ Public Class PipeClient
         Dim currentProcessName As String = Environment.CommandLine
         Dim plist(numClients - 1) As Process
 
-        Console.WriteLine("Spawning client processes..." + vbNewLine)
+        Console.WriteLine("Spawning client processes..." + vbCrLf)
 
         If currentProcessName.Contains(Environment.CurrentDirectory) Then
             currentProcessName = currentProcessName.Replace(Environment.CurrentDirectory, String.Empty)
@@ -81,7 +81,7 @@ Public Class PipeClient
                 End If
             Next
         End While
-        Console.WriteLine(vbNewLine + "Client processes finished, exiting.")
+        Console.WriteLine(vbCrLf + "Client processes finished, exiting.")
     End Sub
 End Class
 
@@ -102,7 +102,7 @@ Public Class StreamString
         Dim inBuffer As Array = Array.CreateInstance(GetType(Byte), len)
         ioStream.Read(inBuffer, 0, len)
 
-        Return streamEncoding.GetString(inBuffer)
+        Return streamEncoding.GetString(CType(inBuffer, Byte()))
     End Function
 
     Public Function WriteString(outString As String) As Integer

@@ -82,15 +82,23 @@ The resulting output will now also have a `ProjectName.X.manifest` file. This fi
 
 ## Embedding Type Libraries in the COM host
 
-Unlike in .NET Framework, there is no support in .NET Core or .NET 5 or newer for generating a COM Type Library (TLB) from a .NET Core assembly. The guidance is to either manually write an IDL file or a C/C++ header for the native declarations of the COM interfaces. If you decide to write an IDL file, you can compile it with the Visual C++ SDK's MIDL compiler to produce a TLB.
+Unlike in .NET Framework, there is no support in .NET Core or .NET 5 or newer for generating a [COM Type Library (TLB)](https://docs.microsoft.com/windows/win32/midl/com-dcom-and-type-libraries#type-library) from a .NET assembly. The guidance is to either manually write an IDL file or a C/C++ header for the native declarations of the COM interfaces. If you decide to write an IDL file, you can compile it with the Visual C++ SDK's MIDL compiler to produce a TLB.
 
-In .NET 6 Preview 5 or newer, the .NET SDK supports embedding already-compiled TLBs into the COM host as part of your project build.
+In the .NET 6 Preview 5 or newer SDK, the .NET SDK supports embedding already-compiled TLBs into the COM host as part of your project build.
 
 To embed a type library into your application, follow these steps:
 
 1. Open the `.csproj` project file and add `<ComHostTypeLibrary Include="path/to/typelib.tlb" Id="<id>" />` inside an `<ItemGroup></ItemGroup>` tag.
 2. Replace `<id>` with a positive integer value. The value must be unique among the TLBs you specify to be embedded in the COM host.
    - The `Id` attribute is optional if you only add one `ComHostTypeLibrary` to your project.
+
+For example, the following code block adds the `Server.tlb` type library at index `1` to the COM host:
+
+```xml
+<ItemGroup>
+    <ComHostTypeLibrary Include="Server.tlb" Id="1" />
+</ItemGroup>
+```
 
 ## Sample
 

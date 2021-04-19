@@ -18,7 +18,7 @@ The sample app demonstrates how to create a basic configuration provider that re
 The provider has the following characteristics:
 
 - The EF in-memory database is used for demonstration purposes.
-  - To use a database that requires a connection string, you'd rely on a connection string from an interim configuration.
+  - To use a database that requires a connection string, get a connection string from an interim configuration.
 - The provider reads a database table into configuration at startup. The provider doesn't query the database on a per-key basis.
 - Reload-on-change isn't implemented, so updating the database after the app starts has no effect on the app's configuration.
 
@@ -34,7 +34,7 @@ Add an `EntityConfigurationContext` to store and access the configured values.
 
 :::code language="csharp" source="snippets/configuration/custom-provider/Providers/EntityConfigurationContext.cs":::
 
-By overriding <xref:Microsoft.EntityFrameworkCore.DbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)> you can deterministically use the appropriate database connection. For example, if a connection string was provided you could connect to SQL Server, otherwise you could rely on an in-memory database.
+By overriding <xref:Microsoft.EntityFrameworkCore.DbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)> you can use the appropriate database connection. For example, if a connection string was provided you could connect to SQL Server, otherwise you could rely on an in-memory database.
 
 Create a class that implements <xref:Microsoft.Extensions.Configuration.IConfigurationSource>.
 
@@ -55,7 +55,7 @@ An `AddEntityConfiguration` extension method permits adding the configuration so
 :::code language="csharp" source="snippets/configuration/custom-provider/Extensions/ConfigurationBuilderExtensions.cs":::
 
 > [!IMPORTANT]
-> The use of a temporary configuration to acquire the connection string is important. The current `builder` has it's configuration constructed temporary by calling <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType>, and <xref:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetConnectionString%2A>. After obtaining the connection string, the `builder` adds the `EntityConfigurationSource` given the `connectionString`.
+> The use of a temporary configuration source to acquire the connection string is important. The current `builder` has its configuration constructed temporarily by calling <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType>, and <xref:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetConnectionString%2A>. After obtaining the connection string, the `builder` adds the `EntityConfigurationSource` given the `connectionString`.
 
 The following code shows how to use the custom `EntityConfigurationProvider` in *Program.cs*:
 
@@ -67,11 +67,11 @@ To consume the custom configuration provider, you can use the [options pattern](
 
 :::code language="csharp" source="snippets/configuration/custom-provider/WidgetOptions.cs":::
 
-With a call to <xref:Microsoft.Extensions.Hosting.IHostBuilder.ConfigureServices%2A>, you'll configure the mapping of the options.
+A call to <xref:Microsoft.Extensions.Hosting.IHostBuilder.ConfigureServices%2A> configures the mapping of the options.
 
 :::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="16-19,35-37":::
 
-The preceding code, configures the `WidgetOptions` object from the `"WidgetOptions"` section of the configuration. This enables the options pattern, exposing a dependency injection-ready `IOptions<WidgetOptions>` representation of the EF settings. The options are ultimately provided from the custom configuration provider.
+The preceding code configures the `WidgetOptions` object from the `"WidgetOptions"` section of the configuration. This enables the options pattern, exposing a dependency injection-ready `IOptions<WidgetOptions>` representation of the EF settings. The options are ultimately provided from the custom configuration provider.
 
 ## See also
 

@@ -21,18 +21,18 @@ Decryption is the reverse operation of encryption. For secret-key encryption, yo
 
 The decryption of data encrypted with symmetric algorithms is similar to the process used to encrypt data with symmetric algorithms. The <xref:System.Security.Cryptography.CryptoStream> class is used with symmetric cryptography classes provided by .NET to decrypt data read from any managed stream object.
 
-The following example illustrates how to create a new instance of the default implementation class for the <xref:System.Security.Cryptography.Aes> algorithm. The instance is used to perform decryption on a <xref:System.Security.Cryptography.CryptoStream> object. This example first creates a new instance of the <xref:System.Security.Cryptography.Aes> implementation class. It reads the initialization vector (IV) value from a managed stream variable, `myStream`. Next it instantiates a <xref:System.Security.Cryptography.CryptoStream> object and initializes it to the value of the `myStream` instance. The <xref:System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor%2A?displayProperty=nameWithType> method from the <xref:System.Security.Cryptography.Aes> instance is passed the IV value and the same key that was used for encryption.
+The following example illustrates how to create a new instance of the default implementation class for the <xref:System.Security.Cryptography.Aes> algorithm. The instance is used to perform decryption on a <xref:System.Security.Cryptography.CryptoStream> object. This example first creates a new instance of the <xref:System.Security.Cryptography.Aes> implementation class. It reads the initialization vector (IV) value from a managed stream variable, `fileStream`. Next it instantiates a <xref:System.Security.Cryptography.CryptoStream> object and initializes it to the value of the `fileStream` instance. The <xref:System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor%2A?displayProperty=nameWithType> method from the <xref:System.Security.Cryptography.Aes> instance is passed the IV value and the same key that was used for encryption.
 
 ```vb
 Dim aes As Aes = Aes.Create()
 Dim cryptStream As New CryptoStream(
-    myStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read)
+    fileStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read)
 ```
 
 ```csharp
 Aes aes = Aes.Create();
 CryptoStream cryptStream = new CryptoStream(
-    myStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read);
+    fileStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read);
 ```
 
 The following example shows the entire process of creating a stream, decrypting the stream, reading from the stream, and closing the streams. A file stream object is created that reads a file named *TestData.txt*. The file stream is then decrypted using the **CryptoStream** class and the **Aes** class. This example specifies key value that is used in the symmetric encryption example for [Encrypting Data](encrypting-data.md). It does not show the code needed to encrypt and transfer these values.

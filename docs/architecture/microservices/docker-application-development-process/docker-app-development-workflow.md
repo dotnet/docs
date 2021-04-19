@@ -168,34 +168,34 @@ Probably the best way to understand multi-stage is going through a Dockerfile in
 The initial Dockerfile might look something like this:
 
 ```dockerfile
- 1  FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
- 2  WORKDIR /app
- 3  EXPOSE 80
- 4
- 5  FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
- 6  WORKDIR /src
- 7  COPY src/Services/Catalog/Catalog.API/Catalog.API.csproj …
- 8  COPY src/BuildingBlocks/HealthChecks/src/Microsoft.AspNetCore.HealthChecks …
- 9  COPY src/BuildingBlocks/HealthChecks/src/Microsoft.Extensions.HealthChecks …
-10  COPY src/BuildingBlocks/EventBus/IntegrationEventLogEF/ …
-11  COPY src/BuildingBlocks/EventBus/EventBus/EventBus.csproj …
-12  COPY src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.csproj …
-13  COPY src/BuildingBlocks/EventBus/EventBusServiceBus/EventBusServiceBus.csproj …
-14  COPY src/BuildingBlocks/WebHostCustomization/WebHost.Customization …
-15  COPY src/BuildingBlocks/HealthChecks/src/Microsoft.Extensions …
-16  COPY src/BuildingBlocks/HealthChecks/src/Microsoft.Extensions …
-17  RUN dotnet restore src/Services/Catalog/Catalog.API/Catalog.API.csproj
-18  COPY . .
-19  WORKDIR /src/src/Services/Catalog/Catalog.API
-20  RUN dotnet build Catalog.API.csproj -c Release -o /app
-21
-22  FROM build AS publish
-23  RUN dotnet publish Catalog.API.csproj -c Release -o /app
-24
-25  FROM base AS final
-26  WORKDIR /app
-27  COPY --from=publish /app .
-28  ENTRYPOINT ["dotnet", "Catalog.API.dll"]
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
+WORKDIR /app
+EXPOSE 80
+
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
+WORKDIR /src
+COPY src/Services/Catalog/Catalog.API/Catalog.API.csproj …
+COPY src/BuildingBlocks/HealthChecks/src/Microsoft.AspNetCore.HealthChecks …
+COPY src/BuildingBlocks/HealthChecks/src/Microsoft.Extensions.HealthChecks …
+COPY src/BuildingBlocks/EventBus/IntegrationEventLogEF/ …
+COPY src/BuildingBlocks/EventBus/EventBus/EventBus.csproj …
+COPY src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.csproj …
+COPY src/BuildingBlocks/EventBus/EventBusServiceBus/EventBusServiceBus.csproj …
+COPY src/BuildingBlocks/WebHostCustomization/WebHost.Customization …
+COPY src/BuildingBlocks/HealthChecks/src/Microsoft.Extensions …
+COPY src/BuildingBlocks/HealthChecks/src/Microsoft.Extensions …
+RUN dotnet restore src/Services/Catalog/Catalog.API/Catalog.API.csproj
+COPY . .
+WORKDIR /src/src/Services/Catalog/Catalog.API
+RUN dotnet build Catalog.API.csproj -c Release -o /app
+
+FROM build AS publish
+RUN dotnet publish Catalog.API.csproj -c Release -o /app
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app .
+ENTRYPOINT ["dotnet", "Catalog.API.dll"]
 ```
 
 And these are the details, line by line:
@@ -271,21 +271,21 @@ For the final optimization, it just happens that line 20 is redundant, as line 2
 The resulting file is then:
 
 ```dockerfile
- 1  FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
- 2  WORKDIR /app
- 3  EXPOSE 80
- 4
- 5  FROM mcr.microsoft.com/dotnet/sdk:5.0 AS publish
- 6  WORKDIR /src
- 7  COPY . .
- 8  RUN dotnet restore /ignoreprojectextensions:.dcproj
- 9  WORKDIR /src/src/Services/Catalog/Catalog.API
-10  RUN dotnet publish Catalog.API.csproj -c Release -o /app
-11
-12  FROM base AS final
-13  WORKDIR /app
-14  COPY --from=publish /app .
-15  ENTRYPOINT ["dotnet", "Catalog.API.dll"]
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
+WORKDIR /app
+EXPOSE 80
+
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS publish
+WORKDIR /src
+COPY . .
+RUN dotnet restore /ignoreprojectextensions:.dcproj
+WORKDIR /src/src/Services/Catalog/Catalog.API
+RUN dotnet publish Catalog.API.csproj -c Release -o /app
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app .
+ENTRYPOINT ["dotnet", "Catalog.API.dll"]
 ```
 
 ### Creating your base image from scratch

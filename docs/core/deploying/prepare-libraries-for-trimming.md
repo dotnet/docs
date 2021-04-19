@@ -104,7 +104,7 @@ public class MyLibrary
 ```
 
 This means the library calls a method which has explicitly been annotated as incompatible with trimming, using [`RequiresUnreferencedCodeAttribute`](
-https://docs.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.requiresunreferencedcodeattribute?view=net-5.0). To get rid of the warning, consider whether `Method` needs to call `DynamicBehavior` to do its job. If so, annotate the caller `Method` with `RequiresUnreferencedCode` as well; this will "bubble up" the warning so that callers of `Method` get a warning instead:
+https://docs.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.requiresunreferencedcodeattribute?view=net-5.0&preserve-view=true). To get rid of the warning, consider whether `Method` needs to call `DynamicBehavior` to do its job. If so, annotate the caller `Method` with `RequiresUnreferencedCode` as well; this will "bubble up" the warning so that callers of `Method` get a warning instead:
 
 ```csharp
 // Warn for calls to Method, but not for Method's call to DynamicBehavior.
@@ -137,7 +137,7 @@ public class MyLibrary
 }
 ```
 
-Here, `UseMethods` is calling a reflection method which has a [`DynamicallyAccessedMembers`](https://docs.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.dynamicallyaccessedmembersattribute?view=net-5.0) requirement. The requirement states that the type's public methods are available. In this case, you can fix this by adding the same requirement to the parameter of `UseMethods`.
+Here, `UseMethods` is calling a reflection method which has a [`DynamicallyAccessedMembers`](https://docs.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.dynamicallyaccessedmembersattribute?view=net-5.0&preserve-view=true) requirement. The requirement states that the type's public methods are available. In this case, you can fix this by adding the same requirement to the parameter of `UseMethods`.
 
 ```csharp
 static void UseMethods(
@@ -200,7 +200,7 @@ When suppressing warnings, you are responsible for guaranteeing the trim compati
 
 ### UnconditionalSuppressMessage
 
-If the intent of your code can't be expressed with the annotations, but you know that the warning doesn't represent a real issue at runtime, you can suppress the warnings using [`UnconditionalSuppressMessageAttribute`](https://docs.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.unconditionalsuppressmessageattribute?view=net-5.0). This is similar to `SuppressMessageAttribute`, but it is persisted in IL and respected during trim analysis. For example:
+If the intent of your code can't be expressed with the annotations, but you know that the warning doesn't represent a real issue at runtime, you can suppress the warnings using [`UnconditionalSuppressMessageAttribute`](https://docs.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.unconditionalsuppressmessageattribute?view=net-5.0&preserve-view=true). This is similar to `SuppressMessageAttribute`, but it is persisted in IL and respected during trim analysis. For example:
 
 ```csharp
 class TypeCollection

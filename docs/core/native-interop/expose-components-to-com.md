@@ -80,11 +80,11 @@ Open an elevated command prompt and run `regsvr32 ProjectName.comhost.dll`. That
 
 The resulting output will now also have a `ProjectName.X.manifest` file. This file is the side-by-side manifest for use with Registry-Free COM.
 
-## Embedding Type Libraries in the COM host
+## Embedding type libraries in the COM host
 
-Unlike in .NET Framework, there is no support in .NET Core or .NET 5 or newer for generating a [COM Type Library (TLB)](https://docs.microsoft.com/windows/win32/midl/com-dcom-and-type-libraries#type-library) from a .NET assembly. The guidance is to either manually write an IDL file or a C/C++ header for the native declarations of the COM interfaces. If you decide to write an IDL file, you can compile it with the Visual C++ SDK's MIDL compiler to produce a TLB.
+Unlike in .NET Framework, there is no support in .NET Core or .NET 5+ for generating a [COM Type Library (TLB)](/windows/win32/midl/com-dcom-and-type-libraries#type-library) from a .NET assembly. The guidance is to either manually write an IDL file or a C/C++ header for the native declarations of the COM interfaces. If you decide to write an IDL file, you can compile it with the Visual C++ SDK's MIDL compiler to produce a TLB.
 
-In the .NET 6 Preview 5 or newer SDK, the .NET SDK supports embedding already-compiled TLBs into the COM host as part of your project build.
+In .NET 6 Preview 5 and later versions, the .NET SDK supports embedding already-compiled TLBs into the COM host as part of your project build.
 
 To embed a type library into your application, follow these steps:
 

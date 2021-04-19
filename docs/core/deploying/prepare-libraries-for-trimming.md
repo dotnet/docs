@@ -36,7 +36,7 @@ The Roslyn analyzer is useful for a fast feedback cycle with IDE integration, bu
 
 To show all analysis warnings for your library, including warnings about dependencies, create a separate app project like the following that references your library, and publish it with `PublishTrimmed`.
 
-Publishing a self-contained app ensures that the library is analyzed in a context where its dependencies are available, so that you are alerted if your library uses any code from dependencies that is incompatible with trimming.
+The extra step of creating an app project just to get complete warnings for a library is necessary because the implementations of dependencies are not generally available during `dotnet build`, and reference assemblies don't contain enough information to determine whether they are compatible with trimming. Publishing a self-contained app ensures that the library is analyzed in a context where its dependencies are available, so that you are alerted if your library uses any code from dependencies that could break a trimmed app.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -49,8 +49,6 @@ Publishing a self-contained app ensures that the library is analyzed in a contex
     <PublishTrimmed>true</PublishTrimmed>
     <!-- Prevent warnings from unused code in dependencies -->
     <TrimmerDefaultAction>link</TrimmerDefaultAction>
-    <!-- Enable warnings if the SDK you are using disables them -->
-    <SuppressTrimAnalysisWarnings>false</SuppressTrimAnalysisWarnings>
   </PropertyGroup>
 
   <ItemGroup>
@@ -69,8 +67,6 @@ dotnet publish -c Release
 - `TrimmerRootAssembly` ensures that every part of the library is analyzed. This is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`, which would otherwise let trimming remove the unused library without analyzing it.
 
 - `<TrimmerDefaultAction>link</TrimmerDefaultAction>` ensures that only used parts of dependencies are analyzed. Without this option, you would see warnings originating from _any_ part of a dependency that doesn't set `[AssemblyMetadata("IsTrimmable", "True")]`, including parts that are unused by your library.
-
-- `<SuppressTrimAnalysisWarnings>false</SuppressTrimAnalysisWarnings>` is implied by `PublishTrimmed` in the .NET SDK. It is only needed if the app targets form factors like Android where the trim analysis warnings are disabled by default. Consult the documentation for your SDK.
 
 You can also follow the same pattern for multiple libraries, adding them all to the same project as `ProjectReference` and `TrimmerRootAssembly` item to see trim analysis warnings for more than one library at a time, but note that this will warn about dependencies if _any_ of the root libraries use a trim-unfriendly API in a dependency. To see warnings that have to do with only a particular library, reference that library only.
 

@@ -463,25 +463,9 @@ The Dapr .NET SDK doesn't contain any specific observability features. All obser
 
 If you want to emit telemetry from your .NET application code, you should consider the [OpenTelemetry SDK for .NET](https://opentelemetry.io/docs/net/). The Open Telemetry project is cross-platform, open source, and vendor agnostic. It provides an end-to-end implementation to generate, emit, collect, process, and export telemetry data. There's a single instrumentation library per language that supports automatic and manual instrumentation. Telemetry is published using the Open Telemetry standard. The project has broad industry support and adoption from cloud providers, vendors, and end users.
 
-## Reference application: eShopOnDapr
+## Sample application: Dapr Traffic Control
 
-Observability in accompanying eShopOnDapr reference application consists of several parts. Telemetry from all of the sidecars is captured. Additionally, there are other observability features inherited from the earlier eShopOnContainers sample.
-
-### Custom health dashboard
-
-The **WebStatus** project in eShopOnDapr is a custom health dashboard that gives insight into the health of the eShop services. This dashboard doesn't use the Dapr health API but uses the built-in [health checks mechanism](/aspnet/core/host-and-deploy/health-checks) of ASP.NET Core. The dashboard not only provides the health status of the services, but also the health of the dependencies of the services. For example, a service that uses a database also provides the health status of this database as shown in the following screenshot:
-
-![eShopOnDapr custom health dashboard](media/observability/eshop-health-dashboard.png)
-
-### Seq log aggregator
-
-[Seq](https://datalust.co/seq) is a popular log aggregator server that is used in eShopOnDapr to aggregate logs. Seq ingests logging from application services, but not from Dapr system services or sidecars. Seq indexes application logging and offers a web front end for analyzing and querying the logs. It also offers functionality for building monitoring dashboards.
-
-The eShopOnDapr application services emit structured logging using the [SeriLog](https://serilog.net/) logging library. Serilog publishes log events to a construct called a **sink**. A sink is simply a target platform to which Serilog writes its logging events. [Many Serilog sinks are available](https://github.com/serilog/serilog/wiki/Provided-Sinks), including one for Seq. Seq is the Serilog sink used in eShopOnDapr.
-
-### Application Insights
-
-eShopOnDapr services also send telemetry directly to Azure Application Insights using the Microsoft Application Insights SDK for .NET Core. For more information, see [Azure Application Insights for ASP.NET Core applications](/azure/azure-monitor/app/asp-net-core) in the Microsoft docs.
+> **TODO**
 
 ## Summary
 

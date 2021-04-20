@@ -88,8 +88,7 @@ For more information, see the [Create a project](azure/devops/organizations/proj
 
 ## Configure a self-hosted agent if necessary
 
-To build your code or deploy your software using Azure Pipelines, you need at least one agent. In Azure Pipelines, you can run parallel jobs on either **Microsoft-hosted** or **self-hosted** agent. But with the recent change in Azure Pipelines free grant of parallel jobs is temporarily disable for the public projects.
-For more details, refer [Configure and pay for parallel jobs](azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted).
+To build your code or deploy your software using Azure Pipelines, you need at least one agent. In Azure Pipelines, you can run parallel jobs on either **Microsoft-hosted** or **self-hosted** agent. But with the recent change in Azure Pipelines free grant of parallel jobs is temporarily disable for the public projects.For more details, refer [Configure and pay for parallel jobs](azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted).
 
 Go to **Organization Settings** and then **Pipelines** > **Parallel jobs**. If you see value **0** under **Microsoft-hosted** that means you need a **Self-hosted** agent to run your pipeline.
 

@@ -123,13 +123,15 @@ Azure App Service can be [debugged remotely with Visual Studio](/azure/app-servi
 
 In this section, you completed the following tasks:
 
-* Find basic monitoring and troubleshooting data in the Azure portal
-* Learn how Azure Monitor provides a deeper look at metrics across all Azure services
-* Connect the web app with Application Insights for app profiling
-* Turn on logging and learn where to download logs
-* Stream logs in real time
-* Learn where to set up alerts
-* Learn about remote debugging Azure App Service web apps.
+> [!div class="checklist"]
+>
+> * Find basic monitoring and troubleshooting data in the Azure portal
+> * Learn how Azure Monitor provides a deeper look at metrics across all Azure services
+> * Connect the web app with Application Insights for app profiling
+> * Turn on logging and learn where to download logs
+> * Stream logs in real time
+> * Learn where to set up alerts
+> * Learn about remote debugging Azure App Service web apps.
 
 ## Additional reading
 

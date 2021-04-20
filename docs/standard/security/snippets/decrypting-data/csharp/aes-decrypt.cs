@@ -11,7 +11,18 @@ try
 
     // Reads IV value from beginning of the file.
     byte[] iv = new byte[aes.IV.Length];
-    fileStream.Read(iv, 0, iv.Length);
+    int numBytesToRead = aes.IV.Length;
+    int numBytesRead = 0;
+    while (numBytesToRead > 0)
+    {
+        int n = fileStream.Read(iv, numBytesRead, numBytesToRead);
+
+        // Break when the end of the file is reached.
+        if (n == 0) break;
+
+        numBytesRead += n;
+        numBytesToRead -= n;
+    }
 
     // Decryption key must be the same value that was used
     // to encrypt the stream.
@@ -31,7 +42,7 @@ try
     // Read the stream.
     using StreamReader decryptReader = new(cryptoStream);
 
-    var decryptedMessage = await decryptReader.ReadToEndAsync();
+    string decryptedMessage = await decryptReader.ReadToEndAsync();
 
     Console.WriteLine($"The decrypted original message: {decryptedMessage}");
 }

@@ -17,7 +17,17 @@ Module Module1
 
                     ' Reads IV value from beginning of the file.
                     Dim iv As Byte() = New Byte(aes.IV.Length - 1) {}
-                    fileStream.Read(iv, 0, iv.Length)
+                    Dim numBytesToRead As Integer = CType(aes.IV.Length, Integer)
+                    Dim numBytesRead As Integer = 0
+
+                    While (numBytesToRead > 0)
+                        Dim n As Integer = fileStream.Read(iv, numBytesRead, numBytesToRead)
+                        If n = 0 Then
+                            Exit While
+                        End If
+                        numBytesRead += n
+                        numBytesToRead -= n
+                    End While
 
                     ' Create an instance of the CryptoStream class, pass it the file stream, and decrypt
                     ' it with the Rijndael class using the key and IV.

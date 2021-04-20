@@ -137,7 +137,8 @@ There are three distinct steps to complete. Completing the steps in the followin
 
     ![Select Self-hosted agent pool](media/cicd/azure-devops-build-agent-pool.png)
 
-    > [!NOTE] If you are using MS-hosted agent then select the *Hosted > Azure Pipelines* from drop down.
+    > [!NOTE]
+    > If you are using MS-hosted agent then select the *Hosted > Azure Pipelines* from drop down.
 
 1. Click the **Triggers** tab.
 1. Check the **Enable continuous integration** box. Under the **Branch filters** section, confirm that the **Type** drop-down is set to *Include*. Set the **Branch specification** drop-down to *main*.
@@ -210,7 +211,8 @@ There are three distinct steps to complete. Completing the steps in the followin
 
     ![Select Self-hosted agent](media/cicd/azure-devops-release-select-agent-pool.png)
 
-    >[!NOTE] If you are using MS-hosted agent then select the *Hosted > Azure Pipelines* from drop down.
+    > [!NOTE]
+    > If you are using MS-hosted agent then select the *Hosted > Azure Pipelines* from drop down.
 
 1. Click the **Save** button.
 1. Hover over the default release pipeline name. Click the pencil icon to edit it. Use *MyFirstProject-ASP.NET Core-CD* as the name.

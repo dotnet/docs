@@ -52,7 +52,7 @@ The <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure is 
 
 |Type|Size (in bytes)|Approximate range|Precision|Notes|
 |----------|--------|---------------------|--------------------|
-|<xref:System.Half?displayProperty=nameWithType>|2|||Introduced in .NET 6|
+|<xref:System.Half?displayProperty=nameWithType>|2|||Introduced in .NET 5|
 |<xref:System.Single?displayProperty=nameWithType>|4|±1.5 x 10<sup>−45</sup> to ±3.4 x 10<sup>38</sup>|~6-9 digits||
 |<xref:System.Double?displayProperty=nameWithType>|8|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|~15-17 digits||
 |<xref:System.Decimal?displayProperty=nameWithType>|16|±1.0 x 10<sup>-28</sup> to ±7.9228 x 10<sup>28</sup>|28-29 digits||

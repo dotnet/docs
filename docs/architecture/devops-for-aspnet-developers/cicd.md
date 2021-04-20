@@ -84,17 +84,17 @@ Remove the local Git deployment with the following steps. Azure Pipelines (an Az
 1. Enter the project name as *MyFirstProject* and select the **Visibility** as *Private*
 1. Select **Create project**.
 
-For more information, see the [Create a project](azure/devops/organizations/projects/create-project?view=azure-devops&tabs=preview-page#create-a-project)
+For more information, see [Create a project](/azure/devops/organizations/projects/create-project?view=azure-devops&tabs=preview-page&preserve-view=true#create-a-project)
 
 ## Configure a self-hosted agent if necessary
 
-To build your code or deploy your software using Azure Pipelines, you need at least one agent. In Azure Pipelines, you can run parallel jobs on either **Microsoft-hosted** or **self-hosted** agent. But with the recent change in Azure Pipelines free grant of parallel jobs is temporarily disable for the public projects.For more details, refer [Configure and pay for parallel jobs](azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted).
+To build your code or deploy your software using Azure Pipelines, you need at least one agent. In Azure Pipelines, you can run parallel jobs on either **Microsoft-hosted** or **self-hosted** agent. But with the recent change in Azure Pipelines free grant of parallel jobs is temporarily disable for the public projects.For more details, refer [Configure and pay for parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted&preserve-view=true).
 
 Go to **Organization Settings** and then **Pipelines** > **Parallel jobs**. If you see value **0** under **Microsoft-hosted** that means you need a **Self-hosted** agent to run your pipeline.
 
 ![MS-hosted agent](media/cicd/azure-devops-ms-hosted-agent.png)
 
-You can create that by following details mentioned in [Self-hosted agents](azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser#install). After successful configuration, you'll be able to see available agent under **Organization Settings** > **Agent pools** > **{youragentname}**
+You can create that by following details mentioned in [Self-hosted agents](/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser&preserve-view=true#install). After successful configuration, you'll be able to see available agent under **Organization Settings** > **Agent pools** > **{youragentname}**
 
 ![Self-hosted agent](media/cicd/azure-devops-self-hosted-agent.png)
 

@@ -107,7 +107,7 @@ MSBuild properties for configuring run-time behavior are noted in the individual
 
 ## Environment variables
 
-Environment variables can be used to supply some run-time configuration information. Configuring a run-time option by using an environment variable applies the setting to all .NET Core apps. Configuration knobs specified as environment variables generally have the prefix **DOTNET_**.
+Environment variables can be used to supply some run-time configuration information. Configuring a run-time option by using an environment variable applies the setting to all .NET Core apps. Configuration knobs specified as environment variables generally have the prefix **DOTNET_**. (The prefix was changed from `COMPlus_` to `DOTNET_` in .NET 6.)
 
 You can define environment variables from the Windows Control Panel, at the command line, or programmatically by calling the <xref:System.Environment.SetEnvironmentVariable(System.String,System.String)?displayProperty=nameWithType> method on both Windows and Unix-based systems.
 

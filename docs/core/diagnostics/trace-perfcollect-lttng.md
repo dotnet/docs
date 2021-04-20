@@ -71,6 +71,8 @@ For resolving method names of native runtime DLLs (such as libcoreclr.so), `perf
     > export DOTNET_EnableEventLog=1
     > ```
 
+   [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
+
 4. **[App]** Run the app - let it run as long as you need to in order to capture the performance problem. The exact length can be as short as you need as long as it sufficiently captures the window of time where the performance problem you want to investigate occurs.
 
     > ```bash
@@ -213,6 +215,8 @@ To do this, you can add the following environment variable:
 ```bash
 export DOTNET_ZapDisable=1
 ```
+
+[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
 With this change, you should get the symbols for all .NET code.
 

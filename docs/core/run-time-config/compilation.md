@@ -6,6 +6,10 @@ ms.topic: reference
 ---
 # Run-time configuration options for compilation
 
+This article details the settings you can use to configure .NET compilation.
+
+[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
+
 ## Tiered compilation
 
 - Configures whether the just-in-time (JIT) compiler uses [tiered compilation](../whats-new/dotnet-core-3-0.md#tiered-compilation). Tiered compilation transitions methods through two tiers:

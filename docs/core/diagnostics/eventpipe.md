@@ -11,7 +11,7 @@ EventPipe is a runtime component that can be used to collect tracing data, simil
 
 EventPipe is the mechanism behind many of the diagnostic tools and can be used for consuming events emitted by the runtime as well as custom events written with [EventSource](xref:System.Diagnostics.Tracing.EventSource).
 
-This article is a high-level overview of EventPipe describing when and how to use EventPipe, and how to configure it to best suit your needs.
+This article is a high-level overview of EventPipe. It describes when and how to use EventPipe, and how to configure it to best suit your needs.
 
 ## EventPipe basics
 
@@ -95,3 +95,5 @@ However, you can use the following environment variables to set up an EventPipe 
   - `Microsoft-DotNETCore-SampleProfiler:0:5`
 
   To learn more about some of the well-known providers in .NET, refer to [Well-known Event Providers](./well-known-event-providers.md).
+
+[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]

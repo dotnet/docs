@@ -6,6 +6,10 @@ ms.topic: reference
 ---
 # Run-time configuration options for debugging and profiling
 
+This article details the settings you can use to configure .NET debugging and profiling.
+
+[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
+
 ## Enable diagnostics
 
 - Configures whether the debugger, the profiler, and EventPipe diagnostics are enabled or disabled.

@@ -243,6 +243,8 @@ The next command, `ENTRYPOINT`, tells Docker to configure the container to run a
 > ENV DOTNET_EnableDiagnostics=0
 > ```
 
+[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
+
 From your terminal, run `docker build -t counter-image -f Dockerfile .` and when that command finishes, run `docker images`.
 
 ```console

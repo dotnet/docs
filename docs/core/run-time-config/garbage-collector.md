@@ -15,6 +15,7 @@ Settings are arranged into groups on this page. The settings within each group a
 > - These settings can also be changed dynamically by the app as it's running, so any run-time settings you set may be overridden.
 > - Some settings, such as [latency level](../../standard/garbage-collection/latency.md), are typically set only through the API at design time. Such settings are omitted from this page.
 > - For number values, use decimal notation for settings in the *runtimeconfig.json* file and hexadecimal notation for environment variable settings. For hexadecimal values, you can specify them with or without the "0x" prefix.
+> - If you're using the environment variables, .NET 6 standardizes on the prefix `DOTNET_` instead of `COMPlus_`. However, the `COMPlus_` prefix will continue to work. If you're using a previous version of the .NET runtime, you should still use the `COMPlus_` prefix, for example, `COMPlus_gcServer`.
 
 ## Flavors of garbage collection
 

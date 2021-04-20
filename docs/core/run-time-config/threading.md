@@ -6,6 +6,10 @@ ms.topic: reference
 ---
 # Run-time configuration options for threading
 
+This article details the settings you can use to configure threading in .NET.
+
+[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
+
 ## CPU groups
 
 - Configures whether threads are automatically distributed across CPU groups.

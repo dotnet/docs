@@ -29,7 +29,7 @@ GitHub environments are *logical*. They represent the physical (or virtual) reso
 Once you have these steps in place, you'll update the workflow to handle environment-specific configuration using environment secrets.
 
 > [!NOTE]
-> You can read more about [GitHub Actions Environments](https://docs.github.com/actions/reference/environments). At the time of writing, the GitHub Environments feature is in beta.
+> For more information, see [GitHub Actions - Environments](https://docs.github.com/actions/reference/environments).
 
 ## Azure authentication
 
@@ -113,7 +113,7 @@ In this case, the only difference between the environments is the slot that you'
 
     **Figure 5**: Add protection rules.
 
-## Deploy to pre-production
+## Deploy to staging
 
 You can now add additional jobs to the workflow to deploy to the environments! You'll start by adding a deployment to the `PRE-PROD` environment, which in this case is the web app staging slot.
 
@@ -169,7 +169,7 @@ You can now add additional jobs to the workflow to deploy to the environments! Y
           run: az logout
     ```
 
-    Notice the following things:
+    The preceding workflow defines several steps:
 
     1. You're creating a new job called `deploy_staging`.
     1. You specify a dependency using `needs`. This job needs the `build` job to complete successfully before it starts.
@@ -187,7 +187,7 @@ You can now add additional jobs to the workflow to deploy to the environments! Y
 
     **Figure 6**: Deployment to PRE-PROD is successful.
 
-1. Notice how the stating slot's direct URL contains `-staging`:
+1. Notice how the staging slot's direct URL contains `-staging`:
 
     ![The staging slot running](./media/actions/deploy/deployed-to-staging.jpg)
 
@@ -234,7 +234,7 @@ Now that you've deployed successfully to `PRE-PROD`, you'll want to deploy to `P
           run: az logout
     ```
 
-    Notice the following things:
+    The deployment to the `PROD` environment workflow specifies several steps:
   
     1. Once again, you specify a new job `deploy_prod` that `needs` `deploy_staging` to complete before starting.
     1. You're targeting the `PROD` environment this time. Also, the `url` value is different from before.
@@ -506,7 +506,6 @@ jobs:
 
     - name: az cli logout
       run: az logout
-
 ```
 
 >[!div class="step-by-step"]

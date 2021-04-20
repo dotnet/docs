@@ -4,6 +4,7 @@ description: Learn how the Configuration provider API is used to configure .NET 
 author: IEvangelist
 ms.author: dapine
 ms.date: 03/08/2021
+ms.topic: reference
 ---
 
 # Configuration providers in .NET

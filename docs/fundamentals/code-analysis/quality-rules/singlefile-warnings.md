@@ -1,20 +1,20 @@
 ---
-title: Publish rules (code analysis)
-description: "Learn about code analysis publish rules."
+title: SingleFile rules (code analysis)
+description: "Learn about code analysis single file rules."
 ms.date: 09/04/2020
 ms.topic: reference
 f1_keywords:
-- vs.codeanalysis.publishrules
+- vs.codeanalysis.singlefilerules
 helpviewer_keywords:
-- rules, publish
-- managed code analysis rules, publish rules
-- publish rules
+- rules, singlefile
+- managed code analysis rules, singlefile rules
+- singlefile rules
 author: gewarren
 ms.author: gewarren
 ---
-# Publish rules
+# SingleFile rules
 
-Publish rules for .NET.
+SingleFile rules for .NET.
 
 ## In this section
 

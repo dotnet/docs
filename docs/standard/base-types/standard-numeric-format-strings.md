@@ -347,15 +347,15 @@ Formatting is influenced by the properties of the current <xref:System.Globaliza
 
 ### Integral and floating-point numeric types
 
-Some descriptions of standard numeric format specifiers refer to integral or floating-point numeric types. The integral numeric types are <xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, and <xref:System.Numerics.BigInteger>. The floating-point numeric types are <xref:System.Decimal>, <xref:System.Single>, and <xref:System.Double>.
+Some descriptions of standard numeric format specifiers refer to integral or floating-point numeric types. The integral numeric types are <xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, and <xref:System.Numerics.BigInteger>. The floating-point numeric types are <xref:System.Decimal>, <xref:System.Half>, <xref:System.Single>, and <xref:System.Double>.
 
 ### Floating-point infinities and NaN
 
-Regardless of the format string, if the value of a <xref:System.Single> or <xref:System.Double> floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A>, <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A>, or <xref:System.Globalization.NumberFormatInfo.NaNSymbol%2A> property that is specified by the currently applicable <xref:System.Globalization.NumberFormatInfo> object.
+Regardless of the format string, if the value of a <xref:System.Half>, <xref:System.Single>, or <xref:System.Double> floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A>, <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A>, or <xref:System.Globalization.NumberFormatInfo.NaNSymbol%2A> property that is specified by the currently applicable <xref:System.Globalization.NumberFormatInfo> object.
 
 ## Code example
 
-The following example formats an integral and a floating-point numeric value using the en-US culture and all the standard numeric format specifiers. This example uses two particular numeric types (<xref:System.Double> and <xref:System.Int32>), but would yield similar results for any of the other numeric base types (<xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, <xref:System.Numerics.BigInteger>, <xref:System.Decimal>, and <xref:System.Single>).
+The following example formats an integral and a floating-point numeric value using the en-US culture and all the standard numeric format specifiers. This example uses two particular numeric types (<xref:System.Double> and <xref:System.Int32>), but would yield similar results for any of the other numeric base types (<xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, <xref:System.Numerics.BigInteger>, <xref:System.Decimal>, <xref:System.Half>, and <xref:System.Single>).
 
 [!code-csharp[system.x.tostring-and-culture#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.X.ToString-and-Culture/cs/xts.cs#FinalExample)]
 [!code-vb[system.x.tostring-and-culture#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.X.ToString-and-Culture/vb/xts.vb#1)]

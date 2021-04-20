@@ -295,6 +295,7 @@ CLS-compliant type | Description
 [Int16](xref:System.Int16) | 16-bit signed integer
 [Int32](xref:System.Int32) | 32-bit signed integer
 [Int64](xref:System.Int64) | 64-bit signed integer
+[Half](xref:System.Half) | Half-precision floating-point value
 [Single](xref:System.Single) | Single-precision floating-point value
 [Double](xref:System.Double) | Double-precision floating-point value
 [Boolean](xref:System.Boolean) | true or false value type
@@ -1628,7 +1629,7 @@ End Class
 '                                        ~~~~~~~~~
 ```
 
-If a generic type is derived from a generic base type, it must redeclare any constraints so that it can guarantee that constraints on the base type are also satisfied. The following example defines a `Number<T>` that can represent any numeric type. It also defines a `FloatingPoint<T>` class that represents a floating point value. However, the source code fails to compile, because it does not apply the constraint on `Number<T>` (that T must be a value type) to `FloatingPoint<T>`.
+If a generic type is derived from a generic base type, it must redeclare any constraints so that it can guarantee that constraints on the base type are also satisfied. The following example defines a `Number<T>` that can represent any numeric type. It also defines a `FloatingPoint<T>` class that represents a floating-point value. However, the source code fails to compile, because it does not apply the constraint on `Number<T>` (that T must be a value type) to `FloatingPoint<T>`.
 
 ```csharp
 using System;
@@ -1669,7 +1670,8 @@ public class FloatingPoint<T> : Number<T>
 {
    public FloatingPoint(T number) : base(number)
    {
-      if (typeof(float) == number.GetType() ||
+      if (typeof(System.Half) == number.GetType() ||
+          typeof(float) == number.GetType() ||
           typeof(double) == number.GetType() ||
           typeof(decimal) == number.GetType())
          this.number = Convert.ToDouble(number);
@@ -1712,7 +1714,8 @@ End Class
 Public Class FloatingPoint(Of T) : Inherits Number(Of T)
    Public Sub New(number As T)
       MyBase.New(number)
-      If TypeOf number Is Single Or
+      If TypeOf number Is System.Half Or
+               TypeOf number Is Single Or
                TypeOf number Is Double Or
                TypeOf number Is Decimal Then
          Me.number = Convert.ToDouble(number)
@@ -1770,7 +1773,8 @@ public class FloatingPoint<T> : Number<T> where T : struct
 {
    public FloatingPoint(T number) : base(number)
    {
-      if (typeof(float) == number.GetType() ||
+      if (typeof(System.Half) == number.GetType() ||
+          typeof(float) == number.GetType() ||
           typeof(double) == number.GetType() ||
           typeof(decimal) == number.GetType())
          this.number = Convert.ToDouble(number);
@@ -1810,7 +1814,8 @@ End Class
 Public Class FloatingPoint(Of T As Structure) : Inherits Number(Of T)
    Public Sub New(number As T)
       MyBase.New(number)
-      If TypeOf number Is Single Or
+      If TypeOf number Is System.Half Or
+               TypeOf number Is Single Or
                TypeOf number Is Double Or
                TypeOf number Is Decimal Then
          Me.number = Convert.ToDouble(number)

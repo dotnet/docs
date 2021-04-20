@@ -27,49 +27,50 @@ You can learn more about tasks and the different ways to interact with them in t
 
 ## Deeper Dive into Tasks for an I/O-Bound Operation
 
-The following section describes a 10,000 foot view of what happens with a typical async I/O call. Let's start with a couple examples.
+The following section describes a 10,000 foot view of what happens with a typical async I/O call. Let's start with a couple examples from the following class.
 
-The first example calls an async method and returns an active task, likely yet to complete.
-
-```csharp
-public Task<string> GetHtmlAsync()
-{
-    // Execution is synchronous here
-    var client = new HttpClient();
-
-    return client.GetStringAsync("https://www.dotnetfoundation.org");
-}
-```
-
-The second example adds the use of the `async` and `await` keywords to operate on the task.
+The first example method `GetHtmlAsync()` calls an async method and returns an active task, likely yet to complete. The second example method `GetFirstCharactersCountAsync()` adds the use of the `async` and `await` keywords to operate on the task.
 
 ```csharp
-public async Task<string> GetFirstCharactersCountAsync(string url, int count)
-{
-    // Execution is synchronous here
-    var client = new HttpClient();
+class DotnetFoundationClient {
+    // HttpClient is intended to be instantiated once per application, rather than per-use.
+    private static readonly HttpClient client = new HttpClient();
 
-    // Execution of GetFirstCharactersCountAsync() is yielded to the caller here
-    // GetStringAsync returns a Task<string>, which is *awaited*
-    var page = await client.GetStringAsync("https://www.dotnetfoundation.org");
-
-    // Execution resumes when the client.GetStringAsync task completes,
-    // becoming synchronous again.
-
-    if (count > page.Length)
+    public Task<string> GetHtmlAsync()
     {
-        return page;
+        // Execution is synchronous here
+        var uri = new Uri("https://www.dotnetfoundation.org");
+
+        return client.GetStringAsync(uri);
     }
-    else
+    
+    public async Task<string> GetFirstCharactersCountAsync(int count)
     {
-        return page.Substring(0, count);
+        // Execution is synchronous here
+        var uri = new Uri("https://www.dotnetfoundation.org");
+
+        // Execution of GetFirstCharactersCountAsync() is yielded to the caller here
+        // GetStringAsync returns a Task<string>, which is *awaited*
+        var page = await client.GetStringAsync(uri);
+
+        // Execution resumes when the client.GetStringAsync task completes,
+        // becoming synchronous again.
+
+        if (count > page.Length)
+        {
+            return page;
+        }
+        else
+        {
+            return page.Substring(0, count);
+        }
     }
 }
 ```
 
 The call to `GetStringAsync()` calls through lower-level .NET libraries (perhaps calling other async methods) until it reaches a P/Invoke interop call into a native networking library. The native library may subsequently call into a System API call (such as `write()` to a socket on Linux). A task object will be created at the native/managed boundary, possibly using [TaskCompletionSource](xref:System.Threading.Tasks.TaskCompletionSource%601.SetResult(%600)). The task object will be passed up through the layers, possibly operated on or directly returned, eventually returned to the initial caller.
 
-In the second example above, a `Task<T>` object will be returned from `GetStringAsync`. The use of the `await` keyword causes the method to return a newly created task object. Control returns to the caller from this location in the `GetFirstCharactersCountAsync` method. The methods and properties of the [Task&lt;T&gt;](xref:System.Threading.Tasks.Task%601) object enable callers to monitor the progress of the task, which will complete when the remaining code in GetFirstCharactersCountAsync has executed.
+In the second example method `GetFirstCharactersCountAsync()` above, a `Task<T>` object will be returned from `GetStringAsync`. The use of the `await` keyword causes the method to return a newly created task object. Control returns to the caller from this location in the `GetFirstCharactersCountAsync` method. The methods and properties of the [Task&lt;T&gt;](xref:System.Threading.Tasks.Task%601) object enable callers to monitor the progress of the task, which will complete when the remaining code in GetFirstCharactersCountAsync has executed.
 
 After the System API call, the request is now in kernel space, making its way to the networking subsystem of the OS (such as `/net` in the Linux Kernel).  Here the OS will handle the networking request *asynchronously*.  Details may be different depending on the OS used (the device driver call may be scheduled as a signal sent back to the runtime, or a device driver call may be made and *then* a signal sent back), but eventually the runtime will be informed that the networking request is in progress.  At this time, the work for the device driver will either be scheduled, in-progress, or already finished (the request is already out "over the wire") - but because this is all happening asynchronously, the device driver is able to immediately handle something else!
 

@@ -98,7 +98,7 @@ You can modify this behavior by changing the setting for the roll-forward on no 
 
 You can modify this setting in any of three ways:
 
-- Set the `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX` environment variable to the desired value.
+- Set the `COMPlus_ROLL_FORWARD_ON_NO_CANDIDATE_FX` environment variable to the desired value.
 
 - Add the following line with the desired value to the *.runtimeconfig.json* file:
 
@@ -145,7 +145,7 @@ You can opt into tiered compilation in either of two ways.
 - To use tiered compilation in all projects that use the .NET Core 2.1 SDK, set the following environment variable:
 
   ```console
-  DOTNET_TieredCompilation="1"
+  COMPlus_TieredCompilation="1"
   ```
 
 - To use tiered compilation on a per-project basis, add the `<TieredCompilation>` property to the `<PropertyGroup>` section of the MSBuild project file, as the following example shows:

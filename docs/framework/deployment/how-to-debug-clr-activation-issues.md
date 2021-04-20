@@ -26,7 +26,7 @@ Activation logging remains enabled until you remove the string value.
 
 ### Using an environment variable
 
-- Set the `DOTNET_CLRLoadLogDir` environment variable to a string that represents the full path of an existing directory where you'd like to store CLR activation logs.
+- Set the `COMPLUS_CLRLoadLogDir` environment variable to a string that represents the full path of an existing directory where you'd like to store CLR activation logs.
 
     How you set the environment variable determines its scope:
 
@@ -41,7 +41,7 @@ Activation logging remains enabled until you remove the string value.
     For example, to store activation logs in the c:\clrloadlogs directory with process-level scope, open a Command Prompt window and type the following before you run the application:
 
     ```console
-    set DOTNET_CLRLoadLogDir=c:\clrloadlogs
+    set COMPLUS_CLRLoadLogDir=c:\clrloadlogs
     ```
 
 ## Example

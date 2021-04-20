@@ -60,10 +60,10 @@ Instead of using a configuration file setting, you can enable the legacy 64-bit 
   
 - Setting an environment variable
 
-  Set the `DOTNET_useLegacyJit` environment variable to either `0` (use the new 64-bit JIT compiler) or `1` (use the older 64-bit JIT compiler):
+  Set the `COMPLUS_useLegacyJit` environment variable to either `0` (use the new 64-bit JIT compiler) or `1` (use the older 64-bit JIT compiler):
   
   ```env  
-  DOTNET_useLegacyJit=0|1  
+  COMPLUS_useLegacyJit=0|1  
   ```  
   
   The environment variable has *global scope*, which means that it affects all applications run on the machine. If set, it can be overridden by the application configuration file setting. The environment variable name is not case-sensitive.

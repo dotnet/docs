@@ -94,7 +94,7 @@ Windows Registry Editor Version 5.00
 "MDA"="1"
 ```
 
-See [Application-Specific Configuration Settings](#application-specific-configuration-settings) for more information. The registry setting can be overridden by the COMPLUS_MDA environment variable. See [Environment Variable](#environment-variable) for more information.
+See [Application-Specific Configuration Settings](#application-specific-configuration-settings) for more information. The registry setting can be overridden by the DOTNET_MDA environment variable. See [Environment Variable](#environment-variable) for more information.
 
 To disable MDAs, set the MDA subkey to **0** (zero) using the Windows Registry Editor.
 
@@ -102,7 +102,7 @@ By default, some MDAs are enabled when you run an application that is attached t
 
 ### Environment Variable
 
-MDA activation can also controlled by the environment variable COMPLUS_MDA, which overrides the registry key. The COMPLUS_MDA string is a case-insensitive, semicolon-delimited list of MDA names or other special control strings. Starting under a managed or unmanaged debugger enables a set of MDAs by default. This is done by implicitly prepending the semicolon-delimited list of MDAs enabled by default under debuggers to the value of the environment variable or registry key. The special control strings are the following:
+MDA activation can also controlled by the environment variable DOTNET_MDA, which overrides the registry key. The DOTNET_MDA string is a case-insensitive, semicolon-delimited list of MDA names or other special control strings. Starting under a managed or unmanaged debugger enables a set of MDAs by default. This is done by implicitly prepending the semicolon-delimited list of MDAs enabled by default under debuggers to the value of the environment variable or registry key. The special control strings are the following:
 
 - `0` - Deactivates all MDAs.
 
@@ -114,15 +114,15 @@ MDA activation can also controlled by the environment variable COMPLUS_MDA, whic
 
 If there are conflicting settings, the most recent settings override previous settings:
 
-- `COMPLUS_MDA=0` disables all MDAs, including those implicitly enabled under a debugger.
+- `DOTNET_MDA=0` disables all MDAs, including those implicitly enabled under a debugger.
 
-- `COMPLUS_MDA=gcUnmanagedToManaged` enables `gcUnmanagedToManaged` in addition to any MDAs that are implicitly enabled under a debugger.
+- `DOTNET_MDA=gcUnmanagedToManaged` enables `gcUnmanagedToManaged` in addition to any MDAs that are implicitly enabled under a debugger.
 
-- `COMPLUS_MDA=0;gcUnmanagedToManaged` enables `gcUnmanagedToManaged` but disables MDAs that would otherwise be implicitly enabled under a debugger.
+- `DOTNET_MDA=0;gcUnmanagedToManaged` enables `gcUnmanagedToManaged` but disables MDAs that would otherwise be implicitly enabled under a debugger.
 
 ### Application-Specific Configuration Settings
 
-You can enable, disable, and configure some assistants individually in the MDA configuration file for the application. To enable the use of an application configuration file for configuring MDAs, either the MDA registry key or the COMPLUS_MDA environment variable must be set. The application configuration file is typically located in the same directory as the application's executable (.exe) file. The file name takes the form *ApplicationName*.mda.config; for example, notepad.exe.mda.config. Assistants that are enabled in the application configuration file may have attributes or elements specifically designed to control that assistant's behavior.
+You can enable, disable, and configure some assistants individually in the MDA configuration file for the application. To enable the use of an application configuration file for configuring MDAs, either the MDA registry key or the DOTNET_MDA environment variable must be set. The application configuration file is typically located in the same directory as the application's executable (.exe) file. The file name takes the form *ApplicationName*.mda.config; for example, notepad.exe.mda.config. Assistants that are enabled in the application configuration file may have attributes or elements specifically designed to control that assistant's behavior.
 
 The following example shows how to enable and configure the [marshaling](marshaling-mda.md):
 

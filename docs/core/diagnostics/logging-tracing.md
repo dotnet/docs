@@ -36,7 +36,7 @@ The choice of which print style API to use is up to you. The key differences are
 - <xref:System.Diagnostics.Debug?displayProperty=nameWithType>
   - Only enabled when `DEBUG` is defined by adding `#define DEBUG` to your source or specifying the option `/d:DEBUG` when compiling.
   - Writes to an attached debugger.
-  - On `*nix` writes to stderr if `COMPlus_DebugWriteToStdErr` is set.
+  - On `*nix` writes to stderr if `DOTNET_DebugWriteToStdErr` is set.
   - Use this API when creating logs that will be enabled only in debug builds.
 
 ### Logging events

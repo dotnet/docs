@@ -25,12 +25,12 @@ The following table shows the environment variables you can configure for collec
 
 |Environment variable|Description|Default value|
 |-------|---------|---|
-|`COMPlus_DbgEnableMiniDump`|If set to 1, enable core dump generation.|0|
-|`COMPlus_DbgMiniDumpType`|Type of dump to be collected. For more information, see the table below|2 (`MiniDumpWithPrivateReadWriteMemory`)|
-|`COMPlus_DbgMiniDumpName`|Path to a file to write the dump to.|`/tmp/coredump.<pid>`|
-|`COMPlus_CreateDumpDiagnostics`|If set to 1, enable diagnostic logging of dump process.|0|
+|`DOTNET_DbgEnableMiniDump`|If set to 1, enable core dump generation.|0|
+|`DOTNET_DbgMiniDumpType`|Type of dump to be collected. For more information, see the table below|2 (`MiniDumpWithPrivateReadWriteMemory`)|
+|`DOTNET_DbgMiniDumpName`|Path to a file to write the dump to.|`/tmp/coredump.<pid>`|
+|`DOTNET_CreateDumpDiagnostics`|If set to 1, enable diagnostic logging of dump process.|0|
 
-The table below shows all the options you may use for `COMPlus_DbgMiniDumpType` which can be specified as a value. For example, setting `COMPlus_DbgMiniDumpType` to 1 means `MiniDumpNormal` type dump will be collected on a crash.
+The table below shows all the options you may use for `DOTNET_DbgMiniDumpType` which can be specified as a value. For example, setting `DOTNET_DbgMiniDumpType` to 1 means `MiniDumpNormal` type dump will be collected on a crash.
 
 |Value|Name|Description|
 |-----|----|-----------|

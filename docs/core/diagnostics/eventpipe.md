@@ -68,18 +68,18 @@ The preferred mechanism for using EventPipe is to use `dotnet-trace` or the `Mic
 
 However, you can use the following environment variables to set up an EventPipe session on an app and have it write the trace directly to a file. To stop tracing, exit the application.
 
-* `COMPlus_EnableEventPipe`: Set this to `1` to start an EventPipe session that writes directly to a file. The default value is `0`.
+* `DOTNET_EnableEventPipe`: Set this to `1` to start an EventPipe session that writes directly to a file. The default value is `0`.
 
-* `COMPlus_EventPipeOutputPath`: The path to the output EventPipe trace file when it's configured to run via `COMPlus_EnableEventPipe`. The default value is `trace.nettrace`, which will be created in the same directory that the app is running from.
+* `DOTNET_EventPipeOutputPath`: The path to the output EventPipe trace file when it's configured to run via `DOTNET_EnableEventPipe`. The default value is `trace.nettrace`, which will be created in the same directory that the app is running from.
 
-* `COMPlus_EventPipeCircularMB`: A hexadecimal value that represents the size of EventPipe's internal buffer in megabytes. This configuration value is only used when EventPipe is configured to run via `COMPlus_EnableEventPipe`. The default buffer size is 1024MB which translates to this environment variable being set to `400`, since `0x400` == `1024`.
+* `DOTNET_EventPipeCircularMB`: A hexadecimal value that represents the size of EventPipe's internal buffer in megabytes. This configuration value is only used when EventPipe is configured to run via `DOTNET_EnableEventPipe`. The default buffer size is 1024MB which translates to this environment variable being set to `400`, since `0x400` == `1024`.
 
   > [!NOTE]
   > If the target process writes events too frequently, it can overflow this buffer and some events might be dropped. If too many events are getting dropped, increase the buffer size to see if the number of dropped events reduces. If the number of dropped events does not decrease with a larger buffer size, it may be due to a slow reader preventing the target process' buffers from being flushed.
 
-* `COMPlus_EventPipeProcNumbers`: Set this to `1` to enable capturing processor numbers in EventPipe event headers. The default value is `0`.
+* `DOTNET_EventPipeProcNumbers`: Set this to `1` to enable capturing processor numbers in EventPipe event headers. The default value is `0`.
 
-* `COMPlus_EventPipeConfig`: Sets up the EventPipe session configuration when starting an EventPipe session with `COMPlus_EnableEventPipe`.
+* `DOTNET_EventPipeConfig`: Sets up the EventPipe session configuration when starting an EventPipe session with `DOTNET_EnableEventPipe`.
   The syntax is as follows:
 
   `<provider>:<keyword>:<level>`
@@ -88,7 +88,7 @@ However, you can use the following environment variables to set up an EventPipe 
 
   `<provider1>:<keyword1>:<level1>,<provider2>:<keyword2>:<level2>`
 
-  If this environment variable is not set but EventPipe is enabled by `COMPlus_EnableEventPipe`, it will start tracing by enabling the following providers with the following keywords and levels:
+  If this environment variable is not set but EventPipe is enabled by `DOTNET_EnableEventPipe`, it will start tracing by enabling the following providers with the following keywords and levels:
 
   - `Microsoft-Windows-DotNETRuntime:4c14fccbd:5`
   - `Microsoft-Windows-DotNETRuntimePrivate:4002000b:5`

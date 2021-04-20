@@ -67,8 +67,8 @@ For resolving method names of native runtime DLLs (such as libcoreclr.so), `perf
 3. **[App]** Set up the application shell with the following environment variables - this enables tracing configuration of CoreCLR.
 
     > ```bash
-    > export COMPlus_PerfMapEnabled=1
-    > export COMPlus_EnableEventLog=1
+    > export DOTNET_PerfMapEnabled=1
+    > export DOTNET_EnableEventLog=1
     > ```
 
 4. **[App]** Run the app - let it run as long as you need to in order to capture the performance problem. The exact length can be as short as you need as long as it sufficiently captures the window of time where the performance problem you want to investigate occurs.
@@ -211,7 +211,7 @@ If you don't have the ability to update the .NET Runtime (to add `crossgen`), or
 To do this, you can add the following environment variable:
 
 ```bash
-export COMPlus_ZapDisable=1
+export DOTNET_ZapDisable=1
 ```
 
 With this change, you should get the symbols for all .NET code.

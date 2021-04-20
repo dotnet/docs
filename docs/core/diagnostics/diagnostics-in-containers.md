@@ -48,14 +48,14 @@ The [`PerfCollect`](./trace-perfcollect-lttng.md) script is useful for collectin
 
 1. `PerfCollect` requires the [`SYS_ADMIN` capability](https://man7.org/linux/man-pages/man7/capabilities.7.html) (in order to run the `perf` tool), so be sure the container is [started with that capability](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
 2. `PerfCollect` requires some environment variables be set prior to the app it is profiling starting. These can be set either in a [Dockerfile](https://docs.docker.com/engine/reference/builder/#env) or when [starting the container](https://docs.docker.com/engine/reference/run/#env-environment-variables). Because these variables shouldn't be set in normal production environments, it's common to just add them when starting a container that will be profiled. The two variables which PerfCollect requires are:
-    1. COMPlus_PerfMapEnabled=1
-    1. COMPlus_EnableEventLog=1
+    1. DOTNET_PerfMapEnabled=1
+    1. DOTNET_EnableEventLog=1
 
 ### Using `PerfCollect` in a sidecar container
 
 If you would like to run `PerfCollect` in one container to profile a .NET Core process in a different container, the experience is almost the same except for these differences:
 
-1. The environment variables mentioned previously (COMPlus_PerfMapEnabled and COMPlus_EnableEventLog) must be set for the target container (not the one running `PerfCollect`).
+1. The environment variables mentioned previously (DOTNET_PerfMapEnabled and DOTNET_EnableEventLog) must be set for the target container (not the one running `PerfCollect`).
 2. The container running `PerfCollect` must have the `SYS_ADMIN` capability (not the target container).
 3. The two containers must [share a process namespace](https://docs.docker.com/engine/reference/run/#pid-settings---pid).
 

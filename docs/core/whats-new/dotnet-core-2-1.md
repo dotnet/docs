@@ -145,7 +145,7 @@ You can opt into tiered compilation in either of two ways.
 - To use tiered compilation in all projects that use the .NET Core 2.1 SDK, set the following environment variable:
 
   ```console
-  COMPlus_TieredCompilation="1"
+  DOTNET_TieredCompilation="1"
   ```
 
 - To use tiered compilation on a per-project basis, add the `<TieredCompilation>` property to the `<PropertyGroup>` section of the MSBuild project file, as the following example shows:

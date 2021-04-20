@@ -44,7 +44,7 @@ Stack overflow.
 1. Run the app with it configured to collect a dump on crash
 
     ````
-    > export COMPlus_DbgEnableMiniDump=1
+    > export DOTNET_DbgEnableMiniDump=1
     > dotnet run
     Stack overflow.
     Writing minidump with heap to file /tmp/coredump.6412

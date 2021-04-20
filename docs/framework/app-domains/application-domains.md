@@ -115,14 +115,14 @@ Operating systems and runtime environments typically provide some form of isolat
   
  The unmanaged interfaces described in the common language runtime Hosting Interfaces Specification also provide access to application domains. Runtime hosts can use interfaces from unmanaged code to create and gain access to the application domains within a process.  
   
-## The COMPLUS_LoaderOptimization environment variable
+## The DOTNET_LoaderOptimization environment variable
 
  An environment variable that sets the default loader optimization policy of an executable application.  
   
 ### Syntax  
   
 ```env  
-COMPLUS_LoaderOptimization = 1  
+DOTNET_LoaderOptimization = 1  
 ```  
   
 ### Remarks
@@ -135,20 +135,20 @@ COMPLUS_LoaderOptimization = 1
   
 - If an assembly is not loaded domain-neutral, it must be JIT-compiled in every application domain in which it is loaded and the loader must not share internal resources across application domains.  
   
- When set to 1, the COMPLUS_LoaderOptimization environment flag forces the runtime host to load all assemblies in non-domain-neutral way known as SingleDomain. SingleDomain loads no assemblies as domain-neutral, except Mscorlib, which is always loaded domain-neutral. This setting is called single domain because it is commonly used when the host is running only a single application in the process.  
+ When set to 1, the DOTNET_LoaderOptimization environment flag forces the runtime host to load all assemblies in non-domain-neutral way known as SingleDomain. SingleDomain loads no assemblies as domain-neutral, except Mscorlib, which is always loaded domain-neutral. This setting is called single domain because it is commonly used when the host is running only a single application in the process.  
   
 > [!CAUTION]
-> The COMPLUS_LoaderOptimization environment flag was designed to be used in diagnostic and test scenarios. Having the flag turned on can cause severe slow-down and increase in memory usage.  
+> The DOTNET_LoaderOptimization environment flag was designed to be used in diagnostic and test scenarios. Having the flag turned on can cause severe slow-down and increase in memory usage.  
   
 ### Code example
 
- To force all assemblies not to be loaded as domain-neutral for the IISADMIN service can be achieved by appending `COMPLUS_LoaderOptimization=1` to the Environment’s Multi-String Value in the HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\IISADMIN key.  
+ To force all assemblies not to be loaded as domain-neutral for the IISADMIN service can be achieved by appending `DOTNET_LoaderOptimization=1` to the Environment’s Multi-String Value in the HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\IISADMIN key.  
   
 ```env  
 Key = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\IISADMIN  
 Name = Environment  
 Type = REG_MULTI_SZ  
-Value (to append) = COMPLUS_LoaderOptimization=1  
+Value (to append) = DOTNET_LoaderOptimization=1  
 ```  
   
 ## See also

@@ -14,7 +14,7 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `COMPlus_EnableDiagnostics` | `1` - enabled<br/>`0` - disabled |
+| **Environment variable** | `DOTNET_EnableDiagnostics` | `1` - enabled<br/>`0` - disabled |
 
 ## Enable profiling
 
@@ -55,7 +55,7 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `COMPlus_PerfMapEnabled` | `0` - disabled<br/>`1` - enabled |
+| **Environment variable** | `DOTNET_PerfMapEnabled` | `0` - disabled<br/>`1` - enabled |
 
 ## Perf log markers
 
@@ -65,7 +65,7 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `COMPlus_PerfMapIgnoreSignal` | `0` - disabled<br/>`1` - enabled |
+| **Environment variable** | `DOTNET_PerfMapIgnoreSignal` | `0` - disabled<br/>`1` - enabled |
 
 > [!NOTE]
-> This setting is ignored if [COMPlus_PerfMapEnabled](#write-perf-map) is omitted or set to `0` (that is, disabled).
+> This setting is ignored if [DOTNET_PerfMapEnabled](#write-perf-map) is omitted or set to `0` (that is, disabled).

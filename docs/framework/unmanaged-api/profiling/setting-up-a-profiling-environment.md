@@ -34,7 +34,7 @@ ms.assetid: fefca07f-7555-4e77-be86-3c542e928312
 > Starting with the .NET Framework 4, profilers do not have to be registered.  
   
 > [!NOTE]
-> To use .NET Framework versions 2.0, 3.0, and 3.5 profilers in the .NET Framework 4 and later versions, you must set the COMPLUS_ProfAPI_ProfilerCompatibilitySetting environment variable.  
+> To use .NET Framework versions 2.0, 3.0, and 3.5 profilers in the .NET Framework 4 and later versions, you must set the DOTNET_ProfAPI_ProfilerCompatibilitySetting environment variable.  
   
 ## Environment Variable Scope  
 

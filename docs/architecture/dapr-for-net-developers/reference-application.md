@@ -2,7 +2,7 @@
 title: Introduction to the eShopOnDapr reference application
 description: An overview of the eShopOnDapr reference application and its history.
 author: amolenk
-ms.date: 04/21/2021
+ms.date: 04/20/2021
 ---
 
 # Dapr reference application
@@ -651,9 +651,7 @@ auth:
 
 In the preceding example, the local Redis store is used to reference secrets.
 
-## Summary
-
-In this chapter, you're introduced to the eShopOnDapr reference application. It's an evolution of the widely popular eShopOnContainers microservice reference application. eShopOnDapr replaces a large amount of custom functionality with Dapr building blocks and components, dramatically simplifying the complexities required to build a microservices application.
+## Benefits of applying Dapr to eShop
 
 In general, the use of Dapr building blocks add observability and flexibility to the application:
 
@@ -675,8 +673,12 @@ Here are some more examples of benefits offered by specific building blocks:
 - **Bindings**
   - The eShopOnContainers solution contained a *to-do* item for e-mailing an order confirmation to the customer. The thought was to eventually implement a third-party email API such as SendGrid. With Dapr, implementing email notification was as easy as configuring a resource binding. There wasn't any need to learn external APIs or SDKs.
 
+## Summary
+
+In this chapter, you're introduced to the eShopOnDapr reference application. It's an evolution of the widely popular eShopOnContainers microservice reference application. eShopOnDapr replaces a large amount of custom functionality with Dapr building blocks and components, dramatically simplifying the complexities required to build a microservices application.
+
 > [!NOTE]
-> The Actors building block isn't covered in the first version of this book. An extensive chapter on the Actor building block and its integration with eShopOnDapr will be included in the final release.
+> The Actors building block isn't covered in the first version of this book. An extensive chapter on the Actor building block and its integration with eShopOnDapr will be included in the 1.1 update.
 
 ### References
 

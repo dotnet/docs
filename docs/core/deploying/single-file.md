@@ -11,6 +11,10 @@ Bundling all application-dependent files into a single binary provides an applic
 
 Single File deployment is available for both the [framework-dependent deployment model](index.md#publish-framework-dependent) and [self-contained applications](index.md#publish-self-contained). The size of the single file in a self-contained application will be large since it will include the runtime and the framework libraries. The single file deployment option can be combined with [ReadyToRun](ready-to-run.md) and [Trim (an experimental feature in .NET 5.0)](trim-self-contained.md) publish options.
 
+## Output differences from .NET 3.x
+
+In .NET 3.x, publishing as a single file produced exactly one file, with all files next to the app bundled and extracted at startup. In .NET 5.0 there is no extraction by default. For Windows this can result in multiple files in the output: the app file, and the core runtime DLLs alongside. To embed those files for extraction, like in .NET 3.x, set the property `IncludeNativeLibrariesForSelfExtract` to `true`. See [Other considerations](#other-considerations) for more details about extraction.
+
 ## API incompatibility
 
 Some APIs are not compatible with single-file deployment and applications may require modification if they use these APIs. If you use a third-party framework or package, it's possible that they may also use one of these APIs and need modification. The most common cause of problems is dependence on file paths for files or DLLs shipped with the application.

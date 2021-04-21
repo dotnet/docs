@@ -52,7 +52,7 @@ class DotNetFoundationClient
 
         // Execution of GetFirstCharactersCountAsync() is yielded to the caller here
         // GetStringAsync returns a Task<string>, which is *awaited*
-        var page = await client.GetStringAsync(uri);
+        var page = await s_client.GetStringAsync(uri);
 
         // Execution resumes when the client.GetStringAsync task completes,
         // becoming synchronous again.

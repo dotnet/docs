@@ -21,7 +21,7 @@ ASP.NET Core 6.0
 
 ## Old behavior
 
-The older API, <xref:Microsoft.AspNetCore.Components.Forms.EditContextDataAnnotationsExtensions.AddDataAnnotationsValidation(Microsoft.AspNetCore.Components.Forms.EditContext)> returns its `EditContext` (as a kind of fluent API).
+The older API, <xref:Microsoft.AspNetCore.Components.Forms.EditContextDataAnnotationsExtensions.AddDataAnnotationsValidation(Microsoft.AspNetCore.Components.Forms.EditContext)>, returns its `EditContext` (as a kind of fluent API).
 
 ## New behavior
 

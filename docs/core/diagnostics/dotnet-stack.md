@@ -5,7 +5,7 @@ ms.date: 11/17/2020
 ---
 # Inspect managed stack traces (dotnet-stack)
 
-**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.0 and later versions
 
 ## Install
 

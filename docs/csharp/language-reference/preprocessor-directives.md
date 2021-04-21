@@ -152,7 +152,7 @@ public class MyClass
 You use the following two preprocessor directives to define or undefine symbols for conditional compilation:
 
 - `#define`: Define a symbol.
-- `#undef`: undefine a symbol.
+- `#undef`: Undefine a symbol.
 
 You use `#define` to define a symbol. When you use the symbol as the expression that's passed to the `#if` directive, the expression will evaluate to `true`, as the following example shows:
 
@@ -175,7 +175,7 @@ Symbols can be used to specify conditions for compilation. You can test for the 
 You can define regions of code that can be collapsed in an outline using the following two preprocessor directives:
 
 - `#region`: Start a region.
-- `#endregion`: End a region
+- `#endregion`: End a region.
 
 `#region` lets you specify a block of code that you can expand or collapse when using the [outlining](/visualstudio/ide/outlining) feature of the code editor. In longer code files, it's convenient to collapse or hide one or more regions so that you can focus on the part of the file that you're currently working on. The following example shows how to define a region:
 

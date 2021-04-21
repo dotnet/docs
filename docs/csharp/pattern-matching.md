@@ -137,13 +137,27 @@ public string DamageDescription(DamageIndicator abbreviation) =>
         FujitaScale.MHDW => "Double-wide mobile home",
         FujitaScale.ACT => "Apt, condo, townhouse (3 stories or less)",
         FujitaScale.M => "Motel",
-        _ => "Unknown value"
+        _ => "Unknown value",
     }
 ```
 
-The preceding sample uses an enum for the Fujita scale for tornado strength to generate a description of what types of buildings are damaged. Each switch expression arm specifies a single value of the enum. The last entry catches any other value of the `abbreviation` expression. This is needed, because a variable of an `enum` type could hold any value of the underlying `int` type. If you omit this condition, the compiler warns you that not all possible input values are handled. Furthermore, if none of the switch arms match the input expression, the code throws an exception at runtime.
+The preceding sample uses an enum for the Fujita scale for tornado strength to generate a description of what types of buildings are damaged. Each switch expression arm specifies a single value of the enum. The last entry catches any other value of the `abbreviation` expression. This is needed, because a variable of an `enum` type could hold any value of the underlying `int` type. If you omit this condition, the compiler warns you that not all possible input values are handled. Furthermore, if none of the switch arms match the input expression, the code throws an exception at runtime. Using the `_` is a *discard* pattern. The source variable isn't used or assigned to a variable in the switch arm. If you want to catch all additional inputs and use that value, you can use the `var` pattern, as shown in the following example:
 
-Matching single values works well for `enum` types or other known small sets of discrete values. You can also match on ranges of numeric values. The following method returns the value on the Fujita scale based on the observed wind speed:
+```csharp
+public string DamageDescription(DamageIndicator abbreviation) =>
+    abbreviation switch
+    {
+        FujitaScale.SBO => "Small barns, farm outbuildings",
+        FujitaScale.FR12 => "One- or two-family residences",
+        FujitaScale.MHSW => "Single-wide mobile home",
+        FujitaScale.MHDW => "Double-wide mobile home",
+        FujitaScale.ACT => "Apt, condo, townhouse (3 stories or less)",
+        FujitaScale.M => "Motel",
+        var unknown => $"Unknown value: {unknown}",
+    }
+```
+
+The preceding example shows the `var` pattern, which would also work on a `null` value for nullable value types or reference types. Matching single values works well for `enum` types or other known small sets of discrete values. You can also match on ranges of numeric values. The following method returns the value on the Fujita scale based on the observed wind speed:
 
 ```csharp
 public int? EFScale(int windSpeed) =>
@@ -159,63 +173,50 @@ public int? EFScale(int windSpeed) =>
     };
 ```
 
-scenarios:
-- properties have values (nested tests)
+The preceding examples have compared types to values. You can also use the *properties* of a variable in a pattern. Find an example that has an Enum as a property. Use type and property in a couple ways.....
 
-## Patterns and deconstruction
+```csharp
+// I can't think of anything here.
+```
 
-Scenarios:
-- tuples (pairs of values)
-- records (some of the properties of a record)
-- include var examples (assign values from a tuple. Swap things)
+## Properties and deconstruction
+
+In many cases, property patterns can be simplified using *positional* patterns. Positional patterns [deconstruct](deconstruct.md) the source expression into its component properties. You then use the combination of those properties for your pattern:
+
+```csharp
+// Something other than points and persons
+```
+
+The preceding example shows how you can combine deconstruction and patterns to test the characteristics of multiple properties of a variable. You can also use that same technique to build patterns from a set of variables constructed as a tuple:
+
+```csharp
+// A tuple variable.
+```
+
+These techniques can be used to unwind complicated logic using `if` and `else` clauses, converting them to a series of arms in a switch expression that uses each of the variables as a source.
 
 ## Combining patterns
 
-- and, or, not
-- parenthesis
+These patterns can be combined using `and`, `or`, and `not` to create more sophisticated patterns. You can also surround any of the patterns with parentheses in order to clarify the order those individual patterns should be evaluated. The example that checked against windspeed could be rewritten to use multiple conditions as shown in the following example:
+
+```csharp
+public int? EFScale(int windSpeed) =>
+    windSpeed switch
+    {
+        < 65 => null,
+        ( >= 64) and ( < 86) => 0,
+        ( >= 85) and ( < 111) => 1,
+        ( >= 110) and ( < 136) => 2,
+        ( >= 135) and ( < 166) => 3,
+        ( >= 165) and ( < 201)  => 4,
+        _ => 5,
+    };
+```
+
+The preceding example showed how you can test multiple conditions in each of the switch arms. This enables you to build patterns that can test inputs against a variety of conditions. You have a rich palette of expressions to use. In many instances, pattern matching can provide more concise and understandable code to describe the conditions you test and the actions you take based on those tests. The more you learn about pattern matching, the more scenarios you'll find where it produces better code.
 
 ## See also
 
 - [Exploration: Use pattern matching to build your class behavior for better code](whats-new/tutorials/patterns-objects.md)
 - [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](tutorials/pattern-matching.md)
 - [Reference: Pattern matching](language-reference/operators/patterns.md)
-
-============================================================ OLD
-
-## `var` declarations in `case` expressions
-
-The introduction of `var` as one of the match expressions introduces new
-rules to the pattern match.
-
-The first rule is that the `var` declaration
-follows the normal type inference rules: The type is inferred to be the
-static type of the switch expression. From that rule, the type always
-matches.
-
-The second rule is that a `var` declaration doesn't have the null check
-that other type pattern expressions include. That means the variable
-may be null, and a null check is necessary in that case.
-
-Those two rules mean that in many instances, a `var` declaration
-in a `case` expression matches the same conditions as a `default` expression.
-Because any non-default case is preferred to the `default` case, the `default`
-case will never execute.
-
-> [!NOTE]
-> The compiler does not emit a warning in those cases where a `default` case
-> has been written but will never execute. This is consistent with current
-> `switch` statement behavior where all possible cases have been listed.
-
-The third rule introduces uses where a `var` case may be useful. Imagine
-that you're doing a pattern match where the input is a string and you're
-searching for known command values. You might write something like:
-
-[!code-csharp[VarCaseExpression](../../samples/snippets/csharp/PatternMatching/Program.cs#VarCaseExpression "use a var case expression to filter white space")]
-
-The `var` case matches `null`, the empty string, or any string that contains
-only white space. Notice that the preceding code uses the `?.` operator to
-ensure that it doesn't accidentally throw a <xref:System.NullReferenceException>. The `default` case handles any other string values that aren't understood by this command parser.
-
-This is one example where you may want to consider
-a `var` case expression that is distinct from a `default` expression.
-

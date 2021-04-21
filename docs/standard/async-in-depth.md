@@ -35,7 +35,7 @@ The first example method `GetHtmlAsync()` calls an async method and returns an a
 class DotNetFoundationClient
 {
     // HttpClient is intended to be instantiated once per application, rather than per-use.
-    private static readonly HttpClient client = new HttpClient();
+    private static readonly HttpClient s_client = new HttpClient();
 
     public Task<string> GetHtmlAsync()
     {

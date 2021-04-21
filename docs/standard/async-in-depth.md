@@ -42,7 +42,7 @@ class DotNetFoundationClient
         // Execution is synchronous here
         var uri = new Uri("https://www.dotnetfoundation.org");
 
-        return client.GetStringAsync(uri);
+        return s_client.GetStringAsync(uri);
     }
     
     public async Task<string> GetFirstCharactersCountAsync(int count)

@@ -32,7 +32,8 @@ The following section describes a 10,000 foot view of what happens with a typica
 The first example method `GetHtmlAsync()` calls an async method and returns an active task, likely yet to complete. The second example method `GetFirstCharactersCountAsync()` adds the use of the `async` and `await` keywords to operate on the task.
 
 ```csharp
-class DotnetFoundationClient {
+class DotNetFoundationClient
+{
     // HttpClient is intended to be instantiated once per application, rather than per-use.
     private static readonly HttpClient client = new HttpClient();
 

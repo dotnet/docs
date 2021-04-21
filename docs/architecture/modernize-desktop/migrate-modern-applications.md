@@ -40,7 +40,7 @@ The configuration API supports the concept of configuration provider, which defi
 
  Or you can build your own.
 
-The new configuration allows a list of name-value pairs that can be grouped into a multi-level hierarchy. Any stored value maps to a string, and there's built-in binding support that allows you to deserialize settings into a custom plain old CLR object (POCO) object.
+The new configuration allows a list of name-value pairs that can be grouped into a multi-level hierarchy. Any stored value maps to a string, and there's built-in binding support that allows you to deserialize settings into a custom plain old CLR object (POCO).
 
 The <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> object lets you add as many configuration providers you may need for your application, using a precedence rule to resolve preference. So, the last provider you add in your code will override the others. This is a great feature for managing different environments for execution since you can define different configurations for development, testing and production environments, and manage them on a single function inside your code.
 

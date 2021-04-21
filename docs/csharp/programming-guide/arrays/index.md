@@ -31,7 +31,7 @@ An array has the following properties:
 - A jagged array is an array of arrays, and therefore its elements are reference types and are initialized to `null`.
 - Arrays are zero indexed: an array with `n` elements is indexed from `0` to `n-1`.
 - Array elements can be of any type, including an array type.
-- Array types are [reference types](../../language-reference/keywords/reference-types.md) derived from the abstract base type <xref:System.Array>. Since this type implements <xref:System.Collections.IEnumerable> and <xref:System.Collections.Generic.IEnumerable%601>, you can use [foreach](../../language-reference/keywords/foreach-in.md) iteration on all arrays in C#.
+- Array types are [reference types](../../language-reference/keywords/reference-types.md) derived from the abstract base type <xref:System.Array>. Since this type implements <xref:System.Collections.Generic.IList%601>, <xref:System.Collections.IEnumerable>, and <xref:System.Collections.Generic.IEnumerable%601>, you can use [foreach](../../language-reference/keywords/foreach-in.md) iteration on all arrays in C#.
 
 ### Arrays as Objects
 

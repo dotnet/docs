@@ -2,7 +2,7 @@
 title: Introduction to the eShopOnDapr reference application
 description: An overview of the eShopOnDapr reference application and its history.
 author: amolenk
-ms.date: 04/20/2021
+ms.date: 04/21/2021
 ---
 
 # Dapr reference application
@@ -655,8 +655,6 @@ In the preceding example, the local Redis store is used to reference secrets.
 
 In this chapter, you're introduced to the eShopOnDapr reference application. It's an evolution of the widely popular eShopOnContainers microservice reference application. eShopOnDapr replaces a large amount of custom functionality with Dapr building blocks and components, dramatically simplifying the complexities required to build a microservices application.
 
-**Benefits of applying Dapr to eShop**
-
 In general, the use of Dapr building blocks add observability and flexibility to the application:
 
 1. Observability: By using the Dapr building blocks, you gain rich distributed tracing for both calls between services and to Dapr components without having to write any code. In eShopOnContainers, a large amount of custom logging is used to provide insight.
@@ -678,7 +676,7 @@ Here are some more examples of benefits offered by specific building blocks:
   - The eShopOnContainers solution contained a *to-do* item for e-mailing an order confirmation to the customer. The thought was to eventually implement a third-party email API such as SendGrid. With Dapr, implementing email notification was as easy as configuring a resource binding. There wasn't any need to learn external APIs or SDKs.
 
 > [!NOTE]
-> The Actors building block isn't covered in the first version of this book. An extensive chapter on the Actor building block and its integration with eShopOnDapr will be included in the 1.1 update.
+> The Actors building block isn't covered in the first version of this book. An extensive chapter on the Actor building block and its integration with eShopOnDapr will be included in the final release.
 
 ### References
 

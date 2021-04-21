@@ -13,7 +13,7 @@ Single File deployment is available for both the [framework-dependent deployment
 
 ## Output differences from .NET 3.x
 
-In .NET 3.x, publishing as a single file produced exactly one file, with all files next to the app bundled and extracted at startup. In .NET 5.0 there is no extraction by default. For Windows this can result in multiple files in the output: the app file, and the core runtime DLLs alongside. To embed those files for extraction, like in .NET 3.x, set the property `IncludeNativeLibrariesForSelfExtract` to `true`. See [Other considerations](#other-considerations) for more details about extraction.
+In .NET Core 3.x, publishing as a single file produced exactly one file, with all files next to the app bundled and extracted at startup. In .NET 5+, there is no extraction by default. On Windows, this can result in multiple files in the output: the app file, and the core runtime DLLs alongside. To embed those files for extraction, like in .NET Core 3.x, set the property `IncludeNativeLibrariesForSelfExtract` to `true`. For more information about extraction, see [Other considerations](#other-considerations).
 
 ## API incompatibility
 

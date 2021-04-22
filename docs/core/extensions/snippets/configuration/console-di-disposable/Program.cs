@@ -7,7 +7,7 @@ namespace ConsoleDisposable.Example
 {
     class Program
     {
-        static Task Main(string[] args)
+        static void Main(string[] args)
         {
             using IHost host = CreateHostBuilder(args).Build();
 
@@ -17,7 +17,7 @@ namespace ConsoleDisposable.Example
             ExemplifyDisposableScoping(host.Services, "Scope 2");
             Console.WriteLine();
 
-            return host.RunAsync();
+            host.Run();
         }
         // Sample output:
         //     Scope 1...

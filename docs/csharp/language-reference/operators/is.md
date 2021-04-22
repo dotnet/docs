@@ -21,7 +21,7 @@ In the preceding example, the `is` operator matches an expression against a [pro
 
 The `is` operator can be useful in the following scenarios:
 
-- To check the runtime type of an expression, as the following example shows:
+- To check the run-time type of an expression, as the following example shows:
 
   :::code language="csharp" source="snippets/shared/IsOperator.cs" id="DeclarationPattern":::
 

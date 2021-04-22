@@ -34,6 +34,8 @@ ms.assetid: dfebc18e-acde-4510-9fa7-9a0f4aa3bd11
 |<xref:System.UInt16?displayProperty=nameWithType>|Unsigned|2|0|65,535|
 |<xref:System.UInt32?displayProperty=nameWithType>|Unsigned|4|0|4,294,967,295|
 |<xref:System.UInt64?displayProperty=nameWithType>|Unsigned|8|0|18,446,744,073,709,551,615|
+|<xref:System.IntPtr?displayProperty=nameWithType>|Signed|4 (on 32-bit machine) 8 (on 64-bit machine)|-9223372036854775808 (on 64-bit machine)|9223372036854775807 (on 64-bit machine)|
+|<xref:System.UIntPtr?displayProperty=nameWithType>|Unsigned|4 (on 32-bit machine) 8 (on 64-bit machine)|0|18446744073709551615 (on 64-bit machine)|
 
 Each integer type supports a set of standard arithmetic operators. The <xref:System.Math?displayProperty=nameWithType> class provides methods for a broader set of mathematical functions.
 
@@ -50,12 +52,12 @@ The <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure is 
 
 .NET includes the following primitive floating-point types:
 
-|Type|Size (in bytes)|Approximate range|Precision|Notes|
-|----------|--------|---------------------|--------------------|
-|<xref:System.Half?displayProperty=nameWithType>|2|||Introduced in .NET 5|
-|<xref:System.Single?displayProperty=nameWithType>|4|±1.5 x 10<sup>−45</sup> to ±3.4 x 10<sup>38</sup>|~6-9 digits||
-|<xref:System.Double?displayProperty=nameWithType>|8|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|~15-17 digits||
-|<xref:System.Decimal?displayProperty=nameWithType>|16|±1.0 x 10<sup>-28</sup> to ±7.9228 x 10<sup>28</sup>|28-29 digits||
+|Type|Size (in bytes)|Approximate range|Notes|
+|-|-|-|-|
+|<xref:System.Half?displayProperty=nameWithType>|2|±65504|Introduced in .NET 5|
+|<xref:System.Single?displayProperty=nameWithType>|4|±3.4 x 10<sup>38</sup>||
+|<xref:System.Double?displayProperty=nameWithType>|8|±1.7 × 10<sup>308</sup>||
+|<xref:System.Decimal?displayProperty=nameWithType>|16|±7.9228 x 10<sup>28</sup>||
 
 The <xref:System.Half>, <xref:System.Single>, and <xref:System.Double> types support special values that represent not-a-number and infinity. For example, the <xref:System.Double> type provides the following values: <xref:System.Double.NaN?displayProperty=nameWithType>, <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, and <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. You use the <xref:System.Double.IsNaN%2A?displayProperty=nameWithType>, <xref:System.Double.IsInfinity%2A?displayProperty=nameWithType>, <xref:System.Double.IsPositiveInfinity%2A?displayProperty=nameWithType>, and <xref:System.Double.IsNegativeInfinity%2A?displayProperty=nameWithType> methods to test for these special values.
 
@@ -97,4 +99,5 @@ For more information, see [Use SIMD-accelerated numeric types](simd.md).
 
 ## See also
 
-- [Standard Numeric Format Strings](base-types/standard-numeric-format-strings.md)
+- [Standard numeric format strings](base-types/standard-numeric-format-strings.md)
+- [Floating-point numeric types in C#)](../csharp/language-reference/builtin-types/floating-point-numeric-types.md)

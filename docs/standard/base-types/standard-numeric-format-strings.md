@@ -200,6 +200,7 @@ The general ("G") format specifier converts a number to the more compact of eith
 |<xref:System.Int64>|19 digits|
 |<xref:System.UInt64>|20 digits|
 |<xref:System.Numerics.BigInteger>|Unlimited (same as ["R"](#RFormatString))|
+|<xref:System.Half>|3 digits|
 |<xref:System.Single>|7 digits|
 |<xref:System.Double>|15 digits|
 |<xref:System.Decimal>|29 digits|
@@ -210,12 +211,12 @@ However, if the number is a <xref:System.Decimal> and the precision specifier is
 
 If scientific notation is used, the exponent in the result is prefixed with "E" if the format specifier is "G", or "e" if the format specifier is "g". The exponent contains a minimum of two digits. This differs from the format for scientific notation that is produced by the exponential format specifier, which includes a minimum of three digits in the exponent.
 
-Note that, when used with a <xref:System.Double> value, the "G17" format specifier ensures that the original <xref:System.Double> value successfully round-trips. This is because <xref:System.Double> is an IEEE 754-2008-compliant double-precision (`binary64`) floating point number that gives up to 17 significant digits of precision. We recommend its use instead of the ["R" format specifier](#RFormatString), since in some cases "R" fails to successfully round-trip double-precision floating point values. The following example illustrates one such case.
+Note that, when used with a <xref:System.Double> value, the "G17" format specifier ensures that the original <xref:System.Double> value successfully round-trips. This is because <xref:System.Double> is an IEEE 754-2008-compliant double-precision (`binary64`) floating-point number that gives up to 17 significant digits of precision. On .NET Framework, we recommend its use instead of the ["R" format specifier](#RFormatString), since in some cases "R" fails to successfully round-trip double-precision floating point values. The following example illustrates one such case.
 
 [!code-csharp-interactive[Round-tripping a Double](../../../samples/snippets/standard/base-types/format-strings/csharp/g17.cs#GeneralFormatSpecifier)]
 [!code-vb[Round-tripping a Double](../../../samples/snippets/standard/base-types/format-strings/vb/g17.vb)]
 
-When used with a <xref:System.Single> value, the "G9" format specifier ensures that the original <xref:System.Single> value successfully round-trips. This is because <xref:System.Single> is an IEEE 754-2008-compliant single-precision (`binary32`) floating point number that gives up to nine significant digits of precision. For performance reasons, we recommend its use instead of the ["R" format specifier](#RFormatString).
+When used with a <xref:System.Single> value, the "G9" format specifier ensures that the original <xref:System.Single> value successfully round-trips. This is because <xref:System.Single> is an IEEE 754-2008-compliant single-precision (`binary32`) floating-point number that gives up to nine significant digits of precision. For performance reasons, we recommend its use instead of the ["R" format specifier](#RFormatString).
 
 The result string is affected by the formatting information of the current <xref:System.Globalization.NumberFormatInfo> object. The following table lists the <xref:System.Globalization.NumberFormatInfo> properties that control the formatting of the result string.
 
@@ -283,7 +284,7 @@ The following example formats floating-point values with the percent format spec
 
 ## Round-trip format specifier (R)
 
-The round-trip ("R") format specifier attempts to ensure that a numeric value that is converted to a string is parsed back into the same numeric value. This format is supported only for the <xref:System.Single>, <xref:System.Double>, and <xref:System.Numerics.BigInteger> types.
+The round-trip ("R") format specifier attempts to ensure that a numeric value that is converted to a string is parsed back into the same numeric value. This format is supported only for the <xref:System.Half>, <xref:System.Single>, <xref:System.Double>, and <xref:System.Numerics.BigInteger> types.
 
 For <xref:System.Double> values, the "R" format specifier in some cases fails to successfully round-trip the original value. For both <xref:System.Double> and <xref:System.Single> values, it also offers relatively poor performance. Instead, we recommend that you use the ["G17"](#GFormatString) format specifier for <xref:System.Double> values and the ["G9"](#GFormatString) format specifier to successfully round-trip <xref:System.Single> values.
 

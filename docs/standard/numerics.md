@@ -22,20 +22,27 @@ ms.assetid: dfebc18e-acde-4510-9fa7-9a0f4aa3bd11
 
 ## Integer types
 
-.NET supports both signed and unsigned 8-, 16-, 32-, and 64-bit integer types, which are listed in the following table:
+.NET supports both signed and unsigned 8-bit, 16-bit, 32-bit, and 64-bit integer types, which are listed in the following tables.
 
-|Type|Signed/Unsigned|Size (in bytes)|Minimum value|Maximum value|
-|----------|----------------------|--------------------|-------------------|-------------------|
-|<xref:System.Byte?displayProperty=nameWithType>|Unsigned|1|0|255|
-|<xref:System.Int16?displayProperty=nameWithType>|Signed|2|-32,768|32,767|
-|<xref:System.Int32?displayProperty=nameWithType>|Signed|4|-2,147,483,648|2,147,483,647|
-|<xref:System.Int64?displayProperty=nameWithType>|Signed|8|-9,223,372,036,854,775,808|9,223,372,036,854,775,807|
-|<xref:System.SByte?displayProperty=nameWithType>|Signed|1|-128|127|
-|<xref:System.UInt16?displayProperty=nameWithType>|Unsigned|2|0|65,535|
-|<xref:System.UInt32?displayProperty=nameWithType>|Unsigned|4|0|4,294,967,295|
-|<xref:System.UInt64?displayProperty=nameWithType>|Unsigned|8|0|18,446,744,073,709,551,615|
-|<xref:System.IntPtr?displayProperty=nameWithType>|Signed|4 (on 32-bit machine) 8 (on 64-bit machine)|-9223372036854775808 (on 64-bit machine)|9223372036854775807 (on 64-bit machine)|
-|<xref:System.UIntPtr?displayProperty=nameWithType>|Unsigned|4 (on 32-bit machine) 8 (on 64-bit machine)|0|18446744073709551615 (on 64-bit machine)|
+Signed types:
+
+|Type|Size (in bytes)|Minimum value|Maximum value|
+|----------|--------------------|-------------------|-------------------|
+|<xref:System.Int16?displayProperty=nameWithType>|2|-32,768|32,767|
+|<xref:System.Int32?displayProperty=nameWithType>|4|-2,147,483,648|2,147,483,647|
+|<xref:System.Int64?displayProperty=nameWithType>|8|-9,223,372,036,854,775,808|9,223,372,036,854,775,807|
+|<xref:System.SByte?displayProperty=nameWithType>|1|-128|127|
+|<xref:System.IntPtr?displayProperty=nameWithType>|4 (on 32-bit machine)<br/>8 (on 64-bit machine)|-9223372036854775808 (on 64-bit machine)|9223372036854775807 (on 64-bit machine)|
+
+Unsigned types:
+
+|Type|Size (in bytes)|Minimum value|Maximum value|
+|----------|--------------------|-------------------|-------------------|
+|<xref:System.Byte?displayProperty=nameWithType>|1|0|255|
+|<xref:System.UInt16?displayProperty=nameWithType>|2|0|65,535|
+|<xref:System.UInt32?displayProperty=nameWithType>|4|0|4,294,967,295|
+|<xref:System.UInt64?displayProperty=nameWithType>|8|0|18,446,744,073,709,551,615|
+|<xref:System.UIntPtr?displayProperty=nameWithType>|4 (on 32-bit machine)<br/>8 (on 64-bit machine)|0|18446744073709551615 (on 64-bit machine)|
 
 Each integer type supports a set of standard arithmetic operators. The <xref:System.Math?displayProperty=nameWithType> class provides methods for a broader set of mathematical functions.
 

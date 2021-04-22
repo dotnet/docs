@@ -143,6 +143,25 @@ Next, you publish the *mySparkApp* created in the [.NET for Apache Spark - Get S
    zip -r publish.zip .
    ```
 
+3. If you have any user-defined functions in your app, the app assemblies, such as DLLs that contain user-defined functions along with their dependencies, need to be placed in the working directory of each *Microsoft.Spark.Worker*.
+
+    Upload your application assemblies to your Databricks cluster:
+
+    ```console
+    cd <path-to-your-app-publish-directory>
+    databricks fs cp <assembly>.dll dbfs:/apps/dependencies
+    ```
+
+    Uncomment and modify the app dependencies section in [db-init.sh](https://github.com/dotnet/spark/blob/master/deployment/db-init.sh) to point to your app dependencies path. Then, upload the updated *db-init.sh* to your cluster:
+
+    ```console
+    cd <path-to-db-init-and-install-worker>
+    databricks fs cp db-init.sh dbfs:/spark-dotnet/db-init.sh
+    ```
+
+> [!Note]
+> For more information, see the [Submit a .NET for Apache Spark job to Databricks guide](https://docs.microsoft.com/dotnet/spark/how-to-guides/databricks-deploy-methods).
+
 ## Upload files
 
 In this section, you upload several files to DBFS so that your cluster has everything it needs to run your app in the cloud. Each time you upload a file to the DBFS, make sure you are in the directory where that file is located on your computer.

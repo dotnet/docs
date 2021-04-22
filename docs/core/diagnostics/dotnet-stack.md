@@ -139,7 +139,7 @@ To report managed stacks using `dotnet-stack`:
     Module!Method
   ```
   
-  ## Next Steps
+## Next Steps
   
   - [Use dotnet-trace to collect CPU samples of a .NET application](dotnet-trace.md)
   - [Use dotnet-dump to collect a dump of a .NET application](dotnet-dump.md)

@@ -41,7 +41,7 @@ namespace ConsoleDisposable.Example
 
         static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureServices((_, services) =>
+                .ConfigureServices((services) =>
                     services.AddTransient<TransientDisposable>()
                             .AddScoped<ScopedDisposable>()
                             .AddSingleton<SingletonDisposable>());

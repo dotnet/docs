@@ -32,7 +32,7 @@ ms.assetid: dfebc18e-acde-4510-9fa7-9a0f4aa3bd11
 |<xref:System.Int32?displayProperty=nameWithType>|4|-2,147,483,648|2,147,483,647|
 |<xref:System.Int64?displayProperty=nameWithType>|8|-9,223,372,036,854,775,808|9,223,372,036,854,775,807|
 |<xref:System.SByte?displayProperty=nameWithType>|1|-128|127|
-|<xref:System.IntPtr?displayProperty=nameWithType>|4 (on 32-bit machine)<br/>8 (on 64-bit machine)|-9,223,372,036,854,775,808 (on 64-bit machine)|9,223,372,036,854,775,807 (on 64-bit machine)|
+|<xref:System.IntPtr?displayProperty=nameWithType>|4 (in 32-bit process)<br/>8 (in 64-bit process)|-2,147,483,647 (in 32-bit process)<br/>-9,223,372,036,854,775,808 (in 64-bit process)|2,147,483,647 (in 32-bit process)<br/>9,223,372,036,854,775,807 (in 64-bit process)|
 
 **Unsigned integer types**
 
@@ -42,7 +42,7 @@ ms.assetid: dfebc18e-acde-4510-9fa7-9a0f4aa3bd11
 |<xref:System.UInt16?displayProperty=nameWithType>|2|0|65,535|
 |<xref:System.UInt32?displayProperty=nameWithType>|4|0|4,294,967,295|
 |<xref:System.UInt64?displayProperty=nameWithType>|8|0|18,446,744,073,709,551,615|
-|<xref:System.UIntPtr?displayProperty=nameWithType>|4 (on 32-bit machine)<br/>8 (on 64-bit machine)|0|18,446,744,073,709,551,615 (on 64-bit machine)|
+|<xref:System.UIntPtr?displayProperty=nameWithType>|4 (in 32-bit process)<br/>8 (in 64-bit process)|0|4,294,967,295 (in 32-bit process)<br/>18,446,744,073,709,551,615 (in 64-bit process)|
 
 Each integer type supports a set of standard arithmetic operators. The <xref:System.Math?displayProperty=nameWithType> class provides methods for a broader set of mathematical functions.
 

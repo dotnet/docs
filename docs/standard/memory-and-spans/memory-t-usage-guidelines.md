@@ -235,7 +235,7 @@ Accepting an instance of this type signals that your component intends to take o
 Any component that transfers ownership of the <xref:System.Buffers.IMemoryOwner%601> instance to a different component should no longer use that instance after the method call completes.
 
 > [!IMPORTANT]
-> If your constructor accepts <xref:System.Buffers.IMemoryOwner%601> as a parameter, its type should implement <xref:System.IDisposable>, and your <xref:System.IDisposable.Dispose%2A> method should call <xref:System.Buffers.MemoryPool%601.Dispose%2A?displayProperty=nameWithType>.
+> If your constructor accepts <xref:System.Buffers.IMemoryOwner%601> as a parameter, its type should implement <xref:System.IDisposable>, and your <xref:System.IDisposable.Dispose%2A> method should call <xref:System.Buffers.IMemoryOwner%601.Dispose%2A?displayProperty=nameWithType>.
 
 **Rule #9: If you're wrapping a synchronous p/invoke method, your API should accept Span\<T> as a parameter.**
 

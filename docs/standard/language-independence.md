@@ -318,27 +318,27 @@ The .NET Class Library or any other class library may include other types that a
 
 * Boxed value types. The following C# example creates a class that has a public property of type `int*` named `Value`. Because an `int*` is a boxed value type, the compiler flags it as non-CLS-compliant.
 
-```csharp
-using System;
+  ```csharp
+  using System;
 
-[assembly:CLSCompliant(true)]
+  [assembly:CLSCompliant(true)]
 
-public unsafe class TestClass
-{
-   private int* val;
+  public unsafe class TestClass
+  {
+     private int* val;
 
-   public TestClass(int number)
-   {
-      val = (int*) number;
-   }
+     public TestClass(int number)
+     {
+        val = (int*) number;
+     }
 
-   public int* Value {
-      get { return val; }
-   }
-}
-// The compiler generates the following output when compiling this example:
-//        warning CS3003: Type of 'TestClass.Value' is not CLS-compliant
-```
+     public int* Value {
+        get { return val; }
+     }
+  }
+  // The compiler generates the following output when compiling this example:
+  //        warning CS3003: Type of 'TestClass.Value' is not CLS-compliant
+  ```
 
 * Typed references, which are special constructs that contain a reference to an object and a reference to a type.
 

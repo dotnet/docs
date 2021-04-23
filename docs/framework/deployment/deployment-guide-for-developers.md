@@ -1,7 +1,7 @@
 ---
 title: ".NET Framework deployment guide for developers"
 description: Read the .NET deployment guide for developers. Use this information if you want to install any version of .NET from version 4.5 to 4.8 with your apps.
-ms.date: "01/17/2020"
+ms.date: "04/23/2021"
 helpviewer_keywords:
   - "developer's guide, deploying .NET Framework"
   - "deployment [.NET Framework], developer's guide"
@@ -23,6 +23,8 @@ You can download the redistributable packages and language packs for .NET Framew
 - [.NET Framework 4.5.2](https://dotnet.microsoft.com/download/dotnet-framework/net452)
 - [.NET Framework 4.5.1](https://dotnet.microsoft.com/download/dotnet-framework/net451)
 - [.NET Framework 4.5](https://dotnet.microsoft.com/download/dotnet-framework/net45)
+
+[!INCLUDE[net_retirement](../../../includes/net-framework-retired-versions.md)]
 
  Important notes:
 

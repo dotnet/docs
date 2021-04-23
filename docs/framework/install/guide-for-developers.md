@@ -1,7 +1,7 @@
 ---
 title: "Install the .NET Framework developer pack or redistributable"
 description: "Developers can download and install the .NET Framework developer pack and targeting pack. You can include the .NET Framework redistributable with your apps."
-ms.date: "01/17/2020"
+ms.date: "04/23/2021"
 helpviewer_keywords:
   - ".NET Framework redistributable package, downloading"
   - ".NET Framework, installing"
@@ -17,6 +17,8 @@ ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c
 > This topic is intended for **developers** who either want to install the .NET Framework on their own system or who want to install it with their applications. For **users** interested in installing the .NET Framework, see the individual topics that discuss installing the .NET Framework on specific operating systems, such as [Install the .NET Framework on Windows 10 and Windows Server 2016](on-windows-10.md).
 
 This article provides links for installing all versions of the .NET Framework from .NET Framework 4.5 to .NET Framework 4.8 on your computer. If you're a developer, you can also use these links to download and redistribute the .NET Framework with your apps. For information on deploying a version of the .NET Framework with your app, see [.NET Framework deployment guide for developers](../deployment/deployment-guide-for-developers.md).
+
+[!INCLUDE[net_retirement](../../../includes/net-framework-retired-versions.md)]
 
 [!INCLUDE[net-framework-4-versions](../../../includes/net-framework-4x-versions.md)]
 

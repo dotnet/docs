@@ -892,6 +892,46 @@ else
     e4
 ```
 
+If a condition is long, place it on the next line with an extra indent.
+Align the `if` and the `then` keywords.
+
+```fsharp
+if
+    complexExpression a b && env.IsDevelopment()
+    || secondLongerExpression
+        parameterOne
+        parameterTwo
+        parameterThree
+        """
+Multiline 
+    string
+        """
+then
+        e1
+    else
+        e2
+```
+
+If you have a condition that is this long, first consider refactoring it into a separate function and calling that function instead
+
+```fsharp
+let condition () =
+    complexExpression a b && env.IsDevelopment()
+    || secondLongerExpression
+        parameterOne
+        parameterTwo
+        parameterThree
+        """
+Multiline 
+    string
+        """
+
+if condition () then
+    e1
+else
+    e2
+```
+
 ### Pattern matching constructs
 
 Use a `|` for each clause of a match with no indentation. If the expression is short, you can consider using a single line if each subexpression is also simple.

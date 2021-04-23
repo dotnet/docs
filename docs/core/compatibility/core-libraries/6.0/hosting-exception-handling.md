@@ -15,7 +15,7 @@ Starting in .NET 6, when an exception is thrown from a <xref:Microsoft.Extension
 
 ## Version introduced
 
-6.0 Preview Preview 4
+6.0 preview 4
 
 ## Reason for change
 

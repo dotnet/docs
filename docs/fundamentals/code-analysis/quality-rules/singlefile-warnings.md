@@ -16,6 +16,9 @@ ms.author: gewarren
 
 SingleFile rules for .NET.
 
+> [!NOTE]
+> Prior to .NET 6, this category was named `Publish`.
+
 ## In this section
 
 |Rule|Description|

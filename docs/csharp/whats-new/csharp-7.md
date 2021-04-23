@@ -100,7 +100,7 @@ Discards are supported in the following scenarios:
 
 - When deconstructing tuples or user-defined types.
 - When calling methods with [out](../language-reference/keywords/out-parameter-modifier.md) parameters.
-- In a pattern matching operation with the [is](../language-reference/keywords/is.md) and [switch](../language-reference/keywords/switch.md) statements.
+- In a pattern matching operation with the [is](../language-reference/operators/is.md) and [switch](../language-reference/keywords/switch.md) statements.
 - As a standalone identifier when you want to explicitly identify the value of an assignment as a discard.
 
 The following example defines a `QueryCityDataForYears` method that returns a 6-tuple that contains data for a city for two different years. The method call in the example is concerned only with the two population values returned by the method and so treats the remaining values in the tuple as discards when it deconstructs the tuple.
@@ -115,7 +115,7 @@ For more information, see [Discards](../discards.md).
 
 Pattern matching supports `is` expressions and `switch` expressions. Each enables inspecting an object and its properties to determine if that object satisfies the sought pattern. You use the `when` keyword to specify additional rules to the pattern.
 
-The `is` pattern expression extends the familiar [`is` operator](../language-reference/keywords/is.md#pattern-matching-with-is) to query an object about its type and assign the result in one instruction. The following code checks if a variable is an `int`, and if so, adds it to the current sum:
+The `is` pattern expression extends the familiar [`is` operator](../language-reference/operators/is.md) to query an object about its type and assign the result in one instruction. The following code checks if a variable is an `int`, and if so, adds it to the current sum:
 
 ```csharp
 if (input is int count)

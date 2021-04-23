@@ -962,6 +962,23 @@ with
     printfn "A second that was a multiple of 3"
 ```
 
+Always add a `|` for each clause, even when only having a single clause.
+
+```fsharp
+// OK
+try
+    persistState currentState
+with
+| ex -> 
+    printfn "Something went wrong: %A" ex
+    
+// Not OK
+try
+    persistState currentState
+with ex ->
+    printfn "Something went wrong: %A" ex
+```
+
 ## Formatting function parameter application
 
 In general, most arguments are provided on the same line:

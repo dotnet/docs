@@ -214,21 +214,20 @@ At this point, the code retrieves a response from a web server and displays the 
 
 ## Controlling Serialization
 
-Before you add more features, let's address the `name` property by using the `[JsonPropertyName]` attribute. Make
-the following changes to the declaration of the `name` field in repo.cs:
+1. In *repo.cs*, change the `name` property to `Name` and add a `[JsonPropertyName]` attribute to specify how this pproperty appears in the JSON.
 
-```csharp
-[JsonPropertyName("name")]
-public string Name { get; set; }
-```
+   ```csharp
+   [JsonPropertyName("name")]
+   public string Name { get; set; }
+   ```
 
-To use `[JsonPropertyName]` attribute, you will need to add the <xref:System.Text.Json.Serialization> namespace to the `using` directives:
+1. Add the <xref:System.Text.Json.Serialization> namespace to the `using` directives:
 
-```csharp
-using System.Text.Json.Serialization;
-```
+   ```csharp
+   using System.Text.Json.Serialization;
+   ```
 
-This change means you need to change the code that writes the name of each repository in program.cs:
+1. In *Program.cs*, update the code to use the new capitalization of the `Name` property:
 
 ```csharp
 Console.WriteLine(repo.Name);

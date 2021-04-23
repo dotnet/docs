@@ -116,9 +116,11 @@ the converter successfully parses the data using <xref:System.DateTime.Parse(Sys
 
 #### Using Unix epoch date format
 
-The following converter handles Unix epoch with time zone format (values such as `/Date(1590863400000-0700)/`):
+The following converters handle Unix epoch format with or without time zone (values such as `/Date(1590863400000-0700)/` or `/Date(1590863400000)/`):
 
 :::code language="csharp" source="../serialization/snippets/system-text-json-how-to-5-0/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
+
+:::code language="csharp" source="../serialization/snippets/system-text-json-how-to-5-0/csharp/CustomConverterUnixEpochDateNoZone.cs" id="ConverterOnly":::
 
 ### When writing with <xref:System.Text.Json.Utf8JsonWriter>
 

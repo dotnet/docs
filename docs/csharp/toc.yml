@@ -1108,10 +1108,6 @@ items:
           href: language-reference/keywords/using-statement.md
       - name: extern alias
         href: language-reference/keywords/extern-alias.md
-    - name: Type-testing Keywords
-      items:
-        - name: is
-          href: language-reference/keywords/is.md
     - name: Generic Type Constraint Keywords
       items:
         - name: new constraint
@@ -1261,6 +1257,9 @@ items:
     - name: delegate operator
       href: language-reference/operators/delegate-operator.md
       displayName: anonymous
+    - name: is operator
+      href: language-reference/operators/is.md
+      displayName: pattern matching
     - name: nameof expression
       href: language-reference/operators/nameof.md
       displayName: nameof operator
@@ -1274,7 +1273,7 @@ items:
       displayName: stack allocation, span, stackalloc operator
     - name: switch expression
       href: language-reference/operators/switch-expression.md
-      displayName: "switch, pattern matching, patterns"
+      displayName: pattern matching, patterns
     - name: true and false operators
       href: language-reference/operators/true-false-operators.md
     - name: with expression

@@ -79,5 +79,5 @@ Without assigning the task to a discard, the following code generates a compiler
 ## See also
 
 - [Deconstructing tuples and other types](deconstruct.md)
-- [`is` keyword](language-reference/keywords/is.md)
+- [`is` operator](language-reference/operators/is.md)
 - [`switch` keyword](language-reference/keywords/switch.md)

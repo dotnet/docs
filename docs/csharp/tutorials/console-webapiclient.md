@@ -212,9 +212,9 @@ At this point, the code retrieves a response from a web server and displays the 
 
    The output is a list of the names of the repositories that are part of the .NET Foundation.
 
-## Controlling Serialization
+## Controll serialization
 
-1. In *repo.cs*, change the `name` property to `Name` and add a `[JsonPropertyName]` attribute to specify how this pproperty appears in the JSON.
+1. In *repo.cs*, change the `name` property to `Name` and add a `[JsonPropertyName]` attribute to specify how this property appears in the JSON.
 
    ```csharp
    [JsonPropertyName("name")]
@@ -229,49 +229,51 @@ At this point, the code retrieves a response from a web server and displays the 
 
 1. In *Program.cs*, update the code to use the new capitalization of the `Name` property:
 
-```csharp
-Console.WriteLine(repo.Name);
-```
+   ```csharp
+   Console.WriteLine(repo.Name);
+   ```
 
-Execute `dotnet run` to make sure you've got the mappings correct. You should
-see the same output as before.
+1. Compile and run the application.
 
-Let's make one more change before adding new features. The `ProcessRepositories` method can do the async
-work and return a collection of the repositories. Let's return the `List<Repository>` from that method,
-and move the code that writes the information into the `Main` method.
+   ```dotnetcli
+   dotnet run
+   ```
 
-Change the signature of `ProcessRepositories` to return a task whose result is a list of `Repository`
-objects:
+## Simplify some code
 
-```csharp
-private static async Task<List<Repository>> ProcessRepositories()
-```
+The `ProcessRepositories` method can do the async work and return a collection of the repositories. Change that method to return `List<Repository>`, and move the code that writes the information into the `Main` method.
 
-Then, just return the repositories after processing the JSON response:
+1. Change the signature of `ProcessRepositories` to return a task whose result is a list of `Repository` objects:
 
-```csharp
-var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
-var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await streamTask);
-return repositories;
-```
+   ```csharp
+   private static async Task<List<Repository>> ProcessRepositories()
+   ```
 
-The compiler generates the `Task<T>` object for the return because you've marked this method as `async`.
-Then, let's modify the `Main` method so that it captures those results and writes each repository name
-to the console. Your `Main` method now looks like this:
+1. Return the repositories after processing the JSON response:
 
-```csharp
-public static async Task Main(string[] args)
-{
-    var repositories = await ProcessRepositories();
+   ```csharp
+   var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
+   var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await streamTask);
+   return repositories;
+   ```
 
-    foreach (var repo in repositories)
-        Console.WriteLine(repo.Name);
-}
-```
+   The compiler generates the `Task<T>` object for the return because you've marked this method as `async`.
 
-## Reading More Information
+1. Modify the `Main` method so that it captures those results and writes each repository name to the console. Your `Main` method now looks like this:
 
-Let's finish this by processing a few more of the properties in the JSON packet that gets sent from the
+   ```csharp
+   public static async Task Main(string[] args)
+   {
+       var repositories = await ProcessRepositories();
+   
+       foreach (var repo in repositories)
+           Console.WriteLine(repo.Name);
+   }
+   ```
+
+## Read more information
+
+Process  a few more of the properties in the JSON packet that gets sent from the
 GitHub API. You won't want to grab everything, but adding a few properties will demonstrate a few more
 features of the C# language.
 

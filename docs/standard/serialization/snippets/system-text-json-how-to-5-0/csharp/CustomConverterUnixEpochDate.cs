@@ -13,7 +13,7 @@ namespace CustomConverterUnixEpochDate
             var forecast = new Forecast() { Date = DateTimeOffset.Now, TemperatureCelsius = 19, Summary = "warm" };
 
             var options = new JsonSerializerOptions();
-            options.Converters.Add(new UnixEpochDateConverter());
+            options.Converters.Add(new UnixEpochDateTimeOffsetConverter());
             options.WriteIndented = true;
 
             string json = JsonSerializer.Serialize(forecast, options);
@@ -32,7 +32,7 @@ namespace CustomConverterUnixEpochDate
     }
 
     // <ConverterOnly>
-    sealed class UnixEpochDateConverter : JsonConverter<DateTimeOffset>
+    sealed class UnixEpochDateTimeOffsetConverter : JsonConverter<DateTimeOffset>
     {
         static readonly DateTimeOffset s_epoch = new DateTimeOffset(1970, 1, 1, 0, 0, 0, TimeSpan.Zero);
         static readonly Regex s_regex = new Regex("^/Date\\(([^+-]+)([+-])(\\d{2})(\\d{2})\\)/$", RegexOptions.CultureInvariant);
@@ -49,7 +49,7 @@ namespace CustomConverterUnixEpochDate
                     || !int.TryParse(match.Groups[3].Value, System.Globalization.NumberStyles.Integer, CultureInfo.InvariantCulture, out int hours)
                     || !int.TryParse(match.Groups[4].Value, System.Globalization.NumberStyles.Integer, CultureInfo.InvariantCulture, out int minutes))
             {
-                throw new Exception("Unexpected value format, unable to parse DateTimeOffset.");
+                throw new JsonException();
             }
 
             int sign = match.Groups[2].Value[0] == '+' ? 1 : -1;

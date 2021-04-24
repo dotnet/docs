@@ -51,14 +51,16 @@ items:
           href: aspnet-core/6.0/signalr-java-client-updated.md
       - name: Core .NET libraries
         items:
-        - name: Nullability annotation changes
-          href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
         - name: New Queryable method overloads
           href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
+        - name: Nullability annotation changes
+          href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
         - name: Parameters renamed in Stream-derived types
           href: core-libraries/6.0/parameters-renamed-on-stream-derived-types.md
         - name: Standard numeric format parsing precision
           href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
+        - name: Unhandled exceptions from a BackgroundService
+          href: core-libraries/6.0/hosting-exception-handling.md
       - name: Windows Forms
         items:
         - name: APIs throw ArgumentNullException
@@ -469,14 +471,16 @@ items:
       items:
       - name: .NET 6
         items:
-        - name: Nullability annotation changes
-          href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
         - name: New Queryable method overloads
           href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
+        - name: Nullability annotation changes
+          href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
         - name: Parameters renamed in Stream-derived types
           href: core-libraries/6.0/parameters-renamed-on-stream-derived-types.md
         - name: Standard numeric format parsing precision
           href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
+        - name: Unhandled exceptions from a BackgroundService
+          href: core-libraries/6.0/hosting-exception-handling.md
       - name: .NET 5
         items:
         - name: Assembly-related API changes for single-file publishing

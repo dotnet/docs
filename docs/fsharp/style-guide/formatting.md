@@ -899,9 +899,9 @@ Align the `if` and the `then` keywords.
 if
     complexExpression a b && env.IsDevelopment()
     || secondLongerExpression
-        parameterOne
-        parameterTwo
-        parameterThree
+        aVeryLongparameterNameOne
+        aVeryLongparameterNameTwo
+        aVeryLongparameterNameThree
         """
 Multiline 
     string
@@ -918,9 +918,9 @@ If you have a condition that is this long, first consider refactoring it into a 
 let condition () =
     complexExpression a b && env.IsDevelopment()
     || secondLongerExpression
-        parameterOne
-        parameterTwo
-        parameterThree
+        aVeryLongparameterNameOne
+        aVeryLongparameterNameTwo
+        aVeryLongparameterNameThree
         """
 Multiline 
     string

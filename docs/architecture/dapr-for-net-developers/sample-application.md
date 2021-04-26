@@ -33,7 +33,7 @@ The flow of the simulation is depicted in the sequence diagram in figure 4.2:
 
 As shown in the sequence diagram, the services communicate by directly invoking each other's APIs. This design works fine, but it has some drawbacks.
 
-The biggest drawback is that a call-chain could be broken when one of the services is off-line. Making sure the services are temporally decoupled by replacing the direct calls with asynchronous messaging would solve this issue. Asynchronous messaging is typically implemented with a message broker like RabbitMQ for instance. 
+The biggest drawback is that a call-chain could be broken when one of the services is off-line. Making sure the services are temporally decoupled by replacing the direct calls with asynchronous messaging would solve this issue. Asynchronous messaging is typically implemented with a message broker like RabbitMQ for instance.
 
 Another drawback is that the vehicle state for every vehicle is stored in memory in the TrafficControl service. This state is lost when the service is restarted after an update or a crash. It would be better to store the state somewhere outside the service so it survives service restarts.
 
@@ -50,11 +50,11 @@ One of the goals of Dapr is to provide cloud-native capabilities for microservic
 1. **Publish & subscribe**
    The publish and subscribe building block handles the asynchronous messaging for sending speeding violations from the TrafficControl service to the FineCollectionService. This temporally decouples the TrafficControl service and FineCollection service. RabbitMQ is the message broker that transports the messages from the message producers to the message consumers. Because the Dapr pub/sub building block abstracts the specific broker product, the developers of the services don't need to learn the specifics of the RabbitMQ client library. And switching to another message broker in the future will not require any code changes whatsoever.  
 1. **State management**
-   The TrafficControl service leverages the state management building block to store vehicle state data outside of the service in a Redis cache. As with pub/sub, the developers of the services don't need to learn any Redis specific APIs and switching to another storage product in the future will require no code changes. 
+   The TrafficControl service leverages the state management building block to store vehicle state data outside of the service in a Redis cache. As with pub/sub, the developers of the services don't need to learn any Redis specific APIs and switching to another storage product in the future will require no code changes.
 1. **Output binding**
    The FineCollection service sends fines to the owners of speeding vehicles by email. The Dapr output binding for SMTP abstracts the actual sending of the email using the SMTP protocol.
 1. **Input binding**
-   The CameraSimulation sends messages with simulated car info to the TrafficControl service using the MQTT protocol. It uses a .NET MQTT library for sending these messages to Mosquitto - a lightweight MQTT broker. The TrafficControl service leverages the Dapr input binding for MQTT to subscribe to the MQTT broker and receive messages. 
+   The CameraSimulation sends messages with simulated car info to the TrafficControl service using the MQTT protocol. It uses a .NET MQTT library for sending these messages to Mosquitto - a lightweight MQTT broker. The TrafficControl service leverages the Dapr input binding for MQTT to subscribe to the MQTT broker and receive messages.
 1. **Secrets management**
    The FineCollectionService needs credentials for connecting to the smtp server and a license-key for a fine calculator component it uses internally. It uses the secrets management building block to get the credentials and the license-key.
 1. **Actors**

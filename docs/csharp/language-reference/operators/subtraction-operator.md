@@ -1,6 +1,6 @@
 ---
-description: "- and -= operators - C# reference"
 title: "- and -= operators - C# reference"
+description: "Learn about the C# subtraction operator and how it works with operands of numeric or delegate types."
 ms.date: 05/27/2019
 f1_keywords: 
   - "-_CSharpKeyword"

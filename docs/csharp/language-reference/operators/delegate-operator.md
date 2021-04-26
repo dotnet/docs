@@ -1,6 +1,6 @@
 ---
-description: "delegate operator - C# reference"
 title: "delegate operator - C# reference"
+description: "Learn about the C# delegate operator that is used to create anonymous methods."
 ms.date: 09/25/2020
 helpviewer_keywords:
   - "delegate [C#]"

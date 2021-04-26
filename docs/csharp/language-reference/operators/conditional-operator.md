@@ -1,6 +1,6 @@
 ---
-description: "?: operator - C# reference"
 title: "?: operator - C# reference"
+description: "Learn about the C# ternary conditional operator that returns the result of one of the two expressions based on a Boolean expression's result"
 ms.date: "09/17/2020"
 f1_keywords:
   - "?:_CSharpKeyword"

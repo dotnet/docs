@@ -1,6 +1,6 @@
 ---
-description: "! (null-forgiving) operator - C# reference"
 title: "! (null-forgiving) operator - C# reference"
+description: "Learn about the C# null-forgiving, or null-suppression, operator that is used to declare that an expression of a reference type isn't null."
 ms.date: 11/13/2020
 f1_keywords: 
   - "nullForgiving_CSharpKeyword"

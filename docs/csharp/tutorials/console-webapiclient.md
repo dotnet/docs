@@ -349,11 +349,6 @@ again:
 
 Your version of the application should now match the [finished sample](https://github.com/dotnet/samples/tree/main/csharp/getting-started/console-webapiclient).
 
-This tutorial showed you how to make web requests, parse the results, and display properties of those results. You've seen some of
-the features of the C# language that support object-oriented techniques.
+This tutorial showed you how to make web requests, parse the results, and display properties of those results. You've seen some of the features of the C# language that support object-oriented techniques.
 
-Learn more about C# language features in other tutorials, such as:
-
-* [Inheritance in C# and .NET](inheritance.md)
-* [Work with Language-Integrated Query (LINQ)](working-with-linq.md)
-* [Use Attributes in C#](attributes.md)
+Learn more about how to configure JSON serialization in [How to serialize and deserialize (marshal and unmarshal) JSON in .NET](../../standard/serialization/system-text-json-how-to.md).

@@ -190,46 +190,9 @@ spec:
 
 In this example, Dapr triggers a service by invoking the `/checkOrderBacklog` endpoint every 30 minutes. There are several patterns available for specifying the `schedule` value. For more information, see the [Cron binding documentation](https://docs.dapr.io/operations/components/setup-bindings/supported-bindings/cron/).
 
-## Reference application: eShopOnDapr
+## Sample application: Dapr Traffic Control
 
-The accompanying eShopOnDapr reference application implements an output binding example. It triggers the Dapr [SendGrid](https://docs.dapr.io/operations/components/setup-bindings/supported-bindings/sendgrid/) binding to send a user an email when a new order is placed. You can find this binding in the `eshop-email.yaml` file in the components folder:
-
-```yaml
-apiVersion: dapr.io/v1alpha1
-kind: Component
-metadata:
-  name: sendmail
-  namespace: eshop
-spec:
-  type: bindings.twilio.sendgrid
-  version: v1
-  metadata:
-  - name: apiKey
-    secretKeyRef:
-      name: sendGridAPIKey
-auth:
-  secretStore: eshop-secretstore
-```
-
-This configuration uses the [Twilio SendGrid](https://github.com/dapr/components-contrib/tree/master/bindings/twilio) binding component. Note how the API key for connecting to the service consumes a Dapr secret reference. This approach keeps secrets outside of the configuration file. Read the [secrets building block chapter](secrets.md) to learn more about Dapr secrets.
-
-The binding configuration specifies a binding component that can be invoked using the `/sendmail` endpoint on the Dapr sidecar. Here's a code snippet in which an email is sent whenever an order is started:
-
-```csharp
-public Task Handle(OrderStartedDomainEvent notification, CancellationToken cancellationToken)
-{
-    var string message = CreateEmailBody(notification);
-    var metadata = new Dictionary<string, string>
-    {
-        {"emailFrom", "eShopOn@dapr.io"},
-        {"emailTo", notification.UserName},
-        {"subject", $"Your eShopOnDapr order #{notification.Order.Id}"}
-    };
-    return _daprClient.InvokeBindingAsync("sendmail", "create", message, metadata, cancellationToken);
-}
-```
-
-As you can see in this example, `message` contains the message body. The `CreateEmailBody` method simply formats a string with the body text. The `metadata` specifies the email sender, recipient, and the subject for the email message. If these values are static, they can also be included in the metadata fields in the configuration file. The name of the binding to invoke is `sendmail` and the operation is `create`.
+> **TODO**
 
 ## Summary
 

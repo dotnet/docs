@@ -23,7 +23,7 @@ Although the simulation is quite simple, responsibilities within the system are 
 
 \- The **FineCollection service** is an ASP.NET Core WebAPI application that offers 1 endpoint: `/collectfine`. Invoking this endpoint will start the process of sending a fine to the driver of a speeding vehicle. The payload of the request contains all the information about the speeding violation.
 
-\- The **VehicleRegistration service** is an ASP.NET Core WebAPI application that offers 1 endpoint: `/vehicleinfo/{licensenumber}` for getting the vehicle- and owner-information of a speeding vehicle by specifying its license number on the URL (e.g. `/vehicleinfo/RV-752-S`). 
+\- The **VehicleRegistration service** is an ASP.NET Core WebAPI application that offers 1 endpoint: `/vehicleinfo/{licensenumber}` for getting the vehicle- and owner-information of a speeding vehicle by specifying its license number on the URL (e.g. `/vehicleinfo/RV-752-S`).
 
 The flow of the simulation is depicted in the sequence diagram in figure 4.2:
 
@@ -31,7 +31,7 @@ The flow of the simulation is depicted in the sequence diagram in figure 4.2:
 
 **Figure 4-2**. Sequence diagram of the simulation flow.
 
-As shown in the sequence diagram, the services communicate by directly invoking each other's APIs. This design works fine, but it has some drawbacks. 
+As shown in the sequence diagram, the services communicate by directly invoking each other's APIs. This design works fine, but it has some drawbacks.
 
 The biggest drawback is that a call-chain could be broken when one of the services is off-line. Making sure the services are temporally decoupled by replacing the direct calls with asynchronous messaging would solve this issue. Asynchronous messaging is typically implemented with a message broker like RabbitMQ for instance. 
 
@@ -52,13 +52,13 @@ One of the goals of Dapr is to provide cloud-native capabilities for microservic
 1. **State management**
    The TrafficControl service leverages the state management building block to store vehicle state data outside of the service in a Redis cache. As with pub/sub, the developers of the services don't need to learn any Redis specific APIs and switching to another storage product in the future will require no code changes. 
 1. **Output binding**
-   The FineCollection service sents fines to the owners of speeding vehicles by email. The Dapr output binding for SMTP abstracts the actual sending of the email using the SMTP protocol.
+   The FineCollection service sends fines to the owners of speeding vehicles by email. The Dapr output binding for SMTP abstracts the actual sending of the email using the SMTP protocol.
 1. **Input binding**
    The CameraSimulation sends messages with simulated car info to the TrafficControl service using the MQTT protocol. It uses a .NET MQTT library for sending these messages to Mosquitto - a lightweight MQTT broker. The TrafficControl service leverages the Dapr input binding for MQTT to subscribe to the MQTT broker and receive messages. 
 1. **Secrets management**
    The FineCollectionService needs credentials for connecting to the smtp server and a license-key for a fine calculator component it uses internally. It uses the secrets management building block to get the credentials and the license-key.
 1. **Actors**
-   The TrafficControlService has an alternative implementation based on Dapr actors. In this implementation, the TrafficControl service creates a new actor for every vehicle that is registered by the entry camera. The license number of the vehicle forms the unique actor Id. The actor encapsulates the vehicle state, which it persists in the Redis cache. When the exit camera registers a vehicle, it will send invoke the actor (identified by the license number). The actor will then calculate the average speed and handle a possible speeding violations. 
+   The TrafficControlService has an alternative implementation based on Dapr actors. In this implementation, the TrafficControl service creates a new actor for every vehicle that is registered by the entry camera. The license number of the vehicle forms the unique actor Id. The actor encapsulates the vehicle state, which it persists in the Redis cache. When the exit camera registers a vehicle, it will send invoke the actor (identified by the license number). The actor will then calculate the average speed and handle a possible speeding violations.
 
 Figure 4.4 shows a sequence diagram of the flow of the simulation with all the Dapr building blocks in place:
 
@@ -72,7 +72,7 @@ You can get the code for the sample application from the following GitHub repo: 
 
 ## Summary
 
-The Traffic Control sample application is a microservices application that simulates a highway speed trap. 
+The Traffic Control sample application is a microservices application that simulates a highway speed trap.
 
 The application uses several Dapr building blocks to make it robust and cloud-native. The domain is kept relatively simple to keep the focus on Dapr.
 
@@ -85,5 +85,3 @@ The application will be used in subsequent chapters that focus on a specific bui
 > [!div class="step-by-step"]
 > [Previous](getting-started.md)
 > [Next](state-management.md)
-
-[dapr-traffic-control-sample]: 

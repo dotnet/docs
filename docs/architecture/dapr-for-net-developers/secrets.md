@@ -463,81 +463,9 @@ You specify scopes per secret store. In the above example, the secret store is n
 
 The `allowedSecrets` and `deniedSecrets` properties take precedence over the `defaultAccess` property. Imagine specifying `defaultAccess: allowed` and an `allowedSecrets` list. In this case, only the secrets in the `allowedSecrets` list would be accessible by the application.
 
-## Reference application: eShopOnDapr
+## Sample application: Dapr Traffic Control
 
-The eShopOnDapr reference application uses the secrets building block for two secrets:
-
-- The password for connecting to the Redis cache.
-- The API-key for using the Twilio Sendgrid API. The application uses Twillio to send emails using a Dapr output binding (as described in the [bindings building block chapter](bindings.md)).
-
-When running the application using Docker Compose, the **local file** secret store is used. The component configuration file `eshop-secretstore.yaml` is found in the `dapr/components` folder of the eShopOnDapr repository:
-
-```yaml
-apiVersion: dapr.io/v1alpha1
-kind: Component
-metadata:
-  name: eshop-secretstore
-  namespace: eshop
-spec:
-  type: secretstores.local.file
-  version: v1
-  metadata:
-  - name: secretsFile
-    value: ./components/eshop-secretstore.json
-```
-
-The configuration file references the local store file `eshop-secretstore.json` located in the same folder:
-
-```json
-{
-    "redisPassword": "**********",
-    "sendgridAPIKey": "**********"
-}
-```
-
-The `components` folder is specified in the command-line and mounted as a local folder inside the Dapr sidecar container. Here's a snippet from the `docker-compose.override.yml` file in the repository root that specifies the volume mount:
-
-```yaml
-  ordering-backgroundtasks-dapr:
-    command: ["./daprd",
-      "-app-id", "ordering-backgroundtasks",
-      "-app-port", "80",
-      "-dapr-grpc-port", "50004",
-      "-components-path", "/components",
-      "-config", "/configuration/eshop-config.yaml"
-      ]
-    volumes:
-      - "./dapr/components/:/components"
-      - "./dapr/configuration/:/configuration"
-```
-
-> [!NOTE]
-> The Docker Compose override file contains environmental specific configuration values.
-
-The `/components` volume mount and `--components-path` command-line argument are passed into the `daprd` startup command.
-
-Once configured, other component configuration files can also reference the secrets. Here's an example of the Publish/Subscribe component configuration consuming secrets:
-
-```yaml
-apiVersion: dapr.io/v1alpha1
-kind: Component
-metadata:
-  name: pubsub
-  namespace: eshop
-spec:
-  type: pubsub.redis
-  version: v1
-  metadata:
-  - name: redisHost
-    value: redis:6379
-  - name: redisPassword
-    secretKeyRef:
-      name: redisPassword
-auth:
-  secretStore: eshop-secretstore
-```
-
-In the preceding example, the local Redis store is used to reference secrets.
+> **TODO**
 
 ## Summary
 

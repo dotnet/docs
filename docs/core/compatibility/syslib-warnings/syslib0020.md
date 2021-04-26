@@ -10,6 +10,6 @@ The <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues?displayPropert
 
 ## Workarounds
 
-To ignore null values when serializing, set <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull?displayProperty=nameWithType>.
+To ignore null values when serializing, set <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull?displayProperty=nameWithType>. For more information, see <https://github.com/dotnet/runtime/issues/39152>.
 
 [!INCLUDE [suppress-syslib-warning](../../../../includes/suppress-syslib-warning.md)]

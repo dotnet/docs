@@ -1,11 +1,12 @@
 ---
-title: Pattern Matching - C# Guide
+title: Pattern Matching overview - C# Guide
 description: Learn about pattern matching expressions in C#
 ms.date: 04/26/2021
+ms.topic: overview
 ms.technology: csharp-fundamentals
 ---
 
-# Pattern Matching
+# Pattern Matching overview
 
 *Pattern matching* is a technique where you test an expression to determine if it has certain characteristics. C# pattern matching provides more concise syntax for testing expressions and taking action when an expression matches. The [`is`](language-reference/keywords/is.md) expression now supports pattern matching to test an expression and conditionally declare a new variable to the result of that expression. The [`switch`](language-reference/operators/switch-expression.md) expression enables you to perform actions based on the first matching pattern for an expression. These two expressions support a rich vocabulary of [*patterns*](language-reference/operators/patterns.md). You have a rich vocabulary to express your algorithms.
 
@@ -21,7 +22,7 @@ The preceding code is a [*declaration pattern*](language-reference/operators/pat
 
 :::code language="csharp" source="snippets/patterns/Program.cs" ID="NullReferenceCheck":::
 
-The preceding example used a [*constant pattern*](language-reference/operators/patterns.md#constant-pattern) to compare the variable to `null`. The `not` is a [*logical pattern*](language-reference/patterns.md#logical-patterns) that negates the match expression.
+The preceding example used a [*constant pattern*](language-reference/operators/patterns.md#constant-pattern) to compare the variable to `null`. The `not` is a [*logical pattern*](language-reference/operators/patterns.md#logical-patterns) that negates the match expression.
 
 ## Type tests
 

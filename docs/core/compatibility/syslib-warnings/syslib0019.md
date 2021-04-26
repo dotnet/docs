@@ -12,7 +12,7 @@ The following APIs are marked as obsolete, starting in .NET 6. Using them in cod
 - <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr(System.Guid,System.Guid)?displayProperty=nameWithType> method
 - <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsObject(System.Guid,System.Guid)?displayProperty=nameWithType> method
 
-These APIs throw a <xref:System.PlatformNotSupportedException> at run time.
+These APIs always throw a <xref:System.PlatformNotSupportedException> at run time.
 
 ## Workarounds
 

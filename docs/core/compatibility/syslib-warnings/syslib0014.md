@@ -18,3 +18,7 @@ The following APIs are marked as obsolete, starting in .NET 6. Using them in cod
 Use <xref:System.Net.Http.HttpClient> instead.
 
 [!INCLUDE [suppress-syslib-warning](../../../../includes/suppress-syslib-warning.md)]
+
+## See also
+
+- [WebRequest, WebClient, and ServicePoint are obsolete](../networking/6.0/webrequest-deprecated.md)

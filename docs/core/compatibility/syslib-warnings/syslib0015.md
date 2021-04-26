@@ -6,9 +6,9 @@ ms.date: 04/24/2021
 ---
 # SYSLIB0015: DisablePrivateReflectionAttribute is obsolete
 
-The <xref:System.Runtime.CompilerServices.DisablePrivateReflectionAttribute?displayProperty=nameWithType> type is marked as obsolete, starting in .NET 6. Using it in code generates warning `SYSLIB0015` at compile time.
+Starting in .NET 6, the <xref:System.Runtime.CompilerServices.DisablePrivateReflectionAttribute?displayProperty=nameWithType> type is marked as obsolete. This attribute has no effect in .NET Core 2.1 and later apps. Using it in code generates warning `SYSLIB0015` at compile time for .NET 6 and later apps.
 
-<xref:System.Runtime.CompilerServices.DisablePrivateReflectionAttribute> has no effect in .NET 6+ applications.
+For more information, see <https://github.com/dotnet/runtime/issues/11811>.
 
 ## Workarounds
 

@@ -76,7 +76,7 @@ The Traffic Control sample application is a microservices application that simul
 
 The application uses several Dapr building blocks to make it robust and cloud-native. The domain is kept relatively simple to keep the focus on Dapr.
 
-The application will be used in subsequent chapters that focus on a specific building block.
+The application will be used in subsequent chapters that each focus on a specific building block.
 
 ### References
 

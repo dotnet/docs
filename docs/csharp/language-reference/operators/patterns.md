@@ -16,14 +16,14 @@ helpviewer_keywords:
 
 C# introduced pattern matching in C# 7.0. Since then, each major C# version extends pattern matching capabilities. The following C# expressions and statements support pattern matching:
 
-- [`is` expression](../keywords/is.md)
+- [`is` expression](is.md)
 - `switch` [statement](../keywords/switch.md)
 - `switch` [expression](switch-expression.md) (introduced in C# 8.0)
 
 In those constructs, you can match an input expression against any of the following patterns:
 
-- [Declaration pattern](#declaration-and-type-patterns): to check the runtime type of an expression and, if a match succeeds, assign an expression result to a declared variable. Introduced in C# 7.0.
-- [Type pattern](#declaration-and-type-patterns): to check the runtime type of an expression. Introduced in C# 9.0.
+- [Declaration pattern](#declaration-and-type-patterns): to check the run-time type of an expression and, if a match succeeds, assign an expression result to a declared variable. Introduced in C# 7.0.
+- [Type pattern](#declaration-and-type-patterns): to check the run-time type of an expression. Introduced in C# 9.0.
 - [Constant pattern](#constant-pattern): to test if an expression result equals a specified constant. Introduced in C# 7.0.
 - [Relational patterns](#relational-patterns): to compare an expression result with a specified constant. Introduced in C# 9.0.
 - [Logical patterns](#logical-patterns): to test if an expression matches a logical combination of patterns. Introduced in C# 9.0.
@@ -38,23 +38,23 @@ For the example of how to use those patterns to build a data-driven algorithm, s
 
 ## Declaration and type patterns
 
-You use declaration and type patterns to check if the runtime type of an expression is compatible with a given type. With a declaration pattern, you can also declare a new local variable. When a declaration pattern matches an expression, that variable is assigned a converted expression result, as the following example shows:
+You use declaration and type patterns to check if the run-time type of an expression is compatible with a given type. With a declaration pattern, you can also declare a new local variable. When a declaration pattern matches an expression, that variable is assigned a converted expression result, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="BasicExample":::
 
 Beginning with C# 7.0, a *declaration pattern* with type `T` matches an expression when an expression result is non-null and any of the following conditions are true:
 
-- The runtime type of an expression result is `T`.
+- The run-time type of an expression result is `T`.
 
-- The runtime type of an expression result derives from type `T` or implements interface `T` or another [implicit reference conversion](~/_csharplang/spec/conversions.md#implicit-reference-conversions) exists from it to `T`. The following example demonstrates two cases when this condition is true:
+- The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharplang/spec/conversions.md#implicit-reference-conversions) exists from it to `T`. The following example demonstrates two cases when this condition is true:
 
   :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="ReferenceConversion":::
 
-  In the preceding example, at the first call to the `GetSourceLabel` method, the first pattern matches an argument value because the argument's runtime type `int[]` derives from the <xref:System.Array> type. At the second call to the `GetSourceLabel` method, the argument's runtime type <xref:System.Collections.Generic.List%601> doesn't derive from the <xref:System.Array> type but implements the <xref:System.Collections.Generic.ICollection%601> interface.
+  In the preceding example, at the first call to the `GetSourceLabel` method, the first pattern matches an argument value because the argument's run-time type `int[]` derives from the <xref:System.Array> type. At the second call to the `GetSourceLabel` method, the argument's run-time type <xref:System.Collections.Generic.List%601> doesn't derive from the <xref:System.Array> type but implements the <xref:System.Collections.Generic.ICollection%601> interface.
 
-- The runtime type of an expression result is a [nullable value type](../builtin-types/nullable-value-types.md) with the underlying type `T`.
+- The run-time type of an expression result is a [nullable value type](../builtin-types/nullable-value-types.md) with the underlying type `T`.
 
-- A [boxing](../../programming-guide/types/boxing-and-unboxing.md#boxing) or [unboxing](../../programming-guide/types/boxing-and-unboxing.md#unboxing) conversion exists from the runtime type of an expression result to type `T`.
+- A [boxing](../../programming-guide/types/boxing-and-unboxing.md#boxing) or [unboxing](../../programming-guide/types/boxing-and-unboxing.md#unboxing) conversion exists from the run-time type of an expression result to type `T`.
 
 The following example demonstrates the last two conditions:
 
@@ -68,7 +68,7 @@ Beginning with C# 9.0, for that purpose you can use a *type pattern*, as the fol
 
 :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="TypePattern":::
 
-Like a declaration pattern, a type pattern matches an expression when an expression result is non-null and its runtime type satisfies any of the conditions listed above.
+Like a declaration pattern, a type pattern matches an expression when an expression result is non-null and its run-time type satisfies any of the conditions listed above.
 
 For more information, see the [Declaration pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#declaration-pattern) and [Type pattern](~/_csharplang/proposals/csharp-9.0/patterns3.md#type-patterns) sections of the feature proposal notes.
 
@@ -150,7 +150,7 @@ Beginning with C# 8.0, you use a *property pattern* to match an expression's pro
 
 A property pattern matches an expression when an expression result is non-null and every nested pattern matches the corresponding property or field of the expression result.
 
-You can also add a runtime type check and a variable declaration to a property pattern, as the following example shows:
+You can also add a run-time type check and a variable declaration to a property pattern, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="WithTypeCheck":::
 
@@ -180,7 +180,7 @@ You can use the names of tuple elements and `Deconstruct` parameters in a positi
 
 You can also extend a positional pattern in any of the following ways:
 
-- Add a runtime type check and a variable declaration, as the following example shows:
+- Add a run-time type check and a variable declaration, as the following example shows:
 
   :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="WithTypeCheck":::
 

@@ -25,14 +25,14 @@ helpviewer_keywords:
 
 You can use the following operators and expressions to perform type checking or type conversion:
 
-- [is operator](#is-operator): to check if the runtime type of an expression is compatible with a given type
-- [as operator](#as-operator): to explicitly convert an expression to a given type if its runtime type is compatible with that type
+- [is operator](#is-operator): to check if the run-time type of an expression is compatible with a given type
+- [as operator](#as-operator): to explicitly convert an expression to a given type if its run-time type is compatible with that type
 - [cast expression](#cast-expression): to perform an explicit conversion
 - [typeof operator](#typeof-operator): to obtain the <xref:System.Type?displayProperty=nameWithType> instance for a type
 
 ## is operator
 
-The `is` operator checks if the runtime type of an expression result is compatible with a given type. Beginning with C# 7.0, the `is` operator also tests an expression result against a pattern.
+The `is` operator checks if the run-time type of an expression result is compatible with a given type. Beginning with C# 7.0, the `is` operator also tests an expression result against a pattern.
 
 The expression with the type-testing `is` operator has the following form
 
@@ -42,9 +42,19 @@ E is T
 
 where `E` is an expression that returns a value and `T` is the name of a type or a type parameter. `E` cannot be an anonymous method or a lambda expression.
 
-The `E is T` expression returns `true` if the result of `E` is non-null and can be converted to type `T` by a reference conversion, a boxing conversion, or an unboxing conversion; otherwise, it returns `false`. The `is` operator doesn't consider user-defined conversions.
+The `is` operator returns `true` when an expression result is non-null and any of the following conditions are true:
 
-The following example demonstrates that the `is` operator returns `true` if the runtime type of an expression result derives from a given type, that is, there exists a reference conversion between types:
+- The run-time type of an expression result is `T`.
+
+- The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharplang/spec/conversions.md#implicit-reference-conversions) exists from it to `T`.
+
+- The run-time type of an expression result is a [nullable value type](../builtin-types/nullable-value-types.md) with the underlying type `T` and the <xref:System.Nullable%601.HasValue?displayProperty=nameWithType> is `true`.
+
+- A [boxing](../../programming-guide/types/boxing-and-unboxing.md#boxing) or [unboxing](../../programming-guide/types/boxing-and-unboxing.md#unboxing) conversion exists from the run-time type of an expression result to type `T`.
+
+The `is` operator doesn't consider user-defined conversions.
+
+The following example demonstrates that the `is` operator returns `true` if the run-time type of an expression result derives from a given type, that is, there exists a reference conversion between types:
 
 [!code-csharp[is with reference conversion](snippets/shared/TypeTestingAndConversionOperators.cs#IsWithReferenceConversion)]
 
@@ -56,7 +66,7 @@ For information about C# conversions, see the [Conversions](~/_csharplang/spec/c
 
 ### Type testing with pattern matching
 
-Beginning with C# 7.0, the `is` operator also tests an expression result against a pattern. The following example shows how to use a [declaration pattern](patterns.md#declaration-and-type-patterns) to check the runtime type of an expression:
+Beginning with C# 7.0, the `is` operator also tests an expression result against a pattern. The following example shows how to use a [declaration pattern](patterns.md#declaration-and-type-patterns) to check the run-time type of an expression:
 
 [!code-csharp-interactive[is with declaration pattern](snippets/shared/TypeTestingAndConversionOperators.cs#IsDeclarationPattern)]
 
@@ -115,11 +125,11 @@ You can also use the `typeof` operator with unbound generic types. The name of a
 
 [!code-csharp-interactive[typeof unbound generic](snippets/shared/TypeTestingAndConversionOperators.cs#TypeOfUnboundGeneric)]
 
-An expression cannot be an argument of the `typeof` operator. To get the <xref:System.Type?displayProperty=nameWithType> instance for the runtime type of an expression result, use the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method.
+An expression cannot be an argument of the `typeof` operator. To get the <xref:System.Type?displayProperty=nameWithType> instance for the run-time type of an expression result, use the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method.
 
 ### Type testing with the `typeof` operator
 
-Use the `typeof` operator to check if the runtime type of the expression result exactly matches a given type. The following example demonstrates the difference between type checking performed with the `typeof` operator and the [is operator](#is-operator):
+Use the `typeof` operator to check if the run-time type of the expression result exactly matches a given type. The following example demonstrates the difference between type checking performed with the `typeof` operator and the [is operator](#is-operator):
 
 [!code-csharp[typeof vs is](snippets/shared/TypeTestingAndConversionOperators.cs#TypeCheckWithTypeOf)]
 

@@ -1,6 +1,6 @@
 ### Path APIs don't throw an exception for invalid characters
 
-APIs that involve file paths no longer validate path characters or throw an `M:System.ArgumentException> if an invalid character is found.
+APIs that involve file paths no longer validate path characters or throw an <xref:System.ArgumentException> if an invalid character is found.
 
 #### Change description
 

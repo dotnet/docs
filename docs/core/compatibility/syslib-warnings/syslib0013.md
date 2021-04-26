@@ -10,6 +10,8 @@ The <xref:System.Uri.EscapeUriString(System.String)?displayProperty=nameWithType
 
 <xref:System.Uri.EscapeUriString(System.String)?displayProperty=nameWithType> can corrupt the Uri string in some cases.
 
+For more information, see <https://github.com/dotnet/runtime/issues/31387>.
+
 ## Workarounds
 
 Use <xref:System.Uri.EscapeDataString(System.String)?displayProperty=nameWithType> for query string components instead.

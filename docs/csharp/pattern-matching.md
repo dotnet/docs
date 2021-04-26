@@ -2,7 +2,6 @@
 title: Pattern Matching overview - C# Guide
 description: Learn about pattern matching expressions in C#
 ms.date: 04/26/2021
-ms.topic: overview
 ms.technology: csharp-fundamentals
 ---
 

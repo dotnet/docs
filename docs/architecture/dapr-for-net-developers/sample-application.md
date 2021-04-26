@@ -13,6 +13,8 @@ The Traffic Control sample application simulates a highway traffic-control syste
 
 > **TODO** Integrate text from edwinvw/dapr-traffic-control
 
+> **TODO** Talk about how the solution can be run both self-hosted and in K8s. Also explain why we setup custom ports for each service.
+
 ## Application of Dapr building blocks
 
 ## Summary

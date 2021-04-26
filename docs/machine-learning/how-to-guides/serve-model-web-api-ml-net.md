@@ -16,7 +16,7 @@ Learn how to serve a pre-trained ML.NET machine learning model on the web using 
 
 - [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later or Visual Studio 2017 version 15.6 or later with the ".NET Core cross-platform development" workload installed.
 - PowerShell.
-- Pre-trained model. Use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model or download this [pre-trained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/master/machine-learning/models/sentimentanalysis/sentiment_model.zip)
+- Pre-trained model. Use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model or download this [pre-trained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/main/machine-learning/models/sentimentanalysis/sentiment_model.zip)
 
 ## Create ASP.NET Core Web API project
 
@@ -134,7 +134,7 @@ The model is identified by the `modelName` parameter so that more than one model
 >services.AddPredictionEnginePool<SentimentData, SentimentPrediction>()
 >   .FromUri(
 >       modelName: "SentimentAnalysisModel",
->       uri:"https://github.com/dotnet/samples/raw/master/machine-learning/models/sentimentanalysis/sentiment_model.zip",
+>       uri:"https://github.com/dotnet/samples/raw/main/machine-learning/models/sentimentanalysis/sentiment_model.zip",
 >       period: TimeSpan.FromMinutes(1));
 >```
 

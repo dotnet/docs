@@ -36,9 +36,9 @@ For more information on deconstructing user-defined types with discards, see [De
 
 ## Pattern matching with `switch`
 
-The *discard pattern* can be used in pattern matching with the [switch](language-reference/keywords/switch.md) keyword. Every expression always matches the discard pattern. (It can be used with [is](language-reference/keywords/is.md) expressions. However, that use is rare because the discard can be removed without changing its meaning).
+The *discard pattern* can be used in pattern matching with the [switch expression](language-reference/operators/switch-expression.md). Every expression, including `null`,  always matches the discard pattern.
 
-The following example defines a `ProvidesFormatInfo` method that uses [is](language-reference/keywords/is.md) statements to determine whether an object provides an <xref:System.IFormatProvider> implementation and tests whether the object is `null`. It also uses the discard pattern to handle non-null objects of any other type.
+The following example defines a `ProvidesFormatInfo` method that uses a `switch` expression to determine whether an object provides an <xref:System.IFormatProvider> implementation and tests whether the object is `null`. It also uses the discard pattern to handle non-null objects of any other type.
 
 :::code language="csharp" source="snippets/discards/discard-pattern2.cs" ID="DiscardSwitchExample" :::
 
@@ -79,5 +79,5 @@ Without assigning the task to a discard, the following code generates a compiler
 ## See also
 
 - [Deconstructing tuples and other types](deconstruct.md)
-- [`is` keyword](language-reference/keywords/is.md)
+- [`is` operator](language-reference/operators/is.md)
 - [`switch` keyword](language-reference/keywords/switch.md)

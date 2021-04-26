@@ -28,20 +28,20 @@ app.UseEndpoints(endpoints =>
 
 It's important to add the auth middleware in the appropriate order in the middleware pipeline. Only requests that make it to the middleware will be impacted by it. For instance, if a call to `UseStaticFiles()` was placed above the code shown here, it wouldn't be protected by authentication and authorization.
 
-In ASP.NET MVC and Web API, apps often refer to the current user using the `ClaimsPrincipal.Current` property. This property isn't set in ASP.NET Core, and any behavior in your app that depends on it will need to [migrate from ClaimsPrincipal.Current](https://docs.microsoft.com/aspnet/core/migration/claimsprincipal-current) by using the `User` property on `ControllerBase` or getting access to the current `HttpContext` and referencing its `User` property. If neither of these solutions is an option, services can request the User as an argument, in which case it must be supplied from elsewhere in the app, or the `IHttpContextAccessor` can be requested and used to get the `HttpContext`.
+In ASP.NET MVC and Web API, apps often refer to the current user using the `ClaimsPrincipal.Current` property. This property isn't set in ASP.NET Core, and any behavior in your app that depends on it will need to [migrate from ClaimsPrincipal.Current](/aspnet/core/migration/claimsprincipal-current) by using the `User` property on `ControllerBase` or getting access to the current `HttpContext` and referencing its `User` property. If neither of these solutions is an option, services can request the User as an argument, in which case it must be supplied from elsewhere in the app, or the `IHttpContextAccessor` can be requested and used to get the `HttpContext`.
 
 ## Authorization
 
-Authorization defines what a given user can do within the app. It's separate from authentication, which is concerned merely with identifying who the user is. ASP.NET Core provides a simple, declarative role and a rich, policy-based model for authorization. Specifying that a resource requires authorization is often as simple as adding the `[Authorize]` attribute to the action or controller. If you're migrating to Razor Pages from MVC views, you should [specify conventions for authorization when you configure Razor Pages in Startup](https://docs.microsoft.com/aspnet/core/security/authorization/razor-pages-authorization).
+Authorization defines what a given user can do within the app. It's separate from authentication, which is concerned merely with identifying who the user is. ASP.NET Core provides a simple, declarative role and a rich, policy-based model for authorization. Specifying that a resource requires authorization is often as simple as adding the `[Authorize]` attribute to the action or controller. If you're migrating to Razor Pages from MVC views, you should [specify conventions for authorization when you configure Razor Pages in Startup](/aspnet/core/security/authorization/razor-pages-authorization).
 
-Authorization in ASP.NET Core may be as simple as prohibiting anonymous users while allowing authenticated users. Or it can scale up to support role-based, claims-based, or policy-based authorization approaches. For more information on these approaches, see the documentation on [authorization in ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/authorization/introduction). You'll likely find that one of them is closely aligned with your current authorization approach.
+Authorization in ASP.NET Core may be as simple as prohibiting anonymous users while allowing authenticated users. Or it can scale up to support role-based, claims-based, or policy-based authorization approaches. For more information on these approaches, see the documentation on [authorization in ASP.NET Core](/aspnet/core/security/authorization/introduction). You'll likely find that one of them is closely aligned with your current authorization approach.
 
 ## References
 
-- [Security, Authentication, and Authorization with ASP.NET MVC](https://docs.microsoft.com/aspnet/mvc/overview/security/)
-- [Migrate Authentication and Identity to ASP.NET Core](https://docs.microsoft.com/aspnet/mvc/overview/security/)
-- [Migrate from ClaimsPrincipal.Current](https://docs.microsoft.com/aspnet/core/migration/claimsprincipal-current)
-- [Introduction to Authorization in ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/authorization/introduction)
+- [Security, Authentication, and Authorization with ASP.NET MVC](/aspnet/mvc/overview/security/)
+- [Migrate Authentication and Identity to ASP.NET Core](/aspnet/mvc/overview/security/)
+- [Migrate from ClaimsPrincipal.Current](/aspnet/core/migration/claimsprincipal-current)
+- [Introduction to Authorization in ASP.NET Core](/aspnet/core/security/authorization/introduction)
 
 >[!div class="step-by-step"]
 >[Previous](webapi-differences.md)

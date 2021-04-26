@@ -34,7 +34,7 @@ landingContent:
       - linkListType: get-started
         links:
           - text: .NET developer tools
-            url: tools.md
+            url: ./dotnet-dev-env-checklist.md
           - text: Authenticate your app
             url: authentication.md
           - text: Logging
@@ -51,7 +51,7 @@ landingContent:
             url: /samples/browse/?products=azure&languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb
       - linkListType: reference
         links:
-          - text: Azure libraries for .NET API reference 
+          - text: Azure libraries for .NET API reference
             url: /dotnet/api/overview/azure/?view=azure-dotnet
 
   - title: Build web apps
@@ -92,7 +92,7 @@ landingContent:
           - text: Run and debug a microservice in Kubernetes
             url: /azure/dev-spaces/quickstart-netcore-visualstudio
       - linkListType: learn
-        links: 
+        links:
           - text: Create and deploy a cloud-native ASP.NET Core microservice
             url: /learn/modules/microservices-aspnet-core/
       - linkListType: how-to-guide
@@ -174,7 +174,7 @@ landingContent:
           - text: Building event-based applications with Event Grid
             url: /azure/event-grid/overview
       - linkListType: quickstart
-        links:     
+        links:
           - text: Use Azure Queue Storage
             url: /azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet
           - text: Use Azure Service Bus queues
@@ -232,4 +232,4 @@ landingContent:
           - text: Containerized Docker application lifecycle with Microsoft platform and tools
             url: ../architecture/containerized-lifecycle/index.md
           - text: Modernize existing .NET applications with Azure cloud and Windows containers
-            url: /dotnet/architecture/modernize-with-azure-containers/
+            url: ../architecture/modernize-with-azure-containers/index.md

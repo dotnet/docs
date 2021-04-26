@@ -16,7 +16,7 @@ This tutorial teaches you how to install and use a local tool. You use a tool th
 * Complete the [first tutorial of this series](global-tools-how-to-create.md).
 * Install the .NET Core 2.1 runtime.
 
-  For this tutorial you install and use a tool that targets .NET Core 2.1, so you need to have that runtime installed on your machine. To install the 2.1 runtime, go to the [.NET Core 2.1 download page](https://dotnet.microsoft.com/download/dotnet-core/2.1) and find the runtime installation link in the **Run apps - Runtime** column.
+  For this tutorial you install and use a tool that targets .NET Core 2.1, so you need to have that runtime installed on your machine. To install the 2.1 runtime, go to the [.NET Core 2.1 download page](https://dotnet.microsoft.com/download/dotnet/2.1) and find the runtime installation link in the **Run apps - Runtime** column.
 
 ## Create a manifest file
 

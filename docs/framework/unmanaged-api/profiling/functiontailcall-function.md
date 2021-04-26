@@ -33,9 +33,8 @@ void __stdcall FunctionTailcall (
   
 ## Parameters
 
-- `funcID`
-
-  \[in] The identifier of the currently executing function that is about to make a tail call.
+`funcID`
+[in] The identifier of the currently executing function that is about to make a tail call.
 
 ## Remarks  
 

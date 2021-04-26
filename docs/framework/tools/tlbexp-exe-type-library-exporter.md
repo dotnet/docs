@@ -14,7 +14,7 @@ ms.assetid: a487d61b-d166-467b-a7ca-d8b52fbff42d
 
 The Type Library Exporter generates a type library that describes the types defined in a common language runtime assembly.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
   
  At the command prompt, type the following:  
   
@@ -87,9 +87,7 @@ HRESULT StructDispSafe([out, retval] SAFEARRAY(IDispatch*)* pRetVal);
   
  Because type libraries cannot accommodate all the information found in assemblies, Tlbexp.exe might discard some data during the export process. For an explanation of the transformation process and identification of the source of each piece of information emitted to a type library, see the [Assembly to Type Library Conversion Summary](/previous-versions/dotnet/netframework-4.0/xk1120c3(v=vs.100)).  
   
- Note that the Type Library Exporter exports methods that have <xref:System.TypedReference> parameters as `VARIANT`, even though the <xref:System.TypedReference> object has no meaning in unmanaged code. When you export methods that have <xref:System.TypedReference> parameters, the Type Library Exporter will not generate a warning or error and unmanaged code that uses the resulting type library will not run properly.  
-  
- The Type Library Exporter is supported on Microsoft Windows 2000 and later.  
+ Note that the Type Library Exporter exports methods that have <xref:System.TypedReference> parameters as `VARIANT`, even though the <xref:System.TypedReference> object has no meaning in unmanaged code. When you export methods that have <xref:System.TypedReference> parameters, the Type Library Exporter will not generate a warning or error and unmanaged code that uses the resulting type library will not run properly.
   
 ## Examples  
 
@@ -132,4 +130,4 @@ tlbexp Sample.dll
 - [Regasm.exe (Assembly Registration Tool)](regasm-exe-assembly-registration-tool.md)
 - [Assembly to Type Library Conversion Summary](/previous-versions/dotnet/netframework-4.0/xk1120c3(v=vs.100))
 - [Tlbimp.exe (Type Library Importer)](tlbimp-exe-type-library-importer.md)
-- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

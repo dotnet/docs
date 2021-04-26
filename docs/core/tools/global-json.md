@@ -147,9 +147,9 @@ The following example shows how to use the highest patch version installed of a 
 
 It's helpful to know which SDK versions are installed on your machine to set one in the *global.json* file. For more information on how to do that, see [How to check that .NET is already installed](../install/how-to-detect-installed-versions.md#check-sdk-versions).
 
-To install additional .NET SDK versions on your machine, visit the [Download .NET Core](https://dotnet.microsoft.com/download/dotnet-core) page.
+To install additional .NET SDK versions on your machine, visit the [Download .NET](https://dotnet.microsoft.com/download/dotnet) page.
 
-You can create a new the *global.json* file in the current directory by executing the [dotnet new](dotnet-new.md) command, similar to the following example:
+You can create a new *global.json* file in the current directory by executing the [dotnet new](dotnet-new.md) command, similar to the following example:
 
 ```dotnetcli
 dotnet new globaljson --sdk-version 3.0.100

@@ -22,7 +22,7 @@ The following CER-related APIs are obsolete:
 
 ## Workarounds
 
-- If you have applied a CER attribute to a method, remove the attribute. These attributes have no effect in .NET 5.0 and later versions.
+- If you have applied a CER attribute to a method, remove the attribute. These attributes have no effect in .NET 5 and later versions.
 
   ```csharp
   // REMOVE the attribute below.
@@ -38,7 +38,7 @@ The following CER-related APIs are obsolete:
   }
   ```
 
-- If you are calling `RuntimeHelpers.ProbeForSufficientStack` or `RuntimeHelpers.PrepareContractedDelegate`, remove the call. These calls have no effect in .NET 5.0 and later versions.
+- If you are calling `RuntimeHelpers.ProbeForSufficientStack` or `RuntimeHelpers.PrepareContractedDelegate`, remove the call. These calls have no effect in .NET 5 and later versions.
 
   ```csharp
   public void DoSomething()
@@ -50,7 +50,7 @@ The following CER-related APIs are obsolete:
   }
   ```
 
-- If you are calling `RuntimeHelpers.PrepareConstrainedRegions`, remove the call. This call has no effect in .NET 5.0 and later versions.
+- If you are calling `RuntimeHelpers.PrepareConstrainedRegions`, remove the call. This call has no effect in .NET 5 and later versions.
 
   ```csharp
   public void DoSomething_Old()

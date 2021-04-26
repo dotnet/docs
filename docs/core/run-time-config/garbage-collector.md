@@ -282,7 +282,7 @@ Example:
 - This setting only applies to 64-bit computers.
 - If the process is running inside a container that has a specified memory limit, the percentage is calculated as a percentage of that memory limit.
 - This setting is ignored if the [Per-object-heap limits](#per-object-heap-limits) are configured.
-- The default value, which only applies in certain cases, is the lesser of 20 MB or 75% of the memory limit on the container. The default value applies if:
+- The default value, which only applies in certain cases, is the greater of 20 MB or 75% of the memory limit on the container. The default value applies if:
 
   - The process is running inside a container that has a specified memory limit.
   - [System.GC.HeapHardLimit](#heap-limit) is not set.
@@ -371,7 +371,7 @@ The high memory load threshold can be adjusted by the `COMPlus_GCHighMemPercent`
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.HighMemoryPercent` | *decimal value* | .NET 5.0 |
-| **Environment variable** | `COMPlus_GCHighMemPercent` | *hexadecimal value* | |
+| **Environment variable** | `COMPlus_GCHighMemPercent` | *hexadecimal value* | .NET Core 3.0<br/>.NET Framework 4.7.2 |
 
 > [!TIP]
 > If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to set the high memory threshold to 75%, the values would be 75 for the JSON file and 0x4B or 4B for the environment variable.
@@ -466,7 +466,7 @@ Example:
 ## Standalone GC
 
 - Specifies a path to the library containing the garbage collector that the runtime intends to load.
-- For more information, see [Standalone GC loader design](https://github.com/dotnet/runtime/blob/master/docs/design/features/standalone-gc-loading.md).
+- For more information, see [Standalone GC loader design](https://github.com/dotnet/runtime/blob/main/docs/design/features/standalone-gc-loading.md).
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |

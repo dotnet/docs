@@ -17,4 +17,4 @@ You tried to place an ActiveX control on a form at design time or add a form to 
 ## See also
 
 - [Error Types](../../programming-guide/language-features/error-types.md)
-- [Talk to Us](/visualstudio/ide/feedback-options)
+- [Visual Studio feedback options](/visualstudio/ide/feedback-options)

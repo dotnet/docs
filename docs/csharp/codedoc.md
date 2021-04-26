@@ -1,11 +1,11 @@
 ---
-title: Documenting your code with XML comments
+title: Document your C# code with XML comments
 description: Learn how to document your code with XML documentation comments and generate an XML documentation file at compile time.
 ms.date: 01/21/2020
 ms.technology: csharp-fundamentals
 ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
 ---
-# Document your code with XML comments
+# Document your C# code with XML comments
 
 XML documentation comments are a special kind of comment, added above the definition of any user-defined type or member.
 They are special because they can be processed by the compiler to generate an XML documentation file at compile time.
@@ -29,7 +29,7 @@ You can generate the XML file at compile time by doing one of the following:
 
 - If you are developing an application using Visual Studio, right-click on the project and select **Properties**. In the properties dialog, select the **Build** tab, and check **XML documentation file**. You can also change the location to which the compiler writes the file.
 
-- If you are compiling a .NET application from the command line, add the [-doc compiler option](language-reference/compiler-options/doc-compiler-option.md) when compiling.  
+- If you are compiling a .NET application from the command line, add the [**DocumentationFile** compiler option](language-reference/compiler-options/output.md#documentationfile) when compiling.  
 
 XML documentation comments use triple forward slashes (`///`) and an XML formatted comment body. For example:
 

@@ -46,7 +46,7 @@ typedef enum
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)]
+ **.NET Framework Versions:** [!INCLUDE[net_core_30](../../../../includes/net-core-30-md.md)]
   
 ## See also
 

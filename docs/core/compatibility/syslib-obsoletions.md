@@ -1,11 +1,11 @@
 ---
 title: Obsolete features in .NET 5+
-description: Learn about APIs that are marked as obsolete in .NET 5.0 and later versions that produce SYSLIB compiler warnings.
+description: Learn about APIs that are marked as obsolete in .NET 5 and later versions that produce SYSLIB compiler warnings.
 ms.date: 10/20/2020
 ---
 # Obsolete features in .NET 5
 
-Starting in .NET 5.0, some APIs that are newly marked as obsolete make use of two new properties on <xref:System.ObsoleteAttribute>.
+Starting in .NET 5, some APIs that are newly marked as obsolete make use of two new properties on <xref:System.ObsoleteAttribute>.
 
 - The <xref:System.ObsoleteAttribute.DiagnosticId?displayProperty=nameWithType> property tells the compiler to generate build warnings using a custom diagnostic ID. The custom ID allows for obsoletion warning to be suppressed specifically and separately from one another. In the case of the .NET 5+ obsoletions, the format for the custom diagnostic ID is `SYSLIBxxxx`.
 

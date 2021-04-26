@@ -16,7 +16,7 @@ ms.date: 02/14/2020
 
 ```dotnetcli
 dotnet nuget push [<ROOT>] [-d|--disable-buffering] [--force-english-output]
-    [--interactive] [-k|--api-key <API_KEY>] [-n|--no-symbols true]
+    [--interactive] [-k|--api-key <API_KEY>] [-n|--no-symbols]
     [--no-service-endpoint] [-s|--source <SOURCE>] [--skip-duplicate]
     [-sk|--symbol-api-key <API_KEY>] [-ss|--symbol-source <SOURCE>]
     [-t|--timeout <TIMEOUT>]
@@ -58,7 +58,7 @@ The command pushes an existing package. It doesn't create a package. To create a
 
   The API key for the server.
 
-- **`-n|--no-symbols true`**
+- **`-n|--no-symbols`**
 
   Doesn't push symbols (even if present).
 
@@ -86,7 +86,7 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 - **`-t|--timeout <TIMEOUT>`**
 
-  Specifies the timeout for pushing to a server in seconds. Defaults to 300 seconds (5 minutes). Specifying 0 (zero seconds) applies the default value.
+  Specifies the timeout for pushing to a server in seconds. Defaults to 300 seconds (5 minutes). Specifying 0 applies the default value.
 
 ## Examples
 

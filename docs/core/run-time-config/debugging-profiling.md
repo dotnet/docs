@@ -39,7 +39,7 @@ ms.topic: reference
 
 - Specifies the path to the profiler DLL to load into the currently running process (or 32-bit or 64-bit process).
 - If more than one variable is set, the bitness-specific variables take precedence. They specify which bitness of profiler to load.
-- For more information, see [Finding the profiler library](https://github.com/dotnet/runtime/blob/master/docs/design/coreclr/profiling/Profiler%20Loading.md).
+- For more information, see [Finding the profiler library](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/profiling/Profiler%20Loading.md).
 
 | | Setting name | Values |
 | - | - | - |

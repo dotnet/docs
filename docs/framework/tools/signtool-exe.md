@@ -11,7 +11,7 @@ ms.assetid: 0c25ff6c-bff3-422e-b017-146a3ee86cb9
 
 Sign Tool is a command-line tool that digitally signs files, verifies signatures in files, and time-stamps files.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
+ This tool is automatically installed with Visual Studio. To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
 
 > [!Note]  
 > The Windows 10 SDK, Windows 10 HLK, Windows 10 WDK and Windows 10 ADK **builds 20236 and later** require specifying the digest algorithm. The SignTool `sign` command requires the `/fd` **file digest algorithm** and the `/td` **timestamp digest algorithm** option to be specified during signing and timestamping, respectively. A warning (error code 0, initially) will be thrown if `/fd` is not specified during signing and if `/td` is not specified during timestamping. In later versions of SignTool, the warning will become an error. SHA256 is recommended and considered to be more secure than SHA1 by the industry.  
@@ -225,4 +225,4 @@ signtool verify /c MyCatalog.cat SystemFile.dll
 ## See also
 
 - [Tools](index.md)
-- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

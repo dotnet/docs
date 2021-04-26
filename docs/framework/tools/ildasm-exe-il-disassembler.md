@@ -15,7 +15,7 @@ ms.assetid: db27f6b2-f1ec-499e-be3a-7eecf95ca42b
 
 The IL Disassembler is a companion tool to the IL Assembler (*Ilasm.exe*). *Ildasm.exe* takes a portable executable (PE) file that contains intermediate language (IL) code and creates a text file suitable as input to *Ilasm.exe*.
 
-This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
 
 At the command prompt, type the following:
 
@@ -182,4 +182,4 @@ A nested type must be preceded by its containing class, delimited by a forward s
 - [Tools](index.md)
 - [Ilasm.exe (IL Assembler)](ilasm-exe-il-assembler.md)
 - [Managed Execution Process](../../standard/managed-execution-process.md)
-- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

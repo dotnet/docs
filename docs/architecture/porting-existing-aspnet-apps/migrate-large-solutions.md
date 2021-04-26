@@ -16,7 +16,7 @@ In this chapter, you'll learn how create a migration plan for a large solution, 
 ## References
 
 - [What topics are important to migrating large MVC and Web API apps to .NET Core?](https://twitter.com/ardalis/status/1313669040859217921)
-- [Porting from .NET Framework to .NET Core](https://docs.microsoft.com/dotnet/core/porting/)
+- [Porting from .NET Framework to .NET Core](../../core/porting/index.md)
 
 >[!div class="step-by-step"]
 >[Previous](testing-differences.md)

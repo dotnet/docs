@@ -3,7 +3,7 @@ title: Implement a DisposeAsync method
 description: Learn how to implement DisposeAsync and DisposeAsyncCore methods to perform asynchronous resource cleanup.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/09/2020
+ms.date: 04/07/2021
 dev_langs:
   - "csharp"
 helpviewer_keywords:
@@ -16,6 +16,8 @@ helpviewer_keywords:
 The <xref:System.IAsyncDisposable?displayProperty=nameWithType> interface was introduced as part of C# 8.0. You implement the <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> method when you need to perform resource cleanup, just as you would when [implementing a Dispose method](implementing-dispose.md). One of the key differences however, is that this implementation allows for asynchronous cleanup operations. The <xref:System.IAsyncDisposable.DisposeAsync> returns a <xref:System.Threading.Tasks.ValueTask> that represents the asynchronous dispose operation.
 
 It is typical when implementing the <xref:System.IAsyncDisposable> interface that classes will also implement the <xref:System.IDisposable> interface. A good implementation pattern of the <xref:System.IAsyncDisposable> interface is to be prepared for either synchronous or asynchronous dispose. All of the guidance for implementing the dispose pattern also applies to the asynchronous implementation. This article assumes that you're already familiar with how to [implement a Dispose method](implementing-dispose.md).
+
+[!INCLUDE [disposables-and-dependency-injection](includes/disposables-and-dependency-injection.md)]
 
 ## DisposeAsync() and DisposeAsyncCore()
 
@@ -118,9 +120,9 @@ In the preceding example, each asynchronous clean up operation is implicitly sco
 
 ### Unacceptable pattern
 
-If an exception is thrown from the `AnotherAsyncDisposable` constructor, then `objOne` does not get properly disposed:
+The highlighted lines in the following code show what it means to have "stacked usings". If an exception is thrown from the `AnotherAsyncDisposable` constructor, then `objOne` does not get properly disposed.
 
-:::code language="csharp" id="dontdothis" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
+:::code language="csharp" id="dontdothis" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs" highlight="9-10":::
 
 > [!TIP]
 > Avoid this pattern as it could lead to unexpected behavior.
@@ -129,6 +131,7 @@ If an exception is thrown from the `AnotherAsyncDisposable` constructor, then `o
 
 For a dual implementation example of `IDisposable` and `IAsyncDisposable`, see the <xref:System.Text.Json.Utf8JsonWriter> source code [on GitHub](https://github.com/dotnet/runtime/blob/035b729d829368c2790d825bd02db14f0c0fd2ea/src/libraries/System.Text.Json/src/System/Text/Json/Writer/Utf8JsonWriter.cs#L297-L345).
 
+- [Disposal of services](../../core/extensions/dependency-injection-guidelines.md#disposal-of-services)
 - <xref:System.IAsyncDisposable>
 - <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType>
 - <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable,System.Boolean)>

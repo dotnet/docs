@@ -35,16 +35,16 @@ HRESULT ConditionalWeakTableElementReferences(
 
 ## Parameters
 
-`cRootRefs`\
+`cRootRefs`
 [in] The number of elements in the `keyRefIds`, `valueRefIds`, and `rootIds` arrays.
 
-`keyRefIds`\
+`keyRefIds`
 [in] An array of object IDs, each of which contains the `ObjectID` for the primary element in the dependent handle pair.
 
-`valueRefIds`\
+`valueRefIds`
 [in] An array of object IDs, each of which contains the `ObjectID` for the secondary element in the dependent handle pair. (`keyRefIds[i]` keeps `valueRefIds[i]` alive.)
 
-`rootIds`\
+`rootIds`
 [in] An array of `GCHandleID` values that point to an integer that contains additional information about the garbage collection root.
 
 None of the `ObjectID` values returned by the `ConditionalWeakTableElementReferences` method are valid during the callback itself, because the garbage collector may be in the process of moving objects from old to new locations. Therefore, profilers should not attempt to inspect objects during a `ConditionalWeakTableElementReferences` call. At `GarbageCollectionFinished`, all objects have been moved to their new locations, and inspection may be done.

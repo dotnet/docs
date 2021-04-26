@@ -80,7 +80,7 @@ Congratulations! You've used GPIO to blink an LED.
 
 ## Get the source code
 
-The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/BlinkTutorial) <span class="docon docon-navigate-external x-hidden-focus"></span>.
+The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/BlinkTutorial).
 
 ## Next steps
 

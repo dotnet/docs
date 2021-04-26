@@ -1,7 +1,7 @@
 ---
 title: "Main() Return Values - C# Programming Guide"
 description: Learn about Main() return values. See code examples, compiler-generated code, and view additional available resources.
-ms.date: 08/02/2017
+ms.date: 03/11/2021
 helpviewer_keywords: 
   - "Main method [C#], return values"
 ms.assetid: c2f5a1d8-1676-4bea-bc7e-44a97e72d5bc
@@ -9,15 +9,27 @@ ms.assetid: c2f5a1d8-1676-4bea-bc7e-44a97e72d5bc
 
 # Main() return values (C# Programming Guide)
 
-The `Main` method can return `void`:
+You can return an `int` from the `Main` method by defining the method in one of the following ways:
 
- [!code-csharp[csProgGuideMain#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#12)]
+| `Main` method code             | `Main` signature                             |
+|--------------------------------|----------------------------------------------|
+| No use of `args` or `await`    | `static int Main()`                          |
+| Uses `args`, no use of `await` | `static int Main(string[] args)`             |
+| No use of `args`, uses `await` | `static async Task<int> Main()`              |
+| Uses `args` and `await`        | `static async Task<int> Main(string[] args)` |
 
-It can also return an `int`:
+If the return value from `Main` is not used, returning `void` or `Task` allows for slightly simpler code.
 
- [!code-csharp[csProgGuideMain#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#13)]
+| `Main` method code             | `Main` signature                        |
+|--------------------------------|-----------------------------------------|
+| No use of `args` or `await`    | `static void Main()`                    |
+| Uses `args`, no use of `await` | `static void Main(string[] args)`       |
+| No use of `args`, uses `await` | `static async Task Main()`              |
+| Uses `args` and `await`        | `static async Task Main(string[] args)` |
 
-If the return value from `Main` is not used, returning `void` allows for slightly simpler code. However, returning an integer enables the program to communicate status information to other programs or scripts that invoke the executable file. The return value from `Main` is treated as the exit code for the process. If `void` is returned from `Main`, the exit code will be implicitly `0`. The following example shows how the return value from `Main` can be accessed.
+However, returning `int` or `Task<int>` enables the program to communicate status information to other programs or scripts that invoke the executable file.
+
+The following example shows how the exit code for the process can be accessed.
 
 ## Example
 
@@ -94,6 +106,6 @@ When the application entry point returns a `Task` or `Task<int>`, the compiler g
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [C# Reference](../index.md)
+- [C# Reference](../../language-reference/index.md)
 - [Main() and Command-Line Arguments](index.md)
 - [How to display command line arguments](./how-to-display-command-line-arguments.md)

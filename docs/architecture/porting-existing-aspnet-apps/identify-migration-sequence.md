@@ -15,7 +15,7 @@ Once you've identified the ASP.NET app to migrate and have its dependent project
 
 **Figure 3-1.** Project dependencies graph.
 
-Choose a particular front-end app, an ASP.NET MVC 5 / Web API 2 project. Identify its dependencies in the solution, and map out their dependencies until you have a complete list. A diagram like the one shown in Figure 3-1 may be useful when mapping out project dependencies. Visual Studio can produce a [dependency diagram for your solution](https://docs.microsoft.com/visualstudio/modeling/create-layer-diagrams-from-your-code), depending on which edition you're using. [The .NET Portability Analyzer](https://docs.microsoft.com/dotnet/standard/analyzers/portability-analyzer) can also produce dependency diagrams.
+Choose a particular front-end app, an ASP.NET MVC 5 / Web API 2 project. Identify its dependencies in the solution, and map out their dependencies until you have a complete list. A diagram like the one shown in Figure 3-1 may be useful when mapping out project dependencies. Visual Studio can produce a [dependency diagram for your solution](/visualstudio/modeling/create-layer-diagrams-from-your-code), depending on which edition you're using. [The .NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md) can also produce dependency diagrams.
 
 Figure 3-2 shows the installer for the [.NET Portability Analyzer Visual Studio extension](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer):
 
@@ -56,8 +56,8 @@ Watch an overview of how to employ this approach in this [dotNetConf presentatio
 
 - Migrate third-party NuGet dependencies
 - Migrate apps to use new *.csproj* file format
-- Migrate apps to ASP.NET Core (targeting .NET Framework)
 - Update internal NuGet dependencies to .NET Standard
+- Migrate apps to ASP.NET Core (targeting .NET Framework)
 - Update all apps to target .NET Core 3.1
 
 When automating a large suite of apps, it helps significantly if they follow consistent coding guidelines and project organization. Automation efforts rely on this consistency to be effective. In addition to parsing and migrating project files, common code patterns can be migrated automatically. Some code pattern examples include differences in how controller actions are declared or how they return results.
@@ -88,8 +88,8 @@ You can use the .NET Portability Analyzer to determine how compatible existing l
 
 ## References
 
-- [Porting from .NET Framework to .NET Core](https://docs.microsoft.com/dotnet/core/porting/)
-- [The .NET Portability Analyzer](https://docs.microsoft.com/dotnet/standard/analyzers/portability-analyzer)
+- [Porting from .NET Framework to .NET Core](../../core/porting/index.md)
+- [The .NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md)
 - [Channel 9: A Brief Look at the .NET Portability Analyzer (Video)](https://channel9.msdn.com/Blogs/Seth-Juarez/A-Brief-Look-at-the-NET-Portability-Analyzer)
 - [2 Years, 200 Apps: A .NET Core Migration at Scale (Video)](https://www.youtube.com/watch?v=C-2haqb60No)
 

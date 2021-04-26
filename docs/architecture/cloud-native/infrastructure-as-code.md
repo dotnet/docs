@@ -55,7 +55,7 @@ Within this template, one might define a storage container inside the resources 
 
 An ARM template can be parameterized with dynamic environment and configuration information. Doing so enables it to be reused to define different environments, such as development, QA, or production. Normally, the template creates all resources within a single Azure resource group. It's possible to define multiple resource groups in a single Resource Manager template, if needed. You can delete all resources in an environment by deleting the resource group itself. Cost analysis can also be run at the resource group level, allowing for quick accounting of how much each environment is costing.
 
-There are many examples or ARM templates available in the [Azure Quickstart Templates](https://github.com/Azure/azure-quickstart-templates) project on GitHub. They can help accelerate creating a new template or modifying an existing one.
+There are many examples of ARM templates available in the [Azure Quickstart Templates](https://github.com/Azure/azure-quickstart-templates) project on GitHub. They can help accelerate creating a new template or modifying an existing one.
 
 Resource Manager templates can be run in many of ways. Perhaps the simplest way is to simply paste them into the Azure portal. For experimental deployments, this method can be quick. They can also be run as part of a build or release process in Azure DevOps. There are tasks that will leverage connections into Azure to run the templates. Changes to Resource Manager templates are applied incrementally, meaning that to add a new resource requires just adding it to the template. The tooling will reconcile differences between the current resources and those defined in the template. Resources will then be created or altered so they match what is defined in the template.  
 
@@ -63,7 +63,7 @@ Resource Manager templates can be run in many of ways. Perhaps the simplest way 
 
 Cloud-native applications are often constructed to be `cloud agnostic`. Being so means the application isn't tightly coupled to a particular cloud vendor and can be deployed to any public cloud.
 
-[Terraform](https://www.terraform.io/) is commercial templating tool that can provision cloud-native applications across all the major cloud players: Azure, Google Cloud Platform, AWS, and AliCloud. Instead of using JSON as the template definition language, it uses the slightly more terse YAML.
+[Terraform](https://www.terraform.io/) is a commercial templating tool that can provision cloud-native applications across all the major cloud players: Azure, Google Cloud Platform, AWS, and AliCloud. Instead of using JSON as the template definition language, it uses the slightly more terse HCL (Hashicorp Configuration Language).
 
 An example Terraform file that does the same as the previous Resource Manager template (Figure 10-15) is shown in Figure 10-16:
 

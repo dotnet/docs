@@ -18,6 +18,8 @@ The library design emphasizes high performance and low memory allocation over an
 
 The library also provides classes for working with an in-memory document object model (DOM). This feature enables random read-only access of the elements in a JSON file or string.
 
+There are some limitations on what parts of the library that you can use from Visual Basic code. For more information, see [Visual Basic support](system-text-json-how-to.md#visual-basic-support).
+
 ## How to get the library
 
 * The library is built-in as part of the shared framework for .NET Core 3.0 and later versions.
@@ -26,6 +28,10 @@ The library also provides classes for working with an in-memory document object 
   * .NET Standard 2.0 and later versions
   * .NET Framework 4.7.2 and later versions
   * .NET Core 2.0, 2.1, and 2.2
+
+## Security information
+
+For information about security threats that were considered when designing <xref:System.Text.Json.JsonSerializer>, and how they can be mitigated, see [`System.Text.Json` Threat Model](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/docs/ThreatModel.md).
 
 ## Additional resources
 

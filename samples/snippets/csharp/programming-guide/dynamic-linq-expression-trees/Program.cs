@@ -85,8 +85,6 @@ var fixedQry = companyNames.OrderBy(x => x);
     // string? startsWith = /* ... */;
     // string? endsWith = /* ... */;
 
-    var qry = companyNamesSource;
-
     Expression<Func<string, bool>>? expr = PredicateBuilder.New<string>(false);
     var original = expr;
     if (!string.IsNullOrEmpty(startsWith))
@@ -101,9 +99,35 @@ var fixedQry = companyNames.OrderBy(x => x);
     {
         expr = x => true;
     }
-    qry = qry.Where(expr);
+
+    var qry = companyNamesSource.Where(expr);
     // </Compose_expressions>
 }
+
+{
+    // <Compiler_generated_expression_tree>
+    Expression<Func<string, bool>> expr = x => x.StartsWith("a");
+    // </Compiler_generated_expression_tree>
+}
+
+{
+    // <Factory_method_expression_tree_parameter>
+    ParameterExpression x = Parameter(typeof(string), "x");
+    // </Factory_method_expression_tree_parameter>
+
+    // <Factory_method_expression_tree_body>
+    Expression body = Call(
+        x,
+        typeof(string).GetMethod("StartsWith", new[] { typeof(string) })!,
+        Constant("a")
+    );
+    // </Factory_method_expression_tree_body>
+
+    // <Factory_method_expression_tree_lambda>
+    Expression<Func<string, bool>> expr = Lambda<Func<string, bool>>(body, x);
+    // </Factory_method_expression_tree_lambda>
+}
+
 
 {
     // <Factory_methods_expression_of_tdelegate>
@@ -177,6 +201,8 @@ var fixedQry = companyNames.OrderBy(x => x);
 {
     // This function has the logic for constructing the body of the TextFilter expression.
     (Expression? body, ParameterExpression? prm) constructBody(Type elementType, string term) {
+        if (string.IsNullOrEmpty(term)) { return (null, null); }
+
         PropertyInfo[] stringProperties =
             elementType.GetProperties()
                 .Where(x => x.PropertyType == typeof(string))
@@ -205,19 +231,19 @@ var fixedQry = companyNames.OrderBy(x => x);
     IQueryable TextFilter_Untyped(IQueryable source, string term)
     {
         if (string.IsNullOrEmpty(term)) { return source; }
-        Type type = source.ElementType;
+        Type elementType = source.ElementType;
 
         // The logic for building the ParameterExpression and the LambdaExpression's body is the same as in the previous example,
         // but has been refactored into the constructBody function.
-        (Expression? body, ParameterExpression? prm) = constructBody(type, term);
+        (Expression? body, ParameterExpression? prm) = constructBody(elementType, term);
         if (body is null) {return source;}
 
         Expression filteredTree = Call(
             typeof(Queryable),
             "Where",
-            new[] { source.ElementType },
+            new[] { elementType},
             source.Expression,
-            Lambda(body, prm)
+            Lambda(body, prm!)
         );
 
         return source.Provider.CreateQuery(filteredTree);
@@ -260,5 +286,7 @@ var fixedQry = companyNames.OrderBy(x => x);
     qry = TextFilter_Strings(qry, "abcd");
 }
 
+// <Entities>
 record Person(string LastName, string FirstName, DateTime DateOfBirth);
 record Car(string Model, int Year);
+// </Entities>

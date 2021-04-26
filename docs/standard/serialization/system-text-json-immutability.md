@@ -4,6 +4,9 @@ description: "Learn how to use immutable types and non-public accessors while se
 ms.date: 02/08/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
+dev_langs:
+  - "csharp"
+  - "vb"
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
@@ -21,6 +24,7 @@ This article shows how to use immutable types, public parameterized constructors
 `System.Text.Json` can use a public parameterized constructor, which makes it possible to deserialize an immutable class or struct. For a class, if the only constructor is a parameterized one, that constructor will be used. For a struct, or a class with multiple constructors, specify the one to use by applying the [[JsonConstructor]](xref:System.Text.Json.Serialization.JsonConstructorAttribute) attribute. When the attribute is not used, a public parameterless constructor is always used if present. The attribute can only be used with public constructors. The following example uses the `[JsonConstructor]` attribute:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/ImmutableTypes.cs" highlight="13":::
+:::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/ImmutableTypes.vb" :::
 
 The parameter names of a parameterized constructor must match the property names. Matching is case-insensitive, and the constructor parameter must match the actual property name even if you use [[JsonPropertyName]](xref:System.Text.Json.Serialization.JsonPropertyNameAttribute) to rename a property. In the following example, the name for the `TemperatureC` property is changed to `celsius` in the JSON, but the constructor parameter is still named `temperatureC`:
 
@@ -37,7 +41,7 @@ Records in C# 9 are also supported, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Records.cs":::
 
-For types that are immutable because all their property setters are non-public, see the following section about [non-public property accessors](#non-public-property-accessors).
+For types that are immutable because all their property setters are non-public, see the following section.
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -50,6 +54,7 @@ For types that are immutable because all their property setters are non-public, 
 To enable use of a non-public property accessor, use the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/NonPublicAccessors.cs" highlight="12,15":::
+:::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/NonPublicAccessors.vb" :::
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"

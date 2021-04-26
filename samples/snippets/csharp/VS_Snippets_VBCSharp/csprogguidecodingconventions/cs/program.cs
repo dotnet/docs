@@ -9,19 +9,24 @@ namespace Coding_Conventions_Examples
 {
     class Program
     {
-        //<snippet14>
-        // First, in class Program, define the delegate type and a method that
-        // has a matching signature.
+        //<snippet14a>
+        public static Action<string> ActionExample1 = x => Console.WriteLine($"x is: {x}");
 
-        // Define the type.
+        public static Action<string, string> ActionExample2 = (x, y) => 
+            Console.WriteLine($"x is: {x}, y is {y}");
+
+        public static Func<string, int> FuncExample1 = x => Convert.ToInt32(x);
+
+        public static Func<int, int, int> FuncExample2 = (x, y) => x + y;
+        //</snippet14a>
+        //<snippet14b>
         public delegate void Del(string message);
 
-        // Define a method that has a matching signature.
         public static void DelMethod(string str)
         {
             Console.WriteLine("DelMethod argument: {0}", str);
         }
-        //</snippet14>
+        //</snippet14b>
 
         static void Main(string[] args)
         {
@@ -71,23 +76,16 @@ namespace Coding_Conventions_Examples
             //</snippet7>
 
             //<snippet8>
-            // When the type of a variable is clear from the context, use var
-            // in the declaration.
             var var1 = "This is clearly a string.";
             var var2 = 27;
             //</snippet8>
 
             //<snippet9>
-            // When the type of a variable is not clear from the context, use an
-            // explicit type. You generally don't assume the type clear from a method name.
-            // A variable type is considered clear if it's a new operator or an explicit cast.
-            int var3 = Convert.ToInt32(Console.ReadLine());
+            int var3 = Convert.ToInt32(Console.ReadLine()); 
             int var4 = ExampleClass.ResultSoFar();
             //</snippet9>
 
             //<snippet10>
-            // Naming the following variable inputInt is misleading.
-            // It is a string.
             var inputInt = Console.ReadLine();
             Console.WriteLine(inputInt);
             //</snippet10>
@@ -113,39 +111,44 @@ namespace Coding_Conventions_Examples
             Console.WriteLine();
             //</snippet12>
 
-            //<snippet13>
-            // Preferred syntax. Note that you cannot use var here instead of string[].
+            //<snippet13a>
             string[] vowels1 = { "a", "e", "i", "o", "u" };
-
-            // If you use explicit instantiation, you can use var.
+            //</snippet13a>
+            //<snippet13b>
             var vowels2 = new string[] { "a", "e", "i", "o", "u" };
-
-            // If you specify an array size, you must initialize the elements one at a time.
+            //</snippet13b>
+            //<snippet13c>
             var vowels3 = new string[5];
             vowels3[0] = "a";
             vowels3[1] = "e";
             // And so on.
-            //</snippet13>
+            //</snippet13c>
 
-            //<snippet15>
-            // In the Main method, create an instance of Del.
 
-            // Preferred: Create an instance of Del by using condensed syntax.
+            //<snippet15a>
+            ActionExample1("string for x");
+
+            ActionExample2("string for x", "string for y");
+
+            Console.WriteLine($"The value is {FuncExample1("1")}");
+
+            Console.WriteLine($"The sum is {FuncExample2(1, 2)}");
+            //</snippet15a>
+            //<snippet15b>
             Del exampleDel2 = DelMethod;
-
-            // The following declaration uses the full syntax.
+            exampleDel2("Hey");
+            //</snippet15b>
+            //<snippet15c>
             Del exampleDel1 = new Del(DelMethod);
-            //</snippet15>
-
             exampleDel1("Hey");
-            exampleDel2(" hey");
+            //</snippet15c>
+
 
             // #16 is below Main.
             Console.WriteLine(GetValueFromArray(vowels1, 1));
 
             // 17 requires System.Drawing
-            //<snippet17>
-            // This try-finally statement only calls Dispose in the finally block.
+            //<snippet17a>
             Font font1 = new Font("Arial", 10.0f);
             try
             {
@@ -158,26 +161,25 @@ namespace Coding_Conventions_Examples
                     ((IDisposable)font1).Dispose();
                 }
             }
-
-            // You can do the same thing with a using statement.
+            //</snippet17a>
+            //<snippet17b>
             using (Font font2 = new Font("Arial", 10.0f))
             {
-                byte charset = font2.GdiCharSet;
+                byte charset2 = font2.GdiCharSet;
             }
-            //</snippet17>
+            //</snippet17b>
+            //<snippet17c>
+            using Font font3 = new Font("Arial", 10.0f);
+            byte charset3 = font3.GdiCharSet;
+            //</snippet17c>
 
             //<snippet18>
             Console.Write("Enter a dividend: ");
-            var dividend = Convert.ToInt32(Console.ReadLine());
+            int dividend = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Enter a divisor: ");
-            var divisor = Convert.ToInt32(Console.ReadLine());
+            int divisor = Convert.ToInt32(Console.ReadLine());
 
-            // If the divisor is 0, the second clause in the following condition
-            // causes a run-time error. The && operator short circuits when the
-            // first expression is false. That is, it does not evaluate the
-            // second expression. The & operator evaluates both, and causes
-            // a run-time error when divisor is 0.
             if ((divisor != 0) && (dividend / divisor > 0))
             {
                 Console.WriteLine("Quotient: {0}", dividend / divisor);
@@ -188,30 +190,31 @@ namespace Coding_Conventions_Examples
             }
             //</snippet18>
 
+
             //<snippet19>
             var instance1 = new ExampleClass();
             //</snippet19>
+            // Can't show `ExampleClass instance1 = new()` because this projet targets net48.
 
             //<snippet20>
             ExampleClass instance2 = new ExampleClass();
             //</snippet20>
 
-            //<snippet21>
-            // Object initializer.
+            //<snippet21a>
             var instance3 = new ExampleClass { Name = "Desktop", ID = 37414,
                 Location = "Redmond", Age = 2.3 };
-
-            // Default constructor and assignment statements.
+            //</snippet21a>
+            //<snippet21b>
             var instance4 = new ExampleClass();
             instance4.Name = "Desktop";
             instance4.ID = 37414;
             instance4.Location = "Redmond";
             instance4.Age = 2.3;
-            //</snippet21>
+            //</snippet21b>
 
             // #22 and #23 are in Coding_Conventions_WF, below.
 
-            // Save 24 in case we add an exxample to Static Members.
+            // Save 24 in case we add an example to Static Members.
 
             ExampleClass.totalInstances = 1;
 
@@ -386,7 +389,6 @@ namespace Coding_Conventions_Examples
         };
 
             //<snippet30>
-            // Use a compound from to access the inner sequence within each element.
             var scoreQuery = from student in students
                              from score in student.Scores
                              where score > 90
@@ -414,7 +416,6 @@ namespace Coding_Conventions_WF2
         //<snippet22>
         public Form2()
         {
-            // You can use a lambda expression to define an event handler.
             this.Click += (s, e) =>
                 {
                     MessageBox.Show(
@@ -434,7 +435,6 @@ namespace Coding_Conventions_WF2
     public partial class Form1 : Form
     {
         //<snippet23>
-        // Using a lambda expression shortens the following traditional definition.
         public Form1()
         {
             this.Click += new EventHandler(Form1_Click);

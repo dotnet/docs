@@ -1,9 +1,12 @@
 ---
 title: How to preserve references with System.Text.Json
 description: "Learn how to preserve references and handle circular references while serializing to and deserializing from JSON in .NET."
-ms.date: 12/09/2020
+ms.date: 01/12/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
+dev_langs:
+  - "csharp"
+  - "vb"
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
@@ -28,6 +31,7 @@ To preserve references and handle circular references, set <xref:System.Text.Jso
 The following code illustrates use of the `Preserve` setting.
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferences.cs" highlight="34":::
+:::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/PreserveReferences.vb" :::
 
 This feature can't be used to preserve value types or immutable types. On deserialization, the instance of an immutable type is created after the entire payload is read. So it would be impossible to deserialize the same instance if a reference to it appears within the JSON payload.
 
@@ -38,6 +42,29 @@ To determine if objects are equal, System.Text.Json uses <xref:System.Collection
 For more information about how references are serialized and deserialized, see <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A?displayProperty=nameWithType>.
 
 The <xref:System.Text.Json.Serialization.ReferenceResolver> class defines the behavior of preserving references on serialization and deserialization. Create a derived class to specify custom behavior. For an example, see [GuidReferenceResolver](https://github.com/dotnet/docs/blob/9d5e88edbd7f12be463775ffebbf07ac8415fe18/docs/standard/serialization/snippets/system-text-json-how-to-5-0/csharp/GuidReferenceResolverExample.cs).
+
+## Persist reference metadata across multiple serialization and deserialization calls
+
+By default, reference data is only cached for each call to <xref:System.Text.Json.JsonSerializer.Serialize%2A> or <xref:System.Text.Json.JsonSerializer.Deserialize%2A>. To persist references from one `Serialize`/`Deserialize` call to another one, root the <xref:System.Text.Json.Serialization.ReferenceResolver> instance in the call site of `Serialize`/`Deserialize`. The following code shows an example for this scenario:
+
+* You have a list of `Employee`s and you have to serialize each one individually.
+* you want to take advantage of the references saved in the `ReferenceHandler`'s resolver.
+
+Here is the `Employee` class:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferencesMultipleCalls.cs" id="Employee":::
+
+A class that derives from <xref:System.Text.Json.Serialization.ReferenceResolver> stores the references in a dictionary:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferencesMultipleCalls.cs" id="MyReferenceResolver":::
+
+A class that derives from <xref:System.Text.Json.Serialization.ReferenceHandler> holds an instance of `MyReferenceResolver` and creates a new instance only when needed (in a method named `Reset` in this example):
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferencesMultipleCalls.cs" id="MyReferenceHandler":::
+
+When the sample code calls the serializer, it uses a <xref:System.Text.Json.JsonSerializerOptions> instance in which the <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler> property is set to an instance of `MyReferenceHandler`. When you follow this pattern, be sure to reset the `ReferenceResolver` dictionary when you're finished serializing, to keep it from growing forever.
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferencesMultipleCalls.cs" id="CallSerializer" highlight = "3-4,14":::
 
 ::: zone-end
 

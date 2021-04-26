@@ -224,7 +224,7 @@ class Person
 
 Since a <xref:System.Memory%601> instance may be backed by either managed or unmanaged memory, the owner must call `Dispose` on <xref:System.Buffers.IMemoryOwner%601> when work performed on the <xref:System.Memory%601> instance is complete. Alternatively, the owner may transfer ownership of the <xref:System.Buffers.IMemoryOwner%601> instance to a different component, at which point the acquiring component becomes responsible for calling `Dispose` at the appropriate time (more on this later).
 
-Failure to call the `Dispose` on an <xref:System.Buffers.IMemoryOwner%601> instance may lead to unmanaged memory leaks or other performance degradation.
+Failure to call the `Dispose` method on an <xref:System.Buffers.IMemoryOwner%601> instance may lead to unmanaged memory leaks or other performance degradation.
 
 This rule also applies to code that calls factory methods like <xref:System.Buffers.MemoryPool%601.Rent%2A?displayProperty=nameWithType>. The caller becomes the owner of the returned <xref:System.Buffers.IMemoryOwner%601> and is responsible for disposing of the instance when finished.
 

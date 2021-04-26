@@ -15,13 +15,13 @@ But, first a little history.
 
 Several years ago, Microsoft, in partnership with leading community experts, released a popular guidance book, entitled [.NET Microservices for Containerized .NET Applications](https://dotnet.microsoft.com/download/e-book/microservices-architecture/pdf). Figure 11-1 shows the book:
 
-![Architecting containerized microservice .NET applications.](./media/reference-application/architecting-microservices-book.png)
+:::image type="content" source="./media/reference-application/architecting-microservices-book.png" alt-text="Architecting containerized microservice .NET applications.":::
 
 **Figure 11-1**. .NET Microservices: Architecture for Containerized .NET Applications.
 
 The book dove deep into the principles, patterns, and best practices for building distributed applications. It included a full-featured microservice reference application that showcased the architectural concepts. Entitled, [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers), the application shows an e-Commerce storefront that sells various .NET items, including clothing and coffee mugs.  Built in .NET Core, the application is cross-platform and can run in either Linux or Windows containers. Figure 11-2 shows the original eShop architecture.
 
-![eShopOnContainers reference application architecture.](./media/reference-application/eshop-on-containers.png)
+:::image type="content" source="./media/reference-application/eshop-on-containers.png" alt-text="eShopOnContainers reference application architecture.":::
 
 **Figure 11-2**. Original ShopOnContainers reference application.
 
@@ -38,7 +38,7 @@ The eShopOnContainers reference application has been widely accepted across the 
 
 An alternative version of the eShop application accompanies this book. It's called [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr). The updated version evolves the earlier eShopOnContainers application by integrating Dapr building blocks. Figure 11-3 shows the new streamlined solution architecture:  
 
-![eShopOnDapr reference application architecture.](./media/reference-application/eshop-on-dapr.png)
+:::image type="content" source="./media/reference-application/eshop-on-dapr.png" alt-text="eShopOnDapr reference application architecture.":::
 
 **Figure 11-3**. eShopOnDapr reference application architecture.
 
@@ -52,13 +52,13 @@ As the focus of the eShopOnDapr reference application is on Dapr, the original a
 
 1. The set of core back-end microservices includes functionality required for an e-Commerce store. Each is self-contained and independent of the others. Following widely accepted domain decomposing patterns, each microservice isolates a specific *business capability*:
 
-   - The basket service manages the customer's shopping basket experience.
-   - The catalog service manages product items available for sale.
-   - The identity service manages authentication and identity.
-   - The ordering service handles all aspects of placing and managing orders.
-   - The payment service transacts the customer's payment.
+    - The basket service manages the customer's shopping basket experience.
+    - The catalog service manages product items available for sale.
+    - The identity service manages authentication and identity.
+    - The ordering service handles all aspects of placing and managing orders.
+    - The payment service transacts the customer's payment.
 
-   Each service has its own persistent storage. Adhering to microservice [best practices](../cloud-native/distributed-data.md#database-per-microservice-why), there's not a shared datastore with which all services interact.
+    Each service has its own persistent storage. Adhering to microservice [best practices](../cloud-native/distributed-data.md#database-per-microservice-why), there's not a shared datastore with which all services interact.
 
 1. Finally, the event bus wraps the Dapr publish/subscribe components. It enables asynchronous publish/subscribe messaging across microservices. Developers can plug in any Dapr-supported message broker.
 
@@ -68,7 +68,7 @@ The eShopOnDapr codebase is more streamlined than the eShopOnContainers codebase
 
 Figure 11-4 shows the Dapr integration in the eShop reference application.
 
-![eShopOnDapr reference application architecture](./media/reference-application/eshop-on-dapr-buildingblocks.png)
+:::image type="content" source="./media/reference-application/eshop-on-dapr-buildingblocks.png" alt-text="eShopOnDapr reference application architecture":::
 
 **Figure 11-4**. Dapr integration in eShopOnDapr.
 
@@ -119,15 +119,15 @@ This code uses the third-party `StackExchange.Redis` NuGet package. The followin
 
 1. Inject a `ConnectionMultiplexer` into the constructor. The `ConnectionMultiplexer` is registered with the dependency injection framework in the `Startup.cs` file:
 
-   ```csharp
-   services.AddSingleton<ConnectionMultiplexer>(sp =>
-   {
-       var settings = sp.GetRequiredService<IOptions<BasketSettings>>().Value;
-       var configuration = ConfigurationOptions.Parse(settings.ConnectionString, true);
-       configuration.ResolveDns = true;
-       return ConnectionMultiplexer.Connect(configuration);
-   });
-   ```
+    ```csharp
+    services.AddSingleton<ConnectionMultiplexer>(sp =>
+    {
+        var settings = sp.GetRequiredService<IOptions<BasketSettings>>().Value;
+        var configuration = ConfigurationOptions.Parse(settings.ConnectionString, true);
+        configuration.ResolveDns = true;
+        return ConnectionMultiplexer.Connect(configuration);
+    });
+    ```
 
 1. Use the `ConnectionMultiplexer` to create an `IDatabase` instance in each consuming class.
 
@@ -192,7 +192,7 @@ The Dapr implementation also simplifies changing the underlying data store. For 
 
 The original eShopOnContainers used a mix of HTTP/REST and gRPC services. The use of gRPC was limited to communication between an [aggregator service](../cloud-native/service-to-service-communication.md#service-aggregator-pattern) and core back-end services. Figure 11-5 shows the original architecture:
 
-![gRPC and HTTP/REST calls in eShopOnContainers](./media/reference-application/service-invocation-eshop-on-containers.png)
+:::image type="content" source="./media/reference-application/service-invocation-eshop-on-containers.png" alt-text="gRPC and HTTP/REST calls in eShopOnContainers.":::
 
 **Figure 11-5**. gRPC and HTTP/REST calls in eShopOnContainers.
 
@@ -208,7 +208,7 @@ Note the steps from the previous figure:
 
 In the updated eShopOnDapr implementation, Dapr sidecars are added to the services and API gateway. Figure 11-6 show the updated architecture:
 
-![gRPC and HTTP/REST calls with sidecars in eShopOnContainers](./media/reference-application/service-invocation-eshop-on-dapr.png)
+:::image type="content" source="./media/reference-application/service-invocation-eshop-on-dapr.png" alt-text="gRPC and HTTP/REST calls with sidecars in eShopOnContainers.":::
 
 **Figure 11-6**. Updated eShop architecture using Dapr.
 
@@ -295,7 +295,7 @@ GET http://localhost/api/v1/catalog/items?pageSize=20
 
 Most calls from the eShop front end are simple CRUD calls. The API gateway forwards them to a single service for processing. Some scenarios, however, require multiple back-end services to work together to complete a request. For these more complex calls, eShop uses the web shopping aggregator service to mediate the workflow across multiple services. Figure 11-7 show the processing sequence of adding an item to your shopping basket:
 
-![Update basket sequence diagram](./media/reference-application/service-invocation-complex-call.png)
+:::image type="content" source="./media/reference-application/service-invocation-complex-call.png" alt-text="Update basket sequence diagram.":::
 
 **Figure 11-7**. Update shopping basket sequence.
 
@@ -563,7 +563,7 @@ Observability in eShopOnDapr consists of several parts. Telemetry from all of th
 
 The **WebStatus** project in eShopOnDapr is a custom health dashboard that gives insight into the health of the eShop services. This dashboard doesn't use the Dapr health API but uses the built-in [health checks mechanism](/aspnet/core/host-and-deploy/health-checks) of ASP.NET Core. The dashboard not only provides the health status of the services, but also the health of the dependencies of the services. For example, a service that uses a database also provides the health status of this database as shown in the following screenshot:
 
-![eShopOnDapr custom health dashboard](./media/reference-application/observability-eshop-health-dashboard.png)
+:::image type="content" source="./media/reference-application/observability-eshop-health-dashboard.png" alt-text="eShopOnDapr custom health dashboard.":::
 
 #### Seq log aggregator
 
@@ -610,17 +610,17 @@ The configuration file references the local store file `eshop-secretstore.json` 
 The `components` folder is specified in the command-line and mounted as a local folder inside the Dapr sidecar container. Here's a snippet from the `docker-compose.override.yml` file in the repository root that specifies the volume mount:
 
 ```yaml
-  ordering-backgroundtasks-dapr:
-    command: ["./daprd",
-      "-app-id", "ordering-backgroundtasks",
-      "-app-port", "80",
-      "-dapr-grpc-port", "50004",
-      "-components-path", "/components",
-      "-config", "/configuration/eshop-config.yaml"
-      ]
-    volumes:
-      - "./dapr/components/:/components"
-      - "./dapr/configuration/:/configuration"
+ordering-backgroundtasks-dapr:
+  command: ["./daprd",
+    "-app-id", "ordering-backgroundtasks",
+    "-app-port", "80",
+    "-dapr-grpc-port", "50004",
+    "-components-path", "/components",
+    "-config", "/configuration/eshop-config.yaml"
+  ]
+  volumes:
+  - "./dapr/components/:/components"
+  - "./dapr/configuration/:/configuration"
 ```
 
 > [!NOTE]

@@ -36,6 +36,10 @@
         items:
         - name: Nullability annotation changes
           href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
+      - name: Networking
+        items:
+        - name: WebRequest, WebClient, and ServicePoint are deprecated
+          href: networking/6.0/webrequest-deprecated.md
       - name: Windows Forms
         items:
         - name: APIs throw ArgumentNullException
@@ -548,6 +552,10 @@
         href: msbuild.md
     - name: Networking
       items:
+      - name: .NET 6.0
+        items:
+        - name: WebRequest, WebClient, and ServicePoint are deprecated
+          href: networking/6.0/webrequest-deprecated.md
       - name: .NET 5.0
         items:
         - name: Cookie path handling conforms to RFC 6265

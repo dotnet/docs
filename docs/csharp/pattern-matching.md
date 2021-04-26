@@ -9,7 +9,89 @@ ms.technology: csharp-fundamentals
 
 *Pattern matching* is a technique where you test an expression to determine if has certain characteristics. C# pattern matching provides provides more concise syntax for testing expressions and taking action when an expression matches. The [`is`](language-reference/keywords/is.md) expression now supports pattern matching to test an expression and conditionally declare a new variable to the result of that expression. The [`switch`](language-reference/operators/switch-expression.md) expression enables you perform actions based on the first matching pattern for an expression. These two expressions support a rich vocabulary of [*patterns*](language-reference/operators/patterns.md). You have a rich vocabulary to express your algorithms.
 
-This article provides an overview of techniques available using pattern matching.
+This article provides an overview of scenarios where you can use pattern matching to improve the readability and correctness of your code. For a full discussion of all the patterns you can apply, see the article on [patterns](language-reference/operators/patterns.md) in the language reference.
+
+## Null checks
+
+One of the most common scenarios for pattern matching is to ensure values aren't null. You can test and convert a nullable value type to its underlying type while testing for `null` using the following example:
+
+```csharp
+int? maybe = 12;
+
+if (maybe is int number)
+{
+    Console.WriteLine($"The nullable int 'maybe' has the value {number}");
+} else
+{
+   Console.WriteLine("The nullable int 'maybe' doesn't hold a value");
+}
+```
+
+The preceding code is a [*declaration pattern*](language-reference/patterns.md#declaration-and-type-patterns) to test the type of the variable, and assign it to a new variable. The language rules make this technique safer than many others. The variable `number` is only accessible and assigned in the true portion of the `if` clause. If you try to access it elsewhere, either in the `else` clause, or after the `if` block, the compiler issues an error. Secondly, because you're not using the `==` operator, this pattern works when a type has overridden the `==` operator. That makes it an ideal way to check null reference values, adding the the `not` pattern:
+
+```csharp
+string? message = "This is not the null string";
+
+if (message is not null)
+{
+    Console.WriteLine(message);
+}
+```
+
+The preceding example used a [*constant pattern*](language-reference/patterns.md#constant-pattern) to compare the variable to `null`. The `not` is a [*logical pattern*]((language-reference/patterns.md#logical-patterns) that negates the match expression.
+
+## Type tests
+
+-- Use an idisposable test.
+
+## Compare discrete values
+
+-- enum
+
+Enum value to Method....
+
+
+-- string
+
+Message text to method....
+
+-- Number
+
+Ranges to warning message.
+
+## Ranges
+
+-- temperature and water state.
+```csharp
+string WaterState(int tempInFahrenheit) =>
+    tempInFarhenheit switch
+    {
+        > 32 and < 212 => "liquid",
+        < 32 => "solid",
+        > 212 => "gas",
+        // check for warnings.
+        32 => "solid/liquid transition",
+        212 => "liquid / gas transition",
+    }
+```
+
+## Multiple inputs
+
+-- Customer discounts based on items, total price.
+
+```csharp
+public double CalculateDiscount(Order order) =>
+order switch
+{
+    (>10, >1000) => 0.10,
+    (>5, >500) => 0.05,
+    (_, > 250) => 0.02,
+    _ => 0,
+}
+```
+
+
+=======================================
 
 ## Testing and declaring types
 

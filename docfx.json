@@ -218,7 +218,10 @@
         "docs/fundamentals/code-analysis/style-rules/**.md": "reference",
         "docs/fundamentals/code-analysis/diagnostics/**.md": "reference",
         "docs/standard/**/*how-to*.md": "how-to",
-        "docs/standard/base-types/*.md": "how-to"
+        "docs/standard/base-types/*.md": "how-to",
+        "docs/visual-basic/language-reference/**/*.md": "reference",
+        "docs/visual-basic/reference/**/*.md": "reference",
+        "docs/visual-basic/misc/bc*.md": "reference"
       },
       "dev_langs": {
         "docs/fsharp/**/**.md": ["fsharp"],

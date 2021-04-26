@@ -61,6 +61,10 @@ items:
           href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
+      - name: Networking
+        items:
+        - name: WebRequest, WebClient, and ServicePoint are obsolete
+          href: networking/6.0/webrequest-deprecated.md
       - name: Windows Forms
         items:
         - name: APIs throw ArgumentNullException
@@ -539,7 +543,7 @@ items:
           href: core-libraries/5.0/vector-lerp-behavior-change.md
         - name: Vector<T> throws NotSupportedException
           href: core-libraries/5.0/vectort-throws-notsupportedexception.md
-      - name: .NET 1.0-3.1
+      - name: .NET Core 1.0-3.1
         href: corefx.md
     - name: Cryptography
       items:
@@ -575,7 +579,7 @@ items:
           href: globalization/5.0/unicode-categories-for-latin1-chars.md
         - name: ListSeparator values changed
           href: globalization/5.0/listseparator-value-change.md
-      - name: .NET 3.0
+      - name: .NET Core 3.0
         href: globalization.md
     - name: Interop
       items:
@@ -603,6 +607,10 @@ items:
         href: msbuild.md
     - name: Networking
       items:
+      - name: .NET 6
+        items:
+        - name: WebRequest, WebClient, and ServicePoint are obsolete
+          href: networking/6.0/webrequest-deprecated.md
       - name: .NET 5
         items:
         - name: Cookie path handling conforms to RFC 6265
@@ -615,7 +623,7 @@ items:
           href: networking/5.0/negotiatestream-sslstream-dont-fail-on-successive-begin-calls.md
         - name: WinHttpHandler removed from .NET runtime
           href: networking/5.0/winhttphandler-removed-from-runtime.md
-      - name: .NET 2.0-3.0
+      - name: .NET Core 2.0-3.0
         href: networking.md
     - name: Security
       items:
@@ -722,3 +730,15 @@ items:
       href: syslib-warnings/syslib0011.md
     - name: SYSLIB0012
       href: syslib-warnings/syslib0012.md
+    - name: SYSLIB0013
+      href: syslib-warnings/syslib0013.md
+    - name: SYSLIB0014
+      href: syslib-warnings/syslib0014.md
+    - name: SYSLIB0015
+      href: syslib-warnings/syslib0015.md
+    - name: SYSLIB0016
+      href: syslib-warnings/syslib0016.md
+    - name: SYSLIB0019
+      href: syslib-warnings/syslib0019.md
+    - name: SYSLIB0020
+      href: syslib-warnings/syslib0020.md

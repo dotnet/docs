@@ -65,7 +65,7 @@ That is a case-sensitive ordinal comparison. For more information about string c
 
 ### Delegate equality
 
-Two [delegate](../../programming-guide/delegates/index.md) operands of the same runtime type are equal when both of them are `null` or their invocation lists are of the same length and have equal entries in each position:
+Two [delegate](../../programming-guide/delegates/index.md) operands of the same run-time type are equal when both of them are `null` or their invocation lists are of the same length and have equal entries in each position:
 
 [!code-csharp-interactive[delegate equality](snippets/shared/EqualityOperators.cs#DelegateEquality)]
 

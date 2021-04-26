@@ -1,7 +1,7 @@
 ---
 title: ".NET Framework deployment guide for developers"
 description: Read the .NET deployment guide for developers. Use this information if you want to install any version of .NET from version 4.5 to 4.8 with your apps.
-ms.date: "04/23/2021"
+ms.date: "04/26/2021"
 helpviewer_keywords:
   - "developer's guide, deploying .NET Framework"
   - "deployment [.NET Framework], developer's guide"

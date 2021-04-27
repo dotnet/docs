@@ -21,7 +21,7 @@ The preceding code is a [*declaration pattern*](language-reference/operators/pat
 
 :::code language="csharp" source="snippets/patterns/Program.cs" ID="NullReferenceCheck":::
 
-The preceding example used a [*constant pattern*](language-reference/operators/patterns.md#constant-pattern) to compare the variable to `null`. The `not` is a [*logical pattern*](language-reference/operators/patterns.md#logical-patterns) that negates the match expression.
+The preceding example used a [*constant pattern*](language-reference/operators/patterns.md#constant-pattern) to compare the variable to `null`. The `not` is a [*logical pattern*](language-reference/operators/patterns.md#logical-patterns) that matches when the negated pattern doesn't match.
 
 ## Type tests
 

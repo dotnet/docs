@@ -9,7 +9,7 @@ ms.assetid: 85f35e56-26e0-4d31-9f3a-89bd4005e71a
 
 By using attributes, you can customize how structs are laid out in memory. For example, you can create what is known as a union in C/C++ by using the `StructLayout(LayoutKind.Explicit)` and `FieldOffset` attributes.
 
-## Example
+## Examples
 
 In this code segment, all of the fields of `TestUnion` start at the same location in memory.
 
@@ -32,8 +32,6 @@ struct TestUnion
     public byte b;
 }
 ```
-
-## Example
 
 The following is another example where fields start at different explicitly set locations.
 

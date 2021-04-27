@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace patterns
 {
+    // <OrderRecord>
     public record Order(int Items, decimal Cost);
+    // </OrderRecord>
+
     class OrderProcessor
     {
         // <PropertyPattern>

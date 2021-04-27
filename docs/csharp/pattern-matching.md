@@ -55,7 +55,7 @@ The preceding code also demonstrates the conjunctive `and` [*logical pattern*](l
 
 All the patterns you've seen so far have been checking one input. You can write patterns that examine multiple properties of an object. Consider the following `Order` record:
 
-:::code language="csharp" source="snippets/patterns/OrderProcessor.cs" range="9":::
+:::code language="csharp" source="snippets/patterns/OrderProcessor.cs" ID="OrderRecord":::
 
 The preceding positional record type declares two members at explicit positions. Appearing first is the `Items`, then the order's `Cost`. For more information, see [Records](../language-reference/builtin-types/record).
 

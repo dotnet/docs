@@ -1,6 +1,7 @@
 ---
 title: "How to sort or filter text data by any word or field (LINQ) (C#)"
 description: Learn how to sort or filter text data by any word or field. See an example for sorting lines of structured text by any field in the line.
+ms.topic: how-to
 ms.date: 07/20/2015
 ms.assetid: 7c04d42f-4a78-42c8-9ec8-57ef18fe13a9
 ---

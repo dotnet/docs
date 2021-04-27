@@ -1,6 +1,7 @@
 ---
 title: "How to query for the largest file or files in a directory tree (LINQ) (C#)"
 description: This C# example shows five LINQ queries related to file size in bytes. You can modify these to query on some other property of the FileInfo object.
+ms.topic: how-to
 ms.date: 07/20/2015
 ms.assetid: 20c8a917-0552-4514-b489-0b8b6a4c3b4c
 ---

@@ -2,6 +2,7 @@
 title: "How to join content from dissimilar files (LINQ) (C#)"
 description: Learn how to join data from two comma-delimited files by using LINQ in C#. The data shares a common value that is used as a matching key.
 ms.date: 06/27/2018
+ms.topic: how-to
 ms.assetid: aa2d12a6-70a9-492f-a6db-b2b850d46811
 ---
 # How to join content from dissimilar files (LINQ) (C#)

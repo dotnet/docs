@@ -2,6 +2,7 @@
 title: "Recommended tags for documentation comments - C# programming guide"
 description: Learn about the recommended tags for documentation comments. See a list of recommended tags and view additional available resources.
 ms.date: 01/21/2020
+ms.topic: conceptual
 helpviewer_keywords:
   - "XML [C#], tags"
   - "XML documentation [C#], tags"
@@ -14,21 +15,82 @@ The C# compiler processes documentation comments in your code and formats them a
 Tags are processed on code constructs such as types and type members.
 
 > [!NOTE]
-> Documentation comments cannot be applied to a namespace.  
-  
- The compiler will process any tag that is valid XML. The following tags provide generally used functionality in user documentation.  
-  
-## Tags  
-  
-|||||  
-|---|---|---|---|
-|[\<c>](./code-inline.md)|[\<para>](./para.md)|[\<see>](./see.md)*|[\<value>](./value.md)  
-|[\<code>](./code.md)|[\<param>](./param.md)*|[\<seealso>](./seealso.md)*|  
-|[\<example>](./example.md)|[\<paramref>](./paramref.md)|[\<summary>](./summary.md)|  
-|[\<exception>](./exception.md)*|[\<permission>](./permission.md)*|[\<typeparam>](./typeparam.md)*|  
-|[\<include>](./include.md)*|[\<remarks>](./remarks.md)|[\<typeparamref>](./typeparamref.md)|  
-|[\<list>](./list.md)|[\<inheritdoc>](./inheritdoc.md)|[\<returns>](./returns.md)|
-  
+> Documentation comments cannot be applied to a namespace.
+
+The compiler will process any tag that is valid XML. The following tags provide generally used functionality in user documentation.
+
+## Tags
+
+:::row:::
+    :::column:::
+        [\<c>](./code-inline.md)
+    :::column-end:::
+    :::column:::
+        [\<para>](./para.md)
+    :::column-end:::
+    :::column:::
+        [\<see>](./see.md)*
+    :::column-end:::
+    :::column:::
+        [\<value>](./value.md)
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        [\<code>](./code.md)
+    :::column-end:::
+    :::column:::
+        [\<param>](./param.md)*
+    :::column-end:::
+    :::column:::
+        [\<seealso>](./seealso.md)*
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        [\<example>](./example.md)
+    :::column-end:::
+    :::column:::
+        [\<paramref>](./paramref.md)
+    :::column-end:::
+    :::column:::
+        [\<summary>](./summary.md)
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        [\<exception>](./exception.md)*
+    :::column-end:::
+    :::column:::
+        [\<permission>](./permission.md)*
+    :::column-end:::
+    :::column:::
+        [\<typeparam>](./typeparam.md)*
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        [\<include>](./include.md)*
+    :::column-end:::
+    :::column:::
+        [\<remarks>](./remarks.md)
+    :::column-end:::
+    :::column:::
+        [\<typeparamref>](./typeparamref.md)
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        [\<list>](./list.md)
+    :::column-end:::
+    :::column:::
+        [\<inheritdoc>](./inheritdoc.md)
+    :::column-end:::
+    :::column:::
+       [\<returns>](./returns.md)
+    :::column-end:::
+:::row-end:::
+
 (\* denotes that the compiler verifies syntax.)
 
 If you want angle brackets to appear in the text of a documentation comment, use the HTML encoding of `<` and `>` which is `&lt;` and `&gt;` respectively. This encoding is shown in the following example.

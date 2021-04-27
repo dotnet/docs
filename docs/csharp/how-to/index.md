@@ -1,7 +1,7 @@
 ---
 title: How to articles (C# Guide)
 description: A collection of quick tips and short, focused code samples
-ms.topic: concenptual
+ms.topic: conceptual
 ms.date: 12/20/2017
 ---
 

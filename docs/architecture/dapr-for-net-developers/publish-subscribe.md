@@ -288,7 +288,77 @@ You have to specify several elements with every subscription:
 
 ## Sample application: Dapr Traffic Control
 
-> **TODO**
+In Dapr Traffic Control, the TrafficControl Service uses the pub/sub building block to send detected speeding violations to the FineCollection service so it can send a fine to the driver of the speeding vehicle. The `CollectionController` class handles speeding violations. This is a regular ASP.NET Core Controller. The `CollectionController.CollectFine` method takes an incoming `SpeedingViolation` message and handles that:
+
+```csharp
+[Topic("pubsub", "speedingviolations")]
+[Route("collectfine")]
+[HttpPost()]
+public async Task<ActionResult> CollectFine(SpeedingViolation speedingViolation, [FromServices] DaprClient daprClient)
+{
+    // ...
+}
+```
+
+The method is decorated with the Dapr `Topic` attribute. It specifies that the pub/sub component named `pubsub` should be used to subscribe to messages sent to the `speedingviolations` topic.
+
+The TrafficControl service sends speeding violations. Near the end of the `VehicleExit` method on the `TrafficController` class, you find the code that sends a `SpeedingViolation` message using the pub/sub building block:
+
+```csharp
+/// ...
+
+var speedingViolation = new SpeedingViolation
+{
+    VehicleId = msg.LicenseNumber,
+    RoadId = _roadId,
+    ViolationInKmh = violation,
+    Timestamp = msg.Timestamp
+};
+
+// publish speedingviolation (Dapr publish / subscribe)
+await daprClient.PublishEventAsync("pubsub", "speedingviolations", speedingViolation);
+
+/// ...
+```
+
+It uses the Dapr SDK for .NET and sends the message to the `speedingviolations` topic using the pub/sub component named `pubsub`.
+
+The Traffic Control sample uses RabbitMQ as the message broker. This is configured in the component configuration file named `pubsub.yaml` in the `/dapr/components` folder:
+
+```yaml
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: pubsub
+  namespace: dapr-trafficcontrol
+spec:
+  type: pubsub.rabbitmq
+  version: v1
+  metadata:
+  - name: host
+    value: "amqp://localhost:5672"
+  - name: durable
+    value: "false"
+  - name: deletedWhenUnused
+    value: "false"
+  - name: autoAck
+    value: "false"
+  - name: reconnectWait
+    value: "0"
+  - name: concurrency
+    value: parallel
+scopes:
+  - trafficcontrolservice
+  - finecollectionservice
+```
+
+The TrafficControl and FineCollection services are the only services in the Dapr Traffic Control application that should have access to the message broker. The component configuration shown above enforces this constraint by using the `scopes` element to restrict access.
+
+In the Traffic Control sample application, using Dapr pub/sub offers the following benefits:
+
+1. No infrastructural abstraction of a message broker to maintain.
+1. Services are temporally decoupled, which increases robustness.
+1. Publisher and subscribers don't know each other. This means that additional services could be introduced that will react to speeding violations in the future, without the need to change the TrafficControl service.
 
 ## Summary
 

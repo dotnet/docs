@@ -1,12 +1,12 @@
 ---
-title: "Tutorial: Make HTTP requests in a .NET console application using C#"
+title: "Tutorial: Make HTTP requests in a .NET console app using C#"
 description: Learn how to make HTTP requests to a REST web service and deserialize JSON responses. This tutorial creates a .NET console and uses C#.
 ms.date: 04/21/2021
 ---
 
-# Tutorial: Make HTTP requests in a .NET console application using C\#
+# Tutorial: Make HTTP requests in a .NET console app using C\#
 
-This tutorial builds an application that issues HTTP requests to a REST service on GitHub. The application reads information in JSON format and converts the JSON into C# objects. Converting from JSON to C# objects is known as *deserialization*.
+This tutorial builds an app that issues HTTP requests to a REST service on GitHub. The app reads information in JSON format and converts the JSON into C# objects. Converting from JSON to C# objects is known as *deserialization*.
 
 The tutorial shows how to:
 
@@ -22,11 +22,11 @@ If you prefer to follow along with the [final sample](https://github.com/dotnet/
 
 * [.NET SDK 5.0 or later](https://dotnet.microsoft.com/download/dotnet/5.0)
 * A code editor such as [Visual Studio Code](https://code.visualstudio.com/), which is an open
-source, cross platform editor. You can run the sample application on Windows, Linux, or macOS, or in a Docker container.
+source, cross platform editor. You can run the sample app on Windows, Linux, or macOS, or in a Docker container.
 
-## Create the client application
+## Create the client app
 
-1. Open a command prompt and create a new directory for your application. Make that the current
+1. Open a command prompt and create a new directory for your app. Make that the current
 directory.
 
 1. Enter the following command in a console window:
@@ -35,9 +35,9 @@ directory.
    dotnet new console --name WebAPIClient
    ```
 
-   This command creates the starter files for a basic "Hello World" application. The project name is "WebAPIClient".
+   This command creates the starter files for a basic "Hello World" app. The project name is "WebAPIClient".
 
-1. Navigate into the "WebAPIClient" directory, and run the application.
+1. Navigate into the "WebAPIClient" directory, and run the app.
 
    ```dotnetcli
    cd WebAPIClient
@@ -47,11 +47,11 @@ directory.
    dotnet run
    ```
 
-   [`dotnet run`](../../core/tools/dotnet-run.md) automatically runs [`dotnet restore`](../../core/tools/dotnet-restore.md) to restore any dependencies that the application needs. It also runs [`dotnet build`](../../core/tools/dotnet-build.md) if needed.
+   [`dotnet run`](../../core/tools/dotnet-run.md) automatically runs [`dotnet restore`](../../core/tools/dotnet-restore.md) to restore any dependencies that the app needs. It also runs [`dotnet build`](../../core/tools/dotnet-build.md) if needed.
 
 ## Make HTTP requests
 
-This application calls the [GitHub API](https://developer.github.com/v3/) to get information about the projects under the
+This app calls the [GitHub API](https://developer.github.com/v3/) to get information about the projects under the
 [.NET Foundation](https://www.dotnetfoundation.org/) umbrella. The endpoint is <https://api.github.com/orgs/dotnet/repos>. To retrieve information, it makes an HTTP GET request. Browsers also make HTTP GET requests, so you can paste that URL into your browser address bar to see what information you'll be receiving and processing.
 
 Use the <xref:System.Net.Http.HttpClient> class to make HTTP requests. <xref:System.Net.Http.HttpClient> supports only async methods for its long-running APIs. So the following steps create an async method and call it from the Main method.
@@ -133,7 +133,7 @@ Use the <xref:System.Net.Http.HttpClient> class to make HTTP requests. <xref:Sys
    using System.Net.Http.Headers;
    ```
 
-1. Build the application and run it.
+1. Build the app and run it.
 
    ```dotnetcli
    dotnet run
@@ -202,7 +202,7 @@ The following steps convert the JSON response into C# objects. You use the <xref
    using System.Text.Json;
    ```
 
-1. Run the application.
+1. Run the app.
 
    ```dotnetcli
    dotnet run
@@ -231,7 +231,7 @@ The following steps convert the JSON response into C# objects. You use the <xref
    Console.WriteLine(repo.Name);
    ```
 
-1. Run the application.
+1. Run the app.
 
    The output is the same.
 
@@ -267,7 +267,7 @@ The `ProcessRepositories` method can do the async work and return a collection o
    }
    ```
 
-1. Run the application.
+1. Run the app.
 
    The output is the same.
 
@@ -307,7 +307,7 @@ The following steps add code to process a few more of the properties in the JSON
    }
    ```
 
-1. Run the application.
+1. Run the app.
 
    The list now includes the additional properties.
 
@@ -341,13 +341,13 @@ again:
    Console.WriteLine(repo.LastPush);
    ```
 
-1. Run the application.
+1. Run the app.
 
    The output includes the date and time of the last push to each repository.
 
 ## Next steps
 
-Your version of the application should now match the [finished sample](https://github.com/dotnet/samples/tree/main/csharp/getting-started/console-webapiclient).
+Your version of the app should now match the [finished sample](https://github.com/dotnet/samples/tree/main/csharp/getting-started/console-webapiclient).
 
 This tutorial showed you how to make web requests, parse the results, and display properties of those results. You've seen some of the features of the C# language that support object-oriented techniques.
 

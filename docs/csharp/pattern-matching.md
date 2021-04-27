@@ -7,7 +7,7 @@ ms.technology: csharp-fundamentals
 
 # Pattern matching overview
 
-*Pattern matching* is a technique where you test an expression to determine if it has certain characteristics. C# pattern matching provides more concise syntax for testing expressions and taking action when an expression matches. The [`is`](language-reference/operators/is.md) expression now supports pattern matching to test an expression and conditionally declare a new variable to the result of that expression. The [`switch`](language-reference/operators/switch-expression.md) expression enables you to perform actions based on the first matching pattern for an expression. These two expressions support a rich vocabulary of [*patterns*](language-reference/operators/patterns.md). You have a rich vocabulary to express your algorithms.
+*Pattern matching* is a technique where you test an expression to determine if it has certain characteristics. C# pattern matching provides more concise syntax for testing expressions and taking action when an expression matches. The "[`is`](language-reference/operators/is.md) expression" now supports pattern matching to test an expression and conditionally declare a new variable to the result of that expression. The "[`switch`](language-reference/operators/switch-expression.md) expression" enables you to perform actions based on the first matching pattern for an expression. These two expressions support a rich vocabulary of [*patterns*](language-reference/operators/patterns.md). You have a rich vocabulary to express your algorithms.
 
 This article provides an overview of scenarios where you can use pattern matching. These techniques can improve the readability and correctness of your code. For a full discussion of all the patterns you can apply, see the article on [patterns](language-reference/operators/patterns.md) in the language reference.
 
@@ -53,7 +53,13 @@ The preceding code also demonstrates the conjunctive `and` [*logical pattern*](l
 
 ## Multiple inputs
 
-All the patterns you've seen so far have been checking one input. You can write patterns that examine multiple properties of an object. The following code examines the number of items and the value of an order to calculate a discounted price:
+All the patterns you've seen so far have been checking one input. You can write patterns that examine multiple properties of an object. Consider the following `Order` record:
+
+:::code language="csharp" source="snippets/patterns/OrderProcessor.cs" range="9":::
+
+The preceding positional record type declares two members at explicit positions. Appearing first is the `Items`, then the order's `Cost`. For more information, see [Records](../language-reference/builtin-types/record).
+
+The following code examines the number of items and the value of an order to calculate a discounted price:
 
 :::code language="csharp" source="snippets/patterns/OrderProcessor.cs" ID="PropertyPattern":::
 

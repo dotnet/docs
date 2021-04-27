@@ -57,7 +57,7 @@ All the patterns you've seen so far have been checking one input. You can write 
 
 :::code language="csharp" source="snippets/patterns/OrderProcessor.cs" ID="OrderRecord":::
 
-The preceding positional record type declares two members at explicit positions. Appearing first is the `Items`, then the order's `Cost`. For more information, see [Records](../language-reference/builtin-types/record).
+The preceding positional record type declares two members at explicit positions. Appearing first is the `Items`, then the order's `Cost`. For more information, see [Records](language-reference/builtin-types/record).
 
 The following code examines the number of items and the value of an order to calculate a discounted price:
 

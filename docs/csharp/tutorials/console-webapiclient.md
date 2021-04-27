@@ -122,7 +122,10 @@ Use the <xref:System.Net.Http.HttpClient> class to make HTTP requests. <xref:Sys
 
    This code:
 
-   * Sets up HTTP headers for all requests: an `Accept` header to accept JSON responses, and a `User-Agent` header. These headers are checked by the GitHub server code and are necessary to retrieve information from GitHub.
+   * Sets up HTTP headers for all requests:
+     * An [`Accept`](https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept) header to accept JSON responses
+     * A [`User-Agent`](https://developer.mozilla.org/docs/Web/HTTP/Headers/User-Agent) header.
+     These headers are checked by the GitHub server code and are necessary to retrieve information from GitHub.
    * Calls <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)?displayProperty=nameWithType> to make a web request and retrieve the response. This method starts a task that makes the web request. When the request returns, the task reads the response stream and extracts the content from the stream. The body of the response is returned as a <xref:System.String>, which is available when the task completes.
    * Awaits the task for the response string and prints the response to the console.
 
@@ -139,7 +142,7 @@ Use the <xref:System.Net.Http.HttpClient> class to make HTTP requests. <xref:Sys
    dotnet run
    ```
 
-   There is no build warning, because the `ProcessRepositories` now does contain an `await` operator.
+   There is no build warning because the `ProcessRepositories` now contains an `await` operator.
 
    The output is a long display of JSON text.
 
@@ -147,7 +150,7 @@ Use the <xref:System.Net.Http.HttpClient> class to make HTTP requests. <xref:Sys
 
 The following steps convert the JSON response into C# objects. You use the <xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> class to deserialize JSON into objects.
 
-1. Create a file named *repo.cs* and put the following code in it. This code defines a class to represent the JSON object returned from the GitHub API:
+1. Create a file named *repo.cs* and add the following code:
 
    ```csharp
    using System;
@@ -161,7 +164,7 @@ The following steps convert the JSON response into C# objects. You use the <xref
    }
    ```
 
-   You'll use this class to display a list of repository names.
+   The preceding code defines a class to represent the JSON object returned from the GitHub API. You'll use this class to display a list of repository names.
 
    The JSON for a repository object contains dozens of properties,but only the `name` property will be deserialized. The serializer automatically ignores JSON properties for which there is no match in the target class. This feature makes it easier to create types that work with only a subset of fields in a large JSON packet.
 
@@ -175,11 +178,11 @@ The following steps convert the JSON response into C# objects. You use the <xref
    var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await streamTask);
    ```
 
-   The new code calls <xref:System.Net.Http.HttpClient.GetStreamAsync(System.String)> instead of <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)>. This serializer method uses a stream instead of a string as its source.
+   The updated code replaces <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)> with <xref:System.Net.Http.HttpClient.GetStreamAsync(System.String)>. This serializer method uses a stream instead of a string as its source.
 
-   The first argument to <xref:System.Text.Json.JsonSerializer.DeserializeAsync%60%601(System.IO.Stream,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)?displayProperty=nameWithType> is an `await` expression. (The other two parameters are optional and are omitted in the code snippet.) `await` expressions can appear almost anywhere in your code, even though up to now, you've only seen them as part of an assignment statement.
+   The first argument to <xref:System.Text.Json.JsonSerializer.DeserializeAsync%60%601(System.IO.Stream,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)?displayProperty=nameWithType> is an `await` expression. `await` expressions can appear almost anywhere in your code, even though up to now, you've only seen them as part of an assignment statement. The other two parameters, `JsonSerializerOptions` and `CancellationToken`, are optional and are omitted in the code snippet.
 
-   The `DeserializeAsync` method is *generic*, which means you supply type arguments for what kind of objects should be created from the JSON text. In this example, you're deserializing to a `List<Repository>`, which is another generic object, a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. The `List<T>` class stores a collection of objects. The type argument declares the type of objects stored in the `List<T>`. The type argument is your `Repository` class, because the JSON text represents a collection of repository objects.
+   The `DeserializeAsync` method is [*generic*](../programming-guide/generics/index.md), which means you supply type arguments for what kind of objects should be created from the JSON text. In this example, you're deserializing to a `List<Repository>`, which is another generic object, a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. The `List<T>` class stores a collection of objects. The type argument declares the type of objects stored in the `List<T>`. The type argument is your `Repository` class, because the JSON text represents a collection of repository objects.
 
 1. Add code to display the name of each repository. Replace the lines that read:
 
@@ -273,7 +276,7 @@ The `ProcessRepositories` method can do the async work and return a collection o
 
 ## Deserialize more properties
 
-The following steps add code to process a few more of the properties in the JSON packet that is received. You won't want to grab everything, but adding a few properties demonstrates more features of the C# language.
+The following steps add code to process more of the properties in the  received JSON packet. You probably won't want to process every property, but adding a few more demonstrates other features of C#.
 
 1. Add the following properties to the `Repository` class definition:
 
@@ -291,7 +294,7 @@ The following steps add code to process a few more of the properties in the JSON
    public int Watchers { get; set; }
    ```
 
-   The <xref:System.Uri> and `int` types have built-in functionality to convert to and from string representation. So no extra code is needed to deserialize from JSON string format to those target types. If the JSON packet contains data that doesn't convert to a target type, the serialization action throws an exception.
+   The <xref:System.Uri> and `int` types have built-in functionality to convert to and from string representation. No extra code is needed to deserialize from JSON string format to those target types. If the JSON packet contains data that doesn't convert to a target type, the serialization action throws an exception.
 
 1. Update the `Main` method to display the property values:
 
@@ -347,8 +350,6 @@ again:
 
 ## Next steps
 
-Your version of the app should now match the [finished sample](https://github.com/dotnet/samples/tree/main/csharp/getting-started/console-webapiclient).
-
-This tutorial showed you how to make web requests, parse the results, and display properties of those results. You've seen some of the features of the C# language that support object-oriented techniques.
+In this tutorial, you created an app that makes web requests and parses the results. Your version of the app should now match the [finished sample](https://github.com/dotnet/samples/tree/main/csharp/getting-started/console-webapiclient).
 
 Learn more about how to configure JSON serialization in [How to serialize and deserialize (marshal and unmarshal) JSON in .NET](../../standard/serialization/system-text-json-how-to.md).

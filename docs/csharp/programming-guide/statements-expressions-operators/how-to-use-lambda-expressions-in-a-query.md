@@ -1,6 +1,7 @@
 ---
 title: "How to use lambda expressions in a query - C# Programming Guide"
 description: Learn how to use lambda expressions in a query. See code examples and view additional available resources.
+ms.topic: how-to
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "lambda expressions [C#], in LINQ"

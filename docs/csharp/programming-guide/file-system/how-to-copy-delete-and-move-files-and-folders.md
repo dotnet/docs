@@ -2,6 +2,7 @@
 title: "How to copy, delete, and move files and folders - C# Programming Guide"
 description: Learn how to copy, delete, and move files and folders using the File, Directory, FileInfo, and DirectoryInfo classes.
 ms.date: 07/20/2015
+ms.topic: how-to
 helpviewer_keywords: 
   - "I/O [C#]"
 ms.assetid: 62e52cd7-9597-4e4a-acf9-1315f5cdbf05

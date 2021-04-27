@@ -1,6 +1,6 @@
 ---
 title: "is operator - C# reference"
-description: "Learn about the C# is operator that matches an expression against a pattern"
+description: "Learn about the C# is operator that matches an expression against a pattern."
 ms.date: 04/23/2021
 f1_keywords: 
   - "is_CSharpKeyword"

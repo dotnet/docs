@@ -1,6 +1,6 @@
 ---
-description: "await operator - C# reference"
 title: "await operator - C# reference"
+description: "Learn about the C# await operator that suspends evaluation of the enclosing async method."
 ms.date: 07/13/2020
 f1_keywords: 
   - "await_CSharpKeyword"

@@ -1,6 +1,6 @@
 ---
-description: "sizeof operator - C# reference"
 title: "sizeof operator - C# reference"
+description: "Learn about the C# sizeof operator that returns the memory amount occupied by a variable of a given type."
 ms.date: 07/25/2019
 f1_keywords: 
   - "sizeof_CSharpKeyword"

@@ -1,6 +1,6 @@
 ---
 title: "?? and ??= operators - C# reference"
-description: "Learn about the C# null-coalescing operators ?? and ??="
+description: "Learn about ?? and ??= which are the C# null-coalescing operators."
 ms.date: 09/10/2019
 f1_keywords: 
   - "??_CSharpKeyword"

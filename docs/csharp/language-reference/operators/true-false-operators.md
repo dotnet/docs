@@ -1,6 +1,6 @@
 ---
 title: "true and false operators - C# reference"
-description: "Learn about the C# true and false operators"
+description: "Learn about the C# true and false operators."
 ms.date: 12/10/2018
 helpviewer_keywords: 
   - "false operator [C#]"

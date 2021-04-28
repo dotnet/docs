@@ -1,6 +1,6 @@
 ---
-description: "stackalloc expression - C# reference"
 title: "stackalloc expression - C# reference"
+description: "Learn about the C# stackalloc expression that allocates a block of memory on the stack."
 ms.date: 03/13/2020
 f1_keywords: 
   - "stackalloc_CSharpKeyword"

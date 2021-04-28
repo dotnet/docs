@@ -2,6 +2,7 @@
 title: "Walkthrough: Writing Queries in C# (LINQ)"
 description: This walkthrough shows how C# language features are used in LINQ query expressions. This article uses Visual Studio as a development environment.
 ms.date: 07/20/2015
+ms.topic: tutorial
 helpviewer_keywords: 
   - "LINQ [C#], walkthroughs"
   - "LINQ [C#], writing queries"

@@ -1,6 +1,6 @@
 ---
-description: "new operator - C# reference"
 title: "new operator - C# reference"
+description: "Learn about the C# new operator that is used to create a new instance of a type."
 ms.date: 10/02/2020
 f1_keywords:
  - new_CSharpKeyword

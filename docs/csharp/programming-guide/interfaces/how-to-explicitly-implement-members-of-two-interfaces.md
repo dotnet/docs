@@ -2,6 +2,7 @@
 title: "How to explicitly implement members of two interfaces - C# Programming Guide"
 description: Learn how to explicitly implement two interfaces that have the same member names and give each interface member a separate implementation in this C# example.
 ms.date: 07/20/2015
+ms.topic: how-to
 helpviewer_keywords: 
   - "inheritance [C#], explicitly implementing interface members"
   - "interfaces [C#], explicitly implementing with inheritance"

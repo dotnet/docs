@@ -1,6 +1,7 @@
 ---
 title: "How to implement interface events - C# Programming Guide"
 description: Learn how to implement interface events in a class. See code examples and view additional available resources.
+ms.topic: how-to
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "interfaces [C#], event implementation in classes"

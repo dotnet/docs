@@ -1341,7 +1341,7 @@ items:
     - name: Advanced options
       displayName: MainEntryPoint, StartupObject, main, PdbFile, pdb, PathMap, pathmap, ApplicationConfiguration, appconfig, AdditionalLibPaths, lib, GenerateFullPaths, fullpath, PreferredUILang, preferreduilang, BaseAddress, baseaddress, ChecksumAlgorithm, checksumalgorithm, CodePage, codepage, Utf8Output, utf8output, FileAlignment, filealign, ErrorEndLocation, errorendlocation, NoStandardLib, nostdlib, SubsystemVersion, subsystemversion, ModuleAssemblyName, moduleassemblyname
       href: language-reference/compiler-options/advanced.md
-  - name: Compiler errors
+  - name: Compiler messages
     href: language-reference/compiler-messages/index.md
   - name: C# 6.0 draft specification
     href: language-reference/specification/

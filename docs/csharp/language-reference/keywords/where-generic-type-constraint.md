@@ -41,7 +41,7 @@ The addition of nullable reference types introduces a potential ambiguity in the
 
 :::code language="csharp" source="snippets/GenericWhereContraints.cs" ID="BaseClass":::
 
-You use the `default` constraint to specify that your derived class overrides the method without the constraint in your derived class, or explicit interface implementation:
+You use the `default` constraint to specify that your derived class overrides the method without the constraint in your derived class, or explicit interface implementation. It is only valid on methods that override base methods, or explicit interface implementations:
 
 :::code language="csharp" source="snippets/GenericWhereContraints.cs" ID="DerivedClass":::
 

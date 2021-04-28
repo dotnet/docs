@@ -389,17 +389,17 @@ struct ObjectVariant
 
 The following table describes how different runtime types of the `obj` field map to the various types stored in a `VARIANT`:
 
-| .NET Type | VARIANT Type | | .NET Type | VARIANT Type |
-|------------|--------------|-|----------|--------------|
-|  `byte`  | `VT_UI1` |     | `System.Runtime.InteropServices.BStrWrapper` | `VT_BSTR` |
-| `sbyte`  | `VT_I1`  |     | `object`  | `VT_DISPATCH` |
-| `short`  | `VT_I2`  |     | `System.Runtime.InteropServices.UnknownWrapper` | `VT_UNKNOWN` |
-| `ushort` | `VT_UI2` |     | `System.Runtime.InteropServices.DispatchWrapper` | `VT_DISPATCH` |
-| `int`    | `VT_I4`  |     | `System.Reflection.Missing` | `VT_ERROR` |
-| `uint`   | `VT_UI4` |     | `(object)null` | `VT_EMPTY` |
-| `long`   | `VT_I8`  |     | `bool` | `VT_BOOL` |
-| `ulong`  | `VT_UI8` |     | `System.DateTime` | `VT_DATE` |
-| `float`  | `VT_R4`  |     | `decimal` | `VT_DECIMAL` |
-| `double` | `VT_R8`  |     | `System.Runtime.InteropServices.CurrencyWrapper` | `VT_CURRENCY` |
-| `char`   | `VT_UI2` |     | `System.DBNull` | `VT_NULL` |
-| `string` | `VT_BSTR`|
+| .NET Type | VARIANT Type | .NET Type | VARIANT Type |
+|------------|--------------|----------|--------------|
+|  `byte`  | `VT_UI1` | `System.Runtime.InteropServices.BStrWrapper` | `VT_BSTR` |
+| `sbyte`  | `VT_I1`  | `object`  | `VT_DISPATCH` |
+| `short`  | `VT_I2`  | `System.Runtime.InteropServices.UnknownWrapper` | `VT_UNKNOWN` |
+| `ushort` | `VT_UI2` | `System.Runtime.InteropServices.DispatchWrapper` | `VT_DISPATCH` |
+| `int`    | `VT_I4`  | `System.Reflection.Missing` | `VT_ERROR` |
+| `uint`   | `VT_UI4` | `(object)null` | `VT_EMPTY` |
+| `long`   | `VT_I8`  | `bool` | `VT_BOOL` |
+| `ulong`  | `VT_UI8` | `System.DateTime` | `VT_DATE` |
+| `float`  | `VT_R4`  | `decimal` | `VT_DECIMAL` |
+| `double` | `VT_R8`  | `System.Runtime.InteropServices.CurrencyWrapper` | `VT_CURRENCY` |
+| `char`   | `VT_UI2` | `System.DBNull` | `VT_NULL` |
+| `string` | `VT_BSTR`|||

@@ -279,4 +279,21 @@ namespace keywords
             // </Snippet20>
         }
     }
+
+    // <BaseClass>
+    public abstract class B
+    {
+        public void M<T>(T? item) where T : struct { }
+        public abstract void M<T>(T? item);
+
+    }
+    // </BaseClass>
+
+    // <DerivedClass>
+    public class D : B
+    {
+        // Without the "default" constraint, the compiler tries to override the first method in B
+        public override void M<T>(T? item) where T : default { }
+    }
+    // </DerivedClass>
 }

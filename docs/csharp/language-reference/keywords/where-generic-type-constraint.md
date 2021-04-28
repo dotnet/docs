@@ -37,11 +37,11 @@ In a nullable context in C# 8.0 and later, the `class` constraint requires a typ
 
 The `where` clause may include the `notnull` constraint. The `notnull` constraint limits the type parameter to non-nullable types. That type may be a [value type](../builtin-types/value-types.md) or a non-nullable reference type. The `notnull` constraint is available starting in C# 8.0 for code compiled in a [`nullable enable` context](../../nullable-references.md#nullable-contexts). Unlike other constraints, if a type argument violates the `notnull` constraint, the compiler generates a warning instead of an error. Warnings are only generated in a `nullable enable` context.
 
-The addition of nullable reference types introduces a potential ambiguity in the meaning of `T?` in generic methods. If `T` is a `struct`, `T?` is the same as <xref:System.Nullable%601?displayProperty=nameWithType>. However, if `T` is a reference type, `T?` means that `null` is a valid value. The ambiguity arises because overriding methods can't include constraints.  The new `default` constraint resolves this ambiguity. You'll add it when a base class declares two overloads of a method, one that specifies the `struct` constraint, and one that doesn't have either the `struct` or `class` constraint applied:
+The addition of nullable reference types introduces a potential ambiguity in the meaning of `T?` in generic methods. If `T` is a `struct`, `T?` is the same as <xref:System.Nullable%601?displayProperty=nameWithType>. However, if `T` is a reference type, `T?` means that `null` is a valid value. The ambiguity arises because overriding methods can't include constraints.  The new `default` constraint resolves this ambiguity. You'll add it when a base class or interface declares two overloads of a method, one that specifies the `struct` constraint, and one that doesn't have either the `struct` or `class` constraint applied:
 
 :::code language="csharp" source="snippets/GenericWhereContraints.cs" ID="BaseClass":::
 
-You use the `default` constraint to specify that your derived class overrides the method without the constraint:
+You use the `default` constraint to specify that your derived class overrides the method without the constraint in your derived class, or explicit interface implementation:
 
 :::code language="csharp" source="snippets/GenericWhereContraints.cs" ID="DerivedClass":::
 

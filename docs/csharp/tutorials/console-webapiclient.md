@@ -16,7 +16,7 @@ The tutorial shows how to:
 > * Deserialize JSON responses.
 > * Configure deserialization with attributes.
 
-If you prefer to follow along with the [final sample](https://github.com/dotnet/samples/tree/main/csharp/getting-started/console-webapiclient) for this tutorial, you can download it. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
+If you prefer to follow along with the [final sample](/samples/dotnet/samples/console-webapiclient/) for this tutorial, you can download it. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
 
 ## Prerequisites
 
@@ -350,6 +350,6 @@ again:
 
 ## Next steps
 
-In this tutorial, you created an app that makes web requests and parses the results. Your version of the app should now match the [finished sample](https://github.com/dotnet/samples/tree/main/csharp/getting-started/console-webapiclient).
+In this tutorial, you created an app that makes web requests and parses the results. Your version of the app should now match the [finished sample](/samples/dotnet/samples/console-webapiclient/).
 
 Learn more about how to configure JSON serialization in [How to serialize and deserialize (marshal and unmarshal) JSON in .NET](../../standard/serialization/system-text-json-how-to.md).

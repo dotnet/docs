@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 4065d901-cf89-4e47-8bf9-abb65acfb003
+ms.topic: how-to
 ---
 
 # How to write queries with complex filtering (LINQ to XML)

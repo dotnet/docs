@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 5cb9be13-5ac4-4373-a034-b3520a5b2dec
+ms.topic: how-to
 ---
 # How to project an anonymous type (LINQ to XML)
 

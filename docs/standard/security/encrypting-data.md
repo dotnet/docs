@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "symmetric encryption"
   - "cryptography [.NET], asymmetric"
   - "asymmetric encryption"
-ms.assetid: 7ecce51f-db5f-4bd4-9321-cceb6fcb2a77
+ms.topic: how-to
 ---
 
 # Encrypting data

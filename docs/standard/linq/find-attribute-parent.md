@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: dbef9d89-a5c4-431f-80cc-7a2ebf323f86
+ms.topic: how-to
 ---
 
 # How to find an attribute of the parent (LINQ to XML)

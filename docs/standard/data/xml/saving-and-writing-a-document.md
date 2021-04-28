@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
   - "vb"
-ms.assetid: 097b0cb1-5743-4c3a-86ef-caf5cbe6750d
+ms.topic: how-to
 ---
 # Saving and Writing a Document
 

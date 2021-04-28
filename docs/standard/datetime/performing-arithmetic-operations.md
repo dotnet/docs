@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "dates [.NET], comparing"
   - "DateTime structure, arithmetic operations"
   - "DateTimeOffset structure, arithmetic operations"
-ms.assetid: 87c7ddf2-f15e-48af-8602-b3642237e6d0
+ms.topic: how-to
 ---
 # Performing arithmetic operations with dates and times
 

@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "serializing objects"
   - "serialization"
   - "objects, serializing"
+ms.topic: how-to
 ---
 
 # How to serialize and deserialize (marshal and unmarshal) JSON in .NET

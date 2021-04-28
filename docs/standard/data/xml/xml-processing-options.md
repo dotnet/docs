@@ -2,7 +2,7 @@
 title: "XML Processing Options"
 description: Review options for XML processing, which include LINQ to XML, XmlReader, XmlWriter, XmlDocument, XPathNavigator, XslCompiledTransform, XmlLite, and MSXML.
 ms.date: "03/30/2017"
-ms.assetid: 33ced8ee-1745-4e71-8dee-ebe70ec067c7
+ms.topic: reference
 ---
 # XML Processing Options
 

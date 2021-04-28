@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 4a8f0e45-768a-42e2-bc5f-68bdf0e0a726
+ms.topic: how-to
 ---
 
 # How to stream XML fragments from an XmlReader (LINQ to XML)

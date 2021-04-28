@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 7b04b0f1-af64-42eb-8737-83f8861b5915
+ms.topic: how-to
 ---
 
 # Maintain name-value pairs (LINQ to XML)

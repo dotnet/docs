@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "serializing objects"
   - "serialization"
   - "objects, serializing"
+ms.topic: reference
 ---
 
 # Supported collection types in System.Text.Json

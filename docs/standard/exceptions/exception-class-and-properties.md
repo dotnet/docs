@@ -4,8 +4,8 @@ title: "Exception Class and Properties"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "exceptions, Exception class"
-  - "Exception class"
-ms.assetid: e2e1f8c4-e7b4-467d-9a66-13c90861221d
+  - "Exception class"ms.topic: reference
+ms.topic: reference
 ---
 # Exception class and properties
 

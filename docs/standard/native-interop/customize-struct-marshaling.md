@@ -5,6 +5,7 @@ ms.date: 01/18/2019
 dev_langs:
   - "csharp"
   - "cpp"
+ms.topic: how-to
 ---
 # Customize structure marshaling
 

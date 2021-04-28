@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 505b7512-bb8b-4f85-abbf-491f039c961e
+ms.topic: how-to
 ---
 
 # How to find descendants of a child element (LINQ to XML)

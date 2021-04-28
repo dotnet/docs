@@ -288,7 +288,7 @@ You have to specify several elements with every subscription:
 
 ## Sample application: Dapr Traffic Control
 
-In Dapr Traffic Control, the TrafficControl Service uses the pub/sub building block to send detected speeding violations to the FineCollection service so it can send a fine to the driver of the speeding vehicle. The `CollectionController` class handles speeding violations. This is a regular ASP.NET Core Controller. The `CollectionController.CollectFine` method takes an incoming `SpeedingViolation` message and handles that:
+In Dapr Traffic Control, the TrafficControl service uses the pub/sub building block to send detected speeding violations to the FineCollection service so it can send a fine to the driver of the speeding vehicle. The `CollectionController` class handles speeding violations. This is a regular ASP.NET Core Controller. The `CollectionController.CollectFine` method takes an incoming `SpeedingViolation` message and handles that:
 
 ```csharp
 [Topic("pubsub", "speedingviolations")]

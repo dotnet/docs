@@ -1,6 +1,7 @@
 ---
 title: "Querying based on runtime state (C#)"
-description: Describes various techniques your code can use to query dynamically depending on runtime state, by varying either LINQ method calls or the expression trees passed into those methods.
+description: Describes various techniques your C# code can use to query dynamically depending on runtime state, by varying either LINQ method calls or the expression trees passed into those methods.
+ms.topic: how-to
 ms.date: 02/11/2021
 ms.assetid: 52cd44dd-a3ec-441e-b93a-4eca388119c7
 ---

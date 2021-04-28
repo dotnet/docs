@@ -1,6 +1,6 @@
 ---
 title: "Patterns - C# reference"
-description: "Learn about the patterns supported by C# pattern matching expressions and statements - C# reference"
+description: "Learn about the patterns supported by C# pattern matching expressions and statements."
 ms.date: 04/05/2021
 f1_keywords: 
   - "and_CSharpKeyword"

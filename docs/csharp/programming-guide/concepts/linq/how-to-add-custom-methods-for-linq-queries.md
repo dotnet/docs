@@ -1,6 +1,7 @@
 ---
 title: "How to add custom methods for LINQ queries (C#)"
 description: Learn how to extend the syntax of LINQ queries by adding extension methods to the IEnumerable<T> interface in C#.
+ms.topic: how-to
 ms.date: 08/26/2020
 ms.assetid: 1a500f60-2e10-49fb-8b2a-d8d08e4817cb
 ---

@@ -1,6 +1,7 @@
 ---
 title: "How to execute cleanup code using finally - C# Programming Guide"
 description: Learn how to execute cleanup code using a 'finally' statement. Finally statements ensure that any necessary cleanup of objects occurs immediately.
+ms.topic: how-to
 ms.date: 12/09/2020
 helpviewer_keywords: 
   - "try/finally blocks [C#]"

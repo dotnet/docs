@@ -1,6 +1,7 @@
 ---
 title: "How to query an assembly's metadata with Reflection (LINQ) (C#)"
 description: Learn how to use LINQ with .NET reflection APIs in C# to retrieve specific metadata about methods that match a search criterion.
+ms.topic: how-to
 ms.date: 07/20/2015
 ms.assetid: c4cdce49-b1c8-4420-b12a-9ff7e6671368
 ---

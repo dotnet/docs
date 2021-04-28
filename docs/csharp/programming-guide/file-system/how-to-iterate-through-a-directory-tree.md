@@ -2,6 +2,7 @@
 title: "How to iterate through a directory tree - C# Programming Guide"
 description: Learn how to iterate through a directory tree. Access each file in each nested subdirectory under a specified root folder.
 ms.date: 07/20/2015
+ms.topic: how-to
 helpviewer_keywords: 
   - "iterating through folders [C#]"
   - "file iteration [C#]"
@@ -31,7 +32,7 @@ root.GetDirectories("*.*", System.IO.SearchOption.AllDirectories);
 > [!NOTE]
 > NTFS file systems can contain *reparse points* in the form of *junction points*, *symbolic links*, and *hard links*. .NET methods such as <xref:System.IO.DirectoryInfo.GetFiles%2A> and <xref:System.IO.DirectoryInfo.GetDirectories%2A> will not return any subdirectories under a reparse point. This behavior guards against the risk of entering into an infinite loop when two reparse points refer to each other. In general, you should use extreme caution when you deal with reparse points to ensure that you do not unintentionally modify or delete files. If you require precise control over reparse points, use platform invoke or native code to call the appropriate Win32 file system methods directly.  
   
-## Example  
+## Examples  
 
  The following example shows how to walk a directory tree by using recursion. The recursive approach is elegant but has the potential to cause a stack overflow exception if the directory tree is large and deeply nested.  
   
@@ -39,8 +40,6 @@ root.GetDirectories("*.*", System.IO.SearchOption.AllDirectories);
   
  [!code-csharp[csFilesandFolders#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csFilesAndFolders/CS/FileIteration.cs#1)]  
   
-## Example  
-
  The following example shows how to iterate through files and folders in a directory tree without using recursion. This technique uses the generic <xref:System.Collections.Generic.Stack%601> collection type, which is a last in first out (LIFO) stack.  
   
  The particular exceptions that are handled, and the particular actions that are performed on each file or folder, are provided as examples only. You should modify this code to meet your specific requirements. See the comments in the code for more information.  

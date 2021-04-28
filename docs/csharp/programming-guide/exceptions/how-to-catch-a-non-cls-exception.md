@@ -1,6 +1,7 @@
 ---
 title: "How to catch a non-CLS exception"
 description: Learn how to catch a non-CLS exception. See a code example and view additional available resources.
+ms.topic: how-to
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "exceptions [C#], non-CLS"

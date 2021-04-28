@@ -2,6 +2,7 @@
 title: "How to test for reference equality (Identity) - C# Programming Guide"
 description: Learn how to test for reference equality (Identity). See a code example and view additional available resources.
 ms.date: 07/20/2015
+ms.topic: how-to
 helpviewer_keywords: 
   - "object identity [C#]"
   - "reference equality [C#]"

@@ -2,6 +2,7 @@
 title: "How to display command-line arguments - C# Programming Guide"
 description: Learn how to display command-line arguments. See a code example and view additional available resources.
 ms.date: 03/08/2021
+ms.topic: how-to
 helpviewer_keywords: 
   - "command-line arguments [C#], displaying"
 ms.assetid: b8479f2d-9e05-4d38-82da-2e61246e5437

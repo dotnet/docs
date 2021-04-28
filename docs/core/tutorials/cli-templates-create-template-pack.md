@@ -56,6 +56,8 @@ Running 'dotnet restore' on .\templatepack.csproj...
 Restore succeeded.
 ```
 
+The new project template generates a _program.cs_ file. You can safely delete this file as it's not used by the templates.
+
 Next, open the _templatepack.csproj_ file in your favorite editor and replace the content with the following XML:
 
 ```xml

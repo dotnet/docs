@@ -23,29 +23,29 @@ The compiler will process any tag that is valid XML. The following tags provide 
 
 :::row:::
     :::column:::
-        [\<c>](./code-inline.md)<br>
-        [\<code>](./code.md)<br>
-        [\<example>](./example.md)<br>
-        [\<exception>](./exception.md)\*<br>
-        [\<include>](./include.md)\*<br>
-        [\<inheritdoc>](./inheritdoc.md)<br>
+        [\<c>](./code-inline.md)  
+        [\<code>](./code.md)  
+        [\<example>](./example.md)  
+        [\<exception>](./exception.md)\*  
+        [\<include>](./include.md)\*  
+        [\<inheritdoc>](./inheritdoc.md)  
     :::column-end:::
     :::column:::
-        [\<list>](./list.md)<br>
-        [\<para>](./para.md)<br>
-        [\<param>](./param.md)*<br>
-        [\<paramref>](./paramref.md)<br>
-        [\<permission>](./permission.md)\*<br>
-        [\<remarks>](./remarks.md)<br>
+        [\<list>](./list.md)  
+        [\<para>](./para.md)  
+        [\<param>](./param.md)*  
+        [\<paramref>](./paramref.md)  
+        [\<permission>](./permission.md)\*  
+        [\<remarks>](./remarks.md)  
     :::column-end:::
     :::column:::
-        [\<returns>](./returns.md)<br>
-        [\<see>](./see.md)\*<br>
-        [\<seealso>](./seealso.md)\*<br>
-        [\<summary>](./summary.md)<br>
-        [\<typeparam>](./typeparam.md)\*<br>
-        [\<typeparamref>](./typeparamref.md)<br>
-        [\<value>](./value.md)<br>
+        [\<returns>](./returns.md)  
+        [\<see>](./see.md)\*  
+        [\<seealso>](./seealso.md)\*  
+        [\<summary>](./summary.md)  
+        [\<typeparam>](./typeparam.md)\*  
+        [\<typeparamref>](./typeparamref.md)  
+        [\<value>](./value.md)  
     :::column-end:::
 :::row-end:::
 

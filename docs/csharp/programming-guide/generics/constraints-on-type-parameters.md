@@ -81,6 +81,12 @@ Unlike other constraints, when a type argument violates the `notnull` constraint
 
 Beginning with C# 8.0 in a nullable context, the `class` constraint specifies that the type argument must be a non-nullable reference type. In a nullable context, when a type parameter is a nullable reference type, the compiler generates a warning.
 
+## default constraint
+
+The addition of nullable reference types complicates the use of `T?` in a generic type or method. Prior to C# 8, `T?` could only be used when the `struct` constraint applied to `T`. In that context, `T?` refers to the <xref:System.Nullable%601> type for `T`. Starting with C# 8, `T?` could be used with either the `struct` or `class` constraint, but one of them must be present. When the `class` constraint was used, `T?` referred to the nullable reference type for `T`. Beginning with C# 9, `T?` can be used when neither constraint is applied. In that case, `T?` is interpreted the same as in C# 8 for value types and reference types. However, if `T` is an instance of <xref:Nullable%601>, `T?` is the same as `T`. In other words, it doesn't become `T??`.
+
+Because `T?` can now be used without either the `class` or `struct` constraint, ambiguities can arise in overrides or explicit interface implementations. In both those cases, the override doesn't not include the constraints, but inherits them from the base class. When the base class doesn't apply either the `class` or `struct` constraint, derived classes need to somehow specify an override applies to the base method without either constraint. That's when the derived method applies the `default` constraint. The `default` constraint clarifies *neither* the `class` or `struct` constraint.
+
 ## Unmanaged constraint
 
 Beginning with C# 7.3, you can use the `unmanaged` constraint to specify that the type parameter must be a non-nullable [unmanaged type](../../language-reference/builtin-types/unmanaged-types.md). The `unmanaged` constraint enables you to write reusable routines to work with types that can be manipulated as blocks of memory, as shown in the following example:

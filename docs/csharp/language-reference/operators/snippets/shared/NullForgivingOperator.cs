@@ -39,9 +39,7 @@ namespace operators
         }
 
         public static bool IsValid(Person? person)
-        {
-            return person != null && !string.IsNullOrEmpty(person.Name);
-        }
+            => !string.IsNullOrEmpty(person?.Name);
         // </SnippetUseNullForgiving>
 
         public static Person? Find(string name) => null;
@@ -60,9 +58,7 @@ namespace operators
         }
 
         public static bool IsValid([NotNullWhen(true)] Person? person)
-        {
-            return person != null && !string.IsNullOrEmpty(person.Name);
-        }
+            => !string.IsNullOrEmpty(person?.Name);
         // </SnippetUseAttribute>
 
         public static Person? Find(string name) => null;

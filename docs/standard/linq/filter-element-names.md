@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 1849fb03-f075-421f-863c-e8fb32773cdf
+ms.topic: how-to
 ---
 
 # How to filter on element names (LINQ to XML)

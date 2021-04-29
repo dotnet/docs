@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "serializing objects"
   - "serialization"
   - "objects, serializing"
+ms.topic: how-to
 ---
 
 # How to customize property names and values with System.Text.Json

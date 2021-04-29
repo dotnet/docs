@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 82f86677-560b-49dc-a089-610409939b2a
+ms.topic: how-to
 ---
 
 # Find text in Word documents (LINQ to XML)

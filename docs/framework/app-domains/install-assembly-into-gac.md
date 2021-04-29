@@ -2,6 +2,7 @@
 title: "How to: Install an assembly into the global assembly cache"
 description: Install an assembly into the global assembly cache (GAC) in .NET so it can be shared by many applications. Use Windows Installer or the GAC utility.
 ms.date: 08/20/2019
+ms.topic: how-to
 helpviewer_keywords:
   - "assemblies [.NET Framework], global assembly cache"
   - "Gacutil.exe"

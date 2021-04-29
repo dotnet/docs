@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "serializing objects"
   - "serialization"
   - "objects, serializing"
+ms.topic: how-to
 ---
 
 # How to ignore properties with System.Text.Json

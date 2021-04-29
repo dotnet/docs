@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "converting times"
   - "Date data type, converting"
   - "local time conversions"
-ms.assetid: b605ff97-0c45-4c24-833f-4c6a3e8be64c
+ms.topic: how-to
 ---
 # Converting between DateTime and DateTimeOffset
 

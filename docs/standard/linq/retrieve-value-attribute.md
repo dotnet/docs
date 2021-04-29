@@ -2,7 +2,7 @@
 title: How to retrieve the value of an attribute - LINQ to XML
 description: Retrieve the value of an attribute. You can cast an XAttribute to the desired type, or use the XAttribute.Value property.
 ms.date: 07/20/2015
-ms.assetid: 817bbe89-5979-4234-bf0c-46f63692ac8c
+ms.topic: how-to
 ---
 
 # How to retrieve the value of an attribute (LINQ to XML)

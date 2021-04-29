@@ -19,273 +19,89 @@ The first table in this topic lists keywords that are reserved identifiers in an
 
 :::row:::
     :::column:::
-        [abstract](abstract.md)
-    :::column-end:::
-    :::column:::
-        [as](../operators/type-testing-and-cast.md#as-operator)
-    :::column-end:::
-    :::column:::
-        [base](base.md)
-    :::column-end:::
-    :::column:::
-        [bool](../builtin-types/bool.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [break](break.md)
-    :::column-end:::
-    :::column:::
-        [byte](../builtin-types/integral-numeric-types.md)
-    :::column-end:::
-    :::column:::
-        [case](switch.md)
-    :::column-end:::
-    :::column:::
-        [catch](try-catch.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [char](../builtin-types/char.md)
-    :::column-end:::
-    :::column:::
-        [checked](checked.md)
-    :::column-end:::
-    :::column:::
-        [class](class.md)
-    :::column-end:::
-    :::column:::
-        [const](const.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [continue](continue.md)
-    :::column-end:::
-    :::column:::
-        [decimal](../builtin-types/floating-point-numeric-types.md)
-    :::column-end:::
-    :::column:::
-        [default](default.md)
-    :::column-end:::
-    :::column:::
-        [delegate](../builtin-types/reference-types.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [do](do.md)
-    :::column-end:::
-    :::column:::
-        [double](../builtin-types/floating-point-numeric-types.md)
-    :::column-end:::
-    :::column:::
-        [else](if-else.md)
-    :::column-end:::
-    :::column:::
-        [enum](../builtin-types/enum.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [event](event.md)
-    :::column-end:::
-    :::column:::
-        [explicit](../operators/user-defined-conversion-operators.md)
-    :::column-end:::
-    :::column:::
-        [extern](extern.md)
-    :::column-end:::
-    :::column:::
-        [false](../builtin-types/bool.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [finally](try-finally.md)
-    :::column-end:::
-    :::column:::
-        [fixed](fixed-statement.md)
-    :::column-end:::
-    :::column:::
-        [float](../builtin-types/floating-point-numeric-types.md)
-    :::column-end:::
-    :::column:::
-        [for](for.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [foreach](foreach-in.md)
-    :::column-end:::
-    :::column:::
-        [goto](goto.md)
-    :::column-end:::
-    :::column:::
-        [if](if-else.md)
-    :::column-end:::
-    :::column:::
-        [implicit](../operators/user-defined-conversion-operators.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [in](in.md)
-    :::column-end:::
-    :::column:::
-        [int](../builtin-types/integral-numeric-types.md)
-    :::column-end:::
-    :::column:::
-        [interface](interface.md)
-    :::column-end:::
-    :::column:::
-        [internal](internal.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [is](../operators/is.md)
-    :::column-end:::
-    :::column:::
-        [lock](lock-statement.md)
-    :::column-end:::
-    :::column:::
-        [long](../builtin-types/integral-numeric-types.md)
-    :::column-end:::
-    :::column:::
-        [namespace](namespace.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [new](../operators/new-operator.md)
-    :::column-end:::
-    :::column:::
-        [null](null.md)
-    :::column-end:::
-    :::column:::
-        [object](../builtin-types/reference-types.md)
-    :::column-end:::
-    :::column:::
-        [operator](../operators/operator-overloading.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [out](out.md)
-    :::column-end:::
-    :::column:::
-        [override](override.md)
-    :::column-end:::
-    :::column:::
-        [params](params.md)
-    :::column-end:::
-    :::column:::
-        [private](private.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [protected](protected.md)
-    :::column-end:::
-    :::column:::
-        [public](public.md)
-    :::column-end:::
-    :::column:::
-        [readonly](readonly.md)
-    :::column-end:::
-    :::column:::
-        [ref](ref.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [return](return.md)
-    :::column-end:::
-    :::column:::
-        [sbyte](../builtin-types/integral-numeric-types.md)
-    :::column-end:::
-    :::column:::
-        [sealed](sealed.md)
-    :::column-end:::
-    :::column:::
-        [short](../builtin-types/integral-numeric-types.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [sizeof](../operators/sizeof.md)
-    :::column-end:::
-    :::column:::
-        [stackalloc](../operators/stackalloc.md)
-    :::column-end:::
-    :::column:::
-        [static](static.md)
-    :::column-end:::
-    :::column:::
-        [string](../builtin-types/reference-types.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [struct](../builtin-types/struct.md)
-    :::column-end:::
-    :::column:::
-        [switch](switch.md)
-    :::column-end:::
-    :::column:::
-        [this](this.md)
-    :::column-end:::
-    :::column:::
-        [throw](throw.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [true](../builtin-types/bool.md)
-    :::column-end:::
-    :::column:::
-        [try](try-catch.md)
-    :::column-end:::
-    :::column:::
-        [typeof](../operators/type-testing-and-cast.md#typeof-operator)
-    :::column-end:::
-    :::column:::
-        [uint](../builtin-types/integral-numeric-types.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [ulong](../builtin-types/integral-numeric-types.md)
-    :::column-end:::
-    :::column:::
-        [unchecked](unchecked.md)
-    :::column-end:::
-    :::column:::
-        [unsafe](unsafe.md)
-    :::column-end:::
-    :::column:::
-        [ushort](../builtin-types/integral-numeric-types.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [using](using.md)
-    :::column-end:::
-    :::column:::
-        [virtual](virtual.md)
-    :::column-end:::
-    :::column:::
-        [void](../builtin-types/void.md)
-    :::column-end:::
-    :::column:::
-        [volatile](volatile.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [while](while.md)
+        [abstract](abstract.md)  
+        [as](../operators/type-testing-and-cast.md#as-operator)  
+        [base](base.md)  
+        [bool](../builtin-types/bool.md)  
+        [break](break.md)  
+        [byte](../builtin-types/integral-numeric-types.md)  
+        [case](switch.md)  
+        [catch](try-catch.md)  
+        [char](../builtin-types/char.md)  
+        [checked](checked.md)  
+        [class](class.md)  
+        [const](const.md)  
+        [continue](continue.md)  
+        [decimal](../builtin-types/floating-point-numeric-types.md)  
+        [default](default.md)  
+        [delegate](../builtin-types/reference-types.md)  
+        [do](do.md)  
+        [double](../builtin-types/floating-point-numeric-types.md)  
+        [else](if-else.md)  
+        [enum](../builtin-types/enum.md)  
+    :::column-end:::
+    :::column:::
+        [event](event.md)  
+        [explicit](../operators/user-defined-conversion-operators.md)  
+        [extern](extern.md)  
+        [false](../builtin-types/bool.md)  
+        [finally](try-finally.md)  
+        [fixed](fixed-statement.md)  
+        [float](../builtin-types/floating-point-numeric-types.md)  
+        [for](for.md)  
+        [foreach](foreach-in.md)  
+        [goto](goto.md)  
+        [if](if-else.md)  
+        [implicit](../operators/user-defined-conversion-operators.md)  
+        [in](in.md)  
+        [int](../builtin-types/integral-numeric-types.md)  
+        [interface](interface.md)  
+        [internal](internal.md)  
+        [is](../operators/is.md)  
+        [lock](lock-statement.md)  
+        [long](../builtin-types/integral-numeric-types.md)  
+    :::column-end:::
+    :::column:::
+        [namespace](namespace.md)  
+        [new](../operators/new-operator.md)  
+        [null](null.md)  
+        [object](../builtin-types/reference-types.md)  
+        [operator](../operators/operator-overloading.md)  
+        [out](out.md)  
+        [override](override.md)  
+        [params](params.md)  
+        [private](private.md)  
+        [protected](protected.md)  
+        [public](public.md)  
+        [readonly](readonly.md)  
+        [ref](ref.md)  
+        [return](return.md)  
+        [sbyte](../builtin-types/integral-numeric-types.md)  
+        [sealed](sealed.md)  
+        [short](../builtin-types/integral-numeric-types.md)  
+        [sizeof](../operators/sizeof.md)  
+        [stackalloc](../operators/stackalloc.md)  
+    :::column-end:::
+    :::column:::
+        [static](static.md)  
+        [string](../builtin-types/reference-types.md)  
+        [struct](../builtin-types/struct.md)  
+        [switch](switch.md)  
+        [this](this.md)  
+        [throw](throw.md)  
+        [true](../builtin-types/bool.md)  
+        [try](try-catch.md)  
+        [typeof](../operators/type-testing-and-cast.md#typeof-operator)  
+        [uint](../builtin-types/integral-numeric-types.md)  
+        [ulong](../builtin-types/integral-numeric-types.md)  
+        [unchecked](unchecked.md)  
+        [unsafe](unsafe.md)  
+        [ushort](../builtin-types/integral-numeric-types.md)  
+        [using](using.md)  
+        [virtual](virtual.md)  
+        [void](../builtin-types/void.md)  
+        [volatile](volatile.md)  
+        [while](while.md)  
     :::column-end:::
 :::row-end:::
 
@@ -295,156 +111,54 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
 
 :::row:::
     :::column:::
-        [add](add.md)
+        [add](add.md)  
+        [and](../operators/patterns.md#logical-patterns)  
+        [alias](extern-alias.md)  
+        [ascending](ascending.md)  
+        [async](async.md)  
+        [await](../operators/await.md)  
+        [by](by.md)  
+        [descending](descending.md)  
+        [dynamic](../builtin-types/reference-types.md)  
+        [equals](equals.md)  
+        [from](from-clause.md)  
     :::column-end:::
     :::column:::
-        [and](../operators/patterns.md#logical-patterns)
+        [get](get.md)  
+        [global](../operators/namespace-alias-qualifier.md)  
+        [group](group-clause.md)  
+        [init](init.md)  
+        [into](into.md)  
+        [join](join-clause.md)  
+        [let](let-clause.md)  
+        [managed (function pointer calling convention)](../unsafe-code.md#function-pointers)  
+        [nameof](../operators/nameof.md)  
+        [nint](../builtin-types/nint-nuint.md)  
+        [not](../operators/patterns.md#logical-patterns)  
     :::column-end:::
     :::column:::
-        [alias](extern-alias.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [ascending](ascending.md)
-    :::column-end:::
-    :::column:::
-        [async](async.md)
-    :::column-end:::
-    :::column:::
-        [await](../operators/await.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [by](by.md)
+        [notnull](../../programming-guide/generics/constraints-on-type-parameters.md#notnull-constraint)  
+        [nuint](../builtin-types/nint-nuint.md)  
+        [on](on.md)  
+        [or](../operators/patterns.md#logical-patterns)  
+        [orderby](orderby-clause.md)  
+        [partial (type)](partial-type.md)  
+        [partial (method)](partial-method.md)  
+        [record](../../programming-guide/classes-and-structs/records.md)  
+        [remove](remove.md)  
+        [select](select-clause.md)  
     :::column-end:::
     :::column:::
-        [descending](descending.md)
-    :::column-end:::
-    :::column:::
-        [dynamic](../builtin-types/reference-types.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [equals](equals.md)
-    :::column-end:::
-    :::column:::
-        [from](from-clause.md)
-    :::column-end:::
-    :::column:::
-        [get](get.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [global](../operators/namespace-alias-qualifier.md)
-    :::column-end:::
-    :::column:::
-        [group](group-clause.md)
-    :::column-end:::
-    :::column:::
-        [init](init.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [into](into.md)
-    :::column-end:::
-    :::column:::
-        [join](join-clause.md)
-    :::column-end:::
-    :::column:::
-        [let](let-clause.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [managed (function pointer calling convention)](../unsafe-code.md#function-pointers)
-    :::column-end:::
-    :::column:::
-        [nameof](../operators/nameof.md)
-    :::column-end:::
-    :::column:::
-        [nint](../builtin-types/nint-nuint.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [not](../operators/patterns.md#logical-patterns)
-    :::column-end:::
-    :::column:::
-        [notnull](../../programming-guide/generics/constraints-on-type-parameters.md#notnull-constraint)
-    :::column-end:::
-    :::column:::
-        [nuint](../builtin-types/nint-nuint.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [on](on.md)
-    :::column-end:::
-    :::column:::
-        [or](../operators/patterns.md#logical-patterns)
-    :::column-end:::
-    :::column:::
-        [orderby](orderby-clause.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [partial (type)](partial-type.md)
-    :::column-end:::
-    :::column:::
-        [partial (method)](partial-method.md)
-    :::column-end:::
-    :::column:::
-        [record](../../programming-guide/classes-and-structs/records.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [remove](remove.md)
-    :::column-end:::
-    :::column:::
-        [select](select-clause.md)
-    :::column-end:::
-    :::column:::
-        [set](set.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [unmanaged (function pointer calling convention)](../unsafe-code.md#function-pointers)
-    :::column-end:::
-    :::column:::
-        [unmanaged (generic type constraint)](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint)
-    :::column-end:::
-    :::column:::
-        [value](value.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [var](var.md)
-    :::column-end:::
-    :::column:::
-        [when (filter condition)](when.md)
-    :::column-end:::
-    :::column:::
-        [where (generic type constraint)](where-generic-type-constraint.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [where (query clause)](where-clause.md)
-    :::column-end:::
-    :::column:::
-        [with](../operators/with-expression.md)
-    :::column-end:::
-    :::column:::
-        [yield](yield.md)
+        [set](set.md)  
+        [unmanaged (function pointer calling convention)](../unsafe-code.md#function-pointers)  
+        [unmanaged (generic type constraint)](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint)  
+        [value](value.md)  
+        [var](var.md)  
+        [when (filter condition)](when.md)  
+        [where (generic type constraint)](where-generic-type-constraint.md)  
+        [where (query clause)](where-clause.md)  
+        [with](../operators/with-expression.md)  
+        [yield](yield.md)  
     :::column-end:::
 :::row-end:::
 

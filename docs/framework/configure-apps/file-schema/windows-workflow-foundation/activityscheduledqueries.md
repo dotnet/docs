@@ -2,7 +2,6 @@
 description: "Learn more about: <activityScheduledQueries>"
 title: "<activityScheduledQueries>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: ca6e82f1-54f2-48d6-899c-9873065b5547
 ---
 # \<activityScheduledQueries>

@@ -2,7 +2,6 @@
 description: "Learn more about: <workflowInstanceQueries>"
 title: "<workflowInstanceQueries>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: 4fe7ce85-cf9a-4dbf-a8f7-bc9b1fc2fe35
 ---
 # \<workflowInstanceQueries>

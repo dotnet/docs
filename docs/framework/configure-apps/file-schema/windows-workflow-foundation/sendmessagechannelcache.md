@@ -2,7 +2,6 @@
 description: "Learn more about: <sendMessageChannelCache>"
 title: "<sendMessageChannelCache>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: 241e428e-5030-4b13-8a0a-69f05288d3d9
 ---
 # \<sendMessageChannelCache>

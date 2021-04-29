@@ -2,7 +2,6 @@
 description: "Learn more about: <activityStateQueries>"
 title: "<activityStateQueries>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: bdd3c8ae-a13f-4df1-9b3c-a9d6c4bb1b5f
 ---
 # \<activityStateQueries>

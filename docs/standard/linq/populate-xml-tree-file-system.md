@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 2aa2ccac-4a22-47ae-9107-3bb8df232576
+ms.topic: how-to
 ---
 
 # How to populate an XML tree from the file system (LINQ to XML)

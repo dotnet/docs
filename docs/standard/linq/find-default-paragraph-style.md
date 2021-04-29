@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: be102177-8ab0-444a-b671-7023e555ffdb
+ms.topic: how-to
 ---
 # Find the default paragraph style (LINQ to XML)
 

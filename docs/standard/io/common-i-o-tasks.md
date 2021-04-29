@@ -4,7 +4,7 @@ description: Learn how to do common file tasks & common directory tasks using cl
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "I/O, common tasks"
-ms.assetid: bf00c380-706a-4e38-b829-454a480629fc
+ms.topic: reference
 ---
 # Common I/O Tasks
 

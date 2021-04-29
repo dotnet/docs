@@ -9,6 +9,7 @@ dev_langs:
 helpviewer_keywords:
   - "DisposeAsync method"
   - "garbage collection, DisposeAsync method"
+ms.topic: how-to
 ---
 
 # Implement a DisposeAsync method

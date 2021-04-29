@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 2944a0d4-fd33-4e2e-badd-abb0f9be2fcc
+ms.topic: how-to
 ---
 
 # Refactor into pure functions (LINQ to XML)

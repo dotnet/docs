@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "local time zone access"
   - "time zones [.NET], retrieving"
   - "time zones [.NET], UTC"
-ms.assetid: 961fb70b-83f0-4dab-a042-cb5fcd817cf5
+ms.topic: how-to
 ---
 # How to: Access the predefined UTC and local time zone objects
 

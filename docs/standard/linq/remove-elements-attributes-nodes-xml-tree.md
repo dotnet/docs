@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 07dd06d6-1117-4077-bf98-9120cf51176e
+ms.topic: how-to
 ---
 
 # Remove elements, attributes, and nodes from an XML tree (LINQ to XML)

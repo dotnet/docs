@@ -8,7 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "instantiating time zone objects"
   - "time zone objects [.NET], instantiation"
-ms.assetid: 8cb620e5-c6a6-4267-a52e-beeb73cd1a34
+ms.topic: how-to
 ---
 # How to: Instantiate a TimeZoneInfo object
 

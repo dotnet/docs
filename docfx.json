@@ -205,7 +205,7 @@
         "docs/csharp/roslyn-sdk/tutorials/*.md" : "tutorial",
         "docs/csharp/tour-of-csharp/tutorials/**" : "tutorial",
         "docs/csharp/tutorials/**" : "tutorial",
-        "docs/framework/**/*how-to*.md": "how-to",
+        "docs/framework/**/how-to*.md": "how-to",
         "docs/framework/additional-apis/**/**.md": "managed-reference",
         "docs/framework/unmanaged-api/**/**.md": "reference",
         "docs/framework/wcf/diagnostics/etw/**.md": "reference",
@@ -220,6 +220,7 @@
         "docs/fundamentals/diagnostics/**.md": "reference",
         "docs/standard/**/*how-to*.md": "how-to",
         "docs/standard/base-types/*.md": "how-to",
+        "docs/standard/data/sqlite/*.md": "reference",
         "docs/visual-basic/language-reference/**/*.md": "reference",
         "docs/visual-basic/reference/**/*.md": "reference",
         "docs/visual-basic/misc/bc*.md": "error-reference"

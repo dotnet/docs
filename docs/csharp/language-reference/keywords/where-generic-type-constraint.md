@@ -2,7 +2,7 @@
 description: "where (generic type constraint) - C# Reference"
 title: "where (generic type constraint) - C# Reference"
 
-ms.date: 04/15/2020
+ms.date: 04/28/2021
 f1_keywords:
   - "whereconstraint"
   - "whereconstraint_CSharpKeyword"
@@ -41,7 +41,7 @@ The addition of nullable reference types introduces a potential ambiguity in the
 
 :::code language="csharp" source="snippets/GenericWhereConstraints.cs" ID="BaseClass":::
 
-You use the `default` constraint to specify that your derived class overrides the method without the constraint in your derived class, or explicit interface implementation. It is only valid on methods that override base methods, or explicit interface implementations:
+You use the `default` constraint to specify that your derived class overrides the method without the constraint in your derived class, or explicit interface implementation. It's only valid on methods that override base methods, or explicit interface implementations:
 
 :::code language="csharp" source="snippets/GenericWhereConstraints.cs" ID="DerivedClass":::
 

@@ -1,7 +1,7 @@
 ---
 description: "default - C# Reference"
 title: "default - C# Reference"
-ms.date: 08/04/2017
+ms.date: 04/28/2021
 f1_keywords: 
   - "default"
 helpviewer_keywords: 
@@ -15,7 +15,7 @@ The `default` keyword can be used in three ways:
 
 - To specify the default label in the [`switch` statement](switch.md).
 - As the [default operator or literal](../operators/default.md) to produce the default value of a type.
-- As the [`default` type constraint](where-generic-type-constraint.md) on a generic method override or explict interface implementation.
+- As the [`default` type constraint](where-generic-type-constraint.md) on a generic method override or explicit interface implementation.
 
 ## See also
 

@@ -23,71 +23,29 @@ The compiler will process any tag that is valid XML. The following tags provide 
 
 :::row:::
     :::column:::
-        [\<c>](./code-inline.md)
+        [\<c>](./code-inline.md)  
+        [\<code>](./code.md)  
+        [\<example>](./example.md)  
+        [\<exception>](./exception.md)\*  
+        [\<include>](./include.md)\*  
+        [\<inheritdoc>](./inheritdoc.md)  
     :::column-end:::
     :::column:::
-        [\<para>](./para.md)
+        [\<list>](./list.md)  
+        [\<para>](./para.md)  
+        [\<param>](./param.md)*  
+        [\<paramref>](./paramref.md)  
+        [\<permission>](./permission.md)\*  
+        [\<remarks>](./remarks.md)  
     :::column-end:::
     :::column:::
-        [\<see>](./see.md)*
-    :::column-end:::
-    :::column:::
-        [\<value>](./value.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [\<code>](./code.md)
-    :::column-end:::
-    :::column:::
-        [\<param>](./param.md)*
-    :::column-end:::
-    :::column:::
-        [\<seealso>](./seealso.md)*
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [\<example>](./example.md)
-    :::column-end:::
-    :::column:::
-        [\<paramref>](./paramref.md)
-    :::column-end:::
-    :::column:::
-        [\<summary>](./summary.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [\<exception>](./exception.md)*
-    :::column-end:::
-    :::column:::
-        [\<permission>](./permission.md)*
-    :::column-end:::
-    :::column:::
-        [\<typeparam>](./typeparam.md)*
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [\<include>](./include.md)*
-    :::column-end:::
-    :::column:::
-        [\<remarks>](./remarks.md)
-    :::column-end:::
-    :::column:::
-        [\<typeparamref>](./typeparamref.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        [\<list>](./list.md)
-    :::column-end:::
-    :::column:::
-        [\<inheritdoc>](./inheritdoc.md)
-    :::column-end:::
-    :::column:::
-       [\<returns>](./returns.md)
+        [\<returns>](./returns.md)  
+        [\<see>](./see.md)\*  
+        [\<seealso>](./seealso.md)\*  
+        [\<summary>](./summary.md)  
+        [\<typeparam>](./typeparam.md)\*  
+        [\<typeparamref>](./typeparamref.md)  
+        [\<value>](./value.md)  
     :::column-end:::
 :::row-end:::
 

@@ -14,21 +14,19 @@ ms.date: 04/29/2021
 ## Synopsis
 
 ```dotnetcli
-
-dotnet new [<TEMPLATE_NAME>] -l|--list [--author <AUTHOR>] [-lang|--language {"C#"|"F#"|VB}] [--tag <TAG>] [--type <TYPE>]
-    [--columns <COLUMNS>] [--columns-all]
-
+dotnet new [<TEMPLATE_NAME>] -l|--list [--author <AUTHOR>] [-lang|--language {"C#"|"F#"|VB}]
+    [--tag <TAG>] [--type <TYPE>] [--columns <COLUMNS>] [--columns-all]
 ```
 
 ## Description
 
-The `dotnet new --list` option lists available templates to be run using `dotnet new`. If the <TEMPLATE_NAME> is specified, lists templates containing the specified name.
+The `dotnet new --list` option lists available templates to use with `dotnet new`. If the <TEMPLATE_NAME> is specified, lists templates containing the specified name. This option lists only default and installed templates. To find templates in NuGet that you can install locally, use the [`--search`](dotnet-new-search.md) option.
 
 ## Arguments
 
 - **`TEMPLATE_NAME`**
 
-If the argument is specified, only the templates containing `<TEMPLATE_NAME>` in template name or short name will be shown.
+  If the argument is specified, only the templates containing `<TEMPLATE_NAME>` in template name or short name will be shown.
 
 ## Options
 
@@ -44,7 +42,7 @@ If the argument is specified, only the templates containing `<TEMPLATE_NAME>` in
   - `author` - The template author.
   - `type` - The template type: project or item.
   
-  The template name and short name are always shown. The default list of columns is template name, short name, language and tags. This list is equivalent to specifying `--columns=language,tags`.
+  The template name and short name are always shown. The default list of columns is template name, short name, language, and tags. This list is equivalent to specifying `--columns=language,tags`.
   Available since .NET Core 5.0.300 SDK.
 
 - **`--columns-all`**
@@ -74,7 +72,7 @@ If the argument is specified, only the templates containing `<TEMPLATE_NAME>` in
   dotnet new --list
   ```
 
-- List all templates available for Single Page Application (SPA) templates:
+- List all Single Page Application (SPA) templates:
 
   ```dotnetcli
   dotnet new spa --list
@@ -98,7 +96,7 @@ If the argument is specified, only the templates containing `<TEMPLATE_NAME>` in
   dotnet new --list --type item
   ```
 
-- List all C# templates specifying the author and the type in the output.
+- List all C# templates, showing the author and the type in the output.
 
   ```dotnetcli
   dotnet new --list --language "C#" --columns "author,type"

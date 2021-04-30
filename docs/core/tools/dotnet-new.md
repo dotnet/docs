@@ -117,7 +117,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
 ## Template options
 
-Each template may have additional options defined. The template options defined in .NET default templates are explained [here](dotnet-new-sdk-templates.md).
+Each template may have additional options defined. For more information, see [.NET default templates for `dotnet new`](dotnet-new-sdk-templates.md).
 
 ## Examples
 
@@ -162,7 +162,7 @@ Each template may have additional options defined. The template options defined 
 - [dotnet new --list option](dotnet-new-list.md)
 - [dotnet new --search option](dotnet-new-search.md)
 - [dotnet new --install option](dotnet-new-install.md)
-- [.NET default templates](dotnet-new-sdk-templates.md)
+- [.NET default templates for dotnet new](dotnet-new-sdk-templates.md)
 - [Custom templates for dotnet new](custom-templates.md)
 - [Create a custom template for dotnet new](../tutorials/cli-templates-create-item-template.md)
 - [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)

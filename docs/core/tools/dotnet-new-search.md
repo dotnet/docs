@@ -1,6 +1,6 @@
 ---
 title: dotnet new --search option
-description: The dotnet new --search option searches for the templates on NuGet.org.
+description: The dotnet new --search option searches for templates on NuGet.org.
 ms.date: 04/29/2021
 ---
 # dotnet new --search option
@@ -14,26 +14,23 @@ ms.date: 04/29/2021
 ## Synopsis
 
 ```dotnetcli
-
 dotnet new <TEMPLATE_NAME> --search
 
 dotnet new [<TEMPLATE_NAME>] --search [--author <AUTHOR>] [-lang|--language {"C#"|"F#"|VB}] 
     [--package <PACKAGE>] [--tag <TAG>] [--type <TYPE>]
     [--columns <COLUMNS>] [--columns-all]
-
 ```
 
 ## Description
 
-The `dotnet new --search` option searches for the templates supported by `dotnet new` on NuGet.org. When the <TEMPLATE_NAME> is specified, searches for the templates containing the specified name.
-The option is available since .NET Core 5.0.300 SDK.
+The `dotnet new --search` option searches for templates supported by `dotnet new` on NuGet.org. When the <TEMPLATE_NAME> is specified, searches for templates containing the specified name.
 
 ## Arguments
 
 - **`TEMPLATE_NAME`**
 
-If the argument is specified, only the templates containing `<TEMPLATE_NAME>` in template name or short name will be shown.
-The argument is mandatory when `--author`, `--language`, `--package`, `--tag` or `--type` options are not specified.
+  If the argument is specified, only templates containing `<TEMPLATE_NAME>` in the template name or short name will be shown.
+  The argument is mandatory when `--author`, `--language`, `--package`, `--tag` or `--type` options are not specified.
 
 ## Options
 
@@ -82,7 +79,7 @@ The argument is mandatory when `--author`, `--language`, `--package`, `--tag` or
   dotnet new spa --search
   ```
 
-- Search for all templates available on NuGet.org matching the *we* substring and supporting F# language.
+- Search for all templates available on NuGet.org matching the *we* substring and supporting the F# language.
 
   ```dotnetcli
   dotnet new we --search --lang "F#"
@@ -94,10 +91,10 @@ The argument is mandatory when `--author`, `--language`, `--package`, `--tag` or
   dotnet new --search --type item
   ```
 
-- Search for all C# templates specifying the type and tags in the output.
+- Search for all C# templates, showing the type and tags in the output.
 
   ```dotnetcli
-  dotnet new -l -lang "C#" --columns "type,tags"
+  dotnet new --search -lang "C#" --columns "type,tags"
   ```
 
 ## See also

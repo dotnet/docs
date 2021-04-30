@@ -2,7 +2,7 @@
 title: Introduction to the Traffic Control sample application
 description: An overview of the Traffic Control sample application.
 author: edwinvw
-ms.date: 04/26/2021
+ms.date: 04/30/2021
 ---
 
 # Traffic Control sample application
@@ -13,7 +13,7 @@ The Traffic Control sample application simulates a highway traffic control syste
 
 Although the simulation is quite simple, responsibilities within the system are separated into several microservices. In figure 4.1 you see an overview of the services that are part of the application:
 
-![The services in the sample application](media/sample-application/services.png)
+:::image type="content" source="./media/sample-application/services.png" alt-text="The services in the sample application.":::
 
 **Figure 4-1**. The services in the sample application.
 
@@ -27,7 +27,7 @@ Although the simulation is quite simple, responsibilities within the system are 
 
 The flow of the simulation is depicted in the sequence diagram in figure 4.2:
 
-![Sequence diagram of the simulation flow](media/sample-application/sequence.png)
+:::image type="content" source="./media/sample-application/sequence.png" alt-text="Sequence diagram of the simulation flow.":::
 
 **Figure 4-2**. Sequence diagram of the simulation flow.
 
@@ -41,7 +41,7 @@ Another drawback is that the vehicle state for every vehicle is stored in memory
 
 One of the goals of Dapr is to provide cloud-native capabilities for microservices applications. The Traffic Control application uses Dapr building blocks to make it more robust and deal with the drawbacks of the design as described in the previous paragraph. In Figure 4.3 you see the traffic control application and the Dapr building blocks it uses:
 
-![Solution with Dapr building blocks](media/sample-application/dapr-solution.png)
+:::image type="content" source="./media/sample-application/dapr-solution.png" alt-text="Solution with Dapr building blocks.":::
 
 **Figure 4-3**. Traffic Control application with Dapr building blocks.
 
@@ -62,7 +62,7 @@ One of the goals of Dapr is to provide cloud-native capabilities for microservic
 
 Figure 4.4 shows a sequence diagram of the flow of the simulation with all the Dapr building blocks in place:
 
-![Sequence diagram of simulation flow with Dapr building blocks](media/sample-application/sequence-dapr.png)
+:::image type="content" source="./media/sample-application/sequence-dapr.png" alt-text="Sequence diagram of simulation flow with Dapr building blocks.":::
 
 **Figure 4-4**. Sequence diagram of simulation flow with Dapr building blocks.
 

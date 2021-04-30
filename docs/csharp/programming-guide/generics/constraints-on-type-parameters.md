@@ -75,11 +75,18 @@ The usefulness of type parameters as constraints with generic classes is limited
 
 ## NotNull constraint
 
-Beginning with C# 8.0 in a nullable context, you can use the `notnull` constraint to specify that the type argument must be a non-nullable value type or non-nullable reference type. The `notnull` constraint can only be used in a `nullable enable` context. The compiler generates a warning if you add the `notnull` constraint in a nullable oblivious context.
+Beginning with C# 8.0, you can use the `notnull` constraint in a nullable context to specify that the type argument must be a non-nullable value type or non-nullable reference type. The `notnull` constraint has an effect only when used in a `nullable enable` context. The constraint has no effect in a nullable oblivious context;The compiler generates a warning if you add the `notnull` constraint .
 
-Unlike other constraints, when a type argument violates the `notnull` constraint, the compiler generates a warning when that code is compiled in a `nullable enable` context. If the code is compiled in a nullable oblivious context, the compiler doesn't generate any warnings or errors.
+Unlike other constraints, when a type argument violates the `notnull` constraint, the compiler generates a warning when that code is compiled in a `nullable enable` context. If the code is compiled in a nullable oblivious context, the compiler doesn't generate any warnings or errors for the type argument constraint violation.
 
-Beginning with C# 8.0 in a nullable context, the `class` constraint specifies that the type argument must be a non-nullable reference type. In a nullable context, when a type parameter is a nullable reference type, the compiler generates a warning.
+This behavior is summarized in the following table:
+
+| Context type       | `notnull` constraint applied | Constraint violation |
+|--------------------|------------------------------|----------------------|
+| `nullable enable`  | No warning                   | Warning              |
+| nullable oblivious | Warning                      | No warning           |
+
+Beginning with C# 8.0, the `class` constraint in a nullable context specifies that the type argument must be a non-nullable reference type. In a nullable context, when a type parameter is a nullable reference type, the compiler generates a warning.
 
 ## default constraint
 

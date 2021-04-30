@@ -41,7 +41,7 @@ http://localhost:<dapr-port>/v1.0/state/<store-name>/
 
 Figure 5-1 shows how a Dapr-enabled shopping basket service stores a key/value pair using the Dapr state store component named `statestore`.
 
-![Diagram of storing a key/value pair in a Dapr state store.](media/state-management/state-management-flow.png)
+:::image type="content" source="./media/state-management/state-management-flow.png" alt-text="Diagram of storing a key/value pair in a Dapr state store.":::
 
 **Figure 5-1**. Storing a key/value pair in a Dapr state store.
 
@@ -77,7 +77,7 @@ The following sections explain how to use the more advanced features of the stat
 
 The [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) is a set of principles that apply to distributed systems that store state. Figure 5-2 shows the three properties of the CAP theorem.
 
-![The CAP theorem.](media/state-management/cap-theorem.png)
+:::image type="content" source="./media/state-management/cap-theorem.png" alt-text="The CAP theorem.":::
 
 **Figure 5-2**. The CAP theorem.
 

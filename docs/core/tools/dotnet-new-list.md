@@ -78,13 +78,13 @@ The `dotnet new --list` option lists available templates to use with `dotnet new
   dotnet new spa --list
   ```
 
-- List all templates matching the *we* substring. No exact match is found, so substring matching runs against both the short name and name columns.
+- List all templates matching the *we* substring.
 
   ```dotnetcli
   dotnet new we --list
   ```
 
-- List all templates matching the *we* substring that supports F# language. No exact match is found, so substring matching runs against both the short name and name columns.
+- List all templates matching the *we* substring that support the F# language.
 
   ```dotnetcli
   dotnet new we --list --language "F#"

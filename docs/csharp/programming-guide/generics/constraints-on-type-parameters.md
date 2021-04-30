@@ -1,7 +1,7 @@
 ---
 title: "Constraints on type parameters - C# Programming Guide"
 description: Learn about constraints on type parameters. Constraints tell the compiler what capabilities a type argument must have.
-ms.date: 04/12/2018
+ms.date: 04/28/2021
 helpviewer_keywords: 
   - "generics [C#], type constraints"
   - "type constraints [C#]"
@@ -18,6 +18,7 @@ Constraints inform the compiler about the capabilities a type argument must have
 |`where T : class`|The type argument must be a reference type. This constraint applies also to any class, interface, delegate, or array type. In a nullable context in C# 8.0 or later, `T` must be a non-nullable reference type. |
 |`where T : class?`|The type argument must be a reference type, either nullable or non-nullable. This constraint applies also to any class, interface, delegate, or array type.|
 |`where T : notnull`|The type argument must be a non-nullable type. The argument can be a non-nullable reference type in C# 8.0 or later, or a non-nullable value type. |
+|`where T : default`|This constraint resolves the ambiguity when you need to specify an unconstrained type parameter when you override a method or provide an explicit interface implementation. The `default` constraint implies the base method without either the `class` or `struct` constraint. For more information, see the [`default` constraint](~/_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md#default-constraint) spec proposal.|
 |`where T : unmanaged`|The type argument must be a non-nullable [unmanaged type](../../language-reference/builtin-types/unmanaged-types.md). The `unmanaged` constraint implies the `struct` constraint and can't be combined with either the `struct` or `new()` constraints.|
 |`where T : new()`|The type argument must have a public parameterless constructor. When used together with other constraints, the `new()` constraint must be specified last. The `new()` constraint can't be combined with the `struct` and `unmanaged` constraints.|
 |`where T :` *\<base class name>*|The type argument must be or derive from the specified base class. In a nullable context in C# 8.0 and later, `T` must be a non-nullable reference type derived from the specified base class. |
@@ -28,7 +29,7 @@ Constraints inform the compiler about the capabilities a type argument must have
 
 ## Why use constraints
 
-Constraints specify the capabilities and expectations of a type parameter. Declaring those constraints means you can use the operations and method calls of the constraining type. If your generic class or method uses any operation on the generic members beyond simple assignment or calling any methods not supported by <xref:System.Object?displayProperty=nameWithType>, you'll have to apply constraints to the type parameter. For example, the base class constraint tells the compiler that only objects of this type or derived from this type will be used as type arguments. Once the compiler has this guarantee, it can allow methods of that type to be called in the generic class. The following code example demonstrates the functionality you can add to the `GenericList<T>` class (in [Introduction to Generics](../../../standard/generics/index.md)) by applying a base class constraint.
+Constraints specify the capabilities and expectations of a type parameter. Declaring those constraints means you can use the operations and method calls of the constraining type. If your generic class or method uses any operation on the generic members beyond simple assignment or calling any methods not supported by <xref:System.Object?displayProperty=nameWithType>, you'll apply constraints to the type parameter. For example, the base class constraint tells the compiler that only objects of this type or derived from this type will be used as type arguments. Once the compiler has this guarantee, it can allow methods of that type to be called in the generic class. The following code example demonstrates the functionality you can add to the `GenericList<T>` class (in [Introduction to Generics](../../../standard/generics/index.md)) by applying a base class constraint.
 
 [!code-csharp[using the class and struct constraints](snippets/GenericWhereConstraints.cs#9)]
 
@@ -79,6 +80,12 @@ Beginning with C# 8.0 in a nullable context, you can use the `notnull` constrain
 Unlike other constraints, when a type argument violates the `notnull` constraint, the compiler generates a warning when that code is compiled in a `nullable enable` context. If the code is compiled in a nullable oblivious context, the compiler doesn't generate any warnings or errors.
 
 Beginning with C# 8.0 in a nullable context, the `class` constraint specifies that the type argument must be a non-nullable reference type. In a nullable context, when a type parameter is a nullable reference type, the compiler generates a warning.
+
+## default constraint
+
+The addition of nullable reference types complicates the use of `T?` in a generic type or method. Prior to C# 8, `T?` could only be used when the `struct` constraint applied to `T`. In that context, `T?` refers to the <xref:System.Nullable%601> type for `T`. Starting with C# 8, `T?` could be used with either the `struct` or `class` constraint, but one of them must be present. When the `class` constraint was used, `T?` referred to the nullable reference type for `T`. Beginning with C# 9, `T?` can be used when neither constraint is applied. In that case, `T?` is interpreted the same as in C# 8 for value types and reference types. However, if `T` is an instance of <xref:System.Nullable%601>, `T?` is the same as `T`. In other words, it doesn't become `T??`.
+
+Because `T?` can now be used without either the `class` or `struct` constraint, ambiguities can arise in overrides or explicit interface implementations. In both those cases, the override doesn't include the constraints, but inherits them from the base class. When the base class doesn't apply either the `class` or `struct` constraint, derived classes need to somehow specify an override applies to the base method without either constraint. That's when the derived method applies the `default` constraint. The `default` constraint clarifies *neither* the `class` nor `struct` constraint.
 
 ## Unmanaged constraint
 

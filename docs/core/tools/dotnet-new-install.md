@@ -32,7 +32,8 @@ The `dotnet new --install` command installs a template package from the `PATH` o
 
 - **`--nuget-source <SOURCE>`**
   
-  Specifies an additional NuGet source to use during installation.
+  By default, `dotnet new --install` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet source the package can be installed from. If `--nuget-source` is specified, the source will be added to the list of sources to be checked.  
+  To check the configured sources for the current directory use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior)
 
 ## Examples
 

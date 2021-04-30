@@ -236,7 +236,7 @@ Dapr [pub/sub components](https://github.com/dapr/components-contrib/tree/master
 
 These components are created by the community in a [component-contrib repository on GitHub](https://github.com/dapr/components-contrib/tree/master/pubsub). You're encouraged to write your own Dapr component for a message broker that isn't yet supported.
 
-### Configure pub/sub components
+### Configuration
 
 Using a Dapr configuration file, you can specify the pub/sub component(s) to use. This configuration contains several fields. The `name` field specifies the pub/sub component that you want to use. When sending or receiving a message, you need to specify this name (as you saw earlier in the `PublishEventAsync` method signature).
 

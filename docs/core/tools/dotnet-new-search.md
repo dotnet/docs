@@ -82,7 +82,7 @@ The `dotnet new --search` option searches for templates supported by `dotnet new
 - Search for all templates available on NuGet.org matching the *we* substring and supporting the F# language.
 
   ```dotnetcli
-  dotnet new we --search --lang "F#"
+  dotnet new we --search --language "F#"
   ```
 
 - Search for item templates.
@@ -94,7 +94,7 @@ The `dotnet new --search` option searches for templates supported by `dotnet new
 - Search for all C# templates, showing the type and tags in the output.
 
   ```dotnetcli
-  dotnet new --search -lang "C#" --columns "type,tags"
+  dotnet new --search --language "C#" --columns "type,tags"
   ```
 
 ## See also

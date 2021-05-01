@@ -247,7 +247,7 @@ In Dapr Traffic Control, the FineCollection service uses the service invocation 
  }
  ```
 
-This code uses a proxy of type `VehicleRegistrationService` to call the `VehicleRegistration` service. ASP.NET Core injects an instance of this service using constructor injection:
+This code uses a proxy of type `VehicleRegistrationService` to call the VehicleRegistration service. ASP.NET Core injects an instance of this service using constructor injection:
 
  ```csharp
  public CollectionController(

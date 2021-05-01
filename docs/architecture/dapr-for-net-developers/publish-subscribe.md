@@ -15,7 +15,7 @@ The primary advantage of the Publish-Subscribe pattern is **loose coupling**, so
 
 Figure 7-1 shows the high-level architecture of the pub/sub pattern.
 
-![The pub/sub pattern](./media/publish-subscribe/pub-sub-pattern.png)
+:::image type="content" source="./media/publish-subscribe/pub-sub-pattern.png" alt-text="The pub/sub pattern.":::
 
 **Figure 7-1**. The pub/sub pattern.
 
@@ -40,7 +40,7 @@ The Dapr publish & subscribe building block provides a platform-agnostic API fra
 
 The service calls the pub/sub API on the Dapr sidecar. The sidecar then makes calls into a pre-defined Dapr pub/sub component that encapsulates a specific message broker product. Figure 7-2 shows the Dapr pub/sub messaging stack.
 
-![The pub/sub stack](./media/publish-subscribe/pub-sub-buildingblock.png)
+:::image type="content" source="./media/publish-subscribe/pub-sub-buildingblock.png" alt-text="The Dapr pub/sub stack.":::
 
 **Figure 7-2**. The Dapr pub/sub stack.
 
@@ -97,9 +97,9 @@ In the JSON response, you can see the application wants to subscribe to topics `
 
 Figure 7-3 presents the flow of the example.
 
-![Example pub/sub flow with Dapr](media/publish-subscribe/pub-sub-flow.png)
+:::image type="content" source="./media/publish-subscribe/pub-sub-flow.png" alt-text="Pub/sub flow with Dapr.":::
 
-**Figure 7-3**. pub/sub flow with Dapr.
+**Figure 7-3**. Pub/sub flow with Dapr.
 
 From the previous figure, note the flow:
 

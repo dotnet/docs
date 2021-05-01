@@ -48,7 +48,7 @@ The [abstract](../../language-reference/keywords/abstract.md) keyword enables yo
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes and Structs](./index.md)
+- [Classes, structs, and records](./index.md)
 - [Inheritance](./inheritance.md)
 - [Methods](./methods.md)
 - [Fields](./fields.md)

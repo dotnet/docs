@@ -28,6 +28,6 @@ This example declares an [interface](../../language-reference/keywords/interface
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes and Structs](../classes-and-structs/index.md)
+- [Classes, structs, and records](../classes-and-structs/index.md)
 - [Interfaces](./index.md)
 - [How to explicitly implement members of two interfaces](./how-to-explicitly-implement-members-of-two-interfaces.md)

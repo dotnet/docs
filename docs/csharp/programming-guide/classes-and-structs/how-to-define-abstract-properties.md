@@ -56,6 +56,6 @@ The following example shows how to define [abstract](../../language-reference/ke
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes and Structs](./index.md)
+- [Classes, structs, and records](./index.md)
 - [Abstract and Sealed Classes and Class Members](./abstract-and-sealed-classes-and-class-members.md)
 - [Properties](./properties.md)

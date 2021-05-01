@@ -68,7 +68,7 @@ Figure 4.4 shows a sequence diagram of the flow of the simulation with all the D
 
 The remainder of this book features a separate chapter for each of the building blocks. Each chapter explains in detail how a building block works and how to configure and use it. Finally, each chapter will explain how the Traffic Control sample application uses the building block.
 
-You can get the code for the sample application from the following GitHub repo: [https://github.com/EdwinVW/dapr-traffic-control](https://github.com/EdwinVW/dapr-traffic-control).
+You can get the code for the sample application from the following GitHub repo: [https://github.com/EdwinVW/dapr-traffic-control](https://github.com/EdwinVW/dapr-traffic-control). This repository contains a detailed description on how you can run the sample application on your machine.
 
 ## Summary
 

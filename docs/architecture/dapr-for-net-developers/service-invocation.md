@@ -230,15 +230,80 @@ In the example above, DaprClient serializes the given `order` object using [Prot
 
 ## Sample application: Dapr Traffic Control
 
-> **TODO**
+In Dapr Traffic Control, the FineCollection service uses the service invocation building block to retrieve vehicle- and owner information from the VehicleRegistration service. The `CollectionController` class contains code to retrieve the information. This is a regular ASP.NET Core Controller. The `CollectionController.CollectFine` method takes an incoming `SpeedingViolation` message and handles that. Near the beginning of the method, you find the code that retrieves the vehicle- and owner information:
+
+ ```csharp
+ [Topic("pubsub", "speedingviolations")]
+ [Route("collectfine")]
+ [HttpPost()]
+ public async Task<ActionResult> CollectFine(SpeedingViolation speedingViolation, [FromServices] DaprClient daprClient)
+ {
+    // ...
+
+    // get owner info (Dapr service invocation)
+    var vehicleInfo = _vehicleRegistrationService.GetVehicleInfo(speedingViolation.VehicleId).Result;
+     
+    // ...
+ }
+ ```
+
+This code uses a proxy of type `VehicleRegistrationService` to call the `VehicleRegistration` service. ASP.NET Core injects an instance of this service using constructor injection:
+
+ ```csharp
+ public CollectionController(
+     ILogger<CollectionController> logger,
+     IFineCalculator fineCalculator, 
+     VehicleRegistrationService vehicleRegistrationService,
+     DaprClient daprClient)
+ {
+     // ...
+ }
+ ```
+
+The `VehicleRegistrationService` class contains 1 method: `GetVehicleInfo`. This method uses the ASP.NET Core `HttpClient` to call the VehicleRegistration service:
+
+ ```csharp
+ public class VehicleRegistrationService
+ {
+     private HttpClient _httpClient;
+     public VehicleRegistrationService(HttpClient httpClient)
+     {
+         _httpClient = httpClient;
+     }
+ 
+     public async Task<VehicleInfo> GetVehicleInfo(string licenseNumber)
+     {
+         return await _httpClient.GetFromJsonAsync<VehicleInfo>(
+             $"vehicleinfo/{licenseNumber}");
+     }
+ }
+ ```
+
+This code uses no Dapr specific classes because it leverages the Dapr ASP.NET Core integration as described in [Invoke HTTP services using HttpClient](#invoke-http-services-using-httpclient). The following code in the `ConfigureService` method of the `Startup` class registers the `VehicleRegistrationService` proxy:
+
+```csharp
+// ...
+
+services.AddSingleton<VehicleRegistrationService>(_ => 
+    new VehicleRegistrationService(DaprClient.CreateInvokeHttpClient(
+        "vehicleregistrationservice", $"http://localhost:{daprHttpPort}")));
+
+// ...
+```
+
+The `DaprClient.CreateInvokeHttpClient` creates an `HttpClient` that uses the Dapr client underneath the covers to call the VehicleRegistration service using service invocation. It takes the Dapr `app-id` of the service to call and the Url of the Dapr sidecar. The `daprHttpPort` variable contains the port used for HTTP communication with the Dapr sidecar.
+
+Using Dapr service invocation in the Traffic Control sample application offers the following benefits:
+
+ 1. No need to know the location of the service.
+ 1. Resiliency because of automatic retries.
+ 1. Ability to reuse the existing `HttpClient` based proxy (offered by the ASP.NET Core integration).
 
 ## Summary
 
 In this chapter, you learned about the service invocation building block. You saw how to invoke remote methods both by making direct HTTP calls to the Dapr sidecar, and by using the Dapr .NET SDK.
 
 The Dapr .NET SDK provides multiple ways to invoke remote methods. HttpClient support is great for developers wanting to reuse existing skills and is compatible with many existing frameworks and libraries. DaprClient offers support for directly using the Dapr service invocation API using either HTTP or gRPC semantics.
-
-The eShopOnDapr reference architecture shows how the original eShopOnContainers solution is modernized by using Dapr service invocation. Adding Dapr to eShop provides benefits such as automatic retries, message encryption using mTLS, and improved observability.
 
 ### References
 

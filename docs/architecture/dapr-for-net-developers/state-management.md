@@ -41,7 +41,7 @@ http://localhost:<dapr-port>/v1.0/state/<store-name>/
 
 Figure 5-1 shows how a Dapr-enabled shopping basket service stores a key/value pair using the Dapr state store component named `statestore`.
 
-![Diagram of storing a key/value pair in a Dapr state store.](media/state-management/state-management-flow.png)
+:::image type="content" source="./media/state-management/state-management-flow.png" alt-text="Diagram of storing a key/value pair in a Dapr state store.":::
 
 **Figure 5-1**. Storing a key/value pair in a Dapr state store.
 
@@ -77,7 +77,7 @@ The following sections explain how to use the more advanced features of the stat
 
 The [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) is a set of principles that apply to distributed systems that store state. Figure 5-2 shows the three properties of the CAP theorem.
 
-![The CAP theorem.](media/state-management/cap-theorem.png)
+:::image type="content" source="./media/state-management/cap-theorem.png" alt-text="The CAP theorem.":::
 
 **Figure 5-2**. The CAP theorem.
 
@@ -334,7 +334,7 @@ A constant key prefix enables the state store to be accessed across multiple Dap
 
 ## Sample application: Dapr Traffic Control
 
-In Dapr Traffic Control, the Traffic Control Service uses the state management building block to persist the entry and exit timestamps of passing vehicles. Entry and exit events are handled by the `TrafficController` class, which is a regular ASP.NET Controller. The `TrafficController.VehicleEntry` method takes an incoming `VehicleRegistered` message and saves the enclosed vehicle state to the state store:
+In Dapr Traffic Control, the TrafficControl service uses the state management building block to persist the entry and exit timestamps of passing vehicles. Entry and exit events are handled by the `TrafficController` class, which is a regular ASP.NET Controller. The `TrafficController.VehicleEntry` method takes an incoming `VehicleRegistered` message and saves the enclosed vehicle state to the state store:
 
 ```csharp
 // store vehicle state
@@ -375,7 +375,7 @@ public class DaprVehicleStateRepository : IVehicleStateRepository
 
 As the above code snippet shows, the implementation of the `DaprVehicleStateRepository` class is pretty straightforward. The `SaveVehicleStateAsync` method uses the injected `DaprClient` object to save the state to the configured Dapr state store. It uses the vehicle's license number as the key to store the state under. The application can retrieve the saved state by calling the `GetVehicleStateAsync` method.
 
-The Traffic Control Service uses Redis as the underlying data store. A component configuration file is all that's needed:
+The TrafficControl service uses Redis as the underlying data store. A component configuration file is all that's needed:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
@@ -400,7 +400,7 @@ scopes:
 > [!NOTE]
 > The component configuration file includes a `secretKeyRef` to look up the value for the Redis password using the Dapr secrets building block. See [chapter 10](secrets.md) to learn more about managing secrets with Dapr.
 
-The Traffic Control Service is the only service in the Dapr Traffic Control application that should have access to the state store. The component configuration shown above enforces this constraint by using the `scopes` element to restrict access to the state store component.
+The TrafficControl service is the only service in the Dapr Traffic Control application that should have access to the state store. The component configuration shown above enforces this constraint by using the `scopes` element to restrict access to the state store component.
 
 ## Summary
 
@@ -413,11 +413,10 @@ The Dapr state management building block offers an API for storing key/value dat
 
 The .NET SDK provides language-specific support for .NET Core and ASP.NET Core. Model binding integration simplifies accessing and updating state from ASP.NET Core controller action methods.
 
-In the eShopOnDapr reference application, the benefits to moving to Dapr state management are clear:
+In the Dapr Traffic Control sample application, the benefits of using Dapr state management are clear:
 
-1. The new implementation uses fewer lines of code.
-1. It abstracts away the complexity of the third-party `StackExchange.Redis` API.
-1. Replacing the underlying Redis cache with a different type of data store now only requires changes to the state store configuration file.
+1. It abstracts away the complexity of using third-party SDKs, such as `StackExchange.Redis`.
+1. Replacing the underlying Redis cache with a different type of data store only requires changes to the component configuration file.
 
 ### References
 

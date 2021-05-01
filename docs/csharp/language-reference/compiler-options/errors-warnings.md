@@ -1,5 +1,5 @@
 ---
-description: "C# Compiler Options for errors and warnings. These options surpress or enable warnings, and control warnings as errors."
+description: "C# Compiler Options for errors and warnings. These options suppress or enable warnings, and control warnings as errors."
 title: "C# Compiler Options - errors and warnings"
 ms.date: 03/12/2021
 f1_keywords: 

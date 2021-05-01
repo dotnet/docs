@@ -288,7 +288,7 @@ You have to specify several elements with every subscription:
 
 ## Sample application: Dapr Traffic Control
 
-In Dapr Traffic Control, the TrafficControl Service uses the pub/sub building block to send detected speeding violations to the FineCollection service so it can send a fine to the driver of the speeding vehicle. The `CollectionController` class handles speeding violations. This is a regular ASP.NET Core Controller. The `CollectionController.CollectFine` method takes an incoming `SpeedingViolation` message and handles that:
+In Dapr Traffic Control, the TrafficControl service uses the pub/sub building block to send detected speeding violations to the FineCollection service so it can send a fine to the driver of the speeding vehicle. The `CollectionController` class handles speeding violations. This is a regular ASP.NET Core Controller. The `CollectionController.CollectFine` method takes an incoming `SpeedingViolation` message and handles that:
 
 ```csharp
 [Topic("pubsub", "speedingviolations")]
@@ -354,7 +354,7 @@ scopes:
 
 The TrafficControl and FineCollection services are the only services in the Dapr Traffic Control application that should have access to the message broker. The component configuration shown above enforces this constraint by using the `scopes` element to restrict access.
 
-In the Traffic Control sample application, using Dapr pub/sub offers the following benefits:
+Using Dapr pub/sub in the Traffic Control sample application offers the following benefits:
 
 1. No infrastructural abstraction of a message broker to maintain.
 1. Services are temporally decoupled, which increases robustness.

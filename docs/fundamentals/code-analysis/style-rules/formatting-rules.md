@@ -185,7 +185,7 @@ This rule concerns whether an open brace `{` should be placed on the same line a
 | **Option name** | csharp_new_line_before_open_brace |
 | **Applicable languages** | C# |
 | **Introduced version** | Visual Studio 2017 version 15.3 |
-| **Option values** | `all` - Require braces to be on a new line for all expressions ("Allman" style).<br /><br />`none` - Require braces to be on the same line for all expressions ("K&R").<br /><br />`accessors`, `anonymous_methods`, `anonymous_types`, `control_blocks`, `events`, `indexers`, `lambdas`, `local_functions`, `methods`, `object_collection_array_initializers`, `properties`, `types` - Require braces to be on a new line for the specified code element ("Allman" style). |
+| **Option values** | `all` - Require braces to be on a new line for all expressions ("Allman" style).<br /><br />`none` - Require braces to be on the same line for all expressions ("K&R").<br /><br />`accessors`, `anonymous_methods`, `anonymous_types`, `control_blocks`, `events`, `indexers`, `lambdas`, `local_functions`, `methods`, `object_collection_array_initializers`, `properties`, `types`, `property_pattern_clauses` - Require braces to be on a new line for the specified code element ("Allman" style). |
 
 Code examples:
 

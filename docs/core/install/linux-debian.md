@@ -94,6 +94,8 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
+If you've upgraded your distribution since installing .NET, the package feed may be out of date. Run the installation instructions for your particular version to upgrade to the appropriate package feeds for .NET.
+
 ## APT troubleshooting
 
 This section provides information on common errors you may get while using APT to install .NET.

@@ -66,7 +66,7 @@ SQL Injection is the process by which a malicious user enters Transact-SQL state
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Stored Procedures](/sql/relational-databases/stored-procedures/stored-procedures-database-engine) and [SQL Injection](/sql/relational-databases/security/sql-injection) in SQL Server Books Online|Topics describe how to create stored procedures and how SQL Injection works.|  
+|[Stored Procedures](/sql/relational-databases/stored-procedures/stored-procedures-database-engine) and [SQL Injection](/sql/relational-databases/security/sql-injection)|Topics describe how to create stored procedures and how SQL Injection works.|  
   
 ## See also
 

@@ -7,13 +7,9 @@ ms.assetid: 2839529b-a79b-4450-be5d-07a98dbc7a0f
 ---
 # SQL Server Features and ADO.NET
 
-The topics in this section discuss features in SQL Server that are targeted at developing database applications using ADO.NET.  
+The articles in this section discuss features in SQL Server that are targeted at developing database applications using ADO.NET.  
   
- For more information, see SQL Server Books Online for the version of SQL Server you are using, as listed in the following table.  
-  
- **SQL Server documentation**  
-  
-1. [Development (Database Engine)](/previous-versions/sql/sql-server-2008/bb500155(v=sql.100))  
+For more information, see [Development (Database Engine)](/previous-versions/sql/sql-server-2008/bb500155(v=sql.100)).
   
 ## In This Section  
 

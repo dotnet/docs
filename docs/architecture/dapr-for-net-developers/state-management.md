@@ -334,7 +334,11 @@ A constant key prefix enables the state store to be accessed across multiple Dap
 
 ## Sample application: Dapr Traffic Control
 
-In the Dapr Traffic Control sample app, the TrafficControl service uses the Dapr state management building block to persist the entry and exit timestamps of each passing vehicle. Entry and exit event logic is handled by the `TrafficController` class, an ordinary ASP.NET Controller. The `TrafficController.VehicleEntry` method accepts an incoming `VehicleRegistered` message and saves the enclosed vehicle state:
+In the Dapr Traffic Control sample app, the TrafficControl service uses the Dapr state management building block to persist the entry and exit timestamps of each passing vehicle. Figure 5-3 shows the architecture:
+
+:::image type="content" source="./media/state-management/state-management-architecture.png" alt-text="State Management.":::
+
+Entry and exit event logic is handled by the `TrafficController` class, an ordinary ASP.NET Controller. The `TrafficController.VehicleEntry` method accepts an incoming `VehicleRegistered` message and saves the enclosed vehicle state:
 
 ```csharp
 // store vehicle state

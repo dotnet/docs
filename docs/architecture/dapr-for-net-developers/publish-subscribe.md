@@ -284,7 +284,11 @@ You have to specify several elements with every subscription:
 
 ## Sample application: Dapr Traffic Control
 
-In Dapr Traffic Control, the TrafficControl service uses the pub/sub building block to send detected speeding violations to the FineCollection service so it can send a fine to the driver of the speeding vehicle. The `CollectionController` class handles speeding violations. This is a regular ASP.NET Core Controller. The `CollectionController.CollectFine` method takes an incoming `SpeedingViolation` message and handles that:
+In Dapr Traffic Control sample app, the TrafficControl service uses the Dapr pub/sub building block to send speeding violations to the FineCollection service. Figure 7-4 shows the architecture:
+
+:::image type="content" source="./media/publish-subscribe/pub-sub-architecture.png" alt-text="State Management.":::
+
+Speeding violations are handled by the `CollectionController`, an ordinary ASP.NET Core Controller. The `CollectionController.CollectFine` method subscribes to and handles `SpeedingViolation` event messages:
 
 ```csharp
 [Topic("pubsub", "speedingviolations")]
@@ -296,9 +300,9 @@ public async Task<ActionResult> CollectFine(SpeedingViolation speedingViolation,
 }
 ```
 
-The method is decorated with the Dapr `Topic` attribute. It specifies that the pub/sub component named `pubsub` should be used to subscribe to messages sent to the `speedingviolations` topic.
+The method is decorated with the Dapr `Topic` attribute, which abstracts the complex pub/sub plumbing. It instructs the service to subscribe to messages from the `speedingviolations` topic found in the Dapr component named `pubsub`.
 
-The TrafficControl service sends speeding violations. Near the end of the `VehicleExit` method on the `TrafficController` class, you find the code that sends a `SpeedingViolation` message using the pub/sub building block:
+The TrafficControl service sends speeding violations. Near the end of the `VehicleExit` method in the `TrafficController` class, the `Dapr.Client` object is used to publish `SpeedingViolation` messages using the pub/sub building block:
 
 ```csharp
 /// ...
@@ -317,9 +321,9 @@ await daprClient.PublishEventAsync("pubsub", "speedingviolations", speedingViola
 /// ...
 ```
 
-It uses the Dapr SDK for .NET and sends the message to the `speedingviolations` topic using the pub/sub component named `pubsub`.
+Note how the `DaprClient` object reduces the call to a single line of code, again, binding to the `speedingviolations` topic and the Dapr `pubsub` component.
 
-The Traffic Control sample uses RabbitMQ as the message broker. This is configured in the component configuration file named `pubsub.yaml` in the `/dapr/components` folder:
+While the Traffic Control app uses RabbitMQ as the message broker, it never directly references RabitMQ. Instead, the accompanying Dapr component configuration file named `pubsub.yaml` in the `/dapr/components` folder specifies the message broker:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
@@ -348,13 +352,15 @@ scopes:
   - finecollectionservice
 ```
 
-The TrafficControl and FineCollection services are the only services in the Dapr Traffic Control application that should have access to the message broker. The component configuration shown above enforces this constraint by using the `scopes` element to restrict access.
+The `type` element in the configuration, `pubsub.rabbitmq` instructs the building block to use the Dapr RabbitMQ component.
+
+The `scopes` element in the configuration *constrains* application access to the RabbitMQ component. Only the TrafficControl and FineCollection service can consume it.
 
 Using Dapr pub/sub in the Traffic Control sample application offers the following benefits:
 
 1. No infrastructural abstraction of a message broker to maintain.
 1. Services are temporally decoupled, which increases robustness.
-1. Publisher and subscribers don't know each other. This means that additional services could be introduced that will react to speeding violations in the future, without the need to change the TrafficControl service.
+1. Publisher and subscribers are unaware of each other. This means that additional services could be introduced that will react to speeding violations in the future, without the need to change the TrafficControl service.
 
 ## Summary
 

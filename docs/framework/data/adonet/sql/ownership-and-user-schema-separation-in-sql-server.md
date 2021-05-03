@@ -26,17 +26,55 @@ Server.Database.DatabaseSchema.DatabaseObject
   
 ### Built-In Schemas  
 
- SQL Server ships with ten pre-defined schemas that have the same names as the built-in database users and roles. These exist mainly for backward compatibility. You can drop the schemas that have the same names as the fixed database roles if you do not need them. You cannot drop the following schemas:  
+ SQL Server ships with nine pre-defined schemas that have the same names as the built-in database users and roles. These exist for backward compatibility the recommendation is to not use them for user objects. You can drop the schemas that have the same names as the fixed database roles - unless they are already in use.
+
+```sql  
+IF  EXISTS (SELECT * FROM sys.schemas WHERE name = N'db_accessadmin')
+DROP SCHEMA [db_accessadmin]
+GO
+
+IF  EXISTS (SELECT * FROM sys.schemas WHERE name = N'db_backupoperator')
+DROP SCHEMA [db_backupoperator]
+GO
+
+IF  EXISTS (SELECT * FROM sys.schemas WHERE name = N'db_datareader')
+DROP SCHEMA [db_datareader]
+GO
+
+IF  EXISTS (SELECT * FROM sys.schemas WHERE name = N'db_datawriter')
+DROP SCHEMA [db_datawriter]
+GO
+
+IF  EXISTS (SELECT * FROM sys.schemas WHERE name = N'db_ddladmin')
+DROP SCHEMA [db_ddladmin]
+GO
+
+IF  EXISTS (SELECT * FROM sys.schemas WHERE name = N'db_denydatareader')
+DROP SCHEMA [db_denydatareader]
+GO
+
+IF  EXISTS (SELECT * FROM sys.schemas WHERE name = N'db_denydatawriter')
+DROP SCHEMA [db_denydatawriter]
+GO
+
+IF  EXISTS (SELECT * FROM sys.schemas WHERE name = N'db_owner')
+DROP SCHEMA [db_owner]
+GO
+
+IF  EXISTS (SELECT * FROM sys.schemas WHERE name = N'db_securityadmin')
+DROP SCHEMA [db_securityadmin]
+GO
+``` 
+If you drop these schemas from the model database, they will not appear in new databases.  
+Schemas that contain objects cannot be dropped.
+
+The following schemas cannot be dropped:  
   
 - `dbo`  
-  
 - `guest`  
-  
 - `sys`  
-  
 - `INFORMATION_SCHEMA`  
-  
- If you drop them from the model database, they will not appear in new databases.  
+
   
 > [!NOTE]
 > The `sys` and `INFORMATION_SCHEMA` schemas are reserved for system objects. You cannot create objects in these schemas and you cannot drop them.  

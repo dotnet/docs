@@ -78,6 +78,6 @@ The C# language is designed so that versioning between [base](../../language-ref
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes and Structs](./index.md)
+- [Classes, structs, and records](./index.md)
 - [Methods](./methods.md)
 - [Inheritance](./inheritance.md)

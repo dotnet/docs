@@ -46,7 +46,7 @@ A field can be declared [readonly](../../language-reference/keywords/readonly.md
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes and Structs](./index.md)
+- [Classes, structs, and records](./index.md)
 - [Using Constructors](./using-constructors.md)
 - [Inheritance](./inheritance.md)
 - [Access Modifiers](./access-modifiers.md)

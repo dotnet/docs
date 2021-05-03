@@ -54,7 +54,7 @@ An interface has the following properties:
 - [Interface Properties](../classes-and-structs/interface-properties.md)  
 - [Indexers in Interfaces](../indexers/indexers-in-interfaces.md)  
 - [How to implement interface events](../events/how-to-implement-interface-events.md)
-- [Classes and Structs](../classes-and-structs/index.md)  
+- [Classes, structs, and records](../classes-and-structs/index.md)  
 - [Inheritance](../classes-and-structs/inheritance.md)  
 - [Interfaces](../../language-reference/keywords/interface.md)
 - [Methods](../classes-and-structs/methods.md)  

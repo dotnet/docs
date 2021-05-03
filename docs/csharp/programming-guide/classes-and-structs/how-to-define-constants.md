@@ -28,4 +28,4 @@ Constants are fields whose values are set at compile time and can never be chang
   
 ## See also
 
-- [Classes and Structs](./index.md)
+- [Classes, structs, and records](./index.md)

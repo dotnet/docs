@@ -120,7 +120,7 @@ All arrays are reference types, even if their elements are value types. Arrays i
 
 :::code language="csharp" source="snippets/index/Program.cs" id="ArrayDeclaration":::
 
-Reference types fully support inheritance. When you create a class, you can inherit from any other interface or class that isn't defined as [sealed](../../language-reference/keywords/sealed.md), and other classes can inherit from your class and override your virtual methods. For more information about how to create your own classes, see [Classes and Structs](../classes-and-structs/index.md). For more information about inheritance and virtual methods, see [Inheritance](../classes-and-structs/inheritance.md).
+Reference types fully support inheritance. When you create a class, you can inherit from any other interface or class that isn't defined as [sealed](../../language-reference/keywords/sealed.md), and other classes can inherit from your class and override your virtual methods. For more information about how to create your own classes, see [Classes, structs, and records](../classes-and-structs/index.md). For more information about inheritance and virtual methods, see [Inheritance](../classes-and-structs/inheritance.md).
 
 ## Types of literal values
 
@@ -169,7 +169,7 @@ For more information, see the following articles:
 - [Using Type dynamic](./using-type-dynamic.md)
 - [Value Types](../../language-reference/builtin-types/value-types.md)
 - [Reference Types](../../language-reference/keywords/reference-types.md)
-- [Classes and Structs](../classes-and-structs/index.md)
+- [Classes, structs, and records](../classes-and-structs/index.md)
 - [Anonymous Types](../classes-and-structs/anonymous-types.md)
 - [Generics](../generics/index.md)
 

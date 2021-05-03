@@ -334,7 +334,7 @@ A constant key prefix enables the state store to be accessed across multiple Dap
 
 ## Sample application: Dapr Traffic Control
 
-In Dapr Traffic Control, the TrafficControl service uses the state management building block to persist the entry and exit timestamps of passing vehicles. Entry and exit events are handled by the `TrafficController` class, which is a regular ASP.NET Controller. The `TrafficController.VehicleEntry` method takes an incoming `VehicleRegistered` message and saves the enclosed vehicle state to the state store:
+In the Dapr Traffic Control sample app, the TrafficControl service uses the Dapr state management building block to persist the entry and exit timestamps of each passing vehicle. Entry and exit event logic is handled by the `TrafficController` class, an ordinary ASP.NET Controller. The `TrafficController.VehicleEntry` method accepts an incoming `VehicleRegistered` message and saves the enclosed vehicle state:
 
 ```csharp
 // store vehicle state
@@ -346,7 +346,7 @@ var vehicleState = new VehicleState
 await _vehicleStateRepository.SaveVehicleStateAsync(vehicleState);
 ```
 
-The code snippets above shows that a `_vehicleStateRepository` object is responsible for saving the state to the data store. This is an object of type `DaprVehicleStateRepository`. The full code for the `DaprVehicleStateRepository` class is shown below:
+In the preceding code snippet, the abstraction `_vehicleStateRepository` is responsible for saving state to the data store. Its concrete implementation, `DaprVehicleStateRepository`, is shown below:
 
 ```csharp
 public class DaprVehicleStateRepository : IVehicleStateRepository
@@ -373,9 +373,9 @@ public class DaprVehicleStateRepository : IVehicleStateRepository
 }
 ```
 
-As the above code snippet shows, the implementation of the `DaprVehicleStateRepository` class is pretty straightforward. The `SaveVehicleStateAsync` method uses the injected `DaprClient` object to save the state to the configured Dapr state store. It uses the vehicle's license number as the key to store the state under. The application can retrieve the saved state by calling the `GetVehicleStateAsync` method.
+Note how the `DaprClient` object greatly simplifies the plumbing required to manage state. The `SaveVehicleStateAsync` method uses it to save vehicle state to the configured Dapr state store, keying off the vehicle's license number. The `GetVehicleStateAsync` uses `DaprClient` to retrieve vehicle state.
 
-The TrafficControl service uses Redis as the underlying data store. A component configuration file is all that's needed:
+The TrafficControl service uses Redis as its underlying data store. Looking at the code, you'd never know it. A service consuming the Dapr state management building block doesn't directly reference any state components. Instead, a Dapr component configuration file specifies the store:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
@@ -398,9 +398,11 @@ scopes:
 ```
 
 > [!NOTE]
-> The component configuration file includes a `secretKeyRef` to look up the value for the Redis password using the Dapr secrets building block. See [chapter 10](secrets.md) to learn more about managing secrets with Dapr.
+> The component configuration file includes an element `secretKeyRef`. The application uses it to reference the Redis password value from the Dapr secrets building block. See [chapter 10](secrets.md) to learn more about managing secrets with Dapr.
 
-The TrafficControl service is the only service in the Dapr Traffic Control application that should have access to the state store. The component configuration shown above enforces this constraint by using the `scopes` element to restrict access to the state store component.
+The `type` element in the configuration, `state.redis` instructs the building block to manage state with Dapr Redis component.
+
+The `scopes` element in the configuration *constrains* application access to the state store component. Only the TrafficControl service can access the state store.
 
 ## Summary
 

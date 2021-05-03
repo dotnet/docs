@@ -15,7 +15,7 @@ By using interfaces, you can, for example, include behavior from multiple source
 
 You define an interface by using the [interface](../../language-reference/keywords/interface.md) keyword as the following example shows.
 
-[!code-csharp[Equatable](~/samples/snippets/csharp/objectoriented/interfaces.cs#Equatable)]
+:::code language="csharp" source="~/samples/snippets/csharp/objectoriented/interfaces.cs" id="Equatable":::
 
 The name of an interface must be a valid C# [identifier name](../inside-a-program/identifier-names.md). By convention, interface names begin with a capital `I`.
 
@@ -33,7 +33,7 @@ When a class or struct implements an interface, the class or struct must provide
 
 The following example shows an implementation of the <xref:System.IEquatable%601> interface. The implementing class, `Car`, must provide an implementation of the <xref:System.IEquatable%601.Equals%2A> method.
 
-[!code-csharp[ImplementEquatable](~/samples/snippets/csharp/objectoriented/interfaces.cs#ImplementEquatable)]
+:::code language="csharp" source="~/samples/snippets/csharp/objectoriented/interfaces.cs" id="ImplementEquatable":::
 
 Properties and indexers of a class can define extra accessors for a property or indexer that's defined in an interface. For example, an interface might declare a property that has a [get](../../language-reference/keywords/get.md) accessor. The class that implements the interface can declare the same property with both a `get` and [set](../../language-reference/keywords/set.md) accessor. However, if the property or indexer uses explicit implementation, the accessors must match. For more information about explicit implementation, see [Explicit Interface Implementation](explicit-interface-implementation.md) and [Interface Properties](../classes-and-structs/interface-properties.md).
 
@@ -45,7 +45,8 @@ A base class can also implement interface members by using virtual members. In t
 
 An interface has the following properties:
 
-- An interface is typically like an abstract base class with only abstract members. Any class or struct that implements the interface must implement all its members. Optionally, an interface may define default implementations for some or all of its members. For more information, see [default interface methods](../../whats-new/tutorials/default-interface-methods-versions.md).
+- In C# versions earlier than 8.0, an interface is like an abstract base class with only abstract members. A class or struct that implements the interface must implement all its members.
+- Beginning with C# 8.0, an interface may define default implementations for some or all of its members. A class or struct that implements the interface doesn't have to implement members that have default implementations. For more information, see [default interface methods](../../whats-new/tutorials/default-interface-methods-versions.md).
 - An interface can't be instantiated directly. Its members are implemented by any class or struct that implements the interface.
 - A class or struct can implement multiple interfaces. A class can inherit a base class and also implement one or more interfaces.
 

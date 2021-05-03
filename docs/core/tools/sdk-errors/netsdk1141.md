@@ -8,7 +8,7 @@ f1_keywords:
 ---
 # NETSDK1141: Unable to resolve the .NET SDK version as specified in the global.json
 
-**This article applies to:** ✔️ .NET Core 2.1.100 SDK and later versions
+**This article applies to:** ✔️ .NET Core 5.0 SDK and later versions
 
 There was a problem with the version of the SDK specified in the *global.json* file.
 

@@ -44,7 +44,7 @@ class DotNetFoundationClient
 
         return s_client.GetStringAsync(uri);
     }
-    
+
     public async Task<string> GetFirstCharactersCountAsync(int count)
     {
         // Execution is synchronous here

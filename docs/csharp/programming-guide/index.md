@@ -31,7 +31,7 @@ This section provides detailed information on key C# language features and featu
 
  [Types](./types/index.md)  
 
- [Classes and Structs](./classes-and-structs/index.md)  
+ [Classes, structs, and records](./classes-and-structs/index.md)  
   
  [Interfaces](./interfaces/index.md)  
 

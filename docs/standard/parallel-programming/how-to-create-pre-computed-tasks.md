@@ -1,6 +1,6 @@
 ---
 title: "Create pre-computed Task objects"
-description: "In this article you'll learn how to create pre-computed tasks."
+description: "In this article, you'll learn how to create pre-computed tasks."
 ms.date: 05/04/2021
 dev_langs:
   - "csharp"
@@ -21,7 +21,7 @@ The following example downloads strings from the web. It defines the `DownloadSt
 :::code language="csharp" source="snippets/cs/DownloadCache.cs":::
 :::code language="vb" source="snippets/vb/DownloadCache.vb":::
 
-In the preceding example, the first time each url is downloaded and its value is stored in the cache. The <xref:System.Threading.Tasks.Task.FromResult%2A> method enables the `DownloadStringAsync` method to create <xref:System.Threading.Tasks.Task%601> objects that hold these pre-computed results. Subsequent calls to download the string return the cached values, and is much faster.
+In the preceding example, the first time each url is downloaded, its value is stored in the cache. The <xref:System.Threading.Tasks.Task.FromResult%2A> method enables the `DownloadStringAsync` method to create <xref:System.Threading.Tasks.Task%601> objects that hold these pre-computed results. Subsequent calls to download the string return the cached values, and is much faster.
 
 ## See also
 

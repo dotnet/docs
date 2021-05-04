@@ -7,7 +7,7 @@ Module Snippets
             New ConcurrentDictionary(Of String, String)()
         Private Shared ReadOnly s_httpClient As HttpClient = New HttpClient()
 
-        Public Function DownloadStringAsync(ByVal address As String) As Task(Of String)
+        Public Function DownloadStringAsync(address As String) As Task(Of String)
             Dim content As String = Nothing
 
             If s_cachedDownloads.TryGetValue(address, content) Then
@@ -24,9 +24,9 @@ Module Snippets
     End Class
 
     Public Sub StopAndLogElapsedTime(
-            ByVal attemptNumber As Integer,
-            ByVal stopwatch As Stopwatch,
-            ByVal downloadTasks As Task(Of String()))
+            attemptNumber As Integer,
+            stopwatch As Stopwatch,
+            downloadTasks As Task(Of String()))
 
         stopwatch.Stop()
 

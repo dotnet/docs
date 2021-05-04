@@ -110,7 +110,7 @@ Initialize the `_mlContext` global variable  with a new instance of `MLContext` 
 
 ## Load the data
 
-ML.NET uses the [IDataView class](xref:Microsoft.ML.IDataView) as a flexible, efficient way of describing numeric or text tabular data. `IDataView` can load either text files or in real time (for example, SQL database or log files).
+ML.NET uses the [IDataView interface](xref:Microsoft.ML.IDataView) as a flexible, efficient way of describing numeric or text tabular data. `IDataView` can load either text files or in real time (for example, SQL database or log files).
 
 To initialize and load the `_trainingDataView` global variable in order to use it for the pipeline, add the following code after the  `mlContext` initialization:
 

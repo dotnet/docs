@@ -123,7 +123,7 @@ public static ITransformer Train(MLContext mlContext, string dataPath)
 
 ## Load and transform data
 
-ML.NET uses the [IDataView class](xref:Microsoft.ML.IDataView) as a flexible, efficient way of describing numeric or text tabular data. `IDataView` can load either text files or in real time (for example, SQL database or log files). Add the following code as the first line of the `Train()` method:
+ML.NET uses the [IDataView interface](xref:Microsoft.ML.IDataView) as a flexible, efficient way of describing numeric or text tabular data. `IDataView` can load either text files or in real time (for example, SQL database or log files). Add the following code as the first line of the `Train()` method:
 
 [!code-csharp[LoadTrainData](./snippets/predict-prices/csharp/Program.cs#6 "loading training dataset")]
 

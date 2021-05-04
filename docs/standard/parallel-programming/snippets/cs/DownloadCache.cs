@@ -15,7 +15,7 @@ public static class DownloadCache
     {
         if (s_cachedDownloads.TryGetValue(address, out string content))
         {
-            return Task.FromResult<string>(content);
+            return Task.FromResult(content);
         }
 
         return Task.Run(async () =>
@@ -27,7 +27,7 @@ public static class DownloadCache
         });
     }
 
-    public static async Task Main(string[] args)
+    public static async Task Main()
     {
         string[] urls = new[]
         {

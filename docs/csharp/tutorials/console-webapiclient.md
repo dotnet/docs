@@ -112,9 +112,9 @@ Use the <xref:System.Net.Http.HttpClient> class to make HTTP requests. <xref:Sys
        client.DefaultRequestHeaders.Accept.Add(
            new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
        client.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
-   
+
        var stringTask = client.GetStringAsync("https://api.github.com/orgs/dotnet/repos");
-   
+
        var msg = await stringTask;
        Console.Write(msg);
    }
@@ -154,7 +154,7 @@ The following steps convert the JSON response into C# objects. You use the <xref
 
    ```csharp
    using System;
-   
+
    namespace WebAPIClient
    {
        public class Repository
@@ -264,7 +264,7 @@ The `ProcessRepositories` method can do the async work and return a collection o
    public static async Task Main(string[] args)
    {
        var repositories = await ProcessRepositories();
-   
+
        foreach (var repo in repositories)
            Console.WriteLine(repo.Name);
    }
@@ -283,13 +283,13 @@ The following steps add code to process more of the properties in the  received 
    ```csharp
    [JsonPropertyName("description")]
    public string Description { get; set; }
-   
+
    [JsonPropertyName("html_url")]
    public Uri GitHubHomeUrl { get; set; }
-   
+
    [JsonPropertyName("homepage")]
    public Uri Homepage { get; set; }
-   
+
    [JsonPropertyName("watchers")]
    public int Watchers { get; set; }
    ```

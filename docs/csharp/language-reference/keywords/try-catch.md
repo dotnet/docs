@@ -158,7 +158,7 @@ Uncomment the `throw new Exception` line in the example to demonstrate exception
 
 Uncomment the `throw new OperationCanceledException` line to demonstrate what happens when you cancel an asynchronous process. The task's `IsCanceled` property is set to `true`, and the exception is caught in the `catch` block. Under some conditions that don't apply to this example, the task's `IsFaulted` property is set to `true` and `IsCanceled` is set to `false`.
 
-[!code-csharp[AsyncExceptionExamples#2](./snippets/AsyncExceptionExamples.cs#2)]  
+:::code language="csharp" source="./snippets/AsyncExceptionExamples.cs" id="Snippet2":::
 
 ## Task.WhenAll example
 
@@ -166,7 +166,7 @@ The following example illustrates exception handling where multiple tasks can re
 
 Each of the three tasks causes an exception. The `catch` block iterates through the exceptions, which are found in the `Exception.InnerExceptions` property of the task that was returned by <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>.
 
-[!code-csharp[AsyncExceptionExamples#4](./snippets/AsyncExceptionExamples.cs#4)]
+:::code language="csharp" source="./snippets/AsyncExceptionExamples.cs" id="Snippet4":::
 
 ## C# language specification
 

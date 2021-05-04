@@ -17,6 +17,8 @@ namespace keywords
             ReadonlyKeywordExamples.Examples();
             Console.WriteLine("=================    using Keyword Examples ======================");
             UsingStatements.Examples();
+            Console.WriteLine("=================    try-catch Keyword Examples ======================");
+            await AsyncExceptionExamples.Examples();
         }
     }
 }

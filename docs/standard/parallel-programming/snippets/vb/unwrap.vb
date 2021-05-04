@@ -1,7 +1,7 @@
 ﻿Imports System.Threading
 
 Module UnwrapExample
-    Sub Main2()
+    Sub Main()
         Dim taskOne As Task(Of Integer) = RemoteIncrement(0)
         Console.WriteLine("Started RemoteIncrement(0)")
 

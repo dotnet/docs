@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: CA1416: Platform compatibility"
 description: Learn about the breaking change in .NET 5 caused by the enablement of code analysis rule CA1416.
-ms.date: 09/29/2020
+ms.date: 05/04/2021
 ---
 # Warning CA1416: Platform compatibility
 
@@ -131,4 +131,4 @@ For Blazor WebAssembly platform:
 ## See also
 
 - [CA1416: Validate platform compatibility](/visualstudio/code-quality/ca1416)
-- [.NET API analyzer](../../../../standard/analyzers/api-analyzer.md)
+- [Platform compatibility analyzer](../../../../standard/analyzers/platform-compat-analyzer.md)

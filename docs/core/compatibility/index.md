@@ -121,7 +121,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Adding a member to an interface**
 
-  Unless you provide a define an implementation, adding a new member to an interface is a breaking change. For more information about default implementations, see [Update interfaces with default interface methods in C# 8.0](../../csharp/whats-new/tutorials/default-interface-methods-versions.md).
+  Unless you provide an implementation, adding a new member to an interface is a breaking change. For more information about default implementations, see [Update interfaces with default interface methods in C# 8.0](../../csharp/whats-new/tutorials/default-interface-methods-versions.md).
 
 - ❌ **DISALLOWED: Changing the value of a public constant or enumeration member**
 

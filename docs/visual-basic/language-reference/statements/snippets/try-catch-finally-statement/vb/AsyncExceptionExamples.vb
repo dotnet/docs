@@ -1,4 +1,4 @@
-﻿Public Class Class1
+﻿Public Class AsyncExceptionExamples
 
     ' Try...Catch...Finally Statement (Visual Basic)
     ' try-catch (C# Reference)

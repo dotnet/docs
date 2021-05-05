@@ -100,7 +100,7 @@ class Program
         // Assume path to a client .pfx file and password are passed from command line
         // On Windows this would probably be a reference to the Certificate Store
         var cert = new X509Certificate2(args[0], args[1]);
-        
+
         var handler = new HttpClientHandler();
         handler.ClientCertificates.Add(cert);
         var httpClient = new HttpClient(handler);
@@ -118,7 +118,8 @@ class Program
 ```
 
 > [!NOTE]
-> Due to an internal Windows bug as [documented here](https://github.com/dotnet/runtime/issues/23749#issuecomment-388231655) you will need to apply the following a workaround if the certificate is created from certificate and private key PEM data.
+> Due to an internal Windows bug as [documented here](https://github.com/dotnet/runtime/issues/23749#issuecomment-388231655), you'll need to apply the following a workaround if the certificate is created from certificate and private key PEM data.
+> 
 > ```csharp
 > X509Certificate2 cert = X509Certificate2.CreateFromPem(certificatePem, rsaPrivateKeyPem));
 > if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
@@ -127,6 +128,7 @@ class Program
 >     cert = new X509Certificate2(cert.Export(X509ContentType.Pkcs12));
 >     originalCert.Dispose();
 > }
+> ```
 
 ## Combine ChannelCredentials and CallCredentials
 

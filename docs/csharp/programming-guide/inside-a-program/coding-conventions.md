@@ -60,22 +60,22 @@ public interface IWorkerQueue
 When naming `public` members of types, such as; fields, properties, events, methods, and local functions use pascal casing.
 
 ```csharp
-public class PartyEvents
+public class ExampleEvents
 {
     // A public field, these should be used sparingly
-    public bool IsPartyTime;
+    public bool IsValid;
 
     // An init-only property
-    public HashSet<Attendee> Attendees { get; init; }
+    public IWorkerQueue WorkerQueue { get; init; }
 
     // An event
-    public event Action HappyHour;
+    public event Action EventProcessing;
 
     // Method
     public void StartEventProcessing()
     {
         // Local function
-        static int CountAttendees() => Attendees.Count;
+        static int CountQueueItems() => WorkerQueue.Count;
         // ...
     }
 }

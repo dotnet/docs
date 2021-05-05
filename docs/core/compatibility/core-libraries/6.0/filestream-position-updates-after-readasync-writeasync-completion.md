@@ -1,6 +1,6 @@
 ---
 title: ".NET 6 breaking change: FileStream.Position updated after ReadAsync or WriteAsync completion"
-description: Learn about the .NET 6 breaking change in core .NET libraries FileStream.Position is updated after ReadAsync or WriteAsync completion.
+description: Learn about the .NET 6 breaking change in core .NET libraries where FileStream.Position is updated after ReadAsync or WriteAsync completion.
 ms.date: 05/05/2021
 ---
 # FileStream.Position updates after ReadAsync or WriteAsync completes

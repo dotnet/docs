@@ -2,7 +2,7 @@
 title: Port from .NET Framework to .NET 5
 description: Understand the porting process and discover tools you may find helpful when porting a .NET Framework project to .NET 5 (and .NET Core 3.1).
 author: adegeo
-ms.date: 03/03/2020
+ms.date: 05/04/2021
 no-loc: ["package.config", PackageReference]
 ---
 # Overview of porting from .NET Framework to .NET
@@ -124,13 +124,11 @@ To use the .NET Portability Analyzer in Visual Studio, install the [extension fr
 
 For more information, see [The .NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md).
 
-### .NET API Analyzer
+### Platform compatibility analyzer
 
-The [.NET API Analyzer](../../standard/analyzers/api-analyzer.md) analyzes whether or not you're using an API that will throw a <xref:System.PlatformNotSupportedException> at run-time. Although this isn't common if you're moving from .NET Framework 4.7.2 or higher, it's good to check. For more information about APIs that throw exceptions on .NET, see [APIs that always throw exceptions on .NET Core](../compatibility/unsupported-apis.md).
+The [Platform compatibility analyzer](../../standard/analyzers/platform-compat-analyzer.md) analyzes whether or not you're using an API that will throw a <xref:System.PlatformNotSupportedException> at run time. Although this isn't common if you're moving from .NET Framework 4.7.2 or higher, it's good to check. For more information about APIs that throw exceptions on .NET, see [APIs that always throw exceptions on .NET Core](../compatibility/unsupported-apis.md).
 
-API Analyzer comes as a NuGet package [Microsoft.DotNet.Analyzers.Compatibility](https://www.nuget.org/packages/Microsoft.DotNet.Analyzers.Compatibility/) you add to your project.
-
-For more information, see [.NET API analyzer](../../standard/analyzers/api-analyzer.md).
+For more information, see [Platform compatibility analyzer](../../standard/analyzers/platform-compat-analyzer.md).
 
 ## Considerations when porting
 

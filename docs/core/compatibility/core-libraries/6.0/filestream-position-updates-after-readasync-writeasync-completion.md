@@ -11,6 +11,30 @@ ms.date: 05/05/2021
 
 In previous .NET versions on Windows, <xref:System.IO.FileStream.Position?displayProperty=nameWithType> is updated after the asynchronous read or write operation starts. Starting in .NET 6, <xref:System.IO.FileStream.Position?displayProperty=nameWithType> is updated after those operations complete.
 
+The following code shows how the value of <xref:System.IO.FileStream.Position?displayProperty=nameWithType> differs between previous .NET versions and .NET 6.
+
+```csharp
+byte[] bytes = new byte[10_000];
+string path = Path.Combine(Path.GetTempPath(), Path.GetTempFileName());
+
+using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.ReadWrite, FileShare.None, bufferSize: 4096, useAsync: true))
+{
+    Task[] writes = new Task[3];
+    
+    writes[0] = fs.WriteAsync(bytes, 0, bytes.Length);
+    Console.WriteLine(fs.Position);  // 10000 in .NET 5, 0 in .NET 6
+
+    writes[1] = fs.WriteAsync(bytes, 0, bytes.Length);
+    Console.WriteLine(fs.Position);  // 20000 in .NET 5, 0 in .NET 6
+
+    writes[2] = fs.WriteAsync(bytes, 0, bytes.Length);
+    Console.WriteLine(fs.Position);  // 30000 in .NET 5, 0 in .NET 6
+
+    await Task.WhenAll(writes);
+    Console.WriteLine(fs.Position);  // 30000 in all versions
+}
+```
+
 ## Version introduced
 
 6.0 Preview 4

@@ -9,7 +9,7 @@ ms.date: 05/05/2021
 
 ## Change description
 
-In previous .NET versions, <xref:System.IO.FileStream> synchronizes the file offset with the Windows operating system (OS) when it writes to a file. It synchronizes the offset by calling <xref:NF:fileapi.SetFilePointer>, which is an expensive system call. Starting in .NET 6, <xref:System.IO.FileStream> no longer synchronizes the file offset, and instead just keeps the offset in memory. <xref:System.IO.FileStream.Position?displayProperty=nameWithType> always returns the current offset, but if you obtain the file handle from <xref:System.IO.FileStream.SafeFileHandle?displayProperty=nameWithType> and query the OS for the current file offset using a system call, the offset value will be 0.
+In previous .NET versions, <xref:System.IO.FileStream> synchronizes the file offset with the Windows operating system (OS) when it writes to a file. It synchronizes the offset by calling `SetFilePointer`, which is an expensive system call. Starting in .NET 6, <xref:System.IO.FileStream> no longer synchronizes the file offset, and instead just keeps the offset in memory. <xref:System.IO.FileStream.Position?displayProperty=nameWithType> always returns the current offset, but if you obtain the file handle from <xref:System.IO.FileStream.SafeFileHandle?displayProperty=nameWithType> and query the OS for the current file offset using a system call, the offset value will be 0.
 
 The following code shows how the file offset differs between previous .NET versions and .NET 6.
 
@@ -53,7 +53,7 @@ This change has allowed for up to two times faster <xref:System.IO.FileStream.Re
 
 ## Affected APIs
 
-- <xref:NF:fileapi.SetFilePointerEx?displayProperty=fullName>
+None.
 
 <!--
 

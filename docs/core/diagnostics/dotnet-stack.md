@@ -55,10 +55,10 @@ The `dotnet-stack` tool:
 
 ## Commands
 
-| Command                                                   |
-|-----------------------------------------------------------|
-| [dotnet-stack report](#dotnet-stack-report)               |
-| [dotnet-stack ps](#dotnet-stack-ps)                       |
+| Command                                     | Description                                                   |
+|---------------------------------------------|---------------------------------------------------------------|
+| [dotnet-stack report](#dotnet-stack-report) | Prints the stack trace for each thread in the target process. |
+| [dotnet-stack ps](#dotnet-stack-ps)         | Lists the dotnet processes that traces can be collected from. |
 
 ## dotnet-stack report
 
@@ -127,7 +127,7 @@ To report managed stacks using `dotnet-stack`:
   - Stack frames follow the form `Module!Method`.
   - Transitions to unmanaged code are represented as `[Native Frames]` in the output.
 
-  ```
+  ```console
   # comment
   Thread (0x1234):
     module!Method
@@ -139,7 +139,7 @@ To report managed stacks using `dotnet-stack`:
     Module!Method
   ```
   
-## Next Steps
+## Next steps
   
 - [Use dotnet-trace to collect CPU samples of a .NET application](dotnet-trace.md)
 - [Use dotnet-dump to collect a dump of a .NET application](dotnet-dump.md)

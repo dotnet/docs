@@ -5,11 +5,11 @@ ms.date: 05/05/2021
 ---
 # FileStream no longer synchronizes file offset with OS
 
-<xref:System.IO.FileStream> no longer synchronizes the file offset with the operating system, and just keeps the offset in memory.
+To improve performance, <xref:System.IO.FileStream> no longer synchronizes the file offset with the operating system.
 
 ## Change description
 
-In previous .NET versions, <xref:System.IO.FileStream> synchronizes the file offset with the Windows operating system (OS) when it writes to a file. It synchronizes the offset by calling `SetFilePointer`, which is an expensive system call. Starting in .NET 6, <xref:System.IO.FileStream> no longer synchronizes the file offset, and instead just keeps the offset in memory. <xref:System.IO.FileStream.Position?displayProperty=nameWithType> always returns the current offset, but if you obtain the file handle from <xref:System.IO.FileStream.SafeFileHandle?displayProperty=nameWithType> and query the OS for the current file offset using a system call, the offset value will be 0.
+In previous .NET versions, <xref:System.IO.FileStream> synchronizes the file offset with the Windows operating system (OS) when it reads or writes to a file. It synchronizes the offset by calling [SetFilePointer](/windows/win32/api/fileapi/nf-fileapi-setfilepointer), which is an expensive system call. Starting in .NET 6, <xref:System.IO.FileStream> no longer synchronizes the file offset, and instead just keeps the offset in memory. <xref:System.IO.FileStream.Position?displayProperty=nameWithType> always returns the current offset, but if you obtain the file handle from <xref:System.IO.FileStream.SafeFileHandle?displayProperty=nameWithType> and query the OS for the current file offset using a system call, the offset value will be 0.
 
 The following code shows how the file offset differs between previous .NET versions and .NET 6.
 
@@ -45,7 +45,7 @@ This change was introduced to improve the performance of asynchronous reads and 
 - [Win32 FileStream will issue a seek on every ReadAsync call](https://github.com/dotnet/runtime/issue/16354)
 - [FileStream.Windows useAsync WriteAsync calls blocking APIs](https://github.com/dotnet/runtime/issue/25905)
 
-This change has allowed for up to two times faster <xref:System.IO.FileStream.ReadAsync%2A> operations and up to five times faster <xref:System.IO.FileStream.WriteAsync%2A> operations.
+With this change, <xref:System.IO.FileStream.ReadAsync%2A> operations are up to two times faster, and <xref:System.IO.FileStream.WriteAsync%2A> operations are up to five times faster.
 
 ## Recommended action
 
@@ -55,10 +55,19 @@ This change has allowed for up to two times faster <xref:System.IO.FileStream.Re
 
 None.
 
+## See also
+
+- [SetFilePointer function](/windows/win32/api/fileapi/nf-fileapi-setfilepointer)
+- [SetFilePointerEx function](/windows/win32/api/fileapi/nf-fileapi-setfilepointerex)
+
 <!--
 
 ### Category
 
 - Core .NET libraries
+
+### Affected APIS
+
+Not detectible via API analysis.
 
 -->

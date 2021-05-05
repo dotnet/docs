@@ -5,7 +5,7 @@ ms.date: 05/05/2021
 ---
 # FileStream.Position updates after ReadAsync or WriteAsync completes
 
-<xref:System.IO.FileStream.Position?displayProperty=nameWithType> is now updated after <xref:System.IO.FileStream.ReadAsync%2A> or <xref:System.IO.FileStream.WriteAsync%2A> complete.
+<xref:System.IO.FileStream.Position?displayProperty=nameWithType> is now updated after <xref:System.IO.FileStream.ReadAsync%2A> or <xref:System.IO.FileStream.WriteAsync%2A> completes.
 
 ## Change description
 
@@ -41,14 +41,14 @@ using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.ReadWrit
 
 ## Reason for change
 
-<xref:System.IO.FileStream> has never been thread-safe, but until .NET 6, .NET has tried to support multiple concurrent calls to its async methods (<xref:System.IO.FileStream.ReadAsync%2A> and <xref:System.IO.FileStream.WriteAsync%2A>) on Windows.
+<xref:System.IO.FileStream> has never been thread-safe, but until .NET 6, .NET has tried to support multiple concurrent calls to its asynchronous methods (<xref:System.IO.FileStream.ReadAsync%2A> and <xref:System.IO.FileStream.WriteAsync%2A>) on Windows.
 
 This change was introduced to allow for 100% asynchronous file I/O with <xref:System.IO.FileStream> and to fix the following issues:
 
 - [FileStream.FlushAsync ends up doing synchronous writes](https://github.com/dotnet/runtime/issue/27643)
 - [Win32 FileStream turns async reads into sync reads](https://github.com/dotnet/runtime/issue/16341)
 
-Now when buffering is enabled (that is, the `bufferSize` argument that's passed to <xref:System.IO.FileStream.%23ctor%2A> is greater than 1), every <xref:System.IO.FileStream.ReadAsync%2A> and <xref:System.IO.FileStream.WriteAsync%2A> operation is serialized.
+Now, when buffering is enabled (that is, the `bufferSize` argument that's passed to the [FileStream constructor](xref:System.IO.FileStream.%23ctor%2A) is greater than 1), every <xref:System.IO.FileStream.ReadAsync%2A> and <xref:System.IO.FileStream.WriteAsync%2A> operation is serialized.
 
 ## Recommended action
 

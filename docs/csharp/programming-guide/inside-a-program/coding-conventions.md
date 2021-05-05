@@ -55,7 +55,7 @@ public interface IWorkerQueue
 }
 ```
 
-When naming `public` members of objects, such as; fields, properties, events, methods, and local functions use pascal casing.
+When naming `public` members of types, such as; fields, properties, events, methods, and local functions use pascal casing.
 
 ```csharp
 public class PartyEvents

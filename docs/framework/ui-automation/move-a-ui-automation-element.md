@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "moving elements"
   - "elements, moving"
   - "UI Automation, moving elements"
-ms.assetid: 4042cb44-e27e-4a03-ac36-9be1eed65b47
+ms.topic: how-to
 ---
 # Move a UI Automation Element
 

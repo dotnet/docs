@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "TreeWalker class"
   - "elements, navigating among"
   - "UI Automation, navigating among elements"
-ms.assetid: afcd21dc-2ffa-48c9-9332-51269f44b7e9
+ms.topic: how-to
 ---
 # Navigate Among UI Automation Elements with TreeWalker
 

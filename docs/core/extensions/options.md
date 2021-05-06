@@ -3,7 +3,7 @@ title: Options pattern in .NET
 author: IEvangelist
 description: Learn how to use the options pattern to represent groups of related settings in .NET apps.
 ms.author: dapine
-ms.date: 02/18/2021
+ms.date: 05/04/2021
 ---
 
 # Options pattern in .NET
@@ -152,6 +152,11 @@ The following example uses <xref:Microsoft.Extensions.Options.IOptionsMonitor%60
 :::code language="csharp" source="snippets/configuration/console-json/MonitorService.cs":::
 
 In the preceding code, changes to the JSON configuration file after the app has started are read.
+
+> [!TIP]
+> Some file systems, such as Docker containers and network shares, may not reliably send change notifications. When using the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> interface in these environments, set the `DOTNET_USE_POLLING_FILE_WATCHER` environment variable to `1` or `true` to poll the file system for changes. The interval at which changes are polled is every four seconds and is not configurable.
+>
+> For more information on Docker containers, see [Containerize a .NET app](../docker/build-container.md).
 
 ## Named options support using IConfigureNamedOptions
 

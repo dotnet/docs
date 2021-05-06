@@ -42,6 +42,8 @@ In the preceding code, <xref:Microsoft.Build.Logging.LoggerDescription.CreateLog
 
 ## Usage and registration of the custom logger
 
+By convention, registering services for dependency injection happens as part of the startup routine of an application. The registration occurs in the `Program` class, or could be delegated to a `Startup` class. In this example, you'll register directly from the _Program.cs_.
+
 To add the custom logging provider and corresponding logger, add an <xref:Microsoft.Extensions.Logging.ILoggerProvider> with <xref:Microsoft.Extensions.Logging.ILoggingBuilder> from the <xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.ConfigureLogging(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Logging.ILoggingBuilder})?displayProperty=nameWithType>:
 
 :::code language="csharp" source="snippets/configuration/console-custom-logging/Program.cs" highlight="23-33":::

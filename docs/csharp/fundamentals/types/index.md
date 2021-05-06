@@ -160,7 +160,6 @@ In both of the preceding examples, the run-time type is a `string`. The compile-
 
 If the two types are different for a variable, it's important to understand when the compile-time type and the run-time type apply. The compile-time type determines all the actions taken by the compiler. These compiler actions include method call resolution, overload resolution, and available implicit and explicit casts. The run-time type determines all actions that are resolved at run time. These run-time actions include dispatching virtual method calls, evaluating `is` and `switch` expressions, and other type testing APIs. To better understand how your code interacts with types, recognize which action applies to which type.
 
-<<<<<<< HEAD
 ## Related sections
 
 For more information, see the following articles:
@@ -174,8 +173,6 @@ For more information, see the following articles:
 - [Anonymous Types](../classes-and-structs/anonymous-types.md)
 - [Generics](../generics/index.md)
 
-=======
->>>>>>> 1087669fbb (fix warnings in the fundamentals area)
 ## C# language specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]

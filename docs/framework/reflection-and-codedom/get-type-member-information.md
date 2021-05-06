@@ -6,7 +6,7 @@ ms.topic: how-to
 helpviewer_keywords:
   - "reflection, obtaining member information"
   - "types [.NET Framework], obtaining member information from"
-ms.topic: how-to
+ms.assetid: 348ae651-ccda-4f13-8eda-19e8337e9438
 dev_langs:
   - "cpp"
   - "csharp"

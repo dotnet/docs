@@ -94,7 +94,7 @@ dotnet sln add [-h|--help]
 
 - **`--in-root`**
 
-  Places the projects in the root of the solution, rather than creating a solution folder. Available since .NET Core 3.0 SDK.
+  Places the projects in the root of the solution, rather than creating a [solution folder](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder). Available since .NET Core 3.0 SDK.
 
 - **`-s|--solution-folder <PATH>`**
 

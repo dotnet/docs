@@ -12,7 +12,7 @@ ms.date: 05/06/2021
 > The APIs in this article are new. They'll be generally available as part of .NET 6, but are subject to change.
 >
 > - When using .NET 6 Preview 4, it's part of the [Microsoft.Extensions.Logging](https://www.nuget.org/packages/microsoft.extensions.logging) package.
-> - When using .NET nightly builds, it's part of the [Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/microsoft.extensions.logging.abstractions) package.
+> - When using [.NET nightly builds](https://github.com/dotnet/runtime/blob/main/docs/project/dogfooding.md), it's part of the [Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/microsoft.extensions.logging.abstractions) package.
 
 With .NET 6, the `LoggerMessageAttribute` was introduced. This attribute is part of the `Microsoft.Extensions.Logging` namespace, and when used it will source generate performant logging APIs. The source generation logging support is designed to deliver a highly-usable and highly-performant logging solution for modern .NET applications. The auto-generated source code relies on the <xref:Microsoft.Extensions.Logging.ILogger> interface in conjunction with <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType> functionality.
 
@@ -64,7 +64,7 @@ public static partial class Log
         Message = "Could not open socket to `{hostName}`")]
     public static partial void CouldNotOpenSocket(
         ILogger logger,
-        LogLevel level, // Dynamic log level as parameter, rather than defined in attribute.
+        LogLevel level, /* Dynamic log level as parameter, rather than defined in attribute. */
         string hostName);
 }
 ```

@@ -1,96 +1,102 @@
 ---
-title: LoggerMessageAttribute and compile-time logging source generation
-description: Learn how to use compile-time source generation, or use LoggerMessageAttribute for your .NET applications.
+title: Compile-time logging source generation
+description: Learn how to use compile-time source generation for logging, and the LoggerMessageAttribute with .NET.
 author: maryamariyan
 ms.author: maariyan
-ms.date: 05/05/2021
+ms.date: 05/06/2021
 ---
 
-# LoggerMessageAttribute
+# Compile-time logging source generation
 
-As of .NET 6 Preview 4, we instroduced `LoggerMessageAttribute` to help auto-generated perfomant logging APIs using `Microsoft.Extensions.Logging` namespace. The soucrce generation logging support is designed to deliver a highly-usable and high-performance logging solution for modern .NET applications. We leverage the base ILogger model with `LoggerMessage.Define` exposed by .NET and augment it to simplify use and improve performance.
+With .NET 6, the `LoggerMessageAttribute` was introduced. This attribute is part of the `Microsoft.Extensions.Logging` namespace, and when used it will source generate performant logging APIs. The source generation logging support is designed to deliver a highly-usable and highly-performant logging solution for modern .NET applications. The auto-generated source code relies on the <xref:Microsoft.Extensions.Logging.ILogger> interface in conjunction with <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType> functionality.
 
-The source generator gets triggered with a `LoggerMessageAttribute` on partial logging methods, and is able to either autogenerate the implementation of these partial methods, or produces compile-time diagnostics hinting to proper usage of this logging approach.
+The source generator is triggered when `LoggerMessageAttribute` is used on `partial` logging methods. When triggered, it is either able to autogenerate the implementation of the `partial` methods it's decorating, or produce compile-time diagnostics with hints about proper usage. The compile-time logging solution is typically considerably faster at runtime than existing logging approaches. It does this by eliminating boxing, temporary allocations, and copies to the maximum extent possible.
 
-The compile-time logging solution is typically considerably faster at runtime than existing logging approaches. It does this by eliminating boxing, temporary allocations, and copies to the maximum extent possible.
+## Basic usage
 
-Below is an example class with one declared logging method. The method is marked with an attribute and is declared static and partial. The code generator kicks in at build time and supplies an implementation of this partial method.
+To use the `LoggerMessageAttribute`, the consuming class and method need to be `partial`. The code generator is triggered at compile-time, and generates an implementation of the `partial` method.
 
 ```csharp
-static partial class Log
+public static partial class Log
 {
-    [LoggerMessage(EventId = 0, Level = LogLevel.Critical, Message = "Could not open socket to `{hostName}`")]
-    public static partial void CouldNotOpenSocket(ILogger logger, string hostName);
+    [LoggerMessage(
+        EventId = 0,
+        Level = LogLevel.Critical,
+        Message = "Could not open socket to `{hostName}`")]
+    public static partial void CouldNotOpenSocket(
+        ILogger logger, string hostName);
 }
 ```
 
-The above sample shows the canonical use of the logging source generator, where the logging method is static and the log level is specified in the attribute definition. There are other forms possible too. For example, in the following example the logging method is declared as an instance method. In this form, the logging method gets the logger by accessing an `ILogger` field in the containing class.
+In the preceding example, the logging method is `static` and the log level is specified in the attribute definition. When using the attribute in a static context, the `ILogger` instance is required as a parameter. You may choose to use the attribute in a non-static context as well. Consider the following example where the logging method is declared as an instance method. In this context, the logging method gets the logger by accessing an `ILogger` field in the containing class.
 
 ```csharp
-class MyLogWrapper
+public class InstanceLoggingExample
 {
     private readonly ILogger _logger;
 
-    public MyLogWrapper(ILogger logger)
+    public InstanceLoggingExample(ILogger logger)
     {
         _logger = logger;
     }
 
-    [LoggerMessage(EventId = 0, Level = LogLevel.Critical, Message = "Could not open socket to `{hostName}`")]
+    [LoggerMessage(
+        EventId = 0,
+        Level = LogLevel.Critical,
+        Message = "Could not open socket to `{hostName}`")]
     public partial void CouldNotOpenSocket(string hostName);
 }
-
 ```
 
-Sometimes, the logging level needs to be a dynamic property rather than being statically built into the code. You can do this by omitting the logging level from the attribute and instead supplying it as an argument to the logging method:
+Sometimes, the log level needs to be dynamic rather than statically built into the code. You can do this by omitting the log level from the attribute and instead requiring it as a parameter to the logging method.
 
 ```csharp
-static partial class Log
+public static partial class Log
 {
-    [LoggerMessage(EventId = 0, Message = "Could not open socket to `{hostName}`")]
-    public static partial void CouldNotOpenSocket(ILogger logger, LogLevel level, string hostName);
+    [LoggerMessage(
+        EventId = 0,
+        Message = "Could not open socket to `{hostName}`")]
+    public static partial void CouldNotOpenSocket(
+        ILogger logger,
+        LogLevel level, // Dynamic log level as parameter, rather than defined in attribute.
+        string hostName);
 }
 ```
 
-You can omit the logging message and an empty string will be provided for the message but the state will contain the arguments and formats them as key value pairs.
+You can omit the logging message and <xref:System.String.Empty?displayProperty=nameWithType> will be provided for the message. The state will contain the arguments, and is formatted as key value pairs.
 
 ```csharp
-using Microsoft.Extensions.Logging;
 using System.Text.Json;
+using Microsoft.Extensions.Logging;
 
-namespace LoggingGeneratorSampleApp
-{
-    class Program
-    {
-        static void Main(string[] args)
+ILogger<SampleObject> logger = LoggerFactory.Create(
+    builder =>
+    builder.AddJsonConsole(
+        options =>
+        options.JsonWriterOptions = new JsonWriterOptions()
         {
-            var logger = LoggerFactory.Create(builder =>
-            {
-                builder.AddJsonConsole(o => 
-                o.JsonWriterOptions = new JsonWriterOptions()
-                {
-                    Indented = true
-                });
-            }).CreateLogger<Program>();
+            Indented = true
+        }))
+    .CreateLogger<SampleObject>();
 
-            logger.LogMethod(LogLevel.Information, "Liana", "California");
-        }
-    }
+logger.CustomLogEvent(LogLevel.Information, "Liana", "California");
 
-    public static partial class MyPoco
-    {
-        [LoggerMessage(EventId = 23)]
-        public static partial void LogMethod(this ILogger logger, LogLevel logLevel, string name, string state);
-    }
+public static partial class SampleObject
+{
+    [LoggerMessage(EventId = 23)]
+    public static partial void CustomLogEvent(
+        this ILogger logger, LogLevel logLevel,
+        string name, string state);
 }
 ```
 
-Outputs:
-```
+Consider the example logging output when using the `JsonConsole` formatter.
+
+```json
 {
   "EventId": 23,
   "LogLevel": "Information",
-  "Category": "ConsoleApp66.Program",
+  "Category": "ConsoleApp.SampleLogger",
   "Message": "",
   "State": {
     "Message": "",
@@ -105,11 +111,11 @@ Outputs:
 
 Logging methods have some constraints which must be followed:
 
-- Logging methods must be static, partial, and return void.
-- Logging method names must not start with an underscore.
-- Parameter names of logging methods must not start with an underscore.
-- Logging methods may not be defined in nested type.
-- Logging methods cannot be generic.
+- Logging methods must be `static`, `partial`, and return `void`.
+- Logging method names must *not* start with an underscore.
+- Parameter names of logging methods must *not* start with an underscore.
+- Logging methods may *not* be defined in nested type.
+- Logging methods *cannot* be generic.
 
 Also, the code generation model depends on code being compiled with a modern C# compiler, version 9 or later. The C# 9.0 compiler became available with .NET 5.0. To upgrade to a modern C# compiler, edit your project file and add:
 
@@ -119,33 +125,56 @@ Also, the code generation model depends on code being compiled with a modern C# 
 </PropertyGroup>
 ```
 
-#### Sample with exception as argument to log method
+### Sample with exception as argument to log method
 
-Since the `ILogger.Log` API signature takes log level and optionally an exception per log call:
+Since the <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> API signature accepts the <xref:Microsoft.Extensions.Logging.LogLevel> and optionally an <xref:System.Exception> per log call:
 
 ```csharp
+using System;
+using Microsoft.Extensions.Logging;
+
 public partial interface ILogger
 {
-    void Log<TState>(Microsoft.Extensions.Logging.LogLevel logLevel, Microsoft.Extensions.Logging.EventId eventId, TState state, System.Exception? exception, System.Func<TState, System.Exception?, string> formatter);
+    void Log<TState>(
+        LogLevel logLevel,
+        EventId eventId,
+        TState state,
+        Exception? exception,
+        Func<TState, Exception?, string> formatter);
 }
 ```
 
-Therefore, as a general rule, the first instance of `ILogger`, `LogLevel`, and `Exception` are treated specially in the log method signature of the source generator. Subsequent instances are treated like normal arguments to the message template:
+Therefore, as a general rule, the first instance of `ILogger`, `LogLevel`, and `Exception` are treated specially in the log method signature of the source generator. Subsequent instances are treated like normal parameters to the message template:
 
 ```csharp
-// below works
-[LoggerMessage(EventId = 110, Level = LogLevel.Debug, Message = "M1 {ex3} {ex2}")]
-static partial void LogMethod(ILogger logger, System.Exception ex, System.Exception ex2, System.Exception ex3);
+// This is a valid attribute usage
+[LoggerMessage(
+    EventId = 110, Level = LogLevel.Debug, Message = "M1 {ex3} {ex2}")]
+public static partial void ValidLogMethod(
+    ILogger logger,
+    Exception ex,
+    Exception ex2,
+    Exception ex3);
 
-// but this warns:
-// DiagnosticSeverity.Warning - SYSLIB0025: Don't include a template for ex in the logging message since it is implicitly taken care of
-[LoggerMessage(EventId = 0, Level = LogLevel.Debug, Message = "M1 {ex} {ex2}")]
-static partial void LogMethod(ILogger logger, System.Exception ex, System.Exception ex2);
+// This causes a warning
+[LoggerMessage(
+    EventId = 0, Level = LogLevel.Debug, Message = "M1 {ex} {ex2}")]
+public static partial void WarningLogMethod(
+    ILogger logger,
+    Exception ex,
+    Exception ex2);
 ```
 
-### Case-insensitive parameter/template name support
+> [!IMPORTANT]
+> The warnings emitted provide details as to the correct usage of the `LoggerMessageAttribute`. In the preceding example the `WarningLogMethod` will report a `DiagnosticSeverity.Warning` of `SYSLIB0025`.
+>
+> ```console
+> Don't include a template for ex in the logging message since it is implicitly taken care of
+>
 
-The generator does case-insensitive comparison between parameters in message template and log message argument names so when the ILogger enumerates the state, the argument will be picked up by message template, which can make the logs nicer to consume:
+### Case-insensitive template name support
+
+The generator uses case-insensitive comparison between parameters in the message template and log message argument names so when the ILogger enumerates the state, the argument will be picked up by message template, which can make the logs nicer to consume:
 
 ```csharp
 public partial class LoggingSample6
@@ -157,8 +186,12 @@ public partial class LoggingSample6
         _logger = logger;
     }
 
-    [LoggerMessage(EventId = 10, Level = LogLevel.Information, Message = "Welcome to {City} {Province}!")]
-    public partial void LogMethodSupportsPascalCasingOfNames(string city, string province);
+    [LoggerMessage(
+        EventId = 10,
+        Level = LogLevel.Information,
+        Message = "Welcome to {City} {Province}!")]
+    public partial void LogMethodSupportsPascalCasingOfNames(
+        string city, string province);
 
     public void TestLogging()
     {
@@ -167,8 +200,9 @@ public partial class LoggingSample6
 }
 ```
 
-Json console output (notice the log arguments become uppercase):
-```
+Consider the example logging output when using the `JsonConsole` formatter.
+
+```json
 {
   "EventId": 13,
   "LogLevel": "Information",
@@ -182,19 +216,28 @@ Json console output (notice the log arguments become uppercase):
   }
 }
 ```
-### Order of arguments do not matter
+
+### Indeterminate parameter order
 
 There is no constraint in the ordering at this point. So the user could define `ILogger` as the last argument for example:
+
 ```csharp
-[LoggerMessage(EventId = 110, Level = LogLevel.Debug, Message = "M1 {ex3} {ex2}")]
-static partial void LogMethod(System.Exception ex, System.Exception ex2, System.Exception ex3, ILogger logger);
+[LoggerMessage(
+    EventId = 110,
+    Level = LogLevel.Debug,
+    Message = "M1 {ex3} {ex2}")]
+static partial void LogMethod(
+    Exception ex,
+    Exception ex2,
+    Exception ex3,
+    ILogger logger); // 😲
 ```
 
 ### Miscellaneous logging samples using the generator
 
 The samples below show we could:
 
-- `LogWithCustomEventName`: retrieve event name via `LoggerMessage` attribute. 
+- `LogWithCustomEventName`: retrieve event name via `LoggerMessage` attribute.
 - `LogWithDynamicLogLevel`: set log level dynamically, to allow log level to be set based on configuration input.
 - `UsingFormatSpecifier`: use format specifiers to format logging parameters.
 
@@ -208,27 +251,41 @@ public partial class LoggingSample5
         _logger = logger;
     }
 
-    [LoggerMessage(EventId = 20, Level = LogLevel.Critical, Message = "Value is {value:E}")]
-    public static partial void UsingFormatSpecifier(ILogger logger, double value);
+    [LoggerMessage(
+        EventId = 20,
+        Level = LogLevel.Critical,
+        Message = "Value is {value:E}")]
+    public static partial void UsingFormatSpecifier(
+        ILogger logger, double value);
 
-    [LoggerMessage(EventId = 9, Level = LogLevel.Trace, Message = "Fixed message", EventName = "CustomEventName")]
+    [LoggerMessage(
+        EventId = 9,
+        Level = LogLevel.Trace,
+        Message = "Fixed message",
+        EventName = "CustomEventName")]
     public partial void LogWithCustomEventName();
 
-    [LoggerMessage(EventId = 10, Message = "Welcome to {city} {province}!")]
-    public partial void LogWithDynamicLogLevel(string city, LogLevel level, string province);
+    [LoggerMessage(
+        EventId = 10,
+        Message = "Welcome to {city} {province}!")]
+    public partial void LogWithDynamicLogLevel(
+        string city, LogLevel level, string province);
 
     public void TestLogging()
     {
         LogWithCustomEventName();
         LogWithDynamicLogLevel("Vancouver", Level = LogLevel.Warning, "BC");
         LogWithDynamicLogLevel("Vancouver", Level = LogLevel.Information, "BC");
+
         double val = 12345.6789;
         Log.UsingFormatSpecifier(logger, val);
     }
 }
 ```
-output to `TestLogging()` using SimpleConsole:
-```
+
+Consider the example logging output when using the `SimpleConsole` formatter.
+
+```console
 trce: LoggingExample[9]
       Fixed message
 warn: LoggingExample[10]
@@ -239,8 +296,9 @@ crit: LoggingExample[20]
       Value is 1.234568E+004
 ```
 
-same console logs formatted using JsonConsole:
-```
+Consider the example logging output when using the `JsonConsole` formatter.
+
+```json
 {
   "EventId": 9,
   "LogLevel": "Trace",
@@ -288,33 +346,36 @@ same console logs formatted using JsonConsole:
 }
 ```
 
-### Benefits with the source generator approach:
+## Summary
 
-- Allows the logging structure to be preserved and enables the exact format syntax required by https://messagetemplates.org/
-- Allows supplying alternative names for the holes and using format specifiers.
-- Allows to pass all of original data as-is without any complication around how it's stored prior to something being done with it other than creating a string.
-- Provides logging-specific diagnostics, e.g. it emits warnings for duplicate event ids.
+With the advent of C# source generators, writing highly-performant logging APIs is much easier. Using the source generator approach has several key benefits:
 
-#### Benefits compared to using LoggerMessage.Define directly
+- Allows the logging structure to be preserved and enables the exact format syntax required by [Message Templates](https://messagetemplates.org).
+- Allows supplying alternative names for the template placeholders and using format specifiers.
+- Allows the passing of all original data as-is, without any complication around how it's stored prior to something being done with it (other than creating a `string`).
+- Provides logging-specific diagnostics, emits warnings for duplicate event ids.
 
-- Shorter and simpler syntax than current approach
-- Guided developer experience - the generator gives warnings to help developers do the right thing
-- Support for an arbitrary # of logging parameters. LoggerMessage.Define tops out at 6
-- Support for dynamic log level, current approach doesn't support this
+Additionally, there are benefits over manually using <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType>:
 
-### Known issues/limitations
+- Shorter and simpler syntax, declarative attribute usage rather than coding boilerplate.
+- Guided developer experience, the generator gives warnings to help developers do the right thing.
+- Support for an arbitrary number of logging parameters. `LoggerMessage.Define` supports a max of six.
+- Support for dynamic log level, this is not possible with `LoggerMessage.Define` alone.
 
-The first version of the generator uses `LoggerMessage.Define` under the hood where possible. The issues below track potential improvements to make on `Define` APIs to allow better support in the source generator.
+### Known limitations
 
-- _Support for an arbitrary # of logging parameters and dynamic logging_
+There are a few known limitations with the underlying implementation details. The first version of the generator uses `LoggerMessage.Define` where possible. The following issues are tracking potential improvements to the `Define` APIs, which could allow for better support of the source generator.
 
-Currently maximum number of parameters allowed via `LoggerMessage.Define` (Refer to [dotnet/runtime#50913](https://github.com/dotnet/runtime/issues/50913)) is 6. To mitigate this either the source generator would need to fallback to another approach, or we would need to add more `Define` overloads for the generator to use. The issue also tracks adding APIs to allow `Define` with supporting dynamic logging as well.
+- Support for an arbitrary # of logging parameters and dynamic logging
 
-- _More robust support for handling message template parameters._
+  Currently the maximum number of parameters allowed from the `LoggerMessage.Define` is six. To mitigate this either the source generator would need to fallback to another approach, or we would need to add more `Define` overloads for the generator to use. The issue also tracks adding APIs to allow `Define` with supporting dynamic logging as well. For more information, see [Add `LoggerMessage.Define` overloads accepting up to 14 arguments](https://github.com/dotnet/runtime/issues/50913).
 
-The code generation using `LoggerMessage.Define` does not currently handle message templates when number of parameters do not match the specified template parameters even if the parameters used in the template are the same (Refer to [dotnet/runtime#51054](https://github.com/dotnet/runtime/issues/51054)). This could be something that the source generator supports as it evolves further.
+- More robust support for handling message template parameters
+
+  The code generation using `LoggerMessage.Define` does not currently handle message templates when the number of parameters doesn't match the specified template parameter count. This is true regardless of whether the parameters used in the template are the same. This could be something that the source generator supports as it evolves. For more information, see [`LoggerMessage.Define` doesn't support repeating the same named parameter in the message template](https://github.com/dotnet/runtime/issues/51054).
 
 ## See also
 
 - [Logging in .NET](logging.md)
 - [High-performance logging in .NET](high-performance-logging.md)
+- [Console log formatting](console-log-formatter.md)

@@ -53,7 +53,7 @@ Base Class Library.
 
 A set of libraries that comprise the System.\* (and to a limited extent Microsoft.\*) namespaces. The BCL is a general purpose, lower-level framework that higher-level application frameworks, such as ASP.NET Core, build on.
 
-The source code of the BCL for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions) is contained in the [.NET runtime repository](https://github.com/dotnet/runtime). Most these BCL APIs are also available in .NET Framework, so you can think of this source code as a fork of the .NET Framework BCL source code.
+The source code of the BCL for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions) is contained in the [.NET runtime repository](https://github.com/dotnet/runtime). Most of these BCL APIs are also available in .NET Framework, so you can think of this source code as a fork of the .NET Framework BCL source code.
 
 The following terms often refer to the same collection of APIs that BCL refers to:
 
@@ -180,7 +180,7 @@ See the [Mono documentation](https://www.mono-project.com/docs/).
 * In general, *.NET* is the umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads.
 * More specifically, .NET refers to the implementation of .NET that is recommended for all new development: [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
 
-Fo example, the first meaning is intended in phrases such as "implementations of .NET." The second meaning is intended in names such as [.NET SDK](#net-sdk) and [.NET CLI](#net-cli).
+For example, the first meaning is intended in phrases such as "implementations of .NET." The second meaning is intended in names such as [.NET SDK](#net-sdk) and [.NET CLI](#net-cli).
 
 .NET is always fully capitalized, never ".Net".
 
@@ -216,7 +216,7 @@ A compiler tool chain that produces native code ahead-of-time ([AOT](#aot)), as 
 
 Compilation happens on the developer's machine similar to the way a C++ compiler and linker works. It removes unused code and spends more time optimizing it. It extracts code from libraries and merges them into the executable. The result is a single module that represents the entire app.
 
-UWP was the first application framework supported by .NET Native. Now, we support building native console apps for Windows, macOS, and Linux.
+UWP is the application framework supported by .NET Native.
 
 See [.NET Native documentation](/windows/uwp/dotnet-native/).
 

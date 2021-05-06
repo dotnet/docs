@@ -8,6 +8,9 @@ ms.date: 05/06/2021
 
 # Compile-time logging source generation
 
+> [!NOTE]
+> This new API will be generally available with .NET 6, and is subject to change. You're free to try it out now with .NET 6 Preview 4. This feature is part of the [Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/microsoft.extensions.logging.abstractions) package.
+
 With .NET 6, the `LoggerMessageAttribute` was introduced. This attribute is part of the `Microsoft.Extensions.Logging` namespace, and when used it will source generate performant logging APIs. The source generation logging support is designed to deliver a highly-usable and highly-performant logging solution for modern .NET applications. The auto-generated source code relies on the <xref:Microsoft.Extensions.Logging.ILogger> interface in conjunction with <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType> functionality.
 
 The source generator is triggered when `LoggerMessageAttribute` is used on `partial` logging methods. When triggered, it is either able to autogenerate the implementation of the `partial` methods it's decorating, or produce compile-time diagnostics with hints about proper usage. The compile-time logging solution is typically considerably faster at runtime than existing logging approaches. It does this by eliminating boxing, temporary allocations, and copies to the maximum extent possible.
@@ -378,3 +381,4 @@ There are a few known limitations with the underlying implementation details. Th
 - [Logging in .NET](logging.md)
 - [High-performance logging in .NET](high-performance-logging.md)
 - [Console log formatting](console-log-formatter.md)
+- [NuGet: Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/microsoft.extensions.logging.abstractions)

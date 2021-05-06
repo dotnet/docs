@@ -1,6 +1,6 @@
 ---
 title: "Lambda expressions - C# reference"
-description: Learn about lambda expressions. There are expression lambdas that have an expression as its body, or statement lambdas that have a statement block as its body.
+description: Learn about C# lambda expressions that are used to create anonymous functions.
 ms.date: 09/25/2020
 helpviewer_keywords: 
   - "lambda expressions [C#]"

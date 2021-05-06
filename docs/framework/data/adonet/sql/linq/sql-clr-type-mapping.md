@@ -63,7 +63,7 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
   
 - SQL Server orders some data types differently than data of equivalent type in the CLR. For example, SQL Server data of type `UNIQUEIDENTIFIER` is ordered differently than CLR data of type <xref:System.Guid?displayProperty=nameWithType>.  
   
-- SQL Server handles some string comparison operations differently than the CLR. In SQL Server, string comparison behavior depends on the collation settings on the server. For more information, see [Working with Collations](/previous-versions/sql/sql-server-2008-r2/ms187582(v=sql.105)) in the Microsoft SQL Server Books Online.  
+- SQL Server handles some string comparison operations differently than the CLR. In SQL Server, string comparison behavior depends on the collation settings on the server. For more information, see [Working with Collations](/previous-versions/sql/sql-server-2008-r2/ms187582(v=sql.105)).
   
 - SQL Server may return different values for some mapped functions than the CLR. For example, equality functions will differ because SQL Server considers two strings to be equal if they only differ in trailing white space; whereas the CLR considers them to be not equal.  
   

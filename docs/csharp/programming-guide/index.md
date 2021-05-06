@@ -31,7 +31,7 @@ This section provides detailed information on key C# language features and featu
 
  [Types](./types/index.md)  
 
- [Classes and Structs](./classes-and-structs/index.md)  
+ [Classes, structs, and records](./classes-and-structs/index.md)  
   
  [Interfaces](./interfaces/index.md)  
 
@@ -55,7 +55,7 @@ This section provides detailed information on key C# language features and featu
   
  [Namespaces](./namespaces/index.md)  
   
- [Unsafe Code and Pointers](./unsafe-code-pointers/index.md)  
+ [Unsafe Code and Pointers](../language-reference/unsafe-code.md)  
   
  [XML Documentation Comments](./xmldoc/index.md)  
   

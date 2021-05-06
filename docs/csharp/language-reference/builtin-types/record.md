@@ -42,7 +42,7 @@ You can use positional parameters to declare properties of a record and to initi
 
 When you use the positional syntax for property definition, the compiler creates:
 
-* A public init-only auto-implemented property for each positional parameter provided in the record declaration. An [init-only](../../whats-new/csharp-9.md#init-only-setters) property can only be set in the constructor or by using a property initializer.
+* A public init-only auto-implemented property for each positional parameter provided in the record declaration. An [init-only](../keywords/init.md) property can only be set in the constructor or by using a property initializer.
 * A primary constructor whose parameters match the positional parameters on the record declaration.
 * A `Deconstruct` method with an `out` parameter for each positional parameter provided in the record declaration. This method is provided only if there are two or more positional parameters. The method deconstructs properties defined by using positional syntax; it ignores properties that are defined by using standard property syntax.
 
@@ -122,7 +122,7 @@ Record types have a compiler-generated <xref:System.Object.ToString%2A> method t
 For reference types, the type name of the object that the property refers to is displayed instead of the property value. In the following example, the array is a reference type, so `System.String[]` is displayed instead of the actual array element values:
 
 ```
-Person { FirstName = Nancy, LastName = Davolio, ChildNames = System.String[] } 
+Person { FirstName = Nancy, LastName = Davolio, ChildNames = System.String[] }
 ```
 
 To implement this feature, the compiler synthesizes a virtual `PrintMembers` method and a <xref:System.Object.ToString%2A> override.
@@ -204,5 +204,5 @@ For more information about features introduced in C# 9 and later, see the follow
 - [C# reference](../index.md)
 - [Design guidelines - Choosing between class and struct](../../../standard/design-guidelines/choosing-between-class-and-struct.md)
 - [Design guidelines - Struct design](../../../standard/design-guidelines/struct.md)
-- [Classes and structs](../../programming-guide/classes-and-structs/index.md)
+- [Classes, structs, and records](../../programming-guide/classes-and-structs/index.md)
 - [`with` expression](../operators/with-expression.md)

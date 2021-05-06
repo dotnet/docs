@@ -63,7 +63,7 @@ Resource Manager templates can be run in many of ways. Perhaps the simplest way 
 
 Cloud-native applications are often constructed to be `cloud agnostic`. Being so means the application isn't tightly coupled to a particular cloud vendor and can be deployed to any public cloud.
 
-[Terraform](https://www.terraform.io/) is commercial templating tool that can provision cloud-native applications across all the major cloud players: Azure, Google Cloud Platform, AWS, and AliCloud. Instead of using JSON as the template definition language, it uses the slightly more terse YAML.
+[Terraform](https://www.terraform.io/) is a commercial templating tool that can provision cloud-native applications across all the major cloud players: Azure, Google Cloud Platform, AWS, and AliCloud. Instead of using JSON as the template definition language, it uses the slightly more terse HCL (Hashicorp Configuration Language).
 
 An example Terraform file that does the same as the previous Resource Manager template (Figure 10-15) is shown in Figure 10-16:
 

@@ -32,7 +32,7 @@ The **DocumentationFile** option allows you to place documentation comments in a
 The source code file that contains Main or top-level statements is output first into the XML. You'll often want to use the generated .xml file with [IntelliSense](/visualstudio/ide/using-intellisense). The *.xml* filename must be the same as the assembly name. The *.xml* file must be in the same directory as the assembly. When the assembly is referenced in a Visual Studio project, the *.xml* file is found as well. For more information about generating code comments, see [Supplying Code Comments](/visualstudio/ide/reference/generate-xml-documentation-comments). Unless you compile with [`<TargetType:Module>`](#targettype), `file` will contain `<assembly>` and `</assembly>` tags specifying the name of the file containing the assembly manifest for the output file. For examples, see [How to use the XML documentation features](../../programming-guide/xmldoc/how-to-use-the-xml-documentation-features.md).
 
 > [!NOTE]
-> The **DocumentationFile** option applies to all files in the project. To disable warnings related to documentation comments for a specific file or section of code, use [#pragma warning](../preprocessor-directives/preprocessor-pragma-warning.md).
+> The **DocumentationFile** option applies to all files in the project. To disable warnings related to documentation comments for a specific file or section of code, use [#pragma warning](../preprocessor-directives.md#pragma-warning).
 
 ## OutputAssembly
 
@@ -138,6 +138,6 @@ The **winmdobj** setting signals to the compiler that an intermediate module is 
 
 ### appcontainerexe
 
-If you use the **appcontainerexe** compiler option, the compiler creates a Windows executable (*.exe*) file that must be run in an app container. This option is equivalent to [-target:winexe](./target-winexe-compiler-option.md) but is designed for Windows 8.x Store apps.
+If you use the **appcontainerexe** compiler option, the compiler creates a Windows executable (*.exe*) file that must be run in an app container. This option is equivalent to [-target:winexe](output.md) but is designed for Windows 8.x Store apps.
 
 To require the app to run in an app container, this option sets a bit in the [Portable Executable](/windows/desktop/Debug/pe-format) (PE) file. When that bit is set, an error occurs if the CreateProcess method tries to launch the executable file outside an app container. Unless you use the [**OutputAssembly**](#outputassembly) option, the output file name takes the name of the input file that contains the [`Main`](../../programming-guide/main-and-command-args/index.md) method.

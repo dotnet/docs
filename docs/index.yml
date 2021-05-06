@@ -176,9 +176,12 @@ tools:
       url: visual-basic/index.yml
 
 # Card with summary style
+
 additionalContent:
-  # Supports up to 3 sections
-  sections: 
+
+# Supports up to 3 sections
+
+  sections:
     - title: Create your application # < 60 chars (optional)
       summary: "You can choose web, mobile, desktop, gaming, IoT, and more." # < 160 chars (optional)
       items:
@@ -228,8 +231,6 @@ additionalContent:
             text: Dapr for .NET developers
           - url: architecture/cloud-native/index.md
             text: Cloud native .NET apps
-          - url: /learn/aspnet/microservice-tutorial/intro
-            text: Create your first .NET microservice
           - url: architecture/serverless/index.md
             text: Serverless apps with Azure
           - url: architecture/microservices/index.md
@@ -239,11 +240,11 @@ additionalContent:
         links:
           - url: azure/index.yml
             text: Azure for .NET developers
-          - url: /dotnet/azure/migration/app-service?view=azure-dotnet&preserve-view=true
+          - url: ./azure/migration/app-service.md?preserve-view=true&view=azure-dotnet
             text: Migrate on-premises .NET web apps or services
-          - url: /dotnet/azure/key-azure-services
+          - url: ./azure/key-azure-services.md
             text: Azure services for .NET developers
-          - url: /dotnet/azure/sdk/azure-sdk-for-dotnet
+          - url: ./azure/sdk/azure-sdk-for-dotnet.md
             text: Azure .NET SDK
           - url: fsharp/using-fsharp-on-azure/index.md
             text: Use F# on Azure
@@ -321,5 +322,5 @@ additionalContent:
         summary: Visual Basic language reference and specification
         url: visual-basic/language-reference/index.md
 
-  # footer (optional)
+# footer (optional)
   footer: "Are you interested in contributing to the .NET docs? For more information, see our [contributor guide](/contribute/dotnet/dotnet-contribute)."

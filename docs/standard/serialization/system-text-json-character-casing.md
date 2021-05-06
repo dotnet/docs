@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "serializing objects"
   - "serialization"
   - "objects, serializing"
+ms.topic: how-to
 ---
 
 # How to enable case-insensitive property name matching with System.Text.Json

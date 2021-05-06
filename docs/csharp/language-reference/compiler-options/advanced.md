@@ -243,8 +243,6 @@ The following table lists common subsystem versions of Windows.
 
 |Windows version|Subsystem version|
 |---------------------|-----------------------|
-|Windows 2000|5.00|
-|Windows XP|5.01|
 |Windows Server 2003|5.02|
 |Windows Vista|6.00|
 |Windows 7|6.01|
@@ -254,9 +252,9 @@ The following table lists common subsystem versions of Windows.
 The default value of the **SubsystemVersion** compiler option depends on the conditions in the following list:
 
 - The default value is 6.02 if any compiler option in the following list is set:
-  - [-target:appcontainerexe](./target-appcontainerexe-compiler-option.md)
-  - [-target:winmdobj](./target-winmdobj-compiler-option.md)
-  - [-platform:arm](./platform-compiler-option.md)
+  - [-target:appcontainerexe](output.md)
+  - [-target:winmdobj](output.md)
+  - [-platform:arm](output.md)
 - The default value is 6.00 if you're using MSBuild, you're targeting .NET Framework 4.5, and you haven't set any of the compiler options that were specified earlier in this list.
 - The default value is 4.00 if none of the previous conditions are true.
 

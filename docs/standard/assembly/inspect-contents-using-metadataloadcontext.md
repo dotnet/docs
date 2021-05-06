@@ -3,6 +3,7 @@ title: "How to: Inspect assembly contents using MetadataLoadContext"
 description: "Learn how to use MetadataLoadContext, which is an API that enables you to load .NET assemblies for inspection purposes."
 author: MSDN-WhiteKnight
 ms.date: 03/10/2020
+ms.topic: how-to
 ---
 # How to: Inspect assembly contents using MetadataLoadContext
 

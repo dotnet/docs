@@ -24,6 +24,6 @@ C# [records](records.md) provide a copy constructor for objects, but for classes
 - <xref:System.ICloneable>
 - [Records](records.md)
 - [C# Programming Guide](../index.md)
-- [Classes and Structs](./index.md)
+- [Classes, structs, and records](./index.md)
 - [Constructors](./constructors.md)
 - [Finalizers](./destructors.md)

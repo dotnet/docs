@@ -1,6 +1,7 @@
 ---
 title: "How to query for sentences that contain a specified set of words (LINQ) (C#)"
 description: Learn how to use LINQ in C# to find sentences in a text file that contain matches for each of a set of words, which could be populated at runtime.
+ms.topic: how-to
 ms.date: 07/20/2015
 ms.assetid: 0724b429-4b87-4d26-a7b1-409358f3fc20
 ---

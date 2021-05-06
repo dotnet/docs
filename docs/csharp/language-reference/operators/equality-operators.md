@@ -49,7 +49,7 @@ As the example shows, user-defined reference types support the `==` operator by 
 
 ### Record types equality
 
-Available in C# 9.0 and later, [record types](../../whats-new/csharp-9.md#record-types) support the `==` and `!=` operators that by default provide value equality semantics. That is, two record operands are equal when both of them are `null` or corresponding values of all fields and auto-implemented properties are equal.
+Available in C# 9.0 and later, [record types](../builtin-types/record.md) support the `==` and `!=` operators that by default provide value equality semantics. That is, two record operands are equal when both of them are `null` or corresponding values of all fields and auto-implemented properties are equal.
 
 :::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="RecordTypesEquality":::
 
@@ -65,7 +65,7 @@ That is a case-sensitive ordinal comparison. For more information about string c
 
 ### Delegate equality
 
-Two [delegate](../../programming-guide/delegates/index.md) operands of the same runtime type are equal when both of them are `null` or their invocation lists are of the same length and have equal entries in each position:
+Two [delegate](../../programming-guide/delegates/index.md) operands of the same run-time type are equal when both of them are `null` or their invocation lists are of the same length and have equal entries in each position:
 
 [!code-csharp-interactive[delegate equality](snippets/shared/EqualityOperators.cs#DelegateEquality)]
 

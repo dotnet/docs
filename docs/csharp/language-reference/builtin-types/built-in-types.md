@@ -36,7 +36,7 @@ The following table lists the C# built-in [reference](../keywords/reference-type
 |[`string`](reference-types.md#the-string-type)|<xref:System.String?displayProperty=nameWithType>|
 |[`dynamic`](reference-types.md#the-dynamic-type)|<xref:System.Object?displayProperty=nameWithType>|
 
-In the preceding tables, each C# type keyword from the left column (except [nint and nuint](nint-nuint.md)) is an alias for the corresponding .NET type. They are interchangeable. For example, the following declarations declare variables of the same type:
+In the preceding tables, each C# type keyword from the left column (except [nint and nuint](nint-nuint.md) and [dynamic](reference-types.md#the-dynamic-type)) is an alias for the corresponding .NET type. They are interchangeable. For example, the following declarations declare variables of the same type:
 
 ```csharp
 int a = 123;

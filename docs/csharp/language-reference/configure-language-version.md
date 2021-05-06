@@ -48,7 +48,7 @@ If you must specify your C# version explicitly, you can do so in several ways:
 - Configure the [**LangVersion** compiler option](compiler-options/language.md#langversion).
 
 > [!TIP]
-> To know what language version you're currently using, put `#error version` (case sensitive) in your code. This makes the compiler report a compiler error, CS8304, with a message containing the compiler version being used and the current selected language version. See [#error (C# Reference)](preprocessor-directives/preprocessor-error.md) for more information.
+> To know what language version you're currently using, put `#error version` (case sensitive) in your code. This makes the compiler report a compiler error, CS8304, with a message containing the compiler version being used and the current selected language version. See [#error (C# Reference)](preprocessor-directives.md#error-and-warning-information) for more information.
 
 ### Edit the project file
 

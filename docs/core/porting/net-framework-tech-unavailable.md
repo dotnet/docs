@@ -4,6 +4,7 @@ titleSuffix: ""
 description: Learn about .NET Framework technologies that are unavailable on .NET Core and .NET 5.0 and later versions.
 author: cartermp
 ms.date: 03/08/2021
+ms.topic: reference
 ---
 # .NET Framework technologies unavailable on .NET Core and .NET 5+
 
@@ -15,7 +16,7 @@ For more information on API compatibility, see [Breaking changes in .NET](../com
 
 Application domains (AppDomains) isolate apps from one another. AppDomains require runtime support and are resource-expensive. Creating more app domains isn't supported, and there are no plans to add this capability in the future. For code isolation, use separate processes or containers as an alternative. To dynamically load assemblies, use the <xref:System.Runtime.Loader.AssemblyLoadContext> class.
 
-To make code migration from .NET Framework easier, .NET 5+ exposes some of the <xref:System.AppDomain> API surface. Some of the APIs function normally (for example, <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType>), some members do nothing (for example, <xref:System.AppDomain.SetCachePath%2A>), and some of them throw <xref:System.PlatformNotSupportedException> (for example, <xref:System.AppDomain.CreateDomain%2A>). Check the types you use against the [`System.AppDomain` reference source](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Private.CoreLib/src/System/AppDomain.cs) in the [dotnet/runtime GitHub repository](https://github.com/dotnet/runtime). Make sure to select the branch that matches your implemented version.
+To make code migration from .NET Framework easier, .NET 5+ exposes some of the <xref:System.AppDomain> API surface. Some of the APIs function normally (for example, <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType>), some members do nothing (for example, <xref:System.AppDomain.SetCachePath%2A>), and some of them throw <xref:System.PlatformNotSupportedException> (for example, <xref:System.AppDomain.CreateDomain%2A>). Check the types you use against the [`System.AppDomain` reference source](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Private.CoreLib/src/System/AppDomain.cs) in the [dotnet/runtime GitHub repository](https://github.com/dotnet/runtime). Make sure to select the branch that matches your implemented version.
 
 ## Remoting
 

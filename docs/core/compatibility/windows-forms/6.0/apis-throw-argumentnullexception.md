@@ -28,17 +28,25 @@ Throwing <xref:System.ArgumentNullException> conforms to .NET Runtime behavior. 
 
 ## Affected APIs
 
-The following table lists the affected properties:
+The following table lists the affected APIs and specific parameters:
 
-| Property | Version changed |
-|-|-|-|-|
-| <xref:System.Windows.Forms.TreeNodeCollection.Item(System.Int32)?displayProperty=fullName> | Preview 1 |
+| Method/property | Parameter name | Version changed |
+|-|-|-|
+| <xref:System.Windows.Forms.TreeNodeCollection.Item(System.Int32)?displayProperty=fullName> | `index` | Preview 1 |
+| <xref:System.Windows.Forms.DrawTreeNodeEventArgs.%23ctor(System.Drawing.Graphics,System.Windows.Forms.TreeNode,System.Drawing.Rectangle,System.Windows.Forms.TreeNodeStates)> | `graphics` | Preview 3 |
+| <xref:System.Windows.Forms.DataGridViewRowStateChangedEventArgs.%23ctor(System.Windows.Forms.DataGridViewRow,System.Windows.Forms.DataGridViewElementStates)> | `dataGridViewRow` | Preview 4 |
+
+## See also
+
+- [TreeNodeCollection.Item throws exception if node is assigned elsewhere](treenodecollection-item-throws-argumentexception.md)
 
 <!--
 
 ### Affected APIs
 
 - `P:System.Windows.Forms.TreeNodeCollection.Item(System.Int32)`
+- `M:System.Windows.Forms.DrawTreeNodeEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.TreeNode,System.Drawing.Rectangle,System.Windows.Forms.TreeNodeStates)`
+- `M:System.Windows.Forms.DataGridViewRowStateChangedEventArgs.#ctor(System.Windows.Forms.DataGridViewRow,System.Windows.Forms.DataGridViewElementStates)`
 
 ### Category
 

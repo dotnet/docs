@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "serializing objects"
   - "serialization"
   - "objects, serializing"
+ms.topic: how-to
 ---
 
 # How to use immutable types and non-public accessors with System.Text.Json

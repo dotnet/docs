@@ -220,7 +220,7 @@ With this change, you should get the symbols for all .NET code.
 
 Most of the time you are interested in your own code, which `perfcollect` resolves by default. Sometimes it is useful to see what is going on inside the .NET DLLs (which is what the last section was about), but sometimes what is going on in the native runtime dlls (typically libcoreclr.so), is interesting.  `perfcollect` will resolve the symbols for these when it converts its data, but only if the symbols for these native DLLs are present (and are beside the library they are for).
 
-There is a global command called [dotnet-symbol](https://github.com/dotnet/symstore/blob/master/src/dotnet-symbol/README.md#symbol-downloader-dotnet-cli-extension) that does this. To use dotnet-symbol to get native runtime symbols:
+There is a global command called [dotnet-symbol](https://github.com/dotnet/symstore/blob/main/src/dotnet-symbol/README.md#symbol-downloader-dotnet-cli-extension) that does this. To use dotnet-symbol to get native runtime symbols:
 
 1. Install `dotnet-symbol`:
 

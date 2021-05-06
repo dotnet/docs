@@ -29,7 +29,7 @@ Notifies the profiler whenever an EventPipe event has been delivered to the prof
         [in] LPCGUID pRelatedActivityId,
         [in] ThreadID eventThread,
         [in] ULONG numStackFrames,
-        [in, length_is(numStackFrames)] UINT_PTR stackFrames[]); 
+        [in, length_is(numStackFrames)] UINT_PTR stackFrames[]);
 ```  
   
 ## Parameters

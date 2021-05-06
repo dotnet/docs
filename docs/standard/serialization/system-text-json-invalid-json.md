@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "serializing objects"
   - "serialization"
   - "objects, serializing"
+ms.topic: how-to
 ---
 
 # How to allow some kinds of invalid JSON with System.Text.Json

@@ -42,7 +42,7 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 1. The data set used to train and evaluate the machine learning model is originally from the NYC TLC Taxi Trip data set.
 
-    1. To download the data set, navigate to the [taxi-fare-train.csv download link](https://raw.githubusercontent.com/dotnet/machinelearning/master/test/data/taxi-fare-train.csv).
+    1. To download the data set, navigate to the [taxi-fare-train.csv download link](https://raw.githubusercontent.com/dotnet/machinelearning/main/test/data/taxi-fare-train.csv).
 
     1. When the page loads, right-click anywhere on the page and select **Save as**.
 

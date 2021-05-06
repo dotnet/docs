@@ -5,12 +5,12 @@ ms.date: 09/30/2020
 ---
 # Object-Oriented programming (C#)
 
-C# is an object-oriented language. Four of the key techniques used in object-oriented programming are:
+C# is an object-oriented programming language. The four basic principles of object-oriented programming are:
 
-- *Abstraction* means that a group of related properties, methods, and other members are treated as a single unit or object.
-- *Encapsulation* means hiding the unnecessary details from type consumers.
-- *Inheritance* describes the ability to create new classes based on an existing class.
-- *Polymorphism* means that you can have multiple classes that can be used interchangeably, even though each class implements the same properties or methods in different ways.
+- *Abstraction* Modeling the relevant attributes and interactions of entities as classes to define an abstract representation of a system.
+- *Encapsulation* Hiding the internal state and functionality of an object and only allowing access through a public set of functions.
+- *Inheritance* Ability to create new abstractions based on existing abstractions.
+- *Polymorphism* Ability to implement inherited properties or methods in different ways across multiple abstractions.
 
 In the preceding tutorial, [introduction to classes](introduction-to-classes.md) you saw both *abstraction* and *encapsulation*. The `BankAccount` class provided an abstraction for the concept of a bank account. You could modify its implementation without affecting any of the code that used the `BankAccount` class. Both the `BankAccount` and `Transaction` classes provide encapsulation of the components needed to describe those concepts in code.
 
@@ -186,4 +186,4 @@ This tutorial demonstrated many of the techniques used in Object-Oriented progra
 - You used *Inheritance* when you leveraged the implementation already created in the `BankAccount` class to save code.
 - You used *Polymorphism* when you created `virtual` methods that derived classes could override to create specific behavior for that account type.
 
-Congratulations, you've finished all of our introduction to C# tutorials. To learn more, try more of our [tutorials](../index.md).
+Congratulations, you've finished all of our introduction to C# tutorials. To learn more, try more of our [tutorials](introduction-to-classes.md).

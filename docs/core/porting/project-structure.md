@@ -31,7 +31,7 @@ Consider the repository below:
 
 ![Existing project](./media/project-structure/existing-project-structure.png)
 
-[**Source Code**](https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library/)
+[**Source Code**](https://github.com/dotnet/samples/tree/main/framework/libraries/migrate-library/)
 
 The following describes several ways to add support for .NET Core for this repository depending on the constraints and complexity of the existing projects.
 
@@ -41,11 +41,11 @@ Reorganize the repository so that any existing *\*.csproj* files are removed and
 
 ![Create a csproj that targets multiple frameworks](./media/project-structure/multi-targeted-project.png)
 
-[**Source Code**](https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj/)
+[**Source Code**](https://github.com/dotnet/samples/tree/main/framework/libraries/migrate-library-csproj/)
 
 Changes to note are:
 
-- Replacement of *packages.config* and *\*.csproj* with a new [.NET Core *\*.csproj*](https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj/src/Car/Car.csproj). NuGet packages are specified with `<PackageReference> ItemGroup`.
+- Replacement of *packages.config* and *\*.csproj* with a new [.NET Core *\*.csproj*](https://github.com/dotnet/samples/tree/main/framework/libraries/migrate-library-csproj/src/Car/Car.csproj). NuGet packages are specified with `<PackageReference> ItemGroup`.
 
 ## Keep existing projects and create a .NET Core project
 
@@ -53,7 +53,7 @@ If there are existing projects that target older frameworks, you may want to lea
 
 ![.NET Core project with existing project in different folder](./media/project-structure/separate-projects-same-source.png)
 
-[**Source Code**](https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj-keep-existing/)
+[**Source Code**](https://github.com/dotnet/samples/tree/main/framework/libraries/migrate-library-csproj-keep-existing/)
 
 The .NET Core and existing projects are kept in separate folders. Keeping projects in separate folders avoids forcing you to have Visual Studio 2017 or later versions. You can create a separate solution that only opens the old projects.
 

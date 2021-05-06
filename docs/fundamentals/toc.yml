@@ -427,7 +427,15 @@ items:
       - name: Well-known event providers
         href: ../core/diagnostics/well-known-event-providers.md
       - name: Distributed Tracing
-        href: ../core/diagnostics/distributed-tracing.md
+        items:
+        - name: Overview
+          href: ../core/diagnostics/distributed-tracing.md
+        - name: Concepts
+          href: ../core/diagnostics/distributed-tracing-concepts.md
+        - name: Instrumentation
+          href: ../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
+        - name: Collection
+          href: ../core/diagnostics/distributed-tracing-collection-walkthroughs.md
     - name: Symbols
       href: ../core/diagnostics/symbols.md
     - name: Runtime events
@@ -462,6 +470,8 @@ items:
         href: ../core/diagnostics/dotnet-gcdump.md
       - name: dotnet-trace
         href: ../core/diagnostics/dotnet-trace.md
+      - name: dotnet-stack
+        href: ../core/diagnostics/dotnet-stack.md
       - name: dotnet-symbol
         href: ../core/diagnostics/dotnet-symbol.md
       - name: dotnet-sos
@@ -768,15 +778,19 @@ items:
             href: code-analysis/quality-rules/ca1837.md
           - name: CA1838
             href: code-analysis/quality-rules/ca1838.md
-        - name: Publish rules
+          - name: CA1841
+            href: code-analysis/quality-rules/ca1841.md
+        - name: SingleFile rules
           items:
           - name: Overview
-            displayName: "publish rules"
-            href: code-analysis/quality-rules/publish-warnings.md
+            displayName: "singlefile rules"
+            href: code-analysis/quality-rules/singlefile-warnings.md
           - name: IL3000
             href: code-analysis/quality-rules/il3000.md
           - name: IL3001
             href: code-analysis/quality-rules/il3001.md
+          - name: IL3002
+            href: code-analysis/quality-rules/il3002.md
         - name: Reliability rules
           items:
           - name: Overview
@@ -1263,6 +1277,8 @@ items:
             href: code-analysis/style-rules/ide0100.md
           - name: IDE0110
             href: code-analysis/style-rules/ide0110.md
+          - name: IDE0140
+            href: code-analysis/style-rules/ide0140.md
         - name: Miscellaneous rules
           items:
           - name: Overview
@@ -1277,8 +1293,6 @@ items:
           href: code-analysis/style-rules/naming-rules.md
     - name: Platform compatibility analyzer
       href: ../standard/analyzers/platform-compat-analyzer.md
-    - name: API analyzer
-      href: ../standard/analyzers/api-analyzer.md
     - name: Portability analyzer
       href: ../standard/analyzers/portability-analyzer.md
 - name: Execution model
@@ -1359,6 +1373,8 @@ items:
       href: ../core/deploying/trim-self-contained.md
     - name: Options
       href: ../core/deploying/trimming-options.md
+    - name: Trimming libraries
+      href: ../core/deploying/prepare-libraries-for-trimming.md
   - name: Runtime package store
     href: ../core/deploying/runtime-store.md
   - name: Runtime Identifier (RID) catalog
@@ -1373,6 +1389,11 @@ items:
       href: ../core/docker/build-container.md
     - name: Container tools in Visual Studio
       href: /visualstudio/containers/overview
+- name: DevOps
+  items:
+  - name: Create a GitHub Action with .NET
+    href: ../devops/create-dotnet-github-action.md
+    displayName: "continuous integration, continuous deployment, ci, cd, ci/cd, github, github action, github actions, lifecycle"
 - name: Fundamental coding components
   items:
   - name: Base types overview
@@ -2304,8 +2325,6 @@ items:
   - name: Breaking changes
     displayName: app compatibility
     href: ../core/compatibility/
-  - name: Map project AssemblyInfo attributes to properties
-    href: ../core/migration/assembly-info.md
   - name: Analyze third-party dependencies
     href: ../core/porting/third-party-deps.md
   - name: Port libraries

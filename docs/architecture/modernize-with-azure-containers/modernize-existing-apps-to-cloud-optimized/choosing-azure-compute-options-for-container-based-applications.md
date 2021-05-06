@@ -33,6 +33,12 @@ In the following table, you can see a breakdown of different kinds of apps and t
 ![Recommended icon](media/choosing-azure-compute-options-for-container-based-applications/recommended.png) Recommended \
 ![Possible icon](media/choosing-azure-compute-options-for-container-based-applications/possible.png) Possible
 
+### Additional resources
+
+- **Choose an Azure compute service for your application**
+
+    <https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree>
+
 > [!div class="step-by-step"]
 > [Previous](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)
 > [Next](build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md)

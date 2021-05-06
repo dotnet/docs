@@ -5,6 +5,7 @@ ms.custom: azure-sdk-dotnet
 author: camsoper
 ms.author: casoper
 ms.date: 07/29/2020
+ms.topic: reference
 ---
 
 # Azure SDK for .NET package index

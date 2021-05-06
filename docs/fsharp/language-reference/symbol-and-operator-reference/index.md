@@ -127,14 +127,14 @@ The following table shows the order of precedence of operators and other express
 |`or`, <code>&#124;&#124;</code>|Left|
 |`&`, `&&`|Left|
 |`:>`, `:?>`|Right|
-|`<`*op*, `>`*op*, `=`, <code>&#124;</code>*op*, `&`*op*, `&`<br /><br />(including `<<<`, `>>>`, <code>&#124;&#124;&#124;</code>, `&&&`)|Left|
+|`<`*op*, `>`*op*, `=`, <code>&#124;</code>*op*, `&`*op*, `&`, `$`<br /><br />(including `<<<`, `>>>`, <code>&#124;&#124;&#124;</code>, `&&&`)|Left|
 |`^`*op*<br /><br />(including `^^^`)|Right|
 |`::`|Right|
 |`:?`|Not associative|
 |`-`*op*, `+`*op*|Applies to infix uses of these symbols|
 |`*`*op*, `/`*op*, `%`*op*|Left|
 |`**`*op*|Right|
-|`f x` (function application)|Left|
+|`f x` (function application)<br /><br />(including `lazy x`, `assert x`)|Left|
 |<code>&#124;</code> (pattern match)|Right|
 |prefix operators (`+`*op*, `-`*op*, `%`, `%%`, `&`, `&&`, `!`*op*, `~`*op*)|Left|
 |`.`|Left|

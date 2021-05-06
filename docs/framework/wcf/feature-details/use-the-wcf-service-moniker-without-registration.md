@@ -2,6 +2,7 @@
 description: "Learn more about: How to: Use the Windows Communication Foundation Service Moniker without Registration"
 title: "How to: Use the Windows Communication Foundation Service Moniker without Registration"
 ms.date: "03/30/2017"
+ms.topic: how-to
 helpviewer_keywords: 
   - "COM [WCF], service monikers without registration"
 ms.assetid: ee3cf5c0-24f0-4ae7-81da-73a60de4a1a8

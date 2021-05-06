@@ -137,7 +137,7 @@ The following library project targets APIs of .NET Standard (`netstandard1.4`) a
 </Project>
 ```
 
-Within your library or app, you write conditional code using [preprocessor directives](../csharp/language-reference/preprocessor-directives/preprocessor-if.md) to compile for each target framework:
+Within your library or app, you write conditional code using [preprocessor directives](../csharp/language-reference/preprocessor-directives.md#conditional-compilation) to compile for each target framework:
 
 ```csharp
 public class MyClass
@@ -178,7 +178,7 @@ The following target frameworks are deprecated. Packages that target these targe
 
 ## See also
 
-- [Target framework names in .NET 5](https://github.com/dotnet/designs/blob/master/accepted/2020/net5/net5.md)
+- [Target framework names in .NET 5](https://github.com/dotnet/designs/blob/main/accepted/2020/net5/net5.md)
 - [Call Windows Runtime APIs in desktop apps](/windows/apps/desktop/modernize/desktop-to-uwp-enhance)
 - [Developing Libraries with Cross Platform Tools](../core/tutorials/libraries.md)
 - [.NET Standard](net-standard.md)

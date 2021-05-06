@@ -30,6 +30,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Alpine  | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |-------- |---------------|---------------|----------------|
+| ✔️ 3.13 | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ 3.12 | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ 3.11 | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ 3.10 | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
@@ -46,7 +47,6 @@ The following versions of .NET are no longer supported. The downloads for these 
 
 .NET on Alpine Linux requires the following dependencies installed:
 
-- bash
 - icu-libs
 - krb5-libs
 - libgcc

@@ -8,7 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "destroying threads"
   - "threading [.NET], destroying threads"
-ms.assetid: df54e648-c5d1-47c9-bd29-8e4438c1db6d
+ms.topic: how-to
 ---
 # Destroying threads
 

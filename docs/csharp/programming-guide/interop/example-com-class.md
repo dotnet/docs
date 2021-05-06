@@ -2,6 +2,7 @@
 title: "Example COM Class - C# Programming Guide"
 description: Learn how to expose a class as a COM object in C#. This example adds code in a .cs files to a project and sets the Register for COM Interop property.
 ms.date: 07/20/2015
+ms.topic: how-to
 helpviewer_keywords: 
   - "examples [C#], COM classes"
   - "COM, exposing Visual C# objects to"

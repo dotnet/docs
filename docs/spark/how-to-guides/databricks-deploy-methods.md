@@ -66,7 +66,7 @@ Alternatively, you can use [Set Jar](/azure/databricks/jobs#--create-a-job) in y
     databricks fs cp <assembly>.dll dbfs:/apps/dependencies
     ```
 
-    Uncomment and modify the app dependencies section in [db-init.sh](https://github.com/dotnet/spark/blob/master/deployment/db-init.sh) to point to your app dependencies path. Then, upload the updated *db-init.sh* to your cluster:
+    Uncomment and modify the app dependencies section in [db-init.sh](https://github.com/dotnet/spark/blob/main/deployment/db-init.sh) to point to your app dependencies path. Then, upload the updated *db-init.sh* to your cluster:
 
     ```console
     cd <path-to-db-init-and-install-worker>

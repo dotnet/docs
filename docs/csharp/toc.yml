@@ -57,6 +57,86 @@ items:
       href: fundamentals/types/generics.md    
     - name: Anonymous Types
       href: fundamentals/types/anonymous-types.md
+    - name: Tutorials
+      items:
+      - name: Cast using is and as operators
+        href: how-to/safely-cast-using-pattern-matching-is-and-as-operators.md
+      # DTOs (tuples, anonymous types and records)
+      # Values (record structs and structs)
+      # Classes and objects (interfaces and classes)
+      # Generics (methods and classes)
+  - name: Program structure
+    items:
+    - name: Overview
+      href: programming-guide/inside-a-program/general-structure-of-a-csharp-program.md
+    - name: Top-level statements
+      href: programming-guide/main-and-command-args/top-level-statements.md
+    - name: Main method
+      href: programming-guide/main-and-command-args/index.md
+    - name: Main() Return Values
+      href: programming-guide/main-and-command-args/main-return-values.md
+    - name: Command-Line Arguments
+      href: programming-guide/main-and-command-args/command-line-arguments.md
+    - name: Tutorials
+      # Command line processing tutorials
+  - name: Object Oriented programming
+    items:
+    - name: Encapsulation
+      href: programming-guide/classes-and-structs/index.md
+    - name: Inheritance
+      href: programming-guide/classes-and-structs/inheritance.md
+    - name: Polymorphism
+      href: programming-guide/classes-and-structs/polymorphism.md
+    - name: Tutorials
+      items:
+      - name: Introduction to classes
+        href: tutorials/intro-to-csharp/introduction-to-classes.md
+      - name: Object-Oriented C#
+        href: tutorials/intro-to-csharp/object-oriented-programming.md
+      # Composing objects from parts
+      # Inheritance
+      # programming to interfaces
+  - name: Functional techniques
+    items:
+    # - Conceptual overview
+    #   - Expressions (how different than OO and expressions?)
+    #   - separation of data & algorithms
+    #   - immutability (emphasize constructors & passing data to constructor, get/init)
+    #   - Functional purity / functions as arguments or return values
+    # In F#, discussion of "object programming" -> objects become more sophisticated records.
+    # - language features:
+    #   - Lambdas
+    #   - Positional records as DTOs
+    - name: Pattern Matching
+      href: pattern-matching.md
+    - name: Discards
+      href: discards.md
+    - name: Deconstructing tuples and other types
+      href: deconstruct.md
+    - name: Tutorials
+      # separating data and algorithms
+      # Data transformations
+  - name: Exceptions and errors
+    items:
+    - name: Overview
+      displayName: exceptions
+      href: programming-guide/exceptions/index.md
+    - name: Using Exceptions
+      href: programming-guide/exceptions/using-exceptions.md
+    - name: Exception Handling
+      href: programming-guide/exceptions/exception-handling.md
+    - name: Creating and Throwing Exceptions
+      href: programming-guide/exceptions/creating-and-throwing-exceptions.md
+    - name: Compiler-Generated Exceptions
+      href: programming-guide/exceptions/compiler-generated-exceptions.md
+    - name: How to
+      items:
+      - name: "How to handle an exception using try-catch"
+        href: programming-guide/exceptions/how-to-handle-an-exception-using-try-catch.md
+      - name: "How to execute cleanup code using finally"
+        href: programming-guide/exceptions/how-to-execute-cleanup-code-using-finally.md
+      - name: "How to catch a non-CLS exception"
+        href: programming-guide/exceptions/how-to-catch-a-non-cls-exception.md
 - name: What's new in C#
   items:
   - name: C# 9.0

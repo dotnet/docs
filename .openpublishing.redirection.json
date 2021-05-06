@@ -876,6 +876,10 @@
             "redirect_url": "/dotnet/core/install/windows#dependencies"
         },
         {
+            "source_path": "docs/csharp/basic-types.md",
+            "redirect_url": "/dotnet/csharp/fundamentals/types/basic-types"
+        },
+        {
             "source_path": "docs/csharp/classes.md",
             "redirect_url": "/dotnet/csharp/programming-guide/classes-and-structs/classes"
         },
@@ -1789,8 +1793,20 @@
             "redirect_url": "/dotnet/csharp/programming-guide/arrays"
         },
         {
+            "source_path": "docs/csharp/programming-guide/classes-and-structs/anonymous-types.md",
+            "redirect_url": "/dotnet/csharp/fundamentals/types/anonymous-types"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/classes-and-structs/classes.md",
+            "redirect_url": "/dotnet/csharp/fundamentals/types/classes"
+        },
+        {
             "source_path": "docs/csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md",
             "redirect_url": "/dotnet/csharp/language-reference/keywords/foreach-in"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/classes-and-structs/records.md",
+            "redirect_url": "/dotnet/csharp/fundamentals/types/records"
         },
         {
             "source_path": "docs/csharp/programming-guide/classes-and-structs/structs.md",
@@ -2786,6 +2802,10 @@
             "redirect_url": "/dotnet/standard/generics/index"
         },
         {
+            "source_path": "docs/csharp/programming-guide/generics/index.md",
+            "redirect_url": "/dotnet/csharp/fundamentals/types/generics"
+        },
+        {
             "source_path": "docs/csharp/programming-guide/generics/introduction-to-generics.md",
             "redirect_url": "/dotnet/standard/generics/index"
         },
@@ -2988,6 +3008,18 @@
         {
             "source_path": "docs/csharp/programming-guide/types/how-to-safely-cast-using-as-and-is-operators.md",
             "redirect_url": "/dotnet/csharp/how-to/safely-cast-using-pattern-matching-is-and-as-operators"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/interfaces/index.md",
+            "redirect_url": "/dotnet/csharp/fundamentals/types/interfaces"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/namespaces/index.md",
+            "redirect_url": "/dotnet/csharp/fundamentals/types/namespaces"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/types/index.md",
+            "redirect_url": "/dotnet/csharp/fundamentals/types"
         },
         {
             "source_path": "docs/csharp/programming-guide/unsafe-code-pointers/arithmetic-operations-on-pointers.md",

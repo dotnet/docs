@@ -25,8 +25,8 @@ The current **Principal** object can be replaced by performing the following tas
 
 The following example shows how to create a generic principal object and use it to set the principal of a thread.  
   
-[!code-csharp[SetCurrentPrincipal#1](../../../samples/snippets/csharp/VS_Snippets_CLR/SetCurrentPrincipal/CS/program.cs#1)]
-[!code-vb[SetCurrentPrincipal#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/SetCurrentPrincipal/VB/program.vb#1)]  
+[!code-csharp[SetCurrentPrincipal#1](./snippets/replacing-a-principal-object/csharp/program.cs#1)]
+[!code-vb[SetCurrentPrincipal#1](./snippets/replacing-a-principal-object/vb/program.vb#1)]  
   
 ## See also
 

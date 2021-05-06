@@ -6,13 +6,17 @@ using System.Threading.Tasks;
 
 using System.Diagnostics;
 
-namespace winformcs
+namespace keywords
 {
-    class Class1
+    class AsyncExceptionExamples
     {
-
-        // Try...Catch...Finally Statement (Visual Basic)
         // try-catch (C# Reference)
+        public static async Task Examples()
+        {
+            var examples = new AsyncExceptionExamples();
+            await examples.DoSomethingAsync();
+            await examples.DoMultipleAsync();
+        }
 
         // Snippet1 in VB is equivalent to Snippet2 in C#.
 

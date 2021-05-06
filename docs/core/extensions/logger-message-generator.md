@@ -31,7 +31,7 @@ public static partial class Log
 In the preceding example, the logging method is `static` and the log level is specified in the attribute definition. When using the attribute in a static context, the `ILogger` instance is required as a parameter. You may choose to use the attribute in a non-static context as well. Consider the following example where the logging method is declared as an instance method. In this context, the logging method gets the logger by accessing an `ILogger` field in the containing class.
 
 ```csharp
-public class InstanceLoggingExample
+public partial class InstanceLoggingExample
 {
     private readonly ILogger _logger;
 
@@ -96,7 +96,7 @@ Consider the example logging output when using the `JsonConsole` formatter.
 {
   "EventId": 23,
   "LogLevel": "Information",
-  "Category": "ConsoleApp.SampleLogger",
+  "Category": "ConsoleApp.SampleObject",
   "Message": "",
   "State": {
     "Message": "",
@@ -117,7 +117,7 @@ When using the `LoggerMessageAttribute` on logging methods, there are some const
 - Logging methods may *not* be defined in nested type.
 - Logging methods *cannot* be generic.
 
-The code generation model depends on code being compiled with a modern C# compiler, version 9 or later. The C# 9.0 compiler became available with .NET 5.0. To upgrade to a modern C# compiler, edit your project file and add:
+The code generation model depends on code being compiled with a modern C# compiler, version 9 or later. The C# 9.0 compiler became available with .NET 5.0. To upgrade to a modern C# compiler, edit your project file to target C# 9.0.
 
 ```xml
 <PropertyGroup>
@@ -132,17 +132,14 @@ For more information, see [C# language versioning](../../csharp/language-referen
 The <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> signature accepts the <xref:Microsoft.Extensions.Logging.LogLevel> and optionally an <xref:System.Exception>, as shown below.
 
 ```csharp
-using System;
-using Microsoft.Extensions.Logging;
-
-public partial interface ILogger
+public interface ILogger
 {
     void Log<TState>(
-        LogLevel logLevel,
-        EventId eventId,
+        Microsoft.Extensions.Logging.LogLevel logLevel,
+        Microsoft.Extensions.Logging.EventId eventId,
         TState state,
-        Exception? exception,
-        Func<TState, Exception?, string> formatter);
+        System.Exception? exception,
+        Func<TState, System.Exception?, string> formatter);
 }
 ```
 
@@ -179,11 +176,11 @@ public static partial void WarningLogMethod(
 The generator uses case-insensitive comparison between parameters in the message template and log message argument names so when the ILogger enumerates the state, the argument will be picked up by message template, which can make the logs nicer to consume:
 
 ```csharp
-public partial class LoggingSample6
+public partial class LoggingExample
 {
     private readonly ILogger _logger;
 
-    public LoggingSample6(ILogger logger)
+    public LoggingExample(ILogger logger)
     {
         _logger = logger;
     }
@@ -214,14 +211,14 @@ Consider the example logging output when using the `JsonConsole` formatter.
     "Message": "Welcome to Vancouver BC!",
     "City": "Vancouver",
     "Province": "BC",
-    "{OriginalFormat}": "Welcome to {city} {province}!"
+    "{OriginalFormat}": "Welcome to {City} {Province}!"
   }
 }
 ```
 
 ### Indeterminate parameter order
 
-There is no constraint in the ordering at this point. So the user could define `ILogger` as the last argument for example:
+There are no constraints on the ordering of log method parameters. A developer could define the `ILogger` as the last parameter, although it may a appear a bit awkward.
 
 ```csharp
 [LoggerMessage(
@@ -235,20 +232,20 @@ static partial void LogMethod(
     ILogger logger); // 😲
 ```
 
-### Miscellaneous logging samples using the generator
+## Additional logging examples
 
-The samples below show we could:
+The samples below show how-to:
 
 - `LogWithCustomEventName`: retrieve event name via `LoggerMessage` attribute.
 - `LogWithDynamicLogLevel`: set log level dynamically, to allow log level to be set based on configuration input.
 - `UsingFormatSpecifier`: use format specifiers to format logging parameters.
 
 ```csharp
-public partial class LoggingSample5
+public partial class LoggingSample
 {
     private readonly ILogger _logger;
 
-    public LoggingSample5(ILogger logger)
+    public LoggingSample(ILogger logger)
     {
         _logger = logger;
     }
@@ -276,11 +273,11 @@ public partial class LoggingSample5
     public void TestLogging()
     {
         LogWithCustomEventName();
-        LogWithDynamicLogLevel("Vancouver", Level = LogLevel.Warning, "BC");
-        LogWithDynamicLogLevel("Vancouver", Level = LogLevel.Information, "BC");
 
-        double val = 12345.6789;
-        Log.UsingFormatSpecifier(logger, val);
+        LogWithDynamicLogLevel("Vancouver", LogLevel.Warning, "BC");
+        LogWithDynamicLogLevel("Vancouver", LogLevel.Information, "BC");
+
+        UsingFormatSpecifier(logger, 12345.6789);
     }
 }
 ```

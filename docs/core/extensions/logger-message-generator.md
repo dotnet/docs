@@ -107,9 +107,9 @@ Consider the example logging output when using the `JsonConsole` formatter.
 }
 ```
 
-## Requirements
+## Log method constraints
 
-Logging methods have some constraints which must be followed:
+When using the `LoggerMessageAttribute` on logging methods, there are some constraints which must be followed:
 
 - Logging methods must be `static`, `partial`, and return `void`.
 - Logging method names must *not* start with an underscore.
@@ -117,7 +117,7 @@ Logging methods have some constraints which must be followed:
 - Logging methods may *not* be defined in nested type.
 - Logging methods *cannot* be generic.
 
-Also, the code generation model depends on code being compiled with a modern C# compiler, version 9 or later. The C# 9.0 compiler became available with .NET 5.0. To upgrade to a modern C# compiler, edit your project file and add:
+The code generation model depends on code being compiled with a modern C# compiler, version 9 or later. The C# 9.0 compiler became available with .NET 5.0. To upgrade to a modern C# compiler, edit your project file and add:
 
 ```xml
 <PropertyGroup>
@@ -125,9 +125,11 @@ Also, the code generation model depends on code being compiled with a modern C# 
 </PropertyGroup>
 ```
 
-### Sample with exception as argument to log method
+For more information, see [C# language versioning](../../csharp/language-reference/configure-language-version.md).
 
-Since the <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> API signature accepts the <xref:Microsoft.Extensions.Logging.LogLevel> and optionally an <xref:System.Exception> per log call:
+## Log method anatomy
+
+The <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> signature accepts the <xref:Microsoft.Extensions.Logging.LogLevel> and optionally an <xref:System.Exception>, as shown below.
 
 ```csharp
 using System;
@@ -144,7 +146,7 @@ public partial interface ILogger
 }
 ```
 
-Therefore, as a general rule, the first instance of `ILogger`, `LogLevel`, and `Exception` are treated specially in the log method signature of the source generator. Subsequent instances are treated like normal parameters to the message template:
+As a general rule, the first instance of `ILogger`, `LogLevel`, and `Exception` are treated specially in the log method signature of the source generator. Subsequent instances are treated like normal parameters to the message template:
 
 ```csharp
 // This is a valid attribute usage
@@ -169,8 +171,8 @@ public static partial void WarningLogMethod(
 > The warnings emitted provide details as to the correct usage of the `LoggerMessageAttribute`. In the preceding example the `WarningLogMethod` will report a `DiagnosticSeverity.Warning` of `SYSLIB0025`.
 >
 > ```console
-> Don't include a template for ex in the logging message since it is implicitly taken care of
->
+> Don't include a template for ex in the logging message since it is implicitly taken care of.
+> ```
 
 ### Case-insensitive template name support
 

@@ -191,7 +191,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-You'll find a complete list of base classes in the [Microsoft.AspNetCore.Mvc.Formatters](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.formatters) namespace.
+You'll find a complete list of base classes in the [Microsoft.AspNetCore.Mvc.Formatters](/dotnet/api/microsoft.aspnetcore.mvc.formatters) namespace.
 
 The steps to migrate from a Web API formatter to an ASP.NET Core MVC formatter are:
 
@@ -501,7 +501,7 @@ var wcfClient = new OrderServiceClient(
     new EndpointAddress("http://localhost:5050/OrderService.svc"));
 ```
 
-If your organization has extensive services built using WCF that your app relies on, consider migrating them to use gRPC instead. For more details on gRPC, why you may wish to migrate, and a detailed migration guide, consult the [gRPC for WCF Developers](/dotnet/architecture/grpc-for-wcf-developers/) eBook.
+If your organization has extensive services built using WCF that your app relies on, consider migrating them to use gRPC instead. For more details on gRPC, why you may wish to migrate, and a detailed migration guide, consult the [gRPC for WCF Developers](../grpc-for-wcf-developers/index.md) eBook.
 
 ## References
 

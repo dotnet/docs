@@ -45,7 +45,7 @@ The biggest reason to stay on .NET Framework is when an app isn't under active d
 
 ### Application domains
 
-Application domains (AppDomains) isolate apps from one another. AppDomains require runtime support and can be expensive. Creating additional app domains isn't supported, and there are no plans to add this capability to .NET Core in the future. For code isolation, use separate processes or containers as an alternative. Some customers use AppDomains as a way of unloading assemblies. In .NET Core [AssemblyLoadContext](https://docs.microsoft.com/dotnet/standard/assembly/unloadability) provides an alternative way to unload assemblies.
+Application domains (AppDomains) isolate apps from one another. AppDomains require runtime support and can be expensive. Creating additional app domains isn't supported, and there are no plans to add this capability to .NET Core in the future. For code isolation, use separate processes or containers as an alternative. Some customers use AppDomains as a way of unloading assemblies. In .NET Core [AssemblyLoadContext](../../standard/assembly/unloadability.md) provides an alternative way to unload assemblies.
 
 ### WCF
 
@@ -53,7 +53,7 @@ Server-side WCF isn't supported in .NET Core. .NET Core supports WCF clients but
 
 There is a [WCF client port available from the .NET Foundation](../../core/dotnet-five.md#windows-communication-foundation). It is entirely open source, cross platform, and supported by Microsoft. There is also a community-supported [CoreWCF project](https://github.com/CoreWCF/CoreWCF) that is *not* officially supported by Microsoft.
 
-To learn more about migrating from WCF to gRPC, consult the [gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/) ebook.
+To learn more about migrating from WCF to gRPC, consult the [gRPC for WCF Developers](../grpc-for-wcf-developers/index.md) ebook.
 
 ### Remoting
 

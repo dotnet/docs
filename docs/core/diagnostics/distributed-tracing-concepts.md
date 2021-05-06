@@ -96,7 +96,7 @@ Instrumented code can create <xref:System.Diagnostics.Activity> objects
 as part of a distributed trace, but the information in these objects needs to be transmitted
 and serialized in a centralized persistant store so that the entire trace can be usefully reviewed
 later. There are several telemetry collection libraries that can do this task such as
-[Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/distributed-tracing),
+[Application Insights](/azure/azure-monitor/app/distributed-tracing),
 [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started/README.md),
 or a library provided by a 3rd party telemetry or APM vendor. Alternately developers can author
 their own custom Activity telemetry collection by using

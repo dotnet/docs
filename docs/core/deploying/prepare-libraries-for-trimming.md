@@ -133,7 +133,7 @@ public class MyLibrary
 }
 ```
 
-Here, `UseMethods` is calling a reflection method which has a [`DynamicallyAccessedMembers`](https://docs.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.dynamicallyaccessedmembersattribute?view=net-5.0&preserve-view=true) requirement. The requirement states that the type's public methods are available. In this case, you can fix this by adding the same requirement to the parameter of `UseMethods`.
+Here, `UseMethods` is calling a reflection method which has a [`DynamicallyAccessedMembers`](/dotnet/api/system.diagnostics.codeanalysis.dynamicallyaccessedmembersattribute?preserve-view=true&view=net-5.0) requirement. The requirement states that the type's public methods are available. In this case, you can fix this by adding the same requirement to the parameter of `UseMethods`.
 
 ```csharp
 static void UseMethods(
@@ -196,7 +196,7 @@ When suppressing warnings, you are responsible for guaranteeing the trim compati
 
 ### UnconditionalSuppressMessage
 
-If the intent of your code can't be expressed with the annotations, but you know that the warning doesn't represent a real issue at runtime, you can suppress the warnings using [`UnconditionalSuppressMessageAttribute`](https://docs.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.unconditionalsuppressmessageattribute?view=net-5.0&preserve-view=true). This is similar to `SuppressMessageAttribute`, but it is persisted in IL and respected during trim analysis. For example:
+If the intent of your code can't be expressed with the annotations, but you know that the warning doesn't represent a real issue at runtime, you can suppress the warnings using [`UnconditionalSuppressMessageAttribute`](/dotnet/api/system.diagnostics.codeanalysis.unconditionalsuppressmessageattribute?preserve-view=true&view=net-5.0). This is similar to `SuppressMessageAttribute`, but it is persisted in IL and respected during trim analysis. For example:
 
 ```csharp
 class TypeCollection

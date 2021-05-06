@@ -17,13 +17,13 @@ One approach to incrementally upgrade a .NET Framework 4.5 system is to first up
 
 Once the app is running on ASP.NET Core 2.1, migrating it to ASP.NET Core 3.1 in isolation is relatively straightforward. The most likely challenge during this step is updating incompatible dependencies to support .NET Core and possibly higher versions of .NET Standard. For apps that don't have problematic dependencies on .NET Framework-only libraries, there's little reason to upgrade to ASP.NET Core 2.1. Porting directly to ASP.NET Core 3.1 makes more sense and requires less effort.
 
-By the time the app is running on .NET Core 3.1, migrating to the current .NET 5.0 release is relatively painless. The process primarily involves updating the target framework of your project files and their associated NuGet package dependencies. While there are several [breaking changes to consider](/dotnet/core/compatibility/3.1-5.0), most apps don't require significant modifications to move from .NET Core 3.1 to .NET 5.0. The primary deciding factor in [choosing between .NET Core 3.1 and .NET 5.0 is likely to be support](choose-net-core-version.md).
+By the time the app is running on .NET Core 3.1, migrating to the current .NET 5.0 release is relatively painless. The process primarily involves updating the target framework of your project files and their associated NuGet package dependencies. While there are several [breaking changes to consider](../../core/compatibility/5.0.md), most apps don't require significant modifications to move from .NET Core 3.1 to .NET 5.0. The primary deciding factor in [choosing between .NET Core 3.1 and .NET 5.0 is likely to be support](choose-net-core-version.md).
 
 ## References
 
 - [What is .NET Standard?](https://dotnet.microsoft.com/platform/dotnet-standard)
 - [Introducing .NET 5](https://devblogs.microsoft.com/dotnet/introducing-net-5/)
-- [Migrate from ASP.NET Core 3.1 to 5.0](https://docs.microsoft.com/aspnet/core/migration/31-to-50)
+- [Migrate from ASP.NET Core 3.1 to 5.0](/aspnet/core/migration/31-to-50)
 
 >[!div class="step-by-step"]
 >[Previous](choose-net-core-version.md)

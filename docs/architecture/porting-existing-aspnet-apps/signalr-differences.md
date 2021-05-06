@@ -7,7 +7,7 @@ ms.date: 11/13/2020
 
 # Compare ASP.NET SignalR and ASP.NET Core SignalR
 
-ASP.NET Core SignalR is incompatible with clients or servers using ASP.NET SignalR. You'll need to update both clients and server to use ASP.NET Core SignalR. Some differences are described in this section, while the full list is available in the [docs](https://docs.microsoft.com/aspnet/core/signalr/version-differences). ASP.NET Core SignalR requires .NET Core 2.1 or greater.
+ASP.NET Core SignalR is incompatible with clients or servers using ASP.NET SignalR. You'll need to update both clients and server to use ASP.NET Core SignalR. Some differences are described in this section, while the full list is available in the [docs](/aspnet/core/signalr/version-differences). ASP.NET Core SignalR requires .NET Core 2.1 or greater.
 
 ## Feature differences
 
@@ -20,12 +20,12 @@ ASP.NET Core SignalR is incompatible with clients or servers using ASP.NET Signa
 - ASP.NET Core SignalR supports streaming data from the hub to the client.
 - ASP.NET Core SignalR doesn't support passing state between clients and the hub.
 - The `PersistentConnection` class doesn't exist in ASP.NET Core SignalR.
-- ASP.NET SignalR supports SQL Server and Redis. ASP.NET Core SignalR supports [Azure SignalR](https://docs.microsoft.com/azure/azure-signalr/) and Redis.
+- ASP.NET SignalR supports SQL Server and Redis. ASP.NET Core SignalR supports [Azure SignalR](/azure/azure-signalr/) and Redis.
 
 ## References
 
-- [Differences between ASP.NET SignalR and ASP.NET Core SignalR](https://docs.microsoft.com/aspnet/core/signalr/version-differences)
-- [Azure SignalR Service](https://docs.microsoft.com/azure/azure-signalr/)
+- [Differences between ASP.NET SignalR and ASP.NET Core SignalR](/aspnet/core/signalr/version-differences)
+- [Azure SignalR Service](/azure/azure-signalr/)
 
 >[!div class="step-by-step"]
 >[Previous](razor-differences.md)

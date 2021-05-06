@@ -7,7 +7,7 @@ ms.date: 11/13/2020
 
 # Compare Razor Pages to ASP.NET MVC
 
-Razor Pages is the preferred way to create page- or form-based apps in ASP.NET Core. From the [docs](https://docs.microsoft.com/aspnet/core/razor-pages/), "Razor Pages can make coding page-focused scenarios easier and more productive than using controllers and views." If your ASP.NET MVC app makes heavy use of views, you may want to consider migrating from actions and views to Razor Pages.
+Razor Pages is the preferred way to create page- or form-based apps in ASP.NET Core. From the [docs](/aspnet/core/razor-pages/), "Razor Pages can make coding page-focused scenarios easier and more productive than using controllers and views." If your ASP.NET MVC app makes heavy use of views, you may want to consider migrating from actions and views to Razor Pages.
 
 A typical strongly typed view-based MVC app will use a controller to contain one or more actions. The controller will interact with the domain or data model, and create an instance of a viewmodel class. Then this viewmodel class is passed to the view associated with that action. Using this approach, coupled with the default folder structure of MVC apps, to add a new page to an app requires modifying a controller in one folder, a view in a nested subfolder in another folder, and a viewmodel in yet another folder.
 
@@ -17,8 +17,8 @@ As part of a move from ASP.NET MVC to ASP.NET Core, teams should consider whethe
 
 ## References
 
-- [Introduction to Razor Pages in ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages/)
-- [Simpler ASP.NET Core Apps with Razor Pages](https://docs.microsoft.com/archive/msdn-magazine/2017/september/asp-net-core-simpler-asp-net-mvc-apps-with-razor-pages)
+- [Introduction to Razor Pages in ASP.NET Core](/aspnet/core/razor-pages/)
+- [Simpler ASP.NET Core Apps with Razor Pages](/archive/msdn-magazine/2017/september/asp-net-core-simpler-asp-net-mvc-apps-with-razor-pages)
 
 >[!div class="step-by-step"]
 >[Previous](routing-differences.md)

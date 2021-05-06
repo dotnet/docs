@@ -235,6 +235,24 @@ static partial void LogMethod(
     ILogger logger); // 😲
 ```
 
+> [!TIP]
+> The order of the parameters on a log method are *not* required to correspond to the order of the template placeholders. Instead, the placeholder names in the template are expected to match the parameters. Consider the following `JsonConsole` output and the order of the errors.
+>
+> ```json
+> {
+>   "EventId": 110,
+>   "LogLevel": "Debug",
+>   "Category": "ConsoleApp.Program",
+>   "Message": "M1 System.Exception: Third time's the charm. System.Exception: This is the second error.",
+>   "State": {
+>     "Message": "M1 System.Exception: Third time's the charm. System.Exception: This is the second error.",
+>     "ex2": "System.Exception: This is the second error.",
+>     "ex3": "System.Exception: Third time's the charm.",
+>     "{OriginalFormat}": "M1 {ex3} {ex2}"
+>   }
+> }
+> ```
+
 ## Additional logging examples
 
 The samples below show how-to:

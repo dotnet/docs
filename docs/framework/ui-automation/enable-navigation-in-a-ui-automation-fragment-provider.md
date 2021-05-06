@@ -8,7 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "UI Automation, enabling navigation in provider"
   - "navigation, enabling in UI Automation provider"
-ms.assetid: 3cb6092a-58c9-4ca0-84a5-0e54d5d00a0d
+ms.topic: how-to
 ---
 # Enable Navigation in a UI Automation Fragment Provider
 

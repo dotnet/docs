@@ -361,7 +361,7 @@ scopes:
 
 The configuration specifies the binding type: `bindings.smtp`.
 
-The metadata section contains the information for connecting to the SMTP server. See [the binding's documentation](https://docs.dapr.io/reference/components-reference/supported-bindings/smtp/) for more information on the specific metadata for this binding. The username and password to connect to the SMTP server is retrieved from a secrets store. See the [Secrets management building block](secrets.md) chapter for more information on how this works.
+The metadata section contains the information for connecting to the SMTP server. See [the binding's documentation](https://docs.dapr.io/reference/components-reference/supported-bindings/smtp/) for more information on the specific metadata for this binding. The username and password to connect to the SMTP server is retrieved from a secrets store. See the [Secrets management building block](secrets-management.md) chapter for more information on how this works.
 
 Using `scopes` the config file specifies that only the service with app-id `finecollectonservice` will use the output binding.
 
@@ -390,4 +390,4 @@ You implement a binding with a Dapr component. These components are contributed 
 
 >[!div class="step-by-step"]
 >[Previous](publish-subscribe.md)
->[Next](observability.md)
+>[Next](observability.md

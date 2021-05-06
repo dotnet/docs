@@ -94,11 +94,11 @@ dotnet sln add [-h|--help]
 
 - **`--in-root`**
 
-  Places the projects in the root of the solution, rather than creating a [solution folder](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder). Can't be used with `-s|--solution-folder`. If you omit `--in-root` and `-s|--solution-folder`, the result is the same as specifying `--in-root`. Available since .NET Core 3.0 SDK.
+  Places the projects in the root of the solution, rather than creating a [solution folder](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder). Can't be used with `-s|--solution-folder`. If you omit this option and `-s|--solution-folder`, the result is the same as specifying this option. Available since .NET Core 3.0 SDK.
 
 - **`-s|--solution-folder <PATH>`**
 
-  The destination [solution folder](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder) path to add the projects to. Can't be used with `--in-root`. If this option is omitted, the result is the same as specifying `--in-root`. Available since .NET Core 3.0 SDK.
+  The destination [solution folder](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder) path to add the projects to. Can't be used with `--in-root`. If you omit this option and `--in-root`, the result is the same as specifying `--in-root`. Available since .NET Core 3.0 SDK.
 
 ### `remove`
 

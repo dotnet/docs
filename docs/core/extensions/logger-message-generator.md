@@ -111,7 +111,7 @@ Logging methods have some constraints which must be followed:
 - Logging methods may not be defined in nested type.
 - Logging methods cannot be generic.
 
-Also, the code generation model depends on code being compiled with a modern C# compiler, version 9 or later. The C# 9.0 compiler became available with .NET Core 3.1. To upgrade to a modern C# compiler, edit your project file and add:
+Also, the code generation model depends on code being compiled with a modern C# compiler, version 9 or later. The C# 9.0 compiler became available with .NET 5.0. To upgrade to a modern C# compiler, edit your project file and add:
 
 ```xml
 <PropertyGroup>
@@ -299,7 +299,7 @@ same console logs formatted using JsonConsole:
 
 - Shorter and simpler syntax than current approach
 - Guided developer experience - the generator gives warnings to help developers do the right thing
-- Support for an arbitrary # of logging parameters. current approach tops out at 6
+- Support for an arbitrary # of logging parameters. LoggerMessage.Define tops out at 6
 - Support for dynamic log level, current approach doesn't support this
 
 ### Known issues/limitations
@@ -312,7 +312,7 @@ Currently maximum number of parameters allowed via `LoggerMessage.Define` (Refer
 
 - _More robust support for handling message template parameters._
 
-The code generation using `LoggerMessage.Define` does not currently handle message templates when number of parameters do not match the specified template parameters even if the parameters used in the template are the same (Refer to [dotnet/runtime#51054](https://github.com/dotnet/runtime/issues/51054])). This could be something that the source generator supports as it evolves further.
+The code generation using `LoggerMessage.Define` does not currently handle message templates when number of parameters do not match the specified template parameters even if the parameters used in the template are the same (Refer to [dotnet/runtime#51054](https://github.com/dotnet/runtime/issues/51054)). This could be something that the source generator supports as it evolves further.
 
 ## See also
 

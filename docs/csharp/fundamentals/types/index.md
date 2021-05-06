@@ -164,14 +164,9 @@ If the two types are different for a variable, it's important to understand when
 
 For more information, see the following articles:
 
-- [Casting and Type Conversions](./casting-and-type-conversions.md)
-- [Boxing and Unboxing](./boxing-and-unboxing.md)
-- [Using Type dynamic](./using-type-dynamic.md)
 - [Value Types](../../language-reference/builtin-types/value-types.md)
 - [Reference Types](../../language-reference/keywords/reference-types.md)
-- [Classes, structs, and records](../classes-and-structs/index.md)
-- [Anonymous Types](../classes-and-structs/anonymous-types.md)
-- [Generics](../generics/index.md)
+TODO: More language reference links
 
 ## C# language specification
 

@@ -77,10 +77,22 @@ items:
       href: programming-guide/main-and-command-args/main-return-values.md
     - name: Command-Line Arguments
       href: programming-guide/main-and-command-args/command-line-arguments.md
+    - name: What's inside a C# program
+      href: programming-guide/inside-a-program/index.md
     - name: Tutorials
+      items:
+      - name: "How to display command-line arguments"
+        href: programming-guide/main-and-command-args/how-to-display-command-line-arguments.md
       # Command line processing tutorials
   - name: Object Oriented programming
     items:
+    - name: Overview
+      displayName: classes, structs, records
+      href: programming-guide/classes-and-structs/index.md
+    - name: Objects
+      href: programming-guide/classes-and-structs/objects.md
+    - name: Inheritance
+      href: programming-guide/classes-and-structs/inheritance.md
     - name: Encapsulation
       href: programming-guide/classes-and-structs/index.md
     - name: Inheritance
@@ -94,7 +106,8 @@ items:
       - name: Object-Oriented C#
         href: tutorials/intro-to-csharp/object-oriented-programming.md
       # Composing objects from parts
-      # Inheritance
+      - name: Inheritance in C# and .NET
+        href: tutorials/inheritance.md
       # programming to interfaces
   - name: Functional techniques
     items:
@@ -114,6 +127,9 @@ items:
     - name: Deconstructing tuples and other types
       href: deconstruct.md
     - name: Tutorials
+      items:
+      - name: Build data-driven algorithms with pattern matching
+        href: tutorials/pattern-matching.md
       # separating data and algorithms
       # Data transformations
   - name: Exceptions and errors
@@ -137,6 +153,12 @@ items:
         href: programming-guide/exceptions/how-to-execute-cleanup-code-using-finally.md
       - name: "How to catch a non-CLS exception"
         href: programming-guide/exceptions/how-to-catch-a-non-cls-exception.md
+  - name: Coding style
+    items:
+    - name: Identifier names
+      href: programming-guide/inside-a-program/identifier-names.md
+    - name: C# Coding Conventions
+      href: programming-guide/inside-a-program/coding-conventions.md
 - name: What's new in C#
   items:
   - name: C# 9.0
@@ -176,10 +198,6 @@ items:
       href: whats-new/tutorials/generate-consume-asynchronous-stream.md
 - name: Tutorials
   items:
-  - name: Introduction to classes
-    href: tutorials/intro-to-csharp/introduction-to-classes.md
-  - name: Object-Oriented programming
-    href: tutorials/intro-to-csharp/object-oriented-programming.md
   - name: Explore string interpolation - interactive
     href: tutorials/exploration/interpolated-strings.yml
   - name: Explore string interpolation - in your environment
@@ -190,14 +208,10 @@ items:
     href: tutorials/console-teleprompter.md
   - name: REST Client
     href: tutorials/console-webapiclient.md
-  - name: Inheritance in C# and .NET
-    href: tutorials/inheritance.md
   - name: Work with LINQ
     href: tutorials/working-with-linq.md
   - name: Use Attributes
     href: tutorials/attributes.md
-  - name: Build data-driven algorithms with pattern matching
-    href: tutorials/pattern-matching.md
 - name: C# concepts
   items:
   - name: Nullable reference types
@@ -371,29 +385,6 @@ items:
   - name: Overview
     displayName: programming guide
     href: programming-guide/index.md
-  - name: Inside a C# program
-    items:
-    - name: What's inside a C# program
-      href: programming-guide/inside-a-program/index.md
-    - name: General Structure of a C# Program
-      href: programming-guide/inside-a-program/general-structure-of-a-csharp-program.md
-    - name: Identifier names
-      href: programming-guide/inside-a-program/identifier-names.md
-    - name: C# Coding Conventions
-      href: programming-guide/inside-a-program/coding-conventions.md
-  - name: Main() and command-line arguments
-    items:
-    - name: Overview
-      displayName: main method
-      href: programming-guide/main-and-command-args/index.md
-    - name: Command-Line Arguments
-      href: programming-guide/main-and-command-args/command-line-arguments.md
-    - name: "How to display command-line arguments"
-      href: programming-guide/main-and-command-args/how-to-display-command-line-arguments.md
-    - name: Main() Return Values
-      href: programming-guide/main-and-command-args/main-return-values.md
-    - name: Top-level statements
-      href: programming-guide/main-and-command-args/top-level-statements.md
   - name: Programming concepts
     items:
     - name: Overview
@@ -647,18 +638,8 @@ items:
       href: programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md
   - name: Classes, Structs, and Records
     items:
-    - name: Overview
-      displayName: classes, structs, records
-      href: programming-guide/classes-and-structs/index.md
-    - name: Objects
-      href: programming-guide/classes-and-structs/objects.md
-    - name: Inheritance
-      href: programming-guide/classes-and-structs/inheritance.md
     - name: Polymorphism
       items:
-      - name: Overview
-        displayName: polymorphism
-        href: programming-guide/classes-and-structs/polymorphism.md
       - name: Versioning with the Override and New Keywords
         href: programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md
       - name: Knowing When to Use Override and New Keywords
@@ -914,25 +895,6 @@ items:
         href: programming-guide/xmldoc/typeparamref.md
       - name: <value>
         href: programming-guide/xmldoc/value.md
-  - name: Exceptions and Exception Handling
-    items:
-    - name: Overview
-      displayName: exceptions
-      href: programming-guide/exceptions/index.md
-    - name: Using Exceptions
-      href: programming-guide/exceptions/using-exceptions.md
-    - name: Exception Handling
-      href: programming-guide/exceptions/exception-handling.md
-    - name: Creating and Throwing Exceptions
-      href: programming-guide/exceptions/creating-and-throwing-exceptions.md
-    - name: Compiler-Generated Exceptions
-      href: programming-guide/exceptions/compiler-generated-exceptions.md
-    - name: "How to handle an exception using try-catch"
-      href: programming-guide/exceptions/how-to-handle-an-exception-using-try-catch.md
-    - name: "How to execute cleanup code using finally"
-      href: programming-guide/exceptions/how-to-execute-cleanup-code-using-finally.md
-    - name: "How to catch a non-CLS exception"
-      href: programming-guide/exceptions/how-to-catch-a-non-cls-exception.md
   - name: File System and the Registry
     items:
     - name: Overview

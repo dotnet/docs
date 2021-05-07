@@ -467,7 +467,7 @@ The `allowedSecrets` and `deniedSecrets` properties take precedence over the `de
 
 In Dapr Traffic Control, the secrets management building block is used in several places. Secrets are retrieved in code and by referencing them in Dapr component configuration files.
 
-The FineCollection service uses an SMTP output binding for sending an email (see the [Bindings](bindings.md) chapter). It uses the secrets management building block for retrieving the credentials to connect to the SMTP server. For calculating the fine for a speeding violation, it uses a fictitious FineCalculator component that requires a license key. It retrieves this license key from the secrets building block.
+The FineCollection service uses an SMTP output binding for sending an email (see the [Bindings](bindings.md) chapter). It uses the secrets management building block for retrieving the credentials to connect to the SMTP server. For calculating the fine for a speeding violation, it uses a fictitious FineCalculator component that requires a license key. It retrieves this license key from the secrets management building block.
 
 The TrafficControl service uses the state management building block for storing vehicle information in a Redis state store (see the [State management](state-management.md) chapter). It uses the secrets management building block for retrieving the credentials to connect to the Redis server.
 
@@ -735,4 +735,4 @@ You can use secret scopes to control access to specific secrets.
 
 >[!div class="step-by-step"]
 >[Previous](observability.md)
->[Next](reference-application.md)
+>[Next](reference-application.md

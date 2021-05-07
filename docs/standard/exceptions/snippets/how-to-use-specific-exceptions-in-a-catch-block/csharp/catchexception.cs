@@ -29,7 +29,7 @@ public class Ex13
         e.Emlevel = e.Emlevel + 1;
     }
 
-    static void Main(string[] args)
+    static void Main()
     {
         try
         {

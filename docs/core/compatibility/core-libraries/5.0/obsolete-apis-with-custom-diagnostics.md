@@ -1,5 +1,6 @@
 ---
-title: "Breaking change: API obsoletions with non-default diagnostic IDs"
+title: "Breaking change: .NET 5 API obsoletions with non-default diagnostic IDs"
+titleSuffix: ""
 description: Learn about the .NET 5 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
 ms.date: 11/01/2020
 ---
@@ -277,3 +278,8 @@ Classes and members that depend on code access security types:
 
 - <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType>
 - <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType>
+
+## See also
+
+- [API obsoletions with non-default diagnostic IDs (.NET 6)](../6.0/obsolete-apis-with-custom-diagnostics.md)
+- [Obsolete features in .NET 5+](../../syslib-obsoletions.md)

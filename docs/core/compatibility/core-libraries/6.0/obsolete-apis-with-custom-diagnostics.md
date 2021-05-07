@@ -1,9 +1,10 @@
 ---
-title: "Breaking change: API obsoletions with non-default diagnostic IDs"
+title: "Breaking change: .NET 6 obsoletions with non-default diagnostic IDs"
+titleSuffix: ""
 description: Learn about the .NET 6 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
 ms.date: 05/07/2021
 ---
-# API obsoletions with non-default diagnostic IDs
+# API obsoletions with non-default diagnostic IDs (.NET 6)
 
 Some APIs have been marked as obsolete, starting in .NET 6. This breaking change is specific to APIs that have been marked as obsolete *with a custom diagnostic ID*. Suppressing the default obsoletion diagnostic ID, which is [CS0618](../../../../csharp/language-reference/compiler-messages/cs0618.md) for the C# compiler, does not suppress the warnings that the compiler generates when these APIs are used.
 
@@ -58,7 +59,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 ### SYSLIB0017
 
 - <xref:System.Reflection.AssemblyName.KeyPair?displayProperty=fullName>
-- <xref:System.Reflection.fullName>
+- <xref:System.Reflection.StrongNameKeyPair?displayProperty=fullName>
 
 ### SYSLIB0018
 
@@ -75,3 +76,8 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 ### SYSLIB0020
 
 - <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues?displayProperty=fullName>
+
+## See also
+
+- [API obsoletions with non-default diagnostic IDs (.NET 5)](../5.0/obsolete-apis-with-custom-diagnostics.md)
+- [Obsolete features in .NET 5+](../../syslib-obsoletions.md)

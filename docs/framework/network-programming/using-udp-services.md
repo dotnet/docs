@@ -17,7 +17,7 @@ helpviewer_keywords:
   - "UdpClient class, about UdpClient class"
   - "sending data, UDP"
   - "application protocols, UDP"
-ms.assetid: d5c3477a-e798-454c-a890-738ba14c5707
+ms.topic: how-to
 ---
 # Use UDP services
 

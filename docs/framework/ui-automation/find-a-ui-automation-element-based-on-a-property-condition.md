@@ -8,7 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "elements, finding by property conditions"
   - "UI Automation, finding elements by property conditions"
-ms.assetid: 3acaee5a-6ce8-4c3e-81c8-67e59eb74477
+ms.topic: how-to
 ---
 # Find a UI Automation Element Based on a Property Condition
 

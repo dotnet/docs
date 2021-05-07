@@ -6,7 +6,7 @@ ms.date: 05/07/2021
 ---
 # SYSLIB0018: Reflection-only loading is not supported and throws PlatformNotSupportedException
 
-The following methods are marked as obsolete, starting in .NET 6. Calling them in code generates warning `SYSLIB0018` at compile time.
+The following methods are marked as obsolete, starting in .NET 6. Calling them in code generates warning `SYSLIB0018` at compile time. These methods throw a <xref:System.PlatformNotSupportedException> at run time.
 
 - <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType>
 - <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom(System.String)?displayProperty=nameWithType>

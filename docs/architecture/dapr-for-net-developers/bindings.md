@@ -236,11 +236,11 @@ public async Task SendVehicleEntryAsync(VehicleRegistered vehicleRegistered)
     await _client.PublishAsync(message, MqttQualityOfService.AtMostOnce);
 }
 
-public void SendVehicleExit(VehicleRegistered vehicleRegistered)
+public async Task SendVehicleExitAsync(VehicleRegistered vehicleRegistered)
 {
     var eventJson = JsonSerializer.Serialize(vehicleRegistered);
     var message = new MqttApplicationMessage("trafficcontrol/exitcam", Encoding.UTF8.GetBytes(eventJson));
-    _client.PublishAsync(message, MqttQualityOfService.AtMostOnce).Wait();
+    await _client.PublishAsync(message, MqttQualityOfService.AtMostOnce);
 }
 ```
 

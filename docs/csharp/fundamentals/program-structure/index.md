@@ -10,7 +10,7 @@ ms.assetid: 5ae964a5-0ef0-40fe-88fb-6d1793371d0d
 
 C# programs can consist of one or more files. Each file can contain zero or more namespaces. A namespace can contain types such as classes, structs, interfaces, enumerations, and delegates, in addition to other namespaces. The following is the skeleton of a C# program that contains all of these elements.
 
-:::code language="{language}" source="{source}" range="{range}":::
+:::code language="csharp" source="snippets/toplevel-structure/Program.cs":::
 
 The preceding example uses *top level statements* for the program's entry point. This feature was added in C# 9. Prior to C# 9, the entry point was a static method named `Main`, as shown in the following example:
 

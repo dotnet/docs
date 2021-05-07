@@ -55,6 +55,8 @@ items:
           href: aspnet-core/6.0/signalr-java-client-updated.md
       - name: Core .NET libraries
         items:
+        - name: API obsoletions with non-default diagnostic IDs
+          href: core-libraries/6.0/obsolete-apis-with-custom-diagnostics.md
         - name: New Queryable method overloads
           href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
         - name: Nullability annotation changes
@@ -483,6 +485,8 @@ items:
       items:
       - name: .NET 6
         items:
+        - name: API obsoletions with non-default diagnostic IDs
+          href: core-libraries/6.0/obsolete-apis-with-custom-diagnostics.md
         - name: New Queryable method overloads
           href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
         - name: Nullability annotation changes

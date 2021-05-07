@@ -229,11 +229,11 @@ public CameraSimulation(int camNumber, ITrafficControlService trafficControlServ
 The `MqttTrafficControlService` class implements the `ITrafficControlService` interface, which contains 2 methods: `SendVehicleEntry` and `SendVehicleExit`. They both use the MQTT client to send a message to the `trafficcontrol/entrycam` and `trafficcontrol/exitcam` topics respectively:
 
 ```csharp
-public void SendVehicleEntry(VehicleRegistered vehicleRegistered)
+public async Task SendVehicleEntryAsync(VehicleRegistered vehicleRegistered)
 {
     var eventJson = JsonSerializer.Serialize(vehicleRegistered);
     var message = new MqttApplicationMessage("trafficcontrol/entrycam", Encoding.UTF8.GetBytes(eventJson));
-    _client.PublishAsync(message, MqttQualityOfService.AtMostOnce).Wait();
+    await _client.PublishAsync(message, MqttQualityOfService.AtMostOnce);
 }
 
 public void SendVehicleExit(VehicleRegistered vehicleRegistered)

@@ -501,4 +501,4 @@ Dapr offers a dashboard that presents information about the Dapr services and co
 
 > [!div class="step-by-step"]
 > [Previous](bindings.md)
-> [Next](secrets.md)
+> [Next](secrets-management.md)

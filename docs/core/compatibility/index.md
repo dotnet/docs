@@ -119,7 +119,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
    This includes removing or renaming a getter or setter from a property, as well as renaming or removing enumeration members.
 
-- ❌ **DISALLOWED: Adding a member to an interface**
+- ❓ **REQUIRES JUDGMENT: Adding a member to an interface**
 
   Unless you provide an implementation, adding a new member to an interface is a breaking change. For more information about default implementations, see [Update interfaces with default interface methods in C# 8.0](../../csharp/whats-new/tutorials/default-interface-methods-versions.md).
 

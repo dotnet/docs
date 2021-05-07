@@ -16,7 +16,7 @@ ms.assetid: 81d64ee4-50f9-4d6c-a8dc-257c348d2eea
 Inheritance, together with encapsulation and polymorphism, is one of the three primary characteristics of object-oriented programming. Inheritance enables you to create new classes that reuse, extend, and modify the behavior defined in other classes. The class whose members are inherited is called the *base class*, and the class that inherits those members is called the *derived class*. A derived class can have only one direct base class. However, inheritance is transitive. If `ClassC` is derived from `ClassB`, and `ClassB` is derived from `ClassA`, `ClassC` inherits the members declared in `ClassB` and `ClassA`.
 
 > [!NOTE]
-> Structs do not support inheritance, but they can implement interfaces. For more information, see [Interfaces](../interfaces/index.md).
+> Structs do not support inheritance, but they can implement interfaces.
 
 Conceptually, a derived class is a specialization of the base class. For example, if you have a base class `Animal`, you might have one derived class that is named `Mammal` and another derived class that is named `Reptile`. A `Mammal` is an `Animal`, and a `Reptile` is an `Animal`, but each derived class represents different specializations of the base class.
 
@@ -42,24 +42,18 @@ When a base class declares a method as [`virtual`](../../language-reference/keyw
 
 ## Abstract base classes
 
-You can declare a class as [abstract](../../language-reference/keywords/abstract.md) if you want to prevent direct instantiation by using the [new](../../language-reference/operators/new-operator.md) operator. An abstract class can be used only if a new class is derived from it. An abstract class can contain one or more method signatures that themselves are declared as abstract. These signatures specify the parameters and return value but have no implementation (method body). An abstract class doesn't have to contain abstract members; however, if a class does contain an abstract member, the class itself must be declared as abstract. Derived classes that aren't abstract themselves must provide the implementation for any abstract methods from an abstract base class. For more information, see [Abstract and Sealed Classes and Class Members](abstract-and-sealed-classes-and-class-members.md).
+You can declare a class as [abstract](../../language-reference/keywords/abstract.md) if you want to prevent direct instantiation by using the [new](../../language-reference/operators/new-operator.md) operator. An abstract class can be used only if a new class is derived from it. An abstract class can contain one or more method signatures that themselves are declared as abstract. These signatures specify the parameters and return value but have no implementation (method body). An abstract class doesn't have to contain abstract members; however, if a class does contain an abstract member, the class itself must be declared as abstract. Derived classes that aren't abstract themselves must provide the implementation for any abstract methods from an abstract base class.
 
 ## Interfaces
 
 An *interface* is a reference type that defines a set of members. All classes and structs that implement that interface must implement that set of members. An interface may define a default implementation for any or all of these members. A class can implement multiple interfaces even though it can derive from only a single direct base class.
 
-Interfaces are used to define specific capabilities for classes that don't necessarily have an "is a" relationship. For example, the <xref:System.IEquatable%601?displayProperty=nameWithType> interface can be implemented by any class or struct to determine whether two objects of the type are equivalent (however the type defines equivalence). <xref:System.IEquatable%601> doesn't imply the same kind of "is a" relationship that exists between a base class and a derived class (for example, a `Mammal` is an `Animal`). For more information, see [Interfaces](../interfaces/index.md).
+Interfaces are used to define specific capabilities for classes that don't necessarily have an "is a" relationship. For example, the <xref:System.IEquatable%601?displayProperty=nameWithType> interface can be implemented by any class or struct to determine whether two objects of the type are equivalent (however the type defines equivalence). <xref:System.IEquatable%601> doesn't imply the same kind of "is a" relationship that exists between a base class and a derived class (for example, a `Mammal` is an `Animal`). For more information, see [Interfaces](../types/interfaces.md).
 
 ## Preventing further derivation  
 
-A class can prevent other classes from inheriting from it, or from any of its members, by declaring itself or the member as [`sealed`](../../language-reference/keywords/sealed.md). For more information, see [Abstract and Sealed Classes and Class Members](./abstract-and-sealed-classes-and-class-members.md).
+A class can prevent other classes from inheriting from it, or from any of its members, by declaring itself or the member as [`sealed`](../../language-reference/keywords/sealed.md).
 
 ## Derived class hiding of base class members  
 
-A derived class can hide base class members by declaring members with the same name and signature. The [`new`](../../language-reference/keywords/new-modifier.md) modifier can be used to explicitly indicate that the member isn't intended to be an override of the base member. The use of [`new`](../../language-reference/keywords/new-modifier.md) isn't required, but a compiler warning will be generated if [`new`](../../language-reference/keywords/new-modifier.md) isn't used. For more information, see [Versioning with the Override and New Keywords](./versioning-with-the-override-and-new-keywords.md) and [Knowing When to Use Override and New Keywords](./knowing-when-to-use-override-and-new-keywords.md).
-
-## See also
-
-- [C# Programming Guide](../index.md)
-- [Classes, structs, and records](./index.md)
-- [class](../../language-reference/keywords/class.md)
+A derived class can hide base class members by declaring members with the same name and signature. The [`new`](../../language-reference/keywords/new-modifier.md) modifier can be used to explicitly indicate that the member isn't intended to be an override of the base member. The use of [`new`](../../language-reference/keywords/new-modifier.md) isn't required, but a compiler warning will be generated if [`new`](../../language-reference/keywords/new-modifier.md) isn't used. For more information, see [Versioning with the Override and New Keywords](../../programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md) and [Knowing When to Use Override and New Keywords](../../programming-guide/classes-and-structs//knowing-when-to-use-override-and-new-keywords.md).

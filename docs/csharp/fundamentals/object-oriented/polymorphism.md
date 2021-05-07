@@ -47,7 +47,7 @@ Fields cannot be virtual; only methods, properties, events, and indexers can be 
 
 [!code-csharp[Virtual overview example](~/samples/snippets/csharp/objectoriented/Inheritance.cs#SnippetTestVirtualMethods)]
 
-Virtual methods and properties enable derived classes to extend a base class without needing to use the base class implementation of a method. For more information, see [Versioning with the Override and New Keywords](./versioning-with-the-override-and-new-keywords.md). An interface provides another way to define a method or set of methods whose implementation is left to derived classes. For more information, see [Interfaces](../interfaces/index.md).
+Virtual methods and properties enable derived classes to extend a base class without needing to use the base class implementation of a method. For more information, see [Versioning with the Override and New Keywords](../../programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md). An interface provides another way to define a method or set of methods whose implementation is left to derived classes.
 
 ### Hide base class members with new members
 
@@ -100,20 +100,3 @@ For more information, see [base](../../language-reference/keywords/base.md).
 
 > [!NOTE]
 > It is recommended that virtual members use `base` to call the base class implementation of that member in their own implementation. Letting the base class behavior occur enables the derived class to concentrate on implementing behavior specific to the derived class. If the base class implementation is not called, it is up to the derived class to make their behavior compatible with the behavior of the base class.
-
-## In this section
-
-- [Versioning with the Override and New Keywords](./versioning-with-the-override-and-new-keywords.md)
-- [Knowing When to Use Override and New Keywords](./knowing-when-to-use-override-and-new-keywords.md)
-- [How to override the ToString method](./how-to-override-the-tostring-method.md)
-
-## See also
-
-- [C# Programming Guide](../index.md)
-- [Inheritance](./inheritance.md)
-- [Abstract and Sealed Classes and Class Members](./abstract-and-sealed-classes-and-class-members.md)
-- [Methods](./methods.md)
-- [Events](../events/index.md)
-- [Properties](./properties.md)
-- [Indexers](../indexers/index.md)
-- [Types](../types/index.md)

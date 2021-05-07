@@ -80,30 +80,27 @@ items:
     items:
     - name: Overview
       displayName: classes, structs, records
-      href: programming-guide/classes-and-structs/index.md
+      href: fundamentals/object-oriented/index.md
     - name: Objects
-      href: programming-guide/classes-and-structs/objects.md
+      href: fundamentals/object-oriented/objects.md
     - name: Inheritance
-      href: programming-guide/classes-and-structs/inheritance.md
-    - name: Encapsulation
-      href: programming-guide/classes-and-structs/index.md
-    - name: Inheritance
-      href: programming-guide/classes-and-structs/inheritance.md
+      href: fundamentals/object-oriented/inheritance.md
+    # Encapsulation & composition
     - name: Polymorphism
-      href: programming-guide/classes-and-structs/polymorphism.md
+      href: fundamentals/object-oriented/polymorphism.md
     - name: Tutorials
       items:
       - name: Introduction to classes
-        href: tutorials/intro-to-csharp/introduction-to-classes.md
+        href: fundamentals/object-oriented/tutorials/classes.md
       - name: Object-Oriented C#
-        href: tutorials/intro-to-csharp/object-oriented-programming.md
+        href: fundamentals/object-oriented/tutorials/oop.md
       # Composing objects from parts
       - name: Inheritance in C# and .NET
-        href: tutorials/inheritance.md
+        href: fundamentals/object-oriented/tutorials/inheritance.md
       # programming to interfaces
       - name: Converting types
         displayName: cast, is, as
-        href: how-to/safely-cast-using-pattern-matching-is-and-as-operators.md
+        href: fundamentals/object-oriented/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md
   - name: Functional techniques
     items:
     # - Conceptual overview

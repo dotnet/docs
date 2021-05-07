@@ -12,7 +12,7 @@ C# is an object-oriented programming language. The four basic principles of obje
 - *Inheritance* Ability to create new abstractions based on existing abstractions.
 - *Polymorphism* Ability to implement inherited properties or methods in different ways across multiple abstractions.
 
-In the preceding tutorial, [introduction to classes](introduction-to-classes.md) you saw both *abstraction* and *encapsulation*. The `BankAccount` class provided an abstraction for the concept of a bank account. You could modify its implementation without affecting any of the code that used the `BankAccount` class. Both the `BankAccount` and `Transaction` classes provide encapsulation of the components needed to describe those concepts in code.
+In the preceding tutorial, [introduction to classes](classes.md) you saw both *abstraction* and *encapsulation*. The `BankAccount` class provided an abstraction for the concept of a bank account. You could modify its implementation without affecting any of the code that used the `BankAccount` class. Both the `BankAccount` and `Transaction` classes provide encapsulation of the components needed to describe those concepts in code.
 
 In this tutorial, you'll extend that application to make use of *inheritance* and *polymorphism* to add new features. You'll also add features to the `BankAccount` class, taking advantage of the *abstraction* and *encapsulation* techniques you learned in the preceding tutorial.
 
@@ -185,5 +185,3 @@ This tutorial demonstrated many of the techniques used in Object-Oriented progra
 - You used *Encapsulation* when you kept many details `private` in each class.
 - You used *Inheritance* when you leveraged the implementation already created in the `BankAccount` class to save code.
 - You used *Polymorphism* when you created `virtual` methods that derived classes could override to create specific behavior for that account type.
-
-Congratulations, you've finished all of our introduction to C# tutorials. To learn more, try more of our [tutorials](introduction-to-classes.md).

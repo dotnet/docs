@@ -12,7 +12,7 @@ ms.assetid: af4a5230-fbf3-4eea-95e1-8b883c2f845c
 A class or struct definition is like a blueprint that specifies what the type can do. An object is basically a block of memory that has been allocated and configured according to the blueprint. A program may create many objects of the same class. Objects are also called instances, and they can be stored in either a named variable or in an array or collection. Client code is the code that uses these variables to call the methods and access the public properties of the object. In an object-oriented language such as C#, a typical program consists of multiple objects interacting dynamically.  
   
 > [!NOTE]
-> Static types behave differently than what is described here. For more information, see [Static Classes and Static Class Members](./static-classes-and-static-class-members.md).
+> Static types behave differently than what is described here. For more information, see [Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md).
   
 ## Struct Instances vs. Class Instances  
 
@@ -41,25 +41,21 @@ A class or struct definition is like a blueprint that specifies what the type ca
   
  [!code-csharp[csProgGuideStatements#32](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#32)]  
   
- The <xref:System.ValueType?displayProperty=nameWithType> implementation of `Equals` uses boxing and reflection in some cases. For information about how to provide an efficient equality algorithm that is specific to your type, see [How to define value equality for a type](../statements-expressions-operators/how-to-define-value-equality-for-a-type.md)
+ The <xref:System.ValueType?displayProperty=nameWithType> implementation of `Equals` uses boxing and reflection in some cases. For information about how to provide an efficient equality algorithm that is specific to your type, see [How to define value equality for a type](../../programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md)
 
-- To determine whether the values of the fields in two class instances are equal, you might be able to use the <xref:System.Object.Equals%2A> method or the [== operator](../../language-reference/operators/equality-operators.md#equality-operator-). However, only use them if the class has overridden or overloaded them to provide a custom definition of what "equality" means for objects of that type. The class might also implement the <xref:System.IEquatable%601> interface or the <xref:System.Collections.Generic.IEqualityComparer%601> interface. Both interfaces provide methods that can be used to test value equality. When designing your own classes that override `Equals`, make sure to follow the guidelines stated in [How to define value equality for a type](../statements-expressions-operators/how-to-define-value-equality-for-a-type.md) and <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>.
+- To determine whether the values of the fields in two class instances are equal, you might be able to use the <xref:System.Object.Equals%2A> method or the [== operator](../../language-reference/operators/equality-operators.md#equality-operator-). However, only use them if the class has overridden or overloaded them to provide a custom definition of what "equality" means for objects of that type. The class might also implement the <xref:System.IEquatable%601> interface or the <xref:System.Collections.Generic.IEqualityComparer%601> interface. Both interfaces provide methods that can be used to test value equality. When designing your own classes that override `Equals`, make sure to follow the guidelines stated in [How to define value equality for a type](../../programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md) and <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>.
   
 ## Related Sections  
 
- For more information:  
+ For more information:
   
-- [Classes](./classes.md)  
-  
-- [Constructors](./constructors.md)  
-  
-- [Finalizers](./destructors.md)  
-  
-- [Events](../events/index.md)  
-  
+- [Classes](../../programming-guide/classes-and-structs/classes.md)
+- [Constructors](../../programming-guide/classes-and-structs/constructors.md)
+- [Finalizers](../../programming-guide/classes-and-structs/destructors.md)
+- [Events](../../programming-guide/events/index.md)
+
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [object](../../language-reference/builtin-types/reference-types.md)
 - [Inheritance](./inheritance.md)
 - [class](../../language-reference/keywords/class.md)

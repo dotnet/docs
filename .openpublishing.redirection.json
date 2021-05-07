@@ -980,6 +980,11 @@
             "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
         },
         {
+            "source_path": "docs/csharp/how-to/safely-cast-using-pattern-matching-is-and-as-operators.md",
+            "redirect_url": "/dotnet/csharp/fundamentals/object-oriented/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md"
+        },
+        
+        {
             "source_path": "docs/csharp/implicitly-typed-lambda-expressions.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/lambda-expressions"
         },
@@ -1803,6 +1808,22 @@
         {
             "source_path": "docs/csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md",
             "redirect_url": "/dotnet/csharp/language-reference/keywords/foreach-in"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/classes-and-structs/index.md",
+            "redirect_url": "/dotnet/csharp/fundamentals/object-oriented"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/classes-and-structs/inheritance.md",
+            "redirect_url": "/dotnet/csharp/fundamentals/object-oriented/inheritance"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/classes-and-structs/objects.md",
+            "redirect_url": "/dotnet/csharp/fundamentals/object-oriented/objects"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/classes-and-structs/polymorphism.md",
+            "redirect_url": "/dotnet/csharp/fundamentals/object-oriented/polymorphism"
         },
         {
             "source_path": "docs/csharp/programming-guide/classes-and-structs/records.md",
@@ -3309,12 +3330,24 @@
             "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/introduction-to-classes"
         },
         {
+            "source_path": "docs/csharp/tutorials/inheritance.md",
+            "redirect_url": "/dotnet/csharp/fundamentals/object-oriented/inheritance"
+        },
+        {
             "source_path": "docs/csharp/tutorials/intro-to-csharp/interpolated-strings-local.md",
             "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings-local"
         },
         {
             "source_path": "docs/csharp/tutorials/intro-to-csharp/interpolated-strings.yml",
             "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings"
+        },
+        {
+            "source_path": "docs/csharp/tutorials/intro-to-csharp/introduction-to-classes.md",
+            "redirect_url": "/dotnet/csharp/fundamentals/object-oriented/tutorials/classes"
+        },
+        {
+            "source_path": "docs/csharp/tutorials/intro-to-csharp/object-oriented-programming.md",
+            "redirect_url": "/dotnet/csharp/fundamentals/object-oriented/tutorials/oop"
         },
         {
             "source_path": "docs/csharp/tutorials/microservices.md",

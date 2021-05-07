@@ -59,30 +59,22 @@ items:
       href: fundamentals/types/anonymous-types.md
     - name: Tutorials
       items:
-      - name: Cast using is and as operators
-        href: how-to/safely-cast-using-pattern-matching-is-and-as-operators.md
-      # DTOs (tuples, anonymous types and records)
-      # Values (record structs and structs)
-      # Classes and objects (interfaces and classes)
-      # Generics (methods and classes)
+        # TODO: DTOs (tuples, anonymous types and records)
+        # TODO: Values (record structs and structs)
+        # TODO: Classes and objects (interfaces and classes)
+        # TODO: Generics (methods and classes)
   - name: Program structure
     items:
     - name: Overview
-      href: programming-guide/inside-a-program/general-structure-of-a-csharp-program.md
+      href: fundamentals/program-structure/index.md
     - name: Top-level statements
-      href: programming-guide/main-and-command-args/top-level-statements.md
+      href: fundamentals/program-structure/top-level-statements.md
     - name: Main method
-      href: programming-guide/main-and-command-args/index.md
-    - name: Main() Return Values
-      href: programming-guide/main-and-command-args/main-return-values.md
-    - name: Command-Line Arguments
-      href: programming-guide/main-and-command-args/command-line-arguments.md
-    - name: What's inside a C# program
-      href: programming-guide/inside-a-program/index.md
+      href: fundamentals/program-structure/main-command-line.md
     - name: Tutorials
       items:
       - name: "How to display command-line arguments"
-        href: programming-guide/main-and-command-args/how-to-display-command-line-arguments.md
+        href: fundamentals/program-structure/tutorials/how-to-display-command-line-arguments.md
       # Command line processing tutorials
   - name: Object Oriented programming
     items:
@@ -109,6 +101,9 @@ items:
       - name: Inheritance in C# and .NET
         href: tutorials/inheritance.md
       # programming to interfaces
+      - name: Converting types
+        displayName: cast, is, as
+        href: how-to/safely-cast-using-pattern-matching-is-and-as-operators.md
   - name: Functional techniques
     items:
     # - Conceptual overview

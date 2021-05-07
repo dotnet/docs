@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "server-side UI Automation provider implementation"
   - "UI Automation, server-side provider implementation"
   - "provider implementation, UI Automation"
-ms.assetid: 6acc6d08-bd67-4e2e-915c-9c1d34eb86fe
+ms.topic: how-to
 ---
 # Server-Side UI Automation Provider Implementation
 

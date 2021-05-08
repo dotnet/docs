@@ -75,7 +75,7 @@ class DoNotDoThisProgram
         await using (objOne.ConfigureAwait(false))
         await using (objTwo.ConfigureAwait(false))
         {
-            // Only objOne has its DisposeAsync called.
+            // Neither object has its DisposeAsync called.
         }
 
         Console.ReadLine();

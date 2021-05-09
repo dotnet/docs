@@ -192,7 +192,7 @@ In this example, Dapr triggers a service by invoking the `/checkOrderBacklog` en
 
 ## Sample application: Dapr Traffic Control
 
-In Dapr Traffic Control, the FineCollection service uses the MQTT input binding for retrieving messages from the CameraSimulation. It also uses the SMTP output binding for sending a fine by email.
+In Dapr Traffic Control, the TrafficControl service uses the MQTT input binding for retrieving messages from the CameraSimulation. The FineCollection service uses the SMTP output binding for sending a fine by email.
 
 ### MQTT input binding
 
@@ -229,18 +229,18 @@ public CameraSimulation(int camNumber, ITrafficControlService trafficControlServ
 The `MqttTrafficControlService` class implements the `ITrafficControlService` interface, which contains 2 methods: `SendVehicleEntry` and `SendVehicleExit`. They both use the MQTT client to send a message to the `trafficcontrol/entrycam` and `trafficcontrol/exitcam` topics respectively:
 
 ```csharp
-public void SendVehicleEntry(VehicleRegistered vehicleRegistered)
+public async Task SendVehicleEntryAsync(VehicleRegistered vehicleRegistered)
 {
     var eventJson = JsonSerializer.Serialize(vehicleRegistered);
     var message = new MqttApplicationMessage("trafficcontrol/entrycam", Encoding.UTF8.GetBytes(eventJson));
-    _client.PublishAsync(message, MqttQualityOfService.AtMostOnce).Wait();
+    await _client.PublishAsync(message, MqttQualityOfService.AtMostOnce);
 }
 
-public void SendVehicleExit(VehicleRegistered vehicleRegistered)
+public async Task SendVehicleExitAsync(VehicleRegistered vehicleRegistered)
 {
     var eventJson = JsonSerializer.Serialize(vehicleRegistered);
     var message = new MqttApplicationMessage("trafficcontrol/exitcam", Encoding.UTF8.GetBytes(eventJson));
-    _client.PublishAsync(message, MqttQualityOfService.AtMostOnce).Wait();
+    await _client.PublishAsync(message, MqttQualityOfService.AtMostOnce);
 }
 ```
 
@@ -361,11 +361,16 @@ scopes:
 
 The configuration specifies the binding type: `bindings.smtp`.
 
-The metadata section contains the information for connecting to the SMTP server. See [the binding's documentation](https://docs.dapr.io/reference/components-reference/supported-bindings/smtp/) for more information on the specific metadata for this binding. The username and password to connect to the SMTP server is retrieved from a secrets store. See the [Secrets management building block](secrets.md) chapter for more information on how this works.
+The metadata section contains the information for connecting to the SMTP server. See [the binding's documentation](https://docs.dapr.io/reference/components-reference/supported-bindings/smtp/) for more information on the specific metadata for this binding. The username and password to connect to the SMTP server is retrieved from a secrets store. See the [Secrets management building block](secrets-management.md) chapter for more information on how this works.
 
 Using `scopes` the config file specifies that only the service with app-id `finecollectonservice` will use the output binding.
 
 The Traffic Control sample application uses [MailDev](https://github.com/maildev/maildev). This is a development SMTP server that doesn't actually send out emails (by default), but collects them and shows them in an inbox type web application it has built-in. This is extremely useful in dev/test or demo scenarios.
+
+Using Dapr bindings in the Traffic Control sample application offers the following benefits:
+
+1. Using MQTT messaging and SMTP without the need to learn this protocol or a specific MQTT API.
+1. Using SMTP to send an email without the need to learn this protocol or a specific SMTP API.
 
 ## Summary
 
@@ -385,4 +390,4 @@ You implement a binding with a Dapr component. These components are contributed 
 
 >[!div class="step-by-step"]
 >[Previous](publish-subscribe.md)
->[Next](observability.md)
+>[Next](observability.md

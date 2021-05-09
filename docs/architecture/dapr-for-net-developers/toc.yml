@@ -31,9 +31,9 @@
   - name: Observability
     href: observability.md
     displayName: dapr, distributed system, distributed application, observability, distributed tracing, traces, metrics, logging, zipkin, jaeger, prometheus, new relic, dapr observability building block
-  - name: Secrets
-    href: secrets.md
-    displayName: dapr, distributed system, distributed application, secrets, dapr secrets building block, kubernetes secrets, azure key vault
+  - name: Secrets management
+    href: secrets-management.md
+    displayName: dapr, distributed system, distributed application, secrets, dapr secrets management building block, kubernetes secrets, azure key vault
   - name: Reference application
     href: reference-application.md
     displayName: dapr, distributed system, distributed application, dapr building blocks, dapr components, microservice, eshop

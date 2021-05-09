@@ -17,7 +17,7 @@ namespace operators
         private static void BasicExample()
         {
             // <BasicExample>
-            string GetWeatherDisplay(double tempInCelcius) => tempInCelcius < 20.0 ? "Cold." : "Perfect!";
+            string GetWeatherDisplay(double tempInCelsius) => tempInCelsius < 20.0 ? "Cold." : "Perfect!";
             
             Console.WriteLine(GetWeatherDisplay(15));  // output: Cold.
             Console.WriteLine(GetWeatherDisplay(27));  // output: Perfect!

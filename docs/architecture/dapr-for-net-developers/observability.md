@@ -80,13 +80,13 @@ The next sections discuss how to inspect tracing telemetry by publishing it to a
 
 ##### Enable and configure tracing
 
-To start, tracing must be enabled for the Dapr runtime using a Dapr configuration file. Here's an example of a configuration file named `tracing-config.yaml`:  
+To start, tracing must be enabled for the Dapr runtime using a Dapr configuration file. Here's an example of a configuration file named `dapr-config.yaml` that enables tracing:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
 kind: Configuration
 metadata:
-  name: tracing-config
+  name: dapr-config
   namespace: default
 spec:
   tracing:
@@ -98,7 +98,7 @@ spec:
 The `samplingRate` attribute specifies the interval used for publishing traces. The value must be between `0` (tracing disabled) and `1` (every trace is published). With a value of `0.5`, for example, every other trace is published, significantly reducing published traffic. The `endpointAddress` points to an endpoint on a Zipkin server running in a Kubernetes cluster. The default port for Zipkin is `9411`. The configuration must be applied to the Kubernetes cluster using the Kubernetes CLI:
 
 ```console
-kubectl apply -f tracing-config.yaml
+kubectl apply -f dapr-config.yaml
 ```
 
 ##### Install the Zipkin server
@@ -112,7 +112,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: zipkin
-  namespace: eshop
+  namespace: dapr-trafficcontrol
   labels:
     service: zipkin
 spec:
@@ -140,7 +140,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: zipkin
-  namespace: eshop
+  namespace: dapr-trafficcontrol
   labels:
     service: zipkin
 spec:
@@ -153,7 +153,6 @@ spec:
       name: zipkin
   selector:
     service: zipkin
-
 ```
 
 The deployment uses the standard `openzipkin/zipkin-slim` container image. The Zipkin service exposes the Zipkin web front end, which you can use to view the telemetry on port `32411`. Use the Kubernetes CLI to apply the Zipkin manifest file to the Kubernetes cluster and deploy the Zipkin server:
@@ -164,33 +163,36 @@ kubectl apply -f zipkin.yaml
 
 ##### Configure the services to use the tracing configuration
 
-Now everything is set up correctly to start publishing telemetry. Every Dapr sidecar that is deployed as part of the application must be instructed to emit telemetry when started. To do that, add a `dapr.io/config` annotation that references the `tracing-config` configuration to the deployment of each service. Here's an example of the eShop ordering API service's manifest file containing the annotation:
+Now everything is set up correctly to start publishing telemetry. Every Dapr sidecar that is deployed as part of the application must be instructed to emit telemetry when started. To do that, add a `dapr.io/config` annotation that references the `dapr-config` configuration to the deployment of each service. Here's an example of the Traffic Control FineCollection service's manifest file containing the annotation:
 
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ordering-api
-  namespace: eshop
+  name: finecollectionservice
+  namespace: dapr-trafficcontrol
   labels:
-    app: eshop
+    app: finecollectionservice
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: eshop
+      app: finecollectionservice
   template:
     metadata:
       labels:
-        app: simulation
+        app: finecollectionservice
       annotations:
         dapr.io/enabled: "true"
-        dapr.io/app-id: "ordering-api"
-        dapr.io/config: "tracing-config"
+        dapr.io/app-id: "finecollectionservice"
+        dapr.io/app-port: "6001"
+        dapr.io/config: "dapr-config"
     spec:
       containers:
-      - name: simulation
-        image: eshop/ordering.api:linux-latest
+      - name: finecollectionservice
+        image: dapr-trafficcontrol/finecollectionservice:1.0
+        ports:
+        - containerPort: 6001
 ```
 
 ##### Inspect the telemetry in Zipkin
@@ -233,7 +235,7 @@ Beyond Zipkin itself, other monitoring back-end software also supports ingesting
  apiVersion: dapr.io/v1alpha1
  kind: Configuration
  metadata:
-   name: tracing-config
+   name: dapr-config
    namespace: default
  spec:
    tracing:
@@ -248,7 +250,7 @@ To try out New Relic, specify the endpoint of the New Relic API. Here's an examp
 apiVersion: dapr.io/v1alpha1
  kind: Configuration
  metadata:
-   name: tracing-config
+   name: dapr-config
    namespace: default
  spec:
    tracing:
@@ -301,7 +303,7 @@ apiVersion: dapr.io/v1alpha1
 kind: Configuration
 metadata:
   name: dapr-config
-  namespace: eshop
+  namespace: dapr-trafficcontrol
 spec:
   tracing:
     samplingRate: "1"
@@ -453,7 +455,7 @@ For Dapr application running in Kubernetes, use the following command:
 dapr dashboard -k
 ```
 
-The dashboard opens with an overview of all services in your application that have a Dapr sidecar. The following screenshot shows the Dapr dashboard for the eShopOnDapr application running in Kubernetes:
+The dashboard opens with an overview of all services in your application that have a Dapr sidecar. The following screenshot shows the Dapr dashboard for the Traffic Control sample application running in Kubernetes:
 
 :::image type="content" source="./media/observability/dapr-dashboard-overview.png" alt-text="Dapr dashboard overview":::
 
@@ -461,13 +463,13 @@ The dashboard opens with an overview of all services in your application that ha
 
 The Dapr dashboard is invaluable when troubleshooting a Dapr application. It provides information about Dapr sidecars and system services. You can drill down into the configuration of each service, including the logging entries.
 
-The dashboard also shows the configured components (and their configuration) for your application:
+The dashboard also shows the configured components (and their configuration) for an application:
 
 :::image type="content" source="./media/observability/dapr-dashboard-components.png" alt-text="Dapr dashboard components":::
 
 **Figure 9-11.** Dapr dashboard components.
 
-There's a large amount of information available through the dashboard. You can discover it by running a Dapr application and browsing the dashboard. You can use the accompanying eShopOnDapr application to start.
+There's a large amount of information available through the dashboard. You can discover it by running a Dapr application and browsing the dashboard.
 
 Check out the [Dapr dashboard CLI command reference](https://docs.dapr.io/reference/cli/dapr-dashboard/) in the Dapr docs for more information on the Dapr dashboard commands.
 

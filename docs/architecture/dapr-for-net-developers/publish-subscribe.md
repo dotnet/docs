@@ -288,6 +288,8 @@ In Dapr Traffic Control sample app, the TrafficControl service uses the Dapr pub
 
 :::image type="content" source="./media/publish-subscribe/pub-sub-architecture.png" alt-text="State Management.":::
 
+**Figure 7-4**. Publish-subscribe architecture.
+
 Speeding violations are handled by the `CollectionController`, an ordinary ASP.NET Core Controller. The `CollectionController.CollectFine` method subscribes to and handles `SpeedingViolation` event messages:
 
 ```csharp

@@ -105,7 +105,7 @@ Alternatively, you can configure a custom endpoint in the call to `DaprClient.Cr
 var httpClient = DaprClient.CreateHttpClient(daprEndpoint = "localhost:4000");
 ```
 
-You can also directly set the base address by specifying the application ID. This makes it possible to use relative URIs when making a call:
+You can also directly set the base address by specifying the application ID. Doing so enables relative URIs when making a call:
 
 ```csharp
 var httpClient = DaprClient.CreateHttpClient("orderservice");
@@ -190,7 +190,7 @@ The `HttpRequestMessage` now has the following properties set:
 - Url = `http://127.0.0.1:3500/v1.0/invoke/orderservice/method/submit`
 - HttpMethod = POST
 - Content =  `JsonContent` object containing the JSON-serialized `order`
-- Headers.Authorization = "bearer \<token>"
+- Headers. Authorization = "bearer \<token>"
 
 Once you've got the request set up the way you want, use `DaprClient.InvokeMethodAsync` to send it:
 
@@ -230,7 +230,13 @@ In the example above, DaprClient serializes the given `order` object using [Prot
 
 ## Sample application: Dapr Traffic Control
 
-In Dapr Traffic Control, the FineCollection service uses the service invocation building block to retrieve vehicle- and owner information from the VehicleRegistration service. The `CollectionController` class contains code to retrieve the information. This is a regular ASP.NET Core Controller. The `CollectionController.CollectFine` method takes an incoming `SpeedingViolation` message and handles that. Near the beginning of the method, you find the code that retrieves the vehicle- and owner information:
+In Dapr Traffic Control sample app, the FineCollection service uses the Dapr service invocation building block to retrieve vehicle and owner information from the VehicleRegistration service. Figure 6-2 shows the architecture:
+
+:::image type="content" source="./media/service-invocation/service-invocation-architecture.png" alt-text="Service Invocation.":::
+
+**Figure 6-2**. Service invocation architecture.
+
+Information is retrieved by the ASP.NET `CollectionController` class in the FineCollection service. The `CollectFine` method expects an incoming `SpeedingViolation` parameter. It invokes a Dapr service invocation building block to call to the VehicleRegistration service. The code snippet is presented below.
 
  ```csharp
  [Topic("pubsub", "speedingviolations")]
@@ -247,7 +253,7 @@ In Dapr Traffic Control, the FineCollection service uses the service invocation 
  }
  ```
 
-This code uses a proxy of type `VehicleRegistrationService` to call the VehicleRegistration service. ASP.NET Core injects an instance of this service using constructor injection:
+The code uses a proxy of type `VehicleRegistrationService` to call the VehicleRegistration service. ASP.NET Core injects an instance of the service proxy using constructor injection:
 
  ```csharp
  public CollectionController(
@@ -260,7 +266,7 @@ This code uses a proxy of type `VehicleRegistrationService` to call the VehicleR
  }
  ```
 
-The `VehicleRegistrationService` class contains 1 method: `GetVehicleInfo`. This method uses the ASP.NET Core `HttpClient` to call the VehicleRegistration service:
+The `VehicleRegistrationService` class contains a single method: `GetVehicleInfo`. It uses the ASP.NET Core `HttpClient` to call the VehicleRegistration service:
 
  ```csharp
  public class VehicleRegistrationService
@@ -279,25 +285,27 @@ The `VehicleRegistrationService` class contains 1 method: `GetVehicleInfo`. This
  }
  ```
 
-This code uses no Dapr specific classes because it leverages the Dapr ASP.NET Core integration as described in [Invoke HTTP services using HttpClient](#invoke-http-services-using-httpclient). The following code in the `ConfigureService` method of the `Startup` class registers the `VehicleRegistrationService` proxy:
+The code doesn't require specific Dapr class references. It instead leverages the Dapr ASP.NET Core integration as described in the [Invoke HTTP services using HttpClient](#invoke-http-services-using-httpclient) section of this module. The following code in the `ConfigureService` method of the `Startup` class registers the `VehicleRegistrationService` proxy:
 
 ```csharp
 // ...
 
 services.AddSingleton<VehicleRegistrationService>(_ => 
     new VehicleRegistrationService(DaprClient.CreateInvokeHttpClient(
-        "vehicleregistrationservice", $"http://localhost:{daprHttpPort}")));
+        "vehicleregistrationservice", $"http://localhost:{daprHttpPort}"
+    )
+));
 
 // ...
 ```
 
-The `DaprClient.CreateInvokeHttpClient` creates an `HttpClient` that uses the Dapr client underneath the covers to call the VehicleRegistration service using service invocation. It takes the Dapr `app-id` of the service to call and the Url of the Dapr sidecar. The `daprHttpPort` variable contains the port used for HTTP communication with the Dapr sidecar.
+The `DaprClient.CreateInvokeHttpClient` creates an `HttpClient` instance that calls the VehicleRegistration service using the service invocation building block under the covers. It expects the Dapr `app-id` sidecar Url of the target service. At start time, the `daprHttpPort` argument contains the port used for HTTP communication with the Dapr sidecar.
 
-Using Dapr service invocation in the Traffic Control sample application offers the following benefits:
+Using Dapr service invocation in the Traffic Control sample application provides several benefits:
 
- 1. No need to know the location of the service.
- 1. Resiliency because of automatic retries.
- 1. Ability to reuse the existing `HttpClient` based proxy (offered by the ASP.NET Core integration).
+ 1. Decouples the location of the target service.
+ 1. Adds resiliency with automatic retry features.
+ 1. Ability to reuse an existing `HttpClient` based proxy (offered by the ASP.NET Core integration).
 
 ## Summary
 

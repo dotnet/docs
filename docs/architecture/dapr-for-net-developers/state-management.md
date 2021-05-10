@@ -338,6 +338,8 @@ In the Dapr Traffic Control sample app, the TrafficControl service uses the Dapr
 
 :::image type="content" source="./media/state-management/state-management-architecture.png" alt-text="State Management.":::
 
+**Figure 5-3**. State management architecture.
+
 Entry and exit event logic is handled by the `TrafficController` class, an ordinary ASP.NET Controller. The `TrafficController.VehicleEntry` method accepts an incoming `VehicleRegistered` message and saves the enclosed vehicle state:
 
 ```csharp

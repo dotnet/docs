@@ -123,7 +123,7 @@ Use the backslash (\\) as an escape character to separate the following tokens w
 |`\[`|Array dimension delimiter.|
 |`\]`|Array dimension delimiter.|
 |`\.`|Use the backslash before a period only if the period is used in an array specification. Periods in NamespaceSpec do not take the backslash.|
-|`\`|Backslash when needed as a string literal.|
+|`\\`|Backslash when needed as a string literal.|
 
 Note that in all TypeSpec components except AssemblyNameSpec, spaces are relevant. In the AssemblyNameSpec, spaces before the ',' separator are relevant, but spaces after the ',' separator are ignored.
 

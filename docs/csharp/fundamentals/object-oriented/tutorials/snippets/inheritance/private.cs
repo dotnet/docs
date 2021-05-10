@@ -22,7 +22,7 @@ public class C : A
 //    }
 }
 
-public class Example
+public class AccessExample
 {
     public static void Main(string[] args)
     {

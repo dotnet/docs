@@ -1,17 +1,17 @@
 ﻿// <Snippet1>
 using System;
 
-public class SimpleClass
+public class EmptyClass
 {}
 
-public class Example
+public class ClassNameExample
 {
     public static void Main()
     {
-        SimpleClass sc = new SimpleClass();
+        EmptyClass sc = new EmptyClass();
         Console.WriteLine(sc.ToString());
     }
 }
 // The example displays the following output:
-//        SimpleClass
+//        EmptyClass
 // </Snippet1>

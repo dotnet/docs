@@ -1,23 +1,26 @@
 ﻿using System;
 
-// <Snippet1>
-public class A
+namespace Basic
 {
-    public void Method1()
+    // <Snippet1>
+    public class A
     {
-        // Method implementation.
+        public void Method1()
+        {
+            // Method implementation.
+        }
     }
-}
 
-public class B : A
-{ }
+    public class B : A
+    { }
 
-public class Example
-{
-    public static void Main()
+    public class Example
     {
-        B b = new B();
-        b.Method1();
+        public static void Main()
+        {
+            B b = new B();
+            b.Method1();
+        }
     }
+    // </Snippet1>
 }
-// </Snippet1>

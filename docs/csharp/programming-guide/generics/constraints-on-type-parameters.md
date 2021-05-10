@@ -73,22 +73,17 @@ Type parameters can also be used as constraints in generic class definitions. Th
 
 The usefulness of type parameters as constraints with generic classes is limited because the compiler can assume nothing about the type parameter except that it derives from `System.Object`. Use type parameters as constraints on generic classes in scenarios in which you want to enforce an inheritance relationship between two type parameters.
 
-## NotNull constraint
+## `notnull` constraint
 
-Beginning with C# 8.0, you can use the `notnull` constraint in a nullable context to specify that the type argument must be a non-nullable value type or non-nullable reference type. The `notnull` constraint has an effect only when used in a nullable context. If you add the `notnull` constraint in a nullable oblivious context, the compiler warns you that the constraint has no effect.
+Beginning with C# 8.0, you can use the `notnull` constraint to specify that the type argument must be a non-nullable value type or non-nullable reference type. Unlike other constraints, if a type argument violates the `notnull` constraint, the compiler generates a warning instead of an error.
 
-Unlike other constraints, when a type argument violates the `notnull` constraint, the compiler generates a warning when that code is compiled in a nullable context. If the code is compiled in a nullable oblivious context, the compiler doesn't generate any warnings or errors for the constraint violation.
+The `notnull` constraint has an effect only when used in a nullable context. If you add the `notnull` constraint in a nullable oblivious context, the compiler doesn't generate any warnings or errors.
 
-This behavior is summarized in the following table:
-
-| Context type       | `notnull` constraint applied | Constraint violation |
-|--------------------|------------------------------|----------------------|
-| nullable           | No warning                   | Warning              |
-| nullable oblivious | Warning                      | No warning           |
+## `class` constraint
 
 Beginning with C# 8.0, the `class` constraint in a nullable context specifies that the type argument must be a non-nullable reference type. In a nullable context, when a type parameter is a nullable reference type, the compiler generates a warning.
 
-## default constraint
+## `default` constraint
 
 The addition of nullable reference types complicates the use of `T?` in a generic type or method. Prior to C# 8, `T?` could only be used when the `struct` constraint applied to `T`. In that context, `T?` refers to the <xref:System.Nullable%601> type for `T`. Starting with C# 8, `T?` could be used with either the `struct` or `class` constraint, but one of them must be present. When the `class` constraint was used, `T?` referred to the nullable reference type for `T`. Beginning with C# 9, `T?` can be used when neither constraint is applied. In that case, `T?` is interpreted the same as in C# 8 for value types and reference types. However, if `T` is an instance of <xref:System.Nullable%601>, `T?` is the same as `T`. In other words, it doesn't become `T??`.
 

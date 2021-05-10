@@ -86,7 +86,7 @@ public static class ReflectionExtensions
     }
 }
 
-public class Example
+public class ExampleExtension
 {
     public static void Main()
     {

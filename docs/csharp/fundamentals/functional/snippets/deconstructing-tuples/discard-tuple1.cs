@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 
-public class Example
+public class ExampleDiscard
 {
     public static void Main()
     {

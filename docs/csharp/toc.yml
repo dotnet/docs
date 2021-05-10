@@ -57,12 +57,13 @@ items:
       href: fundamentals/types/generics.md    
     - name: Anonymous Types
       href: fundamentals/types/anonymous-types.md
+    # TODO: Delegates, lambdas and events
     - name: Tutorials
-      items:
         # TODO: DTOs (tuples, anonymous types and records)
         # TODO: Values (record structs and structs)
         # TODO: Classes and objects (interfaces and classes)
         # TODO: Generics (methods and classes)
+        # TODO: Fundamentals of using lambdas
   - name: Program structure
     items:
     - name: Overview
@@ -113,15 +114,15 @@ items:
     #   - Lambdas
     #   - Positional records as DTOs
     - name: Pattern Matching
-      href: pattern-matching.md
+      href: fundamentals/functional/pattern-matching.md
     - name: Discards
-      href: discards.md
+      href: fundamentals/functional/discards.md
     - name: Deconstructing tuples and other types
-      href: deconstruct.md
+      href: fundamentals/functional/deconstruct.md
     - name: Tutorials
       items:
       - name: Build data-driven algorithms with pattern matching
-        href: tutorials/pattern-matching.md
+        href: fundamentals/functional/tutorials/pattern-matching.md
       # separating data and algorithms
       # Data transformations
   - name: Exceptions and errors

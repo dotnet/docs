@@ -1,17 +1,13 @@
-﻿using System;
-
-public class Example
+﻿public class Example3
 {
+    // <Snippet1>
     public static void Main()
     {
-        var result = QueryCityData("New York City");
+        var (city, population, area) = QueryCityData("New York City");
 
-        var city = result.Item1;
-        var pop = result.Item2;
-        var size = result.Item3;
-
-         // Do something with the data.
+        // Do something with the data.
     }
+    // </Snippet1>
 
     private static (string, int, double) QueryCityData(string name)
     {

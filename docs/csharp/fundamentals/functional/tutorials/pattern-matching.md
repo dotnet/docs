@@ -35,7 +35,7 @@ Consider a major metropolitan area that is using tolls and peak time pricing to 
 
 From that brief description, you may have quickly sketched out an object hierarchy to model this system. However, your data is coming from multiple sources like other vehicle registration management systems. These systems provide different classes to model that data and you don't have a single object model you can use. In this tutorial, you'll use these simplified classes to model for the vehicle data from these external systems, as shown in the following code:
 
-[!code-csharp[ExternalSystems](~/samples/snippets/csharp/tutorials/patterns/start/toll-calculator/ExternalSystems.cs)]
+[!code-csharp[ExternalSystems](./snippets/patterns/start/toll-calculator/ExternalSystems.cs)]
 
 You can download the starter code from the [dotnet/samples](https://github.com/dotnet/samples/tree/main/csharp/tutorials/patterns/start) GitHub repository. You can see that the vehicle classes are from different systems, and are in different namespaces. No common base class, other than `System.Object` can be leveraged.
 
@@ -83,7 +83,7 @@ namespace toll_calculator
 }
 ```
 
-The preceding code uses a [`switch` expression](../language-reference/operators/switch-expression.md) (not the same as a [`switch`](../language-reference/keywords/switch.md) statement) that tests the [declaration pattern](../language-reference/operators/patterns.md#declaration-and-type-patterns). A **switch expression** begins with the variable, `vehicle` in the preceding code, followed by the `switch` keyword. Next comes all the **switch arms** inside curly braces. The `switch` expression makes other refinements to the syntax that surrounds the `switch` statement. The `case` keyword is omitted, and the result of each arm is an expression. The last two arms show a new language feature. The `{ }` case matches any non-null object that didn't match an earlier arm. This arm catches any incorrect types passed to this method. The `{ }` case must follow the cases for each vehicle type. If the order were reversed, the `{ }` case would take precedence. Finally, the `null` [constant pattern](../language-reference/operators/patterns.md#constant-pattern) detects when `null` is passed to this method. The `null` pattern can be last because the other patterns match only a non-null object of the correct type.
+The preceding code uses a [`switch` expression](../../../language-reference/operators/switch-expression.md) (not the same as a [`switch`](../../../language-reference/keywords/switch.md) statement) that tests the [declaration pattern](../../../language-reference/operators/patterns.md#declaration-and-type-patterns). A **switch expression** begins with the variable, `vehicle` in the preceding code, followed by the `switch` keyword. Next comes all the **switch arms** inside curly braces. The `switch` expression makes other refinements to the syntax that surrounds the `switch` statement. The `case` keyword is omitted, and the result of each arm is an expression. The last two arms show a new language feature. The `{ }` case matches any non-null object that didn't match an earlier arm. This arm catches any incorrect types passed to this method. The `{ }` case must follow the cases for each vehicle type. If the order were reversed, the `{ }` case would take precedence. Finally, the `null` [constant pattern](../../../language-reference/operators/patterns.md#constant-pattern) detects when `null` is passed to this method. The `null` pattern can be last because the other patterns match only a non-null object of the correct type.
 
 You can test this code using the following code in `Program.cs`:
 
@@ -146,7 +146,7 @@ The toll authority wants to encourage vehicles to travel at maximum capacity. Th
 - Buses that are less than 50% full pay an extra $2.00.
 - Buses that are more than 90% full get a $1.00 discount.
 
-These rules can be implemented using a [property pattern](../language-reference/operators/patterns.md#property-pattern) in the same switch expression. A property pattern compares a property value to a constant value. The property pattern examines properties of the object once the type has been determined. The single case for a `Car` expands to four different cases:
+These rules can be implemented using a [property pattern](../../../language-reference/operators/patterns.md#property-pattern) in the same switch expression. A property pattern compares a property value to a constant value. The property pattern examines properties of the object once the type has been determined. The single case for a `Car` expands to four different cases:
 
 ```csharp
 vehicle switch
@@ -282,7 +282,7 @@ In the preceding sample, using a recursive expression means you don't repeat the
 
 For the final feature, the toll authority wants to add time sensitive peak pricing. During the morning and evening rush hours, the tolls are doubled. That rule only affects traffic in one direction: inbound to the city in the morning, and outbound in the evening rush hour. During other times during the workday, tolls increase by 50%. Late night and early morning, tolls are reduced by 25%. During the weekend, it's the normal rate, regardless of the time. You could use a series if `if` and `else` statements to express this using the following code:
 
-[!code-csharp[FullTuplePattern](~/samples/snippets/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#SnippetPremiumWithoutPattern)]
+[!code-csharp[FullTuplePattern](./snippets/patterns/finished/toll-calculator/TollCalculator.cs#SnippetPremiumWithoutPattern)]
 
 The preceding code does work correctly, but isn't readable. You have to chain through all the input cases and the nested `if` statements to reason about the code. Instead, you'll use pattern matching for this feature, but you'll integrate it with other techniques. You could build a single pattern match expression that would account for all the combinations of direction, day of the week, and time. The result would be a complicated expression. It would be hard to read and difficult to understand. That makes it hard to ensure correctness. Instead, combine those methods to build a tuple of values that concisely describes all those states. Then use pattern matching to calculate a multiplier for the toll. The tuple contains three discrete conditions:
 
@@ -331,17 +331,17 @@ private static bool IsWeekDay(DateTime timeOfToll) =>
 
 That method is correct, but it's repetitious. You can simplify it, as shown in the following code:
 
-[!code-csharp[IsWeekDay](~/samples/snippets/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#IsWeekDay)]
+[!code-csharp[IsWeekDay](./snippets/patterns/finished/toll-calculator/TollCalculator.cs#IsWeekDay)]
 
 Next, add a similar function to categorize the time into the blocks:
 
-[!code-csharp[GetTimeBand](~/samples/snippets/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#GetTimeBand)]
+[!code-csharp[GetTimeBand](./snippets/patterns/finished/toll-calculator/TollCalculator.cs#GetTimeBand)]
 
-You add a private `enum` to convert each range of time to a discrete value. Then, the `GetTimeBand` method uses [relational patterns](../language-reference/operators/patterns.md#relational-patterns), and [conjunctive `or` patterns](../language-reference/operators/patterns.md#logical-patterns), both added in C# 9.0. A relational pattern lets you test a numeric value using `<`, `>`, `<=`, or `>=`. The `or` pattern tests if an expression matches one or more patterns. You can also use an `and` pattern to ensure that an expression matches two distinct patterns, and a `not` pattern to test that an expression doesn't match a pattern.
+You add a private `enum` to convert each range of time to a discrete value. Then, the `GetTimeBand` method uses [relational patterns](../../../language-reference/operators/patterns.md#relational-patterns), and [conjunctive `or` patterns](../../../language-reference/operators/patterns.md#logical-patterns), both added in C# 9.0. A relational pattern lets you test a numeric value using `<`, `>`, `<=`, or `>=`. The `or` pattern tests if an expression matches one or more patterns. You can also use an `and` pattern to ensure that an expression matches two distinct patterns, and a `not` pattern to test that an expression doesn't match a pattern.
 
 After you create those methods, you can use another `switch` expression with the **tuple pattern** to calculate the pricing premium. You could build a `switch` expression with all 16 arms:
 
-[!code-csharp[FullTuplePattern](~/samples/snippets/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#TuplePatternOne)]
+[!code-csharp[FullTuplePattern](./snippets/patterns/finished/toll-calculator/TollCalculator.cs#TuplePatternOne)]
 
 The above code works, but it can be simplified. All eight combinations for the weekend have the same toll. You can replace all eight with the following line:
 
@@ -374,7 +374,7 @@ public decimal PeakTimePremium(DateTime timeOfToll, bool inbound) =>
 
 Finally, you can remove the two rush hour times that pay the regular price. Once you remove those arms, you can replace the `false` with a discard (`_`) in the final switch arm. You'll have the following finished method:
 
-[!code-csharp[SimplifiedTuplePattern](../../../samples/snippets/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#FinalTuplePattern)]
+[!code-csharp[SimplifiedTuplePattern](./snippets/patterns/finished/toll-calculator/TollCalculator.cs#FinalTuplePattern)]
 
 This example highlights one of the advantages of pattern matching: the pattern branches are evaluated in order. If you rearrange them so that an earlier branch handles one of your later cases, the compiler warns you about the unreachable code. Those language rules made it easier to do the preceding simplifications with confidence that the code didn't change.
 
@@ -386,5 +386,5 @@ You can download the finished code from the [dotnet/samples](https://github.com/
 
 ## See also
 
-- [Patterns](../language-reference/operators/patterns.md)
-- [`switch` expression](../language-reference/operators/switch-expression.md)
+- [Patterns](../../../language-reference/operators/patterns.md)
+- [`switch` expression](../../../language-reference/operators/switch-expression.md)

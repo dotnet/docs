@@ -16,7 +16,7 @@ You indicate that a variable is a discard by assigning it the underscore (`_`) a
 (_, _, area) = city.GetCityInformation(cityName);
 ```
 
-Beginning with C# 9.0, you can use discards to specify unused input parameters of a lambda expression. For more information, see the [Input parameters of a lambda expression](language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) section of the [Lambda expressions](language-reference/operators/lambda-expressions.md) article.
+Beginning with C# 9.0, you can use discards to specify unused input parameters of a lambda expression. For more information, see the [Input parameters of a lambda expression](../../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) section of the [Lambda expressions](../../language-reference/operators/lambda-expressions.md) article.
 
 When `_` is a valid discard, attempting to retrieve its value or use it in an assignment operation generates compiler error CS0301, "The name '\_' doesn't exist in the current context". This error is because `_` isn't assigned a value, and may not even be assigned a storage location. If it were an actual variable, you couldn't discard more than one value, as the previous example did.
 
@@ -36,7 +36,7 @@ For more information on deconstructing user-defined types with discards, see [De
 
 ## Pattern matching with `switch`
 
-The *discard pattern* can be used in pattern matching with the [switch expression](language-reference/operators/switch-expression.md). Every expression, including `null`,  always matches the discard pattern.
+The *discard pattern* can be used in pattern matching with the [switch expression](../../language-reference/operators/switch-expression.md). Every expression, including `null`,  always matches the discard pattern.
 
 The following example defines a `ProvidesFormatInfo` method that uses a `switch` expression to determine whether an object provides an <xref:System.IFormatProvider> implementation and tests whether the object is `null`. It also uses the discard pattern to handle non-null objects of any other type.
 
@@ -52,7 +52,7 @@ The following example calls the [DateTime.TryParse(String, out DateTime)](<xref:
 
 ## A standalone discard
 
-You can use a standalone discard to indicate any variable that you choose to ignore. One typical use is to use an assignment to ensure that an argument isn't null. The following code uses a discard to force an assignment. The right side of the assignment uses the [null coalescing operator](language-reference/operators/null-coalescing-operator.md) to throw an <xref:System.ArgumentNullException?displayProperty=nameWithType> when the argument is `null`. The code doesn't need the result of the assignment, so it's discarded. The expression forces a null check. The discard clarifies your intent: the result of the assignment isn't needed or used.
+You can use a standalone discard to indicate any variable that you choose to ignore. One typical use is to use an assignment to ensure that an argument isn't null. The following code uses a discard to force an assignment. The right side of the assignment uses the [null coalescing operator](../../language-reference/operators/null-coalescing-operator.md) to throw an <xref:System.ArgumentNullException?displayProperty=nameWithType> when the argument is `null`. The code doesn't need the result of the assignment, so it's discarded. The expression forces a null check. The discard clarifies your intent: the result of the assignment isn't needed or used.
 
 :::code language="csharp" source="snippets/discards/standalone-discard1.cs" ID="ArgNullCheck" :::
 
@@ -79,5 +79,5 @@ Without assigning the task to a discard, the following code generates a compiler
 ## See also
 
 - [Deconstructing tuples and other types](deconstruct.md)
-- [`is` operator](language-reference/operators/is.md)
-- [`switch` keyword](language-reference/keywords/switch.md)
+- [`is` operator](../../language-reference/operators/is.md)
+- [`switch` keyword](../../language-reference/keywords/switch.md)

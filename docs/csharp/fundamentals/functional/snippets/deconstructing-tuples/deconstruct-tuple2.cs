@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-
-public class Example
+﻿public class Example2
 {
     // <Snippet1>
     public static void Main()
     {
-        var (city, population, area) = QueryCityData("New York City");
+        (string city, int population, double area) = QueryCityData("New York City");
 
         // Do something with the data.
     }

@@ -42,7 +42,7 @@ public class Person
     }
 }
 
-public class Example
+public class ExampleClassDeconstruction
 {
     public static void Main()
     {

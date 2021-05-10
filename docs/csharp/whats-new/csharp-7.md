@@ -105,7 +105,31 @@ Discards are supported in the following scenarios:
 
 The following example defines a `QueryCityDataForYears` method that returns a 6-tuple that contains data for a city for two different years. The method call in the example is concerned only with the two population values returned by the method and so treats the remaining values in the tuple as discards when it deconstructs the tuple.
 
-[!code-csharp[Tuple-discard](~/samples/snippets/csharp/programming-guide/deconstructing-tuples/discard-tuple1.cs)]
+```csharp
+using System;
+
+public class Example
+{
+    public static void Main()
+    {
+        var result = QueryCityData("New York City");
+
+        var city = result.Item1;
+        var pop = result.Item2;
+        var size = result.Item3;
+
+         // Do something with the data.
+    }
+
+    private static (string, int, double) QueryCityData(string name)
+    {
+        if (name == "New York City")
+            return (name, 8175133, 468.48);
+
+        return ("", 0, 0);
+    }
+}
+```
 
 For more information, see [Discards](../discards.md).
 

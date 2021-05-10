@@ -1,15 +1,9 @@
-﻿using System;
-
-public class Example
+﻿public class Example4
 {
     // <Snippet1>
     public static void Main()
     {
-        string city = "Raleigh";
-        int population = 458880;
-        double area = 144.8;
-
-        (city, population, area) = QueryCityData("New York City");
+        (string city, var population, var area) = QueryCityData("New York City");
 
         // Do something with the data.
     }

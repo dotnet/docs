@@ -75,13 +75,13 @@ The usefulness of type parameters as constraints with generic classes is limited
 
 ## `notnull` constraint
 
-Beginning with C# 8.0, you can use the `notnull` constraint to specify that the type argument must be a non-nullable value type or non-nullable reference type. Unlike other constraints, if a type argument violates the `notnull` constraint, the compiler generates a warning instead of an error.
+Beginning with C# 8.0, you can use the `notnull` constraint to specify that the type argument must be a non-nullable value type or non-nullable reference type. Unlike most other constraints, if a type argument violates the `notnull` constraint, the compiler generates a warning instead of an error.
 
 The `notnull` constraint has an effect only when used in a nullable context. If you add the `notnull` constraint in a nullable oblivious context, the compiler doesn't generate any warnings or errors for violations of the constraint.
 
 ## `class` constraint
 
-Beginning with C# 8.0, the `class` constraint in a nullable context specifies that the type argument must be a non-nullable reference type. In a nullable context, when a type parameter is a nullable reference type, the compiler generates a warning.
+Beginning with C# 8.0, the `class` constraint in a nullable context specifies that the type argument must be a non-nullable reference type. In a nullable context, when a type argument is a nullable reference type, the compiler generates a warning.
 
 ## `default` constraint
 

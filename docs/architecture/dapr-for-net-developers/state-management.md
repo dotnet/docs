@@ -308,7 +308,7 @@ curl -X POST http://localhost:3500/v1.0/state/statestore \
 
 Using the Redis Console tool, look inside the Redis cache to see how the Redis state store component persisted the data:
 
-```
+```console
 127.0.0.1:6379> KEYS *
 1) "basketservice||basket1"
 

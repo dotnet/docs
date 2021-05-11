@@ -329,16 +329,16 @@ Logging provides insight into what is happening with a service at runtime. When 
 
 Dapr emits structured logging. Each log entry has the following format:
 
-| Field    | Description                                          | Example                             |
-| -------- | ---------------------------------------------------- | ----------------------------------- |
-| time     | ISO8601 formatted timestamp                          | `2021-01-10T14:19:31.000Z`          |
+| Field    | Description                                                  | Example                             |
+| -------- | ------------------------------------------------------------ | ----------------------------------- |
+| time     | ISO8601 formatted timestamp                                  | `2021-01-10T14:19:31.000Z`          |
 | level    | Level of the entry (`debug` \| `info` \| `warn`  \| `error`) | `info`                              |
-| type     | Log Type                                             | `log`                               |
-| msg      | Log Message                                          | `metrics server started on :62408/` |
-| scope    | Logging Scope                                        | `dapr.runtime`                      |
-| instance | Hostname where Dapr runs                             | TSTSRV01                            |
-| app_id   | Dapr App ID                                          | ordering-api                        |
-| ver      | Dapr Runtime Version                                 | `1.0.0`-rc.2                        |
+| type     | Log Type                                                     | `log`                               |
+| msg      | Log Message                                                  | `metrics server started on :62408/` |
+| scope    | Logging Scope                                                | `dapr.runtime`                      |
+| instance | Hostname where Dapr runs                                     | TSTSRV01                            |
+| app_id   | Dapr App ID                                                  | finecollectionservice               |
+| ver      | Dapr Runtime Version                                         | `1.0`                               |
 
 When searching through logging entries in a troubleshooting scenario, the `time` and `level` fields are especially helpful. The time field orders log entries so that you can pinpoint specific time periods. When troubleshooting, log entries at the *debug level* provide more information on the behavior of the code.
 
@@ -347,23 +347,23 @@ When searching through logging entries in a troubleshooting scenario, the `time`
 By default, Dapr emits structured logging in plain-text format. Every log entry is formatted as a string containing key/value pairs. Here's an example of logging in plain text:
 
 ```text
-== DAPR == time="2021-01-12T16:11:39.4669323+01:00" level=info msg="starting Dapr Runtime -- version 1.0.0-rc.2 -- commit 196483d" app_id=ordering-api instance=TSTSRV03 scope=dapr.runtime type=log ver=1.0.0-rc.2
-== DAPR == time="2021-01-12T16:11:39.467933+01:00" level=info msg="log level set to: info" app_id=ordering-api instance=TSTSRV03 scope=dapr.runtime type=log ver=1.0.0-rc.2
-== DAPR == time="2021-01-12T16:11:39.467933+01:00" level=info msg="metrics server started on :62408/" app_id=ordering-api instance=TSTSRV03 scope=dapr.metrics type=log ver=1.0.0-rc.2
+== DAPR == time="2021-01-12T16:11:39.4669323+01:00" level=info msg="starting Dapr Runtime -- version 1.0 -- commit 196483d" app_id=finecollectionservice instance=TSTSRV03 scope=dapr.runtime type=log ver=1.0
+== DAPR == time="2021-01-12T16:11:39.467933+01:00" level=info msg="log level set to: info" app_id=finecollectionservice instance=TSTSRV03 scope=dapr.runtime type=log ver=1.0
+== DAPR == time="2021-01-12T16:11:39.467933+01:00" level=info msg="metrics server started on :62408/" app_id=finecollectionservice instance=TSTSRV03 scope=dapr.metrics type=log ver=1.0
 ```
 
 While simple, this format is difficult to parse. If viewing log entries with a monitoring tool, you'll want to enable JSON formatted logging. With JSON entries, a monitoring tool can index and query individual fields. Here's the same log entries in JSON format:
 
 ```json
-{"app_id": "ordering-api", "instance": "TSTSRV03", "level": "info", "msg": "starting Dapr Runtime -- version 1.0.0-rc.2 -- commit 196483d", "scope": "dapr.runtime", "time": "2021-01-12T16:11:39.4669323+01:00", "type": "log", "ver": "1.0.0-rc.2"}
-{"app_id": "ordering-api", "instance": "TSTSRV03", "level": "info", "msg": "log level set to: info", "scope": "dapr.runtime", "type": "log", "time": "2021-01-12T16:11:39.467933+01:00", "ver": "1.0.0-rc.2"}
-{"app_id": "ordering-api", "instance": "TSTSRV03", "level": "info", "msg": "metrics server started on :62408/", "scope": "dapr.metrics", "type": "log", "time": "2021-01-12T16:11:39.467933+01:00", "ver": "1.0.0-rc.2"}
+{"app_id": "finecollectionservice", "instance": "TSTSRV03", "level": "info", "msg": "starting Dapr Runtime -- version 1.0 -- commit 196483d", "scope": "dapr.runtime", "time": "2021-01-12T16:11:39.4669323+01:00", "type": "log", "ver": "1.0"}
+{"app_id": "finecollectionservice", "instance": "TSTSRV03", "level": "info", "msg": "log level set to: info", "scope": "dapr.runtime", "type": "log", "time": "2021-01-12T16:11:39.467933+01:00", "ver": "1.0"}
+{"app_id": "finecollectionservice", "instance": "TSTSRV03", "level": "info", "msg": "metrics server started on :62408/", "scope": "dapr.metrics", "type": "log", "time": "2021-01-12T16:11:39.467933+01:00", "ver": "1.0"}
 ```
 
 To enable JSON formatting, you need to configure each Dapr sidecar. In self-hosted mode, you can specify the flag `--log-as-json` on the command line:
 
 ```console
-dapr run --app-id ordering-api --log-level info --log-as-json dotnet run
+dapr run --app-id finecollectionservice --log-level info --log-as-json dotnet run
 ```
 
 In Kubernetes, you can add a `dapr.io/log-as-json` annotation to each deployment for the application:
@@ -371,7 +371,7 @@ In Kubernetes, you can add a `dapr.io/log-as-json` annotation to each deployment
 ```yaml
 annotations:
    dapr.io/enabled: "true"
-   dapr.io/app-id: "ordering-api"
+   dapr.io/app-id: "finecollectionservice"
    dapr.io/app-port: "80"
    dapr.io/config: "dapr-config"
    dapr.io/log-as-json: "true"

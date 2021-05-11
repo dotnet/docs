@@ -43,7 +43,9 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 
 ### MSBuild
 
-The `dotnet publish` command calls MSBuild, which invokes the `Publish` target. Any parameters passed to `dotnet publish` are passed to MSBuild. The `-c` and `-o` parameters map to MSBuild's `Configuration` and `PublishDir` properties, respectively.
+The `dotnet publish` command calls MSBuild, which invokes the `Publish` target. If the `IsPublishable` property in a project's *.csproj* file is set to `false`, the `Publish` target can't be invoked, and in that case the `dotnet publish` command doesn't do anything with the project.
+
+Any parameters passed to `dotnet publish` are passed to MSBuild. The `-c` and `-o` parameters map to MSBuild's `Configuration` and `PublishDir` properties, respectively.
 
 The `dotnet publish` command accepts MSBuild options, such as `-p` for setting properties and `-l` to define a logger. For example, you can set an MSBuild property by using the format: `-p:<NAME>=<VALUE>`.
 

@@ -250,6 +250,7 @@ The following MSBuild properties are documented in this section:
 - [AppendRuntimeIdentifierToOutputPath](#appendruntimeidentifiertooutputpath)
 - [AppendTargetFrameworkToOutputPath](#appendtargetframeworktooutputpath)
 - [CopyLocalLockFileAssemblies](#copylocallockfileassemblies)
+- [IsPublishable](#ispublishable)
 - [PreserveCompilationContext](#preservecompilationcontext)
 - [PreserveCompilationReferences](#preservecompilationreferences)
 - [RuntimeIdentifier](#runtimeidentifier)
@@ -287,6 +288,21 @@ The `CopyLocalLockFileAssemblies` property is useful for plugin projects that ha
 ```xml
 <PropertyGroup>
   <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+</PropertyGroup>
+```
+
+> [!TIP]
+> Alternatively, you can use `dotnet publish` to publish the class library. For more information, see [dotnet publish](../tools/dotnet-publish.md).
+
+### IsPublishable
+
+The `IsPublishable` property allows the `Publish` target to run. This property only affects processes that use *.csproj* files and the `Publish` target, such as the [dotnet publish](../tools/dotnet-publish.md) command. Visual Studio is not affected because Visual Studio uses the `PublishOnly` target.
+
+This property is useful if you run `dotnet publish` on a solution file, as it allows automatic selection of projects that should be published.
+
+```xml
+<PropertyGroup>
+  <IsPublishable>true</IsPublishable>
 </PropertyGroup>
 ```
 

@@ -10,7 +10,7 @@ You can have source generated code if you have the right package reference which
 
 If you encounter build warnings or errors due to usage of source generator analyzer package, follow the specific guidance provided for the diagnostic ID listed in the [Reference](#reference) section. Warnings or errors *can't* be suppressed using the corresponding `SYSLIBxxxx` diagnostic ID values. For more information, see [Suppress warnings](#suppress-warnings).
 
-## Analyzer Warnings
+## Analyzer warnings
 
 The diagnostic id values reserved for .NET Libraries analyzer warnings are `SYSLIB1001` through `SYSLIB1999`.
 
@@ -43,8 +43,10 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6.
 | [SYSLIB1021][1021] | Can't have the same template with different casing                                                           |
 | [SYSLIB1022][1022] | Can't have malformed format strings (like dangling `{`, or something similar)                                |
 | [SYSLIB1023][1023] | Generating more than 6 arguments is not supported                                                            |
+<!-- commented out for now, as these do not exist.
 | [SYSLIB1030][1030] | [System.Text.Json.SourceGeneration] Did not generate serialization metadata for type.                        |
 | [SYSLIB1031][1031] | [System.Text.Json.SourceGeneration] Duplicate type name.                                                     |
+-->
 
 ## Suppress warnings
 
@@ -96,5 +98,7 @@ To suppress the warnings in a project file:
 [1021]: syslib-warnings/syslib1021.md
 [1022]: syslib-warnings/syslib1022.md
 [1023]: syslib-warnings/syslib1023.md
+<!--
 [1030]: syslib-warnings/syslib1030.md
 [1031]: syslib-warnings/syslib1031.md
+-->

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
 {
-    private Utf8JsonWriter _jsonWriter = new Utf8JsonWriter(new MemoryStream());
+    private Utf8JsonWriter _jsonWriter = new(new MemoryStream());
 
     public void Dispose()
     {
@@ -18,7 +18,9 @@ public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
         await DisposeAsyncCore();
 
         Dispose(disposing: false);
+#pragma warning disable CA1816 // Dispose methods should call SuppressFinalize
         GC.SuppressFinalize(this);
+#pragma warning restore CA1816 // Dispose methods should call SuppressFinalize
     }
 
     protected virtual void Dispose(bool disposing)

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-class ExampleProgram
+class ExampleUsingStatementProgram
 {
     static async Task Main()
     {

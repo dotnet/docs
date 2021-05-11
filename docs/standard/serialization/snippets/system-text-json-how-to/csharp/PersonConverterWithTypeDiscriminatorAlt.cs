@@ -15,6 +15,7 @@ namespace SystemTextJsonSamples
         public override bool CanConvert(Type typeToConvert) =>
             typeof(Person).IsAssignableFrom(typeToConvert);
 
+        // <ReadMethod>
         public override Person Read(
             ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
@@ -52,6 +53,7 @@ namespace SystemTextJsonSamples
             };
             return person;
         }
+        // </ReadMethod>
 
         public override void Write(
             Utf8JsonWriter writer, Person person, JsonSerializerOptions options)

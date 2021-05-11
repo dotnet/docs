@@ -61,11 +61,11 @@ The following example illustrates the use of tuples with discards. The `QueryCit
 
 C# does not offer built-in support for deconstructing non-tuple types other than the [`record`](#deconstructing-a-record-type) and [DictionaryEntry](xref:System.Collections.DictionaryEntry.Deconstruct%2A) types. However, as the author of a class, a struct, or an interface, you can allow instances of the type to be deconstructed by implementing one or more `Deconstruct` methods. The method returns void, and each value to be deconstructed is indicated by an [out](../../language-reference/keywords/out-parameter-modifier.md) parameter in the method signature. For example, the following `Deconstruct` method of a `Person` class returns the first, middle, and last name:
 
-:::code language="csharp" source="./snippets/deconstructing-tuples/discard-tuple2.cs" ID="Snippet1":::
+:::code language="csharp" source="./snippets/deconstructing-tuples/deconstruct-tuple2.cs" ID="Snippet1":::
 
 You can then deconstruct an instance of the `Person` class named `p` with an assignment like the following:
 
-:::code language="csharp" source="./snippets/deconstructing-tuples/discard-tuple2.cs" ID="Snippet2":::
+:::code language="csharp" source="./snippets/deconstructing-tuples/deconstruct-tuple3.cs" ID="Snippet1":::
 
 The following example overloads the `Deconstruct` method to return various combinations of properties of a `Person` object. Individual overloads return:
 

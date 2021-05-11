@@ -7,15 +7,15 @@ ms.date: 04/23/2021
 
 Starting in .NET 5, some APIs that are newly marked as obsolete make use of two new properties on <xref:System.ObsoleteAttribute>.
 
-- The <xref:System.ObsoleteAttribute.DiagnosticId?displayProperty=nameWithType> property tells the compiler to generate build warnings using a custom diagnostic ID. The custom ID allows for obsoletion warning to be suppressed specifically and separately from one another. In the case of the .NET 5+ obsoletions, the format for the custom diagnostic ID is `SYSLIBxxxx`.
+- The <xref:System.ObsoleteAttribute.DiagnosticId?displayProperty=nameWithType> property tells the compiler to generate build warnings using a custom diagnostic ID. The custom ID allows for obsoletion warning to be suppressed specifically and separately from one another. In the case of the .NET 5+ obsoletions, the format for the custom diagnostic ID is `SYSLIBXXXX`.
 
 - The <xref:System.ObsoleteAttribute.UrlFormat?displayProperty=nameWithType> property tells the compiler to include a URL link to learn more about the obsoletion.
 
-If you encounter build warnings or errors due to usage of an obsolete API, follow the specific guidance provided for the diagnostic ID listed in the [Reference](#reference) section. Warnings or errors for these obsoletions *can't* be suppressed using the [standard diagnostic ID (CS0618)](../../csharp/language-reference/compiler-messages/cs0618.md) for obsolete types or members; use the custom `SYSLIBxxxx` diagnostic ID values instead. For more information, see [Suppress warnings](#suppress-warnings).
+If you encounter build warnings or errors due to usage of an obsolete API, follow the specific guidance provided for the diagnostic ID listed in the [Reference](#reference) section. Warnings or errors for these obsoletions *can't* be suppressed using the [standard diagnostic ID (CS0618)](../../csharp/language-reference/compiler-messages/cs0618.md) for obsolete types or members; use the custom `SYSLIBXXXX` diagnostic ID values instead. For more information, see [Suppress warnings](#suppress-warnings).
 
 ## Reference
 
-The following table provides an index to the `SYSLIBxxxx` obsoletions in .NET 5+.
+The following table provides an index to the `SYSLIBXXXX` obsoletions in .NET 5+.
 
 | Diagnostic ID | Description |
 | - | - |
@@ -40,9 +40,9 @@ The following table provides an index to the `SYSLIBxxxx` obsoletions in .NET 5+
 
 ## Suppress warnings
 
-If you must use the obsolete APIs and the `SYSLIBxxxx` diagnostic does not surface as an error, you can suppress the warning in code or in your project file.
+If you must use the obsolete APIs and the `SYSLIBXXXX` diagnostic does not surface as an error, you can suppress the warning in code or in your project file.
 
-In code:
+To suppress the warnings in code:
 
 ```csharp
 // Disable the warning.
@@ -53,7 +53,7 @@ In code:
 #pragma warning restore SYSLIB0001
 ```
 
-Project file:
+To suppress the warnings in a project file:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

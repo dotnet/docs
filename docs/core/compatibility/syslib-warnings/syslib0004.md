@@ -111,7 +111,7 @@ The following CER-related APIs are obsolete:
   }
   ```
 
-[!INCLUDE [suppress-syslib-warning](../../../../includes/suppress-syslib-warning.md)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]
 
 ## See also
 

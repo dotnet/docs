@@ -30,7 +30,7 @@ void ProcessPendingWorkItemsNew(CancellationToken cancellationToken)
 }
 ```
 
-[!INCLUDE [suppress-syslib-warning](../../../../includes/suppress-syslib-warning.md)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]
 
 ## See also
 

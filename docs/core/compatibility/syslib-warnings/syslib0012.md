@@ -15,4 +15,4 @@ The following APIs are marked as obsolete, starting in .NET 5.0. Using them in c
 
 Use <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> instead.
 
-[!INCLUDE [suppress-syslib-warning](../../../../includes/suppress-syslib-warning.md)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]

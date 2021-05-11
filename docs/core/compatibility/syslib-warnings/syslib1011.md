@@ -4,6 +4,7 @@ description: Learn about the diagnostic that generates compile-time error SYSLIB
 ms.topic: reference
 ms.date: 05/07/2021
 ---
+
 # SYSLIB1011: Logging methods cannot be generic
 
 A method annotated with the `LoggerMessageAttribute` contains parameters with generic types.
@@ -11,3 +12,5 @@ A method annotated with the `LoggerMessageAttribute` contains parameters with ge
 ## Workarounds
 
 Logging methods cannot have any generically-typed parameters. Use fully resolved types instead.
+
+[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-diagnostics.md)]

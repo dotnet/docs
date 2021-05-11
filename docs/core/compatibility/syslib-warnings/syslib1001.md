@@ -4,6 +4,7 @@ description: Learn about the diagnostic that generates compile-time error SYSLIB
 ms.topic: reference
 ms.date: 05/07/2021
 ---
+
 # SYSLIB1001: Logging method names can't start with an underscore
 
 The name a of method annotated with the `LoggerMessageAttribute` starts with an underscore character. This is not allowed as it may result in conflicting symbol names with respect to the automatically generated code.
@@ -11,3 +12,5 @@ The name a of method annotated with the `LoggerMessageAttribute` starts with an 
 ## Workarounds
 
 Choose a different method name which doesn't start with an underscore.
+
+[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-diagnostics.md)]

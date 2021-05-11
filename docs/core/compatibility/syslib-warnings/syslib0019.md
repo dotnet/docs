@@ -18,4 +18,4 @@ These APIs always throw a <xref:System.PlatformNotSupportedException> at run tim
 
 None.
 
-[!INCLUDE [suppress-syslib-warning](../../../../includes/suppress-syslib-warning.md)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]

@@ -4,6 +4,7 @@ description: Learn about the diagnostic that generates compile-time error SYSLIB
 ms.topic: reference
 ms.date: 05/07/2021
 ---
+
 # SYSLIB1020: Found multiple fields of type `ILogger`
 
 When a logging method definition doesn't explicitly include a parameter of type `ILogger`, then the type containing the logging method must have one and only one field of type `ILogger` which will be used as the target for log messages.
@@ -11,3 +12,5 @@ When a logging method definition doesn't explicitly include a parameter of type 
 ## Workarounds
 
 Ensure the type containing the logging method only includes a single field of type `ILogger` or include a parameter of type `ILogger` in the logging method signature.
+
+[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-diagnostics.md)]

@@ -4,6 +4,7 @@ description: Learn about the diagnostic that generates compile-time error SYSLIB
 ms.topic: reference
 ms.date: 05/07/2021
 ---
+
 # SYSLIB1007: Logging methods must return void
 
 A method annotated with the `LoggerMessageAttribute` attribute returns a value.
@@ -11,3 +12,5 @@ A method annotated with the `LoggerMessageAttribute` attribute returns a value.
 ## Workarounds
 
 All logging methods must return void.
+
+[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-diagnostics.md)]

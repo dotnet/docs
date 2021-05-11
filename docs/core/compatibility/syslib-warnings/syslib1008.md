@@ -4,6 +4,7 @@ description: Learn about the diagnostic that generates compile-time error SYSLIB
 ms.topic: reference
 ms.date: 05/07/2021
 ---
+
 # SYSLIB1008: One of the arguments to a logging method must implement the `ILogger` interface
 
 One of the parameters of a method annotated with the `LoggerMessageAttribute` must be of the type `ILogger` or a type
@@ -13,3 +14,5 @@ that implements `ILogger`.
 
 Ensure that a parameter of all logging methods is of type `ILogger` or of a type that
 implements `ILogger`.
+
+[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-diagnostics.md)]

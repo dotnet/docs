@@ -41,7 +41,7 @@ Consequently, the following APIs are marked obsolete, starting in .NET 5.0. Use 
   }
   ```
 
-[!INCLUDE [suppress-syslib-warning](../../../../includes/suppress-syslib-warning.md)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]
 
 ## See also
 

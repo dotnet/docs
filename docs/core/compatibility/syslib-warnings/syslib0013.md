@@ -16,4 +16,4 @@ For more information, see <https://github.com/dotnet/runtime/issues/31387>.
 
 Use <xref:System.Uri.EscapeDataString(System.String)?displayProperty=nameWithType> for query string components instead.
 
-[!INCLUDE [suppress-syslib-warning](../../../../includes/suppress-syslib-warning.md)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]

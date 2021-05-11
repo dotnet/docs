@@ -4,6 +4,7 @@ description: Learn about the diagnostic that generates compile-time error SYSLIB
 ms.topic: reference
 ms.date: 05/07/2021
 ---
+
 # SYSLIB1014: Logging template has no corresponding method argument.
 
 A template in the logging message doesn't have a matching parameter in the logging method definition.
@@ -11,3 +12,5 @@ A template in the logging message doesn't have a matching parameter in the loggi
 ## Workarounds
 
 Ensure that all templates in logging messages have corresponding parameters in the logging method definition.
+
+[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-diagnostics.md)]

@@ -4,6 +4,7 @@ description: Learn about the diagnostic that generates compile-time warning SYSL
 ms.topic: reference
 ms.date: 05/07/2021
 ---
+
 # SYSLIB1012: Redundant qualifier in logging message
 
 The message string of a `LoggerMessageAttribute` attribute contains a prefix such as `INFO:` or `ERROR:` which is redundant since each logging message has got a corresponding log level.
@@ -11,3 +12,5 @@ The message string of a `LoggerMessageAttribute` attribute contains a prefix suc
 ## Workarounds
 
 Remove the prefix from the message string.
+
+[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-diagnostics.md)]

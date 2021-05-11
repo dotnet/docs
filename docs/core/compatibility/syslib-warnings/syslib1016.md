@@ -4,6 +4,7 @@ description: Learn about the diagnostic that generates compile-time error SYSLIB
 ms.topic: reference
 ms.date: 05/07/2021
 ---
+
 # SYSLIB1016: Logging methods cannot have a body.
 
 The `LoggerMessageAttribute` attribute was applied to a method which has a method body.
@@ -11,3 +12,5 @@ The `LoggerMessageAttribute` attribute was applied to a method which has a metho
 ## Workarounds
 
 Remove the method body.
+
+[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-diagnostics.md)]

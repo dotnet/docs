@@ -148,9 +148,9 @@ items:
   - name: Coding style
     items:
     - name: Identifier names
-      href: programming-guide/inside-a-program/identifier-names.md
+      href: fundamentals/coding-style/identifier-names.md
     - name: C# Coding Conventions
-      href: programming-guide/inside-a-program/coding-conventions.md
+      href: fundamentals/coding-style/coding-conventions.md
 - name: What's new in C#
   items:
   - name: C# 9.0
@@ -328,7 +328,7 @@ items:
   - name: Safely cast using pattern matching and is/as operators
     href: how-to/safely-cast-using-pattern-matching-is-and-as-operators.md
   - name: "How to catch a non-CLS exception"
-    href: programming-guide/exceptions/how-to-catch-a-non-cls-exception.md
+    href: how-to/how-to-catch-a-non-cls-exception.md
 - name: The .NET Compiler Platform SDK (Roslyn APIs)
   items:
   - name: The .NET Compiler Platform SDK (Roslyn APIs) overview

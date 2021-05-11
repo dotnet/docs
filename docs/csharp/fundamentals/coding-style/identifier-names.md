@@ -32,6 +32,6 @@ In addition to the rules, there are a number of identifier [naming conventions](
 - [C# Reference](../../language-reference/index.md)
 - [Classes](../types/classes.md)
 - [Structure types](../../language-reference/builtin-types/struct.md)
-- [Namespaces](../types/namespaces/index.md)
-- [Interfaces](../types/interfaces/index.md)
+- [Namespaces](../types/namespaces.md)
+- [Interfaces](../types/interfaces.md)
 - [Delegates](../../programming-guide/delegates/index.md)

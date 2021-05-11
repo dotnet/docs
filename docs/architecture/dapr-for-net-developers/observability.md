@@ -35,17 +35,17 @@ As Dapr abstracts away the plumbing, the application is unaware of how observabi
 
 Dapr's [sidecar architecture](dapr-at-20000-feet.md#sidecar-architecture) enables built-in observability features. As services communicate, Dapr sidecars intercept the traffic and extract tracing, metrics, and logging information. Telemetry is published in an open standards format. By default, Dapr supports [OpenTelemetry](https://opentelemetry.io/) and [Zipkin](https://zipkin.io/).
 
-Dapr provides [collectors](https://docs.dapr.io/operations/monitoring/tracing/open-telemetry-collector/) that can publish telemetry to different back-end monitoring tools. These tools present Dapr telemetry for analysis and querying. Figure 9-1 shows the Dapr observability architecture:
+Dapr provides [collectors](https://docs.dapr.io/operations/monitoring/tracing/open-telemetry-collector/) that can publish telemetry to different back-end monitoring tools. These tools present Dapr telemetry for analysis and querying. Figure 10-1 shows the Dapr observability architecture:
 
 :::image type="content" source="./media/observability/observability-architecture.png" alt-text="Dapr observability architecture":::
 
-**Figure 9-1**. Dapr observability architecture.
+**Figure 10-1**. Dapr observability architecture.
 
 1. Service A calls an operation on Service B. The call is routed from a Dapr sidecar for Service A to a sidecar for Service B.
 1. When Service B completes the operation, a response is sent back to Service A through the Dapr sidecars. They gather and publish all available telemetry for every request and response.
 1. The configured collector ingests the telemetry and sends it to the monitoring back end.  
 
-As a developer, keep in mind that adding observability is different from configuring other Dapr building blocks, like pub/sub or state management. Instead of referencing a building block, you add a collector and a monitoring back end. Figure 9-1 shows it's possible to configure multiple collectors that integrate with different monitoring back ends.
+As a developer, keep in mind that adding observability is different from configuring other Dapr building blocks, like pub/sub or state management. Instead of referencing a building block, you add a collector and a monitoring back end. Figure 10-1 shows it's possible to configure multiple collectors that integrate with different monitoring back ends.
 
 At the beginning of this chapter, four categories of telemetry were identified. The following sections will provide detail for each category. They'll include instruction on how to configure collectors that integrate with popular monitoring back ends.
 
@@ -53,22 +53,22 @@ At the beginning of this chapter, four categories of telemetry were identified. 
 
 Distributed tracing provides insight into the traffic that flows across services in a distributed application. The log of exchanged request and response messages is an invaluable source of information for troubleshooting issues. The hard part is *correlating messages* that originate from the same operation.
 
-Dapr uses the [W3C Trace Context](https://www.w3.org/TR/trace-context) to correlate related messages. It injects the same context information into requests and responses that form a unique operation. Figure 9-2 shows how correlation works:
+Dapr uses the [W3C Trace Context](https://www.w3.org/TR/trace-context) to correlate related messages. It injects the same context information into requests and responses that form a unique operation. Figure 10-2 shows how correlation works:
 
 :::image type="content" source="./media/observability/w3c-trace-context.png" alt-text="W3C Trace Context example":::
 
-**Figure 9-2**. W3C Trace Context example.
+**Figure 10-2**. W3C Trace Context example.
 
 1. Service A invokes an operation on Service B. As Service A starts the call, Dapr creates a unique trace context and injects it into the request.
 1. Service B receives the request and invokes an operation on Service C. Dapr detects that the incoming request contains a trace context and propagates it by injecting it into the outgoing request to Service C.  
 1. Service C receives the request and handles it. Dapr detects that the incoming request contains a trace context and propagates it by injecting it into the outgoing response back to Service B.
 1. Service B receives the response and handles it. It then creates a new response and propagates the trace context by injecting it into the outgoing response back to Service A.
 
-A set of requests and responses that belong together is called a *trace*. Figure 9-3 shows a trace:
+A set of requests and responses that belong together is called a *trace*. Figure 10-3 shows a trace:
 
 :::image type="content" source="./media/observability/traces-spans.png" alt-text="Traces and spans":::
 
-**Figure 9-3**. Traces and spans.
+**Figure 10-3**. Traces and spans.
 
 In the figure, note how the trace represents a unique application transaction that takes place across many services. A trace is a collection of *spans*. Each span represents a single operation or unit of work done within the trace. Spans are the requests and responses that are sent between services that implement the unique transaction.
 
@@ -201,19 +201,19 @@ Once the application is started, the Dapr sidecars will emit telemetry to the Zi
 
 :::image type="content" source="./media/observability/zipkin.png" alt-text="Zipkin front end":::
 
-**Figure 9-4**. Zipkin front end.
+**Figure 10-4**. Zipkin front end.
 
 On the *Find a trace* tab, you can query traces. Pressing the *RUN QUERY* button without specifying any restrictions will show all the ingested *traces*:
 
 :::image type="content" source="./media/observability/zipkin-traces-overview.png" alt-text="Zipkin traces overview":::
 
-**Figure 9-5**. Zipkin traces overview.
+**Figure 10-5**. Zipkin traces overview.
 
 Clicking the *SHOW* button next to a specific trace, will show the details of that trace:
 
 :::image type="content" source="./media/observability/zipkin-trace-details.png" alt-text="Zipkin trace details":::
 
-**Figure 9-6.** Zipkin trace details.
+**Figure 10-6.** Zipkin trace details.
 
 Each item on the details page, is a span that represents a request that is part of the selected trace.
 
@@ -223,7 +223,7 @@ Because Dapr sidecars handle traffic between services, Zipkin can use the trace 
 
 :::image type="content" source="./media/observability/zipkin-dependencies.png" alt-text="Zipkin dependencies":::
 
-**Figure 9-7.** Zipkin dependencies.
+**Figure 10-7.** Zipkin dependencies.
 
 The animated dots on the lines between the services represent requests and move from source to destination. Red dots indicate a failed request.
 
@@ -263,11 +263,11 @@ Check out the Jaeger and New Relic websites for more information on how to use t
 
 ### Metrics
 
-Metrics provide insight into performance and resource consumption. Under the hood, Dapr emits a wide collection of system and runtime metrics. Dapr uses [Prometheus](https://prometheus.io/) as a metric standard. Dapr sidecars and system services, expose a metrics endpoint on port `9090`. A *Prometheus scraper* calls this endpoint at a predefined interval to collect metrics. The scraper sends metric values to a monitoring back end. Figure 9-8 shows the scraping process:
+Metrics provide insight into performance and resource consumption. Under the hood, Dapr emits a wide collection of system and runtime metrics. Dapr uses [Prometheus](https://prometheus.io/) as a metric standard. Dapr sidecars and system services, expose a metrics endpoint on port `9090`. A *Prometheus scraper* calls this endpoint at a predefined interval to collect metrics. The scraper sends metric values to a monitoring back end. Figure 10-8 shows the scraping process:
 
 :::image type="content" source="./media/observability/prometheus-scraper.png" alt-text="Scraping Prometheus metrics":::
 
-**Figure 9-8**. Scraping Prometheus metrics.
+**Figure 10-8**. Scraping Prometheus metrics.
 
 Each sidecar and system service exposes a metric endpoint that listens on port 9090. The Prometheus Metrics Scrapper captures metrics from each endpoint and published the information to the monitoring back end.  
 
@@ -317,7 +317,7 @@ With the Prometheus scraper collecting and publishing metrics into the monitorin
 
 :::image type="content" source="./media/observability/grafana-sample.png" alt-text="Grafana dashboard":::
 
-**Figure 9-9.** Grafana dashboard.
+**Figure 10-9.** Grafana dashboard.
 
 The Dapr documentation includes a [tutorial for installing Prometheus and Grafana](https://docs.dapr.io/operations/monitoring/metrics/grafana/).
 
@@ -459,7 +459,7 @@ The dashboard opens with an overview of all services in your application that ha
 
 :::image type="content" source="./media/observability/dapr-dashboard-overview.png" alt-text="Dapr dashboard overview":::
 
-**Figure 9-10.** Dapr dashboard overview.
+**Figure 10-10.** Dapr dashboard overview.
 
 The Dapr dashboard is invaluable when troubleshooting a Dapr application. It provides information about Dapr sidecars and system services. You can drill down into the configuration of each service, including the logging entries.
 
@@ -467,7 +467,7 @@ The dashboard also shows the configured components (and their configuration) for
 
 :::image type="content" source="./media/observability/dapr-dashboard-components.png" alt-text="Dapr dashboard components":::
 
-**Figure 9-11.** Dapr dashboard components.
+**Figure 10-11.** Dapr dashboard components.
 
 There's a large amount of information available through the dashboard. You can discover it by running a Dapr application and browsing the dashboard.
 
@@ -481,11 +481,11 @@ If you want to emit telemetry from your .NET application code, you should consid
 
 ## Sample application: Dapr Traffic Control
 
-Because the Traffic Control sample application runs with Dapr, all telemetry as described in this chapter is available. If you run the application and open the Zipkin web front end, you can see end-to-end tracing. In figure 9-12 you can see an example:
+Because the Traffic Control sample application runs with Dapr, all telemetry as described in this chapter is available. If you run the application and open the Zipkin web front end, you can see end-to-end tracing. In figure 10-12 you can see an example:
 
 :::image type="content" source="./media/observability/traffic-control-zipkin.png" alt-text="Dapr output binding flow":::
 
-**Figure 9-12**. Dapr output binding flow.
+**Figure 10-12**. Dapr output binding flow.
 
 This trace shows the communication that occurs when a speeding violation has been detected:
 
@@ -501,7 +501,7 @@ Each trace line can be clicked to see more details. If you select the last trace
 
 :::image type="content" source="./media/observability/traffic-control-zipkin-details.png" alt-text="Output binding trace details":::
 
-**Figure 9-13**. Output binding trace details.
+**Figure 10-13**. Output binding trace details.
 
 ## Summary
 
@@ -536,5 +536,5 @@ Dapr offers a dashboard that presents information about the Dapr services and co
 - [Serilog](https://serilog.net/)
 
 > [!div class="step-by-step"]
-> [Previous](bindings.md)
+> [Previous](actors.md)
 > [Next](secrets-management.md)

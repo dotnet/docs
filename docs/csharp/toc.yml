@@ -129,23 +129,22 @@ items:
     items:
     - name: Overview
       displayName: exceptions
-      href: programming-guide/exceptions/index.md
+      href: fundamentals/exceptions/index.md
     - name: Using Exceptions
-      href: programming-guide/exceptions/using-exceptions.md
+      href: fundamentals/exceptions/using-exceptions.md
     - name: Exception Handling
-      href: programming-guide/exceptions/exception-handling.md
+      href: fundamentals/exceptions/exception-handling.md
     - name: Creating and Throwing Exceptions
-      href: programming-guide/exceptions/creating-and-throwing-exceptions.md
+      href: fundamentals/exceptions/creating-and-throwing-exceptions.md
     - name: Compiler-Generated Exceptions
-      href: programming-guide/exceptions/compiler-generated-exceptions.md
+      href: fundamentals/exceptions/compiler-generated-exceptions.md
+    ## TODO: Replace with a tutorial (include async exceptions)
     - name: How to
       items:
       - name: "How to handle an exception using try-catch"
         href: programming-guide/exceptions/how-to-handle-an-exception-using-try-catch.md
       - name: "How to execute cleanup code using finally"
         href: programming-guide/exceptions/how-to-execute-cleanup-code-using-finally.md
-      - name: "How to catch a non-CLS exception"
-        href: programming-guide/exceptions/how-to-catch-a-non-cls-exception.md
   - name: Coding style
     items:
     - name: Identifier names
@@ -328,6 +327,8 @@ items:
     href: how-to/compare-strings.md
   - name: Safely cast using pattern matching and is/as operators
     href: how-to/safely-cast-using-pattern-matching-is-and-as-operators.md
+  - name: "How to catch a non-CLS exception"
+    href: programming-guide/exceptions/how-to-catch-a-non-cls-exception.md
 - name: The .NET Compiler Platform SDK (Roslyn APIs)
   items:
   - name: The .NET Compiler Platform SDK (Roslyn APIs) overview

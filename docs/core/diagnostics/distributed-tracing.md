@@ -45,5 +45,4 @@ distributed tracing instrumentation to support it.
 
 - [Understand distributed tracing concepts](distributed-tracing-concepts.md)
 - Guides
-  - [Adding custom distributed trace instrumentation](distributed-tracing-instrumentation-walkthroughs.md)
-  
+  - [Adding custom distributed trace instrumentation](distributed-tracing-instrumentation-walkthroughs.md)  

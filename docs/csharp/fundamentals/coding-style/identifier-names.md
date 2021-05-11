@@ -28,11 +28,10 @@ In addition to the rules, there are a number of identifier [naming conventions](
   
 ## See also
 
-- [C# Programming Guide](../index.md)
-- [Inside a C# Program](./index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Reference](../../language-reference/index.md)
-- [Classes](../classes-and-structs/classes.md)
+- [Classes](../types/classes.md)
 - [Structure types](../../language-reference/builtin-types/struct.md)
-- [Namespaces](../namespaces/index.md)
-- [Interfaces](../interfaces/index.md)
-- [Delegates](../delegates/index.md)
+- [Namespaces](../types/namespaces/index.md)
+- [Interfaces](../types/interfaces/index.md)
+- [Delegates](../../programming-guide/delegates/index.md)

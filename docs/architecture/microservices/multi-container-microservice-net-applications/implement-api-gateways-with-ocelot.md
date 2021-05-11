@@ -134,7 +134,7 @@ However, direct-access communication to the microservice, in this case through t
 
 ## Implementing your API Gateways with Ocelot
 
-Ocelot is basically a set of middlewares that you can apply in a specific order.
+Ocelot is basically a set of middleware that you can apply in a specific order.
 
 Ocelot is designed to work with ASP.NET Core only. The latest version of the package targets `.NETCoreApp 3.1` and hence it is not suitable for .NET Framework applications.
 

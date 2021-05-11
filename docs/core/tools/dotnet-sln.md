@@ -207,4 +207,4 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 
 ## See also
 
-- [dotnet/sdk GitHub repo](https://github.com/dotnet/sdk) (dotnet cli source)
+- [dotnet/sdk GitHub repo](https://github.com/dotnet/sdk) (.NET CLI source)

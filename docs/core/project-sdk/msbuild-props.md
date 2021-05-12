@@ -296,7 +296,7 @@ The `CopyLocalLockFileAssemblies` property is useful for plugin projects that ha
 
 ### IsPublishable
 
-The `IsPublishable` property allows the `Publish` target to run. This property only affects processes that use *.\*proj* files and the `Publish` target, such as the [dotnet publish](../tools/dotnet-publish.md) command. Visual Studio is not affected because Visual Studio uses the `PublishOnly` target. The default value is `true`.
+The `IsPublishable` property allows the `Publish` target to run. This property only affects processes that use *.\*proj* files and the `Publish` target, such as the [dotnet publish](../tools/dotnet-publish.md) command. It does not affect publishing in Visual Studio, which uses the `PublishOnly` target. The default value is `true`.
 
 This property is useful if you run `dotnet publish` on a solution file, as it allows automatic selection of projects that should be published.
 

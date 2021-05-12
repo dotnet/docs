@@ -49,7 +49,7 @@ public struct ValueCoordinate
 }
 ```
 
-When naming an `inteface`, use pascal casing in addition to prefixing the name with an `I`. This clearly indicates to consumers that it's an `interface`.
+When naming an `interface`, use pascal casing in addition to prefixing the name with an `I`. This clearly indicates to consumers that it's an `interface`.
 
 ```csharp
 public interface IWorkerQueue

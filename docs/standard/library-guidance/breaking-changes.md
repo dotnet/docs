@@ -1,7 +1,7 @@
 ---
 title: Breaking changes and .NET libraries
 description: Best practice recommendations for navigating breaking changes when creating .NET libraries.
-ms.date: 10/02/2018
+ms.date: 05/13/2021
 ---
 # Breaking changes
 
@@ -52,6 +52,8 @@ For example, ASP.NET Core MVC has the concept of a [compatibility version](/aspn
 
 ✔️ CONSIDER leaving new features off by default, if they affect existing users, and let developers opt in to the feature with a setting.
 
+For more information about behavior breaking changes in .NET APIs, see [.NET behavioral changes compatibility](/dotnet/core/compatibility).
+
 ### Binary breaking change
 
 A binary breaking change happens when you change the public API of your library, so assemblies compiled against older versions of your library are no longer able to call the API. For example, changing a method's signature by adding a new parameter will cause assemblies compiled against the older version of the library to throw a <xref:System.MissingMethodException>.
@@ -89,6 +91,8 @@ public class Document
 ✔️ CONSIDER keeping types and methods with the <xref:System.ObsoleteAttribute> indefinitely in low and middle-level libraries.
 
 > Removing APIs is a binary breaking change. Considering keeping obsolete types and methods if maintaining them is low cost and doesn't add lot of technical debt to your library. Not removing types and methods can help avoid the worst-case scenarios mentioned above.
+
+For more information about what .NET API changes break binary compatibility, see [.NET public contract compatibility](/dotnet/core/compatibility#modifications-to-the-public-contract).
 
 ## See also
 

@@ -71,6 +71,10 @@ This section provides information on common errors you may get while using the p
 
 [!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
 
+### Errors about missing `fxr`, `libhostfxr.so` or `FrameworkList.xml`
+
+See how to [Troubleshoot Package Mixups](linux-package-mixup.md)
+
 ## Dependencies
 
 [!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]

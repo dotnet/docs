@@ -42,6 +42,7 @@ This first table describes the mappings for various types for whom the marshalin
 | `decimal` | COM `DECIMAL` struct |
 | .NET Delegate | Native function pointer |
 | `System.DateTime` | Win32 `DATE` type |
+| `System.TimeSpan` | `int64_t` |
 | `System.Guid` | Win32 `GUID` type |
 
 A few categories of marshaling have different defaults if you're marshaling as a parameter or structure.

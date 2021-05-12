@@ -1,7 +1,7 @@
 ---
 title: .NET Framework & Windows OS versions
 description: Learn about key features in each version of .NET Framework, including underlying CLR versions and versions installed by the Windows operating system.
-ms.date: 01/17/2020
+ms.date: 05/11/2021
 helpviewer_keywords:
   - "versions, .NET Framework"
 ms.assetid: f75a72de-e2f2-4a7a-9574-3f278684ea90
@@ -46,9 +46,9 @@ The tables that follow summarize .NET Framework version history and correlate ea
 |||
 |-|-|
 |**CLR version**|4|
-|**Windows versions**|✔️ 10 May 2019 Update<br/>➕ 10 October 2018 Update (Version 1809)<br/>➕ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
+|**Windows versions**|✔️ 10 October 2020 Update<br/>✔️ 10 May 2020 Update<br/>✔️ 10 November 2019 Update<br/>✔️ 10 May 2019 Update<br/>➕ 10 October 2018 Update (Version 1809)<br/>➕ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
 |**Windows Server versions**|➕ Windows Server 2019<br/>➕ Windows Server, version 1809<br/>➕ Windows Server, version 1803<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
-|**To determine installed .NET version**|Use `Release` DWORD:<br/>- 528040 (Windows 10 May 2019 Update)<br/>- 528049 (all other OS versions)<br/>(See [instructions](how-to-determine-which-versions-are-installed.md))|
+|**To determine installed .NET version**|Use `Release` DWORD:<br/>- 528372 (Windows 10 May 2020 Update and Windows 10 October 2020 Update)<br/>- 528040 (Windows 10 May 2019 Update and Windows 10 November 2019 Update)<br/>- 528049 (all other OS versions)<br/>(See [instructions](how-to-determine-which-versions-are-installed.md))|
 
 ### .NET Framework 4.7.2
 

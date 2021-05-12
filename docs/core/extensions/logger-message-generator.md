@@ -1,9 +1,9 @@
 ---
 title: Compile-time logging source generation
-description: Learn how to use compile-time source generation for logging, and the LoggerMessageAttribute with .NET.
+description: Learn how to use the LoggerMessageAttribute and compile-time source generation for logging in .NET.
 author: maryamariyan
 ms.author: maariyan
-ms.date: 05/06/2021
+ms.date: 05/24/2021
 ---
 
 # Compile-time logging source generation
@@ -11,16 +11,16 @@ ms.date: 05/06/2021
 > [!NOTE]
 > The APIs in this article are new. They'll be generally available as part of .NET 6, but are subject to change.
 >
-> - When using .NET 6 Preview 4, it's part of the [Microsoft.Extensions.Logging](https://www.nuget.org/packages/microsoft.extensions.logging) package.
-> - When using [.NET nightly builds](https://github.com/dotnet/runtime/blob/main/docs/project/dogfooding.md), it's part of the [Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/microsoft.extensions.logging.abstractions) package.
+> - When using .NET 6 Preview 4, the APIs are part of the [Microsoft.Extensions.Logging](https://www.nuget.org/packages/microsoft.extensions.logging) package.
+> - When using [.NET nightly builds](https://github.com/dotnet/runtime/blob/main/docs/project/dogfooding.md), the APIs are part of the [Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/microsoft.extensions.logging.abstractions) package.
 
-With .NET 6, the `LoggerMessageAttribute` was introduced. This attribute is part of the `Microsoft.Extensions.Logging` namespace, and when used it will source generate performant logging APIs. The source generation logging support is designed to deliver a highly-usable and highly-performant logging solution for modern .NET applications. The auto-generated source code relies on the <xref:Microsoft.Extensions.Logging.ILogger> interface in conjunction with <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType> functionality.
+.NET 6 introduces the `LoggerMessageAttribute` type. This attribute is part of the `Microsoft.Extensions.Logging` namespace, and when used, it source-generates performant logging APIs. The source-generation logging support is designed to deliver a highly usable and highly performant logging solution for modern .NET applications. The auto-generated source code relies on the <xref:Microsoft.Extensions.Logging.ILogger> interface in conjunction with <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType> functionality.
 
-The source generator is triggered when `LoggerMessageAttribute` is used on `partial` logging methods. When triggered, it is either able to autogenerate the implementation of the `partial` methods it's decorating, or produce compile-time diagnostics with hints about proper usage. The compile-time logging solution is typically considerably faster at runtime than existing logging approaches. It does this by eliminating boxing, temporary allocations, and copies to the maximum extent possible.
+The source generator is triggered when `LoggerMessageAttribute` is used on `partial` logging methods. When triggered, it is either able to autogenerate the implementation of the `partial` methods it's decorating, or produce compile-time diagnostics with hints about proper usage. The compile-time logging solution is typically considerably faster at run time than existing logging approaches. It achieves this by eliminating boxing, temporary allocations, and copies to the maximum extent possible.
 
 ## Basic usage
 
-To use the `LoggerMessageAttribute`, the consuming class and method need to be `partial`. The code generator is triggered at compile-time, and generates an implementation of the `partial` method.
+To use the `LoggerMessageAttribute`, the consuming class and method need to be `partial`. The code generator is triggered at compile time, and generates an implementation of the `partial` method.
 
 ```csharp
 public static partial class Log
@@ -69,7 +69,7 @@ public static partial class Log
 }
 ```
 
-You can omit the logging message and <xref:System.String.Empty?displayProperty=nameWithType> will be provided for the message. The state will contain the arguments, and is formatted as key value pairs.
+You can omit the logging message and <xref:System.String.Empty?displayProperty=nameWithType> will be provided for the message. The state will contain the arguments, formatted as key-value pairs.
 
 ```csharp
 using System.Text.Json;
@@ -115,15 +115,15 @@ Consider the example logging output when using the `JsonConsole` formatter.
 
 ## Log method constraints
 
-When using the `LoggerMessageAttribute` on logging methods, there are some constraints which must be followed:
+When using the `LoggerMessageAttribute` on logging methods, there are some constraints that must be followed:
 
 - Logging methods must be `static`, `partial`, and return `void`.
 - Logging method names must *not* start with an underscore.
 - Parameter names of logging methods must *not* start with an underscore.
-- Logging methods may *not* be defined in nested type.
+- Logging methods may *not* be defined in a nested type.
 - Logging methods *cannot* be generic.
 
-The code generation model depends on code being compiled with a modern C# compiler, version 9 or later. The C# 9.0 compiler became available with .NET 5.0. To upgrade to a modern C# compiler, edit your project file to target C# 9.0.
+The code-generation model depends on code being compiled with a modern C# compiler, version 9 or later. The C# 9.0 compiler became available with .NET 5. To upgrade to a modern C# compiler, edit your project file to target C# 9.0.
 
 ```xml
 <PropertyGroup>
@@ -171,7 +171,7 @@ public static partial void WarningLogMethod(
 ```
 
 > [!IMPORTANT]
-> The warnings emitted provide details as to the correct usage of the `LoggerMessageAttribute`. In the preceding example the `WarningLogMethod` will report a `DiagnosticSeverity.Warning` of `SYSLIB0025`.
+> The warnings emitted provide details as to the correct usage of the `LoggerMessageAttribute`. In the preceding example, the `WarningLogMethod` will report a `DiagnosticSeverity.Warning` of `SYSLIB0025`.
 >
 > ```console
 > Don't include a template for ex in the logging message since it is implicitly taken care of.
@@ -239,7 +239,7 @@ static partial void LogMethod(
 ```
 
 > [!TIP]
-> The order of the parameters on a log method are *not* required to correspond to the order of the template placeholders. Instead, the placeholder names in the template are expected to match the parameters. Consider the following `JsonConsole` output and the order of the errors.
+> The order of the parameters on a log method is *not* required to correspond to the order of the template placeholders. Instead, the placeholder names in the template are expected to match the parameters. Consider the following `JsonConsole` output and the order of the errors.
 >
 > ```json
 > {
@@ -258,11 +258,11 @@ static partial void LogMethod(
 
 ## Additional logging examples
 
-The samples below show how-to:
+The samples below show how to:
 
-- `LogWithCustomEventName`: retrieve event name via `LoggerMessage` attribute.
-- `LogWithDynamicLogLevel`: set log level dynamically, to allow log level to be set based on configuration input.
-- `UsingFormatSpecifier`: use format specifiers to format logging parameters.
+- `LogWithCustomEventName`: Retrieve event name via `LoggerMessage` attribute.
+- `LogWithDynamicLogLevel`: Set log level dynamically, to allow log level to be set based on configuration input.
+- `UsingFormatSpecifier`: Use format specifiers to format logging parameters.
 
 ```csharp
 public partial class LoggingSample
@@ -371,19 +371,19 @@ Consider the example logging output when using the `JsonConsole` formatter.
 
 ## Summary
 
-With the advent of C# source generators, writing highly-performant logging APIs is much easier. Using the source generator approach has several key benefits:
+With the advent of C# source generators, writing highly performant logging APIs is much easier. Using the source generator approach has several key benefits:
 
 - Allows the logging structure to be preserved and enables the exact format syntax required by [Message Templates](https://messagetemplates.org).
 - Allows supplying alternative names for the template placeholders and using format specifiers.
 - Allows the passing of all original data as-is, without any complication around how it's stored prior to something being done with it (other than creating a `string`).
-- Provides logging-specific diagnostics, emits warnings for duplicate event ids.
+- Provides logging-specific diagnostics, emits warnings for duplicate event IDs.
 
 Additionally, there are benefits over manually using <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType>:
 
-- Shorter and simpler syntax, declarative attribute usage rather than coding boilerplate.
-- Guided developer experience, the generator gives warnings to help developers do the right thing.
-- Support for an arbitrary number of logging parameters. `LoggerMessage.Define` supports a max of six.
-- Support for dynamic log level, this is not possible with `LoggerMessage.Define` alone.
+- Shorter and simpler syntax: Declarative attribute usage rather than coding boilerplate.
+- Guided developer experience: The generator gives warnings to help developers do the right thing.
+- Support for an arbitrary number of logging parameters. `LoggerMessage.Define` supports a maximum of six.
+- Support for dynamic log level. This is not possible with `LoggerMessage.Define` alone.
 
 ### Known limitations
 

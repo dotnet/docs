@@ -225,7 +225,8 @@
         "docs/standard/data/sqlite/*.md": "reference",
         "docs/visual-basic/language-reference/**/*.md": "reference",
         "docs/visual-basic/reference/**/*.md": "reference",
-        "docs/visual-basic/misc/bc*.md": "error-reference"
+        "docs/visual-basic/misc/bc*.md": "error-reference",
+        "docs/whats-new/**/**.md": "reference"
       },
       "dev_langs": {
         "docs/fsharp/**/**.md": ["fsharp"],

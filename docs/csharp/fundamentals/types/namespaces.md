@@ -1,13 +1,12 @@
 ---
-title: "Namespaces - C# Programming Guide"
-description: Learn about namespaces in C# programming. See an overview of namespace properties and view additional resources.
-ms.date: 08/21/2018
+title: "Organizing types in namespaces"
+description: Learn how namespaces help you organize related types.
+ms.date: 05/14/2021
 helpviewer_keywords: 
   - "C# language, namespaces"
   - "namespaces [C#]"
-ms.assetid: b1c4ab46-3fad-4ffa-9deb-dd50a2d8c65a
 ---
-# Namespaces (C# Programming Guide)
+# Declare namespaces 
 
 Namespaces are heavily used in C# programming in two ways. First, .NET uses namespaces to organize its many classes, as follows:  
 

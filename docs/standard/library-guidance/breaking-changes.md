@@ -52,7 +52,7 @@ For example, ASP.NET Core MVC has the concept of a [compatibility version](/aspn
 
 ✔️ CONSIDER leaving new features off by default, if they affect existing users, and let developers opt in to the feature with a setting.
 
-For more information about behavior breaking changes in .NET APIs, see [.NET behavioral changes compatibility](/dotnet/core/compatibility).
+For more information about behavior breaking changes in .NET APIs, see [.NET behavioral changes compatibility](../../core/compatibility/index.md#behavioral-changes).
 
 ### Binary breaking change
 
@@ -92,7 +92,7 @@ public class Document
 
 > Removing APIs is a binary breaking change. Considering keeping obsolete types and methods if maintaining them is low cost and doesn't add lot of technical debt to your library. Not removing types and methods can help avoid the worst-case scenarios mentioned above.
 
-For more information about what .NET API changes break binary compatibility, see [.NET public contract compatibility](/dotnet/core/compatibility#modifications-to-the-public-contract).
+For more information about what .NET API changes break binary compatibility, see [.NET public contract compatibility](../../core/compatibility/index.md#modifications-to-the-public-contract).
 
 ## See also
 

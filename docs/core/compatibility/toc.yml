@@ -55,6 +55,8 @@ items:
           href: aspnet-core/6.0/signalr-java-client-updated.md
       - name: Core .NET libraries
         items:
+        - name: API obsoletions with non-default diagnostic IDs
+          href: core-libraries/6.0/obsolete-apis-with-custom-diagnostics.md
         - name: New Queryable method overloads
           href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
         - name: Nullability annotation changes
@@ -483,6 +485,8 @@ items:
       items:
       - name: .NET 6
         items:
+        - name: API obsoletions with non-default diagnostic IDs
+          href: core-libraries/6.0/obsolete-apis-with-custom-diagnostics.md
         - name: New Queryable method overloads
           href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
         - name: Nullability annotation changes
@@ -711,9 +715,9 @@ items:
           href: windows-forms/5.0/sdk-and-target-framework-change.md
   - name: SYSLIB warnings and errors
     items:
-    - name: Obsolete diagnostics
+    - name: Obsoletion diagnostics
       items:
-      - name: SYSLIB0XXX overview
+      - name: Overview
         displayName: syslib, obsolete, obsoletion
         href: syslib-obsoletions.md
       - name: SYSLIB0001
@@ -748,14 +752,18 @@ items:
         href: syslib-warnings/syslib0015.md
       - name: SYSLIB0016
         href: syslib-warnings/syslib0016.md
+      - name: SYSLIB0017
+        href: syslib-warnings/syslib0017.md
+      - name: SYSLIB0018
+        href: syslib-warnings/syslib0018.md
       - name: SYSLIB0019
         href: syslib-warnings/syslib0019.md
       - name: SYSLIB0020
         href: syslib-warnings/syslib0020.md
-    - name: Source generator diagnostics
+    - name: Source-generator diagnostics
       items:
-      - name: SYSLIB1XXX overview
-        displayName: syslib, diagnostic, diagnostics
+      - name: Overview
+        displayName: syslib, diagnostic, diagnostics, source generator
         href: syslib-diagnostics.md
       - name: SYSLIB1001
         href: syslib-warnings/syslib1001.md

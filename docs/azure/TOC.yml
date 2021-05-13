@@ -23,14 +23,14 @@
         href: dotnet-dev-env-checklist.md
 - name: Migrate to Azure
   items:
-      - name: Choose the right Azure hosting option
-        href: ./migration/choose.md
-      - name: Migrate a .NET web app or service to Azure App Service
-        href: ./migration/app-service.md
-      - name: Migrate an ASP.NET app to an Azure VM
-        href: ./migration/vm.md
-      - name: Migrate a SQL Server database to Azure
-        href: ./migration/sql.md
+    - name: Choose the right Azure hosting option
+      href: ./migration/choose.md
+    - name: Migrate a .NET web app or service to Azure App Service
+      href: ./migration/app-service.md
+    - name: Migrate an ASP.NET app to an Azure VM
+      href: ./migration/vm.md
+    - name: Migrate a SQL Server database to Azure
+      href: ./migration/sql.md
 - name: Azure SDK for .NET
   items:
       - name: What is the Azure SDK for .NET?

@@ -62,7 +62,7 @@ landingContent:
           - text: Format text using string interpolation
             url: tutorials/string-interpolation.md
           - text: Browse all tutorials
-            url: tutorials/index.md
+            url: ./tutorials/intro-to-csharp/introduction-to-classes.md
   
   - title: "New features in C# 9.0"
     linkLists:
@@ -80,11 +80,11 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Explore record types
-            url: tutorials/exploration/records.md
+            url: ./whats-new/tutorials/records.md
           - text: Explore top level statements
-            url: tutorials/exploration/top-level-statements.md
+            url: ./whats-new/tutorials/top-level-statements.md
           - text: Explore new patterns
-            url: tutorials/exploration/patterns-objects.md
+            url: ./whats-new/tutorials/patterns-objects.md
       - linkListType: reference
         links:
           - text: Breaking changes in the C# compiler

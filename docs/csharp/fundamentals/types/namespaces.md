@@ -6,13 +6,13 @@ helpviewer_keywords:
   - "C# language, namespaces"
   - "namespaces [C#]"
 ---
-# Declare namespaces 
+# Declare namespaces to organize types in packages
 
 Namespaces are heavily used in C# programming in two ways. First, .NET uses namespaces to organize its many classes, as follows:  
 
 [!code-csharp[csProgGuide#22](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuide/CS/progGuide.cs#22)]
 
-<xref:System> is a namespace and <xref:System.Console> is a class in that namespace. The `using` keyword can be used so that the complete name is not required, as in the following example:
+<xref:System> is a namespace and <xref:System.Console> is a class in that namespace. The `using` keyword can be used so that the complete name isn't required, as in the following example:
 
 [!code-csharp[csProgGuide#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuide/CS/using.cs#1)]
 
@@ -31,7 +31,7 @@ The name of the namespace must be a valid C# [identifier name](../../programming
 Namespaces have the following properties:
 
 - They organize large code projects.
-- They are delimited by using the `.` operator.
+- They're delimited by using the `.` operator.
 - The `using` directive obviates the requirement to specify the name of the namespace for every class.
 - The `global` namespace is the "root" namespace: `global::System` will always refer to the .NET <xref:System> namespace.
 

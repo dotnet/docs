@@ -27,7 +27,7 @@ The information stored in a type can include the following items:
 
 The compiler uses type information to make sure all operations that are performed in your code are *type safe*. For example, if you declare a variable of type [`int`](../../language-reference/builtin-types/integral-numeric-types.md), the compiler allows you to use the variable in addition and subtraction operations. If you try to perform those same operations on a variable of type [`bool`](../../language-reference/builtin-types/bool.md), the compiler generates an error, as shown in the following example:
 
-:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" id="TypeSafeExample":::
+:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="TypeSafeExample":::
 
 > [!NOTE]
 > C and C++ developers, notice that in C#, `bool` is not convertible to `int`.
@@ -38,11 +38,11 @@ The compiler embeds the type information into the executable file as metadata. T
 
 When you declare a variable or constant in a program, you must either specify its type or use the [`var`](../../language-reference/keywords/var.md) keyword to let the compiler infer the type. The following example shows some variable declarations that use both built-in numeric types and complex user-defined types:
 
-:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" id="Declarations":::
+:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="Declarations":::
 
 The types of method parameters and return values are specified in the method declaration. The following signature shows a method that requires an `int` as an input argument and returns a string:
 
-:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" id="GetName":::
+:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="GetName":::
 
 After you declare a variable, you can't redeclare it with a new type, and you can't assign a value not compatible with its declared type. For example, you can't declare an `int` and then assign it a Boolean value of `true`. However, values can be converted to other types, for example when they're assigned to new variables or passed as method arguments. A *type conversion* that doesn't cause data loss is performed automatically by the compiler. A conversion that might cause data loss requires a *cast* in the source code.
 
@@ -78,23 +78,23 @@ There are two categories of value types: `struct` and `enum`.
 
 The built-in numeric types are structs, and they have fields and methods that you can access:
 
-:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" id="ConstantByte":::
+:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="ConstantByte":::
 
 But you declare and assign values to them as if they're simple non-aggregate types:
 
-:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" id="NonAggregateTypes":::
+:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="NonAggregateTypes":::
 
 Value types are *sealed*, which means that you can't derive a type from any value type, for example <xref:System.Int32?displayProperty=nameWithType>. You can't define a struct to inherit from any user-defined class or struct because a struct can only inherit from <xref:System.ValueType?displayProperty=nameWithType>. However, a struct can implement one or more interfaces. You can cast a struct type to any interface type that it implements; this cast causes a *boxing* operation to wrap the struct inside a reference type object on the managed heap. Boxing operations occur when you pass a value type to a method that takes a <xref:System.Object?displayProperty=nameWithType> or any interface type as an input parameter. For more information, see [Boxing and Unboxing](../../programming-guide/types/boxing-and-unboxing.md).
 
 You use the [struct](../../language-reference/builtin-types/struct.md) keyword to create your own custom value types. Typically, a struct is used as a container for a small set of related variables, as shown in the following example:
 
-:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" id="Coords":::
+:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="Coords":::
 
 For more information about structs, see [Structure types](../../language-reference/builtin-types/struct.md). For more information about value types, see [Value types](../../language-reference/builtin-types/value-types.md).
 
 The other category of value types is `enum`. An enum defines a set of named integral constants. For example, the <xref:System.IO.FileMode?displayProperty=nameWithType> enumeration in the .NET class library contains a set of named constant integers that specify how a file should be opened. It's defined as shown in the following example:
 
-:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" id="EnumFileMode":::
+:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="EnumFileMode":::
 
 The <xref:System.IO.FileMode.Create?displayProperty=fullName>  constant has a value of 2. However, the name is much more meaningful for humans reading the source code, and for that reason it's better to use enumerations instead of constant literal numbers. For more information, see <xref:System.IO.FileMode?displayProperty=nameWithType>.
 
@@ -104,17 +104,17 @@ All enums inherit from <xref:System.Enum?displayProperty=nameWithType>, which in
 
 A type that is defined as a `class`, `record`, [`delegate`](../../language-reference/builtin-types/reference-types.md), array, or [`interface`](../../language-reference/keywords/interface.md) is a *reference type*. At run time, when you declare a variable of a reference type, the variable contains the value [`null`](../../language-reference/keywords/null.md) until you explicitly create an object by using the [`new`](../../language-reference/operators/new-operator.md) operator, or assign it an object that has been created elsewhere by using `new`, as shown in the following example:
 
-:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" id="DeclarationAndAssignment":::
+:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="DeclarationAndAssignment":::
 
 An interface must be initialized together with a class object that implements it. If `MyClass` implements `IMyInterface`, you create an instance of `IMyInterface` as shown in the following example:
 
-:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" id="InterfaceDeclaration":::
+:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="InterfaceDeclaration":::
 
 When the object is created, the memory is allocated on the managed heap, and the variable holds only a reference to the location of the object. Types on the managed heap require overhead both when they're allocated and when they're reclaimed by the automatic memory management functionality of the CLR, which is known as *garbage collection*. However, garbage collection is also highly optimized, and in most scenarios it doesn't create a performance issue. For more information about garbage collection, see [Automatic Memory Management](../../../standard/automatic-memory-management.md).
 
 All arrays are reference types, even if their elements are value types. Arrays implicitly derive from the <xref:System.Array?displayProperty=nameWithType> class, but you declare and use them with the simplified syntax that is provided by C#, as shown in the following example:
 
-:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" id="ArrayDeclaration":::
+:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="ArrayDeclaration":::
 
 Reference types fully support inheritance. When you create a class, you can inherit from any other interface or class that isn't defined as [sealed](../../language-reference/keywords/sealed.md), and other classes can inherit from your class and override your virtual methods. For more information about how to create your own classes, see [Classes, structs, and records](../../programming-guide/classes-and-structs/index.md). For more information about inheritance and virtual methods, see [Inheritance](../../programming-guide/classes-and-structs/inheritance.md).
 
@@ -124,13 +124,13 @@ In C#, literal values receive a type from the compiler. You can specify how a nu
 
 Because literals are typed, and all types derive ultimately from <xref:System.Object?displayProperty=nameWithType>, you can write and compile code such as the following code:
 
-:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" id="ConvertTypes":::
+:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="ConvertTypes":::
 
 ## Generic types
 
 A type can be declared with one or more *type parameters* that serve as a placeholder for the actual type (the *concrete type*) that client code will provide when it creates an instance of the type. Such types are called *generic types*. For example, the .NET type <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> has one type parameter that by convention is given the name `T`. When you create an instance of the type, you specify the type of the objects that the list will contain, for example, `string`:
 
-:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" id="GenericType":::
+:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="GenericType":::
 
 The use of the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to [object](../../language-reference/builtin-types/reference-types.md). Generic collection classes are called *strongly typed collections* because the compiler knows the specific type of the collection's elements and can raise an error at compile time if, for example, you try to add an integer to the `stringList` object in the previous example. For more information, see [Generics](generics.md).
 
@@ -146,11 +146,11 @@ Ordinary value types can't have a value of [`null`](../../language-reference/key
 
 A variable can have different compile-time and run-time types. The *compile-time type* is the declared or inferred type of the variable in the source code. The *run-time type* is the type of the instance referred to by that variable. Often those two types are the same, as in the following example:
 
-:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" id="CompileTimeType":::
+:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="CompileTimeType":::
 
 In other cases, the compile-time type is different, as shown in the following two examples:
 
-:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" id="RuntimeTypes":::
+:::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="RuntimeTypes":::
 
 In both of the preceding examples, the run-time type is a `string`. The compile-time type is `object` in the first line, and `IEnumerable<char>` in the second.
 

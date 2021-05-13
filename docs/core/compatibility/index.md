@@ -1,7 +1,7 @@
 ---
 title: Types of breaking changes
 description: Learn how .NET attempts to maintain compatibility for developers across .NET versions, and what kind of change is considered a breaking change.
-ms.date: 01/28/2021
+ms.date: 05/12/2021
 ms.topic: conceptual
 ---
 # Changes that affect compatibility
@@ -314,3 +314,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 - ❌ **DISALLOWED: Changing the number of times given events are called**
 
 - ❌ **DISALLOWED: Adding the <xref:System.FlagsAttribute> to an enumeration type**
+
+## See also
+
+- [Library design guidelines - breaking changes](../../standard/library-guidance/breaking-changes.md)

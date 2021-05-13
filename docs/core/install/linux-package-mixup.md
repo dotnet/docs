@@ -3,14 +3,14 @@ title: Troubleshoot .NET Package Mix ups on Linux
 description: Learn about how to troubleshoot strange .NET package errors on Linux.
 author: omajid
 ms.date: 05/12/2021
-no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrmaeworkList.xml', 'System.IO.FIleNoteFoundException']
+no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrmaeworkList.xml', 'System.IO.FileNotFoundException']
 ---
 
 # Troubleshoot `fxr`, `libhostfxr.so`, and `FrameworkList.xml` errors
 
 When you try to use .NET 5+ (and .NET Core), commands such as `dotnet new` and `dotnet run` may fail with a message related to something not being found. Some of the error messages may be similar to the following:
 
-- **System.IO.FIleNoteFoundException**
+- **System.IO.FileNotFoundException**
 
   > System.IO.FileNotFoundException: Could not find file '/usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/5.0.0/data/FrameworkList.xml'.
 

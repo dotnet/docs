@@ -1,20 +1,20 @@
 ---
-title: "General Structure of a C# Program - C# Programming Guide"
+title: "General Structure of a C# Program"
 description: Learn about the structure of a C# program by using a skeleton program that contains all the required elements for a program.
-ms.date: 07/20/2015
+ms.date: 05/14/2021
 helpviewer_keywords: 
   - "C# language, program structure"
 ms.assetid: 5ae964a5-0ef0-40fe-88fb-6d1793371d0d
 ---
-# General Structure of a C# Program (C# Programming Guide)
+# General Structure of a C# Program
 
-C# programs can consist of one or more files. Each file can contain zero or more namespaces. A namespace can contain types such as classes, structs, interfaces, enumerations, and delegates, in addition to other namespaces. The following is the skeleton of a C# program that contains all of these elements.
+C# programs consists of one or more files. Each file contains zero or more namespaces. A namespace contains types such as classes, structs, interfaces, enumerations, and delegates, or other namespaces. The following example is the skeleton of a C# program that contains all of these elements.
 
-:::code language="csharp" source="snippets/toplevel-structure/Program.cs":::
+:::code language="csharp" source="snippets/toplevel-structure/Program.cs" interactive="try-dotnet":::
 
-The preceding example uses *top level statements* for the program's entry point. This feature was added in C# 9. Prior to C# 9, the entry point was a static method named `Main`, as shown in the following example:
+The preceding example uses *top-level statements* for the program's entry point. This feature was added in C# 9. Prior to C# 9, the entry point was a static method named `Main`, as shown in the following example:
 
-:::code language="csharp" source="snippets/structure/Program.cs":::
+:::code language="csharp" source="snippets/structure/Program.cs" interactive= "try-dotnet":::
 
 ## Related Sections
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace generics
 {
@@ -28,86 +29,93 @@ namespace generics
         }
     }
     //</Snippet1>
-    //<Snippet2>
-    // type parameter T in angle brackets
-    public class GenericList<T>
+    namespace SecondExample
     {
-        // The nested class is also generic on T.
-        private class Node
+        //<Snippet2>
+        // type parameter T in angle brackets
+        public class GenericList<T>
         {
-            // T used in non-generic constructor.
-            public Node(T t)
+            // The nested class is also generic on T.
+            private class Node
             {
-                next = null;
-                data = t;
+                // T used in non-generic constructor.
+                public Node(T t)
+                {
+                    next = null;
+                    data = t;
+                }
+
+                private Node next;
+                public Node Next
+                {
+                    get { return next; }
+                    set { next = value; }
+                }
+
+                // T as private member data type.
+                private T data;
+
+                // T as return type of property.
+                public T Data
+                {
+                    get { return data; }
+                    set { data = value; }
+                }
             }
 
-            private Node next;
-            public Node Next
+            private Node head;
+
+            // constructor
+            public GenericList()
             {
-                get { return next; }
-                set { next = value; }
+                head = null;
             }
 
-            // T as private member data type.
-            private T data;
-
-            // T as return type of property.
-            public T Data
+            // T as method parameter type:
+            public void AddHead(T t)
             {
-                get { return data; }
-                set { data = value; }
+                Node n = new Node(t);
+                n.Next = head;
+                head = n;
+            }
+
+            public IEnumerator<T> GetEnumerator()
+            {
+                Node current = head;
+
+                while (current != null)
+                {
+                    yield return current.Data;
+                    current = current.Next;
+                }
             }
         }
-
-        private Node head;
-
-        // constructor
-        public GenericList()
-        {
-            head = null;
-        }
-
-        // T as method parameter type:
-        public void AddHead(T t)
-        {
-            Node n = new Node(t);
-            n.Next = head;
-            head = n;
-        }
-
-        public IEnumerator<T> GetEnumerator()
-        {
-            Node current = head;
-
-            while (current != null)
-            {
-                yield return current.Data;
-                current = current.Next;
-            }
-        }
+        //</Snippet2>
     }
-    //</Snippet2>
-    //<Snippet3>
-    class TestGenericList
+    namespace ThirdExample
     {
-        static void Main()
+        using SecondExample;
+        //<Snippet3>
+        class TestGenericList
         {
-            // int is the type argument
-            GenericList<int> list = new GenericList<int>();
-
-            for (int x = 0; x < 10; x++)
+            static void Main()
             {
-                list.AddHead(x);
-            }
+                // int is the type argument
+                GenericList<int> list = new GenericList<int>();
 
-            foreach (int i in list)
-            {
-                System.Console.Write(i + " ");
+                for (int x = 0; x < 10; x++)
+                {
+                    list.AddHead(x);
+                }
+
+                foreach (int i in list)
+                {
+                    System.Console.Write(i + " ");
+                }
+                System.Console.WriteLine("\nDone");
             }
-            System.Console.WriteLine("\nDone");
         }
+        //</Snippet3>
     }
-    //</Snippet3>
 
 }

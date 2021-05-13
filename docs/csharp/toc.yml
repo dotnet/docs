@@ -37,6 +37,19 @@ items:
         href: tour-of-csharp/tutorials/arrays-and-collections.md
 - name: Fundamentals
   items:
+  - name: Program structure
+    items:
+    - name: Overview
+      href: fundamentals/program-structure/index.md
+    - name: Top-level statements
+      href: fundamentals/program-structure/top-level-statements.md
+    - name: Main method
+      href: fundamentals/program-structure/main-command-line.md
+    - name: Tutorials
+      items:
+      - name: "How to display command-line arguments"
+        href: fundamentals/program-structure/tutorials/how-to-display-command-line-arguments.md
+      # Command line processing tutorials
   - name: Type system
     items:
     - name: Overview
@@ -62,19 +75,6 @@ items:
         # TODO: Classes and objects (interfaces and classes)
         # TODO: Generics (methods and classes)
         # TODO: Fundamentals of using lambdas
-  - name: Program structure
-    items:
-    - name: Overview
-      href: fundamentals/program-structure/index.md
-    - name: Top-level statements
-      href: fundamentals/program-structure/top-level-statements.md
-    - name: Main method
-      href: fundamentals/program-structure/main-command-line.md
-    - name: Tutorials
-      items:
-      - name: "How to display command-line arguments"
-        href: fundamentals/program-structure/tutorials/how-to-display-command-line-arguments.md
-      # Command line processing tutorials
   - name: Object Oriented programming
     items:
     - name: Overview

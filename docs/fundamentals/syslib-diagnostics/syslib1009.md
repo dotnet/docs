@@ -12,4 +12,4 @@ A method annotated with the `LoggerMessageAttribute` is not static.
 
 All logging methods must be declared as static.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-diagnostics.md)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics)]

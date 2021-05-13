@@ -150,7 +150,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-In your controllers, you can access the named service clients using the `IAzureClientFactory`:
+In your controllers, you can access the named service clients using the <xref:Microsoft.Extensions.Azure.IAzureClientFactory%601?displayProperty=nameWithType>:
 
 ```csharp
 public class HomeControllers : Controller

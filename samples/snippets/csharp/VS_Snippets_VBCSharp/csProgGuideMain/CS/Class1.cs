@@ -85,15 +85,4 @@
         Arg[2] = [c]
     */
     //</Snippet9>
-
-    //<Snippet17>
-    class TestClass
-    {
-        static void Main(string[] args)
-        {
-            // Display the number of command line arguments.
-            Console.WriteLine(args.Length);
-        }
-    }
-    //</Snippet17>
 }

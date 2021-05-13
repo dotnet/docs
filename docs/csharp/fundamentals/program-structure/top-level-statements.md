@@ -1,12 +1,12 @@
 ---
-title: "Top-level statements - C# Programming Guide"
+title: "Top-level statements"
 description: Learn about top-level statements in C# 9 and later.
-ms.date: 03/08/2021
+ms.date: 05/14/2021
 helpviewer_keywords:
   - "C# language, top-level statements"
   - "C# language, Main method"
 ---
-# Top-level statements (C# Programming Guide)
+# Top-level statements
 
 Starting in C# 9, you don't have to explicitly include a `Main` method in a console application project. Instead, you can use the *top-level statements* feature to minimize the code you have to write. In this case, the compiler generates a class and `Main` method entry point for the application.
 

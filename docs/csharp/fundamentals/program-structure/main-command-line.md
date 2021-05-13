@@ -1,7 +1,7 @@
 ---
-title: "Main() and command-line arguments - C# Programming Guide"
+title: "Main() and command-line arguments"
 description: Learn about Main() and command-line arguments. The 'Main' method is the entry point of an executable program.
-ms.date: 03/08/2021
+ms.date: 05/14/2021
 f1_keywords:
   - "main_CSharpKeyword"
   - "Main"
@@ -11,15 +11,14 @@ helpviewer_keywords:
   - "arguments [C#], command-line"
   - "command line [C#], arguments"
   - "command-line arguments [C#], Main method"
-ms.assetid: 73a17231-cf96-44ea-aa8a-54807c6fb1f4
 ---
-# Main() and command-line arguments (C# Programming Guide)
+# Main() and command-line arguments
 
 The `Main` method is the entry point of a C# application. (Libraries and services do not require a `Main` method as an entry point.) When the application is started, the `Main` method is the first method that is invoked.
 
 There can only be one entry point in a C# program. If you have more than one class that has a `Main` method, you must compile your program with the **StartupObject** compiler option to specify which `Main` method to use as the entry point. For more information, see [**StartupObject** (C# Compiler Options)](../../language-reference/compiler-options/advanced.md#mainentrypoint-or-startupobject).
 
-[!code-csharp[csProgGuideMain#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class1.cs#17)]
+:::code language="csharp" source="snippets/main-command-line/TestClass.cs":::
 
 Starting in C# 9, you can omit the `Main` method, and write C# statements as if they were in the `Main` method, as in the following example:
 
@@ -30,12 +29,16 @@ For information about how to write application code with an implicit entry point
 ## Overview
 
 - The `Main` method is the entry point of an executable program; it is where the program control starts and ends.
+<<<<<<< HEAD
 - `Main` is declared inside a class or struct. `Main` must be [static](../../language-reference/keywords/static.md) and it doesn't need to be [public](../../language-reference/keywords/public.md). (In the earlier example, it receives the default access of [private](../../language-reference/keywords/private.md).) The enclosing class or struct is not required to be static.
+=======
+- `Main` is declared inside a class or struct. `Main` must be [`static`](../../language-reference/keywords/static.md) and it need not be [`public`](../../language-reference/keywords/public.md). (In the earlier example, it receives the default access of [`private`](../../language-reference/keywords/private.md).) The enclosing class or struct is not required to be static.
+>>>>>>> cd631f0b85 (edit program structure)
 - `Main` can either have a `void`, `int`, or, starting with C# 7.1, `Task`, or `Task<int>` return type.
 - If and only if `Main` returns a `Task` or `Task<int>`, the declaration of `Main` may include the [`async`](../../language-reference/keywords/async.md) modifier. Note that this specifically excludes an `async void Main` method.
 - The `Main` method can be declared with or without a `string[]` parameter that contains command-line arguments. When using Visual Studio to create Windows applications, you can add the parameter manually or else use the <xref:System.Environment.GetCommandLineArgs> method to obtain the command-line arguments. Parameters are read as zero-indexed command-line arguments. Unlike C and C++, the name of the program is not treated as the first command-line argument in the `args` array, but it is the first element of the <xref:System.Environment.GetCommandLineArgs> method.
 
-The following is a list of valid `Main` signatures:
+The following list shows valid `Main` signatures:
 
 ```csharp
 public static void Main() { }
@@ -48,7 +51,7 @@ public static async Task Main(string[] args) { }
 public static async Task<int> Main(string[] args) { }
 ```
 
-The preceding examples all use the public accessor modifier. That is typical, but not required.
+The preceding examples all use the `public` accessor modifier. That is typical, but not required.
 
 The addition of `async` and `Task`, `Task<int>` return types simplifies program code when console applications need to start and `await` asynchronous operations in `Main`.
 
@@ -80,7 +83,7 @@ This example uses [.NET Core](../../../core/introduction.md) command-line tools.
 
 Modify the `Main` method in *program.cs* as follows:
 
- [!code-csharp[csProgGuideMain#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#14)]
+:::code language="csharp" source="snippets/main-command-line/MainReturnValTest.cs":::
 
 When a program is executed in Windows, any value returned from the `Main` function is stored in an environment variable. This environment variable can be retrieved using `ERRORLEVEL` from a batch file, or `$LastExitCode` from PowerShell.
 
@@ -128,7 +131,7 @@ private static async Task<int> AsyncConsoleWork()
 
 Now, this can be replaced by:
 
-[!code-csharp[AsyncMain](../../../../samples/snippets/csharp/main-arguments/program.cs#AsyncMain)]
+:::code language="csharp" source="snippets/main-arguments/Program.cs":::
 
 The advantage of the new syntax is that the compiler always generates the correct code.
 
@@ -167,7 +170,7 @@ If the arguments are not used, you can omit `args` from the method signature for
 
 The parameter of the `Main` method is a <xref:System.String> array that represents the command-line arguments. Usually you determine whether arguments exist by testing the `Length` property, for example:
 
-[!code-csharp[csProgGuideMain#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#4)]
+:::code language="csharp" source="snippets/main-command-line/Program.cs" ID="Snippet4":::
 
 > [!TIP]
 > The `args` array cannot be null. So, it's safe to access the `Length` property without null checking.
@@ -200,7 +203,7 @@ To compile and run the application from a command prompt, follow these steps:
 
      [!code-csharp[csProgGuideMain#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class1.cs#16)]
 
-2. From the **Start** screen or **Start** menu, open a Visual Studio **Developer Command Prompt** window, and then navigate to the folder that contains the file that you just created.
+2. From the **Start** screen or **Start** menu, open a Visual Studio **Developer Command Prompt** window, and then navigate to the folder that contains the file that you created.
 
 3. Enter the following command to compile the application.
   

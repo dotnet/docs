@@ -12,4 +12,4 @@ A method annotated with the `LoggerMessageAttribute` attribute has a message tem
 
 Makes sure curly braces are used appropriately in the message template.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-diagnostics.md)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]

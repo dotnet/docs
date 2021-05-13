@@ -12,4 +12,4 @@ The `LoggerMessageAttribute` is limited to the number of parameters supported by
 
 Rather than using `LoggerMessageAttribute`, consider implementing a custom attribute using a struct.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-diagnostics.md)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]

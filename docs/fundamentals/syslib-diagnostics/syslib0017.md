@@ -16,4 +16,4 @@ For more information, see <https://github.com/dotnet/runtime/issues/50529>.
 
 None.
 
-[!INCLUDE [suppress-syslib-warning](../../../../includes/suppress-syslib-warning.md)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]

@@ -12,4 +12,4 @@ When a logging method definition doesn't explicitly include a parameter of type 
 
 Ensure the type containing the logging method includes only a single field of type `ILogger`.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-diagnostics.md)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]

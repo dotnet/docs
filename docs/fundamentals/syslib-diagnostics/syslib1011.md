@@ -12,4 +12,4 @@ A method annotated with the `LoggerMessageAttribute` contains parameters with ge
 
 Logging methods cannot have any generically typed parameters. Use fully resolved types instead.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-diagnostics.md)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]

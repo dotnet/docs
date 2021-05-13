@@ -12,4 +12,4 @@ The first logger argument to a logging method is referenced as a template in the
 
 Remove the template that references the logger argument from the logging message.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-diagnostics.md)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]

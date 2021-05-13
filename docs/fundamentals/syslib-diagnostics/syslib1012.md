@@ -12,4 +12,4 @@ The message string of a `LoggerMessageAttribute` attribute contains a prefix suc
 
 Remove the prefix from the message string.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-diagnostics.md)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]

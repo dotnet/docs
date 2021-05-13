@@ -12,4 +12,4 @@ Multiple methods annotated with the `LoggerMessageAttribute` are using the same 
 
 Review the event ID values used for all logging methods in the assembly and ensure they are unique.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-diagnostics.md)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]

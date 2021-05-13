@@ -169,7 +169,7 @@ The un-named service client is still available in the same way as before. Named 
 
 ## Configure a new retry policy
 
-At some point, you might want to change the default settings for a service client. You may want different retry settings or to use a different service API version, for example. You can set the retry settings globally or on a per service basis. Say you have the following `appsettings.json` file:
+At some point, you might want to change the default settings for a service client. You may want different retry settings or to use a different service API version, for example. You can set the retry settings globally or on a per service basis. Say you have the following _appsettings.json_ file:
 
 ```json
 {

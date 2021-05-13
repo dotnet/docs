@@ -85,7 +85,7 @@ public class MyApiController : ControllerBase
 
 ## Store configuration separately from code
 
-Recall in the [Register client](#register-client) section above, you explicitly specify the `keyVaultUrl` and `storageUrl`. This could cause problems when you run code against different environments during development and production. The ASP.NET Core team suggests [storing such configurations in environment dependent JSON files](/aspnet/core/fundamentals/configuration/?view=aspnetcore-3.1#default-configuration). Thus, you can have an `appsettings.Development.json` file with one set of settings and an `appsettings.Production.json` with another set of configurations. The format of the file is:
+In the [Register client](#register-client) section, you explicitly specify the `keyVaultUrl` and `storageUrl`. This could cause problems when you run code against different environments during development and production. The .NET team suggests [storing such configurations in environment dependent JSON files](/dotnet/core/extensions/configuration-providers#json-configuration-provider). Thus, you can have an _appsettings.Development.json_ file with one set of settings and an _appsettings.Production.json_ with another set of configurations. The format of the file is:
 
 ```json
 {

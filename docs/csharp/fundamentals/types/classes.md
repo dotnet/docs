@@ -1,17 +1,16 @@
 ---
-title: "Classes - C# Programming Guide"
+title: "Classes"
 description: Learn about the class types and how to create them
-ms.date: 08/21/2018
+ms.date: 05/14/2021
 helpviewer_keywords: 
   - "classes [C#]"
   - "C# language, classes"
-ms.assetid: e8848524-7273-429f-8aba-c658d5eff5ad
 ---
-# Classes (C# Programming Guide)
+# Classes
 
 ## Reference types  
 
-A type that is defined as a [class](../../language-reference/keywords/class.md) is a *reference type*. At run time, when you declare a variable of a reference type, the variable contains the value [null](../../language-reference/keywords/null.md) until you explicitly create an instance of the class by using the [new](../../language-reference/operators/new-operator.md) operator, or assign it an object of a compatible type that may have been created elsewhere, as shown in the following example:
+A type that is defined as a [`class`](../../language-reference/keywords/class.md) is a *reference type*. At run time, when you declare a variable of a reference type, the variable contains the value [`null`](../../language-reference/keywords/null.md) until you explicitly create an instance of the class by using the [`new`](../../language-reference/operators/new-operator.md) operator, or assign it an object of a compatible type that may have been created elsewhere, as shown in the following example:
 
 ```csharp
 //Declaring an object of type MyClass.
@@ -25,7 +24,7 @@ When the object is created, enough memory is allocated on the managed heap for t
   
 ## Declaring Classes
 
- Classes are declared by using the [class](../../language-reference/keywords/class.md) keyword followed by a unique identifier, as shown in the following example:
+ Classes are declared by using the `class` keyword followed by a unique identifier, as shown in the following example:
 
  ```csharp
 //[access modifier] - [class] - [identifier]
@@ -35,13 +34,13 @@ When the object is created, enough memory is allocated on the managed heap for t
  }
 ```
 
- The `class` keyword is preceded by the access level. Because [public](../../language-reference/keywords/public.md) is used in this case, anyone can create instances of this class. The name of the class follows the `class` keyword. The name of the class must be a valid C# [identifier name](../../programming-guide/inside-a-program/identifier-names.md). The remainder of the definition is the class body, where the behavior and data are defined. Fields, properties, methods, and events on a class are collectively referred to as *class members*.  
+ The `class` keyword is preceded by the access level. Because [`public`](../../language-reference/keywords/public.md) is used in this case, anyone can create instances of this class. The name of the class follows the `class` keyword. The name of the class must be a valid C# [identifier name](../../programming-guide/inside-a-program/identifier-names.md). The remainder of the definition is the class body, where the behavior and data are defined. Fields, properties, methods, and events on a class are collectively referred to as *class members*.  
   
 ## Creating objects
 
 Although they are sometimes used interchangeably, a class and an object are different things. A class defines a type of object, but it is not an object itself. An object is a concrete entity based on a class, and is sometimes referred to as an instance of a class.  
   
- Objects can be created by using the [new](../../language-reference/operators/new-operator.md) keyword followed by the name of the class that the object will be based on, like this:  
+ Objects can be created by using the `new` keyword followed by the name of the class that the object will be based on, like this:  
 
  ```csharp
  Customer object1 = new Customer();
@@ -64,9 +63,9 @@ Although they are sometimes used interchangeably, a class and an object are diff
   
 ## Class inheritance  
 
-Classes fully support *inheritance*, a fundamental characteristic of object-oriented programming. When you create a class, you can inherit from any other class that is not defined as [sealed](../../language-reference/keywords/sealed.md), and other classes can inherit from your class and override class virtual methods. Furthermore, you can implement one or more interfaces.
+Classes fully support *inheritance*, a fundamental characteristic of object-oriented programming. When you create a class, you can inherit from any other class that is not defined as [`sealed`](../../language-reference/keywords/sealed.md), and other classes can inherit from your class and override class virtual methods. Furthermore, you can implement one or more interfaces.
 
-Inheritance is accomplished by using a *derivation*, which means a class is declared by using a *base class* from which it inherits data and behavior. A base class is specified by appending a colon and the name of the base class following the derived class name, like this:  
+Inheritance is accomplished by using a *derivation*, which means a class is declared by using a *base class* from which it inherits data and behavior. A base class is specified by appending a colon and the name of the base class following the derived class name, like this:
 
  ```csharp
  public class Manager : Employee
@@ -77,19 +76,19 @@ Inheritance is accomplished by using a *derivation*, which means a class is decl
  ```
 
 When a class declares a base class, it inherits all the members of the base class except the constructors. For more information, see [Inheritance](../../programming-guide/classes-and-structs/inheritance.md).
-  
-Unlike C++, a class in C# can only directly inherit from one base class. However, because a base class may itself inherit from another class, a class may indirectly inherit multiple base classes. Furthermore, a class can directly implement one or more interfaces. For more information, see [Interfaces](interfaces.md).  
-  
-A class can be declared [abstract](../../language-reference/keywords/abstract.md). An abstract class contains abstract methods that have a signature definition but no implementation. Abstract classes cannot be instantiated. They can only be used through derived classes that implement the abstract methods. By contrast, a [sealed](../../language-reference/keywords/sealed.md) class does not allow other classes to derive from it. For more information, see [Abstract and Sealed Classes and Class Members](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).  
-  
-Class definitions can be split between different source files. For more information, see [Partial Classes and Methods](../../programming-guide/classes-and-structs/partial-classes-and-methods.md).  
-  
+
+A class in C# can only directly inherit from one base class. However, because a base class may itself inherit from another class, a class may indirectly inherit multiple base classes. Furthermore, a class can directly implement one or more interfaces. For more information, see [Interfaces](interfaces.md).
+
+A class can be declared [`abstract`](../../language-reference/keywords/abstract.md). An abstract class contains abstract methods that have a signature definition but no implementation. Abstract classes cannot be instantiated. They can only be used through derived classes that implement the abstract methods. By contrast, a [sealed](../../language-reference/keywords/sealed.md) class does not allow other classes to derive from it. For more information, see [Abstract and Sealed Classes and Class Members](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).
+
+Class definitions can be split between different source files. For more information, see [Partial Classes and Methods](../../programming-guide/classes-and-structs/partial-classes-and-methods.md).
+
 ## Example
 
-The following example defines a public class that contains an [auto-implemented property](../../programming-guide/classes-and-structs/auto-implemented-properties.md), a method, and a special method called a constructor. For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Methods](../../programming-guide/classes-and-structs/methods.md), and [Constructors](../../programming-guide/classes-and-structs/constructors.md) topics. The instances of the class are then instantiated with the `new` keyword.  
-  
-[!code-csharp[Class Example](~/samples/snippets/csharp/programming-guide/classes-and-structs/class-example.cs)]
-  
+The following example defines a public class that contains an [auto-implemented property](../../programming-guide/classes-and-structs/auto-implemented-properties.md), a method, and a special method called a constructor. For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Methods](../../programming-guide/classes-and-structs/methods.md), and [Constructors](../../programming-guide/classes-and-structs/constructors.md) topics. The instances of the class are then instantiated with the `new` keyword.
+
+:::code language="csharp" interactive="try-dotnet" source="snippets/classes/Program.cs":::
+
 ## C# Language Specification
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]

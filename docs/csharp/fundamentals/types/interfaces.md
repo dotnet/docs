@@ -1,21 +1,20 @@
 ---
-title: "Interfaces - C# Programming Guide"
-description: An interface in C# contains definitions for a group of related functionalities that a non-abstract class or a struct must implement.
-ms.date: 02/20/2020
+title: "Interfaces"
+description: An interface in C# contains definitions for a group of related functionalities that a non-abstract class or a struct must implement. It describes the behavior of a type that implements the interface.
+ms.date: 05/14/2021
 helpviewer_keywords: 
   - "interfaces [C#]"
   - "C# language, interfaces"
-ms.assetid: 2feda177-ce11-432d-81b4-d50f5f35fd37
 ---
-# Interfaces (C# Programming Guide)
+# Interfaces
 
-An interface contains definitions for a group of related functionalities that a non-abstract [class](../../language-reference/keywords/class.md) or a [struct](../../language-reference/builtin-types/struct.md) must implement. An interface may define `static` methods, which must have an implementation. Beginning with C# 8.0, an interface may define a default implementation for members. An interface may not declare instance data such as fields, auto-implemented properties, or property-like events.
+An interface contains definitions for a group of related functionalities that a non-abstract [`class`](../../language-reference/keywords/class.md) or a [`struct`](../../language-reference/builtin-types/struct.md) must implement. An interface may define `static` methods, which must have an implementation. Beginning with C# 8.0, an interface may define a default implementation for members. An interface may not declare instance data such as fields, auto-implemented properties, or property-like events.
 
 By using interfaces, you can, for example, include behavior from multiple sources in a class. That capability is important in C# because the language doesn't support multiple inheritance of classes. In addition, you must use an interface if you want to simulate inheritance for structs, because they can't actually inherit from another struct or class.
 
-You define an interface by using the [interface](../../language-reference/keywords/interface.md) keyword as the following example shows.
+You define an interface by using the [`interface`](../../language-reference/keywords/interface.md) keyword as the following example shows.
 
-:::code language="csharp" source="~/samples/snippets/csharp/objectoriented/interfaces.cs" id="Equatable":::
+:::code language="csharp" source="~/samples/snippets/csharp/objectoriented/interfaces.cs" ID="Equatable":::
 
 The name of an interface must be a valid C# [identifier name](../../programming-guide/inside-a-program/identifier-names.md). By convention, interface names begin with a capital `I`.
 
@@ -33,7 +32,7 @@ When a class or struct implements an interface, the class or struct must provide
 
 The following example shows an implementation of the <xref:System.IEquatable%601> interface. The implementing class, `Car`, must provide an implementation of the <xref:System.IEquatable%601.Equals%2A> method.
 
-:::code language="csharp" source="~/samples/snippets/csharp/objectoriented/interfaces.cs" id="ImplementEquatable":::
+:::code language="csharp" source="~/samples/snippets/csharp/objectoriented/interfaces.cs" ID="ImplementEquatable":::
 
 Properties and indexers of a class can define extra accessors for a property or indexer that's defined in an interface. For example, an interface might declare a property that has a [get](../../language-reference/keywords/get.md) accessor. The class that implements the interface can declare the same property with both a `get` and [set](../../language-reference/keywords/set.md) accessor. However, if the property or indexer uses explicit implementation, the accessors must match. For more information about explicit implementation, see [Explicit Interface Implementation](../../programming-guide/interfaces/explicit-interface-implementation.md) and [Interface Properties](../../programming-guide/classes-and-structs/interface-properties.md).
 

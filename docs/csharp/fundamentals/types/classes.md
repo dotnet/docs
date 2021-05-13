@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "classes [C#]"
   - "C# language, classes"
 ---
-# Classes
+# Introduction to classes
 
 ## Reference types  
 
@@ -52,7 +52,7 @@ Although they are sometimes used interchangeably, a class and an object are diff
  Customer object2;
 ```
 
- We don't recommend creating object references such as this one that don't refer to an object because trying to access an object through such a reference will fail at run time. However, such a reference can be made to refer to an object, either by creating a new object, or by assigning it an existing object, such as this:  
+ We don't recommend creating object references such as the preceding one that don't refer to an object because trying to access an object through such a reference will fail at run time. However, such a reference can be made to refer to an object, either by creating a new object, or by assigning it an existing object, such as this:  
 
  ```csharp
  Customer object3 = new Customer();
@@ -85,7 +85,7 @@ Class definitions can be split between different source files. For more informat
 
 ## Example
 
-The following example defines a public class that contains an [auto-implemented property](../../programming-guide/classes-and-structs/auto-implemented-properties.md), a method, and a special method called a constructor. For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Methods](../../programming-guide/classes-and-structs/methods.md), and [Constructors](../../programming-guide/classes-and-structs/constructors.md) topics. The instances of the class are then instantiated with the `new` keyword.
+The following example defines a public class that contains an [auto-implemented property](../../programming-guide/classes-and-structs/auto-implemented-properties.md), a method, and a special method called a constructor. For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Methods](../../programming-guide/classes-and-structs/methods.md), and [Constructors](../../programming-guide/classes-and-structs/constructors.md) articles. The instances of the class are then instantiated with the `new` keyword.
 
 :::code language="csharp" interactive="try-dotnet" source="snippets/classes/Program.cs":::
 

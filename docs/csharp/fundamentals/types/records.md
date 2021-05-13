@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "records [C#]"
   - "C# language, records"
 ---
-# Records
+# Introduction to records
 
 A [record](../../language-reference/builtin-types/record.md) is a [class](../../language-reference/keywords/class.md) that provides special syntax and behavior for working with data models. For information about classes, see [Classes](classes.md).
 
@@ -41,17 +41,17 @@ The same syntax that [declares](classes.md#declaring-classes) and [instantiates]
 
 ## Examples
 
-The following example defines a public record that uses positional parameters to declare and instantiate a record. It then prints out the type name and property values:
+The following example defines a public record that uses positional parameters to declare and instantiate a record. It then prints the type name and property values:
 
-:::code language="csharp" source="../../language-reference/builtin-types/snippets/shared/RecordType.cs" interactive="try-dotnet" id="InstantiatePositional":::
+:::code language="csharp" source="../../language-reference/builtin-types/snippets/shared/RecordType.cs" interactive="try-dotnet" ID="InstantiatePositional":::
 
 The following example demonstrates value equality in records:
 
-:::code language="csharp" source="../../language-reference/builtin-types/snippets/shared/RecordType.cs" interactive="try-dotnet" id="Equality":::
+:::code language="csharp" source="../../language-reference/builtin-types/snippets/shared/RecordType.cs" interactive="try-dotnet" ID="Equality":::
 
 The following example demonstrates use of a `with` expression to copy an immutable object and change one of the properties:
 
-:::code language="csharp" source="../../language-reference/builtin-types/snippets/shared/RecordType.cs" interactive="try-dotnet" id="WithExpressions":::
+:::code language="csharp" source="../../language-reference/builtin-types/snippets/shared/RecordType.cs" interactive="try-dotnet" ID="WithExpressions":::
 
 For more information, see [Records (C# reference)](../../language-reference/builtin-types/record.md).
   

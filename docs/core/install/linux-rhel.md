@@ -143,9 +143,9 @@ Consult the [Red Hat documentation for .NET](https://access.redhat.com/documenta
 
 This section provides information on common errors you may get while using the package manager to install .NET or .NET Core.
 
-### Errors about missing `fxr`, `libhostfxr.so` or `FrameworkList.xml`
+### Errors related to missing `fxr`, `libhostfxr.so`, or `FrameworkList.xml`
 
-See how to [Troubleshoot Package Mixups](linux-package-mixup.md)
+For more information about solving these problems, see [Troubleshoot `fxr`, `libhostfxr.so`, and `FrameworkList.xml` errors](linux-package-mixup.md).
 
 ## Next steps
 

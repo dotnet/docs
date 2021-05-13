@@ -4,7 +4,7 @@ title: "Data Contract Schema Reference"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "data contracts [WCF], schema reference"
-ms.assetid: 9ebb0ebe-8166-4c93-980a-7c8f1f38f7c0
+ms.topic: reference
 ---
 # Data Contract Schema Reference
 

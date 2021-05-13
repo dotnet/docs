@@ -191,33 +191,33 @@ At some point, you might want to change the default settings for a service clien
 
   You could change the retry policy depending on your needs like so:
   
-  ```csharp
-  public void ConfigureServices(IServiceCollection services)
+```csharp
+public void ConfigureServices(IServiceCollection services)
 {
-  services.AddAzureClients(builder =>
-  {
-    // Establish the global defaults
-    builder.ConfigureDefaults(Configuration.GetSection("AzureDefaults"));
-    builder.UseCredential(new DefaultAzureCredential());
-
-    // A Key Vault Secrets client using the global defaults
-    builder.AddSecretClient(Configuration.GetSection("KeyVault"));
-
-    // A Storage client with a custom retry policy
-    builder.AddBlobServiceClient(Configuration.GetSection("Storage"))
-      .ConfigureOptions(options => options.Retry.MaxRetries = 10);
-
-    // A named storage client with a different custom retry policy
-    builder.AddBlobServiceClient(Configuration.GetSection("CustomStorage"))
-      .WithName("CustomStorage")
-      .ConfigureOptions(options => {
-        options.Retry.Mode = Azure.Core.RetryMode.Exponential;
-        options.Retry.MaxRetries = 5;
-        options.Retry.MaxDelay = TimeSpan.FromSections(120);
-      });
-  });
+    services.AddAzureClients(builder =>
+    {
+        // Establish the global defaults
+        builder.ConfigureDefaults(Configuration.GetSection("AzureDefaults"));
+        builder.UseCredential(new DefaultAzureCredential());
+    
+        // A Key Vault Secrets client using the global defaults
+        builder.AddSecretClient(Configuration.GetSection("KeyVault"));
+    
+        // A Storage client with a custom retry policy
+        builder.AddBlobServiceClient(Configuration.GetSection("Storage"))
+            .ConfigureOptions(options => options.Retry.MaxRetries = 10);
+    
+        // A named storage client with a different custom retry policy
+        builder.AddBlobServiceClient(Configuration.GetSection("CustomStorage"))
+            .WithName("CustomStorage")
+            .ConfigureOptions(options =>
+            {
+                options.Retry.Mode = Azure.Core.RetryMode.Exponential;
+                options.Retry.MaxRetries = 5;
+                options.Retry.MaxDelay = TimeSpan.FromSections(120);
+            });
+    });
 }
-```
 
 You can also place policy overrides in the `appsettings.json` file:
 

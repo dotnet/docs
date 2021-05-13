@@ -6,7 +6,7 @@ ms.date: 05/12/2021
 no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrmaeworkList.xml', 'System.IO.FileNotFoundException']
 ---
 
-# Troubleshoot `fxr`, `libhostfxr.so`, and `FrameworkList.xml` errors
+# Troubleshoot _fxr_, _libhostfxr.so_, and _FrameworkList.xml_ errors
 
 When you try to use .NET 5+ (and .NET Core), commands such as `dotnet new` and `dotnet run` may fail with a message related to something not being found. Some of the error messages may be similar to the following:
 

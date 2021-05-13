@@ -56,7 +56,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
 
 ## Reference
 
- [.NET Framework Class Library](../../api/index.md?view=netframework-4.7)
+ [.NET Framework Class Library](../../api/index.md?view=netframework-4.8&preserve-view=true)
  Supplies syntax, code examples, and usage information for each class that is contained in the .NET Framework namespaces.
 
 ## Related Sections

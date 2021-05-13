@@ -35,7 +35,7 @@ namespace CustomConverterUnixEpochDateNoZone
     sealed class UnixEpochDateTimeConverter : JsonConverter<DateTime>
     {
         static readonly DateTime s_epoch = new DateTime(1970, 1, 1, 0, 0, 0);
-        static readonly Regex s_regex = new Regex("^/Date\\(([^+-]+)\\)/$", RegexOptions.CultureInvariant);
+        static readonly Regex s_regex = new Regex("^/Date\\(([+-]*\\d+)\\)/$", RegexOptions.CultureInvariant);
 
         public override DateTime Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {

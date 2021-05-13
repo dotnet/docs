@@ -2,7 +2,7 @@
 title: "Client Configuration"
 description: Learn how to use WCF client configuration to specify the address, binding, behavior, and contract for an endpoint, which is used to connect to a service.
 ms.date: "03/30/2017"
-ms.assetid: 5da5bd3b-65d9-43b7-91b9-cc9e989b1350
+ms.topic: how-to
 ---
 # Client Configuration
 

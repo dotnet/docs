@@ -4,7 +4,7 @@ title: "Specifying and Handling Faults in Contracts and Services"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "handling faults [WCF]"
-ms.assetid: a9696563-d404-4905-942d-1e0834c26dea
+ms.topic: how-to
 ---
 # Specifying and Handling Faults in Contracts and Services
 

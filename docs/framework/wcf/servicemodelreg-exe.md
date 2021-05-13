@@ -2,7 +2,7 @@
 title: "ServiceModel Registration Tool (ServiceModelReg.exe)"
 description: Use this command-line tool to manage the registration of WCF and WF components on a single machine if you experience problems with service activation.
 ms.date: "03/30/2017"
-ms.assetid: 396ec5ae-e34f-4c64-a164-fcf50e86b6ac
+ms.topic: reference
 ---
 # ServiceModel Registration Tool (ServiceModelReg.exe)
 

@@ -108,7 +108,7 @@ In the [Register client](#register-client) section, you explicitly specify the `
 }
 ```
 
-You can add any options from the [ClientOptions](https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/ClientOptions.cs) into the `AzureDefaults` section. One of the options is the retry policy. See the section [Configure a new try policy](#configure-a-new-retry-policy).
+You can add any options from the <xref:Azure.Core.ClientOptions> into the `AzureDefaults` section. One of the options is the retry policy. For more information, see [Configure a new try policy](#configure-a-new-retry-policy).
 
 Since the `Configuration` object is injected from the host and stored inside the `Startup` constructor, you can do the following:
 

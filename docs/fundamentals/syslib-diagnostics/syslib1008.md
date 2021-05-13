@@ -14,4 +14,4 @@ that implements `ILogger`.
 Ensure that a parameter of all logging methods is of type `ILogger` or of a type that
 implements `ILogger`.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]

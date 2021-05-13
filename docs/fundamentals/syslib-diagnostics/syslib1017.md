@@ -12,4 +12,4 @@ The `LoggerMessageAttribute` attribute was applied to a method without a `LogLev
 
 Either specify a `LogLevel` value in the `LoggerMessage` attribute, or make one of the arguments of the logging method a `LogLevel` value.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]

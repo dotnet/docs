@@ -12,4 +12,4 @@ The code generator was unable to find a necessary reference to a well-known type
 
 This error is highly unlikely to occur. If it does occur, you can consider adding a `<PackageReference>` to your project file to include the required type definition.
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]

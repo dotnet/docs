@@ -3,7 +3,7 @@ title: Troubleshoot .NET Package Mix ups on Linux
 description: Learn about how to troubleshoot strange .NET package errors on Linux.
 author: omajid
 ms.date: 05/12/2021
-no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrmaeworkList.xml', 'System.IO.FIleNoteFoundException', 'mdatp', 'powershell', 'mssql']
+no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrmaeworkList.xml', 'System.IO.FIleNoteFoundException']
 ---
 
 # Troubleshoot `fxr`, `libhostfxr.so`, and `FrameworkList.xml` errors
@@ -51,7 +51,7 @@ If your distribution provides .NET packages, it's recommended that you use that 
 
 01. **I only use .NET and no other packages from the Microsoft repository, and my distribution provides .NET packages.**
 
-    If you only use the Microsoft repository for .NET packages and not for any other Microsoft package such as **mdatp**, **powershell**, or **mssql**, then:
+    If you only use the Microsoft repository for .NET packages and not for any other Microsoft package such as `mdatp`, `powershell`, or `mssql`, then:
 
     01. Remove the Microsoft repository
     01. Remove the .NET related packages from your OS
@@ -67,7 +67,7 @@ If your distribution provides .NET packages, it's recommended that you use that 
 
 02. **I want to use the distribution provided .NET packages, but I also use the Microsoft repository for other packages.**
 
-    If you use the Microsoft repository for Microsoft packages such as **mdatp**, **powershell**, or **mssql**, but you don't want to use the repository for .NET, then:
+    If you use the Microsoft repository for Microsoft packages such as `mdatp`, `powershell`, or `mssql`, but you don't want to use the repository for .NET, then:
 
     01. Configure the Microsoft repository to exclude any .NET package
     01. Remove the .NET related packages from your OS

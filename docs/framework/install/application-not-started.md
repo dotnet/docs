@@ -45,7 +45,7 @@ To address this issue so that you can run your application, do the following:
    |Windows Vista SP2|[.NET Framework 4.6](https://dotnet.microsoft.com/download/dotnet-framework/net46)|
 
    > [!NOTE]
-   > .NET Framework 4.8 is preinstalled on Windows 10 May 2019 Update.
+   > .NET Framework 4.8 is preinstalled on Windows 10 May 2019 Update and later versions.
 
 1. Attempt to launch the application.
 

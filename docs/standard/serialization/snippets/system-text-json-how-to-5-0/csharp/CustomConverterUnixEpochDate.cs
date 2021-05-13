@@ -35,7 +35,7 @@ namespace CustomConverterUnixEpochDate
     sealed class UnixEpochDateTimeOffsetConverter : JsonConverter<DateTimeOffset>
     {
         static readonly DateTimeOffset s_epoch = new DateTimeOffset(1970, 1, 1, 0, 0, 0, TimeSpan.Zero);
-        static readonly Regex s_regex = new Regex("^/Date\\(([^+-]+)([+-])(\\d{2})(\\d{2})\\)/$", RegexOptions.CultureInvariant);
+        static readonly Regex s_regex = new Regex("^/Date\\(([+-]*\\d+)([+-])(\\d{2})(\\d{2})\\)/$", RegexOptions.CultureInvariant);
 
         public override DateTimeOffset Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {

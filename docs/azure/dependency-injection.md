@@ -76,7 +76,7 @@ public class MyApiController : ControllerBase
     var results = new List<string>();
     await foreach (BlobItem blob in containerClient.GetBlobsAsync()) 
     {
-      results.Add(blob.Name);
+        results.Add(blob.Name);
     }
     return results.ToArray();
   }

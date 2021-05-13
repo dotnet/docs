@@ -219,7 +219,7 @@ public void ConfigureServices(IServiceCollection services)
     });
 }
 
-You can also place policy overrides in the `appsettings.json` file:
+You can also place policy overrides in the _appsettings.json_ file:
 
 ```json
 {

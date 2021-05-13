@@ -191,7 +191,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-You'll find a complete list of base classes in the [Microsoft.AspNetCore.Mvc.Formatters](/dotnet/api/microsoft.aspnetcore.mvc.formatters) namespace.
+You'll find a complete list of base classes in the <xref:Microsoft.AspNetCore.Mvc.Formatters?displayProperty=fullName> namespace.
 
 The steps to migrate from a Web API formatter to an ASP.NET Core MVC formatter are:
 

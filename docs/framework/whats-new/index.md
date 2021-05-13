@@ -1745,7 +1745,7 @@ With Ngen PDBs, NGen can create a PDB that contains the IL-to-native mapping wit
 
 - **.NET Native**
 
-  Windows apps for Windows 10 that target .NET Core and are written in C# or Visual Basic can take advantage of a new technology that compiles apps to native code rather than IL. They produce apps characterized by faster startup and execution times. For more information, see [Compiling Apps with .NET Native](/windows/uwp/dotnet-native/). For an overview of .NET Native that examines how it differs from both JIT compilation and NGEN and what that means for your code, see [.NET Native and Compilation](/windows/uwp/dotnet-native/net-native-and-compilation).
+Universal Windows Platform (UWP) apps that are written in C# or Visual Basic can take advantage of a new technology that compiles apps to native code rather than IL. This technology produces apps that have faster startup and execution times. For more information, see [Compiling Apps with .NET Native](/windows/uwp/dotnet-native/). For an overview of .NET Native that examines how it differs from both JIT compilation and NGEN and what that means for your code, see [.NET Native and Compilation](/windows/uwp/dotnet-native/net-native-and-compilation).
 
   Your apps are compiled to native code by default when you compile them with Visual Studio 2015 or later. For more information, see [Getting Started with .NET Native](/windows/uwp/dotnet-native/getting-started-with-net-native).
 

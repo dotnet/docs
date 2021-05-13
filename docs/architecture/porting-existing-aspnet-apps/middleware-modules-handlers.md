@@ -57,7 +57,7 @@ public class MyActionFilterAttribute : ActionFilterAttribute
 }
 ```
 
-If you have components or services that require access to HttpContext, rather than using a static call like `HttpContext.Current` you should instead use constructor dependency injection and the [IHttpContextAccessor](/dotnet/api/microsoft.aspnetcore.http.ihttpcontextaccessor) interface:
+If you have components or services that require access to HttpContext, rather than using a static call like `HttpContext.Current` you should instead use constructor dependency injection and the <xref:Microsoft.AspNetCore.Http.IHttpContextAccessor> interface:
 
 ```csharp
 public class MyService

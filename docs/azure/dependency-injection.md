@@ -141,12 +141,12 @@ Say you have two storage accounts – one for private information and one for pu
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-  services.AddAzureClients(builder =>
-  {
-    builder.AddBlobServiceClient(Configuration.GetSection("PublicStorage"));
-    builder.AddBlobServiceClient(Configuration.GetSection("PrivateStorage"))
-      .WithName("PrivateStorage");
-  });
+    services.AddAzureClients(builder =>
+    {
+        builder.AddBlobServiceClient(Configuration.GetSection("PublicStorage"));
+        builder.AddBlobServiceClient(Configuration.GetSection("PrivateStorage"))
+            .WithName("PrivateStorage");
+    });
 }
 ```
 

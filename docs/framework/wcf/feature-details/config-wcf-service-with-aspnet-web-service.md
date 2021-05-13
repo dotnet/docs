@@ -6,7 +6,6 @@ ms.topic: how-to
 dev_langs: 
   - "csharp"
   - "vb"
-ms.topic: how-to
 ---
 # How to: Configure WCF Service to Interoperate with ASP.NET Web Service Clients
 

@@ -61,18 +61,18 @@ With the clients registered in `Startup`, you can now use them:
 [Route("[controller]")]
 public class MyApiController : ControllerBase
 {
-  private readonly BlobServiceClient blobServiceClient;
+  private readonly BlobServiceClient _blobServiceClient;
 
   public MyApiController(BlobServiceClient blobServiceClient)
   {
-    this.blobServiceClient = blobServiceClient;
+    _blobServiceClient = blobServiceClient;
   }
 
   /// Get a list of all the blobs in the demo container
   [HttpGet]
   public async Task<IEnumerable<string>> Get()
   {
-    var containerClient = this.blobServiceClient.GetBlobContainerClient("demo");
+    var containerClient = _blobServiceClient.GetBlobContainerClient("demo");
     var results = new List<string>();
     await foreach (BlobItem blob in containerClient.GetBlobsAsync()) 
     {
@@ -155,12 +155,12 @@ In your controllers, you can access the named service clients using the `IAzureC
 ```csharp
 public class HomeControllers : Controller
 {
-  private BlobServiceClient publicStorage, privateStorage;
+  private BlobServiceClient _publicStorage, _privateStorage;
 
   public HomeController(BlobServiceClient defaultClient, IAzureClientFactory<BlobServiceClient> clientFactory)
   {
-    this.publicStorage = defaultClient;
-    this.privateStorage = clientFactory.GetClient("PrivateStorage");
+    _publicStorage = defaultClient;
+    _privateStorage = clientFactory.GetClient("PrivateStorage");
   }
 }
 ```
@@ -189,7 +189,7 @@ At some point, you might want to change the default settings for a service clien
   }
   ```
 
-  You could change the retry policy depending on your needs like so:
+You could change the retry policy depending on your needs like so:
   
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -218,6 +218,7 @@ public void ConfigureServices(IServiceCollection services)
             });
     });
 }
+```
 
 You can also place policy overrides in the _appsettings.json_ file:
 
@@ -231,3 +232,8 @@ You can also place policy overrides in the _appsettings.json_ file:
   }
 }
 ```
+
+## See also
+
+- [Dependency injection in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-3.0)
+- [Configuration in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-3.0)

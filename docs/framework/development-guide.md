@@ -39,7 +39,6 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Configuring .NET Framework Apps](configure-apps/index.md)
  Explains how you can use configuration files to change settings without having to recompile your .NET Framework apps.
 
-
  [Security](../standard/security/index.md)
  Provides information about the classes and services in the .NET Framework that facilitate secure app development.
 

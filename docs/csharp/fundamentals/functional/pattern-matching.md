@@ -24,7 +24,7 @@ The preceding example used a [*constant pattern*](../../language-reference/opera
 
 ## Type tests
 
-Another common use for pattern matching is to test a variable to see if it matches a given type. For example, the following code tests if a variable is non-null and implements the <xref:System.Collections.Generic.IList%601?displayProperty=nameWithType> interface. If it does, it calls the <xref:System.Collections.IList.Count?displayProperty=nameWithType> method on that list. The declaration pattern doesn't match a `null` value, regardless of the compile-time type of the variable. The code below guards against `null`, in addition to guarding against a type that doesn't implement `IList`.
+Another common use for pattern matching is to test a variable to see if it matches a given type. For example, the following code tests if a variable is non-null and implements the <xref:System.Collections.Generic.ICollection%601?displayProperty=nameWithType> interface. If it does, it uses the <xref:System.Collections.Generic.ICollection%601.Count?displayProperty=nameWithType> property on that list. The declaration pattern doesn't match a `null` value, regardless of the compile-time type of the variable. The code below guards against `null`, in addition to guarding against a type that doesn't implement `IList`.
 
 :::code language="csharp" source="snippets/patterns/Program.cs" ID="MidPoint":::
 

@@ -15,12 +15,12 @@ For a complete definition of valid identifiers, see the [Identifiers topic in th
 
 ## Naming conventions
 
-In addition to the rules, there are a number of identifier [naming conventions](../../../standard/design-guidelines/naming-guidelines.md) used throughout the .NET APIs. By convention, C# programs use `PascalCase` for type names, namespaces, and all public members. In addition, the following conventions are common:
+In addition to the rules, there are many identifier [naming conventions](../../../standard/design-guidelines/naming-guidelines.md) used throughout the .NET APIs. By convention, C# programs use `PascalCase` for type names, namespaces, and all public members. In addition, the following conventions are common:
 
 - Interface names start with a capital `I`.
 - Attribute types end with the word `Attribute`.
 - Enum types use a singular noun for non-flags, and a plural noun for flags.
-- Identifiers should not contain two consecutive `_` characters. Those names are reserved for compiler generated identifiers.
+- Identifiers shouldn't contain two consecutive `_` characters. Those names are reserved for compiler-generated identifiers.
 
 ## C# Language Specification
 

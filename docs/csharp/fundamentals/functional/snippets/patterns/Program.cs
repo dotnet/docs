@@ -17,7 +17,7 @@ namespace patterns
         // <MidPoint>
         public static T MidPoint<T>(IEnumerable<T> sequence)
         {
-            if (sequence is IList<T> list)
+            if (sequence is ICollection<T> list)
             {
                 return list[list.Count / 2];
             }

@@ -1,5 +1,5 @@
 ---
-title: "C# Coding Conventions - C# Programming Guide"
+title: "C# Coding Conventions"
 description: Learn about coding conventions in C#. Coding conventions create a consistent look to the code and facilitate copying, changing, and maintaining the code.
 ms.date: 05/14/2021
 helpviewer_keywords:
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "C# language, coding conventions"
 ---
 
-# C# Coding Conventions (C# Programming Guide)
+# C# Coding Conventions
 
 Coding conventions serve the following purposes:
 
@@ -145,13 +145,9 @@ Good layout uses formatting to emphasize the structure of your code and to make 
 - Use the default Code Editor settings (smart indenting, four-character indents, tabs saved as spaces). For more information, see [Options, Text Editor, C#, Formatting](/visualstudio/ide/reference/options-text-editor-csharp-formatting).
 
 - Write only one statement per line.
-
 - Write only one declaration per line.
-
 - If continuation lines are not indented automatically, indent them one tab stop (four spaces).
-
 - Add at least one blank line between method definitions and property definitions.
-
 - Use parentheses to make clauses in an expression apparent, as shown in the following code.
 
   :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet2":::
@@ -159,11 +155,8 @@ Good layout uses formatting to emphasize the structure of your code and to make 
 ## Commenting conventions
 
 - Place the comment on a separate line, not at the end of a line of code.
-
 - Begin comment text with an uppercase letter.
-
 - End comment text with a period.
-
 - Insert one space between the comment delimiter (//) and the comment text, as shown in the following example.
 
   :::code language="csharp" source="../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs" id="Snippet3":::

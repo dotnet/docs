@@ -305,7 +305,7 @@ Example work done
 
 - Events are stored in an in-memory list until they can be transmitted which makes this mechanism only suitable for
 recording a modest number of events. For a large or unbounded volume of events using a logging API focused on this task
-such as [ILogger](https://docs.microsoft.com/aspnet/core/fundamentals/logging/) is a better choice. ILogger also ensures
+such as [ILogger](/aspnet/core/fundamentals/logging/) is a better choice. ILogger also ensures
 that the logging information will be available regardless whether the app developer opts to use distributed tracing.
 ILogger supports automatically capturing the active Activity IDs so messages logged via that API can still be correlated
 with the distributed trace.

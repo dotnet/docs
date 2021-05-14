@@ -48,7 +48,7 @@ class ExampleConjunctiveDisposableusing : IDisposable, IAsyncDisposable
         }
         else
         {
-            _disposableResource.Dispose();
+            _disposableResource?.Dispose();
         }
 
         _asyncDisposableResource = null;

@@ -196,15 +196,15 @@ for more information on configuring OpenTelemetry.
 ## Collect traces using Application Insights
 
 Distributed tracing telemetry is automatically captured after configuring the Application Insights SDK
-([ASP.NET](https://docs.microsoft.com/azure/azure-monitor/app/asp-net), [ASP.NET Core](https://docs.microsoft.com/azure/azure-monitor/app/asp-net-core))
-or by enabling [code-less instrumentation](https://docs.microsoft.com/azure/azure-monitor/app/codeless-overview).
+([ASP.NET](/azure/azure-monitor/app/asp-net), [ASP.NET Core](/azure/azure-monitor/app/asp-net-core))
+or by enabling [code-less instrumentation](/azure/azure-monitor/app/codeless-overview).
 
-See the [Application Insights distributed tracing documentation](https://docs.microsoft.com/azure/azure-monitor/app/distributed-tracing) for more
+See the [Application Insights distributed tracing documentation](/azure/azure-monitor/app/distributed-tracing) for more
 information.
 
 > [!NOTE]
 > Currently Application Insights only supports collecting specific well-known Activity instrumentation and will ignore new user added Activities. Application
-> Insights offers [TrackDependency](https://docs.microsoft.com/azure/azure-monitor/app/api-custom-events-metrics#trackdependency) as a vendor
+> Insights offers [TrackDependency](/azure/azure-monitor/app/api-custom-events-metrics#trackdependency) as a vendor
 > specific API for adding custom distributed tracing information.
 
 ## Collect traces using custom logic

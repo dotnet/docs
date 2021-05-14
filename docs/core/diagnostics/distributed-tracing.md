@@ -23,7 +23,7 @@ Typically app developers will select a telemetry service that stores this trace 
 then use a corresponding library to transmit the distributed tracing telemetry to their chosen
 service. [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started/README.md)
 is a vendor neutral library that supports several services,
-[Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/distributed-tracing)
+[Application Insights](/azure/azure-monitor/app/distributed-tracing)
 is a full featured service provided by Microsoft, and there are many high quality 3rd party APM vendors
 that offer integrated .NET solutions.
 
@@ -45,4 +45,4 @@ distributed tracing instrumentation to support it.
 
 - [Understand distributed tracing concepts](distributed-tracing-concepts.md)
 - Guides
-  - [Adding custom distributed trace instrumentation](distributed-tracing-instrumentation-walkthroughs.md)
+  - [Adding custom distributed trace instrumentation](distributed-tracing-instrumentation-walkthroughs.md)  

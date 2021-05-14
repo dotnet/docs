@@ -160,7 +160,7 @@ Next, you publish the *mySparkApp* created in the [.NET for Apache Spark - Get S
     ```
 
 > [!Note]
-> For more information, see the [Submit a .NET for Apache Spark job to Databricks guide](https://docs.microsoft.com/dotnet/spark/how-to-guides/databricks-deploy-methods).
+> For more information, see the [Submit a .NET for Apache Spark job to Databricks guide](../how-to-guides/databricks-deploy-methods.md).
 
 ## Upload files
 

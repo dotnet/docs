@@ -1,4 +1,4 @@
-## Suppress the warning
+## Suppress warnings
 
 It's recommended that you use one of the [workarounds](#workarounds) when possible. However, if you cannot change your code, you can suppress warnings through a `#pragma` directive or a `<NoWarn>` project setting. If you must use the obsolete APIs and the `SYSLIB0XXX` diagnostic does not surface as an error, you can suppress the warning in code or in your project file.
 

@@ -48,7 +48,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1031][1031] | [System.Text.Json.SourceGeneration] Duplicate type name.                                                     |
 -->
 
-<!-- Include adds ## Suppress warning (H2 heading) -->
+<!-- Include adds ## Suppress warnings (H2 heading) -->
 [!INCLUDE [suppress-source-generator-diagnostics](includes/suppress-source-generator-diagnostics.md)]
 
 [1001]: syslib1001.md

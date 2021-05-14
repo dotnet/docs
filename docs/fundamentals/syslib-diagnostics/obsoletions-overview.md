@@ -41,7 +41,7 @@ The following table provides an index to the `SYSLIB1XXX` obsoletions in .NET 5+
 | [SYSLIB0019][0019] | The <xref:System.Runtime.InteropServices.RuntimeEnvironment?displayProperty=nameWithType> members <xref:System.Runtime.InteropServices.RuntimeEnvironment.SystemConfigurationFile>, <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr(System.Guid,System.Guid)>, and <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsObject(System.Guid,System.Guid)> are no longer supported and throw <xref:System.PlatformNotSupportedException>. |
 | [SYSLIB0020][0020] | <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues?displayProperty=nameWithType> is obsolete. To ignore null values when serializing, set <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull?displayProperty=nameWithType>. |
 
-<!-- Include adds ## Suppress warning (H2 heading) -->
+<!-- Include adds ## Suppress warnings (H2 heading) -->
 [!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]
 
 [0001]: syslib0001.md

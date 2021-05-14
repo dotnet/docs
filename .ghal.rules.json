@@ -24,7 +24,7 @@
         "type": "query",
         "value": "length(Issue.labels[?name == ':checkered_flag: Release .NET 6']) != `0`",
         "actions": {
-          "projects-add": ["132"]
+          "projects-add": [ "132" ]
         }
       }
     },
@@ -35,7 +35,8 @@
       "processor-meta-custom": {
         "issuetype": {
           "(?i)breaking-change$": {
-            "labels-add": [ "breaking-change", "doc-idea" ]
+            "labels-add": [ "breaking-change", "doc-idea" ],
+            "projects-add": [ "135" ]
           }
         }
       }
@@ -324,7 +325,7 @@
         "type": "query",
         "value": "length(PullRequest.labels[?name == ':checkered_flag: Release .NET 6']) != `0`",
         "actions": {
-          "projects-add": ["132"]
+          "projects-add": [ "132" ]
         }
       }
     }

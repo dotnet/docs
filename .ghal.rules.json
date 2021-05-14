@@ -1,10 +1,10 @@
 {
   "version": 3,
-  "configRevision": 3,
+  "configRevision": 4,
 
   "issue": {
     "labeled": {
-      "processor-conditional": {
+      "processor-conditional-techprodlabels": {
         "type": "query",
         "value": "length(Issue.labels[?contains(name, '/prod') || contains(name, '/tech')]) != `0`",
         "processors": {
@@ -18,6 +18,13 @@
               "labels-add": ":watch: Not Triaged"
             }
           }
+        }
+      },
+      "processor-conditional-release6": {
+        "type": "query",
+        "value": "length(Issue.labels[?name == ':checkered_flag: Release .NET 6']) != `0`",
+        "actions": {
+          "projects-add": ["132"]
         }
       }
     },
@@ -318,6 +325,15 @@
               
             }
           }
+        }
+      }
+    },
+    "labeled": {
+      "processor-conditional-release6": {
+        "type": "query",
+        "value": "length(Issue.labels[?name == ':checkered_flag: Release .NET 6']) != `0`",
+        "actions": {
+          "projects-add": ["132"]
         }
       }
     }

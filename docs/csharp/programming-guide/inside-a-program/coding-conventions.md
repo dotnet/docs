@@ -1,7 +1,7 @@
 ---
 title: "C# Coding Conventions - C# Programming Guide"
 description: Learn about coding conventions in C#. Coding conventions create a consistent look to the code and facilitate copying, changing, and maintaining the code.
-ms.date: 05/05/2021
+ms.date: 05/14/2021
 helpviewer_keywords:
   - "coding conventions, C#"
   - "Visual C#, coding conventions"
@@ -27,7 +27,7 @@ There are several naming conventions to consider when writing C# code.
 
 ### Pascal case
 
-You should use pascal casing ("PascalCasing") when naming a `class`, `record`, or `struct`.
+Use pascal casing ("PascalCasing") when naming a `class`, `record`, or `struct`.
 
 ```csharp
 public class DataService
@@ -57,7 +57,7 @@ public interface IWorkerQueue
 }
 ```
 
-When naming `public` members of types, such as; fields, properties, events, methods, and local functions use pascal casing.
+When naming `public` members of types, such as fields, properties, events, methods, and local functions, use pascal casing.
 
 ```csharp
 public class ExampleEvents
@@ -81,7 +81,7 @@ public class ExampleEvents
 }
 ```
 
-When writing positional-records, use pascal casing for parameters as they're the public properties of the record.
+When writing positional records, use pascal casing for parameters as they're the public properties of the record.
 
 ```csharp
 public record PhysicalAddress(
@@ -91,11 +91,11 @@ public record PhysicalAddress(
     string ZipCode);
 ```
 
-For more information on positional-records, see [Positional syntax for property definition](../../language-reference/builtin-types/record.md#positional-syntax-for-property-definition).
+For more information on positional records, see [Positional syntax for property definition](../../language-reference/builtin-types/record.md#positional-syntax-for-property-definition).
 
 ### Camel case
 
-You should use camel casing ("camelCasing") when naming `private` or `internal` fields, and they should be prefixed with `_`.
+Use camel casing ("camelCasing") when naming `private` or `internal` fields, and prefix them with `_`.
 
 ```csharp
 public class DataService

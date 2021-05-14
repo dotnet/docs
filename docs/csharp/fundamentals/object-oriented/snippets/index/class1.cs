@@ -1,7 +1,6 @@
-﻿// <Snippet1>
-using System;
+﻿using System;
 
-namespace ProgrammingGuide
+namespace Fundamentals
 {
    // Class definition.
    public class CustomClass
@@ -43,4 +42,3 @@ namespace ProgrammingGuide
 }
 // The example displays the following output:
 //      The result is 108.
-// </Snippet1>

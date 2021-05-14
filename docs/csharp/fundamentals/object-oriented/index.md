@@ -1,7 +1,7 @@
 ---
-title: "Classes, structs, and records - C# Programming Guide"
+title: "Classes, structs, and records"
 description: Describes the use of classes, structures (structs), and records in C#.
-ms.date: 04/06/2021
+ms.date: 05/14/2021
 helpviewer_keywords: 
   - "structs [C#], about structs"
   - "records [C#], about records"
@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "objects [C#]"
   - "C# language, classes"
 ---
-# Classes, structs, and records (C# programming guide)
+# Classes, structs, and records
 
 Classes and structs are two of the basic constructs of the common type system in .NET. C# 9 adds records, which are a kind of class. Each is essentially a data structure that encapsulates a set of data and behaviors that belong together as a logical unit. The data and behaviors are the *members* of the class, struct, or record, and they include its methods, properties, events, and so on, as listed later in this article.
 
@@ -20,7 +20,7 @@ A class, struct, or record declaration is like a blueprint that is used to creat
   
 A class or a record is a reference type. When an object of the type is created, the variable to which the object is assigned holds only a reference to that memory. When the object reference is assigned to a new variable, the new variable refers to the original object. Changes made through one variable are reflected in the other variable because they both refer to the same data.
   
-A struct is a value type. When a struct is created, the variable to which the struct is assigned holds the struct's actual data. When the struct is assigned to a new variable, it is copied. The new variable and the original variable therefore contain two separate copies of the same data. Changes made to one copy do not affect the other copy.  
+A struct is a value type. When a struct is created, the variable to which the struct is assigned holds the struct's actual data. When the struct is assigned to a new variable, it's copied. The new variable and the original variable therefore contain two separate copies of the same data. Changes made to one copy don't affect the other copy.  
   
 In general, classes are used to model more complex behavior, or data that is intended to be modified after a class object is created. Structs are best suited for small data structures that contain primarily data that isn't intended to be modified after the struct is created. Record types are for larger data structures that contain primarily data that isn't intended to be modified after the object is created.
   
@@ -28,11 +28,11 @@ In general, classes are used to model more complex behavior, or data that is int
 
  In the following example, `CustomClass` in the `ProgrammingGuide` namespace has three members: an instance constructor, a property named `Number`, and a method named `Multiply`. The `Main` method in the `Program` class creates an instance (object) of `CustomClass`, and the object's method and property are accessed by using dot notation.
   
- :::code language="csharp" source="../../../../samples/snippets/csharp/programming-guide/classes-and-structs/class1.cs" id="Snippet1":::  
+ :::code language="csharp" source="./snippets/index/class1.cs" interactive="try-dotnet":::  
   
 ## Encapsulation  
 
- *Encapsulation* is sometimes referred to as the first pillar or principle of object-oriented programming. According to the principle of encapsulation, a class or struct can specify how accessible each of its members is to code outside of the class or struct. Methods and variables that are not intended to be used from outside of the class or assembly can be hidden to limit the potential for coding errors or malicious exploits. For more information, see [Object-oriented programming](./tutorials/oop.md).
+ *Encapsulation* is sometimes referred to as the first pillar or principle of object-oriented programming. According to the principle of encapsulation, a class or struct can specify how accessible each of its members is to code outside of the class or struct. Methods and variables that aren't intended to be used from outside of the class or assembly can be hidden to limit the potential for coding errors or malicious exploits. For more information, see [Object-oriented programming](./tutorials/oop.md).
 
 ## Members
 
@@ -53,7 +53,7 @@ The following list includes all the various kinds of members that may be declare
   
 ## Accessibility  
 
- Some methods and properties are meant to be called or accessed from code outside a class or struct, known as *client code*. Other methods and properties might be only for use in the class or struct itself. It is important to limit the accessibility of your code so that only the intended client code can reach it. You specify how accessible your types and their members are to client code by using the following access modifiers:
+ Some methods and properties are meant to be called or accessed from code outside a class or struct, known as *client code*. Other methods and properties might be only for use in the class or struct itself. It's important to limit the accessibility of your code so that only the intended client code can reach it. You specify how accessible your types and their members are to client code by using the following access modifiers:
 
 - [public](../../language-reference/keywords/public.md)
 - [protected](../../language-reference/keywords/protected.md)
@@ -76,7 +76,7 @@ Classes, structs, and records can inherit multiple interfaces. To inherit from a
   
 ## Generic Types  
 
- Classes, structs, and records can be defined with one or more type parameters. Client code supplies the type when it creates an instance of the type. For example The <xref:System.Collections.Generic.List%601> class in the <xref:System.Collections.Generic> namespace is defined with one type parameter. Client code creates an instance of a `List<string>` or `List<int>` to specify the type that the list will hold. For more information, see [Generics](../types/generics.md).  
+Classes, structs, and records can be defined with one or more type parameters. Client code supplies the type when it creates an instance of the type. For example,, The <xref:System.Collections.Generic.List%601> class in the <xref:System.Collections.Generic> namespace is defined with one type parameter. Client code creates an instance of a `List<string>` or `List<int>` to specify the type that the list will hold. For more information, see [Generics](../types/generics.md).  
   
 ## Static Types  
 
@@ -88,7 +88,7 @@ A class, struct, or record can be nested within another class, struct, or record
   
 ## Partial Types  
 
-You can define part of a class, struct or method in one code file and another part in a separate code file.
+You can define part of a class, struct, or method in one code file and another part in a separate code file.
   
 ## Object Initializers  
 
@@ -96,7 +96,7 @@ You can instantiate and initialize class or struct objects, and collections of o
   
 ## Anonymous Types  
 
-In situations where it is not convenient or necessary to create a named class, for example when you are populating a list with data structures that you do not have to persist or pass to another method, you use anonymous types.
+In situations where it isn't convenient or necessary to create a named class, for example when you're populating a list with data structures that you don't have to persist or pass to another method, you use anonymous types.
   
 ## Extension Methods  
 
@@ -122,7 +122,7 @@ C# 9 introduces the `record` type, a reference type that you can create instead 
 
 * Built-in formatting for display.
 
-  The `ToString` method prints out the record type name and the names and values of public properties.
+  The `ToString` method prints the record type name and the names and values of public properties.
 
 * Support for inheritance hierarchies.
 

@@ -1,7 +1,7 @@
 ---
-title: "Inheritance - C# Programming Guide"
+title: "Inheritance"
 description: Inheritance in C# enables you to create new classes that reuse, extend, and modify the behavior defined in other classes.
-ms.date: 02/07/2020
+ms.date: 05/14/2021
 helpviewer_keywords: 
   - "abstract methods [C#]"
   - "abstract classes [C#]"
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "C# language, inheritance"
 ms.assetid: 81d64ee4-50f9-4d6c-a8dc-257c348d2eea
 ---
-# Inheritance (C# Programming Guide)
+# Inheritance - derive types to create more specialized behavior
 
 Inheritance, together with encapsulation and polymorphism, is one of the three primary characteristics of object-oriented programming. Inheritance enables you to create new classes that reuse, extend, and modify the behavior defined in other classes. The class whose members are inherited is called the *base class*, and the class that inherits those members is called the *derived class*. A derived class can have only one direct base class. However, inheritance is transitive. If `ClassC` is derived from `ClassB`, and `ClassB` is derived from `ClassA`, `ClassC` inherits the members declared in `ClassB` and `ClassA`.
 
@@ -30,11 +30,11 @@ The following illustration shows a class `WorkItem` that represents an item of w
 
 The following example shows how the class relationships demonstrated in the previous illustration are expressed in C#. The example also shows how `WorkItem` overrides the virtual method <xref:System.Object.ToString%2A?displayProperty=nameWithType>, and how the `ChangeRequest` class inherits the `WorkItem` implementation of the method. The first block defines the classes:
 
-[!code-csharp[DefineClasses](~/samples/snippets/csharp/objectoriented/inheritance.cs#Classes)]
+:::code language="csharp" source="./snippets/inheritance/Inheritance.cs" ID="SnippetClasses":::
 
 This next block shows how to use the base and derived classes:
 
-[!code-csharp[UseClasses](~/samples/snippets/csharp/objectoriented/inheritance.cs#UseClasses)]
+:::code language="csharp" source="./snippets/inheritance/Program.cs" ID="SnippetUseClasses":::
 
 ## Abstract and virtual methods
 

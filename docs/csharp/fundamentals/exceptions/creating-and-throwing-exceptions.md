@@ -1,25 +1,29 @@
 ---
-title: "Creating and Throwing Exceptions - C# Programming Guide"
+title: "Creating and Throwing Exceptions"
 description: Learn about creating and throwing exceptions. Exceptions are used to indicate that an error has occurred while running a program.
-ms.date: 12/09/2020
+ms.date: 05/14/2021
 helpviewer_keywords: 
   - "catching exceptions [C#]"
   - "throwing exceptions [C#]"
   - "exceptions [C#], creating"
   - "exceptions [C#], throwing"
-ms.assetid: 6bbba495-a115-4c6d-90cc-1f4d7b5f39e2
 ---
-# Creating and Throwing Exceptions (C# Programming Guide)
+# Creating and Throwing Exceptions
 
-Exceptions are used to indicate that an error has occurred while running the program. Exception objects that describe an error are created and then *thrown* with the [throw](../../language-reference/keywords/throw.md) keyword. The runtime then searches for the most compatible exception handler.
+Exceptions are used to indicate that an error has occurred while running the program. Exception objects that describe an error are created and then *thrown* with the [`throw`](../../language-reference/keywords/throw.md) keyword. The runtime then searches for the most compatible exception handler.
 
 Programmers should throw exceptions when one or more of the following conditions are true:
 
 - The method can't complete its defined functionality. For example, if a parameter to a method has an invalid value:
+
   :::code language="csharp" source="snippets/exceptions/Program.cs" ID="CantComplete":::
+
 - An inappropriate call to an object is made, based on the object state. One example might be trying to write to a read-only file. In cases where an object state doesn't allow an operation, throw an instance of <xref:System.InvalidOperationException> or an object based on a derivation of this class. The following code is an example of a method that throws an <xref:System.InvalidOperationException> object:
+
   :::code language="csharp" source="snippets/exceptions/ProgramLog.cs" ID="ProgramLog":::
+
 - When an argument to a method causes an exception. In this case, the original exception should be caught and an <xref:System.ArgumentException> instance should be created. The original exception should be passed to the constructor of the <xref:System.ArgumentException> as the <xref:System.Exception.InnerException%2A> parameter:
+
   :::code language="csharp" source="snippets/exceptions/Program.cs" ID="InvalidArg":::
 
 Exceptions contain a property named <xref:System.Exception.StackTrace%2A>. This string contains the name of the methods on the current call stack, together with the file name and line number where the exception was thrown for each method. A <xref:System.Exception.StackTrace%2A> object is created automatically by the common language runtime (CLR) from the point of the `throw` statement, so that exceptions must be thrown from the point where the stack trace should begin.
@@ -41,7 +45,7 @@ The following list identifies practices to avoid when throwing exceptions:
 
 Programs can throw a predefined exception class in the <xref:System> namespace (except where previously noted), or create their own exception classes by deriving from <xref:System.Exception>. The derived classes should define at least four constructors: one parameterless constructor, one that sets the message property, and one that sets both the <xref:System.Exception.Message%2A> and <xref:System.Exception.InnerException%2A> properties. The fourth constructor is used to serialize the exception. New exception classes should be serializable. For example:
 
-:::code language="csharp" source="snippets/exceptions/InvalidDepartmentException.cs" id="DefineExceptionClass":::
+:::code language="csharp" source="snippets/exceptions/InvalidDepartmentException.cs" ID="DefineExceptionClass":::
 
 Add new properties to the exception class when the data they provide is useful to resolving the exception. If new properties are added to the derived exception class, `ToString()` should be overridden to return the added information.
 

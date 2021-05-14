@@ -1,7 +1,7 @@
 ---
 title: "Exception Handling - C# Programming Guide"
 description: Learn about exception handling. See examples of try-catch, try-finally, and try-catch-finally statements.
-ms.date: 12/09/2020
+ms.date: 05/14/2021
 helpviewer_keywords: 
   - "exception handling [C#], about exception handling"
   - "exceptions [C#], handling"
@@ -13,11 +13,11 @@ A [try](../../language-reference/keywords/try-catch.md) block is used by C# prog
 
 The following examples show a `try-catch` statement, a `try-finally` statement, and a `try-catch-finally` statement.
 
-:::code language="csharp" source="snippets/exceptions/Program.cs" id="TryCatchStructure":::
+:::code language="csharp" source="snippets/exceptions/Program.cs" ID="TryCatchStructure":::
 
-:::code language="csharp" source="snippets/exceptions/Program.cs" id="TryFinallyStructure":::
+:::code language="csharp" source="snippets/exceptions/Program.cs" ID="TryFinallyStructure":::
 
-:::code language="csharp" source="snippets/exceptions/Program.cs" id="TryCatchFinallyStructure":::
+:::code language="csharp" source="snippets/exceptions/Program.cs" ID="TryCatchFinallyStructure":::
 
 A `try` block without a `catch` or `finally` block causes a compiler error.
 
@@ -31,11 +31,11 @@ Catch exceptions when the following conditions are true:
 
 - You have a good understanding of why the exception might be thrown, and you can implement a specific recovery, such as prompting the user to enter a new file name when you catch a <xref:System.IO.FileNotFoundException> object.
 - You can create and throw a new, more specific exception.
-  :::code language="csharp" source="snippets/exceptions/Program.cs" id="ThrowMoreSpecificException":::
-- You want to partially handle an exception before passing it on for additional handling. In the following example, a `catch` block is used to add an entry to an error log before rethrowing the exception.
-  :::code language="csharp" source="snippets/exceptions/Program.cs" id="RethrowError":::
+  :::code language="csharp" source="snippets/exceptions/Program.cs" ID="ThrowMoreSpecificException":::
+- You want to partially handle an exception before passing it on for more handling. In the following example, a `catch` block is used to add an entry to an error log before rethrowing the exception.
+  :::code language="csharp" source="snippets/exceptions/Program.cs" ID="RethrowError":::
 
-You can also specify *exception filters* to add a boolean expression to a catch clause. These indicate that a specific catch clause matches only when that condition is true. In the following example, both catch clauses use the same exception class, but an additional condition is checked to create a different error message:
+You can also specify *exception filters* to add a boolean expression to a catch clause. Exception filters indicate that a specific catch clause matches only when that condition is true. In the following example, both catch clauses use the same exception class, but an extra condition is checked to create a different error message:
 
 :::code language="csharp" source="snippets/exceptions/ExceptionFilter.cs" ID="DemonstrateExceptionFilter":::
 
@@ -53,7 +53,7 @@ The `finally` block can be used to release resources such as file streams, datab
 
 In the following example, the `finally` block is used to close a file that is opened in the `try` block. Notice that the state of the file handle is checked before the file is closed. If the `try` block can't open the file, the file handle still has the value `null` and the `finally` block doesn't try to close it. Instead, if the file is opened successfully in the `try` block, the `finally` block closes the open file.
 
-:::code language="csharp" source="snippets/exceptions/Program.cs" id="CleanupIfNotNull":::
+:::code language="csharp" source="snippets/exceptions/Program.cs" ID="CleanupIfNotNull":::
 
 ## C# Language Specification
 

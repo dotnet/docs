@@ -1,7 +1,7 @@
 ---
 title: "Object-Oriented Programming (C#)"
 description: C# provides full support for object-oriented programming including abstraction, encapsulation, inheritance, and polymorphism.
-ms.date: 09/30/2020
+ms.date: 05/14/2021
 ---
 # Object-Oriented programming (C#)
 

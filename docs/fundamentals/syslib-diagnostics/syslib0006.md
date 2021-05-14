@@ -33,5 +33,5 @@ void ProcessPendingWorkItemsNew(CancellationToken cancellationToken)
 
 ## See also
 
-- [Thread.Abort is obsolete](../core-libraries/5.0/thread-abort-obsolete.md)
-- [Cancellation in managed threads](../../../standard/threading/cancellation-in-managed-threads.md)
+- [Thread.Abort is obsolete](../../core/compatibility/core-libraries/5.0/thread-abort-obsolete.md)
+- [Cancellation in managed threads](../../standard/threading/cancellation-in-managed-threads.md)

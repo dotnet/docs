@@ -12,7 +12,7 @@ ms.date: 10/20/2020
 
 ## Workarounds
 
-Consider using WCF or HTTP-based REST services to communicate with objects in other applications or across machines. For more information, see [.NET Framework technologies unavailable on .NET Core](../../porting/net-framework-tech-unavailable.md).
+Consider using WCF or HTTP-based REST services to communicate with objects in other applications or across machines. For more information, see [.NET Framework technologies unavailable on .NET Core](../../core/porting/net-framework-tech-unavailable.md).
 
 [!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]
 

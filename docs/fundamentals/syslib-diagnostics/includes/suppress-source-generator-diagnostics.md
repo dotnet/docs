@@ -21,7 +21,7 @@ To suppress the warnings in a project file:
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
    <TargetFramework>net6.0</TargetFramework>
-   <!-- NoWarn below suppresses SYSLIB1006 project-wide -->
+   <!-- NoWarn below suppresses SYSLIB1002 project-wide -->
    <NoWarn>$(NoWarn);SYSLIB1002</NoWarn>
    <!-- To suppress multiple warnings, you can use multiple NoWarn elements -->
    <NoWarn>$(NoWarn);SYSLIB1002</NoWarn>

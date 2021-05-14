@@ -20,4 +20,4 @@ Use <xref:System.Net.Http.HttpClient> instead.
 
 ## See also
 
-- [WebRequest, WebClient, and ServicePoint are obsolete](../networking/6.0/webrequest-deprecated.md)
+- [WebRequest, WebClient, and ServicePoint are obsolete](../../core/compatibility/networking/6.0/webrequest-deprecated.md)

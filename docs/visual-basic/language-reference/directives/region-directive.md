@@ -27,6 +27,7 @@ Collapses and hides sections of code in Visual Basic files.
 
 |Term|Definition|
 |---|---|
+|`#Region`|Required. Specify the start of a region.|
 |`string_literal`|Required. String (enclosed between double quotes) that acts as the title of a region when it is collapsed. Regions are collapsed by default.|
 |`#End Region`|Required. Terminates the `#Region` block.|
 

@@ -265,15 +265,6 @@
               "(?i).*docs\/framework\/windows-workflow-foundation.*": {
                 "labels-add": [ "dotnet-framework/prod", "dotnet-wf/tech" ]
               },
-              "(?i).*docs\/framework\/winforms.*": {
-                "labels-add": [ "dotnet-framework/prod", "dotnet-winforms/tech" ]
-              },
-              "(?i).*docs\/framework\/wpf.*": {
-                "labels-add": [ "dotnet-framework/prod", "dotnet-wpf/tech" ]
-              },
-              "(?i).*docs\/framework\/xaml-services.*": {
-                "labels-add": [ "dotnet-framework/prod", "dotnet-wpf/tech" ]
-              },
               
               "(?i).*docs\/fsharp.*": {
                 "labels-add": "dotnet-fsharp/prod"
@@ -331,7 +322,7 @@
     "labeled": {
       "processor-conditional-release6": {
         "type": "query",
-        "value": "length(Issue.labels[?name == ':checkered_flag: Release .NET 6']) != `0`",
+        "value": "length(PullRequest.labels[?name == ':checkered_flag: Release .NET 6']) != `0`",
         "actions": {
           "projects-add": ["132"]
         }

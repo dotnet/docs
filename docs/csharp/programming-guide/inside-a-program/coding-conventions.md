@@ -19,7 +19,8 @@ Coding conventions serve the following purposes:
 > - They facilitate copying, changing, and maintaining the code.
 > - They demonstrate C# best practices.
 
-The guidelines in this article are used by Microsoft to develop samples and documentation.
+> [!IMPORTANT]
+> The guidelines in this article are used by Microsoft to develop samples and documentation. They were adopted from the [.NET Runtime, C# Coding Style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md) guidelines. You can use them, or adapt them to your needs. The primary objectives are consistency and readability within your project, team, organization, or company source code.
 
 ## Naming conventions
 

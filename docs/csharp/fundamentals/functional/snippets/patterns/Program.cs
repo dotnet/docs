@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace patterns
 {
@@ -10,21 +11,27 @@ namespace patterns
 
             NullReferenceCheck();
 
-            TypeCheckDisposable();
+            MidPointCheck();
         }
 
-        private static void TypeCheckDisposable()
+        // <MidPoint>
+        public static T MidPoint<T>(IEnumerable<T> sequence)
         {
-            object? heldReference = default;
-
-            // <TypeCheckDisposable>
-            if (heldReference is IDisposable disposable)
+            if (sequence is IList<T> list)
             {
-                disposable.Dispose();
+                return list[list.Count / 2];
             }
-            heldReference = null;
-            // </TypeCheckDisposable>
+            else if (sequence is null)
+            {
+                throw new ArgumentNullException(nameof(sequence), "Sequence can't be null.");
+            } else
+            {
+                int halfLength = sequence.Count() / 2 - 1;
+                if (halfLength < 0) halfLength = 0;
+                return sequence.Skip(halfLength).First();
+            }
         }
+        // </MidPoint>
 
         private static void NullReferenceCheck()
         {

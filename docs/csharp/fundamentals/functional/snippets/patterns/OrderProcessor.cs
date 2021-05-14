@@ -13,14 +13,14 @@ namespace patterns
     class OrderProcessor
     {
         // <PropertyPattern>
-        public double CalculateDiscount(Order order) =>
+        public decimal CalculateDiscount(Order order) =>
             order switch
             {
-                (Items: > 10, Cost: > 1000.00m) => 0.10,
-                (Items: > 5, Cost: > 500.00m) => 0.05,
-                Order { Cost: > 250.00m } => 0.02,
+                (Items: > 10, Cost: > 1000.00m) => 0.10m,
+                (Items: > 5, Cost: > 500.00m) => 0.05m,
+                Order { Cost: > 250.00m } => 0.02m,
                 null => throw new ArgumentNullException(nameof(order), "Can't calculate discount on null order"),
-                var o => 0,
+                var order => 0m,
             };
         // </PropertyPattern>
     }
@@ -28,14 +28,14 @@ namespace patterns
     class OrderProcessing
     {
         // <DeconstructPattern>
-        public double CalculateDiscount(Order order) =>
+        public decimal CalculateDiscount(Order order) =>
             order switch
             {
-                ( > 10,  > 1000.00m) => 0.10,
-                ( > 5, > 50.00m) => 0.05,
-                Order { Cost: > 250.00m } => 0.02,
+                ( > 10,  > 1000.00m) => 0.10m,
+                ( > 5, > 50.00m) => 0.05m,
+                Order { Cost: > 250.00m } => 0.02m,
                 null => throw new ArgumentNullException(nameof(order), "Can't calculate discount on null order"),
-                var o => 0,
+                var order => 0m,
             };
         // </DeconstructPattern>
 

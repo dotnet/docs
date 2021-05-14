@@ -1,8 +1,7 @@
 ---
 title: Pattern matching overview - C# guide
 description: Learn about pattern matching expressions in C#
-ms.date: 04/26/2021
-ms.technology: csharp-fundamentals
+ms.date: 05/14/2021
 ---
 
 # Pattern matching overview
@@ -25,9 +24,9 @@ The preceding example used a [*constant pattern*](../../language-reference/opera
 
 ## Type tests
 
-Another common use for pattern matching is to test a variable to see if it matches a given type. For example, the following code tests if a variable is non-null and implements the <xref:System.IDisposable?displayProperty=nameWithType> interface. If it does, it calls the <xref:System.IDisposable.Dispose> method on that object. The declaration pattern doesn't match a `null` value, regardless of the compile-time type of the variable. The code below guards against `null`, in addition to guarding against a type that doesn't implement `IDisposable`.
+Another common use for pattern matching is to test a variable to see if it matches a given type. For example, the following code tests if a variable is non-null and implements the <xref:System.Collections.Generic.IList%601?displayProperty=nameWithType> interface. If it does, it calls the <xref:System.Collections.IList.Count?displayProperty=nameWithType> method on that list. The declaration pattern doesn't match a `null` value, regardless of the compile-time type of the variable. The code below guards against `null`, in addition to guarding against a type that doesn't implement `IList`.
 
-:::code language="csharp" source="snippets/patterns/Program.cs" ID="TypeCheckDisposable":::
+:::code language="csharp" source="snippets/patterns/Program.cs" ID="MidPoint":::
 
 The same tests can be applied in a `switch` expression to test a variable against multiple different types. You can use that information to create better algorithms based on the specific run-time type.
 
@@ -47,9 +46,11 @@ The preceding example shows the same algorithm, but uses string values instead o
 
 You can use [*relational patterns*](../../language-reference/operators/patterns.md#relational-patterns) to test how a value compares to constants. For example, the following code returns the state of water based on the temperature in Fahrenheit:
 
-:::code language="csharp" source="snippets/patterns/Simulation.cs" ID="RelationalPattern":::
+:::code language="csharp" source="snippets/patterns/Simulation.cs" ID="RelationalPattern" interactive="try-dotnet":::
 
 The preceding code also demonstrates the conjunctive `and` [*logical pattern*](../../language-reference/operators/patterns.md#logical-patterns) to check that both relational patterns match. You can also use a disjunctive `or` pattern to check that either pattern matches. The two relational patterns are surrounded by parentheses, which you can use around any pattern for clarity. The final two switch arms handle the cases for the melting point and the boiling point. Without those two arms, the compiler warns you that your logic doesn't cover every possible input.
+
+The preceding code also demonstrates another important feature the compiler provides for pattern matching expressions: The compiler warns you if you don't handle every input value. The compiler also issues a warning if a switch arm is already handled by a previous switch arm. That gives you freedom to refactor and reorder switch expressions. Try it yourself by refactoring the preceding code in the interactive window and see when the compiler issues warnings. You'll see squiggles under the code that has warnings.
 
 ## Multiple inputs
 

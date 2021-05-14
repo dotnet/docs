@@ -137,7 +137,7 @@ The parameter's default value must be assigned by one of the following kinds of 
 
 - A constant, such as a literal string or number.
 - An expression of the form `new ValType()`, where `ValType` is a value type. Note that this invokes the value type's implicit parameterless constructor, which is not an actual member of the type.
-- An expression of the form `default(ValType)`, where `ValType` is a value type.
+- An expression of the form `default(SomeType)`, where `SomeType` can be either a value type or a reference type. If it's a reference type, it's effictively the same as specifying `null`.
 
 If a method includes both required and optional parameters, optional parameters are defined at the end of the parameter list, after all required parameters.
 

@@ -3,11 +3,12 @@ title: Analyzer diagnostics in .NET 6+
 description: Learn about analyzer diagnostics created by source generators in .NET 6 and later versions that produce SYSLIB compiler warnings.
 ms.date: 05/11/2021
 ---
+
 # Source-generator diagnostics in .NET 6+
 
 If your .NET 6+ project references a package that enables source generation of code, for example, a logging solution, then the analyzers that are specific to source generation will run at compile time. This article lists the compiler diagnostics related to source-generated code.
 
-If you encounter one of these build warnings or errors, follow the specific guidance provided for the diagnostic ID listed in the [Reference](#reference) section. Warnings can also be suppressed using the specific `SYSLIBXXXX` diagnostic ID value. For more information, see [Suppress warnings](#suppress-warnings).
+If you encounter one of these build warnings or errors, follow the specific guidance provided for the diagnostic ID listed in the [Reference](#reference) section. Warnings can also be suppressed using the specific `SYSLIB1XXX` diagnostic ID value. For more information, see [Suppress warnings](#suppress-warnings).
 
 ## Analyzer warnings
 
@@ -22,7 +23,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1001][1001] | Logging method names cannot start with `_`                                                                   |
 | [SYSLIB1002][1002] | Don't include log level parameters as templates in the logging message                                       |
 | [SYSLIB1003][1003] | `InvalidLoggingMethodParameterNameTitle`                                                                     |
-| [SYSLIB1004][1004] | Logging class cannot be in a nested type                                                                      |
+| [SYSLIB1004][1004] | Logging class cannot be in a nested type                                                                     |
 | [SYSLIB1005][1005] | Could not find a required type definition                                                                    |
 | [SYSLIB1006][1006] | Multiple logging methods cannot use the same event ID within a class                                         |
 | [SYSLIB1007][1007] | Logging methods must return `void`                                                                           |
@@ -39,40 +40,16 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1018][1018] | Don't include logger parameters as templates in the logging message                                          |
 | [SYSLIB1019][1019] | Couldn't find a field of type `Microsoft.Extensions.Logging.ILogger`                                         |
 | [SYSLIB1020][1020] | Found multiple fields of type `Microsoft.Extensions.Logging.ILogger`                                         |
-| [SYSLIB1021][1021] | Can't have the same template placeholders with different casing                                                           |
-| [SYSLIB1022][1022] | Can't have malformed format strings (for example, dangling curly braces)                                |
-| [SYSLIB1023][1023] | Generating more than six arguments is not supported                                                            |
+| [SYSLIB1021][1021] | Can't have the same template placeholders with different casing                                              |
+| [SYSLIB1022][1022] | Can't have malformed format strings (for example, dangling curly braces)                                     |
+| [SYSLIB1023][1023] | Generating more than six arguments is not supported                                                          |
 <!-- commented out for now, as these do not exist.
 | [SYSLIB1030][1030] | [System.Text.Json.SourceGeneration] Did not generate serialization metadata for type.                        |
 | [SYSLIB1031][1031] | [System.Text.Json.SourceGeneration] Duplicate type name.                                                     |
 -->
 
-## Suppress warnings
-
-If the `SYSLIBXXXX` diagnostic does not surface as an error, you can suppress the warning in code or in your project file.
-
-To suppress the warnings in code:
-
-```csharp
-// Disable the warning.
-#pragma warning disable SYSLIB1006
-// Code that generates compiler diagnostic.
-...
-// Re-enable the warning.
-#pragma warning restore SYSLIB1006
-```
-
-To suppress the warnings in a project file:
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-   <TargetFramework>net6.0</TargetFramework>
-   <!-- NoWarn below suppresses SYSLIB1006 project-wide -->
-   <NoWarn>$(NoWarn);SYSLIB1006</NoWarn>
-  </PropertyGroup>
-</Project>
-```
+<!-- Include adds ## Suppress warning (H2 heading) -->
+[!INCLUDE [suppress-source-generator-diagnostics](includes/suppress-source-generator-diagnostics.md)]
 
 [1001]: syslib1001.md
 [1002]: syslib1002.md

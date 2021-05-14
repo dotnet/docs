@@ -138,7 +138,7 @@ This example shows an important aspect of ***properties***. You're now computing
 
 Next, implement the `MakeDeposit` and `MakeWithdrawal` methods. These methods will enforce the final two rules: that the initial balance must be positive, and that any withdrawal must not create a negative balance.
 
-This introduces the concept of ***exceptions***. The standard way of indicating that a method cannot complete its work successfully is to throw an exception. The type of exception and the message associated with it describe the error. Here, the `MakeDeposit` method throws an exception if the amount of the deposit is negative. The `MakeWithdrawal` method throws an exception if the withdrawal amount is negative, or if applying the withdrawal results in a negative balance. Add the following code after the declaration of the `allTransactions` list:
+This introduces the concept of ***exceptions***. The standard way of indicating that a method cannot complete its work successfully is to throw an exception. The type of exception and the message associated with it describe the error. Here, the `MakeDeposit` method throws an exception if the amount of the deposit is not greater than 0. The `MakeWithdrawal` method throws an exception if the withdrawal amount is not greater than 0, or if applying the withdrawal results in a negative balance. Add the following code after the declaration of the `allTransactions` list:
 
 :::code language="csharp" source="./snippets/introduction-to-classes/BankAccount.cs" id="DepositAndWithdrawal":::
 
@@ -161,14 +161,16 @@ Next, test that you are catching error conditions by trying to create an account
 
 ```csharp
 // Test that the initial balances must be positive.
+BankAccount invalidAccount;
 try
 {
-    var invalidAccount = new BankAccount("invalid", -55);
+    invalidAccount = new BankAccount("invalid", -55);
 }
 catch (ArgumentOutOfRangeException e)
 {
     Console.WriteLine("Exception caught creating account with negative balance");
     Console.WriteLine(e.ToString());
+    return;
 }
 ```
 

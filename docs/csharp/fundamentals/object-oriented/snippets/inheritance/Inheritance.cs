@@ -176,7 +176,7 @@ namespace inheritance
             DerivedClass B = new DerivedClass();
             B.DoWork();  // Calls the new method.
 
-            BaseClass A = (BaseClass)B;
+            BaseClass A = B;
             A.DoWork();  // Also calls the new method.
             //</SnippetTestVirtualMethods>
         }

@@ -59,6 +59,17 @@ namespace patterns
             };
         // </RelationalPattern>
 
+        // <RelationalPattern2>
+        string WaterState2(int tempInFahrenheit) =>
+            tempInFahrenheit switch
+            {
+                < 32 => "solid",
+                32 => "solid/liquid transition",
+                < 212 => "liquid",
+                212 => "liquid / gas transition",
+                _ => "gas",
+        };
+        // </RelationalPattern2>
 
         private State ResetToReady() => State.Ready;
         private State StopSystem() => State.Off;

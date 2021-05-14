@@ -477,10 +477,10 @@
         "docs/standard/security/**.md": "dotnet-security",
         "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics",
         "docs/visual-basic/misc/**/**.md": "vb-diagnostics"
-      },    
-     "recommendations": { 
+      },
+     "recommendations": {
        "architecture/**/**.md": false,
-       "standard/design-guidelines/**/**.md": false  
+       "standard/design-guidelines/**/**.md": false
      },
       "title": {
         "_csharplang/spec/introduction.md": "Introduction",

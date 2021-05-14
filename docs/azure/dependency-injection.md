@@ -187,7 +187,8 @@ At some point, you might want to change the default settings for a service clien
   "CustomStorage": {
     "ServiceUri": "https://store2.storage.windows.net"
   }
-  ```
+}
+```
 
 You could change the retry policy depending on your needs like so:
   

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace patterns
 {
@@ -11,13 +12,15 @@ namespace patterns
 
             NullReferenceCheck();
 
-            MidPointCheck();
+            var sequence = new List<int> {1,2,3,4,5,6,7};
+            var middle = MidPoint(sequence);
+            Console.WriteLine(middle);
         }
 
         // <MidPoint>
         public static T MidPoint<T>(IEnumerable<T> sequence)
         {
-            if (sequence is ICollection<T> list)
+            if (sequence is IList<T> list)
             {
                 return list[list.Count / 2];
             }

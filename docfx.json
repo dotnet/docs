@@ -109,17 +109,23 @@
     ],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/dotnet/breadcrumb/toc.json",
-      "_displayLangs": ["csharp"],
-      "dev_langs": ["csharp"],
-      "ms.devlang": "dotnet",
-      "author": "dotnet-bot",
-      "ms.author": "dotnetcontent",
-      "searchScope": [".NET"],
-      "uhfHeaderId": "MSDocsHeader-DotNet",
       "apiPlatform": "dotnet",
+      "author": "dotnet-bot",
+      "breadcrumb_path": "/dotnet/breadcrumb/toc.json",
+      "dev_langs": [ "csharp" ],
+      "featureFlags": [ "enable_uhf_ppe" ],
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "dotnet/docs",
+      "feedback_product_url": "https://aka.ms/feedback/report?space=61",
+      "ms.author": "dotnetcontent",
+      "ms.devlang": "dotnet",
       "ms.prod":"dotnet",
       "ms.topic": "conceptual",
+      "recommendations": true,
+      "searchScope": [ ".NET" ],
+      "show_latex": true,
+      "uhfHeaderId": "MSDocsHeader-DotNet",
+      "_displayLangs": [ "csharp" ],
       "_op_documentIdPathDepotMapping": {
         "docs/architecture/containerized-lifecycle/": {
           "folder_relative_path_in_docset": "docs/standard/containerized-lifecycle-architecture/"
@@ -131,19 +137,12 @@
           "folder_relative_path_in_docset": "docs/standard/modern-web-apps-azure-architecture/"
         },
         "docs/architecture/modernize-with-azure-containers/": {
-     "folder_relative_path_in_docset": "docs/standard/modernize-with-azure-and-containers/"
-  },
-  "docs/architecture/serverless/": {
-     "folder_relative_path_in_docset": "docs/standard/serverless-architecture/"
-  }
-      },
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "dotnet/docs",
-      "feedback_product_url": "https://aka.ms/feedback/report?space=61",
-      "featureFlags": [
-        "enable_uhf_ppe"
-      ],
-      "show_latex": true
+          "folder_relative_path_in_docset": "docs/standard/modernize-with-azure-and-containers/"
+        },
+        "docs/architecture/serverless/": {
+          "folder_relative_path_in_docset": "docs/standard/serverless-architecture/"
+        }
+      }
     },
     "fileMetadata": {
       "feedback_system": {
@@ -476,6 +475,12 @@
         "docs/standard/security/**.md": "dotnet-security",
         "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics",
         "docs/visual-basic/misc/**/**.md": "vb-diagnostics"
+      },
+      "recommendations": {
+        "_csharplang/**/*.md": false,
+        "_vblang/spec/*.md": false,
+        "architecture/**/**.md": false,
+        "standard/design-guidelines/**/**.md": false
       },
       "title": {
         "_csharplang/spec/introduction.md": "Introduction",

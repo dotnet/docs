@@ -71,3 +71,9 @@ The example of such a prototype would look like:
 internal static extern int TestStructInStruct(ref MyPerson2 person2);
 ```
 For more examples and comprehensive explanation please see other documents in this section related to marshaling.
+
+## See also
+
+- [Marshaling Classes, Structures, and Unions](marshaling-classes-structures-and-unions.md)
+- [Marshaling Strings](marshaling-strings.md)
+- [Marshaling Different Types of Arrays](marshaling-different-types-of-arrays.md)

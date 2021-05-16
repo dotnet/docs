@@ -134,5 +134,5 @@ recorded.
 
 ## Next steps
 
-See the [Distributed Tracing Overview](distributed-tracing.md) for example code to get started
+See the [Distributed Tracing Instrumentation](distributed-tracing-instrumentation-walkthroughs.md) for example code to get started
 using distributed tracing in .NET applications.

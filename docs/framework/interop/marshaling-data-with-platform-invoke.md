@@ -65,11 +65,13 @@ If an unmanaged code uses a class or struct (or any custom type) this type has t
 Please see the <xref:System.Runtime.InteropServices.DllImportAttribute> which the prototype should be marked with.
 
 The example of such a prototype would look like:
+
 ```cs
 // Declares a managed prototype for TestStructInStruct declared and defined in unmanaged library
 [DllImport("..\\LIB\\PinvokeLib.dll", CallingConvention = CallingConvention.Cdecl)]
 internal static extern int TestStructInStruct(ref MyPerson2 person2);
 ```
+
 For more examples and comprehensive explanation please see other documents in this section related to marshaling.
 
 ## See also

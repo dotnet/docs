@@ -7,11 +7,11 @@ ms.date: 03/14/2021
 
 # Collect a distributed trace
 
-**This article applies to: ✔️** .NET Core 2.1 and later versions **and** .NET Framework 4.5 and later versions
+**This article applies to: ✔️** .NET Core 2.1 and later versions **✔️** .NET Framework 4.5 and later versions
 
 Instrumented code can create <xref:System.Diagnostics.Activity> objects as part of a distributed trace, but the information
 in these objects needs to be collected into centralized storage so that the entire trace can be
-reviewed later. In this tutorial, you will collect the distributed trace telemetry in different ways so that it is
+reviewed later. In this tutorial, you will collect the distributed trace telemetry in different ways so that it's
 available to diagnose application issues when needed. See
 [the instrumentation tutorial](distributed-tracing-instrumentation-walkthroughs.md) if you need to add new instrumentation.
 
@@ -192,17 +192,15 @@ For more information about configuring OpenTelemetry, see the [OpenTelemetry get
 
 ## Collect traces using Application Insights
 
-Distributed tracing telemetry is automatically captured after configuring the Application Insights SDK
-([ASP.NET](/azure/azure-monitor/app/asp-net), [ASP.NET Core](/azure/azure-monitor/app/asp-net-core))
+Distributed tracing telemetry is automatically captured after configuring the Application Insights SDK for
+([ASP.NET](/azure/azure-monitor/app/asp-net) or [ASP.NET Core](/azure/azure-monitor/app/asp-net-core)),
 or by enabling [code-less instrumentation](/azure/azure-monitor/app/codeless-overview).
 
 For more
 information, see the [Application Insights distributed tracing documentation](/azure/azure-monitor/app/distributed-tracing).
 
 > [!NOTE]
-> Currently Application Insights only supports collecting specific well-known Activity instrumentation and will ignore new user added Activities. Application
-> Insights offers [TrackDependency](/azure/azure-monitor/app/api-custom-events-metrics#trackdependency) as a vendor
-> specific API for adding custom distributed tracing information.
+> Currently, Application Insights only supports collecting specific well-known Activity instrumentation and ignores new user-added Activities. Application Insights offers [TrackDependency](/azure/azure-monitor/app/api-custom-events-metrics#trackdependency) as a vendor-specific API for adding custom distributed tracing information.
 
 ## Collect traces using custom logic
 

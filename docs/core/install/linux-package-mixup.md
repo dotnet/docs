@@ -3,7 +3,7 @@ title: Troubleshoot .NET Package Mix ups on Linux
 description: Learn about how to troubleshoot strange .NET package errors on Linux.
 author: omajid
 ms.date: 05/12/2021
-no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrmaeworkList.xml', 'System.IO.FileNotFoundException']
+no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrameworkList.xml', 'System.IO.FileNotFoundException']
 ---
 
 # Troubleshoot _fxr_, _libhostfxr.so_, and _FrameworkList.xml_ errors

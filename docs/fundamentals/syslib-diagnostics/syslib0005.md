@@ -21,4 +21,4 @@ If your application queries the <xref:System.Reflection.Assembly.GlobalAssemblyC
 
 ## See also
 
-- [Global assembly cache](../../../framework/app-domains/gac.md)
+- [Global assembly cache](../../framework/app-domains/gac.md)

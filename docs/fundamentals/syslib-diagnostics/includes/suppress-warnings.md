@@ -1,6 +1,6 @@
 ## Suppress warnings
 
-It's recommended that you use one of the workarounds when possible. However, if you cannot change your code, you can suppress warnings through a `#pragma` directive or a `<NoWarn>` project setting. If you must use the obsolete APIs and the `SYSLIB0XXX` diagnostic does not surface as an error, you can suppress the warning in code or in your project file.
+You can suppress warnings through a `#pragma` directive or a `<NoWarn>` project setting. As long as the `SYSLIBXXXX` diagnostic doesn't surface as an error, you can suppress the warning in code or in your project file.
 
 To suppress the warnings in code:
 
@@ -20,7 +20,6 @@ To suppress the warnings in a project file:
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-   <TargetFramework>net5.0</TargetFramework>
    <!-- NoWarn below suppresses SYSLIB0001 project-wide -->
    <NoWarn>$(NoWarn);SYSLIB0001</NoWarn>
    <!-- To suppress multiple warnings, you can use multiple NoWarn elements -->
@@ -31,6 +30,3 @@ To suppress the warnings in a project file:
   </PropertyGroup>
 </Project>
 ```
-
-> [!NOTE]
-> Suppressing warnings in this way only disables the obsoletion warnings you specify. It doesn't disable any other warnings, including obsoletion warnings with different diagnostic IDs.

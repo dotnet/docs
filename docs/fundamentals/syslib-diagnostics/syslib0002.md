@@ -57,4 +57,4 @@ Unlike other obsoletion warnings, you can't suppress the error.
 
 ## See also
 
-- [PrincipalPermissionAttribute is obsolete as error](../core-libraries/5.0/principalpermissionattribute-obsolete.md)
+[PrincipalPermissionAttribute is obsolete as error](../../core/compatibility/core-libraries/5.0/principalpermissionattribute-obsolete.md)

@@ -31,4 +31,4 @@ The cryptographic configuration system in .NET Framework doesn't allow for prope
 
 ## See also
 
-- [Instantiating default implementations of cryptographic abstractions is not supported](../cryptography/5.0/instantiating-default-implementations-of-cryptographic-abstractions-not-supported.md)
+- [Instantiating default implementations of cryptographic abstractions is not supported](../../core/compatibility/cryptography/5.0/instantiating-default-implementations-of-cryptographic-abstractions-not-supported.md)

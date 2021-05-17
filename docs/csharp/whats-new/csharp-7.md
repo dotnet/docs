@@ -194,7 +194,7 @@ public static int SumPositiveNumbers(IEnumerable<object> sequence)
 
 Beginning with C# 7.1, the pattern expression for `is` and the `switch` type pattern may have the type of a generic type parameter. This can be most useful when checking types that may be either `struct` or `class` types, and you want to avoid boxing.
 
-You can learn more about pattern matching in [Pattern Matching in C#](/dotnet/csharp/fundamentals/functiona/pattern-matching).
+You can learn more about pattern matching in [Pattern Matching in C#](/dotnet/csharp/fundamentals/functional/pattern-matching).
 
 ## Async main
 

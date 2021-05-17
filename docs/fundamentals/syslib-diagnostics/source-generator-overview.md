@@ -40,7 +40,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1018][1018] | Don't include logger parameters as templates in the logging message                                          |
 | [SYSLIB1019][1019] | Couldn't find a field of type `Microsoft.Extensions.Logging.ILogger`                                         |
 | [SYSLIB1020][1020] | Found multiple fields of type `Microsoft.Extensions.Logging.ILogger`                                         |
-| [SYSLIB1021][1021] | Can't have the same template placeholders with different casing                                              |
+| [SYSLIB1021][1021] | Multiple message-template item names differ only by case                                              |
 | [SYSLIB1022][1022] | Can't have malformed format strings (for example, dangling curly braces)                                     |
 | [SYSLIB1023][1023] | Generating more than six arguments is not supported                                                          |
 <!-- commented out for now, as these do not exist.

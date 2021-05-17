@@ -24,10 +24,10 @@ To suppress the warnings in a project file:
    <!-- NoWarn below suppresses SYSLIB0001 project-wide -->
    <NoWarn>$(NoWarn);SYSLIB0001</NoWarn>
    <!-- To suppress multiple warnings, you can use multiple NoWarn elements -->
-   <NoWarn>$(NoWarn);SYSLIB1002</NoWarn>
+   <NoWarn>$(NoWarn);SYSLIB0002</NoWarn>
    <NoWarn>$(NoWarn);SYSLIB0003</NoWarn>
    <!-- Alternatively, you can suppress multiple warnings by using a semicolon-delimited list -->
-   <NoWarn>$(NoWarn);SYSLIB0001;SYSLIB1002;SYSLIB0003</NoWarn>
+   <NoWarn>$(NoWarn);SYSLIB0001;SYSLIB0002;SYSLIB0003</NoWarn>
   </PropertyGroup>
 </Project>
 ```

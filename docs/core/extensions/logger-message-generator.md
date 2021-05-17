@@ -235,7 +235,7 @@ static partial void LogMethod(
     Exception ex,
     Exception ex2,
     Exception ex3,
-    ILogger logger); // 😲
+    ILogger logger);
 ```
 
 > [!TIP]

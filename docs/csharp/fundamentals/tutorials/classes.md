@@ -9,7 +9,7 @@ In this tutorial, you'll build a console application and see the basic object-or
 
 ## Prerequisites
 
-The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI to create, build, and run applications. On Windows, you can use Visual Studio 2019. For setup instructions, see [Set up your local environment](../../../tour-of-csharp/tutorials/local-environment.md).
+The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI to create, build, and run applications. On Windows, you can use Visual Studio 2019. For setup instructions, see [Set up your local environment](../../tour-of-csharp/tutorials/local-environment.md).
 
 ## Create your application
 
@@ -86,7 +86,7 @@ public BankAccount(string name, decimal initialBalance)
 }
 ```
 
-Constructors are called when you create an object using [`new`](../../../language-reference/operators/new-operator.md). Replace the line `Console.WriteLine("Hello World!");` in *Program.cs* with the following code (replace `<name>` with your name):
+Constructors are called when you create an object using [`new`](../../language-reference/operators/new-operator.md). Replace the line `Console.WriteLine("Hello World!");` in *Program.cs* with the following code (replace `<name>` with your name):
 
 ```csharp
 var account = new BankAccount("<name>", 1000);
@@ -142,7 +142,7 @@ This introduces the concept of ***exceptions***. The standard way of indicating 
 
 :::code language="csharp" source="./snippets/introduction-to-classes/BankAccount.cs" id="DepositAndWithdrawal":::
 
-The [`throw`](../../../language-reference/keywords/throw.md) statement **throws** an exception. Execution of the current block ends, and control transfers to the first matching `catch` block found in the call stack. You'll add a `catch` block to test this code a little later on.
+The [`throw`](../../language-reference/keywords/throw.md) statement **throws** an exception. Execution of the current block ends, and control transfers to the first matching `catch` block found in the call stack. You'll add a `catch` block to test this code a little later on.
 
 The constructor should get one change so that it adds an initial transaction, rather than updating the balance directly. Since you already wrote the `MakeDeposit` method, call it from your constructor. The finished constructor should look like this:
 
@@ -174,7 +174,7 @@ catch (ArgumentOutOfRangeException e)
 }
 ```
 
-You use the [`try` and `catch` statements](../../../language-reference/keywords/try-catch.md) to mark a block of code that may throw exceptions and to catch those errors that you expect. You can use the same technique to test the code that throws an exception for a negative balance. Add the following code at the end of your `Main` method:
+You use the [`try` and `catch` statements](../../language-reference/keywords/try-catch.md) to mark a block of code that may throw exceptions and to catch those errors that you expect. You can use the same technique to test the code that throws an exception for a negative balance. Add the following code at the end of your `Main` method:
 
 ```csharp
 // Test for a negative balance.
@@ -215,7 +215,7 @@ You can continue with the [object oriented programming](oop.md) tutorial.
 
 You can learn more about these concepts in these articles:
 
-- [If and else statement](../../../language-reference/keywords/if-else.md)
-- [While statement](../../../language-reference/keywords/while.md)
-- [Do statement](../../../language-reference/keywords/do.md)
-- [For statement](../../../language-reference/keywords/for.md)
+- [If and else statement](../../language-reference/keywords/if-else.md)
+- [While statement](../../language-reference/keywords/while.md)
+- [Do statement](../../language-reference/keywords/do.md)
+- [For statement](../../language-reference/keywords/for.md)

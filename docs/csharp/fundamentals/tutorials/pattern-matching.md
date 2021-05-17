@@ -82,7 +82,7 @@ namespace toll_calculator
 }
 ```
 
-The preceding code uses a [`switch` expression](../../../language-reference/operators/switch-expression.md) (not the same as a [`switch`](../../../language-reference/keywords/switch.md) statement) that tests the [declaration pattern](../../../language-reference/operators/patterns.md#declaration-and-type-patterns). A **switch expression** begins with the variable, `vehicle` in the preceding code, followed by the `switch` keyword. Next comes all the **switch arms** inside curly braces. The `switch` expression makes other refinements to the syntax that surrounds the `switch` statement. The `case` keyword is omitted, and the result of each arm is an expression. The last two arms show a new language feature. The `{ }` case matches any non-null object that didn't match an earlier arm. This arm catches any incorrect types passed to this method. The `{ }` case must follow the cases for each vehicle type. If the order were reversed, the `{ }` case would take precedence. Finally, the `null` [constant pattern](../../../language-reference/operators/patterns.md#constant-pattern) detects when `null` is passed to this method. The `null` pattern can be last because the other patterns match only a non-null object of the correct type.
+The preceding code uses a [`switch` expression](../../language-reference/operators/switch-expression.md) (not the same as a [`switch`](../../language-reference/keywords/switch.md) statement) that tests the [declaration pattern](../../language-reference/operators/patterns.md#declaration-and-type-patterns). A **switch expression** begins with the variable, `vehicle` in the preceding code, followed by the `switch` keyword. Next comes all the **switch arms** inside curly braces. The `switch` expression makes other refinements to the syntax that surrounds the `switch` statement. The `case` keyword is omitted, and the result of each arm is an expression. The last two arms show a new language feature. The `{ }` case matches any non-null object that didn't match an earlier arm. This arm catches any incorrect types passed to this method. The `{ }` case must follow the cases for each vehicle type. If the order were reversed, the `{ }` case would take precedence. Finally, the `null` [constant pattern](../../language-reference/operators/patterns.md#constant-pattern) detects when `null` is passed to this method. The `null` pattern can be last because the other patterns match only a non-null object of the correct type.
 
 You can test this code using the following code in `Program.cs`:
 
@@ -145,7 +145,7 @@ The toll authority wants to encourage vehicles to travel at maximum capacity. Th
 - Buses that are less than 50% full pay an extra $2.00.
 - Buses that are more than 90% full get a $1.00 discount.
 
-These rules can be implemented using a [property pattern](../../../language-reference/operators/patterns.md#property-pattern) in the same switch expression. A property pattern compares a property value to a constant value. The property pattern examines properties of the object once the type has been determined. The single case for a `Car` expands to four different cases:
+These rules can be implemented using a [property pattern](../../language-reference/operators/patterns.md#property-pattern) in the same switch expression. A property pattern compares a property value to a constant value. The property pattern examines properties of the object once the type has been determined. The single case for a `Car` expands to four different cases:
 
 ```csharp
 vehicle switch
@@ -336,7 +336,7 @@ Next, add a similar function to categorize the time into the blocks:
 
 :::code language="csharp" source="./snippets/patterns/finished/toll-calculator/TollCalculator.cs" ID="GetTimeBand":::
 
-You add a private `enum` to convert each range of time to a discrete value. Then, the `GetTimeBand` method uses [relational patterns](../../../language-reference/operators/patterns.md#relational-patterns), and [conjunctive `or` patterns](../../../language-reference/operators/patterns.md#logical-patterns), both added in C# 9.0. A relational pattern lets you test a numeric value using `<`, `>`, `<=`, or `>=`. The `or` pattern tests if an expression matches one or more patterns. You can also use an `and` pattern to ensure that an expression matches two distinct patterns, and a `not` pattern to test that an expression doesn't match a pattern.
+You add a private `enum` to convert each range of time to a discrete value. Then, the `GetTimeBand` method uses [relational patterns](../../language-reference/operators/patterns.md#relational-patterns), and [conjunctive `or` patterns](../../language-reference/operators/patterns.md#logical-patterns), both added in C# 9.0. A relational pattern lets you test a numeric value using `<`, `>`, `<=`, or `>=`. The `or` pattern tests if an expression matches one or more patterns. You can also use an `and` pattern to ensure that an expression matches two distinct patterns, and a `not` pattern to test that an expression doesn't match a pattern.
 
 After you create those methods, you can use another `switch` expression with the **tuple pattern** to calculate the pricing premium. You could build a `switch` expression with all 16 arms:
 
@@ -385,5 +385,5 @@ You can download the finished code from the [dotnet/samples](https://github.com/
 
 ## See also
 
-- [Patterns](../../../language-reference/operators/patterns.md)
-- [`switch` expression](../../../language-reference/operators/switch-expression.md)
+- [Patterns](../../language-reference/operators/patterns.md)
+- [`switch` expression](../../language-reference/operators/switch-expression.md)

@@ -79,5 +79,5 @@ This article provided a tour of the kinds of code you can write with pattern mat
 ## See also
 
 - [Exploration: Use pattern matching to build your class behavior for better code](../../whats-new/tutorials/patterns-objects.md)
-- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](./tutorials/pattern-matching.md)
+- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../tutorials/pattern-matching.md)
 - [Reference: Pattern matching](../../language-reference/operators/patterns.md)

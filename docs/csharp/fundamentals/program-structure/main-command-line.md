@@ -224,4 +224,4 @@ To compile and run the application from a command prompt, follow these steps:
 ## See also
 
 - <xref:System.Environment?displayProperty=nameWithType>
-- [How to display command line arguments](tutorials/how-to-display-command-line-arguments.md)
+- [How to display command line arguments](../tutorials/how-to-display-command-line-arguments.md)

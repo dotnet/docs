@@ -1,7 +1,6 @@
 ---
 title: Deconstructing tuples and other types
 description: Learn how to deconstruct tuples and other types.
-ms.technology: csharp-fundamentals
 ms.date: 03/22/2021
 ---
 # Deconstructing tuples and other types
@@ -14,7 +13,7 @@ Retrieving multiple field and property values from an object can be equally cumb
 
 In C# 7.0 and later, you can retrieve multiple elements from a tuple or retrieve multiple field, property, and computed values from an object in a single *deconstruct* operation. To deconstruct a tuple, you assign its elements to individual variables. When you deconstruct an object, you assign selected values to individual variables.
 
-## Deconstructing a tuple
+## Tuples
 
 C# features built-in support for deconstructing tuples, which lets you unpackage all the items in a tuple in a single operation. The general syntax for deconstructing a tuple is similar to the syntax for defining one: you enclose the variables to which each element is to be assigned in parentheses in the left side of an assignment statement. For example, the following statement assigns the elements of a four-tuple to four separate variables:
 
@@ -49,7 +48,7 @@ You must assign each element of the tuple to a variable. If you omit any element
 
 You can't mix declarations and assignments to existing variables on the left-hand side of a deconstruction. The compiler generates error CS8184, "a deconstruction can't mix declarations and expressions on the left-hand-side." when the members include newly declared and existing variables.
 
-## Deconstructing tuple elements with discards
+## Tuple elements with discards
 
 Often when deconstructing a tuple, you're interested in the values of only some elements. Starting with C# 7.0, you can take advantage of C#'s support for *discards*, which are write-only variables whose values you've chosen to ignore. A discard is chosen by an underscore character ("\_") in an assignment. You can discard as many values as you like; all are represented by the single discard, `_`.
 
@@ -57,7 +56,7 @@ The following example illustrates the use of tuples with discards. The `QueryCit
 
 :::code language="csharp" source="./snippets/deconstructing-tuples/deconstruct-tuple1.cs":::
 
-## Deconstructing user-defined types
+## User-defined types
 
 C# doesn't offer built-in support for deconstructing non-tuple types other than the [`record`](#deconstructing-a-record-type) and [DictionaryEntry](xref:System.Collections.DictionaryEntry.Deconstruct%2A) types. However, as the author of a class, a struct, or an interface, you can allow instances of the type to be deconstructed by implementing one or more `Deconstruct` methods. The method returns void, and each value to be deconstructed is indicated by an [out](../../language-reference/keywords/out-parameter-modifier.md) parameter in the method signature. For example, the following `Deconstruct` method of a `Person` class returns the first, middle, and last name:
 
@@ -77,7 +76,7 @@ The following example overloads the `Deconstruct` method to return various combi
 
 Multiple `Deconstruct` methods having the same number of parameters are ambiguous. You must be careful to define `Deconstruct` methods with different numbers of parameters, or "arity". `Deconstruct` methods with the same number of parameters cannot be distinguished during overload resolution.
 
-## Deconstructing a user-defined type with discards
+## User-defined type with discards
 
 Just as you do with [tuples](#deconstructing-tuple-elements-with-discards), you can use discards to ignore selected items returned by a `Deconstruct` method. Each discard is defined by a variable named "\_", and a single deconstruction operation can include multiple discards.
 
@@ -85,7 +84,7 @@ The following example deconstructs a `Person` object into four strings (the firs
 
 :::code language="csharp" source="./snippets/deconstructing-tuples/class-discard1.cs" ID="Snippet1":::
 
-## Deconstructing a user-defined type with an extension method
+## Extension methods for user-defined types
 
 If you didn't author a class, struct, or interface, you can still deconstruct objects of that type by implementing one or more `Deconstruct` [extension methods](../../programming-guide/classes-and-structs/extension-methods.md) to return the values in which you're interested.
 
@@ -93,7 +92,7 @@ The following example defines two `Deconstruct` extension methods for the <xref:
 
 [!code-csharp[Extension-deconstruct](./snippets/deconstructing-tuples/deconstruct-extension1.cs)]
 
-## Deconstructing a `record` type
+## `record` types
 
 When you declare a [record](../../language-reference/builtin-types/record.md) type by using two or more positional parameters, the compiler creates a `Deconstruct` method with an `out` parameter for each positional parameter in the `record` declaration. For more information, see [Positional syntax for property definition](../../language-reference/builtin-types/record.md#positional-syntax-for-property-definition) and [Deconstructor behavior in derived records](../../language-reference/builtin-types/record.md#deconstructor-behavior-in-derived-records).
 

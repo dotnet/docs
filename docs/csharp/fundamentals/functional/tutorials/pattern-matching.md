@@ -2,7 +2,6 @@
 title: "Tutorial: Build algorithms with pattern matching"
 description: This advanced tutorial demonstrates how to use pattern matching techniques to create functionality using data and algorithms that are created separately.
 ms.date: 10/06/2020
-ms.technology: csharp-whats-new
 ms.custom: contperf-fy21q1
 ---
 # Tutorial: Use pattern matching to build type-driven and data-driven algorithms

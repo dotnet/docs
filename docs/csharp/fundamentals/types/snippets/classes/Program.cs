@@ -36,9 +36,6 @@ class TestPerson
         Console.WriteLine(person2.Name);
         // Get the string representation of the person2 instance.
         Console.WriteLine(person2);
-
-        Console.WriteLine("Press any key to exit.");
-        Console.ReadKey();
     }
 }
 // Output:

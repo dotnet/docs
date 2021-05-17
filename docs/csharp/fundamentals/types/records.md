@@ -43,15 +43,15 @@ The same syntax that [declares](classes.md#declaring-classes) and [instantiates]
 
 The following example defines a public record that uses positional parameters to declare and instantiate a record. It then prints the type name and property values:
 
-:::code language="csharp" source="../../language-reference/builtin-types/snippets/shared/RecordType.cs" interactive="try-dotnet" ID="InstantiatePositional":::
+:::code language="csharp" source="../../language-reference/builtin-types/snippets/shared/RecordType.cs" ID="InstantiatePositional":::
 
 The following example demonstrates value equality in records:
 
-:::code language="csharp" source="../../language-reference/builtin-types/snippets/shared/RecordType.cs" interactive="try-dotnet" ID="Equality":::
+:::code language="csharp" source="../../language-reference/builtin-types/snippets/shared/RecordType.cs" ID="Equality":::
 
 The following example demonstrates use of a `with` expression to copy an immutable object and change one of the properties:
 
-:::code language="csharp" source="../../language-reference/builtin-types/snippets/shared/RecordType.cs" interactive="try-dotnet" ID="WithExpressions":::
+:::code language="csharp" source="../../language-reference/builtin-types/snippets/shared/RecordType.cs" ID="WithExpressions":::
 
 For more information, see [Records (C# reference)](../../language-reference/builtin-types/record.md).
   

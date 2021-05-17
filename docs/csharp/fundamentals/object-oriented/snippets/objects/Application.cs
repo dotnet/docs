@@ -33,10 +33,6 @@ namespace Example
 
             // p1 values remain unchanged because p2 is  copy.
             Console.WriteLine("p1 Name = {0} Age = {1}", p1.Name, p1.Age);
-
-            // Keep the console open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
         }
     }
     /*

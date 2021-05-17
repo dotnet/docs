@@ -28,10 +28,6 @@ class Program
 
         Console.WriteLine("person2 Name = {0} Age = {1}", person2.Name, person2.Age);
         Console.WriteLine("person1 Name = {0} Age = {1}", person1.Name, person1.Age);
-
-        // Keep the console open in debug mode.
-        Console.WriteLine("Press any key to exit.");
-        Console.ReadKey();
     }
 }
 /*

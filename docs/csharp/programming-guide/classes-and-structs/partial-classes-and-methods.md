@@ -175,7 +175,7 @@ For more information, see [Partial types](~/_csharplang/spec/classes.md#partial-
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes](/dotnet/csharp/fundamentals/types/classes)
+- [Classes](../../fundamentals/types/classes.md)
 - [Structure types](../../language-reference/builtin-types/struct.md)
-- [Interfaces](/dotnet/csharp/fundamentals/types/interfaces)
+- [Interfaces](../../fundamentals/types/interfaces.md)
 - [partial (Type)](../../language-reference/keywords/partial-type.md)

@@ -23,7 +23,7 @@ This section provides detailed information on key C# language features and featu
 
 [Inside a C# Program](/dotnet/csharp/fundamentals/program-structure)  
   
-[Main() and Command-Line Arguments](/dotnet/csharp/fundamentals/program-structure/main-command-line)  
+[Main() and Command-Line Arguments](../fundamentals/program-structure/main-command-line.md)  
 
 ## Language Sections
 
@@ -33,7 +33,7 @@ This section provides detailed information on key C# language features and featu
 
  [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)  
   
- [Interfaces](/dotnet/csharp/fundamentals/types/interfaces)  
+ [Interfaces](../fundamentals/types/interfaces.md)  
 
  [Delegates](./delegates/index.md)  
 
@@ -47,13 +47,13 @@ This section provides detailed information on key C# language features and featu
   
  [Events](./events/index.md)  
   
- [Generics](/dotnet/csharp/fundamentals/types/generics)  
+ [Generics](../fundamentals/types/generics.md)  
   
  [Iterators](./concepts/iterators.md)
   
  [LINQ Query Expressions](../linq/index.md)  
   
- [Namespaces](/dotnet/csharp/fundamentals/types/namespaces)  
+ [Namespaces](../fundamentals/types/namespaces.md)  
   
  [Unsafe Code and Pointers](../language-reference/unsafe-code.md)  
   

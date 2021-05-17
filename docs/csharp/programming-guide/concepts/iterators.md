@@ -356,4 +356,4 @@ Iterators enable you to maintain the simplicity of a `foreach` loop when you nee
 - [foreach, in](../../language-reference/keywords/foreach-in.md)
 - [yield](../../language-reference/keywords/yield.md)
 - [Using foreach with Arrays](../arrays/using-foreach-with-arrays.md)
-- [Generics](/dotnet/csharp/fundamentals/types/generics)
+- [Generics](../../fundamentals/types/generics.md)

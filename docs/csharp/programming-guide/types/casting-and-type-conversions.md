@@ -74,7 +74,7 @@ Animal a = g;
 Giraffe g2 = (Giraffe)a;
 ```
 
-A cast operation between reference types does not change the run-time type of the underlying object; it only changes the type of the value that is being used as a reference to that object. For more information, see [Polymorphism](/dotnet/csharp/fundamentals/object-oriented/polymorphism).
+A cast operation between reference types does not change the run-time type of the underlying object; it only changes the type of the value that is being used as a reference to that object. For more information, see [Polymorphism](../../fundamentals/object-oriented/polymorphism.md).
 
 ## Type conversion exceptions at run time
 
@@ -82,7 +82,7 @@ In some reference type conversions, the compiler cannot determine whether a cast
 
 [!code-csharp[csProgGuideTypes#41](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#41)]
 
-The `Test` method has an `Animal` parameter, thus explicitly casting the argument `a` to a `Reptile` makes a dangerous assumption. It is safer to not make assumptions, but rather check the type. C# provides the [is](../../language-reference/operators/type-testing-and-cast.md#is-operator) operator to enable you to test for compatibility before actually performing a cast. For more information, see [How to safely cast using pattern matching and the as and is operators](/dotnet/csharp/fundamentals/object-oriented/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md).
+The `Test` method has an `Animal` parameter, thus explicitly casting the argument `a` to a `Reptile` makes a dangerous assumption. It is safer to not make assumptions, but rather check the type. C# provides the [is](../../language-reference/operators/type-testing-and-cast.md#is-operator) operator to enable you to test for compatibility before actually performing a cast. For more information, see [How to safely cast using pattern matching and the as and is operators](../../fundamentals/object-oriented/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md).
 
 ## C# language specification
 

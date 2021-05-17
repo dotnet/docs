@@ -51,5 +51,5 @@ For more information, see [The is operator](~/_csharplang/spec/expressions.md#th
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Patterns](patterns.md)
-- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](/dotnet/csharp/fundamentals/functional/tutorials/pattern-matching)
+- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/functional/tutorials/pattern-matching.md)
 - [Type-testing and cast operators](../operators/type-testing-and-cast.md)

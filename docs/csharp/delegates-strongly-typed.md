@@ -25,7 +25,7 @@ after a time. Every new feature requires new delegate types.
 
 Thankfully, this isn't necessary. The .NET Core framework contains several
 types that you can reuse whenever you need delegate types. These are
-[generic](/dotnet/csharp/fundamentals/types/generics) definitions so you can declare customizations
+[generic](fundamentals/types/generics.md) definitions so you can declare customizations
 when you need new method declarations.
 
 The first of these types is the <xref:System.Action> type, and several variations:

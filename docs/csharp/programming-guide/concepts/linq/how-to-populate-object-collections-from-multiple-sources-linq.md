@@ -139,4 +139,4 @@ foreach (var student in queryNamesScores2)
 
 - [LINQ and Strings (C#)](./linq-and-strings.md)
 - [Object and Collection Initializers](../../classes-and-structs/object-and-collection-initializers.md)
-- [Anonymous Types](/dotnet/csharp/fundamentals/types/anonymous-types)
+- [Anonymous Types](../../../fundamentals/types/anonymous-types.md)

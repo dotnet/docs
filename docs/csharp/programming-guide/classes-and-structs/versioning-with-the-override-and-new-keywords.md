@@ -80,4 +80,4 @@ The C# language is designed so that versioning between [base](../../language-ref
 - [C# Programming Guide](../index.md)
 - [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
 - [Methods](./methods.md)
-- [Inheritance](/dotnet/csharp/fundamentals/object-oriented/inheritance)
+- [Inheritance](../../fundamentals/object-oriented/inheritance.md)

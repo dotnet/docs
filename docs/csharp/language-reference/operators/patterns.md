@@ -34,7 +34,7 @@ In those constructs, you can match an input expression against any of the follow
 
 [Logical](#logical-patterns), [property](#property-pattern), and [positional](#positional-pattern) patterns are *recursive* patterns. That is, they can contain *nested* patterns.
 
-For the example of how to use those patterns to build a data-driven algorithm, see [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](/dotnet/csharp/fundamentals/functional/tutorials/pattern-matching).
+For the example of how to use those patterns to build a data-driven algorithm, see [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/functional/tutorials/pattern-matching.md).
 
 ## Declaration and type patterns
 
@@ -168,7 +168,7 @@ Beginning with C# 8.0, you use a *positional pattern* to deconstruct an expressi
 
 :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="BasicExample":::
 
-At the preceding example, the type of an expression contains the [Deconstruct](/dotnet/csharp/fundamentals/functional/deconstruct) method, which is used to deconstruct an expression result. You can also match expressions of [tuple types](../builtin-types/value-tuples.md) against positional patterns. In that way, you can match multiple inputs against various patterns, as the following example shows:
+At the preceding example, the type of an expression contains the [Deconstruct](../../fundamentals/functional/deconstruct.md) method, which is used to deconstruct an expression result. You can also match expressions of [tuple types](../builtin-types/value-tuples.md) against positional patterns. In that way, you can match multiple inputs against various patterns, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="MatchTuple":::
 
@@ -244,4 +244,4 @@ For more information, see the following feature proposal notes:
 
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
-- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](/dotnet/csharp/fundamentals/functional/tutorials/pattern-matching)
+- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/functional/tutorials/pattern-matching.md)

@@ -112,7 +112,7 @@ The following code sample demonstrates how to get the `HelpAttribute` instances 
 
 ## Learn more
 
-You can explore more about C# by trying one of our [tutorials](/dotnet/csharp/fundamentals/object-oriented/tutorials/classes).
+You can explore more about C# by trying one of our [tutorials](../fundamentals/object-oriented/tutorials/classes.md).
 
 >[!div class="step-by-step"]
 >[Previous](program-building-blocks.md)

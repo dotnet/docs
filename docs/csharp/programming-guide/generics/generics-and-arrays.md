@@ -19,6 +19,6 @@ In C# 2.0 and later, single-dimensional arrays that have a lower bound of zero a
 
 - <xref:System.Collections.Generic>
 - [C# Programming Guide](../index.md)
-- [Generics](/dotnet/csharp/fundamentals/types/generics)
+- [Generics](../../fundamentals/types/generics.md)
 - [Arrays](../arrays/index.md)
 - [Generics](../../../standard/generics/index.md)

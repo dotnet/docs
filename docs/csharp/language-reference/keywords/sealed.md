@@ -34,7 +34,7 @@ When applied to a method or property, the `sealed` modifier must always be used 
 
 Because structs are implicitly sealed, they cannot be inherited.
 
-For more information, see [Inheritance](/dotnet/csharp/fundamentals/object-oriented/inheritance).
+For more information, see [Inheritance](../../fundamentals/object-oriented/inheritance.md).
 
 For more examples, see [Abstract and Sealed Classes and Class Members](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).
 

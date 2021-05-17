@@ -42,7 +42,7 @@ The following example uses the `join … in … on … equals … into …` clau
 
 - <xref:System.Linq>
 - [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
-- [Anonymous Types](/dotnet/csharp/fundamentals/types/anonymous-types)
+- [Anonymous Types](../../../fundamentals/types/anonymous-types.md)
 - [Formulate Joins and Cross-Product Queries](../../../../framework/data/adonet/sql/linq/formulate-joins-and-cross-product-queries.md)
 - [join clause](../../../language-reference/keywords/join-clause.md)
 - [Join by using composite keys](../../../linq/join-by-using-composite-keys.md)

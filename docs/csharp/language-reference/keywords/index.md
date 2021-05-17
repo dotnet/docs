@@ -144,7 +144,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [orderby](orderby-clause.md)  
         [partial (type)](partial-type.md)  
         [partial (method)](partial-method.md)  
-        [record](/dotnet/csharp/fundamentals/types/records)  
+        [record](../../fundamentals/types/records.md)  
         [remove](remove.md)  
         [select](select-clause.md)  
     :::column-end:::

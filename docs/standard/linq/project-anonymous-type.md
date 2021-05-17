@@ -25,7 +25,7 @@ The type of each property is inferred by the compiler. The type name is generate
 
 For more information about anonymous types, see:
 
-- [Anonymous Types (C# Programming Guide)](/dotnet/csharp/fundamentals/types/anonymous-types)
+- [Anonymous Types (C# Programming Guide)](../../csharp/fundamentals/types/anonymous-types.md)
 - [Anonymous Types (Visual Basic)](../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
 
 ## Example: Project an anonymous type by creating objects in the `select` clause
@@ -72,5 +72,5 @@ LETSS:Let's Stop N Shop:Jaime Yorres
 
 ## See also
 
-- [Anonymous Types (C# Programming Guide)](/dotnet/csharp/fundamentals/types/anonymous-types)
+- [Anonymous Types (C# Programming Guide)](../../csharp/fundamentals/types/anonymous-types.md)
 - [Anonymous Types (Visual Basic)](../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)

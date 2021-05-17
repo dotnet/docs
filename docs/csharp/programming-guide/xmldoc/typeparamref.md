@@ -25,7 +25,7 @@ ms.assetid: 6d8ffc58-12c5-4688-8db6-833a7ded5886
 
 ## Remarks
 
-For more information on type parameters in generic types and methods, see [Generics](/dotnet/csharp/fundamentals/types/generics).
+For more information on type parameters in generic types and methods, see [Generics](../../fundamentals/types/generics.md).
 
 Use this tag to enable consumers of the documentation file to format the word in some distinct way, for example in italics.
 

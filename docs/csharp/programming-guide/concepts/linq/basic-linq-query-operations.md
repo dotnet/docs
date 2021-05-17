@@ -106,4 +106,4 @@ from order in Customer.Orders...
 - [LINQ Query Expressions](../../../linq/index.md)
 - [Walkthrough: Writing Queries in C#](./walkthrough-writing-queries-linq.md)
 - [Query Keywords (LINQ)](../../../language-reference/keywords/query-keywords.md)
-- [Anonymous Types](/dotnet/csharp/fundamentals/types/anonymous-types)
+- [Anonymous Types](../../../fundamentals/types/anonymous-types.md)

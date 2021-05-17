@@ -66,7 +66,7 @@ Delegates behave like classes and structs. By default, they have `internal` acce
 
 - [C# Programming Guide](../index.md)
 - [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
-- [Interfaces](/dotnet/csharp/fundamentals/types/interfaces)
+- [Interfaces](../../fundamentals/types/interfaces.md)
 - [private](../../language-reference/keywords/private.md)
 - [public](../../language-reference/keywords/public.md)
 - [internal](../../language-reference/keywords/internal.md)

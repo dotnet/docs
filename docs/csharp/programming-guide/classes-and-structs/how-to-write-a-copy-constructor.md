@@ -11,7 +11,7 @@ ms.assetid: fba899b5-fc41-428e-a745-3ebdbf37990a
 ---
 # How to write a copy constructor (C# Programming Guide)
 
-C# [records](/dotnet/csharp/fundamentals/types/records) provide a copy constructor for objects, but for classes you have to write one yourself.  
+C# [records](../../fundamentals/types/records.md) provide a copy constructor for objects, but for classes you have to write one yourself.  
   
 ## Example  
 
@@ -22,7 +22,7 @@ C# [records](/dotnet/csharp/fundamentals/types/records) provide a copy construct
 ## See also
 
 - <xref:System.ICloneable>
-- [Records](/dotnet/csharp/fundamentals/types/records)
+- [Records](../../fundamentals/types/records.md)
 - [C# Programming Guide](../index.md)
 - [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
 - [Constructors](./constructors.md)

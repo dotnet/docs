@@ -14,7 +14,7 @@ An interface defines a contract. Any [`class`](class.md) or [`struct`](../builti
 
 In the following example, class `ImplementationClass` must implement a method named `SampleMethod` that has no parameters and returns `void`.
 
-For more information and examples, see [Interfaces](/dotnet/csharp/fundamentals/types/interfaces).
+For more information and examples, see [Interfaces](../../fundamentals/types/interfaces.md).
 
 ## Example
 
@@ -70,6 +70,6 @@ For more information, see the [Interfaces](~/_csharplang/spec/interfaces.md) sec
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Reference Types](reference-types.md)
-- [Interfaces](/dotnet/csharp/fundamentals/types/interfaces)
+- [Interfaces](../../fundamentals/types/interfaces.md)
 - [Using Properties](../../programming-guide/classes-and-structs/using-properties.md)
 - [Using Indexers](../../programming-guide/indexers/using-indexers.md)

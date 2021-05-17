@@ -49,7 +49,7 @@ The [abstract](../../language-reference/keywords/abstract.md) keyword enables yo
 
 - [C# Programming Guide](../index.md)
 - [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
-- [Inheritance](/dotnet/csharp/fundamentals/object-oriented/inheritance)
+- [Inheritance](../../fundamentals/object-oriented/inheritance.md)
 - [Methods](./methods.md)
 - [Fields](./fields.md)
 - [How to define abstract properties](./how-to-define-abstract-properties.md)

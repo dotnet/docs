@@ -131,7 +131,7 @@ public class Example
 }
 ```
 
-For more information, see [Discards](/dotnet/csharp/fundamentals/functional/discards).
+For more information, see [Discards](../fundamentals/functional/discards.md).
 
 ## Pattern matching
 
@@ -228,7 +228,7 @@ static async Task Main()
 }
 ```
 
-You can read more about the details in the [async main](/dotnet/csharp/fundamentals/program-structure/main-command-line) article in the programming guide.
+You can read more about the details in the [async main](../fundamentals/program-structure/main-command-line.md) article in the programming guide.
 
 ## Local functions
 

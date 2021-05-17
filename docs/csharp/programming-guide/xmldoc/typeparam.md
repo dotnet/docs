@@ -31,7 +31,7 @@ ms.assetid: 9b99d400-e911-4e55-99c6-64367c96aa4f
 
 The `<typeparam>` tag should be used in the comment for a generic type or method declaration to describe a type parameter. Add a tag for each type parameter of the generic type or method.
 
-For more information, see [Generics](/dotnet/csharp/fundamentals/types/generics).
+For more information, see [Generics](../../fundamentals/types/generics.md).
 
 The text for the `<typeparam>` tag will be displayed in IntelliSense, the [Object Browser Window](/visualstudio/ide/viewing-the-structure-of-code#BKMK_ObjectBrowser) code comment web report.
 

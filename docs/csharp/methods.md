@@ -282,7 +282,7 @@ For more information, see [Iterators](programming-guide/concepts/iterators.md).
 
 - [Access Modifiers](language-reference/keywords/access-modifiers.md)
 - [Static Classes and Static Class Members](programming-guide/classes-and-structs/static-classes-and-static-class-members.md)
-- [Inheritance](/dotnet/csharp/fundamentals/object-oriented/inheritance)
+- [Inheritance](fundamentals/object-oriented/inheritance.md)
 - [Abstract and Sealed Classes and Class Members](programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)
 - [params](language-reference/keywords/params.md)
 - [out](language-reference/keywords/out-parameter-modifier.md)

@@ -29,5 +29,5 @@ This example declares an [interface](../../language-reference/keywords/interface
 
 - [C# Programming Guide](../index.md)
 - [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
-- [Interfaces](/dotnet/csharp/fundamentals/types/interfaces)
+- [Interfaces](../../fundamentals/types/interfaces.md)
 - [How to explicitly implement members of two interfaces](./how-to-explicitly-implement-members-of-two-interfaces.md)

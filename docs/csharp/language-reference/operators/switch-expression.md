@@ -56,5 +56,5 @@ For more information, see the [`switch` expression](~/_csharplang/proposals/csha
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Patterns](patterns.md)
-- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](/dotnet/csharp/fundamentals/functional/tutorials/pattern-matching)
+- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/functional/tutorials/pattern-matching.md)
 - [`switch` statement](../keywords/switch.md)

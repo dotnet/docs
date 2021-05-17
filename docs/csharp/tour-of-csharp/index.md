@@ -118,7 +118,7 @@ There are several kinds of *variables* in C#, including fields, array elements, 
 
 ## Program structure
 
-The key organizational concepts in C# are [***programs***](/dotnet/csharp/fundamentals/program-structure), [***namespaces***](/dotnet/csharp/fundamentals/types/namespaces), [***types***](/dotnet/csharp/fundamentals/types), [***members***](../programming-guide/classes-and-structs/members.md), and [***assemblies***](../../standard/assembly/index.md). Programs declare types, which contain members and can be organized into namespaces. Classes, structs, and interfaces are examples of types. Fields, methods, properties, and events are examples of members. When C# programs are compiled, they're physically packaged into assemblies. Assemblies typically have the file extension `.exe` or `.dll`, depending on whether they implement ***applications*** or ***libraries***, respectively.
+The key organizational concepts in C# are [***programs***](/dotnet/csharp/fundamentals/program-structure), [***namespaces***](../fundamentals/types/namespaces.md), [***types***](/dotnet/csharp/fundamentals/types), [***members***](../programming-guide/classes-and-structs/members.md), and [***assemblies***](../../standard/assembly/index.md). Programs declare types, which contain members and can be organized into namespaces. Classes, structs, and interfaces are examples of types. Fields, methods, properties, and events are examples of members. When C# programs are compiled, they're physically packaged into assemblies. Assemblies typically have the file extension `.exe` or `.dll`, depending on whether they implement ***applications*** or ***libraries***, respectively.
 
 As a small example, consider an assembly that contains the following code:
 

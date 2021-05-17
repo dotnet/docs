@@ -11,7 +11,7 @@ ms.date: 03/14/2021
 
 Instrumented code can create <xref:System.Diagnostics.Activity> objects as part of a distributed trace, but the information
 in these objects needs to be collected into centralized storage so that the entire trace can be
-reviewed later. In this tutorial you will collect the distributed trace telemetry in different ways so that it is
+reviewed later. In this tutorial, you will collect the distributed trace telemetry in different ways so that it is
 available to diagnose application issues when needed. See
 [the instrumentation tutorial](distributed-tracing-instrumentation-walkthroughs.md) if you need to add new instrumentation.
 
@@ -23,9 +23,9 @@ available to diagnose application issues when needed. See
 
 ### Create an example application
 
-Before any distributed trace telemetry can be collected we need to produce it. Often this instrumentation might be
-in libraries but for simplicity you will create a small app that has some example instrumentation using
-<xref:System.Diagnostics.ActivitySource.StartActivity%2A>. At this point no collection is happening yet,
+Before any distributed trace telemetry can be collected, we need to produce it. Often this instrumentation might be
+in libraries, but for simplicity, you'll create a small app that has some example instrumentation using
+<xref:System.Diagnostics.ActivitySource.StartActivity%2A>. At this point, no collection has happened, and
 StartActivity() has no side-effect and returns null. See
 [the instrumentation tutorial](distributed-tracing-instrumentation-walkthroughs.md) for more details.
 
@@ -34,7 +34,7 @@ dotnet new console
 ```
 
 Applications that target .NET 5 and later already have the necessary distributed tracing APIs included. For apps targeting older
-.NET versions add the [System.Diagnostics.DiagnosticSource NuGet package](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/)
+.NET versions, add the [System.Diagnostics.DiagnosticSource NuGet package](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/)
 version 5 or greater.
 
 ```dotnetcli
@@ -97,12 +97,11 @@ Example work done
 
 ### Collect using OpenTelemetry
 
-[OpenTelemetry](https://opentelemetry.io/) is a vendor neutral open source project supported by the
+[OpenTelemetry](https://opentelemetry.io/) is a vendor-neutral open-source project supported by the
 [Cloud Native Computing Foundation](https://www.cncf.io/) that aims to standardize generating and collecting telemetry for
-cloud-native software. In this example you will collect and display distributed trace information on the console though
-OpenTelemetry can be reconfigured to send it elsewhere. See the
-[OpenTelemetry getting started guide](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started/README.md)
-for more information.
+cloud-native software. In this example, you will collect and display distributed trace information on the console though
+OpenTelemetry can be reconfigured to send it elsewhere. For more information, see the
+[OpenTelemetry getting started guide](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started/README.md).
 
 Add the [OpenTelemetry.Exporter.Console](https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/) NuGet package.
 
@@ -110,7 +109,7 @@ Add the [OpenTelemetry.Exporter.Console](https://www.nuget.org/packages/OpenTele
 dotnet add package OpenTelemetry.Exporter.Console
 ```
 
-Update Program.cs with additional OpenTelemetry using statments:
+Update Program.cs with additional OpenTelemetry `using` directives:
 
 ```C#
 using OpenTelemetry;
@@ -121,7 +120,7 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 ```
 
-Update Main() to create the OpenTelemetry TracerProvider:
+Update `Main()` to create the OpenTelemetry TracerProvider:
 
 ```C#
         public static async Task Main()
@@ -175,23 +174,21 @@ Example work done
 
 #### Sources
 
-In the example code you invoked `AddSource("Sample.DistributedTracing")` so that OpenTelemetry would
+In the example code, you invoked `AddSource("Sample.DistributedTracing")` so that OpenTelemetry would
 capture the Activities produced by the ActivitySource that was already present in the code:
 
 ```csharp
         static ActivitySource s_source = new ActivitySource("Sample.DistributedTracing");
 ```
 
-Telemetry from any ActivitySource can captured by calling AddSource() with the source's name.
+Telemetry from any ActivitySource can be captured by calling `AddSource()` with the source's name.
 
 #### Exporters
 
 The console exporter is helpful for quick examples or local development but in a production deployment
-you will probably want to send traces to a centralized store. OpenTelemetry supports a variety
-of destinations using different
+you will probably want to send traces to a centralized store. OpenTelemetry supports various destinations using different
 [exporters](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/glossary.md#exporter-library).
-See the [OpenTelemetry getting started guide](https://github.com/open-telemetry/opentelemetry-dotnet#getting-started)
-for more information on configuring OpenTelemetry.
+For more information about configuring OpenTelemetry, see the [OpenTelemetry getting started guide](https://github.com/open-telemetry/opentelemetry-dotnet#getting-started).
 
 ## Collect traces using Application Insights
 
@@ -199,8 +196,8 @@ Distributed tracing telemetry is automatically captured after configuring the Ap
 ([ASP.NET](/azure/azure-monitor/app/asp-net), [ASP.NET Core](/azure/azure-monitor/app/asp-net-core))
 or by enabling [code-less instrumentation](/azure/azure-monitor/app/codeless-overview).
 
-See the [Application Insights distributed tracing documentation](/azure/azure-monitor/app/distributed-tracing) for more
-information.
+For more
+information, see the [Application Insights distributed tracing documentation](/azure/azure-monitor/app/distributed-tracing).
 
 > [!NOTE]
 > Currently Application Insights only supports collecting specific well-known Activity instrumentation and will ignore new user added Activities. Application
@@ -226,7 +223,7 @@ dotnet new console
 ```
 
 Applications that target .NET 5 and later already have the necessary distributed tracing APIs included. For apps targeting older
-.NET versions add the [System.Diagnostics.DiagnosticSource NuGet package](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/)
+.NET versions, add the [System.Diagnostics.DiagnosticSource NuGet package](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/)
 version 5 or greater.
 
 ```dotnetcli
@@ -329,14 +326,14 @@ Setting <xref:System.Diagnostics.Activity.DefaultIdFormat> and
 <xref:System.Diagnostics.Activity.ForceDefaultIdFormat> is optional
 but helps ensure the sample produces similar output on different .NET runtime versions. .NET 5 uses
 the W3C TraceContext ID format by default but earlier .NET versions default to using
-<xref:System.Diagnostics.ActivityIdFormat.Hierarchical> ID format. See
-[Activity IDs](distributed-tracing-concepts.md#activity-ids) for more details.
+<xref:System.Diagnostics.ActivityIdFormat.Hierarchical> ID format. For more information, see
+[Activity IDs](distributed-tracing-concepts.md#activity-ids).
 
 <xref:System.Diagnostics.ActivityListener?displayProperty=nameWithType> is used to receive callbacks
 during the lifetime of an Activity.
 
 - <xref:System.Diagnostics.ActivityListener.ShouldListenTo> - Each
-Activity is associated with an ActivitySource which acts as its namespace and producer.
+Activity is associated with an ActivitySource, which acts as its namespace and producer.
 This callback is invoked once for each ActivitySource in the process. Return true
 if you are interested in performing sampling or being notified about start/stop events
 for Activities produced by this source.
@@ -349,20 +346,20 @@ indicates that the Activity should be created,
 to true, and <xref:System.Diagnostics.Activity.ActivityTraceFlags>
 will have the <xref:System.Diagnostics.ActivityTraceFlags.Recorded>
 flag set. IsAllDataRequested can be observed by the instrumented code as a hint that a listener
-wants to ensure that auxilliary Activity information such as Tags and Events are populated.
+wants to ensure that auxiliary Activity information such as Tags and Events are populated.
 The Recorded flag is encoded in the W3C TraceContext ID and is a hint to other processes
 involved in the distributed trace that this trace should be sampled.
 - <xref:System.Diagnostics.ActivityListener.ActivityStarted> and
 <xref:System.Diagnostics.ActivityListener.ActivityStopped> are
 called when an Activity is started and stopped respectively. These callbacks provide an
-oportunity to record relevant information about the Activity or potentially to modify it.
-When an Activity has just started much of the data may still be incomplete and it will
+opportunity to record relevant information about the Activity or potentially to modify it.
+When an Activity has just started, much of the data may still be incomplete and it will
 be populated before the Activity stops.
 
 Once an ActivityListener has been created and the callbacks are populated, calling
 <xref:System.Diagnostics.ActivitySource.AddActivityListener(System.Diagnostics.ActivityListener)?displayProperty=nameWithType>
 initiates invoking the callbacks. Call
 <xref:System.Diagnostics.ActivityListener.Dispose?displayProperty=nameWithType> to
-stop the flow of callbacks. Beware that in multi-threaded code callback notifications in
-progress could be received while Dispose() is running or even very shortly after it has
+stop the flow of callbacks. Be aware that in multi-threaded code, callback notifications in
+progress could be received while `Dispose()` is running or even shortly after it has
 returned.

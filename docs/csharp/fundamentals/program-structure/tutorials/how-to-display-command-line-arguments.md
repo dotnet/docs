@@ -1,5 +1,5 @@
 ---
-title: "How to display command-line arguments - C# Programming Guide"
+title: "How to display command-line arguments"
 description: Learn how to display command-line arguments. See a code example and view additional available resources.
 ms.date: 03/08/2021
 ms.topic: how-to
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "command-line arguments [C#], displaying"
 ms.assetid: b8479f2d-9e05-4d38-82da-2e61246e5437
 ---
-# How to display command-line arguments (C# Programming Guide)
+# How to display command-line arguments
 
 Arguments provided to an executable on the command line are accessible in [top-level statements](../top-level-statements.md) or through an optional parameter to `Main`. The arguments are provided in the form of an array of strings. Each element of the array contains one argument. White-space between arguments is removed. For example, consider these command-line invocations of a fictitious executable:  
   

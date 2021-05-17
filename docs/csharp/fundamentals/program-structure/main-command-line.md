@@ -81,7 +81,7 @@ The following example shows how the exit code for the process can be accessed.
 
 This example uses [.NET Core](../../../core/introduction.md) command-line tools. If you are unfamiliar with .NET Core command-line tools, you can learn about them in this [get-started article](../../../core/tutorials/with-visual-studio-code.md).
 
-Modify the `Main` method in *program.cs* as follows:
+Create a new application by running `dotnet new console`. Modify the `Main` method in *Program.cs* as follows:
 
 :::code language="csharp" source="snippets/main-command-line/MainReturnValTest.cs":::
 
@@ -93,11 +93,8 @@ Next, create a PowerShell script to run the application and display the result. 
 
 Because the code returns zero, the batch file will report success. However, if you change MainReturnValTest.cs to return a non-zero value and then recompile the program, subsequent execution of the PowerShell script will report failure.
 
-```dotnetcli
-dotnet run
-```
-
 ```powershell
+dotnet run
 if ($LastExitCode -eq 0) {
     Write-Host "Execution succeeded"
 } else
@@ -207,13 +204,13 @@ To compile and run the application from a command prompt, follow these steps:
 
 3. Enter the following command to compile the application.
   
-     `csc Factorial.cs`  
+     `dotnet build`  
   
      If your application has no compilation errors, an executable file that's named *Factorial.exe* is created.
   
 4. Enter the following command to calculate the factorial of 3:
   
-     `Factorial 3`  
+     `dotnet run -- 3`  
   
 5. The command produces this output: `The factorial of 3 is 6.`
 

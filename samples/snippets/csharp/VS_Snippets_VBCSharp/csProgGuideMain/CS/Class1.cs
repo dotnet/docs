@@ -2,7 +2,7 @@
 {
 
     //<Snippet16>
-    // Add a using directive for System if the directive isn't already present.
+    using System;
 
     public class Functions
     {

@@ -27,7 +27,7 @@ namespace YourNamespace
         }
     }
 
-    class YourMainClass
+    class Program
     {
         static void Main(string[] args)
         {

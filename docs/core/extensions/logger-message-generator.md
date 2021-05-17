@@ -179,7 +179,7 @@ public static partial void WarningLogMethod(
 
 ### Case-insensitive template name support
 
-The generator uses case-insensitive comparison between parameters in the message template and log message argument names so when the ILogger enumerates the state, the argument will be picked up by message template, which can make the logs nicer to consume:
+The generator does case-insensitive comparison between items in message template and argument names in the log message. This means that when the `ILogger` enumerates the state, the argument is picked up by message template, which can make the logs nicer to consume:
 
 ```csharp
 public partial class LoggingExample
@@ -384,18 +384,6 @@ Additionally, there are benefits over manually using <xref:Microsoft.Extensions.
 - Guided developer experience: The generator gives warnings to help developers do the right thing.
 - Support for an arbitrary number of logging parameters. `LoggerMessage.Define` supports a maximum of six.
 - Support for dynamic log level. This is not possible with `LoggerMessage.Define` alone.
-
-### Known limitations
-
-There are a few known limitations with the underlying implementation details. The first version of the generator uses `LoggerMessage.Define` where possible. The following issues are tracking potential improvements to the `Define` APIs, which could allow for better support of the source generator.
-
-- Support for an arbitrary # of logging parameters and dynamic logging
-
-  Currently the maximum number of parameters allowed from the `LoggerMessage.Define` is six. To mitigate this either the source generator would need to fallback to another approach, or we would need to add more `Define` overloads for the generator to use. The issue also tracks adding APIs to allow `Define` with supporting dynamic logging as well. For more information, see [Add `LoggerMessage.Define` overloads accepting up to 14 arguments](https://github.com/dotnet/runtime/issues/50913).
-
-- More robust support for handling message template parameters
-
-  The code generation using `LoggerMessage.Define` does not currently handle message templates when the number of parameters doesn't match the specified template parameter count. This is true regardless of whether the parameters used in the template are the same. This could be something that the source generator supports as it evolves. For more information, see [`LoggerMessage.Define` doesn't support repeating the same named parameter in the message template](https://github.com/dotnet/runtime/issues/51054).
 
 ## See also
 

@@ -38,8 +38,6 @@ For more information, see [Inheritance](../../fundamentals/object-oriented/inher
 
 For more examples, see [Abstract and Sealed Classes and Class Members](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).
 
-## Example
-
 [!code-csharp[csrefKeywordsModifiers#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#17)]
 
 In the previous example, you might try to inherit from the sealed class by using the following statement:

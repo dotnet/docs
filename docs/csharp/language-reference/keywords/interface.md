@@ -16,7 +16,7 @@ In the following example, class `ImplementationClass` must implement a method na
 
 For more information and examples, see [Interfaces](../../fundamentals/types/interfaces.md).
 
-## Example
+## Example interface
 
 [!code-csharp[csrefKeywordsTypes#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#14)]
 
@@ -54,7 +54,7 @@ A class that implements an interface can explicitly implement members of that in
 
 For more information about explicit interface implementation, see [Explicit Interface Implementation](../../programming-guide/interfaces/explicit-interface-implementation.md).
 
-## Example
+## Example interface implementation
 
 The following example demonstrates interface implementation. In this example, the interface contains the property declaration and the class contains the implementation. Any instance of a class that implements `IPoint` has integer properties `x` and `y`.
 

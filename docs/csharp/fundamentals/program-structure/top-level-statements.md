@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "C# language, top-level statements"
   - "C# language, Main method"
 ---
-# Top-level statements - programs without Main methods
+# Top-level statements - programs without `Main` methods
 
 Starting in C# 9, you don't have to explicitly include a `Main` method in a console application project. Instead, you can use the *top-level statements* feature to minimize the code you have to write. In this case, the compiler generates a class and `Main` method entry point for the application.
 

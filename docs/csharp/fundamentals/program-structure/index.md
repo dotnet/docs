@@ -8,7 +8,7 @@ ms.assetid: 5ae964a5-0ef0-40fe-88fb-6d1793371d0d
 ---
 # General Structure of a C# Program
 
-C# programs consists of one or more files. Each file contains zero or more namespaces. A namespace contains types such as classes, structs, interfaces, enumerations, and delegates, or other namespaces. The following example is the skeleton of a C# program that contains all of these elements.
+C# programs consist of one or more files. Each file contains zero or more namespaces. A namespace contains types such as classes, structs, interfaces, enumerations, and delegates, or other namespaces. The following example is the skeleton of a C# program that contains all of these elements.
 
 :::code language="csharp" source="snippets/toplevel-structure/Program.cs":::
 
@@ -18,7 +18,7 @@ The preceding example uses *top-level statements* for the program's entry point.
 
 ## Related Sections
 
-You learned about these program elements in the [types](../types/index.md) section of the fundamentals guide:
+You learn about these program elements in the [types](../types/index.md) section of the fundamentals guide:
 
 - [Classes](../types/classes.md)  
 - [Structs](../../language-reference/builtin-types/struct.md)  

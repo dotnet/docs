@@ -142,7 +142,7 @@ It can be inconvenient to create a named type for simple sets of related values 
 
 Ordinary value types can't have a value of [`null`](../../language-reference/keywords/null.md). However, you can create *nullable value types* by appending a `?` after the type. For example, `int?` is an `int` type that can also have the value [`null`](../../language-reference/keywords/null.md). Nullable value types are instances of the generic struct type <xref:System.Nullable%601?displayProperty=nameWithType>. Nullable value types are especially useful when you're passing data to and from databases in which numeric values might be `null`. For more information, see [Nullable value types](../../language-reference/builtin-types/nullable-value-types.md).
 
-## Compile-time type and runtime type
+## Compile-time type and run-time type
 
 A variable can have different compile-time and run-time types. The *compile-time type* is the declared or inferred type of the variable in the source code. The *run-time type* is the type of the instance referred to by that variable. Often those two types are the same, as in the following example:
 

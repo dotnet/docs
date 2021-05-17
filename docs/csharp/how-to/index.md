@@ -59,7 +59,7 @@ You may need to convert an object to a different type.
 - [Convert a string to a `DateTime`](../../standard/base-types/parsing-datetime.md).
 - [Convert a byte array to an int](../programming-guide/types/how-to-convert-a-byte-array-to-an-int.md).
 - [Convert a string to a number](../programming-guide/types/how-to-convert-a-string-to-a-number.md).
-- [Use pattern matching, the `as` and `is` operators to safely cast to a different type](../fundamentals/object-oriented/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md).
+- [Use pattern matching, the `as` and `is` operators to safely cast to a different type](../fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md).
 - [Define custom type conversions](../language-reference/operators/user-defined-conversion-operators.md).
 - [Determine if a type is a nullable value type](../language-reference/builtin-types/nullable-value-types.md#how-to-identify-a-nullable-value-type).
 - [Convert between nullable and non-nullable value types](../language-reference/builtin-types/nullable-value-types.md#conversion-from-a-nullable-value-type-to-an-underlying-type).
@@ -133,4 +133,4 @@ to use these techniques.
 Typically, C# programs have command line arguments. These articles teach you to access and process
 those command line arguments.
 
-- [Retrieve all command line arguments with `for`](../fundamentals/program-structure/tutorials/how-to-display-command-line-arguments.md).
+- [Retrieve all command line arguments with `for`](../fundamentals/tutorials/how-to-display-command-line-arguments.md).

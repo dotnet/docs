@@ -45,11 +45,6 @@ items:
       href: fundamentals/program-structure/main-command-line.md
     - name: Top-level statements
       href: fundamentals/program-structure/top-level-statements.md
-    - name: Tutorials
-      items:
-      - name: "How to display command-line arguments"
-        href: fundamentals/program-structure/tutorials/how-to-display-command-line-arguments.md
-      # Command line processing tutorials
   - name: Type system
     items:
     - name: Overview
@@ -69,12 +64,6 @@ items:
     - name: Anonymous Types
       href: fundamentals/types/anonymous-types.md
     # TODO: Delegates, lambdas and events
-    # TODO: Tutorials
-        # TODO: DTOs (tuples, anonymous types and records)
-        # TODO: Values (record structs and structs)
-        # TODO: Classes and objects (interfaces and classes)
-        # TODO: Generics (methods and classes)
-        # TODO: Fundamentals of using lambdas
   - name: Object Oriented programming
     items:
     - name: Overview
@@ -87,19 +76,6 @@ items:
     # Encapsulation & composition
     - name: Polymorphism
       href: fundamentals/object-oriented/polymorphism.md
-    - name: Tutorials
-      items:
-      - name: Introduction to classes
-        href: fundamentals/object-oriented/tutorials/classes.md
-      - name: Object-Oriented C#
-        href: fundamentals/object-oriented/tutorials/oop.md
-      # Composing objects from parts
-      - name: Inheritance in C# and .NET
-        href: fundamentals/object-oriented/tutorials/inheritance.md
-      # programming to interfaces
-      - name: Converting types
-        displayName: cast, is, as
-        href: fundamentals/object-oriented/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md
   - name: Functional techniques
     items:
     # - Conceptual overview
@@ -117,12 +93,6 @@ items:
       href: fundamentals/functional/discards.md
     - name: Deconstructing tuples and other types
       href: fundamentals/functional/deconstruct.md
-    - name: Tutorials
-      items:
-      - name: Build data-driven algorithms with pattern matching
-        href: fundamentals/functional/tutorials/pattern-matching.md
-      # separating data and algorithms
-      # Data transformations
   - name: Exceptions and errors
     items:
     - name: Overview
@@ -136,19 +106,42 @@ items:
       href: fundamentals/exceptions/creating-and-throwing-exceptions.md
     - name: Compiler-Generated Exceptions
       href: fundamentals/exceptions/compiler-generated-exceptions.md
-    ## TODO: Replace with a tutorial (include async exceptions)
-    - name: How to
-      items:
-      - name: "How to handle an exception using try-catch"
-        href: fundamentals/exceptions/how-to-handle-an-exception-using-try-catch.md
-      - name: "How to execute cleanup code using finally"
-        href: fundamentals/exceptions/how-to-execute-cleanup-code-using-finally.md
   - name: Coding style
     items:
     - name: Identifier names
       href: fundamentals/coding-style/identifier-names.md
     - name: C# Coding Conventions
       href: fundamentals/coding-style/coding-conventions.md
+  - name: Tutorials
+    items:
+    - name: "How to display command-line arguments"
+      href: fundamentals/tutorials/how-to-display-command-line-arguments.md
+      # TODO: Command line processing tutorials
+      # TODO: DTOs (tuples, anonymous types and records)
+      # TODO: Values (record structs and structs)
+      # TODO: Classes and objects (interfaces and classes)
+      # TODO: Generics (methods and classes)
+      # TODO: Fundamentals of using lambdas
+    - name: Introduction to classes
+      href: fundamentals/tutorials/classes.md
+    - name: Object-Oriented C#
+      href: fundamentals/tutorials/oop.md
+    # Composing objects from parts
+    - name: Inheritance in C# and .NET
+      href: fundamentals/tutorials/inheritance.md
+    # programming to interfaces
+    - name: Converting types
+      displayName: cast, is, as
+      href: fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md
+    - name: Build data-driven algorithms with pattern matching
+      href: fundamentals/tutorials/pattern-matching.md
+    # separating data and algorithms
+    # Data transformations
+    ## TODO: Replace with a tutorial (include async exceptions)
+    - name: "How to handle an exception using try-catch"
+      href: fundamentals/exceptions/how-to-handle-an-exception-using-try-catch.md
+    - name: "How to execute cleanup code using finally"
+      href: fundamentals/exceptions/how-to-execute-cleanup-code-using-finally.md
 - name: What's new in C#
   items:
   - name: C# 9.0

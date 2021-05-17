@@ -34,7 +34,7 @@ In those constructs, you can match an input expression against any of the follow
 
 [Logical](#logical-patterns), [property](#property-pattern), and [positional](#positional-pattern) patterns are *recursive* patterns. That is, they can contain *nested* patterns.
 
-For the example of how to use those patterns to build a data-driven algorithm, see [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/functional/tutorials/pattern-matching.md).
+For the example of how to use those patterns to build a data-driven algorithm, see [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/pattern-matching.md).
 
 ## Declaration and type patterns
 
@@ -244,4 +244,4 @@ For more information, see the following feature proposal notes:
 
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
-- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/functional/tutorials/pattern-matching.md)
+- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/pattern-matching.md)

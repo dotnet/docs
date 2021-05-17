@@ -58,7 +58,7 @@ The following example illustrates the use of tuples with discards. The `QueryCit
 
 ## User-defined types
 
-C# doesn't offer built-in support for deconstructing non-tuple types other than the [`record`](#deconstructing-a-record-type) and [DictionaryEntry](xref:System.Collections.DictionaryEntry.Deconstruct%2A) types. However, as the author of a class, a struct, or an interface, you can allow instances of the type to be deconstructed by implementing one or more `Deconstruct` methods. The method returns void, and each value to be deconstructed is indicated by an [out](../../language-reference/keywords/out-parameter-modifier.md) parameter in the method signature. For example, the following `Deconstruct` method of a `Person` class returns the first, middle, and last name:
+C# doesn't offer built-in support for deconstructing non-tuple types other than the [`record`](#record-type) and [DictionaryEntry](xref:System.Collections.DictionaryEntry.Deconstruct%2A) types. However, as the author of a class, a struct, or an interface, you can allow instances of the type to be deconstructed by implementing one or more `Deconstruct` methods. The method returns void, and each value to be deconstructed is indicated by an [out](../../language-reference/keywords/out-parameter-modifier.md) parameter in the method signature. For example, the following `Deconstruct` method of a `Person` class returns the first, middle, and last name:
 
 :::code language="csharp" source="./snippets/deconstructing-tuples/deconstruct-tuple2.cs" ID="Snippet1":::
 
@@ -78,7 +78,7 @@ Multiple `Deconstruct` methods having the same number of parameters are ambiguou
 
 ## User-defined type with discards
 
-Just as you do with [tuples](#deconstructing-tuple-elements-with-discards), you can use discards to ignore selected items returned by a `Deconstruct` method. Each discard is defined by a variable named "\_", and a single deconstruction operation can include multiple discards.
+Just as you do with [tuples](#tuple-elements-with-discards), you can use discards to ignore selected items returned by a `Deconstruct` method. Each discard is defined by a variable named "\_", and a single deconstruction operation can include multiple discards.
 
 The following example deconstructs a `Person` object into four strings (the first and last names, the city, and the state) but discards the last name and the state.
 

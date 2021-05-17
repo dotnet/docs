@@ -25,7 +25,7 @@ You learn about these program elements in the [types](../types/index.md) section
 - [Namespaces](../types/namespaces.md)  
 - [Interfaces](../types/interfaces.md)  
 - [Enums](../../language-reference/builtin-types/enum.md)
-- [Delegates](../delegates-overview.md)
+- [Delegates](../../delegates-overview.md)
   
 ## C# Language Specification  
 

@@ -9,4 +9,4 @@ ms.date: 10/20/2020
 The <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator?displayProperty=nameWithType> API is marked obsolete, starting in .NET 5.0. Using this API generates warning `SYSLIB0008` at compile time.
 
 <!-- Include adds ## Suppress warnings (H2 heading) -->
-[!INCLUDE [suppress-warnings](includes/suppress-warnings.md)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]

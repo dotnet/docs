@@ -12,4 +12,4 @@ The following APIs are marked obsolete, starting in .NET 5.0. Use of these APIs 
 - <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType>
 
 <!-- Include adds ## Suppress warnings (H2 heading) -->
-[!INCLUDE [suppress-warnings](includes/suppress-warnings.md)]
+[!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]

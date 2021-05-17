@@ -62,9 +62,9 @@ A class can contain declarations of the following members:
 
 - [Delegates](../../programming-guide/delegates/index.md)
 
-- [Classes](../../programming-guide/classes-and-structs/classes.md)
+- [Classes](/dotnet/csharp/fundamentals/types/classes)
 
-- [Interfaces](../../programming-guide/interfaces/index.md)
+- [Interfaces](/dotnet/csharp/fundamentals/types/interfaces)
 
 - [Structure types](../builtin-types/struct.md)
 

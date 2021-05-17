@@ -32,7 +32,7 @@ When you create an anonymous type that contains an array, the array must be impl
 - [C# Programming Guide](../index.md)
 - [Implicitly Typed Local Variables](../classes-and-structs/implicitly-typed-local-variables.md)
 - [Arrays](./index.md)
-- [Anonymous Types](../classes-and-structs/anonymous-types.md)
+- [Anonymous Types](/dotnet/csharp/fundamentals/types/anonymous-types)
 - [Object and Collection Initializers](../classes-and-structs/object-and-collection-initializers.md)
 - [var](../../language-reference/keywords/var.md)
 - [LINQ in C#](../../linq/index.md)

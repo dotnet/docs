@@ -46,7 +46,7 @@ For more information about arrays, see [Arrays](../../programming-guide/arrays/i
 
 ## Instantiation of anonymous types
 
-To create an instance of an [anonymous type](../../programming-guide/classes-and-structs/anonymous-types.md), use the `new` operator and object initializer syntax:
+To create an instance of an [anonymous type](/dotnet/csharp/fundamentals/types/anonymous-types), use the `new` operator and object initializer syntax:
 
 [!code-csharp-interactive[anonymous type](snippets/shared/NewOperator.cs#AnonymousType)]
 

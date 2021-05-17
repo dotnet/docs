@@ -31,9 +31,9 @@ C# version 1.0 looked stripped of features, compared to today. You'd find yourse
 
 The major features of C# 1.0 included:
 
-- [Classes](../programming-guide/classes-and-structs/classes.md)
+- [Classes](/dotnet/csharp/fundamentals/types/classes)
 - [Structs](../language-reference/builtin-types/struct.md)
-- [Interfaces](../programming-guide/interfaces/index.md)
+- [Interfaces](/dotnet/csharp/fundamentals/types/interfaces)
 - [Events](../events-overview.md)
 - [Properties](../properties.md)
 - [Delegates](../delegates-overview.md)
@@ -49,7 +49,7 @@ C# version 1.2 shipped with Visual Studio .NET 2003. It contained a few small en
 
 Now things start to get interesting. Let's take a look at some major features of C# 2.0, released in 2005, along with Visual Studio 2005:
 
-- [Generics](../programming-guide/generics/index.md)
+- [Generics](/dotnet/csharp/fundamentals/types/generics)
 - [Partial types](../programming-guide/classes-and-structs/partial-classes-and-methods.md#partial-classes)
 - [Anonymous methods](../language-reference/operators/delegate-operator.md)
 - [Nullable value types](../language-reference/builtin-types/nullable-value-types.md)
@@ -76,7 +76,7 @@ And yet, C# continued to play a bit of catch-up with Java. Java had already rele
 C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full boat of language features would actually come with .NET Framework version 3.5. This version marked a major change in the growth of C#. It established C# as a truly formidable programming language. Let's take a look at some major features in this version:
 
 - [Auto-implemented properties](../programming-guide/classes-and-structs/auto-implemented-properties.md)
-- [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)
+- [Anonymous types](/dotnet/csharp/fundamentals/types/anonymous-types)
 - [Query expressions](../linq/query-expression-basics.md)
 - [Lambda expressions](../language-reference/operators/lambda-expressions.md)
 - [Expression trees](../expression-trees.md)

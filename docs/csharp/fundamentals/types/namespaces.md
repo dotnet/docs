@@ -24,7 +24,7 @@ Second, declaring your own namespaces can help you control the scope of class an
 
 [!code-csharp[csProgGuideNamespaces#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces.cs#6)]
 
-The name of the namespace must be a valid C# [identifier name](../../programming-guide/inside-a-program/identifier-names.md).
+The name of the namespace must be a valid C# [identifier name](/dotnet/csharp/fundamentals/coding-style/identifier-names).
 
 ## Namespaces overview
 

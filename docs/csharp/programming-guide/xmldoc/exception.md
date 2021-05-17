@@ -36,7 +36,7 @@ The `<exception>` tag lets you specify which exceptions can be thrown. This tag 
 
 Compile with [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) to process documentation comments to a file.
 
-For more information about exception handling, see [Exceptions and Exception Handling](../exceptions/index.md).
+For more information about exception handling, see [Exceptions and Exception Handling](/dotnet/csharp/fundamentals/exceptions).
 
 ## Example
 

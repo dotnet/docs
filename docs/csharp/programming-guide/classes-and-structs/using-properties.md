@@ -68,7 +68,7 @@ Properties can be marked as `public`, `private`, `protected`, `internal`, `prote
 
 A property may be declared as a static property by using the `static` keyword. This makes the property available to callers at any time, even if no instance of the class exists. For more information, see [Static Classes and Static Class Members](./static-classes-and-static-class-members.md).
 
-A property may be marked as a virtual property by using the [virtual](../../language-reference/keywords/virtual.md) keyword. This enables derived classes to override the property behavior by using the [override](../../language-reference/keywords/override.md) keyword. For more information about these options, see [Inheritance](inheritance.md).
+A property may be marked as a virtual property by using the [virtual](../../language-reference/keywords/virtual.md) keyword. This enables derived classes to override the property behavior by using the [override](../../language-reference/keywords/override.md) keyword. For more information about these options, see [Inheritance](/dotnet/csharp/fundamentals/object-oriented/inheritance).
 
 A property overriding a virtual property can also be [sealed](../../language-reference/keywords/sealed.md), specifying that for derived classes it is no longer virtual. Lastly, a property can be declared [abstract](../../language-reference/keywords/abstract.md). This means that there is no implementation in the class, and derived classes must write their own implementation. For more information about these options, see [Abstract and Sealed Classes and Class Members](abstract-and-sealed-classes-and-class-members.md).
   

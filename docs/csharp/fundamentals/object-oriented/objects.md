@@ -47,7 +47,7 @@ When you compare two objects for equality, you must first distinguish whether yo
 
 For more information:
 
-- [Classes](../../programming-guide/classes-and-structs/classes.md)
+- [Classes](/dotnet/csharp/fundamentals/types/classes)
 - [Constructors](../../programming-guide/classes-and-structs/constructors.md)
 - [Finalizers](../../programming-guide/classes-and-structs/destructors.md)
 - [Events](../../programming-guide/events/index.md)

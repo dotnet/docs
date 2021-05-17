@@ -34,7 +34,7 @@ When the object is created, enough memory is allocated on the managed heap for t
  }
 ```
 
- The `class` keyword is preceded by the access level. Because [`public`](../../language-reference/keywords/public.md) is used in this case, anyone can create instances of this class. The name of the class follows the `class` keyword. The name of the class must be a valid C# [identifier name](../../programming-guide/inside-a-program/identifier-names.md). The remainder of the definition is the class body, where the behavior and data are defined. Fields, properties, methods, and events on a class are collectively referred to as *class members*.  
+ The `class` keyword is preceded by the access level. Because [`public`](../../language-reference/keywords/public.md) is used in this case, anyone can create instances of this class. The name of the class follows the `class` keyword. The name of the class must be a valid C# [identifier name](/dotnet/csharp/fundamentals/coding-style/identifier-names). The remainder of the definition is the class body, where the behavior and data are defined. Fields, properties, methods, and events on a class are collectively referred to as *class members*.  
   
 ## Creating objects
 
@@ -75,7 +75,7 @@ Inheritance is accomplished by using a *derivation*, which means a class is decl
  }
  ```
 
-When a class declares a base class, it inherits all the members of the base class except the constructors. For more information, see [Inheritance](../../programming-guide/classes-and-structs/inheritance.md).
+When a class declares a base class, it inherits all the members of the base class except the constructors. For more information, see [Inheritance](/dotnet/csharp/fundamentals/object-oriented/inheritance).
 
 A class in C# can only directly inherit from one base class. However, because a base class may itself inherit from another class, a class may indirectly inherit multiple base classes. Furthermore, a class can directly implement one or more interfaces. For more information, see [Interfaces](interfaces.md).
 

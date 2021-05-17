@@ -16,7 +16,7 @@ You define an interface by using the [`interface`](../../language-reference/keyw
 
 :::code language="csharp" source="~/samples/snippets/csharp/objectoriented/interfaces.cs" ID="Equatable":::
 
-The name of an interface must be a valid C# [identifier name](../../programming-guide/inside-a-program/identifier-names.md). By convention, interface names begin with a capital `I`.
+The name of an interface must be a valid C# [identifier name](/dotnet/csharp/fundamentals/coding-style/identifier-names). By convention, interface names begin with a capital `I`.
 
 Any class or struct that implements the <xref:System.IEquatable%601> interface must contain a definition for an <xref:System.IEquatable%601.Equals%2A> method that matches the signature that the interface specifies. As a result, you can count on a class that implements `IEquatable<T>` to contain an `Equals` method with which an instance of the class can determine whether it's equal to another instance of the same class.
 
@@ -38,7 +38,7 @@ Properties and indexers of a class can define extra accessors for a property or 
 
 Interfaces can inherit from one or more interfaces. The derived interface inherits the members from its base interfaces. A class that implements a derived interface must implement all members in the derived interface, including all members of the derived interface's base interfaces. That class may be implicitly converted to the derived interface or any of its base interfaces. A class might include an interface multiple times through base classes that it inherits or through interfaces that other interfaces inherit. However, the class can provide an implementation of an interface only one time and only if the class declares the interface as part of the definition of the class (`class ClassName : InterfaceName`). If the interface is inherited because you inherited a base class that implements the interface, the base class provides the implementation of the members of the interface. However, the derived class can reimplement any virtual interface members instead of using the inherited implementation. When interfaces declare a default implementation of a method, any class implementing that interface inherits that implementation. Implementations defined in interfaces are virtual and the implementing class may override that implementation.
 
-A base class can also implement interface members by using virtual members. In that case, a derived class can change the interface behavior by overriding the virtual members. For more information about virtual members, see [Polymorphism](../../programming-guide/classes-and-structs/polymorphism.md).
+A base class can also implement interface members by using virtual members. In that case, a derived class can change the interface behavior by overriding the virtual members. For more information about virtual members, see [Polymorphism](/dotnet/csharp/fundamentals/object-oriented/polymorphism).
 
 ## Interfaces summary
 

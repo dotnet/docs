@@ -209,7 +209,7 @@ items:
   - name: Choose a strategy for enabling nullable reference types
     href: nullable-migration-strategies.md
   - name: Deconstructing tuples and other types
-    href: deconstruct.md
+    href: /dotnet/csharp/fundamentals/functional/deconstruct
   - name: Methods
     href: methods.md
   - name: Properties
@@ -217,7 +217,7 @@ items:
   - name: Indexers
     href: indexers.md
   - name: Discards
-    href: discards.md
+    href: /dotnet/csharp/fundamentals/functional/discards
   - name: Iterators
     href: iterators.md
   - name: Delegates & events
@@ -281,7 +281,7 @@ items:
     - name: Handle exceptions in query expressions
       href: linq/handle-exceptions-in-query-expressions.md
   - name: Pattern Matching
-    href: pattern-matching.md
+    href: /dotnet/csharp/fundamentals/functiona/pattern-matching
   - name: Write safe, efficient code
     href: write-safe-efficient-code.md
   - name: Expression trees
@@ -324,7 +324,7 @@ items:
   - name: Compare strings
     href: how-to/compare-strings.md
   - name: Safely cast using pattern matching and is/as operators
-    href: how-to/safely-cast-using-pattern-matching-is-and-as-operators.md
+    href: /dotnet/csharp/fundamentals/object-oriented/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md
   - name: "How to catch a non-CLS exception"
     href: how-to/how-to-catch-a-non-cls-exception.md
 - name: The .NET Compiler Platform SDK (Roslyn APIs)

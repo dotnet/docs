@@ -48,4 +48,4 @@ In this example, the <xref:System.BitConverter.GetBytes%28System.Int32%29> metho
 
 - <xref:System.BitConverter>
 - <xref:System.BitConverter.IsLittleEndian>
-- [Types](./index.md)
+- [Types](/dotnet/csharp/fundamentals/types)

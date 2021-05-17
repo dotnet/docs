@@ -59,7 +59,7 @@ You may need to convert an object to a different type.
 - [Convert a string to a `DateTime`](../../standard/base-types/parsing-datetime.md).
 - [Convert a byte array to an int](../programming-guide/types/how-to-convert-a-byte-array-to-an-int.md).
 - [Convert a string to a number](../programming-guide/types/how-to-convert-a-string-to-a-number.md).
-- [Use pattern matching, the `as` and `is` operators to safely cast to a different type](safely-cast-using-pattern-matching-is-and-as-operators.md).
+- [Use pattern matching, the `as` and `is` operators to safely cast to a different type](/dotnet/csharp/fundamentals/object-oriented/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md).
 - [Define custom type conversions](../language-reference/operators/user-defined-conversion-operators.md).
 - [Determine if a type is a nullable value type](../language-reference/builtin-types/nullable-value-types.md#how-to-identify-a-nullable-value-type).
 - [Convert between nullable and non-nullable value types](../language-reference/builtin-types/nullable-value-types.md#conversion-from-a-nullable-value-type-to-an-underlying-type).
@@ -78,9 +78,9 @@ natural ordering among objects of that type.
 successfully complete their work by throwing exceptions. In these articles you'll learn to work
 with exceptions.
 
-- [Handle exceptions using `try` and `catch`](../programming-guide/exceptions/how-to-handle-an-exception-using-try-catch.md).
-- [Cleanup resources using `finally` clauses](../programming-guide/exceptions/how-to-execute-cleanup-code-using-finally.md).
-- [Recover from non-CLS (Common Language Specification) exceptions](../programming-guide/exceptions/how-to-catch-a-non-cls-exception.md).
+- [Handle exceptions using `try` and `catch`](/dotnet/csharp/fundamentals/exceptions/how-to-handle-an-exception-using-try-catch).
+- [Cleanup resources using `finally` clauses](/dotnet/csharp/fundamentals/exceptions/how-to-execute-cleanup-code-using-finally).
+- [Recover from non-CLS (Common Language Specification) exceptions](/dotnet/csharp/how-to/how-to-catch-a-non-cls-exception).
 
 ## Delegates and events
 
@@ -133,4 +133,4 @@ to use these techniques.
 Typically, C# programs have command line arguments. These articles teach you to access and process
 those command line arguments.
 
-- [Retrieve all command line arguments with `for`](../programming-guide/main-and-command-args/how-to-display-command-line-arguments.md).
+- [Retrieve all command line arguments with `for`](/dotnet/csharp/fundamentals/program-structure/tutorials/how-to-display-command-line-arguments).

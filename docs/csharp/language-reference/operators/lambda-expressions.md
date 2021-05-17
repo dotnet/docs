@@ -86,7 +86,7 @@ Sometimes the compiler can't infer the types of input parameters. You can specif
 
 Input parameter types must be all explicit or all implicit; otherwise, a [CS0748](../../misc/cs0748.md) compiler error occurs.
 
-Beginning with C# 9.0, you can use [discards](../../discards.md) to specify two or more input parameters of a lambda expression that aren't used in the expression:
+Beginning with C# 9.0, you can use [discards](/dotnet/csharp/fundamentals/functional/discards) to specify two or more input parameters of a lambda expression that aren't used in the expression:
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetDiscards":::
 

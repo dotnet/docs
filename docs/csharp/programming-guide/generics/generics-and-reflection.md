@@ -43,6 +43,6 @@ Because the Common Language Runtime (CLR) has access to generic type information
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Generics](./index.md)
+- [Generics](/dotnet/csharp/fundamentals/types/generics)
 - [Reflection and Generic Types](../../../framework/reflection-and-codedom/reflection-and-generic-types.md)
 - [Generics](../../../standard/generics/index.md)

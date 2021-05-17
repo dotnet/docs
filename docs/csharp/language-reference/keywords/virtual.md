@@ -58,7 +58,7 @@ The following program calculates and displays the appropriate area for each figu
 
 ## See also
 
-- [Polymorphism](../../programming-guide/classes-and-structs/polymorphism.md)
+- [Polymorphism](/dotnet/csharp/fundamentals/object-oriented/polymorphism)
 - [abstract](abstract.md)
 - [override](override.md)
 - [new (modifier)](new-modifier.md)

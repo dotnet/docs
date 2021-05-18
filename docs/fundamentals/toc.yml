@@ -48,6 +48,8 @@ items:
       href: ../core/install/templates.md
     - name: macOS Notarization issues
       href: ../core/install/macos-notarization-issues.md
+    - name: Troubleshoot .NET Package mix ups on Linux
+      href: ../core/install/linux-package-mixup.md 
     - name: How to check .NET versions
       href: ../core/install/how-to-detect-installed-versions.md
     - name: Install localized IntelliSense
@@ -1880,6 +1882,9 @@ items:
       href: ../core/extensions/logging.md
     - name: Logging providers
       href: ../core/extensions/logging-providers.md
+    - name: Compile-time logging source generation
+      href: ../core/extensions/logger-message-generator.md
+      displayName: LoggerMessage,LoggerMessageAttribute,source generator,compile-time generation
     - name: Implement a custom logging provider
       href: ../core/extensions/custom-logging-provider.md
     - name: High-performance logging

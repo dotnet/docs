@@ -6,7 +6,7 @@ ms.date: 05/14/2021
 
 # Pattern matching overview
 
-*Pattern matching* is a technique where you test an expression to determine if it has certain characteristics. C# pattern matching provides more concise syntax for testing expressions and taking action when an expression matches. The "[`is`](../../language-reference/operators/is.md) expression" now supports pattern matching to test an expression and conditionally declare a new variable to the result of that expression. The "[`switch`](../../language-reference/operators/switch-expression.md) expression" enables you to perform actions based on the first matching pattern for an expression. These two expressions support a rich vocabulary of [*patterns*](../../language-reference/operators/patterns.md). You have a rich vocabulary to express your algorithms.
+*Pattern matching* is a technique where you test an expression to determine if it has certain characteristics. C# pattern matching provides more concise syntax for testing expressions and taking action when an expression matches. The "[`is`](../../language-reference/operators/is.md) expression" supports pattern matching to test an expression and conditionally declare a new variable to the result of that expression. The "[`switch`](../../language-reference/operators/switch-expression.md) expression" enables you to perform actions based on the first matching pattern for an expression. These two expressions support a rich vocabulary of [*patterns*](../../language-reference/operators/patterns.md).
 
 This article provides an overview of scenarios where you can use pattern matching. These techniques can improve the readability and correctness of your code. For a full discussion of all the patterns you can apply, see the article on [patterns](../../language-reference/operators/patterns.md) in the language reference.
 
@@ -74,7 +74,7 @@ The first two arms examine two properties of the `Order`. The third examines onl
 
 The preceding code demonstrates the [*positional pattern*](../../language-reference/operators/patterns.md#positional-pattern) where the properties are deconstructed for the expression.
 
-This article provided a tour of the kinds of code you can write with pattern matching in C#. The articles below show more examples of using patterns in scenarios, and the full vocabulary of patterns available to use.
+This article provided a tour of the kinds of code you can write with pattern matching in C#. The following articles show more examples of using patterns in scenarios, and the full vocabulary of patterns available to use.
 
 ## See also
 

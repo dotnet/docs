@@ -1,5 +1,4 @@
-﻿// <Snippet3>
-using Microsoft.Win32.SafeHandles;
+﻿using Microsoft.Win32.SafeHandles;
 using System;
 using System.Runtime.InteropServices;
 
@@ -31,4 +30,3 @@ class BaseClass : IDisposable
         _disposed = true;
     }
 }
-// </Snippet3>

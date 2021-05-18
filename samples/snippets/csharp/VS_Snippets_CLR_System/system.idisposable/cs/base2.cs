@@ -1,5 +1,4 @@
-﻿// <Snippet5>
-using System;
+﻿using System;
 
 class BaseClass : IDisposable
 {
@@ -34,4 +33,3 @@ class BaseClass : IDisposable
         _disposed = true;
     }
 }
-// </Snippet5>

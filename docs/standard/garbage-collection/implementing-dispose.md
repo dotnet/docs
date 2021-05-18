@@ -96,16 +96,16 @@ All non-sealed classes or (Visual Basic classes not modified as `NotInheritable`
 
 Here's the general pattern for implementing the dispose pattern for a base class that uses a safe handle.
 
-:::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/base1.cs" id="3":::
-:::code language="vb" source=".../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/base1.vb" id="3":::
+:::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/base1.cs":::
+:::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/base1.vb":::
 
 > [!NOTE]
 > The previous example uses a <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> object to illustrate the pattern; any object derived from <xref:System.Runtime.InteropServices.SafeHandle> could be used instead. Note that the example does not properly instantiate its <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> object.
 
 Here's the general pattern for implementing the dispose pattern for a base class that overrides <xref:System.Object.Finalize%2A?displayProperty=nameWithType>.
 
-:::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/base2.cs" id="5":::
-:::code language="vb" source=".../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/base2.vb" id="5":::
+:::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/base2.cs":::
+:::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/base2.vb":::
 
 > [!TIP]
 > In C#, you create a [finalizer](../../csharp/programming-guide/classes-and-structs/destructors.md) by overriding <xref:System.Object.Finalize%2A?displayProperty=nameWithType>. In Visual Basic, this is done with `Protected Overrides Sub Finalize()`.
@@ -120,7 +120,7 @@ A class derived from a class that implements the <xref:System.IDisposable> inter
 Here's the general pattern for implementing the dispose pattern for a derived class that uses a safe handle:
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/derived1.cs" id="4":::
-:::code language="vb" source=".../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/derived1.vb" id="4":::
+:::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/derived1.vb" id="4":::
 
 > [!NOTE]
 > The previous example uses a <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> object to illustrate the pattern; any object derived from <xref:System.Runtime.InteropServices.SafeHandle> could be used instead. Note that the example does not properly instantiate its <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> object.
@@ -128,7 +128,7 @@ Here's the general pattern for implementing the dispose pattern for a derived cl
 Here's the general pattern for implementing the dispose pattern for a derived class that overrides <xref:System.Object.Finalize%2A?displayProperty=nameWithType>:
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/derived2.cs" id="6":::
-:::code language="vb" source=".../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/derived3.vb" id="6":::
+:::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/derived3.vb" id="6":::
 
 ## Implement the dispose pattern with safe handles
 

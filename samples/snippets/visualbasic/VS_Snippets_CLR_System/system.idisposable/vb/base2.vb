@@ -1,4 +1,4 @@
-﻿Class BaseClass : Implements IDisposable
+﻿Class BaseClassWithFinalizer : Implements IDisposable
     ' Flag: Has Dispose already been called?
     Dim disposed As Boolean = False
 

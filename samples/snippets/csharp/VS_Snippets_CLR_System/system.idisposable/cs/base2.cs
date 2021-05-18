@@ -1,11 +1,11 @@
 ﻿using System;
 
-class BaseClass : IDisposable
+class BaseClassWithFinalizer : IDisposable
 {
     // To detect redundant calls
     private bool _disposed = false;
 
-    ~BaseClass() => Dispose(false);
+    ~BaseClassWithFinalizer() => Dispose(false);
 
     // Public implementation of Dispose pattern callable by consumers.
     public void Dispose()

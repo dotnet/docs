@@ -49,7 +49,6 @@ The <xref:System.IDisposable> interface requires the implementation of a single 
   :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/Disposable.cs" id="DisposeBool":::
   :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/Disposable.vb" id="DisposeBool":::
   
-
   > [!IMPORTANT]
   > The `disposing` parameter should be `false` when called from a finalizer, and `true` when called from the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method. In other words, it is `true` when deterministically called and `false` when non-deterministically called.
 

@@ -128,7 +128,7 @@ Here's the general pattern for implementing the dispose pattern for a derived cl
 Here's the general pattern for implementing the dispose pattern for a derived class that overrides <xref:System.Object.Finalize%2A?displayProperty=nameWithType>:
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/derived2.cs" id="6":::
-:::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/derived3.vb" id="6":::
+:::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/derived2.vb" id="6":::
 
 ## Implement the dispose pattern with safe handles
 

@@ -193,7 +193,7 @@ For more information about configuring OpenTelemetry, see the [OpenTelemetry get
 ## Collect traces using Application Insights
 
 Distributed tracing telemetry is automatically captured after configuring the Application Insights SDK for
-([ASP.NET](/azure/azure-monitor/app/asp-net) or [ASP.NET Core](/azure/azure-monitor/app/asp-net-core)),
+[ASP.NET](/azure/azure-monitor/app/asp-net) or [ASP.NET Core](/azure/azure-monitor/app/asp-net-core),
 or by enabling [code-less instrumentation](/azure/azure-monitor/app/codeless-overview).
 
 For more

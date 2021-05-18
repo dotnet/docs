@@ -14,18 +14,18 @@ ms.assetid: 81b2cdb5-c91a-4a31-9c83-eadc52da5cf0
 
 # Using objects that implement IDisposable
 
-The common language runtime's garbage collector (GC) reclaims the memory used by managed objects, but types that use unmanaged resources *should* implement the <xref:System.IDisposable> interface to allow the resources needed by these unmanaged resources to be reclaimed. When you finish using an object that implements <xref:System.IDisposable>, you call the object's <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation to explicitly perform cleanup. You can do this in one of two ways:
+The common language runtime's garbage collector (GC) reclaims the memory used by managed objects. Typically, types that use unmanaged resources implement the <xref:System.IDisposable> or <xref:System.IAsyncDisposable> interface to allow the resources needed by unmanaged resources to be reclaimed. When you finish using an object that implements <xref:System.IDisposable>, you call the object's <xref:System.IDisposable.Dispose%2A> or <xref:System.IDisposable.DisposeAsync%2A> implementation to explicitly perform cleanup. You can do this in one of two ways:
 
 - With the C# `using` statement or declaration (`Using` in Visual Basic).
-- By implementing a `try/finally` block, and calling the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> in the `finally`.
+- By implementing a `try/finally` block, and calling the <xref:System.IDisposable.Dispose%2A> or <xref:System.IDisposable.DisposeAsync%2A> method in the `finally`.
 
 > [!IMPORTANT]
-> The <xref:System.GC?displayProperty=fullName> will ***not*** dispose your objects, as it has no knowledge of `Dispose` or `IDisposable` implementations. The GC only knows whether an object is finalizable (defines an <xref:System.Object.Finalize?displayProperty=nameWithType>), and when the object's finalizer needs to be called. For more information, see [How finalization works](/dotnet/api/system.object.finalize#how-finalization-works). For additional details on implementing `Dispose` and `DisposeAsync`, see:
+> The GC does ***not*** dispose your objects, as it has no knowledge of `Dispose` or `IDisposable` implementations. The GC only knows whether an object is finalizable (that is, it defines an <xref:System.Object.Finalize?displayProperty=nameWithType> method), and when the object's finalizer needs to be called. For more information, see [How finalization works](/dotnet/api/system.object.finalize#how-finalization-works). For additional details on implementing `Dispose` and `DisposeAsync`, see:
 >
 > - [Implement a Dispose method](implementing-dispose.md)
 > - [Implement a DisposeAsync method](implementing-disposeasync.md)
 
-Implementations of <xref:System.IDisposable?displayProperty=fullName> and <xref:System.IAsyncDisposable?displayProperty=fullName> should always be properly disposed of irregardless of variable scoping, unless otherwise explicitly stated.
+Objects that implement <xref:System.IDisposable?displayProperty=fullName> or <xref:System.IAsyncDisposable?displayProperty=fullName> should always be properly disposed of, regardless of variable scoping, unless otherwise explicitly stated.
 
 ## The using statement
 

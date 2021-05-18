@@ -32,19 +32,19 @@ In the `ConfigureServices` method, register a client for each service:
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-  services.AddAzureClients(builder =>
-  {
-    // Add a KeyVault client
-    builder.AddSecretClient(keyVaultUrl);
-
-    // Add a Storage account client
-    builder.AddBlobServiceClient(storageUrl);
-
-    // Use DefaultAzureCredential by default
-    builder.UseCredential(new DefaultAzureCredential());
-  });
-
-  services.AddControllers();
+    services.AddAzureClients(builder =>
+    {
+        // Add a KeyVault client
+        builder.AddSecretClient(keyVaultUrl);
+    
+        // Add a Storage account client
+        builder.AddBlobServiceClient(storageUrl);
+    
+        // Use DefaultAzureCredential by default
+        builder.UseCredential(new DefaultAzureCredential());
+    });
+  
+    services.AddControllers();
 }
 ```
 
@@ -61,25 +61,25 @@ With the clients registered in `Startup`, you can now use them:
 [Route("[controller]")]
 public class MyApiController : ControllerBase
 {
-  private readonly BlobServiceClient _blobServiceClient;
-
-  public MyApiController(BlobServiceClient blobServiceClient)
-  {
-    _blobServiceClient = blobServiceClient;
-  }
-
-  /// Get a list of all the blobs in the demo container
-  [HttpGet]
-  public async Task<IEnumerable<string>> Get()
-  {
-    var containerClient = _blobServiceClient.GetBlobContainerClient("demo");
-    var results = new List<string>();
-    await foreach (BlobItem blob in containerClient.GetBlobsAsync()) 
+    private readonly BlobServiceClient _blobServiceClient;
+  
+    public MyApiController(BlobServiceClient blobServiceClient)
     {
-        results.Add(blob.Name);
+        _blobServiceClient = blobServiceClient;
     }
-    return results.ToArray();
-  }
+  
+    /// Get a list of all the blobs in the demo container
+    [HttpGet]
+    public async Task<IEnumerable<string>> Get()
+    {
+        var containerClient = _blobServiceClient.GetBlobContainerClient("demo");
+        var results = new List<string>();
+        await foreach (BlobItem blob in containerClient.GetBlobsAsync()) 
+        {
+              results.Add(blob.Name);
+        }
+        return results.ToArray();
+    }
 }
 ```
 
@@ -115,22 +115,22 @@ Since the `Configuration` object is injected from the host and stored inside the
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-  services.AddAzureClients(builder =>
-  {
-    // Add a KeyVault client
-    builder.AddSecretClient(Configuration.GetSection("KeyVault"));
-
-    // Add a storage account client
-    builder.AddBlobServiceClient(Configuration.GetSection("Storage"));
-
-    // Use DefaultAzureCredential by default
-    builder.UseCredential(new DefaultAzureCredential());
-
-    // Set up any default settings
-    builder.ConfigureDefaults(Configuration.GetSection("AzureDefaults"));
-  });
-
-  services.AddControllers();
+    services.AddAzureClients(builder =>
+    {
+        // Add a KeyVault client
+        builder.AddSecretClient(Configuration.GetSection("KeyVault"));
+    
+        // Add a storage account client
+        builder.AddBlobServiceClient(Configuration.GetSection("Storage"));
+    
+        // Use DefaultAzureCredential by default
+        builder.UseCredential(new DefaultAzureCredential());
+    
+        // Set up any default settings
+        builder.ConfigureDefaults(Configuration.GetSection("AzureDefaults"));
+    });
+  
+    services.AddControllers();
 }
 ```
 
@@ -155,12 +155,13 @@ In your controllers, you can access the named service clients using the <xref:Mi
 ```csharp
 public class HomeControllers : Controller
 {
-  private BlobServiceClient _publicStorage, _privateStorage;
+    private readonly BlobServiceClient _publicStorage;
+    private readonly BlobServiceClient _privateStorage;
 
   public HomeController(BlobServiceClient defaultClient, IAzureClientFactory<BlobServiceClient> clientFactory)
   {
-    _publicStorage = defaultClient;
-    _privateStorage = clientFactory.GetClient("PrivateStorage");
+      _publicStorage = defaultClient;
+      _privateStorage = clientFactory.GetClient("PrivateStorage");
   }
 }
 ```
@@ -236,5 +237,6 @@ You can also place policy overrides in the _appsettings.json_ file:
 
 ## See also
 
-- [Dependency injection in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-3.0)
-- [Configuration in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/?view=aspnetcore-3.0)
+- [Dependency injection in .NET](/dotnet/core/extensions/dependency-injection)
+- [Configuration in .NET](/dotnet/core/extensions/configuration)
+- [Configuration in ASP.NET Core](/aspnet/core/fundamentals/configuration)

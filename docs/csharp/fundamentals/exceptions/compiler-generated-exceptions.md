@@ -1,11 +1,11 @@
 ---
-title: "Compiler-Generated Exceptions"
+title: "Compiler-generated exceptions"
 description: Learn about compiler-generated exceptions. Review a list of automatically thrown exceptions and their error conditions.
 ms.date: 05/14/2021
 helpviewer_keywords: 
   - "exceptions [C#], compiler-generated"
 ---
-# Compiler-Generated Exceptions
+# Compiler-generated exceptions
 
 Some exceptions are thrown automatically by the .NET runtime when basic operations fail. These exceptions and their error conditions are listed in the following table.
 

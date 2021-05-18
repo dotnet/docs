@@ -1,9 +1,4 @@
-﻿' Visual Basic .NET Document
-Option Strict On
-
-' <Snippet9>
-Imports Microsoft.Win32.SafeHandles
-Imports System.IO
+﻿Imports Microsoft.Win32.SafeHandles
 
 Public Class DisposableStreamResource : Implements IDisposable
     ' Define constants.
@@ -30,7 +25,8 @@ Public Class DisposableStreamResource : Implements IDisposable
 
     Public Sub New(fileName As String)
         If String.IsNullOrWhiteSpace(fileName) Then
-            Throw New ArgumentNullException("The fileName cannot be null or an empty string")
+            Throw New ArgumentNullException(
+                NameOf(fileName), "The fileName cannot be null or an empty string")
         End If
 
         safeHandle = CreateFile(
@@ -67,13 +63,3 @@ Public Class DisposableStreamResource : Implements IDisposable
         disposed = True
     End Sub
 End Class
-' </Snippet9>
-
-Module Example
-    Public Sub Main()
-        Dim d As New DisposableStreamResource("C:\Windows\Explorer.exe")
-        Console.WriteLine(d.Size.ToString("N0"))
-        d.Dispose()
-    End Sub
-End Module
-

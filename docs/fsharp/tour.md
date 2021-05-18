@@ -7,7 +7,7 @@ ms.date: 08/14/2020
 
 The best way to learn about F# is to read and write F# code. This article will act as a tour through some of the key features of the F# language and give you some code snippets that you can execute on your machine. To learn about setting up a development environment, check out [Getting Started](get-started/index.md).
 
-There are two primary concepts in F#: functions and types.  This tour will emphasize features of the language which fall into these two concepts.
+There are two primary concepts in F#: functions and types. This tour emphasizes features of the language that fall into these two concepts.
 
 ## Executing the code online
 
@@ -41,7 +41,7 @@ And here's what basic [string](./language-reference/strings.md) manipulation loo
 
 ## Tuples
 
-[Tuples](./language-reference/tuples.md) are a big deal in F#.  They are a grouping of unnamed, but ordered values, that can be treated as values themselves.  Think of them as values which are aggregated from other values.  They have many uses, such as conveniently returning multiple values from a function, or grouping values for some ad-hoc convenience.
+[Tuples](./language-reference/tuples.md) are a big deal in F#.  They are a grouping of unnamed but ordered values that can be treated as values themselves.  Think of them as values which are aggregated from other values.  They have many uses, such as conveniently returning multiple values from a function, or grouping values for some ad-hoc convenience.
 
 [!code-fsharp[Tuples](~/samples/snippets/fsharp/tour.fs#L186-L203)]
 
@@ -57,13 +57,13 @@ Pipe operators such as `|>` are used extensively when processing data in F#. The
 
 [!code-fsharp[Pipelines](~/samples/snippets/fsharp/tour.fs#L227-L302)]
 
-The previous sample made use of many features of F#, including list processing functions, first-class functions, and [partial application](./language-reference/functions/index.md#partial-application-of-arguments). Although a deep understanding of each of those concepts can become somewhat advanced, it should be clear how easily functions can be used to process data when building pipelines.
+The previous sample made use of many features of F#, including list processing functions, first-class functions, and [partial application](./language-reference/functions/index.md#partial-application-of-arguments). Although these are advanced concepts, it should be clear how easily functions can be used to process data when building pipelines.
 
 ## Lists, Arrays, and Sequences
 
 Lists, Arrays, and Sequences are three primary collection types in the F# core library.
 
-[Lists](./language-reference/lists.md) are ordered, immutable collections of elements of the same type.  They are singly-linked lists, which means they are meant for enumeration, but a poor choice for random access and concatenation if they're large.  This in contrast to Lists in other popular languages, which typically do not use a singly-linked list to represent Lists.
+[Lists](./language-reference/lists.md) are ordered, immutable collections of elements of the same type.  They are singly linked lists, which means they are meant for enumeration, but a poor choice for random access and concatenation if they're large.  This in contrast to Lists in other popular languages, which typically do not use a singly linked list to represent Lists.
 
 [!code-fsharp[Lists](~/samples/snippets/fsharp/tour.fs#L311-L363)]
 
@@ -98,11 +98,11 @@ You can also represent Records as structs. This is done with the `[<Struct>]` at
 
 [!code-fsharp[Records](~/samples/snippets/fsharp/tour.fs#L573-L577)]
 
-[Discriminated Unions (DUs)](./language-reference/discriminated-unions.md) are values which could be a number of named forms or cases.  Data stored in the type can be one of several distinct values.
+[Discriminated Unions (DUs)](./language-reference/discriminated-unions.md) are values that could be a number of named forms or cases.  Data stored in the type can be one of several distinct values.
 
 [!code-fsharp[Unions](~/samples/snippets/fsharp/tour.fs#L584-L640)]
 
-You can also use DUs as *Single-Case Discriminated Unions*, to help with domain modeling over primitive types.  Often times, strings and other primitive types are used to represent something, and are thus given a particular meaning.  However, using only the primitive representation of the data can result in mistakenly assigning an incorrect value!  Representing each type of information as a distinct single-case union can enforce correctness in this scenario.
+You can also use DUs as *Single-Case Discriminated Unions*, to help with domain modeling over primitive types.  Often, strings and other primitive types are used to represent something, and are thus given a particular meaning.  However, using only the primitive representation of the data can result in mistakenly assigning an incorrect value!  Representing each type of information as a distinct single-case union can enforce correctness in this scenario.
 
 [!code-fsharp[Unions](~/samples/snippets/fsharp/tour.fs#L642-L663)]
 
@@ -120,14 +120,14 @@ Additionally, you can represent DUs as `struct`s with the `[<Struct>]` attribute
 
 However, there are two key things to keep in mind when doing so:
 
-1. A struct DU cannot be recursively-defined.
+1. A struct DU cannot be recursively defined.
 2. A struct DU must have unique names for each of its cases.
 
 Failure to follow the above will result in a compilation error.
 
 ## Pattern Matching
 
-[Pattern Matching](./language-reference/pattern-matching.md) is the F# language feature which enables correctness for operating on F# types.  In the above samples, you probably noticed quite a bit of `match x with ...` syntax.  This construct allows the compiler, which can understand the "shape" of data types, to force you to account for all possible cases when using a data type through what is known as Exhaustive Pattern Matching.  This is incredibly powerful for correctness, and can be cleverly used to "lift" what would normally be a runtime concern into compile-time.
+[Pattern Matching](./language-reference/pattern-matching.md) is the F# language feature that enables correctness for operating on F# types.  In the above samples, you probably noticed quite a bit of `match x with ...` syntax.  This construct allows the compiler, which can understand the "shape" of data types, to force you to account for all possible cases when using a data type through what is known as Exhaustive Pattern Matching.  This is incredibly powerful for correctness, and can be cleverly used to "lift" what would normally be a run-time concern into a compile-time concern.
 
 [!code-fsharp[PatternMatching](~/samples/snippets/fsharp/tour.fs#L717-L743)]
 
@@ -145,7 +145,7 @@ In the following example, the `_` case is used when a parse operation fails.
 
 One special case of Discriminated Union types is the Option Type, which is so useful that it's a part of the F# core library.
 
-[The Option Type](./language-reference/options.md) is a type which represents one of two cases: a value, or nothing at all.  It is used in any scenario where a value may or may not result from a particular operation.  This then forces you to account for both cases, making it a compile-time concern rather than a runtime concern.  These are often used in APIs where `null` is used to represent "nothing" instead, thus eliminating the need to worry about `NullReferenceException` in many circumstances.
+[The Option Type](./language-reference/options.md) is a type that represents one of two cases: a value, or nothing at all.  It is used in any scenario where a value may or may not result from a particular operation.  This then forces you to account for both cases, making it a compile-time concern rather than a runtime concern.  These are often used in APIs where `null` is used to represent "nothing" instead, thus eliminating the need to worry about `NullReferenceException` in many circumstances.
 
 [!code-fsharp[Options](~/samples/snippets/fsharp/tour.fs#L803-L823)]
 
@@ -167,7 +167,7 @@ F# also has full support for .NET classes, [Interfaces](./language-reference/int
 
 [!code-fsharp[Classes](~/samples/snippets/fsharp/tour.fs#L860-L889)]
 
-Defining generic classes is also very straightforward.
+Defining generic classes is also straightforward.
 
 [!code-fsharp[Classes](~/samples/snippets/fsharp/tour.fs#L896-L917)]
 
@@ -185,7 +185,7 @@ Records are a "step up" from Tuples, having named labels and support for optiona
 
 Discriminated Unions have many uses, but the core benefit is to be able to utilize them in conjunction with Pattern Matching to account for all possible "shapes" that a data can have.  
 
-Classes are great for a huge number of reasons, such as when you need to represent information and also tie that information to functionality.  As a rule of thumb, when you have functionality which is conceptually tied to some data, using Classes and the principles of Object-Oriented Programming is a big benefit.  Classes are also the preferred data type when interoperating with C# and Visual Basic, as these languages use classes for nearly everything.
+Classes are great for a huge number of reasons, such as when you need to represent information and also tie that information to functionality.  As a rule of thumb, when you have functionality that is conceptually tied to some data, using Classes and the principles of Object-Oriented Programming is a significant benefit.  Classes are also the preferred data type when interoperating with C# and Visual Basic, as these languages use classes for nearly everything.
 
 ## Next Steps
 

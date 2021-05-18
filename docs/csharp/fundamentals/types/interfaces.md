@@ -14,7 +14,7 @@ By using interfaces, you can, for example, include behavior from multiple source
 
 You define an interface by using the [`interface`](../../language-reference/keywords/interface.md) keyword as the following example shows.
 
-:::code language="csharp" source="~/samples/snippets/csharp/objectoriented/interfaces.cs" ID="Equatable":::
+:::code language="csharp" source="./snippets/interfaces/interfaces.cs" ID="Equatable":::
 
 The name of an interface must be a valid C# [identifier name](../coding-style/identifier-names.md). By convention, interface names begin with a capital `I`.
 
@@ -32,7 +32,7 @@ When a class or struct implements an interface, the class or struct must provide
 
 The following example shows an implementation of the <xref:System.IEquatable%601> interface. The implementing class, `Car`, must provide an implementation of the <xref:System.IEquatable%601.Equals%2A> method.
 
-:::code language="csharp" source="~/samples/snippets/csharp/objectoriented/interfaces.cs" ID="ImplementEquatable":::
+:::code language="csharp" source="./snippets/interfaces/interfaces.cs" ID="ImplementEquatable":::
 
 Properties and indexers of a class can define extra accessors for a property or indexer that's defined in an interface. For example, an interface might declare a property that has a [get](../../language-reference/keywords/get.md) accessor. The class that implements the interface can declare the same property with both a `get` and [set](../../language-reference/keywords/set.md) accessor. However, if the property or indexer uses explicit implementation, the accessors must match. For more information about explicit implementation, see [Explicit Interface Implementation](../../programming-guide/interfaces/explicit-interface-implementation.md) and [Interface Properties](../../programming-guide/classes-and-structs/interface-properties.md).
 

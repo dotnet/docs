@@ -194,7 +194,7 @@ To compile and run the application from a command prompt, follow these steps:
 
 1. Paste the following code into any text editor, and then save the file as  a text file with the name *Factorial.cs*.
 
-     [!code-csharp[csProgGuideMain#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class1.cs#16)]
+    :::code language="csharp" source="./snippets/main-command-line/Factorial.cs":::
 
 2. From the **Start** screen or **Start** menu, open a Visual Studio **Developer Command Prompt** window, and then navigate to the folder that contains the file that you created.
 

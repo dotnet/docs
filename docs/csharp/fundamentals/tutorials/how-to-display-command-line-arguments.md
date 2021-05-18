@@ -24,4 +24,4 @@ Arguments provided to an executable on the command line are accessible in [top-l
 
  This example displays the command-line arguments passed to a command-line application. The output shown is for the first entry in the table above.  
   
- [!code-csharp[csProgGuideMain#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class1.cs#9)]  
+ :::code language="csharp" source="./snippets/command-line-arguments/Program.cs" :::

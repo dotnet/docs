@@ -1,9 +1,5 @@
 ﻿namespace n0
 {
-//<Snippet1>
-using System;
-//</Snippet1>
-
 //<Snippet2>
 using System.Text;
 //</Snippet2>

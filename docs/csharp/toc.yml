@@ -36,6 +36,8 @@ items:
       - name: List collections
         href: tour-of-csharp/tutorials/arrays-and-collections.md
 - name: Fundamentals
+  # TODO: https://github.com/dotnet/docs/pull/23464#discussion_r633857533
+  # Use "title suffix" in docfx.json for "fundamentals", and edit H1s to be unique
   items:
   - name: Program structure
     items:
@@ -52,10 +54,11 @@ items:
     - name: Namespaces
       href: fundamentals/types/namespaces.md
     # TODO: tuples
-    - name: Records
-      href: fundamentals/types/records.md
     - name: Classes
       href: fundamentals/types/classes.md
+    # TODO: Edit Records article so it doesn't depend on classes.
+    - name: Records
+      href: fundamentals/types/records.md
     # TODO: structs
     - name: Interfaces
       href: fundamentals/types/interfaces.md

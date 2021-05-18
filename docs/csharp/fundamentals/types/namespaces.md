@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "C# language, namespaces"
   - "namespaces [C#]"
 ---
-# Declare namespaces to organize types in packages
+# Declare namespaces to organize types
 
 Namespaces are heavily used in C# programming in two ways. First, .NET uses namespaces to organize its many classes, as follows:  
 

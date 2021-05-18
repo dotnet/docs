@@ -54,7 +54,7 @@ Often when deconstructing a tuple, you're interested in the values of only some 
 
 The following example illustrates the use of tuples with discards. The `QueryCityDataForYears` method returns a six-tuple with the name of a city, its area, a year, the city's population for that year, a second year, and the city's population for that second year. The example shows the change in population between those two years. Of the data available from the tuple, we're unconcerned with the city area, and we know the city name and the two dates at design-time. As a result, we're only interested in the two population values stored in the tuple, and can handle its remaining values as discards.  
 
-:::code language="csharp" source="./snippets/deconstructing-tuples/deconstruct-tuple1.cs":::
+:::code language="csharp" source="./snippets/deconstructing-tuples/discard-tuple1.cs":::
 
 ## User-defined types
 

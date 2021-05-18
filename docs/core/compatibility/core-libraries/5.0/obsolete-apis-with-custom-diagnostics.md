@@ -16,18 +16,18 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 
 | Diagnostic ID | Description | Severity |
 | - | - |
-| [SYSLIB0001](../../syslib-warnings/syslib0001.md) | The UTF-7 encoding is insecure and should not be used. Consider using UTF-8 instead. | Warning |
-| [SYSLIB0002](../../syslib-warnings/syslib0002.md) | <xref:System.Security.Permissions.PrincipalPermissionAttribute> is not honored by the runtime and must not be used. | Error |
-| [SYSLIB0003](../../syslib-warnings/syslib0003.md) | Code access security (CAS) is not supported or honored by the runtime. | Warning |
-| [SYSLIB0004](../../syslib-warnings/syslib0004.md) | The constrained execution region (CER) feature is not supported. | Warning |
-| [SYSLIB0005](../../syslib-warnings/syslib0005.md) | The global assembly cache (GAC) is not supported. | Warning |
-| [SYSLIB0006](../../syslib-warnings/syslib0006.md) | <xref:System.Threading.Thread.Abort?displayProperty=nameWithType> is not supported and throws <xref:System.PlatformNotSupportedException>. | Warning |
-| [SYSLIB0007](../../syslib-warnings/syslib0007.md) | The default implementation of this cryptography algorithm is not supported. | Warning |
-| [SYSLIB0008](../../syslib-warnings/syslib0008.md) | The <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator> API is not supported and throws <xref:System.PlatformNotSupportedException>. | Warning |
-| [SYSLIB0009](../../syslib-warnings/syslib0009.md) | The <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType> and <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType> methods are not supported and throw <xref:System.PlatformNotSupportedException>. | Warning |
-| [SYSLIB0010](../../syslib-warnings/syslib0010.md) | Some remoting APIs are not supported and throw <xref:System.PlatformNotSupportedException>. | Warning |
-| [SYSLIB0011](../../syslib-warnings/syslib0011.md) | <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> serialization is obsolete and should not be used. | Warning |
-| [SYSLIB0012](../../syslib-warnings/syslib0012.md) | <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> and <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> are only included for .NET Framework compatibility. Use <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> instead. | Warning |
+| [SYSLIB0001](../../../../fundamentals/syslib-diagnostics/syslib0001.md) | The UTF-7 encoding is insecure and should not be used. Consider using UTF-8 instead. | Warning |
+| [SYSLIB0002](../../../../fundamentals/syslib-diagnostics/syslib0002.md) | <xref:System.Security.Permissions.PrincipalPermissionAttribute> is not honored by the runtime and must not be used. | Error |
+| [SYSLIB0003](../../../../fundamentals/syslib-diagnostics/syslib0003.md) | Code access security (CAS) is not supported or honored by the runtime. | Warning |
+| [SYSLIB0004](../../../../fundamentals/syslib-diagnostics/syslib0004.md) | The constrained execution region (CER) feature is not supported. | Warning |
+| [SYSLIB0005](../../../../fundamentals/syslib-diagnostics/syslib0005.md) | The global assembly cache (GAC) is not supported. | Warning |
+| [SYSLIB0006](../../../../fundamentals/syslib-diagnostics/syslib0006.md) | <xref:System.Threading.Thread.Abort?displayProperty=nameWithType> is not supported and throws <xref:System.PlatformNotSupportedException>. | Warning |
+| [SYSLIB0007](../../../../fundamentals/syslib-diagnostics/syslib0007.md) | The default implementation of this cryptography algorithm is not supported. | Warning |
+| [SYSLIB0008](../../../../fundamentals/syslib-diagnostics/syslib0008.md) | The <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator> API is not supported and throws <xref:System.PlatformNotSupportedException>. | Warning |
+| [SYSLIB0009](../../../../fundamentals/syslib-diagnostics/syslib0009.md) | The <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType> and <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType> methods are not supported and throw <xref:System.PlatformNotSupportedException>. | Warning |
+| [SYSLIB0010](../../../../fundamentals/syslib-diagnostics/syslib0010.md) | Some remoting APIs are not supported and throw <xref:System.PlatformNotSupportedException>. | Warning |
+| [SYSLIB0011](../../../../fundamentals/syslib-diagnostics/syslib0011.md) | <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> serialization is obsolete and should not be used. | Warning |
+| [SYSLIB0012](../../../../fundamentals/syslib-diagnostics/syslib0012.md) | <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> and <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> are only included for .NET Framework compatibility. Use <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> instead. | Warning |
 
 ## Version introduced
 
@@ -282,4 +282,4 @@ Classes and members that depend on code access security types:
 ## See also
 
 - [API obsoletions with non-default diagnostic IDs (.NET 6)](../6.0/obsolete-apis-with-custom-diagnostics.md)
-- [Obsolete features in .NET 5+](../../syslib-obsoletions.md)
+- [Obsolete features in .NET 5+](../../../../fundamentals/syslib-diagnostics/obsoletions-overview.md)

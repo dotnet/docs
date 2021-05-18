@@ -97,7 +97,7 @@ The `HalogenLight` you created earlier doesn't support blinking. So, don't add t
 
 ## Detect the light types using pattern matching
 
-Next, let's write some test code. You can make use of C#'s [pattern matching](/dotnet/csharp/fundamentals/functional/pattern-matching) feature to determine a light's capabilities by examining which interfaces it supports.  The following method exercises the supported capabilities of each light:
+Next, let's write some test code. You can make use of C#'s [pattern matching](../../fundamentals/functional/pattern-matching.md) feature to determine a light's capabilities by examining which interfaces it supports.  The following method exercises the supported capabilities of each light:
 
 [!code-csharp[Test a light's capabilities](./snippets/mixins-with-default-interface-methods/Program.cs?name=SnippetTestLightFunctions)]
 

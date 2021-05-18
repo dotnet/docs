@@ -19,7 +19,7 @@ produced by this instrumentation.
 
 - [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
 
-## An initial app
+## Create initial app
 
 First you will create a sample app that collects telemetry using OpenTelemetry, but doesn't yet have any instrumentation.
 
@@ -135,7 +135,7 @@ namespace Sample.DistributedTracing
             ...
 ```
 
-### Best practices
+#### Best practices
 
 - Create the ActivitySource once, store it in a static variable and use that instance as long as needed.
 Each library or library subcomponent can (and often should) create its own source. Consider creating a new
@@ -157,7 +157,7 @@ versions of the library and make changes to the instrumented telemetry.
 > the OpenTelemetry specification and the original .NET naming has been preserved for
 > consistency within the .NET ecosystem and .NET application compatibility.
 
-## Activity creation
+### Activity
 
 Use the ActivitySource object to Start and Stop Activity objects around meaningful units of work. Update
 DoSomeWork() with the code shown here:
@@ -187,7 +187,7 @@ Resource associated with Activity:
     service.instance.id: 067f4bb5-a5a8-4898-a288-dec569d6dbef
 ```
 
-### Notes
+#### Notes
 
 - <xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=nameWithType> creates and starts
 the activity at the same time. The listed code pattern is using the `using` block, which automatically disposes
@@ -417,7 +417,7 @@ can show this as a Gantt chart:
 
 [![Zipkin Gantt chart](media/zipkin-nested-activities.jpg)](media/zipkin-nested-activities.jpg)
 
-### Optional: ActivityKind
+## Optional: ActivityKind
 
 Activities have an <xref:System.Diagnostics.Activity.Kind%2A?displayProperty=nameWithType> property, which
 describes the relationship between the Activity, its parent, and its children. By default, all new Activities are
@@ -427,9 +427,9 @@ kind parameter on
 <xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=nameWithType>. For other options, see
 <xref:System.Diagnostics.ActivityKind?displayProperty=nameWithType>.
 
-### Optional: Links
+## Optional: Links
 
-When work occurs in batch processing systems a single Activity might represent work on behalf of many
+When work occurs in batch processing systems, a single Activity might represent work on behalf of many
 different requests simultaneously, each of which has its own trace-id. Although Activity is restricted
 to have a single parent, it can link to additional trace-ids using
 <xref:System.Diagnostics.ActivityLink?displayProperty=nameWithType>. Each ActivityLink is

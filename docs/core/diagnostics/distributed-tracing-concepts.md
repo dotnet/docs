@@ -110,7 +110,7 @@ used when starting it. Using DiagnosticSource and DiagnosticListener allows the 
 and listener to exchange arbitrary .NET objects and establish customized information passing
 conventions.
 
-### Sampling
+## Sampling
 
 For improved performance in high throughput applications, distributed tracing on .NET supports
 sampling only a subset of traces rather than recording all of them. For activities created with

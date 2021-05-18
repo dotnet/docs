@@ -34,7 +34,7 @@ The [`using` statement](../../csharp/language-reference/keywords/using-statement
 The following example uses the `using` statement to create and release a <xref:System.IO.StreamReader?displayProperty=nameWithType> object.
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/UsingStatement.cs":::
-:::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/using1":::
+:::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/UsingStatement.vb":::
 
 With C# 8, a [`using` declaration](../../csharp/whats-new/csharp-8.md#using-declarations) is an alternative syntax available where the braces are removed, and scoping is implicit.
 
@@ -43,7 +43,7 @@ With C# 8, a [`using` declaration](../../csharp/whats-new/csharp-8.md#using-decl
 Although the <xref:System.IO.StreamReader> class implements the <xref:System.IDisposable> interface, which indicates that it uses an unmanaged resource, the example doesn't explicitly call the <xref:System.IO.StreamReader.Dispose%2A?displayProperty=nameWithType> method. When the C# or Visual Basic compiler encounters the `using` statement, it emits intermediate language (IL) that is equivalent to the following code that explicitly contains a `try/finally` block.
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/TryFinallyGenerated.cs":::
-:::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/using3.vb":::
+:::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/TryFinallyGenerated.vb":::
 
 The C# `using` statement also allows you to acquire multiple resources in a single statement, which is internally equivalent to nested `using` statements. The following example instantiates two <xref:System.IO.StreamReader> objects to read the contents of two different files.
 

@@ -1,6 +1,6 @@
 ---
 title: "Interfaces - define behavior for multiple types"
-description: An interface in C# contains definitions for a group of related functionalities that a non-abstract class or a struct must implement. It describes the behavior of a type that implements the interface.
+description: An interface in C# contains definitions for a group of related functionalities that a non-abstract class or a struct must implement. It specifies the members and their signatures for a type that implements the interface.
 ms.date: 05/14/2021
 helpviewer_keywords: 
   - "interfaces [C#]"

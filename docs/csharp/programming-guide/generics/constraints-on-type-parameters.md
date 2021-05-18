@@ -129,6 +129,6 @@ You could use it as shown in the following sample to create an enum and build a 
 
 - <xref:System.Collections.Generic>
 - [C# Programming Guide](../index.md)
-- [Introduction to Generics](./index.md)
+- [Introduction to Generics](../../fundamentals/types/generics.md)
 - [Generic Classes](./generic-classes.md)
 - [new Constraint](../../language-reference/keywords/new-constraint.md)

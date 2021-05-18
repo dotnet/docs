@@ -91,7 +91,7 @@ For more information, see [Releases and support for .NET Core and .NET 5](releas
 Here are some of the capabilities that .NET languages support:
 
 * [Type safety](../standard/base-types/common-type-system.md)
-* Type inference - [C#](../csharp/programming-guide/types/index.md#specifying-types-in-variable-declarations), [F#](../fsharp/language-reference/type-inference.md), [Visual Basic](../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+* Type inference - [C#](../csharp/fundamentals/types/index.md#specifying-types-in-variable-declarations), [F#](../fsharp/language-reference/type-inference.md), [Visual Basic](../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
 * [Generic types](../standard/generics.md)
 * [Delegates](../standard/delegates-lambdas.md)
 * [Lambdas](../standard/delegates-lambdas.md)

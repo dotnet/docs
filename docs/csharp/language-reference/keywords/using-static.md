@@ -52,4 +52,4 @@ In the example, the `using static` directive could also have been applied to the
 - [C# Reference](../index.md)
 - [C# Keywords](index.md)
 - [Using Namespaces](../../programming-guide/namespaces/using-namespaces.md)
-- [Namespaces](../../programming-guide/namespaces/index.md)
+- [Namespaces](../../fundamentals/types/namespaces.md)

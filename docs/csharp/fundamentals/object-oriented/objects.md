@@ -37,7 +37,7 @@ When you compare two objects for equality, you must first distinguish whether yo
 - To determine whether two class instances refer to the same location in memory (which means that they have the same *identity*), use the static <xref:System.Object.Equals%2A?displayProperty=nameWithType> method. (<xref:System.Object?displayProperty=nameWithType> is the implicit base class for all value types and reference types, including user-defined structs and classes.)
 - To determine whether the instance fields in two struct instances have the same values, use the <xref:System.ValueType.Equals%2A?displayProperty=nameWithType> method. Because all structs implicitly inherit from <xref:System.ValueType?displayProperty=nameWithType>, you call the method directly on your object as shown in the following example:
 
-  :::code language="csharp" source="./snippets/objects/Equality.cs" ID="Snippets32":::
+  :::code language="csharp" source="./snippets/objects/Equality.cs" ID="Snippet32":::
 
   The <xref:System.ValueType?displayProperty=nameWithType> implementation of `Equals` uses boxing and reflection in some cases. For information about how to provide an efficient equality algorithm that is specific to your type, see [How to define value equality for a type](../../programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md). Records are reference types that use value semantics for equality.
 

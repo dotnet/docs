@@ -34,7 +34,7 @@ The compiler uses type information to make sure all operations that are performe
 
 The compiler embeds the type information into the executable file as metadata. The common language runtime (CLR) uses that metadata at run time to further guarantee type safety when it allocates and reclaims memory.
 
-### Specifying types in variable declarations
+## Specifying types in variable declarations
 
 When you declare a variable or constant in a program, you must either specify its type or use the [`var`](../../language-reference/keywords/var.md) keyword to let the compiler infer the type. The following example shows some variable declarations that use both built-in numeric types and complex user-defined types:
 

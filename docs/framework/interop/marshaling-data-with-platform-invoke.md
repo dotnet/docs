@@ -66,7 +66,7 @@ Decorate the prototype with the <xref:System.Runtime.InteropServices.DllImportAt
 
 The following code shows an example prototype:
 
-```cs
+```csharp
 // Managed prototype for TestingStructInStruct, which is declared and defined in an unmanaged library.
 [DllImport("..\\LIB\\PinvokeLib.dll", CallingConvention = CallingConvention.Cdecl)]
 internal static extern int TestStructInStruct(ref MyPerson2 person2);

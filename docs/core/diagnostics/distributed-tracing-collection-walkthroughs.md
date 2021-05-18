@@ -178,7 +178,7 @@ In the example code, you invoked `AddSource("Sample.DistributedTracing")` so tha
 capture the Activities produced by the ActivitySource that was already present in the code:
 
 ```csharp
-        static ActivitySource s_source = new ActivitySource("Sample.DistributedTracing");
+static ActivitySource s_source = new ActivitySource("Sample.DistributedTracing");
 ```
 
 Telemetry from any ActivitySource can be captured by calling `AddSource()` with the source's name.
@@ -193,7 +193,7 @@ For more information about configuring OpenTelemetry, see the [OpenTelemetry get
 ## Collect traces using Application Insights
 
 Distributed tracing telemetry is automatically captured after configuring the Application Insights SDK for
-[ASP.NET](/azure/azure-monitor/app/asp-net) or [ASP.NET Core](/azure/azure-monitor/app/asp-net-core),
+[ASP.NET](/azure/azure-monitor/app/asp-net) or [ASP.NET Core](/azure/azure-monitor/app/asp-net-core) apps,
 or by enabling [code-less instrumentation](/azure/azure-monitor/app/codeless-overview).
 
 For more

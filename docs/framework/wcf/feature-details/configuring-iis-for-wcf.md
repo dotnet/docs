@@ -2,7 +2,7 @@
 description: "Learn more about: Configuring Internet Information Services 7.0 for Windows Communication Foundation"
 title: "Configuring Internet Information Services 7.0 for Windows Communication Foundation"
 ms.date: "03/30/2017"
-ms.assetid: 1050d395-092e-44d3-b4ba-66be3b039ffb
+ms.topic: how-to
 ---
 # Configuring Internet Information Services 7.0 for Windows Communication Foundation
 

@@ -31,7 +31,7 @@ helpviewer_keywords:
   - "ServerProtocolViolation enumeration member"
   - "ConnectionClosed enumeration member"
   - "SecureChannelFailure enumeration member"
-ms.assetid: 657141cd-5cf5-4fdb-a4b2-4c040eba84b5
+ms.topic: reference
 ---
 # Handling Errors
 

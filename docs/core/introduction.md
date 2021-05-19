@@ -91,7 +91,7 @@ For more information, see [Releases and support for .NET Core and .NET 5](releas
 Here are some of the capabilities that .NET languages support:
 
 * [Type safety](../standard/base-types/common-type-system.md)
-* Type inference - [C#](../csharp/programming-guide/types/index.md#specifying-types-in-variable-declarations), [F#](../fsharp/language-reference/type-inference.md), [Visual Basic](../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+* Type inference - [C#](../csharp/fundamentals/types/index.md#specifying-types-in-variable-declarations), [F#](../fsharp/language-reference/type-inference.md), [Visual Basic](../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
 * [Generic types](../standard/generics.md)
 * [Delegates](../standard/delegates-lambdas.md)
 * [Lambdas](../standard/delegates-lambdas.md)
@@ -387,7 +387,7 @@ For more information, see [Unsafe code and pointers](../csharp/language-referenc
 > [Choose a .NET tutorial](tutorials/index.md)
 
 > [!div class="nextstepaction"]
-> [Try .NET in your browser](../csharp/tutorials/intro-to-csharp/numbers-in-csharp.yml)
+> [Try .NET in your browser](../csharp/tour-of-csharp/tutorials/numbers-in-csharp.yml)
 
 > [!div class="nextstepaction"]
 > [Take a tour of C#](../csharp/tour-of-csharp/index.md)

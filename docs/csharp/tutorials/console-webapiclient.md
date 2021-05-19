@@ -112,9 +112,9 @@ Use the <xref:System.Net.Http.HttpClient> class to make HTTP requests. <xref:Sys
        client.DefaultRequestHeaders.Accept.Add(
            new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
        client.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
-   
+
        var stringTask = client.GetStringAsync("https://api.github.com/orgs/dotnet/repos");
-   
+
        var msg = await stringTask;
        Console.Write(msg);
    }
@@ -154,7 +154,7 @@ The following steps convert the JSON response into C# objects. You use the <xref
 
    ```csharp
    using System;
-   
+
    namespace WebAPIClient
    {
        public class Repository
@@ -182,7 +182,7 @@ The following steps convert the JSON response into C# objects. You use the <xref
 
    The first argument to <xref:System.Text.Json.JsonSerializer.DeserializeAsync%60%601(System.IO.Stream,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)?displayProperty=nameWithType> is an `await` expression. `await` expressions can appear almost anywhere in your code, even though up to now, you've only seen them as part of an assignment statement. The other two parameters, `JsonSerializerOptions` and `CancellationToken`, are optional and are omitted in the code snippet.
 
-   The `DeserializeAsync` method is [*generic*](../programming-guide/generics/index.md), which means you supply type arguments for what kind of objects should be created from the JSON text. In this example, you're deserializing to a `List<Repository>`, which is another generic object, a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. The `List<T>` class stores a collection of objects. The type argument declares the type of objects stored in the `List<T>`. The type argument is your `Repository` class, because the JSON text represents a collection of repository objects.
+   The `DeserializeAsync` method is [*generic*](../fundamentals/types/generics.md), which means you supply type arguments for what kind of objects should be created from the JSON text. In this example, you're deserializing to a `List<Repository>`, which is another generic object, a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. The `List<T>` class stores a collection of objects. The type argument declares the type of objects stored in the `List<T>`. The type argument is your `Repository` class, because the JSON text represents a collection of repository objects.
 
 1. Add code to display the name of each repository. Replace the lines that read:
 
@@ -264,7 +264,7 @@ The `ProcessRepositories` method can do the async work and return a collection o
    public static async Task Main(string[] args)
    {
        var repositories = await ProcessRepositories();
-   
+
        foreach (var repo in repositories)
            Console.WriteLine(repo.Name);
    }
@@ -283,13 +283,13 @@ The following steps add code to process more of the properties in the  received 
    ```csharp
    [JsonPropertyName("description")]
    public string Description { get; set; }
-   
+
    [JsonPropertyName("html_url")]
    public Uri GitHubHomeUrl { get; set; }
-   
+
    [JsonPropertyName("homepage")]
    public Uri Homepage { get; set; }
-   
+
    [JsonPropertyName("watchers")]
    public int Watchers { get; set; }
    ```

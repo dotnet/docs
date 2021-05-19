@@ -6,7 +6,6 @@ ms.topic: how-to
 dev_langs: 
   - "csharp"
   - "vb"
-ms.assetid: 48e1cd90-de80-4d6c-846e-631878955762
 ---
 # How to: Configure WCF Service to Interoperate with ASP.NET Web Service Clients
 

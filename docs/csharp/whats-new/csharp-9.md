@@ -191,7 +191,7 @@ One of the most common uses for this feature is creating teaching materials. Beg
 
 Most importantly, top-level statements don't limit your application's scope or complexity. Those statements can access or use any .NET class. They also don't limit your use of command-line arguments or return values. Top-level statements can access an array of strings named `args`. If the top-level statements return an integer value, that value becomes the integer return code from a synthesized `Main` method. The top-level statements may contain async expressions. In that case, the synthesized entry point returns a `Task`, or `Task<int>`.
 
-For more information, see [Top-level statements](../programming-guide/main-and-command-args/top-level-statements.md) in the C# Programming Guide.
+For more information, see [Top-level statements](../fundamentals/program-structure/top-level-statements.md) in the C# Programming Guide.
 
 ## Pattern matching enhancements
 

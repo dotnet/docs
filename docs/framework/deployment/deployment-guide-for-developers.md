@@ -9,7 +9,7 @@ ms.assetid: 094d043e-33c4-40ba-a503-e0b20b55f4cf
 ---
 # .NET Framework deployment guide for developers
 
-This topic provides information for developers who want to install any version of the .NET Framework from .NET Framework 4.5 to [!INCLUDE[net_current](../../../includes/net-current-version.md)] with their apps.
+This article provides information for developers who want to install any version of the .NET Framework from .NET Framework 4.5 to [!INCLUDE[net_current](../../../includes/net-current-version.md)] with their apps.
 
 You can download the redistributable packages and language packs for .NET Framework from the download pages:
 
@@ -36,7 +36,7 @@ You can download the redistributable packages and language packs for .NET Framew
 
 - You must have administrator privileges to install .NET Framework 4.5 or later versions.
 
-- .NET Framework 4.5 is included in Windows 8 and Windows Server 2012, so you don't have to deploy it with your app on those operating systems. Similarly, .NET Framework 4.5.1 is included in Windows 8.1 and Windows Server 2012 R2. .NET Framework 4.5.2 isn't included in any operating systems. .NET Framework 4.6 is included in Windows 10, .NET Framework 4.6.1 is included in Windows 10 November Update, and .NET Framework 4.6.2 is included in Windows 10 Anniversary Update.  .NET Framework 4.7 is included in Windows 10 Creators Update, .NET Framework 4.7.1 is included in Windows 10 Fall Creators Update, and .NET Framework 4.7.2 is included in Windows 10 October 2018 Update and Windows 10 April 2018 Update. .NET Framework 4.8 is included in Windows 10 May 2019 Update. For a full list of hardware and software requirements, see [System Requirements](../get-started/system-requirements.md).
+- .NET Framework 4.5 is included in Windows 8 and Windows Server 2012, so you don't have to deploy it with your app on those operating systems. Similarly, .NET Framework 4.5.1 is included in Windows 8.1 and Windows Server 2012 R2. .NET Framework 4.5.2 isn't included in any operating systems. .NET Framework 4.6 is included in Windows 10, .NET Framework 4.6.1 is included in Windows 10 November Update, and .NET Framework 4.6.2 is included in Windows 10 Anniversary Update.  .NET Framework 4.7 is included in Windows 10 Creators Update, .NET Framework 4.7.1 is included in Windows 10 Fall Creators Update, and .NET Framework 4.7.2 is included in Windows 10 October 2018 Update and Windows 10 April 2018 Update. .NET Framework 4.8 is included in Windows 10 May 2019 Update and all later Windows 10 updates. For a full list of hardware and software requirements, see [System Requirements](../get-started/system-requirements.md).
 
 - Starting with .NET Framework 4.5, your users can view a list of running .NET Framework apps during setup and close them easily. This may help avoid system restarts caused by .NET Framework installations. See [Reducing System Restarts](reducing-system-restarts.md).
 
@@ -141,7 +141,7 @@ The Windows Installer XML (WiX) toolset builds Windows installation packages fro
 
 <a name="installing_manually"></a>
 
-## Installing the .NET Framework manually
+## Install .NET Framework manually
 
 In some situations, it might be impractical to automatically install the .NET Framework with your app. In that case, you can have users install the .NET Framework themselves. The redistributable package is available in [two packages](#redistributable-packages). In your setup process, provide instructions for how users should locate and install the .NET Framework.
 
@@ -196,7 +196,7 @@ For common return codes, see the [Return Codes](#return-codes) section.
 
 <a name="chaining_custom"></a>
 
-### Chaining by Using a Custom UI
+### Chaining by using a Custom UI
 
 If you have a custom setup package, you may want to silently launch and track the .NET Framework setup while showing your own view of the setup progress. If this is the case, make sure that your code covers the following:
 
@@ -230,8 +230,9 @@ The .NET Framework installer writes registry keys when installation is successfu
 
 |Version|Value of the Release DWORD|
 |-------------|--------------------------------|
-|.NET Framework 4.8 installed on Windows 10 May 2019 Update|528040|
-|.NET Framework 4.8 installed on all OS versions other than Windows 10 May 2019 Update|528049|
+|.NET Framework 4.8 installed on Windows 10 May 2020 Update and Windows 10 October 2020 Update|528372|
+|.NET Framework 4.8 installed on Windows 10 May 2019 Update and Windows 10 November 2019 Update|528040|
+|.NET Framework 4.8 installed on all OS versions other than the listed Windows 10 Update versions|528049|
 |.NET Framework 4.7.2 installed on Windows 10 April 2018 Update and on Windows Server, version 1803|461808|
 |.NET Framework 4.7.2 installed on all OS versions other than Windows 10 April 2018 Update, and Windows Server, version 1803. This includes Windows 10 October 2018 Update. |461814|
 |.NET Framework 4.7.1 installed on Windows 10 Fall Creators Update and on Windows Server, version 1709|461308|

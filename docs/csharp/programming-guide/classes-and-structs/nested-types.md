@@ -41,7 +41,7 @@ In the previous declaration, the full name of class `Nested` is `Container.Neste
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes, structs, and records](./index.md)
+- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
 - [Access Modifiers](./access-modifiers.md)
 - [Constructors](./constructors.md)
 - [CA1034 rule](../../../fundamentals/code-analysis/quality-rules/ca1034.md)

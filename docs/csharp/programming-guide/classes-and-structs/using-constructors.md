@@ -90,6 +90,6 @@ For more information, see [Instance constructors](~/_csharplang/spec/classes.md#
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes, structs, and records](./index.md)
+- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
 - [Constructors](./constructors.md)
 - [Finalizers](./destructors.md)

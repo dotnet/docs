@@ -2,7 +2,7 @@
 title: Platform compatibility analyzer
 description: A Roslyn analyzer that can help detect platform compatibility issues in cross-platform apps and libraries.
 author: buyaa-n
-ms.date: 09/17/2020
+ms.date: 05/04/2021
 ---
 
 # Platform compatibility analyzer
@@ -15,9 +15,6 @@ The new APIs include:
 
 - <xref:System.Runtime.Versioning.SupportedOSPlatformAttribute> to annotate APIs as being platform-specific and <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute> to annotate APIs as being unsupported on a particular OS. These attributes can optionally include the version number, and have already been applied to some platform-specific APIs in the core .NET libraries.
 - `Is<Platform>()` and `Is<Platform>VersionAtLeast(int major, int minor = 0, int build = 0, int revision = 0)` static methods in the <xref:System.OperatingSystem?displayProperty=nameWithType> class for safely calling platform-specific APIs. For example, <xref:System.OperatingSystem.IsWindows?displayProperty=nameWithType> can be used to guard a call to a Windows-specific API, and <xref:System.OperatingSystem.IsWindowsVersionAtLeast%2A?displayProperty=nameWithType>() can be used to guard a versioned Windows-specific API call. See these [examples](#guard-platform-specific-apis-with-guard-methods) of how these methods can be used as guards of platform-specific API references.
-
-> [!TIP]
-> The platform compatibility analyzer upgrades and replaces the [Discovering cross-platform issues](../../standard/analyzers/api-analyzer.md#discover-cross-platform-issues) feature of the [.NET API analyzer](../../standard/analyzers/api-analyzer.md).
 
 ## Prerequisites
 
@@ -381,4 +378,3 @@ All the conditional checks used in the [platform guard examples](#guard-platform
 - [Annotating platform-specific APIs and detecting its use](https://github.com/dotnet/designs/blob/main/accepted/2020/platform-checks/platform-checks.md)
 - [Annotating APIs as unsupported on specific platforms](https://github.com/dotnet/designs/blob/main/accepted/2020/platform-exclusion/platform-exclusion.md)
 - [CA1416 Platform compatibility analyzer](../../fundamentals/code-analysis/quality-rules/ca1416.md)
-- [.NET API analyzer](../../standard/analyzers/api-analyzer.md)

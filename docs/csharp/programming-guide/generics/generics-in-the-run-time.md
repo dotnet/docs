@@ -46,5 +46,5 @@ When a generic type or method is compiled into Microsoft intermediate language (
 
 - <xref:System.Collections.Generic>
 - [C# Programming Guide](../index.md)
-- [Introduction to Generics](./index.md)
+- [Introduction to Generics](../../fundamentals/types/generics.md)
 - [Generics](../../../standard/generics/index.md)

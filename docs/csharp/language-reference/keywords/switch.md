@@ -201,4 +201,4 @@ For more information, see [The switch statement](~/_csharplang/spec/statements.m
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [if-else](if-else.md)
-- [Pattern Matching](../../pattern-matching.md)
+- [Pattern Matching](../../fundamentals/functional/pattern-matching.md)

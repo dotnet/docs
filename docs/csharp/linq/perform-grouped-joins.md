@@ -36,4 +36,4 @@ Group joins are ideal for creating XML by using LINQ to XML. The following examp
 - <xref:System.Linq.Enumerable.GroupJoin%2A>
 - [Perform inner joins](perform-inner-joins.md)
 - [Perform left outer joins](perform-left-outer-joins.md)
-- [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)
+- [Anonymous types](../fundamentals/types/anonymous-types.md)

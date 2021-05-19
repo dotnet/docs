@@ -105,9 +105,33 @@ Discards are supported in the following scenarios:
 
 The following example defines a `QueryCityDataForYears` method that returns a 6-tuple that contains data for a city for two different years. The method call in the example is concerned only with the two population values returned by the method and so treats the remaining values in the tuple as discards when it deconstructs the tuple.
 
-[!code-csharp[Tuple-discard](~/samples/snippets/csharp/programming-guide/deconstructing-tuples/discard-tuple1.cs)]
+```csharp
+using System;
 
-For more information, see [Discards](../discards.md).
+public class Example
+{
+    public static void Main()
+    {
+        var result = QueryCityData("New York City");
+
+        var city = result.Item1;
+        var pop = result.Item2;
+        var size = result.Item3;
+
+         // Do something with the data.
+    }
+
+    private static (string, int, double) QueryCityData(string name)
+    {
+        if (name == "New York City")
+            return (name, 8175133, 468.48);
+
+        return ("", 0, 0);
+    }
+}
+```
+
+For more information, see [Discards](../fundamentals/functional/discards.md).
 
 ## Pattern matching
 
@@ -170,7 +194,7 @@ public static int SumPositiveNumbers(IEnumerable<object> sequence)
 
 Beginning with C# 7.1, the pattern expression for `is` and the `switch` type pattern may have the type of a generic type parameter. This can be most useful when checking types that may be either `struct` or `class` types, and you want to avoid boxing.
 
-You can learn more about pattern matching in [Pattern Matching in C#](../pattern-matching.md).
+You can learn more about pattern matching in [Pattern Matching in C#](../fundamentals/functional/pattern-matching.md).
 
 ## Async main
 
@@ -204,7 +228,7 @@ static async Task Main()
 }
 ```
 
-You can read more about the details in the [async main](../programming-guide/main-and-command-args/index.md) article in the programming guide.
+You can read more about the details in the [async main](../fundamentals/program-structure/main-command-line.md) article in the programming guide.
 
 ## Local functions
 

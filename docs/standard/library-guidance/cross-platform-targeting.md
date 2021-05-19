@@ -1,8 +1,9 @@
 ---
 title: Cross-platform targeting for .NET libraries
 description: Best practice recommendations for creating cross-platform .NET libraries.
-ms.date: 04/12/2021
+ms.date: 05/04/2021
 ---
+
 # Cross-platform targeting
 
 Modern .NET supports multiple operating systems and devices. It's important for .NET open-source libraries to support as many developers as possible, whether they're building an ASP.NET website hosted in Azure, or a .NET game in Unity.
@@ -24,7 +25,7 @@ Targeting .NET or .NET Standard, and successfully compiling your project, doesn'
 2. APIs can behave differently. For example, reflection APIs have different performance characteristics when an application uses ahead-of-time compilation on iOS or UWP.
 
 > [!TIP]
-> The .NET team [offers a Roslyn analyzer](../analyzers/api-analyzer.md) to help you discover possible issues.
+> The .NET team offers a [Platform compatibility analyzer](../analyzers/platform-compat-analyzer.md) to help you discover possible issues.
 
 ✔️ DO start with including a `netstandard2.0` target.
 

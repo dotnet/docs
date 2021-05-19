@@ -71,6 +71,8 @@ items:
           href: core-libraries/6.0/hosting-exception-handling.md
       - name: MSBuild
         items:
+        - name: Duplicate files removed from publish output
+          href: msbuild/6.0/duplicate-files-removed-from-output.md
         - name: GetTargetFrameworkProperties and GetNearestTargetFramework removed
           href: msbuild/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md
       - name: Networking

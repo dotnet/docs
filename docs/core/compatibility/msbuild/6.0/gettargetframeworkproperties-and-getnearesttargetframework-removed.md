@@ -9,7 +9,7 @@ The `GetTargetFrameworkProperties` target and `GetNearestTargetFramework` task h
 
 ## Version introduced
 
-.NET Core SDK 6.0.100 Preview 1
+.NET SDK 6.0.100 Preview 1
 
 ## Old behavior
 

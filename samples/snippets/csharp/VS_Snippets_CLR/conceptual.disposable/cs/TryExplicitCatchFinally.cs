@@ -1,9 +1,8 @@
-﻿// <Snippet6>
-using System;
+﻿using System;
 using System.Globalization;
 using System.IO;
 
-class Example
+class TryExplicitCatchFinally
 {
     static void Main()
     {
@@ -33,4 +32,3 @@ class Example
         }
     }
 }
-// </Snippet6>

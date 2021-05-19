@@ -1,11 +1,7 @@
-﻿' Visual Basic .NET Document
-Option Strict On
-
-' <Snippet6>
-Imports System.Globalization
+﻿Imports System.Globalization
 Imports System.IO
 
-Module Example
+Module TryExplicitCatchFinally
     Sub Main()
         Dim streamReader As StreamReader = Nothing
         Try
@@ -24,4 +20,3 @@ Module Example
         End Try
     End Sub
 End Module
-' </Snippet6>

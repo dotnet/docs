@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 069622d3-2b58-4919-8903-710a564c0788
+ms.topic: how-to
 ---
 
 # How to find a union of two location paths (LINQ to XML)

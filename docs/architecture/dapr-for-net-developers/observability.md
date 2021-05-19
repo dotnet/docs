@@ -195,7 +195,7 @@ spec:
 
 ##### Inspect the telemetry in Zipkin
 
-Once the application is started, the Dapr sidecars will emit telemetry to the Zipkin server. To inspect this telemetry, point a web-browser to <http://localhost:32411>. You'll see the Zipkin web front end:
+Once the application is started, the Dapr sidecars will emit telemetry to the Zipkin server. To inspect this telemetry, point a web-browser to `http://localhost:32411`. You'll see the Zipkin web front end:
 
 ![The Zipkin start page](media/observability/zipkin.png)
 

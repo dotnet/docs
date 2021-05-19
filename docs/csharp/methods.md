@@ -17,7 +17,7 @@ A method is a code block that contains a series of statements. A program causes 
 
 ## Method signatures
 
-Methods are declared in a `class` or `struct` by specifying:
+Methods are declared in a `class`, `record`, or `struct` by specifying:
 
 - An optional access level, such as `public` or `private`. The default is `private`.
 - Optional modifiers such as `abstract` or `sealed`.
@@ -137,7 +137,7 @@ The parameter's default value must be assigned by one of the following kinds of 
 
 - A constant, such as a literal string or number.
 - An expression of the form `new ValType()`, where `ValType` is a value type. Note that this invokes the value type's implicit parameterless constructor, which is not an actual member of the type.
-- An expression of the form `default(ValType)`, where `ValType` is a value type.
+- An expression of the form `default(SomeType)`, where `SomeType` can be either a value type or a reference type. If it's a reference type, it's effectively the same as specifying `null`.
 
 If a method includes both required and optional parameters, optional parameters are defined at the end of the parameter list, after all required parameters.
 
@@ -282,7 +282,7 @@ For more information, see [Iterators](programming-guide/concepts/iterators.md).
 
 - [Access Modifiers](language-reference/keywords/access-modifiers.md)
 - [Static Classes and Static Class Members](programming-guide/classes-and-structs/static-classes-and-static-class-members.md)
-- [Inheritance](programming-guide/classes-and-structs/inheritance.md)
+- [Inheritance](fundamentals/object-oriented/inheritance.md)
 - [Abstract and Sealed Classes and Class Members](programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)
 - [params](language-reference/keywords/params.md)
 - [out](language-reference/keywords/out-parameter-modifier.md)

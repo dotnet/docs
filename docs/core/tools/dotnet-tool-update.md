@@ -70,6 +70,14 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
   Specifies the [target framework](../../standard/frameworks.md) to update the tool for.
 
+- **`-g|--global`**
+
+  Specifies that the update is for a user-wide tool. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies that the tool to be updated is a local tool.
+
+- **`-h|--help`**
+
+  Prints out a short help for the command.
+
 - **`--ignore-failed-sources`**
 
   Treat package source failures as warnings.
@@ -94,21 +102,13 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
   Specifies the location where the global tool is installed. PATH can be absolute or relative. Can't be combined with the `--global` option. Omitting both `--global` and `--tool-path` specifies that the tool to be updated is a local tool.
 
-- **`--version <VERSION>`**
-
-  The version range of the tool package to update to. This cannot be used to downgrade versions, you must `uninstall` newer versions first.
-
-- **`-g|--global`**
-
-  Specifies that the update is for a user-wide tool. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies that the tool to be updated is a local tool.
-
-- **`-h|--help`**
-
-  Prints out a short help for the command.
-
 - **`-v|--verbosity <LEVEL>`**
 
   Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+
+- **`--version <VERSION>`**
+
+  The version range of the tool package to update to. This cannot be used to downgrade versions, you must `uninstall` newer versions first.
 
 ## Examples
 

@@ -2,6 +2,7 @@
 description: "Learn more about: How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer"
 title: "How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer"
 ms.date: "03/30/2017"
+ms.topic: how-to
 ms.assetid: 21093451-0bc3-4b1a-9a9d-05f7f71fa7d0
 ---
 # How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer

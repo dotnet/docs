@@ -2,6 +2,7 @@
 title: dotnet-counters diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-counter CLI tool for ad-hoc health monitoring and first-level performance investigation.
 ms.date: 11/17/2020
+ms.topic: reference
 ---
 # Investigate performance counters (dotnet-counters)
 

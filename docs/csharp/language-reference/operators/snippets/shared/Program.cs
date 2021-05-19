@@ -111,6 +111,9 @@ namespace operators
             SwitchExpressions.Examples();
             Console.WriteLine();
 
+            Console.WriteLine("============= is operator example ==============");
+            IsOperator.Examples();
+            Console.WriteLine();
         }
     }
 }

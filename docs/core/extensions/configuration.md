@@ -31,7 +31,7 @@ The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[]
 1. [ChainedConfigurationProvider](xref:Microsoft.Extensions.Configuration.ChainedConfigurationSource) : Adds an existing `IConfiguration` as a source.
 1. *appsettings.json* using the [JSON configuration provider](configuration-providers.md#file-configuration-provider).
 1. *appsettings.*`Environment`*.json* using the [JSON configuration provider](configuration-providers.md#file-configuration-provider). For example, *appsettings*.***Production***.*json* and *appsettings*.***Development***.*json*.
-1. App secrets when the app runs in the `Development` environment.
+1. [App secrets](/aspnet/core/security/app-secrets) when the app runs in the `Development` environment.
 1. Environment variables using the [Environment Variables configuration provider](configuration-providers.md#environment-variable-configuration-provider).
 1. Command-line arguments using the [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider).
 

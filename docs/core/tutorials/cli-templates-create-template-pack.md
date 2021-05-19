@@ -2,7 +2,7 @@
 title: Create a template pack for dotnet new
 description: Learn how to create a csproj file that will build a template pack for the dotnet new command.
 author: adegeo
-ms.date: 12/11/2020
+ms.date: 03/26/2021
 ms.topic: tutorial
 ms.author: adegeo
 ---
@@ -56,6 +56,8 @@ Running 'dotnet restore' on .\templatepack.csproj...
 Restore succeeded.
 ```
 
+The new project template generates a _Program.cs_ file. You can safely delete this file as it's not used by the templates.
+
 Next, open the _templatepack.csproj_ file in your favorite editor and replace the content with the following XML:
 
 ```xml
@@ -98,19 +100,27 @@ The `<ItemGroup>` contains two settings. First, the `<Content>` setting includes
 
 ## Build and install
 
-Save this file and then run the pack command
-
-```dotnetcli
-dotnet pack
-```
-
-This command will build your project and create a NuGet package in This should be the _working\bin\Debug_ folder.
-
-```dotnetcli
-dotnet pack
-```
+Save the project file. Before building the template pack, verify that your folder structure is correct. Any template you want to pack should be placed in the _templates_ folder, in its own folder. The folder structure should look similar to the following:
 
 ```console
+working
+│   templatepack.csproj
+└───templates
+    ├───extensions
+    │   └───.template.config
+    │           template.json
+    └───consoleasync
+        └───.template.config
+                template.json
+```
+
+The _templates_ folder has two folders: _extensions_ and _consoleasync_.
+
+In your terminal, from the _working_ folder, run the `dotnet pack` command. This command builds your project and creates a NuGet package in the _working\bin\Debug_ folder, as indicated by the following output:
+
+```console
+C:\working> dotnet pack
+
 Microsoft (R) Build Engine version 16.8.0+126527ff1 for .NET
 Copyright (C) Microsoft Corporation. All rights reserved.
 
@@ -147,10 +157,8 @@ If you uploaded the NuGet package to a NuGet feed, you can use the `dotnet new -
 No matter how you installed the template pack, either with the _.nupkg_ file directly or by NuGet feed, removing a template pack is the same. Use the `<PackageId>` of the template you want to uninstall. You can get a list of templates that are installed by running the `dotnet new -u` command.
 
 ```dotnetcli
-dotnet new -u
-```
+C:\working> dotnet new -u
 
-```console
 Template Instantiation Commands for .NET Core CLI
 
 Currently installed items:

@@ -31,14 +31,6 @@ class HelloAgain
 {
     static void Main()
     {
-		//<Snippet22>
-        System.Console.WriteLine("Hello World!");
-		//</Snippet22>
-
-		//<Snippet23>
-        Console.WriteLine("Hello World!");
-		//</Snippet23>
-
 		//<Snippet24>
         System.Console.WriteLine("Hello");
         System.Console.WriteLine("World!");

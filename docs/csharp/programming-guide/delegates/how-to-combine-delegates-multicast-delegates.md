@@ -1,6 +1,7 @@
 ---
 title: "How to combine delegates (Multicast Delegates) - C# Programming Guide"
 description: Learn how to combine delegates to create multicast delegates. See a code example and view additional available resources.
+ms.topic: how-to
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "delegates [C#], combining"

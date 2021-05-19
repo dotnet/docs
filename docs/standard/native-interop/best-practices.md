@@ -5,7 +5,7 @@ ms.date: 01/18/2019
 ---
 # Native interoperability best practices
 
-.NET gives you a variety of ways to customize your native interoperability code. This article includes the guidance that Microsoft's .NET teams follow for native interoperability.
+.NET gives you various ways to customize your native interoperability code. This article includes the guidance that Microsoft's .NET teams follow for native interoperability.
 
 ## General guidance
 
@@ -38,15 +38,15 @@ Remember to mark the `[DllImport]` as `Charset.Unicode` unless you explicitly wa
 
 ❌ AVOID `StringBuilder` parameters. `StringBuilder` marshaling *always* creates a native buffer copy. As such, it can be extremely inefficient. Take the typical scenario of calling a Windows API that takes a string:
 
-1. Create a SB of the desired capacity (allocates managed capacity) **{1}**
-2. Invoke
-   1. Allocates a native buffer **{2}**
-   2. Copies the contents if `[In]` _(the default for a `StringBuilder` parameter)_
-   3. Copies the native buffer into a newly allocated managed array if `[Out]` **{3}** _(also the default for `StringBuilder`)_
-3. `ToString()` allocates yet another managed array **{4}**
+1. Create a `StringBuilder` of the desired capacity (allocates managed capacity) **{1}**.
+2. Invoke:
+   1. Allocates a native buffer **{2}**.
+   2. Copies the contents if `[In]` _(the default for a `StringBuilder` parameter)_.
+   3. Copies the native buffer into a newly allocated managed array if `[Out]` **{3}** _(also the default for `StringBuilder`)_.
+3. `ToString()` allocates yet another managed array **{4}**.
 
 That is *{4}* allocations to get a string out of native code. The best you can do to limit this is to reuse the `StringBuilder`
-in another call but this still only saves *1* allocation. It's much better to use and cache a character buffer from `ArrayPool`- you can then get down to just the allocation for the `ToString()` on subsequent calls.
+in another call, but this still only saves *1* allocation. It's much better to use and cache a character buffer from `ArrayPool`. You can then get down to just the allocation for the `ToString()` on subsequent calls.
 
 The other issue with `StringBuilder` is that it always copies the return buffer back up to the first null. If the passed back string isn't terminated or is a double-null-terminated string, your P/Invoke is incorrect at best.
 
@@ -205,7 +205,7 @@ The following types, being pointers, do follow the width of the platform. Use `I
 | `LONG_PTR`                          |                                        |
 | `INT_PTR`                           |                                        |
 
-A Windows `PVOID` which is a C `void*` can be marshaled as either `IntPtr` or `UIntPtr`, but prefer `void*` when possible.
+A Windows `PVOID`, which is a C `void*`, can be marshaled as either `IntPtr` or `UIntPtr`, but prefer `void*` when possible.
 
 [Windows Data Types](/windows/desktop/WinProg/windows-data-types)
 
@@ -215,7 +215,7 @@ A Windows `PVOID` which is a C `void*` can be marshaled as either `IntPtr` or `U
 
 There are rare instances when built-in support for a type is removed.
 
-The [`UnmanagedType.HString`](xref:System.Runtime.InteropServices.UnmanagedType) built-in marshal support was removed in the .NET 5 release. You must recompile binaries that use this marshalling type and that target a previous framework. It's still possible to marshal this type, but you must marshal it manually, as the following code example shows. This code will work moving forward and is also compatible with previous frameworks.
+The [`UnmanagedType.HString`](xref:System.Runtime.InteropServices.UnmanagedType) built-in marshal support was removed in the .NET 5 release. You must recompile binaries that use this marshaling type and that target a previous framework. It's still possible to marshal this type, but you must marshal it manually, as the following code example shows. This code will work moving forward and is also compatible with previous frameworks.
 
 ```csharp
 static class HSTRING
@@ -268,14 +268,14 @@ The `long` type in C/C++ is defined to have ["at least 32"](https://en.cpprefere
 
 These differences can make authoring cross-platform P/Invokes difficult when the native function is defined to use `long` on all platforms.
 
-In .NET 6 and later versions, use the [`CLong` and `CULong`](https://github.com/dotnet/runtime/issues/13788) types for interop with C/C++ `long` and `unsigned long` data types. The following example is for `CLong`, but you can use `CULong` to abstract `unsigned long` in a similar way.
+In .NET 6 and later versions, use the [`CLong`](xref:System.Runtime.InteropServices.CLong) and [`CULong`](xref:System.Runtime.InteropServices.CULong) types for interop with C/C++ `long` and `unsigned long` data types. The following example is for `CLong`, but you can use `CULong` to abstract `unsigned long` in a similar way.
 
 ```csharp
 // Cross platform C function
 // long Function(long a);
 [DllImport("NativeLib")]
 extern static CLong Function(CLong a);
-    
+
 // Usage
 nint result = Function(new CLong(10)).Value;
 ```

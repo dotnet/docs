@@ -1,6 +1,6 @@
 ---
-description: "sizeof operator - C# reference"
 title: "sizeof operator - C# reference"
+description: "Learn about the C# sizeof operator that returns the memory amount occupied by a variable of a given type."
 ms.date: 07/25/2019
 f1_keywords: 
   - "sizeof_CSharpKeyword"
@@ -48,6 +48,6 @@ For more information, see [The sizeof operator](~/_csharplang/spec/unsafe-code.m
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Pointer related operators](pointer-related-operators.md)
-- [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
+- [Pointer types](../unsafe-code.md#pointer-types)
 - [Memory and span-related types](../../../standard/memory-and-spans/index.md)
 - [Generics in .NET](../../../standard/generics/index.md)

@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "signing assemblies"
   - "assemblies [.NET], signing"
   - "assemblies [.NET], strong-named"
-ms.assetid: 2c30799a-a826-46b4-a25d-c584027a6c67
+ms.topic: how-to
 dev_langs: 
   - "csharp"
   - "vb"

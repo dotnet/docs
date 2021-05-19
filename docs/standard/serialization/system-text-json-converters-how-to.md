@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "serialization"
   - "objects, serializing"
   - "converters"
+ms.topic: how-to
 ---
 
 # How to write custom converters for JSON serialization (marshalling) in .NET

@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "AsyncWaitHandle property"
   - "asynchronous programming, blocking applications"
   - "blocking application execution"
-ms.assetid: cc5e2834-a65b-4df8-b750-7bdb79997fee
+ms.topic: how-to
 dev_langs: 
   - "csharp"
   - "vb"

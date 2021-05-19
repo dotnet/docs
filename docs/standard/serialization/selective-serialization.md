@@ -7,7 +7,7 @@ dev_langs:
 helpviewer_keywords: 
   - "serialization, selective serialization"
   - "binary serialization, selective serialization"
-ms.assetid: 39c56635-95d2-4afd-aff1-b022e7649bb3
+ms.topic: how-to
 ---
 # Selective serialization
 

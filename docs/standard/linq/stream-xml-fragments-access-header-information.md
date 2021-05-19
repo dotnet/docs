@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 7f242770-b0c7-418d-894b-643215e1f8aa
+ms.topic: how-to
 ---
 
 # How to stream XML fragments with access to header information (LINQ to XML)

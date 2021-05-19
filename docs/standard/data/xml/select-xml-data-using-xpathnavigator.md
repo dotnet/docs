@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
   - "vb"
-ms.assetid: c268c49e-32b9-4171-b782-dcb7b065fa73
+ms.topic: how-to
 ---
 # Select XML Data Using XPathNavigator
 

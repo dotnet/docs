@@ -13,7 +13,7 @@ More care may be required when you adopt new language features in a library. You
 
 ## Binary compatible changes
 
-Changes to your library are **binary compatible** when your updated library can be used without rebuilding applications and libraries that use it. Dependent assemblies are not required to be rebuilt, nor are any source code changes required. Binary compatible changes are also source compatible changes.
+Changes to your library are **binary compatible** when your updated library can be used without rebuilding applications and libraries that use it. Dependent assemblies are not required to be rebuilt, nor are any source code changes required.
 
 ## Source compatible changes
 

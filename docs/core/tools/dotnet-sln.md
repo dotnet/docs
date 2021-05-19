@@ -204,3 +204,7 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
   The following screenshot shows the result in Visual Studio 2019 **Solution Explorer**:
 
   :::image type="content" source="media/dotnet-sln/dotnet-sln-solution-folder.png" alt-text="Solution Explorer showing class library projects grouped into a solution folder.":::
+
+## See also
+
+- [dotnet/sdk GitHub repo](https://github.com/dotnet/sdk) (.NET CLI source)

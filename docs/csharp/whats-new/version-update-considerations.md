@@ -11,11 +11,11 @@ Compatibility is a very important goal as new features are added to the C# langu
 
 More care may be required when you adopt new language features in a library. You may be creating a new library with features found in the latest version and need to ensure apps built using previous versions of the compiler can use it. Or you may be upgrading an existing library and many of your users may not have upgraded versions yet. As you make decisions on adopting new features, you'll need to consider two variations of compatibility: source compatible and binary compatible.
 
-## Binary compatible changes
+## Binary-compatible changes
 
 Changes to your library are **binary compatible** when your updated library can be used without rebuilding applications and libraries that use it. Dependent assemblies are not required to be rebuilt, nor are any source code changes required.
 
-## Source compatible changes
+## Source-compatible changes
 
 Changes to your library are **source compatible** when applications and libraries that use your library do not require source code changes, but the source must be recompiled against the new version to work correctly.
 

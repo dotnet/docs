@@ -26,7 +26,7 @@ The directions and sample code:
 
 * Use the <xref:System.Text.Json.JsonSerializer> class, which assumes you have a custom type to serialize from and deserialize into.
 
-  For information about how to read and write JSON data directly without using `JsonSerializer`, see [How to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter](use-jsondocument-utf8jsonreader-utf8jsonwriter.md).
+  For information about how to read and write JSON data directly without using `JsonSerializer`, see [How to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md).
 
 * Set <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true` to format the JSON with indentation and whitespace for human readability.
 

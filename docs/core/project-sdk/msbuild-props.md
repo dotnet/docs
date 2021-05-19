@@ -250,7 +250,7 @@ The following MSBuild properties are documented in this section:
 - [AppendRuntimeIdentifierToOutputPath](#appendruntimeidentifiertooutputpath)
 - [AppendTargetFrameworkToOutputPath](#appendtargetframeworktooutputpath)
 - [CopyLocalLockFileAssemblies](#copylocallockfileassemblies)
-- [ErrorOnDuplicatePublishOutputFiles](#error)
+- [ErrorOnDuplicatePublishOutputFiles](#erroronduplicatepublishoutputfiles)
 - [IsPublishable](#ispublishable)
 - [PreserveCompilationContext](#preservecompilationcontext)
 - [PreserveCompilationReferences](#preservecompilationreferences)

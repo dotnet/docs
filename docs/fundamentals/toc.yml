@@ -1794,8 +1794,8 @@ items:
         items:
         - name: Customize character encoding
           href: ../standard/serialization/system-text-json-character-encoding.md
-        - name: Custom serializers and deserializers
-          href: ../standard/serialization/write-custom-serializer-deserializer.md
+        - name: Use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter
+          href: ../standard/serialization/jsondocument-jsonelement-utf8jsonreader-utf8-json-writer.md
         - name: Custom converters
           href: ../standard/serialization/system-text-json-converters-how-to.md
     - name: Binary serialization

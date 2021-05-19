@@ -1,6 +1,6 @@
 ---
-title: How to write custom serializers and deserializers with System.Text.Json
-description: "Learn how to write custom serializers and deserializers for JSON, using the System.Text.Json namespace."
+title: How to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter with System.Text.Json
+description: "Learn how to use JsonDocument, JsonElement, Utf8JsonReader, and Utf8JsonWriter."
 ms.date: 01/19/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
@@ -14,7 +14,7 @@ helpviewer_keywords:
 ms.topic: how-to
 ---
 
-# How to write custom serializers and deserializers with System.Text.Json
+# How to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
 
 <xref:System.Text.Json.Utf8JsonReader?displayProperty=fullName> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>` or `ReadOnlySequence<byte>`. The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers. The <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method uses `Utf8JsonReader` under the covers. The  `Utf8JsonReader` can't be used directly from Visual Basic code. For more information, see [Visual Basic support](system-text-json-how-to.md#visual-basic-support).
 

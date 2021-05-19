@@ -20,14 +20,22 @@ ms.topic: how-to
 
 This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to serialize to and deserialize from JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](system-text-json-migrate-from-newtonsoft-how-to.md).
 
-The directions and sample code use the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
+The directions and sample code:
 
-Most of the serialization sample code sets <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true` to "pretty-print" the JSON (with indentation and whitespace for human readability). For production use, you would typically accept the default value of `false` for this setting, since adding unnecessary whitespace may incur a noticeable, negative impact on performance and bandwidth usage.
+* Use the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
 
-The code examples refer to the following class and variants of it:
+* Set <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true` to format the JSON with indentation and whitespace for human readability.
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WF":::
+  For production use, you would typically accept the default value of `false` for this setting, since adding unnecessary whitespace may incur a negative impact on performance and bandwidth usage.
+
+* Refer to the following class and variants of it:
+
+  :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
+  :::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WF":::
+
+* Use the <xref:System.Text.Json.JsonSerializer> class, which assumes you have a custom type to serialize from and deserialize into.
+
+  For information about how to read and write JSON data directly without using `JsonSerializer`, see [How to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json](use-jsondocument-utf8jsonreader-utf8jsonwriter.md).
 
 ## Visual Basic support
 

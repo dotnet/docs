@@ -22,7 +22,14 @@ ms.topic: how-to
 
 <xref:System.Text.Json.JsonDocument?displayProperty=fullName> provides the ability to build a read-only Document Object Model (DOM) by using `Utf8JsonReader`. The DOM provides random access to data in a JSON payload. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides array and object enumerators along with APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property.
 
-The following sections show how to use these tools for reading and writing JSON.
+The following sections show how to use these APIs for reading and writing JSON.
+
+> [!NOTE]
+> The article about migrating from Newtonsoft has more information about these APIs. See the following sections in that article:
+>
+> * [JsonDocument and JsonElement compared to JToken (like JObject, JArray)](system-text-json-migrate-from-newtonsoft-how-to.md#jsondocument-and-jsonelement-compared-to-jtoken-like-jobject-jarray)
+> * [Utf8JsonReader compared to JsonTextReader](system-text-json-migrate-from-newtonsoft-how-to.md#utf8jsonreader-compared-to-jsontextreader)
+> * [Utf8JsonWriter compared to JsonTextWriter](system-text-json-migrate-from-newtonsoft-how-to.md#utf8jsonwriter-compared-to-jsontextwriter)
 
 ## Use JsonDocument for access to data
 

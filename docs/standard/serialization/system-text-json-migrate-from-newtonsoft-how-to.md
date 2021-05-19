@@ -668,7 +668,7 @@ Searches for JSON tokens using `JObject` or `JArray` from `Newtonsoft.Json` tend
 * Use the built-in enumerators (<xref:System.Text.Json.JsonElement.EnumerateArray%2A> and <xref:System.Text.Json.JsonElement.EnumerateObject%2A>) rather than doing your own indexing or loops.
 * Don't do a sequential search on the whole `JsonDocument` through every property by using `RootElement`. Instead, search on nested JSON objects based on the known structure of the JSON data. For example, if you're looking for a `Grade` property in `Student` objects, loop through the `Student` objects and get the value of `Grade` for each, rather than searching through all `JsonElement` objects looking for `Grade` properties. Doing the latter will result in unnecessary passes over the same data.
 
-For a code example, see [Use JsonDocument for access to data](write-custom-serializer-deserializer.md#use-jsondocument-for-access-to-data).
+For a code example, see [Use JsonDocument for access to data](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-jsondocument-for-access-to-data).
 
 ## Utf8JsonReader compared to JsonTextReader
 
@@ -682,7 +682,7 @@ Because the `Utf8JsonReader` type is a *ref struct*, it has [certain limitations
 
 ### Read UTF-8 text
 
-To achieve the best possible performance while using the `Utf8JsonReader`, read JSON payloads already encoded as UTF-8 text rather than as UTF-16 strings. For a code example, see [Filter data using Utf8JsonReader](write-custom-serializer-deserializer.md#filter-data-using-utf8jsonreader).
+To achieve the best possible performance while using the `Utf8JsonReader`, read JSON payloads already encoded as UTF-8 text rather than as UTF-16 strings. For a code example, see [Filter data using Utf8JsonReader](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#filter-data-using-utf8jsonreader).
 
 ### Read with a Stream or PipeReader
 
@@ -692,7 +692,7 @@ For synchronous reading, you could read the JSON payload until the end of the st
 
 Since the `Utf8JsonReader` considers the input to be JSON text, a UTF-8 byte order mark (BOM) is considered invalid JSON. The caller needs to filter that out before passing the data to the reader.
 
-For code examples, see [Use Utf8JsonReader](write-custom-serializer-deserializer.md#use-utf8jsonreader).
+For code examples, see [Use Utf8JsonReader](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-utf8jsonreader).
 
 ### Read with multi-segment ReadOnlySequence
 
@@ -837,7 +837,7 @@ The decision to exclude `TypeNameHandling.All`-equivalent functionality from `Sy
 * [Immutable types and non-public accessors](system-text-json-immutability.md)
 * [Polymorphic serialization](system-text-json-polymorphism.md)
 * [Customize character encoding](system-text-json-character-encoding.md)
-* [Use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter](write-custom-serializer-deserializer.md)
+* [Use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

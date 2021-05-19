@@ -27,7 +27,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | [SYSLIB0021](../../../../fundamentals/syslib-diagnostics/syslib0021.md) | Derived cryptographic types are obsolete. Use the `Create` method on the base type instead. | Warning |
 | [SYSLIB0022](../../../../fundamentals/syslib-diagnostics/syslib0022.md) | The <xref:System.Security.Cryptography.Rijndael> and <xref:System.Security.Cryptography.RijndaelManaged> types are obsolete. Use <xref:System.Security.Cryptography.Aes> instead. | Warning |
 | [SYSLIB0023](../../../../fundamentals/syslib-diagnostics/syslib0023.md) | <xref:System.Security.Cryptography.RNGCryptoServiceProvider> is obsolete. To generate a random number, use one of the <xref:System.Security.Cryptography.RandomNumberGenerator> static methods instead. | Warning |
-| [SYSLIB0024](../../../../fundamentals/syslib-diagnostics/syslib0024.md) | Creating and unloading AppDomains is not supported and throws an exception. | Warning |
+| [SYSLIB0024](../../../../fundamentals/syslib-diagnostics/syslib0024.md) | Creating and unloading [AppDomains](xref:System.AppDomain) is not supported and throws an exception. | Warning |
 
 ## Version introduced
 

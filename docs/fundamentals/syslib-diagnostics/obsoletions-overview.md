@@ -43,7 +43,7 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0021][0021] | Warning | Derived cryptographic types are obsolete. Use the `Create` method on the base type instead. |
 | [SYSLIB0022][0022] | Warning | The <xref:System.Security.Cryptography.Rijndael> and <xref:System.Security.Cryptography.RijndaelManaged> types are obsolete. Use <xref:System.Security.Cryptography.Aes> instead. |
 | [SYSLIB0023][0023] | Warning | <xref:System.Security.Cryptography.RNGCryptoServiceProvider> is obsolete. To generate a random number, use one of the <xref:System.Security.Cryptography.RandomNumberGenerator> static methods instead. |
-| [SYSLIB0024][0024] | Warning | Creating and unloading AppDomains is not supported and throws an exception. |
+| [SYSLIB0024][0024] | Warning | Creating and unloading [AppDomains](xref:System.AppDomain) is not supported and throws an exception. |
 
 <!-- Include adds ## Suppress warnings (H2 heading) -->
 [!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]

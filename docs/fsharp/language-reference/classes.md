@@ -4,7 +4,7 @@ titleSuffix: ""
 description: Learn how F# Classes are types that represent objects that can have properties, methods, and events.
 ms.date: 05/16/2016
 ---
-# Classes
+# Classes (F#)
 
 *Classes* are types that represent objects that can have properties, methods, and events.
 

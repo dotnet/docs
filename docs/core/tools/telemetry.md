@@ -72,6 +72,11 @@ The telemetry feature collects the following data:
 | >=2.1.300     | Libc release/version. |
 | >=3.0.100     | Whether the output was redirected (true or false). |
 | >=3.0.100     | On a CLI/SDK crash, the exception type and its stack trace (only CLI/SDK code is included in the stack trace sent). For more information, see [.NET CLI/SDK crash exception telemetry collected](#net-clisdk-crash-exception-telemetry-collected). |
+| >=5.0.100     | Hashed TargetFrameworkVersion used for build (MSBuild property) |
+| >=5.0.100     | Hashed RuntimeIdentifier used for build (MSBuild property) |
+| >=5.0.100     | Hashed SelfContained used for build  (MSBuild property) |
+| >=5.0.100     | Hashed UseApphost used for build  (MSBuild property) |
+| >=5.0.100     | Hashed OutputType used for build (MSBuild property  |
 | >=5.0.202     | Elapsed time from process start until entering the CLI program's main method, measuring host and runtime startup. |
 | >=5.0.202     | Elapsed time for the step that adds .NET Tools to the path on first run. |
 | >=5.0.202     | Elapsed time to display first time use notice on first run. |

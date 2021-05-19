@@ -200,6 +200,7 @@ Enums in the `System.Security.Permissions` namespace:
 
 Classes and members that depend on code access security types:
 
+- <xref:System.AppDomain.ExecuteAssembly(System.String,System.String[],System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)?displayProperty=fullName>
 - <xref:System.AppDomain.PermissionSet?displayProperty=fullName>
 - <xref:System.Runtime.InteropServices.AllowReversePInvokeCallsAttribute?displayProperty=fullName>
 - <xref:System.Security.HostProtectionException?displayProperty=fullName>
@@ -267,6 +268,7 @@ Classes and members that depend on code access security types:
 
 ### SYSLIB0011
 
+- <xref:System.Exception.SerializeObjectState?displayProperty=fullName>
 - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType>
 - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType>
 - <xref:System.Runtime.Serialization.Formatter.Serialize(System.IO.Stream,System.Object)?displayProperty=nameWithType>

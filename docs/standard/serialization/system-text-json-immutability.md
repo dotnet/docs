@@ -42,7 +42,7 @@ Records in C# 9 are also supported, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Records.cs":::
 
-You can apply any of the attributes to the property names, using the `property:` target on the attribute. For more information on positional records, see the article on [records](../../csharp/language-reference/builtin-types/record.md#positional-syntax-for-property-definition)
+You can apply any of the attributes to the property names, using the `property:` target on the attribute. For more information on positional records, see the article on [records](../../csharp/language-reference/builtin-types/record.md#positional-syntax-for-property-definition) in the C# language reference.
 
 For types that are immutable because all their property setters are non-public, see the following section.
 ::: zone-end

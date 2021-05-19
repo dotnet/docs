@@ -55,4 +55,4 @@ Employee name: Hazem Abolrous
 - [Using Properties](./using-properties.md)
 - [Comparison Between Properties and Indexers](../indexers/comparison-between-properties-and-indexers.md)
 - [Indexers](../indexers/index.md)
-- [Interfaces](../interfaces/index.md)
+- [Interfaces](../../fundamentals/types/interfaces.md)

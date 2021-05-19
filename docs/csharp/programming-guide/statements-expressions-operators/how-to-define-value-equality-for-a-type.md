@@ -13,7 +13,7 @@ ms.assetid: 4084581e-b931-498b-9534-cf7ef5b68690
 ---
 # How to define value equality for a class or struct (C# Programming Guide)
 
-[Records](../classes-and-structs/records.md) automatically implement value equality. Consider defining a `record` instead of a `class` when your type models data and should implement value equality.
+[Records](../../fundamentals/types/records.md) automatically implement value equality. Consider defining a `record` instead of a `class` when your type models data and should implement value equality.
 
 When you define a class or struct, you decide whether it makes sense to create a custom definition of value equality (or equivalence) for the type. Typically, you implement value equality when you expect to add objects of the type to a collection, or when their primary purpose is to store a set of fields or properties. You can base your definition of value equality on a comparison of all the fields and properties in the type, or you can base the definition on a subset.
 

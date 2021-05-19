@@ -259,7 +259,7 @@ static Quadrant GetQuadrant(Point point) => point switch
 
 The discard pattern in the preceding switch matches when either `x` or `y` is 0, but not both. A switch expression must either produce a value or throw an exception. If none of the cases match, the switch expression throws an exception. The compiler generates a warning for you if you don't cover all possible cases in your switch expression.
 
-You can explore pattern matching techniques in this [advanced tutorial on pattern matching](../tutorials/pattern-matching.md). For more information about a positional pattern, see the [Positional pattern](../language-reference/operators/patterns.md#positional-pattern) section of the [Patterns](../language-reference/operators/patterns.md) article.
+You can explore pattern matching techniques in this [advanced tutorial on pattern matching](../fundamentals/tutorials/pattern-matching.md). For more information about a positional pattern, see the [Positional pattern](../language-reference/operators/patterns.md#positional-pattern) section of the [Patterns](../language-reference/operators/patterns.md) article.
 
 ## Using declarations
 

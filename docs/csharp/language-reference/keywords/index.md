@@ -144,7 +144,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [orderby](orderby-clause.md)  
         [partial (type)](partial-type.md)  
         [partial (method)](partial-method.md)  
-        [record](../../programming-guide/classes-and-structs/records.md)  
+        [record](../../fundamentals/types/records.md)  
         [remove](remove.md)  
         [select](select-clause.md)  
     :::column-end:::

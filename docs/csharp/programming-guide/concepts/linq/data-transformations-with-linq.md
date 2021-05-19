@@ -56,7 +56,7 @@ Language-Integrated Query (LINQ) is not only about retrieving data. It is also a
                 select new {Name = cust.Name, City = cust.City};  
     ```  
   
- For more information, see [Object and Collection Initializers](../../classes-and-structs/object-and-collection-initializers.md) and [Anonymous Types](../../classes-and-structs/anonymous-types.md).  
+ For more information, see [Object and Collection Initializers](../../classes-and-structs/object-and-collection-initializers.md) and [Anonymous Types](../../../fundamentals/types/anonymous-types.md).  
   
 ## Transforming in-Memory Objects into XML  
 

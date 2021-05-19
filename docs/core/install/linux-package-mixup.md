@@ -60,7 +60,7 @@ If your distribution provides .NET packages, it's recommended that you use that 
     For Fedora, CentOS 8+, RHEL 8+, use the following bash commands:
 
     ```bash
-    sudo dnf remove package-microsoft-prod
+    sudo dnf remove packages-microsoft-prod
     sudo dnf remove 'dotnet*' 'aspnet*' 'netstandard*'
     sudo dnf install dotnet-sdk-5.0
     ```

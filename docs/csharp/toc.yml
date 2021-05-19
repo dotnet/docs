@@ -35,6 +35,116 @@ items:
         href: tour-of-csharp/tutorials/branches-and-loops-local.md
       - name: List collections
         href: tour-of-csharp/tutorials/arrays-and-collections.md
+- name: Fundamentals
+  # TODO: https://github.com/dotnet/docs/pull/23464#discussion_r633857533
+  # Use "title suffix" in docfx.json for "fundamentals", and edit H1s to be unique
+  items:
+  - name: Program structure
+    items:
+    - name: Overview
+      href: fundamentals/program-structure/index.md
+    - name: Main method
+      href: fundamentals/program-structure/main-command-line.md
+    - name: Top-level statements
+      href: fundamentals/program-structure/top-level-statements.md
+  - name: Type system
+    items:
+    - name: Overview
+      href: fundamentals/types/index.md
+    - name: Namespaces
+      href: fundamentals/types/namespaces.md
+    # TODO: tuples
+    - name: Classes
+      href: fundamentals/types/classes.md
+    # TODO: Edit Records article so it doesn't depend on classes.
+    - name: Records
+      href: fundamentals/types/records.md
+    # TODO: structs
+    - name: Interfaces
+      href: fundamentals/types/interfaces.md
+    - name: Generics
+      href: fundamentals/types/generics.md    
+    - name: Anonymous Types
+      href: fundamentals/types/anonymous-types.md
+    # TODO: Delegates, lambdas and events
+  - name: Object Oriented programming
+    items:
+    - name: Overview
+      displayName: classes, structs, records
+      href: fundamentals/object-oriented/index.md
+    - name: Objects
+      href: fundamentals/object-oriented/objects.md
+    - name: Inheritance
+      href: fundamentals/object-oriented/inheritance.md
+    # Encapsulation & composition
+    - name: Polymorphism
+      href: fundamentals/object-oriented/polymorphism.md
+  - name: Functional techniques
+    items:
+    # - Conceptual overview
+    #   - Expressions (how different than OO and expressions?)
+    #   - separation of data & algorithms
+    #   - immutability (emphasize constructors & passing data to constructor, get/init)
+    #   - Functional purity / functions as arguments or return values
+    # In F#, discussion of "object programming" -> objects become more sophisticated records.
+    # - language features:
+    #   - Lambdas
+    #   - Positional records as DTOs
+    - name: Pattern matching
+      href: fundamentals/functional/pattern-matching.md
+    - name: Discards
+      href: fundamentals/functional/discards.md
+    - name: Deconstructing tuples and other types
+      href: fundamentals/functional/deconstruct.md
+  - name: Exceptions and errors
+    items:
+    - name: Overview
+      displayName: exceptions
+      href: fundamentals/exceptions/index.md
+    - name: Using exceptions
+      href: fundamentals/exceptions/using-exceptions.md
+    - name: Exception handling
+      href: fundamentals/exceptions/exception-handling.md
+    - name: Creating and throwing exceptions
+      href: fundamentals/exceptions/creating-and-throwing-exceptions.md
+    - name: Compiler-generated exceptions
+      href: fundamentals/exceptions/compiler-generated-exceptions.md
+  - name: Coding style
+    items:
+    - name: Identifier names
+      href: fundamentals/coding-style/identifier-names.md
+    - name: C# coding conventions
+      href: fundamentals/coding-style/coding-conventions.md
+  - name: Tutorials
+    items:
+    - name: "How to display command-line arguments"
+      href: fundamentals/tutorials/how-to-display-command-line-arguments.md
+      # TODO: Command line processing tutorials
+      # TODO: DTOs (tuples, anonymous types and records)
+      # TODO: Values (record structs and structs)
+      # TODO: Classes and objects (interfaces and classes)
+      # TODO: Generics (methods and classes)
+      # TODO: Fundamentals of using lambdas
+    - name: Introduction to classes
+      href: fundamentals/tutorials/classes.md
+    - name: Object-Oriented C#
+      href: fundamentals/tutorials/oop.md
+    # Composing objects from parts
+    - name: Inheritance in C# and .NET
+      href: fundamentals/tutorials/inheritance.md
+    # programming to interfaces
+    - name: Converting types
+      displayName: cast, is, as
+      href: fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md
+    - name: Build data-driven algorithms with pattern matching
+      href: fundamentals/tutorials/pattern-matching.md
+    # separating data and algorithms
+    # Data transformations
+    ## TODO: Replace with a tutorial (include async exceptions)
+    - name: "How to handle an exception using try-catch"
+      href: fundamentals/exceptions/how-to-handle-an-exception-using-try-catch.md
+    - name: "How to execute cleanup code using finally"
+      href: fundamentals/exceptions/how-to-execute-cleanup-code-using-finally.md
 - name: What's new in C#
   items:
   - name: C# 9.0
@@ -74,10 +184,6 @@ items:
       href: whats-new/tutorials/generate-consume-asynchronous-stream.md
 - name: Tutorials
   items:
-  - name: Introduction to classes
-    href: tutorials/intro-to-csharp/introduction-to-classes.md
-  - name: Object-Oriented programming
-    href: tutorials/intro-to-csharp/object-oriented-programming.md
   - name: Explore string interpolation - interactive
     href: tutorials/exploration/interpolated-strings.yml
   - name: Explore string interpolation - in your environment
@@ -88,42 +194,22 @@ items:
     href: tutorials/console-teleprompter.md
   - name: REST Client
     href: tutorials/console-webapiclient.md
-  - name: Inheritance in C# and .NET
-    href: tutorials/inheritance.md
   - name: Work with LINQ
     href: tutorials/working-with-linq.md
   - name: Use Attributes
     href: tutorials/attributes.md
-  - name: Build data-driven algorithms with pattern matching
-    href: tutorials/pattern-matching.md
 - name: C# concepts
   items:
-  - name: C# type system
-    href: programming-guide/types/index.md
   - name: Nullable reference types
     href: nullable-references.md
   - name: Choose a strategy for enabling nullable reference types
     href: nullable-migration-strategies.md
-  - name: Namespaces
-    href: programming-guide/namespaces/index.md
-  - name: Basic Types
-    href: basic-types.md
-  - name: Classes
-    href: programming-guide/classes-and-structs/classes.md
-  - name: Deconstructing tuples and other types
-    href: deconstruct.md
-  - name: Interfaces
-    href: programming-guide/interfaces/index.md
   - name: Methods
     href: methods.md
   - name: Properties
     href: properties.md
   - name: Indexers
     href: indexers.md
-  - name: Discards
-    href: discards.md
-  - name: Generics
-    href: programming-guide/generics/index.md
   - name: Iterators
     href: iterators.md
   - name: Delegates & events
@@ -186,8 +272,6 @@ items:
       href: linq/handle-null-values-in-query-expressions.md
     - name: Handle exceptions in query expressions
       href: linq/handle-exceptions-in-query-expressions.md
-  - name: Pattern Matching
-    href: pattern-matching.md
   - name: Write safe, efficient code
     href: write-safe-efficient-code.md
   - name: Expression trees
@@ -229,8 +313,8 @@ items:
     href: how-to/modify-string-contents.md
   - name: Compare strings
     href: how-to/compare-strings.md
-  - name: Safely cast using pattern matching and is/as operators
-    href: how-to/safely-cast-using-pattern-matching-is-and-as-operators.md
+  - name: "How to catch a non-CLS exception"
+    href: how-to/how-to-catch-a-non-cls-exception.md
 - name: The .NET Compiler Platform SDK (Roslyn APIs)
   items:
   - name: The .NET Compiler Platform SDK (Roslyn APIs) overview
@@ -281,29 +365,6 @@ items:
   - name: Overview
     displayName: programming guide
     href: programming-guide/index.md
-  - name: Inside a C# program
-    items:
-    - name: What's inside a C# program
-      href: programming-guide/inside-a-program/index.md
-    - name: General Structure of a C# Program
-      href: programming-guide/inside-a-program/general-structure-of-a-csharp-program.md
-    - name: Identifier names
-      href: programming-guide/inside-a-program/identifier-names.md
-    - name: C# Coding Conventions
-      href: programming-guide/inside-a-program/coding-conventions.md
-  - name: Main() and command-line arguments
-    items:
-    - name: Overview
-      displayName: main method
-      href: programming-guide/main-and-command-args/index.md
-    - name: Command-Line Arguments
-      href: programming-guide/main-and-command-args/command-line-arguments.md
-    - name: "How to display command-line arguments"
-      href: programming-guide/main-and-command-args/how-to-display-command-line-arguments.md
-    - name: Main() Return Values
-      href: programming-guide/main-and-command-args/main-return-values.md
-    - name: Top-level statements
-      href: programming-guide/main-and-command-args/top-level-statements.md
   - name: Programming concepts
     items:
     - name: Overview
@@ -541,8 +602,6 @@ items:
         href: programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md
   - name: Types
     items:
-    - name: Use and define types
-      href: programming-guide/types/index.md
     - name: Casting and Type Conversions
       href: programming-guide/types/casting-and-type-conversions.md
     - name: Boxing and Unboxing
@@ -559,22 +618,8 @@ items:
       href: programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md
   - name: Classes, Structs, and Records
     items:
-    - name: Overview
-      displayName: classes, structs, records
-      href: programming-guide/classes-and-structs/index.md
-    - name: Classes
-      href: programming-guide/classes-and-structs/classes.md
-    - name: Records
-      href: programming-guide/classes-and-structs/records.md
-    - name: Objects
-      href: programming-guide/classes-and-structs/objects.md
-    - name: Inheritance
-      href: programming-guide/classes-and-structs/inheritance.md
     - name: Polymorphism
       items:
-      - name: Overview
-        displayName: polymorphism
-        href: programming-guide/classes-and-structs/polymorphism.md
       - name: Versioning with the Override and New Keywords
         href: programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md
       - name: Knowing When to Use Override and New Keywords
@@ -673,15 +718,10 @@ items:
       href: programming-guide/classes-and-structs/nested-types.md
     - name: Partial Classes and Methods
       href: programming-guide/classes-and-structs/partial-classes-and-methods.md
-    - name: Anonymous Types
-      href: programming-guide/classes-and-structs/anonymous-types.md
     - name: "How to return subsets of element properties in a query"
       href: programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md
   - name: Interfaces
     items:
-    - name: Overview
-      displayName: interfaces
-      href: programming-guide/interfaces/index.md
     - name: Explicit Interface Implementation
       href: programming-guide/interfaces/explicit-interface-implementation.md
     - name: "How to explicitly implement interface members"
@@ -752,9 +792,6 @@ items:
       href: programming-guide/events/how-to-implement-custom-event-accessors.md
   - name: Generics
     items:
-    - name: Overview
-      displayName: generics
-      href: programming-guide/generics/index.md
     - name: Generic Type Parameters
       href: programming-guide/generics/generic-type-parameters.md
     - name: Constraints on Type Parameters
@@ -779,9 +816,6 @@ items:
       href: programming-guide/generics/generics-and-attributes.md
   - name: Namespaces
     items:
-    - name: Overview
-      displayName: namespaces
-      href: programming-guide/namespaces/index.md
     - name: Using namespaces
       href: programming-guide/namespaces/using-namespaces.md
     - name: "How to use the My namespace"
@@ -841,25 +875,6 @@ items:
         href: programming-guide/xmldoc/typeparamref.md
       - name: <value>
         href: programming-guide/xmldoc/value.md
-  - name: Exceptions and Exception Handling
-    items:
-    - name: Overview
-      displayName: exceptions
-      href: programming-guide/exceptions/index.md
-    - name: Using Exceptions
-      href: programming-guide/exceptions/using-exceptions.md
-    - name: Exception Handling
-      href: programming-guide/exceptions/exception-handling.md
-    - name: Creating and Throwing Exceptions
-      href: programming-guide/exceptions/creating-and-throwing-exceptions.md
-    - name: Compiler-Generated Exceptions
-      href: programming-guide/exceptions/compiler-generated-exceptions.md
-    - name: "How to handle an exception using try-catch"
-      href: programming-guide/exceptions/how-to-handle-an-exception-using-try-catch.md
-    - name: "How to execute cleanup code using finally"
-      href: programming-guide/exceptions/how-to-execute-cleanup-code-using-finally.md
-    - name: "How to catch a non-CLS exception"
-      href: programming-guide/exceptions/how-to-catch-a-non-cls-exception.md
   - name: File System and the Registry
     items:
     - name: Overview

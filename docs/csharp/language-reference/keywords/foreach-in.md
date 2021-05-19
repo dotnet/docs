@@ -71,4 +71,3 @@ For more information about features added in C# 8.0 and later, see the following
 - [C# reference](../index.md)
 - [C# keywords](index.md)
 - [Using foreach with arrays](../../programming-guide/arrays/using-foreach-with-arrays.md)
-- [for statement](for.md)

@@ -42,7 +42,7 @@ You can use a `yield break` statement to end the iteration.
 
 ## Simple Iterator
 
-The following example has a single `yield return` statement that is inside a [for](../../language-reference/keywords/for.md) loop. In `Main`, each iteration of the `foreach` statement body creates a call to the iterator function, which proceeds to the next `yield return` statement.
+The following example has a single `yield return` statement that is inside a [for](../../language-reference/statements/iteration-statements.md#the-for-statement) loop. In `Main`, each iteration of the `foreach` statement body creates a call to the iterator function, which proceeds to the next `yield return` statement.
 
 ```csharp
 static void Main()

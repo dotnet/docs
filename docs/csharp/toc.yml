@@ -1037,16 +1037,6 @@ items:
           href: language-reference/keywords/if-else.md
         - name: switch
           href: language-reference/keywords/switch.md
-      - name: Iteration Statements
-        items:
-        - name: do
-          href: language-reference/keywords/do.md
-        - name: for
-          href: language-reference/keywords/for.md
-        - name: foreach, in
-          href: language-reference/keywords/foreach-in.md
-        - name: while
-          href: language-reference/keywords/while.md
       - name: Jump Statements
         items:
         - name: break
@@ -1281,6 +1271,11 @@ items:
       displayName: "records, copy"
     - name: Operator overloading
       href: language-reference/operators/operator-overloading.md
+  - name: Statements
+    items:
+    - name: Iteration statements
+      displayName: for, foreach, do, while, loop
+      href: language-reference/statements/iteration-statements.md
   - name: Special characters
     items:
     - name: Overview

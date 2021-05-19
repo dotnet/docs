@@ -24,7 +24,7 @@ yield break;
 
 You use a `yield return` statement to return each element one at a time.
 
-The sequence returned from an iterator method can be consumed by using a [foreach](foreach-in.md) statement or LINQ query. Each iteration of the `foreach` loop calls the iterator method. When a `yield return` statement is reached in the iterator method, `expression` is returned, and the current location in code is retained. Execution is restarted from that location the next time that the iterator function is called.
+The sequence returned from an iterator method can be consumed by using a [foreach](../statements/iteration-statements.md#the-foreach-statement) statement or LINQ query. Each iteration of the `foreach` loop calls the iterator method. When a `yield return` statement is reached in the iterator method, `expression` is returned, and the current location in code is retained. Execution is restarted from that location the next time that the iterator function is called.
 
 You can use a `yield break` statement to end the iteration.
 
@@ -94,5 +94,5 @@ The following example demonstrates a `get` accessor that is an iterator. In the 
 
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
-- [foreach, in](foreach-in.md)
+- [foreach, in](../statements/iteration-statements.md#the-foreach-statement)
 - [Iterators](../../iterators.md)

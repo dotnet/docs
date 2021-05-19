@@ -21,13 +21,13 @@ The `var` keyword may be used in the following contexts:
 
 - On local variables (variables declared at method scope) as shown in the previous example.
 
-- In a [for](../../language-reference/keywords/for.md) initialization statement.
+- In a [for](../../language-reference/statements/iteration-statements.md#the-for-statement) initialization statement.
 
     ```csharp
     for (var x = 1; x < 10; x++)
     ```
 
-- In a [foreach](../../language-reference/keywords/foreach-in.md) initialization statement.
+- In a [foreach](../../language-reference/statements/iteration-statements.md#the-foreach-statement) initialization statement.
 
     ```csharp
     foreach (var item in list) {...}
@@ -95,6 +95,5 @@ The use of `var` helps simplify your code, but its use should be restricted to c
 - [var](../../language-reference/keywords/var.md)
 - [LINQ in C#](../../linq/index.md)
 - [LINQ (Language-Integrated Query)](../../linq/index.md)
-- [for](../../language-reference/keywords/for.md)
-- [foreach, in](../../language-reference/keywords/foreach-in.md)
+- [Iteration statements](../../language-reference/statements/iteration-statements.md)
 - [using Statement](../../language-reference/keywords/using-statement.md)

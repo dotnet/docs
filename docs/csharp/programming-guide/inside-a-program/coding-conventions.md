@@ -91,7 +91,7 @@ The following sections describe practices that the C# team follows to prepare co
 
 - Avoid the use of `var` in place of [dynamic](../../language-reference/builtin-types/reference-types.md). Use `dynamic` when you want run-time type inference. For more information, see [Using type dynamic (C# Programming Guide)](../types/using-type-dynamic.md).
   
-- Use implicit typing to determine the type of the loop variable in [for](../../language-reference/keywords/for.md) loops.  
+- Use implicit typing to determine the type of the loop variable in [for](../../language-reference/statements/iteration-statements.md#the-for-statement) loops.  
   
   The following example uses implicit typing in a `for` statement.  
 

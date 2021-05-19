@@ -34,7 +34,7 @@ The `async` and `await` keywords are available in C# 5 and later.
 
 Beginning with C# 8.0, you can work with asynchronous streams and disposables.
 
-You use the `await foreach` statement to consume an asynchronous stream of data. For more information, see the [`foreach` statement](../keywords/foreach-in.md) article and the [Asynchronous streams](../../whats-new/csharp-8.md#asynchronous-streams) section of the [What's new in C# 8.0](../../whats-new/csharp-8.md) article.
+You use the `await foreach` statement to consume an asynchronous stream of data. For more information, see the [`foreach` statement](../statements/iteration-statements.md#the-foreach-statement) section of the [Iteration statements](../statements/iteration-statements.md) article and the [Asynchronous streams](../../whats-new/csharp-8.md#asynchronous-streams) section of the [What's new in C# 8.0](../../whats-new/csharp-8.md) article.
 
 You use the `await using` statement to work with an asynchronously disposable object, that is, an object of a type that implements an <xref:System.IAsyncDisposable> interface. For more information, see the [Using async disposable](../../../standard/garbage-collection/implementing-disposeasync.md#using-async-disposable) section of the [Implement a DisposeAsync method](../../../standard/garbage-collection/implementing-disposeasync.md) article.
 

@@ -246,7 +246,7 @@ The following behaviors apply when deserializing JSON:
 * By default, property name matching is case-sensitive. You can [specify case-insensitivity](system-text-json-character-casing.md).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
 * Non-public constructors are ignored by the serializer.
-* Deserialization to immutable objects or read-only properties is supported. See [Immutable types and Records](system-text-json-immutability.md).
+* Deserialization to immutable objects or properties that don't have public `set` accessors is supported. See [Immutable types and Records](system-text-json-immutability.md).
 * By default, enums are supported as numbers. You can [serialize enum names as strings](system-text-json-customize-properties.md#enums-as-strings).
 * By default, fields are ignored. You can [include fields](#include-fields).
 * By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](system-text-json-invalid-json.md).
@@ -260,7 +260,7 @@ When you use System.Text.Json indirectly in an ASP.NET Core app, some default be
 * By default, property name matching is case-sensitive. You can [specify case-insensitivity](system-text-json-character-casing.md). ASP.NET Core apps [specify case-insensitivity by default](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
 * A parameterless constructor, which can be public, internal, or private, is used for deserialization.
-* Deserialization to immutable objects or read-only properties isn't supported.
+* Deserialization to immutable objects or properties that don't have public `set` accessors isn't supported.
 * By default, enums are supported as numbers. You can [serialize enum names as strings](system-text-json-customize-properties.md#enums-as-strings).
 * Fields aren't supported.
 * By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](system-text-json-invalid-json.md).

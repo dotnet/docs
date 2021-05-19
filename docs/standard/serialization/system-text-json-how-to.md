@@ -24,6 +24,10 @@ The directions and sample code:
 
 * Use the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
 
+* Use the <xref:System.Text.Json.JsonSerializer> class, which assumes you have a custom type to serialize from and deserialize into.
+
+  For information about how to read and write JSON data directly without using `JsonSerializer`, see [How to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json](use-jsondocument-utf8jsonreader-utf8jsonwriter.md).
+
 * Set <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true` to format the JSON with indentation and whitespace for human readability.
 
   For production use, you would typically accept the default value of `false` for this setting, since adding unnecessary whitespace may incur a negative impact on performance and bandwidth usage.
@@ -32,10 +36,6 @@ The directions and sample code:
 
   :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
   :::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WF":::
-
-* Use the <xref:System.Text.Json.JsonSerializer> class, which assumes you have a custom type to serialize from and deserialize into.
-
-  For information about how to read and write JSON data directly without using `JsonSerializer`, see [How to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json](use-jsondocument-utf8jsonreader-utf8jsonwriter.md).
 
 ## Visual Basic support
 

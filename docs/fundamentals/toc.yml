@@ -1786,6 +1786,8 @@ items:
           href: ../standard/serialization/system-text-json-immutability.md
         - name: Polymorphic serialization
           href: ../standard/serialization/system-text-json-polymorphism.md
+      - name: Use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter
+        href: ../standard/serialization/jsondocument-jsonelement-utf8jsonreader-utf8jsonwriter.md
       - name: How to migrate from Newtonsoft.Json
         href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
       - name: Supported collection types
@@ -1794,8 +1796,6 @@ items:
         items:
         - name: Customize character encoding
           href: ../standard/serialization/system-text-json-character-encoding.md
-        - name: Use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter
-          href: ../standard/serialization/jsondocument-jsonelement-utf8jsonreader-utf8-json-writer.md
         - name: Custom converters
           href: ../standard/serialization/system-text-json-converters-how-to.md
     - name: Binary serialization

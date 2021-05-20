@@ -27,7 +27,6 @@ namespace RoundtripToFile1
             File.WriteAllText(fileName, jsonString);
 
             Console.WriteLine(File.ReadAllText(fileName));
-            // </Serialize>
         }
     }
     // output:

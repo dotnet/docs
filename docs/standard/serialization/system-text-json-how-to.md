@@ -72,6 +72,8 @@ The following example creates JSON as a string:
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToString.cs" id="Serialize":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="Serialize":::
 
+The JSON output is minified (whitespace, indentation, and new-line characters are removed) by default.
+
 The following example uses synchronous code to create a JSON file:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToFile.cs" id="Serialize":::
@@ -89,48 +91,10 @@ The preceding examples use type inference for the type being serialized. An over
 
 ### Serialization example
 
-Here's an example class that contains collection-type properties and a user-defined type:
+Here's an example showing how a class that contains collection properties and a user-defined type is serialized:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithPOCOs":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToString.cs" id="SerializeExtra":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFWithPOCOs":::
-
-> [!TIP]
-> "POCO" stands for [plain old CLR object](https://en.wikipedia.org/wiki/Plain_old_CLR_object). A POCO is a .NET type that doesn't depend on any framework-specific types, for example, through inheritance or attributes.
-
-The JSON output from serializing an instance of the preceding type looks like the following example. The JSON output is minified (whitespace, indentation, and new-line characters are removed) by default:
-
-```json
-{"Date":"2019-08-01T00:00:00-07:00","TemperatureCelsius":25,"Summary":"Hot","DatesAvailable":["2019-08-01T00:00:00-07:00","2019-08-02T00:00:00-07:00"],"TemperatureRanges":{"Cold":{"High":20,"Low":-10},"Hot":{"High":60,"Low":20}},"SummaryWords":["Cool","Windy","Humid"]}
-```
-
-The following example shows the same JSON, but formatted (that is, pretty-printed with whitespace and indentation):
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "Hot",
-  "DatesAvailable": [
-    "2019-08-01T00:00:00-07:00",
-    "2019-08-02T00:00:00-07:00"
-  ],
-  "TemperatureRanges": {
-    "Cold": {
-      "High": 20,
-      "Low": -10
-    },
-    "Hot": {
-      "High": 60,
-      "Low": 20
-    }
-  },
-  "SummaryWords": [
-    "Cool",
-    "Windy",
-    "Humid"
-  ]
-}
-```
 
 ## Serialize to UTF-8
 

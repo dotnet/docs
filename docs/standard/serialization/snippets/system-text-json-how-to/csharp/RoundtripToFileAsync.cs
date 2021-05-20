@@ -31,7 +31,6 @@ namespace RoundtripToFileAsync1
             Console.WriteLine(File.ReadAllText(fileName));
         }
     }
-    // </Serialize>
     // output:
     //{"Date":"2019-08-01T00:00:00-07:00","TemperatureCelsius":25,"Summary":"Hot"}
     // </Serialize>

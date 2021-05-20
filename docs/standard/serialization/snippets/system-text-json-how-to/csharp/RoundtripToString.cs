@@ -23,6 +23,7 @@ namespace RoundtripToString1
             };
 
             string jsonString = JsonSerializer.Serialize(weatherForecast);
+
             Console.WriteLine(jsonString);
         }
     }
@@ -52,6 +53,7 @@ namespace RoundtripToString2
             };
 
             string jsonString = JsonSerializer.Serialize<WeatherForecast>(weatherForecast);
+
             Console.WriteLine(jsonString);
         }
     }
@@ -217,6 +219,7 @@ namespace RoundtripToString5
 ";
                 
             WeatherForecast weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString);
+
             Console.WriteLine($"Date: {weatherForecast.Date}");
             Console.WriteLine($"TemperatureCelsius: {weatherForecast.TemperatureCelsius}");
             Console.WriteLine($"Summary: {weatherForecast.Summary}");

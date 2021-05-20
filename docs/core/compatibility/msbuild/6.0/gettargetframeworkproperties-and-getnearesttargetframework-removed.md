@@ -5,7 +5,7 @@ ms.date: 05/19/2021
 ---
 # GetTargetFrameworkProperties and GetNearestTargetFramework removed from ProjectReference protocol
 
-The `GetTargetFrameworkProperties` target and `GetNearestTargetFramework` task have been removed from the [MSBuild ProjectReference protocol](https://github.com/dotnet/msbuild/blob/main/documentation/ProjectReference-Protocol.md).
+The `GetTargetFrameworkProperties` target and `GetNearestTargetFramework` task have been removed from the .NET SDK.
 
 ## Version introduced
 
@@ -13,7 +13,7 @@ The `GetTargetFrameworkProperties` target and `GetNearestTargetFramework` task h
 
 ## Old behavior
 
-The `GetTargetFrameworkProperties` target and the `GetNearestTargetFramework` task were available in the MSBuild ProjectReference protocol.
+The `GetTargetFrameworkProperties` target and the `GetNearestTargetFramework` task were available but not used. However, custom MSBuild logic could take a dependency on them.
 
 ## New behavior
 
@@ -25,7 +25,7 @@ The `GetTargetFrameworkProperties` target and the `GetNearestTargetFramework` ta
 
 ## Recommended action
 
-Use `GetTargetFrameworks` instead.
+Use `GetTargetFrameworks` instead. For more information, see [Targets required to be referenceable](https://github.com/dotnet/msbuild/blob/main/documentation/ProjectReference-Protocol.md#targets-required-to-be-referenceable).
 
 ## Affected APIs
 

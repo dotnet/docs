@@ -83,7 +83,7 @@ You can't run Windows service projects directly from the Visual Studio developme
    ```powershell
    Remove-Service -Name "YourServiceName"
    ```
-   
+
    > [!NOTE]
    > You much have PowerShell 6 or later to use this cmdlet. For information about updating PowerShell, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-core-on-windows).
 

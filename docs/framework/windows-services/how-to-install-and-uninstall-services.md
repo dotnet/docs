@@ -85,7 +85,7 @@ You can't run Windows service projects directly from the Visual Studio developme
    ```
 
    > [!NOTE]
-   > You much have PowerShell 6 or later to use this cmdlet. For information about updating PowerShell, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-core-on-windows).
+   > You must have PowerShell 6 or later to use this cmdlet. For information about updating PowerShell, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-core-on-windows).
 
 3. After the executable for a service is deleted, the service might still be present in the registry. If that's the case, use the command [sc delete](/windows-server/administration/windows-commands/sc-delete) to remove the entry for the service from the registry.
 

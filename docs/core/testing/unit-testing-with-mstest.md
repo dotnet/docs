@@ -42,7 +42,11 @@ namespace Prime.Services
 }
 ```
 
-Change the directory back to the *unit-testing-using-mstest* directory. Run [`dotnet sln add PrimeService/PrimeService.csproj`](../tools/dotnet-sln.md) to add the class library project to the solution.
+Change the directory back to the *unit-testing-using-mstest* directory. Run [`dotnet sln add`](../tools/dotnet-sln.md) to add the class library project to the solution:
+
+```dotnetcli
+dotnet sln add PrimeService/PrimeService.csproj
+```
 
 ## Create the test project
 
@@ -91,7 +95,11 @@ The following outline shows the final solution layout:
         PrimeServiceTests.csproj
 ```
 
-Change to the *unit-testing-using-mstest* directory, and run [`dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj`](../tools/dotnet-sln.md).
+Change to the *unit-testing-using-mstest* directory, and run [`dotnet sln add`](../tools/dotnet-sln.md):
+
+```dotnetcli
+dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj
+```
 
 ## Create the first test
 

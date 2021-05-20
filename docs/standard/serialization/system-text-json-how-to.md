@@ -20,17 +20,17 @@ ms.topic: how-to
 
 This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to serialize to and deserialize from JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](system-text-json-migrate-from-newtonsoft-how-to.md).
 
-The directions and sample code:
+The sample code:
 
-* Use the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
+* Uses the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
 
-* Use the <xref:System.Text.Json.JsonSerializer> class with custom types to serialize from and deserialize into.
+* Uses the <xref:System.Text.Json.JsonSerializer> class with custom types to serialize from and deserialize into.
 
   For information about how to read and write JSON data without using `JsonSerializer`, see [How to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md).
 
-* Set <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true` to format the JSON with indentation and whitespace for human readability.
+* Sets <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true` to format the JSON with indentation and whitespace for human readability. 
 
-  For production use, you would typically accept the default value of `false` for this setting, since adding unnecessary whitespace may incur a negative impact on performance and bandwidth usage.
+  This setting is used in many of the code snippets for convenience. For production use, you would typically accept the default value of `false` for this setting, since adding unnecessary whitespace may incur a negative impact on performance and bandwidth usage.
 
 * Refer to the following class and variants of it:
 
@@ -62,6 +62,22 @@ Imports System.Text.Json.Serialization
 
 > [!IMPORTANT]
 > Attributes from the <xref:System.Runtime.Serialization> namespace aren't supported in `System.Text.Json`.
+
+Individual code examples also require other namespaces, such as:
+
+```csharp
+using System;
+using System.IO;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+```
+
+```vb
+Imports System
+Imports System.IO
+Imports System.Threading.Tasks
+Imports System.Collections.Generic
+```
 
 ## How to write .NET objects as JSON (serialize)
 

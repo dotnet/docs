@@ -1,14 +1,14 @@
 ---
 title: Dependency injection with the Azure .NET SDK
 description: Learn how to use dependency injection with the Azure SDK for .NET client libraries
-ms.date: 05/12/2021
+ms.date: 05/20/2021
 ms.author: pakrym
 author: pakrym
 ---
 
 # Dependency injection with the Azure .NET SDK
 
-This article demonstrates how to register Azure service clients from the [latest Azure .NET SDKs](https://azure.github.io/azure-sdk/releases/latest/index.html) in an ASP.NET Core application. Every ASP.NET Core application starts by booting up the application using the instructions provided in the `Startup` class. This includes a `ConfigureServices` method that is an ideal place to configure clients.
+This article demonstrates how to register Azure service clients from the [latest Azure .NET SDKs](https://azure.github.io/azure-sdk/releases/latest/index.html) in an ASP.NET Core app. Every ASP.NET Core app starts up by using the instructions provided in the `Startup` class. The `Startup` class includes a `ConfigureServices` method, which is an ideal place to configure clients.
 
 To configure the service clients, first add the following NuGet packages to your project:
 
@@ -16,7 +16,7 @@ To configure the service clients, first add the following NuGet packages to your
 - [Azure.Identity](https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/identity/Azure.Identity/README.md)
 - The `Azure.*` package you'd like to use.
 
-The sample code in this article will use Key Vault secrets and Blob Storage for demonstration purposes.
+The sample code in this article uses Key Vault secrets and Blob Storage for demonstration purposes.
 
 ```dotnetcli
 dotnet add package Microsoft.Extensions.Azure
@@ -48,9 +48,10 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-In code above, you need to explicitly specify the `keyVaultUrl` and `storageUrl`. Both variables are `Uri` types. The [Store configuration separately from code](#store-configuration-separately-from-code) section shows how you can avoid specifying the urls explicitly.
+In the preceding code:
 
-The code above uses `DefaultAzureCredential` for authentication. [DefaultAzureCredential](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/identity/Azure.Identity#defaultazurecredential) will choose the best authentication mechanism based on your environment, allowing you to move your app seamlessly from development to production with no code changes.
+* You specify the `Uri`-typed `keyVaultUrl` and `storageUrl` variables. The [Store configuration separately from code](#store-configuration-separately-from-code) section shows how you can avoid specifying the URLs explicitly.
+* <xref:Azure.Identity.DefaultAzureCredential> is used for authentication. `DefaultAzureCredential` chooses the best authentication mechanism based on your environment, allowing you to move your app seamlessly from development to production with no code changes.
 
 ## Use the registered clients
 
@@ -76,7 +77,7 @@ public class MyApiController : ControllerBase
         var results = new List<string>();
         await foreach (BlobItem blob in containerClient.GetBlobsAsync()) 
         {
-              results.Add(blob.Name);
+            results.Add(blob.Name);
         }
         return results.ToArray();
     }
@@ -85,7 +86,7 @@ public class MyApiController : ControllerBase
 
 ## Store configuration separately from code
 
-In the [Register client](#register-client) section, you explicitly specify the `keyVaultUrl` and `storageUrl`. This could cause problems when you run code against different environments during development and production. The .NET team suggests [storing such configurations in environment dependent JSON files](../core/extensions/configuration-providers.md#json-configuration-provider). Thus, you can have an _appsettings.Development.json_ file with one set of settings and an _appsettings.Production.json_ with another set of configurations. The format of the file is:
+In the [Register client](#register-client) section, you explicitly specify the `keyVaultUrl` and `storageUrl` variables. This approach could cause problems when you run code against different environments during development and production. The .NET team suggests [storing such configurations in environment-dependent JSON files](../core/extensions/configuration-providers.md#json-configuration-provider). For example, you can have an _appsettings.Development.json_ file containing development environment settings. Another _appsettings.Production.json_ file would contain production environment settings, and so on. The file format is:
 
 ```json
 {
@@ -108,9 +109,9 @@ In the [Register client](#register-client) section, you explicitly specify the `
 }
 ```
 
-You can add any options from the <xref:Azure.Core.ClientOptions> into the `AzureDefaults` section. One of the options is the retry policy. For more information, see [Configure a new try policy](#configure-a-new-retry-policy).
+You can add any options from <xref:Azure.Core.ClientOptions> into the JSON file's `AzureDefaults` section. One of the options is the retry policy. For more information, see [Configure a new try policy](#configure-a-new-retry-policy).
 
-Since the `Configuration` object is injected from the host and stored inside the `Startup` constructor, you can do the following:
+Since the `Configuration` object is injected from the host and stored inside the `Startup` constructor, you can use the following code in `ConfigureServices`:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -136,7 +137,7 @@ public void ConfigureServices(IServiceCollection services)
 
 ## Configure multiple service clients with different names
 
-Say you have two storage accounts – one for private information and one for public information. Your application transfers data from the public to private storage account after some operation. You need to have two storage service clients. To set this up in `Startup.ConfigureServices`:
+Assume you have two storage accounts: one for private information and one for public information. Your app transfers data from the public to private storage account after some operation. You need to have two storage service clients. To set up these clients in `Startup.ConfigureServices`:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -150,27 +151,29 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-In your controllers, you can access the named service clients using the <xref:Microsoft.Extensions.Azure.IAzureClientFactory%601?displayProperty=nameWithType>:
+In your controller, you can access the named service clients using <xref:Microsoft.Extensions.Azure.IAzureClientFactory%601?displayProperty=nameWithType>:
 
 ```csharp
-public class HomeControllers : Controller
+public class HomeController : Controller
 {
     private readonly BlobServiceClient _publicStorage;
     private readonly BlobServiceClient _privateStorage;
 
-  public HomeController(BlobServiceClient defaultClient, IAzureClientFactory<BlobServiceClient> clientFactory)
-  {
-      _publicStorage = defaultClient;
-      _privateStorage = clientFactory.GetClient("PrivateStorage");
-  }
+    public HomeController(
+        BlobServiceClient defaultClient,
+        IAzureClientFactory<BlobServiceClient> clientFactory)
+    {
+        _publicStorage = defaultClient;
+        _privateStorage = clientFactory.GetClient("PrivateStorage");
+    }
 }
 ```
 
-The un-named service client is still available in the same way as before. Named clients are additive to this.
+The unnamed service client is still available in the same way as before. Named clients are additive.
 
 ## Configure a new retry policy
 
-At some point, you might want to change the default settings for a service client. You may want different retry settings or to use a different service API version, for example. You can set the retry settings globally or on a per service basis. Say you have the following _appsettings.json_ file:
+At some point, you might want to change the default settings for a service client. You may want different retry settings or to use a different service API version, for example. You can set the retry settings globally or on a per-service basis. Assume you have the following _appsettings.json_ file:
 
 ```json
 {

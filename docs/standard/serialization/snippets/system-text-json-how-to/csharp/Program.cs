@@ -10,16 +10,22 @@ namespace SystemTextJsonSamples
         static async Task Main(string[] args)
         {
             Console.WriteLine("\n============================= Roundtrip to string\n");
-            RoundtripToString.Run();
+            RoundtripToString1.Program.Main();
+            RoundtripToString2.Program.Main();
+            RoundtripToString3.Program.Main();
+            RoundtripToString4.Program.Main();
+            RoundtripToString5.Program.Main();
 
             Console.WriteLine("\n============================= Roundtrip to UTF-8 byte array\n");
             RoundtripToUtf8.Run();
 
             Console.WriteLine("\n============================= Roundtrip to file\n");
-            RoundtripToFile.Run();
+            RoundtripToFile1.Program.Main();
+            RoundtripToFile2.Program.Main();
 
             Console.WriteLine("\n============================= Roundtrip to file async\n");
-            await RoundtripToFileAsync.RunAsync();
+            await RoundtripToFileAsync1.Program.Main();
+            await RoundtripToFileAsync2.Program.Main();
 
             Console.WriteLine("\n============================= Roundtrip camel case property names\n");
             RoundtripCamelCasePropertyNames.Run();

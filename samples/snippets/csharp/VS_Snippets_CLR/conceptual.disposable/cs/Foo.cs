@@ -1,4 +1,5 @@
-﻿// <Snippet1>
+﻿using System;
+
 public sealed class Foo : IDisposable
 {
     private readonly IDisposable _bar;
@@ -13,4 +14,3 @@ public sealed class Foo : IDisposable
         _bar?.Dispose();
     }
 }
-// </Snippet1>

@@ -11,6 +11,12 @@ namespace IterationStatements
 
             Console.WriteLine("------------ foreach examples -----------");
             ForeachStatement.Examples();
+
+            Console.WriteLine("------------ do examples ----------------");
+            DoStatement.Examples();
+
+            Console.WriteLine("------------ while examples -------------");
+            WhileStatement.Examples();
         }
     }
 }

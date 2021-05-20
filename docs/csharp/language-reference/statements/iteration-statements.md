@@ -5,12 +5,18 @@ ms.date: 05/21/2021
 f1_keywords:
   - "for_CSharpKeyword"
   - "foreach_CSharpKeyword"
+  - "do_CSharpKeyword"
+  - "while_CSharpKeyword"
 helpviewer_keywords:
   - "for keyword [C#]"
   - "for statement [C#]"
   - "foreach keyword [C#]"
   - "foreach statement [C#]"
   - "in keyword [C#]"
+  - "do keyword [C#]"
+  - "do statement [C#]"
+  - "while keyword [C#]"
+  - "while statement [C#]"
 ---
 # Iteration statements (C# reference)
 
@@ -18,6 +24,10 @@ The following statements repeatedly execute a statement or a block of statements
 
 - The [`for` statement](#the-for-statement): executes its body while a specified Boolean expression evaluates to `true`.
 - The [`foreach` statement](#the-foreach-statement): enumerates the elements of a collection and executes its body for each element of the collection.
+- The [`do` statement](#the-do-statement): conditionally executes its body one or more times.
+- The [`while` statement](#the-while-statement): conditionally executes its body zero or more times.
+
+TODO.
 
 ## The `for` statement
 
@@ -116,12 +126,30 @@ foreach (V item in collection) { }
 
 In the preceding form, type `T` of a collection element must be implicitly or explicitly convertible to type `V` of an iteration variable. If an explicit conversion from `T` to `V` fails at run time, the `foreach` statement throws an <xref:System.InvalidCastException>. For example, if `T` is a non-sealed class type, `V` can be any interface type, even the one that `T` doesn't implement. At run time, the type of a collection element may be the one that derives from `T` and actually implements `V`. If that's not the case, an <xref:System.InvalidCastException> is thrown.
 
+## The `do` statement
+
+The `do` statement executes a statement or a block of statements while a specified Boolean expression evaluates to `true`. Because that expression is evaluated after each execution of the loop, a `do` loop executes one or more times. This differs from a [while](#the-while-statement) loop, which executes zero or more times.
+
+The following example shows the usage of the `do` statement:
+
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/iteration-statements/DoStatement.cs" id="Example":::
+
+## The `while` statement
+
+The `while` statement executes a statement or a block of statements while a specified Boolean expression evaluates to `true`. Because that expression is evaluated before each execution of the loop, a `while` loop executes zero or more times. This differs from a [do](#the-do-statement) loop, which executes one or more times.
+
+The following example shows the usage of the `while` statement:
+
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/iteration-statements/WhileStatement.cs" id="Example":::
+
 ## C# language specification
 
 For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
 
 - [The for statement](~/_csharplang/spec/statements.md#the-for-statement)
 - [The foreach statement](~/_csharplang/spec/statements.md#the-foreach-statement)
+- [The do statement](~/_csharplang/spec/statements.md#the-do-statement)
+- [The while statement](~/_csharplang/spec/statements.md#the-while-statement)
 
 For more information about features added in C# 8.0 and later, see the following feature proposal notes:
 

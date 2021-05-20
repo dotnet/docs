@@ -10,7 +10,7 @@ An *iterator* can be used to step through collections such as lists and arrays.
 
 An iterator method or `get` accessor performs a custom iteration over a collection. An iterator method uses the [yield return](../../language-reference/keywords/yield.md) statement to return each element one at a time. When a `yield return` statement is reached, the current location in code is remembered. Execution is restarted from that location the next time the iterator function is called.
 
-You consume an iterator from client code by using a [foreach](../../language-reference/keywords/foreach-in.md) statement or by using a LINQ query.
+You consume an iterator from client code by using a [foreach](../../language-reference/statements/iteration-statements.md#the-foreach-statement) statement or by using a LINQ query.
 
 In the following example, the first iteration of the `foreach` loop causes execution to proceed in the `SomeNumbers` iterator method until the first `yield return` statement is reached. This iteration returns a value of 3, and the current location in the iterator method is retained. On the next iteration of the loop, execution in the iterator method continues from where it left off, again stopping when it reaches a `yield return` statement. This iteration returns a value of 5, and the current location in the iterator method is again retained. The loop completes when the end of the iterator method is reached.
 
@@ -353,7 +353,7 @@ Iterators enable you to maintain the simplicity of a `foreach` loop when you nee
 
 - <xref:System.Collections.Generic>
 - <xref:System.Collections.Generic.IEnumerable%601>
-- [foreach, in](../../language-reference/keywords/foreach-in.md)
+- [foreach, in](../../language-reference/statements/iteration-statements.md#the-foreach-statement)
 - [yield](../../language-reference/keywords/yield.md)
 - [Using foreach with Arrays](../arrays/using-foreach-with-arrays.md)
 - [Generics](../../fundamentals/types/generics.md)

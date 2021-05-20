@@ -35,7 +35,7 @@ The first table in this topic lists keywords that are reserved identifiers in an
         [decimal](../builtin-types/floating-point-numeric-types.md)  
         [default](default.md)  
         [delegate](../builtin-types/reference-types.md)  
-        [do](do.md)  
+        [do](../statements/iteration-statements.md#the-do-statement)  
         [double](../builtin-types/floating-point-numeric-types.md)  
         [else](if-else.md)  
         [enum](../builtin-types/enum.md)  
@@ -101,7 +101,7 @@ The first table in this topic lists keywords that are reserved identifiers in an
         [virtual](virtual.md)  
         [void](../builtin-types/void.md)  
         [volatile](volatile.md)  
-        [while](while.md)  
+        [while](../statements/iteration-statements.md#the-while-statement)  
     :::column-end:::
 :::row-end:::
 

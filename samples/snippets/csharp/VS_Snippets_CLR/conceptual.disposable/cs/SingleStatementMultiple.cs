@@ -1,15 +1,14 @@
-﻿// <Snippet4>
-using System.IO;
+﻿using System.IO;
 
-class Example
+class SingleStatementMultiple
 {
     static void Main()
     {
-        char[] buffer1 = new char[50];
-        char[] buffer2 = new char[50];
+        var buffer1 = new char[50];
+        var buffer2 = new char[50];
 
-        using StreamReader version1 = new StreamReader("file1.txt"),
-                           version2 = new StreamReader("file2.txt");
+        using StreamReader version1 = new("file1.txt"),
+                           version2 = new("file2.txt");
 
         int charsRead1, charsRead2 = 0;
         while (version1.Peek() != -1 && version2.Peek() != -1)
@@ -22,4 +21,3 @@ class Example
         }
     }
 }
-// </Snippet4>

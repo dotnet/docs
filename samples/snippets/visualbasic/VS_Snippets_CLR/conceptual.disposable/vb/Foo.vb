@@ -1,5 +1,4 @@
-﻿' <Snippet1>
-Public NotInheritable Class Foo
+﻿Public NotInheritable Class Foo
     Implements IDisposable
 
     Private ReadOnly _bar As IDisposable
@@ -12,4 +11,3 @@ Public NotInheritable Class Foo
         _bar.Dispose()
     End Sub
 End Class
-' </Snippet1>

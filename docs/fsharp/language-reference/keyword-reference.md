@@ -91,7 +91,7 @@ The following table shows all F# keywords in alphabetical order, together with b
 |-------|----|-----------|
 |`abstract`|[Members](./members/index.md)<br /><br />[Abstract Classes](abstract-classes.md)|Indicates a method that either has no implementation in the type in which it is declared or that is virtual and has a default implementation.|
 |`and`|[`let` Bindings](./functions/let-bindings.md)<br /><br />[Records](records.md)<br /><br />[Members](./members/index.md)<br /><br />[Constraints](./generics/constraints.md)|Used in mutually recursive bindings and records, in property declarations, and with multiple constraints on generic parameters.|
-|`as`|[Classes](classes.md)<br /><br />[Pattern Matching](Pattern-Matching.md)|Used to give the current class object an object name. Also used to give a name to a whole pattern within a pattern match.|
+|`as`|[Classes](classes.md)<br /><br />[Pattern Matching](pattern-matching.md)|Used to give the current class object an object name. Also used to give a name to a whole pattern within a pattern match.|
 |`assert`|[Assertions](assertions.md)|Used to verify code during debugging.|
 |`base`|[Classes](classes.md)<br /><br />[Inheritance](inheritance.md)|Used as the name of the base class object.|
 |`begin`|[Verbose Syntax](verbose-syntax.md)|In verbose syntax, indicates the start of a code block.|
@@ -139,7 +139,7 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`private`|[Access Control](access-control.md)|Restricts access to a member to code in the same type or module.|
 |`public`|[Access Control](access-control.md)|Allows access to a member from outside the type.|
 |`rec`|[Functions](./functions/index.md)|Used to indicate that a function is recursive.|
-|`return`|[Asynchronous Workflows](Asynchronous-Workflows.md)<br /><br />[Computation Expressions](computation-expressions.md)|Used to indicate a value to provide as the result of a computation expression.|
+|`return`|[Asynchronous Workflows](asynchronous-workflows.md)<br /><br />[Computation Expressions](computation-expressions.md)|Used to indicate a value to provide as the result of a computation expression.|
 |`return!`|[Computation Expressions](computation-expressions.md)<br /><br />[Asynchronous Workflows](asynchronous-workflows.md)|Used to indicate a computation expression that, when evaluated, provides the result of the containing computation expression.|
 |`select`|[Query Expressions](query-expressions.md)|Used in query expressions to specify what fields or columns to extract. Note that this is a contextual keyword, which means that it is not actually a reserved word and it only acts like a keyword in appropriate context.|
 |`static`|[Members](./members/index.md)|Used to indicate a method or property that can be called without an instance of a type, or a value member that is shared among all instances of a type.|

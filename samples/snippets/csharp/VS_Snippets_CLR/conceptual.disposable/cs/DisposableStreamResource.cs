@@ -1,5 +1,4 @@
-﻿// <Snippet9>
-using Microsoft.Win32.SafeHandles;
+﻿using Microsoft.Win32.SafeHandles;
 using System;
 using System.Runtime.InteropServices;
 
@@ -26,7 +25,7 @@ public class DisposableStreamResource : IDisposable
 
     // Define locals.
     private bool _disposed = false;
-    private readonly SafeFileHandle _safeHandle;
+    private readonly SafeFileHandle? _safeHandle;
     private readonly int _upperWord;
 
     public DisposableStreamResource(string fileName)
@@ -78,4 +77,3 @@ public class DisposableStreamResource : IDisposable
         _disposed = true;
     }
 }
-// </Snippet9>

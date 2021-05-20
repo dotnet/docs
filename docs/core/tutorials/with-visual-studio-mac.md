@@ -2,6 +2,7 @@
 title: Create a .NET console application using Visual Studio for Mac
 description: Learn how to create a .NET console application using Visual Studio for Mac.
 ms.date: 11/30/2020
+recommendations: false
 ---
 # Tutorial: Create a .NET console application using Visual Studio for Mac
 

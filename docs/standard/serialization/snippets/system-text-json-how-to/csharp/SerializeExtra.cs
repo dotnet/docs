@@ -38,7 +38,7 @@ namespace SerializeExtra
                         { "Cold", new HighLowTemps { High = 20, Low = -10 } },
                         { "Hot", new HighLowTemps { High = 60 , Low = 20 } }
                     },
-                SummaryWords = new string[] { "Cool", "Windy", "Humid" }
+                SummaryWords = new[] { "Cool", "Windy", "Humid" }
             };
 
             var options = new JsonSerializerOptions { WriteIndented = true };

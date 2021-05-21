@@ -14,7 +14,7 @@ ms.assetid: 78089bc7-7b38-4cfd-9e49-87ac036af009
 The `volatile` keyword indicates that a field might be modified by multiple threads that are executing at the same time. The compiler, the runtime system, and even hardware may rearrange reads and writes to memory locations for performance reasons. Fields that are declared `volatile` are not subject to these optimizations. Adding the `volatile` modifier ensures that all threads will observe volatile writes performed by any other thread in the order in which they were performed. There is no guarantee of a single total ordering of volatile writes as seen from all threads of execution.
 
 > [!NOTE]
-> When writing to a field marked `volatile`, the `volatile` keyword only controls the order in which writes are published. It does not guarantee that these writes are published immediately.
+> When writing to a field marked `volatile`, the `volatile` keyword controls the order in which writes are performed. It does not guarantee that these writes are immediately visible to other threads.
 
 The `volatile` keyword can be applied to fields of these types:
 

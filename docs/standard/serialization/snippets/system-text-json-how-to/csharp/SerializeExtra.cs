@@ -35,8 +35,8 @@ namespace SerializeExtra
                     { DateTime.Parse("2019-08-01"), DateTime.Parse("2019-08-02") },
                 TemperatureRanges = new Dictionary<string, HighLowTemps>
                     {
-                        { "Cold", new HighLowTemps { High = 20, Low = -10 } },
-                        { "Hot", new HighLowTemps { High = 60 , Low = 20 } }
+                        ["Cold"] = new HighLowTemps { High = 20, Low = -10 },
+                        ["Hot"] = new HighLowTemps { High = 60 , Low = 20 }
                     },
                 SummaryWords = new[] { "Cool", "Windy", "Humid" }
             };

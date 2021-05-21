@@ -20,17 +20,19 @@ ms.topic: how-to
 
 This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to serialize to and deserialize from JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](system-text-json-migrate-from-newtonsoft-how-to.md).
 
-The sample code:
+## Code samples
 
-* Uses the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
+The code samples in this article:
 
-* Uses the <xref:System.Text.Json.JsonSerializer> class with custom types to serialize from and deserialize into.
+* Use the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
+
+* Use the <xref:System.Text.Json.JsonSerializer> class with custom types to serialize from and deserialize into.
 
   For information about how to read and write JSON data without using `JsonSerializer`, see [How to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md).
 
-* Sets <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true` to format the JSON with indentation and whitespace for human readability. 
+* Use the <xref:System.Text.Json.JsonSerializerOptions.WriteIndented> option to format the JSON for human readability when that is helpful.
 
-  This setting is used in many of the code snippets for convenience. For production use, you would typically accept the default value of `false` for this setting, since adding unnecessary whitespace may incur a negative impact on performance and bandwidth usage.
+  For production use, you would typically accept the default value of `false` for this setting, since adding unnecessary whitespace may incur a negative impact on performance and bandwidth usage.
 
 * Refer to the following class and variants of it:
 
@@ -63,53 +65,37 @@ Imports System.Text.Json.Serialization
 > [!IMPORTANT]
 > Attributes from the <xref:System.Runtime.Serialization> namespace aren't supported in `System.Text.Json`.
 
-Individual code examples also require other namespaces, such as:
-
-```csharp
-using System;
-using System.IO;
-using System.Threading.Tasks;
-using System.Collections.Generic;
-```
-
-```vb
-Imports System
-Imports System.IO
-Imports System.Threading.Tasks
-Imports System.Collections.Generic
-```
-
 ## How to write .NET objects as JSON (serialize)
 
 To write JSON to a string or to a file, call the <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method.
 
 The following example creates JSON as a string:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToString.cs" id="Serialize":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeBasic.cs" highlight=24:::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="Serialize":::
 
 The JSON output is minified (whitespace, indentation, and new-line characters are removed) by default.
 
 The following example uses synchronous code to create a JSON file:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToFile.cs" id="Serialize":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeToFile.cs" highlight=25-27:::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFile.vb" id="Serialize":::
 
 The following example uses asynchronous code to create a JSON file:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToFileAsync.cs" id="Serialize":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeToFileAsync.cs" highlight=26-29:::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFileAsync.vb" id="Serialize":::
 
 The preceding examples use type inference for the type being serialized. An overload of `Serialize()` takes a generic type parameter:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToString.cs" id="SerializeWithGenericParameter":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeWithGenericParameter.cs" highlight=24:::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="SerializeWithGenericParameter":::
 
 ### Serialization example
 
 Here's an example showing how a class that contains collection properties and a user-defined type is serialized:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToString.cs" id="SerializeExtra":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeExtra.cs" highlight=44-45:::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFWithPOCOs":::
 
 ## Serialize to UTF-8
@@ -177,6 +163,8 @@ Supported types include:
   * <xref:System.Collections.ObjectModel>
 ::: zone-end
 
+For more information, see [Supported collection types in System.Text.Json](system-text-json-supported-collection-types.md).
+
 You can [implement custom converters](system-text-json-converters-how-to.md) to handle additional types or to provide functionality that isn't supported by the built-in converters.
 
 ## How to read JSON as .NET objects (deserialize)
@@ -185,27 +173,28 @@ To deserialize from a string or a file, call the <xref:System.Text.Json.JsonSeri
 
 The following example shows how to deserialize a JSON string:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToString.cs" id="Deserialize":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeExtra.cs" highlight=55-56:::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="Deserialize":::
 
 To deserialize from a file by using synchronous code, read the file into a string, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToFile.cs" id="Deserialize":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeFromFile.cs" highlight=18-20:::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFile.vb" id="Deserialize":::
 
 To deserialize from a file by using asynchronous code, call the <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToFileAsync.cs" id="Deserialize":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeFromFileAsync.cs" highlight=18-21:::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFileAsync.vb" id="Deserialize":::
 
 > [!TIP]
-> If you have JSON that you want to deserialize, and you don't have the class to deserialize it into, Visual Studio 2019 can automatically generate the class you need:
+> If you have JSON that you want to deserialize, and you don't have the class to deserialize it into, you have options other than manually creating the class that you need:
 >
-> 1. Copy the JSON that you need to deserialize.
-> 1. Create a class file and delete the template code.
-> 1. Choose **Edit** > **Paste Special** > **Paste JSON as Classes**.
->
-> The result is a class that you can use for your deserialization target.
+> 1. [Use JsonDocument and Utf8JsonReader directly](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md).
+> 1. Use Visual Studio 2019 to automatically generate the class you need:
+>    1. Copy the JSON that you need to deserialize.
+>    1. Create a class file and delete the template code.
+>    1. Choose **Edit** > **Paste Special** > **Paste JSON as Classes**.
+>    The result is a class that you can use for your deserialization target.
 
 ## Deserialize from UTF-8
 
@@ -255,21 +244,8 @@ You can [implement custom converters](system-text-json-converters-how-to.md) to 
 
 To pretty-print the JSON output, set <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true`:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToString.cs" id="SerializePrettyPrint":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeWriteIndented.cs":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="SerializePrettyPrint":::
-
-Here's an example type to be serialized and pretty-printed JSON output:
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WF":::
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "Hot"
-}
-```
 
 If you use `JsonSerializerOptions` repeatedly with the same options, don't create a new `JsonSerializerOptions` instance each time you use it. Reuse the same instance for every call. For more information, see [Reuse JsonSerializerOptions instances](system-text-json-configure-options.md#reuse-jsonserializeroptions-instances).
 

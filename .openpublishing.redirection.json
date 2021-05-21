@@ -150,16 +150,24 @@
             "redirect_url": "/dotnet/azure/"
         },
         {
-            "source_path": "docs/azure/sdk/authentication.md",
-            "redirect_url": "/dotnet/azure/authentication"
+            "source_path": "docs/azure/authentication.md",
+            "redirect_url": "/dotnet/azure/sdk/authentication"
         },
         {
             "source_path": "docs/azure/sdk/index.yml",
             "redirect_url": "/dotnet/azure/"
         },
         {
-            "source_path": "docs/azure/sdk/logging.md",
-            "redirect_url": "/dotnet/azure/logging"
+            "source_path": "docs/azure/logging.md",
+            "redirect_url": "/dotnet/azure/sdk/logging"
+        },
+        {
+            "source_path": "docs/azure/packages.md",
+            "redirect_url": "/dotnet/azure/sdk/packages"
+        },
+        {
+            "source_path": "docs/azure/dependency-injection.md",
+            "redirect_url": "/dotnet/azure/sdk/dependency-injection"
         },
         {
             "source_path": "docs/azure/sdk/tools.md",

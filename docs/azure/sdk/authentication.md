@@ -26,7 +26,7 @@ The methods for using a connection string vary by product. [Refer to the documen
 
 ## Manage Azure resources
 
-[!include[Create service principal](/dotnet/azure/includes/create-sp.md)]
+[!include[Create service principal](../includes/create-sp.md)]
 
 Now that the service principal is created, two options are available to authenticate to the service principal to create and manage resources.
 
@@ -73,7 +73,7 @@ var azure = Microsoft.Azure.Management.Fluent.Azure
 
 File-based authentication allows you to put the service principal credentials in a plain text file and secure it within the file system.
 
-[!include[File-based authentication](/dotnet/azure/includes/file-based-auth.md)]
+[!include[File-based authentication](../includes/file-based-auth.md)]
 
 Read the contents of the file and create the entry point `Azure` object to start working with the API:
 

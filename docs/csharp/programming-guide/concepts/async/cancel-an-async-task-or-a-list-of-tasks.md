@@ -4,6 +4,7 @@ description: Learn how to use cancellation tokens to signal a cancellation reque
 ms.date: 02/03/2021
 ms.topic: tutorial
 ms.assetid: eec32dbb-70ea-4c88-bd27-fa2e34546914
+recommendations: false
 ---
 
 # Cancel a list of tasks (C#)

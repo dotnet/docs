@@ -18,6 +18,11 @@
     <VSSDKTargetPlatformRegRootSuffix>Roslyn</VSSDKTargetPlatformRegRootSuffix>
   </PropertyGroup>
 
+    <PropertyGroup Condition="'$(BuildingInsideVisualStudio)' != 'true'">
+    <!-- This property disables extension deployment for command line builds; required for some CI -->
+    <DeployExtension>False</DeployExtension>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="15.1.192" PrivateAssets="all" />
   </ItemGroup>

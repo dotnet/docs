@@ -3,6 +3,7 @@ title: Debug a memory leak tutorial
 description: Learn how to debug a memory leak in .NET Core.
 ms.topic: tutorial
 ms.date: 04/20/2020
+recommendations: false
 ---
 
 # Debug a memory leak in .NET Core

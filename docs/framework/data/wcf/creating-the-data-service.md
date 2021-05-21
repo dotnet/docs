@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 34d1d971-5e18-4c22-9bf6-d3612e27ea59
+recommendations: false
 ---
 # Create the data service
 

@@ -183,7 +183,7 @@ To deserialize from a file by using synchronous code, read the file into a strin
 
 To deserialize from a file by using asynchronous code, call the <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeFromFileAsync.cs" highlight="18-21":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeFromFileAsync.cs" highlight="19-22":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFileAsync.vb" id="Deserialize":::
 
 > [!TIP]

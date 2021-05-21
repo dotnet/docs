@@ -4,15 +4,15 @@ using System.Text.Json;
 
 namespace SerializeToFile
 {
+    public class WeatherForecast
+    {
+        public DateTimeOffset Date { get; set; }
+        public int TemperatureCelsius { get; set; }
+        public string Summary { get; set; }
+    }
+
     public class Program
     {
-        public class WeatherForecast
-        {
-            public DateTimeOffset Date { get; set; }
-            public int TemperatureCelsius { get; set; }
-            public string Summary { get; set; }
-        }
-
         public static void Main()
         {
             var weatherForecast = new WeatherForecast

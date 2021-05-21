@@ -5,15 +5,15 @@ using System.Threading.Tasks;
 
 namespace SerializeToFileAsync
 {
+    public class WeatherForecast
+    {
+        public DateTimeOffset Date { get; set; }
+        public int TemperatureCelsius { get; set; }
+        public string Summary { get; set; }
+    }
+
     public class Program
     {
-        public class WeatherForecast
-        {
-            public DateTimeOffset Date { get; set; }
-            public int TemperatureCelsius { get; set; }
-            public string Summary { get; set; }
-        }
-
         public static async Task Main()
         {
             var weatherForecast = new WeatherForecast

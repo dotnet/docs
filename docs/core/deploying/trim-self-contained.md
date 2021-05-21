@@ -7,7 +7,7 @@ ms.date: 04/03/2020
 ---
 # Trim self-contained deployments and executables
 
-The [framework-dependent deployment model](index.md#publish-framework-dependent) has been the most successful deployment model since the inception of .NET. In this scenario, the application developer bundles only the application and third-party assemblies with the expectation that the .NET runtime and framework libraries will be available in the client machine. This deployment model continues to be the dominant one in .NET Core as well but there are some scenarios where the framework-dependent model is not optimal. The alternative is to publish a [self-contained application](index.md#publish-self-contained), where the .NET Core runtime and framework are bundled together with the application and third-party assemblies.
+The [framework-dependent deployment model](index.md#publish-framework-dependent) has been the most successful deployment model since the inception of .NET. In this scenario, the application developer bundles only the application and third-party assemblies with the expectation that the .NET runtime and framework libraries will be available in the client machine. This deployment model continues to be the dominant one in current .NET product as well but there are some scenarios where the framework-dependent model is not optimal. The alternative is to publish a [self-contained application](index.md#publish-self-contained), where the .NET runtime and runtime libraries are bundled together with the application and third-party assemblies.
 
 The trim-self-contained deployment model is a specialized version of the self-contained deployment model that is optimized to reduce deployment size. Minimizing deployment size is a critical requirement for some client-side scenarios like Blazor applications. Depending on the complexity of the application, only a subset of the framework assemblies are referenced, and a subset of the code within each assembly is required to run the application. The unused parts of the libraries are unnecessary and can be trimmed from the packaged application.
 
@@ -19,6 +19,10 @@ The trim mode for the applications is configured with the `TrimMode` setting. Th
 
 > [!NOTE]
 > Trimming is an experimental feature in .NET Core 3.1 and .NET 5.0. Trimming is _only_ available to applications that are published self-contained.
+
+## Components that cause trimming problems
+
+Any code that causes build time analysis challenges are not suitable for trimming. Some common coding patterns that are problematic when used by an application comes from unbounded reflection usage and external dependencies that are not visible at build time. An example of a component that uses the former is a legacy serializer such as [XML serialization](https://docs.microsoft.com/en-us/dotnet/standard/serialization/introducing-xml-serialization) and example of a component that uses the latter is [built-in COM](https://docs.microsoft.com/en-us/dotnet/standard/native-interop/cominterop). Windows UI Applications such as Windows Forms and Windows Presentation Foundation (WPF) that depend on built-in COM support might have challenges with trimming. The trimming engine will generate warnings during build time when it detects code in an application that uses problematic coding patterns. For more information on guidance to library authors to prepare for trimming can be found at [Prepare .NET libraries for trimming](prepare-libraries-for-trimming.md)
 
 ## Prevent assemblies from being trimmed
 

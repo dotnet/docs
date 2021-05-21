@@ -2,6 +2,7 @@
 title: Asynchronous programming in C#
 description: An overview of the C# language support for asynchronous programming using async, await, Task, and Task<T>
 ms.date: 06/04/2020
+recommendations: false
 ---
 # Asynchronous programming with async and await
 

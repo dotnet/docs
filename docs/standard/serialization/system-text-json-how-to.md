@@ -20,14 +20,22 @@ ms.topic: how-to
 
 This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to serialize to and deserialize from JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](system-text-json-migrate-from-newtonsoft-how-to.md).
 
-The directions and sample code use the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
+The directions and sample code:
 
-Most of the serialization sample code sets <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true` to "pretty-print" the JSON (with indentation and whitespace for human readability). For production use, you would typically accept the default value of `false` for this setting, since adding unnecessary whitespace may incur a noticeable, negative impact on performance and bandwidth usage.
+* Use the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
 
-The code examples refer to the following class and variants of it:
+* Use the <xref:System.Text.Json.JsonSerializer> class with custom types to serialize from and deserialize into.
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WF":::
+  For information about how to read and write JSON data without using `JsonSerializer`, see [How to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md).
+
+* Set <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true` to format the JSON with indentation and whitespace for human readability.
+
+  For production use, you would typically accept the default value of `false` for this setting, since adding unnecessary whitespace may incur a negative impact on performance and bandwidth usage.
+
+* Refer to the following class and variants of it:
+
+  :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
+  :::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WF":::
 
 ## Visual Basic support
 
@@ -238,7 +246,7 @@ The following behaviors apply when deserializing JSON:
 * By default, property name matching is case-sensitive. You can [specify case-insensitivity](system-text-json-character-casing.md).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
 * Non-public constructors are ignored by the serializer.
-* Deserialization to immutable objects or read-only properties is supported. See [Immutable types and Records](system-text-json-immutability.md).
+* Deserialization to immutable objects or properties that don't have public `set` accessors is supported. See [Immutable types and Records](system-text-json-immutability.md).
 * By default, enums are supported as numbers. You can [serialize enum names as strings](system-text-json-customize-properties.md#enums-as-strings).
 * By default, fields are ignored. You can [include fields](#include-fields).
 * By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](system-text-json-invalid-json.md).
@@ -252,7 +260,7 @@ When you use System.Text.Json indirectly in an ASP.NET Core app, some default be
 * By default, property name matching is case-sensitive. You can [specify case-insensitivity](system-text-json-character-casing.md). ASP.NET Core apps [specify case-insensitivity by default](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
 * A parameterless constructor, which can be public, internal, or private, is used for deserialization.
-* Deserialization to immutable objects or read-only properties isn't supported.
+* Deserialization to immutable objects or properties that don't have public `set` accessors isn't supported.
 * By default, enums are supported as numbers. You can [serialize enum names as strings](system-text-json-customize-properties.md#enums-as-strings).
 * Fields aren't supported.
 * By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](system-text-json-invalid-json.md).
@@ -332,7 +340,7 @@ Extension methods on `HttpClient` and `HttpContent` are not available in System.
 * [Polymorphic serialization](system-text-json-polymorphism.md)
 * [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
 * [Customize character encoding](system-text-json-character-encoding.md)
-* [Write custom serializers and deserializers](write-custom-serializer-deserializer.md)
+* [Use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
 * [Supported collection types in System.Text.Json](system-text-json-supported-collection-types.md)

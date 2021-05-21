@@ -6,7 +6,7 @@ namespace DeserializeExtra
 {
     public class Program
     {
-        public record WeatherForecast
+        public class WeatherForecast
         {
             public DateTimeOffset Date { get; set; }
             public int TemperatureCelsius { get; set; }

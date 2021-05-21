@@ -4,7 +4,6 @@ using System.Text.Json;
 
 namespace RoundtripToUtf8Bytes1
 {
-    // <Serialize>
     public class Program
     {
         public class WeatherForecast
@@ -23,15 +22,15 @@ namespace RoundtripToUtf8Bytes1
                 Summary = "Hot"
             };
 
-            byte[] jsonUtf8Bytes =
-                JsonSerializer.SerializeToUtf8Bytes(weatherForecast);
+            // <Serialize>
+            byte[] jsonUtf8Bytes =JsonSerializer.SerializeToUtf8Bytes(weatherForecast);
+            // </Serialize>
 
             Console.WriteLine(Encoding.UTF8.GetString(jsonUtf8Bytes));
         }
     }
     // output:
     //{"Date":"2019-08-01T00:00:00-07:00","TemperatureCelsius":25,"Summary":"Hot"}
-    // </Serialize>
 }
 
 namespace RoundtripToUtf8Bytes2

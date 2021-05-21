@@ -244,7 +244,7 @@ You can [implement custom converters](system-text-json-converters-how-to.md) to 
 
 To pretty-print the JSON output, set <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true`:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeWriteIndented.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeWriteIndented.cs" highlight="24-25":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="SerializePrettyPrint":::
 
 If you use `JsonSerializerOptions` repeatedly with the same options, don't create a new `JsonSerializerOptions` instance each time you use it. Reuse the same instance for every call. For more information, see [Reuse JsonSerializerOptions instances](system-text-json-configure-options.md#reuse-jsonserializeroptions-instances).

@@ -23,6 +23,7 @@ namespace SerializeWriteIndented
 
             var options = new JsonSerializerOptions { WriteIndented = true };
             string jsonString = JsonSerializer.Serialize(weatherForecast, options);
+
             Console.WriteLine(jsonString);
         }
     }

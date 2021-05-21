@@ -71,31 +71,31 @@ To write JSON to a string or to a file, call the <xref:System.Text.Json.JsonSeri
 
 The following example creates JSON as a string:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeBasic.cs" highlight=24:::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeBasic.cs" highlight="24":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="Serialize":::
 
 The JSON output is minified (whitespace, indentation, and new-line characters are removed) by default.
 
 The following example uses synchronous code to create a JSON file:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeToFile.cs" highlight=25-27:::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeToFile.cs" highlight="25-27":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFile.vb" id="Serialize":::
 
 The following example uses asynchronous code to create a JSON file:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeToFileAsync.cs" highlight=26-29:::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeToFileAsync.cs" highlight="26-29":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFileAsync.vb" id="Serialize":::
 
 The preceding examples use type inference for the type being serialized. An overload of `Serialize()` takes a generic type parameter:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeWithGenericParameter.cs" highlight=24:::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeWithGenericParameter.cs" highlight="24":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="SerializeWithGenericParameter":::
 
 ### Serialization example
 
 Here's an example showing how a class that contains collection properties and a user-defined type is serialized:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeExtra.cs" highlight=44-45:::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeExtra.cs" highlight="44-45":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFWithPOCOs":::
 
 ## Serialize to UTF-8
@@ -173,17 +173,17 @@ To deserialize from a string or a file, call the <xref:System.Text.Json.JsonSeri
 
 The following example shows how to deserialize a JSON string:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeExtra.cs" highlight=55-56:::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeExtra.cs" highlight="55-56":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="Deserialize":::
 
 To deserialize from a file by using synchronous code, read the file into a string, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeFromFile.cs" highlight=18-20:::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeFromFile.cs" highlight="18-20":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFile.vb" id="Deserialize":::
 
 To deserialize from a file by using asynchronous code, call the <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeFromFileAsync.cs" highlight=18-21:::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeFromFileAsync.cs" highlight="18-21":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFileAsync.vb" id="Deserialize":::
 
 > [!TIP]

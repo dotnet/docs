@@ -27,7 +27,7 @@ dotnet add package Azure.Storage.Blobs
 
 ## Register client
 
-In the `ConfigureServices` method, register a client for each service:
+In the `Startup.ConfigureServices` method, register a client for each service:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -55,7 +55,7 @@ In the preceding code:
 
 ## Use the registered clients
 
-With the clients registered in `Startup`, you can now use them:
+With the clients registered in `Startup.ConfigureServices`, you can now use them:
 
 ```csharp
 [ApiController]
@@ -111,7 +111,7 @@ In the [Register client](#register-client) section, you explicitly specify the `
 
 You can add any options from <xref:Azure.Core.ClientOptions> into the JSON file's `AzureDefaults` section. One of the options is the retry policy. For more information, see [Configure a new retry policy](#configure-a-new-retry-policy).
 
-Since the `Configuration` object is injected from the host and stored inside the `Startup` constructor, you can use the following code in `ConfigureServices`:
+Since the `Configuration` object is injected from the host and stored inside the `Startup` constructor, you can use the following code in `Startup.ConfigureServices`:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)

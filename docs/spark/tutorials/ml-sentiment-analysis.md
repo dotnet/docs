@@ -5,6 +5,7 @@ author: mamccrea
 ms.author: mamccrea
 ms.date: 10/09/2020
 ms.topic: tutorial
+recommendations: false
 ---
 
 # Tutorial: Sentiment analysis with .NET for Apache Spark and ML.NET

@@ -4,6 +4,7 @@ description: This tutorial illustrates how to build a regression model using ML.
 ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0516
+recommendations: false
 #Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict prices.
 ---
 # Tutorial: Predict prices using regression with ML.NET

@@ -17,7 +17,9 @@ namespace SystemTextJsonSamples
             RoundtripToString5.Program.Main();
 
             Console.WriteLine("\n============================= Roundtrip to UTF-8 byte array\n");
-            RoundtripToUtf8.Run();
+            RoundtripToUtf8Bytes1.Program.Main();
+            RoundtripToUtf8Bytes2.Program.Main();
+            RoundtripToUtf8Bytes3.Program.Main();
 
             Console.WriteLine("\n============================= Roundtrip to file\n");
             RoundtripToFile1.Program.Main();

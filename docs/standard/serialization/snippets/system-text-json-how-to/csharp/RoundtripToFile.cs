@@ -13,6 +13,7 @@ namespace RoundtripToFile1
             public int TemperatureCelsius { get; set; }
             public string Summary { get; set; }
         }
+
         public static void Main()
         {
             var weatherForecast = new WeatherForecast
@@ -47,6 +48,7 @@ namespace RoundtripToFile2
             public int TemperatureCelsius { get; set; }
             public string Summary { get; set; }
         }
+
         public static void Main()
         {
             string fileName = "WeatherForecast.json";

@@ -13,6 +13,7 @@ namespace RoundtripToString1
             public int TemperatureCelsius { get; set; }
             public string Summary { get; set; }
         }
+
         public static void Main()
         {
             var weatherForecast = new WeatherForecast
@@ -43,6 +44,7 @@ namespace RoundtripToString2
             public int TemperatureCelsius { get; set; }
             public string Summary { get; set; }
         }
+
         public static void Main()
         {
             var weatherForecast = new WeatherForecast
@@ -73,6 +75,7 @@ namespace RoundtripToString3
             public int TemperatureCelsius { get; set; }
             public string Summary { get; set; }
         }
+
         public static void Main()
         {
             var weatherForecast = new WeatherForecast
@@ -116,6 +119,7 @@ namespace RoundtripToString4
             public int High { get; set; }
             public int Low { get; set; }
         }
+
         public static void Main()
         {
             var weatherForecast = new WeatherForecast
@@ -136,6 +140,7 @@ namespace RoundtripToString4
 
             var options = new JsonSerializerOptions { WriteIndented = true };
             string jsonString = JsonSerializer.Serialize(weatherForecast, options);
+
             Console.WriteLine(jsonString);
         }
     }
@@ -188,6 +193,7 @@ namespace RoundtripToString5
             public int High { get; set; }
             public int Low { get; set; }
         }
+
         public static void Main()
         {
             // <Deserialize>
@@ -218,7 +224,8 @@ namespace RoundtripToString5
 }
 ";
                 
-            WeatherForecast weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString);
+            WeatherForecast weatherForecast = 
+                JsonSerializer.Deserialize<WeatherForecast>(jsonString);
 
             Console.WriteLine($"Date: {weatherForecast.Date}");
             Console.WriteLine($"TemperatureCelsius: {weatherForecast.TemperatureCelsius}");

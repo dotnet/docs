@@ -2,36 +2,111 @@
 using System.Text;
 using System.Text.Json;
 
-namespace SystemTextJsonSamples
+namespace RoundtripToUtf8Bytes1
 {
-    public class RoundtripToUtf8
+    // <Serialize>
+    public class Program
     {
-        public static void Run()
+        public class WeatherForecast
         {
-            WeatherForecast weatherForecast = WeatherForecastFactories.CreateWeatherForecast();
-            weatherForecast.DisplayPropertyValues();
+            public DateTimeOffset Date { get; set; }
+            public int TemperatureCelsius { get; set; }
+            public string Summary { get; set; }
+        }
 
-            // <Serialize>
-            byte[] jsonUtf8Bytes;
-            var options = new JsonSerializerOptions
+        public static void Main()
+        {
+            var weatherForecast = new WeatherForecast
             {
-                WriteIndented = true
+                Date = DateTime.Parse("2019-08-01"),
+                TemperatureCelsius = 25,
+                Summary = "Hot"
             };
-            jsonUtf8Bytes = JsonSerializer.SerializeToUtf8Bytes(weatherForecast, options);
-            // </Serialize>
-            Console.WriteLine($"JSON output:\n{Encoding.UTF8.GetString(jsonUtf8Bytes)}\n");
 
-            // <Deserialize1>
-            var readOnlySpan = new ReadOnlySpan<byte>(jsonUtf8Bytes);
-            weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(readOnlySpan);
-            // </Deserialize1>
-            weatherForecast.DisplayPropertyValues();
+            byte[] jsonUtf8Bytes;
+            jsonUtf8Bytes = JsonSerializer.SerializeToUtf8Bytes(weatherForecast);
 
-            // <Deserialize2>
-            var utf8Reader = new Utf8JsonReader(jsonUtf8Bytes);
-            weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(ref utf8Reader);
-            // </Deserialize2>
-            weatherForecast.DisplayPropertyValues();
+            Console.WriteLine(Encoding.UTF8.GetString(jsonUtf8Bytes));
         }
     }
+    // output:
+    //{"Date":"2019-08-01T00:00:00-07:00","TemperatureCelsius":25,"Summary":"Hot"}
+    // </Serialize>
+}
+
+namespace RoundtripToUtf8Bytes2
+{
+    // <Deserialize1>
+    public class Program
+    {
+        public record WeatherForecast
+        {
+            public DateTimeOffset Date { get; set; }
+            public int TemperatureCelsius { get; set; }
+            public string Summary { get; set; }
+        }
+
+        public static void Main()
+        {
+            var weatherForecast = new WeatherForecast
+            {
+                Date = DateTime.Parse("2019-08-01"),
+                TemperatureCelsius = 25,
+                Summary = "Hot"
+            };
+
+            // Get JSON in a ReadOnlySpan<byte> for deserialization example.
+            var readOnlySpan = new ReadOnlySpan<byte>(JsonSerializer.SerializeToUtf8Bytes(weatherForecast));
+
+            WeatherForecast deserializedWeatherForecast = 
+                JsonSerializer.Deserialize<WeatherForecast>(readOnlySpan);
+
+            Console.WriteLine($"Date: {deserializedWeatherForecast.Date}");
+            Console.WriteLine($"TemperatureCelsius: {deserializedWeatherForecast.TemperatureCelsius}");
+            Console.WriteLine($"Summary: {deserializedWeatherForecast.Summary}");
+        }
+    }
+    // output:
+    //Date: 8/1/2019 12:00:00 AM -07:00
+    //TemperatureCelsius: 25
+    //Summary: Hot
+    // </Deserialize1>
+}
+
+namespace RoundtripToUtf8Bytes3
+{
+    // <Deserialize2>
+    public class Program
+    {
+        public record WeatherForecast
+        {
+            public DateTimeOffset Date { get; set; }
+            public int TemperatureCelsius { get; set; }
+            public string Summary { get; set; }
+        }
+
+        public static void Main()
+        {
+            var weatherForecast = new WeatherForecast
+            {
+                Date = DateTime.Parse("2019-08-01"),
+                TemperatureCelsius = 25,
+                Summary = "Hot"
+            };
+
+            // Get JSON in a Utf8JsonReader for deserialization example.
+            var utf8Reader = new Utf8JsonReader(JsonSerializer.SerializeToUtf8Bytes(weatherForecast));
+
+            WeatherForecast deserializedWeatherForecast = JsonSerializer.Deserialize<WeatherForecast>(ref utf8Reader);
+
+            Console.WriteLine($"Date: {deserializedWeatherForecast.Date}");
+            Console.WriteLine($"TemperatureCelsius: {deserializedWeatherForecast.TemperatureCelsius}");
+            Console.WriteLine($"Summary: {deserializedWeatherForecast.Summary}");
+        }
+    }
+    // output:
+    //Date: 8/1/2019 12:00:00 AM -07:00
+    //TemperatureCelsius: 25
+    //Summary: Hot
+    // </Deserialize2>
 }

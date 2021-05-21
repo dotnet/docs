@@ -6,6 +6,7 @@ ms.author: casoper
 ms.date: 11/13/2020
 ms.topic: quickstart
 ms.prod: dotnet
+recommendations: false
 ---
 
 # Quickstart - Use .NET to drive a Raspberry Pi Sense HAT

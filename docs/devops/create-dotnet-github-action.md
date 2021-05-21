@@ -5,6 +5,7 @@ author: IEvangelist
 ms.author: dapine
 ms.date: 04/01/2021
 ms.topic: tutorial
+recommendations: false
 ---
 
 # Tutorial: Create a GitHub Action with .NET

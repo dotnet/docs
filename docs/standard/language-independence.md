@@ -35,7 +35,7 @@ For example, unsigned integers other than <xref:System.Byte> are not CLS-complia
 [!code-csharp[Conceptual.CLSCompliant#1](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/public1.cs#1)]
 [!code-vb[Conceptual.CLSCompliant#1](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/public1.vb#1)]
 
-You can make the `Person` class CLS-compliant by changing the type of `Age` property from <xref:System.UInt16> to <xref:System.Int16>, which is a CLS-compliant, 16-bit signed integer. You do not have to change the type of the private `personAge` field.
+You can make the `Person` class CLS-compliant by changing the type of the `Age` property from <xref:System.UInt16> to <xref:System.Int16>, which is a CLS-compliant, 16-bit signed integer. You don't have to change the type of the private `personAge` field.
 
 [!code-csharp[Conceptual.CLSCompliant#2](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/public2.cs#2)]
 [!code-vb[Conceptual.CLSCompliant#2](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/public2.vb#2)]
@@ -80,7 +80,7 @@ Generics | [Generic types and members](#generic-types-and-members) | For each ab
 Interfaces | [Interfaces](#interfaces) | CLS-compliant interfaces shall not require the definition of non-CLS compliant methods in order to implement them. | 18
 Interfaces | [Interfaces](#interfaces) | CLS-compliant interfaces shall not define static methods, nor shall they define fields. | 19
 Members | [Type members in general](#type-members-in-general) | Global static fields and methods are not CLS-compliant. | 36
-Members | -- | The value of a literal static is specified through the use of field initialization metadata. A CLS-compliant literal must have a value specified in field initialization metadata that is of exactly the same type as the literal (or of the underlying type, if that literal is an `enum`). | 13
+Members | -- | The value of a literal static is specified by using field initialization metadata. A CLS-compliant literal must have a value specified in field initialization metadata that is of exactly the same type as the literal (or of the underlying type, if that literal is an `enum`). | 13
 Members | [Type members in general](#type-members-in-general) | The vararg constraint is not part of the CLS, and the only calling convention supported by the CLS is the standard managed calling convention. | 15
 Naming conventions | [Naming conventions](#naming-conventions) | Assemblies shall follow Annex 7 of Technical Report 15 of the Unicode Standard3.0 governing the set of characters permitted to start and be included in identifiers, available online at [Unicode Normalization Forms](https://unicode.org/reports/tr15/). Identifiers shall be in the canonical format defined by Unicode Normalization Form C. For CLS purposes, two identifiers are the same if their lowercase mappings (as specified by the Unicode locale-insensitive, one-to-one lowercase mappings) are the same. That is, for two identifiers to be considered different under the CLS they shall differ in more than simply their case. However, in order to override an inherited definition the CLI requires the precise encoding of the original declaration be used. | 4
 Overloading | [Naming conventions](#naming-conventions) | All names introduced in a CLS-compliant scope shall be distinct independent of kind, except where the names are identical and resolved via overloading. That is, while the CTS allows a single type to use the same name for a method and a field, the CLS does not. | 5
@@ -133,7 +133,7 @@ All types that appear in member signatures, including a method's return type or 
 
 * All types used as constraints on generic parameters must be CLS-compliant.
 
-The .NET [common type system](common-type-system.md) includes a number of built-in types that are supported directly by the common language runtime and are specially encoded in an assembly's metadata. Of these intrinsic types, the types listed in the following table are CLS-compliant.
+The .NET [common type system](common-type-system.md) includes many built-in types that are supported directly by the common language runtime and are specially encoded in an assembly's metadata. Of these intrinsic types, the types listed in the following table are CLS-compliant.
 
 CLS-compliant type | Description
 ------------------ | -----------
@@ -170,7 +170,7 @@ The .NET Class Library or any other class library may include other types that a
 
 If a type is not CLS-compliant, you should apply the <xref:System.CLSCompliantAttribute> attribute with an `isCompliant` value of `false` to it. For more information, see [The CLSCompliantAttribute attribute](#the-clscompliantattribute-attribute) section.
 
-The following example illustrates the problem of CLS compliance in a method signature and in generic type instantiation. It defines an `InvoiceItem` class with a property of type <xref:System.UInt32>, a property of type `Nullable(Of UInt32)`, and a constructor with parameters of type <xref:System.UInt32> and `Nullable(Of UInt32)`. You get four compiler warnings when you try to compile this example.
+The following example illustrates the problem of CLS compliance in a method signature and in generic type instantiation. It defines an `InvoiceItem` class with a property of type <xref:System.UInt32>, a property of type `Nullable<UInt32>`, and a constructor with parameters of type <xref:System.UInt32> and `Nullable<UInt32>`. You get four compiler warnings when you try to compile this example.
 
 [!code-csharp[Conceptual.CLSCompliant#3](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/type1.cs#3)]
 [!code-vb[Conceptual.CLSCompliant#3](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/type1.vb#3)]
@@ -232,7 +232,7 @@ The Common Language Specification defines two conversion operators:
 
 However, not all languages support operator overloading or the definition of custom operators. If you choose to implement these conversion operators, you should also provide an alternate way to perform the conversion. We recommend that you provide `From`*Xxx* and `To`*Xxx* methods.
 
-The following example defines CLS-compliant implicit and explicit conversions. It creates a `UDouble` class that represents an signed double-precision, floating-point number. It provides for implicit conversions from `UDouble` to <xref:System.Double> and for explicit conversions from `UDouble` to <xref:System.Single>, <xref:System.Double> to `UDouble`, and <xref:System.Single> to `UDouble`. It also defines a `ToDouble` method as an alternative to the implicit conversion operator and the `ToSingle`, `FromDouble`, and `FromSingle` methods as alternatives to the explicit conversion operators.
+The following example defines CLS-compliant implicit and explicit conversions. It creates a `UDouble` class that represents an unsigned, double-precision, floating-point number. It provides for implicit conversions from `UDouble` to <xref:System.Double> and for explicit conversions from `UDouble` to <xref:System.Single>, <xref:System.Double> to `UDouble`, and <xref:System.Single> to `UDouble`. It also defines a `ToDouble` method as an alternative to the implicit conversion operator and the `ToSingle`, `FromDouble`, and `FromSingle` methods as alternatives to the explicit conversion operators.
 
 [!code-csharp[Conceptual.CLSCompliant#15](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/convert1.cs#15)]
 [!code-vb[Conceptual.CLSCompliant#15](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/convert1.vb#15)]
@@ -241,7 +241,7 @@ The following example defines CLS-compliant implicit and explicit conversions. I
 
 CLS-compliant arrays conform to the following rules:
 
-- All dimensions of an array must have a lower bound of zero. The following example creates a non-CLS-compliant array with a lower bound of one. Note that, despite the presence of the <xref:System.CLSCompliantAttribute> attribute, the compiler does not detect that the array returned by the `Numbers.GetTenPrimes` method is not CLS-compliant.
+- All dimensions of an array must have a lower bound of zero. The following example creates a non-CLS-compliant array with a lower bound of one. Despite the presence of the <xref:System.CLSCompliantAttribute> attribute, the compiler does not detect that the array returned by the `Numbers.GetTenPrimes` method is not CLS-compliant.
 
   [!code-csharp[Conceptual.CLSCompliant#8](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/array1.cs#8)]
   [!code-vb[Conceptual.CLSCompliant#8](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/array1.vb#8)]
@@ -347,7 +347,7 @@ The example compiles successfully if the constraint is added to the `FloatingPoi
 
 The Common Language Specification imposes a conservative per-instantiation model for nested types and protected members. Open generic types cannot expose fields or members with signatures that contain a specific instantiation of a nested, protected generic type. Non-generic types that extend a specific instantiation of a generic base class or interface cannot expose fields or members with signatures that contain a different instantiation of a nested, protected generic type.
 
-The following example defines a generic type, `C1<T>` (or `C1(Of T)` in Visual Basic), and a protected class, `C1<T>.N` (or `C1(Of T).N` in Visual Basic). `C1<T>` has two methods, `M1` and `M2`. However, `M1` is not CLS-compliant because it tries to return a `C1<int>.N` (or `C1(Of Integer).N`) object from C1\<T> (or `C1(Of T)`). A second class, `C2`, is derived from `C1<long>` (or `C1(Of Long)`). It has two methods, `M3` and `M4`. `M3` is not CLS-compliant because it tries to return a `C1<int>.N` (or `C1(Of Integer).N`) object from a subclass of `C1<long>`. Note that language compilers can be even more restrictive. In this example, Visual Basic displays an error when it tries to compile `M4`.
+The following example defines a generic type, `C1<T>` (or `C1(Of T)` in Visual Basic), and a protected class, `C1<T>.N` (or `C1(Of T).N` in Visual Basic). `C1<T>` has two methods, `M1` and `M2`. However, `M1` is not CLS-compliant because it tries to return a `C1<int>.N` (or `C1(Of Integer).N`) object from C1\<T> (or `C1(Of T)`). A second class, `C2`, is derived from `C1<long>` (or `C1(Of Long)`). It has two methods, `M3` and `M4`. `M3` is not CLS-compliant because it tries to return a `C1<int>.N` (or `C1(Of Integer).N`) object from a subclass of `C1<long>`. Language compilers can be even more restrictive. In this example, Visual Basic displays an error when it tries to compile `M4`.
 
 [!code-csharp[Conceptual.CLSCompliant#32](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/generics4.cs#32)]
 [!code-vb[Conceptual.CLSCompliant#32](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/generics4.vb#32)]
@@ -356,7 +356,7 @@ The following example defines a generic type, `C1<T>` (or `C1(Of T)` in Visual B
 
 Constructors in CLS-compliant classes and structures must follow these rules:
 
-* A constructor of a derived class must call the instance constructor of its base class before it accesses inherited instance data. This requirement is due to the fact that base class constructors are not inherited by their derived classes. This rule does not apply to structures, which do not support direct inheritance.
+* A constructor of a derived class must call the instance constructor of its base class before it accesses inherited instance data. This requirement is because base class constructors are not inherited by their derived classes. This rule does not apply to structures, which do not support direct inheritance.
 
   Typically, compilers enforce this rule independently of CLS compliance, as the following example shows. It creates a `Doctor` class that is derived from a `Person` class, but the `Doctor` class fails to call the `Person` class constructor to initialize inherited instance fields.
 
@@ -424,7 +424,7 @@ To correct this error, the `ErrorClass` class must inherit from <xref:System.Exc
 
 In .NET assemblies, custom attributes provide an extensible mechanism for storing custom attributes and retrieving metadata about programming objects, such as assemblies, types, members, and method parameters. Custom attributes must derive from [System.Attribute](xref:System.Attribute) or from a type derived from `System.Attribute`.
 
-The following example violates this rule. It defines a `NumericAttribute` class that does not derive from <xref:System.Attribute?displayProperty=nameWithType>. Note that a compiler error results only when the non-CLS-compliant attribute is applied, not when the class is defined.
+The following example violates this rule. It defines a `NumericAttribute` class that does not derive from <xref:System.Attribute?displayProperty=nameWithType>. A compiler error results only when the non-CLS-compliant attribute is applied, not when the class is defined.
 
 [!code-csharp[Conceptual.CLSCompliant#18](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/attribute1.cs#18)]
 [!code-vb[Conceptual.CLSCompliant#18](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/attribute1.vb#18)]
@@ -502,7 +502,7 @@ If you are developing an app rather than a library (that is, if you aren't expos
 
 ## Cross-language interoperability
 
-Language independence has a number of possible meanings. One meaning involves seamlessly consuming types written in one language from an app written in another language. A second meaning, which is the focus of this article, involves combining code written in multiple languages into a single .NET assembly.
+Language independence has a few possible meanings. One meaning involves seamlessly consuming types written in one language from an app written in another language. A second meaning, which is the focus of this article, involves combining code written in multiple languages into a single .NET assembly.
 
 The following example illustrates cross-language interoperability by creating a class library named Utilities.dll that includes two classes, `NumericLib` and `StringLib`. The `NumericLib` class is written in C#, and the `StringLib` class is written in Visual Basic. Here's the source code for `StringUtil.vb`, which includes a single member, `ToTitleCase`, in its `StringLib` class.
 

@@ -11,7 +11,7 @@ ms.assetid: adbd34bb-43d2-4266-90e7-cd1afaf49b4e
 ---
 # BC40025: Type of member '\<membername>' is not CLS-compliant
 
-The data type specified for this member is not part of the [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS). This is not an error within your component, because the .NET Framework and Visual Basic support this data type. However, another component written in strictly CLS-compliant code might not support this data type. Such a component might not be able to interact successfully with your component.
+The data type specified for this member is not part of the [Language Independence and Language-Independent Components](../../../standard/language-independence.md) (CLS). This is not an error within your component, because the .NET Framework and Visual Basic support this data type. However, another component written in strictly CLS-compliant code might not support this data type. Such a component might not be able to interact successfully with your component.
 
  The following Visual Basic data types are not CLS-compliant:
 

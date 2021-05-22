@@ -37,5 +37,5 @@ This section summarizes the process needed to expose an existing COM component t
 - [Interoperating with Unmanaged Code](index.md)
 - [Design Considerations for Interoperation](/previous-versions/dotnet/netframework-4.0/61aax4kh(v=vs.100))
 - [COM Interop Sample: .NET Client and COM Server](com-interop-sample-net-client-and-com-server.md)
-- [Language Independence and Language-Independent Components](../../standard/language-independence-and-language-independent-components.md)
+- [Language Independence and Language-Independent Components](../../standard/language-independence.md)
 - [Gacutil.exe (Global Assembly Cache Tool)](../tools/gacutil-exe-gac-tool.md)

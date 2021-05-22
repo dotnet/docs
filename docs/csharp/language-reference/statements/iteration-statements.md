@@ -1,7 +1,7 @@
 ---
 title: "Iteration statements - C# reference"
-description: "Learn about C# iteration statements: do, while, for, foreach."
-ms.date: 05/21/2021
+description: "Learn about C# iteration statements: for, foreach, do, and while."
+ms.date: 05/24/2021
 f1_keywords:
   - "for_CSharpKeyword"
   - "foreach_CSharpKeyword"
@@ -27,7 +27,7 @@ The following statements repeatedly execute a statement or a block of statements
 - The [`do` statement](#the-do-statement): conditionally executes its body one or more times.
 - The [`while` statement](#the-while-statement): conditionally executes its body zero or more times.
 
-TODO.
+At any point within an iteration statement block, you can break out of the loop by using the [break](../keywords/break.md) statement, or step to the next iteration in the loop by using the [continue](../keywords/continue.md) statement.
 
 ## The `for` statement
 
@@ -45,7 +45,7 @@ The preceding example shows the elements of the `for` statement:
   int i = 0
   ```
 
-- The *condition* section that determines if the next loop iteration should be executed. If it evaluates to `true` or is not present, the next loop iteration is executed; otherwise, the loop is exited. The *condition* section must be a Boolean expression.
+- The *condition* section that determines if the next iteration in the loop should be executed. If it evaluates to `true` or is not present, the next iteration is executed; otherwise, the loop is exited. The *condition* section must be a Boolean expression.
 
   The *condition* section in the preceding example checks if a counter value is less than three:
 
@@ -72,7 +72,7 @@ The iterator section can contain zero or more of the following statement express
 - [await](../operators/await.md) expression
 - creation of an object by using the [new](../operators/new-operator.md) operator
 
-If you don't declare a loop variable in the initializer section, you can use zero or more of the expressions from the preceding list in the initializer section as well. The following example shows several less common usages of the initializer and iterator sections: assigning a value to an external loop variable in the initializer section, invoking a method in both the initializer and the iterator sections, and changing the values of two variables in the iterator section:
+If you don't declare a loop variable in the initializer section, you can use zero or more of the expressions from the preceding list in the initializer section as well. The following example shows several less common usages of the initializer and iterator sections: assigning a value to an external variable in the initializer section, invoking a method in both the initializer and the iterator sections, and changing the values of two variables in the iterator section:
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/iteration-statements/ForStatement.cs" id="MultipleExpressions":::
 

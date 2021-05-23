@@ -94,6 +94,7 @@ You can set the following properties for symbol groups, to limit which symbols a
 1. Tuple members aren't currently supported in `applicable_kinds`.
 2. The symbol group matches _all_ the modifiers in the `required_modifiers` property.  If you omit this property, no specific modifiers are required for a match. This means a symbol's modifiers have no effect on whether or not this rule is applied.
 3. If your group has `static` or `shared` in the `required_modifiers` property, the group will also include `const` symbols because they are implicitly `static`/`Shared`. However, if you don't want the `static` naming rule to apply to `const` symbols, you can create a new naming rule with a symbol group of `const`.
+4. `class` *does* include record classes, and `struct` does include record structs.
 
 ## Naming style properties
 

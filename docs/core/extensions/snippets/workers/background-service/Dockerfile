@@ -5,16 +5,16 @@ WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["background-service/background-service.csproj", "background-service/"]
-RUN dotnet restore "background-service/background-service.csproj"
+COPY ["background-service/App.BackgroundService.csproj", "background-service/"]
+RUN dotnet restore "background-service/App.BackgroundService.csproj"
 COPY . .
 WORKDIR "/src/background-service"
-RUN dotnet build "background-service.csproj" -c Release -o /app/build
+RUN dotnet build "App.BackgroundService.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "background-service.csproj" -c Release -o /app/publish
+RUN dotnet publish "App.BackgroundService.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "background-service.dll"]
+ENTRYPOINT ["dotnet", "App.BackgroundService.dll"]

@@ -237,11 +237,13 @@ The `WORKDIR` command changes the **current directory** inside of the container 
 The next command, `ENTRYPOINT`, tells Docker to configure the container to run as an executable. When the container starts, the `ENTRYPOINT` command runs. When this command ends, the container will automatically stop.
 
 > [!TIP]
-> For added security, you can opt-out of the diagnostic pipeline. When you opt-out this allows the container to run as readonly. In order to do this, specify a `COMPlus_EnableDiagnostics` environment variable as `0` (just before the `ENTRYPOINT` step):
+> For added security, you can opt-out of the diagnostic pipeline. When you opt-out this allows the container to run as readonly. In order to do this, specify a `DOTNET_EnableDiagnostics` environment variable as `0` (just before the `ENTRYPOINT` step):
 >
 > ```dockerfile
-> ENV COMPlus_EnableDiagnostics=0
+> ENV DOTNET_EnableDiagnostics=0
 > ```
+
+[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
 From your terminal, run `docker build -t counter-image -f Dockerfile .` and when that command finishes, run `docker images`.
 

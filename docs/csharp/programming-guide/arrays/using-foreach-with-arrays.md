@@ -9,7 +9,7 @@ ms.assetid: 5f2da2a9-1f56-4de5-94cc-e07f4f7a0244
 ---
 # Using foreach with arrays (C# Programming Guide)
 
-The [foreach](../../language-reference/statements/iteration-statements.md#the-foreach-statment) statement provides a simple, clean way to iterate through the elements of an array.
+The [foreach](../../language-reference/statements/iteration-statements.md#the-foreach-statement) statement provides a simple, clean way to iterate through the elements of an array.
 
 For single-dimensional arrays, the `foreach` statement processes elements in increasing index order, starting with index 0 and ending with index `Length - 1`:
 

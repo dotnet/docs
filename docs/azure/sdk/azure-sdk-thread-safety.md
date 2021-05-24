@@ -76,7 +76,7 @@ public void ConfigureServices(IServiceCollection services)
 
 ```
 
-For more information about implementing dependency injection with the Azure SDK, refer to the article [Dependency injection with the Azure .NET SDK](.\dependency-injection.md).
+For more information about implementing dependency injection with the Azure SDK, refer to the article [Dependency injection with the Azure .NET SDK](./dependency-injection.md).
 
 Alternatively, you may also create the instance of an SDK client and pass it around as a parameter to methods in need of a client.  The point is, avoid unnecessary instantiations of the same SDK client object with the same parameters as it is unnecessary and wasteful.
 
@@ -116,5 +116,5 @@ Further guidance for properly managing and disposing of `HttpClient` instances c
 
 - [Lifetime management for Azure SDK .NET clients (Azure SDK blog)](https://devblogs.microsoft.com/azure-sdk/lifetime-management-and-thread-safety-guarantees-of-azure-sdk-net-clients/)
 - [Best practices for using Azure SDK with ASP.NET Core (Azure SDK blog)](https://devblogs.microsoft.com/azure-sdk/best-practices-for-using-azure-sdk-with-asp-net-core/)
-- [Dependency injection with the Azure .NET SDK](.\dependency-injection.md)
+- [Dependency injection with the Azure .NET SDK](./dependency-injection.md)
 - [Dependency injection in .NET](/dotnet/core/extensions/dependency-injection)

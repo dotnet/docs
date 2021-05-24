@@ -1993,6 +1993,11 @@ items:
       href: ../core/extensions/console-log-formatter.md
   - name: HostBuilder (generic host)
     href: ../core/extensions/generic-host.md
+  - name: Worker Services
+    items:
+    - name: Overview
+      displayName: workers,worker service,BackgroundService,IHostedService,queue service,timer service
+      href: ../core/extensions/workers.md
 - name: Data access
   items:
   - name: LINQ

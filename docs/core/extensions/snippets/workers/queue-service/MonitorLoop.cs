@@ -12,7 +12,8 @@ namespace App.QueueService
         private readonly ILogger<MonitorLoop> _logger;
         private readonly CancellationToken _cancellationToken;
 
-        public MonitorLoop(IBackgroundTaskQueue taskQueue,
+        public MonitorLoop(
+            IBackgroundTaskQueue taskQueue,
             ILogger<MonitorLoop> logger,
             IHostApplicationLifetime applicationLifetime)
         {

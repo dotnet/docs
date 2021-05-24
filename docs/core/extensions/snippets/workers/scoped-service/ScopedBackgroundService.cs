@@ -7,20 +7,20 @@ using System.Threading.Tasks;
 
 namespace App.ScopedService
 {
-    public sealed class ScopedBackgroudService : BackgroundService
+    public sealed class ScopedBackgroundService : BackgroundService
     {
         private readonly IServiceProvider _serviceProvider;
-        private readonly ILogger<ScopedBackgroudService> _logger;
+        private readonly ILogger<ScopedBackgroundService> _logger;
 
-        public ScopedBackgroudService(
+        public ScopedBackgroundService(
             IServiceProvider serviceProvider,
-            ILogger<ScopedBackgroudService> logger) =>
+            ILogger<ScopedBackgroundService> logger) =>
             (_serviceProvider, _logger) = (serviceProvider, logger);
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             _logger.LogInformation(
-                $"{nameof(ScopedBackgroudService)} is running.");
+                $"{nameof(ScopedBackgroundService)} is running.");
 
             await DoWorkAsync(stoppingToken);
         }
@@ -28,7 +28,7 @@ namespace App.ScopedService
         private async Task DoWorkAsync(CancellationToken stoppingToken)
         {
             _logger.LogInformation(
-                $"{nameof(ScopedBackgroudService)} is working.");
+                $"{nameof(ScopedBackgroundService)} is working.");
 
             using (IServiceScope scope = _serviceProvider.CreateScope())
             {
@@ -42,7 +42,7 @@ namespace App.ScopedService
         public override async Task StopAsync(CancellationToken stoppingToken)
         {
             _logger.LogInformation(
-                $"{nameof(ScopedBackgroudService)} is stopping.");
+                $"{nameof(ScopedBackgroundService)} is stopping.");
 
             await base.StopAsync(stoppingToken);
         }

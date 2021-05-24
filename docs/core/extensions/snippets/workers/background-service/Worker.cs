@@ -4,7 +4,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace App.BackgroundService
+namespace App.WorkerService
 {
     public class Worker : BackgroundService
     {

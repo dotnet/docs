@@ -5,7 +5,7 @@ using App.ScopedService;
 using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {
-        services.AddHostedService<ScopedBackgroudService>();
+        services.AddHostedService<ScopedBackgroundService>();
         services.AddScoped<IScopedProcessingService, DefaultScopedProcessingService>();
     })
     .Build();

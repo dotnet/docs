@@ -42,11 +42,15 @@ The preceding `Worker` class is a subclass of <xref:Microsoft.Extensions.Hosting
 
 ### The project file
 
-The Worker Service template relies on the following project file SDK:
+The Worker Service template relies on the following project file `Sdk`:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Worker">
 ```
+
+### NuGet package
+
+An app based on the Worker Service template uses the `Microsoft.NET.Sdk.Worker` SDK and has an explicit package reference to the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) package.
 
 ### Containers and cloud adoptability
 

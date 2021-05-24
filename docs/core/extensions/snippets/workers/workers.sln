@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.381
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.BackgroundService", "background-service\App.BackgroundService.csproj", "{51530BFA-E250-468A-BC9F-215222BB5CB5}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.CustomHostedService", "custom-hosted-service\App.CustomHostedService.csproj", "{C2BCF75F-156B-4534-AEBF-EA200E8F3C88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.WorkerService", "background-service\App.WorkerService.csproj", "{51530BFA-E250-468A-BC9F-215222BB5CB5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.QueueService", "queue-service\App.QueueService.csproj", "{BEB98EBB-60C0-4BB1-A606-CECAAB6E7B6E}"
 EndProject
@@ -25,10 +23,6 @@ Global
 		{51530BFA-E250-468A-BC9F-215222BB5CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51530BFA-E250-468A-BC9F-215222BB5CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51530BFA-E250-468A-BC9F-215222BB5CB5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C2BCF75F-156B-4534-AEBF-EA200E8F3C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C2BCF75F-156B-4534-AEBF-EA200E8F3C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C2BCF75F-156B-4534-AEBF-EA200E8F3C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C2BCF75F-156B-4534-AEBF-EA200E8F3C88}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BEB98EBB-60C0-4BB1-A606-CECAAB6E7B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BEB98EBB-60C0-4BB1-A606-CECAAB6E7B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEB98EBB-60C0-4BB1-A606-CECAAB6E7B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU

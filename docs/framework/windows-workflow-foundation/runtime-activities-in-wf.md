@@ -2,7 +2,7 @@
 description: "Learn more about: Runtime Activities in WF"
 title: "Runtime Activities in WF"
 ms.date: "03/30/2017"
-ms.assetid: e5ae8c31-19bc-4655-88b3-6b75cd6a1bd5
+ms.topic: "reference"
 ---
 # Runtime Activities in WF
 

@@ -215,6 +215,7 @@
         "docs/framework/wcf/diagnostics/wmi/**.md": "reference",
         "docs/framework/wcf/whats-new/**.md": "reference",
         "docs/framework/**/how-to*.md": "how-to",
+        "docs/framework/**/troubleshooting*.md": "troubleshooting",
         "docs/fsharp/language-reference/**/**.md": "language-reference",
         "docs/fundamentals/code-analysis/**.md": "reference",
         "docs/fundamentals/code-analysis/quality-rules/**.md": "reference",
@@ -227,7 +228,13 @@
         "docs/visual-basic/language-reference/**/*.md": "reference",
         "docs/visual-basic/reference/**/*.md": "reference",
         "docs/visual-basic/misc/bc*.md": "error-reference",
-        "docs/whats-new/**/**.md": "reference"
+        "docs/visual-basic/**/troubleshooting*.md": "troubleshooting",
+        "docs/whats-new/**/**.md": "reference",
+        "docs/windows-workflow-foundation/1*.md": "error-reference",
+        "docs/windows-workflow-foundation/2*.md": "error-reference",
+        "docs/windows-workflow-foundation/3*.md": "error-reference",
+        "docs/windows-workflow-foundation/4*.md": "error-reference",
+        "docs/windows-workflow-foundation/5*.md": "error-reference"
       },
       "dev_langs": {
         "docs/fsharp/**/**.md": ["fsharp"],

@@ -2,7 +2,7 @@
 description: "Learn more about: Exceptions"
 title: "Exceptions"
 ms.date: "03/30/2017"
-ms.assetid: 065205cc-52dd-4f30-9578-b17d8d113136
+ms.topic: "reference"
 ---
 # Exceptions
 

@@ -79,14 +79,10 @@ Finally, create the database for your application's data using the `az sql db cr
 
 az sql db create \
     --resource-group <resource-group-name> \
-    --server <database-server-name> \
     --name <app-database-name> \
     --service-objective Free
 
 ```
-
-## Complete Script
-
 ```azurecli
 # Create a resource group
 az group create --name myResourceGroup --location "East US"

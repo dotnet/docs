@@ -1998,6 +1998,14 @@ items:
     - name: Overview
       displayName: workers,worker service,BackgroundService,IHostedService,queue service,timer service
       href: ../core/extensions/workers.md
+    - name: Create a Queue Service
+      href: ../core/extensions/queue-service.md
+    - name: Use scoped services with a BackgroundService
+      href: ../core/extensions/scoped-service.md
+    - name: Create a Windows Service using BackgroundService
+      href: ../core/extensions/windows-service.md
+    - name: Implement the IHostedService interface
+      href: ../core/extensions/timer-service.md
 - name: Data access
   items:
   - name: LINQ

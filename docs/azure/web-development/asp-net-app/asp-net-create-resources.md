@@ -19,7 +19,11 @@ A resource group is a logical container used to group together all of the Azure 
 
 ```azurecli
 # Create a resource group
-az group create --name <resource-group-name> --location "East US"
+
+az group create \
+    --name <resource-group-name> \
+    --location "East US"
+
 ```
 
 ## Create the App Service for the application
@@ -29,15 +33,24 @@ Azure App Service is a fully managed solution for hosting your ASP.NET Core or A
 To create an App Service to host your application, first you need to create an App Service plan.  The App Service plan defines how many compute resources (CPU and memory) are available to the application and how much you pay.  You can learn more about choosing the correct App Service plan in the article [Choosing an App Service plan](..\choosing-app-service-plan.md).  This example uses the FREE App Service plan.
 
 ```azurecli
-# Create App Service Plan
-az appservice plan create --name <app-service-plan-name> --resource-group <resource-group-name> --sku FREE
+
+az appservice plan create \
+    --name <app-service-plan-name> \
+    --resource-group <resource-group-name> \
+    --sku FREE
+
 ```
 
 Next, create the web app to host the application.  The name of the application must be unique across Azure as the application will have the fully qualified domain name of _<app-name>.azurewebsites.net_.
 
 ```azurecli
-# Create a web app
-az webapp create --resource-group <resource-group-name> --plan <app-service-plan> --name <app-name>
+
+
+az webapp create \
+    --resource-group <resource-group-name> \
+    --plan <app-service-plan> \
+    --name <app-name>
+
 ```
 
 ## Create an Azure SQL database for the data
@@ -45,18 +58,31 @@ az webapp create --resource-group <resource-group-name> --plan <app-service-plan
 When hosting a SQL Server database in Azure, first create the database server by using the `az sql server create` command.
 
 ```azurecli
-# Create database server
-az sql server create --name <server-name> --resource-group <resource-group-name> --admin-user <db-username> --admin-password <db-password>
+
+az sql server create \
+    --name <server-name> \
+    --resource-group <resource-group-name> \
+    --admin-user <db-username> \
+    --admin-password <db-password>
+
 ```
 
 Once the server is created, you need to grant network access to allow your application and your development workstation access to the database.  This is done by using the `az sql server firewall-rule create` command.
 
 You can [use Bing to find your current IP address](https://www.bing.com/search?&q=my+ip+address).
 
+
+
 Finally, create the database for your application's data using the `az sql db create` command.  The service-objective paramater in this command specifies the size of the database to create.  To list the available database sizes, use the command `az sql db list-editions -a -o table -l <location>`.
 
 ```azurecli
-az sql db create --resource-group <resource-group-name> --server <database-server-name> --name <app-database-name> --service-objective Free
+
+az sql db create \
+    --resource-group <resource-group-name> \
+    --server <database-server-name> \
+    --name <app-database-name> \
+    --service-objective Free
+
 ```
 
 ## Complete Script

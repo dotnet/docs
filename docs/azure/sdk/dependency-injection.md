@@ -36,10 +36,10 @@ public void ConfigureServices(IServiceCollection services)
     {
         // Add a KeyVault client
         builder.AddSecretClient(keyVaultUrl);
-    
+
         // Add a Storage account client
         builder.AddBlobServiceClient(storageUrl);
-    
+
         // Use DefaultAzureCredential by default
         builder.UseCredential(new DefaultAzureCredential());
     });
@@ -75,7 +75,7 @@ public class MyApiController : ControllerBase
     {
         var containerClient = _blobServiceClient.GetBlobContainerClient("demo");
         var results = new List<string>();
-        await foreach (BlobItem blob in containerClient.GetBlobsAsync()) 
+        await foreach (BlobItem blob in containerClient.GetBlobsAsync())
         {
             results.Add(blob.Name);
         }
@@ -120,13 +120,13 @@ public void ConfigureServices(IServiceCollection services)
     {
         // Add a KeyVault client
         builder.AddSecretClient(Configuration.GetSection("KeyVault"));
-    
+
         // Add a storage account client
         builder.AddBlobServiceClient(Configuration.GetSection("Storage"));
-    
+
         // Use DefaultAzureCredential by default
         builder.UseCredential(new DefaultAzureCredential());
-    
+
         // Set up any default settings
         builder.ConfigureDefaults(Configuration.GetSection("AzureDefaults"));
     });
@@ -204,14 +204,14 @@ public void ConfigureServices(IServiceCollection services)
         // Establish the global defaults
         builder.ConfigureDefaults(Configuration.GetSection("AzureDefaults"));
         builder.UseCredential(new DefaultAzureCredential());
-    
+
         // A Key Vault Secrets client using the global defaults
         builder.AddSecretClient(Configuration.GetSection("KeyVault"));
-    
+
         // A Storage client with a custom retry policy
         builder.AddBlobServiceClient(Configuration.GetSection("Storage"))
             .ConfigureOptions(options => options.Retry.MaxRetries = 10);
-    
+
         // A named storage client with a different custom retry policy
         builder.AddBlobServiceClient(Configuration.GetSection("CustomStorage"))
             .WithName("CustomStorage")

@@ -30,7 +30,7 @@ az group create \
 
 Azure App Service is a fully managed solution for hosting your ASP.NET Core or ASP.NET web applications or APIs.  You can think of Azure App Service as the web server for your application.
 
-To create an App Service to host your application, first you need to create an App Service plan.  The App Service plan defines how many compute resources (CPU and memory) are available to the application and how much you pay.  You can learn more about choosing the correct App Service plan in the article [Choosing an App Service plan](..\choosing-app-service-plan.md).  This example uses the FREE App Service plan.
+To create an App Service to host your application, first you need to create an App Service plan.  The App Service plan defines how many compute resources (CPU and memory) are available to the application and how much you pay.  You can learn more about choosing the correct App Service plan in the article [Choosing an App Service plan](../choosing-app-service-plan.md).  This example uses the FREE App Service plan.
 
 ```azurecli
 

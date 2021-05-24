@@ -15,8 +15,8 @@ This tutorial shows how to deploy an ASP.NET Core or ASP.NET web application to 
 be hosted using Azure App Service where as the database will be hosted using Azure SQL.  This article will show you how to provision the required
 Azure services, establish connectivity between the web app and database, run database migrations, and deploy your application.
 
-![Diagram showing what Azure services different components of an ASP.NET Core or ASP.NET application use](..\media\aspnet-app.png)
-  
+:::image type="content" source="../media/aspnet-app.png" alt-text="Diagram showing what Azure services different components of an ASP.NET Core or ASP.NET application use":::
+
 ## Sample application
 
 To follow along, you may download or clone the sample application from the repository [https://github.com/azure-samples/dotnetcore-sqldb-tutorial](https://github.com/azure-samples/dotnetcore-sqldb-tutorial).

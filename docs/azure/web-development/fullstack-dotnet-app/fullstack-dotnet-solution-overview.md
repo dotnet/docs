@@ -11,6 +11,6 @@ ms.author: daberry
 
 ## Solution overview
 
-![Diagram showing what Azure services different components of a full-stack .NET application use](..\media\fullstack-dotnet-app.png)
+:::image type="content" source="../media/fullstack-dotnet-app.png" alt-text="Diagram showing what Azure services different components of a full-stack .NET application use":::
 
 ## Sample application

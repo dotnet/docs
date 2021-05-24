@@ -1,6 +1,6 @@
 ---
 title: "Iteration statements - C# reference"
-description: "Learn about C# iteration statements: for, foreach, do, and while."
+description: "Learn about C# iteration statements that repeatedly execute the code: for, foreach, do, and while."
 ms.date: 05/24/2021
 f1_keywords:
   - "for_CSharpKeyword"
@@ -27,7 +27,7 @@ The following statements repeatedly execute a statement or a block of statements
 - The [`do` statement](#the-do-statement): conditionally executes its body one or more times.
 - The [`while` statement](#the-while-statement): conditionally executes its body zero or more times.
 
-At any point within an iteration statement block, you can break out of the loop by using the [break](../keywords/break.md) statement, or step to the next iteration in the loop by using the [continue](../keywords/continue.md) statement.
+At any point within the body of an iteration statement, you can break out of the loop by using the [break](../keywords/break.md) statement, or step to the next iteration in the loop by using the [continue](../keywords/continue.md) statement.
 
 ## The `for` statement
 
@@ -95,11 +95,11 @@ The following example uses the `foreach` statement with an instance of the <xref
 
 :::code language="csharp" source="snippets/iteration-statements/ForeachStatement.cs" id="WithSpan" :::
 
-If the `foreach` statement is applied to `null`, a <xref:System.NullReferenceException> is thrown. If the source collection of the `foreach` statement is empty, the body of the `foreach` loop isn't executed and skipped.
-
 Beginning with C# 7.3, if the enumerator's `Current` property returns a [reference return value](../keywords/ref.md#reference-return-values) (`ref T` where `T` is the type of a collection element), you can declare an iteration variable with the `ref` or `ref readonly` modifier, as the following example shows:
 
 :::code language="csharp" source="snippets/iteration-statements/ForeachStatement.cs" id="RefIterationVariable" :::
+
+If the `foreach` statement is applied to `null`, a <xref:System.NullReferenceException> is thrown. If the source collection of the `foreach` statement is empty, the body of the `foreach` statement isn't executed and skipped.
 
 ### await foreach
 
@@ -111,7 +111,7 @@ By default, stream elements are processed in the captured context. If you want t
 
 ### Type of an iteration variable
 
-You can use the `var` keyword to let the compiler infer the type of an iteration variable in the `foreach` statement, as the following code shows:
+You can use the [`var` keyword](../keywords/var.md) to let the compiler infer the type of an iteration variable in the `foreach` statement, as the following code shows:
 
 ```csharp
 foreach (var item in collection) { }
@@ -146,10 +146,10 @@ The following example shows the usage of the `while` statement:
 
 For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
 
-- [The for statement](~/_csharplang/spec/statements.md#the-for-statement)
-- [The foreach statement](~/_csharplang/spec/statements.md#the-foreach-statement)
-- [The do statement](~/_csharplang/spec/statements.md#the-do-statement)
-- [The while statement](~/_csharplang/spec/statements.md#the-while-statement)
+- [The `for` statement](~/_csharplang/spec/statements.md#the-for-statement)
+- [The `foreach` statement](~/_csharplang/spec/statements.md#the-foreach-statement)
+- [The `do` statement](~/_csharplang/spec/statements.md#the-do-statement)
+- [The `while` statement](~/_csharplang/spec/statements.md#the-while-statement)
 
 For more information about features added in C# 8.0 and later, see the following feature proposal notes:
 

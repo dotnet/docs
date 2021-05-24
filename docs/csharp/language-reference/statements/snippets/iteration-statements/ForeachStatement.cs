@@ -17,14 +17,14 @@ namespace IterationStatements
         {
             // <WithIEnumerable>
             var fibNumbers = new List<int> { 0, 1, 1, 2, 3, 5, 8, 13 };
-            int count = 0;
             foreach (int element in fibNumbers)
             {
-                Console.WriteLine($"Element #{count}: {element}");
-                count++;
+                Console.Write($"{element} ");
             }
-            Console.WriteLine($"Number of elements: {count}");
+            // Output:
+            // 0 1 1 2 3 5 8 13
             // </WithIEnumerable>
+            Console.WriteLine();
         }
 
         private static void ForeachWithSpan()
@@ -35,6 +35,8 @@ namespace IterationStatements
             {
                 Console.Write($"{number} ");
             }
+            // Output:
+            // 3 14 15 92 6
             // </WithSpan>
             Console.WriteLine();
         }
@@ -71,7 +73,7 @@ namespace IterationStatements
 
         private static async IAsyncEnumerable<int> GenerateSequenceAsync()
         {
-            for(int i = 0; i < 40; i++)
+            for (int i = 0; i < 40; i++)
             {
                 if (i % 10 == 0)
                 {

@@ -31,7 +31,7 @@ namespace IterationStatements
             int j = 3;
             for (i = 0, Console.WriteLine($"Start: i={i}, j={j}"); i < j; i++, j--, Console.WriteLine($"Step: i={i}, j={j}"))
             {
-                // Body of the loop.
+                //...
             }
             // Output:
             // Start: i=0, j=3
@@ -45,7 +45,7 @@ namespace IterationStatements
             // <InfiniteLoop>
             for ( ; ; )
             {
-                // Body of the loop.
+                //...
             }
             // </InfiniteLoop>
         }

@@ -15,10 +15,13 @@ namespace IterationStatements
             int n = 0;
             do
             {
-                Console.WriteLine(n);
+                Console.Write(n);
                 n++;
             } while (n < 5);
+            // Output:
+            // 01234
             // </Example>
+            Console.WriteLine();
         }
     }
 }

@@ -41,7 +41,7 @@ az appservice plan create \
 
 ```
 
-Next, create the web app to host the application.  The name of the application must be unique across Azure as the application will have the fully qualified domain name of _<app-name>.azurewebsites.net_.
+Next, create the web app to host the application.  The name of the application must be unique across Azure as the application will have the fully qualified domain name of _\<app-name\>.azurewebsites.net_.
 
 ```azurecli
 
@@ -71,8 +71,6 @@ Once the server is created, you need to grant network access to allow your appli
 
 You can [use Bing to find your current IP address](https://www.bing.com/search?&q=my+ip+address).
 
-
-
 Finally, create the database for your application's data using the `az sql db create` command.  The service-objective paramater in this command specifies the size of the database to create.  To list the available database sizes, use the command `az sql db list-editions -a -o table -l <location>`.
 
 ```azurecli
@@ -81,28 +79,51 @@ az sql db create \
     --resource-group <resource-group-name> \
     --name <app-database-name> \
     --service-objective Free
-
 ```
+
+The full script to create all necessary Azure resources is shown below.
+
 ```azurecli
 # Create a resource group
-az group create --name myResourceGroup --location "East US"
+az group create \
+    --name myResourceGroup
+    --location "East US"
 
 
 # Create App Service Plan
-az appservice plan create --name <app-service-plan-name> --resource-group <resource-group-name> --sku FREE
+az appservice plan create \
+    --name <app-service-plan-name> \
+    --resource-group <resource-group-name> \
+    --sku FREE
 
 # Create a web app
-az webapp create --resource-group <resource-group-name> --plan <app-service-plan> --name <app-name>
+az webapp create \
+    --resource-group <resource-group-name> \
+    --plan <app-service-plan> \
+    --name <app-name>
 
 
 # Create database server
-az sql server create --name <database-server-name> --resource-group <resource-group-name> --admin-user <db-username> --admin-password <db-password>
+az sql server create \
+    --name <database-server-name> \
+    --resource-group <resource-group-name> \
+    --admin-user <db-username> \
+    --admin-password <db-password>
 
 # Configure database server firewall
-az sql server firewall-rule create --name AllowLocalClient --server <database-server-name> --resource-group <resource-group-name> --start-ip-address=<your-ip-address> --end-ip-address=<your-ip-address>
+az sql server firewall-rule create \
+    --name AllowLocalClient \
+    --server <database-server-name> \
+    --resource-group <resource-group-name> \
+    --start-ip-address=<your-ip-address> \
+    --end-ip-address=<your-ip-address>
 
 # Create database
-az sql db create --resource-group <resource-group-name> --server <database-server-name> --name <app-database-name> --service-objective S0
+az sql db create \
+    --resource-group <resource-group-name> \
+    --server <database-server-name> \
+    --name <app-database-name> \
+    --service-objective S0
 
 ```
 

@@ -25,7 +25,7 @@ There are three ways to deconstruct a tuple:
 
 - You can explicitly declare the type of each field inside parentheses. The following example uses this approach to deconstruct the three-tuple returned by the `QueryCityData` method.
 
-:::code language="csharp" source="./snippets/deconstructing-tuples/deconstruct-tuple2.cs" ID="Snippet1":::
+    :::code language="csharp" source="./snippets/deconstructing-tuples/deconstruct-tuple2.cs" ID="Snippet1":::
 
 - You can use the `var` keyword so that C# infers the type of each variable. You place the `var` keyword outside of the parentheses. The following example uses type inference when deconstructing the three-tuple returned by the `QueryCityData` method.
 

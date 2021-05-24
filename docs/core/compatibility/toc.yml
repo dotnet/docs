@@ -297,6 +297,12 @@ items:
           href: networking/5.0/negotiatestream-sslstream-dont-fail-on-successive-begin-calls.md
         - name: WinHttpHandler removed from .NET runtime
           href: networking/5.0/winhttphandler-removed-from-runtime.md
+      - name: SDK
+        items:
+        - name: OutputType set to WinExe
+          href: sdk/5.0/automatically-infer-winexe-output-type.md
+        - name: WinForms and WPF apps use Microsoft.NET.Sdk
+          href: sdk/5.0/sdk-and-target-framework-change.md
       - name: Security
         items:
         - name: Code access security APIs are obsolete

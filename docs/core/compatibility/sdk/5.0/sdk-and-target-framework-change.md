@@ -62,6 +62,7 @@ Not detectable via API analysis.
 
 ### Category
 
+- SDK
 - Windows Forms
 - Windows Presentation Framework (WPF)
 

@@ -61,10 +61,10 @@ The preceding *Dockerfile* steps include:
 - Setting the `build` alias from the `mcr.microsoft.com/dotnet/sdk:6.0` image.
 - Changing the working directory to */src*.
 - Copying the contents and publishing the .NET app:
-  - The app is published using the [`dotnet publish`](../core/tools/dotnet-publish.md) command.
+  - The app is published using the [`dotnet publish`](../tools/dotnet-publish.md) command.
 - Relayering the .NET SDK image from `mcr.microsoft.com/dotnet/runtime:6.0` (the `base` alias).
 - Copying the published build output from the */publish*.
-- Defining the entry point, which delegates to [`dotnet App.BackgroundService.dll`](../core/tools/dotnet.md).
+- Defining the entry point, which delegates to [`dotnet App.BackgroundService.dll`](../tools/dotnet.md).
 
 > [!TIP]
 > The MCR in `mcr.microsoft.com` stands for "Microsoft Container Registry", and is Microsoft's syndicated container catalog from the official Docker hub. For more information, see [Microsoft syndicates container catalog](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/).

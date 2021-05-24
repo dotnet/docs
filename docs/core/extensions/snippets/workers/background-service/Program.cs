@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace App.WorkerService
+namespace App.BackgroundService
 {
     public class Program
     {

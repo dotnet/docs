@@ -15,13 +15,12 @@ namespace IterationStatements
             // <TypicalExample>
             for (int i = 0; i < 3; i++)
             {
-                Console.WriteLine(i);
+                Console.Write(i);
             }
             // Output:
-            // 0
-            // 1
-            // 2
+            // 012
             // </TypicalExample>
+            Console.WriteLine();
         }
 
         private static void MultipleExpressions()

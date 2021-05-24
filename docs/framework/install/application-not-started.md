@@ -9,11 +9,15 @@ Applications that are developed for .NET Framework typically require that a spec
 
 ![This application could not be started](media/application-not-started/app-could-not-be-started.png)
 
+## Error causes
+
 This error typically indicates one of the following conditions:
 
 - A .NET Framework installation on your system has become corrupted.
 
 - The version of .NET Framework needed by your application cannot be detected.
+
+## How to fix the error
 
 To address this issue so that you can run your application, do the following:
 

@@ -44,6 +44,8 @@ To access the model from different threads, you must implement your own synchron
 ```csharp
 KeyVaultSecret newSecret = client.SetSecret("secret", "value");
 
+// Code omitted for brevity
+
 foreach (var tag in tags)
 {
     Task.Run(() =>

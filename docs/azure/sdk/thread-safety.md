@@ -77,7 +77,7 @@ public void ConfigureServices(IServiceCollection services)
 
 For more information about implementing DI with the Azure SDK, see [Dependency injection with the Azure .NET SDK](./dependency-injection.md).
 
-Alternatively, you may also create an SDK client instance and pass it as a parameter to methods that require a client. The point is to avoid unnecessary instantiations of the same SDK client object with the same parameters, as it's unnecessary and wasteful.
+Alternatively, you may create an SDK client instance and provide it to methods that require a client. The point is to avoid unnecessary instantiations of the same SDK client object with the same parameters. It's both unnecessary and wasteful.
 
 ## Clients aren't disposable
 

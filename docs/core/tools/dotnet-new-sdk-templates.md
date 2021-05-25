@@ -12,7 +12,7 @@ When you install the [.NET SDK](https://dotnet.microsoft.com/download), you rece
 dotnet new --list
 ```
 
-  The following table shows the templates that come pre-installed with the .NET SDK. The default language for the template is shown inside the brackets. Click on the short name link to see the specific template options.
+The following table shows the templates that come pre-installed with the .NET SDK. The default language for the template is shown inside the brackets. Click on the short name link to see the specific template options.
 
 | Templates                                    | Short name                        | Language     | Tags                                  | Introduced |
 |----------------------------------------------|-----------------------------------|--------------|---------------------------------------|------------|
@@ -56,7 +56,7 @@ dotnet new --list
 
 Each template may have additional options available. The core templates have the following additional options:
 
-### `console`
+## `console`
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -82,7 +82,7 @@ Each template may have additional options available. The core templates have the
 
 ***
 
-### `classlib`
+## `classlib`
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -100,7 +100,7 @@ Each template may have additional options available. The core templates have the
 
 ***
 
-### <a name="wpf"></a> `wpf`, `wpflib`, `wpfcustomcontrollib`, `wpfusercontrollib`
+## <a name="wpf"></a> `wpf`, `wpflib`, `wpfcustomcontrollib`, `wpfusercontrollib`
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -118,7 +118,7 @@ Each template may have additional options available. The core templates have the
 
 ***
 
-### <a name="winforms"></a> `winforms`, `winformslib`
+## <a name="winforms"></a> `winforms`, `winformslib`
 
 - **`--langVersion <VERSION_NUMBER>`**
 
@@ -132,7 +132,7 @@ Each template may have additional options available. The core templates have the
 
 ***
 
-### <a name="web-others"></a> `worker`, `grpc`
+## <a name="web-others"></a> `worker`, `grpc`
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -148,7 +148,7 @@ Each template may have additional options available. The core templates have the
 
 ***
 
-### <a name="test"></a> `mstest`, `xunit`
+## <a name="test"></a> `mstest`, `xunit`
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -172,7 +172,7 @@ Each template may have additional options available. The core templates have the
 
 ***
 
-### `nunit`
+## `nunit`
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -198,7 +198,7 @@ Each template may have additional options available. The core templates have the
 
 ***
 
-### `page`
+## `page`
 
 - **`-na|--namespace <NAMESPACE_NAME>`**
 
@@ -210,7 +210,7 @@ Each template may have additional options available. The core templates have the
 
 ***
 
-### <a name="namespace"></a> `viewimports`, `proto`
+## <a name="namespace"></a> `viewimports`, `proto`
 
 - **`-na|--namespace <NAMESPACE_NAME>`**
 
@@ -218,7 +218,7 @@ Each template may have additional options available. The core templates have the
 
 ***
 
-### `blazorserver`
+## `blazorserver`
 
 - **`-au|--auth <AUTHENTICATION_TYPE>`**
 
@@ -289,7 +289,7 @@ Each template may have additional options available. The core templates have the
 
 ***
 
-### `blazorwasm`
+## `blazorwasm`
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -393,7 +393,7 @@ Each template may have additional options available. The core templates have the
 
 ***
 
-### `web`
+## `web`
 
 - **`--exclude-launch-settings`**
 
@@ -422,7 +422,7 @@ Each template may have additional options available. The core templates have the
 
 ***
 
-### <a name="web-options"></a> `mvc`, `webapp`
+## <a name="web-options"></a> `mvc`, `webapp`
 
 - **`-au|--auth <AUTHENTICATION_TYPE>`**
 
@@ -513,7 +513,7 @@ Each template may have additional options available. The core templates have the
 
 ***
 
-### <a name="spa"></a> `angular`, `react`
+## <a name="spa"></a> `angular`, `react`
 
 - **`-au|--auth <AUTHENTICATION_TYPE>`**
 
@@ -555,7 +555,7 @@ Each template may have additional options available. The core templates have the
 
 ***
 
-### `reactredux`
+## `reactredux`
 
 - **`--exclude-launch-settings`**
 
@@ -584,7 +584,7 @@ Each template may have additional options available. The core templates have the
 
 ***
 
-### `razorclasslib`
+## `razorclasslib`
 
 - **`--no-restore`**
 
@@ -596,7 +596,7 @@ Each template may have additional options available. The core templates have the
 
 ***
   
-### `webapi`
+## `webapi`
 
 - **`-au|--auth <AUTHENTICATION_TYPE>`**
 
@@ -666,7 +666,7 @@ Each template may have additional options available. The core templates have the
 
 ***
 
-### `globaljson`
+## `globaljson`
 
 - **`--sdk-version <VERSION_NUMBER>`**
 

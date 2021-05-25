@@ -94,7 +94,7 @@ var blobClient = new BlobClient(new Uri(sasUri));
 var blobClient2 = new BlobClient(new Uri(sasUri2));
 ```
 
-It is possible to provide a custom instance of `HttpClient` to an Azure SDK client object.  In this case, then you become responsible for managing the `HttpClient` lifetime and properly disposing of it at the right time.  
+It's possible to provide a custom instance of `HttpClient` to an Azure SDK client object. In this case, you become responsible for managing the `HttpClient` lifetime and properly disposing of it at the right time.
 
 ```csharp
 var httpClient = new HttpClient();

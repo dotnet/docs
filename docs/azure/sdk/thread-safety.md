@@ -39,7 +39,7 @@ client.UpdateSecretProperties(newSecret.Properties);
 
 ```
 
-If you need to access the model from different threads, you must implement your own synchronization code.
+To access the model from different threads, you must implement your own synchronization code. For example:
 
 ```csharp
 KeyVaultSecret newSecret = client.SetSecret("secret", "value");

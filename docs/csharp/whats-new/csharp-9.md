@@ -191,7 +191,7 @@ One of the most common uses for this feature is creating teaching materials. Beg
 
 Most importantly, top-level statements don't limit your application's scope or complexity. Those statements can access or use any .NET class. They also don't limit your use of command-line arguments or return values. Top-level statements can access an array of strings named `args`. If the top-level statements return an integer value, that value becomes the integer return code from a synthesized `Main` method. The top-level statements may contain async expressions. In that case, the synthesized entry point returns a `Task`, or `Task<int>`.
 
-For more information, see [Top-level statements](../programming-guide/main-and-command-args/top-level-statements.md) in the C# Programming Guide.
+For more information, see [Top-level statements](../fundamentals/program-structure/top-level-statements.md) in the C# Programming Guide.
 
 ## Pattern matching enhancements
 
@@ -265,7 +265,7 @@ Starting in C# 9.0, you can add the `static` modifier to [lambda expressions](..
 
 Covariant return types provide flexibility for the return types of [override](../language-reference/keywords/override.md) methods. An override method can return a type derived from the return type of the overridden base method. This can be useful for records and for other types that support virtual clone or factory methods.
 
-In addition, the [`foreach` loop](../language-reference/keywords/foreach-in.md) will recognize and use an extension method `GetEnumerator` that otherwise satisfies the `foreach` pattern. This change means `foreach` is consistent with other pattern-based constructions such as the async pattern, and pattern-based deconstruction. In practice, this change means you can add `foreach` support to any type. You should limit its use to when enumerating an object makes sense in your design.
+In addition, the [`foreach` loop](../language-reference/statements/iteration-statements.md#the-foreach-statement) will recognize and use an extension method `GetEnumerator` that otherwise satisfies the `foreach` pattern. This change means `foreach` is consistent with other pattern-based constructions such as the async pattern, and pattern-based deconstruction. In practice, this change means you can add `foreach` support to any type. You should limit its use to when enumerating an object makes sense in your design.
 
 Next, you can use discards as parameters to lambda expressions. This convenience enables you to avoid naming the argument, and the compiler may avoid using it. You use the `_` for any argument. For more information, see the [Input parameters of a lambda expression](../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) section of the [Lambda expressions](../language-reference/operators/lambda-expressions.md) article.
 

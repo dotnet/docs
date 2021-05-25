@@ -1,6 +1,6 @@
 ---
 title: "Lambda expressions - C# reference"
-description: Learn about lambda expressions. There are expression lambdas that have an expression as its body, or statement lambdas that have a statement block as its body.
+description: Learn about C# lambda expressions that are used to create anonymous functions.
 ms.date: 09/25/2020
 helpviewer_keywords: 
   - "lambda expressions [C#]"
@@ -86,7 +86,7 @@ Sometimes the compiler can't infer the types of input parameters. You can specif
 
 Input parameter types must be all explicit or all implicit; otherwise, a [CS0748](../../misc/cs0748.md) compiler error occurs.
 
-Beginning with C# 9.0, you can use [discards](../../discards.md) to specify two or more input parameters of a lambda expression that aren't used in the expression:
+Beginning with C# 9.0, you can use [discards](../../fundamentals/functional/discards.md) to specify two or more input parameters of a lambda expression that aren't used in the expression:
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetDiscards":::
 

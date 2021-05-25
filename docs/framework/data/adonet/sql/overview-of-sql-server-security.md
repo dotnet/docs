@@ -14,7 +14,7 @@ A defense-in-depth strategy, with overlapping layers of security, is the best wa
   
 - Authorization is the process of determining which securable resources a principal can access, and which operations are allowed for those resources.  
   
- The topics in this section cover SQL Server security fundamentals, providing links to the complete documentation in the relevant version of SQL Server Books Online.  
+ The topics in this section cover SQL Server security fundamentals, providing links to the complete documentation in the SQL Server docs.
   
 ## In This Section  
 

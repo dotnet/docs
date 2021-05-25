@@ -15,7 +15,7 @@ The `#Disable` and `#Enable` directives are Visual Basic source code compiler di
     Dim variable1    'warning BC42024: Unused local variable: 'variable1'.
 #Disable Warning
     Dim variable2    'no warning
-#Enable Warning 
+#Enable Warning
     Dim variable3    'warning BC42024: Unused local variable: 'variable3'.
 ```
 

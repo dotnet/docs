@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: c5fc123d-af10-4a2f-b8e4-db921efb2639
+ms.topic: how-to
 ---
 
 # Refactor using an extension method (LINQ to XML)

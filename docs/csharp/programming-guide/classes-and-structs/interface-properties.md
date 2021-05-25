@@ -36,8 +36,6 @@ implements the `Name` property on the `ICitizen` interface.
 [!code-csharp[Example](~/samples/snippets/csharp/interfaces/properties.cs#PropertyExample)]
 [!code-csharp[Example](~/samples/snippets/csharp/interfaces/properties.cs#UseProperty)]
 
-**`210 Hazem Abolrous`**
-
 ## Sample output
 
 ```console
@@ -55,4 +53,4 @@ Employee name: Hazem Abolrous
 - [Using Properties](./using-properties.md)
 - [Comparison Between Properties and Indexers](../indexers/comparison-between-properties-and-indexers.md)
 - [Indexers](../indexers/index.md)
-- [Interfaces](../interfaces/index.md)
+- [Interfaces](../../fundamentals/types/interfaces.md)

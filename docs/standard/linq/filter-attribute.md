@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 208d6256-1bd7-4237-b2c9-909f26dfd0e2
+ms.topic: how-to
 ---
 
 # How to filter on an attribute (LINQ to XML)

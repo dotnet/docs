@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "serializing objects"
   - "serialization"
   - "objects, serializing"
+ms.topic: how-to
 ---
 
 # How to migrate from Newtonsoft.Json to System.Text.Json
@@ -23,7 +24,9 @@ The `System.Text.Json` namespace provides functionality for serializing to and d
 * .NET Framework 4.7.2 and later versions
 * .NET Core 2.0, 2.1, and 2.2
 
-`System.Text.Json` focuses primarily on performance, security, and standards compliance. It has some key differences in default behavior and doesn't aim to have feature parity with `Newtonsoft.Json`. For some scenarios, `System.Text.Json` has no built-in functionality, but there are recommended workarounds. For other scenarios, workarounds are impractical. If your application depends on a missing feature, consider [filing an issue](https://github.com/dotnet/runtime/issues/new) to find out if support for your scenario can be added.
+`System.Text.Json` focuses primarily on performance, security, and standards compliance. It has some key differences in default behavior and doesn't aim to have feature parity with `Newtonsoft.Json`. For some scenarios, `System.Text.Json` currently has no built-in functionality, but there are recommended workarounds. For other scenarios, workarounds are impractical.
+
+We're investing in adding the features that have most often been requested. If your application depends on a missing feature, consider [filing an issue](https://github.com/dotnet/runtime/issues/new) in the dotnet/runtime GitHub repository to find out if support for your scenario can be added. See [epic issue #43620](https://github.com/dotnet/runtime/issues/43620) to find out what is already planned.
 
 Most of this article is about how to use the <xref:System.Text.Json.JsonSerializer> API, but it also includes guidance on how to use the <xref:System.Text.Json.JsonDocument> (which represents the Document Object Model or DOM), <xref:System.Text.Json.Utf8JsonReader>, and <xref:System.Text.Json.Utf8JsonWriter> types.
 
@@ -44,7 +47,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Case-insensitive deserialization by default           | ✔️ [PropertyNameCaseInsensitive global setting](#case-insensitive-deserialization) |
 | Camel-case property names                             | ✔️ [PropertyNamingPolicy global setting](system-text-json-customize-properties.md#use-camel-case-for-all-json-property-names) |
 | Minimal character escaping                            | ✔️ [Strict character escaping, configurable](#minimal-character-escaping) |
-| `NullValueHandling.Ignore` global setting             | ✔️ [DefaultIgnoreCondition global option](system-text-json-ignore-properties.md#ignore-all-null-value-properties) |[Conditionally ignore a property](#conditionally-ignore-a-property)
+| `NullValueHandling.Ignore` global setting             | ✔️ [DefaultIgnoreCondition global option](system-text-json-ignore-properties.md#ignore-all-null-value-properties) |
 | Allow comments                                        | ✔️ [ReadCommentHandling global setting](#comments) |
 | Allow trailing commas                                 | ✔️ [AllowTrailingCommas global setting](#trailing-commas) |
 | Custom converter registration                         | ✔️ [Order of precedence differs](#converter-registration-precedence) |
@@ -543,7 +546,7 @@ The required properties converter would require additional logic if you need to 
 * The `DateTimeZoneHandling` setting can be used to serialize all `DateTime` values as UTC dates.
 * The `DateFormatString` setting and `DateTime` converters can be used to customize the format of date strings.
 
-<xref:System.Text.Json> supports ISO 8601-1:2019, including the RFC 3339 profile. This format is widely adopted, unambiguous, and makes round trips precisely. To use any other format, create a custom converter. For example, the following converters serialize and deserialize JSON that uses Unix epoch format with or without time zone (values such as `/Date(1590863400000-0700)/` or `/Date(1590863400000)/`):
+<xref:System.Text.Json> supports ISO 8601-1:2019, including the RFC 3339 profile. This format is widely adopted, unambiguous, and makes round trips precisely. To use any other format, create a custom converter. For example, the following converters serialize and deserialize JSON that uses Unix epoch format with or without a time zone offset (values such as `/Date(1590863400000-0700)/` or `/Date(1590863400000)/`):
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
 
@@ -667,7 +670,7 @@ Searches for JSON tokens using `JObject` or `JArray` from `Newtonsoft.Json` tend
 * Use the built-in enumerators (<xref:System.Text.Json.JsonElement.EnumerateArray%2A> and <xref:System.Text.Json.JsonElement.EnumerateObject%2A>) rather than doing your own indexing or loops.
 * Don't do a sequential search on the whole `JsonDocument` through every property by using `RootElement`. Instead, search on nested JSON objects based on the known structure of the JSON data. For example, if you're looking for a `Grade` property in `Student` objects, loop through the `Student` objects and get the value of `Grade` for each, rather than searching through all `JsonElement` objects looking for `Grade` properties. Doing the latter will result in unnecessary passes over the same data.
 
-For a code example, see [Use JsonDocument for access to data](write-custom-serializer-deserializer.md#use-jsondocument-for-access-to-data).
+For a code example, see [Use JsonDocument for access to data](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-jsondocument-for-access-to-data).
 
 ## Utf8JsonReader compared to JsonTextReader
 
@@ -681,7 +684,7 @@ Because the `Utf8JsonReader` type is a *ref struct*, it has [certain limitations
 
 ### Read UTF-8 text
 
-To achieve the best possible performance while using the `Utf8JsonReader`, read JSON payloads already encoded as UTF-8 text rather than as UTF-16 strings. For a code example, see [Filter data using Utf8JsonReader](write-custom-serializer-deserializer.md#filter-data-using-utf8jsonreader).
+To achieve the best possible performance while using the `Utf8JsonReader`, read JSON payloads already encoded as UTF-8 text rather than as UTF-16 strings. For a code example, see [Filter data using Utf8JsonReader](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#filter-data-using-utf8jsonreader).
 
 ### Read with a Stream or PipeReader
 
@@ -691,7 +694,7 @@ For synchronous reading, you could read the JSON payload until the end of the st
 
 Since the `Utf8JsonReader` considers the input to be JSON text, a UTF-8 byte order mark (BOM) is considered invalid JSON. The caller needs to filter that out before passing the data to the reader.
 
-For code examples, see [Use Utf8JsonReader](write-custom-serializer-deserializer.md#use-utf8jsonreader).
+For code examples, see [Use Utf8JsonReader](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-utf8jsonreader).
 
 ### Read with multi-segment ReadOnlySequence
 
@@ -836,7 +839,7 @@ The decision to exclude `TypeNameHandling.All`-equivalent functionality from `Sy
 * [Immutable types and non-public accessors](system-text-json-immutability.md)
 * [Polymorphic serialization](system-text-json-polymorphism.md)
 * [Customize character encoding](system-text-json-character-encoding.md)
-* [Write custom serializers and deserializers](write-custom-serializer-deserializer.md)
+* [Use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

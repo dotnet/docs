@@ -5,6 +5,7 @@ author: mamccrea
 ms.author: mamccrea
 ms.date: 10/09/2020
 ms.topic: tutorial
+recommendations: false
 ---
 
 # Tutorial: Structured Streaming with .NET for Apache Spark

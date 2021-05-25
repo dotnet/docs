@@ -1,6 +1,7 @@
 ---
 title: "How to populate object collections from multiple sources (LINQ) (C#)"
 description: Learn how to merge data from different sources into a sequence of new types by using LINQ in C#. These examples use both anonymous and named types.
+ms.topic: how-to
 ms.date: 06/12/2018
 ms.assetid: 8ad7d480-b46c-4ccc-8c57-76f2d04ccc6d
 ---
@@ -138,4 +139,4 @@ foreach (var student in queryNamesScores2)
 
 - [LINQ and Strings (C#)](./linq-and-strings.md)
 - [Object and Collection Initializers](../../classes-and-structs/object-and-collection-initializers.md)
-- [Anonymous Types](../../classes-and-structs/anonymous-types.md)
+- [Anonymous Types](../../../fundamentals/types/anonymous-types.md)

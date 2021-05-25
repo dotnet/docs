@@ -58,7 +58,8 @@ items:
 
     You can assign different values to any variable you declare. You can change
     the name to one of your friends. Add these two lines in the interactive window
-    following the code you've already added:
+    following the code you've already added.  Make sure you keep the declaration
+    of the `aFriend` variable and its initial assignment.
 
     ```csharp
     aFriend = "Maira";

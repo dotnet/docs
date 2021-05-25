@@ -9,7 +9,7 @@ dev_langs:
 helpviewer_keywords:
   - "assemblies [.NET], attributes"
   - "attributes [.NET], applying"
-ms.assetid: dd7604eb-9fa3-4b60-b2dd-b47739fa3148
+ms.topic: how-to
 ---
 # Apply attributes
 

@@ -2,6 +2,7 @@
 title: "How to write to a text file - C# Programming Guide"
 description: Learn how to write a text file with C#. See several code examples and view additional available resources.
 ms.date: 02/11/2021
+ms.topic: how-to
 f1_keywords:
   - "TextWriter.WriteLine"
   - "StreamWriter.Close"
@@ -9,7 +10,6 @@ helpviewer_keywords:
   - "files [C#], text files"
   - "text, writing to files [C#]"
 ms.assetid: 2e99f184-d88b-4719-a7f1-d9ec482aa809
-ms.topic: how-to
 ms.custom: contperf-fy21q3
 ---
 

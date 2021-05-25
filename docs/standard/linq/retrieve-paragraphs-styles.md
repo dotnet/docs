@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: c2f767f8-57b1-4b4b-af04-89ffb1f7067d
+ms.topic: how-to
 ---
 
 # Retrieve the paragraphs and their styles (LINQ to XML)

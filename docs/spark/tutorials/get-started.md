@@ -6,6 +6,7 @@ ms.topic: tutorial
 ms.custom: mvc
 ms.author: luquinta
 author: luisquintanilla
+recommendations: false
 # Customer intent: As a developer, I want to write a simple custom application using .NET for Apache Spark.
 ---
 

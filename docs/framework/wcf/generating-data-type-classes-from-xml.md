@@ -2,7 +2,7 @@
 description: "Learn more about: Generating Data Type Classes from XML"
 title: "Generating Data Type Classes from XML"
 ms.date: "03/30/2017"
-ms.assetid: e4e5e4e8-527f-44d1-92fa-8904a08784ea
+ms.topic: how-to
 ---
 # Generating Data Type Classes from XML
 

@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "control patterns, getting"
   - "UI Automation, getting control patterns"
   - "getting, control patterns"
-ms.assetid: 006c54c9-50bf-48d9-a855-9d62eb95603a
+ms.topic: how-to
 ---
 # Get Supported UI Automation Control Patterns
 

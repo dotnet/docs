@@ -1,5 +1,5 @@
 ---
-description: "C# Compiler Options for errors and warnings. These options surpress or enable warnings, and control warnings as errors."
+description: "C# Compiler Options for errors and warnings. These options suppress or enable warnings, and control warnings as errors."
 title: "C# Compiler Options - errors and warnings"
 ms.date: 03/12/2021
 f1_keywords: 
@@ -108,7 +108,7 @@ Where `MyConfiguration.ruleset` is the path to the ruleset file. For more inform
 Specify a file to log all compiler and analyzer diagnostics.
 
 ```xml
-<ErrorLog>MyConfiguration.ruleset</ErrorLog>
+<ErrorLog>compiler-diagnostics.sarif</ErrorLog>
 ```
 
 The **ErrorLog** option causes the compiler to output a [Static Analysis Results Interchange Format (SARIF) log](https://github.com/microsoft/sarif-tutorials/blob/main/docs/1-Introduction.md#:~:text=What%20is%20SARIF%3F,for%20use%20by%20simpler%20tools). SARIF logs are typically read by tools that analyze the results from compiler and analyzer diagnostics.

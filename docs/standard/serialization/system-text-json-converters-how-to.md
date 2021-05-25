@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "serialization"
   - "objects, serializing"
   - "converters"
+ms.topic: how-to
 ---
 
 # How to write custom converters for JSON serialization (marshalling) in .NET
@@ -457,7 +458,7 @@ If you need to make a converter that modifies the behavior of an existing built-
 * [Polymorphic serialization](system-text-json-polymorphism.md)
 * [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
 * [Customize character encoding](system-text-json-character-encoding.md)
-* [Write custom serializers and deserializers](write-custom-serializer-deserializer.md)
+* [Use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

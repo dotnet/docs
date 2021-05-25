@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "assemblies [.NET], strong-named"
   - "strong-named assemblies, loading into trusted application domains"
   - "assembly binding, strong-named"
-ms.assetid: ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9
+ms.topic: how-to
 ---
 # Create and use strong-named assemblies
 

@@ -903,7 +903,7 @@ if
         aVeryLongparameterNameTwo
         aVeryLongparameterNameThree
         """
-Multiline 
+Multiline
     string
         """
 then
@@ -922,7 +922,7 @@ let condition () =
         aVeryLongparameterNameTwo
         aVeryLongparameterNameThree
         """
-Multiline 
+Multiline
     string
         """
 
@@ -1009,9 +1009,9 @@ Always add a `|` for each clause, even when only having a single clause.
 try
     persistState currentState
 with
-| ex -> 
+| ex ->
     printfn "Something went wrong: %A" ex
-    
+
 // Not OK
 try
     persistState currentState

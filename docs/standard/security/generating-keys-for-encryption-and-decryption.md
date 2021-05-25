@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "symmetric keys"
   - "asymmetric keys [.NET]"
   - "cryptography [.NET], keys"
-ms.assetid: c197dfc9-a453-4226-898d-37a16638056e
+ms.topic: how-to
 ---
 # Generating Keys for Encryption and Decryption
 

@@ -30,7 +30,7 @@ In this tutorial, you learn how to:
 
 ## Create queuing services
 
-You may be familiar with the <xref:System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task})> <xref:System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem> functionality from the `System.Web.Hosting` namespace. To model a service that is inspired by this functionality, start by adding an `IBackgroundTaskQueue` interface to the project:
+You may be familiar with the <xref:System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task})> functionality from the `System.Web.Hosting` namespace. To model a service that is inspired by this functionality, start by adding an `IBackgroundTaskQueue` interface to the project:
 
 :::code source="snippets/workers/queue-service/IBackgroundTaskQueue.cs":::
 

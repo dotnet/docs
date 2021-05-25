@@ -1,5 +1,5 @@
 ---
-title: Create a Queue Service in .NET
+title: Create a Queue Service
 description: Learn how to create a queue service subclass of BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
@@ -7,7 +7,7 @@ ms.date: 05/25/2021
 ms.topic: tutorial
 ---
 
-# Create a Queue Service in .NET
+# Create a Queue Service
 
 A queue service is a great example of a long-running service, where work items can be queued and worked on sequentially as previous work items are completed. Relying on the Worker Service template, you'll build out new functionality on top of the <xref:Microsoft.Extensions.Hosting.BackgroundService>.
 
@@ -28,7 +28,7 @@ In this tutorial, you learn how to:
 <!-- ## Create a new project -->
 [!INCLUDE [file-new-worker](includes/file-new-worker.md)]
 
-## Create queue service
+## Create queuing services
 
 You may be familiar with the <xref:System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task})> <xref:System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem> functionality from the `System.Web.Hosting` namespace. To model a service that is inspired by this functionality, start by adding an `IBackgroundTaskQueue` interface to the project:
 
@@ -40,11 +40,15 @@ There are two methods, one which exposes queuing functionality and the other tha
 
 The preceding implementation relies on a <xref:System.Threading.Channels.Channel%601> as a queue. The <xref:System.Threading.Channels.BoundedChannelOptions.%23ctor(System.Int32)> is called with an explicit capacity. Capacity should be set based on the expected application load and number of concurrent threads accessing the queue. <xref:System.Threading.Channels.BoundedChannelFullMode.Wait?displayProperty=nameWithType> will cause calls to <xref:System.Threading.Channels.ChannelWriter%601.WriteAsync%2A?displayProperty=nameWithType> to return a task, which completes only when space became available. This leads to backpressure, in case too many publishers/calls start accumulating.
 
+## Rewrite the Worker class
+
 In the following `QueueHostedService` example:
 
 - The `ProcessTaskQueueAsync` method returns a <xref:System.Threading.Tasks.Task>, which is awaited in `ExecuteAsync`.
 - Background tasks in the queue are dequeued and executed in `BackgroundProcessing`.
 - Work items are awaited before the service stops in `StopAsync`.
+
+Replace the existing `Worker` class with the following C# code, and rename the file to "QueueHostedService".
 
 :::code source="snippets/workers/queue-service/QueuedHostedService.cs" highlight="35-36,38":::
 
@@ -58,11 +62,11 @@ A `MonitorLoop` service handles enqueuing tasks for the hosted service whenever 
 
 :::code source="snippets/workers/queue-service/MonitorLoop.cs" highlight="11,16,41":::
 
-The services are registered in `IHostBuilder.ConfigureServices` (*Program.cs*). The hosted service is registered with the `AddHostedService` extension method:
+Replace the existing `Program` contents with the following C# code:
 
 :::code source="snippets/workers/queue-service/Program.cs" highlight="8-18":::
 
-`MonitorLoop` is started in *Program.cs* top-level statement:
+The services are registered in `IHostBuilder.ConfigureServices` (*Program.cs*). The hosted service is registered with the `AddHostedService` extension method. `MonitorLoop` is started in *Program.cs* top-level statement:
 
 :::code source="snippets/workers/queue-service/Program.cs" range="22-23":::
 
@@ -106,11 +110,7 @@ info: App.QueueService.QueuedHostedService[0]
 
 ## See also
 
-There are several related tutorials to consider:
-
-- <xref:Microsoft.Extensions.Hosting.BackgroundService> subclass tutorials:
-  - Queue Service
-  - Scoped Service
-  - Windows Service
-- Custom <xref:Microsoft.Extensions.Hosting.IHostedService> implementation:
-  - Timer Service
+- [Worker Services in .NET](workers.md)
+- [Use scoped services within a `BackgroundService`](scoped-service.md)
+- [Create a Windows Service using `BackgroundService`](windows-service.md)
+- [Implement the `IHostedService` interface](timer-service.md)

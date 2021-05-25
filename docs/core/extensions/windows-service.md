@@ -1,5 +1,5 @@
 ---
-title: Create a Windows Service using BackgroundService in .NET
+title: Create a Windows Service using BackgroundService
 description: Learn how to create a Windows Service using the BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
@@ -7,7 +7,7 @@ ms.date: 05/25/2021
 ms.topic: tutorial
 ---
 
-# Create a Windows Service using `BackgroundService` in .NET
+# Create a Windows Service using `BackgroundService`
 
 In this tutorial, you learn how to:
 
@@ -42,11 +42,7 @@ dotnet add package Microsoft.Extensions.Hosting.WindowsServices
 
 ## See also
 
-There are several related tutorials to consider:
-
-- <xref:Microsoft.Extensions.Hosting.BackgroundService> subclass tutorials:
-  - Queue Service
-  - Scoped Service
-  - Windows Service
-- Custom <xref:Microsoft.Extensions.Hosting.IHostedService> implementation:
-  - Timer Service
+- [Worker Services in .NET](workers.md)
+- [Create a Queue Service](queue-service.md)
+- [Use scoped services within a `BackgroundService`](scoped-service.md)
+- [Implement the `IHostedService` interface](timer-service.md)

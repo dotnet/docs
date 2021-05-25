@@ -67,7 +67,8 @@ public void ConfigureServices(IServiceCollection services)
 {
     services.AddControllersWithViews();
 
-    var blobServiceClient = new BlobServiceClient(new Uri("<secrets_endpoint>"), new DefaultAzureCredential());                   
+    var blobServiceClient = new BlobServiceClient(
+        new Uri("<secrets_endpoint>"), new DefaultAzureCredential());
     services.AddSingleton(blobServiceClient);
           
     // Code omitted for brevity

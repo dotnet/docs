@@ -14,7 +14,7 @@ The following example uses a query to create a collection of tasks. Each task do
 
 ## Create example application
 
-Create a new .NET Core console application. You can create one by using the [dotnet new console](../../../../core/tools/dotnet-new.md#console) command or from [Visual Studio](/visualstudio/install/install-visual-studio). Open the *Program.cs* file in your favorite code editor.
+Create a new .NET Core console application. You can create one by using the [dotnet new console](../../../../core/tools/dotnet-new-sdk-templates.md#console) command or from [Visual Studio](/visualstudio/install/install-visual-studio). Open the *Program.cs* file in your favorite code editor.
 
 ### Replace using statements
 

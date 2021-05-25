@@ -22,7 +22,7 @@ The "system under test" refers to the code that you're writing unit tests agains
 
 ### Create a class library
 
-From a command prompt in a new directory named `UnitTestingCodeCoverage`, create a new .NET standard class library using the [`dotnet new classlib`](../tools/dotnet-new.md#classlib) command:
+From a command prompt in a new directory named `UnitTestingCodeCoverage`, create a new .NET standard class library using the [`dotnet new classlib`](../tools/dotnet-new-sdk-templates.md#classlib) command:
 
 ```dotnetcli
 dotnet new classlib -n Numbers
@@ -60,7 +60,7 @@ namespace System.Numbers
 
 ### Create test projects
 
-Create two new **xUnit Test Project (.NET Core)** templates from the same command prompt using the [`dotnet new xunit`](../tools/dotnet-new.md#test) command:
+Create two new **xUnit Test Project (.NET Core)** templates from the same command prompt using the [`dotnet new xunit`](../tools/dotnet-new-sdk-templates.md#test) command:
 
 ```dotnetcli
 dotnet new xunit -n XUnit.Coverlet.Collector

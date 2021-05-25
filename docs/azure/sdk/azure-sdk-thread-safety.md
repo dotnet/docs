@@ -109,7 +109,7 @@ var blobClient2 = new BlobClient(new Uri(sasUri2), clientOptions);
 httpClient.Dispose();
 ```
 
-Further guidance for properly managing and disposing of `HttpClient` instances can be found in the [HttpClient documentation](../../../api/system.net.http.httpclient#remarks).
+Further guidance for properly managing and disposing of `HttpClient` instances can be found in the <xref:System.Net.Http.HttpClient> documentation.
 
 ## See also
 

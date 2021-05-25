@@ -3,7 +3,7 @@ title: Use scoped services within a BackgroundService in .NET
 description: Learn how to use scoped services within a BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/24/2021
+ms.date: 05/25/2021
 ms.topic: tutorial
 ---
 
@@ -23,7 +23,10 @@ In this tutorial, you learn how to:
 
 - The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
 - A .NET integrated development environment (IDE)
-  - Feel free to use the [Visual Studio IDE](https://visualstudio.microsoft.com)
+  - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
+
+<!-- ## Create a new project -->
+[!INCLUDE [file-new-worker](includes/file-new-worker.md)]
 
 ## Scoped service
 
@@ -47,6 +50,39 @@ In the preceding code, an explicit scope is created and the `IScopedProcessingSe
 The services are registered in `IHostBuilder.ConfigureServices` (*Program.cs*). The hosted service is registered with the `AddHostedService` extension method:
 
 :::code source="snippets/workers/scoped-service/Program.cs" highlight="8-9":::
+
+## Verify service functionality
+
+[!INCLUDE [run-app](includes/run-app.md)]
+
+Let the application run for a bit to generate several execution count increments. You will see output similar to the following:
+
+```Output
+info: App.ScopedService.ScopedBackgroundService[0]
+      ScopedBackgroundService is running.
+info: App.ScopedService.ScopedBackgroundService[0]
+      ScopedBackgroundService is working.
+info: App.ScopedService.DefaultScopedProcessingService[0]
+      DefaultScopedProcessingService working, execution count: 1
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: .\scoped-service
+info: App.ScopedService.DefaultScopedProcessingService[0]
+      DefaultScopedProcessingService working, execution count: 2
+info: App.ScopedService.DefaultScopedProcessingService[0]
+      DefaultScopedProcessingService working, execution count: 3
+info: App.ScopedService.DefaultScopedProcessingService[0]
+      DefaultScopedProcessingService working, execution count: 4
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: App.ScopedService.ScopedBackgroundService[0]
+      ScopedBackgroundService is stopping.
+```
+
+[!INCLUDE [stop-app](includes/stop-app.md)]
 
 ## See also
 

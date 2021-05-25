@@ -3,13 +3,13 @@ title: Create a Queue Service in .NET
 description: Learn how to create a queue service subclass of BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/24/2021
+ms.date: 05/25/2021
 ms.topic: tutorial
 ---
 
 # Create a Queue Service in .NET
 
-A queue service is a great example of a long-running service, where work items can be queued and worked on sequentially as previous work items are completed. Relying on the Worker Service template, you'll build out a bit more functionality on top of the <xref:Microsoft.Extensions.Hosting.BackgroundService>.
+A queue service is a great example of a long-running service, where work items can be queued and worked on sequentially as previous work items are completed. Relying on the Worker Service template, you'll build out new functionality on top of the <xref:Microsoft.Extensions.Hosting.BackgroundService>.
 
 In this tutorial, you learn how to:
 
@@ -23,23 +23,26 @@ In this tutorial, you learn how to:
 
 - The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
 - A .NET integrated development environment (IDE)
-  - Feel free to use the [Visual Studio IDE](https://visualstudio.microsoft.com)
+  - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
 
-## Queue service
+<!-- ## Create a new project -->
+[!INCLUDE [file-new-worker](includes/file-new-worker.md)]
 
-You may be familiar with the <xref:System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem> functionality from the `System.Web.Hosting` namespace. This service implementation is inspired by it, start be defining an `IBackgroundTaskQueue` interface:
+## Create queue service
+
+You may be familiar with the <xref:System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task})> <xref:System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem> functionality from the `System.Web.Hosting` namespace. To model a service that is inspired by this functionality, start by adding an `IBackgroundTaskQueue` interface to the project:
 
 :::code source="snippets/workers/queue-service/IBackgroundTaskQueue.cs":::
 
-There are two methods, one which exposing queuing functionality and the other that dequeues previously queued work items. A work item is `Func<CancellationToken, ValueTask>`.
+There are two methods, one which exposes queuing functionality and the other that dequeues previously queued work items. A *work item* is a `Func<CancellationToken, ValueTask>`. Next, add the default implementation to the project.
 
 :::code source="snippets/workers/queue-service/DefaultBackgroundTaskQueue.cs":::
 
-The preceding implementation relies on a <xref:System.Threading.Channels.Channel%601> as a queue.
+The preceding implementation relies on a <xref:System.Threading.Channels.Channel%601> as a queue. The <xref:System.Threading.Channels.BoundedChannelOptions.%23ctor(System.Int32)> is called with an explicit capacity. Capacity should be set based on the expected application load and number of concurrent threads accessing the queue. <xref:System.Threading.Channels.BoundedChannelFullMode.Wait?displayProperty=nameWithType> will cause calls to <xref:System.Threading.Channels.ChannelWriter%601.WriteAsync%2A?displayProperty=nameWithType> to return a task, which completes only when space became available. This leads to backpressure, in case too many publishers/calls start accumulating.
 
 In the following `QueueHostedService` example:
 
-- The `BackgroundProcessing` method returns a `Task`, which is awaited in `ExecuteAsync`.
+- The `ProcessTaskQueueAsync` method returns a <xref:System.Threading.Tasks.Task>, which is awaited in `ExecuteAsync`.
 - Background tasks in the queue are dequeued and executed in `BackgroundProcessing`.
 - Work items are awaited before the service stops in `StopAsync`.
 
@@ -62,6 +65,44 @@ The services are registered in `IHostBuilder.ConfigureServices` (*Program.cs*). 
 `MonitorLoop` is started in *Program.cs* top-level statement:
 
 :::code source="snippets/workers/queue-service/Program.cs" range="22-23":::
+
+## Verify service functionality
+
+[!INCLUDE [run-app](includes/run-app.md)]
+
+When prompted enter the `w` (or `W`) at least once to queue an emulated work item. You will see output similar to the following:
+
+```Output
+info: App.QueueService.MonitorLoop[0]
+      MonitorAsync loop is starting.
+info: App.QueueService.QueuedHostedService[0]
+      QueuedHostedService is running.
+
+      Tap W to add a work item to the background queue.
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: .\queue-service
+winfo: App.QueueService.MonitorLoop[0]
+      Queued work item 8453f845-ea4a-4bcb-b26e-c76c0d89303e is starting.
+info: App.QueueService.MonitorLoop[0]
+      Queued work item 8453f845-ea4a-4bcb-b26e-c76c0d89303e is running. 1/3
+info: App.QueueService.MonitorLoop[0]
+      Queued work item 8453f845-ea4a-4bcb-b26e-c76c0d89303e is running. 2/3
+info: App.QueueService.MonitorLoop[0]
+      Queued work item 8453f845-ea4a-4bcb-b26e-c76c0d89303e is running. 3/3
+info: App.QueueService.MonitorLoop[0]
+      Queued Background Task 8453f845-ea4a-4bcb-b26e-c76c0d89303e is complete.
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: App.QueueService.QueuedHostedService[0]
+      QueuedHostedService is stopping.
+```
+
+[!INCLUDE [stop-app](includes/stop-app.md)]
 
 ## See also
 

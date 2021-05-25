@@ -16,14 +16,14 @@ namespace App.QueueService
             ILogger<QueuedHostedService> logger) =>
             (_taskQueue, _logger) = (taskQueue, logger);
 
-        protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+        protected override Task ExecuteAsync(CancellationToken stoppingToken)
         {
             _logger.LogInformation(
                 $"{nameof(QueuedHostedService)} is running.{Environment.NewLine}" +
                 $"{Environment.NewLine}Tap W to add a work item to the " +
                 $"background queue.{Environment.NewLine}");
 
-            await ProcessTaskQueueAsync(stoppingToken);
+            return ProcessTaskQueueAsync(stoppingToken);
         }
 
         private async Task ProcessTaskQueueAsync(CancellationToken stoppingToken)
@@ -36,6 +36,10 @@ namespace App.QueueService
                         await _taskQueue.DequeueAsync(stoppingToken);
 
                     await workItem(stoppingToken);
+                }
+                catch (OperationCanceledException)
+                {
+                    // Prevent throwing if stoppingToken was signaled
                 }
                 catch (Exception ex)
                 {

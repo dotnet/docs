@@ -3,7 +3,7 @@ title: Implement the IHostedService interface in .NET
 description: Learn how to implement a custom IHostedService interface with .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/24/2021
+ms.date: 05/25/2021
 ms.topic: tutorial
 ---
 
@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 
 - The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
 - A .NET integrated development environment (IDE)
-  - Feel free to use the [Visual Studio IDE](https://visualstudio.microsoft.com)
+  - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
 
 ## Timer service
 

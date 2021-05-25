@@ -3,7 +3,7 @@ title: Worker Services in .NET
 description: Learn how to implement a custom IHostedService and use existing implementations with .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/24/2021
+ms.date: 05/25/2021
 ms.topic: overview
 ---
 
@@ -25,7 +25,7 @@ There are many terms that are mistakenly used synonymously. In this section, the
 
 ## Worker Service template
 
-The Worker Service template is available to the .NET CLI, and Visual Studio. For more information, see [.NET CLI, `dotnet new worker` - template](/dotnet/core/tools/dotnet-new#web-others). The template is rather simple, consisting of two primary components.
+The Worker Service template is available to the .NET CLI, and Visual Studio. For more information, see [.NET CLI, `dotnet new worker` - template](/dotnet/core/tools/dotnet-new#web-others). The template is rather simple, consisting of a `Program` and `Worker` class.
 
 :::code language="csharp" source="snippets/workers/background-service/Program.cs":::
 
@@ -35,6 +35,25 @@ The preceding `Program` class:
 - Calls <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureServices%2A> to add the `Worker` class as a hosted service with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A>.
 - Builds an <xref:Microsoft.Extensions.Hosting.IHost> from the builder.
 - Calls `Run` on the `host` instance, which runs the app.
+
+The `Program` from the template can be rewritten using top-level statements, which simplifies it a lot:
+
+```csharp
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using App.WorkerService;
+
+using IHost host = Host.CreateDefaultBuilder(args)
+    .ConfigureServices((hostContext, services) =>
+    {
+        services.AddHostedService<Worker>();
+    })
+    .Build();
+
+await host.RunAsync();
+```
+
+As for the `Worker`, the template provides a simple implementation.
 
 :::code language="csharp" source="snippets/workers/background-service/Worker.cs":::
 
@@ -48,6 +67,8 @@ The Worker Service template relies on the following project file `Sdk`:
 <Project Sdk="Microsoft.NET.Sdk.Worker">
 ```
 
+For more information, see [.NET project SDKs](../project-sdk/overview.md).
+
 ### NuGet package
 
 An app based on the Worker Service template uses the `Microsoft.NET.Sdk.Worker` SDK and has an explicit package reference to the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) package.
@@ -60,24 +81,24 @@ With most modern .NET workloads, containers are a viable option. When creating a
 
 The preceding *Dockerfile* steps include:
 
-- Setting the base image from `mcr.microsoft.com/dotnet/runtime:6.0` as the alias `base`.
+- Setting the base image from `mcr.microsoft.com/dotnet/runtime:5.0` as the alias `base`.
 - Changing the working directory to */app*.
-- Setting the `build` alias from the `mcr.microsoft.com/dotnet/sdk:6.0` image.
+- Setting the `build` alias from the `mcr.microsoft.com/dotnet/sdk:5.0` image.
 - Changing the working directory to */src*.
 - Copying the contents and publishing the .NET app:
   - The app is published using the [`dotnet publish`](../tools/dotnet-publish.md) command.
-- Relayering the .NET SDK image from `mcr.microsoft.com/dotnet/runtime:6.0` (the `base` alias).
+- Relayering the .NET SDK image from `mcr.microsoft.com/dotnet/runtime:5.0` (the `base` alias).
 - Copying the published build output from the */publish*.
 - Defining the entry point, which delegates to [`dotnet App.BackgroundService.dll`](../tools/dotnet.md).
 
 > [!TIP]
-> The MCR in `mcr.microsoft.com` stands for "Microsoft Container Registry", and is Microsoft's syndicated container catalog from the official Docker hub. For more information, see [Microsoft syndicates container catalog](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/).
+> The MCR in `mcr.microsoft.com` stands for "Microsoft Container Registry", and is Microsoft's syndicated container catalog from the official Docker hub. The [Microsoft syndicates container catalog](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog) article contains additional details.
 
-For more information, see [Tutorial: Containerize a .NET app](../docker/build-container.md).
+For more information on Docker with .NET, see [Tutorial: Containerize a .NET app](../docker/build-container.md).
 
 ## Hosted Service extensibility
 
-The <xref:Microsoft.Extensions.Hosting.IHostedService> interface defines two methods, <xref:Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)?displayProperty=nameWithType> and <xref:Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>. These serve as lifecycle methods triggering start and stop respectively. The interface also serves as a generic-type parameter constraint on the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)> extension method, meaning only implementations are permitted. You're free to use the provided <xref:Microsoft.Extensions.Hosting.BackgroundService> with a subclass, or implement your own entirely.
+The <xref:Microsoft.Extensions.Hosting.IHostedService> interface defines two methods, <xref:Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)?displayProperty=nameWithType> and <xref:Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>. These serve as lifecycle methods - they're called during host start and stop events respectively. The interface also serves as a generic-type parameter constraint on the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)> extension method, meaning only implementations are permitted. You're free to use the provided <xref:Microsoft.Extensions.Hosting.BackgroundService> with a subclass, or implement your own entirely.
 
 ## See also
 

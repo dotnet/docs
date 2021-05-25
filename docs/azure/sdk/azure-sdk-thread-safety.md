@@ -81,7 +81,12 @@ Alternatively, you may also create the instance of an SDK client and pass it aro
 
 ## Clients are not disposable
 
-Two final questions that often come up are *"Do I need to dispose of Azure SDK client objects when I am finished using them?"* and *"Why aren't HTTP-based Azure SDK client objects  disposable?"*. Internally, all Azure SDK clients use a single shared `HttpClient` instance and do not create any other resources that need to be actively freed.  The shared `HttpClient` instance persists throughout the entire application lifetime.
+Two final questions that often come up are:
+
+* Do I need to dispose of Azure SDK client objects when I'm finished using them?
+* Why aren't HTTP-based Azure SDK client objects disposable?
+
+Internally, all Azure SDK clients use a single shared `HttpClient` instance. The clients don't create any other resources that need to be actively freed. The shared `HttpClient` instance persists throughout the entire application lifetime.
 
 ```csharp
 // Both clients reuse the shared HttpClient and don't need to be disposed

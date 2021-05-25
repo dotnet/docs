@@ -1,14 +1,14 @@
 ---
-title: Azure SDK Thread Safety
+title: Azure SDK thread safety
 description: This article discusses how Azure SDK client objects are designed to be thread safe and how this design impacts client lifetime management (client objects can be singletons) and why it is unnecessary to dispose of SDK client objects after using them.
-ms.date: 5/24/2021
+ms.date: 05/24/2021
 ms.author: pakrym
 author: pakrym
 ---
 
 # Thread safety and client lifetime management for Azure SDK objects
 
-This article is designed to help you understand thread safety issues when using the Azure SDK.  It also discusses how the design of the SDK impacts client lifetime management and why it is not necessary to dispose of Azure SDK client objects.
+This article is designed to help you understand thread safety issues when using the Azure SDK. It also discusses how the design of the SDK impacts client lifetime management and why it's unnecessary to dispose of Azure SDK client objects.
 
 ## Thread safety
 
@@ -77,11 +77,16 @@ public void ConfigureServices(IServiceCollection services)
 
 For more information about implementing dependency injection with the Azure SDK, refer to the article [Dependency injection with the Azure .NET SDK](./dependency-injection.md).
 
-Alternatively, you may also create the instance of an SDK client and pass it around as a parameter to methods in need of a client.  The point is, avoid unnecessary instantiations of the same SDK client object with the same parameters as it is unnecessary and wasteful.
+Alternatively, you may also create the instance of an SDK client and pass it around as a parameter to methods in need of a client. The point is, avoid unnecessary instantiations of the same SDK client object with the same parameters as it's unnecessary and wasteful.
 
 ## Clients are not disposable
 
-Two final questions that often come up are *"Do I need to dispose of Azure SDK client objects when I am finished using them?"* and *"Why aren't HTTP-based Azure SDK client objects  disposable?"*. Internally, all Azure SDK clients use a single shared `HttpClient` instance and do not create any other resources that need to be actively freed.  The shared `HttpClient` instance persists throughout the entire application lifetime.
+Two final questions that often come up are:
+
+* Do I need to dispose of Azure SDK client objects when I'm finished using them?
+* Why aren't HTTP-based Azure SDK client objects disposable?
+
+Internally, all Azure SDK clients use a single shared `HttpClient` instance. The clients don't create any other resources that need to be actively freed. The shared `HttpClient` instance persists throughout the entire application lifetime.
 
 ```csharp
 // Both clients reuse the shared HttpClient and don't need to be disposed

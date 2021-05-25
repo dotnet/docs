@@ -651,6 +651,14 @@ items:
           href: networking/5.0/winhttphandler-removed-from-runtime.md
       - name: .NET Core 2.0-3.0
         href: networking.md
+    - name: SDK
+      items:
+      - name: .NET 5
+        items:
+        - name: OutputType set to WinExe
+          href: sdk/5.0/automatically-infer-winexe-output-type.md
+        - name: WinForms and WPF apps use Microsoft.NET.Sdk
+          href: sdk/5.0/sdk-and-target-framework-change.md
     - name: Security
       items:
       - name: .NET 5

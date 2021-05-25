@@ -30,14 +30,14 @@ In this tutorial, you learn how to:
 
 ## Create scoped services
 
-To use [scoped services](dependency-injection.md#scoped) within a `BackgroundService`, create a scope. No scope is created for a hosted service by default. The scoped background service contains the background task's logic. In the following example:
-
-- The service is asynchronous. The `DoWorkAsync` method returns a `Task`. For demonstration purposes, a delay of ten seconds is awaited in the `DoWorkAsync` method.
-- An <xref:Microsoft.Extensions.Logging.ILogger> is injected into the service.
+To use [scoped services](dependency-injection.md#scoped) within a `BackgroundService`, create a scope. No scope is created for a hosted service by default. The scoped background service contains the background task's logic.
 
 :::code source="snippets/workers/scoped-service/IScopedProcessingService.cs":::
 
-The preceding interface defines a single `DoWorkAsync` method, the default implementation is defined as:
+The preceding interface defines a single `DoWorkAsync` method. To define the default implementation:
+
+- The service is asynchronous. The `DoWorkAsync` method returns a `Task`. For demonstration purposes, a delay of ten seconds is awaited in the `DoWorkAsync` method.
+- An <xref:Microsoft.Extensions.Logging.ILogger> is injected into the service.:
 
 :::code source="snippets/workers/scoped-service/DefaultScopedProcessingService.cs":::
 
@@ -51,7 +51,7 @@ Replace the existing `Worker` class with the following C# code, and rename the f
 
 In the preceding code, an explicit scope is created and the `IScopedProcessingService` implementation is resolved from the dependency injection service provider. The resolved service instance is scoped, and it's `DoWorkAsync` method is awaited.
 
-Replace the existing `Program` contents with the following C# code:
+Replace the template *Program.cs* file contents with the following C# code:
 
 :::code source="snippets/workers/scoped-service/Program.cs" highlight="8-9":::
 

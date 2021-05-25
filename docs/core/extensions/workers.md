@@ -36,7 +36,7 @@ The preceding `Program` class:
 - Builds an <xref:Microsoft.Extensions.Hosting.IHost> from the builder.
 - Calls `Run` on the `host` instance, which runs the app.
 
-The `Program` from the template can be rewritten using top-level statements, which simplifies it a lot:
+The *Program.cs* file from the template can be rewritten using top-level statements, which simplifies it a lot:
 
 ```csharp
 using Microsoft.Extensions.DependencyInjection;
@@ -52,6 +52,8 @@ using IHost host = Host.CreateDefaultBuilder(args)
 
 await host.RunAsync();
 ```
+
+For more information on C# 9 features, see [What's new in C# 9.0](../../csharp/whats-new/csharp-9.md).
 
 As for the `Worker`, the template provides a simple implementation.
 

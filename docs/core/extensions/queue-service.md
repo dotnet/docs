@@ -44,8 +44,8 @@ The preceding implementation relies on a <xref:System.Threading.Channels.Channel
 
 In the following `QueueHostedService` example:
 
-- The `ProcessTaskQueueAsync` method returns a <xref:System.Threading.Tasks.Task>, which is awaited in `ExecuteAsync`.
-- Background tasks in the queue are dequeued and executed in `BackgroundProcessing`.
+- The `ProcessTaskQueueAsync` method returns a <xref:System.Threading.Tasks.Task> in `ExecuteAsync`.
+- Background tasks in the queue are dequeued and executed in `ProcessTaskQueueAsync`.
 - Work items are awaited before the service stops in `StopAsync`.
 
 Replace the existing `Worker` class with the following C# code, and rename the file to "QueueHostedService".
@@ -55,9 +55,9 @@ Replace the existing `Worker` class with the following C# code, and rename the f
 A `MonitorLoop` service handles enqueuing tasks for the hosted service whenever the `w` key is selected on an input device:
 
 - The `IBackgroundTaskQueue` is injected into the `MonitorLoop` service.
-- `IBackgroundTaskQueue.QueueBackgroundWorkItem` is called to enqueue a work item.
+- `IBackgroundTaskQueue.QueueBackgroundWorkItemAsync` is called to enqueue a work item.
 - The work item simulates a long-running background task:
-  - Three 5-second delays are executed (`Task.Delay`).
+  - Three 5-second delays are executed <xref:System.Threading.Tasks.Task.Delay%2A>.
   - A `try-catch` statement traps <xref:System.OperationCanceledException> if the task is cancelled.
 
 :::code source="snippets/workers/queue-service/MonitorLoop.cs" highlight="11,16,41":::

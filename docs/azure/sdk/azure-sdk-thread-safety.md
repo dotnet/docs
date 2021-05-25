@@ -78,7 +78,7 @@ For more information about implementing dependency injection with the Azure SDK,
 
 Alternatively, you may also create an SDK client instance and pass it as a parameter to methods that require a client. The point is to avoid unnecessary instantiations of the same SDK client object with the same parameters, as it's unnecessary and wasteful.
 
-## Clients are not disposable
+## Clients aren't disposable
 
 Two final questions that often come up are:
 

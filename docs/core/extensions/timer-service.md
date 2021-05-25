@@ -29,7 +29,7 @@ In this tutorial, you learn how to:
 
 The timer-based background service makes use of the <xref:System.Threading.Timer?displayProperty=fullName> class. The timer triggers the `DoWork` method. The timer is disabled on <xref:Microsoft.Extensions.Hosting.IHostLifetime.StopAsync(System.Threading.CancellationToken)?displayProperty=nameWithType> and disposed when the service container is disposed on <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=fullName>:
 
-Replace the contents of the `Worker` from the template with the following C# code, and rename the file to "TimerService":
+Replace the contents of the `Worker` from the template with the following C# code, and rename the file to *TimerService.cs*:
 
 :::code source="snippets/workers/timer-service/TimerService.cs" highlight="40,47-50":::
 

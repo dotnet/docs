@@ -48,7 +48,7 @@ In the following `QueueHostedService` example:
 - Background tasks in the queue are dequeued and executed in `ProcessTaskQueueAsync`.
 - Work items are awaited before the service stops in `StopAsync`.
 
-Replace the existing `Worker` class with the following C# code, and rename the file to "QueueHostedService".
+Replace the existing `Worker` class with the following C# code, and rename the file to *QueueHostedService.cs*.
 
 :::code source="snippets/workers/queue-service/QueuedHostedService.cs" highlight="35-36,38":::
 

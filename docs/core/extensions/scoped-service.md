@@ -45,7 +45,7 @@ The hosted service creates a scope to resolve the scoped background service to c
 
 ## Rewrite the Worker class
 
-Replace the existing `Worker` class with the following C# code, and rename the file to "ScopedBackgroundService":
+Replace the existing `Worker` class with the following C# code, and rename the file to *ScopedBackgroundService.cs*:
 
 :::code source="snippets/workers/scoped-service/ScopedBackgroundService.cs" highlight="33-39":::
 

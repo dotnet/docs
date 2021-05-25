@@ -96,6 +96,12 @@ The preceding *Dockerfile* steps include:
 > [!TIP]
 > The MCR in `mcr.microsoft.com` stands for "Microsoft Container Registry", and is Microsoft's syndicated container catalog from the official Docker hub. The [Microsoft syndicates container catalog](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog) article contains additional details.
 
+Additionally, when targeting Docker as a deployment strategy for your .NET Worker Service - consider the project file:
+
+:::code language="xml" source="snippets/workers/background-service/App.WorkerService.csproj" highlight="6,12":::
+
+In the preceding project file, the `<DockerDefaultTargetOS>` element specifies `Linux` as its target. To target Windows containers, use `Windows` instead. The [`Microsoft.VisualStudio.Azure.Containers.Tools.Targets` NuGet package](https://www.nuget.org/packages/Microsoft.VisualStudio.Azure.Containers.Tools.Targets) is automatically added as a package reference when **Docker support** is selected from the template.
+
 For more information on Docker with .NET, see [Tutorial: Containerize a .NET app](../docker/build-container.md).
 
 ## Hosted Service extensibility

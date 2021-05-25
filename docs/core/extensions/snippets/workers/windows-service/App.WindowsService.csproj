@@ -4,7 +4,6 @@
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>App.WindowsService</RootNamespace>
     <Nullable>enable</Nullable>
-    <LangVersion>preview</LangVersion>
     <OutputType>exe</OutputType>
     <PublishSingleFile>true</PublishSingleFile>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
@@ -15,5 +14,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
   </ItemGroup>
 </Project>

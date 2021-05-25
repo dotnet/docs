@@ -117,7 +117,5 @@ Further guidance for properly managing and disposing of `HttpClient` instances c
 
 ## See also
 
-- [Lifetime management for Azure SDK .NET clients (Azure SDK blog)](https://devblogs.microsoft.com/azure-sdk/lifetime-management-and-thread-safety-guarantees-of-azure-sdk-net-clients/)
-- [Best practices for using Azure SDK with ASP.NET Core (Azure SDK blog)](https://devblogs.microsoft.com/azure-sdk/best-practices-for-using-azure-sdk-with-asp-net-core/)
 - [Dependency injection with the Azure .NET SDK](./dependency-injection.md)
 - [Dependency injection in .NET](/dotnet/core/extensions/dependency-injection)

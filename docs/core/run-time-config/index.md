@@ -107,7 +107,9 @@ MSBuild properties for configuring run-time behavior are noted in the individual
 
 ## Environment variables
 
-Environment variables can be used to supply some run-time configuration information. Configuring a run-time option by using an environment variable applies the setting to all .NET Core apps. Configuration knobs specified as environment variables generally have the prefix **COMPlus_**.
+Environment variables can be used to supply some run-time configuration information. Configuring a run-time option by using an environment variable applies the setting to all .NET Core apps. Configuration knobs specified as environment variables generally have the prefix **DOTNET_**.
+
+[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
 You can define environment variables from the Windows Control Panel, at the command line, or programmatically by calling the <xref:System.Environment.SetEnvironmentVariable(System.String,System.String)?displayProperty=nameWithType> method on both Windows and Unix-based systems.
 
@@ -115,11 +117,11 @@ The following examples show how to set an environment variable at the command li
 
 ```shell
 # Windows
-set COMPlus_GCRetainVM=1
+set DOTNET_GCRetainVM=1
 
 # Powershell
-$env:COMPlus_GCRetainVM="1"
+$env:DOTNET_GCRetainVM="1"
 
 # Unix
-export COMPlus_GCRetainVM=1
+export DOTNET_GCRetainVM=1
 ```

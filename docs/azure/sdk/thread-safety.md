@@ -37,7 +37,6 @@ foreach (var tag in tags)
 }
 
 client.UpdateSecretProperties(newSecret.Properties);
-
 ```
 
 To access the model from different threads, you must implement your own synchronization code. For example:

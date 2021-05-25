@@ -72,7 +72,6 @@ public void ConfigureServices(IServiceCollection services)
           
     // Additional code ...
 }
-
 ```
 
 For more information about implementing dependency injection with the Azure SDK, refer to the article [Dependency injection with the Azure .NET SDK](./dependency-injection.md).

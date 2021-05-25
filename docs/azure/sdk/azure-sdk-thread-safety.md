@@ -24,7 +24,7 @@ foreach (var secretName in secretNames)
 }
 ```
 
-Model objects used by SDK clients, whether input or output models are *not* thread-safe by default.  Most use cases involving model objects only involve a single thread, making the cost of implementing synchronization as a default behavior too high for these objects. The following sample illustrates a bug where accessing a model from multiple threads could cause an undefined behavior.
+Model objects used by SDK clients, whether input or output models, are *not* thread-safe by default. Most use cases involving model objects only involve a single thread, making the cost of implementing synchronization as a default behavior too high for these objects. The following sample illustrates a bug where accessing a model from multiple threads could cause an undefined behavior.
 
 ```csharp
 KeyVaultSecret newSecret = client.SetSecret("secret", "value");

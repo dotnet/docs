@@ -102,7 +102,7 @@ var httpClient = new HttpClient();
 var clientOptions = new BlobClientOptions()
 {
     Transport = new HttpClientTransport(httpClient)
-}
+};
 
 // Both client would use the HttpClient instance provided in clientOptions
 var blobClient = new BlobClient(new Uri(sasUri), clientOptions);

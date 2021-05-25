@@ -12,7 +12,7 @@ This article is designed to help you understand thread safety issues when using 
 
 ## Thread safety
 
-All Azure SDK client objects are thread-safe and independent of each other. This ensures that reusing client instances is always safe, even across threads. For example, the following code launches multiple tasks but is thread safe:
+All Azure SDK client objects are thread-safe and independent of each other. This design ensures that reusing client instances is always safe, even across threads. For example, the following code launches multiple tasks but is thread safe:
 
 ```csharp
 var client = new SecretClient(new Uri("<secrets_endpoint>"), new DefaultAzureCredential());

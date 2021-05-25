@@ -8,7 +8,7 @@ author: pakrym
 
 # Thread safety and client lifetime management for Azure SDK objects
 
-This article is designed to help you understand thread safety issues when using the Azure SDK. It also discusses how the design of the SDK impacts client lifetime management and why it's unnecessary to dispose of Azure SDK client objects.
+This article helps you understand thread safety issues when using the Azure SDK. It also discusses how the design of the SDK impacts client lifetime management. You'll learn why it's unnecessary to dispose of Azure SDK client objects.
 
 ## Thread safety
 

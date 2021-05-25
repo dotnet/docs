@@ -108,7 +108,7 @@ var clientOptions = new BlobClientOptions()
 var blobClient = new BlobClient(new Uri(sasUri), clientOptions);
 var blobClient2 = new BlobClient(new Uri(sasUri2), clientOptions);
 
-// ...
+// Code omitted for brevity
 
 // you are responsible for properly disposing httpClient some time later
 httpClient.Dispose();

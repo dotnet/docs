@@ -60,7 +60,7 @@ client.UpdateSecretProperties(newSecret.Properties);
 
 ## Client lifetime
 
-Because Azure SDK clients are thread-safe, there is no reason to construct multiple SDK client objects for a given set of constructor parameters. Therefore, you should treat Azure SDK client objects as singletons once constructed.  This is most commonly implemented by registering Azure SDK client objects as singletons in the application's IoC container and using dependency injection to pass out references to the SDK client object.  The following example shows how this is done in an ASP.NET Core application with the built-in IoC container.
+Because Azure SDK clients are thread-safe, there's no reason to construct multiple SDK client objects for a given set of constructor parameters. Therefore, you should treat Azure SDK client objects as singletons once constructed. This is most commonly implemented by registering Azure SDK client objects as singletons in the app's Inversion of Control (IoC) container and using dependency injection (DI) to obtain references to the SDK client object. The following example shows how this is done in an ASP.NET Core app with the built-in IoC container.
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)

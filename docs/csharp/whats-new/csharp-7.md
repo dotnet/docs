@@ -416,7 +416,7 @@ ref VeryLargeStruct refLocal = ref veryLargeStruct; // initialization
 refLocal = ref anotherVeryLargeStruct; // reassigned, refLocal refers to different storage.
 ```
 
-For more information, see the article on [`ref` returns and `ref` locals](../programming-guide/classes-and-structs/ref-returns.md), and the article on [`foreach`](../language-reference/keywords/foreach-in.md).
+For more information, see the article on [`ref` returns and `ref` locals](../programming-guide/classes-and-structs/ref-returns.md), and the article on [`foreach`](../language-reference/statements/iteration-statements.md#the-foreach-statement).
 
 For more information, see the [ref keyword](../language-reference/keywords/ref.md) article.
 

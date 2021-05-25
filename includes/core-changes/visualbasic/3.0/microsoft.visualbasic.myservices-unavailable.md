@@ -4,7 +4,7 @@ The types in the <xref:Microsoft.VisualBasic.MyServices?displayProperty=fullName
 
 #### Version introduced
 
-.NET Core 3.0 Preview 8
+.NET Core 3.0
 
 #### Change description
 

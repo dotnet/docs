@@ -1,6 +1,6 @@
 ---
-title: Code style naming rules
-description: Learn about the .NET code style rules for naming code elements.
+title: Code-style naming rules
+description: Learn about the .NET code-style rules for naming code elements.
 ms.date: 09/25/2020
 ms.topic: reference
 author: gewarren
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - naming rules
 - EditorConfig naming conventions
 ---
-# Naming rules
+# Code-style naming rules
 
 In your `.editorconfig` file, you can define **naming rules** that specify and enforce how .NET programming language code elements&mdash;such as classes, properties, and methods&mdash;should be named. For example, you can specify that public members must be capitalized, or that private fields must begin with `_`.
 

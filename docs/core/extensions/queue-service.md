@@ -38,7 +38,7 @@ There are two methods, one which exposes queuing functionality and the other tha
 
 :::code source="snippets/workers/queue-service/DefaultBackgroundTaskQueue.cs":::
 
-The preceding implementation relies on a <xref:System.Threading.Channels.Channel%601> as a queue. The <xref:System.Threading.Channels.BoundedChannelOptions.%23ctor(System.Int32)> is called with an explicit capacity. Capacity should be set based on the expected application load and number of concurrent threads accessing the queue. <xref:System.Threading.Channels.BoundedChannelFullMode.Wait?displayProperty=nameWithType> will cause calls to <xref:System.Threading.Channels.ChannelWriter%601.WriteAsync%2A?displayProperty=nameWithType> to return a task, which completes only when space became available. This leads to backpressure, in case too many publishers/calls start accumulating.
+The preceding implementation relies on a <xref:System.Threading.Channels.Channel%601> as a queue. The <xref:System.Threading.Channels.BoundedChannelOptions.%23ctor(System.Int32)> is called with an explicit capacity. Capacity should be set based on the expected application load and number of concurrent threads accessing the queue. <xref:System.Threading.Channels.BoundedChannelFullMode.Wait?displayProperty=nameWithType> will cause calls to <xref:System.Threading.Channels.ChannelWriter%601.WriteAsync%2A?displayProperty=nameWithType> to return a task, which completes only when space becomes available. This leads to backpressure, in case too many publishers/calls start accumulating.
 
 ## Rewrite the Worker class
 

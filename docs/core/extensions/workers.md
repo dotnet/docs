@@ -9,7 +9,13 @@ ms.topic: overview
 
 # Worker Services in .NET
 
-There are numerous reasons for creating long-running services such as, processing CPU intensive data, queuing work items in the background, or performing a time-based operation on a schedule. Background service processing usually doesn't involve a user interface (UI), but UIs can be built around them. In the early days with .NET Framework, Windows developers could create Windows Services for these reasons. Now with .NET, you can use the <xref:Microsoft.Extensions.Hosting.BackgroundService> - which is an implementation of <xref:Microsoft.Extensions.Hosting.IHostedService>, or even implement your own.
+There are numerous reasons for creating long-running services such as:
+
+- Processing CPU intensive data.
+- Queuing work items in the background.
+- Performing a time-based operation on a schedule. 
+
+Background service processing usually doesn't involve a user interface (UI), but UIs can be built around them. In the early days with .NET Framework, Windows developers could create Windows Services for these reasons. Now with .NET, you can use the <xref:Microsoft.Extensions.Hosting.BackgroundService> &mdash; which is an implementation of <xref:Microsoft.Extensions.Hosting.IHostedService>, or implement your own.
 
 With .NET, you're no longer restricted to Windows. You can develop background services that are cross-platform. Hosted services are logging, configuration, and dependency injection (DI) ready. They're a part of the extensions suite of libraries, meaning they're fundamental to all .NET workloads that work with the [generic host](generic-host.md).
 
@@ -25,7 +31,7 @@ There are many terms that are mistakenly used synonymously. In this section, the
 
 ## Worker Service template
 
-The Worker Service template is available to the .NET CLI, and Visual Studio. For more information, see [.NET CLI, `dotnet new worker` - template](/dotnet/core/tools/dotnet-new-sdk-templates#web-others). The template is rather simple, consisting of a `Program` and `Worker` class.
+The Worker Service template is available to the .NET CLI, and Visual Studio. For more information, see [.NET CLI, `dotnet new worker` - template](/dotnet/core/tools/dotnet-new-sdk-templates#web-others). The template consists of a `Program` and `Worker` class.
 
 :::code language="csharp" source="snippets/workers/background-service/Program.cs":::
 

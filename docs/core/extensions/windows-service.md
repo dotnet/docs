@@ -9,9 +9,9 @@ ms.topic: tutorial
 
 # Create a Windows Service using `BackgroundService`
 
-.NET Framework developers are probably familiar with Windows Service apps. Before .NET Core, and .NET 5+ developers who relied on .NET Framework could create Windows Services to perform background tasks, or execute long-running processes. This functionality is still available and you can create Worker Services that run as a Windows Service.
+.NET Framework developers are probably familiar with Windows Service apps. Before .NET Core and .NET 5+, developers who relied on .NET Framework could create Windows Services to perform background tasks or execute long-running processes. This functionality is still available and you can create Worker Services that run as a Windows Service.
 
-In this tutorial, you learn how to:
+In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
 >

@@ -7,7 +7,7 @@ ms.topic: include
 
 ## Create a new project
 
-To create a new Worker Service project with Visual Studio, you'd select **File** > **New** > **Project...**. From the **Create a new project** dialog search for "Worker Service", and select Worker Service template. If you're rather use the .NET CLI, open your favorite .NET CLI tool in a working directory. Run the `dotnet new` command, and replace the `<Project.Name>` with your desired project name.
+To create a new Worker Service project with Visual Studio, you'd select **File** > **New** > **Project...**. From the **Create a new project** dialog search for "Worker Service", and select Worker Service template. If you'd rather use the .NET CLI, open your favorite .NET CLI tool in a working directory. Run the `dotnet new` command, and replace the `<Project.Name>` with your desired project name.
 
 ```dotnetcli
 dotnet new worker --name <Project.Name>

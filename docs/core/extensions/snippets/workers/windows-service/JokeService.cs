@@ -28,11 +28,9 @@ namespace App.WindowsService
                 Joke[]? jokes = await _httpClient.GetFromJsonAsync<Joke[]>(
                         JokeApiUrl, _options);
 
-                Joke? joke = jokes?.FirstOrDefault();
+                Joke? joke = jokes?[0];
 
-                return joke is not null
-                    ? joke.ToString()
-                    : "No joke here...";
+                return joke is not null ? joke.ToString() : "No joke here...";
             }
             catch (Exception ex)
             {

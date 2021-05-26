@@ -54,7 +54,7 @@ The **Immediate** window lets you interact with the application you're debugging
 
 1. Enter `name = "Gracie"` in the **Immediate** window and press <kbd>enter</kbd>.
 
-1. Enter `date = date.AddDays(1)` in the **Immediate** window and press <kbd>enter</kbd>.
+1. Enter `currentDate = currentDate.AddDays(1)` in the **Immediate** window and press <kbd>enter</kbd>.
 
    The **Immediate** window displays the new value of the string variable and the properties of the <xref:System.DateTime> value.
 
@@ -130,7 +130,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    :::image type="content" source="media/debugging-with-visual-studio-mac/step-into-method.png" alt-text="Visual Studio step into method":::
 
-   At this point, the **Locals** window shows that the `args` array is empty, and `name` and `date` have default values. In addition, Visual Studio has opened a blank terminal.
+   At this point, the **Locals** window shows that the `args` array is empty, and `name` and `currentDate` have default values. In addition, Visual Studio has opened a blank terminal.
 
 1. Press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>I</kbd> (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>).
 
@@ -140,11 +140,11 @@ Visual Studio also allows you to step line by line through a program and monitor
 
 1. Press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>I</kbd> (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>).
 
-   Visual Studio highlights the statement that includes the `date` variable assignment. The **Locals** window shows the value returned by the call to the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method. The terminal displays the string you entered at the prompt.
+   Visual Studio highlights the statement that includes the `currentDate` variable assignment. The **Locals** window shows the value returned by the call to the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method. The terminal displays the string you entered at the prompt.
 
 1. Press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>I</kbd> (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>).
 
-   The **Locals** window shows the value of the `date` variable after the assignment from the <xref:System.DateTime.Now?displayProperty=nameWithType> property. The terminal is unchanged.
+   The **Locals** window shows the value of the `currentDate` variable after the assignment from the <xref:System.DateTime.Now?displayProperty=nameWithType> property. The terminal is unchanged.
 
 1. Press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>I</kbd> (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>).
 

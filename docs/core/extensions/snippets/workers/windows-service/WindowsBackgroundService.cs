@@ -23,9 +23,9 @@ namespace App.WindowsService
                 try
                 {
                     string joke = await _jokeService.GetJokeAsync();
-                    _logger.LogInformation(joke);
+                    _logger.LogWarning(joke);
 
-                    await Task.Delay(TimeSpan.FromSeconds(15), stoppingToken);
+                    await Task.Delay(TimeSpan.FromMinutes(1), stoppingToken);
                 }
                 catch (OperationCanceledException)
                 {

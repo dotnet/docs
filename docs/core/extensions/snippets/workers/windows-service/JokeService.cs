@@ -9,12 +9,14 @@ namespace App.WindowsService
 {
     public class JokeService
     {
+        private readonly HttpClient _httpClient;
         private readonly JsonSerializerOptions _options = new()
         {
             PropertyNameCaseInsensitive = true
         };
 
-        private readonly HttpClient _httpClient;
+        private const string JokeApiUrl =
+            "https://official-joke-api.appspot.com/jokes/programming/random";
 
         public JokeService(HttpClient httpClient) => _httpClient = httpClient;
 
@@ -24,13 +26,13 @@ namespace App.WindowsService
             {
                 // The API returns an array with a single entry.
                 Joke[]? jokes = await _httpClient.GetFromJsonAsync<Joke[]>(
-                        "https://official-joke-api.appspot.com/jokes/programming/random", _options);
+                        JokeApiUrl, _options);
 
                 Joke? joke = jokes?.FirstOrDefault();
 
                 return joke is not null
-                    ? $"{joke.Setup}{Environment.NewLine}{joke.Punchline}"
-                    : "That's not funny!";
+                    ? joke.ToString()
+                    : "No joke here...";
             }
             catch (Exception ex)
             {
@@ -39,5 +41,5 @@ namespace App.WindowsService
         }
     }
 
-    public record Joke(int Id, string Setup, string Punchline);
+    public record Joke(int Id, string Type, string Setup, string Punchline);
 }

@@ -57,6 +57,8 @@ Replace the template *Program.cs* file contents with the following C# code:
 
 The services are registered in `IHostBuilder.ConfigureServices` (*Program.cs*). The hosted service is registered with the `AddHostedService` extension method.
 
+For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
+
 ## Verify service functionality
 
 [!INCLUDE [run-app](includes/run-app.md)]

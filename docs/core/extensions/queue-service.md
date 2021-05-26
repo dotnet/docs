@@ -70,6 +70,8 @@ The services are registered in `IHostBuilder.ConfigureServices` (*Program.cs*). 
 
 :::code source="snippets/workers/queue-service/Program.cs" range="22-23":::
 
+For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
+
 ## Verify service functionality
 
 [!INCLUDE [run-app](includes/run-app.md)]

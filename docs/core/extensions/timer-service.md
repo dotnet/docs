@@ -25,6 +25,9 @@ In this tutorial, you learn how to:
 - A .NET integrated development environment (IDE)
   - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
 
+<!-- ## Create a new project -->
+[!INCLUDE [file-new-worker](includes/file-new-worker.md)]
+
 ## Create timer service
 
 The timer-based background service makes use of the <xref:System.Threading.Timer?displayProperty=fullName> class. The timer triggers the `DoWork` method. The timer is disabled on <xref:Microsoft.Extensions.Hosting.IHostLifetime.StopAsync(System.Threading.CancellationToken)?displayProperty=nameWithType> and disposed when the service container is disposed on <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType>:
@@ -48,6 +51,8 @@ Replace the existing `Program` contents with the following C# code:
 :::code source="snippets/workers/timer-service/Program.cs" highlight="8":::
 
 The service is registered in `IHostBuilder.ConfigureServices` (*Program.cs*) with the `AddHostedService` extension method. This is the same extension method you use when registering <xref:Microsoft.Extensions.Hosting.BackgroundService> subclasses, as they both implement the <xref:Microsoft.Extensions.Hosting.IHostedService> interface.
+
+For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
 
 ## Verify service functionality
 

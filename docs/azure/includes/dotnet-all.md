@@ -67,7 +67,7 @@
 | Resource Management - Resources | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Azure.ResourceManager.Resources/1.0.0-preview.2) | [docs](/dotnet/api/overview/azure/ResourceManager.Resources-readme-pre) | GitHub [1.0.0-preview.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Resources_1.0.0-preview.2/sdk/resources/Azure.ResourceManager.Resources/) |
 | Resource Management - Storage | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Azure.ResourceManager.Storage/1.0.0-preview.2) | [docs](/dotnet/api/overview/azure/ResourceManager.Storage-readme-pre) | GitHub [1.0.0-preview.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Storage_1.0.0-preview.2/sdk/storage/Azure.ResourceManager.Storage/) |
 | Azure.Communication.Administration | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Administration/1.0.0-beta.3) |  |  |
-| Azure.Communication.Calling | NuGet [1.0.0-beta.27](https://www.nuget.org/packages/Azure.Communication.Calling/1.0.0-beta.27) |  |  |
+| Azure.Communication.Calling | NuGet [1.0.0-beta.28](https://www.nuget.org/packages/Azure.Communication.Calling/1.0.0-beta.28) |  |  |
 | Azure.Communication.NetworkTraversal | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Communication.NetworkTraversal/1.0.0-beta.1) |  |  |
 | Azure.Messaging.WebPubSub | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Messaging.WebPubSub/1.0.0-beta.1) |  |  |
 | Azure.Quantum.Jobs | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.Quantum.Jobs/1.0.0-beta.2) |  |  |
@@ -172,7 +172,7 @@
 | Cosmos DB | NuGet [4.0.0-preview3](https://www.nuget.org/packages/Azure.Cosmos/4.0.0-preview3) | [docs](/dotnet/api/azure.cosmos) | GitHub [4.0.0-preview3](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/4.0.0-preview3) |
 | Cosmos DB | NuGet [3.19.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.19.0)<br>NuGet [3.19.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.19.0-preview1) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.19.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
 | Cosmos DB - BulkExecutor | NuGet [2.5.1-preview](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.BulkExecutor/2.5.1-preview) |  | GitHub [2.5.1-preview](https://github.com/Azure/azure-cosmosdb-bulkexecutor-dotnet-getting-started) |
-| Cosmos DB - Direct | NuGet [3.19.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.19.2) |  | GitHub [3.19.2](https://github.com/Azure/azure-cosmos-dotnet-v3) |
+| Cosmos DB - Direct | NuGet [3.19.3](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.19.3) |  | GitHub [3.19.3](https://github.com/Azure/azure-cosmos-dotnet-v3) |
 | Cosmos DB - Encryption | NuGet [1.0.0-previewV15](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption/1.0.0-previewV15) |  | GitHub [1.0.0-previewV15](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/encryption/1.0.0-preview4/Microsoft.Azure.Cosmos.Encryption) |
 | Custom Image Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.CustomImageSearch/2.0.0) |  |  |
 | Custom Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.CustomSearch/2.0.0) |  |  |

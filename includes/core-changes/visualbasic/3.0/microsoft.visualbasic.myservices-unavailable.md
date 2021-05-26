@@ -14,6 +14,10 @@ The types were removed to avoid unnecessary assembly dependencies or breaking ch
 
 #### Recommended action
 
+This namespace was added in .NET 5, upgrade your project to .NET 5 or later.
+
+-or-
+
 If your code depends on the use of **Microsoft.VisualBasic.MyServices** types and their members, there are corresponding types and members in the .NET class library. The following is a mapping of  **Microsoft.VisualBasic.MyServices** types to their equivalent .NET class library types:
 
 |Microsoft.VisualBasic.MyServices type|.NET class library type|

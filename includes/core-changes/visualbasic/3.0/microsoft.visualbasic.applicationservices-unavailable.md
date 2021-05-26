@@ -14,6 +14,10 @@ The types were removed to avoid unnecessary assembly dependencies or breaking ch
 
 #### Recommended action
 
+This namespace was added in .NET 5, upgrade your project to .NET 5 or later.
+
+-or-
+
 If your code depends on the use of <xref:Microsoft.VisualBasic.ApplicationServices> types and their members, you may be able to use a corresponding type or member in the .NET class library. For example, some <xref:System.Environment?displayProperty=nameWithType> and <xref:System.Security.Principal.WindowsIdentity?displayProperty=nameWithType> members provide equivalent functionality to the properties of the <xref:Microsoft.VisualBasic.ApplicationServices.User?displayProperty=nameWithType> class.
 
 #### Category

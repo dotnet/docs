@@ -11,4 +11,4 @@ jobs:
       uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2
 
     - name: Validate links
-      uses: Youssef1313/markdown-links-verifier@2afb5acdf77edc7d6c7fecbe3387aca169bd3eec #@v0.0.9.1
+      uses: MSDocsBuild/build-verifier@redirection-runner

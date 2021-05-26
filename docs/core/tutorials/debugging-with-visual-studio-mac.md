@@ -164,7 +164,7 @@ To build and test the Release version of the console application, do the followi
 
 1. Change the build configuration on the toolbar from **Debug** to **Release**.
 
-   :::image type="content" source="media/debugging-with-visual-studio-mac/visual-studio-toolbar-release.png" alt-text="default Visual Studio toolbar with debug highlighted":::
+   :::image type="content" source="media/debugging-with-visual-studio-mac/visual-studio-toolbar-release.png" alt-text="default Visual Studio toolbar with release highlighted":::
 
 1. Press <kbd>⌥</kbd><kbd>⌘</kbd><kbd>↵</kbd> (<kbd>option</kbd>+<kbd>command</kbd>+<kbd>enter</kbd>) to run without debugging.
 

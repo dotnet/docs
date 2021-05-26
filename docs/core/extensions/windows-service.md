@@ -17,10 +17,10 @@ In this tutorial, you learn how to:
 >
 > - Publish a .NET worker app as a single file executable.
 > - Create a Windows Service.
-> - Install the `BackgroundService` app as a Windows Service.
+> - Create the `BackgroundService` app as a Windows Service.
 > - Start and stop the Windows Service.
 > - View event logs.
-> - Uninstall the Windows Service.
+> - Delete the Windows Service.
 
 ## Prerequisites
 
@@ -49,6 +49,10 @@ dotnet add package Microsoft.Extensions.Http
 ```
 
 For more information on the .NET CLI add package command, see [`dotnet add package`](../tools/dotnet-add-package.md).
+
+After successfully adding the packages, your project file should now contain the following package references:
+
+:::code language="xml" source="snippets/workers/windows-service/App.WindowsService.csproj" range="14-18" highlight="2-4":::
 
 ## Create the service
 
@@ -104,6 +108,13 @@ Leave the default **Location**, and then select **Finish**. Once the profile is 
 
 :::image type="content" source="media/profile-settings.png" alt-text="The Visual Studio Profile settings":::
 
+Ensure that the following settings are specified:
+
+- **Deployment mode**: Self-contained
+- **Produce single file**: checked
+- **Enable ReadyToRun compilation**: checked
+- **Trim unused assemblies (in preview)**: checked
+
 Finally, select **Publish**. The app is compiled, and the resulting .exe file is published to the */publish* output directory.
 
 Alternatively, you could use the .NET CLI to publish the app:
@@ -116,7 +127,7 @@ For more information, see [`dotnet publish`](../tools/dotnet-publish.md).
 
 ## Create the Windows Service
 
-To install the Windows Service, use the native Windows Service Control Manager's (sc.exe) create command. Open PowerShell as an Administrator.
+To install the Windows Service, use the native Windows Service Control Manager's (sc.exe) create command. Run PowerShell as an Administrator.
 
 ```powershell
 sc.exe create ".NET Joke Service" binpath=C:\Path\To\App.WindowsService.exe
@@ -186,8 +197,6 @@ sc.exe stop ".NET Joke Service"
 You'll see output similar to the following:
 
 ```powershell
-sc.exe stop ".NET Joke Service"
-
 SERVICE_NAME: .NET Joke Service
     TYPE               : 10  WIN32_OWN_PROCESS
     STATE              : 3  STOP_PENDING
@@ -202,7 +211,7 @@ The service **Status** will transition out of `STOP_PENDING` to **Stopped**.
 
 ## Delete the Windows Service
 
-To delete the Windows Service, use the native Windows Service Control Manager's (sc.exe) delete command. Open PowerShell as an Administrator.
+To delete the Windows Service, use the native Windows Service Control Manager's (sc.exe) delete command. Run PowerShell as an Administrator.
 
 > [!IMPORTANT]
 > If the service is not in the **Stopped** state, it will not be immediately deleted. Ensure that the service is stopped before issuing the delete command.

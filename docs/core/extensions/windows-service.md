@@ -106,7 +106,15 @@ Leave the default **Location**, and then select **Finish**. Once the profile is 
 
 Finally, select **Publish**. The app is compiled, and the resulting .exe file is published to the */publish* output directory.
 
-## Install as Windows Service
+Alternatively, you could use the .NET CLI to publish the app:
+
+```dotnetcli
+dotnet publish --output "C:\custom\publish\directory"
+```
+
+For more information, see [`dotnet publish`](../tools/dotnet-publish.md).
+
+## Create the Windows Service
 
 To install the Windows Service, use the native Windows Service Control Manager's (sc.exe) create command. Open PowerShell as an Administrator.
 
@@ -122,17 +130,21 @@ You'll see an output message:
 
 For more information, see [sc.exe create](/windows-server/administration/windows-commands/sc-create).
 
-To see the installed Windows Service, open **Services**. Select the Windows key (or <kbd>Ctrl</kbd> + <kbd>Esc</kbd>), and search from "Services".
+To see the installed Windows Service, open **Services**. Select the Windows key (or <kbd>Ctrl</kbd> + <kbd>Esc</kbd>), and search from "Services". From the **Services** app, you should be able to find your service by its name.
 
 :::image type="content" source="media/windows-service.png" alt-text="The Services user interface":::
 
 ## Verify service functionality
 
-To verify that the service is functioning as expected, you need to start the service.
+To verify that the service is functioning as expected, you need to:
+
+- Start the service
+- View the logs
+- Stop the service
 
 ### Start the Windows Service
 
-To start it, use the `sc.exe start` command:
+To start the Windows Service, use the `sc.exe start` command:
 
 ```powershell
 sc.exe start ".NET Joke Service"
@@ -153,7 +165,7 @@ SERVICE_NAME: .NET Joke Service
     FLAGS
 ```
 
-The service **Status** should soon transition out of `START_PENDING` to **Running**.
+The service **Status** will transition out of `START_PENDING` to **Running**.
 
 ### View logs
 
@@ -163,10 +175,10 @@ To view logs, open the **Event Viewer**. Select the Windows key (or <kbd>Ctrl</k
 
 ### Stop the Windows Service
 
-To stop the service, use the `sc.exe stop` command:
+To stop the Windows Service, use the `sc.exe stop` command:
 
 ```powershell
-sc.exe start ".NET Joke Service"
+sc.exe stop ".NET Joke Service"
 ```
 
 You'll see output similar to the following:
@@ -184,11 +196,11 @@ SERVICE_NAME: .NET Joke Service
     WAIT_HINT          : 0x0
 ```
 
-The service **Status** should soon transition out of `STOP_PENDING` to **Stopped**.
+The service **Status** will transition out of `STOP_PENDING` to **Stopped**.
 
-## Uninstall the app
+## Delete the Windows Service
 
-To uninstall the Windows Service, use the native Windows Service Control Manager's (sc.exe) delete command. Open PowerShell as an Administrator.
+To delete the Windows Service, use the native Windows Service Control Manager's (sc.exe) delete command. Open PowerShell as an Administrator.
 
 > [!IMPORTANT]
 > If the service is not in the **Stopped** state, it will not be immediately deleted. Ensure that the service is stopped before issuing the delete command.

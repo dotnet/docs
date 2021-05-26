@@ -25,7 +25,7 @@ There are many terms that are mistakenly used synonymously. In this section, the
 
 ## Worker Service template
 
-The Worker Service template is available to the .NET CLI, and Visual Studio. For more information, see [.NET CLI, `dotnet new worker` - template](/dotnet/core/tools/dotnet-new#web-others). The template is rather simple, consisting of a `Program` and `Worker` class.
+The Worker Service template is available to the .NET CLI, and Visual Studio. For more information, see [.NET CLI, `dotnet new worker` - template](/dotnet/core/tools/dotnet-new-sdk-templates#web-others). The template is rather simple, consisting of a `Program` and `Worker` class.
 
 :::code language="csharp" source="snippets/workers/background-service/Program.cs":::
 

@@ -251,6 +251,36 @@
             "redirect_url": "/dotnet/core/compatibility/fx-core"
         },
         {
+            "source_path": "docs/core/compatibility/msbuild/5.0/directory-packages-props-imported-by-default.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/5.0/directory-packages-props-imported-by-default",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/compatibility/msbuild/5.0/netcoreapp3_1-preprocessor-symbol-not-defined.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/5.0/netcoreapp3_1-preprocessor-symbol-not-defined",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/compatibility/msbuild/5.0/publishdepsfilepath-behavior-change.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/5.0/publishdepsfilepath-behavior-change",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/compatibility/msbuild/5.0/targetframework-name-change.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/5.0/targetframework-name-change",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/compatibility/msbuild/6.0/duplicate-files-removed-from-output.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/6.0/duplicate-files-removed-from-output",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/compatibility/msbuild//6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk//6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/core/compatibility/serialization.md",
             "redirect_url": "/dotnet/core/compatibility/serialization/5.0/binaryformatter-deserialize-rewraps-exceptions"
         },

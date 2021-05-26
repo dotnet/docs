@@ -4,6 +4,7 @@ description: Learn about .NET, a free, open-source development platform for buil
 author: tdykstra
 ms.date: 11/16/2020
 ms.custom: "updateeachrelease"
+recommendations: false
 ---
 # Introduction to .NET
 

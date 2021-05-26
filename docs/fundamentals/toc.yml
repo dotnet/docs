@@ -230,7 +230,23 @@ items:
       - name: dotnet msbuild
         href: ../core/tools/dotnet-msbuild.md
       - name: dotnet new
-        href: ../core/tools/dotnet-new.md
+        items:
+        - name: dotnet new
+          href: ../core/tools/dotnet-new.md
+        - name: dotnet new --list
+          href: ../core/tools/dotnet-new-list.md
+        - name: dotnet new --search
+          href: ../core/tools/dotnet-new-search.md
+        - name: dotnet new --install
+          href: ../core/tools/dotnet-new-install.md
+        - name: dotnet new --uninstall
+          href: ../core/tools/dotnet-new-uninstall.md
+        - name: dotnet new --update-*
+          href: ../core/tools/dotnet-new-update.md
+        - name: .NET default templates
+          href: ../core/tools/dotnet-new-sdk-templates.md
+        - name: Custom templates
+          href: ../core/tools/custom-templates.md
       - name: dotnet nuget
         items:
         - name: dotnet nuget delete
@@ -317,8 +333,6 @@ items:
       href: ../core/tutorials/libraries.md
     - name: Create templates for the CLI
       items:
-      - name: Custom templates
-        href: ../core/tools/custom-templates.md
       - name: 1 - Create an item template
         href: ../core/tutorials/cli-templates-create-item-template.md
         displayName: tutorials, cli
@@ -1508,8 +1522,6 @@ items:
       href: ../standard/base-types/common-type-system.md
     - name: Language independence
       href: ../standard/language-independence.md
-    - name: Language-independent components
-      href: ../standard/language-independence-and-language-independent-components.md
     - name: Type conversion in .NET
       href: ../standard/base-types/type-conversion.md
     - name: Type conversion tables
@@ -1786,6 +1798,8 @@ items:
           href: ../standard/serialization/system-text-json-immutability.md
         - name: Polymorphic serialization
           href: ../standard/serialization/system-text-json-polymorphism.md
+      - name: How to use DOM, Utf8JsonReader, Utf8JsonWriter
+        href: ../standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md
       - name: How to migrate from Newtonsoft.Json
         href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
       - name: Supported collection types
@@ -1794,8 +1808,6 @@ items:
         items:
         - name: Customize character encoding
           href: ../standard/serialization/system-text-json-character-encoding.md
-        - name: Custom serializers and deserializers
-          href: ../standard/serialization/write-custom-serializer-deserializer.md
         - name: Custom converters
           href: ../standard/serialization/system-text-json-converters-how-to.md
     - name: Binary serialization

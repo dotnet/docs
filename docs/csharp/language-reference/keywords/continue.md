@@ -11,7 +11,7 @@ ms.assetid: 8a5ac96f-f98a-4519-b32d-345847ed7be0
 ---
 # continue (C# Reference)
 
-The `continue` statement passes control to the next iteration of the enclosing [while](./while.md), [do](./do.md), [for](./for.md), or [foreach](./foreach-in.md) statement in which it appears.
+The `continue` statement passes control to the next iteration of the enclosing [iteration statement](../statements/iteration-statements.md) in which it appears.
 
 ## Example
 

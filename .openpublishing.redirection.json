@@ -150,16 +150,24 @@
             "redirect_url": "/dotnet/azure/"
         },
         {
-            "source_path": "docs/azure/sdk/authentication.md",
-            "redirect_url": "/dotnet/azure/authentication"
+            "source_path": "docs/azure/authentication.md",
+            "redirect_url": "/dotnet/azure/sdk/authentication"
         },
         {
             "source_path": "docs/azure/sdk/index.yml",
             "redirect_url": "/dotnet/azure/"
         },
         {
-            "source_path": "docs/azure/sdk/logging.md",
-            "redirect_url": "/dotnet/azure/logging"
+            "source_path": "docs/azure/logging.md",
+            "redirect_url": "/dotnet/azure/sdk/logging"
+        },
+        {
+            "source_path": "docs/azure/packages.md",
+            "redirect_url": "/dotnet/azure/sdk/packages"
+        },
+        {
+            "source_path": "docs/azure/dependency-injection.md",
+            "redirect_url": "/dotnet/azure/sdk/dependency-injection"
         },
         {
             "source_path": "docs/azure/sdk/tools.md",
@@ -397,6 +405,16 @@
         {
             "source_path": "docs/core/compatibility/syslib-warnings/syslib0020.md",
             "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0020",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/compatibility/windows-forms/5.0/automatically-infer-winexe-output-type.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/5.0/automatically-infer-winexe-output-type",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/compatibility/windows-forms/5.0/sdk-and-target-framework-change.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/5.0/sdk-and-target-framework-change",
             "redirect_document_id": true
         },
         {
@@ -989,7 +1007,7 @@
         },
         {
             "source_path": "docs/csharp/how-to/safely-cast-using-pattern-matching-is-and-as-operators.md",
-            "redirect_url": "/dotnet/csharp/fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md"
+            "redirect_url": "/dotnet/csharp/fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators"
         },
         
         {
@@ -1321,6 +1339,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/reference-types"
         },
         {
+            "source_path": "docs/csharp/language-reference/keywords/do.md",
+            "redirect_url": "/dotnet/csharp/language-reference/statements/iteration-statements"
+        },
+        {
             "source_path": "docs/csharp/language-reference/keywords/double.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types"
         },
@@ -1365,6 +1387,14 @@
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types"
         },
         {
+            "source_path": "docs/csharp/language-reference/keywords/for.md",
+            "redirect_url": "/dotnet/csharp/language-reference/statements/iteration-statements"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/foreach-in.md",
+            "redirect_url": "/dotnet/csharp/language-reference/statements/iteration-statements"
+        },
+        {
             "source_path": "docs/csharp/language-reference/keywords/formatting-numeric-results-table.md",
             "redirect_url": "/dotnet/standard/base-types/standard-numeric-format-strings"
         },
@@ -1398,7 +1428,7 @@
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/iteration-statements.md",
-            "redirect_url": "/dotnet/csharp/language-reference/keywords/statement-keywords"
+            "redirect_url": "/dotnet/csharp/language-reference/statements/iteration-statements"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/jump-statements.md",
@@ -1523,6 +1553,10 @@
         {
             "source_path": "docs/csharp/language-reference/keywords/void.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/void"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/while.md",
+            "redirect_url": "/dotnet/csharp/language-reference/statements/iteration-statements"
         },
         {
             "source_path": "docs/csharp/language-reference/language-specification/index.md",
@@ -12547,6 +12581,11 @@
             "redirect_url": "/dotnet/fundamentals/"
         },
         {
+            "source_path": "docs/standard/language-independence-and-language-independent-components.md",
+            "redirect_url": "/dotnet/standard/language-independence",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/standard/library.md",
             "redirect_url": "/dotnet/standard/net-standard",
             "redirect_document_id": true
@@ -12650,6 +12689,10 @@
         {
             "source_path": "docs/standard/serialization/web-services-ixmlserializable-technology-sample.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/h2byscsb(v=vs.100)"
+        },
+        {
+            "source_path": "docs/standard/serialization/write-custom-serializer-deserializer.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter"
         },
         {
             "source_path": "docs/standard/threading/autoresetevent.md",

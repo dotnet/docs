@@ -5,6 +5,7 @@ author: IEvangelist
 ms.author: dapine
 ms.date: 04/01/2021
 ms.topic: tutorial
+recommendations: false
 ---
 
 # Tutorial: Create a GitHub Action with .NET
@@ -104,6 +105,9 @@ The preceding *Dockerfile* steps include:
 
 > [!TIP]
 > The MCR in `mcr.microsoft.com` stands for "Microsoft Container Registry", and is Microsoft's syndicated container catalog from the official Docker hub. For more information, see [Microsoft syndicates container catalog](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/).
+
+> [!CAUTION]
+> If you use a *global.json* file to pin the SDK version, you should explicitly refer to that version in your *Dockerfile*. For example, if you've used *global.json* to pin SDK version `5.0.300`, your *Dockerfile* should use `mcr.microsoft.com/dotnet/sdk:5.0.300`. This prevents breaking the GitHub Action when a new minor revision is released.
 
 ## Define action inputs and outputs
 

@@ -184,7 +184,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:5.0
 > [!NOTE]
 > The ASP.NET Core runtime image is used intentionally here, although the `mcr.microsoft.com/dotnet/runtime:5.0` image could have been used.
 
-The `FROM` keyword requires a fully qualified Docker container image name. The Microsoft Container Registry (MCR, mcr.microsoft.com) is a syndicate of Docker Hub - which hosts publicly accessible containers. The `dotnet/core` segment is the container repository, where as the `aspnet` segment is the container image name. The image is tagged with `5.0`, which is used for versioning. Thus, `mcr.microsoft.com/dotnet/aspnet:5.0` is the .NET Core 5.0 runtime. Make sure that you pull the runtime version that matches the runtime targeted by your SDK. For example, the app created in the previous section used the .NET Core 5.0 SDK and the base image referred to in the *Dockerfile* is tagged with **5.0**.
+The `FROM` keyword requires a fully qualified Docker container image name. The Microsoft Container Registry (MCR, mcr.microsoft.com) is a syndicate of Docker Hub - which hosts publicly accessible containers. The `dotnet` segment is the container repository, where as the `aspnet` segment is the container image name. The image is tagged with `5.0`, which is used for versioning. Thus, `mcr.microsoft.com/dotnet/aspnet:5.0` is the .NET Core 5.0 runtime. Make sure that you pull the runtime version that matches the runtime targeted by your SDK. For example, the app created in the previous section used the .NET Core 5.0 SDK and the base image referred to in the *Dockerfile* is tagged with **5.0**.
 
 Save the *Dockerfile* file. The directory structure of the working folder should look like the following. Some of the deeper-level files and folders have been omitted to save space in the article:
 
@@ -237,11 +237,13 @@ The `WORKDIR` command changes the **current directory** inside of the container 
 The next command, `ENTRYPOINT`, tells Docker to configure the container to run as an executable. When the container starts, the `ENTRYPOINT` command runs. When this command ends, the container will automatically stop.
 
 > [!TIP]
-> For added security, you can opt-out of the diagnostic pipeline. When you opt-out this allows the container to run as readonly. In order to do this, specify a `COMPlus_EnableDiagnostics` environment variable as `0` (just before the `ENTRYPOINT` step):
+> For added security, you can opt-out of the diagnostic pipeline. When you opt-out this allows the container to run as readonly. In order to do this, specify a `DOTNET_EnableDiagnostics` environment variable as `0` (just before the `ENTRYPOINT` step):
 >
 > ```dockerfile
-> ENV COMPlus_EnableDiagnostics=0
+> ENV DOTNET_EnableDiagnostics=0
 > ```
+
+[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
 From your terminal, run `docker build -t counter-image -f Dockerfile .` and when that command finishes, run `docker images`.
 

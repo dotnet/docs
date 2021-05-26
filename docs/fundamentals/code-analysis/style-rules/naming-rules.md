@@ -1,6 +1,6 @@
 ---
-title: Code style naming rules
-description: Learn about the .NET code style rules for naming code elements.
+title: Code-style naming rules
+description: Learn about the .NET code-style rules for naming code elements.
 ms.date: 09/25/2020
 ms.topic: reference
 author: gewarren
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - naming rules
 - EditorConfig naming conventions
 ---
-# Naming rules
+# Code-style naming rules
 
 In your `.editorconfig` file, you can define **naming rules** that specify and enforce how .NET programming language code elements&mdash;such as classes, properties, and methods&mdash;should be named. For example, you can specify that public members must be capitalized, or that private fields must begin with `_`.
 
@@ -94,6 +94,7 @@ You can set the following properties for symbol groups, to limit which symbols a
 1. Tuple members aren't currently supported in `applicable_kinds`.
 2. The symbol group matches _all_ the modifiers in the `required_modifiers` property.  If you omit this property, no specific modifiers are required for a match. This means a symbol's modifiers have no effect on whether or not this rule is applied.
 3. If your group has `static` or `shared` in the `required_modifiers` property, the group will also include `const` symbols because they are implicitly `static`/`Shared`. However, if you don't want the `static` naming rule to apply to `const` symbols, you can create a new naming rule with a symbol group of `const`.
+4. `class` includes [C# records](../../../csharp/language-reference/builtin-types/record.md).
 
 ## Naming style properties
 

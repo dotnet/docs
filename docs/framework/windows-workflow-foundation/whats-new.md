@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Workflow Foundation [WF], what's new"
   - "WF [WF], what's new"
-ms.assetid: 11f96014-001e-41a0-bcc2-d0684a52fa43
+ms.topic: "reference"
 ---
 # What's New in Windows Workflow Foundation
 

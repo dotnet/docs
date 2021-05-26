@@ -1,6 +1,9 @@
 name: Markdown links verifier
 on: pull_request
 
+env:
+  PR_NUMBER: ${ { github.event.pull_request.number } }
+
 jobs:
   validate_links:
     name: Markdown links verifier

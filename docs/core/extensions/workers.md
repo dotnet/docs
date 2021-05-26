@@ -36,7 +36,7 @@ The preceding `Program` class:
 - Builds an <xref:Microsoft.Extensions.Hosting.IHost> from the builder.
 - Calls `Run` on the `host` instance, which runs the app.
 
-The *Program.cs* file from the template can be rewritten using top-level statements, which simplifies it a lot:
+The *Program.cs* file from the template can be rewritten using top-level statements:
 
 ```csharp
 using Microsoft.Extensions.DependencyInjection;
@@ -53,7 +53,7 @@ using IHost host = Host.CreateDefaultBuilder(args)
 await host.RunAsync();
 ```
 
-For more information on C# 9 features, see [What's new in C# 9.0](../../csharp/whats-new/csharp-9.md).
+This is functionally equivalent to the original template. For more information on C# 9 features, see [What's new in C# 9.0](../../csharp/whats-new/csharp-9.md).
 
 As for the `Worker`, the template provides a simple implementation.
 
@@ -96,7 +96,7 @@ The preceding *Dockerfile* steps include:
 > [!TIP]
 > The MCR in `mcr.microsoft.com` stands for "Microsoft Container Registry", and is Microsoft's syndicated container catalog from the official Docker hub. The [Microsoft syndicates container catalog](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog) article contains additional details.
 
-Additionally, when targeting Docker as a deployment strategy for your .NET Worker Service - consider the project file:
+Wen targeting Docker as a deployment strategy for your .NET Worker Service, there are a few considerations in the project file:
 
 :::code language="xml" source="snippets/workers/background-service/App.WorkerService.csproj" highlight="6,12":::
 
@@ -106,11 +106,17 @@ For more information on Docker with .NET, see [Tutorial: Containerize a .NET app
 
 ## Hosted Service extensibility
 
-The <xref:Microsoft.Extensions.Hosting.IHostedService> interface defines two methods, <xref:Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)?displayProperty=nameWithType> and <xref:Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>. These serve as lifecycle methods - they're called during host start and stop events respectively. The interface also serves as a generic-type parameter constraint on the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)> extension method, meaning only implementations are permitted. You're free to use the provided <xref:Microsoft.Extensions.Hosting.BackgroundService> with a subclass, or implement your own entirely.
+The <xref:Microsoft.Extensions.Hosting.IHostedService> interface defines two methods:
+
+- <xref:Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>
+
+These two methods serve as *lifecycle* methods - they're called during host start and stop events respectively.
+
+> [!IMPORTANT]
+> The interface serves as a generic-type parameter constraint on the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)> extension method, meaning only implementations are permitted. You're free to use the provided <xref:Microsoft.Extensions.Hosting.BackgroundService> with a subclass, or implement your own entirely.
 
 ## See also
-
-There are several related tutorials to consider:
 
 - <xref:Microsoft.Extensions.Hosting.BackgroundService> subclass tutorials:
   - [Create a Queue Service in .NET](queue-service.md)

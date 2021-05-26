@@ -173,6 +173,8 @@ To view logs, open the **Event Viewer**. Select the Windows key (or <kbd>Ctrl</k
 
 :::image type="content" source="media/event-properties.png" alt-text="The Event Properties dialog, with details logged from the service":::
 
+After seeing logs in the **Event Log**, you should stop the service. It's designed to log a random joke once per minute. This is intentional behaviour, but is not practical for production services.
+
 ### Stop the Windows Service
 
 To stop the Windows Service, use the `sc.exe stop` command:

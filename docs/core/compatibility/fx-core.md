@@ -90,6 +90,7 @@ Windows Forms support was added to .NET Core in version 3.0. If you're migrating
 - [EnableVisualStyleValidation compatibility switch not supported](#enablevisualstylevalidation-compatibility-switch-not-supported)
 - [UseLegacyContextMenuStripSourceControlValue compatibility switch not supported](#uselegacycontextmenustripsourcecontrolvalue-compatibility-switch-not-supported)
 - [UseLegacyImages compatibility switch not supported](#uselegacyimages-compatibility-switch-not-supported)
+- [About and SplashScreen templates are broken for Visual Basic](#about-and-splashscreen-templates-are-broken)
 
 ### .NET Core 3.1
 
@@ -144,6 +145,10 @@ Windows Forms support was added to .NET Core in version 3.0. If you're migrating
 ***
 
 [!INCLUDE[UseLegacyImages compatibility switch not supported](~/includes/core-changes/windowsforms/3.0/deprecate-uselegacyimages.md)]
+
+***
+
+[!INCLUDE[About and SplashScreen templates are broken for Visual Basic](~/includes/core-changes/visualbasic/3.0/vb-winforms-splash-about-broken.md)]
 
 ***
 

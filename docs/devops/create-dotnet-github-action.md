@@ -107,7 +107,7 @@ The preceding *Dockerfile* steps include:
 > The MCR in `mcr.microsoft.com` stands for "Microsoft Container Registry", and is Microsoft's syndicated container catalog from the official Docker hub. For more information, see [Microsoft syndicates container catalog](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/).
 
 > [!CAUTION]
-> If you use a *global.json* file to pin the SDK version (for example, 5.0.300), you should use `mcr.microsoft.com/dotnet/sdk:5.0.300` to prevent breaking the GitHub Action when a new 5.0.x version is released.
+> If you use a *global.json* file to pin the SDK version (for example, `5.0.300`), you should use `mcr.microsoft.com/dotnet/sdk:5.0.300` to prevent breaking the GitHub Action when a new 5.0.x version is released.
 
 ## Define action inputs and outputs
 

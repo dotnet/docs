@@ -206,13 +206,13 @@ To delete the Windows Service, use the native Windows Service Control Manager's 
 > If the service is not in the **Stopped** state, it will not be immediately deleted. Ensure that the service is stopped before issuing the delete command.
 
 ```powershell
-sc.exe create ".NET Joke Service"
+sc.exe delete ".NET Joke Service"
 ```
 
 You'll see an output message:
 
 ```powershell
-[SC] CreateService SUCCESS
+[SC] DeleteService SUCCESS
 ```
 
 For more information, see [sc.exe delete](/windows-server/administration/windows-commands/sc-delete).

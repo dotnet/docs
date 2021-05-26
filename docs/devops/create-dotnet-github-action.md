@@ -108,6 +108,7 @@ The preceding *Dockerfile* steps include:
 
 > [!CAUTION]
 > If you use a *global.json* file to pin the SDK version, you should explicitly refer to that version in your *Dockerfile*. For example, if you've used *global.json* to pin SDK version `5.0.300`, your *Dockerfile* should use `mcr.microsoft.com/dotnet/sdk:5.0.300`. This prevents breaking the GitHub Action when a new minor revision is released.
+
 ## Define action inputs and outputs
 
 In the [Explore the app](#explore-the-app) section, you learned about the `ActionInputs` class. This object represents the inputs for the GitHub Action. For GitHub to recognize that the repository is a GitHub Action, you need to have an *action.yml* file at the root of the repository.

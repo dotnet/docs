@@ -25,6 +25,18 @@ The new behavior is consistent with the way other app models behave when unhandl
 
 If you prefer to keep the previous behavior of allowing an unhandled exception in a <xref:Microsoft.Extensions.Hosting.BackgroundService> to not stop the Host, you can set `HostOptions.BackgroundServiceExceptionBehavior` to `BackgroundServiceExceptionBehavior.Ignore`.
 
+```csharp
+Host.CreateBuilder(args)
+    .ConfigureServices(services =>
+    {
+        services.Configure<HostOptions>(hostOptions =>
+        {
+            hostOptions.BackgroundServiceExceptionBehavior = BackgroundServiceExceptionBehavior.Ignore;
+        });
+            
+    });
+```
+
 ## Affected APIs
 
 - <xref:Microsoft.Extensions.Hosting.IHost.StartAsync(System.Threading.CancellationToken)?displayProperty=fullName>

@@ -102,7 +102,7 @@ For more information on registering services, see [Dependency injection in .NET]
 
 ## Publish the app
 
-To install the .NET Worker Service app as a Windows Service, it will need to be published as a single file executable.
+To create the .NET Worker Service app as a Windows Service, it will need to be published as a single file executable.
 
 :::code language="xml" source="snippets/workers/windows-service/App.WindowsService.csproj" highlight="7-11":::
 
@@ -141,7 +141,7 @@ For more information, see [`dotnet publish`](../tools/dotnet-publish.md).
 
 ## Create the Windows Service
 
-To install the Windows Service, use the native Windows Service Control Manager's (sc.exe) create command. Run PowerShell as an Administrator.
+To create the Windows Service, use the native Windows Service Control Manager's (sc.exe) create command. Run PowerShell as an Administrator.
 
 ```powershell
 sc.exe create ".NET Joke Service" binpath=C:\Path\To\App.WindowsService.exe
@@ -155,7 +155,7 @@ You'll see an output message:
 
 For more information, see [sc.exe create](/windows-server/administration/windows-commands/sc-create).
 
-To see the installed Windows Service, open **Services**. Select the Windows key (or <kbd>Ctrl</kbd> + <kbd>Esc</kbd>), and search from "Services". From the **Services** app, you should be able to find your service by its name.
+To see the app created as a Windows Service, open **Services**. Select the Windows key (or <kbd>Ctrl</kbd> + <kbd>Esc</kbd>), and search from "Services". From the **Services** app, you should be able to find your service by its name.
 
 :::image type="content" source="media/windows-service.png" alt-text="The Services user interface":::
 

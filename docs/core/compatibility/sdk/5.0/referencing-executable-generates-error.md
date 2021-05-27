@@ -5,7 +5,7 @@ ms.date: 05/26/2021
 ---
 # Error generated when executable project references mismatched executable
 
-Generally, an executable project references library projects, not other executable projects. An executable project can also reference another executable project to use APIs that are defined in it. Some customers want to reference an executable project from another executable project so that both apps are placed in and are runnable from the same output folder. However, this scenario does not work if a self-contained executable references a non-self-contained executable, or vice versa. Because of how the application host works, neither app is launchable. To prevent situations where apps can't be launched, .NET SDK 5 produces compile-time errors NETSDK1150 and NETSDK1151 when it detects mismatched executable references.
+Generally, an executable project references library projects, not other executable projects. An executable project can also reference another executable project to use APIs that are defined in it. Some developers want to reference an executable project from another executable project so that both apps are placed in and are runnable from the same output folder. However, this scenario does not work if a self-contained executable references a non-self-contained executable, or vice versa. Because of how the application host works, neither app can be launched. To prevent situations where apps aren't runnable, .NET SDK 5+ produces compile-time errors NETSDK1150 and NETSDK1151 when it detects mismatched executable references.
 
 ## Change description
 

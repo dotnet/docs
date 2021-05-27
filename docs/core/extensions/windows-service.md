@@ -78,7 +78,19 @@ Replace the existing `Worker` from the template with the following C# code, and 
 In the preceding code, the `JokeService` is injected along with an `ILogger`. Both are made available to the class as `private readonly` fields. In the `ExecuteAsync` method, the joke service requests a joke and writes it to the logger. In this case, the logger is implemented by the Windows Event Log - <xref:Microsoft.Extensions.Logging.EventLog.EventLogLogger?displayProperty=nameWithType>. Logs written are persisted to, and available for viewing in the **Event Viewer**.
 
 > [!NOTE]
-> By default, the *Event Log* log level is <xref:Microsoft.Extensions.Logging.LogLevel.Warning>. This can be configured, but for demonstration purposes the `WindowsBackgroundService` logs with the <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogWarning%2A> extension method. For more information on configuring log levels, see [Configure logging](logging.md#configure-logging).
+> By default, the *Event Log* severity is <xref:Microsoft.Extensions.Logging.LogLevel.Warning>. This can be configured, but for demonstration purposes the `WindowsBackgroundService` logs with the <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogWarning%2A> extension method. To specifically target the `EventLog` level, add an entry in the **appsettings.{Environment}.json**, or provide an <xref:Microsoft.Extensions.Logging.EventLog.EventLogSettings.Filter?displayProperty=nameWithType> value.
+>
+> ```json
+> "Logging": {
+>   "EventLog": {
+>     "LogLevel": {
+>       "Default": "Information"
+>     }
+>   }
+> }
+> ```
+>
+> For more information on configuring log levels, see [Configure Windows EventLog](logging.md#windows-eventlog).
 
 Replace the template *Program.cs* file contents with the following C# code:
 

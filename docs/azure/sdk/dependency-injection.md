@@ -69,7 +69,7 @@ public class MyApiController : ControllerBase
         _blobServiceClient = blobServiceClient;
     }
   
-    /// Get a list of all the blobs in the demo container
+    // Get a list of all the blobs in the demo container
     [HttpGet]
     public async Task<IEnumerable<string>> Get()
     {

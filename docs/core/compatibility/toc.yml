@@ -299,6 +299,8 @@ items:
           href: networking/5.0/winhttphandler-removed-from-runtime.md
       - name: SDK
         items:
+        - name: Error when referencing mismatched executable
+          href: sdk/5.0/referencing-executable-generates-error.md
         - name: OutputType set to WinExe
           href: sdk/5.0/automatically-infer-winexe-output-type.md
         - name: WinForms and WPF apps use Microsoft.NET.Sdk
@@ -655,6 +657,8 @@ items:
       items:
       - name: .NET 5
         items:
+        - name: Error when referencing mismatched executable
+          href: sdk/5.0/referencing-executable-generates-error.md
         - name: OutputType set to WinExe
           href: sdk/5.0/automatically-infer-winexe-output-type.md
         - name: WinForms and WPF apps use Microsoft.NET.Sdk

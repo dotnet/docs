@@ -7,10 +7,13 @@ ms.date: 04/24/2021
 
 The following APIs are marked as obsolete, starting in .NET 6. Using them in code generates warning `SYSLIB0014` at compile time.
 
-- <xref:System.Net.WebRequest?displayProperty=fullName>
-- <xref:System.Net.HttpWebRequest?displayProperty=fullName>
-- <xref:System.Net.ServicePoint?displayProperty=fullName>
-- <xref:System.Net.WebClient?displayProperty=fullName>
+- <xref:System.Net.WebRequest.%23ctor>
+- <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName>
+- <xref:System.Net.WebRequest.CreateHttp%2A?displayProperty=fullName>
+- <xref:System.Net.WebRequest.CreateDefault(System.Uri)?displayProperty=fullName>
+- <xref:System.Net.HttpWebRequest.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)>
+- <xref:System.Net.ServicePointManager.FindServicePoint%2A?displayProperty=fullName>
+- <xref:System.Net.WebClient.%23ctor>
 
 ## Workarounds
 

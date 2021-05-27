@@ -5,7 +5,7 @@ ms.date: 10/20/2020
 ---
 # SYSLIB0002: PrincipalPermissionAttribute is obsolete
 
-The <xref:System.Security.Permissions.PrincipalPermissionAttribute> constructor is obsolete and produces compile-time error `SYSLIB0002`, starting in .NET 5.0. You cannot instantiate this attribute or apply it to a method.
+The <xref:System.Security.Permissions.PrincipalPermissionAttribute> constructor is obsolete and produces compile-time error `SYSLIB0002`, starting in .NET 5. You cannot instantiate this attribute or apply it to a method.
 
 Unlike other obsoletion warnings, you can't suppress the error.
 

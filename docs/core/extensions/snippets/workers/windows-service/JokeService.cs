@@ -25,7 +25,7 @@ namespace App.WindowsService
             {
                 // The API returns an array with a single entry.
                 Joke[]? jokes = await _httpClient.GetFromJsonAsync<Joke[]>(
-                        JokeApiUrl, _options);
+                    JokeApiUrl, _options);
 
                 Joke? joke = jokes?[0];
 

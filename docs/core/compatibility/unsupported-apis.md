@@ -164,6 +164,8 @@ This article organizes the affected APIs by namespace.
 
 | Member | Platforms that throw |
 | - | - |
+| <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> | All |
+| <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.AssemblyName.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |

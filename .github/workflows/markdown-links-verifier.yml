@@ -13,4 +13,4 @@ jobs:
     - name: Validate links
       env:
         GITHUB_PR_NUMBER: ${{ github.event.pull_request.number }}
-      uses: MSDocsBuild/build-verifier@main
+      uses: MSDocsBuild/build-verifier@includes

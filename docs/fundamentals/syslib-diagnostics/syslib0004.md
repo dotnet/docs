@@ -5,7 +5,7 @@ ms.date: 10/20/2020
 ---
 # SYSLIB0004: The constrained execution region (CER) feature is not supported
 
-The [Constrained execution regions (CER)](../../framework/performance/constrained-execution-regions.md) feature is supported only in .NET Framework. As such, various CER-related APIs are marked obsolete, starting in .NET 5.0. Using these APIs generates warning `SYSLIB0004` at compile time.
+The [Constrained execution regions (CER)](../../framework/performance/constrained-execution-regions.md) feature is supported only in .NET Framework. As such, various CER-related APIs are marked obsolete, starting in .NET 5. Using these APIs generates warning `SYSLIB0004` at compile time.
 
 The following CER-related APIs are obsolete:
 

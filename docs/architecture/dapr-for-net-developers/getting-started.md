@@ -416,6 +416,7 @@ In the final part of this example, you'll add container support and run the solu
     FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
     WORKDIR /app
     EXPOSE 80
+    EXPOSE 443
 
     FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
     WORKDIR /src
@@ -469,7 +470,7 @@ In the final part of this example, you'll add container support and run the solu
 
       daprfrontend-dapr:
         image: "daprio/daprd:latest"
-        command: [ "./daprd", "-app-id", "daprfrontend", "-app-port", "80" ]
+        command: [ "./daprd", "-app-id", "daprfrontend", "-app-port", "443", "-app-ssl" ]
         depends_on:
           - daprfrontend
         network_mode: "service:daprfrontend"
@@ -484,9 +485,9 @@ In the final part of this example, you'll add container support and run the solu
 
       daprbackend-dapr:
         image: "daprio/daprd:latest"
-        command: [ "./daprd", "-app-id", "daprbackend", "-app-port", "80" ]
+        command: [ "./daprd", "-app-id", "daprbackend", "-app-port", "443", "-app-ssl" ]
         depends_on:
-          - daprfrontend
+          - daprbackend
         network_mode: "service:daprbackend"
     ```
 

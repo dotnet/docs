@@ -25,7 +25,7 @@ Starting in the 5.0.100 version of the .NET SDK, when `OutputType` is set to `Ex
 </PropertyGroup>
 ```
 
- If `OutputType` is not specified in the project file, it defaults to `Library` and that value doesn't change.
+If `OutputType` is not specified in the project file, it defaults to `Library` and that value doesn't change.
 
 ## Reason for change
 
@@ -33,7 +33,7 @@ It's assumed that most users don't want a console window to open when a WPF or W
 
 ## Version introduced
 
-.NET 5.0.100
+.NET SDK 5.0.100
 
 ## Recommended action
 
@@ -55,6 +55,7 @@ Not detectable via API analysis.
 
 ### Category
 
+- SDK
 - Windows Forms
 - Windows Presentation Framework (WPF)
 

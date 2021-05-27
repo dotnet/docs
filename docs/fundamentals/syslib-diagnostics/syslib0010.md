@@ -5,7 +5,7 @@ ms.date: 10/20/2020
 ---
 # SYSLIB0010: Unsupported remoting APIs
 
-[.NET remoting](/previous-versions/dotnet/netframework-1.1/kwdt6w2k(v=vs.71)) is a legacy technology, and the infrastructure exists only in .NET Framework. The following remoting-related APIs are marked as obsolete, starting in .NET 5.0. Using them in code generates warning `SYSLIB0010` at compile time.
+[.NET remoting](/previous-versions/dotnet/netframework-1.1/kwdt6w2k(v=vs.71)) is a legacy technology, and the infrastructure exists only in .NET Framework. The following remoting-related APIs are marked as obsolete, starting in .NET 5. Using them in code generates warning `SYSLIB0010` at compile time and throws a <xref:System.PlatformNotSupportedException> at run time.
 
 - <xref:System.MarshalByRefObject.GetLifetimeService?displayProperty=nameWithType>
 - <xref:System.MarshalByRefObject.InitializeLifetimeService?displayProperty=nameWithType>

@@ -5,7 +5,7 @@ ms.date: 10/20/2020
 ---
 # SYSLIB0012: Assembly.CodeBase and Assembly.EscapedCodeBase are obsolete
 
-The following APIs are marked as obsolete, starting in .NET 5.0. Using them in code generates warning `SYSLIB0012` at compile time.
+The following APIs are marked as obsolete, starting in .NET 5. Using them in code generates warning `SYSLIB0012` at compile time.
 
 - <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType>
 - <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType>

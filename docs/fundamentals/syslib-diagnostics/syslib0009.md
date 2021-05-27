@@ -6,7 +6,7 @@ ms.date: 10/20/2020
 
 # SYSLIB0009: The AuthenticationManager Authenticate and PreAuthenticate methods are not supported
 
-The following APIs are marked obsolete, starting in .NET 5.0. Use of these APIs generates warning `SYSLIB0009` at compile time.
+The following APIs are marked obsolete, starting in .NET 5. Use of these APIs generates warning `SYSLIB0009` at compile time and throws a <xref:System.PlatformNotSupportedException> at run time.
 
 - <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType>
 - <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType>

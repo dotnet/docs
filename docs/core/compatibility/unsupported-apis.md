@@ -166,9 +166,9 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.AssemblyName.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
+| <xref:System.Reflection.AssemblyName.KeyPair?displayProperty=fullName> | All |
 | <xref:System.Reflection.AssemblyName.OnDeserialization(System.Object)?displayProperty=nameWithType> | All |
-| <xref:System.Reflection.StrongNameKeyPair.%23ctor(System.String)> | All |
-| <xref:System.Reflection.StrongNameKeyPair.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |
+| <xref:System.Reflection.StrongNameKeyPair.%23ctor%2A> | All |
 | <xref:System.Reflection.StrongNameKeyPair.PublicKey?displayProperty=nameWithType> | All |
 
 ## System.Runtime.CompilerServices

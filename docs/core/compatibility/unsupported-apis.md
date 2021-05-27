@@ -6,7 +6,7 @@ ms.date: 10/13/2020
 ---
 # APIs that always throw exceptions on .NET Core and .NET 5+
 
-The following APIs will always throw a <xref:System.PlatformNotSupportedException> on .NET 5 and later versions (including all versions of .NET Core) on all or a subset of platforms.
+The following APIs will always throw an exception on .NET 5 and later versions (including all versions of .NET Core) on all or a subset of platforms. In most cases, the exception that's thrown is <xref:System.PlatformNotSupportedException>.
 
 This article organizes the affected APIs by namespace.
 
@@ -21,6 +21,7 @@ This article organizes the affected APIs by namespace.
 | - | - |
 | <xref:System.AppDomain.CreateDomain%2A?displayProperty=nameWithType> | All |
 | <xref:System.AppDomain.ExecuteAssembly(System.String,System.String[],System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)?displayProperty=nameWithType> | All |
+| <xref:System.AppDomain.Unload(System.AppDomain)?displayProperty=nameWithType> | All |
 | <xref:System.Console.CapsLock?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Console.NumberLock?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Delegate.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
@@ -163,6 +164,8 @@ This article organizes the affected APIs by namespace.
 
 | Member | Platforms that throw |
 | - | - |
+| <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> | All |
+| <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.AssemblyName.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |

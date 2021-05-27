@@ -11,6 +11,7 @@ As a result, most code access security (CAS)-related types in .NET are obsolete,
 
 The complete list of obsolete CAS APIs is as follows:
 
+- <xref:System.AppDomain.ExecuteAssembly(System.String,System.String[],System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)?displayProperty=fullName>
 - <xref:System.AppDomain.PermissionSet?displayProperty=fullName>
 - <xref:System.Configuration.ConfigurationPermission?displayProperty=fullName>
 - <xref:System.Configuration.ConfigurationPermissionAttribute?displayProperty=fullName>

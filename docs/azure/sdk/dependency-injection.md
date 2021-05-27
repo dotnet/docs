@@ -1,14 +1,14 @@
 ---
-title: Dependency injection with the Azure .NET SDK
+title: Dependency injection with the Azure SDK for .NET
 description: Learn how to use dependency injection with the Azure SDK for .NET client libraries.
 ms.date: 05/20/2021
 ms.author: pakrym
 author: pakrym
 ---
 
-# Dependency injection with the Azure .NET SDK
+# Dependency injection with the Azure SDK for .NET
 
-This article demonstrates how to register Azure service clients from the [latest Azure .NET SDKs](https://azure.github.io/azure-sdk/releases/latest/index.html#net) in an ASP.NET Core app. Every ASP.NET Core app starts up by using the instructions provided in the `Startup` class. The `Startup` class includes a `ConfigureServices` method, which is an ideal place to configure clients.
+This article demonstrates how to register Azure service clients from the [latest Azure SDKs for .NET](https://azure.github.io/azure-sdk/releases/latest/index.html#net) in an ASP.NET Core app. Every ASP.NET Core app starts up by using the instructions provided in the `Startup` class. The `Startup` class includes a `ConfigureServices` method, which is an ideal place to configure clients.
 
 To configure the service clients, first add the following NuGet packages to your project:
 

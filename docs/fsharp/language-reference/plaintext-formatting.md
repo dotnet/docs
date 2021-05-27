@@ -70,9 +70,9 @@ where the type is interpreted as follows:
 
 | Format specifier   | Type(s)        | Remarks                      |
 |:-------------------|:---------------|:-----------------------------|
-| `%b`               | bool      | Formatted as `true` or `false`                |
-| `%s`               | string    | Formatted as its unescaped contents         |
-| `%c`               | char      | Formatted as the character literal  |
+| `%b`               | `bool`   | Formatted as `true` or `false`                |
+| `%s`               | `string` | Formatted as its unescaped contents         |
+| `%c`               | `char`   | Formatted as the character literal  |
 | `%d`, `%i`         | a basic integer type | Formatted as a decimal integer, signed if the basic integer type is signed |
 | `%u`               | a basic integer type | Formatted as an unsigned decimal integer   |
 | `%x`, `%X`         | a basic integer type | Formatted as an unsigned hexadecimal number (a-f or A-F for hex digits respectively)  |

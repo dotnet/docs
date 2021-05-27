@@ -29,7 +29,9 @@ namespace App.WindowsService
 
                 Joke? joke = jokes?[0];
 
-                return joke is not null ? joke.ToString() : "No joke here...";
+                return joke is not null
+                    ? $"{joke.Setup}{Environment.NewLine}{joke.Punchline}"
+                    : "No joke here...";
             }
             catch (Exception ex)
             {

@@ -30,7 +30,7 @@ In this tutorial, you'll learn how to:
   - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
 
 <!-- ## Create a new project -->
-[!INCLUDE [file-new-worker](includes/file-new-worker.md)]
+[!INCLUDE [file-new-worker](includes/shared/file-new-worker.md)]
 
 ## Install NuGet package
 

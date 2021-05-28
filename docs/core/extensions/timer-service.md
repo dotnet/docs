@@ -26,7 +26,7 @@ In this tutorial, you learn how to:
   - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
 
 <!-- ## Create a new project -->
-[!INCLUDE [file-new-worker](includes/file-new-worker.md)]
+[!INCLUDE [file-new-worker](includes/shared/file-new-worker.md)]
 
 ## Create timer service
 
@@ -56,7 +56,7 @@ For more information on registering services, see [Dependency injection in .NET]
 
 ## Verify service functionality
 
-[!INCLUDE [run-app](includes/run-app.md)]
+[!INCLUDE [run-app](includes/shared/run-app.md)]
 
 Let the application run for a bit to generate several execution count increments. You will see output similar to the following:
 
@@ -83,7 +83,7 @@ info: App.TimerHostedService.TimerService[0]
       TimerHostedService is stopping.
 ```
 
-[!INCLUDE [stop-app](includes/stop-app.md)]
+[!INCLUDE [stop-app](includes/shared/stop-app.md)]
 
 ## See also
 

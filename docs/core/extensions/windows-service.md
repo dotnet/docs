@@ -116,11 +116,11 @@ The preceding highlighted lines of the project file define the following behavio
 
 To publish the app from Visual Studio, you can create a publish profile. Right-click on the project in the **Solution Explorer**, and select **Publish...**. Then, select **Add a publish profile** to create a profile. From the **Publish** dialog, select **Folder** as your **Target**.
 
-:::image type="content" source="media/windows-service/publish-dialog.png" lightbox="media/publish-dialog.png" alt-text="The Visual Studio Publish dialog":::
+:::image type="content" source="media/windows-service/publish-dialog.png" lightbox="media/windows-service/publish-dialog.png" alt-text="The Visual Studio Publish dialog":::
 
 Leave the default **Location**, and then select **Finish**. Once the profile is created, select **Show all settings**, and verify your **Profile settings**.
 
-:::image type="content" source="media/windows-service/profile-settings.png" lightbox="media/profile-settings.png" alt-text="The Visual Studio Profile settings":::
+:::image type="content" source="media/windows-service/profile-settings.png" lightbox="media/windows-service/profile-settings.png" alt-text="The Visual Studio Profile settings":::
 
 Ensure that the following settings are specified:
 
@@ -157,7 +157,7 @@ For more information, see [sc.exe create](/windows-server/administration/windows
 
 To see the app created as a Windows Service, open **Services**. Select the Windows key (or <kbd>Ctrl</kbd> + <kbd>Esc</kbd>), and search from "Services". From the **Services** app, you should be able to find your service by its name.
 
-:::image type="content" source="media/windows-service/windows-service.png" lightbox="media/windows-service.png" alt-text="The Services user interface":::
+:::image type="content" source="media/windows-service/windows-service.png" lightbox="media/windows-service/windows-service.png" alt-text="The Services user interface":::
 
 ## Verify service functionality
 
@@ -196,7 +196,7 @@ The service **Status** will transition out of `START_PENDING` to **Running**.
 
 To view logs, open the **Event Viewer**. Select the Windows key (or <kbd>Ctrl</kbd> + <kbd>Esc</kbd>), and search for `"Event Viewer"`. Select the **Event Viewer (Local)** > **Windows Logs** > **Application** node. You should see a **Warning** level entry with a **Source** matching the apps namespace. Double-click the entry, or right-click and select **Event Properties** to view the details.
 
-:::image type="content" source="media/windows-service/event-properties.png" lightbox="media/event-properties.png" alt-text="The Event Properties dialog, with details logged from the service":::
+:::image type="content" source="media/windows-service/event-properties.png" lightbox="media/windows-service/event-properties.png" alt-text="The Event Properties dialog, with details logged from the service":::
 
 After seeing logs in the **Event Log**, you should stop the service. It's designed to log a random joke once per minute. This is intentional behaviour, but is not practical for production services.
 

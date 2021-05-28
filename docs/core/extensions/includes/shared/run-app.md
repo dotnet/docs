@@ -11,4 +11,4 @@ To run the application from Visual Studio, select <kbd>F5</kbd> or select the **
 dotnet run
 ```
 
-For more information on the .NET CLI run command, see [dotnet run](../../tools/dotnet-run.md).
+For more information on the .NET CLI run command, see [dotnet run](../../../tools/dotnet-run.md).

@@ -13,7 +13,7 @@ To create a new Worker Service project with Visual Studio, you'd select **File**
 dotnet new worker --name <Project.Name>
 ```
 
-For more information on the .NET CLI new worker service project command, see [dotnet new worker](../../tools/dotnet-new-sdk-templates.md#web-others).
+For more information on the .NET CLI new worker service project command, see [dotnet new worker](../../../tools/dotnet-new-sdk-templates.md#web-others).
 
 > [!TIP]
 > If you're using Visual Studio Code, you can run .NET CLI commands from the integrated terminal. For more information, see [Visual Studio Code: Integrated Terminal](https://code.visualstudio.com/docs/editor/integrated-terminal).

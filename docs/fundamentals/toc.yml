@@ -389,6 +389,14 @@ items:
         href: syslib-diagnostics/syslib0019.md
       - name: SYSLIB0020
         href: syslib-diagnostics/syslib0020.md
+      - name: SYSLIB0021
+        href: syslib-diagnostics/syslib0021.md
+      - name: SYSLIB0022
+        href: syslib-diagnostics/syslib0022.md
+      - name: SYSLIB0023
+        href: syslib-diagnostics/syslib0023.md
+      - name: SYSLIB0024
+        href: syslib-diagnostics/syslib0024.md
     - name: Source-generated code
       items:
       - name: Overview
@@ -898,6 +906,8 @@ items:
             href: code-analysis/quality-rules/ca1841.md
           - name: CA1845
             href: code-analysis/quality-rules/ca1845.md
+          - name: CA1846
+            href: code-analysis/quality-rules/ca1846.md
         - name: SingleFile rules
           items:
           - name: Overview
@@ -2007,6 +2017,19 @@ items:
       href: ../core/extensions/console-log-formatter.md
   - name: HostBuilder (generic host)
     href: ../core/extensions/generic-host.md
+  - name: Worker Services
+    items:
+    - name: Overview
+      displayName: workers,worker service,BackgroundService,IHostedService,queue service,timer service
+      href: ../core/extensions/workers.md
+    - name: Create a Queue Service
+      href: ../core/extensions/queue-service.md
+    - name: Use scoped services with a BackgroundService
+      href: ../core/extensions/scoped-service.md
+    - name: Create a Windows Service using BackgroundService
+      href: ../core/extensions/windows-service.md
+    - name: Implement the IHostedService interface
+      href: ../core/extensions/timer-service.md
 - name: Data access
   items:
   - name: LINQ

@@ -33,7 +33,6 @@ Host.CreateBuilder(args)
         {
             hostOptions.BackgroundServiceExceptionBehavior = BackgroundServiceExceptionBehavior.Ignore;
         });
-            
     });
 ```
 

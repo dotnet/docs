@@ -56,7 +56,7 @@ By convention, extension methods on `ILoggingBuilder` are used to register the c
 
 Running this simple application will render color output to the console window similar to the following image:
 
-:::image type="content" source="media/color-console-logger.png" alt-text="Color console logger sample output":::
+:::image type="content" source="media/custom-logging-provider/color-console-logger.png" alt-text="Color console logger sample output":::
 
 ## See also
 

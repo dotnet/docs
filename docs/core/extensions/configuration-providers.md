@@ -163,7 +163,7 @@ The preceding environment settings:
 
 With Visual Studio 2019 version 16.10 preview 4 and later, you can specify environment variables using the **Launch Profiles** dialog.
 
-:::image type="content" source="media/launch-profiles-env-vars.png" alt-text="Launch Profiles dialog showing environment variables" lightbox="media/launch-profiles-env-vars.png":::
+:::image type="content" source="media/configuration-providers/launch-profiles-env-vars.png" alt-text="Launch Profiles dialog showing environment variables" lightbox="media/launch-profiles-env-vars.png":::
 
 The following [setx](/windows-server/administration/windows-commands/setx) commands can be used to set the environment keys and values on Windows. Unlike `set`, `setx` settings are persisted. `/M` sets the variable in the system environment. If the `/M` switch isn't used, a user environment variable is set.
 
@@ -249,7 +249,7 @@ By default, configuration values set on the command line override configuration 
 
 With Visual Studio 2019 version 16.10 preview 4 and later, you can specify command-line arguments using the **Launch Profiles** dialog.
 
-:::image type="content" source="media/launch-profiles-cmd-line-args.png" alt-text="Launch Profiles dialog showing command-line arguments" lightbox="media/launch-profiles-cmd-line-args.png":::
+:::image type="content" source="media/configuration-providers/launch-profiles-cmd-line-args.png" alt-text="Launch Profiles dialog showing command-line arguments" lightbox="media/launch-profiles-cmd-line-args.png":::
 
 ### Command-line arguments
 

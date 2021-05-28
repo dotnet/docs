@@ -45,6 +45,7 @@ items:
       href: fundamentals/program-structure/index.md
     - name: Main method
       href: fundamentals/program-structure/main-command-line.md
+    # TODO: Move top level statements before main method, but remove any dependencies.
     - name: Top-level statements
       href: fundamentals/program-structure/top-level-statements.md
   - name: Type system
@@ -81,6 +82,10 @@ items:
       href: fundamentals/object-oriented/polymorphism.md
   - name: Functional techniques
     items:
+    # TASK: Refine TOC
+    # This section needs more
+    # In F#, discussion of "object programming" -> objects become more sophisticated records.
+    # Consider that FP is a "flatter data hierarchy"
     # - Conceptual overview
     #   - Expressions (how different than OO and expressions?)
     #   - separation of data & algorithms
@@ -89,6 +94,7 @@ items:
     # In F#, discussion of "object programming" -> objects become more sophisticated records.
     # - language features:
     #   - Lambdas
+    #   -  construction "withers"
     #   - Positional records as DTOs
     - name: Pattern matching
       href: fundamentals/functional/pattern-matching.md
@@ -184,98 +190,6 @@ items:
       href: whats-new/tutorials/upgrade-to-nullable-references.md
     - name: Generate and consume asynchronous streams
       href: whats-new/tutorials/generate-consume-asynchronous-stream.md
-# Project: 1st month concepts See [23464](https://github.com/dotnet/docs/pull/23464)
-- name: Fundamental concepts
-  items:
-  - name: type system
-    items:
-    - name: Overview
-      href: programming-guide/types/index.md
-    - name: Namespaces
-      href: programming-guide/namespaces/index.md
-    - name: Basic Types
-      href: basic-types.md
-    - name: Classes
-      href: programming-guide/classes-and-structs/classes.md
-    - name: Interfaces
-      href: programming-guide/interfaces/index.md
-    - name: Generics
-      href: programming-guide/generics/index.md
-    # See [#22671](https://github.com/dotnet/docs/issues/22671)
-    # NEW ARTICLE: Records
-    # NEW ARTICLE: Tuples
-    # NEW ARTICLE: Anonymous types
-    # NEW ARTICLE: structs (there may be existing content to harvest)
-  - name: Program structure
-    items:
-    - name: Overview
-      href: programming-guide/inside-a-program/general-structure-of-a-csharp-program.md
-    - name: Main method
-      href: programming-guide/main-and-command-args/index.md
-    - name: Main() Return Values
-      href: programming-guide/main-and-command-args/main-return-values.md
-    - name: Command-Line Arguments
-      href: programming-guide/main-and-command-args/command-line-arguments.md
-    - name: Top-level statements
-      href: programming-guide/main-and-command-args/top-level-statements.md
-  - name: Object Oriented techniques
-    items:
-    - name: Encapsulation
-      href: programming-guide/classes-and-structs/index.md
-    - name: Inheritance
-      href: programming-guide/classes-and-structs/inheritance.md
-    - name: Polymorphism
-      href: programming-guide/classes-and-structs/polymorphism.md
-    - name: Tutorials
-      items:
-      - name: Introduction to classes
-        href: tutorials/intro-to-csharp/introduction-to-classes.md
-      - name: Object-Oriented C#
-        href: tutorials/intro-to-csharp/object-oriented-programming.md
-  - name: Functional techniques
-  # TASK: Refine TOC
-  # This section needs more
-  # - Conceptual overview
-  #   - Expressions (how different than OO and expressions?)
-  #   - separation of data & algorithms
-  #   - immutability (emphasize constructors & passing data to constructor, get/init)
-  # In F#, discussion of "object programming" -> objects become more sophisticated records.
-  # - language features:
-  #   - Lambdas
-  #   -  construction "withers"
-  #   - Functional purity / functions as arguments or return values
-  #   - would DI be part of this? maybe. (More likely not, conversation with Phillip - not as "fundamental")
-  # Consider that FP is a "flatter data hierarchy"
-    items:
-    - name: Pattern Matching
-      href: pattern-matching.md
-    - name: Discards
-      href: discards.md
-    - name: Deconstructing tuples and other types
-      href: deconstruct.md
-    - name: Cast using is and as operators
-      href: how-to/safely-cast-using-pattern-matching-is-and-as-operators.md
-  - name: Exceptions and errors
-    items:
-    - name: Overview
-      displayName: exceptions
-      href: programming-guide/exceptions/index.md
-    - name: Using Exceptions
-      href: programming-guide/exceptions/using-exceptions.md
-    - name: Exception Handling
-      href: programming-guide/exceptions/exception-handling.md
-    - name: Creating and Throwing Exceptions
-      href: programming-guide/exceptions/creating-and-throwing-exceptions.md
-    - name: Compiler-Generated Exceptions
-      href: programming-guide/exceptions/compiler-generated-exceptions.md
-    - name: How to
-      items:
-      - name: "How to handle an exception using try-catch"
-        href: programming-guide/exceptions/how-to-handle-an-exception-using-try-catch.md
-      - name: "How to execute cleanup code using finally"
-        href: programming-guide/exceptions/how-to-execute-cleanup-code-using-finally.md
-      - name: "How to catch a non-CLS exception"
-        href: programming-guide/exceptions/how-to-catch-a-non-cls-exception.md
 - name: Text and strings
   items:
   - name: Overview
@@ -797,7 +711,7 @@ items:
     href: programming-guide/concepts/async/task-asynchronous-programming-model.md
   - name: Async return types
     href: programming-guide/concepts/async/async-return-types.md
-# TODO: Add article on asynchronous error scenarios, including multiple inner exceptions
+  # TODO: Add article on asynchronous error scenarios, including multiple inner exceptions
   - name: Cancel a list of tasks
     href: programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md
   - name: Cancel tasks after a period of time
@@ -806,13 +720,6 @@ items:
     href: programming-guide/concepts/async/start-multiple-async-tasks-and-process-them-as-they-complete.md
   - name: Asynchronous file access
     href: programming-guide/concepts/async/using-async-for-file-access.md
-# Later: This needs to be more fully fleshed out
-- name: Style and practices
-  items:
-  - name: Identifier names
-    href: programming-guide/inside-a-program/identifier-names.md
-  - name: Coding Conventions
-    href: programming-guide/inside-a-program/coding-conventions.md
 - name: Advanced scenarios
   items:
   - name: Versioning

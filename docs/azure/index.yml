@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Azure for .NET developers
-summary: Learn to use the Azure .NET SDK. Browse API reference, sample code, tutorials, quickstarts, conceptual articles and more. Know that .NET 💜 Azure.
+summary: Learn to use the Azure SDK for .NET. Browse API reference, sample code, tutorials, quickstarts, conceptual articles and more. Know that .NET 💜 Azure.
 brand: dotnet
 
 metadata:
@@ -36,7 +36,7 @@ highlightedContent:
       title: Secure custom APIs with Microsoft Identity
       url: /learn/modules/identity-secure-custom-api/
     - itemType: get-started
-      title: Azure .NET SDK
+      title: Azure SDK for .NET
       url: sdk/azure-sdk-for-dotnet.md
 
 conceptualContent:
@@ -219,7 +219,7 @@ conceptualContent:
         - itemType: how-to-guide
           text: Migrate a SQL Server database to Azure
           url: ./migration/sql.md
-    - title: Azure .NET SDK
+    - title: Azure SDK for .NET
       links:
         - itemType: download
           text: Packages

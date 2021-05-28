@@ -1,14 +1,14 @@
 ---
-title: Dependency injection with the Azure .NET SDK
+title: Dependency injection with the Azure SDK for .NET
 description: Learn how to use dependency injection with the Azure SDK for .NET client libraries.
 ms.date: 05/20/2021
 ms.author: pakrym
 author: pakrym
 ---
 
-# Dependency injection with the Azure .NET SDK
+# Dependency injection with the Azure SDK for .NET
 
-This article demonstrates how to register Azure service clients from the [latest Azure .NET SDKs](https://azure.github.io/azure-sdk/releases/latest/index.html#net) in an ASP.NET Core app. Every ASP.NET Core app starts up by using the instructions provided in the `Startup` class. The `Startup` class includes a `ConfigureServices` method, which is an ideal place to configure clients.
+This article demonstrates how to register Azure service clients from the [latest Azure SDKs for .NET](https://azure.github.io/azure-sdk/releases/latest/index.html#net) in an ASP.NET Core app. Every ASP.NET Core app starts up by using the instructions provided in the `Startup` class. The `Startup` class includes a `ConfigureServices` method, which is an ideal place to configure clients.
 
 To configure the service clients, first add the following NuGet packages to your project:
 
@@ -36,10 +36,10 @@ public void ConfigureServices(IServiceCollection services)
     {
         // Add a KeyVault client
         builder.AddSecretClient(keyVaultUrl);
-    
+
         // Add a Storage account client
         builder.AddBlobServiceClient(storageUrl);
-    
+
         // Use DefaultAzureCredential by default
         builder.UseCredential(new DefaultAzureCredential());
     });
@@ -69,13 +69,13 @@ public class MyApiController : ControllerBase
         _blobServiceClient = blobServiceClient;
     }
   
-    /// Get a list of all the blobs in the demo container
+    // Get a list of all the blobs in the demo container
     [HttpGet]
     public async Task<IEnumerable<string>> Get()
     {
         var containerClient = _blobServiceClient.GetBlobContainerClient("demo");
         var results = new List<string>();
-        await foreach (BlobItem blob in containerClient.GetBlobsAsync()) 
+        await foreach (BlobItem blob in containerClient.GetBlobsAsync())
         {
             results.Add(blob.Name);
         }
@@ -120,13 +120,13 @@ public void ConfigureServices(IServiceCollection services)
     {
         // Add a KeyVault client
         builder.AddSecretClient(Configuration.GetSection("KeyVault"));
-    
+
         // Add a storage account client
         builder.AddBlobServiceClient(Configuration.GetSection("Storage"));
-    
+
         // Use DefaultAzureCredential by default
         builder.UseCredential(new DefaultAzureCredential());
-    
+
         // Set up any default settings
         builder.ConfigureDefaults(Configuration.GetSection("AzureDefaults"));
     });
@@ -204,14 +204,14 @@ public void ConfigureServices(IServiceCollection services)
         // Establish the global defaults
         builder.ConfigureDefaults(Configuration.GetSection("AzureDefaults"));
         builder.UseCredential(new DefaultAzureCredential());
-    
+
         // A Key Vault Secrets client using the global defaults
         builder.AddSecretClient(Configuration.GetSection("KeyVault"));
-    
+
         // A Storage client with a custom retry policy
         builder.AddBlobServiceClient(Configuration.GetSection("Storage"))
             .ConfigureOptions(options => options.Retry.MaxRetries = 10);
-    
+
         // A named storage client with a different custom retry policy
         builder.AddBlobServiceClient(Configuration.GetSection("CustomStorage"))
             .WithName("CustomStorage")

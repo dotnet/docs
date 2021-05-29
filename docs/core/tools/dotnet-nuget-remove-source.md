@@ -45,6 +45,6 @@ The `dotnet nuget remove source` command removes an existing source from your Nu
 
 ## See also
 
-- [Package source sections in NuGet.config files](/nuget/reference/nuget-config-file#package-source-sections)
+- [Package source sections in NuGet.Config files](/nuget/reference/nuget-config-file#package-source-sections)
 
 - [sources command (nuget.exe)](/nuget/reference/cli-reference/cli-ref-sources)

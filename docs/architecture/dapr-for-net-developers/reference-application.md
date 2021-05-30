@@ -13,17 +13,17 @@ But, first a little history.
 
 ## eShopOnContainers
 
-Several years ago, Microsoft, in partnership with leading community experts, released a popular guidance book, entitled [.NET Microservices for Containerized .NET Applications](https://dotnet.microsoft.com/download/e-book/microservices-architecture/pdf). Figure 11-1 shows the book:
+Several years ago, Microsoft, in partnership with leading community experts, released a popular guidance book, entitled [.NET Microservices for Containerized .NET Applications](https://dotnet.microsoft.com/download/e-book/microservices-architecture/pdf). Figure 12-1 shows the book:
 
 :::image type="content" source="./media/reference-application/architecting-microservices-book.png" alt-text="Architecting containerized microservice .NET applications.":::
 
-**Figure 11-1**. .NET Microservices: Architecture for Containerized .NET Applications.
+**Figure 12-1**. .NET Microservices: Architecture for Containerized .NET Applications.
 
-The book dove deep into the principles, patterns, and best practices for building distributed applications. It included a full-featured microservice reference application that showcased the architectural concepts. Entitled, [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers), the application shows an e-Commerce storefront that sells various .NET items, including clothing and coffee mugs.  Built in .NET Core, the application is cross-platform and can run in either Linux or Windows containers. Figure 11-2 shows the original eShop architecture.
+The book dove deep into the principles, patterns, and best practices for building distributed applications. It included a full-featured microservice reference application that showcased the architectural concepts. Entitled, [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers), the application shows an e-Commerce storefront that sells various .NET items, including clothing and coffee mugs.  Built in .NET Core, the application is cross-platform and can run in either Linux or Windows containers. Figure 12-2 shows the original eShop architecture.
 
 :::image type="content" source="./media/reference-application/eshop-on-containers.png" alt-text="eShopOnContainers reference application architecture.":::
 
-**Figure 11-2**. Original ShopOnContainers reference application.
+**Figure 12-2**. Original ShopOnContainers reference application.
 
 As you can see, eShopOnContainers includes many moving parts:
 
@@ -36,11 +36,11 @@ The eShopOnContainers reference application has been widely accepted across the 
 
 ## eShopOnDapr
 
-An alternative version of the eShop application accompanies this book. It's called [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr). The updated version evolves the earlier eShopOnContainers application by integrating Dapr building blocks. Figure 11-3 shows the new streamlined solution architecture:  
+An alternative version of the eShop application accompanies this book. It's called [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr). The updated version evolves the earlier eShopOnContainers application by integrating Dapr building blocks. Figure 12-3 shows the new streamlined solution architecture:  
 
 :::image type="content" source="./media/reference-application/eshop-on-dapr.png" alt-text="eShopOnDapr reference application architecture.":::
 
-**Figure 11-3**. eShopOnDapr reference application architecture.
+**Figure 12-3**. eShopOnDapr reference application architecture.
 
 As the focus of the eShopOnDapr reference application is on Dapr, the original application has been updated. The architecture now consists of:
 
@@ -66,11 +66,11 @@ As the focus of the eShopOnDapr reference application is on Dapr, the original a
 
 The eShopOnDapr codebase is more streamlined than the eShopOnContainers codebase. Dapr building blocks replace a large amount of error-prone plumbing code.
 
-Figure 11-4 shows the Dapr integration in the eShop reference application.
+Figure 12-4 shows the Dapr integration in the eShop reference application.
 
 :::image type="content" source="./media/reference-application/eshop-on-dapr-buildingblocks.png" alt-text="eShopOnDapr reference application architecture":::
 
-**Figure 11-4**. Dapr integration in eShopOnDapr.
+**Figure 12-4**. Dapr integration in eShopOnDapr.
 
 In the previous figure, you can see which eShopOnDapr services use which Dapr building blocks.
 
@@ -190,11 +190,11 @@ The Dapr implementation also simplifies changing the underlying data store. For 
 
 ### Service invocation
 
-The original eShopOnContainers used a mix of HTTP/REST and gRPC services. The use of gRPC was limited to communication between an [aggregator service](../cloud-native/service-to-service-communication.md#service-aggregator-pattern) and core back-end services. Figure 11-5 shows the original architecture:
+The original eShopOnContainers used a mix of HTTP/REST and gRPC services. The use of gRPC was limited to communication between an [aggregator service](../cloud-native/service-to-service-communication.md#service-aggregator-pattern) and core back-end services. Figure 12-5 shows the original architecture:
 
 :::image type="content" source="./media/reference-application/service-invocation-eshop-on-containers.png" alt-text="gRPC and HTTP/REST calls in eShopOnContainers.":::
 
-**Figure 11-5**. gRPC and HTTP/REST calls in eShopOnContainers.
+**Figure 12-5**. gRPC and HTTP/REST calls in eShopOnContainers.
 
 Note the steps from the previous figure:
 
@@ -206,11 +206,11 @@ Note the steps from the previous figure:
 
 1. The aggregator service uses gRPC to call core back-end services.
 
-In the updated eShopOnDapr implementation, Dapr sidecars are added to the services and API gateway. Figure 11-6 show the updated architecture:
+In the updated eShopOnDapr implementation, Dapr sidecars are added to the services and API gateway. Figure 12-6 show the updated architecture:
 
 :::image type="content" source="./media/reference-application/service-invocation-eshop-on-dapr.png" alt-text="gRPC and HTTP/REST calls with sidecars in eShopOnContainers.":::
 
-**Figure 11-6**. Updated eShop architecture using Dapr.
+**Figure 12-6**. Updated eShop architecture using Dapr.
 
 Note the updated steps from the previous figure:
 
@@ -293,11 +293,11 @@ GET http://localhost/api/v1/catalog/items?pageSize=20
 
 #### Make aggregated service calls using the .NET SDK
 
-Most calls from the eShop front end are simple CRUD calls. The API gateway forwards them to a single service for processing. Some scenarios, however, require multiple back-end services to work together to complete a request. For these more complex calls, eShop uses the web shopping aggregator service to mediate the workflow across multiple services. Figure 11-7 show the processing sequence of adding an item to your shopping basket:
+Most calls from the eShop front end are simple CRUD calls. The API gateway forwards them to a single service for processing. Some scenarios, however, require multiple back-end services to work together to complete a request. For these more complex calls, eShop uses the web shopping aggregator service to mediate the workflow across multiple services. Figure 12-7 show the processing sequence of adding an item to your shopping basket:
 
 :::image type="content" source="./media/reference-application/service-invocation-complex-call.png" alt-text="Update basket sequence diagram.":::
 
-**Figure 11-7**. Update shopping basket sequence.
+**Figure 12-7**. Update shopping basket sequence.
 
 The aggregator service first retrieves catalog items from the Catalog API. It then validates item availability and pricing. Finally, the aggregator service saves the updated shopping basket by calling the Basket API.
 

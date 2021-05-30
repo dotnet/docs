@@ -9,6 +9,8 @@ ms.date: 04/30/2021
 
 Earlier in the book, you've learned about the foundational benefits of Dapr. You saw how Dapr can help your team construct distributed applications while reducing architectural and operational complexity. Along the way, you've had the opportunity to build some small Dapr apps. Now, it's time to explore an end-to-end microservice application that demonstrates Dapr building blocks and components. In order to keep the focus on applying Dapr, the sample application used throughout this book is kept relatively simple.
 
+> You can get the code for the sample application from the [Dapr Traffic Control GitHub repo](https://github.com/EdwinVW/dapr-traffic-control). This repository contains a detailed description on how you can run the sample application on your machine.
+
 The Traffic Control sample application simulates a highway traffic control system. Its purpose is to detect speeding vehicles and send the driver of each speeding vehicle a fine. These systems actually exist in real life and this is how they work. A set of cameras (one above each lane) is placed at the beginning and at the end of a stretch of highway without on- or off-ramps of a certain length (say 10 kilometers). When a vehicle passes under one of the cameras, it takes a photograph of the vehicle. Using Optical Character Recognition (OCR) software, is extracts the license number of the vehicle from the photo. Using the entry- and exit-timestamp of each vehicle, the system calculates the average speed of that vehicle. If the average speed is above the maximum speed limit on this stretch of highway, the system retrieves the contact information of the driver of the vehicle and automatically sends him or her a fine.
 
 Although the simulation is quite simple, responsibilities within the system are separated into several microservices. In figure 4.1 you see an overview of the services that are part of the application:
@@ -17,7 +19,7 @@ Although the simulation is quite simple, responsibilities within the system are 
 
 **Figure 4-1**. The services in the sample application.
 
-\- The **Camera Simulation** is a .NET Core console application that will simulate passing cars by sending messages to the TrafficControl service. For every simulated car it invokes one of the TrafficContriol service's endpoints.
+\- The **Camera Simulation** is a .NET Core console application that will simulate passing cars by sending messages to the TrafficControl service. For every simulated car it invokes one of the TrafficControl service's endpoints.
 
 \- The **TrafficControl service** is an ASP.NET Core WebAPI application that offers 2 endpoints: `/entrycam` and `/exitcam`. Invoking one of the endpoints simulates a car passing under one of the entry- or exit-cameras respectively. Because this is a simulation, the payload of the request simply contains the license plate of the car (so there is no actual OCR going on).
 
@@ -68,7 +70,17 @@ Figure 4.4 shows a sequence diagram of the flow of the simulation with all the D
 
 The remainder of this book features a separate chapter for each of the building blocks. Each chapter explains in detail how a building block works and how to configure and use it. Finally, each chapter will explain how the Traffic Control sample application uses the building block.
 
-You can get the code for the sample application from the following GitHub repo: [https://github.com/EdwinVW/dapr-traffic-control](https://github.com/EdwinVW/dapr-traffic-control). This repository contains a detailed description on how you can run the sample application on your machine.
+## Hosting
+
+The Traffic Control sample application can run in self hosted mode or in Kubernetes.
+
+### Self hosted mode
+
+The sample repository contains PowerShell scripts to start the infrastructure services (Redis, RabbitMQ and Mosquitto) as Docker containers on your machine. These are situated in the `src/Infrastructure` folder. For every application service in the solution, the repository contains a separate folder. Each of these folders contains a `start-selfhosted.ps1` PowerShell script to start the service with Dapr.
+
+### Kubernetes
+
+The `src/k8s` folder in the sample repository contains the Kubernetes manifest files to run the application (including the infrastructure services) with Dapr in Kubernetes. This folder also contains a `start.ps1` and `stop.ps1` PowerShell script to start and stop the solution in Kubernetes. All services will run in the `dapr-trafficcontrol` namespace.
 
 ## Summary
 

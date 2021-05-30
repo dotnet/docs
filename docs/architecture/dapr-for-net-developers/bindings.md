@@ -400,4 +400,4 @@ You implement a binding with a Dapr component. These components are contributed 
 
 >[!div class="step-by-step"]
 >[Previous](publish-subscribe.md)
->[Next](observability.md
+>[Next](actors.md)

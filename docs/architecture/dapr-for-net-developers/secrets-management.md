@@ -65,11 +65,11 @@ The URL contains the following segments:
 
 The JSON response contains the key and value of the secret.
 
-Figure 10-1 shows how Dapr handles a request for the secrets API:
+Figure 11-1 shows how Dapr handles a request for the secrets API:
 
 ![Diagram of retrieving a secret using the Dapr secrets API.](media/secrets/secrets-flow.png)
 
-**Figure 10-1**. Retrieving a secret with the Dapr secrets API.
+**Figure 11-1**. Retrieving a secret with the Dapr secrets API.
 
 1. The service calls the Dapr secrets API, along with the name of the secret store, and secret to retrieve.
 1. The Dapr sidecar retrieves the specified secret from the secret store.

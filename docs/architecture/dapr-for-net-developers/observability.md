@@ -35,17 +35,17 @@ As Dapr abstracts away the plumbing, the application is unaware of how observabi
 
 Dapr's [sidecar architecture](dapr-at-20000-feet.md#sidecar-architecture) enables built-in observability features. As services communicate, Dapr sidecars intercept the traffic and extract tracing, metrics, and logging information. Telemetry is published in an open standards format. By default, Dapr supports [OpenTelemetry](https://opentelemetry.io/) and [Zipkin](https://zipkin.io/).
 
-Dapr provides [collectors](https://docs.dapr.io/operations/monitoring/tracing/open-telemetry-collector/) that can publish telemetry to different back-end monitoring tools. These tools present Dapr telemetry for analysis and querying. Figure 9-1 shows the Dapr observability architecture:
+Dapr provides [collectors](https://docs.dapr.io/operations/monitoring/tracing/open-telemetry-collector/) that can publish telemetry to different back-end monitoring tools. These tools present Dapr telemetry for analysis and querying. Figure 10-1 shows the Dapr observability architecture:
 
-![Dapr observability architecture](media/observability/observability-architecture.png)
+:::image type="content" source="./media/observability/observability-architecture.png" alt-text="Dapr observability architecture":::
 
-**Figure 9-1**. Dapr observability architecture.
+**Figure 10-1**. Dapr observability architecture.
 
 1. Service A calls an operation on Service B. The call is routed from a Dapr sidecar for Service A to a sidecar for Service B.
 1. When Service B completes the operation, a response is sent back to Service A through the Dapr sidecars. They gather and publish all available telemetry for every request and response.
 1. The configured collector ingests the telemetry and sends it to the monitoring back end.  
 
-As a developer, keep in mind that adding observability is different from configuring other Dapr building blocks, like pub/sub or state management. Instead of referencing a building block, you add a collector and a monitoring back end. Figure 9-1 shows it's possible to configure multiple collectors that integrate with different monitoring back ends.
+As a developer, keep in mind that adding observability is different from configuring other Dapr building blocks, like pub/sub or state management. Instead of referencing a building block, you add a collector and a monitoring back end. Figure 10-1 shows it's possible to configure multiple collectors that integrate with different monitoring back ends.
 
 At the beginning of this chapter, four categories of telemetry were identified. The following sections will provide detail for each category. They'll include instruction on how to configure collectors that integrate with popular monitoring back ends.
 
@@ -53,22 +53,22 @@ At the beginning of this chapter, four categories of telemetry were identified. 
 
 Distributed tracing provides insight into the traffic that flows across services in a distributed application. The log of exchanged request and response messages is an invaluable source of information for troubleshooting issues. The hard part is *correlating messages* that originate from the same operation.
 
-Dapr uses the [W3C Trace Context](https://www.w3.org/TR/trace-context) to correlate related messages. It injects the same context information into requests and responses that form a unique operation. Figure 9-2 shows how correlation works:
+Dapr uses the [W3C Trace Context](https://www.w3.org/TR/trace-context) to correlate related messages. It injects the same context information into requests and responses that form a unique operation. Figure 10-2 shows how correlation works:
 
-![W3C Trace Context example](media/observability/w3c-trace-context.png)
+:::image type="content" source="./media/observability/w3c-trace-context.png" alt-text="W3C Trace Context example":::
 
-**Figure 9-2**. W3C Trace Context example.
+**Figure 10-2**. W3C Trace Context example.
 
 1. Service A invokes an operation on Service B. As Service A starts the call, Dapr creates a unique trace context and injects it into the request.
 1. Service B receives the request and invokes an operation on Service C. Dapr detects that the incoming request contains a trace context and propagates it by injecting it into the outgoing request to Service C.  
 1. Service C receives the request and handles it. Dapr detects that the incoming request contains a trace context and propagates it by injecting it into the outgoing response back to Service B.
 1. Service B receives the response and handles it. It then creates a new response and propagates the trace context by injecting it into the outgoing response back to Service A.
 
-A set of requests and responses that belong together is called a *trace*. Figure 9-3 shows a trace:
+A set of requests and responses that belong together is called a *trace*. Figure 10-3 shows a trace:
 
-![Traces and spans](media/observability/traces-spans.png)
+:::image type="content" source="./media/observability/traces-spans.png" alt-text="Traces and spans":::
 
-**Figure 9-3**. Traces and spans.
+**Figure 10-3**. Traces and spans.
 
 In the figure, note how the trace represents a unique application transaction that takes place across many services. A trace is a collection of *spans*. Each span represents a single operation or unit of work done within the trace. Spans are the requests and responses that are sent between services that implement the unique transaction.
 
@@ -80,13 +80,13 @@ The next sections discuss how to inspect tracing telemetry by publishing it to a
 
 ##### Enable and configure tracing
 
-To start, tracing must be enabled for the Dapr runtime using a Dapr configuration file. Here's an example of a configuration file named `tracing-config.yaml`:  
+To start, tracing must be enabled for the Dapr runtime using a Dapr configuration file. Here's an example of a configuration file named `dapr-config.yaml` that enables tracing:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
 kind: Configuration
 metadata:
-  name: tracing-config
+  name: dapr-config
   namespace: default
 spec:
   tracing:
@@ -98,7 +98,7 @@ spec:
 The `samplingRate` attribute specifies the interval used for publishing traces. The value must be between `0` (tracing disabled) and `1` (every trace is published). With a value of `0.5`, for example, every other trace is published, significantly reducing published traffic. The `endpointAddress` points to an endpoint on a Zipkin server running in a Kubernetes cluster. The default port for Zipkin is `9411`. The configuration must be applied to the Kubernetes cluster using the Kubernetes CLI:
 
 ```console
-kubectl apply -f tracing-config.yaml
+kubectl apply -f dapr-config.yaml
 ```
 
 ##### Install the Zipkin server
@@ -112,7 +112,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: zipkin
-  namespace: eshop
+  namespace: dapr-trafficcontrol
   labels:
     service: zipkin
 spec:
@@ -140,7 +140,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: zipkin
-  namespace: eshop
+  namespace: dapr-trafficcontrol
   labels:
     service: zipkin
 spec:
@@ -153,7 +153,6 @@ spec:
       name: zipkin
   selector:
     service: zipkin
-
 ```
 
 The deployment uses the standard `openzipkin/zipkin-slim` container image. The Zipkin service exposes the Zipkin web front end, which you can use to view the telemetry on port `32411`. Use the Kubernetes CLI to apply the Zipkin manifest file to the Kubernetes cluster and deploy the Zipkin server:
@@ -164,48 +163,57 @@ kubectl apply -f zipkin.yaml
 
 ##### Configure the services to use the tracing configuration
 
-Now everything is set up correctly to start publishing telemetry. Every Dapr sidecar that is deployed as part of the application must be instructed to emit telemetry when started. To do that, add a `dapr.io/config` annotation that references the `tracing-config` configuration to the deployment of each service. Here's an example of the eShop ordering API service's manifest file containing the annotation:
+Now everything is set up correctly to start publishing telemetry. Every Dapr sidecar that is deployed as part of the application must be instructed to emit telemetry when started. To do that, add a `dapr.io/config` annotation that references the `dapr-config` configuration to the deployment of each service. Here's an example of the Traffic Control FineCollection service's manifest file containing the annotation:
 
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ordering-api
-  namespace: eshop
+  name: finecollectionservice
+  namespace: dapr-trafficcontrol
   labels:
-    app: eshop
+    app: finecollectionservice
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: eshop
+      app: finecollectionservice
   template:
     metadata:
       labels:
-        app: simulation
+        app: finecollectionservice
       annotations:
         dapr.io/enabled: "true"
-        dapr.io/app-id: "ordering-api"
-        dapr.io/config: "tracing-config"
+        dapr.io/app-id: "finecollectionservice"
+        dapr.io/app-port: "6001"
+        dapr.io/config: "dapr-config"
     spec:
       containers:
-      - name: simulation
-        image: eshop/ordering.api:linux-latest
+      - name: finecollectionservice
+        image: dapr-trafficcontrol/finecollectionservice:1.0
+        ports:
+        - containerPort: 6001
 ```
 
 ##### Inspect the telemetry in Zipkin
 
 Once the application is started, the Dapr sidecars will emit telemetry to the Zipkin server. To inspect this telemetry, point a web-browser to <http://localhost:32411>. You'll see the Zipkin web front end:
 
-![The Zipkin start page](media/observability/zipkin.png)
+:::image type="content" source="./media/observability/zipkin.png" alt-text="Zipkin front end":::
+
+**Figure 10-4**. Zipkin front end.
 
 On the *Find a trace* tab, you can query traces. Pressing the *RUN QUERY* button without specifying any restrictions will show all the ingested *traces*:
 
-![A list of traces](media/observability/zipkin-traces-overview.png)
+:::image type="content" source="./media/observability/zipkin-traces-overview.png" alt-text="Zipkin traces overview":::
+
+**Figure 10-5**. Zipkin traces overview.
 
 Clicking the *SHOW* button next to a specific trace, will show the details of that trace:
 
-![The details of a trace](media/observability/zipkin-trace-details.png)
+:::image type="content" source="./media/observability/zipkin-trace-details.png" alt-text="Zipkin trace details":::
+
+**Figure 10-6.** Zipkin trace details.
 
 Each item on the details page, is a span that represents a request that is part of the selected trace.
 
@@ -213,7 +221,9 @@ Each item on the details page, is a span that represents a request that is part 
 
 Because Dapr sidecars handle traffic between services, Zipkin can use the trace information to determine the dependencies between the services. To see it in action, go to the *Dependencies* tab on the Zipkin web page and select the button with the magnifying glass. Zipkin will show an overview of the services and their dependencies:
 
-![A dependency graph in Zipkin](media/observability/zipkin-dependencies.png)
+:::image type="content" source="./media/observability/zipkin-dependencies.png" alt-text="Zipkin dependencies":::
+
+**Figure 10-7.** Zipkin dependencies.
 
 The animated dots on the lines between the services represent requests and move from source to destination. Red dots indicate a failed request.
 
@@ -225,7 +235,7 @@ Beyond Zipkin itself, other monitoring back-end software also supports ingesting
  apiVersion: dapr.io/v1alpha1
  kind: Configuration
  metadata:
-   name: tracing-config
+   name: dapr-config
    namespace: default
  spec:
    tracing:
@@ -240,7 +250,7 @@ To try out New Relic, specify the endpoint of the New Relic API. Here's an examp
 apiVersion: dapr.io/v1alpha1
  kind: Configuration
  metadata:
-   name: tracing-config
+   name: dapr-config
    namespace: default
  spec:
    tracing:
@@ -253,13 +263,13 @@ Check out the Jaeger and New Relic websites for more information on how to use t
 
 ### Metrics
 
-Metrics provide insight into performance and resource consumption. Under the hood, Dapr emits a wide collection of system and runtime metrics. Dapr uses [Prometheus](https://prometheus.io/) as a metric standard. Dapr sidecars and system services, expose a metrics endpoint on port `9090`. A *Prometheus scraper* calls this endpoint at a predefined interval to collect metrics. The scraper sends metric values to a monitoring back end. Figure 9-4 shows the scraping process:
+Metrics provide insight into performance and resource consumption. Under the hood, Dapr emits a wide collection of system and runtime metrics. Dapr uses [Prometheus](https://prometheus.io/) as a metric standard. Dapr sidecars and system services, expose a metrics endpoint on port `9090`. A *Prometheus scraper* calls this endpoint at a predefined interval to collect metrics. The scraper sends metric values to a monitoring back end. Figure 10-8 shows the scraping process:
 
-![Scraping Prometheus metrics](media/observability/prometheus-scraper.png)
+:::image type="content" source="./media/observability/prometheus-scraper.png" alt-text="Scraping Prometheus metrics":::
 
-**Figure 9-4**. Scraping Prometheus metrics.
+**Figure 10-8**. Scraping Prometheus metrics.
 
-In the above figure, each sidecar and system service exposes a metric endpoint that listens on port 9090. The Prometheus Metrics Scrapper captures metrics from each endpoint and published the information to the monitoring back end.  
+Each sidecar and system service exposes a metric endpoint that listens on port 9090. The Prometheus Metrics Scrapper captures metrics from each endpoint and published the information to the monitoring back end.  
 
 #### Service discovery
 
@@ -293,7 +303,7 @@ apiVersion: dapr.io/v1alpha1
 kind: Configuration
 metadata:
   name: dapr-config
-  namespace: eshop
+  namespace: dapr-trafficcontrol
 spec:
   tracing:
     samplingRate: "1"
@@ -305,7 +315,9 @@ spec:
 
 With the Prometheus scraper collecting and publishing metrics into the monitoring back end, how do you make sense of the raw data? A popular visualization tool for analyzing metrics is [Grafana](https://grafana.com/grafana/). With Grafana, you can create dashboards from the available metrics. Here's an example of a dashboard displaying Dapr system services metrics:
 
-![Grafana dashboard displaying Dapr system services metrics](media/observability/grafana-sample.png)
+:::image type="content" source="./media/observability/grafana-sample.png" alt-text="Grafana dashboard":::
+
+**Figure 10-9.** Grafana dashboard.
 
 The Dapr documentation includes a [tutorial for installing Prometheus and Grafana](https://docs.dapr.io/operations/monitoring/metrics/grafana/).
 
@@ -317,16 +329,16 @@ Logging provides insight into what is happening with a service at runtime. When 
 
 Dapr emits structured logging. Each log entry has the following format:
 
-| Field    | Description                                          | Example                             |
-| -------- | ---------------------------------------------------- | ----------------------------------- |
-| time     | ISO8601 formatted timestamp                          | `2021-01-10T14:19:31.000Z`          |
+| Field    | Description                                                  | Example                             |
+| -------- | ------------------------------------------------------------ | ----------------------------------- |
+| time     | ISO8601 formatted timestamp                                  | `2021-01-10T14:19:31.000Z`          |
 | level    | Level of the entry (`debug` \| `info` \| `warn`  \| `error`) | `info`                              |
-| type     | Log Type                                             | `log`                               |
-| msg      | Log Message                                          | `metrics server started on :62408/` |
-| scope    | Logging Scope                                        | `dapr.runtime`                      |
-| instance | Hostname where Dapr runs                             | TSTSRV01                            |
-| app_id   | Dapr App ID                                          | ordering-api                        |
-| ver      | Dapr Runtime Version                                 | `1.0.0`-rc.2                        |
+| type     | Log Type                                                     | `log`                               |
+| msg      | Log Message                                                  | `metrics server started on :62408/` |
+| scope    | Logging Scope                                                | `dapr.runtime`                      |
+| instance | Hostname where Dapr runs                                     | TSTSRV01                            |
+| app_id   | Dapr App ID                                                  | finecollectionservice               |
+| ver      | Dapr Runtime Version                                         | `1.0`                               |
 
 When searching through logging entries in a troubleshooting scenario, the `time` and `level` fields are especially helpful. The time field orders log entries so that you can pinpoint specific time periods. When troubleshooting, log entries at the *debug level* provide more information on the behavior of the code.
 
@@ -335,23 +347,23 @@ When searching through logging entries in a troubleshooting scenario, the `time`
 By default, Dapr emits structured logging in plain-text format. Every log entry is formatted as a string containing key/value pairs. Here's an example of logging in plain text:
 
 ```text
-== DAPR == time="2021-01-12T16:11:39.4669323+01:00" level=info msg="starting Dapr Runtime -- version 1.0.0-rc.2 -- commit 196483d" app_id=ordering-api instance=TSTSRV03 scope=dapr.runtime type=log ver=1.0.0-rc.2
-== DAPR == time="2021-01-12T16:11:39.467933+01:00" level=info msg="log level set to: info" app_id=ordering-api instance=TSTSRV03 scope=dapr.runtime type=log ver=1.0.0-rc.2
-== DAPR == time="2021-01-12T16:11:39.467933+01:00" level=info msg="metrics server started on :62408/" app_id=ordering-api instance=TSTSRV03 scope=dapr.metrics type=log ver=1.0.0-rc.2
+== DAPR == time="2021-01-12T16:11:39.4669323+01:00" level=info msg="starting Dapr Runtime -- version 1.0 -- commit 196483d" app_id=finecollectionservice instance=TSTSRV03 scope=dapr.runtime type=log ver=1.0
+== DAPR == time="2021-01-12T16:11:39.467933+01:00" level=info msg="log level set to: info" app_id=finecollectionservice instance=TSTSRV03 scope=dapr.runtime type=log ver=1.0
+== DAPR == time="2021-01-12T16:11:39.467933+01:00" level=info msg="metrics server started on :62408/" app_id=finecollectionservice instance=TSTSRV03 scope=dapr.metrics type=log ver=1.0
 ```
 
 While simple, this format is difficult to parse. If viewing log entries with a monitoring tool, you'll want to enable JSON formatted logging. With JSON entries, a monitoring tool can index and query individual fields. Here's the same log entries in JSON format:
 
 ```json
-{"app_id": "ordering-api", "instance": "TSTSRV03", "level": "info", "msg": "starting Dapr Runtime -- version 1.0.0-rc.2 -- commit 196483d", "scope": "dapr.runtime", "time": "2021-01-12T16:11:39.4669323+01:00", "type": "log", "ver": "1.0.0-rc.2"}
-{"app_id": "ordering-api", "instance": "TSTSRV03", "level": "info", "msg": "log level set to: info", "scope": "dapr.runtime", "type": "log", "time": "2021-01-12T16:11:39.467933+01:00", "ver": "1.0.0-rc.2"}
-{"app_id": "ordering-api", "instance": "TSTSRV03", "level": "info", "msg": "metrics server started on :62408/", "scope": "dapr.metrics", "type": "log", "time": "2021-01-12T16:11:39.467933+01:00", "ver": "1.0.0-rc.2"}
+{"app_id": "finecollectionservice", "instance": "TSTSRV03", "level": "info", "msg": "starting Dapr Runtime -- version 1.0 -- commit 196483d", "scope": "dapr.runtime", "time": "2021-01-12T16:11:39.4669323+01:00", "type": "log", "ver": "1.0"}
+{"app_id": "finecollectionservice", "instance": "TSTSRV03", "level": "info", "msg": "log level set to: info", "scope": "dapr.runtime", "type": "log", "time": "2021-01-12T16:11:39.467933+01:00", "ver": "1.0"}
+{"app_id": "finecollectionservice", "instance": "TSTSRV03", "level": "info", "msg": "metrics server started on :62408/", "scope": "dapr.metrics", "type": "log", "time": "2021-01-12T16:11:39.467933+01:00", "ver": "1.0"}
 ```
 
 To enable JSON formatting, you need to configure each Dapr sidecar. In self-hosted mode, you can specify the flag `--log-as-json` on the command line:
 
 ```console
-dapr run --app-id ordering-api --log-level info --log-as-json dotnet run
+dapr run --app-id finecollectionservice --log-level info --log-as-json dotnet run
 ```
 
 In Kubernetes, you can add a `dapr.io/log-as-json` annotation to each deployment for the application:
@@ -359,7 +371,7 @@ In Kubernetes, you can add a `dapr.io/log-as-json` annotation to each deployment
 ```yaml
 annotations:
    dapr.io/enabled: "true"
-   dapr.io/app-id: "ordering-api"
+   dapr.io/app-id: "finecollectionservice"
    dapr.io/app-port: "80"
    dapr.io/config: "dapr-config"
    dapr.io/log-as-json: "true"
@@ -443,17 +455,21 @@ For Dapr application running in Kubernetes, use the following command:
 dapr dashboard -k
 ```
 
-The dashboard opens with an overview of all services in your application that have a Dapr sidecar. The following screenshot shows the Dapr dashboard for the eShopOnDapr application running in Kubernetes:
+The dashboard opens with an overview of all services in your application that have a Dapr sidecar. The following screenshot shows the Dapr dashboard for the Traffic Control sample application running in Kubernetes:
 
-![Dapr dashboard overview page](media/observability/dapr-dashboard-overview.png)
+:::image type="content" source="./media/observability/dapr-dashboard-overview.png" alt-text="Dapr dashboard overview":::
+
+**Figure 10-10.** Dapr dashboard overview.
 
 The Dapr dashboard is invaluable when troubleshooting a Dapr application. It provides information about Dapr sidecars and system services. You can drill down into the configuration of each service, including the logging entries.
 
-The dashboard also shows the configured components (and their configuration) for your application:
+The dashboard also shows the configured components (and their configuration) for an application:
 
-![Dapr dashboard components page](media/observability/dapr-dashboard-components.png)
+:::image type="content" source="./media/observability/dapr-dashboard-components.png" alt-text="Dapr dashboard components":::
 
-There's a large amount of information available through the dashboard. You can discover it by running a Dapr application and browsing the dashboard. You can use the accompanying eShopOnDapr application to start.
+**Figure 10-11.** Dapr dashboard components.
+
+There's a large amount of information available through the dashboard. You can discover it by running a Dapr application and browsing the dashboard.
 
 Check out the [Dapr dashboard CLI command reference](https://docs.dapr.io/reference/cli/dapr-dashboard/) in the Dapr docs for more information on the Dapr dashboard commands.
 
@@ -465,7 +481,27 @@ If you want to emit telemetry from your .NET application code, you should consid
 
 ## Sample application: Dapr Traffic Control
 
-> **TODO**
+Because the Traffic Control sample application runs with Dapr, all telemetry as described in this chapter is available. If you run the application and open the Zipkin web front end, you can see end-to-end tracing. In figure 10-12 you can see an example:
+
+:::image type="content" source="./media/observability/traffic-control-zipkin.png" alt-text="Dapr output binding flow":::
+
+**Figure 10-12**. Dapr output binding flow.
+
+This trace shows the communication that occurs when a speeding violation has been detected:
+
+1. The TrafficControl service receives the vehicle exit registration (over the MQTT input binding).
+1. The TrafficControl service retrieves the vehicle state from the state store.
+1. The TrafficControl service saves the updated vehicle state back to the state store.
+1. The TrafficControl service publishes the speeding violation using pub/sub to the `speedingviolations` topic.
+1. The FineCollection service receives the speeding violation using a pub/sub subscription on the `speedingviolations` topic.
+1. The FineCollection service invokes the `vehicleinfo` endpoint of the VehicleRegistration service using service invocation.
+1. The FineCollection service invokes an output binding for sending the email.
+
+Each trace line can be clicked to see more details. If you select the last trace line for example and look at the details, you can see that the `sendmail` binding component was used:
+
+:::image type="content" source="./media/observability/traffic-control-zipkin-details.png" alt-text="Output binding trace details":::
+
+**Figure 10-13**. Output binding trace details.
 
 ## Summary
 
@@ -500,5 +536,5 @@ Dapr offers a dashboard that presents information about the Dapr services and co
 - [Serilog](https://serilog.net/)
 
 > [!div class="step-by-step"]
-> [Previous](bindings.md)
+> [Previous](actors.md)
 > [Next](secrets-management.md)

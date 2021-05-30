@@ -465,16 +465,20 @@ The `allowedSecrets` and `deniedSecrets` properties take precedence over the `de
 
 ## Sample application: Dapr Traffic Control
 
-In Dapr Traffic Control, the secrets management building block is used in several places. Secrets are retrieved in code and by referencing them in Dapr component configuration files.
+In Dapr Traffic Control sample app, the secrets management building block is used in several places. Secrets are retrieved from code and referenced by Dapr component configuration files. Figure 10-2 shows the architecture:
 
-The FineCollection service uses an SMTP output binding for sending an email (see the [Bindings](bindings.md) chapter). It uses the secrets management building block for retrieving the credentials to connect to the SMTP server. For calculating the fine for a speeding violation, it uses a fictitious FineCalculator component that requires a license key. It retrieves this license key from the secrets management building block.
+:::image type="content" source="./media/secrets/secrets-management-architecture.png" alt-text="State Management.":::
+
+**Figure 10-2**. Secrets management architecture.
+
+The FineCollection service uses an SMTP output binding for sending an email (see the [Bindings](bindings.md) chapter). It consumes the secrets management building block to retrieve credentials to connect to the SMTP server. To  calculate the fine for a speeding violation, the service uses a fictitious FineCalculator component that requires a license key. It retrieves this license key from the secrets management building block.
 
 The TrafficControl service uses the state management building block for storing vehicle information in a Redis state store (see the [State management](state-management.md) chapter). It uses the secrets management building block for retrieving the credentials to connect to the Redis server.
 
 Because the Traffic Control sample application can run in self hosted mode and in Kubernetes, there are 2 ways of specifying the secrets:
 
-- using a local JSON file and
-- using a Kubernetes secret.
+- A local JSON file
+- A Kubernetes secret
 
 ### Secrets
 
@@ -499,9 +503,9 @@ scopes:
   - finecollectionservice
 ```
 
-This file configures a secrets management component named `trafficcontrol-secrets`. Using `scopes` the it specifies that only the service with app-id `trafficcontrolservice` and `finecollectionservice` will be able to access the secrets.
+This file configures a secrets management component named `trafficcontrol-secrets`. The `scopes` element specifies that only the services with app-id `trafficcontrolservice` and `finecollectionservice` can access the secrets.
 
-The type of the secrets component is `local.file` and the secrets file is `../dapr/components/secrets.json`. As described in the [Local file](#local-file) section, the path to this file must be specified relatively from the folder where the a service is started. The file contains all the secrets:
+The `type` element of the secrets component is set to `local.file` and the secrets file to `../dapr/components/secrets.json`. For self-hosted mode,  use a [Local file](#local-file) component. The path must be relatively specified from the folder where the service starts. This file contains the secrets:
 
 ```json
 {
@@ -518,11 +522,11 @@ The type of the secrets component is `local.file` and the secrets file is `../da
 }
 ```
 
-In the sample application the Redis server can be used without a password. The default username and password to connect to the SMTP server are `_username` and `_password`. The license key for the FineCalculator license key is just a randomly generated string.
+Note the secrets: The Redis server can be used without a password. To connect to the SMTP server, the credentials are `_username` and `_password`. The license key for the FineCalculator license key is just a randomly generated string.
 
 The secrets file contains multiple level where secrets are nested within a parent section. The secrets management building block flattens this hierarchy when it read the file. It will use a period as level separator (as specified in the component configuration file with the `nestedSeparator` field). This means that secrets can be referenced using the flattened name, for example: `smtp.user`.
 
-The local file component is used when running the sample application in self hosted mode. When running in Kubernetes, the secrets are specified using the built-in secrets mechanism of Kubernetes. Examine the `secrets.yaml` Kubernetes manifest file in the `k8s` folder:
+When running in Kubernetes, the secrets are specified using the built-in secrets mechanism of Kubernetes. Examine the `secrets.yaml` Kubernetes manifest file in the `k8s` folder:
 
 ```yaml
 apiVersion: v1
@@ -537,7 +541,7 @@ data:
   finecalculator.licensekey: SFg3ODMtSzJMN1YtQ1JKNEEtNVBOMUc=
 ```
 
-The name of the component is again `trafficcontrol-secrets`. The secrets are stored as a Base64 encoded string (caution, this is not secure enough for production scenarios).
+The component is also named `trafficcontrol-secrets`. The secrets are stored as Base64 encoded strings (caution, this is not secure enough for production scenarios).
 
 The following paragraphs describe how these secrets are used in the Traffic Control sample application.
 

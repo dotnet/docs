@@ -2,7 +2,7 @@
 title: The Dapr observability building block
 description: A description of the observability building block, its features, benefits, and how to apply it
 author: edwinvw
-ms.date: 02/17/2021
+ms.date: 05/31/2021
 ms.reviewer: robvet
 ---
 
@@ -481,7 +481,7 @@ If you want to emit telemetry from your .NET application code, you should consid
 
 ## Sample application: Dapr Traffic Control
 
-Because the Traffic Control sample application runs with Dapr, all telemetry as described in this chapter is available. If you run the application and open the Zipkin web front end, you can see end-to-end tracing. In figure 10-12 you can see an example:
+Because the Traffic Control sample application runs with Dapr, all the telemetry described in this chapter is available. If you run the application and open the Zipkin web front end, you'll see end-to-end tracing. Figure 10-12 shows an example:
 
 :::image type="content" source="./media/observability/traffic-control-zipkin.png" alt-text="Dapr output binding flow":::
 
@@ -489,7 +489,7 @@ Because the Traffic Control sample application runs with Dapr, all telemetry as 
 
 This trace shows the communication that occurs when a speeding violation has been detected:
 
-1. The TrafficControl service receives the vehicle exit registration (over the MQTT input binding).
+1. The TrafficControl service receives the vehicle exit registration (from the MQTT input binding).
 1. The TrafficControl service retrieves the vehicle state from the state store.
 1. The TrafficControl service saves the updated vehicle state back to the state store.
 1. The TrafficControl service publishes the speeding violation using pub/sub to the `speedingviolations` topic.
@@ -505,13 +505,13 @@ Each trace line can be clicked to see more details. If you select the last trace
 
 ## Summary
 
-Good observability is crucial when running a distributed system in production.
+Detailed observability is critical to running a distributed system in production.
 
 Dapr provides different types of telemetry, including distributed tracing, logging, metrics, and health status.
 
 Dapr only produces telemetry for the Dapr system services and sidecars. Telemetry from your application code isn't automatically included. You can however use a specific SDK like the OpenTelemetry SDK for .NET to emit telemetry from your application code.
 
-Dapr telemetry is produced in an open-standards based format so it can be ingested by a large set of available monitoring tools. Some examples are: Zipkin, Azure Application Insights, the ELK Stack, New Relic, and Grafana. See [Monitor your application with Dapr](https://docs.dapr.io/operations/monitoring/) in the Dapr documentation for tutorials on how to monitor your Dapr applications with specific monitoring back ends.
+Dapr telemetry is produced in an open-standards based format so that it can be ingested by a large set of available monitoring tools. Examples include Zipkin, Azure Application Insights, the ELK Stack, New Relic, and Grafana. See [Monitor your application with Dapr](https://docs.dapr.io/operations/monitoring/) in the Dapr documentation for tutorials on how to monitor your Dapr applications with specific monitoring back ends.
 
 You'll need a telemetry scraper that ingests telemetry and publishes it to the monitoring back end.
 

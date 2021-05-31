@@ -284,7 +284,7 @@ spec:
  > [!NOTE]
  > Many state stores can be registered to a single application each with a different name.
 
-The Redis state store requires `redisHost` and `redisPassword` metadata to connect to the Redis instance. In the example above, the Redis password (which is an empty string by default) is stored as a plain string. The best practice is to avoid clear-text strings and always use secret references. To learn more about secret management, see [chapter 10](secrets.md).
+The Redis state store requires `redisHost` and `redisPassword` metadata to connect to the Redis instance. In the example above, the Redis password (which is an empty string by default) is stored as a plain string. The best practice is to avoid clear-text strings and always use secret references. To learn more about secret management, see [chapter 10](secrets-management.md).
 
 The other metadata field, `actorStateStore`, indicates whether the state store can be consumed by the actors building block.
 
@@ -398,7 +398,7 @@ scopes:
 ```
 
 > [!NOTE]
-> The component configuration file includes a `secretKeyRef` to look up the value for the Redis password using the Dapr secrets building block. See [chapter 10](secrets.md) to learn more about managing secrets with Dapr.
+> The component configuration file includes a `secretKeyRef` to look up the value for the Redis password using the Dapr secrets building block. See [chapter 10](secrets-management.md) to learn more about managing secrets with Dapr.
 
 The TrafficControl service is the only service in the Dapr Traffic Control application that should have access to the state store. The component configuration shown above enforces this constraint by using the `scopes` element to restrict access to the state store component.
 

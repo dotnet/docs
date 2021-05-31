@@ -26,7 +26,7 @@ While the actor model can provide great benefits, it's important to carefully co
 - You don't need low-latency reads of the actor state. Low-latency reads cannot be guaranteed because actor operations execute serially.
 - You don't need to query state across a set of actors. Querying across actors is inefficient because each actor's state needs to be read individually and can introduce unpredictable latencies.
 
-One design pattern that fits these criteria quite well is the [orchestration-based saga](../../azure/architecture/reference-architectures/saga/saga) or *process manager* design pattern. A saga manages a sequence of steps that must be taken to reach some outcome. The saga (or process manager) maintains the current state of the sequence and triggers the next step. If a step fails, the saga can execute compensating actions. Actors make it easy to deal with concurrency in the saga and to keep track of the current state. The [eShopOnDapr reference application](reference-application.md) uses the saga pattern and Dapr actors to implement the Ordering process.
+One design pattern that fits these criteria quite well is the [orchestration-based saga](/azure/architecture/reference-architectures/saga/saga) or *process manager* design pattern. A saga manages a sequence of steps that must be taken to reach some outcome. The saga (or process manager) maintains the current state of the sequence and triggers the next step. If a step fails, the saga can execute compensating actions. Actors make it easy to deal with concurrency in the saga and to keep track of the current state. The [eShopOnDapr reference application](reference-application.md) uses the saga pattern and Dapr actors to implement the Ordering process.
 
 ## How it works
 

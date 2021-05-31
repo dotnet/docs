@@ -79,7 +79,7 @@ In the previous figure, you can see which eShopOnDapr services use which Dapr bu
 1. The basket service uses the [state management building block](state-management.md) to store the state of the customer's shopping basket.
 1. The original eShopOnContainers application demonstrates DDD concepts and patterns in the ordering service. In the updated eShopOnDapr, the ordering service uses the *actor building block* as an alternative implementation. The turn-based access model of actors makes it easy to implement a stateful ordering process with support for cancellation.
 1. The ordering service sends order confirmation e-mails using the [bindings building block](bindings.md).
-1. Secret management is done by the [secrets building block](secrets.md).
+1. Secret management is done by the [secrets building block](secrets-management.md).
 
 The following sections explain how the Dapr building blocks are applied in eShopOnDapr in much more detail.
 
@@ -535,7 +535,7 @@ auth:
   secretStore: eshop-secretstore
 ```
 
-This configuration uses the [Twilio SendGrid](https://github.com/dapr/components-contrib/tree/master/bindings/twilio) binding component. Note how the API key for connecting to the service consumes a Dapr secret reference. This approach keeps secrets outside of the configuration file. Read the [secrets building block chapter](secrets.md) to learn more about Dapr secrets.
+This configuration uses the [Twilio SendGrid](https://github.com/dapr/components-contrib/tree/master/bindings/twilio) binding component. Note how the API key for connecting to the service consumes a Dapr secret reference. This approach keeps secrets outside of the configuration file. Read the [secrets building block chapter](secrets-management.md) to learn more about Dapr secrets.
 
 The binding configuration specifies a binding component that can be invoked using the `/sendmail` endpoint on the Dapr sidecar. Here's a code snippet in which an email is sent whenever an order is started:
 
@@ -691,5 +691,5 @@ In this chapter, you're introduced to the eShopOnDapr reference application. It'
 - [Architecting Cloud-Native .NET Apps for Azure](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf)
 
 > [!div class="step-by-step"]
-> [Previous](secrets.md)
+> [Previous](secrets-management.md)
 > [Next](summary.md)

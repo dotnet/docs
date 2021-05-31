@@ -503,9 +503,7 @@ scopes:
   - finecollectionservice
 ```
 
-This file configures a secrets management component named `trafficcontrol-secrets`. The `scopes` element specifies that only the services with app-id `trafficcontrolservice` and `finecollectionservice` can access the secrets.
-
-The `type` element of the secrets component is set to `local.file` and the secrets file to `../dapr/components/secrets.json`. For self-hosted mode,  use a [Local file](#local-file) component. The path must be relatively specified from the folder where the service starts. This file contains the secrets:
+The file describes a secrets management component entitled `trafficcontrol-secrets`. The `type` element is set to `local.file` and the `secretsFile` to `../dapr/components/secrets.json`. For self-hosted mode, use a [Local file](#local-file) component. The path must be relatively specified from the folder from which the service starts. The secrets file contains a JSON representation of the secrets:
 
 ```json
 {
@@ -522,11 +520,11 @@ The `type` element of the secrets component is set to `local.file` and the secre
 }
 ```
 
-Note the secrets: The Redis server can be used without a password. To connect to the SMTP server, the credentials are `_username` and `_password`. The license key for the FineCalculator license key is just a randomly generated string.
+Note how the Redis server is used without a password. To connect to the SMTP server, the credentials are `_username` and `_password`. The license key for the FineCalculator license key is just a randomly generated string.
 
-The secrets file contains multiple level where secrets are nested within a parent section. The secrets management building block flattens this hierarchy when it read the file. It will use a period as level separator (as specified in the component configuration file with the `nestedSeparator` field). This means that secrets can be referenced using the flattened name, for example: `smtp.user`.
+While secrets are stored in nested levels, the secrets management building block flattens this hierarchy when the file is read. It uses a period as a level separator (as specified in the `nestedSeparator` field in the component configuration file). This construct enables you to reference secrets with a flattened name, for example: `smtp.user`.
 
-When running in Kubernetes, the secrets are specified using the built-in secrets mechanism of Kubernetes. Examine the `secrets.yaml` Kubernetes manifest file in the `k8s` folder:
+When running in Kubernetes, the secrets are specified using the built-in Kubernetes secrets store. Examine the following `secrets.yaml` Kubernetes manifest file in the `k8s` folder:
 
 ```yaml
 apiVersion: v1
@@ -541,13 +539,15 @@ data:
   finecalculator.licensekey: SFg3ODMtSzJMN1YtQ1JKNEEtNVBOMUc=
 ```
 
-The component is also named `trafficcontrol-secrets`. The secrets are stored as Base64 encoded strings (caution, this is not secure enough for production scenarios).
+The component is also named `trafficcontrol-secrets`. Secrets are stored as Base64 encoded strings.
 
-The following paragraphs describe how these secrets are used in the Traffic Control sample application.
+> Base64 representations *encode*, but do not *encrypt* data. Base64 isn't secure for production scenarios.
+
+The following paragraphs describe how secrets are used in the Traffic Control sample application.
 
 ### SMTP server credentials
 
-Examine the `email.yaml` component configuration file in the `dapr/components` folder:
+Examine the `email.yaml` component configuration file located in the `dapr/components` folder:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
@@ -581,7 +581,7 @@ scopes:
 
 The `auth` section references the secrets management component named `trafficcontrol-secrets`. The `user` and `password` entries in the binding metadata reference the secrets: `smtp.user` and `smtp.password` respectively.
 
-When running in Kubernetes, the built-in secrets mechanism of Kubernetes is used. The `email.yaml` manifest file in the `k8s` folder references the Kubernetes secret for retrieving the credentials for connecting to the smtp server:
+When running in Kubernetes, the built-in Kubernetes secrets store is used. The `email.yaml` manifest file found in the `k8s` folder references the Kubernetes secret for retrieving the credentials for connecting to the smtp server:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
@@ -611,11 +611,11 @@ scopes:
   - finecollectionservice
 ```
 
-This configuration does not explicitly specify a secrets management component to use with the `auth` section. The default is the built-in secrets mechanism of Kubernetes.
+Unlike the local secrets store, the Kubernetes store does not explicitly specify a secrets management component to use with the `auth` section. Instead, the default is the built-in Kubernetes secrets store.
 
 ### Redis server credentials
 
-Examine the `statestore.yaml` component configuration file in the `dapr/components` folder:
+Next. examine the `statestore.yaml` component configuration file in the `dapr/components` folder:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
@@ -641,11 +641,11 @@ scopes:
   - trafficcontrolservice
 ```
 
-The `auth` section references the secrets management component named `trafficcontrol-secrets`. The `redisPassword` entries in the binding metadata reference the secret `state.redisPassword`.
+Once again, the `auth` section references the secrets management component named `trafficcontrol-secrets`. The `redisPassword` entries in the binding metadata reference the secret `state.redisPassword`.
 
 ### FineCalculator component license key
 
-The FineCollection service uses a component that calculates the fine based on the information of a speeding violation. This component is implemented as a domain service and the abstraction for it is the `IFineCalculator` interface you can find in the `DomainServices` folder:
+The FineCollection service consumes a component that calculates the fine based on the information of a speeding violation. This component is implemented as a domain service and is abstracted by the `IFineCalculator` interface:
 
 ```csharp
 public interface IFineCalculator
@@ -654,7 +654,7 @@ public interface IFineCalculator
 }
 ```
 
-The `CalculateFine` method takes a string containing a `licenseKey` as its first argument. This license key is necessary to unlock any third party component used by the implementation. Because Traffic Control is a sample application, the implementation is not using any external 3rd party component but is hard-coded as a series of `if` statements. You can find the implementation in the `HardCodedFineCalculator` class in the `DomainsServices` folder:
+The `CalculateFine` method expects a string containing a `licenseKey` as its first argument. This key unlocks the third party component used by the implementation. To keep the example simple, the implementation hard-codes a series of `if` statements. You can find the implementation in the `HardCodedFineCalculator` class in the `DomainsServices` folder:
 
 ```csharp
     public class HardCodedFineCalculator : IFineCalculator
@@ -693,7 +693,7 @@ The `CalculateFine` method takes a string containing a `licenseKey` as its first
     }
 ```
 
-The implementation does simulate a check on a hard-coded `licenseKey` that is passed in. So, the `CollectionController` of the FineCollection service needs to pass in a correct license key when it calls the `CalculateFine` method. It retrieves this license key using the Dapr secrets management building block in code using the Dapr client in the Dapr SDK for .NET. If you examine the constructor of the `CollectionController`, you can see the code:
+The implementation does simulate a check on a hard-coded `licenseKey` that is passed in. The `CollectionController` of the FineCollection service must pass in a correct license key arument when it calls the `CalculateFine` method. It retrieves this license key using the Dapr secrets management building block which is exposed by the the Dapr client from the Dapr SDK for .NET. If you examine the constructor of the `CollectionController`, you can see the call:
 
 ```c#
 // set finecalculator component license-key
@@ -716,11 +716,11 @@ if (_fineCalculatorLicenseKey == null)
 }
 ```
 
-The code distinguishes between whether the service is running in Kubernetes or in self hosted mode. This is necessary because a different secrets management component must be used in either situation. The name of the component is the first argument of the `GetSecretAsync` method. The second is the name of the secret. The `metadata` passed in as third argument contains the namespace that contains the secret. The value of the `finecalculator.licensekey` secret is stored in a private field for later use.
+The code determines whether the service is running in Kubernetes or self hosted mode. This check is necessary because a different secrets management component must be used in either situation. The name of the Dapr component is the first argument of the `GetSecretAsync` method. The second is the name of the secret. The `metadata` passed in as third argument contains the namespace that contains the secret. The value of the `finecalculator.licensekey` secret is stored in a private field for later use.
 
-Using Dapr secrets management in the Traffic Control sample application offers the following benefits:
+Using Dapr secrets management offers the several benefits:
 
-1. No sensitive information in code or in application configuration files.
+1. No sensitive information is stored in code or application configuration files.
 2. No need to learn any new API for interacting with a secrets store.
 
 ## Summary

@@ -1,8 +1,8 @@
 ---
 title: Upgrade WPF apps to .NET 5
 description: Use the .NET Upgrade Assistant to upgrade an existing .NET Framework WPF app to .NET 5. The .NET Upgrade Assistant is a CLI tool that helps migrating an app from .NET Framework to .NET 5.
-author: ardalis
-ms.date: 03/08/2021
+author: thraka
+ms.date: 06/01/2021
 ---
 # Upgrade a WPF App to .NET 5 with the .NET Upgrade Assistant
 
@@ -34,7 +34,7 @@ Review the created project and its files, especially its project file(s).
 Open a terminal and navigate to the folder where the target project or solution is located. Run the `upgrade-assistant` command, passing in the name of the project you're targeting (you can run the command from anywhere, as long as the path to the project file is valid).
 
 ```console
-upgrade-assistant .\WpfTest.csproj
+upgrade-assistant upgrade .\WpfTest.csproj
 ```
 
 The tool runs and shows you a list of the steps it will do.
@@ -100,7 +100,7 @@ There are several known problems that can occur when using the .NET Upgrade Assi
 
 ## See also
 
-- [Upgrade a Windows Forms App to .NET 5 with the .NET Upgrade Assistant](upgrade-assistant-winforms-framework.md)
-- [Upgrade an ASP.NET MVC App to .NET 5 with the .NET Upgrade Assistant](upgrade-assistant-aspnetmvc.md)
+- [Upgrade a Windows Forms App to .NET 5](upgrade-assistant-winforms-framework.md)
+- [Upgrade an ASP.NET MVC App to .NET 5](upgrade-assistant-aspnetmvc.md)
 - [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
 - [.NET Upgrade Assistant GitHub Repository](https://github.com/dotnet/upgrade-assistant)

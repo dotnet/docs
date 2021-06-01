@@ -1,8 +1,8 @@
 ---
 title: Overview of the .NET Upgrade Assistant
 description: Introducing the .NET Upgrade Assistant tool that helps migrate from .NET Framework and upgrades your projects to .NET 5.
-author: ardalis
-ms.date: 03/08/2021
+author: thraka
+ms.date: 06/01/2021
 ---
 # Overview of the .NET Upgrade Assistant
 
@@ -31,10 +31,7 @@ The [Get Started tutorial](https://aka.ms/dotnet-upgrade-assistant-install) walk
 
 ### Prerequisites
 
-1. This tool uses MSBuild to work with project files. Make sure that a recent version of MSBuild is installed. An easy way to do this is to [install Visual Studio 2019](https://visualstudio.microsoft.com/downloads/).
-1. This tool depends on [try-convert](https://github.com/dotnet/try-convert). In order for the tool to run correctly, you must install the try-convert tool for converting project files to the new SDK style. If you already have **try-convert** installed, you may need to update it instead (since **upgrade-assistant** depends on version _0.7.212201_ or later)
-    1. To install try-convert: `dotnet tool install -g try-convert`
-    1. To update try-convert: `dotnet tool update -g try-convert`
+- This tool uses MSBuild to work with project files. Make sure that a recent version of MSBuild is installed. An easy way to do this is to [install Visual Studio 2019](https://visualstudio.microsoft.com/downloads/).
 
 ### Installation steps
 
@@ -54,7 +51,7 @@ For detailed installation instructions, please refer to the project's [README](h
 
 ## See also
 
-- [Upgrade a WPF App to .NET 5 with the .NET Upgrade Assistant](upgrade-assistant-wpf-framework.md)
-- [Upgrade a Windows Forms App to .NET 5 with the .NET Upgrade Assistant](upgrade-assistant-winforms-framework.md)
-- [Upgrade an ASP.NET MVC App to .NET 5 with the .NET Upgrade Assistant](upgrade-assistant-aspnetmvc.md)
+- [Upgrade an ASP.NET MVC App to .NET 5](upgrade-assistant-aspnetmvc.md)
+- [Upgrade a WPF App to .NET 5](upgrade-assistant-wpf-framework.md)
+- [Upgrade a Windows Forms App to .NET 5](upgrade-assistant-winforms-framework.md)
 - [.NET Upgrade Assistant GitHub Repository](https://github.com/dotnet/upgrade-assistant)

@@ -78,7 +78,7 @@ The `Console` provider logs output to the console.
 
 ### Debug
 
-The `Debug` provider writes log output by using the [System.Diagnostics.Debug](/dotnet/api/system.diagnostics.debug) class. The <xref:Microsoft.Extensions.Logging.Debug.DebugLoggerProvider> creates <xref:Microsoft.Extensions.Logging.Debug.DebugLogger> instances, exposing the ability to create `ILogger` implementations. Calls to <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> write to the <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=nameWithType>.
+The `Debug` provider writes log output by using the <xref:System.Diagnostics.Debug?displayProperty=fullName> class, specifically through the <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=nameWithType> method. The <xref:Microsoft.Extensions.Logging.Debug.DebugLoggerProvider> creates <xref:Microsoft.Extensions.Logging.Debug.DebugLogger> instances, which are implementations of the `ILogger` interface.
 
 On Linux, the `Debug` provider log location is distribution-dependent and may be one of the following:
 

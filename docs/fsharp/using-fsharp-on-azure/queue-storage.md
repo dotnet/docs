@@ -30,7 +30,7 @@ Next, use a [package manager](package-management.md) such as [Paket](https://fsp
 
 Add the following `open` statements to the top of the `queues.fsx` file:
 
-[!code-fsharp[QueueStorage](~/samples/snippets/fsharp/azure/queue-storage.fsx#L1-L3)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L1-L3)]
 
 ### Get your connection string
 

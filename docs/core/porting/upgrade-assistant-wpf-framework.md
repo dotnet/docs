@@ -91,10 +91,7 @@ Notice that the .NET Upgrade Assistant also adds analyzers to the project that a
 
 ## Troubleshooting tips
 
-There are several known problems that can occur when using the .NET Upgrade Assistant. In some cases, these are problems with the [try-convert tool](https://github.com/dotnet/try-convert) that the .NET Upgrade Assistant uses internally. This tool is being frequently updated to address more scenarios, so make sure you're using a recent version.
-
-- The try-convert tool must be installed and updated to at least version _0.7.21201_.
-- Earlier versions of the try-convert tool didn't support custom target or props files. If you can't upgrade to the latest version, you may need to manually address these issues. If the target project file includes references to custom targets or props files, these references may need to be manually deleted from the file before the .NET Upgrade Assistant is run against it.
+There are several known problems that can occur when using the .NET Upgrade Assistant. In some cases, these are problems with the [try-convert tool](https://github.com/dotnet/try-convert) that the .NET Upgrade Assistant uses internally.
 
 [The tool's GitHub repository](https://github.com/dotnet/upgrade-assistant#troubleshooting-common-issues) has more troubleshooting tips and known issues.
 

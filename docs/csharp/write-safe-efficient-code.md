@@ -48,7 +48,7 @@ public struct Point3D
 
 Different examples use different implementations of this concept.
 
-## Declare readonly structs for immutable value types
+## Declare immutable structs as `readonly`
 
 Declare a [`readonly struct`](language-reference/builtin-types/struct.md#readonly-struct) to indicate that a type is **immutable**. The `readonly` modifier informs the compiler that your intent is to create an immutable type. The compiler enforces that design decision with the following rules:
 
@@ -122,7 +122,7 @@ The preceding sample shows many of the locations where you can apply the `readon
 
 Adding the `readonly` modifier to members that don't mutate state provides two related benefits. First, the compiler enforces your intent. That member can't mutate the struct's state. Second, the compiler won't create [defensive copies](#avoid-defensive-copies) of `in` parameters when accessing a `readonly` member. The compiler can make this optimization safely because it guarantees that the `struct` is not modified by a `readonly` member.
 
-## Use the `in` modifier
+## Use the `in` parameter modifier
 
 The following sections explain what the `in` modifier does, how to use it, and when to use it for performance optimization:
 
@@ -256,7 +256,7 @@ The first assignment in the preceding code makes a copy of the `Origin` constant
 
 The `readonly` modifier is required on the declaration of `originReference`.
 
-The compiler enforces that the caller can't modify the reference. Attempts to assign the value directly generate a compile-time error. In other cases, the compiler allocates a defensive copy unless it can safely use the readonly reference. Static analysis rules determine if the struct could be modified. The compiler doesn't create a [defensive copy](#avoid-defenive-copies) when the struct is a `readonly struct` or the member is a `readonly` member of the struct. Defensive copies aren't needed to pass the struct as an `in` argument.
+The compiler enforces that the caller can't modify the reference. Attempts to assign the value directly generate a compile-time error. In other cases, the compiler allocates a defensive copy unless it can safely use the readonly reference. Static analysis rules determine if the struct could be modified. The compiler doesn't create a [defensive copy](#avoid-defensive-copies) when the struct is a `readonly struct` or the member is a `readonly` member of the struct. Defensive copies aren't needed to pass the struct as an `in` argument.
 
 ## Use `ref struct` types
 

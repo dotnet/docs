@@ -172,7 +172,7 @@ The first assignment in the preceding code makes a copy of the `Origin` constant
 
 The `readonly` modifier is required on the declaration of `originReference`.
 
-The compiler enforces that the caller can't modify the reference. Attempts to assign the value directly generate a compile-time error. In other cases, the compiler allocates a defensive copy unless it can safely use the readonly reference. Static analysis rules determine if the struct could be modified. The compiler doesn't create a [defensive copy](#avoid-defensive-copies) when the struct is a `readonly struct` or the member is a `readonly` member of the struct. Defensive copies aren't needed to pass the struct as an `in` argument.
+The compiler enforces that the caller can't modify the reference. Attempts to assign the value directly generate a compile-time error. In other cases, the compiler allocates a [defensive copy](#avoid-defensive-copies) unless it can safely use the readonly reference. Static analysis rules determine if the struct could be modified. The compiler doesn't create a defensive copy when the struct is a `readonly struct` or the member is a `readonly` member of the struct. Defensive copies aren't needed to pass the struct as an `in` argument.
 
 ## Use the `in` parameter modifier
 
@@ -254,7 +254,7 @@ If the distance calculation uses the immutable struct, `ReadonlyPoint3D`, tempor
 
 [!code-csharp[readonlyInArgument](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#ReadOnlyInArgument "Specifying a readonly in argument")]
 
-The compiler generates more efficient code when you call members of a `readonly struct`: The `this` reference, instead of a copy of the receiver,
+The compiler generates more efficient code when you call members of a `readonly struct`. The `this` reference, instead of a copy of the receiver,
 is always an `in` parameter passed by reference to the member method. This optimization saves copying when you use a `readonly struct` as an `in` argument.
 
 Don't pass a nullable value type as an `in` argument. The <xref:System.Nullable%601> type isn't declared as a read-only struct. That means the compiler must generate defensive copies for any nullable value type argument passed to a method using the `in` modifier on the parameter declaration.

@@ -48,7 +48,7 @@ public struct Point3D
 
 Different examples use different implementations of this concept.
 
-### Declare readonly structs for immutable value types
+## Declare readonly structs for immutable value types
 
 Declare a [`readonly struct`](language-reference/builtin-types/struct.md#readonly-struct) to indicate that a type is **immutable**. The `readonly` modifier informs the compiler that your intent is to create an immutable type. The compiler enforces that design decision with the following rules:
 
@@ -75,7 +75,7 @@ readonly public struct ReadonlyPoint3D
 
 Follow this recommendation whenever your design intent is to create an immutable value type. Any performance improvements are an added benefit. The `readonly struct` keywords clearly express your design intent.
 
-### Declare `readonly` members for mutable structs
+## Declare `readonly` members for mutable structs
 
 In C# 8.0 and later, when a struct type is mutable, declare members that don't modify state as [`readonly` members](language-reference/builtin-types/struct.md#readonly-instance-members).
 

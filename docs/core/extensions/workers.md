@@ -108,7 +108,7 @@ When targeting Docker as a deployment strategy for your .NET Worker Service, the
 
 In the preceding project file, the `<DockerDefaultTargetOS>` element specifies `Linux` as its target. To target Windows containers, use `Windows` instead. The [`Microsoft.VisualStudio.Azure.Containers.Tools.Targets` NuGet package](https://www.nuget.org/packages/Microsoft.VisualStudio.Azure.Containers.Tools.Targets) is automatically added as a package reference when **Docker support** is selected from the template.
 
-For more information on Docker with .NET, see [Tutorial: Containerize a .NET app](../docker/build-container.md).
+For more information on Docker with .NET, see [Tutorial: Containerize a .NET app](../docker/build-container.md). For more information on deploying to Azure, see [Tutorial: Deploy a Worker Service to Azure](cloud-service.md).
 
 ## Hosted Service extensibility
 

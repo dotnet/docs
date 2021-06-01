@@ -1,5 +1,6 @@
 open Azure.Storage.Queues
 open System
+
 //
 // Get your connection string and queue name.
 //

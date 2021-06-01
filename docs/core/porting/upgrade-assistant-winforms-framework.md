@@ -41,7 +41,7 @@ The tool runs and shows you a list of the steps it will do.
 
 :::image type="content" source="media/upgrade-assistant-winforms-framework/step1.png" alt-text=".NET Upgrade Assistant initial screen":::
 
-As each step is completed, the tool provides a set of commands allowing the user to apply or skip the next step, see more details, configure logging, or exit the process. If the tool detects that a step will perform no actions, it will automatically skip that step and continue to the next step until it reaches one that will have actions to perform. Pressing enter will perform the next step if no other selection is made.
+As each step is completed, the tool provides a set of commands allowing the user to apply or skip the next step, see more details, configure logging, or exit the process. If the tool detects that a step will perform no actions, it automatically skips that step and continues to the next step until it reaches one that has actions to do. Pressing <kbd>Enter</kbd> will start the next step if no other selection is made.
 
 In this example, the apply step is chosen each time. The first step is to back up the project.
 

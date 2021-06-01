@@ -1,6 +1,6 @@
 ---
 title: Upgrade ASP.NET MVC apps to .NET 5
-description: Use the .NET Upgrade Assistant to upgrade an existing .NET Framework ASP.NET MVC app to .NET 5. The .NET Upgrade Assistant is a CLI tool that assists in migrating an app from .NET Framework to .NET 5.
+description: Use the .NET Upgrade Assistant to upgrade an existing .NET Framework ASP.NET MVC app to .NET 5. The .NET Upgrade Assistant is a CLI tool that helps migrate an app from .NET Framework to .NET 5.
 author: thraka
 ms.date: 06/01/2021
 ---
@@ -45,7 +45,7 @@ The tool runs and shows you a list of the steps it will do.
 
 :::image type="content" source="media/upgrade-assistant-aspnetmvc/initial-run.png" alt-text=".NET Upgrade Assistant initial screen":::
 
-As each step is completed, the tool provides a set of commands allowing the user to apply or skip the next step, see more details, configure logging, or exit the process. If the tool detects that a step will perform no actions, it automatically skips that step and continues to the next step until it reaches one that has actions to perform. Pressing <kbd>Enter</kbd> will perform the next step if no other selection is made.
+As each step is completed, the tool provides a set of commands allowing the user to apply or skip the next step, see more details, configure logging, or exit the process. If the tool detects that a step will perform no actions, it automatically skips that step and continues to the next step until it reaches one that has actions to do. Pressing <kbd>Enter</kbd> will start the next step if no other selection is made.
 
 In this example, the apply step is chosen each time. The first step is to back up the project.
 
@@ -63,7 +63,7 @@ Next, the tool updates the project's NuGet packages. Several packages need updat
 
 :::image type="content" source="media/upgrade-assistant-aspnetmvc/update-nuget-packages.png" alt-text=".NET Upgrade Assistant update NuGet packages":::
 
-Once the packages are updated, the next step is to add template files, if any. The tool notes there are four expected template items that must be added, and then adds them. These include the following files:
+Once the packages are updated, the next step is to add template files, if any. The tool notes there are four expected template items that must be added, and then adds them. The following is a list of the template files:
 
 - `Program.cs`
 - `Startup.cs`
@@ -115,7 +115,7 @@ By default, the project will be converted as a class library. Change the first l
 - FilterConfig.cs
 - RouteConfig.cs
 
-These files - and the entire `App_Start` folder - can be deleted. Likewise, the `Global.asax` and `Global.asax.cs` files can be removed.
+These files, and the entire `App_Start` folder, can be deleted. Likewise, the `Global.asax` and `Global.asax.cs` files can be removed.
 
 At this point the only errors that remain are related to bundling. There are [several ways to configure bundling and minification in ASP.NET Core](/aspnet/core/migration/mvc?view=aspnetcore-5.0&preserve-view=true#configure-bundling-and-minification). Choose whatever makes the most sense for your project.
 

@@ -122,14 +122,66 @@ The preceding sample shows many of the locations where you can apply the `readon
 
 Adding the `readonly` modifier to members that don't mutate state provides two related benefits. First, the compiler enforces your intent. That member can't mutate the struct's state. Second, the compiler won't create [defensive copies](#avoid-defensive-copies) of `in` parameters when accessing a `readonly` member. The compiler can make this optimization safely because it guarantees that the `struct` is not modified by a `readonly` member.
 
+## Use `ref readonly return` statements
+
+Use a [`ref readonly`](language-reference/keywords/ref.md#reference-return-values) return when both of the following conditions are true:
+
+- The return value is a `struct` larger than <xref:System.IntPtr.Size%2A?displayProperty=nameWithType>.
+- The storage lifetime is greater than the method returning the value.
+
+You can return values by reference when the value being returned isn't local to the returning method. Returning by reference means that only the reference is copied, not the structure. In the following example, the `Origin` property can't use a `ref` return because the value being returned is a local variable:
+
+```csharp
+public Point3D Origin => new Point3D(0,0,0);
+```
+
+However, the following property definition can be returned by reference because the returned value is a static member:
+
+```csharp
+public struct Point3D
+{
+    private static Point3D origin = new Point3D(0,0,0);
+
+    // Dangerous! returning a mutable reference to internal storage
+    public ref Point3D Origin => ref origin;
+
+    // other members removed for space
+}
+```
+
+You don't want callers modifying the origin, so you should return the value by `ref readonly`:
+
+```csharp
+public struct Point3D
+{
+    private static Point3D origin = new Point3D(0,0,0);
+
+    public static ref readonly Point3D Origin => ref origin;
+
+    // other members removed for space
+}
+```
+
+Returning `ref readonly` enables you to save copying larger structures and preserve the immutability of your internal data members.
+
+At the call site, callers make the choice to use the `Origin` property as a `ref readonly` or as a value:
+
+[!code-csharp[AssignRefReadonly](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#AssignRefReadonly "Assigning a ref readonly")]
+
+The first assignment in the preceding code makes a copy of the `Origin` constant and assigns that copy. The second assigns a reference. Notice that the `readonly` modifier must be part of the declaration of the variable. The reference to which it refers can't be modified. Attempts to do so result in a compile-time error.
+
+The `readonly` modifier is required on the declaration of `originReference`.
+
+The compiler enforces that the caller can't modify the reference. Attempts to assign the value directly generate a compile-time error. In other cases, the compiler allocates a defensive copy unless it can safely use the readonly reference. Static analysis rules determine if the struct could be modified. The compiler doesn't create a [defensive copy](#avoid-defensive-copies) when the struct is a `readonly struct` or the member is a `readonly` member of the struct. Defensive copies aren't needed to pass the struct as an `in` argument.
+
 ## Use the `in` parameter modifier
 
 The following sections explain what the `in` modifier does, how to use it, and when to use it for performance optimization:
 
 - [The `out`, `ref`, and `in` keywords](#the-out-ref-and-in-keywords)
+- [Use `in` parameters for large structs](#use-in-parameters-for-large-structs)
 - [Optional use of `in` at call site](#optional-use-of-in-at-call-site)
 - [Avoid defensive copies](#avoid-defensive-copies)
-- [Use `in` parameters for large structs](#use-in-parameters-for-large-structs)
 
 ### The `out`, `ref`, and `in` keywords
 
@@ -144,12 +196,24 @@ With the addition of the `in` keyword, C# provides a full vocabulary to express 
 Add the `in` modifier to pass an argument by reference and declare your design intent to pass arguments by reference to avoid unnecessary copying. You don't intend to modify the object used as that argument.
 
 The `in` modifier complements `out` and `ref` in other ways as well. You can't create overloads of a method that differ only in the presence of
-`in`, `out`, or `ref`. These new rules extend the same behavior that had always been defined for `out` and `ref` parameters. Like the `out` and `ref` modifiers, value types aren't boxed because the `in` modifier is applied.
+`in`, `out`, or `ref`. These new rules extend the same behavior that had always been defined for `out` and `ref` parameters. Like the `out` and `ref` modifiers, value types aren't boxed because the `in` modifier is applied. Another feature of `in` parameters is that you can use literal values or constants for the argument to an `in` parameter.
 
-Another feature of in parameters is that you can use literal values or constants for the argument to an `in` parameter. The `in` modifier can be used with reference types or numeric values. However, the benefits in those cases are minimal, if any.
+The `in` modifier can also be used with reference types or numeric values. However, the benefits in those cases are minimal, if any.
 
 There are several ways in which the compiler enforces the read-only nature of an `in` argument.  First of all, the called method can't directly assign to an `in` parameter. It can't directly assign to any field of an `in` parameter when that value is a `struct` type. In addition, you can't pass an `in` parameter to any method using the `ref` or `out` modifier. These rules apply to any field of an `in` parameter, provided the
 field is a `struct` type and the parameter is also a `struct` type. In fact, these rules apply for multiple layers of member access provided the types at all levels of member access are `structs`. The compiler enforces that `struct` types passed as `in` arguments and their `struct` members are read-only variables when used as arguments to other methods.
+
+### Use `in` parameters for large structs
+
+You can apply the `in` modifier to any `readonly struct` parameter, but this practice is likely to improve performance only for value types that are substantially larger than <xref:System.IntPtr.Size%2A?displayProperty=nameWithType>. For simple types (such as `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `char`, `float`, `double`, `decimal` and `bool`, and `enum` types), any potential performance gains are minimal. Some simple types, such as `decimal` at 16 bytes in size, are larger than either 4-byte or 8-byte references but not by enough to make a measurable difference in performance in most scenarios. And performance may degrade by using pass-by-reference for types smaller than <xref:System.IntPtr.Size?displayProperty=nameWithType>.
+
+The following code shows an example of a method that calculates the distance between two points in 3D space.
+
+[!code-csharp[InArgument](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#InArgument "Specifying an in argument")]
+
+The arguments are two structures that each contain three doubles. A double is 8 bytes, so each argument is 24 bytes. By specifying the `in` modifier, you pass a 4-byte or 8-byte reference to those arguments, depending on the architecture of the machine. The difference in size is small, but it can add up when your application calls this method in a tight loop using many different values.
+
+However, the impact of any low-level optimizations like using the `in` modifier should be measured to validate a performance benefit. For example, you might think that using `in` on a [Guid](xref:System.Guid) parameter would be beneficial. The `Guid` type is 16 bytes in size, twice the size of an 8-byte reference. But such a small difference isn't likely to result in a measurable performance benefit unless it's in a method that's in a time critical hot path for your application.
 
 ### Optional use of `in` at call site
 
@@ -196,67 +260,6 @@ is always an `in` parameter passed by reference to the member method. This optim
 Don't pass a nullable value type as an `in` argument. The <xref:System.Nullable%601> type isn't declared as a read-only struct. That means the compiler must generate defensive copies for any nullable value type argument passed to a method using the `in` modifier on the parameter declaration.
 
 You can see an example program that demonstrates the performance differences using [BenchmarkDotNet](https://www.nuget.org/packages/BenchmarkDotNet/) in our [samples repository](https://github.com/dotnet/samples/tree/main/csharp/safe-efficient-code/benchmark) on GitHub. It compares passing a mutable struct by value and by reference with passing an immutable struct by value and by reference. The use of the immutable struct and pass by reference is fastest.
-
-### Use `in` parameters for large structs
-
-You can apply the `in` modifier to any `readonly struct` parameter, but this practice is likely to improve performance only for value types that are substantially larger than <xref:System.IntPtr.Size%2A?displayProperty=nameWithType>. For simple types (such as `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `char`, `float`, `double`, `decimal` and `bool`, and `enum` types), any potential performance gains are minimal. Some simple types, such as `decimal` at 16 bytes in size, are larger than either 4-byte or 8-byte references but not by enough to make a measurable difference in performance in most scenarios. And performance may degrade by using pass-by-reference for types smaller than <xref:System.IntPtr.Size?displayProperty=nameWithType>.
-
-The following code shows an example of a method that calculates the distance between two points in 3D space.
-
-[!code-csharp[InArgument](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#InArgument "Specifying an in argument")]
-
-The arguments are two structures that each contain three doubles. A double is 8 bytes, so each argument is 24 bytes. By specifying the `in` modifier, you pass a 4-byte or 8-byte reference to those arguments, depending on the architecture of the machine. The difference in size is small, but it can add up when your application calls this method in a tight loop using many different values.
-
-However, the impact of any low-level optimizations like using the `in` modifier should be measured to validate a performance benefit. For example, you might think that using `in` on a [Guid](xref:System.Guid) parameter would be beneficial. The `Guid` type is 16 bytes in size, twice the size of an 8-byte reference. But such a small difference isn't likely to result in a measurable performance benefit unless it's in a method that's in a time critical hot path for your application.
-
-## Use `ref readonly return` statements
-
-Use a [`ref readonly`](language-reference/keywords/ref.md#reference-return-values) return when the return value is a `struct` larger than <xref:System.IntPtr.Size%2A?displayProperty=nameWithType> and the storage lifetime is greater than the method returning the value.
-
-You can return values by reference when the value being returned isn't local to the returning method. Returning by reference means that only the reference is copied, not the structure. In the following example, the `Origin` property can't use a `ref` return because the value being returned is a local variable:
-
-```csharp
-public Point3D Origin => new Point3D(0,0,0);
-```
-
-However, the following property definition can be returned by reference because the returned value is a static member:
-
-```csharp
-public struct Point3D
-{
-    private static Point3D origin = new Point3D(0,0,0);
-
-    // Dangerous! returning a mutable reference to internal storage
-    public ref Point3D Origin => ref origin;
-
-    // other members removed for space
-}
-```
-
-You don't want callers modifying the origin, so you should return the value by `ref readonly`:
-
-```csharp
-public struct Point3D
-{
-    private static Point3D origin = new Point3D(0,0,0);
-
-    public static ref readonly Point3D Origin => ref origin;
-
-    // other members removed for space
-}
-```
-
-Returning `ref readonly` enables you to save copying larger structures and preserve the immutability of your internal data members.
-
-At the call site, callers make the choice to use the `Origin` property as a `ref readonly` or as a value:
-
-[!code-csharp[AssignRefReadonly](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#AssignRefReadonly "Assigning a ref readonly")]
-
-The first assignment in the preceding code makes a copy of the `Origin` constant and assigns that copy. The second assigns a reference. Notice that the `readonly` modifier must be part of the declaration of the variable. The reference to which it refers can't be modified. Attempts to do so result in a compile-time error.
-
-The `readonly` modifier is required on the declaration of `originReference`.
-
-The compiler enforces that the caller can't modify the reference. Attempts to assign the value directly generate a compile-time error. In other cases, the compiler allocates a defensive copy unless it can safely use the readonly reference. Static analysis rules determine if the struct could be modified. The compiler doesn't create a [defensive copy](#avoid-defensive-copies) when the struct is a `readonly struct` or the member is a `readonly` member of the struct. Defensive copies aren't needed to pass the struct as an `in` argument.
 
 ## Use `ref struct` types
 

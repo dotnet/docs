@@ -79,7 +79,7 @@ Do not add or remove items to/from `ManagedAssemblyToLink`, because the SDK comp
 
   Control the [trimming granularity](#trimming-granularity) of this assembly. This takes precedence over the global `TrimMode`. Setting `TrimMode` on an assembly implies `<IsTrimmable>true</IsTrimmable>`.
 
-- `<TrimmerSingleWarn>True</TrimmerSingleWarn>` or `<TrimmerSingleWarn>False<TrimmerSingleWarn>`
+- `<TrimmerSingleWarn>True</TrimmerSingleWarn>` or `<TrimmerSingleWarn>False</TrimmerSingleWarn>`
 
   Control whether to show [single warnings](#show-detailed-warnings) for this assembly.
 

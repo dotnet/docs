@@ -1,8 +1,8 @@
-open Azure.Storage.Queues
+open Azure.Storage.Queues // Namespace for Queue storage types
 open System
 
 //
-// Get your connection string and queue name.
+// Get your connection string.
 //
 
 let storageConnString = "..." // fill this in from your storage account
@@ -41,7 +41,6 @@ let msgToString = peekedMessage.ToString()
 
 // Get the next message. Successful processing must be indicated via DeleteMessage later.
 let retrieved = queueClient.ReceiveMessage()
-
 
 //
 // Change the contents of a retrieved message.

@@ -5,14 +5,18 @@ open System
 // Get your connection string and queue name.
 //
 
-let connectionString = "..." // fill this in from your storage account
-let queueName = "..." // fill this with queue name in your storage account 
+let storageConnString = "..." // fill this in from your storage account
+(*
+// Parse the connection string and return a reference to the storage account.
+let storageConnString = 
+    CloudConfigurationManager.GetSetting("StorageConnectionString")
+*)
 
 //
 // Create the Queue Service client.
 //
 
-let queueClient = new QueueClient(connectionString, queueName);
+let queueClient = new QueueClient(storageConnString, "myqueue");
 queueClient.CreateIfNotExists()
 
 //
@@ -36,7 +40,7 @@ let msgToString = peekedMessage.ToString()
 //
 
 // Get the next message. Successful processing must be indicated via DeleteMessage later.
-let nextMessage = queueClient.ReceiveMessage()
+let retrieved = queueClient.ReceiveMessage()
 
 
 //
@@ -45,8 +49,8 @@ let nextMessage = queueClient.ReceiveMessage()
 
 // Update the message contents and set a new timeout.
 queueClient.UpdateMessage(
-    nextMessage.Value.MessageId,
-    nextMessage.Value.PopReceipt,
+    retrieved.Value.MessageId,
+    retrieved.Value.PopReceipt,
     "Updated contents.",
     TimeSpan.FromSeconds(60.0))
 
@@ -55,7 +59,7 @@ queueClient.UpdateMessage(
 //
 
 // Process the message in less than 30 seconds, and then delete the message.
-queueClient.DeleteMessage(nextMessage.Value.MessageId, nextMessage.Value.PopReceipt)
+queueClient.DeleteMessage(retrieved.Value.MessageId, retrieved.Value.PopReceipt)
 
 //
 // Use Async-Await pattern with common Queue storage APIs.

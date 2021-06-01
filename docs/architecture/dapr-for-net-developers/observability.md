@@ -3,7 +3,6 @@ title: The Dapr observability building block
 description: A description of the observability building block, its features, benefits, and how to apply it
 author: edwinvw
 ms.date: 05/31/2021
-ms.reviewer: robvet
 ---
 
 # The Dapr observability building block

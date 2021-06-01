@@ -1,113 +1,94 @@
-open Microsoft.Azure // Namespace for CloudConfigurationManager 
-open Microsoft.Azure.Storage // Namespace for CloudStorageAccount
-open Microsoft.Azure.Storage.Queue // Namespace for Queue storage types
-
+open Azure.Storage.Queues
+open System
 //
-// Get your connection string.
+// Get your connection string and queue name.
 //
 
-let storageConnString = "..." // fill this in from your storage account
-(*
-// Parse the connection string and return a reference to the storage account.
-let storageConnString = 
-    CloudConfigurationManager.GetSetting("StorageConnectionString")
-*)
-//
-// Parse the connection string.
-//
-
-// Parse the connection string and return a reference to the storage account.
-let storageAccount = CloudStorageAccount.Parse(storageConnString)
+let connectionString = "..." // fill this in from your storage account
+let queueName = "..." // fill this with queue name in your storage account 
 
 //
 // Create the Queue Service client.
 //
 
-let queueClient = storageAccount.CreateCloudQueueClient()
-
-//
-// Create a queue.
-//
-
-// Retrieve a reference to a container.
-let queue = queueClient.GetQueueReference("myqueue")
-
-// Create the queue if it doesn't already exist
-queue.CreateIfNotExists()
+let queueClient = new QueueClient(connectionString, queueName);
+queueClient.CreateIfNotExists()
 
 //
 // Insert a message into a queue.
 //
 
 // Create a message and add it to the queue.
-let message = new CloudQueueMessage("Hello, World")
-queue.AddMessage(message)
+let message = "Hello, World"
+queueClient.SendMessage(message)
 
 //
 // Peek at the next message.
 //
 
 // Peek at the next message.
-let peekedMessage = queue.PeekMessage()
-let msgAsString = peekedMessage.AsString
+let peekedMessage = queueClient.PeekMessage()
+let msgToString = peekedMessage.ToString()
 
 //
 // Get the next message.
 //
 
 // Get the next message. Successful processing must be indicated via DeleteMessage later.
-let retrieved = queue.GetMessage()
+let nextMessage = queueClient.ReceiveMessage()
+
 
 //
 // Change the contents of a retrieved message.
 //
 
 // Update the message contents and set a new timeout.
-retrieved.SetMessageContent("Updated contents.")
-queue.UpdateMessage(retrieved,
-    TimeSpan.FromSeconds(60.0),
-    MessageUpdateFields.Content ||| MessageUpdateFields.Visibility)
+queueClient.UpdateMessage(
+    nextMessage.Value.MessageId,
+    nextMessage.Value.PopReceipt,
+    "Updated contents.",
+    TimeSpan.FromSeconds(60.0))
 
 //
 // De-queue the next message, indicating successful processing
 //
 
 // Process the message in less than 30 seconds, and then delete the message.
-queue.DeleteMessage(retrieved)
+queueClient.DeleteMessage(nextMessage.Value.MessageId, nextMessage.Value.PopReceipt)
 
 //
 // Use Async-Await pattern with common Queue storage APIs.
 //
 
 async {
-    let! exists = queue.CreateIfNotExistsAsync() |> Async.AwaitTask
+    let! exists = queueClient.CreateIfNotExistsAsync() |> Async.AwaitTask
 
-    let! retrieved = queue.GetMessageAsync() |> Async.AwaitTask
+    let! receipt = queueClient.ReceiveMessageAsync() |> Async.AwaitTask
 
     // ... process the message here ...
 
     // Now indicate successful processing:
-    do! queue.DeleteMessageAsync(retrieved) |> Async.AwaitTask
+    queueClient.DeleteMessageAsync(receipt.Value.MessageId, receipt.Value.PopReceipt) |> Async.AwaitTask
 }
 
 //
 // Additional options for de-queuing messages.
 //
 
-for msg in queue.GetMessages(20, Nullable(TimeSpan.FromMinutes(5.))) do
+for msg in queueClient.ReceiveMessages(20, Nullable(TimeSpan.FromMinutes(5.))).Value do
         // Process the message here.
-        queue.DeleteMessage(msg)
+        queueClient.DeleteMessage(msg.MessageId, msg.PopReceipt)
 
 //
 // Get the queue length.
 //
 
-queue.FetchAttributes()
-let count = queue.ApproximateMessageCount.GetValueOrDefault()
+let properties = queueClient.GetProperties().Value
+let count = properties.ApproximateMessagesCount
 
 //
 // Delete a queue.
 //
 
 // Delete the queue.
-queue.Delete()
+queueClient.Delete()

@@ -132,7 +132,7 @@ The certificate location will vary by distro. Here are the locations for the dis
 
 ## Troubles resolving dotnet
 
-It's common for other apps, such as the OmniSharp extension for Visual Studio Code, to try to resolve the location of the .NET SDK. Typically this done by figuring out where the `dotnet` executable is located. A snap-installed .NET SDK may confuse these apps. When these apps can't resolve the .NET SDK, you'll see an error similar to one of the following messages:
+It's common for other apps, such as the OmniSharp extension for Visual Studio Code, to try to resolve the location of the .NET SDK. Typically, this is done by figuring out where the `dotnet` executable is located. A snap-installed .NET SDK may confuse these apps. When these apps can't resolve the .NET SDK, you'll see an error similar to one of the following messages:
 
 - The SDK 'Microsoft.NET.Sdk' specified could not be found
 - The SDK 'Microsoft.NET.Sdk.Web' specified could not be found

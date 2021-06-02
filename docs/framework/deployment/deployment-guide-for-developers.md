@@ -219,7 +219,7 @@ If you have a custom setup package, you may want to silently launch and track th
 
 <a name="detect_net"></a>
 
-### Detect  .NET Framework
+### Detect .NET Framework
 
 The .NET Framework installer writes registry keys when installation is successful. You can test whether .NET Framework 4.5 or later is installed by checking the `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full` folder in the registry for a `DWORD` value named `Release`. (Note that "NET Framework Setup" doesn't begin with a period.) The existence of this key indicates that .NET Framework 4.5 or a later version has been installed on that computer. The value of `Release` indicates which version of .NET Framework is installed.
 

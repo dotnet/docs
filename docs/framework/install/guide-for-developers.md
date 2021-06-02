@@ -42,6 +42,8 @@ Use the following table for quick links, or read further for details. To view th
 |**4.5.1** | [.NET Framework 4.5.1](https://dotnet.microsoft.com/download/dotnet-framework/net451) | **Included in:**<br/><br/>Windows 8.1<br /> Windows Server 2012 R2<br /> [Visual Studio 2013](https://my.visualstudio.com/Downloads?q=visual%20studio%202013)<br /><br /> **You can install on:**<br /><br/> Windows 8 and earlier<br /> Windows Server 2012 and earlier<br />(for a full list, see [system requirements](../get-started/system-requirements.md))|
 |**4.5**   | [.NET Framework 4.5](https://dotnet.microsoft.com/download/dotnet-framework/net45)    | **Included in:** <br/><br/>Windows 8<br /> Windows Server 2012<br /> [Visual Studio 2012](https://my.visualstudio.com/Downloads?q=visual%20studio%202012)<br /><br /> **You can install on:**<br/><br /> Windows 7 and earlier<br /> Windows Server 2008 SP2 and earlier<br />(for a full list, see [system requirements](../get-started/system-requirements.md))|
 
+[!INCLUDE [net-framework-vs](../../../includes/net-framework-vs.md)]
+
 You can install the **Developer Pack** for a specific version of the .NET Framework, if one is available, on all supported platforms.
 
 You can install the **Web or Offline installer** on:

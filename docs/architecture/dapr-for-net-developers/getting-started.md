@@ -222,9 +222,12 @@ Additionally, you'll need complete this sample using [Visual Studio 2019](https:
 
     :::image type="content" source="./media/getting-started/multicontainer-createwebapp.png" alt-text="Screenshot of creating a new ASP.NET Core web application":::
 
-1. Add a ASP.NET Core Web API project to the same solution and call it _DaprBackEnd_. Select **API** as the project type. By default, a Dapr sidecar relies on the network boundary to limit access to its public API. So, clear the checkbox for **Configure for HTTPS**.
+1. Add an ASP.NET Core Web API project to the same solution and call it _DaprBackEnd_. Select **API** as the project type. By default, a Dapr sidecar relies on the network boundary to limit access to its public API. So, clear the checkbox for **Configure for HTTPS**.
 
     :::image type="content" source="./media/getting-started/multicontainer-createwebapi.png" alt-text="Screenshot of creating the web API":::
+
+> [!IMPORTANT]
+> If you leave the **Configure for HTTPS** checkbox checked, the generated ASP.NET Core API project includes middleware to redirect client requests to the HTTPS endpoint. This breaks communication between the Dapr sidecar and your application, unless you explicitly configure the use of HTTPS when running your Dapr application. To enable the Dapr sidecar to communicate over HTTPS, include the `--app-ssl` flag in the Dapr command to start the application. Also specify the HTTPS port using the `--app-port` parameter. This walkthrough uses plain HTTP communication between the sidecar and the application.
 
 ### Add Dapr service invocation
 

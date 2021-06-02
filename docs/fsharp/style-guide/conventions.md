@@ -513,15 +513,13 @@ The previous observations about performance with struct tuples and records also 
     let reverseName (Name s) =
         s.ToCharArray()
         |> Array.rev
-        |> Array.map Char.ToString
-        |> String.concat ""
+        |> System.String
         |> Name
 
     let structReverseName (SName s) =
         s.ToCharArray()
         |> Array.rev
-        |> Array.map Char.ToString
-        |> String.concat ""
+        |> System.String
         |> SName
 ```
 

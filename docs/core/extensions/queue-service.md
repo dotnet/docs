@@ -34,7 +34,7 @@ You may be familiar with the <xref:System.Web.Hosting.HostingEnvironment.QueueBa
 
 :::code source="snippets/workers/queue-service/IBackgroundTaskQueue.cs":::
 
-There are two methods, one which exposes queuing functionality and the other that dequeues previously queued work items. A *work item* is a `Func<CancellationToken, ValueTask>`. Next, add the default implementation to the project.
+There are two methods, one that exposes queuing functionality, and another that dequeues previously queued work items. A *work item* is a `Func<CancellationToken, ValueTask>`. Next, add the default implementation to the project.
 
 :::code source="snippets/workers/queue-service/DefaultBackgroundTaskQueue.cs":::
 
@@ -58,7 +58,7 @@ A `MonitorLoop` service handles enqueuing tasks for the hosted service whenever 
 - `IBackgroundTaskQueue.QueueBackgroundWorkItemAsync` is called to enqueue a work item.
 - The work item simulates a long-running background task:
   - Three 5-second delays are executed <xref:System.Threading.Tasks.Task.Delay%2A>.
-  - A `try-catch` statement traps <xref:System.OperationCanceledException> if the task is cancelled.
+  - A `try-catch` statement traps <xref:System.OperationCanceledException> if the task is canceled.
 
 :::code source="snippets/workers/queue-service/MonitorLoop.cs" highlight="11,16,41":::
 

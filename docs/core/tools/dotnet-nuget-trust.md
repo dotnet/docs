@@ -43,7 +43,6 @@ USAGE:
 OPTIONS:
     -h, --help                          Prints out a short help for the command.
     -v, --verbosity <LEVEL>             Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
-    -i, --interactive                   Allows command to stop and wait for user input or action.
         --configfile                    Specific NuGet file that should be used instead of the standard hierarchy.
 ```
 
@@ -58,7 +57,6 @@ USAGE:
 OPTIONS:
     -h, --help                          Prints out a short help for the command.
     -v, --verbosity <LEVEL>             Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
-    -i, --interactive                   Allows command to stop and wait for user input or action.
         --configfile                    Specific NuGet file that should be used instead of the standard hierarchy.
 ```
 
@@ -73,7 +71,6 @@ USAGE:
 OPTIONS:
     -h, --help                          Prints out a short help for the command.
     -v, --verbosity <LEVEL>             Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
-    -i, --interactive                   Allows command to stop and wait for user input or action.
         --configfile                    Specific NuGet file that should be used instead of the standard hierarchy.
 ```
 
@@ -92,7 +89,6 @@ OPTIONS:
         --allow-untrusted-root          Specifies if the certificate for the trusted signer should be allowed to chain to an untrusted root.
     -h, --help                          Prints out a short help for the command.
     -v, --verbosity <LEVEL>             Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
-    -i, --interactive                   Allows command to stop and wait for user input or action.
         --configfile                    Specific NuGet file that should be used instead of the standard hierarchy.
 ```
 
@@ -109,7 +105,6 @@ OPTIONS:
         --owners                        Semi-colon separated list of trusted owners to further restrict the trust of a repository.
     -h, --help                          Prints out a short help for the command.
     -v, --verbosity <LEVEL>             Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
-    -i, --interactive                   Allows command to stop and wait for user input or action.
         --configfile                    Specific NuGet file that should be used instead of the standard hierarchy.
 ```
 
@@ -128,7 +123,6 @@ OPTIONS:
         --algorithm                     Specifies the hash algorithm used to calculate the certificate fingerprint. Defaults to SHA256. Values supported are SHA256, SHA384 and SHA512
     -h, --help                          Prints out a short help for the command.
     -v, --verbosity <LEVEL>             Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
-    -i, --interactive                   Allows command to stop and wait for user input or action.
         --configfile                    Specific NuGet file that should be used instead of the standard hierarchy.
 ```
 
@@ -151,7 +145,6 @@ OPTIONS:
         --owners                        Semi-colon separated list of trusted owners to further restrict the trust of a repository.
     -h, --help                          Prints out a short help for the command.
     -v, --verbosity <LEVEL>             Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
-    -i, --interactive                   Allows command to stop and wait for user input or action.
         --configfile                    Specific NuGet file that should be used instead of the standard hierarchy.
 ```
 

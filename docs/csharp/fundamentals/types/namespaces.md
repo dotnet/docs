@@ -16,7 +16,7 @@ Namespaces are heavily used in C# programming in two ways. First, .NET uses name
 
 :::code language="csharp" source="snippets/namespaces/Program.cs" ID="Snippet1":::
 
-:::code language="csharp" source="snippets/namespaces/Program.cs" ID="Snippet22":::
+:::code language="csharp" source="snippets/namespaces/Program.cs" ID="Snippet23":::
 
 For more information, see the [using Directive](../../language-reference/keywords/using-directive.md).
 

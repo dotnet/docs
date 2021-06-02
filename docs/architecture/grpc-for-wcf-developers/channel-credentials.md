@@ -92,6 +92,7 @@ public class Startup
 
 With the `Grpc.Net.Client` package, you configure certificates on an <xref:System.Net.Http.HttpClient> instance that is provided to the `GrpcChannel` used for the connection.
 
+### Loading a client certificate from a .PFX file
 ```csharp
 class Program
 {
@@ -117,6 +118,32 @@ class Program
 }
 ```
 
+### Loading a client certificate from certificate and private key .PEM files
+```csharp
+class Program
+{
+    static async Task Main(string[] args)
+    {
+        // Assume path to a certificate and private key .pem files are passed from command line
+        string certificatePem = File.ReadAllText(args[0]);
+        string privateKeyPem = File.ReadAllText(args[1]);
+        var cert = X509Certificate2.CreateFromPem(certificatePem, privateKeyPem);
+
+        var handler = new HttpClientHandler();
+        handler.ClientCertificates.Add(cert);
+        var httpClient = new HttpClient(handler);
+
+        var channel = GrpcChannel.ForAddress("https://localhost:5001/", new GrpcChannelOptions
+        {
+            HttpClient = httpClient
+        });
+
+        var grpc = new Greeter.GreeterClient(channel);
+        var response = await grpc.SayHelloAsync(new HelloRequest { Name = "Bob" });
+        System.Console.WriteLine(response.Message);
+    }
+}
+```
 > [!NOTE]
 > Due to an internal Windows bug as [documented here](https://github.com/dotnet/runtime/issues/23749#issuecomment-388231655), you'll need to apply the following a workaround if the certificate is created from certificate and private key PEM data.
 > 

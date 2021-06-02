@@ -56,6 +56,12 @@ The `QueueClient` class enables you to retrieve queues stored in Queue storage. 
 
 Now you are ready to write code that reads data from and writes data to Queue storage.
 
+## Create a queue
+
+This example shows how to create a queue if it doesn't already exist:
+
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L26-L27)]
+
 ## Insert a message into a queue
 
 To insert a message into an existing queue, first create a new
@@ -63,20 +69,20 @@ Message. Next, call the `SendMessage` method. A
 Message can be created from string (in UTF-8
 format), like this:
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L26-L28)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L33-L34)]
 
 ## Peek at the next message
 
 You can peek at the message in the front of a queue, without removing it
 from the queue, by calling the `PeekMessage` method.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L34-L36)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L40-L41)]
 
 ## Get the next message for processing
 
 You can retrieve the message at the front of a queue for processing by calling the `ReceiveMessage` method.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L42-L43)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L47-L48)]
 
 You later indicate successful processing of the message by using `DeleteMessage`.
 
@@ -95,7 +101,7 @@ you would keep a retry count as well, and if the message is retried more
 than some number of times, you would delete it. This protects against a message
 that triggers an application error each time it is processed.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L50-L55)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L54-L59)]
 
 ## De-queue the next message
 
@@ -110,13 +116,13 @@ software failure, another instance of your code can get the same message
 and try again. Your code calls `DeleteMessage` right after the message
 has been processed.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L61-L62)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L65-L67)]
 
 ## Use Async workflows with common Queue storage APIs
 
 This example shows how to use an async workflow with common Queue storage APIs.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L68-L77)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L73-L82)]
 
 ## Additional options for de-queuing messages
 
@@ -130,20 +136,20 @@ each message. The 5 minutes starts for all messages at the same
 time, so after 5 minutes have passed since the call to `ReceiveMessages`, any
 messages that have not been deleted will become visible again.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L83-L85)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L88-L90)]
 
 ## Get the queue length
 
 You can get an estimate of the number of messages in a queue. The `GetProperties` method asks the Queue service to retrieve the queue attributes, including the message count. The `ApproximateMessagesCount` property returns the last value retrieved by the `GetProperties` method, without calling the Queue service.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L91-L92)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L96-L97)]
 
 ## Delete a queue
 
 To delete a queue and all the messages contained in it, call the
 `Delete` method on the queue object.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L98-L99)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L103-L103)]
 
 ## Next steps
 

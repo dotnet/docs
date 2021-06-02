@@ -16,31 +16,36 @@ let storageConnString =
 // Create the Queue Service client.
 //
 
+// Instantiate a QueueClient which will be used to create and manipulate the queue
 let queueClient = new QueueClient(storageConnString, "myqueue");
+
+//
+// Create a queue.
+//
+
+// Create the queue if it doesn't already exist
 queueClient.CreateIfNotExists()
 
 //
 // Insert a message into a queue.
 //
 
-// Create a message and add it to the queue.
-let message = "Hello, World"
-queueClient.SendMessage(message)
+// Send a message to the queue
+queueClient.SendMessage("Hello, World")
 
 //
 // Peek at the next message.
 //
 
-// Peek at the next message.
 let peekedMessage = queueClient.PeekMessage()
-let msgToString = peekedMessage.ToString()
+let messageContents = peekedMessage.ToString()
 
 //
 // Get the next message.
 //
 
 // Get the next message. Successful processing must be indicated via DeleteMessage later.
-let retrieved = queueClient.ReceiveMessage()
+let updateMessage = queueClient.ReceiveMessage().Value
 
 //
 // Change the contents of a retrieved message.
@@ -48,8 +53,8 @@ let retrieved = queueClient.ReceiveMessage()
 
 // Update the message contents and set a new timeout.
 queueClient.UpdateMessage(
-    retrieved.Value.MessageId,
-    retrieved.Value.PopReceipt,
+    updateMessage.MessageId,
+    updateMessage.PopReceipt,
     "Updated contents.",
     TimeSpan.FromSeconds(60.0))
 
@@ -58,7 +63,8 @@ queueClient.UpdateMessage(
 //
 
 // Process the message in less than 30 seconds, and then delete the message.
-queueClient.DeleteMessage(retrieved.Value.MessageId, retrieved.Value.PopReceipt)
+let delMessage = queueClient.ReceiveMessage().Value
+queueClient.DeleteMessage(delMessage.MessageId, delMessage.PopReceipt)
 
 //
 // Use Async-Await pattern with common Queue storage APIs.
@@ -67,21 +73,21 @@ queueClient.DeleteMessage(retrieved.Value.MessageId, retrieved.Value.PopReceipt)
 async {
     let! exists = queueClient.CreateIfNotExistsAsync() |> Async.AwaitTask
 
-    let! receipt = queueClient.ReceiveMessageAsync() |> Async.AwaitTask
+    let! delAsyncMessage = queueClient.ReceiveMessageAsync() |> Async.AwaitTask
 
     // ... process the message here ...
 
     // Now indicate successful processing:
-    queueClient.DeleteMessageAsync(receipt.Value.MessageId, receipt.Value.PopReceipt) |> Async.AwaitTask
+    queueClient.DeleteMessageAsync(delAsyncMessage.Value.MessageId, delAsyncMessage.Value.PopReceipt) |> Async.AwaitTask
 }
 
 //
 // Additional options for de-queuing messages.
 //
 
-for msg in queueClient.ReceiveMessages(20, Nullable(TimeSpan.FromMinutes(5.))).Value do
+for dequeueMessage in queueClient.ReceiveMessages(20, Nullable(TimeSpan.FromMinutes(5.))).Value do
         // Process the message here.
-        queueClient.DeleteMessage(msg.MessageId, msg.PopReceipt)
+        queueClient.DeleteMessage(dequeueMessage.MessageId, dequeueMessage.PopReceipt)
 
 //
 // Get the queue length.
@@ -94,5 +100,4 @@ let count = properties.ApproximateMessagesCount
 // Delete a queue.
 //
 
-// Delete the queue.
 queueClient.Delete()

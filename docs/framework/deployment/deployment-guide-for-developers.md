@@ -28,7 +28,7 @@ You can download the redistributable packages and language packs for .NET Framew
 
  Important notes:
 
-- Versions of the .NET Framework from .NET Framework 4.5.1 through [!INCLUDE[net_current](../../../includes/net-current-version.md)] are in-place updates to .NET Framework 4.5, which means they use the same runtime version, but the assembly versions are updated and include new types and members.
+- Versions of .NET Framework from .NET Framework 4.5.1 through [!INCLUDE[net_current](../../../includes/net-current-version.md)] are in-place updates to .NET Framework 4.5, which means they use the same runtime version, but the assembly versions are updated and include new types and members.
 
 - .NET Framework 4.5 and later versions are built incrementally on .NET Framework 4. When you install .NET Framework 4.5 or later versions on a system that has .NET Framework 4 installed, the version 4 assemblies are replaced with newer versions.
 
@@ -36,7 +36,7 @@ You can download the redistributable packages and language packs for .NET Framew
 
 - You must have administrator privileges to install .NET Framework 4.5 or later versions.
 
-- .NET Framework 4.5 is included in Windows 8 and Windows Server 2012, so you don't have to deploy it with your app on those operating systems. Similarly, .NET Framework 4.5.1 is included in Windows 8.1 and Windows Server 2012 R2. .NET Framework 4.5.2 isn't included in any operating systems. .NET Framework 4.6 is included in Windows 10, .NET Framework 4.6.1 is included in Windows 10 November Update, and .NET Framework 4.6.2 is included in Windows 10 Anniversary Update.  .NET Framework 4.7 is included in Windows 10 Creators Update, .NET Framework 4.7.1 is included in Windows 10 Fall Creators Update, and .NET Framework 4.7.2 is included in Windows 10 October 2018 Update and Windows 10 April 2018 Update. .NET Framework 4.8 is included in Windows 10 May 2019 Update and all later Windows 10 updates. For a full list of hardware and software requirements, see [System Requirements](../get-started/system-requirements.md).
+- .NET Framework 4.5 is included in Windows 8 and Windows Server 2012, so you don't have to deploy it with your app on those operating systems. Similarly, .NET Framework 4.5.1 is included in Windows 8.1 and Windows Server 2012 R2. .NET Framework 4.5.2 isn't included in any operating systems. .NET Framework 4.6 is included in Windows 10, .NET Framework 4.6.1 is included in Windows 10 November Update, and .NET Framework 4.6.2 is included in Windows 10 Anniversary Update. .NET Framework 4.7 is included in Windows 10 Creators Update, .NET Framework 4.7.1 is included in Windows 10 Fall Creators Update, and .NET Framework 4.7.2 is included in Windows 10 October 2018 Update and Windows 10 April 2018 Update. .NET Framework 4.8 is included in Windows 10 May 2019 Update and all later Windows 10 updates. For a full list of hardware and software requirements, see [System Requirements](../get-started/system-requirements.md).
 
 - Starting with .NET Framework 4.5, your users can view a list of running .NET Framework apps during setup and close them easily. This may help avoid system restarts caused by .NET Framework installations. See [Reducing System Restarts](reducing-system-restarts.md).
 
@@ -58,7 +58,7 @@ When you're ready to publish your app to a web server or other centralized locat
 
 ## Redistributable packages
 
-The .NET Framework is available in two redistributable packages: web installer (bootstrapper) and offline installer (stand-alone redistributable). All .NET Framework downloads are hosted on the [Download .NET Framework page](https://dotnet.microsoft.com/download/dotnet-framework/). The following table compares the two packages:
+.NET Framework is available in two redistributable packages: web installer (bootstrapper) and offline installer (stand-alone redistributable). All .NET Framework downloads are hosted on the [Download .NET Framework page](https://dotnet.microsoft.com/download/dotnet-framework/). The following table compares the two packages:
 
 ||Web installer|Offline installer|
 |-|-------------------|-----------------------|
@@ -73,9 +73,9 @@ The .NET Framework is available in two redistributable packages: web installer (
 
 ## Deployment methods
 
- Four deployment methods are available:
+Four deployment methods are available:
 
-- You can set a dependency on the .NET Framework. You can specify the .NET Framework as a prerequisite in your app's installation, using one of these methods:
+- You can set a dependency on .NET Framework. You can specify .NET Framework as a prerequisite in your app's installation, using one of these methods:
 
   - Use [ClickOnce deployment](#clickonce-deployment) (available with Visual Studio)
 
@@ -85,7 +85,7 @@ The .NET Framework is available in two redistributable packages: web installer (
 
   - Use the [Windows Installer XML (WiX) toolset](#wix)
 
-- You can ask your users to [install the .NET Framework manually](#installing_manually).
+- You can ask your users to [install .NET Framework manually](#installing_manually).
 
 - You can chain (include) the .NET Framework setup process in your app's setup, and decide how you want to handle the .NET Framework installation experience:
 
@@ -95,15 +95,15 @@ The .NET Framework is available in two redistributable packages: web installer (
 
 These deployment methods are discussed in detail in the following sections.
 
-## Setting a dependency on the .NET Framework
+## Set a dependency on .NET Framework
 
-If you use ClickOnce, InstallAware, InstallShield, or WiX to deploy your app, you can add a dependency on the .NET Framework so it can be installed as part of your app.
+If you use ClickOnce, InstallAware, InstallShield, or WiX to deploy your app, you can add a dependency on .NET Framework so it can be installed as part of your app.
 
 ### ClickOnce deployment
 
 ClickOnce deployment is available for projects that are created with Visual Basic and Visual C#, but it is not available for Visual C++.
 
-In Visual Studio, to choose ClickOnce deployment and add a dependency on the .NET Framework:
+In Visual Studio, to choose ClickOnce deployment and add a dependency on .NET Framework:
 
 1. Open the app project you want to publish.
 
@@ -115,7 +115,7 @@ In Visual Studio, to choose ClickOnce deployment and add a dependency on the .NE
 
 5. In the **Prerequisites** dialog box, make sure that the **Create setup program to install prerequisite components** check box is selected.
 
-6. In the prerequisites list, locate and select the version of the .NET Framework that you've used to build your project.
+6. In the prerequisites list, locate and select the version of .NET Framework that you've used to build your project.
 
 7. Choose an option to specify the source location for the prerequisites, and then choose **OK**.
 
@@ -143,11 +143,11 @@ The Windows Installer XML (WiX) toolset builds Windows installation packages fro
 
 ## Install .NET Framework manually
 
-In some situations, it might be impractical to automatically install the .NET Framework with your app. In that case, you can have users install the .NET Framework themselves. The redistributable package is available in [two packages](#redistributable-packages). In your setup process, provide instructions for how users should locate and install the .NET Framework.
+In some situations, it might be impractical to automatically install .NET Framework with your app. In that case, you can have users install .NET Framework themselves. The redistributable package is available in [two packages](#redistributable-packages). In your setup process, provide instructions for how users should locate and install .NET Framework.
 
 <a name="chaining"></a>
 
-## Chaining the .NET Framework installation to your app's setup
+## Chain the .NET Framework installation to your app's setup
 
 If you're creating a custom setup program for your app, you can chain (include) the .NET Framework setup process in your app's setup process. Chaining provides two UI options for the .NET Framework installation:
 
@@ -219,12 +219,12 @@ If you have a custom setup package, you may want to silently launch and track th
 
 <a name="detect_net"></a>
 
-### Detecting the .NET Framework
+### Detect  .NET Framework
 
-The .NET Framework installer writes registry keys when installation is successful. You can test whether .NET Framework 4.5 or later is installed by checking the `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full` folder in the registry for a `DWORD` value named `Release`. (Note that "NET Framework Setup" doesn't begin with a period.) The existence of this key indicates that .NET Framework 4.5 or a later version has been installed on that computer. The value of `Release` indicates which version of the .NET Framework is installed.
+The .NET Framework installer writes registry keys when installation is successful. You can test whether .NET Framework 4.5 or later is installed by checking the `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full` folder in the registry for a `DWORD` value named `Release`. (Note that "NET Framework Setup" doesn't begin with a period.) The existence of this key indicates that .NET Framework 4.5 or a later version has been installed on that computer. The value of `Release` indicates which version of .NET Framework is installed.
 
 > [!IMPORTANT]
-> You should check for a value  **greater than or equal to** the release keyword value when attempting to detect whether a specific version is present.
+> Check for a value  **greater than or equal to** the release keyword value when attempting to detect whether a specific version is present.
 
 [!INCLUDE[Release key values note](~/includes/version-keys-note.md)]
 
@@ -250,7 +250,7 @@ The .NET Framework installer writes registry keys when installation is successfu
 |.NET Framework 4.5.1 installed on Windows 8, Windows 7|378758|
 |.NET Framework 4.5|378389|
 
-### Detecting the language packs
+### Detect language packs
 
 You can test whether a specific language pack is installed by checking the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\\*LCID* folder in the registry for a DWORD value named `Release`. (Note that "NET Framework Setup" doesn't begin with a period.) *LCID* specifies a locale identifier; see [supported languages](#supported-languages) for a list of these.
 
@@ -268,7 +268,7 @@ To determine whether the final release version of a language pack is installed f
 
 ### Chaining the language packs to your app setup
 
-The .NET Framework provides a set of stand-alone language pack executable files that contain localized resources for specific cultures. The language packs are available from the Download .NET Framework pages:
+.NET Framework provides a set of stand-alone language pack executable files that contain localized resources for specific cultures. The language packs are available from the .NET Framework download pages:
 
 - [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
 - [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework/net472)
@@ -282,7 +282,7 @@ The .NET Framework provides a set of stand-alone language pack executable files 
 - [.NET Framework 4.5](https://dotnet.microsoft.com/download/dotnet-framework/net45)
 
 > [!IMPORTANT]
-> The language packs don't contain the .NET Framework components that are required to run an app; you must install the .NET Framework by using the web or offline installer before you install a language pack.
+> The language packs don't contain the .NET Framework components that are required to run an app. You must install .NET Framework by using the web or offline installer before you install a language pack.
 
 Starting with .NET Framework 4.5.1, the package names take the form NDP<`version`>-KB<`number`>-x86-x64-AllOS-<`culture`>.exe, where `version` is the version number of the .NET Framework, `number` is a Microsoft Knowledge Base article number, and `culture` specifies a [country/region](#supported-languages). An example of one of these packages is `NDP452-KB2901907-x86-x64-AllOS-JPN.exe`. Package names are listed in the [Redistributable Packages](#redistributable-packages) section earlier in this article.
 
@@ -327,7 +327,7 @@ See the following content:
 
 - [Windows Update Agent result codes](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc720442(v=ws.10))
 
-## Uninstalling the .NET Framework
+## Uninstall .NET Framework
 
 Starting with Windows 8, you can uninstall .NET Framework 4.5 or later versions by using **Turn Windows features on and off** in Control Panel. In older versions of Windows, you can uninstall .NET Framework 4.5 or later versions by using **Add or Remove Programs** in Control Panel.
 

@@ -1,8 +1,8 @@
 ---
 title: ".NET Framework system requirements"
-description: "Find out what are the hardware, operating system and software requirements to install .NET Framework 4.5 and later versions."
-ms.date: "04/18/2019"
-helpviewer_keywords: 
+description: "Find out about the hardware, operating system, and software requirements to install .NET Framework 4.5 and later versions."
+ms.date: 05/11/2021
+helpviewer_keywords:
   - "software requirements"
   - ".NET Framework, system requirements"
   - "system requirements"
@@ -47,6 +47,7 @@ For information on the support lifecycle of .NET Framework versions, see [Micros
 
 | Operating system | Supported editions | Preinstalled with the OS | Installable separately |
 | ---------------- | ------------------ | ------------------------ | ---------------------- |
+| Windows 10 October 2020 Update<br/> (version 20H2) | 32-bit and 64-bit | .NET Framework 4.8 | -- |
 | Windows 10 May 2020 Update<br/> (version 2004) | 32-bit and 64-bit | .NET Framework 4.8 | -- |
 | Windows 10 November 2019 Update<br/> (version 1909) | 32-bit and 64-bit | .NET Framework 4.8 | -- |
 | Windows 10 May 2019 Update<br/> (version 1903) | 32-bit and 64-bit | .NET Framework 4.8 | -- |

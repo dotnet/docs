@@ -2,7 +2,6 @@
 title: .NET code style rule options
 description: Learn how to specify .NET code style options.
 ms.date: 09/25/2020
-ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 ---

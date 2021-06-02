@@ -50,6 +50,8 @@ Many attributes have parameters, which can be positional, unnamed, or named. Any
 
 The first parameter, the DLL name, is positional and always comes first; the others are named. In this case, both named parameters default to false, so they can be omitted. Positional parameters correspond to the parameters of the attribute constructor. Named or optional parameters correspond to either properties or fields of the attribute. Refer to the individual attribute's documentation for information on default parameter values.
 
+For more information on allowed parameter types, see the [Attributes](~/_csharplang/spec/attributes.md#attribute-parameter-types) section of the [C# language specification](~/_csharplang/spec/introduction.md)
+
 ### Attribute targets
 
 The *target* of an attribute is the entity which the attribute applies to. For example, an attribute may apply to a class, a particular method, or an entire assembly. By default, an attribute applies to the element that follows it. But you can also explicitly identify, for example, whether an attribute is applied to a method, or to its parameter, or to its return value.

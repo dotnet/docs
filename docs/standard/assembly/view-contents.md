@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "viewing assembly information"
   - "MSIL"
   - "viewing MSIL information"
-ms.assetid: fb7baaab-4c0d-47ad-8fd3-4591cf834709
+ms.topic: how-to
 dev_langs:
   - "csharp"
   - "vb"

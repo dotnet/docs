@@ -2,6 +2,7 @@
 description: "Learn more about: How to: Create a Service That Returns Arbitrary Data Using The WCF Web HTTP Programming Model"
 title: "How to: Create a Service That Returns Arbitrary Data Using The WCF Web HTTP Programming Model"
 ms.date: "03/30/2017"
+ms.topic: how-to
 ms.assetid: 0283955a-b4ae-458d-ad9e-6fbb6f529e3d
 ---
 # How to: Create a Service That Returns Arbitrary Data Using The WCF Web HTTP Programming Model

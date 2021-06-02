@@ -42,8 +42,8 @@ In .NET Core and .NET 5 and later versions, all implementation classes (`*Crypto
 
 In most cases, you don't need to directly reference an algorithm implementation class, such as `AesCryptoServiceProvider`. The methods and properties you typically need are on the base algorithm class, such as `Aes`. Create an instance of a default implementation class by using a factory method on the base algorithm class, and refer to the base algorithm class. For example, see the highlighted line of code in the following example:
 
-:::code language="csharp" source="snippets/encrypting-data/csharp/aes-encrypt.cs" highlight="20":::
-:::code language="vb" source="snippets/encrypting-data/vb/aes-encrypt.vb" highlight="17":::
+:::code language="csharp" source="snippets/encrypting-data/csharp/aes-encrypt.cs" highlight="9":::
+:::code language="vb" source="snippets/encrypting-data/vb/aes-encrypt.vb" highlight="13":::
 
 ## Cryptographic configuration
 

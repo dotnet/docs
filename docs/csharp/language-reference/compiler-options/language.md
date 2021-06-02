@@ -39,7 +39,7 @@ The **AllowUnsafeBlocks** compiler option allows code that uses the [unsafe](../
 <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 ```
 
-For more information about unsafe code, see [Unsafe Code and Pointers](../../programming-guide/unsafe-code-pointers/index.md).
+For more information about unsafe code, see [Unsafe Code and Pointers](../unsafe-code.md).
 
 ## DefineConstants
 
@@ -49,7 +49,7 @@ The **DefineConstants** option defines symbols in all source code files of your 
 <DefineConstants>name;name2</DefineConstants>
 ```
 
-This option specifies the names of one or more symbols that you want to define. The **DefineConstants** option has the same effect as the [#define](../preprocessor-directives/preprocessor-define.md) preprocessor directive except that the compiler option is in effect for all files in the project. A symbol remains defined in a source file until an [#undef](../preprocessor-directives/preprocessor-undef.md) directive in the source file removes the definition. When you use the `-define` option, an `#undef` directive in one file has no effect on other source code files in the project. You can use symbols created by this option with [#if](../preprocessor-directives/preprocessor-if.md), [#else](../preprocessor-directives/preprocessor-else.md), [#elif](../preprocessor-directives/preprocessor-elif.md), and [#endif](../preprocessor-directives/preprocessor-endif.md) to compile source files conditionally. The C# compiler itself defines no symbols or macros that you can use in your source code; all symbol definitions must be user-defined.
+This option specifies the names of one or more symbols that you want to define. The **DefineConstants** option has the same effect as the [#define](../preprocessor-directives.md#defining-symbols) preprocessor directive except that the compiler option is in effect for all files in the project. A symbol remains defined in a source file until an [#undef](../preprocessor-directives.md#defining-symbols) directive in the source file removes the definition. When you use the `-define` option, an `#undef` directive in one file has no effect on other source code files in the project. You can use symbols created by this option with [#if](../preprocessor-directives.md#conditional-compilation), [#else](../preprocessor-directives.md), [#elif](../preprocessor-directives.md#conditional-compilation), and [#endif](../preprocessor-directives.md#conditional-compilation) to compile source files conditionally. The C# compiler itself defines no symbols or macros that you can use in your source code; all symbol definitions must be user-defined.
 
 > [!NOTE]
 > The C# `#define` directive does not allow a symbol to be given a value, as in languages such as C++. For example, `#define` cannot be used to create a macro or to define a constant. If you need to define a constant, use an `enum` variable. If you want to create a C++ style macro, consider alternatives such as generics. Since macros are notoriously error-prone, C# disallows their use but provides safer alternatives.
@@ -146,4 +146,4 @@ Invocation of methods annotated with the following attributes will also affect f
 > 1. Start the file name with *TemporaryGeneratedFile_*
 > 1. End the file name with *.designer.cs*, *.generated.cs*, *.g.cs*, or *.g.i.cs*.
 >
-> Generators can opt-in using the [`#nullable`](../preprocessor-directives/preprocessor-nullable.md) preprocessor directive.
+> Generators can opt-in using the [`#nullable`](../preprocessor-directives.md#nullable-context) preprocessor directive.

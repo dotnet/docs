@@ -29,9 +29,9 @@ class TestCounter
     {
         // If you uncomment the following statement, it will generate
         // an error because the constructor is inaccessible:
-        //<Snippet13>
+        //<Snippet3>
         // Counter aCounter = new Counter();   // Error
-        //</Snippet13>
+        //</Snippet3>
 
         Counter.currentCount = 100;
         Counter.IncrementCount();

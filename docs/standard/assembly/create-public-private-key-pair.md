@@ -11,11 +11,11 @@ helpviewer_keywords:
   - "public-private key pairs"
   - ".snk files"
   - "strong-named assemblies, key pairs"
-ms.assetid: 05026813-f3bd-4d7c-9e0b-fc588eb3d114
 dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
+ms.topic: how-to
 ---
 # How to: Create a public-private key pair
 

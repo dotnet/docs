@@ -1,9 +1,8 @@
-﻿// <Snippet3>
-using Microsoft.Win32.SafeHandles;
+﻿using Microsoft.Win32.SafeHandles;
 using System;
 using System.Runtime.InteropServices;
 
-class BaseClass : IDisposable
+class BaseClassWithSafeHandle : IDisposable
 {
     // To detect redundant calls
     private bool _disposed = false;
@@ -31,4 +30,3 @@ class BaseClass : IDisposable
         _disposed = true;
     }
 }
-// </Snippet3>

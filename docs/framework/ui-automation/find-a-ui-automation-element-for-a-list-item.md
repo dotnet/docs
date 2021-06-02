@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "list items, finding elements for"
   - "elements, finding for list items"
   - "UI Automation, finding elements for List items"
-ms.assetid: c326ad2b-2144-4f64-ae4c-d850c74f95c5
+ms.topic: how-to
 ---
 # Find a UI Automation Element for a List Item
 

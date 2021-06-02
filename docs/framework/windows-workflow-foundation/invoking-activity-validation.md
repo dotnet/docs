@@ -2,15 +2,15 @@
 description: "Learn more about: Invoking Activity Validation"
 title: "Invoking Activity Validation"
 ms.date: "03/30/2017"
-ms.assetid: 22bef766-c505-4fd4-ac0f-7b363b238969
+ms.topic: "how-to"
 ---
 # Invoking Activity Validation
 
-Activity validation provides a method to identify and report errors in any activity’s configuration prior to its execution. Validation occurs when a workflow is modified in the workflow designer and any validation errors or warnings are displayed in the workflow designer. Validation also occurs at run time when a workflow is invoked and if any validation errors occur, an <xref:System.Activities.InvalidWorkflowException> is thrown by the default validation logic. Windows Workflow Foundation (WF) provides the <xref:System.Activities.Validation.ActivityValidationServices> class that can be used by workflow application and tooling developers to explicitly validate an activity. This topic describes how to use <xref:System.Activities.Validation.ActivityValidationServices> to perform activity validation.  
+Activity validation provides a method to identify and report errors in any activity's configuration prior to its execution. Validation occurs when a workflow is modified in the workflow designer and any validation errors or warnings are displayed in the workflow designer. Validation also occurs at run time when a workflow is invoked and if any validation errors occur, an <xref:System.Activities.InvalidWorkflowException> is thrown by the default validation logic. Windows Workflow Foundation (WF) provides the <xref:System.Activities.Validation.ActivityValidationServices> class that can be used by workflow application and tooling developers to explicitly validate an activity. This topic describes how to use <xref:System.Activities.Validation.ActivityValidationServices> to perform activity validation.  
   
 ## Using ActivityValidationServices  
 
- <xref:System.Activities.Validation.ActivityValidationServices> has two <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> overloads that are used to invoke an activity’s validation logic. The first overload takes the root activity to be validated and returns a collection of validation errors and warnings. In the following example, a custom `Add` activity is used that has two required arguments.  
+ <xref:System.Activities.Validation.ActivityValidationServices> has two <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> overloads that are used to invoke an activity's validation logic. The first overload takes the root activity to be validated and returns a collection of validation errors and warnings. In the following example, a custom `Add` activity is used that has two required arguments.  
   
 ```csharp  
 public sealed class Add : CodeActivity<int>  

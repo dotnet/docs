@@ -15,7 +15,7 @@ All versions of SQL Server use role-based security, which allows you to assign p
 > [!IMPORTANT]
 > The `sysadmin` fixed server role encompasses all other roles and has unlimited scope. Do not add principals to this role unless they are highly trusted. `sysadmin` role members have irrevocable administrative privileges on all server databases and resources.  
   
- Be selective when you add users to fixed server roles. For example, the `bulkadmin` role allows users to insert the contents of any local file into a table, which could jeopardize data integrity. See SQL Server Books Online for the complete list of fixed server roles and permissions.  
+ Be selective when you add users to fixed server roles. For example, the `bulkadmin` role allows users to insert the contents of any local file into a table, which could jeopardize data integrity.
   
 ## Fixed Database Roles  
 

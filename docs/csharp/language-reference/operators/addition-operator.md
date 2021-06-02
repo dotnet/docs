@@ -1,6 +1,6 @@
 ---
-description: "+ and += operators - C# reference"
 title: "+ and += operators - C# reference"
+description: "Learn about the C# addition operator and how it works with operands of numeric, string, or delegate types."
 ms.date: 04/23/2020
 f1_keywords: 
   - "+_CSharpKeyword"

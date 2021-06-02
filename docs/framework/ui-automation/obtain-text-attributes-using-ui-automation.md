@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "getting, text attributes"
   - "UI Automation, getting text attributes"
   - "text attributes, getting"
-ms.assetid: fdefc6c3-b836-4cfe-8dec-1484bfdc5551
+ms.topic: how-to
 ---
 # Obtain Text Attributes Using UI Automation
 

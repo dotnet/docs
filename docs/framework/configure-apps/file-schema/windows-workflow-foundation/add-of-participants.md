@@ -2,7 +2,6 @@
 description: "Learn more about: <add> of <participants>"
 title: "<add> of <participants>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: 3c730850-6f8e-4102-acb8-8effb4e09463
 ---
 # \<add> of \<participants>

@@ -21,7 +21,7 @@ There are two kinds of types in C#: reference types and value types. Variables o
 - [interface](interface.md)
 
 - [delegate](../builtin-types/reference-types.md)
-- [record](../builtin-types/reference-types.md)
+- [record](../builtin-types/record.md)
 
  C# also provides the following built-in reference types:
 
@@ -35,5 +35,5 @@ There are two kinds of types in C#: reference types and value types. Variables o
 
 - [C# Reference](../index.md)
 - [C# Keywords](index.md)
-- [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
+- [Pointer types](../unsafe-code.md#pointer-types)
 - [Value types](../builtin-types/value-types.md)

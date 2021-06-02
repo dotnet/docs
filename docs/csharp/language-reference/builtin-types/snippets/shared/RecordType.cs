@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace builtin_types
 {
@@ -57,6 +58,26 @@ namespace builtin_types
             public string[] PhoneNumbers { get; init; }
         };
         // </MixedSyntax>
+    }
+
+    public static class PositionalAttributes
+    {
+        // <PositionalAttributes>
+        /// <summary>
+        /// Person record type
+        /// </summary>
+        /// <param name="FirstName">First Name</param>
+        /// <param name="LastName">Last Name</param>
+        /// <remarks>
+        /// The person type is a positional record containing the
+        /// properties for the first and last name. Those properties
+        /// map to the JSON elements "firstName" and "lastName" when
+        /// serialized or deserialized.
+        /// </remarks>
+        public record Person([property: JsonPropertyName("firstName")]string FirstName, 
+            [property: JsonPropertyName("lastName")]string LastName);
+        // </PositionalAttributes>
+
     }
 
     namespace instantiatepositional

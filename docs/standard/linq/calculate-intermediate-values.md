@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 7fd3001f-f8f9-4bce-879f-d4c7af8a04fe
+ms.topic: how-to
 ---
 
 # How to calculate intermediate values (LINQ to XML)

@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "serializing objects"
   - "serialization"
   - "objects, serializing"
+ms.topic: how-to
 ---
 
 # How to use immutable types and non-public accessors with System.Text.Json
@@ -40,6 +41,8 @@ Besides `[JsonPropertyName]` the following attributes support deserialization wi
 Records in C# 9 are also supported, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Records.cs":::
+
+You can apply any of the attributes to the property names, using the `property:` target on the attribute. For more information on positional records, see the article on [records](../../csharp/language-reference/builtin-types/record.md#positional-syntax-for-property-definition) in the C# language reference.
 
 For types that are immutable because all their property setters are non-public, see the following section.
 ::: zone-end
@@ -75,7 +78,7 @@ Non-public property accessors are not supported in .NET Core 3.1. For more infor
 * [Polymorphic serialization](system-text-json-polymorphism.md)
 * [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
 * [Customize character encoding](system-text-json-character-encoding.md)
-* [Write custom serializers and deserializers](write-custom-serializer-deserializer.md)
+* [Use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

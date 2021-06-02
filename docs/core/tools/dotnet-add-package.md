@@ -85,7 +85,7 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-pack
 
 - **`--prerelease`**
 
-  Allows prerelease packages to be installed.
+  Allows prerelease packages to be installed. Available since .NET Core 5 SDK
 
 - **`-s|--source <SOURCE>`**
 

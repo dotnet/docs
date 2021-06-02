@@ -8,7 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "client-side UI Automation provider, implementation within applications"
   - "UI Automation, implementing client-side provider within application"
-ms.assetid: f325f0d8-1715-41ea-85ca-45b82ffea8bc
+ms.topic: how-to
 ---
 # Implement UI Automation Providers in a Client Application
 

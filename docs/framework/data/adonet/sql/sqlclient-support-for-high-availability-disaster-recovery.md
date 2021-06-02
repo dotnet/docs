@@ -6,7 +6,7 @@ ms.assetid: 61e0b396-09d7-4e13-9711-7dcbcbd103a0
 ---
 # SqlClient Support for High Availability, Disaster Recovery
 
-This topic discusses SqlClient support (added in .NET Framework 4.5) for high-availability, disaster recovery -- AlwaysOn Availability Groups.  AlwaysOn Availability Groups feature was added to SQL Server 2012. For more information about AlwaysOn Availability Groups, see SQL Server Books Online.  
+This topic discusses SqlClient support (added in .NET Framework 4.5) for high-availability, disaster recovery -- AlwaysOn Availability Groups.  AlwaysOn Availability Groups feature was added to SQL Server 2012.
   
  You can now specify the availability group listener of a (high-availability, disaster-recovery) availability group (AG) or SQL Server 2012 Failover Cluster Instance in the connection property. If a SqlClient application is connected to an AlwaysOn database that fails over, the original connection is broken and the application must open a new connection to continue work after the failover.  
   

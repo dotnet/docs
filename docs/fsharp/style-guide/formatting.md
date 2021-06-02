@@ -274,6 +274,58 @@ let expensiveToComputeBad2 :int = 2
 let myFunBad (a: decimal) b c:decimal = a + b + c
 ```
 
+### Formatting bindings
+
+In all cases, the right-hand side of a binding either all goes on one line, or (if it's too long) goes on a new line indented one scope.
+
+For example, the following are non-compliant:
+
+```fsharp
+let a = """
+foobar, long string
+"""
+
+type File =
+    member this.SaveAsync(path: string) : Async<unit> = async {
+        // IO operation
+        return ()
+    }
+
+let c = {
+    Name = "Bilbo"
+    Age = 111
+    Region = "The Shire"
+}
+
+let d = while f do
+    printfn "%A" x
+```
+
+The following are compliant:
+
+```fsharp
+let a =
+    """
+foobar, long string
+"""
+
+type File =
+    member this.SaveAsync(path: string) : Async<unit> =
+        async {
+            // IO operation
+            return ()
+        }
+
+let c =
+    { Name = "Bilbo"
+      Age = 111
+      Region = "The Shire" }
+
+let d =
+    while f do
+        printfn "%A" x
+```
+
 ## Formatting blank lines
 
 * Separate top-level function and class definitions with two blank lines.
@@ -502,6 +554,40 @@ type Volume =
 | Liter of float
 | USPint of float
 | ImperialPint of float
+```
+
+When there is a single short union, you can omit the leading `|`.
+
+```fsharp
+type Address = Address of string
+```
+
+For a longer or multiline union, keep the `|`.
+
+```fsharp
+[<NoEquality; NoComparison>]
+type SynBinding =
+    | SynBinding of
+        accessibility: SynAccess option *
+        kind: SynBindingKind *
+        mustInline: bool *
+        isMutable: bool *
+        attributes: SynAttributes *
+        xmlDoc: PreXmlDoc *
+        valData: SynValData *
+        headPat: SynPat *
+        returnInfo: SynBindingReturnInfo option *
+        expr: SynExpr *
+        range: range *
+        seqPoint: DebugPointAtBinding
+```
+
+You can also use triple-slash `///` comments.
+
+```fsharp
+type Foobar =
+    /// Code comment
+    | Foobar of int
 ```
 
 ## Formatting discriminated unions
@@ -806,6 +892,46 @@ else
     e4
 ```
 
+If a condition is long, place it on the next line with an extra indent.
+Align the `if` and the `then` keywords.
+
+```fsharp
+if
+    complexExpression a b && env.IsDevelopment()
+    || secondLongerExpression
+        aVeryLongparameterNameOne
+        aVeryLongparameterNameTwo
+        aVeryLongparameterNameThree
+        """
+Multiline
+    string
+        """
+then
+        e1
+    else
+        e2
+```
+
+If you have a condition that is this long, first consider refactoring it into a separate function and calling that function instead
+
+```fsharp
+let condition () =
+    complexExpression a b && env.IsDevelopment()
+    || secondLongerExpression
+        aVeryLongparameterNameOne
+        aVeryLongparameterNameTwo
+        aVeryLongparameterNameThree
+        """
+Multiline
+    string
+        """
+
+if condition () then
+    e1
+else
+    e2
+```
+
 ### Pattern matching constructs
 
 Use a `|` for each clause of a match with no indentation. If the expression is short, you can consider using a single line if each subexpression is also simple.
@@ -850,7 +976,8 @@ lambdaList
 Pattern matching in functions defined by `let` or `let rec` should be indented four spaces after starting of `let`, even if `function` keyword is used:
 
 ```fsharp
-let rec sizeLambda acc = function
+let rec sizeLambda acc =
+    function
     | Abs(x, body) -> sizeLambda (succ acc) body
     | App(lam1, lam2) -> sizeLambda (sizeLambda acc lam1) lam2
     | Var v -> succ acc
@@ -873,6 +1000,23 @@ with
     printfn "A second that was not a multiple of 3"
 | _ ->
     printfn "A second that was a multiple of 3"
+```
+
+Always add a `|` for each clause, even when only having a single clause.
+
+```fsharp
+// OK
+try
+    persistState currentState
+with
+| ex ->
+    printfn "Something went wrong: %A" ex
+
+// Not OK
+try
+    persistState currentState
+with ex ->
+    printfn "Something went wrong: %A" ex
 ```
 
 ## Formatting function parameter application

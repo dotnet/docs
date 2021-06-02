@@ -125,7 +125,7 @@ The following table shows the syntax of each `action`. For descriptions of the i
 |------------|-----------------|
 |`/nologo`|Suppress the Microsoft startup banner display.|
 |`/silent`|Suppress the display of success messages.|
-|`/verbose`|Display detailed information for debugging. **Note:**  Due to operating system limitations, this option does not display as much additional information on Windows 98 and Windows Millennium Edition.|
+|`/verbose`|Display detailed information for debugging.|
 |`/help`, `/?`|Display command syntax and options for the current release.|
 
 ## Remarks
@@ -353,9 +353,7 @@ In addition, native images are not used if the assembly has been upgraded, or if
 
 When you use Ngen.exe to create a native image of an assembly, the output depends upon the command-line options that you specify and certain settings on your computer. These settings include the following:
 
-- The version of the .NET Framework.
-
-- The version of the operating system, if the change is from the Windows 9x family to the Windows NT family.
+- The version of .NET Framework.
 
 - The exact identity of the assembly (recompilation changes identity).
 
@@ -365,13 +363,9 @@ When you use Ngen.exe to create a native image of an assembly, the output depend
 
 Ngen.exe records this information when it generates a native image. When you execute an assembly, the runtime looks for the native image generated with options and settings that match the computer's current environment. The runtime reverts to JIT compilation of an assembly if it cannot find a matching native image. The following changes to a computer's settings and environment cause native images to become invalid:
 
-- The version of the .NET Framework.
+- The version of .NET Framework.
 
-     If you apply an update to the .NET Framework, all native images that you have created using Ngen.exe become invalid. For this reason, all updates of the .NET Framework execute the `Ngen Update` command, to ensure that all native images are regenerated. The .NET Framework automatically creates new native images for the .NET Framework libraries that it installs.
-
-- The version of the operating system, if the change is from the Windows 9x family to the Windows NT family.
-
-     For example, if the version of the operating system running on a computer changes from Windows 98 to Windows XP, all native images stored in the native image cache become invalid. However, if the operating system changes from Windows 2000 to Windows XP, the images are not invalidated.
+     If you apply an update to .NET Framework, all native images that you have created using Ngen.exe become invalid. For this reason, all updates of .NET Framework execute the `Ngen Update` command, to ensure that all native images are regenerated. .NET Framework automatically creates new native images for the .NET Framework libraries that it installs.
 
 - The exact identity of the assembly.
 

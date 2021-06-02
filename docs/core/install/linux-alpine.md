@@ -47,7 +47,6 @@ The following versions of .NET are no longer supported. The downloads for these 
 
 .NET on Alpine Linux requires the following dependencies installed:
 
-- bash
 - icu-libs
 - krb5-libs
 - libgcc

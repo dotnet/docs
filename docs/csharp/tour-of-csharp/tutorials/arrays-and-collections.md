@@ -205,6 +205,6 @@ You can see an example solution by [looking at the finished sample code on GitHu
 
 With each iteration of the loop, you're taking the last two integers in the list, summing them, and adding that value to the list. The loop repeats until you've added 20 items to the list.
 
-Congratulations, you've completed the list tutorial. You can continue with [additional](../../tutorials/intro-to-csharp/introduction-to-classes.md) tutorials in your own development environment.
+Congratulations, you've completed the list tutorial. You can continue with [additional](../../fundamentals/tutorials/classes.md) tutorials in your own development environment.
 
 You can learn more about working with the `List` type in the .NET fundamentals article on [collections](../../../standard/collections/index.md). You'll also learn about many other collection types.

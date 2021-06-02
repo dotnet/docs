@@ -1,10 +1,10 @@
 {
   "version": 3,
-  "configRevision": 3,
+  "configRevision": 4,
 
   "issue": {
     "labeled": {
-      "processor-conditional": {
+      "processor-conditional-techprodlabels": {
         "type": "query",
         "value": "length(Issue.labels[?contains(name, '/prod') || contains(name, '/tech')]) != `0`",
         "processors": {
@@ -19,6 +19,13 @@
             }
           }
         }
+      },
+      "processor-conditional-release6": {
+        "type": "query",
+        "value": "length(Issue.labels[?name == ':checkered_flag: Release .NET 6']) != `0`",
+        "actions": {
+          "projects-add": [ "132" ]
+        }
       }
     },
     "opened": {
@@ -28,7 +35,8 @@
       "processor-meta-custom": {
         "issuetype": {
           "(?i)breaking-change$": {
-            "labels-add": [ "breaking-change", "doc-idea" ]
+            "labels-add": [ "breaking-change", "doc-idea" ],
+            "projects-add": [ "135" ]
           }
         }
       }
@@ -258,15 +266,6 @@
               "(?i).*docs\/framework\/windows-workflow-foundation.*": {
                 "labels-add": [ "dotnet-framework/prod", "dotnet-wf/tech" ]
               },
-              "(?i).*docs\/framework\/winforms.*": {
-                "labels-add": [ "dotnet-framework/prod", "dotnet-winforms/tech" ]
-              },
-              "(?i).*docs\/framework\/wpf.*": {
-                "labels-add": [ "dotnet-framework/prod", "dotnet-wpf/tech" ]
-              },
-              "(?i).*docs\/framework\/xaml-services.*": {
-                "labels-add": [ "dotnet-framework/prod", "dotnet-wpf/tech" ]
-              },
               
               "(?i).*docs\/fsharp.*": {
                 "labels-add": "dotnet-fsharp/prod"
@@ -318,6 +317,15 @@
               
             }
           }
+        }
+      }
+    },
+    "labeled": {
+      "processor-conditional-release6": {
+        "type": "query",
+        "value": "length(PullRequest.labels[?name == ':checkered_flag: Release .NET 6']) != `0`",
+        "actions": {
+          "projects-add": [ "132" ]
         }
       }
     }

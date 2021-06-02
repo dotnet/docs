@@ -4,6 +4,7 @@ description: Discover how to use ML.NET in a multiclass classification scenario 
 ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0516
+recommendations: false
 #Customer intent: As a developer, I want to use ML.NET to apply a multiclass classification learning algorithm so that I can understand how to categorize support issues to assign them to a given area.
 ---
 # Tutorial: Categorize support issues using multiclass classification with ML.NET
@@ -110,7 +111,7 @@ Initialize the `_mlContext` global variable  with a new instance of `MLContext` 
 
 ## Load the data
 
-ML.NET uses the [IDataView class](xref:Microsoft.ML.IDataView) as a flexible, efficient way of describing numeric or text tabular data. `IDataView` can load either text files or in real time (for example, SQL database or log files).
+ML.NET uses the [IDataView interface](xref:Microsoft.ML.IDataView) as a flexible, efficient way of describing numeric or text tabular data. `IDataView` can load either text files or in real time (for example, SQL database or log files).
 
 To initialize and load the `_trainingDataView` global variable in order to use it for the pipeline, add the following code after the  `mlContext` initialization:
 

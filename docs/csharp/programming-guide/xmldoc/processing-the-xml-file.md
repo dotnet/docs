@@ -2,6 +2,7 @@
 title: "Processing the XML file - C# programming guide"
 description: Learn about processing the XML file in C# programming. See code examples and view additional available resources.
 ms.date: 07/20/2015
+ms.topic: conceptual
 helpviewer_keywords:
   - "XML processing [C#]"
   - "XML [C#], processing"

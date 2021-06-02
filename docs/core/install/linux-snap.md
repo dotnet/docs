@@ -138,7 +138,7 @@ It's common for other apps, such as the OmniSharp extension for Visual Studio Co
 - The SDK 'Microsoft.NET.Sdk.Web' specified could not be found
 - The SDK 'Microsoft.NET.Sdk.Razor' specified could not be found
 
-To fix this problem, symlink the snap `dotnet` executable to the location that the program is looking for. Two common paths the `dotnet` command is looking for is `/usr/local/bin/dotnet` and `/usr/share/dotnet`. For example, to link the current .NET SDK snap package, use the following command:
+To fix this problem, symlink the snap `dotnet` executable to the location that the program is looking for. Two common paths the `dotnet` command is looking for are `/usr/local/bin/dotnet` and `/usr/share/dotnet`. For example, to link the current .NET SDK snap package, use the following command:
 
 ```bash
 ln -s /snap/dotnet-sdk/current/dotnet /usr/local/bin/dotnet
@@ -146,8 +146,8 @@ ln -s /snap/dotnet-sdk/current/dotnet /usr/local/bin/dotnet
 
 You can also review these GitHub issues for information about these problems:
 
-- [SDK resolver does not work with snap installations of SDK on Linux](https://github.com/dotnet/sdk/issues/10403)
-- [It was not possible to find any installed .NET SDKs](https://github.com/OmniSharp/omnisharp-vscode/issues/4409)
+- [SDK resolver doesn't work with snap installations of SDK on Linux](https://github.com/dotnet/sdk/issues/10403)
+- [It wasn't possible to find any installed .NET SDKs](https://github.com/OmniSharp/omnisharp-vscode/issues/4409)
 
 ### The dotnet alias
 

@@ -28,6 +28,16 @@ groups:
       title: Visual Studio Code
     - id: visualstudio
       title: Visual Studio
+- id: development-experience-one
+  title: Development experience
+  prompt: Choose a development experience
+  pivots:
+    - id: visualstudio
+      title: Visual Studio
+    - id: vscode
+      title: Visual Studio Code
+    - id: cli
+      title: Command line interface
 - id: dotnet-version
   title: .NET version
   prompt: Choose a .NET version

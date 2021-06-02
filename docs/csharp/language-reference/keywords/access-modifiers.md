@@ -25,7 +25,7 @@ Access modifiers are keywords used to specify the declared accessibility of a me
   
 - [`protected internal`](protected-internal.md): Access is limited to the current assembly or types derived from the containing class.  
   
-- [`private`](private.md): Access is limited to the containing type.  
+- [`private`](private.md): Access is limited to the containing class or type.  
 
 - [`private protected`](private-protected.md): Access is limited to the containing class or types derived from the containing class within the current assembly.  
   

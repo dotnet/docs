@@ -3,7 +3,7 @@ title: Deploy a Worker Service to Azure
 description: Learn how to deploy a .NET Worker Service to Azure.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/01/2021
+ms.date: 06/02/2021
 ms.topic: tutorial
 zone_pivot_groups: development-experience-one
 ---
@@ -28,7 +28,7 @@ In this tutorial, you learn how to:
 - Docker Desktop ([Windows](https://docs.docker.com/docker-for-windows/install) or [Mac](https://docs.docker.com/docker-for-mac/install)).
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/dotnet).
 - A .NET integrated development environment (IDE)
-  - Feel free to use [Visual Studio, Visual Studio for Mac, or Visual Studio Code](https://visualstudio.microsoft.com)
+  - Feel free to use [Visual Studio, Visual Studio Code, or Visual Studio for Mac](https://visualstudio.microsoft.com)
 
 <!-- ## Create a new project -->
 [!INCLUDE [zoned-file-new-worker](includes/zoned-file-new-worker.md)]
@@ -37,12 +37,12 @@ In this tutorial, you learn how to:
 
 :::zone target="docs" pivot="visualstudio"
 
-If you're using Visual Studio, right-click on the project, and select **Add** > **Docker Support**.
+In Visual Studio, right-click on the project, and select **Add** > **Docker Support**.
 
 :::zone-end
 :::zone target="docs" pivot="vscode"
 
-If you're using Visual Studio Code, you'll need the [Docker extension](https://code.visualstudio.com/docs/containers/overview) installed. Open the Command Palette, and select the **Docker: Add Docker files to workspace** option. If prompted to **Select Application Platform** choose **.NET: Core Console**. If prompted to **Select Project**, choose the Worker Service project you created. When prompted to **Select Operating System**, choose the desired OS. When prompted whether or not to **Include optional Docker Compose files**, choose **No**.
+In Visual Studio Code, you'll need the [Docker extension](https://code.visualstudio.com/docs/containers/overview) installed. Open the Command Palette, and select the **Docker: Add Docker files to workspace** option. If prompted to **Select Application Platform** choose **.NET: Core Console**. If prompted to **Select Project**, choose the Worker Service project you created. When prompted to **Select Operating System**, choose the desired OS. When prompted whether or not to **Include optional Docker Compose files**, choose **No**.
 
 :::zone-end
 

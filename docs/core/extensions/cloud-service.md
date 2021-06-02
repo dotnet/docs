@@ -24,11 +24,11 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet).
 - Docker Desktop ([Windows](https://docs.docker.com/docker-for-windows/install) or [Mac](https://docs.docker.com/docker-for-mac/install)).
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/dotnet).
-- A .NET integrated development environment (IDE)
-  - Feel free to use [Visual Studio, Visual Studio Code, or Visual Studio for Mac](https://visualstudio.microsoft.com)
+- A .NET integrated development environment (IDE).
+  - Feel free to use [Visual Studio, Visual Studio Code, or Visual Studio for Mac](https://visualstudio.microsoft.com).
 
 <!-- ## Create a new project -->
 [!INCLUDE [zoned-file-new-worker](includes/zoned-file-new-worker.md)]
@@ -74,9 +74,9 @@ Docker will process each line in the Dockerfile. The `.` in the `docker build` c
 
 :::zone-end
 
-## Create Container Registry
+## Create container registry
 
-An Azure Container Registry (ACR) resource allows you to build, store, and manage container images and artifacts in a private registry. To create a Container Registry, you'll need to [create a new resource](https://ms.portal.azure.com/#create/Microsoft.ContainerRegistry) in the Azure portal.
+An Azure Container Registry (ACR) resource allows you to build, store, and manage container images and artifacts in a private registry. To create a container registry, you'll need to [create a new resource](https://ms.portal.azure.com/#create/Microsoft.ContainerRegistry) in the Azure portal.
 
 1. Select the **Subscription**, and corresponding **Resource group** (or create a new one).
 1. Enter a **Registry name**.
@@ -84,6 +84,8 @@ An Azure Container Registry (ACR) resource allows you to build, store, and manag
 1. Select an appropriate **SKU**, for example **Basic**.
 1. Select **Review + create**.
 1. Assuming **Validation passed**, select **Create**.
+
+For more information, see [Quickstart: Create an Azure container registry](/azure/container-registry/container-registry-get-started-portal).
 
 ## Push image to ACR
 
@@ -101,6 +103,8 @@ To create a Container Instance, you'll need to [create a new resource](https://m
 1. Select the **Image** and**Image tag**.
 1. Select **Review + create**.
 1. Assuming **Validation passed**, select **Create**.
+
+For more information, see [Quickstart: Create an Azure container instance](/azure/container-instances/container-instances-quickstart-portal).
 
 ## Verify service functionality
 

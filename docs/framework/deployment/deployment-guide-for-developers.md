@@ -207,7 +207,7 @@ If you have a custom setup package, you may want to silently launch and track th
     > [!IMPORTANT]
     > In determining whether the correct version of the .NET Framework is already installed, you should check whether your target version *or* a later version is installed, not whether your target version is installed. In other words, you should evaluate whether the release key you retrieve from the registry is greater than or equal to the release key of your target version, *not* whether it equals the release key of your target version.
 
-- [Detect](#detecting-the-language-packs) whether the language packs are already installed on the user’s computer.
+- [Detect](#detect-language-packs) whether the language packs are already installed on the user’s computer.
 
 - If you want to control the deployment, silently launch and track the .NET Framework setup process (see [How to: Get Progress from the .NET Framework 4.5 Installer](how-to-get-progress-from-the-dotnet-installer.md)).
 

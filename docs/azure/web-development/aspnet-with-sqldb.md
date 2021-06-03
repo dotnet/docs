@@ -1,9 +1,6 @@
 ---
 title: Hosting ASP.NET Core and ASP.NET application on Azure - Solution overview
 description: This article provides the high level design of how to host ASP.NET Core and ASP.NET web applications and APIs on Azure
-<<<<<<< HEAD
-ms.date: 05/20/2021
-=======
 ms.date: 06/02/2021
 ms.topic: conceptual
 ms.custom: devx-track-dotnet
@@ -17,7 +14,7 @@ Azure services, establish connectivity between the web app and database, run dat
 
 ## Solution overview
 
-![Diagram showing what Azure services different components of an ASP.NET Core or ASP.NET application use](..\media\aspnet-app.png)
+![Diagram showing what Azure services different components of an ASP.NET Core or ASP.NET application use](../media/aspnet-app.png)
 
 When hosting web apps in Azure, it is typical to first define a resource group which will contain all of the other Azure resources used by the app.  Then, you will create an App Service Plan which specifies the amount of compute (CPU and memory) resources and scaling features available to one or more App Services contained in the App Service Plan.  An App Service is the resource that actually runs your web app.  SQL Azure is used to host the data for the application.  First, a logical server is created that can hold one or more SQL Databases.
 

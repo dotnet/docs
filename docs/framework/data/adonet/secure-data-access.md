@@ -71,7 +71,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
 
 ## Enterprise Services  
 
- COM+ contains its own security model that relies on Windows NT accounts and process/thread impersonation. The <xref:System.EnterpriseServices> namespace provides wrappers that allow .NET applications to integrate managed code with COM+ security services through the <xref:System.EnterpriseServices.ServicedComponent> class.  
+ COM+ contains its own security model that relies on Windows accounts and process/thread impersonation. The <xref:System.EnterpriseServices> namespace provides wrappers that allow .NET applications to integrate managed code with COM+ security services through the <xref:System.EnterpriseServices.ServicedComponent> class.  
   
  For more information, see the following resource.  
   

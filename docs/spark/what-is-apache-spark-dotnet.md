@@ -4,6 +4,7 @@ description: Learn about .NET for Apache Spark, a free, open-source, and cross-p
 author: mamccrea
 ms.topic: overview
 ms.date: 10/09/2020
+recommendations: false
 ---
 
 # What is .NET for Apache Spark?

@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "clients [WCF], running"
   - "WCF clients [WCF], running"
 ms.assetid: a67884cc-1c4b-416b-8c96-5c954099f19f
+recommendations: false
 ---
 # Tutorial: Create a Windows Communication Foundation client
 

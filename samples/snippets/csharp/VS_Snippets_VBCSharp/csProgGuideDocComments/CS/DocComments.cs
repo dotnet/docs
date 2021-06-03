@@ -598,3 +598,39 @@ namespace Wrap17
     }
     //</Snippet17>
 }
+
+//-----------------------------------------------------------------------------
+namespace Wrap18
+{
+    //<Snippet18>
+    // compile with: -doc:DocFileName.xml
+    
+    public class InheritOnlyReturns
+    {
+        /// <summary>In this example, this summary is only visible for this method.</summary>
+        /// <returns>A boolean</returns>
+        public static bool MyParentMethod(bool x) { return x; }
+        
+        /// <inheritdoc cref="MyParentMethod" path="/returns"/>
+        public static bool MyChildMethod() { return false; }
+    }
+    //</Snippet18>
+}
+
+namespace Wrap19
+{
+    //<Snippet19>
+    // compile with: -doc:DocFileName.xml
+    
+    public class InheritAllButRemarks
+    {
+        /// <summary>In this example, this summary is visible on all the methods.</summary>
+        /// <remarks>The remarks.</remarks>
+        /// <returns>A boolean</returns>
+        public static bool MyParentMethod(bool x) { return x; }
+        
+        /// <inheritdoc cref="MyParentMethod" path="//*[not(self::remarks)]"/>
+        public static bool MyChildMethod() { return false; }
+    }
+    //</Snippet19>
+}

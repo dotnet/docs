@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "attributes [.NET], XML serialization"
   - "serialization, attributes"
   - "XML Schema, serializing"
-ms.assetid: 414b820f-a696-4206-b576-2711d85490c7
+ms.topic: reference
 ---
 # Attributes That Control XML Serialization
 

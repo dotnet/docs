@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "culture-insensitive string operations, case changes"
   - "String.ToUpper method"
   - "culture parameter"
-ms.assetid: 822d551c-c69a-4191-82f4-183d82c9179c
+ms.topic: how-to
 ---
 # Performing Culture-Insensitive Case Changes
 

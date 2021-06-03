@@ -3,7 +3,8 @@ title: Configuration providers in .NET
 description: Learn how the Configuration provider API is used to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/08/2021
+ms.date: 05/21/2021
+ms.topic: reference
 ---
 
 # Configuration providers in .NET
@@ -160,6 +161,10 @@ The preceding environment settings:
 - Are only set in processes launched from the command window they were set in.
 - Won't be read by web apps launched with Visual Studio.
 
+With Visual Studio 2019 version 16.10 preview 4 and later, you can specify environment variables using the **Launch Profiles** dialog.
+
+:::image type="content" source="media/launch-profiles-env-vars.png" alt-text="Launch Profiles dialog showing environment variables" lightbox="media/launch-profiles-env-vars.png":::
+
 The following [setx](/windows-server/administration/windows-commands/setx) commands can be used to set the environment keys and values on Windows. Unlike `set`, `setx` settings are persisted. `/M` sets the variable in the system environment. If the `/M` switch isn't used, a user environment variable is set.
 
 ```dotnetcli
@@ -241,6 +246,10 @@ Using the default configuration, the <xref:Microsoft.Extensions.Configuration.Co
 - Environment variables.
 
 By default, configuration values set on the command line override configuration values set with all the other configuration providers.
+
+With Visual Studio 2019 version 16.10 preview 4 and later, you can specify command-line arguments using the **Launch Profiles** dialog.
+
+:::image type="content" source="media/launch-profiles-cmd-line-args.png" alt-text="Launch Profiles dialog showing command-line arguments" lightbox="media/launch-profiles-cmd-line-args.png":::
 
 ### Command-line arguments
 

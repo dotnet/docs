@@ -27,7 +27,7 @@ You cannot use the `new`, `static`, or `virtual` modifiers to modify an `overrid
 
 An overriding property declaration must specify exactly the same access modifier, type, and name as the inherited property. Beginning with C# 9.0, read-only overriding properties support covariant return types. The overridden property must be `virtual`, `abstract`, or `override`.
 
-For more information about how to use the `override` keyword, see [Versioning with the Override and New Keywords](../../programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md) and [Knowing when to use Override and New Keywords](../../programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords.md). For information about inheritance, see [Inheritance](../../programming-guide/classes-and-structs/inheritance.md).
+For more information about how to use the `override` keyword, see [Versioning with the Override and New Keywords](../../programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md) and [Knowing when to use Override and New Keywords](../../programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords.md). For information about inheritance, see [Inheritance](../../fundamentals/object-oriented/inheritance.md).
 
 ## Example
 
@@ -44,10 +44,10 @@ For more information about covariant return types, see the [feature proposal not
 ## See also
 
 - [C# reference](../index.md)
-- [Inheritance](../../programming-guide/classes-and-structs/inheritance.md)
+- [Inheritance](../../fundamentals/object-oriented/inheritance.md)
 - [C# keywords](index.md)
 - [Modifiers](index.md)
 - [abstract](abstract.md)
 - [virtual](virtual.md)
 - [new (modifier)](new-modifier.md)
-- [Polymorphism](../../programming-guide/classes-and-structs/polymorphism.md)
+- [Polymorphism](../../fundamentals/object-oriented/polymorphism.md)

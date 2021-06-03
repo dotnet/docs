@@ -2,7 +2,6 @@
 title: Code quality rule configuration options
 description: Learn how to specify additional configuration options for code quality rules.
 ms.date: 09/24/2020
-ms.topic: conceptual
 no-loc: ["EditorConfig"]
 ---
 # Code quality rule configuration options

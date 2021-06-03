@@ -16,15 +16,27 @@ ms.assetid: 0200de01-7e2f-45c4-9094-829d61236383
 
 ## Syntax
 
-```xml
-<see cref="member"/>
+```csharp
+/// <see cref="member"/>
+// or
+/// <see href="link">Link Text</see>
+// or
+/// <see langword="keyword"/>
 ```
 
 ## Parameters
 
-- cref = "`member`"
+- `cref="member"`
 
   A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. Place *member* within double quotation marks (" ").
+
+- `href="link"`
+
+  A clickable link to a given URL. For example, `<see href="https://github.com">GitHub</see>` produces a clickable link with text :::no-loc text="GitHub"::: that links to `https://github.com`.
+
+- `langword="keyword"`
+
+  A language keyword, such as `true`.
 
 ## Remarks
 

@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "debugging Windows Service applications"
   - "debugging [Visual Studio], Windows services"
-  - "Windows NT services, debugging"
+  - "Windows services, debugging"
   - "Windows Service applications, debugging"
   - "services, debugging"
 ms.assetid: 63ab0800-0f05-4f1e-88e6-94c73fd920a2

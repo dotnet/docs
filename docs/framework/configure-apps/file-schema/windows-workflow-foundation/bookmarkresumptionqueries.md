@@ -2,7 +2,6 @@
 description: "Learn more about: <bookmarkResumptionQueries>"
 title: "<bookmarkResumptionQueries>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: 8ed61a7f-4254-439c-bdd8-b474971533f7
 ---
 # \<bookmarkResumptionQueries>

@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "cryptography [NET], example"
   - "cryptography [NET], cryptographic application example"
   - "cryptography [NET], application example"
-ms.assetid: abf48c11-1e72-431d-9562-39cf23e1a8ff
+ms.topic: tutorial
 ---
 # Walkthrough: Creating a Cryptographic Application
 

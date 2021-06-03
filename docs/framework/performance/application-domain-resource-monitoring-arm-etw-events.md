@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "ETW, application domain monitoring events"
   - "application domain monitoring events [.NET Framework]"
-ms.assetid: d38ff268-a2ee-434e-b504-d570880e0289
+ms.topic: reference
 ---
 # Application Domain Resource Monitoring (ARM) ETW Events
 

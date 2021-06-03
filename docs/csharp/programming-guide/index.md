@@ -21,19 +21,19 @@ This section provides detailed information on key C# language features and featu
   
 ## Program sections
 
-[Inside a C# Program](./inside-a-program/index.md)  
+[Inside a C# Program](/dotnet/csharp/fundamentals/program-structure)  
   
-[Main() and Command-Line Arguments](./main-and-command-args/index.md)  
+[Main() and Command-Line Arguments](../fundamentals/program-structure/main-command-line.md)  
 
 ## Language Sections
 
 [Statements, Expressions, and Operators](./statements-expressions-operators/index.md)  
 
- [Types](./types/index.md)  
+ [Types](/dotnet/csharp/fundamentals/types)  
 
- [Classes and Structs](./classes-and-structs/index.md)  
+ [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)  
   
- [Interfaces](./interfaces/index.md)  
+ [Interfaces](../fundamentals/types/interfaces.md)  
 
  [Delegates](./delegates/index.md)  
 
@@ -47,15 +47,15 @@ This section provides detailed information on key C# language features and featu
   
  [Events](./events/index.md)  
   
- [Generics](./generics/index.md)  
+ [Generics](../fundamentals/types/generics.md)  
   
  [Iterators](./concepts/iterators.md)
   
  [LINQ Query Expressions](../linq/index.md)  
   
- [Namespaces](./namespaces/index.md)  
+ [Namespaces](../fundamentals/types/namespaces.md)  
   
- [Unsafe Code and Pointers](./unsafe-code-pointers/index.md)  
+ [Unsafe Code and Pointers](../language-reference/unsafe-code.md)  
   
  [XML Documentation Comments](./xmldoc/index.md)  
   
@@ -69,7 +69,7 @@ This section provides detailed information on key C# language features and featu
   
  [Collections](./concepts/collections.md)  
   
- [Exceptions and Exception Handling](./exceptions/index.md)  
+ [Exceptions and Exception Handling](/dotnet/csharp/fundamentals/exceptions)  
   
  [File System and the Registry (C# Programming Guide)](./file-system/index.md)  
   

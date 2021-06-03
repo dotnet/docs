@@ -1,9 +1,10 @@
 ---
-title: Classes
+title: Classes in F#
+titleSuffix: ""
 description: Learn how F# Classes are types that represent objects that can have properties, methods, and events.
 ms.date: 05/16/2016
 ---
-# Classes
+# Classes (F#)
 
 *Classes* are types that represent objects that can have properties, methods, and events.
 
@@ -98,7 +99,7 @@ Type arguments are inferred when the type is used. In the following code, the in
 
 ## Specifying Inheritance
 
-The `inherit` clause identifies the direct base class, if there is one. In F#, only one direct base class is allowed. Interfaces that a class implements are not considered base classes. Interfaces are discussed in the [Interfaces](Interfaces.md) topic.
+The `inherit` clause identifies the direct base class, if there is one. In F#, only one direct base class is allowed. Interfaces that a class implements are not considered base classes. Interfaces are discussed in the [Interfaces](interfaces.md) topic.
 
 You can access the methods and properties of the base class from the derived class by using the language keyword `base` as an identifier, followed by a period (.) and the name of the member.
 

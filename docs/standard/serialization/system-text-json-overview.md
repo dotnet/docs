@@ -29,6 +29,10 @@ There are some limitations on what parts of the library that you can use from Vi
   * .NET Framework 4.7.2 and later versions
   * .NET Core 2.0, 2.1, and 2.2
 
+## Security information
+
+For information about security threats that were considered when designing <xref:System.Text.Json.JsonSerializer>, and how they can be mitigated, see [`System.Text.Json` Threat Model](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/docs/ThreatModel.md).
+
 ## Additional resources
 
 * [How to use the library](system-text-json-how-to.md)
@@ -43,7 +47,7 @@ There are some limitations on what parts of the library that you can use from Vi
 * [Polymorphic serialization](system-text-json-polymorphism.md)
 * [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
 * [Customize character encoding](system-text-json-character-encoding.md)
-* [Write custom serializers and deserializers](write-custom-serializer-deserializer.md)
+* [Use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
 * [Supported collection types in System.Text.Json](system-text-json-supported-collection-types.md)

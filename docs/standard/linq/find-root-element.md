@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 4fd824e0-4d39-429b-b092-f6a5c046ee6c
+ms.topic: how-to
 ---
 
 # How to find the root element (LINQ to XML)

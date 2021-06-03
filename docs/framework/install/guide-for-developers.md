@@ -1,7 +1,7 @@
 ---
 title: "Install the .NET Framework developer pack or redistributable"
 description: "Developers can download and install the .NET Framework developer pack and targeting pack. You can include the .NET Framework redistributable with your apps."
-ms.date: "01/17/2020"
+ms.date: "04/26/2021"
 helpviewer_keywords:
   - ".NET Framework redistributable package, downloading"
   - ".NET Framework, installing"
@@ -18,6 +18,8 @@ ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c
 
 This article provides links for installing all versions of the .NET Framework from .NET Framework 4.5 to .NET Framework 4.8 on your computer. If you're a developer, you can also use these links to download and redistribute the .NET Framework with your apps. For information on deploying a version of the .NET Framework with your app, see [.NET Framework deployment guide for developers](../deployment/deployment-guide-for-developers.md).
 
+[!INCLUDE[net_retirement](../../../includes/net-framework-retired-versions.md)]
+
 [!INCLUDE[net-framework-4-versions](../../../includes/net-framework-4x-versions.md)]
 
 For more information about versions of the .NET Framework and how to determine which versions are installed on a computer, see [Versions and Dependencies](../migration-guide/versions-and-dependencies.md) and [How to: Determine Which .NET Framework Versions Are Installed](../migration-guide/how-to-determine-which-versions-are-installed.md).
@@ -29,7 +31,7 @@ Use the following table for quick links, or read further for details. To view th
 
 | .NET Framework version | Installer (Developer Pack and Runtime) | Platform support |
 | ---------------------- | -------------------------------------- | ---------------- |
-|**4.8**   | [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)    | **Included in:**<br/><br/>Windows 10 May 2019 Update<br/>[Visual Studio 2019 (16.3 update)](https://my.visualstudio.com/Downloads?q=visual%20studio%202017)<br/><br/> **You can install on:**<br/><br/>Windows 10 October 2018 Update<br/>Windows 10 April 2018 Update<br/>Windows 10 Fall Creators Update<br/>Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2019<br/>Windows Server, Version 1809<br/>Windows Server, Version 1803<br /><br/> (for a full list, see [system requirements](../get-started/system-requirements.md))||
+|**4.8**   | [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)    | **Included in:**<br/><br/>Windows 10 May 2019 Update (and later versions)<br/>[Visual Studio 2019 (16.3 update)](https://my.visualstudio.com/Downloads?q=visual%20studio%202017)<br/><br/> **You can install on:**<br/><br/>Windows 10 October 2018 Update<br/>Windows 10 April 2018 Update<br/>Windows 10 Fall Creators Update<br/>Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2019<br/>Windows Server, Version 1809<br/>Windows Server, Version 1803<br /><br/> (for a full list, see [system requirements](../get-started/system-requirements.md))||
 |**4.7.2** | [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework/net472) | **Included in:** <br/><br/>Windows 10 October 2018 Update<br/>Windows 10 April 2018 Update<br/>Windows Server 2019<br/>Windows Server, Version 1809<br/>Windows Server, Version 1803<br/>[Visual Studio 2017 (15.8 update)](https://my.visualstudio.com/Downloads?q=visual%20studio%202017)<br/><br/> **You can install on:**<br/> <br/>Windows 10 Fall Creators Update<br/>Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server, version 1709 and earlier<br /><br/> (for a full list, see [system requirements](../get-started/system-requirements.md))||
 |**4.7.1** | [.NET Framework 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471) | **Included in:** <br/><br/>Windows 10 Fall Creators Update<br/>Windows Server, version 1709<br/>[Visual Studio 2017 (15.5 update)](https://my.visualstudio.com/Downloads?q=visual%20studio%202017)<br/><br/> **You can install on:**<br/><br/> Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2016 and earlier<br /> (for a full list, see [system requirements](../get-started/system-requirements.md))||
 |**4.7**   | [.NET Framework 4.7](https://dotnet.microsoft.com/download/dotnet-framework/net47)    | **Included in:** <br/><br/>Windows 10 Creators Update<br/>[Visual Studio 2017 (15.3 update)](https://my.visualstudio.com/Downloads?q=visual%20studio%202017)<br/><br/> **You can install on:**<br /><br/> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2016 and earlier<br /> (for a full list, see [system requirements](../get-started/system-requirements.md))||

@@ -34,9 +34,7 @@ This section describes features and behaviors that are specific to the .NET Fram
  [LINQ to SQL](./linq/index.md)  
  Describes the basic building blocks, processes, and techniques required for creating LINQ to SQL applications.  
   
- For complete documentation of the SQL Server Database Engine, see SQL Server Books Online for the version of SQL Server you are using.  
-  
- [SQL Server Books Online](/sql/sql-server/sql-server-technical-documentation)  
+ For complete documentation of the SQL Server Database Engine, see [SQL Server technical documentation](/sql/sql-server/sql-server-technical-documentation).
   
 ## See also
 

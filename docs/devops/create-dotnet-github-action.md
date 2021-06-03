@@ -3,8 +3,9 @@ title: "Tutorial: Create a GitHub Action with .NET"
 description: Learn how to create a GitHub action with a containerized .NET app.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/23/2021
+ms.date: 04/01/2021
 ms.topic: tutorial
+recommendations: false
 ---
 
 # Tutorial: Create a GitHub Action with .NET
@@ -105,6 +106,9 @@ The preceding *Dockerfile* steps include:
 > [!TIP]
 > The MCR in `mcr.microsoft.com` stands for "Microsoft Container Registry", and is Microsoft's syndicated container catalog from the official Docker hub. For more information, see [Microsoft syndicates container catalog](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/).
 
+> [!CAUTION]
+> If you use a *global.json* file to pin the SDK version, you should explicitly refer to that version in your *Dockerfile*. For example, if you've used *global.json* to pin SDK version `5.0.300`, your *Dockerfile* should use `mcr.microsoft.com/dotnet/sdk:5.0.300`. This prevents breaking the GitHub Action when a new minor revision is released.
+
 ## Define action inputs and outputs
 
 In the [Explore the app](#explore-the-app) section, you learned about the `ActionInputs` class. This object represents the inputs for the GitHub Action. For GitHub to recognize that the repository is a GitHub Action, you need to have an *action.yml* file at the root of the repository.
@@ -126,6 +130,9 @@ For more information, see [Metadata syntax for GitHub Actions](https://docs.gith
 With the [.NET app containerized](#prepare-the-net-app-for-github-actions), and the [action inputs and outputs](#define-action-inputs-and-outputs) defined, you're ready to consume the action. GitHub Actions are *not* required to be published in the GitHub Marketplace to be used. Workflows are defined in the *.github/workflows* directory of a repository as YAML files.
 
 :::code language="yml" source="snippets/workflow.yml":::
+
+> [!IMPORTANT]
+> For containerized GitHub Actions, you're required to use `runs-on: ubuntu-latest`. For more information, see [Workflow syntax `jobs.<job_id>.runs-on`](https://docs.github.com/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on).
 
 The preceding workflow YAML file defines three primary nodes:
 

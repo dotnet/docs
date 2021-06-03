@@ -34,4 +34,4 @@ Splitting a class, struct or interface type over several files can be useful whe
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [Modifiers](index.md)
-- [Introduction to Generics](../../programming-guide/generics/index.md)
+- [Introduction to Generics](../../fundamentals/types/generics.md)

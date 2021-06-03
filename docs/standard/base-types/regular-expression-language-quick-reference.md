@@ -96,7 +96,7 @@ Grouping constructs delineate subexpressions of a regular expression and typical
 |`(?!` *subexpression* `)`|Zero-width negative lookahead assertion.|`\b\w+\b(?!.+and.+)`|`"and"`, `"some"`, `"mice"`<br/>in<br/>`"cats, dogs and some mice."`|
 |`(?<=` *subexpression* `)`|Zero-width positive lookbehind assertion.|`\b\w+\b(?<=.+and.+)`<br/><br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/><br/>`\b\w+\b(?<=.+and.*)`|`"some"`, `"mice"`<br/>in<br/>`"cats, dogs and some mice."`<br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/>`"and"`, `"some"`, `"mice"`<br/>in<br/>`"cats, dogs and some mice."`|
 |`(?<!` *subexpression* `)`|Zero-width negative lookbehind assertion.|`\b\w+\b(?<!.+and.+)`<br/><br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/><br/>`\b\w+\b(?<!.+and.*)`|`"cats"`, `"dogs"`, `"and"`<br/>in<br/>`"cats, dogs and some mice."`<br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/>`"cats"`, `"dogs"`<br/>in<br/>`"cats, dogs and some mice."`|
-|`(?>` *subexpression* `)`|Atomic group.|`(?>a\|ab)c`|`"ac"` in`"ac"`<br/><br/>_nothing_ in`"abc"`|
+|`(?>` *subexpression* `)`|Atomic group.|`(?>a|ab)c`|`"ac"` in`"ac"`<br/><br/>_nothing_ in`"abc"`|
 
 ### Lookarounds at a glance
 

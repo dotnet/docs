@@ -6,6 +6,10 @@ ms.topic: reference
 ---
 # Run-time configuration options for compilation
 
+This article details the settings you can use to configure .NET compilation.
+
+[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
+
 ## Tiered compilation
 
 - Configures whether the just-in-time (JIT) compiler uses [tiered compilation](../whats-new/dotnet-core-3-0.md#tiered-compilation). Tiered compilation transitions methods through two tiers:
@@ -19,7 +23,7 @@ ms.topic: reference
 | - | - | - |
 | **runtimeconfig.json** | `System.Runtime.TieredCompilation` | `true` - enabled<br/>`false` - disabled |
 | **MSBuild property** | `TieredCompilation` | `true` - enabled<br/>`false` - disabled |
-| **Environment variable** | `COMPlus_TieredCompilation` | `1` - enabled<br/>`0` - disabled |
+| **Environment variable** | `DOTNET_TieredCompilation` | `1` - enabled<br/>`0` - disabled |
 
 ### Examples
 
@@ -59,7 +63,7 @@ Project file:
 | - | - | - |
 | **runtimeconfig.json** | `System.Runtime.TieredCompilation.QuickJit` | `true` - enabled<br/>`false` - disabled |
 | **MSBuild property** | `TieredCompilationQuickJit` | `true` - enabled<br/>`false` - disabled |
-| **Environment variable** | `COMPlus_TC_QuickJit` | `1` - enabled<br/>`0` - disabled |
+| **Environment variable** | `DOTNET_TC_QuickJit` | `1` - enabled<br/>`0` - disabled |
 
 ### Examples
 
@@ -98,7 +102,7 @@ Project file:
 | - | - | - |
 | **runtimeconfig.json** | `System.Runtime.TieredCompilation.QuickJitForLoops` | `false` - disabled<br/>`true` - enabled |
 | **MSBuild property** | `TieredCompilationQuickJitForLoops` | `false` - disabled<br/>`true` - enabled |
-| **Environment variable** | `COMPlus_TC_QuickJitForLoops` | `0` - disabled<br/>`1` - enabled |
+| **Environment variable** | `DOTNET_TC_QuickJitForLoops` | `0` - disabled<br/>`1` - enabled |
 
 ### Examples
 
@@ -134,4 +138,4 @@ Project file:
 
 | | Setting name | Values |
 | - | - | - |
-| **Environment variable** | `COMPlus_ReadyToRun` | `1` - enabled<br/>`0` - disabled |
+| **Environment variable** | `DOTNET_ReadyToRun` | `1` - enabled<br/>`0` - disabled |

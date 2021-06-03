@@ -4,7 +4,7 @@ title: "Configuring WS-Atomic Transaction Support"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "WS-AT protocol [WCF], configuring WS-Atomic Transaction"
-ms.assetid: cb9f1c9c-1439-4172-b9bc-b01c3e09ac48
+ms.topic: how-to
 ---
 # Configure WS-Atomic Transaction support
 
@@ -68,7 +68,7 @@ You must already possess the required certificates to establish trust. To learn 
 
 1. On machine A, import the file representation of certB into the LocalMachine\MY and LocalMachine\ROOT stores. This declares that machine A trusts certB to communicate with it.
 
-2. On machine B, import certA’s file into the LocalMachine\MY and LocalMachine\ROOT stores. This implies that machine B trusts certA to communicate with it.
+2. On machine B, import certA's file into the LocalMachine\MY and LocalMachine\ROOT stores. This implies that machine B trusts certA to communicate with it.
 
 After completing these steps, trust is established between the two machines, and they can be configured to communicate with each other using WS-AT.
 
@@ -83,9 +83,9 @@ You can configure this by using the MMC WS-AT snap-in. For more information abou
 2. Configure machine B's settings. For "Endpoint Certificate", select certB. For "Authorized Certificates", select the certA.
 
 > [!NOTE]
-> When one machine sends a message to the other machine, the sender attempts to verify that the subject name of the recipient’s certificate and the name of the recipient’s machine match. If they do not match, certificate verification fails and the two machines cannot communicate.
+> When one machine sends a message to the other machine, the sender attempts to verify that the subject name of the recipient's certificate and the name of the recipient's machine match. If they do not match, certificate verification fails and the two machines cannot communicate.
 >
-> For a machine joined to a domain, the name is the fully qualified domain name. By default, the name of a machine on a workgroup is the machine’s NetBIOS name. However, the name can also include a Domain Name System (DNS) suffix if one is present for the connection being used between the two machines.
+> For a machine joined to a domain, the name is the fully qualified domain name. By default, the name of a machine on a workgroup is the machine's NetBIOS name. However, the name can also include a Domain Name System (DNS) suffix if one is present for the connection being used between the two machines.
 >
 > If the name of the machine changes, for example, when a workgroup machine joins a domain, you must reissue certificates or manually configure DNS suffixes.
 

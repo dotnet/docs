@@ -2,7 +2,6 @@
 description: "Learn more about: <etwTracking>"
 title: "<etwTracking>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: cb45c82e-6ea1-4c4d-924c-118a25ae1f35
 ---
 # \<etwTracking>

@@ -2,26 +2,20 @@
 using System.Collections.Generic;
 using System.Linq;
 using CustomProvider.Example.Models;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
 namespace CustomProvider.Example.Providers
 {
     public class EntityConfigurationProvider : ConfigurationProvider
     {
-        private readonly Action<DbContextOptionsBuilder> _optionsAction;
+        private readonly string _connectionString;
 
-        public EntityConfigurationProvider(
-            Action<DbContextOptionsBuilder> optionsAction) =>
-            _optionsAction = optionsAction;
+        public EntityConfigurationProvider(string connectionString) =>
+            _connectionString = connectionString;
 
         public override void Load()
         {
-            var builder = new DbContextOptionsBuilder<EntityConfigurationContext>();
-
-            _optionsAction(builder);
-
-            using var dbContext = new EntityConfigurationContext(builder.Options);
+            using var dbContext = new EntityConfigurationContext(_connectionString);
 
             dbContext.Database.EnsureCreated();
 
@@ -36,9 +30,9 @@ namespace CustomProvider.Example.Providers
             var settings = new Dictionary<string, string>(
                 StringComparer.OrdinalIgnoreCase)
             {
-                ["EndpointId"] = "b3da3c4c-9c4e-4411-bc4d-609e2dcc5c67",
-                ["DisplayLabel"] = "Widgets Incorporated, LLC.",
-                ["WidgetRoute"] = "api/widgets"
+                ["WidgetOptions:EndpointId"] = "b3da3c4c-9c4e-4411-bc4d-609e2dcc5c67",
+                ["WidgetOptions:DisplayLabel"] = "Widgets Incorporated, LLC.",
+                ["WidgetOptions:WidgetRoute"] = "api/widgets"
             };
 
             context.Settings.AddRange(

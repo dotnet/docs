@@ -2,7 +2,7 @@
 title: "How to: Determine if a file is an assembly"
 description: This article shows you how determine whether a file is a .NET assembly, both manually and programmatically.
 ms.date: 08/19/2019
-ms.assetid: ea5186bb-5bff-4dcb-bde9-d6ba4e2edd00
+ms.topic: how-to
 dev_langs: 
   - "csharp"
   - "vb"

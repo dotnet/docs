@@ -11,6 +11,10 @@ namespace namespaces
 		//<Snippet22>
         System.Console.WriteLine("Hello World!");
 		//</Snippet22>
+
+		//<Snippet23>
+        Console.WriteLine("Hello World!");
+		//</Snippet23>
         }
     }
 }

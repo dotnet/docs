@@ -17,20 +17,24 @@ let storageConnString = "..." // fill this in from your storage account
 let storageConnString = 
     CloudConfigurationManager.GetSetting("StorageConnectionString")
 *)
-let shareName = "..." // fill this with the name of the share
 
 //
 // Create the File service client.
 //
 
-let share = ShareClient(storageConnString, shareName)
+let share = ShareClient(storageConnString, "shareName")
+
+//
+// Create a file share.
+//
+
 share.CreateIfNotExistsAsync()
 
 //
-// Create a root directory and a subdirectory
+// Create a directory
 //
 
-// Get a reference to the sample directory
+// Get a reference to the directory
 let directory = share.GetDirectoryClient("directoryName")
 
 // Create the directory if it doesn't already exist
@@ -80,7 +84,7 @@ let accountKey = "..." // Input your storage account key
 // Create a 24-hour read/write policy.
 let expiration = DateTimeOffset.UtcNow.AddHours(24.)
 let fileSAS = ShareSasBuilder(
-      ShareName = shareName,
+      ShareName = "shareName",
       FilePath = "filePath",
       Resource = "f",
       ExpiresOn = expiration)
@@ -99,8 +103,8 @@ fileSasUri.Query = fileSAS.ToSasQueryParameters(credential).ToString()
 //
 // Copy a file to another file.
 //
-let sourceFile = ShareFileClient(storageConnString, shareName, "sourceFilePath")
-let destFile = ShareFileClient(storageConnString, shareName, "destFilePath")
+let sourceFile = ShareFileClient(storageConnString, "shareName", "sourceFilePath")
+let destFile = ShareFileClient(storageConnString, "shareName", "destFilePath")
 destFile.StartCopyAsync(sourceFile.Uri)
 
 //
@@ -108,23 +112,23 @@ destFile.StartCopyAsync(sourceFile.Uri)
 //
 
 // Create a new file SAS 
-let fileSAS2 = ShareSasBuilder(
-    ShareName = shareName,
+let fileSASCopyToBlob = ShareSasBuilder(
+    ShareName = "shareName",
     FilePath = "sourceFilePath",
     Resource = "f",
     ExpiresOn = DateTimeOffset.UtcNow.AddHours(24.))
-let permissions2 = ShareFileSasPermissions.Read
-fileSAS2.SetPermissions(permissions2)
-let fileSasUri2 = UriBuilder($"https://{accountName}.file.core.windows.net/{fileSAS.ShareName}/{fileSAS.FilePath}")
+let permissionsCopyToBlob = ShareFileSasPermissions.Read
+fileSASCopyToBlob.SetPermissions(permissionsCopyToBlob)
+let fileSasUriCopyToBlob = UriBuilder($"https://{accountName}.file.core.windows.net/{fileSASCopyToBlob.ShareName}/{fileSASCopyToBlob.FilePath}")
 
-// Get a reference to the file we created previously
-let sourceFile2 = ShareFileClient(fileSasUri2.Uri)
+// Get a reference to the file.
+let sourceFileCopyToBlob = ShareFileClient(fileSasUriCopyToBlob.Uri)
 
 // Get a reference to the blob to which the file will be copied.
-let container = BlobContainerClient(storageConnString, "containerName");
-container.CreateIfNotExists()
-let destBlob = container.GetBlobClient("blobName")
-destBlob.StartCopyFromUriAsync(sourceFile2.Uri)
+let containerCopyToBlob = BlobContainerClient(storageConnString, "containerName");
+containerCopyToBlob.CreateIfNotExists()
+let destBlob = containerCopyToBlob.GetBlobClient("blobName")
+destBlob.StartCopyFromUriAsync(sourceFileCopyToBlob.Uri)
 
 //
 // Troubleshooting File storage using metrics.

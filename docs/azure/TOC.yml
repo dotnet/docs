@@ -1,6 +1,6 @@
 - name: Azure for .NET developers
   href: index.yml
-- name: Get started on Azure with .NET
+- name: Overview
   expanded: true
   items:
     - name: Introduction to Azure and .NET
@@ -21,7 +21,7 @@
     href: azure-tools.md
   - name: Development setup checklist
     href: dotnet-dev-env-checklist.md
-- name: .NET on Azure web development guide
+- name: Web development
   items:
     - name: Deploy ASP.NET/ASP.NET Core application with SQL DB
       href: ./web-development/aspnet-with-sqldb.md
@@ -29,7 +29,7 @@
       href: http://microsoft.com
     - name: Deploy Blazor WASM application
       href: http://microsoft.com
-- name: Serverless development with .NET
+- name: Serverless development
   items:
     - name: Build your first serverless function
       href: http://microsoft.com

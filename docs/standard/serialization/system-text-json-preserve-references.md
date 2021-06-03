@@ -17,7 +17,7 @@ ms.topic: how-to
 
 # How to preserve references and handle circular references with System.Text.Json
 
-::: zone pivot="dotnet-5-0"
+::: zone pivot="dotnet-5-0,dotnet-6-0"
 
 To preserve references and handle circular references, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A> to <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>. This setting causes the following behavior:
 

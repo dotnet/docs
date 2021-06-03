@@ -51,7 +51,7 @@ The following sections are organized by namespace and show which types are suppo
 
 ## System.Collections.Generic namespace
 
-::: zone pivot="dotnet-5-0"
+::: zone pivot="dotnet-5-0,dotnet-6-0"
 
 | Type                                                      | Serialization | Deserialization |
 |-----------------------------------------------------------|---------------|-----------------|
@@ -109,7 +109,7 @@ The following sections are organized by namespace and show which types are suppo
 
 ## System.Collections.Immutable namespace
 
-::: zone pivot="dotnet-5-0"
+::: zone pivot="dotnet-5-0,dotnet-6-0"
 
 | Type                                                              | Serialization | Deserialization |
 |-------------------------------------------------------------------|---------------|-----------------|
@@ -169,7 +169,7 @@ The following sections are organized by namespace and show which types are suppo
 
 ## System.Collections.Concurrent namespace
 
-::: zone pivot="dotnet-5-0"
+::: zone pivot="dotnet-5-0,dotnet-6-0"
 
 | Type                                                          | Serialization | Deserialization |
 |---------------------------------------------------------------|---------------|-----------------|
@@ -199,7 +199,7 @@ The following sections are organized by namespace and show which types are suppo
 
 ## System.Collections.ObjectModel namespace
 
-::: zone pivot="dotnet-5-0"
+::: zone pivot="dotnet-5-0,dotnet-6-0"
 
 | Type                                                           | Serialization | Deserialization |
 |----------------------------------------------------------------|---------------|-----------------|
@@ -239,7 +239,7 @@ All custom collections (everything that derives from `IEnumerable`) are supporte
 
 A custom collection is supported for deserialization if it:
 
-::: zone pivot="dotnet-5-0"
+::: zone pivot="dotnet-5-0,dotnet-6-0"
 
 * Isn't an interface or abstract.
 * Has a parameterless constructor.
@@ -297,7 +297,7 @@ For more information about known issues, see the [open issues in System.Text.Jso
 
 ## Supported key types
 
-::: zone pivot="dotnet-5-0"
+::: zone pivot="dotnet-5-0,dotnet-6-0"
 
 Supported types for the keys of `Dictionary` and `SortedList` types include the following:
 

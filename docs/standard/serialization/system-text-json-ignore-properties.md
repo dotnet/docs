@@ -122,7 +122,7 @@ Here's an example object to serialize and JSON output:
 ```
 
 > [!NOTE]
-> The <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> property is obsolete in .NET 5 and later versions, so it isn't shown by IntelliSense. For the current way to ignore null values, see [the version of this article that applies to .NET 5](system-text-json-ignore-properties.md?pivots=dotnet-5-0#ignore-all-null-value-properties).
+> The <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> property is obsolete in .NET 5 and later versions, so it isn't shown by IntelliSense. For the current way to ignore null values, see [how to ignore all null-value properties in .NET 5 and later](system-text-json-ignore-properties.md?pivots=dotnet-5-0#ignore-all-null-value-properties).
 
 ::: zone-end
 

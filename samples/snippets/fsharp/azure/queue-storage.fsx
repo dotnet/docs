@@ -16,7 +16,7 @@ let storageConnString =
 // Create the Queue Service client.
 //
 
-let queueClient = new QueueClient(storageConnString, "myqueue");
+let queueClient = QueueClient(storageConnString, "myqueue");
 
 //
 // Create a queue.

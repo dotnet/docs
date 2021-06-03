@@ -7,20 +7,36 @@
       href: intro.md
     - name: Key Azure services for .NET developers
       href: key-azure-services.md
-    - name: Configure your development environment
-      items:
-      - name: Create an Azure account
-        href: create-azure-account.md
-      - name: Configure Visual Studio for Azure development (Windows)
-        href: configure-visual-studio.md
-      - name: Configure VS Code for Azure development (cross-platform)
-        href: configure-vs-code.md
-      - name: Install the Azure CLI
-        href: install-azure-cli.md
-      - name: Install additional tools
-        href: azure-tools.md
-      - name: Development setup checklist
-        href: dotnet-dev-env-checklist.md
+- name: Configure your development environment
+  items:
+  - name: Create an Azure account
+    href: create-azure-account.md
+  - name: Configure Visual Studio for Azure development (Windows)
+    href: configure-visual-studio.md
+  - name: Configure VS Code for Azure development (cross-platform)
+    href: configure-vs-code.md
+  - name: Install the Azure CLI
+    href: install-azure-cli.md
+  - name: Install additional tools
+    href: azure-tools.md
+  - name: Development setup checklist
+    href: dotnet-dev-env-checklist.md
+- name: .NET on Azure web development guide
+  items:
+    - name: Deploy ASP.NET/ASP.NET Core application with SQL DB
+      href: ./web-development/aspnet-with-sqldb.md
+    - name: Deploy Single Page App with .NET back-end
+      href: http://microsoft.com
+    - name: Deploy Blazor WASM application
+      href: http://microsoft.com
+- name: Serverless development with .NET
+  items:
+    - name: Build your first serverless function
+      href: http://microsoft.com
+- name: Containers on Azure
+  items:
+    - name: Overview
+      href: http://microsoft.com
 - name: Migrate to Azure
   items:
     - name: Choose the right Azure hosting option

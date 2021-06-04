@@ -1,29 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 
-namespace RoundtripExtensionData
+namespace RoundtripJsonElement
 {
     public class WeatherForecast
     {
         public DateTimeOffset Date { get; set; }
         public int TemperatureCelsius { get; set; }
         public string Summary { get; set; }
-        [JsonExtensionData]
-        public Dictionary<string, JsonElement> ExtensionData { get; set; }
+        public JsonElement DatesAvailable { get; set; }
+        public JsonElement SummaryWords { get; set; }
     }
-
-    public class Program
+        public class Program
     {
         public static void Main()
         {
             string jsonString =
 @"{
   ""Date"": ""2019-08-01T00:00:00-07:00"",
-  ""temperatureCelsius"": 25,
+  ""TemperatureCelsius"": 25,
   ""Summary"": ""Hot"",
-  ""SummaryField"": ""Hot"",
   ""DatesAvailable"": [
     ""2019-08-01T00:00:00-07:00"",
     ""2019-08-02T00:00:00-07:00""

@@ -16,7 +16,7 @@ ms.topic: how-to
 
 # How to handle overflow JSON with System.Text.Json
 
-In this article, you will learn how to handle overflow JSON with the `System.Text.Json` namespace.
+This article shows how to handle overflow JSON with the `System.Text.Json` namespace.
 
 ## Handle overflow JSON
 
@@ -81,6 +81,16 @@ When the target object is serialized, the extension data key value pairs become 
 ```
 
 Notice that the `ExtensionData` property name doesn't appear in the JSON. This behavior lets the JSON make a round trip without losing any extra data that otherwise wouldn't be deserialized.
+
+The following example shows a round trip from JSON to a deserialized object and back to JSON:
+
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripExtensionData.cs" highlight="13-14":::
+
+## Deserialize into JsonElement
+
+An alternative if you expect the possibility of overflow JSON in a particular property is to deserialize into <xref:System.Text.Json.JsonElement>. Any valid JSON data can be deserialized into `JsonElement`. The following example shows a round trip from JSON and back to JSON for a class that includes properties of type `JsonElement`.
+
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripJsonElement.cs" highlight="11-12":::
 
 ## See also
 

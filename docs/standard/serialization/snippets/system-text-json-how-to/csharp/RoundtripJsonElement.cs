@@ -43,10 +43,8 @@ namespace RoundtripJsonElement
 //JSON output:
 //{
 //  "Date": "2019-08-01T00:00:00-07:00",
-//  "TemperatureCelsius": 0,
+//  "TemperatureCelsius": 25,
 //  "Summary": "Hot",
-//  "temperatureCelsius": 25,
-//  "SummaryField": "Hot",
 //  "DatesAvailable": [
 //    "2019-08-01T00:00:00-07:00",
 //    "2019-08-02T00:00:00-07:00"

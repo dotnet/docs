@@ -290,7 +290,7 @@ The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which const
 <xref:System.Text.Json> in .NET Core 3.1 provides the following ways to ignore properties while serializing:
 
 * The [[JsonIgnore]](system-text-json-ignore-properties.md#ignore-individual-properties) attribute on a property causes the property to be omitted from the JSON during serialization.
-* The [IgnoreNullValues](system-text-json-ignore-properties.md#ignore-all-null-value-properties) global option lets you ignore all null-value properties. `IgnoreNullValues` is obsolete in .NET 5 and later versions, so it isn't shown by IntelliSense. For the current way to ignore null values, see [how to ignore all null-value properties in .NET 5 and later](system-text-json-ignore-properties.md?pivots=dotnet-5-0#ignore-all-null-value-properties).
+* The [IgnoreNullValues](system-text-json-ignore-properties.md#ignore-all-null-value-properties) global option lets you ignore all null-value properties. `IgnoreNullValues` is deprecated in .NET 5 and later versions, so it isn't shown by IntelliSense. For the current way to ignore null values, see [how to ignore all null-value properties in .NET 5 and later](system-text-json-ignore-properties.md?pivots=dotnet-5-0#ignore-all-null-value-properties).
 * The [IgnoreReadOnlyProperties](system-text-json-ignore-properties.md#ignore-all-read-only-properties) global option lets you ignore all read-only properties.
 ::: zone-end
 

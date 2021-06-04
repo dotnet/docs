@@ -15,14 +15,14 @@ ms.date: 06/02/2021
 ## Synopsis
 
 ```dotnetcli
-dotnet nuget trust [command] [OPTIONS]
+dotnet nuget trust [command] [Options]
 
 dotnet nuget trust -h|--help
 ```
 
 ## Description
 
-The `dotnet nuget trust` manage the trusted signers. By default, NuGet accepts all authors and repositories. These commands allow you to specify only a specific subset of signers whose signatures will be accepted, while rejecting all others. For additional usage, see [Common NuGet configurations](/nuget/consume-packages/configuring-nuget-behavior). For details on how the nuget.config schema looks like, refer to the [NuGet config file reference](/nuget/reference/nuget-config-file).
+The `dotnet nuget trust` command manages the trusted signers. By default, NuGet accepts all authors and repositories. These commands allow you to specify only a specific subset of signers whose signatures will be accepted, while rejecting all others. For more information, see [Common NuGet configurations](/nuget/consume-packages/configuring-nuget-behavior). For details on what the nuget.config schema looks like, refer to the [NuGet config file reference](/nuget/reference/nuget-config-file).
 
 ## Options
 
@@ -44,7 +44,7 @@ Lists all the trusted signers in the configuration. This option will include all
 dotnet nuget trust list [--configfile <PATH>] [-h|--help] [-v, --verbosity <LEVEL>]
 ```
 
-#### OPTIONS:
+#### Options:
 
 - **`--configfile <PATH>`**
 
@@ -65,16 +65,16 @@ Deletes the current list of certificates and replaces them with an up-to-date li
 #### Synopsis
 
 ```dotnetcli
-dotnet nuget trust sync <name> [--configfile <PATH>] [-h|--help] [-v, --verbosity <LEVEL>]
+dotnet nuget trust sync <NAME> [--configfile <PATH>] [-h|--help] [-v, --verbosity <LEVEL>]
 ```
 
 #### Arguments
 
-- **`name`**
+- **`NAME`**
 
   The name of the existing trusted signer to sync.
 
-#### OPTIONS:
+#### Options:
 
 - **`--configfile <PATH>`**
 
@@ -95,16 +95,16 @@ Removes any trusted signers that match the given name.
 #### Synopsis
 
 ```dotnetcli
-dotnet nuget trust remove <name> [--configfile <PATH>] [-h|--help] [-v, --verbosity <LEVEL>]
+dotnet nuget trust remove <NAME> [--configfile <PATH>] [-h|--help] [-v, --verbosity <LEVEL>]
 ```
 
 #### Arguments
 
-- **`name`**
+- **`NAME`**
 
   The name of the existing trusted signer to remove.
   
-#### OPTIONS:
+#### Options:
 
 - **`--configfile <PATH>`**
 
@@ -125,20 +125,20 @@ Adds a trusted signer with the given name, based on the author signature of the 
 #### Synopsis
 
 ```dotnetcli
-dotnet nuget trust author <name> <package> [--allow-untrusted-root] [--configfile <PATH>] [-h|--help] [-v, --verbosity <LEVEL>]
+dotnet nuget trust author <NAME> <PACKAGE> [--allow-untrusted-root] [--configfile <PATH>] [-h|--help] [-v, --verbosity <LEVEL>]
 ```
 
 #### Arguments
 
-- **`name`**
+- **`NAME`**
 
-  The name of the trusted signer to add. If `name` already exists in the configuration, the signature is appended.
+  The name of the trusted signer to add. If `NAME` already exists in the configuration, the signature is appended.
 
-- **`package`**
+- **`PACKAGE`**
 
-  The given `package` should be a local path to the signed *.nupkg* file.
+  The given `PACKAGE` should be a local path to the signed *.nupkg* file.
   
-#### OPTIONS:
+#### Options:
 
 - **`--allow-untrusted-root`**
 
@@ -163,20 +163,20 @@ Adds a trusted signer with the given name, based on the repository signature or 
 #### Synopsis
 
 ```dotnetcli
-dotnet nuget trust repository <name> <package> [--allow-untrusted-root] [--configfile <PATH>] [-h|--help] [-v, --verbosity <LEVEL>]
+dotnet nuget trust repository <NAME> <PACKAGE> [--allow-untrusted-root] [--configfile <PATH>] [-h|--help] [-v, --verbosity <LEVEL>]
 ```
 
 #### Arguments
 
-- **`name`**
+- **`NAME`**
 
-  The name of the trusted signer to add. If `name` already exists in the configuration, the signature is appended.
+  The name of the trusted signer to add. If `NAME` already exists in the configuration, the signature is appended.
 
-- **`package`**
+- **`PACKAGE`**
 
-  The given `package` should be a local path to the signed *.nupkg* file.
+  The given `PACKAGE` should be a local path to the signed *.nupkg* file.
 
-#### OPTIONS:
+#### Options:
 
 - **`--allow-untrusted-root`**
 
@@ -201,20 +201,20 @@ Adds a trusted signer with the given name, based on a certificate fingerprint.
 #### Synopsis
 
 ```dotnetcli
-dotnet nuget trust certificate <name> <fingerprint> [--algorithm <ALGORITHM>] [--allow-untrusted-root] [--configfile <PATH>] [-h|--help] [-v, --verbosity <LEVEL>]
+dotnet nuget trust certificate <NAME> <FINGERPRINT> [--algorithm <ALGORITHM>] [--allow-untrusted-root] [--configfile <PATH>] [-h|--help] [-v, --verbosity <LEVEL>]
 ```
 
 #### Arguments
 
-- **`name`**
+- **`NAME`**
 
   The name of the trusted signer to add. If a trusted signer with the given name already exists, the certificate item is added to that signer. Otherwise a trusted author is created with a certificate item from the given certificate information.
 
-- **`fingerprint`**
+- **`FINGERPRINT`**
 
   The fingerprint of the certificate.
 
-#### OPTIONS:
+#### Options:
 
 - **`--algorithm <ALGORITHM>`**
 
@@ -243,16 +243,16 @@ Adds a trusted signer based on a given package source.
 #### Synopsis
 
 ```dotnetcli
-dotnet nuget trust source <name> [--configfile <PATH>] [-h|--help] [--owners <List>] [--source-url] [-v, --verbosity <LEVEL>]
+dotnet nuget trust source <NAME> [--configfile <PATH>] [-h|--help] [--owners <List>] [--source-url] [-v, --verbosity <LEVEL>]
 ```
 
 #### Arguments
 
-- **`name`**
+- **`NAME`**
 
-  The name of the trusted signer to add. If only `<name>` is provided without `--<source-url>`, the package source from your NuGet configuration files with the same name is added to the trusted list. If `<name>` already exists in the configuration, the package source is appended to it.
+  The name of the trusted signer to add. If only `<NAME>` is provided without `--<source-url>`, the package source from your NuGet configuration files with the same name is added to the trusted list. If `<NAME>` already exists in the configuration, the package source is appended to it.
 
-#### OPTIONS:
+#### Options:
 
 - **`--configfile <PATH>`**
 

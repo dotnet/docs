@@ -98,11 +98,11 @@ Project file:
 
 - Configures whether each managed thread receives an implicit [`NSAutoreleasePool`](https://developer.apple.com/documentation/foundation/nsautoreleasepool) when running on a supported macOS platform.
 
-| | Setting name | Values |
-| - | - | - |
-| **runtimeconfig.json** | `System.Threading.Thread.EnableAutoreleasePool` | `true` or `false` |
-| **MSBuild property** | `AutoreleasePoolSupport` | `true` or `false` |
-| **Environment variable** | N/A | N/A |
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.Threading.Thread.EnableAutoreleasePool` | `true` or `false` | .NET 6.0 |
+| **MSBuild property** | `AutoreleasePoolSupport` | `true` or `false` | .NET 6.0 |
+| **Environment variable** | N/A | N/A | N/A |
 
 ### Examples
 

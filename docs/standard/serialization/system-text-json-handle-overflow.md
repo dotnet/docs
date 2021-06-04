@@ -88,7 +88,7 @@ The following example shows a round trip from JSON to a deserialized object and 
 
 ## Deserialize into JsonElement
 
-An alternative if you expect the possibility of overflow JSON in a particular property is to deserialize into <xref:System.Text.Json.JsonElement>. Any valid JSON data can be deserialized into `JsonElement`. The following example shows a round trip from JSON and back to JSON for a class that includes properties of type `JsonElement`.
+If you just want to be flexible about what JSON to accept for a particular property, an alternative is to deserialize into <xref:System.Text.Json.JsonElement>. Any valid JSON property can be deserialized into `JsonElement`. The following example shows a round trip from JSON and back to JSON for a class that includes properties of type `JsonElement`.
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripJsonElement.cs" highlight="11-12":::
 

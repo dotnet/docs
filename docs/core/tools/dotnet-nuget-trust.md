@@ -22,7 +22,7 @@ dotnet nuget trust -h|--help
 
 ## Description
 
-The `dotnet nuget trust` manage the trusted signers. By default, NuGet accepts all authors and repositories. These commands allow you to specify only a specific subset of signers whose signatures will be accepted, while rejecting all others. For additional usage, see [Common NuGet configurations](../../../nuget/consume-packages/configuring-nuget-behavior.md). For details on how the nuget.config schema looks like, refer to the [NuGet config file reference](../../../nuget/reference/nuget-config-file.md).
+The `dotnet nuget trust` manage the trusted signers. By default, NuGet accepts all authors and repositories. These commands allow you to specify only a specific subset of signers whose signatures will be accepted, while rejecting all others. For additional usage, see [Common NuGet configurations](/nuget/consume-packages/configuring-nuget-behavior). For details on how the nuget.config schema looks like, refer to the [NuGet config file reference](/nuget/reference/nuget-config-file).
 
 ## Options
 
@@ -210,7 +210,7 @@ dotnet nuget trust certificate <name> <fingerprint> [OPTIONS]
 
   The name of existing trusted signer going be added. If a trusted signer with the given name already exists, the certificate item will be added to that signer. Otherwise a trusted author will be created with a certificate item from given certificate information.
 
-- **`<fingerprint>`**
+- **`fingerprint`**
 
   The fingerprint of the certificate.
 

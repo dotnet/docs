@@ -6,7 +6,7 @@ ms.date: 06/02/2021
 ---
 # dotnet nuget trust
 
-**This article applies to:** ✔️ .NET 5.0.300 SDK, 6.0.100-preview.4 SDK and later versions
+**This article applies to:** ✔️ .NET 5.0.300 SDK and later versions
 
 ## Name
 
@@ -15,138 +15,264 @@ ms.date: 06/02/2021
 ## Synopsis
 
 ```dotnetcli
-dotnet nuget trust [list|author|repository|source|certificate|remove|sync] [OPTIONS]
-
-if none of list|add|remove|sync is specified, the command will default to list.
+dotnet nuget trust [command] [OPTIONS]
 
 dotnet nuget trust -h|--help
 ```
 
 ## Description
 
-The `dotnet nuget trust` gets or sets trusted signers to the NuGet configuration. For additional usage, see [Common NuGet configurations](../../consume-packages/configuring-nuget-behavior.md). For details on how the nuget.config schema looks like, refer to the [NuGet config file reference](../nuget-config-file.md).
+The `dotnet nuget trust` manage the trusted signers. By default, NuGet accepts all authors and repositories. These commands allow you to specify only a specific subset of signers whose signatures will be accepted, while rejecting all others. For additional usage, see [Common NuGet configurations](../../../nuget/consume-packages/configuring-nuget-behavior.md). For details on how the nuget.config schema looks like, refer to the [NuGet config file reference](../../../nuget/reference/nuget-config-file.md).
 
-## Arguments
+## Options
 
-- `<list|author|repository|source|certificate|remove|sync>`
+- **`-h|--help`**
 
-  Specifies the command for gets or sets trusted signers to the NuGet configuration. 
+  Prints out a description of how to use the command.
 
-#### `> dotnet nuget trust list`
+## Commands
 
-```
+If no command is specified, the command will default to `list`.
+
+### `list`
+
 Lists all the trusted signers in the configuration. This option will include all the certificates (with fingerprint and fingerprint algorithm) each signer has. If a certificate has a preceding [U], it means that certificate entry has allowUntrustedRoot set as true.
 
-USAGE:
-    dotnet nuget trust list [OPTIONS]
+#### Synopsis:
 
-OPTIONS:
-    -h, --help                          Prints out a short help for the command.
-    -v, --verbosity <LEVEL>             Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
-        --configfile                    Specific NuGet file that should be used instead of the standard hierarchy.
+```dotnetcli
+dotnet nuget trust list [OPTIONS]
 ```
 
-#### `> dotnet nuget trust sync`
+#### OPTIONS:
 
-```
+- **`-h|--help`**
+
+  Prints out a description of how to use the command.
+
+- **`-v, --verbosity <LEVEL>`**
+
+  Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+
+- **`--configfile <PATH>`**
+
+  Specific NuGet file that should be used instead of the standard hierarchy.
+
+### `sync`
+
 Deletes the current list of certificates and replaces them with an up-to-date list from the repository.
 
-USAGE:
-    dotnet nuget trust sync [OPTIONS] <name>
+#### Synopsis
 
-OPTIONS:
-    -h, --help                          Prints out a short help for the command.
-    -v, --verbosity <LEVEL>             Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
-        --configfile                    Specific NuGet file that should be used instead of the standard hierarchy.
+```dotnetcli
+dotnet nuget trust sync <name> [OPTIONS]
 ```
 
-#### `> dotnet nuget trust remove`
+#### Arguments
 
-```
+- **`name`**
+
+  The name of existing trusted signer going be synced.
+
+#### OPTIONS:
+
+- **`-h|--help`**
+
+  Prints out a description of how to use the command.
+
+- **`-v, --verbosity <LEVEL>`**
+
+  Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+
+- **`--configfile <PATH>`**
+
+  Specific NuGet file that should be used instead of the standard hierarchy.
+
+### `remove`
+
 Removes any trusted signers that match the given name.
 
-USAGE:
-    dotnet nuget trust remove [OPTIONS] <name>
+#### Synopsis
 
-OPTIONS:
-    -h, --help                          Prints out a short help for the command.
-    -v, --verbosity <LEVEL>             Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
-        --configfile                    Specific NuGet file that should be used instead of the standard hierarchy.
+```dotnetcli
+dotnet nuget trust remove <name> [OPTIONS]
 ```
 
-#### `> dotnet nuget trust author`
+#### Arguments
 
-```
-Adds a trusted signer with the given name, based on the author signature(s) of one or more packages. If <name> already exists in the configuration, the signature(s) will be appended. The given a <package> should be local paths to signed .nupkg files.
+- **`name`**
 
-USAGE:
-    dotnet nuget trust author [OPTIONS] <name> <package>...
+  The name of existing trusted signer going be removed.
+  
+#### OPTIONS:
 
-EXAMPLE:
-    dotnet nuget trust author Contoso ./contoso.library.nupkg
+- **`-h|--help`**
 
-OPTIONS:
-        --allow-untrusted-root          Specifies if the certificate for the trusted signer should be allowed to chain to an untrusted root.
-    -h, --help                          Prints out a short help for the command.
-    -v, --verbosity <LEVEL>             Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
-        --configfile                    Specific NuGet file that should be used instead of the standard hierarchy.
-```
+  Prints out a description of how to use the command.
 
-#### `> dotnet nuget trust repository`
+- **`-v, --verbosity <LEVEL>`**
 
-```
-Adds a trusted signer with the given name, based on the repository signature(s) or countersignature(s) of one or more packages. If <name> already exists in the configuration, the signature(s) will be appended. The given a <package> should be local paths to signed .nupkg files.
+  Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
 
-USAGE:
-    dotnet nuget trust repository [OPTIONS] <name> <package>...
+- **`--configfile <PATH>`**
 
-OPTIONS:
-        --allow-untrusted-root          Specifies if the certificate for the trusted signer should be allowed to chain to an untrusted root. This is not recommended.
-        --owners                        Semi-colon separated list of trusted owners to further restrict the trust of a repository.
-    -h, --help                          Prints out a short help for the command.
-    -v, --verbosity <LEVEL>             Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
-        --configfile                    Specific NuGet file that should be used instead of the standard hierarchy.
+  Specific NuGet file that should be used instead of the standard hierarchy.
+
+### `author`
+
+Adds a trusted signer with the given name, based on the author signature of the package.
+
+#### Synopsis
+
+```dotnetcli
+dotnet nuget trust author <name> <package> [OPTIONS]
 ```
 
-#### `> dotnet nuget trust certificate`
+#### Arguments
 
+- **`name`**
+
+  The name of existing trusted signer going be added. If `name` already exists in the configuration, the signature will be appended.
+
+- **`package`**
+
+  The given `package` should be local path to the signed .nupkg file.
+  
+#### OPTIONS:
+
+- **`--allow-untrusted-root`**
+
+  Specifies if the certificate for the trusted signer should be allowed to chain to an untrusted root. This is not recommended.
+
+- **`-h|--help`**
+
+  Prints out a description of how to use the command.
+
+- **`-v, --verbosity <LEVEL>`**
+
+  Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+
+- **`--configfile <PATH>`**
+
+  Specific NuGet file that should be used instead of the standard hierarchy.
+
+### `repository`
+
+Adds a trusted signer with the given name, based on the repository signature or countersignature of a signed package.
+
+#### Synopsis
+
+```dotnetcli
+dotnet nuget trust repository <name> <package> [OPTIONS]
 ```
+
+#### Arguments
+
+- **`name`**
+
+  The name of existing trusted signer going be added. If `name` already exists in the configuration, the signature will be appended.
+
+- **`package`**
+
+  The given `package` should be local path to the signed .nupkg file.
+
+#### OPTIONS:
+
+- **`--allow-untrusted-root`**
+
+  Specifies if the certificate for the trusted signer should be allowed to chain to an untrusted root. This is not recommended.
+
+- **`-h|--help`**
+
+  Prints out a description of how to use the command.
+
+- **`-v, --verbosity <LEVEL>`**
+
+  Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+
+- **`--configfile <PATH>`**
+
+  Specific NuGet file that should be used instead of the standard hierarchy.
+
+### `certificate`
+
 Adds a trusted signer with the given name, based on a certificate fingerprint.
 
-If a trusted signer with the given name already exists, the certificate item will be added to that signer. Otherwise a trusted author will be created with a certificate item from given certificate information.
+#### Synopsis
 
-USAGE:
-    dotnet nuget trust certificate [OPTIONS] <name> <fingerprint>
-
-OPTIONS:
-        --allow-untrusted-root          Specifies if the certificate for the trusted signer should be allowed to chain to an untrusted root.
-        --algorithm                     Specifies the hash algorithm used to calculate the certificate fingerprint. Defaults to SHA256. Values supported are SHA256, SHA384 and SHA512
-    -h, --help                          Prints out a short help for the command.
-    -v, --verbosity <LEVEL>             Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
-        --configfile                    Specific NuGet file that should be used instead of the standard hierarchy.
+```dotnetcli
+dotnet nuget trust certificate <name> <fingerprint> [OPTIONS]
 ```
 
-#### `> dotnet nuget trust source`
+#### Arguments
 
-```
+- **`name`**
+
+  The name of existing trusted signer going be added. If a trusted signer with the given name already exists, the certificate item will be added to that signer. Otherwise a trusted author will be created with a certificate item from given certificate information.
+
+- **`<fingerprint>`**
+
+  The fingerprint of the certificate.
+
+#### OPTIONS:
+
+- **`--allow-untrusted-root`**
+
+  Specifies if the certificate for the trusted signer should be allowed to chain to an untrusted root. This is not recommended.
+
+- **`--algorithm <ALGORITHM>`**
+
+  Specifies the hash algorithm used to calculate the certificate fingerprint. Defaults to SHA256. Values supported are SHA256, SHA384 and SHA512.
+  
+- **`-h|--help`**
+
+  Prints out a description of how to use the command.
+
+- **`-v, --verbosity <LEVEL>`**
+
+  Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+
+- **`--configfile <PATH>`**
+
+  Specific NuGet file that should be used instead of the standard hierarchy.
+
+### `source`
+
 Adds a trusted signer based on a given package source.
 
-If only `<name>` is provided without `<source-url>`, the package source from your NuGet configuration files with the same name will be added to the trusted list.
+#### Synopsis
 
-If a `<source-url>` is provided, it MUST be a v3 package source URL (like https://api.nuget.org/v3/index.json). Other package source types are not supported.
-
-If <name> already exists in the configuration, the package source will be appended to it.
-
-USAGE:
-    dotnet nuget trust source <name> [source-url]
-
-OPTIONS:
-        --allow-untrusted-root          Specifies if the certificate for the trusted signer should be allowed to chain to an untrusted root.
-        --owners                        Semi-colon separated list of trusted owners to further restrict the trust of a repository.
-    -h, --help                          Prints out a short help for the command.
-    -v, --verbosity <LEVEL>             Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
-        --configfile                    Specific NuGet file that should be used instead of the standard hierarchy.
+```dotnetcli
+dotnet nuget trust source <name> [source-url] [--owners <List>] [OPTIONS]
 ```
+
+#### Arguments
+
+- **`name`**
+
+  The name of existing trusted signer going be added. If only `<name>` is provided without `<source-url>`, the package source from your NuGet configuration files with the same name will be added to the trusted list. If `<name>` already exists in the configuration, the package source will be appended to it.
+
+#### OPTIONS:
+
+- **`--owners <List>`**
+
+  Semi-colon separated list of trusted owners to further restrict the trust of a repository.
+
+- **`source-url`**
+
+  If a `source-url` is provided, it MUST be a v3 package source URL (like <https://api.nuget.org/v3/index.json>). Other package source types are not supported.
+
+- **`-h|--help`**
+
+  Prints out a description of how to use the command.
+
+- **`-v, --verbosity <LEVEL>`**
+
+  Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+
+- **`--configfile`**
+
+  Specific NuGet file that should be used instead of the standard hierarchy.
 
 ## Examples
 
@@ -180,7 +306,7 @@ OPTIONS:
     dotnet nuget trust certificate MyCert  F99EC8CDCE5642B380296A19E22FA8EB3AEF1C70079541A2B3D6E4A93F5E1AFD --algorithm SHA256
   ```
 
-- Trust owners *Nuget* and *Microsoft* from the repository *https://api.nuget.org/v3/index.json*:
+- Trust owners *Nuget* and *Microsoft* from the repository <https://api.nuget.org/v3/index.json>:
 
   ```dotnetcli
     dotnet nuget trust source NuGetTrust https://api.nuget.org/v3/index.json --owners "Nuget;Microsoft"

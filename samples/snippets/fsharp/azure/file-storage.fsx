@@ -1,11 +1,11 @@
 open System
 open System.IO
-open Azure.Storage.Files.Shares // Namespace for File storage types
 open Azure
-open Azure.Storage.Blobs
-open Azure.Storage.Sas
-open Azure.Storage
-open Azure.Storage.Files.Shares.Models
+open Azure.Storage // Namespace for StorageSharedKeyCredential
+open Azure.Storage.Blobs // Namespace for BlobContainerClient
+open Azure.Storage.Sas // Namespace for ShareSasBuilder
+open Azure.Storage.Files.Shares // Namespace for File storage types
+open Azure.Storage.Files.Shares.Models // Namespace for ShareServiceProperties
 
 //
 // Get your connection string.

@@ -49,7 +49,7 @@ If you deserialize the JSON shown into the type shown, the `DatesAvailable` and 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithExtensionData":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFWithExtensionData":::
 
-When you deserialize the JSON shown earlier into this sample type, the extra data becomes key-value pairs of the `ExtensionData` property:
+The following table shows the result of deserializing the JSON shown earlier into this sample type. The extra data becomes key-value pairs of the `ExtensionData` property:
 
 | Property | Value | Notes |
 |--|--|--|
@@ -57,8 +57,8 @@ When you deserialize the JSON shown earlier into this sample type, the extra dat
 | `TemperatureCelsius` | `0` | Case-sensitive mismatch (`temperatureCelsius` in the JSON), so the property isn't set. |
 | `Summary` | `"Hot"` |  |
 | `ExtensionData` | `temperatureCelsius: 25` | Since the case didn't match, this JSON property is an extra and becomes a key-value pair in the dictionary. |
-| `DatesAvailable` | `[ "8/1/2019 12:00:00 AM -07:00", "8/2/2019 12:00:00 AM -07:00" ]` | Extra property from the JSON becomes a key-value pair, with an array as the value object. |
-| `SummaryWords` | `[ "Cool", "Windy", "Humid" ]` | Extra property from the JSON becomes a key-value pair, with an array as the value object. |
+| `ExtensionData` | `DatesAvailable: [ "8/1/2019 12:00:00 AM -07:00", "8/2/2019 12:00:00 AM -07:00" ]` | Extra property from the JSON becomes a key-value pair, with an array as the value object. |
+| `ExtensionData` | `SummaryWords: [ "Cool", "Windy", "Humid" ]` | Extra property from the JSON becomes a key-value pair, with an array as the value object. |
 
 When the target object is serialized, the extension data key value pairs become JSON properties just as they were in the incoming JSON:
 

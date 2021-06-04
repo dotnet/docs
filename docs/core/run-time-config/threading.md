@@ -93,3 +93,39 @@ Project file:
 
 </Project>
 ```
+
+## `AutoreleasePool` for managed threads
+
+- When running on a supported macOS platform, each managed thread will receive an implicit [`NSAutoreleasePool`](https://developer.apple.com/documentation/foundation/nsautoreleasepool).
+
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** | `System.Threading.Thread.EnableAutoreleasePool` | `true` or `false` |
+| **MSBuild property** | `AutoreleasePoolSupport` | `true` or `false` |
+| **Environment variable** | N/A | N/A |
+
+### Examples
+
+*runtimeconfig.json* file:
+
+```json
+{
+   "runtimeOptions": {
+      "configProperties": {
+         "System.Threading.Thread.EnableAutoreleasePool": true
+      }
+   }
+}
+```
+
+Project file:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AutoreleasePoolSupport>true</AutoreleasePoolSupport>
+  </PropertyGroup>
+
+</Project>
+```

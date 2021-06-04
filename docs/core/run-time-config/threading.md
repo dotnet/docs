@@ -96,7 +96,7 @@ Project file:
 
 ## `AutoreleasePool` for managed threads
 
-- When running on a supported macOS platform, each managed thread will receive an implicit [`NSAutoreleasePool`](https://developer.apple.com/documentation/foundation/nsautoreleasepool).
+- Configures whether each managed thread receives an implicit [`NSAutoreleasePool`](https://developer.apple.com/documentation/foundation/nsautoreleasepool) when running on a supported macOS platform.
 
 | | Setting name | Values |
 | - | - | - |

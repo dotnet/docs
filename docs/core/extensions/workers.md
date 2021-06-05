@@ -102,7 +102,7 @@ The preceding *Dockerfile* steps include:
 > [!TIP]
 > The MCR in `mcr.microsoft.com` stands for "Microsoft Container Registry", and is Microsoft's syndicated container catalog from the official Docker hub. The [Microsoft syndicates container catalog](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog) article contains additional details.
 
-Wen targeting Docker as a deployment strategy for your .NET Worker Service, there are a few considerations in the project file:
+When targeting Docker as a deployment strategy for your .NET Worker Service, there are a few considerations in the project file:
 
 :::code language="xml" source="snippets/workers/background-service/App.WorkerService.csproj" highlight="6,12":::
 

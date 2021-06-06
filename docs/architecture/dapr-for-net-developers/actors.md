@@ -46,13 +46,13 @@ The sidecar API is only one part of the equation. The service itself also needs 
 
 :::image type="content" source="./media/actors/sidecar-communication.png" alt-text="Diagram of API calls between actor service and Dapr sidecar.":::
 
-**Figure 9-1**. API calls between actor service and Dapr sidecar.
+**Figure 11-1**. API calls between actor service and Dapr sidecar.
 
 To provide scalability and reliability, actors are partitioned across all the instances of the actor service. The Dapr placement service is responsible for keeping track of the partitioning information. When a new instance of an actor service is started, the sidecar registers the supported actor types with the placement service. The placement service calculates the updated partitioning information for the given actor type and broadcasts it to all instances. Figure 11-2 shows what happens when a service is scaled out to a second replica:
 
 :::image type="content" source="./media/actors/placement.png" alt-text="Diagram of the actor placement service.":::
 
-**Figure 9-2**. Actor placement service.
+**Figure 11-2**. Actor placement service.
 
 1. On startup, the sidecar makes a call to the actor service to get the registered actor types as well as actor configuration settings.
 2. The sidecar sends the list of registered actor types to the placement service.
@@ -65,7 +65,7 @@ The next figure shows an ordering service instance running in Pod 1 call the `sh
 
 :::image type="content" source="./media/actors/invoke-actor-method.png" alt-text="Diagram of calling an actor method.":::
 
-**Figure 9-3**. Calling an actor method.
+**Figure 11-3**. Calling an actor method.
 
 1. The service calls the actor API on the sidecar. The JSON payload in the request body contains the data to send to the actor.
 2. The sidecar uses the locally cached partitioning information from the placement service to determine which actor service instance (partition) is responsible for hosting the actor with ID `3`. In this example, it's the service instance in pod 2. The call is forwarded to the appropriate sidecar.

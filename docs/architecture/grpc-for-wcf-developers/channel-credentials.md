@@ -148,7 +148,7 @@ class Program
 > Due to an internal Windows bug as [documented here](https://github.com/dotnet/runtime/issues/23749#issuecomment-388231655), you'll need to apply the following a workaround if the certificate is created from certificate and private key PEM data.
 > 
 > ```csharp
-> X509Certificate2 cert = X509Certificate2.CreateFromPem(certificatePem, rsaPrivateKeyPem));
+> X509Certificate2 cert = X509Certificate2.CreateFromPem(certificatePem, rsaPrivateKeyPem);
 > if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
 > {
 >     var originalCert = cert;

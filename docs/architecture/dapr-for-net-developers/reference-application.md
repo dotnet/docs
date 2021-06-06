@@ -555,6 +555,331 @@ public Task Handle(OrderStartedDomainEvent notification, CancellationToken cance
 
 As you can see in this example, `message` contains the message body. The `CreateEmailBody` method simply formats a string with the body text. The `metadata` specifies the email sender, recipient, and the subject for the email message. If these values are static, they can also be included in the metadata fields in the configuration file. The name of the binding to invoke is `sendmail` and the operation is `create`.
 
+### Actors
+
+In the original eShopOnContainers solution, the Ordering service provides a great example of how to use DDD design patterns in a .NET microservice. As the updated eShopOnDapr focuses on Dapr, the Ordering service now uses the actors building block to implement its business logic.
+
+The ordering process consists of the following steps:
+
+1. The customer submits the order. There's a grace period before any further processing occurs. During the grace period, the customer can cancel the order.
+1. The system checks that there's available stock.
+1. The system processes the payment.
+1. The system ships the order.
+
+The process is implemented using a single `OrderingProcessActor` actor type. Here's the interface for the actor:
+
+```csharp
+public interface IOrderingProcessActor : IActor
+{
+    Task Submit(string userId, string userName, string street, string city,
+        string zipCode, string state, string country, CustomerBasket basket);
+
+    Task NotifyStockConfirmed();
+
+    Task NotifyStockRejected(List<int> rejectedProductIds);
+
+    Task NotifyPaymentSucceeded();
+
+    Task NotifyPaymentFailed();
+
+    Task<bool> Cancel();
+
+    Task<bool> Ship();
+
+    Task<Order> GetOrderDetails();
+}
+```
+
+The process is started when a customer checks out some products. Upon checkout, the Basket service publishes a `UserCheckoutAcceptedIntegrationEvent` message using the Dapr pub/sub building block. The Ordering service handles the message in the `OrderingProcessEventController` class and calls the `Submit` method of the actor:
+
+```csharp
+[HttpPost("UserCheckoutAccepted")]
+[Topic(DaprPubSubName, "UserCheckoutAcceptedIntegrationEvent")]
+public async Task Handle(UserCheckoutAcceptedIntegrationEvent integrationEvent)
+{
+    if (integrationEvent.RequestId != Guid.Empty)
+    {
+        var orderId = integrationEvent.RequestId;
+
+        var actorId = new ActorId(orderId.ToString());
+        var orderingProcess = ActorProxy.Create<IOrderingProcessActor>(actorId, nameof(OrderingProcessActor));
+
+        await orderingProcess.Submit(integrationEvent.UserId, integrationEvent.UserName,
+            integrationEvent.Street, integrationEvent.City, integrationEvent.ZipCode,
+            integrationEvent.State, integrationEvent.Country, integrationEvent.Basket);
+    }
+    else
+    {
+        _logger.LogWarning("Invalid IntegrationEvent - RequestId is missing - {@IntegrationEvent}", integrationEvent);
+    }
+}
+```
+
+In the example above, the Ordering service first uses the original request id from the `UserCheckoutAcceptedIntegrationEvent` message as the order id. The same id is used to create an `ActorId` for the actor. The handler uses the `ActorId` to create an actor proxy and invokes the `Submit` method. The following snippet shows the implementation of the `Submit` method:
+
+```csharp
+public async Task Submit(string userId, string userName, string street, string city,
+    string zipCode, string state, string country, CustomerBasket basket)
+{
+    var order = new Order
+    {
+        OrderDate = DateTime.UtcNow,
+        OrderStatus = OrderStatus.Submitted,
+        UserId = userId,
+        UserName = userName,
+        Address = new OrderAddress
+        {
+            Street = street,
+            City = city,
+            ZipCode = zipCode,
+            State = state,
+            Country = country
+        },
+        OrderItems = basket.Items
+            .Select(item => new OrderItem
+            {
+                ProductId = item.ProductId,
+                ProductName = item.ProductName,
+                UnitPrice = item.UnitPrice,
+                Units = item.Quantity,
+                PictureUrl = item.PictureUrl
+            })
+            .ToList()
+    };
+
+    await StateManager.SetStateAsync(OrderDetailsStateName, order);
+    await StateManager.SetStateAsync(OrderStatusStateName, OrderStatus.Submitted);
+
+    await RegisterReminderAsync(
+        GracePeriodElapsedReminder,
+        null,
+        TimeSpan.FromSeconds(_settings.Value.GracePeriodTime),
+        TimeSpan.FromMilliseconds(-1));
+
+    await _eventBus.PublishAsync(new OrderStatusChangedToSubmittedIntegrationEvent(
+        OrderId,
+        OrderStatus.Submitted.Name,
+        userId,
+        userName));
+}
+```
+
+There's a lot going on in the `Submit` method:
+
+1. The method takes the given arguments to create an `Order` object and saves it in the actor state.
+1. The method saves the current status of the process (`OrderStatus.Submitted`) in the actor state.
+1. The method registers a reminder to signal the end of the grace period. Order processing is delayed until the end of the grace period to deal with customers changing their mind.
+1. Lastly, the method publishes an `OrderStatusChangedToSubmittedIntegrationEvent` to notify other services of the status change.
+
+When the reminder for the grace period ending fires, the actor runtime calls the `ReceiveReminderAsync` method:
+
+```csharp
+public Task ReceiveReminderAsync(string reminderName, byte[] state, TimeSpan dueTime, TimeSpan period)
+{
+    _logger.LogInformation("Received {Actor}[{ActorId}] reminder: {Reminder}", nameof(OrderingProcessActor), OrderId, reminderName);
+
+    switch (reminderName)
+    {
+        case GracePeriodElapsedReminder: return OnGracePeriodElapsed();
+        case StockConfirmedReminder: return OnStockConfirmedSimulatedWorkDone();
+        case StockRejectedReminder:
+            {
+                var rejectedProductIds = JsonConvert.DeserializeObject<List<int>>(Encoding.UTF8.GetString(state));
+                return OnStockRejectedSimulatedWorkDone(rejectedProductIds);
+            }
+        case PaymentSucceededReminder: return OnPaymentSucceededSimulatedWorkDone();
+        case PaymentFailedReminder: return OnPaymentFailedSimulatedWorkDone();
+    }
+
+    _logger.LogError("Unknown actor reminder {ReminderName}", reminderName);
+    return Task.CompletedTask;
+}
+```
+
+As shown in the snippet above, the `ReceiveReminderAsync` method handles not just the grace period reminder. The actor also uses reminders to simulate background work and introduce some delays in the ordering process. This makes the process easier to follow in the eShopOnDapr UI where notifications are shown for each status update. The `ReceiveReminderAsync` method uses the reminder name to determine which method handles the reminder. The grace period reminder is handled by the `OnGracePeriodElapsed` method:
+
+```csharp
+public async Task OnGracePeriodElapsed()
+{
+    var statusChanged = await TryUpdateOrderStatusAsync(OrderStatus.Submitted, OrderStatus.AwaitingStockValidation);
+    if (statusChanged)
+    {
+        var order = await StateManager.GetStateAsync<Order>(OrderDetailsStateName);
+
+        await _eventBus.PublishAsync(new OrderStatusChangedToAwaitingStockValidationIntegrationEvent(
+            OrderId,
+            OrderStatus.AwaitingStockValidation.Name,
+            "Grace period elapsed; waiting for stock validation.",
+            order.UserName,
+            order.OrderItems
+                .Select(orderItem => new OrderStockItem(orderItem.ProductId, orderItem.Units))));
+    }
+}
+```
+
+The `OnGracePeriodElapsed` method first tries to update the order status to the new `AwaitingStockValidation` status. If that succeeds, it retrieves the order details from state and publishes an `OrderStatusChangedToAwaitingStockValidationIntegrationEvent` to inform other service of the status change. For example, the Category service subscribes to this event to check the available stock.
+
+Let's look at the `TryUpdateOrderStatusAsync` method to see under which circumstances it may fail to update the order status:
+
+```csharp
+private async Task<bool> TryUpdateOrderStatusAsync(OrderStatus expectedOrderStatus, OrderStatus newOrderStatus)
+{
+    var orderStatus = await StateManager.TryGetStateAsync<OrderStatus>(OrderStatusStateName);
+    if (!orderStatus.HasValue)
+    {
+        _logger.LogWarning("Order with Id: {OrderId} cannot be updated because it doesn't exist",
+            OrderId);
+
+        return false;
+    }
+
+    if (orderStatus.Value.Id != expectedOrderStatus.Id)
+    {
+        _logger.LogWarning("Order with Id: {OrderId} is in status {Status} instead of expected status {ExpectedStatus}",
+            OrderId, orderStatus.Value.Name, expectedOrderStatus.Name);
+
+        return false;
+    }
+
+    await StateManager.SetStateAsync(OrderStatusStateName, newOrderStatus);
+
+    return true;
+}
+```
+
+First, the `TryUpdateOrderStatusAsync` method checks whether there even is a current order status. If there isn't, the order doesn't exist. This is a fail-safe that should not happen with normal application usage. Then, the method checks whether the current order status is the status that we expected. Remember that the ordering process is driven by events using the Dapr pub/sub building block. Event delivery uses at-least-once semantics, so a single message could be received multiple times. The order status check ensures that even when the same message is received multiple times, it is only processed once.
+
+The other steps in the ordering process are all implemented in a very similar way to the grace period step. In the next sections, we'll look at some other aspects of the ordering process, namely cancellation and viewing order details.
+
+#### Order cancellation
+
+Customers are allowed to cancel any order that has not been paid or shipped yet. The `OrdersController` class handles incoming order cancellations. It invokes the `Cancel` method on the `OrderingProcessActor` instance for the given order.
+
+```csharp
+public async Task<bool> Cancel()
+{
+    var orderStatus = await StateManager.TryGetStateAsync<OrderStatus>(OrderStatusStateName);
+    if (!orderStatus.HasValue)
+    {
+        _logger.LogWarning("Order with Id: {OrderId} cannot be cancelled because it doesn't exist",
+            OrderId);
+
+        return false;
+    }
+
+    if (orderStatus.Value.Id == OrderStatus.Paid.Id || orderStatus.Value.Id == OrderStatus.Shipped.Id)
+    {
+        _logger.LogWarning("Order with Id: {OrderId} cannot be cancelled because it's in status {Status}",
+            OrderId, orderStatus.Value.Name);
+
+        return false;
+    }
+
+    await StateManager.SetStateAsync(OrderStatusStateName, OrderStatus.Cancelled);
+
+    var order = await StateManager.GetStateAsync<Order>(OrderDetailsStateName);
+
+    await _eventBus.PublishAsync(new OrderStatusChangedToCancelledIntegrationEvent(
+        OrderId,
+        OrderStatus.Cancelled.Name,
+        $"The order was cancelled by buyer.",
+        order.UserName));
+
+    return true;
+}
+```
+
+The `Cancel` method consists of the following steps:
+
+1. First, the method ensures that the order exists by retrieving the current order status.
+1. If the order exists, the method checks whether it's eligible for cancellation. Any order not in the `Paid` or `Shipped` state can be cancelled.
+1. If the order can be cancelled, the order status is changed to `Cancelled`.
+1. Lastly, the order details are retrieved from state and used to publish an `OrderStatusChangedToCancelledIntegrationEvent` to inform the other services.
+
+The `Cancel` method is a great example of the usefulness of the turn-based access model of actors. Nowhere in the method do we need to worry about multiple threads running at the same time. Therefore, the method does not require any explicit locking mechanisms to be correct.
+
+#### Order details
+
+Customers can check the status and details of their order in the eShopOnDapr UI. They can also view a complete history of past orders. Directly querying actor instances for this information is a bad idea because of two reasons:
+
+1. Low-latency reads cannot be guaranteed because actor operations execute serially.
+1. Querying across actors is inefficient because each actor's state needs to be read individually and can introduce more unpredictable latencies.
+
+To fix this issue, eShopOnDapr uses a separate read model for any queries on order data. The read model is stored in a separate SQL database. An ASP.NET Core controller class named `UpdateOrderStatusEventController` subscribes to the order status events and builds up the view model. The same `UpdateOrderStatusEventController` class also sends push notifications to the UI to inform the customer of order status updates.
+
+The following snippet shows the code for handling the `OrderStatusChangedToSubmittedIntegrationEvent` message:
+
+```csharp
+[HttpPost("OrderStatusChangedToSubmitted")]
+[Topic(DaprPubSubName, "OrderStatusChangedToSubmittedIntegrationEvent")]
+public async Task Handle(OrderStatusChangedToSubmittedIntegrationEvent integrationEvent,
+    [FromServices] IOptions<OrderingSettings> settings, [FromServices] IEmailService emailService)
+{
+    // Gets the order details from Actor state.
+    var actorId = new ActorId(integrationEvent.OrderId.ToString());
+    var orderingProcess = ActorProxy.Create<IOrderingProcessActor>(actorId, nameof(OrderingProcessActor));
+    //
+    var actorOrder = await orderingProcess.GetOrderDetails();
+    var readModelOrder = Model.Order.FromActorState(integrationEvent.OrderId, actorOrder);
+
+    // Add the order to the read model so it can be queried from the API.
+    // It may already exist if this event has been handled before (at-least-once semantics).
+    readModelOrder = await _orderRepository.AddOrGetOrderAsync(readModelOrder);
+
+    // Send a SignalR notification to the client.
+    await SendNotificationAsync(readModelOrder.OrderNumber, integrationEvent.OrderStatus,
+        integrationEvent.BuyerName);
+
+    // Send a confirmation e-mail if enabled.
+    if (settings.Value.SendConfirmationEmail)
+    {
+        await emailService.SendOrderConfirmation(readModelOrder);
+    }
+}
+```
+
+The handler contains the code for all the actions that must occur after an order is submitted successfully. Because the events originate from the `OrderingProcessActor`, we can be sure that any validations performed by the actor have succeeded.
+
+The handler performs the following steps:
+
+1. First, the method creates an actor proxy and uses it to retrieve the order details from the actor instance.
+1. The method maps the order details to the read model and stores it in the database. Due to the at-least-once semantics of the Dapr pub/sub building block, the order may already exist in the database. In that case, it will not be overwritten.
+1. The method publishes a push notification for the status update using SignalR.
+1. Lastly, if enabled, the method sends a confirmation e-mail to the customer.
+
+Subsequent order status updates are all handled equally to each other. The following snippet shows what happens when the order status is updated to `AwaitingStockValidation`:
+
+```csharp
+[HttpPost("OrderStatusChangedToAwaitingStockValidation")]
+[Topic(DaprPubSubName, "OrderStatusChangedToAwaitingStockValidationIntegrationEvent")]
+public Task Handle(OrderStatusChangedToAwaitingStockValidationIntegrationEvent integrationEvent)
+{
+    // Save the updated status in the read model and notify the client via SignalR.
+    return UpdateReadModelAndSendNotificationAsync(integrationEvent.OrderId,
+        integrationEvent.OrderStatus, integrationEvent.Description, integrationEvent.BuyerName);
+}
+
+private async Task UpdateReadModelAndSendNotificationAsync(Guid orderId, string orderStatus,
+    string description, string buyerName)
+{
+    var order = await _orderRepository.GetOrderByIdAsync(orderId);
+    if (order != null)
+    {
+        order.OrderStatus = orderStatus;
+        order.Description = description;
+
+        await _orderRepository.UpdateOrderAsync(order);
+        await SendNotificationAsync(order.OrderNumber, orderStatus, buyerName);
+    }
+}
+```
+
+In the snippet, the handler calls the `UpdateReadModelAndSendNotificationAsync` helper method to handle the status update:
+
+1. The helper method first loads the current order from the database.
+1. If that succeeds, it updates the `OrderStatus` and `Description` fields and saves the updated model back to the database.
+1. Lastly, it sends a push notification to notify the client UI.
+
 ### Observability
 
 Observability in eShopOnDapr consists of several parts. Telemetry from all of the sidecars is captured. Additionally, there are other observability features inherited from the earlier eShopOnContainers sample.
@@ -673,12 +998,13 @@ Here are some more examples of benefits offered by specific building blocks:
 - **Bindings**
   - The eShopOnContainers solution contained a *to-do* item for e-mailing an order confirmation to the customer. The thought was to eventually implement a third-party email API such as SendGrid. With Dapr, implementing email notification was as easy as configuring a resource binding. There wasn't any need to learn external APIs or SDKs.
 
+- **Actors**
+  - The actors building block makes it easy to create long running, stateful workflows. Thanks to the turn-based access model, there's no need for explicit locking mechanisms.
+  - The complexity of the grace period implementation is greatly reduced by using actor reminders instead of polling on the database.
+
 ## Summary
 
 In this chapter, you're introduced to the eShopOnDapr reference application. It's an evolution of the widely popular eShopOnContainers microservice reference application. eShopOnDapr replaces a large amount of custom functionality with Dapr building blocks and components, dramatically simplifying the complexities required to build a microservices application.
-
-> [!NOTE]
-> The Actors building block isn't covered in the first version of this book. An extensive chapter on the Actor building block and its integration with eShopOnDapr will be included in the 1.1 update.
 
 ### References
 

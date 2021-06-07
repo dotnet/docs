@@ -64,9 +64,9 @@ download.Value.Content.CopyTo(stream)
 //
 
 // stats.Usage is current usage in GB
-let ONE_GIBIBYTE = 10737420000L // Number of bytes in 1 gibibyte
+let ONE_GIBIBYTE = 10_737_420_000L // Number of bytes in 1 gibibyte
 let stats = share.GetStatistics().Value
-let currentGiB = (int)(stats.ShareUsageInBytes / ONE_GIBIBYTE)
+let currentGiB = int (stats.ShareUsageInBytes / ONE_GIBIBYTE)
 
 // Set the quota to 10 GB plus current usage
 share.SetQuotaAsync(currentGiB + 10)

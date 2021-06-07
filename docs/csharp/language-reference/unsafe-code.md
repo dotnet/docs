@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "pointers [C#], about pointers"
 ms.assetid: b0fcca10-a92d-4f2a-835b-b0ccae6739ee
 ---
-# Unsafe code, pointer types and function pointers
+# Unsafe code, pointer types, and function pointers
 
 Most of the C# code you write is "verifiably safe code." *Verifiably safe code* means .NET tools can verify that the code is safe. In general, safe code doesn't directly access memory using pointers. It also doesn't allocate raw memory. It creates managed objects instead.
 

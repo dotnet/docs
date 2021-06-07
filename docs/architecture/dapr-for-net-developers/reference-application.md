@@ -205,7 +205,7 @@ Note the steps from the previous figure:
 1. The API gateway forwards complex requests that involve coordinated calls to multiple back-end services to the web shopping aggregator service.
 
 1. The aggregator service uses gRPC to call core back-end services.
-    
+
 In the updated eShopOnDapr implementation, Dapr sidecars are added to the services and API gateway. Figure 12-6 show the updated architecture:
 
 :::image type="content" source="./media/reference-application/service-invocation-eshop-on-dapr.png" alt-text="gRPC and HTTP/REST calls with sidecars in eShopOnContainers.":::

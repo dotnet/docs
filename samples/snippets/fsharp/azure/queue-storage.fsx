@@ -1,5 +1,6 @@
 open Azure.Storage.Queues // Namespace for Queue storage types
 open System
+open System.Text
 
 //
 // Get your connection string.
@@ -16,7 +17,7 @@ let storageConnString =
 // Create the Queue Service client.
 //
 
-let queueClient = QueueClient(storageConnString, "myqueue");
+let queueClient = QueueClient(storageConnString, "myqueue")
 
 //
 // Create a queue.
@@ -28,14 +29,15 @@ queueClient.CreateIfNotExists()
 // Insert a message into a queue.
 //
 
-queueClient.SendMessage("Hello, World")
+queueClient.SendMessage("Hello, World") // Insert a String message into a queue
+queueClient.SendMessage(BinaryData.FromBytes(Encoding.UTF8.GetBytes("Hello, World"))) // Insert a BinaryData message into a queue
 
 //
 // Peek at the next message.
 //
 
 let peekedMessage = queueClient.PeekMessage()
-let messageContents = peekedMessage.ToString()
+let messageContents = peekedMessage.Value.Body.ToString()
 
 //
 // Get the next message.
@@ -94,4 +96,4 @@ let count = properties.ApproximateMessagesCount
 // Delete a queue.
 //
 
-queueClient.Delete()
+queueClient.DeleteIfExists()

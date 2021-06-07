@@ -1,5 +1,7 @@
 name: MSDocs build verifier
 on: pull_request
+env:
+  PR_NUMBER: ${{ github.event.pull_request.number }}
 
 jobs:
   validate:
@@ -10,5 +12,5 @@ jobs:
     - name: Checkout the repository
       uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2
 
-    - name: Validate links
+    - name: Validate
       uses: MSDocsBuild/build-verifier@d535b55271cc491d5cce733f2447e12ff21db0fa #@v0.0.1

@@ -49,7 +49,7 @@ The platform compatibility analyzer is one of the Roslyn code quality analyzers.
 
 For more information, see [examples of how the attributes work and what diagnostics they cause](#examples-of-how-the-attributes-work-and-what-diagnostics-they-produce).
 
-## How the analyzer recognise TFM target plaforms
+## How the analyzer recognizes TFM target platforms
 
 The analyzer does not check TFM target platforms from MSBuild properties such as <`TargetFramework>` or `<TargetFrameworks>`, if the TFM has a target platform MSBuild would inject `SupportedOSPlatform` attribute with the targeted platform name in the `AssemblyInfo.cs` file which is consumed by the analyzer. For example if the TFM is `net5.0-windows`, MSBuild would inject `[assembly: System.Runtime.Versioning.SupportedOSPlatform("windows7.0")]` attribute into the `AssemblyInfo.cs` and the entire assembly would considered to be windows only. Therefore calling a windows only APIs versioned with 7.0 or below from windows targeted project would not cause any warning.
 

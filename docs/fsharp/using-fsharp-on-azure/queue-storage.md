@@ -152,9 +152,13 @@ To delete a queue and all the messages contained in it, call the
 
 [!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L99-L99)]
 
+## Note
+
+If you're migrating from the old libraries, they Base64 encoded messages by default but the new libraries do not because it's more performant. 
+See [MessageEncoding](https://docs.microsoft.com/en-us/dotnet/api/azure.storage.queues.queueclientoptions.messageencoding?view=azure-dotnet#Azure_Storage_Queues_QueueClientOptions_MessageEncoding) for how to set that up.
+
 ## Next steps
 
-If you're migrating from the old libraries, they Base64 encoded messages by default but the new libraries do not because it's more performant. See [MessageEncoding](https://docs.microsoft.com/en-us/dotnet/api/azure.storage.queues.queueclientoptions.messageencoding?view=azure-dotnet#Azure_Storage_Queues_QueueClientOptions_MessageEncoding) for how to set that up.
 Now that you've learned the basics of Queue storage, follow these links to learn about more complex storage tasks.
 
 - [Azure Storage APIs for .NET](/dotnet/api/overview/azure/storage)

@@ -188,14 +188,6 @@ The example generates an *.xml* file with the following contents.
 </doc>
 ```
 
-## Compiling the code
-
-To compile the example, enter the following command:
-
-`csc XMLsample.cs /doc:XMLsample.xml`
-
-This command creates the XML file *XMLsample.xml*, which you can view in your browser or by using the `TYPE` command.
-
 ## Robust programming
 
 XML documentation starts with `///`. When you create a new project, the wizards put some starter `///` lines in for you. The processing of these comments has some restrictions:

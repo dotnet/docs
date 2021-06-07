@@ -1,7 +1,7 @@
 name: MSDocs build verifier
 on: pull_request
 env:
-  PR_NUMBER: ${{ github.event.pull_request.number }}
+  GITHUB_PR_NUMBER: ${{ github.event.pull_request.number }}
 
 jobs:
   validate:

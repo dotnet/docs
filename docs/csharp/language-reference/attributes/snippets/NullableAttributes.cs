@@ -110,7 +110,7 @@ namespace attributes
         }
 
         // <NotNullThrowHelper>
-        public static void ThrowWhenNull([NotNull] object value, string valueExpression = "") =>
+        public static void ThrowWhenNull([NotNull] object? value, string valueExpression = "") =>
             _ = value ?? throw new ArgumentNullException(valueExpression);
         // </NotNullThrowHelper>
 

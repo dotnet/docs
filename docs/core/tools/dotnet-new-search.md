@@ -16,7 +16,7 @@ ms.date: 04/29/2021
 ```dotnetcli
 dotnet new <TEMPLATE_NAME> --search
 
-dotnet new [<TEMPLATE_NAME>] --search [--author <AUTHOR>] [-lang|--language {"C#"|"F#"|VB}] 
+dotnet new [<TEMPLATE_NAME>] --search [--author <AUTHOR>] [-lang|--language {"C#"|"F#"|VB}]
     [--package <PACKAGE>] [--tag <TAG>] [--type <TYPE>]
     [--columns <COLUMNS>] [--columns-all]
 ```

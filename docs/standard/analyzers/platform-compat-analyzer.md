@@ -273,7 +273,7 @@ class Test
     void M1()
     {
         ApiNotSupportedOnBrowser();  // Warns: This call site is reachable on all platforms.'ApiNotSupportedOnBrowser()' is unsupported on: 'browser'
-        
+
         if (IsSupported)
         {
             ApiNotSupportedOnBrowser();  // Not warn
@@ -341,7 +341,7 @@ Platform names should match the calling platform-dependent API. If the platform 
       ApiSupportedFromWindows8UnsupportFromWindows10();
 
       // The call site version is lower than the calling version, so warns:
-      // This call site is reachable on: 'windows' 8.0 and later. 'AssemblySupportedOnWindowsApiSupportedFromWindows10()' is only supported on: 'windows' 10.0.19041.0 and later      
+      // This call site is reachable on: 'windows' 8.0 and later. 'AssemblySupportedOnWindowsApiSupportedFromWindows10()' is only supported on: 'windows' 10.0.19041.0 and later
       AssemblySupportedOnWindowsApiSupportedFromWindows10();
   }
 
@@ -389,7 +389,7 @@ Platform names should match the calling platform-dependent API. If the platform 
   public void Caller4()
   {
       // This call site is reachable on all platforms.'DoesNotWorkOnAndroid()' is unsupported on: 'android'
-      DoesNotWorkOnAndroid(); 
+      DoesNotWorkOnAndroid();
 
       // will not warns as the call site not support Windows at all, but supports all other.
       StartedWindowsSupportFromVersion8();

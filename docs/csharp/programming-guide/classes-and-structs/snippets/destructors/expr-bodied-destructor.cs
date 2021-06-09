@@ -13,9 +13,10 @@ class Program
 {
    static void Main()
    {
-      var destroyer = new Destroyer();
-      destroyer = null;
-      GC.Collect();
-      Console.WriteLine("Exiting...");
-   }
+        var destroyer = new Destroyer();
+        destroyer = null;
+        GC.Collect();
+        GC.WaitForPendingFinalizers();
+        Console.WriteLine("Exiting...");
+    }
 }

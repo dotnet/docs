@@ -26,8 +26,8 @@ The platform compatibility analyzer is one of the Roslyn code quality analyzers.
 - An API marked with `[SupportedOSPlatform("platform")]` is considered only portable to the specified OS `platform`.
   - The attribute can be applied multiple times to indicate **multiple platform support** (`[SupportedOSPlatform("windows"), SupportedOSPlatform("Android6.0")]`).
   - The analyzer will produce a **warning** if platform-specific APIs are referenced without a proper **platform context**:
-    - **Warns** if the project doesn't target the supported platform (for example, a Windows-specific API called from a project targeting ios `<TargetFramework>net5.0-ios14.0</TargetFramework>`).
-    - **Warns** if the project is cross-platform and calling platform specific APIs (for example, a Windows-specific API called from cross platform TFM `<TargetFramework>net5.0</TargetFramework>`).
+    - **Warns** if the project doesn't target the supported platform (for example, a Windows-specific API called from a project targeting iOS `<TargetFramework>net5.0-ios14.0</TargetFramework>`).
+    - **Warns** if the project is cross-platform and calls platform-specific APIs (for example, a Windows-specific API called from cross platform TFM `<TargetFramework>net5.0</TargetFramework>`).
     - **Doesn't warn** if the platform-specific API is referenced within a project that targets any of the **specified platforms** (for example, for a Windows-specific API called from a project targeting windows `<TargetFramework>net5.0-windows</TargetFramework>`).
     - **Doesn't warn** if the platform-specific API call is guarded by corresponding platform-check methods (for example, a Windows-specific API call guarded by `OperatingSystem.IsWindows()`).
     - **Doesn't warn** if the platform-specific API is referenced from the same platform-specific context (**call site also attributed** with `[SupportedOSPlatform("platform")`).
@@ -51,10 +51,10 @@ For more information, see [examples of how the attributes work and what diagnost
 
 ## How the analyzer recognizes TFM target platforms
 
-The analyzer does not check TFM target platforms from MSBuild properties such as `<TargetFramework>` or `<TargetFrameworks>`. If the TFM has a target platform, MSBuild would inject `SupportedOSPlatform` attribute with the targeted platform name in the *AssemblyInfo.cs* file which is consumed by the analyzer. For example, if the TFM is `net5.0-windows`, MSBuild would inject `[assembly: System.Runtime.Versioning.SupportedOSPlatform("windows7.0")]` attribute into the *AssemblyInfo.cs* and the entire assembly would considered to be windows only. Therefore, calling windows only APIs versioned with 7.0 or below from windows targeted project would not cause any warning.
+The analyzer does not check target framework moniker (TFM) target platforms from MSBuild properties, such as `<TargetFramework>` or `<TargetFrameworks>`. If the TFM has a target platform, MSBuild injects a `SupportedOSPlatform` attribute with the targeted platform name in the *AssemblyInfo.cs* file, which is consumed by the analyzer. For example, if the TFM is `net5.0-windows`, MSBuild injects the `[assembly: System.Runtime.Versioning.SupportedOSPlatform("windows7.0")]` attribute into the *AssemblyInfo.cs* file, and the entire assembly is considered to be Windows only. Therefore, calling Windows-only APIs versioned with 7.0 or below  would not cause any warnings in the project.
 
   > [!NOTE]
-  > In case the *AssemblyInfo.cs* file generation is disabled for the project (that is, `<GenerateAssemblyInfo>false</GenerateAssemblyInfo>`), the required assembly level `SupportedOSPlatform` attribute could not be added by MSBuild, therefore you could see warnings for a platform specific APIs usage even if you are targeting that platform. In this case, you might want to enable the *AssemblyInfo.cs* file generation or add the attribute manually in your project.
+  > If the *AssemblyInfo.cs* file generation is disabled for the project (that is, the `<GenerateAssemblyInfo>` property is set to `false`), the required assembly level `SupportedOSPlatform` attribute can't be added by MSBuild. In this case, you could see warnings for a platform-specific APIs usage even if you're targeting that platform. To resolve the warnings, enable the *AssemblyInfo.cs* file generation or add the attribute manually in your project.
 
 ### Advanced scenarios for combining attributes
 
@@ -62,7 +62,7 @@ The analyzer does not check TFM target platforms from MSBuild properties such as
   - **Supported only list**. If the lowest version for each OS platform is a `[SupportedOSPlatform]` attribute, the API is considered to only be supported by the listed platforms and unsupported by all other platforms. The optional `[UnsupportedOSPlatform]` attributes for each platform can only have higher version of the minimum supported version, which denotes that the API is removed starting from the specified version.
 
     ```csharp
-    // The API only supported on Windows from version 8.0 to 10.0.19041.0, and linux all versions
+    // API is only supported on Windows from version 8.0 to 10.0.19041.0 and all versions of Linux
     // The API is considered not supported for all other platforms.
     [SupportedOSPlatform("windows8.0")]
     [UnsupportedOSPlatform("windows10.0.19041.0")]
@@ -73,7 +73,7 @@ The analyzer does not check TFM target platforms from MSBuild properties such as
   - **Unsupported only list**. If the lowest version for each OS platform is an `[UnsupportedOSPlatform]` attribute, then the API is considered to only be unsupported by the listed platforms and supported by all other platforms. The list could have `[SupportedOSPlatform]` attribute with the same platform but a higher version, which denotes that the API is supported starting from that version.
 
     ```csharp
-    // The API was unsupported on Windows until version 10.0.19041.0 and unsupported on linux all versions.
+    // The API is unsupported on all Linux versions was unsupported on Windows until version 10.0.19041.0.
     // The API is considered supported everywhere else without constraints.
     [UnsupportedOSPlatform("windows")]
     [SupportedOSPlatform("windows10.0.19041.0")]
@@ -81,7 +81,7 @@ The analyzer does not check TFM target platforms from MSBuild properties such as
     public void ApiSupportedFromWindows8UnsupportFromWindows10();
     ```
 
-  - **Inconsistent list**. If the lowest version for some platforms is `[SupportedOSPlatform]` while it is `[UnsupportedOSPlatform]` for other platforms, it's considered to be inconsistent, which is not supported for the analyzer. If inconsistency occurs the analyzer would ignore the `[UnsupportedOSPlatform]` platforms.
+  - **Inconsistent list**. If the lowest version for some platforms is `[SupportedOSPlatform]` while it is `[UnsupportedOSPlatform]` for other platforms, it's considered to be inconsistent, which is not supported for the analyzer. If inconsistency occurs, the analyzer ignores the `[UnsupportedOSPlatform]` platforms.
   - If the lowest versions of `[SupportedOSPlatform]` and `[UnsupportedOSPlatform]` attributes are equal, the analyzer considers the platform as part of the **Supported only list**.
 - Platform attributes can be applied to types, members (methods, fields, properties, and events) and assemblies with different platform names or versions.
   - Attributes applied at the top level `target` affect all of its members and types.
@@ -250,12 +250,12 @@ The guard method's platform name should match with the calling platform-dependen
 
 #### Annotate APIs with platform guard attributes and use it as a custom guard
 
-As shown above the analyzer recognizes platform guard static methods added in <xref:System.OperatingSystem> type, such as `OperatingSystem.IsWindows`, and also <xref:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform%2A?displayProperty=nameWithType>. However, developer might want to cache the guard result in a field and reuse it, or might want to use custom guard methods for checking a platform. The analyzer need to recognize such APIs as a custom guard and should not warn for the APIs guarded by them. For supporting this scenario we introduced guard attributes in .NET 6.0:
+As shown previously, the analyzer recognizes the platform-guard static methods in the <xref:System.OperatingSystem> type, such as `OperatingSystem.IsWindows`, and also <xref:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform%2A?displayProperty=nameWithType>. However, you might want to cache the guard result in a field and reuse it, or use custom guard methods for checking a platform. The analyzer needs to recognize such APIs as a custom guard and should not warn for the APIs guarded by them. The guard attributes were introduced in .NET 6 to support this scenario:
 
-- `SupportedOSPlatformGuardAttribute` to annotate APIs that can be used as a guard for APIs annotated with <xref:System.Runtime.Versioning.SupportedOSPlatformAttribute>.
-- `UnsupportedOSPlatformGuardAttribute` APIs that can be used as a guard for APIs annotated with <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute>.
+- `SupportedOSPlatformGuardAttribute` annotates APIs that can be used as a guard for APIs annotated with <xref:System.Runtime.Versioning.SupportedOSPlatformAttribute>.
+- `UnsupportedOSPlatformGuardAttribute` annotates APIs that can be used as a guard for APIs annotated with <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute>.
 
-These attributes can optionally include a version number, can be applied multiple times to guard more than one platform and can be used for annotating a field, property or a method.
+These attributes can optionally include a version number. They can be applied multiple times to guard more than one platform and can be used for annotating a field, property, or method.
 
 ```cs
 class Test

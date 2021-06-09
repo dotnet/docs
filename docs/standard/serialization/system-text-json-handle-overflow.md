@@ -16,7 +16,7 @@ ms.topic: how-to
 
 # How to handle overflow JSON with System.Text.Json
 
-This article shows how to handle overflow JSON with the `System.Text.Json` namespace.
+This article shows how to handle overflow JSON with the [`System.Text.Json`](xref:System.Text.Json) namespace.
 
 ## Handle overflow JSON
 

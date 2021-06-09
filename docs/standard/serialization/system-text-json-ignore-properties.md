@@ -121,6 +121,9 @@ Here's an example object to serialize and JSON output:
 }
 ```
 
+> [!NOTE]
+> The <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> property is deprecated in .NET 5 and later versions. For the current way to ignore null values, see [how to ignore all null-value properties in .NET 5 and later](system-text-json-ignore-properties.md?pivots=dotnet-5-0#ignore-all-null-value-properties).
+
 ::: zone-end
 
 ## Ignore all default-value properties

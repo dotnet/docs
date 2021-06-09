@@ -215,7 +215,7 @@ static void Main(string[] args)
     Console.WriteLine("Enter Command:");
     while (true)
     {
-        var s = Console.ReadLine();
+        string s = Console.ReadLine();
         Console.WriteLine(p.calculator.Calculate(s));
     }
 }

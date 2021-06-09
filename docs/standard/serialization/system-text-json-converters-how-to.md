@@ -347,13 +347,15 @@ The converter can deserialize JSON that was created by using the same converter 
 
 The converter code in the preceding example reads and writes each property manually. An alternative is to call `Deserialize` or `Serialize` to do some of the work. For an example, see [this StackOverflow post](https://stackoverflow.com/a/59744873/12509023).
 
-Another alternative way to call `Deserialize` in the `Read` method is to:
+### An alternative way to do polymorphic deserialization
 
-* Make a clone of the `Reader` instance. Since `Reader` is a struct, this just requires an assignment statement.
+You can call `Deserialize` in the `Read` method:
+
+* Make a clone of the `Utf8JsonReader` instance. Since `Utf8JsonReader` is a struct, this just requires an assignment statement.
 * Use the clone to read through the discriminator tokens.
 * Call `Deserialize` using the original `Reader` instance once you know the type you need. You can call `Deserialize` because the original `Reader` instance is still positioned to read the begin object token.
 
-A disadvantage of this method is you can't pass in the original options instance that registers the converter to `Deserialize`. Doing so would cause an infinite loop, as explained in [Required properties](system-text-json-migrate-from-newtonsoft-how-to.md#required-properties). The following example shows a Read method that uses this alternative:
+A disadvantage of this method is you can't pass in the original options instance that registers the converter to `Deserialize`. Doing so would cause a stack overflow, as explained in [Required properties](system-text-json-migrate-from-newtonsoft-how-to.md#required-properties). The following example shows a `Read` method that uses this alternative:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/PersonConverterWithTypeDiscriminatorAlt.cs" id="ReadMethod":::
 

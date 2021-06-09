@@ -28,9 +28,9 @@ groups:
       title: Visual Studio Code
     - id: visualstudio
       title: Visual Studio
-- id: development-experience-one
-  title: Development experience
-  prompt: Choose a development experience
+- id: development-environment-one
+  title: Development environment
+  prompt: Choose a development environment
   pivots:
     - id: visualstudio
       title: Visual Studio

@@ -3,6 +3,7 @@ title: "Sorry, we don't have specifics on this C# error"
 description: "List of possible resources for compiler errors and warnings that haven't been documented yet."
 ms.date: 08/04/2020
 f1_keywords:
+  - "CS0003"
   - "CS0181"
   - "CS0190"
   - "CS0224"

@@ -6,12 +6,12 @@ ms.date: 06/10/2021
 ---
 Understanding the versioning of the SDK and how it relates to Visual Studio and MSBuild can frequently be confusing. MSBuild versions with VS but is also included in the SDK. The SDK has a minimum version of MSBuild that it works with and it won't load in a VS that is older than it supports.
 
-#Versioning
-The first part of the SDK matches the .NET version that it includes, runs on, and targets by default.  The feature band starts at 1 and increases for each quarterly VS minor release.  The patch version increments with each month's servicing updates. 
+# Versioning
+The first part of the SDK matches the .NET version that it includes, runs on, and targets by default.  The feature band starts at 1 and increases for each quarterly VS minor release.  The patch version increments with each month's servicing updates.
 
 For example, 5.0.203 ships with .NET 5.0, is the 2nd minor VS release since 5.0.100 first came out, and is the 3rd patch since 5.0.200 released.
 
-##Lifecycle
+## Lifecycle
 The support timeframe for the SDK typically matches the VS it's included in.
 
 | SDK Version      | MSBuild/VS version | Minimum required MSBuild/VS Version | Ship date    | Lifecycle |

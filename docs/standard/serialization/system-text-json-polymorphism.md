@@ -147,7 +147,7 @@ The following example shows the JSON that results from the preceding code:
 * [Customize property names and values](system-text-json-customize-properties.md)
 * [Ignore properties](system-text-json-ignore-properties.md)
 * [Allow invalid JSON](system-text-json-invalid-json.md)
-* [Handle overflow JSON](system-text-json-handle-overflow.md)
+* [Handle overflow JSON or use JsonElement or JsonNode](system-text-json-handle-overflow.md)
 * [Preserve references](system-text-json-preserve-references.md)
 * [Immutable types and non-public accessors](system-text-json-immutability.md)
 * [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)

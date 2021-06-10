@@ -180,7 +180,7 @@ Enum string names can be deserialized as well, as shown in the following example
 * [Enable case-insensitive matching](system-text-json-character-casing.md)
 * [Ignore properties](system-text-json-ignore-properties.md)
 * [Allow invalid JSON](system-text-json-invalid-json.md)
-* [Handle overflow JSON](system-text-json-handle-overflow.md)
+* [Handle overflow JSON or use JsonElement or JsonNode](system-text-json-handle-overflow.md)
 * [Preserve references](system-text-json-preserve-references.md)
 * [Immutable types and non-public accessors](system-text-json-immutability.md)
 * [Polymorphic serialization](system-text-json-polymorphism.md)

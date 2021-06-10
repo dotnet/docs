@@ -2456,34 +2456,48 @@ items:
   items:
   - name: Overview
     href: ../core/porting/index.md
-  - name: .NET Upgrade Assistant tool
+  - name: General Information
     items:
-    - name: Overview
-      href: ../core/porting/upgrade-assistant-overview.md
-    - name: Windows Presentation Foundation
-      href: ../core/porting/upgrade-assistant-wpf-framework.md
-    - name: Windows Forms
-      href: ../core/porting/upgrade-assistant-winforms-framework.md
-    - name: ASP.NET Core
-      href: ../core/porting/upgrade-assistant-aspnetmvc.md
-  - name: Breaking changes
-    displayName: app compatibility
-    href: ../core/compatibility/
-  - name: Analyze third-party dependencies
-    href: ../core/porting/third-party-deps.md
-  - name: Port libraries
-    href: ../core/porting/libraries.md
-  - name: Organize projects for .NET
-    href: ../core/porting/project-structure.md
-  - name: Unavailable technologies
-    href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-  - name: Use the Windows Compatibility Pack
-    href: ../core/porting/windows-compat-pack.md
-  - name: Port Windows Forms projects
-    href: /dotnet/desktop/winforms/migration/?view=netdesktop-5.0
-  - name: Port WPF projects
-    href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0
-  - name: Port C++/CLI projects
-    href: ../core/porting/cpp-cli.md
-  - name: Choose between .NET 5 and .NET Framework for server apps
-    href: ../standard/choosing-core-framework-server.md
+    - name: About .NET
+      href: ../standard/choosing-core-framework-server.md
+    - name: .NET Upgrade Assistant tool
+      items:
+      - name: Overview
+        href: ../core/porting/upgrade-assistant-overview.md
+      - name: Windows Presentation Foundation
+        href: ../core/porting/upgrade-assistant-wpf-framework.md
+      - name: Windows Forms
+        href: ../core/porting/upgrade-assistant-winforms-framework.md
+      - name: ASP.NET Core
+        href: ../core/porting/upgrade-assistant-aspnetmvc.md
+    - name: Breaking changes
+      displayName: app compatibility
+      href: ../core/compatibility/
+  - name: Pre-Migration
+    items:
+    - name: Analyze & Asses the portability of your project
+      items:
+      - name: Tooling Requirements
+        href: ../core/porting/tooling-requirements.md
+      - name: Unsupported Dependencies
+        href: ../core/porting/third-party-deps.md
+      - name: Use the Windows Compatibility Pack
+        href: ../core/porting/windows-compat-pack.md
+      - name: Unavailable technologies
+        href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: Unsupported APIs
+        href: ../core/porting/unsupported-apis.md
+    - name: Update .NET Framework target version
+      href: ../core/porting/update-netfx-tfm-version.md
+  - name: Migration
+    items:
+    - name: Create a porting plan
+      href: ../core/porting/create-a-porting-plan.md
+    - name: Application Porting Guides
+      items:
+      - name: Windows Forms
+        href: /dotnet/desktop/winforms/migration/?view=netdesktop-5.0
+      - name: Windows Presentation Foundation
+        href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0
+      - name: Port C++/CLI projects
+        href: ../core/porting/cpp-cli.md

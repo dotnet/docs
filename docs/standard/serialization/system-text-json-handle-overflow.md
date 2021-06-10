@@ -19,7 +19,7 @@ ms.topic: how-to
 
 This article shows how to handle overflow JSON with the [`System.Text.Json`](xref:System.Text.Json) namespace. The article also shows another alternative that is available for scenarios where the target type might not perfectly match the JSON being deserialized: deserialize into `JsonElement` or `JsonNode`.
 
-## Handle overflow JSON or use JsonElement or JsonNode
+## Handle overflow JSON
 
 While deserializing, you might receive data in the JSON that is not represented by properties of the target type. For example, suppose your target type is this:
 
@@ -87,7 +87,7 @@ The following example shows a round trip from JSON to a deserialized object and 
 
 ## Deserialize into JsonElement or JsonNode
 
-::: zone pivot="dotnet-core-6-0"
+::: zone pivot="dotnet-6-0"
 
 If you just want to be flexible about what JSON to accept for a particular property, an alternative is to deserialize into <xref:System.Text.Json.JsonElement> or `JsonNode`. Any valid JSON property can be deserialized into `JsonElement` or `JsonNode`. Choose `JsonElement` to create an immutable object or `JsonNode` to create a mutable object.
 

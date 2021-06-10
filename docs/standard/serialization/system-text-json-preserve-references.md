@@ -15,7 +15,7 @@ helpviewer_keywords:
 ms.topic: how-to
 ---
 
-# How to preserve references and handle circular references with System.Text.Json
+# How to preserve references and handle or ignore circular references with System.Text.Json
 
 ::: zone pivot="dotnet-5-0,dotnet-6-0"
 
@@ -71,6 +71,21 @@ When the sample code calls the serializer, it uses a <xref:System.Text.Json.Json
 
 ::: zone pivot="dotnet-core-3-1"
 System.Text.Json in .NET Core 3.1 only supports serialization by value and throws an exception for circular references.
+::: zone-end
+
+## Ignore circular references
+
+::: zone pivot="dotnet-6-0"
+
+Instead of handling circular references, you can ignore them. To ignore circular references, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A> to <xref:System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles%2A>. The serializer sets circular reference properties to null, as shown in the following example:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-6-0/csharp/SerializeIgnoreCycles.cs" highlight="25,37":::
+
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1,dotnet-5-0"
+System.Text.Json in .NET 5 and earlier doesn't support <xref:System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles?displayProperty=nameWithType>.
+
 ::: zone-end
 
 ## See also

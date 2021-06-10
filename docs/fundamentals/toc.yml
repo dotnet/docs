@@ -2487,12 +2487,16 @@ items:
         href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Unsupported APIs
         href: ../core/porting/unsupported-apis.md
-    - name: Update .NET Framework target version
-      href: ../core/porting/update-netfx-tfm-version.md
+    - name: Needed changes before porting code
+      href: ../core/porting/premigration-needed-changes.md
   - name: Migration
     items:
     - name: Create a porting plan
-      href: ../core/porting/create-a-porting-plan.md
+      items:
+      - name: Approaches
+        href: ../core/porting/porting-approaches.md
+      - name: Project structure
+        href: ../core/porting/project-structure.md
     - name: Application Porting Guides
       items:
       - name: Windows Forms

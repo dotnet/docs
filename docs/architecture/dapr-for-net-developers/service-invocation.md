@@ -2,7 +2,7 @@
 title: The Dapr service invocation building block
 description: A description of the service invocation building block, its features, benefits, and how to apply it
 author: amolenk
-ms.date: 02/17/2021
+ms.date: 06/18/2021
 ---
 
 # The Dapr service invocation building block
@@ -34,7 +34,7 @@ Note the steps from the previous figure:
 1. Service A makes a call to the `catalog/items` endpoint in Service B by invoking the service invocation API on the Service A sidecar.
 
     > [!NOTE]
-    > The sidecar uses a pluggable name resolution mechanism to resolve the address of Service B. In self-hosted mode, Dapr uses [mDNS](https://www.ionos.com/digitalguide/server/know-how/multicast-dns/) to find it. When running in Kubernetes mode, the Kubernetes DNS service determines the address.  
+    > The sidecar uses a pluggable name resolution component to resolve the address of Service B. In self-hosted mode, Dapr uses [mDNS](https://www.ionos.com/digitalguide/server/know-how/multicast-dns/) to find it. When running in Kubernetes mode, the Kubernetes DNS service determines the address.
 
 1. The Service A sidecar forwards the request to the Service B sidecar.
 
@@ -227,6 +227,30 @@ catch (InvocationException ex)
 ```
 
 In the example above, DaprClient serializes the given `order` object using [Protobuf](https://developers.google.com/protocol-buffers) and uses the result as the gRPC request body. Likewise, the response body is Protobuf deserialized and returned to the caller. Protobuf typically provides better performance than the JSON payloads used in HTTP service invocation.
+
+## Name resolution components
+
+At the time of this writing, Dapr provides support for the following name resolution components:
+
+- mDNS (default when running self-hosted)
+- Kubernetes Name Resolution (default when running in Kubernetes)
+- HashiCorp Consul
+
+### Configuration
+
+To use a non-default name resolution component, add a `nameResolution` spec to the application's Dapr configuration file. Here's an example of a Dapr configuration file that enables HashiCorp Consul name resolution:
+
+```yaml
+apiVersion: dapr.io/v1alpha1
+kind: Configuration
+metadata:
+  name: dapr-config
+spec:
+  nameResolution:
+    component: "consul"
+    configuration:
+      selfRegister: true
+```
 
 ## Sample application: Dapr Traffic Control
 

@@ -31,6 +31,18 @@ namespace SystemTextJsonSamples
             people = JsonSerializer.Deserialize<List<Person>>(jsonString, deserializeOptions);
             // </Deserialize>
             people.ForEach(p => p.DisplayPropertyValues());
+
+            // <DeserializeAlt>
+            deserializeOptions = new JsonSerializerOptions
+            {
+                Converters =
+                {
+                    new PersonConverterWithTypeDiscriminatorAlt ()
+                }
+            };
+            people = JsonSerializer.Deserialize<List<Person>>(jsonString, deserializeOptions);
+            // </DeserializeAlt>
+            people.ForEach(p => p.DisplayPropertyValues());
         }
     }
 }

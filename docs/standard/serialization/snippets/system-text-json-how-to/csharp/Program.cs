@@ -39,7 +39,8 @@ namespace SystemTextJsonSamples
             RoundtripPropertyNamesByAttribute.Run();
 
             Console.WriteLine("\n============================= Roundtrip extension data\n");
-            RoundtripExtensionData.Run();
+            RoundtripExtensionData.Program.Main();
+            RoundtripJsonElement.Program.Main();
 
             Console.WriteLine("\n============================= Roundtrip enum as string\n");
             RoundtripEnumAsString.Run();

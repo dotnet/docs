@@ -9,9 +9,7 @@ helpviewer_keywords:
 ---
 # Finalizers (C# Programming Guide)
 
-Finalizers (historically referred to as **destructors**) are used to perform any necessary final clean-up when a class instance is being collected by the garbage collector.
-
-In most cases, you can avoid writing a finalizer by using the  <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=fullName> or derived classes to wrap any unmanaged handle.
+Finalizers (historically referred to as **destructors**) are used to perform any necessary final clean-up when a class instance is being collected by the garbage collector. In most cases, you can avoid writing a finalizer by using the  <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=fullName> or derived classes to wrap any unmanaged handle.
 
 ## Remarks  
 
@@ -57,7 +55,7 @@ Whether or not finalizers are run as part of application termination is implemen
 > [!NOTE]
 > The .NET Framework implementation makes every reasonable effort to call finalizers for all of its objects that have not yet been garbage collected, unless such cleanup has been suppressed (by a call to the library method `GC.SuppressFinalize`, for example).
   
- If you need to perform cleanup reliably when an application exist, register a handler for the <xref:System.AppDomain.ProcessExit?displayProperty=fullName> event. That handler would ensure <xref:System.IDisposable.Dispose?displayProperty=nameWithType> has been called for all objects that require cleanup before application exit. Because you can't call *Finalize* directly, and you can't guarantee the garbage collector calls all finalizers before exit, you must use `Dispose` to ensure resources are freed.
+ If you need to perform cleanup reliably when an application exist, register a handler for the <xref:System.AppDomain.ProcessExit?displayProperty=fullName> event. That handler would ensure <xref:System.IDisposable.Dispose?displayProperty=nameWithType> (or, <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType>) has been called for all objects that require cleanup before application exit. Because you can't call *Finalize* directly, and you can't guarantee the garbage collector calls all finalizers before exit, you must use `Dispose` or `DisposeAsync` to ensure resources are freed.
 
 ## Using finalizers to release resources
 
@@ -71,6 +69,7 @@ For more information about cleaning up resources, see the following articles:
 
 - [Cleaning Up Unmanaged Resources](../../../standard/garbage-collection/unmanaged.md)
 - [Implementing a Dispose Method](../../../standard/garbage-collection/implementing-dispose.md)
+- [Implementing a Dispose Method](../../../standard/garbage-collection/implementing-disposeasync.md)
 - [using Statement](../../language-reference/keywords/using-statement.md)
 
 ## Example

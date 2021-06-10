@@ -465,7 +465,7 @@ If you need to make a converter that modifies the behavior of an existing built-
 * [Ignore properties](system-text-json-ignore-properties.md)
 * [Allow invalid JSON](system-text-json-invalid-json.md)
 * [Handle overflow JSON or use JsonElement or JsonNode](system-text-json-handle-overflow.md)
-* [Preserve references](system-text-json-preserve-references.md)
+* [Preserve references and handle circular references](system-text-json-preserve-references.md)
 * [Immutable types and non-public accessors](system-text-json-immutability.md)
 * [Polymorphic serialization](system-text-json-polymorphism.md)
 * [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)

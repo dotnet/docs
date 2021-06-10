@@ -1,6 +1,6 @@
 ---
-title: How to preserve references with System.Text.Json
-description: "Learn how to preserve references and handle circular references while serializing to and deserializing from JSON in .NET."
+title: How to preserve references in System.Text.Json
+description: "Learn how to preserve references and handle or ignore circular references while using System.Text.Json to serialize and deserialize JSON in .NET."
 ms.date: 01/12/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
@@ -15,7 +15,11 @@ helpviewer_keywords:
 ms.topic: how-to
 ---
 
-# How to preserve references and handle or ignore circular references with System.Text.Json
+# How to preserve references and handle or ignore circular references in System.Text.Json
+
+This article shows how to preserve references and handle or ignore circular references while using System.Text.Json to serialize and deserialize JSON in .NET
+
+## Preserve references and handle circular references
 
 ::: zone pivot="dotnet-5-0,dotnet-6-0"
 
@@ -44,7 +48,7 @@ For more information about how references are serialized and deserialized, see <
 
 The <xref:System.Text.Json.Serialization.ReferenceResolver> class defines the behavior of preserving references on serialization and deserialization. Create a derived class to specify custom behavior. For an example, see [GuidReferenceResolver](https://github.com/dotnet/docs/blob/9d5e88edbd7f12be463775ffebbf07ac8415fe18/docs/standard/serialization/snippets/system-text-json-how-to-5-0/csharp/GuidReferenceResolverExample.cs).
 
-## Persist reference metadata across multiple serialization and deserialization calls
+### Persist reference metadata across multiple serialization and deserialization calls
 
 By default, reference data is only cached for each call to <xref:System.Text.Json.JsonSerializer.Serialize%2A> or <xref:System.Text.Json.JsonSerializer.Deserialize%2A>. To persist references from one `Serialize`/`Deserialize` call to another one, root the <xref:System.Text.Json.Serialization.ReferenceResolver> instance in the call site of `Serialize`/`Deserialize`. The following code shows an example for this scenario:
 

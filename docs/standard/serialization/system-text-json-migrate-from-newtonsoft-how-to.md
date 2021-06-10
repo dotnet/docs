@@ -835,7 +835,7 @@ The decision to exclude `TypeNameHandling.All`-equivalent functionality from `Sy
 * [Ignore properties](system-text-json-ignore-properties.md)
 * [Allow invalid JSON](system-text-json-invalid-json.md)
 * [Handle overflow JSON or use JsonElement or JsonNode](system-text-json-handle-overflow.md)
-* [Preserve references](system-text-json-preserve-references.md)
+* [Preserve references and handle circular references](system-text-json-preserve-references.md)
 * [Immutable types and non-public accessors](system-text-json-immutability.md)
 * [Polymorphic serialization](system-text-json-polymorphism.md)
 * [Customize character encoding](system-text-json-character-encoding.md)

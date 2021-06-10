@@ -13,9 +13,9 @@ class Program
 {
    static void Main()
    {
-      var destroyer = new Destroyer();
-      destroyer = null;
-      GC.Collect();
-      Console.WriteLine("Exiting...");
-   }
+        var destroyer = new Destroyer();
+        destroyer = null;
+        GC.GetTotalMemory(forceFullCollection: true);
+        Console.WriteLine("Exiting...");
+    }
 }

@@ -16,7 +16,7 @@ ms.topic: how-to
 
 # How to handle overflow JSON with System.Text.Json
 
-In this article, you will learn how to handle overflow JSON with the `System.Text.Json` namespace.
+This article shows how to handle overflow JSON with the [`System.Text.Json`](xref:System.Text.Json) namespace.
 
 ## Handle overflow JSON
 
@@ -49,16 +49,14 @@ If you deserialize the JSON shown into the type shown, the `DatesAvailable` and 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithExtensionData":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFWithExtensionData":::
 
-When you deserialize the JSON shown earlier into this sample type, the extra data becomes key-value pairs of the `ExtensionData` property:
+The following table shows the result of deserializing the JSON shown earlier into this sample type. The extra data becomes key-value pairs of the `ExtensionData` property:
 
 | Property | Value | Notes |
 |--|--|--|
 | `Date` | `"8/1/2019 12:00:00 AM -07:00"` |  |
 | `TemperatureCelsius` | `0` | Case-sensitive mismatch (`temperatureCelsius` in the JSON), so the property isn't set. |
 | `Summary` | `"Hot"` |  |
-| `ExtensionData` | `temperatureCelsius: 25` | Since the case didn't match, this JSON property is an extra and becomes a key-value pair in the dictionary. |
-| `DatesAvailable` | `[ "8/1/2019 12:00:00 AM -07:00", "8/2/2019 12:00:00 AM -07:00" ]` | Extra property from the JSON becomes a key-value pair, with an array as the value object. |
-| `SummaryWords` | `[ "Cool", "Windy", "Humid" ]` | Extra property from the JSON becomes a key-value pair, with an array as the value object. |
+| `ExtensionData` | `"temperatureCelsius": 25,`<br>`"DatesAvailable": ["2019-08-01T00:00:00-07:00","2019-08-02T00:00:00-07:00"],`<br>`"SummaryWords": ["Cool","Windy","Humid"]`| Since the case didn't match, `temperatureCelsius` is an extra and becomes a key-value pair in the dictionary. <br>Each extra array from the JSON becomes a key-value pair, with an array as the value object.|
 
 When the target object is serialized, the extension data key value pairs become JSON properties just as they were in the incoming JSON:
 
@@ -81,6 +79,16 @@ When the target object is serialized, the extension data key value pairs become 
 ```
 
 Notice that the `ExtensionData` property name doesn't appear in the JSON. This behavior lets the JSON make a round trip without losing any extra data that otherwise wouldn't be deserialized.
+
+The following example shows a round trip from JSON to a deserialized object and back to JSON:
+
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripExtensionData.cs" highlight="13-14":::
+
+## Deserialize into JsonElement
+
+If you just want to be flexible about what JSON to accept for a particular property, an alternative is to deserialize into <xref:System.Text.Json.JsonElement>. Any valid JSON property can be deserialized into `JsonElement`. The following example shows a round trip from JSON and back to JSON for a class that includes properties of type `JsonElement`.
+
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripJsonElement.cs" highlight="11-12":::
 
 ## See also
 

@@ -1,38 +1,67 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace SerializeIgnoreCycles
 {
-    public class WeatherForecast
+    public class Employee
     {
-        public DateTimeOffset Date { get; set; }
-        public int TemperatureCelsius { get; set; }
-        public string Summary { get; set; }
-        public object NextDay { get; set; }
+        public string Name { get; set; }
+        public Employee Manager { get; set; }
+        public List<Employee> DirectReports { get; set; }
     }
+
     public class Program
     {
         public static void Main()
         {
-            WeatherForecast weatherForecast = new WeatherForecast() 
-                { Date = DateTimeOffset.UtcNow, TemperatureCelsius = 20, Summary = "Mild" };
-            weatherForecast.NextDay = weatherForecast;
-
-            var serializeOptions = new JsonSerializerOptions
+            Employee tyler = new()
             {
-                WriteIndented = true,
-                ReferenceHandler = ReferenceHandler.IgnoreCycles
+                Name = "Tyler Stein"
             };
-            string jsonString = JsonSerializer.Serialize(weatherForecast, serializeOptions);
-            Console.WriteLine(jsonString);
+
+            Employee adrian = new()
+            {
+                Name = "Adrian King"
+            };
+
+            tyler.DirectReports = new List<Employee> { adrian };
+            adrian.Manager = tyler;
+
+            JsonSerializerOptions options = new()
+            {
+                ReferenceHandler = ReferenceHandler.IgnoreCycles,
+                WriteIndented = true
+            };
+
+            string tylerJson = JsonSerializer.Serialize(tyler, options);
+            Console.WriteLine($"Tyler serialized:\n{tylerJson}");
+
+            Employee tylerDeserialized =
+                JsonSerializer.Deserialize<Employee>(tylerJson, options);
+
+            Console.WriteLine(
+                "Tyler is manager of Tyler's first direct report: ");
+            Console.WriteLine(
+                tylerDeserialized.DirectReports[0].Manager == tylerDeserialized);
         }
     }
 }
-// sample output:
+
+// Produces output like the following example:
+//
+//Tyler serialized:
 //{
-//  "Date": "2021-06-10T21:49:03.8612887+00:00",
-//  "TemperatureCelsius": 20,
-//  "Summary": "Mild",
-//  "NextDay": null
+//  "Name": "Tyler Stein",
+//  "Manager": null,
+//  "DirectReports": [
+//    {
+//      "Name": "Adrian King",
+//      "Manager": null,
+//      "DirectReports": null
+//    }
+//  ]
 //}
+//Tyler is manager of Tyler 's first direct report:
+//False

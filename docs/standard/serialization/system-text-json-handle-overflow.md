@@ -1,6 +1,6 @@
 ---
 title: How to handle overflow JSON or use JsonElement or JsonNode in System.Text.Json
-description: "Learn how to handle overflow JSON or use JsonElement or JsonNode while using System.Text.Json to serialize to and deserialize from JSON in .NET."
+description: "Learn how to handle overflow JSON or use JsonElement or JsonNode while using System.Text.Json to serialize and deserialize JSON in .NET."
 ms.date: 11/30/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
@@ -15,9 +15,9 @@ helpviewer_keywords:
 ms.topic: how-to
 ---
 
-# How to handle overflow JSON or use JsonElement or JsonNode with System.Text.Json
+# How to handle overflow JSON or use JsonElement or JsonNode in System.Text.Json
 
-This article shows how to handle overflow JSON with the [`System.Text.Json`](xref:System.Text.Json) namespace. The article also shows another alternative that is available for scenarios where the target type might not perfectly match the JSON being deserialized: deserialize into `JsonElement` or `JsonNode`.
+This article shows how to handle overflow JSON with the [`System.Text.Json`](xref:System.Text.Json) namespace. It also shows how to deserialize into `JsonElement` or `JsonNode`, as an alternative for other scenarios where the target type might not perfectly match all of the JSON being deserialized.
 
 ## Handle overflow JSON
 

@@ -352,9 +352,25 @@ By default, `Newtonsoft.Json` serializes by value. For example, if an object con
 ::: zone pivot="dotnet-5-0,dotnet-6-0"
 To preserve references and handle circular references in <xref:System.Text.Json>, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A?displayProperty=nameWithType> to <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>. The `ReferenceHandler.Preserve` setting is equivalent to `PreserveReferencesHandling` = `PreserveReferencesHandling.All` in `Newtonsoft.Json`.
 
+::: zone-end
+::: zone pivot="dotnet-6-0"
+The `ReferenceHandler.IgnoreCycles` option has behavior similar to Newtonsoft.Json `ReferenceLoopHandling.Ignore`. One difference is that the System.Text.Json implementation replaces reference loops with the `null` JSON token instead of ignoring the object reference. For more information, see [Ignore circular references](system-text-json-preserve-references.md#ignore-circular-references).
+::: zone-end
+::: zone pivot="dotnet-5-0,dotnet-6-0"
+
 Like the Newtonsoft.Json [ReferenceResolver](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonSerializer_ReferenceResolver.htm), the <xref:System.Text.Json.Serialization.ReferenceResolver?displayProperty=fullName> class defines the behavior of preserving references on serialization and deserialization. Create a derived class to specify custom behavior. For an example, see [GuidReferenceResolver](https://github.com/dotnet/docs/blob/9d5e88edbd7f12be463775ffebbf07ac8415fe18/docs/standard/serialization/snippets/system-text-json-how-to-5-0/csharp/GuidReferenceResolverExample.cs).
 
 Some related `Newtonsoft.Json` features are not supported:
+
+::: zone-end
+::: zone pivot="dotnet-6-0"
+
+* [JsonPropertyAttribute.IsReference](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonPropertyAttribute_IsReference.htm)
+* [JsonPropertyAttribute.ReferenceLoopHandling](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonPropertyAttribute_ReferenceLoopHandling.htm)
+
+For more information, see [Preserve references and handle circular references](system-text-json-preserve-references.md).
+::: zone-end
+::: zone pivot="dotnet-5-0"
 
 * [JsonPropertyAttribute.IsReference](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonPropertyAttribute_IsReference.htm)
 * [JsonPropertyAttribute.ReferenceLoopHandling](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonPropertyAttribute_ReferenceLoopHandling.htm)

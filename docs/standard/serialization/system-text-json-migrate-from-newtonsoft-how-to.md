@@ -718,6 +718,10 @@ The <xref:System.Text.Json> DOM can't add, remove, or modify JSON elements. It's
 * To modify an existing `JsonDocument`, use it to write JSON text, making changes while you write, and parse the output from that to make a new `JsonDocument`.
 * To merge existing JSON documents, equivalent to the `JObject.Merge` or `JContainer.Merge` APIs from `Newtonsoft.Json`, see [this GitHub issue](https://github.com/dotnet/corefx/issues/42466#issuecomment-570475853).
 
+:::zone pivot="dotnet-6-0"
+Documentation for mutable DOM support is being developed. Until it's added, see the [.NET 6 Preview 4 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-4/#system-text-json-writable-dom-feature).
+:::zone-end
+
 ### JsonElement is a union struct
 
 `JsonDocument` exposes the `RootElement` as a property of type <xref:System.Text.Json.JsonElement>, which is a union, struct type that encompasses any JSON element. `Newtonsoft.Json` uses dedicated hierarchical types like `JObject`,`JArray`, `JToken`, and so forth. `JsonElement` is what you can search and enumerate over, and you can use `JsonElement` to materialize JSON elements into .NET types.

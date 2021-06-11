@@ -349,7 +349,7 @@ The [Dapr Azure Key Vault secret store documentation](https://docs.dapr.io/opera
 
 #### Use Key Vault when running in self-hosted mode
 
-Consuming Azure Key Vault in Dapr self-hosted mode requires the following configuration file:
+Exposing Azure Key Vault in Dapr self-hosted mode requires the following component configuration file:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
@@ -371,7 +371,7 @@ spec:
     value : "azurekv-spn-cert.pfx"
 ```
 
-The secret store type is `secretstores.azure.keyvault`. The `metadata` element to configure access to Key Vault requires the following properties:
+The secret store type is `secretstores.azure.keyvault`. The `metadata` element provides access to the Key Vault with the following properties:
 
 - The `vaultName` contains the name of the Azure Key Vault.
 - The `spnTenantId` contains the *tenant ID* of the service principal used to authenticate against the Key Vault.
@@ -471,11 +471,11 @@ In Dapr Traffic Control sample app, the secrets management building block is use
 
 **Figure 10-2**. Secrets management architecture.
 
-The FineCollection service uses an SMTP output binding for sending an email (see the [Bindings](bindings.md) chapter). It consumes the secrets management building block to retrieve credentials to connect to the SMTP server. To  calculate the fine for a speeding violation, the service uses a fictitious FineCalculator component that requires a license key. It retrieves this license key from the secrets management building block.
+The FineCollection service uses an SMTP output binding for sending emails (see the [Bindings](bindings.md) chapter). The email component file consumes the secrets management building block to retrieve credentials to connect to the SMTP server. To calculate the fine for a speeding violation, the service uses a fictitious FineCalculator component that requires a license key. It retrieves this license key from the secrets management building block.
 
-The TrafficControl service uses the state management building block for storing vehicle information in a Redis state store (see the [State management](state-management.md) chapter). It uses the secrets management building block for retrieving the credentials to connect to the Redis server.
+The TrafficControl service stores vehicle information in a Redis state store (see the [State management](state-management.md) chapter). It uses the secrets management building block for retrieving credentials to connect to the Redis server.
 
-Because the Traffic Control sample application can run in self hosted mode and in Kubernetes, there are 2 ways of specifying the secrets:
+Because the Traffic Control sample application can run in self-hosted mode or in Kubernetes, there are two ways for specifying secrets:
 
 - A local JSON file
 - A Kubernetes secret
@@ -520,9 +520,9 @@ The file describes a secrets management component entitled `trafficcontrol-secre
 }
 ```
 
-Note how the Redis server is used without a password. To connect to the SMTP server, the credentials are `_username` and `_password`. The license key for the FineCalculator license key is just a randomly generated string.
+Note how the Redis server is used without a password. To connect to the SMTP server, the credentials are `_username` and `_password`. The license key for the FineCalculator license key is a randomly generated string.
 
-While secrets are stored in nested levels, the secrets management building block flattens this hierarchy when the file is read. It uses a period as a level separator (as specified in the `nestedSeparator` field in the component configuration file). This construct enables you to reference secrets with a flattened name, for example: `smtp.user`.
+While secrets are stored at nested levels, the secrets management building block flattens this hierarchy when the file is read. It uses a period as a level separator (as specified in the `nestedSeparator` field in the component configuration file). This construct enables you to reference secrets with a flattened name, for example: `smtp.user`.
 
 When running in Kubernetes, the secrets are specified using the built-in Kubernetes secrets store. Examine the following `secrets.yaml` Kubernetes manifest file in the `k8s` folder:
 
@@ -611,7 +611,7 @@ scopes:
   - finecollectionservice
 ```
 
-Unlike the local secrets store, the Kubernetes store does not explicitly specify a secrets management component to use with the `auth` section. Instead, the default is the built-in Kubernetes secrets store.
+Unlike the local secrets store, the Kubernetes store doesn't explicitly specify a secrets management component to use with the `auth` section. Instead, the default is the built-in Kubernetes secrets store.
 
 ### Redis server credentials
 
@@ -654,7 +654,7 @@ public interface IFineCalculator
 }
 ```
 
-The `CalculateFine` method expects a string containing a `licenseKey` as its first argument. This key unlocks the third party component used by the implementation. To keep the example simple, the implementation hard-codes a series of `if` statements. You can find the implementation in the `HardCodedFineCalculator` class in the `DomainsServices` folder:
+The `CalculateFine` method expects a string containing a `licenseKey` as its first argument. This key unlocks the third-party component used by the implementation. To keep the example simple, the implementation hard-codes a series of `if` statements. You can find the implementation in the `HardCodedFineCalculator` class in the `DomainsServices` folder:
 
 ```csharp
     public class HardCodedFineCalculator : IFineCalculator
@@ -693,7 +693,7 @@ The `CalculateFine` method expects a string containing a `licenseKey` as its fir
     }
 ```
 
-The implementation does simulate a check on a hard-coded `licenseKey` that is passed in. The `CollectionController` of the FineCollection service must pass in a correct license key arument when it calls the `CalculateFine` method. It retrieves this license key using the Dapr secrets management building block which is exposed by the the Dapr client from the Dapr SDK for .NET. If you examine the constructor of the `CollectionController`, you can see the call:
+The implementation simulates a check on the `licenseKey` that is passed in. The `CollectionController` of the FineCollection service must pass in the correct license key argument when calling the `CalculateFine` method. It retrieves the license key from the Dapr secrets management building block that is exposed by the Dapr client in the Dapr SDK for .NET. If you examine the constructor of the `CollectionController`, you can see the call:
 
 ```c#
 // set finecalculator component license-key
@@ -716,9 +716,9 @@ if (_fineCalculatorLicenseKey == null)
 }
 ```
 
-The code determines whether the service is running in Kubernetes or self hosted mode. This check is necessary because a different secrets management component must be used in either situation. The name of the Dapr component is the first argument of the `GetSecretAsync` method. The second is the name of the secret. The `metadata` passed in as third argument contains the namespace that contains the secret. The value of the `finecalculator.licensekey` secret is stored in a private field for later use.
+The code determines whether the service is running in Kubernetes or self-hosted mode. This check is necessary because a different secrets management component must be used for each situation. The first argument of the `GetSecretAsync` method is the name of the Dapr component. The second argument is the name of the secret. The `metadata` passed in as the third argument specifies the namespace that contains the secret. The value of the `finecalculator.licensekey` secret is stored in a private field for later use.
 
-Using Dapr secrets management offers the several benefits:
+Using Dapr secrets management offers several benefits:
 
 1. No sensitive information is stored in code or application configuration files.
 2. No need to learn any new API for interacting with a secrets store.

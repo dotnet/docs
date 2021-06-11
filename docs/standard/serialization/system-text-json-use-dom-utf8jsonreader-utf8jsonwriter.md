@@ -1,5 +1,5 @@
 ---
-title: How to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
+title: How to use JsonDocument, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
 description: "Learn how to use JsonDocument, JsonElement, Utf8JsonReader, and Utf8JsonWriter."
 ms.date: 01/19/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
@@ -15,7 +15,7 @@ helpviewer_keywords:
 ms.topic: how-to
 ---
 
-# How to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
+# How to use JsonDocument, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
 
 :::zone pivot="dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
 <xref:System.Text.Json.JsonDocument> provides the ability to build a read-only Document Object Model (DOM) by using `Utf8JsonReader`. The DOM provides random access to data in a JSON payload. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides array and object enumerators along with APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property.

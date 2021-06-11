@@ -17,7 +17,7 @@ The sample application for this tutorial may be cloned or downloaded from the re
 git clone https://github.com/azure-samples/dotnetcore-sqldb-tutorial
 ```
 
-## Step 1 - Create Azure Storage resources
+## 1 - Create Azure Storage resources
 
 You first need to create a resource group and storage account in Azure for the sample application to use.
 
@@ -40,7 +40,7 @@ az storage account create `
     --location $LOCATION
 ```
 
-## Step 2 - Get Storage Connection String
+## 2 - Get Storage connection string
 
 To access the storage account, your app will need the connection string for the storage account.  Use the Azure CLI to retrieve the connection string.
 
@@ -81,7 +81,7 @@ dotnet user-secrets set "ConnectionStrings:AzureStorage" "<storage connection st
 
 ---
 
-## Step 3 - Install the Azure SDK package
+## 3 - Install Azure SDK package
 
 To access Azure Blob Storage from a .NET application, you need to install the [Azure.Storage.Blobs package from NuGet](https://www.nuget.org/packages/Azure.Storage.Blobs).
 
@@ -99,7 +99,7 @@ dotnet add package Azure.Storage.Blobs
 
 ---
 
-## Step 5 - Configure the Azure Storage Client in Startup.cs
+## 4 - Configure the Azure Storage client in Startup.cs
 
 The Azure SDK communicates with Azure using client objects to execute different operations against Azure.  The `BlobServiceClient` object is the top level object used to communicate with a storage account.  An application will typically create a single `BlobServiceClient` object per storage account to be used throughout the application.  It is recommended to use dependency injection and register the `BlobServiceClient` object as a singleton to accomplish this.
 
@@ -120,7 +120,7 @@ In the Startup.cs file of the application, edit the ConfigureServices() method t
 
 ```
 
-## Step 6 - Implement Azure Storage Operations in Code
+## 5 - Implement Azure Storage operations in code
 
 All storage operations are implemented in the `StorageDemoService` class located in the Services folder in the sample application.  At the top of this class, add a member variable for the `BlobServiceClient` object and also add a constructor to allow the `BlobServiceClient` object to be injected into this class.
 
@@ -240,7 +240,7 @@ All storage operations are implemented in the `StorageDemoService` class located
     }
 ```
 
-## Step 7 - Run the code
+## 6 - Run the code
 
 ## Clean up resources
 

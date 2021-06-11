@@ -53,7 +53,7 @@ az storage account show-connection-string \
 
 The connection string for your storage account is considered an app secret and must be protected like any other app secret or password.  This example uses the Secret Manager tool to store the connection string during development and make it available to the application.  The Secret Manager tool can be accessed from either Visual Studio or the .NET CLI.
 
-# [Visual Studio](#tab/visual-studio)
+### [Visual Studio](#tab/visual-studio)
 
 To open the Secret Manager tool from Visual Studio, right click on the project and select **Manage User Secrets** from the context menu.  This will open the *secrets.json" file for the project.  Replace the contents of the file with the JSON below, substituting in your storage connection string.
 
@@ -65,7 +65,7 @@ To open the Secret Manager tool from Visual Studio, right click on the project a
 }
 ```
 
-# [.NET Core CLI](#tab/netcore-cli)
+### [.NET Core CLI](#tab/netcore-cli)
 
 To use the Secret Manager, you must first initialize it for your project using the `dotnet user-secrets init` command.
 
@@ -85,13 +85,13 @@ dotnet user-secrets set "ConnectionStrings:AzureStorage" "<storage connection st
 
 To access Azure Blob Storage from a .NET application, you need to install the [Azure.Storage.Blobs package from NuGet](https://www.nuget.org/packages/Azure.Storage.Blobs).
 
-# [Visual Studio](#tab/visual-studio)
+### [Visual Studio](#tab/visual-studio)
 
 ```PowerShell
 Install-Package Azure.Storage.Blobs
 ```
 
-# [.NET Core CLI](#tab/netcore-cli)
+### [.NET Core CLI](#tab/netcore-cli)
 
 ```dotnetcli
 dotnet add package Azure.Storage.Blobs

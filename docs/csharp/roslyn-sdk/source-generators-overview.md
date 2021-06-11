@@ -23,7 +23,7 @@ When combined, these two things are what make Source Generators so useful. You c
 
 Source generators run as a phase of compilation visualized below:
 
-![Source Generator Visualization](media/source-generators/source-generator-visualization.png)
+:::image type="content" source="media/source-generators/source-generator-visualization.png" alt-text="Graphic describing the different parts of source generation":::
 
 A Source Generator is a .NET Standard 2.0 assembly that is loaded by the compiler along with any analyzers. It is usable in environments where .NET Standard components can be loaded and run.
 

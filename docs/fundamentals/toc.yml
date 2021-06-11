@@ -1802,17 +1802,17 @@ items:
           href: ../standard/serialization/system-text-json-ignore-properties.md
         - name: Allow invalid JSON
           href: ../standard/serialization/system-text-json-invalid-json.md
-        - name: Overflow JSON, JsonElement, JsonNode
+        - name: Handle overflow JSON, use JsonElement or JsonNode
           href: ../standard/serialization/system-text-json-handle-overflow.md
         - name: Preserve references, handle circular references
           href: ../standard/serialization/system-text-json-preserve-references.md
-        - name: Immutable types and non-public accessors
+        - name: Deserialize to immutable types, non-public accessors
           href: ../standard/serialization/system-text-json-immutability.md
         - name: Polymorphic serialization
           href: ../standard/serialization/system-text-json-polymorphism.md
-      - name: How to use JsonDocument, Utf8JsonReader, Utf8JsonWriter
+      - name: Use JsonDocument, Utf8JsonReader, Utf8JsonWriter
         href: ../standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md
-      - name: How to migrate from Newtonsoft.Json
+      - name: Migrate from Newtonsoft.Json
         href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
       - name: Supported collection types
         href: ../standard/serialization/system-text-json-supported-collection-types.md
@@ -1820,7 +1820,7 @@ items:
         items:
         - name: Customize character encoding
           href: ../standard/serialization/system-text-json-character-encoding.md
-        - name: Custom converters
+        - name: Write custom converters
           href: ../standard/serialization/system-text-json-converters-how-to.md
     - name: Binary serialization
       items:

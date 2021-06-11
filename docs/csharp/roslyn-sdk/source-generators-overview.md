@@ -41,7 +41,7 @@ Another capability Source Generators can offer is obviating the use of some “s
 
 ## Getting started with Source Generators
 
-In this guide, you'll explore the creation of a source generator using the ISourceGenerator API.
+In this guide, you'll explore the creation of a source generator using the <xref:Microsoft.CodeAnalysis.ISourceGenerator> API.
 
 1. Create a standard .NET Core console application.
 

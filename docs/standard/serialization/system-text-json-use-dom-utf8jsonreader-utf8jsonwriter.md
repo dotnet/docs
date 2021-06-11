@@ -3,6 +3,7 @@ title: How to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter in System.Tex
 description: "Learn how to use JsonDocument, JsonElement, Utf8JsonReader, and Utf8JsonWriter."
 ms.date: 01/19/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
+zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"

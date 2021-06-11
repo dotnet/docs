@@ -2459,7 +2459,9 @@ items:
   - name: General Information
     items:
     - name: About .NET
-      href: ../standard/choosing-core-framework-server.md
+      items:
+      - name: Choose between .NET 5 and .NET Framework for server apps
+        href: ../standard/choosing-core-framework-server.md
     - name: .NET Upgrade Assistant tool
       items:
       - name: Overview

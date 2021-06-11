@@ -85,7 +85,15 @@ Instead of handling circular references, you can ignore them. To ignore circular
 
 :::code language="csharp" source="snippets/system-text-json-how-to-6-0/csharp/SerializeIgnoreCycles.cs" highlight="25,37":::
 
-In the preceding example, `NextDay` is serialized as `null` to avoid the circular reference.
+In the preceding example, `NextDay` is serialized as `null` to avoid the circular reference. This behavior has the following advantages over <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A?displayProperty=nameWithType>:
+
+* It decreases payload size.
+* It creates JSON that is comprehensible for serializers other than System.Text.Json and Newtonsoft.Json.
+
+This behavior has the following disadvantages:
+
+* Silent loss of data.
+* Data can't make a round trip from JSON back to the source object.
 
 ::: zone-end
 

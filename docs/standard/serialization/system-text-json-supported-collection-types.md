@@ -19,7 +19,7 @@ This article gives an overview of which collections are supported for serializat
 * Derives from <xref:System.Collections.IEnumerable>.
 * Contains elements that are serializable.
 
-:::zone-pivot pivot="dotnet-6-0"
+:::zone pivot="dotnet-6-0"
 Documentation for <xref:System.Collections.Generic.IAsyncEnumerable%601> support is being developed. Until it's added, see the [.NET 6 Preview 4 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-4/#system-text-json-support-for-iasyncenumerable).
 :::zone-end
 

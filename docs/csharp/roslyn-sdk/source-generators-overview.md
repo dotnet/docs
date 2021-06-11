@@ -27,7 +27,7 @@ Source generators run as a phase of compilation visualized below:
 
 A Source Generator is a .NET Standard 2.0 assembly that is loaded by the compiler along with any analyzers. It is usable in environments where .NET Standard components can be loaded and run.
 
-## Example scenarios that can benefit from Source Generators
+## Example scenarios
 
 Today, there are three general approaches to inspecting user code and generating information or code based on that analysis used by technologies today: runtime reflection, IL weaving, and juggling MSBuild tasks. Source Generators can be an improvement over each approach.
 Runtime reflection is a powerful technology that was added to .NET a long time ago. There are countless scenarios for using it. A very common scenario is to perform some analysis of user code when an app starts up and use that data to generate things.

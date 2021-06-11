@@ -9,7 +9,7 @@ ms.custom: mvc, vs-dotnet, source-generators
 
 This article provides an overview of Source Generators that ships as part of the .NET Compiler Platform ("Roslyn") SDK. Source Generators is a C# compiler feature that lets C# developers inspect user code as it is being compiled and generates new C# source files on the fly that are added to the user's compilation.
 
-## What is a Source Generator?
+## What is a Source Generator
 
 A Source Generator is a piece of code that runs during compilation and can inspect your program to produce additional source files that are compiled together with the rest of your code.
 

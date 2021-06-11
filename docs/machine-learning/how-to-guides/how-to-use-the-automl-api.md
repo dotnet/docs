@@ -158,7 +158,7 @@ Data pre-processing happens by default and the following steps are performed aut
 
 Define the criteria to complete your task:
 
-1. Exit after a length of time - Using `MaxExperimentTimeInSeconds` in your experiment settings you can define how long in seconds that an task should continue to run.
+1. Exit after a length of time - Using `MaxExperimentTimeInSeconds` in your experiment settings you can define how long in seconds that a task should continue to run.
 
 1. Exit on a cancellation token -  You can use a cancellation token that lets you cancel the task before it is scheduled to finish.
 

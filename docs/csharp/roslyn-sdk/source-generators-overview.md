@@ -7,7 +7,7 @@ ms.custom: mvc, vs-dotnet, source-generators
 ---
 # Source Generators
 
-Source Generators is a C# compiler feature that lets C# developers inspect user code as it is being compiled and generates new C# source files on the fly that are added to the user's compilation.
+This article provides an overview of Source Generators that ships as part of the .NET Compiler Platform ("Roslyn") SDK. Source Generators is a C# compiler feature that lets C# developers inspect user code as it is being compiled and generates new C# source files on the fly that are added to the user's compilation.
 
 ## What is a Source Generator?
 
@@ -59,7 +59,7 @@ In this guide, you'll explore the creation of a source generator using the ISour
         }
     ```
 
-> [!NOTE] You can run this sample as-is, but nothing will happen yet.
+    > [!NOTE] You can run this sample as-is, but nothing will happen yet.
 
 3. Next, we'll create a source generator that will fill in the contents of the HelloFrom method.
 
@@ -147,7 +147,7 @@ In this guide, you'll explore the creation of a source generator using the ISour
 
 8. Now, when you run the console application, you should see that the generated code gets run and prints to the screen.
 
-> [!NOTE] You will currently need to restart Visual Studio to see IntelliSense and get rid of errors with the early tooling experience.
+    > [!NOTE] You will currently need to restart Visual Studio to see IntelliSense and get rid of errors with the early tooling experience.
 
 ## Next steps
 

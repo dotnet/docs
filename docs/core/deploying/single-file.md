@@ -58,7 +58,8 @@ when the single file application is run.
 
 Specifying `IncludeAllContentForSelfExtract` will extract all files before running the executable. This preserves the original .NET Core single-file deployment behavior.
 
-*Note*: If extraction is used and the app is running on Linux or MacOS, either `$HOME` or `$DOTNET_BUNDLE_EXTRACT_BASE_DIR` must be set to a path. If `$HOME` is set, the files will be extracted in a directory under `$HOME/.net`, while if `$DOTNET_BUNDLE_EXTRACT_BASE_DIR` is set, it will take precedence and files will be created in directories below that path. To prevent tampering, these directories should not be writable by users or services with different privileges (*not* `/tmp` or `/var/tmp` on most systems).
+> [!NOTE]
+> If extraction is used and the app is running on Linux or MacOS, either `$HOME` or `$DOTNET_BUNDLE_EXTRACT_BASE_DIR` must be set to a path. If `$HOME` is set, the files will be extracted in a directory under _$HOME/.net_, while if `$DOTNET_BUNDLE_EXTRACT_BASE_DIR` is set, it will take precedence and files will be created in directories below that path. To prevent tampering, these directories should not be writable by users or services with different privileges, **not** _/tmp_ or _/var/tmp_ on most systems).
 
 ## Other considerations
 

@@ -21,22 +21,22 @@ All collections are based on the <xref:System.Collections.ICollection> or <xref:
 
 In collections based on <xref:System.Collections.IList> or directly on <xref:System.Collections.ICollection>, every element contains only a value. These types include:
 
-- <xref:System.Array>
-- <xref:System.Collections.ArrayList>
-- <xref:System.Collections.Generic.List%601> 
-- <xref:System.Collections.Queue>
-- <xref:System.Collections.Concurrent.ConcurrentQueue%601>
-- <xref:System.Collections.Stack>
-- <xref:System.Collections.Concurrent.ConcurrentStack%601>
-- <xref:System.Collections.Generic.LinkedList%601>
+- <xref:System.Array>.
+- <xref:System.Collections.ArrayList>.
+- <xref:System.Collections.Generic.List%601>.
+- <xref:System.Collections.Queue>.
+- <xref:System.Collections.Concurrent.ConcurrentQueue%601>.
+- <xref:System.Collections.Stack>.
+- <xref:System.Collections.Concurrent.ConcurrentStack%601>.
+- <xref:System.Collections.Generic.LinkedList%601>.
 
 In collections based on the <xref:System.Collections.IDictionary> interface, every element contains both a key and a value. These types include:
 
-- <xref:System.Collections.Hashtable> 
-- <xref:System.Collections.SortedList>  
-- <xref:System.Collections.Generic.SortedList%602> 
-- <xref:System.Collections.Generic.Dictionary%602>  
-- <xref:System.Collections.Concurrent.ConcurrentDictionary%602>  
+- <xref:System.Collections.Hashtable>. 
+- <xref:System.Collections.SortedList>. 
+- <xref:System.Collections.Generic.SortedList%602>. 
+- <xref:System.Collections.Generic.Dictionary%602>.  
+- <xref:System.Collections.Concurrent.ConcurrentDictionary%602>.  
 
 The <xref:System.Collections.ObjectModel.KeyedCollection%602> class is unique because it is a list of values with keys embedded within the values. As a result, it behaves both like a list and like a dictionary.  
 
@@ -47,9 +47,9 @@ Generic collections are the best solution to strong typing. For example, adding 
  
 However, if your language does not support generics, the <xref:System.Collections> namespace includes abstract base classes that you can extend to create collection classes that are strongly typed. These base classes include:
 
-- <xref:System.Collections.CollectionBase>
-- <xref:System.Collections.ReadOnlyCollectionBase>
-- <xref:System.Collections.DictionaryBase>
+- <xref:System.Collections.CollectionBase>.
+- <xref:System.Collections.ReadOnlyCollectionBase>.
+- <xref:System.Collections.DictionaryBase>.
 
 ## How collections vary
   
@@ -57,10 +57,9 @@ Collections vary in how they store, sort, and compare elements, and how they per
 
 All collections use zero-based indexes except <xref:System.Array>, which allows arrays that are not zero-based.  
 
-### Sorting
-You cannot sort the <xref:System.Collections.Hashtable> or the <xref:System.Collections.Generic.Dictionary%602> classes. The <xref:System.Collections.SortedList> class and the generic <xref:System.Collections.Generic.SortedList%602> provide sorted versions of these collections.
-
 The <xref:System.Collections.Queue> and <xref:System.Collections.Generic.Queue%601> classes provide first-in-first-out lists. The <xref:System.Collections.Stack> and <xref:System.Collections.Generic.Stack%601> classes provide last-in-first-out lists. 
+
+The <xref:System.Collections.SortedList> class and the <xref:System.Collections.Generic.SortedList%602> generic class provide sorted versions of the <xref:System.Collections.Hashtable> class and the <xref:System.Collections.Generic.Dictionary%602> generic class.
  
 ### Accessing elements
 
@@ -72,9 +71,9 @@ You can access the elements of a <xref:System.Collections.SortedList> or a <xref
   
 The LINQ to Objects feature provides a common pattern for accessing in-memory objects of any type that implements <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601>. LINQ queries have several benefits over standard constructs like `foreach` loops:
 
-- They are concise and easier to understand
+- They are concise and easier to understand.
 - They can filter, order, and group data.
-- They can improve performance
+- They can improve performance.
   
 For more information, see [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md), and [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md).  
   

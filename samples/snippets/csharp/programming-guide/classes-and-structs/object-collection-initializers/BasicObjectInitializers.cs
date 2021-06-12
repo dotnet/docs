@@ -141,7 +141,7 @@ namespace object_collection_initializers
                 owner.Cats.Add(new Cat{ Name = "Sylvester", Age=8 });
                 owner.Cats.Add(new Cat{ Name = "Whiskers", Age=2 });
                 owner.Cats.Add(new Cat{ Name = "Sasha", Age=14 });
-                // <SnippetReadOnlyPropertyCollectionInitializerTranslation>
+                // </SnippetReadOnlyPropertyCollectionInitializerTranslation>
             }
 
             InitializationSample.Main();

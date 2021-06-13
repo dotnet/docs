@@ -2,7 +2,7 @@
 title: The Dapr secrets management building block
 description: A description of the secrets management building block, its features, benefits, and how to apply it
 author: edwinvw
-ms.date: 05/31/2021
+ms.date: 06/10/2021
 ---
 
 # The Dapr secrets management building block

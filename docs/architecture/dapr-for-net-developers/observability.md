@@ -56,6 +56,7 @@ Dapr uses the [W3C Trace Context](https://www.w3.org/TR/trace-context) to correl
 
 :::image type="content" source="./media/observability/w3c-trace-context.png" alt-text="W3C Trace Context example":::
 
+> [!NOTE]
 > The *trace context* is often referred to as a *correlation token* in microservice terminology.
 
 **Figure 10-2**. W3C Trace Context example.

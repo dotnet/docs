@@ -541,6 +541,7 @@ data:
 
 The component is also named `trafficcontrol-secrets`. Secrets are stored as Base64 encoded strings.
 
+> [!IMPORTANT]
 > Base64 representations *encode*, but do not *encrypt* data. Base64 isn't secure for production scenarios.
 
 The following paragraphs describe how secrets are used in the Traffic Control sample application.

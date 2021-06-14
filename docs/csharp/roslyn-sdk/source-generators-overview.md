@@ -9,8 +9,6 @@ ms.custom: mvc, vs-dotnet, source-generators
 
 This article provides an overview of Source Generators that ships as part of the .NET Compiler Platform ("Roslyn") SDK. Source Generators is a C# compiler feature that lets C# developers inspect user code as it is being compiled and generates new C# source files on the fly that are added to the user's compilation.
 
-## What is a Source Generator
-
 A Source Generator is a piece of code that runs during compilation and can inspect your program to produce additional source files that are compiled together with the rest of your code.
 
 A Source Generator is a new kind of component that C# developers can write that lets you do two major things:
@@ -48,14 +46,14 @@ In this guide, you'll explore the creation of a source generator using the <xref
 2. Replace the Program class with the following:
 
     ```csharp
-        partial class Program
+    partial class Program
+    {
+        static void Main(string[] args)
         {
-            static void Main(string[] args)
-            {
-                HelloFrom("Generated Code");
-            }
-            static partial void HelloFrom(string name);
+            HelloFrom("Generated Code");
         }
+        static partial void HelloFrom(string name);
+    }
     ```
 
     > [!NOTE]
@@ -106,13 +104,13 @@ In this guide, you'll explore the creation of a source generator using the <xref
 6. Replace the contents of the execute method, so that it looks like the following:
 
     ```csharp
-            public void Execute(GeneratorExecutionContext context)
-            {
-                // find the main method
-                var mainMethod = context.Compilation.GetEntryPoint(context.CancellationToken);
-    
-                // build up the source code
-                string source = $@"
+    public void Execute(GeneratorExecutionContext context)
+    {
+        // find the main method
+        var mainMethod = context.Compilation.GetEntryPoint(context.CancellationToken);
+
+        // build up the source code
+        string source = $@"
     using System;
     
     namespace {mainMethod.ContainingNamespace.Name} 
@@ -127,9 +125,9 @@ In this guide, you'll explore the creation of a source generator using the <xref
     }}
     
     ";
-                // add the source code to the compilation
-                context.AddSource("generatedSource", source);
-            }
+        // add the source code to the compilation
+        context.AddSource("generatedSource", source);
+    }
     ```
 
 7. We now have a functioning generator, but need to connect it to our console application. Edit the original console application project and add the following, replacing the project path with the one from the .NET Standard project you created above:

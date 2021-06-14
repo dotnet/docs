@@ -58,7 +58,8 @@ In this guide, you'll explore the creation of a source generator using the <xref
         }
     ```
 
-    > [!NOTE] You can run this sample as-is, but nothing will happen yet.
+    > [!NOTE]
+    > You can run this sample as-is, but nothing will happen yet.
 
 3. Next, we'll create a source generator that will fill in the contents of the HelloFrom method.
 

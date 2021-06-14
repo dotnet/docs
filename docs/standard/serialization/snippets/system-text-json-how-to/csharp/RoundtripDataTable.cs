@@ -24,13 +24,16 @@ namespace RoundtripDataTable
 
         public static void Main()
         {
+            // Serialize a List<T> object and display the JSON
             string jsonString = JsonSerializer.Serialize(weatherForecasts, new JsonSerializerOptions() { WriteIndented = true });
             Console.WriteLine(jsonString);
 
-            // <Deserialize>
+            // Deserialize to a DataTable
             var deserializeOptions = new JsonSerializerOptions();
             deserializeOptions.Converters.Add(new DataTableJsonConverter());
             var weatherForecastTable = JsonSerializer.Deserialize<DataTable>(jsonString, deserializeOptions);
+
+            // Display the DataTable contents
             foreach (DataRow row in weatherForecastTable.Rows)
             {
                 {
@@ -42,7 +45,7 @@ namespace RoundtripDataTable
                 }
             }
 
-            // <Serialize>
+            // Serialize the DataTable and display the JSON
             var serializeOptions = new JsonSerializerOptions();
             serializeOptions.WriteIndented = true;
             serializeOptions.Converters.Add(new DataTableJsonConverter());

@@ -17,57 +17,52 @@ ms.assetid: f5d4c6a4-0d7b-4944-a9fb-3b12d9ebfd55
 
 Collection types represent different ways to collect data, such as hash tables, queues, stacks, bags, dictionaries, and lists.
 
-All collections are based on the <xref:System.Collections.ICollection> or <xref:System.Collections.Generic.ICollection%601> interface, either directly or indirectly. <xref:System.Collections.IList> and <xref:System.Collections.IDictionary> and their generic counterparts all derive from these two interfaces. 
+All collections are based on the <xref:System.Collections.ICollection> or <xref:System.Collections.Generic.ICollection%601> interfaces, either directly or indirectly. <xref:System.Collections.IList> and <xref:System.Collections.IDictionary> and their generic counterparts all derive from these two interfaces. 
 
 In collections based on <xref:System.Collections.IList> or directly on <xref:System.Collections.ICollection>, every element contains only a value. These types include:
 
-- <xref:System.Array>.
-- <xref:System.Collections.ArrayList>.
-- <xref:System.Collections.Generic.List%601>.
-- <xref:System.Collections.Queue>.
-- <xref:System.Collections.Concurrent.ConcurrentQueue%601>.
-- <xref:System.Collections.Stack>.
-- <xref:System.Collections.Concurrent.ConcurrentStack%601>.
-- <xref:System.Collections.Generic.LinkedList%601>.
+- <xref:System.Array>
+- <xref:System.Collections.ArrayList>
+- <xref:System.Collections.Generic.List%601>
+- <xref:System.Collections.Queue>
+- <xref:System.Collections.Concurrent.ConcurrentQueue%601>
+- <xref:System.Collections.Stack>
+- <xref:System.Collections.Concurrent.ConcurrentStack%601>
+- <xref:System.Collections.Generic.LinkedList%601>
 
 In collections based on the <xref:System.Collections.IDictionary> interface, every element contains both a key and a value. These types include:
 
-- <xref:System.Collections.Hashtable>. 
-- <xref:System.Collections.SortedList>. 
-- <xref:System.Collections.Generic.SortedList%602>. 
-- <xref:System.Collections.Generic.Dictionary%602>.  
-- <xref:System.Collections.Concurrent.ConcurrentDictionary%602>.  
+- <xref:System.Collections.Hashtable>
+- <xref:System.Collections.SortedList>
+- <xref:System.Collections.Generic.SortedList%602>
+- <xref:System.Collections.Generic.Dictionary%602> 
+- <xref:System.Collections.Concurrent.ConcurrentDictionary%602>
 
 The <xref:System.Collections.ObjectModel.KeyedCollection%602> class is unique because it is a list of values with keys embedded within the values. As a result, it behaves both like a list and like a dictionary.  
 
 When you need efficient multi-threaded collection access, use the generic collections in the <xref:System.Collections.Concurrent> namespace.
 
-## Strong typing
-Generic collections are the best solution to strong typing. For example, adding any type other than an <xref:System.Int32> to a `List<Int32>` collection causes a compile-time error.
- 
-However, if your language does not support generics, the <xref:System.Collections> namespace includes abstract base classes that you can extend to create collection classes that are strongly typed. These base classes include:
+The <xref:System.Collections.Queue> and <xref:System.Collections.Generic.Queue%601> classes provide first-in-first-out lists. The <xref:System.Collections.Stack> and <xref:System.Collections.Generic.Stack%601> classes provide last-in-first-out lists.
 
-- <xref:System.Collections.CollectionBase>.
-- <xref:System.Collections.ReadOnlyCollectionBase>.
-- <xref:System.Collections.DictionaryBase>.
+## Strong typing
+
+Generic collections are the best solution to strong typing. For example, adding an element of any type other than an <xref:System.Int32> to a `List<Int32>` collection causes a compile-time error. However, if your language does not support generics, the <xref:System.Collections> namespace includes abstract base classes that you can extend to create collection classes that are strongly typed. These base classes include:
+
+- <xref:System.Collections.CollectionBase>
+- <xref:System.Collections.ReadOnlyCollectionBase>
+- <xref:System.Collections.DictionaryBase>
 
 ## How collections vary
   
 Collections vary in how they store, sort, and compare elements, and how they perform searches. 
 
-All collections use zero-based indexes except <xref:System.Array>, which allows arrays that are not zero-based.  
-
-The <xref:System.Collections.Queue> and <xref:System.Collections.Generic.Queue%601> classes provide first-in-first-out lists. The <xref:System.Collections.Stack> and <xref:System.Collections.Generic.Stack%601> classes provide last-in-first-out lists. 
-
 The <xref:System.Collections.SortedList> class and the <xref:System.Collections.Generic.SortedList%602> generic class provide sorted versions of the <xref:System.Collections.Hashtable> class and the <xref:System.Collections.Generic.Dictionary%602> generic class.
- 
-### Accessing elements
 
-You can only access the elements of a <xref:System.Collections.Hashtable> or a <xref:System.Collections.Generic.Dictionary%602> by the element's key. 
+All collections use zero-based indexes except <xref:System.Array>, which allows arrays that are not zero-based.
  
-You can access the elements of a <xref:System.Collections.SortedList> or a <xref:System.Collections.ObjectModel.KeyedCollection%602> by either the key or the element's index. 
+You can access the elements of a <xref:System.Collections.SortedList> or a <xref:System.Collections.ObjectModel.KeyedCollection%602> by either the key or the element's index. You can only access the elements of a <xref:System.Collections.Hashtable> or a <xref:System.Collections.Generic.Dictionary%602> by the element's key. 
  
-## Using LINQ with collection types
+## Use LINQ with collection types
   
 The LINQ to Objects feature provides a common pattern for accessing in-memory objects of any type that implements <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601>. LINQ queries have several benefits over standard constructs like `foreach` loops:
 
@@ -77,7 +72,7 @@ The LINQ to Objects feature provides a common pattern for accessing in-memory ob
   
 For more information, see [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md), and [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md).  
   
-## Related Topics  
+## Related topics  
   
 |Title|Description|  
 |-----------|-----------------|  

@@ -96,7 +96,7 @@ For more information on positional records, see [Positional syntax for property 
 
 ### Camel case
 
-Use camel casing ("camelCasing") when naming `private` or `internal` fields, and prefix them with `_`.
+Use camel casing ("camelCasing") when naming `private` or `internal` fields. It is also common to prefix them with `_`.
 
 ```csharp
 public class DataService
@@ -108,7 +108,7 @@ public class DataService
 > [!TIP]
 > When editing C# code that follows these naming conventions in an IDE that supports statement completion, typing `_` will show all of the object-scoped members.
 
-When working with `static` fields that are `private` or `internal`, use the `s_` prefix and for thread static use `t_`.
+When working with `static` fields that are `private` or `internal`, it is common to use the `s_` prefix (or `t_` if the field is thread static).
 
 ```csharp
 public class DataService
@@ -148,7 +148,7 @@ Good layout uses formatting to emphasize the structure of your code and to make 
 - Write only one declaration per line.
 - If continuation lines are not indented automatically, indent them one tab stop (four spaces).
 - Add at least one blank line between method definitions and property definitions.
-- Use parentheses to make clauses in an expression apparent, as shown in the following code.
+- It is recommended to use parentheses to make clauses in an expression apparent, as shown in the following code.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet2":::
 

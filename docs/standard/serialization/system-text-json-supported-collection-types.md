@@ -328,6 +328,10 @@ Supported types for the keys of `Dictionary` and `SortedList` types include the 
 
 ::: zone-end
 
+## System.Data namespace
+
+<xref:System.Data.DataSet>, <xref:System.Data.DataTable> and related types in the <xref:System.Data> namespace are not supported because they are not safe when populated with untrusted input. For information about security guidance for these types, see [Safety with regard to untrusted input](../../framework/data/adonet/dataset-datatable-dataview/security-guidance.md#safety-with-regard-to-untrusted-input). However, you can write a custom converter to support these types. For sample code that serializes and deserializes a `DataTable`, see [RoundtripDataTable.cs](https://github.com/dotnet/docs/blob/main/docs/standard/serialization/snippets/system-text-json-how-to/csharp/RoundtripDataTable.cs).
+
 ## See also
 
 * [System.Text.Json overview](system-text-json-overview.md)

@@ -387,7 +387,7 @@ To support a dictionary with an integer or some other type as the key in .NET Co
 
 <xref:System.Text.Json> doesn't provide built-in support for the following types:
 
-* <xref:System.Data.DataTable> and related types
+* <xref:System.Data.DataTable> and related types (for more information, see [Supported collection types](system-text-json-supported-collection-types.md#systemdata-namespace))
 ::: zone pivot="dotnet-5-0"
 * F# types, such as [discriminated unions](../../fsharp/language-reference/discriminated-unions.md). [Record types](../../fsharp/language-reference/records.md) and [anonymous record types](../../fsharp/language-reference/anonymous-records.md) are treated as immutable POCOs and thus are supported.
 ::: zone-end

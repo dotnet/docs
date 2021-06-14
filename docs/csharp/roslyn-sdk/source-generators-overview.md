@@ -17,7 +17,7 @@ A Source Generator is a new kind of component that C# developers can write that 
 
 1. Retrieve a *compilation object* that represents all user code that is being compiled. This object can be inspected, and you can write code that works with the syntax and semantic models for the code being compiled, just like with analyzers today.
 
-2. Generate C# source files that can be added to a Compilation object during the course of compilation. In other words, you can provide additional source code as input to a compilation while the code is being compiled.
+2. Generate C# source files that can be added to a compilation object during the course of compilation. In other words, you can provide additional source code as input to a compilation while the code is being compiled.
 
 When combined, these two things are what make Source Generators so useful. You can inspect user code with all of the rich metadata that the compiler builds up during compilation, then emit C# code back into the same compilation that is based on the data you’ve analyzed! If you’re familiar with Roslyn Analyzers, you can think of Source Generators as analyzers that can emit C# source code.
 

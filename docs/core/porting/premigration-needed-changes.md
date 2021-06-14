@@ -6,11 +6,11 @@ ms.date: 06/10/2021
 ---
 # Overview
 
-[content needed]
+Make the needed changes to build and run a .NET application before beginning the work to port your code. All of these changes can be done while still building and running a .NET Framework application.
 
 ## Upgrade to required tooling
 
-[content needed]
+Upgrade to a version of MSBuild/Visual Studio that supports the version of .NET you will be targeting. See [Tooling Requirements](tooling-requirements.md) for more info.
 
 ## Update .NET Framework target version
 
@@ -26,12 +26,12 @@ Because your projects now target .NET Framework 4.7.2, use that version of the .
 
 ## Change to PackageReference format
 
-[content needed]
-
-## Update dependencies
-
-[content needed]
+Convert all references to the [PackageReference](/nuget/consume-packages/package-references-in-project-files) format.
 
 ## Convert to SDK style project format
 
-[content needed]
+Convert your projects to the [SDK-style format](../project-sdk/overview.md).
+
+## Update dependencies
+
+Update dependencies to their latest version available, and to .NET Standard version where possible.

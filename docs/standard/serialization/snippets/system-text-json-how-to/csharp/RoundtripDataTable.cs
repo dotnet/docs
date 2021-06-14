@@ -136,14 +136,12 @@ namespace RoundtripDataTable
                     }
                     jsonWriter.WriteEndObject();
                 }
-
             }
             jsonWriter.WriteEndArray();
         }
     }
     public static class Extensions
     {
-
         public static DataTable JsonElementToDataTable(this JsonElement dataRoot)
         {
             var dataTable = new DataTable();

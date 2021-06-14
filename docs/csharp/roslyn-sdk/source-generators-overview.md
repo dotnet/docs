@@ -39,7 +39,7 @@ Source Generators can improve performance in ways that aren’t limited to refle
 
 Another capability Source Generators can offer is obviating the use of some “stringly-typed” APIs, such as how ASP.NET Core routing between controllers and razor pages work. With a Source Generator, routing can be strongly typed with the necessary strings being generated as a compile-time detail. This would reduce the amount of times a mistyped string literal leads to a request not hitting the correct controller.
 
-## Getting started with Source Generators
+## Get started with source generators
 
 In this guide, you'll explore the creation of a source generator using the <xref:Microsoft.CodeAnalysis.ISourceGenerator> API.
 

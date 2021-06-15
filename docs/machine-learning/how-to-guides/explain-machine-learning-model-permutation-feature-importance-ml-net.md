@@ -172,3 +172,9 @@ PercentPopulationLivingBelowPoverty|    0.000031
 ToxicWasteLevels    |   -0.000019
 
 Taking a look at the five most important features for this dataset, the price of a house predicted by this model is influenced by its proximity to highways, student teacher ratio of schools in the area, proximity to major employment centers, property tax rate and average number of rooms in the home.
+
+## Next steps
+
+- [Make predictions with a trained model](machine-learning-model-predictions-ml-net.md)
+- [Retrain a model](retrain-model-ml-net.md)
+- [Deploy a model in an ASP.NET Core Web API](serve-model-web-api-ml-net.md)

@@ -17,7 +17,7 @@ ms.assetid: f5d4c6a4-0d7b-4944-a9fb-3b12d9ebfd55
 
 Collection types represent different ways to collect data, such as hash tables, queues, stacks, bags, dictionaries, and lists.
 
-All collections are based on the <xref:System.Collections.ICollection> or <xref:System.Collections.Generic.ICollection%601> interfaces, either directly or indirectly. <xref:System.Collections.IList> and <xref:System.Collections.IDictionary> and their generic counterparts all derive from these two interfaces. 
+All collections are based on the <xref:System.Collections.ICollection> or <xref:System.Collections.Generic.ICollection%601> interfaces, either directly or indirectly. <xref:System.Collections.IList> and <xref:System.Collections.IDictionary> and their generic counterparts all derive from these two interfaces.
 
 In collections based on <xref:System.Collections.IList> or directly on <xref:System.Collections.ICollection>, every element contains only a value. These types include:
 
@@ -35,7 +35,7 @@ In collections based on the <xref:System.Collections.IDictionary> interface, eve
 - <xref:System.Collections.Hashtable>
 - <xref:System.Collections.SortedList>
 - <xref:System.Collections.Generic.SortedList%602>
-- <xref:System.Collections.Generic.Dictionary%602> 
+- <xref:System.Collections.Generic.Dictionary%602>
 - <xref:System.Collections.Concurrent.ConcurrentDictionary%602>
 
 The <xref:System.Collections.ObjectModel.KeyedCollection%602> class is unique because it is a list of values with keys embedded within the values. As a result, it behaves both like a list and like a dictionary.  
@@ -54,14 +54,14 @@ Generic collections are the best solution to strong typing. For example, adding 
 
 ## How collections vary
   
-Collections vary in how they store, sort, and compare elements, and how they perform searches. 
+Collections vary in how they store, sort, and compare elements, and how they perform searches.
 
 The <xref:System.Collections.SortedList> class and the <xref:System.Collections.Generic.SortedList%602> generic class provide sorted versions of the <xref:System.Collections.Hashtable> class and the <xref:System.Collections.Generic.Dictionary%602> generic class.
 
 All collections use zero-based indexes except <xref:System.Array>, which allows arrays that are not zero-based.
- 
-You can access the elements of a <xref:System.Collections.SortedList> or a <xref:System.Collections.ObjectModel.KeyedCollection%602> by either the key or the element's index. You can only access the elements of a <xref:System.Collections.Hashtable> or a <xref:System.Collections.Generic.Dictionary%602> by the element's key. 
- 
+
+You can access the elements of a <xref:System.Collections.SortedList> or a <xref:System.Collections.ObjectModel.KeyedCollection%602> by either the key or the element's index. You can only access the elements of a <xref:System.Collections.Hashtable> or a <xref:System.Collections.Generic.Dictionary%602> by the element's key.
+
 ## Use LINQ with collection types
   
 The LINQ to Objects feature provides a common pattern for accessing in-memory objects of any type that implements <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601>. LINQ queries have several benefits over standard constructs like `foreach` loops:

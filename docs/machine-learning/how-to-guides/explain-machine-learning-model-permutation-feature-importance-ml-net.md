@@ -1,7 +1,7 @@
 ---
 title: Interpret ML.NET models with Permutation Feature Importance
 description: Understand the feature importance of models with Permutation Feature Importance in ML.NET
-ms.date: 01/30/2020
+ms.date: 06/15/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to
@@ -134,6 +134,8 @@ ImmutableArray<RegressionMetricsStatistics> permutationFeatureImportance =
 ```
 
 The result of using [`PermutationFeatureImportance`](xref:Microsoft.ML.PermutationFeatureImportanceExtensions) on the training dataset is an [`ImmutableArray`](xref:System.Collections.Immutable.ImmutableArray) of [`RegressionMetricsStatistics`](xref:Microsoft.ML.Data.RegressionMetricsStatistics) objects. [`RegressionMetricsStatistics`](xref:Microsoft.ML.Data.RegressionMetricsStatistics) provides summary statistics like mean and standard deviation for multiple observations of [`RegressionMetrics`](xref:Microsoft.ML.Data.RegressionMetrics) equal to the number of permutations specified by the `permutationCount` parameter.
+
+The metric used to measure feature importance depends on the machine learning task used to solve your problem. For example, regression tasks may use a common evaluation metric such as R-squared to measure importance. For more information on model evaluation metrics, see [evaluate your ML.NET model with metrics](../resources/metrics.md).
 
 The importance, or in this case, the absolute average decrease in R-squared metric calculated by [`PermutationFeatureImportance`](xref:Microsoft.ML.PermutationFeatureImportanceExtensions) can then be ordered from most important to least important.
 

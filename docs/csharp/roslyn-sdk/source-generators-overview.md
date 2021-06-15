@@ -145,7 +145,7 @@ In this guide, you'll explore the creation of a source generator using the <xref
 
 8. Now, when you run the console application, you should see that the generated code gets run and prints to the screen.
 
-    > [!NOTE] 
+    > [!NOTE]
     > You will currently need to restart Visual Studio to see IntelliSense and get rid of errors with the early tooling experience.
 
 ## Next steps

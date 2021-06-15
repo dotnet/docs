@@ -1,7 +1,7 @@
 ---
 title: Overview of the .NET Upgrade Assistant
 description: Introducing the .NET Upgrade Assistant tool that helps migrate from .NET Framework and upgrades your projects to .NET 5.
-author: thraka
+author: adegeo
 ms.date: 06/01/2021
 ---
 # Overview of the .NET Upgrade Assistant

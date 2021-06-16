@@ -176,22 +176,16 @@ If you use the `--mlcompatibility` compiler option, the above keywords are avail
 
 The following tokens are reserved as keywords for future expansion of the F# language:
 
-- `atomic`
 - `break`
 - `checked`
 - `component`
 - `const`
 - `constraint`
-- `constructor`
 - `continue`
-- `eager`
 - `event`
 - `external`
-- `functor`
 - `include`
-- `method`
 - `mixin`
-- `object`
 - `parallel`
 - `process`
 - `protected`
@@ -200,7 +194,20 @@ The following tokens are reserved as keywords for future expansion of the F# lan
 - `tailcall`
 - `trait`
 - `virtual`
-- `volatile`
+
+The following tokens were once reserved as keywords but were [released](https://github.com/fsharp/fslang-design/blob/main/FSharp-4.1/FS-1016-unreserve-keywords.md) in F# 4.1, so now you can use them as identifiers:
+
+Keyword | Reason
+-|-
+`method` | the F# commmunity are happy with `member` to introduce methods
+`constructor` | the F# commmunity are happy with `new` to introduce constructors
+`atomic` | this was related to the fad for transactional memory circa 2006. In F# this would now be a library-defined computation expression
+`eager` | this is no longer needed, it was initially designed to be `let eager` to match a potential `let lazy`
+`object` | there is no need to reserve this
+`recursive` | F# is happy using `rec`
+`functor` | If F# added parametereized modules, we would use `module M(args) = ...`
+`measure` | There is no specific reason to reserve this these days, the `[<Measure>]` attribute suffices
+`volatile` | There is no specific reason to reserve this these days, the `[<Volatile>]` attribute suffices
 
 ## See also
 

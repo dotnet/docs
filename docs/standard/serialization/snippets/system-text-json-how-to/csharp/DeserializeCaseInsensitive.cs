@@ -18,7 +18,7 @@ namespace SystemTextJsonSamples
             // <Deserialize>
             var options = new JsonSerializerOptions
             {
-                PropertyNameCaseInsensitive = true,
+                PropertyNameCaseInsensitive = true
             };
             var weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString, options);
             // </Deserialize>

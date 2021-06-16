@@ -21,5 +21,5 @@ The `using` keyword has three major uses:
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Namespaces](../../programming-guide/namespaces/index.md)
+- [Namespaces](../../fundamentals/types/namespaces.md)
 - [extern](extern.md)

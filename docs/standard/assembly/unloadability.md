@@ -4,6 +4,7 @@ description: "Learn how to use collectible AssemblyLoadContext for loading and u
 author: "janvorli"
 ms.author: "janvorli"
 ms.date: "02/05/2019"
+ms.topic: how-to
 ---
 # How to use and debug assembly unloadability in .NET Core
 

@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "default listeners"
   - "logs, trace"
   - "destination for tracing output"
-ms.assetid: 5fff458c-51a6-4134-ba47-8a6137ddc41e
+ms.topic: how-to
 ---
 # Enabling Network Tracing
 

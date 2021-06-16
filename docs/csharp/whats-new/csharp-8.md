@@ -94,11 +94,11 @@ Default interface methods affect many scenarios and language elements. Our first
 
 ## More patterns in more places
 
-**Pattern matching** gives tools to provide shape-dependent functionality across related but different kinds of data. C# 7.0 introduced syntax for type patterns and constant patterns by using the [`is`](../language-reference/keywords/is.md) expression and the [`switch`](../language-reference/keywords/switch.md) statement. These features represented the first tentative steps toward supporting programming paradigms where data and functionality live apart. As the industry moves toward more microservices and other cloud-based architectures, other language tools are needed.
+**Pattern matching** gives tools to provide shape-dependent functionality across related but different kinds of data. C# 7.0 introduced syntax for type patterns and constant patterns by using the [`is`](../language-reference/operators/is.md) expression and the [`switch`](../language-reference/keywords/switch.md) statement. These features represented the first tentative steps toward supporting programming paradigms where data and functionality live apart. As the industry moves toward more microservices and other cloud-based architectures, other language tools are needed.
 
 C# 8.0 expands this vocabulary so you can use more pattern expressions in more places in your code. Consider these features when your data and functionality are separate. Consider pattern matching when your algorithms depend on a fact other than the runtime type of an object. These techniques provide another way to express designs.
 
-In addition to new patterns in new places, C# 8.0 adds **recursive patterns**. The result of any pattern expression is an expression. A recursive pattern is simply a pattern expression applied to the output of another pattern expression.
+In addition to new patterns in new places, C# 8.0 adds **recursive patterns**. Recursive patterns are patterns that can contain other patterns.
 
 ### Switch expressions
 
@@ -168,6 +168,8 @@ public static RGBColor FromRainbowClassic(Rainbow colorBand)
 }
 ```
 
+For more information, see [`switch` expression](../language-reference/operators/switch-expression.md).
+
 ### Property patterns
 
 The **property pattern** enables you to match on properties of the object examined. Consider an eCommerce site that must compute sales tax based on the buyer's address. That computation isn't a core responsibility of an `Address` class. It will change over time, likely more often than address format changes. The amount of sales tax depends on the `State` property of the address. The following method uses the property pattern to compute the sales tax from the address and the price:
@@ -186,9 +188,11 @@ public static decimal ComputeSalesTax(Address location, decimal salePrice) =>
 
 Pattern matching creates a concise syntax for expressing this algorithm.
 
+For more information, see the [Property pattern](../language-reference/operators/patterns.md#property-pattern) section of the [Patterns](../language-reference/operators/patterns.md) article.
+
 ### Tuple patterns
 
-Some algorithms depend on multiple inputs. **Tuple patterns** allow you to switch based on multiple values expressed as a [tuple](../language-reference/builtin-types/value-tuples.md).  The following code shows a switch expression for the game *rock, paper, scissors*:
+Some algorithms depend on multiple inputs. **Tuple patterns** allow you to switch based on multiple values expressed as a [tuple](../language-reference/builtin-types/value-tuples.md). The following code shows a switch expression for the game *rock, paper, scissors*:
 
 ```csharp
 public static string RockPaperScissors(string first, string second)
@@ -255,7 +259,7 @@ static Quadrant GetQuadrant(Point point) => point switch
 
 The discard pattern in the preceding switch matches when either `x` or `y` is 0, but not both. A switch expression must either produce a value or throw an exception. If none of the cases match, the switch expression throws an exception. The compiler generates a warning for you if you don't cover all possible cases in your switch expression.
 
-You can explore pattern matching techniques in this [advanced tutorial on pattern matching](../tutorials/pattern-matching.md).
+You can explore pattern matching techniques in this [advanced tutorial on pattern matching](../fundamentals/tutorials/pattern-matching.md). For more information about a positional pattern, see the [Positional pattern](../language-reference/operators/patterns.md#positional-pattern) section of the [Patterns](../language-reference/operators/patterns.md) article.
 
 ## Using declarations
 

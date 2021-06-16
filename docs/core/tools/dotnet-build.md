@@ -61,6 +61,9 @@ To produce a library, omit the `<OutputType>` property or change its value to `L
 
 In addition to its options, the `dotnet build` command accepts MSBuild options, such as `-p` for setting properties or `-l` to define a logger. For more information about these options, see the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). Or you can also use the [dotnet msbuild](dotnet-msbuild.md) command.
 
+> [!NOTE]
+> When `dotnet build` is run automatically by `dotnet run`, arguments like `-property:property=value` aren't respected.
+
 Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; however, the default verbosity of the output is different.
 
 ## Arguments

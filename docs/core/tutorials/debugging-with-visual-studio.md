@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.custom: "vs-dotnet"
+recommendations: false
 ---
 # Tutorial: Debug a .NET console application using Visual Studio
 
@@ -57,7 +58,7 @@ The **Immediate** window lets you interact with the application you're debugging
 
 1. Enter `name = "Gracie"` in the **Immediate** window and press the <kbd>Enter</kbd> key.
 
-1. Enter `date = DateTime.Parse("2019-11-16T17:25:00Z").ToUniversalTime()` in the **Immediate** window and press the <kbd>Enter</kbd> key.
+1. Enter `currentDate = DateTime.Parse("2019-11-16T17:25:00Z").ToUniversalTime()` in the **Immediate** window and press the <kbd>Enter</kbd> key.
 
    The **Immediate** window displays the value of the string variable and the properties of the <xref:System.DateTime> value. In addition, the values of the variables are updated in the **Locals** window.
 
@@ -139,7 +140,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    :::image type="content" source="./media/debugging-with-visual-studio/vb-step-into-method.png" alt-text="Visual Studio step into method - Visual Basic":::
 
-   At this point, the **Locals** window shows that the `args` array is empty, and `name` and `date` have default values. In addition, Visual Studio has opened a blank console window.
+   At this point, the **Locals** window shows that the `args` array is empty, and `name` and `currentDate` have default values. In addition, Visual Studio has opened a blank console window.
 
 1. Press <kbd>F11</kbd>. Visual Studio now highlights the next line of execution. The **Locals** window is unchanged, and the console window remains blank.
 
@@ -155,9 +156,9 @@ Visual Studio also allows you to step line by line through a program and monitor
 
 1. Respond to the prompt by entering a string in the console window and pressing <kbd>Enter</kbd>. The console is unresponsive, and the string you entered isn't displayed in the console window, but the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method will nevertheless capture your input.
 
-1. Press <kbd>F11</kbd>. Visual Studio highlights the statement that includes the `date` variable assignment (`currentDate` in Visual Basic). The **Locals** window shows the value returned by the call to the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method. The console window also displays the string you entered at the prompt.
+1. Press <kbd>F11</kbd>. Visual Studio highlights the statement that includes the `currentDate` variable assignment. The **Locals** window shows the value returned by the call to the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method. The console window also displays the string you entered at the prompt.
 
-1. Press <kbd>F11</kbd>. The **Locals** window shows the value of the `date` variable after the assignment from the <xref:System.DateTime.Now?displayProperty=nameWithType> property. The console window is unchanged.
+1. Press <kbd>F11</kbd>. The **Locals** window shows the value of the `currentDate` variable after the assignment from the <xref:System.DateTime.Now?displayProperty=nameWithType> property. The console window is unchanged.
 
 1. Press <kbd>F11</kbd>. Visual Studio calls the <xref:System.Console.WriteLine(System.String,System.Object,System.Object)?displayProperty=nameWithType> method. The console window displays the formatted string.
 

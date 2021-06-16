@@ -288,6 +288,4 @@ your own development environment.
 You can learn more about these concepts in these articles:
 
 - [If and else statement](../../language-reference/keywords/if-else.md)
-- [While statement](../../language-reference/keywords/while.md)
-- [Do statement](../../language-reference/keywords/do.md)
-- [For statement](../../language-reference/keywords/for.md)
+- [Iteration statements](../../language-reference/statements/iteration-statements.md)

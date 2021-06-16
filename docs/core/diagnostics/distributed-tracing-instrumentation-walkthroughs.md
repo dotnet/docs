@@ -7,11 +7,11 @@ ms.date: 03/14/2021
 
 # Adding distributed tracing instrumentation
 
-**This article applies to: ✔️** .NET Core 2.1 and later versions **and** .NET Framework 4.5 and later versions
+**This article applies to: ✔️** .NET Core 2.1 and later versions **✔️** .NET Framework 4.5 and later versions
 
 .NET applications can be instrumented using the <xref:System.Diagnostics.Activity?displayProperty=nameWithType> API to produce
-distributed tracing telemetry. Some instrumentation is built-in to standard .NET libraries but you may want to add more to make
-your code more easily diagnosable. In this tutorial you will add new custom distributed tracing instrumentation. See
+distributed tracing telemetry. Some instrumentation is built into standard .NET libraries, but you may want to add more to make
+your code more easily diagnosable. In this tutorial, you will add new custom distributed tracing instrumentation. See
 [the collection tutorial](distributed-tracing-instrumentation-walkthroughs.md) to learn more about recording the telemetry
 produced by this instrumentation.
 
@@ -19,7 +19,7 @@ produced by this instrumentation.
 
 - [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
 
-## An initial app
+## Create initial app
 
 First you will create a sample app that collects telemetry using OpenTelemetry, but doesn't yet have any instrumentation.
 
@@ -28,7 +28,7 @@ dotnet new console
 ```
 
 Applications that target .NET 5 and later already have the necessary distributed tracing APIs included. For apps targeting older
-.NET versions add the [System.Diagnostics.DiagnosticSource NuGet package](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/)
+.NET versions, add the [System.Diagnostics.DiagnosticSource NuGet package](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/)
 version 5 or greater.
 
 ```dotnetcli
@@ -36,8 +36,7 @@ dotnet add package System.Diagnostics.DiagnosticSource
 ```
 
 Add the [OpenTelemetry](https://www.nuget.org/packages/OpenTelemetry/) and
-[OpenTelemetry.Exporter.Console](https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/) NuGet packages
-which will be used to collect the telemetry.
+[OpenTelemetry.Exporter.Console](https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/) NuGet packages, which will be used to collect the telemetry.
 
 ```dotnetcli
 dotnet add package OpenTelemetry
@@ -96,16 +95,16 @@ The app has no instrumentation yet so there is no trace information to display:
 Example work done
 ```
 
-#### Best Practices
+### Best practices
 
-Only app developers need to reference an optional 3rd party library for collecting the
+Only app developers need to reference an optional third-party library for collecting the
 distributed trace telemetry, such as OpenTelemetry in this example. .NET library
-authors can exclusively rely on APIs in System.Diagnostics.DiagnosticSource which is part
+authors can exclusively rely on APIs in System.Diagnostics.DiagnosticSource, which is part
 of .NET runtime. This ensures that libraries will run in a wide range of .NET apps, regardless
 of the app developer's preferences about which library or vendor to use for collecting
 telemetry.
 
-## Adding Basic Instrumentation
+## Add basic instrumentation
 
 Applications and libraries add distributed tracing instrumentation using the
 <xref:System.Diagnostics.ActivitySource?displayProperty=nameWithType> and
@@ -133,23 +132,23 @@ namespace Sample.DistributedTracing
 
         static async Task Main(string[] args)
         {
-            ...    
+            ...
 ```
 
-#### Best Practices
+#### Best practices
 
 - Create the ActivitySource once, store it in a static variable and use that instance as long as needed.
-Each library or library sub-component can (and often should) create its own source. Consider creating a new
-source rather than re-using an existing one if you anticipate app developers would appreciate being able to
+Each library or library subcomponent can (and often should) create its own source. Consider creating a new
+source rather than reusing an existing one if you anticipate app developers would appreciate being able to
 enable and disable the Activity telemetry in the sources independently.
 
 - The source name passed to the constructor has to be unique to avoid the conflicts with any other sources.
-It is recommended to use a hierarchical name that contains the assembly name and optionally a component name if
-there are multiple sources within the same assembly. For example, `Microsoft.AspNetCore.Hosting`. If an assembly
-is adding instrumentation for code in a 2nd independent assembly, the name should be based on the
+If
+there are multiple sources within the same assembly, use a hierarchical name that contains the assembly name and optionally a component name, for example, `Microsoft.AspNetCore.Hosting`. If an assembly
+is adding instrumentation for code in a second, independent assembly, the name should be based on the
 assembly that defines the ActivitySource, not the assembly whose code is being instrumented.
 
-- The version parameter is optional. It is recommended to provide the version in case you release multiple
+- The version parameter is optional. We recommend that you provide the version in case you release multiple
 versions of the library and make changes to the instrumented telemetry.
 
 > [!NOTE]
@@ -158,7 +157,7 @@ versions of the library and make changes to the instrumented telemetry.
 > the OpenTelemetry specification and the original .NET naming has been preserved for
 > consistency within the .NET ecosystem and .NET application compatibility.
 
-### Activity Creation
+### Activity
 
 Use the ActivitySource object to Start and Stop Activity objects around meaningful units of work. Update
 DoSomeWork() with the code shown here:
@@ -191,16 +190,15 @@ Resource associated with Activity:
 #### Notes
 
 - <xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=nameWithType> creates and starts
-the activity at the same time. The listed code pattern is using the `using` block which automatically disposes
+the activity at the same time. The listed code pattern is using the `using` block, which automatically disposes
 the created Activity object after executing the block. Disposing the Activity object will stop it so the code
 doesn't need to explicitly call <xref:System.Diagnostics.Activity.Stop?displayProperty=nameWithType>.
 That simplifies the coding pattern.
 
 - <xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=nameWithType> internally determines if
-there are any listeners recording the Activity. If there are no registered listeners or there are listeners which
-are not interested, StartActivity() will return `null` and avoid creating the Activity object. This
-is a performance optimization so that the code pattern can still be used in functions that are called very
-frequently.
+there are any listeners recording the Activity. If there are no registered listeners or there are listeners that
+are not interested, `StartActivity()` will return `null` and avoid creating the Activity object. This
+is a performance optimization so that the code pattern can still be used in functions that are called frequently.
 
 ## Optional: Populate tags
 
@@ -237,11 +235,11 @@ Resource associated with Activity:
 Example work done
 ```
 
-#### Best Practices
+### Best practices
 
 - As mentioned above, `activity` returned by <xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=nameWithType>
-may be null. The null-coallescing operator ?. in C# is a convenient short-hand to only invoke
-<xref:System.Diagnostics.Activity.SetTag%2A?displayProperty=nameWithType> if activity is not null. The behavior is identical to
+may be null. The null-coalescing operator `?.` in C# is a convenient short-hand to only invoke
+<xref:System.Diagnostics.Activity.SetTag%2A?displayProperty=nameWithType> if `activity` is not null. The behavior is identical to
 writing:
 
 ```csharp
@@ -255,13 +253,13 @@ if(activity != null)
 [conventions](https://github.com/open-telemetry/opentelemetry-specification/tree/main/specification/trace/semantic_conventions)
 for setting Tags on Activities that represent common types of application work.
 
-- If you are instrumenting functions with high performance requirements,
+- If you are instrumenting functions with high-performance requirements,
 <xref:System.Diagnostics.Activity.IsAllDataRequested?displayProperty=nameWithType> is a hint that indicates whether any
-of the code listening to Activities intends to read auxilliary information such as Tags. If no listener will read it then there
-is no need for the instrumented code to spend CPU cycles populating it. For simplicity this sample doesn't apply that
+of the code listening to Activities intends to read auxiliary information such as Tags. If no listener will read it, then there
+is no need for the instrumented code to spend CPU cycles populating it. For simplicity, this sample doesn't apply that
 optimization.
 
-## Optional: Adding Events
+## Optional: Add events
 
 Events are timestamped messages that can attach an arbitrary stream of additional diagnostic data to Activities. Add
 some events to the Activity:
@@ -301,16 +299,16 @@ Resource associated with Activity:
 Example work done
 ```
 
-#### Best Practices
+### Best practices
 
 - Events are stored in an in-memory list until they can be transmitted which makes this mechanism only suitable for
-recording a modest number of events. For a large or unbounded volume of events using a logging API focused on this task
-such as [ILogger](https://docs.microsoft.com/aspnet/core/fundamentals/logging/) is a better choice. ILogger also ensures
+recording a modest number of events. For a large or unbounded volume of events, it's better to use a logging API focused on this task,
+such as [ILogger](/aspnet/core/fundamentals/logging/). ILogger also ensures
 that the logging information will be available regardless whether the app developer opts to use distributed tracing.
 ILogger supports automatically capturing the active Activity IDs so messages logged via that API can still be correlated
 with the distributed trace.
 
-## Optional: Adding Status
+## Optional: Add status
 
 OpenTelemetry allows each Activity to report a
 [Status](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/api.md#set-status)
@@ -334,7 +332,7 @@ Update DoSomeWork() to set status:
                 activity?.AddEvent(new ActivityEvent("Part way there"));
                 await StepTwo();
                 activity?.AddEvent(new ActivityEvent("Done now"));
-                
+
                 // Pretend something went wrong
                 activity?.SetTag("otel.status_code", "ERROR");
                 activity?.SetTag("otel.status_description", "Use this text give more information about the error");
@@ -342,13 +340,13 @@ Update DoSomeWork() to set status:
         }
 ```
 
-## Optional: Add Additional Activities
+## Optional: Add additional Activities
 
-Activities can be nested to describe portions of a larger unit of work. This can be particularly valuable around
+Activities can be nested to describe portions of a larger unit of work. This can be valuable around
 portions of code that might not execute quickly or to better localize failures that come from specific external
 dependencies. Although this sample uses an Activity in every method, that is solely because extra code has been
-minimized. In a larger and more realistic project using an Activity in every method would produce extremely
-verbose traces so it is not recommended.
+minimized. In a larger and more realistic project, using an Activity in every method would produce extremely
+verbose traces, so it's not recommended.
 
 Update StepOne and StepTwo to add more tracing around these separate steps:
 
@@ -419,26 +417,26 @@ can show this as a Gantt chart:
 
 [![Zipkin Gantt chart](media/zipkin-nested-activities.jpg)](media/zipkin-nested-activities.jpg)
 
-### Optional: ActivityKind
+## Optional: ActivityKind
 
-Activities have an <xref:System.Diagnostics.Activity.Kind%2A?displayProperty=nameWithType> property which
-describes the relationship between the Activity, its parent and its children. By default all new Activities are
-set to <xref:System.Diagnostics.ActivityKind.Internal> which is appropriate for Activities that are an
+Activities have an <xref:System.Diagnostics.Activity.Kind%2A?displayProperty=nameWithType> property, which
+describes the relationship between the Activity, its parent, and its children. By default, all new Activities are
+set to <xref:System.Diagnostics.ActivityKind.Internal>, which is appropriate for Activities that are an
 internal operation within an application with no remote parent or children. Other kinds can be set using the
 kind parameter on
-<xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=nameWithType>. See
-<xref:System.Diagnostics.ActivityKind?displayProperty=nameWithType> for other options.
+<xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=nameWithType>. For other options, see
+<xref:System.Diagnostics.ActivityKind?displayProperty=nameWithType>.
 
-### Optional: Links
+## Optional: Links
 
-When work occurs in batch processing systems a single Activity might represent work on behalf of many
+When work occurs in batch processing systems, a single Activity might represent work on behalf of many
 different requests simultaneously, each of which has its own trace-id. Although Activity is restricted
 to have a single parent, it can link to additional trace-ids using
 <xref:System.Diagnostics.ActivityLink?displayProperty=nameWithType>. Each ActivityLink is
 populated with an <xref:System.Diagnostics.ActivityContext> that
 stores ID information about the Activity being linked to. ActivityContext can be retrieved from in-process
 Activity objects using <xref:System.Diagnostics.Activity.Context%2A?displayProperty=nameWithType> or
-it can be parsed from serialized id information using
+it can be parsed from serialized ID information using
 <xref:System.Diagnostics.ActivityContext.Parse(System.String,System.String)?displayProperty=nameWithType>.
 
 ```csharp

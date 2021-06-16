@@ -38,7 +38,7 @@ Review the created project and its files, especially its project file(s).
 Open a terminal and navigate to the folder where the target project or solution is located. Run the `upgrade-assistant` command, passing in the name of the project you're targeting (you can run the command from anywhere, as long as the path to the project file is valid).
 
 ```console
-upgrade-assistant .\AspNetMvcTest.csproj
+upgrade-assistant upgrade .\AspNetMvcTest.csproj
 ```
 
 The tool runs and shows you a list of the steps it will do.

@@ -64,4 +64,4 @@ The result of `query1` is equivalent to the result set that would have been obta
 - <xref:System.Linq.Enumerable.GroupJoin%2A>
 - [Perform grouped joins](perform-grouped-joins.md)
 - [Perform left outer joins](perform-left-outer-joins.md)
-- [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)
+- [Anonymous types](../fundamentals/types/anonymous-types.md)

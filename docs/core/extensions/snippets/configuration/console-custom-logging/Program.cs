@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 
 class Program
 {
-    static Task Main(string[] args)
+    static async Task Main(string[] args)
     {
         using IHost host = CreateHostBuilder(args).Build();
 
@@ -17,24 +17,18 @@ class Program
         logger.LogWarning(5, "Warning... that was odd.");
         logger.LogError(7, "Oops, there was an error.");
 
-        return host.RunAsync();
+        await host.RunAsync();
     }
 
     static IHostBuilder CreateHostBuilder(string[] args) =>
         Host.CreateDefaultBuilder(args)
             .ConfigureLogging(builder =>
                 builder.ClearProviders()
-                    .AddProvider(
-                        new ColorConsoleLoggerProvider(
-                            new ColorConsoleLoggerConfiguration
-                            {
-                                LogLevel = LogLevel.Error,
-                                Color = ConsoleColor.Red
-                            }))
-                    .AddColorConsoleLogger()
                     .AddColorConsoleLogger(configuration =>
                     {
-                        configuration.LogLevel = LogLevel.Warning;
-                        configuration.Color = ConsoleColor.DarkMagenta;
+                        configuration.LogLevels.Add(
+                            LogLevel.Warning, ConsoleColor.DarkMagenta);
+                        configuration.LogLevels.Add(
+                            LogLevel.Error, ConsoleColor.Red);
                     }));
 }

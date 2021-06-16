@@ -2,7 +2,6 @@
 description: "Learn more about: <customTrackingQueries>"
 title: "<customTrackingQueries>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: 4e9e732d-911d-45a3-a569-4b5e9cd1ffbe
 ---
 # \<customTrackingQueries>

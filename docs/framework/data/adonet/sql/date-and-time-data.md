@@ -11,13 +11,9 @@ ms.assetid: 6f5ff56a-a57e-49d7-8ae9-bbed697e42e3
 
 SQL Server 2008 introduces new data types for handling date and time information. The new data types include separate types for date and time, and expanded data types with greater range, precision, and time-zone awareness. Starting with the .NET Framework version 3.5 Service Pack (SP) 1, the .NET Framework Data Provider for SQL Server (<xref:System.Data.SqlClient>) provides full support for all the new features of the SQL Server 2008 Database Engine. You must install the .NET Framework 3.5 SP1 (or later) to use these new features with SqlClient.  
   
- Versions of SQL Server earlier than SQL Server 2008 only had two data types for working with date and time values: `datetime` and `smalldatetime`. Both of these data types contain both the date value and a time value, which makes it difficult to work with only date or only time values. Also, these data types only support dates that occur after the introduction of the Gregorian calendar in England in 1753. Another limitation is that these older data types are not time-zone aware, which makes it difficult to work with data that originates from multiple time zones.  
-  
- Complete documentation for SQL Server data types is available in SQL Server Books Online. The following table lists the version-specific entry-level topics for date and time data.  
-  
- **SQL Server documentation**  
-  
-1. [Using Date and Time Data](/previous-versions/sql/sql-server-2008/ms180878(v=sql.100))  
+Versions of SQL Server earlier than SQL Server 2008 only had two data types for working with date and time values: `datetime` and `smalldatetime`. Both of these data types contain both the date value and a time value, which makes it difficult to work with only date or only time values. Also, these data types only support dates that occur after the introduction of the Gregorian calendar in England in 1753. Another limitation is that these older data types are not time-zone aware, which makes it difficult to work with data that originates from multiple time zones.
+
+For more information about date and time types in SQL Server, see [Date and Time Data Types and Functions](/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql).
   
 ## Date/Time Data Types Introduced in SQL Server 2008  
 
@@ -231,18 +227,15 @@ command.Parameters.AddWithValue( _
   
 - Numeric date formats, such as `'10/15/2006'`.  
   
-- Unseparated string formats, such as `'20061015'`, which would be interpreted as October 15, 2006 if you are using the ISO standard date format.  
+- Unseparated string formats, such as `'20061015'`, which would be interpreted as October 15, 2006 if you are using the ISO standard date format.
   
-> [!NOTE]
-> You can find complete documentation for all of the literal string formats and other features of the date and time data types in SQL Server Books Online.  
+Time values that are less than zero or greater than or equal to 24 hours will throw an <xref:System.ArgumentException>.  
   
- Time values that are less than zero or greater than or equal to 24 hours will throw an <xref:System.ArgumentException>.  
-  
-## Resources in SQL Server Books Online  
+## SQL Server docs resources
 
- For more information about working with date and time values in SQL Server, see the following resources in SQL Server Books Online.  
+For more information about working with date and time values in SQL Server, see the following articles.
   
-|Topic|Description|  
+| Article | Description |  
 |-----------|-----------------|  
 |[Date and Time Data Types and Functions (Transact-SQL)](/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql)|Provides an overview of all Transact-SQL date and time data types and functions.|  
 |[Using Date and Time Data](/previous-versions/sql/sql-server-2008/ms180878(v=sql.100))|Provides information about the date and time data types and functions, and examples of using them.|  

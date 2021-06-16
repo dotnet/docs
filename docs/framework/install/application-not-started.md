@@ -9,11 +9,15 @@ Applications that are developed for .NET Framework typically require that a spec
 
 ![This application could not be started](media/application-not-started/app-could-not-be-started.png)
 
+## Error causes
+
 This error typically indicates one of the following conditions:
 
 - A .NET Framework installation on your system has become corrupted.
 
 - The version of .NET Framework needed by your application cannot be detected.
+
+## How to fix the error
 
 To address this issue so that you can run your application, do the following:
 
@@ -45,7 +49,7 @@ To address this issue so that you can run your application, do the following:
    |Windows Vista SP2|[.NET Framework 4.6](https://dotnet.microsoft.com/download/dotnet-framework/net46)|
 
    > [!NOTE]
-   > .NET Framework 4.8 is preinstalled on Windows 10 May 2019 Update.
+   > .NET Framework 4.8 is preinstalled on Windows 10 May 2019 Update and later versions.
 
 1. Attempt to launch the application.
 

@@ -1,10 +1,10 @@
 {
   "version": 3,
-  "configRevision": 3,
+  "configRevision": 4,
 
   "issue": {
     "labeled": {
-      "processor-conditional": {
+      "processor-conditional-techprodlabels": {
         "type": "query",
         "value": "length(Issue.labels[?contains(name, '/prod') || contains(name, '/tech')]) != `0`",
         "processors": {
@@ -19,6 +19,13 @@
             }
           }
         }
+      },
+      "processor-conditional-release6": {
+        "type": "query",
+        "value": "length(Issue.labels[?name == ':checkered_flag: Release .NET 6']) != `0`",
+        "actions": {
+          "projects-add": [ "132" ]
+        }
       }
     },
     "opened": {
@@ -28,7 +35,8 @@
       "processor-meta-custom": {
         "issuetype": {
           "(?i)breaking-change$": {
-            "labels-add": [ "breaking-change", "doc-idea" ]
+            "labels-add": [ "breaking-change", "doc-idea" ],
+            "projects-add": [ "135" ]
           }
         }
       }
@@ -113,6 +121,9 @@
               "(?i).*docs\/csharp.*": {
                 "labels-add": "dotnet-csharp/prod"
               },
+              "(?i).*docs\/csharp\/fundamentals.*": {
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
+              },
               "(?i).*docs\/csharp\/misc.*": {
                 "labels-add": [ "dotnet-csharp/prod", "csharp-diagnostics/tech" ]
               },
@@ -124,9 +135,6 @@
               },
               "(?i).*docs\/csharp\/linq.*": {
                 "labels-add": [ "dotnet-csharp/prod", "csharp-linq/tech" ]
-              },
-              "(?i).*docs\/csharp\/programming-guide\/main-and-command-args.*": {
-                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/indexers.*": {
                 "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
@@ -146,17 +154,11 @@
               "(?i).*docs\/csharp\/programming-guide\/interop.*": {
                 "labels-add": [ "dotnet-csharp/prod", "csharp-advanced-concepts/tech" ]
               },
-              "(?i).*docs\/csharp\/programming-guide\/unsafe-code-pointers.*": {
+              "(?i).*docs\/csharp\/language-reference\/unsafe-code.*": {
                 "labels-add": [ "dotnet-csharp/prod", "csharp-advanced-concepts/tech" ]
-              },
-              "(?i).*docs\/csharp\/programming-guide\/exceptions.*": {
-                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/namespaces.*": {
                 "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
-              },
-              "(?i).*docs\/csharp\/programming-guide\/nullable-types.*": {
-                "labels-add": [ "dotnet-csharp/prod", "csharp-null-safety/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/arrays.*": {
                 "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
@@ -194,22 +196,13 @@
               "(?i).*docs\/csharp\/programming-guide\/events.*": {
                 "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
-              "(?i).*docs\/csharp\/programming-guide\/inside-a-program.*": {
-                "labels-add": [ "dotnet-csharp/prod", "csharp-get-started/tech" ]
-              },
               "(?i).*docs\/csharp\/programming-guide\/interfaces.*": {
                 "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
-              },
-              "(?i).*docs\/csharp\/getting-started.*": {
-                "labels-add": [ "dotnet-csharp/prod", "csharp-get-started/tech" ]
               },
               "(?i).*docs\/csharp\/tutorials.*": {
                 "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/tutorials\/exploration.*": {
-                "labels-add": [ "dotnet-csharp/prod", "csharp-get-started/tech" ]
-              },
-              "(?i).*docs\/csharp\/tutorials\/intro-to-csharp.*": {
                 "labels-add": [ "dotnet-csharp/prod", "csharp-get-started/tech" ]
               },
               "(?i).*docs\/csharp\/language-reference.*": {
@@ -257,15 +250,6 @@
               },
               "(?i).*docs\/framework\/windows-workflow-foundation.*": {
                 "labels-add": [ "dotnet-framework/prod", "dotnet-wf/tech" ]
-              },
-              "(?i).*docs\/framework\/winforms.*": {
-                "labels-add": [ "dotnet-framework/prod", "dotnet-winforms/tech" ]
-              },
-              "(?i).*docs\/framework\/wpf.*": {
-                "labels-add": [ "dotnet-framework/prod", "dotnet-wpf/tech" ]
-              },
-              "(?i).*docs\/framework\/xaml-services.*": {
-                "labels-add": [ "dotnet-framework/prod", "dotnet-wpf/tech" ]
               },
               
               "(?i).*docs\/fsharp.*": {
@@ -318,6 +302,15 @@
               
             }
           }
+        }
+      }
+    },
+    "labeled": {
+      "processor-conditional-release6": {
+        "type": "query",
+        "value": "length(PullRequest.labels[?name == ':checkered_flag: Release .NET 6']) != `0`",
+        "actions": {
+          "projects-add": [ "132" ]
         }
       }
     }

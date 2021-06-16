@@ -44,4 +44,4 @@ Initializing object 1 2 2 4 8 16
 - [Classes](../classes.md)
 - [Constructors](constructors.md)
 - [`let` Bindings in Classes](let-bindings-in-classes.md)
-- [`do` Bindings](../functions/do-Bindings.md)
+- [`do` Bindings](../functions/do-bindings.md)

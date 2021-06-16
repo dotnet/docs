@@ -4,6 +4,7 @@ description: Learn how to build an anomaly detection application for time series
 ms.date: 12/04/2020
 ms.topic: tutorial
 ms.custom: mvc
+recommendations: false
 #Customer intent: As a developer, I want to use ML.NET in a time-series anomaly detection for number of phone calls so that I can analyze the data for anomaly points to take the appropriate action.
 ---
 # Tutorial: Detect anomalies in time series with ML.NET
@@ -103,7 +104,7 @@ Add a new class to your project:
 
 ### Load the data
 
-Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or from other sources (for example, SQL database or log files) to an `IDataView` object.
+Data in ML.NET is represented as an [IDataView interface](xref:Microsoft.ML.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or from other sources (for example, SQL database or log files) to an `IDataView` object.
 
 1. Add the following code as the next line of the `Main` method:
 

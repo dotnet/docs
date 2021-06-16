@@ -160,7 +160,7 @@ For bulk operations, Dapr will submit each key/value pair update as a separate r
 
 ## Use the Dapr .NET SDK
 
-The Dapr .NET SDK provides language-specific support for .NET Core platform. Developers can use the `DaprClient` class introduced in [chapter 3](getting-started.md) to read and write data. The following example shows how to use the `DaprClient.GetStateAsync<TValue>` method to read data from a state store. The method expects the store name, `statestore`, and key, `AMS`, as parameters:
+The Dapr .NET SDK provides language-specific support for the .NET Core platform. Developers can use the `DaprClient` class introduced in [chapter 3](getting-started.md) to read and write data. The following example shows how to use the `DaprClient.GetStateAsync<TValue>` method to read data from a state store. The method expects the store name, `statestore`, and key, `AMS`, as parameters:
 
 ```csharp
 var weatherForecast = await daprClient.GetStateAsync<WeatherForecast>("statestore", "AMS");
@@ -283,7 +283,7 @@ spec:
  > [!NOTE]
  > Many state stores can be registered to a single application each with a different name.
 
-The Redis state store requires `redisHost` and `redisPassword` metadata to connect to the Redis instance. In the example above, the Redis password (which is an empty string by default) is stored as a plain string. The best practice is to avoid clear-text strings and always use secret references. To learn more about secret management, see [chapter 10](secrets.md).
+The Redis state store requires `redisHost` and `redisPassword` metadata to connect to the Redis instance. In the example above, the Redis password (which is an empty string by default) is stored as a plain string. The best practice is to avoid clear-text strings and always use secret references. To learn more about secret management, see [chapter 10](secrets-management.md).
 
 The other metadata field, `actorStateStore`, indicates whether the state store can be consumed by the actors building block.
 
@@ -403,7 +403,7 @@ scopes:
 ```
 
 > [!NOTE]
-> The component configuration file includes an element `secretKeyRef`. The application uses it to reference the Redis password value from the Dapr secrets building block. See [chapter 10](secrets.md) to learn more about managing secrets with Dapr.
+> The component configuration file includes an element `secretKeyRef`. The application uses it to reference the Redis password value from the Dapr secrets building block. See [chapter 10](secrets-management.md) to learn more about managing secrets with Dapr.
 
 The `type` element in the configuration, `state.redis` instructs the building block to manage state with Dapr Redis component.
 

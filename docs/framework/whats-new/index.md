@@ -1745,9 +1745,9 @@ With Ngen PDBs, NGen can create a PDB that contains the IL-to-native mapping wit
 
 - **.NET Native**
 
-  Windows apps for Windows 10 that target .NET Core and are written in C# or Visual Basic can take advantage of a new technology that compiles apps to native code rather than IL. They produce apps characterized by faster startup and execution times. For more information, see [Compiling Apps with .NET Native](../net-native/index.md). For an overview of .NET Native that examines how it differs from both JIT compilation and NGEN and what that means for your code, see [.NET Native and Compilation](../net-native/net-native-and-compilation.md).
+Universal Windows Platform (UWP) apps that are written in C# or Visual Basic can take advantage of a new technology that compiles apps to native code rather than IL. This technology produces apps that have faster startup and execution times. For more information, see [Compiling Apps with .NET Native](/windows/uwp/dotnet-native/). For an overview of .NET Native that examines how it differs from both JIT compilation and NGEN and what that means for your code, see [.NET Native and Compilation](/windows/uwp/dotnet-native/net-native-and-compilation).
 
-  Your apps are compiled to native code by default when you compile them with Visual Studio 2015 or later. For more information, see [Getting Started with .NET Native](../net-native/getting-started-with-net-native.md).
+  Your apps are compiled to native code by default when you compile them with Visual Studio 2015 or later. For more information, see [Getting Started with .NET Native](/windows/uwp/dotnet-native/getting-started-with-net-native).
 
   To support debugging .NET Native apps, a number of new interfaces and enumerations have been added to the unmanaged debugging API. For more information, see the [Debugging (Unmanaged API Reference)](../unmanaged-api/debugging/index.md) topic.
 
@@ -1852,7 +1852,7 @@ With Ngen PDBs, NGen can create a PDB that contains the IL-to-native mapping wit
 
   For more information about these changes, see [Portable Class Library](../cross-platform/portable-class-library.md).
 
-- The .NET Framework content set now includes documentation for .NET Native, which is a precompilation technology for building and deploying Windows apps. .NET Native compiles your apps directly to native code, rather than to intermediate language (IL), for better performance. For details, see [Compiling Apps with .NET Native](../net-native/index.md).
+- The .NET Framework content set now includes documentation for .NET Native, which is a precompilation technology for building and deploying Windows apps. .NET Native compiles your apps directly to native code, rather than to intermediate language (IL), for better performance. For details, see [Compiling Apps with .NET Native](/windows/uwp/dotnet-native/).
 
 - The [.NET Framework Reference Source](https://referencesource.microsoft.com/) provides a new browsing experience and enhanced functionality. You can now browse through the .NET Framework source code online, [download the reference](https://referencesource.microsoft.com/download.html) for offline viewing, and step through the sources (including patches and updates) during debugging. For more information, see the blog entry [A new look for .NET Reference Source](https://devblogs.microsoft.com/dotnet/a-new-look-for-net-reference-source/).
 

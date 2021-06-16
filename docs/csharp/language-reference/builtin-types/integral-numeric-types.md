@@ -1,7 +1,7 @@
 ---
 title: "Integral numeric types - C# reference"
 description: "Learn the range, storage size, and uses for each of the integral numeric types."
-ms.date: 03/17/2021
+ms.date: 04/10/2021
 f1_keywords:
   - "byte_CSharpKeyword"
   - "sbyte_CSharpKeyword"
@@ -55,8 +55,6 @@ System.Int32 b = 123;
 
 The `nint` and `nuint` types in the last two rows of the table are native-sized integers. They are represented internally by the indicated .NET types, but in each case the keyword and the .NET type are not interchangeable. The compiler provides operations and conversions for `nint` and `nuint` as integer types that it doesn't provide for the pointer types `System.IntPtr` and `System.UIntPtr`. For more information, see [`nint` and `nuint` types](nint-nuint.md).
 
-For information about the native-sized integer types, see [`nint` and `nuint`](nint-nuint.md).
-
 The default value of each integral type is zero, `0`. Each of the integral types except the native-sized types has `MinValue` and `MaxValue` constants that provide the minimum and maximum value of that type.
 
 Use the <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure to represent a signed integer with no upper or lower bounds.
@@ -82,6 +80,10 @@ The preceding example also shows the use of `_` as a *digit separator*, which is
 The type of an integer literal is determined by its suffix as follows:
 
 - If the literal has no suffix, its type is the first of the following types in which its value can be represented: `int`, `uint`, `long`, `ulong`.
+
+  > [!NOTE]
+  > Literals are interpreted as positive values. For example, the literal `0xFF_FF_FF_FF` represents the number `4294967295` of the `uint` type, though it has the same bit representation as the number `-1` of the `int` type. If you need a value of a certain type, cast a literal to that type. Use the `unchecked` operator, if a literal value cannot be represented in the target type. For example, `unchecked((int)0xFF_FF_FF_FF)` produces `-1`.
+
 - If the literal is suffixed by `U` or `u`, its type is the first of the following types in which its value can be represented: `uint`, `ulong`.
 - If the literal is suffixed by `L` or `l`, its type is the first of the following types in which its value can be represented: `long`, `ulong`.
 

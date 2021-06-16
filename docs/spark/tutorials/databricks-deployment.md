@@ -4,6 +4,7 @@ description: Discover how to deploy a .NET for Apache Spark application to Datab
 ms.date: 10/09/2020
 ms.topic: tutorial
 ms.custom: mvc
+recommendations: false
 #Customer intent: As a developer, I want to deployment .NET for Apache Spark application to Databricks.
 ---
 
@@ -142,6 +143,25 @@ Next, you publish the *mySparkApp* created in the [.NET for Apache Spark - Get S
    ```bash
    zip -r publish.zip .
    ```
+
+3. If you have any user-defined functions in your app, the app assemblies, such as DLLs that contain user-defined functions along with their dependencies, need to be placed in the working directory of each *Microsoft.Spark.Worker*.
+
+    Upload your application assemblies to your Databricks cluster:
+
+    ```console
+    cd <path-to-your-app-publish-directory>
+    databricks fs cp <assembly>.dll dbfs:/apps/dependencies
+    ```
+
+    Uncomment and modify the app dependencies section in [db-init.sh](https://github.com/dotnet/spark/blob/master/deployment/db-init.sh) to point to your app dependencies path. Then, upload the updated *db-init.sh* to your cluster:
+
+    ```console
+    cd <path-to-db-init-and-install-worker>
+    databricks fs cp db-init.sh dbfs:/spark-dotnet/db-init.sh
+    ```
+
+> [!Note]
+> For more information, see the [Submit a .NET for Apache Spark job to Databricks guide](../how-to-guides/databricks-deploy-methods.md).
 
 ## Upload files
 

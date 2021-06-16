@@ -2,7 +2,7 @@
 title: The Dapr bindings building block
 description: A description of the bindings building block, its features, benefits, and how to apply it
 author: edwinvw
-ms.date: 02/17/2021
+ms.date: 06/16/2021
 ---
 
 # The Dapr bindings building block
@@ -72,7 +72,7 @@ public class SomeController : ControllerBase
 }
 ```
 
-If the operation should error, you would return the appropriate 400 or 500 level HTTP status code. For bindings that feature *at-least-once-delivery* guarantees, the Dapr sidecar will retry the trigger. Check out [Dapr documentation for resource bindings][1] to see whether they offer *at-least-once* or *exactly once* delivery guarantees.
+If the operation should error, you would return the appropriate 400 or 500 level HTTP status code. For bindings that feature *at-least-once* delivery guarantees, the Dapr sidecar will retry the trigger. Check out [Dapr documentation for resource bindings][1] to see whether they offer *at-least-once* or *exactly-once* delivery guarantees.
 
 ### Output bindings
 
@@ -192,7 +192,7 @@ In this example, Dapr triggers a service by invoking the `/checkOrderBacklog` en
 
 ## Sample application: Dapr Traffic Control
 
-In the Dapr Traffic Control sample application, the TrafficControl service uses the MQTT input binding to retrieve messages from the CameraSimulation.  Figure 8-4 shows the architecture:
+In the Dapr Traffic Control sample application, the TrafficControl service uses the MQTT input binding to retrieve messages from the CameraSimulation. Figure 8-4 shows the architecture:
 
 :::image type="content" source="./media/bindings/input-binding-architecture.png" alt-text="Service Invocation.":::
 
@@ -202,7 +202,7 @@ In the Dapr Traffic Control sample application, the TrafficControl service uses 
 
 MQTT is a lightweight pub/sub messaging protocol, often used in IoT scenarios. Producers sent MQTT messages to a topic; subscribers then retrieve messages from the topic. There are several MQTT message broker products available. The Traffic Control sample application uses [Eclipse Mosquitto](https://mosquitto.org/).
 
-The CameraSimulation doesn't require any Dapr building blocks. It uses the .NET Core library `System.Net.Mqtt` to send MQTT messages:
+The CameraSimulation doesn't depend on any Dapr building blocks. It uses the .NET Core library `System.Net.Mqtt` to send MQTT messages:
 
 ```csharp
 // ...
@@ -220,7 +220,7 @@ _trafficControlService.SendVehicleEntry(vehicleRegistered);
 // ...
 ```
 
-The code uses a proxy of type `ITrafficControlService` to call the TrafficControl service. .NET Core injects an instance of `ITrafficControlService` using constructor injection:
+The code uses a proxy of type `ITrafficControlService` to call the TrafficControl service. .NET Core injects an implementation of the `ITrafficControlService` interface using constructor injection:
 
  ```csharp
 public CameraSimulation(int camNumber, ITrafficControlService trafficControlService)
@@ -250,7 +250,7 @@ public async Task SendVehicleExitAsync(VehicleRegistered vehicleRegistered)
 
 The constructor sets up the MQTT client to send messages to the MQTT broker (Mosquitto) running on port 1883.
 
-On the other end, the TrafficControl service uses the MQTT input binding to receive `VehicleRegistered` messages sent by the CameraSimulation. For each topic, there's a separate component configuration file in the `/dapr/components` folder. The first one is `entrycam.yaml`:
+On the other end, the TrafficControl service uses the MQTT input binding to receive `VehicleRegistered` messages sent by the CameraSimulation. For each subscribed topic, there's a separate component configuration file in the `/dapr/components` folder. The first one is `entrycam.yaml`:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
@@ -270,9 +270,9 @@ scopes:
   - trafficcontrolservice
 ```
 
-The configuration specifies the binding type: `bindings.mqtt`. It also specifies that the broker runs on `localhost:1883`, the standard port that Mosquitto uses. It also exposes the `topic`, `trafficcontrol/entrycam`. Using `scopes`, the config file specifies that only the service with app-id `trafficcontrolservice` will have access to the topic.
+The configuration specifies the binding type: `bindings.mqtt`. It also specifies that the broker runs on `localhost:1883`, the standard port that Mosquitto uses. It also exposes the `topic`, `trafficcontrol/entrycam`. Using `scopes`, the config file specifies that only the service with app-id `trafficcontrolservice` will have access to the binding.
 
-When the TrafficControl service starts, the Dapr sidecar will automatically subscribe to the topic specified in the HttpPost attribute for each controller method. When messages arrive for the topic, the Dapr sidecar will invoke the method. The endpoint name specified in the method attribute is the same as the name of the binding specified in the config file. In this case, it's `entrycam`. Within the TrafficControl service, no code needs to be added to support the endpoint:
+When the TrafficControl service starts, the Dapr sidecar automatically subscribes to the `trafficcontrol/entrycam` MQTT topic specified in the component configuration. When messages arrive on the topic, the Dapr sidecar invokes an HTTP endpoint on your service. The sidecar determines the URL of the HTTP endpoint to call by looking at the `metadata.name` field in the binding configuration. In the example above, the endpoint URL is `/entrycam`. Within the TrafficControl service, no code needs to be added to support the endpoint:
 
 ```csharp
 [HttpPost("entrycam")]
@@ -375,7 +375,7 @@ The metadata section contains the information for connecting to the SMTP server.
 
 The `scopes` element specifies that only the service with app-id `finecollectonservice` can access this binding.
 
-The Traffic Control sample application uses the [MailDev](https://github.com/maildev/maildev) Dapr email component. A development SMTP server, MailDev collects emails and presents them in an inbox web application. It doesn't actually send the emails. MailDev is extremely useful for dev/test and demo scenarios.
+The Traffic Control sample application uses [MailDev](https://github.com/maildev/maildev). MailDev is a development SMTP server that doesn't actually send out emails (by default). Instead, it collects emails and presents them in an inbox web application. MailDev is extremely useful for dev/test and demo scenarios.
 
 Using Dapr bindings in the Traffic Control sample application provides the following benefits:
 

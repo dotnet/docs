@@ -39,7 +39,7 @@ Protecting your privacy is important to us. If you suspect the telemetry feature
 
 The telemetry feature collects the following data.
 
-| .NET SDK versions | Data |
+| Upgrade Assistant versions | Data |
 |--------------|------|
 | >=5.0        | Timestamp of invocation. |
 | >=5.0        | Three-octet IP address used to determine the geographical location. |
@@ -50,11 +50,10 @@ The telemetry feature collects the following data.
 | >=5.0        | Kernel version. |
 | >=5.0        | Upgrade Assistant version. |
 | >=5.0        | The command and argument names invoked. Actual argument values aren't collected. |
-| >=5.0        | Command invoked (for example, `upgrade`) and whether it succeeded. |
 | >=5.0        | MSBuild version used. |
-| >=5.0        | Hashed solution id (or path if no id is available). |
-| >=5.0        | Hashed project id (or path if no id is available) for each project. |
-| >=5.0        | Hashed project id (or path if no id is available) for each entrypoint. |
+| >=5.0        | Hashed solution id (or hashed path if no id is available). |
+| >=5.0        | Hashed project id (or hashed path if no id is available) for each project. |
+| >=5.0        | Hashed project id (or hashed path if no id is available) for each entrypoint. |
 | >=5.0        | For each step, the time to initialize and apply the step. |
 | >=5.0        | For each step, the the decision selected (for example, `apply`). |
 

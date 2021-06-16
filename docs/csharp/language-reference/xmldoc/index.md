@@ -1,7 +1,7 @@
 ---
 title: "XML documentation comments - document APIs using /// comments"
 description: Learn about XML documentation comments. You can create documentation for your code by including XML elements in special comment fields. You can use other tools to build documentation layouts from comments.
-ms.date: 06/10/2021
+ms.date: 06/167/2021
 f1_keywords:
   - "cs.xml"
 helpviewer_keywords:
@@ -23,7 +23,7 @@ This process provides many advantages for you to add API documentation in your c
 - The C# compiler validates the comments match the API signatures for relevant tags.
 - Tools that process the XML documentation files can define XML elements and attributes specific to that tool.
 
-In addition, tools like Visual Studio provide intellisense for many common XML elements used in documentation comments.
+Tools like Visual Studio provide intellisense for many common XML elements used in documentation comments.
 
 This article covers these activities:
 
@@ -42,21 +42,7 @@ You create documentation for your code by writing special comment fields indicat
 public class MyClass {}
 ```
 
-You set the [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) option and the compiler will find all comment fields with XML tags in the source code and create an XML documentation file from those comments. When this option is enabled, the compiler generates the [cs1591](../compiler-messages/cs1591.md) warning for any publicly visible member declared in your project. The compiler verifies the syntax of the following XML elements in comments:
-
-- `<exception>`
-- `<include>`
-- `<param>`
-- `<permission>`
-- `<see>`
-- `<seealso>`
-- `<typeparam>`
-
-Visual Studio provides intellisense for the tags verified by the compiler and the following additional tags:
-
-- `<example>`
-- `<inheritdoc>`
-- `<remarks>`
+You set the [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) option and the compiler will find all comment fields with XML tags in the source code and create an XML documentation file from those comments. When this option is enabled, the compiler generates the [cs1591](../compiler-messages/cs1591.md) warning for any publicly visible member declared in your project.
 
 ## XML comment formats
 
@@ -123,10 +109,8 @@ To refer to XML elements (for example, your function processes specific XML elem
 The following tools create output from XML comments:
 
 - [DocFX](https://dotnet.github.io/docfx/): *DocFX* is an API documentation generator for .NET, which currently supports C#, VB and F#. It also allows you to customize the generated reference documentation. DocFX builds a static HTML website from your source code and Markdown files. Also, DocFX provides you the flexibility to customize the layout and style of your website through templates. You can also create custom templates.
-- [Sandcastle](https://github.com/EWSoftware/SHFB): The *Sandcastle tools* create help files for managed class libraries containing both conceptual and API reference topics. The Sandcastle tools are command-line based and have no GUI front-end, project management features, or an automated build process. The Sandcastle Help File Builder provides standalone GUI and command-line based tools to build a help file in an automated fashion. A Visual Studio integration package is also available for it so that help projects can be created and managed entirely from within Visual Studio.
-- [Doxygen](https://github.com/doxygen/doxygen): *Doxygen* generates an on-line documentation browser (in HTML) or an off-line reference manual (in LaTeX) from a set of documented source files. There's also support for generating output in RTF (MS-Word), PostScript, hyperlinked PDF, compressed HTML, DocBook, and Unix man pages. You can configure doxygen to extract the code structure from undocumented source files.
-
-## TODO:  Include text from ../codedoc.md
+- [Sandcastle](https://github.com/EWSoftware/SHFB): The *Sandcastle tools* create help files for managed class libraries containing both conceptual and API reference pages. The Sandcastle tools are command-line based and have no GUI front-end, project management features, or an automated build process. The Sandcastle Help File Builder provides standalone GUI and command-line based tools to build a help file in an automated fashion. A Visual Studio integration package is also available for it so that help projects can be created and managed entirely from within Visual Studio.
+- [Doxygen](https://github.com/doxygen/doxygen): *Doxygen* generates an on-line documentation browser (in HTML) or an off-line reference manual (in LaTeX) from a set of documented source files. There's also support for generating output in RTF (MS-Word), PostScript, hyperlinked PDF, compressed HTML, DocBook, and Unix man pages. You can configure Doxygen to extract the code structure from undocumented source files.
 
 ### ID strings
 
@@ -155,7 +139,7 @@ The XML file isn't a hierarchical representation of your code. It's a flat list 
   - ELEMENT_TYPE_BYREF is represented as a '\@' following the modified type.
   - ELEMENT_TYPE_CMOD_OPT is represented as a '!' and the fully qualified name of the modifier class, following the modified type.
   - ELEMENT_TYPE_SZARRAY is represented as "[]" following the element type of the array.
-  - ELEMENT_TYPE_ARRAY is represented as [*lowerbound*:`size`,*lowerbound*:`size`] where the number of commas is the rank - 1, and the lower bounds and size of each dimension, if known, are represented in decimal. If a lower bound or size isn't specified, it's omitted. If the lower bound and size for a particular dimension are omitted, the ':' is omitted as well. For example, a 2-dimensional array with 1 as the lower bounds and unspecified sizes is [1:,1:].
+  - ELEMENT_TYPE_ARRAY is represented as [*lowerbound*:`size`,*lowerbound*:`size`] where the number of commas is the rank - 1, and the lower bounds and size of each dimension, if known, are represented in decimal. If a lower bound or size isn't specified, it's omitted. If the lower bound and size for a particular dimension are omitted, the ':' is omitted as well. For example, a two-dimensional array with 1 as the lower bounds and unspecified sizes is [1:,1:].
 - For conversion operators only (`op_Implicit` and `op_Explicit`), the return value of the method is encoded as a '~' followed by the return type.
 - For generic types, the name of the type is followed by a backtick and then a number that indicates the number of generic type parameters. For example:
      ``<member name="T:SampleClass`2">`` is the tag for a type that is defined as `public class SampleClass<T, U>`.

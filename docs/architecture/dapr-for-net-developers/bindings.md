@@ -194,7 +194,7 @@ In this example, Dapr triggers a service by invoking the `/checkOrderBacklog` en
 
 In the Dapr Traffic Control sample application, the TrafficControl service uses the MQTT input binding to retrieve messages from the CameraSimulation. Figure 8-4 shows the conceptual architecture of the Dapr Traffic Control sample application. The Dapr input binding is used in flows marked with number 5 in the diagram:
 
-:::image type="content" source="./media/bindings/dapr-solution-input-binding.png" alt-text="Conceptual architecture of the Dapr Traffic Control sample application.":::
+:::image type="content" source="./media/bindings/dapr-solution-input-binding.png" alt-text="Conceptual architecture of the Dapr Traffic Control sample application - input binding.":::
 
 **Figure 8-4**. Conceptual architecture of the Dapr Traffic Control sample application.
 
@@ -306,7 +306,7 @@ scopes:
 
 The FineCollection service uses the Dapr SMTP output binding to send emails. Figure 8-5 shows the conceptual architecture of the Dapr Traffic Control sample application. The Dapr input binding is used in flows marked with number 4 in the diagram:
 
-:::image type="content" source="./media/bindings/dapr-solution-output-binding.png" alt-text="Conceptual architecture of the Dapr Traffic Control sample application.":::
+:::image type="content" source="./media/bindings/dapr-solution-output-binding.png" alt-text="Conceptual architecture of the Dapr Traffic Control sample application - output binding.":::
 
 **Figure 8-5**. Conceptual architecture of the Dapr Traffic Control sample application.
 

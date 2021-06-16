@@ -25,12 +25,6 @@ items:
       href: install/on-windows-8-1.md
     - name: Windows 8 and Windows Server 2012
       href: install/on-windows-8.md
-    - name: Windows 7 SP1 and Windows Server 2008 R2
-      href: install/on-windows-7.md
-    - name: Windows Vista and Windows Server 2008
-      href: install/on-windows-vista.md
-    - name: Windows XP and Windows Server 2003
-      href: install/on-windows-xp.md
   - name: Repair .NET framework
     href: install/repair.md
   - name: Troubleshoot
@@ -726,8 +720,8 @@ items:
 - name: Develop for multiple platforms
   items:
   - name: Overview
-    href: cross-platform/index.md
     displayName: cross platform
+    href: cross-platform/index.md
   - name: Portable Class Library
     href: cross-platform/portable-class-library.md
   - name: Use Portable Class Library with MVVM

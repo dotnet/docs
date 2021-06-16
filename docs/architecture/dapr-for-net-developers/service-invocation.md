@@ -2,7 +2,7 @@
 title: The Dapr service invocation building block
 description: A description of the service invocation building block, its features, benefits, and how to apply it
 author: amolenk
-ms.date: 06/18/2021
+ms.date: 06/16/2021
 ---
 
 # The Dapr service invocation building block
@@ -190,7 +190,7 @@ The `HttpRequestMessage` now has the following properties set:
 - Url = `http://127.0.0.1:3500/v1.0/invoke/orderservice/method/submit`
 - HttpMethod = POST
 - Content =  `JsonContent` object containing the JSON-serialized `order`
-- Headers. Authorization = "bearer \<token>"
+- Headers.Authorization = "bearer \<token>"
 
 Once you've got the request set up the way you want, use `DaprClient.InvokeMethodAsync` to send it:
 
@@ -309,7 +309,7 @@ The `VehicleRegistrationService` class contains a single method: `GetVehicleInfo
  }
  ```
 
-The code doesn't require specific Dapr class references. It instead leverages the Dapr ASP.NET Core integration as described in the [Invoke HTTP services using HttpClient](#invoke-http-services-using-httpclient) section of this module. The following code in the `ConfigureService` method of the `Startup` class registers the `VehicleRegistrationService` proxy:
+The code doesn't depend on any Dapr classes directly. It instead leverages the Dapr ASP.NET Core integration as described in the [Invoke HTTP services using HttpClient](#invoke-http-services-using-httpclient) section of this module. The following code in the `ConfigureService` method of the `Startup` class registers the `VehicleRegistrationService` proxy:
 
 ```csharp
 // ...
@@ -317,13 +317,12 @@ The code doesn't require specific Dapr class references. It instead leverages th
 services.AddSingleton<VehicleRegistrationService>(_ => 
     new VehicleRegistrationService(DaprClient.CreateInvokeHttpClient(
         "vehicleregistrationservice", $"http://localhost:{daprHttpPort}"
-    )
-));
+    )));
 
 // ...
 ```
 
-The `DaprClient.CreateInvokeHttpClient` creates an `HttpClient` instance that calls the VehicleRegistration service using the service invocation building block under the covers. It expects the Dapr `app-id` sidecar Url of the target service. At start time, the `daprHttpPort` argument contains the port used for HTTP communication with the Dapr sidecar.
+The `DaprClient.CreateInvokeHttpClient` creates an `HttpClient` instance that calls the VehicleRegistration service using the service invocation building block under the covers. It expects both the Dapr `app-id` of the target service and the URL of its Dapr sidecar. At start time, the `daprHttpPort` argument contains the port number used for HTTP communication with the Dapr sidecar.
 
 Using Dapr service invocation in the Traffic Control sample application provides several benefits:
 

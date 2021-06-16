@@ -66,7 +66,7 @@ The `runtime` attribute specifies the Common Language Runtime (CLR) version that
 
 ## <a name="sku"></a> "sku id" values
 
-The `sku` attribute uses a target framework moniker (TFM) to indicate the version of the .NET Framework that the app targets and requires to run. The following table lists valid values that are supported by the `sku` attribute, starting with the .NET Framework 4.
+The `sku` attribute uses a target framework moniker (TFM) to indicate the version of .NET Framework that the app targets and requires to run. The following table lists valid values that are supported by the `sku` attribute, starting with .NET Framework 4.
 
 |.NET Framework version|`sku` attribute|
 |----------------------------|---------------------|
@@ -91,7 +91,7 @@ The `sku` attribute uses a target framework moniker (TFM) to indicate the versio
 
 ## Example
 
-The following example shows how to specify the supported runtime version in a configuration file. The configuration file indicates that the app targets the .NET Framework 4.7.
+The following example shows how to specify the supported runtime version in a configuration file. The configuration file indicates that the app targets .NET Framework 4.7.
 
 ```xml
 <configuration>

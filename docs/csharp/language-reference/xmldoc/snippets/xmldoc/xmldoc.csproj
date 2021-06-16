@@ -5,6 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <DocumentationFile>xmldoc.xml</DocumentationFile>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <StartupObject>xmldoc.Program</StartupObject>
   </PropertyGroup>
 
 </Project>

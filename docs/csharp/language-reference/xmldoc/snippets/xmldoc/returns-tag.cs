@@ -1,17 +1,12 @@
-﻿/*
-    The main Math class
-    Contains all methods for performing basic math functions
-*/
-/// <summary>
-/// The main Math class.
-/// Contains all methods for performing basic math functions.
-/// </summary>
-public class Math
+﻿public class MathReturn
 {
-    // Adds two integers and returns the result
+    // <ReturnTag>
     /// <summary>
     /// Adds two integers and returns the result.
     /// </summary>
+    /// <returns>
+    /// The sum of two integers.
+    /// </returns>
     public static int Add(int a, int b)
     {
         // If any parameter is equal to the max value of an integer
@@ -21,4 +16,5 @@ public class Math
 
         return a + b;
     }
+    // </ReturnTag>
 }

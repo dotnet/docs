@@ -1,7 +1,7 @@
 ---
 title: "XML documentation comments - document APIs using /// comments"
 description: Learn about XML documentation comments. You can create documentation for your code by including XML elements in special comment fields. You can use other tools to build documentation layouts from comments.
-ms.date: 06/167/2021
+ms.date: 06/17/2021
 f1_keywords:
   - "cs.xml"
 helpviewer_keywords:
@@ -99,7 +99,7 @@ The use of XML doc comments requires delimiters that indicate where a documentat
     ```
     <!-- markdownlint-enable MD010 -->
 
-To refer to XML elements (for example, your function processes specific XML elements that you want to describe in an XML documentation comment), you can use the standard quoting mechanism (`<` and `>`).  To refer to generic identifiers in code reference (`cref`) elements, you can use either the escape characters (for example, `cref="List&lt;T&gt;"`) or braces (`cref="List{T}"`).  As a special case, the compiler parses the braces as angle brackets to make the documentation comment less cumbersome to author when referring to generic identifiers.
+To refer to XML elements (for example, your function processes specific XML elements that you want to describe in an XML documentation comment), you can use the standard quoting mechanism (`&lt;` and `&gt;`).  To refer to generic identifiers in code reference (`cref`) elements, you can use either the escape characters (for example, `cref="List&lt;T&gt;"`) or braces (`cref="List{T}"`).  As a special case, the compiler parses the braces as angle brackets to make the documentation comment less cumbersome to author when referring to generic identifiers.
 
 > [!NOTE]
 > The XML documentation comments are not metadata; they are not included in the compiled assembly and therefore they are not accessible through reflection.

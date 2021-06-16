@@ -485,9 +485,9 @@ If you want to emit telemetry from your .NET application code, you should consid
 
 Because the Traffic Control sample application runs with Dapr, all the telemetry described in this chapter is available. If you run the application and open the Zipkin web front end, you'll see end-to-end tracing. Figure 10-12 shows an example:
 
-:::image type="content" source="./media/observability/traffic-control-zipkin.png" alt-text="Dapr output binding flow":::
+:::image type="content" source="./media/observability/traffic-control-zipkin.png" alt-text="Zipkin end-to-end tracing example":::
 
-**Figure 10-12**. Dapr output binding flow.
+**Figure 10-12**. Zipkin end-to-end tracing example.
 
 This trace shows the communication that occurs when a speeding violation has been detected:
 

@@ -2,7 +2,7 @@
 title: The Dapr secrets management building block
 description: A description of the secrets management building block, its features, benefits, and how to apply it
 author: edwinvw
-ms.date: 06/10/2021
+ms.date: 06/18/2021
 ---
 
 # The Dapr secrets management building block
@@ -349,7 +349,7 @@ The [Dapr Azure Key Vault secret store documentation](https://docs.dapr.io/opera
 
 #### Use Key Vault when running in self-hosted mode
 
-Exposing Azure Key Vault in Dapr self-hosted mode requires the following component configuration file:
+Using Azure Key Vault in Dapr self-hosted mode requires the following component configuration file:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
@@ -520,7 +520,7 @@ The file describes a secrets management component entitled `trafficcontrol-secre
 }
 ```
 
-Note how the Redis server is used without a password. To connect to the SMTP server, the credentials are `_username` and `_password`. The license key for the FineCalculator license key is a randomly generated string.
+In the sample application the Redis server is used without a password. To connect to the SMTP server, the credentials are `_username` and `_password`. The license key for the FineCalculator license key is a randomly generated string.
 
 While secrets are stored at nested levels, the secrets management building block flattens this hierarchy when the file is read. It uses a period as a level separator (as specified in the `nestedSeparator` field in the component configuration file). This construct enables you to reference secrets with a flattened name, for example: `smtp.user`.
 
@@ -616,7 +616,7 @@ Unlike the local secrets store, the Kubernetes store doesn't explicitly specify 
 
 ### Redis server credentials
 
-Next. examine the `statestore.yaml` component configuration file in the `dapr/components` folder:
+Next, examine the `statestore.yaml` component configuration file in the `dapr/components` folder:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
@@ -646,7 +646,7 @@ Once again, the `auth` section references the secrets management component named
 
 ### FineCalculator component license key
 
-The FineCollection service consumes a component that calculates the fine based on the information of a speeding violation. This component is implemented as a domain service and is abstracted by the `IFineCalculator` interface:
+The FineCollection service uses a component that calculates the fine based on the information of a speeding violation. This component is implemented as a domain service and is abstracted by the `IFineCalculator` interface:
 
 ```csharp
 public interface IFineCalculator

@@ -17,6 +17,8 @@ Consider, for example, a Twitter account that triggers an event whenever a user 
 
 :::image type="content" source="./media/bindings/bindings-architecture.png" alt-text="Conceptual architecture of a Dapr resource binding.":::
 
+**Figure 8-1**. Conceptual architecture of a Dapr resource binding.
+
 At first glance, resource binding behavior may appear similar to the [Publish/Subscribe pattern](publish-subscribe.md) described earlier in this book. While they share similarities, there are differences. Publish/subscribe focuses on asynchronous communication between Dapr services. Resource binding has a much wider scope. It focuses on system interoperability across software platforms. Exchanging information between disparate applications, datastores, and services outside your microservice application.
 
 ## How it works

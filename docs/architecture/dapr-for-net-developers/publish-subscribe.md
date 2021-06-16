@@ -287,11 +287,11 @@ You have to specify several elements with every subscription:
 
 ## Sample application: Dapr Traffic Control
 
-In Dapr Traffic Control sample app, the TrafficControl service uses the Dapr pub/sub building block to send speeding violations to the FineCollection service. Figure 7-4 shows the architecture:
+In Dapr Traffic Control sample app, the TrafficControl service uses the Dapr pub/sub building block to send speeding violations to the FineCollection service. Figure 7-4 shows the conceptual architecture of the Dapr Traffic Control sample application. The Dapr pub/sub building block is used in flows marked with number 2 in the diagram:
 
-:::image type="content" source="./media/publish-subscribe/pub-sub-architecture.png" alt-text="State Management.":::
+:::image type="content" source="./media/publish-subscribe/dapr-solution-pub-sub.png" alt-text="Conceptual architecture of the Dapr Traffic Control sample application.":::
 
-**Figure 7-4**. Publish-subscribe architecture.
+**Figure 7-4**. Conceptual architecture of the Dapr Traffic Control sample application.
 
 Speeding violations are handled by the `CollectionController`, an ordinary ASP.NET Core Controller. The `CollectionController.CollectFine` method subscribes to and handles `SpeedingViolation` event messages:
 

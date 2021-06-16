@@ -254,11 +254,11 @@ spec:
 
 ## Sample application: Dapr Traffic Control
 
-In Dapr Traffic Control sample app, the FineCollection service uses the Dapr service invocation building block to retrieve vehicle and owner information from the VehicleRegistration service. Figure 6-2 shows the architecture:
+In Dapr Traffic Control sample app, the FineCollection service uses the Dapr service invocation building block to retrieve vehicle and owner information from the VehicleRegistration service. Figure 6-2 shows the conceptual architecture of the Dapr Traffic Control sample application. The Dapr service invocation building block is used in flows marked with number 1 in the diagram:
 
-:::image type="content" source="./media/service-invocation/service-invocation-architecture.png" alt-text="Service Invocation.":::
+:::image type="content" source="./media/service-invocation/dapr-solution-service-invocation.png" alt-text="Conceptual architecture of the Dapr Traffic Control sample application.":::
 
-**Figure 6-2**. Service invocation architecture.
+**Figure 6-2**. Conceptual architecture of the Dapr Traffic Control sample application.
 
 Information is retrieved by the ASP.NET `CollectionController` class in the FineCollection service. The `CollectFine` method expects an incoming `SpeedingViolation` parameter. It invokes a Dapr service invocation building block to call to the VehicleRegistration service. The code snippet is presented below.
 

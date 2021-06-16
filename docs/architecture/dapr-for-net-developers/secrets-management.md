@@ -465,11 +465,11 @@ The `allowedSecrets` and `deniedSecrets` properties take precedence over the `de
 
 ## Sample application: Dapr Traffic Control
 
-In Dapr Traffic Control sample app, the secrets management building block is used in several places. Secrets are retrieved from code and referenced by Dapr component configuration files. Figure 10-2 shows the architecture:
+In Dapr Traffic Control sample app, the secrets management building block is used in several places. Secrets are retrieved from code and referenced by Dapr component configuration files. Figure 10-2 shows the conceptual architecture of the Dapr Traffic Control sample application. The Dapr secrets management building block is used in flows marked with number 6 in the diagram:
 
-:::image type="content" source="./media/secrets/secrets-management-architecture.png" alt-text="State Management.":::
+:::image type="content" source="./media/secrets/dapr-solution-secrets-management.png" alt-text="Conceptual architecture of the Dapr Traffic Control sample application.":::
 
-**Figure 10-2**. Secrets management architecture.
+**Figure 10-2**. Conceptual architecture of the Dapr Traffic Control sample application.
 
 The FineCollection service uses an SMTP output binding for sending emails (see the [Bindings](bindings.md) chapter). The email component file consumes the secrets management building block to retrieve credentials to connect to the SMTP server. To calculate the fine for a speeding violation, the service uses a fictitious FineCalculator component that requires a license key. It retrieves this license key from the secrets management building block.
 

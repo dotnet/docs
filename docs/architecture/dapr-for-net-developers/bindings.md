@@ -13,7 +13,7 @@ Cloud-based *serverless* offerings, such as Azure Functions and AWS Lambda, have
 
 Dapr resource bindings enable your services to integrate business operations across external resources outside of the immediate application. An event from an external system could trigger an operation in your service passing in contextual information. Your service could then expand the operation by triggering an event in another external system, passing in contextual payload information. Your service communicates without coupling or awareness of the external resource. The plumbing is encapsulated inside pre-defined Dapr components. The Dapr component to use can be easily swapped at runtime without code changes.
 
-Consider, for example, a Twitter account that triggers an event whenever a user tweets a keyword. Your service exposes an event handler that receives and processes the tweet. Once complete, your service triggers an event that invokes an external Twilio service. Twilio sends an SMS message that includes the tweet. Figure 8-1 show the conceptual architecture of this operation.
+Consider, for example, a Twitter account that triggers an event whenever a user tweets a keyword. Your service exposes an event handler that receives and processes the tweet. Once complete, your service triggers an event that invokes an external Twilio service. Twilio sends an SMS message that includes the tweet. Figure 8-1 show the conceptual architecture of this operation:
 
 :::image type="content" source="./media/bindings/bindings-architecture.png" alt-text="Conceptual architecture of a Dapr resource binding.":::
 
@@ -192,11 +192,11 @@ In this example, Dapr triggers a service by invoking the `/checkOrderBacklog` en
 
 ## Sample application: Dapr Traffic Control
 
-In the Dapr Traffic Control sample application, the TrafficControl service uses the MQTT input binding to retrieve messages from the CameraSimulation. Figure 8-4 shows the architecture:
+In the Dapr Traffic Control sample application, the TrafficControl service uses the MQTT input binding to retrieve messages from the CameraSimulation. Figure 8-4 shows the conceptual architecture of the Dapr Traffic Control sample application. The Dapr input binding is used in flows marked with number 5 in the diagram:
 
-:::image type="content" source="./media/bindings/input-binding-architecture.png" alt-text="Service Invocation.":::
+:::image type="content" source="./media/bindings/dapr-solution-input-binding.png" alt-text="Conceptual architecture of the Dapr Traffic Control sample application.":::
 
-**Figure 8-4**. Input binding architecture.
+**Figure 8-4**. Conceptual architecture of the Dapr Traffic Control sample application.
 
 ### MQTT input binding
 
@@ -304,11 +304,11 @@ scopes:
 
 ### SMTP output binding
 
-The FineCollection service uses the Dapr SMTP output binding to send emails. Figure 8-5 shows the architecture:
+The FineCollection service uses the Dapr SMTP output binding to send emails. Figure 8-5 shows the conceptual architecture of the Dapr Traffic Control sample application. The Dapr input binding is used in flows marked with number 4 in the diagram:
 
-:::image type="content" source="./media/bindings/output-binding-architecture.png" alt-text="Service Invocation.":::
+:::image type="content" source="./media/bindings/dapr-solution-output-binding.png" alt-text="Conceptual architecture of the Dapr Traffic Control sample application.":::
 
-**Figure 8-5**. Output binding architecture.
+**Figure 8-5**. Conceptual architecture of the Dapr Traffic Control sample application.
 
  The `CollectFine` method on the CollectionController in the FineCollection service contains code that uses the Dapr client to invoke the output binding:
 

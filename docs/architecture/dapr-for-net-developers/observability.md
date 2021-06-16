@@ -2,7 +2,7 @@
 title: The Dapr observability building block
 description: A description of the observability building block, its features, benefits, and how to apply it
 author: edwinvw
-ms.date: 06/10/2021
+ms.date: 06/16/2021
 ---
 
 # The Dapr observability building block
@@ -13,12 +13,12 @@ With so many separate, moving parts, how do you make sense of what is going on? 
 
 The system information used to gain observability is referred to as **telemetry**. It can be divided into four broad categories:
 
-1. **Distributed tracing** provides insight into the traffic between services and those involved in distributed transactions.
-1. **Metrics** provides numeric insights into the performance of a service and its resource consumption.
-1. **Logging** provides messaging insights into how code is executing and if errors have occurred.
+1. **Distributed tracing** provides insights into the traffic between services involved in distributed business transactions.
+1. **Metrics** provides insights into the performance of a service and its resource consumption.
+1. **Logging** provides insights into how code is executing and if errors have occurred.
 1. **Health** endpoints provide insight into the availability of a service.
 
-The depth of telemetry is determined by the observability features of an application platform. Consider the Azure cloud. It provides a rich telemetry experience that includes all of the telemetry categories. With simple configuration, Azure IaaS and PaaS services will propagate and publish telemetry to the [Azure Monitor](https://azure.microsoft.com/services/monitor/#product-overview) and [Azure Application Insights](/azure/azure-monitor/app/app-insights-overview) services. Application Insights presents system logging, tracing, and problem areas with highly visual dashboards. It can even render a diagram showing the dependencies between services based on their communication.
+The depth of telemetry is determined by the observability features of an application platform. Consider the Azure cloud. It provides a rich telemetry experience that includes all of the telemetry categories. With little configuration, Azure IaaS and PaaS services will propagate and publish telemetry to the [Azure Monitor](https://azure.microsoft.com/services/monitor/#product-overview) and [Azure Application Insights](/azure/azure-monitor/app/app-insights-overview) services. Application Insights presents system logging, tracing, and problem areas with highly visual dashboards. It can even render a diagram showing the dependencies between services based on their communication.
 
 However, what if an application can't use Azure PaaS and IaaS resources? Is it still possible to take advantage of the rich telemetry experience of Application Insights? The answer is yes. A non-Azure application can import libraries, add configuration, and instrument code to emit telemetry to Azure Application Insights. However, this approach **tightly couples** the application to Application Insights. Moving the app to a different monitoring platform could involve expensive refactoring. Wouldn't it be great to avoid tight coupling and consume observability outside of the code?
 
@@ -50,7 +50,7 @@ At the beginning of this chapter, four categories of telemetry were identified. 
 
 ### Distributed tracing
 
-Distributed tracing provides insight into traffic that flows across services in a distributed application. The logs of exchanged request and response messages are a source of invaluable information for troubleshooting issues. The hard part is *correlating messages* that originate within the same operation.
+Distributed tracing provides insight into traffic that flows across services in a distributed application. The logs of exchanged request and response messages are a source of invaluable information for troubleshooting issues. The hard part is *correlating messages* that belong to the same business transaction.
 
 Dapr uses the [W3C Trace Context](https://www.w3.org/TR/trace-context) to correlate related messages. It injects the same context information into requests and responses that form a unique operation. Figure 10-2 shows how correlation works:
 
@@ -107,7 +107,7 @@ kubectl apply -f dapr-config.yaml
 
 When installing Dapr in self-hosted mode, a Zipkin server is automatically installed and tracing is enabled in the default configuration file located in `$HOME/.dapr/config.yaml` or `%USERPROFILE%\.dapr\config.yaml` on Windows.
 
-When installing Dapr on a Kubernetes cluster, Zipkin must be provisioned. Use the following Kubernetes manifest file entitled `zipkin.yaml` to deploy a standard Zipkin server to a Kubernetes cluster:
+When installing Dapr on a Kubernetes cluster, Zipkin must be deployed manually. Use the following Kubernetes manifest file entitled `zipkin.yaml` to deploy a standard Zipkin server to a Kubernetes cluster:
 
 ```yaml
 kind: Deployment
@@ -231,7 +231,7 @@ The animated dots on the lines between the services represent requests and move 
 
 #### Use a Jaeger or New Relic monitoring back end
 
-Beyond Zipkin, other monitoring back-end software can also ingest telemetry with the Zipkin format. [Jaeger](https://www.jaegertracing.io/) is an open source tracing system created by Uber Technologies. It's used to trace transactions between distributed services and troubleshoot complex microservices environments. [New Relic](https://newrelic.com/) is a *full-stack* observability platform. It links relevant data from a distributed application to provide a complete picture of your system. To try them out, specify an `endpointAddress` pointing to either a Jaeger or New Relic server in the Dapr configuration file. Here's an example of a configuration file that configures Dapr to send telemetry to a Jaeger server. The URL for Jaeger is identical to the URL for the Zipkin. The only difference is the port number on which the server runs:
+Beyond Zipkin, other monitoring back-end software can also ingest telemetry with the Zipkin format. [Jaeger](https://www.jaegertracing.io/) is an open source tracing system created by Uber Technologies. It's used to trace transactions between distributed services and troubleshoot complex microservices environments. [New Relic](https://newrelic.com/) is a *full-stack* observability platform. It links relevant data from a distributed application to provide a complete picture of your system. To try them out, specify an `endpointAddress` pointing to either a Jaeger or New Relic server in the Dapr configuration file. Here's an example of a configuration file that configures Dapr to send telemetry to a Jaeger server. The URL for Jaeger is identical to the URL for the Zipkin. The only difference is the number of the port on which the server runs:
 
  ```yaml
  apiVersion: dapr.io/v1alpha1
@@ -491,7 +491,7 @@ Because the Traffic Control sample application runs with Dapr, all the telemetry
 
 This trace shows the communication that occurs when a speeding violation has been detected:
 
-1. An exiting vehicle triggers the MQTT input binding that sends a vehicle, lane, and timestamp message.
+1. An exiting vehicle triggers the MQTT input binding that sends a message containing the vehicle license number, lane, and timestamp.
 1. The MQTT input binding invokes the TrafficControl service with the message.
 1. The TrafficControl service retrieves the state for the vehicle, appends the entry, and saves the updated vehicle state back to the state store.
 1. The TrafficControl service publishes the speeding violation using pub/sub to the `speedingviolations` topic.
@@ -499,7 +499,7 @@ This trace shows the communication that occurs when a speeding violation has bee
 1. The FineCollection service invokes the `vehicleinfo` endpoint of the VehicleRegistration service using service invocation.
 1. The FineCollection service invokes an output binding for sending the email.
 
-Click any trace line (span) to see more details. If you were to click on the last line, you'd see the `sendmail` binding component invoked to send the driver a violation notice.
+Click any trace line (span) to see more details. If you click on the last line, you'll see the `sendmail` binding component invoked to send the driver a violation notice.
 
 :::image type="content" source="./media/observability/traffic-control-zipkin-details.png" alt-text="Output binding trace details":::
 

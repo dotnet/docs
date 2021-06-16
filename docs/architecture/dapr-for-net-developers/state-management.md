@@ -2,7 +2,7 @@
 title: The Dapr state management building block
 description: A description of the state management building block, its features, benefits, and how to apply it.
 author: amolenk
-ms.date: 05/31/2021
+ms.date: 06/16/2021
 ---
 
 # The Dapr state management building block
@@ -378,7 +378,7 @@ public class DaprVehicleStateRepository : IVehicleStateRepository
 }
 ```
 
-Note how the `DaprClient` object greatly simplifies the plumbing required to manage state. The `SaveVehicleStateAsync` method uses it to save vehicle state to the configured Dapr state store, keying off the vehicle's license number. The `GetVehicleStateAsync` uses `DaprClient` to retrieve vehicle state.
+As the preceding code snippet shows, the implementation of the `DaprVehicleStateRepository` class is pretty straightforward. The `SaveVehicleStateAsync` method uses the injected `DaprClient` object to save the state to the configured Dapr state store. It uses the vehicle's license number as the key. The application can retrieve the saved state by calling the `GetVehicleStateAsync` method.
 
 The TrafficControl service uses Redis as its underlying data store. Looking at the code, you'd never know it. A service consuming the Dapr state management building block doesn't directly reference any state components. Instead, a Dapr component configuration file specifies the store:
 

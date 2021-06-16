@@ -2,7 +2,7 @@
 title: The Dapr publish & subscribe building block
 description: A description of the Dapr publish & subscribe building-block and how to apply it
 author: edwinvw
-ms.date: 05/31/2021
+ms.date: 06/16/2021
 ---
 
 # The Dapr publish & subscribe building block
@@ -305,9 +305,9 @@ public async Task<ActionResult> CollectFine(SpeedingViolation speedingViolation,
 }
 ```
 
-The method is decorated with the Dapr `Topic` attribute, which abstracts the complex pub/sub plumbing. It instructs the service to subscribe to messages from the `speedingviolations` topic found in the Dapr component named `pubsub`.
+The method is decorated with the Dapr `Topic` attribute. It specifies that the pub/sub component named `pubsub` should be used to subscribe to messages sent to the `speedingviolations` topic.
 
-The TrafficControl service sends speeding violations. Near the end of the `VehicleExit` method in the `TrafficController` class, the `Dapr.Client` object is used to publish `SpeedingViolation` messages using the pub/sub building block:
+The TrafficControl service sends speeding violations. Near the end of the `VehicleExit` method in the `TrafficController` class, the `DaprClient` object is used to publish `SpeedingViolation` messages using the pub/sub building block:
 
 ```csharp
 /// ...
@@ -328,7 +328,7 @@ await daprClient.PublishEventAsync("pubsub", "speedingviolations", speedingViola
 
 Note how the `DaprClient` object reduces the call to a single line of code, again, binding to the `speedingviolations` topic and the Dapr `pubsub` component.
 
-While the Traffic Control app uses RabbitMQ as the message broker, it never directly references RabitMQ. Instead, the accompanying Dapr component configuration file named `pubsub.yaml` in the `/dapr/components` folder specifies the message broker:
+While the Traffic Control app uses RabbitMQ as the message broker, it never directly references RabbitMQ. Instead, the accompanying Dapr component configuration file named `pubsub.yaml` in the `/dapr/components` folder specifies the message broker:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
@@ -359,7 +359,7 @@ scopes:
 
 The `type` element in the configuration, `pubsub.rabbitmq` instructs the building block to use the Dapr RabbitMQ component.
 
-The `scopes` element in the configuration *constrains* application access to the RabbitMQ component. Only the TrafficControl and FineCollection service can consume it.
+The `scopes` element in the configuration *constrains* application access to the RabbitMQ component. Only the TrafficControl and FineCollection services can consume it.
 
 Using Dapr pub/sub in the Traffic Control sample application offers the following benefits:
 

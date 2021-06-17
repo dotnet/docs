@@ -90,6 +90,9 @@ An Azure Container Registry (ACR) resource allows you to build, store, and manag
 1. Select **Review + create**.
 1. After seeing **Validation passed**, select **Create**.
 
+> [!IMPORTANT]
+> In order to use this container registry when creating a container instance, you must enable **Admin user**. Select **Access keys**, and enable **Admin user**.
+
 For more information, see [Quickstart: Create an Azure container registry](/azure/container-registry/container-registry-get-started-portal).
 
 ## Push image to ACR
@@ -139,7 +142,7 @@ To create a Container Instance, you'll need to [create a new resource](https://m
 1. Select a **Region** that corresponds to the previous **Location** selection.
 1. Select **Azure Container Registry**.
 1. Select the **Registry** by the name provided in the previous step.
-1. Select the **Image** and**Image tag**.
+1. Select the **Image** and **Image tag**.
 1. Select **Review + create**.
 1. Assuming **Validation passed**, select **Create**.
 
@@ -147,7 +150,11 @@ For more information, see [Quickstart: Create an Azure container instance](/azur
 
 ## Verify service functionality
 
-TODO: ...
+Immediately after the container instance is created, it starts running. From the Azure portal in the container instance resource, select the **Containers** option.
+
+:::image type="content" source="media/container-instance-running.png" lightbox="media/container-instance-running.png" alt-text="Azure portal: Container instance running":::
+
+You'll see the containers, and their current **State**. In this case it will be **Running**. Select **Logs** to see the .NET worker service output.
 
 ## See also
 

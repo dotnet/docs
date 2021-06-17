@@ -1,15 +1,5 @@
 {
     "redirections": [
-    {
-      "source_path": "docs/framework/mef/composition-analysis-tool-mefx.md",
-      "redirect_url": "/previous-versions/dotnet/framework/mef/composition-analysis-tool-mefx",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/framework/mef/mef-for-net-for-windows-store-apps.md",
-      "redirect_url": "/previous-versions/dotnet/framework/mef/mef-for-net-for-windows-store-apps",
-      "redirect_document_id": false
-    },
         {
             "source_path": "docs/about/index.md",
             "redirect_url": "/dotnet/standard/index"
@@ -1019,7 +1009,7 @@
             "source_path": "docs/csharp/how-to/safely-cast-using-pattern-matching-is-and-as-operators.md",
             "redirect_url": "/dotnet/csharp/fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators"
         },
-        
+
         {
             "source_path": "docs/csharp/implicitly-typed-lambda-expressions.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/lambda-expressions"
@@ -4123,6 +4113,16 @@
             "source_path": "docs/framework/interop/runtime-callable-wrapper.md",
             "redirect_url": "/dotnet/standard/native-interop/runtime-callable-wrapper",
             "redirect_document_id": true
+        },
+        {
+          "source_path": "docs/framework/mef/composition-analysis-tool-mefx.md",
+          "redirect_url": "/previous-versions/dotnet/framework/mef/composition-analysis-tool-mefx",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "docs/framework/mef/mef-for-net-for-windows-store-apps.md",
+          "redirect_url": "/previous-versions/dotnet/framework/mef/mef-for-net-for-windows-store-apps",
+          "redirect_document_id": false
         },
         {
             "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5-1.md",

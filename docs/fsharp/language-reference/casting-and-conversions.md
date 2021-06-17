@@ -94,11 +94,7 @@ The following code illustrates the use of the `:>` and `:?>` operators. The code
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4403.fs)]
 
-Because the generic operators `downcast` and `upcast` rely on type inference to determine the argument and return type, you can replace `let base1 = d1 :> Base1` in the previous code with:
-
-```fsharp
-let base1: Base1 = upcast d1
-```
+Because the generic operators `downcast` and `upcast` rely on type inference to determine the argument and return type, you can replace `let base1 = d1 :> Base1` in the previous code example with `let base1: Base1 = upcast d1`.
 
 A type annotation is required, because `upcast` by itself could not determine the base class.
 

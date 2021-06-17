@@ -1,20 +1,5 @@
 {
     "redirections": [
-    {
-      "source_path": "docs/framework/install/on-windows-vista.md",
-      "redirect_url": "/previous-versions/dotnet/framework/install/on-windows-vista",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/framework/install/on-windows-xp.md",
-      "redirect_url": "/previous-versions/dotnet/framework/install/on-windows-xp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/framework/install/on-windows-7.md",
-      "redirect_url": "/previous-versions/dotnet/framework/install/on-windows-7",
-      "redirect_document_id": false
-    },
         {
             "source_path": "docs/about/index.md",
             "redirect_url": "/dotnet/standard/index"
@@ -1024,7 +1009,7 @@
             "source_path": "docs/csharp/how-to/safely-cast-using-pattern-matching-is-and-as-operators.md",
             "redirect_url": "/dotnet/csharp/fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators"
         },
-        
+
         {
             "source_path": "docs/csharp/implicitly-typed-lambda-expressions.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/lambda-expressions"
@@ -4103,6 +4088,21 @@
         {
             "source_path": "docs/framework/install/net-framework-3-5-on-windows-8-plus.md",
             "redirect_url": "/dotnet/framework/install/dotnet-35-windows-10"
+        },
+        {
+          "source_path": "docs/framework/install/on-windows-vista.md",
+          "redirect_url": "/previous-versions/dotnet/framework/install/on-windows-vista",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "docs/framework/install/on-windows-xp.md",
+          "redirect_url": "/previous-versions/dotnet/framework/install/on-windows-xp",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "docs/framework/install/on-windows-7.md",
+          "redirect_url": "/previous-versions/dotnet/framework/install/on-windows-7",
+          "redirect_document_id": false
         },
         {
             "source_path": "docs/framework/interop/applying-interop-attributes.md",

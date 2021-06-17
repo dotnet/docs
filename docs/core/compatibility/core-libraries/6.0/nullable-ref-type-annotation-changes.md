@@ -74,8 +74,8 @@ The following table lists the affected APIs:
 | <xref:System.Reflection.Metadata.NamespaceDefinitionHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
 | <xref:System.Reflection.Metadata.SequencePoint.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
 | <xref:System.Reflection.Metadata.SignatureHeader.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
-| <xref:System.Reflection.Metadata.EditAndContinueLogEntry.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
-| <xref:System.Reflection.Metadata.LabelHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| <xref:System.Reflection.Metadata.Ecma335.EditAndContinueLogEntry.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| <xref:System.Reflection.Metadata.Ecma335.LabelHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
 | <xref:System.Reflection.Emit.Label.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
 | <xref:System.Reflection.Emit.OpCode.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
 | `DateOnly.Equals(System.Object)` | `NotNullWhen(true)` was added to the `value` parameter | Breaking | Preview 2 |

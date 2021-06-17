@@ -5,7 +5,7 @@ Module Module1
 
     Sub method5()
         ' <Snippet5>
-        Dim db As New Northwnd("...")
+        Dim db As New Northwind("...")
         ' Use a method call (stored procedure wrapper) instead of
         ' a LINQ query against the database.
         Dim custQuery = db.CustomersByCity("London")

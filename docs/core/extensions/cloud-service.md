@@ -3,7 +3,7 @@ title: Deploy a Worker Service to Azure
 description: Learn how to deploy a .NET Worker Service to Azure.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/09/2021
+ms.date: 06/17/2021
 ms.topic: tutorial
 zone_pivot_groups: development-environment-one
 ---
@@ -37,12 +37,14 @@ In this tutorial, you learn how to:
 
 :::zone target="docs" pivot="visualstudio"
 
-In Visual Studio, right-click on the project, and select **Add** > **Docker Support**.
+In Visual Studio, right-click on the project node in the **Solution Explorer**, and select **Add** > **Docker Support**. You'll be prompted to select a **Target OS**, select **OK** with the default OS selection.
+
+:::image type="content" source="media/docker-file-options.png" alt-text="Docker File Options":::
 
 :::zone-end
 :::zone target="docs" pivot="vscode"
 
-In Visual Studio Code, you'll need the [Docker extension](https://code.visualstudio.com/docs/containers/overview) installed. Open the Command Palette, and select the **Docker: Add Docker files to workspace** option. If prompted to **Select Application Platform** choose **.NET: Core Console**. If prompted to **Select Project**, choose the Worker Service project you created. When prompted to **Select Operating System**, choose the desired OS. When prompted whether or not to **Include optional Docker Compose files**, choose **No**.
+In Visual Studio Code, you'll need the [Docker extension](https://code.visualstudio.com/docs/containers/overview) installed. Open the Command Palette, and select the **Docker: Add Docker files to workspace** option. If prompted to **Select Application Platform** choose **.NET: Core Console**. If prompted to **Select Project**, choose the Worker Service project you created. When prompted to **Select Operating System**, choose the first listed OS. When prompted whether or not to **Include optional Docker Compose files**, select **No**.
 
 :::zone-end
 
@@ -54,25 +56,28 @@ Docker support requires a *Dockerfile*. This file is a set of comprehensive inst
 
 :::zone target="docs" pivot="visualstudio"
 
-Right-click on the *Dockerfile* in the **Solution Explorer**, and select **Build Docker Image**.
+Right-click on the *Dockerfile* in the **Solution Explorer**, and select **Build Docker Image**. The **Output** window pane displays, reporting the Docker build command progress.
 
 :::zone-end
 :::zone target="docs" pivot="vscode"
 
-Right-click on the *Dockerfile* in the **Explorer**, and select **Build Image**.
+Right-click on the *Dockerfile* in the **Explorer**, and select **Build Image**. When prompted to **Tag image as**, enter `appcloudservice:latest`. The **Docker Task** output terminal displays, reporting the Docker build command progress.
 
 :::zone-end
-:::zone target="docs" pivot="vscode"
+:::zone target="docs" pivot="cli"
 
 Open a terminal window in the root directory of the *Dockerfile*, and run the following docker command:
 
 ```console
-docker build -t worker-service -f Dockerfile .
+docker build -t appcloudservice -f Dockerfile .
 ```
 
-Docker will process each line in the Dockerfile. The `.` in the `docker build` command tells Docker to use the current folder to find a *Dockerfile*. This command builds the image and creates a local repository named **worker-service** that points to that image.
-
 :::zone-end
+
+The `docker build` command runs, instructing Docker to process each line in the *Dockerfile*. This command builds the image and creates a local repository named **worker-service** that points to the image.
+
+> [!TIP]
+> The generated _Dockerfile_ differs between development environments. For example, if you [Add Docker support](#add-docker-support) from Visual Studio you cannot [Build the Docker image](#build-the-docker-image) from Visual Studio Code &mdash; as the _Dockerfile_ steps vary. It is best to choose a single development environment and use it through out.
 
 ## Create container registry
 
@@ -83,13 +88,47 @@ An Azure Container Registry (ACR) resource allows you to build, store, and manag
 1. Select a **Location**.
 1. Select an appropriate **SKU**, for example **Basic**.
 1. Select **Review + create**.
-1. Assuming **Validation passed**, select **Create**.
+1. After seeing **Validation passed**, select **Create**.
 
 For more information, see [Quickstart: Create an Azure container registry](/azure/container-registry/container-registry-get-started-portal).
 
 ## Push image to ACR
 
-TODO: ...
+With the .NET Docker image built, and the ACR resource created, you can now push the image to ACR.
+
+:::zone target="docs" pivot="visualstudio"
+
+Right-click on the project in the **Solution Explorer**, and select **Publish**. The **Publish** dialog displays. For the **Target**, select **Azure** and then **Next**.
+
+:::image type="content" source="media/publish-dialog-azure.png" lightbox="media/publish-dialog-azure.png" alt-text="Visual Studio: Publish dialog - select Azure":::
+
+For the **Specific Target**, select **Azure Container Registry** and then **Next**.
+
+:::image type="content" source="media/publish-dialog-azure-acr.png" lightbox="media/publish-dialog-azure-acr.png" alt-text="Visual Studio: Publish dialog - select ACR":::
+
+Next, for the **Container Registry**, select your **Subscription name** that you used to created the ACR resrouce. From the **Container registries** selection area, select the container registry that you created, and then select **Finish**.
+
+:::image type="content" source="media/publish-dialog-azure-acr-registry.png" lightbox="media/publish-dialog-azure-acr-registry.png" alt-text="Visual Studio: Publish dialog - select container registry":::
+
+This creates a publish profile, which can be used to publish the image to ACR. Select the **Publish** button to push the image to ACR, the Output window reports the publish progress &mdash; and when it completes successfully, you'll see a "Successfully published" message.
+
+:::zone-end
+:::zone target="docs" pivot="vscode"
+
+Right-click on the *Dockerfile* in the **Explorer**, and select **Build Image**.
+
+:::zone-end
+:::zone target="docs" pivot="cli"
+
+Open a terminal window in the root directory of the *Dockerfile*, and run the following docker command:
+
+```console
+docker build -t worker-service -f Dockerfile .
+```
+
+:::zone-end
+
+To verify that the image was successfully pushed to ACR, navigate to the Azure portal. Open the ACR resource, under **Services**, select **Repositories**. You should see the image.
 
 ## Create Container Instance
 

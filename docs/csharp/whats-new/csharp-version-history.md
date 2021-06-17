@@ -2,7 +2,8 @@
 title: The history of C# - C# Guide
 description: What did the language look like in its earliest versions, and how has it evolved since?
 author: erikdietrich
-ms.date: 04/08/2020
+ms.date: 06/18/2021
+ms.custom: updateeachrelease
 ---
 
 # The history of C\#
@@ -241,9 +242,31 @@ C# 8.0 is the first major C# release that specifically targets .NET Core. Some f
 
 Default interface members require enhancements in the CLR. Those features were added in the CLR for .NET Core 3.0. Ranges and indexes, and asynchronous streams require new types in the .NET Core 3.0 libraries. Nullable reference types, while implemented in the compiler, is much more useful when libraries are annotated to provide semantic information regarding the null state of arguments and return values. Those annotations are being added in the .NET Core libraries.
 
-## C# Version 9.0
+## C# version 9.0
 
-C# 9.0 was released with .NET 5. It's the default language version for any assembly that targets the .NET 5 release.
+C# 9.0 was released with .NET 5. It's the default language version for any assembly that targets the .NET 5 release. It contains the following new and enhanced features:
+
+C# 9.0 adds the following features and enhancements to the C# language:
+
+- [Records](./csharp-9.md#record-types)
+- [Init only setters](./csharp-9.md#init-only-setters)
+- [Top-level statements](./csharp-9.md#top-level-statements)
+- [Pattern matching enhancements](./csharp-9.md#pattern-matching-enhancements)
+- [Performance and interop](./csharp-9.md#performance-and-interop)
+  - [Native sized integers](~/_csharplang/proposals/csharp-9.0/native-integers.md)
+  - [Function pointers](~/_csharplang/proposals/csharp-9.0/function-pointers.md)
+  - [Suppress emitting localsinit flag](~/_csharplang/proposals/csharp-9.0/skip-localsinit.md)
+- [Fit and finish features](./csharp-9.md#fit-and-finish-features)
+  - [Target-typed `new` expressions](~/_csharplang/proposals/csharp-9.0/target-typed-new.md)
+  - [`static` anonymous functions](~/_csharplang/proposals/csharp-9.0/static-anonymous-functions.md)
+  - [Target-typed conditional expressions](~/_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md)
+  - [Covariant return types](~/_csharplang/proposals/csharp-9.0/covariant-returns.md)
+  - [Extension `GetEnumerator` support for `foreach` loops](~/_csharplang/proposals/csharp-9.0/extension-getenumerator.md)
+  - [Lambda discard parameters](~/_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md)
+  - [Attributes on local functions](~/_csharplang/proposals/csharp-9.0/local-function-attributes.md)
+- [Support for code generators](./csharp-9.md#support-for-code-generators)
+  - [Module initializers](~/_csharplang/proposals/csharp-9.0/module-initializers.md)
+  - [New features for partial methods](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md)
 
 C# 9.0 continues three of the themes from previous releases: removing ceremony, separating data from algorithms, and providing more patterns in more places.
 

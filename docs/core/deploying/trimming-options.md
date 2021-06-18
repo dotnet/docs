@@ -22,7 +22,7 @@ Place this in the project file to ensure that the setting applies during `dotnet
 
 This will trim any assemblies which have been configured for trimming. With `Microsoft.NET.Sdk` in .NET 6, this includes the any assemblies with `[AssemblyMetadata("IsTrimmable", "True")]`, which is the case for framework assemblies. In .NET 5, framework assemblies from the netcoreapp runtime pack are configured for trimming via `<IsTrimmable>` MSBuild metadata. Other SDKs may define different defaults.
 
-Starting in .NET 6, this setting also enables the trim compatibility [Roslyn analyzer](#roslyn-analyzer), and disables [features](#trimming-framework-libraryfeatures) which are incompatible with trimming.
+Starting in .NET 6, this setting also enables the trim compatibility [Roslyn analyzer](#roslyn-analyzer), and disables [features](#trimming-framework-library-features) which are incompatible with trimming.
 
 ## Trimming granularity
 

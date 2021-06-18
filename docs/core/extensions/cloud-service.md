@@ -17,10 +17,9 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
 > - Create a worker service.
-> - Create an ACR resource.
-> - Push an image to ACR.
-> - Create an ACI resource.
-> - Deploy an ACR image to ACI.
+> - Create container registry resource.
+> - Push an image to container registry.
+> - Deploy as container instance.
 > - Verify worker service functionality.
 
 ## Prerequisites
@@ -28,18 +27,11 @@ In this tutorial, you learn how to:
 - The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet).
 - Docker Desktop ([Windows](https://docs.docker.com/docker-for-windows/install) or [Mac](https://docs.docker.com/docker-for-mac/install)).
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/dotnet).
-:::zone target="docs" pivot="visualstudio"
 - A .NET integrated development environment (IDE).
   - Feel free to use [Visual Studio, Visual Studio Code, or Visual Studio for Mac](https://visualstudio.microsoft.com).
-:::zone-end
-:::zone target="docs" pivot="vscode"
-- A .NET integrated development environment (IDE).
-  - Feel free to use [Visual Studio, Visual Studio Code, or Visual Studio for Mac](https://visualstudio.microsoft.com).
-:::zone-end
-:::zone target="docs" pivot="cli"
-- Azure CLI.
-  - [Install the Azure CLI](/cli/azure/install-azure-cli).
-:::zone-end
+- When using the CLI:
+  - [.NET CLI](../tools/index.md)
+  - [Azure CLI](/cli/azure/install-azure-cli).
 
 <!-- ## Create a new project -->
 [!INCLUDE [zoned-file-new-worker](includes/zoned-file-new-worker.md)]
@@ -69,17 +61,34 @@ To build the Docker image, the Docker Engine must be running.
 
 :::zone target="docs" pivot="visualstudio"
 
-Right-click on the *Dockerfile* in the **Solution Explorer**, and select **Build Docker Image**. The **Output** window pane displays, reporting the Docker build command progress.
+Right-click on the *Dockerfile* in the **Solution Explorer**, and select **Build Docker Image**. The **Output** window displays, reporting the `docker build` command progress.
 
 :::zone-end
 :::zone target="docs" pivot="vscode"
 
 Right-click on the *Dockerfile* in the **Explorer**, and select **Build Image**. When prompted to **Tag image as**, enter `appcloudservice:latest`. The **Docker Task** output terminal displays, reporting the Docker build command progress.
 
-> [!TIP]
-> If you're _not_ prompted to tag the image, it's possible that Visual Studio Code is relying on an existing *tasks.json*. If the tag used is undesirable, you can change it by updating the `docker-build` configuration item's `dockerBuild/tag` value in the `tasks` array.
+> [!NOTE]
+> If you're _not_ prompted to tag the image, it's possible that Visual Studio Code is relying on an existing *tasks.json*. If the tag used is undesirable, you can change it by updating the `docker-build` configuration item's `dockerBuild/tag` value in the `tasks` array. Consider the following example configuration section:
 >
-> :::code language="json" source="snippets/workers/.vscode/tasks.json" range="58-73" highlight="59,64-65":::
+> ```json
+> {
+>   "type": "docker-build",
+>   "label": "docker-build: release",
+>   "dependsOn": [
+>     "build"
+>   ],
+>   "dockerBuild": {
+>     "tag": "appcloudservice:latest",
+>     "dockerfile": "${workspaceFolder}/cloud-service/Dockerfile",
+>     "context": "${workspaceFolder}",
+>     "pull": true
+>   },
+>   "netCore": {
+>     "appProject": "${workspaceFolder}/cloud-service/App.CloudService.csproj"
+>   }
+> }
+> ```
 
 :::zone-end
 :::zone target="docs" pivot="cli"
@@ -92,10 +101,10 @@ docker build -t appcloudservice:latest -f Dockerfile .
 
 :::zone-end
 
-The `docker build` command runs, instructing Docker to process each line in the *Dockerfile*. This command builds the image and creates a local repository named **worker-service** that points to the image.
+As the `docker build` command runs, it processes each line in the *Dockerfile* as an instruction step. This command builds the image and creates a local repository named **appcloudservice** that points to the image.
 
 > [!TIP]
-> The generated _Dockerfile_ differs between development environments. For example, if you [Add Docker support](#add-docker-support) from Visual Studio you cannot [Build the Docker image](#build-the-docker-image) from Visual Studio Code &mdash; as the _Dockerfile_ steps vary. It is best to choose a single development environment and use it through out.
+> The generated _Dockerfile_ differs between development environments. For example, if you [Add Docker support](#add-docker-support) from Visual Studio you may experience issues if you attempt to [Build the Docker image](#build-the-docker-image) from Visual Studio Code &mdash; as the _Dockerfile_ steps vary. It is best to choose a single _development environment_ and use it through out this tutorial.
 
 ## Create container registry
 
@@ -145,32 +154,57 @@ The integrated terminal window will report the progress of the `docker push` com
 :::zone-end
 :::zone target="docs" pivot="cli"
 
-Open a terminal window in the root directory of the *Dockerfile*, and run the following docker command:
+Open a terminal window in the root directory of the *Dockerfile*, and run the following Azure CLI command:
 
-```console
-docker build -t worker-service -f Dockerfile .
+> [!IMPORTANT]
+> To interact with Azure resources from the Azure CLI, you must be authenticated for your terminal session. To authenticate, use the [`az login`](/cli/azure/authenticate-azure-cli) command:
+>
+> ```azurecli
+> az login
+> ```
+>
+> After you're logged in, use the [`az account set`](/cli/azure/account#az_account_set) command to specify your subscription when you have more than one and no default subscription set.
+>
+> ```azurecli
+> az account set --subscription <subscription name or id>
+> ```
+
+```azurecli
+az acr login -n <registry name>
 ```
+
+The [`az acr login`](/cli/azure/acr#az_acr_login) command will log in to a container registry through the Docker CLI. To push the image to the container registry, use the [az acr build](/cli/azure/acr#az_acr_build) command with your container registry name as the `<registry name>`:
+
+```azurecli
+az acr build -r <registry name> .
+```
+
+The preceding command:
+
+- Packs the source into a *tar* file.
+- Uploads it to the container registry.
+- The container registry unpacks the *tar* file.
+- Runs the `docker build` command in the container registry resource against the *Dockerfile*.
+- Adds the image to the container registry.
 
 :::zone-end
 
-To verify that the image was successfully pushed to ACR, navigate to the Azure portal. Open the ACR resource, under **Services**, select **Repositories**. You should see the image.
+To verify that the image was successfully pushed to the container registry, navigate to the Azure portal. Open the container registry resource, under **Services**, select **Repositories**. You should see the image.
 
-## Create Container Instance
+## Deploy as Container Instance
 
 To create a Container Instance, you'll need to [create a new resource](https://ms.portal.azure.com/#create/Microsoft.ContainerInstances) in the Azure portal.
 
 1. Select the same **Subscription**, and corresponding **Resource group** from the previous section.
-1. Enter a **Container name**.
+1. Enter a **Container name** &mdash; `appcloudservice-container`.
 1. Select a **Region** that corresponds to the previous **Location** selection.
-1. Select **Azure Container Registry**.
+1. Select **Azure Container Registry** as the **Image source**.
 1. Select the **Registry** by the name provided in the previous step.
 1. Select the **Image** and **Image tag**.
 1. Select **Review + create**.
 1. Assuming **Validation passed**, select **Create**.
 
 For more information, see [Quickstart: Create an Azure container instance](/azure/container-instances/container-instances-quickstart-portal).
-
-## Deploy 
 
 ## Verify service functionality
 

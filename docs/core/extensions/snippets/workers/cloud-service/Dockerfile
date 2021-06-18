@@ -8,10 +8,10 @@ USER appuser
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["cloud-service/App.CloudService.csproj", "cloud-service/"]
-RUN dotnet restore "cloud-service/App.CloudService.csproj"
+COPY ["App.CloudService.csproj", "./"]
+RUN dotnet restore "App.CloudService.csproj"
 COPY . .
-WORKDIR "/src/cloud-service"
+WORKDIR "/src/."
 RUN dotnet build "App.CloudService.csproj" -c Release -o /app/build
 
 FROM build AS publish

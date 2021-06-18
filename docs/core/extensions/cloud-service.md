@@ -54,6 +54,8 @@ Docker support requires a *Dockerfile*. This file is a set of comprehensive inst
 
 ### Build the Docker image
 
+To build the Docker image, the Docker Engine must be running.
+
 :::zone target="docs" pivot="visualstudio"
 
 Right-click on the *Dockerfile* in the **Solution Explorer**, and select **Build Docker Image**. The **Output** window pane displays, reporting the Docker build command progress.
@@ -63,13 +65,18 @@ Right-click on the *Dockerfile* in the **Solution Explorer**, and select **Build
 
 Right-click on the *Dockerfile* in the **Explorer**, and select **Build Image**. When prompted to **Tag image as**, enter `appcloudservice:latest`. The **Docker Task** output terminal displays, reporting the Docker build command progress.
 
+> [!TIP]
+> If you're _not_ prompted to tag the image, it's possible that Visual Studio Code is relying on an existing *tasks.json*. If the tag used is undesirable, you can change it by updating the `docker-build` configuration item's `dockerBuild/tag` value in the `tasks` array.
+>
+> :::code language="json" source="snippets/workers/.vscode/tasks.json" range="58-73" highlight="59,64-65":::
+
 :::zone-end
 :::zone target="docs" pivot="cli"
 
 Open a terminal window in the root directory of the *Dockerfile*, and run the following docker command:
 
 ```console
-docker build -t appcloudservice -f Dockerfile .
+docker build -t appcloudservice:latest -f Dockerfile .
 ```
 
 :::zone-end
@@ -113,7 +120,7 @@ Next, for the **Container Registry**, select your **Subscription name** that you
 
 :::image type="content" source="media/publish-dialog-azure-acr-registry.png" lightbox="media/publish-dialog-azure-acr-registry.png" alt-text="Visual Studio: Publish dialog - select container registry":::
 
-This creates a publish profile, which can be used to publish the image to ACR. Select the **Publish** button to push the image to ACR, the Output window reports the publish progress &mdash; and when it completes successfully, you'll see a "Successfully published" message.
+This creates a publish profile, which can be used to publish the image to ACR. Select the **Publish** button to push the image to ACR, the **Output** window reports the publish progress &mdash; and when it completes successfully, you'll see a "Successfully published" message.
 
 :::zone-end
 :::zone target="docs" pivot="vscode"

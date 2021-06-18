@@ -29,7 +29,7 @@ You first need to create a resource group and storage account in Azure for the s
 
 Storage accounts are created using the `az storage account create` command.  Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only.  Storage account names must also be unique across Azure.
 
-Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com) or on a workstation with the [Azure CLI installed](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
+Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com) or on a workstation with the [Azure CLI installed](/cli/azure/install-azure-cli).
 
 ```azurecli
 $LOCATION = 'eastus'             # Use 'az account list-locations --output table' to list locations
@@ -52,7 +52,7 @@ az storage account create \
 
 Storage accounts are created using the `New-AzStorageAccount` cmdlt.  Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only.  Storage account names must also be unique across Azure.
 
-Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com) or on a workstation with [Azure PowerShell installed](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps).
+Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com) or on a workstation with [Azure PowerShell installed](/powershell/azure/install-az-ps).
 
 ```azurepowershellInstall
 $location = 'eastus'   # Use 'Get-AzLocation | Select-Object -Property DisplayName,Location' to list all locations

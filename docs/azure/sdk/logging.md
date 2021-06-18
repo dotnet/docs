@@ -66,7 +66,7 @@ using AzureEventSourceListener listener = AzureEventSourceListener.CreateConsole
 
 ### Log to diagnostic traces
 
-If you implement trace listeners, you can use the `CreateTraceLogger` method to log to the standard .NET event tracing mechanism ([`System.Diagnostics.Tracing`](/dotnet/api/system.diagnostics.tracing)). For more information on event tracing in .NET, see [Trace Listeners](/dotnet/framework/debug-trace-profile/trace-listeners). This example specifies a log level of verbose:
+If you implement trace listeners, you can use the `CreateTraceLogger` method to log to the standard .NET event tracing mechanism ([`System.Diagnostics.Tracing`](/dotnet/api/system.diagnostics.tracing)). For more information on event tracing in .NET, see [Trace Listeners](../../framework/debug-trace-profile/trace-listeners.md). This example specifies a log level of verbose:
 
 ```csharp
 using AzureEventSourceListener listener = AzureEventSourceListener.CreateTraceLogger(EventLevel.Verbose);
@@ -95,4 +95,4 @@ using AzureEventSourceListener listener = new AzureEventSourceListener((e, messa
 - [Enable diagnostics logging for apps in Azure App Service](/azure/app-service/troubleshoot-diagnostic-logs)
 - Review [Azure security logging and auditing](/azure/security/fundamentals/log-audit) options
 - Learn how to work with [Azure platform logs](/azure/azure-monitor/platform/platform-logs-overview)
-- Read more about [.NET Core logging and tracing](/dotnet/core/diagnostics/logging-tracing)
+- Read more about [.NET Core logging and tracing](../../core/diagnostics/logging-tracing.md)

@@ -19,7 +19,7 @@ git clone https://github.com/azure-samples/dotnetcore-sqldb-tutorial
 
 When complete, the sample application will allow you to create blob containers, upload blobs to a storage account as well as visualize the relationship between containers and blobs in the storage account.
 
-:::image type="content" source="./media/blobs-and-containers-640.png" alt-text="A screenshot of the sample application for this article showing three blob containers in a storage account.  One of the containers is expanded showing it contains three different blob objects inside" lightbox="blobs-and-containers.png":::
+:::image type="content" source="./media/blobs-and-containers-640.png" alt-text="A screenshot of the sample application for this article showing three blob containers in a storage account.  One of the containers is expanded showing it contains three different blob objects inside" lightbox="./media/blobs-and-containers.png":::
 
 ## 1 - Create Azure Storage resources
 

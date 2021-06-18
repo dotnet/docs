@@ -89,7 +89,7 @@ For more information, see the following resources:
 
 |Resource|Description|
 |--------------|-----------------|
-|[SQL Server Security](./sql/sql-server-security.md)|Provides an overview of SQL Server security with application scenarios that provide guidance for creating secure ADO.NET applications that target SQL Server.|
+|[SQL Server Security](/previous-versions/dotnet/framework/data/adonet/sql/sql-server-security)|Provides an overview of SQL Server security with application scenarios that provide guidance for creating secure ADO.NET applications that target SQL Server.|
 |[Recommendations for Data Access Strategies](/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))|Provides recommendations for accessing data and performing database operations.|
 
 ## Security Policy and Administration
@@ -107,5 +107,5 @@ For more information, see the following resources:
 
 - [Securing ADO.NET Applications](securing-ado-net-applications.md)
 - [Security in .NET](../../../standard/security/index.md)
-- [SQL Server Security](./sql/sql-server-security.md)
+- [SQL Server Security](/previous-versions/dotnet/framework/data/adonet/sql/sql-server-security)
 - [ADO.NET Overview](ado-net-overview.md)

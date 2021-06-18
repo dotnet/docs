@@ -121,9 +121,9 @@ An Azure Container Registry (ACR) resource allows you to build, store, and manag
 
 For more information, see [Quickstart: Create an Azure container registry](/azure/container-registry/container-registry-get-started-portal).
 
-## Push image to ACR
+## Push image to container registry
 
-With the .NET Docker image built, and the ACR resource created, you can now push the image to ACR.
+With the .NET Docker image built, and the container registry resource created, you can now push the image to container registry.
 
 :::zone target="docs" pivot="visualstudio"
 
@@ -133,13 +133,13 @@ Right-click on the project in the **Solution Explorer**, and select **Publish**.
 
 For the **Specific Target**, select **Azure Container Registry** and then **Next**.
 
-:::image type="content" source="media/publish-dialog-azure-acr.png" lightbox="media/publish-dialog-azure-acr.png" alt-text="Visual Studio: Publish dialog - select ACR":::
+:::image type="content" source="media/publish-dialog-azure-acr.png" lightbox="media/publish-dialog-azure-acr.png" alt-text="Visual Studio: Publish dialog - select container registry":::
 
 Next, for the **Container Registry**, select your **Subscription name** that you used to created the ACR resrouce. From the **Container registries** selection area, select the container registry that you created, and then select **Finish**.
 
 :::image type="content" source="media/publish-dialog-azure-acr-registry.png" lightbox="media/publish-dialog-azure-acr-registry.png" alt-text="Visual Studio: Publish dialog - select container registry":::
 
-This creates a publish profile, which can be used to publish the image to ACR. Select the **Publish** button to push the image to ACR, the **Output** window reports the publish progress &mdash; and when it completes successfully, you'll see a "Successfully published" message.
+This creates a publish profile, which can be used to publish the image to container registry. Select the **Publish** button to push the image to the container registry, the **Output** window reports the publish progress &mdash; and when it completes successfully, you'll see a "Successfully published" message.
 
 :::zone-end
 :::zone target="docs" pivot="vscode"
@@ -148,7 +148,7 @@ Select **Docker** from the **Activity Bar** in Visual Studio Code. Expand the **
 
 :::image type="content" source="media/vs-code-push-image.png" alt-text="Visual Studio Code: Docker - push image":::
 
-The integrated terminal window will report the progress of the `docker push` command to ACR.
+The integrated terminal window will report the progress of the `docker push` command to the container registry.
 
 :::zone-end
 :::zone target="docs" pivot="cli"
@@ -190,9 +190,23 @@ The preceding command:
 
 To verify that the image was successfully pushed to the container registry, navigate to the Azure portal. Open the container registry resource, under **Services**, select **Repositories**. You should see the image.
 
-## Deploy as Container Instance
+## Deploy as container instance
 
-To create a Container Instance, you'll need to [create a new resource](https://ms.portal.azure.com/#create/Microsoft.ContainerInstances) in the Azure portal.
+:::zone target="docs" pivot="vscode"
+
+From Visual Studio Code, select **Docker** from the **Activity Bar**. Expand the **REGISTRIES** node, and select **Connect Registry**. Select **Azure** when prompted, and login if required.
+
+:::image type="content" source="media/vs-code-connect-registry.png" alt-text="Visual Studio Code - Docker: Connect registry":::
+
+Expand the **REGISTRIES** node, select **Azure**, your  subscription > the container registry > the image, and then right-click the tag. Select **Deploy Image to Azure Container Instances**.
+
+:::image type="content" source="media/vs-code-deploy-to-aci.png" alt-text="Visual Studio Code - Docker: Deploy image to Azure Container Instances":::
+
+:::zone-end
+
+:::zone target="docs" pivot="visualstudio,cli"
+
+To create a container instance, you'll need to [create a new resource](https://ms.portal.azure.com/#create/Microsoft.ContainerInstances) in the Azure portal.
 
 1. Select the same **Subscription**, and corresponding **Resource group** from the previous section.
 1. Enter a **Container name** &mdash; `appcloudservice-container`.
@@ -204,6 +218,8 @@ To create a Container Instance, you'll need to [create a new resource](https://m
 1. Assuming **Validation passed**, select **Create**.
 
 For more information, see [Quickstart: Create an Azure container instance](/azure/container-instances/container-instances-quickstart-portal).
+
+:::zone-end
 
 ## Verify service functionality
 
@@ -219,3 +235,4 @@ You'll see the containers, and their current **State**. In this case it will be 
 - [Use scoped services within a `BackgroundService`](scoped-service.md)
 - [Create a Windows Service using `BackgroundService`](windows-service.md)
 - [Implement the `IHostedService` interface](timer-service.md)
+- [Tutorial: Containerize a .NET Core app](../docker/build-container.md)

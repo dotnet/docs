@@ -17,18 +17,29 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
 > - Create a worker service.
-> - Create an Azure Container Registry resource.
-> - Create an Azure Container Instance resource.
-> - Deploy the worker service to Azure.
-> - Monitor worker service activity.
+> - Create an ACR resource.
+> - Push an image to ACR.
+> - Create an ACI resource.
+> - Deploy an ACR image to ACI.
+> - Verify worker service functionality.
 
 ## Prerequisites
 
 - The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet).
 - Docker Desktop ([Windows](https://docs.docker.com/docker-for-windows/install) or [Mac](https://docs.docker.com/docker-for-mac/install)).
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/dotnet).
+:::zone target="docs" pivot="visualstudio"
 - A .NET integrated development environment (IDE).
   - Feel free to use [Visual Studio, Visual Studio Code, or Visual Studio for Mac](https://visualstudio.microsoft.com).
+:::zone-end
+:::zone target="docs" pivot="vscode"
+- A .NET integrated development environment (IDE).
+  - Feel free to use [Visual Studio, Visual Studio Code, or Visual Studio for Mac](https://visualstudio.microsoft.com).
+:::zone-end
+:::zone target="docs" pivot="cli"
+- Azure CLI.
+  - [Install the Azure CLI](/cli/azure/install-azure-cli).
+:::zone-end
 
 <!-- ## Create a new project -->
 [!INCLUDE [zoned-file-new-worker](includes/zoned-file-new-worker.md)]
@@ -125,7 +136,11 @@ This creates a publish profile, which can be used to publish the image to ACR. S
 :::zone-end
 :::zone target="docs" pivot="vscode"
 
-Right-click on the *Dockerfile* in the **Explorer**, and select **Build Image**.
+Select **Docker** from the **Activity Bar** in Visual Studio Code. Expand the **IMAGES** tree view panel, then expand the `appcloudservice` image node and right-click on the `latest` tag.
+
+:::image type="content" source="media/vs-code-push-image.png" alt-text="Visual Studio Code: Docker - push image":::
+
+The integrated terminal window will report the progress of the `docker push` command to ACR.
 
 :::zone-end
 :::zone target="docs" pivot="cli"
@@ -154,6 +169,8 @@ To create a Container Instance, you'll need to [create a new resource](https://m
 1. Assuming **Validation passed**, select **Create**.
 
 For more information, see [Quickstart: Create an Azure container instance](/azure/container-instances/container-instances-quickstart-portal).
+
+## Deploy 
 
 ## Verify service functionality
 

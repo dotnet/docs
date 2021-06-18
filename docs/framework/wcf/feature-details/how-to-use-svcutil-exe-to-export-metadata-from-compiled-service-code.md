@@ -19,7 +19,7 @@ Svcutil.exe can export metadata for services, contracts, and data types in compi
   
 ### To export metadata for compiled service contracts  
   
-1. Compile your service contract implementations into one or more class libraries.1  
+1. Compile your service contract implementations into one or more class libraries.
   
 2. Run Svcutil.exe on the compiled assemblies.  
   

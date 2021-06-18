@@ -123,7 +123,7 @@ Here's a sample project file that specifies single-file publishing:
 
 These properties have the following functions:
 
-* `PublishSingleFile` - Enables single-file publishing.
+* `PublishSingleFile` - Enables single-file publishing. Also enables single-file warnings during `dotnet build`.
 * `SelfContained` - Determines whether the app will be self-contained or framework-dependent.
 * `RuntimeIdentifier` - Specifies the [OS and CPU type](../rid-catalog.md) you are targeting.
 * `PublishTrimmed` - Enables use of [assembly trimming](trim-self-contained.md), which is only supported for self-contained apps.
@@ -139,18 +139,26 @@ These properties have the following functions:
 Publish a single file application using the [dotnet publish](../tools/dotnet-publish.md) command. When you publish your app, set the following properties:
 
 - Publish for a specific runtime: `-r win-x64`
-- Publish as a single-file: `-p:PublishSingleFile=true`
+- Publish as a single-file: `<PublishSingleFile>true</PublishSingleFile>`
 
 The following example publishes an app for Windows as a self-contained single file application.
 
-```dotnetcli
-dotnet publish -r win-x64 -p:PublishSingleFile=true --self-contained true
+```xml
+<PropertyGroup>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+</PropertyGroup>
 ```
 
 The following example publishes an app for Linux as a framework dependent single file application.
 
-```dotnetcli
-dotnet publish -r linux-x64 -p:PublishSingleFile=true --self-contained false
+```xml
+<PropertyGroup>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>false</SelfContained>
+</PropertyGroup>
 ```
 
 For more information, see [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).
@@ -158,6 +166,8 @@ For more information, see [Publish .NET Core apps with .NET Core CLI](deploy-wit
 ## Publish a single file app - Visual Studio
 
 Visual Studio creates reusable publishing profiles that control how your application is published.
+
+01. Add `<PublishSingleFile>true</PublishSingleFile>` to your project file.
 
 01. On the **Solution Explorer** pane, right-click on the project you want to publish. Select **Publish**.
 

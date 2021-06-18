@@ -24,7 +24,7 @@ The Extensible Stylesheet Language Transformation (XSLT) lets you transform the 
  [XSLT Compiler (xsltc.exe)](xslt-compiler-xsltc-exe.md)  
  Provides information on using the XSLT compiler.  
   
- [XSLT Transformations with the XslTransform Class](xslt-transformations-with-the-xsltransform-class.md)  
+ [XSLT Transformations with the XslTransform Class](/previous-versions/dotnet/framework/data/xml/xslt/xslt-transformations-with-the-xsltransform-class)  
  Provides information on using the <xref:System.Xml.Xsl.XslTransform> class.  
   
 ## Reference  

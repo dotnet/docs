@@ -86,7 +86,7 @@ dotnet sln add [-h|--help]
 
   The path to the project or projects to add to the solution. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
 
-  If `PROJECT_PATH` includes folders, the folders portion of the path is used to create [solution folders](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder). For example, the following commands create a solution with `myapp` in solution folder `folder1/folder2`:
+  If `PROJECT_PATH` includes folders that contain the project folder, that portion of the path is used to create [solution folders](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder). For example, the following commands create a solution with `myapp` in solution folder `folder1/folder2`:
 
   ```dotnetcli
   dotnet new sln

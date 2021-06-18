@@ -17,6 +17,10 @@ The sample application for this tutorial may be cloned or downloaded from the re
 git clone https://github.com/azure-samples/dotnetcore-sqldb-tutorial
 ```
 
+When complete, the sample application will allow you to create blob containers, upload blobs to a storage account as well as visualize the relationship between containers and blobs in the storage account.
+
+:::image type="content" source="./media/blobs-and-containers-640.png" alt-text="A screenshot of the sample application for this article showing three blob containers in a storage account.  One of the containers is expanded showing it contains three different blob objects inside" lightbox="blobs-and-containers.png":::
+
 ## 1 - Create Azure Storage resources
 
 You first need to create a resource group and storage account in Azure for the sample application to use.
@@ -122,7 +126,15 @@ In the Startup.cs file of the application, edit the ConfigureServices() method t
 
 ## 5 - Implement Azure Storage operations in code
 
-All storage operations are implemented in the `StorageDemoService` class located in the Services folder in the sample application.  At the top of this class, add a member variable for the `BlobServiceClient` object and also add a constructor to allow the `BlobServiceClient` object to be injected into this class.
+All storage operations are implemented in the `StorageDemoService` class located in the Services folder in the sample application.  You will need to import the `Azure`, `Azure.Storage.Blobs`, and `Azure.Storage.Blobs.Models` namespaces at the top of this file to work with the Azure.Storage.Blobs SDK package.
+
+```csharp
+using Azure;
+using Azure.Storage.Blobs;
+using Azure.Storage.Blobs.Models;
+```
+
+Then, at the top of this class, add a member variable for the `BlobServiceClient` object and a constructor to allow the `BlobServiceClient` object to be injected into this class.
 
 ```csharp
 
@@ -137,50 +149,75 @@ All storage operations are implemented in the `StorageDemoService` class located
 
 ### Create a container
 
+A blob container acts like a folder in a storage account to help organize your blob objects.  Only one level of containers is supported in a storage account.  That is, containers can't contain other containers.
+
+To create a blob container, call the `GetBlobContainerClient()` on the `BlobServiceClient` object with the name of the container you want to create.  This will return a `BlobContainerClient` object which has methods to interact with the named container, including creating that container if it does not exist.  
+
+This method checks to make sure that the container does not exist by first calling the `Exists()` method on the `BlobContainerClient` and then creates the container using the `Create()` method if it does not exist.  Attempting to create a container that already exists would result in a `RequestFailedException` being thrown.  
+
+As an alternative, the `CreateIfNotExists()` method could also be called on the `ContainerClient` object to create the container.
+
 ```csharp
-    public MessageModel CreateContainer(string containerName)
+    public void CreateContainer(string containerName)
     {
-        var containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
+        BlobContainerClient containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
+
         if (containerClient.Exists())
-        {
-            // Container already exists
-            return new MessageModel() { Level = MessageLevel.Warning, Message = $"Could not create container {containerName} as it a container with that name already exists in this storage account" };
-        }
-        else
-        {
-            containerClient.Create();
-            return new MessageModel() { Level = MessageLevel.Success, Message = $"Container {containerName} created" };
-        }
+            throw new ApplicationException($"Unable to create container '{containerName}' as it already exists");
+            
+        containerClient.Create();
+    }
+```
+
+### List blob containers
+
+To get a list of blob containers in the storage account, call the `GetBlobContainers()` method on the `BlobServiceClient` object for the storage account.
+
+This will return a `Pageable<BlobContainer>` object listing the blob containers.  In this method in the sample application, a LINQ query is used to map each BlobContainerItem to a model object and return it to the application.
+
+```csharp
+    public IEnumerable<StorageContainerModel> GetContainers()
+    {
+         Pageable<BlobContainerItem> containers = _blobServiceClient.GetBlobContainers();
+
+        return containers.Select(c => new StorageContainerModel() { Name = c.Name });
     }
 ```
 
 ### Delete a container
 
+To delete a blob container, first a `BlobContainerClient` for the container is obtained from the `BlobServiceClient` by calling the `GetBlobContainerClient()` method with the name of the container being deleted.  The code makes sure the container exists and then called the `Delete()` method on the `BlobContainerClient`.
+
+Deleting a blob container will also delete all of the blobs in the container.
+
 ```csharp
-    public MessageModel DeleteContainer(string containerName)
+    public void DeleteContainer(string containerName)
     {
-        var containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
-        if (containerClient.Exists())
-        {
-            _blobServiceClient.DeleteBlobContainer(containerName);
-            return new MessageModel() { Level = MessageLevel.Success, Message = $"Container {containerName} deleted" };
-        }
-        else
-        {
-            // Can't delete a container that does not exist
-            return new MessageModel() { Level = MessageLevel.Warning, Message = $"Could not delete container {containerName} as no container with that name exists in this storage account" };
-        }
+        BlobContainerClient containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
+
+        if (!containerClient.Exists())
+            throw new ApplicationException($"Unable to delete container '{containerName}' as it does not exists");
+
+        containerClient.Delete();
     }
 ```
 
 ### List blobs in a container
 
+To list the blobs in a container, call the `GetBlobs()` method on a `BlobContainerClient` object for the container. It is important to check for the exsistence of the blob container as calling `GetBlobs()` on a container that does not exist will result in an exception.  A `Pageable<BlobItem>` collection will be returned.
+
+In the example application, this collection is mapped into Model objects defined by the application before being returned.  Among the properties available on for each blob are the name of the blob, any tags on the blob, its content type, its creation date and its size in bytes.
+
 ```csharp
-    public IEnumerable<BlobModel> GetBlobs(string containerName)
+    public IEnumerable<BlobInfoModel> ListBlobsInContainer(string containerName)
     {
-        var containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
-        var blobs = containerClient.GetBlobs();
-        var models = blobs.Select(b => new BlobModel()
+        BlobContainerClient containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
+
+        if (!containerClient.Exists())
+            throw new ApplicationException($"Cannot list blobs in container '{containerName}' as it does not exists");
+
+        Pageable<BlobItem> blobs = containerClient.GetBlobs();
+        var models = blobs.Select(b => new BlobInfoModel()
         {
             Name = b.Name,
             Tags = b.Tags,
@@ -191,6 +228,7 @@ All storage operations are implemented in the `StorageDemoService` class located
             AccessTier = b.Properties.AccessTier?.ToString(),
             BlobType = b.Properties.BlobType?.ToString()
         });
+
         return models;
     }
 ```
@@ -198,33 +236,39 @@ All storage operations are implemented in the `StorageDemoService` class located
 ### Upload a blob
 
 ```csharp
-     public MessageModel UploadBlob(string containerName, string blobName, String contentType, Stream content)
-     {
-         var containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
-         if (!containerClient.Exists())
-         {
-             return new MessageModel() { Level = MessageLevel.Danger, Message = $"Could not upload blob as no container with the name {containerName} exists in this storage account" };
-         }
-         else
-         {                
-             var blobClient = containerClient.GetBlobClient(blobName);
-             var options = new BlobUploadOptions() { HttpHeaders = new BlobHttpHeaders() { ContentType = contentType }  } ;
-             var response = blobClient.Upload(content, options); 
-             return new MessageModel() { Level = MessageLevel.Success, Message = $"Blob {blobName} uploaded to container {containerName}" };
-         }
-     }
+    public void UploadBlob(string containerName, string blobName, string contentType, Stream content)
+    {
+        var containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
+        if (!containerClient.Exists())
+            throw new ApplicationException($"Unable to upload blobs to container '{containerName}' as the container does not exists");
+
+        var blobClient = containerClient.GetBlobClient(blobName);
+        var options = new BlobUploadOptions() { HttpHeaders = new BlobHttpHeaders() { ContentType = contentType } };
+        var response = blobClient.Upload(content, options);                        
+    }
 ```
 
 ### Download a blob
 
+To download the contents of a blob from Blob Storage you need both the container name and the name of the blob.  The container name is used to get a `ContainerClient` object for the container the blob is in.  The call the `GetBlobClient()` with the name of the blob on the `ContainerClient` object to get a `BlobClient` object that allows access to the blob.  The `OpenRead()` method on the `BlobClient` object will return a Stream that can be used to read the blob.
+
+In this example, the Blob data is mapped to a Model object which is used by the application to return a stream of the blob data to the browser for download.
+
 ```csharp
-    public BlobContentModel GetBlobContents(String containerName, string blobName)
+    public BlobModel GetBlobContents(string containerName, string blobName)
     {
-        var containerClient = _blobServiceClient.GetBlobContainerClient(containerName);            
-        var blobClient = containerClient.GetBlobClient(blobName);
-        return new BlobContentModel() {
+        ContainerClient containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
+        if (!containerClient.Exists())
+            throw new ApplicationException($"Unable to get blob {blobName} in container '{containerName}' as the container does not exists");
+
+        BlobClient blobClient = containerClient.GetBlobClient(blobName);
+        if (!blobClient.Exists())
+            throw new ApplicationException($"Unable to delete blob {blobName} in container '{containerName}' as no blob with this name exists in this container");
+                   
+        return new BlobModel()
+        {
             Name = blobName,
-            ContentType = containerClient.GetBlobs().FirstOrDefault()?.Properties.ContentType,
+            ContentType = blobClient.GetProperties().Value.ContentType,
             Content = blobClient.OpenRead()
         };
     }
@@ -232,11 +276,23 @@ All storage operations are implemented in the `StorageDemoService` class located
 
 ### Delete a blob
 
+To delete a blob from a container, first get the `ContainerClient` object for the container the blob is in. Then on the `ContainerClient` object call the `GetBlobClient()` method  with the name of the blob to get a `BlobClient` object which provides operations to manipulate the blob in Azure storage.  Finally, call the `Delete()` method on the `BlobClient` object to delete the blob.
+
+As shown in this example, it is suggested the validate the existence of the container and the blob before deleting the blob to avoid an error.
+
 ```csharp
     public void DeleteBlob(string containerName, string blobName)
     {
-        var containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
-        containerClient.DeleteBlob(blobName);
+        ContainerClient containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
+
+        if (!containerClient.Exists())
+            throw new ApplicationException($"Unable to delete blob {blobName} in container '{containerName}' as the container does not exists");
+
+        BlobClient blobClient = containerClient.GetBlobClient(blobName);
+        if (!blobClient.Exists() )
+            throw new ApplicationException($"Unable to delete blob {blobName} in container '{containerName}' as no blob with this name exists in this container");
+
+        blobClient.Delete();
     }
 ```
 

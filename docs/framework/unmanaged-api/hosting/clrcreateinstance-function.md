@@ -4,6 +4,7 @@ title: "CLRCreateInstance Function"
 ms.date: "03/30/2017"
 api_name: 
   - "CLRCreateInstance"
+  - "CreateInterface"
 api_location: 
   - "mscoree.dll"
   - "mscoreei.dll"

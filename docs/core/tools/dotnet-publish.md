@@ -153,13 +153,13 @@ For more information, see the following resources:
 
   For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/main/accepted/2020/single-file/design.md).
 
-  We recommend that you specify this option in a publish profile rather than on the command line. For more information, see [MSBuild](#msbuild).
+  We recommend that you specify this option in the project file rather than on the command line. Setting it in the project file enables a Roslyn analyzer that provides single-file compatibility warnings during `dotnet build`. For more information, see [MSBuild](#msbuild).
 
 - **`-p:PublishTrimmed=true`**
 
   Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see [Trim self-contained deployments and executables](../deploying/trim-self-contained.md). Available since .NET Core 3.0 SDK as a preview feature.
 
-  We recommend that you specify this option in a publish profile rather than on the command line. For more information, see [MSBuild](#msbuild).
+  We recommend that you specify this option in the project file rather than on the command line. Setting it in the project file enables a Roslyn analyzer that provides trim analysis warnings during `dotnet build`. For more information, see [MSBuild](#msbuild).
 
 - **`--self-contained [true|false]`**
 

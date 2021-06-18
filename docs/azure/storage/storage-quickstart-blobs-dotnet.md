@@ -11,7 +11,7 @@ ms.author: daberry
 
 ## Sample application
 
-The sample application for this tutorial may be cloned or downloaded from the repository [https://github.com/azure-samples/dotnetcore-sqldb-tutorial](https://github.com/azure-samples/dotnetcore-sqldb-tutorial).
+The sample application for this tutorial may be cloned or downloaded from the repository [https://github.com/azure-samples/dotnetcore-sqldb-tutorial](https://github.com/azure-samples/dotnetcore-sqldb-tutorial).  Both a starter and completed app are included in the sample repository.
 
 ```bash
 git clone https://github.com/azure-samples/dotnetcore-sqldb-tutorial
@@ -23,12 +23,16 @@ When complete, the sample application will allow you to create blob containers, 
 
 ## 1 - Create Azure Storage resources
 
-You first need to create a resource group and storage account in Azure for the sample application to use.
+You first need to create a resource group and storage account in Azure for the sample application to use. This can be done using the Azure CLI or Azure PowerShell.
+
+### [Azure CLI](#tab/azure-cli)
 
 Storage accounts are created using the `az storage account create` command.  Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only.  Storage account names must also be unique across Azure.
 
+Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com) or on a workstation with the [Azure CLI installed](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
+
 ```azurecli
-$LOCATION = 'eastus'             # az account list-locations --output table
+$LOCATION = 'eastus'             # Use 'az account list-locations --output table' to list locations
 $RESOURCE_GROUP_NAME = 'rg-msdocs-blob-storage-demo'
 $STORAGE_ACCOUNT_NAME = ''   
 
@@ -38,15 +42,43 @@ az group create \
     --name $RESOURCE_GROUP_NAME
 
 # Create the storage account
-az storage account create `
-    --name $STORAGE_ACCOUNT_NAME `
-    --resource-group $RESOURCE_GROUP_NAME `
+az storage account create \
+    --name $STORAGE_ACCOUNT_NAME \
+    --resource-group $RESOURCE_GROUP_NAME \
     --location $LOCATION
 ```
 
+### [Azure PowerShell](#tab/azure-powershell)
+
+Storage accounts are created using the `New-AzStorageAccount` cmdlt.  Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only.  Storage account names must also be unique across Azure.
+
+Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com) or on a workstation with [Azure PowerShell installed](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps).
+
+```azurepowershellInstall
+$location = 'eastus'   # Use 'Get-AzLocation | Select-Object -Property DisplayName,Location' to list all locations
+$resourceGroupName = 'rg-msdocs-blob-storage-demo'
+$storageAccountName = 'stblobstoragedemo123'   # Replace 123 with three random numbers to get unique name
+
+# Create a resource group
+New-AzResourceGroup `
+    -Location $location `
+    -Name $resourceGroupName
+
+# Create the storage account
+New-AzStorageAccount `
+    -Name $storageAccountName `
+    -ResourceGroupName $resourceGroupName `
+    -Location $location `
+    -SkuName Standard_LRS
+```
+
+---
+
 ## 2 - Get Storage connection string
 
-To access the storage account, your app will need the connection string for the storage account.  Use the Azure CLI to retrieve the connection string.
+To access the storage account, your app will need the connection string for the storage account.  The connection string can be retrieved using the Azure Portal, Azure CLI or Azure PowerShell.
+
+### [Azure CLI](#tab/azure-cli)
 
 ```azurecli
 az storage account show-connection-string \
@@ -54,6 +86,20 @@ az storage account show-connection-string \
     -n $STORAGE_ACCOUNT_NAME \
     --output tsv
 ```
+
+### [Azure PowerShell](#tab/azure-powershell)
+
+```azurepowershell
+# Get Connection String for Storage Account
+$storageKey=(Get-AzStorageAccountKey -ResourceGroupName $resourceGroupName -Name $storageAccountName).Value[0]
+$storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=$storageAccountName;AccountKey=$storageKey;EndpointSuffix=core.windows.net"
+
+Write-Host 'This is the connection string your application will use to connect to the storage account'
+Write-Host 'Safeguard this value like you would any other secret'
+Write-Host $storageConnectionString
+```
+
+---
 
 The connection string for your storage account is considered an app secret and must be protected like any other app secret or password.  This example uses the Secret Manager tool to store the connection string during development and make it available to the application.  The Secret Manager tool can be accessed from either Visual Studio or the .NET CLI.
 
@@ -105,28 +151,29 @@ dotnet add package Azure.Storage.Blobs
 
 ## 4 - Configure the Azure Storage client in Startup.cs
 
-The Azure SDK communicates with Azure using client objects to execute different operations against Azure.  The `BlobServiceClient` object is the top level object used to communicate with a storage account.  An application will typically create a single `BlobServiceClient` object per storage account to be used throughout the application.  It is recommended to use dependency injection and register the `BlobServiceClient` object as a singleton to accomplish this.
+The Azure SDK communicates with Azure using client objects to execute different operations against Azure.  The `BlobServiceClient` object is the top level object used to communicate with a storage account.
+
+An application will typically create a single `BlobServiceClient` object per storage account to be used throughout the application.  It is recommended to use dependency injection and register the `BlobServiceClient` object as a singleton to accomplish this.
 
 In the Startup.cs file of the application, edit the ConfigureServices() method to include the highlighted code.
 
 ```csharp
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddControllersWithViews();
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddControllersWithViews();
 
-        // Configure BlobServicesClient object for Azure Storage
-        var connectionString = Configuration.GetConnectionString("AzureStorage");
-        BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);                       
-        services.AddSingleton(blobServiceClient);
+    // Configure BlobServicesClient object for Azure Storage
+    var connectionString = Configuration.GetConnectionString("AzureStorage");
+    BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);                       
+    services.AddSingleton(blobServiceClient);
       
-        services.AddSingleton<StorageDemoService>();
-    }
-
+    services.AddSingleton<StorageDemoService>();
+}
 ```
 
 ## 5 - Implement Azure Storage operations in code
 
-All storage operations are implemented in the `StorageDemoService` class located in the Services folder in the sample application.  You will need to import the `Azure`, `Azure.Storage.Blobs`, and `Azure.Storage.Blobs.Models` namespaces at the top of this file to work with the Azure.Storage.Blobs SDK package.
+All storage operations for the sample app are implemented in the `StorageDemoService` class located in the Services folder.  You will need to import the `Azure`, `Azure.Storage.Blobs`, and `Azure.Storage.Blobs.Models` namespaces at the top of this file to work with objects in the Azure.Storage.Blobs SDK package.
 
 ```csharp
 using Azure;
@@ -134,22 +181,20 @@ using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
 ```
 
-Then, at the top of this class, add a member variable for the `BlobServiceClient` object and a constructor to allow the `BlobServiceClient` object to be injected into this class.
+At the start of the StorageDemoService class, add a member variable for the `BlobServiceClient` object and a constructor to allow the `BlobServiceClient` object to be injected into the class.
 
 ```csharp
+private BlobServiceClient _blobServiceClient;
 
-    private BlobServiceClient _blobServiceClient;
-
-    public StorageDemoService(BlobServiceClient blobServiceClient)
-    {
-        _blobServiceClient = blobServiceClient;
-    }
-
+public StorageDemoService(BlobServiceClient blobServiceClient)
+{
+    _blobServiceClient = blobServiceClient;
+}
 ```
 
 ### Create a container
 
-A blob container acts like a folder in a storage account to help organize your blob objects.  Only one level of containers is supported in a storage account.  That is, containers can't contain other containers.
+A blob container acts like a folder in a storage account to help organize your blob objects.  Only one level of blob containers is supported in a storage account.  That is, containers can't contain other containers.
 
 To create a blob container, call the `GetBlobContainerClient()` on the `BlobServiceClient` object with the name of the container you want to create.  This will return a `BlobContainerClient` object which has methods to interact with the named container, including creating that container if it does not exist.  
 
@@ -158,15 +203,15 @@ This method checks to make sure that the container does not exist by first calli
 As an alternative, the `CreateIfNotExists()` method could also be called on the `ContainerClient` object to create the container.
 
 ```csharp
-    public void CreateContainer(string containerName)
-    {
-        BlobContainerClient containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
+public void CreateContainer(string containerName)
+{
+    BlobContainerClient containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
 
-        if (containerClient.Exists())
-            throw new ApplicationException($"Unable to create container '{containerName}' as it already exists");
+    if (containerClient.Exists())
+        throw new ApplicationException($"Unable to create container '{containerName}' as it already exists");
             
-        containerClient.Create();
-    }
+    containerClient.Create();
+}
 ```
 
 ### List blob containers
@@ -176,12 +221,12 @@ To get a list of blob containers in the storage account, call the `GetBlobContai
 This will return a `Pageable<BlobContainer>` object listing the blob containers.  In this method in the sample application, a LINQ query is used to map each BlobContainerItem to a model object and return it to the application.
 
 ```csharp
-    public IEnumerable<StorageContainerModel> GetContainers()
-    {
-         Pageable<BlobContainerItem> containers = _blobServiceClient.GetBlobContainers();
+public IEnumerable<StorageContainerModel> GetContainers()
+{
+    Pageable<BlobContainerItem> containers = _blobServiceClient.GetBlobContainers();
 
-        return containers.Select(c => new StorageContainerModel() { Name = c.Name });
-    }
+    return containers.Select(c => new StorageContainerModel() { Name = c.Name });
+}
 ```
 
 ### Delete a container
@@ -191,15 +236,15 @@ To delete a blob container, first a `BlobContainerClient` for the container is o
 Deleting a blob container will also delete all of the blobs in the container.
 
 ```csharp
-    public void DeleteContainer(string containerName)
-    {
-        BlobContainerClient containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
+public void DeleteContainer(string containerName)
+{
+    BlobContainerClient containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
 
-        if (!containerClient.Exists())
-            throw new ApplicationException($"Unable to delete container '{containerName}' as it does not exists");
+    if (!containerClient.Exists())
+        throw new ApplicationException($"Unable to delete container '{containerName}' as it does not exists");
 
-        containerClient.Delete();
-    }
+    containerClient.Delete();
+}
 ```
 
 ### List blobs in a container
@@ -209,28 +254,28 @@ To list the blobs in a container, call the `GetBlobs()` method on a `BlobContain
 In the example application, this collection is mapped into Model objects defined by the application before being returned.  Among the properties available on for each blob are the name of the blob, any tags on the blob, its content type, its creation date and its size in bytes.
 
 ```csharp
-    public IEnumerable<BlobInfoModel> ListBlobsInContainer(string containerName)
+public IEnumerable<BlobInfoModel> ListBlobsInContainer(string containerName)
+{
+    BlobContainerClient containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
+
+    if (!containerClient.Exists())
+        throw new ApplicationException($"Cannot list blobs in container '{containerName}' as it does not exists");
+
+    Pageable<BlobItem> blobs = containerClient.GetBlobs();
+    var models = blobs.Select(b => new BlobInfoModel()
     {
-        BlobContainerClient containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
+        Name = b.Name,
+        Tags = b.Tags,
+        ContentEncoding = b.Properties.ContentEncoding,
+        ContentType = b.Properties.ContentType,
+        Size = b.Properties.ContentLength,
+        CreatedOn = b.Properties.CreatedOn,
+        AccessTier = b.Properties.AccessTier?.ToString(),
+        BlobType = b.Properties.BlobType?.ToString()
+    });
 
-        if (!containerClient.Exists())
-            throw new ApplicationException($"Cannot list blobs in container '{containerName}' as it does not exists");
-
-        Pageable<BlobItem> blobs = containerClient.GetBlobs();
-        var models = blobs.Select(b => new BlobInfoModel()
-        {
-            Name = b.Name,
-            Tags = b.Tags,
-            ContentEncoding = b.Properties.ContentEncoding,
-            ContentType = b.Properties.ContentType,
-            Size = b.Properties.ContentLength,
-            CreatedOn = b.Properties.CreatedOn,
-            AccessTier = b.Properties.AccessTier?.ToString(),
-            BlobType = b.Properties.BlobType?.ToString()
-        });
-
-        return models;
-    }
+    return models;
+}
 ```
 
 ### Upload a blob
@@ -299,5 +344,8 @@ As shown in this example, it is suggested the validate the existence of the cont
 ## 6 - Run the code
 
 ## Clean up resources
+
+When you are finished with the sample application, you should remove all Azure resources related to this article from your Azure account.  You can do this by deleting the resource group.
+
 
 ## Next Steps

@@ -137,7 +137,7 @@ For the **Specific Target**, select **Azure Container Registry** and then **Next
 
 Next, for the **Container Registry**, select your **Subscription name** that you used to created the ACR resrouce. From the **Container registries** selection area, select the container registry that you created, and then select **Finish**.
 
-:::image type="content" source="media/publish-dialog-azure-acr-registry.png" lightbox="media/publish-dialog-azure-acr-registry.png" alt-text="Visual Studio: Publish dialog - select container registry":::
+:::image type="content" source="media/publish-dialog-azure-acr-registry.png" lightbox="media/publish-dialog-azure-acr-registry.png" alt-text="Visual Studio: Publish dialog - select container registry details":::
 
 This creates a publish profile, which can be used to publish the image to container registry. Select the **Publish** button to push the image to the container registry, the **Output** window reports the publish progress &mdash; and when it completes successfully, you'll see a "Successfully published" message.
 

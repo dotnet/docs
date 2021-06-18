@@ -39,9 +39,9 @@ The <xref:System.ServiceModel.WorkflowServiceHost> is the out-of-box workflow ho
 
 - Samples for the <xref:System.ServiceModel.WorkflowServiceHost> can be found in the following sections:
 
-  - [Execution](./samples/execution.md)
+  - [Execution](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/execution)
 
-  - Application: [Suspended Instance Management](./samples/suspended-instance-management.md)
+  - Application: [Suspended Instance Management](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/suspended-instance-management)
 
 - [Hosting Workflow services overview](../wcf/feature-details/hosting-workflow-services-overview.md)
 
@@ -159,9 +159,9 @@ Flowchart is a well-known paradigm to visually represent domain problems. It is 
 
 - Samples:
 
-  - [Fault Handling in a Flowchart Activity Using TryCatch](./samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)
+  - [Fault Handling in a Flowchart Activity Using TryCatch](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch)
 
-  - [Hiring Process](./samples/hiring-process.md)
+  - [Hiring Process](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/hiring-process)
 
 - Designer Documentation:
 
@@ -193,9 +193,9 @@ Procedural activities provide a mechanism to model sequential control flow using
 
 - Samples:
 
-  - [Hiring Process](./samples/hiring-process.md)
+  - [Hiring Process](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/hiring-process)
 
-  - [Corporate Purchase Process](./samples/corporate-purchase-process.md)
+  - [Corporate Purchase Process](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/corporate-purchase-process)
 
 - Designer Documentation:
 
@@ -233,7 +233,7 @@ The <xref:System.Activities.Statements.TryCatch> activity provides a mechanism f
 
 - In Visual Studio 2012, create a workflow console application. Add a <xref:System.Activities.Statements.TryCatch> activity in the workflow designer.
 
-- Sample: [Fault Handling in a Flowchart Activity Using TryCatch](./samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)
+- Sample: [Fault Handling in a Flowchart Activity Using TryCatch](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch)
 
 - Designer Documentation: [Error Handling Activity Designers](/visualstudio/workflow-designer/error-handling-activity-designers)
 
@@ -249,7 +249,7 @@ The <xref:System.Activities.Statements.Pick> Activity provides event-based contr
 
 - In Visual Studio 2012, create a workflow console application. Add a <xref:System.Activities.Statements.Pick> activity in the workflow designer.
 
-- Sample: [Using the Pick Activity](./samples/using-the-pick-activity.md)
+- Sample: [Using the Pick Activity](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/using-the-pick-activity)
 
 - Designer documentation: [Pick Activity Designer](/visualstudio/workflow-designer/pick-activity-designer)
 
@@ -339,7 +339,7 @@ Workflow tracking provides insight into the execution of a workflow instance. Th
 
     4. Observe the workflow tracking events in event viewer.
 
-3. Samples: [Tracking](./samples/tracking.md)
+3. Samples: [Tracking](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/tracking)
 
 4. Conceptual documentation: [Workflow Tracking and Tracing](workflow-tracking-and-tracing.md)
 

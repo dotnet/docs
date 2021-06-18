@@ -40,16 +40,7 @@ namespace ConsoleApplication1
             total += x;
             if (total >= threshold)
             {
-                OnThresholdReached(EventArgs.Empty);
-            }
-        }
-
-        protected virtual void OnThresholdReached(EventArgs e)
-        {
-            EventHandler handler = ThresholdReached;
-            if (handler != null)
-            {
-                handler(this, e);
+                ThresholdReached?.Invoke(this, EventArgs.Empty);
             }
         }
 

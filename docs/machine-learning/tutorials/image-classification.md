@@ -4,6 +4,7 @@ description: Learn how to train a classification model to categorize images usin
 ms.date: 04/13/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
+recommendations: false
 #Customer intent: As a developer, I want to train a classification model with ML.NET to categorize images using a pre-trained TensorFlow model to process images.
 ---
 # Tutorial: Train an ML.NET classification model to categorize images
@@ -296,7 +297,7 @@ An ML.NET model pipeline is a chain of estimators. Note that no execution happen
 
     [!code-csharp[LoadData](./snippets/image-classification/csharp/Program.cs#LoadData "Load the data")]
 
-    Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or in real time (for example, SQL database or log files) to an `IDataView` object.
+    Data in ML.NET is represented as an [IDataView interface](xref:Microsoft.ML.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or in real time (for example, SQL database or log files) to an `IDataView` object.
 
 1. Train the model with the data loaded above:
 

@@ -1,14 +1,14 @@
 ---
 title: ".NET Framework system requirements"
-description: "Find out what are the hardware, operating system and software requirements to install .NET Framework 4.5 and later versions."
-ms.date: "04/18/2019"
-helpviewer_keywords: 
+description: "Find out about the hardware, operating system, and software requirements to install .NET Framework 4.5 and later versions."
+ms.date: 05/11/2021
+helpviewer_keywords:
   - "software requirements"
   - ".NET Framework, system requirements"
   - "system requirements"
   - "operating systems supported"
   - "hardware requirements"
-ms.assetid: 298275e2-da1d-4618-9f74-6a3567832350
+ms.topic: reference
 ---
 # .NET Framework system requirements
 
@@ -47,6 +47,7 @@ For information on the support lifecycle of .NET Framework versions, see [Micros
 
 | Operating system | Supported editions | Preinstalled with the OS | Installable separately |
 | ---------------- | ------------------ | ------------------------ | ---------------------- |
+| Windows 10 October 2020 Update<br/> (version 20H2) | 32-bit and 64-bit | .NET Framework 4.8 | -- |
 | Windows 10 May 2020 Update<br/> (version 2004) | 32-bit and 64-bit | .NET Framework 4.8 | -- |
 | Windows 10 November 2019 Update<br/> (version 1909) | 32-bit and 64-bit | .NET Framework 4.8 | -- |
 | Windows 10 May 2019 Update<br/> (version 1903) | 32-bit and 64-bit | .NET Framework 4.8 | -- |
@@ -63,7 +64,7 @@ For information on the support lifecycle of .NET Framework versions, see [Micros
 | Windows Vista SP2|32-bit and 64-bit | -- | .NET Framework 4<br /><br /> .NET Framework 4.5<br /><br /> .NET Framework 4.5.1<br /><br /> .NET Framework 4.5.2<br /><br /> .NET Framework 4.6 |
 | Windows XP |32-bit and 64-bit | -- | .NET Framework 4 |
 
- **Notes:**
+**Notes:**
 
 - On Windows 7 systems, .NET Framework requires Windows 7 SP1. If you're on Windows 7 and haven't yet installed Service Pack 1, you need to do so before installing the .NET Framework.
 

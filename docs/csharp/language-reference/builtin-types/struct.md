@@ -147,4 +147,4 @@ For more information about features introduced in C# 7.2 and later, see the foll
 - [C# reference](../index.md)
 - [Design guidelines - Choosing between class and struct](../../../standard/design-guidelines/choosing-between-class-and-struct.md)
 - [Design guidelines - Struct design](../../../standard/design-guidelines/struct.md)
-- [Classes and structs](../../programming-guide/classes-and-structs/index.md)
+- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)

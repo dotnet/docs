@@ -25,14 +25,14 @@ helpviewer_keywords:
 
 You can use the following operators and expressions to perform type checking or type conversion:
 
-- [is operator](#is-operator): to check if the runtime type of an expression is compatible with a given type
-- [as operator](#as-operator): to explicitly convert an expression to a given type if its runtime type is compatible with that type
+- [is operator](#is-operator): to check if the run-time type of an expression is compatible with a given type
+- [as operator](#as-operator): to explicitly convert an expression to a given type if its run-time type is compatible with that type
 - [cast expression](#cast-expression): to perform an explicit conversion
 - [typeof operator](#typeof-operator): to obtain the <xref:System.Type?displayProperty=nameWithType> instance for a type
 
 ## is operator
 
-The `is` operator checks if the runtime type of an expression result is compatible with a given type. Beginning with C# 7.0, the `is` operator also tests an expression result against a pattern.
+The `is` operator checks if the run-time type of an expression result is compatible with a given type. Beginning with C# 7.0, the `is` operator also tests an expression result against a pattern.
 
 The expression with the type-testing `is` operator has the following form
 
@@ -66,7 +66,7 @@ For information about C# conversions, see the [Conversions](~/_csharplang/spec/c
 
 ### Type testing with pattern matching
 
-Beginning with C# 7.0, the `is` operator also tests an expression result against a pattern. The following example shows how to use a [declaration pattern](patterns.md#declaration-and-type-patterns) to check the runtime type of an expression:
+Beginning with C# 7.0, the `is` operator also tests an expression result against a pattern. The following example shows how to use a [declaration pattern](patterns.md#declaration-and-type-patterns) to check the run-time type of an expression:
 
 [!code-csharp-interactive[is with declaration pattern](snippets/shared/TypeTestingAndConversionOperators.cs#IsDeclarationPattern)]
 
@@ -125,11 +125,11 @@ You can also use the `typeof` operator with unbound generic types. The name of a
 
 [!code-csharp-interactive[typeof unbound generic](snippets/shared/TypeTestingAndConversionOperators.cs#TypeOfUnboundGeneric)]
 
-An expression cannot be an argument of the `typeof` operator. To get the <xref:System.Type?displayProperty=nameWithType> instance for the runtime type of an expression result, use the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method.
+An expression cannot be an argument of the `typeof` operator. To get the <xref:System.Type?displayProperty=nameWithType> instance for the run-time type of an expression result, use the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method.
 
 ### Type testing with the `typeof` operator
 
-Use the `typeof` operator to check if the runtime type of the expression result exactly matches a given type. The following example demonstrates the difference between type checking performed with the `typeof` operator and the [is operator](#is-operator):
+Use the `typeof` operator to check if the run-time type of the expression result exactly matches a given type. The following example demonstrates the difference between type checking performed with the `typeof` operator and the [is operator](#is-operator):
 
 [!code-csharp[typeof vs is](snippets/shared/TypeTestingAndConversionOperators.cs#TypeCheckWithTypeOf)]
 
@@ -152,5 +152,5 @@ For more information, see the following sections of the [C# language specificati
 
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
-- [How to safely cast by using pattern matching and the is and as operators](../../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md)
+- [How to safely cast by using pattern matching and the is and as operators](../../fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md)
 - [Generics in .NET](../../../standard/generics/index.md)

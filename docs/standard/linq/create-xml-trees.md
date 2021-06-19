@@ -2,7 +2,7 @@
 title: Create XML Trees in C# - LINQ to XML
 description: You can create an XML tree in C# using the LINQ to XML XElement and XAttribute constructors, and you can make the code resemble the structure of the underlying XML.
 ms.date: 08/31/2018
-ms.assetid: cc74234a-0bac-4327-9c8c-5a2ead15b595
+ms.topic: how-to
 ---
 
 # Create XML trees in C# (LINQ to XML)

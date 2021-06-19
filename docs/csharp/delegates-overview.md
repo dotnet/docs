@@ -28,7 +28,7 @@ As you'll see later in this series, the C# code you write for algorithms
 like this is type safe, and uses the language rules and the compiler to
 ensure that the types match for arguments and return types.
 
-[Function pointers](~/_csharplang/proposals/csharp-9.0/function-pointers.md) were added to C# 9 for similar scenarios, where you need more control over the calling convention. The code associated with a delegate is invoked using a virtual method added to a delegate type. Using function pointers, you can specify different conventions.
+[Function pointers](language-reference/unsafe-code.md#function-pointers) were added to C# 9 for similar scenarios, where you need more control over the calling convention. The code associated with a delegate is invoked using a virtual method added to a delegate type. Using function pointers, you can specify different conventions.
 
 ## Language Design Goals for Delegates
 

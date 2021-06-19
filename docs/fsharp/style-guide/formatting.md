@@ -248,30 +248,40 @@ This is a way to avoid too long lines (in case return type might have long name)
 
 ### Type annotations
 
-#### Right-pad function argument type annotations
+#### Right-pad value and function argument type annotations
 
-When defining arguments with type annotations, use white space after the `:` symbol:
+When defining values or arguments with type annotations, use white space after the `:` symbol, but not before:
 
 ```fsharp
 // OK
 let complexFunction (a: int) (b: int) c = a + b + c
+let expensiveToCompute: int = 0 // Type annotation for let-bound value
+
+type C() =
+    member _.Property: int = 1
 
 // Bad
 let complexFunctionBad (a :int) (b :int) (c:int) = a + b + c
+let expensiveToComputeBad1:int = 1
+let expensiveToComputeBad2 :int = 2
 ```
 
 #### Surround return type annotations with white space
 
-In a let-bound function or value type annotation (return type in the case of a function), use white space before and after the `:` symbol:
+In function or member return type annotations, use white space before and after the `:` symbol:
 
 ```fsharp
 // OK
-let expensiveToCompute : int = 0 // Type annotation for let-bound value
 let myFun (a: decimal) b c : decimal = a + b + c // Type annotation for the return type of a function
+let anotherFun (arg: int) : unit = () // Type annotation for return type of a function
+type C() =
+    member _.SomeMethod(x: int) : int = 1 // Type annotation for return type of a member
+
 // Bad
-let expensiveToComputeBad1:int = 1
-let expensiveToComputeBad2 :int = 2
 let myFunBad (a: decimal) b c:decimal = a + b + c
+let anotherFunBad (arg: int): unit = ()
+type C() =
+    member _.SomeMethod(x: int): int = 1
 ```
 
 ### Formatting bindings
@@ -903,7 +913,7 @@ if
         aVeryLongparameterNameTwo
         aVeryLongparameterNameThree
         """
-Multiline 
+Multiline
     string
         """
 then
@@ -922,7 +932,7 @@ let condition () =
         aVeryLongparameterNameTwo
         aVeryLongparameterNameThree
         """
-Multiline 
+Multiline
     string
         """
 
@@ -1009,9 +1019,9 @@ Always add a `|` for each clause, even when only having a single clause.
 try
     persistState currentState
 with
-| ex -> 
+| ex ->
     printfn "Something went wrong: %A" ex
-    
+
 // Not OK
 try
     persistState currentState
@@ -1302,7 +1312,7 @@ The guidelines below apply to both functions, members, and type definitions.
 Keep generic type arguments and constraints on a single line if it’s not too long:
 
 ```fsharp
-let f<'a, 'b when 'a : equality and 'b : comparison> param =
+let f<'a, 'b when 'a: equality and 'b: comparison> param =
     // function body
 ```
 

@@ -24,7 +24,7 @@ yield break;
 
 You use a `yield return` statement to return each element one at a time.
 
-The sequence returned from an iterator method can be consumed by using a [foreach](foreach-in.md) statement or LINQ query. Each iteration of the `foreach` loop calls the iterator method. When a `yield return` statement is reached in the iterator method, `expression` is returned, and the current location in code is retained. Execution is restarted from that location the next time that the iterator function is called.
+The sequence returned from an iterator method can be consumed by using a [foreach](../statements/iteration-statements.md#the-foreach-statement) statement or LINQ query. Each iteration of the `foreach` loop calls the iterator method. When a `yield return` statement is reached in the iterator method, `expression` is returned, and the current location in code is retained. Execution is restarted from that location the next time that the iterator function is called.
 
 You can use a `yield break` statement to end the iteration.
 
@@ -72,7 +72,7 @@ On an iteration of the `foreach` loop, the <xref:System.Collections.IEnumerator.
 
 On each subsequent iteration of the `foreach` loop, the execution of the iterator body continues from where it left off, again stopping when it reaches a `yield return` statement. The `foreach` loop completes when the end of the iterator method or a `yield break` statement is reached.
 
-## Example
+## Example 1
 
 The following example has a `yield return` statement that's inside a `for` loop. Each iteration of the `foreach` statement body in the `Main` method creates a call to the `Power` iterator function. Each call to the iterator function proceeds to the next execution of the `yield return` statement, which occurs during the next iteration of the `for` loop.
 
@@ -80,7 +80,7 @@ The return type of the iterator method is <xref:System.Collections.IEnumerable>,
 
 [!code-csharp[csrefKeywordsContextual#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsContextual/CS/csrefKeywordsContextual.cs#5)]
 
-## Example
+## Example 2
 
 The following example demonstrates a `get` accessor that is an iterator. In the example, each `yield return` statement returns an instance of a user-defined class.
 
@@ -94,5 +94,5 @@ The following example demonstrates a `get` accessor that is an iterator. In the 
 
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
-- [foreach, in](foreach-in.md)
+- [foreach, in](../statements/iteration-statements.md#the-foreach-statement)
 - [Iterators](../../iterators.md)

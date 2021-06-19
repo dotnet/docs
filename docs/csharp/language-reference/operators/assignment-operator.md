@@ -1,6 +1,6 @@
 ---
-description: "Assignment operators - C# reference"
 title: "Assignment operators - C# reference"
+description: "Learn about various C# assignment operators."
 ms.date: 09/10/2019
 f1_keywords: 
   - "=_CSharpKeyword"

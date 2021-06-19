@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: f99e2f93-fca5-403f-8a0c-770761d4905a
+ms.topic: how-to
 ---
 
 # How to filter on an optional element (LINQ to XML)

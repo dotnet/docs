@@ -96,5 +96,5 @@ For more information, see [Using directives](~/_csharplang/spec/namespaces.md#us
 - [C# Programming Guide](../../programming-guide/index.md)
 - [Using Namespaces](../../programming-guide/namespaces/using-namespaces.md)
 - [C# Keywords](index.md)
-- [Namespaces](../../programming-guide/namespaces/index.md)
+- [Namespaces](../../fundamentals/types/namespaces.md)
 - [using Statement](using-statement.md)

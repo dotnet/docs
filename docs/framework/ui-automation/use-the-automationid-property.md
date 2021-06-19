@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "AutomationId property"
   - "UI Automation, AutomationId property"
   - "properties, AutomationId"
-ms.assetid: a24e807b-d7c3-4e93-ac48-80094c4e1c90
+ms.topic: how-to
 ---
 # Use the AutomationID Property
 

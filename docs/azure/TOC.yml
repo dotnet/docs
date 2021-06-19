@@ -8,7 +8,7 @@
     - name: Key Azure services for .NET developers
       href: key-azure-services.md
     - name: Configure your development environment
-      items: 
+      items:
       - name: Create an Azure account
         href: create-azure-account.md
       - name: Configure Visual Studio for Azure development (Windows)
@@ -20,7 +20,7 @@
       - name: Install additional tools
         href: azure-tools.md
       - name: Development setup checklist
-        href: dotnet-dev-env-checklist.md                
+        href: dotnet-dev-env-checklist.md
 - name: Migrate to Azure
   items:
     - name: Choose the right Azure hosting option
@@ -36,13 +36,17 @@
     - name: What is the Azure SDK for .NET?
       href: ./sdk/azure-sdk-for-dotnet.md
     - name: Authentication
-      href: authentication.md 
+      href: ./sdk/authentication.md
+    - name: Dependency injection
+      href: ./sdk/dependency-injection.md
+    - name: Thread safety
+      href: ./sdk/thread-safety.md      
     - name: Logging
-      href: logging.md
+      href: ./sdk/logging.md
     - name: Configuring a proxy server
       href: ./sdk/azure-sdk-configure-proxy.md
     - name: Package List
-      href: packages.md
+      href: ./sdk/packages.md
     - name: SDK example
       href: /samples/dotnet/samples/azure-identity-resource-management-storage/
 - name: Sample code

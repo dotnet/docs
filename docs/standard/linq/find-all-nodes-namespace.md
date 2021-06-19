@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 3a38b913-a53e-4d0e-a19d-8782bffd3364
+ms.topic: how-to
 ---
 
 # How to find all nodes in a namespace (LINQ to XML)

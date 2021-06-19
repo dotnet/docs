@@ -2,7 +2,7 @@
 description: "Learn more about: Recoverable XSLT Errors"
 title: "Recoverable XSLT Errors"
 ms.date: "03/30/2017"
-ms.assetid: 484929b0-fefb-4629-87ee-ebdde70ff1f8
+ms.topic: reference
 ---
 # Recoverable XSLT Errors
 
@@ -46,7 +46,7 @@ The W3C XSL Transformations (XSLT) Version 1.0 Recommendation includes areas in 
 |The `value` attribute of an `xsl:number` is NAN, infinite or less than 0.5|errata 24|Recover|  
 |The second argument node-set to the document function is empty and the URI reference is relative.|errata 14|Recover|  
   
- <sup>*</sup> This behavior is different than that of the <xref:System.Xml.Xsl.XslTransform> class. For more information, see [Implementation of Discretionary Behaviors in the XslTransform Class](implementation-of-discretionary-behaviors-in-the-xsltransform-class.md).  
+ <sup>*</sup> This behavior is different than that of the <xref:System.Xml.Xsl.XslTransform> class. For more information, see [Implementation of Discretionary Behaviors in the XslTransform Class](/previous-versions/dotnet/framework/data/xml/xslt/implementation-of-discretionary-behaviors-in-the-xsltransform-class).  
   
 ## See also
 

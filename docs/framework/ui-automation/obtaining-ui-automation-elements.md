@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UI Automation, obtaining elements"
   - "elements, UI Automation, obtaining"
-ms.assetid: c2caaf45-e59c-42a1-bc9b-77a6de520171
+ms.topic: how-to
 ---
 # Obtaining UI Automation Elements
 

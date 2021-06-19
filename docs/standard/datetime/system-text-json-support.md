@@ -15,7 +15,7 @@ helpviewer_keywords:
 ---
 # DateTime and DateTimeOffset support in System.Text.Json
 
-The System.Text.Json library parses and writes <xref:System.DateTime> and <xref:System.DateTimeOffset> values according to the ISO 8601:-2019 extended profile.
+The System.Text.Json library parses and writes <xref:System.DateTime> and <xref:System.DateTimeOffset> values according to the ISO 8601-1:2019 extended profile.
 [Converters](xref:System.Text.Json.Serialization.JsonConverter%601) provide custom support for serializing and deserializing with <xref:System.Text.Json.JsonSerializer>.
 Custom support can also be implemented when using <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter>.
 
@@ -116,7 +116,7 @@ the converter successfully parses the data using <xref:System.DateTime.Parse(Sys
 
 #### Using Unix epoch date format
 
-The following converters handle Unix epoch format with or without time zone (values such as `/Date(1590863400000-0700)/` or `/Date(1590863400000)/`):
+The following converters handle Unix epoch format with or without a time zone offset (values such as `/Date(1590863400000-0700)/` or `/Date(1590863400000)/`):
 
 :::code language="csharp" source="../serialization/snippets/system-text-json-how-to-5-0/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
 

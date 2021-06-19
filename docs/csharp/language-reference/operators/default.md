@@ -1,6 +1,6 @@
 ---
 title: "default value expressions - C# reference"
-description: "Use the default value expressions to obtain the default value of a type"
+description: "Use the default value expressions to obtain the default value of a type."
 ms.date: 03/13/2020
 f1_keywords:
   - "default_CSharpKeyword"

@@ -55,6 +55,9 @@
 # Azure Guide
 /docs/azure/ @CamSoper
 
+# Azure SDK package list
+/docs/azure/includes/ @dotnet/docs
+
 # IoT Guide
 /docs/iot/ @CamSoper
 
@@ -72,7 +75,7 @@
 # Deployment
 /docs/core/deploying/ @adegeo
 # Diagnostics
-/docs/core/diagnostics/ @sywhang @sdmaclea @dotnet/docs
+/docs/core/diagnostics/ @tommcdon @sdmaclea @dotnet/docs
 # Docker
 /docs/core/docker/ @IEvangelist
 # Install
@@ -116,7 +119,7 @@
 # XAML Services
 /docs/framework/xaml-services/ @adegeo
 # ADO.NET
-/docs/framework/data/ @stevestein
+/docs/framework/data/ @mcleblanc
 # NCL
 /docs/framework/configure-apps/file-schema/network/ @karelz
 /docs/framework/network-programming/ @karelz

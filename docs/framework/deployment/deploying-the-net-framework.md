@@ -1,7 +1,7 @@
 ---
 title: "Deploying the .NET Framework"
 description: Learn how to deploy .NET for developers who want to install .NET with their applications, and for administrators who want to deploy .NET across a network.
-ms.date: "03/30/2017"
+ms.date: "04/26/2021"
 helpviewer_keywords: 
   - ".NET Framework, deploying"
   - "deployment [.NET Framework]"
@@ -10,7 +10,9 @@ ms.assetid: 19df26c5-4008-461d-a7d7-18f4506312d2
 # Deploying the .NET Framework
 
 This section of the .NET Framework documentation provides information for developers who want to install the .NET Framework with their applications, and administrators who want to deploy the .NET Framework across a network. It also discusses activation and restart issues associated with deployment, and how to monitor the progress of your .NET Framework installation.  
-  
+
+[!INCLUDE[net_retirement](../../../includes/net-framework-retired-versions.md)]
+
 ## In This Section  
 
  [Deployment Guide for Developers](deployment-guide-for-developers.md)  

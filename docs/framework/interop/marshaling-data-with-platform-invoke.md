@@ -59,3 +59,21 @@ The following code defines the library functions provided by Pinvoke.dll. Many s
 [!code-cpp[PInvokeLib#1](../../../samples/snippets/cpp/VS_Snippets_CLR/pinvokelib/cpp/pinvokelib.cpp#1)]
 
 [!code-cpp[PInvokeLib#2](../../../samples/snippets/cpp/VS_Snippets_CLR/pinvokelib/cpp/pinvokelib.h#2)]
+
+To call the library functions from managed code, first implement the managed prototypes for each function you want to invoke.
+If the unmanaged code uses any any custom types, you must also declare those types in your managed code.  
+Decorate the prototype with the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute.
+
+The following code shows an example prototype:
+
+```csharp
+// Managed prototype for TestingStructInStruct, which is declared and defined in an unmanaged library.
+[DllImport("..\\LIB\\PinvokeLib.dll", CallingConvention = CallingConvention.Cdecl)]
+internal static extern int TestStructInStruct(ref MyPerson2 person2);
+```
+
+For more information and examples, see the following articles:
+
+- [Marshaling Classes, Structures, and Unions](marshaling-classes-structures-and-unions.md)
+- [Marshaling Strings](marshaling-strings.md)
+- [Marshaling Different Types of Arrays](marshaling-different-types-of-arrays.md)

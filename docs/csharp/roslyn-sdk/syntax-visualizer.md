@@ -2,6 +2,7 @@
 title: Explore code with the Roslyn syntax visualizer in Visual Studio
 description: The syntax visualizer provides a visual tool to explore the models the .NET Compiler Platform SDK generates for code.
 ms.date: 03/07/2018
+ms.topic: tutorial
 ms.custom: mvc, vs-dotnet
 ---
 # Explore code with the Roslyn syntax visualizer in Visual Studio

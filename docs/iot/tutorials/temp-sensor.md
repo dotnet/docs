@@ -6,6 +6,7 @@ ms.author: casoper
 ms.date: 11/14/2020
 ms.topic: tutorial
 ms.prod: dotnet
+recommendations: false
 ---
 
 # Read environmental conditions from a sensor

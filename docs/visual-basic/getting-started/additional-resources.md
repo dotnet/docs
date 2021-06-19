@@ -55,6 +55,7 @@ The following web sites provide guidance and can help you find answers to common
 |[VBForums](http://www.vbforums.com/)|Provides a forum to discuss Visual Basic, .NET, and more.|
 |[vbCity](http://vbcity.com/)|A community site for people to learn and ask questions about Visual Basic and .NET.|
 |[Stack Overflow](https://stackoverflow.com/questions/tagged/vb.net)|Stack Overflow is a question and answer site for developers.|
+|[Tutlane](https://www.tutlane.com/tutorial/visual-basic)|Tutlane provides tutorials to learn Visual Basic, C#, etc.|
 
 ## See also
 

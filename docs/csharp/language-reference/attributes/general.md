@@ -90,6 +90,8 @@ If <xref:System.AttributeUsageAttribute.Inherited> is `false`, then the attribut
 
 In this case `NonInheritedAttribute` isn't applied to `DClass` via inheritance.
 
+You can also use these keywords to specify where an attribute should be applied. For example, you can use the `field:` specifier to add an attribute to the backing field of an [auto-implemented property](../../programming-guide/classes-and-structs/properties.md#auto-implemented-properties). Or you can use the `field:`, `property:` or `param:` specifier to apply an attribute to any of the elements generated from a positional record. For an example, see [Positional syntax for property definition](../builtin-types/record.md#positional-syntax-for-property-definition).
+
 ## `ModuleInitializer` attribute
 
 Starting with C# 9, the `ModuleInitializer` attribute marks a method that the runtime calls when the assembly loads. `ModuleInitializer` is an alias for <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute>.

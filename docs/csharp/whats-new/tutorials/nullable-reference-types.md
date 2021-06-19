@@ -4,6 +4,7 @@ description: This advanced tutorial provides an introduction to nullable referen
 ms.date: 02/19/2019
 ms.technology: csharp-null-safety
 ms.custom: mvc
+recommendations: false
 ---
 # Tutorial: Express your design intent more clearly with nullable and non-nullable reference types
 

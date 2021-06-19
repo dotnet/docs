@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "subscribing to UI Automation events"
   - "events, subscribing to"
   - "listening for events"
-ms.assetid: b688effa-b3e8-4b05-944d-05ed89a245aa
+ms.topic: how-to
 ---
 # Subscribe to UI Automation Events
 

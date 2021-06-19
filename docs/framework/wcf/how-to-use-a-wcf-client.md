@@ -8,6 +8,7 @@ dev_langs:
  - CSharp
  - VB
 ms.assetid: 190349fc-0573-49c7-bb85-8e316df7f31f
+recommendations: false
 ---
 # Tutorial: Use a Windows Communication Foundation client
 

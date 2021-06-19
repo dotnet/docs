@@ -1,6 +1,6 @@
 ---
 title: "switch expression - C# reference"
-description: Learn about the C# switch expression that provides switch-like semantics based on pattern matching
+description: Learn about the C# switch expression that provides switch-like semantics based on pattern matching.
 ms.date: 04/16/2021
 f1_keywords:
   - "switch_CSharpKeyword"
@@ -56,5 +56,5 @@ For more information, see the [`switch` expression](~/_csharplang/proposals/csha
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Patterns](patterns.md)
-- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../tutorials/pattern-matching.md)
+- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/pattern-matching.md)
 - [`switch` statement](../keywords/switch.md)

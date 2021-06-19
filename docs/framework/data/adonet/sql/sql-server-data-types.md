@@ -13,11 +13,7 @@ SQL Server and the .NET Framework are based on different type systems, which can
   
  SQL Server 2008 introduces new data types that are designed to meet business needs to work with date and time, structured, semi-structured, and unstructured data. These are documented in SQL Server 2008 Books Online.  
   
- The SQL Server data types that are available for use in your application depends on the version of SQL Server that you are using. For more information, see the relevant version of SQL Server Books Online in the following table.  
-  
- **SQL Server documentation**  
-  
-1. [Data Types (Transact-SQL)](/sql/t-sql/data-types/data-types-transact-sql)  
+ The SQL Server data types that are available for use in your application depends on the version of SQL Server that you are using. For more information, see [Data Types (Transact-SQL)](/sql/t-sql/data-types/data-types-transact-sql).
   
 ## In This Section  
 

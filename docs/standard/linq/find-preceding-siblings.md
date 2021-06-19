@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: b281ff99-d08a-43d0-bea1-eff831b2f8ae
+ms.topic: how-to
 ---
 
 # How to find preceding siblings (LINQ to XML)

@@ -16,7 +16,7 @@ Available in C# 9.0 and later, a `with` expression produces a copy of its [recor
 
 As the preceding example shows, you use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values. In a `with` expression, a left-hand operand must be of a record type.
 
-The result of a `with` expression has the same runtime type as the expression's operand, as the following example shows:
+The result of a `with` expression has the same run-time type as the expression's operand, as the following example shows:
 
 :::code language="csharp" source="snippets/with-expression/InheritanceExample.cs" :::
 

@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 00cf5555-374e-4369-bf93-7bd2e7f21db3
+ms.topic: how-to
 ---
 
 # How to find an element with a specific child element (LINQ to XML)

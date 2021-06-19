@@ -250,6 +250,7 @@ The following MSBuild properties are documented in this section:
 - [AppendRuntimeIdentifierToOutputPath](#appendruntimeidentifiertooutputpath)
 - [AppendTargetFrameworkToOutputPath](#appendtargetframeworktooutputpath)
 - [CopyLocalLockFileAssemblies](#copylocallockfileassemblies)
+- [IsPublishable](#ispublishable)
 - [PreserveCompilationContext](#preservecompilationcontext)
 - [PreserveCompilationReferences](#preservecompilationreferences)
 - [RuntimeIdentifier](#runtimeidentifier)
@@ -292,6 +293,18 @@ The `CopyLocalLockFileAssemblies` property is useful for plugin projects that ha
 
 > [!TIP]
 > Alternatively, you can use `dotnet publish` to publish the class library. For more information, see [dotnet publish](../tools/dotnet-publish.md).
+
+### IsPublishable
+
+The `IsPublishable` property allows the `Publish` target to run. This property only affects processes that use *.\*proj* files and the `Publish` target, such as the [dotnet publish](../tools/dotnet-publish.md) command. It does not affect publishing in Visual Studio, which uses the `PublishOnly` target. The default value is `true`.
+
+This property is useful if you run `dotnet publish` on a solution file, as it allows automatic selection of projects that should be published.
+
+```xml
+<PropertyGroup>
+  <IsPublishable>false</IsPublishable>
+</PropertyGroup>
+```
 
 ### PreserveCompilationContext
 
@@ -670,6 +683,7 @@ The following MSBuild properties are documented in this section:
 - [AssetTargetFallback](#assettargetfallback)
 - [DisableImplicitFrameworkReferences](#disableimplicitframeworkreferences)
 - [Restore-related properties](#restore-related-properties)
+- [ValidateExecutableReferencesMatchSelfContained](#validateexecutablereferencesmatchselfcontained)
 
 ### AssetTargetFallback
 
@@ -702,6 +716,16 @@ Restoring a referenced package installs all of its direct dependencies and all t
 ```xml
 <PropertyGroup>
   <RestoreIgnoreFailedSource>true</RestoreIgnoreFailedSource>
+</PropertyGroup>
+```
+
+### ValidateExecutableReferencesMatchSelfContained
+
+The `ValidateExecutableReferencesMatchSelfContained` property can be used to disable errors related to executable project references. If .NET detects that a self-contained executable project references a framework-dependent executable project, or vice versa, it generates errors NETSDK1150 and NETSDK1151, respectively. To avoid these errors when the reference is intentional, set the `ValidateExecutableReferencesMatchSelfContained` property to `false`.
+
+```xml
+<PropertyGroup>
+  <ValidateExecutableReferencesMatchSelfContained>false</ValidateExecutableReferencesMatchSelfContained>
 </PropertyGroup>
 ```
 

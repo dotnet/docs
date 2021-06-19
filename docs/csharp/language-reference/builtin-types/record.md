@@ -46,6 +46,12 @@ When you use the positional syntax for property definition, the compiler creates
 * A primary constructor whose parameters match the positional parameters on the record declaration.
 * A `Deconstruct` method with an `out` parameter for each positional parameter provided in the record declaration. This method is provided only if there are two or more positional parameters. The method deconstructs properties defined by using positional syntax; it ignores properties that are defined by using standard property syntax.
 
+You may want to add attributes to any of these elements the compiler creates from the record definition. You can add a *target* to any attribute you apply to the positional record's properties. The following example applies the <xref:System.Text.Json.Serialization.JsonPropertyNameAttribute?displayProperty=nameWithType> to each property of the `Person` record. The `property:` target indicates that the attribute is applied to the compiler generated property. Other values are `field:` to apply the attribute to the field, and `param:` to apply the attribute to the parameter.
+
+:::code language="csharp" source="snippets/shared/RecordType.cs" id="PositionalAttributes":::
+
+The preceding example also shows how to create XML documentation comments for the record. You can add the `<param>` tag to add documentation for the primary constructor's parameters.
+
 If the generated auto-implemented property definition isn't what you want, you can define your own property of the same name. If you do that, the generated constructor and deconstructor will use your property definition. For instance, the following example makes the `FirstName` positional property `internal` instead of `public`.
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PositionalWithManualProperty":::
@@ -204,5 +210,5 @@ For more information about features introduced in C# 9 and later, see the follow
 - [C# reference](../index.md)
 - [Design guidelines - Choosing between class and struct](../../../standard/design-guidelines/choosing-between-class-and-struct.md)
 - [Design guidelines - Struct design](../../../standard/design-guidelines/struct.md)
-- [Classes and structs](../../programming-guide/classes-and-structs/index.md)
+- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
 - [`with` expression](../operators/with-expression.md)

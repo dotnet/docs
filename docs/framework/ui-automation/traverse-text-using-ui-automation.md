@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "UI Automation, traversing text"
   - "text, traversing"
   - "traversing text"
-ms.assetid: 3ddb3b7b-1d6b-4dba-8678-5a68e868aadb
+ms.topic: how-to
 ---
 # Traverse Text Using UI Automation
 

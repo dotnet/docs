@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "serializing objects"
   - "serialization"
   - "objects, serializing"
+ms.topic: how-to
 ---
 
 # How to ignore properties with System.Text.Json
@@ -120,6 +121,9 @@ Here's an example object to serialize and JSON output:
 }
 ```
 
+> [!NOTE]
+> The <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> property is deprecated in .NET 5 and later versions. For the current way to ignore null values, see [how to ignore all null-value properties in .NET 5 and later](system-text-json-ignore-properties.md?pivots=dotnet-5-0#ignore-all-null-value-properties).
+
 ::: zone-end
 
 ## Ignore all default-value properties
@@ -151,7 +155,7 @@ There is no built-in way to prevent serialization of properties with value type 
 * [Polymorphic serialization](system-text-json-polymorphism.md)
 * [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
 * [Customize character encoding](system-text-json-character-encoding.md)
-* [Write custom serializers and deserializers](write-custom-serializer-deserializer.md)
+* [Use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

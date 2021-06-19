@@ -1,6 +1,6 @@
 ---
 title: "is operator - C# reference"
-description: "Learn about the C# is operator that matches an expression against a pattern"
+description: "Learn about the C# is operator that matches an expression against a pattern."
 ms.date: 04/23/2021
 f1_keywords: 
   - "is_CSharpKeyword"
@@ -51,5 +51,5 @@ For more information, see [The is operator](~/_csharplang/spec/expressions.md#th
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Patterns](patterns.md)
-- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../tutorials/pattern-matching.md)
+- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/pattern-matching.md)
 - [Type-testing and cast operators](../operators/type-testing-and-cast.md)

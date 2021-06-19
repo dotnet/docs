@@ -44,7 +44,7 @@ issues:
     # If breaking change issue metadata, add labels
     - check:
         - type: metadata-comment
-          name: issuetype
+          name: "issue type"
           value: "(?i)breaking-change$"
       pass:
         - labels-add: ["breaking-change", "doc-idea"]

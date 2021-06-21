@@ -5,7 +5,7 @@ no-loc: [ Blazor ]
 ms.author: tanayparikh
 ms.date: 06/21/2021
 ---
-# Blazor: Byte Array Interop
+# Blazor: Byte-array interop
 
 Blazor now supports optimized byte array interop which avoids encoding/decoding byte arrays into Base64, facilitating a more efficient interop process. This applies to both Blazor Server and Blazor WebAssembly.
 
@@ -13,7 +13,7 @@ Blazor now supports optimized byte array interop which avoids encoding/decoding 
 
 ASP.NET Core 6.0 Preview 6
 
-## Returning byte array from JS to .NET
+## Return byte array from JavaScript to .NET
 
 ### Old behavior
 
@@ -34,13 +34,13 @@ function someJSMethodReturningAByteArray() {
 }
 ```
 
-## Receiving byte array in JS from .NET
+## Receive byte array in JavaScript from .NET
 
 ### Old behavior
 
 ```typescript
 function receivesByteArray(data) {
-    // Previously data was a Base 64 encoded string representing the byte array
+    // Previously, data was a Base64-encoded string representing the byte array.
 }
 ```
 
@@ -48,17 +48,17 @@ function receivesByteArray(data) {
 
 ```typescript
 function receivesByteArray(data) {
-    // 6.0 Preview 6 and beyond, it'll be a Uint8Array (no longer requires processing the Base 64 encoding)
+    // Data is a Uint8Array (no longer requires processing the Base64 encoding).
 }
 ```
 
 ## Reason for change
 
-Create a more efficient interop mechanism for byte arrays.
+This change was made to create a more efficient interop mechanism for byte arrays.
 
 ## Recommended action
 
-### Receiving byte array in JS from .NET
+### Receive byte array in JavaScript from .NET
 
 Consider this .NET interop, where you call into JavaScript passing a byte array:
 
@@ -69,9 +69,9 @@ await _jsRuntime.InvokeVoidAsync("receivesByteArray", bytes);
 
 In the preceding code example, you'd treat the incoming parameter in JavaScript as a byte array instead of a Base64 encoded string.
 
-### Returning byte array from JS to .NET
+### Return byte array from JavaScript to .NET
 
-If .NET is expecting a `byte[]` JS must provide a `Uint8Array`. Previously, it was possible to provide a Base64 encoded array using `btoa`.
+If .NET expects a `byte[]`, JS must provide a `Uint8Array`. Previously, it was possible to provide a Base64-encoded array using `btoa`.
 
 For example, consider the following JavaScript interop call from .NET:
 

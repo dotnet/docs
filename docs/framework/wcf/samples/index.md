@@ -11,7 +11,7 @@ You can download [Windows Communication Foundation (WCF) samples for .NET Framew
 > [!TIP]
 > The articles in this section describe some of the samples in the download package. For a complete documentation set that covers all of the samples, check the [.NET Framework 4 documentation for WCF samples](/previous-versions/dotnet/netframework-4.0/dd483346(v=vs.100)).
 
-The Windows Workflow Foundation (WF) [application](../../windows-workflow-foundation/samples/application.md) samples also demonstrate several WCF features.
+The Windows Workflow Foundation (WF) [application](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/application) samples also demonstrate several WCF features.
   
 ## In this section  
 

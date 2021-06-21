@@ -33,6 +33,29 @@ There are some limitations on what parts of the library that you can use from Vi
 
 For information about security threats that were considered when designing <xref:System.Text.Json.JsonSerializer>, and how they can be mitigated, see [`System.Text.Json` Threat Model](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/docs/ThreatModel.md).
 
+## Thread safety
+
+* The `System.Text.Json` types are thread-safe, including:
+
+:::zone pivot="net-5-0,net-core-3-1"
+
+* <xref:System.Text.Json.JsonSerializer>
+* <xref:System.Text.Json.Utf8JsonReader>
+* <xref:System.Text.Json.Utf8JsonWriter>
+* <xref:System.Text.Json.JsonDocument>
+:::zone-end
+
+:::zone pivot="net-6-0"
+
+* <xref:System.Text.Json.JsonSerializer>
+* <xref:System.Text.Json.Utf8JsonReader>
+* <xref:System.Text.Json.Utf8JsonWriter>
+* <xref:System.Text.Json.JsonDocument>
+* <xref:System.Text.Json.Node.JsonNode>
+:::zone-end
+
+Use of `JsonDocument` from multiple threads requires that you call <xref:System.Text.Json.JsonElement.Clone%2A> on each <xref:System.Text.Json.JsonElement>.
+
 ## Additional resources
 
 * [How to use the library](system-text-json-how-to.md)

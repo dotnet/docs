@@ -14,6 +14,7 @@ Blazor Server & WebAssembly now supports optimized byte array interop which avoi
 ASP.NET Core 6.0 Preview 6
 
 ## Returning byte array from JS to .NET
+
 ### Old behavior
 
 ```csharp
@@ -34,7 +35,9 @@ function someJSMethodReturningAByteArray() {
 ```
 
 ## Receiving byte array in JS from .NET
+
 ### Old behavior
+
 ```js
 function ReceivesByteArray(data)
 {
@@ -43,6 +46,7 @@ function ReceivesByteArray(data)
 ```
 
 ### New behavior
+
 ```js
 function ReceivesByteArray(data)
 {
@@ -55,7 +59,9 @@ function ReceivesByteArray(data)
 Create a more efficient interop mechanism for byte arrays.
 
 ## Recommended action
+
 ### Receiving byte array in JS from .NET
+
 If you sent a byte array from .NET:
 
 ```csharp
@@ -66,6 +72,7 @@ await _jsRuntime.InvokeVoidAsync("ReceivesByteArray", bytes);
 Then treat the incoming parameter in JS as a byte array instead of a Base64 encoded string.
 
 ### Returning byte array from JS to .NET
+
 If .NET is expecting a `byte[]` JS must provide a `Uint8Array`. Previously, it was possible to provide a Base64 encoded array using `btoa`.
 
 For example, if you have something like this:
@@ -75,20 +82,3 @@ var bytes = await _jsRuntime.InvokeAsync<byte[]>("someJSMethodReturningAByteArra
 ```
 
 then you must provide a Uint8Array from JS (must not be Base 64 encoded). 
-
-
-<!--## Affected APIs
-
-<xref:Microsoft.AspNetCore.Components.Forms.BrowserFileExtensions.RequestImageFileAsync%2A?displayProperty=nameWithType>
-
-
-
-## Category
-
-ASP.NET Core
-
-## Affected APIs
-
-`Overload:Microsoft.AspNetCore.Components.Forms.BrowserFileExtensions.RequestImageFileAsync`
-
--->

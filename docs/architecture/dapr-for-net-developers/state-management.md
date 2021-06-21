@@ -160,7 +160,7 @@ For bulk operations, Dapr will submit each key/value pair update as a separate r
 
 ## Use the Dapr .NET SDK
 
-The Dapr .NET SDK provides language-specific support for the .NET Core platform. Developers can use the `DaprClient` class introduced in [chapter 3](getting-started.md) to read and write data. The following example shows how to use the `DaprClient.GetStateAsync<TValue>` method to read data from a state store. The method expects the store name, `statestore`, and key, `AMS`, as parameters:
+The Dapr .NET SDK provides language-specific support for the .NET platform. Developers can use the `DaprClient` class introduced in [chapter 3](getting-started.md) to read and write data. The following example shows how to use the `DaprClient.GetStateAsync<TValue>` method to read data from a state store. The method expects the store name, `statestore`, and key, `AMS`, as parameters:
 
 ```csharp
 var weatherForecast = await daprClient.GetStateAsync<WeatherForecast>("statestore", "AMS");

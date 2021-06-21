@@ -67,7 +67,7 @@ For more information, see the following resources:
 |Resource|Description|
 |--------------|-----------------|
 |[Code Access Security and ADO.NET](code-access-security.md)|Describes the interactions between code access security, role-based security, and partially trusted environments from the perspective of an ADO.NET application.|
-|[Code Access Security](../../misc/code-access-security.md)|Contains links to additional topics describing CAS in the .NET Framework.|
+|[Code Access Security](/previous-versions/dotnet/framework/code-access-security/code-access-security)|Contains links to additional topics describing CAS in the .NET Framework.|
 
 ## Database Security
 

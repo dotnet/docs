@@ -17,7 +17,7 @@ A Source Generator is a new kind of component that C# developers can write that 
 
 2. Generate C# source files that can be added to a compilation object during the course of compilation. In other words, you can provide additional source code as input to a compilation while the code is being compiled.
 
-When combined, these two things are what make Source Generators so useful. You can inspect user code with all of the rich metadata that the compiler builds up during compilation, then emit C# code back into the same compilation that is based on the data you’ve analyzed! If you’re familiar with Roslyn Analyzers, you can think of Source Generators as analyzers that can emit C# source code.
+When combined, these two things are what make Source Generators so useful. You can inspect user code with all of the rich metadata that the compiler builds up during compilation, then emit C# code back into the same compilation that is based on the data you've analyzed! If you're familiar with Roslyn Analyzers, you can think of Source Generators as analyzers that can emit C# source code.
 
 Source generators run as a phase of compilation visualized below:
 
@@ -41,7 +41,7 @@ Another capability Source Generators can offer is obviating the use of some “s
 
 In this guide, you'll explore the creation of a source generator using the <xref:Microsoft.CodeAnalysis.ISourceGenerator> API.
 
-1. Create a standard .NET Core console application.
+1. Create a .NET console application.
 
 2. Replace the Program class with the following:
 
@@ -52,6 +52,7 @@ In this guide, you'll explore the creation of a source generator using the <xref
         {
             HelloFrom("Generated Code");
         }
+
         static partial void HelloFrom(string name);
     }
     ```
@@ -59,22 +60,22 @@ In this guide, you'll explore the creation of a source generator using the <xref
     > [!NOTE]
     > You can run this sample as-is, but nothing will happen yet.
 
-3. Next, we'll create a source generator that will fill in the contents of the HelloFrom method.
+3. Next, we'll create a source generator that will fill in the contents of the `HelloFrom` method.
 
 4. Create a .NET standard library project that looks like this:
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
-    
+
       <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
       </PropertyGroup>
-    
+
       <ItemGroup>
         <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.9.0" PrivateAssets="all" />
         <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.0.0" PrivateAssets="all" />
       </ItemGroup>
-    
+
     </Project>
     ```
 
@@ -82,7 +83,7 @@ In this guide, you'll explore the creation of a source generator using the <xref
 
     ```csharp
     using Microsoft.CodeAnalysis;
-    
+
     namespace MyGenerator
     {
         [Generator]
@@ -92,7 +93,7 @@ In this guide, you'll explore the creation of a source generator using the <xref
             {
                 // Code generation goes here
             }
-    
+
             public void Initialize(GeneratorInitializationContext context)
             {
                 // No initialization required for this one
@@ -101,7 +102,7 @@ In this guide, you'll explore the creation of a source generator using the <xref
     }
     ```
 
-6. Replace the contents of the execute method, so that it looks like the following:
+6. Replace the contents of the `Execute` method, so that it looks like the following:
 
     ```csharp
     public void Execute(GeneratorExecutionContext context)
@@ -112,7 +113,7 @@ In this guide, you'll explore the creation of a source generator using the <xref
         // build up the source code
         string source = $@"
     using System;
-    
+
     namespace {mainMethod.ContainingNamespace.Name} 
     {{
         public static partial class {mainMethod.ContainingType.Name} 
@@ -123,7 +124,6 @@ In this guide, you'll explore the creation of a source generator using the <xref
             }}
         }}
     }}
-    
     ";
         // add the source code to the compilation
         context.AddSource("generatedSource", source);
@@ -150,9 +150,9 @@ In this guide, you'll explore the creation of a source generator using the <xref
 
 ## Next steps
 
-The [Source Generators Cookbook](https://github.com/dotnet/roslyn/blob/master/docs/features/source-generators.cookbook.md) goes over some of these examples with some recommended approaches to solving them. Additionally, we have a [set of samples available on GitHub](https://github.com/dotnet/roslyn-sdk/tree/master/samples/CSharp/SourceGenerators) that you can try on your own.
+The [Source Generators Cookbook](https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.cookbook.md) goes over some of these examples with some recommended approaches to solving them. Additionally, we have a [set of samples available on GitHub](https://github.com/dotnet/roslyn-sdk/tree/main/samples/CSharp/SourceGenerators) that you can try on your own.
 
 You can learn more about Source Generators in these topics:
 
-- [Source Generators design document](https://github.com/dotnet/roslyn/blob/master/docs/features/source-generators.md)
-- [Source Generators cookbook](https://github.com/dotnet/roslyn/blob/master/docs/features/source-generators.cookbook.md)
+- [Source Generators design document](https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.md)
+- [Source Generators cookbook](https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.cookbook.md)

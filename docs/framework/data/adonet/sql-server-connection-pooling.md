@@ -134,7 +134,7 @@ using (SqlConnection connection = new SqlConnection(
   
 ### Application Role Alternatives  
 
- We recommend that you take advantage of security mechanisms that you can use instead of application roles. For more information, see [Creating Application Roles in SQL Server](./sql/creating-application-roles-in-sql-server.md).  
+ We recommend that you take advantage of security mechanisms that you can use instead of application roles. For more information, see [Creating Application Roles in SQL Server](/previous-versions/dotnet/framework/data/adonet/sql/creating-application-roles-in-sql-server).  
   
 ## See also
 

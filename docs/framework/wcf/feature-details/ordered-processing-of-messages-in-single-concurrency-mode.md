@@ -25,4 +25,4 @@ WCF makes no guarantees about the order in which messages are processed, unless 
 ## See also
 
 - [Sessions, Instancing, and Concurrency](sessions-instancing-and-concurrency.md)
-- [Concurrency](../samples/concurrency.md)
+- [Concurrency](/previous-versions/dotnet/framework/wcf/samples/concurrency)

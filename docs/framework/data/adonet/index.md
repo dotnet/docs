@@ -49,7 +49,7 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
  [Language-Integrated Query (LINQ) - Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md)  
  Provides links to LINQ topics and samples using Visual Basic.  
   
- [WCF Data Services 4.5](../wcf/index.md)  
+ [WCF Data Services 4.5](/previous-versions/dotnet/framework/data/wcf/index)  
  Describes how to use WCF Data Services to deploy data services on the Web or an intranet that implement the Open Data Protocol (OData).  
   
  [.NET Framework Development Guide](../../development-guide.md)  

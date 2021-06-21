@@ -269,6 +269,8 @@ items:
           href: ../core/tools/dotnet-nuget-update-source.md
         - name: dotnet nuget verify
           href: ../core/tools/dotnet-nuget-verify.md
+        - name: dotnet nuget trust
+          href: ../core/tools/dotnet-nuget-trust.md          
       - name: dotnet pack
         href: ../core/tools/dotnet-pack.md
       - name: dotnet publish
@@ -2458,12 +2460,12 @@ items:
     items:
     - name: Overview
       href: ../core/porting/upgrade-assistant-overview.md
+    - name: ASP.NET Core
+      href: ../core/porting/upgrade-assistant-aspnetmvc.md
     - name: Windows Presentation Foundation
       href: ../core/porting/upgrade-assistant-wpf-framework.md
     - name: Windows Forms
       href: ../core/porting/upgrade-assistant-winforms-framework.md
-    - name: ASP.NET Core
-      href: ../core/porting/upgrade-assistant-aspnetmvc.md
   - name: Breaking changes
     displayName: app compatibility
     href: ../core/compatibility/

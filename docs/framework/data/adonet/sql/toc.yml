@@ -1,42 +1,9 @@
 - name: SQL Server and ADO.NET
   href: index.md
 - name: SQL Server Security
-  href: sql-server-security.md
   items:
   - name: Overview of SQL Server Security
-    href: overview-of-sql-server-security.md
-    items:
-    - name: Authentication in SQL Server
-      href: authentication-in-sql-server.md
-    - name: Server and Database Roles in SQL Server
-      href: server-and-database-roles-in-sql-server.md
-    - name: Ownership and User-Schema Separation in SQL Server
-      href: ownership-and-user-schema-separation-in-sql-server.md
-    - name: Authorization and Permissions in SQL Server
-      href: authorization-and-permissions-in-sql-server.md
-    - name: Data Encryption in SQL Server
-      href: data-encryption-in-sql-server.md
-    - name: CLR Integration Security in SQL Server
-      href: clr-integration-security-in-sql-server.md
   - name: Application Security Scenarios in SQL Server
-    href: application-security-scenarios-in-sql-server.md
-    items:
-    - name: Managing Permissions with Stored Procedures in SQL Server
-      href: managing-permissions-with-stored-procedures-in-sql-server.md
-    - name: Writing Secure Dynamic SQL in SQL Server
-      href: writing-secure-dynamic-sql-in-sql-server.md
-    - name: Signing Stored Procedures in SQL Server
-      href: signing-stored-procedures-in-sql-server.md
-    - name: Customizing Permissions with Impersonation in SQL Server
-      href: customizing-permissions-with-impersonation-in-sql-server.md
-    - name: Granting Row-Level Permissions in SQL Server
-      href: granting-row-level-permissions-in-sql-server.md
-    - name: Creating Application Roles in SQL Server
-      href: creating-application-roles-in-sql-server.md
-    - name: Enabling Cross-Database Access in SQL Server
-      href: enabling-cross-database-access-in-sql-server.md
-  - name: SQL Server Express Security
-    href: sql-server-express-security.md
 - name: SQL Server Data Types and ADO.NET
   href: sql-server-data-types.md
   items:

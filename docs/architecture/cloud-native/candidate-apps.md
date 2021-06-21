@@ -19,7 +19,7 @@ What type of application might be a candidate for cloud native?
 
 - A system with where individual features must release *without* a full redeployment of the entire system
 
-- An application developed by teams with expertise in different technology stacks
+- An application developed by teams with expertise in different technology stacks
 
 - An application with components that must scale independently
 
@@ -75,7 +75,7 @@ With the introduction behind, we now dive into a much more detailed look at clou
 
 - [Beyond the Twelve-Factor Application](https://content.pivotal.io/blog/beyond-the-twelve-factor-app)
 
-- [What is Infrastructure as Code](/azure/devops/learn/what-is-infrastructure-as-code)
+- [What is Infrastructure as Code](/devops/deliver/what-is-infrastructure-as-code)
 
 - [Uber Engineering's Micro Deploy: Deploying Daily with Confidence](https://eng.uber.com/micro-deploy/)
 

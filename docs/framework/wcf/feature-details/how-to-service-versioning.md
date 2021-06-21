@@ -322,4 +322,4 @@ namespace Microsoft.Samples.AdvancedFilters
 
 ## See also
 
-- [Routing Services](../samples/routing-services.md)
+- [Routing Services](/previous-versions/dotnet/framework/wcf/samples/routing-services)

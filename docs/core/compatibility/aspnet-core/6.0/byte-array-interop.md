@@ -2,12 +2,12 @@
 title: "Breaking change: Blazor: Byte Array Interop"
 description: "Learn about the breaking change in ASP.NET Core 6.0 titled Blazor: Byte Array Interop"
 no-loc: [ Blazor ]
-ms.author: tanayparikh
+ms.author: taparik
 ms.date: 06/21/2021
 ---
 # Blazor: Byte-array interop
 
-Blazor now supports optimized byte array interop which avoids encoding and decoding byte-arrays into Base64 and facilitates a more efficient interop process. This applies to both Blazor Server and Blazor WebAssembly.
+Blazor now supports optimized byte-array interop, which avoids encoding and decoding byte-arrays into Base64 and facilitates a more efficient interop process. This applies to both Blazor Server and Blazor WebAssembly.
 
 ## Version introduced
 

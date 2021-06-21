@@ -7,7 +7,7 @@ ms.date: 06/21/2021
 ---
 # Blazor: Byte-array interop
 
-Blazor now supports optimized byte array interop which avoids encoding/decoding byte arrays into Base64, facilitating a more efficient interop process. This applies to both Blazor Server and Blazor WebAssembly.
+Blazor now supports optimized byte array interop which avoids encoding and decoding byte-arrays into Base64 and facilitates a more efficient interop process. This applies to both Blazor Server and Blazor WebAssembly.
 
 ## Version introduced
 
@@ -67,16 +67,14 @@ var bytes = new byte[] { 1, 5, 7 };
 await _jsRuntime.InvokeVoidAsync("receivesByteArray", bytes);
 ```
 
-In the preceding code example, you'd treat the incoming parameter in JavaScript as a byte array instead of a Base64 encoded string.
+In the preceding code example, you'd treat the incoming parameter in JavaScript as a byte array instead of a Base64-encoded string.
 
 ### Return byte array from JavaScript to .NET
 
-If .NET expects a `byte[]`, JS must provide a `Uint8Array`. Previously, it was possible to provide a Base64-encoded array using `btoa`.
+If .NET expects a `byte[]`, JavaScript must provide a `Uint8Array`. Previously, it was possible to provide a Base64-encoded array using `btoa`.
 
-For example, consider the following JavaScript interop call from .NET:
+For example, if you have the following code, then you must provide a `Uint8Array` from JavaScript that's _not_ Base64-encoded:
 
 ```csharp
 var bytes = await _jsRuntime.InvokeAsync<byte[]>("someJSMethodReturningAByteArray");
 ```
-
-In the preceding code, the `Uint8Array` is returned from JavaScript and must _not_ be Base 64 encoded.

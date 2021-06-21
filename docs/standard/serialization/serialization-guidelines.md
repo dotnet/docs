@@ -146,4 +146,4 @@ This article lists the guidelines to consider when designing an API to be serial
 - [Binary Serialization](binary-serialization.md)
 - [.NET Remoting](/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))
 - [XML and SOAP Serialization](xml-and-soap-serialization.md)
-- [Security and Serialization](../../framework/misc/security-and-serialization.md)
+- [Security and Serialization](/previous-versions/dotnet/framework/code-access-security/security-and-serialization)

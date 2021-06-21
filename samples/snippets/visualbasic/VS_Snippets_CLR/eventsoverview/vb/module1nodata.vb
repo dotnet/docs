@@ -1,4 +1,4 @@
-﻿'<snippet5>
+'<snippet5>
 Module Module1
 
     Sub Main()
@@ -29,12 +29,8 @@ Class Counter
     Public Sub Add(x As Integer)
         total = total + x
         If (total >= threshold) Then
-            OnThresholdReached(EventArgs.Empty)
+            ThresholdReached?.Invoke(this. EventArgs.Empty)
         End If
-    End Sub
-
-    Protected Overridable Sub OnThresholdReached(e As EventArgs)
-        RaiseEvent ThresholdReached(Me, e)
     End Sub
 
     Public Event ThresholdReached As EventHandler

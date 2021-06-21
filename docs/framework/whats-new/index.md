@@ -1850,7 +1850,7 @@ Universal Windows Platform (UWP) apps that are written in C# or Visual Basic can
 
   - You can retarget a Windows Store or Windows Phone Store class library like a Portable Class Library.
 
-  For more information about these changes, see [Portable Class Library](../cross-platform/portable-class-library.md).
+  For more information about these changes, see [Portable Class Library](/previous-versions/dotnet/framework/cross-platform/portable-class-library).
 
 - The .NET Framework content set now includes documentation for .NET Native, which is a precompilation technology for building and deploying Windows apps. .NET Native compiles your apps directly to native code, rather than to intermediate language (IL), for better performance. For details, see [Compiling Apps with .NET Native](/windows/uwp/dotnet-native/).
 
@@ -2120,7 +2120,7 @@ Windows 8.x Store apps are designed for specific form factors and leverage the p
 
 ### Portable Class Libraries <a name="portable"></a>
 
-The Portable Class Library project in Visual Studio 2012 (and later versions) enables you to write and build managed assemblies that work on multiple .NET Framework platforms. Using a Portable Class Library project, you choose the platforms (such as Windows Phone and .NET for Windows 8.x Store apps) to target. The available types and members in your project are automatically restricted to the common types and members across these platforms. For more information, see [Portable Class Library](../cross-platform/portable-class-library.md).
+The Portable Class Library project in Visual Studio 2012 (and later versions) enables you to write and build managed assemblies that work on multiple .NET Framework platforms. Using a Portable Class Library project, you choose the platforms (such as Windows Phone and .NET for Windows 8.x Store apps) to target. The available types and members in your project are automatically restricted to the common types and members across these platforms. For more information, see [Portable Class Library](/previous-versions/dotnet/framework/cross-platform/portable-class-library).
 
 ## See also
 

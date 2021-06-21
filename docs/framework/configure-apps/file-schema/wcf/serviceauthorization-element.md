@@ -92,14 +92,14 @@ The following code shows the `roleProviderName` used with the `principalPermissi
 </behaviors>
 ```
 
-For a detailed example of using this configuration element, see [Authorizing Access to Service Operations](../../../wcf/samples/authorizing-access-to-service-operations.md) and [Authorization Policy](../../../wcf/samples/authorization-policy.md).
+For a detailed example of using this configuration element, see [Authorizing Access to Service Operations](/previous-versions/dotnet/framework/wcf/samples/authorizing-access-to-service-operations) and [Authorization Policy](/previous-versions/dotnet/framework/wcf/samples/authorization-policy).
   
 ## See also
 
 - <xref:System.ServiceModel.Configuration.ServiceAuthorizationElement>
 - <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>
 - [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)
-- [Authorizing Access to Service Operations](../../../wcf/samples/authorizing-access-to-service-operations.md)
+- [Authorizing Access to Service Operations](/previous-versions/dotnet/framework/wcf/samples/authorizing-access-to-service-operations)
 - [How to: Create a Custom Authorization Manager for a Service](../../../wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)
 - [How to: Restrict Access with the PrincipalPermissionAttribute Class](../../../wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)
-- [Authorization Policy](../../../wcf/samples/authorization-policy.md)
+- [Authorization Policy](/previous-versions/dotnet/framework/wcf/samples/authorization-policy)

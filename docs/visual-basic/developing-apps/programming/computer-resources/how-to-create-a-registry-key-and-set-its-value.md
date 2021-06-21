@@ -67,7 +67,7 @@ The following conditions may cause an exception:
 
 ## .NET Framework Security
 
-To run this process, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.RegistryPermission> class. If you are running in a partial-trust context, the process might throw an exception due to insufficient privileges. Similarly, the user must have the correct ACLs for creating or writing to settings. For example, a local application that has the code access security permission might not have operating system permission. For more information, see [Code Access Security Basics](../../../../framework/misc/code-access-security-basics.md).
+To run this process, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.RegistryPermission> class. If you are running in a partial-trust context, the process might throw an exception due to insufficient privileges. Similarly, the user must have the correct ACLs for creating or writing to settings. For example, a local application that has the code access security permission might not have operating system permission. For more information, see [Code Access Security Basics](/previous-versions/dotnet/framework/code-access-security/code-access-security-basics).
 
 ## See also
 
@@ -75,4 +75,4 @@ To run this process, your assembly requires a privilege level granted by the <xr
 - <xref:Microsoft.VisualBasic.MyServices.RegistryProxy.CurrentUser%2A>
 - <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A>
 - [Reading from and Writing to the Registry](reading-from-and-writing-to-the-registry.md)
-- [Code Access Security Basics](../../../../framework/misc/code-access-security-basics.md)
+- [Code Access Security Basics](/previous-versions/dotnet/framework/code-access-security/code-access-security-basics)

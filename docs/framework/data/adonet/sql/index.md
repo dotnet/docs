@@ -16,7 +16,7 @@ This section describes features and behaviors that are specific to the .NET Fram
   
 ## In This Section  
 
- [SQL Server Security](sql-server-security.md)  
+ [SQL Server Security](/previous-versions/dotnet/framework/data/adonet/sql/sql-server-security)  
  Provides an overview of SQL Server security features, and application scenarios for creating secure ADO.NET applications that target SQL Server.  
   
  [SQL Server Data Types and ADO.NET](sql-server-data-types.md)  

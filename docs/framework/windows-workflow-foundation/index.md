@@ -20,7 +20,7 @@ This section describes the programming model, samples, and tools of Windows Work
  Discusses the changes in several development paradigms from previous versions.
 
  [What's New in Windows Workflow Foundation in .NET Framework 4.5](whats-new-in-wf-in-dotnet.md)\
- Describes the new features in Windows Workflow Foundation in [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)\].
+ Describes the new features in Windows Workflow Foundation in [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)].
 
  [Windows Workflow Foundation Feature Specifics](feature-specifics.md)\
  Describes the new features in Windows Workflow Foundation in .NET Framework 4.
@@ -32,7 +32,7 @@ This section describes the programming model, samples, and tools of Windows Work
  A set of walkthrough topics that introduce you to programming Windows Workflow Foundation applications.
 
  [Windows Workflow Foundation Programming](programming.md)\
- A set of primer topics that you should understand to become a proficient [!INCLUDE[wf1](../../../includes/wf1-md.md)\] programmer.
+ A set of primer topics that you should understand to become a proficient [!INCLUDE[wf1](../../../includes/wf1-md.md)] programmer.
 
  [Extending Windows Workflow Foundation](extend.md)\
  A set of topics that discusses how to extend or customize Windows Workflow Foundation to suit your needs.

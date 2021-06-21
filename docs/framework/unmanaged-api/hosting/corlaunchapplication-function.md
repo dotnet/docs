@@ -7,6 +7,7 @@ api_name:
 api_location:
   - "mscoree.dll"
   - "clr.dll"
+  - dfshim.dll
 api_type:
   - "COM"
 f1_keywords:
@@ -70,6 +71,7 @@ HRESULT CorLaunchApplication (
 
 - MSCorEE.dll
 - Clr.dll
+- DfShim.dll
 
 **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
 

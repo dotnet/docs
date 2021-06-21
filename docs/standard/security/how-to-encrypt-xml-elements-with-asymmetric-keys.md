@@ -134,7 +134,7 @@ This example assumes that a file named `"test.xml"` exists in the same directory
 Never store a symmetric cryptographic key in plaintext or transfer a symmetric key between machines in plaintext.  Additionally, never store or transfer the private key of an asymmetric key pair in plaintext.  For more information about symmetric and asymmetric cryptographic keys, see [Generating Keys for Encryption and Decryption](generating-keys-for-encryption-and-decryption.md).
 
 > [!TIP]
-> For development, use [Secret Manager](/aspnet/core/security/app-secrets) for secure secret storage. In production, consider a product like [Azure Key Vault](/aspnet/core/security/key-vault-configuration). 
+> For development, use [Secret Manager](/aspnet/core/security/app-secrets) for secure secret storage. In production, consider a product like [Azure Key Vault](/aspnet/core/security/key-vault-configuration).
 
 Never embed a key directly into your source code.  Embedded keys can be easily read from an assembly using the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) or by opening the assembly in a text editor such as Notepad.
 

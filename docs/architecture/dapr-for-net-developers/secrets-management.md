@@ -492,7 +492,7 @@ metadata:
   namespace: dapr-trafficcontrol
 spec:
   type: secretstores.local.file
-  version: v1  
+  version: v1
   metadata:
   - name: secretsFile
     value: ../dapr/components/secrets.json

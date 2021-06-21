@@ -55,7 +55,7 @@ The telemetry feature collects the following data.
 | >=0.2.231802               | Hashed project id (or hashed path if no id is available) for each project.                                  |
 | >=0.2.231802               | Hashed project id (or hashed path if no id is available) for each entrypoint.                               |
 | >=0.2.231802               | For each step, the time to initialize and apply the step.                                                   |
-| >=0.2.231802               | For each step, the the decision selected (for example, `apply`).                                            |
+| >=0.2.231802               | For each step, the decision selected (for example, `apply`).                                            |
 
 ## Additional resources
 

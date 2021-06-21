@@ -39,25 +39,23 @@ Protecting your privacy is important to us. If you suspect the telemetry feature
 
 The telemetry feature collects the following data.
 
-| .NET SDK versions | Data |
-|--------------|------|
-| >=5.0        | Timestamp of invocation. |
-| >=5.0        | Three-octet IP address used to determine the geographical location. |
-| >=5.0        | Operating system and version. |
-| >=5.0        | Runtime ID (RID) the tool is running on. |
-| >=5.0        | Whether the tool is running in a container. |
-| >=5.0        | Hashed Media Access Control (MAC) address: a cryptographically (SHA256) hashed and unique ID for a machine. |
-| >=5.0        | Kernel version. |
-| >=5.0        | Upgrade Assistant version. |
-| >=5.0        | The command and argument names invoked. Actual argument values aren't collected. |
-| >=5.0        | MSBuild version used. |
-| >=5.0        | Hashed solution id (or path if no id is available). |
-| >=5.0        | Hashed project id (or path if no id is available) for each project. |
-| >=5.0        | Hashed project id (or path if no id is available) for each entrypoint. |
-| >=5.0        | Hashed step id when a step is running. |
-| >=5.0        | For each step, the time to initialize and apply the step. |
-| >=5.0        | For each step, the the decision selected (for example, `apply`). |
-| >=5.0        | The reason for exit (for example, `success` or `cancelled`). |
+| Upgrade Assistant versions | Data                                                                                                        |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| >=0.2.231802               | Timestamp of invocation.                                                                                    |
+| >=0.2.231802               | Three-octet IP address used to determine the geographical location.                                         |
+| >=0.2.231802               | Operating system and version.                                                                               |
+| >=0.2.231802               | Runtime ID (RID) the tool is running on.                                                                    |
+| >=0.2.231802               | Whether the tool is running in a container.                                                                 |
+| >=0.2.231802               | Hashed Media Access Control (MAC) address: a cryptographically (SHA256) hashed and unique ID for a machine. |
+| >=0.2.231802               | Kernel version.                                                                                             |
+| >=0.2.231802               | Upgrade Assistant version.                                                                                  |
+| >=0.2.231802               | The command and argument names invoked. Actual argument values aren't collected.                            |
+| >=0.2.231802               | MSBuild version used.                                                                                       |
+| >=0.2.231802               | Hashed solution id (or hashed path if no id is available).                                                  |
+| >=0.2.231802               | Hashed project id (or hashed path if no id is available) for each project.                                  |
+| >=0.2.231802               | Hashed project id (or hashed path if no id is available) for each entrypoint.                               |
+| >=0.2.231802               | For each step, the time to initialize and apply the step.                                                   |
+| >=0.2.231802               | For each step, the the decision selected (for example, `apply`).                                            |
 
 ## Additional resources
 

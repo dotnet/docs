@@ -26,7 +26,7 @@ namespace Console.ExampleFormatters.Custom
             IExternalScopeProvider scopeProvider,
             TextWriter textWriter)
         {
-            if (logEntry.Exception == null && message == null)
+            if (logEntry.Exception is null && message is null)
             {
                 return;
             }

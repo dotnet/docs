@@ -2,7 +2,7 @@
 title: Upgrade Assistant Telemetry
 description: Learn about telemetry collected by the Upgrade Assistant.
 author: tasou
-ms.date: 06/03/2021
+ms.date: 06/21/2021
 ---
 # Upgrade Assistant telemetry
 
@@ -11,6 +11,59 @@ The [Upgrade Assistant](./upgrade-assistant-overview.md) includes a telemetry fe
 ## How to opt out
 
 The Upgrade Assistant telemetry feature is enabled by default. To opt out of the telemetry feature, set the `DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT` environment variable to `1` or `true`.
+
+### [Command Line](#tab/command-line)
+
+Create and assign persisted environment variable, given the value.
+
+```CMD
+:: Assigns the env var to the value
+setx DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT="1"
+```
+
+In a new instance of the **Command Prompt**, read the environment variable.
+
+```CMD
+:: Prints the env var value
+echo %DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT%
+```
+
+### [PowerShell](#tab/powershell)
+
+Create and assign persisted environment variable, given the value.
+
+```powershell
+# Assigns the env var to the value
+[System.Environment]::SetEnvironmentVariable('DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT', '1', 'User')
+```
+
+In a new instance of the **Windows PowerShell**, read the environment variable.
+
+```powershell
+# Prints the env var value
+[System.Environment]::GetEnvironmentVariable('DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT')
+```
+
+### [Bash](#tab/bash)
+
+Create and assign persisted environment variable, given the value.
+
+```Bash
+# Assigns the env var to the value
+echo export DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT="1" >> /etc/environment && source /etc/environment
+```
+
+In a new instance of the **Bash**, read the environment variable.
+
+```Bash
+# Prints the env var value
+echo "${DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT}"
+
+# Or use printenv:
+# printenv DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT
+```
+
+---
 
 ## Disclosure
 

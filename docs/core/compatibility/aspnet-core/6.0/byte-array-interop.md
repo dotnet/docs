@@ -41,7 +41,7 @@ function someJSMethodReturningAByteArray() {
 ```js
 function ReceivesByteArray(data)
 {
-	// Previously data was a Base 64 encoded string representing the byte array
+    // Previously data was a Base 64 encoded string representing the byte array
 }
 ```
 
@@ -50,7 +50,7 @@ function ReceivesByteArray(data)
 ```js
 function ReceivesByteArray(data)
 {
-	// 6.0 Preview 6 and beyond, it'll be a Uint8Array (no longer requires processing the Base 64 encoding)
+    // 6.0 Preview 6 and beyond, it'll be a Uint8Array (no longer requires processing the Base 64 encoding)
 }
 ```
 
@@ -81,4 +81,4 @@ For example, if you have something like this:
 var bytes = await _jsRuntime.InvokeAsync<byte[]>("someJSMethodReturningAByteArray");
 ```
 
-then you must provide a Uint8Array from JS (must not be Base 64 encoded). 
+then you must provide a Uint8Array from JS (must not be Base 64 encoded).

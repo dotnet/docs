@@ -352,7 +352,7 @@ Your Profiler DLL can distinguish WinMD files from other modules by calling the 
 
 ### Reading metadata from WinMDs
 
-WinMD files, like regular modules, contain metadata that can be read via the [Metadata APIs](../metadata/index.md). However, the CLR maps Windows Runtime types to .NET Framework types when it reads WinMD files so that developers who program in managed code and consume the WinMD file can have a more natural programming experience. For some examples of these mappings, see [.NET Framework Support for Windows Store Apps and Windows Runtime](../../cross-platform/support-for-windows-store-apps-and-windows-runtime.md).
+WinMD files, like regular modules, contain metadata that can be read via the [Metadata APIs](../metadata/index.md). However, the CLR maps Windows Runtime types to .NET Framework types when it reads WinMD files so that developers who program in managed code and consume the WinMD file can have a more natural programming experience. For some examples of these mappings, see [.NET Framework Support for Windows Store Apps and Windows Runtime](/previous-versions/dotnet/framework/cross-platform/support-for-windows-store-apps-and-windows-runtime).
 
 So which view will your profiler get when it uses the metadata APIs: the raw Windows Runtime view, or the mapped .NET Framework view?  The answer: it’s up to you.
 
@@ -402,7 +402,7 @@ It is possible to use the CLR Profiling API to analyze managed code running insi
 
 **The CLR's interaction with the Windows Runtime**
 
-- [.NET Framework Support for Windows Store Apps and Windows Runtime](../../cross-platform/support-for-windows-store-apps-and-windows-runtime.md)
+- [.NET Framework Support for Windows Store Apps and Windows Runtime](/previous-versions/dotnet/framework/cross-platform/support-for-windows-store-apps-and-windows-runtime)
 
 **Windows Store apps**
 

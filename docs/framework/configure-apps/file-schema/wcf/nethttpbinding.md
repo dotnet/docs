@@ -170,17 +170,10 @@ Represents a binding that a Windows Communication Foundation (WCF) service can u
     </netHttpBinding>
   </bindings>
 </system.serviceModel>
-<<<<<<< HEAD
 ```
 
  For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](/previous-versions/dotnet/framework/wcf/samples/simplified-configuration-for-wcf-services).
 
-=======
-```
-
- For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](/previous-versions/dotnet/framework/wcf/samples/simplified-configuration-for-wcf-services).
-
->>>>>>> 6c20d7754f8132859af4c1db42ca2c2efac157e1
 ## See also
 
 - <xref:System.ServiceModel.Channels.Binding>

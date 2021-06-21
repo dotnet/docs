@@ -278,7 +278,7 @@ items:
         href: migration-guide/mitigations.md
       - name: Custom IMessageFilter.PreFilterMessage implementations
         href: migration-guide/mitigation-custom-imessagefilter-prefiltermessage-implementations.md
-      - name: Deserializ objects across app domains
+      - name: Deserialize objects across app domains
         href: migration-guide/mitigation-deserialization-of-objects-across-app-domains.md
       - name: New 64-bit JIT compiler
         href: migration-guide/mitigation-new-64-bit-jit-compiler.md
@@ -679,21 +679,5 @@ items:
       href: whats-new/obsolete-types.md
     - name: Obsolete members
       href: whats-new/obsolete-members.md
-- name: Code access security
 - name: Code analysis
   href: code-analyzers.md
-- name: Develop for multiple platforms
-  items:
-  - name: Overview
-    displayName: cross platform
-    href: /previous-versions/dotnet/framework/cross-platform/index
-  - name: Portable Class Library
-    href: /previous-versions/dotnet/framework/cross-platform/portable-class-library
-  - name: Use Portable Class Library with MVVM
-    href: /previous-versions/dotnet/framework/cross-platform/using-portable-class-library-with-model-view-view-model
-  - name: App resources for libraries that target multiple platforms
-    href: /previous-versions/dotnet/framework/cross-platform/app-resources-for-libraries-that-target-multiple-platforms
-  - name: .NET Framework support for Microsoft Store apps and Windows Runtime
-    href: /previous-versions/dotnet/framework/cross-platform/support-for-windows-store-apps-and-windows-runtime
-  - name: Pass a URI to the Windows Runtime
-    href: /previous-versions/dotnet/framework/cross-platform/passing-a-uri-to-the-windows-runtime

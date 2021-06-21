@@ -6,7 +6,7 @@ ms.date: 06/03/2021
 ---
 # Upgrade Assistant telemetry
 
-The [Upgrade Assistant](./upgrade-assistant-overview.md) includes a telemetry feature that collects usage data. It's important that the Upgrade Assistant team understands how the tool is used so it can be improved.
+The [Upgrade Assistant](./upgrade-assistant-overview.md) includes a telemetry feature that collects usage data. The telemetry data is used to help understand how to make improvements to the tool.
 
 ## How to opt out
 

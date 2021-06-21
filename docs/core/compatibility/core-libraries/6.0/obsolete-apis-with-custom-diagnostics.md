@@ -28,6 +28,8 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | [SYSLIB0022](../../../../fundamentals/syslib-diagnostics/syslib0022.md) | The <xref:System.Security.Cryptography.Rijndael> and <xref:System.Security.Cryptography.RijndaelManaged> types are obsolete. Use <xref:System.Security.Cryptography.Aes> instead. | Warning |
 | [SYSLIB0023](../../../../fundamentals/syslib-diagnostics/syslib0023.md) | <xref:System.Security.Cryptography.RNGCryptoServiceProvider> is obsolete. To generate a random number, use one of the <xref:System.Security.Cryptography.RandomNumberGenerator> static methods instead. | Warning |
 | [SYSLIB0024](../../../../fundamentals/syslib-diagnostics/syslib0024.md) | Creating and unloading [AppDomains](xref:System.AppDomain) is not supported and throws an exception. | Warning |
+| [SYSLIB0025](../../../../fundamentals/syslib-diagnostics/syslib0025.md) | <xref:System.Runtime.CompilerServices.SuppressIldasmAttribute> has no effect in .NET 6+. | Warning |
+| [SYSLIB0026](../../../../fundamentals/syslib-diagnostics/syslib0026.md) | <xref:System.Security.Cryptography.X509Certificates.X509Certificate> and <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> are immutable. Use the appropriate constructor to create a new certificate. | Warning |
 
 ## Version introduced
 
@@ -111,6 +113,17 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 
 - <xref:System.AppDomain.CreateDomain(System.String)?displayProperty=fullName>
 - <xref:System.AppDomain.Unload(System.AppDomain)?displayProperty=fullName>
+
+### SYSLIB0025
+
+- <xref:System.Runtime.CompilerServices.SuppressIldasmAttribute?displayProperty=fullName>
+
+### SYSLIB0026
+
+- <xref:System.Security.Cryptography.X509Certificates.X509Certificate.%23ctor>
+- <xref:System.Security.Cryptography.X509Certificates.X509Certificate.Import%2A?displayProperty=nameWithType>
+- <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.%23ctor>
+- <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.Import%2A?displayProperty=nameWithType>
 
 ## See also
 

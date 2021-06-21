@@ -49,7 +49,7 @@ items:
     - name: macOS Notarization issues
       href: ../core/install/macos-notarization-issues.md
     - name: Troubleshoot .NET Package mix ups on Linux
-      href: ../core/install/linux-package-mixup.md 
+      href: ../core/install/linux-package-mixup.md
     - name: How to check .NET versions
       href: ../core/install/how-to-detect-installed-versions.md
     - name: Install localized IntelliSense
@@ -270,7 +270,7 @@ items:
         - name: dotnet nuget verify
           href: ../core/tools/dotnet-nuget-verify.md
         - name: dotnet nuget trust
-          href: ../core/tools/dotnet-nuget-trust.md          
+          href: ../core/tools/dotnet-nuget-trust.md
       - name: dotnet pack
         href: ../core/tools/dotnet-pack.md
       - name: dotnet publish
@@ -399,6 +399,10 @@ items:
         href: syslib-diagnostics/syslib0023.md
       - name: SYSLIB0024
         href: syslib-diagnostics/syslib0024.md
+      - name: SYSLIB0025
+        href: syslib-diagnostics/syslib0025.md
+      - name: SYSLIB0026
+        href: syslib-diagnostics/syslib0026.md
     - name: Source-generated code
       items:
       - name: Overview

@@ -25,17 +25,9 @@ namespace Console.ExampleFormatters.Custom
             in LogEntry<TState> logEntry,
             IExternalScopeProvider scopeProvider,
             TextWriter textWriter)
-        {
-            if (logEntry.Exception is null)
-            {
-                return;
-            }
-
-            string message =
-                logEntry.Formatter(
-                    logEntry.State, logEntry.Exception);
-            
-            if (message == null)
+        {   
+            string message = logEntry.Formatter(logEntry.State, logEntry.Exception);
+            if (logEntry.Exception == null && message == null)
             {
                 return;
             }

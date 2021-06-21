@@ -1,7 +1,7 @@
 ---
 title: "Partial Classes and Methods - C# Programming Guide"
 description: Partial classes and methods in C# split the definition of a class, a struct, an interface, or a method over two or more source files.
-ms.date: 06/21-2021
+ms.date: 06/21/2021
 helpviewer_keywords:
   - "partial methods [C#]"
   - "partial classes [C#]"
@@ -18,7 +18,7 @@ There are several situations when splitting a class definition is desirable:
 
 - When working on large projects, spreading a class over separate files enables multiple programmers to work on it at the same time.
 - When working with automatically generated source, code can be added to the class without having to recreate the source file. Visual Studio uses this approach when it creates Windows Forms, Web service wrapper code, and so on. You can create code that uses these classes without having to modify the file created by Visual Studio.
-- When using [source generators](../../roslyn-sdk/source-generator-overview.md) to generate additional functionality in a class.
+- When using [source generators](../../roslyn-sdk/source-generators-overview.md) to generate additional functionality in a class.
 
 To split a class definition, use the [partial](../../language-reference/keywords/partial-type.md) keyword modifier, as shown here:
 

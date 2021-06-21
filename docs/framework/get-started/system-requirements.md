@@ -64,7 +64,7 @@ For information on the support lifecycle of .NET Framework versions, see [Micros
 | Windows Vista SP2|32-bit and 64-bit | -- | .NET Framework 4<br /><br /> .NET Framework 4.5<br /><br /> .NET Framework 4.5.1<br /><br /> .NET Framework 4.5.2<br /><br /> .NET Framework 4.6 |
 | Windows XP |32-bit and 64-bit | -- | .NET Framework 4 |
 
- **Notes:**
+**Notes:**
 
 - On Windows 7 systems, .NET Framework requires Windows 7 SP1. If you're on Windows 7 and haven't yet installed Service Pack 1, you need to do so before installing the .NET Framework.
 

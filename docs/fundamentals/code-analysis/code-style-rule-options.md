@@ -32,7 +32,7 @@ Each of these subcategories defines its own syntax for specifying options. For m
 To help you get started, here is an example *.editorconfig* file with the default options.
 
 > [!TIP]
-> In Visual Studio, you can generate this file and save it to a project at **Tools** > **Options** > **Text Editor** > [**C#** or  **Basic**] > **Code Style** > **General**. Then, click the **Generate .editorconfig file from settings** button. For more information, see [Code style preferences](/visualstudio/ide/code-styles-and-code-cleanup).
+> In Visual Studio 2019 and later versions (on Windows), you can generate this file and save it to a project at **Tools** > **Options** > **Text Editor** > [**C#** or  **Basic**] > **Code Style** > **General**. Then, click the **Generate .editorconfig file from settings** button. For more information, see [Code style preferences](/visualstudio/ide/code-styles-and-code-cleanup).
 
 ```ini
 # Remove the line below if you want to inherit .editorconfig settings from higher directories

@@ -31,6 +31,8 @@ items:
           href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
         - name: "Blazor: WebEventDescriptor.EventArgsType property replaced"
           href: aspnet-core/6.0/blazor-eventargstype-property-replaced.md
+        - name: "Blazor: Byte-array interop"
+          href: aspnet-core/6.0/byte-array-interop.md
         - name: "Kestrel: Log message attributes changed"
           href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
         - name: "MessagePack: Library changed in @microsoft/signalr-protocol-msgpack"
@@ -332,7 +334,7 @@ items:
         - name: Native code can't access Windows Forms objects
           href: windows-forms/5.0/winforms-objects-not-accessible-from-native-code.md
         - name: OutputType set to WinExe
-          href: windows-forms/5.0/automatically-infer-winexe-output-type.md
+          href: sdk/5.0/automatically-infer-winexe-output-type.md
         - name: DataGridView doesn't reset custom fonts
           href: windows-forms/5.0/datagridview-doesnt-reset-custom-font-settings.md
         - name: Methods throw ArgumentException
@@ -346,15 +348,15 @@ items:
         - name: DataGridView APIs throw InvalidOperationException
           href: windows-forms/5.0/null-owner-causes-invalidoperationexception.md
         - name: WinForms apps use Microsoft.NET.Sdk
-          href: windows-forms/5.0/sdk-and-target-framework-change.md
+          href: sdk/5.0/sdk-and-target-framework-change.md
         - name: Removed status bar controls
           href: windows-forms/5.0/winforms-deprecated-controls.md
       - name: WPF
         items:
         - name: OutputType set to WinExe
-          href: windows-forms/5.0/automatically-infer-winexe-output-type.md
+          href: sdk/5.0/automatically-infer-winexe-output-type.md
         - name: WPF apps use Microsoft.NET.Sdk
-          href: windows-forms/5.0/sdk-and-target-framework-change.md
+          href: sdk/5.0/sdk-and-target-framework-change.md
     - name: .NET Core 3.1
       href: 3.1.md
     - name: .NET Core 3.0
@@ -375,6 +377,8 @@ items:
           href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
         - name: "Blazor: WebEventDescriptor.EventArgsType property replaced"
           href: aspnet-core/6.0/blazor-eventargstype-property-replaced.md
+        - name: "Blazor: Byte-array interop"
+          href: aspnet-core/6.0/byte-array-interop.md
         - name: "Kestrel: Log message attributes changed"
           href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
         - name: "MessagePack: Library changed in @microsoft/signalr-protocol-msgpack"
@@ -712,7 +716,7 @@ items:
         - name: Native code can't access Windows Forms objects
           href: windows-forms/5.0/winforms-objects-not-accessible-from-native-code.md
         - name: OutputType set to WinExe
-          href: windows-forms/5.0/automatically-infer-winexe-output-type.md
+          href: sdk/5.0/automatically-infer-winexe-output-type.md
         - name: DataGridView doesn't reset custom fonts
           href: windows-forms/5.0/datagridview-doesnt-reset-custom-font-settings.md
         - name: Methods throw ArgumentException
@@ -726,7 +730,7 @@ items:
         - name: DataGridView APIs throw InvalidOperationException
           href: windows-forms/5.0/null-owner-causes-invalidoperationexception.md
         - name: WinForms apps use Microsoft.NET.Sdk
-          href: windows-forms/5.0/sdk-and-target-framework-change.md
+          href: sdk/5.0/sdk-and-target-framework-change.md
         - name: Removed status bar controls
           href: windows-forms/5.0/winforms-deprecated-controls.md
       - name: .NET Core 3.0-3.1
@@ -736,6 +740,6 @@ items:
       - name: .NET 5
         items:
         - name: OutputType set to WinExe
-          href: windows-forms/5.0/automatically-infer-winexe-output-type.md
+          href: sdk/5.0/automatically-infer-winexe-output-type.md
         - name: WPF apps use Microsoft.NET.Sdk
-          href: windows-forms/5.0/sdk-and-target-framework-change.md
+          href: sdk/5.0/sdk-and-target-framework-change.md

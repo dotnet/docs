@@ -845,5 +845,5 @@ Rather than relying on config files for its settings, WCF clients and other .NET
 - [Deep Dive into EF Core HasData](/archive/msdn-magazine/2018/august/data-points-deep-dive-into-ef-core-hasdata-seeding)
 
 >[!div class="step-by-step"]
->[Previous](more-migration-scenarios.md)
->[Next](deployment-scenarios.md)
+>[Previous](strategies-migrating-in-production.md)
+>[Next](more-migration-scenarios.md)

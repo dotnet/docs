@@ -55,7 +55,7 @@ public EventPipeSession StartEventPipeSession(
 
 Starts an EventPipe tracing session using the given providers and settings.
 
-* `providers` : An `IEnumerable` of [`EventPipeProvider`](#class-eventpipeprovider)s to start tracing.
+* `providers` : An `IEnumerable` of [`EventPipeProvider`](diagnostics-client-library.md#eventpipeprovider-class)s to start tracing.
 * `requestRundown`: A `bool` specifying whether rundown provider events from the target app's runtime should be requested.
 * `circularBufferMB`: An `int` specifying the total size of circular buffer used by the target app's runtime on collecting events.
 
@@ -63,7 +63,7 @@ Starts an EventPipe tracing session using the given providers and settings.
 public EventPipeSession StartEventPipeSession(EventPipeProvider providers, bool requestRundown=true, int circularBufferMB=256)
 ```
 
-* `providers` : An [`EventPipeProvider`](#class-eventpipeprovider) to start tracing.
+* `providers` : An [`EventPipeProvider`](diagnostics-client-library.md#eventpipeprovider-class) to start tracing.
 * `requestRundown`: A `bool` specifying whether rundown provider events from the target app's runtime should be requested.
 * `circularBufferMB`: An `int` specifying the total size of circular buffer used by the target app's runtime on collecting events.
 
@@ -76,7 +76,7 @@ public EventPipeSession StartEventPipeSession(EventPipeProvider providers, bool 
 public void WriteDump(DumpType dumpType, string dumpPath, bool logDumpGeneration=false);
 ```
 
-Request a dump for post-mortem debugging of the target application. The type of the dump can be specified using the [`DumpType`](#enum-dumptype) enum.
+Request a dump for post-mortem debugging of the target application. The type of the dump can be specified using the [`DumpType`](diagnostics-client-library.md#dumptype-enum) enum.
 
 * `dumpType` : Type of the dump to be requested.
 * `dumpPath` : The path to the dump to be written out to.
@@ -150,7 +150,7 @@ The name of the Provider
 public EventLevel EventLevel { get; }
 ```
 
-The EventLevel of the given instance of [`EventPipeProvider`](#class-eventpipeprovider).
+The EventLevel of the given instance of [`EventPipeProvider`](diagnostics-client-library.md#eventpipeprovider-class).
 
 ```csharp
 public long Keywords { get; }

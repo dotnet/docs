@@ -64,7 +64,7 @@ This is the easiest way to use EventPipe to trace your application. To learn mor
 
 ## Trace using environment variables
 
-The preferred mechanism for using EventPipe is to use [`dotnet-trace`](dotnet-trace.md) or the [`Microsoft.Diagnostics.NETCore.Client`](microsoft-diagnostics-netcore-client.md) library.
+The preferred mechanism for using EventPipe is to use [`dotnet-trace`](dotnet-trace.md) or the [`Microsoft.Diagnostics.NETCore.Client`](diagnostics-client-library.md) library.
 
 However, you can use the following environment variables to set up an EventPipe session on an app and have it write the trace directly to a file. To stop tracing, exit the application.
 

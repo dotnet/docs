@@ -64,15 +64,29 @@ This sample shows how to attach an ICorProfiler to a process via profiler attach
 
 This section describes the APIs of the library.
 
-### class DiagnosticsClient
+### DiagnosticsClient class
 
 ```cs
 public DiagnosticsClient
 {
     public DiagnosticsClient(int processId);
-    public EventPipeSession StartEventPipeSession(IEnumerable<EventPipeProvider> providers, bool requestRundown=true, int circularBufferMB=256);
-    public void WriteDump(DumpType dumpType, string dumpPath, bool logDumpGeneration=false);
-    public void AttachProfiler(TimeSpan attachTimeout, Guid profilerGuid, string profilerPath, byte[] additionalData=null);
+    
+    public EventPipeSession StartEventPipeSession(
+        IEnumerable<EventPipeProvider> providers,
+        bool requestRundown = true,
+        int circularBufferMB = 256);
+    
+    public void WriteDump(
+        DumpType dumpType,
+        string dumpPath,
+        bool logDumpGeneration = false);
+    
+    public void AttachProfiler(
+        TimeSpan attachTimeout,
+        Guid profilerGuid,
+        string profilerPath,
+        byte[] additionalData = null);
+    
     public static IEnumerable<int> GetPublishedProcesses();
 }
 ```
@@ -86,7 +100,10 @@ Creates a new instance of `DiagnosticsClient` for a compatible .NET process runn
 `processID` : Process ID of the target application.
 
 ```csharp
-public EventPipeSession StartEventPipeSession(IEnumerable<EventPipeProvider> providers, bool requestRundown=true, int circularBufferMB=256)
+public EventPipeSession StartEventPipeSession(
+    IEnumerable<EventPipeProvider> providers,
+    bool requestRundown = true,
+    int circularBufferMB = 256)
 ```
 
 Starts an EventPipe tracing session using the given providers and settings.
@@ -135,7 +152,7 @@ public static IEnumerable<int> GetPublishedProcesses();
 
 Get an `IEnumerable` of process IDs of all the active .NET processes that can be attached to.
 
-#### class EventPipeProvider
+#### EventPipeProvider class
 
 ```cs
 public class EventPipeProvider
@@ -167,10 +184,11 @@ public class EventPipeProvider
 ```
 
 ```csharp
-public EventPipeProvider(string name,
-                         EventLevel eventLevel,
-                         long keywords = 0,
-                         IDictionary<string, string> arguments = null)
+public EventPipeProvider(
+    string name,
+    EventLevel eventLevel,
+    long keywords = 0,
+    IDictionary<string, string> arguments = null)
 ```
 
 Creates a new instance of `EventPipeProvider` with the given provider name, <xref:System.Diagnostics.Tracing.EventLevel>, keywords, and arguments.

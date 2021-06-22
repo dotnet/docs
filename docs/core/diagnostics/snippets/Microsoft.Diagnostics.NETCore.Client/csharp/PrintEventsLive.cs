@@ -23,10 +23,7 @@ public partial class Tracer
             Task streamTask = Task.Run(() =>
             {
                 var source = new EventPipeEventSource(session.EventStream);
-                source.Clr.All += (TraceEvent obj) =>
-                {
-                    Console.WriteLine(obj.EventName);
-                };
+                source.Clr.All += (TraceEvent obj) => Console.WriteLine(obj.EventName);
                 try
                 {
                     source.Process();
@@ -44,7 +41,7 @@ public partial class Tracer
                 Console.WriteLine("Press Enter to exit");
                 while (Console.ReadKey().Key != ConsoleKey.Enter)
                 {
-                    Task.Delay(100);
+                    Task.Delay(TimeSpan.FromMilliseconds(100));
                 }
                 session.Stop();
             });

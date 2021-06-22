@@ -27,7 +27,7 @@ public partial class Tracer
                 }
             });
 
-            Task.WhenAny(copyTask, Task.Delay(duration * 1000));
+            Task.WhenAny(copyTask, Task.Delay(TimeSpan.FromMilliseconds(duration * 1000)));
             traceSession.Stop();
         }
     }

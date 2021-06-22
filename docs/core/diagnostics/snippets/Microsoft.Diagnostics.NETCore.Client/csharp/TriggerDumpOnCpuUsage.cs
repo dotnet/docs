@@ -16,21 +16,22 @@ public partial class Dumper
                 "System.Runtime",
                 EventLevel.Informational,
                 (long)ClrTraceEventParser.Keywords.None,
-                new Dictionary<string, string>() {
-                    { "EventCounterIntervalSec", "1" }
+                new Dictionary<string, string>
+                {
+                    ["EventCounterIntervalSec"] = "1"
                 }
             )
         };
         var client = new DiagnosticsClient(processId);
-        using(var session = client.StartEventPipeSession(providers))
+        using (var session = client.StartEventPipeSession(providers))
         {
             var source = new EventPipeEventSource(session.EventStream);
             source.Dynamic.All += (TraceEvent obj) =>
             {
                 if (obj.EventName.Equals("EventCounters"))
                 {
-                    IDictionary<string, object> payloadVal = (IDictionary<string, object>)(obj.PayloadValue(0));
-                    IDictionary<string, object> payloadFields = (IDictionary<string, object>)(payloadVal["Payload"]);
+                    var payloadVal = (IDictionary<string, object>)(obj.PayloadValue(0));
+                    var payloadFields = (IDictionary<string, object>)(payloadVal["Payload"]);
                     if (payloadFields["Name"].ToString().Equals("cpu-usage"))
                     {
                         double cpuUsage = Double.Parse(payloadFields["Mean"].ToString());

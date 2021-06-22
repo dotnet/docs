@@ -10,20 +10,18 @@ public class RuntimeGCEventsPrinter
 {
     public static void PrintRuntimeGCEvents(int processId)
     {
-        List<EventPipeProvider> providers = new List<EventPipeProvider>()
+        var providers = new List<EventPipeProvider>()
         {
             new EventPipeProvider("Microsoft-Windows-DotNETRuntime",
                 EventLevel.Informational, (long)ClrTraceEventParser.Keywords.GC)
         };
 
-        DiagnosticsClient client = new DiagnosticsClient(processId);
+        var client = new DiagnosticsClient(processId);
         using (EventPipeSession session = client.StartEventPipeSession(providers, false))
         {
             var source = new EventPipeEventSource(session.EventStream);
 
-            source.Clr.All += (TraceEvent obj) => {
-                Console.WriteLine(obj.ToString());
-            };
+            source.Clr.All += (TraceEvent obj) => Console.WriteLine(obj.ToString());
 
             try
             {

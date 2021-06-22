@@ -14,6 +14,15 @@ The following mutable x509 certificate APIs are marked as obsolete, starting in 
 
 ## Workarounds
 
-None.
+Create a new instance of `X509Certificate` and `X509Certificate2` using a constructor overload that accepts the certificate as input. For example:
+
+```csharp
+// Change this:
+cert.Import("/path/to/certficate.crt");
+
+// To this:
+cert.Dispose();
+cert = new X509Certificate2("/path/to/certificate.crt");
+```
 
 [!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]

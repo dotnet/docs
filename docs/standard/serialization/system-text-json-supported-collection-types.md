@@ -51,6 +51,63 @@ The following sections are organized by namespace and show which types are suppo
 
 ## System.Collections.Generic namespace
 
+::: zone pivot="dotnet-6-0"
+
+| Type                                                      | Serialization | Deserialization |
+|-----------------------------------------------------------|---------------|-----------------|
+| <xref:System.Collections.Generic.Dictionary%602> \*       | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.HashSet%601>             | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.KeyValuePair%602>        | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.LinkedList%601>          | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.LinkedListNode%601>      | ✔️           | ❌              |
+| <xref:System.Collections.Generic.List%601>                | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.Queue%601>               | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.SortedDictionary%602> \* | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.SortedList%602> \*       | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.SortedSet%601>           | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.Stack%601>               | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IAsyncEnumerable%601> \*\* | ✔️         | ✔️              |
+| <xref:System.Collections.Generic.ICollection%601>         | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IDictionary%602> \*      | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IEnumerable%601>         | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IList%601>               | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IReadOnlyCollection%601> | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IReadOnlyDictionary%602> \* | ✔️        | ✔️              |
+| <xref:System.Collections.Generic.IReadOnlyList%601>       | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.ISet%601>                | ✔️           | ✔️              |
+
+\* See [Supported key types](#supported-key-types).
+
+\*\* See the following section on [IAsyncEnumerable support](#iasyncenumerable-support).
+
+## IAsyncEnumerable support
+
+The following examples use streams as a representation of any async source of data. The source could be files on a local machine, or results from a database query or web service API call.
+
+### Streaming serialization
+
+`System.Text.Json` supports serializing <xref:System.Collections.Generic.IAsyncEnumerable%601> values as JSON arrays, as shown in the following example:
+
+:::code language="csharp" source="snippets/system-text-json-supported-collection-types/csharp/IAsyncEnumerableSerialize.cs" highlight="15":::
+
+`IAsyncEnumerable<T>` values are only supported by the asynchronous serialization methods.
+
+### Streaming deserialization
+
+The <xref:System.Text.Json.JsonSerializer.DeserializeAsyncEnumerable%2A> method supports streaming deserialization, as shown in the following example:
+
+:::code language="csharp" source="snippets/system-text-json-supported-collection-types/csharp/IAsyncEnumerableDeserialize.cs" highlight="15":::
+
+The `DeserializeAsyncEnumerable` method only supports reading from root-level JSON arrays.
+
+The <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method also supports `IAsyncEnumerable<T>`, but its signature doesn't allow streaming. It must return the final result as a single value, as shown in the following example.
+
+:::code language="csharp" source="snippets/system-text-json-supported-collection-types/csharp/IAsyncEnumerableDeserializeNonStreaming.cs" highlight="19":::
+
+In this example, the deserializer buffers all `IAsyncEnumerable` contents in memory before returning the deserialized object. This behavior is necessary because the deserializer needs to have read the entire JSON payload before returning a result.
+
+::: zone-end
+
 ::: zone pivot="dotnet-5-0"
 
 | Type                                                      | Serialization | Deserialization |
@@ -75,6 +132,8 @@ The following sections are organized by namespace and show which types are suppo
 | <xref:System.Collections.Generic.IReadOnlyDictionary%602> \* | ✔️        | ✔️              |
 | <xref:System.Collections.Generic.IReadOnlyList%601>       | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.ISet%601>                | ✔️           | ✔️              |
+
+\* See [Supported key types](#supported-key-types).
 
 ::: zone-end
 
@@ -103,9 +162,9 @@ The following sections are organized by namespace and show which types are suppo
 | <xref:System.Collections.Generic.IReadOnlyList%601>                                             | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.ISet%601>                                                      | ✔️           | ✔️              |
 
-::: zone-end
-
 \* See [Supported key types](#supported-key-types).
+
+::: zone-end
 
 ## System.Collections.Immutable namespace
 

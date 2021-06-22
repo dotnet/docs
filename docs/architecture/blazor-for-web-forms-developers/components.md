@@ -219,7 +219,7 @@ In Blazor, you can register handlers for DOM UI events directly using directive 
 @code {
     void OnClick()
     {
-        Console.WriteLine("The button was clicked!);
+        Console.WriteLine("The button was clicked!");
     }
 }
 ```

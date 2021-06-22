@@ -4,17 +4,17 @@ using Microsoft.Extensions.Logging;
 public class ColorConsoleLogger : ILogger
 {
     private readonly string _name;
-    private readonly ColorConsoleLoggerConfiguration _config;
+    private readonly Func<ColorConsoleLoggerConfiguration> _getCurrentConfig;
 
     public ColorConsoleLogger(
         string name,
-        ColorConsoleLoggerConfiguration config) =>
-        (_name, _config) = (name, config);
+        Func<ColorConsoleLoggerConfiguration> getCurrentConfig) =>
+        (_name, _getCurrentConfig) = (name, getCurrentConfig);
 
     public IDisposable BeginScope<TState>(TState state) => default;
 
     public bool IsEnabled(LogLevel logLevel) =>
-        _config.LogLevels.ContainsKey(logLevel);
+        _getCurrentConfig().LogLevels.ContainsKey(logLevel);
 
     public void Log<TState>(
         LogLevel logLevel,
@@ -28,11 +28,12 @@ public class ColorConsoleLogger : ILogger
             return;
         }
 
-        if (_config.EventId == 0 || _config.EventId == eventId.Id)
+        ColorConsoleLoggerConfiguration config = _getCurrentConfig();
+        if (config.EventId == 0 || config.EventId == eventId.Id)
         {
             ConsoleColor originalColor = Console.ForegroundColor;
 
-            Console.ForegroundColor = _config.LogLevels[logLevel];
+            Console.ForegroundColor = config.LogLevels[logLevel];
             Console.WriteLine($"[{eventId.Id,2}: {logLevel,-12}]");
             
             Console.ForegroundColor = originalColor;

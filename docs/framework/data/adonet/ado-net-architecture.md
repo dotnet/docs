@@ -53,7 +53,7 @@ ADO.NET architecture
   
 ## WCF Data Services  
 
- WCF Data Services is used to deploy data services on the Web or an intranet. The data is structured as entities and relationships according to the specifications of the Entity Data Model. Data deployed on this model is addressable by standard HTTP protocol. For more information, see [WCF Data Services 4.5](../wcf/index.md).  
+ WCF Data Services is used to deploy data services on the Web or an intranet. The data is structured as entities and relationships according to the specifications of the Entity Data Model. Data deployed on this model is addressable by standard HTTP protocol. For more information, see [WCF Data Services 4.5](/previous-versions/dotnet/framework/data/wcf/index).  
   
 ## XML and ADO.NET  
 

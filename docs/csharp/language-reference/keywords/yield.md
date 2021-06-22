@@ -26,7 +26,7 @@ You use a `yield return` statement to return each element one at a time.
 
 The sequence returned from an iterator method can be consumed by using a [foreach](../statements/iteration-statements.md#the-foreach-statement) statement or LINQ query. Each iteration of the `foreach` loop calls the iterator method. When a `yield return` statement is reached in the iterator method, `expression` is returned, and the current location in code is retained. Execution is restarted from that location the next time that the iterator function is called.
 
-When the iterator returns an <xref:System.Collections.Generic.IAsyncEnumerable%601?displayProperty=nameWithType>, that sequence can be consumed asynchronously using an [await foreach](../statements/iteration-statements.md#await-foreach) statement. The iteration of the loop is analogous to the `foreach` statement. The difference os that each iteration may be suspended for an asynchronous operation before returning the expression for the next element.
+When the iterator returns an <xref:System.Collections.Generic.IAsyncEnumerable%601?displayProperty=nameWithType>, that sequence can be consumed asynchronously using an [await foreach](../statements/iteration-statements.md#await-foreach) statement. The iteration of the loop is analogous to the `foreach` statement. The difference is that each iteration may be suspended for an asynchronous operation before returning the expression for the next element.
 
 You can use a `yield break` statement to end the iteration.
 

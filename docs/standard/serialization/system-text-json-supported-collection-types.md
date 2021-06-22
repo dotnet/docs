@@ -82,9 +82,9 @@ The following sections are organized by namespace and show which types are suppo
 
 \* See [Supported key types](#supported-key-types).
 
-\*\* See the following section on [IAsyncEnumerable support](#iasyncenumerable-support).
+\*\* See the following section on `IAsyncEnumerable<T>` support.
 
-## IAsyncEnumerable support
+## IAsyncEnumerable\<T> support
 
 The following examples use streams as a representation of any async source of data. The source could be files on a local machine, or results from a database query or web service API call.
 
@@ -104,11 +104,11 @@ The <xref:System.Text.Json.JsonSerializer.DeserializeAsyncEnumerable%2A> method 
 
 The `DeserializeAsyncEnumerable` method only supports reading from root-level JSON arrays.
 
-The <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method also supports `IAsyncEnumerable<T>`, but its signature doesn't allow streaming. It must return the final result as a single value, as shown in the following example.
+The <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method supports `IAsyncEnumerable<T>`, but its signature doesn't allow streaming. It must return the final result as a single value, as shown in the following example.
 
 :::code language="csharp" source="snippets/system-text-json-supported-collection-types/csharp/IAsyncEnumerableDeserializeNonStreaming.cs" highlight="19":::
 
-In this example, the deserializer buffers all `IAsyncEnumerable` contents in memory before returning the deserialized object. This behavior is necessary because the deserializer needs to have read the entire JSON payload before returning a result.
+In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in memory before returning the deserialized object. This behavior is necessary because the deserializer needs to have read the entire JSON payload before returning a result.
 
 ::: zone-end
 

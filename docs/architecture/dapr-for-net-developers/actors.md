@@ -2,7 +2,7 @@
 title: The Dapr actors building block
 description: A deep dive into the Dapr actors building block and how to apply it
 author: amolenk
-ms.date: 05/30/2021
+ms.date: 06/22/2021
 ---
 
 # The Dapr actors building block
@@ -96,7 +96,7 @@ public int Increment()
 {
     int newValue;
 
-    lock (this.lockObject)
+    lock (_lockObject)
     {
         var currentValue = GetValue();
         newValue = currentValue + 1;
@@ -236,7 +236,7 @@ Let's now implement the `IncrementScoreAsync` method of the interface:
 ```csharp
 public Task<int> IncrementScoreAsync()
 {
-    return this.StateManager.AddOrUpdateStateAsync(
+    return StateManager.AddOrUpdateStateAsync(
         "score",
         1,
         (key, currentScore) => currentScore + 1
@@ -244,7 +244,7 @@ public Task<int> IncrementScoreAsync()
 }
 ```
 
-In the snippet above, a single call to `StateManager.AddOrUpdateStateAsync` provides the full implementation for the `IncrementAsync` method. The `AddOrUpdateStateAsync` method takes three arguments:
+In the snippet above, a single call to `StateManager.AddOrUpdateStateAsync` provides the full implementation for the `IncrementScoreAsync` method. The `AddOrUpdateStateAsync` method takes three arguments:
 
 1. The key of the state to update.
 1. The value to write if no score is stored in the state store yet.
@@ -255,7 +255,7 @@ The `GetScoreAsync` implementation reads the current score from the state store 
 ```csharp
 public async Task<int> GetScoreAsync()
 {
-    var scoreValue = await this.StateManager.TryGetStateAsync<int>("score");
+    var scoreValue = await StateManager.TryGetStateAsync<int>("score");
     if (scoreValue.HasValue)
     {
         return scoreValue.Value;
@@ -288,7 +288,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 The actors endpoints are necessary because the Dapr sidecar calls the application to host and interact with actor instances.
 
 > [!IMPORTANT]
-> By default, a generated `Startup` class contains an `app.UseHttpsRedirection` call to redirect client to the HTTPS endpoint. This will not work with actors and must be removed. By design, a Dapr sidecar send requests over unencrypted HTTP by default. The HTTPS middleware will block these requests when enabled.
+> By default, a generated `Startup` class contains an `app.UseHttpsRedirection` call to redirect client to the HTTPS endpoint. This will not work with actors and must be removed. By design, a Dapr sidecar sends requests over unencrypted HTTP by default. The HTTPS middleware will block these requests when enabled.
 
 The `Startup` class is also the place to register the specific actor types. In the example below, `ConfigureServices` registers the `ScoreActor` using `services.AddActors`:
 
@@ -307,7 +307,7 @@ public void ConfigureServices(IServiceCollection services)
 At this point, the ASP.NET Core service is ready to host the `ScoreActor` and accept incoming requests. Client applications use actor proxies to invoke operations on actors. The following example shows how a console client application invokes the `IncrementScoreAsync` operation on a `ScoreActor` instance:
 
 ```csharp
-static async Task Main(string[] args)
+static async Task MainAsync(string[] args)
 {
     var actorId = new ActorId("scoreActor1");
 
@@ -319,7 +319,7 @@ static async Task Main(string[] args)
 }
 ```
 
-The above example uses the `Dapr.Actors` package to call the actor service. To invoke an operation on an actor, you need to be able to address it. You'll need two parts for this:
+The above example uses the [`Dapr.Actors`](https://www.nuget.org/packages/Dapr.Actors) package to call the actor service. To invoke an operation on an actor, you need to be able to address it. You'll need two parts for this:
 
 1. The **actor type** uniquely identifies the actor implementation across the whole application. By default, the actor type is the name of the implementation class (without namespace). You can customize the actor type by adding an `ActorAttribute` to the implementation class and setting its `TypeName` property.
 1. The `ActorId` uniquely identifies an instance of an actor type. You can also use this class to generate a random actor id by calling `ActorId.CreateRandom`.
@@ -366,7 +366,7 @@ public class ScoreController : ControllerBase
     }
 
     [HttpPut("{scoreId}")]
-    public Task<int> Increment(string scoreId)
+    public Task<int> IncrementAsync(string scoreId)
     {
         var scoreActor = _actorProxyFactory.CreateActorProxy<IScoreActor>(
             new ActorId(scoreId),
@@ -414,7 +414,7 @@ You create weakly-typed proxies in a similar way to strongly-typed proxies. Inst
 
 ```csharp
 [HttpPut("{scoreId}")]
-public Task<int> Increment(string scoreId)
+public Task<int> IncrementAsync(string scoreId)
 {
     var scoreActor = _actorProxyFactory.CreateActorProxy(
         new ActorId(scoreId),
@@ -445,11 +445,11 @@ public class TimerActor : Actor, ITimerActor
             TimeSpan.FromSeconds(3));
     }
 
-    public Task TimerCallback(byte[] state)
+    public Task TimerCallbackAsync(byte[] state)
     {
         var text = Encoding.UTF8.GetString(state);
 
-        this.Logger.LogInformation($"Timer fired: {text}");
+        Logger.LogInformation($"Timer fired: {text}");
 
         return Task.CompletedTask;
     }
@@ -464,7 +464,7 @@ The `StartTimerAsync` method calls `RegisterTimerAsync` to schedule the timer. `
 1. The amount of time to wait before the callback method is first invoked.
 1. The time interval between callback method invocations. You can specify `TimeSpan.FromMilliseconds(-1)` to disable periodic signaling.
 
-The `TimerCallback` method receives the user state in binary form. In the example, the callback decodes the state back to a `string` before writing it to the log.
+The `TimerCallbackAsync` method receives the user state in binary form. In the example, the callback decodes the state back to a `string` before writing it to the log.
 
 Timers can be stopped by calling `UnregisterTimerAsync`:
 
@@ -526,7 +526,7 @@ public class ReminderActor : Actor, IReminderActor, IRemindable
         {
             var text = Encoding.UTF8.GetString(state);
 
-            this.Logger.LogInformation($"Don't forget: {text}");
+            Logger.LogInformation($"Don't forget: {text}");
         }
 
         return Task.CompletedTask;
@@ -556,7 +556,7 @@ public interface IVehicleActor : IActor
 }
 ```
 
-The (simulated) entry cameras call the `RegisterEntry` method when a new vehicle is first detected in the lane. The only responsibility of this method is storing the entry timestamp in the actor state:
+The (simulated) entry cameras call the `RegisterEntryAsync` method when a new vehicle is first detected in the lane. The only responsibility of this method is storing the entry timestamp in the actor state:
 
 ```csharp
 var vehicleState = new VehicleState
@@ -567,7 +567,7 @@ var vehicleState = new VehicleState
 await StateManager.SetStateAsync("VehicleState", vehicleState);
 ```
 
-When the vehicle reaches the end of the speed camera zone, the exit camera calls the `RegisterExit` method. The `RegisterExit` method first gets the current states and updates it to include the exit timestamp:
+When the vehicle reaches the end of the speed camera zone, the exit camera calls the `RegisterExitAsync` method. The `RegisterExitAsync` method first gets the current states and updates it to include the exit timestamp:
 
 ```csharp
 var vehicleState = await StateManager.GetStateAsync<VehicleState>("VehicleState");
@@ -575,9 +575,9 @@ vehicleState.ExitTimestamp = msg.Timestamp;
 ```
 
 > [!NOTE]
-> The code above currently assumes that a `VehicleState` instance has already been saved by the `RegisterEntry` method. The code could be improved by first checking to make sure the state exists. Thanks to the turn-based access model, no explicit locks are required in the code.
+> The code above currently assumes that a `VehicleState` instance has already been saved by the `RegisterEntryAsync` method. The code could be improved by first checking to make sure the state exists. Thanks to the turn-based access model, no explicit locks are required in the code.
 
-After the state is updated, the `RegisterExit` method checks if the vehicle was driving too fast. If it was, the actor publishes a message to the `collectfine` pub/sub topic:
+After the state is updated, the `RegisterExitAsync` method checks if the vehicle was driving too fast. If it was, the actor publishes a message to the `collectfine` pub/sub topic:
 
 ```csharp
 int violation = _speedingViolationCalculator.DetermineSpeedingViolationInKmh(
@@ -621,7 +621,7 @@ The actor based implementation no longer uses the Dapr state management building
 
 ## Summary
 
-The Dapr actors building block makes it easier to write correct concurrent systems. Actors are small units of state and logic. They use a turn-based access model which saves you from having to write error-prone thread-safe code. Actors are created implicitly and are silently unloaded from memory when no operations are performed. Any state stored in the actor is automatically persisted and loaded when the actor is reactivated. Actor model implementations are typically created for a specific language or platform. With the Dapr actors building block however, you can leverage the actor model from any language or platform.
+The Dapr actors building block makes it easier to write correct concurrent systems. Actors are small units of state and logic. They use a turn-based access model which saves you from having to use locking mechanisms to write thread-safe code. Actors are created implicitly and are silently unloaded from memory when no operations are performed. Any state stored in the actor is automatically persisted and loaded when the actor is reactivated. Actor model implementations are typically created for a specific language or platform. With the Dapr actors building block however, you can leverage the actor model from any language or platform.
 
 Actors support timers and reminders to schedule future work. Timers do not reset the idle timer and will allow the actor to be deactivated when no other operations are performed. Reminders do reset the idle timer and are also persisted automatically. Both timers and reminders respect the turn-based access model, making sure that no other operations can execute while the timer/reminder events are handled.
 

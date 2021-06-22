@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace iterators
 {
@@ -44,6 +45,25 @@ namespace iterators
                 yield return index++;
         }
         // </GetMultipleLoops>
+
+        // <GetMultipleAsyncLoops>
+        public async IAsyncEnumerable<int> GetSetsOfNumbersAsync()
+        {
+            int index = 0;
+            while (index < 10)
+                yield return index++;
+
+            await Task.Delay(500);
+
+            yield return 50;
+
+            await Task.Delay(500);
+
+            index = 100;
+            while (index < 110)
+                yield return index++;
+        }
+        // </GetMultipleAsyncLoops>
 
         // <SequenceAndCollection>
         public IEnumerable<int> GetFirstDecile()
@@ -95,5 +115,17 @@ namespace iterators
             }
         }
         // </SampleSequence>
+
+        // <SampleSequenceAsync>
+        public static async IAsyncEnumerable<T> Sample<T>(this IAsyncEnumerable<T> sourceSequence, int interval)
+        {
+            int index = 0;
+            await foreach (T item in sourceSequence)
+            {
+                if (index++ % interval == 0)
+                    yield return item;
+            }
+        }
+        // </SampleSequenceAsync>
     }
 }

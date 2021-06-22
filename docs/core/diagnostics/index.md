@@ -69,7 +69,7 @@ The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect GC (Garbage Colle
 
 ### Write your own diagnostic tool
 
-[Microsoft.Diagnostics.NETCore.Client](microsoft-diagnostics-netcore-client.md) library lets you write your own custom diagnostic tool best suited for your diagnostic scenario.
+[The diagnostics client library](diagnostics-client-library.md) lets you write your own custom diagnostic tool best suited for your diagnostic scenario. Look up information in the [Microsoft.Diagnostics.NETCore.Client API reference](microsoft-diagnostics-netcore-client.md).
 
 ### Debug a memory leak
 

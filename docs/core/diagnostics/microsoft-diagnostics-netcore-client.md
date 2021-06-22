@@ -1,92 +1,39 @@
 ---
-title: Use Microsoft.Diagnostics.NETCore.Client library to write your own diagnostics tool
-description: In this article, you'll learn how to use Microsoft.Diagnostics.NETCore.Client library to write your custom diagnostic tool.
-ms.date: 12/08/2020
+title: Microsoft.Diagnostics.NETCore.Client API
+description: In this article, you'll learn about the Microsoft.Diagnostics.NETCore.Client APIs.
+ms.date: 06/22/2021
+author: tommcdon
+ms.author: tommcdon
+ms.topic: reference
 ---
 
-# Microsoft.Diagnostics.NETCore.Client
+# Microsoft.Diagnostics.NETCore.Client API
 
-**This article applies to: ✔️** .NET Core 3.0 SDK and later versions for target apps, .NET Standard 2.0 to use the library.
+This section describes the APIs of the diagnostics client library.
 
-Microsoft.Diagnostics.NETCore.Client (also known as the Diagnostics Client library) is a managed library that lets you interact with .NET Core runtime (CoreCLR) for various diagnostics related tasks, such as tracing via [EventPipe](eventpipe.md), requesting a dump, or attaching an ICorProfiler. This library is the backing library behind many diagnostics tools such as [`dotnet-counters`](dotnet-counters.md), [`dotnet-trace`](dotnet-trace.md), [`dotnet-gcdump`](dotnet-gcdump.md), and [`dotnet-dump`](dotnet-dump.md). Using this library, you can write your own diagnostics tools customized for your particular scenario.
-
-## Install
-
-You can acquire [Microsoft.Diagnostics.NETCore.Client](https://www.nuget.org/packages/Microsoft.Diagnostics.NETCore.Client/) by adding a `PackageReference` to your project. The package is hosted on `NuGet.org`.
-
-## Write your own diagnostic tool
-
-These samples show how to use Microsoft.Diagnostics.NETCore.Client library. Some of these examples also show parsing the event payloads by using [TraceEvent](https://www.nuget.org/packages/Microsoft.Diagnostics.Tracing.TraceEvent/) library.
-
-### Attach to a process and print out all the runtime GC events in real time to the console
-
-This snippet shows how to start an EventPipe session using the [.NET runtime provider](../../fundamentals/diagnostics/runtime-events.md) with the GC keyword at informational level and how to use the `EventPipeEventSource` class provided by the [TraceEvent library](https://www.nuget.org/packages/Microsoft.Diagnostics.Tracing.TraceEvent/) to parse the incoming events and print their names to the console in real time.
-
-:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/csharp/PrintRuntimeGCEvents.cs":::
-
-### Write a core dump
-
-This sample shows how to trigger the collection of a [core dump](dumps.md) using `DiagnosticsClient`.
-
-:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/csharp/TriggerCoreDump.cs":::
-
-### Trigger a core dump when CPU usage goes above a certain threshold
-
-This sample shows how to monitor the `cpu-usage` counter published by the .NET runtime and request a dump when the CPU usage grows beyond a certain threshold.
-
-:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/csharp/TriggerDumpOnCpuUsage.cs":::
-
-### Trigger a CPU trace for given number of seconds
-
-This sample shows how to trigger an EventPipe session for certain period of time with the default CLR trace keyword as well as the sample profiler. Afterward, it reads the output stream and writes the bytes out to a file. Essentially this is what [`dotnet-trace`](dotnet-trace.md) uses internally to write a trace file.
-
-:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/csharp/TraceProcessForDuration.cs":::
-
-### Print names of all .NET processes that published a diagnostics server to connect
-
-This sample shows how to use `DiagnosticsClient.GetPublishedProcesses` API to print the names of the .NET processes that published a diagnostics IPC channel.
-
-:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/csharp/PrintProcessStatus.cs":::
-
-### Parse events in real-time for a specified period of time
-
-This sample shows an example where we create two tasks, one that parses the events coming in live with `EventPipeEventSource` and one that reads the console input for a user input signaling the program to end. If the target app exists before the users presses enter, the app exists gracefully. Otherwise, `inputTask` will send the Stop command to the pipe and exit gracefully.
-
-:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/csharp/PrintEventsLive.cs":::
-
-### Attach an ICorProfiler profiler
-
-This sample shows how to attach an ICorProfiler to a process via profiler attach.
-
-:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/csharp/ProfilerAttach.cs":::
-
-## API Description
-
-This section describes the APIs of the library.
-
-### DiagnosticsClient class
+## DiagnosticsClient class
 
 ```cs
 public DiagnosticsClient
 {
     public DiagnosticsClient(int processId);
-    
+
     public EventPipeSession StartEventPipeSession(
         IEnumerable<EventPipeProvider> providers,
         bool requestRundown = true,
         int circularBufferMB = 256);
-    
+
     public void WriteDump(
         DumpType dumpType,
         string dumpPath,
         bool logDumpGeneration = false);
-    
+
     public void AttachProfiler(
         TimeSpan attachTimeout,
         Guid profilerGuid,
         string profilerPath,
         byte[] additionalData = null);
-    
+
     public static IEnumerable<int> GetPublishedProcesses();
 }
 ```
@@ -152,7 +99,7 @@ public static IEnumerable<int> GetPublishedProcesses();
 
 Get an `IEnumerable` of process IDs of all the active .NET processes that can be attached to.
 
-#### EventPipeProvider class
+## EventPipeProvider class
 
 ```cs
 public class EventPipeProvider
@@ -217,11 +164,11 @@ public IDictionary<string, string> Arguments { get; }
 
 An `IDictionary` of key-value pair string representing optional arguments to be passed to EventSource representing the given `EventPipeProvider`.
 
-#### Remarks
+### Remarks
 
-This class is immutable as EventPipe does not allow a provider's configuration to be modified during an EventPipe session as of .NET Core 3.1.
+This class is immutable, because EventPipe does not allow a provider's configuration to be modified during an EventPipe session as of .NET Core 3.1.
 
-### class EventPipeSession
+## EventPipeSession class
 
 ```csharp
 public class EventPipeSession : IDisposable
@@ -245,7 +192,7 @@ public void Stop();
 
 Stops the given EventPipe session.
 
-### enum DumpType
+## DumpType enum
 
 ```csharp
 public enum DumpType
@@ -264,7 +211,7 @@ Represents the type of dump that can be requested.
 * `Triage`: Include just the information necessary to capture stack traces for all existing traces for all existing threads in a process. Limited GC heap memory and information.
 * `Full`: Include all accessible memory in the process. The raw memory data is included at the end, so that the initial structures can be mapped directly without the raw memory information. This option can result in a very large dump file.
 
-### Exceptions
+## Exceptions
 
 Exceptions that are thrown from the library are `DiagnosticsClientException`s or a derived class of it.
 
@@ -272,23 +219,23 @@ Exceptions that are thrown from the library are `DiagnosticsClientException`s or
 public class DiagnosticsClientException : Exception
 ```
 
-#### UnsupportedCommandException
+### UnsupportedCommandException
 
 ```csharp
 public class UnsupportedCommandException : DiagnosticsClientException
 ```
 
-This may be thrown when the command is not supported by either the library or the target process' runtime.
+This may be thrown when the command is not supported by either the library or the target process's runtime.
 
-#### UnsupportedProtocolException
+### UnsupportedProtocolException
 
 ```csharp
 public class UnsupportedProtocolException : DiagnosticsClientException
 ```
 
-This may be thrown when the target process' runtime is not compatible with the diagnostics IPC protocol used by the library.
+This may be thrown when the target process's runtime is not compatible with the diagnostics IPC protocol used by the library.
 
-#### ServerNotAvailableException
+### ServerNotAvailableException
 
 ```csharp
 public class ServerNotAvailableException : DiagnosticsClientException
@@ -296,7 +243,7 @@ public class ServerNotAvailableException : DiagnosticsClientException
 
 This may be thrown when the runtime is not available for diagnostics IPC commands, such as early during runtime startup before the runtime is ready for diagnostics commands, or when the runtime is shutting down.
 
-#### ServerErrorException
+### ServerErrorException
 
 ```csharp
 public class ServerErrorException : DiagnosticsClientException

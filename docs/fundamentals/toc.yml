@@ -399,8 +399,12 @@ items:
       href: ../core/diagnostics/eventpipe.md
     - name: Logging and tracing
       href: ../core/diagnostics/logging-tracing.md
-    - name: Microsoft.Diagnostics.NETCore.Client Library
-      href: ../core/diagnostics/microsoft-diagnostics-netcore-client.md
+    - name: Microsoft.Diagnostics.NETCore.Client library
+      items:
+      - name: Examples
+        href: ../core/diagnostics/diagnostics-client-library.md
+      - name: API reference
+        href: ../core/diagnostics/microsoft-diagnostics-netcore-client.md
     - name: Runtime Events
       items:
       - name: Overview

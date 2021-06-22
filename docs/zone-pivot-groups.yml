@@ -43,6 +43,8 @@ groups:
   prompt: Choose a .NET version
   pivots:
     - id: dotnet-5-0
-      title: .NET 5.0
+      title: .NET 5
     - id: dotnet-core-3-1
       title: .NET Core 3.1
+    - id: dotnet-6-0
+      title: .NET 6 Preview

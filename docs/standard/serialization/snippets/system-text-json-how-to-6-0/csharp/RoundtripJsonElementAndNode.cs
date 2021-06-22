@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Text.Json;
+using System.Text.Json.Node;
 
-namespace RoundtripJsonElement
+namespace RoundtripJsonElementAndNode
 {
     public class WeatherForecast
     {
@@ -9,7 +10,7 @@ namespace RoundtripJsonElement
         public int TemperatureCelsius { get; set; }
         public string Summary { get; set; }
         public JsonElement DatesAvailable { get; set; }
-        public JsonElement SummaryWords { get; set; }
+        public JsonNode SummaryWords { get; set; }
     }
         public class Program
     {

@@ -230,7 +230,7 @@ public CameraSimulation(int camNumber, ITrafficControlService trafficControlServ
 }
  ```
 
-The `MqttTrafficControlService` class implements the `ITrafficControlService` interface. It exposes two methods: `SendVehicleEntry` and `SendVehicleExit`. They both use the MQTT client to send messages to the `trafficcontrol/entrycam` and `trafficcontrol/exitcam` topics respectively:
+The `MqttTrafficControlService` class implements the `ITrafficControlService` interface. It exposes two methods: `SendVehicleEntryAsync` and `SendVehicleExitAsync`. They both use the MQTT client to send messages to the `trafficcontrol/entrycam` and `trafficcontrol/exitcam` topics respectively:
 
 ```csharp
 public async Task SendVehicleEntryAsync(VehicleRegistered vehicleRegistered)

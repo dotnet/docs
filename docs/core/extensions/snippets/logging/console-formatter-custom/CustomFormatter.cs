@@ -29,12 +29,12 @@ namespace Console.ExampleFormatters.Custom
             string message =
                 logEntry.Formatter(
                     logEntry.State, logEntry.Exception);
-    
+
             if (message == null)
             {
                 return;
             }
-            
+
             CustomLogicGoesHere(textWriter);
             textWriter.WriteLine(message);
         }

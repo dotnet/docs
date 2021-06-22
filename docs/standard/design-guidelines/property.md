@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Property Design"
 title: "Property Design"
-ms.date: "10/22/2008"
+ms.date: "6/22/2021"
 helpviewer_keywords:
   - "member design guidelines, properties"
   - "properties [.NET Framework], design guidelines"
@@ -47,7 +47,7 @@ Although properties are technically very similar to methods, they are quite diff
 
  If the design requires multiple parameters, reconsider whether the property really represents an accessor to a logical collection. If it does not, use methods instead. Consider starting the method name with `Get` or `Set`.
 
- ❌ AVOID indexers with parameter types other than <xref:System.Int32?displayProperty=nameWithType>, <xref:System.Int64?displayProperty=nameWithType>, <xref:System.String?displayProperty=nameWithType>, <xref:System.Object?displayProperty=nameWithType>, or an enum.
+ ❌ AVOID indexers with parameter types other than <xref:System.Int32?displayProperty=nameWithType>, <xref:System.Int64?displayProperty=nameWithType>, <xref:System.String?displayProperty=nameWithType>, <xref:System.Range?displayProperty=nameWithType>, <xref:System.Index?displayProperty=nameWithType>, an enum, except on dictionary-like types.
 
  If the design requires other types of parameters, strongly reevaluate whether the API really represents an accessor to a logical collection. If it does not, use a method. Consider starting the method name with `Get` or `Set`.
 

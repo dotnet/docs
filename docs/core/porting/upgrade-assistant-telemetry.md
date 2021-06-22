@@ -12,18 +12,18 @@ The [Upgrade Assistant](./upgrade-assistant-overview.md) includes a telemetry fe
 
 The Upgrade Assistant telemetry feature is enabled by default. To opt out of the telemetry feature, set the `DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT` environment variable to `1` or `true`.
 
-### [Command Line](#tab/command-line)
+### [Console](#tab/console)
 
 Create and assign persisted environment variable, given the value.
 
-```CMD
+```console
 :: Assigns the env var to the value
 setx DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT="1"
 ```
 
 In a new instance of the **Command Prompt**, read the environment variable.
 
-```CMD
+```console
 :: Prints the env var value
 echo %DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT%
 ```

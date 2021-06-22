@@ -379,7 +379,7 @@ Ngen.exe records this information when it generates a native image. When you exe
 
      Changing machine security policy to restrict permissions previously granted to an assembly can cause a previously compiled native image for that assembly to become invalid.
 
-     For detailed information about how the common language runtime administers code access security and how to use permissions, see [Code Access Security](../misc/code-access-security.md).
+     For detailed information about how the common language runtime administers code access security and how to use permissions, see [Code Access Security](/previous-versions/dotnet/framework/code-access-security/code-access-security).
 
 <a name="Troubleshooting"></a>
 

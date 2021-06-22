@@ -27,7 +27,7 @@ When you build an assembly, you can specify a set of permissions that the assemb
   
 - The input evidence is used unaltered as the final set of evidence used for policy resolution. The methods that use this semantic include **Assembly.Load(byte[])** and **AppDomain.DefineDynamicAssembly()**.  
   
-  Optional permissions can be granted by the [security policy](../../framework/misc/code-access-security-basics.md) set on the computer where the assembly will run. If you want your code to handle all potential security exceptions, you can do one of the following:  
+  Optional permissions can be granted by the [security policy](/previous-versions/dotnet/framework/code-access-security/code-access-security-basics) set on the computer where the assembly will run. If you want your code to handle all potential security exceptions, you can do one of the following:  
   
 - Insert a permission request for all the permissions your code must have, and handle up front the load-time failure that occurs if the permissions are not granted.  
   

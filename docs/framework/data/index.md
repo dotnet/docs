@@ -14,7 +14,7 @@ This section provides information on how to access data in the .NET Framework.
   
 ## In this section
 
- [WCF Data Services 4.5](./wcf/index.md)  
+ [WCF Data Services 4.5](/previous-versions/dotnet/framework/data/wcf/index)  
  Provides information about how to use WCF Data Services to deploy data services on the Web or an intranet.  
 
  [ADO.NET](./adonet/index.md)  

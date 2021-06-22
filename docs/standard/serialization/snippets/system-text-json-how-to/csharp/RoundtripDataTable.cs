@@ -17,15 +17,17 @@ namespace RoundtripDataTable
     {
         public static List<WeatherForecast> weatherForecasts = new List<WeatherForecast>()
         {
-            new WeatherForecast() {Date = DateTime.Parse("2019-08-01"), TemperatureCelsius = 25, Summary = "Hot" },
-            new WeatherForecast() {Date = DateTime.Parse("2019-08-02"), TemperatureCelsius = 20, Summary = "Warm" },
-            new WeatherForecast() {Date = DateTime.Parse("2019-08-03"), TemperatureCelsius = 10, Summary = "Cold" }
+            new WeatherForecast { Date = new DateTime(2019, 8, 1), TemperatureCelsius = 25, Summary = "Hot" },
+            new WeatherForecast { Date = new DateTime(2019, 8, 2), TemperatureCelsius = 20, Summary = "Warm" },
+            new WeatherForecast { Date = new DateTime(2019, 8, 3), TemperatureCelsius = 10, Summary = "Cold" }
         };
 
         public static void Main()
         {
             // Serialize a List<T> object and display the JSON
-            string jsonString = JsonSerializer.Serialize(weatherForecasts, new JsonSerializerOptions() { WriteIndented = true });
+            string jsonString = JsonSerializer.Serialize(
+                weatherForecasts,
+                new JsonSerializerOptions { WriteIndented = true });
             Console.WriteLine(jsonString);
 
             // Deserialize to a DataTable
@@ -36,13 +38,11 @@ namespace RoundtripDataTable
             // Display the DataTable contents
             foreach (DataRow row in weatherForecastTable.Rows)
             {
+                for (int i = 0; i < weatherForecastTable.Columns.Count; i++)
                 {
-                    for (int x = 0; x < weatherForecastTable.Columns.Count; x++)
-                    {
-                        Console.Write(row[x].ToString() + " ");
-                    }
-                    Console.WriteLine();
+                    Console.Write($"{row[i]} ");
                 }
+                Console.WriteLine();
             }
 
             // Serialize the DataTable and display the JSON
@@ -66,76 +66,74 @@ namespace RoundtripDataTable
 
         public override void Write(Utf8JsonWriter jsonWriter, DataTable value, JsonSerializerOptions options)
         {
+            jsonWriter.WriteStartArray();
+            foreach (DataRow dr in value.Rows)
             {
-                jsonWriter.WriteStartArray();
-                foreach (DataRow dr in value.Rows)
+                jsonWriter.WriteStartObject();
+                foreach (DataColumn col in value.Columns)
                 {
-                    jsonWriter.WriteStartObject();
-                    foreach (DataColumn col in value.Columns)
+                    var key = col.ColumnName.Trim();
+                    var valueString = dr[col].ToString();
+                    switch (col.DataType.FullName)
                     {
-                        var key = col.ColumnName.Trim();
-                        var valueString = dr[col].ToString();
-                        switch (col.DataType.FullName)
-                        {
-                            case "System.Guid":
-                                jsonWriter.WriteString(key, valueString);
-                                break;
-                            case "System.Char":
-                            case "System.String":
-                                jsonWriter.WriteString(key, valueString);
-                                break;
-                            case "System.Boolean":
-                                Boolean.TryParse(valueString, out bool boolValue);
-                                jsonWriter.WriteBoolean(key, boolValue);
-                                break;
-                            case "System.DateTime":
-                                if (DateTime.TryParse(valueString, out DateTime dateValue))
-                                {
-                                    jsonWriter.WriteString(key, dateValue);
-                                }
-                                else
-                                {
-                                    jsonWriter.WriteString(key, "");
-                                }
-                                break;
-                            case "System.TimeSpan":
-                                if (DateTime.TryParse(valueString, out DateTime timeSpanValue))
-                                {
-                                    jsonWriter.WriteString(key, timeSpanValue.ToString());
-                                }
-                                else
-                                {
-                                    jsonWriter.WriteString(key, "");
-                                }
-                                break;
-                            case "System.Byte":
-                            case "System.SByte":
-                            case "System.Decimal":
-                            case "System.Double":
-                            case "System.Single":
-                            case "System.Int16":
-                            case "System.Int32":
-                            case "System.Int64":
-                            case "System.UInt16":
-                            case "System.UInt32":
-                            case "System.UInt64":
-                                if (long.TryParse(valueString, out long intValue))
-                                {
-                                    jsonWriter.WriteNumber(key, intValue);
-                                }
-                                else
-                                {
-                                    double.TryParse(valueString, out double doubleValue);
-                                    jsonWriter.WriteNumber(key, doubleValue);
-                                }
-                                break;
-                            default:
-                                jsonWriter.WriteString(key, valueString);
-                                break;
-                        }
+                        case "System.Guid":
+                            jsonWriter.WriteString(key, valueString);
+                            break;
+                        case "System.Char":
+                        case "System.String":
+                            jsonWriter.WriteString(key, valueString);
+                            break;
+                        case "System.Boolean":
+                            Boolean.TryParse(valueString, out bool boolValue);
+                            jsonWriter.WriteBoolean(key, boolValue);
+                            break;
+                        case "System.DateTime":
+                            if (DateTime.TryParse(valueString, out DateTime dateValue))
+                            {
+                                jsonWriter.WriteString(key, dateValue);
+                            }
+                            else
+                            {
+                                jsonWriter.WriteString(key, "");
+                            }
+                            break;
+                        case "System.TimeSpan":
+                            if (DateTime.TryParse(valueString, out DateTime timeSpanValue))
+                            {
+                                jsonWriter.WriteString(key, timeSpanValue.ToString());
+                            }
+                            else
+                            {
+                                jsonWriter.WriteString(key, "");
+                            }
+                            break;
+                        case "System.Byte":
+                        case "System.SByte":
+                        case "System.Decimal":
+                        case "System.Double":
+                        case "System.Single":
+                        case "System.Int16":
+                        case "System.Int32":
+                        case "System.Int64":
+                        case "System.UInt16":
+                        case "System.UInt32":
+                        case "System.UInt64":
+                            if (long.TryParse(valueString, out long intValue))
+                            {
+                                jsonWriter.WriteNumber(key, intValue);
+                            }
+                            else
+                            {
+                                double.TryParse(valueString, out double doubleValue);
+                                jsonWriter.WriteNumber(key, doubleValue);
+                            }
+                            break;
+                        default:
+                            jsonWriter.WriteString(key, valueString);
+                            break;
                     }
-                    jsonWriter.WriteEndObject();
                 }
+                jsonWriter.WriteEndObject();
             }
             jsonWriter.WriteEndArray();
         }

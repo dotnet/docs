@@ -98,7 +98,7 @@ A security token service implements the protocol defined in the WS-Trust specifi
  [!code-csharp[c_CreateSTS#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_creatests/cs/source.cs#4)]
  [!code-vb[c_CreateSTS#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_creatests/vb/source.vb#4)]  
   
- For more information, see [Federation Sample](../samples/federation-sample.md).  
+ For more information, see [Federation Sample](/previous-versions/dotnet/framework/wcf/samples/federation-sample).  
   
 ## Creating Response Messages  
 
@@ -112,7 +112,7 @@ A security token service implements the protocol defined in the WS-Trust specifi
  [!code-csharp[c_CreateSTS#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_creatests/cs/source.cs#6)]
  [!code-vb[c_CreateSTS#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_creatests/vb/source.vb#6)]  
   
- For more information about how to construct the proof token when the client and the security token service both provide key material for the shared key, see [Federation Sample](../samples/federation-sample.md).  
+ For more information about how to construct the proof token when the client and the security token service both provide key material for the shared key, see [Federation Sample](/previous-versions/dotnet/framework/wcf/samples/federation-sample).  
   
  The issued token references are constructed by creating instances of the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause> class.  
   
@@ -123,7 +123,7 @@ A security token service implements the protocol defined in the WS-Trust specifi
   
 ## Example  
 
- For full code for a security token service, see [Federation Sample](../samples/federation-sample.md).  
+ For full code for a security token service, see [Federation Sample](/previous-versions/dotnet/framework/wcf/samples/federation-sample).  
   
 ## See also
 
@@ -134,4 +134,4 @@ A security token service implements the protocol defined in the WS-Trust specifi
 - <xref:System.IdentityModel.Tokens.SamlAssertion>
 - <xref:System.ServiceModel.Security.Tokens.BinarySecretSecurityToken>
 - <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause>
-- [Federation Sample](../samples/federation-sample.md)
+- [Federation Sample](/previous-versions/dotnet/framework/wcf/samples/federation-sample)

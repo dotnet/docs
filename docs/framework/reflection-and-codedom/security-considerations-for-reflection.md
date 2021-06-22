@@ -111,7 +111,7 @@ Avoid writing public members that take <xref:System.Reflection.MethodInfo> param
 - <xref:System.Security.Permissions.ReflectionPermission>
 - <xref:System.Security.Permissions.SecurityPermission>
 - [Security Changes](/previous-versions/dotnet/framework/security/security-changes)
-- [Code Access Security](../misc/code-access-security.md)
+- [Code Access Security](/previous-versions/dotnet/framework/code-access-security/code-access-security)
 - [Security Issues in Reflection Emit](security-issues-in-reflection-emit.md)
 - [Viewing Type Information](viewing-type-information.md)
 - [Applying Attributes](../../standard/attributes/applying-attributes.md)

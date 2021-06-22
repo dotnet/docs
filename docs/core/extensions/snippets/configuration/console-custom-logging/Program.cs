@@ -12,10 +12,10 @@ class Program
 
         var logger = host.Services.GetRequiredService<ILogger<Program>>();
 
-        logger.LogDebug(1, "Does this line get hit?");
-        logger.LogInformation(3, "Nothing to see here.");
-        logger.LogWarning(5, "Warning... that was odd.");
-        logger.LogError(7, "Oops, there was an error.");
+        logger.LogDebug(1, "Does this line get hit?");    // Not logged
+        logger.LogInformation(3, "Nothing to see here."); // Logs in ConsoleColor.Green
+        logger.LogWarning(5, "Warning... that was odd."); // Logs in ConsoleColor.DarkMagenta
+        logger.LogError(7, "Oops, there was an error.");  // Logs in ConsoleColor.Red
 
         await host.RunAsync();
     }

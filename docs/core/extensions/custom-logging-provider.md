@@ -34,6 +34,9 @@ The preceding code:
 
 The logger is instantiated with the `name` and a `Func<ColorConsoleLoggerConfiguration>` which will return the current config &mdash; this handles updates to the config values as monitored through the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601.OnChange%2A?displayProperty=nameWithType> callback.
 
+> [!IMPORTANT]
+> The <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> implementation checks if the `config.EventId` value is set, when it's not or when it matches the exact `logEntry.EventId` it logs in color.
+
 ## Custom logger provider
 
 The `ILoggerProvider` object is responsible for creating logger instances. It's not necessary to create a logger instance per category, but it makes sense for some loggers, like NLog or log4net. This strategy allows you to choose different logging output targets per category, as in the following example:

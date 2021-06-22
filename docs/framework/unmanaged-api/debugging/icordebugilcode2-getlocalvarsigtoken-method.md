@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugILCode2::GetLocalVarSigToken Method"
 title: "ICorDebugILCode2::GetLocalVarSigToken Method"
 ms.date: "03/30/2017"
 dev_langs: 

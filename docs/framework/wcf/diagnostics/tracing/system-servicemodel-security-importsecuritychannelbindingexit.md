@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Security.ImportSecurityChannelBindingExit"
 title: "System.ServiceModel.Security.ImportSecurityChannelBindingExit"
 ms.date: "03/30/2017"
 ms.assetid: a174db12-23e4-49ec-b8b3-40ca7b2c1ba1

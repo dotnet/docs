@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataAssemblyEmit::SetExportedTypeProps Method"
 title: "IMetaDataAssemblyEmit::SetExportedTypeProps Method"
 ms.date: "03/30/2017"
 api_name: 

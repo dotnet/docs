@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BETWEEN (Entity SQL)"
 title: "BETWEEN (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 4dcdd754-ae01-4e78-bf28-8a117fb2b73e

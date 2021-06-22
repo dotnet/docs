@@ -1,10 +1,11 @@
 ---
+description: "Learn more about: Windows Workflow Foundation Glossary for .NET Framework 4.5"
 title: "Windows Workflow Foundation Glossary for .NET Framework 4.5"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Workflow Foundation [WF], glossary"
   - "WF [WF], glossary"
-ms.assetid: ab682b2f-3779-45ca-b831-b7c03d7dbb3a
+ms.topic: "reference"
 ---
 
 # Windows Workflow Foundation Glossary for .NET Framework 4.5

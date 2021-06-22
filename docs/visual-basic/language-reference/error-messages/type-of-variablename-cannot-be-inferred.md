@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30982: Type of '<variablename>' cannot be inferred because the loop bounds and the step variable do not widen to the same type"
 title: "Type of '<variablename>' cannot be inferred because the loop bounds and the step variable do not widen to the same type"
 ms.date: 07/20/2015
 f1_keywords:

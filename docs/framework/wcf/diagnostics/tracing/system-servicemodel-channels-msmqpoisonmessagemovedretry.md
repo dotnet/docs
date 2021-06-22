@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.MsmqPoisonMessageMovedRetry"
 title: "System.ServiceModel.Channels.MsmqPoisonMessageMovedRetry"
 ms.date: "03/30/2017"
 ms.assetid: 5c6c0a55-f92d-442c-a61e-7841341a79df

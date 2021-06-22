@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataAssemblyEmit::SetFileProps Method"
 title: "IMetaDataAssemblyEmit::SetFileProps Method"
 ms.date: "03/30/2017"
 api_name: 

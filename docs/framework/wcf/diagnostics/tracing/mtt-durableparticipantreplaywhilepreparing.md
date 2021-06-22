@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft.Transactions.TransactionBridge.DurableParticipantReplayWhilePreparing"
 title: "Microsoft.Transactions.TransactionBridge.DurableParticipantReplayWhilePreparing"
 ms.date: "03/30/2017"
 ms.assetid: 10ef3876-6f8e-4d4e-8444-f47847b64795

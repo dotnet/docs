@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::AppDomainShutdownFinished Method"
 title: "ICorProfilerCallback::AppDomainShutdownFinished Method"
 ms.date: "03/30/2017"
 api_name: 
@@ -30,13 +31,11 @@ HRESULT AppDomainShutdownFinished(
   
 ## Parameters
 
-- `appDomainId`
+`appDomainId`
+[in] Identifies the domain in which the application's assemblies are stored.
 
-  \[in] Identifies the domain in which the application's assemblies are stored.
-
-- `hrStatus`
-
-  \[in] An HRESULT that indicates whether the application domain was unloaded successfully.
+`hrStatus`
+[in] An HRESULT that indicates whether the application domain was unloaded successfully.
 
 ## Remarks  
 

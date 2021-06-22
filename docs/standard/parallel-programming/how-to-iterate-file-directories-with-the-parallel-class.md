@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Iterate File Directories with the Parallel Class"
 title: "How to: Iterate File Directories with the Parallel Class"
 ms.date: "03/30/2017"
 dev_langs: 

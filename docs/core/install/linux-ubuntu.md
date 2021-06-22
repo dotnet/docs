@@ -3,12 +3,12 @@ title: Install .NET on Ubuntu - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
+ms.date: 01/06/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu
 
-.NET is supported on Ubuntu. This article describes how to install .NET on Ubuntu. When an Ubuntu version falls out of support, .NET is no longer supported with that version. However, these instructions may help you to get .NET running on those versions, even though it isn't supported.
+.NET is supported on Ubuntu. This article describes how to install .NET on Ubuntu. When an Ubuntu version falls out of support, .NET is no longer supported with that version.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -24,6 +24,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Ubuntu                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
+| ✔️ [21.04](#2104-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [20.10](#2010-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [20.04 (LTS)](#2004-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ❌ [19.10](#1910-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
@@ -45,14 +46,18 @@ The following versions of .NET are no longer supported. The downloads for these 
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## How to install other versions
+## 21.04 ✔️
 
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
 
 ## 20.10 ✔️
-
-> [!IMPORTANT]
-> .NET Core 2.1 isn't yet available in the package feed.
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -174,7 +179,11 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
 
-## APT update SDK or runtime
+## How to install other versions
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
+## Use APT to update .NET
 
 When a new patch release is available for .NET, you can simply upgrade it through APT with the following commands:
 
@@ -182,6 +191,8 @@ When a new patch release is available for .NET, you can simply upgrade it throug
 sudo apt-get update
 sudo apt-get upgrade
 ```
+
+If you've upgraded your Linux distribution since installing .NET, you may need to reconfigure the Microsoft package repository. Run the installation instructions for your current distribution version to upgrade to the appropriate package repository for .NET updates.
 
 ## APT troubleshooting
 
@@ -213,10 +224,6 @@ sudo apt-get update; \
 
 [!INCLUDE [package-manager-failed-to-fetch-deb](includes/package-manager-failed-to-fetch-deb.md)]
 
-## Snap
-
-[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
-
 ## Dependencies
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
@@ -240,14 +247,7 @@ For .NET apps that use the *System.Drawing.Common* assembly, you also need the f
   > [!WARNING]
   > You can install a recent version of *libgdiplus* by adding the Mono repository to your system. For more information, see <https://www.mono-project.com/download/stable/>.
 
-## Scripted install
-
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
-
-## Manual install
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
-
 ## Next steps
 
+- [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

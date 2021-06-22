@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Local Type Inference (Visual Basic)"
 title: "Local Type Inference"
 ms.date: 07/20/2015
 f1_keywords:

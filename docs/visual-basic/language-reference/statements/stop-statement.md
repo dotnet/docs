@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Stop Statement (Visual Basic)"
 title: "Stop Statement"
 ms.date: 07/20/2015
 f1_keywords: 

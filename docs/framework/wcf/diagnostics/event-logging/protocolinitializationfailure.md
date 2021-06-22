@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ProtocolInitializationFailure"
 title: "ProtocolInitializationFailure"
 ms.date: "03/30/2017"
 ms.assetid: 8ee26f94-c85e-4e92-b56b-16f486c8b00e

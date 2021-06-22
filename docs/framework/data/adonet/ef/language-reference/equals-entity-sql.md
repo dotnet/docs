@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: = (Equals) (Entity SQL)"
 title: "= (Equals) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 948eb588-7080-4046-bb48-633b007393bf

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WriteableMetadataUpdateMode Enumeration"
 title: "WriteableMetadataUpdateMode Enumeration"
 ms.date: "03/30/2017"
 dev_langs: 

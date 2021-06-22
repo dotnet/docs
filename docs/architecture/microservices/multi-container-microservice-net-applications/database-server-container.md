@@ -1,7 +1,7 @@
 ---
 title: Use a database server running as a container
 description: Understand the importance of using a database server running as a container only for development. Never for production.
-ms.date: 01/30/2020
+ms.date: 01/13/2021
 ---
 # Use a database server running as a container
 
@@ -9,7 +9,7 @@ You can have your databases (SQL Server, PostgreSQL, MySQL, etc.) on regular sta
 
 ## SQL Server running as a container with a microservice-related database
 
-In eShopOnContainers, there's a container named `sqldata`, as defined in the [docker-compose.yml](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/docker-compose.yml) file, that runs a SQL Server for Linux instance with the SQL databases for all microservices that need one.
+In eShopOnContainers, there's a container named `sqldata`, as defined in the [docker-compose.yml](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/docker-compose.yml) file, that runs a SQL Server for Linux instance with the SQL databases for all microservices that need one.
 
 A key point in microservices is that each microservice owns its related data, so it should have its own database. However, the databases can be anywhere. In this case, they are all in the same container to keep Docker memory requirements as low as possible. Keep in mind that this is a good-enough solution for development and, perhaps, testing but not for production.
 
@@ -264,7 +264,7 @@ In eShopOnContainers, the `basket-api` microservice uses a Redis cache running a
       - "6379"
 ```
 
-This code in the docker-compose.yml defines a container named `basketdata` based on the redis image and publishing the port 6379 internally. This means that it will only be accessible from other containers running within the Docker host.
+This code in the docker-compose.yml defines a container named `basketdata` based on the redis image and publishing the port 6379 internally. This configuration means that it will only be accessible from other containers running within the Docker host.
 
 Finally, in the *docker-compose.override.yml* file, the `basket-api` microservice for the eShopOnContainers sample defines the connection string to use for that Redis container:
 

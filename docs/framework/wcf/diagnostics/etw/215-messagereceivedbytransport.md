@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 215 - MessageReceivedByTransport"
 title: "215 - MessageReceivedByTransport"
 ms.date: "03/30/2017"
 ms.assetid: bb32aa60-5207-4711-9f08-110e8ac327e5

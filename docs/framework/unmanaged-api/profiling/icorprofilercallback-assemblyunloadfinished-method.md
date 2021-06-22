@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::AssemblyUnloadFinished Method"
 title: "ICorProfilerCallback::AssemblyUnloadFinished Method"
 ms.date: "03/30/2017"
 api_name: 
@@ -30,13 +31,11 @@ HRESULT AssemblyUnloadFinished(
   
 ## Parameters
 
-- `assemblyId`
+`assemblyId`
+[in] Identifies the assembly that is being unloaded.
 
-  \[in] Identifies the assembly that is being unloaded.
-
-- `hrStatus`
-
-  \[in] An HRESULT that indicates whether the assembly was unloaded successfully.
+`hrStatus`
+[in] An HRESULT that indicates whether the assembly was unloaded successfully.
 
 ## Remarks  
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.TxCompletionStatusRemainsAttached"
 title: "System.ServiceModel.TxCompletionStatusRemainsAttached"
 ms.date: "03/30/2017"
 ms.assetid: 60a745f5-85f7-4006-9786-fbbcca678ac9

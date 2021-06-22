@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <claimTypeRequirements> element"
 title: "<claimTypeRequirements> element"
 ms.date: "03/30/2017"
 ms.assetid: a26efe73-4bad-4731-8cad-27f00d54354b
@@ -29,4 +30,4 @@ Specifies a collection of required claim types.
 - [Custom Bindings](../../../wcf/extending/custom-bindings.md)
 - [\<customBinding>](custombinding.md)
 - [How to: Create a Custom Binding Using the SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
-- [Custom Binding Security](../../../wcf/samples/custom-binding-security.md)
+- [Custom Binding Security](/previous-versions/dotnet/framework/wcf/samples/custom-binding-security)

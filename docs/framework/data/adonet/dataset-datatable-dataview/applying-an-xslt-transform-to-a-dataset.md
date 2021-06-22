@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Applying an XSLT Transform to a DataSet"
 title: "Applying an XSLT Transform to a DataSet"
 ms.date: "03/30/2017"
 dev_langs: 

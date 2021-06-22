@@ -1,7 +1,7 @@
 ---
 title: WCF svcutil tool overview
 description: An overview of the Microsoft WCF dotnet-svcutil tool that adds functionality for .NET Core and ASP.NET Core projects, similar to the WCF svcutil tool for .NET Framework projects.
-author: mlacouture
+author: honggit
 ms.date: 02/22/2019
 ---
 # WCF dotnet-svcutil tool for .NET Core
@@ -174,7 +174,7 @@ If you have any questions or feedback, [open an issue on GitHub](https://github.
 
 ## Release notes
 
-- Refer to the [Release notes](https://github.com/dotnet/wcf/blob/master/release-notes/dotnet-svcutil-notes.md) for updated release information, including known issues.
+- Refer to the [Release notes](https://github.com/dotnet/wcf/blob/main/release-notes/dotnet-svcutil-notes.md) for updated release information, including known issues.
 
 ## Information
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler and Language Provider Settings Schema"
 title: "Compiler and Language Provider Settings Schema"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

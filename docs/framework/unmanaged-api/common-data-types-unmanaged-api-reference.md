@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Common Data Types (Unmanaged API Reference)"
 title: "Common Data Types (Unmanaged API Reference)"
 ms.date: "03/30/2017"
 ms.assetid: e4ab2c4c-9433-4eba-9e9a-096de406cafb

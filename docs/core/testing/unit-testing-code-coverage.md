@@ -3,7 +3,8 @@ title: Use code coverage for unit testing
 description: Learn how to use the code coverage capabilities for .NET unit tests.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/01/2020
+ms.date: 02/10/2021
+recommendations: false
 ---
 
 # Use code coverage for unit testing
@@ -22,7 +23,7 @@ The "system under test" refers to the code that you're writing unit tests agains
 
 ### Create a class library
 
-From a command prompt in a new directory named `UnitTestingCodeCoverage`, create a new .NET standard class library using the [`dotnet new classlib`](../tools/dotnet-new.md#classlib) command:
+From a command prompt in a new directory named `UnitTestingCodeCoverage`, create a new .NET standard class library using the [`dotnet new classlib`](../tools/dotnet-new-sdk-templates.md#classlib) command:
 
 ```dotnetcli
 dotnet new classlib -n Numbers
@@ -60,7 +61,7 @@ namespace System.Numbers
 
 ### Create test projects
 
-Create two new **xUnit Test Project (.NET Core)** templates from the same command prompt using the [`dotnet new xunit`](../tools/dotnet-new.md#test) command:
+Create two new **xUnit Test Project (.NET Core)** templates from the same command prompt using the [`dotnet new xunit`](../tools/dotnet-new-sdk-templates.md#test) command:
 
 ```dotnetcli
 dotnet new xunit -n XUnit.Coverlet.Collector
@@ -266,7 +267,7 @@ Below is the example *coverage.cobertura.xml* file.
 > dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura
 > ```
 >
-> The resulting *coverage.cobertura.xml* file is output.  
+> The resulting *coverage.cobertura.xml* file is output.
 > You can follow msbuild integration guide [here](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md)
 
 ## Generate reports
@@ -292,7 +293,7 @@ After running this command, an HTML file represents the generated report.
 
 ## See also
 
-- [Visual Studio unit test cover coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)
+- [Visual Studio unit test code coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)
 - [GitHub - Coverlet repository](https://github.com/coverlet-coverage/coverlet)
 - [GitHub - ReportGenerator repository](https://github.com/danielpalme/ReportGenerator)
 - [ReportGenerator project site](https://danielpalme.github.io/ReportGenerator)

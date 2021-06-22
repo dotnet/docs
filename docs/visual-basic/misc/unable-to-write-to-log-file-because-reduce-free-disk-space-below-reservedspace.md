@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Unable to write to log file because writing to it would reduce free disk space below ReservedSpace value"
 title: "Unable to write to log file because writing to it would reduce free disk space below ReservedSpace value"
 ms.date: 07/20/2015
 f1_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugThread2::GetConnectionID Method"
 title: "ICorDebugThread2::GetConnectionID Method"
 ms.date: "03/30/2017"
 api_name: 

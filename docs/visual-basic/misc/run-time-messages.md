@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Visual Basic Run-Time Messages"
 title: "Run-Time Messages"
 ms.date: 07/20/2015
 helpviewer_keywords: 

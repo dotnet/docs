@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::RootReferences Method"
 title: "ICorProfilerCallback::RootReferences Method"
 ms.date: "03/30/2017"
 api_name: 

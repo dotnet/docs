@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Securing Messages Using Message Security"
 title: "Securing Messages Using Message Security"
 ms.date: "03/30/2017"
 ms.assetid: a17ebe67-836b-4c52-9a81-2c3d58e225ee
@@ -67,6 +68,6 @@ This section discusses WCF message security when using <xref:System.ServiceModel
 ## See also
 
 - [Securing Messages Using Transport Security](securing-messages-using-transport-security.md)
-- [Message Security over Message Queuing](../samples/message-security-over-message-queuing.md)
+- [Message Security over Message Queuing](/previous-versions/dotnet/framework/wcf/samples/message-security-over-message-queuing)
 - [Security Concepts](security-concepts.md)
 - [Securing Services and Clients](securing-services-and-clients.md)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugAssembly3 Interface"
 title: "ICorDebugAssembly3 Interface"
 ms.date: "03/30/2017"
 ms.assetid: 17fc5d76-75a9-4933-83f0-594de7f973f3

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Context Exchange Protocol"
 title: "Context Exchange Protocol"
 ms.date: "03/30/2017"
 ms.assetid: 3dfd38e0-ae52-491c-94f4-7a862b9843d4

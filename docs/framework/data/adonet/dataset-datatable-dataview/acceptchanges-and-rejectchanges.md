@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AcceptChanges and RejectChanges"
 title: "AcceptChanges and RejectChanges"
 ms.date: "03/30/2017"
 dev_langs: 

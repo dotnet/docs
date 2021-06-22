@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Queue Dropped Messages Per Second"
 title: "Queue Dropped Messages Per Second"
 ms.date: "03/30/2017"
 ms.assetid: 74540f52-8762-4147-b5ba-e171180515a3

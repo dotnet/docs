@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess3::SetEnableCustomNotification Method"
 title: "ICorDebugProcess3::SetEnableCustomNotification Method"
 ms.date: "03/30/2017"
 api_name: 

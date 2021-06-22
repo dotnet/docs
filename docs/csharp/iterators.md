@@ -25,7 +25,7 @@ The C# language provides
 features for both these scenarios. This article provides an overview
 of those features.
 
-This tutorial has multiple steps. After each step, you can run the application and see the progress. You can also [view or download the completed sample](https://github.com/dotnet/samples/blob/master/csharp/iterators) for this topic. For download instructions, see [Samples and Tutorials](../samples-and-tutorials/index.md#view-and-download-samples).
+This tutorial has multiple steps. After each step, you can run the application and see the progress. You can also [view or download the completed sample](https://github.com/dotnet/samples/blob/main/csharp/iterators) for this topic. For download instructions, see [Samples and Tutorials](../samples-and-tutorials/index.md#view-and-download-samples).
 
 ## Iterating with foreach
 
@@ -47,7 +47,7 @@ to generate the code necessary to iterate a collection: `IEnumerable<T>` and
 `IEnumerator<T>`. This mechanism is explained in more detail below.
 
 Both of these interfaces also have non-generic counterparts: `IEnumerable` and
-`IEnumerator`. The [generic](programming-guide/generics/index.md) versions are preferred for modern code.
+`IEnumerator`. The [generic](fundamentals/types/generics.md) versions are preferred for modern code.
 
 ## Enumeration sources with iterator methods
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 100 - WorkflowInstanceRecord"
 title: "100 - WorkflowInstanceRecord"
 ms.date: "03/30/2017"
 ms.assetid: ed4d1851-b378-489b-a22d-c1db09571fb4

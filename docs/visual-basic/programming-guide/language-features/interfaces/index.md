@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Interfaces (Visual Basic)"
 title: "Interfaces"
 ms.date: 07/20/2015
 helpviewer_keywords: 

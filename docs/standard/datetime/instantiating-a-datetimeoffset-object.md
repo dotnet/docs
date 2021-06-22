@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "time zone objects [.NET], instantiation"
   - "DateTimeOffset structure, converting to DateTime"
   - "DateTimeOffset structure, instantiating"
-ms.assetid: 9648375f-d368-4373-a976-3332ece00c0a
+ms.topic: how-to
 ---
 # Instantiating a DateTimeOffset object
 

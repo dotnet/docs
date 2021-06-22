@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorDebugStateChange Enumeration"
 title: "CorDebugStateChange Enumeration"
 ms.date: "02/07/2019"
 api_name:

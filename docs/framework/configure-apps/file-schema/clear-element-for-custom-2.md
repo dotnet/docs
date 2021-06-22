@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <clear> element for NameValueSectionHandler and DictionarySectionHandler"
 title: "<clear> element for NameValueSectionHandler and DictionarySectionHandler"
 ms.date: "05/01/2017"
 f1_keywords: 

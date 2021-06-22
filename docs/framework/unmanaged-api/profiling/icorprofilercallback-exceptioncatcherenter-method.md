@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::ExceptionCatcherEnter Method"
 title: "ICorProfilerCallback::ExceptionCatcherEnter Method"
 ms.date: "03/30/2017"
 api_name: 
@@ -30,13 +31,11 @@ HRESULT ExceptionCatcherEnter(
   
 ## Parameters
 
-- `functionId`
-
-  \[in] The identifier of the function containing the `catch` block.
+`functionId`
+[in] The identifier of the function containing the `catch` block.
   
-- `objectId`
-
-  \[in] The identifier of the exception being handled.
+`objectId`
+[in] The identifier of the exception being handled.
 
 ## Remarks  
 

@@ -31,4 +31,4 @@ For more information, see the [Type parameter constraints](~/_csharplang/spec/cl
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Generics](../../programming-guide/generics/index.md)
+- [Generics](../../fundamentals/types/generics.md)

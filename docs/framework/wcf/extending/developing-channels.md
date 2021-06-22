@@ -1,11 +1,12 @@
 ---
+description: "Learn more about: Developing Channels"
 title: "Developing Channels"
 ms.date: "03/30/2017"
 ms.assetid: 0513af9f-a0c2-457b-9a50-5b6bfee48513
 ---
 # Developing Channels
 
-To develop a protocol or transport channel that can be used with the Windows Communication Foundation (WCF) application layer requires several steps. This topic describes those steps and points you to specific topics for more information. To understand the channel model and the various types that are mentioned in this topic, see [Channel Model Overview](channel-model-overview.md). For a complete transport channel sample, see [Transport: UDP](../samples/transport-udp.md).  
+To develop a protocol or transport channel that can be used with the Windows Communication Foundation (WCF) application layer requires several steps. This topic describes those steps and points you to specific topics for more information. To understand the channel model and the various types that are mentioned in this topic, see [Channel Model Overview](channel-model-overview.md). For a complete transport channel sample, see [Transport: UDP](/previous-versions/dotnet/framework/wcf/samples/transport-udp).  
   
 ## The Channel Development Task List  
 

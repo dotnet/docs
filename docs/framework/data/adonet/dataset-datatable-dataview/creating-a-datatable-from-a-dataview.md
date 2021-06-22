@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating a DataTable from a DataView"
 title: "Creating a DataTable from a DataView"
 ms.date: "03/30/2017"
 dev_langs: 

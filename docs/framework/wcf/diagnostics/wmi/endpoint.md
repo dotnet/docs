@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Endpoint"
 title: "Endpoint"
 ms.date: "03/30/2017"
 ms.assetid: fe63370d-81a1-40f3-97c2-59cb357c78d2

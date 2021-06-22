@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRAssemblyIdentityManager::GetReferencedAssembliesFromStream Method"
 title: "ICLRAssemblyIdentityManager::GetReferencedAssembliesFromStream Method"
 ms.date: "03/30/2017"
 api_name: 

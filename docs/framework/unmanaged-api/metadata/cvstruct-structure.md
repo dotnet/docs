@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CVStruct Structure"
 title: "CVStruct Structure"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ConnectionOrientedTransportBindingElement"
 title: "ConnectionOrientedTransportBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: c1308313-f0e2-49e6-977d-6b4ce9ad35d1

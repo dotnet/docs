@@ -131,7 +131,7 @@ open System
 open System.Runtime.InteropServices
 type C =
     static member Foo([<Optional; DefaultParameterValue("Hello world")>] message) =
-        printfn "%s" message
+        printfn $"{message}"
 ```
 
 You can also specify a new object as a default parameter value. For example, the `Foo` member could have an optional `CancellationToken` as input instead:
@@ -141,7 +141,7 @@ open System.Threading
 open System.Runtime.InteropServices
 type C =
     static member Foo([<Optional; DefaultParameterValue(CancellationToken())>] ct: CancellationToken) =
-        printfn "%A" ct
+        printfn $"{ct}"
 ```
 
 The value given as argument to `DefaultParameterValue` must match the type of the parameter. For example, the following is not allowed:
@@ -162,12 +162,12 @@ Passing an F# value by reference involves [byrefs](byrefs.md), which are managed
 - Use `byref<'T>` if you need to both read from and write to the pointer.
 
 ```fsharp
-let example1 (x: inref<int>) = printfn "It's %d" x
+let example1 (x: inref<int>) = printfn $"It's %d{x}"
 
 let example2 (x: outref<int>) = x <- x + 1
 
 let example3 (x: byref<int>) =
-    printfn "It'd %d" x
+    printfn $"It's %d{x}"
     x <- x + 1
 
 let test () =

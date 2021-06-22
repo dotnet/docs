@@ -1,14 +1,15 @@
 ---
+description: "Learn more about: Find Private Key Tool (FindPrivateKey.exe)"
 title: "Find Private Key Tool (FindPrivateKey.exe)"
 ms.date: "09/11/2017"
-ms.assetid: b8846a95-3fcc-4e8c-b9c0-128d975a6307
+ms.topic: reference
 ---
 # Find Private Key Tool (FindPrivateKey.exe)
 
 This command-line tool can be used to retrieve a private key from a certificate store. For example, *FindPrivateKey.exe* can be used to find the location and name of the private key file associated with a specific X.509 certificate in the certificate store.
 
 > [!IMPORTANT]
-> The FindPrivateKey tool is shipped as a WCF sample. For more information about where to find the sample and how to build it, see [FindPrivateKey](./samples/findprivatekey.md).
+> The FindPrivateKey tool is shipped as a WCF sample. For more information about where to find the sample and how to build it, see [FindPrivateKey](/previous-versions/dotnet/framework/wcf/samples/findprivatekey).
 
 ## Syntax
 

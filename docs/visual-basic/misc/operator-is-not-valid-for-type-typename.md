@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Operator is not valid for type '<typename>'"
 title: "Operator is not valid for type '<typename>'"
 ms.date: 07/20/2015
 f1_keywords: 

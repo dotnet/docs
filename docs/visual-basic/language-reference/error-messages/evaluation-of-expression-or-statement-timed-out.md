@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30722: Evaluation of expression or statement timed out"
 title: "Evaluation of expression or statement timed out"
 ms.date: 07/20/2015
 f1_keywords:

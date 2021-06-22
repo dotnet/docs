@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "anonymous types [C#], for subsets of element properties"
 ms.topic: how-to
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 ms.assetid: fabdf349-f443-4e3f-8368-6c471be1dd7b
 ---
 # How to return subsets of element properties in a query (C# Programming Guide)
@@ -47,5 +47,5 @@ To run this code, copy and paste the class into a C# console application  with a
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Anonymous Types](./anonymous-types.md)
+- [Anonymous Types](../../fundamentals/types/anonymous-types.md)
 - [LINQ in C#](../../linq/index.md)

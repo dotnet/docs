@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugAppDomain::GetId Method"
 title: "ICorDebugAppDomain::GetId Method"
 ms.date: "03/30/2017"
 api_name: 

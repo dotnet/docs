@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: As Clause (Visual Basic)"
 title: "As Clause"
 ms.date: 07/20/2015
 f1_keywords: 

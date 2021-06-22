@@ -1,13 +1,13 @@
 ---
 title: Use IHttpClientFactory to implement resilient HTTP requests
 description: Learn how to use IHttpClientFactory, available since .NET Core 2.1, for creating `HttpClient` instances, making it easy for you to use it in your applications. 
-ms.date: 08/31/2020
+ms.date: 01/13/2021
 ---
 # Use IHttpClientFactory to implement resilient HTTP requests
 
 <xref:System.Net.Http.IHttpClientFactory> is a contract implemented by `DefaultHttpClientFactory`, an opinionated factory, available since .NET Core 2.1, for creating <xref:System.Net.Http.HttpClient> instances to be used in your applications.
 
-## Issues with the original HttpClient class available in .NET Core
+## Issues with the original HttpClient class available in .NET
 
 The original and well-known <xref:System.Net.Http.HttpClient> class can be easily used, but in some cases, it isn't being properly used by many developers.
 
@@ -21,7 +21,7 @@ However, the issue isn't really with `HttpClient` per se, but with the [default 
 
 To address the issues mentioned above and to make `HttpClient` instances manageable, .NET Core 2.1 introduced the <xref:System.Net.Http.IHttpClientFactory> interface which can be used to configure and create `HttpClient` instances in an app through Dependency Injection (DI). It also provides extensions for Polly-based middleware to take advantage of delegating handlers in HttpClient.
 
-[Polly](http://www.thepollyproject.org/) is a transient-fault-handling library that helps developers add resiliency to their applications, by using some pre-defined policies in a fluent and thread-safe manner.
+[Polly](https://thepollyproject.azurewebsites.net/) is a transient-fault-handling library that helps developers add resiliency to their applications, by using some pre-defined policies in a fluent and thread-safe manner.
 
 ## Benefits of using IHttpClientFactory
 
@@ -184,14 +184,14 @@ Up to this point, the above code snippet has only shown the example of performin
 
 ## Additional resources
 
-- **Using HttpClientFactory in .NET Core**  
+- **Using HttpClientFactory in .NET**  
   [https://docs.microsoft.com/aspnet/core/fundamentals/http-requests](/aspnet/core/fundamentals/http-requests)
 
 - **HttpClientFactory source code in the `dotnet/extensions` GitHub repository**  
   <https://github.com/dotnet/extensions/tree/v3.1.8/src/HttpClientFactory>
 
 - **Polly (.NET resilience and transient-fault-handling library)**  
-  <http://www.thepollyproject.org/>
+  <https://thepollyproject.azurewebsites.net/>
   
 - **Using IHttpClientFactory without dependency injection (GitHub issue)**  
   <https://github.com/dotnet/extensions/issues/1345>

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GetHistoryFileDirectory Function"
 title: "GetHistoryFileDirectory Function"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TransportAuthenticationSuccess"
 title: "TransportAuthenticationSuccess"
 ms.date: "03/30/2017"
 ms.assetid: 7a7c3013-3d05-4d32-857b-759e98d91259

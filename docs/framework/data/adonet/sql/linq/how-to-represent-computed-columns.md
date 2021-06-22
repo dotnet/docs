@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Represent Computed Columns"
 title: "How to: Represent Computed Columns"
 ms.date: "03/30/2017"
 ms.assetid: 4025f1fd-9dfa-46c0-b04f-34e8bc7957a2

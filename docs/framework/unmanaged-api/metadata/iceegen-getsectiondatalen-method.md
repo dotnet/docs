@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICeeGen::GetSectionDataLen Method"
 title: "ICeeGen::GetSectionDataLen Method"
 ms.date: "03/30/2017"
 api_name: 

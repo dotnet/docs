@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.MsmqPotentiallyPoisonMessageDetected"
 title: "System.ServiceModel.Channels.MsmqPotentiallyPoisonMessageDetected"
 ms.date: "03/30/2017"
 ms.assetid: a530df15-ebcd-45d6-bcdf-fc4483bcebec

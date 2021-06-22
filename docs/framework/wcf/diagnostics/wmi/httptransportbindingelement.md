@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: HttpTransportBindingElement"
 title: "HttpTransportBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: 088a7bce-6bb2-4839-ad74-f68d4b1aa0f9

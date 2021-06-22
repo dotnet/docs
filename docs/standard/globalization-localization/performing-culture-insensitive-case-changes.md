@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Performing Culture-Insensitive Case Changes"
 title: "Performing Culture-Insensitive Case Changes"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -13,7 +14,7 @@ helpviewer_keywords:
   - "culture-insensitive string operations, case changes"
   - "String.ToUpper method"
   - "culture parameter"
-ms.assetid: 822d551c-c69a-4191-82f4-183d82c9179c
+ms.topic: how-to
 ---
 # Performing Culture-Insensitive Case Changes
 

@@ -1,12 +1,12 @@
 ---
 title: Security in gRPC applications - gRPC for WCF developers
 description: Overview of call and channel authentication and authorization in gRPC.
-ms.date: 09/02/2019
+ms.date: 12/15/2020
 ---
 
 # Security in gRPC applications
 
-In any real-world scenario, securing applications and services is essential. Security covers three key areas:
+In any real-world scenario, securing applications and services are essential. Security covers three key areas:
 
 * Encrypting network traffic to prevent malicious hackers from intercepting it.
 * Authenticating clients and servers to establish identity and trust.
@@ -49,7 +49,7 @@ For more information, see the [Authentication and authorization](/aspnet/core/gr
 > [!NOTE]
 > When you're using gRPC over a TLS-encrypted HTTP/2 connection, all traffic between clients and servers is encrypted, even if you don't use channel-level authentication.
 
-This chapter will show how to apply call credentials and channel credentials to a gRPC service. It will also show how to use credentials from a .NET Core gRPC client to authenticate with the service.
+This chapter will show how to apply call credentials and channel credentials to a gRPC service. It will also show how to use credentials from a .NET gRPC client to authenticate with the service.
 
 >[!div class="step-by-step"]
 >[Previous](client-libraries.md)

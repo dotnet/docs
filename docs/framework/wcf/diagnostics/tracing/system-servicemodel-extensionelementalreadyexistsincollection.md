@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ExtensionElementAlreadyExistsInCollection"
 title: "System.ServiceModel.ExtensionElementAlreadyExistsInCollection"
 ms.date: "03/30/2017"
 ms.assetid: e6c0c5d4-889c-45fb-b90f-3720bb183aa4

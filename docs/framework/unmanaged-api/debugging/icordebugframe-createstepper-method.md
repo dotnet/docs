@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugFrame::CreateStepper Method"
 title: "ICorDebugFrame::CreateStepper Method"
 ms.date: "03/30/2017"
 api_name: 

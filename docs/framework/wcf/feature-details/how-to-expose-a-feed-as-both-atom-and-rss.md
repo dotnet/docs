@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Expose a Feed as Both Atom and RSS"
 title: "How to: Expose a Feed as Both Atom and RSS"
 ms.date: "03/30/2017"
 dev_langs: 

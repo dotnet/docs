@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Double Data Type (Visual Basic)"
 title: "Double Data Type"
 ms.date: 07/20/2015
 f1_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::GetTypeSpecFromToken Method"
 title: "IMetaDataImport::GetTypeSpecFromToken Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess2::GetDesiredNGENCompilerFlags Method"
 title: "ICorDebugProcess2::GetDesiredNGENCompilerFlags Method"
 ms.date: "03/30/2017"
 api_name: 

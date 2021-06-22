@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <workflow> of WCF"
 title: "<workflow> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: c0443eba-d3b4-4fae-886e-9878daf77691

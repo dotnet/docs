@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SetAssemblyFile2 Method"
 title: "SetAssemblyFile2 Method"
 ms.date: "03/30/2017"
 api_name: 

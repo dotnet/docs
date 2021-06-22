@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Specify Channel Security Credentials"
 title: "How to: Specify Channel Security Credentials"
 ms.date: "03/30/2017"
 ms.assetid: f8e03f47-9c4f-4dd5-8f85-429e6d876119
@@ -10,7 +11,7 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
 > [!NOTE]
 > <xref:System.ServiceModel.ComIntegration.IChannelCredentials> is an IDispatch-based interface and you will not get IntelliSense functionality in the Visual Studio environment.  
   
- This article will use the WCF service defined in the [Message Security Sample](../samples/message-security-sample.md).  
+ This article will use the WCF service defined in the [Message Security Sample](/previous-versions/dotnet/framework/wcf/samples/message-security-sample).  
   
 ### To specify a client certificate  
   
@@ -110,7 +111,7 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
   
 ### To specify an issue token  
   
-1. Issue tokens are used only for applications using federated security. For more information about federated security, see [Federation and Issued Tokens](federation-and-issued-tokens.md) and [Federation Sample](../samples/federation-sample.md).  
+1. Issue tokens are used only for applications using federated security. For more information about federated security, see [Federation and Issued Tokens](federation-and-issued-tokens.md) and [Federation Sample](/previous-versions/dotnet/framework/wcf/samples/federation-sample).  
   
      The following Visual Basic code example illustrates how to call the <xref:System.ServiceModel.ComIntegration.IChannelCredentials.SetIssuedToken%28System.String%2CSystem.String%2CSystem.String%29> method:  
   

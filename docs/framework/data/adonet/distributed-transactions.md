@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Distributed Transactions"
 title: "Distributed Transactions"
 ms.date: "03/30/2017"
 ms.assetid: 718b257c-bcb2-408e-b004-a7b0adb1c176

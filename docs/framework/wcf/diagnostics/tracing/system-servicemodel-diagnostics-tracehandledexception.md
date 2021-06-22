@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Diagnostics.TraceHandledException"
 title: "System.ServiceModel.Diagnostics.TraceHandledException"
 ms.date: "03/30/2017"
 ms.assetid: fd9a62db-258c-4a39-ae8f-cc948912638f

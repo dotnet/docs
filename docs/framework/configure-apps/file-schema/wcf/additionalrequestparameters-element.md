@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <additionalRequestParameters> element"
 title: "<additionalRequestParameters> element"
 ms.date: "03/30/2017"
 ms.assetid: da8109fb-581c-48f4-b718-3bbda1edc47d
@@ -21,4 +22,4 @@ This contains a collection of configuration elements that specify additional req
 - [Custom Bindings](../../../wcf/extending/custom-bindings.md)
 - [\<customBinding>](custombinding.md)
 - [How to: Create a Custom Binding Using the SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
-- [Custom Binding Security](../../../wcf/samples/custom-binding-security.md)
+- [Custom Binding Security](/previous-versions/dotnet/framework/wcf/samples/custom-binding-security)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IN (Entity SQL)"
 title: "IN (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 51662950-ee01-4857-b7b9-311dd8515966

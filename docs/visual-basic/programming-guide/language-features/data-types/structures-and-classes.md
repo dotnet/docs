@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Structures and Classes (Visual Basic)"
 title: "Structures and Classes"
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -24,7 +25,7 @@ Visual Basic unifies the syntax for structures and classes, with the result that
   
 - Both are *container* types, meaning that they contain other types as members.  
   
-- Both have members, which can include constructors, methods, properties, fields, constants, enumerations, events, and event handlers. However, do not confuse these members with the declared *elements* of a structure.  
+- Both have members, which can include constructors, methods, properties, fields, constants, enumerations, events, and event handlers.
   
 - Members of both can have individualized access levels. For example, one member can be declared `Public` and another `Private`.  
   

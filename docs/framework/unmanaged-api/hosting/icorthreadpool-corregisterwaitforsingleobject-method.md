@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorThreadpool::CorRegisterWaitForSingleObject Method"
 title: "ICorThreadpool::CorRegisterWaitForSingleObject Method"
 ms.date: "03/30/2017"
 api_name: 

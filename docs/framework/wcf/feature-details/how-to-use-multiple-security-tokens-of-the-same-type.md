@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Multiple Security Tokens of the Same Type"
 title: "How to: Use Multiple Security Tokens of the Same Type"
 ms.date: "03/30/2017"
 ms.assetid: cf179f48-4ed4-4caa-86a5-ef8eecc231cd

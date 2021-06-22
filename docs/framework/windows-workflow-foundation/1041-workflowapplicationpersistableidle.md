@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1041 - WorkflowApplicationPersistableIdle"
 title: "1041 - WorkflowApplicationPersistableIdle"
 ms.date: "03/30/2017"
 ms.assetid: 966adf2f-e21d-44df-a3ec-a8e285e0a316

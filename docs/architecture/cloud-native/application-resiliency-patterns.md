@@ -2,14 +2,14 @@
 title: Application resiliency patterns
 description: Architecting Cloud Native .NET Apps for Azure | Application Resiliency Patterns
 author: robvet
-ms.date: 05/13/2020
+ms.date: 01/19/2021
 ---
 
 # Application resiliency patterns
 
 The first line of defense is application resiliency.
 
-While you could invest considerable time writing your own resiliency framework, such products already exist. [Polly](http://www.thepollyproject.org/) is a comprehensive .NET resilience and transient-fault-handling library that allows developers to express resiliency policies in a fluent and thread-safe manner. Polly targets applications built with either the .NET Framework or .NET Core. The following table describes the resiliency features, called `policies`, available in the Polly Library. They can be applied individually or grouped together.
+While you could invest considerable time writing your own resiliency framework, such products already exist. [Polly](https://dotnetfoundation.org/projects/polly) is a comprehensive .NET resilience and transient-fault-handling library that allows developers to express resiliency policies in a fluent and thread-safe manner. Polly targets applications built with either the .NET Framework or .NET 5. The following table describes the resiliency features, called `policies`, available in the Polly Library. They can be applied individually or grouped together.
 
 | Policy | Experience |
 | :-------- | :-------- |
@@ -33,7 +33,7 @@ Note how in the previous figure the resiliency policies apply to request message
 
 Question: Would you retry an HTTP Status Code of 403 - Forbidden? No. Here, the system is functioning properly, but informing the caller that they aren't authorized to perform the requested operation. Care must be taken to retry only those operations caused by failures.
 
-As recommended in Chapter 1, Microsoft developers constructing cloud-native applications should target the .NET Core platform. Version 2.1 introduced the [HTTPClientFactory](https://www.stevejgordon.co.uk/introduction-to-httpclientfactory-aspnetcore) library for creating HTTP Client instances for interacting with URL-based resources. Superseding the original HTTPClient class, the factory class supports many enhanced features, one of which is [tight integration](../microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md) with the Polly resiliency library. With it, you can easily define resiliency policies in the application Startup class to handle partial failures and connectivity issues.
+As recommended in Chapter 1, Microsoft developers constructing cloud-native applications should target the .NET platform. Version 2.1 introduced the [HTTPClientFactory](https://www.stevejgordon.co.uk/introduction-to-httpclientfactory-aspnetcore) library for creating HTTP Client instances for interacting with URL-based resources. Superseding the original HTTPClient class, the factory class supports many enhanced features, one of which is [tight integration](../microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md) with the Polly resiliency library. With it, you can easily define resiliency policies in the application Startup class to handle partial failures and connectivity issues.
 
 Next, let's expand on retry and circuit breaker patterns.
 
@@ -77,7 +77,7 @@ Keep in mind that the intent of the Circuit Breaker pattern is *different* than 
 
 ## Testing for resiliency
 
-Testing for resiliency cannot always be done the same way that you test application functionality (by running unit tests, integration tests and so on). Instead, you must test how the end-to-end workload performs under failure conditions which only occur intermittently. For example: inject failures by crashing processes, expired certificates, make dependent services unavailable etc. Frameworks like [chaos-monkey](https://github.com/Netflix/chaosmonkey) can be used for such chaos testing.
+Testing for resiliency cannot always be done the same way that you test application functionality (by running unit tests, integration tests, and so on). Instead, you must test how the end-to-end workload performs under failure conditions, which only occur intermittently. For example: inject failures by crashing processes, expired certificates, make dependent services unavailable etc. Frameworks like [chaos-monkey](https://github.com/Netflix/chaosmonkey) can be used for such chaos testing.
 
 Application resiliency is a must for handling problematic requested operations. But, it's only half of the story. Next, we cover resiliency features available in the Azure cloud.
 

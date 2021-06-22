@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRRuntimeHost::Start Method"
 title: "ICLRRuntimeHost::Start Method"
 ms.date: "03/30/2017"
 api_name: 

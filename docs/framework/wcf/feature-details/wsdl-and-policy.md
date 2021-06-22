@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WSDL and Policy"
 title: "WSDL and Policy"
 ms.date: "03/30/2017"
 ms.assetid: cea87440-3519-4640-8494-b8a2b0e88c84
@@ -72,6 +73,6 @@ This topic covers Windows Communication Foundation (WCF) WSDL 1.1, WS-Policy and
   
 ## See also
 
-- [Custom WSDL Publication](../samples/custom-wsdl-publication.md)
+- [Custom WSDL Publication](/previous-versions/dotnet/framework/wcf/samples/custom-wsdl-publication)
 - [How to: Export Custom WSDL](../extending/how-to-export-custom-wsdl.md)
 - [How to: Import Custom WSDL](../extending/how-to-import-custom-wsdl.md)

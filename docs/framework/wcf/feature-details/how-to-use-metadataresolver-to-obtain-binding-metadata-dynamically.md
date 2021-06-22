@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use MetadataResolver to Obtain Binding Metadata Dynamically"
 title: "How to: Use MetadataResolver to Obtain Binding Metadata Dynamically"
 ms.date: "03/30/2017"
 ms.assetid: 56ffcb99-fff0-4479-aca0-e3909009f605

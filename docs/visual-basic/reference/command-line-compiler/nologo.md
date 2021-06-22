@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: -nologo (Visual Basic)"
 title: "-nologo"
 ms.date: 03/13/2018
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.TcpConnectError"
 title: "System.ServiceModel.Channels.TcpConnectError"
 ms.date: "03/30/2017"
 ms.assetid: 22d93797-072e-405d-a3e0-5c519ddf290b

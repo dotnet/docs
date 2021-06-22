@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.MsmqMoveOrDeleteAttemptFailed"
 title: "System.ServiceModel.Channels.MsmqMoveOrDeleteAttemptFailed"
 ms.date: "03/30/2017"
 ms.assetid: d75d39da-7502-4a6a-91b9-eaa05b8e24d5

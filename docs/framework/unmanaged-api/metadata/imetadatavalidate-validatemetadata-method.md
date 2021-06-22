@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataValidate::ValidateMetaData Method"
 title: "IMetaDataValidate::ValidateMetaData Method"
 ms.date: "03/30/2017"
 api_name: 

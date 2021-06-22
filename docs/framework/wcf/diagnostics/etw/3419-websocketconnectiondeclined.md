@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3419 - WebSocketConnectionDeclined"
 title: "3419 - WebSocketConnectionDeclined"
 ms.date: "03/30/2017"
 ms.assetid: d1d27f33-7d59-40c7-b464-6cd1f13b7c72

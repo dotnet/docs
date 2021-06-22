@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Web Settings Schema"
 title: "Web Settings Schema"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

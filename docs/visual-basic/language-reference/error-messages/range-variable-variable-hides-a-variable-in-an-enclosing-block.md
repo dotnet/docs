@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC36633: Range variable <variable> hides a variable in an enclosing block, a previously defined range variable, or an implicitly declared variable in a query expression"
 title: "Range variable <variable> hides a variable in an enclosing block, a previously defined range variable, or an implicitly declared variable in a query expression"
 ms.date: 07/20/2015
 f1_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugMemoryBuffer::GetStartAddress Method"
 title: "ICorDebugMemoryBuffer::GetStartAddress Method"
 ms.date: "03/30/2017"
 ms.assetid: f804d9ab-8c88-44f0-b278-5fcca7f87726

@@ -1,7 +1,7 @@
 ---
 title: Docker - gRPC for WCF Developers
 description: Creating Docker images for ASP.NET Core gRPC applications
-ms.date: 09/02/2019
+ms.date: 01/06/2021
 ---
 
 # Create Docker images
@@ -10,7 +10,7 @@ This section covers the creation of Docker images for ASP.NET Core gRPC applicat
 
 ## Microsoft base images for ASP.NET Core applications
 
-Microsoft provides a range of base images for building and running .NET Core applications. To create an ASP.NET Core 3.0 image, you use two base images:
+Microsoft provides a range of base images for building and running .NET applications. To create an ASP.NET Core 5.0 image, you use two base images:
 
 - An SDK image to build and publish the application.
 - A runtime image for deployment.
@@ -24,10 +24,9 @@ For each image, there are four variants based on different Linux distributions, 
 
 | Image tag(s) | Linux | Notes |
 | --------- | ----- | ----- |
-| 3.0-buster, 3.0 | Debian 10 | The default image if no OS variant is specified. |
-| 3.0-alpine | Alpine 3.9 | Alpine base images are much smaller than Debian or Ubuntu ones. |
-| 3.0-disco | Ubuntu 19.04 | |
-| 3.0-bionic | Ubuntu 18.04 | |
+| 5.0-buster-slim, 5.0 | Debian 10 | The default image if no OS variant is specified. |
+| 5.0-alpine | Alpine 3.12 | Alpine base images are much smaller than Debian or Ubuntu ones. |
+| 5.0-focal| Ubuntu 20.04 | |
 
 The Alpine base image is around 100 MB, compared to 200 MB for the Debian and Ubuntu images. Some software packages or libraries might not be available in Alpine's package management. If you're not sure which image to use, you should probably choose the default Debian.
 
@@ -36,29 +35,31 @@ The Alpine base image is around 100 MB, compared to 200 MB for the Debian and Ub
 
 ## Create a Docker image
 
-A Docker image is defined by a *Dockerfile*. This is a text file that contains all the commands needed to build the application and install any dependencies that are required for either building or running the application. The following example shows the simplest Dockerfile for an ASP.NET Core 3.0 application:
+A Docker image is defined by a *Dockerfile*. This *Dockerfile* is a text file that contains all the commands needed to build the application and install any dependencies that are required for either building or running the application. The following example shows the simplest Dockerfile for an ASP.NET Core 5.0 application:
 
 ```dockerfile
-# Application build steps
-FROM mcr.microsoft.com/dotnet/sdk:3.0 as builder
+FROM mcr.microsoft.com/dotnet/sdk:5.0 as build
 
 WORKDIR /src
 
-COPY . .
+COPY ./StockKube.sln .
+COPY ./src/StockData/StockData.csproj ./src/StockData/
+COPY ./src/StockWeb/StockWeb.csproj ./src/StockWeb/
 
 RUN dotnet restore
 
-RUN dotnet publish -c Release -o /published src/StockData/StockData.csproj
+COPY . .
 
-# Runtime image creation
-FROM mcr.microsoft.com/dotnet/aspnet:3.0
+RUN dotnet publish --no-restore -c Release -o /published src/StockData/StockData.csproj
+
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 as runtime
 
 # Uncomment the line below if running with HTTPS
 # ENV ASPNETCORE_URLS=https://+:443
 
 WORKDIR /app
 
-COPY --from=builder /published .
+COPY --from=build /published .
 
 ENTRYPOINT [ "dotnet", "StockData.dll" ]
 ```
@@ -86,18 +87,18 @@ The Dockerfile has two parts: the first uses the `sdk` base image to build and p
 
 ### HTTPS in Docker
 
-Microsoft base images for Docker set the `ASPNETCORE_URLS` environment variable to `http://+:80`, meaning that Kestrel runs without HTTPS on that port. If you're using HTTPS with a custom certificate (as described in [Self-hosted gRPC applications](self-hosted.md)), you should override this. Set the environment variable in the runtime image creation part of your Dockerfile.
+Microsoft base images for Docker set the `ASPNETCORE_URLS` environment variable to `http://+:80`, meaning that Kestrel runs without HTTPS on that port. If you're using HTTPS with a custom certificate (as described in [Self-hosted gRPC applications](self-hosted.md)), you should override this configuration. Set the environment variable in the runtime image creation part of your Dockerfile.
 
 ```dockerfile
 # Runtime image creation
-FROM mcr.microsoft.com/dotnet/aspnet:3.0
+FROM mcr.microsoft.com/dotnet/aspnet:5.0
 
 ENV ASPNETCORE_URLS=https://+:443
 ```
 
 ### The .dockerignore file
 
-Much like `.gitignore` files that exclude certain files and directories from source control, the `.dockerignore` file can be used to exclude files and directories from being copied to the image during build. This not only saves time copying, but can also avoid some errors that arise from having the `obj` directory from your PC copied into the image. At a minimum, you should add entries for `bin` and `obj` to your `.dockerignore` file.
+Much like `.gitignore` files that exclude certain files and directories from source control, the `.dockerignore` file can be used to exclude files and directories from being copied to the image during build. This file not only saves time copying, but can also avoid some errors that arise from having the `obj` directory from your PC copied into the image. At a minimum, you should add entries for `bin` and `obj` to your `.dockerignore` file.
 
 ```console
 bin/
@@ -106,10 +107,10 @@ obj/
 
 ## Build the image
 
-For a solution with a single application, and thus a single Dockerfile, it's simplest to put the Dockerfile in the base directory. In other words, put it in the same directory as the `.sln` file. In that case, to build the image, use the following `docker build` command from the directory containing the Dockerfile.
+For a `StockKube.sln` solution containing two different applications `StockData` and `StockWeb`, it's simplest to put the Dockerfile for each one of them in the base directory. In that case, to build the image, use the following `docker build` command from the same directory where `.sln` file resides.
 
 ```console
-docker build --tag stockdata .
+docker build -t stockdata:1.0.0 -f ./src/StockData/Dockerfile .
 ```
 
 The confusingly named `--tag` flag (which can be shortened to `-t`) specifies the whole name of the image, including the actual tag if specified. The `.` at the end specifies the context in which the build will be run; the current working directory for the `COPY` commands in the Dockerfile.
@@ -117,7 +118,7 @@ The confusingly named `--tag` flag (which can be shortened to `-t`) specifies th
 If you have multiple applications within a single solution, you can keep the Dockerfile for each application in its own folder, beside the `.csproj` file. You should still run the `docker build` command from the base directory to ensure that the solution and all the projects are copied into the image. You can specify a Dockerfile below the current directory by using the `--file` (or `-f`) flag.
 
 ```console
-docker build --tag stockdata --file src/StockData/Dockerfile .
+docker build -t stockdata:1.0.0 -f ./src/StockData/Dockerfile .
 ```
 
 ## Run the image in a container on your machine
@@ -125,27 +126,27 @@ docker build --tag stockdata --file src/StockData/Dockerfile .
 To run the image in your local Docker instance, use the `docker run` command.
 
 ```console
-docker run -ti -p 5000:80 stockdata
+docker run -ti -p 5000:80 stockdata:1.0.0
 ```
 
 The `-ti` flag connects your current terminal to the container's terminal, and runs in interactive mode. The `-p 5000:80` publishes (links) port 80 on the container to port 5000 on the localhost network interface.
 
 ## Push the image to a registry
 
-After you've verified that the image works, push it to a Docker registry to make it available on other systems. Internal networks will need to provision a Docker registry. This can be as simple as running [Docker's own `registry` image](https://docs.docker.com/registry/deploying/) (the Docker registry runs in a Docker container), but there are various more comprehensive solutions available. For external sharing and cloud use, there are various managed registries available, such as [Azure Container Registry](/azure/container-registry/) or [Docker Hub](https://docs.docker.com/docker-hub/repos/).
+After you've verified that the image works, push it to a Docker registry to make it available on other systems. Internal networks will need to provision a Docker registry. This activity can be as simple as running [Docker's own `registry` image](https://docs.docker.com/registry/deploying/) (the Docker registry runs in a Docker container), but there are various more comprehensive solutions available. For external sharing and cloud use, there are various managed registries available, such as [Azure Container Registry](/azure/container-registry/) or [Docker Hub](https://docs.docker.com/docker-hub/repos/).
 
 To push to Docker Hub, prefix the image name with your user or organization name.
 
 ```console
-docker tag stockdata myorg/stockdata
-docker push myorg/stockdata
+docker tag stockdata:1.0.0 <myorg>/stockdata:1.0.0
+docker push <myorg>/stockdata:1.0.0
 ```
 
 To push to a private registry, prefix the image name with the registry host name and the organization name.
 
 ```console
-docker tag stockdata internal-registry:5000/myorg/stockdata
-docker push internal-registry:5000/myorg/stockdata
+docker tag stockdata <internal-registry:5000>/<myorg>/stockdata:1.0.0
+docker push <internal-registry:5000>/<myorg>/stockdata:1.0.0
 ```
 
 After the image is in a registry, you can deploy it to individual Docker hosts, or to a container orchestration engine like Kubernetes.

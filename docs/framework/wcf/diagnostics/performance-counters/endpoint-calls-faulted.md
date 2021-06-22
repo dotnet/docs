@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Endpoint: Calls Faulted"
 title: "Endpoint: Calls Faulted"
 ms.date: "03/30/2017"
 ms.assetid: 271e6284-9c4b-465f-b619-069e1555a5e4

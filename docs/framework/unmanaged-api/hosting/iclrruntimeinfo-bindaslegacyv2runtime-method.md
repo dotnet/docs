@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRRuntimeInfo::BindAsLegacyV2Runtime Method"
 title: "ICLRRuntimeInfo::BindAsLegacyV2Runtime Method"
 ms.date: "03/30/2017"
 api_name: 

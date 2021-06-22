@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugExceptionDebugEvent::GetNativeIP Method"
 title: "ICorDebugExceptionDebugEvent::GetNativeIP Method"
 ms.date: "03/30/2017"
 ms.assetid: 12e6a262-d9ac-49b8-9b80-1e653a2a3819

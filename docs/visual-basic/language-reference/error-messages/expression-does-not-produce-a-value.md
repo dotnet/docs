@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30491: Expression does not produce a value"
 title: "Expression does not produce a value"
 ms.date: 07/20/2015
 f1_keywords:

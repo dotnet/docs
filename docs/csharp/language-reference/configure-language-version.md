@@ -36,8 +36,8 @@ The compiler determines a default based on these rules:
 
 When your project targets a preview framework that has a corresponding preview language version, the language version used is the preview language version. You use the latest features with that preview in any environment, without affecting projects that target a released .NET Core version.
 
-> [!TIP]
-> To know what language version you're currently using, put `#error version` (case sensitive) in your code. This makes the compiler produce a diagnostic, CS8304, with a message containing the compiler version being used and the current selected language version.
+> [!IMPORTANT]
+> Visual Studio 2017 added a `<LangVersion>latest</LangVersion>` entry to any project files it created. That meant *C# 7.0* when it was added. However, once you upgrade to Visual Studio 2019, that means the latest released version, regardless of the target framework. These projects now [override the default behavior](#override-a-default). You should edit the project file and remove that node. Then, your project will use the compiler version recommended for your target framework.
 
 ## Override a default
 
@@ -45,7 +45,10 @@ If you must specify your C# version explicitly, you can do so in several ways:
 
 - Manually edit your [project file](#edit-the-project-file).
 - Set the language version [for multiple projects in a subdirectory](#configure-multiple-projects).
-- Configure the [`-langversion` compiler option](compiler-options/langversion-compiler-option.md).
+- Configure the [**LangVersion** compiler option](compiler-options/language.md#langversion).
+
+> [!TIP]
+> To know what language version you're currently using, put `#error version` (case sensitive) in your code. This makes the compiler report a compiler error, CS8304, with a message containing the compiler version being used and the current selected language version. See [#error (C# Reference)](preprocessor-directives.md#error-and-warning-information) for more information.
 
 ### Edit the project file
 
@@ -71,7 +74,7 @@ To configure multiple projects, you can create a **Directory.Build.props** file 
 </Project>
 ```
 
-Builds in all subdirectories of the directory containing that file will use the preview C# version. For more information, see the article on [Customize your build](/visualstudio/msbuild/customize-your-build).
+Builds in all subdirectories of the directory containing that file will use the preview C# version. For more information, see [Customize your build](/visualstudio/msbuild/customize-your-build).
 
 ## C# language version reference
 
@@ -80,13 +83,13 @@ The following table shows all current C# language versions. Your compiler may no
 [!INCLUDE [langversion-table](includes/langversion-table.md)]
 
 > [!TIP]
-> Open the [Developer Command Prompt for Visual Studio](../../framework/tools/developer-command-prompt-for-vs.md), and run the following command to see the listing of language versions available on your machine.
+> Open [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell), and run the following command to see the listing of language versions available on your machine.
 >
 > ```CMD
 > csc -langversion:?
 > ```
 >
-> Questioning the [-langversion](compiler-options/langversion-compiler-option.md) compile option like this, will print something similar to the following:
+> Querying the [**LangVersion](compiler-options/language.md#langversion) compile option like this prints something similar to the following:
 >
 > ```CMD
 > Supported language versions:

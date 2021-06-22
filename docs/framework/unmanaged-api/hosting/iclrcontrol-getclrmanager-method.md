@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRControl::GetCLRManager Method"
 title: "ICLRControl::GetCLRManager Method"
 ms.date: "03/30/2017"
 api_name: 

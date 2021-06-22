@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SQL Server Data Operations in ADO.NET"
 title: "SQL Server Data Operations"
 ms.date: "03/30/2017"
 ms.assetid: b864ebc9-ed8e-4059-85fd-36d9198f5521

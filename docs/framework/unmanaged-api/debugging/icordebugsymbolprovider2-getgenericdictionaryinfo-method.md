@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugSymbolProvider2::GetGenericDictionaryInfo Method"
 title: "ICorDebugSymbolProvider2::GetGenericDictionaryInfo Method"
 ms.date: "03/30/2017"
 ms.assetid: ba28fe4e-5491-4670-bff7-7fde572d7593

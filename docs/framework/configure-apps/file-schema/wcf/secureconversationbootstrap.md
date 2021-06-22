@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <secureConversationBootstrap>"
 title: "<secureConversationBootstrap>"
 ms.date: "03/30/2017"
 ms.assetid: 66b46f95-fa2d-4b5b-b6ce-0572ab0cdd50
@@ -82,4 +83,4 @@ Specifies the default values used for initiating a secure conversation service.
 - [Custom Bindings](../../../wcf/extending/custom-bindings.md)
 - [\<customBinding>](custombinding.md)
 - [How to: Create a Custom Binding Using the SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
-- [Custom Binding Security](../../../wcf/samples/custom-binding-security.md)
+- [Custom Binding Security](/previous-versions/dotnet/framework/wcf/samples/custom-binding-security)

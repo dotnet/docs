@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <discoveryClient>"
 title: "<discoveryClient>"
 ms.date: "03/30/2017"
 ms.assetid: a78f74c3-1152-4149-ab29-3f12d316caeb

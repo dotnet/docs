@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Security.SecurityTokenProviderClosed"
 title: "System.ServiceModel.Security.SecurityTokenProviderClosed"
 ms.date: "03/30/2017"
 ms.assetid: 978c76b9-a9c8-435f-847d-0503e78dde50

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Custom Authorization"
 title: "Custom Authorization"
 ms.date: "03/30/2017"
 ms.assetid: 4f90311a-2593-462e-9174-2f7ac78217b9

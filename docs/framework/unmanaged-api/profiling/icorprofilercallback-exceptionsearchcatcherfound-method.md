@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::ExceptionSearchCatcherFound Method"
 title: "ICorProfilerCallback::ExceptionSearchCatcherFound Method"
 ms.date: "03/30/2017"
 api_name: 
@@ -29,9 +30,8 @@ RESULT ExceptionSearchCatcherFound(
   
 ## Parameters
 
-- `functionId`
-
-  \[in] The ID of the function that contains the exception handler.
+`functionId`
+[in] The ID of the function that contains the exception handler.
 
 ## Requirements  
 

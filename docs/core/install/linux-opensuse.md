@@ -3,7 +3,7 @@ title: Install .NET on openSUSE - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on openSUSE.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
+ms.date: 01/06/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime on openSUSE
@@ -36,10 +36,6 @@ The following versions of .NET are no longer supported. The downloads for these 
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## How to install other versions
-
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
-
 ## openSUSE 15 ✔️
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
@@ -54,6 +50,10 @@ sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 
 [!INCLUDE [linux-zyp-install-50](includes/linux-install-50-zyp.md)]
 
+## How to install other versions
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
 ## Troubleshoot the package manager
 
 This section provides information on common errors you may get while using the package manager to install .NET.
@@ -66,10 +66,6 @@ This section provides information on common errors you may get while using the p
 
 [!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
 
-## Snap
-
-[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
-
 ## Dependencies
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
@@ -80,7 +76,7 @@ When you install with a package manager, these libraries are installed for you. 
 
 If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need to install **compat-openssl10**.
 
-For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
+For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
 
 For .NET apps that use the *System.Drawing.Common* assembly, you'll also need the following dependency:
 
@@ -89,14 +85,7 @@ For .NET apps that use the *System.Drawing.Common* assembly, you'll also need th
   > [!WARNING]
   > You can install a recent version of *libgdiplus* by adding the Mono repository to your system. For more information, see <https://www.mono-project.com/download/stable/>.
 
-## Scripted install
-
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
-
-## Manual install
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
-
 ## Next steps
 
+- [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

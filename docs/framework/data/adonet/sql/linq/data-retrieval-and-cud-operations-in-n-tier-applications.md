@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)"
 title: "Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)"
 ms.date: "03/30/2017"
 dev_langs: 

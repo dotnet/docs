@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ComIntegration.ComIntegrationInvokingMethodContextTransaction"
 title: "System.ServiceModel.ComIntegration.ComIntegrationInvokingMethodContextTransaction"
 ms.date: "03/30/2017"
 ms.assetid: 1d2690ae-0afb-4cb1-ab62-a1a0ceba8521

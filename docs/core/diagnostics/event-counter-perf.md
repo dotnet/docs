@@ -3,13 +3,14 @@ title: Measure performance using EventCounters in .NET Core
 description: In this tutorial, you'll learn how to measure performance using EventCounters.
 ms.date: 08/07/2020
 ms.topic: tutorial
+recommendations: false
 ---
 
 # Tutorial: Measure performance using EventCounters in .NET Core
 
 **This article applies to: ✔️** .NET Core 3.0 SDK and later versions
 
-In this tutorial, you'll learn how an <xref:System.Diagnostics.Tracing.EventCounter> can be used to measure performance with a high frequency of events. You can use the [available counters](event-counters.md#available-counters) published by various official .NET Core packages, third-party providers, or create your own metrics for monitoring.
+In this tutorial, you'll learn how an <xref:System.Diagnostics.Tracing.EventCounter> can be used to measure performance with a high frequency of events. You can use the [available counters](available-counters.md) published by various official .NET Core packages, third-party providers, or create your own metrics for monitoring.
 
 In this tutorial, you will:
 
@@ -22,7 +23,7 @@ In this tutorial, you will:
 
 The tutorial uses:
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) or a later version.
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version.
 - [dotnet-counters](dotnet-counters.md) to monitor event counters.
 - A [sample debug target](/samples/dotnet/samples/diagnostic-scenarios) app to diagnose.
 

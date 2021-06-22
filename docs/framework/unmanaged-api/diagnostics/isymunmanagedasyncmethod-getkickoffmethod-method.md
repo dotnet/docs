@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedAsyncMethod::GetKickoffMethod Method"
 title: "ISymUnmanagedAsyncMethod::GetKickoffMethod Method"
 ms.date: "03/30/2017"
 ms.assetid: ba084444-9e68-4cde-9388-54b950670987

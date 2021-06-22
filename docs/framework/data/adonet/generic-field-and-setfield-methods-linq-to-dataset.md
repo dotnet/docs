@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Generic Field and SetField Methods (LINQ to DataSet)"
 title: "Generic Field and SetField Methods (LINQ to DataSet)"
 ms.date: "03/30/2017"
 dev_langs: 

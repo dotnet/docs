@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DacpModuleData Structure"
 title: "DacpModuleData Structure"
 ms.date: "02/01/2019"
 api.name:

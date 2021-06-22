@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Supporting Credential"
 title: "How to: Create a Supporting Credential"
 ms.date: "03/30/2017"
 ms.assetid: d0952919-8bb4-4978-926c-9cc108f89806

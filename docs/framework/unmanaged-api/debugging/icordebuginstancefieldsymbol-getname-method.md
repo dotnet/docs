@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugInstanceFieldSymbol::GetName Method"
 title: "ICorDebugInstanceFieldSymbol::GetName Method"
 ms.date: "03/30/2017"
 ms.assetid: d9c12b1f-9c1d-4943-8e9e-93b55faf085f

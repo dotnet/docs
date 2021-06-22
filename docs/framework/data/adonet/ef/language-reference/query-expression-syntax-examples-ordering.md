@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Query Expression Syntax Examples: Ordering"
 title: "Query Expression Syntax Examples: Ordering"
 ms.date: "03/30/2017"
 dev_langs: 

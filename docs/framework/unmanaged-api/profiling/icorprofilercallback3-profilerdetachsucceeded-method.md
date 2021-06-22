@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback3::ProfilerDetachSucceeded Method"
 title: "ICorProfilerCallback3::ProfilerDetachSucceeded Method"
 ms.date: "03/30/2017"
 api_name: 

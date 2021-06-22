@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <endpointExtensions>"
 title: "<endpointExtensions>"
 ms.date: "03/30/2017"
 ms.assetid: 33396e0a-1fae-4616-b822-923584eebfd1

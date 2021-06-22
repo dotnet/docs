@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRAssemblyIdentityManager::GetReferencedAssembliesFromFile Method"
 title: "ICLRAssemblyIdentityManager::GetReferencedAssembliesFromFile Method"
 ms.date: "03/30/2017"
 api_name: 

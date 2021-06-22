@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugManagedCallback::LoadAssembly Method"
 title: "ICorDebugManagedCallback::LoadAssembly Method"
 ms.date: "03/30/2017"
 api_name: 

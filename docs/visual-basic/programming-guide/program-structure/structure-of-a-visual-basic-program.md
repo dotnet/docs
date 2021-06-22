@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Structure of a Visual Basic Program"
 title: "Structure of a Visual Basic Program"
 ms.date: 07/20/2015
 helpviewer_keywords: 

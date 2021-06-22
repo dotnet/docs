@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Initialization Expressions"
 title: "Initialization Expressions"
 ms.date: "03/30/2017"
 dev_langs: 

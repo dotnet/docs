@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorBindToRuntimeByCfg Function"
 title: "CorBindToRuntimeByCfg Function"
 ms.date: "03/30/2017"
 api_name: 

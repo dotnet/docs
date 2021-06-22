@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Federated Client"
 title: "How to: Create a Federated Client"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -161,7 +162,7 @@ In Windows Communication Foundation (WCF), creating a client for a *federated se
   
 ## See also
 
-- [Federation Sample](../samples/federation-sample.md)
+- [Federation Sample](/previous-versions/dotnet/framework/wcf/samples/federation-sample)
 - [How to: Disable Secure Sessions on a WSFederationHttpBinding](how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)
 - [How to: Create a WSFederationHttpBinding](how-to-create-a-wsfederationhttpbinding.md)
 - [How to: Configure Credentials on a Federation Service](how-to-configure-credentials-on-a-federation-service.md)

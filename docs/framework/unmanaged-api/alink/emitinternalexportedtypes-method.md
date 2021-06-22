@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: EmitInternalExportedTypes Method"
 title: "EmitInternalExportedTypes Method"
 ms.date: "03/30/2017"
 api_name: 

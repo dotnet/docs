@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Shared (Visual Basic)"
 title: "Shared"
 ms.date: 07/20/2015
 f1_keywords:

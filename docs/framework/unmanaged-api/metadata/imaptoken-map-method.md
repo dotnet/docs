@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMapToken::Map Method"
 title: "IMapToken::Map Method"
 ms.date: "03/30/2017"
 api_name: 

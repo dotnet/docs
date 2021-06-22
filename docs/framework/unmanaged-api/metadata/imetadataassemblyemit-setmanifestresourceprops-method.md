@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataAssemblyEmit::SetManifestResourceProps Method"
 title: "IMetaDataAssemblyEmit::SetManifestResourceProps Method"
 ms.date: "03/30/2017"
 api_name: 

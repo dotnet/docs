@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Configuring Tracking for a Workflow"
 title: "Configuring Tracking for a Workflow"
 ms.date: "03/30/2017"
 ms.assetid: 905adcc9-30a0-4918-acd6-563f86db988a
@@ -62,7 +63,7 @@ For a workflow service hosted in <xref:System.ServiceModel.WorkflowServiceHost>,
 Alternatively, for a workflow service hosted in <xref:System.ServiceModel.WorkflowServiceHost>, you can add the <xref:System.Activities.Tracking.EtwTrackingParticipant> behavior extension through code. To add a custom tracking participant, create a new behavior extension and add it to the <xref:System.ServiceModel.ServiceHost> as shown in the following example code.
 
 > [!NOTE]
-> If you want to view sample code that shows how to create a custom behavior element that adds a custom tracking participant, refer to the [Tracking](./samples/tracking.md) samples.
+> If you want to view sample code that shows how to create a custom behavior element that adds a custom tracking participant, refer to the [Tracking](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/tracking) samples.
 
 ```csharp
 ServiceHost svcHost = new ServiceHost(typeof(WorkflowService), new
@@ -133,7 +134,7 @@ if (null != workflowServiceHost)
 
 ### Configuring tracking using WorkflowInvoker
 
-To configure tracking for a workflow executed using <xref:System.Activities.WorkflowInvoker>, add the tracking provider as an extension to a <xref:System.Activities.WorkflowInvoker> instance. The following code example is from the [Custom Tracking](./samples/custom-tracking.md) sample.
+To configure tracking for a workflow executed using <xref:System.Activities.WorkflowInvoker>, add the tracking provider as an extension to a <xref:System.Activities.WorkflowInvoker> instance. The following code example is from the [Custom Tracking](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/custom-tracking) sample.
 
 ```csharp
 WorkflowInvoker invoker = new WorkflowInvoker(BuildSampleWorkflow());

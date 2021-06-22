@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ProtocolStopFailure"
 title: "ProtocolStopFailure"
 ms.date: "03/30/2017"
 ms.assetid: 8b246f8f-eb0f-430b-a82b-3d55aad287a1

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Administration.WmiPut"
 title: "System.ServiceModel.Administration.WmiPut"
 ms.date: "03/30/2017"
 ms.assetid: 32c063c0-1bf2-4a40-9ea2-d9610d391bf9

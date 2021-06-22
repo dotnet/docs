@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <providerOption> Element"
 title: "<providerOption> Element"
 ms.date: "03/30/2017"
 f1_keywords: 

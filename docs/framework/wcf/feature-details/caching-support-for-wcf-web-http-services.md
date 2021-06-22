@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Caching Support for WCF Web HTTP Services"
 title: "Caching Support for WCF Web HTTP Services"
 ms.date: "03/30/2017"
 ms.assetid: 7f8078e0-00d9-415c-b8ba-c1b6d5c31799

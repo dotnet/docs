@@ -1,23 +1,23 @@
-### YamlMime:Hub 
+### YamlMime:Hub
 
-title: Azure for .NET developers 
-summary: .NET 💜 Azure
+title: Azure for .NET developers
+summary: Learn to use the Azure SDK for .NET. Browse API reference, sample code, tutorials, quickstarts, conceptual articles and more. Know that .NET 💜 Azure.
 brand: dotnet
 
-metadata: 
+metadata:
   title: Azure for .NET developers
   description: Samples, tutorials, and education for .NET on Azure
   ms.topic: hub-page
   ms.prod: azure-dotnet
-  ms.date: 08/12/2020
+  ms.date: 05/13/2021
 
 highlightedContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new 
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
   items:
-    - itemType: overview 
+    - itemType: overview
       title: Introduction to Azure and .NET
       url: intro.md
-    - itemType: quickstart 
+    - itemType: quickstart
       title: Create an ASP.NET Core web app in Azure
       url: /azure/app-service/quickstart-dotnetcore
     - itemType: quickstart
@@ -32,12 +32,12 @@ highlightedContent:
     - itemType: tutorial
       title: Authentication end-to-end in App Service
       url: /azure/app-service/app-service-web-tutorial-auth-aad
-    - itemType: learn 
+    - itemType: learn
       title: Secure custom APIs with Microsoft Identity
       url: /learn/modules/identity-secure-custom-api/
-    - itemType: learn
-      title: Azure fundamentals
-      url: /learn/paths/azure-fundamentals/
+    - itemType: get-started
+      title: Azure SDK for .NET
+      url: sdk/azure-sdk-for-dotnet.md
 
 conceptualContent:
   title: Featured content
@@ -106,7 +106,7 @@ conceptualContent:
           url: /azure/developer/mobile-apps/authentication
     - title: Work with storage & data
       links:
-        - itemType: concept    
+        - itemType: concept
           text: Choose the right data storage option
           url: /azure/architecture/guide/technology-choices/data-store-overview
         - itemType: quickstart
@@ -187,9 +187,9 @@ conceptualContent:
           url: /azure/event-grid/custom-event-quickstart
     - title: Diagnostics and monitoring
       links:
-        - itemType: overview
-          text: Azure Monitor
-          url: /azure/azure-monitor/overview
+        - itemType: quickstart
+          text: "Azure Monitor Application Insights quickstart"
+          url: /azure/azure-monitor/app/dotnet-quickstart
         - itemType: learn
           text: Capture and view page load times in your Azure web app
           url: /learn/modules/capture-page-load-times-application-insights/
@@ -197,7 +197,7 @@ conceptualContent:
           text: Troubleshoot ASP.NET Core on Azure App Service and IIS
           url: /aspnet/core/test/troubleshoot-azure-iis
         - itemType: how-to-guide
-          text: Application Insights with .NET Core ILogger
+          text: Capture Application Insights telemetry with .NET Core ILogger
           url: /azure/azure-monitor/app/ilogger
         - itemType: how-to-guide
           text: Application Insights for Worker Service applications
@@ -234,15 +234,15 @@ conceptualContent:
           text: SDK example app
           url: /samples/dotnet/samples/azure-identity-resource-management-storage/
         - itemType: download
-          text: Tools
-          url: tools.md
+          text: Tools checklist
+          url: dotnet-dev-env-checklist.md
         - itemType: reference
           text: API reference
           url: /dotnet/api/overview/azure/?view=azure-dotnet
 
 additionalContent:
-  sections: 
-    - title: .NET and Azure community resources 
+  sections:
+    - title: .NET and Azure community resources
       items:
         - title: .NET
           links:
@@ -272,4 +272,4 @@ additionalContent:
               url: https://github.com/dotnet/
 
   # footer (optional)
-  footer: "Contribute to .NET docs. Read our [contributor guide](/contribute/dotnet/dotnet-contribute)."
+  footer: "Are you interested in contributing to the .NET docs? For more information, see our [contributor guide](/contribute/dotnet/dotnet-contribute)."

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Processing XML Data In-Memory"
 title: "Processing XML Data In-Memory"
 ms.date: "03/30/2017"
 ms.assetid: 1bbb4d05-ead7-4bda-8ece-f86d35c57ad4

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GetHashFromBlob Function"
 title: "GetHashFromBlob Function"
 ms.date: "03/30/2017"
 api_name:

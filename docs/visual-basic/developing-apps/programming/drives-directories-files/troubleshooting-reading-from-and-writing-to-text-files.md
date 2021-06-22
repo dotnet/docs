@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Troubleshooting: reading from and writing to text files (Visual Basic)"
 title: "Troubleshooting: reading from and writing to text files"
 ms.date: 07/20/2015
 helpviewer_keywords: 

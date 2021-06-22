@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRRuntimeHost Interface"
 title: "ICLRRuntimeHost Interface"
 ms.date: "03/30/2017"
 api_name: 

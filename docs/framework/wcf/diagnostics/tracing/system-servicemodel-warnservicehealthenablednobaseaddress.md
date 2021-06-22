@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.WarnServiceHealthEnabledNoBaseAddress"
 title: "System.ServiceModel.WarnServiceHealthEnabledNoBaseAddress"
 ms.date: "10/30/2018"
 ---

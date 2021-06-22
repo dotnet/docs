@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IGCHost2 Interface"
 title: "IGCHost2 Interface"
 ms.date: "03/30/2017"
 api_name: 

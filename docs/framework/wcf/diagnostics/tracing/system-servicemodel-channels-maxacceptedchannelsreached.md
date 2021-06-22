@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.MaxAcceptedChannelsReached"
 title: "System.ServiceModel.Channels.MaxAcceptedChannelsReached"
 ms.date: "03/30/2017"
 ms.assetid: 13d15194-a04f-4a5a-9d85-23ad350fdc7e

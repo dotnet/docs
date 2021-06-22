@@ -2,14 +2,14 @@
 title: Architecting Cloud Native .NET Applications for Azure
 description: A guide for building cloud-native applications leveraging containers, microservices, and serverless features of Azure.
 author: ardalis
-ms.date: 11/10/2020
+ms.date: 01/19/2021
 ---
 
 # Architecting Cloud Native .NET Applications for Azure
 
 ![cover image](./media/cover.png)
 
-**EDITION v1.0**
+**EDITION v1.0.2**
 
 Refer [changelog](https://aka.ms/cn-ebook-changelog) for the book updates and community contributions.
 
@@ -23,7 +23,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright &copy; 2020 by Microsoft Corporation
+Copyright &copy; 2021 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
@@ -54,14 +54,18 @@ Participants and Reviewers:
 > **Jeremy Likness**, Senior Program Manager, .NET team, Microsoft
 >
 > **Cecil Phillip**, Senior Cloud Advocate, Microsoft
+>
+> **Sumit Ghosh**, Principal Consultant at Neudesic
 
 Editors:
 
 > **Maira Wenzel**, Program Manager, .NET team, Microsoft
 
+> **David Pine**, Senior Content Developer, .NET docs, Microsoft
+
 ## Version
 
-This guide has been written to cover **.NET Core 3.1** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET Core 3.1 release.
+This guide has been written to cover **.NET 5** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 5 release.
 
 ## Who should use this guide
 

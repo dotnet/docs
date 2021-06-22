@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ServiceOperationExceptionOnReply"
 title: "System.ServiceModel.ServiceOperationExceptionOnReply"
 ms.date: "03/30/2017"
 ms.assetid: b68bba58-495a-4b13-bc4f-b663136f3c44

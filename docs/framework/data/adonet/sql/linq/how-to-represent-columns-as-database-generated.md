@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Represent Columns as Database-Generated"
 title: "How to: Represent Columns as Database-Generated"
 ms.date: "03/30/2017"
 ms.assetid: 6524b8a6-e5d2-4a3b-8e08-beafc4a84fd2

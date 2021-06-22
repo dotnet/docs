@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Write characters to a string"
 title: "How to: Write characters to a string"
 ms.date: "01/21/2019"
 dev_langs: 

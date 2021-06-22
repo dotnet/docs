@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <servicePrincipalName>"
 title: "<servicePrincipalName>"
 ms.date: "03/30/2017"
 ms.assetid: 3f3b85d3-20f2-4cd8-8a6a-ee18befbd165

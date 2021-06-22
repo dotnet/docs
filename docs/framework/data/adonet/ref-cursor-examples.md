@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: REF CURSOR Examples"
 title: "REF CURSOR Examples"
 ms.date: "03/30/2017"
 ms.assetid: c257da03-c6c9-4cf8-b591-b7740a962c40

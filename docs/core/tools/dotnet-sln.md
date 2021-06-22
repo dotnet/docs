@@ -1,7 +1,7 @@
 ---
 title: dotnet sln command
 description: The dotnet-sln command provides a convenient option to add, remove, and list projects in a solution file.
-ms.date: 02/14/2020
+ms.date: 12/07/2020
 ---
 # dotnet sln
 
@@ -86,6 +86,16 @@ dotnet sln add [-h|--help]
 
   The path to the project or projects to add to the solution. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
 
+  If `PROJECT_PATH` includes folders that contain the project folder, that portion of the path is used to create [solution folders](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder). For example, the following commands create a solution with `myapp` in solution folder `folder1/folder2`:
+
+  ```dotnetcli
+  dotnet new sln
+  dotnet new console --output folder1/folder2/myapp
+  dotnet sln add folder1/folder2/myapp
+  ```
+
+  You can override this default behavior by using the `--in-root` or the `-s|--solution-folder <PATH>` option.
+
 #### Options
 
 - **`-h|--help`**
@@ -94,11 +104,11 @@ dotnet sln add [-h|--help]
 
 - **`--in-root`**
 
-  Places the projects in the root of the solution, rather than creating a solution folder. Available since .NET Core 3.0 SDK.
+  Places the projects in the root of the solution, rather than creating a [solution folder](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder). Can't be used with `-s|--solution-folder`. Available since .NET Core 3.0 SDK.
 
 - **`-s|--solution-folder <PATH>`**
 
-  The destination solution folder path to add the projects to. Available since .NET Core 3.0 SDK.
+  The destination [solution folder](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder) path to add the projects to. Can't be used with `--in-root`. Available since .NET Core 3.0 SDK.
 
 ### `remove`
 
@@ -188,3 +198,23 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
   ```dotnetcli
   dotnet sln todo.sln remove (ls -r **/*.csproj)
   ```
+
+- Create a solution, a console app, and two class libraries. Add the projects to the solution, and use the `--solution-folder` option of `dotnet sln` to organize the class libraries into a solution folder.
+
+  ```dotnetcli
+  dotnet new sln -n mysolution
+  dotnet new console -o myapp
+  dotnet new classlib -o mylib1
+  dotnet new classlib -o mylib2
+  dotnet sln mysolution.sln add myapp\myapp.csproj
+  dotnet sln mysolution.sln add mylib1\mylib1.csproj --solution-folder mylibs
+  dotnet sln mysolution.sln add mylib2\mylib2.csproj --solution-folder mylibs
+  ```
+
+  The following screenshot shows the result in Visual Studio 2019 **Solution Explorer**:
+
+  :::image type="content" source="media/dotnet-sln/dotnet-sln-solution-folder.png" alt-text="Solution Explorer showing class library projects grouped into a solution folder.":::
+
+## See also
+
+- [dotnet/sdk GitHub repo](https://github.com/dotnet/sdk) (.NET CLI source)

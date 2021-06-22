@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRSyncManager::DeleteRWLockOwnerIterator Method"
 title: "ICLRSyncManager::DeleteRWLockOwnerIterator Method"
 ms.date: "03/30/2017"
 api_name: 

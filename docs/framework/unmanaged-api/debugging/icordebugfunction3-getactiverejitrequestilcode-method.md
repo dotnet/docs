@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugFunction3::GetActiveReJitRequestILCode Method"
 title: "ICorDebugFunction3::GetActiveReJitRequestILCode Method"
 ms.date: "03/30/2017"
 dev_langs: 

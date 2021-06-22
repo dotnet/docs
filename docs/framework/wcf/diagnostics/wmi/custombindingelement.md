@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CustomBindingElement"
 title: "CustomBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: df959dc5-1aef-4338-a123-6ff3e7bc37af

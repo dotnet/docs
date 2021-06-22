@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4801 - DiscoveryClientInClientChannelFailedToClose"
 title: "4801 - DiscoveryClientInClientChannelFailedToClose"
 ms.date: "03/30/2017"
 ms.assetid: 9d85113b-73b9-4599-b776-30b40aaf1e7a

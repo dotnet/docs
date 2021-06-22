@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.TxCompletionStatusAbortedOnSessionClose"
 title: "System.ServiceModel.TxCompletionStatusAbortedOnSessionClose"
 ms.date: "03/30/2017"
 ms.assetid: 7e142e9d-e81b-4309-974a-02e9cc064ea0

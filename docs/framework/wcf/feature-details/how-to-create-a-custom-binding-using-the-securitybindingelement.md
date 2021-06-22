@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Custom Binding Using the SecurityBindingElement"
 title: "How to: Create a Custom Binding Using the SecurityBindingElement"
 ms.date: "03/30/2017"
 dev_langs: 

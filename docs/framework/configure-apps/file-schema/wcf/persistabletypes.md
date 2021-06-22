@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <persistableTypes>"
 title: "<persistableTypes>"
 ms.date: "03/30/2017"
 ms.assetid: 4d255097-45f0-4a04-945e-41d9bcfe8c54

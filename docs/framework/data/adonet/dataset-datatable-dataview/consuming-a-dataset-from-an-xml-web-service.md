@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Consume a DataSet from an XML web service"
 title: Consume a DataSet from an XML Web Service
 ms.date: 07/14/2020
 dev_langs: 

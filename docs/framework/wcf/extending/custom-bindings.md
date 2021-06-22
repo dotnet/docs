@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Custom Bindings"
 title: "Custom Bindings"
 ms.date: "03/30/2017"
 helpviewer_keywords:
@@ -75,4 +76,4 @@ In addition, you can define your own binding elements and insert them between an
 - [System-Provided Bindings](../system-provided-bindings.md)
 - [How to: Customize a System-Provided Binding](how-to-customize-a-system-provided-binding.md)
 - [\<customBinding>](../../configure-apps/file-schema/wcf/custombinding.md)
-- [Custom Binding](../samples/custom-binding.md)
+- [Custom Binding](/previous-versions/dotnet/framework/wcf/samples/custom-binding)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Performing an XPath Query on a DataSet"
 title: "Performing an XPath Query on a DataSet"
 ms.date: "03/30/2017"
 dev_langs: 

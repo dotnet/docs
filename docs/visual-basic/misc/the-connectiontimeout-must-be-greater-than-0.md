@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: The ConnectionTimeout must be greater than 0"
 title: "The ConnectionTimeout must be greater than 0"
 ms.date: 07/20/2015
 f1_keywords: 

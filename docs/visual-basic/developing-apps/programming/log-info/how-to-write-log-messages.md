@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Write Log Messages (Visual Basic)"
 title: "How to: Write Log Messages"
 ms.date: 07/20/2015
 helpviewer_keywords:

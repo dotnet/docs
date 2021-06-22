@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataTables::GetGuidHeapSize Method"
 title: "IMetaDataTables::GetGuidHeapSize Method"
 ms.date: "03/30/2017"
 api_name: 

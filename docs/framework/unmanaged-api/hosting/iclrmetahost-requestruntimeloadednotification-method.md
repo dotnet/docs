@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRMetaHost::RequestRuntimeLoadedNotification Method"
 title: "ICLRMetaHost::RequestRuntimeLoadedNotification Method"
 ms.date: "03/30/2017"
 api_name: 

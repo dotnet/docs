@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Define the Connection String"
 title: "How to: Define the Connection String"
 ms.date: "03/30/2017"
 ms.assetid: 6027335d-4e26-420d-9151-6523289b1989

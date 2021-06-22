@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostGCManager::SuspensionEnding Method"
 title: "IHostGCManager::SuspensionEnding Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -67,7 +67,7 @@ A proxy server handles client requests for resources. A proxy can return a reque
                 bypassonlocal="True"  
         />  
         <bypasslist>  
-            <add address="[a-z]+.blueyonderairlines.com$" />  
+            <add address="[a-z]+\.blueyonderairlines\.com$" />  
         </bypasslist>  
     </defaultProxy>  
 </system.net>  

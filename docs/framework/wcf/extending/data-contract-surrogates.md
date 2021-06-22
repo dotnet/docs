@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Contract Surrogates"
 title: "Data Contract Surrogates"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC31122: 'Custom' modifier is not valid on events declared without explicit delegate types"
 title: "'Custom' modifier is not valid on events declared without explicit delegate types"
 ms.date: 07/20/2015
 f1_keywords:

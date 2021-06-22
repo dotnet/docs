@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorEventAttr Enumeration"
 title: "CorEventAttr Enumeration"
 ms.date: "03/30/2017"
 api_name: 

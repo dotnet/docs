@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugAssembly::GetAppDomain Method"
 title: "ICorDebugAssembly::GetAppDomain Method"
 ms.date: "03/30/2017"
 api_name: 

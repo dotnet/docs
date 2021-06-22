@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Insufficient security permissions to set the system date"
 title: "Insufficient security permissions to set the system date"
 ms.date: 07/20/2015
 f1_keywords: 

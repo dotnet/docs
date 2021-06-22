@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugRemoteTarget::GetHostName Method"
 title: "ICorDebugRemoteTarget::GetHostName Method"
 ms.date: "03/30/2017"
 api_name: 

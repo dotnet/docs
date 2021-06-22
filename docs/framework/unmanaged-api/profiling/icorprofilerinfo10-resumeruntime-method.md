@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo10::ResumeRuntime Method"
 title: "ICorProfilerInfo10::ResumeRuntime"
 ms.date: "08/06/2019"
 dev_langs:
@@ -30,7 +31,7 @@ HRESULT ResumeRuntime();
 
 **Library:** CorGuids.lib
 
-**.NET Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
+**.NET Versions:** [!INCLUDE[net_core_30](../../../../includes/net-core-30-md.md)]
 
 ## See also
 

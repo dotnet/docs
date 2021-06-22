@@ -281,12 +281,12 @@ module test =
 
     let test1 = generateTestMatrix 2.3 1.1
     let submatrix = test1.[0..1, 0..1]
-    printfn "%A" submatrix
+    printfn $"{submatrix}"
 
     let firstRow = test1.[0,*]
     let secondRow = test1.[1,*]
     let firstCol = test1.[*,0]
-    printfn "%A" firstCol
+    printfn $"{firstCol}"
 ```
 
 ### Boolean functions on arrays

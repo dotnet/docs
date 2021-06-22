@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ImportTypes2 Method"
 title: "ImportTypes2 Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -15,13 +15,15 @@ landingContent:
       - linkListType: get-started
         links:
           - text: Online, interactive Hello world
-            url: tutorials/intro-to-csharp/hello-world.yml
+            url: ./tour-of-csharp/tutorials/hello-world.yml
           - text: "Math and numbers in C#"
-            url: tutorials/intro-to-csharp/numbers-in-csharp.yml
+            url: ./tour-of-csharp/tutorials/numbers-in-csharp.yml
           - text: Introductory tutorials
-            url: tutorials/intro-to-csharp/index.md
+            url: ./tour-of-csharp/tutorials/index.md
           - text: "Create C# apps with Visual Studio"
             url: /visualstudio/get-started/csharp/tutorial-console
+          - text: C# on Q&A
+            url: /answers/topics/dotnet-csharp.html
       - linkListType: video
         links:
           - text: "What is C#?"
@@ -46,7 +48,7 @@ landingContent:
       - linkListType: concept
         links:
           - text: "The C# and .NET type system"
-            url: programming-guide/types/index.md
+            url: fundamentals/types/index.md
           - text: Language Integrated Query (LINQ)
             url: linq/index.md
           - text: async and await
@@ -60,7 +62,7 @@ landingContent:
           - text: Format text using string interpolation
             url: tutorials/string-interpolation.md
           - text: Browse all tutorials
-            url: tutorials/index.md
+            url: ./tutorials/intro-to-csharp/introduction-to-classes.md
   
   - title: "New features in C# 9.0"
     linkLists:
@@ -68,43 +70,34 @@ landingContent:
         links:
           - text: "What's new in C# 9.0"
             url: whats-new/csharp-9.md
-
-  - title: "New features in C# 8.0"
-    linkLists:
-      - linkListType: whats-new
-        links:
           - text: "What's new in C# 8.0"
             url: whats-new/csharp-8.md
-      - linkListType: overview
-        links:
-          - text: Pattern matching
-            url: pattern-matching.md
-          - text: Nullable reference types
-            url: nullable-references.md
-      - linkListType: concept
-        links:
-          - text: Choose a nullable migration strategy
-            url: nullable-migration-strategies.md
+          - text: "What's new in C# 7"
+            url: whats-new/csharp-7.md
       - linkListType: tutorial
         links:
-          - text: Consume and generate async streams
-            url: tutorials/generate-consume-asynchronous-stream.md
-          - text: Develop with nullable reference types
-            url: tutorials/nullable-reference-types.md
-          - text: Upgrade existing code to use nullable reference types
-            url: tutorials/upgrade-to-nullable-references.md
-          - text: Use pattern matching for more expressive algorithms
-            url: tutorials/pattern-matching.md
-          - text: Safely version interfaces with default interface members
-            url: tutorials/default-interface-methods-versions.md
-          - text: Mix in functionality with default interface members
-            url: tutorials/mixins-with-default-interface-methods.md
-          - text: Work with subsets using ranges and indices
-            url: tutorials/ranges-indexes.md
+          - text: Explore record types
+            url: whats-new/tutorials/records.md
+          - text: Explore top level statements
+            url: whats-new/tutorials/top-level-statements.md
+          - text: Explore new patterns
+            url: whats-new/tutorials/patterns-objects.md
+          - text: Safely update interfaces
+            url: whats-new/tutorials/default-interface-methods-versions.md
+          - text: Create mixins with interfaces
+            url: whats-new/tutorials/mixins-with-default-interface-methods.md
+          - text: Explore indexes and ranges
+            url: whats-new/tutorials/ranges-indexes.md
+          - text: Nullable reference types
+            url: whats-new/tutorials/nullable-reference-types.md
+          - text: Explore async streams
+            url: whats-new/tutorials/generate-consume-asynchronous-stream.md
       - linkListType: reference
         links:
           - text: Breaking changes in the C# compiler
             url: whats-new/breaking-changes.md
+          - text: Version compatibility
+            url: whats-new/version-update-considerations.md
 
   - title: "C# language reference"
     linkLists:

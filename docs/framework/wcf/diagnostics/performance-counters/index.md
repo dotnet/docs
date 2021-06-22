@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WCF Performance Counters"
 title: "WCF Performance Counters"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

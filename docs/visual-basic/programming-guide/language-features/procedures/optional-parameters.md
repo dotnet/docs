@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Optional Parameters (Visual Basic)"
 title: "Optional Parameters"
 ms.date: 07/20/2015
 helpviewer_keywords: 

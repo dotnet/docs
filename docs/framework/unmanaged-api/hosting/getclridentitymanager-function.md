@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GetCLRIdentityManager Function"
 title: "GetCLRIdentityManager Function"
 ms.date: "03/30/2017"
 api_name: 

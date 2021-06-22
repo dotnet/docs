@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WSAT_TraceRecord"
 title: "WSAT_TraceRecord"
 ms.date: "03/30/2017"
 ms.assetid: 99bc7f66-1335-40d8-aa68-e754d569dc0d

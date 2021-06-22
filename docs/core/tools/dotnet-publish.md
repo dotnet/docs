@@ -1,7 +1,7 @@
 ---
 title: dotnet publish command
 description: The dotnet publish command publishes a .NET project or solution to a directory.
-ms.date: 11/11/2020
+ms.date: 02/03/2021
 ---
 # dotnet publish
 
@@ -43,7 +43,9 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 
 ### MSBuild
 
-The `dotnet publish` command calls MSBuild, which invokes the `Publish` target. Any parameters passed to `dotnet publish` are passed to MSBuild. The `-c` and `-o` parameters map to MSBuild's `Configuration` and `PublishDir` properties, respectively.
+The `dotnet publish` command calls MSBuild, which invokes the `Publish` target. If the [`IsPublishable` property](../project-sdk/msbuild-props.md#ispublishable) is set to `false` for a particular project, the `Publish` target can't be invoked, and the `dotnet publish` command only runs the implicit [dotnet restore](dotnet-restore.md) on the project.
+
+Any parameters passed to `dotnet publish` are passed to MSBuild. The `-c` and `-o` parameters map to MSBuild's `Configuration` and `PublishDir` properties, respectively.
 
 The `dotnet publish` command accepts MSBuild options, such as `-p` for setting properties and `-l` to define a logger. For example, you can set an MSBuild property by using the format: `-p:<NAME>=<VALUE>`.
 
@@ -66,8 +68,8 @@ For more information, see the following resources:
 - **`PROJECT|SOLUTION`**
 
   The project or solution to publish.
-  
-  * `PROJECT` is the path and filename of a [C#](csproj.md), F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If the directory is not specified, it defaults to the current directory.
+
+  * `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If the directory is not specified, it defaults to the current directory.
 
   * `SOLUTION` is the path and filename of a solution file (*.sln* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory. Available since .NET Core 3.0 SDK.
 
@@ -116,7 +118,7 @@ For more information, see the following resources:
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
   Specifies the path for the output directory.
-  
+
   If not specified, it defaults to *[project_file_folder]./bin/[configuration]/[framework]/publish/* for a framework-dependent executable and cross-platform binaries. It defaults to *[project_file_folder]/bin/[configuration]/[framework]/[runtime]/publish/* for a self-contained executable.
 
   In a web project, if the output folder is in the project folder, successive `dotnet publish` commands result in nested output folders. For example, if the project folder is *myproject*, and the publish output folder is *myproject/publish*, and you run `dotnet publish` twice, the second run puts content files such as *.config* and *.json* files in *myproject/publish/publish*. To avoid nesting publish folders, specify a publish folder that is not **directly** under the project folder, or exclude the publish folder from the project. To exclude a publish folder named *publishoutput*, add the following element to a `PropertyGroup` element in the *.csproj* file:
@@ -126,20 +128,22 @@ For more information, see the following resources:
   ```
 
   - .NET Core 3.x SDK and later
-  
-    If a relative path is specified when publishing a project, the output directory generated is relative to the current working directory, not to the project file location.
 
-    If a relative path is specified when publishing a solution, all output for all projects goes into the specified folder relative to the current working directory. To make publish output go to separate folders for each project, specify a relative path by using the msbuild `PublishDir` property instead of the `--output` option. For example, `dotnet publish -p:PublishDir=.\publish` sends publish output for each project to a `publish` folder under the folder that contains the project file.
+    If you specify a relative path when publishing a project, the generated output directory is relative to the current working directory, not to the project file location.
+
+    If you specify a relative path when publishing a solution, all output for all projects goes into the specified folder relative to the current working directory. To make publish output go to separate folders for each project, specify a relative path by using the msbuild `PublishDir` property instead of the `--output` option. For example, `dotnet publish -p:PublishDir=.\publish` sends publish output for each project to a `publish` folder under the folder that contains the project file.
 
   - .NET Core 2.x SDK
-  
-    If a relative path is specified when publishing a project, the output directory generated is relative to the project file location, not to the current working directory.
 
-    If a relative path is specified when publishing a solution, each project's output goes into a separate folder relative to the project file location. If an absolute path is specified when publishing a solution, all publish output for all projects goes into the specified folder.
+    If you specify a relative path when publishing a project, the generated output directory is relative to the project file location, not to the current working directory.
+
+    If you specify a relative path when publishing a solution, each project's output goes into a separate folder relative to the project file location. If you specify an absolute path when publishing a solution, all publish output for all projects goes into the specified folder.
 
 - **`-p:PublishReadyToRun=true`**
 
   Compiles application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation. For more information, see [ReadyToRun images](../deploying/ready-to-run.md). Available since .NET Core 3.0 SDK.
+
+  To see warnings about missing dependencies that could cause runtime failures, use `-p:PublishReadyToRunShowWarnings=true`.
 
   We recommend that you specify this option in a publish profile rather than on the command line. For more information, see [MSBuild](#msbuild).
 
@@ -147,7 +151,7 @@ For more information, see the following resources:
 
   Packages the app into a platform-specific single-file executable. The executable is self-extracting and contains all dependencies (including native) that are required to run the app. When the app is first run, the application is extracted to a directory based on the app name and build identifier. Startup is faster when the application is run again. The application doesn't need to extract itself a second time unless a new version is used. Available since .NET Core 3.0 SDK.
 
-  For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/master/accepted/2020/single-file/design.md).
+  For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/main/accepted/2020/single-file/design.md).
 
   We recommend that you specify this option in a publish profile rather than on the command line. For more information, see [MSBuild](#msbuild).
 

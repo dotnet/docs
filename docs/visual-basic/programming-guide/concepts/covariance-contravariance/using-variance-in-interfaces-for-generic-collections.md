@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Variance in Interfaces for Generic Collections (Visual Basic)"
 title: "Using Variance in Interfaces for Generic Collections"
 ms.date: 07/20/2015
 ms.assetid: c867fcea-7462-4995-b9c5-542feec74036

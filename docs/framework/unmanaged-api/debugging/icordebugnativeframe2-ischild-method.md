@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugNativeFrame2::IsChild Method"
 title: "ICorDebugNativeFrame2::IsChild Method"
 ms.date: "03/30/2017"
 api_name: 

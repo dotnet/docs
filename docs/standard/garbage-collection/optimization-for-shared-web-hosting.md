@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Optimization for Shared Web Hosting"
 title: "Optimization for Shared Web Hosting"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

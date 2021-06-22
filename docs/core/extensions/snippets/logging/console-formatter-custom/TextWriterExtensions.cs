@@ -21,27 +21,25 @@ namespace Console.ExampleFormatters.Custom
             //   4. reset foreground color
             //   5. reset background color
 
-            (bool writeBackgroundColor, string backgroundColor) =
-                (background.HasValue, GetBackgroundColorEscapeCode(background.Value));
-            (bool writeForegroundColor, string foregroundColor) =
-                (foreground.HasValue, GetForegroundColorEscapeCode(foreground.Value));
+            var backgroundColor = background.HasValue ? GetBackgroundColorEscapeCode(background.Value) : null;
+            var foregroundColor = foreground.HasValue ? GetForegroundColorEscapeCode(foreground.Value) : null;
 
-            if (writeBackgroundColor)
+            if (backgroundColor != null)
             {
                 textWriter.Write(backgroundColor);
             }
-            if (writeForegroundColor)
+            if (foregroundColor != null)
             {
                 textWriter.Write(foregroundColor);
             }
 
             textWriter.WriteLine(message);
 
-            if (writeForegroundColor)
+            if (foregroundColor != null)
             {
                 textWriter.Write(DefaultForegroundColor);
             }
-            if (writeBackgroundColor)
+            if (backgroundColor != null)
             {
                 textWriter.Write(DefaultBackgroundColor);
             }

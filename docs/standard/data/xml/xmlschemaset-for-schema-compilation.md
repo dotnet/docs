@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XmlSchemaSet for Schema Compilation"
 title: "XmlSchemaSet for Schema Compilation"
 ms.date: "03/30/2017"
 dev_langs: 

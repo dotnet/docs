@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Comments in Code (Visual Basic)"
 title: "Comments in Code"
 ms.date: 07/20/2015
 helpviewer_keywords: 

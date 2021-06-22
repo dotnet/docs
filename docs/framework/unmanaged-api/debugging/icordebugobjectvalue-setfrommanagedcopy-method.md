@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugObjectValue::SetFromManagedCopy Method"
 title: "ICorDebugObjectValue::SetFromManagedCopy Method"
 ms.date: "03/30/2017"
 api_name: 

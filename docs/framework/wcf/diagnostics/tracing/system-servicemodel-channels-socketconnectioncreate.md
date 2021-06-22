@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.SocketConnectionCreate"
 title: "System.ServiceModel.Channels.SocketConnectionCreate"
 ms.date: "03/30/2017"
 ms.assetid: 707015f1-a41f-4a42-b74e-a19677e2517b

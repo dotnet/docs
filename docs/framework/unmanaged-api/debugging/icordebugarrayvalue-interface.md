@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugArrayValue Interface"
 title: "ICorDebugArrayValue Interface"
 ms.date: "03/30/2017"
 api_name: 

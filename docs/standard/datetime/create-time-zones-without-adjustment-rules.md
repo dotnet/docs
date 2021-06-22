@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create time zones without adjustment rules"
 title: "How to: Create time zones without adjustment rules"
 ms.date: "04/10/2017"
 dev_langs: 
@@ -8,7 +9,7 @@ helpviewer_keywords:
   - "time zones [.NET], adjustment rule"
   - "time zones [.NET], creating"
   - "adjustment rule [.NET]"
-ms.assetid: a6af8647-7893-4f29-95a9-d94c65a6e8dd
+ms.topic: how-to
 ---
 # How to: Create time zones without adjustment rules
 

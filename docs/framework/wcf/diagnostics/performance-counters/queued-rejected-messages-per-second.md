@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Queued Rejected Messages Per Second"
 title: "Queued Rejected Messages Per Second"
 ms.date: "03/30/2017"
 ms.assetid: 77ea9aa3-b9e2-4a1d-a65e-5ca115ba0567

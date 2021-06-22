@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICeeGen::AddSectionReloc Method"
 title: "ICeeGen::AddSectionReloc Method"
 ms.date: "03/30/2017"
 api_name: 

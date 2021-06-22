@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRStrongName::StrongNameKeyDelete Method"
 title: "ICLRStrongName::StrongNameKeyDelete Method"
 ms.date: "03/30/2017"
 api_name: 

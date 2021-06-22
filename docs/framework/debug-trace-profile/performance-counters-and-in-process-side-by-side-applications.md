@@ -35,9 +35,9 @@ Using the Performance Monitor (Perfmon.exe), it is possible to differentiate the
 |Key name|HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\\.NETFramework\Performance|  
 |Value name|ProcessNameFormat|  
 |Value type|REG_DWORD|  
-|Value|1 (0x00000001)|  
+|Value|2 (0x00000002)|
   
- A value of 0 for `ProcessNameFormat` indicates that the default behavior is enabled; that is, Perfmon.exe displays performance counters on a per-application basis. When you set this value to 1, Perfmon.exe disambiguates multiple versions of an application and provides performance counters on a per-runtime basis. Any other value for the `ProcessNameFormat` registry key setting is unsupported and reserved for future use.  
+ A value of 0 for `ProcessNameFormat` indicates that the default behavior is enabled; that is, Perfmon.exe displays performance counters on a per-application basis. When you set this value to 2, Perfmon.exe disambiguates multiple versions of an application and provides performance counters on a per-runtime basis. Any other value for the `ProcessNameFormat` registry key setting is unsupported and reserved for future use.
   
  After you update the `ProcessNameFormat` registry key setting, you must restart Perfmon.exe or any other consumers of performance counters so that the new instance naming feature works correctly.  
   
@@ -46,11 +46,9 @@ Using the Performance Monitor (Perfmon.exe), it is possible to differentiate the
  [!code-csharp[Conceptual.PerfCounters.InProSxS#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.perfcounters.inprosxs/cs/regsetting1.cs#1)]
  [!code-vb[Conceptual.PerfCounters.InProSxS#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.perfcounters.inprosxs/vb/regsetting1.vb#1)]  
   
- When you make this registry change, Perfmon.exe displays the names of applications that target the .NET Framework 4 as *application*_`p`*processID*\_`r`*runtimeID*, where *application* is the name of the application, *processID* is the application's process identifier, and *runtimeID* is a common language runtime identifier. For example, if an application named myapp.exe loads two instances of the common language runtime, Perfmon.exe may identify one instance as myapp_p1416_r10 and the second as myapp_p3160_r10. The runtime identifier only disambiguates the runtimes within a process; it does not provide any other information about the runtime. (For example, the runtime ID has no relation to the version or the SKU of the runtime.)  
-  
- If the .NET Framework 4 is installed, the registry change also affects applications that were developed using earlier versions of the .NET Framework. These appear in Perfmon.exe as *application_*`p`*processID*, where *application* is the application name and *processID* is the process identifier. For example, if the performance counters of two applications named myapp.exe are monitored, one might appear as myapp_p23900 and the other as myapp_p24908.  
+ When you make this registry change, and if .NET Framework 4 or later is installed, Perfmon.exe displays the names of applications as *application*_`p`*processID*, where *application* is the name of the application, and *processID* is the application's process identifier. For example, if an application named myapp.exe loads two instances of the common language runtime, Perfmon.exe may identify one instance as myapp_1416 and the second as myapp_3160.
   
 > [!NOTE]
 > The process identifier eliminates the ambiguity of resolving two applications with the same name that use earlier versions of the runtime. A runtime identifier is not required for previous versions, because previous versions of the common language runtime do not support side-by-side scenarios.  
   
- If the .NET Framework 4 is not present or was uninstalled, setting the registry key has no effect. This means that two applications with the same name will continue to appear in Perfmon.exe as *application* and *application#1* (for example, as **myapp** and **myapp#1**).
+ If the .NET Framework 4 or a later version is not present or was uninstalled, setting the registry key has no effect. This means that two applications with the same name will continue to appear in Perfmon.exe as *application* and *application#1* (for example, as **myapp** and **myapp#1**).

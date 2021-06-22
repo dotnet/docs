@@ -1,7 +1,7 @@
 ---
 title: Using NoSQL databases as a persistence infrastructure
 description: Understand the use of NoSql databases in general, and Azure Cosmos DB in particular, as an option to implement persistence.
-ms.date: 01/30/2020
+ms.date: 01/13/2021
 ---
 # Use NoSQL databases as a persistence infrastructure
 
@@ -140,7 +140,7 @@ As shown in the following image, by using the MongoDB API, eShopOnContainers sup
 
 The production Azure Cosmos DB would be running in Azure's cloud as a PaaS and scalable service.
 
-Your custom .NET Core containers can run on a local development Docker host (that is using Docker for Windows in a Windows 10 machine) or be deployed into a production environment, like Kubernetes in Azure AKS or Azure Service Fabric. In this second environment, you would deploy only the .NET Core custom containers but not the MongoDB container since you'd be using Azure Cosmos DB in the cloud for handling the data in production.
+Your custom .NET containers can run on a local development Docker host (that is using Docker for Windows in a Windows 10 machine) or be deployed into a production environment, like Kubernetes in Azure AKS or Azure Service Fabric. In this second environment, you would deploy only the .NET custom containers but not the MongoDB container since you'd be using Azure Cosmos DB in the cloud for handling the data in production.
 
 A clear benefit of using the MongoDB API is that your solution could run in both database engines, MongoDB or Azure Cosmos DB, so migrations to different environments should be easy. However, sometimes it is worthwhile to use a native API (that is the native Cosmos DB API) in order to take full advantage of the capabilities of a specific database engine.
 
@@ -156,13 +156,13 @@ You could also use MongoDB clusters as the production database in Azure's cloud,
 
 Basically, this is just a disclaimer stating that you shouldn't always use MongoDB API against Azure Cosmos DB, as we did in eShopOnContainers because it was a convenient choice for Linux containers. The decision should be based on the specific needs and tests you need to do for your production application.
 
-### The code: Use MongoDB API in .NET Core applications
+### The code: Use MongoDB API in .NET applications
 
 MongoDB API for .NET is based on NuGet packages that you need to add to your projects, like in the Locations.API project shown in the following figure.
 
 ![Screenshot of the dependencies in the MongoDB NuGet packages.](./media/nosql-database-persistence-infrastructure/mongodb-api-nuget-packages.png)
 
-**Figure 7-22**. MongoDB API NuGet packages references in a .NET Core project
+**Figure 7-22**. MongoDB API NuGet packages references in a .NET project
 
 Let's investigate the code in the following sections.
 

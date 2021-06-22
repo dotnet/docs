@@ -81,4 +81,4 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
 
 - [C# programming guide](../index.md)
 - [XML documentation comments](./index.md)
-- [-doc (C# compiler options)](../../language-reference/compiler-options/doc-compiler-option.md)
+- [**DocumentationFile** (C# compiler options)](../../language-reference/compiler-options/output.md#documentationfile)

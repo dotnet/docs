@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ServiceHostTimeoutOnClose"
 title: "System.ServiceModel.ServiceHostTimeoutOnClose"
 ms.date: "03/30/2017"
 ms.assetid: 89f360d2-5bed-4677-ab55-26d9bd12695a

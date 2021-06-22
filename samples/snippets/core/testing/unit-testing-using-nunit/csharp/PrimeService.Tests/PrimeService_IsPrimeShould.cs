@@ -1,5 +1,4 @@
-﻿#region Sample_FirstTest
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using Prime.Services;
 
 namespace Prime.UnitTests.Services
@@ -22,7 +21,7 @@ namespace Prime.UnitTests.Services
 
             Assert.IsFalse(result, "1 should not be prime");
         }
-#endregion
+
         #region Sample_TestCode
         [TestCase(-1)]
         [TestCase(0)]

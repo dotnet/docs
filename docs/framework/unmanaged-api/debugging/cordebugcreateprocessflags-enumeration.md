@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorDebugCreateProcessFlags Enumeration"
 title: "CorDebugCreateProcessFlags Enumeration"
 ms.date: "03/30/2017"
 api_name: 

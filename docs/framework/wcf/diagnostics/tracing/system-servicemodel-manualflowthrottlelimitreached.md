@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ManualFlowThrottleLimitReached"
 title: "System.ServiceModel.ManualFlowThrottleLimitReached"
 ms.date: "03/30/2017"
 ms.assetid: 9aba851f-1830-493b-8e3e-60f454eb923e

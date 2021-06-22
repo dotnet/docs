@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3415 - WebSocketConnectionRequestSendStart"
 title: "3415 - WebSocketConnectionRequestSendStart"
 ms.date: "03/30/2017"
 ms.assetid: 2fdf39ec-3aad-45bf-ba80-759e6e10fe37

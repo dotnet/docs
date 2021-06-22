@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Diagnostics Symbol Store Enumerations"
 title: "Diagnostics Symbol Store Enumerations"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

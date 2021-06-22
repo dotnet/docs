@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.NamedPipeChannelMessageReceived"
 title: "System.ServiceModel.Channels.NamedPipeChannelMessageReceived"
 ms.date: "03/30/2017"
 ms.assetid: 060b0623-3c0f-4e08-a0d1-2369c35d2c5c

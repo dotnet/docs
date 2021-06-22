@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::DefineTypeDef Method"
 title: "IMetaDataEmit::DefineTypeDef Method"
 ms.date: "03/30/2017"
 api_name: 

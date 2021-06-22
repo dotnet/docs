@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorLinkerOptions Enumeration"
 title: "CorLinkerOptions Enumeration"
 ms.date: "03/30/2017"
 api_name: 

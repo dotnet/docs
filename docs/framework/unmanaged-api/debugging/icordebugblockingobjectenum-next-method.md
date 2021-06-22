@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugBlockingObjectEnum::Next Method"
 title: "ICorDebugBlockingObjectEnum::Next Method"
 ms.date: "03/30/2017"
 api_name: 

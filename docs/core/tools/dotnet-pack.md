@@ -33,14 +33,14 @@ If you want to generate a package that contains the debug symbols, you have two 
 - `--include-symbols` - it creates the symbols package.
 - `--include-source` - it creates the symbols package with a `src` folder inside containing the source files.
 
-NuGet dependencies of the packed project are added to the *.nuspec* file, so they're properly resolved when the package is installed. Project-to-project references aren't packaged inside the project. Currently, you must have a package per project if you have project-to-project dependencies.
+NuGet dependencies of the packed project are added to the *.nuspec* file, so they're properly resolved when the package is installed. If the packed project has references to other projects, the other projects are not included in the package. Currently, you must have a package per project if you have project-to-project dependencies.
 
 By default, `dotnet pack` builds the project first. If you wish to avoid this behavior, pass the `--no-build` option. This option is often useful in Continuous Integration (CI) build scenarios where you know the code was previously built.
 
 > [!NOTE]
 > In some cases, the implicit build cannot be performed. This can occur when `GeneratePackageOnBuild` is set, to avoid a cyclic dependency between build and pack targets. The build can also fail if there is a locked file or other issue.
 
-You can provide MSBuild properties to the `dotnet pack` command for the packing process. For more information, see [NuGet metadata properties](csproj.md#nuget-metadata-properties) and the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). The [Examples](#examples) section shows how to use the MSBuild -p switch for a couple of different scenarios.
+You can provide MSBuild properties to the `dotnet pack` command for the packing process. For more information, see [NuGet pack target properties](/nuget/reference/msbuild-targets#pack-target) and the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). The [Examples](#examples) section shows how to use the MSBuild `-p` switch for a couple of different scenarios.
 
 Web projects aren't packable by default. To override the default behavior, add the following property to your *.csproj* file:
 
@@ -58,7 +58,7 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 `PROJECT | SOLUTION`
 
-  The project or solution to pack. It's either a path to a [csproj file](csproj.md), vbproj file, fsproj file, a solution file, or to a directory. If not specified, the command searches the current directory for a project or solution file.
+  The project or solution to pack. It's either a path to a csproj, vbproj, or fsproj file, or to a solution file or directory. If not specified, the command searches the current directory for a project or solution file.
 
 ## Options
 

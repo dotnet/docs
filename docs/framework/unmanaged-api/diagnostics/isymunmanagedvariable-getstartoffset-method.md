@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedVariable::GetStartOffset Method"
 title: "ISymUnmanagedVariable::GetStartOffset Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1026 - ScheduleTransactionContextWorkItem"
 title: "1026 - ScheduleTransactionContextWorkItem"
 ms.date: "03/30/2017"
 ms.assetid: 0d5f86ba-ec21-4129-a726-5432e425384c

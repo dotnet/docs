@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <uri> Element (Uri Settings)"
 title: "<uri> Element (Uri Settings)"
 ms.date: "03/30/2017"
 ms.assetid: c22bab8b-477c-4ae4-8498-65ad409e0847

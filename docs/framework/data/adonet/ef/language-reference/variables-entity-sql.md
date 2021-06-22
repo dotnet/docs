@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Variables (Entity SQL)"
 title: "Variables (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 3eed222a-f8f6-46b6-9cd5-220cc0e4e5d8

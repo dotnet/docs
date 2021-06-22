@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedDocument::GetCheckSum Method"
 title: "ISymUnmanagedDocument::GetCheckSum Method"
 ms.date: "03/30/2017"
 api_name: 

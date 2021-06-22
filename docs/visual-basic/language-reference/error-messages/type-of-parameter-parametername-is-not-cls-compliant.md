@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC40028: Type of parameter '<parametername>' is not CLS-compliant"
 title: "Type of parameter '<parametername>' is not CLS-compliant"
 ms.date: 07/20/2015
 f1_keywords:
@@ -12,7 +13,7 @@ ms.assetid: dfa1f6f9-bb88-44ad-b85f-149144363d41
 
 A procedure is marked as `<CLSCompliant(True)>` but declares a parameter with a type that is marked as `<CLSCompliant(False)>`, is not marked, or does not qualify because it is a noncompliant type.
 
- For a procedure to be compliant with the [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS), it must use only CLS-compliant types. This applies to the types of the parameters, the return type, and the types of all its local variables.
+ For a procedure to be compliant with the [Language Independence and Language-Independent Components](../../../standard/language-independence.md) (CLS), it must use only CLS-compliant types. This applies to the types of the parameters, the return type, and the types of all its local variables.
 
  The following Visual Basic data types are not CLS-compliant:
 

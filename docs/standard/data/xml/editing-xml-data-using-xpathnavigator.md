@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Editing XML Data using XPathNavigator"
 title: "Editing XML Data using XPathNavigator"
 ms.date: "03/30/2017"
 ms.assetid: b1f91616-3115-4264-9821-c66589d11d11

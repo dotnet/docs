@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PeerFloodedMessageNotMatched"
 title: "System.ServiceModel.Channels.PeerFloodedMessageNotMatched"
 ms.date: "03/30/2017"
 ms.assetid: 43f4eab6-0176-4ac3-9a47-f35419dea539

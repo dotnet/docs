@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DacpGetModuleAddress::Request Method"
 title: "DacpGetModuleAddress::Request Method"
 ms.date: "01/16/2019"
 api.name:

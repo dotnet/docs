@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Security.SecurityNewServerSessionKeyIssued"
 title: "System.ServiceModel.Security.SecurityNewServerSessionKeyIssued"
 ms.date: "03/30/2017"
 ms.assetid: 2fccc492-61ea-45a8-8f1b-be65dedc5e46

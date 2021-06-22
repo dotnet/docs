@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugSymbolProvider::GetTypeProps Method"
 title: "ICorDebugSymbolProvider::GetTypeProps Method"
 ms.date: "03/30/2017"
 ms.assetid: 35ac4140-91ea-4c77-b1c4-1daf41986ca5

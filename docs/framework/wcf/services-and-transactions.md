@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Services and Transactions"
 title: "Services and Transactions"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
@@ -87,4 +88,4 @@ using (TransactionScope ts = new TransactionScope(TransactionScopeOption.Require
 
 - [Transactional Support in System.ServiceModel](./feature-details/transactional-support-in-system-servicemodel.md)
 - [Transaction Models](./feature-details/transaction-models.md)
-- [WS Transaction Flow](./samples/ws-transaction-flow.md)
+- [WS Transaction Flow](/previous-versions/dotnet/framework/wcf/samples/ws-transaction-flow)

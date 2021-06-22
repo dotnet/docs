@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC32126: Methods of 'System.Nullable(Of T)' cannot be used as operands of the 'AddressOf' operator"
 title: "Methods of 'System.Nullable(Of T)' cannot be used as operands of the 'AddressOf' operator"
 ms.date: 07/20/2015
 f1_keywords:

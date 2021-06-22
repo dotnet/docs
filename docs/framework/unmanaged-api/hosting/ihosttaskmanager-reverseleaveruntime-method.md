@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostTaskManager::ReverseLeaveRuntime Method"
 title: "IHostTaskManager::ReverseLeaveRuntime Method"
 ms.date: "03/30/2017"
 api_name: 

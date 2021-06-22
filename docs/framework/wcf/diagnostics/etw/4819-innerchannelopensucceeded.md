@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4819 - InnerChannelOpenSucceeded"
 title: "4819 - InnerChannelOpenSucceeded"
 ms.date: "03/30/2017"
 ms.assetid: 1ea7f6ac-a7d8-4ae6-89c7-4fdf99665b4b

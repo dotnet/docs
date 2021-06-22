@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Publishing and Retrieving Metadata Over a Custom Binding"
 title: "Publishing and Retrieving Metadata Over a Custom Binding"
 ms.date: "03/30/2017"
 ms.assetid: 904e11b4-d90e-45c6-9ee5-c3472c90008c
@@ -23,7 +24,7 @@ The <xref:System.ServiceModel.Description.ServiceMetadataBehavior?displayPropert
   
 ## Security  
 
- When publishing metadata over a custom binding, ensure that the binding provides the security support that your metadata requires. For example, to prevent information disclosure and ensure your client has the right to obtain the metadata, you can make your metadata and your application more secure by configuring your <xref:System.ServiceModel.Description.IMetadataExchange> endpoint to require authentication and encryption. The sample [Custom Secure Metadata Endpoint](../samples/custom-secure-metadata-endpoint.md) demonstrates this scenario.  
+ When publishing metadata over a custom binding, ensure that the binding provides the security support that your metadata requires. For example, to prevent information disclosure and ensure your client has the right to obtain the metadata, you can make your metadata and your application more secure by configuring your <xref:System.ServiceModel.Description.IMetadataExchange> endpoint to require authentication and encryption. The sample [Custom Secure Metadata Endpoint](/previous-versions/dotnet/framework/wcf/samples/custom-secure-metadata-endpoint) demonstrates this scenario.  
   
 ## See also
 

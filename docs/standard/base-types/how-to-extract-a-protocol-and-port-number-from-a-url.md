@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Extract a Protocol and Port Number from a URL"
 title: "How to: Extract a Protocol and Port Number from a URL"
 ms.date: "06/30/2020"
 dev_langs: 

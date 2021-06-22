@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugManagedCallback3::CustomNotification Method"
 title: "ICorDebugManagedCallback3::CustomNotification Method"
 ms.date: "03/30/2017"
 api_name: 

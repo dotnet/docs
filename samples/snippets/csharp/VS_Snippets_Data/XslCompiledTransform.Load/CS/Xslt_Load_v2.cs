@@ -60,7 +60,7 @@ xslt.Load(reader, settings, resolver);
 static void XslCompiledTransform_Load4() {
 
 	string UserName = "username";
-	string SecurelyStoredPassword = "psswd";
+	string SecurelyStoredPassword = "[PLACEHOLDER]";
 	string Domain= "domain";
 
 //<snippet4>
@@ -118,7 +118,7 @@ xslt.Load("sort.xsl", XsltSettings.Default, new XmlUrlResolver());
 static void XslCompiledTransform_Load8() {
 
 	string UserName = "username";
-	string SecurelyStoredPassword = "psswd";
+	string SecurelyStoredPassword = "[PLACEHOLDER]";
 	string Domain= "domain";
 
 //<snippet8>
@@ -130,7 +130,7 @@ resolver.Credentials = myCred;
 
 // Create the XslCompiledTransform object and load the style sheet.
 XslCompiledTransform xslt = new XslCompiledTransform();
-xslt.Load("http://serverName/data/script.xsl", XsltSettings.TrustedXslt, resolver);	
+xslt.Load("http://serverName/data/script.xsl", XsltSettings.TrustedXslt, resolver);
 //</snippet8>
 }
 
@@ -176,7 +176,7 @@ writer.Close();
 static void Cache() {
 
 	string UserName = "username";
-	string SecurelyStoredPassword = "psswd";
+	string SecurelyStoredPassword = "[PLACEHOLDER]";
 	string Domain= "domain";
 
 //<snippet11>
@@ -192,7 +192,7 @@ resolver.Credentials = myCache;
 
 // Compile the style sheet.
 XslCompiledTransform xslt = new XslCompiledTransform();
-xslt.Load("http://serverName/data/xsl/order.xsl",XsltSettings.Default, resolver);	
+xslt.Load("http://serverName/data/xsl/order.xsl",XsltSettings.Default, resolver);
 //</snippet11>
 }
 }

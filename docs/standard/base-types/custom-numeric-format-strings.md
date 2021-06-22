@@ -2,6 +2,7 @@
 title: "Custom numeric format strings"
 description: Learn how to create a custom numeric format string to format numeric data in .NET. A custom numeric format string has one or more custom numeric specifiers.
 ms.date: "06/25/2018"
+ms.topic: reference
 dev_langs:
   - "csharp"
   - "vb"
@@ -253,7 +254,7 @@ The following example uses both approaches to include reserved characters in a c
 
 ### Floating-Point infinities and NaN
 
-Regardless of the format string, if the value of a <xref:System.Single> or <xref:System.Double> floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A>, <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A>, or <xref:System.Globalization.NumberFormatInfo.NaNSymbol%2A> property specified by the currently applicable <xref:System.Globalization.NumberFormatInfo> object.
+Regardless of the format string, if the value of a <xref:System.Half>, <xref:System.Single>, or <xref:System.Double> floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A>, <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A>, or <xref:System.Globalization.NumberFormatInfo.NaNSymbol%2A> property specified by the currently applicable <xref:System.Globalization.NumberFormatInfo> object.
 
 ### Control Panel settings
 

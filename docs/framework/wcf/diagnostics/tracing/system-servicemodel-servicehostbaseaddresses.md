@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ServiceHostBaseAddresses"
 title: "System.ServiceModel.ServiceHostBaseAddresses"
 ms.date: "03/30/2017"
 ms.assetid: a36b8d38-8719-4d51-923a-420ec6c009e7

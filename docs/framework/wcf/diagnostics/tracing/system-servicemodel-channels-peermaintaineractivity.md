@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PeerMaintainerActivity"
 title: "System.ServiceModel.Channels.PeerMaintainerActivity"
 ms.date: "03/30/2017"
 ms.assetid: ef28d086-d7fb-4e81-82e9-45a54647783b

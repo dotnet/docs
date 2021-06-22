@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <add> of <declaredTypes> Element"
 title: "<add> of <declaredTypes> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

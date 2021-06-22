@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4600 - MessageLogEventSizeExceeded"
 title: "4600 - MessageLogEventSizeExceeded"
 ms.date: "03/30/2017"
 ms.assetid: 469c4fbb-847c-4d3e-b8d7-934e952eb535

@@ -2,6 +2,7 @@
 title: "Processing the XML file - C# programming guide"
 description: Learn about processing the XML file in C# programming. See code examples and view additional available resources.
 ms.date: 07/20/2015
+ms.topic: conceptual
 helpviewer_keywords:
   - "XML processing [C#]"
   - "XML [C#], processing"
@@ -82,5 +83,5 @@ The following examples show how the ID strings for a class and its members are g
 ## See also
 
 - [C# programming guide](../index.md)
-- [-doc (C# compiler options)](../../language-reference/compiler-options/doc-compiler-option.md)
+- [**DocumentationFile** (C# compiler options)](../../language-reference/compiler-options/output.md#documentationfile)
 - [XML documentation comments](./index.md)

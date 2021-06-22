@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: customize a time-based cache policy"
 title: "How to: customize a time-based cache policy"
 ms.date: "03/30/2017"
 dev_langs:

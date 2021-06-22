@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FunctionLeave3WithInfo Function"
 title: "FunctionLeave3WithInfo Function"
 ms.date: "03/30/2017"
 api_name: 
@@ -29,13 +30,11 @@ void __stdcall FunctionLeave3WithInfo(
   
 ## Parameters
 
-- `functionIDOrClientID`
+`functionIDOrClientID`
+[in] The identifier of the function from which control is returned.
 
-  \[in] The identifier of the function from which control is returned.
-
-- `eltInfo`
-
-  \[in] An opaque handle that represents information about a given stack frame. This handle is valid only during the callback to which it is passed.
+`eltInfo`
+[in] An opaque handle that represents information about a given stack frame. This handle is valid only during the callback to which it is passed.
 
 ## Remarks  
 

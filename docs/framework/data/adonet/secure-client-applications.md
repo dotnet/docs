@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Secure Client Applications"
 title: "Secure Client Applications"
 ms.date: "03/30/2017"
 ms.assetid: 6239592e-fa7d-4dea-9f00-d296d0048b01
@@ -62,7 +63,7 @@ Applications typically consist of many parts that must all be protected from vul
 |--------------|-----------------|  
 |[Configuration of Remote Applications](/previous-versions/dotnet/netframework-4.0/b8tysty8(v=vs.100))|Discusses how to configure remoting applications in order to avoid common problems.|  
 |[Security in Remoting](/previous-versions/dotnet/netframework-4.0/9hwst9th(v=vs.100))|Describes authentication and encryption as well as additional security topics relevant to remoting.|  
-|[Security and Remoting Considerations](../../misc/security-and-remoting-considerations.md)|Describes security issues with protected objects and application domain crossing.|  
+|[Security and Remoting Considerations](/previous-versions/dotnet/framework/code-access-security/security-and-remoting-considerations)|Describes security issues with protected objects and application domain crossing.|  
   
 ## See also
 

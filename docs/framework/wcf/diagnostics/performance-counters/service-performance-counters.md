@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Service Performance Counters"
 title: "Service Performance Counters"
 ms.date: "03/30/2017"
 ms.assetid: 4210f549-31f2-4ea7-99bd-69eaffb98ddf

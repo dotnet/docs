@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::RuntimeSuspendFinished Method"
 title: "ICorProfilerCallback::RuntimeSuspendFinished Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedReader2::GetMethodByVersionPreRemap Method"
 title: "ISymUnmanagedReader2::GetMethodByVersionPreRemap Method"
 ms.date: "03/30/2017"
 api_name: 

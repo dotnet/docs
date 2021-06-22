@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _CorValidateImage Function"
 title: "_CorValidateImage Function"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,7 +1,7 @@
 ---
-title: ".NET Cryptography Model"
+title: ".NET cryptography model"
 description: Review implementations of usual cryptographic algorithms in .NET. Learn the extensible cryptography model of object inheritance, stream design, & configuration.
-ms.date: 07/14/2020
+ms.date: 02/26/2021
 dev_langs:
   - "csharp"
   - "vb"
@@ -10,11 +10,11 @@ helpviewer_keywords:
   - "encryption [.NET], model"
 ms.assetid: 12fecad4-fbab-432a-bade-2f05976a2971
 ---
-# .NET Cryptography Model
+# .NET cryptography model
 
 .NET provides implementations of many standard cryptographic algorithms, and the .NET cryptography model is extensible.
 
-## Object Inheritance
+## Object inheritance
 
 The .NET cryptography system implements an extensible pattern of derived class inheritance. The hierarchy is as follows:
 
@@ -26,7 +26,7 @@ The .NET cryptography system implements an extensible pattern of derived class i
 
 This pattern of derived classes lets you add a new algorithm or a new implementation of an existing algorithm. For example, to create a new public-key algorithm, you would inherit from the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class. To create a new implementation of a specific algorithm, you would create a non-abstract derived class of that algorithm.
 
-## How Algorithms Are Implemented in .NET
+## How algorithms are implemented in .NET
 
 As an example of the different implementations available for an algorithm, consider symmetric algorithms. The base for all symmetric algorithms is <xref:System.Security.Cryptography.SymmetricAlgorithm>, which is inherited by <xref:System.Security.Cryptography.Aes>, <xref:System.Security.Cryptography.TripleDES>, and others that are no longer recommended.
 
@@ -42,14 +42,14 @@ In .NET Core and .NET 5 and later versions, all implementation classes (`*Crypto
 
 In most cases, you don't need to directly reference an algorithm implementation class, such as `AesCryptoServiceProvider`. The methods and properties you typically need are on the base algorithm class, such as `Aes`. Create an instance of a default implementation class by using a factory method on the base algorithm class, and refer to the base algorithm class. For example, see the highlighted line of code in the following example:
 
-:::code language="csharp" source="snippets/encrypting-data/csharp/aes-encrypt.cs" highlight="16":::
-:::code language="vb" source="snippets/encrypting-data/vb/aes-encrypt.vb" highlight="12":::
+:::code language="csharp" source="snippets/encrypting-data/csharp/aes-encrypt.cs" highlight="9":::
+:::code language="vb" source="snippets/encrypting-data/vb/aes-encrypt.vb" highlight="13":::
 
-## Cryptographic Configuration
+## Cryptographic configuration
 
 Cryptographic configuration lets you resolve a specific implementation of an algorithm to an algorithm name, allowing extensibility of the .NET cryptography classes. You can add your own hardware or software implementation of an algorithm and map the implementation to the algorithm name of your choice. If an algorithm is not specified in the configuration file, the default settings are used.
 
-## Choosing an Algorithm
+## Choose an algorithm
 
 You can select an algorithm for different reasons: for example, for data integrity, for data privacy, or to generate a key. Symmetric and hash algorithms are intended for protecting data for either integrity reasons (protect from change) or privacy reasons (protect from viewing). Hash algorithms are used primarily for data integrity.
 

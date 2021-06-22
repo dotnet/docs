@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reliable Sessions"
 title: "Reliable Sessions"
 ms.date: "03/30/2017"
 f1_keywords:

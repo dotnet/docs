@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: StackTrace_SimpleContext Structure"
 title: "StackTrace_SimpleContext Structure"
 ms.date: "03/30/2017"
 api_name: 

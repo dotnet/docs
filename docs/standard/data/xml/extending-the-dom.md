@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Extending the DOM"
 title: "Extending the DOM"
 ms.date: "03/30/2017"
 dev_langs: 

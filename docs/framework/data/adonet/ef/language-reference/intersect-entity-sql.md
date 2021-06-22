@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: INTERSECT (Entity SQL)"
 title: "INTERSECT (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 93c6fe33-f341-4b52-911e-adf503891951

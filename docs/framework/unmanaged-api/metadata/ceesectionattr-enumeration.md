@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CeeSectionAttr Enumeration"
 title: "CeeSectionAttr Enumeration"
 ms.date: "03/30/2017"
 api_name: 

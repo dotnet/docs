@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport2::GetGenericParamConstraintProps Method"
 title: "IMetaDataImport2::GetGenericParamConstraintProps Method"
 ms.date: "03/30/2017"
 api_name: 

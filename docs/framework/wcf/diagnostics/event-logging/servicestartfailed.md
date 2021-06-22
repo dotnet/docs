@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ServiceStartFailed"
 title: "ServiceStartFailed"
 ms.date: "03/30/2017"
 ms.assetid: 33a42eae-d57a-48b3-955c-a8e10b0bb66d

@@ -96,7 +96,7 @@ class Example
         //<Snippet9>
         Type returnType = GetDelegateReturnType(tDelegate);
         if (returnType != typeof(void))
-            throw new ApplicationException("Delegate has a return type.");
+            throw new ArgumentException("Delegate has a return type.", nameof(d));
 
         DynamicMethod handler =
             new DynamicMethod("",
@@ -149,11 +149,11 @@ class Example
     private Type[] GetDelegateParameterTypes(Type d)
     {
         if (d.BaseType != typeof(MulticastDelegate))
-            throw new ApplicationException("Not a delegate.");
+            throw new ArgumentException("Not a delegate.", nameof(d));
 
         MethodInfo invoke = d.GetMethod("Invoke");
         if (invoke == null)
-            throw new ApplicationException("Not a delegate.");
+            throw new ArgumentException("Not a delegate.", nameof(d));
 
         ParameterInfo[] parameters = invoke.GetParameters();
         Type[] typeParameters = new Type[parameters.Length];
@@ -167,11 +167,11 @@ class Example
     private Type GetDelegateReturnType(Type d)
     {
         if (d.BaseType != typeof(MulticastDelegate))
-            throw new ApplicationException("Not a delegate.");
+            throw new ArgumentException("Not a delegate.", nameof(d));
 
         MethodInfo invoke = d.GetMethod("Invoke");
         if (invoke == null)
-            throw new ApplicationException("Not a delegate.");
+            throw new ArgumentException("Not a delegate.", nameof(d));
 
         return invoke.ReturnType;
     }

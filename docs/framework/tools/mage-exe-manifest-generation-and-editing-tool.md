@@ -13,7 +13,7 @@ The Manifest Generation and Editing Tool (*Mage.exe*) is a command-line tool tha
 
 You can also use *MageUI.exe*, a graphical application, instead of *Mage.exe*. For more information, see [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](mageui-exe-manifest-generation-and-editing-tool-graphical-client.md).
 
-This tool is automatically installed with Visual Studio. To run the tool, use Developer Command Prompt for Visual Studio. For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
 
 Two versions of *Mage.exe* and *MageUI.exe* are included with Visual Studio. To see version information, run *MageUI.exe*, select **Help**, and select **About**. This documentation describes version 4.0.x.x of *Mage.exe* and *MageUI.exe*.
 
@@ -218,4 +218,4 @@ mage -Sign deploy.application -CertFile cert.pfx -KeyContainer keyfile.snk -Cryp
 - [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)
 - [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview)
 - [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](mageui-exe-manifest-generation-and-editing-tool-graphical-client.md)
-- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

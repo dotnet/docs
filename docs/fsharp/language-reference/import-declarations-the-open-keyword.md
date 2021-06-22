@@ -33,7 +33,7 @@ The F# compiler does not emit an error or warning when ambiguities occur when th
 ```fsharp
 open List
 open Seq
-printfn "%A" empty
+printfn %"{empty}"
 ```
 
 Therefore, be careful when you open modules or namespaces such as `List` or `Seq` that contain members that have identical names; instead, consider using the qualified names. You should avoid any situation in which the code is dependent upon the order of the import declarations.

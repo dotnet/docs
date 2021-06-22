@@ -28,7 +28,7 @@ This topic lists the basic types that are defined in the F# language. These type
 |`unit`|not applicable|Indicates the absence of an actual value. The type has only one formal value, which is denoted `()`. The unit value, `()`, is often used as a placeholder where a value is needed but no real value is available or makes sense.|`()`|
 
 > [!NOTE]
-> You can perform computations with integers too big for the 64-bit integer type by using the [bigint](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-bigint.html) type. `bigint` is not considered a basic type; it is an abbreviation for `System.Numerics.BigInteger`.
+> You can perform computations with integers too big for the 64-bit integer type by using the `bigint` type. `bigint` is not considered a basic type; it is an abbreviation for `System.Numerics.BigInteger`.
 
 ## See also
 

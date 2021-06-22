@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Audit Windows Communication Foundation Security Events"
 title: "How to: Audit Windows Communication Foundation Security Events"
 ms.date: "03/30/2017"
 dev_langs: 

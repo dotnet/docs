@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Write to an Application Event Log (Visual Basic)"
 title: "How to: Write to an Application Event Log"
 ms.date: 07/20/2015
 helpviewer_keywords:

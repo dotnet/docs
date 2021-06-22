@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GetFileVersion Function"
 title: "GetFileVersion Function"
 ms.date: "03/30/2017"
 api_name: 

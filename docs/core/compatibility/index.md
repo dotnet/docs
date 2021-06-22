@@ -1,21 +1,22 @@
 ---
 title: Types of breaking changes
-description: Learn how .NET Core attempts to maintain compatibility for developers across .NET versions, and what kind of change is considered a breaking change.
-ms.date: 06/10/2019
+description: Learn how .NET attempts to maintain compatibility for developers across .NET versions, and what kind of change is considered a breaking change.
+ms.date: 05/12/2021
+ms.topic: conceptual
 ---
 # Changes that affect compatibility
 
-Throughout its history, .NET has attempted to maintain a high level of compatibility from version to version and across flavors of .NET. This continues to be true for .NET Core. Although .NET Core can be considered as a new technology that is independent of the .NET Framework, two major factors limit the ability of .NET Core to diverge from .NET Framework:
+Throughout its history, .NET has attempted to maintain a high level of compatibility from version to version and across implementations of .NET. Although .NET 5 (and .NET Core) and later versions can be considered as a new technology compared to .NET Framework, two major factors limit the ability of this implementation of .NET to diverge from .NET Framework:
 
 - A large number of developers either originally developed or continue to develop .NET Framework applications. They expect consistent behavior across .NET implementations.
 
-- .NET Standard library projects allow developers to create libraries that target common APIs shared by .NET Core and .NET Framework. Developers expect that a library used in a .NET Core application should behave identically to the same library used in a .NET Framework application.
+- .NET Standard library projects allow developers to create libraries that target common APIs shared by .NET Framework and .NET 5 (and .NET Core) and later versions. Developers expect that a library used in a .NET 5 application should behave identically to the same library used in a .NET Framework application.
 
-Along with compatibility across .NET implementations, developers expect a high level of compatibility across .NET Core versions. In particular, code written for an earlier version of .NET Core should run seamlessly on a later version of .NET Core. In fact, many developers expect that the new APIs found in newly released versions of .NET Core should also be compatible with the pre-release versions in which those APIs were introduced.
+Along with compatibility across .NET implementations, developers expect a high level of compatibility across versions of a given implementation of .NET. In particular, code written for an earlier version of .NET Core should run seamlessly on .NET 5 or a later version. In fact, many developers expect that the new APIs found in newly released versions of .NET should also be compatible with the pre-release versions in which those APIs were introduced.
 
 This article outlines changes that affect compatibility and the way in which the .NET team evaluates each type of change. Understanding how the .NET team approaches possible breaking changes is particularly helpful for developers who open pull requests that modify the behavior of [existing .NET APIs](https://github.com/dotnet/runtime).
 
-The following sections describe the categories of changes made to .NET Core APIs and their impact on application compatibility. Changes are either allowed ✔️, disallowed ❌, or require judgment and an evaluation of how predictable, obvious, and consistent the previous behavior was ❓.
+The following sections describe the categories of changes made to .NET APIs and their impact on application compatibility. Changes are either allowed ✔️, disallowed ❌, or require judgment and an evaluation of how predictable, obvious, and consistent the previous behavior was ❓.
 
 > [!NOTE]
 >
@@ -120,6 +121,8 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Adding a member to an interface**
 
+  If you [provide an implementation](../../csharp/whats-new/tutorials/default-interface-methods-versions.md), adding a new member to an existing interface won't necessarily result in compile failures in downstream assemblies. However, not all languages support default interface members (DIMs). Also, in some scenarios, the runtime can't decide which default interface member to invoke. For these reasons, adding a member to an existing interface is considered a breaking change.
+
 - ❌ **DISALLOWED: Changing the value of a public constant or enumeration member**
 
 - ❌ **DISALLOWED: Changing the type of a property, field, parameter, or return value**
@@ -144,14 +147,15 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Removing the [virtual](../../csharp/language-reference/keywords/virtual.md) keyword from a member**
 
+- ❌ **DISALLOWED: Adding the [virtual](../../csharp/language-reference/keywords/virtual.md) keyword to a member**
+
   While this often is not a breaking change because the C# compiler tends to emit [callvirt](<xref:System.Reflection.Emit.OpCodes.Callvirt>) Intermediate Language (IL) instructions to call non-virtual methods (`callvirt` performs a null check, while a normal call doesn't), this behavior is not invariable for several reasons:
+  
   - C# is not the only language that .NET targets.
 
   - The C# compiler increasingly tries to optimize `callvirt` to a normal call whenever the target method is non-virtual and is probably not null (such as a method accessed through the [?. null propagation operator](../../csharp/language-reference/operators/member-access-operators.md#null-conditional-operators--and-)).
 
   Making a method virtual means that the consumer code would often end up calling it non-virtually.
-
-- ❌ **DISALLOWED: Adding the [virtual](../../csharp/language-reference/keywords/virtual.md) keyword to a member**
 
 - ❌ **DISALLOWED: Making a virtual member abstract**
 
@@ -310,3 +314,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 - ❌ **DISALLOWED: Changing the number of times given events are called**
 
 - ❌ **DISALLOWED: Adding the <xref:System.FlagsAttribute> to an enumeration type**
+
+## See also
+
+- [Library design guidelines - breaking changes](../../standard/library-guidance/breaking-changes.md)

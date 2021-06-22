@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.custom: "vs-dotnet"
+recommendations: false
 ---
 # Tutorial: Publish a .NET console application using Visual Studio
 

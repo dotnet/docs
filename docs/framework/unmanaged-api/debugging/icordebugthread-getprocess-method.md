@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugThread::GetProcess Method"
 title: "ICorDebugThread::GetProcess Method"
 ms.date: "03/30/2017"
 api_name: 

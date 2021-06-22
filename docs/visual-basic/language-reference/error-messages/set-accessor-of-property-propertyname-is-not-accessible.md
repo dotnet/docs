@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC31102: 'Set' accessor of property '<propertyname>' is not accessible"
 title: "'Set' accessor of property '<propertyname>' is not accessible"
 ms.date: 07/20/2015
 f1_keywords:

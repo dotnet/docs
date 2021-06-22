@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Application Domain Resource Monitoring"
 title: "Application Domain Resource Monitoring"
 ms.date: "03/30/2017"
 helpviewer_keywords:

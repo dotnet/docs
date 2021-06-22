@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Custom Reliable Session Binding with HTTPS"
 title: "How to: Create a Custom Reliable Session Binding with HTTPS"
 ms.date: "03/30/2017"
 ms.assetid: fa772232-da1f-4c66-8c94-e36c0584b549
@@ -10,7 +11,7 @@ This topic demonstrates the use of Secure Sockets Layer (SSL) transport security
 
 The key part of this procedure is that the **\<endpoint>** configuration element contain a `bindingConfiguration` attribute that references a custom binding configuration named `reliableSessionOverHttps`. The [**\<binding>**](../../configure-apps/file-schema/wcf/bindings.md) configuration element references this name to specify that a reliable session and the HTTPS transport are used by including **\<reliableSession>** and **\<httpsTransport>** elements.
 
-For the source copy of this example, see [Custom Binding Reliable Session over HTTPS](../samples/custom-binding-reliable-session-over-https.md).
+For the source copy of this example, see [Custom Binding Reliable Session over HTTPS](/previous-versions/dotnet/framework/wcf/samples/custom-binding-reliable-session-over-https).
 
 ### Configure the service with a CustomBinding to use a reliable session with HTTPS
 

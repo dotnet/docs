@@ -11,7 +11,7 @@ ms.assetid: a8fa49a1-6e78-4a09-87e5-84a0b9f5ffbe
 
 It is often useful to define interfaces either for generic collection classes, or for the generic classes that represent items in the collection. The preference for generic classes is to use generic interfaces, such as <xref:System.IComparable%601> rather than <xref:System.IComparable>, in order to avoid boxing and unboxing operations on value types. The .NET class library defines several generic interfaces for use with the collection classes in the <xref:System.Collections.Generic> namespace.  
   
- When an interface is specified as a constraint on a type parameter, only types that implement the interface can be used. The following code example shows a `SortedList<T>` class that derives from the `GenericList<T>` class. For more information, see [Introduction to Generics](./index.md). `SortedList<T>` adds the constraint `where T : IComparable<T>`. This enables the `BubbleSort` method in `SortedList<T>` to use the generic <xref:System.IComparable%601.CompareTo%2A> method on list elements. In this example, list elements are a simple class, `Person`, that implements `IComparable<Person>`.  
+ When an interface is specified as a constraint on a type parameter, only types that implement the interface can be used. The following code example shows a `SortedList<T>` class that derives from the `GenericList<T>` class. For more information, see [Introduction to Generics](../../fundamentals/types/generics.md). `SortedList<T>` adds the constraint `where T : IComparable<T>`. This enables the `BubbleSort` method in `SortedList<T>` to use the generic <xref:System.IComparable%601.CompareTo%2A> method on list elements. In this example, list elements are a simple class, `Person`, that implements `IComparable<Person>`.  
   
  [!code-csharp[csProgGuideGenerics#29](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics2.cs#29)]  
   
@@ -27,7 +27,7 @@ It is often useful to define interfaces either for generic collection classes, o
   
  [!code-csharp[csProgGuideGenerics#32](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#32)]  
   
- Generic interfaces can inherit from non-generic interfaces if the generic interface is contravariant, which means it only uses its type parameter as a return value. In the .NET class library, <xref:System.Collections.Generic.IEnumerable%601> inherits from <xref:System.Collections.IEnumerable> because <xref:System.Collections.Generic.IEnumerable%601> only uses `T` in the return value of <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> and in the <xref:System.Collections.Generic.IEnumerator%601.Current%2A> property getter.  
+ Generic interfaces can inherit from non-generic interfaces if the generic interface is covariant, which means it only uses its type parameter as a return value. In the .NET class library, <xref:System.Collections.Generic.IEnumerable%601> inherits from <xref:System.Collections.IEnumerable> because <xref:System.Collections.Generic.IEnumerable%601> only uses `T` in the return value of <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> and in the <xref:System.Collections.Generic.IEnumerator%601.Current%2A> property getter.  
   
  Concrete classes can implement closed constructed interfaces, as follows:  
   
@@ -42,6 +42,6 @@ It is often useful to define interfaces either for generic collection classes, o
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Introduction to Generics](./index.md)
+- [Introduction to Generics](../../fundamentals/types/generics.md)
 - [interface](../../language-reference/keywords/interface.md)
 - [Generics](../../../standard/generics/index.md)

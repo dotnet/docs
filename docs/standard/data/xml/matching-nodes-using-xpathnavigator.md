@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Matching Nodes using XPathNavigator"
 title: "Matching Nodes using XPathNavigator"
 ms.date: "03/30/2017"
 dev_langs: 

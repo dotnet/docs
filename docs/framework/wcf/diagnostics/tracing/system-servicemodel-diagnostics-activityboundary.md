@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Diagnostics.ActivityBoundary"
 title: "System.ServiceModel.Diagnostics.ActivityBoundary"
 ms.date: "03/30/2017"
 ms.assetid: a24e3076-0c14-4271-9990-090c0dfed07f

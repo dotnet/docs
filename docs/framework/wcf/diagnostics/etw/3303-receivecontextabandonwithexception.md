@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3303 - ReceiveContextAbandonWithException"
 title: "3303 - ReceiveContextAbandonWithException"
 ms.date: "03/30/2017"
 ms.assetid: eae255f8-13fd-4d8e-9f9e-56aea0d588c3

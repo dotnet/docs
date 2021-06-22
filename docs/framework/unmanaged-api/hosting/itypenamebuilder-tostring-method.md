@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ITypeNameBuilder::ToString Method"
 title: "ITypeNameBuilder::ToString Method"
 ms.date: "03/30/2017"
 api_name: 

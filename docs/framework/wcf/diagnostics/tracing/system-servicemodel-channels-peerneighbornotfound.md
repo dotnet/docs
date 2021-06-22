@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PeerNeighborNotFound"
 title: "System.ServiceModel.Channels.PeerNeighborNotFound"
 ms.date: "03/30/2017"
 ms.assetid: 0aeb51a1-b82f-4008-920c-8604c5cbf600

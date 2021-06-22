@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostSemaphore::ReleaseSemaphore Method"
 title: "IHostSemaphore::ReleaseSemaphore Method"
 ms.date: "03/30/2017"
 api_name: 

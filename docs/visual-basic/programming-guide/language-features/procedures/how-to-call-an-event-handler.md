@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to call an event handler in Visual Basic"
 title: How to call an event handler
 ms.date: 07/20/2015
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiled queries  (LINQ to Entities)"
 title: "Compiled Queries  (LINQ to Entities)"
 ms.date: "03/30/2017"
 dev_langs: 

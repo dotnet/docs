@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAssemblyName::Finalize Method"
 title: "IAssemblyName::Finalize Method"
 ms.date: "03/30/2017"
 api_name: 

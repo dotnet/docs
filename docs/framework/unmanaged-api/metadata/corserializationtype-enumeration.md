@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorSerializationType Enumeration"
 title: "CorSerializationType Enumeration"
 ms.date: "03/30/2017"
 api_name: 

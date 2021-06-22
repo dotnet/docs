@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugCode::IsIL Method"
 title: "ICorDebugCode::IsIL Method"
 ms.date: "03/30/2017"
 api_name:

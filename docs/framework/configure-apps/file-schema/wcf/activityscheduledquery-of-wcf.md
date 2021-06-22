@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <activityScheduledQuery> of WCF"
 title: "<activityScheduledQuery> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: 25f6eee1-3d98-4c39-b517-c0813f03f106

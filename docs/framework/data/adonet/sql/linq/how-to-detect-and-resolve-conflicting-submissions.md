@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Detect and Resolve Conflicting Submissions"
 title: "How to: Detect and Resolve Conflicting Submissions"
 ms.date: "03/30/2017"
 dev_langs: 

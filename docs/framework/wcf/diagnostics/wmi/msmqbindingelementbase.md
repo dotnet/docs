@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MsmqBindingElementBase"
 title: "MsmqBindingElementBase"
 ms.date: "03/30/2017"
 ms.assetid: 210d41ab-a2a4-4d7a-afd2-0916c08a4015

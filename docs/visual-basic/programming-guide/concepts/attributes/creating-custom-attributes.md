@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating Custom Attributes (Visual Basic)"
 title: "Creating Custom Attributes"
 ms.date: 07/20/2015
 ms.assetid: 5c9ef584-6c7c-496b-92a9-6e42f8d9ca28

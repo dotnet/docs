@@ -4,14 +4,9 @@ using System.Diagnostics.Tracing;
 
 public class SimpleEventListener : EventListener
 {
-    private readonly int _intervalSec;
-
-    public int EventCount { get; private set; }
-
-    public SimpleEventListener(int intervalSec = 1) =>
-        _intervalSec = intervalSec <= 0
-            ? throw new ArgumentException("Interval must be at least 1 second.", nameof(intervalSec))
-            : intervalSec;
+    public SimpleEventListener()
+    {
+    }
 
     protected override void OnEventSourceCreated(EventSource source)
     {
@@ -22,7 +17,7 @@ public class SimpleEventListener : EventListener
 
         EnableEvents(source, EventLevel.Verbose, EventKeywords.All, new Dictionary<string, string>()
         {
-            ["EventCounterIntervalSec"] = _intervalSec.ToString()
+            ["EventCounterIntervalSec"] = "1"
         });
     }
 

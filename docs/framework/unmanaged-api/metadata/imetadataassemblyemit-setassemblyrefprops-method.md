@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataAssemblyEmit::SetAssemblyRefProps Method"
 title: "IMetaDataAssemblyEmit::SetAssemblyRefProps Method"
 ms.date: "03/30/2017"
 api_name: 

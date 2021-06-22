@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::AppDomainCreationStarted Method"
 title: "ICorProfilerCallback::AppDomainCreationStarted Method"
 ms.date: "03/30/2017"
 api_name: 
@@ -29,9 +30,8 @@ HRESULT AppDomainCreationStarted(
   
 ## Parameters
 
-- `appDomainId`
-
-  \[in] Identifies the domain which is being created.
+`appDomainId`
+[in] Identifies the domain which is being created.
   
 ## Remarks  
 

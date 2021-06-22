@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cache Management for Network Applications"
 title: "Cache Management for Network Applications"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

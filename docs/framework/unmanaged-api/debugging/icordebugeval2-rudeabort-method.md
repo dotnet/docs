@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugEval2::RudeAbort Method"
 title: "ICorDebugEval2::RudeAbort Method"
 ms.date: "03/30/2017"
 api_name: 

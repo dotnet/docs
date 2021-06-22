@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft.Transactions.TransactionBridge.ReplayMessageRetry"
 title: "Microsoft.Transactions.TransactionBridge.ReplayMessageRetry"
 ms.date: "03/30/2017"
 ms.assetid: e5b820ae-504d-405a-926a-9effa41d2369

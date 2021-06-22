@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugVariableSymbol::GetSlotIndex Method"
 title: "ICorDebugVariableSymbol::GetSlotIndex Method"
 ms.date: "03/30/2017"
 ms.assetid: 09c19f5f-afc4-4e0c-bffe-cd7147bc7a43

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRDataTarget::GetCurrentThreadID Method"
 title: "ICLRDataTarget::GetCurrentThreadID Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostTaskManager::CallNeedsHostHook Method"
 title: "IHostTaskManager::CallNeedsHostHook Method"
 ms.date: "03/30/2017"
 api_name: 

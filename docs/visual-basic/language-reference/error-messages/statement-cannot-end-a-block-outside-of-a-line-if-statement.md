@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC32005: Statement cannot end a block outside of a line 'If' statement"
 title: "Statement cannot end a block outside of a line 'If' statement"
 ms.date: 07/20/2015
 f1_keywords:

@@ -2,7 +2,7 @@
 title: WS-* protocols - gRPC for WCF developers
 description: Review of the WS-* protocols supported by WCF and alternatives available with gRPC
 author: markrendle
-ms.date: 09/02/2019
+ms.date: 12/15/2020
 ---
 
 # WS-\* protocols
@@ -15,7 +15,7 @@ SOAP services expose Web Services Description Language (WSDL) schema documents w
 
 gRPC works best when servers and clients are generated from the same `.proto` files, but a Server Reflection optional extension does provide a way to expose dynamic information from a running server. For more information, see the [Grpc.Reflection](https://nuget.org/packages/Grpc.Reflection) NuGet package and the [gRPC C# Server Reflection](https://github.com/grpc/grpc/blob/master/doc/csharp/server_reflection.md) article.
 
-The WS-Discovery protocol is used to locate services on a local network. gRPC services are generally located through DNS or a service registry such as Consul or ZooKeeper.
+The WS-Discovery protocol is used to locate services on a local network. gRPC services are located through DNS or a service registry such as Consul or ZooKeeper.
 
 ## Security: WS-Security, WS-Federation, XML Encryption, and so on
 

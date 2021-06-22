@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cannot call friend function on object which is not an instance of defining class"
 title: "Cannot call friend function on object which is not an instance of defining class"
 ms.date: 07/20/2015
 f1_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Custom Encoders"
 title: "Custom Encoders"
 ms.date: "03/30/2017"
 ms.assetid: fa0e1d7f-af36-4bf4-aac9-cd4eab95bc4f
@@ -91,7 +92,7 @@ This topic discusses how to create custom encoders.
   
  Then connect your custom <xref:System.ServiceModel.Channels.MessageEncoderFactory> to the binding element stack used to configure the service or client by overriding the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory%2A> method to return an instance of this factory.  
   
- There are two samples provided with WCF that illustrate this process with sample code: [Custom Message Encoder: Custom Text Encoder](../samples/custom-message-encoder-custom-text-encoder.md) and [Custom Message Encoder: Compression Encoder](../samples/custom-message-encoder-compression-encoder.md).  
+ There are two samples provided with WCF that illustrate this process with sample code: [Custom Message Encoder: Custom Text Encoder](/previous-versions/dotnet/framework/wcf/samples/custom-message-encoder-custom-text-encoder) and [Custom Message Encoder: Compression Encoder](/previous-versions/dotnet/framework/wcf/samples/custom-message-encoder-compression-encoder).  
   
 ## See also
 

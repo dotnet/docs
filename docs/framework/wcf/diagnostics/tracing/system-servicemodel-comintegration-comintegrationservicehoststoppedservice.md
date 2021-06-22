@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ComIntegration.ComIntegrationServiceHostStoppedService"
 title: "System.ServiceModel.ComIntegration.ComIntegrationServiceHostStoppedService"
 ms.date: "03/30/2017"
 ms.assetid: c388f68d-2c6d-4d68-bc2b-0d63b99fccf1

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.FailedPipeConnect"
 title: "System.ServiceModel.Channels.FailedPipeConnect"
 ms.date: "03/30/2017"
 ms.assetid: 9a827e0f-fb91-46bb-bd54-926d4b74d8a6

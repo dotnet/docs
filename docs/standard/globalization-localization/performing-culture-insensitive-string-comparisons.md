@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Performing Culture-Insensitive String Comparisons"
 title: "Performing Culture-Insensitive String Comparisons"
 ms.date: "08/22/2018"
 dev_langs: 
@@ -11,7 +12,7 @@ helpviewer_keywords:
   - "strings [.NET], comparing"
   - "culture-insensitive string operations, comparisons"
   - "culture parameter"
-ms.assetid: abae50ef-32f7-4a50-a540-fd256fd1aed0
+ms.topic: how-to
 ---
 # Performing Culture-Insensitive String Comparisons
 

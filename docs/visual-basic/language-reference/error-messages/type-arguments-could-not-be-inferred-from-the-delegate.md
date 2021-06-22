@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC36564: Type arguments could not be inferred from the delegate"
 title: "Type arguments could not be inferred from the delegate"
 ms.date: 07/20/2015
 f1_keywords:

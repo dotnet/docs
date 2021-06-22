@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Argument '<argumentname>' must be in the range of -32768 to 65535"
 title: "Argument '<argumentname>' must be in the range of -32768 to 65535"
 ms.date: 07/20/2015
 f1_keywords: 

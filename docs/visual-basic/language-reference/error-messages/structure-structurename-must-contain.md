@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30941: Structure '<structurename>' must contain at least one instance member variable or at least one instance event declaration not marked 'Custom"
 title: "Structure '<structurename>' must contain at least one instance member variable or at least one instance event declaration not marked 'Custom'"
 ms.date: 07/20/2015
 f1_keywords:

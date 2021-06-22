@@ -18,7 +18,9 @@ Profile-guided optimization improves application startup time, memory utilizatio
 
 When you encounter performance issues with startup time and working set size for Intermediate Language (IL) assemblies, we recommend that you first use Ngen.exe to eliminate just-in-time (JIT) compilation costs and to facilitate code sharing. If you need additional improvements, you can then use Mpgo.exe to further optimize your application. You can use the performance data from the un-optimized native image assemblies as a baseline to evaluate the performance gains. Using Mpgo.exe may result in faster cold startup times and a smaller working set size. Mpgo.exe adds information to IL assemblies that Ngen.exe uses to create optimized native image assemblies. For more information, see the entry [Improving Launch Performance for your Desktop Applications](https://devblogs.microsoft.com/dotnet/improving-launch-performance-for-your-desktop-applications/) in the .NET blog.
 
-This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7) with administrator credentials, and type the following at the command prompt. For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use [Developer Command Prompt or Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell) with administrator credentials.
+
+Enter the following command at the command prompt:
 
 For desktop apps:
 
@@ -27,8 +29,6 @@ mpgo –Scenario <command> [-Import <directory>] –AssemblyList <assembly1>  <a
 ```
 
 For Windows 8.x Store apps:
-
-## Syntax
 
 ```console
 mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>
@@ -127,6 +127,6 @@ mpgo.exe -import "C:\Optimized" -assemblylist "C:\MyApp\MyTax.dll" "C:\MyApp\MyT
 ## See also
 
 - [Ngen.exe (Native Image Generator)](ngen-exe-native-image-generator.md)
-- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)
 - [Improving Launch Performance for your Desktop Applications](https://devblogs.microsoft.com/dotnet/improving-launch-performance-for-your-desktop-applications/)
 - [An Overview of Performance Improvements in .NET Framework 4.5](/archive/msdn-magazine/2012/april/clr-an-overview-of-performance-improvements-in-net-4-5)

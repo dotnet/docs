@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reliable Sessions Overview"
 title: "Reliable Sessions Overview"
 ms.date: "03/30/2017"
 ms.assetid: a7fc4146-ee2c-444c-82d4-ef6faffccc2d
@@ -123,4 +124,4 @@ If your scenario has any of the following characteristics, then you must serious
 ## See also
 
 - [Using Bindings to Configure Services and Clients](../using-bindings-to-configure-services-and-clients.md)
-- [WS Reliable Session](../samples/ws-reliable-session.md)
+- [WS Reliable Session](/previous-versions/dotnet/framework/wcf/samples/ws-reliable-session)

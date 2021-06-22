@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NamedPipeTransportBindingElement"
 title: "NamedPipeTransportBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: c201309c-c528-4b92-a53c-4d48151c5749

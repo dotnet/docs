@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugAppDomain::EnumerateBreakpoints Method"
 title: "ICorDebugAppDomain::EnumerateBreakpoints Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Implement a Provider"
 title: "How to: Implement a Provider"
 ms.date: "03/30/2017"
 dev_langs: 

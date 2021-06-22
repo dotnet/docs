@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Retrieve the Contents of the My Documents Directory in Visual Basic"
 title: "How to: Retrieve the Contents of the My Documents Directory"
 ms.date: 07/20/2015
 helpviewer_keywords: 

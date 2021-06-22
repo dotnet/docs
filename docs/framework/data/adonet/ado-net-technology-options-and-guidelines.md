@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ADO.NET Technology Options and Guidelines"
 title: "Technology Options and Guidelines"
 ms.date: "03/30/2017"
 ms.assetid: c8577281-38e6-4ce5-b036-572039a4c3d8
@@ -41,7 +42,7 @@ The ADO.NET Data Platform is a multi-release strategy to decrease the amount of 
   
 ## WCF Data Services  
 
- WCF Data Services deploys data services on the Web or on an intranet. The data is structured as entities and relationships according to the specifications of the Entity Data Model. Data deployed on this model is addressable by standard HTTP protocol. For more information, see [WCF Data Services 4.5](../wcf/index.md).  
+ WCF Data Services deploys data services on the Web or on an intranet. The data is structured as entities and relationships according to the specifications of the Entity Data Model. Data deployed on this model is addressable by standard HTTP protocol. For more information, see [WCF Data Services 4.5](/previous-versions/dotnet/framework/data/wcf/index).  
   
 ## See also
 

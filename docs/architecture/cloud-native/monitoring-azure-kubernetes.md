@@ -1,7 +1,7 @@
 ---
 title: Monitoring in Azure Kubernetes Services
 description: Monitoring in Azure Kubernetes Services
-ms.date: 05/13/2020
+ms.date: 01/19/2021
 ---
 
 # Monitoring in Azure Kubernetes Services
@@ -21,10 +21,10 @@ Log and metric information is gathered not just from the containers running in t
 
 Installing the log collectors differs on [Windows](/azure/azure-monitor/insights/containers#configure-a-log-analytics-windows-agent-for-kubernetes) and [Linux](/azure/azure-monitor/insights/containers#configure-a-log-analytics-linux-agent-for-kubernetes) clusters. But in both cases the log collection is implemented as a Kubernetes [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/), meaning that the log collector is run as a container on each of the nodes.
 
-No matter which orchestrator or operating system is running the Azure Monitor daemon, the log information is forwarded to the same Azure Monitor tools with which users are familiar. This ensures a parallel experience in environments that mix different log sources such as a hybrid Kubernetes/Azure Functions environment.
+No matter which orchestrator or operating system is running the Azure Monitor daemon, the log information is forwarded to the same Azure Monitor tools with which users are familiar. This approach ensures a parallel experience in environments that mix different log sources such as a hybrid Kubernetes/Azure Functions environment.
 
 ![A sample dashboard showing logging and metric information from a number of running containers.](./media/containers-dashboard.png)
-**Figure 7-11**. A sample dashboard showing logging and metric information from a number of running containers.
+**Figure 7-11**. A sample dashboard showing logging and metric information from many running containers.
 
 ## Log.Finalize()
 

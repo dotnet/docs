@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRRuntimeInfo::GetVersionString Method"
 title: "ICLRRuntimeInfo::GetVersionString Method"
 ms.date: "03/30/2017"
 api_name: 

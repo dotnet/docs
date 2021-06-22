@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ITypeNameBuilder::AddPointer Method"
 title: "ITypeNameBuilder::AddPointer Method"
 ms.date: "03/30/2017"
 api_name: 

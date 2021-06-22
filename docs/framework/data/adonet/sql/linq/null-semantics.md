@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Null Semantics"
 title: "Null Semantics"
 ms.date: "03/30/2017"
 ms.assetid: a97017ae-d634-4cf3-bbaf-054a528fd683

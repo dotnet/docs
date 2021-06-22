@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <certificate> of <clientCertificate> Element"
 title: "<certificate> of <clientCertificate> Element"
 ms.date: "03/30/2017"
 ms.assetid: 00297efb-a7f2-4e03-bc2b-943d545610fc

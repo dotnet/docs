@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IXCLRDataMethodInstance Interface"
 title: "IXCLRDataMethodInstance Interface"
 ms.date: "02/01/2019"
 api.name:

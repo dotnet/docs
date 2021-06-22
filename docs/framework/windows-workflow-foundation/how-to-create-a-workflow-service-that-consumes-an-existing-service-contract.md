@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a workflow service that consumes an existing service contract"
 title: "How to: Create a workflow service that consumes an existing service contract"
 ms.date: "03/30/2017"
 ms.assetid: 11d11b59-acc4-48bf-8e4b-e97b516aa0a9

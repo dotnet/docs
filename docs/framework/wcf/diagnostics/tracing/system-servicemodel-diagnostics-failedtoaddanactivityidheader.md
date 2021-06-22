@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Diagnostics.FailedToAddAnActivityIdHeader"
 title: "System.ServiceModel.Diagnostics.FailedToAddAnActivityIdHeader"
 ms.date: "03/30/2017"
 ms.assetid: 2a1a5612-82c6-4cf6-aa96-ca6f5df12b69

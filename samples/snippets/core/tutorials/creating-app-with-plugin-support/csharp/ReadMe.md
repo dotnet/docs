@@ -10,8 +10,8 @@ By using `AssemblyDependencyResolver` along with a custom `AssemblyLoadContext`,
 
 ## Build and Run
 
-1. Install .NET Core 3.0 Preview 2 or newer.
-2. Use the .NET Core SDK to build the project via `dotnet build`.
+1. Install .NET 5 or newer. The sample targets .NET 5, but support for all the features it uses was added in .NET Core 3.0.
+2. Use the .NET SDK to build the project via `dotnet build`.
    - The AppWithPlugin project does not contain any references to the plugin projects, so you need to build the solution.
 3. Go to the AppWithPlugin directory and use `dotnet run` to run the app.
     - You should see the app output a list of installed commands.

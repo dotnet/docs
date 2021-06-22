@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Standard Query Operator Translation"
 title: "Standard Query Operator Translation"
 ms.date: "03/30/2017"
 dev_langs:

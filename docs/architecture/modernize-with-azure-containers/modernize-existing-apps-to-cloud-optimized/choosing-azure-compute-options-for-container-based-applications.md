@@ -25,13 +25,19 @@ In the following table, you can see a breakdown of different kinds of apps and t
 |:------------------------:|:--:|:--:|:--:|:--:|:--:|:--:|
 | **Web apps (Monolithic)**         | ![Possible with VMs](media/choosing-azure-compute-options-for-container-based-applications/possible.png) | ![Possible with ACI](media/choosing-azure-compute-options-for-container-based-applications/possible.png) | ![Recommended with App Service](media/choosing-azure-compute-options-for-container-based-applications/recommended.png) | ![Possible with AKS](media/choosing-azure-compute-options-for-container-based-applications/possible.png) | | |
 | **N-Tier apps (Services)**        | ![Possible with VMs](media/choosing-azure-compute-options-for-container-based-applications/possible.png) | ![Possible with ACI](media/choosing-azure-compute-options-for-container-based-applications/possible.png) | ![Recommended with App Service](media/choosing-azure-compute-options-for-container-based-applications/recommended.png) | ![Possible with AKS](media/choosing-azure-compute-options-for-container-based-applications/possible.png) | ![Possible with Azure Fuctions](media/choosing-azure-compute-options-for-container-based-applications/possible.png) | |
-| **Cloud-Native (Microservices)**  | | ![Possible with ACI](media/choosing-azure-compute-options-for-container-based-applications/possible.png) | | ![Recommended with AKS](media/choosing-azure-compute-options-for-container-based-applications/recommended.png) <br/> (Linux&nbsp;containers)| ![Recommended with Azure Functions](media/choosing-azure-compute-options-for-container-based-applications/recommended.png) <br/> (Event&#x2011;driven) | |
+| **Cloud-Native (Microservices)**  | | ![Possible with ACI](media/choosing-azure-compute-options-for-container-based-applications/possible.png) | ![Possible with ACI](media/choosing-azure-compute-options-for-container-based-applications/possible.png) <br/> (With&nbsp;containers) | ![Recommended with AKS](media/choosing-azure-compute-options-for-container-based-applications/recommended.png) <br/> (Linux&nbsp;containers)| ![Recommended with Azure Functions](media/choosing-azure-compute-options-for-container-based-applications/recommended.png) <br/> (Event&#x2011;driven) | |
 | **Batch/Jobs (Background tasks)** | ![Possible with VMs](media/choosing-azure-compute-options-for-container-based-applications/possible.png) | ![Possible with ACI](media/choosing-azure-compute-options-for-container-based-applications/possible.png) | ![Possible with App Service](media/choosing-azure-compute-options-for-container-based-applications/possible.png) | ![Possible with AKS](media/choosing-azure-compute-options-for-container-based-applications/possible.png) | ![Recommended with Azure Functions](media/choosing-azure-compute-options-for-container-based-applications/recommended.png) <br/> (Background&nbsp;tasks) | ![Recommended with Azure Batch](media/choosing-azure-compute-options-for-container-based-applications/recommended.png) <br/> (Large&#x2011;scale) |
 
 **Legend**
 
 ![Recommended icon](media/choosing-azure-compute-options-for-container-based-applications/recommended.png) Recommended \
 ![Possible icon](media/choosing-azure-compute-options-for-container-based-applications/possible.png) Possible
+
+### Additional resources
+
+- **Choose an Azure compute service for your application**
+
+    <https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree>
 
 > [!div class="step-by-step"]
 > [Previous](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)

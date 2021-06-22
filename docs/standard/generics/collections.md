@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Generic collections in .NET"
 title: "Generic Collections in .NET"
 ms.date: "02/15/2018"
 dev_langs: 
@@ -9,7 +10,7 @@ helpviewer_keywords:
   - "generics [.NET], collections"
   - "generic collections [.NET]"
   - "generic types [.NET]"
-ms.assetid: 5b646751-6ab7-465c-916c-b1a76aefa9f5
+ms.topic: reference
 ---
 # Generic collections in .NET
 

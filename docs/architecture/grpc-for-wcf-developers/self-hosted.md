@@ -1,14 +1,14 @@
 ---
 title: Self-hosted gRPC applications - gRPC for WCF developers
 description: Deploying ASP.NET Core gRPC applications as self-hosted services.
-ms.date: 09/02/2019
+ms.date: 12/15/2020
 ---
 
 # Self-hosted gRPC applications
 
-Although ASP.NET Core 3.0 applications can be hosted in IIS on Windows Server, currently it isn't possible to host a gRPC application in IIS because some of the HTTP/2 functionality isn't supported. This functionality is a goal for a future update to Windows Server.
+Although ASP.NET Core 5.0 applications can be hosted in IIS on Windows Server, currently it isn't possible to host a gRPC application in IIS because some of the HTTP/2 functionality isn't supported. This functionality is a goal for a future update to Windows Server.
 
-You can run your application as a Windows service. Or you can run it as a Linux service controlled by [systemd](https://en.wikipedia.org/wiki/Systemd), because of new features in the .NET Core 3.0 hosting extensions.
+You can run your application as a Windows service. Or you can run it as a Linux service controlled by [systemd](https://en.wikipedia.org/wiki/Systemd), because of new features in the .NET 5.0 hosting extensions.
 
 ## Run your app as a Windows service
 
@@ -30,11 +30,11 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 Now publish your application by using one of these methods:
 
 * From Visual Studio by right-clicking the project and selecting **Publish** on the shortcut menu.
-* From the .NET Core CLI.
+* From the .NET CLI.
 
-When you publish a .NET Core application, you can choose to create a *framework-dependent* deployment or a *self-contained* deployment. Framework-dependent deployments require the .NET Core Shared Runtime to be installed on the host where they are run. Self-contained deployments are published with a complete copy of the .NET Core runtime and framework and can be run on any host. For more information, including the advantages and disadvantages of each approach, see the [.NET Core application deployment](../../core/deploying/index.md) documentation.
+When you publish a .NET application, you can choose to create a *framework-dependent* deployment or a *self-contained* deployment. Framework-dependent deployments require the .NET Shared Runtime to be installed on the host where they are run. Self-contained deployments are published with a complete copy of the .NET runtime and framework and can be run on any host. For more information, including the advantages and disadvantages of each approach, see the [.NET application deployment](../../core/deploying/index.md) documentation.
 
-To publish a self-contained build of the application that does not require the .NET Core 3.0 runtime to be installed on the host, specify the runtime to be included with the application. Use the `-r` (or `--runtime`) flag.
+To publish a self-contained build of the application that does not require the .NET 5.0 runtime to be installed on the host, specify the runtime to be included with the application. Use the `-r` (or `--runtime`) flag.
 
 ```dotnetcli
 dotnet publish -c Release -r win-x64 -o ./publish
@@ -80,7 +80,7 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 Now publish your application. The application can be either framework dependent or self-contained for the relevant Linux runtime (for example, `linux-x64`). You can publish by using one of these methods:
 
 * From Visual Studio by right-clicking the project and selecting **Publish** on the shortcut menu.
-* From the .NET Core CLI, by using the following command:
+* From the .NET CLI, by using the following command:
 
   ```dotnetcli
   dotnet publish -c Release -r linux-x64 -o ./publish

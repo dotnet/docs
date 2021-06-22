@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Security.SpnegoServiceNegotiationCompleted"
 title: "System.ServiceModel.Security.SpnegoServiceNegotiationCompleted"
 ms.date: "03/30/2017"
 ms.assetid: 840c7537-81df-4bb6-affb-c6c9036453d0

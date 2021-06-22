@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FunctionLeave3 Function"
 title: "FunctionLeave3 Function"
 ms.date: "03/30/2017"
 api_name: 
@@ -27,9 +28,8 @@ void __stdcall FunctionLeave3(FunctionOrRemappedID functionOrRemappedID);
   
 ## Parameters  
 
-- `functionOrRemappedID`
-
-  \[in] The identifier of the function from which control is returned.
+`functionOrRemappedID`
+[in] The identifier of the function from which control is returned.
   
 ## Remarks  
 

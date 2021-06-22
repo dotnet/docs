@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Call Operations Asynchronously Using a Channel Factory"
 title: "How to: Call Operations Asynchronously Using a Channel Factory"
 ms.date: "03/30/2017"
 dev_langs: 

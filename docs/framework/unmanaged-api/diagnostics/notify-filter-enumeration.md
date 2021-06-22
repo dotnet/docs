@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NOTIFY_FILTER Enumeration"
 title: "NOTIFY_FILTER Enumeration"
 ms.date: "03/30/2017"
 api_name: 

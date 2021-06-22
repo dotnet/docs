@@ -10,12 +10,12 @@
       href: container-docker-introduction/docker-terminology.md
     - name: Docker containers, images, and registries
       href: container-docker-introduction/docker-containers-images-registries.md
-  - name: Choosing Between NET Core and NET Framework for Docker Containers
+  - name: Choosing Between .NET 5 and .NET Framework for Docker Containers
     href: net-core-net-framework-containers/index.md
     items:
     - name: General guidance
       href: net-core-net-framework-containers/general-guidance.md
-    - name: When to choose .NET Core for Docker containers
+    - name: When to choose .NET for Docker containers
       href: net-core-net-framework-containers/net-core-container-scenarios.md
     - name: When to choose .NET Framework for Docker containers
       href: net-core-net-framework-containers/net-framework-container-scenarios.md
@@ -65,7 +65,7 @@
     items:
     - name: Development workflow for Docker apps
       href: docker-application-development-process/docker-app-development-workflow.md
-  - name: Designing and Developing Multi Container and Microservice Based NET Applications
+  - name: Designing and Developing Multi Container and Microservice Based .NET Applications
     href: multi-container-microservice-net-applications/index.md
     items:
     - name: Designing a microservice-oriented application
@@ -101,7 +101,7 @@
       href: microservice-ddd-cqrs-patterns/ddd-oriented-microservice.md
     - name: Designing a microservice domain model
       href: microservice-ddd-cqrs-patterns/microservice-domain-model.md
-    - name: Implementing a microservice domain model with .NET Core
+    - name: Implementing a microservice domain model with .NET
       href: microservice-ddd-cqrs-patterns/net-core-microservice-domain-model.md
     - name: Seedwork (reusable base classes and interfaces for your domain model)
       href: microservice-ddd-cqrs-patterns/seedwork-domain-model-base-classes-interfaces.md
@@ -144,7 +144,7 @@
       href: implement-resilient-applications/implement-circuit-breaker-pattern.md
     - name: Health monitoring
       href: implement-resilient-applications/monitor-app-health.md
-  - name: Securing NET Microservices and Web Applications
+  - name: Securing .NET Microservices and Web Applications
     href: secure-net-microservices-web-applications/index.md
     items:
     - name: About authorization in .NET microservices and web applications

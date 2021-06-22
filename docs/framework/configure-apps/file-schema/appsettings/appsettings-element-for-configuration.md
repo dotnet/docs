@@ -1,9 +1,10 @@
 ---
+description: "Learn more about: <appSettings> element for <configuration>"
 title: "<appSettings> element for <configuration>"
 ms.date: "05/01/2017"
-f1_keywords: 
+f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/appSettings"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "appSettings Element"
   - "<appSettings> Element"
 ms.assetid: 39694cc4-6b84-45a6-9329-385a0d8b48fe
@@ -12,7 +13,7 @@ ms.assetid: 39694cc4-6b84-45a6-9329-385a0d8b48fe
 
 Contains custom application settings. This is a predefined configuration section provided by the .NET Framework.
 
-[**\<configuration>**](../configuration-element.md)
+[**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;**\<appSettings>**
 
 ## Syntax

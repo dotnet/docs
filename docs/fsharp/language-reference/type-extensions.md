@@ -28,7 +28,7 @@ open System.Runtime.CompilerServices
 [<Extension>]
 type Extensions() =
     [<Extension>]
-    static member self-identifier.extension-name (ty: typename, [args]) =
+    static member extension-name (ty: typename, [args]) =
         body
     ...
 ```

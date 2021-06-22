@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Return the First Element in a Sequence"
 title: "Return the First Element in a Sequence"
 ms.date: "03/30/2017"
 dev_langs: 

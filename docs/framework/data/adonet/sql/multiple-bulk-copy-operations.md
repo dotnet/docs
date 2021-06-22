@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multiple Bulk Copy Operations"
 title: "Multiple Bulk Copy Operations"
 ms.date: "03/30/2017"
 dev_langs: 

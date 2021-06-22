@@ -49,7 +49,7 @@ To use a `inref<'T>`, you need to get a pointer value with `&`:
 open System
 
 let f (dt: inref<DateTime>) =
-    printfn "Now: %s" (dt.ToString())
+    printfn $"Now: %O{dt}"
 
 let usage =
     let dt = DateTime.Now
@@ -62,7 +62,7 @@ To write to the pointer by using an `outref<'T>` or `byref<'T>`, you must also m
 open System
 
 let f (dt: byref<DateTime>) =
-    printfn "Now: %s" (dt.ToString())
+    printfn $"Now: %O{dt}"
     dt <- DateTime.Now
 
 // Make 'dt' mutable
@@ -178,7 +178,7 @@ Byref returns from F# functions or members can be produced and consumed. When co
 ```fsharp
 let squareAndPrint (data : byref<int>) =
     let squared = data*data    // data is implicitly dereferenced
-    printfn "%d" squared
+    printfn $"%d{squared}"
 ```
 
 To return a value byref, the variable that contains the value must live longer than the current scope.
@@ -212,13 +212,13 @@ type C() =
 [<EntryPoint>]
 let main argv =
     let c = C()
-    printfn "Original sequence: %s" (c.ToString())
+    printfn $"Original sequence: %O{c}"
 
     let v = &c.FindLargestSmallerThan 16
 
     v <- v*2 // Directly assign to the byref return
 
-    printfn "New sequence:      %s" (c.ToString())
+    printfn $"New sequence:      %O{c}"
 
     0 // return an integer exit code
 ```

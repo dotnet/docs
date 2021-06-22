@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorDebugUserState Enumeration"
 title: "CorDebugUserState Enumeration"
 ms.date: "03/30/2017"
 api_name: 

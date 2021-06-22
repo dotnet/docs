@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XML Literals Overview (Visual Basic)"
 title: "XML Literals Overview"
 ms.date: 07/20/2015
 helpviewer_keywords: 

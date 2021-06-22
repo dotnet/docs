@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Console apps in .NET"
 title: "Create Console Applications in .NET"
 ms.date: "03/30/2017"
 helpviewer_keywords:

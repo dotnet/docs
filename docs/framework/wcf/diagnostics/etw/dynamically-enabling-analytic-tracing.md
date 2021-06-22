@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dynamically Enabling Analytic Tracing"
 title: "Dynamically Enabling Analytic Tracing"
 ms.date: "03/30/2017"
 ms.assetid: 58b63cfc-307a-427d-b69d-9917ff9f44ac
@@ -11,7 +12,7 @@ Using tools that ship with the Windows operating system, you can enable or disab
   
 - **Logman** – A command line tool for configuring, controlling, and querying tracing data. For more information, see [Logman Create Trace](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc788036(v=ws.10)) and [Logman Update Trace](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc788128(v=ws.10)).  
   
-- **EventViewer** - Windows graphical management tool for viewing the results of tracing. For more information, see [WCF Services and Event Tracing for Windows](../../samples/wcf-services-and-event-tracing-for-windows.md) and [Event Viewer](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766042(v=ws.11)).  
+- **EventViewer** - Windows graphical management tool for viewing the results of tracing. For more information, see [WCF Services and Event Tracing for Windows](/previous-versions/dotnet/framework/wcf/samples/wcf-services-and-event-tracing-for-windows) and [Event Viewer](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766042(v=ws.11)).  
   
 - **Perfmon** – Windows graphical management tool that uses counters to monitor tracing counters and the effects of tracing on performance. For more information, see [Create a Data Collector Set Manually](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766404(v=ws.11)).  
   
@@ -38,4 +39,4 @@ Using tools that ship with the Windows operating system, you can enable or disab
   
 ## See also
 
-- [WCF Services and Event Tracing for Windows](../../samples/wcf-services-and-event-tracing-for-windows.md)
+- [WCF Services and Event Tracing for Windows](/previous-versions/dotnet/framework/wcf/samples/wcf-services-and-event-tracing-for-windows)

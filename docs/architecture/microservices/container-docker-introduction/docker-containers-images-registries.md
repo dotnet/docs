@@ -1,7 +1,7 @@
 ---
 title: Docker containers, images, and registries
 description: .NET Microservices Architecture for Containerized .NET Applications | Docker containers, images, and registries
-ms.date: 08/31/2018
+ms.date: 01/13/2021
 ---
 # Docker containers, images, and registries
 
@@ -17,7 +17,7 @@ Figure 2-4 shows how images and registries in Docker relate to other components.
 
 **Figure 2-4**. Taxonomy of Docker terms and concepts
 
-The registry is like a bookshelf where images are stored and available to be pulled for building containers to run services or web apps. There are private Docker registries on-premises and on the public cloud. Docker Hub is a public registry maintained by Docker, along the Docker Trusted Registry an enterprise-grade solution, Azure offers the Azure Container Registry. AWS, Google and others also have container registries.
+The registry is like a bookshelf where images are stored and available to be pulled for building containers to run services or web apps. There are private Docker registries on-premises and on the public cloud. Docker Hub is a public registry maintained by Docker, along the Docker Trusted Registry an enterprise-grade solution, Azure offers the Azure Container Registry. AWS, Google, and others also have container registries.
 
 Putting images in a registry lets you store static and immutable application bits, including all their dependencies at a framework level. Those images can then be versioned and deployed in multiple environments and therefore provide a consistent deployment unit.
 

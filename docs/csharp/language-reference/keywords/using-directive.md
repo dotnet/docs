@@ -2,6 +2,8 @@
 description: "using directive - C# Reference"
 title: "using directive - C# Reference"
 ms.date: 07/20/2015
+f1_keywords: 
+  - "using_CSharpKeyword"
 helpviewer_keywords:
   - "using directive [C#]"
 ms.assetid: b42b8e61-5e7e-439c-bb71-370094b44ae8
@@ -94,5 +96,5 @@ For more information, see [Using directives](~/_csharplang/spec/namespaces.md#us
 - [C# Programming Guide](../../programming-guide/index.md)
 - [Using Namespaces](../../programming-guide/namespaces/using-namespaces.md)
 - [C# Keywords](index.md)
-- [Namespaces](../../programming-guide/namespaces/index.md)
+- [Namespaces](../../fundamentals/types/namespaces.md)
 - [using Statement](using-statement.md)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataTables::GetColumn Method"
 title: "IMetaDataTables::GetColumn Method"
 ms.date: "02/25/2019"
 api_name: 

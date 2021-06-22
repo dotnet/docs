@@ -4,6 +4,7 @@ titleSuffix: ""
 description: Learn about the .NET project SDKs.
 ms.date: 09/17/2020
 ms.topic: conceptual
+no-loc: ["EmbeddedResource", "Compile", "None"]
 ---
 # .NET project SDKs
 
@@ -19,7 +20,7 @@ The following SDKs are available:
 | `Microsoft.NET.Sdk.Web` | The .NET [Web SDK](/aspnet/core/razor-pages/web-sdk) | <https://github.com/dotnet/sdk> |
 | `Microsoft.NET.Sdk.Razor` | The .NET [Razor SDK](/aspnet/core/razor-pages/sdk) |
 | `Microsoft.NET.Sdk.Worker` | The .NET Worker Service SDK |
-| `Microsoft.NET.Sdk.WindowsDesktop` | The WinForms and WPF SDK\* | <https://github.com/dotnet/winforms> and <https://github.com/dotnet/wpf> |
+| `Microsoft.NET.Sdk.WindowsDesktop` | The .NET [Desktop SDK](msbuild-props-desktop.md), which includes Windows Forms (WinForms) and Windows Presentation Foundation (WPF).\* | <https://github.com/dotnet/winforms> and <https://github.com/dotnet/wpf> |
 
 The .NET SDK is the base SDK for .NET. The other SDKs reference the .NET SDK, and projects that are associated with the other SDKs have all the .NET SDK properties available to them. The Web SDK, for example, depends on both the .NET SDK and the Razor SDK.
 
@@ -77,9 +78,9 @@ If the project has multiple target frameworks, focus the results of the command 
 
 `dotnet msbuild -property:TargetFramework=netcoreapp2.0 -preprocess:output.xml`
 
-### Default compilation includes
+## Default includes and excludes
 
-The default includes and excludes for compile items, embedded resources, and `None` items are defined in the SDK. Unlike non-SDK .NET Framework projects, you don't need to specify these items in your project file, because the defaults cover most common use cases. This makes the project file smaller and easier to understand and edit by hand, if needed.
+The default includes and excludes for [`Compile` items](/visualstudio/msbuild/common-msbuild-project-items#compile), [embedded resources](/visualstudio/msbuild/common-msbuild-project-items#embeddedresource), and [`None` items](/visualstudio/msbuild/common-msbuild-project-items#none) are defined in the SDK. Unlike non-SDK .NET Framework projects, you don't need to specify these items in your project file, because the defaults cover most common use cases. This behavior makes the project file smaller and easier to understand and edit by hand, if needed.
 
 The following table shows which elements and which [globs](https://en.wikipedia.org/wiki/Glob_(programming)) are included and excluded in the .NET SDK:
 
@@ -90,21 +91,23 @@ The following table shows which elements and which [globs](https://en.wikipedia.
 | None              | \*\*/\*                                   | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | \*\*/\*.cs; \*\*/\*.resx |
 
 > [!NOTE]
-> The `./bin` and `./obj` folders, which are represented by the `$(BaseOutputPath)` and `$(BaseIntermediateOutputPath)` MSBuild properties, are excluded from the globs by default. Excludes are represented by the property `$(DefaultItemExcludes)`.
+> The `./bin` and `./obj` folders, which are represented by the `$(BaseOutputPath)` and `$(BaseIntermediateOutputPath)` MSBuild properties, are excluded from the globs by default. Excludes are represented by the [DefaultItemExcludes property](msbuild-props.md#defaultitemexcludes).
 
-#### Build errors
+The .NET Desktop SDK has more includes and excludes for WPF. For more information, see [WPF default includes and excludes](msbuild-props-desktop.md#wpf-default-includes-and-excludes).
+
+### Build errors
 
 If you explicitly define any of these items in your project file, you're likely to get a "NETSDK1022" build error similar to the following:
 
-  > Duplicate 'Compile' items were included. The .NET SDK includes 'Compile' items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultCompileItems' property to 'false' if you want to explicitly include them in your project file.
+> Duplicate 'Compile' items were included. The .NET SDK includes 'Compile' items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultCompileItems' property to 'false' if you want to explicitly include them in your project file.
 
-  > Duplicate 'EmbeddedResource' items were included. The .NET SDK includes 'EmbeddedResource' items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultEmbeddedResourceItems' property to 'false' if you want to explicitly include them in your project file.
+> Duplicate 'EmbeddedResource' items were included. The .NET SDK includes 'EmbeddedResource' items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultEmbeddedResourceItems' property to 'false' if you want to explicitly include them in your project file.
 
 To resolve the errors, do one of the following:
 
 - Remove the explicit `Compile`, `EmbeddedResource`, or `None` items that match the implicit ones listed on the previous table.
 
-- Set the `EnableDefaultItems` property to `false` to disable all implicit file inclusion:
+- Set the [EnableDefaultItems property](msbuild-props.md#enabledefaultitems) to `false` to disable all implicit file inclusion:
 
   ```xml
   <PropertyGroup>
@@ -114,7 +117,7 @@ To resolve the errors, do one of the following:
 
   If you want to specify files to be published with your app, you can still use the known MSBuild mechanisms for that, for example, the `Content` element.
 
-- Selectively disable only `Compile`, `EmbeddedResource`, or `None` globs by setting the `EnableDefaultCompileItems`, `EnableDefaultEmbeddedResourceItems`, or `EnableDefaultNoneItems` property to `false`:
+- Selectively disable only `Compile`, `EmbeddedResource`, or `None` globs by setting the [EnableDefaultCompileItems](msbuild-props.md#enabledefaultcompileitems), [EnableDefaultEmbeddedResourceItems](msbuild-props.md#enabledefaultembeddedresourceitems), or [EnableDefaultNoneItems](msbuild-props.md#enabledefaultnoneitems) property to `false`:
 
   ```xml
   <PropertyGroup>
@@ -125,6 +128,55 @@ To resolve the errors, do one of the following:
   ```
 
   If you only disable `Compile` globs, Solution Explorer in Visual Studio still shows \*.cs items as part of the project, included as `None` items. To disable the implicit `None` glob, set `EnableDefaultNoneItems` to `false` too.
+
+## Implicit package references
+
+When targeting .NET Core 1.0 - 2.2 or .NET Standard 1.0 - 2.0, the .NET SDK adds implicit references to certain *metapackages*. A metapackage is a framework-based package that consists only of dependencies on other packages. Metapackages are implicitly referenced based on the target framework(s) specified in the [TargetFramework](msbuild-props.md#targetframework) or [TargetFrameworks](msbuild-props.md#targetframeworks) property of your project file.
+
+```xml
+<PropertyGroup>
+  <TargetFramework>netcoreapp2.1</TargetFramework>
+</PropertyGroup>
+```
+
+```xml
+<PropertyGroup>
+  <TargetFrameworks>netcoreapp2.1;net462</TargetFrameworks>
+</PropertyGroup>
+```
+
+If needed, you can disable implicit package references using the [DisableImplicitFrameworkReferences](msbuild-props.md#disableimplicitframeworkreferences) property, and add explicit references to just the frameworks or packages you need.
+
+Recommendations:
+
+- When targeting .NET Framework, .NET Core 1.0 - 2.2, or .NET Standard 1.0 - 2.0, don't add an explicit reference to the `Microsoft.NETCore.App` or `NETStandard.Library` metapackages via a `<PackageReference>` item in your project file. For .NET Core 1.0 - 2.2 and .NET Standard 1.0 - 2.0 projects, these metapackages are implicitly referenced. For .NET Framework projects, if any version of `NETStandard.Library` is needed when using a .NET Standard-based NuGet package, NuGet automatically installs that version.
+- If you need a specific version of the runtime when targeting .NET Core 1.0 - 2.2, use the `<RuntimeFrameworkVersion>` property in your project (for example, `1.0.4`) instead of referencing the metapackage. For example, you might need a specific patch version of 1.0.0 LTS runtime if you're using [self-contained deployments](../deploying/index.md#publish-self-contained).
+- If you need a specific version of the `NETStandard.Library` metapackage when targeting .NET Standard 1.0 - 2.0, you can use the `<NetStandardImplicitPackageVersion>` property and set the version you need.
+
+## Build events
+
+In SDK-style projects, use an MSBuild target named `PreBuild` or `PostBuild` and set the `BeforeTargets` property for `PreBuild` or the `AfterTargets` property for `PostBuild`.
+
+```xml
+<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="&quot;$(ProjectDir)PreBuildEvent.bat&quot; &quot;$(ProjectDir)..\&quot; &quot;$(ProjectDir)&quot; &quot;$(TargetDir)&quot;" />
+</Target>
+
+<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+   <Exec Command="echo Output written to $(TargetDir)" />
+</Target>
+```
+
+> [!NOTE]
+>
+> - You can use any name for the MSBuild targets. However, the Visual Studio IDE recognizes `PreBuild` and `PostBuild` targets, so by using those names, you can edit the commands in the IDE.
+> - The properties `PreBuildEvent` and `PostBuildEvent` are not recommended in SDK-style projects, because macros such as `$(ProjectDir)` aren't resolved. For example, the following code is not supported:
+>
+> ```xml
+> <PropertyGroup>
+>   <PreBuildEvent>"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)"</PreBuildEvent>
+> </PropertyGroup>
+> ```
 
 ## Customize the build
 
@@ -162,7 +214,7 @@ The following XML is a snippet from a *.csproj* file that instructs the [`dotnet
     </ItemGroup>
   </Target>
   ...
-  
+
 </Project>
 ```
 

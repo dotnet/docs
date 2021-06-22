@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: StackOverflowType Enumeration"
 title: "StackOverflowType Enumeration"
 ms.date: "03/30/2017"
 api_name: 

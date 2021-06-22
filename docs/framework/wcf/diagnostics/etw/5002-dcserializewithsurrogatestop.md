@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 5002 - DCSerializeWithSurrogateStop"
 title: "5002 - DCSerializeWithSurrogateStop"
 ms.date: "03/30/2017"
 ms.assetid: 66fd4496-8b94-46d4-b987-19040b4ea4bc

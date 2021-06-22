@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IManagedObject Interface"
 title: "IManagedObject Interface"
 ms.date: "03/30/2017"
 api_name: 

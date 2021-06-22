@@ -1,5 +1,7 @@
 ---
 title: "Compilation and Reuse in Regular Expressions"
+description: "Learn about compilation and reuse in Regular Expressions."
+ms.topic: conceptual
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "parsing text with regular expressions, compilation"

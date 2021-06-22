@@ -6,19 +6,22 @@ helpviewer_keywords:
   - "auto-implemented properties [C#]"
   - "properties [C#], auto-implemented"
 ms.topic: how-to
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 ms.assetid: 1dc5a8ad-a4f7-4f32-8506-3fc6d8c8bfed
 ---
 # How to implement a lightweight class with auto-implemented properties (C# Programming Guide)
 
 This example shows how to create an immutable lightweight class that serves only to encapsulate a set of auto-implemented properties. Use this kind of construct instead of a struct when you must use reference type semantics.
 
-You can make an immutable property in two ways:
+You can make an immutable property in the following ways:
 
-- You can declare the [set](../../language-reference/keywords/set.md) accessor to be [private](../../language-reference/keywords/private.md).  The property is only settable within the type, but it is immutable to consumers.
+- Declare only the [get](../../language-reference/keywords/get.md) accessor, which makes the property immutable everywhere except in the type's constructor.
+
+- Declare an [init](../../language-reference/keywords/init.md) accessor instead of a `set` accessor, which makes the property settable only in the constructor or by using an [object initializer](object-and-collection-initializers.md).
+
+- Declare the [set](../../language-reference/keywords/set.md) accessor to be [private](../../language-reference/keywords/private.md).  The property is settable within the type, but it is immutable to consumers.
 
   When you declare a private `set` accessor, you cannot use an object initializer to initialize the property. You must use a constructor or a factory method.
-- You can declare only the [get](../../language-reference/keywords/get.md) accessor, which makes the property immutable everywhere except in the type's constructor.
 
 The following example shows how a property with only get accessor differs than one with get and private set.
 

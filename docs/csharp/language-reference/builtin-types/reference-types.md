@@ -132,6 +132,8 @@ A `delegate` is a reference type that can be used to encapsulate a named or an a
 
 The delegate must be instantiated with a method or lambda expression that has a compatible return type and input parameters. For more information on the degree of variance that is allowed in the method signature, see [Variance in Delegates](../../programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md). For use with anonymous methods, the delegate and the code to be associated with it are declared together.
 
+Beginning with C# 9, you can declare [*function pointers*](../unsafe-code.md#function-pointers), which use similar syntax. A function pointer uses the `calli` instruction instead of instantiating a delegate type and calling the virtual `Invoke` method.
+
 ## The dynamic type
 
 The `dynamic` type indicates that use of the variable and references to its members bypass compile-time type checking. Instead, these operations are resolved at run time. The `dynamic` type simplifies access to COM APIs such as the Office Automation APIs, to dynamic APIs such as IronPython libraries, and to the HTML Document Object Model (DOM).
@@ -172,7 +174,7 @@ The following example uses `dynamic` in several declarations. The `Main` method 
 - [Basic String Operations](../../../standard/base-types/basic-string-operations.md)
 - [Creating New Strings](../../../standard/base-types/creating-new.md)
 - [Type-testing and cast operators](../operators/type-testing-and-cast.md)
-- [How to safely cast using pattern matching and the as and is operators](../../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md)
+- [How to safely cast using pattern matching and the as and is operators](../../fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md)
 - [Walkthrough: creating and using dynamic objects](../../programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)
 - <xref:System.Object?displayProperty=nameWithType>
 - <xref:System.String?displayProperty=nameWithType>

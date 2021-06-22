@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IXCLRDataProcess::EndEnumMethodInstancesByAddress Method"
 title: "IXCLRDataProcess::EndEnumMethodInstancesByAddress Method"
 ms.date: "01/16/2019"
 api.name:

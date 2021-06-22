@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <activityStateQueries> of WCF"
 title: "<activityStateQueries> of WCF"
 ms.date: "10/08/2018"
 ms.assetid: 9e45db49-ed85-4fdf-bd65-0d5477e31823

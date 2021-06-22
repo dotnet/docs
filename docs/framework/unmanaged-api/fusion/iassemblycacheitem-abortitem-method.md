@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAssemblyCacheItem::AbortItem Method"
 title: "IAssemblyCacheItem::AbortItem Method"
 ms.date: "03/30/2017"
 api_name: 

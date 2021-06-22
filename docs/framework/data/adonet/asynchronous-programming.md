@@ -426,7 +426,7 @@ namespace SqlBulkCopyAsyncCodeSample {
       // static string connectionString = @"Server=(localdb)\V11.0;Database=Demo";
       static string connectionString = @"Server=(local);Database=Demo;Integrated Security=true";
 
-      // static string odbcConnectionString = @"Driver={SQL Server};Server=(localdb)\V11.0;UID=oledb;Pwd=1Password!;Database=Demo";
+      // static string odbcConnectionString = @"Driver={SQL Server};Server=(localdb)\V11.0;UID=oledb;Pwd=[PLACEHOLDER];Database=Demo";
       static string odbcConnectionString = @"Driver={SQL Server};Server=(local);Database=Demo;Integrated Security=true";
 
       // static string marsConnectionString = @"Server=(localdb)\V11.0;Database=Demo;MultipleActiveResultSets=true;";

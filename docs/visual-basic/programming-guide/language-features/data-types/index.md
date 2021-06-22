@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Types in Visual Basic"
 title: "Data Types"
 ms.date: 07/20/2015
 helpviewer_keywords: 

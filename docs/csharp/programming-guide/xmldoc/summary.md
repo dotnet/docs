@@ -30,7 +30,7 @@ The `<summary>` tag should be used to describe a type or a type member. Use [\<r
 
 The text for the `<summary>` tag is the only source of information about the type in IntelliSense, and is also displayed in the Object Browser Window.
 
-Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file. To create the final documentation based on the compiler-generated file, you can create a custom tool, or use a tool such as [DocFX](https://dotnet.github.io/docfx/) or [Sandcastle](https://github.com/EWSoftware/SHFB).
+Compile with [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) to process documentation comments to a file. To create the final documentation based on the compiler-generated file, you can create a custom tool, or use a tool such as [DocFX](https://dotnet.github.io/docfx/) or [Sandcastle](https://github.com/EWSoftware/SHFB).
 
 ## Example
 
@@ -61,7 +61,7 @@ The previous example produces the following XML file.
 </doc>
 ```
 
-## Example
+## cref example
 
 The following example shows how to make a `cref` reference to a generic type.
 

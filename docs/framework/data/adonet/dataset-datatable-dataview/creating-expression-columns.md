@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating Expression Columns"
 title: "Creating Expression Columns"
 ms.date: "03/30/2017"
 dev_langs: 

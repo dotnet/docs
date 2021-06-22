@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Perform Action When a Dataflow Block Receives Data"
 title: "How to: Perform Action When a Dataflow Block Receives Data"
 ms.date: "03/30/2017"
 dev_langs: 

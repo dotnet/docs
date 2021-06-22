@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ChannelPoolSettings"
 title: "ChannelPoolSettings"
 ms.date: "03/30/2017"
 ms.assetid: d3f475bd-f780-4bbe-b291-339387322964

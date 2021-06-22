@@ -1,17 +1,17 @@
 ---
 title: Create a new ASP.NET Core gRPC project - gRPC for WCF Developers
 description: Learn how to create a gRPC project by using Visual Studio or the command line.
-ms.date: 09/02/2019
+ms.date: 01/06/2021
 ---
 
 # Create a new ASP.NET Core gRPC project
 
-The .NET Core SDK comes with a powerful CLI tool, `dotnet`, which enables you to create and manage projects and solutions from the command line. The SDK is closely integrated with Visual Studio, so everything is also available through the familiar graphical user interface. This chapter shows both ways to create a new ASP.NET Core gRPC project.
+The .NET SDK comes with a powerful CLI tool, `dotnet`, which enables you to create and manage projects and solutions from the command line. The SDK is closely integrated with Visual Studio, so everything is also available through the familiar graphical user interface. This chapter shows both ways to create a new ASP.NET Core gRPC project.
 
 ## Create the project by using Visual Studio
 
 > [!IMPORTANT]
-> To develop any ASP.NET Core 3.0 app, you need Visual Studio 2019 version 16.3 or later, with the **ASP.NET and web development** workload installed.
+> To develop any ASP.NET Core 5.0 app, you need Visual Studio 2019 version 16.8 or later, with the **ASP.NET and web development** workload installed.
 
 Create an empty solution called **TraderSys** from the *Blank Solution* template. Add a solution folder called `src`. Then, right-click on the folder and choose **Add** > **New Project**. Enter `grpc` in the template search box, and you should see a project template called `gRPC Service`.
 
@@ -23,11 +23,11 @@ Select **Next** to continue to the **Configure your new project** dialog box. Na
 
 Select **Next** to continue to the **Create a new gRPC service** dialog box.
 
-![Screenshot of Create a new gRPC service dialog box](media/create-project/create-new-grpc-service.png)
+![Screenshot of Create a new gRPC service dialog box](media/create-project/create-new-grpc-service-v2.png)
 
-At present, you have limited options for the service creation. Docker will be introduced later, so for now, leave that option unselected. Just select **Create**. Your first ASP.NET Core 3.0 gRPC project is generated and added to the solution. If you don't want to know about working with the `dotnet CLI`, skip to the [Clean up the example code](#clean-up-the-example-code) section.
+At present, you have limited options for the service creation. Docker will be introduced later, so for now, leave that option unselected. Just select **Create**. Your first ASP.NET Core 5.0 gRPC project is generated and added to the solution. If you don't want to know about working with the `dotnet CLI`, skip to the [Clean up the example code](#clean-up-the-example-code) section.
 
-## Create the project by using the .NET Core CLI
+## Create the project by using the .NET CLI
 
 This section covers the creation of solutions and projects from the command line.
 
@@ -38,7 +38,7 @@ dotnet new sln -o TraderSys
 cd TraderSys
 ```
 
-ASP.NET Core 3.0 comes with a CLI template for gRPC services. Create the new project by using this template, putting it into an `src` subdirectory as is conventional for ASP.NET Core projects. The project is named after the directory (`TraderSys.Portfolios.csproj`), unless you specify a different name with the `-n` flag.
+ASP.NET Core 5.0 comes with a CLI template for gRPC services. Create the new project by using this template, putting it into an `src` subdirectory as is conventional for ASP.NET Core projects. The project is named after the directory (`TraderSys.Portfolios.csproj`), unless you specify a different name with the `-n` flag.
 
 ```dotnetcli
 dotnet new grpc -o src/TraderSys.Portfolios
@@ -57,7 +57,7 @@ You can now open this solution in Visual Studio 2019, Visual Studio Code, or wha
 
 ## Clean up the example code
 
-You've now created an example service by using the gRPC template, which was reviewed earlier in the book. This isn't useful in our stock trading context, so we'll edit things for our first project.
+You've now created an example service by using the gRPC template, which was reviewed earlier in the book. This code isn't useful in our stock trading context, so we'll edit things for our first project.
 
 ### Rename and edit the proto file
 

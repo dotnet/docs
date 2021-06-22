@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC41999: Implicit conversion from '<typename1>' to '<typename2>' in copying the value of 'ByRef' parameter '<parametername>' back to the matching argument."
 title: "Implicit conversion from '<typename1>' to '<typename2>' in copying the value of 'ByRef' parameter '<parametername>' back to the matching argument."
 ms.date: 07/20/2015
 f1_keywords:

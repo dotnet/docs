@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Handling DataTable Events"
 title: "Handling DataTable Events"
 ms.date: "03/30/2017"
 dev_langs: 

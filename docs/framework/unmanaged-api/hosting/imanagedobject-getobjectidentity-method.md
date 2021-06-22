@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IManagedObject::GetObjectIdentity Method"
 title: "IManagedObject::GetObjectIdentity Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Alias Clause (Visual Basic)"
 title: "Alias Clause"
 ms.date: 07/20/2015
 f1_keywords: 

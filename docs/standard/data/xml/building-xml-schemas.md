@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Building XML Schemas"
 title: "Building XML Schemas"
 ms.date: "03/30/2017"
 dev_langs: 

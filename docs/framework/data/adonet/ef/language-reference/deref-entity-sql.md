@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DEREF (Entity SQL)"
 title: "DEREF (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 4c78e833-b260-453d-9bf4-eb39857dd0fa

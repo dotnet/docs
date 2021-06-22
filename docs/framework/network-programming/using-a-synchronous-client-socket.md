@@ -17,7 +17,7 @@ helpviewer_keywords:
   - "protocols, sockets"
   - "Internet, sockets"
   - "client sockets"
-ms.assetid: 945d00c6-7202-466c-9df9-140b84156d43
+ms.topic: how-to
 ---
 # Using a Synchronous Client Socket
 

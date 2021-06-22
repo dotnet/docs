@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30830: 'Line' statements are no longer supported"
 title: "'Line' statements are no longer supported (Visual Basic Compiler Error)"
 ms.date: 07/20/2015
 f1_keywords:

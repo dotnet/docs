@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: StrongNameErrorInfo Function"
 title: "StrongNameErrorInfo Function"
 ms.date: "03/30/2017"
 api_name: 

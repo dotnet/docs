@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo::GetILToNativeMapping Method"
 title: "ICorProfilerInfo::GetILToNativeMapping Method"
 ms.date: "03/30/2017"
 api_name: 

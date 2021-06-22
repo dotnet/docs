@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Configure Credentials on a Federation Service"
 title: "How to: Configure Credentials on a Federation Service"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -71,7 +72,7 @@ In Windows Communication Foundation (WCF), creating a federated service consists
 
 - [Federation](federation.md)
 - [Federation and Trust](federation-and-trust.md)
-- [Federation Sample](../samples/federation-sample.md)
+- [Federation Sample](/previous-versions/dotnet/framework/wcf/samples/federation-sample)
 - [How to: Disable Secure Sessions on a WSFederationHttpBinding](how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)
 - [How to: Create a WSFederationHttpBinding](how-to-create-a-wsfederationhttpbinding.md)
 - [How to: Create a Federated Client](how-to-create-a-federated-client.md)

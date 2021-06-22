@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::Shutdown Method"
 title: "ICorProfilerCallback::Shutdown Method"
 ms.date: "03/30/2017"
 api_name: 

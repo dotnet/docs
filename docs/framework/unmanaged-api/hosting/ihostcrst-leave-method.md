@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostCrst::Leave Method"
 title: "IHostCrst::Leave Method"
 ms.date: "03/30/2017"
 api_name: 

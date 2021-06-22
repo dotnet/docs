@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit2::DefineGenericParam Method"
 title: "IMetaDataEmit2::DefineGenericParam Method"
 ms.date: "03/30/2017"
 api_name: 

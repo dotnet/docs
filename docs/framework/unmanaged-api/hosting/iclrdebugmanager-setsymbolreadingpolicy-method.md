@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRDebugManager::SetSymbolReadingPolicy Method"
 title: "ICLRDebugManager::SetSymbolReadingPolicy Method"
 ms.date: "03/30/2017"
 api_name: 

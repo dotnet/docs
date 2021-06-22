@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CreateAssemblyEnum Function"
 title: "CreateAssemblyEnum Function"
 ms.date: "03/30/2017"
 api_name: 

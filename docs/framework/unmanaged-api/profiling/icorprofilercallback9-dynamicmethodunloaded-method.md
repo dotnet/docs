@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback9::DynamicMethodUnloaded Method"
 title: "ICorProfilerCallback9::DynamicMethodUnloaded Method"
 ms.date: "04/10/2018"
 api_name: 
@@ -25,8 +26,8 @@ HRESULT DynamicMethodUnloaded(
   
 ## Parameters  
 
-[in] `functionId`  
-The identifier of the in-memory function that has been garbage collected and unloaded.
+`functionId`
+[in] The identifier of the in-memory function that has been garbage collected and unloaded.
 
 ## Requirements  
 

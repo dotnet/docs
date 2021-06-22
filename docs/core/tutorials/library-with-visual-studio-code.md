@@ -2,6 +2,7 @@
 title: Create a .NET class library using Visual Studio Code
 description: Learn how to create a .NET class library using Visual Studio Code.
 ms.date: 11/18/2020
+recommendations: false
 ---
 # Tutorial: Create a .NET class library using Visual Studio Code
 
@@ -205,6 +206,7 @@ Initially, the new console app project doesn't have access to the class library.
 ## Additional resources
 
 * [Develop libraries with the .NET CLI](libraries.md)
+* [.NET Standard versions and the platforms they support](../../standard/net-standard.md).
 
 ## Next steps
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 104 - ActivityScheduledRecord"
 title: "104 - ActivityScheduledRecord"
 ms.date: "03/30/2017"
 ms.assetid: ae202178-8fb1-4646-a3aa-18beeda8ff93

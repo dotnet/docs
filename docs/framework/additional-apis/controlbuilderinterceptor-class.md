@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ControlBuilderInterceptor class"
 title: ControlBuilderInterceptor class
 ms.date: 08/11/2020
 api_name: 

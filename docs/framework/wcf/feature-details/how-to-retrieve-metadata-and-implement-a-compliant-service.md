@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Retrieve Metadata and Implement a Compliant Service"
 title: "How to: Retrieve Metadata and Implement a Compliant Service"
 ms.date: "03/30/2017"
 ms.assetid: f6f3a2b9-c8aa-4b0b-832c-ec2927bf1163

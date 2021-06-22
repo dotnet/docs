@@ -18,7 +18,7 @@ Verify access to on-premises resources as these may need to be migrated or chang
 
 * Create a VPN connecting App Service to on-premises resources using [Azure Virtual Networks](/azure/app-service/web-sites-integrate-with-vnet).
 * Securely expose on-premises services to the cloud without firewall changes using [Azure Relay](/azure/service-bus-relay/relay-what-is-it).
-* Migrate dependencies such as a [SQL database](https://go.microsoft.com/fwlink/?linkid=863217) to Azure.
+* Migrate dependencies such as a [SQL database](./sql.md) to Azure.
 * Use platform-as-a-service offerings in the cloud to reduce dependencies. For example, rather than connect to an on-premises mail server, consider using [SendGrid](/azure/sendgrid-dotnet-how-to-send-email).
 
 ### Port Bindings

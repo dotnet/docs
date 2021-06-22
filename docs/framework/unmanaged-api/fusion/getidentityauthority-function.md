@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GetIdentityAuthority Function"
 title: "GetIdentityAuthority Function"
 ms.date: "03/30/2017"
 api_name: 

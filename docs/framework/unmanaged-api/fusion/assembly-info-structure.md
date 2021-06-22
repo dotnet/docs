@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ASSEMBLY_INFO Structure"
 title: "ASSEMBLY_INFO Structure"
 ms.date: "03/30/2017"
 api_name: 

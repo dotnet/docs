@@ -1,7 +1,7 @@
 ---
 title: Development environment for Docker apps
 description: Get to know the most important development tool options that support the Docker development life-cycle.
-ms.date: 08/06/2020
+ms.date: 01/06/2021
 ---
 # Development environment for Docker apps
 
@@ -30,7 +30,7 @@ You can use [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?u
 
 You can develop Docker applications using Microsoft tools with most modern languages. The following is an initial list, but you're not limited to it:
 
-- .NET Core and ASP.NET Core
+- .NET and ASP.NET Core
 - Node.js
 - Go
 - Java

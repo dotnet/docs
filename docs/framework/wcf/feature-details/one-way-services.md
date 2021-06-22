@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: One-Way Services"
 title: "One-Way Services"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
@@ -36,7 +37,7 @@ public interface IOneWayCalculator
 }  
 ```  
   
- For a complete example, see the [One-Way](../samples/one-way.md) sample.  
+ For a complete example, see the [One-Way](/previous-versions/dotnet/framework/wcf/samples/one-way) sample.  
   
 ## Clients Blocking with One-Way Operations  
 
@@ -52,4 +53,4 @@ public interface IOneWayCalculator
   
 ## See also
 
-- [One-Way](../samples/one-way.md)
+- [One-Way](/previous-versions/dotnet/framework/wcf/samples/one-way)

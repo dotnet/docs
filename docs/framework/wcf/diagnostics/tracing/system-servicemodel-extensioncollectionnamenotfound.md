@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ExtensionCollectionNameNotFound"
 title: "System.ServiceModel.ExtensionCollectionNameNotFound"
 ms.date: "03/30/2017"
 ms.assetid: 67b26f93-2e85-4a56-b103-6e8db149191c

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SQL XML Column Values"
 title: "SQL XML Column Values"
 ms.date: "03/30/2017"
 dev_langs: 

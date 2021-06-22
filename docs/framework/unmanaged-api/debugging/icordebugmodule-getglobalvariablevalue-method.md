@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugModule::GetGlobalVariableValue Method"
 title: "ICorDebugModule::GetGlobalVariableValue Method"
 ms.date: "03/30/2017"
 api_name: 

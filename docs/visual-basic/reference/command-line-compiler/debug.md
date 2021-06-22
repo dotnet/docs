@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: -debug (Visual Basic)"
 title: "-debug"
 ms.date: 03/10/2018
 helpviewer_keywords:

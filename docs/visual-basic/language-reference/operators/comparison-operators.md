@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Comparison Operators (Visual Basic)"
 title: "Comparison Operators"
 ms.date: 07/20/2015
 f1_keywords: 

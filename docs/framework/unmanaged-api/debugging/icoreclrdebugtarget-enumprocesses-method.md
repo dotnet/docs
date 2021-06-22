@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICoreClrDebugTarget::EnumProcesses Method"
 title: "ICoreClrDebugTarget::EnumProcesses Method"
 ms.date: "03/30/2017"
 api_name: 

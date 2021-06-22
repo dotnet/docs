@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 223 - OperationFaulted"
 title: "223 - OperationFaulted"
 ms.date: "03/30/2017"
 ms.assetid: 2f7d89d7-3a6a-40fe-9610-5424eb6bbf61

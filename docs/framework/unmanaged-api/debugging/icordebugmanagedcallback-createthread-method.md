@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugManagedCallback::CreateThread Method"
 title: "ICorDebugManagedCallback::CreateThread Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Join Clause (Visual Basic)"
 title: "Join Clause"
 ms.date: 07/20/2015
 f1_keywords:

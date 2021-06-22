@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Resolve ambiguous times"
 title: "How to: Resolve ambiguous times"
 ms.date: "04/10/2017"
 dev_langs: 
@@ -7,7 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "time zones [.NET], ambiguous time"
   - "ambiguous time [.NET]"
-ms.assetid: 2cf5fb25-492c-4875-9245-98cac8348e97
+ms.topic: how-to
 ---
 # How to: Resolve ambiguous times
 

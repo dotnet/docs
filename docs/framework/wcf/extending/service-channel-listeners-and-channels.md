@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Service: Channel listeners and channels"
 title: "Service: Channel listeners and channels"
 ms.date: "03/30/2017"
 ms.assetid: 8ccbe0e8-7e55-441d-80de-5765f67542fa
@@ -29,7 +30,7 @@ WCF provides base class helpers for this process. For a diagram of the channel h
 
 - The <xref:System.ServiceModel.Channels.ChannelListenerBase> class implements <xref:System.ServiceModel.Channels.IChannelListener>. It takes care of basic state management.
 
-The following discussion is based upon the [Transport: UDP](../samples/transport-udp.md) sample.
+The following discussion is based upon the [Transport: UDP](/previous-versions/dotnet/framework/wcf/samples/transport-udp) sample.
 
 ## Creating a channel listener
 

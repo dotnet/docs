@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedScope2::GetConstantCount Method"
 title: "ISymUnmanagedScope2::GetConstantCount Method"
 ms.date: "03/30/2017"
 api_name: 

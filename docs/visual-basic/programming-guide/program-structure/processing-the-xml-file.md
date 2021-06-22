@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Processing the XML File (Visual Basic)"
 title: "Processing the XML File"
 ms.date: 07/20/2015
 helpviewer_keywords: 

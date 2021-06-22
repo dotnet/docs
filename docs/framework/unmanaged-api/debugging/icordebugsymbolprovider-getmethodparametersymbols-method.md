@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugSymbolProvider::GetMethodParameterSymbols Method"
 title: "ICorDebugSymbolProvider::GetMethodParameterSymbols Method"
 ms.date: "03/30/2017"
 ms.assetid: 58b7c0b9-f6ad-4b49-b92d-0e421cfd0ec6

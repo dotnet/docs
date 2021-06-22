@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: INotifyConnection2 Interface"
 title: "INotifyConnection2 Interface"
 ms.date: "03/30/2017"
 api_name: 

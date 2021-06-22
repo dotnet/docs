@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implementing Service Contracts"
 title: "Implementing Service Contracts"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

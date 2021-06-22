@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: VariableLocationType Enumeration"
 title: "VariableLocationType Enumeration"
 ms.date: "03/30/2017"
 api_name: 

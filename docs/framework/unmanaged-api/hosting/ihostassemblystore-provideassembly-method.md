@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostAssemblyStore::ProvideAssembly Method"
 title: "IHostAssemblyStore::ProvideAssembly Method"
 ms.date: "03/30/2017"
 api_name: 

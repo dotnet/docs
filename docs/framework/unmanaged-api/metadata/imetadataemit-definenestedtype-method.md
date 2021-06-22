@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::DefineNestedType Method"
 title: "IMetaDataEmit::DefineNestedType Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Retrieving Binary Data"
 title: "Retrieving Binary Data"
 ms.date: "03/30/2017"
 dev_langs: 

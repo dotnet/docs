@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Validating That Passwords Are Complex (Visual Basic)"
 title: "Validating Passwords Complexity"
 ms.date: 07/20/2015
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Remote vs. Local Execution"
 title: "Remote vs. Local Execution"
 ms.date: "03/30/2017"
 dev_langs: 

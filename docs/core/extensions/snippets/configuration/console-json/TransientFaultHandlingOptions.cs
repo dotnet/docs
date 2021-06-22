@@ -2,6 +2,9 @@
 
 namespace ConsoleJson.Example
 {
-    public record TransientFaultHandlingOptions(
-        bool Enabled = false, TimeSpan AutoRetryDelay = default);
+    public class TransientFaultHandlingOptions
+    {
+        public bool Enabled { get; set; }
+        public TimeSpan AutoRetryDelay { get; set; }
+    }
 }

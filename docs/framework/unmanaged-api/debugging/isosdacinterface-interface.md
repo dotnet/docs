@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISOSDacInterface Interface"
 title: "ISOSDacInterface Interface"
 ms.date: "02/01/2019"
 api.name:

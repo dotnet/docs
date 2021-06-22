@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICeeGen::GetMethodBuffer Method"
 title: "ICeeGen::GetMethodBuffer Method"
 ms.date: "03/30/2017"
 api_name: 

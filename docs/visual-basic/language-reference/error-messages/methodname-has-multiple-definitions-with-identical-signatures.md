@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30269: '<methodname>' has multiple definitions with identical signatures"
 title: "'<methodname>' has multiple definitions with identical signatures"
 ms.date: 07/20/2015
 f1_keywords:

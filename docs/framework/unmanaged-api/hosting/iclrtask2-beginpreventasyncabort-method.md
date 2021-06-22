@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRTask2::BeginPreventAsyncAbort Method"
 title: "ICLRTask2::BeginPreventAsyncAbort Method"
 ms.date: "03/30/2017"
 api_name: 

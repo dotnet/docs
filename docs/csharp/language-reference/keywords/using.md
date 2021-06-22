@@ -3,7 +3,6 @@ description: "using keyword - C# Reference"
 title: "using keyword - C# Reference"
 ms.date: 04/05/2019
 f1_keywords: 
-  - "using_CSharpKeyword"
   - "using"
 helpviewer_keywords: 
   - "using keyword [C#]"
@@ -22,5 +21,5 @@ The `using` keyword has three major uses:
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Namespaces](../../programming-guide/namespaces/index.md)
+- [Namespaces](../../fundamentals/types/namespaces.md)
 - [extern](extern.md)

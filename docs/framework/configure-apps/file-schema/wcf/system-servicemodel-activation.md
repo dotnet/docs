@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <system.serviceModel.activation>"
 title: "<system.serviceModel.activation>"
 ms.date: "03/30/2017"
 ms.assetid: c0cae85f-56cb-4030-8807-6f96edff8d2d

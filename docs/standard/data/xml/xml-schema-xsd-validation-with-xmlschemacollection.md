@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XML Schema (XSD) Validation with XmlSchemaCollection"
 title: "XML Schema (XSD) Validation with XmlSchemaCollection"
 ms.date: "03/30/2017"
 dev_langs: 

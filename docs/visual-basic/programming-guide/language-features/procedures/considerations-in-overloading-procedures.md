@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Considerations in Overloading Procedures (Visual Basic)"
 title: "Considerations in Overloading Procedures"
 ms.date: 07/20/2015
 helpviewer_keywords: 

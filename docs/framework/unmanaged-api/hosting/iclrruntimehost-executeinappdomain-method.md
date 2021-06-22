@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRRuntimeHost::ExecuteInAppDomain Method"
 title: "ICLRRuntimeHost::ExecuteInAppDomain Method"
 ms.date: "03/30/2017"
 api_name: 

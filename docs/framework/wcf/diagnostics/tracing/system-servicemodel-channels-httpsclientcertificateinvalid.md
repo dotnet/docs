@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.HttpsClientCertificateInvalid"
 title: "System.ServiceModel.Channels.HttpsClientCertificateInvalid"
 ms.date: "03/30/2017"
 ms.assetid: 8884dda1-fa0e-4d2a-8079-7042c51b64ef

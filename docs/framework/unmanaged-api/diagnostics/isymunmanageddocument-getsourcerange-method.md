@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedDocument::GetSourceRange Method"
 title: "ISymUnmanagedDocument::GetSourceRange Method"
 ms.date: "03/30/2017"
 api_name: 

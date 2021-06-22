@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugThread4::GetCurrentCustomDebuggerNotification Method"
 title: "ICorDebugThread4::GetCurrentCustomDebuggerNotification Method"
 ms.date: "03/30/2017"
 api_name:

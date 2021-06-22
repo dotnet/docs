@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Security.SecurityBindingIncomingMessageVerified"
 title: "System.ServiceModel.Security.SecurityBindingIncomingMessageVerified"
 ms.date: "03/30/2017"
 ms.assetid: 40fc744e-8d6f-49e0-a5fd-4f9a31cc0ed7

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Equals Clause (Visual Basic)"
 title: "Equals Clause"
 ms.date: 07/20/2015
 f1_keywords: 

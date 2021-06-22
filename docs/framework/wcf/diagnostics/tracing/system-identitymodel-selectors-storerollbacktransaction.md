@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.IdentityModel.Selectors.StoreRollbackTransaction"
 title: "System.IdentityModel.Selectors.StoreRollbackTransaction"
 ms.date: "03/30/2017"
 ms.assetid: 09240dce-9e62-4f00-9f37-9dbe90a09af2

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo::GetHandleFromThread Method"
 title: "ICorProfilerInfo::GetHandleFromThread Method"
 ms.date: "03/30/2017"
 api_name: 
@@ -39,6 +40,8 @@ HRESULT GetHandleFromThread(
 ## Remarks  
 
  The profiler must call the Win32 `DuplicateHandle` function on the handle before using it.  
+
+ The handle returned from this method is owned by the runtime and the profiler should never close it.
   
 ## Requirements  
 

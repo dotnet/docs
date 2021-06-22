@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WCF Error Handling"
 title: "WCF Error Handling"
 ms.date: "03/30/2017"
 ms.assetid: 1e4b1e0f-9598-449d-9d73-90bda62305b8
@@ -35,7 +36,7 @@ The errors encountered by a WCF application belong to one of three groups:
   
 ## IErrorHandler  
 
- The <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface allows you more control over how your WCF application responds to errors.  It gives you full control over the fault message that is returned to the client and allows you to perform custom error processing such as logging.  For more information about <xref:System.ServiceModel.Dispatcher.IErrorHandler> and [Extending Control Over Error Handling and Reporting](./samples/extending-control-over-error-handling-and-reporting.md)  
+ The <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface allows you more control over how your WCF application responds to errors.  It gives you full control over the fault message that is returned to the client and allows you to perform custom error processing such as logging.  For more information about <xref:System.ServiceModel.Dispatcher.IErrorHandler> and [Extending Control Over Error Handling and Reporting](/previous-versions/dotnet/framework/wcf/samples/extending-control-over-error-handling-and-reporting)  
   
 ## ServiceHost Events  
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Extending XSLT Style Sheets"
 title: "Extending XSLT Style Sheets"
 ms.date: "03/30/2017"
 ms.assetid: df4ba2bf-a99e-4d22-bbf3-04fc67669dbc

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Endpoint: Security Calls Not Authorized Per Second"
 title: "Endpoint: Security Calls Not Authorized Per Second"
 ms.date: "03/30/2017"
 ms.assetid: c8a1547b-986b-45c1-b302-dea0cd4b516d

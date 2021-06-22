@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30157: Leading '.' or '!' can only appear inside a 'With' statement"
 title: "Leading '.' or '!' can only appear inside a 'With' statement"
 ms.date: 07/20/2015
 f1_keywords:

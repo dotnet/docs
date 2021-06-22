@@ -1,7 +1,7 @@
 ---
 title: Introduction to Containers and Docker
 description: .NET Microservices Architecture for Containerized .NET Applications | Introduction to Containers and Docker
-ms.date: 08/31/2018
+ms.date: 01/13/2021
 ---
 # Introduction to Containers and Docker
 
@@ -17,7 +17,7 @@ Each container can run a whole web application or a service, as shown in Figure 
 
 **Figure 2-1**. Multiple containers running on a container host
 
-Another benefit of containerization is scalability. You can scale out quickly by creating new containers for short-term tasks. From an application point of view, instantiating an image (creating a container) is similar to instantiating a process like a service or web app. For reliability, however, when you run multiple instances of the same image across multiple host servers, you typically want each container (image instance) to run in a different host server or VM in different fault domains.
+Another benefit of containerization is scalability. You can scale out quickly by creating new containers for short-term tasks. From an application point of view, instantiating an image (creating a container) is similar to instantiating a process like a service or a web app. For reliability, however, when you run multiple instances of the same image across multiple host servers, you typically want each container (image instance) to run in a different host server or VM in different fault domains.
 
 In short, containers offer the benefits of isolation, portability, agility, scalability, and control across the whole application lifecycle workflow. The most important benefit is the environment's isolation provided between Dev and Ops.
 

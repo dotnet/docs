@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Stop statement encountered"
 title: "Stop statement encountered"
 ms.date: 07/20/2015
 f1_keywords: 

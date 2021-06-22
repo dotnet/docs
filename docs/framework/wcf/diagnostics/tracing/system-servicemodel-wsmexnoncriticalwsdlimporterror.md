@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.WsmexNonCriticalWsdlImportError"
 title: "System.ServiceModel.WsmexNonCriticalWsdlImportError"
 ms.date: "03/30/2017"
 ms.assetid: d6535153-b160-4584-8d5d-1186423a0bc3

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IXCLRDataModule::GetMethodDefinitionByToken Method"
 title: "IXCLRDataModule::GetMethodDefinitionByToken Method"
 ms.date: "01/16/2019"
 api.name:

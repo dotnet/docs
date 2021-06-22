@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: PeerTransportBindingElement"
 title: "PeerTransportBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: 40bf6be2-8087-4cb3-a66c-408d53eb9269

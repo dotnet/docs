@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::CloseEnum Method"
 title: "IMetaDataImport::CloseEnum Method"
 ms.date: "03/30/2017"
 api_name: 

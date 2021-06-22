@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Generate the Object Model in Visual Basic or C#"
 title: "How to: Generate the Object Model in Visual Basic or C#"
 ms.date: "03/30/2017"
 ms.assetid: a0c73b33-5650-420c-b9dc-f49310c201ee

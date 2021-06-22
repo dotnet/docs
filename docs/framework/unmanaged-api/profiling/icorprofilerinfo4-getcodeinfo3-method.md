@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo4::GetCodeInfo3 Method"
 title: "ICorProfilerInfo4::GetCodeInfo3 Method"
 ms.date: "03/30/2017"
 api_name: 

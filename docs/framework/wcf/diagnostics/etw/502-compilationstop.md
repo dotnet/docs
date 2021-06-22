@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 502 - CompilationStop"
 title: "502 - CompilationStop"
 ms.date: "03/30/2017"
 ms.assetid: d7d3ab29-0dfa-4cf4-9bca-cd8191c51db5

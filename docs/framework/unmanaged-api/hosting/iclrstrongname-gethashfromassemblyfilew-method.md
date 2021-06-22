@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRStrongName::GetHashFromAssemblyFileW Method"
 title: "ICLRStrongName::GetHashFromAssemblyFileW Method"
 ms.date: "03/30/2017"
 api_name: 

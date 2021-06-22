@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <add> of <protocolMapping>"
 title: "<add> of <protocolMapping>"
 ms.date: "03/30/2017"
 ms.assetid: 08e62249-1641-41d1-91b1-66d7b46244e4

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <issuer> of <issuedTokenParameters>"
 title: "<issuer> of <issuedTokenParameters>"
 ms.date: "03/30/2017"
 ms.assetid: d6a95f32-d58c-40fc-8658-dd92564d3c90
@@ -59,4 +60,4 @@ Specifies the Security Token Service (STS) that issues security tokens.
 - [Custom Bindings](../../../wcf/extending/custom-bindings.md)
 - [\<customBinding>](custombinding.md)
 - [How to: Create a Custom Binding Using the SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
-- [Custom Binding Security](../../../wcf/samples/custom-binding-security.md)
+- [Custom Binding Security](/previous-versions/dotnet/framework/wcf/samples/custom-binding-security)

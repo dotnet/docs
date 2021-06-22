@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Specified registry key is not valid because it contains two or more consecutive backslashes"
 title: "Specified registry key is not valid because it contains two or more consecutive backslashes"
 ms.date: 07/20/2015
 ms.assetid: 0d78b6f7-5759-45b4-8c37-c6902ada76ff

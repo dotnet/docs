@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Enable Thread-Tracking Mode in SpinLock"
 title: "How to: Enable Thread-Tracking Mode in SpinLock"
 ms.date: "03/30/2017"
 dev_langs: 

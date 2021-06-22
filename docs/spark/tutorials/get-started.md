@@ -6,6 +6,7 @@ ms.topic: tutorial
 ms.custom: mvc
 ms.author: luquinta
 author: luisquintanilla
+recommendations: false
 # Customer intent: As a developer, I want to write a simple custom application using .NET for Apache Spark.
 ---
 
@@ -29,7 +30,7 @@ Before you begin writing your app, you need to set up some prerequisite dependen
 
 To start building .NET apps, you need to download and install the .NET SDK (Software Development Kit).
 
-Download and install the [.NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1). Installing the SDK adds the `dotnet` toolchain to your PATH.
+Download and install the [.NET Core SDK](https://dotnet.microsoft.com/download/dotnet/3.1). Installing the SDK adds the `dotnet` toolchain to your PATH.
 
 Once you've installed the .NET Core SDK, open a new command prompt or terminal and run `dotnet`.
 
@@ -76,7 +77,7 @@ Run the following commands to set the environment variables used to locate Apach
 ```console
 setx /M HADOOP_HOME C:\bin\spark-3.0.1-bin-hadoop2.7\
 setx /M SPARK_HOME C:\bin\spark-3.0.1-bin-hadoop2.7\
-setx /M PATH "%PATH%;%HADOOP_HOME%;%SPARK_HOME%\bin"
+setx /M PATH "%PATH%;%HADOOP_HOME%;%SPARK_HOME%\bin" # Warning: Don't run this if your path is already long as it will truncate your path to 1024 characters and potentially remove entries!
 ```
 
 #### [Mac/Linux](#tab/linux)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.IncompatibleExistingTransportManager"
 title: "System.ServiceModel.Channels.IncompatibleExistingTransportManager"
 ms.date: "03/30/2017"
 ms.assetid: 5366ec64-e8ef-4a34-a2f6-7251d89f1be9

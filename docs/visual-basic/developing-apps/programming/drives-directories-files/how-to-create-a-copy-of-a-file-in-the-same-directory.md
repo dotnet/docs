@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Copy of a File in the Same Directory in Visual Basic"
 title: "How to: Create a Copy of a File in the Same Directory"
 ms.date: 07/20/2015
 f1_keywords: 

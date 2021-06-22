@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Object Variable Declaration (Visual Basic)"
 title: "Object Variable Declaration"
 ms.date: 07/20/2015
 helpviewer_keywords: 

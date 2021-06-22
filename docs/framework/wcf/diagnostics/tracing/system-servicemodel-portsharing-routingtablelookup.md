@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.PortSharing.RoutingTableLookup"
 title: "System.ServiceModel.PortSharing.RoutingTableLookup"
 ms.date: "03/30/2017"
 ms.assetid: 51788083-310c-4c36-a9a1-f1089a1e2687

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Asynchronous Programming Using Delegates"
 title: "Asynchronous Programming Using Delegates"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

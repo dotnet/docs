@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.GetDefaultConfiguredBinding"
 title: "System.ServiceModel.GetDefaultConfiguredBinding"
 ms.date: "03/30/2017"
 ms.assetid: da8e6c84-38b1-4c3b-b619-baca34f31691

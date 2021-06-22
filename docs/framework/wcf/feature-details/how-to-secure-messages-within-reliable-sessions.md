@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Secure Messages within Reliable Sessions"
 title: "How to: Secure Messages within Reliable Sessions"
 ms.date: "03/30/2017"
 ms.assetid: aee33e50-936f-4486-9ca8-c1520c19a62d
@@ -18,7 +19,7 @@ This procedure consists of the following three key tasks:
 
 It's important in the first task that the endpoint configuration element contain a `bindingConfiguration` attribute that references a binding configuration named (in this example) `MessageSecurity`. The [**\<binding>**](../../configure-apps/file-schema/wcf/bindings.md) configuration element then references this name to enable reliable sessions by setting the `enabled` attribute of the [**\<reliableSession>**](/previous-versions/ms731375(v=vs.90)) element to `true`. You can require that the ordered delivery assurances are available within a reliable session by setting the `ordered` attribute to `true`.
 
-For the source copy of the example on which this configuration procedure is based, see the [WS Reliable Session](../samples/ws-reliable-session.md).
+For the source copy of the example on which this configuration procedure is based, see the [WS Reliable Session](/previous-versions/dotnet/framework/wcf/samples/ws-reliable-session).
 
 The essential items of the second task are accomplished by setting the `mode` attribute of the **\<security>** element contained in the **\<binding>** element of the client and service to `Message`.
 

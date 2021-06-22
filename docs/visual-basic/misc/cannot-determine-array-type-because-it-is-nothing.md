@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cannot determine array type because it is Nothing"
 title: "Cannot determine array type because it is Nothing"
 ms.date: 07/20/2015
 f1_keywords: 

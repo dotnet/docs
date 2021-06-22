@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Side by Side Versioning in WorkflowServiceHost"
 title: "Side by Side Versioning in WorkflowServiceHost"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -9,9 +10,6 @@ ms.assetid: 60887eed-df40-4412-b812-41e1dd329d15
 # Side by Side Versioning in WorkflowServiceHost
 
 The <xref:System.ServiceModel.Activities.WorkflowServiceHost> side-by-side versioning introduced in .NET Framework 4.5 provides the capability to host multiple versions of a workflow service on a single endpoint. The side-by-side functionality provided allows a workflow service to be configured so that new instances of the workflow service are created using the new workflow definition, while running instances complete using the existing definition. This topic provides an overview of workflow service side-by-side execution using <xref:System.ServiceModel.Activities.WorkflowServiceHost>.  
-  
-> [!NOTE]
-> To download a sample and watch a video walkthrough of workflow service side-by-side versioning, see [Side by Side Versioning with a Web-Hosted Xamlx Workflow Service](https://go.microsoft.com/fwlink/?LinkId=393746).  
   
 ## Hosting Multiple Versions in a Workflow Service  
 

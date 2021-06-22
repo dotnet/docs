@@ -1,7 +1,7 @@
 .NET Core Hosting Sample
 ========================
 
-This sample demonstrates a simple .NET Core host using the hosting APIs from [`coreclrhost.h`](https://github.com/dotnet/coreclr/blob/master/src/coreclr/hosts/inc/coreclrhost.h). The sample host loads and starts the .NET runtime, loads managed code, calls into a managed method, and provides a function pointer for the managed code to call back into the host.
+This sample demonstrates a simple .NET Core host using the hosting APIs from [`coreclrhost.h`](https://github.com/dotnet/runtime/blob/main/src/coreclr/hosts/inc/coreclrhost.h). The sample host loads and starts the .NET runtime, loads managed code, calls into a managed method, and provides a function pointer for the managed code to call back into the host.
 
 This sample is part of the [.NET Core hosting tutorial](https://docs.microsoft.com/dotnet/core/tutorials/netcore-hosting). See that topic for a more detailed explanation of this sample.
 
@@ -10,7 +10,7 @@ About .NET Core Hosts
 
 .NET Core applications are always run by a host. In most cases, the default dotnet.exe host is used.
 
-It is possible to create your own host, though, to enable starting and running .NET Core code from a native application, or to enable a high degree of control over how the runtime operates. More complex, real-world hosts can be found in the [dotnet/coreclr](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts) repository.
+It is possible to create your own host, though, to enable starting and running .NET Core code from a native application, or to enable a high degree of control over how the runtime operates. More complex, real-world hosts can be found in the [dotnet/runtime](https://github.com/dotnet/runtime/tree/main/src/coreclr/hosts) repository.
 
 Build and Run
 -------------

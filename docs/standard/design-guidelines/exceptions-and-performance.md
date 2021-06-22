@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exceptions and Performance"
 title: "Exceptions and Performance"
 ms.date: "10/22/2008"
 helpviewer_keywords:

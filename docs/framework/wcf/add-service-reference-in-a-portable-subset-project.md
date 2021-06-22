@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Add Service Reference in a Portable Subset Project"
 title: "Add Service Reference in a Portable Subset Project"
 ms.date: "03/30/2017"
 ms.assetid: 61ccfe0f-a34b-40ca-8f5e-725fa1b8095e
@@ -42,4 +43,4 @@ Portable subset projects enable .NET assembly programmers to maintain a single s
 ## See also
 
 - [Accessing Services Using a WCF Client](accessing-services-using-a-wcf-client.md)
-- [Portable Class Library](../cross-platform/portable-class-library.md)
+- [Portable Class Library](/previous-versions/dotnet/framework/cross-platform/portable-class-library)

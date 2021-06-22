@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICeeGen::GenerateCeeMemoryImage Method"
 title: "ICeeGen::GenerateCeeMemoryImage Method"
 ms.date: "03/30/2017"
 api_name: 

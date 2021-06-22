@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugUnmanagedCallback::DebugEvent Method"
 title: "ICorDebugUnmanagedCallback::DebugEvent Method"
 ms.date: "03/30/2017"
 api_name: 

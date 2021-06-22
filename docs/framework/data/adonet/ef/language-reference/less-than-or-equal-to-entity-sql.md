@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <= (Less Than or Equal To) (Entity SQL)"
 title: "<= (Less Than or Equal To) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 7c46da5c-fa09-4d90-adcc-c7e1b769d8e6

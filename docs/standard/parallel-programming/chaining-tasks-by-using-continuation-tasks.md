@@ -1,7 +1,7 @@
 ---
 title: "Chaining tasks using continuation tasks"
 description: Learn to chain task by using continuation tasks in .NET. A continuation task is an asynchronous task that's invoked by another task.
-ms.date: 07/20/2020
+ms.date: 01/06/2021
 dev_langs:
   - "csharp"
   - "vb"
@@ -12,7 +12,7 @@ ms.assetid: 0b45e9a2-de28-46ce-8212-1817280ed42d
 
 # Chaining tasks using continuation tasks
 
-In asynchronous programming, it's common for one asynchronous operation, on completion, to invoke a second operation. Continuations allow decedent operations to consume the results of the first operation. Traditionally, continuations have been done by using callback methods. In the Task Parallel Library, the same functionality is provided by _continuation tasks_. A continuation task (also known just as a continuation) is an asynchronous task that's invoked by another task, known as the _antecedent_, when the antecedent finishes.
+In asynchronous programming, it's common for one asynchronous operation, on completion, to invoke a second operation. Continuations allow descendant operations to consume the results of the first operation. Traditionally, continuations have been done by using callback methods. In the Task Parallel Library, the same functionality is provided by _continuation tasks_. A continuation task (also known just as a continuation) is an asynchronous task that's invoked by another task, known as the _antecedent_, when the antecedent finishes.
 
 Continuations are relatively easy to use, but are nevertheless powerful and flexible. For example, you can:
 

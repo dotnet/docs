@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sorry, we don't have specifics on this Visual Basic error"
 title: "Sorry, we don't have specifics on this Visual Basic error"
 ms.date: 07/20/2015
 f1_keywords: 

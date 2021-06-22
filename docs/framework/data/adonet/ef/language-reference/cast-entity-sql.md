@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAST (Entity SQL)"
 title: "CAST (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 07b6d750-dfd4-48a9-b86c-3badcbba6f70

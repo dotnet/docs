@@ -1,7 +1,7 @@
 ---
 title: Build ASP.NET Core applications deployed as Linux containers into AKS/Kubernetes clusters
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-ms.date: 08/06/2020
+ms.date: 01/06/2021
 ---
 
 # Build ASP.NET Core applications deployed as Linux containers into an AKS/Kubernetes orchestrator
@@ -16,13 +16,13 @@ AKS main features are:
 - User-configurable scaling
 - Simpler user experience for both developers and cluster operators.
 
-The following examples explore the creation of an ASP.NET Core 3.1 application that runs on Linux and deploys to an AKS Cluster in Azure, while development is done using Visual Studio 2019.
+The following examples explore the creation of an ASP.NET Core 5.0 application that runs on Linux and deploys to an AKS Cluster in Azure, while development is done using Visual Studio 2019 version 16.8.
 
 ## Creating the ASP.NET Core Project using Visual Studio 2019
 
 ASP.NET Core is a general-purpose development platform maintained by Microsoft and the .NET community on GitHub. It's cross-platform, supporting Windows, macOS and Linux, and can be used in device, cloud, and embedded/IoT scenarios.
 
-This example uses a couple of simple projects based on Visual Studio templates, so you don't need much additional knowledge to create the sample. You only have to create the project using a standard template that includes all the elements to run a small project with a REST API and a Web App with Razor pages, using ASP.NET Core 3.1 technology.
+This example uses a couple of simple projects based on Visual Studio templates, so you don't need much additional knowledge to create the sample. You only have to create the project using a standard template that includes all the elements to run a small project with a REST API and a Web App with Razor pages, using ASP.NET Core 5.0 technology.
 
 ![Add new project window in Visual Studio, selecting ASP.NET Core Web Application.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/create-aspnet-core-application.png)
 
@@ -36,11 +36,11 @@ Then enter the application name and location as shown in the next image.
 
 **Figure 4-36**. Enter the project name and location in Visual Studio 2019.
 
-Verify that you've selected ASP.NET Core 3.1 as the framework. .NET Core 3.1 is included in the latest release of Visual Studio 2019 and is automatically installed and configured for you when you install Visual Studio.
+Verify that you've selected ASP.NET Core 5.0 as the framework. .NET 5.0 is included in the latest release of Visual Studio 2019 and is automatically installed and configured for you when you install Visual Studio.
 
 ![Visual Studio dialog for selecting the type of an ASP.NET Core Web Application with API option selected.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/create-web-api-application.png)
 
-**Figure 4-37**. Selecting ASP.NET CORE 3.1 and Web API project type
+**Figure 4-37**. Selecting ASP.NET CORE 5.0 and Web API project type
 
 Notice Docker support is not enabled now, just to show it can be done after project creation.
 
@@ -58,7 +58,7 @@ To complete adding Docker support, you can choose Windows or Linux. In this case
 
 **Figure 4-39**. Selecting Linux containers.
 
-With these simple steps, you have your ASP.NET Core 3.1 application running on a Linux container.
+With these simple steps, you have your ASP.NET Core 5.0 application running on a Linux container.
 
 In a similar way, you can also add a very simple **WebApp** project (Figure 4-40) to consume the web API endpoint, although the details are not discussed here.
 

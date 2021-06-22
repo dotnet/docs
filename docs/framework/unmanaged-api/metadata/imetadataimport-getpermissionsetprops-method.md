@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::GetPermissionSetProps Method"
 title: "IMetaDataImport::GetPermissionSetProps Method"
 ms.date: "03/30/2017"
 api_name: 

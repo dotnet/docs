@@ -2,7 +2,7 @@
 title: Candidate apps for cloud native
 description: Learn which types of applications benefit from a cloud-native approach
 author: robvet
-ms.date: 05/14/2020
+ms.date: 01/19/2021
 ---
 
 # Candidate apps for cloud native
@@ -13,13 +13,13 @@ Applying a cost/benefit analysis, there's a good chance that most wouldn't suppo
 
 What type of application might be a candidate for cloud native?
 
-- Strategic enterprise system that need to constantly evolve business capabilities/features
+- Strategic enterprise system that needs to constantly evolve business capabilities/features
 
 - An application that requires a high release velocity - with high confidence
 
 - A system with where individual features must release *without* a full redeployment of the entire system
 
-- An application developed by teams with expertise in different technology stacks
+- An application developed by teams with expertise in different technology stacks
 
 - An application with components that must scale independently
 
@@ -75,7 +75,7 @@ With the introduction behind, we now dive into a much more detailed look at clou
 
 - [Beyond the Twelve-Factor Application](https://content.pivotal.io/blog/beyond-the-twelve-factor-app)
 
-- [What is Infrastructure as Code](/azure/devops/learn/what-is-infrastructure-as-code)
+- [What is Infrastructure as Code](/devops/deliver/what-is-infrastructure-as-code)
 
 - [Uber Engineering's Micro Deploy: Deploying Daily with Confidence](https://eng.uber.com/micro-deploy/)
 

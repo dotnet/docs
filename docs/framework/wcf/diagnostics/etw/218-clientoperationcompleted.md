@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 218 - ClientOperationCompleted"
 title: "218 - ClientOperationCompleted"
 ms.date: "03/30/2017"
 ms.assetid: b069bced-7bb2-4e01-8227-e5dbda17af09

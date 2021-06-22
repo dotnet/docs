@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedWriter5::MapTokenToSourceSpan Method"
 title: "ISymUnmanagedWriter5::MapTokenToSourceSpan Method"
 ms.date: "03/30/2017"
 ms.assetid: d0fbbf61-71c6-4fb1-8c9f-d619ca5d7d68

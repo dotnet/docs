@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3427 - WebSocketCloseOutputSent"
 title: "3427 - WebSocketCloseOutputSent"
 ms.date: "03/30/2017"
 ms.assetid: c9de20d8-9f53-432d-8100-c05387441f65

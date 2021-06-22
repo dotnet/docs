@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugSymbolProvider::GetObjectSize Method"
 title: "ICorDebugSymbolProvider::GetObjectSize Method"
 ms.date: "03/30/2017"
 ms.assetid: 3c564396-ac64-4ef3-b4f6-df96f1d46fc7

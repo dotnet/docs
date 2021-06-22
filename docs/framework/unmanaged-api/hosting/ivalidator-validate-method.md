@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IValidator::Validate Method"
 title: "IValidator::Validate Method"
 ms.date: "03/30/2017"
 api_name: 

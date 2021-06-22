@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Connection to type library or object library for remote process has been lost"
 title: "Connection to type library or object library for remote process has been lost"
 ms.date: 07/20/2015
 f1_keywords: 

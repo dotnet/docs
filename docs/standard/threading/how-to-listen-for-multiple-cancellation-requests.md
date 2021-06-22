@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Listen for Multiple Cancellation Requests"
 title: "How to: Listen for Multiple Cancellation Requests"
 ms.date: "03/30/2017"
 dev_langs: 

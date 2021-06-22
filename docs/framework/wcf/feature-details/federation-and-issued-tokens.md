@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Federation and Issued Tokens"
 title: "Federation and Issued Tokens"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

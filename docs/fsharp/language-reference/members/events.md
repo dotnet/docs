@@ -98,7 +98,7 @@ type AppForm() as this =
     member this.OnPropertyChanged(args : PropertyChangedEventArgs) =
         let newProperty = this.GetType().GetProperty(args.PropertyName)
         let newValue = newProperty.GetValue(this :> obj) :?> string
-        printfn "Property %s changed its value to %s" args.PropertyName newValue
+        printfn "Property {args.PropertyName} changed its value to {newValue}"
 
 // Create a form, hook up the event handler, and start the application.
 let appForm = new AppForm()
@@ -152,7 +152,7 @@ type AppForm private (dummy) as this =
     member this.OnPropertyChanged(args : PropertyChangedEventArgs) =
         let newProperty = this.GetType().GetProperty(args.PropertyName)
         let newValue = newProperty.GetValue(this :> obj) :?> string
-        printfn "Property %s changed its value to %s" args.PropertyName newValue
+        printfn "Property {args.PropertyName} changed its value to {newValue}"
 
     new() as this =
         new AppForm(0)

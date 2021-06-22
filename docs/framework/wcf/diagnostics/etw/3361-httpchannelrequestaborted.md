@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3361 - HttpChannelRequestAborted"
 title: "3361 - HttpChannelRequestAborted"
 ms.date: "03/30/2017"
 ms.assetid: 0150156e-9ff9-4f44-b941-2441d40fc265

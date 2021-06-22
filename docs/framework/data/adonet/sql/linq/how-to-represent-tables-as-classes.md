@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Represent Tables as Classes"
 title: "How to: Represent Tables as Classes"
 ms.date: "03/30/2017"
 dev_langs: 

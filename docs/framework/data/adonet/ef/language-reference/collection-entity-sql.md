@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COLLECTION (Entity SQL)"
 title: "COLLECTION (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 03228bfa-be3a-4ccc-82f8-eee429f85cf1

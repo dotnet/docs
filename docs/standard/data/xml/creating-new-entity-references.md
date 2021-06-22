@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating New Entity References"
 title: "Creating New Entity References"
 ms.date: "03/30/2017"
 ms.assetid: a42f81b3-0403-4e34-b346-7d2129804e54

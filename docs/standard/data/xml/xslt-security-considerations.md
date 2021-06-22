@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XSLT Security Considerations"
 title: "XSLT Security Considerations"
 ms.date: "03/30/2017"
 ms.assetid: fea695be-617c-4977-9567-140e820436fc
@@ -58,4 +59,4 @@ The XSLT language has a rich set of features that give you a great deal of power
 
 - [XSLT Transformations](xslt-transformations.md)
 - [Resolving External Resources During XSLT Processing](resolving-external-resources-during-xslt-processing.md)
-- [Code Access Security](../../../framework/misc/code-access-security.md)
+- [Code Access Security](/previous-versions/dotnet/framework/code-access-security/code-access-security)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugFunction2::EnumerateNativeCode Method"
 title: "ICorDebugFunction2::EnumerateNativeCode Method"
 ms.date: "03/30/2017"
 api_name: 

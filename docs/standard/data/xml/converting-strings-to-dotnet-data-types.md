@@ -1,10 +1,11 @@
 ---
+description: "Learn more about: Convert strings to .NET data types"
 title: "Converting Strings to .NET Data Types"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
   - "vb"
-ms.assetid: 65455ef3-9120-412c-819b-d0f59f88ac09
+ms.topic: how-to
 ---
 # Convert strings to .NET data types
 

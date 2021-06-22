@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <security> of <netNamedPipeBinding>"
 title: "<security> of <netNamedPipeBinding>"
 ms.date: "03/30/2017"
 ms.assetid: bb3cb022-637e-49fd-92e8-6766038affa7

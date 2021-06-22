@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::Merge Method"
 title: "IMetaDataEmit::Merge Method"
 ms.date: "03/30/2017"
 api_name: 

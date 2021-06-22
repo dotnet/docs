@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Compare Claims"
 title: "How to: Compare Claims"
 ms.date: "03/30/2017"
 dev_langs:

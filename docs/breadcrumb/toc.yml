@@ -311,25 +311,26 @@ items:
       tocHref: /dotnet/csharp/
       topicHref: /dotnet/csharp/index
       items:
-      - name: Introduction to C#
-        tocHref: /dotnet/csharp/tutorials/intro-to-csharp/
-        topicHref: /dotnet/csharp/tutorials/intro-to-csharp/index
       - name: Get started
-        tocHref: /dotnet/csharp/getting-started/
-        topicHref: /dotnet/csharp/getting-started/index
-        items:
-        - name: Tour of C#
-          tocHref: /dotnet/csharp/tour-of-csharp/
-          topicHref: /dotnet/csharp/tour-of-csharp/index
-      - name: Tutorials
-        tocHref: /dotnet/csharp/tutorials/
-        topicHref: /dotnet/csharp/tutorials/index
-      - name: Tour
         tocHref: /dotnet/csharp/tour-of-csharp/
         topicHref: /dotnet/csharp/tour-of-csharp/index
+        items:
+        - name: Tutorials
+          tocHref: /dotnet/csharp/tour-of-csharp/tutorials/
+          topicHref: /dotnet/csharp/tour-of-csharp/tutorials/index
+      - name: Fundamentals
+        tocHref: /dotnet/csharp/fundamentals/
+        topicHref: /dotnet/csharp/fundamentals/types/index
       - name: What's new
         tocHref: /dotnet/csharp/whats-new/
         topicHref: /dotnet/csharp/whats-new/index
+        items:
+        - name: Tutorials
+          tocHref: /dotnet/csharp/whats-new/tutorials/
+          topicHref: /dotnet/csharp/whats-new/tutorials/records
+      - name: Tutorials
+        tocHref: /dotnet/csharp/tutorials/
+        topicHref: /dotnet/csharp/tutorials/index
       - name: .NET Compiler Platform SDK
         tocHref: /dotnet/csharp/roslyn-sdk/
         topicHref: /dotnet/csharp/roslyn-sdk/index
@@ -435,7 +436,7 @@ items:
         - name: Compiler options
           tocHref: /dotnet/csharp/language-reference/compiler-options/
           topicHref: /dotnet/csharp/language-reference/compiler-options/index
-        - name: Compiler errors
+        - name: Compiler messages
           tocHref: /dotnet/csharp/language-reference/compiler-messages/
           topicHref: /dotnet/csharp/language-reference/compiler-messages/index
         - name: C# 6.0 draft specification
@@ -456,6 +457,9 @@ items:
         - name: C# 8.0 language proposals
           tocHref: /dotnet/csharp/language-reference/proposals/csharp-8.0/
           topicHref: /dotnet/csharp/language-reference/proposals/csharp-8.0/index
+        - name: Compiler messages
+          tocHref: /dotnet/csharp/misc
+          topicHref: /dotnet/csharp/language-reference/compiler-messages/index
     - name: F# guide
       tocHref: /dotnet/fsharp/
       topicHref: /dotnet/fsharp/index
@@ -581,3 +585,6 @@ items:
     - name: .NET IoT Libraries
       tocHref: /dotnet/iot/
       topicHref: /dotnet/iot/index
+    - name: What's new
+      tocHref: /dotnet/whats-new/
+      topicHref: /dotnet/whats-new/index

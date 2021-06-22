@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dynamic Update"
 title: "Dynamic Update"
 ms.date: "03/30/2017"
 ms.assetid: 8b6ef19b-9691-4b4b-824c-3c651a9db96e
@@ -53,9 +54,6 @@ ActivityBuilder ab = XamlServices.Load(
 // Prepare the workflow definition for dynamic update.
 DynamicUpdateServices.PrepareForUpdate(ab);
 ```
-
-> [!NOTE]
-> To download the sample code that accompanies this topic, see [Dynamic Update sample code](https://go.microsoft.com/fwlink/?LinkId=227905).
 
 ### <a name="Update"></a> Update the workflow definition to reflect the desired changes
 
@@ -191,6 +189,3 @@ wfApp.Load(InstanceId);
 // Resume the workflow.
 // wfApp.ResumeBookmark(...);
 ```
-
-> [!NOTE]
-> To download the sample code that accompanies this topic, see [Dynamic Update sample code](https://go.microsoft.com/fwlink/?LinkId=227905).

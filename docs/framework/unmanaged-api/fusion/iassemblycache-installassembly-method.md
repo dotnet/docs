@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAssemblyCache::InstallAssembly Method"
 title: "IAssemblyCache::InstallAssembly Method"
 ms.date: "03/30/2017"
 api_name: 

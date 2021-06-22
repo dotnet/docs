@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: InitDbgTransportManager Function"
 title: "InitDbgTransportManager Function"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::DefineModuleRef Method"
 title: "IMetaDataEmit::DefineModuleRef Method"
 ms.date: "03/30/2017"
 api_name: 

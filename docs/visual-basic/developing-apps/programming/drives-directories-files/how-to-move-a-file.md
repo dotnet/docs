@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Move a File in Visual Basic"
 title: "How to: Move a File"
 ms.date: 07/20/2015
 helpviewer_keywords: 

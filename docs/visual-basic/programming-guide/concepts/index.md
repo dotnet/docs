@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Programming Concepts (Visual Basic)"
 title: "Programming concepts"
 ms.date: 02/27/2017
 ms.assetid: cc9cac84-61f6-476e-b8c7-9bae7749bd90

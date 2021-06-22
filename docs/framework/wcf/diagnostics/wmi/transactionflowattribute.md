@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TransactionFlowAttribute"
 title: "TransactionFlowAttribute"
 ms.date: "03/30/2017"
 ms.assetid: 0a9c8674-29f7-4f14-aa1f-dc2644ca57e4

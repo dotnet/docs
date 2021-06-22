@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.PortSharing.TransportListenerListenRequest"
 title: "System.ServiceModel.PortSharing.TransportListenerListenRequest"
 ms.date: "03/30/2017"
 ms.assetid: 6b72086d-a047-4316-854e-2c210d3d52fe

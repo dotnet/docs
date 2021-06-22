@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: foreign key property"
 title: "foreign key property"
 ms.date: "03/30/2017"
 ms.assetid: 23cb6729-544d-4f67-9ee7-44e8a6545587

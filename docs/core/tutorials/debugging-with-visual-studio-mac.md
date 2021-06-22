@@ -1,15 +1,16 @@
 ---
-title: Debug a .NET Core console application using Visual Studio for Mac
-description: Learn how to debug a .NET Core console app using Visual Studio Mac.
-ms.date: 06/08/2020
+title: Debug a .NET console application using Visual Studio for Mac
+description: Learn how to debug a .NET console app using Visual Studio Mac.
+ms.date: 11/30/2020
+recommendations: false
 ---
-# Tutorial: Debug a .NET Core console application using Visual Studio for Mac
+# Tutorial: Debug a .NET console application using Visual Studio for Mac
 
 This tutorial introduces the debugging tools available in Visual Studio for Mac.
 
 ## Prerequisites
 
-- This tutorial works with the console app that you create in [Create a .NET Core console application using Visual Studio for Mac](with-visual-studio-mac.md).
+- This tutorial works with the console app that you create in [Create a .NET console application using Visual Studio for Mac](with-visual-studio-mac.md).
 
 ## Use Debug build configuration
 
@@ -21,7 +22,7 @@ By default, Visual Studio for Mac uses the Debug build configuration, so you don
 
 1. Start Visual Studio for Mac.
 
-1. Open the project that you created in [Create a .NET Core console application using Visual Studio for Mac](with-visual-studio-mac.md).
+1. Open the project that you created in [Create a .NET console application using Visual Studio for Mac](with-visual-studio-mac.md).
 
    The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile the Debug version of the app:
 
@@ -53,7 +54,7 @@ The **Immediate** window lets you interact with the application you're debugging
 
 1. Enter `name = "Gracie"` in the **Immediate** window and press <kbd>enter</kbd>.
 
-1. Enter `date = date.AddDays(1)` in the **Immediate** window and press <kbd>enter</kbd>.
+1. Enter `currentDate = currentDate.AddDays(1)` in the **Immediate** window and press <kbd>enter</kbd>.
 
    The **Immediate** window displays the new value of the string variable and the properties of the <xref:System.DateTime> value.
 
@@ -129,7 +130,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    :::image type="content" source="media/debugging-with-visual-studio-mac/step-into-method.png" alt-text="Visual Studio step into method":::
 
-   At this point, the **Locals** window shows that the `args` array is empty, and `name` and `date` have default values. In addition, Visual Studio has opened a blank terminal.
+   At this point, the **Locals** window shows that the `args` array is empty, and `name` and `currentDate` have default values. In addition, Visual Studio has opened a blank terminal.
 
 1. Press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>I</kbd> (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>).
 
@@ -139,11 +140,11 @@ Visual Studio also allows you to step line by line through a program and monitor
 
 1. Press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>I</kbd> (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>).
 
-   Visual Studio highlights the statement that includes the `date` variable assignment. The **Locals** window shows the value returned by the call to the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method. The terminal displays the string you entered at the prompt.
+   Visual Studio highlights the statement that includes the `currentDate` variable assignment. The **Locals** window shows the value returned by the call to the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method. The terminal displays the string you entered at the prompt.
 
 1. Press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>I</kbd> (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>).
 
-   The **Locals** window shows the value of the `date` variable after the assignment from the <xref:System.DateTime.Now?displayProperty=nameWithType> property. The terminal is unchanged.
+   The **Locals** window shows the value of the `currentDate` variable after the assignment from the <xref:System.DateTime.Now?displayProperty=nameWithType> property. The terminal is unchanged.
 
 1. Press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>I</kbd> (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>).
 
@@ -163,7 +164,7 @@ To build and test the Release version of the console application, do the followi
 
 1. Change the build configuration on the toolbar from **Debug** to **Release**.
 
-   :::image type="content" source="media/debugging-with-visual-studio-mac/visual-studio-toolbar-release.png" alt-text="default Visual Studio toolbar with debug highlighted":::
+   :::image type="content" source="media/debugging-with-visual-studio-mac/visual-studio-toolbar-release.png" alt-text="default Visual Studio toolbar with release highlighted":::
 
 1. Press <kbd>⌥</kbd><kbd>⌘</kbd><kbd>↵</kbd> (<kbd>option</kbd>+<kbd>command</kbd>+<kbd>enter</kbd>) to run without debugging.
 
@@ -172,4 +173,4 @@ To build and test the Release version of the console application, do the followi
 In this tutorial, you used Visual Studio debugging tools. In the next tutorial, you publish a deployable version of the app.
 
 > [!div class="nextstepaction"]
-> [Publish a .NET Core console application using Visual Studio for Mac](publishing-with-visual-studio-mac.md)
+> [Publish a .NET console application using Visual Studio for Mac](publishing-with-visual-studio-mac.md)

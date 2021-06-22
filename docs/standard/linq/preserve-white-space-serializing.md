@@ -2,7 +2,7 @@
 title: Preserve white space while serializing - LINQ to XML
 description: You can control white space in various ways when serializing an XML tree.
 ms.date: 07/20/2015
-ms.assetid: 0c4f8b98-483b-4cf8-86be-fa146eef90dc
+ms.topic: how-to
 ---
 
 # Preserve white space while serializing (LINQ to XML)

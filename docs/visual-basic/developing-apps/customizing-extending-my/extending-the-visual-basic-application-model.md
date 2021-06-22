@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Extending the Visual Basic Application Model"
 title: "Extending the Visual Basic Application Model"
 ms.date: 07/20/2015
 helpviewer_keywords:

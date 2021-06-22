@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XmlDictionaryReaderQuotas"
 title: "XmlDictionaryReaderQuotas"
 ms.date: "03/30/2017"
 ms.assetid: 9b4ca8b4-0a89-4758-97ab-528a8ce18f07

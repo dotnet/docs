@@ -1,7 +1,7 @@
 ---
 title: Migrate a WCF request-reply service to gRPC - gRPC for WCF developers
 description: Learn how to migrate a simple request-reply service from WCF to gRPC.
-ms.date: 09/02/2019
+ms.date: 12/15/2020
 ---
 
 # Migrate a WCF request-reply service to a gRPC unary RPC
@@ -104,7 +104,7 @@ The first step is to migrate the `DataContract` classes to their Protobuf equiva
 The `PortfolioItem` class will be converted to a Protobuf message first, because the `Portfolio` class depends on it. The class is simple, and three of the properties map directly to gRPC data types. The `Cost` property, which represents the price paid for the shares at purchase, is a `decimal` field. gRPC supports only `float` or `double` for real numbers, which aren't suitable for currency. Because share prices vary by a minimum of one cent, the cost can be expressed as an `int32` of cents.
 
 > [!NOTE]
-> Remember to use camelCase for field names in your `.proto` file. The C# code generator will convert them to PascalCase for you, and users of other languages will thank you for respecting their different coding standards.
+> Remember to use `snake_case` for field names in your `.proto` file. The C# code generator will convert them to `PascalCase` for you, and users of other languages will thank you for respecting their different coding standards.
 
 ```protobuf
 message PortfolioItem {
@@ -191,7 +191,7 @@ The signature for all gRPC unary service methods in ASP.NET Core is consistent. 
 
 The method's return type is a `Task<T>`, where `T` is the response message type. All gRPC service methods are asynchronous.
 
-## Migrate the PortfolioData library to .NET Core
+## Migrate the PortfolioData library to .NET
 
 At this point, the project needs the Portfolio repository and models contained in the `TraderSys.PortfolioData` class library in the WCF solution. The easiest way to bring them across is to create a new class library by using either the Visual Studio **New project** dialog box with the Class Library (.NET Standard) template, or from the command line by using the .NET Core CLI, running these commands from the directory that contains the `TraderSys.sln` file:
 
@@ -390,7 +390,7 @@ Having successfully migrated the WCF request-reply service to gRPC, let's look a
 Create a .NET Standard class library in the same solution to contain the client. This is primarily an example of creating client code, but you could package such a library by using NuGet and distribute it on an internal repository for other .NET teams to consume. Go ahead and add a new .NET Standard class library called `TraderSys.Portfolios.Client` to the solution and delete the `Class1.cs` file.
 
 > [!CAUTION]
-> The [Grpc.Net.Client](https://www.nuget.org/packages/Grpc.Net.Client) NuGet package requires .NET Core 3.0 (or another .NET Standard 2.1-compliant runtime). Earlier versions of .NET Framework and .NET Core are supported by the [Grpc.Core](https://www.nuget.org/packages/Grpc.Core) NuGet package.
+> The [Grpc.Net.Client](https://www.nuget.org/packages/Grpc.Net.Client) NuGet package requires .NET Core 3.0 or later (or another .NET Standard 2.1-compliant runtime). Earlier versions of .NET Framework and .NET Core are supported by the [Grpc.Core](https://www.nuget.org/packages/Grpc.Core) NuGet package.
 
 In Visual Studio 2019, you can add references to gRPC services in a way that's similar to how you'd add service references to WCF projects in earlier versions of Visual Studio. Service references and connected services are all managed under the same UI now. You can access the UI by right-clicking the **Dependencies** node in the `TraderSys.Portfolios.Client` project in Solution Explorer and selecting **Add Connected Service**. In the tool window that appears, select the **Service References** section and then select **Add new gRPC service reference**:
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugStackWalk::Next Method"
 title: "ICorDebugStackWalk::Next Method"
 ms.date: "03/30/2017"
 api_name: 

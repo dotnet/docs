@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Function procedures (Visual Basic)"
 title: Function procedures
 ms.date: 07/20/2015
 helpviewer_keywords:

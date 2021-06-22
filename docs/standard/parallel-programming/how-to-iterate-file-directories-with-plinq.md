@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Iterate File Directories with PLINQ"
 title: "How to: Iterate File Directories with PLINQ"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

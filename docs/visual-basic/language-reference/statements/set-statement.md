@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Set Statement (Visual Basic)"
 title: "Set Statement"
 ms.date: 07/20/2015
 f1_keywords: 

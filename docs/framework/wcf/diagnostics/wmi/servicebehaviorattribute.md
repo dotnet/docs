@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ServiceBehaviorAttribute"
 title: "ServiceBehaviorAttribute"
 ms.date: "03/30/2017"
 ms.assetid: 5faa266f-587f-4e03-828d-1c7dd5acfe65

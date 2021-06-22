@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ITypeNameBuilder::AddAssemblySpec Method"
 title: "ITypeNameBuilder::AddAssemblySpec Method"
 ms.date: "03/30/2017"
 api_name: 

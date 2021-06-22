@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Programming in Visual Basic"
 title: "Programming"
 ms.date: 07/20/2015
 helpviewer_keywords: 

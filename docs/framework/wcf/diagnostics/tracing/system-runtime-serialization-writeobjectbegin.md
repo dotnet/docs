@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.Runtime.Serialization.WriteObjectBegin"
 title: "System.Runtime.Serialization.WriteObjectBegin"
 ms.date: "03/30/2017"
 ms.assetid: 1f4cb7f1-8bf2-4b6d-b693-43a83c74260a

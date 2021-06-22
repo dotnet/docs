@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugRegisterSet2 Interface"
 title: "ICorDebugRegisterSet2 Interface"
 ms.date: "03/30/2017"
 api_name: 

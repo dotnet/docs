@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 403 - SuspendSignpostEvent"
 title: "403 - SuspendSignpostEvent"
 ms.date: "03/30/2017"
 ms.assetid: fb2e6f29-e556-47b4-b4c1-acd6b8879702

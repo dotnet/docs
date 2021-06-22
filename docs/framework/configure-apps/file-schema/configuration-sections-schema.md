@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Configuration sections schema"
 title: "Configuration sections schema"
 ms.date: "05/02/2017"
 helpviewer_keywords: 

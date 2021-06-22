@@ -31,7 +31,7 @@ The articles in this section of the documentation are organized by category, for
 
 ## runtimeconfig.json
 
-When a project is [built](../tools/dotnet-build.md), an *[appname].runtimeconfig.json* file is generated in the output directory. If a *runtimeconfig.template.json* file exists in the same folder as the project file, any configuration options it contains are merged into the *[appname].runtimeconfig.json* file. If you're building the app yourself, put any configuration options in the *runtimeconfig.template.json* file. If you're just running the app, insert them directly into the *[appname].runtimeconfig.json* file.
+When a project is [built](../tools/dotnet-build.md), an *[appname].runtimeconfig.json* file is generated in the output directory. If a *runtimeconfig.template.json* file exists in the same folder as the project file, any configuration options it contains are inserted into the *[appname].runtimeconfig.json* file. If you're building the app yourself, put any configuration options in the *runtimeconfig.template.json* file. If you're just running the app, insert them directly into the *[appname].runtimeconfig.json* file.
 
 > [!NOTE]
 > The *[appname].runtimeconfig.json* file will get overwritten on subsequent builds.
@@ -82,7 +82,7 @@ If you're placing the options in the template JSON file, omit the `runtimeOption
 
 ## MSBuild properties
 
-Some run-time configuration options can be set using MSBuild properties in the *.csproj* or *.vbproj* file of SDK-style .NET Core projects. MSBuild properties take precedence over options set in the *runtimeconfig.template.json* file. They also overwrite any options you set in the *[appname].runtimeconfig.json* file at build time.
+Some run-time configuration options can be set using MSBuild properties in the *.csproj* or *.vbproj* file of SDK-style .NET Core projects. MSBuild properties take precedence over options set in the *runtimeconfig.template.json* file.
 
 Here is an example SDK-style project file with MSBuild properties for configuring run-time behavior:
 
@@ -107,7 +107,9 @@ MSBuild properties for configuring run-time behavior are noted in the individual
 
 ## Environment variables
 
-Environment variables can be used to supply some run-time configuration information. Configuring a run-time option by using an environment variable applies the setting to all .NET Core apps. Configuration knobs specified as environment variables generally have the prefix **COMPlus_**.
+Environment variables can be used to supply some run-time configuration information. Configuring a run-time option by using an environment variable applies the setting to all .NET Core apps. Configuration knobs specified as environment variables generally have the prefix **DOTNET_**.
+
+[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
 You can define environment variables from the Windows Control Panel, at the command line, or programmatically by calling the <xref:System.Environment.SetEnvironmentVariable(System.String,System.String)?displayProperty=nameWithType> method on both Windows and Unix-based systems.
 
@@ -115,11 +117,11 @@ The following examples show how to set an environment variable at the command li
 
 ```shell
 # Windows
-set COMPlus_GCRetainVM=1
+set DOTNET_GCRetainVM=1
 
 # Powershell
-$env:COMPlus_GCRetainVM="1"
+$env:DOTNET_GCRetainVM="1"
 
 # Unix
-export COMPlus_GCRetainVM=1
+export DOTNET_GCRetainVM=1
 ```

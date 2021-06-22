@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <dataContractSerializer>"
 title: "<dataContractSerializer>"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

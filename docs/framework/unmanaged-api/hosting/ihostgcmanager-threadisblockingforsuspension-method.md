@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostGCManager::ThreadIsBlockingForSuspension Method"
 title: "IHostGCManager::ThreadIsBlockingForSuspension Method"
 ms.date: "03/30/2017"
 api_name: 

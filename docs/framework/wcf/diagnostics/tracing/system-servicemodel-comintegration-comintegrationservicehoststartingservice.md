@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ComIntegration.ComIntegrationServiceHostStartingService"
 title: "System.ServiceModel.ComIntegration.ComIntegrationServiceHostStartingService"
 ms.date: "03/30/2017"
 ms.assetid: d748b1bc-5f8f-457c-918f-aadbc1c580f6

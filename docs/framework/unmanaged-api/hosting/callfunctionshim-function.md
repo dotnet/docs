@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CallFunctionShim Function"
 title: "CallFunctionShim Function"
 ms.date: "03/30/2017"
 api_name: 

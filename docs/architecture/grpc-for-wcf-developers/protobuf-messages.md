@@ -1,7 +1,7 @@
 ---
 title: Protobuf messages - gRPC for WCF developers
 description: Learn how Protobuf messages are defined in the IDL and generated in C#.
-ms.date: 09/09/2019
+ms.date: 12/15/2020
 ---
 
 # Protobuf messages
@@ -57,9 +57,9 @@ The `Stock` message definition specifies four fields. Each has a type, a name, a
 
 ## Field numbers
 
-Field numbers are an important part of Protobuf. They're used to identify fields in the binary encoded data, which means they can't change from version to version of your service. The advantage is that backward compatibility and forward compatibility are possible. Clients and services will simply ignore field numbers that they don't know about, as long as the possibility of missing values is handled.
+Field numbers are an important part of Protobuf. They're used to identify fields in the binary encoded data, which means they can't change from version to version of your service. The advantage is that backward compatibility and forward compatibility are possible. Clients and services will ignore field numbers that they don't know about, as long as the possibility of missing values is handled.
 
-In the binary format, the field number is combined with a type identifier. Field numbers from 1 to 15 can be encoded with their type as a single byte. Numbers from 16 to 2,047 take 2 bytes. You can go higher if you need more than 2,047 fields on a message for any reason. The single byte identifiers for field numbers 1 to 15 offer better performance, so you should use them for the most basic, frequently used fields.
+In the binary format, the field number is combined with a type identifier. Field numbers from 1 to 15 can be encoded with their type as a single byte. Numbers from 16 to 2,047 take 2 bytes. You can go higher if you need more than 2,047 fields on a message for any reason. The single-byte identifiers for field numbers 1 to 15 offer better performance, so you should use them for the most basic, frequently used fields.
 
 ## Types
 

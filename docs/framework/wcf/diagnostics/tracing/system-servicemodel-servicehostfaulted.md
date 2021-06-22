@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ServiceHostFaulted"
 title: "System.ServiceModel.ServiceHostFaulted"
 ms.date: "03/30/2017"
 ms.assetid: 58cf2adc-a6ef-46d8-8e73-e127287b42a2

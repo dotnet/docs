@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugModule::IsInMemory Method"
 title: "ICorDebugModule::IsInMemory Method"
 ms.date: "03/30/2017"
 api_name: 

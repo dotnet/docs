@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IBindingDisplay::InitializeForProcess Method"
 title: "IBindingDisplay::InitializeForProcess Method"
 ms.date: "03/30/2017"
 api_name: 

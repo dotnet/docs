@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostMemoryManager::ReleasedVirtualAddressSpace Method"
 title: "IHostMemoryManager::ReleasedVirtualAddressSpace Method"
 ms.date: "03/30/2017"
 api_name: 

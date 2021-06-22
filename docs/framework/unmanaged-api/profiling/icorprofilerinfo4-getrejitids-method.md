@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo4::GetReJITIDs Method"
 title: "ICorProfilerInfo4::GetReJITIDs Method"
 ms.date: "03/30/2017"
 api_name: 

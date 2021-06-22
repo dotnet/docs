@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Unordered Node Retrieval by Name or Index"
 title: "Unordered Node Retrieval by Name or Index"
 ms.date: "03/30/2017"
 dev_langs: 

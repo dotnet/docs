@@ -2,6 +2,7 @@
 title: "How to: Build a multifile assembly"
 description: Learn how to build (create) a multifile assembly in .NET using sample code to illustrate each step in the procedure.
 ms.date: "08/20/2019"
+ms.topic: how-to
 helpviewer_keywords:
   - "assemblies [.NET Framework], multifile"
   - "entry point for assembly"

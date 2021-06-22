@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft.Transactions.TransactionBridge.EnlistmentIdentityCheckFailed"
 title: "Microsoft.Transactions.TransactionBridge.EnlistmentIdentityCheckFailed"
 ms.date: "03/30/2017"
 ms.assetid: 74aeb3e7-f9eb-4491-9e78-5f8c9cbcb434

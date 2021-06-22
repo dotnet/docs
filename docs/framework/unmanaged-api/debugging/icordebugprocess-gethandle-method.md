@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess::GetHandle Method"
 title: "ICorDebugProcess::GetHandle Method"
 ms.date: "03/30/2017"
 api_name: 

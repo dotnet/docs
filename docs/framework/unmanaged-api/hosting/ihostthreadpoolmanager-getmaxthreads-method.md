@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostThreadPoolManager::GetMaxThreads Method"
 title: "IHostThreadPoolManager::GetMaxThreads Method"
 ms.date: "03/30/2017"
 api_name: 

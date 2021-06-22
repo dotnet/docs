@@ -1,7 +1,7 @@
 ---
 title: Kubernetes - gRPC for WCF developers
 description: Running ASP.NET Core gRPC services in a Kubernetes cluster.
-ms.date: 09/02/2019
+ms.date: 12/15/2020
 ---
 
 # Kubernetes
@@ -61,7 +61,7 @@ Kubernetes clusters are designed to scale to hundreds or thousands of nodes and 
 
 If you're running Docker Desktop for Windows or Docker Desktop for Mac, Kubernetes is already available. Just enable it in the **Kubernetes** section of the **Settings** window:
 
-![Enable Kubernetes in Docker Desktop](media/kubernetes/enable-kubernetes-docker-desktop.png)
+![Enable Kubernetes in Docker Desktop](media/kubernetes/enable-kubernetes-docker-desktop-v2.png)
 
 To run a local Kubernetes cluster on Linux, consider [minikube](https://github.com/kubernetes/minikube), or [MicroK8s](https://microk8s.io/) if your Linux distribution supports [snaps](https://snapcraft.io/).
 
@@ -69,15 +69,15 @@ To confirm that your cluster is running and accessible, run the `kubectl version
 
 ```console
 kubectl version
-Client Version: version.Info{Major:"1", Minor:"14", GitVersion:"v1.14.6", GitCommit:"96fac5cd13a5dc064f7d9f4f23030a6aeface6cc", GitTreeState:"clean", BuildDate:"2019-08-19T11:13:49Z", GoVersion:"go1.12.9", Compiler:"gc", Platform:"windows/amd64"}
-Server Version: version.Info{Major:"1", Minor:"14", GitVersion:"v1.14.6", GitCommit:"96fac5cd13a5dc064f7d9f4f23030a6aeface6cc", GitTreeState:"clean", BuildDate:"2019-08-19T11:05:16Z", GoVersion:"go1.12.9", Compiler:"gc", Platform:"linux/amd64"}
+Client Version: version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.3", GitCommit:"1e11e4a2108024935ecfcb2912226cedeafd99df", GitTreeState:"clean", BuildDate:"2020-10-14T12:50:19Z", GoVersion:"go1.15.2", Compiler:"gc", Platform:"windows/amd64"}
+Server Version: version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.3", GitCommit:"1e11e4a2108024935ecfcb2912226cedeafd99df", GitTreeState:"clean", BuildDate:"2020-10-14T12:41:49Z", GoVersion:"go1.15.2", Compiler:"gc", Platform:"linux/amd64"}
 ```
 
 In this example, both the `kubectl` CLI and the Kubernetes server are running version 1.14.6. Each version of `kubectl` is supposed to support the previous and next version of the server, so `kubectl` 1.14 should work with server versions 1.13 and 1.15 as well.
 
 ## Run services on Kubernetes
 
-The sample application has a `kube` directory that contains three YAML files. The `namespace.yml` file declares a custom namespace: `stocks`. The `stockdata.yml` file declares the Deployment and the Service for the gRPC application, and the `stockweb.yml` file declares the Deployment and Service for an ASP.NET Core 3.0 MVC web application that consumes the gRPC service.
+The sample application has a `kube` directory that contains three YAML files. The `namespace.yml` file declares a custom namespace: `stocks`. The `stockdata.yml` file declares the Deployment and the Service for the gRPC application, and the `stockweb.yml` file declares the Deployment and Service for an ASP.NET Core 5.0 MVC web application that consumes the gRPC service.
 
 To use a `YAML` file with `kubectl`, run the `apply -f` command:
 
@@ -85,7 +85,7 @@ To use a `YAML` file with `kubectl`, run the `apply -f` command:
 kubectl apply -f object.yml
 ```
 
-The `apply` command will check the validity of the YAML file and display any errors received from the API, but doesn't wait until all the objects declared in the file have been created because this can take some time. Use the `kubectl get` command with the relevant object types to check on object creation in the cluster.
+The `apply` command will check the validity of the YAML file and display any errors received from the API, but doesn't wait until all the objects declared in the file have been created because this step can take some time. Use the `kubectl get` command with the relevant object types to check on object creation in the cluster.
 
 ### The namespace declaration
 
@@ -157,7 +157,7 @@ The `ports` property specifies which container ports should be published on the 
 The `resources` section applies resource limits to the container running within the Pod. This is a good practice because it prevents an individual Pod from consuming all the available CPU or memory on a node.
 
 > [!NOTE]
-> ASP.NET Core 3.0 has been optimized and tuned to run in resource-limited containers. The `dotnet/core/aspnet` Docker image sets an environment variable to tell the `dotnet` runtime that it's in a container.
+> ASP.NET Core 5.0 has been optimized and tuned to run in resource-limited containers. The `dotnet/core/aspnet` Docker image sets an environment variable to tell the `dotnet` runtime that it's in a container.
 
 #### The StockData Service
 
@@ -289,7 +289,7 @@ NAME       TYPE       CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
 stockweb   NodePort   10.106.141.5   <none>        80:32564/TCP   13s
 ```
 
-The output of the `get service` command shows that the HTTP port has been published to port 32564 on the external network. For Docker Desktop, this will be localhost. You can access the application by browsing to `http://localhost:32564`.
+The output of the `get service` command shows that the HTTP port has been published to port `32564` on the external network. For Docker Desktop, this IP address will be localhost. You can access the application by browsing to `http://localhost:32564`.
 
 ### Test the application
 
@@ -299,7 +299,7 @@ The StockWeb application displays a list of NASDAQ stocks that are retrieved fro
 
 If the number of replicas of the `stockdata` Service were increased, you might expect the **Server** value to change from line to line, but in fact all 100 records are always returned from the same instance. If you refresh the page every few seconds, the server ID remains the same. Why does this happen? There are two factors at play here.
 
-First, the Kubernetes Service discovery system uses round-robin load balancing by default. The first time the DNS server is queried, it will return the first matching IP address for the Service. The next time, it will return the next IP address in the list, and so on, until the end. At that point it loops back to the start.
+First, the Kubernetes Service discovery system uses round-robin load balancing by default. The first time the DNS server is queried, it will return the first matching IP address for the Service. The next time, it will return the next IP address in the list, and so on, until the end. At that point, it loops back to the start.
 
 Second, the `HttpClient` used for the StockWeb application's gRPC client is created and managed by the [ASP.NET Core HttpClientFactory](../microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests.md), and a single instance of this client is used for every call to the page. The client only does one DNS lookup, so all requests are routed to the same IP address. And because the `HttpClientHandler` is cached for performance reasons, multiple requests in quick succession will *all* use the same IP address, until the cached DNS entry expires or the handler instance is disposed for some reason.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: StrongNameSignatureVerificationEx2 Method"
 title: "StrongNameSignatureVerificationEx2 Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: StrongNameSignatureVerificationFromImage Function"
 title: "StrongNameSignatureVerificationFromImage Function"
 ms.date: "03/30/2017"
 api_name: 

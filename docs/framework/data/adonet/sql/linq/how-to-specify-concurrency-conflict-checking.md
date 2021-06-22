@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Specify Concurrency-Conflict Checking"
 title: "How to: Specify Concurrency-Conflict Checking"
 ms.date: "03/30/2017"
 dev_langs: 

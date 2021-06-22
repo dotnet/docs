@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::AppDomainShutdownStarted Method"
 title: "ICorProfilerCallback::AppDomainShutdownStarted Method"
 ms.date: "03/30/2017"
 api_name: 
@@ -29,9 +30,8 @@ HRESULT AppDomainShutdownStarted(
   
 ## Parameters
 
-- `appDomainId`
-
-  \[in] Identifies the domain in which the application's assemblies are stored.
+`appDomainId`
+[in] Identifies the domain in which the application's assemblies are stored.
 
 ## Remarks  
 

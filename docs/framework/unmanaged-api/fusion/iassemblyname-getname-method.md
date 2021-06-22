@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAssemblyName::GetName Method"
 title: "IAssemblyName::GetName Method"
 ms.date: "03/30/2017"
 api_name: 

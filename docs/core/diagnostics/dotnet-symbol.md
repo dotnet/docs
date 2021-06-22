@@ -2,6 +2,7 @@
 title: dotnet-symbol diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-symbol CLI tool to download files required for debugging .NET dumps and minidumps. 
 ms.date: 11/17/2020
+ms.topic: reference
 ---
 # Symbol downloader (dotnet-symbol)
 
@@ -9,7 +10,7 @@ ms.date: 11/17/2020
 
 ## Install
 
-To install the latest release version of the `dotnet-trace` [NuGet package](https://www.nuget.org/packages/dotnet-trace), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
+To install the latest release version of the `dotnet-symbol` [NuGet package](https://www.nuget.org/packages/dotnet-symbol), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
 ```dotnetcli
 dotnet tool install --global dotnet-symbol
@@ -49,7 +50,7 @@ The `dotnet-symbol` global tool downloads files (symbols, DAC, modules, etc.) ne
 
 - **`--host-only`**
 
-  Download only the host program (i.e. dotnet) that lldb needs for loading core dumps.
+  Download only the host program (that is, dotnet) that lldb needs for loading core dumps.
 
 - **`--symbols`**
 
@@ -91,4 +92,9 @@ dotnet-symbol --host-only --debugging <dump file path>
 
 - 404 Not Found while downloading symbols.
 
-   Symbol download is only supported for official .NET Core runtime versions acquired through official channels such as [the official web site](https://dotnet.microsoft.com/download/dotnet-core) and the [default sources in the dotnet installation scripts](../tools/dotnet-install-script.md). A 404 error while downloading debugging files may indicate that the dump was created with a .NET Core runtime from another source, such as one built from source locally or for a particular Linux distro, or from community sites like archlinux. In such cases, file necessary for debugging (dotnet, libcoreclr.so, and libmscordaccore.so) should be copied from those sources or from the environment the dump file was created in.
+   Symbol download is only supported for official .NET Core runtime versions acquired through official channels such as [the official web site](https://dotnet.microsoft.com/download/dotnet) and the [default sources in the dotnet installation scripts](../tools/dotnet-install-script.md). A 404 error while downloading debugging files may indicate that the dump was created with a .NET Core runtime from another source, such as one built from source locally or for a particular Linux distro, or from community sites like archlinux. In such cases, file necessary for debugging (dotnet, libcoreclr.so, and libmscordaccore.so) should be copied from those sources or from the environment the dump file was created in.
+
+## See also
+
+* [Debugging with symbols](/windows/win32/dxtecharts/debugging-with-symbols)
+* [Symbols and Portable PDBs](./symbols.md)

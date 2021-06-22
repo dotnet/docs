@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <add> of <claimTypeRequirements>"
 title: "<add> of <claimTypeRequirements>"
 ms.date: "03/30/2017"
 ms.assetid: c68e83c9-39e8-4264-b1ce-b6a9eb5b98aa
@@ -87,4 +88,4 @@ Specifies the types of required and optional claims expected to appear in the fe
 - [Custom Bindings](../../../wcf/extending/custom-bindings.md)
 - [\<customBinding>](custombinding.md)
 - [How to: Create a Custom Binding Using the SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
-- [Custom Binding Security](../../../wcf/samples/custom-binding-security.md)
+- [Custom Binding Security](/previous-versions/dotnet/framework/wcf/samples/custom-binding-security)

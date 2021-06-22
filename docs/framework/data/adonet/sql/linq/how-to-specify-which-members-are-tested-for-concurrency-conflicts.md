@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Specify Which Members are Tested for Concurrency Conflicts"
 title: "How to: Specify Which Members are Tested for Concurrency Conflicts"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,7 +1,7 @@
 ---
 title: Walkthroughs and technical get started overview
 description: Modernize Existing .NET Applications With Azure Cloud and Windows Containers | Walkthroughs and technical get started overview
-ms.date: 04/28/2018
+ms.date: 12/21/2020
 ---
 
 # Walkthroughs and technical get started overview
@@ -112,7 +112,7 @@ There are advantages to running your monolithic application in a container. Firs
 
 An additional benefit is that developers can run the application in the consistent environment that's provided by Windows Containers. Issues that appear only with certain versions can be spotted immediately, instead of surfacing in a staging or production environment. Differences in development environments used by members of the development team matter less when applications run in containers.
 
-Containerized applications also have a flatter scale-out curve. Containerized apps enable you to have more application and service instances (based on containers) in a VM or physical machine compared to regular application deployments per machine. This translates to higher density and fewer required resources, especially when you use orchestrators like Kubernetes.
+Containerized applications also have a flatter scale-out curve. Containerized apps enable you to have more application and service instances (based on containers) in a VM or physical machine compared to regular application deployments per machine. This approach translates to higher density and fewer required resources, especially when you use orchestrators like Kubernetes.
 
 Containerization, in ideal situations, does not require making any changes to the application code (C\#). In most scenarios, you just need the Docker deployment metadata files (Dockerfiles and Docker Compose files).
 
@@ -194,7 +194,7 @@ This walkthrough shows you the main scenarios when deploying Windows Containers 
 
 ### Scenarios
 
-There can be variations about deploying the eShopModernizing apps into ACI such as deploying just one or all of the apps (MVC app, WebForms app or WCF service). In the following scenario shown below you can see the ASP.NET MVC app plus the SQL Server container both of them deployed as containers into ACI (Azure Container Instances).
+There can be variations about deploying the eShopModernizing apps into ACI such as deploying just one or all of the apps (MVC app, WebForms app or WCF service). In the following scenario shown below, you can see the ASP.NET MVC app plus the SQL Server container both of them deployed as containers into ACI (Azure Container Instances).
 
 ![Deploy to ACI from a development environment](./media/image5-3.5.6.png)
 
@@ -206,7 +206,7 @@ Azure Container Instances makes it easy to create and manage Docker containers i
 
 Deploying Windows Containers with either full .NET Framework / ASP.NET or SQL Server into Azure Container Instances (ACI) is not quite as fast as deploying to a regular Docker Host (like a Windows Server 2016 with Windows Containers) because the Docker image has to be downloaded (pulled from the Docker registry) every time and the sizes of the SQL container image (15.1 GB) and the ASP.NET container image (13.9 GB) are significantly large, however it is much cheaper than maintaining your own docker host (permanently on-line Windows Server 2016 with Windows Containers VM in Azure) not to mention a whole orchestrator like Kubernetes in Azure (AKS) which is, on the other hand, a great choice for production deployments.
 
-As main conclusion, using Azure Container Instances is a very compelling option for Dev/Test scenarios and for CI/CD pipelines.
+As the main conclusion, using Azure Container Instances is a very compelling option for Dev/Test scenarios and for CI/CD pipelines.
 
 ### Next steps
 
@@ -224,7 +224,7 @@ The full technical walkthrough is available in the eShopModernizing GitHub repo 
 
 ### Overview
 
-An application that's based on Windows Containers will quickly need to use platforms, moving even further away from IaaS VMs. This is needed to easily achieve high scalability and better automated scalability, and for a significant improvement in automated deployments and versioning. You can achieve these goals by using the orchestrator [Kubernetes](https://kubernetes.io/), available in [Azure Container Services](https://azure.microsoft.com/services/container-service/).
+An application that's based on Windows Containers will quickly need to use platforms, moving even further away from IaaS VMs. This approach is needed to easily achieve high scalability and better automated scalability, and for a significant improvement in automated deployments and versioning. You can achieve these goals by using the orchestrator [Kubernetes](https://kubernetes.io/), available in [Azure Container Services](https://azure.microsoft.com/services/container-service/).
 
 ### Goals
 
@@ -284,7 +284,7 @@ The full technical walkthrough is available in the eShopModernizing GitHub repo 
 
 ### Overview
 
-A simple containerized application using Windows Containers can easily be deployed to Azure App Service for Containers. This is the recommended approach for most Windows Container-based applications.
+A simple containerized application using Windows Containers can easily be deployed to Azure App Service for Containers. This approach is the recommended approach for most Windows Container-based applications.
 
 ### Goals
 
@@ -296,7 +296,7 @@ The goal of this walkthrough is to learn how to deploy a Windows Container–bas
 
 ### Benefits
 
-Deploying to Azure App Service for Containers offers the benefits of containers paired with the PaaS benefits of Azure App Service. The app service can easily be scaled both vertically and horizontally, and can be configured to autoscale to meet changing demands. Updates can be performed with zero downtime and configuration of continuous deployment from a registry is easily configured as well.
+Deploying to Azure App Service for Containers offers the benefits of containers paired with the PaaS benefits of Azure App Service. The app service can easily be scaled both vertically and horizontally, and can be configured to autoscale to meet changing demands. Updates can be performed with zero downtime and the configuration of continuous deployment from a registry is easily configured as well.
 
 ### Next steps
 

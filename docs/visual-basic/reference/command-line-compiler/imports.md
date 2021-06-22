@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: -imports (Visual Basic)"
 title: "-imports"
 ms.date: 03/10/2018
 helpviewer_keywords: 

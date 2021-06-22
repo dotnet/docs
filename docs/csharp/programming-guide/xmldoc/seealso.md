@@ -18,23 +18,29 @@ ms.assetid: 8e157f3f-f220-4fcf-9010-88905b080b18
 
 ## Syntax
 
-```xml
-<seealso cref="member"/>
+```csharp
+/// <seealso cref="member"/>
+// or
+/// <seealso href="link">Link Text</seealso>
 ```
 
 ## Parameters
 
-- cref = " `member`"
+- `cref="member"`
 
   A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML.`member` must appear within double quotation marks (" ").
 
   For information on how to create a cref reference to a generic type, see [cref attribute](./cref-attribute.md).
 
+- `href="link"`
+
+  A clickable link to a given URL. For example, `<seealso href="https://github.com">GitHub</seealso>` produces a clickable link with text :::no-loc text="GitHub"::: that links to `https://github.com`.
+
 ## Remarks
 
 The `<seealso>` tag lets you specify the text that you might want to appear in a See Also section. Use [\<see>](./see.md) to specify a link from within text.
 
-Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.
+Compile with [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) to process documentation comments to a file.
 
 ## Example
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedDocumentWriter::SetSource Method"
 title: "ISymUnmanagedDocumentWriter::SetSource Method"
 ms.date: "03/30/2017"
 api_name: 

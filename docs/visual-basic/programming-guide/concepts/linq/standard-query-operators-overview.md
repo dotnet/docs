@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Standard Query Operators Overview (Visual Basic)"
 title: "Standard Query Operators Overview"
 ms.date: 07/20/2015
 ms.assetid: 302bd39e-2ec1-495b-94bf-37d370d6f05f

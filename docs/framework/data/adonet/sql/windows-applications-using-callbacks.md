@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Applications Using Callbacks"
 title: "Windows Applications Using Callbacks"
 ms.date: "03/30/2017"
 dev_langs: 

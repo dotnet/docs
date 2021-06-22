@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugCode4::EnumerateVariableHomes Method"
 title: "ICorDebugCode4::EnumerateVariableHomes Method"
 ms.date: "03/30/2017"
 api_name: 

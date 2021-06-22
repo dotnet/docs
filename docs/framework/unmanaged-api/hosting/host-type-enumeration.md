@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: HOST_TYPE Enumeration"
 title: "HOST_TYPE Enumeration"
 ms.date: "03/30/2017"
 api_name: 

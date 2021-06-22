@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GetOperationCounterInstanceName"
 title: "GetOperationCounterInstanceName"
 ms.date: "03/30/2017"
 ms.assetid: ac42e20f-63c1-4bdb-8660-736980936811

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.ConnectionPoolCloseException"
 title: "System.ServiceModel.Channels.ConnectionPoolCloseException"
 ms.date: "03/30/2017"
 ms.assetid: 8358898e-129e-4fac-a6bf-bf3aa4293ae2

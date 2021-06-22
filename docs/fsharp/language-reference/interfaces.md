@@ -56,10 +56,10 @@ The .NET coding style is to begin all interfaces with a capital `I`.
 You can specify multiple parameters in two ways: F#-style and .NET-style. Both will compile the same way for .NET consumers, but F#-style will force F# callers to use F#-style parameter application and .NET-style will force F# callers to use tupled argument application.
 
 ```fsharp
-type INumeric1 =
+type INumericFSharp =
     abstract Add: x: int -> y: int -> int
 
-type INumeric2 =
+type INumericDotNet =
     abstract Add: x: int * y: int -> int
 ```
 

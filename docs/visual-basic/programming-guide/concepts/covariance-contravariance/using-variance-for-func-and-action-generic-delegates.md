@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Variance for Func and Action Generic Delegates (Visual Basic)"
 title: "Using Variance for Func and Action Generic Delegates"
 ms.date: 07/20/2015
 ms.assetid: 36c3012f-b39c-493b-b90f-079b5912ac1b

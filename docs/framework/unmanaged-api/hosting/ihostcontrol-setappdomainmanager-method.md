@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostControl::SetAppDomainManager Method"
 title: "IHostControl::SetAppDomainManager Method"
 ms.date: "03/30/2017"
 api_name: 

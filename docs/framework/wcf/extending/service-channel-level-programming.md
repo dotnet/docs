@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Service Channel-Level Programming"
 title: "Service Channel-Level Programming"
 ms.date: "03/30/2017"
 dev_langs: 

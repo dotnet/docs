@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_PRF_HIGH_MONITOR Enumeration"
 title: "COR_PRF_HIGH_MONITOR Enumeration"
 ms.date: "04/10/2018"
 ms.assetid: 3ba543d8-15e5-4322-b6e7-1ebfc92ed7dd

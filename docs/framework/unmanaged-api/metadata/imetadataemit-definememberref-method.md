@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::DefineMemberRef Method"
 title: "IMetaDataEmit::DefineMemberRef Method"
 ms.date: "03/30/2017"
 api_name: 

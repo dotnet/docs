@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Polling for the Status of an Asynchronous Operation"
 title: "Polling for the Status of an Asynchronous Operation"
 ms.date: "03/30/2017"
 dev_langs: 

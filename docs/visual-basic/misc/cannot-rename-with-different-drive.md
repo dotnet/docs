@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cannot rename with different drive"
 title: "Cannot rename with different drive"
 ms.date: 07/20/2015
 f1_keywords: 

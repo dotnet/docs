@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedScope::GetMethod Method"
 title: "ISymUnmanagedScope::GetMethod Method"
 ms.date: "03/30/2017"
 api_name: 

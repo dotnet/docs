@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostTask::Start Method"
 title: "IHostTask::Start Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Modifying DataViews"
 title: "Modifying DataViews"
 ms.date: "03/30/2017"
 dev_langs: 

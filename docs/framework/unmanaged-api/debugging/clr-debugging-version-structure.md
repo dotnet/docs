@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CLR_DEBUGGING_VERSION Structure"
 title: "CLR_DEBUGGING_VERSION Structure"
 ms.date: "03/30/2017"
 api_name: 

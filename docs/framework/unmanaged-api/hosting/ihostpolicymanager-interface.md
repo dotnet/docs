@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostPolicyManager Interface"
 title: "IHostPolicyManager Interface"
 ms.date: "03/30/2017"
 api_name: 

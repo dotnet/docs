@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugObjectValue::GetFieldValue Method"
 title: "ICorDebugObjectValue::GetFieldValue Method"
 ms.date: "03/30/2017"
 api_name: 

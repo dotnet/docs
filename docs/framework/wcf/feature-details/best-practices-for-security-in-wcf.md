@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Best Practices for Security in WCF"
 title: "Best Practices for Security in WCF"
 ms.date: "03/30/2017"
 dev_langs: 

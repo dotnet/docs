@@ -31,10 +31,10 @@
     None
 
 .NOTES
-    Version:        1.3
+    Version:        1.5
     Author:         adegeo@microsoft.com
-    Creation Date:  07/02/2020
-    Purpose/Change: Add support for config file. Select distinct on project files.
+    Creation Date:  04/02/2021
+    Purpose/Change: Add extra logging info.
 #>
 
 [CmdletBinding()]
@@ -151,9 +151,26 @@ foreach ($item in $workingSet) {
                     "msbuild.exe `"$projectFile`" -restore:True" `
                     | Out-File ".\run.bat"
                 }
+                elseif ($settings.host -eq "custom") {
+                  Write-Host "- Using custom build host: $($settings.command)"
+
+                  $ExecutionContext.InvokeCommand.ExpandString($settings.command) | Out-File ".\run.bat"
+                }
+                elseif ($settings.host -eq "dotnet") {
+                  Write-Host "- Using dotnet build host"
+
+                  "dotnet build `"$projectFile`"" | Out-File ".\run.bat"
+                }
+                else {
+                  throw "snippets.5000.json file isn't valid."
+                }
             }
 
-            $result = Invoke-Expression ".\run.bat" | Out-String
+            Write-Host "run.bat contents: "
+            Get-Content .\run.bat | Write-Host
+            Write-Host
+
+            Invoke-Expression ".\run.bat" | Tee-Object -Variable "result"
             $thisExitCode = 0
 
             if ($LASTEXITCODE -ne 0) {

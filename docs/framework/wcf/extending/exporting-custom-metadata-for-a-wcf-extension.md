@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exporting Custom Metadata for a WCF Extension"
 title: "Exporting Custom Metadata for a WCF Extension"
 ms.date: "03/30/2017"
 ms.assetid: 53c93882-f8ba-4192-965b-787b5e3f09c0
@@ -31,7 +32,7 @@ In Windows Communication Foundation (WCF), metadata export is the process of des
   
  The <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%2A> method is called on all <xref:System.ServiceModel.Description.IWsdlExportExtension> implementations within the <xref:System.ServiceModel.Description.ContractDescription?displayProperty=nameWithType> instance that is being exported.  The <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint%2A> method is called on all <xref:System.ServiceModel.Description.IWsdlExportExtension> implementations with the <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=nameWithType> instance that is being exported.  
   
- For more information, see [How to: Export Custom WSDL](how-to-export-custom-wsdl.md) and the sample [Custom WSDL Publication](../samples/custom-wsdl-publication.md).  
+ For more information, see [How to: Export Custom WSDL](how-to-export-custom-wsdl.md) and the sample [Custom WSDL Publication](/previous-versions/dotnet/framework/wcf/samples/custom-wsdl-publication).  
   
 ## Exporting Custom Policy Assertions  
 

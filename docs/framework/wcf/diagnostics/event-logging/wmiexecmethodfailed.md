@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WmiExecMethodFailed"
 title: "WmiExecMethodFailed"
 ms.date: "03/30/2017"
 ms.assetid: 8cb52fa8-0c36-4761-bf8e-2d7e1b73372e

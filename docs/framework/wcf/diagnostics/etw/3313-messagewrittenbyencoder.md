@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3313 - MessageWrittenByEncoder"
 title: "3313 - MessageWrittenByEncoder"
 ms.date: "03/30/2017"
 ms.assetid: abdb7db5-373e-4862-b53d-befbb0949e32

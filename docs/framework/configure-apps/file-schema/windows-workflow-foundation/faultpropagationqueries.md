@@ -1,7 +1,7 @@
 ---
+description: "Learn more about: <faultPropagationQueries>"
 title: "<faultPropagationQueries>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: 00ff90ae-ebe0-4c85-a93f-61557288d0a3
 ---
 # \<faultPropagationQueries>

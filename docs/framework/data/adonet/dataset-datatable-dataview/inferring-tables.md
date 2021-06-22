@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Inferring Tables"
 title: "Inferring Tables"
 ms.date: "03/30/2017"
 ms.assetid: 74a288d4-b8e9-4f1a-b2cd-10df92c1ed1f

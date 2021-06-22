@@ -2,6 +2,7 @@
 title: Publish a .NET console application using Visual Studio Code
 description: Learn how to use Visual Studio Code and the .NET CLI to create the set of files that are needed to run a .NET application.
 ms.date: 11/17/2020
+recommendations: false
 ---
 # Tutorial: Publish a .NET console application using Visual Studio Code
 

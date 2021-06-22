@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Building a Peer Channel Application"
 title: "Building a Peer Channel Application"
 ms.date: "03/30/2017"
 ms.assetid: a69a1b8f-8e15-45c5-87b8-bdb71e1c7ab8
@@ -10,7 +11,7 @@ The following sections provide guidance on developing Peer Channel applications.
 ## In This Section  
 
  [Converting a NetTcpBinding Application to a Peer Channel Application](converting-a-nettcpbinding-application-to-a-peer-channel-application.md)  
- Describes hot to convert a NetTcpBinding Application to a Peer Channel Application.  
+ Describes how to convert a NetTcpBinding Application to a Peer Channel Application.  
   
  [Limiting Message Distribution](limiting-message-distribution.md)  
  Discusses using Hop Count, a Message Propagation Filter, a local filter, or a direct connection to control how messages are forwarded throughout the mesh, and provides general guidelines for choosing an approach.  

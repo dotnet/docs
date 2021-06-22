@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CreateInstallReferenceEnum Function"
 title: "CreateInstallReferenceEnum Function"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 5607 - PrincipalSettingFromSessionTokenSuccess"
 title: "5607 - PrincipalSettingFromSessionTokenSuccess"
 ms.date: "03/30/2017"
 ms.assetid: f36cf68c-58e2-4bdd-bed9-eb7727650010

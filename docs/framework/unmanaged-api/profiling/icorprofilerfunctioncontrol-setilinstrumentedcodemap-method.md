@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerFunctionControl::SetILInstrumentedCodeMap Method"
 title: "ICorProfilerFunctionControl::SetILInstrumentedCodeMap Method"
 ms.date: "03/30/2017"
 api_name: 

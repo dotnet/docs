@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text.RegularExpressions;
 
@@ -6,7 +6,7 @@ public class Example
 {
    public static void Main()
    {
-      string pattern = @"(\w+)\s(\1)";
+      string pattern = @"(\w+)\s(\1)\W";
       string input = "He said that that was the the correct answer.";
       foreach (Match match in Regex.Matches(input, pattern, RegexOptions.IgnoreCase))
          Console.WriteLine("Duplicate '{0}' found at positions {1} and {2}.",

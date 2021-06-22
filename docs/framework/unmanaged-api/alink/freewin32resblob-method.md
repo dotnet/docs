@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FreeWin32ResBlob Method"
 title: "FreeWin32ResBlob Method"
 ms.date: "03/30/2017"
 api_name: 

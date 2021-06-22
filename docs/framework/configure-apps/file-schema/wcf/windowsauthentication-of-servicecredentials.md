@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <windowsAuthentication> of <serviceCredentials>"
 title: "<windowsAuthentication> of <serviceCredentials>"
 ms.date: "03/30/2017"
 ms.assetid: e0709473-0997-4de3-8f49-783527309a48

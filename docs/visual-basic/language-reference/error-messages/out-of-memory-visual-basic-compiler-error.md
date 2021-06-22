@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC2004: Out of memory"
 title: "Out of memory (Visual Basic Compiler Error)"
 ms.date: 07/20/2015
 f1_keywords:

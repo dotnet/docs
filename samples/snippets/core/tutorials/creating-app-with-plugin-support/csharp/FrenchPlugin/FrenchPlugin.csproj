@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Humanizer" Version="2.8.26" />
+    <PackageReference Include="Humanizer" Version="2.11.10" />
   </ItemGroup>
 
   <ItemGroup>

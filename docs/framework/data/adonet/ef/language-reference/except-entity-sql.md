@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: EXCEPT (Entity SQL)"
 title: "EXCEPT (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 69cc23e5-3f8f-4b49-b20e-2f84ff11c80d

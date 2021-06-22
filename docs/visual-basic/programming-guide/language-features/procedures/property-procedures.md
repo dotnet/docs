@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Property Procedures (Visual Basic)"
 title: "Property Procedures"
 ms.date: 07/20/2015
 helpviewer_keywords: 

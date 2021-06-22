@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <add> Element for <namedCaches>"
 title: "<add> Element for <namedCaches>"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

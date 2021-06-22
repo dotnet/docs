@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugStepper::SetRangeIL Method"
 title: "ICorDebugStepper::SetRangeIL Method"
 ms.date: "03/30/2017"
 api_name: 

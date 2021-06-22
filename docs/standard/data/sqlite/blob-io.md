@@ -1,9 +1,12 @@
 ---
 title: Blob I/O
-ms.date: 12/13/2019
+ms.date: 12/08/2020
 description: Learn how to use SQLite's BLOB I/O feature.
 ---
 # Blob I/O
+
+> [!NOTE]
+> The SqliteBlob class was added in version 3.0.
 
 You can reduce memory usage while reading and writing large objects by streaming the data into and out of the database. This can be especially useful when parsing or transforming the data.
 

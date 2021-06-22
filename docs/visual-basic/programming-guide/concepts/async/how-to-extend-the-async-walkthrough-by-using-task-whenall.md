@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Extend the Async Walkthrough by Using Task.WhenAll (Visual Basic)"
 title: "How to: Extend the Async Walkthrough by Using Task.WhenAll"
 ms.date: 07/20/2015
 ms.assetid: c06d386d-e996-4da9-bf3d-05a3b6c0a258

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <NetFx40_PInvokeStackResilience> Element"
 title: "<NetFx40_PInvokeStackResilience> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords:

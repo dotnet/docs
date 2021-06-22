@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Blocking Application Execution Using an AsyncWaitHandle"
 title: "Blocking Application Execution Using an AsyncWaitHandle"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -11,7 +12,7 @@ helpviewer_keywords:
   - "asynchronous programming, blocking applications"
   - "stopping asynchronous operations"
   - "blocking application execution"
-ms.assetid: 3e32daf2-8161-4e8f-addd-9fd9ff101b03
+ms.topic: how-to
 ---
 # Blocking Application Execution Using an AsyncWaitHandle
 

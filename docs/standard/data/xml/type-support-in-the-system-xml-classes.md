@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type Support in the System.Xml Classes"
 title: "Type Support in the System.Xml Classes"
 ms.date: "03/30/2017"
 ms.assetid: 63570538-06e3-4401-ad4d-ac50be90c7bf

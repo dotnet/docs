@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3425 - WebSocketAsyncReadStop"
 title: "3425 - WebSocketAsyncReadStop"
 ms.date: "03/30/2017"
 ms.assetid: 6d86fd8f-d430-45c0-94ee-827f4fa5881a

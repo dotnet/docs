@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::SetMethodImplFlags Method"
 title: "IMetaDataEmit::SetMethodImplFlags Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Access XML Attributes (Visual Basic)"
 title: "How to: Access XML Attributes"
 ms.date: 07/20/2015
 helpviewer_keywords: 

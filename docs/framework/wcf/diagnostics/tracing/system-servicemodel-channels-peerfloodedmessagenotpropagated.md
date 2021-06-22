@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PeerFloodedMessageNotPropagated"
 title: "System.ServiceModel.Channels.PeerFloodedMessageNotPropagated"
 ms.date: "03/30/2017"
 ms.assetid: a99275b9-4975-4899-8e21-594ba552f981

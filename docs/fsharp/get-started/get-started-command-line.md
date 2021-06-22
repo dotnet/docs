@@ -58,7 +58,7 @@ open Newtonsoft.Json
 
 let getJsonNetJson value =
     let json = JsonConvert.SerializeObject(value)
-    sprintf "I used to be %s but now I'm %s thanks to JSON.NET!" value json
+    $"I used to be {value} but now I'm {json} thanks to JSON.NET!"
 ```
 
 Add the Newtonsoft.Json NuGet package to the Library project.
@@ -109,7 +109,7 @@ let main argv =
 
     for arg in argv do
         let value = getJsonNetJson arg
-        printfn "%s" value
+        printfn $"{value}"
 
     0 // return an integer exit code
 ```

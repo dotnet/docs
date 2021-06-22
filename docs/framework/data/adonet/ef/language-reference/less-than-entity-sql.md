@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: < (Less Than) (Entity SQL)"
 title: "< (Less Than) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 1fc2a039-3ad6-4b3c-b41d-09932e803f86

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create and Execute a Simple PLINQ Query"
 title: "How to: Create and Execute a Simple PLINQ Query"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WAIT_OPTION Enumeration"
 title: "WAIT_OPTION Enumeration"
 ms.date: "03/30/2017"
 api_name: 

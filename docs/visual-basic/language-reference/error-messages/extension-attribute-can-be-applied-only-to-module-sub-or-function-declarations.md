@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC36550: 'Extension' attribute can be applied only to 'Module', 'Sub', or 'Function' declarations"
 title: "'Extension' attribute can be applied only to 'Module', 'Sub', or 'Function' declarations"
 ms.date: 07/20/2015
 f1_keywords:

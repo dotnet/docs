@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugILFrame::EnumerateLocalVariables Method"
 title: "ICorDebugILFrame::EnumerateLocalVariables Method"
 ms.date: "03/30/2017"
 api_name: 

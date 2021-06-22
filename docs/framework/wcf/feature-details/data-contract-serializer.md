@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Contract Serializer"
 title: "Data Contract Serializer"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

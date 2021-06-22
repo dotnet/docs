@@ -3,7 +3,7 @@ title: High-performance logging in .NET
 author: IEvangelist
 description: Learn how to use LoggerMessage to create cacheable delegates that require fewer object allocations for high-performance logging scenarios.
 ms.author: dapine
-ms.date: 09/25/2020
+ms.date: 01/04/2021
 ---
 
 # High-performance logging in .NET
@@ -25,7 +25,7 @@ The string provided to the <xref:Microsoft.Extensions.Logging.LoggerMessage.Defi
 
 Each log message is an <xref:System.Action> held in a static field created by [LoggerMessage.Define](xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A). For example, the sample app creates a field to describe a log message for the processing of work items:
 
-:::code language="csharp" source="snippets/configuration/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingWorkField":::
+:::code language="csharp" source="snippets/configuration/worker-service-options/Extensions/LoggerExtensions.cs" id="FailedProcessingField":::
 
 For the <xref:System.Action>, specify:
 
@@ -35,19 +35,15 @@ For the <xref:System.Action>, specify:
 
 As work items are dequeued for processing the worker service app sets the:
 
-- Log level to `Critical`.
+- Log level to <xref:Microsoft.Extensions.Logging.LogLevel.Critical?displayProperty=nameWithType>.
 - Event id to `13` with the name of the `FailedToProcessWorkItem` method.
 - Message template (named format string) to a string.
 
-:::code language="csharp" source="snippets/configuration/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingWorkAssignment":::
+:::code language="csharp" source="snippets/configuration/worker-service-options/Extensions/LoggerExtensions.cs" id="FailedProcessingAssignment":::
 
 Structured logging stores may use the event name when it's supplied with the event id to enrich logging. For example, [Serilog](https://github.com/serilog/serilog-extensions-logging) uses the event name.
 
-The <xref:System.Action> is invoked through a strongly-typed extension method. The `FailedToProcessWorkItem` method logs a message every time a work item is being processed:
-
-:::code language="csharp" source="snippets/configuration/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingWorkMethod":::
-
-`FailedToProcessWorkItem` is called on the logger in the `ExecuteAsync` method in *Worker.cs* when an error occurs:
+The <xref:System.Action> is invoked through a strongly-typed extension method. The `PriorityItemProcessed` method logs a message every time a work item is being processed. Whereas, `FailedToProcessWorkItem` is called when (and if) an exception occurs:
 
 :::code language="csharp" source="snippets/configuration/worker-service-options/Worker.cs" range="18-39" highlight="15-18":::
 
@@ -65,7 +61,7 @@ To pass parameters to a log message, define up to six types when creating the st
 
 :::code language="csharp" source="snippets/configuration/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingItemField":::
 
-The delegate's log message template receives its placeholder values from the types provided. The sample app defines a delegate for adding a quote where the quote parameter is a `WorkItem`:
+The delegate's log message template receives its placeholder values from the types provided. The sample app defines a delegate for adding a work item where the item parameter is a `WorkItem`:
 
 :::code language="csharp" source="snippets/configuration/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingItemAssignment":::
 
@@ -90,19 +86,15 @@ The [DefineScope(string)](xref:Microsoft.Extensions.Logging.LoggerMessage.Define
 
 As is the case with the <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A> method, the string provided to the <xref:Microsoft.Extensions.Logging.LoggerMessage.DefineScope%2A> method is a template and not an interpolated string. Placeholders are filled in the order that the types are specified. Placeholder names in the template should be descriptive and consistent across templates. They serve as property names within structured log data. We recommend [Pascal casing](../../standard/design-guidelines/capitalization-conventions.md) for placeholder names. For example, `{Item}`, `{DateTime}`.
 
-Define a [log scope](logging.md#log-scopes) to apply to a series of log messages using the <xref:Microsoft.Extensions.Logging.LoggerMessage.DefineScope%2A> method.
-
-The sample app has a **Clear All** button for deleting all of the quotes in the database. The quotes are deleted by removing them one at a time. Each time a quote is deleted, the `QuoteDeleted` method is called on the logger. A log scope is added to these log messages.
-
-Enable `IncludeScopes` in the console logger section of *appsettings.json*:
+Define a [log scope](logging.md#log-scopes) to apply to a series of log messages using the <xref:Microsoft.Extensions.Logging.LoggerMessage.DefineScope%2A> method. Enable `IncludeScopes` in the console logger section of *appsettings.json*:
 
 :::code language="json" source="snippets/configuration/worker-service-options/appsettings.json" highlight="3-5":::
 
-To create a log scope, add a field to hold a <xref:System.Func%601> delegate for the scope. The sample app creates a field called `_allQuotesDeletedScope` (*Internal/LoggerExtensions.cs*):
+To create a log scope, add a field to hold a <xref:System.Func%601> delegate for the scope. The sample app creates a field called `_processingWorkScope` (*Internal/LoggerExtensions.cs*):
 
 :::code language="csharp" source="snippets/configuration/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingWorkField":::
 
-Use <xref:Microsoft.Extensions.Logging.LoggerMessage.DefineScope%2A> to create the delegate. Up to three types can be specified for use as template arguments when the delegate is invoked. The sample app uses a message template that includes the number of deleted quotes (an `int` type):
+Use <xref:Microsoft.Extensions.Logging.LoggerMessage.DefineScope%2A> to create the delegate. Up to three types can be specified for use as template arguments when the delegate is invoked. The sample app uses a message template that includes the date time in which processing started:
 
 :::code language="csharp" source="snippets/configuration/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingWorkAssignment":::
 
@@ -114,7 +106,7 @@ The scope wraps the logging extension calls in a [using](../../csharp/language-r
 
 :::code language="csharp" source="snippets/configuration/worker-service-options/Worker.cs" range="18-39" highlight="4":::
 
-Inspect the log messages in the app's console output. The following result shows three quotes deleted with the log scope message included:
+Inspect the log messages in the app's console output. The following result shows priority ordering of log messages with the log scope message included:
 
 ```console
 info: WorkerServiceOptions.Example.Worker[1]

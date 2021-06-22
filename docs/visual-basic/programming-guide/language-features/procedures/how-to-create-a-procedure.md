@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Procedure (Visual Basic)"
 title: "How to: Create a Procedure"
 ms.date: 07/20/2015
 helpviewer_keywords:

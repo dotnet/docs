@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PeerFlooderReceiveMessageQuotaExceeded"
 title: "System.ServiceModel.Channels.PeerFlooderReceiveMessageQuotaExceeded"
 ms.date: "03/30/2017"
 ms.assetid: b8371d0a-843e-440b-b86a-6996db131cb0

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FailedToRemovePerformanceCounter"
 title: "FailedToRemovePerformanceCounter"
 ms.date: "03/30/2017"
 ms.assetid: c5991c11-f8a9-46ab-94e8-b30ea8e3c12f

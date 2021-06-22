@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorMarkThreadInThreadPool Function"
 title: "CorMarkThreadInThreadPool Function"
 ms.date: "03/30/2017"
 api_name: 

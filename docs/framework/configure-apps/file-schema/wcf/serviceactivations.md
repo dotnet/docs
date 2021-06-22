@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <serviceActivations>"
 title: "<serviceActivations>"
 ms.date: "03/30/2017"
 ms.assetid: 97e665b6-1c51-410b-928a-9bb42c954ddb

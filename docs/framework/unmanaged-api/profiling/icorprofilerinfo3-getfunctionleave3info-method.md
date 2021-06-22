@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo3::GetFunctionLeave3Info Method"
 title: "ICorProfilerInfo3::GetFunctionLeave3Info Method"
 ms.date: "03/30/2017"
 api_name: 

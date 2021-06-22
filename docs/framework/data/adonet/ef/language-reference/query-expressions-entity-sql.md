@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Query Expressions (Entity SQL)"
 title: "Query Expressions (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: c36f327b-e230-48d4-bbd5-78dc6478c447

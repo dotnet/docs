@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Guidelines and Best Practices"
 title: "Guidelines and Best Practices"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
@@ -45,6 +46,6 @@ This section contains topics that provide guidelines for creating Windows Commun
 ## See also
 
 - [What Is Windows Communication Foundation](whats-wcf.md)
-- [Windows Communication Foundation (WCF) samples](./samples/index.md)
+- [Windows Communication Foundation (WCF) samples](/previous-versions/dotnet/framework/wcf/samples/index)
 - [Conceptual Overview](conceptual-overview.md)
 - [Building Clients](building-clients.md)

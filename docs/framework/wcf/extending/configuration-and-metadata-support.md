@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Configuration and Metadata Support"
 title: "Configuration and Metadata Support"
 ms.date: "03/30/2017"
 ms.assetid: 27c240cb-8cab-472c-87f8-c864f4978758
@@ -25,11 +26,11 @@ This topic describes how to enable configuration and metadata support for bindin
 
  To enable configuration file support for a channel, you must implement two configuration sections, <xref:System.ServiceModel.Configuration.BindingElementExtensionElement?displayProperty=nameWithType>, which enables configuration support for binding elements, and the <xref:System.ServiceModel.Configuration.StandardBindingElement?displayProperty=nameWithType> and <xref:System.ServiceModel.Configuration.StandardBindingCollectionElement%602?displayProperty=nameWithType>, which enable configuration support for bindings.  
   
- An easier way to do this is to use the [ConfigurationCodeGenerator](../samples/configurationcodegenerator.md) sample tool to generate configuration code for your bindings and binding elements.  
+ An easier way to do this is to use the [ConfigurationCodeGenerator](/previous-versions/dotnet/framework/wcf/samples/configurationcodegenerator) sample tool to generate configuration code for your bindings and binding elements.  
   
 ### Extending BindingElementExtensionElement  
 
- The following example code is taken from the [Transport: UDP](../samples/transport-udp.md) sample. The `UdpTransportElement` is a <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> that exposes `UdpTransportBindingElement` to the configuration system. With a few basic overrides, the sample defines the configuration section name, the type of the binding element and how to create the binding element. Users can then register the extension section in a configuration file as follows.  
+ The following example code is taken from the [Transport: UDP](/previous-versions/dotnet/framework/wcf/samples/transport-udp) sample. The `UdpTransportElement` is a <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> that exposes `UdpTransportBindingElement` to the configuration system. With a few basic overrides, the sample defines the configuration section name, the type of the binding element and how to create the binding element. Users can then register the extension section in a configuration file as follows.  
   
 ```xml  
 <configuration>  
@@ -122,7 +123,7 @@ protected override void OnApplyConfiguration(string configurationName)
   
 ### Adding WSDL Support  
 
- The transport binding element in a binding is responsible for exporting and importing addressing information in metadata. When using a SOAP binding, the transport binding element should also export a correct transport URI in metadata. The following example code is taken from the [Transport: UDP](../samples/transport-udp.md) sample.  
+ The transport binding element in a binding is responsible for exporting and importing addressing information in metadata. When using a SOAP binding, the transport binding element should also export a correct transport URI in metadata. The following example code is taken from the [Transport: UDP](/previous-versions/dotnet/framework/wcf/samples/transport-udp) sample.  
   
 #### WSDL Export  
 
@@ -182,7 +183,7 @@ if (transportBindingElement is UdpTransportBindingElement)
   
 ### Adding Policy Support  
 
- The custom binding element can export policy assertions in the WSDL binding for a service endpoint to express the capabilities of that binding element. The following example code is taken from the [Transport: UDP](../samples/transport-udp.md) sample.  
+ The custom binding element can export policy assertions in the WSDL binding for a service endpoint to express the capabilities of that binding element. The following example code is taken from the [Transport: UDP](/previous-versions/dotnet/framework/wcf/samples/transport-udp) sample.  
   
 #### Policy Export  
 

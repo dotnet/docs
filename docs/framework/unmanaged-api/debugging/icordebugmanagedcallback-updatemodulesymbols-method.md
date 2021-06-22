@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugManagedCallback::UpdateModuleSymbols Method"
 title: "ICorDebugManagedCallback::UpdateModuleSymbols Method"
 ms.date: "03/30/2017"
 api_name: 

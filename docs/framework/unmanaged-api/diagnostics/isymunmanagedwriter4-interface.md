@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedWriter4 Interface"
 title: "ISymUnmanagedWriter4 Interface"
 ms.date: "03/30/2017"
 ms.assetid: 4af5e8c0-987d-405e-b934-8b9e70fcae6e

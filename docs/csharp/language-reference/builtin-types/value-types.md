@@ -25,7 +25,7 @@ If a value type contains a data member of a reference type, only the reference t
 > [!NOTE]
 > To make your code less error-prone and more robust, define and use immutable value types. This article uses mutable value types only for demonstration purposes.
 
-## Kinds of value types
+## Kinds of value types and type constraints
 
 A value type can be one of the two following kinds:
 
@@ -33,6 +33,8 @@ A value type can be one of the two following kinds:
 - an [enumeration type](enum.md), which is defined by a set of named constants and represents a choice or a combination of choices
 
 A [nullable value type](nullable-value-types.md) `T?` represents all values of its underlying value type `T` and an additional [null](../keywords/null.md) value. You cannot assign `null` to a variable of a value type, unless it's a nullable value type.
+
+You can use the [`struct` constraint](../../programming-guide/generics/constraints-on-type-parameters.md) to specify that a type parameter is a non-nullable value type. Both structure and enumeration types satisfy the `struct` constraint. Beginning with C# 7.3, you can use `System.Enum` in a base class constraint (that is known as the [enum constraint](../../programming-guide/generics/constraints-on-type-parameters.md#enum-constraints)) to specify that a type parameter is an enumeration type.
 
 ## Built-in value types
 

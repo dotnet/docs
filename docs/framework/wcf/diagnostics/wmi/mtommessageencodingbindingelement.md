@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MtomMessageEncodingBindingElement"
 title: "MtomMessageEncodingBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: 4a9c6c3d-e561-4b2d-a693-7e84bdd3534a

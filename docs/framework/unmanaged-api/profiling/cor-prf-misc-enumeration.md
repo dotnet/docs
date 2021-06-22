@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_PRF_MISC Enumeration"
 title: "COR_PRF_MISC Enumeration"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30766: '<functionname>' is not declared (Smart Device/Visual Basic Compiler Error)"
 title: "'<functionname>' is not declared (Smart Device-Visual Basic Compiler Error)"
 ms.date: 07/20/2015
 f1_keywords:

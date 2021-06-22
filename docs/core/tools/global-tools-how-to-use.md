@@ -3,6 +3,7 @@ title: "Tutorial: Install and use a .NET global tool"
 description: Learn how to install and use a .NET tool as a global tool.
 ms.topic: tutorial
 ms.date: 02/12/2020
+recommendations: false
 ---
 
 # Tutorial: Install and use a .NET global tool using the .NET CLI

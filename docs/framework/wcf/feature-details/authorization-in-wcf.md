@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Authorization in WCF"
 title: "Authorization in WCF"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

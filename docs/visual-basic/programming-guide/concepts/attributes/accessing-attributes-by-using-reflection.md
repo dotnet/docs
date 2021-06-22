@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accessing Attributes by Using Reflection (Visual Basic)"
 title: "Accessing Attributes by Using Reflection"
 ms.date: 07/20/2015
 ms.assetid: c56e41da-5433-464f-a7bf-2a722e78bc9f

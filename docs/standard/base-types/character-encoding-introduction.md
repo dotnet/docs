@@ -2,6 +2,7 @@
 title: Introduction to character encoding in .NET
 description: Learn about character encoding and decoding in .NET.
 ms.date: 03/09/2020
+ms.topic: conceptual
 no-loc: [Rune, char, string]
 dev_langs:
   - "csharp"
@@ -147,7 +148,7 @@ code point = 65,536 +
   (low surrogate code point - 56,320)
 ```
 
-A *high* surrogate code point doesn't have a higher number value than a *low* surrogate code point. The high surrogate code point is called "high" because it's used to calculate the higher-order 11 bits of the full 21-bit code point range. The low surrogate code point is used to calculate the lower-order 10 bits.
+A *high* surrogate code point doesn't have a higher number value than a *low* surrogate code point. The high surrogate code point is called "high" because it's used to calculate the higher-order 10 bits of a 20-bit code point range. The low surrogate code point is used to calculate the lower-order 10 bits.
 
 For example, the actual code point that corresponds to the surrogate pair `0xD83C` and `0xDF39`  is computed as follows:
 

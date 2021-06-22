@@ -32,10 +32,10 @@ class TestRef
         System.Console.ReadKey();
     }
 }
-    /* Output:
-        Array elements are:
-        1111 2 3 4 5555
-    */
+/* Output:
+    Array elements are:
+    1111 2 3 4 5555
+*/
 //</Snippet38>
 
 //<Snippet37>
@@ -66,10 +66,10 @@ class TestOut
         System.Console.ReadKey();
     }
 }
-    /* Output:
-        Array elements are:
-        1 2 3 4 5
-    */
+/* Output:
+    Array elements are:
+    1 2 3 4 5
+*/
 //</Snippet37>
 
 class TestPrintArray1D
@@ -98,7 +98,7 @@ class TestPrintArray1D
 
 class TestPrintArray2D
 {
-    int[,] theArray =  { { 1, 2 }, { 2, 3 }, { 3, 4 } };
+    int[,] theArray = { { 1, 2 }, { 2, 3 }, { 3, 4 } };
 
     //<Snippet36>
     void Print2DArray(int[,] arr)
@@ -142,16 +142,16 @@ class ArrayClass2D
         System.Console.ReadKey();
     }
 }
-    /* Output:
-        Element(0,0)=1
-        Element(0,1)=2
-        Element(1,0)=3
-        Element(1,1)=4
-        Element(2,0)=5
-        Element(2,1)=6
-        Element(3,0)=7
-        Element(3,1)=8
-    */
+/* Output:
+    Element(0,0)=1
+    Element(0,1)=2
+    Element(1,0)=3
+    Element(1,1)=4
+    Element(2,0)=5
+    Element(2,1)=6
+    Element(3,0)=7
+    Element(3,1)=8
+*/
 //</Snippet31>
 
 class Test3
@@ -165,7 +165,7 @@ class Test3
             System.Console.Write("{0} ", i);
         }
         // Output: 4 5 6 1 2 3 -2 -1 0
-         //</Snippet28>
+        //</Snippet28>
 
         System.Console.WriteLine();
 
@@ -221,7 +221,7 @@ class Test2
         //</Snippet11>
 
         //<Snippet12>
-        int[, ,] array1 = new int[4, 2, 3];
+        int[,,] array1 = new int[4, 2, 3];
         //</Snippet12>
 
         //<Snippet13>
@@ -234,10 +234,10 @@ class Test2
                                                 { "five", "six" } };
 
         // Three-dimensional array.
-        int[, ,] array3D = new int[,,] { { { 1, 2, 3 }, { 4, 5, 6 } },
+        int[,,] array3D = new int[,,] { { { 1, 2, 3 }, { 4, 5, 6 } },
                                          { { 7, 8, 9 }, { 10, 11, 12 } } };
         // The same array with dimensions specified.
-        int[, ,] array3Da = new int[2, 2, 3] { { { 1, 2, 3 }, { 4, 5, 6 } },
+        int[,,] array3Da = new int[2, 2, 3] { { { 1, 2, 3 }, { 4, 5, 6 } },
                                                { { 7, 8, 9 }, { 10, 11, 12 } } };
 
         // Accessing array elements.
@@ -253,7 +253,8 @@ class Test2
         // Getting the total count of elements or the length of a given dimension.
         var allLength = array3D.Length;
         var total = 1;
-        for (int i = 0; i < array3D.Rank; i++) {
+        for (int i = 0; i < array3D.Rank; i++)
+        {
             total *= array3D.GetLength(i);
         }
         System.Console.WriteLine("{0} equals {1}", allLength, total);
@@ -395,21 +396,21 @@ class TestJagged
         //</Snippet21>
 
         //<Snippet22>
-    int[][] jaggedArray2 = new int[][]
-    {
+        int[][] jaggedArray2 = new int[][]
+        {
         new int[] { 1, 3, 5, 7, 9 },
         new int[] { 0, 2, 4, 6 },
         new int[] { 11, 22 }
-    };
+        };
         //</Snippet22>
 
         //<Snippet23>
-    int[][] jaggedArray3 =
-    {
-        new int[] { 1, 3, 5, 7, 9 },
-        new int[] { 0, 2, 4, 6 },
-        new int[] { 11, 22 }
-    };
+        int[][] jaggedArray3 =
+        {
+            new int[] { 1, 3, 5, 7, 9 },
+            new int[] { 0, 2, 4, 6 },
+            new int[] { 11, 22 }
+        };
         //</Snippet23>
 
         //<Snippet24>

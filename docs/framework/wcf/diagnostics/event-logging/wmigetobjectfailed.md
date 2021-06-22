@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WmiGetObjectFailed"
 title: "WmiGetObjectFailed"
 ms.date: "03/30/2017"
 ms.assetid: 676691b5-705e-4422-8dca-c6f517964116

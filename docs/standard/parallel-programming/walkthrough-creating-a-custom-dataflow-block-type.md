@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Creating a Custom Dataflow Block Type"
 title: "Walkthrough: Creating a Custom Dataflow Block Type"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -8,7 +9,7 @@ helpviewer_keywords:
   - "Task Parallel Library, dataflows"
   - "TPL dataflow library, creating custom dataflow blocks"
   - "dataflow blocks, creating custom in TPL"
-ms.assetid: a6147146-0a6a-4d9b-ab0f-237b3c1ac691
+ms.topic: tutorial
 ---
 # Walkthrough: Creating a Custom Dataflow Block Type
 

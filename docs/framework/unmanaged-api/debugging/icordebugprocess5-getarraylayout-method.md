@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess5::GetArrayLayout Method"
 title: "ICorDebugProcess5::GetArrayLayout Method"
 ms.date: "03/30/2017"
 api_name: 

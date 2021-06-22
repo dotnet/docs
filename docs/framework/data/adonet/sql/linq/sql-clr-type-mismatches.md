@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SQL-CLR Type Mismatches"
 title: "SQL-CLR Type Mismatches"
 ms.date: "03/30/2017"
 dev_langs:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostSecurityManager::OpenThreadToken Method"
 title: "IHostSecurityManager::OpenThreadToken Method"
 ms.date: "03/30/2017"
 api_name: 

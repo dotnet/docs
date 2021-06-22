@@ -1,3 +1,4 @@
+items:
 - name: What are breaking changes?
   href: index.md
 - name: Types of compatibility
@@ -12,18 +13,90 @@
     - name: Breaking changes
       href: fx-core.md
     - name: Unavailable technologies
-      href: ../porting/net-framework-tech-unavailable.md?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+      href: ../porting/net-framework-tech-unavailable.md
     - name: APIs that always throw
       href: unsupported-apis.md
   - name: Breaking changes by version
     expanded: true
     items:
-    - name: .NET 5.0
+    - name: .NET 6
+      items:
+      - name: Overview
+        href: 6.0.md
+      - name: ASP.NET Core
+        items:
+        - name: Assemblies removed from shared framework
+          href: aspnet-core/6.0/assemblies-removed-from-shared-framework.md
+        - name: "Blazor: Parameter name changed in RequestImageFileAsync method"
+          href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
+        - name: "Blazor: WebEventDescriptor.EventArgsType property replaced"
+          href: aspnet-core/6.0/blazor-eventargstype-property-replaced.md
+        - name: "Blazor: Byte-array interop"
+          href: aspnet-core/6.0/byte-array-interop.md
+        - name: "Kestrel: Log message attributes changed"
+          href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
+        - name: "MessagePack: Library changed in @microsoft/signalr-protocol-msgpack"
+          href: aspnet-core/6.0/messagepack-library-change.md
+        - name: Microsoft.AspNetCore.Http.Features split
+          href: aspnet-core/6.0/microsoft-aspnetcore-http-features-package-split.md
+        - name: "Middleware: HTTPS Redirection Middleware throws exception on ambiguous HTTPS ports"
+          href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
+        - name: "Middleware: New Use overload"
+          href: aspnet-core/6.0/middleware-new-use-overload.md
+        - name: MVC doesn't buffer IAsyncEnumerable types
+          href: aspnet-core/6.0/iasyncenumerable-not-buffered-by-mvc.md
+        - name: Nullable reference type annotations changed
+          href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md
+        - name: Obsoleted and removed APIs
+          href: aspnet-core/6.0/obsolete-removed-apis.md
+        - name: PreserveCompilationContext not configured by default
+          href: aspnet-core/6.0/preservecompilationcontext-not-set-by-default.md
+        - name: "Razor: Compiler generates single assembly"
+          href: aspnet-core/6.0/razor-compiler-doesnt-produce-views-assembly.md
+        - name: "Razor: RazorEngine APIs marked obsolete"
+          href: aspnet-core/6.0/razor-engine-apis-obsolete.md
+        - name: "SignalR: Java Client updated to RxJava3"
+          href: aspnet-core/6.0/signalr-java-client-updated.md
+      - name: Core .NET libraries
+        items:
+        - name: API obsoletions with non-default diagnostic IDs
+          href: core-libraries/6.0/obsolete-apis-with-custom-diagnostics.md
+        - name: Environment.ProcessorCount behavior on Windows
+          href: core-libraries/6.0/environment-processorcount-on-windows.md
+        - name: New Queryable method overloads
+          href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
+        - name: Nullability annotation changes
+          href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
+        - name: Parameters renamed in Stream-derived types
+          href: core-libraries/6.0/parameters-renamed-on-stream-derived-types.md
+        - name: Standard numeric format parsing precision
+          href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
+        - name: Unhandled exceptions from a BackgroundService
+          href: core-libraries/6.0/hosting-exception-handling.md
+      - name: Networking
+        items:
+        - name: WebRequest, WebClient, and ServicePoint are obsolete
+          href: networking/6.0/webrequest-deprecated.md
+      - name: Windows Forms
+        items:
+        - name: APIs throw ArgumentNullException
+          href: windows-forms/6.0/apis-throw-argumentnullexception.md
+        - name: DataGridView APIs throw InvalidOperationException
+          href: windows-forms/6.0/null-owner-causes-invalidoperationexception.md
+        - name: NotifyIcon.Text maximum text length increased
+          href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
+        - name: TableLayoutSettings properties throw InvalidEnumArgumentException
+          href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
+        - name: TreeNodeCollection.Item throws exception if node is assigned elsewhere
+          href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
+    - name: .NET 5
       items:
       - name: Overview
         href: 5.0.md
       - name: ASP.NET Core
         items:
+        - name: AddDataAnnotationsValidation method made obsolete
+          href: aspnet-core/6.0/adddataannotationsvalidation-obsolete.md
         - name: ASP.NET Core apps deserialize quoted numbers
           href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
         - name: AzureAD.UI and AzureADB2C.UI APIs obsolete
@@ -34,6 +107,8 @@
           href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
         - name: Microsoft-prefixed Azure integration packages removed
           href: aspnet-core/5.0/azure-integration-packages-removed.md
+        - name: "Blazor: Route precedence logic changed in Blazor apps"
+          href: aspnet-core/5.0/blazor-routing-logic-changed.md
         - name: "Blazor: Updated browser support"
           href: aspnet-core/5.0/blazor-browser-support-updated.md
         - name: "Blazor: Insignificant whitespace trimmed by compiler"
@@ -192,6 +267,8 @@
           href: globalization/5.0/uax29-compliant-grapheme-enumeration.md
         - name: Unicode category changed for Latin-1 characters
           href: globalization/5.0/unicode-categories-for-latin1-chars.md
+        - name: ListSeparator values changed
+          href: globalization/5.0/listseparator-value-change.md
       - name: Interop
         items:
         - name: Support for WinRT is removed
@@ -222,6 +299,14 @@
           href: networking/5.0/negotiatestream-sslstream-dont-fail-on-successive-begin-calls.md
         - name: WinHttpHandler removed from .NET runtime
           href: networking/5.0/winhttphandler-removed-from-runtime.md
+      - name: SDK
+        items:
+        - name: Error when referencing mismatched executable
+          href: sdk/5.0/referencing-executable-generates-error.md
+        - name: OutputType set to WinExe
+          href: sdk/5.0/automatically-infer-winexe-output-type.md
+        - name: WinForms and WPF apps use Microsoft.NET.Sdk
+          href: sdk/5.0/sdk-and-target-framework-change.md
       - name: Security
         items:
         - name: Code access security APIs are obsolete
@@ -246,8 +331,10 @@
           href: serialization/5.0/options-honored-when-serializing-key-value-pairs.md
       - name: Windows Forms
         items:
+        - name: Native code can't access Windows Forms objects
+          href: windows-forms/5.0/winforms-objects-not-accessible-from-native-code.md
         - name: OutputType set to WinExe
-          href: windows-forms/5.0/automatically-infer-winexe-output-type.md
+          href: sdk/5.0/automatically-infer-winexe-output-type.md
         - name: DataGridView doesn't reset custom fonts
           href: windows-forms/5.0/datagridview-doesnt-reset-custom-font-settings.md
         - name: Methods throw ArgumentException
@@ -261,15 +348,15 @@
         - name: DataGridView APIs throw InvalidOperationException
           href: windows-forms/5.0/null-owner-causes-invalidoperationexception.md
         - name: WinForms apps use Microsoft.NET.Sdk
-          href: windows-forms/5.0/sdk-and-target-framework-change.md
+          href: sdk/5.0/sdk-and-target-framework-change.md
         - name: Removed status bar controls
           href: windows-forms/5.0/winforms-deprecated-controls.md
       - name: WPF
         items:
         - name: OutputType set to WinExe
-          href: windows-forms/5.0/automatically-infer-winexe-output-type.md
+          href: sdk/5.0/automatically-infer-winexe-output-type.md
         - name: WPF apps use Microsoft.NET.Sdk
-          href: windows-forms/5.0/sdk-and-target-framework-change.md
+          href: sdk/5.0/sdk-and-target-framework-change.md
     - name: .NET Core 3.1
       href: 3.1.md
     - name: .NET Core 3.0
@@ -280,7 +367,43 @@
     items:
     - name: ASP.NET Core
       items:
-      - name: .NET 5.0
+      - name: .NET 6
+        items:
+        - name: AddDataAnnotationsValidation method made obsolete
+          href: aspnet-core/6.0/adddataannotationsvalidation-obsolete.md
+        - name: Assemblies removed from shared framework
+          href: aspnet-core/6.0/assemblies-removed-from-shared-framework.md
+        - name: "Blazor: Parameter name changed in RequestImageFileAsync method"
+          href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
+        - name: "Blazor: WebEventDescriptor.EventArgsType property replaced"
+          href: aspnet-core/6.0/blazor-eventargstype-property-replaced.md
+        - name: "Blazor: Byte-array interop"
+          href: aspnet-core/6.0/byte-array-interop.md
+        - name: "Kestrel: Log message attributes changed"
+          href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
+        - name: "MessagePack: Library changed in @microsoft/signalr-protocol-msgpack"
+          href: aspnet-core/6.0/messagepack-library-change.md
+        - name: Microsoft.AspNetCore.Http.Features split
+          href: aspnet-core/6.0/microsoft-aspnetcore-http-features-package-split.md
+        - name: "Middleware: HTTPS Redirection Middleware throws exception on ambiguous HTTPS ports"
+          href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
+        - name: "Middleware: New Use overload"
+          href: aspnet-core/6.0/middleware-new-use-overload.md
+        - name: MVC doesn't buffer IAsyncEnumerable types
+          href: aspnet-core/6.0/iasyncenumerable-not-buffered-by-mvc.md
+        - name: Nullable reference type annotations changed
+          href: aspnet-core/6.0/nullable-reference-type-annotations-changed.md
+        - name: Obsoleted and removed APIs
+          href: aspnet-core/6.0/obsolete-removed-apis.md
+        - name: PreserveCompilationContext not configured by default
+          href: aspnet-core/6.0/preservecompilationcontext-not-set-by-default.md
+        - name: "Razor: Compiler generates single assembly"
+          href: aspnet-core/6.0/razor-compiler-doesnt-produce-views-assembly.md
+        - name: "Razor: RazorEngine APIs marked obsolete"
+          href: aspnet-core/6.0/razor-engine-apis-obsolete.md
+        - name: "SignalR: Java Client updated to RxJava3"
+          href: aspnet-core/6.0/signalr-java-client-updated.md
+      - name: .NET 5
         items:
         - name: ASP.NET Core apps deserialize quoted numbers
           href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
@@ -292,6 +415,8 @@
           href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
         - name: Microsoft-prefixed Azure integration packages removed
           href: aspnet-core/5.0/azure-integration-packages-removed.md
+        - name: "Blazor: Route precedence logic changed in Blazor apps"
+          href: aspnet-core/5.0/blazor-routing-logic-changed.md
         - name: "Blazor: Updated browser support"
           href: aspnet-core/5.0/blazor-browser-support-updated.md
         - name: "Blazor: Insignificant whitespace trimmed by compiler"
@@ -356,7 +481,7 @@
         href: aspnetcore.md
     - name: Code analysis
       items:
-      - name: .NET 5.0
+      - name: .NET 5
         items:
         - name: CA1416 warning
           href: code-analysis/5.0/ca1416-platform-compatibility-analyzer.md
@@ -376,7 +501,23 @@
           href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
     - name: Core .NET libraries
       items:
-      - name: .NET 5.0
+      - name: .NET 6
+        items:
+        - name: API obsoletions with non-default diagnostic IDs
+          href: core-libraries/6.0/obsolete-apis-with-custom-diagnostics.md
+        - name: Environment.ProcessorCount behavior on Windows
+          href: core-libraries/6.0/environment-processorcount-on-windows.md
+        - name: New Queryable method overloads
+          href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
+        - name: Nullability annotation changes
+          href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
+        - name: Parameters renamed in Stream-derived types
+          href: core-libraries/6.0/parameters-renamed-on-stream-derived-types.md
+        - name: Standard numeric format parsing precision
+          href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
+        - name: Unhandled exceptions from a BackgroundService
+          href: core-libraries/6.0/hosting-exception-handling.md
+      - name: .NET 5
         items:
         - name: Assembly-related API changes for single-file publishing
           href: core-libraries/5.0/assembly-api-behavior-changes-for-single-file-publish.md
@@ -434,11 +575,11 @@
           href: core-libraries/5.0/vector-lerp-behavior-change.md
         - name: Vector<T> throws NotSupportedException
           href: core-libraries/5.0/vectort-throws-notsupportedexception.md
-      - name: .NET 1.0-3.1
+      - name: .NET Core 1.0-3.1
         href: corefx.md
     - name: Cryptography
       items:
-      - name: .NET 5.0
+      - name: .NET 5
         items:
         - name: Cryptography APIs not supported on browser
           href: cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md
@@ -460,7 +601,7 @@
         href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Globalization
       items:
-      - name: .NET 5.0
+      - name: .NET 5
         items:
         - name: Use ICU libraries on Windows
           href: globalization/5.0/icu-globalization-api.md
@@ -468,11 +609,13 @@
           href: globalization/5.0/uax29-compliant-grapheme-enumeration.md
         - name: Unicode category changed for Latin-1 characters
           href: globalization/5.0/unicode-categories-for-latin1-chars.md
-      - name: .NET 3.0
+        - name: ListSeparator values changed
+          href: globalization/5.0/listseparator-value-change.md
+      - name: .NET Core 3.0
         href: globalization.md
     - name: Interop
       items:
-      - name: .NET 5.0
+      - name: .NET 5
         items:
         - name: Support for WinRT is removed
           href: interop/5.0/built-in-support-for-winrt-removed.md
@@ -482,7 +625,7 @@
           href: interop/5.0/function-suffix-pinvoke.md
     - name: MSBuild
       items:
-      - name: .NET 5.0
+      - name: .NET 5
         items:
         - name: Directory.Packages.props files imported by default
           href: msbuild/5.0/directory-packages-props-imported-by-default.md
@@ -492,12 +635,15 @@
           href: msbuild/5.0/publishdepsfilepath-behavior-change.md
         - name: TargetFramework change from netcoreapp to net
           href: msbuild/5.0/targetframework-name-change.md
-      - name: (This file will eventually go away)
-      - name: .NET 3.0
+      - name: .NET Core 2.1 - 3.1
         href: msbuild.md
     - name: Networking
       items:
-      - name: .NET 5.0
+      - name: .NET 6
+        items:
+        - name: WebRequest, WebClient, and ServicePoint are obsolete
+          href: networking/6.0/webrequest-deprecated.md
+      - name: .NET 5
         items:
         - name: Cookie path handling conforms to RFC 6265
           href: networking/5.0/cookie-path-conforms-to-rfc6265.md
@@ -509,11 +655,21 @@
           href: networking/5.0/negotiatestream-sslstream-dont-fail-on-successive-begin-calls.md
         - name: WinHttpHandler removed from .NET runtime
           href: networking/5.0/winhttphandler-removed-from-runtime.md
-      - name: .NET 2.0-3.0
+      - name: .NET Core 2.0-3.0
         href: networking.md
+    - name: SDK
+      items:
+      - name: .NET 5
+        items:
+        - name: Error when referencing mismatched executable
+          href: sdk/5.0/referencing-executable-generates-error.md
+        - name: OutputType set to WinExe
+          href: sdk/5.0/automatically-infer-winexe-output-type.md
+        - name: WinForms and WPF apps use Microsoft.NET.Sdk
+          href: sdk/5.0/sdk-and-target-framework-change.md
     - name: Security
       items:
-      - name: .NET 5.0
+      - name: .NET 5
         items:
         - name: Code access security APIs are obsolete
           href: core-libraries/5.0/code-access-security-apis-obsolete.md
@@ -523,7 +679,7 @@
           href: core-libraries/5.0/utf-7-code-paths-obsolete.md
     - name: Serialization
       items:
-      - name: .NET 5.0
+      - name: .NET 5
         items:
         - name: BinaryFormatter.Deserialize rewraps exceptions
           href: serialization/5.0/binaryformatter-deserialize-rewraps-exceptions.md
@@ -543,10 +699,24 @@
         href: visualbasic.md
     - name: Windows Forms
       items:
-      - name: .NET 5.0
+      - name: .NET 6
         items:
+        - name: APIs throw ArgumentNullException
+          href: windows-forms/6.0/apis-throw-argumentnullexception.md
+        - name: DataGridView APIs throw InvalidOperationException
+          href: windows-forms/6.0/null-owner-causes-invalidoperationexception.md
+        - name: NotifyIcon.Text maximum text length increased
+          href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
+        - name: TableLayoutSettings properties throw InvalidEnumArgumentException
+          href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
+        - name: TreeNodeCollection.Item throws exception if node is assigned elsewhere
+          href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
+      - name: .NET 5
+        items:
+        - name: Native code can't access Windows Forms objects
+          href: windows-forms/5.0/winforms-objects-not-accessible-from-native-code.md
         - name: OutputType set to WinExe
-          href: windows-forms/5.0/automatically-infer-winexe-output-type.md
+          href: sdk/5.0/automatically-infer-winexe-output-type.md
         - name: DataGridView doesn't reset custom fonts
           href: windows-forms/5.0/datagridview-doesnt-reset-custom-font-settings.md
         - name: Methods throw ArgumentException
@@ -560,45 +730,16 @@
         - name: DataGridView APIs throw InvalidOperationException
           href: windows-forms/5.0/null-owner-causes-invalidoperationexception.md
         - name: WinForms apps use Microsoft.NET.Sdk
-          href: windows-forms/5.0/sdk-and-target-framework-change.md
+          href: sdk/5.0/sdk-and-target-framework-change.md
         - name: Removed status bar controls
           href: windows-forms/5.0/winforms-deprecated-controls.md
       - name: .NET Core 3.0-3.1
         href: winforms.md
     - name: WPF
       items:
-      - name: .NET 5.0
+      - name: .NET 5
         items:
         - name: OutputType set to WinExe
-          href: windows-forms/5.0/automatically-infer-winexe-output-type.md
+          href: sdk/5.0/automatically-infer-winexe-output-type.md
         - name: WPF apps use Microsoft.NET.Sdk
-          href: windows-forms/5.0/sdk-and-target-framework-change.md
-  - name: SYSLIB warnings
-    items:
-    - name: Overview
-      displayName: syslib, obsolete, obsoletion
-      href: syslib-obsoletions.md
-    - name: SYSLIB0001
-      href: syslib0001.md
-    - name: SYSLIB0002
-      href: syslib0002.md
-    - name: SYSLIB0003
-      href: syslib0003.md
-    - name: SYSLIB0004
-      href: syslib0004.md
-    - name: SYSLIB0005
-      href: syslib0005.md
-    - name: SYSLIB0006
-      href: syslib0006.md
-    - name: SYSLIB0007
-      href: syslib0007.md
-    - name: SYSLIB0008
-      href: syslib0008.md
-    - name: SYSLIB0009
-      href: syslib0009.md
-    - name: SYSLIB0010
-      href: syslib0010.md
-    - name: SYSLIB0011
-      href: syslib0011.md
-    - name: SYSLIB0012
-      href: syslib0012.md
+          href: sdk/5.0/sdk-and-target-framework-change.md

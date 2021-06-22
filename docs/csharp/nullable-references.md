@@ -90,7 +90,7 @@ You can also use directives to set these same contexts anywhere in your project:
 > 1. Start the file name with *TemporaryGeneratedFile_*
 > 1. End the file name with *.designer.cs*, *.generated.cs*, *.g.cs*, or *.g.i.cs*.
 >
-> Generators can opt-in using the [`#nullable`](language-reference/preprocessor-directives/preprocessor-nullable.md) preprocessor directive.
+> Generators can opt-in using the [`#nullable`](language-reference/preprocessor-directives.md#nullable-context) preprocessor directive.
 
 By default, nullable annotation and warning contexts are **disabled**, including new projects. That means that your existing code compiles without changes and without generating any new warnings.
 
@@ -210,6 +210,6 @@ In the preceding example, the declaration of the array shows it holds non-nullab
 ## See also
 
 - [Draft nullable reference types specification](~/_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md)
-- [Intro to nullable references tutorial](tutorials/nullable-reference-types.md)
-- [Migrate an existing codebase to nullable references](tutorials/upgrade-to-nullable-references.md)
-- [-nullable (C# Compiler option)](language-reference/compiler-options/nullable-compiler-option.md)
+- [Intro to nullable references tutorial](whats-new/tutorials/nullable-reference-types.md)
+- [Migrate an existing codebase to nullable references](whats-new/tutorials/upgrade-to-nullable-references.md)
+- [**Nullable** (C# Compiler option)](language-reference/compiler-options/language.md#nullable)

@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where serialize and deserialize methods on BinaryFormatter, Formatter, and IFormatter are obsolete.
+description: Learn about the .NET 5 breaking change in core .NET libraries where serialize and deserialize methods on BinaryFormatter, Formatter, and IFormatter are obsolete.
 ms.date: 11/01/2020
 ---
 # BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps
@@ -69,7 +69,7 @@ These methods are marked obsolete as part of an effort to wind down usage of <xr
   </PropertyGroup>
   ```
 
-For more information about recommended actions, see [Resolving BinaryFormatter obsoletion and disablement errors](https://aka.ms/binaryformatter).
+For more information about recommended actions, see [Resolving BinaryFormatter obsoletion and disablement errors](../../../../standard/serialization/binaryformatter-security-guide.md).
 
 ## Affected APIs
 

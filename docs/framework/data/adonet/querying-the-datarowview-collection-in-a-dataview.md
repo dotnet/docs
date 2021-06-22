@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Querying the DataRowView Collection in a DataView"
 title: "Querying the DataRowView Collection in a DataView"
 ms.date: "03/30/2017"
 dev_langs: 

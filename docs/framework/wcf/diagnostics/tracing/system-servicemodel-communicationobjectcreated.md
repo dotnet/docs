@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.CommunicationObjectCreated"
 title: "System.ServiceModel.CommunicationObjectCreated"
 ms.date: "03/30/2017"
 ms.assetid: 4d0d4ab3-270c-408d-b48a-b53b02cb9263

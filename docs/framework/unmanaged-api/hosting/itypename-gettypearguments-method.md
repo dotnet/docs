@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ITypeName::GetTypeArguments Method"
 title: "ITypeName::GetTypeArguments Method"
 ms.date: "03/30/2017"
 api_name: 

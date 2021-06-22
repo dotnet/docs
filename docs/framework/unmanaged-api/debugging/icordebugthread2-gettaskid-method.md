@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugThread2::GetTaskID Method"
 title: "ICorDebugThread2::GetTaskID Method"
 ms.date: "03/30/2017"
 api_name: 

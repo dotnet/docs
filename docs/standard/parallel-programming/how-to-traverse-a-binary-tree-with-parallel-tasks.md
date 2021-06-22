@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Traverse a Binary Tree with Parallel Tasks"
 title: "How to: Traverse a Binary Tree with Parallel Tasks"
 ms.date: "03/30/2017"
 dev_langs: 

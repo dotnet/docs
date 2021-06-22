@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedMethod::GetRanges Method"
 title: "ISymUnmanagedMethod::GetRanges Method"
 ms.date: "03/30/2017"
 api_name: 

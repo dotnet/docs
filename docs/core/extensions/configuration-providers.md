@@ -3,7 +3,8 @@ title: Configuration providers in .NET
 description: Learn how the Configuration provider API is used to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/16/2020
+ms.date: 05/21/2021
+ms.topic: reference
 ---
 
 # Configuration providers in .NET
@@ -35,7 +36,7 @@ Overloads can specify:
 
 Consider the following code:
 
-:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="1-33,37-38" highlight="17-23":::
+:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="1-39,43-44" highlight="23-29":::
 
 The preceding code:
 
@@ -52,19 +53,17 @@ An example *appsettings.json* file with various configuration settings follows:
 
 From the <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder> instance, after configuration providers have been added you can call <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType> to get the <xref:Microsoft.Extensions.Configuration.IConfigurationRoot> object. The configuration root represents the root of a configuration hierarchy. Sections from the configuration can be bound to instances of .NET objects, and later provided as <xref:Microsoft.Extensions.Options.IOptions%601> through dependency injection.
 
-Consider the `TransientFaultHandlingOptions` record type defined as follows:
+Consider the `TransientFaultHandlingOptions` class defined as follows:
 
 :::code language="csharp" source="snippets/configuration/console-json/TransientFaultHandlingOptions.cs":::
 
-For information on record types, see [Record types in C# 9](../../csharp/whats-new/csharp-9.md#record-types).
+The following code builds the configuration root, binds a section to the `TransientFaultHandlingOptions` class type, and prints the bound values to the console window:
 
-The following code builds the configuration root, binds a section to the `TransientFaultHandlingOptions` record type, and prints the bound values to the console window:
-
-:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="25-32":::
+:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="31-38":::
 
 The application would write the following sample output:
 
-:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="34-36":::
+:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="40-42":::
 
 ### XML configuration provider
 
@@ -72,7 +71,7 @@ The <xref:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider> class
 
 The following code demonstrates configuration of XML files using the XML configuration provider.
 
-:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="1-28,46,52-53" highlight="17-28":::
+:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="1-34,52,58-59" highlight="23-34":::
 
 The preceding code:
 
@@ -89,17 +88,17 @@ An example *appsettings.xml* file with various configuration settings follows:
 
 :::code language="xml" source="snippets/configuration/console-xml/appsettings.xml":::
 
-Repeating elements that use the same element name work if the `name` attribute is used to distinguish the elements:
+In .NET 5 and earlier versions, add the `name` attribute to distinguish repeating elements that use the same element name. In .NET 6 and later versions, the XML configuration provider automatically indexes repeating elements. That means you don't have to specify the `name` attribute, except if you want the "0" index in the key and there's only one element.
 
 :::code language="xml" source="snippets/configuration/console-xml/repeating-example.xml":::
 
 The following code reads the previous configuration file and displays the keys and values:
 
-:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="30-45":::
+:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="36-51":::
 
 The application would write the following sample output:
 
-:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="47-51":::
+:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="53-57":::
 
 Attributes can be used to supply values:
 
@@ -124,7 +123,7 @@ The <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider> class
 
 The following code clears all the configuration providers and adds the `IniConfigurationProvider` with two INI files as the source:
 
-:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="1-31,38-39" highlight="18-24":::
+:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="1-37,44-45" highlight="24-30":::
 
 An example *appsettings.ini* file with various configuration settings follows:
 
@@ -132,11 +131,11 @@ An example *appsettings.ini* file with various configuration settings follows:
 
 The following code displays the preceding configuration settings by writing them to the console window:
 
-:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="26-30":::
+:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="32-36":::
 
 The application would write the following sample output:
 
-:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="32-37":::
+:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="38-43":::
 
 ## Environment variable configuration provider
 
@@ -162,6 +161,10 @@ The preceding environment settings:
 - Are only set in processes launched from the command window they were set in.
 - Won't be read by web apps launched with Visual Studio.
 
+With Visual Studio 2019 version 16.10 preview 4 and later, you can specify environment variables using the **Launch Profiles** dialog.
+
+:::image type="content" source="media/launch-profiles-env-vars.png" alt-text="Launch Profiles dialog showing environment variables" lightbox="media/launch-profiles-env-vars.png":::
+
 The following [setx](/windows-server/administration/windows-commands/setx) commands can be used to set the environment keys and values on Windows. Unlike `set`, `setx` settings are persisted. `/M` sets the variable in the system environment. If the `/M` switch isn't used, a user environment variable is set.
 
 ```dotnetcli
@@ -179,7 +182,7 @@ To test that the preceding commands override *appsettings.json* and *appsettings
 
 Call <xref:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions.AddEnvironmentVariables%2A> with a string to specify a prefix for environment variables:
 
-:::code language="csharp" source="snippets/configuration/console-env/Program.cs" highlight="15-16":::
+:::code language="csharp" source="snippets/configuration/console-env/Program.cs" highlight="21-22":::
 
 In the preceding code:
 
@@ -192,8 +195,8 @@ The following commands test the custom prefix:
 
 ```dotnetcli
 set CustomPrefix__SecretKey="Secret key with CustomPrefix_ environment"
-set CustomPrefix_TransientFaultHandlingOptions__Enabled=true
-set CustomPrefix_TransientFaultHandlingOptions__AutoRetryDelay=00:00:21
+set CustomPrefix__TransientFaultHandlingOptions__Enabled=true
+set CustomPrefix__TransientFaultHandlingOptions__AutoRetryDelay=00:00:21
 
 dotnet run
 ```
@@ -243,6 +246,10 @@ Using the default configuration, the <xref:Microsoft.Extensions.Configuration.Co
 - Environment variables.
 
 By default, configuration values set on the command line override configuration values set with all the other configuration providers.
+
+With Visual Studio 2019 version 16.10 preview 4 and later, you can specify command-line arguments using the **Launch Profiles** dialog.
+
+:::image type="content" source="media/launch-profiles-cmd-line-args.png" alt-text="Launch Profiles dialog showing command-line arguments" lightbox="media/launch-profiles-cmd-line-args.png":::
 
 ### Command-line arguments
 
@@ -302,7 +309,7 @@ The <xref:Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider>
 
 The following code adds a memory collection to the configuration system:
 
-:::code language="csharp" source="snippets/configuration/console-memory/Program.cs" highlight="16-23":::
+:::code language="csharp" source="snippets/configuration/console-memory/Program.cs" highlight="22-29":::
 
 In the preceding code, <xref:Microsoft.Extensions.Configuration.MemoryConfigurationBuilderExtensions.AddInMemoryCollection(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})?displayProperty=nameWithType> adds the memory provider after the default configuration providers. For an example of ordering the configuration providers, see [XML configuration provider](#xml-configuration-provider).
 

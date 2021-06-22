@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 506 - CreateServiceHostStop"
 title: "506 - CreateServiceHostStop"
 ms.date: "03/30/2017"
 ms.assetid: f51e4903-1162-47bd-bf8a-f4177c48768a

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.Transactions Integration with SQL Server"
 title: "System.Transactions Integration with SQL Server"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_NATIVE_LINK Structure"
 title: "COR_NATIVE_LINK Structure"
 ms.date: "03/30/2017"
 api_name: 

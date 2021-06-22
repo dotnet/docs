@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How To: Service Data Partitioning"
 title: "How To: Service Data Partitioning"
 ms.date: "03/30/2017"
 ms.assetid: 1ccff72e-d76b-4e36-93a2-e51f7b32dc83
@@ -171,4 +172,4 @@ This topic outlines the basic steps required to partition messages across multip
   
 ## See also
 
-- [Routing Services](../samples/routing-services.md)
+- [Routing Services](/previous-versions/dotnet/framework/wcf/samples/routing-services)

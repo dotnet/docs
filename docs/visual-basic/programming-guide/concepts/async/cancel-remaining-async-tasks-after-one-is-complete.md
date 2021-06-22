@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cancel Remaining Async Tasks after One Is Complete (Visual Basic)"
 title: "Cancel Remaining Async Tasks after One Is Complete"
 ms.date: 07/20/2015
 ms.assetid: c928b5a1-622f-4441-8baf-adca1dde197f
@@ -75,12 +76,12 @@ Make the following changes in `AccessTheWebAsync`. Asterisks mark the changes in
     Dim downloadTasks As Task(Of Integer)() = downloadTasksQuery.ToArray()
     ```
 
-4. Call `WhenAny` on the collection of tasks. `WhenAny` returns a `Task(Of Task(Of Integer))` or `Task<Task<int>>`.  That is, `WhenAny` returns a task that evaluates to a single `Task(Of Integer)` or `Task<int>` when it’s awaited. That single task is the first task in the collection to finish. The task that finished first is assigned to `firstFinishedTask`. The type of `firstFinishedTask` is <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer because that's the return type of `ProcessURLAsync`.
+4. Call `WhenAny` on the collection of tasks. `WhenAny` returns a `Task(Of Task(Of Integer))` or `Task<Task<int>>`.  That is, `WhenAny` returns a task that evaluates to a single `Task(Of Integer)` or `Task<int>` when it’s awaited. That single task is the first task in the collection to finish. The task that finished first is assigned to `finishedTask`. The type of `finishedTask` is <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer because that's the return type of `ProcessURLAsync`.
 
     ```vb
     ' ***Call WhenAny and then await the result. The task that finishes
-    ' first is assigned to firstFinishedTask.
-    Dim firstFinishedTask As Task(Of Integer) = Await Task.WhenAny(downloadTasks)
+    ' first is assigned to finishedTask.
+    Dim finishedTask As Task(Of Integer) = Await Task.WhenAny(downloadTasks)
     ```
 
 5. In this example, you’re interested only in the task that finishes first. Therefore, use <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> to cancel the remaining tasks.
@@ -90,10 +91,10 @@ Make the following changes in `AccessTheWebAsync`. Asterisks mark the changes in
     cts.Cancel()
     ```
 
-6. Finally, await `firstFinishedTask` to retrieve the length of the downloaded content.
+6. Finally, await `finishedTask` to retrieve the length of the downloaded content.
 
     ```vb
-    Dim length = Await firstFinishedTask
+    Dim length = Await finishedTask
     resultsTextBox.Text &= vbCrLf & $"Length of the downloaded website:  {length}" & vbCrLf
     ```
 
@@ -180,8 +181,8 @@ Class MainWindow
         Dim downloadTasks As Task(Of Integer)() = downloadTasksQuery.ToArray()
 
         ' ***Call WhenAny and then await the result. The task that finishes
-        ' first is assigned to firstFinishedTask.
-        Dim firstFinishedTask As Task(Of Integer) = Await Task.WhenAny(downloadTasks)
+        ' first is assigned to finishedTask.
+        Dim finishedTask As Task(Of Integer) = Await Task.WhenAny(downloadTasks)
 
         ' ***Cancel the rest of the downloads. You just want the first one.
         cts.Cancel()
@@ -189,7 +190,7 @@ Class MainWindow
         ' ***Await the first completed task and display the results
         ' Run the program several times to demonstrate that different
         ' websites can finish first.
-        Dim length = Await firstFinishedTask
+        Dim length = Await finishedTask
         resultsTextBox.Text &= vbCrLf & $"Length of the downloaded website:  {length}" & vbCrLf
     End Function
 

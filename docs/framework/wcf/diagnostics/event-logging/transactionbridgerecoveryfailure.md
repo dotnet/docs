@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TransactionBridgeRecoveryFailure"
 title: "TransactionBridgeRecoveryFailure"
 ms.date: "03/30/2017"
 ms.assetid: a53891d9-67ea-4ead-8d38-3193cb57cd37

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Declared Element Characteristics (Visual Basic)"
 title: "Declared Element Characteristics"
 ms.date: 07/20/2015
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: EnumImportTypes Method"
 title: "EnumImportTypes Method"
 ms.date: "03/30/2017"
 api_name:

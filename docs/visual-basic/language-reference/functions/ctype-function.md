@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CType Function (Visual Basic)"
 title: "CType Function"
 ms.date: 07/20/2015
 f1_keywords:

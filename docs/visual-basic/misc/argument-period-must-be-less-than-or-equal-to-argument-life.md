@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Argument 'Period' must be less than or equal to argument 'Life'"
 title: "Argument 'Period' must be less than or equal to argument 'Life'"
 ms.date: 07/20/2015
 f1_keywords: 

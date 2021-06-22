@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: RunDll32ShimW Function"
 title: "RunDll32ShimW Function"
 ms.date: "03/30/2017"
 api_name: 

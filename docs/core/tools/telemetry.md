@@ -28,6 +28,9 @@ The .NET SDK telemetry feature is enabled by default. To opt out of the telemetr
 
 A single telemetry entry is also sent by the .NET SDK installer when a successful installation happens. To opt out, set the `DOTNET_CLI_TELEMETRY_OPTOUT` environment variable before you install the .NET SDK.
 
+> [!IMPORTANT]
+> To opt out after you started the installer: close the installer, set the environment variable, and then run the installer again with that value set.
+
 ## Disclosure
 
 The .NET SDK displays text similar to the following when you first run one of the [.NET CLI commands](index.md) (for example, `dotnet build`). Text may vary slightly depending on the version of the SDK you're running. This "first run" experience is how Microsoft notifies you about data collection.
@@ -69,6 +72,16 @@ The telemetry feature collects the following data:
 | >=2.1.300     | Libc release/version. |
 | >=3.0.100     | Whether the output was redirected (true or false). |
 | >=3.0.100     | On a CLI/SDK crash, the exception type and its stack trace (only CLI/SDK code is included in the stack trace sent). For more information, see [.NET CLI/SDK crash exception telemetry collected](#net-clisdk-crash-exception-telemetry-collected). |
+| >=5.0.100     | Hashed TargetFrameworkVersion used for build (MSBuild property) |
+| >=5.0.100     | Hashed RuntimeIdentifier used for build (MSBuild property) |
+| >=5.0.100     | Hashed SelfContained used for build  (MSBuild property) |
+| >=5.0.100     | Hashed UseApphost used for build  (MSBuild property) |
+| >=5.0.100     | Hashed OutputType used for build (MSBuild property  |
+| >=5.0.202     | Elapsed time from process start until entering the CLI program's main method, measuring host and runtime startup. |
+| >=5.0.202     | Elapsed time for the step that adds .NET Tools to the path on first run. |
+| >=5.0.202     | Elapsed time to display first time use notice on first run. |
+| >=5.0.202     | Elapsed time for generating ASP.NET Certificate on first run. |
+| >=5.0.202     | Elapsed time to parse the CLI input. |
 
 ### Collected options
 
@@ -133,4 +146,4 @@ Because of this, custom builds of the .NET SDK shouldn't be located in directori
 ## See also
 
 - [.NET CLI Telemetry Data](https://dotnet.microsoft.com/platform/telemetry)
-- [Telemetry reference source (dotnet/sdk repository)](https://github.com/dotnet/sdk/tree/master/src/Cli/dotnet/Telemetry)
+- [Telemetry reference source (dotnet/sdk repository)](https://github.com/dotnet/sdk/tree/main/src/Cli/dotnet/Telemetry)

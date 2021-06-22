@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: ee5af263-4ab1-45e5-b792-33a3221b426d
+ms.topic: how-to
 ---
 
 # How to query LINQ to XML using XPath (LINQ to XML)

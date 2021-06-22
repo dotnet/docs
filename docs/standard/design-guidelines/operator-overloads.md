@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Operator Overloads"
 title: "Operator Overloads"
 ms.date: "10/22/2008"
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::GetParamProps Method"
 title: "IMetaDataImport::GetParamProps Method"
 ms.date: "03/30/2017"
 api_name: 

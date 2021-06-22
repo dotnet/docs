@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3364 - SharedListenerProxyRegisterStart"
 title: "3364 - SharedListenerProxyRegisterStart"
 ms.date: "03/30/2017"
 ms.assetid: dfbbf889-46ef-484c-8811-1f51ae4790d8

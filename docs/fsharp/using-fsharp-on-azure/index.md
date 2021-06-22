@@ -37,10 +37,10 @@ Other resources for using Azure Functions and F#:
 
 Azure Storage is a base layer of storage services for modern applications that rely on durability, availability, and scalability to meet the needs of customers. F# programs can interact directly with Azure storage services, using the techniques described in the following articles.
 
-* [Get started with Azure Blob storage using F#](blob-storage.md)
-* [Get started with Azure File storage using F#](file-storage.md)
-* [Get started with Azure Queue storage using F#](queue-storage.md)
-* [Get started with Azure Table storage using F#](table-storage.md)
+* [Get started with Azure Blob Storage using F#](blob-storage.md)
+* [Get started with Azure File Storage using F#](file-storage.md)
+* [Get started with Azure Queue Storage using F#](queue-storage.md)
+* [Get started with Azure Table Storage using F#](table-storage.md)
 
 Azure Storage can also be used in conjunction with Azure Functions through declarative configuration rather than explicit API calls. See [Azure Functions triggers and bindings for Azure Storage](/azure/azure-functions/functions-bindings-storage) which includes F# examples.
 
@@ -55,7 +55,7 @@ Azure Storage can also be used in conjunction with Azure Functions through decla
 
 [Apache Spark for Azure HDInsight](/azure/hdinsight/spark/apache-spark-overview) is an open source processing framework that runs large-scale data analytics applications. [Azure Databricks](/azure/databricks/scenarios/what-is-azure-databricks) is an Apache Spark-based analytics platform optimized for the Microsoft Azure cloud services platform. Azure makes Apache Spark easy and cost effective to deploy. Develop your Spark application in F# using [.NET for Apache Spark](../../spark/what-is-apache-spark-dotnet.md), a set of .NET bindings for Apache Spark.
 
-* [.NET for Apache Spark F# samples](https://github.com/dotnet/spark/tree/master/examples/Microsoft.Spark.FSharp.Examples)
+* [.NET for Apache Spark F# samples](https://github.com/dotnet/spark/tree/main/examples/Microsoft.Spark.FSharp.Examples)
 * [Install .NET Interactive Jupyter notebooks in Azure HDInsight](../../spark/how-to-guides/hdinsight-notebook-installation.md)
 * [Submit Apache Spark jobs to Azure HDInsight](../../spark/how-to-guides/hdinsight-deploy-methods.md)
 * [Submit Apache Spark jobs to Azure Databricks](../../spark/how-to-guides/databricks-deploy-methods.md)

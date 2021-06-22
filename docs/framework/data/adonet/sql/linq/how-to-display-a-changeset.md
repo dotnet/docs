@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Display a ChangeSet"
 title: "How to: Display a ChangeSet"
 ms.date: "03/30/2017"
 dev_langs: 

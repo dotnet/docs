@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3363 - HttpAuthFailed"
 title: "3363 - HttpAuthFailed"
 ms.date: "03/30/2017"
 ms.assetid: 8ddfc1f0-ab6f-4fd4-a138-05ded7f6680a

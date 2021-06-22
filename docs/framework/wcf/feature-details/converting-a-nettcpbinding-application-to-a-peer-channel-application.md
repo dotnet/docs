@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Converting a NetTcpBinding Application to a Peer Channel Application"
 title: "Converting a NetTcpBinding Application to a Peer Channel Application"
 ms.date: "03/30/2017"
 ms.assetid: d4137292-a923-4b8f-8594-42276f2d3ce2

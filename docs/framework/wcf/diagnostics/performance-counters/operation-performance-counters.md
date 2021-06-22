@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Operation Performance Counters"
 title: "Operation Performance Counters"
 ms.date: "03/30/2017"
 ms.assetid: 333a51e0-f56e-4e1a-b359-5c91ff390568

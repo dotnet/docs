@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _CorDllMain Function"
 title: "_CorDllMain Function"
 ms.date: "03/30/2017"
 api_name: 

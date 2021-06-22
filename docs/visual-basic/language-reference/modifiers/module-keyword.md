@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Module <keyword> (Visual Basic)"
 title: "Module <keyword>"
 ms.date: 07/20/2015
 f1_keywords: 

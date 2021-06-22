@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Create an object pool by using a ConcurrentBag"
 title: "Create an object pool by using a ConcurrentBag"
 ms.date: 05/01/2020
 dev_langs:

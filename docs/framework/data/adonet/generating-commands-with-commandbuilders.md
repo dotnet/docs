@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Generating Commands with CommandBuilders"
 title: "Generating Commands with CommandBuilders"
 ms.date: "03/30/2017"
 dev_langs: 

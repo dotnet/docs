@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: N-Tier and Remote Applications with LINQ to SQL"
 title: "N-Tier and Remote Applications with LINQ to SQL"
 ms.date: "03/30/2017"
 ms.assetid: 854a1cdd-53cb-45f5-83ca-63962a9b3598

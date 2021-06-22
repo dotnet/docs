@@ -1,7 +1,7 @@
 ---
 name: ".NET breaking change"
-about: Report a change in .NET that breaks something that worked in a previous
-  version (intended mostly for product-team use)
+about: Report a change in .NET that breaks something that worked in a previous version
+  (intended mostly for product-team use)
 title: ''
 labels: ''
 assignees: ''
@@ -62,6 +62,7 @@ assignees: ''
 - [ ] MSBuild
 - [ ] Networking
 - [ ] Printing
+- [ ] SDK
 - [ ] Security
 - [ ] Serialization
 - [ ] Visual Basic
@@ -88,6 +89,8 @@ assignees: ''
 
   <https://docs.microsoft.com/dotnet/api/system.string.indexof#System_String_IndexOf_System_String_>
 -->
+
+Finally, please remember to email a link to this breaking change issue to [.NET Breaking Change Notifications](mailto:dotnetbcn@microsoft.com).
 
 <!-- Do not modify anything below this line -->
 

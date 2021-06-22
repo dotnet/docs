@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Hosting in a Managed Application"
 title: "Hosting in a Managed Application"
 ms.date: "03/30/2017"
 ms.assetid: af70132d-e9e1-4f32-b20f-f0014629758a
@@ -9,7 +10,7 @@ Windows Communication Foundation (WCF) services can be hosted in any .NET Framew
   
  To create a self-hosted service, create and open an instance of the <xref:System.ServiceModel.ServiceHost>, which starts a service listening for messages. For more information, see [How to: Host a WCF Service in a Managed Application](../how-to-host-a-wcf-service-in-a-managed-application.md).  
   
- For a complete example on how to define a contract, implement the contract, and host a service inside of a managed application see the [Getting Started Tutorial](../getting-started-tutorial.md) and the [Self-Host](../samples/self-host.md).  
+ For a complete example on how to define a contract, implement the contract, and host a service inside of a managed application see the [Getting Started Tutorial](../getting-started-tutorial.md) and the [Self-Host](/previous-versions/dotnet/framework/wcf/samples/self-host).  
   
  The following sections describe common scenarios that use this hosting option.  
   

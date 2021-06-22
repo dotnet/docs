@@ -79,10 +79,8 @@ type MyClass() =
 
 let class1 = new MyClass()
 
-printfn "class1.AutoProperty = %d" class1.AutoProperty
-printfn "class1.AutoProperty = %d" class1.AutoProperty
-printfn "class1.ExplicitProperty = %d" class1.ExplicitProperty
-printfn "class1.ExplicitProperty = %d" class1.ExplicitProperty
+printfn $"class1.AutoProperty = %d{class1.AutoProperty}"
+printfn $"class1.ExplicitProperty = %d{class1.ExplicitProperty}"
 ```
 
 **Output**

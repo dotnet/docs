@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataTables::GetNextBlob Method"
 title: "IMetaDataTables::GetNextBlob Method"
 ms.date: "03/30/2017"
 api_name: 

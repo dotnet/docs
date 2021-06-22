@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4814 - EndpointDiscoverabilityDisabled"
 title: "4814 - EndpointDiscoverabilityDisabled"
 ms.date: "03/30/2017"
 ms.assetid: b3805218-4865-42d8-976a-cbbd4ff6fcc8

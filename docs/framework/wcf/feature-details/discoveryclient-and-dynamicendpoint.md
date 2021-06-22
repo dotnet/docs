@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DiscoveryClient and DynamicEndpoint"
 title: "DiscoveryClient and DynamicEndpoint"
 ms.date: "03/30/2017"
 ms.assetid: 7cd418f0-0eab-48d1-a493-7eb907867ec3
@@ -104,5 +105,5 @@ Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);
   
 ## See also
 
-- [Discovery with Scopes](../samples/discovery-with-scopes-sample.md)
-- [Basic](../samples/basic-sample.md)
+- [Discovery with Scopes](/previous-versions/dotnet/framework/wcf/samples/discovery-with-scopes-sample)
+- [Basic](/previous-versions/dotnet/framework/wcf/samples/basic-sample)

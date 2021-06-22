@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating a custom header that is signed and-or encrypted"
 title: "Creating a custom header that is signed and-or encrypted"
 ms.date: "03/30/2017"
 ms.assetid: e8668b37-c79f-4714-9de5-afcb88b9ff02
@@ -54,6 +55,6 @@ public  class MyMessageContract
   
 ## See also
 
-- [Default Message Contract](../samples/default-message-contract.md)
-- [Message Contracts](../samples/message-contracts.md)
+- [Default Message Contract](/previous-versions/dotnet/framework/wcf/samples/default-message-contract)
+- [Message Contracts](/previous-versions/dotnet/framework/wcf/samples/message-contracts)
 - [Using Message Contracts](using-message-contracts.md)

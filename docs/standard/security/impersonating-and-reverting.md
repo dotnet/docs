@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Impersonating and Reverting"
 title: "Impersonating and Reverting"
 ms.date: 07/15/2020
 dev_langs: 

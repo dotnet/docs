@@ -69,9 +69,9 @@ public void SerializeOverride()
     XmlAttributeOverrides myOverrides = new XmlAttributeOverrides();  
     myOverrides.Add(typeof(Book), "ISBN", myAttributes);  
     XmlSerializer mySerializer =
-    new XmlSerializer(typeof(Book), myOverrides)  
+    new XmlSerializer(typeof(Book), myOverrides);
     Book b = new Book();  
-    b.ISBN = "123456789"  
+    b.ISBN = "123456789";
     // Creates a StreamWriter to write the XML stream to.  
     StreamWriter writer = new StreamWriter("Book.xml");  
     mySerializer.Serialize(writer, b);  

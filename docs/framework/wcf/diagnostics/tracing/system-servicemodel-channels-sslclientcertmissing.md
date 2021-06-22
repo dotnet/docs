@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.SslClientCertMissing"
 title: "System.ServiceModel.Channels.SslClientCertMissing"
 ms.date: "03/30/2017"
 ms.assetid: d09f5336-c1e6-4b92-a04d-af556546bc69

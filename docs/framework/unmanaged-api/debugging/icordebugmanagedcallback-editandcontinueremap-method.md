@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugManagedCallback::EditAndContinueRemap Method"
 title: "ICorDebugManagedCallback::EditAndContinueRemap Method"
 ms.date: "03/30/2017"
 api_name: 

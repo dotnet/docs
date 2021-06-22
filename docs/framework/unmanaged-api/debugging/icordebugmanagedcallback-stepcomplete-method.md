@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugManagedCallback::StepComplete Method"
 title: "ICorDebugManagedCallback::StepComplete Method"
 ms.date: "03/30/2017"
 api_name: 

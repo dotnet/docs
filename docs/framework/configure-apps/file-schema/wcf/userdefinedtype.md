@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <userDefinedType>"
 title: "<userDefinedType>"
 ms.date: "03/30/2017"
 ms.assetid: 0f70ec06-8249-4f0c-9f49-b4df59985fb8

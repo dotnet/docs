@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Trusted Subsystem"
 title: "Trusted Subsystem"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reference (Visual Basic)"
 title: "Reference"
 ms.date: 07/20/2015
 helpviewer_keywords: 

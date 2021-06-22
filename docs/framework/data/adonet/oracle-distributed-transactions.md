@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Oracle Distributed Transactions"
 title: "Oracle Distributed Transactions"
 ms.date: "03/30/2017"
 ms.assetid: c340ca81-ef79-402f-b204-c5156b890fe5

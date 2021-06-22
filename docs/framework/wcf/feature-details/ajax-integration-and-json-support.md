@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AJAX Integration and JSON Support"
 title: "AJAX Integration and JSON Support"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

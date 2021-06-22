@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Host a WCF Service in WAS"
 title: "How to: Host a WCF Service in WAS"
 ms.date: "03/30/2017"
 ms.assetid: 9e3e213e-2dce-4f98-81a3-f62f44caeb54
@@ -30,7 +31,7 @@ This topic outlines the basic steps required to create a Windows Process Activat
   
  Otherwise, the endpoint that is initialized first always determines the values of these properties, and endpoints added later throw a <xref:System.ServiceModel.ServiceActivationException> if they do not match those settings.  
   
- For the source copy of this example, see [TCP Activation](../samples/tcp-activation.md).  
+ For the source copy of this example, see [TCP Activation](/previous-versions/dotnet/framework/wcf/samples/tcp-activation).  
   
 ### To create a basic service hosted by WAS  
   
@@ -95,5 +96,5 @@ This topic outlines the basic steps required to create a Windows Process Activat
   
 ## See also
 
-- [TCP Activation](../samples/tcp-activation.md)
+- [TCP Activation](/previous-versions/dotnet/framework/wcf/samples/tcp-activation)
 - [Windows Server App Fabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10))

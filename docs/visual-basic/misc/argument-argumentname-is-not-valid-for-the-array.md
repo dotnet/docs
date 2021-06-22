@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Argument '<argumentname>' is not valid for the array"
 title: "Argument '<argumentname>' is not valid for the array"
 ms.date: 07/20/2015
 f1_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugHeapSegmentEnum Interface"
 title: "ICorDebugHeapSegmentEnum Interface"
 ms.date: "03/30/2017"
 api_name: 

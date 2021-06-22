@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 5f16d1f8-5370-4b55-b0c8-e497df163037
+ms.topic: how-to
 ---
 
 # How to perform streaming transform of large XML documents (LINQ to XML)

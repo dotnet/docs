@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Register and Configure a Service Moniker"
 title: "How to: Register and Configure a Service Moniker"
 ms.date: "03/30/2017"
 helpviewer_keywords:

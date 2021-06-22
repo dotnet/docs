@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Communication Foundation Endpoints"
 title: "Windows Communication Foundation Endpoints"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

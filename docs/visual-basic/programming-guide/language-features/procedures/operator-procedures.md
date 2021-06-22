@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Operator Procedures (Visual Basic)"
 title: "Operator Procedures"
 ms.date: 07/20/2015
 helpviewer_keywords:

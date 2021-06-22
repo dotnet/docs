@@ -1,11 +1,12 @@
 ---
-title: Create a .NET Core console application using Visual Studio for Mac
-description: Learn how to create a .NET Core console application using Visual Studio for Mac.
-ms.date: 06/02/2020
+title: Create a .NET console application using Visual Studio for Mac
+description: Learn how to create a .NET console application using Visual Studio for Mac.
+ms.date: 11/30/2020
+recommendations: false
 ---
-# Tutorial: Create a .NET Core console application using Visual Studio for Mac
+# Tutorial: Create a .NET console application using Visual Studio for Mac
 
-This tutorial shows how to create and run a .NET Core console application using Visual Studio for Mac.
+This tutorial shows how to create and run a .NET console application using Visual Studio for Mac.
 
 > [!NOTE]
 > Your feedback is highly valued. There are two ways you can provide feedback to the development team on Visual Studio for Mac:
@@ -15,15 +16,13 @@ This tutorial shows how to create and run a .NET Core console application using 
 
 ## Prerequisites
 
-* [Visual Studio for Mac version 8.6 or later](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET Core development. For more information, see the following resources:
+* [Visual Studio for Mac version 8.8 or later](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET development. For more information, see the following resources:
 
   * [Tutorial: Install Visual Studio for Mac](/visualstudio/mac/installation).
   * [Supported macOS versions](../install/windows.md).
-  * [.NET Core versions supported by Visual Studio for Mac](/visualstudio/mac/net-core-support).
+  * [.NET versions supported by Visual Studio for Mac](/visualstudio/mac/net-core-support).
 
 ## Create the app
-
-Create a .NET Core console app project named "HelloWorld".
 
 1. Start Visual Studio for Mac.
 
@@ -35,9 +34,7 @@ Create a .NET Core console app project named "HelloWorld".
 
    :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-new-dialog.png" alt-text="New project templates list":::
 
-1. In the **Target Framework** drop-down of the **Configure your new Console Application** dialog, select **.NET Core 3.1**, and select **Next**.
-
-   :::image type="content" source="media/with-visual-studio-mac/target-framework.png" alt-text="Select Target Framework":::
+1. In the **Target Framework** drop-down of the **Configure your new Console Application** dialog, select **.NET 5.0**, and select **Next**.
 
 1. Type "HelloWorld" for the **Project Name**, and select **Create**.
 
@@ -80,9 +77,9 @@ Enhance the application to prompt the user for their name and display it along w
 
    :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="MainMethod":::
 
-   This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> method to wait for user input.
+   This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> method to wait for user input.
 
-   The `\n` represents a newline character.
+   <xref:System.Environment.NewLine> is a platform-independent and language-independent way to represent a line break. Alternatives are `\n` in C# and `vbCrLf` in Visual Basic.
 
    The dollar sign (`$`) in front of a string lets you put expressions such as variable names in curly braces in the string. The expression value is inserted into the string in place of the expression. This syntax is referred to as [interpolated strings](../../csharp/language-reference/tokens/interpolated.md).
 
@@ -96,7 +93,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 ## Next steps
 
-In this tutorial, you created a .NET Core console application. In the next tutorial, you debug the app.
+In this tutorial, you created a .NET console application. In the next tutorial, you debug the app.
 
 > [!div class="nextstepaction"]
-> [Debug a .NET Core console application using Visual Studio for Mac](debugging-with-visual-studio-mac.md)
+> [Debug a .NET console application using Visual Studio for Mac](debugging-with-visual-studio-mac.md)

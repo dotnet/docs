@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Changing Where My.Application.Log Writes Information (Visual Basic)"
 title: "Changing Where My.Application.Log Writes Information"
 ms.date: 07/20/2015
 helpviewer_keywords:

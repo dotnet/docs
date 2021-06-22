@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TypeNameFactory Coclass"
 title: "TypeNameFactory Coclass"
 ms.date: "03/30/2017"
 api_name: 

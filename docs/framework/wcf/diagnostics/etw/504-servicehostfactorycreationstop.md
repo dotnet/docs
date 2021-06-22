@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 504 - ServiceHostFactoryCreationStop"
 title: "504 - ServiceHostFactoryCreationStop"
 ms.date: "03/30/2017"
 ms.assetid: 284d240a-ef0c-4572-b3cd-8fbc579db05f

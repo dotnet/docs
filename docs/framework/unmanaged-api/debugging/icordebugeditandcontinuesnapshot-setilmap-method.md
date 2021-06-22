@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugEditAndContinueSnapshot::SetILMap Method"
 title: "ICorDebugEditAndContinueSnapshot::SetILMap Method"
 ms.date: "03/30/2017"
 api_name: 

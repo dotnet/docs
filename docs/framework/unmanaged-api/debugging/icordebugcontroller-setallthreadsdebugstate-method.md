@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugController::SetAllThreadsDebugState Method"
 title: "ICorDebugController::SetAllThreadsDebugState Method"
 ms.date: "03/30/2017"
 api_name: 

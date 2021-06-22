@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Common Tasks Performed with Visual Basic Operators"
 title: "Common Tasks Performed with Visual Basic Operators"
 ms.date: 07/20/2015
 helpviewer_keywords: 

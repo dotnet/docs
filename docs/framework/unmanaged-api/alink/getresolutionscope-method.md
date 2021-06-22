@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GetResolutionScope Method"
 title: "GetResolutionScope Method"
 ms.date: "03/30/2017"
 api_name: 

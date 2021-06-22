@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: With...End With Statement (Visual Basic)"
 title: "With...End With Statement"
 ms.date: 07/20/2015
 f1_keywords:

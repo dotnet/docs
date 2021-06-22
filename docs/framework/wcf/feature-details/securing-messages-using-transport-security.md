@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Securing Messages Using Transport Security"
 title: "Securing Messages Using Transport Security"
 ms.date: "03/30/2017"
 ms.assetid: 9029771a-097e-448a-a13a-55d2878330b8

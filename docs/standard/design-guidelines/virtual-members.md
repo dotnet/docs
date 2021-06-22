@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Virtual Members"
 title: "Virtual Members"
 ms.date: "10/22/2008"
 helpviewer_keywords:

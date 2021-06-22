@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo7::ReadInMemorySymbols"
 title: "ICorProfilerInfo7::ReadInMemorySymbols"
 ms.date: "03/30/2017"
 api_name: 

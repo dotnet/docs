@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess::EnumerateAppDomains Method"
 title: "ICorDebugProcess::EnumerateAppDomains Method"
 ms.date: "03/30/2017"
 api_name: 

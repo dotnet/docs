@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Write and read messages from a Dataflow block"
 title: "How to: Write and read messages from a Dataflow block"
 ms.date: 09/10/2020
 dev_langs:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Validate Strings That Represent Dates or Times (Visual Basic)"
 title: "How to: Validate Strings That Represent Dates or Times"
 ms.date: 07/20/2015
 helpviewer_keywords: 

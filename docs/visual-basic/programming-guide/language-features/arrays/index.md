@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Arrays in Visual Basic"
 title: "Arrays"
 ms.date: 12/06/2017
 f1_keywords:

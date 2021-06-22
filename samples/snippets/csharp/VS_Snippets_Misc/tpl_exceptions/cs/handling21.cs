@@ -21,7 +21,7 @@ public class Example
               }
               // Rethrow any other exception.
               else {
-                  throw;
+                  throw e;
               }
           }
       }

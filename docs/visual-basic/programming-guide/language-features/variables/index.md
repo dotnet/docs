@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Variables in Visual Basic"
 title: "Variables"
 ms.date: 07/20/2015
 helpviewer_keywords: 

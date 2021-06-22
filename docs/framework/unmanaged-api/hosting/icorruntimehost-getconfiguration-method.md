@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorRuntimeHost::GetConfiguration Method"
 title: "ICorRuntimeHost::GetConfiguration Method"
 ms.date: "03/30/2017"
 api_name: 

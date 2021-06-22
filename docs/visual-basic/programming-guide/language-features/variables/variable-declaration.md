@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Variable Declaration in Visual Basic"
 title: "Variable Declaration"
 ms.date: 07/20/2015
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3829 - RoutingServiceFilterTableMatchStop"
 title: "3829 - RoutingServiceFilterTableMatchStop"
 ms.date: "03/30/2017"
 ms.assetid: 3355b8c2-2d5b-4c1b-8981-0cda08dee519

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugModule2 Interface"
 title: "ICorDebugModule2 Interface"
 ms.date: "03/30/2017"
 api_name: 

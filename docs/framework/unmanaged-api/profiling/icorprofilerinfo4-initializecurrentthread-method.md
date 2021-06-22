@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo4::InitializeCurrentThread Method"
 title: "ICorProfilerInfo4::InitializeCurrentThread Method"
 ms.date: "03/30/2017"
 api_name: 

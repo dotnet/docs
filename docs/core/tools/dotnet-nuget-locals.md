@@ -58,7 +58,7 @@ The `dotnet nuget locals` command clears or lists local NuGet resources in the h
 - Displays the paths of all the local cache directories (http-cache directory, global-packages cache directory, and temporary cache directory):
 
   ```dotnetcli
-  dotnet nuget locals all –l
+  dotnet nuget locals all -l
   ```
 
 - Displays the path for the local http-cache directory:

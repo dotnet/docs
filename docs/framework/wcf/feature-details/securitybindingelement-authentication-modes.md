@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SecurityBindingElement Authentication Modes"
 title: "SecurityBindingElement Authentication Modes"
 ms.date: "03/30/2017"
 dev_langs: 

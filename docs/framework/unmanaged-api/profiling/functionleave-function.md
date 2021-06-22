@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FunctionLeave Function"
 title: "FunctionLeave Function"
 ms.date: "03/30/2017"
 api_name: 
@@ -32,9 +33,8 @@ void __stdcall FunctionLeave (
   
 ## Parameters
 
-- `funcID`
-
-  \[in] The identifier of the function that is returning.
+`funcID`
+[in] The identifier of the function that is returning.
 
 ## Remarks  
 

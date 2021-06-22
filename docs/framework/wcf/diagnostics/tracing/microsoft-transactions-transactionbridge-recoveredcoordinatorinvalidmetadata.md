@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft.Transactions.TransactionBridge.RecoveredCoordinatorInvalidMetadata"
 title: "Microsoft.Transactions.TransactionBridge.RecoveredCoordinatorInvalidMetadata"
 ms.date: "03/30/2017"
 ms.assetid: 99ebe70b-8980-447f-b785-ecfcbdbaea72

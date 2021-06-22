@@ -140,7 +140,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-l|--logger <LOGGER>`**
 
-  Specifies a logger for test results. Unlike MSBuild, dotnet test doesn't accept abbreviations: instead of `-l "console;v=d"` use `-l "console;verbosity=detailed"`.
+  Specifies a logger for test results. Unlike MSBuild, dotnet test doesn't accept abbreviations: instead of `-l "console;v=d"` use `-l "console;verbosity=detailed"`. Specify the parameter multiple times to enable multiple loggers.
 
 - **`--no-build`**
 
@@ -244,7 +244,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 | Test Framework | Supported properties                                                                                      |
 | -------------- | --------------------------------------------------------------------------------------------------------- |
 | MSTest         | <ul><li>FullyQualifiedName</li><li>Name</li><li>ClassName</li><li>Priority</li><li>TestCategory</li></ul> |
-| xUnit          | <ul><li>FullyQualifiedName</li><li>DisplayName</li><li>Traits</li></ul>                                   |
+| xUnit          | <ul><li>FullyQualifiedName</li><li>DisplayName</li><li>Category</li></ul>                                 |
 | NUnit          | <ul><li>FullyQualifiedName</li><li>Name</li><li>TestCategory</li><li>Priority</li></ul>                                   |
 
 The `<operator>` describes the relationship between the property and the value:

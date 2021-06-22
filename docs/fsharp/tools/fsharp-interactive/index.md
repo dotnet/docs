@@ -84,6 +84,9 @@ F# scripting is natively supported in [Visual Studio](../../get-started/get-star
 
 ## Referencing packages in F# Interactive
 
+> [!NOTE]
+> Package management system is extensible, read more [about other extensions](https://fsharp.github.io/FSharp.Compiler.Service/reference/Microsoft.DotNet.DependencyManager.html).
+
 F# Interactive supports referencing NuGet packages with the `#r "nuget:"` syntax and an optional version:
 
 ```fsharp
@@ -109,7 +112,7 @@ let t2 = dsharp.tensor [ [ 0; 1 ]; [ 2; 2 ] ]
 // Define a scalar-to-scalar function
 let f (x: Tensor) = sin (sqrt x)
 
-printfn "%A" (f (dsharp.tensor 1.2))
+printfn $"{f (dsharp.tensor 1.2)}"
 ```
 
 ### Specifying a package source
@@ -117,7 +120,7 @@ printfn "%A" (f (dsharp.tensor 1.2))
 You can also specify a package source with the `#i` command. The following example specifies a remote and a local source:
 
 ```fsharp
-#i "nuget:https://my-remote-package-source/index.json
+#i "nuget:https://my-remote-package-source/index.json"
 #i @"path-to-my-local-source"
 ```
 
@@ -127,6 +130,8 @@ You can specify as many package references as you like in a script.
 
 > [!NOTE]
 > There's currently a limitation for scripts that use framework references (e.g.`Microsoft.NET.Sdk.Web` or  `Microsoft.NET.Sdk.WindowsDesktop`). Packages like Saturn, Giraffe, WinForms are not available. This is being tracked in issue [#9417](https://github.com/dotnet/fsharp/issues/9417).
+
+For more information, see [package management extensibility and other extensions](https://fsharp.github.io/FSharp.Compiler.Service/reference/Microsoft.DotNet.DependencyManager.html).
 
 ## Referencing assemblies on disk with F# interactive
 
@@ -143,7 +148,7 @@ One compiled, you can reference it in a file called `Script.fsx` like so:
 ```fsharp
 #r "path/to/MyAssembly.dll"
 
-printfn "%A" (MyAssembly.myFunction 10 40)
+printfn $"{MyAssembly.myFunction 10 40}"
 ```
 
 The output is as follows:
@@ -157,7 +162,7 @@ You can specify as many assembly references as you like in a script.
 
 ## Loading other scripts
 
-When scripting, it can often be helpful to use different scripts for different tasks. Sometimes you may want to reuse code from on script in another. Rather than copy-pasting its contents into your file, you can simple load and evaluate it with `#load`.
+When scripting, it can often be helpful to use different scripts for different tasks. Sometimes you may want to reuse code from one script in another. Rather than copy-pasting its contents into your file, you can simply load and evaluate it with `#load`.
 
 Consider the following `Script1.fsx`:
 
@@ -171,7 +176,7 @@ And the consuming file, `Script2.fsx`:
 #load "Script1.fsx"
 open Script1
 
-printfn "%d" (square 12)
+printfn $"%d{square 12}"
 ```
 
 Note that the `open Script1` declaration is required. This is because constructs in an F# script are compiled into a top-level module that is the name of the script file it is in.
@@ -195,7 +200,7 @@ The following example shows how to get and use command-line arguments:
 let args = fsi.CommandLineArgs
 
 for arg in args do
-    printfn "%s" arg
+    printfn $"{arg}"
 ```
 
 When evaluated, it prints all arguments. The first argument is always the name of the script that is evaluated:

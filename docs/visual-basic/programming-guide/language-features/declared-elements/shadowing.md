@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Shadowing in Visual Basic"
 title: "Shadowing"
 ms.date: 07/20/2015
 helpviewer_keywords: 

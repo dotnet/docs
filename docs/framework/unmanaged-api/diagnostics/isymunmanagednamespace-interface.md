@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedNamespace Interface"
 title: "ISymUnmanagedNamespace Interface"
 ms.date: "03/30/2017"
 api_name: 

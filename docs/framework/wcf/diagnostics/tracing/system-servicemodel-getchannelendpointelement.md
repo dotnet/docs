@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.GetChannelEndpointElement"
 title: "System.ServiceModel.GetChannelEndpointElement"
 ms.date: "03/30/2017"
 ms.assetid: ee75c333-2e63-4f26-ae73-14324f4d088a

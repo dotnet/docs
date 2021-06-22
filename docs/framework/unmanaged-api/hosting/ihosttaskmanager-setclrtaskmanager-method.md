@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostTaskManager::SetCLRTaskManager Method"
 title: "IHostTaskManager::SetCLRTaskManager Method"
 ms.date: "03/30/2017"
 api_name: 

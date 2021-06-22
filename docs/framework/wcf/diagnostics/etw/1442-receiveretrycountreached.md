@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1442 - ReceiveRetryCountReached"
 title: "1442 - ReceiveRetryCountReached"
 ms.date: "03/30/2017"
 ms.assetid: 9f66cd1c-950b-4073-a1c9-62eba33dbc22

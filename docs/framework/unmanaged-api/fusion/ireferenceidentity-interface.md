@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IReferenceIdentity Interface"
 title: "IReferenceIdentity Interface"
 ms.date: "03/30/2017"
 api_name: 

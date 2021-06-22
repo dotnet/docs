@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GetSchema and Schema Collections"
 title: "GetSchema and Schema Collections"
 ms.date: "03/30/2017"
 dev_langs: 

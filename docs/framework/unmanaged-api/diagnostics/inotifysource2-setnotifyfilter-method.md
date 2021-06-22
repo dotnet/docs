@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: INotifySource2::SetNotifyFilter Method"
 title: "INotifySource2::SetNotifyFilter Method"
 ms.date: "03/30/2017"
 api_name: 

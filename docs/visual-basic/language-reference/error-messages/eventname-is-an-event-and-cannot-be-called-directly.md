@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC32022: '<eventname>' is an event, and cannot be called directly"
 title: "'<eventname>' is an event, and cannot be called directly"
 ms.date: 07/20/2015
 f1_keywords:

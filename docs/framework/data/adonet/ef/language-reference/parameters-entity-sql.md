@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Parameters (Entity SQL)"
 title: "Parameters (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 8d618edd-0988-4ff2-8263-ce59448af7a5

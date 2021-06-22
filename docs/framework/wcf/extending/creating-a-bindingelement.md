@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating a BindingElement"
 title: "Creating a BindingElement"
 ms.date: "03/30/2017"
 ms.assetid: 01a35307-a41f-4ef6-a3db-322af40afc99
@@ -23,7 +24,7 @@ Bindings and binding elements (objects that extend <xref:System.ServiceModel.Cha
   
  <xref:System.ServiceModel.Channels.BindingElement.BuildChannelListener%2A> has a similar implementation for creating `ChunkingChannelListener` and passing it the inner channel listener.  
   
- As another example using a transport channel, the [Transport: UDP](../samples/transport-udp.md) sample provides the following override.  
+ As another example using a transport channel, the [Transport: UDP](/previous-versions/dotnet/framework/wcf/samples/transport-udp) sample provides the following override.  
   
  In the sample, the binding element is `UdpTransportBindingElement`, which derives from <xref:System.ServiceModel.Channels.TransportBindingElement>. It overrides the following methods to build the factories associated with the channel.  
   
@@ -75,4 +76,4 @@ public IChannelListener<TChannel> BuildChannelListener<TChannel>(BindingContext 
 
 - <xref:System.ServiceModel.Channels.BindingElement>
 - [Developing Channels](developing-channels.md)
-- [Transport: UDP](../samples/transport-udp.md)
+- [Transport: UDP](/previous-versions/dotnet/framework/wcf/samples/transport-udp)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WmiPutInstanceFailed"
 title: "WmiPutInstanceFailed"
 ms.date: "03/30/2017"
 ms.assetid: 1e56f6db-c6f6-4e57-9668-3ca79c3750af

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugThread4::GetBlockingObjects Method"
 title: "ICorDebugThread4::GetBlockingObjects Method"
 ms.date: "03/30/2017"
 api_name: 

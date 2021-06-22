@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Conditional Compilation in Visual Basic"
 title: "Conditional Compilation"
 ms.date: 07/20/2015
 helpviewer_keywords: 

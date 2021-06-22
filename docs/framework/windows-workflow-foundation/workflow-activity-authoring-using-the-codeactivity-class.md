@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Workflow Activity Authoring Using the CodeActivity Class"
 title: "Workflow Activity Authoring Using the CodeActivity Class"
 ms.date: "03/30/2017"
 ms.assetid: cfe315c1-f86d-43ec-b9ce-2f8c469b1106

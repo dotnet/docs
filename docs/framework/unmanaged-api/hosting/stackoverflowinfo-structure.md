@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: StackOverflowInfo Structure"
 title: "StackOverflowInfo Structure"
 ms.date: "03/30/2017"
 api_name: 

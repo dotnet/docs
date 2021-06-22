@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Query Results"
 title: "Query Results"
 ms.date: "03/30/2017"
 dev_langs: 

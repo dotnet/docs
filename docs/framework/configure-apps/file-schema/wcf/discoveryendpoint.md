@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <discoveryEndpoint>"
 title: "<discoveryEndpoint>"
 ms.date: "03/30/2017"
 ms.assetid: fae2f48b-a635-4e4b-859d-a1432ac37e1c

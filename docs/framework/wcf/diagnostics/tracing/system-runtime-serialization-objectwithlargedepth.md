@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.Runtime.Serialization.ObjectWithLargeDepth"
 title: "System.Runtime.Serialization.ObjectWithLargeDepth"
 ms.date: "03/30/2017"
 ms.assetid: 5837891d-104b-4e9b-bfba-5434a9524b33

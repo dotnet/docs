@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CreateAssemblyNameObject Function"
 title: "CreateAssemblyNameObject Function"
 ms.date: "03/30/2017"
 api_name: 

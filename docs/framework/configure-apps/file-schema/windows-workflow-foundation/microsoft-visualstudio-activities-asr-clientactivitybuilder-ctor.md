@@ -1,7 +1,7 @@
 ---
+description: "Learn more about: Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder..ctor"
 title: "Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder..ctor"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 api_name: 
   - "Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder..ctor"
 api_location: 

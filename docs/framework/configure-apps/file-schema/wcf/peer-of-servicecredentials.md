@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <peer> of <serviceCredentials>"
 title: "<peer> of <serviceCredentials>"
 ms.date: "03/30/2017"
 ms.assetid: b134e21d-e5b5-458e-9309-626dbf8db4ed

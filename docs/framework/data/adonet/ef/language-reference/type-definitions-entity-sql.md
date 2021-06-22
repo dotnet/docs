@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type Definitions (Entity SQL)"
 title: "Type Definitions (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 306b204a-ade5-47ef-95b5-c785d2da4a7e

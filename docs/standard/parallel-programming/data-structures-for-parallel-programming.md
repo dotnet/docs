@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Structures for Parallel Programming"
 title: "Data Structures for Parallel Programming"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

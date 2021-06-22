@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Extending ServiceHost and the Service Model Layer"
 title: "Extending ServiceHost and the Service Model Layer"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

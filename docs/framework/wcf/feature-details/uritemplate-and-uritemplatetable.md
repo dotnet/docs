@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: UriTemplate and UriTemplateTable"
 title: "UriTemplate and UriTemplateTable"
 ms.date: "03/30/2017"
 ms.assetid: 5cbbe03f-4a9e-4d44-9e02-c5773239cf52
@@ -334,6 +335,6 @@ When a variable is given a default value of `null` there are some additional con
 
 - [WCF Web HTTP Programming Model Overview](wcf-web-http-programming-model-overview.md)
 - [WCF Web HTTP Programming Object Model](wcf-web-http-programming-object-model.md)
-- [UriTemplate](../samples/uritemplate-sample.md)
-- [UriTemplate Table](../samples/uritemplate-table-sample.md)
-- [UriTemplate Table Dispatcher](../samples/uritemplate-table-dispatcher-sample.md)
+- [UriTemplate](/previous-versions/dotnet/framework/wcf/samples/uritemplate-sample)
+- [UriTemplate Table](/previous-versions/dotnet/framework/wcf/samples/uritemplate-table-sample)
+- [UriTemplate Table Dispatcher](/previous-versions/dotnet/framework/wcf/samples/uritemplate-table-dispatcher-sample)

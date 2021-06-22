@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugComObjectValue::GetCachedInterfacePointers Method"
 title: "ICorDebugComObjectValue::GetCachedInterfacePointers Method"
 ms.date: "03/30/2017"
 api_name: 

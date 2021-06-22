@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: StrongNameTokenFromPublicKey Function"
 title: "StrongNameTokenFromPublicKey Function"
 ms.date: "03/30/2017"
 api_name: 
@@ -28,7 +29,7 @@ Gets a token representing a public key. A strong name token is the shortened for
 ## Syntax  
   
 ```cpp  
-BOOLEANStrongNameTokenFromPublicKey (
+BOOLEAN StrongNameTokenFromPublicKey (
     [in]  BYTE    *pbPublicKeyBlob,  
     [in]  ULONG   cbPublicKeyBlob,  
     [out] BYTE    **ppbStrongNameToken,  

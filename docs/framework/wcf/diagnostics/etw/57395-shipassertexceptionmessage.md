@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 57395 - ShipAssertExceptionMessage"
 title: "57395 - ShipAssertExceptionMessage"
 ms.date: "03/30/2017"
 ms.assetid: 37f0c15b-e34e-42fe-8f86-b122e592add5

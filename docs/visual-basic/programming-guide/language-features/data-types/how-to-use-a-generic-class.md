@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use a Generic Class (Visual Basic)"
 title: "How to: Use a Generic Class"
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -44,7 +45,7 @@ A class that takes *type parameters* is called a *generic class*. If you are usi
 
 - [Data Types](index.md)
 - [Generic Types in Visual Basic](generic-types.md)
-- [Language Independence and Language-Independent Components](../../../../standard/language-independence-and-language-independent-components.md)
+- [Language Independence and Language-Independent Components](../../../../standard/language-independence.md)
 - [Of](../../../language-reference/statements/of-clause.md)
 - [Imports Statement (.NET Namespace and Type)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md)
 - [How to: Define a Class That Can Provide Identical Functionality on Different Data Types](how-to-define-a-class-that-can-provide-identical-functionality.md)

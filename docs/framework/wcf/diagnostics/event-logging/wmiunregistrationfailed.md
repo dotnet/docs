@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WmiUnregistrationFailed"
 title: "WmiUnregistrationFailed"
 ms.date: "03/30/2017"
 ms.assetid: 7d1d31a7-efab-492d-b0ff-3233d5dc7a2a

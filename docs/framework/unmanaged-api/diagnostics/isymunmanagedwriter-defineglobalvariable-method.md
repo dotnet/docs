@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedWriter::DefineGlobalVariable Method"
 title: "ISymUnmanagedWriter::DefineGlobalVariable Method"
 ms.date: "03/30/2017"
 api_name: 

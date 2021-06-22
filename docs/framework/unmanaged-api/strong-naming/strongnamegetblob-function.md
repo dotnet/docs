@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: StrongNameGetBlob Function"
 title: "StrongNameGetBlob Function"
 ms.date: "03/30/2017"
 api_name: 

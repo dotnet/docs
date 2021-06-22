@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Deriving from WebRequest"
 title: "Deriving from WebRequest"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

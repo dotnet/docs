@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SqlStreamChars.Dispose(Boolean) Method"
 title: SqlStreamChars.Dispose(Boolean) Method (System.Data.SqlTypes)
 author: stevestein
 ms.author: sstein

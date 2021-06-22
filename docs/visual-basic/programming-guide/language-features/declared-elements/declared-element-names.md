@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Declared Element Names (Visual Basic)"
 title: "Declared Element Names"
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -59,7 +60,7 @@ Every declared element has a name, also called an *identifier*, which is what th
  `xyz$wv`  
   
 > [!CAUTION]
-> Element names starting with an underscore (`_`) are not part of the [Language Independence and Language-Independent Components](../../../../standard/language-independence-and-language-independent-components.md) (CLS), so CLS-compliant code cannot use a component that defines such names. However, an underscore in any other position in an element name is CLS-compliant.  
+> Element names starting with an underscore (`_`) are not part of the [Language Independence and Language-Independent Components](../../../../standard/language-independence.md) (CLS), so CLS-compliant code cannot use a component that defines such names. However, an underscore in any other position in an element name is CLS-compliant.  
   
 ### Name Length Guidelines  
 

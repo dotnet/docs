@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedScope Interface"
 title: "ISymUnmanagedScope Interface"
 ms.date: "03/30/2017"
 api_name: 

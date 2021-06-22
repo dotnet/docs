@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Remove XML Data using XPathNavigator"
 title: "Remove XML Data using XPathNavigator"
 ms.date: "03/30/2017"
 dev_langs: 

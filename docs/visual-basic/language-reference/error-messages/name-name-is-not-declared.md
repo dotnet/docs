@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30451: Name '<name>' is not declared"
 title: "Name '<name>' is not declared"
 ms.date: 10/10/2018
 f1_keywords:

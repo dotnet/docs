@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::FindTypeRef Method"
 title: "IMetaDataImport::FindTypeRef Method"
 ms.date: "03/30/2017"
 api_name: 

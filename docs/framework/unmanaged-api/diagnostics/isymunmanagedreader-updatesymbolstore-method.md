@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedReader::UpdateSymbolStore Method"
 title: "ISymUnmanagedReader::UpdateSymbolStore Method"
 ms.date: "03/30/2017"
 api_name: 

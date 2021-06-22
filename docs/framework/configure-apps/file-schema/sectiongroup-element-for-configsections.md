@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <sectionGroup> element for <configSections>"
 title: "<sectionGroup> element for <configSections>"
 ms.date: "05/01/2017"
 f1_keywords: 

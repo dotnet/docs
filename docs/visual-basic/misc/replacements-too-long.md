@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Replacements too long"
 title: "Replacements too long"
 ms.date: 07/20/2015
 f1_keywords: 

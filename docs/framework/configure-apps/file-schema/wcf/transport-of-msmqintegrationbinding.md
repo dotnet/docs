@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <transport> of <msmqIntegrationBinding>"
 title: "<transport> of <msmqIntegrationBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 054579e3-7fdd-47df-99ca-952706ba5c8e

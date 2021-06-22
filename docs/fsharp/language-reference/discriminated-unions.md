@@ -184,10 +184,10 @@ type Shape =
     interface IPrintable with
         member this.Print () =
             match this with
-            | Circle r -> printfn "Circle with radius %f" r
-            | EquilateralTriangle s -> printfn "Equilateral Triangle of side %f" s
-            | Square s -> printfn "Square with side %f" s
-            | Rectangle(l, w) -> printfn "Rectangle with length %f and width %f" l w
+            | Circle r -> printfn $"Circle with radius %f{r}"
+            | EquilateralTriangle s -> printfn $"Equilateral Triangle of side %f{s}"
+            | Square s -> printfn $"Square with side %f{s}"
+            | Rectangle(l, w) -> printfn $"Rectangle with length %f{l} and width %f{w}"
 ```
 
 ## Common attributes

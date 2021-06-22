@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Dispose of a System Resource (Visual Basic)"
 title: "How to: Dispose of a System Resource"
 ms.date: 07/20/2015
 helpviewer_keywords: 

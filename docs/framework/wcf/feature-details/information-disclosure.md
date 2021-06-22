@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Information Disclosure"
 title: "Information Disclosure"
 ms.date: "03/30/2017"
 ms.assetid: 4064c89f-afa6-444a-aa7e-807ef072131c

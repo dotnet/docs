@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30424: Constants must be of an intrinsic or enumerated type, not a class, structure, type parameter, or array type"
 title: "Constants must be of an intrinsic or enumerated type, not a class, structure, type parameter, or array type"
 ms.date: 07/20/2015
 f1_keywords:

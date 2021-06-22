@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRTask::SwitchOut Method"
 title: "ICLRTask::SwitchOut Method"
 ms.date: "03/30/2017"
 api_name: 

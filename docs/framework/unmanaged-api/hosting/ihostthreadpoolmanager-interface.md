@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostThreadPoolManager Interface"
 title: "IHostThreadPoolManager Interface"
 ms.date: "03/30/2017"
 api_name: 

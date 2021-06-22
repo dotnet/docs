@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Performing Network Operations (Visual Basic)"
 title: "Performing Network Operations"
 ms.date: 07/20/2015
 helpviewer_keywords: 

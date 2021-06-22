@@ -1,6 +1,6 @@
 ---
 title: Enable tab completion
-description: This article teaches you how to enable tab completion for the .NET CLI for PowerShell, Bash, and zsh.
+description: This article teaches you how to enable tab completion for the .NET CLI for PowerShell, Bash, zsh, and fish.
 author: adegeo
 ms.author: adegeo
 ms.topic: how-to
@@ -11,7 +11,7 @@ ms.date: 11/03/2019
 
 **This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
-This article describes how to configure tab completion for three shells, PowerShell, Bash, and zsh. For other shells, refer to their documentation on how to configure tab completion.
+This article describes how to configure tab completion for four shells, PowerShell, Bash, zsh, and fish. For other shells, refer to their documentation on how to configure tab completion.
 
 Once set up, tab completion for the .NET CLI is triggered by typing a `dotnet` command in the shell, and then pressing the TAB key. The current command line is sent to the `dotnet complete` command, and the results are processed by your shell. You can test the results without enabling tab completion by sending something directly to the `dotnet complete` command. For example:
 
@@ -92,4 +92,12 @@ _dotnet_zsh_complete()
 }
 
 compctl -K _dotnet_zsh_complete dotnet
+```
+
+## fish
+
+To add tab completion to your **fish** shell for the .NET CLI, add the following code to your `config.fish` file:
+
+```fish
+complete -f -c dotnet -a "(dotnet complete)"
 ```

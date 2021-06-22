@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Defining and Specifying Faults"
 title: "Defining and Specifying Faults"
 ms.date: "03/30/2017"
 dev_langs: 

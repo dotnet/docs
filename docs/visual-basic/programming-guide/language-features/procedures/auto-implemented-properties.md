@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Auto-Implemented Properties (Visual Basic)"
 title: "Auto-Implemented Properties"
 ms.date: 07/20/2015
 f1_keywords: 

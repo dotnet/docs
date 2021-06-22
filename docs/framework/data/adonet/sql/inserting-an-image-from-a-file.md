@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Inserting an Image from a File"
 title: "Inserting an Image from a File"
 ms.date: "03/30/2017"
 dev_langs: 

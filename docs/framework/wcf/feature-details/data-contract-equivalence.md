@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Contract Equivalence"
 title: "Data Contract Equivalence"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Class not registered on local machine"
 title: "Class not registered on local machine"
 ms.date: 07/20/2015
 f1_keywords: 

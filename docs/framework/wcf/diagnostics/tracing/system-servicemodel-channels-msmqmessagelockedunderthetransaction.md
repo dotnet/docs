@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.MsmqMessageLockedUnderTheTransaction"
 title: "System.ServiceModel.Channels.MsmqMessageLockedUnderTheTransaction"
 ms.date: "03/30/2017"
 ms.assetid: 5b236bdd-38e8-4c42-9ea5-ac7e5575ebf8

@@ -219,7 +219,7 @@ In Blazor, you can register handlers for DOM UI events directly using directive 
 @code {
     void OnClick()
     {
-        Console.WriteLine("The button was clicked!);
+        Console.WriteLine("The button was clicked!");
     }
 }
 ```
@@ -543,7 +543,9 @@ A parent component can then supply child content using normal Razor syntax.
 
 ```razor
 <ChildContentComponent>
-    <p>The time is @DateTime.Now</p>
+    <ChildContent>
+        <p>The time is @DateTime.Now</p>
+    </ChildContent>
 </ChildContentComponent>
 ```
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Build an EntityConnection Connection String"
 title: "How to: Build an EntityConnection Connection String"
 ms.date: "03/30/2017"
 dev_langs: 

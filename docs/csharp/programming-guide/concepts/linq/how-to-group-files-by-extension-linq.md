@@ -1,6 +1,7 @@
 ---
 title: "How to group files by extension (LINQ) (C#)"
 description: Learn how to use LINQ to do advanced grouping and sorting operations on lists of files or folders in C#. The example shows how to page output in the console.
+ms.topic: how-to
 ms.date: 07/20/2015
 ms.assetid: 21a98320-a5a1-4981-82d8-6a637e7d9018
 ---

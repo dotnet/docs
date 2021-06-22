@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugEditAndContinueSnapshot Interface"
 title: "ICorDebugEditAndContinueSnapshot Interface"
 ms.date: "03/30/2017"
 api_name: 

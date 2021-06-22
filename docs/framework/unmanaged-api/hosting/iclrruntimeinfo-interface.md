@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRRuntimeInfo Interface"
 title: "ICLRRuntimeInfo Interface"
 ms.date: "03/30/2017"
 api_name: 

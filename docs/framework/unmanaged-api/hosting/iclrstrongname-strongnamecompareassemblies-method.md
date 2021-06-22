@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRStrongName::StrongNameCompareAssemblies Method"
 title: "ICLRStrongName::StrongNameCompareAssemblies Method"
 ms.date: "03/30/2017"
 api_name: 

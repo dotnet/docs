@@ -51,6 +51,10 @@ class Program
         {
             Console.WriteLine("\nTasks cancelled: timed out.\n");
         }
+        finally
+        {
+            s_cts.Dispose();
+        }
 
         Console.WriteLine("Application ending.");
     }

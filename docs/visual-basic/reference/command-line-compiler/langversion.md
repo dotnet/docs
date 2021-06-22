@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: -langversion (Visual Basic)"
 title: "-langversion"
 ms.date: 03/10/2018
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Security.IssuanceTokenProviderUsingCachedToken"
 title: "System.ServiceModel.Security.IssuanceTokenProviderUsingCachedToken"
 ms.date: "03/30/2017"
 ms.assetid: ee51ed4e-821c-4010-8d64-eabde522169f

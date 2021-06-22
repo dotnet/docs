@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Access WCF Services with One-Way and Request-Reply Contracts"
 title: "How to: Access WCF Services with One-Way and Request-Reply Contracts"
 ms.date: "03/30/2017"
 ms.assetid: 7e10d3a5-fcf4-4a4b-a8d6-92ee2c988b3b

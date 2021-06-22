@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Can't create necessary temporary file"
 title: "Can't create necessary temporary file"
 ms.date: 07/20/2015
 f1_keywords: 

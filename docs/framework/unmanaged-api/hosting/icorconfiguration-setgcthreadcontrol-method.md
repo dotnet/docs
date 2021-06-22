@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorConfiguration::SetGCThreadControl Method"
 title: "ICorConfiguration::SetGCThreadControl Method"
 ms.date: "03/30/2017"
 api_name: 

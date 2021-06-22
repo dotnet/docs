@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Internet Information Services Hosting Best Practices"
 title: "Internet Information Services Hosting Best Practices"
 ms.date: "03/30/2017"
 ms.assetid: 0834768e-9665-46bf-86eb-d4b09ab91af5
@@ -86,5 +87,5 @@ This topic outlines some best practices for hosting Windows Communication Founda
   
 ## See also
 
-- [Service Hosting Samples](../samples/hosting.md)
+- [Service Hosting Samples](/previous-versions/dotnet/framework/wcf/samples/hosting)
 - [Windows Server App Fabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10))

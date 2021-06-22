@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.PortSharing.WasWebHostAPIFailed"
 title: "System.ServiceModel.PortSharing.WasWebHostAPIFailed"
 ms.date: "03/30/2017"
 ms.assetid: 31a3ed07-16dc-4aa2-8cd7-6974ef75432b

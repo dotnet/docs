@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sub procedures (Visual Basic)"
 title: Sub procedures
 ms.date: 07/20/2015
 helpviewer_keywords:

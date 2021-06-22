@@ -17,7 +17,10 @@ This tutorial shows you how to create a custom <xref:System.Runtime.Loader.Assem
 
 ## Prerequisites
 
-- Install the [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download) or a newer version.
+- Install the [.NET 5 SDK](https://dotnet.microsoft.com/download) or a newer version.
+
+> [!NOTE]
+> The sample code targets .NET 5, but all the features it uses were introduced in .NET Core 3.0 and are available in all .NET releases since then.
 
 ## Create the application
 
@@ -234,7 +237,7 @@ Now, open the *HelloPlugin.csproj* file. It should look similar to the following
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>net5</TargetFramework>
   </PropertyGroup>
 
 </Project>
@@ -264,7 +267,7 @@ Almost all plugins are more complex than a simple "Hello World", and many plugin
 
 ## Other examples in the sample
 
-The complete source code for this tutorial can be found in [the dotnet/samples repository](https://github.com/dotnet/samples/tree/master/core/extensions/AppWithPlugin). The completed sample includes a few other examples of `AssemblyDependencyResolver` behavior. For example, the `AssemblyDependencyResolver` object can also resolve native libraries as well as localized satellite assemblies included in NuGet packages. The `UVPlugin` and `FrenchPlugin` in the samples repository demonstrate these scenarios.
+The complete source code for this tutorial can be found in [the dotnet/samples repository](https://github.com/dotnet/samples/tree/main/core/extensions/AppWithPlugin). The completed sample includes a few other examples of `AssemblyDependencyResolver` behavior. For example, the `AssemblyDependencyResolver` object can also resolve native libraries as well as localized satellite assemblies included in NuGet packages. The `UVPlugin` and `FrenchPlugin` in the samples repository demonstrate these scenarios.
 
 ## Reference a plugin interface from a NuGet package
 
@@ -282,7 +285,7 @@ This prevents the `A.PluginBase` assemblies from being copied to the output dire
 
 ## Plugin target framework recommendations
 
-Because plugin dependency loading uses the *.deps.json* file, there is a gotcha related to the plugin's target framework. Specifically, your plugins should target a runtime, such as .NET Core 3.0, instead of a version of .NET Standard. The *.deps.json* file is generated based on which framework the project targets, and since many .NET Standard-compatible packages ship reference assemblies for building against .NET Standard and implementation assemblies for specific runtimes, the *.deps.json* may not correctly see implementation assemblies, or it may grab the .NET Standard version of an assembly instead of the .NET Core version you expect.
+Because plugin dependency loading uses the *.deps.json* file, there is a gotcha related to the plugin's target framework. Specifically, your plugins should target a runtime, such as .NET 5, instead of a version of .NET Standard. The *.deps.json* file is generated based on which framework the project targets, and since many .NET Standard-compatible packages ship reference assemblies for building against .NET Standard and implementation assemblies for specific runtimes, the *.deps.json* may not correctly see implementation assemblies, or it may grab the .NET Standard version of an assembly instead of the .NET Core version you expect.
 
 ## Plugin framework references
 

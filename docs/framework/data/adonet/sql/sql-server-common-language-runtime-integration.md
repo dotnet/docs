@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SQL Server Common Language Runtime Integration"
 title: "SQL Server Common Language Runtime Integration"
 ms.date: "03/30/2017"
 ms.assetid: c7a324c4-160d-44c2-b593-641af06eca61
@@ -9,11 +10,7 @@ SQL Server 2005 introduced the integration of the common language runtime (CLR) 
   
  This section describes features and behaviors that are specific to SQL Server common language runtime (CLR) integration and the SQL Server in-process specific extensions to ADO.NET.  
   
- This section is meant to provide only enough information to get started programming with SQL Server CLR integration, and is not meant to be comprehensive. For more detailed information, see the version of SQL Server Books Online for the version of SQL Server you are using.  
-  
- **SQL Server documentation**  
-  
-1. [Common Language Runtime (CLR) Integration Programming Concepts](/sql/relational-databases/clr-integration/common-language-runtime-clr-integration-programming-concepts)  
+ This section is meant to provide only enough information to get started programming with SQL Server CLR integration, and is not meant to be comprehensive. For more detailed information, see [Common Language Runtime (CLR) Integration Programming Concepts](/sql/relational-databases/clr-integration/common-language-runtime-clr-integration-programming-concepts).
   
 ## In This Section  
 

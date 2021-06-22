@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.PortSharing.SharedManagerServiceEndpointNotExist"
 title: "System.ServiceModel.PortSharing.SharedManagerServiceEndpointNotExist"
 ms.date: "03/30/2017"
 ms.assetid: 2f9638ec-620c-477b-a6fc-2228aea1f875

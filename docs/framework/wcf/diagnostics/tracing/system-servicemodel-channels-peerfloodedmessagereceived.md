@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PeerFloodedMessageReceived"
 title: "System.ServiceModel.Channels.PeerFloodedMessageReceived"
 ms.date: "03/30/2017"
 ms.assetid: 778e4e15-2855-4a94-a703-8fa31acc935a

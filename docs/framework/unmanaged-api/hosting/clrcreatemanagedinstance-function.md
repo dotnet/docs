@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ClrCreateManagedInstance Function"
 title: "ClrCreateManagedInstance Function"
 ms.date: "03/30/2017"
 api_name: 

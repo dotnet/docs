@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CloseAssembly Method"
 title: "CloseAssembly Method"
 ms.date: "03/30/2017"
 api_name: 

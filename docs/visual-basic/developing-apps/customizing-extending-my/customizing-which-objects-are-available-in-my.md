@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Customizing Which Objects are Available in My (Visual Basic)"
 title: "Customizing Which Objects are Available in My"
 ms.date: 07/20/2015
 helpviewer_keywords: 

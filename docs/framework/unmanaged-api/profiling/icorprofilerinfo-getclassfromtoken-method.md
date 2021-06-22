@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo::GetClassFromToken Method"
 title: "ICorProfilerInfo::GetClassFromToken Method"
 ms.date: "03/30/2017"
 api_name: 

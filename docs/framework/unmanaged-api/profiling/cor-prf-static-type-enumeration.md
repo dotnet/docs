@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_PRF_STATIC_TYPE Enumeration"
 title: "COR_PRF_STATIC_TYPE Enumeration"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Represent Columns as Class Members"
 title: "How to: Represent Columns as Class Members"
 ms.date: "03/30/2017"
 dev_langs: 

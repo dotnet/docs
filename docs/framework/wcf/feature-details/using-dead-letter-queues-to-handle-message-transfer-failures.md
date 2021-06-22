@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Dead-Letter Queues to Handle Message Transfer Failures"
 title: "Using Dead-Letter Queues to Handle Message Transfer Failures"
 ms.date: "03/30/2017"
 dev_langs: 

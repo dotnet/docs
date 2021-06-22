@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Stand-Alone JSON Serialization using DataContractJsonSerializer"
 title: "Stand-Alone JSON Serialization using DataContractJsonSerializer"
 ms.date: "03/30/2017"
 ms.assetid: 312bd7b2-1300-4b12-801e-ebe742bd2287
@@ -81,7 +82,7 @@ All collections, dictionaries, and arrays are represented in JSON as arrays.
 
 - If you would like to work with JSON directly (accessing keys and values dynamically, without pre-defining a rigid contract), you have several options:
 
-  - Consider using the [Weakly-typed JSON Serialization (AJAX)](../samples/weakly-typed-json-serialization-sample.md) sample.
+  - Consider using the [Weakly-typed JSON Serialization (AJAX)](/previous-versions/dotnet/framework/wcf/samples/weakly-typed-json-serialization-sample) sample.
 
   - Consider using the <xref:System.Runtime.Serialization.ISerializable> interface and deserialization constructors - these two mechanisms allow you to access JSON key/value pairs on serialization and deserialization respectively, but do not work in partial trust scenarios.
 

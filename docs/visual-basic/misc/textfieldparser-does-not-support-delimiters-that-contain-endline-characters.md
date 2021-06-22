@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TextFieldParser does not support delimiters that contain endline characters"
 title: "TextFieldParser does not support delimiters that contain endline characters"
 ms.date: 07/20/2015
 f1_keywords: 

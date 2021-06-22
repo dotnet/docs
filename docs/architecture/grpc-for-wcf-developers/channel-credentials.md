@@ -1,12 +1,12 @@
 ---
 title: Channel credentials - gRPC for WCF Developers
 description: How to implement and use gRPC channel credentials in ASP.NET Core 3.0.
-ms.date: 09/02/2019
+ms.date: 12/15/2020
 ---
 
 # Channel credentials
 
-As the name implies, channel credentials are attached to the underlying gRPC channel. The standard form of channel credentials uses client certificate authentication. In this process, the client provides a TLS certificate when it's making the connection, and then the server verifies this before allowing any calls to be made.
+As the name implies, channel credentials are attached to the underlying gRPC channel. The standard form of channel credentials uses client certificate authentication. In this process, the client provides a TLS certificate when it's making the connection, and then the server verifies this certificate before allowing any calls to be made.
 
 You can combine channel credentials with call credentials to provide comprehensive security for a gRPC service. The channel credentials prove that the client application is allowed to access the service, and the call credentials provide information about the person who is using the client application.
 
@@ -20,7 +20,7 @@ Configure certificate authentication both at the host level (for example, on the
 
 ### Configure certificate validation on Kestrel
 
-You can configure Kestrel (the ASP.NET Core HTTP server) to require a client certificate, and optionally to carry out some validation of the supplied certificate, before accepting incoming connections. You do this in the `CreateWebHostBuilder` method of the `Program` class, rather than in `Startup`.
+You can configure Kestrel (the ASP.NET Core HTTP server) to require a client certificate, and optionally to carry out some validation of the supplied certificate, before accepting incoming connections. You specify this configuration in the `CreateWebHostBuilder` method of the `Program` class, rather than in `Startup`.
 
 ```csharp
 public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -119,7 +119,7 @@ class Program
 
 ## Combine ChannelCredentials and CallCredentials
 
-You can configure your server to use both certificate and token authentication. Do this by applying the certificate changes to the Kestrel server, and using the JWT bearer middleware in ASP.NET Core.
+You can configure your server to use both certificate and token authentication. To do this, apply the certificate changes to the Kestrel server, and use the JWT bearer middleware in ASP.NET Core.
 
 To provide both `ChannelCredentials` and `CallCredentials` on the client, use the `ChannelCredentials.Create` method to apply the call credentials. You still need to apply certificate authentication by using the <xref:System.Net.Http.HttpClient> instance. If you pass any arguments to the `SslCredentials` constructor, the internal client code throws an exception. The `SslCredentials` parameter is only included in the `Grpc.Net.Client` package's `Create` method to maintain compatibility with the `Grpc.Core` package.
 

@@ -18,6 +18,8 @@ The library design emphasizes high performance and low memory allocation over an
 
 The library also provides classes for working with an in-memory document object model (DOM). This feature enables random read-only access of the elements in a JSON file or string.
 
+There are some limitations on what parts of the library that you can use from Visual Basic code. For more information, see [Visual Basic support](system-text-json-how-to.md#visual-basic-support).
+
 ## How to get the library
 
 * The library is built-in as part of the shared framework for .NET Core 3.0 and later versions.
@@ -27,12 +29,27 @@ The library also provides classes for working with an in-memory document object 
   * .NET Framework 4.7.2 and later versions
   * .NET Core 2.0, 2.1, and 2.2
 
+## Security information
+
+For information about security threats that were considered when designing <xref:System.Text.Json.JsonSerializer>, and how they can be mitigated, see [`System.Text.Json` Threat Model](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/docs/ThreatModel.md).
+
 ## Additional resources
 
 * [How to use the library](system-text-json-how-to.md)
-* [How to migrate from Newtonsoft.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
-* [How to write converters](system-text-json-converters-how-to.md)
-* [System.Text.Json source code](https://github.com/dotnet/runtime/tree/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json)
+* [Instantiate JsonSerializerOptions instances](system-text-json-configure-options.md)
+* [Enable case-insensitive matching](system-text-json-character-casing.md)
+* [Customize property names and values](system-text-json-customize-properties.md)
+* [Ignore properties](system-text-json-ignore-properties.md)
+* [Allow invalid JSON](system-text-json-invalid-json.md)
+* [Handle overflow JSON or use JsonElement or JsonNode](system-text-json-handle-overflow.md)
+* [Preserve references and handle circular references](system-text-json-preserve-references.md)
+* [Deserialize to immutable types and non-public accessors](system-text-json-immutability.md)
+* [Polymorphic serialization](system-text-json-polymorphism.md)
+* [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
+* [Customize character encoding](system-text-json-character-encoding.md)
+* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
+* [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
+* [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
+* [Supported collection types in System.Text.Json](system-text-json-supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)
-<!-- * [Roadmap](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/roadmap/README.md)-->

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugManagedCallback::DebuggerError Method"
 title: "ICorDebugManagedCallback::DebuggerError Method"
 ms.date: "03/30/2017"
 api_name: 

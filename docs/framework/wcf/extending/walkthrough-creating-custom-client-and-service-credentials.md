@@ -1,10 +1,11 @@
 ---
+description: "Learn more about: Walkthrough: Creating Custom Client and Service Credentials"
 title: "Walkthrough: Creating Custom Client and Service Credentials"
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 2b5ba5c3-0c6c-48e9-9e46-54acaec443ba
+ms.topic: how-to
 ---
 # Walkthrough: Creating Custom Client and Service Credentials
 

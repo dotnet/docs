@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugILFrame::GetArgument Method"
 title: "ICorDebugILFrame::GetArgument Method"
 ms.date: "03/30/2017"
 api_name: 

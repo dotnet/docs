@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Getting Started (LINQ to DataSet)"
 title: "Getting Started (LINQ to DataSet)"
 ms.date: "03/30/2017"
 ms.assetid: 97522119-f6a3-434c-a1ec-17396b74a556

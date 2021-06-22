@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <system.web> Element (Web Settings)"
 title: "<system.web> Element (Web Settings)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

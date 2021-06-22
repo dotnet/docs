@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Workflow Service with Messaging Activities"
 title: "How to: Create a Workflow Service with Messaging Activities"
 ms.date: "03/30/2017"
 ms.assetid: 53d094e2-6901-4aa1-88b8-024b27ccf78b

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Grouping Queued Messages in a Session"
 title: "Grouping Queued Messages in a Session"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -82,5 +83,5 @@ Windows Communication Foundation (WCF) provides a session that allows you to gro
 
 ## See also
 
-- [Sessions and Queues](../samples/sessions-and-queues.md)
+- [Sessions and Queues](/previous-versions/dotnet/framework/wcf/samples/sessions-and-queues)
 - [Queues Overview](queues-overview.md)

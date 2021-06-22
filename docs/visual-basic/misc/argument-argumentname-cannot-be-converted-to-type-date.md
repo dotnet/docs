@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Argument '<argumentname>' cannot be converted to type 'Date"
 title: "Argument '<argumentname>' cannot be converted to type 'Date'"
 ms.date: 07/20/2015
 f1_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataValidate Interface"
 title: "IMetaDataValidate Interface"
 ms.date: "03/30/2017"
 api_name: 

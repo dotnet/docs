@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugDebugEvent::GetThread Method"
 title: "ICorDebugDebugEvent::GetThread Method"
 ms.date: "03/30/2017"
 ms.assetid: 4f2e9a2c-8369-4a07-a881-ad5422626353

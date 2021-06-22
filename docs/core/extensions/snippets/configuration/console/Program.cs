@@ -5,8 +5,14 @@ namespace Console.Example
 {
     class Program
     {
-        static Task Main(string[] args) =>
-            CreateHostBuilder(args).Build().RunAsync();
+        static async Task Main(string[] args)
+        {
+            using IHost host = CreateHostBuilder(args).Build();
+
+            // Application code should start here.
+
+            await host.RunAsync();
+        }
 
         static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args);

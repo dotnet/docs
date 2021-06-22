@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::TranslateSigWithScope Method"
 title: "IMetaDataEmit::TranslateSigWithScope Method"
 ms.date: "03/30/2017"
 api_name: 

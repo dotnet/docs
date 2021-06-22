@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Anticipating Adopting the Windows Communication Foundation: Easing Future Migration"
 title: "Anticipating Adopting the Windows Communication Foundation: Easing Future Migration"
 ms.date: "03/30/2017"
 ms.assetid: f49664d9-e9e0-425c-a259-93f0a569d01b

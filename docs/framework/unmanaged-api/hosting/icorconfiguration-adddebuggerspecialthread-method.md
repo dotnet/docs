@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorConfiguration::AddDebuggerSpecialThread Method"
 title: "ICorConfiguration::AddDebuggerSpecialThread Method"
 ms.date: "03/30/2017"
 api_name: 

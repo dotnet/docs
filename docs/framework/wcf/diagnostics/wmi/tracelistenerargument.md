@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TraceListenerArgument"
 title: "TraceListenerArgument"
 ms.date: "03/30/2017"
 ms.assetid: b6c84090-bf96-43f4-9fb0-1ce8fd9c8efe

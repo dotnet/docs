@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Stored Procedures Mapped for Sequential Result Shapes"
 title: "How to: Use Stored Procedures Mapped for Sequential Result Shapes"
 ms.date: "03/30/2017"
 dev_langs: 

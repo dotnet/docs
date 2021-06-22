@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRStrongName::StrongNameTokenFromAssemblyEx Method"
 title: "ICLRStrongName::StrongNameTokenFromAssemblyEx Method"
 ms.date: "03/30/2017"
 api_name: 

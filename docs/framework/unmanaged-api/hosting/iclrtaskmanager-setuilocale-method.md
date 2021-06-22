@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRTaskManager::SetUILocale Method"
 title: "ICLRTaskManager::SetUILocale Method"
 ms.date: "03/30/2017"
 api_name: 

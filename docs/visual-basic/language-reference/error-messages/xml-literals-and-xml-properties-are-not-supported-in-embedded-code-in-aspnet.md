@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC31200: XML literals and XML properties are not supported in embedded code within ASP.NET"
 title: "XML literals and XML properties are not supported in embedded code within ASP.NET"
 ms.date: 07/20/2015
 f1_keywords:

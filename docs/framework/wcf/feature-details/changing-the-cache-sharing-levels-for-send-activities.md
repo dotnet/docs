@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Changing the Cache Sharing Levels for Send Activities"
 title: "Changing the Cache Sharing Levels for Send Activities"
 ms.date: "03/30/2017"
 ms.assetid: 03926a64-753d-460e-ac06-2a4ff8e1bbf5

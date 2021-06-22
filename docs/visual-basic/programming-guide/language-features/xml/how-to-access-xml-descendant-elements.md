@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Access XML Descendant Elements (Visual Basic)"
 title: "How to: Access XML Descendant Elements"
 ms.date: 07/20/2015
 helpviewer_keywords: 

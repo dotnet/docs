@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Object doesn't support this property or method (Visual Basic)"
 title: "Object doesn't support this property or method"
 ms.date: 07/20/2015
 f1_keywords: 

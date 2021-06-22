@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: METAHOST_CONFIG_FLAGS Enumeration"
 title: "METAHOST_CONFIG_FLAGS Enumeration"
 ms.date: "03/30/2017"
 api_name: 

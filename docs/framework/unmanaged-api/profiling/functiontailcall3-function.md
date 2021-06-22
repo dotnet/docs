@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FunctionTailcall3 Function"
 title: "FunctionTailcall3 Function"
 ms.date: "03/30/2017"
 api_name: 
@@ -27,9 +28,8 @@ void __stdcall FunctionTailcall3 (FunctionOrRemappedID functionOrRemappedID);
   
 ## Parameters
 
-- `functionOrRemappedID`
-
-  \[in] The identifier of the currently executing function that is about to make a tail call.
+`functionOrRemappedID`
+[in] The identifier of the currently executing function that is about to make a tail call.
 
 ## Remarks  
 

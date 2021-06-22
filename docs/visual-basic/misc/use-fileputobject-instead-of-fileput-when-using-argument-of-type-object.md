@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Use 'FilePutObject' instead of 'FilePut' when using argument of type 'Object'"
 title: "Use 'FilePutObject' instead of 'FilePut' when using argument of type 'Object'"
 ms.date: 07/20/2015
 f1_keywords: 

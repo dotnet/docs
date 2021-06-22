@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: My.Settings Object"
 title: "My.Settings Object"
 ms.date: 07/20/2015
 f1_keywords: 

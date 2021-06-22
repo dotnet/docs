@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FunctionEnter Function"
 title: "FunctionEnter Function"
 ms.date: "03/30/2017"
 api_name: 
@@ -32,9 +33,8 @@ void __stdcall FunctionEnter (
   
 ## Parameters
 
-- `funcID`
-
-  \[in] The identifier of the function to which control is passed.
+`funcID`
+[in] The identifier of the function to which control is passed.
 
 ## Remarks  
 

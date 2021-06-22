@@ -1,7 +1,7 @@
 ---
 title: Modernize your app's lifecycle with CI/CD pipelines and DevOps tools in the cloud
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | Modernize your app's lifecycle with CI/CD pipelines and DevOps tools in the cloud
-ms.date: 04/30/2018
+ms.date: 12/21/2020
 ---
 # Modernize your app's lifecycle with CI/CD pipelines and DevOps tools in the cloud
 
@@ -9,7 +9,7 @@ Today's businesses need to innovate at a rapid pace to be competitive in the mar
 
 Although continuous integration and deployment practices are well established, the introduction of containers introduces new considerations, particularly when you are working with multi-container applications.
 
-Azure DevOps Services supports continuous integration and deployment of multi-container applications to a variety of environments through the official Azure DevOps Services deployment tasks:
+Azure DevOps Services supports continuous integration and deployment of multi-container applications to various environments through the official Azure DevOps Services deployment tasks:
 
 - [Deploy to an Azure Web App for Containers](/azure/devops/pipelines/apps/cd/deploy-docker-webapp?tabs=dotnet-core)
 

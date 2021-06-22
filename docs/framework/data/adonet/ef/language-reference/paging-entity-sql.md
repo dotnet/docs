@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Paging (Entity SQL)"
 title: "Paging (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: ba4f334d-03e5-4a7b-9d42-628f4639b9a2

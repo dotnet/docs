@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3809 - RoutingServiceMessageRoutedToEndpoints"
 title: "3809 - RoutingServiceMessageRoutedToEndpoints"
 ms.date: "03/30/2017"
 ms.assetid: 22479cc6-72d1-48df-912c-fc37bddeb043

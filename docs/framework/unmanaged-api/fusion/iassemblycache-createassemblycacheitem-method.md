@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAssemblyCache::CreateAssemblyCacheItem Method"
 title: "IAssemblyCache::CreateAssemblyCacheItem Method"
 ms.date: "03/30/2017"
 api_name: 

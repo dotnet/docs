@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AssemblyComparisonResult Enumeration"
 title: "AssemblyComparisonResult Enumeration"
 ms.date: "03/30/2017"
 api_name: 

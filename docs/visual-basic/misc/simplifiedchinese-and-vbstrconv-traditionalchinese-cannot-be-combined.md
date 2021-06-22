@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SimplifiedChinese and VbStrConv.TraditionalChinese cannot be combined"
 title: "SimplifiedChinese and VbStrConv.TraditionalChinese cannot be combined"
 ms.date: 07/20/2015
 f1_keywords: 

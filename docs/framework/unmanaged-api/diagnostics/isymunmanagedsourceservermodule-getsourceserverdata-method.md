@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedSourceServerModule::GetSourceServerData Method"
 title: "ISymUnmanagedSourceServerModule::GetSourceServerData Method"
 ms.date: "03/30/2017"
 api_name: 

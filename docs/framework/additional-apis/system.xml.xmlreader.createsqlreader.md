@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XmlReader.CreateSqlReader Method"
 title: XmlReader.CreateSqlReader Method (System.Xml)
 ms.date: 10/17/2019
 topic_type:

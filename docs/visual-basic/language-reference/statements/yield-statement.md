@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Yield Statement (Visual Basic)"
 title: "Yield Statement"
 ms.date: 07/20/2015
 f1_keywords: 

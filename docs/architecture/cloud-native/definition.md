@@ -2,7 +2,7 @@
 title: Defining Cloud Native
 description: Learn about the foundational pillars that provide the bedrock for cloud-native systems
 author: robvet
-ms.date: 05/13/2020
+ms.date: 01/19/2021
 ---
 
 # Defining cloud native
@@ -166,11 +166,11 @@ An excellent reference guide for understanding microservices is [.NET Microservi
 
 Microservices can be created with any modern development platform.
 
-The Microsoft .NET Core platform is an excellent choice. Free and open source, it has many built-in features to simplify microservice development. .NET Core is cross-platform. Applications can be built and run on Windows, macOS, and most flavors of Linux.
+The Microsoft .NET platform is an excellent choice. Free and open source, it has many built-in features to simplify microservice development. .NET is cross-platform. Applications can be built and run on Windows, macOS, and most flavors of Linux.
 
-.NET Core is highly performant and has scored well in comparison to Node.js and other competing platforms. Interestingly, [TechEmpower](https://www.techempower.com/) conducted an extensive set of [performance benchmarks](https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=plaintext) across many web application platforms and frameworks. .NET Core scored in the top 10 - well above Node.js and other competing platforms.
+.NET is highly performant and has scored well in comparison to Node.js and other competing platforms. Interestingly, [TechEmpower](https://www.techempower.com/) conducted an extensive set of [performance benchmarks](https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=plaintext) across many web application platforms and frameworks. .NET scored in the top 10 - well above Node.js and other competing platforms.
 
-.NET Core is maintained by Microsoft and the .NET community on GitHub.
+.NET is maintained by Microsoft and the .NET community on GitHub.
 
 ## Containers
 
@@ -275,7 +275,7 @@ Backing services are discussed in detail Chapter 5, *Cloud-Native Data Patterns*
 
 As you've seen, cloud-native systems embrace microservices, containers, and modern system design to achieve speed and agility. But, that's only part of the story. How do you provision the cloud environments upon which these systems run? How do you rapidly deploy app features and updates? How do you round out the full picture?
 
-Enter the widely accepted practice of [Infrastructure as Code](/azure/devops/learn/what-is-infrastructure-as-code), or IaC.
+Enter the widely accepted practice of [Infrastructure as Code](/devops/deliver/what-is-infrastructure-as-code), or IaC.
 
 With IaC, you automate platform provisioning and application deployment. You essentially apply software engineering practices such as testing and versioning to your DevOps practices. Your infrastructure and deployments are automated, consistent, and repeatable.
 
@@ -285,7 +285,7 @@ Tools like [Azure Resource Manager](/azure/azure-resource-manager/management/ove
 
 Under the hood, IaC is idempotent, meaning that you can run the same script over and over without side effects. If the team needs to make a change, they edit and rerun the script. Only the updated resources are affected.
 
-In the article, [What is Infrastructure as Code](/azure/devops/learn/what-is-infrastructure-as-code), Author Sam Guckenheimer describes how, "Teams who implement IaC can deliver stable environments rapidly and at scale. Teams avoid manual configuration of environments and enforce consistency by representing the desired state of their environments via code. Infrastructure deployments with IaC are repeatable and prevent runtime issues caused by configuration drift or missing dependencies. DevOps teams can work together with a unified set of practices and tools to deliver applications and their supporting infrastructure rapidly, reliably, and at scale."
+In the article, [What is Infrastructure as Code](/devops/deliver/what-is-infrastructure-as-code), Author Sam Guckenheimer describes how, "Teams who implement IaC can deliver stable environments rapidly and at scale. Teams avoid manual configuration of environments and enforce consistency by representing the desired state of their environments via code. Infrastructure deployments with IaC are repeatable and prevent runtime issues caused by configuration drift or missing dependencies. DevOps teams can work together with a unified set of practices and tools to deliver applications and their supporting infrastructure rapidly, reliably, and at scale."
 
 ### Automating deployments
 

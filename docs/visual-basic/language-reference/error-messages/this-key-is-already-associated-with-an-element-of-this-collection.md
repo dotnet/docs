@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: This key is already associated with an element of this collection"
 title: "This key is already associated with an element of this collection"
 ms.date: 07/20/2015
 f1_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Extending the Metadata System"
 title: "Extending the Metadata System"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedWriter::OpenMethod Method"
 title: "ISymUnmanagedWriter::OpenMethod Method"
 ms.date: "03/30/2017"
 api_name: 

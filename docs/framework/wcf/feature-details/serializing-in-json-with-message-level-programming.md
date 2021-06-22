@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Serializing in Json with Message Level Programming"
 title: "Serializing in Json with Message Level Programming"
 ms.date: "03/30/2017"
 ms.assetid: 5f940ba2-57ee-4c49-a779-957c5e7e71fa
@@ -32,4 +33,4 @@ WCF supports serializing data in JSON format. This topic describes how to tell W
 
 - [AJAX Integration and JSON Support](ajax-integration-and-json-support.md)
 - [Stand-Alone JSON Serialization](stand-alone-json-serialization.md)
-- [JSON Serialization](../samples/json-serialization.md)
+- [JSON Serialization](/previous-versions/dotnet/framework/wcf/samples/json-serialization)

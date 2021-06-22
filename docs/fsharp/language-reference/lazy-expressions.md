@@ -15,7 +15,7 @@ let identifier = lazy ( expression )
 
 ## Remarks
 
-In the previous syntax, *expression* is code that is evaluated only when a result is required, and *identifier* is a value that stores the result. The value is of type [`Lazy<'T>`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-lazy-1-0.html), where the actual type that is used for `'T` is determined from the result of the expression.
+In the previous syntax, *expression* is code that is evaluated only when a result is required, and *identifier* is a value that stores the result. The value is of type `Lazy<'T>`, where the actual type that is used for `'T` is determined from the result of the expression.
 
 Lazy expressions enable you to improve performance by restricting the execution of an expressions to only those situations in which a result is needed.
 

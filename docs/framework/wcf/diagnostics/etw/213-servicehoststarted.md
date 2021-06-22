@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 213 - ServiceHostStarted"
 title: "213 - ServiceHostStarted"
 ms.date: "03/30/2017"
 ms.assetid: a6f7facc-342f-46bb-9d52-a470178ba6bb

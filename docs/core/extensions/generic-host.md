@@ -3,7 +3,7 @@ title: .NET Generic Host
 author: IEvangelist
 description: Learn about the .NET Generic Host, which is responsible for app startup and lifetime management.
 ms.author: dapine
-ms.date: 09/18/2020
+ms.date: 12/18/2020
 ---
 
 # .NET Generic Host
@@ -115,21 +115,24 @@ Inject the <xref:Microsoft.Extensions.Hosting.IHostEnvironment> service into a c
 
 ## Host configuration
 
-Host configuration is used for the properties of the <xref:Microsoft.Extensions.Hosting.IHostEnvironment> implementation.
+Host configuration is used to configure properties of the [IHostEnvironment](#ihostenvironment) implementation.
 
-Host configuration is available from [HostBuilderContext.Configuration](xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration) inside <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A>. After `ConfigureAppConfiguration`, `HostBuilderContext.Configuration` is replaced with the app config.
+The host configuration is available in [HostBuilderContext.Configuration](xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration) within the <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> method. When calling the `ConfigureAppConfiguration` method, the `HostBuilderContext` and `IConfigurationBuilder` are passed into the `configureDelegate`. The `configureDelegate` is defined as an `Action<HostBuilderContext, IConfigurationBuilder>`. The host builder context exposes the `.Configuration` property, which is an instance of `IConfiguration`. It represents the configuration built from the host, whereas the `IConfigurationBuilder` is the builder object used to configure the app.
+
+> [!TIP]
+> After `ConfigureAppConfiguration` is called the `HostBuilderContext.Configuration` is replaced with the [app config](#app-configuration).
 
 To add host configuration, call <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureHostConfiguration%2A> on `IHostBuilder`. `ConfigureHostConfiguration` can be called multiple times with additive results. The host uses whichever option sets a value last on a given key.
 
 The following example creates host configuration:
 
-:::code language="csharp" source="snippets/configuration/console-host/Program.cs" highlight="13-19":::
+:::code language="csharp" source="snippets/configuration/console-host/Program.cs" highlight="19-25":::
 
 ## App configuration
 
 App configuration is created by calling <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> on `IHostBuilder`. `ConfigureAppConfiguration` can be called multiple times with additive results. The app uses whichever option sets a value last on a given key.
 
-The configuration created by `ConfigureAppConfiguration` is available at [HostBuilderContext.Configuration](xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration%2A) for subsequent operations and as a service from DI. The host configuration is also added to the app configuration.
+The configuration created by `ConfigureAppConfiguration` is available in [HostBuilderContext.Configuration](xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration%2A) for subsequent operations and as a service from DI. The host configuration is also added to the app configuration.
 
 For more information, see [Configuration in .NET](configuration.md).
 

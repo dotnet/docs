@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugType::GetBase Method"
 title: "ICorDebugType::GetBase Method"
 ms.date: "03/30/2017"
 api_name: 

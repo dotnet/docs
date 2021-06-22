@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use SpinWait to Implement a Two-Phase Wait Operation"
 title: "How to: Use SpinWait to Implement a Two-Phase Wait Operation"
 ms.date: "03/30/2017"
 dev_langs: 

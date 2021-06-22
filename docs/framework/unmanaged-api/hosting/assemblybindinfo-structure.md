@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AssemblyBindInfo Structure"
 title: "AssemblyBindInfo Structure"
 ms.date: "03/30/2017"
 api_name: 

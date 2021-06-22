@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.UnhandledAction"
 title: "System.ServiceModel.UnhandledAction"
 ms.date: "03/30/2017"
 ms.assetid: a704fb1d-6cf8-4fd1-9aee-e70d7055c812

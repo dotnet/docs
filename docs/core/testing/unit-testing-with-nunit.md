@@ -6,7 +6,7 @@ ms.date: 08/31/2018
 ---
 # Unit testing C# with NUnit and .NET Core
 
-This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/blob/master/core/getting-started/unit-testing-using-nunit/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
+This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-using-nunit/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
 
 [!INCLUDE [testing an ASP.NET Core project from .NET Core](../../../includes/core-testing-note-aspnet.md)]
 
@@ -89,7 +89,7 @@ The test project requires other packages to create and run unit tests. `dotnet n
 dotnet add reference ../PrimeService/PrimeService.csproj
 ```
 
-You can see the entire file in the [samples repository](https://github.com/dotnet/samples/blob/master/core/getting-started/unit-testing-using-nunit/PrimeService.Tests/PrimeService.Tests.csproj) on GitHub.
+You can see the entire file in the [samples repository](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-using-nunit/PrimeService.Tests/PrimeService.Tests.csproj) on GitHub.
 
 The following outline shows the final solution layout:
 
@@ -114,7 +114,33 @@ dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
 
 You write one failing test, make it pass, then repeat the process. In the *PrimeService.Tests* directory, rename the *UnitTest1.cs* file to *PrimeService_IsPrimeShould.cs* and replace its entire contents with the following code:
 
-[!code-csharp[Sample_FirstTest](~/samples/snippets/core/testing/unit-testing-using-nunit/csharp/PrimeService.Tests/PrimeService_IsPrimeShould.cs?name=Sample_FirstTest)]
+```csharp
+using NUnit.Framework;
+using Prime.Services;
+
+namespace Prime.UnitTests.Services
+{
+    [TestFixture]
+    public class PrimeService_IsPrimeShould
+    {
+        private PrimeService _primeService;
+
+        [SetUp]
+        public void SetUp()
+        {
+            _primeService = new PrimeService();
+        }
+
+        [Test]
+        public void IsPrime_InputIs1_ReturnFalse()
+        {
+            var result = _primeService.IsPrime(1);
+
+            Assert.IsFalse(result, "1 should not be prime");
+        }
+    }
+}
+```
 
 The `[TestFixture]` attribute denotes a class that contains unit tests. The `[Test]` attribute indicates a method is a test method.
 
@@ -149,6 +175,6 @@ Run `dotnet test`, and two of these tests fail. To make all of the tests pass, c
 if (candidate < 2)
 ```
 
-Continue to iterate by adding more tests, more theories, and more code in the main library. You have the [finished version of the tests](https://github.com/dotnet/samples/blob/master/core/getting-started/unit-testing-using-nunit/PrimeService.Tests/PrimeService_IsPrimeShould.cs) and the [complete implementation of the library](https://github.com/dotnet/samples/blob/master/core/getting-started/unit-testing-using-nunit/PrimeService/PrimeService.cs).
+Continue to iterate by adding more tests, more theories, and more code in the main library. You have the [finished version of the tests](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-using-nunit/PrimeService.Tests/PrimeService_IsPrimeShould.cs) and the [complete implementation of the library](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-using-nunit/PrimeService/PrimeService.cs).
 
 You've built a small library and a set of unit tests for that library. You've structured the solution so that adding new packages and tests is part of the normal workflow. You've concentrated most of your time and effort on solving the goals of the application.

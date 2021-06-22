@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 217 - ClientOperationPrepared"
 title: "217 - ClientOperationPrepared"
 ms.date: "03/30/2017"
 ms.assetid: ad207f04-b038-4f33-95e9-27a361df8ecd

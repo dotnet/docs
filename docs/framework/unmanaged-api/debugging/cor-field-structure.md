@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_FIELD Structure"
 title: "COR_FIELD Structure"
 ms.date: "03/30/2017"
 api_name: 

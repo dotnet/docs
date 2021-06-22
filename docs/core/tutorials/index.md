@@ -1,13 +1,13 @@
 ---
-title: .NET Core Tutorials
-description: Follow tutorials for learning .NET Core to build apps and libraries on Mac, Linux, and Windows.
-author: richlander
-ms.date: 09/09/2020
+title: .NET Tutorials
+description: Follow tutorials for learning .NET to build apps and libraries on Mac, Linux, and Windows.
+author: tdykstra
+ms.date: 12/07/2020
 titleSuffix: ""
 ---
-# Learn .NET Core and the .NET Core SDK tools by exploring these tutorials
+# Learn .NET and the .NET SDK tools by exploring these tutorials
 
-The following tutorials are available for learning about .NET Core.
+The following tutorials show how to develop console apps and libraries for .NET Core, .NET 5, and later versions. For other types of applications, see [Tutorials for getting started with .NET](../../standard/get-started.md).
 
 ## Use Visual Studio
 
@@ -52,7 +52,3 @@ Choose these tutorials if you want to use Visual Studio Code or some other code 
 - [Create templates for the CLI](cli-templates-create-item-template.md)
 - [Create and use tools for the CLI](../tools/global-tools-how-to-create.md)
 - [Create an app with plugins](creating-app-with-plugin-support.md)
-
-## Create web apps
-
-For tutorials about developing ASP.NET Core web applications, see the [ASP.NET Core documentation](/aspnet/core/).

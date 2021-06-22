@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Discovery Find and FindCriteria"
 title: "Discovery Find and FindCriteria"
 ms.date: "03/30/2017"
 ms.assetid: 99016fa4-1778-495b-b4cc-0e22fbec42c6
@@ -66,5 +67,5 @@ Console.WriteLine("Found {0} ICalculatorService endpoint(s).", findResponse.Endp
 
 - [WCF Discovery Overview](wcf-discovery-overview.md)
 - [Using the Discovery Client Channel](using-the-discovery-client-channel.md)
-- [Discovery with Scopes](../samples/discovery-with-scopes-sample.md)
-- [Basic](../samples/basic-sample.md)
+- [Discovery with Scopes](/previous-versions/dotnet/framework/wcf/samples/discovery-with-scopes-sample)
+- [Basic](/previous-versions/dotnet/framework/wcf/samples/basic-sample)

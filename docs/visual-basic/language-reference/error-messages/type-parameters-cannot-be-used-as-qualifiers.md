@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC32098: Type parameters cannot be used as qualifiers"
 title: "Type parameters cannot be used as qualifiers"
 ms.date: 07/20/2015
 f1_keywords:

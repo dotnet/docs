@@ -227,14 +227,14 @@ let phillip' = {| name="Phillip"; age=28 |}
 let philStr = JsonConvert.SerializeObject(phillip')
 
 let phillip = JsonConvert.DeserializeObject<{|name: string; age: int|}>(philStr)
-printfn "Name: %s Age: %d" phillip.name phillip.age
+printfn $"Name: {phillip.name} Age: %d{phillip.age}"
 ```
 
 Anonymous records are useful for sending lightweight data over a network without the need to define a domain for your serialized/deserialized types up front.
 
 ### Anonymous records interoperate with C# anonymous types
 
-It is possible to use a .NET API that requires the use of [C# anonymous types](../../csharp/programming-guide/classes-and-structs/anonymous-types.md). C# anonymous types are trivial to interoperate with by using anonymous records. The following example shows how to use anonymous records to call a [LINQ](../../csharp/programming-guide/concepts/linq/index.md) overload that requires an anonymous type:
+It is possible to use a .NET API that requires the use of [C# anonymous types](../../csharp/fundamentals/types/anonymous-types.md). C# anonymous types are trivial to interoperate with by using anonymous records. The following example shows how to use anonymous records to call a [LINQ](../../csharp/programming-guide/concepts/linq/index.md) overload that requires an anonymous type:
 
 ```fsharp
 open System.Linq
@@ -242,7 +242,7 @@ open System.Linq
 let names = [ "Ana"; "Felipe"; "Emilia"]
 let nameGrouping = names.Select(fun n -> {| Name = n; FirstLetter = n.[0] |})
 for ng in nameGrouping do
-    printfn "%s has first letter %c" ng.Name ng.FirstLetter
+    printfn $"{ng.Name} has first letter {ng.FirstLetter}"
 ```
 
 There are a multitude of other APIs used throughout .NET that require the use of passing in an anonymous type. Anonymous records are your tool for working with them.

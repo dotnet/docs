@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugEnum::Reset Method"
 title: "ICorDebugEnum::Reset Method"
 ms.date: "03/30/2017"
 api_name: 

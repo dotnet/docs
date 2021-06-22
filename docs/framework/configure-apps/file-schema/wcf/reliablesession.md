@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <reliableSession>"
 title: "<reliableSession>"
 ms.date: "03/30/2017"
 ms.assetid: 129b4a59-37f0-4030-b664-03795d257d29

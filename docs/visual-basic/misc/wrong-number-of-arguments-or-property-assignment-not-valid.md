@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Wrong number of arguments or property assignment not valid"
 title: "Wrong number of arguments or property assignment not valid"
 ms.date: 07/20/2015
 f1_keywords: 

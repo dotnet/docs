@@ -158,7 +158,7 @@ Data pre-processing happens by default and the following steps are performed aut
 
 Define the criteria to complete your task:
 
-1. Exit after a length of time - Using `MaxExperimentTimeInSeconds` in your experiment settings you can define how long in seconds that an task should continue to run.
+1. Exit after a length of time - Using `MaxExperimentTimeInSeconds` in your experiment settings you can define how long in seconds that a task should continue to run.
 
 1. Exit on a cancellation token -  You can use a cancellation token that lets you cancel the task before it is scheduled to finish.
 
@@ -226,4 +226,4 @@ The following are all the available metrics per ML task:
 
 ## See also
 
-For full code samples and more visit the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master#automate-mlnet-models-generation-preview-state) GitHub repository.
+For full code samples and more visit the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main#automate-mlnet-models-generation-preview-state) GitHub repository.

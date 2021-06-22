@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30106: Number of indices exceeds the number of dimensions of the indexed array"
 title: "Number of indices exceeds the number of dimensions of the indexed array"
 ms.date: 07/20/2015
 f1_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Clients"
 title: "Clients"
 ms.date: "03/30/2017"
 ms.assetid: cce50025-0318-4a5e-9ce8-c67feab83b06
@@ -23,4 +24,4 @@ The topics in this section cover the client architecture, how to access a Window
   
 ## See also
 
-- [Client Samples](../samples/client.md)
+- [Client Samples](/previous-versions/dotnet/framework/wcf/samples/client)

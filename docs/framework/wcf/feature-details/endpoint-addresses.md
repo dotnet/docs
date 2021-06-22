@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Endpoint Addresses"
 title: "Endpoint Addresses"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

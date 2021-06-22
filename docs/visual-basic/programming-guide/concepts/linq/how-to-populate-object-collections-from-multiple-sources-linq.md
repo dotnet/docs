@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Populate Object Collections from Multiple Sources (LINQ) (Visual Basic)"
 title: "How to: Populate Object Collections from Multiple Sources (LINQ)"
 ms.date: 06/22/2018
 ms.assetid: 63062a22-e6a9-42c0-b357-c7c965f58f33

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reliable Messaging Sessions Faulted Per Second"
 title: "Reliable Messaging Sessions Faulted Per Second"
 ms.date: "03/30/2017"
 ms.assetid: 8f8ca2eb-1be4-4b6a-aa78-fcd3ee145fe8

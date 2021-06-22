@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::SetCustomAttributeValue Method"
 title: "IMetaDataEmit::SetCustomAttributeValue Method"
 ms.date: "03/30/2017"
 api_name: 

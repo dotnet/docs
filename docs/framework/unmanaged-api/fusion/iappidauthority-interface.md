@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAppIdAuthority Interface"
 title: "IAppIdAuthority Interface"
 ms.date: "03/30/2017"
 api_name: 

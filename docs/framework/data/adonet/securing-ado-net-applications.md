@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Securing ADO.NET applications"
 title: "Securing Applications"
 ms.date: "03/30/2017"
 ms.assetid: 005a1d43-6ee5-471e-ad98-1d30a44d49d5
@@ -33,7 +34,7 @@ Writing secure code does not guard against self-inflicted security holes when wo
  [DataSet and DataTable security guidance](dataset-datatable-dataview/security-guidance.md)  
  Provides security guidance for <xref:System.Data.DataSet> and <xref:System.Data.DataTable>.
 
- [SQL Server Security](./sql/sql-server-security.md)  
+ [SQL Server Security](/previous-versions/dotnet/framework/data/adonet/sql/sql-server-security)  
  Describes SQL Server security features from a developer's perspective.  
   
  [Security Considerations](./ef/security-considerations.md)  

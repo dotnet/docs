@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FunctionTailcall3WithInfo Function"
 title: "FunctionTailcall3WithInfo Function"
 ms.date: "03/30/2017"
 api_name: 
@@ -29,13 +30,11 @@ void __stdcall FunctionTailcall3WithInfo(
   
 ## Parameters  
 
-- `functionIDOrClientID`
+`functionIDOrClientID`
+[in] The identifier of the currently executing function that is about to make a tail call.
 
-  \[in] The identifier of the currently executing function that is about to make a tail call.
-
-- `eltInfo`
-
-  \[in] An opaque handle that represents information about a given stack frame. This handle is valid only during the callback to which it is passed.
+`eltInfo`
+[in] An opaque handle that represents information about a given stack frame. This handle is valid only during the callback to which it is passed.
 
 ## Remarks  
 

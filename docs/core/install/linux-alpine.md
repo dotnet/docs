@@ -3,7 +3,7 @@ title: Install .NET on Alpine - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Alpine.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
+ms.date: 01/06/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime on Alpine
@@ -12,7 +12,13 @@ This article describes how to install .NET on Alpine. When an Alpine version fal
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
-There are no installers for Alpine. You must either use the [install script](#scripted-install) or follow the [manual install](#manual-install) instructions.
+## Install
+
+Installers aren't available for Alpine Linux. You must install .NET in one of the following ways:
+
+- [Snap package](linux-snap.md)
+- [Scripted install with _install-dotnet.sh_](linux-scripted-manual.md#scripted-install)
+- [Manual binary extraction](linux-scripted-manual.md#manual-install)
 
 ## Supported distributions
 
@@ -24,6 +30,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Alpine  | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |-------- |---------------|---------------|----------------|
+| ✔️ 3.13 | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ 3.12 | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ 3.11 | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ 3.10 | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
@@ -43,20 +50,26 @@ The following versions of .NET are no longer supported. The downloads for these 
 - icu-libs
 - krb5-libs
 - libgcc
+- libgdiplus (if the .NET app requires the *System.Drawing.Common* assembly)
 - libintl
 - libssl1.1 (Alpine v3.9 or greater)
 - libssl1.0 (Alpine v3.8 or lower)
 - libstdc++
 - zlib
 
-## Scripted install
+To install the needed requirements, run the following command:
 
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
+```bash
+apk add bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib
+```
 
-## Manual install
+To install **libgdiplus**, you may need to specify a repository:
 
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
+```bash
+apk add libgdiplus --repository https://dl-3.alpinelinux.org/alpine/edge/testing/
+```
 
 ## Next steps
 
+- [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

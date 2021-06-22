@@ -19,6 +19,10 @@ This article helps you find the various tools you need.
 
 [Logging and tracing](logging-tracing.md) are related techniques. They refer to instrumenting code to create log files. The files record the details of what a program does. These details can be used to diagnose the most complex problems. When combined with time stamps, these techniques are also valuable in performance investigations.
 
+## Metrics
+
+[EventCounters](event-counters.md) allows you to write metrics to identify and monitor performance issues. Metrics incur lower performance overhead compared to tracing, making it more suitable for an always-on performance monitoring. The .NET runtime and libraries publish several [well-known EventCounters](available-counters.md) that you can monitor as well.
+
 ## Unit testing
 
 [Unit testing](../testing/index.md) is a key component of continuous integration and deployment of high-quality software. Unit tests are designed to give you an early warning when you break something.
@@ -27,13 +31,13 @@ This article helps you find the various tools you need.
 
 A [dump](./dumps.md) is a file that contains a snapshot of the process at the time of creation. These can be useful for examining the state of your application for debugging purposes.
 
+## Symbols
+
+[Symbols](./symbols.md) are a mapping between the source code and the binary produced by the compiler. These are commonly used by .NET debuggers to resolve source line numbers, local variable names, and other types of diagnostic information.
+
 ## Collect diagnostics in containers
 
 The same diagnostics tools that are used in non-containerized Linux environments can also be used to [collect diagnostics in containers](diagnostics-in-containers.md). There are just a few usage changes needed to make sure the tools work in a Docker container.
-
-## Debug Linux dumps
-
-[Debug Linux dumps](debug-linux-dumps.md) explains how to collect and analyze dumps on Linux.
 
 ## .NET Core diagnostic global tools
 
@@ -53,13 +57,17 @@ The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect GC (Garbage Colle
 
 .NET Core includes what is called the `EventPipe` through which diagnostics data is exposed. The [dotnet-trace](dotnet-trace.md) tool allows you to consume interesting profiling data from your app that can help in scenarios where you need to root cause apps running slow.
 
+### dotnet-stack
+
+The [dotnet-stack](dotnet-stack.md) tool allows you quickly print the managed stacks for all threads in a running .NET process.
+
 ### dotnet-symbol
 
 [dotnet-symbol](dotnet-symbol.md) downloads files (symbols, DAC/DBI, host files, etc.) needed to open a core dump or minidump. Use this tool if you need symbols and modules to debug a dump file captured on a different machine.
 
 ### dotnet-sos
 
-[dotnet-sos](dotnet-sos.md) is used to install the [SOS debugging extension](../../framework/tools/sos-dll-sos-debugging-extension.md) on Linux or MacOS (or on Windows if using older debugging tools).
+[dotnet-sos](dotnet-sos.md) installs the [SOS debugging extension](sos-debugging-extension.md) on Linux and macOS (and on Windows if you're using [Windbg/cdb](/windows-hardware/drivers/debugger/debugger-download-tools)).
 
 ### PerfCollect
 
@@ -82,6 +90,14 @@ The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect GC (Garbage Colle
 ### Debug deadlock
 
 [Tutorial: Debug deadlock](debug-deadlock.md) shows you how to use the [dotnet-dump](dotnet-dump.md) tool to investigate threads and locks.
+
+### Debug a StackOverflow
+
+[Tutorial: Debug a StackOverflow](debug-stackoverflow.md) demonstrates how to debug a <xref:System.StackOverflowException> on Linux.
+
+### Debug Linux dumps
+
+[Debug Linux dumps](debug-linux-dumps.md) explains how to collect and analyze dumps on Linux.
 
 ### Measure performance using EventCounters
 

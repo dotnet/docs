@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IGCThreadControl::SuspensionStarting Method"
 title: "IGCThreadControl::SuspensionStarting Method"
 ms.date: "03/30/2017"
 api_name: 

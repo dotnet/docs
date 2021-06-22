@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: -deterministic"
 title: "-deterministic"
 ms.date: 04/11/2018
 helpviewer_keywords:

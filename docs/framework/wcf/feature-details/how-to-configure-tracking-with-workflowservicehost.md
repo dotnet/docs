@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Configure Tracking with WorkflowServiceHost"
 title: "How to: Configure Tracking with WorkflowServiceHost"
 ms.date: "03/30/2017"
 ms.assetid: ed1485fe-7529-4351-bca3-8bb915260b17
@@ -65,6 +66,6 @@ This topic explains how to configure tracking for a [!INCLUDE[netfx_current_long
   
 ## See also
 
-- [Simplified Configuration for WCF Services](../samples/simplified-configuration-for-wcf-services.md)
+- [Simplified Configuration for WCF Services](/previous-versions/dotnet/framework/wcf/samples/simplified-configuration-for-wcf-services)
 - [Workflow Services](workflow-services.md)
 - [Tracking Profiles](../../windows-workflow-foundation/tracking-profiles.md)

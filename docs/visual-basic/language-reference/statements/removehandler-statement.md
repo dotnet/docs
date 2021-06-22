@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: RemoveHandler Statement"
 title: "RemoveHandler Statement"
 ms.date: 07/20/2015
 f1_keywords: 

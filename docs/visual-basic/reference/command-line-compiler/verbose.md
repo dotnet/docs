@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: -verbose"
 title: "-verbose"
 ms.date: 03/13/2018
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <localServiceSettings> element"
 title: "<localServiceSettings> element"
 ms.date: "03/30/2017"
 ms.assetid: 0658549c-3f65-46dd-8c5c-9895441ed734
@@ -98,4 +99,4 @@ Specifies the security settings of a local service for this binding.
 - [Custom Bindings](../../../wcf/extending/custom-bindings.md)
 - [\<customBinding>](custombinding.md)
 - [How to: Create a Custom Binding Using the SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
-- [Custom Binding Security](../../../wcf/samples/custom-binding-security.md)
+- [Custom Binding Security](/previous-versions/dotnet/framework/wcf/samples/custom-binding-security)

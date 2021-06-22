@@ -40,7 +40,7 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
 * **`-f|--framework <FRAMEWORK>`**
 
-  The [framework](../../standard/frameworks.md) that was specified at build time. The framework must be defined in the [project file](csproj.md). If you specified the framework at build time, you must specify the framework when cleaning.
+  The [framework](../../standard/frameworks.md) that was specified at build time. The framework must be defined in the [project file](../project-sdk/overview.md). If you specified the framework at build time, you must specify the framework when cleaning.
 
 * **`-h|--help`**
 

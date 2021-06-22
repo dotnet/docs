@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Changing Namespace Declarations in an XML Document"
 title: "Changing Namespace Declarations in an XML Document"
 ms.date: "03/30/2017"
 dev_langs: 

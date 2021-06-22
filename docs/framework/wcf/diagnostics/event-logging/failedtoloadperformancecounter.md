@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FailedToLoadPerformanceCounter"
 title: "FailedToLoadPerformanceCounter"
 ms.date: "03/30/2017"
 ms.assetid: bb333946-738e-4937-808e-5b6c0ac44e1b

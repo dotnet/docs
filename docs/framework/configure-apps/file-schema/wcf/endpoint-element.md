@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <endpoint> element"
 title: "<endpoint> element"
 ms.date: "03/30/2017"
 ms.assetid: 2fc8fedc-78d0-4e87-8142-fbfd26c15a4e

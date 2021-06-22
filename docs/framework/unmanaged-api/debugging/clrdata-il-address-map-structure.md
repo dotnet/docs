@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CLRDATA_IL_ADDRESS_MAP Structure"
 title: "CLRDATA_IL_ADDRESS_MAP Structure"
 ms.date: "01/16/2019"
 api.name:

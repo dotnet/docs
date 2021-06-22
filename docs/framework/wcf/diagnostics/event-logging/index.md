@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Event Logging in WCF"
 title: "Event Logging in WCF"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

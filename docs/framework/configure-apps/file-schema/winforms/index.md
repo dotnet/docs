@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Forms Configuration Section"
 title: "Windows Forms Configuration Section"
 ms.date: "04/07/2017"
 ms.assetid: 6eb142d5-fc98-40e2-9d90-84733f2a27ba

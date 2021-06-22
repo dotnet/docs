@@ -129,6 +129,9 @@ The following table lists code quality analysis rules.
 > |[CA1836: Prefer `IsEmpty` over `Count` when available](ca1836.md) | Prefer `IsEmpty` property that is more efficient than `Count`, `Length`, <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> or <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> to determine whether the object contains or not any items. |
 > | [CA1837: Use `Environment.ProcessId` instead of `Process.GetCurrentProcess().Id`](ca1837.md) | `Environment.ProcessId` is simpler and faster than `Process.GetCurrentProcess().Id`. |
 > | [CA1838: Avoid `StringBuilder` parameters for P/Invokes](ca1838.md) | Marshaling of 'StringBuilder' always creates a native buffer copy, resulting in multiple allocations for one marshaling operation. |
+> | [CA1841: Prefer Dictionary Contains methods](ca1841.md) | Calling `Contains` on the `Keys` or `Values` collection may often be more expensive than calling `ContainsKey` or `ContainsValue` on the dictionary itself. |
+> | [CA1845: Use span-based 'string.Concat'](ca1845.md) | It is more efficient to use `AsSpan` and `string.Concat`, instead of `Substring` and a concatenation operator. |
+> | [CA1846: Prefer `AsSpan` over `Substring`](ca1846.md) | `AsSpan` is more efficient than `Substring`. `Substring` performs an O(n) string copy, while `AsSpan` does not and has a constant cost. `AsSpan` also does not perform any heap allocations. |
 > | [CA2000: Dispose objects before losing scope](ca2000.md) | Because an exceptional event might occur that will prevent the finalizer of an object from running, the object should be explicitly disposed before all references to it are out of scope. |
 > |[CA2002: Do not lock on objects with weak identity](ca2002.md) |An object is said to have a weak identity when it can be directly accessed across application domain boundaries. A thread that tries to acquire a lock on an object that has a weak identity can be blocked by a second thread in a different application domain that has a lock on the same object. |
 > | [CA2007: Do not directly await a Task](ca2007.md) | An asynchronous method [awaits](../../../csharp/language-reference/operators/await.md) a <xref:System.Threading.Tasks.Task> directly. When an asynchronous method awaits a <xref:System.Threading.Tasks.Task> directly, continuation occurs in the same thread that created the task. This behavior can be costly in terms of performance and can result in a deadlock on the UI thread. Consider calling <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> to signal your intention for continuation. |
@@ -265,6 +268,7 @@ The following table lists code quality analysis rules.
 > | [CA5403: Do not hard-code certificate](ca5403.md) | The `data` or `rawData` parameter of a <xref:System.Security.Cryptography.X509Certificates.X509Certificate> or <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> constructor is hard-coded. |
 > | [IL3000 Avoid accessing Assembly file path when publishing as a single file](il3000.md) | Avoid accessing Assembly file path when publishing as a single file. |
 > | [IL3001 Avoid accessing Assembly file path when publishing as a single-file](il3001.md) | Avoid accessing Assembly file path when publishing as a single file. |
+> | [IL3002 Avoid calling members annotated with 'RequiresAssemblyFilesAttribute' when publishing as a single file](il3002.md)|Avoid calling members annotated with 'RequiresAssemblyFilesAttribute' when publishing as a single file|
 
 ## Legend
 
@@ -278,7 +282,7 @@ The following table shows the type of information that is provided for each rule
 | **Fix is breaking or non-breaking** |Whether the fix for a violation of the rule is a breaking change. Breaking change means that an assembly that has a dependency on the target that caused the violation will not recompile with the new fixed version or might fail at run time because of the change. When multiple fixes are available and at least one fix is a breaking change and one fix is not, both 'Breaking' and 'Non-breaking' are specified.|
 |Cause|The specific managed code that causes the rule to generate a warning.|
 |Description|Discusses the issues that are behind the warning.|
-|How to Fix Violations|Explains how to change the source code to satisfy the rule and prevent it from generating a warning.|
-|When to Suppress Warnings|Describes when it is safe to suppress a warning from the rule.|
-|Example Code|Examples that violate the rule and corrected examples that satisfy the rule.|
-|Related Rules|Related rules.|
+|How to fix violations|Explains how to change the source code to satisfy the rule and prevent it from generating a warning.|
+|When to suppress warnings|Describes when it is safe to suppress a warning from the rule.|
+|Example code|Examples that violate the rule and corrected examples that satisfy the rule.|
+|Related rules|Related rules.|

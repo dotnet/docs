@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: New Operator (Visual Basic)"
 title: "New Operator"
 ms.date: 07/20/2015
 f1_keywords:

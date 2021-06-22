@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Write Text to Files in the My Documents Directory in Visual Basic"
 title: "How to: Write Text to Files in the My Documents Directory"
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -38,7 +39,7 @@ The `My.Computer.FileSystem.SpecialDirectories` object allows you to access spec
   
 ## .NET Framework Security  
 
- If you are running in a partial-trust context, the code might throw an exception due to insufficient privileges. For more information, see [Code Access Security Basics](../../../../framework/misc/code-access-security-basics.md).  
+ If you are running in a partial-trust context, the code might throw an exception due to insufficient privileges. For more information, see [Code Access Security Basics](/previous-versions/dotnet/framework/code-access-security/code-access-security-basics).  
   
  This example creates a new file. If an application needs to create a file, that application needs Create permission for the folder. Permissions are set using access control lists. If the file already exists, the application needs only Write permission, a lesser privilege. Where possible, it is more secure to create the file during deployment, and only grant Read privileges to a single file, rather than to grant Create privileges for a folder. Also, it is more secure to write data to user folders than to the root folder or the **Program Files** folder. For more information, see [ACL Technology Overview](/previous-versions/dotnet/netframework-4.0/ms229742(v=vs.100)).  
   

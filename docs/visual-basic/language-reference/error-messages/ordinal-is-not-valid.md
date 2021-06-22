@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Ordinal is not valid"
 title: "Ordinal is not valid"
 ms.date: 07/20/2015
 f1_keywords: 

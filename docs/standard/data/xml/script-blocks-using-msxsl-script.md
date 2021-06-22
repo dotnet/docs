@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Script Blocks Using msxsl:script"
 title: "Script Blocks Using msxsl:script"
 ms.date: "03/30/2017"
 dev_langs: 

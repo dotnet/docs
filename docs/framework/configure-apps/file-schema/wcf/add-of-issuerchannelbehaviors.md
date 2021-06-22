@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <add> of <issuerChannelBehaviors>"
 title: "<add> of <issuerChannelBehaviors>"
 ms.date: "03/30/2017"
 ms.assetid: 50710506-e28f-45dd-ab7e-bff6f44173db

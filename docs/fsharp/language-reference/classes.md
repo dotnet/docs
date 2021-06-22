@@ -1,9 +1,10 @@
 ---
-title: Classes
+title: Classes in F#
+titleSuffix: ""
 description: Learn how F# Classes are types that represent objects that can have properties, methods, and events.
 ms.date: 05/16/2016
 ---
-# Classes
+# Classes (F#)
 
 *Classes* are types that represent objects that can have properties, methods, and events.
 
@@ -84,7 +85,7 @@ type MyClass2(dataIn) as self =
 
 Unlike in other .NET languages, you can name the self identifier however you want; you are not restricted to names such as `self`, `Me`, or `this`.
 
-The self identifier that is declared with the `as` keyword is not initialized until after the `let` bindings are executed. Therefore, it cannot be used in the `let` bindings. You can use the self identifier in the `do` bindings section.
+The self identifier that is declared with the `as` keyword is not initialized until after the base constructor. Therefore, when used before or inside the base constructor, `System.InvalidOperationException: The initialization of an object or value resulted in an object or value being accessed recursively before it was fully initialized.` will be raised during runtime. You can use the self identifier freely after the base constructor, such as in `let` bindings or `do` bindings.
 
 ## Generic Type Parameters
 
@@ -98,7 +99,7 @@ Type arguments are inferred when the type is used. In the following code, the in
 
 ## Specifying Inheritance
 
-The `inherit` clause identifies the direct base class, if there is one. In F#, only one direct base class is allowed. Interfaces that a class implements are not considered base classes. Interfaces are discussed in the [Interfaces](Interfaces.md) topic.
+The `inherit` clause identifies the direct base class, if there is one. In F#, only one direct base class is allowed. Interfaces that a class implements are not considered base classes. Interfaces are discussed in the [Interfaces](interfaces.md) topic.
 
 You can access the methods and properties of the base class from the derived class by using the language keyword `base` as an identifier, followed by a period (.) and the name of the member.
 

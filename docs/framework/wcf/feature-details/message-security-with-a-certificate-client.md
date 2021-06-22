@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message Security with a Certificate Client"
 title: "Message Security with a Certificate Client"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -12,7 +13,7 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
 
  ![Screenshot that shows a client with certificate.](./media/message-security-with-a-certificate-client/client-with-certificate.gif)  
   
- For a sample application, see [Message Security Certificate](../samples/message-security-certificate.md).  
+ For a sample application, see [Message Security Certificate](/previous-versions/dotnet/framework/wcf/samples/message-security-certificate).  
 
 |Characteristic|Description|  
 |--------------------|-----------------|  

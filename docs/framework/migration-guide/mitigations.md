@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Mitigate new behaviors in .NET Framework 4.6 and later"
 title: Mitigate new behaviors in .NET Framework
 ms.date: 04/21/2020
 ---

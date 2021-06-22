@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Code Generation in LINQ to SQL"
 title: "Code Generation in LINQ to SQL"
 ms.date: "03/30/2017"
 ms.assetid: ddcbdaa1-e7fa-4d85-a379-313b49965c07

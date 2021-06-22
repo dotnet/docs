@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::ObjectAllocated Method"
 title: "ICorProfilerCallback::ObjectAllocated Method"
 ms.date: "03/30/2017"
 api_name: 

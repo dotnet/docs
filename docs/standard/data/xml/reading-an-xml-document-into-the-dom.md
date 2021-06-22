@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reading an XML Document into the DOM"
 title: "Reading an XML Document into the DOM"
 ms.date: "03/30/2017"
 dev_langs: 

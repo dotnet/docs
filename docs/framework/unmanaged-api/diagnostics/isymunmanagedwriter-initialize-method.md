@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedWriter::Initialize Method"
 title: "ISymUnmanagedWriter::Initialize Method"
 ms.date: "03/30/2017"
 api_name: 

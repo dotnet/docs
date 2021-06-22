@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC40007: Default property '<propertyname1>' conflicts with default property '<propertyname2>' in '<classname>' and so should be declared 'Shadows"
 title: "Default property '<propertyname1>' conflicts with default property '<propertyname2>' in '<classname>' and so should be declared 'Shadows'"
 ms.date: 07/20/2015
 f1_keywords:

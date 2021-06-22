@@ -78,7 +78,7 @@ The following code returns an `IAsyncEnumerable<string>` from an iterator method
 IAsyncEnumerable<string> elements = MyAsyncIteratorMethod();
 await foreach (string element in elements)
 {
-   ...
+   // ...
 }
 ```
 

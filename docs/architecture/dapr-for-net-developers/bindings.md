@@ -202,7 +202,7 @@ In the Dapr Traffic Control sample application, the TrafficControl service uses 
 
 MQTT is a lightweight pub/sub messaging protocol, often used in IoT scenarios. Producers sent MQTT messages to a topic; subscribers then retrieve messages from the topic. There are several MQTT message broker products available. The Traffic Control sample application uses [Eclipse Mosquitto](https://mosquitto.org/).
 
-The CameraSimulation doesn't depend on any Dapr building blocks. It uses the .NET Core library `System.Net.Mqtt` to send MQTT messages:
+The CameraSimulation doesn't depend on any Dapr building blocks. It uses the [`System.Net.Mqtt`](https://www.nuget.org/packages/System.Net.Mqtt) library to send MQTT messages:
 
 ```csharp
 // ...
@@ -220,7 +220,7 @@ _trafficControlService.SendVehicleEntry(vehicleRegistered);
 // ...
 ```
 
-The code uses a proxy of type `ITrafficControlService` to call the TrafficControl service. .NET Core injects an implementation of the `ITrafficControlService` interface using constructor injection:
+The code uses a proxy of type `ITrafficControlService` to call the TrafficControl service. .NET injects an implementation of the `ITrafficControlService` interface using constructor injection:
 
  ```csharp
 public CameraSimulation(int camNumber, ITrafficControlService trafficControlService)

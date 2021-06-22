@@ -22,11 +22,11 @@ Although the simulation is simple, responsibilities within the system are separa
 
 \- The **Camera Simulation** is a .NET Core console application that simulates vehicles and sends messages to the TrafficControl service. Every simulated car invokes both the entry and exit service endpoints.
 
-\- The **TrafficControl service** is an ASP.NET Core WebAPI application that exposes the `/entrycam` and `/exitcam` endpoints. Invoking an endpoint simulates a car passing under one of the entry- or exit-cameras respectively. The request message payload simply contains the license plate of the car (no actual OCR is implemented).
+\- The **TrafficControl service** is an ASP.NET Core Web API application that exposes the `/entrycam` and `/exitcam` endpoints. Invoking an endpoint simulates a car passing under one of the entry- or exit-cameras respectively. The request message payload simply contains the license plate of the car (no actual OCR is implemented).
 
-\- The **FineCollection service** is an ASP.NET Core WebAPI application that offers 1 endpoint: `/collectfine`. Invoking this endpoint will send a fine notice to the driver of the speeding vehicle. The payload of the request contains all the information about the speeding violation.
+\- The **FineCollection service** is an ASP.NET Core Web API application that offers 1 endpoint: `/collectfine`. Invoking this endpoint will send a fine notice to the driver of the speeding vehicle. The payload of the request contains all the information about the speeding violation.
 
-\- The **VehicleRegistration service** is an ASP.NET Core WebAPI application that offers 1 endpoint: `/vehicleinfo/{licensenumber}`. It's used for obtaining vehicle- and owner-information for a speeding vehicle based on the license number sent in the URL (for example, `/vehicleinfo/RV-752-S`).
+\- The **VehicleRegistration service** is an ASP.NET Core Web API application that offers 1 endpoint: `/vehicleinfo/{licensenumber}`. It's used for obtaining vehicle- and owner-information for a speeding vehicle based on the license number sent in the URL (for example, `/vehicleinfo/RV-752-S`).
 
 The sequence diagram in figure 4.2 shows the simulation flow:
 
@@ -65,7 +65,7 @@ One of the goals of Dapr is to provide cloud-native capabilities for microservic
 
 Figure 4.4 shows a sequence diagram of the flow of the simulation with all the Dapr building blocks in place:
 
-:::image type="content" source="./media/sample-application/sequence-dapr.png" alt-text="Sequence diagram of simulation flow with Dapr building blocks.":::
+:::image type="content" source="./media/sample-application/sequence-dapr.png" lightbox="./media/sample-application/sequence-dapr.png" alt-text="Sequence diagram of simulation flow with Dapr building blocks.":::
 
 **Figure 4-4**. Sequence diagram of simulation flow with Dapr building blocks.
 

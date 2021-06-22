@@ -298,8 +298,9 @@ Speeding violations are handled by the `CollectionController`, an ordinary ASP.N
 ```csharp
 [Topic("pubsub", "speedingviolations")]
 [Route("collectfine")]
-[HttpPost()]
-public async Task<ActionResult> CollectFine(SpeedingViolation speedingViolation, [FromServices] DaprClient daprClient)
+[HttpPost]
+public async Task<ActionResult> CollectFine(
+    SpeedingViolation speedingViolation, [FromServices] DaprClient daprClient)
 {
     // ...
 }

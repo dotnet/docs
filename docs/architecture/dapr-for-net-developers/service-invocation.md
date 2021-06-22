@@ -230,7 +230,7 @@ In the example above, DaprClient serializes the given `order` object using [Prot
 
 ## Name resolution components
 
-At the time of this writing, Dapr provides support for the following name resolution components:
+At the time of writing, Dapr provides support for the following name resolution components:
 
 - mDNS (default when running self-hosted)
 - Kubernetes Name Resolution (default when running in Kubernetes)
@@ -265,7 +265,7 @@ Information is retrieved by the ASP.NET `CollectionController` class in the Fine
  ```csharp
  [Topic("pubsub", "speedingviolations")]
  [Route("collectfine")]
- [HttpPost()]
+ [HttpPost]
  public async Task<ActionResult> CollectFine(SpeedingViolation speedingViolation, [FromServices] DaprClient daprClient)
  {
     // ...

@@ -545,12 +545,12 @@ The binding configuration specifies a binding component that can be invoked usin
 ```csharp
 public Task Handle(OrderStartedDomainEvent notification, CancellationToken cancellationToken)
 {
-    var string message = CreateEmailBody(notification);
+    string message = CreateEmailBody(notification);
     var metadata = new Dictionary<string, string>
     {
-        {"emailFrom", "eShopOn@dapr.io"},
-        {"emailTo", notification.UserName},
-        {"subject", $"Your eShopOnDapr order #{notification.Order.Id}"}
+        ["emailFrom"] = "eShopOn@dapr.io",
+        ["emailTo" = notification.UserName,
+        ["subject"] = $"Your eShopOnDapr order #{notification.Order.Id}"
     };
     return _daprClient.InvokeBindingAsync("sendmail", "create", message, metadata, cancellationToken);
 }
@@ -574,7 +574,8 @@ The process is implemented using a single `OrderingProcessActor` actor type. Her
 ```csharp
 public interface IOrderingProcessActor : IActor
 {
-    Task Submit(string userId, string userName, string street, string city,
+    Task Submit(
+        string userId, string userName, string street, string city,
         string zipCode, string state, string country, CustomerBasket basket);
 
     Task NotifyStockConfirmed();
@@ -603,7 +604,6 @@ public async Task Handle(UserCheckoutAcceptedIntegrationEvent integrationEvent)
     if (integrationEvent.RequestId != Guid.Empty)
     {
         var orderId = integrationEvent.RequestId;
-
         var actorId = new ActorId(orderId.ToString());
         var orderingProcess = ActorProxy.Create<IOrderingProcessActor>(actorId, nameof(OrderingProcessActor));
 
@@ -621,7 +621,8 @@ public async Task Handle(UserCheckoutAcceptedIntegrationEvent integrationEvent)
 In the example above, the Ordering service first uses the original request id from the `UserCheckoutAcceptedIntegrationEvent` message as the order id. The same id is used to create an `ActorId` for the actor. The handler uses the `ActorId` to create an actor proxy and invokes the `Submit` method. The following snippet shows the implementation of the `Submit` method:
 
 ```csharp
-public async Task Submit(string userId, string userName, string street, string city,
+public async Task Submit(
+    string userId, string userName, string street, string city,
     string zipCode, string state, string country, CustomerBasket basket)
 {
     var order = new Order
@@ -677,9 +678,12 @@ There's a lot going on in the `Submit` method:
 When the reminder for the grace period ending fires, the actor runtime calls the `ReceiveReminderAsync` method:
 
 ```csharp
-public Task ReceiveReminderAsync(string reminderName, byte[] state, TimeSpan dueTime, TimeSpan period)
+public Task ReceiveReminderAsync(
+    string reminderName, byte[] state, TimeSpan dueTime, TimeSpan period)
 {
-    _logger.LogInformation("Received {Actor}[{ActorId}] reminder: {Reminder}", nameof(OrderingProcessActor), OrderId, reminderName);
+    _logger.LogInformation(
+        "Received {Actor}[{ActorId}] reminder: {Reminder}",
+        nameof(OrderingProcessActor), OrderId, reminderName);
 
     switch (reminderName)
     {
@@ -704,7 +708,8 @@ As shown in the snippet above, the `ReceiveReminderAsync` method handles not jus
 ```csharp
 public async Task OnGracePeriodElapsed()
 {
-    var statusChanged = await TryUpdateOrderStatusAsync(OrderStatus.Submitted, OrderStatus.AwaitingStockValidation);
+    var statusChanged = await TryUpdateOrderStatusAsync(
+        OrderStatus.Submitted, OrderStatus.AwaitingStockValidation);
     if (statusChanged)
     {
         var order = await StateManager.GetStateAsync<Order>(OrderDetailsStateName);
@@ -730,7 +735,8 @@ private async Task<bool> TryUpdateOrderStatusAsync(OrderStatus expectedOrderStat
     var orderStatus = await StateManager.TryGetStateAsync<OrderStatus>(OrderStatusStateName);
     if (!orderStatus.HasValue)
     {
-        _logger.LogWarning("Order with Id: {OrderId} cannot be updated because it doesn't exist",
+        _logger.LogWarning(
+            "Order with Id: {OrderId} cannot be updated because it doesn't exist",
             OrderId);
 
         return false;
@@ -738,7 +744,8 @@ private async Task<bool> TryUpdateOrderStatusAsync(OrderStatus expectedOrderStat
 
     if (orderStatus.Value.Id != expectedOrderStatus.Id)
     {
-        _logger.LogWarning("Order with Id: {OrderId} is in status {Status} instead of expected status {ExpectedStatus}",
+        _logger.LogWarning(
+            "Order with Id: {OrderId} is in status {Status} instead of expected status {ExpectedStatus}",
             OrderId, orderStatus.Value.Name, expectedOrderStatus.Name);
 
         return false;
@@ -764,7 +771,8 @@ public async Task<bool> Cancel()
     var orderStatus = await StateManager.TryGetStateAsync<OrderStatus>(OrderStatusStateName);
     if (!orderStatus.HasValue)
     {
-        _logger.LogWarning("Order with Id: {OrderId} cannot be cancelled because it doesn't exist",
+        _logger.LogWarning(
+           "Order with Id: {OrderId} cannot be cancelled because it doesn't exist",
             OrderId);
 
         return false;
@@ -772,7 +780,8 @@ public async Task<bool> Cancel()
 
     if (orderStatus.Value.Id == OrderStatus.Paid.Id || orderStatus.Value.Id == OrderStatus.Shipped.Id)
     {
-        _logger.LogWarning("Order with Id: {OrderId} cannot be cancelled because it's in status {Status}",
+        _logger.LogWarning(
+           "Order with Id: {OrderId} cannot be cancelled because it's in status {Status}",
             OrderId, orderStatus.Value.Name);
 
         return false;
@@ -815,8 +824,10 @@ The following snippet shows the code for handling the `OrderStatusChangedToSubmi
 ```csharp
 [HttpPost("OrderStatusChangedToSubmitted")]
 [Topic(DaprPubSubName, "OrderStatusChangedToSubmittedIntegrationEvent")]
-public async Task Handle(OrderStatusChangedToSubmittedIntegrationEvent integrationEvent,
-    [FromServices] IOptions<OrderingSettings> settings, [FromServices] IEmailService emailService)
+public async Task Handle(
+    OrderStatusChangedToSubmittedIntegrationEvent integrationEvent,
+    [FromServices] IOptions<OrderingSettings> settings,
+    [FromServices] IEmailService emailService)
 {
     // Gets the order details from Actor state.
     var actorId = new ActorId(integrationEvent.OrderId.ToString());

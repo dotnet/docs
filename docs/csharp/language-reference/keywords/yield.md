@@ -36,7 +36,12 @@ For more information about iterators, see [Iterators](../../iterators.md).
 
 The declaration of an iterator must meet the following requirements:
 
-- The return type must be <xref:System.Collections.Generic.IAsyncEnumerable%601>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerator%601>, or <xref:System.Collections.IEnumerator>.
+- The return type must be one of the following types:
+  - <xref:System.Collections.Generic.IAsyncEnumerable%601>
+  - <xref:System.Collections.Generic.IEnumerable%601>
+  - <xref:System.Collections.IEnumerable>
+  - <xref:System.Collections.Generic.IEnumerator%601>
+  - <xref:System.Collections.IEnumerator>
 - The declaration can't have any [in](in-parameter-modifier.md), [ref](ref.md), or [out](out-parameter-modifier.md) parameters.
 
 The `yield` type of an iterator that returns <xref:System.Collections.IEnumerable> or <xref:System.Collections.IEnumerator> is `object`.  If the iterator returns <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Collections.Generic.IEnumerator%601>, there must be an implicit conversion from the type of the expression in the `yield return` statement to the generic type parameter.

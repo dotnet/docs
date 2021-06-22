@@ -87,7 +87,7 @@ public int Increment()
 }
 ```
 
-Let's assume that the current value returned by the `GetValue` method is `1`. When two threads call the `Increment` method at the same time, there's a risk of both of them calling the `GetValue` method before one of them calls `SaveValue`. This results in both threads starting with the same inital value (`1`). The threads then increment the value to `2` and return it to the caller. The resulting value after the two calls is now `2` instead of `3` which it should be. This is a simple example to illustrate the kind of issues that can slip into your code when working with multiple threads, and is easy to solve. In real world applications however, concurrent and parallel scenarios can become very complex.
+Let's assume that the current value returned by the `GetValue` method is `1`. When two threads call the `Increment` method at the same time, there's a risk of both of them calling the `GetValue` method before one of them calls `SaveValue`. This results in both threads starting with the same initial value (`1`). The threads then increment the value to `2` and return it to the caller. The resulting value after the two calls is now `2` instead of `3` which it should be. This is a simple example to illustrate the kind of issues that can slip into your code when working with multiple threads, and is easy to solve. In real world applications however, concurrent and parallel scenarios can become very complex.
 
 In traditional programming models, you can solve this problem by introducing locking mechanisms. For example:
 
@@ -115,12 +115,12 @@ Thanks to the turn-based access model, you don't need to worry about multiple th
 ```csharp
 public async Task<int> IncrementAsync()
 {
-    var counterValue = await this.StateManager.TryGetStateAsync<int>("counter");
+    var counterValue = await StateManager.TryGetStateAsync<int>("counter");
 
     var currentValue = counterValue.HasValue ? counterValue.Value : 0;
     var newValue = currentValue + 1;
 
-    await this.StateManager.SetStateAsync("counter", newValue);
+    await StateManager.SetStateAsync("counter", newValue);
 
     return newValue;
 }
@@ -166,7 +166,7 @@ This reminder will fire in 5 minutes. Because the given period is empty, this wi
 
 Actor state is persisted using the Dapr [state management building block](state-management.md). Because actors can execute multiple state operations in a single turn, the state store component must support multi-item transactions. At the time of writing, the following state stores support multi-item transactions:
 
-- Azure CosmosDB
+- Azure Cosmos DB
 - MongoDB
 - PostgreSQL
 - Redis
@@ -202,7 +202,7 @@ spec:
 
 You can create an actor model implementation using only HTTP/gRPC calls. However, it's much more convenient to use the language specific Dapr SDKs. At the time of writing, both the .NET and Java SDKs provide extensive support for working with actors.
 
-To get started with the .NET Dapr actors SDK, you add a package reference to `Dapr.Actors` to your service project. The first step of creating an actual actor is to define an interface that derives from `IActor`. Clients use the interface to invoke operations on the actor. Here's a simple example of an actor interface for keeping scores:
+To get started with the .NET Dapr actors SDK, you add a package reference to [`Dapr.Actors`](https://www.nuget.org/packages/Dapr.Actors) to your service project. The first step of creating an actual actor is to define an interface that derives from `IActor`. Clients use the interface to invoke operations on the actor. Here's a simple example of an actor interface for keeping scores:
 
 ```csharp
 public interface IScoreActor : IActor
@@ -229,7 +229,7 @@ public class ScoreActor : Actor, IScoreActor
 }
 ```
 
-The constructor in the snippet above takes a `host` argument of type `ActorHost`. The `ActorHost` class represents the host for an actor type within the actor runtime. You need to pass this argument to the constructor of the `Actor` base class. Actors also support dependency injection. Any additional arguments that you add to the actor constructor are resolved using the ASP.NET Core dependency injection container.
+The constructor in the snippet above takes a `host` argument of type `ActorHost`. The `ActorHost` class represents the host for an actor type within the actor runtime. You need to pass this argument to the constructor of the `Actor` base class. Actors also support dependency injection. Any additional arguments that you add to the actor constructor are resolved using the .NET dependency injection container.
 
 Let's now implement the `IncrementScoreAsync` method of the interface:
 
@@ -265,7 +265,7 @@ public async Task<int> GetScoreAsync()
 }
 ```
 
-To host actors in an ASP.NET Core service, you must add a reference to the `Dapr.Actors.AspNetCore` package and make some changes to the `Startup` class. In the following example, the `Configure` method adds the actor endpoints by calling `endpoints.MapActorsHandlers`:
+To host actors in an ASP.NET Core service, you must add a reference to the [`Dapr.Actors.AspNetCore`](https://www.nuget.org/packages/Dapr.Actors.AspNetCore) package and make some changes to the `Startup` class. In the following example, the `Configure` method adds the actor endpoints by calling `endpoints.MapActorsHandlers`:
 
 ```csharp
 public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -321,12 +321,12 @@ static async Task Main(string[] args)
 
 The above example uses the `Dapr.Actors` package to call the actor service. To invoke an operation on an actor, you need to be able to address it. You'll need two parts for this:
 
-1. The **actor type** uniquely identifies the actor implemenation across the whole application. By default, the actor type is the name of the implementation class (without namespace). You can customize the actor type by adding an `ActorAttribute` to the implementation class and setting its `TypeName` property.
+1. The **actor type** uniquely identifies the actor implementation across the whole application. By default, the actor type is the name of the implementation class (without namespace). You can customize the actor type by adding an `ActorAttribute` to the implementation class and setting its `TypeName` property.
 1. The `ActorId` uniquely identifies an instance of an actor type. You can also use this class to generate a random actor id by calling `ActorId.CreateRandom`.
 
 The example uses `ActorProxy.Create` to create a proxy instance for the `ScoreActor`. The `Create` method takes two arguments: the `ActorId` identifying the specific actor and the actor type. It also has a generic type parameter to specify the actor interface that the actor type implements. As both the server and client applications need to use the actor interfaces, they're typically stored in a separate shared project.
 
-The final step in the example calls the `IncrementScoreAsync` method on the actor and outputs the result. Remember that the Dapr placement service distributes the actor instances across the Dapr sidecars. Therefor, expect an actor call to be a network call to another node.
+The final step in the example calls the `IncrementScoreAsync` method on the actor and outputs the result. Remember that the Dapr placement service distributes the actor instances across the Dapr sidecars. Therefore, expect an actor call to be a network call to another node.
 
 ### Call actors from ASP.NET Core clients
 
@@ -337,38 +337,38 @@ public void ConfigureServices(IServiceCollection services)
 {
     // ...
 
-    var jsonSerializerOptions = new JsonSerializerOptions()
-    {
-        PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-        PropertyNameCaseInsensitive = true
-    };
-
     services.AddActors(options =>
     {
+        var jsonSerializerOptions = new JsonSerializerOptions()
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            PropertyNameCaseInsensitive = true
+        };
+    
         options.JsonSerializerOptions = jsonSerializerOptions;
         options.Actors.RegisterActor<ScoreActor>();
     });
 }
 ```
 
-The call to `AddActors` registers the `IActorProxyFactory` for ASP.NET Core dependency injection. This allows ASP.NET Core to inject an `IActorProxyFactory` instance into your controller classes. The following example calls an actor method from an ASP.NET Core controller class:
+The call to `AddActors` registers the `IActorProxyFactory` for .NET dependency injection. This allows ASP.NET Core to inject an `IActorProxyFactory` instance into your controller classes. The following example calls an actor method from an ASP.NET Core controller class:
 
 ```csharp
 [ApiController]
 [Route("[controller]")]
 public class ScoreController : ControllerBase
 {
-    private readonly IActorProxyFactory actorProxyFactory;
+    private readonly IActorProxyFactory _actorProxyFactory;
 
     public ScoreController(IActorProxyFactory actorProxyFactory)
     {
-        this.actorProxyFactory = actorProxyFactory;
+        _actorProxyFactory = actorProxyFactory;
     }
 
     [HttpPut("{scoreId}")]
     public Task<int> Increment(string scoreId)
     {
-        var scoreActor = this.actorProxyFactory.CreateActorProxy<IScoreActor>(
+        var scoreActor = _actorProxyFactory.CreateActorProxy<IScoreActor>(
             new ActorId(scoreId),
             "ScoreActor");
 
@@ -416,7 +416,7 @@ You create weakly-typed proxies in a similar way to strongly-typed proxies. Inst
 [HttpPut("{scoreId}")]
 public Task<int> Increment(string scoreId)
 {
-    var scoreActor = this.actorProxyFactory.CreateActorProxy(
+    var scoreActor = _actorProxyFactory.CreateActorProxy(
         new ActorId(scoreId),
         "ScoreActor");
 
@@ -437,7 +437,7 @@ public class TimerActor : Actor, ITimerActor
 
     public Task StartTimerAsync(string name, string text)
     {
-        return this.RegisterTimerAsync(
+        return RegisterTimerAsync(
             name,
             nameof(TimerCallback),
             Encoding.UTF8.GetBytes(text),
@@ -475,7 +475,7 @@ public class TimerActor : Actor, ITimerActor
 
     public Task StopTimerAsync(string name)
     {
-        return this.UnregisterTimerAsync(name);
+        return UnregisterTimerAsync(name);
     }
 }
 ```
@@ -487,7 +487,9 @@ To use reminders in an actor, your actor class must implement the `IRemindable` 
 ```csharp
 public interface IRemindable
 {
-    Task ReceiveReminderAsync(string reminderName, byte[] state, TimeSpan dueTime, TimeSpan period);
+    Task ReceiveReminderAsync(
+        string reminderName, byte[] state,
+        TimeSpan dueTime, TimeSpan period);
 }
 ```
 
@@ -509,14 +511,16 @@ public class ReminderActor : Actor, IReminderActor, IRemindable
 
     public Task SetReminderAsync(string text)
     {
-        return this.RegisterReminderAsync(
+        return RegisterReminderAsync(
             "DoNotForget",
             Encoding.UTF8.GetBytes(text),
             TimeSpan.FromSeconds(3),
             TimeSpan.FromMilliseconds(-1));
     }
 
-    public Task ReceiveReminderAsync(string reminderName, byte[] state, TimeSpan dueTime, TimeSpan period)
+    public Task ReceiveReminderAsync(
+        string reminderName, byte[] state,
+        TimeSpan dueTime, TimeSpan period)
     {
         if (reminderName == "DoNotForget")
         {
@@ -547,8 +551,8 @@ When the actor model is enabled, the application uses actors to represent vehicl
 ```csharp
 public interface IVehicleActor : IActor
 {
-    Task RegisterEntry(VehicleRegistered msg);
-    Task RegisterExit(VehicleRegistered msg);
+    Task RegisterEntryAsync(VehicleRegistered msg);
+    Task RegisterExitAsync(VehicleRegistered msg);
 }
 ```
 
@@ -560,13 +564,13 @@ var vehicleState = new VehicleState
     LicenseNumber = msg.LicenseNumber,
     EntryTimestamp = msg.Timestamp
 };
-await this.StateManager.SetStateAsync("VehicleState", vehicleState);
+await StateManager.SetStateAsync("VehicleState", vehicleState);
 ```
 
 When the vehicle reaches the end of the speed camera zone, the exit camera calls the `RegisterExit` method. The `RegisterExit` method first gets the current states and updates it to include the exit timestamp:
 
 ```csharp
-var vehicleState = await this.StateManager.GetStateAsync<VehicleState>("VehicleState");
+var vehicleState = await StateManager.GetStateAsync<VehicleState>("VehicleState");
 vehicleState.ExitTimestamp = msg.Timestamp;
 ```
 
@@ -602,7 +606,9 @@ private readonly DaprClient _daprClient;
 private readonly ISpeedingViolationCalculator _speedingViolationCalculator;
 private readonly string _roadId;
 
-public VehicleActor(ActorHost host, DaprClient daprClient, ISpeedingViolationCalculator speedingViolationCalculator)
+public VehicleActor(
+    ActorHost host, DaprClient daprClient,
+    ISpeedingViolationCalculator speedingViolationCalculator)
     : base(host)
 {
     _daprClient = daprClient;

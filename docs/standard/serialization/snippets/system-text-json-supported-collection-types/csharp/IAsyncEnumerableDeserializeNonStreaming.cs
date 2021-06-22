@@ -11,6 +11,7 @@ namespace IAsyncEnumerableDeserializeNonStreaming
     {
         public IAsyncEnumerable<int> Data { get; set; }
     }
+
     public class Program
     {
         public static async Task Main()

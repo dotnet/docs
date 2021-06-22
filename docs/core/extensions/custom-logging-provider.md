@@ -36,7 +36,7 @@ The logger is instantiated with the `name` and a `Func<ColorConsoleLoggerConfigu
 
 ## Custom logger provider
 
-The `ILoggerProvider` object is responsible for creating logger instances. Maybe it is not needed to create a logger instance per category, but this makes sense for some loggers, like NLog or log4net. Doing this you are also able to choose different logging output targets per category if needed:
+The `ILoggerProvider` object is responsible for creating logger instances. It's not necessary to create a logger instance per category, but it makes sense for some loggers, like NLog or log4net. This strategy allows you to choose different logging output targets per category, as in the following example:
 
 :::code language="csharp" source="snippets/configuration/console-custom-logging/ColorConsoleLoggerProvider.cs":::
 

@@ -87,11 +87,11 @@ The Dapr [.NET SDK](https://github.com/dapr/dotnet-sdk) provides .NET developers
 The preferred way to call an HTTP endpoint is to use Dapr's rich integration with `HttpClient`. The following example submits an order by calling the `submit` method of the `orderservice` application:
 
 ```csharp
-var httpClient = DaprClient.CreateHttpClient();
+var httpClient = DaprClient.CreateInvokeHttpClient();
 await httpClient.PostAsJsonAsync("http://orderservice/submit", order);
 ```
 
-In the example, `DaprClient.CreateHttpClient` returns an `HttpClient` instance that is used to perform Dapr service invocation. The returned `HttpClient` uses a special Dapr message handler that rewrites URIs of outgoing requests. The host name is interpreted as the application ID of the service to call. The rewritten request that's actually being called is:
+In the example, `DaprClient.CreateInvokeHttpClient` returns an `HttpClient` instance that is used to perform Dapr service invocation. The returned `HttpClient` uses a special Dapr message handler that rewrites URIs of outgoing requests. The host name is interpreted as the application ID of the service to call. The rewritten request that's actually being called is:
 
 ```http
 http://127.0.0.1:3500/v1/invoke/orderservice/method/submit
@@ -99,16 +99,16 @@ http://127.0.0.1:3500/v1/invoke/orderservice/method/submit
 
 This example uses the default value for the Dapr HTTP endpoint, which is `http://127.0.0.1:<dapr-http-port>/`. The value of `dapr-http-port` is taken from the `DAPR_HTTP_PORT` environment variable. If it's not set, the default port number `3500` is used.
 
-Alternatively, you can configure a custom endpoint in the call to `DaprClient.CreateHttpClient`:
+Alternatively, you can configure a custom endpoint in the call to `DaprClient.CreateInvokeHttpClient`:
 
 ```csharp
-var httpClient = DaprClient.CreateHttpClient(daprEndpoint = "localhost:4000");
+var httpClient = DaprClient.CreateInvokeHttpClient(daprEndpoint = "localhost:4000");
 ```
 
 You can also directly set the base address by specifying the application ID. Doing so enables relative URIs when making a call:
 
 ```csharp
-var httpClient = DaprClient.CreateHttpClient("orderservice");
+var httpClient = DaprClient.CreateInvokeHttpClient("orderservice");
 await httpClient.PostAsJsonAsync("/submit");
 ```
 

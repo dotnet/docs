@@ -38,6 +38,8 @@ public DiagnosticsClient
 }
 ```
 
+### Constructor
+
 ```csharp
 public DiagnosticsClient(int processId);
 ```
@@ -45,6 +47,8 @@ public DiagnosticsClient(int processId);
 Creates a new instance of `DiagnosticsClient` for a compatible .NET process running with process ID of `processId`.
 
 `processID` : Process ID of the target application.
+
+### StartEventPipeSession methods
 
 ```csharp
 public EventPipeSession StartEventPipeSession(
@@ -72,6 +76,8 @@ public EventPipeSession StartEventPipeSession(EventPipeProvider providers, bool 
 
 * `circularBufferMB` : The size of the circular buffer to be used as a buffer for writing events within the runtime.
 
+### WriteDump method
+
 ```csharp
 public void WriteDump(DumpType dumpType, string dumpPath, bool logDumpGeneration=false);
 ```
@@ -81,6 +87,8 @@ Request a dump for post-mortem debugging of the target application. The type of 
 * `dumpType` : Type of the dump to be requested.
 * `dumpPath` : The path to the dump to be written out to.
 * `logDumpGeneration` : If set to `true`, the target application will write out diagnostic logs during dump generation.
+
+### AttachProfiler method
 
 ```csharp
 public void AttachProfiler(TimeSpan attachTimeout, Guid profilerGuid, string profilerPath, byte[] additionalData=null);
@@ -92,6 +100,8 @@ Request to attach an ICorProfiler to the target application.
 * `profilerGuid` :  `Guid` of the ICorProfiler to be attached.
 * `profilerPath` : Path to the ICorProfiler dll to be attached.
 * `additionalData` : Optional additional data that can be passed to the runtime during profiler attach.
+
+### GetPublishedProcesses method
 
 ```csharp
 public static IEnumerable<int> GetPublishedProcesses();
@@ -130,6 +140,8 @@ public class EventPipeProvider
 }
 ```
 
+### Constructor
+
 ```csharp
 public EventPipeProvider(
     string name,
@@ -140,29 +152,37 @@ public EventPipeProvider(
 
 Creates a new instance of `EventPipeProvider` with the given provider name, <xref:System.Diagnostics.Tracing.EventLevel>, keywords, and arguments.
 
+### Name property
+
 ```csharp
 public string Name { get; }
 ```
 
-The name of the Provider
+Gets the name of the Provider.
+
+### EventLevel property
 
 ```csharp
 public EventLevel EventLevel { get; }
 ```
 
-The EventLevel of the given instance of [`EventPipeProvider`](diagnostics-client-library.md#eventpipeprovider-class).
+Gets the `EventLevel` of the given instance of [`EventPipeProvider`](diagnostics-client-library.md#eventpipeprovider-class).
+
+### Keywords property
 
 ```csharp
 public long Keywords { get; }
 ```
 
-A long that represents bitmask for keywords of the EventSource.
+Gets a value that represents bitmask for keywords of the `EventSource`.
+
+### Arguments property
 
 ```csharp
 public IDictionary<string, string> Arguments { get; }
 ```
 
-An `IDictionary` of key-value pair string representing optional arguments to be passed to EventSource representing the given `EventPipeProvider`.
+Gets an `IDictionary` of key-value pair strings representing optional arguments to be passed to `EventSource` representing the given `EventPipeProvider`.
 
 ### Remarks
 
@@ -180,17 +200,21 @@ public class EventPipeSession : IDisposable
 
 This class represents an ongoing EventPipe session. It is immutable and acts as a handle to an EventPipe session of the given runtime.
 
+## EventStream property
+
 ```csharp
 public Stream EventStream { get; }
 ```
 
-Returns a `Stream` that can be used to read the event stream.
+Gets a `Stream` that can be used to read the event stream.
+
+## Stop method
 
 ```csharp
 public void Stop();
 ```
 
-Stops the given EventPipe session.
+Stops the given `EventPipe` session.
 
 ## DumpType enum
 
@@ -213,7 +237,7 @@ Represents the type of dump that can be requested.
 
 ## Exceptions
 
-Exceptions that are thrown from the library are `DiagnosticsClientException`s or a derived class of it.
+Exceptions that are thrown from the library are of type `DiagnosticsClientException` or a derived type.
 
 ```csharp
 public class DiagnosticsClientException : Exception

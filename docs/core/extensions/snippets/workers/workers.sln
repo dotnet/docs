@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.TimerHostedService", "t
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.WindowsService", "windows-service\App.WindowsService.csproj", "{0642A687-220B-4E1E-99B8-A31B5DC40A35}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.CloudService", "cloud-service\App.CloudService.csproj", "{D27DBD6D-3E1D-4A3F-9653-5EBFABA22123}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0642A687-220B-4E1E-99B8-A31B5DC40A35}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0642A687-220B-4E1E-99B8-A31B5DC40A35}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0642A687-220B-4E1E-99B8-A31B5DC40A35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D27DBD6D-3E1D-4A3F-9653-5EBFABA22123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D27DBD6D-3E1D-4A3F-9653-5EBFABA22123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D27DBD6D-3E1D-4A3F-9653-5EBFABA22123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D27DBD6D-3E1D-4A3F-9653-5EBFABA22123}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

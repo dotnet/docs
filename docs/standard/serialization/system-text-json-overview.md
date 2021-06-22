@@ -54,8 +54,6 @@ For information about security threats that were considered when designing <xref
 * <xref:System.Text.Json.Node.JsonNode>
 :::zone-end
 
-Use of `JsonDocument` from multiple threads requires that you call <xref:System.Text.Json.JsonElement.Clone%2A> on each <xref:System.Text.Json.JsonElement>.
-
 ## Additional resources
 
 * [How to use the library](system-text-json-how-to.md)

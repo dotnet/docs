@@ -82,7 +82,7 @@ await foreach (string element in elements)
 }
 ```
 
-On an iteration of the `await foreach` loop, the <xref:System.Collections.IAsyncEnumerator.MoveNextAsync%2A> method is called for `elements`. The <xref:System.Threading.Tasks.ValueTask%601?displayProperty=nameWithType> return by `MoveNext` completes when the next `yield return` is reached.
+On an iteration of the `await foreach` loop, the <xref:System.Collections.Generic.IAsyncEnumerator%601.MoveNextAsync%2A?displayProperty=nameWithType> method is called for `elements`. The <xref:System.Threading.Tasks.ValueTask%601?displayProperty=nameWithType> return by `MoveNext` completes when the next `yield return` is reached.
 
 On each subsequent iteration of the `await foreach` loop, the execution of the iterator body continues from where it left off, again stopping when it reaches a `yield return` statement. The `await foreach` loop completes when the end of the iterator method or a `yield break` statement is reached.
 

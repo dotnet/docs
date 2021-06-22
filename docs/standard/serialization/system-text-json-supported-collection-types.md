@@ -103,7 +103,7 @@ The following examples use streams as a representation of any async source of da
 
 ### Streaming deserialization
 
-The <xref:System.Text.Json.JsonSerializer.DeserializeAsyncEnumerable%2A> method supports streaming deserialization, as shown in the following example:
+The `DeserializeAsyncEnumerable` method supports streaming deserialization, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-supported-collection-types/csharp/IAsyncEnumerableDeserialize.cs" highlight="15":::
 
@@ -113,7 +113,7 @@ The <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method supports `
 
 :::code language="csharp" source="snippets/system-text-json-supported-collection-types/csharp/IAsyncEnumerableDeserializeNonStreaming.cs" highlight="19":::
 
-In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in memory before returning the deserialized object. This behavior is necessary because the deserializer needs to have read the entire JSON payload before returning a result.
+In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in memory before returning the deserialized object. This behavior is necessary because the deserializer needs to read the entire JSON payload before returning a result.
 
 ::: zone-end
 

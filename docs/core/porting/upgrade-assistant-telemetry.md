@@ -2,7 +2,7 @@
 title: Upgrade Assistant Telemetry
 description: Learn about telemetry collected by the Upgrade Assistant.
 author: tasou
-ms.date: 06/03/2021
+ms.date: 06/21/2021
 ---
 # Upgrade Assistant telemetry
 
@@ -12,6 +12,59 @@ The [Upgrade Assistant](./upgrade-assistant-overview.md) includes a telemetry fe
 
 The Upgrade Assistant telemetry feature is enabled by default. To opt out of the telemetry feature, set the `DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT` environment variable to `1` or `true`.
 
+### [Console](#tab/console)
+
+Create and assign persisted environment variable, given the value.
+
+```console
+:: Assigns the env var to the value
+setx DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT="1"
+```
+
+In a new instance of the **Command Prompt**, read the environment variable.
+
+```console
+:: Prints the env var value
+echo %DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT%
+```
+
+### [PowerShell](#tab/powershell)
+
+Create and assign persisted environment variable, given the value.
+
+```powershell
+# Assigns the env var to the value
+[System.Environment]::SetEnvironmentVariable('DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT', '1', 'User')
+```
+
+In a new instance of the **Windows PowerShell**, read the environment variable.
+
+```powershell
+# Prints the env var value
+[System.Environment]::GetEnvironmentVariable('DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT')
+```
+
+### [Bash](#tab/bash)
+
+Create and assign persisted environment variable, given the value.
+
+```Bash
+# Assigns the env var to the value
+echo export DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT="1" >> /etc/environment && source /etc/environment
+```
+
+In a new instance of the **Bash**, read the environment variable.
+
+```Bash
+# Prints the env var value
+echo "${DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT}"
+
+# Or use printenv:
+# printenv DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT
+```
+
+---
+
 ## Disclosure
 
 The Upgrade Assistant displays text similar to the following when you first run the tool. Text may vary slightly depending on the version of the tool you're running. This "first run" experience is how Microsoft notifies you about data collection.
@@ -19,7 +72,10 @@ The Upgrade Assistant displays text similar to the following when you first run 
 ```console
 Telemetry
 ---------
-The .NET tools collect usage data in order to help us improve your experience. It is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
+The .NET tools collect usage data in order to help us improve your experience.
+It is collected by Microsoft and shared with the community. You can opt-out of
+telemetry by setting the DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT environment
+variable to '1' or 'true' using your favorite shell.
 ```
 
 To suppress the "first run" experience text, set the `DOTNET_UPGRADEASSISTANT_SKIP_FIRST_TIME_EXPERIENCE` environment variable to `1` or `true`.

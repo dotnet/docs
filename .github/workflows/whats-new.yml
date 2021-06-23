@@ -55,17 +55,15 @@ jobs:
         env:
           GitHubKey: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          dotnet whatsnew \
-            --owner ${{ github.repository_owner }} \
-            --repo ${{ github.repository }} \
-            --startdate ${{ new Date(new Date().getFullYear(), new Date().getMonth() - 1, 1).toLocaleDateString() }} \
-            --enddate ${{ new Date(new Date().getFullYear(), new Date().getMonth(), 0).toLocaleDateString()}} \
-            --savedir /docs/whats-new
+          ./.github/workflows/dependencies/run-dotnet-whatsnew.sh \
+             ${{ github.repository_owner }} \
+             ${{ github.repository }} \
+             '/docs/whats-new'
 
       # Create the PR for the new article
       - name: create-pull-request
         uses: peter-evans/create-pull-request@v3.10.0
         with:
-          title: 'What''s new for ${{ ["January","February","March","April","May","June","July","August","September","October","November","December"][new Date(new Date().getFullYear(), new Date().getMonth() - 1, 1).getMonth()] }}'
+          title: 'What''s new article'
           commit-message: 'Bot 🤖 generated "What''s new article"'
           body: 'Automated creation of What''s new article.'

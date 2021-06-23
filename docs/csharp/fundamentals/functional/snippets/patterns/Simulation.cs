@@ -31,7 +31,7 @@ namespace patterns
                Operation.Start => StartSystem(),
                Operation.Stop => StopSystem(),
                Operation.Reset => ResetToReady(),
-               _ => throw new ArgumentException(nameof(command), "Invalid enum value for command")
+               _ => throw new ArgumentException(nameof(command), "Invalid enum value for command"),
            };
         // </PerformOperation>
 

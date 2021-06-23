@@ -131,7 +131,7 @@ class Program
 
         var handler = new HttpClientHandler();
         handler.ClientCertificates.Add(cert);
-        var httpClient = new HttpClient(handler);
+        using HttpClient httpClient = new(handler);
 
         var channel = GrpcChannel.ForAddress("https://localhost:5001/", new GrpcChannelOptions
         {

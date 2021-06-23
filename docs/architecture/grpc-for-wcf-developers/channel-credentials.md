@@ -118,7 +118,7 @@ class Program
 }
 ```
 
-### Loading a client certificate from certificate and private key .PEM files
+### Load a client certificate from certificate and private key .PEM files
 ```csharp
 class Program
 {

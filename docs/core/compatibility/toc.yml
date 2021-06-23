@@ -75,7 +75,7 @@ items:
           href: core-libraries/6.0/hosting-exception-handling.md
       - name: JIT compiler
         items:
-        - name: Coerce call arguments according to ECMA-33
+        - name: Call argument coercion
           href: jit/6.0/coerce-call-arguments-ecma-335.md
       - name: Networking
         items:
@@ -631,7 +631,7 @@ items:
       items:
       - name: .NET 6
         items:
-        - name: Coerce call arguments according to ECMA-33
+        - name: Call argument coercion
           href: jit/6.0/coerce-call-arguments-ecma-335.md
     - name: MSBuild
       items:

@@ -4,6 +4,8 @@ description: Learn about the versioning relationship between the .NET SDK and MS
 author: stebon
 ms.date: 06/10/2021
 ---
+# Overview
+
 Understanding the versioning of the SDK and how it relates to Visual Studio and MSBuild can frequently be confusing. MSBuild versions with VS but is also included in the SDK. The SDK has a minimum version of MSBuild that it works with and it won't load in a VS that is older than it supports.
 
 ## Versioning
@@ -18,19 +20,26 @@ The support timeframe for the SDK typically matches the VS it's included in.
 
 | SDK Version      | MSBuild/VS version | Minimum required MSBuild/VS Version | Ship date    | Lifecycle |
 |------------------|--------------------|-------------------------------------|--------------|-----------|
-| 2.1.5xx          | 15.9               | 15.3                                | Nov �18      | Aug �21*  |
-| 2.1.8xx          | 16.2 (No VS)       | 16.0                                | July �19     | Aug �21   |
-| 3.1.1xx          | 16.4               | 16.3                                | Dec �19      | Dec �22   |
-| 3.1.4xx          | 16.7               | 16.7                                | Aug �20      | Dec �22   |
-| 5.0.1xx          | 16.8               | 16.8                                | November �20 | Mar �21   |
-| 5.0.2xx          | 16.9               | 16.8                                | March 21     | Aug �22   |
-| 5.0.3xx          | 16.10              | 16.8                                | May 21       | Aug �21   |
-| 5.0.4xx          | 16.11              | 16.8                                | Aug 21       | Feb �22*  |
-| 6.0.100-preview4 | 16.10 (No VS)      | 16.10-preview3                      | 05/25/21     | N/A       |
-| 6.0.100-preview5 | 17.0-preview 1     | 16.10                               | June         | N/A       |
-| 6.0.100          | 17.0               | 16.10**                             | November     |
+| 2.1.5xx          | 15.9               | 15.3                                | Nov '18      | Aug '21*  |
+| 2.1.8xx          | 16.2 (No VS)       | 16.0                                | July '19     | Aug '21   |
+| 3.1.1xx          | 16.4               | 16.3                                | Dec '19      | Dec '22   |
+| 3.1.4xx          | 16.7               | 16.7                                | Aug '20      | Dec '22   |
+| 5.0.1xx          | 16.8               | 16.8                                | November '20 | Mar '21   |
+| 5.0.2xx          | 16.9               | 16.8                                | March '21     | Aug '22   |
+| 5.0.3xx          | 16.10              | 16.8                                | May '21       | Aug '21   |
+| 5.0.4xx          | 16.11              | 16.8                                | Aug '21       | Feb '22*  |
+| 6.0.100-preview4 | 16.10 (No VS)      | 16.10-preview3                      | May '21     | N/A       |
+| 6.0.100-preview5 | 17.0-preview 1     | 16.10                               | June '21        | N/A       |
+| 6.0.100          | 17.0               | 16.10**                             | Nov. '21    |
 
 *MSbuild/VS supported for longer
-**The goal is on .NET 6 release day to be functional with at most 16.11 (so customers aren't forced to update VS versions on day 0)
 
-We've tried to reduce the frequency that we make breaking changes but cannot guarantee that each new major SDK version won't require at least some upgrade of the version of VS/MSBuild so that should be expected at least once a year.
+**Customers should not have to upgrade to 17.0 on the day .NET 6 releases, this is the current value and will likely be 16.11 by release.
+
+We expect breaking changes requiring new MSBuild and VS versions expected at least once a year for new SDK version bands. We do not anticipate version compat breaking changes in feature bands anymore.
+
+## Reference
+
+- [.NET Core and .NET 5 official support policy](/platform/support/policy/dotnet-core)
+- [Microsoft .NET and .NET Core](/lifecycle/products/microsoft-net-and-net-core)
+- [.NET Downloads (Linux, macOS, and Windows)](/download/dotnet)

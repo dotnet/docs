@@ -6,7 +6,7 @@ name: 'generate what''s new article'
 on:
   # Triggers the workflow on push or pull request events but only for the default branch
   schedule:
-  - cron: '0 0 1 * *'
+  - cron: '0 0 1 * *' # The first of every month
   workflow_dispatch:
     inputs:
       reason:
@@ -16,6 +16,7 @@ on:
 
 env:
   DOTNET_VERSION: '5.0.301' # set this to the dot net version to use
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:

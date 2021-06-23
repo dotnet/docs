@@ -45,7 +45,7 @@ jobs:
         run: dotnet --info
 
       # Install dotnet-whatsnew global tool
-      - name: Install LocateProjects tool
+      - name: Install dotnet-whatsnew tool
         run: |
           dotnet tool install --global --add-source ./.github/workflows/dependencies/dotnet-whatsnew.1.0.2.nupkg dotnet-whatsnew
 

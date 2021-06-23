@@ -55,10 +55,7 @@ jobs:
         env:
           GitHubKey: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          ./.github/workflows/dependencies/run-dotnet-whatsnew.sh \
-             'dotnet' \         # owner
-             'docs' \           # repo
-             '/docs/whats-new'  # savedir
+          ./.github/workflows/dependencies/run-dotnet-whatsnew.sh -o dotnet -r docs -s '/docs/whats-new'
 
       # Create the PR for the new article
       - name: create-pull-request

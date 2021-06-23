@@ -12,9 +12,19 @@ declare -r ENDDATE=$(date "+%F" -d "$STARTDATE +1 month -1 day");
 
 echo "From $STARTDATE to $ENDDATE"
 
+while getopts o:r:s: option
+do
+case "${option}"
+in
+o) OWNER=${OPTARG};;
+r) REPO=${OPTARG};;
+s) SAVEDIR=${OPTARG};;
+esac
+done
+
 dotnet whatsnew \
-    --owner $1 \
-    --repo $2 \
+    --owner $OWNER \
+    --repo $REPO \
     --startdate $STARTDATE \
     --enddate $ENDDATE \
-    --savedir $3
+    --savedir $SAVEDIR

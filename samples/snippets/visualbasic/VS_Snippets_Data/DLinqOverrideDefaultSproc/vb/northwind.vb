@@ -21,8 +21,8 @@ Imports System.Linq.Expressions
 Imports System.Reflection
 
 
-<System.Data.Linq.Mapping.DatabaseAttribute(Name:="northwnd")>  _
-Partial Public Class Northwnd
+<System.Data.Linq.Mapping.DatabaseAttribute(Name:="northwind")>  _
+Partial Public Class Northwind
 	Inherits System.Data.Linq.DataContext
 	
 	Private Shared mappingSource As System.Data.Linq.Mapping.MappingSource = New AttributeMappingSource
@@ -3932,7 +3932,7 @@ Partial Public Class TenMostExpensiveProductsResult
 End Class
 
 ' <Snippet2>
-Public Class NorthwindThroughSprocs : Inherits Northwnd
+Public Class NorthwindThroughSprocs : Inherits Northwind
     Sub New()
         MyBase.New("")
     End Sub

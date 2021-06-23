@@ -45,6 +45,8 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0022][0022] | Warning | The <xref:System.Security.Cryptography.Rijndael> and <xref:System.Security.Cryptography.RijndaelManaged> types are obsolete. Use <xref:System.Security.Cryptography.Aes> instead. |
 | [SYSLIB0023][0023] | Warning | <xref:System.Security.Cryptography.RNGCryptoServiceProvider> is obsolete. To generate a random number, use one of the <xref:System.Security.Cryptography.RandomNumberGenerator> static methods instead. |
 | [SYSLIB0024][0024] | Warning | Creating and unloading [AppDomains](xref:System.AppDomain) is not supported and throws an exception. |
+| [SYSLIB0025][0025] | Warning | <xref:System.Runtime.CompilerServices.SuppressIldasmAttribute> has no effect in .NET 6+. |
+| [SYSLIB0026][0026] | Warning | <xref:System.Security.Cryptography.X509Certificates.X509Certificate> and <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> are immutable. Use the appropriate constructor to create a new certificate. |
 
 <!-- Include adds ## Suppress warnings (H2 heading) -->
 [!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]
@@ -73,3 +75,5 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 [0022]: syslib0022.md
 [0023]: syslib0023.md
 [0024]: syslib0024.md
+[0025]: syslib0025.md
+[0026]: syslib0026.md

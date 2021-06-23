@@ -302,7 +302,7 @@ public interface IEventBus
     void Publish(IntegrationEvent integrationEvent);
 
     void Subscribe<T, THandler>()
-        where TEvent : IntegrationEvent
+        where T : IntegrationEvent
         where THandler : IIntegrationEventHandler<T>;
 }
 ```

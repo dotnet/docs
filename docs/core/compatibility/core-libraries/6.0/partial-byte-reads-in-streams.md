@@ -74,9 +74,9 @@ In general, code should:
 - <xref:System.IO.Compression.GZipStream.Read%2A?displayProperty=fullName>
 - <xref:System.IO.Compression.GZipStream.ReadAsync%2A?displayProperty=fullName>
 - <xref:System.IO.Compression.GZipStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)?displayProperty=fullName>
-- <xref:System.IO.Compression.CryptoStream.Read%2A?displayProperty=fullName>
-- <xref:System.IO.Compression.CryptoStream.ReadAsync%2A?displayProperty=fullName>
-- <xref:System.IO.Compression.CryptoStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)?displayProperty=fullName>
+- <xref:System.Security.Cryptography.CryptoStream.Read%2A?displayProperty=fullName>
+- <xref:System.Security.CryptoStream.ReadAsync%2A?displayProperty=fullName>
+- <xref:System.Security.CryptoStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)?displayProperty=fullName>
 
 <!--
 

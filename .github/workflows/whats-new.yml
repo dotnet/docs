@@ -55,7 +55,7 @@ jobs:
         env:
           GitHubKey: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          ./.github/workflows/dependencies/run-dotnet-whatsnew.sh \
+          sudo ./.github/workflows/dependencies/run-dotnet-whatsnew.sh \
              ${{ github.repository_owner }} \
              ${{ github.repository }} \
              '/docs/whats-new'

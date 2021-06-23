@@ -92,7 +92,7 @@ public class Startup
 
 With the `Grpc.Net.Client` package, you configure certificates on an <xref:System.Net.Http.HttpClient> instance that is provided to the `GrpcChannel` used for the connection.
 
-### Loading a client certificate from a .PFX file
+### Load a client certificate from a .PFX file
 ```csharp
 class Program
 {

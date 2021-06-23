@@ -21,10 +21,7 @@ Previously, you were able to upgrade the packages to the latest version, even if
 
 ## Reason for change
 
-Continuing to build for all frameworks increases the complexity and size of a package. In the past, .NET solved this issue by *harvesting*, which means:
-
-- Build only for current frameworks.
-- During build, download the earlier version of the package and harvest the binaries for earlier frameworks .NET no longer builds for.
+Continuing to build for all frameworks increases the complexity and size of a package. In the past, .NET solved this issue by building only for current frameworks and *harvesting* binaries for older frameworks. Harvesting means that during build, the earlier version of the package is downloaded and the binaries are extracted.
 
 While consuming a harvested binary means that you can always update without worrying that a framework is dropped, it also means that you don't get any bug fixes or new features. In other words, harvested assets can't be serviced. That's hidden from you because you're able to keep updating the package to a later version even though you're consuming the same old binary that's no longer updated.
 

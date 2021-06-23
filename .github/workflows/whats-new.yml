@@ -47,7 +47,7 @@ jobs:
       # Install dotnet-whatsnew global tool
       - name: Install dotnet-whatsnew tool
         run: |
-          dotnet tool install --global --add-source ./.github/workflows/dependencies/dotnet-whatsnew.1.0.2.nupkg dotnet-whatsnew
+          dotnet tool install --global --add-source ./.github/workflows/dependencies/dotnet-whatsnew.1.0.2.nupkg whatsnew
 
       # Run dotnet-whatsnew tool
       - name: Generate what's new

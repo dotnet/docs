@@ -131,7 +131,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
 </system.diagnostics>  
 ```  
   
- For more information about creating user-defined trace sources, see [Extending Tracing](../../samples/extending-tracing.md).  
+ For more information about creating user-defined trace sources, see [Extending Tracing](/previous-versions/dotnet/framework/wcf/samples/extending-tracing).  
   
 ## Configuring Trace Listeners to Consume Traces  
 

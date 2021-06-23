@@ -49,7 +49,7 @@ items:
     - name: macOS Notarization issues
       href: ../core/install/macos-notarization-issues.md
     - name: Troubleshoot .NET Package mix ups on Linux
-      href: ../core/install/linux-package-mixup.md 
+      href: ../core/install/linux-package-mixup.md
     - name: How to check .NET versions
       href: ../core/install/how-to-detect-installed-versions.md
     - name: Install localized IntelliSense
@@ -270,7 +270,7 @@ items:
         - name: dotnet nuget verify
           href: ../core/tools/dotnet-nuget-verify.md
         - name: dotnet nuget trust
-          href: ../core/tools/dotnet-nuget-trust.md          
+          href: ../core/tools/dotnet-nuget-trust.md
       - name: dotnet pack
         href: ../core/tools/dotnet-pack.md
       - name: dotnet publish
@@ -399,6 +399,10 @@ items:
         href: syslib-diagnostics/syslib0023.md
       - name: SYSLIB0024
         href: syslib-diagnostics/syslib0024.md
+      - name: SYSLIB0025
+        href: syslib-diagnostics/syslib0025.md
+      - name: SYSLIB0026
+        href: syslib-diagnostics/syslib0026.md
     - name: Source-generated code
       items:
       - name: Overview
@@ -548,11 +552,11 @@ items:
     - name: Logging and tracing
       items:
       - name: Overview
-        displayName: "logging and tracing"
+        displayName: logging tracing
         href: ../core/diagnostics/logging-tracing.md
       - name: Well-known event providers
         href: ../core/diagnostics/well-known-event-providers.md
-      - name: Distributed Tracing
+      - name: Distributed tracing
         items:
         - name: Overview
           href: ../core/diagnostics/distributed-tracing.md
@@ -564,6 +568,13 @@ items:
           href: ../core/diagnostics/distributed-tracing-collection-walkthroughs.md
     - name: Symbols
       href: ../core/diagnostics/symbols.md
+    - name: Microsoft.Diagnostics.NETCore.Client library
+      items:
+      - name: Overview and examples
+        displayName: diagnostics client library
+        href: ../core/diagnostics/diagnostics-client-library.md
+      - name: API reference
+        href: ../core/diagnostics/microsoft-diagnostics-netcore-client.md
     - name: Runtime events
       items:
       - name: Overview
@@ -1802,17 +1813,17 @@ items:
           href: ../standard/serialization/system-text-json-ignore-properties.md
         - name: Allow invalid JSON
           href: ../standard/serialization/system-text-json-invalid-json.md
-        - name: Handle overflow JSON
+        - name: Handle overflow JSON, use JsonElement or JsonNode
           href: ../standard/serialization/system-text-json-handle-overflow.md
-        - name: Preserve references
+        - name: Preserve references, handle circular references
           href: ../standard/serialization/system-text-json-preserve-references.md
-        - name: Immutable types and non-public accessors
+        - name: Deserialize to immutable types, non-public accessors
           href: ../standard/serialization/system-text-json-immutability.md
         - name: Polymorphic serialization
           href: ../standard/serialization/system-text-json-polymorphism.md
-      - name: How to use DOM, Utf8JsonReader, Utf8JsonWriter
+      - name: Use DOM, Utf8JsonReader, Utf8JsonWriter
         href: ../standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md
-      - name: How to migrate from Newtonsoft.Json
+      - name: Migrate from Newtonsoft.Json
         href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
       - name: Supported collection types
         href: ../standard/serialization/system-text-json-supported-collection-types.md
@@ -1820,7 +1831,7 @@ items:
         items:
         - name: Customize character encoding
           href: ../standard/serialization/system-text-json-character-encoding.md
-        - name: Custom converters
+        - name: Write custom converters
           href: ../standard/serialization/system-text-json-converters-how-to.md
     - name: Binary serialization
       items:
@@ -2032,6 +2043,9 @@ items:
       href: ../core/extensions/windows-service.md
     - name: Implement the IHostedService interface
       href: ../core/extensions/timer-service.md
+    - name: Deploy a Worker Service to Azure
+      href: ../core/extensions/cloud-service.md
+
 - name: Data access
   items:
   - name: LINQ

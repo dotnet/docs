@@ -88,7 +88,7 @@ An example *appsettings.xml* file with various configuration settings follows:
 
 :::code language="xml" source="snippets/configuration/console-xml/appsettings.xml":::
 
-Repeating elements that use the same element name work if the `name` attribute is used to distinguish the elements:
+In .NET 5 and earlier versions, add the `name` attribute to distinguish repeating elements that use the same element name. In .NET 6 and later versions, the XML configuration provider automatically indexes repeating elements. That means you don't have to specify the `name` attribute, except if you want the "0" index in the key and there's only one element.
 
 :::code language="xml" source="snippets/configuration/console-xml/repeating-example.xml":::
 

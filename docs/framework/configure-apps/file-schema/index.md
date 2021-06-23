@@ -2,7 +2,7 @@
 description: "Learn more about: Configuration file schema for the .NET Framework"
 title: "Configuration file schema for the .NET Framework"
 ms.date: "05/01/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - ".NET Framework application configuration, configuration schema"
   - "machine configuration files"
   - "application configuration files, schema"
@@ -81,9 +81,6 @@ All elements that enable you to configure WCF service and client applications.
 
 [WCF Directive Syntax](./wcf-directive/index.md)\
 Describes the `@ServiceHost` directive, which defines page-specific attributes used by the .svc compiler.
-
-[WIF Configuration Schema](windows-identity-foundation/index.md)\
-All elements of the Windows Identity Foundation (WIF) configuration schema.
 
 ## Related sections
 

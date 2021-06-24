@@ -17,12 +17,21 @@ ms.topic: how-to
 
 # How to use the DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
 
-:::zone pivot="dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
+:::zone pivot="dotnet-5-0,dotnet-core-3-1"
 <xref:System.Text.Json.JsonDocument> provides the ability to build a read-only Document Object Model (DOM) by using `Utf8JsonReader`. The DOM provides random access to data in a JSON payload. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides array and object enumerators along with APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property.
 :::zone-end
 
 :::zone pivot="dotnet-6-0"
-Documentation for mutable DOM support is being developed. Until it's added, see the [.NET 6 Preview 4 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-4/#system-text-json-writable-dom-feature).
+A JSON Document Object Model (DOM) provides random access to data in a JSON payload. Creating a DOM is an alternative to deserialization:
+
+* When you don't have a type to deserialize into.
+* When the JSON you receive doesn't have a fixed schema and must be inspected to know what it contains.
+
+`System.Text.Json` provides two ways to build a JSON DOM:
+
+* <xref:System.Text.Json.JsonDocument> provides the ability to build a read-only DOM by using `Utf8JsonReader`. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides array and object enumerators along with APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property. For more information, see [Use JsonDocument for access to data](#use-jsondocument-for-access-to-data) later in this article.
+
+* `JsonNode` and the classes that derive from it in the `System.Text.Json.Node` namespace provide the ability to create a mutable DOM. For more information, see [Use JsonNode for access to data](#use-jsonnode-for-access-to-data) later in the article.
 :::zone-end
 
 :::zone pivot="dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
@@ -38,6 +47,18 @@ The following sections show how to use these APIs for reading and writing JSON.
 > * [JsonDocument and JsonElement compared to JToken (like JObject, JArray)](system-text-json-migrate-from-newtonsoft-how-to.md#jsondocument-and-jsonelement-compared-to-jtoken-like-jobject-jarray)
 > * [Utf8JsonReader compared to JsonTextReader](system-text-json-migrate-from-newtonsoft-how-to.md#utf8jsonreader-compared-to-jsontextreader)
 > * [Utf8JsonWriter compared to JsonTextWriter](system-text-json-migrate-from-newtonsoft-how-to.md#utf8jsonwriter-compared-to-jsontextwriter)
+
+## Use JsonNode for access to data
+
+The following example shows how to:
+
+* Parse a JSON object, array, or value into a `JsonNode`.
+* Get a JSON value from a `JsonNode`, as a `JsonValue` or strongly typed (as an `int`, `Date`, and so forth).
+* Get a `JsonObject` or a `JsonArray` from a `JsonNode`.
+* Get an array element from a `JsonArray`.
+* Get 
+
+
 
 ## Use JsonDocument for access to data
 

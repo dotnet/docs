@@ -119,7 +119,6 @@ A Storage account can be created using the [Azure portal](https://portal.azure.c
 :::row:::
    :::column span="3":::
       Upon creation of your Azure storage account, you will see a page indicating "Your deployment is complete". Select the **Go to resource** button on the page to view your Storage account.
-
       Do not close your browser as you will need to copy information about your Azure Storage account in the next step.
    :::column-end:::
    :::column span="":::
@@ -405,6 +404,5 @@ As shown in this example, it is suggested the validate the existence of the cont
 ## Clean up resources
 
 When you are finished with the sample application, you should remove all Azure resources related to this article from your Azure account.  You can do this by deleting the resource group.
-
 
 ## Next Steps

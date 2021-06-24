@@ -98,6 +98,7 @@ namespace JsonNodeExample
             //datesAvailable JSON =["2019-08-01T00:00:00", "2019-08-02T00:00:00"]
 
             // Get an array element value from a JsonArray
+
             JsonNode firstDateAvailable = datesAvailable[0];
             Console.WriteLine($"Type={firstDateAvailable.GetType()}");
             Console.WriteLine($"JSON={firstDateAvailable.ToJsonString()}");

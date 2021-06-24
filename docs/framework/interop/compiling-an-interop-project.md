@@ -35,7 +35,7 @@ COM interop projects that reference one or more assemblies containing imported C
 ## See also
 
 - [Exposing COM Components to the .NET Framework](exposing-com-components.md)
-- [Language Independence and Language-Independent Components](../../standard/language-independence-and-language-independent-components.md)
+- [Language Independence and Language-Independent Components](../../standard/language-independence.md)
 - [Using COM Types in Managed Code](/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100))
 - [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio](../../standard/assembly/embed-types-visual-studio.md)
 - [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)

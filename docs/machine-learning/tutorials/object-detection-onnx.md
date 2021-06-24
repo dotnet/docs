@@ -6,6 +6,7 @@ ms.author: luquinta
 ms.date: 04/13/2021
 ms.topic: tutorial
 ms.custom: mvc
+recommendations: false
 #Customer intent: As a developer, I want to use ML.NET so that I can use a pre-trained model in an object detection scenario to detect objects in images using ONNX.
 ---
 
@@ -102,15 +103,9 @@ Now that you have a general understanding of what ONNX is and how Tiny YOLOv2 wo
 
 1. Copy the `assets` directory into your *ObjectDetection* project directory. This directory and its subdirectories contain the image files (except for the Tiny YOLOv2 model, which you'll download and add in the next step) needed for this tutorial.
 
-1. Download the [Tiny YOLOv2 model](https://onnxzoo.blob.core.windows.net/models/opset_8/tiny_yolov2/tiny_yolov2.tar.gz) from the [ONNX Model Zoo](https://github.com/onnx/models/tree/master/vision/object_detection_segmentation/tiny-yolov2), and unzip.
+1. Download the Tiny YOLOv2 model from the [ONNX Model Zoo](https://github.com/onnx/models/tree/master/vision/object_detection_segmentation/tiny-yolov2).
 
-    Open the command prompt and enter the following command:
-
-    ```shell
-    tar -xvzf tiny_yolov2.tar.gz
-    ```
-
-1. Copy the extracted `model.onnx` file from the directory just unzipped into your *ObjectDetection* project `assets\Model` directory and rename it to `TinyYolo2_model.onnx`. This directory contains the model needed for this tutorial.
+1. Copy the `model.onnx` file into your *ObjectDetection* project `assets\Model` directory and rename it to `TinyYolo2_model.onnx`. This directory contains the model needed for this tutorial.
 
 1. In Solution Explorer, right-click each of the files in the asset directory and subdirectories and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 

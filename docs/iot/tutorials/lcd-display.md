@@ -6,6 +6,7 @@ ms.author: casoper
 ms.date: 11/13/2020
 ms.topic: tutorial
 ms.prod: dotnet
+recommendations: false
 ---
 <!--markdownlint-disable DOCSMD011 -->
 # Display text on an LCD

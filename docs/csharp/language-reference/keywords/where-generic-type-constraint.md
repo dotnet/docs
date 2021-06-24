@@ -35,7 +35,7 @@ The `where` clause can specify that the type is a `class` or a `struct`. The `st
 
 In a nullable context in C# 8.0 and later, the `class` constraint requires a type to be a non-nullable reference type. To allow nullable reference types, use the `class?` constraint, which allows both nullable and non-nullable reference types.
 
-The `where` clause may include the `notnull` constraint. The `notnull` constraint limits the type parameter to non-nullable types. That type may be a [value type](../builtin-types/value-types.md) or a non-nullable reference type. The `notnull` constraint is available starting in C# 8.0 for code compiled in a [`nullable enable` context](../../nullable-references.md#nullable-contexts). Unlike other constraints, if a type argument violates the `notnull` constraint, the compiler generates a warning instead of an error. Warnings are only generated in a `nullable enable` context.
+The `where` clause may include the `notnull` constraint. The `notnull` constraint limits the type parameter to non-nullable types. The type may be a [value type](../builtin-types/value-types.md) or a non-nullable reference type. The `notnull` constraint is available starting in C# 8.0 for code compiled in a [`nullable enable` context](../../nullable-references.md#nullable-contexts). Unlike other constraints, if a type argument violates the `notnull` constraint, the compiler generates a warning instead of an error. Warnings are only generated in a `nullable enable` context.
 
 The addition of nullable reference types introduces a potential ambiguity in the meaning of `T?` in generic methods. If `T` is a `struct`, `T?` is the same as <xref:System.Nullable%601?displayProperty=nameWithType>. However, if `T` is a reference type, `T?` means that `null` is a valid value. The ambiguity arises because overriding methods can't include constraints.  The new `default` constraint resolves this ambiguity. You'll add it when a base class or interface declares two overloads of a method, one that specifies the `struct` constraint, and one that doesn't have either the `struct` or `class` constraint applied:
 
@@ -84,6 +84,6 @@ For details on the syntax and use of constraints, see [Constraints on Type Param
 
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
-- [Introduction to Generics](../../programming-guide/generics/index.md)
+- [Introduction to Generics](../../fundamentals/types/generics.md)
 - [new Constraint](./new-constraint.md)
 - [Constraints on Type Parameters](../../programming-guide/generics/constraints-on-type-parameters.md)

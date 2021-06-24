@@ -12,7 +12,7 @@ dev_langs:
 
 ## C# preferences
 
-The style rules in this section concern the use of [pattern matching](../../../csharp/pattern-matching.md) in C#.
+The style rules in this section concern the use of [pattern matching](../../../csharp/fundamentals/functional/pattern-matching.md) in C#.
 
 - [Use pattern matching to avoid `as` followed by a `null` check (IDE0019](ide0019.md)
 - [Use pattern matching to avoid `is` check followed by a cast (IDE0020 and IDE0038)](ide0020-ide0038.md)

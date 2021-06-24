@@ -19,8 +19,8 @@ The following table summarizes the restrictions on declared accessibility levels
 
 |Context|Remarks|
 |-------------|-------------|
-|[Classes](../../programming-guide/classes-and-structs/classes.md)|The direct base class of a class type must be at least as accessible as the class type itself.|
-|[Interfaces](../../programming-guide/interfaces/index.md)|The explicit base interfaces of an interface type must be at least as accessible as the interface type itself.|
+|[Classes](../../fundamentals/types/classes.md)|The direct base class of a class type must be at least as accessible as the class type itself.|
+|[Interfaces](../../fundamentals/types/interfaces.md)|The explicit base interfaces of an interface type must be at least as accessible as the interface type itself.|
 |[Delegates](../../programming-guide/delegates/index.md)|The return type and parameter types of a delegate type must be at least as accessible as the delegate type itself.|
 |[Constants](../../programming-guide/classes-and-structs/constants.md)|The type of a constant must be at least as accessible as the constant itself.|
 |[Fields](../../programming-guide/classes-and-structs/fields.md)|The type of a field must be at least as accessible as the field itself.|

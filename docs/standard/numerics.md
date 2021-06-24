@@ -52,7 +52,7 @@ Each integer type supports a set of standard arithmetic operators. The <xref:Sys
 You can also work with the individual bits in an integer value by using the <xref:System.BitConverter?displayProperty=nameWithType> class.
 
 > [!NOTE]
-> The unsigned integer types are not CLS-compliant. For more information, see [Language Independence and Language-Independent Components](language-independence-and-language-independent-components.md).
+> The unsigned integer types are not CLS-compliant. For more information, see [Language independence and language-independent components](language-independence.md).
 
 ## BigInteger
 

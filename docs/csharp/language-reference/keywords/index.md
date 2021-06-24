@@ -35,7 +35,7 @@ The first table in this topic lists keywords that are reserved identifiers in an
         [decimal](../builtin-types/floating-point-numeric-types.md)  
         [default](default.md)  
         [delegate](../builtin-types/reference-types.md)  
-        [do](do.md)  
+        [do](../statements/iteration-statements.md#the-do-statement)  
         [double](../builtin-types/floating-point-numeric-types.md)  
         [else](if-else.md)  
         [enum](../builtin-types/enum.md)  
@@ -48,8 +48,8 @@ The first table in this topic lists keywords that are reserved identifiers in an
         [finally](try-finally.md)  
         [fixed](fixed-statement.md)  
         [float](../builtin-types/floating-point-numeric-types.md)  
-        [for](for.md)  
-        [foreach](foreach-in.md)  
+        [for](../statements/iteration-statements.md#the-for-statement)  
+        [foreach](../statements/iteration-statements.md#the-foreach-statement)  
         [goto](goto.md)  
         [if](if-else.md)  
         [implicit](../operators/user-defined-conversion-operators.md)  
@@ -101,7 +101,7 @@ The first table in this topic lists keywords that are reserved identifiers in an
         [virtual](virtual.md)  
         [void](../builtin-types/void.md)  
         [volatile](volatile.md)  
-        [while](while.md)  
+        [while](../statements/iteration-statements.md#the-while-statement)  
     :::column-end:::
 :::row-end:::
 
@@ -144,7 +144,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [orderby](orderby-clause.md)  
         [partial (type)](partial-type.md)  
         [partial (method)](partial-method.md)  
-        [record](../../programming-guide/classes-and-structs/records.md)  
+        [record](../../fundamentals/types/records.md)  
         [remove](remove.md)  
         [select](select-clause.md)  
     :::column-end:::

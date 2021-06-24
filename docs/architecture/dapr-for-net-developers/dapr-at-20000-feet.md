@@ -30,7 +30,7 @@ Figure 2-1 shows Dapr from 20,000 feet.
 ![Dapr at 20,000 feet](./media/dapr-at-20000-feet/dapr-high-level.png)
 **Figure 2-1**. Dapr at 20,000 feet.
 
-In the top row of the figure, note how Dapr provides language-specific SDKs for popular development platforms. Dapr v 1.0 includes supports Go, Node.js, Python, .NET, Java, and JavaScript. This book focuses on the Dapr .NET SDK, which also provides direct support for ASP.NET Core integration.
+In the top row of the figure, note how Dapr provides language-specific SDKs for popular development platforms. Dapr v1.0 includes support for Go, Node.js, Python, .NET, Java, and JavaScript. This book focuses on the Dapr .NET SDK, which also provides direct support for ASP.NET Core integration.
 
 While language-specific SDKs enhance the developer experience, Dapr is platform agnostic. Under the hood, Dapr's programming model exposes capabilities through standard HTTP/gRPC communication protocols. Any programming platform can call Dapr via its native HTTP and gRPC APIs.  
 
@@ -61,7 +61,7 @@ The following table describes the infrastructure services provided by each block
 | [Publish and subscribe](publish-subscribe.md) | Implement secure, scalable pub/sub messaging between services. |
 | [Bindings](bindings.md) | Trigger code from events raised by external resources with bi-directional communication. |
 | [Observability](observability.md) | Monitor and measure message calls across networked services. |
-| [Secrets](secrets.md) | Securely access external secret stores. |
+| [Secrets](secrets-management.md) | Securely access external secret stores. |
 | Actors | Encapsulate logic and data in reusable actor objects. |
 
 Building blocks abstract the implementation of distributed application capabilities from your services. Figure 2-3 shows this interaction.

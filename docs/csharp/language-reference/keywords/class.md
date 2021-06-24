@@ -62,9 +62,9 @@ A class can contain declarations of the following members:
 
 - [Delegates](../../programming-guide/delegates/index.md)
 
-- [Classes](../../programming-guide/classes-and-structs/classes.md)
+- [Classes](../../fundamentals/types/classes.md)
 
-- [Interfaces](../../programming-guide/interfaces/index.md)
+- [Interfaces](../../fundamentals/types/interfaces.md)
 
 - [Structure types](../builtin-types/struct.md)
 

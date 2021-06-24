@@ -110,12 +110,12 @@ namespace attributes
         }
 
         // <NotNullThrowHelper>
-        public static void ThrowWhenNull([NotNull] object value, string valueExpression = "") =>
+        public static void ThrowWhenNull([NotNull] object? value, string valueExpression = "") =>
             _ = value ?? throw new ArgumentNullException(valueExpression);
         // </NotNullThrowHelper>
 
         // <TestThrowHelper>
-        public static void LogMessage(string message)
+        public static void LogMessage(string? message)
         {
             ThrowWhenNull(message, nameof(message));
 

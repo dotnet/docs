@@ -14,11 +14,11 @@ Statements are program instructions. Except as described in the topics reference
 |Category|C# keywords|
 |--------------|------------------|
 |Selection statements|[if](if-else.md), [else](if-else.md), [switch](switch.md), [case](switch.md)|
-|Iteration statements|[do](do.md), [for](for.md), [foreach](foreach-in.md), [in](foreach-in.md), [while](while.md)|
+|[Iteration statements](../statements/iteration-statements.md)|`do`, `for`, `foreach`, `while`|
 |Jump statements|[break](break.md), [continue](continue.md), [default](switch.md), [goto](goto.md), [return](return.md), [yield](yield.md)|
 |Exception handling statements|[throw](throw.md), [try-catch](try-catch.md), [try-finally](try-finally.md), [try-catch-finally](try-catch-finally.md)|
 |[Checked and unchecked](checked-and-unchecked.md)|[checked](checked.md), [unchecked](unchecked.md)|
-[fixed statement](fixed-statement.md)|[fixed](fixed-statement.md)|
+|[fixed statement](fixed-statement.md)|[fixed](fixed-statement.md)|
 |[lock statement](lock-statement.md)|[lock](lock-statement.md)|
 
 ## See also

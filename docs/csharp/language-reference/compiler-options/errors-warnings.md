@@ -54,7 +54,7 @@ To get information about an error or warning, you can look up the error code in 
 The **TreatWarningsAsErrors** option treats all warnings as errors. You can also use the **TreatWarningsAsErrors** to set only some warnings as errors. If you turn on **TreatWarningsAsErrors**, you can use **TreatWarningsAsErrors** to list warnings that shouldn't be treated as errors.
 
 ```xml
-<TreatWarningsAsErrors></TreatWarningsAsErrors>
+<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 ```
 
 All warning messages are instead reported as errors. The build process halts (no output files are built). By default, **TreatWarningsAsErrors** isn't in effect, which means warnings don't prevent the generation of an output file. Optionally, if you want only a few specific warnings to be treated as errors, you may specify a comma-separated list of warning numbers to treat as errors. The set of all nullability warnings can be specified with the [**Nullable**](language.md#nullable) shorthand. Use [**WarningLevel**](#warninglevel) to specify the level of warnings that you want the compiler to display. Use [**DisabledWarnings**](#disabledwarnings) to disable certain warnings.

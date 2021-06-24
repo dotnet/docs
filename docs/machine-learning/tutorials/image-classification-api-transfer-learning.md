@@ -6,6 +6,7 @@ ms.author: luquinta
 ms.date: 04/13/2021
 ms.topic: tutorial
 ms.custom: mvc
+recommendations: false
 #Customer intent: As a developer, I want to use ML.NET so that I can use transfer learning in an image classification scenario to classify images using a pretrained TensorFlow model and ML.NET's Image Classification API.
 ---
 
@@ -90,7 +91,7 @@ Now that you have a general understanding of transfer learning and the Image Cla
     1. Search for **Microsoft.ML**.
     1. Select the **Install** button.
     1. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
-    1. Repeat these steps for the **Microsoft.ML.Vision**, **SciSharp.TensorFlow.Redist**, and **Microsoft.ML.ImageAnalytics** NuGet packages.
+    1. Repeat these steps for the **Microsoft.ML.Vision**, **SciSharp.TensorFlow.Redist** version **2.3.1**, and **Microsoft.ML.ImageAnalytics** NuGet packages.
 
 ### Prepare and understand the data
 

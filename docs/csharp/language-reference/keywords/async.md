@@ -58,7 +58,7 @@ To run the code as a Windows Store app:
 - Paste this code into the `MainPage` class in MainPage.xaml.cs.
 - Add using directives for System.Net.Http and System.Threading.Tasks.
 
-[!code-csharp[wpf-async](../../../../samples/snippets/csharp/language-reference/keywords/async/wpf/mainwindow.xaml.cs#1)]
+[!code-csharp[wpf-async](../../../../samples/snippets/csharp/language-reference/keywords/async/wpf/MainWindow.xaml.cs#1)]
 
 > [!IMPORTANT]
 > For more information about tasks and the code that executes while waiting for a task, see [Asynchronous programming with async and await](../../programming-guide/concepts/async/index.md). For a full console example that uses similar elements, see [Process asynchronous tasks as they complete (C#)](../../programming-guide/concepts/async/start-multiple-async-tasks-and-process-them-as-they-complete.md).

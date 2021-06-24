@@ -13,7 +13,7 @@ ms.date: 08/27/2020
 The two recommended ways of collecting dumps on Linux are:
 
 * [`dotnet-dump`](dotnet-dump.md) CLI tool
-* [Environment variables](dumps.md#collecting-dumps-on-crash) that collect dumps on crashes
+* [Environment variables](dumps.md#collect-dumps-on-crash) that collect dumps on crashes
 
 ### Managed dumps with `dotnet-dump`
 

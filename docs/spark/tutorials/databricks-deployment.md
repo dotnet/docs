@@ -4,6 +4,7 @@ description: Discover how to deploy a .NET for Apache Spark application to Datab
 ms.date: 10/09/2020
 ms.topic: tutorial
 ms.custom: mvc
+recommendations: false
 #Customer intent: As a developer, I want to deployment .NET for Apache Spark application to Databricks.
 ---
 
@@ -160,7 +161,7 @@ Next, you publish the *mySparkApp* created in the [.NET for Apache Spark - Get S
     ```
 
 > [!Note]
-> For more information, see the [Submit a .NET for Apache Spark job to Databricks guide](https://docs.microsoft.com/dotnet/spark/how-to-guides/databricks-deploy-methods).
+> For more information, see the [Submit a .NET for Apache Spark job to Databricks guide](../how-to-guides/databricks-deploy-methods.md).
 
 ## Upload files
 

@@ -2,7 +2,7 @@
 description: "Learn more about: WS-AtomicTransaction Configuration Utility (wsatConfig.exe)"
 title: "WS-AtomicTransaction Configuration Utility (wsatConfig.exe)"
 ms.date: "03/30/2017"
-ms.assetid: 1c56cf98-3963-46d5-a4e1-482deae58c58
+ms.topic: reference
 ---
 # WS-AtomicTransaction Configuration Utility (wsatConfig.exe)
 

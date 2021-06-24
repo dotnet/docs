@@ -118,8 +118,7 @@ A Storage account can be created using the [Azure portal](https://portal.azure.c
 :::row-end:::
 :::row:::
    :::column span="3":::
-      Upon creation of your Azure storage account, you will see a page indicating "Your deployment is complete". Select the **Go to resource** button on the page to view your Storage account.
-      Do not close your browser as you will need to copy information about your Azure Storage account in the next step.
+      Upon creation of your Azure storage account, you will see a page indicating "Your deployment is complete". Select the **Go to resource** button on the page to view your Storage account. Do not close your browser as you will need to copy information about your Azure Storage account in the next step.
    :::column-end:::
    :::column span="":::
             :::image type="content" source="./media/azportal-create-storage-account-4-240px.png" alt-text="A screenshot of the completion page after a storage account has been created.  This page contains a button which will take you to the just created storage account." lightbox="./media/azportal-create-storage-account-4.png":::

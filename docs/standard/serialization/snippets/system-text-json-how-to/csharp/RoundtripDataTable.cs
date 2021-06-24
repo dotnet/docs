@@ -143,21 +143,18 @@ namespace RoundtripDataTable
             bool firstPass = true;
             foreach (JsonElement element in dataRoot.EnumerateArray())
             {
-                if (firstPass)
+                DataRow row = dataTable.NewRow();
+                dataTable.Rows.Add(row);
+                foreach (JsonProperty col in element.EnumerateObject())
                 {
-                    foreach (JsonProperty col in element.EnumerateObject())
+                    if (firstPass)
                     {
                         JsonElement colValue = col.Value;
                         dataTable.Columns.Add(new DataColumn(col.Name, colValue.ValueKind.ValueKindToType(colValue.ToString())));
                     }
-                    firstPass = false;
-                }
-                DataRow row = dataTable.NewRow();
-                foreach (JsonProperty col in element.EnumerateObject())
-                {
                     row[col.Name] = col.Value.JsonElementToTypedValue();
                 }
-                dataTable.Rows.Add(row);
+                firstPass = false;
             }
             return dataTable;
         }

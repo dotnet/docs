@@ -169,9 +169,9 @@ namespace RoundtripDataTable
         {
             switch (valueKind)
             {
-                case JsonValueKind.String:      // 3
+                case JsonValueKind.String:
                     return typeof(System.String);
-                case JsonValueKind.Number:      // 4    
+                case JsonValueKind.Number:
                     if (Int64.TryParse(value, out var intValue))
                     {
                         return typeof(System.Int64);
@@ -180,16 +180,16 @@ namespace RoundtripDataTable
                     {
                         return typeof(System.Double);
                     }
-                case JsonValueKind.True:        // 5
-                case JsonValueKind.False:       // 6
+                case JsonValueKind.True:
+                case JsonValueKind.False:
                     return typeof(System.Boolean);
-                case JsonValueKind.Undefined:   // 0
+                case JsonValueKind.Undefined:
                     return null;
-                case JsonValueKind.Object:      // 1 
+                case JsonValueKind.Object:
                     return typeof(System.Object);
-                case JsonValueKind.Array:       // 2
+                case JsonValueKind.Array:
                     return typeof(System.Array);
-                case JsonValueKind.Null:        // 7
+                case JsonValueKind.Null:
                     return null;
                 default:
                     return typeof(System.Object);
@@ -200,9 +200,9 @@ namespace RoundtripDataTable
         {
             switch (jsonElement.ValueKind)
             {
-                case JsonValueKind.Object:      // 1  (these need special handling)?
-                case JsonValueKind.Array:       // 2
-                case JsonValueKind.String:      // 3
+                case JsonValueKind.Object:      // (these need special handling)?
+                case JsonValueKind.Array:
+                case JsonValueKind.String:
                     if (jsonElement.TryGetGuid(out Guid guidValue))
                     {
                         return guidValue;
@@ -223,7 +223,7 @@ namespace RoundtripDataTable
                         }
                         return jsonElement.ToString();
                     }
-                case JsonValueKind.Number:      // 4    
+                case JsonValueKind.Number:
                     if (jsonElement.TryGetInt64(out long longValue))
                     {
                         return longValue;
@@ -232,11 +232,11 @@ namespace RoundtripDataTable
                     {
                         return jsonElement.GetDouble();
                     }
-                case JsonValueKind.True:        // 5
-                case JsonValueKind.False:       // 6
+                case JsonValueKind.True:
+                case JsonValueKind.False:
                     return jsonElement.GetBoolean();
-                case JsonValueKind.Undefined:   // 0
-                case JsonValueKind.Null:        // 7
+                case JsonValueKind.Undefined:
+                case JsonValueKind.Null:
                     return null;
                 default:
                     return jsonElement.ToString();

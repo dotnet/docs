@@ -305,11 +305,11 @@ public class Address
 - **Complex types and/or value objects**. Discussion in the EF Core GitHub repo (Issues tab) \
   <https://github.com/dotnet/efcore/issues/246>
 
-- **Value Object: a better implementation** An article describing the base value object class in detail. \
-  <https://enterprisecraftsmanship.com/posts/value-object-better-implementation>
-
 - **ValueObject.cs.** Base value object class in eShopOnContainers. \
   <https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs>
+
+- **ValueObject.cs.** Base value object class in CSharpFunctionalExtensions. \
+  <https://github.com/vkhorikov/CSharpFunctionalExtensions/blob/master/CSharpFunctionalExtensions/ValueObject/ValueObject.cs>
 
 - **Address class.** Sample value object class in eShopOnContainers. \
   <https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs>

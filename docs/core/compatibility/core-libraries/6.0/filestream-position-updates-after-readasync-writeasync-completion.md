@@ -20,7 +20,7 @@ string path = Path.Combine(Path.GetTempPath(), Path.GetTempFileName());
 using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.ReadWrite, FileShare.None, bufferSize: 4096, useAsync: true))
 {
     Task[] writes = new Task[3];
-    
+
     writes[0] = fs.WriteAsync(bytes, 0, bytes.Length);
     Console.WriteLine(fs.Position);  // 10000 in .NET 5, 0 in .NET 6
 
@@ -52,7 +52,21 @@ Now, when buffering is enabled (that is, the `bufferSize` argument that's passed
 
 ## Recommended action
 
+- Modify any code that relied on the position being set before operations completed.
 
+- To enable the .NET 5 behavior in .NET 6, specify an `AppContext` switch or an environment variable. By setting the switch to `true`, you opt out of all performance improvements made to `FileStream` in .NET 6.
+
+  ```xml
+  {
+      "configProperties": {
+          "System.IO.UseNet5CompatFileStream": true
+      }
+  }
+  ```
+
+  ```cmd
+  set DOTNET_SYSTEM_IO_USENET5COMPATFILESTREAM=1
+  ```
 
 ## Affected APIs
 

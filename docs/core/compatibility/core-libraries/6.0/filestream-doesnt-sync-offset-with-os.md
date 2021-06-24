@@ -49,7 +49,21 @@ With this change, <xref:System.IO.FileStream.ReadAsync%2A> operations are up to 
 
 ## Recommended action
 
+- Modify any code that relied on the offset being synchronized.
 
+- To enable the .NET 5 behavior in .NET 6, specify an `AppContext` switch or an environment variable. By setting the switch to `true`, you opt out of all performance improvements made to `FileStream` in .NET 6.
+
+  ```xml
+  {
+      "configProperties": {
+          "System.IO.UseNet5CompatFileStream": true
+      }
+  }
+  ```
+
+  ```cmd
+  set DOTNET_SYSTEM_IO_USENET5COMPATFILESTREAM=1
+  ```
 
 ## Affected APIs
 

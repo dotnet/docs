@@ -26,8 +26,8 @@ namespace RoundtripDataTable
         public static void Main()
         {
             // Register the custom converter
-            var options = new JsonSerializerOptions { WriteIndented = true };
-            options.Converters.Add(new DataTableJsonConverter());
+            JsonSerializerOptions options = new() 
+                { Converters = { new DataTableJsonConverter() }, WriteIndented = true }; 
 
             // Serialize a List<T> object and display the JSON
             string jsonString = JsonSerializer.Serialize(weatherForecasts, options);
@@ -138,6 +138,7 @@ namespace RoundtripDataTable
             jsonWriter.WriteEndArray();
         }
     }
+    
     public static class Extensions
     {
         public static DataTable JsonElementToDataTable(this JsonElement dataRoot)

@@ -52,9 +52,9 @@ az storage account create \
 
 Storage accounts are created using the `New-AzStorageAccount` cmdlt.  Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only.  Storage account names must also be unique across Azure.
 
-Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com) or on a workstation with [Azure PowerShell installed](/powershell/azure/install-az-ps).
+Azure PowerShell commands can be run in the [Azure Cloud Shell](https://shell.azure.com) or on a workstation with [Azure PowerShell installed](/powershell/azure/install-az-ps).
 
-```azurepowershellInstall
+```azurepowershell
 $location = 'eastus'   # Use 'Get-AzLocation | Select-Object -Property DisplayName,Location' to list all locations
 $resourceGroupName = 'rg-msdocs-blob-storage-demo'
 $storageAccountName = 'stblobstoragedemo123'   # Replace 123 with three random numbers to get unique name
@@ -71,6 +71,65 @@ New-AzStorageAccount `
     -Location $location `
     -SkuName Standard_LRS
 ```
+
+### [Azure Portal](#tab/azure-portal)
+
+A Storage account can be created using the [Azure portal](https://portal.azure.com/) by following these steps.
+
+:::row:::
+   :::column span="3":::
+      **Step**
+   :::column-end:::
+   :::column span="":::
+      **Screenshot**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="3":::
+      In the Azure portal:
+      1. In the search bar at the top of the Azure portal, enter "storage account"
+      1. On the menu that appears below the search bar, under *Services*, select the item labeled *Storage accounts*
+   :::column-end:::
+   :::column span="":::
+      :::image type="content" source="./media/azportal-create-storage-account-1-240px.png" alt-text="A screenshot showing how to use the search box in the top tool bar to find storage accounts in Azure." lightbox="./media/azportal-create-storage-account-1":::
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="3":::
+      On the **Storage Accounts** page select "+Create"
+   :::column-end:::
+   :::column span="":::
+      :::image type="content" source="./media/azportal-create-storage-account-2-240px.png" alt-text="A screenshot showing the create button on the storage accounts page used to create a new storage account." lightbox="./media/azportal-create-storage-account-2":::
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="3":::
+      On the **Create a storage account** page, fill out the form as follows.
+      1. Create a new resource group for the storage account named `rg-msdocs-blob-storage-demo` by selecting the **Create new** link under **Resource group**.
+      1. Give your storage account a name of `stblobstoragedemoXYZ` where XYZ are any three random digits.  
+      1. Select the region for your storage account.
+      1. Select **Standard** performance.
+      1. Select **Locally-redundant storage** for this example under redundancy.
+      1. Select the **Review + create" button at the bottom of the screen and then select "Create" on the summary screen to create your storage account.
+   :::column-end:::
+   :::column span="":::
+        :::image type="content" source="./media/azportal-create-storage-account-3-240px.png" alt-text="A screenshot showing the form to fill out to create a new storage account in Azure." lightbox="./media/azportal-create-storage-account-3.png":::
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="3":::
+      Upon creation of your Azure storage account, you will see a page indicating "Your deployment is complete". Select the **Go to resource** button on the page to view your Storage account.
+
+      Do not close your browser as you will need to copy information about your Azure Storage account in the next step.
+   :::column-end:::
+   :::column span="":::
+            :::image type="content" source="./media/azportal-create-storage-account-4-240px.png" alt-text="A screenshot of the completion page after a storage account has been created.  This page contains a button which will take you to the just created storage account." lightbox="./media/azportal-create-storage-account-4":::
+   :::column-end:::
+:::row-end:::
 
 ---
 

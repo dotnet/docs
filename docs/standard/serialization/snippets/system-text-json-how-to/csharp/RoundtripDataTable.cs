@@ -24,16 +24,16 @@ namespace RoundtripDataTable
 
         public static void Main()
         {
+            // Register the custom converter
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            options.Converters.Add(new DataTableJsonConverter());
+
             // Serialize a List<T> object and display the JSON
-            string jsonString = JsonSerializer.Serialize(
-                weatherForecasts,
-                new JsonSerializerOptions { WriteIndented = true });
+            string jsonString = JsonSerializer.Serialize(weatherForecasts, options);
             Console.WriteLine(jsonString);
 
             // Deserialize to a DataTable
-            var deserializeOptions = new JsonSerializerOptions();
-            deserializeOptions.Converters.Add(new DataTableJsonConverter());
-            var weatherForecastTable = JsonSerializer.Deserialize<DataTable>(jsonString, deserializeOptions);
+            var weatherForecastTable = JsonSerializer.Deserialize<DataTable>(jsonString, options);
 
             // Display the DataTable contents
             foreach (DataRow row in weatherForecastTable.Rows)
@@ -46,10 +46,7 @@ namespace RoundtripDataTable
             }
 
             // Serialize the DataTable and display the JSON
-            var serializeOptions = new JsonSerializerOptions();
-            serializeOptions.WriteIndented = true;
-            serializeOptions.Converters.Add(new DataTableJsonConverter());
-            jsonString = JsonSerializer.Serialize(weatherForecasts, serializeOptions);
+            jsonString = JsonSerializer.Serialize(weatherForecasts, options);
             Console.WriteLine(jsonString);
         }
     }

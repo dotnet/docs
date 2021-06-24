@@ -3,7 +3,7 @@ title: Options pattern in .NET
 author: IEvangelist
 description: Learn how to use the options pattern to represent groups of related settings in .NET apps.
 ms.author: dapine
-ms.date: 05/04/2021
+ms.date: 06/21/2021
 ---
 
 # Options pattern in .NET
@@ -66,6 +66,18 @@ An alternative approach when using the options pattern is to bind the `"Transien
 services.Configure<TransientFaultHandlingOptions>(
     configurationRoot.GetSection(
         key: nameof(TransientFaultHandlingOptions)));
+```
+
+To access both the `services` and the `configurationRoot` objects, you must use the <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureServices%2A> method &mdash; the <xref:Microsoft.Extensions.Configuration.IConfiguration> is available as the <xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration?displayProperty=nameWithType> property.
+
+```csharp
+Host.CreateDefaultBuilder(args)
+    .ConfigureServices((context, services) =>
+    {
+        var configurationRoot = context.Configuration;
+        services.Configure<TransientFaultHandlingOptions>(
+            configurationRoot.GetSection(nameof(TransientFaultHandlingOptions)));
+    });
 ```
 
 > [!TIP]

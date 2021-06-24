@@ -78,4 +78,4 @@ aspnet_regiis.exe -i -enable
   
 ## See also
 
-- [Set-Up Instructions](./samples/set-up-instructions.md)
+- [Set-Up Instructions](/previous-versions/dotnet/framework/wcf/samples/set-up-instructions)

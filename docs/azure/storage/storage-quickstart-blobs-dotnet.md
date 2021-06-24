@@ -84,7 +84,6 @@ A Storage account can be created using the [Azure portal](https://portal.azure.c
       **Screenshot**
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="3":::
       In the Azure portal:
@@ -95,7 +94,6 @@ A Storage account can be created using the [Azure portal](https://portal.azure.c
       :::image type="content" source="./media/azportal-create-storage-account-1-240px.png" alt-text="A screenshot showing how to use the search box in the top tool bar to find storage accounts in Azure." lightbox="./media/azportal-create-storage-account-1.png":::
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="3":::
       On the **Storage Accounts** page select "+Create"
@@ -104,7 +102,6 @@ A Storage account can be created using the [Azure portal](https://portal.azure.c
       :::image type="content" source="./media/azportal-create-storage-account-2-240px.png" alt-text="A screenshot showing the create button on the storage accounts page used to create a new storage account." lightbox="./media/azportal-create-storage-account-2.png":::
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="3":::
       On the **Create a storage account** page, fill out the form as follows.
@@ -119,7 +116,6 @@ A Storage account can be created using the [Azure portal](https://portal.azure.c
         :::image type="content" source="./media/azportal-create-storage-account-3-240px.png" alt-text="A screenshot showing the form to fill out to create a new storage account in Azure." lightbox="./media/azportal-create-storage-account-3.png":::
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="3":::
       Upon creation of your Azure storage account, you will see a page indicating "Your deployment is complete". Select the **Go to resource** button on the page to view your Storage account.

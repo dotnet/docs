@@ -12,8 +12,10 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CLRCreateInstance"
+  - "CreateInterface"
 helpviewer_keywords: 
   - "CLRCreateInstance function [.NET Framework hosting]"
+  - "CreateInterface function"
 ms.assetid: 5de13327-96c6-4697-a89e-b8bf40717855
 topic_type: 
   - "apiref"

@@ -92,7 +92,7 @@ A Storage account can be created using the [Azure portal](https://portal.azure.c
       1. On the menu that appears below the search bar, under *Services*, select the item labeled *Storage accounts*
    :::column-end:::
    :::column span="":::
-      :::image type="content" source="./media/azportal-create-storage-account-1-240px.png" alt-text="A screenshot showing how to use the search box in the top tool bar to find storage accounts in Azure." lightbox="./media/azportal-create-storage-account-1":::
+      :::image type="content" source="./media/azportal-create-storage-account-1-240px.png" alt-text="A screenshot showing how to use the search box in the top tool bar to find storage accounts in Azure." lightbox="./media/azportal-create-storage-account-1.png":::
    :::column-end:::
 :::row-end:::
 ---
@@ -101,7 +101,7 @@ A Storage account can be created using the [Azure portal](https://portal.azure.c
       On the **Storage Accounts** page select "+Create"
    :::column-end:::
    :::column span="":::
-      :::image type="content" source="./media/azportal-create-storage-account-2-240px.png" alt-text="A screenshot showing the create button on the storage accounts page used to create a new storage account." lightbox="./media/azportal-create-storage-account-2":::
+      :::image type="content" source="./media/azportal-create-storage-account-2-240px.png" alt-text="A screenshot showing the create button on the storage accounts page used to create a new storage account." lightbox="./media/azportal-create-storage-account-2.png":::
    :::column-end:::
 :::row-end:::
 ---
@@ -127,7 +127,7 @@ A Storage account can be created using the [Azure portal](https://portal.azure.c
       Do not close your browser as you will need to copy information about your Azure Storage account in the next step.
    :::column-end:::
    :::column span="":::
-            :::image type="content" source="./media/azportal-create-storage-account-4-240px.png" alt-text="A screenshot of the completion page after a storage account has been created.  This page contains a button which will take you to the just created storage account." lightbox="./media/azportal-create-storage-account-4":::
+            :::image type="content" source="./media/azportal-create-storage-account-4-240px.png" alt-text="A screenshot of the completion page after a storage account has been created.  This page contains a button which will take you to the just created storage account." lightbox="./media/azportal-create-storage-account-4.png":::
    :::column-end:::
 :::row-end:::
 
@@ -157,6 +157,10 @@ Write-Host 'This is the connection string your application will use to connect t
 Write-Host 'Safeguard this value like you would any other secret'
 Write-Host $storageConnectionString
 ```
+
+### [Azure Portal](#tab/azure-portal)
+
+Coming soon...
 
 ---
 

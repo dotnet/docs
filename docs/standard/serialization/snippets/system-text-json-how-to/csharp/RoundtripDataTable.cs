@@ -56,8 +56,8 @@ namespace RoundtripDataTable
         public override DataTable Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
             using var jsonDoc = JsonDocument.ParseValue(ref reader);
-            var rootElement = jsonDoc.RootElement;
-            var dataTable = rootElement.JsonElementToDataTable();
+            JsonElement rootElement = jsonDoc.RootElement;
+            DataTable dataTable = rootElement.JsonElementToDataTable();
             return dataTable;
         }
 
@@ -69,8 +69,8 @@ namespace RoundtripDataTable
                 jsonWriter.WriteStartObject();
                 foreach (DataColumn col in value.Columns)
                 {
-                    var key = col.ColumnName.Trim();
-                    var valueString = dr[col].ToString();
+                    string key = col.ColumnName.Trim();
+                    string valueString = dr[col].ToString();
                     switch (col.DataType.FullName)
                     {
                         case "System.Guid":
@@ -140,20 +140,20 @@ namespace RoundtripDataTable
         public static DataTable JsonElementToDataTable(this JsonElement dataRoot)
         {
             var dataTable = new DataTable();
-            var firstPass = true;
-            foreach (var element in dataRoot.EnumerateArray())
+            bool firstPass = true;
+            foreach (JsonElement element in dataRoot.EnumerateArray())
             {
                 if (firstPass)
                 {
-                    foreach (var col in element.EnumerateObject())
+                    foreach (JsonProperty col in element.EnumerateObject())
                     {
-                        var colValue = col.Value;
+                        JsonElement colValue = col.Value;
                         dataTable.Columns.Add(new DataColumn(col.Name, colValue.ValueKind.ValueKindToType(colValue.ToString())));
                     }
                     firstPass = false;
                 }
-                var row = dataTable.NewRow();
-                foreach (var col in element.EnumerateObject())
+                DataRow row = dataTable.NewRow();
+                foreach (JsonProperty col in element.EnumerateObject())
                 {
                     row[col.Name] = col.Value.JsonElementToTypedValue();
                 }
@@ -169,7 +169,7 @@ namespace RoundtripDataTable
                 case JsonValueKind.String:
                     return typeof(System.String);
                 case JsonValueKind.Number:
-                    if (Int64.TryParse(value, out var intValue))
+                    if (Int64.TryParse(value, out Int64 intValue))
                     {
                         return typeof(System.Int64);
                     }

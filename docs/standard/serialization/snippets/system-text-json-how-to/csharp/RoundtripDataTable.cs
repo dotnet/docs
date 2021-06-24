@@ -244,3 +244,41 @@ namespace RoundtripDataTable
         }
     }
 }
+//output:
+//[
+//  {
+//    "Date": "2019-08-01T00:00:00-07:00",
+//    "TemperatureCelsius": 25,
+//    "Summary": "Hot"
+//  },
+//  {
+//    "Date": "2019-08-02T00:00:00-07:00",
+//    "TemperatureCelsius": 20,
+//    "Summary": "Warm"
+//  },
+//  {
+//    "Date": "2019-08-03T00:00:00-07:00",
+//    "TemperatureCelsius": 10,
+//    "Summary": "Cold"
+//  }
+//]
+//8/1/2019 12:00:00 AM -07:00 25 Hot
+//8/2/2019 12:00:00 AM -07:00 20 Warm
+//8/3/2019 12:00:00 AM -07:00 10 Cold
+//[
+//  {
+//    "Date": "2019-08-01T00:00:00-07:00",
+//    "TemperatureCelsius": 25,
+//    "Summary": "Hot"
+//  },
+//  {
+//    "Date": "2019-08-02T00:00:00-07:00",
+//    "TemperatureCelsius": 20,
+//    "Summary": "Warm"
+//  },
+//  {
+//    "Date": "2019-08-03T00:00:00-07:00",
+//    "TemperatureCelsius": 10,
+//    "Summary": "Cold"
+//  }
+//]

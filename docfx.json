@@ -152,6 +152,16 @@
         "docs/framework/ui-automation/**/**.md": "None",
         "docs/framework/wcf/**/**.md": "None"
       },
+      "social_image_url": {
+          "docs/**/*.*": "/media/dotnet-logo.svg",
+          "docs/azure/**/*.*": "/media/dotnet-bot_cloud-apps.svg",
+          "docs/iot/**/*.*": "/media/dotnet-iot.svg",
+          "docs/maui/**/*.*": "/media/dotnet-bot_mobile-apps-xamarin.svg",
+          "docs/machine-learning/**/*.*": "/media/dotnet-bot_machinelearning.svg",
+          "docs/architecture/**/*.*": "/media/dotnet-bot_microservices.svg",
+          "docs/spark/**/*.*": "/media/dotnet-bot_apache-spark.svg",
+          "docs/standard/**/*.*": "/media/dot-net-cross-platform.svg"
+      },
       "feedback_product_url": {
         "docs/azure/sdk/**/*.*": "https://github.com/azure/azure-sdk-for-net",
         "docs/fsharp/**/**.md": "https://github.com/dotnet/fsharp",

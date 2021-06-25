@@ -7,8 +7,6 @@ set -e
 #     $2 is the <github.repository>
 #     $3 is the savedir
 
-echo "From $STARTDATE to $ENDDATE"
-
 while getopts o:r:s: option
 do
 case "${option}"

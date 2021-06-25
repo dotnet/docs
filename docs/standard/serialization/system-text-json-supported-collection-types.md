@@ -87,9 +87,9 @@ The following sections are organized by namespace and show which types are suppo
 
 \* See [Supported key types](#supported-key-types).
 
-\*\* See the following section on `IAsyncEnumerable<T>` support.
+\*\* See the following section on `IAsyncEnumerable<T>`.
 
-## IAsyncEnumerable\<T> support
+### IAsyncEnumerable\<T>
 
 The following examples use streams as a representation of any async source of data. The source could be files on a local machine, or results from a database query or web service API call.
 
@@ -99,7 +99,7 @@ The following examples use streams as a representation of any async source of da
 
 :::code language="csharp" source="snippets/system-text-json-supported-collection-types/csharp/IAsyncEnumerableSerialize.cs" highlight="15":::
 
-`IAsyncEnumerable<T>` values are only supported by the asynchronous serialization methods.
+`IAsyncEnumerable<T>` values are only supported by the asynchronous serialization methods, such as <xref:System.Text.Json.JsonSerializer.SerializeAsync%2A?displayProperty=nameWithType>.
 
 ### Streaming deserialization
 
@@ -109,7 +109,7 @@ The `DeserializeAsyncEnumerable` method supports streaming deserialization, as s
 
 The `DeserializeAsyncEnumerable` method only supports reading from root-level JSON arrays.
 
-The <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method supports `IAsyncEnumerable<T>`, but its signature doesn't allow streaming. It must return the final result as a single value, as shown in the following example.
+The <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method supports `IAsyncEnumerable<T>`, but its signature doesn't allow streaming. It returns the final result as a single value, as shown in the following example.
 
 :::code language="csharp" source="snippets/system-text-json-supported-collection-types/csharp/IAsyncEnumerableDeserializeNonStreaming.cs" highlight="20":::
 

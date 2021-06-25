@@ -224,6 +224,8 @@ The following sections provide converter samples that address some common scenar
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
 ::: zone-end
 
+For a sample <xref:System.Data.DataTable> converter, see [Supported collection types](system-text-json-supported-collection-types.md#systemdata-namespace).
+
 ### Deserialize inferred types to object properties
 
 When deserializing to a property of type `object`, a `JsonElement` object is created. The reason is that the deserializer doesn't know what CLR type to create, and it doesn't try to guess. For example, if a JSON property has "true", the deserializer doesn't infer that the value is a `Boolean`, and if an element has "01/01/2019", the deserializer doesn't infer that it's a `DateTime`.

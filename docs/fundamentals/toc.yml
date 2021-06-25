@@ -2474,6 +2474,8 @@ items:
     items:
     - name: About .NET
       items:
+      - name: Versioning relationship between the .NET SDK, MSBuild and VS
+        href: ../core/porting/versioning-sdk-msbuild-vs.md
       - name: Choose between .NET 5 and .NET Framework for server apps
         href: ../standard/choosing-core-framework-server.md
     - name: .NET Upgrade Assistant tool
@@ -2493,8 +2495,6 @@ items:
     items:
     - name: Analyze & Asses the portability of your project
       items:
-      - name: Tooling Requirements
-        href: ../core/porting/tooling-requirements.md
       - name: Unsupported Dependencies
         href: ../core/porting/third-party-deps.md
       - name: Use the Windows Compatibility Pack

@@ -1,5 +1,5 @@
 ---
-title: Tooling requirements
+title: Versioning relationship between the .NET SDK, MSBuild and VS
 description: Learn about the versioning relationship between the .NET SDK and MSBuild/VS.
 author: stebon
 ms.date: 06/10/2021

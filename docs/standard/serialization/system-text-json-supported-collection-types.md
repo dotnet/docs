@@ -93,7 +93,7 @@ The following sections are organized by namespace and show which types are suppo
 
 The following examples use streams as a representation of any async source of data. The source could be files on a local machine, or results from a database query or web service API call.
 
-### Streaming serialization
+#### Streaming serialization
 
 `System.Text.Json` supports serializing <xref:System.Collections.Generic.IAsyncEnumerable%601> values as JSON arrays, as shown in the following example:
 
@@ -101,7 +101,7 @@ The following examples use streams as a representation of any async source of da
 
 `IAsyncEnumerable<T>` values are only supported by the asynchronous serialization methods, such as <xref:System.Text.Json.JsonSerializer.SerializeAsync%2A?displayProperty=nameWithType>.
 
-### Streaming deserialization
+#### Streaming deserialization
 
 The `DeserializeAsyncEnumerable` method supports streaming deserialization, as shown in the following example:
 

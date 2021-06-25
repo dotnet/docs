@@ -98,7 +98,7 @@ type MyRecord = { MyField: int }
 type MyClass() =
     member _.MyProperty = ()
     member _.MyMethod () = ()
-    
+
 nameof Unchecked.defaultof<MyRecord>.MyField   // MyField
 nameof Unchecked.defaultof<MyClass>.MyProperty // MyProperty
 nameof Unchecked.defaultof<MyClass>.MyMethod   // MyMethod

@@ -27,7 +27,7 @@ You first need to create a resource group and storage account in Azure for the s
 
 ### [Azure CLI](#tab/azure-cli)
 
-Storage accounts are created using the `[az storage account create](/cli/azure/storage/account?view=azure-cli-latest#az_storage_account_create)` command.  Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only.  Storage account names must also be unique across Azure.
+Storage accounts are created using the [az storage account create](/cli/azure/storage/account?view=azure-cli-latest#az_storage_account_create) command.  Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only.  Storage account names must also be unique across Azure.
 
 Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com) or on a workstation with the [Azure CLI installed](/cli/azure/install-azure-cli).
 
@@ -50,7 +50,7 @@ az storage account create \
 
 ### [Azure PowerShell](#tab/azure-powershell)
 
-Storage accounts are created using the `[New-AzStorageAccount](/powershell/module/az.storage/new-azstorageaccount)` cmdlet.  Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only.  Storage account names must also be unique across Azure.
+Storage accounts are created using the [New-AzStorageAccount](/powershell/module/az.storage/new-azstorageaccount) cmdlet.  Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only.  Storage account names must also be unique across Azure.
 
 Azure PowerShell commands can be run in the [Azure Cloud Shell](https://shell.azure.com) or on a workstation with [Azure PowerShell installed](/powershell/azure/install-az-ps).
 
@@ -76,66 +76,12 @@ New-AzStorageAccount `
 
 A Storage account can be created using the [Azure portal](https://portal.azure.com/) by following these steps.
 
-:::row:::
-   :::column span="3":::
-      **Instructions**
-   :::column-end:::
-   :::column span="":::
-      **Screenshot**
-   :::column-end:::
-:::row-end:::
-
----
-
-:::row:::
-   :::column span="3":::
-      In the Azure portal:
-      1. In the search bar at the top of the Azure portal, enter "storage account"
-      1. On the menu that appears below the search bar, under *Services*, select the item labeled *Storage accounts*
-   :::column-end:::
-   :::column span="":::
-      :::image type="content" source="./media/azportal-create-storage-account-1-240px.png" alt-text="A screenshot showing how to use the search box in the top tool bar to find storage accounts in Azure." lightbox="./media/azportal-create-storage-account-1.png":::
-   :::column-end:::
-:::row-end:::
-
----
-
-:::row:::
-   :::column span="3":::
-      On the **Storage Accounts** page select "+Create"
-   :::column-end:::
-   :::column span="":::
-      :::image type="content" source="./media/azportal-create-storage-account-2-240px.png" alt-text="A screenshot showing the create button on the storage accounts page used to create a new storage account." lightbox="./media/azportal-create-storage-account-2.png":::
-   :::column-end:::
-:::row-end:::
-
----
-
-:::row:::
-   :::column span="3":::
-      On the **Create a storage account** page, fill out the form as follows.
-      1. Create a new resource group for the storage account named `rg-msdocs-blob-storage-demo` by selecting the **Create new** link under **Resource group**.
-      1. Give your storage account a name of `stblobstoragedemoXYZ` where XYZ are any three random digits.  Storage account names must be between 3 and 24 characters long and contain only lower case letters and numbers.
-      1. Select the region for your storage account.
-      1. Select **Standard** performance.
-      1. Select **Locally-redundant storage** for this example under redundancy.
-      1. Select the **Review + create** button at the bottom of the screen and then select "Create" on the summary screen to create your storage account.
-   :::column-end:::
-   :::column span="":::
-        :::image type="content" source="./media/azportal-create-storage-account-3-240px.png" alt-text="A screenshot showing the form to fill out to create a new storage account in Azure." lightbox="./media/azportal-create-storage-account-3.png":::
-   :::column-end:::
-:::row-end:::
-
----
-
-:::row:::
-   :::column span="3":::
-      Upon creation of your Azure storage account, you will see a page indicating "Your deployment is complete". Select the *Go to resource* button on the page to view your Storage account. Do not close your browser as you will need to copy information about your Azure Storage account in the next step.
-   :::column-end:::
-   :::column span="":::
-            :::image type="content" source="./media/azportal-create-storage-account-4-240px.png" alt-text="A screenshot of the completion page after a storage account has been created.  This page contains a button which will take you to the just created storage account." lightbox="./media/azportal-create-storage-account-4.png":::
-   :::column-end:::
-:::row-end:::
+| Instructions    | Screenshot |
+|:----------------|-----------:|
+| [!INCLUDE [<create-storage-acct-1.md>](<./includes>)] | :::image type="content" source="./media/azportal-create-storage-account-1-240px.png" alt-text="A screenshot showing how to use the search box in the top tool bar to find storage accounts in Azure." lightbox="./media/azportal-create-storage-account-1.png"::: |
+| [!INCLUDE [<create-storage-acct-2.md>](<./includes>)] | :::image type="content" source="./media/azportal-create-storage-account-2-240px.png" alt-text="A screenshot showing the create button on the storage accounts page used to create a new storage account." lightbox="./media/azportal-create-storage-account-2.png"::: |
+| [!INCLUDE [<create-storage-acct-3.md>](<./includes>)] | :::image type="content" source="./media/azportal-create-storage-account-3-240px.png" alt-text="A screenshot showing the form to fill out to create a new storage account in Azure." lightbox="./media/azportal-create-storage-account-3.png"::: |
+| [!INCLUDE [<create-storage-acct-4.md>](<./includes>)] | :::image type="content" source="./media/azportal-create-storage-account-4-240px.png" alt-text="A screenshot of the completion page after a storage account has been created.  This page contains a button which will take you to the just created storage account." lightbox="./media/azportal-create-storage-account-4.png"::: |
 
 ---
 
@@ -193,7 +139,7 @@ To open the Secret Manager tool from Visual Studio, right click on the project a
 }
 ```
 
-### [.NET Core CLI](#tab/netcore-cli)
+### [.NET CLI](#tab/netcore-cli)
 
 To use the Secret Manager, you must first initialize it for your project using the `dotnet user-secrets init` command.
 
@@ -219,7 +165,7 @@ To access Azure Blob Storage from a .NET application, you need to install the [A
 Install-Package Azure.Storage.Blobs
 ```
 
-### [.NET Core CLI](#tab/netcore-cli)
+### [.NET CLI](#tab/netcore-cli)
 
 ```dotnetcli
 dotnet add package Azure.Storage.Blobs
@@ -229,9 +175,9 @@ dotnet add package Azure.Storage.Blobs
 
 ## 4 - Configure the Azure Storage client in Startup.cs
 
-The Azure SDK communicates with Azure using client objects to execute different operations against Azure.  The `[BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient)` object is the top level object used to communicate with a storage account.
+The Azure SDK communicates with Azure using client objects to execute different operations against Azure.  The [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient) object is the top level object used to communicate with a storage account.
 
-An application will typically create a single `[BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient)` object per storage account to be used throughout the application.  It is recommended to use dependency injection and register the `BlobServiceClient` object as a singleton to accomplish this.  For more information about using DI with the Azure SDK, see [Dependency injection with the Azure SDK for .NET](../sdk/dependency-injection.md).
+An application will typically create a single [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient) object per storage account to be used throughout the application.  It is recommended to use dependency injection and register the [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient) object as a singleton to accomplish this.  For more information about using DI with the Azure SDK, see [Dependency injection with the Azure SDK for .NET](../sdk/dependency-injection.md).
 
 In the Startup.cs file of the application, edit the ConfigureServices() method to include the highlighted code.
 
@@ -259,7 +205,7 @@ using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
 ```
 
-At the start of the StorageDemoService class, add a member variable for the `[BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient)` object and a constructor to allow the `[BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient)` object to be injected into the class.
+At the start of the StorageDemoService class, add a member variable for the [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient) object and a constructor to allow the [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient) object to be injected into the class.
 
 ```csharp
 private BlobServiceClient _blobServiceClient;
@@ -296,7 +242,7 @@ public void CreateContainer(string containerName)
 
 To get a list of blob containers in the storage account, call the [GetBlobContainers()](/dotnet/api/azure.storage.blobs.blobserviceclient.getblobcontainers#Azure_Storage_Blobs_BlobServiceClient_GetBlobContainers_Azure_Storage_Blobs_Models_BlobContainerTraits_Azure_Storage_Blobs_Models_BlobContainerStates_System_String_System_Threading_CancellationToken_) method on the [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient) object for the storage account.
 
-This will return a [Pageable<BlobContainer>](/dotnet/api/azure.pageable-1) object listing the blob containers.  In this method in the sample application, a LINQ query is used to map each BlobContainerItem to a model object and return it to the application.
+This will return a [Pageable\<BlobContainer\>](/dotnet/api/azure.pageable-1) object listing the blob containers.  In this method in the sample application, a LINQ query is used to map each BlobContainerItem to a model object and return it to the application.
 
 ```csharp
 public IEnumerable<StorageContainerModel> GetContainers()
@@ -327,7 +273,7 @@ public void DeleteContainer(string containerName)
 
 ### List blobs in a container
 
-To list the blobs in a container, call the [GetBlobs()](/dotnet/api/azure.storage.blobs.blobcontainerclient.getblobs?#Azure_Storage_Blobs_BlobContainerClient_GetBlobs_Azure_Storage_Blobs_Models_BlobTraits_Azure_Storage_Blobs_Models_BlobStates_System_String_System_Threading_CancellationToken_) method on a [BlobContainerClient](/dotnet/api/azure.storage.blobs.blobcontainerclient) object for the container. It is important to check for the existence of the blob container as calling [GetBlobs()](/dotnet/api/azure.storage.blobs.blobcontainerclient.getblobs?#Azure_Storage_Blobs_BlobContainerClient_GetBlobs_Azure_Storage_Blobs_Models_BlobTraits_Azure_Storage_Blobs_Models_BlobStates_System_String_System_Threading_CancellationToken_) on a container that does not exist will result in an exception.  A [Pageable<BlobItem>](/dotnet/api/azure.pageable-1) collection will be returned.
+To list the blobs in a container, call the [GetBlobs()](/dotnet/api/azure.storage.blobs.blobcontainerclient.getblobs?#Azure_Storage_Blobs_BlobContainerClient_GetBlobs_Azure_Storage_Blobs_Models_BlobTraits_Azure_Storage_Blobs_Models_BlobStates_System_String_System_Threading_CancellationToken_) method on a [BlobContainerClient](/dotnet/api/azure.storage.blobs.blobcontainerclient) object for the container. It is important to check for the existence of the blob container as calling [GetBlobs()](/dotnet/api/azure.storage.blobs.blobcontainerclient.getblobs?#Azure_Storage_Blobs_BlobContainerClient_GetBlobs_Azure_Storage_Blobs_Models_BlobTraits_Azure_Storage_Blobs_Models_BlobStates_System_String_System_Threading_CancellationToken_) on a container that does not exist will result in an exception.  A [Pageable\<BlobItem\>](/dotnet/api/azure.pageable-1) collection will be returned.
 
 In the example application, this collection is mapped into Model objects defined by the application before being returned.  Among the properties available on for each blob are the name of the blob, any tags on the blob, its content type, its creation date and its size in bytes.
 
@@ -358,14 +304,18 @@ public IEnumerable<BlobInfoModel> ListBlobsInContainer(string containerName)
 
 ### Upload a blob
 
+To upload a blob, first get a [BlobContainerClient](/dotnet/api/azure.storage.blobs.blobcontainerclient) object for the container you want to upload the blob to.  Then call the [GetBlobClient()](/dotnet/api/azure.storage.blobs.blobcontainerclient.getblobclient#Azure_Storage_Blobs_BlobContainerClient_GetBlobClient_System_String_) with the name of the blob to be uploaded to get a [BlobClient](/dotnet/api/azure.storage.blobs.blobclient) class.  
+
+The [BlobClient](/dotnet/api/azure.storage.blobs.blobclient) class contains multiple [Upload()](https://docs.microsoft.com/en-us/dotnet/api/azure.storage.blobs.blobclient.upload#Azure_Storage_Blobs_BlobClient_Upload_System_IO_Stream_Azure_Storage_Blobs_Models_BlobUploadOptions_System_Threading_CancellationToken_) methods to upload the contents of a blob to Azure Blob storage.  This example uses a [BlobUploadOptions](/en-us/dotnet/api/azure.storage.blobs.models.blobuploadoptions) object to set the ContentType of the blob and uploads it as a Stream.  There are also overloads available to [upload a blob from a file path](dotnet/api/azure.storage.blobs.blobclient.upload#Azure_Storage_Blobs_BlobClient_Upload_System_String_) and to [upload a blob from an array of bytes](/dotnet/api/azure.storage.blobs.blobclient.upload#Azure_Storage_Blobs_BlobClient_Upload_System_BinaryData_)
+
 ```csharp
     public void UploadBlob(string containerName, string blobName, string contentType, Stream content)
     {
-        var containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
+        BlobContainerClient containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
         if (!containerClient.Exists())
             throw new ApplicationException($"Unable to upload blobs to container '{containerName}' as the container does not exists");
 
-        var blobClient = containerClient.GetBlobClient(blobName);
+        BlobClient blobClient = containerClient.GetBlobClient(blobName);
         var options = new BlobUploadOptions() { HttpHeaders = new BlobHttpHeaders() { ContentType = contentType } };
         var response = blobClient.Upload(content, options);                        
     }

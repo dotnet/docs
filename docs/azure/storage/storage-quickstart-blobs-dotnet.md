@@ -27,7 +27,7 @@ You first need to create a resource group and storage account in Azure for the s
 
 ### [Azure CLI](#tab/azure-cli)
 
-Storage accounts are created using the [az storage account create](/cli/azure/storage/account?view=azure-cli-latest#az_storage_account_create) command.  Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only.  Storage account names must also be unique across Azure.
+Storage accounts are created using the [az storage account create](/cli/azure/storage/account#az_storage_account_create) command.  Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only.  Storage account names must also be unique across Azure.
 
 Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com) or on a workstation with the [Azure CLI installed](/cli/azure/install-azure-cli).
 
@@ -78,10 +78,10 @@ A Storage account can be created using the [Azure portal](https://portal.azure.c
 
 | Instructions    | Screenshot |
 |:----------------|-----------:|
-| [!INCLUDE [<create-storage-acct-1.md>](<./includes>)] | :::image type="content" source="./media/azportal-create-storage-account-1-240px.png" alt-text="A screenshot showing how to use the search box in the top tool bar to find storage accounts in Azure." lightbox="./media/azportal-create-storage-account-1.png"::: |
-| [!INCLUDE [<create-storage-acct-2.md>](<./includes>)] | :::image type="content" source="./media/azportal-create-storage-account-2-240px.png" alt-text="A screenshot showing the create button on the storage accounts page used to create a new storage account." lightbox="./media/azportal-create-storage-account-2.png"::: |
-| [!INCLUDE [<create-storage-acct-3.md>](<./includes>)] | :::image type="content" source="./media/azportal-create-storage-account-3-240px.png" alt-text="A screenshot showing the form to fill out to create a new storage account in Azure." lightbox="./media/azportal-create-storage-account-3.png"::: |
-| [!INCLUDE [<create-storage-acct-4.md>](<./includes>)] | :::image type="content" source="./media/azportal-create-storage-account-4-240px.png" alt-text="A screenshot of the completion page after a storage account has been created.  This page contains a button which will take you to the just created storage account." lightbox="./media/azportal-create-storage-account-4.png"::: |
+| [!INCLUDE [Create storage account step 1](<./includes/create-storage-acct-1.md>)] | :::image type="content" source="./media/azportal-create-storage-account-1-240px.png" alt-text="A screenshot showing how to use the search box in the top tool bar to find storage accounts in Azure." lightbox="./media/azportal-create-storage-account-1.png"::: |
+| [!INCLUDE [Create storage account step 2](<./includes/create-storage-acct-4.md>)] | :::image type="content" source="./media/azportal-create-storage-account-2-240px.png" alt-text="A screenshot showing the create button on the storage accounts page used to create a new storage account." lightbox="./media/azportal-create-storage-account-2.png"::: |
+| [!INCLUDE [Create storage account step 3](<./includes/create-storage-acct-3.md>)] | :::image type="content" source="./media/azportal-create-storage-account-3-240px.png" alt-text="A screenshot showing the form to fill out to create a new storage account in Azure." lightbox="./media/azportal-create-storage-account-3.png"::: |
+| [!INCLUDE [Create storage account step 4](<./includes/create-storage-acct-4.md>)] | :::image type="content" source="./media/azportal-create-storage-account-4-240px.png" alt-text="A screenshot of the completion page after a storage account has been created.  This page contains a button which will take you to the just created storage account." lightbox="./media/azportal-create-storage-account-4.png"::: |
 
 ---
 
@@ -306,7 +306,7 @@ public IEnumerable<BlobInfoModel> ListBlobsInContainer(string containerName)
 
 To upload a blob, first get a [BlobContainerClient](/dotnet/api/azure.storage.blobs.blobcontainerclient) object for the container you want to upload the blob to.  Then call the [GetBlobClient()](/dotnet/api/azure.storage.blobs.blobcontainerclient.getblobclient#Azure_Storage_Blobs_BlobContainerClient_GetBlobClient_System_String_) with the name of the blob to be uploaded to get a [BlobClient](/dotnet/api/azure.storage.blobs.blobclient) class.  
 
-The [BlobClient](/dotnet/api/azure.storage.blobs.blobclient) class contains multiple [Upload()](https://docs.microsoft.com/en-us/dotnet/api/azure.storage.blobs.blobclient.upload#Azure_Storage_Blobs_BlobClient_Upload_System_IO_Stream_Azure_Storage_Blobs_Models_BlobUploadOptions_System_Threading_CancellationToken_) methods to upload the contents of a blob to Azure Blob storage.  This example uses a [BlobUploadOptions](/en-us/dotnet/api/azure.storage.blobs.models.blobuploadoptions) object to set the ContentType of the blob and uploads it as a Stream.  There are also overloads available to [upload a blob from a file path](dotnet/api/azure.storage.blobs.blobclient.upload#Azure_Storage_Blobs_BlobClient_Upload_System_String_) and to [upload a blob from an array of bytes](/dotnet/api/azure.storage.blobs.blobclient.upload#Azure_Storage_Blobs_BlobClient_Upload_System_BinaryData_)
+The [BlobClient](/dotnet/api/azure.storage.blobs.blobclient) class contains multiple [Upload()](/dotnet/api/azure.storage.blobs.blobclient.upload#Azure_Storage_Blobs_BlobClient_Upload_System_IO_Stream_Azure_Storage_Blobs_Models_BlobUploadOptions_System_Threading_CancellationToken_) methods to upload the contents of a blob to Azure Blob storage.  This example uses a [BlobUploadOptions](/en-us/dotnet/api/azure.storage.blobs.models.blobuploadoptions) object to set the ContentType of the blob and uploads it as a Stream.  There are also overloads available to [upload a blob from a file path](/dotnet/api/azure.storage.blobs.blobclient.upload#Azure_Storage_Blobs_BlobClient_Upload_System_String_) and to [upload a blob from an array of bytes](/dotnet/api/azure.storage.blobs.blobclient.upload#Azure_Storage_Blobs_BlobClient_Upload_System_BinaryData_)
 
 ```csharp
     public void UploadBlob(string containerName, string blobName, string contentType, Stream content)

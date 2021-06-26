@@ -1,4 +1,5 @@
 On the **Create a storage account** page, fill out the form as follows.
+
 1. Create a new resource group for the storage account named `rg-msdocs-blob-storage-demo` by selecting the **Create new** link under **Resource group**.
 1. Give your storage account a name of `stblobstoragedemoXYZ` where XYZ are any three random digits.  Storage account names must be between 3 and 24 characters long and contain only lower case letters and numbers.
 1. Select the region for your storage account.

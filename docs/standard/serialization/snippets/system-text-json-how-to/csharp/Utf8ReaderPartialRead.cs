@@ -29,6 +29,7 @@ namespace SystemTextJsonSamples
             // If it might be closed or empty, check if the return value is 0.
             stream.Read(buffer);
 
+            // We set isFinalBlock to false since we expect more data in a subsequent read from the stream.
             var reader = new Utf8JsonReader(buffer, isFinalBlock: false, state: default);
             Console.WriteLine($"String in buffer is: {Encoding.UTF8.GetString(buffer)}");
 

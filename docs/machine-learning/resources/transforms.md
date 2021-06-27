@@ -98,6 +98,10 @@ Other data transformations don't require training data. For example: the <xref:M
 | <xref:Microsoft.ML.TimeSeriesCatalog.ForecastBySsa%2A> | Forecast time series data using singular spectrum analysis (SSA) | No |
 | <xref:Microsoft.ML.TimeSeriesCatalog.DetectSpikeBySsa%2A> | Detect spikes in time series data using singular spectrum analysis (SSA) | No |
 | <xref:Microsoft.ML.TimeSeriesCatalog.DetectIidSpike%2A> | Detect spikes in independent and identically distributed (IID) time series data using adaptive kernel density estimations and martingale scores | No |
+| <xref:Microsoft.ML.TimeSeriesCatalog.DetectEntireAnomalyBySrCnn%2A> | Detect anomalies for the entire input data using the SRCNN algorithm. | No |
+| <xref:Microsoft.ML.TimeSeriesCatalog.DetectSeasonality%2A> | Detect seasonality using fourier analysis. | No |
+| <xref:Microsoft.ML.TimeSeriesCatalog.LocalizeRootCause%2A> | Localizes root cause from time series input using a decision tree algorithm. | No |
+| <xref:Microsoft.ML.TimeSeriesCatalog.LocalizeRootCauses%2A> | Localizes root causes from tie series input. | No |
 
 ## Missing values
 
@@ -146,5 +150,7 @@ Other data transformations don't require training data. For example: the <xref:M
 
 | Transform | Definition | ONNX Exportable |
 | --- | --- | --- |
+| <xref:Microsoft.ML.CustomMappingCatalog.FilterByCustomPredicate%2A> | Drops rows where a specified predicate returns true. | No |
+| <xref:Microsoft.ML.CustomMappingCatalog.FilterByStatefulCustomPredicate%2A> | Drops rows where a specified predicate returns true, but allows for a specified state. | No |
 | <xref:Microsoft.ML.CustomMappingCatalog.CustomMapping%2A> | Transform existing columns onto new ones with a user-defined mapping | No |
 | <xref:Microsoft.ML.ExpressionCatalog.Expression%2A> | Apply an expression to transform columns into new ones | No |

@@ -97,7 +97,7 @@ namespace RoundtripDataTable
                             DateTime value => key => writer.WriteString(key, value),
                             Guid value => key => writer.WriteString(key, value),
 
-                            { } value => key => writer.WriteString(key, value)
+                            _ => key => writer.WriteString(key, row[column].ToString())
                         };
                 }
                 jsonWriter.WriteEndObject();

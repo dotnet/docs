@@ -14,6 +14,7 @@ namespace IAsyncEnumerableSerialize
             var data = new { Data = PrintNumbers(3) };
             await JsonSerializer.SerializeAsync(stream, data);
         }
+
         static async IAsyncEnumerable<int> PrintNumbers(int n)
         {
             for (int i = 0; i < n; i++)

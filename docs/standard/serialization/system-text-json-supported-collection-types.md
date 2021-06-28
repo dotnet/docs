@@ -66,15 +66,6 @@ The following sections are organized by namespace and show which types are suppo
 |-----------------------------------------------------------|---------------|-----------------|
 | <xref:System.Collections.Generic.Dictionary%602> \*       | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.HashSet%601>             | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.KeyValuePair%602>        | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.LinkedList%601>          | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.LinkedListNode%601>      | ✔️           | ❌              |
-| <xref:System.Collections.Generic.List%601>                | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.Queue%601>               | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.SortedDictionary%602> \* | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.SortedList%602> \*       | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.SortedSet%601>           | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.Stack%601>               | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.IAsyncEnumerable%601> \*\* | ✔️         | ✔️              |
 | <xref:System.Collections.Generic.ICollection%601>         | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.IDictionary%602> \*      | ✔️           | ✔️              |
@@ -84,6 +75,15 @@ The following sections are organized by namespace and show which types are suppo
 | <xref:System.Collections.Generic.IReadOnlyDictionary%602> \* | ✔️        | ✔️              |
 | <xref:System.Collections.Generic.IReadOnlyList%601>       | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.ISet%601>                | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.KeyValuePair%602>        | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.LinkedList%601>          | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.LinkedListNode%601>      | ✔️           | ❌              |
+| <xref:System.Collections.Generic.List%601>                | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.Queue%601>               | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.SortedDictionary%602> \* | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.SortedList%602> \*       | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.SortedSet%601>           | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.Stack%601>               | ✔️           | ✔️              |
 
 \* See [Supported key types](#supported-key-types).
 
@@ -93,7 +93,7 @@ The following sections are organized by namespace and show which types are suppo
 
 The following examples use streams as a representation of any async source of data. The source could be files on a local machine, or results from a database query or web service API call.
 
-#### Streaming serialization
+#### Stream serialization
 
 `System.Text.Json` supports serializing <xref:System.Collections.Generic.IAsyncEnumerable%601> values as JSON arrays, as shown in the following example:
 
@@ -101,7 +101,7 @@ The following examples use streams as a representation of any async source of da
 
 `IAsyncEnumerable<T>` values are only supported by the asynchronous serialization methods, such as <xref:System.Text.Json.JsonSerializer.SerializeAsync%2A?displayProperty=nameWithType>.
 
-#### Streaming deserialization
+#### Stream deserialization
 
 The `DeserializeAsyncEnumerable` method supports streaming deserialization, as shown in the following example:
 

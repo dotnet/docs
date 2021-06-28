@@ -76,28 +76,28 @@ namespace RoundtripDataTable
                     action.Invoke(key);
 
                     static Action<string> GetWriteAction(
-                        DataRow row, DataColumn column, Utf8JsonWriter writer) => column.DataType switch
+                        DataRow row, DataColumn column, Utf8JsonWriter writer) => row[column] switch
                         {
                             // bool
-                            _ when column.DataType == typeof(bool) => key => writer.WriteBoolean(key, (bool)row[column]),
+                            bool value => key => writer.WriteBoolean(key, value),
 
                             // numbers
-                            _ when column.DataType == typeof(byte) => key => writer.WriteNumber(key, (byte)row[column]),
-                            _ when column.DataType == typeof(sbyte) => key => writer.WriteNumber(key, (sbyte)row[column]),
-                            _ when column.DataType == typeof(decimal) => key => writer.WriteNumber(key, (decimal)row[column]),
-                            _ when column.DataType == typeof(double) => key => writer.WriteNumber(key, (double)row[column]),
-                            _ when column.DataType == typeof(float) => key => writer.WriteNumber(key, (float)row[column]),
-                            _ when column.DataType == typeof(short) => key => writer.WriteNumber(key, (short)row[column]),
-                            _ when column.DataType == typeof(int) => key => writer.WriteNumber(key, (int)row[column]),
-                            _ when column.DataType == typeof(ushort) => key => writer.WriteNumber(key, (ushort)row[column]),
-                            _ when column.DataType == typeof(uint) => key => writer.WriteNumber(key, (uint)row[column]),
-                            _ when column.DataType == typeof(ulong) => key => writer.WriteNumber(key, (ulong)row[column]),
+                            byte value => key => writer.WriteNumber(key, value),
+                            sbyte value => key => writer.WriteNumber(key, value),
+                            decimal value => key => writer.WriteNumber(key, value),
+                            double value => key => writer.WriteNumber(key, value),
+                            float value => key => writer.WriteNumber(key, value),
+                            short value => key => writer.WriteNumber(key, value),
+                            int value => key => writer.WriteNumber(key, value),
+                            ushort value => key => writer.WriteNumber(key, value),
+                            uint value => key => writer.WriteNumber(key, value),
+                            ulong value => key => writer.WriteNumber(key, value),
 
                             // strings
-                            _ when column.DataType == typeof(DateTime) => key => writer.WriteString(key, (DateTime)row[column]),
-                            _ when column.DataType == typeof(Guid) => key => writer.WriteString(key, (Guid)row[column]),
+                            DateTime value => key => writer.WriteString(key, value),
+                            Guid value => key => writer.WriteString(key, value),
 
-                            _ => key => writer.WriteString(key, row[column].ToString())
+                            { } value => key => writer.WriteString(key, value)
                         };
                 }
                 jsonWriter.WriteEndObject();

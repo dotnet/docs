@@ -255,6 +255,21 @@ Two projects are created as a result of the training process.
     Top: 89.453415, Left: 481.95343, Right: 724.8073, Bottom: 388.32385, Label: Stop-Sign, Score: 0.99539465
     ```
 
+    > [!NOTE]
+    >The bounding box coordinates are normalized for a width of 800 pixels and height of 600 pixels. To scale the coordinates for your image, you need to:
+    >
+    >    1. Multiply top and bottom coordinates by the original image height / multiply left and right coordinates by the original image width.
+    >    1. Divide top and bottom coordinates by 600 / divide left and right coordinates by 800.
+    >
+    >    For example, given the original image dimensions (`actualImageHeight`,`actualImageWidth`) and a prediction `prediction` with bounding boxes:
+    >
+    >    ```csharp
+    >    var top = originalImageHeight * prediction.Top / 600
+    >    var bottom = originalImageHeight * prediction.Bottom / 600
+    >    var left = originalImageWidth * prediction.Left / 800
+    >    var right = originalImageWidth * prediction.Right / 800
+    >    ```
+
 Congratulations! You've successfully built a machine learning model to detect stop signs in images using Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/modelbuilder/ObjectDetection_StopSigns) GitHub repository.
 
 ## Additional resources

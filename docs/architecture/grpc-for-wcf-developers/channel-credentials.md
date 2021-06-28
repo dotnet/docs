@@ -1,7 +1,7 @@
 ---
 title: Channel credentials - gRPC for WCF Developers
 description: How to implement and use gRPC channel credentials in ASP.NET Core 3.0.
-ms.date: 12/15/2020
+ms.date: 06/28/2021
 ---
 
 # Channel credentials
@@ -93,6 +93,9 @@ public class Startup
 With the `Grpc.Net.Client` package, you configure certificates on an <xref:System.Net.Http.HttpClient> instance that is provided to the `GrpcChannel` used for the connection.
 
 ### Load a client certificate from a .PFX file
+
+A certificate can be loaded from a _.pfx_ file.
+
 ```csharp
 class Program
 {
@@ -119,6 +122,9 @@ class Program
 ```
 
 ### Load a client certificate from certificate and private key .PEM files
+
+A certificate can be loaded from a certificate and private key _.pem_ file.
+
 ```csharp
 class Program
 {
@@ -144,6 +150,7 @@ class Program
     }
 }
 ```
+
 > [!NOTE]
 > Due to an internal Windows bug as [documented here](https://github.com/dotnet/runtime/issues/23749#issuecomment-388231655), you'll need to apply the following a workaround if the certificate is created from certificate and private key PEM data.
 > 

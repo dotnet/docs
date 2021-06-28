@@ -59,9 +59,9 @@ For more information about how to pass reference types by reference and by value
 
 ## Return values
 
-Methods can return a value to the caller. If the return type, the type listed before the method name, is not `void`, the method can return the value by using the `return` keyword. A statement with the `return` keyword followed by a value that matches the return type will return that value to the method caller.
+Methods can return a value to the caller. If the return type (the type listed before the method name) is not `void`, the method can return the value by using the `return` keyword. A statement with the `return` keyword followed by a value that matches the return type will return that value to the method caller.
 
-The value can be returned to the caller by value or, starting with C# 7.0, [by reference](ref-returns.md). Values are returned to the caller by reference if the `ref` keyword is used in the method signature and it follows each `return` keyword. For example, the following method signature and return statement indicate that the method returns a variable names `estDistance` by reference to the caller.
+The value can be returned to the caller by value or, starting with C# 7.0, [by reference](ref-returns.md). Values are returned to the caller by reference if the `ref` keyword is used in the method signature and it follows each `return` keyword. For example, the following method signature and return statement indicate that the method returns a variable named `estDistance` by reference to the caller.
 
 ```csharp
 public ref double GetEstimatedDistance()

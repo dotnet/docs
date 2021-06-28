@@ -261,7 +261,7 @@ Two projects are created as a result of the training process.
     >    1. Multiply top and bottom coordinates by the original image height, and multiply left and right coordinates by the original image width.
     >    1. Divide top and bottom coordinates by 600, and divide left and right coordinates by 800.
     >
-    >    For example, given the original image dimensions (`actualImageHeight`,`actualImageWidth`) and a prediction `prediction` with bounding boxes:
+    >    For example, given the original image dimensions,`actualImageHeight` and `actualImageWidth`, and a prediction `prediction` with bounding box coordinates, the following code snippet shows how to scale the bounding box dimensions:
     >
     >    ```csharp
     >    var top = originalImageHeight * prediction.Top / 600;

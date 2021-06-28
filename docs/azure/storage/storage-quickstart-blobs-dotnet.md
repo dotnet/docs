@@ -389,7 +389,7 @@ Remove-AzResourceGroup -Name $resourceGroupName
 
 ### [Azure Portal](#tab/azure-portal)
 
-In the [Azure Portal](https://portal.azure.com/), navigate to the storage account and retrieve the connection string using the following instruction.
+A resource group can be deleted using the [Azure Portal](https://portal.azure.com/) by doing the following.
 
 | Instructions    | Screenshot |
 |:----------------|-----------:|

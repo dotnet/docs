@@ -20,13 +20,13 @@ Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other option
 
 Place this in the project file to ensure that the setting applies during `dotnet build`, not just `dotnet publish`.
 
-This will trim any assemblies which have been configured for trimming. With `Microsoft.NET.Sdk` in .NET 6, this includes the any assemblies with `[AssemblyMetadata("IsTrimmable", "True")]`, which is the case for framework assemblies. In .NET 5, framework assemblies from the netcoreapp runtime pack are configured for trimming via `<IsTrimmable>` MSBuild metadata. Other SDKs may define different defaults.
+This will trim any assemblies that have been configured for trimming. With `Microsoft.NET.Sdk` in .NET 6, this includes the any assemblies with `[AssemblyMetadata("IsTrimmable", "True")]`, which is the case for framework assemblies. In .NET 5, framework assemblies from the netcoreapp runtime pack are configured for trimming via `<IsTrimmable>` MSBuild metadata. Other SDKs may define different defaults.
 
 Starting in .NET 6, this setting also enables the trim compatibility [Roslyn analyzer](#roslyn-analyzer), and disables [features](#trimming-framework-library-features) which are incompatible with trimming.
 
 ## Trimming granularity
 
-The following granularity settings control how aggressively unused IL is discarded. This can be set as a property affecting all trimmer input assemblies, or as metadata on an [individual assembly](#trimmed-assemblies) which overrides the property setting.
+The following granularity settings control how aggressively unused IL is discarded. This can be set as a property affecting all trimmer input assemblies, or as metadata on an [individual assembly](#trimmed-assemblies), which overrides the property setting.
 
 - `<TrimMode>link</TrimMode>`
 

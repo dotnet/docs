@@ -16,7 +16,7 @@ namespace RoundtripDataTable
 
     public static class Program
     {
-        public static List<WeatherForecast> weatherForecasts = new List<WeatherForecast>()
+        public static List<WeatherForecast> weatherForecasts = new()
         {
             new WeatherForecast { Date = new DateTime(2019, 8, 1), TemperatureCelsius = 25, Summary = "Hot" },
             new WeatherForecast { Date = new DateTime(2019, 8, 2), TemperatureCelsius = 20, Summary = "Warm" },
@@ -72,66 +72,33 @@ namespace RoundtripDataTable
                 {
                     string key = col.ColumnName.Trim();
 
-                    if (col.DataType == typeof(bool))
-                    {
-                        jsonWriter.WriteBoolean(key, (bool)dr[col]);
-                    }
-                    else if (col.DataType == typeof(byte))
-                    {
-                        jsonWriter.WriteNumber(key, (byte)dr[col]);
-                    }
-                    else if (col.DataType == typeof(sbyte))
-                    {
-                        jsonWriter.WriteNumber(key, (sbyte)dr[col]);
-                    }
-                    else if (col.DataType == typeof(decimal))
-                    {
-                        jsonWriter.WriteNumber(key, (decimal)dr[col]);
-                    }
-                    else if (col.DataType == typeof(double))
-                    {
-                        jsonWriter.WriteNumber(key, (double)dr[col]);
-                    }
-                    else if (col.DataType == typeof(float))
-                    {
-                        jsonWriter.WriteNumber(key, (float)dr[col]);
-                    }
-                    else if (col.DataType == typeof(short))
-                    {
-                        jsonWriter.WriteNumber(key, (short)dr[col]);
-                    }
-                    else if (col.DataType == typeof(int))
-                    {
-                        jsonWriter.WriteNumber(key, (int)dr[col]);
-                    }
-                    else if (col.DataType == typeof(long))
-                    {
-                        jsonWriter.WriteNumber(key, (long)dr[col]);
-                    }
-                    else if (col.DataType == typeof(ushort))
-                    {
-                        jsonWriter.WriteNumber(key, (ushort)dr[col]);
-                    }
-                    else if (col.DataType == typeof(uint))
-                    {
-                        jsonWriter.WriteNumber(key, (uint)dr[col]);
-                    }
-                    else if (col.DataType == typeof(ulong))
-                    {
-                        jsonWriter.WriteNumber(key, (ulong)dr[col]);
-                    }
-                    else if (col.DataType == typeof(DateTime))
-                    {
-                        jsonWriter.WriteString(key, (DateTime)dr[col]);
-                    }
-                    else if (col.DataType == typeof(Guid))
-                    {
-                        jsonWriter.WriteString(key, (Guid)dr[col]);
-                    }
-                    else
-                    {
-                        jsonWriter.WriteString(key, dr[col].ToString());
-                    }
+                    Action<string> action = GetWriteAction(dr, col, jsonWriter);
+                    action.Invoke(key);
+
+                    static Action<string> GetWriteAction(
+                        DataRow row, DataColumn column, Utf8JsonWriter writer) => row[column] switch
+                        {
+                            // bool
+                            bool value => key => writer.WriteBoolean(key, value),
+
+                            // numbers
+                            byte value => key => writer.WriteNumber(key, value),
+                            sbyte value => key => writer.WriteNumber(key, value),
+                            decimal value => key => writer.WriteNumber(key, value),
+                            double value => key => writer.WriteNumber(key, value),
+                            float value => key => writer.WriteNumber(key, value),
+                            short value => key => writer.WriteNumber(key, value),
+                            int value => key => writer.WriteNumber(key, value),
+                            ushort value => key => writer.WriteNumber(key, value),
+                            uint value => key => writer.WriteNumber(key, value),
+                            ulong value => key => writer.WriteNumber(key, value),
+
+                            // strings
+                            DateTime value => key => writer.WriteString(key, value),
+                            Guid value => key => writer.WriteString(key, value),
+
+                            _ => key => writer.WriteString(key, row[column].ToString())
+                        };
                 }
                 jsonWriter.WriteEndObject();
             }

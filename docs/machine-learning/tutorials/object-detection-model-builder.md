@@ -258,7 +258,7 @@ Two projects are created as a result of the training process.
     > [!NOTE]
     >The bounding box coordinates are normalized for a width of 800 pixels and height of 600 pixels. To scale the coordinates for your image, you need to:
     >
-    >    1. Multiply top and bottom coordinates by the original image height / multiply left and right coordinates by the original image width.
+    >    1. Multiply top and bottom coordinates by the original image height, and multiply left and right coordinates by the original image width.
     >    1. Divide top and bottom coordinates by 600 / divide left and right coordinates by 800.
     >
     >    For example, given the original image dimensions (`actualImageHeight`,`actualImageWidth`) and a prediction `prediction` with bounding boxes:

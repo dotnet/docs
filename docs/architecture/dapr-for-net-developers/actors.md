@@ -2,7 +2,7 @@
 title: The Dapr actors building block
 description: A deep dive into the Dapr actors building block and how to apply it
 author: amolenk
-ms.date: 06/22/2021
+ms.date: 06/26/2021
 ---
 
 # The Dapr actors building block
@@ -110,7 +110,7 @@ public int Increment()
 
 Unfortunately, using explicit locking mechanisms is error-prone. They can easily lead to deadlocks and can have serious impact on performance.
 
-Thanks to the turn-based access model, you don't need to worry about multiple threads with actors, making it much easier to concurrent systems. The following actor example closely mirrors the code from the previous sample, but doesn't require any locking mechanisms to be correct:
+Thanks to the turn-based access model, you don't need to worry about multiple threads with actors, making it much easier to write concurrent systems. The following actor example closely mirrors the code from the previous sample, but doesn't require any locking mechanisms to be correct:
 
 ```csharp
 public async Task<int> IncrementAsync()
@@ -168,8 +168,10 @@ Actor state is persisted using the Dapr [state management building block](state-
 
 - Azure Cosmos DB
 - MongoDB
+- MySQL
 - PostgreSQL
 - Redis
+- RethinkDB
 - SQL Server
 
 To configure a state store component for use with actors, you need to append the following metadata to the state store configuration:
@@ -200,7 +202,7 @@ spec:
 
 ## Use the Dapr .NET SDK
 
-You can create an actor model implementation using only HTTP/gRPC calls. However, it's much more convenient to use the language specific Dapr SDKs. At the time of writing, both the .NET and Java SDKs provide extensive support for working with actors.
+You can create an actor model implementation using only HTTP/gRPC calls. However, it's much more convenient to use the language specific Dapr SDKs. At the time of writing, the .NET, Java and Python SDKs all provide extensive support for working with actors.
 
 To get started with the .NET Dapr actors SDK, you add a package reference to [`Dapr.Actors`](https://www.nuget.org/packages/Dapr.Actors) to your service project. The first step of creating an actual actor is to define an interface that derives from `IActor`. Clients use the interface to invoke operations on the actor. Here's a simple example of an actor interface for keeping scores:
 
@@ -288,7 +290,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 The actors endpoints are necessary because the Dapr sidecar calls the application to host and interact with actor instances.
 
 > [!IMPORTANT]
-> By default, a generated `Startup` class contains an `app.UseHttpsRedirection` call to redirect client to the HTTPS endpoint. This will not work with actors and must be removed. By design, a Dapr sidecar sends requests over unencrypted HTTP by default. The HTTPS middleware will block these requests when enabled.
+> Make sure your `Startup` class does not contain an `app.UseHttpsRedirection` call to redirect clients to the HTTPS endpoint. This will not work with actors. By design, a Dapr sidecar sends requests over unencrypted HTTP by default. The HTTPS middleware will block these requests when enabled.
 
 The `Startup` class is also the place to register the specific actor types. In the example below, `ConfigureServices` registers the `ScoreActor` using `services.AddActors`:
 

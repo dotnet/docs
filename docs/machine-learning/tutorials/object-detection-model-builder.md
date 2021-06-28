@@ -264,10 +264,10 @@ Two projects are created as a result of the training process.
     >    For example, given the original image dimensions (`actualImageHeight`,`actualImageWidth`) and a prediction `prediction` with bounding boxes:
     >
     >    ```csharp
-    >    var top = originalImageHeight * prediction.Top / 600
-    >    var bottom = originalImageHeight * prediction.Bottom / 600
-    >    var left = originalImageWidth * prediction.Left / 800
-    >    var right = originalImageWidth * prediction.Right / 800
+    >    var top = originalImageHeight * prediction.Top / 600;
+    >    var bottom = originalImageHeight * prediction.Bottom / 600;
+    >    var left = originalImageWidth * prediction.Left / 800;
+    >    var right = originalImageWidth * prediction.Right / 800;
     >    ```
 
 Congratulations! You've successfully built a machine learning model to detect stop signs in images using Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/modelbuilder/ObjectDetection_StopSigns) GitHub repository.

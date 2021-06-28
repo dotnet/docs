@@ -393,9 +393,9 @@ In the [Azure Portal](https://portal.azure.com/), navigate to the storage accoun
 
 | Instructions    | Screenshot |
 |:----------------|-----------:|
-| [!INCLUDE [Delete resource group step 1](<./includes/delete-resource-group-1.md>)] | :::image type="content" source="./media/azportal-delete-resource-group-1-240px.png" alt-text="A screenshot showing how to use the search box in the top toolbar to find a resource group in Azure." lightbox="./media/azportal-delete-resource-group-1.png"::: |
-| [!INCLUDE [Delete resource group step 2](<./includes/delete-resource-group-2.md>)] | :::image type="content" source="./media/azportal-delete-resource-group-2-240px.png" alt-text="A screenshot highlighting the location of the "Delete resource group" button on the resource group page." lightbox="./media/azportal-delete-resource-group-2.png"::: |
-| [!INCLUDE [Delete resource group step 3](<./includes/delete-resource-group-3.md>)] | :::image type="content" source="./media/azportal-delete-resource-group-3-240px.png" alt-text="A screenshot showing the dialog you must fill out to delete a resource group, including typing the full name of the resource group in a text box to confirm deletion." lightbox="./media/azportal-delete-resource-group-3.png"::: |
+| [!INCLUDE [Delete resource group step 1](<./includes/delete-resource-group-1.md>)] | :::image type="content" source="./media/azportal-delete-resource-group-1-240px.png" alt-text="Azure screenshot 1." lightbox="./media/azportal-delete-resource-group-1.png"::: |
+| [!INCLUDE [Delete resource group step 2](<./includes/delete-resource-group-2.md>)] | :::image type="content" source="./media/azportal-delete-resource-group-2-240px.png" alt-text="Azure screenshot 2" lightbox="./media/azportal-delete-resource-group-2.png"::: |
+| [!INCLUDE [Delete resource group step 3](<./includes/delete-resource-group-3.md>)] | :::image type="content" source="./media/azportal-delete-resource-group-3-240px.png" alt-text="Azure screenshot 3" lightbox="./media/azportal-delete-resource-group-3.png"::: |
 
 ---
 

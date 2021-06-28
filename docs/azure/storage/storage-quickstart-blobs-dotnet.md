@@ -1,7 +1,7 @@
 ---
 title: Accessing Azure Blob Storage from .NET applications
 description: Learn how to connect your applications to Azure Blob Storage
-ms.date: 06/02/2021
+ms.date: 06/26/2021
 ms.topic: article
 ms.custom: devx-track-dotnet
 ms.author: daberry
@@ -23,7 +23,7 @@ When complete, the sample application will allow you to create blob containers, 
 
 ## 1 - Create Azure Storage resources
 
-You first need to create a resource group and storage account in Azure for the sample application to use. This can be done using the Azure CLI or Azure PowerShell.
+You first need to create a resource group and storage account in Azure for the sample application to use. This can be done using the Azure CLI, Azure PowerShell or the Azure Portal.
 
 ### [Azure CLI](#tab/azure-cli)
 
@@ -74,12 +74,12 @@ New-AzStorageAccount `
 
 ### [Azure Portal](#tab/azure-portal)
 
-A Storage account can be created using the [Azure portal](https://portal.azure.com/) by following these steps.
+Login to the [Azure portal](https://portal.azure.com/) and follow these steps to create a Storage account.
 
 | Instructions    | Screenshot |
 |:----------------|-----------:|
 | [!INCLUDE [Create storage account step 1](<./includes/create-storage-acct-1.md>)] | :::image type="content" source="./media/azportal-create-storage-account-1-240px.png" alt-text="A screenshot showing how to use the search box in the top tool bar to find storage accounts in Azure." lightbox="./media/azportal-create-storage-account-1.png"::: |
-| [!INCLUDE [Create storage account step 2](<./includes/create-storage-acct-4.md>)] | :::image type="content" source="./media/azportal-create-storage-account-2-240px.png" alt-text="A screenshot showing the create button on the storage accounts page used to create a new storage account." lightbox="./media/azportal-create-storage-account-2.png"::: |
+| [!INCLUDE [Create storage account step 2](<./includes/create-storage-acct-2.md>)] | :::image type="content" source="./media/azportal-create-storage-account-2-240px.png" alt-text="A screenshot showing the create button on the storage accounts page used to create a new storage account." lightbox="./media/azportal-create-storage-account-2.png"::: |
 | [!INCLUDE [Create storage account step 3](<./includes/create-storage-acct-3.md>)] | :::image type="content" source="./media/azportal-create-storage-account-3-240px.png" alt-text="A screenshot showing the form to fill out to create a new storage account in Azure." lightbox="./media/azportal-create-storage-account-3.png"::: |
 | [!INCLUDE [Create storage account step 4](<./includes/create-storage-acct-4.md>)] | :::image type="content" source="./media/azportal-create-storage-account-4-240px.png" alt-text="A screenshot of the completion page after a storage account has been created.  This page contains a button which will take you to the just created storage account." lightbox="./media/azportal-create-storage-account-4.png"::: |
 
@@ -112,16 +112,12 @@ Write-Host $storageConnectionString
 
 ### [Azure Portal](#tab/azure-portal)
 
-Coming soon...
+In the [Azure Portal](https://portal.azure.com/), navigate to the storage account and retrieve the connection string using the following instruction.
 
-:::row:::
-   :::column span="3":::
-      **Step**
-   :::column-end:::
-   :::column span="":::
-      **Screenshot**
-   :::column-end:::
-:::row-end:::
+| Instructions    | Screenshot |
+|:----------------|-----------:|
+| [!INCLUDE [Create storage account step 1](<./includes/get-storage-conn-string-1.md>)] | :::image type="content" source="./media/azportal-get-storage-connection-string-1-240px.png" alt-text="A screenshot showing how to use the search box in the top tool bar to find storage accounts in Azure." lightbox="./media/azportal-get-storage-connection-string-1.png"::: |
+| [!INCLUDE [Create storage account step 1](<./includes/get-storage-con-string-2.md>)] | :::image type="content" source="./media/azportal-get-storage-connection-string-2-240px.png" alt-text="A screenshot showing the create button on the storage accounts page used to create a new storage account." lightbox="./media/azportal-get-storage-connection-string-2.png"::: |
 
 ---
 
@@ -374,5 +370,33 @@ As shown in this example, it is suggested the validate the existence of the cont
 ## Clean up resources
 
 When you are finished with the sample application, you should remove all Azure resources related to this article from your Azure account.  You can do this by deleting the resource group.
+
+### [Azure CLI](#tab/azure-cli)
+
+To delete a resource group using the Azure CLI, use the [az group delete](/cli/azure/group#az_group_delete) command with the name of the resource group to be deleted.  Deleting a resource group will also remove all Azure resources contained in the resource group.
+
+```azurecli
+az group delete --name $RESOURCE_GROUP_NAME
+```
+
+### [Azure PowerShell](#tab/azure-powershell)
+
+To delete a resource group using Azure PowerShell, use the [Remove-AzResourceGroup](/powershell/module/az.resources/remove-azresourcegroup) command with the name of the resource group to be deleted.  Deleting a resource group will also remove all Azure resources contained in the resource group.
+
+```azurepowershell
+Remove-AzResourceGroup -Name $resourceGroupName
+```
+
+### [Azure Portal](#tab/azure-portal)
+
+In the [Azure Portal](https://portal.azure.com/), navigate to the storage account and retrieve the connection string using the following instruction.
+
+| Instructions    | Screenshot |
+|:----------------|-----------:|
+| [!INCLUDE [Delete resource group step 1](<./includes/delete-resource-group-1.md>)] | :::image type="content" source="./media/azportal-delete-resource-group-1-240px.png" alt-text="A screenshot showing how to use the search box in the top toolbar to find a resource group in Azure." lightbox="./media/azportal-delete-resource-group-1.png"::: |
+| [!INCLUDE [Delete resource group step 2](<./includes/delete-resource-group-2.md>)] | :::image type="content" source="./media/azportal-delete-resource-group-2-240px.png" alt-text="A screenshot highlighting the location of the "Delete resource group" button on the resource group page." lightbox="./media/azportal-delete-resource-group-2.png"::: |
+| [!INCLUDE [Delete resource group step 3](<./includes/delete-resource-group-3.md>)] | :::image type="content" source="./media/azportal-delete-resource-group-3-240px.png" alt-text="A screenshot showing the dialog you must fill out to delete a resouce group.  This includes typing the full name of the resource group in a text box to confirm deletion." lightbox="./media/azportal-delete-resource-group-3.png"::: |
+
+---
 
 ## Next Steps

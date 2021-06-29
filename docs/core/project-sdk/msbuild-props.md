@@ -684,6 +684,7 @@ The following MSBuild properties are documented in this section:
 - [DisableImplicitFrameworkReferences](#disableimplicitframeworkreferences)
 - [Restore-related properties](#restore-related-properties)
 - [ValidateExecutableReferencesMatchSelfContained](#validateexecutablereferencesmatchselfcontained)
+- [DisableFrameworkReferenceAnalyzers](#disableframeworkreferenceanalyzers)
 
 ### AssetTargetFallback
 
@@ -726,6 +727,16 @@ The `ValidateExecutableReferencesMatchSelfContained` property can be used to dis
 ```xml
 <PropertyGroup>
   <ValidateExecutableReferencesMatchSelfContained>false</ValidateExecutableReferencesMatchSelfContained>
+</PropertyGroup>
+```
+
+### DisableFrameworkReferenceAnalyzers
+
+The `DisableFrameworkReferenceAnalyzers` property can be used to disable all analyzers and/or source generators that are resolved from `FrameworkReference` items.  Similar to [EnableNETAnalyzers](#enablenetanalyzers) which controls analyzers that come from the SDK, however this property can be used to disable analyzers that are part of the framework itself (for example, `net6.0`).
+
+```xml
+<PropertyGroup>
+  <DisableFrameworkReferenceAnalyzers>true</DisableFrameworkReferenceAnalyzers>
 </PropertyGroup>
 ```
 

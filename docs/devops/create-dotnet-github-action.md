@@ -46,13 +46,13 @@ References to the source code in this tutorial have portions of the app omitted 
 
 The .NET console app uses the [`CommandLineParser` NuGet](https://www.nuget.org/packages/CommandLineParser/) package to parse arguments into the `ActionInputs` object.
 
-:::code language="csharp" source="snippets/DotNet.GitHubAction/ActionInputs.cs":::
+:::code language="csharp" source="snippets/custom-action/DotNet.GitHubAction/ActionInputs.cs":::
 
 The preceding action inputs class defines several required inputs for the app to run successfully. The constructor will write the `"GREETINGS"` environment variable value, if one is available in the current execution environment. The `Name` and `Branch` properties are parsed and assigned from the last segment of a `"/"` delimited string.
 
 With the defined action inputs class, focus on the *Program.cs* file.
 
-:::code language="csharp" source="snippets/DotNet.GitHubAction/Program.cs":::
+:::code language="csharp" source="snippets/custom-action/DotNet.GitHubAction/Program.cs":::
 
 The `Program` file is simplified for brevity, to explore the full sample source, see [*Program.cs*](https://github.com/dotnet/samples/blob/main/github-actions/DotNet.GitHubAction/DotNet.GitHubAction/Program.cs). The mechanics in place demonstrate the boilerplate code required to use:
 

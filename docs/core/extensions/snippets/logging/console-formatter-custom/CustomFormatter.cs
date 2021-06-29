@@ -26,20 +26,15 @@ namespace Console.ExampleFormatters.Custom
             IExternalScopeProvider scopeProvider,
             TextWriter textWriter)
         {
-            if (logEntry.Exception is null)
-            {
-                return;
-            }
-
             string message =
                 logEntry.Formatter(
                     logEntry.State, logEntry.Exception);
-            
+
             if (message == null)
             {
                 return;
             }
-            
+
             CustomLogicGoesHere(textWriter);
             textWriter.WriteLine(message);
         }

@@ -9,11 +9,13 @@ ms.assetid: 5fca42f3-bdce-4b81-a704-61e42c89d3ba
 ---
 # How to: Enable and Disable Automatic Binding Redirection
 
-When you compile apps in Visual Studio that target the .NET Framework 4.5.1 and later versions, binding redirects may be automatically added to the app configuration file to override assembly unification. Binding redirects are added if your app or its components reference more than one version of the same assembly, even if you manually specify binding redirects in the configuration file for your app. The automatic binding redirection feature affects desktop apps and web apps that target the .NET Framework 4.5.1 or a later version, although the behavior is slightly different for a web app. You can enable automatic binding redirection if you have existing apps that target previous versions of the .NET Framework, or you can disable this feature if you want to manually author binding redirects.
+When you compile apps in Visual Studio that target .NET Framework 4.5.1 and later versions, binding redirects may be automatically added to the app configuration file to override assembly unification. Binding redirects are added if your app or its components reference more than one version of the same assembly, even if you manually specify binding redirects in the configuration file for your app. The automatic binding redirection feature affects desktop apps and web apps that target .NET Framework 4.5.1 or a later version, although the behavior is slightly different for a web app. You can enable automatic binding redirection if you have existing apps that target previous versions of the .NET Framework, or you can disable this feature if you want to manually author binding redirects.
+
+[!INCLUDE [net-framework-vs](../../../includes/net-framework-vs.md)]
 
 ## Disable automatic binding redirects in desktop apps
 
-Automatic binding redirects are enabled by default for Windows desktop apps that target the .NET Framework 4.5.1 and later versions. The binding redirects are added to the output configuration (**app.config**) file when the app is compiled and override the assembly unification that might otherwise take place. The source **app.config** file is not modified. You can disable this feature by modifying the project file for the app or by deselecting a checkbox in the project's properties in Visual Studio.
+Automatic binding redirects are enabled by default for Windows desktop apps that target .NET Framework 4.5.1 and later versions. The binding redirects are added to the output configuration (**app.config**) file when the app is compiled and override the assembly unification that might otherwise take place. The source **app.config** file is not modified. You can disable this feature by modifying the project file for the app or by deselecting a checkbox in the project's properties in Visual Studio.
 
 ### Disable through project properties
 

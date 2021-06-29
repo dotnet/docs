@@ -87,5 +87,5 @@ This topic outlines some best practices for hosting Windows Communication Founda
   
 ## See also
 
-- [Service Hosting Samples](../samples/hosting.md)
+- [Service Hosting Samples](/previous-versions/dotnet/framework/wcf/samples/hosting)
 - [Windows Server App Fabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10))

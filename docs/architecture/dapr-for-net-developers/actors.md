@@ -208,7 +208,7 @@ To get started with the .NET Dapr actors SDK, you add a package reference to [`D
 
 ```csharp
 public interface IScoreActor : IActor
-{       
+{
     Task<int> IncrementScoreAsync();
 
     Task<int> GetScoreAsync();
@@ -316,7 +316,7 @@ static async Task MainAsync(string[] args)
     var proxy = ActorProxy.Create<IScoreActor>(actorId, "ScoreActor");
 
     var score = await proxy.IncrementScoreAsync();
-    
+
     Console.WriteLine($"Current score: {score}");
 }
 ```
@@ -346,7 +346,7 @@ public void ConfigureServices(IServiceCollection services)
             PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
             PropertyNameCaseInsensitive = true
         };
-    
+
         options.JsonSerializerOptions = jsonSerializerOptions;
         options.Actors.RegisterActor<ScoreActor>();
     });

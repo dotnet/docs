@@ -114,9 +114,9 @@ In this guide, you'll explore the creation of a source generator using the <xref
         string source = $@"
     using System;
 
-    namespace {mainMethod.ContainingNamespace.Name} 
+    namespace {mainMethod.ContainingNamespace.Name}
     {{
-        public static partial class {mainMethod.ContainingType.Name} 
+        public static partial class {mainMethod.ContainingType.Name}
         {{
             static partial void HelloFrom(string name)
             {{

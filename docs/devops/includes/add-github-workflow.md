@@ -6,6 +6,13 @@ ms.topic: include
 recommendations: false
 ---
 
-## Add workflow file
+## Create a workflow file
 
-In the GitHub repository, add a new file in the *.github/workflows* directory.
+In the GitHub repository, add a new YAML file to the *.github/workflows* directory. Choose a meaningful file name, something that will clearly indicate what the workflow is intended to do. Here are several good examples of workflow file names:
+
+| Workflow file name     | Description                                                                                     |
+|------------------------|-------------------------------------------------------------------------------------------------|
+| *build-validation.yml* | Compiles (or builds) the source code. If the source code doesn't compile, this will fail.       |
+| *run-tests.yml*        | Exercises the unit tests within the repository. Failing unit tests will cause workflow failure. |
+| *publish-app.yml*      | Packages, and publishes the source code to a destination.                                       |
+| *codeql-analysis.yml*  | Analyses your code for security vulnerabilities and coding errors.                              |

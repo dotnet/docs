@@ -12,7 +12,13 @@ recommendations: false
 
 In this quickstart, you will learn how to create a CodeQL GitHub Action to automate the discovery of vulnerabilities in your .NET codebase. Automatically publishing your .NET code from GitHub to a destination is referred to as continuous deployment (CD).
 
-[!INCLUDE [github-dotnet-ide-prerequisites](includes/github-dotnet-ide-prerequisites.md)]
+[!INCLUDE [prerequisites](includes/github-dotnet-ide-prerequisites.md)]
+
+[!INCLUDE [add-github-workflow](includes/add-github-workflow.md)]
+
+<!-- TODO: -->
+
+[!INCLUDE [add-status-badge](includes/add-status-badge.md)]
 
 ## See also
 

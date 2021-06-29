@@ -10,9 +10,15 @@ recommendations: false
 
 # Quickstart: Create a GitHub Action to publish your .NET app
 
-In this quickstart, you will learn how to create a GitHub Action to publish your .NET source code. Automatically publishing your .NET code from GitHub to a destination is referred to as continuous deployment (CD).
+In this quickstart, you will learn how to create a GitHub Action to publish your .NET app from source code. Automatically publishing your .NET app from GitHub to a destination is referred to as continuous deployment (CD). There are many possible destinations to publish an application, in this quickstart you'll publish to Azure.
 
-[!INCLUDE [github-dotnet-ide-prerequisites](includes/github-dotnet-ide-prerequisites.md)]
+[!INCLUDE [prerequisites](includes/github-dotnet-ide-prerequisites.md)]
+
+[!INCLUDE [add-github-workflow](includes/add-github-workflow.md)]
+
+<!-- TODO: -->
+
+[!INCLUDE [add-status-badge](includes/add-status-badge.md)]
 
 ## See also
 

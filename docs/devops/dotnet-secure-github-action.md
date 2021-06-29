@@ -18,6 +18,8 @@ In this quickstart, you will learn how to create a CodeQL GitHub Action to autom
 
 <!-- TODO: -->
 
+For more information, see [](https://docs.github.com/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#overriding-automatic-language-detection)
+
 [!INCLUDE [add-status-badge](includes/add-status-badge.md)]
 
 ## See also

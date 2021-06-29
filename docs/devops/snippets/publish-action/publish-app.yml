@@ -1,0 +1,42 @@
+name: Build .NET Core
+
+on:
+  push:
+    branches: [ main ]
+
+env:
+  AZURE_WEBAPP_NAME: DotNetDocsWeb
+  AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root:
+  DOTNET_VERSION: '3.1.402'           # set this to the dot net version to use
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+
+    - name: Install dependencies
+      run: dotnet restore
+      
+    - name: Build
+      run: |
+        cd DotNetDocs.Web
+        dotnet build --configuration Release --no-restore
+        dotnet publish -c Release -o ../dotnetdocsshow -r linux-x64 --self-contained true /p:UseAppHost=true
+    - name: Test
+      run: |
+        cd DotNetDocs.Web.Tests
+        dotnet test --no-restore --verbosity normal
+      
+    - uses: azure/webapps-deploy@v2
+      name: Deploy
+      with:
+        app-name: ${{ env.AZURE_WEBAPP_NAME }} 
+        publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
+        package: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/dotnetdocsshow'

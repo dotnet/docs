@@ -24,3 +24,11 @@ It's common nomenclature for GitHub repositories to have a *README.md* file at t
     :::image type="content" source="../media/copy-status-badge.png" lightbox="../media/copy-status-badge.png" alt-text="GitHub: Copy status badge Markdown":::
 
 1. Paste the Markdown into the *README.md* file, save the file, commit and push the changes.
+
+### Example workflow status badges
+
+| Passing | Failing | No status |
+|--|--|--|
+| :::image type="content" source="../media/build-badge-passing.svg" alt-text="GitHub: build passing badge"::: | :::image type="content" source="../media/build-badge-failing.svg" alt-text="GitHub: build failing badge"::: | :::image type="content" source="../media/build-badge-no-status.svg" alt-text="GitHub: build no-status badge"::: |
+
+For more, see [Adding a workflow status badge](https://docs.github.com/actions/managing-workflow-runs/adding-a-workflow-status-badge).

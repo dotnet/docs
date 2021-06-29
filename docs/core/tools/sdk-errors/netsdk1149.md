@@ -14,7 +14,7 @@ NETSDK1149 indicates that you're trying to reference a component that requires W
 
 > *\<Component name>* cannot be referenced because it uses built-in support for WinRT, which is no longer supported in .NET 5 and higher.  An updated version of the component supporting .NET 5 is needed.
 
-If your application calls Windows Runtime APIs, resolve this error by changing the application's Target Framework Moniker (TFM). For more information, see [Call Windows Runtime APIs in desktop apps](/windows/apps/desktop/modernize/desktop-to-uwp-enhance).
+If your application calls Windows Runtime APIs, resolve this error by changing the application's Target Framework Moniker (TFM) to a value that targets Windows 10. For more information, see [Call Windows Runtime APIs in desktop apps](/windows/apps/desktop/modernize/desktop-to-uwp-enhance).
 
 If your application calls a 3rd party WinRT component, get an updated version of the component that supports .NET 5. You can generate an updated version by using [C#/WinRT](/windows/uwp/csharp-winrt/).
 

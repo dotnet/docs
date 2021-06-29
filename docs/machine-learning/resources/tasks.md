@@ -79,7 +79,6 @@ You can train a multiclass classification model using the following training alg
 * <xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer>
 * <xref:Microsoft.ML.Trainers.OneVersusAllTrainer>
 * <xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer>
-* <xref:Microsoft.ML.Vision.ImageClassificationTrainer>
 
 ### Multiclass classification inputs and outputs
 
@@ -230,3 +229,15 @@ The forecasting task use past time-series data to make predictions about future 
 You can train a forecasting model with the following algorithm:
 
 <xref:Microsoft.ML.TimeSeriesCatalog.ForecastBySsa%2A>
+
+## Image Classification
+
+A [supervised machine learning](glossary.md#supervised-machine-learning) task that is used to predict the class (category) of an image.
+
+### Image classification trainers
+
+You can train an image classification model using the following training algorithms:
+
+* <xref:Microsoft.ML.Vision.ImageClassificationTrainer>
+
+## Object Detection

@@ -60,7 +60,7 @@ A record type doesn't have to declare any positional properties. You can declare
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="MixedSyntax":::
 
-If you define properties by using standard property syntax but omit the access modifier, the properties are implicitly `public`.
+If you define properties by using standard property syntax but omit the access modifier, the properties are implicitly `private`.
 <!-- Todo -- Explain issues surrounding use of attributes on positional properties. -->
 
 ## Immutability

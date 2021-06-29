@@ -1,11 +1,11 @@
 ---
-title: The Dapr secrets building block
-description: A description of the secrets building block, its features, benefits, and how to apply it
+title: The Dapr secrets management building block
+description: A description of the secrets management building block, its features, benefits, and how to apply it
 author: edwinvw
-ms.date: 02/17/2021
+ms.date: 06/18/2021
 ---
 
-# The Dapr secrets building block
+# The Dapr secrets management building block
 
 Enterprise applications require secrets. Common examples include:
 
@@ -27,7 +27,7 @@ Dapr offers a building block that simplifies managing secrets.
 
 ## What it solves
 
-The Dapr [secrets building block](https://docs.dapr.io/developing-applications/building-blocks/secrets/secrets-overview/) abstracts away the complexity of working with secrets and secret management tools.
+The Dapr [secrets management building block](https://docs.dapr.io/developing-applications/building-blocks/secrets/secrets-overview/) abstracts away the complexity of working with secrets and secret management tools.
 
 - It hides the underlying plumbing through a unified interface.
 - It supports various *pluggable* secret store components, which can vary between development and production.
@@ -40,14 +40,14 @@ Access to the secrets is secured through authentication and authorization. Only 
 
 ## How it works
 
-Applications use the secrets building block in two ways:
+Applications use the secrets management building block in two ways:
 
-- Retrieve a secret directly from the application block.
+- Retrieve a secret directly from the building block.
 - Reference a secret indirectly from a Dapr component configuration.
 
 Retrieving secrets directly is covered first. Referencing a secret from a Dapr component configuration file is addressed in a later section.
 
-The application interacts with a Dapr sidecar when using the secrets building block. The sidecar exposes the secrets API. The API can be called with either HTTP or gRPC. Use the following URL to call the HTTP API:
+The application interacts with a Dapr sidecar when using the secrets management building block. The sidecar exposes the secrets API. The API can be called with either HTTP or gRPC. Use the following URL to call the HTTP API:
 
 ```http
 http://localhost:<dapr-port>/v1.0/secrets/<store-name>/<name>?<metadata>
@@ -65,11 +65,11 @@ The URL contains the following segments:
 
 The JSON response contains the key and value of the secret.
 
-Figure 10-1 shows how Dapr handles a request for the secrets API:
+Figure 11-1 shows how Dapr handles a request for the secrets API:
 
 ![Diagram of retrieving a secret using the Dapr secrets API.](media/secrets/secrets-flow.png)
 
-**Figure 10-1**. Retrieving a secret with the Dapr secrets API.
+**Figure 11-1**. Retrieving a secret with the Dapr secrets API.
 
 1. The service calls the Dapr secrets API, along with the name of the secret store, and secret to retrieve.
 1. The Dapr sidecar retrieves the specified secret from the secret store.
@@ -148,7 +148,7 @@ public void GetCustomer(IConfiguration config)
 
 ## Secret store components
 
-The secrets building block supports several secret store components. At the time of writing, the following secret stores are available:
+The secrets management building block supports several secret store components. At the time of writing, the following secret stores are available:
 
 - Environment Variables
 - Local file
@@ -349,7 +349,7 @@ The [Dapr Azure Key Vault secret store documentation](https://docs.dapr.io/opera
 
 #### Use Key Vault when running in self-hosted mode
 
-Consuming Azure Key Vault in Dapr self-hosted mode requires the following configuration file:
+Using Azure Key Vault in Dapr self-hosted mode requires the following component configuration file:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
@@ -371,7 +371,7 @@ spec:
     value : "azurekv-spn-cert.pfx"
 ```
 
-The secret store type is `secretstores.azure.keyvault`. The `metadata` element to configure access to Key Vault requires the following properties:
+The secret store type is `secretstores.azure.keyvault`. The `metadata` element provides access to the Key Vault with the following properties:
 
 - The `vaultName` contains the name of the Azure Key Vault.
 - The `spnTenantId` contains the *tenant ID* of the service principal used to authenticate against the Key Vault.
@@ -463,85 +463,270 @@ You specify scopes per secret store. In the above example, the secret store is n
 
 The `allowedSecrets` and `deniedSecrets` properties take precedence over the `defaultAccess` property. Imagine specifying `defaultAccess: allowed` and an `allowedSecrets` list. In this case, only the secrets in the `allowedSecrets` list would be accessible by the application.
 
-## Reference application: eShopOnDapr
+## Sample application: Dapr Traffic Control
 
-The eShopOnDapr reference application uses the secrets building block for two secrets:
+In Dapr Traffic Control sample app, the secrets management building block is used in several places. Secrets are retrieved from code and referenced by Dapr component configuration files. Figure 10-2 shows the conceptual architecture of the Dapr Traffic Control sample application. The Dapr secrets management building block is used in flows marked with number 6 in the diagram:
 
-- The password for connecting to the Redis cache.
-- The API-key for using the Twilio Sendgrid API. The application uses Twillio to send emails using a Dapr output binding (as described in the [bindings building block chapter](bindings.md)).
+:::image type="content" source="./media/secrets/dapr-solution-secrets-management.png" alt-text="Conceptual architecture of the Dapr Traffic Control sample application.":::
 
-When running the application using Docker Compose, the **local file** secret store is used. The component configuration file `eshop-secretstore.yaml` is found in the `dapr/components` folder of the eShopOnDapr repository:
+**Figure 10-2**. Conceptual architecture of the Dapr Traffic Control sample application.
+
+The FineCollection service uses an SMTP output binding for sending emails (see the [Bindings](bindings.md) chapter). The email component file consumes the secrets management building block to retrieve credentials to connect to the SMTP server. To calculate the fine for a speeding violation, the service uses a fictitious FineCalculator component that requires a license key. It retrieves this license key from the secrets management building block.
+
+The TrafficControl service stores vehicle information in a Redis state store (see the [State management](state-management.md) chapter). It uses the secrets management building block for retrieving credentials to connect to the Redis server.
+
+Because the Traffic Control sample application can run in self-hosted mode or in Kubernetes, there are two ways for specifying secrets:
+
+- A local JSON file
+- A Kubernetes secret
+
+### Secrets
+
+Examine the `secrets-file.yaml` component configuration file in the `dapr/components` folder:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
-  name: eshop-secretstore
-  namespace: eshop
+  name: trafficcontrol-secrets
+  namespace: dapr-trafficcontrol
 spec:
   type: secretstores.local.file
   version: v1
   metadata:
   - name: secretsFile
-    value: ./components/eshop-secretstore.json
+    value: ../dapr/components/secrets.json
+  - name: nestedSeparator
+    value: "."
+scopes:
+  - trafficcontrolservice
+  - finecollectionservice
 ```
 
-The configuration file references the local store file `eshop-secretstore.json` located in the same folder:
+The file describes a secrets management component entitled `trafficcontrol-secrets`. The `type` element is set to `local.file` and the `secretsFile` to `../dapr/components/secrets.json`. For self-hosted mode, use a [Local file](#local-file) component. The path must be relatively specified from the folder from which the service starts. The secrets file contains a JSON representation of the secrets:
 
 ```json
 {
-    "redisPassword": "**********",
-    "sendgridAPIKey": "**********"
+    "state":{
+        "redisPassword": ""
+    },
+    "smtp":{
+        "user": "_username",
+        "password": "_password"
+    },
+    "finecalculator":{
+        "licensekey": "HX783-K2L7V-CRJ4A-5PN1G"
+    }
 }
 ```
 
-The `components` folder is specified in the command-line and mounted as a local folder inside the Dapr sidecar container. Here's a snippet from the `docker-compose.override.yml` file in the repository root that specifies the volume mount:
+In the sample application the Redis server is used without a password. To connect to the SMTP server, the credentials are `_username` and `_password`. The license key for the FineCalculator license key is a randomly generated string.
+
+While secrets are stored at nested levels, the secrets management building block flattens this hierarchy when the file is read. It uses a period as a level separator (as specified in the `nestedSeparator` field in the component configuration file). This construct enables you to reference secrets with a flattened name, for example: `smtp.user`.
+
+When running in Kubernetes, the secrets are specified using the built-in Kubernetes secrets store. Examine the following `secrets.yaml` Kubernetes manifest file in the `k8s` folder:
 
 ```yaml
-  ordering-backgroundtasks-dapr:
-    command: ["./daprd",
-      "-app-id", "ordering-backgroundtasks",
-      "-app-port", "80",
-      "-dapr-grpc-port", "50004",
-      "-components-path", "/components",
-      "-config", "/configuration/eshop-config.yaml"
-      ]
-    volumes:
-      - "./dapr/components/:/components"
-      - "./dapr/configuration/:/configuration"
+apiVersion: v1
+kind: Secret
+metadata:
+  name: trafficcontrol-secrets
+  namespace: dapr-trafficcontrol
+type: Opaque
+data:
+  smtp.user: X3VzZXJuYW1l
+  smtp.password: X3Bhc3N3b3Jk
+  finecalculator.licensekey: SFg3ODMtSzJMN1YtQ1JKNEEtNVBOMUc=
 ```
 
-> [!NOTE]
-> The Docker Compose override file contains environmental specific configuration values.
+The component is also named `trafficcontrol-secrets`. Secrets are stored as Base64 encoded strings.
 
-The `/components` volume mount and `--components-path` command-line argument are passed into the `daprd` startup command.
+> [!IMPORTANT]
+> Base64 representations *encode*, but do not *encrypt* data. Base64 isn't secure for production scenarios.
 
-Once configured, other component configuration files can also reference the secrets. Here's an example of the Publish/Subscribe component configuration consuming secrets:
+The following paragraphs describe how secrets are used in the Traffic Control sample application.
+
+### SMTP server credentials
+
+Examine the `email.yaml` component configuration file located in the `dapr/components` folder:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
-  name: pubsub
-  namespace: eshop
+  name: sendmail
+  namespace: dapr-trafficcontrol
 spec:
-  type: pubsub.redis
+  type: bindings.smtp
+  version: v1
+  metadata:
+  - name: host
+    value: localhost
+  - name: port
+    value: 4025
+  - name: user
+    secretKeyRef:
+      name: smtp.user
+      key: smtp.user
+  - name: password
+    secretKeyRef:
+      name: smtp.password
+      key: smtp.password
+  - name: skipTLSVerify
+    value: true
+auth:
+  secretStore: trafficcontrol-secrets
+scopes:
+  - finecollectionservice
+```
+
+The `auth` section references the secrets management component named `trafficcontrol-secrets`. The `user` and `password` entries in the binding metadata reference the secrets: `smtp.user` and `smtp.password` respectively.
+
+When running in Kubernetes, the built-in Kubernetes secrets store is used. The `email.yaml` manifest file found in the `k8s` folder references the Kubernetes secret for retrieving the credentials for connecting to the smtp server:
+
+```yaml
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: sendmail
+  namespace: dapr-trafficcontrol
+spec:
+  type: bindings.smtp
+  version: v1
+  metadata:
+  - name: host
+    value: mailserver
+  - name: port
+    value: 25
+  - name: user
+    secretKeyRef:
+      name: trafficcontrol-secrets
+      key: smtp.user
+  - name: password
+    secretKeyRef:
+      name: trafficcontrol-secrets
+      key: smtp.password
+  - name: skipTLSVerify
+    value: true
+scopes:
+  - finecollectionservice
+```
+
+Unlike the local secrets store, the Kubernetes store doesn't explicitly specify a secrets management component to use with the `auth` section. Instead, the default is the built-in Kubernetes secrets store.
+
+### Redis server credentials
+
+Next, examine the `statestore.yaml` component configuration file in the `dapr/components` folder:
+
+```yaml
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: statestore
+  namespace: dapr-trafficcontrol
+spec:
+  type: state.redis
   version: v1
   metadata:
   - name: redisHost
-    value: redis:6379
+    value: localhost:6379
   - name: redisPassword
     secretKeyRef:
-      name: redisPassword
+      name: state.redisPassword
+      key: state.redisPassword
+  - name: actorStateStore
+    value: "true"
 auth:
-  secretStore: eshop-secretstore
+  secretStore: trafficcontrol-secrets
+scopes:
+  - trafficcontrolservice
 ```
 
-In the preceding example, the local Redis store is used to reference secrets.
+Once again, the `auth` section references the secrets management component named `trafficcontrol-secrets`. The `redisPassword` entries in the binding metadata reference the secret `state.redisPassword`.
+
+### FineCalculator component license key
+
+The FineCollection service uses a component that calculates the fine based on the information of a speeding violation. This component is implemented as a domain service and is abstracted by the `IFineCalculator` interface:
+
+```csharp
+public interface IFineCalculator
+{
+    public int CalculateFine(string licenseKey, int violationInKmh);
+}
+```
+
+The `CalculateFine` method expects a string containing a `licenseKey` as its first argument. This key unlocks the third-party component used by the implementation. To keep the example simple, the implementation hard-codes a series of `if` statements. You can find the implementation in the `HardCodedFineCalculator` class in the `DomainsServices` folder:
+
+```csharp
+    public class HardCodedFineCalculator : IFineCalculator
+    {
+        public int CalculateFine(string licenseKey, int violationInKmh)
+        {
+            if (licenseKey != "HX783-K2L7V-CRJ4A-5PN1G")
+            {
+                throw new InvalidOperationException("Invalid license-key specified.");
+            }
+
+            int fine = 9; // default administration fee
+            if (violationInKmh < 5 )
+            {
+                fine += 18;
+            }
+            else if (violationInKmh >= 5 && violationInKmh < 10 )
+            {
+                fine += 31;
+            }
+
+            // ...
+
+            else if (violationInKmh == 35)
+            {
+                fine += 372;
+            }
+            else
+            {
+                // violation above 35 KMh will be determined by the prosecutor
+                return 0;
+            }
+
+            return fine;
+        }
+    }
+```
+
+The implementation simulates a check on the `licenseKey` that is passed in. The `CollectionController` of the FineCollection service must pass in the correct license key argument when calling the `CalculateFine` method. It retrieves the license key from the Dapr secrets management building block that is exposed by the Dapr client in the Dapr SDK for .NET. If you examine the constructor of the `CollectionController`, you can see the call:
+
+```c#
+// set finecalculator component license-key
+if (_fineCalculatorLicenseKey == null)
+{
+    bool runningInK8s = Convert.ToBoolean(Environment.GetEnvironmentVariable("DOTNET_RUNNING_IN_CONTAINER") ?? "false");
+    var metadata = new Dictionary<string, string> { { "namespace", "dapr-trafficcontrol" } };
+    if (runningInK8s)
+    {
+        var k8sSecrets = daprClient.GetSecretAsync(
+            "kubernetes", "trafficcontrol-secrets", metadata).Result;
+        _fineCalculatorLicenseKey = k8sSecrets["finecalculator.licensekey"];
+    }
+    else
+    {
+        var secrets = daprClient.GetSecretAsync(
+            "trafficcontrol-secrets", "finecalculator.licensekey", metadata).Result;
+        _fineCalculatorLicenseKey = secrets["finecalculator.licensekey"];
+    }
+}
+```
+
+The code determines whether the service is running in Kubernetes or self-hosted mode. This check is necessary because a different secrets management component must be used for each situation. The first argument of the `GetSecretAsync` method is the name of the Dapr component. The second argument is the name of the secret. The `metadata` passed in as the third argument specifies the namespace that contains the secret. The value of the `finecalculator.licensekey` secret is stored in a private field for later use.
+
+Using Dapr secrets management offers several benefits:
+
+1. No sensitive information is stored in code or application configuration files.
+2. No need to learn any new API for interacting with a secrets store.
 
 ## Summary
 
-The Dapr secrets building block provides capabilities for storing and retrieving sensitive configuration settings like passwords and connection-strings. It keeps secrets private and prevents them from being accidentally disclosed.
+The Dapr secrets management building block provides capabilities for storing and retrieving sensitive configuration settings like passwords and connection-strings. It keeps secrets private and prevents them from being accidentally disclosed.
 
 The building block supports several different secret stores and hides their complexity with the Dapr secrets API.
 
@@ -555,4 +740,4 @@ You can use secret scopes to control access to specific secrets.
 
 >[!div class="step-by-step"]
 >[Previous](observability.md)
->[Next](summary.md)
+>[Next](reference-application.md

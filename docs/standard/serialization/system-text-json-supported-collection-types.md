@@ -16,11 +16,16 @@ helpviewer_keywords:
 
 This article gives an overview of which collections are supported for serialization and deserialization. <xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> supports a collection type for serialization if it:
 
+:::zone pivot="dotnet-5-0,dotnet-core-3-1"
+
 * Derives from <xref:System.Collections.IEnumerable>.
 * Contains elements that are serializable.
+:::zone-end
 
 :::zone pivot="dotnet-6-0"
-Documentation for <xref:System.Collections.Generic.IAsyncEnumerable%601> support is being developed. Until it's added, see the [.NET 6 Preview 4 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-4/#system-text-json-support-for-iasyncenumerable).
+
+* Derives from <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IAsyncEnumerable%601>
+* Contains elements that are serializable.
 :::zone-end
 
 The serializer calls the <xref:System.Collections.IEnumerable.GetEnumerator> method, and writes the elements.
@@ -55,7 +60,64 @@ The following sections are organized by namespace and show which types are suppo
 
 ## System.Collections.Generic namespace
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-6-0"
+
+| Type                                                      | Serialization | Deserialization |
+|-----------------------------------------------------------|---------------|-----------------|
+| <xref:System.Collections.Generic.Dictionary%602> \*       | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.HashSet%601>             | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IAsyncEnumerable%601> \*\* | ✔️         | ✔️              |
+| <xref:System.Collections.Generic.ICollection%601>         | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IDictionary%602> \*      | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IEnumerable%601>         | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IList%601>               | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IReadOnlyCollection%601> | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IReadOnlyDictionary%602> \* | ✔️        | ✔️              |
+| <xref:System.Collections.Generic.IReadOnlyList%601>       | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.ISet%601>                | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.KeyValuePair%602>        | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.LinkedList%601>          | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.LinkedListNode%601>      | ✔️           | ❌              |
+| <xref:System.Collections.Generic.List%601>                | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.Queue%601>               | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.SortedDictionary%602> \* | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.SortedList%602> \*       | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.SortedSet%601>           | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.Stack%601>               | ✔️           | ✔️              |
+
+\* See [Supported key types](#supported-key-types).
+
+\*\* See the following section on `IAsyncEnumerable<T>`.
+
+### IAsyncEnumerable\<T>
+
+The following examples use streams as a representation of any async source of data. The source could be files on a local machine, or results from a database query or web service API call.
+
+#### Stream serialization
+
+`System.Text.Json` supports serializing <xref:System.Collections.Generic.IAsyncEnumerable%601> values as JSON arrays, as shown in the following example:
+
+:::code language="csharp" source="snippets/system-text-json-supported-collection-types/csharp/IAsyncEnumerableSerialize.cs" highlight="15":::
+
+`IAsyncEnumerable<T>` values are only supported by the asynchronous serialization methods, such as <xref:System.Text.Json.JsonSerializer.SerializeAsync%2A?displayProperty=nameWithType>.
+
+#### Stream deserialization
+
+The `DeserializeAsyncEnumerable` method supports streaming deserialization, as shown in the following example:
+
+:::code language="csharp" source="snippets/system-text-json-supported-collection-types/csharp/IAsyncEnumerableDeserialize.cs" highlight="15":::
+
+The `DeserializeAsyncEnumerable` method only supports reading from root-level JSON arrays.
+
+The <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method supports `IAsyncEnumerable<T>`, but its signature doesn't allow streaming. It returns the final result as a single value, as shown in the following example.
+
+:::code language="csharp" source="snippets/system-text-json-supported-collection-types/csharp/IAsyncEnumerableDeserializeNonStreaming.cs" highlight="20":::
+
+In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in memory before returning the deserialized object. This behavior is necessary because the deserializer needs to read the entire JSON payload before returning a result.
+
+::: zone-end
+
+::: zone pivot="dotnet-5-0"
 
 | Type                                                      | Serialization | Deserialization |
 |-----------------------------------------------------------|---------------|-----------------|
@@ -79,6 +141,8 @@ The following sections are organized by namespace and show which types are suppo
 | <xref:System.Collections.Generic.IReadOnlyDictionary%602> \* | ✔️        | ✔️              |
 | <xref:System.Collections.Generic.IReadOnlyList%601>       | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.ISet%601>                | ✔️           | ✔️              |
+
+\* See [Supported key types](#supported-key-types).
 
 ::: zone-end
 
@@ -107,9 +171,9 @@ The following sections are organized by namespace and show which types are suppo
 | <xref:System.Collections.Generic.IReadOnlyList%601>                                             | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.ISet%601>                                                      | ✔️           | ✔️              |
 
-::: zone-end
-
 \* See [Supported key types](#supported-key-types).
+
+::: zone-end
 
 ## System.Collections.Immutable namespace
 
@@ -331,6 +395,10 @@ Supported types for the keys of `Dictionary` and `SortedList` types include the 
 \*\* Non-`string` keys for `Dictionary` and `SortedList` types are not supported in .NET Core 3.1.
 
 ::: zone-end
+
+## System.Data namespace
+
+There are no built-in converters for <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, and related types in the <xref:System.Data> namespace. Deserializing these types from untrusted input is not safe, as explained in [the security guidance](../../framework/data/adonet/dataset-datatable-dataview/security-guidance.md#safety-with-regard-to-untrusted-input). However, you can write a custom converter to support these types. For sample custom converter code that serializes and deserializes a `DataTable`, see [RoundtripDataTable.cs](https://github.com/dotnet/docs/blob/main/docs/standard/serialization/snippets/system-text-json-how-to/csharp/RoundtripDataTable.cs).
 
 ## See also
 

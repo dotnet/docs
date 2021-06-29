@@ -10,7 +10,7 @@ f1_keywords:
 ---
 # NETSDK1149: Built-in WinRT support not provided in .NET 5+"
 
-You're trying to reference a component that requires WinRT in an application that targets .NET 5 or a later version. These .NET versions don't have built-in support for WinRT. The full error message is similar to the following example:
+NETSDK1149 indicates that you're trying to reference a component that requires WinRT in an application that targets .NET 5 or a later version. These .NET versions don't have built-in support for WinRT. The full error message is similar to the following example:
 
 > *\<Component name>* cannot be referenced because it uses built-in support for WinRT, which is no longer supported in .NET 5 and higher.  An updated version of the component supporting .NET 5 is needed.
 

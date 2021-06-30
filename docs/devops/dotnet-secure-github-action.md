@@ -35,7 +35,7 @@ In the preceding workflow composition:
 
 - The `jobs` node builds out the steps for the workflow to take.
 
-  :::code language="yml" source="snippets/secure-action/codeql-analysis.yml" range="17-46" highlight="2,10,22-24,43,46":::
+  :::code language="yml" source="snippets/secure-action/codeql-analysis.yml" range="17-46" highlight="2,10,22-24,27,30":::
 
   - There is a single job, named `analyze` that will run on the latest version of Ubuntu.
   - The `strategy` defines C# as the `language`.

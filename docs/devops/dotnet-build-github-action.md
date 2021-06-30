@@ -40,7 +40,7 @@ In the preceding workflow composition:
 
 - The `jobs` node builds out the steps for the workflow to take.
 
-  :::code language="yml" source="snippets/build-action/build-validation.yml" range="14-34":::
+  :::code language="yml" source="snippets/build-action/build-validation.yml" range="14-34" highlight="2,4-8,13-15,18,20":::
 
   - There is a single job, named `build-<os>` where the `<os>` is the operating system name from the `strategy/matrix`. The `name` and `runs-on` elements are dynamic for each value in the `matrix/os`. This will run on the latest versions of Ubuntu, Windows, and macOS.
   - The `actions/setup-dotnet@v1` GitHub Action is used to setup the .NET SDK with the specified version from the `DOTNET_VERSION` environment variable.

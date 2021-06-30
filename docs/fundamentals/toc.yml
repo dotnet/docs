@@ -1534,9 +1534,12 @@ items:
       href: /visualstudio/containers/overview
 - name: DevOps
   items:
-  - name: Create a GitHub Action with .NET
-    href: ../devops/create-dotnet-github-action.md
-    displayName: "continuous integration, continuous deployment, ci, cd, ci/cd, github, github action, github actions, lifecycle"
+  - name: Tutorials
+    expanded: true
+    items:
+    - name: Create a GitHub Action with .NET
+      href: ../devops/create-dotnet-github-action.md
+      displayName: "continuous integration, continuous deployment, ci, cd, ci/cd, github, github action, github actions, lifecycle"
   - name: Quickstarts
     items:
     - name: Create build GitHub Action

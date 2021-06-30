@@ -18,29 +18,29 @@ In this quickstart, you will learn how to create a GitHub Action to test your .N
 
 Create a new file named *build-and-test.yml*, copy and paste the following YML contents into it:
 
-:::code language="yml" source="snippets/build-action/build-and-test.yml":::
+:::code language="yml" source="snippets/test-action/build-and-test.yml":::
 
 In the preceding workflow composition:
 
 - The `name: build and test` defines the name, "build and test" will appear in workflow status badges.
 
-  :::code language="yml" source="snippets/secure-action/build-and-test.yml" range="1":::
+  :::code language="yml" source="snippets/test-action/build-and-test.yml" range="1":::
 
 - The `on` node signifies the events that trigger the workflow:
 
-  :::code language="yml" source="snippets/secure-action/build-and-test.yml" range="3-9":::
+  :::code language="yml" source="snippets/test-action/build-and-test.yml" range="3-9":::
 
   - When a `push` or `pull_quest` occurs on the `main` branch where any files changed ending with the *.cs* or *.csproj* file extensions.
 
 - The `env` node defines named environment variables (env var).
 
-  :::code language="yml" source="snippets/secure-action/build-and-test.yml" range="11-12":::
+  :::code language="yml" source="snippets/test-action/build-and-test.yml" range="11-12":::
 
   - The environment variable `DOTNET_VERSION` is assigned the value `'5.0.301'`. The environment variable is later referenced to specify the `dotnet-version` of the `actions/setup-dotnet@v1` GitHub Action.
 
 - The `jobs` node builds out the steps for the workflow to take.
 
-  :::code language="yml" source="snippets/secure-action/build-and-test.yml" range="14-37" highlight="2,7-9,18,21,24":::
+  :::code language="yml" source="snippets/test-action/build-and-test.yml" range="14-37" highlight="2,7-9,18,21,24":::
 
   - There is a single job, named `build-<os>` where the `<os>` is the operating system name from the `strategy/matrix`. The `name` and `runs-on` elements are dynamic for each value in the `matrix/os`. This will run on the latest versions of Ubuntu, Windows, and macOS.
   - The `actions/setup-dotnet@v1` GitHub Action is used to setup the .NET SDK with the specified version from the `DOTNET_VERSION` environment variable.
@@ -56,6 +56,8 @@ In the preceding workflow composition:
 - [dotnet build](../core/tools/dotnet-build.md)
 - [dotnet test](../core/tools/dotnet-test.md)
 - [Unit testing .NET apps](../core/testing/unit-testing-with-dotnet-test.md)
+- [GitHub Action: action/checkout](https://github.com/actions/checkout)
+- [GitHub Action: action/setup-dotnet](https://github.com/actions/setup-dotnet)
 
 ## Next steps
 

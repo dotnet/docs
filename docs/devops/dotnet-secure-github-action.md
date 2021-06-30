@@ -50,6 +50,8 @@ For more information, see [GitHub Actions: Configure code scanning](https://docs
 ## See also
 
 - [Secure coding guidelines](../standard/security/secure-coding-guidelines.md)
+- [GitHub Action: action/checkout](https://github.com/actions/checkout)
+- [GitHub Action: action/setup-dotnet](https://github.com/actions/setup-dotnet)
 
 ## Next steps
 

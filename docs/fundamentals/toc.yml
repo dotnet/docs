@@ -1539,13 +1539,13 @@ items:
     displayName: "continuous integration, continuous deployment, ci, cd, ci/cd, github, github action, github actions, lifecycle"
   - name: Quickstarts
     items:
-    - name: Build
+    - name: Create build GitHub Action
       href: ../devops/dotnet-build-github-action.md
-    - name: Test
+    - name: Create test GitHub Action
       href: ../devops/dotnet-test-github-action.md
-    - name: Publish
+    - name: Create publish GitHub Action
       href: ../devops/dotnet-publish-github-action.md
-    - name: Secure
+    - name: Create CodeQL GitHub Action
       href: ../devops/dotnet-secure-github-action.md
 - name: Fundamental coding components
   items:

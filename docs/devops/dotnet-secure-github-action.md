@@ -16,9 +16,11 @@ In this quickstart, you will learn how to create a CodeQL GitHub Action to autom
 
 [!INCLUDE [add-github-workflow](includes/add-github-workflow.md)]
 
+Create a new file named *codeql-analysis.yml*, copy and paste the following YML contents into it:
+
 :::code language="yml" source="snippets/secure-action/codeql-analysis.yml":::
 
-In the preceding workflow:
+In the preceding workflow composition:
 
 - The `name: CodeQL` defines the name, "CodeQL" will appear in workflow status badges.
 
@@ -28,14 +30,18 @@ In the preceding workflow:
 
     :::code language="yml" source="snippets/secure-action/codeql-analysis.yml" range="3-15":::
 
-  - When a `push` or `pull_quest` occurs on `main` where any files changed ending with the *.cs* or *.csproj* file extensions.
+  - When a `push` or `pull_quest` occurs on the `main` branch where any files changed ending with the *.cs* or *.csproj* file extensions.
   - As a cron job (on a schedule) &mdash; runs at 8:00 UTC every Thursday.
 
 - The `jobs` node builds out the steps for the workflow to take.
 
-    :::code language="yml" source="snippets/secure-action/codeql-analysis.yml" range="17-45":::
+    :::code language="yml" source="snippets/secure-action/codeql-analysis.yml" range="17-46" highlight="2,10,22-24,43,46":::
 
-  - The best part of waking up, is Folgers in your cup!
+  - There is a single job, named `analyze` that will run on the latest version of Ubuntu.
+  - The `strategy` defines C# as the `language`.
+  - The `github/codeql-action/init@v1` GitHub Action is used to initialize CodeQL.
+  - The `github/codeql-action/autobuild@v1` GitHub Action builds the .NET project.
+  - The `github/codeql-action/analyze@v1` GitHub Action performs the CodeQL analysis.
 
 For more information, see [GitHub Actions: Configure code scanning](https://docs.github.com/code-security/secure-coding/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning).
 

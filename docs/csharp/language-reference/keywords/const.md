@@ -1,7 +1,7 @@
 ---
 description: "const keyword - C# Reference"
 title: "const keyword - C# Reference"
-ms.date: 07/20/2015
+ms.date: 06/20/2021
 f1_keywords: 
   - "const_CSharpKeyword"
   - "const"
@@ -17,6 +17,15 @@ You use the `const` keyword to declare a constant field or a constant local. Con
 const int X = 0;
 public const double GravitationalConstant = 6.673e-11;
 private const string ProductName = "Visual C#";
+```
+
+Beginning with C# 10, [interpolated strings](../tokens/interpolated.md) may be constants, if all expressions used are also constant strings. This feature can improve the code that builds constant strings:
+
+```csharp
+const string Language = "C#";
+const string Platform = ".NET";
+const string Version = "10.0";
+const string FullProductName = $"{Platform} - Language: {Language} Version: {Version}";
 ```
 
 ## Remarks

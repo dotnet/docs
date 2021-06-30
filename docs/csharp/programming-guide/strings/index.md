@@ -1,7 +1,7 @@
 ---
 title: "Strings - C# Programming Guide"
 description: Learn about strings in C# programming. See information on declaring and initializing strings, the immutability of string objects, and string escape sequences.
-ms.date: 06/27/2019
+ms.date: 06/30/2021
 helpviewer_keywords: 
   - "C# language, strings"
   - "strings [C#]"
@@ -83,6 +83,8 @@ Available in C# 6.0 and later, [*interpolated strings*](../../language-reference
 Use string interpolation to improve the readability and maintainability of your code. String interpolation achieves the same results as the `String.Format` method, but improves ease of use and inline clarity.
 
 [!code-csharp[csProgGuideFormatStrings](~/samples/snippets/csharp/programming-guide/strings/Strings_1.cs#StringInterpolation)]
+
+Beginning with C# 10, you can use string interpolation to initialize a constant string when all the expressions used for placeholders are also constant strings.
 
 ### Composite Formatting
 

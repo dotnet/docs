@@ -13,7 +13,7 @@ Model Builder uses automated machine learning (AutoML) to explore different mach
 
 You don't need machine learning expertise to use Model Builder. All you need is some data, and a problem to solve. Model Builder generates the code to add the model to your .NET application.
 
-![Model Builder Visual Studio extension user interface animation](media/ml-dotnet-model-builder.gif)
+![Model Builder Scenarios](./media/model-builder-scenarios.png)
 
 > [!NOTE]
 > Model Builder is currently in Preview.
@@ -222,6 +222,10 @@ If your model performance score is not as good as you want it to be, you can:
 After the evaluation phase, Model Builder outputs a model file, and code that you can use to add the model to your application. ML.NET models are saved as a zip file. The code to load and use your model is added as a new project in your solution. Model Builder also adds a sample console app that you can run to see your model in action.
 
 In addition, Model Builder outputs the code that generated the model, so that you can understand the steps used to generate the model. You can also use the model training code to retrain your model with new data.
+
+## Continuing Model Builder Session
+
+
 
 ## What's next?
 

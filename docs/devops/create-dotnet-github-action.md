@@ -79,7 +79,7 @@ Since .NET is *not* natively supported by GitHub Actions, the .NET app needs to 
 
 A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of instructions to build an image. For .NET applications, the *Dockerfile* usually sits in the root of the directory next to a solution file.
 
-:::code language="dockerfile" source="snippets/Dockerfile" highlight="23":::
+:::code language="dockerfile" source="snippets/custom-action/Dockerfile" highlight="23":::
 
 > [!NOTE]
 > The .NET app in this tutorial relies on the .NET SDK as part of its functionality, as such, the highlighted line relayers the .NET SDK anew with the build output. For applications that ***do not*** require the .NET SDK as part of their functionality, they should rely on just the .NET Runtime instead. This greatly reduces the size of the image.
@@ -108,7 +108,7 @@ The preceding *Dockerfile* steps include:
 
 In the [Explore the app](#explore-the-app) section, you learned about the `ActionInputs` class. This object represents the inputs for the GitHub Action. For GitHub to recognize that the repository is a GitHub Action, you need to have an *action.yml* file at the root of the repository.
 
-:::code language="yml" source="snippets/action.yml":::
+:::code language="yml" source="snippets/custom-action/action.yml":::
 
 The preceding *action.yml* file defines:
 
@@ -124,7 +124,7 @@ For more information, see [Metadata syntax for GitHub Actions](https://docs.gith
 
 With the [.NET app containerized](#prepare-the-net-app-for-github-actions), and the [action inputs and outputs](#define-action-inputs-and-outputs) defined, you're ready to consume the action. GitHub Actions are *not* required to be published in the GitHub Marketplace to be used. Workflows are defined in the *.github/workflows* directory of a repository as YAML files.
 
-:::code language="yml" source="snippets/workflow.yml":::
+:::code language="yml" source="snippets/custom-action/workflow.yml":::
 
 > [!IMPORTANT]
 > For containerized GitHub Actions, you're required to use `runs-on: ubuntu-latest`. For more information, see [Workflow syntax `jobs.<job_id>.runs-on`](https://docs.github.com/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on).
@@ -139,7 +139,7 @@ For more information, see [Creating your first workflow](https://docs.github.com
 
 Focusing on the `steps` node, the composition is more obvious:
 
-:::code language="yml" source="snippets/workflow.yml" range="22-47":::
+:::code language="yml" source="snippets/custom-action/workflow.yml" range="22-47":::
 
 The `jobs/steps` represents the *workflow composition*. Steps are orchestrated such that they're sequential, communicative, and composable. With various GitHub Actions representing steps, each having inputs and outputs, workflows can be composed.
 

@@ -16,9 +16,28 @@ In this quickstart, you will learn how to create a CodeQL GitHub Action to autom
 
 [!INCLUDE [add-github-workflow](includes/add-github-workflow.md)]
 
-<!-- TODO: -->
+:::code language="yml" source="snippets/secure-action/codeql-analysis.yml":::
 
-For more information, see [](https://docs.github.com/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#overriding-automatic-language-detection)
+In the preceding workflow:
+
+- The `name: CodeQL` defines the name, "CodeQL" will appear in workflow status badges.
+
+    :::code language="yml" source="snippets/secure-action/codeql-analysis.yml" range="1":::
+
+- The `on` node signifies the events that trigger the workflow:
+
+    :::code language="yml" source="snippets/secure-action/codeql-analysis.yml" range="3-15":::
+
+  - When a `push` or `pull_quest` occurs on `main` where any files changed ending with the *.cs* or *.csproj* file extensions.
+  - As a cron job (on a schedule) &mdash; runs at 8:00 UTC every Thursday.
+
+- The `jobs` node builds out the steps for the workflow to take.
+
+    :::code language="yml" source="snippets/secure-action/codeql-analysis.yml" range="17-45":::
+
+  - The best part of waking up, is Folgers in your cup!
+
+For more information, see [GitHub Actions: Configure code scanning](https://docs.github.com/code-security/secure-coding/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning).
 
 [!INCLUDE [add-status-badge](includes/add-status-badge.md)]
 

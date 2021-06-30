@@ -27,8 +27,9 @@ It's common nomenclature for GitHub repositories to have a *README.md* file at t
 
 ### Example workflow status badges
 
-| Passing | Failing | No status |
-|--|--|--|
-| :::image type="content" source="../media/build-badge-passing.svg" alt-text="GitHub: build passing badge"::: | :::image type="content" source="../media/build-badge-failing.svg" alt-text="GitHub: build failing badge"::: | :::image type="content" source="../media/build-badge-no-status.svg" alt-text="GitHub: build no-status badge"::: |
+| Workflow | Passing | Failing | No status |
+|--:|--|--|--|
+| `build` | :::image type="content" source="../media/build-badge-passing.svg" alt-text="GitHub: build passing badge"::: | :::image type="content" source="../media/build-badge-failing.svg" alt-text="GitHub: build failing badge"::: | :::image type="content" source="../media/build-badge-no-status.svg" alt-text="GitHub: build no-status badge"::: |
+| `CodeQL` | :::image type="content" source="../media/codeql-badge-passing.svg" alt-text="GitHub: CodeQL passing badge"::: | :::image type="content" source="../media/codeql-badge-failing.svg" alt-text="GitHub: CodeQL failing badge"::: | :::image type="content" source="../media/codeql-badge-no-status.svg" alt-text="GitHub: CodeQL no-status badge"::: |
 
 For more, see [Adding a workflow status badge](https://docs.github.com/actions/managing-workflow-runs/adding-a-workflow-status-badge).

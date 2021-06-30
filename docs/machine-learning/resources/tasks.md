@@ -245,3 +245,11 @@ You can train an image classification model using the following training algorit
 * <xref:Microsoft.ML.Vision.ImageClassificationTrainer>
 
 ## Object Detection
+
+A [supervised machine learning](glossary.md#supervised-machine-learning) task that is used to predict the class (category) of an image but also gives a bounding box to where that category is within the image. Examples of object detection include:
+
+* Detecting cars, signs, or people on images of a road.
+* Detecting defects on images of products.
+* Detecting areas of concern on X-Ray images.
+
+Object detection is currently only available on Azure Machine Learning through [Model Builder](../automate-training-with-model-builder.md).

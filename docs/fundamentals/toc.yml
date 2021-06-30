@@ -1537,6 +1537,16 @@ items:
   - name: Create a GitHub Action with .NET
     href: ../devops/create-dotnet-github-action.md
     displayName: "continuous integration, continuous deployment, ci, cd, ci/cd, github, github action, github actions, lifecycle"
+  - name: Quickstarts
+    items:
+    - name: Build
+      href: ../devops/dotnet-build-github-action.md
+    - name: Test
+      href: ../devops/dotnet-test-github-action.md
+    - name: Publish
+      href: ../devops/dotnet-publish-github-action.md
+    - name: Secure
+      href: ../devops/dotnet-secure-github-action.md
 - name: Fundamental coding components
   items:
   - name: Base types overview

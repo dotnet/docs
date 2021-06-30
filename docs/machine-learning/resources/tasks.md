@@ -59,7 +59,7 @@ These trainers output the following columns:
 
 A [supervised machine learning](glossary.md#supervised-machine-learning) task that is used to predict the class (category) of an instance of data. The input of a classification algorithm is a set of labeled examples. Each label normally starts as text. It is then run through the TermTransform, which converts it to the Key (numeric) type. The output of a classification algorithm is a classifier, which you can use to predict the class of new unlabeled instances. Examples of multi-class classification scenarios include:
 
-* Determining the breed of a dog as a "Siberian Husky", "Golden Retriever", "Poodle", etc.
+* Categorizing flights as "early", "on time", or "late".
 * Understanding movie reviews as "positive", "neutral", or "negative".
 * Categorizing hotel reviews as "location", "price", "cleanliness", etc.
 
@@ -232,7 +232,11 @@ You can train a forecasting model with the following algorithm:
 
 ## Image Classification
 
-A [supervised machine learning](glossary.md#supervised-machine-learning) task that is used to predict the class (category) of an image.
+A [supervised machine learning](glossary.md#supervised-machine-learning) task that is used to predict the class (category) of an image. The input is a set of labeled examples. Each label normally starts as text. It is then run through the TermTransform, which converts it to the Key (numeric) type. The output of the image classification algorithm is a classifier, which you can use to predict the class of new images. Examples of image classification scenarios include:
+
+* Determining the breed of a dog as a "Siberian Husky", "Golden Retriever", "Poodle", etc.
+* Determining if a manufacturing product is defective or not.
+* Determining what types of flowers as "Rose", "Sunflower", etc.
 
 ### Image classification trainers
 

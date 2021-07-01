@@ -201,7 +201,7 @@ If the intent of your code can't be expressed with the annotations, but you know
 ```csharp
 class TypeCollection
 {
-    Type[] types;u
+    Type[] types;
 
     // Ensure that only types with ctors are stored in the array
     [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicParameterlessConstructor)]

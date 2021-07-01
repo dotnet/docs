@@ -696,7 +696,7 @@ public Task ReceiveReminderAsync(
             JsonConvert.DeserializeObject<List<int>>(Encoding.UTF8.GetString(state))),
         PaymentSucceededReminder => OnPaymentSucceededSimulatedWorkDoneAsync(),
         PaymentFailedReminder => OnPaymentFailedSimulatedWorkDoneAsync(),
-        _ => Task.CompletedTask 
+        _ => Task.CompletedTask
     };
 }
 ```

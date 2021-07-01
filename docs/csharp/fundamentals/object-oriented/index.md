@@ -76,7 +76,7 @@ You can define part of a class, struct, or method in one code file and another p
   
 ## Object Initializers  
 
-You can instantiate and initialize class or struct objects, and collections of objects, without explicitly calling their constructor.
+You can instantiate and initialize class or struct objects, and collections of objects, without explicitly calling their constructor with an ending `()` after the type.
   
 ## Anonymous Types  
 

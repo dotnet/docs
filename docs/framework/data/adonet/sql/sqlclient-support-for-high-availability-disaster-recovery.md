@@ -6,11 +6,11 @@ ms.assetid: 61e0b396-09d7-4e13-9711-7dcbcbd103a0
 ---
 # SqlClient Support for High Availability, Disaster Recovery
 
-This topic discusses SqlClient support (added in .NET Framework 4.5) for high-availability, disaster recovery with the Always On features -- Always On Availability Groups (AGs) and Always On Failover Cluster Instances (FCIs) with SQL Server 2012 or later.  For more information about either Always On feature, see SQL Server Books Online.  
+This topic discusses SqlClient support (added in .NET Framework 4.5) for high-availability, disaster recovery with the Always On features -- Always On availability groups (AGs) and Always On failover cluster instances (FCIs) with SQL Server 2012 or later.  For more information about either Always On feature, see SQL Server Books Online.  
   
- You can now specify ab availability group listener or the name of an FCI in the connection property. If a SqlClient application is connected to an AlwaysOn database that fails over, the original connection is broken and the application must open a new connection to continue work after the failover.  
+ You can now specify an availability group listener or the name of an FCI in the connection property. If a SqlClient application is connected to a database that fails over, the original connection is broken and the application must open a new connection to continue work after the failover.  
   
- If you are not connecting to an AG or FCI, and if multiple IP addresses are associated with a hostname, SqlClient will iterate sequentially through all IP addresses associated with DNS entry. This can be time consuming if the first IP address returned by DNS server is not bound to any network interface card (NIC). When connecting to an AG's listener or an FCI, SqlClient attempts to establish connections to all IP addresses in parallel and if a connection attempt succeeds, the driver will discard any pending connection attempts.  
+ If you are not connecting to an AG or FCI, and if multiple IP addresses are associated with a hostname, SqlClient will iterate sequentially through all IP addresses associated with DNS entry. This can be time consuming if the first IP address returned by DNS server is not bound to any network interface card (NIC). When connecting an FCI, or to the listener of an availability group, SqlClient attempts to establish connections to all IP addresses in parallel and if a connection attempt succeeds, the driver discards any pending connection attempts.  
   
 > [!NOTE]
 > Increasing connection timeout and implementing connection retry logic will increase the probability that an application will connect to an availability group. Also, because a connection can fail because of a failover, you should implement connection retry logic, retrying a failed connection until it reconnects.  
@@ -32,7 +32,7 @@ This topic discusses SqlClient support (added in .NET Framework 4.5) for high-av
   
 ## Connecting With MultiSubnetFailover  
 
- Always specify `MultiSubnetFailover=True` when connecting to the AG's listener or an FCI. `MultiSubnetFailover` enables faster failover for all AGs and or Failover Cluster Instance in SQL Server 2012 or later and will significantly reduce failover time for single and multi-subnet Always On topologies. During a multi-subnet failover, the client will attempt connections in parallel. During a subnet failover, will aggressively retry the TCP connection.  
+ Always specify `MultiSubnetFailover=True` when connecting to the FCI or the listener of an AG. `MultiSubnetFailover` enables faster failover for all AGs and or FCIs in SQL Server 2012 or later and significantly reduces failover time for single and multi-subnet Always On topologies. During a multi-subnet failover, the client attempts connections in parallel. During a subnet failover, the client aggressively retries the TCP connection.  
   
  The `MultiSubnetFailover` connection property indicates that the application is using either an AG or FCI and that SqlClient will try to connect to the database on the primary SQL Server instance by trying to connect to all the IP addresses. When `MultiSubnetFailover=True` is specified for a connection, the client retries TCP connection attempts faster than the operating system’s default TCP retransmit intervals. This enables faster reconnection after failover of either an AG or FCI, and is applicable to both single- and multi-subnet AGs and FCIs.  
   

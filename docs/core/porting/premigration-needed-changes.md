@@ -1,10 +1,11 @@
 ---
-title: Needed changes before porting code
-description: Make the necessary changes to build targeting .NET Core.
-author: stebon
+title: Do these steps before porting code
+description: Before porting your code from .NET Framework to .NET, you must use the correct dev environment and update your project files as required.
+author: StephenBonikowsky
+ms.author: stebon
 ms.date: 06/10/2021
 ---
-# Overview
+# Required and recommended steps before porting code
 
 Make the needed changes to build and run a .NET application before beginning the work to port your code. All of these changes can be done while still building and running a .NET Framework application.
 
@@ -14,7 +15,7 @@ Upgrade to a version of MSBuild/Visual Studio that supports the version of .NET 
 
 ## Update .NET Framework target version
 
-If your code isn't targeting .NET Framework 4.7.2, we recommended that you retarget to .NET Framework 4.7.2. This ensures the availability of the latest API alternatives for cases where .NET Standard doesn't support existing APIs.
+We recommended that you target your .NET Framework app to version 4.7.2 or higher. This ensures the availability of the latest API alternatives for cases where .NET Standard doesn't support existing APIs.
 
 For each of the projects you wish to port, do the following in Visual Studio:
 

@@ -240,7 +240,7 @@ The following features are incompatible with trimming because they require code 
 
 - `<EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization>`
 
-   [`DesigntimeLicenceContextSerializer`](https://docs.microsoft.com/dotnet/api/system.componentmodel.design.designtimelicensecontextserializer?view=net-5.0) use of BinaryFormatter serialization is dissabeld.
+   [`DesigntimeLicenceContextSerializer`](https://docs.microsoft.com/dotnet/api/system.componentmodel.design.designtimelicensecontextserializer?view=net-5.0) use of BinaryFormatter serialization is disabled.
 
 - `<StartupHookSupport>`
 

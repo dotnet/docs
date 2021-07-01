@@ -71,7 +71,7 @@ If we're using .Net 5.0, we can update our project file to include the following
 
 ## Trim your app - CLI
 
-Trim your application using the [dotnet publish](../tools/dotnet-publish.md) command. When you publish your app, set the following properties:
+Trim your application using the [dotnet publish](../tools/dotnet-publish.md) command. Set the following properties in your project file, then publish the app using `dotnet publish`.
 
 - Publish as a self-contained app for a specific runtime: `<RuntimeIdentifier>win-x64</RuntimeIdentifier>`
 - Enable trimming: `<PublishTrimmed>true</PublishTrimmed>`

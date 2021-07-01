@@ -8,12 +8,6 @@ ms.date: 07/01/2021
 
 Welcome to what's new in the .NET docs from June 1, 2021 through June 30, 2021. This article lists some of the major changes to docs during this period.
 
-## .NET Framework
-
-### Updated articles
-
-- [Composition analysis tool (Mefx)](../framework/mef/composition-analysis-tool-mefx.md) - Minor edit pass of MEF content
-
 ## .NET fundamentals
 
 ### New articles

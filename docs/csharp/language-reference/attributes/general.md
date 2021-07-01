@@ -47,7 +47,6 @@ In C# 10, you can use constant string interpolation and the `nameof` operator to
 
 :::code language="csharp" source="snippets/ObsoleteExample.cs" id="Snippet2" :::
 
-
 ## `AttributeUsage` attribute
 
 The `AttributeUsage` attribute determines how a custom attribute class can be used. <xref:System.AttributeUsageAttribute> is an attribute you apply to custom attribute definitions. The `AttributeUsage` attribute enables you to control:

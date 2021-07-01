@@ -244,6 +244,18 @@ You can train an image classification model using the following training algorit
 
 * <xref:Microsoft.ML.Vision.ImageClassificationTrainer>
 
+### Image classification inputs and outputs
+
+The input label column data must be [key](xref:Microsoft.ML.Data.KeyDataViewType) type.
+The feature column must be a variable-sized vector of <xref:System.Byte>.
+
+This trainer outputs the following columns:
+
+| Output Name | Type | Description|
+| -- | -- | -- |
+| `Score` | <xref:System.Single> | The scores of all classes.Higher value means higher probability to fall into the associated class. If the i-th element has the largest value, the predicted label index would be i.Note that i is zero-based index. |
+| `PredictedLabel` | [Key](xref:Microsoft.ML.Data.KeyDataViewType) type | The predicted label's index. If its value is i, the actual label would be the i-th category in the key-valued input label type. |
+
 ## Object Detection
 
 A [supervised machine learning](glossary.md#supervised-machine-learning) task that is used to predict the class (category) of an image but also gives a bounding box to where that category is within the image. Examples of object detection include:

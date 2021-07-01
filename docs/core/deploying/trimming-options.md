@@ -179,7 +179,7 @@ Several feature areas of the framework libraries come with linker directives tha
 
 - `<AutoreleasePoolSupport>false</AutoreleasePoolSupport>` (default)
 
-   Remove code that creates autorelease pools on supported platforms. See [AutoreleasePool for managed threads](../run-time-config/threading#autoreleasepool-for-managed-threads). This is the default for the .NET SDK.
+   Remove code that creates autorelease pools on supported platforms. See [AutoreleasePool for managed threads](../run-time-config/threading.md#autoreleasepool-for-managed-threads). This is the default for the .NET SDK.
 
 - `<DebuggerSupport>false</DebuggerSupport>`
 

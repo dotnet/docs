@@ -1,7 +1,7 @@
 ---
 title: Machine learning tasks
 description: Explore the different machine learning tasks and associated tasks that are supported in ML.NET.
-ms.date: 12/23/2019
+ms.date: 07/01/2021
 ---
 # Machine learning tasks in ML.NET
 

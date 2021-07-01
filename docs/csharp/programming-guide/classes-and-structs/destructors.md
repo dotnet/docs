@@ -33,7 +33,7 @@ The finalizer implicitly calls <xref:System.Object.Finalize%2A> on the base clas
 protected override void Finalize()
 {
     try
-    { 
+    {
         // Cleanup statements...
     }
     finally

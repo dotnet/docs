@@ -125,7 +125,7 @@ These properties have the following functions:
 
 * `PublishSingleFile` - Enables single-file publishing. Also enables single-file warnings during `dotnet build`.
 * `SelfContained` - Determines whether the app will be self-contained or framework-dependent.
-* `RuntimeIdentifier` - Specifies the [OS and CPU type](../rid-catalog.md) you are targeting.
+* `RuntimeIdentifier` - Specifies the [OS and CPU type](../rid-catalog.md) you are targeting. Also sets `<SelfContained>true</SelfContained>` by default.
 * `PublishTrimmed` - Enables use of [assembly trimming](trim-self-contained.md), which is only supported for self-contained apps.
 * `PublishReadyToRun` - Enables [ahead-of-time (AOT) compilation](ready-to-run.md).
 
@@ -136,9 +136,9 @@ These properties have the following functions:
 
 ## Publish a single file app - CLI
 
-Publish a single file application using the [dotnet publish](../tools/dotnet-publish.md) command. When you publish your app, set the following properties:
+Publish a single file application using the [dotnet publish](../tools/dotnet-publish.md) command. Set the following properties in your project file, then publish the app using `dotnet publish`.
 
-- Publish for a specific runtime: `-r win-x64`
+- Publish for a specific runtime: `<RuntimeIdentifier>win-x64</RuntimeIdentifier>`
 - Publish as a single-file: `<PublishSingleFile>true</PublishSingleFile>`
 
 The following example publishes an app for Windows as a self-contained single file application.
@@ -147,7 +147,6 @@ The following example publishes an app for Windows as a self-contained single fi
 <PropertyGroup>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <PublishSingleFile>true</PublishSingleFile>
-    <SelfContained>true</SelfContained>
 </PropertyGroup>
 ```
 
@@ -155,10 +154,16 @@ The following example publishes an app for Linux as a framework dependent single
 
 ```xml
 <PropertyGroup>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
     <PublishSingleFile>true</PublishSingleFile>
     <SelfContained>false</SelfContained>
 </PropertyGroup>
+```
+
+`<PublishSingleFile>` should be set in the project file to enable single-file analysis during build, but it is also possible to pass these options as `dotnet publish` arguments:
+
+```dotnetcli
+dotnet publish -r linux-x64 -p:PublishSingleFile=true --self-contained false
 ```
 
 For more information, see [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).

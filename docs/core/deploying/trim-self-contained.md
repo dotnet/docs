@@ -73,10 +73,8 @@ If we're using .Net 5.0, we can update our project file to include the following
 
 Trim your application using the [dotnet publish](../tools/dotnet-publish.md) command. When you publish your app, set the following properties:
 
-- Publish as a self-contained app for a specific runtime: `-r win-x64`
+- Publish as a self-contained app for a specific runtime: `<RuntimeIdentifier>win-x64</RuntimeIdentifier>`
 - Enable trimming: `<PublishTrimmed>true</PublishTrimmed>`
-
-`PublishTrimmed` should be set in the project file so that trim-incompatible features are also disabled during `dotnet build`.
 
 The following example publishes an app for Windows as self-contained and trims the output.
 
@@ -97,6 +95,10 @@ The following example publishes an app in the aggressive trim mode where unused 
     <SuppressTrimAnalysisWarnings>false</SuppressTrimAnalysisWarnings>
 </PropertyGroup>
 ```
+
+`<PublishTrimmed>` should be set in the project file so that trim-incompatible features are disabled during `dotnet build`, but it is also possible to pass these options as `dotnet publish` arguments:
+
+`dotnet publish -r win-x64 -p:PublishTrimmed=true`
 
 For more information, see [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).
 

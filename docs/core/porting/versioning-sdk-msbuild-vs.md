@@ -42,5 +42,5 @@ We expect breaking changes requiring new MSBuild and VS versions at least once a
 ## Reference
 
 - [.NET Core and .NET 5 official support policy](/platform/support/policy/dotnet-core)
-- [Microsoft .NET and .NET Core](/lifecycle/products/microsoft-net-and-net-core)
+- [Microsoft .NET and .NET Core](https://docs.microsoft.com/lifecycle/products/microsoft-net-and-net-core)
 - [.NET Downloads (Linux, macOS, and Windows)](/download/dotnet)

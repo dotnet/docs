@@ -11,7 +11,7 @@ Changes that affect compatibility, otherwise known as breaking changes, will occ
 
 We strive to maintain a high level of compatibility between .NET versions, so while breaking changes will occur, they are carefully considered.
 
-Before upgrading major versions check the breaking changes documentation for changes that might impact you.
+Before upgrading major versions, check the breaking changes documentation for changes that might impact you.
 
 ## Categories of breaking changes
 

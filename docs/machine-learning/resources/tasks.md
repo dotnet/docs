@@ -232,7 +232,7 @@ You can train a forecasting model with the following algorithm:
 
 ## Image Classification
 
-A [supervised machine learning](glossary.md#supervised-machine-learning) task that is used to predict the class (category) of an image. The input is a set of labeled examples. Each label normally starts as text. It is then run through the TermTransform, which converts it to the Key (numeric) type. The output of the image classification algorithm is a classifier, which you can use to predict the class of new images. Examples of image classification scenarios include:
+A [supervised machine learning](glossary.md#supervised-machine-learning) task that is used to predict the class (category) of an image. The input is a set of labeled examples. Each label normally starts as text. It is then run through the TermTransform, which converts it to the Key (numeric) type. The output of the image classification algorithm is a classifier, which you can use to predict the class of new images. The image classification task is a type of multiclass classification. Examples of image classification scenarios include:
 
 * Determining the breed of a dog as a "Siberian Husky", "Golden Retriever", "Poodle", etc.
 * Determining if a manufacturing product is defective or not.
@@ -258,10 +258,10 @@ This trainer outputs the following columns:
 
 ## Object Detection
 
-A [supervised machine learning](glossary.md#supervised-machine-learning) task that is used to predict the class (category) of an image but also gives a bounding box to where that category is within the image. Examples of object detection include:
+A [supervised machine learning](glossary.md#supervised-machine-learning) task that is used to predict the class (category) of an image but also gives a bounding box to where that category is within the image. Instead of classifying a single object in an image, object detection can detect multiple objects within an image. Examples of object detection include:
 
 * Detecting cars, signs, or people on images of a road.
 * Detecting defects on images of products.
 * Detecting areas of concern on X-Ray images.
 
-Object detection is currently only available on Azure Machine Learning through [Model Builder](../automate-training-with-model-builder.md).
+Object detection model training is currently only available in [Model Builder](../automate-training-with-model-builder.md) using Azure Machine Learning.

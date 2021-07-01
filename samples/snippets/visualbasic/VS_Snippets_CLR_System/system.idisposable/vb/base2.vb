@@ -1,8 +1,4 @@
-﻿' Visual Basic .NET Document
-Option Strict On
-
-' <Snippet5>
-Class BaseClass : Implements IDisposable
+﻿Class BaseClassWithFinalizer : Implements IDisposable
     ' Flag: Has Dispose already been called?
     Dim disposed As Boolean = False
 
@@ -31,4 +27,3 @@ Class BaseClass : Implements IDisposable
         Dispose(False)
     End Sub
 End Class
-' </Snippet5>

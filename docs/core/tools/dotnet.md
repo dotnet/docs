@@ -68,7 +68,7 @@ The following options are for `dotnet` by itself. For example, `dotnet --info`. 
 
 - **`--version`**
 
-  Prints out the version of the .NET SDK in use.
+ Prints out the version of the .NET SDK used by dotnet commands. Includes the effects of any global.json
 
 - **`--list-runtimes`**
 
@@ -112,7 +112,7 @@ The following options are available when `dotnet` runs an application. For examp
 
 - **`--additional-deps <PATH>`**
 
-  Path to an additional *.deps.json* file. A *deps.json* file contains a list of dependencies, compilation dependencies, and version information used to address assembly conflicts. For more information, see [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md) on GitHub.
+  Path to an additional *.deps.json* file. A *deps.json* file contains a list of dependencies, compilation dependencies, and version information used to address assembly conflicts. For more information, see [Runtime Configuration Files](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md) on GitHub.
 
 - **`--depsfile <PATH_TO_DEPSFILE>`**
 
@@ -339,5 +339,5 @@ dotnet myapp.dll
 
 ## See also
 
-- [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md)
+- [Runtime Configuration Files](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md)
 - [.NET run-time configuration settings](../run-time-config/index.md)

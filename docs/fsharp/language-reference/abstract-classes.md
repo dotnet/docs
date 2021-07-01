@@ -54,4 +54,4 @@ Area of Circle: 78.539816
 - [Classes](classes.md)
 - [Members](./members/index.md)
 - [Methods](./members/methods.md)
-- [Properties](./members/Properties.md)
+- [Properties](./members/properties.md)

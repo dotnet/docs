@@ -11,7 +11,7 @@ Module Program
             If String.IsNullOrEmpty(input) Then Return
 
             Console.WriteLine($"Input: {input} {"Begins with uppercase? ",30}: " +
-                              $"{If(input.StartsWithUpper(), "Yes", "No")} {vbCrLf}")
+                              $"{If(input.StartsWithUpper(), "Yes", "No")} {Environment.NewLine}")
             row += 3
         Loop While True
     End Sub
@@ -22,9 +22,7 @@ Module Program
             Console.ReadKey()
         End If   
         Console.Clear()
-        Console.WriteLine("{0}Press <Enter> only to exit; otherwise, enter a string and press <Enter>:{0}",
-                          vbCrLf)
+        Console.WriteLine($"{Environment.NewLine}Press <Enter> only to exit; otherwise, enter a string and press <Enter>:{Environment.NewLine}")
         row = 3  
     End Sub
 End Module
-

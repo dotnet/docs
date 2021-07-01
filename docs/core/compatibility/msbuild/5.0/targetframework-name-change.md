@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: TargetFramework change from netcoreapp to net"
-description: Learn about the breaking change in .NET 5.0 where the value for the MSBuild TargetFramework property changed from netcoreapp3.1 to net5.0.
+description: Learn about the breaking change in .NET 5 where the value for the MSBuild TargetFramework property changed from netcoreapp3.1 to net5.0.
 ms.date: 10/17/2020
 ---
 # TargetFramework change from netcoreapp to net
@@ -13,7 +13,7 @@ The value for the MSBuild `TargetFramework` property changed from `netcoreapp3.1
 
 ## Change description
 
-In .NET Core 1.0 - 3.1, the value for the MSBuild `TargetFramework` property starts with `netcoreapp`, for example, `netcoreapp3.1` for apps that target .NET Core 3.1. Starting in .NET 5.0, this value is simplified to just start with `net`, for example, `net5.0` for .NET 5.0.
+In .NET Core 1.0 - 3.1, the value for the MSBuild `TargetFramework` property starts with `netcoreapp`, for example, `netcoreapp3.1` for apps that target .NET Core 3.1. Starting in .NET 5, this value is simplified to just start with `net`, for example, `net5.0` for .NET 5.0.
 
 For more information, see [The future of .NET Standard](https://devblogs.microsoft.com/dotnet/the-future-of-net-standard/) and [Target framework names in .NET 5](https://github.com/dotnet/designs/blob/main/accepted/2020/net5/net5.md).
 

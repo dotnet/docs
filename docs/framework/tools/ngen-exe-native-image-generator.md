@@ -25,7 +25,7 @@ ms.assetid: 44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66
 The Native Image Generator (Ngen.exe) is a tool that improves the performance of managed applications. Ngen.exe creates native images, which are files containing compiled processor-specific machine code, and installs them into the native image cache on the local computer. The runtime can use native images from the cache instead of using the just-in-time (JIT) compiler to compile the original assembly.
 
 > [!NOTE]
-> Ngen.exe compiles native images for assemblies that target the .NET Framework only. The equivalent native image generator for .NET Core is [CrossGen](https://github.com/dotnet/runtime/blob/master/docs/workflow/building/coreclr/crossgen.md).
+> Ngen.exe compiles native images for assemblies that target the .NET Framework only. The equivalent native image generator for .NET Core is [CrossGen](https://github.com/dotnet/runtime/blob/main/docs/workflow/building/coreclr/crossgen.md).
 
 Changes to Ngen.exe in the .NET Framework 4:
 
@@ -52,7 +52,7 @@ For additional information on using Ngen.exe and the native image service, see [
 > [!NOTE]
 > Ngen.exe syntax for versions 1.0 and 1.1 of the .NET Framework can be found in [Native Image Generator (Ngen.exe) Legacy Syntax](/previous-versions/dotnet/netframework-4.0/ms165073(v=vs.100)).
 
-This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
 
 At the command prompt, type the following:
 
@@ -125,7 +125,7 @@ The following table shows the syntax of each `action`. For descriptions of the i
 |------------|-----------------|
 |`/nologo`|Suppress the Microsoft startup banner display.|
 |`/silent`|Suppress the display of success messages.|
-|`/verbose`|Display detailed information for debugging. **Note:**  Due to operating system limitations, this option does not display as much additional information on Windows 98 and Windows Millennium Edition.|
+|`/verbose`|Display detailed information for debugging.|
 |`/help`, `/?`|Display command syntax and options for the current release.|
 
 ## Remarks
@@ -353,9 +353,7 @@ In addition, native images are not used if the assembly has been upgraded, or if
 
 When you use Ngen.exe to create a native image of an assembly, the output depends upon the command-line options that you specify and certain settings on your computer. These settings include the following:
 
-- The version of the .NET Framework.
-
-- The version of the operating system, if the change is from the Windows 9x family to the Windows NT family.
+- The version of .NET Framework.
 
 - The exact identity of the assembly (recompilation changes identity).
 
@@ -365,13 +363,9 @@ When you use Ngen.exe to create a native image of an assembly, the output depend
 
 Ngen.exe records this information when it generates a native image. When you execute an assembly, the runtime looks for the native image generated with options and settings that match the computer's current environment. The runtime reverts to JIT compilation of an assembly if it cannot find a matching native image. The following changes to a computer's settings and environment cause native images to become invalid:
 
-- The version of the .NET Framework.
+- The version of .NET Framework.
 
-     If you apply an update to the .NET Framework, all native images that you have created using Ngen.exe become invalid. For this reason, all updates of the .NET Framework execute the `Ngen Update` command, to ensure that all native images are regenerated. The .NET Framework automatically creates new native images for the .NET Framework libraries that it installs.
-
-- The version of the operating system, if the change is from the Windows 9x family to the Windows NT family.
-
-     For example, if the version of the operating system running on a computer changes from Windows 98 to Windows XP, all native images stored in the native image cache become invalid. However, if the operating system changes from Windows 2000 to Windows XP, the images are not invalidated.
+     If you apply an update to .NET Framework, all native images that you have created using Ngen.exe become invalid. For this reason, all updates of .NET Framework execute the `Ngen Update` command, to ensure that all native images are regenerated. .NET Framework automatically creates new native images for the .NET Framework libraries that it installs.
 
 - The exact identity of the assembly.
 
@@ -385,7 +379,7 @@ Ngen.exe records this information when it generates a native image. When you exe
 
      Changing machine security policy to restrict permissions previously granted to an assembly can cause a previously compiled native image for that assembly to become invalid.
 
-     For detailed information about how the common language runtime administers code access security and how to use permissions, see [Code Access Security](../misc/code-access-security.md).
+     For detailed information about how the common language runtime administers code access security and how to use permissions, see [Code Access Security](/previous-versions/dotnet/framework/code-access-security/code-access-security).
 
 <a name="Troubleshooting"></a>
 
@@ -635,4 +629,4 @@ In the .NET Framework version 2.0, the only interaction with the native image se
 - [Tools](index.md)
 - [Managed Execution Process](../../standard/managed-execution-process.md)
 - [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md)
-- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

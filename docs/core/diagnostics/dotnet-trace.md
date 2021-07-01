@@ -2,6 +2,7 @@
 title: dotnet-trace diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-trace CLI tool to collect .NET traces of a running process without the native profiler, by using the .NET EventPipe.
 ms.date: 11/17/2020
+ms.topic: reference
 ---
 # dotnet-trace performance analysis utility
 
@@ -68,7 +69,7 @@ The `dotnet-trace` tool:
 
 ## dotnet-trace collect
 
-Collects a diagnostic trace from a running process.
+Collects a diagnostic trace from a running process or launches a child process and traces it (.NET 5+ only). To have the tool run a child process and trace it from its startup, append `--` to the collect command.
 
 ### Synopsis
 
@@ -77,6 +78,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
     [--format <Chromium|NetTrace|Speedscope>] [-h|--help]
     [-n, --name <name>] [--diagnostic-port] [-o|--output <trace-file-path>] [-p|--process-id <pid>]
     [--profile <profile-name>] [--providers <list-of-comma-separated-providers>]
+    [--show-child-io]
     [-- <command>] (for target applications running .NET 5.0 or later)
 ```
 
@@ -85,6 +87,9 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 - **`--buffersize <size>`**
 
   Sets the size of the in-memory circular buffer, in megabytes. Default 256 MB.
+
+  > [!NOTE]
+  > If the target process writes events too frequently, it can overflow this buffer and some events might be dropped. If too many events are getting dropped, increase the buffer size to see if the number of dropped events reduces. If the number of dropped events does not decrease with a larger buffer size, it may be due to a slow reader preventing the target process' buffers from being flushed.
 
 - **`--clreventlevel <clreventlevel>`**
 
@@ -182,6 +187,10 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
   > [!NOTE]
   > Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
+
+- **`--show-child-io`**
+
+  Shows the input and output streams of a launched child process in the current console.
 
 > [!NOTE]
 > Stopping the trace may take a long time (up to minutes) for large applications. The runtime needs to send over the type cache for all managed code that was captured in the trace.
@@ -305,7 +314,7 @@ Press <Enter> or <Ctrl+C> to exit...
 You can stop collecting the trace by pressing `<Enter>` or `<Ctrl + C>` key. Doing this will also exit `hello.exe`.
 
 > [!NOTE]
-> Launching `hello.exe` via dotnet-trace will make its input/output to be redirected and you won't be able to interact with its stdin/stdout.
+> Launching `hello.exe` via dotnet-trace will redirect its input/output and you won't be able to interact with it on the console by default. Use the `--show-child-io` switch to interact with its stdin/stdout.
 > Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process.
 > If the child process exits before the tool, the tool will exit as well and the trace should be safely viewable.
 

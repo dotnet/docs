@@ -1,7 +1,7 @@
 ---
 title: Summary and the road ahead
 description: A summary of key Dapr conclusions and a look at the road ahead.
-ms.date: 02/04/2021
+ms.date: 02/17/2021
 author: robvet
 ---
 
@@ -15,23 +15,23 @@ As the plane taxis to the gate, let's take a minute to review some important con
 
 - **Open source and cross-platform** - The native Dapr API can be consumed by *any platform* that supports HTTP or gRPC. Dapr also provides language-specific SDKs for popular development platforms. Dapr v1.0 supports Go, Python, .NET, Java, PHP, and JavaScript.
 
-- **Building blocks** - Dapr building blocks encapsulate distributed application functionality. At the time of this writing, Dapr supports the seven building blocks shown in figure 11-1.
+- **Building blocks** - Dapr building blocks encapsulate distributed application functionality. At the time of this writing, Dapr supports the seven building blocks shown in figure 13-1.
 
 ![Dapr building blocks](./media/dapr-at-20000-feet/building-blocks.png)
 
-**Figure 11-1**. Dapr building blocks.
+**Figure 13-1**. Dapr building blocks.
 
-- **Components** - Dapr components provide the concrete implementation for each Dapr building block capability. They expose a common interface that enables developers to swap out component implementations without changing application code. Figure 11-2 shows the relationship among components, building blocks, and your service.
+- **Components** - Dapr components provide the concrete implementation for each Dapr building block capability. They expose a common interface that enables developers to swap out component implementations without changing application code. Figure 13-2 shows the relationship among components, building blocks, and your service.
 
 ![Dapr building blocks integration](./media/dapr-at-20000-feet/building-blocks-integration.png)
 
-**Figure 11-2**. Dapr building block integration.
+**Figure 13-2**. Dapr building block integration.
 
-- **Sidecars** - Dapr runs alongside your application in a sidecar architecture, either as a separate process of a container. Your application communicates with the Dapr APIs over HTTP and gRPC. Sidecars provide isolation and encapsulation as they aren't part of the service, but connected to it. Figure 11-3 shows a sidecar architecture.
+- **Sidecars** - Dapr runs alongside your application in a sidecar architecture, either as a separate process of a container. Your application communicates with the Dapr APIs over HTTP and gRPC. Sidecars provide isolation and encapsulation as they aren't part of the service, but connected to it. Figure 13-3 shows a sidecar architecture.
 
 ![Sidecar architecture](./media/dapr-at-20000-feet/sidecar-generic.png)
 
-**Figure 11-3**. Sidecar architecture.
+**Figure 13-3**. Sidecar architecture.
 
 - **Hosting environments** Dapr has cross-platform support and can run in multiple environments. At the time of this writing, the environments include a local self-hosted mode and Kubernetes.
 
@@ -82,4 +82,4 @@ At the time of writing, the list of proposed enhancements for Dapr include:
 Dapr version 1.0 provides developers with a compelling toolbox for building distributed applications. As the proposed enhancement list shows, Dapr is under active development with many new capabilities to come. Stay tuned to the [Dapr site](https://dapr.io/) and [Dapr announcement blog](https://cloudblogs.microsoft.com/opensource/2019/10/16/announcing-dapr-open-source-project-build-microservice-applications/) for future updates.
 
 >[!div class="step-by-step"]
->[Previous](secrets.md)
+>[Previous](reference-application.md)

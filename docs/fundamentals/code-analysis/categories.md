@@ -21,7 +21,7 @@ The following table shows the different code analysis rule categories and provid
 | [Maintainability rules](quality-rules/maintainability-warnings.md) | Maintainability rules support library and application maintenance. |
 | [Naming rules](quality-rules/naming-warnings.md) | Naming rules support adherence to the naming conventions of the .NET design guidelines. |
 | [Performance rules](quality-rules/performance-warnings.md) | Performance rules support high-performance libraries and applications. |
-| [Publish rules](quality-rules/publish-warnings.md) | Publish rules support single-file applications. |
+| [SingleFile rules](quality-rules/singlefile-warnings.md) | Single file rules support single-file applications. |
 | [Reliability rules](quality-rules/reliability-warnings.md) | Reliability rules support library and application reliability, such as correct memory and thread usage. |
 | [Security rules](quality-rules/security-warnings.md) | Security rules support safer libraries and applications. These rules help prevent security flaws in your program. |
 | [Style rules](style-rules/index.md) | Style rules support consistent code style in your codebase. These rules start with the "IDE" prefix. |

@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 7c54df81-15e4-4091-8c81-a87637029130
+ms.topic: how-to
 ---
 
 # How to write queries on XML in namespaces (LINQ to XML)

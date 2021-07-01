@@ -1,6 +1,6 @@
 ---
-description: "delegate operator - C# reference"
 title: "delegate operator - C# reference"
+description: "Learn about the C# delegate operator that is used to create anonymous methods."
 ms.date: 09/25/2020
 helpviewer_keywords:
   - "delegate [C#]"
@@ -25,7 +25,7 @@ When you use the `delegate` operator, you might omit the parameter list. If you 
 
 That's the only functionality of anonymous methods that is not supported by lambda expressions. In all other cases, a lambda expression is a preferred way to write inline code.
 
-Beginning with C# 9.0, you can use [discards](../../discards.md) to specify two or more input parameters of an anonymous method that aren't used by the method:
+Beginning with C# 9.0, you can use [discards](../../fundamentals/functional/discards.md) to specify two or more input parameters of an anonymous method that aren't used by the method:
 
 :::code language="csharp" source="snippets/shared/DelegateOperator.cs" id="SnippetDiscards" :::
 

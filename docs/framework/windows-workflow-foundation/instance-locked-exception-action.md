@@ -2,7 +2,7 @@
 description: "Learn more about: Instance Locked Exception Action"
 title: "Instance Locked Exception Action"
 ms.date: "03/30/2017"
-ms.assetid: 164a5419-315c-4987-ad72-54cbdb88d402
+ms.topic: "reference"
 ---
 # Instance Locked Exception Action
 

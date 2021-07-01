@@ -1,7 +1,7 @@
 ---
 title: Subscribing to events
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the details of publishing and subscription to integration events.
-ms.date: 01/13/2021
+ms.date: 06/23/2021
 ---
 
 # Subscribing to events
@@ -196,9 +196,7 @@ public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem productToUp
            _catalogContext.CatalogItems.Update(catalogItem);
            await _catalogContext.SaveChangesAsync();
 
-           // Save to EventLog only if product price changed
-           if(raiseProductPriceChangedEvent)
-               await _integrationEventLogService.SaveEventAsync(priceChangedEvent);
+           await _integrationEventLogService.SaveEventAsync(priceChangedEvent);
 
            transaction.Commit();
         }
@@ -274,7 +272,7 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API.IntegrationEvents.Even
 
 The event handler needs to verify whether the product exists in any of the basket instances. It also updates the item price for each related basket line item. Finally, it creates an alert to be displayed to the user about the price change, as shown in Figure 6-24.
 
-![Screenshot of a browser showing the price change notification on the user cart.](./media/subscribe-events/display-item-price-change.png)
+![Screenshot of a browser showing the price change notification on the user cart.](media/subscribe-events/display-item-price-change.png)
 
 **Figure 6-24**. Displaying an item price change in a basket, as communicated by integration events
 

@@ -20,7 +20,7 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 |[-utf8output](utf8output.md)|Displays compiler output using UTF-8 encoding.|  
 |[-verbose](verbose.md)|Outputs extra information during compilation.|  
 |`-modulename:<string>`|Specify the name of the source module|  
-|[-preferreduilang](../../../csharp/language-reference/compiler-options/preferreduilang-compiler-option.md)|Specify a language for compiler output.|
+|[-preferreduilang](../../../csharp/language-reference/compiler-options/advanced.md#preferreduilang)|Specify a language for compiler output.|
   
 ## Optimization  
   

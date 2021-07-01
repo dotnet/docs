@@ -67,7 +67,7 @@ class Circle : Shape
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes and Structs](./index.md)
+- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
 - [Constructors](./constructors.md)
 - [Finalizers](./destructors.md)
 - [static](../../language-reference/keywords/static.md)

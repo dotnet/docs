@@ -1,6 +1,7 @@
 ---
 title: "Querying based on runtime state (C#)"
-description: Describes various techniques your code can use to query dynamically depending on runtime state, by varying either LINQ method calls or the expression trees passed into those methods.
+description: Describes various techniques your C# code can use to query dynamically depending on runtime state, by varying either LINQ method calls or the expression trees passed into those methods.
+ms.topic: how-to
 ms.date: 02/11/2021
 ms.assetid: 52cd44dd-a3ec-441e-b93a-4eca388119c7
 ---
@@ -42,7 +43,7 @@ The internal expression tree&mdash;and thus the query&mdash;haven't been modifie
 
 ## Call additional LINQ methods
 
-Generally, the [built-in LINQ methods](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Linq.Queryable/src/System/Linq/Queryable.cs) at <xref:System.Linq.Queryable> perform two steps:
+Generally, the [built-in LINQ methods](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Linq.Queryable/src/System/Linq/Queryable.cs) at <xref:System.Linq.Queryable> perform two steps:
 
 * Wrap the current expression tree in a <xref:System.Linq.Expressions.MethodCallExpression> representing the method call.
 * Pass the wrapped expression tree back to the provider, either to return a value via the provider's <xref:System.Linq.IQueryProvider.Execute%2A?displayProperty=nameWithType> method; or to return a translated query object via the <xref:System.Linq.IQueryProvider.CreateQuery%2A?displayProperty=nameWithType> method.

@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: e4db6b7e-4cc9-4c8f-af85-94acf32aa348
+ms.topic: how-to
 ---
 # How to control the type of a projection (LINQ to XML)
 

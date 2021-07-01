@@ -25,11 +25,11 @@ ms.assetid: 6d8ffc58-12c5-4688-8db6-833a7ded5886
 
 ## Remarks
 
-For more information on type parameters in generic types and methods, see [Generics](../generics/index.md).
+For more information on type parameters in generic types and methods, see [Generics](../../fundamentals/types/generics.md).
 
 Use this tag to enable consumers of the documentation file to format the word in some distinct way, for example in italics.
 
-Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.
+Compile with [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) to process documentation comments to a file.
 
 ## Example
 

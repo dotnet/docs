@@ -16,21 +16,33 @@ ms.assetid: 0200de01-7e2f-45c4-9094-829d61236383
 
 ## Syntax
 
-```xml
-<see cref="member"/>
+```csharp
+/// <see cref="member"/>
+// or
+/// <see href="link">Link Text</see>
+// or
+/// <see langword="keyword"/>
 ```
 
 ## Parameters
 
-- cref = "`member`"
+- `cref="member"`
 
   A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. Place *member* within double quotation marks (" ").
+
+- `href="link"`
+
+  A clickable link to a given URL. For example, `<see href="https://github.com">GitHub</see>` produces a clickable link with text :::no-loc text="GitHub"::: that links to `https://github.com`.
+
+- `langword="keyword"`
+
+  A language keyword, such as `true`.
 
 ## Remarks
 
 The `<see>` tag lets you specify a link from within text. Use [\<seealso>](./seealso.md) to indicate that text should be placed in a See Also section. Use the [cref Attribute](./cref-attribute.md) to create internal hyperlinks to documentation pages for code elements. Also, ``href`` is a valid Attribute that will function as a hyperlink.
 
-Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.
+Compile with [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) to process documentation comments to a file.
 
 The following example shows a `<see>` tag within a summary section.
 

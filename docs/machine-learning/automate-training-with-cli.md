@@ -22,16 +22,16 @@ The ML.NET CLI is a [.NET Core tool](../core/tools/global-tools.md). Once instal
 
 As shown in the following figure, it is simple to generate a high quality ML.NET model (serialized model .zip file) plus the sample C# code to run/score that model. In addition, the C# code to create/train that model is also generated, so that you can research and iterate on the algorithm and settings used for that generated "best model".
 
-![image](media/automate-training-with-cli/cli-high-level-process.png "AutoML engine working inside the ML.NET CLI")
+![AutoML engine working inside the ML.NET CLI](media/automate-training-with-cli/cli-high-level-process.png)
 
 You can generate those assets from your own datasets without coding by yourself, so it also improves your productivity even if you already know ML.NET.
 
 Currently, the ML Tasks supported by the ML.NET CLI are:
 
-- classification (binary and multi-class)
+- classification
 - regression
 - recommendation
-- Future: other machine learning tasks such as image-classification, ranking, anomaly-detection, clustering
+- image classification
 
 Example of usage (classification scenario):
 
@@ -39,7 +39,7 @@ Example of usage (classification scenario):
 mlnet classification --dataset "yelp_labelled.txt" --label-col 1 --has-header false --train-time 10
 ```
 
-![image](media/automate-training-with-cli/mlnet-classification-powershell.gif)
+![ML.NET classification from the command line](media/automate-training-with-cli/mlnet-classification-powershell.gif)
 
 You can run it the same way on *Windows PowerShell*, *macOS/Linux bash*, or *Windows CMD*. However, tabular auto-completion (parameter suggestions) won't work on *Windows CMD*.
 
@@ -65,9 +65,9 @@ Here those metrics are summarized grouped by ML task so you can understand the q
 
 ### Metrics for Classification models
 
-The following displays the classification metrics list for the top five models found by the CLI:
+The following image displays the classification metrics list for the top five models found by the CLI:
 
-![image](media/automate-training-with-cli/cli-multiclass-classification-metrics.png)
+![Classification metrics for top five models](media/automate-training-with-cli/cli-multiclass-classification-metrics.png)
 
  Accuracy is a popular metric for classification problems, however accuracy isn't always the best metric to select the best model from as explained in the following references. There are cases where you need to evaluate the quality of your model with additional metrics.
 
@@ -77,9 +77,9 @@ To explore and understand the metrics that are output by the CLI, see [Evaluatio
 
 A regression model fits the data well if the differences between the observed values and the model's predicted values are small and unbiased. Regression can be evaluated with certain metrics.
 
-You'll see a similar list of metrics for the best top five quality models found by the CLI. In this particular case related to a regression ML task:
+You'll see a similar list of metrics for the top five quality models found by the CLI, except in this case, the top five are related to a regression ML task:
 
-![image](media/automate-training-with-cli/cli-regression-metrics.png)
+![Regression metrics for top five models](media/automate-training-with-cli/cli-regression-metrics.png)
 
 To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for regression](resources/metrics.md#evaluation-metrics-for-regression-and-recommendation).
 

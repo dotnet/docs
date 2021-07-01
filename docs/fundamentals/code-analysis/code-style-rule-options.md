@@ -2,7 +2,6 @@
 title: .NET code style rule options
 description: Learn how to specify .NET code style options.
 ms.date: 09/25/2020
-ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 ---
@@ -33,7 +32,7 @@ Each of these subcategories defines its own syntax for specifying options. For m
 To help you get started, here is an example *.editorconfig* file with the default options.
 
 > [!TIP]
-> In Visual Studio, you can generate this file and save it to a project at **Tools** > **Options** > **Text Editor** > [**C#** or  **Basic**] > **Code Style** > **General**. Then, click the **Generate .editorconfig file from settings** button. For more information, see [Code style preferences](/visualstudio/ide/code-styles-and-code-cleanup).
+> In Visual Studio 2019 and later versions (on Windows), you can generate this file and save it to a project at **Tools** > **Options** > **Text Editor** > [**C#** or  **Basic**] > **Code Style** > **General**. Then, click the **Generate .editorconfig file from settings** button. For more information, see [Code style preferences](/visualstudio/ide/code-styles-and-code-cleanup).
 
 ```ini
 # Remove the line below if you want to inherit .editorconfig settings from higher directories
@@ -251,5 +250,5 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case
 - [Enforce code style on build](overview.md#code-style-analysis)
 - [Quick Actions in Visual Studio](/visualstudio/ide/quick-actions)
 - [Create portable custom editor options in Visual Studio](/visualstudio/ide/create-portable-custom-editor-options)
-- [.NET Compiler Platform "Roslyn" .editorconfig file](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
-- [.NET Compiler Platform Runtime .editorconfig file](https://github.com/dotnet/runtime/blob/master/.editorconfig)
+- [.NET Compiler Platform "Roslyn" .editorconfig file](https://github.com/dotnet/roslyn/blob/main/.editorconfig)
+- [.NET runtime .editorconfig file](https://github.com/dotnet/runtime/blob/main/.editorconfig)

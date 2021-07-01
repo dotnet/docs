@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Azure for .NET developers
-summary: .NET 💜 Azure
+summary: Learn to use the Azure SDK for .NET. Browse API reference, sample code, tutorials, quickstarts, conceptual articles and more. Know that .NET 💜 Azure.
 brand: dotnet
 
 metadata:
@@ -9,7 +9,7 @@ metadata:
   description: Samples, tutorials, and education for .NET on Azure
   ms.topic: hub-page
   ms.prod: azure-dotnet
-  ms.date: 08/12/2020
+  ms.date: 05/13/2021
 
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
@@ -187,9 +187,9 @@ conceptualContent:
           url: /azure/event-grid/custom-event-quickstart
     - title: Diagnostics and monitoring
       links:
-        - itemType: overview
-          text: Azure Monitor
-          url: /azure/azure-monitor/overview
+        - itemType: quickstart
+          text: "Azure Monitor Application Insights quickstart"
+          url: /azure/azure-monitor/app/dotnet-quickstart
         - itemType: learn
           text: Capture and view page load times in your Azure web app
           url: /learn/modules/capture-page-load-times-application-insights/
@@ -197,7 +197,7 @@ conceptualContent:
           text: Troubleshoot ASP.NET Core on Azure App Service and IIS
           url: /aspnet/core/test/troubleshoot-azure-iis
         - itemType: how-to-guide
-          text: Application Insights with .NET Core ILogger
+          text: Capture Application Insights telemetry with .NET Core ILogger
           url: /azure/azure-monitor/app/ilogger
         - itemType: how-to-guide
           text: Application Insights for Worker Service applications
@@ -272,4 +272,4 @@ additionalContent:
               url: https://github.com/dotnet/
 
   # footer (optional)
-  footer: "Contribute to .NET docs. Read our [contributor guide](/contribute/dotnet/dotnet-contribute)."
+  footer: "Are you interested in contributing to the .NET docs? For more information, see our [contributor guide](/contribute/dotnet/dotnet-contribute)."

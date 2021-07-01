@@ -1,7 +1,7 @@
 ---
 title: .NET Framework & Windows OS versions
 description: Learn about key features in each version of .NET Framework, including underlying CLR versions and versions installed by the Windows operating system.
-ms.date: 01/17/2020
+ms.date: 05/11/2021
 helpviewer_keywords:
   - "versions, .NET Framework"
 ms.assetid: f75a72de-e2f2-4a7a-9574-3f278684ea90
@@ -46,9 +46,9 @@ The tables that follow summarize .NET Framework version history and correlate ea
 |||
 |-|-|
 |**CLR version**|4|
-|**Windows versions**|✔️ 10 May 2019 Update<br/>➕ 10 October 2018 Update (Version 1809)<br/>➕ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
+|**Windows versions**|✔️ 10 October 2020 Update<br/>✔️ 10 May 2020 Update<br/>✔️ 10 November 2019 Update<br/>✔️ 10 May 2019 Update<br/>➕ 10 October 2018 Update (Version 1809)<br/>➕ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
 |**Windows Server versions**|➕ Windows Server 2019<br/>➕ Windows Server, version 1809<br/>➕ Windows Server, version 1803<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
-|**To determine installed .NET version**|Use `Release` DWORD:<br/>- 528040 (Windows 10 May 2019 Update)<br/>- 528049 (all other OS versions)<br/>(See [instructions](how-to-determine-which-versions-are-installed.md))|
+|**To determine installed .NET version**|Use `Release` DWORD:<br/>- 528372 (Windows 10 May 2020 Update and Windows 10 October 2020 Update)<br/>- 528040 (Windows 10 May 2019 Update and Windows 10 November 2019 Update)<br/>- 528049 (all other OS versions)<br/>(See [instructions](how-to-determine-which-versions-are-installed.md))|
 
 ### .NET Framework 4.7.2
 
@@ -156,6 +156,8 @@ The tables that follow summarize .NET Framework version history and correlate ea
 |**Windows Server versions**|✔️ 2012 R2<br /><br />➕ 2012<br />➕ 2008 R2 SP1<br />➕ 2008 SP2|
 |**To determine installed .NET version**|Use `Release` DWORD:<br /><br />- 378675 (Windows 8.1)<br />- 378758 (all other)<br /><br />(See [instructions](how-to-determine-which-versions-are-installed.md))|
 
+[!INCLUDE [net-framework-vs](../../../includes/net-framework-vs.md)]
+
 ### .NET Framework 4.5
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-45)
@@ -169,6 +171,8 @@ The tables that follow summarize .NET Framework version history and correlate ea
 |**Windows Server versions**|✔️ 2012<br />➕ 2008 R2 SP1<br />➕ 2008 SP2|
 |**To determine installed .NET version**|Use `Release` DWORD 378389<br /><br />(See [instructions](how-to-determine-which-versions-are-installed.md))|
 
+[!INCLUDE [net-framework-vs](../../../includes/net-framework-vs.md)]
+
 ### .NET Framework 4
 
 [New features](/previous-versions/dotnet/netframework-4.0/ms171868(v=vs.100))
@@ -180,6 +184,8 @@ The tables that follow summarize .NET Framework version history and correlate ea
 |**Windows versions**|➕ 7<br />➕ Vista|
 |**Windows Server versions**|➕ 2008 R2 SP1<br />➕ 2008 SP2<br />➕ 2003|
 |**To determine installed .NET version**|See [instructions](how-to-determine-which-versions-are-installed.md)|
+
+[!INCLUDE [net-framework-vs](../../../includes/net-framework-vs.md)]
 
 ### .NET Framework 3.5
 
@@ -288,6 +294,8 @@ Some changes in .NET Framework may require changes to your app code; see [Applic
 .NET Framework versions 2.0, 3.0, and 3.5 are built with the same version of the CLR (CLR 2.0). These versions represent successive layers of a single installation. Each version is built incrementally on top of the earlier versions. It's not possible to run versions 2.0, 3.0, and 3.5 side by side on a computer. When you install version 3.5, you get the 2.0 and 3.0 layers automatically, and apps that were built for versions 2.0, 3.0, and 3.5 can all run on version 3.5. However, .NET Framework 4 ends this layering approach, and it and later releases (.NET Framework 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, and 4.8) also represent successive layers of a single installation. Starting with .NET Framework 4, you can use in-process, side by side hosting to run multiple versions of the CLR in a single process. For more information, see [Assemblies and Side-by-Side Execution](../../standard/assembly/side-by-side-execution.md).
 
 In addition, if your app targets version 2.0, 3.0, or 3.5, your users may be required to enable .NET Framework 3.5 on a Windows 8, Windows 8.1, or Windows 10 computer before they can run your app. For more information, see [Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](../install/dotnet-35-windows-10.md).
+
+[!INCLUDE [net-framework-vs](../../../includes/net-framework-vs.md)]
 
 ## Next steps
 

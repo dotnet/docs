@@ -10,16 +10,24 @@ namespace SystemTextJsonSamples
         static async Task Main(string[] args)
         {
             Console.WriteLine("\n============================= Roundtrip to string\n");
-            RoundtripToString.Run();
+            SerializeBasic.Program.Main();
+            SerializeWithGenericParameter.Program.Main();
+            SerializeWriteIndented.Program.Main();
+            SerializeExtra.Program.Main();
+            DeserializeExtra.Program.Main();
 
             Console.WriteLine("\n============================= Roundtrip to UTF-8 byte array\n");
-            RoundtripToUtf8.Run();
+            RoundtripToUtf8Bytes1.Program.Main();
+            RoundtripToUtf8Bytes2.Program.Main();
+            RoundtripToUtf8Bytes3.Program.Main();
 
             Console.WriteLine("\n============================= Roundtrip to file\n");
-            RoundtripToFile.Run();
+            SerializeToFile.Program.Main();
+            DeserializeFromFile.Program.Main();
 
             Console.WriteLine("\n============================= Roundtrip to file async\n");
-            await RoundtripToFileAsync.RunAsync();
+            await SerializeToFileAsync.Program.Main();
+            await DeserializeFromFileAsync.Program.Main();
 
             Console.WriteLine("\n============================= Roundtrip camel case property names\n");
             RoundtripCamelCasePropertyNames.Run();
@@ -31,7 +39,8 @@ namespace SystemTextJsonSamples
             RoundtripPropertyNamesByAttribute.Run();
 
             Console.WriteLine("\n============================= Roundtrip extension data\n");
-            RoundtripExtensionData.Run();
+            RoundtripExtensionData.Program.Main();
+            RoundtripJsonElement.Program.Main();
 
             Console.WriteLine("\n============================= Roundtrip enum as string\n");
             RoundtripEnumAsString.Run();
@@ -125,6 +134,11 @@ namespace SystemTextJsonSamples
 
             Console.WriteLine("\n============================= Utf8Writer to Stream\n");
             Utf8WriterToStream.Run();
+
+            Console.WriteLine("\n============================= Roundtrip to DataTable\n");
+            RoundtripDataTable.Program.Main();
+
+
         }
     }
 }

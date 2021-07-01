@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: BC36647 and BC36644: Data type(s) of the type parameter(s) cannot be inferred from these arguments"
 title: "Data type(s) of the type parameter(s) cannot be inferred from these arguments"
+description: "Learn more about: BC36647 and BC36644: Data type(s) of the type parameter(s) cannot be inferred from these arguments"
 ms.date: 07/20/2015
 f1_keywords:
   - "bc36644"

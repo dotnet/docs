@@ -11,6 +11,10 @@ Bundling all application-dependent files into a single binary provides an applic
 
 Single File deployment is available for both the [framework-dependent deployment model](index.md#publish-framework-dependent) and [self-contained applications](index.md#publish-self-contained). The size of the single file in a self-contained application will be large since it will include the runtime and the framework libraries. The single file deployment option can be combined with [ReadyToRun](ready-to-run.md) and [Trim (an experimental feature in .NET 5.0)](trim-self-contained.md) publish options.
 
+## Output differences from .NET 3.x
+
+In .NET Core 3.x, publishing as a single file produced exactly one file, consisting of the app itself, dependencies, and any other files in the folder during publish. When the app starts, the single file app was extracted to a temporary folder and run from there. Starting with .NET 5, only managed DLLs are bundled with the app into a single executable. When the app starts, the managed DLLs are extracted and loaded in memory, avoiding the extraction to a temporary folder. On Windows, this means that the managed binaries are embedded in the single-file bundle, but the native binaries of the core runtime itself are separate files. To embed those files for extraction and get exactly one output file, like in .NET Core 3.x, set the property `IncludeNativeLibrariesForSelfExtract` to `true`. For more information about extraction, see [Including native libraries](#including-native-libraries).
+
 ## API incompatibility
 
 Some APIs are not compatible with single-file deployment and applications may require modification if they use these APIs. If you use a third-party framework or package, it's possible that they may also use one of these APIs and need modification. The most common cause of problems is dependence on file paths for files or DLLs shipped with the application.
@@ -47,11 +51,16 @@ Without this file Visual Studio may produce the error "Unable to attach to the p
 
 To fix these errors, _mscordbi_ needs to be copied next to the executable. _mscordbi_ is `publish`ed by default in the subdirectory with the application's runtime ID. So, for example, if one were to publish a self-contained single-file executable using the `dotnet` CLI for Windows using the parameters `-r win-x64`, the executable would be placed in _bin/Debug/net5.0/win-x64/publish_. A copy of _mscordbi.dll_ would be present in _bin/Debug/net5.0/win-x64_.
 
-## Other considerations
+## Including native libraries
 
 Single-file doesn't bundle native libraries by default. On Linux, we prelink the runtime into the bundle and only application native libraries are deployed to the same directory as the single-file app. On Windows, we prelink only the hosting code and both the runtime and application native libraries are deployed to the same directory as the single-file app. This is to ensure a good debugging experience, which requires native files to be excluded from the single file. There is an option to set a flag, `IncludeNativeLibrariesForSelfExtract`, to include native libraries in the single file bundle, but these files will be extracted to a temporary directory in the client machine when the single file application is run.
 
 Specifying `IncludeAllContentForSelfExtract` will extract all files before running the executable. This preserves the original .NET Core single-file deployment behavior.
+
+> [!NOTE]
+> If extraction is used and the app is running on Linux or MacOS, either `$HOME` or `$DOTNET_BUNDLE_EXTRACT_BASE_DIR` must be set to a path. If `$HOME` is set, the files will be extracted in a directory under _$HOME/.net_, while if `$DOTNET_BUNDLE_EXTRACT_BASE_DIR` is set, it will take precedence and files will be created in directories below that path. To prevent tampering, these directories should not be writable by users or services with different privileges, **not** _/tmp_ or _/var/tmp_ on most systems).
+
+## Other considerations
 
 Single-file application will have all related PDB files alongside it and will not be bundled by default. If you want to include PDBs inside the assembly for projects you build, set the `DebugType` to `embedded` as described [below](#include-pdb-files-inside-the-bundle) in detail.
 

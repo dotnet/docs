@@ -14,7 +14,7 @@ ms.assetid: b81202b8-d91d-4b23-9c53-4a112f74a44a
 
 The Isolated Storage tool lists or removes all existing stores for the current user.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
   
  At the command prompt, type the following:  
   
@@ -44,19 +44,16 @@ storeadm [/list][/machine][/remove][/roaming][/quiet]
   
  Applications have a choice of saving to one of two stores for a user or to the machine store:  
   
-- The local store exists in a location that is guaranteed not to roam (on Windows 2000 and later) even if user data roaming is enabled for the user.  
+- The local store exists in a location that is guaranteed not to roam, even if user data roaming is enabled for the user.  
   
-- The roaming store exists in a location that is able to roam, but can only do so if roaming is enabled for the user via Windows NT administration.  
+- The roaming store exists in a location that is able to roam, but can only do so if roaming is enabled for the user via Windows administration.  
   
-- The machine store is common to all users on a machine and is stored under a common directory on that machine.  
+- The machine store is common to all users on a machine and is stored under a common directory on that machine.
   
-    > [!NOTE]
-    > The machine store is new in the .NET Framework version 2.0.  
-  
- Whether roaming is actually enabled for the user does not affect the administration of Storeadm.exe. Running the tool without any options applies all actions to the local store. Running the tool with the **/roaming** option applies all actions to the store that is able to roam. Running the tool with the **/machine** option applies all actions to the machine store.  
+Whether roaming is actually enabled for the user does not affect the administration of Storeadm.exe. Running the tool without any options applies all actions to the local store. Running the tool with the **/roaming** option applies all actions to the store that is able to roam. Running the tool with the **/machine** option applies all actions to the machine store.  
   
 ## See also
 
 - [Tools](index.md)
 - [Isolated Storage](../../standard/io/isolated-storage.md)
-- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

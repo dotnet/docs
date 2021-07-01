@@ -5,6 +5,7 @@ author: mamccrea
 ms.author: mamccrea
 ms.date: 10/09/2020
 ms.topic: tutorial
+recommendations: false
 ---
 
 # Tutorial: Sentiment analysis with .NET for Apache Spark and ML.NET
@@ -28,11 +29,11 @@ In this tutorial, you learn how to:
 
 * [Download and install](https://marketplace.visualstudio.com/items?itemName=MLNET.07) ML.NET Model Builder (preview).
 
-* Download the [yelptest.csv](https://github.com/dotnet/spark/blob/master/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment/Resources/yelptest.csv) and [yelptrain.csv](https://github.com/dotnet/spark/blob/master/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment/Resources/yelptrain.csv) Yelp review datasets.
+* Download the [yelptest.csv](https://github.com/dotnet/spark/blob/main/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment/Resources/yelptest.csv) and [yelptrain.csv](https://github.com/dotnet/spark/blob/main/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment/Resources/yelptrain.csv) Yelp review datasets.
 
 ## Review the data
 
-The Yelp reviews dataset contains online Yelp reviews about various services. Open [yelptrain.csv](https://github.com/dotnet/spark/blob/master/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment/Resources/yelptrain.csv) and notice the structure of the data. The first column contains review text, and the second column contains sentiment scores. If the sentiment score is 1, the review is positive, and if the sentiment score is 0, the review is negative.
+The Yelp reviews dataset contains online Yelp reviews about various services. Open [yelptrain.csv](https://github.com/dotnet/spark/blob/main/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment/Resources/yelptrain.csv) and notice the structure of the data. The first column contains review text, and the second column contains sentiment scores. If the sentiment score is 1, the review is positive, and if the sentiment score is 0, the review is negative.
 
 The following table contains sample data:
 
@@ -198,7 +199,7 @@ Then navigate to the console app's publish folder and run the following `spark-s
 
 ## Get the code
 
-This tutorial is similar to the code from the [Sentiment Analysis with Big Data](https://github.com/dotnet/spark/tree/master/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment) example.
+This tutorial is similar to the code from the [Sentiment Analysis with Big Data](https://github.com/dotnet/spark/tree/main/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment) example.
 
 ## Next steps
 

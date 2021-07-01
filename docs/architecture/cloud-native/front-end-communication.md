@@ -38,7 +38,7 @@ The gateway insulates the client from internal service partitioning and refactor
 
 Care must be taken to keep the API Gateway simple and fast. Typically, business logic is kept out of the gateway. A complex gateway risks becoming a bottleneck and eventually a monolith itself. Larger systems often expose multiple API Gateways segmented by client type (mobile, web, desktop) or back-end functionality. The [Backend for Frontends](/azure/architecture/patterns/backends-for-frontends) pattern provides direction for implementing multiple gateways. The pattern is shown in Figure 4-4.
 
-![API Gateway Pattern](./media/backend-for-frontend-pattern.png)
+![Backend for Frontend Pattern](./media/backend-for-frontend-pattern.png)
 
 **Figure 4-4.** Backend for frontend pattern
 

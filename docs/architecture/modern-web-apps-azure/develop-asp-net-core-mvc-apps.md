@@ -646,7 +646,7 @@ Consider ways in which your applications communicate directly with client applic
 > ### References – Client Communication
 >
 > - **ASP.NET Core SignalR**\
->   <https://github.com/dotnet/aspnetcore/tree/master/src/SignalR>
+>   <https://github.com/dotnet/aspnetcore/tree/main/src/SignalR>
 > - **WebSocket Manager**\
 >   <https://github.com/radu-matei/websocket-manager>
 

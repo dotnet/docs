@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "UI automation, highlighting text"
   - "UI automation, finding text"
   - "highlighting text"
-ms.assetid: b77693f5-87bb-4b29-a297-05ff882e2044
+ms.topic: how-to
 ---
 # Find and Highlight Text Using UI Automation
 

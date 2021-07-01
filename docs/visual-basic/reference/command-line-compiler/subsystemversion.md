@@ -10,10 +10,10 @@ ms.assetid: 08be22b2-f447-4cd3-8203-120b1b920b54
 ---
 # -subsystemversion (Visual Basic)
 
-Specifies the minimum version of the subsystem on which the generated executable file can run, thereby determining the versions of Windows on which the executable file can run. Most commonly, this option ensures that the executable file can leverage particular security features that aren’t available with older versions of Windows.
+Specifies the minimum version of the subsystem on which the generated executable file can run, thereby determining the versions of Windows on which the executable file can run. Most commonly, this option ensures that the executable file can leverage particular security features that aren't available with older versions of Windows.
 
 > [!NOTE]
-> To specify the subsystem itself, use the [-target](../../../csharp/language-reference/compiler-options/target-compiler-option.md) compiler option.
+> To specify the subsystem itself, use the [-target](target.md) compiler option.
 
 ## Syntax
 
@@ -35,8 +35,6 @@ The following table lists common subsystem versions of Windows.
 
 |Windows version|Subsystem version|
 |---------------------|-----------------------|
-|Windows 2000|5.00|
-|Windows XP|5.01|
 |Windows Server 2003|5.02|
 |Windows Vista|6.00|
 |Windows 7|6.01|

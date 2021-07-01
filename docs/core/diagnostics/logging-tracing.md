@@ -19,11 +19,11 @@ This simple technique is surprisingly powerful. It can be used in situations whe
 
 ## .NET Core APIs
 
-### Print style APIs
+### Print-style APIs
 
-The <xref:System.Console?displayProperty=nameWithType>, <xref:System.Diagnostics.Trace?displayProperty=nameWithType>, and <xref:System.Diagnostics.Debug?displayProperty=nameWithType> classes each provide similar print style APIs convenient for logging.
+The <xref:System.Console?displayProperty=nameWithType>, <xref:System.Diagnostics.Trace?displayProperty=nameWithType>, and <xref:System.Diagnostics.Debug?displayProperty=nameWithType> classes each provide similar print-style APIs that are convenient for logging.
 
-The choice of which print style API to use is up to you. The key differences are:
+The choice of which print-style API to use is up to you. The key differences are:
 
 - <xref:System.Console?displayProperty=nameWithType>
   - Always enabled and always writes to the console.
@@ -36,7 +36,7 @@ The choice of which print style API to use is up to you. The key differences are
 - <xref:System.Diagnostics.Debug?displayProperty=nameWithType>
   - Only enabled when `DEBUG` is defined by adding `#define DEBUG` to your source or specifying the option `/d:DEBUG` when compiling.
   - Writes to an attached debugger.
-  - On `*nix` writes to stderr if `COMPlus_DebugWriteToStdErr` is set.
+  - On `*nix` writes to stderr if `DOTNET_DebugWriteToStdErr` or `COMPlus_DebugWriteToStdErr` is set.
   - Use this API when creating logs that will be enabled only in debug builds.
 
 ### Logging events
@@ -66,7 +66,11 @@ The following APIs are more event oriented. Rather than logging simple strings t
 
 ## Distributed Tracing
 
-[Distributed Tracing](./distributed-tracing.md) is the way to publish and observe the tracing data in a distributed system.
+[Distributed Tracing](./distributed-tracing.md) is a diagnostic technique that helps engineers
+localize failures and performance issues within applications, especially those that may be
+distributed across multiple machines or processes. This technique tracks requests through an
+application correlating together work done by different application components and separating
+it from other work the application may be doing for concurrent requests.
 
 ## ILogger and logging frameworks
 
@@ -79,7 +83,7 @@ For instance, to allow you to make the best choice for your application .NET off
 - [.NET Built-in logging providers](../extensions/logging-providers.md#built-in-logging-providers)
 - [.NET Third-party logging providers](../extensions/logging-providers.md#third-party-logging-providers)
 
-## Logging related references
+## Logging-related references
 
 - [How to: Compile Conditionally with Trace and Debug](../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md)
 
@@ -101,7 +105,7 @@ For instance, to allow you to make the best choice for your application .NET off
 
 String formatting can take noticeable CPU processing time.
 
-In performance critical applications, it's recommended that you:
+In performance-critical applications, it's recommended that you:
 
 - Avoid lots of logging when no one is listening. Avoid constructing costly logging messages by checking if logging is enabled first.
 - Only log what's useful.

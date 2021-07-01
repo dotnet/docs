@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF], system-provided bindings"
   - "WCF [WCF], system-provided bindings"
   - "bindings [WCF], system-provided"
-ms.assetid: 443f8d65-f1f2-4311-83b3-4d8fdf7ccf16
+ms.topic: how-to
 ---
 # Configuring System-Provided Bindings
 

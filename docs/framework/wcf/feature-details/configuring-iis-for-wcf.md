@@ -2,7 +2,7 @@
 description: "Learn more about: Configuring Internet Information Services 7.0 for Windows Communication Foundation"
 title: "Configuring Internet Information Services 7.0 for Windows Communication Foundation"
 ms.date: "03/30/2017"
-ms.assetid: 1050d395-092e-44d3-b4ba-66be3b039ffb
+ms.topic: how-to
 ---
 # Configuring Internet Information Services 7.0 for Windows Communication Foundation
 
@@ -40,7 +40,7 @@ Internet Information Services (IIS) 7.0 has a modular design that allows you to 
 
  You must install ASP.NET to make ASP.NET work on IIS 7.0. After checking **ASP.NET**, your screen should look like the following illustration.
 
- ![Asp.NET required settings](media/wcfc-trunfeaturesonoroff3s.gif "wcfc_TrunFeaturesOnOrOFf3s")
+ ![ASP.NET required settings](media/wcfc-trunfeaturesonoroff3s.gif "wcfc_TrunFeaturesOnOrOFf3s")
 
  This is the minimal environment for both WCF and ASP.NET applications to work in IIS 7.0.
 

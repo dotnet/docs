@@ -49,7 +49,7 @@ CMyClass::MethodThatThrows
 }
 ```
 
- The following table provides the common mappings from HRESULT to its comparable exception class in .NET. HRESULT values without explicit mappings are mapped to `COMException`. The complete up-to-date mapping can be found in the [dotnet/runtime repository](https://github.com/dotnet/runtime/blob/master/src/coreclr/vm/rexcep.h).
+ The following table provides the common mappings from HRESULT to its comparable exception class in .NET. HRESULT values without explicit mappings are mapped to `COMException`. The complete up-to-date mapping can be found in the [dotnet/runtime repository](https://github.com/dotnet/runtime/blob/main/src/coreclr/vm/rexcep.h).
 
 |HRESULT|.NET exception|
 |-------------|--------------------|

@@ -31,13 +31,11 @@ HRESULT AppDomainShutdownFinished(
   
 ## Parameters
 
-- `appDomainId`
+`appDomainId`
+[in] Identifies the domain in which the application's assemblies are stored.
 
-  \[in] Identifies the domain in which the application's assemblies are stored.
-
-- `hrStatus`
-
-  \[in] An HRESULT that indicates whether the application domain was unloaded successfully.
+`hrStatus`
+[in] An HRESULT that indicates whether the application domain was unloaded successfully.
 
 ## Remarks  
 

@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 0213d59e-5f76-438c-9cab-4bf11f7b971d
+ms.topic: how-to
 ---
 
 # How to create hierarchy using grouping (LINQ to XML)

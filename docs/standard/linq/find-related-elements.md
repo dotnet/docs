@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 41b386ee-562d-4841-bd6b-e44a7eb69f26
+ms.topic: how-to
 ---
 
 # How to find related elements (LINQ to XML)

@@ -231,12 +231,14 @@ F# 5.0 brings support for slicing with a fixed index in the built-in 3D and 4D a
 To illustrate this, consider the following 3D array:
 
 *z = 0*
+
 | x\y   | 0 | 1 |
 |-------|---|---|
 | **0** | 0 | 1 |
 | **1** | 2 | 3 |
 
 *z = 1*
+
 | x\y   | 0 | 1 |
 |-------|---|---|
 | **0** | 4 | 5 |
@@ -360,7 +362,7 @@ This feature implements [F# RFC FS-1031](https://github.com/fsharp/fslang-design
 
 ## Default interface member consumption
 
-F# 5 lets you consume [interfaces with default implementations](../../csharp/tutorials/default-interface-methods-versions.md).
+F# 5 lets you consume [interfaces with default implementations](../../csharp/whats-new/tutorials/default-interface-methods-versions.md).
 
 Consider an interface defined in C# like this:
 

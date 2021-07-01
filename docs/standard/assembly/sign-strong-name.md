@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "signing assemblies"
   - "assemblies [.NET], signing"
   - "assemblies [.NET], strong-named"
-ms.assetid: 2c30799a-a826-46b4-a25d-c584027a6c67
+ms.topic: how-to
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,7 +16,7 @@ dev_langs:
 # How to: Sign an assembly with a strong name
 
 > [!NOTE]
-> Although .NET Core supports strong-named assemblies, and all assemblies in the .NET Core library are signed, the majority of third-party assemblies do not need strong names. For more information, see [Strong Name Signing](https://github.com/dotnet/runtime/blob/master/docs/project/strong-name-signing.md) on GitHub.
+> Although .NET Core supports strong-named assemblies, and all assemblies in the .NET Core library are signed, the majority of third-party assemblies do not need strong names. For more information, see [Strong Name Signing](https://github.com/dotnet/runtime/blob/main/docs/project/strong-name-signing.md) on GitHub.
 
 There are a number of ways to sign an assembly with a strong name:  
   
@@ -45,7 +45,7 @@ There are a number of ways to sign an assembly with a strong name:
   
 ### Create and sign an assembly with a strong name by using the Assembly Linker  
   
-At the [Developer Command Prompt for Visual Studio](../../framework/tools/developer-command-prompt-for-vs.md), enter the following command:  
+Open [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell), and enter the following command:  
 
 **al** **/out:**\<*assemblyName*> *\<moduleName>* **/keyfile:**\<*keyfileName*>  
 

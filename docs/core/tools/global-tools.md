@@ -34,7 +34,7 @@ Here are some ways to find tools:
 
 * Use the [dotnet tool search](dotnet-tool-search.md) command to find a tool that is published to NuGet.org.
 * Search the [NuGet](https://www.nuget.org) website by using the ".NET tool" package type filter. For more information, see [Finding and choosing packages](/nuget/consume-packages/finding-and-choosing-packages).
-* See the source code for the tools created by the ASP.NET Core team in the [Tools directory of the dotnet/aspnetcore GitHub repository](https://github.com/dotnet/aspnetcore/tree/master/src/Tools).
+* See the source code for the tools created by the ASP.NET Core team in the [Tools directory of the dotnet/aspnetcore GitHub repository](https://github.com/dotnet/aspnetcore/tree/main/src/Tools).
 * Learn about diagnostic tools at [.NET diagnostic tools](../diagnostics/index.md#net-core-diagnostic-global-tools).
 
 ## Check the author and statistics

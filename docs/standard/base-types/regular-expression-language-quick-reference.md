@@ -1,7 +1,7 @@
 ---
 title: "Regular Expression Language - Quick Reference"
 description: In this quick reference, learn to use regular expression patterns to match input text. A pattern has one or more character literals, operators, or constructs.
-ms.date: "03/30/2017"
+ms.date: "02/03/2021"
 ms.topic: reference
 f1_keywords:
   - "VS.RegularExpressionBuilder"
@@ -92,11 +92,25 @@ Grouping constructs delineate subexpressions of a regular expression and typical
 |`(?<` *name1* `-` *name2* `>` *subexpression* `)` <br /> or <br /> `(?'` *name1* `-` *name2* `'` *subexpression* `)`|Defines a balancing group definition. For more information, see the "Balancing Group Definition" section in [Grouping Constructs](grouping-constructs-in-regular-expressions.md).|`(((?'Open'\()[^\(\)]*)+((?'Close-Open'\))[^\(\)]*)+)*(?(Open)(?!))$`|`"((1-3)*(3-1))"` in `"3+2^((1-3)*(3-1))"`|
 |`(?:` *subexpression* `)`|Defines a noncapturing group.|`Write(?:Line)?`|`"WriteLine"` in `"Console.WriteLine()"`<br /><br /> `"Write"` in `"Console.Write(value)"`|
 |`(?imnsx-imnsx:` *subexpression* `)`|Applies or disables the specified options within *subexpression*. For more information, see [Regular Expression Options](regular-expression-options.md).|`A\d{2}(?i:\w+)\b`|`"A12xl"`, `"A12XL"` in `"A12xl A12XL a12xl"`|
-|`(?=` *subexpression* `)`|Zero-width positive lookahead assertion.|`\w+(?=\.)`|`"is"`, `"ran"`, and `"out"` in `"He is. The dog ran. The sun is out."`|
-|`(?!` *subexpression* `)`|Zero-width negative lookahead assertion.|`\b(?!un)\w+\b`|`"sure"`, `"used"` in `"unsure sure unity used"`|
-|`(?<=` *subexpression* `)`|Zero-width positive lookbehind assertion.|`(?<=19)\d{2}\b`|`"99"`, `"50"`, `"05"` in `"1851 1999 1950 1905 2003"`|
-|`(?<!` *subexpression* `)`|Zero-width negative lookbehind assertion.|`(?<!19)\d{2}\b`|`"51"`, `"03"` in `"1851 1999 1950 1905 2003"`|
-|`(?>` *subexpression* `)`|Atomic group.|`[13579](?>A+B+)`|`"1ABB"`, `"3ABB"`, and `"5AB"` in `"1ABB 3ABBC 5AB 5AC"`|
+|`(?=` *subexpression* `)`|Zero-width positive lookahead assertion.|`\b\w+\b(?=.+and.+)`|`"cats"`, `"dogs"`<br/>in<br/>`"cats, dogs and some mice."`|
+|`(?!` *subexpression* `)`|Zero-width negative lookahead assertion.|`\b\w+\b(?!.+and.+)`|`"and"`, `"some"`, `"mice"`<br/>in<br/>`"cats, dogs and some mice."`|
+|`(?<=` *subexpression* `)`|Zero-width positive lookbehind assertion.|`\b\w+\b(?<=.+and.+)`<br/><br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/><br/>`\b\w+\b(?<=.+and.*)`|`"some"`, `"mice"`<br/>in<br/>`"cats, dogs and some mice."`<br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/>`"and"`, `"some"`, `"mice"`<br/>in<br/>`"cats, dogs and some mice."`|
+|`(?<!` *subexpression* `)`|Zero-width negative lookbehind assertion.|`\b\w+\b(?<!.+and.+)`<br/><br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/><br/>`\b\w+\b(?<!.+and.*)`|`"cats"`, `"dogs"`, `"and"`<br/>in<br/>`"cats, dogs and some mice."`<br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/>`"cats"`, `"dogs"`<br/>in<br/>`"cats, dogs and some mice."`|
+|`(?>` *subexpression* `)`|Atomic group.|`(?>a|ab)c`|`"ac"` in`"ac"`<br/><br/>_nothing_ in`"abc"`|
+
+### Lookarounds at a glance
+
+When the regular expression engine hits a **lookaround expression**, it takes a substring reaching from the current position to the start (lookbehind) or end (lookahead) of the original string, and then runs
+<xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> on that substring using the lookaround pattern. Success of this subexpression's result is then determined by whether it's a positive or negative assertion.
+
+| Lookaround | Name | Function |
+| - | - | - |
+`(?=check)` | Positive&nbsp;Lookahead | Asserts that what immediately follows the current position in the string is "check"
+`(?<=check)` | Positive&nbsp;Lookbehind | Asserts that what immediately precedes the current position in the string is "check"
+`(?!check)` | Negative&nbsp;Lookahead  | Asserts that what immediately follows the current position in the string is not "check"
+`(?<!check)` | Negative&nbsp;Lookbehind | Asserts that what immediately precedes the current position in the string is not "check"
+
+Once they have matched, **atomic groups** won't be re-evaluated again, even when the remainder of the pattern fails due to the match. This can significantly improve performance when quantifiers occur within the atomic group or the remainder of the pattern.
 
 ## Quantifiers
 

@@ -3,7 +3,7 @@ title: Create a CodeQL GitHub Action
 description: In this quickstart, you will learn how to create a CodeQL GitHub Action to automate the discovery of vulnerabilities in your .NET codebase.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/30/2021
+ms.date: 07/01/2021
 ms.topic: quickstart
 recommendations: false
 ---
@@ -30,7 +30,7 @@ In the preceding workflow composition:
 
   :::code language="yml" source="snippets/secure-action/codeql-analysis.yml" range="3-15":::
 
-  - When a `push` or `pull_quest` occurs on the `main` branch where any files changed ending with the *.cs* or *.csproj* file extensions.
+  - Triggered when a `push` or `pull_quest` occurs on the `main` branch where any files changed ending with the *.cs* or *.csproj* file extensions.
   - As a cron job (on a schedule) &mdash; runs at 8:00 UTC every Thursday.
 
 - The `jobs` node builds out the steps for the workflow to take.

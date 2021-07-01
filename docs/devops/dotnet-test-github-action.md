@@ -3,7 +3,7 @@ title: Create a .NET test GitHub Action
 description: In this quickstart, you will learn how to create a GitHub Action to test your .NET source code.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/30/2021
+ms.date: 07/01/2021
 ms.topic: quickstart
 recommendations: false
 ---
@@ -30,7 +30,7 @@ In the preceding workflow composition:
 
   :::code language="yml" source="snippets/test-action/build-and-test.yml" range="3-9":::
 
-  - When a `push` or `pull_quest` occurs on the `main` branch where any files changed ending with the *.cs* or *.csproj* file extensions.
+  - Triggered when a `push` or `pull_quest` occurs on the `main` branch where any files changed ending with the *.cs* or *.csproj* file extensions.
 
 - The `env` node defines named environment variables (env var).
 

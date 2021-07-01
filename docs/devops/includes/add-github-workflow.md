@@ -36,7 +36,7 @@ In the GitHub repository, add a new YAML file to the *.github/workflows* directo
 :::row-end:::
 :::row:::
     :::column span="1":::
-        *publish-app.yml* (or *deploy-app.yml*)
+        *publish-app.yml*
     :::column-end:::
     :::column span="3":::
         Packages, and publishes the source code to a destination.

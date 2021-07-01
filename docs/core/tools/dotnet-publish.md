@@ -56,6 +56,30 @@ dotnet publish -p:PublishProfile=FolderProfile
 
 The preceding example uses the *FolderProfile.pubxml* file that is found in the *\<project_folder>/Properties/PublishProfiles* folder. If you specify a path and file extension when setting the `PublishProfile` property, they are ignored. MSBuild by default looks in the *Properties/PublishProfiles* folder and assumes the *pubxml* file extension. To specify the path and filename including extension, set the `PublishProfileFullPath` property instead of the `PublishProfile` property.
 
+The following MSBuild properties change the output of `dotnet publish`.
+
+- `PublishReadyToRun`
+
+  Compiles application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation. For more information, see [ReadyToRun images](../deploying/ready-to-run.md). Available since .NET Core 3.0 SDK.
+
+  To see warnings about missing dependencies that could cause runtime failures, use `PublishReadyToRunShowWarning`.
+
+  We recommend that you specify this option in a publish profile rather than on the command line.
+
+- `PublishSingleFile`
+
+  Packages the app into a platform-specific single-file executable. The executable is self-extracting and contains all dependencies (including native) that are required to run the app. When the app is first run, the application is extracted to a directory based on the app name and build identifier. Startup is faster when the application is run again. The application doesn't need to extract itself a second time unless a new version is used. Available since .NET Core 3.0 SDK.
+
+  For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/main/accepted/2020/single-file/design.md).
+
+  We recommend that you specify this option in the project file rather than on the command line.
+
+- `PublishTrimmed`
+
+  Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see [Trim self-contained deployments and executables](../deploying/trim-self-contained.md). Available since .NET Core 3.0 SDK as a preview feature.
+
+  We recommend that you specify this option in the project file rather than on the command line.
+
 For more information, see the following resources:
 
 - [MSBuild command-line reference](/visualstudio/msbuild/msbuild-command-line-reference)

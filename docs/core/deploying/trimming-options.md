@@ -22,7 +22,7 @@ Place this in the project file to ensure that the setting applies during `dotnet
 
 This will trim any assemblies that have been configured for trimming. With `Microsoft.NET.Sdk` in .NET 6, this includes the any assemblies with `[AssemblyMetadata("IsTrimmable", "True")]`, which is the case for framework assemblies. In .NET 5, framework assemblies from the netcoreapp runtime pack are configured for trimming via `<IsTrimmable>` MSBuild metadata. Other SDKs may define different defaults.
 
-Starting in .NET 6, this setting also enables the trim compatibility [Roslyn analyzer](#roslyn-analyzer), and disables [features](#trimming-framework-library-features) which are incompatible with trimming.
+Starting in .NET 6, this setting also enables the trim compatibility [Roslyn analyzer](#roslyn-analyzer), and disables [features that are incompatible with trimming](#framework-features-disabled-when-trimming).
 
 ## Trimming granularity
 
@@ -177,6 +177,10 @@ The SDK also makes it possible to disable debugger support using the property `D
 
 Several feature areas of the framework libraries come with linker directives that make it possible to remove the code for disabled features.
 
+- `<AutoreleasePoolSupport>false</AutoreleasePoolSupport>` (default)
+
+   Remove code that creates autorelease pools on supported platforms. See [AutoreleasePool for managed threads](../run-time-config/threading#autoreleasepool-for-managed-threads). This is the default for the .NET SDK.
+
 - `<DebuggerSupport>false</DebuggerSupport>`
 
     Remove code that enables better debugging experiences. This will also [remove symbols](#remove-symbols).
@@ -201,8 +205,43 @@ Several feature areas of the framework libraries come with linker directives tha
 
     Remove globalization specific code and data. For more information, see [Invariant mode](../run-time-config/globalization.md#invariant-mode).
 
+- `<MetadataUpdaterSupport>false</MetadataUpdaterSupport>`
+
+    Remove metadata update specific logic related to hot reload.
+
+- `<UseNativeHttpHandler>true</UseNativeHttpHandler>`
+
+    Use the default platform implementation of HttpMessageHandler for Android/iOS and remove the managed implementation.
+
 - `<UseSystemResourceKeys>true</UseSystemResourceKeys>`
 
     Strip exception messages for `System.*` assemblies. When an exception is thrown from a `System.*` assembly, the message will be a simplified resource ID instead of the full message.
 
  These properties will cause the related code to be trimmed and will also disable features via the [runtimeconfig](../run-time-config/index.md) file. For more information about these properties, including the corresponding runtimeconfig options, see [feature switches](https://github.com/dotnet/runtime/blob/main/docs/workflow/trimming/feature-switches.md). Some SDKs may have default values for these properties.
+
+## Framework features disabled when trimming
+
+The following features are incompatible with trimming because they require code that is not statically referenced. These are disabled by default in trimmed apps.
+
+> [!WARNING]
+> Enable these features at your own risk. They are likely to break trimmed apps without extra work to preserve the dynamically referenced code.
+
+- `<BuiltInComInteropSupport>`
+
+   Built-in COM support is disabled.
+
+- `<CustomResourceTypesSupport>`
+
+   Use of custom resource types is not supported. ResourceManager code paths that use reflection for custom resource types is trimmed.
+
+- `<EnableCppCLIHostActivation>`
+
+    C++/CLI host activation is disabled.
+
+- `<EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization>`
+
+   [`DesigntimeLicenceContextSerializer`](https://docs.microsoft.com/dotnet/api/system.componentmodel.design.designtimelicensecontextserializer?view=net-5.0) use of BinaryFormatter serialization is dissabeld.
+
+- `<StartupHookSupport>`
+
+   Running code before `Main` with `DOTNET_STARTUP_HOOKS` is not supported. For more information, see [host startup hook](https://github.com/dotnet/runtime/blob/main/docs/design/features/host-startup-hook.md).

@@ -113,7 +113,7 @@ The <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameW
 
 - Comparisons are case-sensitive.
 
-- The `^` and `$` language elements match the beginning and end of the input string.
+- The `^` and `$` language elements match the beginning and end of the input string. The end of the input string can be a trailing new line character.
 
 - The `.` language element matches every character except `\n`.
 

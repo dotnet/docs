@@ -7,7 +7,7 @@ ms.date: 06/10/2021
 ---
 # Find unsupported APIs in your code
 
-APIs in your .NET Framework code may not be supported in .NET for a number of reasons that range from the simple to fix, such as a namespace change; to the more challenging to fix such as an entire technology not being supported. The first step is to determine which of your APIs are no longer supported and then identify the proper fix.
+APIs in your .NET Framework code may not be supported in .NET for a number of reasons that range from the simple to fix, such as a namespace change; to the more challenging to fix, such as an entire technology not being supported. The first step is to determine which of your APIs are no longer supported and then identify the proper fix.
 
 ## .NET Portability Analyzer
 

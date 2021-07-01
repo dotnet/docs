@@ -7,7 +7,7 @@ ms.date: 06/10/2021
 ---
 # Create a porting plan
 
-Before you jump straight into the code take the time to go through the recommended pre-migration steps. This will give you insight into the kinds of issues you may need to deal with and will help you decide on an approach that makes the most sense for you.
+Before you jump straight into the code, take the time to go through the recommended pre-migration steps. This will give you insight into the kinds of issues you may need to deal with and will help you decide on an approach that makes the most sense for you.
 
 ## Port your code
 

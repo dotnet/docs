@@ -7,7 +7,7 @@ ms.date: 06/14/2021
 ---
 # Analyze your dependencies to port code from .NET Framework to .NET
 
-To identify the unsupported third-party dependencies in your project you must first understand your dependencies. External dependencies are the NuGet packages or `.dll` files you reference in your project, but that you don't build yourself.
+To identify the unsupported third-party dependencies in your project, you must first understand your dependencies. External dependencies are the NuGet packages or `.dll` files you reference in your project, but that you don't build yourself.
 
 Porting your code to .NET Standard 2.0 or below ensures that it can be used with both .NET Framework and .NET. However, if you don't need to use the library with .NET Framework, consider targeting the latest version of .NET.
 

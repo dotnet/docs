@@ -37,7 +37,7 @@ The support timeframe for the SDK typically matches the VS it's included in.
 
 **Customers should not have to upgrade to 17.0 on the day .NET 6 releases, this is the current value and will likely be 16.11 by release.
 
-We expect breaking changes requiring new MSBuild and VS versions expected at least once a year for new SDK version bands. We do not anticipate version compat breaking changes in feature bands anymore.
+We expect breaking changes requiring new MSBuild and VS versions at least once a year for new SDK version bands. We do not anticipate version compat breaking changes in feature bands anymore.
 
 ## Reference
 

@@ -7,7 +7,7 @@ ms.date: 06/10/2021
 ---
 # Required and recommended steps before porting code
 
-Make the needed changes to build and run a .NET application before beginning the work to port your code. All of these changes can be done while still building and running a .NET Framework application.
+Make the needed changes to build and run a .NET application before beginning the work to port your code. These changes can be done while still building and running a .NET Framework application.
 
 ## Upgrade to required tooling
 

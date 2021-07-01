@@ -1,10 +1,17 @@
 ---
 title: Porting approaches
 description: Create a porting plan that best reflects your project and context.
-author: stebon
+author: StephenBonikowsky
+ms.author: stebon
 ms.date: 06/10/2021
 ---
-[Need more content and modify existing content]
+# Create a porting plan
+
+Before you jump straight into the code take the time to go through the recommended pre-migration steps. This will give you insight into the kinds of issues you may need to deal with and will help you decide on an approach that makes the most sense for you.
+
+## Port your code
+
+Once you have taken care of the [Needed changes before porting code](premigration-needed-changes.md) you should be ready to decide on the best approach for you and begin porting code.
 
 ### Deal primarily with the compiler
 

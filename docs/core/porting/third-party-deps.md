@@ -1,7 +1,8 @@
 ---
 title: Analyze dependencies to port code
 description: Learn how to analyze external dependencies to port your project from .NET Framework to .NET.
-author: stebon
+author: StephenBonikowsky
+ms.author: stebon
 ms.date: 06/14/2021
 ---
 # Analyze your dependencies to port code from .NET Framework to .NET

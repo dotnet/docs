@@ -1,7 +1,8 @@
 ---
 title: Unsupported APIs
 description: Learn about unsupported APIs and what to do about them.
-author: stebon
+author: StephenBonikowsky
+ms.author: stebon
 ms.date: 06/10/2021
 ---
 # Find unsupported APIs in your code

@@ -136,29 +136,27 @@ These properties have the following functions:
 
 ## Publish a single file app - CLI
 
-Publish a single file application using the [dotnet publish](../tools/dotnet-publish.md) command. Set the following properties in your project file, then publish the app using `dotnet publish`.
+Publish a single file application using the [dotnet publish](../tools/dotnet-publish.md) command.
 
-- Publish for a specific runtime: `<RuntimeIdentifier>win-x64</RuntimeIdentifier>`
-- Publish as a single-file: `<PublishSingleFile>true</PublishSingleFile>`
+01. Add `<PublishSingleFile>true</PublishSingleFile>` to your project file.
 
-The following example publishes an app for Windows as a self-contained single file application.
+    This will produce a single-file app on self-contained publish. It also shows single-file compatibility warnings during build.
 
-```xml
-<PropertyGroup>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-    <PublishSingleFile>true</PublishSingleFile>
-</PropertyGroup>
-```
+    ```xml
+    <PropertyGroup>
+        <PublishSingleFile>true</PublishSingleFile>
+    </PropertyGroup>
+    ```
 
-The following example publishes an app for Linux as a framework dependent single file application.
+01. Publish the app as for a specific runtime identifier using `dotnet publish -r <RID>`
 
-```xml
-<PropertyGroup>
-    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
-    <PublishSingleFile>true</PublishSingleFile>
-    <SelfContained>false</SelfContained>
-</PropertyGroup>
-```
+    The following example publishes the app for Windows as a self-contained single file application.
+
+    `dotnet publish -r win-x64`
+
+    The following example publishes the app for Linux as a framework dependent single file application.
+
+    `dotnet publish -r linux-x64 --self-contained false`
 
 `<PublishSingleFile>` should be set in the project file to enable single-file analysis during build, but it is also possible to pass these options as `dotnet publish` arguments:
 

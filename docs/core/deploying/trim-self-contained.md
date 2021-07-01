@@ -71,25 +71,30 @@ If we're using .Net 5.0, we can update our project file to include the following
 
 ## Trim your app - CLI
 
-Trim your application using the [dotnet publish](../tools/dotnet-publish.md) command. Set the following properties in your project file, then publish the app using `dotnet publish`.
+Trim your application using the [dotnet publish](../tools/dotnet-publish.md) command.
 
-- Publish as a self-contained app for a specific runtime: `<RuntimeIdentifier>win-x64</RuntimeIdentifier>`
-- Enable trimming: `<PublishTrimmed>true</PublishTrimmed>`
+01. Add `<PublishTrimmed>true</PublishTrimmed>` to your project file.
 
-The following example publishes an app for Windows as self-contained and trims the output.
+    This will produce a trimmed app on self-contained publish. It also turns off trim-incompatible features and shows trim compatibility warnings during build.
+
+    ```xml
+    <PropertyGroup>
+        <PublishTrimmed>true</PublishTrimmed>
+    </PropertyGroup>
+    ```
+
+01. Publish a self-contained app for a specific runtime identifier using `dotnet publish -r <RID>`
+
+    The following example publishes the app for Windows as trimmed self-contained application.
+
+    `dotnet publish -r win-x64`
+
+    Note that trimming is only supported for self-contained apps.
+
+The following example configures an app in the aggressive trim mode where unused code within assemblies will be trimmed and trimmer warnings enabled.
 
 ```xml
 <PropertyGroup>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-    <PublishTrimmed>true</PublishTrimmed>
-</PropertyGroup>
-```
-
-The following example publishes an app in the aggressive trim mode where unused code within assemblies will be trimmed and trimmer warnings enabled.
-
-```xml
-<PropertyGroup>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <PublishTrimmed>true</PublishTrimmed>
     <TrimMode>link</TrimMode>
     <SuppressTrimAnalysisWarnings>false</SuppressTrimAnalysisWarnings>

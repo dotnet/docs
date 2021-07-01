@@ -1,7 +1,7 @@
 ---
 title: How to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
 description: "Learn how to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter."
-ms.date: 01/19/2021
+ms.date: 07/01/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 dev_langs:
@@ -17,10 +17,6 @@ ms.topic: how-to
 
 # How to use the DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
 
-:::zone pivot="dotnet-5-0,dotnet-core-3-1"
-<xref:System.Text.Json.JsonDocument> provides the ability to build a read-only Document Object Model (DOM) by using `Utf8JsonReader`. The DOM provides random access to data in a JSON payload. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides array and object enumerators along with APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property.
-:::zone-end
-
 :::zone pivot="dotnet-6-0"
 A JSON Document Object Model (DOM) provides random access to data in a JSON payload. Creating a DOM is an alternative to deserialization:
 
@@ -31,10 +27,19 @@ A JSON Document Object Model (DOM) provides random access to data in a JSON payl
 
 * <xref:System.Text.Json.JsonDocument> provides the ability to build a read-only DOM by using `Utf8JsonReader`. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides array and object enumerators along with APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property. For more information, see [Use JsonDocument for access to data](#use-jsondocument-for-access-to-data) later in this article.
 
-* `JsonNode` and the classes that derive from it in the `System.Text.Json.Node` namespace provide the ability to create a mutable DOM. For more information, see [Use JsonNode for access to data](#use-jsonnode-for-access-to-data) later in the article.
+* `JsonNode` and the classes that derive from it in the `System.Text.Json.Nodes` namespace provide the ability to create a mutable DOM. The JSON elements that compose the payload can be accessed via the `JsonNode`, `JsonObject`, `JsonArray`, `JsonValue`, and <xref:System.Text.Json.JsonElement> types. For more information, see [Use JsonNode for access to data](#use-jsonnode-for-access-to-data) later in the article.
+
+Either `JsonDocument` or `JsonNode` can be used to work with a DOM. Consider the following factors when choosing between them:
+
+* Only the `JsonNode` DOM can be changed after it's created.
+* The `JsonDocument` DOM provides slightly faster access to its data.
+
 :::zone-end
 
-:::zone pivot="dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
+:::zone pivot="dotnet-5-0,dotnet-core-3-1"
+<xref:System.Text.Json.JsonDocument> provides the ability to build a read-only Document Object Model (DOM) by using `Utf8JsonReader`. The DOM provides random access to data in a JSON payload. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides array and object enumerators along with APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property. For an alternative that creates a mutable DOM, see the [].NET 6 version of this article](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0).
+:::zone-end
+
 <xref:System.Text.Json.Utf8JsonReader> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>` or `ReadOnlySequence<byte>`. The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers. The <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method uses `Utf8JsonReader` under the covers. The  `Utf8JsonReader` can't be used directly from Visual Basic code. For more information, see [Visual Basic support](system-text-json-how-to.md#visual-basic-support).
 
 <xref:System.Text.Json.Utf8JsonWriter> is a high-performance way to write UTF-8 encoded JSON text from common .NET types like `String`, `Int32`, and `DateTime`. The writer is a low-level type that can be used to build custom serializers. The <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method uses `Utf8JsonWriter` under the covers.
@@ -48,17 +53,36 @@ The following sections show how to use these APIs for reading and writing JSON.
 > * [Utf8JsonReader compared to JsonTextReader](system-text-json-migrate-from-newtonsoft-how-to.md#utf8jsonreader-compared-to-jsontextreader)
 > * [Utf8JsonWriter compared to JsonTextWriter](system-text-json-migrate-from-newtonsoft-how-to.md#utf8jsonwriter-compared-to-jsontextwriter)
 
+::: zone-end
+
+:::zone pivot="dotnet-6-0"
+
 ## Use JsonNode for access to data
 
-The following example shows how to:
+The following example shows how to use `JsonNode` and the other types in the `System.Text.Json.Nodes` namespace to:
 
-* Parse a JSON object, array, or value into a `JsonNode`.
-* Get a JSON value from a `JsonNode`, as a `JsonValue` or strongly typed (as an `int`, `Date`, and so forth).
-* Get a `JsonObject` or a `JsonArray` from a `JsonNode`.
-* Get an array element from a `JsonArray`.
-* Get 
+* Create a DOM from a JSON string or from an object.
+* Write JSON from a DOM.
+* Get a value, object, or array from a DOM.
+* Make changes to a DOM.
 
+:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeExample.cs":::
 
+The following example shows how to navigate to a subsection of a JSON tree and deserialize a custom type or read an array from that subsection.
+
+:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeExample.cs":::
+
+The following example locates an array in the JSON and calculates an average value:
+
+:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeAverageGradeExample.cs":::
+
+The preceding code:
+
+* Calculates an average grade for objects in a `Students` array that have a `Grade` property.
+* Assigns a default grade of 70 for students who don't have a grade.
+* Gets the number of students from the `Count` property of `JsonArray`.
+
+::: zone-end
 
 ## Use JsonDocument for access to data
 

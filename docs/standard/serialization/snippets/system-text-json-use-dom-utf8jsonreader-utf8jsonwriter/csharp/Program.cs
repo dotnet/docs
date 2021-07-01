@@ -11,6 +11,10 @@ namespace SystemTextJsonSamples
         {
             Console.WriteLine("\n============================= JsonNode example\n");
             JsonNodeExample.Program.Main();
+            Console.WriteLine("\n============================= JsonNode POCO example\n");
+            JsonNodePOCOExample.Program.Main();
+            Console.WriteLine("\n============================= JsonNode Average Grades example\n");
+            JsonNodeAverageGradeExample.Program.Main();
         }
     }
 }

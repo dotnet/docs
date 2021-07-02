@@ -735,7 +735,7 @@ Searches for JSON tokens using `JObject` or `JArray` from `Newtonsoft.Json` tend
 * Use the built-in enumerators (<xref:System.Text.Json.JsonElement.EnumerateArray%2A> and <xref:System.Text.Json.JsonElement.EnumerateObject%2A>) rather than doing your own indexing or loops.
 * Don't do a sequential search on the whole `JsonDocument` through every property by using `RootElement`. Instead, search on nested JSON objects based on the known structure of the JSON data. For example, if you're looking for a `Grade` property in `Student` objects, loop through the `Student` objects and get the value of `Grade` for each, rather than searching through all `JsonElement` objects looking for `Grade` properties. Doing the latter will result in unnecessary passes over the same data.
 
-For a code example, see [Use JsonDocument for access to data](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-jsondocument-for-access-to-data).
+For a code example, see [Use JsonDocument](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-jsondocument).
 
 ## Utf8JsonReader compared to JsonTextReader
 

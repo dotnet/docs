@@ -27,12 +27,12 @@ A JSON Document Object Model (DOM) provides random access to data in a JSON payl
 
 * <xref:System.Text.Json.JsonDocument> provides the ability to build a read-only DOM by using `Utf8JsonReader`. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides array and object enumerators along with APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property. For more information, see [Use JsonDocument for access to data](#use-jsondocument-for-access-to-data) later in this article.
 
-* `JsonNode` and the classes that derive from it in the `System.Text.Json.Nodes` namespace provide the ability to create a mutable DOM. The JSON elements that compose the payload can be accessed via the `JsonNode`, `JsonObject`, `JsonArray`, `JsonValue`, and <xref:System.Text.Json.JsonElement> types. For more information, see [Use JsonNode for access to data](#use-jsonnode-for-access-to-data) later in the article.
+* `JsonNode` and the classes that derive from it in the `System.Text.Json.Nodes` namespace provide the ability to create a mutable DOM. The JSON elements that compose the payload can be accessed via the `JsonNode`, `JsonObject`, `JsonArray`, `JsonValue`, and <xref:System.Text.Json.JsonElement> types. For more information, see [Use JsonNode for access to data](#use-jsonnode-for-access-to-data) later in this article.
 
 Either `JsonDocument` or `JsonNode` can be used to work with a DOM. Consider the following factors when choosing between them:
 
-* Only the `JsonNode` DOM can be changed after it's created.
-* The `JsonDocument` DOM provides slightly faster access to its data.
+* The `JsonNode` DOM can be changed after it's created. The `JsonDocument` DOM is immutable.
+* The `JsonDocument` DOM provides faster access to its data.
 
 :::zone-end
 

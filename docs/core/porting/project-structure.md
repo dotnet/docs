@@ -21,7 +21,7 @@ You can create a solution that compiles for both .NET Framework and .NET side by
 
   - Requires developers to use Visual Studio 2019 or a later version to open existing projects. To support older versions of Visual Studio, [keeping your project files in different folders](#support-vs) is a better option.
 
-- <a name="support-vs"></a>[Keep all projects separate](#keep-existing-projects-and-create-a-net-core-project)
+- <a name="support-vs"></a>[Keep all projects separate](#keep-existing-projects-and-create-a-net-project)
 
   **Benefits**:
 

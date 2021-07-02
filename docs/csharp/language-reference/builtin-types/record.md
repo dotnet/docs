@@ -186,7 +186,7 @@ Here is an example of code that replaces the synthesized `PrintMembers` methods,
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PrintMembersImplementation":::
 
 > [!NOTE]
-> In C# 1.0 and later, the compiler will synthesize `PrintMembers` when a base record has sealed the `ToString` method. You can also create your own implementation of `PrintMembers` as well.
+> In C# 10.0 and later, the compiler will synthesize `PrintMembers` when a base record has sealed the `ToString` method. You can also create your own implementation of `PrintMembers` as well.
 
 ### Deconstructor behavior in derived records
 

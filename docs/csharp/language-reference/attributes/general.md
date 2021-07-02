@@ -39,9 +39,13 @@ The `Obsolete` attribute marks a code element as no longer recommended for use. 
 
 In the following example the `Obsolete` attribute is applied to class `A` and to method `B.OldMethod`. Because the second argument of the attribute constructor applied to `B.OldMethod` is set to `true`, this method will cause a compiler error, whereas using class `A` will just produce a warning. Calling `B.NewMethod`, however, produces no warning or error. For example, when you use it with the previous definitions, the following code generates two warnings and one error:
 
-:::code language="csharp" source="snippets/ObsoleteExample.cs" interactive="try-dotnet" :::
+:::code language="csharp" source="snippets/ObsoleteExample.cs" id="Snippet1" interactive="try-dotnet" :::
 
 The string provided as the first argument to the attribute constructor will be displayed as part of the warning or error. Two warnings for class `A` are generated: one for the declaration of the class reference, and one for the class constructor. The `Obsolete` attribute can be used without arguments, but including an explanation what to use instead is recommended.
+
+In C# 10, you can use constant string interpolation and the `nameof` operator to ensure the names match:
+
+:::code language="csharp" source="snippets/ObsoleteExample.cs" id="Snippet2" :::
 
 ## `AttributeUsage` attribute
 

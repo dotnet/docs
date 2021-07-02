@@ -1,11 +1,11 @@
 ---
-title: Do these steps before porting code
-description: Before porting your code from .NET Framework to .NET, you must use the correct dev environment and update your project files as required.
+title: Prerequisites to port from .NET Framework
+description: Before porting your code from .NET Framework to .NET, you must use the correct developer environment and update your project files as required.
 author: StephenBonikowsky
 ms.author: stebon
 ms.date: 06/10/2021
 ---
-# Required and recommended steps before porting code
+# Prerequisites to porting code
 
 Make the needed changes to build and run a .NET application before beginning the work to port your code. These changes can be done while still building and running a .NET Framework application.
 
@@ -36,3 +36,7 @@ Convert your projects to the [SDK-style format](../project-sdk/overview.md).
 ## Update dependencies
 
 Update dependencies to their latest version available, and to .NET Standard version where possible.
+
+## Next steps
+
+- [Create a porting plan](porting-approaches.md)

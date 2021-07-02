@@ -2474,7 +2474,7 @@ items:
     items:
     - name: About .NET
       items:
-      - name: Versioning relationship between the .NET SDK, MSBuild and VS
+      - name: Versioning info for .NET SDK, MSBuild, and Visual Studio
         href: ../core/porting/versioning-sdk-msbuild-vs.md
       - name: Choose between .NET 5 and .NET Framework for server apps
         href: ../standard/choosing-core-framework-server.md
@@ -2493,7 +2493,7 @@ items:
       href: ../core/porting/breaking-changes.md
   - name: Pre-Migration
     items:
-    - name: Analyze & Asses the portability of your project
+    - name: Asses the portability of your project
       items:
       - name: Unsupported Dependencies
         href: ../core/porting/third-party-deps.md

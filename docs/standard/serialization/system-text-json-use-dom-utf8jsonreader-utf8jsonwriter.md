@@ -1,6 +1,6 @@
 ---
-title: How to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
-description: "Learn how to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter."
+title: How to use a JSON DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
+description: "Learn how to use a JSON DOM, Utf8JsonReader, and Utf8JsonWriter."
 ms.date: 07/01/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
@@ -15,10 +15,26 @@ helpviewer_keywords:
 ms.topic: how-to
 ---
 
-# How to use the DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
+# How to use a DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
 
-:::zone pivot="dotnet-6-0"
-A JSON Document Object Model (DOM) provides random access to data in a JSON payload. Creating a DOM is an alternative to deserialization:
+This article shows how to use:
+
+* A [JSON Document Object Model (DOM)](#json-document-object-model-dom) for random access to data in a JSON payload.
+* The [`Utf8JsonWriter`](#use-utf8jsonwriter) type for building custom serializers.
+* The [`Utf8JsonReader`](#use-utf8jsonreader) type for building custom parsers and deserializers.
+
+> [!NOTE]
+> The article about migrating from Newtonsoft has more information about these APIs. See the following sections in that article:
+>
+> * [JsonDocument and JsonElement compared to JToken (like JObject, JArray)](system-text-json-migrate-from-newtonsoft-how-to.md#jsondocument-and-jsonelement-compared-to-jtoken-like-jobject-jarray)
+> * [Utf8JsonReader compared to JsonTextReader](system-text-json-migrate-from-newtonsoft-how-to.md#utf8jsonreader-compared-to-jsontextreader)
+> * [Utf8JsonWriter compared to JsonTextWriter](system-text-json-migrate-from-newtonsoft-how-to.md#utf8jsonwriter-compared-to-jsontextwriter)
+
+The following sections show how to use these APIs for reading and writing JSON.
+
+## JSON Document Object Model (DOM) choices
+
+Working with a DOM is an alternative to deserialization:
 
 * When you don't have a type to deserialize into.
 * When the JSON you receive doesn't have a fixed schema and must be inspected to know what it contains.
@@ -26,6 +42,8 @@ A JSON Document Object Model (DOM) provides random access to data in a JSON payl
 `System.Text.Json` provides two ways to build a JSON DOM:
 
 * <xref:System.Text.Json.JsonDocument> provides the ability to build a read-only DOM by using `Utf8JsonReader`. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides array and object enumerators along with APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property. For more information, see [Use JsonDocument for access to data](#use-jsondocument-for-access-to-data) later in this article.
+
+:::zone pivot="dotnet-6-0"
 
 * `JsonNode` and the classes that derive from it in the `System.Text.Json.Nodes` namespace provide the ability to create a mutable DOM. The JSON elements that compose the payload can be accessed via the `JsonNode`, `JsonObject`, `JsonArray`, `JsonValue`, and <xref:System.Text.Json.JsonElement> types. For more information, see [Use JsonNode for access to data](#use-jsonnode-for-access-to-data) later in this article.
 
@@ -37,27 +55,14 @@ Either `JsonDocument` or `JsonNode` can be used to work with a DOM. Consider the
 :::zone-end
 
 :::zone pivot="dotnet-5-0,dotnet-core-3-1"
-<xref:System.Text.Json.JsonDocument> provides the ability to build a read-only Document Object Model (DOM) by using `Utf8JsonReader`. The DOM provides random access to data in a JSON payload. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides array and object enumerators along with APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property. For an alternative that creates a mutable DOM, see the [].NET 6 version of this article](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0).
+
+* Starting in .NET 6, `JsonNode` and the classes that derive from it in the `System.Text.Json.Nodes` namespace provide the ability to create a mutable DOM. For more information, see the [.NET 6 version of this article](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0).
+
 :::zone-end
-
-<xref:System.Text.Json.Utf8JsonReader> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>` or `ReadOnlySequence<byte>`. The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers. The <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method uses `Utf8JsonReader` under the covers. The  `Utf8JsonReader` can't be used directly from Visual Basic code. For more information, see [Visual Basic support](system-text-json-how-to.md#visual-basic-support).
-
-<xref:System.Text.Json.Utf8JsonWriter> is a high-performance way to write UTF-8 encoded JSON text from common .NET types like `String`, `Int32`, and `DateTime`. The writer is a low-level type that can be used to build custom serializers. The <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method uses `Utf8JsonWriter` under the covers.
-
-The following sections show how to use these APIs for reading and writing JSON.
-
-> [!NOTE]
-> The article about migrating from Newtonsoft has more information about these APIs. See the following sections in that article:
->
-> * [JsonDocument and JsonElement compared to JToken (like JObject, JArray)](system-text-json-migrate-from-newtonsoft-how-to.md#jsondocument-and-jsonelement-compared-to-jtoken-like-jobject-jarray)
-> * [Utf8JsonReader compared to JsonTextReader](system-text-json-migrate-from-newtonsoft-how-to.md#utf8jsonreader-compared-to-jsontextreader)
-> * [Utf8JsonWriter compared to JsonTextWriter](system-text-json-migrate-from-newtonsoft-how-to.md#utf8jsonwriter-compared-to-jsontextwriter)
-
-::: zone-end
 
 :::zone pivot="dotnet-6-0"
 
-## Use JsonNode for access to data
+## Use `JsonNode`
 
 The following example shows how to use `JsonNode` and the other types in the `System.Text.Json.Nodes` namespace to:
 
@@ -84,7 +89,7 @@ The preceding code:
 
 ::: zone-end
 
-## Use JsonDocument for access to data
+## Use `JsonDocument`
 
 The following example shows how to use the <xref:System.Text.Json.JsonDocument> class for random access to data in a JSON string:
 
@@ -105,7 +110,7 @@ Here's an example of the JSON that this code processes:
 
 :::code language="json" source="snippets/system-text-json-how-to/csharp/GradesPrettyPrint.json":::
 
-## Use JsonDocument to write JSON
+### Use `JsonDocument` to write JSON
 
 The following example shows how to write JSON from a <xref:System.Text.Json.JsonDocument>:
 
@@ -126,14 +131,16 @@ The result is the following pretty-printed JSON output:
 
 :::code language="json" source="snippets/system-text-json-how-to/csharp/GradesPrettyPrint.json":::
 
-## Use Utf8JsonWriter
+## Use `Utf8JsonWriter`
+
+<xref:System.Text.Json.Utf8JsonReader> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>` or `ReadOnlySequence<byte>`. The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers. The <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method uses `Utf8JsonReader` under the covers. The  `Utf8JsonReader` can't be used directly from Visual Basic code. For more information, see [Visual Basic support](system-text-json-how-to.md#visual-basic-support).
 
 The following example shows how to use the <xref:System.Text.Json.Utf8JsonWriter> class:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/Utf8WriterToStream.cs" id="Serialize":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/Utf8WriterToStream.vb" id="Serialize":::
 
-## Use Utf8JsonReader
+## Use `Utf8JsonReader`
 
 The following example shows how to use the <xref:System.Text.Json.Utf8JsonReader> class:
 
@@ -142,7 +149,7 @@ The following example shows how to use the <xref:System.Text.Json.Utf8JsonReader
 
 The preceding code assumes that the `jsonUtf8` variable is a byte array that contains valid JSON, encoded as UTF-8.
 
-### Filter data using Utf8JsonReader
+### Filter data using `Utf8JsonReader`
 
 The following example shows how to synchronously read a file, and search for a value.
 
@@ -167,7 +174,7 @@ Here's a JSON sample that the preceding code can read. The resulting summary mes
 
 :::code language="json" source="snippets/system-text-json-how-to/csharp/Universities.json":::
 
-### Read from a stream using Utf8JsonReader
+### Read from a stream using `Utf8JsonReader`
 
 When reading a large file (a gigabyte or more in size, for example), you might want to avoid having to load the entire file into memory at once. For this scenario, you can use a <xref:System.IO.FileStream>.
 

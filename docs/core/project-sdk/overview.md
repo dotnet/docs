@@ -4,7 +4,7 @@ titleSuffix: ""
 description: Learn about the .NET project SDKs.
 ms.date: 09/17/2020
 ms.topic: conceptual
-no-loc: ["EmbeddedResource", "Compile", "None"]
+no-loc: ["EmbeddedResource", "Compile", "None", "Blazor"]
 ---
 # .NET project SDKs
 

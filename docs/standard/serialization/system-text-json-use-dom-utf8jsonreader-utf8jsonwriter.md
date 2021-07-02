@@ -19,7 +19,7 @@ ms.topic: how-to
 
 This article shows how to use:
 
-* A [JSON Document Object Model (DOM)](#json-document-object-model-dom-choices) for random access to data in a JSON payload.
+* A [JSON Document Object Model (DOM)](#json-dom-choices) for random access to data in a JSON payload.
 * The [`Utf8JsonWriter`](#use-utf8jsonwriter) type for building custom serializers.
 * The [`Utf8JsonReader`](#use-utf8jsonreader) type for building custom parsers and deserializers.
 
@@ -30,9 +30,7 @@ This article shows how to use:
 > * [Utf8JsonReader compared to JsonTextReader](system-text-json-migrate-from-newtonsoft-how-to.md#utf8jsonreader-compared-to-jsontextreader)
 > * [Utf8JsonWriter compared to JsonTextWriter](system-text-json-migrate-from-newtonsoft-how-to.md#utf8jsonwriter-compared-to-jsontextwriter)
 
-The following sections show how to use these APIs for reading and writing JSON.
-
-## JSON Document Object Model (DOM) choices
+## JSON DOM choices
 
 Working with a DOM is an alternative to deserialization:
 
@@ -47,7 +45,7 @@ Working with a DOM is an alternative to deserialization:
 
 * `JsonNode` and the classes that derive from it in the `System.Text.Json.Nodes` namespace provide the ability to create a mutable DOM. The JSON elements that compose the payload can be accessed via the `JsonNode`, `JsonObject`, `JsonArray`, `JsonValue`, and <xref:System.Text.Json.JsonElement> types. For more information, see [Use JsonNode](#use-jsonnode) later in this article.
 
-Either `JsonDocument` or `JsonNode` can be used to work with a DOM. Consider the following factors when choosing between them:
+Consider the following factors when choosing between `JsonDocument` and `JsonNode`:
 
 * The `JsonNode` DOM can be changed after it's created. The `JsonDocument` DOM is immutable.
 * The `JsonDocument` DOM provides faster access to its data.
@@ -75,9 +73,9 @@ The following example shows how to use `JsonNode` and the other types in the `Sy
 
 The following example shows how to navigate to a subsection of a JSON tree and deserialize a custom type or read an array from that subsection.
 
-:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeExample.cs":::
+:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodePOCOExample.cs":::
 
-The following example locates an array in the JSON and calculates an average value:
+The following example selects a JSON array that has integer values and calculates an average value:
 
 :::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeAverageGradeExample.cs":::
 

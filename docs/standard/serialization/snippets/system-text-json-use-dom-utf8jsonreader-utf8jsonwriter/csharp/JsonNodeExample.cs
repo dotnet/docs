@@ -101,7 +101,8 @@ namespace JsonNodeExample
             //JSON = "2019-08-01T00:00:00"
 
             // Get a typed value by chaining references.
-            Console.WriteLine($"TemperatureRanges.Cold.High={forecastNode["TemperatureRanges"]["Cold"]["High"]}");
+            int coldHighTemperature = (int)forecastNode["TemperatureRanges"]["Cold"]["High"];
+            Console.WriteLine($"TemperatureRanges.Cold.High={coldHighTemperature}");
             //output:
             //TemperatureRanges.Cold.High = 20
 
@@ -118,7 +119,8 @@ namespace JsonNodeExample
                 ["Date"] = new DateTime(2019, 8, 1),
                 ["Temperature"] = 25,
                 ["Summary"] = "Hot",
-                ["DatesAvailable"] = new JsonArray(new DateTime(2019, 8, 1), new DateTime(2019, 8, 2)),
+                ["DatesAvailable"] = new JsonArray(
+                    new DateTime(2019, 8, 1), new DateTime(2019, 8, 2)),
                 ["TemperatureRanges"] = new JsonObject
                 {
                     ["Cold"] = new JsonObject

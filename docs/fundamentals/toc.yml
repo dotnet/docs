@@ -1546,14 +1546,18 @@ items:
   - name: Quickstarts
     expanded: true
     items:
-    - name: Create build GitHub Action
+    - name: Create a build GitHub Action
       href: ../devops/dotnet-build-github-action.md
-    - name: Create test GitHub Action
+      displayName: dotnet restore,dotnet build
+    - name: Create a test GitHub Action
       href: ../devops/dotnet-test-github-action.md
-    - name: Create publish GitHub Action
+      displayName: dotnet restore,dotnet build,dotnet test
+    - name: Create a publish GitHub Action
       href: ../devops/dotnet-publish-github-action.md
-    - name: Create CodeQL GitHub Action
+      displayName: dotnet restore,dotnet build,dotnet test,dotnet publish
+    - name: Create a CodeQL GitHub Action
       href: ../devops/dotnet-secure-github-action.md
+      displayName: codeql,security,vulnerability,source scan
 - name: Fundamental coding components
   items:
   - name: Base types overview

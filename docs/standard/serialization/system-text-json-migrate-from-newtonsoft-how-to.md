@@ -682,7 +682,7 @@ During deserialization, `Newtonsoft.Json` adds objects to a collection even if t
 <xref:System.Text.Json.JsonDocument?displayProperty=fullName> provides the ability to parse and build a **read-only** Document Object Model (DOM) from existing JSON payloads. The DOM provides random access to data in a JSON payload. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property.
 
 :::zone pivot="dotnet-6-0"
-Starting in .NET 6, you can parse and build a **mutable** DOM from existing JSON payloads by using the `JsonNode` type and other types in the `System.Text.Json` namespace. For more information, see [Use `JsonNode`](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-jsonnode).
+Starting in .NET 6, you can parse and build a **mutable** DOM from existing JSON payloads by using the `JsonNode` type and other types in the `System.Text.Json.Nodes` namespace. For more information, see [Use `JsonNode`](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-jsonnode).
 :::zone-end
 
 ### JsonDocument is IDisposable

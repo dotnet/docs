@@ -22,6 +22,21 @@ In this quickstart, you will learn how to create a GitHub Action to publish your
 - A .NET integrated development environment (IDE).
   - *Feel free to use the [Visual Studio IDE](https://visualstudio.microsoft.com)*.
 
+## Add publish profile
+
+To publish the app to Azure, open the Azure portal for the App Service instance of the application. In the resource **Overview**, select **Get publish profile** and save the **.PublishSetting* file locally.
+
+:::image type="content" source="media/get-publish-profile.png" alt-text="Azure Portal, App Service resource: Get publish profile":::
+
+> [!WARNING]
+> The publish profile contains sensitive information, such as credentials for accessing your Azure App Service resource. This information should always be treated very carefully.
+
+In the GitHub repository, navigate to **Settings** and select **Secrets** from the left navigation menu. Select **New repository secret**, to add a new secret.
+
+:::image type="content" source="media/github-secret-azure-publish-profile.png" alt-text="GitHub / Settings / Secret: Add new repository secret":::
+
+Enter `AZURE_PUBLISH_PROFILE` as the **Name**, and paste the XML content from the publish profile into the **Value** text area. Select **Add secret**. For more information, see [Encrypted secrets](github-actions-overview.md#encrypted-secrets).
+
 [!INCLUDE [add-github-workflow](includes/add-github-workflow.md)]
 
 Create a new file named *publish-app.yml*, copy and paste the following YML contents into it:
@@ -59,6 +74,7 @@ In the preceding workflow composition:
   - The [`dotnet publish`](../core/tools/dotnet-publish.md) command is called.
   - The [`dotnet test`](../core/tools/dotnet-test.md) command is called.
   - The `azure/webapps-deploy@v2` GitHub Action deploys the app with the given `publish-profile` and `package`.
+    - The `publish-profile` is assigned from the `AZURE_PUBLISH_PROFILE` repository secret.
 
 [!INCLUDE [add-status-badge](includes/add-status-badge.md)]
 

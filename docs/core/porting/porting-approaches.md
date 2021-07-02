@@ -7,17 +7,17 @@ ms.date: 06/10/2021
 ---
 # Create a porting plan
 
-Before you jump straight into the code, take the time to go through the recommended pre-migration steps. This will give you insight into the kinds of issues you may need to deal with and will help you decide on an approach that makes the most sense for you.
+Before you jump straight into the code, take the time to go through the recommended pre-migration steps. This article gives you insight into the kinds of issues you may come across, and helps you decide on an approach that makes the most sense.
 
 ## Port your code
 
-Once you have taken care of the [Needed changes before porting code](premigration-needed-changes.md) you should be ready to decide on the best approach for you and begin porting code.
+Make sure that you follow the [prerequisites to porting code](premigration-needed-changes.md) before you continue any further. Be ready to decide on the best approach for you and begin porting code.
 
 ### Deal primarily with the compiler
 
 This approach works well for small projects or projects that don't use many .NET Framework APIs. The approach is simple:
 
-01. Optionally, run ApiPort on your project. If you run ApiPort, gain knowledge from the report on issues you'll need to address.
+01. Optionally, run **ApiPort** on your project. If you run **ApiPort**, gain knowledge from the report on issues you'll need to address.
 01. Copy all of your code over into a new .NET project.
 01. While referring to the portability report (if generated), solve compiler errors until the project fully compiles.
 
@@ -27,7 +27,7 @@ Although it's unstructured, this code-focused approach often resolves issues qui
 
 This approach might be the best if you prefer to have code that compiles during the entire process. The approach is as follows:
 
-01. Run ApiPort on a project.
+01. Run **ApiPort** on a project.
 01. Address issues by using different APIs that are portable.
 01. Take note of any areas where you're prevented from using a direct alternative.
 01. Repeat the prior steps for all projects you're porting until you're confident each is ready to be copied over into a new .NET project.
@@ -40,7 +40,7 @@ This careful approach is more structured than simply working out compiler errors
 
 This approach might be best for larger and more complex projects, where restructuring code or completely rewriting certain areas of code might be necessary to support .NET. The approach is as follows:
 
-01. Run ApiPort on a project.
+01. Run **ApiPort** on a project.
 01. Understand where each non-portable type is used and how that affects overall portability.
 
     - Understand the nature of those types. Are they small in number but used frequently? Are they large in number but used infrequently? Is their use concentrated, or is it spread throughout your code?
@@ -91,3 +91,8 @@ Ultimately, the porting effort depends heavily on how your .NET Framework code i
 01. Pick the next layer of code to port over and repeat the prior steps.
 
 If you start with the base of your library and move outward from the base and test each layer as needed, porting is a systematic process where problems are isolated to one layer of code at a time.
+
+## Next steps
+
+- [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
+- [Organize your project to support both .NET Framework and .NET Core](project-structure.md)

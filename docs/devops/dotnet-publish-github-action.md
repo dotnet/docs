@@ -15,12 +15,10 @@ In this quickstart, you will learn how to create a GitHub Action to publish your
 ## Prerequisites
 
 - A [GitHub account](https://github.com/join).
+- A .NET source code repository.
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/dotnet).
 - An ASP.NET Core web app.
 - An Azure App Service resource.
-- The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet).
-- A .NET integrated development environment (IDE).
-  - *Feel free to use the [Visual Studio IDE](https://visualstudio.microsoft.com)*.
 
 ## Add publish profile
 

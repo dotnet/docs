@@ -185,7 +185,12 @@ For more information, see [Events that trigger workflows](https://docs.github.co
 
 ## .NET CLI
 
-The .NET command-line interface (CLI) is a cross-platform toolchain for developing, building, running, and publishing .NET applications. The .NET CLI is used to perform actions from workflow files.
+The .NET command-line interface (CLI) is a cross-platform toolchain for developing, building, running, and publishing .NET applications. The .NET CLI is used to `run` as part of individual `steps` within a workflow file. Common command include:
+
+- [dotnet restore](../core/tools/dotnet-restore.md)
+- [dotnet build](../core/tools/dotnet-build.md)
+- [dotnet test](../core/tools/dotnet-test.md)
+- [dotnet publish](../core/tools/dotnet-publish.md)
 
 For more information, see [.NET CLI overview](../core/tools/index.md)
 

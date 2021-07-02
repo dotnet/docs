@@ -49,12 +49,18 @@ In the preceding workflow composition:
 
 [!INCLUDE [add-status-badge](includes/add-status-badge.md)]
 
+### Example build workflow status badge
+
+| Passing | Failing | No status |
+|--|--|--|
+| :::image type="content" source="../media/build-badge-passing.svg" alt-text="GitHub: build passing badge"::: | :::image type="content" source="../media/build-badge-failing.svg" alt-text="GitHub: build failing badge"::: | :::image type="content" source="../media/build-badge-no-status.svg" alt-text="GitHub: build no-status badge"::: |
+
 ## See also
 
 - [dotnet restore](../core/tools/dotnet-restore.md)
 - [dotnet build](../core/tools/dotnet-build.md)
-- [GitHub Action: action/checkout](https://github.com/actions/checkout)
-- [GitHub Action: action/setup-dotnet](https://github.com/actions/setup-dotnet)
+- [actions/checkout](https://github.com/actions/checkout)
+- [actions/setup-dotnet](https://github.com/actions/setup-dotnet)
 
 ## Next steps
 

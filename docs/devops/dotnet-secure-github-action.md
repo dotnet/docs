@@ -47,11 +47,17 @@ For more information, see [GitHub Actions: Configure code scanning](https://docs
 
 [!INCLUDE [add-status-badge](includes/add-status-badge.md)]
 
+### Example CodeQL workflow status badge
+
+| Passing | Failing | No status |
+|--|--|--|
+| :::image type="content" source="../media/codeql-badge-passing.svg" alt-text="GitHub: CodeQL passing badge"::: | :::image type="content" source="../media/codeql-badge-failing.svg" alt-text="GitHub: CodeQL failing badge"::: | :::image type="content" source="../media/codeql-badge-no-status.svg" alt-text="GitHub: CodeQL no-status badge"::: |
+
 ## See also
 
 - [Secure coding guidelines](../standard/security/secure-coding-guidelines.md)
-- [GitHub Action: action/checkout](https://github.com/actions/checkout)
-- [GitHub Action: action/setup-dotnet](https://github.com/actions/setup-dotnet)
+- [actions/checkout](https://github.com/actions/checkout)
+- [actions/setup-dotnet](https://github.com/actions/setup-dotnet)
 
 ## Next steps
 

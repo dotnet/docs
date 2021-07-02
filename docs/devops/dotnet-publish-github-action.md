@@ -56,13 +56,23 @@ In the preceding workflow composition:
   - The `actions/setup-dotnet@v1` GitHub Action is used to setup the .NET SDK with the specified version from the `DOTNET_VERSION` environment variable.
   - The [`dotnet restore`](../core/tools/dotnet-restore.md) command is called.
   - The [`dotnet build`](../core/tools/dotnet-build.md) command is called.
+  - The [`dotnet publish`](../core/tools/dotnet-publish.md) command is called.
   - The [`dotnet test`](../core/tools/dotnet-test.md) command is called.
   - The `azure/webapps-deploy@v2` GitHub Action deploys the app with the given `publish-profile` and `package`.
 
 [!INCLUDE [add-status-badge](includes/add-status-badge.md)]
 
+### Example publish workflow status badge
+
+| Passing | Failing | No status |
+|--|--|--|
+| :::image type="content" source="../media/publish-badge-passing.svg" alt-text="GitHub: publish passing badge"::: | :::image type="content" source="../media/publish-badge-failing.svg" alt-text="GitHub: publish failing badge"::: | :::image type="content" source="../media/publish-badge-no-status.svg" alt-text="GitHub: publish no-status badge"::: |
+
 ## See also
 
+- [dotnet restore](../core/tools/dotnet-restore.md)
+- [dotnet build](../core/tools/dotnet-build.md)
+- [dotnet test](../core/tools/dotnet-test.md)
 - [dotnet publish](../core/tools/dotnet-publish.md)
 
 ## Next steps

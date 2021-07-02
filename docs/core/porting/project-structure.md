@@ -8,7 +8,7 @@ ms.date: 07/02/2021
 
 You can create a solution that compiles for both .NET Framework and .NET side by side. This article covers several project-organization options to help you achieve this goal. Here are some typical scenarios to consider when you're deciding how to set up your project layout with .NET. The list may not cover everything you want.
 
-- [Combine existing projects and .NET projects into a single project](#replace-existing-projects-with-a-multi-targeted-net-core-project)
+- [Combine existing projects and .NET projects into a single project](#replace-existing-projects-with-a-multi-targeted-net-project)
 
   **Benefits**:
 

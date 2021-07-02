@@ -1,5 +1,5 @@
 ---
-title: Create a .NET test GitHub Action
+title: Create a test validation GitHub Action
 description: In this quickstart, you will learn how to create a GitHub Action to test your .NET source code.
 author: IEvangelist
 ms.author: dapine
@@ -8,7 +8,7 @@ ms.topic: quickstart
 recommendations: false
 ---
 
-# Quickstart: Create a .NET test GitHub Action
+# Quickstart: Create a test validation GitHub Action
 
 In this quickstart, you will learn how to create a GitHub Action to test your .NET source code. Automatically testing your .NET code within GitHub is referred to as continuous integration (CI), where pull requests or changes to the source trigger workflows to exercise. Along with [building the source code](dotnet-build-github-action.md), testing ensures that the compiled source code functions as the author intended. More often than not, unit tests serve as immediate feedback-loop to help ensure the validity of changes to source code.
 

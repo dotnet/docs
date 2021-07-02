@@ -66,7 +66,7 @@ In the preceding workflow composition:
 
 | Passing | Failing | No status |
 |--|--|--|
-| :::image type="content" source="../media/publish-badge-passing.svg" alt-text="GitHub: publish passing badge"::: | :::image type="content" source="../media/publish-badge-failing.svg" alt-text="GitHub: publish failing badge"::: | :::image type="content" source="../media/publish-badge-no-status.svg" alt-text="GitHub: publish no-status badge"::: |
+| :::image type="content" source="media/publish-badge-passing.svg" alt-text="GitHub: publish passing badge"::: | :::image type="content" source="media/publish-badge-failing.svg" alt-text="GitHub: publish failing badge"::: | :::image type="content" source="media/publish-badge-no-status.svg" alt-text="GitHub: publish no-status badge"::: |
 
 ## See also
 

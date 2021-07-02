@@ -51,7 +51,7 @@ For more information, see [GitHub Actions: Configure code scanning](https://docs
 
 | Passing | Failing | No status |
 |--|--|--|
-| :::image type="content" source="../media/codeql-badge-passing.svg" alt-text="GitHub: CodeQL passing badge"::: | :::image type="content" source="../media/codeql-badge-failing.svg" alt-text="GitHub: CodeQL failing badge"::: | :::image type="content" source="../media/codeql-badge-no-status.svg" alt-text="GitHub: CodeQL no-status badge"::: |
+| :::image type="content" source="media/codeql-badge-passing.svg" alt-text="GitHub: CodeQL passing badge"::: | :::image type="content" source="media/codeql-badge-failing.svg" alt-text="GitHub: CodeQL failing badge"::: | :::image type="content" source="media/codeql-badge-no-status.svg" alt-text="GitHub: CodeQL no-status badge"::: |
 
 ## See also
 

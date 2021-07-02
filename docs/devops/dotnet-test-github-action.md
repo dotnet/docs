@@ -54,7 +54,7 @@ In the preceding workflow composition:
 
 | Passing | Failing | No status |
 |--|--|--|
-| :::image type="content" source="../media/test-badge-passing.svg" alt-text="GitHub: test passing badge"::: | :::image type="content" source="../media/test-badge-failing.svg" alt-text="GitHub: test failing badge"::: | :::image type="content" source="../media/test-badge-no-status.svg" alt-text="GitHub: test no-status badge"::: |
+| :::image type="content" source="media/test-badge-passing.svg" alt-text="GitHub: test passing badge"::: | :::image type="content" source="media/test-badge-failing.svg" alt-text="GitHub: test failing badge"::: | :::image type="content" source="media/test-badge-no-status.svg" alt-text="GitHub: test no-status badge"::: |
 
 ## See also
 

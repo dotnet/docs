@@ -221,7 +221,7 @@ sections:
   - name: Connection Pooling
     questions:
       - question: |
-          Is there a construct that can help with <xref:System.Data.Linq.DataContext> pooling?
+          Is there a construct that can help with DataContext pooling?
         answer: |
           Do not try to reuse instances of <xref:System.Data.Linq.DataContext>. Each <xref:System.Data.Linq.DataContext> maintains state (including an identity cache) for one particular edit/query session. To obtain new instances based on the current state of the database, use a new <xref:System.Data.Linq.DataContext>.
           
@@ -230,7 +230,7 @@ sections:
   - name: Second DataContext Is Not Updated
     questions:
       - question: |
-          I used one instance of <xref:System.Data.Linq.DataContext> to store values in the database. However, a second <xref:System.Data.Linq.DataContext> on the same database does not reflect the updated values. The second <xref:System.Data.Linq.DataContext> instance seems to return cached values.
+          I used one instance of DataContext to store values in the database. However, a second DataContext on the same database does not reflect the updated values. The second DataContext instance seems to return cached values.
         answer: |
           This behavior is by design. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] continues to return the same instances/values that you saw in the first instance. When you make updates, you use optimistic concurrency. The original data is used to check against the current database state to assert that it is in fact still unchanged. If it has changed, a conflict occurs and your application must resolve it. One option of your application is to reset the original state to the current database state and to try the update again. For more information, see [How to: Manage Change Conflicts](how-to-manage-change-conflicts.md).
           
@@ -239,7 +239,7 @@ sections:
   - name: Cannot Call SubmitChanges in Read-only Mode
     questions:
       - question: |
-          When I try to call <xref:System.Data.Linq.DataContext.SubmitChanges%2A> in read-only mode, I get an error.
+          When I try to call SubmitChanges in read-only mode, I get an error.
         answer: |
           Read-only mode turns off the ability of the context to track changes.
 

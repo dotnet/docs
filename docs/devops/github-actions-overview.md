@@ -79,6 +79,110 @@ There are many examples of .NET workflow files provided as [tutorials](create-do
     :::column-end:::
 :::row-end:::
 
+### Encrypted secrets
+
+To use *encrypted secrets* in your workflow files, you reference the secrets using the [workflow expression syntax](https://docs.github.com/actions/reference/context-and-expression-syntax-for-github-actions) from the `secrets` context object.
+
+```yaml
+${{ secrets.MY_SECRET_VALUE }} # The MY_SECRET_VALUE must exist in the repository as a secret
+```
+
+Secret values are never printed to the logs, instead their names are printed with asterisk representing their values. For example, as each step runs within a job &mdash; all of the values it uses are output to the action log. When secret values are out, they render similar to the following:
+
+```console
+MY_SECRET_VALUE: ***
+```
+
+> [!IMPORTANT]
+> The `secrets` context provides the GitHub authentication token that is scoped to the repository, branch, and action. It's provided by GitHub without any user intervention:
+>
+> ```yml
+> ${{ secrets.GITHUB_TOKEN }}
+> ```
+
+For more information, see [Using encrypted secrets in a workflow](https://docs.github.com/actions/reference/encrypted-secrets#using-encrypted-secrets-in-a-workflow).
+
+### Events
+
+Workflows are triggered by many different types of events. In addition to Webhook events, which are the most common, there are also scheduled events and manual events.
+
+#### Example webhook event
+
+The following example shows how to specify a webhook event trigger for a workflow:
+
+```yml
+name: code coverage
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main, staging
+
+jobs:
+  coverage:
+
+    runs-on: ubuntu-latest
+
+    # steps omitted for brevity
+```
+
+In the preceding workflow, the `push` and `pull_request` events will trigger the workflow to run.
+
+#### Example scheduled event
+
+The following example shows how to specify a scheduled (CRON job) event trigger for a workflow:
+
+```yml
+name: scan
+on:
+  schedule:
+  - cron: '0 0 1 * *'
+  # additional events omitted for brevity
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    # steps omitted for brevity
+```
+
+In the preceding workflow, the `schedule` event specifies the `cron` of `'0 0 1 * *'` which will trigger the workflow to run on the first day of every month. Running workflows on a schedule are great for workflows that take a long time to run, or perform actions that require less frequent attention.
+
+#### Example manual event
+
+The following example shows how to specify a manual event trigger for a workflow:
+
+```yml
+name: build
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'The reason for running the workflow'
+        required: true
+        default: 'Manual run'
+  # additional events omitted for brevity
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 'Print manual run reason'
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        run: |
+          echo 'Reason: ${{ github.event.inputs.reason }}'
+
+    # additional steps omitted for brevity
+```
+
+In the preceding workflow, the `workflow_dispatch` event requires a `reason` as input. GitHub sees this and it's UI dynamically changes to prompt the user into provided the reason for manually running the workflow. The `steps` will print the provided reason from the user.
+
+For more information, see [Events that trigger workflows](https://docs.github.com/actions/reference/events-that-trigger-workflows).
+
 ## .NET CLI
 
 The .NET command-line interface (CLI) is a cross-platform toolchain for developing, building, running, and publishing .NET applications. The .NET CLI is used to perform actions from workflow files.

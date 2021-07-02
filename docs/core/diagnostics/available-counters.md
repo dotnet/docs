@@ -82,7 +82,7 @@ The following counters are published as part of the [ASP.NET Core Kestrel web se
 
 ## "System.Net.Http" counters
 
-The following counters are published by the HTTP stack. 
+The following counters are published by the HTTP stack.
 
 | Counter | Description | First available in |
 |--|--|--|

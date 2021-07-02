@@ -62,15 +62,13 @@ The following MSBuild properties change the output of `dotnet publish`.
 
   Compiles application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation. For more information, see [ReadyToRun images](../deploying/ready-to-run.md). Available since .NET Core 3.0 SDK.
 
-  To see warnings about missing dependencies that could cause runtime failures, use `PublishReadyToRunShowWarning`.
+  To see warnings about missing dependencies that could cause runtime failures, use `PublishReadyToRunShowWarning=true`.
 
-  We recommend that you specify this option in a publish profile rather than on the command line.
+  We recommend that you specify `PublishReadyToRun` in a publish profile rather than on the command line.
 
 - `PublishSingleFile`
 
-  Packages the app into a platform-specific single-file executable. The executable is self-extracting and contains all dependencies (including native) that are required to run the app. When the app is first run, the application is extracted to a directory based on the app name and build identifier. Startup is faster when the application is run again. The application doesn't need to extract itself a second time unless a new version is used. Available since .NET Core 3.0 SDK.
-
-  For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/main/accepted/2020/single-file/design.md).
+  Packages the app into a platform-specific single-file executable. For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/main/accepted/2020/single-file/design.md). Available since .NET Core 3.0 SDK.
 
   We recommend that you specify this option in the project file rather than on the command line.
 

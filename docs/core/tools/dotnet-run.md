@@ -17,7 +17,7 @@ ms.date: 02/19/2020
 dotnet run [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
     [--force] [--interactive] [--launch-profile <NAME>] [--no-build]
     [--no-dependencies] [--no-launch-profile] [--no-restore]
-    [-p|--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
     [-v|--verbosity <LEVEL>] [[--] [application arguments]]
 
 dotnet run -h|--help
@@ -90,9 +90,9 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Doesn't execute an implicit restore when running the command.
 
-- **`-p|--project <PATH>`**
+- **`--project <PATH>`**
 
-  Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory.
+  Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory. The `-p` abbreviation for `--project` is deprecated starting in .NET 6 Preview SDK.
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 

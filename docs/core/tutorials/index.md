@@ -3,6 +3,7 @@ title: .NET Tutorials
 description: Follow tutorials for learning .NET to build apps and libraries on Mac, Linux, and Windows.
 author: tdykstra
 ms.date: 12/07/2020
+no-loc: [Visual Studio]
 titleSuffix: ""
 ---
 # Learn .NET and the .NET SDK tools by exploring these tutorials

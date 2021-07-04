@@ -64,12 +64,18 @@ Consider the following factors when choosing between `JsonDocument` and `JsonNod
 
 The following example shows how to use `JsonNode` and the other types in the `System.Text.Json.Nodes` namespace to:
 
-* Create a DOM from a JSON string or from an object.
+* Create a DOM from a JSON string
 * Write JSON from a DOM.
 * Get a value, object, or array from a DOM.
+
+:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeFromStringExample.cs":::
+
+The following example shows how to:
+
+* Create a DOM by using object initializers.
 * Make changes to a DOM.
 
-:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeExample.cs":::
+:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeFromObjectExample.cs":::
 
 The following example shows how to navigate to a subsection of a JSON tree and deserialize a custom type or read an array from that subsection.
 

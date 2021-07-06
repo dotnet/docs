@@ -12,5 +12,5 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'It looks like this PR may be opened on live branch by mistake. Unless this is a merge from main to live, PRs should normally be opened on main branch.'
+              body: 'It looks like this pull request may have been opened on the `live` branch by mistake. Unless this is a merge from `main` to `live`, PRs should be opened targeting the `main` branch.'
             })

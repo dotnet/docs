@@ -33,11 +33,6 @@ namespace arrays
             Fri
             Sat
             */
-
-            //The code below will throw a IndexOutOfRangeException
-            //because is trying to invoke a not existent index
-
-            //Console.WriteLine(weekDays2[7]);
             //</RetrevingDataArray>
         }
     }

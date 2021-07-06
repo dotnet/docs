@@ -2,7 +2,7 @@ on: [pull_request_target]
 
 jobs:
   comment:
-    if: ${{ github.event.issue.user.login != 'cxwtool' && github.ref == 'refs/heads/live' }}
+    if: ${{ github.base_ref == 'refs/heads/live' && !(github.event.issue.user.login == 'cxwtool' || github.head_ref == 'refs/heads/main') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/github-script@v4

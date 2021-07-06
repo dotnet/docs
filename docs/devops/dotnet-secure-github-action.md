@@ -3,7 +3,7 @@ title: Create a security scan GitHub Action
 description: In this quickstart, you will learn how to create a CodeQL GitHub Action to automate the discovery of vulnerabilities in your .NET codebase.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/01/2021
+ms.date: 07/06/2021
 ms.topic: quickstart
 recommendations: false
 ---
@@ -18,24 +18,24 @@ In this quickstart, you will learn how to create a CodeQL GitHub Action to autom
 
 Create a new file named *codeql-analysis.yml*, copy and paste the following YML contents into it:
 
-:::code language="yml" source="snippets/secure-action/codeql-analysis.yml":::
+:::code language="yml" source="snippets/dotnet-secure-github-action/codeql-analysis.yml":::
 
 In the preceding workflow composition:
 
 - The `name: CodeQL` defines the name, "CodeQL" will appear in workflow status badges.
 
-  :::code language="yml" source="snippets/secure-action/codeql-analysis.yml" range="1":::
+  :::code language="yml" source="snippets/dotnet-secure-github-action/codeql-analysis.yml" range="1":::
 
 - The `on` node signifies the events that trigger the workflow:
 
-  :::code language="yml" source="snippets/secure-action/codeql-analysis.yml" range="3-15":::
+  :::code language="yml" source="snippets/dotnet-secure-github-action/codeql-analysis.yml" range="3-15":::
 
   - Triggered when a `push` or `pull_quest` occurs on the `main` branch where any files changed ending with the *.cs* or *.csproj* file extensions.
   - As a cron job (on a schedule) &mdash; runs at 8:00 UTC every Thursday.
 
 - The `jobs` node builds out the steps for the workflow to take.
 
-  :::code language="yml" source="snippets/secure-action/codeql-analysis.yml" range="17-46" highlight="2,10,22-24,27,30":::
+  :::code language="yml" source="snippets/dotnet-secure-github-action/codeql-analysis.yml" range="17-46" highlight="2,10,22-24,27,30":::
 
   - There is a single job, named `analyze` that will run on the latest version of Ubuntu.
   - The `strategy` defines C# as the `language`.

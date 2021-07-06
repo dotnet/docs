@@ -3,7 +3,7 @@ title: Create a test validation GitHub Action
 description: In this quickstart, you will learn how to create a GitHub Action to test your .NET source code.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/01/2021
+ms.date: 07/06/2021
 ms.topic: quickstart
 recommendations: false
 ---
@@ -18,29 +18,29 @@ In this quickstart, you will learn how to create a GitHub Action to test your .N
 
 Create a new file named *build-and-test.yml*, copy and paste the following YML contents into it:
 
-:::code language="yml" source="snippets/test-action/build-and-test.yml":::
+:::code language="yml" source="snippets/dotnet-test-github-action/build-and-test.yml":::
 
 In the preceding workflow composition:
 
 - The `name: build and test` defines the name, "build and test" will appear in workflow status badges.
 
-  :::code language="yml" source="snippets/test-action/build-and-test.yml" range="1":::
+  :::code language="yml" source="snippets/dotnet-test-github-action/build-and-test.yml" range="1":::
 
 - The `on` node signifies the events that trigger the workflow:
 
-  :::code language="yml" source="snippets/test-action/build-and-test.yml" range="3-9":::
+  :::code language="yml" source="snippets/dotnet-test-github-action/build-and-test.yml" range="3-9":::
 
   - Triggered when a `push` or `pull_quest` occurs on the `main` branch where any files changed ending with the *.cs* or *.csproj* file extensions.
 
 - The `env` node defines named environment variables (env var).
 
-  :::code language="yml" source="snippets/test-action/build-and-test.yml" range="11-12":::
+  :::code language="yml" source="snippets/dotnet-test-github-action/build-and-test.yml" range="11-12":::
 
   - The environment variable `DOTNET_VERSION` is assigned the value `'5.0.301'`. The environment variable is later referenced to specify the `dotnet-version` of the `actions/setup-dotnet@v1` GitHub Action.
 
 - The `jobs` node builds out the steps for the workflow to take.
 
-  :::code language="yml" source="snippets/test-action/build-and-test.yml" range="14-37" highlight="2,4-8,13-15,18,21,24":::
+  :::code language="yml" source="snippets/dotnet-test-github-action/build-and-test.yml" range="14-37" highlight="2,4-8,13-15,18,21,24":::
 
   - There is a single job, named `build-<os>` where the `<os>` is the operating system name from the `strategy/matrix`. The `name` and `runs-on` elements are dynamic for each value in the `matrix/os`. This will run on the latest versions of Ubuntu, Windows, and macOS.
   - The `actions/setup-dotnet@v1` GitHub Action is used to setup the .NET SDK with the specified version from the `DOTNET_VERSION` environment variable.

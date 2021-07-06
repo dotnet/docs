@@ -3,7 +3,7 @@ title: Create a publish app GitHub Action
 description: In this quickstart, you will learn how to create a GitHub Action to publish your .NET source code.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/01/2021
+ms.date: 07/06/2021
 ms.topic: quickstart
 recommendations: false
 ---
@@ -39,23 +39,23 @@ Enter `AZURE_PUBLISH_PROFILE` as the **Name**, and paste the XML content from th
 
 Create a new file named *publish-app.yml*, copy and paste the following YML contents into it:
 
-:::code language="yml" source="snippets/publish-action/publish-app.yml":::
+:::code language="yml" source="snippets/dotnet-publish-github-action/publish-app.yml":::
 
 In the preceding workflow composition:
 
 - The `name: publish` defines the name, "publish" will appear in workflow status badges.
 
-  :::code language="yml" source="snippets/publish-action/publish-app.yml" range="1":::
+  :::code language="yml" source="snippets/dotnet-publish-github-action/publish-app.yml" range="1":::
 
 - The `on` node signifies the events that trigger the workflow:
 
-  :::code language="yml" source="snippets/publish-action/publish-app.yml" range="3-5":::
+  :::code language="yml" source="snippets/dotnet-publish-github-action/publish-app.yml" range="3-5":::
 
   - Triggered when a `push` occurs on the `production` branch.
 
 - The `env` node defines named environment variables (env var).
 
-  :::code language="yml" source="snippets/publish-action/publish-app.yml" range="7-10":::
+  :::code language="yml" source="snippets/dotnet-publish-github-action/publish-app.yml" range="7-10":::
 
   - The environment variable `AZURE_WEBAPP_NAME` is assigned the value `DotNetWeb`.
   - The environment variable `AZURE_WEBAPP_PACKAGE_PATH` is assigned the value `'.'`.
@@ -63,7 +63,7 @@ In the preceding workflow composition:
 
 - The `jobs` node builds out the steps for the workflow to take.
 
-  :::code language="yml" source="snippets/publish-action/publish-app.yml" range="12-42" highlight="2,4,9-11,14,19-20,24,26-31":::
+  :::code language="yml" source="snippets/dotnet-publish-github-action/publish-app.yml" range="12-42" highlight="2,4,9-11,14,19-20,24,26-31":::
 
   - There is a single job, named `publish` that will run on the latest version of Ubuntu.
   - The `actions/setup-dotnet@v1` GitHub Action is used to setup the .NET SDK with the specified version from the `DOTNET_VERSION` environment variable.

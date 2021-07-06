@@ -33,6 +33,12 @@ An array has the following properties:
 - Array elements can be of any type, including an array type.
 - Array types are [reference types](../../language-reference/keywords/reference-types.md) derived from the abstract base type <xref:System.Array>. All arrays implement <xref:System.Collections.IList>, and <xref:System.Collections.IEnumerable>.  You can use [foreach](../../language-reference/statements/iteration-statements.md#the-foreach-statement) iteration arrays in C# .  Since single-dimension arrays also implement <xref:System.Collections.Generic.IList%601>,  and <xref:System.Collections.Generic.IEnumerable%601>.
 
+### Default value behaviour
+
+- For value types, the array elements are initialized with the default value, the 0-bit pattern, i.e., the elements will have value `0`.
+- All the reference types(including the [non-nullable](../../nullable-references.md#known-pitfalls)), have the values `null`.
+- For nullable value types, `HasValue` is set to `false` and the elements would be set to `null`.
+
 ### Arrays as Objects
 
 In C#, arrays are actually objects, and not just addressable regions of contiguous memory as in C and C++. <xref:System.Array> is the abstract base type of all array types. You can use the properties and other class members that <xref:System.Array> has. An example of this is using the <xref:System.Array.Length%2A> property to get the length of an array. The following code assigns the length of the `numbers` array, which is `5`, to a variable called `lengthOfNumbers`:

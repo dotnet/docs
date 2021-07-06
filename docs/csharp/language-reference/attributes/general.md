@@ -45,7 +45,7 @@ The string provided as the first argument to the attribute constructor will be d
 
 In C# 10, you can use constant string interpolation and the `nameof` operator to ensure the names match:
 
-:::code language="csharp" source="snippets/ObsoleteExample.cs" ID="Snippet2" :::
+:::code language="csharp" source="snippets/ObsoleteExample.cs" id="Snippet2" :::
 
 ## `AttributeUsage` attribute
 

@@ -45,6 +45,7 @@ The following versions of .NET are no longer supported. The downloads for these 
 ```bash
 wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]

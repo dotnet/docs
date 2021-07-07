@@ -94,8 +94,8 @@ The following Windows versions are supported with .NET 5.0:
 |---------------------|---------------|-----------------|
 | Windows 10 Client   | Version 1607+ | x64, x86, ARM64 |
 | Windows Client      | 7 SP1+, 8.1   | x64, x86        |
-| Windows Server      | 2012 +        | x64, x86        |
-| Windows Server Core | 2012 +        | x64, x86        |
+| Windows Server      | 2012+         | x64, x86        |
+| Windows Server Core | 2012+         | x64, x86        |
 | Nano Server         | Version 1809+ | x64             |
 
 For more information about .NET 5.0 supported operating systems, distributions, and lifecycle policy, see [.NET 5.0 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md).

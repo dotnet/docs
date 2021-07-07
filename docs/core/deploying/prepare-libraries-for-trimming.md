@@ -30,7 +30,7 @@ Ensure you are using the .NET 6 SDK for these steps. They will not work correctl
 
 Set `<IsTrimmable>true</IsTrimmable>` (in .NET 6+) in your library project. This will mark your assembly as "trimmable". Being trimmable means when your library is used in a trimmed application the assembly can have its unused members trimmed in the final output.
 
-Setting `<IsTrimmable>true</IsTrimmable>` enables a Roslyn analyzer for trim compatibility. The Roslyn analyzer is useful for quick feedback in your IDE, but it's currently incomplete. It doesn't cover all trim analysis warnings, but the set of patterns it understands will improve over time to give more complete coverage. The Roslyn analyzer also isn't able to analyze the implementations of reference assemblies that you depend on. It's important to follow the next steps to ensure that your library is fully compatible with trimming.
+Setting `<IsTrimmable>true</IsTrimmable>` enables a Roslyn analyzer for trim compatibility. The Roslyn analyzer is useful for quick feedback in your IDE, but it's currently incomplete. It doesn't cover all trim analysis warnings, but the set of patterns it understands will improve over time to give more complete coverage. The Roslyn analyzer also isn't able to analyze the implementations of reference assemblies that you depend on. It's important to follow the steps outlined in the rest of this article to ensure that your library is fully compatible with trimming.
 
 Alternatively, you can just set `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` (in .NET 6+) in your library project. This will not have any effect on the output, but it will enable trim analysis during build via the Roslyn analyzer.
 

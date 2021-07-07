@@ -256,7 +256,7 @@ Two projects are created as a result of the training process.
     ```
 
     > [!NOTE]
-    > (Optional) The bounding box coordinates are normalized for a width of 800 pixels and a height of 600 pixels. To scale the bounding box coordinates for your image in further post-processing, you need to:
+    > **(Optional)** The bounding box coordinates are normalized for a width of 800 pixels and a height of 600 pixels. To scale the bounding box coordinates for your image in further post-processing, you need to:
     >
     >    1. Multiply the top and bottom coordinates by the original image height, and multiply the left and right coordinates by the original image width.
     >    1. Divide the top and bottom coordinates by 600, and divide the left and right coordinates by 800.

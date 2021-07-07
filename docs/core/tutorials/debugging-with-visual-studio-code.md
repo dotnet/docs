@@ -42,15 +42,7 @@ The breakpoint is located after a `Console.ReadLine` method call. The **Debug Co
 
 1. Open *.vscode/launch.json*.
 
-1. Change the `console` setting to `integratedTerminal`.
-
-   From:
-
-   ```json
-   "console": "internalConsole",
-   ```
-
-   To:
+1. Change the `console` setting from `internalConsole` to `integratedTerminal`:
 
    ```json
    "console": "integratedTerminal",

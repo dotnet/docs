@@ -253,7 +253,7 @@ The <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?di
 
 - Unescaped white space in the regular expression pattern is ignored. To be part of a regular expression pattern, white-space characters must be escaped (for example, as `\s` or "`\` ").
 
-- The number sign (#) is interpreted as the beginning of a comment, rather than as a literal character. All text in the regular expression pattern from the # character to the end of the string is interpreted as a comment.
+- The number sign (#) is interpreted as the beginning of a comment, rather than as a literal character. All text in the regular expression pattern from the `#` character to either the next `\n` character or to the end of the string, is interpreted as a comment.
 
 However, in the following cases, white-space characters in a regular expression aren't ignored, even if you use the <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType> option:
 

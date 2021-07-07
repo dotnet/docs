@@ -35,7 +35,7 @@ An array has the following properties:
 
 ### Default value behaviour
 
-- For value types, the array elements are initialized with the default value, the 0-bit pattern, i.e., the elements will have value `0`.
+- For value types, the array elements are initialized with the default value, the 0-bit pattern; the elements will have the value `0`.
 - All the reference types(including the [non-nullable](../../nullable-references.md#known-pitfalls)), have the values `null`.
 - For nullable value types, `HasValue` is set to `false` and the elements would be set to `null`.
 

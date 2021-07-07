@@ -81,7 +81,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Allow single quotes around string values              | ❌ [Not supported](#json-strings-property-names-and-string-values) |
 | Allow non-string JSON values for string properties    | ❌ [Not supported](#non-string-values-for-string-properties) |
 | `TypeNameHandling.All` global setting                 | ❌ [Not supported](#typenamehandlingall-not-supported) |
-| Support for `JsonPath` queries                        | ❌ [Not supported](#jsonpath-not-supported) |
+| Support for `JsonPath` queries                        | ❌ [Not supported](#jsonpath-queries-not-supported) |
 ::: zone-end
 
 ::: zone pivot="dotnet-5-0"
@@ -125,7 +125,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Allow single quotes around string values              | ❌ [Not supported](#json-strings-property-names-and-string-values) |
 | Allow non-string JSON values for string properties    | ❌ [Not supported](#non-string-values-for-string-properties) |
 | `TypeNameHandling.All` global setting                 | ❌ [Not supported](#typenamehandlingall-not-supported) |
-| Support for `JsonPath` queries                        | ❌ [Not supported](#jsonpath-not-supported) |
+| Support for `JsonPath` queries                        | ❌ [Not supported](#jsonpath-queries-not-supported) |
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -169,7 +169,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Allow single quotes around string values              | ❌ [Not supported](#json-strings-property-names-and-string-values) |
 | Allow non-string JSON values for string properties    | ❌ [Not supported](#non-string-values-for-string-properties) |
 | `TypeNameHandling.All` global setting                 | ❌ [Not supported](#typenamehandlingall-not-supported) |
-| Support for `JsonPath` queries                        | ❌ [Not supported](#jsonpath-not-supported) |
+| Support for `JsonPath` queries                        | ❌ [Not supported](#jsonpath-queries-not-supported) |
 ::: zone-end
 
 This is not an exhaustive list of `Newtonsoft.Json` features. The list includes many of the scenarios that have been requested in [GitHub issues](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json) or [StackOverflow](https://stackoverflow.com/questions/tagged/system.text.json) posts. If you implement a workaround for one of the scenarios listed here that doesn't currently have sample code, and if you want to share your solution, select **This page** in the **Feedback** section at the bottom of this page. That creates an issue in this documentation's GitHub repo and lists it in the **Feedback** section on this page too.

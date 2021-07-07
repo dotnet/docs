@@ -1,7 +1,7 @@
 ---
 title: "Arrays - C# Programming Guide"
 description: Store multiple variables of the same type in an array data structure in C#. Declare an array by specifying a type or specify Object to store any type.
-ms.date: 01/22/2021
+ms.date: 07/07/2021
 helpviewer_keywords:
   - "arrays [C#]"
   - "C# language, arrays"

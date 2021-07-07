@@ -256,12 +256,12 @@ Two projects are created as a result of the training process.
     ```
 
     > [!NOTE]
-    > The bounding box coordinates are normalized for a width of 800 pixels and height of 600 pixels. To scale the coordinates for your image, you need to:
+    > (Optional) The bounding box coordinates are normalized for a width of 800 pixels and a height of 600 pixels. To scale the bounding box coordinates for your image in further post-processing, you need to:
     >
-    >    1. Multiply top and bottom coordinates by the original image height, and multiply left and right coordinates by the original image width.
-    >    1. Divide top and bottom coordinates by 600, and divide left and right coordinates by 800.
+    >    1. Multiply the top and bottom coordinates by the original image height, and multiply the left and right coordinates by the original image width.
+    >    1. Divide the top and bottom coordinates by 600, and divide the left and right coordinates by 800.
     >
-    >    For example, given the original image dimensions,`actualImageHeight` and `actualImageWidth`, and a prediction `prediction` with bounding box coordinates, the following code snippet shows how to scale the bounding box dimensions:
+    >    For example, given the original image dimensions,`actualImageHeight` and `actualImageWidth`, and a `ModelOutput` called `prediction`, the following code snippet shows how to scale the `BoundingBox` coordinates:
     >
     >    ```csharp
     >    var top = originalImageHeight * prediction.Top / 600;
@@ -269,6 +269,8 @@ Two projects are created as a result of the training process.
     >    var left = originalImageWidth * prediction.Left / 800;
     >    var right = originalImageWidth * prediction.Right / 800;
     >    ```
+    >
+    > An image may have more than one bounding box, so the same process needs to be applied to each of the bounding boxes in the image.
 
 Congratulations! You've successfully built a machine learning model to detect stop signs in images using Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/modelbuilder/ObjectDetection_StopSigns) GitHub repository.
 

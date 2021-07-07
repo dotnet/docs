@@ -91,7 +91,7 @@ The following counters are published by the HTTP stack.
 | :::no-loc text="Requests Failed"::: (`requests-failed`) | The number of failed requests since the process started | .NET 5 |
 | :::no-loc text="Requests Failed Rate"::: (`requests-failed-rate`) | The number of failed requests per update interval | .NET 5 |
 | :::no-loc text="Current Requests"::: (`current-requests`) | Current number of active HTTP requests that have started but not yet completed or failed | .NET 5 |
-| :::no-loc text="Current HTTP 1.1 Connections"::: (`http11-connections-current-total) | The current number of HTTP 1.1 connections that have started but not yet completed or failed | .NET 5 |
+| :::no-loc text="Current HTTP 1.1 Connections"::: (`http11-connections-current-total`) | The current number of HTTP 1.1 connections that have started but not yet completed or failed | .NET 5 |
 | :::no-loc text="Current HTTP 2.0 Connections"::: (`http20-connections-current-total`) | The current number of HTTP 2.0 connections that have started but not yet completed or failed | .NET 5 |
 | :::no-loc text="HTTP 1.1 Requests Queue Duration"::: (`http11-requests-queue-duration`) | The average duration of the time HTTP 1.1 requests spent in the request queue | .NET 5 |
 | :::no-loc text="HTTP 2.0 Requests Queue Duration"::: (`http20-requests-queue-duration`) | The average duration of the time HTTP 2.0 requests spent in the request queue | .NET 5 |

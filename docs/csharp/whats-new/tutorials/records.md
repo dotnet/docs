@@ -1,7 +1,7 @@
 ---
 title: Use record types - C# tutorial
 description: Learn about how to use record types, build hierarchies of records, and when to choose records over classes.
-ms.date: 11/12/2020
+ms.date: 07/01/2021
 ---
 # Create record types
 
@@ -124,6 +124,8 @@ You declare a `PrintMembers` method in the `DegreeDays` record that doesn't prin
 :::code language="csharp" source="snippets/record-types/DegreeDays.cs" ID="AddPrintMembers":::
 
 The signature declares a `virtual protected` method to match the compiler's version. Don't worry if you get the accessors wrong; the language enforces the correct signature. If you forget the correct modifiers for any synthesized method, the compiler issues warnings or errors that help you get the right signature.
+
+In C# 10.0 and later, you can declare the `ToString` method as `sealed` in a record type. That prevents derived records from providing a new implementation. Derived records will still contain the `PrintMembers` override. You would do this if you didn't want the `ToString` method to display the runtime type of the record. In the preceding example, you'd lose the information on where the record was measuring heating or cooling degree days.
 
 ## Non-destructive mutation
 

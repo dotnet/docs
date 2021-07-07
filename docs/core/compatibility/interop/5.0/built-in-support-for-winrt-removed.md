@@ -34,6 +34,8 @@ This breaking change was made for the following reasons:
 
 - Use the [C#/WinRT](/windows/uwp/csharp-winrt/) tool chain to generate or customize WinRT APIs and types for .NET 5 and later versions.
 
+For more information, see [Call Windows Runtime APIs in desktop apps](/windows/apps/desktop/modernize/desktop-to-uwp-enhance).
+
 ## Affected APIs
 
 - <xref:System.IO.WindowsRuntimeStorageExtensions?displayProperty=fullName>

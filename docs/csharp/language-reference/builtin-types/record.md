@@ -1,7 +1,7 @@
 ---
 title: "Records - C# reference"
 description: Learn about the record type in C#
-ms.date: 02/25/2021
+ms.date: 07/01/2021
 f1_keywords: 
   - "record_CSharpKeyword"
 helpviewer_keywords: 
@@ -136,7 +136,7 @@ The `ToString` override creates a <xref:System.Text.StringBuilder> object with t
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="ToStringOverrideDefault":::
 
-You can provide your own implementation of `PrintMembers` or the `ToString` override. Examples are provided in the [`PrintMembers` formatting in derived records](#printmembers-formatting-in-derived-records) section later in this article.
+You can provide your own implementation of `PrintMembers` or the `ToString` override. Examples are provided in the [`PrintMembers` formatting in derived records](#printmembers-formatting-in-derived-records) section later in this article. In C# 10 and later, your implementation of `ToString` may include the `sealed` modifier, which prevents the compiler from synthesizing a `ToString` implementation for any derived records. Effectively, that means the `ToString` output will not include the runtime type information. (All members and values are displayed, because derived records will still have a PrintMembers method generated.)
 
 ## Inheritance
 
@@ -184,6 +184,9 @@ You can provide your own implementation of the `PrintMembers` method. If you do 
 Here is an example of code that replaces the synthesized `PrintMembers` methods, one for a record type that derives from object, and one for a record type that derives from another record:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PrintMembersImplementation":::
+
+> [!NOTE]
+> In C# 10.0 and later, the compiler will synthesize `PrintMembers` when a base record has sealed the `ToString` method. You can also create your own implementation of `PrintMembers`.
 
 ### Deconstructor behavior in derived records
 

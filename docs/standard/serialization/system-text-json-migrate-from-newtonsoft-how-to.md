@@ -895,7 +895,7 @@ The decision to exclude `TypeNameHandling.All`-equivalent functionality from `Sy
 
 ## JSON Path queries not supported
 
-The `JsonDocument` DOM doesn't support querying by using [JSON Path](https://www.newtonsoft.com/json/help/html/QueryJsonSelectToken.htm).
+The `JsonDocument` DOM doesn't support querying by using [JSON Path](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm).
 
 ::: zone pivot="dotnet-6-0"
 In a `JsonNode` DOM, each `JsonNode` instance has a `GetPath` method that returns a path to that node. But there is no built-in API to handle queries based on JSON Path query strings.

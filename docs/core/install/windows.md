@@ -42,8 +42,9 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 | Windows 10, Version 1607    | ✔️           | ✔️            | ✔️    |
 | Windows 8.1                 | ✔️           | ✔️            | ✔️    |
 | Windows 7 SP1 [ESU][esu]    | ✔️           | ✔️            | ✔️    |
-| Windows Server 2019<br>Windows Server 2016<br>Windows Server 2012 R2<br>      | ✔️           | ✔️            | ✔️    |
+| Windows Server 2019<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012| ✔️           | ✔️            | ✔️    |
 | Windows Server Core 2012 R2 | ✔️           | ✔️            | ✔️    |
+| Windows Server Core 2012    | ✔️           | ✔️            | ✔️    |
 | Nano Server, Version 1809+  | ✔️           | ✔️            | ✔️    |
 | Nano Server, Version 1803   | ✔️           | ✔️            | ❌    |
 
@@ -93,8 +94,8 @@ The following Windows versions are supported with .NET 5.0:
 |---------------------|---------------|-----------------|
 | Windows 10 Client   | Version 1607+ | x64, x86, ARM64 |
 | Windows Client      | 7 SP1+, 8.1   | x64, x86        |
-| Windows Server      | 2012 R2+      | x64, x86        |
-| Windows Server Core | 2012 R2+      | x64, x86        |
+| Windows Server      | 2012+         | x64, x86        |
+| Windows Server Core | 2012+         | x64, x86        |
 | Nano Server         | Version 1809+ | x64             |
 
 For more information about .NET 5.0 supported operating systems, distributions, and lifecycle policy, see [.NET 5.0 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md).
@@ -110,7 +111,7 @@ The following Windows versions are supported with .NET Core 3.1:
 | ----------------------------- | ------------------------------ | --------------- |
 | Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
 | Windows 10 Client             | Version 1607+                  | x64, x86        |
-| Windows Server                | 2012 R2+                       | x64, x86        |
+| Windows Server                | 2012+                          | x64, x86        |
 | Nano Server                   | Version 1803+                  | x64, ARM32      |
 
 For more information about .NET Core 3.1 supported operating systems, distributions, and lifecycle policy, see [.NET Core 3.1 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md).
@@ -193,6 +194,7 @@ More dependencies are required if you're installing the .NET SDK or runtime on t
 | Windows Vista SP 2       | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |
 | Windows 8.1              | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |
 | Windows Server 2008 R2   | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |
+| Windows Server 2012      | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |
 | Windows Server 2012 R2   | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |
 
 The previous requirements are also required if you receive an error related to either of the following dlls:

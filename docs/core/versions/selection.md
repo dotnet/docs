@@ -51,7 +51,7 @@ The process for selecting an SDK version is:
 01. `dotnet` uses the SDK specified in the first *global.json* found.
 01. `dotnet` uses the latest installed SDK if no *global.json* is found.
 
-For more information about SDK version selection, seethe [Matching rules](../tools/global-json.md#matching-rules) and [rollForward](../tools/global-json.md#rollforward) sections of the [global.json overview](../tools/global-json.md) article.
+For more information about SDK version selection, see the [Matching rules](../tools/global-json.md#matching-rules) and [rollForward](../tools/global-json.md#rollforward) sections of the [global.json overview](../tools/global-json.md) article.
 
 ## Target Framework Monikers define build time APIs
 
@@ -100,7 +100,7 @@ It's possible that 5.0.3 and 5.1.0 behave differently, particularly for scenario
 
 ### Control roll-forward behavior
 
-The roll-forward behavior for an application, can be configured in four different ways:
+The roll-forward behavior for an application can be configured in four different ways:
 
 01. Project-level setting by setting the `<RollForward>` property:
 
@@ -144,7 +144,7 @@ The roll-forward behavior for an application, can be configured in four differen
 Roll forward behavior is considered in the following order:
 
 01. `*.runtimeconfig.json` config file.
-01. The `DOTNET_ROLL_FORWARD` environment setting.
+01. The `DOTNET_ROLL_FORWARD` environment variable.
 01. Any `--roll-forward` parameter passed to the running application.
 
 ### Values

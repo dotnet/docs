@@ -334,7 +334,7 @@ For more information, see [Razor SDK properties](/aspnet/core/razor-pages/sdk#pr
 
 ### RollForward
 
-The `RollForward` property controls the how the application chooses a different runtime when the targetted runtime is unavailable. This value is output to the *.runtimeconfig.json* as the `rollForward` setting.
+The `RollForward` property controls how the application chooses a runtime when multiple runtime versions are available. This value is output to the *.runtimeconfig.json* as the `rollForward` setting.
 
 ```xml
 <PropertyGroup>
@@ -347,7 +347,7 @@ Set `RollForward` to one of the following values:
 | Value         | Description                                                                                                                                                               |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `LatestPatch` | Roll-forward to the highest patch version. This value disables minor version roll-forward.                                                                                      |
-| `Minor`       | Roll-forward to the lowest higher minor version, if requested minor version is missing. If the requested minor version is present, then the `LatestPatch` policy is used. |
+| `Minor`       | **Default** Roll-forward to the lowest higher minor version, if requested minor version is missing. If the requested minor version is present, then the `LatestPatch` policy is used. |
 | `Major`       | Roll-forward to the next available higher major version, and lowest minor version, if requested major version is missing. If the requested major version is present, then the `Minor` policy is used. |
 | `LatestMinor` | Roll-forward to highest minor version, even if requested minor version is present.                                                                                        |
 | `LatestMajor` | Roll-forward to highest major and highest minor version, even if requested major is present.                                                                              |
@@ -365,7 +365,7 @@ The `RuntimeFrameworkVersion` property specifies the version of the runtime to u
 </PropertyGroup>
 ```
 
-When publishing a framework-dependent application, this value specifies the minimum version required. When publishing a self-contained application, this value specifies the *exact* version required.
+When publishing a framework-dependent application, this value specifies the *minimum* version required. When publishing a self-contained application, this value specifies the *exact* version required.
 
 ### RuntimeIdentifier
 

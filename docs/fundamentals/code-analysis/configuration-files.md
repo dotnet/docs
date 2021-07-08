@@ -86,8 +86,8 @@ Unlike EditorConfig files, which must be named `.editorconfig`, global config fi
 
 Consider the following naming recommendations:
 
-- End users should name their global config files *.globalconfig*.
-- NuGet packages creators should name their global config files *<%Package_Name%>.globalconfig*.
+- End users should name their global configuration files *.globalconfig*.
+- NuGet package creators should name their global config files *\<%Package_Name%>.globalconfig*.
 - MSBuild tooling-generated global config files should be named *<%Target_Name%>_Generated.globalconfig* or similar.
 
 > [!NOTE]
@@ -129,11 +129,11 @@ Both EditorConfig files and global AnalyzerConfig files specify a key-value pair
 
 For [severity configuration](configuration-options.md#severity-level) options, the following *additional* precedence rules apply:
 
-- Severity options specified at the command line as compiler options (`/nowarn` or `/warnaserror`) always override [severity configuration](configuration-options.md#severity-level) options specified in EditorConfig and global AnalyzerConfig files.
+- Severity options specified at the command line as compiler options (`-nowarn` or `-warnaserror`) always override [severity configuration](configuration-options.md#severity-level) options specified in EditorConfig and global AnalyzerConfig files.
 
 - The precedence rules for conflicting severity entries from a [ruleset file](/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules) and an EditorConfig or global AnalyzerConfig file is _undefined_.
 
-  > Ruleset files are deprecated in favor of EditorConfig and global AnalyzerConfig files. It's recommended that you [convert ruleset files to an equivalent EditorConfig file](/visualstudio/code-quality/use-roslyn-analyzers#convert-an-existing-ruleset-file-to-editorconfig-file).
+  > Ruleset files are deprecated in favor of EditorConfig and global AnalyzerConfig files. We recommend that you [convert ruleset files to an equivalent EditorConfig file](/visualstudio/code-quality/use-roslyn-analyzers#convert-an-existing-ruleset-file-to-editorconfig-file).
 
 - For information about precedence rules for related severity options with different keys, for example, when different severities are specified for a single rule and for the category that rule falls under, see [Configuration options for code analysis](configuration-options.md#precedence).
 

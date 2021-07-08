@@ -34,10 +34,10 @@ assignees: ''
 
 ### Category
 
-<!-- Choose one of the following compatibility categories: -->
+<!-- Choose one of the following compatibility categories that this change affects: -->
 
-- [ ] Binary compatibility (the newer version can be used without recompiling)
-- [ ] Source compatibility (successfully recompiling against newer version requires source changes)
+- [ ] Binary compatibility (code must be recompiled to use the newer API version)
+- [ ] Source compatibility (successfully recompiling against the newer API version requires source changes)
 
 ### Reason for change
 

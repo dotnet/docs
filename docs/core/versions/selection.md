@@ -137,7 +137,7 @@ The roll-forward behavior for an application can be configured in four different
     myapp.exe --roll-forward LatestMinor
     ```
 
-04. The `DOTNET_ROLL_FORWARD` environment setting.
+04. The `DOTNET_ROLL_FORWARD` environment variable.
 
 ### Precedence
 

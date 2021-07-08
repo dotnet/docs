@@ -253,6 +253,8 @@ The following MSBuild properties are documented in this section:
 - [IsPublishable](#ispublishable)
 - [PreserveCompilationContext](#preservecompilationcontext)
 - [PreserveCompilationReferences](#preservecompilationreferences)
+- [RollForward](#rollforward)
+- [RuntimeFrameworkVersion](#runtimeframeworkversion)
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
 - [UseAppHost](#useapphost)
@@ -329,6 +331,41 @@ The `PreserveCompilationReferences` property is similar to the [PreserveCompilat
 ```
 
 For more information, see [Razor SDK properties](/aspnet/core/razor-pages/sdk#properties).
+
+### RollForward
+
+The `RollForward` property controls the how the application chooses a different runtime when the targetted runtime is unavailable. This value is output to the *.runtimeconfig.json* as the `rollForward` setting.
+
+```xml
+<PropertyGroup>
+  <RollForward>LatestMinor</RollForward>
+</PropertyGroup>
+```
+
+Set `RollForward` to one of the following values:
+
+| Value         | Description                                                                                                                                                               |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `LatestPatch` | Roll-forward to the highest patch version. This value disables minor version roll-forward.                                                                                      |
+| `Minor`       | Roll-forward to the lowest higher minor version, if requested minor version is missing. If the requested minor version is present, then the `LatestPatch` policy is used. |
+| `Major`       | Roll-forward to the next available higher major version, and lowest minor version, if requested major version is missing. If the requested major version is present, then the `Minor` policy is used. |
+| `LatestMinor` | Roll-forward to highest minor version, even if requested minor version is present.                                                                                        |
+| `LatestMajor` | Roll-forward to highest major and highest minor version, even if requested major is present.                                                                              |
+| `Disable`     | Don't roll-forward, only bind to the specified version. This policy isn't recommended for general use since it disables the ability to roll-forward to the latest patches. This value is only recommended for testing. |
+
+For more information, see [Control roll-forward behavior](../versions/selection.md#control-roll-forward-behavior).
+
+### RuntimeFrameworkVersion
+
+The `RuntimeFrameworkVersion` property specifies the version of the runtime to use when publishing. Specify a runtime version:
+
+``` xml
+<PropertyGroup>
+  <RuntimeFrameworkVersion>5.0.7</RuntimeFrameworkVersion>
+</PropertyGroup>
+```
+
+When publishing a framework-dependent application, this value specifies the minimum version required. When publishing a self-contained application, this value specifies the *exact* version required.
 
 ### RuntimeIdentifier
 
@@ -783,7 +820,7 @@ For more information, see [Expose .NET components to COM](../native-interop/expo
 The `EnableDynamicLoading` property indicates that an assembly is a dynamically loaded component. The component could be a [COM library](/windows/win32/com/the-component-object-model) or a non-COM library that can be [used from a native host](../tutorials/netcore-hosting.md). Setting this property to `true` has the following effects:
 
 - A *.runtimeconfig.json* file is generated.
-- [Roll forward](../whats-new/dotnet-core-3-0.md#major-version-runtime-roll-forward) is set to `LatestMinor`.
+- [RollForward](#rollforward) is set to `LatestMinor`.
 - NuGet references are copied locally.
 
 ```xml

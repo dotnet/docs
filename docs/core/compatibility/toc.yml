@@ -89,8 +89,8 @@ items:
           href: networking/6.0/webrequest-deprecated.md
       - name: SDK and MSBuild
         items:
-        - name: Duplicate files removed from publish output
-          href: sdk/6.0/duplicate-files-removed-from-output.md
+        - name: Generate error for duplicate files in publish output
+          href: sdk/6.0/duplicate-files-in-output.md
         - name: GetTargetFrameworkProperties and GetNearestTargetFramework removed
           href: sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md
       - name: Windows Forms
@@ -673,8 +673,8 @@ items:
       items:
       - name: .NET 6
         items:
-        - name: Duplicate files removed from publish output
-          href: sdk/6.0/duplicate-files-removed-from-output.md
+        - name: Generate error for duplicate files in publish output
+          href: sdk/6.0/duplicate-files-in-output.md
         - name: GetTargetFrameworkProperties and GetNearestTargetFramework removed
           href: sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md
       - name: .NET 5

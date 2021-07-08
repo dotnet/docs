@@ -1,9 +1,9 @@
 ---
-title: "Breaking change: Duplicate files removed from publish output"
-description: Learn about the breaking change in .NET 6 where MSBuild tries to remove duplicate files from the publish output.
+title: "Breaking change: Generate error for duplicate files in publish output"
+description: Learn about the breaking change in .NET 6 where the .NET SDK generates an error when files from different source paths would be copied to the same location in the publish output.
 ms.date: 07/07/2021
 ---
-# Duplicate files removed from publish output
+# Generate error for duplicate files in publish output
 
 The .NET SDK generates a new error (`NETSDK1148`) in cases where files from different source paths would be copied to the same file path in the publish output. This can happen when a project and its project references include a file with the same name that's included in the publish output.
 

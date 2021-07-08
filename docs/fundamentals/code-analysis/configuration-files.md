@@ -1,7 +1,7 @@
 ---
 title: Configuration files for code analysis rules
 description: Learn about different configuration files to configure code analysis rules.
-ms.date: 09/24/2020
+ms.date: 07/07/2021
 ms.topic: conceptual
 no-loc: ["EditorConfig"]
 ---
@@ -63,7 +63,7 @@ dotnet_diagnostic.CA1000.severity = warning
 
 Starting with the .NET 5 SDK (which is supported in Visual Studio 2019 version 16.8 and later), you can also configure analyzer options with global _AnalyzerConfig_ files. These files are used to provide **options that apply to all the source files in a project**, regardless of their file names or file paths.
 
-Unlike [EditorConfig](#editorconfig) files, global config files can't be used to configure editor style settings for IDEs, such as indent size or whether to trim trailing whitespace. Instead, they are designed purely for specifying project-level analyzer configuration options.
+Unlike [EditorConfig](#editorconfig) files, global configuration files can't be used to configure editor style settings for IDEs, such as indent size or whether to trim trailing whitespace. Instead, they are designed purely for specifying project-level analyzer configuration options.
 
 ### Format
 
@@ -76,13 +76,19 @@ is_global = true
 
 ### Naming
 
-Unlike EditorConfig files, which must be named `.editorconfig`, global config files do not need to have a specific name or extension. However, if you name these files as `.globalconfig` then they will be implicitly applied to all the C# and Visual Basic projects within the current folder, including subfolders. Otherwise, you must explicitly add the `GlobalAnalyzerConfigFiles` item to your MSBuild project file:
+Unlike EditorConfig files, which must be named `.editorconfig`, global config files do not need to have a specific name or extension. However, if you name these files as `.globalconfig`, then they are implicitly applied to all the C# and Visual Basic projects within the current folder, including subfolders. Otherwise, you must explicitly add the `GlobalAnalyzerConfigFiles` item to your MSBuild project file:
 
 ```xml
 <ItemGroup>
   <GlobalAnalyzerConfigFiles Include="<path_to_global_analyzer_config>" />
 </ItemGroup>
 ```
+
+Consider the following naming recommendations:
+
+- End users should name their global configuration files *.globalconfig*.
+- NuGet package creators should name their global config files *\<%Package_Name%>.globalconfig*.
+- MSBuild tooling-generated global config files should be named *<%Target_Name%>_Generated.globalconfig* or similar.
 
 > [!NOTE]
 > The top-level entry `is_global = true` is required even when the file is named `.globalconfig`.
@@ -110,27 +116,24 @@ dotnet_diagnostic.CA1000.severity = warning
 
 ## Precedence
 
-Both EditorConfig files and global AnalyzerConfig files specify a key-value pair for each option. Conflicts arise when there are multiple entries with the same key but different values.
+Both EditorConfig files and global AnalyzerConfig files specify a key-value pair for each option. Conflicts arise when there are multiple entries with the same key but different values. The following precedence rules are used to resolve conflicts.
 
-### General options
-
-When conflicts arise between options, the following precedence rules are used to resolve the conflicts:
-
-- Conflicting entries in the same configuration file: The entry that appears later in the file wins. This is true for conflicting entries within a single EditorConfig file and also within a single global AnalyzerConfig file.
-
-- Conflicting entries in two EditorConfig files: The entry in the EditorConfig file that's deeper in the file system, and hence has a longer file path, wins.
-
-- Conflicting entries in two global AnalyzerConfig files: A compiler warning is reported and both entries are ignored.
-
-- Conflicting entries in an EditorConfig file and a Global AnalyzerConfig file: The entry in the EditorConfig file wins.
+| Conflicting entry locations | Precedence rule |
+| - | - |
+| In the same configuration file | The entry that appears later in the file wins. This is true for conflicting entries within a single EditorConfig file and also within a single global AnalyzerConfig file. |
+| In two EditorConfig files | The entry in the EditorConfig file that's deeper in the file system, and hence has a longer file path, wins. |
+| In two global AnalyzerConfig files | **.NET 5**: A compiler warning is reported and both entries are ignored.<br/>**.NET 6 and later versions**: The entry from the file with a higher value for `global_level` takes precedence. If `global_level` isn't explicitly defined and the file is named *.globalconfig*, the `global_level` value defaults to `100`; for all other global AnalyzerConfig files, `global_level` defaults to `0`. If the `global_level` values for the configuration files with conflicting entries are equal, a compiler warning is reported and both entries are ignored. |
+| In an EditorConfig file and a Global AnalyzerConfig file | The entry in the EditorConfig file wins. |
 
 ### Severity options
 
-The previous [general precedence rules](#general-options) apply for all options specified in configuration files. For [severity configuration](configuration-options.md#severity-level) options, the following additional precedence rules apply:
+For [severity configuration](configuration-options.md#severity-level) options, the following *additional* precedence rules apply:
 
-- Severity options specified at the command line as compiler options (`/nowarn` or `/warnaserror`) always override [severity configuration](configuration-options.md#severity-level) options specified in EditorConfig and global AnalyzerConfig files.
+- Severity options specified at the command line as compiler options (`-nowarn` or `-warnaserror`) always override [severity configuration](configuration-options.md#severity-level) options specified in EditorConfig and global AnalyzerConfig files.
 
-- Severity options can also be specified with a [Ruleset](/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules) file. However, rulesets files are deprecated in favor of EditorConfig and global AnalyzerConfig files. It's recommended that you [convert ruleset files to an equivalent EditorConfig file](/visualstudio/code-quality/use-roslyn-analyzers#convert-an-existing-ruleset-file-to-editorconfig-file). Precedence for conflicting severity entries from a ruleset file and EditorConfig or global AnalyzerConfig files is _undefined_.
+- The precedence rules for conflicting severity entries from a [ruleset file](/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules) and an EditorConfig or global AnalyzerConfig file is _undefined_.
+
+  > Ruleset files are deprecated in favor of EditorConfig and global AnalyzerConfig files. We recommend that you [convert ruleset files to an equivalent EditorConfig file](/visualstudio/code-quality/use-roslyn-analyzers#convert-an-existing-ruleset-file-to-editorconfig-file).
 
 - For information about precedence rules for related severity options with different keys, for example, when different severities are specified for a single rule and for the category that rule falls under, see [Configuration options for code analysis](configuration-options.md#precedence).
 

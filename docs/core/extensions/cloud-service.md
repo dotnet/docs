@@ -3,7 +3,7 @@ title: Deploy a Worker Service to Azure
 description: Learn how to deploy a .NET Worker Service to Azure.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/18/2021
+ms.date: 07/06/2021
 ms.topic: tutorial
 zone_pivot_groups: development-environment-one
 ---
@@ -175,7 +175,7 @@ az acr login -n <registry name>
 The [`az acr login`](/cli/azure/acr#az_acr_login) command will log in to a container registry through the Docker CLI. To push the image to the container registry, use the [az acr build](/cli/azure/acr#az_acr_build) command with your container registry name as the `<registry name>`:
 
 ```azurecli
-az acr build -r <registry name> .
+az acr build -r <registry name> -t appcloudservice .
 ```
 
 The preceding command:

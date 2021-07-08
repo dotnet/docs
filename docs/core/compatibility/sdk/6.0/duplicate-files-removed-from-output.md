@@ -1,11 +1,11 @@
 ---
 title: "Breaking change: Duplicate files removed from publish output"
 description: Learn about the breaking change in .NET 6 where MSBuild tries to remove duplicate files from the publish output.
-ms.date: 05/19/2021
+ms.date: 07/07/2021
 ---
 # Duplicate files removed from publish output
 
-Duplicate files in the publish output can cause build breaks or unpredictable behavior. The single-file bundler checks for duplicate files and errors if duplicates are found. With this change, MSBuild tries to remove duplicate files that are copied to the publish output folder. If MSBuild can't determine the correct duplicate to remove, it generates error NETSDK1148.
+The .NET SDK generates a new error (`NETSDK1148`) in cases where files from different source paths would be copied to the same file path in the publish output. This can happen when a project and its project references include a file with the same name that's included in the publish output.
 
 ## Version introduced
 
@@ -13,19 +13,29 @@ Duplicate files in the publish output can cause build breaks or unpredictable be
 
 ## Old behavior
 
-MSBuild copied all files, including duplicates, which caused the single-file bundler to error.
+Both files were copied to the same destination. The second file to be copied overwrote the first file, and which file "won" was mostly arbitrary.
+
+In some cases, the build failed. For example, when trying to create a single-file app, the bundler failed with an <xref:System.ArgumentException>, as shown in the following build output:
+
+```shell
+C:\Program Files\dotnet\sdk\5.0.100-preview.5.20258.6\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Publish.targets(962,5): error MSB4018: The "GenerateBundle" task failed unexpectedly. [C:\repro\repro.csproj]
+C:\Program Files\dotnet\sdk\5.0.100-preview.5.20258.6\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Publish.targets(962,5): error MSB4018: System.ArgumentException: Invalid input specification: Found multiple entries with the same BundleRelativePath [C:\repro\repro.csproj]
+C:\Program Files\dotnet\sdk\5.0.100-preview.5.20258.6\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Publish.targets(962,5): error MSB4018: at Microsoft.NET.HostModel.Bundle.Bundler.GenerateBundle(IReadOnlyList`1 fileSpecs) [C:\repro\repro.csproj]
+```
 
 ## New behavior
 
-Starting in .NET 6, MSBuild removes duplicates when it detects identical files. Or, if it can't determine which files to remove, MSBuild generates an error earlier in the process with a friendlier message that tells you which files are duplicated.
+Starting in .NET 6, MSBuild removes duplicate files that are copied to the publish folder if both the source and destination are the same. If there are any remaining duplicates, a `NETSDK1148` error is generated and lists the files that are duplicated.
 
 ## Reason for change
 
-In previous versions, the publish errors weren't helpful because they didn't point to which files were duplicates. For actual duplicates, .NET can remove them automatically.
+Duplicate files in the publish output sometimes caused build breaks or unpredictable behavior.
 
 ## Recommended action
 
-If you don't want the NETSDK1148 error to be generated, you can set the [ErrorOnDuplicatePublishOutputFiles](../../../project-sdk/msbuild-props.md#erroronduplicatepublishoutputfiles) property to `false`.
+Ideally, you should updated your project to avoid situations where multiple files with the same name are copied to the publish output.
+
+Alternatively, you can set the [ErrorOnDuplicatePublishOutputFiles](../../../project-sdk/msbuild-props.md#erroronduplicatepublishoutputfiles) property to `false`.
 
 ## Affected APIs
 

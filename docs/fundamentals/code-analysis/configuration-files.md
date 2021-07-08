@@ -84,14 +84,14 @@ Unlike EditorConfig files, which must be named `.editorconfig`, global config fi
 </ItemGroup>
 ```
 
-> [!NOTE]
-> The top-level entry `is_global = true` is required even when the file is named `.globalconfig`.
-
 Consider the following naming recommendations:
 
 - End users should name their global config files *.globalconfig*.
 - NuGet packages creators should name their global config files *<%Package_Name%>.globalconfig*.
 - MSBuild tooling-generated global config files should be named *<%Target_Name%>_Generated.globalconfig* or similar.
+
+> [!NOTE]
+> The top-level entry `is_global = true` is required even when the file is named `.globalconfig`.
 
 ### Example
 
@@ -116,18 +116,14 @@ dotnet_diagnostic.CA1000.severity = warning
 
 ## Precedence
 
-Both EditorConfig files and global AnalyzerConfig files specify a key-value pair for each option. Conflicts arise when there are multiple entries with the same key but different values. When conflicts arise between options, the following precedence rules are used to resolve the conflicts:
+Both EditorConfig files and global AnalyzerConfig files specify a key-value pair for each option. Conflicts arise when there are multiple entries with the same key but different values. The following precedence rules are used to resolve conflicts.
 
-- Conflicting entries in the same configuration file: The entry that appears later in the file wins. This is true for conflicting entries within a single EditorConfig file and also within a single global AnalyzerConfig file.
-
-- Conflicting entries in two EditorConfig files: The entry in the EditorConfig file that's deeper in the file system, and hence has a longer file path, wins.
-
-- Conflicting entries in two global AnalyzerConfig files:
-
-  - .NET 5: A compiler warning is reported and both entries are ignored.
-  - .NET 6 and later versions: The entry from the file with a higher value for `global_level` takes precedence. If `global_level` isn't explicitly defined and the file is named *.globalconfig*, the `global_level` value defaults to `100`; for all other global AnalyzerConfig files, `global_level` defaults to `0`. If the `global_level` values for the configuration files with conflicting entries are equal, a compiler warning is reported and both entries are ignored.
-
-- Conflicting entries in an EditorConfig file and a Global AnalyzerConfig file: The entry in the EditorConfig file wins.
+| Conflicting entry locations | Precedence rule |
+| - | - |
+| In the same configuration file | The entry that appears later in the file wins. This is true for conflicting entries within a single EditorConfig file and also within a single global AnalyzerConfig file. |
+| In two EditorConfig files | The entry in the EditorConfig file that's deeper in the file system, and hence has a longer file path, wins. |
+| In two global AnalyzerConfig files | **.NET 5**: A compiler warning is reported and both entries are ignored.<br/>**.NET 6 and later versions**: The entry from the file with a higher value for `global_level` takes precedence. If `global_level` isn't explicitly defined and the file is named *.globalconfig*, the `global_level` value defaults to `100`; for all other global AnalyzerConfig files, `global_level` defaults to `0`. If the `global_level` values for the configuration files with conflicting entries are equal, a compiler warning is reported and both entries are ignored. |
+| In an EditorConfig file and a Global AnalyzerConfig file | The entry in the EditorConfig file wins. |
 
 ### Severity options
 

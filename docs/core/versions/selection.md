@@ -100,7 +100,7 @@ It's possible that 5.0.3 and 5.1.0 behave differently, particularly for scenario
 
 ### Control roll-forward behavior
 
-The roll-forward behavior for an app or for .NET, can be configured in four different ways:
+The roll-forward behavior for an application, can be configured in four different ways:
 
 01. Project-level setting by setting the `<RollForward>` property:
 
@@ -112,7 +112,7 @@ The roll-forward behavior for an app or for .NET, can be configured in four diff
 
 02. The `*.runtimeconfig.json` file.
 
-    This file is produced when you compile your app. If the `<RollForward>` property was set in the project, it's reproduced in the `*.runtimeconfig.json` file as the `rollForward` setting. Users can edit this file to change the behavior of your app.
+    This file is produced when you compile your application. If the `<RollForward>` property was set in the project, it's reproduced in the `*.runtimeconfig.json` file as the `rollForward` setting. Users can edit this file to change the behavior of your application.
 
     ```json
     {
@@ -129,7 +129,7 @@ The roll-forward behavior for an app or for .NET, can be configured in four diff
 
 03. The `dotnet` command's `--roll-forward <value>` property.
 
-    When you run an app, you can control the roll-forward behavior through the command line:
+    When you run an application, you can control the roll-forward behavior through the command line:
 
     ```dotnet
     dotnet run --roll-forward LatestMinor
@@ -145,7 +145,7 @@ Roll forward behavior is considered in the following order:
 
 01. `*.runtimeconfig.json` config file.
 01. The `DOTNET_ROLL_FORWARD` environment setting.
-01. Any `--roll-forward` parameter passed to the running app.
+01. Any `--roll-forward` parameter passed to the running application.
 
 ### Values
 

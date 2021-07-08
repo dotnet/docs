@@ -11,4 +11,12 @@
     <PackageReference Include="System.Security.Permissions" Version="5.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\gewarren\dotnet-docs\docs\fundamentals\code-analysis\quality-rules\snippets\csharp\all-rules\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\gewarren\dotnet-docs\docs\fundamentals\code-analysis\quality-rules\snippets\csharp\all-rules\.editorconfig" />
+  </ItemGroup>
+
 </Project>

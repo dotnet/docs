@@ -20,8 +20,6 @@ namespace ca2237
             baseValue = info.GetInt32("baseValue");
         }
 
-        [SecurityPermissionAttribute(SecurityAction.Demand,
-            SerializationFormatter = true)]
         public virtual void GetObjectData(
            SerializationInfo info, StreamingContext context)
         {

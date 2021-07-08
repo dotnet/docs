@@ -26,8 +26,6 @@ namespace ca2229
         }
 
         // The following method serializes the instance.
-        [SecurityPermission(SecurityAction.LinkDemand,
-            Flags = SecurityPermissionFlag.SerializationFormatter)]
         void ISerializable.GetObjectData(SerializationInfo info,
            StreamingContext context)
         {

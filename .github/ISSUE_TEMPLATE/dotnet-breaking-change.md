@@ -13,7 +13,7 @@ assignees: ''
 
 	- By Microsoft product team members who are documenting a breaking change.
 
-	- By Microsoft customers who are experiencing a compatibility issue between .NET Framework and .NET Core or between versions of .NET Core.
+	- By Microsoft customers who are experiencing a compatibility issue between .NET Framework and .NET Core or between versions of .NET.
 
 	Text in brackets is a placeholder; replace the text with the requested information and remove the brackets before submitting the issue.
 
@@ -32,6 +32,13 @@ assignees: ''
 
 ### New behavior
 
+### Category
+
+<!-- Choose one of the following compatibility categories: -->
+
+- [ ] Binary compatibility (the newer version can be used without recompiling)
+- [ ] Source compatibility (successfully recompiling against newer version requires source changes)
+
 ### Reason for change
 
 ### Recommended action
@@ -42,9 +49,9 @@ assignees: ''
 	- Example of code changes to handle change
 -->
 
-### Category
+### Feature area
 
-<!-- Choose a category from one of the following: -->
+<!-- Choose an area from one of the following: -->
 
 - [ ] ASP.NET Core
 - [ ] C#

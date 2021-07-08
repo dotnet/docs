@@ -4,9 +4,9 @@ description: In this article, learn how .NET Framework 4.6 and later product ver
 ms.date: "03/30/2017"
 ms.assetid: 1c4de9d7-9aba-427a-8f38-0ab9bfb8f85e
 ---
-# Mitigation: Product Versioning
+# Mitigation: Product versioning
 
-In the .NET Framework 4.6 and later, product versioning has changed from the previous releases of the .NET Framework (the .NET Framework 4, 4.5, 4.5.1, and 4.5.2).
+In .NET Framework 4.6 and later versions, product versioning has changed from the previous releases of .NET Framework (.NET Framework 4, 4.5, 4.5.1, and 4.5.2).
 
 ## Product versioning changes
 

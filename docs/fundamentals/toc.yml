@@ -49,7 +49,7 @@ items:
     - name: macOS Notarization issues
       href: ../core/install/macos-notarization-issues.md
     - name: Troubleshoot .NET Package mix ups on Linux
-      href: ../core/install/linux-package-mixup.md 
+      href: ../core/install/linux-package-mixup.md
     - name: How to check .NET versions
       href: ../core/install/how-to-detect-installed-versions.md
     - name: Install localized IntelliSense
@@ -204,10 +204,14 @@ items:
         href: ../core/tools/sdk-errors/netsdk1079.md
       - name: NETSDK1080
         href: ../core/tools/sdk-errors/netsdk1080.md
+      - name: NETSDK1130
+        href: ../core/tools/sdk-errors/netsdk1130.md
       - name: NETSDK1141
         href: ../core/tools/sdk-errors/netsdk1141.md
       - name: NETSDK1145
         href: ../core/tools/sdk-errors/netsdk1145.md
+      - name: NETSDK1149
+        href: ../core/tools/sdk-errors/netsdk1149.md
   - name: .NET CLI
     items:
     - name: Overview
@@ -269,6 +273,8 @@ items:
           href: ../core/tools/dotnet-nuget-update-source.md
         - name: dotnet nuget verify
           href: ../core/tools/dotnet-nuget-verify.md
+        - name: dotnet nuget trust
+          href: ../core/tools/dotnet-nuget-trust.md
       - name: dotnet pack
         href: ../core/tools/dotnet-pack.md
       - name: dotnet publish
@@ -389,6 +395,18 @@ items:
         href: syslib-diagnostics/syslib0019.md
       - name: SYSLIB0020
         href: syslib-diagnostics/syslib0020.md
+      - name: SYSLIB0021
+        href: syslib-diagnostics/syslib0021.md
+      - name: SYSLIB0022
+        href: syslib-diagnostics/syslib0022.md
+      - name: SYSLIB0023
+        href: syslib-diagnostics/syslib0023.md
+      - name: SYSLIB0024
+        href: syslib-diagnostics/syslib0024.md
+      - name: SYSLIB0025
+        href: syslib-diagnostics/syslib0025.md
+      - name: SYSLIB0026
+        href: syslib-diagnostics/syslib0026.md
     - name: Source-generated code
       items:
       - name: Overview
@@ -538,11 +556,11 @@ items:
     - name: Logging and tracing
       items:
       - name: Overview
-        displayName: "logging and tracing"
+        displayName: logging tracing
         href: ../core/diagnostics/logging-tracing.md
       - name: Well-known event providers
         href: ../core/diagnostics/well-known-event-providers.md
-      - name: Distributed Tracing
+      - name: Distributed tracing
         items:
         - name: Overview
           href: ../core/diagnostics/distributed-tracing.md
@@ -554,6 +572,13 @@ items:
           href: ../core/diagnostics/distributed-tracing-collection-walkthroughs.md
     - name: Symbols
       href: ../core/diagnostics/symbols.md
+    - name: Microsoft.Diagnostics.NETCore.Client library
+      items:
+      - name: Overview and examples
+        displayName: diagnostics client library
+        href: ../core/diagnostics/diagnostics-client-library.md
+      - name: API reference
+        href: ../core/diagnostics/microsoft-diagnostics-netcore-client.md
     - name: Runtime events
       items:
       - name: Overview
@@ -896,8 +921,12 @@ items:
             href: code-analysis/quality-rules/ca1838.md
           - name: CA1841
             href: code-analysis/quality-rules/ca1841.md
+          - name: CA1844
+            href: code-analysis/quality-rules/ca1844.md
           - name: CA1845
             href: code-analysis/quality-rules/ca1845.md
+          - name: CA1846
+            href: code-analysis/quality-rules/ca1846.md
         - name: SingleFile rules
           items:
           - name: Overview
@@ -1196,6 +1225,8 @@ items:
             href: code-analysis/quality-rules/ca2248.md
           - name: CA2249
             href: code-analysis/quality-rules/ca2249.md
+          - name: CA2250
+            href: code-analysis/quality-rules/ca2250.md
       - name: Code style rules
         items:
         - name: Overview
@@ -1790,17 +1821,17 @@ items:
           href: ../standard/serialization/system-text-json-ignore-properties.md
         - name: Allow invalid JSON
           href: ../standard/serialization/system-text-json-invalid-json.md
-        - name: Handle overflow JSON
+        - name: Handle overflow JSON, use JsonElement or JsonNode
           href: ../standard/serialization/system-text-json-handle-overflow.md
-        - name: Preserve references
+        - name: Preserve references, handle circular references
           href: ../standard/serialization/system-text-json-preserve-references.md
-        - name: Immutable types and non-public accessors
+        - name: Deserialize to immutable types, non-public accessors
           href: ../standard/serialization/system-text-json-immutability.md
         - name: Polymorphic serialization
           href: ../standard/serialization/system-text-json-polymorphism.md
-      - name: How to use DOM, Utf8JsonReader, Utf8JsonWriter
+      - name: Use DOM, Utf8JsonReader, Utf8JsonWriter
         href: ../standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md
-      - name: How to migrate from Newtonsoft.Json
+      - name: Migrate from Newtonsoft.Json
         href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
       - name: Supported collection types
         href: ../standard/serialization/system-text-json-supported-collection-types.md
@@ -1808,7 +1839,7 @@ items:
         items:
         - name: Customize character encoding
           href: ../standard/serialization/system-text-json-character-encoding.md
-        - name: Custom converters
+        - name: Write custom converters
           href: ../standard/serialization/system-text-json-converters-how-to.md
     - name: Binary serialization
       items:
@@ -2007,6 +2038,22 @@ items:
       href: ../core/extensions/console-log-formatter.md
   - name: HostBuilder (generic host)
     href: ../core/extensions/generic-host.md
+  - name: Worker Services
+    items:
+    - name: Overview
+      displayName: workers,worker service,BackgroundService,IHostedService,queue service,timer service
+      href: ../core/extensions/workers.md
+    - name: Create a Queue Service
+      href: ../core/extensions/queue-service.md
+    - name: Use scoped services with a BackgroundService
+      href: ../core/extensions/scoped-service.md
+    - name: Create a Windows Service using BackgroundService
+      href: ../core/extensions/windows-service.md
+    - name: Implement the IHostedService interface
+      href: ../core/extensions/timer-service.md
+    - name: Deploy a Worker Service to Azure
+      href: ../core/extensions/cloud-service.md
+
 - name: Data access
   items:
   - name: LINQ
@@ -2431,34 +2478,54 @@ items:
   items:
   - name: Overview
     href: ../core/porting/index.md
-  - name: .NET Upgrade Assistant tool
+  - name: General Information
     items:
-    - name: Overview
-      href: ../core/porting/upgrade-assistant-overview.md
-    - name: Windows Presentation Foundation
-      href: ../core/porting/upgrade-assistant-wpf-framework.md
-    - name: Windows Forms
-      href: ../core/porting/upgrade-assistant-winforms-framework.md
-    - name: ASP.NET Core
-      href: ../core/porting/upgrade-assistant-aspnetmvc.md
-  - name: Breaking changes
-    displayName: app compatibility
-    href: ../core/compatibility/
-  - name: Analyze third-party dependencies
-    href: ../core/porting/third-party-deps.md
-  - name: Port libraries
-    href: ../core/porting/libraries.md
-  - name: Organize projects for .NET
-    href: ../core/porting/project-structure.md
-  - name: Unavailable technologies
-    href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-  - name: Use the Windows Compatibility Pack
-    href: ../core/porting/windows-compat-pack.md
-  - name: Port Windows Forms projects
-    href: /dotnet/desktop/winforms/migration/?view=netdesktop-5.0
-  - name: Port WPF projects
-    href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0
-  - name: Port C++/CLI projects
-    href: ../core/porting/cpp-cli.md
-  - name: Choose between .NET 5 and .NET Framework for server apps
-    href: ../standard/choosing-core-framework-server.md
+    - name: About .NET
+      items:
+      - name: Versioning info for .NET SDK, MSBuild, and Visual Studio
+        href: ../core/porting/versioning-sdk-msbuild-vs.md
+      - name: Choose between .NET 5 and .NET Framework for server apps
+        href: ../standard/choosing-core-framework-server.md
+    - name: .NET Upgrade Assistant tool
+      items:
+      - name: Overview
+        href: ../core/porting/upgrade-assistant-overview.md
+      - name: Windows Presentation Foundation
+        href: ../core/porting/upgrade-assistant-wpf-framework.md
+      - name: Windows Forms
+        href: ../core/porting/upgrade-assistant-winforms-framework.md
+      - name: ASP.NET Core
+        href: ../core/porting/upgrade-assistant-aspnetmvc.md
+    - name: Breaking changes
+      displayName: app compatibility
+      href: ../core/porting/breaking-changes.md
+  - name: Pre-Migration
+    items:
+    - name: Asses the portability of your project
+      items:
+      - name: Unsupported Dependencies
+        href: ../core/porting/third-party-deps.md
+      - name: Use the Windows Compatibility Pack
+        href: ../core/porting/windows-compat-pack.md
+      - name: Unavailable technologies
+        href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: Unsupported APIs
+        href: ../core/porting/unsupported-apis.md
+    - name: Needed changes before porting code
+      href: ../core/porting/premigration-needed-changes.md
+  - name: Migration
+    items:
+    - name: Create a porting plan
+      items:
+      - name: Approaches
+        href: ../core/porting/porting-approaches.md
+      - name: Project structure
+        href: ../core/porting/project-structure.md
+    - name: Application Porting Guides
+      items:
+      - name: Windows Forms
+        href: /dotnet/desktop/winforms/migration/?view=netdesktop-5.0
+      - name: Windows Presentation Foundation
+        href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0
+      - name: Port C++/CLI projects
+        href: ../core/porting/cpp-cli.md

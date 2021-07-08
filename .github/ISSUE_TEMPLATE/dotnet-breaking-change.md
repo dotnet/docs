@@ -26,7 +26,7 @@ assignees: ''
 
 ### Version introduced
 
-<!-- Version in which the breaking change first occurred (for example, 3.0 for .NET Core 3.0) -->
+<!-- Version in which the breaking change first occurred, including the preview number if applicable. For example, .NET 6 Preview 6 or .NET Core 3.0. -->
 
 ### Old behavior
 

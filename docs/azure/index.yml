@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Azure for .NET developers
-summary: Learn to use the Azure .NET SDK. Browse API reference, sample code, tutorials, quickstarts, conceptual articles and more. Know that .NET 💜 Azure.
+summary: Learn to use the Azure SDK for .NET. Browse API reference, sample code, tutorials, quickstarts, conceptual articles and more. Know that .NET 💜 Azure.
 brand: dotnet
 
 metadata:
@@ -36,7 +36,7 @@ highlightedContent:
       title: Secure custom APIs with Microsoft Identity
       url: /learn/modules/identity-secure-custom-api/
     - itemType: get-started
-      title: Azure .NET SDK
+      title: Azure SDK for .NET
       url: sdk/azure-sdk-for-dotnet.md
 
 conceptualContent:
@@ -187,9 +187,9 @@ conceptualContent:
           url: /azure/event-grid/custom-event-quickstart
     - title: Diagnostics and monitoring
       links:
-        - itemType: overview
-          text: Azure Monitor
-          url: /azure/azure-monitor/overview
+        - itemType: quickstart
+          text: "Azure Monitor Application Insights quickstart"
+          url: /azure/azure-monitor/app/dotnet-quickstart
         - itemType: learn
           text: Capture and view page load times in your Azure web app
           url: /learn/modules/capture-page-load-times-application-insights/
@@ -197,7 +197,7 @@ conceptualContent:
           text: Troubleshoot ASP.NET Core on Azure App Service and IIS
           url: /aspnet/core/test/troubleshoot-azure-iis
         - itemType: how-to-guide
-          text: Application Insights with .NET Core ILogger
+          text: Capture Application Insights telemetry with .NET Core ILogger
           url: /azure/azure-monitor/app/ilogger
         - itemType: how-to-guide
           text: Application Insights for Worker Service applications
@@ -219,7 +219,7 @@ conceptualContent:
         - itemType: how-to-guide
           text: Migrate a SQL Server database to Azure
           url: ./migration/sql.md
-    - title: Azure .NET SDK
+    - title: Azure SDK for .NET
       links:
         - itemType: download
           text: Packages

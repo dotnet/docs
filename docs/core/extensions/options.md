@@ -3,7 +3,7 @@ title: Options pattern in .NET
 author: IEvangelist
 description: Learn how to use the options pattern to represent groups of related settings in .NET apps.
 ms.author: dapine
-ms.date: 05/04/2021
+ms.date: 07/06/2021
 ---
 
 # Options pattern in .NET
@@ -66,6 +66,18 @@ An alternative approach when using the options pattern is to bind the `"Transien
 services.Configure<TransientFaultHandlingOptions>(
     configurationRoot.GetSection(
         key: nameof(TransientFaultHandlingOptions)));
+```
+
+To access both the `services` and the `configurationRoot` objects, you must use the <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureServices%2A> method &mdash; the <xref:Microsoft.Extensions.Configuration.IConfiguration> is available as the <xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration?displayProperty=nameWithType> property.
+
+```csharp
+Host.CreateDefaultBuilder(args)
+    .ConfigureServices((context, services) =>
+    {
+        var configurationRoot = context.Configuration;
+        services.Configure<TransientFaultHandlingOptions>(
+            configurationRoot.GetSection(nameof(TransientFaultHandlingOptions)));
+    });
 ```
 
 > [!TIP]
@@ -260,7 +272,7 @@ Consider the following *appsettings.json* file:
 
 ```json
 {
-  "Settings": {
+  "MyCustomSettingsSection": {
     "SiteTitle": "Amazing docs from Awesome people!",
     "Scale": 10,
     "VerbosityLevel": 32
@@ -268,9 +280,14 @@ Consider the following *appsettings.json* file:
 }
 ```
 
-The following class binds to the `"Settings"` configuration section and applies a couple of `DataAnnotations` rules:
+The following class binds to the `"MyCustomSettingsSection"` configuration section and applies a couple of `DataAnnotations` rules:
 
 :::code language="csharp" source="snippets/configuration/console-json/SettingsOptions.cs":::
+
+In the preceding `SettingsOptions` class, the `ConfigurationSectionName` property contains the name of the configuration section to bind to. In this scenario, the options object provides the name of its configuration section.
+
+> [!TIP]
+> The configuration section name is independent of the configuration object that it's binding to. In other words, a configuration section named `"FooBarOptions"` can be bound to an options object named `ZedOptions`. Although it might be common to name them the same, it's *not* necessary and can actually cause name conflicts.
 
 The following code:
 
@@ -279,7 +296,7 @@ The following code:
 
 ```csharp
 services.AddOptions<SettingsOptions>()
-    .Bind(Configuration.GetSection(SettingsOptions.Settings))
+    .Bind(Configuration.GetSection(SettingsOptions.ConfigurationSectionName))
     .ValidateDataAnnotations();
 ```
 
@@ -293,7 +310,7 @@ The following code applies a more complex validation rule using a delegate:
 
 ```csharp
 services.AddOptions<SettingsOptions>()
-    .Bind(Configuration.GetSection(SettingsOptions.Settings))
+    .Bind(Configuration.GetSection(SettingsOptions.ConfigurationSectionName))
     .ValidateDataAnnotations()
     .Validate(config =>
     {
@@ -319,7 +336,7 @@ Using the preceding code, validation is enabled in `ConfigureServices` with the 
 ```csharp
 services.Configure<SettingsOptions>(
     Configuration.GetSection(
-        SettingsOptions.Settings));
+        SettingsOptions.ConfigurationSectionName));
 services.TryAddEnumerable(
     ServiceDescriptor.Singleton
         <IValidateOptions<SettingsOptions>, ValidateSettingsOptions>());

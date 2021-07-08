@@ -15,7 +15,7 @@ ms.date: 09/04/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet new <TEMPLATE> [--dry-run] [--force] [-lang|--language {"C#"|"F#"|VB}] 
+dotnet new <TEMPLATE> [--dry-run] [--force] [-lang|--language {"C#"|"F#"|VB}]
     [-n|--name <OUTPUT_NAME>] [-o|--output <OUTPUT_DIRECTORY>] [Template options]
 
 dotnet new -h|--help
@@ -133,10 +133,10 @@ Each template may have additional options defined. For more information, see [.N
   dotnet new console --language "F#"
   ```
 
-- Create a .NET Standard class library project in the specified directory:
+- Create a .NET Standard 2.0 class library project in the specified directory:
 
   ```dotnetcli
-  dotnet new classlib --language VB -o MyLibrary
+  dotnet new classlib --framework "netstandard2.0" -o MyLibrary
   ```
 
 - Create a new ASP.NET Core C# MVC project in the current directory with no authentication:

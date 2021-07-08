@@ -19,7 +19,7 @@ namespace InterimSteps2
     // <DegreeDaysRecords>
     public abstract record DegreeDays(double BaseTemperature, IEnumerable<DailyTemperature> TempRecords);
 
-    public record HeatingDegreeDays(double BaseTemperature, IEnumerable<DailyTemperature> TempRecords)
+    public sealed record HeatingDegreeDays(double BaseTemperature, IEnumerable<DailyTemperature> TempRecords)
         : DegreeDays(BaseTemperature, TempRecords)
     {
         public double DegreeDays => TempRecords.Where(s => s.Mean < BaseTemperature).Sum(s => BaseTemperature - s.Mean);

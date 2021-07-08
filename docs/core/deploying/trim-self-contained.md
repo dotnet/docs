@@ -36,71 +36,49 @@ When the code is indirectly referencing an assembly through reflection, you can 
 </ItemGroup>
 ```
 
-### Support for SSL certificates
-
-If your app loads SSL certificates, such as in an ASP.NET Core app, you'll want to ensure that when trimming you prevent trimming assemblies that will help with loading SSL certificates.
-
-We can update our project file to include the following for ASP.NET Core 3.1:
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk.Web">
-  <PropertyGroup>...</PropertyGroup>
-  <!--Include the following for .aspnetcore 3.1-->
-  <ItemGroup>
-    <TrimmerRootAssembly Include="System.Net" />
-    <TrimmerRootAssembly Include="System.Net.Security" />
-    <TrimmerRootAssembly Include="System.Security" />
-  </ItemGroup>
-  ...
-</Project>
-```
-
-If we're using .Net 5.0, we can update our project file to include the following:
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk.Web">
- <PropertyGroup>...</PropertyGroup>
- <!--Include the following for .net 5.0-->
- <ItemGroup>
-    <TrimmerRootAssembly Include="System.Net.Security" />
-    <TrimmerRootAssembly Include="System.Security" />
-  </ItemGroup>
-  ...
-</Project>
-```
-
 ## Trim your app - CLI
 
-Trim your application using the [dotnet publish](../tools/dotnet-publish.md) command. When you publish your app, set the following properties:
+Trim your application using the [dotnet publish](../tools/dotnet-publish.md) command.
 
-- Publish as a self-contained app for a specific runtime: `-r win-x64`
-- Enable trimming: `/p:PublishTrimmed=true`
+01. Add `<PublishTrimmed>true</PublishTrimmed>` to your project file.
 
-The following example publishes an app for Windows as self-contained and trims the output.
+    This will produce a trimmed app on self-contained publish. It also turns off trim-incompatible features and shows trim compatibility warnings during build.
+
+    ```xml
+    <PropertyGroup>
+        <PublishTrimmed>true</PublishTrimmed>
+    </PropertyGroup>
+    ```
+
+01. Publish a self-contained app for a specific runtime identifier using `dotnet publish -r <RID>`
+
+    The following example publishes the app for Windows as trimmed self-contained application.
+
+    `dotnet publish -r win-x64`
+
+    Note that trimming is only supported for self-contained apps.
+
+The following example configures an app in the aggressive trim mode where unused code within assemblies will be trimmed and trimmer warnings enabled.
 
 ```xml
 <PropertyGroup>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-    <PublishTrimmed>true</PublishTrimmed>
-</PropertyGroup>
-```
-
-The following example publishes an app in the aggressive trim mode where unused code within assemblies will be trimmed and trimmer warnings enabled.
-
-```xml
-<PropertyGroup>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <PublishTrimmed>true</PublishTrimmed>
     <TrimMode>link</TrimMode>
     <SuppressTrimAnalysisWarnings>false</SuppressTrimAnalysisWarnings>
 </PropertyGroup>
 ```
 
+`<PublishTrimmed>` should be set in the project file so that trim-incompatible features are disabled during `dotnet build`, but it is also possible to pass these options as `dotnet publish` arguments:
+
+`dotnet publish -r win-x64 -p:PublishTrimmed=true`
+
 For more information, see [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).
 
 ## Trim your app - Visual Studio
 
 Visual Studio creates reusable publishing profiles that control how your application is published.
+
+01. Add `<PublishTrimmed>true</PublishTrimmed>` to your project file.
 
 01. On the **Solution Explorer** pane, right-click on the project you want to publish. Select **Publish...**.
 

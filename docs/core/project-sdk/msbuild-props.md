@@ -696,6 +696,7 @@ The following MSBuild properties are documented in this section:
 - [AssetTargetFallback](#assettargetfallback)
 - [DisableImplicitFrameworkReferences](#disableimplicitframeworkreferences)
 - [Restore-related properties](#restore-related-properties)
+- [ValidateExecutableReferencesMatchSelfContained](#validateexecutablereferencesmatchselfcontained)
 
 ### AssetTargetFallback
 
@@ -728,6 +729,16 @@ Restoring a referenced package installs all of its direct dependencies and all t
 ```xml
 <PropertyGroup>
   <RestoreIgnoreFailedSource>true</RestoreIgnoreFailedSource>
+</PropertyGroup>
+```
+
+### ValidateExecutableReferencesMatchSelfContained
+
+The `ValidateExecutableReferencesMatchSelfContained` property can be used to disable errors related to executable project references. If .NET detects that a self-contained executable project references a framework-dependent executable project, or vice versa, it generates errors NETSDK1150 and NETSDK1151, respectively. To avoid these errors when the reference is intentional, set the `ValidateExecutableReferencesMatchSelfContained` property to `false`.
+
+```xml
+<PropertyGroup>
+  <ValidateExecutableReferencesMatchSelfContained>false</ValidateExecutableReferencesMatchSelfContained>
 </PropertyGroup>
 ```
 

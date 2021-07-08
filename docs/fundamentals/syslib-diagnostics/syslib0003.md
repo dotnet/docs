@@ -7,10 +7,11 @@ ms.date: 10/20/2020
 
 [Code access security (CAS)](../../framework/data/adonet/code-access-security.md) is an unsupported, legacy technology. The infrastructure to enable CAS, which exists only in .NET Framework 2.x - 4.x, is deprecated and not receiving servicing or security fixes.
 
-As a result, most code access security (CAS)-related types in .NET are obsolete, starting in .NET 5.0. This includes CAS attributes, such as <xref:System.Security.Permissions.SecurityPermissionAttribute>, CAS permission objects, such as <xref:System.Net.SocketPermission>, <xref:System.Security.Policy.EvidenceBase>-derived types, and other supporting APIs. Using these APIs generates warning `SYSLIB0003` at compile time.
+As a result, most code access security (CAS)-related types in .NET are obsolete, starting in .NET 5. This includes CAS attributes, such as <xref:System.Security.Permissions.SecurityPermissionAttribute>, CAS permission objects, such as <xref:System.Net.SocketPermission>, <xref:System.Security.Policy.EvidenceBase>-derived types, and other supporting APIs. Using these APIs generates warning `SYSLIB0003` at compile time.
 
 The complete list of obsolete CAS APIs is as follows:
 
+- <xref:System.AppDomain.ExecuteAssembly(System.String,System.String[],System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)?displayProperty=fullName>
 - <xref:System.AppDomain.PermissionSet?displayProperty=fullName>
 - <xref:System.Configuration.ConfigurationPermission?displayProperty=fullName>
 - <xref:System.Configuration.ConfigurationPermissionAttribute?displayProperty=fullName>

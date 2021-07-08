@@ -72,12 +72,12 @@ public void ConfigureServices(IServiceCollection services)
     var blobServiceClient = new BlobServiceClient(
         new Uri("<secrets_endpoint>"), new DefaultAzureCredential());
     services.AddSingleton(blobServiceClient);
-          
+
     // Code omitted for brevity
 }
 ```
 
-For more information about implementing DI with the Azure SDK, see [Dependency injection with the Azure .NET SDK](./dependency-injection.md).
+For more information about implementing DI with the Azure SDK, see [Dependency injection with the Azure SDK for .NET](./dependency-injection.md).
 
 Alternatively, you may create an SDK client instance and provide it to methods that require a client. The point is to avoid unnecessary instantiations of the same SDK client object with the same parameters. It's both unnecessary and wasteful.
 
@@ -120,5 +120,5 @@ Further guidance for properly managing and disposing of `HttpClient` instances c
 
 ## See also
 
-- [Dependency injection with the Azure .NET SDK](./dependency-injection.md)
-- [Dependency injection in .NET](/dotnet/core/extensions/dependency-injection)
+- [Dependency injection with the Azure SDK for .NET](./dependency-injection.md)
+- [Dependency injection in .NET](../../core/extensions/dependency-injection.md)

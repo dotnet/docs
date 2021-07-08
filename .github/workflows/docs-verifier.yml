@@ -1,0 +1,17 @@
+name: MSDocs build verifier
+on: pull_request
+env:
+  GITHUB_PR_NUMBER: ${{ github.event.pull_request.number }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  validate:
+    name: MSDocs build verifier
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout the repository
+      uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2
+
+    - name: Validate
+      uses: dotnet/docs-actions/actions/docs-verifier@main

@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "system requirements"
   - "operating systems supported"
   - "hardware requirements"
-ms.assetid: 298275e2-da1d-4618-9f74-6a3567832350
+ms.topic: reference
 ---
 # .NET Framework system requirements
 
@@ -64,7 +64,7 @@ For information on the support lifecycle of .NET Framework versions, see [Micros
 | Windows Vista SP2|32-bit and 64-bit | -- | .NET Framework 4<br /><br /> .NET Framework 4.5<br /><br /> .NET Framework 4.5.1<br /><br /> .NET Framework 4.5.2<br /><br /> .NET Framework 4.6 |
 | Windows XP |32-bit and 64-bit | -- | .NET Framework 4 |
 
- **Notes:**
+**Notes:**
 
 - On Windows 7 systems, .NET Framework requires Windows 7 SP1. If you're on Windows 7 and haven't yet installed Service Pack 1, you need to do so before installing the .NET Framework.
 
@@ -88,7 +88,7 @@ For information on the support lifecycle of .NET Framework versions, see [Micros
 | Windows Server 2012 R2 | 64-bit | .NET Framework 4.5.1 | .NET Framework 4.5.2<br /><br /> .NET Framework 4.6<br /><br /> .NET Framework 4.6.1<br /><br /> .NET Framework 4.6.2<br /><br />.NET Framework 4.7<br/><br/> .NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2<br/><br/>.NET Framework 4.8 |
 | Windows Server 2012 (64-bit edition) | 64-bit| .NET Framework 4.5 | .NET Framework 4.5.1<br /><br /> .NET Framework 4.5.2<br /><br /> .NET Framework 4.6<br /><br /> .NET Framework 4.6.1<br /><br /> .NET Framework 4.6.2<br /><br />.NET Framework 4.7<br/><br/>.NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2<br/><br/>.NET Framework 4.8 |
 | Windows Server 2008 R2 SP1|64-bit | -- | .NET Framework 4<br /><br /> .NET Framework 4.5<br /><br /> .NET Framework 4.5.1<br /><br /> .NET Framework 4.5.2<br /><br /> .NET Framework 4.6<br /><br /> .NET Framework 4.6.1<br /><br /> .NET Framework 4.6.2<br /><br />.NET Framework 4.7<br/><br/>.NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2<br/><br/>.NET Framework 4.8 |
-| Windows Server 2008 SP2|32-bit and 64-bit | -- | .NET Framework 4<br /><br /> .NET Framework 4.5<br /><br /> .NET Framework 4.5.1<br /><br /> .NET Framework 4.5.2<br /><br /> .NET Framework 4.6 |
+| Windows Server 2008 SP2|32-bit and 64-bit | -- | .NET Framework 4<br /><br /> .NET Framework 4.5<br /><br /> .NET Framework 4.5.1<br /><br /> .NET Framework 4.5.2<br /><br /> .NET Framework 4.6<br /><br /> .NET Framework 4.6.2 |
 
 **Notes:**
 

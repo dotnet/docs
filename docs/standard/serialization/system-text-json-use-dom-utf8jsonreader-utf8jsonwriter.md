@@ -1,8 +1,9 @@
 ---
 title: How to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
-description: "Learn how to use JsonDocument, JsonElement, Utf8JsonReader, and Utf8JsonWriter."
+description: "Learn how to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter."
 ms.date: 01/19/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
+zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"
@@ -14,10 +15,17 @@ helpviewer_keywords:
 ms.topic: how-to
 ---
 
-# How to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
+# How to use the DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
 
+:::zone pivot="dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
 <xref:System.Text.Json.JsonDocument> provides the ability to build a read-only Document Object Model (DOM) by using `Utf8JsonReader`. The DOM provides random access to data in a JSON payload. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides array and object enumerators along with APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property.
+:::zone-end
 
+:::zone pivot="dotnet-6-0"
+Documentation for mutable DOM support is being developed. Until it's added, see the [.NET 6 Preview 4 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-4/#system-text-json-writable-dom-feature).
+:::zone-end
+
+:::zone pivot="dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
 <xref:System.Text.Json.Utf8JsonReader> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>` or `ReadOnlySequence<byte>`. The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers. The <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method uses `Utf8JsonReader` under the covers. The  `Utf8JsonReader` can't be used directly from Visual Basic code. For more information, see [Visual Basic support](system-text-json-how-to.md#visual-basic-support).
 
 <xref:System.Text.Json.Utf8JsonWriter> is a high-performance way to write UTF-8 encoded JSON text from common .NET types like `String`, `Int32`, and `DateTime`. The writer is a low-level type that can be used to build custom serializers. The <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method uses `Utf8JsonWriter` under the covers.
@@ -132,6 +140,8 @@ The sample code starts with a 4KB buffer and doubles the buffer size each time i
 :::code language="vb" source="snippets/system-text-json-how-to/vb/Utf8ReaderPartialRead.vb":::
 
 The preceding example sets no limit to how large the buffer can grow. If the token size is too large, the code could fail with an <xref:System.OutOfMemoryException> exception. This can happen if the JSON contains a token that is around 1 GB or more in size, because doubling the 1 GB size results in a size that is too large to fit into an `int32` buffer.
+
+:::zone-end
 
 ## See also
 

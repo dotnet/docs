@@ -1,11 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
-namespace SystemTextJsonSamples
+namespace RoundtripExtensionData
 {
-    public class RoundtripExtensionData
+    public class WeatherForecast
     {
-        public static void Run()
+        public DateTimeOffset Date { get; set; }
+        public int TemperatureCelsius { get; set; }
+        public string Summary { get; set; }
+        [JsonExtensionData]
+        public Dictionary<string, JsonElement> ExtensionData { get; set; }
+    }
+
+    public class Program
+    {
+        public static void Main()
         {
             string jsonString =
 @"{
@@ -17,46 +28,36 @@ namespace SystemTextJsonSamples
     ""2019-08-01T00:00:00-07:00"",
     ""2019-08-02T00:00:00-07:00""
   ],
-  ""TemperatureRanges"": {
-    ""Cold"": {
-      ""High"": {
-        ""Celsius"": 20
-      },
-      ""Low"": {
-        ""Celsius"": -10
-      }
-    },
-    ""Hot"": {
-      ""High"": {
-        ""Celsius"": 60
-      },
-      ""Low"": {
-        ""Celsius"": 20
-      }
-    }
-  },
   ""SummaryWords"": [
     ""Cool"",
     ""Windy"",
     ""Humid""
   ]
 }";
-            Console.WriteLine($"JSON input:\n{jsonString}\n");
+            WeatherForecast weatherForecast = 
+                JsonSerializer.Deserialize<WeatherForecast>(jsonString);
 
-            // <Deserialize>
-            WeatherForecastWithExtensionData weatherForecast = 
-                JsonSerializer.Deserialize<WeatherForecastWithExtensionData>(jsonString);
-            weatherForecast.DisplayPropertyValues();
-            // </Deserialize>
-
-            // <Serialize>
-            var serializeOptions = new JsonSerializerOptions
-            {
-                WriteIndented = true
-            };
+            var serializeOptions = new JsonSerializerOptions { WriteIndented = true };
             jsonString = JsonSerializer.Serialize(weatherForecast, serializeOptions);
-            // </Serialize>
             Console.WriteLine($"JSON output:\n{jsonString}\n");
         }
     }
 }
+// output:
+//JSON output:
+//{
+//  "Date": "2019-08-01T00:00:00-07:00",
+//  "TemperatureCelsius": 0,
+//  "Summary": "Hot",
+//  "temperatureCelsius": 25,
+//  "SummaryField": "Hot",
+//  "DatesAvailable": [
+//    "2019-08-01T00:00:00-07:00",
+//    "2019-08-02T00:00:00-07:00"
+//  ],
+//  "SummaryWords": [
+//    "Cool",
+//    "Windy",
+//    "Humid"
+//  ]
+//}

@@ -1,7 +1,7 @@
 ---
 title: "How to concatenate multiple strings (C# Guide)"
 description: There are multiple ways to concatenate strings in C#. Learn the options and the reasons behind different choices.
-ms.date: 04/19/2021
+ms.date: 06/30/2021
 helpviewer_keywords: 
   - "joining strings [C#]"
   - "concatenating strings [C#]"
@@ -34,6 +34,8 @@ In some expressions, it's easier to concatenate strings using string interpolati
 
 > [!NOTE]
 > In string concatenation operations, the C# compiler treats a null string the same as an empty string.
+
+Beginning with C# 10, you can use string interpolation to initialize a constant string when all the expressions used for placeholders are also constant strings.
 
 ## `String.Format`
 

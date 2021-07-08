@@ -51,4 +51,4 @@ Windows Workflow tracking is a [!INCLUDE[netfx_current_long](../../../includes/n
   
 ## See also
 
-- [SQL Tracking](./samples/sql-tracking.md)
+- [SQL Tracking](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/sql-tracking)

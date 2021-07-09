@@ -53,11 +53,11 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
 
 - **`--certificate-store-name <STORENAME>`**
 
-  Specifies the name of the X.509 certificate store to use to search for the certificate. Defaults to "My", the X.509 certificate store for personal certificates. This option should be used when specifying the certificate via `--certificate-subject-name` or `--certificate-fingerprint` options.
+  Specifies the name of the X.509 certificate store to use to search for the certificate. Defaults to :::no-loc text="\"My\"":::, the X.509 certificate store for personal certificates. This option should be used when specifying the certificate via `--certificate-subject-name` or `--certificate-fingerprint` options.
 
 - **`--certificate-store-location <STORELOCATION>`**
 
-  Specifies the name of the X.509 certificate store use to search for the certificate. Defaults to "CurrentUser", the X.509 certificate store used by the current user. This option should be used when specifying the certificate via `--certificate-subject-name` or `--certificate-fingerprint` options.
+  Specifies the name of the X.509 certificate store use to search for the certificate. Defaults to :::no-loc text="\"CurrentUser\"":::, the X.509 certificate store used by the current user. This option should be used when specifying the certificate via `--certificate-subject-name` or `--certificate-fingerprint` options.
 
 - **`--certificate-subject-name <SUBJECTNAME>`**
 
@@ -125,7 +125,7 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
   dotnet nuget sign foo.nupkg --certificate-fingerprint 89967D1DD995010B6C66AE24FF8E66885E6E03A8 --certificate-password password
   ```
 
-- Sign *foo.nupkg* with certificate (password protected) matches with the specified subject name *Test certificate for testing signing* in the default certificate store (CurrentUser\My):
+- Sign *foo.nupkg* with certificate (password protected) matches with the specified subject name :::no-loc text="\"Test certificate for testing signing\""::: in the default certificate store (CurrentUser\My):
 
   ```dotnetcli
   dotnet nuget sign foo.nupkg --certificate-subject-name "Test certificate for testing signing" --certificate-password password
@@ -143,7 +143,7 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
   dotnet nuget sign foo.nupkg c:\mydir\*.nupkg --certificate-path cert.pfx
   ```
 
-- Sign *foo.nupkg* with certificate *cert.pfx* (password protected), and timestamp with *http://timestamp.test*:
+- Sign *foo.nupkg* with certificate *cert.pfx* (password protected), and timestamp with `http://timestamp.test`:
 
   ```dotnetcli
   dotnet nuget sign foo.nupkg --certificate-path cert.pfx --certificate-password password --timestamper http://timestamp.test

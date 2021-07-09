@@ -18,13 +18,11 @@ Learn how to install ML.NET Model Builder to add machine learning to your .NET a
 ## Prerequisites
 
 - Visual Studio 2019
-- .NET Core 3.0 SDK or later.
+- .NET Core 3.1 SDK or later.
 
 ## Limitations
 
 - ML.NET Model Builder Extension currently only works on Visual Studio on Windows.
-- Training dataset limit of 1GB
-- SQL Server has a limit of 100 thousand rows for training
 - Microsoft SQL Server Data Tools for Visual Studio 2017 is not supported
 
 ## Install

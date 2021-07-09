@@ -1542,9 +1542,30 @@ items:
       href: /visualstudio/containers/overview
 - name: DevOps
   items:
-  - name: Create a GitHub Action with .NET
-    href: ../devops/create-dotnet-github-action.md
-    displayName: "continuous integration, continuous deployment, ci, cd, ci/cd, github, github action, github actions, lifecycle"
+  - name: GitHub Actions and .NET
+    href: ../devops/github-actions-overview.md
+    displayName: "continuous integration,continuous deployment,continuous delivery,ci,cd,ci/cd,github,github action,github actions,lifecycle"
+  - name: Tutorials
+    expanded: true
+    items:
+    - name: Create a GitHub Action with .NET
+      href: ../devops/create-dotnet-github-action.md
+      displayName: "continuous integration, continuous deployment, ci, cd, ci/cd, github, github action, github actions, lifecycle"
+  - name: Quickstarts
+    expanded: true
+    items:
+    - name: Create a build GitHub Action
+      href: ../devops/dotnet-build-github-action.md
+      displayName: dotnet restore,dotnet build
+    - name: Create a test GitHub Action
+      href: ../devops/dotnet-test-github-action.md
+      displayName: dotnet restore,dotnet build,dotnet test
+    - name: Create a publish GitHub Action
+      href: ../devops/dotnet-publish-github-action.md
+      displayName: dotnet restore,dotnet build,dotnet test,dotnet publish
+    - name: Create a CodeQL GitHub Action
+      href: ../devops/dotnet-secure-github-action.md
+      displayName: codeql,security,vulnerability,source scan
 - name: Fundamental coding components
   items:
   - name: Base types overview

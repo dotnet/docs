@@ -75,7 +75,7 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
    Specifies the certificate password, if needed. If a certificate is password protected but no password is provided, the sign command will fail.
 
   > [!NOTE]
-  > The `sign` command currently supports only non-interactive mode. There won't be any prompt for a password at run time.
+  > The `sign` command only supports non-interactive mode. There won't be any prompt for a password at run time.
 
 - **`--hash-algorithm <HASHALGORITHM>`**
 

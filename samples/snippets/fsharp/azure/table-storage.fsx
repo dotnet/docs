@@ -30,7 +30,7 @@ let tableClient = TableServiceClient(storageConnString)
 let table = tableClient.GetTableClient("people")
 
 // Create the table if it doesn't exist.
-table.CreateIfNotExists()
+ignore(table.CreateIfNotExists())
 
 //
 // Add an entity to a table. The last name is used as a partition key.
@@ -64,10 +64,8 @@ type Customer(firstName, lastName, email: string, phone: string) =
     member val PartitionKey = lastName with get, set
     member val RowKey = firstName with get, set
 
-
 let customer = Customer("Walter", "Harp", "Walter@contoso.com", "425-555-0101")
-table.AddEntity(customer)
-
+ignore(table.AddEntity(customer))
 
 //
 // Insert a batch of entities. All must have the same partition key.
@@ -123,7 +121,7 @@ printfn "customer: %A %A" singleResult.RowKey singleResult.PartitionKey
 
 try
     singleResult.PhoneNumber <- "425-555-0103"
-    table.UpdateEntity(singleResult, Azure.ETag.All, TableUpdateMode.Replace)
+    ignore(table.UpdateEntity(singleResult, Azure.ETag.All, TableUpdateMode.Replace))
     Console.WriteLine("Update succeeeded")
 with e ->
     Console.WriteLine("Update failed")
@@ -134,7 +132,7 @@ with e ->
 
 try
     singleResult.PhoneNumber <- "425-555-0104"
-    table.UpdateEntity(singleResult, Azure.ETag.All, TableUpdateMode.Merge)
+    ignore(table.UpdateEntity(singleResult, Azure.ETag.All, TableUpdateMode.Merge))
     Console.WriteLine("Update succeeeded")
 with e ->
     Console.WriteLine("Update failed")
@@ -163,11 +161,10 @@ for page in pagesResults.AsPages() do
 // Delete an entity.
 //
 
-table.DeleteEntity("Smith", "Ben")
+ignore(table.DeleteEntity("Smith", "Ben"))
 
 //
 // Delete a table.
 //
 
-table.Delete()
-
+ignore(table.Delete())

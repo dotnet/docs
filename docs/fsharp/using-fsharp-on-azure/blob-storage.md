@@ -96,7 +96,7 @@ For example, consider the following set of block blobs in a container named `pho
 *2016/architecture/description.txt*\
 *2016/photo7.jpg*\
 
-When you call `GetBlobs` on a container (as in the above sample), a hierarchical listing is returned. 
+When you call `GetBlobs` on a container (as in the above sample), a hierarchical listing is returned.
 
 ```console
 Directory: https://<accountname>.blob.core.windows.net/photos/2015/

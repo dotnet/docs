@@ -237,7 +237,7 @@ The following table describes methods that can be used in a workflow builder cla
 |`Run`|`Delayed<'T> -> M<'T>` or<br /><br />`M<'T> -> 'T`|Executes a computation expression.|
 |`Combine`|`M<'T> * Delayed<'T> -> M<'T>` or<br /><br />`M<unit> * M<'T> -> M<'T>`|Called for sequencing in computation expressions.|
 |`For`|`seq<'T> * ('T -> M<'U>) -> M<'U>` or<br /><br />`seq<'T> * ('T -> M<'U>) -> seq<M<'U>>`|Called for `for...do` expressions in computation expressions.|
-|`TryFinally`|`M<'T> * (unit -> unit) -> M<'T>`|Called for `try...finally` expressions in computation expressions.|
+|`TryFinally`|`Delayed<'T> * (unit -> unit) -> M<'T>`|Called for `try...finally` expressions in computation expressions.|
 |`TryWith`|`Delayed<'T> * (exn -> M<'T>) -> M<'T>`|Called for `try...with` expressions in computation expressions.|
 |`Using`|`'T * ('T -> M<'U>) -> M<'U> when 'T :> IDisposable`|Called for `use` bindings in computation expressions.|
 |`While`|`(unit -> bool) * Delayed<'T> -> M<'T>`or<br /><br />`(unit -> bool) * Delayed<unit> -> M<unit>`|Called for `while...do` expressions in computation expressions.|

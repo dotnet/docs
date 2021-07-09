@@ -1,7 +1,7 @@
 ---
 title: How to install the ML.NET Command-Line Interface (CLI) tool
 description: Learn how to install, upgrade, downgrade, and uninstall the ML.NET Command-Line Interface (CLI) tool.
-ms.date: 06/08/2020
+ms.date: 07/09/2021
 ms.custom: mlnet-tooling
 ---
 
@@ -50,6 +50,14 @@ mlnet
 ```
 
 You should see the help for available commands for the mlnet tool such as the 'classification' command.
+
+If you are running Linux or macOS, note that if you're using a console other than Bash (for example, zsh, which is the new default for macOS), then you'll need to give `mlnet` executable permissions and include `mlnet` to the system path. Instructions on how to do this should appear in the terminal when you install `mlnet` (or any global tool).
+
+Alternatively, you can try using the following command to run the mlnet tool:
+
+```console
+~/.dotnet/tools/mlnet
+```
 
 ## Install a specific release version
 

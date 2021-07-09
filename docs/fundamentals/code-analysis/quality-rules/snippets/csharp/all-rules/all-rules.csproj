@@ -12,11 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EditorConfigFiles Remove="C:\Users\gewarren\dotnet-docs\docs\fundamentals\code-analysis\quality-rules\snippets\csharp\all-rules\.editorconfig" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="C:\Users\gewarren\dotnet-docs\docs\fundamentals\code-analysis\quality-rules\snippets\csharp\all-rules\.editorconfig" />
+    <None Include=".editorconfig" />
   </ItemGroup>
 
 </Project>

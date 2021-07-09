@@ -75,7 +75,7 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
    Specifies the certificate password, if needed. If a certificate is password protected but no password is provided, the sign command will fail.
 
   > [!NOTE]
-  > The sign command currently supports only noninteractive mode, so there won't be any prompt for a password at run time.
+  > The `sign` command currently supports only non-interactive mode. There won't be any prompt for a password at run time.
 
 - **`--hash-algorithm <HASHALGORITHM>`**
 
@@ -85,6 +85,10 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
 
   Specifies the directory where the signed package should be saved. If this option is not specified, by default the original package is overwritten by the signed package.
 
+- **`--overwrite`**
+
+   Indicate that the current signature should be overwritten. By default the command will fail if the package already has a signature.
+
 - **`--timestamp-hash-algorithm <HASHALGORITHM>`**
 
    Hash algorithm to be used by the RFC 3161 timestamp server. Defaults to SHA256.
@@ -92,10 +96,6 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
 - **`--timestamper <TIMESTAMPINGSERVER>`**
 
    URL to an RFC 3161 timestamping server.
-
-- **`--overwrite`**
-
-   Indicate that the current signature should be overwritten. By default the command will fail if the package already has a signature.
 
 * **`-v|--verbosity <LEVEL>`**
 

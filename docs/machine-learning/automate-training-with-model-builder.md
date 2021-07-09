@@ -1,7 +1,7 @@
 ---
 title: What is Model Builder and how does it work?
 description: How to use the ML.NET Model Builder to automatically train a machine learning model
-ms.date: 07/02/2020
+ms.date: 07/09/2020
 ms.custom: overview, mlnet-tooling
 #Customer intent: As a developer, I want to use Model Builder to automatically train a model using a visual interface.
 ---
@@ -20,9 +20,15 @@ You don't need machine learning expertise to use Model Builder. All you need is 
 
 ## Creating a Model Builder Project
 
-When you first start up Model Builder it will ask for you to name the project. This will create an `mbconfig` file inside of the project.
+When you first start up Model Builder it will ask for you to name the project. This will create an `mbconfig` configuration file inside of the project.
 
 The `mbconfig` file keeps track of everything you do in Model Builder to allow you to reopen the session.
+
+After training, two files are generated under the *.mbconfig file:
+
+- Model.consumption.cs: This file contains the Model Input and Model Output schemas as well as the Predict function generated for consuming the model.
+- Model.training.cs: This file contains the training pipeline (data transforms, algorithm, algorithm hyperparameters) chosen by Model Builder to train the model. You can use this pipeline for re-training your model.
+- Model.zip: This is a serialized zip file which represents your trained ML.NET model.
 
 ## Scenario
 
@@ -104,7 +110,7 @@ Once you have chosen your scenario, Model Builder asks you to provide a dataset.
 
 ![Diagram showing Model Builder steps](media/model-builder-steps.png)
 
-Model Builder supports datasets in .tsv, .csv, .txt formats, as well as SQL database format. If you have a .txt file, columns should be separated with `,`, `;` or `/t`.
+Model Builder supports datasets in .tsv, .csv, .txt formats, as well as SQL database format. If you have a .txt file, columns should be separated with `,`, `;` or `\t`.
 
 If the dataset is made up of images, the supported file types are `.jpg` and `.png`.
 
@@ -230,7 +236,7 @@ After the evaluation phase, Model Builder outputs a model file, and code that yo
 In addition, Model Builder gives you the option to create projects that consume your model. Currently, Model Builder will create the following projects:
 
 - Console app - Creates a .NET Core console applications to make predictions from your model.
-- Web API - Creates an ASP.NET Core Web API that consumes your model.
+- Web API - Creates an ASP.NET Core Web API that lets you consume your model over the internet.
 
 ## What's next?
 

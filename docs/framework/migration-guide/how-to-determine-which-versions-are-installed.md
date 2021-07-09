@@ -125,7 +125,7 @@ The following examples check the value of the **Release** entry to determine whe
 The following example checks the value of the **Release** entry in the registry to find the versions of .NET Framework 4.5-4.8 that are installed.
 
 > [!TIP]
-Add the directive `using Microsoft.Win32` or `Imports Microsoft.Win32` at the top of your code file if you haven't already done so.
+> Add the directive `using Microsoft.Win32` or `Imports Microsoft.Win32` at the top of your code file if you haven't already done so.
 
 :::code language="csharp" source="snippets/csharp/versions-installed.cs" id="2":::
 

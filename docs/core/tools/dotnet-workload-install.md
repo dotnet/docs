@@ -34,31 +34,31 @@ dotnet workload install -h|--help
 
 - **`--add-source <SOURCE>`**
 
-  Add an additional NuGet package source to use during installation.
+  Adds an additional NuGet package source to use during installation. Feeds are accessed in parallel, not sequentially in some order of precedence. If the same package and version is in multiple feeds, the fastest feed wins. For more information, see [What happens when a NuGet package is installed?](/nuget/concepts/package-installation-process).
 
 - **`--configfile <FILE>`**
 
-  The NuGet configuration file to use.
+  The NuGet configuration file (*nuget.config*) to use. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior).
 
 - **`--disable-parallel`**
 
-  Prevent restoring multiple projects in parallel.
+  Prevents restoring multiple projects in parallel.
 
-- **`--download-to-cache <CACHE>`**
+- **`--download-to-cache <PATH_TO_CACHE>`**
 
-  Download packages needed to install a workload to a folder which can be used for offline installation.
+  Downloads packages needed for a workload to a folder that can be used for offline installation.
 
-- **`--from-cache <CACHE>`**
+- **`--from-cache <PATH_TO_CACHE>`**
 
-  Complete the operation from cache (offline).
+  Installs the workload from cache (offline).
 
 - **`--ignore-failed-sources`**
 
-  Treat package source failures as warnings.
+  Treats package source failures as warnings.
 
 - **`--include-previews`**
 
-  Allow prerelease workload manifests.
+  Allows prerelease workload manifests.
 
 - **`--interactive`**
 
@@ -66,11 +66,11 @@ dotnet workload install -h|--help
 
 - **`--no-cache`**
 
-  Do not cache packages and http requests.
+  Prevents caching of packages and http requests.
 
 - **`--sdk-version <VERSION>`**
 
-  The version of the SDK.
+  The SDK version to use.
 
 - **`--skip-manifest-update`**
 
@@ -82,3 +82,15 @@ dotnet workload install -h|--help
 
 ## Examples
 
+- Install the `microsoft.ios.sdk.full` workload:
+
+  ```dotnetcli
+  dotnet workload install microsoft.ios.sdk.full
+  ```
+
+- Download the `microsoft.ios.sdk.full` workload to a cache located in the *workload-cache* directory under the current directory. Then install it from the same cache location:
+
+  ```dotnetcli
+  dotnet workload install microsoft-ios-sdk-full --download-to-cache ./workload-cache
+  dotnet workload install microsoft-ios-sdk-full --from-cache ./workload-cache
+  ```

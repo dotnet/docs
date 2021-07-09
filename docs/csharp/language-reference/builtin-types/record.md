@@ -113,7 +113,7 @@ The `with` expression can set positional properties or properties created by usi
 
 The result of a `with` expression is a *shallow copy*, which means that for a reference property, only the reference to an instance is copied. Both the original record and the copy end up with a reference to the same instance.
 
-To implement this feature, the compiler synthesizes a clone method and a copy constructor. The constructor takes an instance of the record to be copied and calls the clone method. When you use a `with` expression, the compiler creates code that calls the copy constructor and then sets the properties that are specified in the `with` expression.
+To implement this feature, the compiler synthesizes a clone method and a copy constructor. The virtual clone method returns a new record initialized by the copy constructor. When you use a `with` expression, the compiler creates code that calls the clone method and then sets the properties that are specified in the `with` expression.
 
 If you need different copying behavior, you can write your own copy constructor. If you do that, the compiler won't synthesize one. Make your constructor `private` if the record is `sealed`, otherwise make it `protected`.
 
@@ -164,7 +164,7 @@ When comparing two instances of a derived type, the synthesized equality methods
 
 ### `with` expressions in derived records
 
-Because the synthesized clone method uses a [covariant return type](~/_csharplang/proposals/csharp-9.0/covariant-returns.md), the result of a `with` expression has the same run-time type as the expression's operand. All properties of the run-time type get copied, but you can only set properties of the compile-time type, as the following example shows:
+The result of a `with` expression has the same run-time type as the expression's operand. All properties of the run-time type get copied, but you can only set properties of the compile-time type, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="WithExpressionInheritance":::
 

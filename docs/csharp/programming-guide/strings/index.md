@@ -13,7 +13,7 @@ A string is an object of type <xref:System.String> whose value is text. Internal
   
 ## string vs. System.String  
 
- In C#, the `string` keyword is an alias for <xref:System.String>. Therefore, `String` and `string` are equivalent, and you can use whichever naming convention you prefer. The `String` class provides many methods for safely creating, manipulating, and comparing strings. In addition, the C# language overloads some operators to simplify common string operations. For more information about the keyword, see [string](../../language-reference/builtin-types/reference-types.md). For more information about the type and its methods, see <xref:System.String>.  
+ In C#, the `string` keyword is an alias for <xref:System.String>. Therefore, `String` and `string` are equivalent, regardless it is recommended to use the provided alias `string` as it works even without `using System;`. The `String` class provides many methods for safely creating, manipulating, and comparing strings. In addition, the C# language overloads some operators to simplify common string operations. For more information about the keyword, see [string](../../language-reference/builtin-types/reference-types.md). For more information about the type and its methods, see <xref:System.String>.
   
 ## Declaring and Initializing Strings  
 

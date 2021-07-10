@@ -20,7 +20,7 @@ GitHub Actions represent standalone commands, such as:
 - [dotnet/versionsweeper](https://github.com/dotnet/versionsweeper) - This action sweeps .NET repos for out-of-support target versions of .NET.
 
 > [!TIP]
-> The .NET docs team is utilizing the .NET version sweeper GitHub Action to automate issue creation. It runs on a schedule (as a CRON job). When it detects that .NET projects are targeting out-of-support versions &mdash; it creates issues reporting its findings. This is configurable, and helpful for tracking .NET version support concerns. It's available in the [GitHub Action Marketplace](https://github.com/marketplace/actions/net-version-sweeper).
+> The .NET docs team is utilizing the .NET version sweeper GitHub Action to automate issue creation. It runs on a schedule (as a cron job). When it detects that .NET projects are targeting out-of-support versions &mdash; it creates issues reporting its findings. This is configurable, and helpful for tracking .NET version support concerns. It's available in the [GitHub Action Marketplace](https://github.com/marketplace/actions/net-version-sweeper).
 
 While these commands are isolated to a single action, they're powerful through *workflow composition*. In workflow composition, you define the *events* that trigger the workflow. Once a workflow is running, there are various *jobs* it's instructed to perform &mdash; with each job defining any number of *steps*. The *steps* delegate out to GitHub Actions, or alternatively call command-line scripts.
 
@@ -133,7 +133,7 @@ In the preceding workflow, the `push` and `pull_request` events will trigger the
 
 #### Example scheduled event
 
-The following example shows how to specify a scheduled (CRON job) event trigger for a workflow:
+The following example shows how to specify a scheduled (cron job) event trigger for a workflow:
 
 ```yml
 name: scan

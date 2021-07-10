@@ -8,7 +8,7 @@ ms.assetid: f474e25d-2a27-4f31-84c5-395c442b8e70
 
 Endpoints provide clients with access to the functionality a Windows Communication Foundation (WCF) service offers. You can define one or more endpoints for a service by using a combination of relative and absolute endpoint addresses, or if you do not define any service endpoints, the runtime provides some by default for you. This topic shows how to add endpoints using a configuration file that contain both relative and absolute addresses.
 
-## Example
+## Example 1
 
  The following service configuration specifies a base address and five endpoints.
 
@@ -64,7 +64,7 @@ Endpoints provide clients with access to the functionality a Windows Communicati
 </configuration>
 ```
 
-## Example
+## Example 2
 
  The base address is specified using the `add` element, under service/host/baseAddresses, as shown in the following sample.
 
@@ -78,7 +78,7 @@ Endpoints provide clients with access to the functionality a Windows Communicati
   </host>
 ```
 
-## Example
+## Example 3
 
  The first endpoint definition shown in the following sample specifies a relative address, which means the endpoint address is a combination of the base address and the relative address following the rules of Uniform Resource Identifier (URI) composition. The relative address is empty (""), so the endpoint address is the same as the base address. The actual endpoint address is `http://localhost:8000/servicemodelsamples/service`.
 
@@ -120,7 +120,7 @@ Endpoints provide clients with access to the functionality a Windows Communicati
 
 ## Example 7
 
- To use the default endpoints provided by the runtime, do not specify any service endpoints in either the code or the configuration file. In this example, the runtime creates the default endpoints when the service is opened. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../simplified-configuration.md) and [Simplified Configuration for WCF Services](../samples/simplified-configuration-for-wcf-services.md).
+ To use the default endpoints provided by the runtime, do not specify any service endpoints in either the code or the configuration file. In this example, the runtime creates the default endpoints when the service is opened. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../simplified-configuration.md) and [Simplified Configuration for WCF Services](/previous-versions/dotnet/framework/wcf/samples/simplified-configuration-for-wcf-services).
 
 ```xml
 <configuration>

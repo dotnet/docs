@@ -11,9 +11,9 @@ ms.assetid: f2d34e43-fa8b-46d2-91cf-d2960e13e16b
 
 The *identity* feature of Windows Communication Foundation (WCF) enables a client to specify in advance the expected identity of the service. Whenever a server authenticates itself to the client, the identity is checked against the expected identity. (For an explanation of identity and how it works, see [Service Identity and Authentication](../feature-details/service-identity-and-authentication.md).)
 
- If needed, the verification can be customized using a custom identity verifier. For example, you can perform additional service identity verification checks. In this example, the custom identity verifier checks additional claims in the X.509 certificate returned from the server. For a sample application, see [Service Identity Sample](../samples/service-identity-sample.md).
+ If needed, the verification can be customized using a custom identity verifier. For example, you can perform additional service identity verification checks. In this example, the custom identity verifier checks additional claims in the X.509 certificate returned from the server. For a sample application, see [Service Identity Sample](/previous-versions/dotnet/framework/wcf/samples/service-identity-sample).
 
-## To extend the EndpointIdentity class
+### To extend the EndpointIdentity class
 
 1. Define a new class that derives from the <xref:System.ServiceModel.EndpointIdentity> class. This example names the extension `OrgEndpointIdentity`.
 
@@ -22,7 +22,7 @@ The *identity* feature of Windows Communication Foundation (WCF) enables a clien
      [!code-csharp[c_HowToSetCustomClientIdentity#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howtosetcustomclientidentity/cs/source.cs#6)]
      [!code-vb[c_HowToSetCustomClientIdentity#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howtosetcustomclientidentity/vb/source.vb#6)]
 
-## To extend the IdentityVerifier class
+### To extend the IdentityVerifier class
 
 1. Define a new class that derives from <xref:System.ServiceModel.Security.IdentityVerifier>. This example names the extension `CustomIdentityVerifier`.
 
@@ -38,7 +38,7 @@ The *identity* feature of Windows Communication Foundation (WCF) enables a clien
      [!code-csharp[c_HowToSetCustomClientIdentity#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howtosetcustomclientidentity/cs/source.cs#1)]
      [!code-vb[c_HowToSetCustomClientIdentity#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howtosetcustomclientidentity/vb/source.vb#1)]
 
-## To implement the TryGetIdentity method
+### To implement the TryGetIdentity method
 
 1. Implement the <xref:System.ServiceModel.Security.IdentityVerifier.TryGetIdentity%2A> method, which determines whether an instance of the <xref:System.ServiceModel.EndpointIdentity> class can be returned by the client. The WCF infrastructure calls the implementation of the `TryGetIdentity` method first to retrieve the service's identity from the message. Next, the infrastructure calls the `CheckAccess` implementation with the returned `EndpointIdentity` and <xref:System.IdentityModel.Policy.AuthorizationContext>.
 
@@ -47,7 +47,7 @@ The *identity* feature of Windows Communication Foundation (WCF) enables a clien
      [!code-csharp[c_HowToSetCustomClientIdentity#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howtosetcustomclientidentity/cs/source.cs#2)]
      [!code-vb[c_HowToSetCustomClientIdentity#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howtosetcustomclientidentity/vb/source.vb#2)]
 
-## To implement a custom binding and set the custom IdentityVerifier
+### To implement a custom binding and set the custom IdentityVerifier
 
 1. Create a method that returns a <xref:System.ServiceModel.Channels.Binding> object. This example begins creates an instance of the <xref:System.ServiceModel.WSHttpBinding> class and sets its security mode to <xref:System.ServiceModel.SecurityMode.Message>, and its <xref:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A> to <xref:System.ServiceModel.MessageCredentialType.None>.
 

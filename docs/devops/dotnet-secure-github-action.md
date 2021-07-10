@@ -3,14 +3,18 @@ title: Create a security scan GitHub Action
 description: In this quickstart, you will learn how to create a CodeQL GitHub Action to automate the discovery of vulnerabilities in your .NET codebase.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/06/2021
+ms.date: 07/09/2021
 ms.topic: quickstart
 recommendations: false
 ---
 
 # Quickstart: Create a security scan GitHub Action
 
-In this quickstart, you will learn how to create a CodeQL GitHub Action to automate the discovery of vulnerabilities in your .NET codebase. Automatically publishing your .NET code from GitHub to a destination is referred to as continuous deployment (CD).
+In this quickstart, you will learn how to create a CodeQL GitHub Action to automate the discovery of vulnerabilities in your .NET codebase.
+
+> In CodeQL, code is treated like data. Security vulnerabilities, bugs, and other errors are modeled as queries that can be executed against databases extracted from code.
+>
+> &mdash; [GitHub CodeQL: About](https://codeql.github.com/docs/codeql-overview/about-codeql)
 
 [!INCLUDE [prerequisites](includes/prerequisites.md)]
 

@@ -254,6 +254,8 @@ The following MSBuild properties are documented in this section:
 - [IsPublishable](#ispublishable)
 - [PreserveCompilationContext](#preservecompilationcontext)
 - [PreserveCompilationReferences](#preservecompilationreferences)
+- [RollForward](#rollforward)
+- [RuntimeFrameworkVersion](#runtimeframeworkversion)
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
 - [UseAppHost](#useapphost)
@@ -342,6 +344,34 @@ The `PreserveCompilationReferences` property is similar to the [PreserveCompilat
 ```
 
 For more information, see [Razor SDK properties](/aspnet/core/razor-pages/sdk#properties).
+
+### RollForward
+
+The `RollForward` property controls how the application chooses a runtime when multiple runtime versions are available. This value is output to the *.runtimeconfig.json* as the `rollForward` setting.
+
+```xml
+<PropertyGroup>
+  <RollForward>LatestMinor</RollForward>
+</PropertyGroup>
+```
+
+Set `RollForward` to one of the following values:
+
+[!INCLUDE [roll-forward-table](../../../includes/roll-forward-table.md)]
+
+For more information, see [Control roll-forward behavior](../versions/selection.md#control-roll-forward-behavior).
+
+### RuntimeFrameworkVersion
+
+The `RuntimeFrameworkVersion` property specifies the version of the runtime to use when publishing. Specify a runtime version:
+
+``` xml
+<PropertyGroup>
+  <RuntimeFrameworkVersion>5.0.7</RuntimeFrameworkVersion>
+</PropertyGroup>
+```
+
+When publishing a framework-dependent application, this value specifies the *minimum* version required. When publishing a self-contained application, this value specifies the *exact* version required.
 
 ### RuntimeIdentifier
 
@@ -796,7 +826,7 @@ For more information, see [Expose .NET components to COM](../native-interop/expo
 The `EnableDynamicLoading` property indicates that an assembly is a dynamically loaded component. The component could be a [COM library](/windows/win32/com/the-component-object-model) or a non-COM library that can be [used from a native host](../tutorials/netcore-hosting.md). Setting this property to `true` has the following effects:
 
 - A *.runtimeconfig.json* file is generated.
-- [Roll forward](../whats-new/dotnet-core-3-0.md#major-version-runtime-roll-forward) is set to `LatestMinor`.
+- [RollForward](#rollforward) is set to `LatestMinor`.
 - NuGet references are copied locally.
 
 ```xml

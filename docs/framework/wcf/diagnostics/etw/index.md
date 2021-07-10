@@ -28,5 +28,5 @@ Windows Communication Foundation (WCF) analytic tracing offers a way to capture 
 
 ## See also
 
-- [WCF Services and Event Tracing for Windows](/previous-versions/dotnet/framework/wcf/samples/wcf-services-and-event-tracing-for-windows)
-- [Tracking Events into Event Tracing in Windows](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/tracking-events-into-event-tracing-in-windows)
+- [WCF Services and Event Tracing for Windows](../../samples/wcf-services-and-event-tracing-for-windows.md)
+- [Tracking Events into Event Tracing in Windows](../../../windows-workflow-foundation/samples/tracking-events-into-event-tracing-in-windows.md)

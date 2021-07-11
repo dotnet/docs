@@ -248,7 +248,7 @@ The following table describes methods that can be used in a workflow builder cla
 
 Many of the methods in a builder class use and return an `M<'T>` construct, which is typically a separately defined type that characterizes the kind of computations being combined, for example, `Async<'T>` for asynchronous workflows and `Seq<'T>` for sequence workflows. The signatures of these methods enable them to be combined and nested with each other, so that the workflow object returned from one construct can be passed to the next.
 
-Many functions use the result of `Delay` as an argument: `Run`, `While`, `TryWith`, `TryFinally` and `Combine`. The `Delayed<'T>` type is the return type of `Delay` and consequently the parameter to these functions. `Delayed<'T>` can be an arbitrary type that does not need to be related to `M<'T>`; commonly `M<'T>` or `(unit -> M<'T>)` are used. The default implementation is `M<'T>`.
+Many functions use the result of `Delay` as an argument: `Run`, `While`, `TryWith`, `TryFinally` and `Combine`. The `Delayed<'T>` type is the return type of `Delay` and consequently the parameter to these functions. `Delayed<'T>` can be an arbitrary type that does not need to be related to `M<'T>`; commonly `M<'T>` or `(unit -> M<'T>)` are used. The default implementation is `M<'T>`. See [here](https://fsharpforfunandprofit.com/posts/computation-expressions-builder-part3/#understanding-the-type-constraints) for a more in-depth look.
 
 The compiler, when it parses a computation expression, converts the expression into a series of nested function calls by using the methods in the preceding table and the code in the computation expression. The nested expression is of the following form:
 
@@ -432,3 +432,4 @@ type FSharp.Linq.QueryBuilder with
 - [Asynchronous Workflows](asynchronous-workflows.md)
 - [Sequences](sequences.md)
 - [Query Expressions](query-expressions.md)
+- [Series on Computation Expressions from F# for Fun and Profit](https://fsharpforfunandprofit.com/posts/computation-expressions-intro/)

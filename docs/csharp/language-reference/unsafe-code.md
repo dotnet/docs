@@ -1,6 +1,6 @@
 ---
 title: "Unsafe code, pointers to data, and function pointers"
-description: Learn about unsafe code, pointers, and function pointers. C# requires you to declare an unsafe context to use these features to directly manipulate memory or function pointers.
+description: Learn about unsafe code, pointers, and function pointers. C# requires you to declare an unsafe context to use these features to directly manipulate memory or function pointers (unmanaged delegates).
 ms.date: 04/01/2021
 helpviewer_keywords: 
   - "security [C#], type safety"
@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "pointers [C#], about pointers"
 ms.assetid: b0fcca10-a92d-4f2a-835b-b0ccae6739ee
 ---
-# Unsafe code and pointer types
+# Unsafe code, pointer types, and function pointers
 
 Most of the C# code you write is "verifiably safe code." *Verifiably safe code* means .NET tools can verify that the code is safe. In general, safe code doesn't directly access memory using pointers. It also doesn't allocate raw memory. It creates managed objects instead.
 

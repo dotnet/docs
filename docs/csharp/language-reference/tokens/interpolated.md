@@ -1,7 +1,7 @@
 ---
 title: "$ - string interpolation - C# reference"
 description: String interpolation provides a more readable and convenient syntax to format string output than traditional string composite formatting.
-ms.date: 09/02/2019
+ms.date: 06/30/2021
 f1_keywords: 
   - "$_CSharpKeyword"
   - "$"
@@ -40,6 +40,8 @@ Elements in square brackets are optional. The following table describes each ele
 The following example uses optional formatting components described above:
 
 [!code-csharp-interactive[specify alignment and format string](~/samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#2)]
+
+Beginning with C# 10, you can use string interpolation to initialize a constant string when all the expressions used for placeholders are also constant strings. In other words, every *interpolationexpression* must be a string, and it must be a compile time constant.
 
 ## Special characters
 

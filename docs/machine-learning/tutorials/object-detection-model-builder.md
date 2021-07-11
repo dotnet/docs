@@ -3,7 +3,7 @@ title: 'Tutorial: Detect objects in images with Model Builder'
 description: This tutorial illustrates how to build an object detection model using ML.NET Model Builder and Azure ML to detect stop signs in images.
 author: briacht
 ms.author: brachtma
-ms.date: 04/13/2021
+ms.date: 07/07/2021
 ms.topic: tutorial
 ms.custom: mlnet-tooling
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to detect stop signs in images using Model Builder.
@@ -254,6 +254,23 @@ Two projects are created as a result of the training process.
 
     Top: 89.453415, Left: 481.95343, Right: 724.8073, Bottom: 388.32385, Label: Stop-Sign, Score: 0.99539465
     ```
+
+    > [!NOTE]
+    > **(Optional)** The bounding box coordinates are normalized for a width of 800 pixels and a height of 600 pixels. To scale the bounding box coordinates for your image in further post-processing, you need to:
+    >
+    >    1. Multiply the top and bottom coordinates by the original image height, and multiply the left and right coordinates by the original image width.
+    >    1. Divide the top and bottom coordinates by 600, and divide the left and right coordinates by 800.
+    >
+    >    For example, given the original image dimensions,`actualImageHeight` and `actualImageWidth`, and a `ModelOutput` called `prediction`, the following code snippet shows how to scale the `BoundingBox` coordinates:
+    >
+    >    ```csharp
+    >    var top = originalImageHeight * prediction.Top / 600;
+    >    var bottom = originalImageHeight * prediction.Bottom / 600;
+    >    var left = originalImageWidth * prediction.Left / 800;
+    >    var right = originalImageWidth * prediction.Right / 800;
+    >    ```
+    >
+    > An image may have more than one bounding box, so the same process needs to be applied to each of the bounding boxes in the image.
 
 Congratulations! You've successfully built a machine learning model to detect stop signs in images using Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/modelbuilder/ObjectDetection_StopSigns) GitHub repository.
 

@@ -24,7 +24,7 @@ The errors were introduced to prevent situations where you expect to be able to 
 If the referenced project doesn't need to be runnable from the output folder, you can set a property to avoid this error check:
 
 ```xml
-<ValidateExecutableReferencesMatchSelfContained>false<ValidateExecutableReferencesMatchSelfContained>
+<ValidateExecutableReferencesMatchSelfContained>false</ValidateExecutableReferencesMatchSelfContained>
 ```
 
 For more information, see [ValidateExecutableReferencesMatchSelfContained](../../../project-sdk/msbuild-props.md#validateexecutablereferencesmatchselfcontained).

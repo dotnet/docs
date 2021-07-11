@@ -172,4 +172,4 @@ This topic outlines the basic steps required to partition messages across multip
   
 ## See also
 
-- [Routing Services](../samples/routing-services.md)
+- [Routing Services](/previous-versions/dotnet/framework/wcf/samples/routing-services)

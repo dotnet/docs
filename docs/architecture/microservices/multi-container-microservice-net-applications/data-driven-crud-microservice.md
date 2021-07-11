@@ -1,7 +1,7 @@
 ---
 title: Creating a simple data-driven CRUD microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the creation of a simple CRUD (data-driven) microservice within the context of a microservices application.
-ms.date: 01/13/2021
+ms.date: 06/23/2021
 ---
 
 # Creating a simple data-driven CRUD microservice
@@ -229,7 +229,7 @@ You can use the ASP.NET Core settings and add a ConnectionString property to you
 ```json
 {
     "ConnectionString": "Server=tcp:127.0.0.1,5433;Initial Catalog=Microsoft.eShopOnContainers.Services.CatalogDb;User Id=sa;Password=[PLACEHOLDER]",
-    "ExternalCatalogBaseUrl": "http://localhost:5101",
+    "ExternalCatalogBaseUrl": "http://host.docker.internal:5101",
     "Logging": {
         "IncludeScopes": false,
         "LogLevel": {

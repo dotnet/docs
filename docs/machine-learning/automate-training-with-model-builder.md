@@ -235,8 +235,8 @@ After the evaluation phase, Model Builder outputs a model file, and code that yo
 
 In addition, Model Builder gives you the option to create projects that consume your model. Currently, Model Builder will create the following projects:
 
-- Console app - Creates a .NET Core console applications to make predictions from your model.
-- Web API - Creates an ASP.NET Core Web API that lets you consume your model over the internet.
+- **Console app:** Creates a .NET Core console applications to make predictions from your model.
+- **Web API:** Creates an ASP.NET Core Web API that lets you consume your model over the internet.
 
 ## What's next?
 

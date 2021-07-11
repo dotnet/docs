@@ -27,7 +27,7 @@ The `mbconfig` file keeps track of everything you do in Model Builder to allow y
 After training, two files are generated under the *.mbconfig file:
 
 - **Model.consumption.cs:** This file contains the `ModelInput` and `ModelOutput` schemas as well as the `Predict` function generated for consuming the model.
-- Model.training.cs: This file contains the training pipeline (data transforms, algorithm, algorithm hyperparameters) chosen by Model Builder to train the model. You can use this pipeline for re-training your model.
+- **Model.training.cs:** This file contains the training pipeline (data transforms, algorithm, algorithm hyperparameters) chosen by Model Builder to train the model. You can use this pipeline for re-training your model.
 - Model.zip: This is a serialized zip file which represents your trained ML.NET model.
 
 ## Scenario

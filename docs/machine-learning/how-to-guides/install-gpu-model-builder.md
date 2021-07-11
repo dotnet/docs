@@ -1,7 +1,7 @@
 ---
 title: How to install GPU support in Model Builder
 description: Learn how to install GPU support in Model Builder
-ms.date: 04/08/2021
+ms.date: 07/11/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.topic: how-to
@@ -41,3 +41,8 @@ Follow instructions provided:
 1. Open Device Manager
 1. Look at Display adapters
 1. Install appropriate [driver](https://www.nvidia.com/drivers) for your GPU.
+
+**How do I see what version of CUDA I have?**
+
+1. Open a PowerShell or command line window
+1. Type in `nvcc --version`

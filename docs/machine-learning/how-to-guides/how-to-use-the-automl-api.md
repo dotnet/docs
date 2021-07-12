@@ -126,16 +126,16 @@ The list of supported trainers per ML task can be found at the corresponding lin
 
 The optimizing metric, as shown in the example above, determines the metric to be optimized during model training. The optimizing metric you can select is determined by the task type you choose. Below is a list of available metrics.
 
-|[Binary Classification](xref:Microsoft.ML.AutoML.BinaryClassificationMetric) | [Multiclass Classification](xref:Microsoft.ML.AutoML.MulticlassClassificationMetric) |[Regression & Recommendation](xref:Microsoft.ML.AutoML.RegressionMetric) |
-|-- |-- |--
-|Accuracy| LogLoss | RSquared
-|AreaUnderPrecisionRecallCurve | LogLossReduction | MeanAbsoluteError
-|AreaUnderRocCurve | MacroAccuracy | MeanSquaredError
-|F1Score | MicroAccuracy | RootMeanSquaredError
-|NegativePrecision | TopKAccuracy
-|NegativeRecall |
-|PositivePrecision
-|PositiveRecall
+|[Binary Classification](xref:Microsoft.ML.AutoML.BinaryClassificationMetric)  | [Multiclass Classification](xref:Microsoft.ML.AutoML.MulticlassClassificationMetric) | [Regression & Recommendation](xref:Microsoft.ML.AutoML.RegressionMetric)  | [Ranking](xref:Microsoft.ML.AutoML.RankingMetric)  |
+|---------|---------|---------|---------|
+|Accuracy                     | LogLoss         | RSquared             | Discounted Cumulative Gains            |
+|AreaUnderPrecisionRecallCurve| LogLossReduction| MeanAbsoluteError    | Normalized Discounted Cumulative Gains |
+|AreaUnderRocCurve            | MacroAccuracy   | MeanSquaredError     |                                        |
+|F1Score                      | MicroAccuracy   | RootMeanSquaredError |                                        |
+|NegativePrecision            | TopKAccuracy    |                      |                                        |
+|NegativeRecall               |                 |                      |                                        |
+|PositivePrecision            |                 |                      |                                        |
+|PositiveRecall               |                 |                      |                                        |
 
 ## Data pre-processing and featurization
 

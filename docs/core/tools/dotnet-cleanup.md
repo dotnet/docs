@@ -77,7 +77,7 @@ The MSBuild project or solution to run code formatting on. If a project or solut
 
 ## Examples
 
-* Cleans up all code in the solution:
+* Clean up all code in the solution:
 
   ```dotnetcli
   dotnet cleanup ./solution.sln

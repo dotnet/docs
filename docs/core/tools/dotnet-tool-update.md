@@ -53,6 +53,7 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
   Name/ID of the NuGet package that contains the .NET global tool to update. You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
 
 ## Options
+<!-- markdownlint-disable MD012 -->
 
 [!INCLUDE [cli-add-source](../../../includes/cli-add-source.md)]
 

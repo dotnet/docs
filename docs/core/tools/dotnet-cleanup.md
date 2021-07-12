@@ -1,7 +1,7 @@
 ---
 title: dotnet cleanup command
 description: The dotnet cleanup command cleans up code formatting to match editorconfig settings for the current directory.
-ms.date: 07/12/2020
+ms.date: 07/12/2021
 ---
 # dotnet cleanup
 

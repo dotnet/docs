@@ -23,7 +23,7 @@ dotnet sdk check -h|--help
 
 The `dotnet sdk check` command makes it easier to track when new versions of the SDK and Runtimes are available. Within each feature band it tells you:
 
-* What is latest available version of the .NET SDK and .NET Runtime.
+* The latest available version of the .NET SDK and .NET Runtime.
 * Whether your installed versions are up-to-date or out of support.
 
 Here's an example of output from the command:

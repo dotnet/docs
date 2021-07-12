@@ -54,17 +54,13 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
 ## Options
 
-- **`--add-source <SOURCE>`**
 
-  Adds an additional NuGet package source to use during installation.
 
 - **`--configfile <FILE>`**
 
   The NuGet configuration (*nuget.config*) file to use.
 
-- **`--disable-parallel`**
 
-  Prevent restoring multiple projects in parallel.
 
 - **`--framework <FRAMEWORK>`**
 

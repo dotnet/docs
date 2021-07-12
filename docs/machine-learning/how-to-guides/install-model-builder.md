@@ -48,7 +48,7 @@ ML.NET Model builder can be installed either through the Visual Studio Marketpla
 
 1. Check **Enable ML.NET Model Builder**
 
-    ![Enable Model Builder](./media/install-model-builder/vs-enable-model-builder.png)
+    ![Enable Model Builder in Visual Studio](./media/install-model-builder/vs-enable-model-builder.png)
 
 ## Uninstall
 

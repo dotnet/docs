@@ -6,7 +6,7 @@ ms.assetid: ecd6a62f-9619-4778-a497-6f888087a9ea
 ---
 # Usage of Standard Endpoints
 
-This sample demonstrates how to use standard endpoints in service configuration files. A standard endpoint allows the user to simplify endpoint definitions by using a single property to describe an address, binding and contract combination with additional properties associated to it. This sample demonstrates how to define and implement a custom standard endpoint and how to define specific properties in the endpoint.
+The [StandardEndpoints sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how to use standard endpoints in service configuration files. A standard endpoint allows the user to simplify endpoint definitions by using a single property to describe an address, binding and contract combination with additional properties associated to it. This sample demonstrates how to define and implement a custom standard endpoint and how to define specific properties in the endpoint.
 
 ## Sample Details
 
@@ -130,11 +130,11 @@ public class CustomEndpoint : ServiceEndpoint
 }
 ```
 
- To perform the communication between service and client, a service reference is created in the client to the service. When the sample is built and executed, the service executes and the client communicates with it. Note that the service reference should be updated every time there is some change in the service.
+To perform the communication between service and client, a service reference is created in the client to the service. When the sample is built and executed, the service executes and the client communicates with it. Note that the service reference should be updated every time there is some change in the service.
 
 #### To use this sample
 
-1. Using Visual Studio 2012, open the StandardEndpoints.sln file.
+1. Using Visual Studio, open the StandardEndpoints.sln file.
 
 2. Enable multiple projects to start up.
 
@@ -148,7 +148,7 @@ public class CustomEndpoint : ServiceEndpoint
 
          This specifies that the Client project is executed after the Service project.
 
-3. To run the solution, press F5.
+3. To run the solution, press **F5**.
 
 > [!NOTE]
 > If these steps don't work, then make sure that your environment has been properly set up, using the following steps:
@@ -156,12 +156,3 @@ public class CustomEndpoint : ServiceEndpoint
 > 1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).
 > 2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).
 > 3. To run the sample in a single or multiple computer configurations, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory doesn't exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\StandardEndpoints`

@@ -208,14 +208,14 @@ public class CustomX509CertificateValidator : X509CertificateValidator
 }
 ```
 
- Once the validator is implemented in service code, the service host must be informed about the validator instance to use. This is done using the following code.
+Once the validator is implemented in service code, the service host must be informed about the validator instance to use. This is done using the following code.
 
 ```csharp
 serviceHost.Credentials.ClientCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.Custom;
 serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValidator = new CustomX509CertificateValidator();
 ```
 
- Or you can do the same thing in configuration as follows.
+Or you can do the same thing in configuration as follows.
 
 ```xml
 <behaviors>
@@ -306,10 +306,10 @@ The following provides a brief overview of the different sections of the batch f
 
 #### To run the sample on the same computer
 
-1. Run Setup.bat from the sample install folder inside a Visual Studio 2012 command prompt opened with administrator privileges. This installs all the certificates required for running the sample.
+1. Run Setup.bat from the sample install folder inside a Visual Studio command prompt opened with administrator privileges. This installs all the certificates required for running the sample.
 
     > [!IMPORTANT]
-    > The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.
+    > The Setup.bat batch file is designed to be run from a Visual Studio Command Prompt. The PATH environment variable set within the Visual Studio Command Prompt points to the directory that contains executables required by the Setup.bat script.
 
 2. Launch Service.exe from service\bin.
 

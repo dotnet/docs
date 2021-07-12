@@ -6,7 +6,7 @@ ms.assetid: 6a37a754-6b8c-4ebe-bdf2-d4f0520271d5
 ---
 # Discovery with Scopes Sample
 
-This sample shows how to use scopes to categorize discoverable endpoints as well how to use <xref:System.ServiceModel.Discovery.DiscoveryClient> to perform an asynchronous search for endpoints. On the service, this sample shows how to customize discovery for each endpoint by adding an endpoint discovery behavior and using it to add a scope to the endpoint as well as controlling the endpoint’s discoverability. On the client, the sample goes over how clients can create a <xref:System.ServiceModel.Discovery.DiscoveryClient> and fine tune search parameters to include scopes by adding scopes to the <xref:System.ServiceModel.Discovery.FindCriteria>. This sample also shows how clients can restrict responses by adding a termination criterion.
+The [DiscoveryWithScopes sample](https://github.com/dotnet/samples/tree/main/framework/wcf) shows how to use scopes to categorize discoverable endpoints as well how to use <xref:System.ServiceModel.Discovery.DiscoveryClient> to perform an asynchronous search for endpoints. On the service, this sample shows how to customize discovery for each endpoint by adding an endpoint discovery behavior and using it to add a scope to the endpoint as well as controlling the endpoint's discoverability. On the client, the sample goes over how clients can create a <xref:System.ServiceModel.Discovery.DiscoveryClient> and fine tune search parameters to include scopes by adding scopes to the <xref:System.ServiceModel.Discovery.FindCriteria>. This sample also shows how clients can restrict responses by adding a termination criterion.
 
 ## Service Features
 
@@ -25,12 +25,3 @@ The `FindCalculatorServiceAddress()` method shows how to use a <xref:System.Serv
 3. Run the service executable from the build directory.
 
 4. Run the client executable. Note that the client is able to locate the service.
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Discovery\DiscoveryWithScopes`

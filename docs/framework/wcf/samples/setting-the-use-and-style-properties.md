@@ -6,7 +6,7 @@ ms.assetid: c09a0600-116f-41cf-900a-1b7e4ea4e300
 ---
 # Setting the Use and Style Properties
 
-This sample demonstrates how to use the Use and Style properties on the <xref:System.ServiceModel.XmlSerializerFormatAttribute> and the <xref:System.ServiceModel.DataContractFormatAttribute>. These properties affect how messages are formatted. By default, the message body is formatted with the style set to <xref:System.ServiceModel.OperationFormatStyle.Document>. These settings can be specified at either the service contract level or the operation contract level.
+The [UseAndStyle sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how to use the Use and Style properties on the <xref:System.ServiceModel.XmlSerializerFormatAttribute> and the <xref:System.ServiceModel.DataContractFormatAttribute>. These properties affect how messages are formatted. By default, the message body is formatted with the style set to <xref:System.ServiceModel.OperationFormatStyle.Document>. These settings can be specified at either the service contract level or the operation contract level.
 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
@@ -80,12 +80,3 @@ To see the difference between the different <xref:System.ServiceModel.XmlSeriali
 3. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
 4. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Message\UseAndStyle`

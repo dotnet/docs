@@ -7,7 +7,7 @@ ms.assetid: 71f5cb8d-f1df-4e1e-b8a2-98e734a75c37
 
 # Transacted MSMQ Binding
 
-This sample demonstrates how to perform transacted queued communication by using Message Queuing (MSMQ).
+The [Transacted sample](https://github.com/dotnet/samples/tree/main/framework/wcf/Basic/Binding/Net/MSMQ/Transacted/CS) demonstrates how to perform transacted queued communication by using Message Queuing (MSMQ).
 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
@@ -34,7 +34,7 @@ The service behavior defines an operation behavior with `TransactionScopeRequire
 ```csharp
  // This service class that implements the service contract.
  // This added code writes output to the console window.
- public class OrderProcessorService : IOrderProcessor
+public class OrderProcessorService : IOrderProcessor
  {
      [OperationBehavior(TransactionScopeRequired = true, TransactionAutoComplete = true)]
      public void SubmitPurchaseOrder(PurchaseOrder po)
@@ -225,12 +225,3 @@ By default with the <xref:System.ServiceModel.NetMsmqBinding>, transport securit
 
     > [!NOTE]
     > Setting `security mode` to `None` is equivalent to setting <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A>, <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A>, and `Message` security to `None`.
-
-> [!IMPORTANT]
-> The samples may already be installed on your computer. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\Transacted`

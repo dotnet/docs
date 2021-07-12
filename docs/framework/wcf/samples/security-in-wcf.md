@@ -6,9 +6,9 @@ ms.assetid: 05d73638-30a9-43b4-8c86-f27f57b6eef1
 ---
 # Security in WCF
 
-This section contains samples relating to Windows Communication Foundation (WCF) security.  
-  
-## In This Section  
+This section contains samples relating to Windows Communication Foundation (WCF) security.
 
- [Cryptographic Agility in WCF Security](cryptographic-agility-in-wcf-security.md)  
- Demonstrates how to specify in a standard or custom algorithm to provide a cryptographic, agile implementation in a WCF client and service.
+## In This Section
+
+ [Cryptographic Agility in WCF Security](cryptographic-agility-in-wcf-security.md)
+Demonstrates how to specify in a standard or custom algorithm to provide a cryptographic, agile implementation in a WCF client and service.

@@ -11,7 +11,7 @@ This sample demonstrates how to implement a custom claim authorization policy an
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
 
- In summary, this sample demonstrates how:
+In summary, this sample demonstrates how:
 
 - The client can be authenticated using a user name-password.
 

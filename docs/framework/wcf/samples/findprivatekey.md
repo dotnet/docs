@@ -2,7 +2,7 @@
 description: "Learn more about: FindPrivateKey sample"
 title: "FindPrivateKey sample"
 ms.date: "12/04/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "FindPrivateKey"
 ms.assetid: 16b54116-0ceb-4413-af0c-753bb2a785a6
 ---
@@ -27,7 +27,7 @@ When accessing a certificate for which the process doesn't have read privilege, 
 
 ```output
 System.ArgumentException was unhandled
-Message="The certificate 'CN=localhost' must have a private key that is capable of key exchange.  The process must have access rights for the private key."
+Message="The certificate 'CN=localhost' must have a private key that is capable of key exchange. The process must have access rights for the private key."
 Source="System.ServiceModel"
 ```
 
@@ -36,18 +36,6 @@ When this occurs, use the FindPrivateKey tool to find the private key file, and 
 ```console
 cacls.exe "C:\Documents and Settings\All Users\Application Data\Microsoft\Crypto\RSA\MachineKeys\8aeda5eb81555f14f8f9960745b5a40d_38f7de48-5ee9-452d-8a5a-92789d7110b1" /E /G "NETWORK SERVICE":R
 ```
-
-#### To build the FindPrivateKey project
-
-To download the project, visit [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459).
-
-1. Open File Explorer and navigate to the *WF_WCF_Samples\WCF\Setup\FindPrivateKey\CS* folder under the directory location where you installed the sample.
-
-2. Double-click the .sln file icon to open the file in Visual Studio.
-
-3. In the **Build** menu, select **Rebuild Solution**.
-
-4. Building the solution generates the file: FindPrivateKey.exe.
 
 ## Conventions—Command-Line entries
 

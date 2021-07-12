@@ -7,7 +7,7 @@ ms.assetid: 0d012f64-51c7-41d0-8e18-c756f658ee3d
 
 # Volatile Queued Communication
 
-This sample demonstrates how to perform volatile queued communication over the Message Queuing (MSMQ) transport. This sample uses <xref:System.ServiceModel.NetMsmqBinding>. The service in this case is a self-hosted console application to enable you to observe the service receiving queued messages.
+The [Volatile sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how to perform volatile queued communication over the Message Queuing (MSMQ) transport. This sample uses <xref:System.ServiceModel.NetMsmqBinding>. The service in this case is a self-hosted console application to enable you to observe the service receiving queued messages.
 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
@@ -214,12 +214,3 @@ By default with the <xref:System.ServiceModel.NetMsmqBinding>, transport securit
 
     > [!NOTE]
     > Setting `security mode` to `None` is equivalent to setting <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A>, <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A>, and `Message` security to `None`.
-
-> [!IMPORTANT]
-> The samples may already be installed on your computer. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\Volatile`

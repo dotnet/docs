@@ -9,19 +9,10 @@ ms.assetid: 56fe3687-a34b-4661-8e30-b33770f413fa
 ---
 # IIS Hosting Using Inline Code
 
-This sample demonstrates how to implement a service hosted by Internet Information Services (IIS), where the service code is contained in-line in a .svc file and is compiled on demand. Service code can also be implemented directly in source code files located in the application's \App_Code directory, or compiled into assembly deployed in \bin. This sample does not demonstrate these techniques.
+The [InlineCode sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how to implement a service hosted by Internet Information Services (IIS), where the service code is contained in-line in a .svc file and is compiled on demand. Service code can also be implemented directly in source code files located in the application's \App_Code directory, or compiled into assembly deployed in \bin. This sample does not demonstrate these techniques.
 
 > [!NOTE]
 > The set-up procedure and build instructions for this sample are located at the end of this topic.
-
-> [!IMPORTANT]
-> The samples may already be installed on your computer. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Hosting\WebHost\InlineCode`
 
 The sample demonstrates a typical service that implements a contract that defines a request-reply communication pattern. The service is hosted in IIS and the service code is entirely contained in the Service.svc file. The service is host-activated and compiled on-demand by the first message sent to the service. There is no pre-compilation necessary. The service implements an `ICalculator` contract as defined in the following code:
 

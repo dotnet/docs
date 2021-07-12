@@ -6,19 +6,19 @@ ms.assetid: eda4355d-0bd0-4dc9-80a2-d2c832152272
 ---
 # WCF Services and Event Tracing for Windows
 
-This sample demonstrates how to use the analytic tracing in Windows Communication Foundation (WCF) to emit events in Event Tracing for Windows (ETW). The analytic traces are events emitted at key points in the WCF stack that allow troubleshooting of WCF services in production environment.
+The [ETWTracing sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how to use the analytic tracing in Windows Communication Foundation (WCF) to emit events in Event Tracing for Windows (ETW). The analytic traces are events emitted at key points in the WCF stack that allow troubleshooting of WCF services in production environment.
 
- Analytic trace in WCF services is tracing that can be turned on in a production environment with minimal impact on performance. These traces are emitted as events to an ETW session.
+Analytic trace in WCF services is tracing that can be turned on in a production environment with minimal impact on performance. These traces are emitted as events to an ETW session.
 
- This sample includes a basic WCF service in which events are emitted from the service to the event log, which can be viewed using Event Viewer. It is also possible to start a dedicated ETW session that listens for events from the WCF service. The sample includes a script to create a dedicated ETW session that stores events in a binary file that can be read using Event Viewer.
+This sample includes a basic WCF service in which events are emitted from the service to the event log, which can be viewed using Event Viewer. It is also possible to start a dedicated ETW session that listens for events from the WCF service. The sample includes a script to create a dedicated ETW session that stores events in a binary file that can be read using Event Viewer.
 
 #### To use this sample
 
-1. Using Visual Studio 2012, open the EtwAnalyticTraceSample.sln solution file.
+1. Using Visual Studio, open the EtwAnalyticTraceSample.sln solution file.
 
-2. To build the solution, press CTRL+SHIFT+B.
+2. To build the solution, press **Ctrl**+**Shift**+**B**.
 
-3. To run the solution, press CTRL+F5.
+3. To run the solution, press **Ctrl**+**F5**.
 
      In the Web browser, click **Calculator.svc**. The URI of the WSDL document for the service should appear in the browser. Copy that URI.
 
@@ -26,7 +26,7 @@ This sample demonstrates how to use the analytic tracing in Windows Communicatio
 
 4. Run the WCF test client (WcfTestClient.exe).
 
-     The WCF test client (WcfTestClient.exe) is located at `\<Visual Studio 2012 Install Dir>\Common7\IDE\WcfTestClient.exe`.  The default Visual Studio 2012 install dir is `C:\Program Files\Microsoft Visual Studio 10.0`.
+     The WCF test client (WcfTestClient.exe) is located at `\<Visual Studio Install Dir>\Common7\IDE\WcfTestClient.exe`.
 
 5. Within the WCF test client, add the service by selecting **File**, and then **Add Service**.
 
@@ -36,7 +36,7 @@ This sample demonstrates how to use the analytic tracing in Windows Communicatio
 
      Before invoking the service, start Event Viewer and ensure that the event log is listening for tracking events emitted from the WCF service.
 
-7. From the **Start** menu, select **Administrative Tools**, and then **Event Viewer**.  Enable the **Analytic** and **Debug** logs.
+7. From the **Start** menu, select **Administrative Tools**, and then **Event Viewer**. Enable the **Analytic** and **Debug** logs.
 
 8. In the tree view in Event Viewer, navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, and then **Application Server-Applications**. Right-click **Application Server-Applications**, select **View**, and then **Show Analytic and Debug Logs**.
 
@@ -62,7 +62,7 @@ This sample demonstrates how to use the analytic tracing in Windows Communicatio
 
      Refresh the analytic channel to view the WCF events do not include any error events.
 
- The sample demonstrates the analytic trace events emitted from a WCF service.
+The sample demonstrates the analytic trace events emitted from a WCF service.
 
 #### To cleanup (Optional)
 
@@ -74,15 +74,6 @@ This sample demonstrates how to use the analytic tracing in Windows Communicatio
 
 4. Choose the **Clear** option to clear the events.
 
-> [!IMPORTANT]
-> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
->
-> `<InstallDrive>:\WF_WCF_Samples`  
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ETWTracing`  
-  
 ## See also
 
 - [AppFabric Monitoring Samples](/previous-versions/appfabric/ff383407(v=azure.10))

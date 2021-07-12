@@ -6,7 +6,7 @@ ms.assetid: 88242b99-4811-4cbe-8201-52ddf48fb174
 ---
 # AJAX Service Using Complex Types Sample
 
-This sample demonstrates how to use Windows Communication Foundation (WCF) to create an ASP.NET Asynchronous JavaScript and XML (AJAX) service that creates instances of complex types and sends them between service and client as JavaScript Object Notation (JSON). You can access an AJAX service by using JavaScript code from a Web browser client. This sample builds on the [Basic AJAX Service](basic-ajax-service.md) sample.
+The [ComplexTypeAjaxService sample](https://github.com/dotnet/samples/tree/main/framework/wcf/Basic/Ajax/ComplexTypeAjaxService) demonstrates how to use Windows Communication Foundation (WCF) to create an ASP.NET Asynchronous JavaScript and XML (AJAX) service that creates instances of complex types and sends them between service and client as JavaScript Object Notation (JSON). You can access an AJAX service by using JavaScript code from a Web browser client. This sample builds on the [Basic AJAX Service](basic-ajax-service.md) sample.
 
 AJAX support in WCF is optimized for use with ASP.NET AJAX through the <xref:System.Web.UI.ScriptManager> control. For an example of using WCF with ASP.NET AJAX, see the [AJAX Samples](ajax.md).
 
@@ -52,15 +52,6 @@ function onSuccess(mathResult){
 2. Build the solution ComplexTypeAjaxService.sln as described in [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
 3. Navigate to `http://localhost/ServiceModelSamples/ComplexTypeClientPage.aspx` (do not open ComplexTypeClientPage.aspx in the browser from the project directory).
-
-> [!IMPORTANT]
-> The samples may already be installed on your computer. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Ajax\ComplexTypeAjaxService`
 
 ## See also
 

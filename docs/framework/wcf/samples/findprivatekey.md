@@ -11,7 +11,7 @@ ms.assetid: 16b54116-0ceb-4413-af0c-753bb2a785a6
 It can be difficult to find the location and name of the private key file associated with a specific X.509 certificate in the certificate store. The FindPrivateKey.exe tool facilitates this process.
 
 > [!IMPORTANT]
-> FindPrivateKey is a sample that needs to be compiled prior to use. See the [To build the FindPrivateKey project](#to-build-the-findprivatekey-project) section for instructions on how to build the FindPrivateKey tool.
+> You must build the [FindPrivateKey sample](https://github.com/dotnet/samples/tree/main/framework/wcf/Setup/FindPrivateKey/CS) before using it.
 
 X.509 certificates are installed by an Administrator or any user in the machine. However, the certificate may be accessed by a service running under a different account. For example, the NETWORK SERVICE account.
 
@@ -21,7 +21,7 @@ The samples that use certificates for security use the FindPrivateKey tool in th
 
 When running a Windows Communication Foundation (WCF) service under a user account, such as a self-hosted executable, ensure that the user account has read-only access to the file. When running a WCF service under Internet Information Services (IIS) the default accounts that the service runs under are the NETWORK SERVICE on IIS 7 and earlier versions, or Application Pool Identity on IIS 7.5 and later versions. For more information, see [Application Pool Identities](/iis/manage/configuring-security/application-pool-identities).
 
-## Examples
+## Read privileges
 
 When accessing a certificate for which the process doesn't have read privilege, you see an exception message similar to the following example:
 
@@ -65,7 +65,7 @@ Where:
 
 If no parameters are specified at the command prompt, then help text with this information is displayed.
 
-## Examples
+### Examples
 
 This example finds the filename of the certificate with a subject name of "CN=localhost", in the Personal store of the Current User.
 

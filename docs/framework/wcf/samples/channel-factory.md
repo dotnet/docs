@@ -62,7 +62,8 @@ Press <ENTER> to terminate client.
 
 ### To run the sample cross machine
 
-1. Replace "localhost" in the following code with the fully-qualified name of the machine that is running the service.
+Replace "localhost" in the following code with the fully-qualified name of the machine that is running the service.
 
-    ```csharp
-    EndpointAddress address = new EndpointAddress("http://localhost/servicemodelsamples/service.svc");
+```csharp
+EndpointAddress address = new EndpointAddress("http://localhost/servicemodelsamples/service.svc");
+```

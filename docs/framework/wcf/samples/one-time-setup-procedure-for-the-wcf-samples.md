@@ -38,7 +38,7 @@ The **ServiceModelSamples** virtual directory is used for building and running a
 
 5. Follow the [Firewall Instructions](firewall-instructions.md) for enabling the ports used by the samples.
 
-9. Run the [Setupvroot.bat batch file](/dotnet/samples/blob/main/framework/wcf/Setup/setupvroot.bat). The following steps are performed:
+6. Run the [Setupvroot.bat batch file](/dotnet/samples/blob/main/framework/wcf/Setup/setupvroot.bat). The following steps are performed:
 
     - A virtual directory is created in IIS named ServiceModelSamples.
 
@@ -49,14 +49,14 @@ The **ServiceModelSamples** virtual directory is used for building and running a
     > [!NOTE]
     > This procedure must be performed only once on a computer, unless you run cleanupvroot.bat.
 
-10. You must grant permission to modify for %SystemDrive%\inetpub\wwwroot to the account under which you are building the samples and the Network Service user. While building, some Web-hosted samples might attempt to copy the compiled binaries to the previously mentioned location, and if you have not set the appropriate permissions, the build will break. Alternatively, you can leave the permissions as they are and run the SDK command prompt or Visual Studio Command Prompt (2012) as Administrator, or build the samples in Visual Studio 2012, also run as Administrator.
+7. You must grant permission to modify for %SystemDrive%\inetpub\wwwroot to the account under which you are building the samples and the Network Service user. While building, some Web-hosted samples might attempt to copy the compiled binaries to the previously mentioned location, and if you have not set the appropriate permissions, the build will break. Alternatively, you can leave the permissions as they are and run the SDK command prompt or Visual Studio Command Prompt (2012) as Administrator, or build the samples in Visual Studio 2012, also run as Administrator.
 
     > [!NOTE]
     > If this step is not completed, all IIS-hosted samples will fail while building. Ensure that you set the permissions correctly, or run both the SDK command prompt and Visual Studio Command Prompt as Administrator.
 
-11. Create a C:\logs directory on the computer because some samples might be expecting it. Make sure that the appropriate account has write access granted to this folder. For Windows 7, Windows Vista, and Windows Server 2008 R2, this account is **Network Service**. For  Windows Server 2008, the account is NT Authority\Network Service. For Windows XP and Windows Server 2003, the account is ASPNET.
+8. Create a C:\logs directory on the computer because some samples might be expecting it. Make sure that the appropriate account has write access granted to this folder. For Windows 7, Windows Vista, and Windows Server 2008 R2, this account is **Network Service**. For  Windows Server 2008, the account is NT Authority\Network Service. For Windows XP and Windows Server 2003, the account is ASPNET.
 
-12. Run the [Setupcerttool.bat file](/dotnet/samples/blob/main/framework/wcf/Setup/setupCertTool.bat). This script performs the following tasks:
+9. Run the [Setupcerttool.bat file](/dotnet/samples/blob/main/framework/wcf/Setup/setupCertTool.bat). This script performs the following tasks:
 
     - Builds the [FindPrivateKey tool](/dotnet/samples/tree/main/framework/wcf/Setup/FindPrivateKey/CS).
 
@@ -69,11 +69,11 @@ The **ServiceModelSamples** virtual directory is used for building and running a
     > [!NOTE]
     > For security purposes, remember to remove the virtual directory definition and permissions granted in the setup steps above by running the batch file named [cleanupvroot.bat](/dotnet/samples/blob/main/framework/wcf/Setup/cleanupvroot.bat) after you're finished with the samples.
 
-13. Samples that are self-hosted (not hosted in IIS) require permission to register HTTP addresses on the computer for listening. The permission for an HTTP namespace reservation comes from the user account used to run the sample. By default, administrator accounts have the permission to register any HTTP address. Non-administrator accounts must be granted permission for the HTTP namespaces used by the samples. For more information about how to configure namespace reservations, see [Configuring HTTP and HTTPS](../feature-details/configuring-http-and-https.md).
+10. Samples that are self-hosted (not hosted in IIS) require permission to register HTTP addresses on the computer for listening. The permission for an HTTP namespace reservation comes from the user account used to run the sample. By default, administrator accounts have the permission to register any HTTP address. Non-administrator accounts must be granted permission for the HTTP namespaces used by the samples. For more information about how to configure namespace reservations, see [Configuring HTTP and HTTPS](../feature-details/configuring-http-and-https.md).
 
-14. Some samples require Message Queuing. See [Installing Message Queuing (MSMQ)](installing-message-queuing-msmq.md) for installation instructions.
+11. Some samples require Message Queuing. See [Installing Message Queuing (MSMQ)](installing-message-queuing-msmq.md) for installation instructions.
 
     > [!NOTE]
     > Ensure that you start the MSMQ service before you run any samples that require Message Queuing.
 
-15. Some samples require certificates. See [Internet Information Services (IIS) Server Certificate Installation Instructions](iis-server-certificate-installation-instructions.md).
+12. Some samples require certificates. See [Internet Information Services (IIS) Server Certificate Installation Instructions](iis-server-certificate-installation-instructions.md).

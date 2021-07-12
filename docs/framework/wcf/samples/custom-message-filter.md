@@ -6,7 +6,7 @@ ms.assetid: 98dd0af8-fce6-4255-ac32-42eb547eea67
 ---
 # Custom Message Filter
 
-The [MessageFilter sample](MessageFilter) demonstrates how to replace the message filters that Windows Communication Foundation (WCF) uses to dispatch messages to endpoints.
+The [MessageFilter sample](https://github.com/dotnet/samples/tree/main/framework/wcf/Extensibility/MessageFilter/CS) demonstrates how to replace the message filters that Windows Communication Foundation (WCF) uses to dispatch messages to endpoints.
 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.

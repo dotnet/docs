@@ -83,7 +83,7 @@ The MSBuild project or solution to run code formatting on. If a project or solut
   dotnet cleanup ./solution.sln
   ```
 
-* Cleans up all code in the application project:
+* Clean up all code in the application project:
 
   ```dotnetcli
   dotnet cleanup ./src/application.csproj

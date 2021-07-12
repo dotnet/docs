@@ -54,13 +54,13 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
 ## Options
 
-
+[!INCLUDE [cli-add-source](../../../includes/cli-add-source.md)]
 
 - **`--configfile <FILE>`**
 
   The NuGet configuration (*nuget.config*) file to use.
 
-
+[!INCLUDE [cli-disable-parallel](../../../includes/cli-disable-parallel.md)]
 
 - **`--framework <FRAMEWORK>`**
 

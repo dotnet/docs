@@ -5,7 +5,7 @@ ms.date: 07/12/2021
 ---
 # dotnet cleanup
 
-**This article applies to:** ✔️ .NET Core 6.x SDK and later versions
+**This article applies to:** ✔️ .NET 6.x SDK and later versions
 
 ## Name
 

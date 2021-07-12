@@ -69,7 +69,7 @@ The MSBuild project or solution to run code formatting on. If a project or solut
 
 * **`--report <report-path>`**
 
-  Accepts a file path, which if provided, will produce a json report in the given directory.
+  Produces a JSON report in the directory specified by `<REPORT_PATH>`.
 
 * **`-h|--help`**
 

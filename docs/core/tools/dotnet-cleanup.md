@@ -45,7 +45,7 @@ The MSBuild project or solution to run code formatting on. If a project or solut
 
 * **`--include <include>`**
 
-  A list of relative file or folder paths to include in formatting. All files are formatted if empty.
+  A list of relative file or folder paths to include in formatting. All files in the current directory are formatted if empty.
 
 * **`--exclude <exclude>`**
 

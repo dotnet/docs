@@ -51,7 +51,7 @@ Specifies settings that enable auditing of security events during service operat
 
  This configuration element is used to audit Windows Communication Foundation (WCF) authentication events. When auditing is enabled, either successful or failed authentication attempts (or both) can be audited. The events are written to one of three event logs: application, security, or the default log for the operating system version. The event logs can all be viewed using the Windows Event viewer.  
   
- For a detailed example of using this configuration element, see [Service Auditing Behavior](/previous-versions/dotnet/framework/wcf/samples/service-auditing-behavior).  
+ For a detailed example of using this configuration element, see [Service Auditing Behavior](../../../wcf/samples/service-auditing-behavior.md).  
   
  By default, on Windows XP the audit events can be seen in the Application Log; while on Windows Server 2003 and Windows Vista, the audit events can be seen in the Security Log. The location of audit events can be specified by setting the `auditLogLocation` attribute to 'Application' or 'Security'. For more information, see [How to: Audit Security Events](../../../wcf/feature-details/how-to-audit-wcf-security-events.md). If the events are written in the Security Log, the LocalSecurityPolicy-> Enable Object Access should be set for "Success" and "Failure".  
   
@@ -85,4 +85,4 @@ Specifies settings that enable auditing of security events during service operat
 - [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)
 - [Auditing](../../../wcf/feature-details/auditing-security-events.md)
 - [How to: Audit Security Events](../../../wcf/feature-details/how-to-audit-wcf-security-events.md)
-- [Service Auditing Behavior](/previous-versions/dotnet/framework/wcf/samples/service-auditing-behavior)
+- [Service Auditing Behavior](../../../wcf/samples/service-auditing-behavior.md)

@@ -74,7 +74,7 @@ One way to increase the capacity of Windows Communication Foundation (WCF) appli
 </configuration>  
 ```  
   
- For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](simplified-configuration.md) and [Simplified Configuration for WCF Services](/previous-versions/dotnet/framework/wcf/samples/simplified-configuration-for-wcf-services).  
+ For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](simplified-configuration.md) and [Simplified Configuration for WCF Services](./samples/simplified-configuration-for-wcf-services.md).  
   
 ## Load Balancing with the WSHttp Binding and the WSDualHttp Binding  
 

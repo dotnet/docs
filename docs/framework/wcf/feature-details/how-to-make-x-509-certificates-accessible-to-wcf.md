@@ -37,11 +37,11 @@ To make an X.509 certificate accessible to Windows Communication Foundation (WCF
          [!code-csharp[x509Accessible#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/x509accessible/cs/source.cs#1)]
          [!code-vb[x509Accessible#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/x509accessible/vb/source.vb#1)]  
   
-    3. Determine where the private key for the certificate is located on the computer by using the [FindPrivateKey](/previous-versions/dotnet/framework/wcf/samples/findprivatekey) tool.  
+    3. Determine where the private key for the certificate is located on the computer by using the [FindPrivateKey](../samples/findprivatekey.md) tool.  
   
-         The [FindPrivateKey](/previous-versions/dotnet/framework/wcf/samples/findprivatekey) tool requires the certificate store name, certificate store location, and something that uniquely identifies the certificate. The tool accepts either the certificate's subject name or its thumbprint as a unique identifier. For more information about how to determine the thumbprint for a certificate, see [How to: Retrieve the Thumbprint of a Certificate](how-to-retrieve-the-thumbprint-of-a-certificate.md).  
+         The [FindPrivateKey](../samples/findprivatekey.md) tool requires the certificate store name, certificate store location, and something that uniquely identifies the certificate. The tool accepts either the certificate's subject name or its thumbprint as a unique identifier. For more information about how to determine the thumbprint for a certificate, see [How to: Retrieve the Thumbprint of a Certificate](how-to-retrieve-the-thumbprint-of-a-certificate.md).  
   
-         The following code example uses the [FindPrivateKey](/previous-versions/dotnet/framework/wcf/samples/findprivatekey) tool to determine the location of the private key for a certificate in the `My` store in `CurrentUser` with a thumbprint of `46 dd 0e 7a ed 0b 7a 31 9b 02 a3 a0 43 7a d8 3f 60 40 92 9d`.  
+         The following code example uses the [FindPrivateKey](../samples/findprivatekey.md) tool to determine the location of the private key for a certificate in the `My` store in `CurrentUser` with a thumbprint of `46 dd 0e 7a ed 0b 7a 31 9b 02 a3 a0 43 7a d8 3f 60 40 92 9d`.  
   
         ```console
         findprivatekey.exe My CurrentUser -t "46 dd 0e 7a ed 0b 7a 31 9b 02 a3 a0 43 7a d8 3f 60 40 92 9d" -a  
@@ -68,6 +68,6 @@ To make an X.509 certificate accessible to Windows Communication Foundation (WCF
   
 ## See also
 
-- [FindPrivateKey](/previous-versions/dotnet/framework/wcf/samples/findprivatekey)
+- [FindPrivateKey](../samples/findprivatekey.md)
 - [How to: Retrieve the Thumbprint of a Certificate](how-to-retrieve-the-thumbprint-of-a-certificate.md)
 - [Working with Certificates](working-with-certificates.md)

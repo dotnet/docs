@@ -117,7 +117,7 @@ In .NET Framework 3.5, there were a few limitations in the design of known types
 
 - It was not possible for users to specify what xsi:type they would like to have appear on the wire to, for instance, make the size of a serialization instance on the wire smaller.
 
-The [DataContractResolver](/previous-versions/dotnet/framework/wcf/samples/datacontractresolver) solves these issues in .NET Framework 4.5.
+The [DataContractResolver](../wcf/samples/datacontractresolver.md) solves these issues in .NET Framework 4.5.
 
 ### Getting Started
 
@@ -127,9 +127,9 @@ The [DataContractResolver](/previous-versions/dotnet/framework/wcf/samples/datac
 
 - Samples:
 
-  - [DataContractResolver](/previous-versions/dotnet/framework/wcf/samples/datacontractresolver)
+  - [DataContractResolver](../wcf/samples/datacontractresolver.md)
 
-  - [KnownAssemblyAttribute](/previous-versions/dotnet/framework/wcf/samples/knownassemblyattribute)
+  - [KnownAssemblyAttribute](../wcf/samples/knownassemblyattribute.md)
 
 ### Data Contract Resolver Scenarios
 
@@ -281,7 +281,7 @@ The routing service in .NET 4 is designed to make these problems easier to solve
 
 1. Documentation: [Routing](../wcf/feature-details/routing.md)
 
-2. Samples: [Routing Services &#91;WCF Samples&#93;](/previous-versions/dotnet/framework/wcf/samples/routing-services)
+2. Samples: [Routing Services &#91;WCF Samples&#93;](../wcf/samples/routing-services.md)
 
 3. Blog: [Routing Rules!](/archive/blogs/RoutingRules/)
 
@@ -315,7 +315,7 @@ Furthermore, discovery messages are network protocol agnostic; you can use them 
 
 - Documentation: [WCF Discovery](../wcf/feature-details/wcf-discovery.md)
 
-- Samples: [Discovery (Samples)](/previous-versions/dotnet/framework/wcf/samples/discovery-samples)
+- Samples: [Discovery (Samples)](../wcf/samples/discovery-samples.md)
 
 ### Discovery Scenarios
 

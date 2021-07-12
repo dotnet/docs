@@ -80,7 +80,7 @@ public interface ICustomerManager
 
  Next you should create a data contract for the service, which will describe how the data will be exchanged between the service and its clients.  Classes described in the data contract should be marked with the [<xref:System.Runtime.Serialization.DataContractAttribute>] attribute. The individual properties or fields you want visible to both client and server should be marked with the [<xref:System.Runtime.Serialization.DataMemberAttribute>] attribute. If you want types derived from a class in the data contract to be allowed, you must identify them with the [<xref:System.Runtime.Serialization.KnownTypeAttribute>] attribute. WCF will only serialize or deserialize types in the service interface and types identified as known types. If you attempt to use a type that is not a known type, an exception will occur.  
   
- For more information about data contracts, see [Data Contracts](/previous-versions/dotnet/framework/wcf/samples/data-contracts).  
+ For more information about data contracts, see [Data Contracts](../wcf/samples/data-contracts.md).  
   
 ```csharp  
 [DataContract]  

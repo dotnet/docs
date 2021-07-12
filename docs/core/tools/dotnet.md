@@ -172,6 +172,7 @@ The following options are available when `dotnet` runs an application. For examp
 | [dotnet publish](dotnet-publish.md)           | Publishes a .NET framework-dependent or self-contained application. |
 | [dotnet restore](dotnet-restore.md)           | Restores the dependencies for a given application.                  |
 | [dotnet run](dotnet-run.md)                   | Runs the application from source.                                   |
+| [dotnet sdk check](dotnet-sdk-check.md)       | Shows up-to-date status of installed SDK and Runtime versions.      |
 | [dotnet sln](dotnet-sln.md)                   | Options to add, remove, and list projects in a solution file.       |
 | [dotnet store](dotnet-store.md)               | Stores assemblies in the runtime package store.                     |
 | [dotnet test](dotnet-test.md)                 | Runs tests using a test runner.                                     |

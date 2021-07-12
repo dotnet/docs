@@ -57,7 +57,3 @@ The following procedures show how to install Message Queuing 4.0 and Message Que
 5. Click **OK** to exit the details page, and then click **Next**. Complete the installation.
 
 6. If you are prompted to restart the computer, click **OK** to complete the installation.
-
-## See also
-
-- [Set-Up Instructions](set-up-instructions.md)

@@ -89,7 +89,7 @@ The MSBuild project or solution to run code formatting on. If a project or solut
   dotnet cleanup ./src/application.csproj
   ```
 
-* Verifies that all code is correctly formatted:
+* Verify that all code is correctly formatted:
 
   ```dotnetcli
   dotnet cleanup --verify-no-changes

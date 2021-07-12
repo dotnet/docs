@@ -95,7 +95,7 @@ The MSBuild project or solution to run code formatting on. If a project or solut
   dotnet cleanup --verify-no-changes
   ```
   
-* Cleans up all code in the `src` and `tests` directory but not in `src/submodule-a`:
+* Clean up all code in the `src` and `tests` directory but not in `src/submodule-a`:
 
   ```dotnetcli
   dotnet cleanup --include ./src/ ./tests/ --exclude ./src/submodule-a/

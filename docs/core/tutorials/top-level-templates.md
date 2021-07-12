@@ -49,4 +49,4 @@ These namespaces are imported for every source file in the application. Other ap
 
 Combined, these two features simplify the code that makes up your application. You can concentrate on the code that runs your application.
 
-You can learn more about top level statements in the tutorial exploration on [top level statements](../../csharp/fundamentals/whats-new/tutorials/top-level-statements.md).
+You can learn more about top level statements in the tutorial exploration on [top level statements](../../csharp/whats-new/tutorials/top-level-statements.md).

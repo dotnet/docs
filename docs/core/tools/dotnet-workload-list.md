@@ -1,27 +1,27 @@
 ---
 title: dotnet workload list command
-description: The 'dotnet workload list' command lists optional workloads.
+description: The 'dotnet workload list' command lists installed workloads.
 ms.date: 07/08/2021
 ---
 # dotnet workload
 
-**This article applies to:** ✔️ .NET 6 Preview and later versions
+**This article applies to:** ✔️ .NET 6 Preview SDK and later versions
 
 ## Name
 
-`dotnet workload list` - Lists optional workloads.
+`dotnet workload list` - Lists installed workloads.
 
 ### Synopsis
 
 ```dotnetcli
 dotnet workload list [-v|--verbosity <LEVEL>]
 
-dotnet workload list [-h|--help]
+dotnet workload list [-?|-h|--help]
 ```
 
 ### Options
 
-- **`-h|--help`**
+- **`-?|-h|--help`**
 
   Prints out a description of how to use the command.
   

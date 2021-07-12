@@ -1,6 +1,6 @@
 ---
-title: dotnet workload install command
-description: The 'dotnet workload install' command installs optional workloads.
+title: dotnet workload repair command
+description: The 'dotnet workload repair' command repairs workloads.
 ms.date: 07/08/2021
 ---
 # dotnet workload
@@ -9,32 +9,32 @@ ms.date: 07/08/2021
 
 ## Name
 
-`dotnet workload install` - Installs optional workloads.
+`dotnet workload repair` - Repairs workloads.
 
 ## Synopsis
 
 ```dotnetcli
-dotnet workload install <WORKLOAD_ID>
+dotnet workload repair <WORKLOAD_ID>
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--download-to-cache <CACHE>] [--from-cache <CACHE>]
     [--ignore-failed-sources] [--include-previews] [--interactive]
     [--no-cache] [--sdk-version <VERSION>] [--skip-manifest-update]
     [-v|--verbosity <LEVEL>]
 
-dotnet workload install -?|-h|--help
+dotnet workload repair -?|-h|--help
 ```
 
 ## Arguments
 
 - **`WORKLOAD_ID`**
 
-  The workload ID of the workload to install.
+  The workload ID of the workload to repair.
 
 ## Options
 
 - **`--add-source <SOURCE>`**
 
-  Adds an additional NuGet package source. Feeds are accessed in parallel, not sequentially in some order of precedence. If the same package and version is in multiple feeds, the fastest feed wins. For more information, see [What happens when a NuGet package is installed?](/nuget/concepts/package-installation-process).
+  Adds an additional NuGet package source. Feeds are accessed in parallel, not sequentially in some order of precedence. If the same package and version is in multiple feeds, the fastest feed wins. For more information, see [What happens when a NuGet package is repaired?](/nuget/concepts/package-repairation-process).
 
 - **`--configfile <FILE>`**
 
@@ -46,7 +46,7 @@ dotnet workload install -?|-h|--help
 
 - **`--download-to-cache <PATH_TO_CACHE>`**
 
-  Downloads packages needed for a workload to a folder that can be used for offline installation.
+  Downloads packages needed for a workload to a folder that can be used for offline repairation.
 
 - **`--from-cache <PATH_TO_CACHE>`**
 
@@ -82,15 +82,15 @@ dotnet workload install -?|-h|--help
 
 ## Examples
 
-- Install the `microsoft.ios.sdk.full` workload:
+- Repair the `microsoft.ios.sdk.full` workload:
 
   ```dotnetcli
-  dotnet workload install microsoft.ios.sdk.full
+  dotnet workload repair microsoft.ios.sdk.full
   ```
 
-- Download the `microsoft.ios.sdk.full` workload to a cache located in the *workload-cache* directory under the current directory. Then install it from the same cache location:
+- Download the `microsoft.ios.sdk.full` workload to a cache located in the *workload-cache* directory under the current directory. Then repair it from the same cache location:
 
   ```dotnetcli
-  dotnet workload install microsoft-ios-sdk-full --download-to-cache ./workload-cache
-  dotnet workload install microsoft-ios-sdk-full --from-cache ./workload-cache
+  dotnet workload repair microsoft-ios-sdk-full --download-to-cache ./workload-cache
+  dotnet workload repair microsoft-ios-sdk-full --from-cache ./workload-cache
   ```

@@ -61,7 +61,7 @@ The MSBuild project or solution to run code formatting on. If a project or solut
 
 * **`-v|--verbosity <LEVEL>`**
 
-  Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic]
+  Set the verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Default value is `m[inimal]`.
 
 * **`--binarylog <binary-log-path>`**
 

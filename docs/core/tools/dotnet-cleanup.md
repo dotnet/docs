@@ -21,7 +21,7 @@ dotnet clean -h|--help
 
 ## Description
 
-`dotnet cleanup` is a code formatter for dotnet that applies style preferences to a project or solution. Preferences will be read from an .editorconfig file, if present, otherwise a default set of preferences will be used.
+`dotnet cleanup` is a code formatter that applies style preferences to a project or solution. Preferences will be read from an .editorconfig file, if present, otherwise a default set of preferences will be used.
 
 ## Arguments
 

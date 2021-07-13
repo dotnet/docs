@@ -89,6 +89,8 @@ items:
           href: networking/6.0/webrequest-deprecated.md
       - name: SDK and MSBuild
         items:
+        - name: -p option for `dotnet run` is deprecated
+          href: sdk/6.0/deprecate-p-option-dotnet-run.md
         - name: Generate error for duplicate files in publish output
           href: sdk/6.0/duplicate-files-in-output.md
         - name: GetTargetFrameworkProperties and GetNearestTargetFramework removed
@@ -307,6 +309,8 @@ items:
           href: networking/5.0/winhttphandler-removed-from-runtime.md
       - name: SDK and MSBuild
         items:
+        - name: -p option for `dotnet run` is deprecated
+          href: sdk/6.0/deprecate-p-option-dotnet-run.md
         - name: Error when referencing mismatched executable
           href: sdk/5.0/referencing-executable-generates-error.md
         - name: OutputType set to WinExe

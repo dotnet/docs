@@ -63,7 +63,7 @@ items:
     - name: Interfaces
       href: fundamentals/types/interfaces.md
     - name: Generics
-      href: fundamentals/types/generics.md    
+      href: fundamentals/types/generics.md
     - name: Anonymous Types
       href: fundamentals/types/anonymous-types.md
     # TODO: Delegates, lambdas and events
@@ -168,7 +168,7 @@ items:
     items:
     - name: Explore record types
       href: whats-new/tutorials/records.md
-    - name: Explore top level statements
+    - name: Explore top-level statements
       href: whats-new/tutorials/top-level-statements.md
     - name: Explore patterns in objects
       href: whats-new/tutorials/patterns-objects.md
@@ -331,8 +331,8 @@ items:
     href: roslyn-sdk/work-with-workspace.md
   - name: Explore code with the syntax visualizer
     href: roslyn-sdk/syntax-visualizer.md
-  - name: Source Generators 
-    href: roslyn-sdk/source-generators-overview.md  
+  - name: Source Generators
+    href: roslyn-sdk/source-generators-overview.md
   - name: Quick starts
     items:
     - name: Syntax analysis
@@ -1332,7 +1332,7 @@ items:
       displayName: CheckForOverflowUnderflow, checked, AllowUnsafeBlocks, unsafe, DefineConstants, define, LangVersion, langversion, Nullable, nullable
       href: language-reference/compiler-options/language.md
     - name: Output options
-      displayName: DocumentationFile, doc, OutputAssembly, out, PlatformTarget, platform, ProduceReferenceAssembly, refout, TargetType, target, 
+      displayName: DocumentationFile, doc, OutputAssembly, out, PlatformTarget, platform, ProduceReferenceAssembly, refout, TargetType, target,
       href: language-reference/compiler-options/output.md
     - name: Input options
       displayName: References, reference, references, AddModules, addmodule, EmbedInteropTypes, link

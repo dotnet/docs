@@ -141,11 +141,11 @@ The roll-forward behavior for an application can be configured in four different
 
 ### Precedence
 
-Roll forward behavior is considered in the following order:
+Roll forward behavior is set by the following order when your app is run, higher numbered items taking precedence over lower numbered items:
 
-01. `*.runtimeconfig.json` config file.
-01. The `DOTNET_ROLL_FORWARD` environment variable.
-01. Any `--roll-forward` parameter passed to the running application.
+01. First the `*.runtimeconfig.json` config file is evaluated.
+01. Next, the `DOTNET_ROLL_FORWARD` environment variable is considered, overriding the previous check.
+01. Finally, any `--roll-forward` parameter passed to the running application overrides everything else.
 
 ### Values
 

@@ -100,6 +100,16 @@ C# documentation comments use XML elements to define the structure of the output
 - Documentation text should be written using complete sentences ending with full stops.
 - Partial classes are fully supported, and documentation information will be concatenated into a single entry for that type.
 
+XML documentation starts with `///`. When you create a new project, the templates put some starter `///` lines in for you. The processing of these comments has some restrictions:
+
+- The documentation must be well-formed XML. If the XML is not well-formed, a warning is generated and the documentation file will contain a comment that says that an error was encountered.
+- Developers are free to create their own set of tags. Some of the recommended tags have special meanings:
+  - The `<param>` tag is used to describe parameters. If used, the compiler verifies that the parameter exists and that all parameters are described in the documentation. If the verification fails, the compiler issues a warning.
+  - The `cref` attribute can be attached to any tag to reference a code element. The compiler verifies that this code element exists. If the verification fails, the compiler issues a warning. The compiler respects any `using` statements when it looks for a type described in the `cref` attribute.
+  - The `<summary>` tag is used by IntelliSense inside Visual Studio to display additional information about a type or member.
+    > [!NOTE]
+    > The XML file does not provide full information about the type and members (for example, it does not contain any type information). To get full information about a type or member, use the documentation file together with reflection on the actual type or member.
+
 Some of the recommended tags can be used on any language element. Others have more specialized usage. Finally, some of the tags are used to format text in your documentation. this article describes the recommended tags organized by their use:
 
 - [General Tags](#general-tags) used for multiple elements - These are the minimum set for any API tasks.
@@ -123,8 +133,8 @@ Some of the recommended tags can be used on any language element. Others have mo
 - [Generate links and references](#generate-links-and-references) - These tags generate links to other documentation.
   - [`<see>`](#see) \*
   - [`<seealso>`](#seealso) \*
-  - [`<cref>`](#cref)
-  - [`<href>`](#href)
+  - [`<cref>`](#cref-attribute)
+  - [`<href>`](#href-attribute)
 - [Tags for generic types and methods](#generic-types-and-methods) - These tags are used only on generic types and methods
   - [`<typeparam>`](#typeparam) \*
   - [`<typeparamref>`](#typeparamref)
@@ -334,15 +344,15 @@ The `<see>` tag lets you specify a link from within text. Use [\<seealso>](#seea
 - `cref="member"`: A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML.`member` must appear within double quotation marks (" ").
 - `href="link"`: A clickable link to a given URL. For example, `<seealso href="https://github.com">GitHub</seealso>` produces a clickable link with text :::no-loc text="GitHub"::: that links to `https://github.com`.
 
-The `<seealso>` tag lets you specify the text that you might want to appear in a See Also section. Use [\<see>](#see) to specify a link from within text.
+The `<seealso>` tag lets you specify the text that you might want to appear in a **See Also** section. Use [\<see>](#see) to specify a link from within text.
 
 ### cref attribute
 
 The `cref` attribute in an XML documentation tag means "code reference." It specifies that the inner text of the tag is a code element, such as a type, method, or property. Documentation tools like [DocFX](https://dotnet.github.io/docfx/) and [Sandcastle](https://github.com/EWSoftware/SHFB) use the `cref` attributes to automatically generate hyperlinks to the page where the type or member is documented.
 
-The following example shows `cref` attributes used in [\<see>](#see) tags.
+### href attribute
 
-### href
+The `href` attribute means a reference to a web page. You can use it to directly reference online documentation about your API or library.
 
 ## Generic types and methods
 
@@ -365,3 +375,10 @@ The `<typeparam>` tag should be used in the comment for a generic type or method
 - `TKey`: The name of the type parameter. Enclose the name in double quotation marks (" ").
 
 Use this tag to enable consumers of the documentation file to format the word in some distinct way, for example in italics.
+
+### User-defined tags
+
+All the tags outlined above represent those that are recognized by the C# compiler. However, a user is free to define their own tags.
+Tools like Sandcastle bring support for extra tags like [\<event>](https://ewsoftware.github.io/XMLCommentsGuide/html/81bf7ad3-45dc-452f-90d5-87ce2494a182.htm) and [\<note>](https://ewsoftware.github.io/XMLCommentsGuide/html/4302a60f-e4f4-4b8d-a451-5f453c4ebd46.htm),
+and even support [documenting namespaces](https://ewsoftware.github.io/XMLCommentsGuide/html/BD91FAD4-188D-4697-A654-7C07FD47EF31.htm).
+Custom or in-house documentation generation tools can also be used with the standard tags and multiple output formats from HTML to PDF can be supported.

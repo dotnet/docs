@@ -8,16 +8,28 @@ class TestCopy
         int targetOffset, int count)
     {
         // If either array is not instantiated, you cannot complete the copy.
-        if ((source == null) || (target == null))
+        if (source == null)
         {
-            throw new System.ArgumentException();
+            throw new System.ArgumentException("neither array can be null.", nameof(source));
+        }
+        if (target == null)
+        {
+            throw new System.ArgumentException("neither array can be null.", nameof(target));
         }
 
         // If either offset, or the number of bytes to copy, is negative, you
         // cannot complete the copy.
-        if ((sourceOffset < 0) || (targetOffset < 0) || (count < 0))
+        if (sourceOffset < 0)
         {
-            throw new System.ArgumentException();
+            throw new System.ArgumentException("offsets and count must be non-negative.", nameof(sourceOffset));
+        }
+        if (targetOffset < 0)
+        {
+            throw new System.ArgumentException("offsets and count must be non-negative.", nameof(targetOffset));
+        }
+        if (count < 0)
+        {
+            throw new System.ArgumentException("offsets and count must be non-negative.", nameof(count));
         }
 
         // If the number of bytes from the offset to the end of the array is
@@ -26,7 +38,7 @@ class TestCopy
         if ((source.Length - sourceOffset < count) ||
             (target.Length - targetOffset < count))
         {
-            throw new System.ArgumentException();
+            throw new System.InvalidOperationException("Cannot copy past the end of source or destination array.");
         }
 
         // The following fixed statement pins the location of the source and

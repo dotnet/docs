@@ -31,7 +31,7 @@ Starting in .NET 6:
 
 ## Reason for change
 
-`-p` was deprecated because of the close relationship `dotnet run` has with `dotnet build` and `dotnet publish`. This breaking change is the first step in aligning abbreviations for these commands.
+We are deprecating `-p` because of the close relationship `dotnet run` has with `dotnet build` and `dotnet publish`. This breaking change is the first step in aligning abbreviations for these commands.
 
 To embrace Xamarin (MAUI), we need to pass MSBuild properties to MSBuild during the build portion of `dotnet run`. The option that specifies passing properties should be the same for `dotnet run`, `dotnet build`, and `dotnet publish`.
 

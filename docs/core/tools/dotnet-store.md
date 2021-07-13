@@ -63,9 +63,7 @@ dotnet store -h|--help
 
   Skips symbol generation. Currently, you can only generate symbols on Windows and Linux.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 - **`-w|--working-dir <WORKING_DIRECTORY>`**
 

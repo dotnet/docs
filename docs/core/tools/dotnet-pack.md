@@ -116,9 +116,7 @@ Web projects aren't packable by default. To override the default behavior, add t
 
   Defines the value for the `$(VersionSuffix)` MSBuild property in the project.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 ## Examples
 

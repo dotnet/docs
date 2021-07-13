@@ -120,9 +120,7 @@ The project or solution file to build. If a project or solution file isn't speci
 
   The URI of the NuGet package source to use during the restore operation.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the MSBuild verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 

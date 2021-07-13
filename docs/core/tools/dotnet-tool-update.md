@@ -60,9 +60,7 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
   Adds an additional NuGet package source to use during installation.
 
-- **`--configfile <FILE>`**
-
-  The NuGet configuration (*nuget.config*) file to use.
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 - **`--disable-parallel`**
 
@@ -100,9 +98,7 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
   Specifies the location where the global tool is installed. PATH can be absolute or relative. Can't be combined with the `--global` option. Omitting both `--global` and `--tool-path` specifies that the tool to be updated is a local tool.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 - **`--version <VERSION>`**
 

@@ -100,9 +100,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). `-r` short option available since .NET Core 3.0 SDK.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default value is `m`. Available since .NET Core 2.1 SDK.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ## Examples
 

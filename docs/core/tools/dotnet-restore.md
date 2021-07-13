@@ -85,9 +85,7 @@ There are three specific settings that `dotnet restore` ignores:
 
 <!-- markdownlint-disable MD012 -->
 
-- **`--configfile <FILE>`**
-
-  The NuGet configuration file (*nuget.config*) to use for the restore operation.
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 - **`--disable-parallel`**
 
@@ -107,7 +105,7 @@ There are three specific settings that `dotnet restore` ignores:
 
   Only warn about failed sources if there are packages meeting the version requirement.
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-2-1-400.md)]
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`--lock-file-path <LOCK_FILE_PATH>`**
 
@@ -141,9 +139,7 @@ There are three specific settings that `dotnet restore` ignores:
 
   Enables project lock file to be generated and used with restore.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Default value is `minimal`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ## Examples
 

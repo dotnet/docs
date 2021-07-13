@@ -60,9 +60,9 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
   Cleans the output folder of the specified runtime. This is used when a [self-contained deployment](../deploying/index.md#publish-self-contained) was created.
 
-* **`-v|--verbosity <LEVEL>`**
+[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
-  Sets the MSBuild verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `normal`.
+  The default is `normal`.
 
 ## Examples
 

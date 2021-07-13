@@ -28,7 +28,9 @@ The `dotnet new --install` command installs a template package from the `PATH` o
 
 <!-- markdownlint-disable MD012 -->
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-5-0.md)]
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+
+  Available since .NET 5.0 SDK.
 
 - **`--nuget-source <SOURCE>`**
   

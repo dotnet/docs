@@ -71,7 +71,7 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-pack
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-2-1-400.md)]
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`-n|--no-restore`**
 

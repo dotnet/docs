@@ -175,9 +175,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   List the discovered tests instead of running the tests.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`. For more information, see <xref:Microsoft.Build.Framework.LoggerVerbosity>.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 - **`RunSettings`** arguments
 

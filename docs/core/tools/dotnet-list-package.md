@@ -111,9 +111,7 @@ The project or solution file to operate on. If not specified, the command search
 
   The NuGet sources to use when searching for newer packages. Requires the `--outdated` or `--deprecated` option.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the MSBuild verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ## Examples
 

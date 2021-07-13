@@ -92,9 +92,9 @@ The following options are for `dotnet` with a command. For example, `dotnet buil
 
   Enables diagnostic output.
 
-- **`-v|--verbosity <LEVEL>`**
+[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command. See specific command page to determine if this option is available.
+  Not supported in every command. See specific command page to determine if this option is available.
 
 - **`-?|-h|--help`**
 

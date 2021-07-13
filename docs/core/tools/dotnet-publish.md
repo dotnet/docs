@@ -172,9 +172,7 @@ For more information, see the following resources:
 
   Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). For more information, see [.NET application publishing](../deploying/index.md) and [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md).
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Default value is `minimal`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 

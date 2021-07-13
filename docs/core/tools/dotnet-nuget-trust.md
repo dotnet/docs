@@ -46,9 +46,7 @@ dotnet nuget trust list [--configfile <PATH>] [-h|--help] [-v, --verbosity <LEVE
 
 #### Options:
 
-- **`--configfile <PATH>`**
-
-  Specific NuGet file to use instead of the standard hierarchy.
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
@@ -74,9 +72,7 @@ dotnet nuget trust sync <NAME> [--configfile <PATH>] [-h|--help] [-v, --verbosit
 
 #### Options:
 
-- **`--configfile <PATH>`**
-
-  Specific NuGet file to use instead of the standard hierarchy.
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
@@ -102,9 +98,7 @@ dotnet nuget trust remove <NAME> [--configfile <PATH>] [-h|--help] [-v, --verbos
   
 #### Options:
 
-- **`--configfile <PATH>`**
-
-  Specific NuGet file to use instead of the standard hierarchy.
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
@@ -138,9 +132,7 @@ dotnet nuget trust author <NAME> <PACKAGE> [--allow-untrusted-root] [--configfil
 
   Specifies if the certificate for the trusted signer should be allowed to chain to an untrusted root. This is not recommended.
 
-- **`--configfile <PATH>`**
-
-  Specific NuGet file to use instead of the standard hierarchy.
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
@@ -174,9 +166,7 @@ dotnet nuget trust repository <NAME> <PACKAGE> [--allow-untrusted-root] [--confi
 
   Specifies if the certificate for the trusted signer should be allowed to chain to an untrusted root. This is not recommended.
 
-- **`--configfile <PATH>`**
-
-  Specific NuGet file to use instead of the standard hierarchy.
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
@@ -214,9 +204,7 @@ dotnet nuget trust certificate <NAME> <FINGERPRINT> [--algorithm <ALGORITHM>] [-
 
   Specifies if the certificate for the trusted signer should be allowed to chain to an untrusted root. This is not recommended.
 
-- **`--configfile <PATH>`**
-
-  Specific NuGet file to use instead of the standard hierarchy.
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
@@ -242,9 +230,7 @@ dotnet nuget trust source <NAME> [--configfile <PATH>] [-h|--help] [--owners <Li
 
 #### Options:
 
-- **`--configfile <PATH>`**
-
-  Specific NuGet file to use instead of the standard hierarchy.
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
@@ -256,9 +242,7 @@ dotnet nuget trust source <NAME> [--configfile <PATH>] [-h|--help] [--owners <Li
 
   If a `source-url` is provided, it must be a v3 package source URL (like `https://api.nuget.org/v3/index.json`). Other package source types are not supported.
 
-- **`-v, --verbosity <LEVEL>`**
-
-  Set the verbosity level. Defaults to m[inimal]. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 ## Examples
 

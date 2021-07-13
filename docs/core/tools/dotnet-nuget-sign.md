@@ -99,9 +99,7 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
 
    URL to an RFC 3161 timestamping server.
 
-* **`-v|--verbosity <LEVEL>`**
-
-  Sets the [MSBuild verbosity level](/visualstudio/msbuild/obtaining-build-logs-with-msbuild#verbosity-settings). Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

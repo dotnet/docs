@@ -48,9 +48,7 @@ The `dotnet nuget verify` command verifies a signed NuGet package.
 
   Verify that the signer certificate matches with one of the specified `SHA256` fingerprints. This option can be supplied multiple times to provide multiple fingerprints.
 
-* **`-v|--verbosity <LEVEL>`**
-
-  Sets the [MSBuild verbosity level](/visualstudio/msbuild/obtaining-build-logs-with-msbuild#verbosity-settings). Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
     The following table shows what is displayed for each verbosity level.
 

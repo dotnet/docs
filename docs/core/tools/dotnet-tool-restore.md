@@ -31,9 +31,7 @@ The `dotnet tool restore` command finds the tool manifest file that is in scope 
 
 <!-- markdownlint-disable MD012 -->
 
-- **`--configfile <FILE>`**
-
-  The NuGet configuration (*nuget.config*) file to use.
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 - **`--add-source <SOURCE>`**
 
@@ -59,9 +57,7 @@ The `dotnet tool restore` command finds the tool manifest file that is in scope 
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 ## Example
 

@@ -14,7 +14,7 @@ ms.assetid: 6d892973-1558-4115-a9e1-696777776125
 ---
 # How to: Create a Custom Token
 
-This topic shows how to create a custom security token using the <xref:System.IdentityModel.Tokens.SecurityToken> class, and how to integrate it with a custom security token provider and authenticator. For a complete code example see the [Custom Token](/previous-versions/dotnet/framework/wcf/samples/custom-token) sample.  
+This topic shows how to create a custom security token using the <xref:System.IdentityModel.Tokens.SecurityToken> class, and how to integrate it with a custom security token provider and authenticator. For a complete code example see the [Custom Token](../samples/custom-token.md) sample.  
   
  A *security token* is essentially an XML element that is used by the Windows Communication Foundation (WCF) security framework to represent claims about a sender inside the SOAP message. WCF security provides various tokens for system-provided authentication modes. Examples include an X.509 certificate security token represented by the <xref:System.IdentityModel.Tokens.X509SecurityToken> class or a Username security token represented by the <xref:System.IdentityModel.Tokens.UserNameSecurityToken> class.  
   
@@ -143,7 +143,7 @@ This topic shows how to create a custom security token using the <xref:System.Id
      [!code-csharp[c_CustomToken#13](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtoken/cs/source.cs#13)]
      [!code-vb[c_CustomToken#13](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtoken/vb/source.vb#13)]  
   
- This topic shows the various pieces of code necessary to implement and use a custom token. To see a complete example of how all these pieces of code fit together see, [Custom Token](/previous-versions/dotnet/framework/wcf/samples/custom-token).  
+ This topic shows the various pieces of code necessary to implement and use a custom token. To see a complete example of how all these pieces of code fit together see, [Custom Token](../samples/custom-token.md).  
   
 ## See also
 

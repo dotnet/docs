@@ -15,7 +15,7 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
   
  All of the following configuration steps can be undertaken using the [Configuration Editor Tool (SvcConfigEditor.exe)](configuration-editor-tool-svcconfigeditor-exe.md).  
   
- For the source copy of this example, see [BasicBinding](/previous-versions/dotnet/framework/wcf/samples/basicbinding).  
+ For the source copy of this example, see [BasicBinding](./samples/basicbinding.md).  
   
 ## To specify the BasicHttpBinding to use to configure the service  
   

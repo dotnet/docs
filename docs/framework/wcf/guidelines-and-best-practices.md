@@ -46,6 +46,6 @@ This section contains topics that provide guidelines for creating Windows Commun
 ## See also
 
 - [What Is Windows Communication Foundation](whats-wcf.md)
-- [Windows Communication Foundation (WCF) samples](/previous-versions/dotnet/framework/wcf/samples/index)
+- [Windows Communication Foundation (WCF) samples](./samples/index.md)
 - [Conceptual Overview](conceptual-overview.md)
 - [Building Clients](building-clients.md)

@@ -8,7 +8,7 @@ ms.assetid: 7cd0099e-dc3a-47e4-a38c-6e10f997f6ea
 
 Windows Communication Foundation (WCF) allows you to create a service that makes an ASP.NET AJAX-enabled endpoint available that can be called from JavaScript on a client Web site. To create such an endpoint, you can either use a configuration file, as with all other Windows Communication Foundation (WCF) endpoints, or use a method that does not require any configuration elements. This topic demonstrates the configuration approach.  
   
- The part of the procedure that enables the service endpoint to become ASP.NET AJAX-enabled consists of configuring the endpoint to use the <xref:System.ServiceModel.WebHttpBinding> and to add the [\<enableWebScript>](../../configure-apps/file-schema/wcf/enablewebscript.md) endpoint behavior. After configuring the endpoint, the steps to implement and host the service are similar to those used by any WCF service. For a working example, see the [AJAX Service Using HTTP POST](/previous-versions/dotnet/framework/wcf/samples/ajax-service-using-http-post).  
+ The part of the procedure that enables the service endpoint to become ASP.NET AJAX-enabled consists of configuring the endpoint to use the <xref:System.ServiceModel.WebHttpBinding> and to add the [\<enableWebScript>](../../configure-apps/file-schema/wcf/enablewebscript.md) endpoint behavior. After configuring the endpoint, the steps to implement and host the service are similar to those used by any WCF service. For a working example, see the [AJAX Service Using HTTP POST](../samples/ajax-service-using-http-post.md).  
   
  For more information about how to configure an ASP.NET AJAX endpoint without using configuration, see [How to: Add an ASP.NET AJAX Endpoint Without Using Configuration](how-to-add-an-aspnet-ajax-endpoint-without-using-configuration.md).  
   
@@ -98,7 +98,7 @@ Windows Communication Foundation (WCF) allows you to create a service that makes
   
 ## To call the service  
   
-1. The endpoint is configured at an empty address relative to the .svc file, so the service is now available and can be invoked by sending requests to service.svc/\<operation> - for example, service.svc/Add for the `Add` operation. You can use it by entering the endpoint URL into the Scripts collection of the ASP.NET AJAX Script Manager control. For an example, see the [AJAX Service Using HTTP POST](/previous-versions/dotnet/framework/wcf/samples/ajax-service-using-http-post).  
+1. The endpoint is configured at an empty address relative to the .svc file, so the service is now available and can be invoked by sending requests to service.svc/\<operation> - for example, service.svc/Add for the `Add` operation. You can use it by entering the endpoint URL into the Scripts collection of the ASP.NET AJAX Script Manager control. For an example, see the [AJAX Service Using HTTP POST](../samples/ajax-service-using-http-post.md).  
   
 ## See also
 

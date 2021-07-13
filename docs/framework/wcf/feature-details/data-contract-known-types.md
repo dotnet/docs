@@ -13,7 +13,7 @@ ms.assetid: 1a0baea1-27b7-470d-9136-5bbad86c4337
 ---
 # Data Contract Known Types
 
-The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to specify, in advance, the types that should be included for consideration during deserialization. For a working example, see the [Known Types](/previous-versions/dotnet/framework/wcf/samples/known-types) example.  
+The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to specify, in advance, the types that should be included for consideration during deserialization. For a working example, see the [Known Types](../samples/known-types.md) example.  
   
  Normally, when passing parameters and return values between a client and a service, both endpoints share all of the data contracts of the data to be transmitted. However, this is not the case in the following circumstances:  
   
@@ -180,6 +180,6 @@ The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to s
 - <xref:System.Object>
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Runtime.Serialization.DataContractSerializer.KnownTypes%2A>
-- [Known Types](/previous-versions/dotnet/framework/wcf/samples/known-types)
+- [Known Types](../samples/known-types.md)
 - [Data Contract Equivalence](data-contract-equivalence.md)
 - [Designing Service Contracts](../designing-service-contracts.md)

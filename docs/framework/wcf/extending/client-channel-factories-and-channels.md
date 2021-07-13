@@ -27,7 +27,7 @@ A channel factory creates channels.
   
 - The <xref:System.ServiceModel.Channels.ChannelListenerBase> class implements <xref:System.ServiceModel.Channels.IChannelListener>. It takes care of basic state management.
   
- The following discussion is based upon the [Transport: UDP](/previous-versions/dotnet/framework/wcf/samples/transport-udp) sample.  
+ The following discussion is based upon the [Transport: UDP](../samples/transport-udp.md) sample.  
   
 ### Creating a Channel Factory  
 

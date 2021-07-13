@@ -9,7 +9,7 @@ ms.assetid: e0b12b34-8004-443a-a46d-83a5c00f2601
 ---
 # How to: Control Service Instancing
 
-Setting the instance mode of a service enables you to specify when a <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType> (and its associated user-defined service object) is created. See the <xref:System.ServiceModel.InstanceContextMode> enumeration for the possible modes. For more information about behaviors, see [Configuring and Extending the Runtime with Behaviors](../extending/configuring-and-extending-the-runtime-with-behaviors.md). For working examples, see [Behaviors](/previous-versions/dotnet/framework/wcf/samples/behaviors).  
+Setting the instance mode of a service enables you to specify when a <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType> (and its associated user-defined service object) is created. See the <xref:System.ServiceModel.InstanceContextMode> enumeration for the possible modes. For more information about behaviors, see [Configuring and Extending the Runtime with Behaviors](../extending/configuring-and-extending-the-runtime-with-behaviors.md). For working examples, see [Behaviors](../samples/behaviors.md).  
   
 ### To control the service instance lifetime using code  
   
@@ -32,4 +32,4 @@ Setting the instance mode of a service enables you to specify when a <xref:Syste
 - <xref:System.ServiceModel.ServiceBehaviorAttribute>
 - <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A>
 - <xref:System.ServiceModel.InstanceContextMode>
-- [Service: Behaviors Samples](/previous-versions/dotnet/framework/wcf/samples/behaviors)
+- [Service: Behaviors Samples](../samples/behaviors.md)

@@ -99,4 +99,4 @@ Specifies the security settings of a local service for this binding.
 - [Custom Bindings](../../../wcf/extending/custom-bindings.md)
 - [\<customBinding>](custombinding.md)
 - [How to: Create a Custom Binding Using the SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
-- [Custom Binding Security](/previous-versions/dotnet/framework/wcf/samples/custom-binding-security)
+- [Custom Binding Security](../../../wcf/samples/custom-binding-security.md)

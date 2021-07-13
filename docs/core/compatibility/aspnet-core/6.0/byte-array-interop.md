@@ -52,7 +52,7 @@ In the preceding code example, you'd treat the incoming parameter in JavaScript 
 
 If .NET expects a `byte[]`, JavaScript _should_ provide a `Uint8Array`. It's still possible to provide a Base64-encoded array using `btoa`, however that is less performant.
 
-For example, if you have the following code, then you must provide a `Uint8Array` from JavaScript that's _not_ Base64-encoded:
+For example, if you have the following code, then you _should_ provide a `Uint8Array` from JavaScript that's _not_ Base64-encoded:
 
 ```csharp
 var bytes = await _jsRuntime.InvokeAsync<byte[]>("someJSMethodReturningAByteArray");

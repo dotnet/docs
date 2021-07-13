@@ -83,6 +83,8 @@ There are three specific settings that `dotnet restore` ignores:
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`--configfile <FILE>`**
 
   The NuGet configuration file (*nuget.config*) to use for the restore operation.
@@ -99,17 +101,13 @@ There are three specific settings that `dotnet restore` ignores:
 
   Forces restore to reevaluate all dependencies even if a lock file already exists.
 
-- **`-h|--help`**
-
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--ignore-failed-sources`**
 
   Only warn about failed sources if there are packages meeting the version requirement.
 
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action (for example to complete authentication). Since .NET Core 2.1.400.
+[!INCLUDE [interactive](../../../includes/cli-interactive-2-1-400.md)]
 
 - **`--lock-file-path <LOCK_FILE_PATH>`**
 

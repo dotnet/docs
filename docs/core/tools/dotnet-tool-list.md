@@ -37,13 +37,13 @@ The `dotnet tool list` command provides a way for you to list all .NET global, t
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`-g|--global`**
 
   Lists user-wide global tools. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` lists local tools.
 
-- **`-h|--help`**
-
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--local`**
 

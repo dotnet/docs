@@ -26,9 +26,9 @@ The `dotnet nuget trust` command manages the trusted signers. By default, NuGet 
 
 ## Options
 
-- **`-h|--help`**
+<!-- markdownlint-disable MD012 -->
 
-  Prints out a description of how to use the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Commands
 
@@ -50,9 +50,7 @@ dotnet nuget trust list [--configfile <PATH>] [-h|--help] [-v, --verbosity <LEVE
 
   Specific NuGet file to use instead of the standard hierarchy.
 
-- **`-h|--help`**
-
-  Prints out a description of how to use the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`-v, --verbosity <LEVEL>`**
 
@@ -80,9 +78,7 @@ dotnet nuget trust sync <NAME> [--configfile <PATH>] [-h|--help] [-v, --verbosit
 
   Specific NuGet file to use instead of the standard hierarchy.
 
-- **`-h|--help`**
-
-  Prints out a description of how to use the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`-v, --verbosity <LEVEL>`**
 
@@ -110,9 +106,7 @@ dotnet nuget trust remove <NAME> [--configfile <PATH>] [-h|--help] [-v, --verbos
 
   Specific NuGet file to use instead of the standard hierarchy.
 
-- **`-h|--help`**
-
-  Prints out a description of how to use the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`-v, --verbosity <LEVEL>`**
 
@@ -148,9 +142,7 @@ dotnet nuget trust author <NAME> <PACKAGE> [--allow-untrusted-root] [--configfil
 
   Specific NuGet file to use instead of the standard hierarchy.
 
-- **`-h|--help`**
-
-  Prints out a description of how to use the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`-v, --verbosity <LEVEL>`**
 
@@ -186,9 +178,7 @@ dotnet nuget trust repository <NAME> <PACKAGE> [--allow-untrusted-root] [--confi
 
   Specific NuGet file to use instead of the standard hierarchy.
 
-- **`-h|--help`**
-
-  Prints out a description of how to use the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`-v, --verbosity <LEVEL>`**
 
@@ -228,9 +218,7 @@ dotnet nuget trust certificate <NAME> <FINGERPRINT> [--algorithm <ALGORITHM>] [-
 
   Specific NuGet file to use instead of the standard hierarchy.
 
-- **`-h|--help`**
-
-  Prints out a description of how to use the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`-v, --verbosity <LEVEL>`**
 
@@ -258,9 +246,7 @@ dotnet nuget trust source <NAME> [--configfile <PATH>] [-h|--help] [--owners <Li
 
   Specific NuGet file to use instead of the standard hierarchy.
 
-- **`-h|--help`**
-
-  Prints out a description of how to use the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--owners <List>`**
 

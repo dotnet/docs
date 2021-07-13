@@ -62,6 +62,8 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`-c|--configuration <CONFIGURATION>`**
 
   Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project.
@@ -70,9 +72,7 @@ Web projects aren't packable by default. To override the default behavior, add t
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
-- **`-h|--help`**
-
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--include-source`**
 
@@ -82,9 +82,7 @@ Web projects aren't packable by default. To override the default behavior, add t
 
   Includes the debug symbols NuGet packages in addition to the regular NuGet packages in the output directory.
 
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action (for example, to complete authentication). Available since .NET Core 3.0 SDK.
+[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 - **`--no-build`**
 

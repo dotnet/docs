@@ -54,6 +54,8 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`--add-source <SOURCE>`**
 
   Adds an additional NuGet package source to use during installation.
@@ -74,17 +76,13 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
   Specifies that the update is for a user-wide tool. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies that the tool to be updated is a local tool.
 
-- **`-h|--help`**
-
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--ignore-failed-sources`**
 
   Treat package source failures as warnings.
 
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action (for example to complete authentication).
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`--local`**
 

@@ -50,6 +50,8 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`--`**
 
   Delimits arguments to `dotnet run` from arguments for the application being run. All arguments after this delimiter are passed to the application run.
@@ -66,13 +68,9 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
-- **`-h|--help`**
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out a short help for the command.
-
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action (for example, to complete authentication). Available since .NET Core 3.0 SDK.
+[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 - **`--launch-profile <NAME>`**
 

@@ -44,6 +44,8 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`--certificate-path <PATH>`**
 
   Specifies the file path to the certificate to be used in signing the package.
@@ -101,9 +103,7 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
 
   Sets the [MSBuild verbosity level](/visualstudio/msbuild/obtaining-build-logs-with-msbuild#verbosity-settings). Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`.
 
-* **`-h|--help`**
-
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

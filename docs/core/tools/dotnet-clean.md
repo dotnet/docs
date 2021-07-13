@@ -34,6 +34,8 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 * **`-c|--configuration <CONFIGURATION>`**
 
   Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project. This option is only required when cleaning if you specified it during build time.
@@ -42,13 +44,9 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
   The [framework](../../standard/frameworks.md) that was specified at build time. The framework must be defined in the [project file](../project-sdk/overview.md). If you specified the framework at build time, you must specify the framework when cleaning.
 
-* **`-h|--help`**
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out a short help for the command.
-
-* **`--interactive`**
-
-  Allows the command to stop and wait for user input or action. For example, to complete authentication. Available since .NET Core 3.0 SDK.
+[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 * **`--nologo`**
 

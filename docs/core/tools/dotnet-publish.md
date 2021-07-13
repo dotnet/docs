@@ -96,6 +96,8 @@ For more information, see the following resources:
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`-c|--configuration <CONFIGURATION>`**
 
   Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project.
@@ -108,13 +110,9 @@ For more information, see the following resources:
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
-- **`-h|--help`**
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out a short help for the command.
-
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action. For example, to complete authentication. Available since .NET Core 3.0 SDK.
+[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 - **`--manifest <PATH_TO_MANIFEST_FILE>`**
 

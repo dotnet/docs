@@ -35,6 +35,8 @@ The `dotnet nuget verify` command verifies a signed NuGet package.
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`--all`**
 
   Specifies that all verifications possible should be performed on the package(s). By default, only `signatures` are verified.
@@ -73,9 +75,7 @@ The `dotnet nuget verify` command verifies a signed NuGet package.
 
     ❌ indicates details that are **not** displayed. ✔️ indicates details that are displayed.
 
-* **`-h|--help`**
-
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

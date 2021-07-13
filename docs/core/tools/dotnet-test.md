@@ -61,6 +61,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`-a|--test-adapter-path <ADAPTER_PATH>`**
 
   Path to a directory to be searched for additional test adapters. Only *.dll* files with suffix `.TestAdapter.dll` are inspected. If not specified, the directory of the test *.dll* is searched.
@@ -130,13 +132,9 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Filters out tests in the current project using the given expression. For more information, see the [Filter option details](#filter-option-details) section. For more information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
 
-- **`-h|--help`**
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out a short help for the command.
-
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action. For example, to complete authentication. Available since .NET Core 3.0 SDK.
+[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 - **`-l|--logger <LOGGER>`**
 

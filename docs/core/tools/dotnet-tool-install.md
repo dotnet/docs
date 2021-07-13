@@ -68,6 +68,8 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`--add-source <SOURCE>`**
 
   Adds an additional NuGet package source to use during installation. Feeds are accessed in parallel, not sequentially in some order of precedence. If the same package and version is in multiple feeds, the fastest feed wins. For more information, see [What happens when a NuGet package is installed?](/nuget/concepts/package-installation-process).
@@ -88,17 +90,13 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Specifies that the installation is user wide. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies a local tool installation.
 
-- **`-h|--help`**
-
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--ignore-failed-sources`**
 
   Treat package source failures as warnings.
 
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action (for example to complete authentication).
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`--local`**
 

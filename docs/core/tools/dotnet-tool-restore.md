@@ -29,6 +29,8 @@ The `dotnet tool restore` command finds the tool manifest file that is in scope 
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`--configfile <FILE>`**
 
   The NuGet configuration (*nuget.config*) file to use.
@@ -53,13 +55,9 @@ The `dotnet tool restore` command finds the tool manifest file that is in scope 
 
   Do not cache packages and http requests.
 
-- **`--interactive`**
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
-  Allows the command to stop and wait for user input or action (for example to complete authentication).
-
-- **`-h|--help`**
-
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`-v|--verbosity <LEVEL>`**
 

@@ -39,7 +39,7 @@ To embrace Xamarin (MAUI), we need to pass MSBuild properties to MSBuild during 
 
 If you encounter the new warning, use `--project`. If you have a project argument that includes an `=` and you use the `-p` abbreviation, the option will be interpreted as `--property` and passed to MSBuild. In this case, use `--project` to pass the argument to your application in all cases.
 
-If your application has an option called `--property`, you'll need to use the syntax separator `--` to pass the the value to your application:
+If your application has an option called `--property`, you'll need to use the syntax separator `--` to pass the value to your application:
 
 ```cmd
 dotnet run -- --property myPropertyValue

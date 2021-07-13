@@ -7,7 +7,7 @@ ms.date: 07/13/2021
 
 `-p` is deprecated as an abbreviation for `--project`, and using `-p` generates a warning.
 
-This warning comes from the CLI parser, so it won't generally trigger WarningsAsErrors failures. However, if your process wraps MSBuild or CI and checks for the text "Warning", the warning will appear in that check.
+This warning comes from the CLI parser, so it won't generally cause failures when warnings are treated as errors. However, if your process wraps MSBuild or CI and checks for the text "Warning", the warning will appear in that check.
 
 Also, if you pass `--property` as an option to the application being run, the `--` syntax separator must be used.
 
@@ -31,7 +31,7 @@ Starting in .NET 6:
 
 ## Reason for change
 
-We are deprecating `-p` because of the close relationship `dotnet run` has with `dotnet build` and `dotnet publish`. This breaking change is the first step in aligning abbreviations for these commands.
+`-p` was deprecated because of the close relationship `dotnet run` has with `dotnet build` and `dotnet publish`. This breaking change is the first step in aligning abbreviations for these commands.
 
 To embrace Xamarin (MAUI), we need to pass MSBuild properties to MSBuild during the build portion of `dotnet run`. The option that specifies passing properties should be the same for `dotnet run`, `dotnet build`, and `dotnet publish`.
 

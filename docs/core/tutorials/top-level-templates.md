@@ -33,7 +33,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
 These two forms represent the same program. Both are valid with C# 10.0.  When you use the newer version, you need to write the body of the `Main` method. You don't need to write the other program elements by hand. You have two options you can follow with existing tutorials:
 
-- Use the new program style, adding new top-level statements as you add features
+- Use the new program style, adding new top-level statements as you add features.
 - Convert the new program style to the older style, with a `Program` class and a `Main` method.
 
 ## Use the new program style

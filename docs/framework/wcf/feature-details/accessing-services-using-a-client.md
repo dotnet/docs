@@ -51,7 +51,7 @@ Client applications must create, configure, and use WCF client or channel object
  Handling exceptions in client applications is straightforward. If a channel is opened, used, and closed inside a try block, then the conversation has succeeded, unless an exception is thrown. Typically, if an exception is thrown the conversation is aborted.  
   
 > [!NOTE]
-> Use of the `using` statement (`Using` in Visual Basic) is not recommended. This is because the end of the `using` statement can cause exceptions that can mask other exceptions you may need to know about. For more information, see [Use Close and Abort to release WCF client resources](/previous-versions/dotnet/framework/wcf/samples/use-close-abort-release-wcf-client-resources).  
+> Use of the `using` statement (`Using` in Visual Basic) is not recommended. This is because the end of the `using` statement can cause exceptions that can mask other exceptions you may need to know about. For more information, see [Use Close and Abort to release WCF client resources](../samples/use-close-abort-release-wcf-client-resources.md).  
   
  The following code example shows the recommended client pattern using a try/catch block and not the `using` statement.  
   
@@ -63,7 +63,7 @@ Client applications must create, configure, and use WCF client or channel object
   
  Datagram channels never fault even if exceptions occur when they are closed. In addition, non-duplex clients that fail to authenticate using a secure conversation typically throw a <xref:System.ServiceModel.Security.MessageSecurityException?displayProperty=nameWithType>. However if the duplex client using a secure conversation fails to authenticate, the client receives a <xref:System.TimeoutException?displayProperty=nameWithType> instead.  
   
- For more complete information about working with error information at the application level, see [Specifying and Handling Faults in Contracts and Services](../specifying-and-handling-faults-in-contracts-and-services.md). [Expected Exceptions](/previous-versions/dotnet/framework/wcf/samples/expected-exceptions) describes expected exceptions and shows how to handle them. For more information about how to handle errors when developing channels, see [Handling Exceptions and Faults](../extending/handling-exceptions-and-faults.md).  
+ For more complete information about working with error information at the application level, see [Specifying and Handling Faults in Contracts and Services](../specifying-and-handling-faults-in-contracts-and-services.md). [Expected Exceptions](../samples/expected-exceptions.md) describes expected exceptions and shows how to handle them. For more information about how to handle errors when developing channels, see [Handling Exceptions and Faults](../extending/handling-exceptions-and-faults.md).  
   
 ### Client Blocking and Performance  
 

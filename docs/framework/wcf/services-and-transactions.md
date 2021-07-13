@@ -88,4 +88,4 @@ using (TransactionScope ts = new TransactionScope(TransactionScopeOption.Require
 
 - [Transactional Support in System.ServiceModel](./feature-details/transactional-support-in-system-servicemodel.md)
 - [Transaction Models](./feature-details/transaction-models.md)
-- [WS Transaction Flow](/previous-versions/dotnet/framework/wcf/samples/ws-transaction-flow)
+- [WS Transaction Flow](./samples/ws-transaction-flow.md)

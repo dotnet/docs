@@ -10,7 +10,7 @@ Windows Communication Foundation (WCF) allows you to create a service that expos
   
  To create services with ASP.NET AJAX endpoints without configuration, the services must be hosted by Internet Information Services (IIS). To activate an ASP.NET AJAX endpoint using this approach, specify the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> as the Factory parameter in the [\@ServiceHost](../../configure-apps/file-schema/wcf-directive/servicehost.md) directive in the .svc file. This custom factory is the component that automatically configures an ASP.NET AJAX endpoint so that it can be called from JavaScript on a client Web site.  
   
- For a working example, see the [AJAX Service Without Configuration](/previous-versions/dotnet/framework/wcf/samples/ajax-service-without-configuration).  
+ For a working example, see the [AJAX Service Without Configuration](../samples/ajax-service-without-configuration.md).  
   
  For an outline of how to configure an ASP.NET AJAX endpoint using configuration elements, see [How to: Use Configuration to Add an ASP.NET AJAX Endpoint](how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md).  
   
@@ -70,7 +70,7 @@ Windows Communication Foundation (WCF) allows you to create a service that expos
   
 ### To call the service  
   
-1. The endpoint is configured at an empty address relative to the .svc file, so the service is now available and can be invoked by sending requests to service.svc/\<operation> - for example, service.svc/Add for the `Add` operation. You can use it by entering the service URL into the Scripts collection of the ASP.NET AJAX Script Manager control. For an example, see the [AJAX Service Without Configuration](/previous-versions/dotnet/framework/wcf/samples/ajax-service-without-configuration).  
+1. The endpoint is configured at an empty address relative to the .svc file, so the service is now available and can be invoked by sending requests to service.svc/\<operation> - for example, service.svc/Add for the `Add` operation. You can use it by entering the service URL into the Scripts collection of the ASP.NET AJAX Script Manager control. For an example, see the [AJAX Service Without Configuration](../samples/ajax-service-without-configuration.md).  
   
 ## Example  
   

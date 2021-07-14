@@ -228,20 +228,20 @@ The following features are incompatible with trimming because they require code 
 
 - `<BuiltInComInteropSupport>`
 
-   Built-in COM support is disabled.
+  Built-in COM support is disabled.
 
 - `<CustomResourceTypesSupport>`
 
-   Use of custom resource types is not supported. ResourceManager code paths that use reflection for custom resource types is trimmed.
+  Use of custom resource types is not supported. ResourceManager code paths that use reflection for custom resource types is trimmed.
 
 - `<EnableCppCLIHostActivation>`
 
-    C++/CLI host activation is disabled.
+  C++/CLI host activation is disabled.
 
 - `<EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization>`
 
-   [`DesigntimeLicenceContextSerializer`](https://docs.microsoft.com/dotnet/api/system.componentmodel.design.designtimelicensecontextserializer?view=net-5.0) use of BinaryFormatter serialization is disabled.
+  <xref:System.ComponentModel.Design.DesigntimeLicenseContextSerializer> use of `BinaryFormatter` serialization is disabled.
 
 - `<StartupHookSupport>`
 
-   Running code before `Main` with `DOTNET_STARTUP_HOOKS` is not supported. For more information, see [host startup hook](https://github.com/dotnet/runtime/blob/main/docs/design/features/host-startup-hook.md).
+  Running code before `Main` with `DOTNET_STARTUP_HOOKS` is not supported. For more information, see [host startup hook](https://github.com/dotnet/runtime/blob/main/docs/design/features/host-startup-hook.md).

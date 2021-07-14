@@ -53,9 +53,9 @@ Before you begin, create some dummy local data in the directory of our script. L
 
 ### Create the Blob service client
 
-The `BlobServiceClient` type enables you to retrieve containers and blobs stored in Blob storage. Here's one way to create the service client:
+The `BlobContainerClient` type enables you to create containers and retrieve blobs stored in Blob storage. Here's one way to create the container client:
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L32-L32)]
+[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L33-L33)]
 
 Now you are ready to write code that reads data from and writes data to Blob storage.
 
@@ -63,11 +63,11 @@ Now you are ready to write code that reads data from and writes data to Blob sto
 
 This example shows how to create a container if it does not already exist:
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L38-L42)]
+[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L36-L36)]
 
 By default, the new container is private, meaning that you must specify your storage access key to download blobs from this container. If you want to make the files within the container available to everyone, you can set the container to be public using the following code:
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L44-L45)]
+[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L38-L39)]
 
 Anyone on the Internet can see blobs in a public container, but you can modify or delete them only if you have the appropriate account access key or a shared access signature.
 
@@ -77,13 +77,13 @@ Azure Blob Storage supports block blobs and page blobs. In most cases, a block b
 
 To upload a file to a block blob, get a container reference and use it to get a block blob reference. Once you have a blob reference, you can upload any stream of data to it by calling the `UploadFromFile` method. This operation creates the blob if it didn't previously exist, or overwrite it if it does exist.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L51-L62)]
+[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L45-L56)]
 
 ## List the blobs in a container
 
-To list the blobs in a container, first get a container reference. You can then use the container's `GetBlobs` method to retrieve the blobs and/or directories within it. To access the rich set of properties and methods for a returned `IListBlobItem`.
+To list the blobs in a container, first get a container reference. You can then use the container's `GetBlobs` method to retrieve the blobs and/or directories within it. To access the rich set of properties and methods for a returned `BlobItem`.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L69-L70)]
+[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L63-L64)]
 
 For example, consider the following set of block blobs in a container named `photos`:
 
@@ -108,18 +108,18 @@ Block blob of length 505623: https://<accountname>.blob.core.windows.net/photos/
 
 To download blobs, first retrieve a blob reference and then call the `DownloadTo` method. The following example uses the `DownloadTo` method to transfer the blob contents to a stream object that you can then persist to a local file.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L77-L82)]
+[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L71-L76)]
 
 You can also use the `DownloadTo` method to download the contents of a blob as a text string.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L84-L87)]
+[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L78-L81)]
 
 ## Delete blobs
 
 To delete a blob, first get a blob reference and then call the
 `Delete` method on it.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L93-L97)]
+[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L87-L91)]
 
 ## List blobs in pages asynchronously
 
@@ -129,16 +129,16 @@ This example shows a flat blob listing, but you can also perform a hierarchical 
 
 The sample defines an asynchronous method, using an `async` block.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L103-L123)]
+[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L97-L117)]
 
 We can now use this asynchronous routine as follows. First you upload some dummy data (using the local
 file created earlier in this tutorial).
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L126-L129)]
+[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L120-L123)]
 
 Now, call the routine. You use `Async.RunSynchronously` to force the execution of the asynchronous operation.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L131-L131)]
+[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L125-L125)]
 
 ## Writing to an append blob
 
@@ -148,7 +148,7 @@ Each block in an append blob can be a different size, up to a maximum of 4 MB, a
 
 The following example creates a new append blob and appends some data to it, simulating a simple logging operation.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L137-L168)]
+[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L131-L162)]
 
 See [Understanding Block Blobs, Page Blobs, and Append Blobs](/rest/api/storageservices/Understanding-Block-Blobs--Append-Blobs--and-Page-Blobs) for more information about the differences between the three types of blobs.
 

@@ -12,7 +12,7 @@ open System.Collections.Generic
 
 let storageConnString = "..." // fill this in from your storage account
 (*
-// Parse the connection string and return a reference to the storage account.
+// To fetch the connection string from a configuration file.
 let storageConnString = 
     CloudConfigurationManager.GetSetting("StorageConnectionString")
 *)
@@ -26,17 +26,11 @@ let localFile = __SOURCE_DIRECTORY__ + "/myfile.txt"
 File.WriteAllText(localFile, "some data")
 
 //
-// Create the blob service client.
-//
-
-let service = new BlobServiceClient(storageConnString);
-
-//
 // Create a container.
 //
 
- // Retrieve a reference to a container.
-let container = service.GetBlobContainerClient("myContainer");
+ // Create a blob container client.
+let container = BlobContainerClient(storageConnString, "myContainer");
 
 // Create the container if it doesn't already exist.
 container.CreateIfNotExists()
@@ -52,13 +46,13 @@ container.SetAccessPolicy(permissions)
 let blockBlob = container.GetBlockBlobClient("myblob.txt")
 
 // Create or overwrite the "myblob.txt" blob with contents from the local file.
-let fileStream = new FileStream(localFile, FileMode.Open, FileAccess.Read, FileShare.Read)
+use fileStream = new FileStream(localFile, FileMode.Open, FileAccess.Read, FileShare.Read)
 let offset = 0
 let length = int(fileStream.Length)
 let bytes = Array.zeroCreate<byte>(length)
 fileStream.Read(bytes, offset, bytes.Length)
 fileStream.Close();
-let stream = new MemoryStream(bytes)
+use stream = new MemoryStream(bytes)
 do blockBlob.Upload(stream)
 
 //
@@ -67,7 +61,7 @@ do blockBlob.Upload(stream)
 
 // Loop over items within the container and output the name.
 for item in container.GetBlobs() do
-    printfn "Blob name: %s" item.Name 
+    printfn $"Blob name: {item.Name}"
 
 //
 // Download Blobs.
@@ -111,20 +105,20 @@ let ListBlobsSegmentedInFlatListing(container:BlobContainerClient) =
         // When the continuation token is null, the last page has been 
         // returned and execution can exit the loop.
 
-        let blobs = new List<BlobItem>()
+        let blobs = List<BlobItem>()
 
         for page in container.GetBlobs().AsPages() do
             blobs.AddRange(page.Values)
 
         for blobItem in blobs do 
-            printf "The BlobItem is : %s " blobItem.Name
+            printf $"The BlobItem is : {blobItem.Name} "
         printfn ""
 
     }
 
 // Create some dummy data by uploading the same file over and over again
 for i in 1 .. 100 do
-    let blob  = container.GetBlobClient("myblob" + string i + ".txt")
+    let blob  = container.GetBlobClient($"myblob{i}.txt")
     use fileStream = System.IO.File.OpenRead(localFile)
     blob.Upload(localFile)
 
@@ -135,7 +129,7 @@ ListBlobsSegmentedInFlatListing container |> Async.RunSynchronously
 //
 
 // Get a reference to a container.
-let appendContainer = service.GetBlobContainerClient("my-append-blobs")
+let appendContainer = BlobContainerClient(storageConnString, "my-append-blobs")
 
 // Create the container if it does not already exist.
 appendContainer.CreateIfNotExists() |> ignore
@@ -151,18 +145,18 @@ appendBlob.CreateIfNotExists()
 let numBlocks = 10
 
 // Generate an array of random bytes.
-let rnd = new Random()
+let rnd = Random()
 let bytesArray = Array.zeroCreate<byte>(numBlocks)
 rnd.NextBytes(bytesArray)
 
 // Simulate a logging operation by writing text data and byte data to the 
 // end of the append blob.
 for i in 0 .. numBlocks - 1 do
-    let msg = sprintf "Timestamp: %A \tLog Entry: %d\n" DateTime.UtcNow bytesArray.[i]
+    let msg = sprintf $"Timestamp: {DateTime.UtcNow} \tLog Entry: {bytesArray.[i]}\n"
     let array = Encoding.ASCII.GetBytes(msg);
-    let stream = new MemoryStream(array)
+    use stream = new MemoryStream(array)
     appendBlob.AppendBlock(stream)
 
 // Read the append blob to the console window.
 let downloadedText = appendBlob.DownloadContent().ToString()
-printfn "%s" downloadedText
+printfn $"{downloadedText}"

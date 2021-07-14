@@ -36,9 +36,7 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
 <!-- markdownlint-disable MD012 -->
 
-[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
-
-  This option is only required when cleaning if you specified it during build time.
+[!INCLUDE [configuration](../../../includes/cli-configuration-clean.md)]
 
 * **`-f|--framework <FRAMEWORK>`**
 
@@ -60,9 +58,7 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
   Cleans the output folder of the specified runtime. This is used when a [self-contained deployment](../deploying/index.md#publish-self-contained) was created.
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
-
-  The default is `normal`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-normal.md)]
 
 ## Examples
 

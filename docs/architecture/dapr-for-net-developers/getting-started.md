@@ -374,6 +374,7 @@ In the final part of this example, you'll add container support and run the solu
     FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
     WORKDIR /app
     EXPOSE 80
+    EXPOSE 443
     
     FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
     WORKDIR /src
@@ -396,7 +397,7 @@ In the final part of this example, you'll add container support and run the solu
     
     1. Pulls the `mcr.microsoft.com/dotnet/aspnet:5.0` image and names it `base`.
     1. Sets the working directory to */app*.
-    1. Exposes port `80`.
+    1. Exposes port `80` and `443`.
     1. Pulls the `mcr.microsoft.com/dotnet/sdk:5.0` image and names it `build`.
     1. Sets the working directory to */src*.
     1. Copies the _DaprFrontEnd/DaprFrontEnd.csproj_ to a new directory named *DaprFrontEnd/*.

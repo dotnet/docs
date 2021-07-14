@@ -64,9 +64,7 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 <!-- markdownlint-disable MD012 -->
 
-- **`-c|--configuration <CONFIGURATION>`**
-
-  Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project.
+[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
 - **`--force`**
 

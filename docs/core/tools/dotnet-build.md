@@ -76,9 +76,7 @@ The project or solution file to build. If a project or solution file isn't speci
 
 <!-- markdownlint-disable MD012 -->
 
-- **`-c|--configuration <CONFIGURATION>`**
-
-  Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project.
+[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
 - **`-f|--framework <FRAMEWORK>`**
 

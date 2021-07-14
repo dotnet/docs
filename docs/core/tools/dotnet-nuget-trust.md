@@ -50,9 +50,7 @@ dotnet nuget trust list [--configfile <PATH>] [-h|--help] [-v, --verbosity <LEVE
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`-v, --verbosity <LEVEL>`**
-
-  Set the verbosity level. Defaults to m[inimal]. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ### `sync`
 
@@ -76,9 +74,7 @@ dotnet nuget trust sync <NAME> [--configfile <PATH>] [-h|--help] [-v, --verbosit
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`-v, --verbosity <LEVEL>`**
-
-  Set the verbosity level. Defaults to m[inimal]. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ### `remove`
 
@@ -102,9 +98,7 @@ dotnet nuget trust remove <NAME> [--configfile <PATH>] [-h|--help] [-v, --verbos
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`-v, --verbosity <LEVEL>`**
-
-  Set the verbosity level. Defaults to m[inimal]. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ### `author`
 
@@ -136,9 +130,7 @@ dotnet nuget trust author <NAME> <PACKAGE> [--allow-untrusted-root] [--configfil
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`-v, --verbosity <LEVEL>`**
-
-  Set the verbosity level. Defaults to m[inimal]. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ### `repository`
 
@@ -170,9 +162,7 @@ dotnet nuget trust repository <NAME> <PACKAGE> [--allow-untrusted-root] [--confi
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`-v, --verbosity <LEVEL>`**
-
-  Set the verbosity level. Defaults to m[inimal]. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ### `certificate`
 
@@ -208,9 +198,7 @@ dotnet nuget trust certificate <NAME> <FINGERPRINT> [--algorithm <ALGORITHM>] [-
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`-v, --verbosity <LEVEL>`**
-
-  Set the verbosity level. Defaults to m[inimal]. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ### `source`
 
@@ -242,7 +230,7 @@ dotnet nuget trust source <NAME> [--configfile <PATH>] [-h|--help] [--owners <Li
 
   If a `source-url` is provided, it must be a v3 package source URL (like `https://api.nuget.org/v3/index.json`). Other package source types are not supported.
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ## Examples
 

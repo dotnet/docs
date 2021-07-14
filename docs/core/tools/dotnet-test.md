@@ -108,9 +108,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   When no unit is used (for example, 5400000), the value is assumed to be in milliseconds. When used together with data driven tests, the timeout behavior depends on the test adapter used. For xUnit and NUnit the timeout is renewed after every test case. For MSTest, the timeout is used for all test cases. This option is supported on Windows with netcoreapp2.1 and later, on Linux with netcoreapp3.1 and later, and on macOS with net5.0 or later. Implies `--blame` and `--blame-hang`.
 
-- **`-c|--configuration <CONFIGURATION>`**
-
-  Defines the build configuration. The default value is `Debug`, but your project's configuration could override this default SDK setting.
+[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
 - **`--collect <DATA_COLLECTOR_NAME>`**
 

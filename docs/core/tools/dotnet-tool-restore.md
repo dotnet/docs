@@ -33,9 +33,7 @@ The `dotnet tool restore` command finds the tool manifest file that is in scope 
 
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
-- **`--add-source <SOURCE>`**
-
-  Adds an additional NuGet package source to use during installation.
+[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
 - **`--tool-manifest <PATH>`**
 

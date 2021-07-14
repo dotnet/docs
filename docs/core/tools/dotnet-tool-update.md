@@ -56,9 +56,7 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
 <!-- markdownlint-disable MD012 -->
 
-- **`--add-source <SOURCE>`**
-
-  Adds an additional NuGet package source to use during installation.
+[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 

@@ -56,9 +56,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Delimits arguments to `dotnet run` from arguments for the application being run. All arguments after this delimiter are passed to the application run.
 
-- **`-c|--configuration <CONFIGURATION>`**
-
-  Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project.
+[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
 - **`-f|--framework <FRAMEWORK>`**
 

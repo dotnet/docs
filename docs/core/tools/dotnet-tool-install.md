@@ -70,9 +70,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 <!-- markdownlint-disable MD012 -->
 
-- **`--add-source <SOURCE>`**
-
-  Adds an additional NuGet package source to use during installation. Feeds are accessed in parallel, not sequentially in some order of precedence. If the same package and version is in multiple feeds, the fastest feed wins. For more information, see [What happens when a NuGet package is installed?](/nuget/concepts/package-installation-process).
+[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 

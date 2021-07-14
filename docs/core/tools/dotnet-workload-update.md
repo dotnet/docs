@@ -15,36 +15,44 @@ ms.date: 07/08/2021
 
 ```dotnetcli
 dotnet workload update
-    [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
-    [--download-to-cache <CACHE>] [--from-cache <CACHE>]
-    [--ignore-failed-sources] [--include-previews] [--interactive]
-    [--no-cache] [--sdk-version <VERSION>]
-    [-v|--verbosity <LEVEL>]
+    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--disable-parallel] [--download-to-cache <CACHE>]
+    [--from-cache <CACHE>] [--from-previous-sdk]
+    [--ignore-failed-sources] [--include-previews]
+    [--interactive] [--no-cache] [--sdk-version <VERSION>] [--temp-dir <PATH>] [-v|--verbosity <LEVEL>]
 
 dotnet workload update -?|-h|--help
 ```
 
 ## Description
 
-The `dotnet workload update` command queries Nuget.org for updated workload manifests, updates local manifests, downloads new versions of the installed workloads, and then removes all old versions of a workload.
+The `dotnet workload update` command queries Nuget.org for updated workload manifests. It then updates local manifests, downloads new versions of the installed workloads, and removes all old versions of each workload.
 
 ## Options
 
-- **`--add-source <SOURCE>`**
+<!-- markdownlint-disable MD012 -->
 
-  Adds an additional NuGet package source. Feeds are accessed in parallel, not sequentially in some order of precedence. If the same package and version is in multiple feeds, the fastest feed wins. For more information, see [What happens when a NuGet package is installed?](/nuget/concepts/package-installation-process).
+[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
-- **`--configfile <FILE>`**
-
-  The NuGet configuration file (*nuget.config*) to use. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior).
+[!INCLUDE [config-file](../../../includes/cli-config-file.md)]
 
 - **`--disable-parallel`**
 
   Prevents restoring multiple projects in parallel.
 
+- **`--download-to-cache <PATH_TO_CACHE>`**
+
+  Downloads packages needed for a workload to a folder that can be used for offline installation.
+
 - **`--from-cache <PATH_TO_CACHE>`**
 
   Completes the operation from cache (offline).
+
+- **`--from-previous-sdk`**
+
+  Include workloads installed with previous SDK versions in the update.
+
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--ignore-failed-sources`**
 
@@ -54,21 +62,19 @@ The `dotnet workload update` command queries Nuget.org for updated workload mani
 
   Allow prerelease workload manifests.
 
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action (for example to complete authentication).
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`--no-cache`**
 
   Don't cache packages and HTTP requests.
 
-- **`--sdk-version <VERSION>`**
+[!INCLUDE [sdk-version](../../../includes/cli-sdk-version.md)]
 
-   Specifies the version of the .NET SDK to use.
+- **`--temp-dir <PATH>`**
 
-- **`-v|--verbosity <LEVEL>`**
+  Configure the temporary directory used for this command (must be secure).
 
-  Sets the MSBuild verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ## Examples
 

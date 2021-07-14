@@ -19,14 +19,22 @@ dotnet workload list [-v|--verbosity <LEVEL>]
 dotnet workload list [-?|-h|--help]
 ```
 
-### Options
+## Description
 
-- **`-?|-h|--help`**
+The `dotnet workload list` command lists all installed workloads.
 
-  Prints out a description of how to use the command.
-  
-- **`-v|--verbosity <LEVEL>`**
+## Options
 
-  Sets the MSBuild verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`.
+<!-- markdownlint-disable MD012 -->
+
+[!INCLUDE [help](../../../includes/cli-help.md)]
+
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ## Examples
+
+- List the installed workloads:
+
+  ```dotnetcli
+  dotnet workload list
+  ```

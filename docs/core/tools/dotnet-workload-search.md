@@ -14,83 +14,44 @@ ms.date: 07/08/2021
 ## Synopsis
 
 ```dotnetcli
-dotnet workload search [<WORKLOAD_ID>]
-    [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
-    [--download-to-cache <CACHE>] [--from-cache <CACHE>]
-    [--ignore-failed-sources] [--include-previews] [--interactive]
-    [--no-cache] [--sdk-version <VERSION>] [--skip-manifest-update]
-    [-v|--verbosity <LEVEL>]
+dotnet workload search [<SEARCH_STRING>]
+    [--sdk-version <VERSION>] [-v|--verbosity <LEVEL>]
 
 dotnet workload search -?|-h|--help
 ```
 
+## Description
+
+The `dotnet workload search` command lists available workloads. You can filter the list by specifying all or part of the workload ID you're looking for.
+
 ## Arguments
 
-- **`WORKLOAD_ID`**
+- **`SEARCH_STRING`**
 
-  The workload ID of the workload to search for.
+  The workload ID to search for, or part of it. For example, if you specify `tvos`, the command might list `microsoft-tvos-sdk-full` and `microsoft-net-runtime-tvos`.
 
 ## Options
 
-- **`--add-source <SOURCE>`**
+<!-- markdownlint-disable MD012 -->
 
-  Adds an additional NuGet package source. Feeds are accessed in parallel, not sequentially in some order of precedence. If the same package and version is in multiple feeds, the fastest feed wins. For more information, see [What happens when a NuGet package is searched?](/nuget/concepts/package-searchation-process).
+[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
-- **`--configfile <FILE>`**
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-  The NuGet configuration file (*nuget.config*) to use. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior).
+[!INCLUDE [sdk-version](../../../includes/cli-sdk-version.md)]
 
-- **`--disable-parallel`**
-
-  Prevents restoring multiple projects in parallel.
-
-- **`--download-to-cache <PATH_TO_CACHE>`**
-
-  Downloads packages needed for a workload to a folder that can be used for offline searchation.
-
-- **`--from-cache <PATH_TO_CACHE>`**
-
-  Complete the operation from cache (offline).
-
-- **`--ignore-failed-sources`**
-
-  Treats package source failures as warnings.
-
-- **`--include-previews`**
-
-  Allows prerelease workload manifests.
-
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action (for example to complete authentication).
-
-- **`--no-cache`**
-
-  Prevents caching of packages and http requests.
-
-- **`--sdk-version <VERSION>`**
-
-  The SDK version to use.
-
-- **`--skip-manifest-update`**
-
-  Skip updating the workload manifests.
-
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the MSBuild verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ## Examples
 
-- Search the `microsoft.ios.sdk.full` workload:
+- List all available workloads:
 
   ```dotnetcli
-  dotnet workload search microsoft.ios.sdk.full
+  dotnet workload search
   ```
 
-- Download the `microsoft.ios.sdk.full` workload to a cache located in the *workload-cache* directory under the current directory. Then search it from the same cache location:
+- List all available workloads that have "tvos" in their workload ID:
 
   ```dotnetcli
-  dotnet workload search microsoft-ios-sdk-full --download-to-cache ./workload-cache
-  dotnet workload search microsoft-ios-sdk-full --from-cache ./workload-cache
+  dotnet workload search tvos
   ```

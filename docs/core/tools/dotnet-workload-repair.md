@@ -15,14 +15,15 @@ ms.date: 07/08/2021
 
 ```dotnetcli
 dotnet workload repair <WORKLOAD_ID>
-    [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
-    [--download-to-cache <CACHE>] [--from-cache <CACHE>]
-    [--ignore-failed-sources] [--include-previews] [--interactive]
-    [--no-cache] [--sdk-version <VERSION>] [--skip-manifest-update]
-    [-v|--verbosity <LEVEL>]
+    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--sdk-version <VERSION>] [-v|--verbosity <LEVEL>]
 
 dotnet workload repair -?|-h|--help
 ```
+
+## Description
+
+The `dotnet workload repair` command reinstalls all installed workloads. Workloads are made up of multiple workload packs and it's possible to get into a state where some installed successfully but others didn't. For example, a [`dotnet workload install`](dotnet-workload-install.md) command might not finish installing because of a dropped internet connection.
 
 ## Arguments
 
@@ -32,65 +33,22 @@ dotnet workload repair -?|-h|--help
 
 ## Options
 
-- **`--add-source <SOURCE>`**
+<!-- markdownlint-disable MD012 -->
 
-  Adds an additional NuGet package source. Feeds are accessed in parallel, not sequentially in some order of precedence. If the same package and version is in multiple feeds, the fastest feed wins. For more information, see [What happens when a NuGet package is repaired?](/nuget/concepts/package-repairation-process).
+[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
-- **`--configfile <FILE>`**
+[!INCLUDE [config-file](../../../includes/cli-config-file.md)]
 
-  The NuGet configuration file (*nuget.config*) to use. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior).
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`--disable-parallel`**
+[!INCLUDE [sdk-version](../../../includes/cli-sdk-version.md)]
 
-  Prevents restoring multiple projects in parallel.
-
-- **`--download-to-cache <PATH_TO_CACHE>`**
-
-  Downloads packages needed for a workload to a folder that can be used for offline repairation.
-
-- **`--from-cache <PATH_TO_CACHE>`**
-
-  Complete the operation from cache (offline).
-
-- **`--ignore-failed-sources`**
-
-  Treats package source failures as warnings.
-
-- **`--include-previews`**
-
-  Allows prerelease workload manifests.
-
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action (for example to complete authentication).
-
-- **`--no-cache`**
-
-  Prevents caching of packages and http requests.
-
-- **`--sdk-version <VERSION>`**
-
-  The SDK version to use.
-
-- **`--skip-manifest-update`**
-
-  Skip updating the workload manifests.
-
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the MSBuild verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ## Examples
 
-- Repair the `microsoft.ios.sdk.full` workload:
+- Repair all installed workloads:
 
   ```dotnetcli
-  dotnet workload repair microsoft.ios.sdk.full
-  ```
-
-- Download the `microsoft.ios.sdk.full` workload to a cache located in the *workload-cache* directory under the current directory. Then repair it from the same cache location:
-
-  ```dotnetcli
-  dotnet workload repair microsoft-ios-sdk-full --download-to-cache ./workload-cache
-  dotnet workload repair microsoft-ios-sdk-full --from-cache ./workload-cache
+  dotnet workload repair
   ```

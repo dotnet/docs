@@ -19,10 +19,14 @@ dotnet workload install <WORKLOAD_ID>
     [--download-to-cache <CACHE>] [--from-cache <CACHE>]
     [--ignore-failed-sources] [--include-previews] [--interactive]
     [--no-cache] [--sdk-version <VERSION>] [--skip-manifest-update]
-    [-v|--verbosity <LEVEL>]
+    [--temp-dir <PATH>] [-v|--verbosity <LEVEL>]
 
 dotnet workload install -?|-h|--help
 ```
+
+## Description
+
+The `dotnet workload install` command installs an optional workload.
 
 ## Arguments
 
@@ -32,13 +36,11 @@ dotnet workload install -?|-h|--help
 
 ## Options
 
-- **`--add-source <SOURCE>`**
+<!-- markdownlint-disable MD012 -->
 
-  Adds an additional NuGet package source. Feeds are accessed in parallel, not sequentially in some order of precedence. If the same package and version is in multiple feeds, the fastest feed wins. For more information, see [What happens when a NuGet package is installed?](/nuget/concepts/package-installation-process).
+[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
-- **`--configfile <FILE>`**
-
-  The NuGet configuration file (*nuget.config*) to use. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior).
+[!INCLUDE [config-file](../../../includes/cli-config-file.md)]
 
 - **`--disable-parallel`**
 
@@ -52,6 +54,8 @@ dotnet workload install -?|-h|--help
 
   Complete the operation from cache (offline).
 
+[!INCLUDE [help](../../../includes/cli-help.md)]
+
 - **`--ignore-failed-sources`**
 
   Treats package source failures as warnings.
@@ -60,25 +64,23 @@ dotnet workload install -?|-h|--help
 
   Allows prerelease workload manifests.
 
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action (for example to complete authentication).
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`--no-cache`**
 
   Prevents caching of packages and http requests.
 
-- **`--sdk-version <VERSION>`**
-
-  The SDK version to use.
+[!INCLUDE [sdk-version](../../../includes/cli-sdk-version.md)]
 
 - **`--skip-manifest-update`**
 
   Skip updating the workload manifests.
 
-- **`-v|--verbosity <LEVEL>`**
+- **`--temp-dir <PATH>`**
 
-  Sets the MSBuild verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`.
+  Configure the temporary directory used for this command (must be secure).
+
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ## Examples
 

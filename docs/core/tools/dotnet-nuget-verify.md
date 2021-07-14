@@ -48,7 +48,9 @@ The `dotnet nuget verify` command verifies a signed NuGet package.
 
   Verify that the signer certificate matches with one of the specified `SHA256` fingerprints. This option can be supplied multiple times to provide multiple fingerprints.
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- **`-v|--verbosity <LEVEL>`**
+
+  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`. For more information, see <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
   The following table shows what is displayed for each verbosity level.
 

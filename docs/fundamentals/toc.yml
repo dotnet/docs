@@ -314,7 +314,19 @@ items:
       - name: dotnet vstest
         href: ../core/tools/dotnet-vstest.md
       - name: dotnet workload
-        href: ../core/tools/dotnet-workload.md
+        items:
+        - name: dotnet workload install
+          href: ../core/tools/dotnet-workload-install.md
+        - name: dotnet workload list
+          href: ../core/tools/dotnet-workload-list.md
+        - name: dotnet workload repair
+          href: ../core/tools/dotnet-workload-repair.md
+        - name: dotnet workload search
+          href: ../core/tools/dotnet-workload-search.md
+        - name: dotnet workload uninstall
+          href: ../core/tools/dotnet-workload-uninstall.md
+        - name: dotnet workload update
+          href: ../core/tools/dotnet-workload-update.md
       - name: dotnet-install scripts
         href: ../core/tools/dotnet-install-script.md
       - name: Project reference commands

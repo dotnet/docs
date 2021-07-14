@@ -102,8 +102,7 @@ public class MyLibrary
 }
 ```
 
-This means the library calls a method that has explicitly been annotated as incompatible with trimming, using [`RequiresUnreferencedCodeAttribute`](
-https://docs.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.requiresunreferencedcodeattribute?view=net-5.0&preserve-view=true). To get rid of the warning, consider whether `Method` needs to call `DynamicBehavior` to do its job. If so, annotate the caller `Method` with `RequiresUnreferencedCode` as well; this will "bubble up" the warning so that callers of `Method` get a warning instead:
+This means the library calls a method that has explicitly been annotated as incompatible with trimming, using <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute>. To get rid of the warning, consider whether `Method` needs to call `DynamicBehavior` to do its job. If so, annotate the caller `Method` with `RequiresUnreferencedCode` as well; this will "bubble up" the warning so that callers of `Method` get a warning instead:
 
 ```csharp
 // Warn for calls to Method, but not for Method's call to DynamicBehavior.

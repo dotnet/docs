@@ -154,8 +154,7 @@ To delete a queue and all the messages contained in it, call the
 
 ## Note
 
-If you're migrating from the old libraries, they Base64 encoded messages by default but the new libraries do not because it's more performant.
-See [MessageEncoding](https://docs.microsoft.com/dotnet/api/azure.storage.queues.queueclientoptions.messageencoding?view=azure-dotnet#Azure_Storage_Queues_QueueClientOptions_MessageEncoding) for how to set that up.
+If you're migrating from the old libraries, they Base64-encoded messages by default, but the new libraries don't because it's more performant. For information on how to set up encoding, see <xref:Azure.Storage.Queues.QueueClientOptions.MessageEncoding>.
 
 ## Next steps
 

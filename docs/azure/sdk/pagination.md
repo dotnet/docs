@@ -24,7 +24,7 @@ Clients instantiated from the Azure SDK for .NET can return the following pageab
 
 To iterate over an `AsyncPageable<T>` using the [`await foreach`](/dotnet/csharp/language-reference/proposals/csharp-8.0/async-streams#foreach) syntax, consider the following example:
 
-:::code source="snippets/pagination/Program.cs" range="44-52":::
+:::code source="snippets/pagination/Program.cs" range="45-53":::
 
 In the preceding C# code:
 
@@ -34,9 +34,9 @@ In the preceding C# code:
 
 ## Iterate over `AsyncPageable` with while
 
-To iterate over an `AsyncPageable` when the `await foreach` syntax isn't available, use a `while` loop.
+To iterate over an `AsyncPageable<T>` when the `await foreach` syntax isn't available, use a `while` loop.
 
-:::code source="snippets/pagination/Program.cs" range="54-71":::
+:::code source="snippets/pagination/Program.cs" range="55-72":::
 
 In the preceding C# code:
 
@@ -46,25 +46,42 @@ In the preceding C# code:
 
 ## Iterate over `AsyncPageable` pages
 
-If you want to have control over receiving pages of values from the service use `AsyncPageable<T>.AsPages` method:
+If you want to have control over receiving pages of values from the service use [`AsyncPageable<T>.AsPages`](xref:Azure.AsyncPageable%601.AsPages%2A) method:
 
-:::code source="snippets/pagination/Program.cs" range="73-87":::
+:::code source="snippets/pagination/Program.cs" range="74-88":::
 
 ## Use `System.Linq.Async` with `AsyncPageable`
 
-The [`System.Linq.Async`](https://www.nuget.org/packages/System.Linq.Async) package provides a set of LINQ methods that operate on <xref:System.Collections.Generic.IAsyncEnumerable%601> type. Because `AsyncPageable<T>` implements `IAsyncEnumerable<T>` you can use `System.Linq.Async` to easily query and transform the data.
+The [`System.Linq.Async`](https://www.nuget.org/packages/System.Linq.Async) package provides a set of LINQ methods that operate on <xref:System.Collections.Generic.IAsyncEnumerable%601> type. Because `AsyncPageable<T>` implements [`IAsyncEnumerable<T>`](xref:System.Collections.Generic.IAsyncEnumerable%601) you can use `System.Linq.Async` to easily query and transform the data.
 
 ### Convert to a `List<T>`
 
-`ToListAsync` can be used to convert an `AsyncPageable` to a `List<T>`. This might make several service calls if the data isn't returned in a single page.
+Use `ToListAsync` to convert an `AsyncPageable<T>` to a `List<T>`. This might make several service calls if the data isn't returned in a single page.
 
-:::code source="snippets/pagination/Program.cs" range="89-95":::
+:::code source="snippets/pagination/Program.cs" range="90-96":::
+
+In the preceding C# code:
+
+- The <xref:Azure.Security.KeyVault.Secrets.SecretClient.GetPropertiesOfSecretsAsync%2A?displayProperty=nameWithType> method is invoked, and returns an `AsyncPageable<SecretProperties>` object.
+- The `ToListAsync` method is awaited, which materializes a new `List<SecretProperties>` instance.
 
 ### Take the first N elements
 
 `Take` can be used to get only the first `N` elements of the `AsyncPageable`. Using `Take` will make the fewest service calls required to get `N` items.
 
-:::code source="snippets/pagination/Program.cs" range="97-104":::
+:::code source="snippets/pagination/Program.cs" range="98-105":::
+
+### As an observable sequence
+
+Asynchronous streams are pull-based, meaning as their items are iterated over the next available item is pulled. This is in juxtaposition with the observable-pattern, which is push-based. The `System.Linq.Async` package provides the `ToObservable` extension method that lets you convert an `IAsyncEnumerable<T>` to an [`IObservable<T>`](xref:System.IObservable%601).
+
+Imagine a simple `IObserver<SecretProperties>` implemenation:
+
+:::code source="snippets/pagination/Program.cs" range="127-133":::
+
+You could consume the `ToObservable` extension method as follows:
+
+:::code source="snippets/pagination/Program.cs" range="118-125":::
 
 ### More methods
 
@@ -86,7 +103,7 @@ int expensiveSecretCount = await client.GetPropertiesOfSecretsAsync().CountAsync
 
 `Pageable<T>` is a synchronous version of `AsyncPageable<T>`, it can be used with a normal `foreach` loop.
 
-:::code source="snippets/pagination/Program.cs" range="107-115":::
+:::code source="snippets/pagination/Program.cs" range="108-116":::
 
 ## See also
 

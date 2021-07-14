@@ -36,8 +36,9 @@ await IterateSecretsAsPagesAsync();
 await ToListAsync();
 await TakeAsync();
 
-// Non-async 😢
 IterateWithPageable();
+
+using IDisposable subscription = ToObservable();
 
 await host.RunAsync();
 
@@ -47,7 +48,7 @@ async Task IterateSecretsWithAwaitForeachAsync()
 
     await foreach (SecretProperties secret in allSecrets)
     {
-        Console.WriteLine(secret.Name);
+        Console.WriteLine($"IterateSecretsWithAwaitForeachAsync: {secret.Name}");
     }
 }
 
@@ -61,7 +62,7 @@ async Task IterateSecretsWithWhileLoopAsync()
         while (await enumerator.MoveNextAsync())
         {
             SecretProperties secret = enumerator.Current;
-            Console.WriteLine(secret.Name);
+            Console.WriteLine($"IterateSecretsWithWhileLoopAsync: {secret.Name}");
         }
     }
     finally
@@ -78,7 +79,7 @@ async Task IterateSecretsAsPagesAsync()
     {
         foreach (SecretProperties secret in page.Values)
         {
-            Console.WriteLine(secret.Name);
+            Console.WriteLine($"IterateSecretsAsPagesAsync: {secret.Name}");
         }
 
         // The continuation token that can be used in AsPages call to resume enumeration
@@ -91,7 +92,7 @@ async Task ToListAsync()
     AsyncPageable<SecretProperties> allSecrets = client.GetPropertiesOfSecretsAsync();
 
     List<SecretProperties> secretList = await allSecrets.ToListAsync();
-    secretList.ForEach(secret => Console.WriteLine(secret.Name));
+    secretList.ForEach(secret => Console.WriteLine($"ToListAsync: {secret.Name}"));
 }
 
 async Task TakeAsync(int count = 30)
@@ -100,7 +101,7 @@ async Task TakeAsync(int count = 30)
 
     await foreach (SecretProperties secret in allSecrets.Take(count))
     {
-        Console.WriteLine(secret.Name);
+        Console.WriteLine($"TakeAsync: {secret.Name}");
     }
 }
 
@@ -110,6 +111,22 @@ void IterateWithPageable()
 
     foreach (SecretProperties secret in allSecrets)
     {
-        Console.WriteLine(secret.Name);
+        Console.WriteLine($"IterateWithPageable: {secret.Name}");
     }
+}
+
+IDisposable ToObservable()
+{
+    AsyncPageable<SecretProperties> allSecrets = client.GetPropertiesOfSecretsAsync();
+
+    IObservable<SecretProperties> observable = allSecrets.ToObservable();
+
+    return observable.Subscribe(new SecretPropertyObserver());
+}
+
+sealed class SecretPropertyObserver : IObserver<SecretProperties>
+{
+    public void OnCompleted() => Console.WriteLine("Done observing secrets");
+    public void OnError(Exception error) => Console.WriteLine($"Error observing secrets: {error}");
+    public void OnNext(SecretProperties secret) => Console.WriteLine($"Observable: {secret.Name}");
 }

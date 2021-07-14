@@ -9,10 +9,7 @@ author: IEvangelist
 
 # Pagination in async responses with the Azure SDK for .NET
 
-In this article, you'll learn how to use the Azure SDK for .NET pagination and iteration functionality to work efficiently and productively with large data sets. Starting with C# 8, you can create and consume streams asynchronously using [Asynchronous streams](../../csharp/whats-new/csharp-8.md#asynchronous-streams).
-
-> [!IMPORTANT]
-> This article applies to client libraries that use the most recent versions of the Azure SDK for .NET. To see if a library is supported, refer to the list of [Azure SDK latest releases](packages.md#all-libraries). If your application is using an older version of the Azure SDK client libraries, refer to specific instructions in the applicable service documentation.
+In this article, you'll learn how to use the Azure SDK for .NET pagination and iteration functionality to work efficiently and productively with large data sets. Starting with C# 8, you can create and consume streams asynchronously using [Asynchronous streams](../../csharp/whats-new/csharp-8.md#asynchronous-streams). For the latest listing of Azure SDK for .NET, see [Azure SDK latest releases](packages.md#all-libraries).
 
 ## Pageable return types
 

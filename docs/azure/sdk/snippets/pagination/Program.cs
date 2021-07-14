@@ -6,23 +6,23 @@ using Azure;
 using Azure.Identity;
 using Azure.Security.KeyVault.Secrets;
 using Microsoft.Extensions.Azure;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 // Relies on the following env vars:
 //     AZURE_TENANT_ID - The Azure Active Directory tenant (directory) ID.
-//     AZURE_CLIENT_ID - The client(application) ID of an App Registration in the tenant.
+//     AZURE_CLIENT_ID - The client (application) ID of an App Registration in the tenant.
 //     AZURE_CLIENT_SECRET - A client secret that was generated for the App Registration.
+//     AZURE_KEY_VAULT_URI - The URI for the Azure Key Vault resource.
 
 using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices((context, services) =>
+    .ConfigureServices(services =>
     {
         services.AddAzureClients(builder =>
         {
-            IConfiguration configuration = context.Configuration;
+            Uri vaultUri = new(Environment.GetEnvironmentVariable("AZURE_KEY_VAULT_URI")!);
 
-            builder.AddSecretClient(configuration);
+            builder.AddSecretClient(vaultUri);
             builder.UseCredential(new DefaultAzureCredential());
         });
     })

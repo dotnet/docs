@@ -392,9 +392,9 @@ In the final part of this example, you'll add container support and run the solu
     COPY --from=publish /app/publish .
     ENTRYPOINT ["dotnet", "DaprFrontEnd.dll"]
     ```
-    
+
     The preceding *Dockerfile* sequentially performs the following steps when invoked:
-    
+
     1. Pulls the `mcr.microsoft.com/dotnet/aspnet:5.0` image and names it `base`.
     1. Sets the working directory to */app*.
     1. Exposes port `80` and `443`.
@@ -413,7 +413,7 @@ In the final part of this example, you'll add container support and run the solu
     1. Sets the working directory to */app*.
     1. Copies the `/app/publish` directory from the `publish` image into the root of the `final` image.
     1. Sets the entry point as the image to `dotnet` and passes the `DaprFrontEnd.dll` as an arg.
-    
+
 1. In the `DaprBackEnd` web API project, right-click on the project node, and choose **Add** > **Container Orchestrator Support**. Choose **Docker Compose**, and then select **Linux** again as the target OS.
 
     In the root of the _DaprBackEnd_ project directory, a new *Dockerfile* was created. The *Dockerfile* contains the following YAML:

@@ -17,9 +17,9 @@ The other key part of the story that needs highlighting in the implementation of
 
 This topic outlines two procedures.
 
-1. The first procedure describes how to create a custom activity designer with a <xref:System.Activities.Presentation.WorkflowItemPresenter> that provides the drop zone that receives other activities. This procedure is based on the [Custom Composite Designers - Workflow Item Presenter](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/custom-composite-designers-workflow-item-presenter) sample.
+1. The first procedure describes how to create a custom activity designer with a <xref:System.Activities.Presentation.WorkflowItemPresenter> that provides the drop zone that receives other activities. This procedure is based on the [Custom Composite Designers - Workflow Item Presenter](./samples/custom-composite-designers-workflow-item-presenter.md) sample.
 
-2. The second procedure describes how to create a custom activity designer with a <xref:System.Activities.Presentation.WorkflowItemsPresenter> that provides the functionality needed to edit of a collection of contained elements. This procedure is based on the [Custom Composite Designers - Workflow Items Presenter](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/custom-composite-designers-workflow-items-presenter) sample.
+2. The second procedure describes how to create a custom activity designer with a <xref:System.Activities.Presentation.WorkflowItemsPresenter> that provides the functionality needed to edit of a collection of contained elements. This procedure is based on the [Custom Composite Designers - Workflow Items Presenter](./samples/custom-composite-designers-workflow-items-presenter.md) sample.
 
 ## To create a custom activity designer with a drop zone using WorkflowItemPresenter
 

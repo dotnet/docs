@@ -70,6 +70,8 @@ items:
     href: ../standard/glossary.md
   - name: Tutorials
     items:
+    - name: .NET 6 template changes
+      href: ../core/tutorials/top-level-templates.md
     - name: Use Visual Studio
       items:
       - name: Create a console app
@@ -275,6 +277,8 @@ items:
           href: ../core/tools/dotnet-nuget-verify.md
         - name: dotnet nuget trust
           href: ../core/tools/dotnet-nuget-trust.md
+        - name: dotnet nuget sign
+          href: ../core/tools/dotnet-nuget-sign.md
       - name: dotnet pack
         href: ../core/tools/dotnet-pack.md
       - name: dotnet publish
@@ -283,6 +287,8 @@ items:
         href: ../core/tools/dotnet-restore.md
       - name: dotnet run
         href: ../core/tools/dotnet-run.md
+      - name: dotnet sdk check
+        href: ../core/tools/dotnet-sdk-check.md
       - name: dotnet sln
         href: ../core/tools/dotnet-sln.md
       - name: dotnet store
@@ -1231,6 +1237,8 @@ items:
             href: code-analysis/quality-rules/ca2249.md
           - name: CA2250
             href: code-analysis/quality-rules/ca2250.md
+          - name: CA2251
+            href: code-analysis/quality-rules/ca2251.md            
       - name: Code style rules
         items:
         - name: Overview

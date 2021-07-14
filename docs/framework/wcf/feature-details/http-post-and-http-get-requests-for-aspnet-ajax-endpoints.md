@@ -23,9 +23,9 @@ Windows Communication Foundation (WCF) allows you to create a service that expos
   
  An operation marked with the <xref:System.ServiceModel.Web.WebGetAttribute> always uses a GET request. An operation marked with the <xref:System.ServiceModel.Web.WebInvokeAttribute>, or not marked with any of the two attributes, uses a POST request. The <xref:System.ServiceModel.Web.WebInvokeAttribute> allows the use of other HTTP verbs, other than GET and POST (such as PUT and DELETE) through the <xref:System.ServiceModel.Web.WebInvokeAttribute.Method%2A> property. However, these verbs are not supported by ASP.NET AJAX. If you intend to use the service from ASP.NET pages using the Script Manager control, do not use the <xref:System.ServiceModel.Web.WebInvokeAttribute.Method%2A> property.  
   
- For a working example of switching to GET, see the [Basic AJAX Service](/previous-versions/dotnet/framework/wcf/samples/basic-ajax-service) sample.  
+ For a working example of switching to GET, see the [Basic AJAX Service](../samples/basic-ajax-service.md) sample.  
   
- For a sample that uses POST, see the [AJAX Service Using HTTP POST](/previous-versions/dotnet/framework/wcf/samples/ajax-service-using-http-post) sample.  
+ For a sample that uses POST, see the [AJAX Service Using HTTP POST](../samples/ajax-service-using-http-post.md) sample.  
   
 ## To create a WCF service that responds to HTTP GET or HTTP POST requests
   
@@ -84,7 +84,7 @@ Windows Communication Foundation (WCF) allows you to create a service that expos
   
 1. You can test your service's GET operations without any client code, by using the browser. For example, if your service is configured at the `http://example.com/service.svc` address, then typing `http://example.com/service.svc/LookUpArtist?album=SomeAlbum` into the browser address bar invokes the service and causes the response to be downloaded or displayed.
   
-2. You can use services with GET operations in the same way as any other ASP.NET AJAX services - by entering the service URL into the Scripts collection of the ASP.NET AJAX Script Manager control. For an example, see the [Basic AJAX Service](/previous-versions/dotnet/framework/wcf/samples/basic-ajax-service).
+2. You can use services with GET operations in the same way as any other ASP.NET AJAX services - by entering the service URL into the Scripts collection of the ASP.NET AJAX Script Manager control. For an example, see the [Basic AJAX Service](../samples/basic-ajax-service.md).
   
 ## See also
 

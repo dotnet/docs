@@ -60,6 +60,8 @@ Different options are available for `dotnet` by itself, for running a command, a
 
 ### Options for dotnet by itself
 
+<!-- markdownlint-disable MD012 -->
+
 The following options are for `dotnet` by itself. For example, `dotnet --info`. They print out information about the environment.
 
 - **`--info`**
@@ -78,7 +80,7 @@ The following options are for `dotnet` by itself. For example, `dotnet --info`. 
 
   Prints out a list of the installed .NET SDKs.
 
-- **`-h|--help`**
+- **`-?|-h|--help`**
 
   Prints out a list of available commands.
 
@@ -94,7 +96,7 @@ The following options are for `dotnet` with a command. For example, `dotnet buil
 
   Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command. See specific command page to determine if this option is available.
 
-- **`-h|--help`**
+- **`-?|-h|--help`**
 
   Prints out documentation for a given command, such as `dotnet build --help`.
 
@@ -172,6 +174,7 @@ The following options are available when `dotnet` runs an application. For examp
 | [dotnet publish](dotnet-publish.md)           | Publishes a .NET framework-dependent or self-contained application. |
 | [dotnet restore](dotnet-restore.md)           | Restores the dependencies for a given application.                  |
 | [dotnet run](dotnet-run.md)                   | Runs the application from source.                                   |
+| [dotnet sdk check](dotnet-sdk-check.md)       | Shows up-to-date status of installed SDK and Runtime versions.      |
 | [dotnet sln](dotnet-sln.md)                   | Options to add, remove, and list projects in a solution file.       |
 | [dotnet store](dotnet-store.md)               | Stores assemblies in the runtime package store.                     |
 | [dotnet test](dotnet-test.md)                 | Runs tests using a test runner.                                     |

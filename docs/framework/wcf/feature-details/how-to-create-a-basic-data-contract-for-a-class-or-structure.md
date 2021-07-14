@@ -15,7 +15,7 @@ ms.assetid: bc464889-3070-4a2f-91d2-e788a0f686a7
 
 This topic shows the basic steps to create a data contract using a class or structure. For more information about data contracts and how they are used, see [Using Data Contracts](using-data-contracts.md).  
   
- For a tutorial that walks through the steps of creating a basic Windows Communication Foundation (WCF) service and client, see the [Getting Started Tutorial](../getting-started-tutorial.md). For a working sample application that consists of a basic service and client, see [Basic Data Contract](/previous-versions/dotnet/framework/wcf/samples/basic-data-contract).  
+ For a tutorial that walks through the steps of creating a basic Windows Communication Foundation (WCF) service and client, see the [Getting Started Tutorial](../getting-started-tutorial.md). For a working sample application that consists of a basic service and client, see [Basic Data Contract](../samples/basic-data-contract.md).  
   
 ### To create a basic data contract for a class or structure  
   
@@ -39,4 +39,4 @@ This topic shows the basic steps to create a data contract using a class or stru
 - <xref:System.Runtime.Serialization.DataMemberAttribute>
 - [Using Data Contracts](using-data-contracts.md)
 - [Getting Started Tutorial](../getting-started-tutorial.md)
-- [Getting Started](/previous-versions/dotnet/framework/wcf/samples/getting-started-sample)
+- [Getting Started](../samples/getting-started-sample.md)

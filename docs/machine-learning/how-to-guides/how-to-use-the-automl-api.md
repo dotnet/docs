@@ -12,15 +12,6 @@ Automated machine learning (AutoML) automates the process of applying machine le
 > [!NOTE]
 > This topic refers to the automated machine learning API for ML.NET, which is currently in preview. Material may be subject to change.
 
-## AutoML Implementation
-
-AutoML has collaborated with Microsoft Research teams [Neural Network Intelligence](https://github.com/Microsoft/nni) (NNI) and [Fast and Lightweight AutoML](https://github.com/Microsoft/flaml) (FLAML). These teams help provide additional benefits to the AutoML implementation. These benefits include:
-
-- Enabling AutoML support for all ML.NET scenarios
-- Allowing more precise control over the hyperparameter search space
-- Enabling more training environments, including local, Azure, and on-prem distributed training
-- Opening up future collaborations on advanced ML tech, like Network Architecture Search (NAS)
-
 ## Load data
 
 Automated machine learning supports loading a dataset into an [IDataView](xref:Microsoft.ML.IDataView). Data can be in the form of tab-separated value (TSV) files and comma separated value (CSV) files.

@@ -1,15 +1,29 @@
 ---
-title: Pagination in async responses with the Azure SDK for .NET
-description: 
+title: Pagination with the Azure SDK for .NET
+description: Learn how to use pagination with the Azure SDK for .NET
 ms.date: 07/14/2021
 ms.custom: devx-track-dotnet
 ms.author: dapine
 author: IEvangelist
 ---
 
-# Pagination in async responses with the Azure SDK for .NET
+# Pagination with the Azure SDK for .NET
 
-In this article, you'll learn how to use the Azure SDK for .NET pagination and iteration functionality to work efficiently and productively with large data sets. Starting with C# 8, you can create and consume streams asynchronously using [Asynchronous streams](../../csharp/whats-new/csharp-8.md#asynchronous-streams). For the latest listing of Azure SDK for .NET, see [Azure SDK latest releases](packages.md#all-libraries).
+In this article, you'll learn how to use the Azure SDK for .NET pagination functionality to work efficiently and productively with large data sets. Pagination is the act of dividing returned data into pages, making it easier for the consumer to iterate through smaller amounts of data. Starting with C# 8, you can create and consume streams asynchronously using [Asynchronous streams](../../csharp/whats-new/csharp-8.md#asynchronous-streams).
+
+All of the samples in this article rely on the following NuGet packages:
+
+- [Azure.Security.KeyVault.Secrets][azure-key-vault]
+- [Microsoft.Extensions.Azure][ms-ext-azure]
+- [Microsoft.Extensions.Hosting][ms-ext-hosting]
+- [System.Linq.Async][system-linq-async]
+
+[azure-key-vault]: https://www.nuget.org/packages/Azure.Security.KeyVault.Secrets
+[ms-ext-azure]: https://www.nuget.org/packages/Microsoft.Extensions.Azure
+[ms-ext-hosting]: https://www.nuget.org/packages/Microsoft.Extensions.Hosting
+[system-linq-async]: https://www.nuget.org/packages/System.Linq.Async
+
+For the latest listing of Azure SDK for .NET, see [Azure SDK latest releases](packages.md#all-libraries).
 
 ## Pageable return types
 
@@ -49,6 +63,14 @@ In the preceding C# code:
 If you want to have control over receiving pages of values from the service use [`AsyncPageable<T>.AsPages`](xref:Azure.AsyncPageable%601.AsPages%2A) method:
 
 :::code source="snippets/pagination/Program.cs" range="74-88":::
+
+In the preceding C# code:
+
+- The <xref:Azure.Security.KeyVault.Secrets.SecretClient.GetPropertiesOfSecretsAsync%2A?displayProperty=nameWithType> method is invoked, and returns an `AsyncPageable<SecretProperties>` object.
+- The <xref:Azure.AsyncPageable%601.AsPages%2A?displayProperty=nameWithType> method is invoked, and returns an `IAsyncEnumerable<Page<SecretProperties>>`.
+- Each page is iterated over asynchronously, using `await foreach`.
+- Each page has a set of <xref:Azure.Page%601.Values?displayProperty=nameWithType>, which represents an `IReadOnlyList<T>` which are iterated over with non-async `foreach`.
+- Each page also contains a <xref:Azure.Page%601.ContinuationToken?displayProperty=nameWithType> which can be used to request the next page.
 
 ## Use `System.Linq.Async` with `AsyncPageable`
 

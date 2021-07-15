@@ -9,7 +9,7 @@ author: IEvangelist
 
 # Pagination with the Azure SDK for .NET
 
-In this article, you'll learn how to use the Azure SDK for .NET pagination functionality to work efficiently and productively with large data sets. Pagination is the act of dividing returned data into pages, making it easier for the consumer to iterate through smaller amounts of data. Starting with C# 8, you can create and consume streams asynchronously using [Asynchronous streams](../../csharp/whats-new/csharp-8.md#asynchronous-streams).
+In this article, you'll learn how to use the Azure SDK for .NET pagination functionality to work efficiently and productively with large data sets. Pagination is the act of dividing large data sets into pages, making it easier for the consumer to iterate through smaller amounts of data. Starting with C# 8, you can create and consume streams asynchronously using [Asynchronous (async) streams](../../csharp/whats-new/csharp-8.md#asynchronous-streams). Async streams are based on the <xref:System.Collections.Generic.IAsyncEnumerable%601> interface. This is important as the Azure SDK for .NET exposes an implementation of `IAsyncEnumerable<T>` with it's `AsyncPageable<T>` class.
 
 All of the samples in this article rely on the following NuGet packages:
 
@@ -33,6 +33,8 @@ Clients instantiated from the Azure SDK for .NET can return the following pageab
 |----------------------------------------------------|----------------------------------------------------------|
 | [`Pageable<T>`](xref:Azure.Pageable%601)           | A collection of values retrieved in pages                |
 | [`AsyncPageable<T>`](xref:Azure.AsyncPageable%601) | A collection of values asynchronously retrieved in pages |
+
+Most of the samples in this article are asynchronous, using variations of the `AsyncPageable<T>` type. Using asynchronous programming for I/O-bound operations is ideal, and a perfect use case is using the async APIs from the Azure SDK for .NET as these operations represent HTTP/S network calls.
 
 ## Iterate over `AsyncPageable` with `await foreach`
 
@@ -102,7 +104,7 @@ In the preceding C# code:
 When using the `System.Linq.Async` package, beware that LINQ operations are executed on the client. The following query would fetch *all* the items just to count them:
 
 ```csharp
-// DANGER! DO NOT COPY: CountAsync as used here fetches all the secrets locally to count them.
+// DO NOT DO THIS! 😲
 int expensiveSecretCount = await client.GetPropertiesOfSecretsAsync().CountAsync();
 ```
 

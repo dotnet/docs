@@ -1,7 +1,7 @@
 ---
 title: Pagination with the Azure SDK for .NET
 description: Learn how to use pagination with the Azure SDK for .NET.
-ms.date: 07/14/2021
+ms.date: 07/15/2021
 ms.custom: devx-track-dotnet
 ms.author: dapine
 author: IEvangelist
@@ -104,6 +104,13 @@ Imagine a simple `IObserver<SecretProperties>` implemenation:
 You could consume the `ToObservable` extension method as follows:
 
 :::code source="snippets/pagination/Program.cs" range="118-125":::
+
+In the preceding C# code:
+
+- The <xref:Azure.Security.KeyVault.Secrets.SecretClient.GetPropertiesOfSecretsAsync%2A?displayProperty=nameWithType> method is invoked, and returns an `AsyncPageable<SecretProperties>` object.
+- The `ToObservable()` method is called on the `AsyncPageable<SecretProperties>` instance, returning an `IObservable<SecretProperties>`.
+- The `observable` is subscribed to, passing in the observer implementation, returning the subscription to the caller.
+- The subscription is an `IDisposable`, when it's disposed the subscription ends.
 
 ### More methods
 

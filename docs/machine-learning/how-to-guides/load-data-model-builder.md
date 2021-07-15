@@ -60,7 +60,7 @@ To load data from a SQL Server database into Module Builder:
 1. From the **Column to Predict (Label)** dropdown, choose the data category on which you want to make a prediction.
 1. Update the data in the **Advanced data options** link to set column settings or to update the data formatting.
 
-You're done setting up your data source file for Model Builder. Click the **Next step button link to move to the next step in Model Builder.
+You're done setting up your data source file for Model Builder. Click the **Next step** button link to move to the next step in Model Builder.
 
 ## Set up image data files
 

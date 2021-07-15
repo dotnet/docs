@@ -92,7 +92,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 - **`--project <PATH>`**
 
-  Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory. The [`-p` abbreviation for `--project` is deprecated](../compatibility/sdk/6.0/deprecate-p-option-dotnet-run.md)  starting in .NET 6 Preview SDK.
+  Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory. The [`-p` abbreviation for `--project` is deprecated](../compatibility/sdk/6.0/deprecate-p-option-dotnet-run.md) starting in .NET 6 Preview SDK.
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 

@@ -11,5 +11,9 @@ The following APIs are marked obsolete, starting in .NET 5. Use of these APIs ge
 - <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType>
 - <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType>
 
+## Workarounds
+
+Implement <xref:System.Net.IAuthenticationModule>, which was previously called by <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType>, instead.
+
 <!-- Include adds ## Suppress warnings (H2 heading) -->
 [!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]

@@ -1,5 +1,5 @@
 name: ".NET breaking change"
-desription: Report a change in .NET that breaks something that worked in a previous version. Intended mostly for product-team use.
+description: Report a change in .NET that breaks something that worked in a previous version. Intended mostly for product-team use.
 title: "[Breaking change]: "
 labels: breaking-change
 assignees:
@@ -70,8 +70,9 @@ body:
     attributes:
       label: Feature area
       description: What feature area(s) does the change affect?
+      multiple: true
       options:
-        - .NET 6 Preview 6- [ ] ASP.NET Core
+        - [ ] ASP.NET Core
         - C#
         - Code analysis
         - Core .NET libraries

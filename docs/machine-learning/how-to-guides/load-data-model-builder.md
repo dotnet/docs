@@ -28,7 +28,7 @@ Model Builder helps you create models for the following machine learning scenari
 - Issue classification (multiclass classification): Classify textual data into 3 or more categories.
 - Price prediction (regression): Predict a numeric value.
 - Image classification (deep learning): Categorize images based on characteristics.
-- Object detection (deep learning): Find objects within images. This can find one or more objects and label them accordingly. 
+- Object detection (deep learning): Find objects within images. This can find one or more objects and label them accordingly.
 - Custom scenario: Build custom scenarios from your data using regression, classification, and other tasks.
 
 This article covers classification and regression scenarios with textual or numerical data, image classification, and object detection scenarios.

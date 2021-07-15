@@ -1,7 +1,7 @@
 ---
 title: Load training data for Model Builder
 description: Learn how to load training data from a SQL Server database or a file for use in one of the Model Builder scenarios for ML.NET.
-ms.date: 10/29/2019
+ms.date: 07/15/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to, mlnet-tooling
@@ -28,20 +28,21 @@ Model Builder helps you create models for the following machine learning scenari
 - Issue classification (multiclass classification): Classify textual data into 3 or more categories.
 - Price prediction (regression): Predict a numeric value.
 - Image classification (deep learning): Categorize images based on characteristics.
+- Object detection (deep learning): Find objects within images. This can find one or more objects and label them accordingly. 
 - Custom scenario: Build custom scenarios from your data using regression, classification, and other tasks.
 
-This article covers classification and regression scenarios with textual or numerical data, and image classification scenarios.
+This article covers classification and regression scenarios with textual or numerical data, image classification, and object detection scenarios.
 
 ## Load text or numeric data from a file
 
 You can load text or numeric data from a file into Model Builder. It accepts comma-delimited (CSV) or tab-delimited (TSV) file formats.
 
-1. In the data step of Model Builder, select **File** from the data source dropdown.
-2. Select the button next to the **Select a file** text box, and use File Explorer to browse and select the data file.
+1. In the data step of Model Builder, select **File** as the data source type.
+2. Select the **Browse** button next to the text box, and use File Explorer to browse and select the data file.
 3. Choose a category in the **Column to Predict (Label)** dropdown.
-4. From the **Input Columns (Features)** dropdown, confirm the data columns you want to include are checked.
+4. Update the data in the **Advanced data options** link to set column settings or to update the data formatting.
 
-You're done setting up your data source file for Model Builder. Select the **Train** link to move to the next step in Model Builder.
+You're done setting up your data source file for Model Builder. Click the **Next step** button to move to the next step in Model Builder.
 
 ## Load data from a SQL Server database
 
@@ -49,17 +50,17 @@ Model Builder supports loading data from local and remote SQL Server databases.
 
 To load data from a SQL Server database into Module Builder:
 
-1. In the data step of Model Builder, select **SQL Server** from the data source dropdown.
-1. Select the button next to the **Connect to SQL Server database** text box.
-    1. In the **Choose Data** dialog, select **Microsoft SQL Server Database File**.
+1. In the data step of Model Builder, select **SQL Server** as the data source type.
+1. Select the **Choose data source** button.
+    1. In the **Choose Data Source** dialog, select **Microsoft SQL Server Database File**.
     1. Uncheck the **Always use this selection** checkbox and select **Continue**
     1. In the **Connection Properties** dialog, select **Browse** and select the downloaded .MDF file.
     1. Select **OK**
 1. Choose the dataset name from the **Table Name** dropdown.
 1. From the **Column to Predict (Label)** dropdown, choose the data category on which you want to make a prediction.
-1. From the **Input Columns (Features)** dropdown, confirm the columns you want to include are checked.
+1. Update the data in the **Advanced data options** link to set column settings or to update the data formatting.
 
-You're done setting up your data source file for Model Builder. Select the **Train** link to move to the next step in Model Builder.
+You're done setting up your data source file for Model Builder. Click the **Next step button link to move to the next step in Model Builder.
 
 ## Set up image data files
 

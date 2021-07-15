@@ -57,9 +57,9 @@ Microsoft.WindowsDesktop.App      5.0.7                         Up to date.
 
 ## Options
 
-- **`-h|--help`**
+<!-- markdownlint-disable MD012 -->
 
-  Show help and usage information.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

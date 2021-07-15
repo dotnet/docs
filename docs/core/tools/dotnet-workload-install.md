@@ -32,7 +32,7 @@ Use [dotnet workload search](dotnet-workload-search.md) to learn what workloads 
 
 The `dotnet workload install` command copies the workloads from NuGet.org into your SDK install folder, so it needs to run elevated if that folder requires administrator write permissions.
 
-The `dotnet workload` commands operate in the context of specific SDK versions. Suppose you have both .NET 6 SDK and .NET 7 SDK  installed. The `dotnet workload` commands will provide different results depending on which SDK version you select. The commands provide the `--sdk-version` option to let you select an SDK other than the default.
+The `dotnet workload` commands operate in the context of specific SDK versions. Suppose you have both .NET 6 SDK and .NET 7 SDK  installed. The `dotnet workload` commands will provide different results depending on which SDK version you select. The commands provide the `--sdk-version` option to let you select an SDK version other than the one selected by default or by *global.json*.
 
 ## Arguments
 

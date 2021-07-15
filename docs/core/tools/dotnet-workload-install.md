@@ -26,7 +26,11 @@ dotnet workload install -?|-h|--help
 
 ## Description
 
-The `dotnet workload install` command installs an optional workload.
+The `dotnet workload install` command installs an *optional workload*. Optional workloads cn be installed on top of the .NET SDK to provide support for various application types, such as [.NET MAUI](/dotnet/maui/what-is-maui) and [Blazor WebAssembly AOT](https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-6-preview-4/#blazor-webassembly-ahead-of-time-aot-compilation).
+
+Use [dotnet workload search](dotnet-workload-search.md) to learn what workloads are available to install.
+
+The `dotnet workload install` command copies the workloads from NuGet.org into your SDK install folder, so it needs to run elevated if that folder requires administrator write permissions.
 
 ## Arguments
 

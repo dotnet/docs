@@ -4,7 +4,6 @@ open Azure.Storage.Blobs // Namespace for Blob storage types
 open Azure.Storage.Blobs.Models
 open Azure.Storage.Blobs.Specialized
 open System.Text
-open System.Collections.Generic
 
 //
 // Get your connection string.
@@ -43,25 +42,19 @@ container.SetAccessPolicy(permissions)
 //
 
 // Retrieve reference to a blob named "myblob.txt".
-let blockBlob = container.GetBlockBlobClient("myblob.txt")
+let blockBlob = container.GetBlobClient("myblob.txt")
 
 // Create or overwrite the "myblob.txt" blob with contents from the local file.
 use fileStream = new FileStream(localFile, FileMode.Open, FileAccess.Read, FileShare.Read)
-let offset = 0
-let length = int(fileStream.Length)
-let bytes = Array.zeroCreate<byte>(length)
-fileStream.Read(bytes, offset, bytes.Length)
-fileStream.Close();
-use stream = new MemoryStream(bytes)
-do blockBlob.Upload(stream)
+do blockBlob.Upload(fileStream)
 
 //
 // List the blobs in a container.
 //
 
 // Loop over items within the container and output the name.
-for item in container.GetBlobs() do
-    printfn $"Blob name: {item.Name}"
+for item in container.GetBlobsByHierarchy() do
+    printfn $"Blob name: {item.Blob.Name}"
 
 //
 // Download Blobs.
@@ -75,10 +68,7 @@ do
     use fileStream = File.OpenWrite(__SOURCE_DIRECTORY__ + "/path/download.txt")
     blobToDownload.DownloadTo(fileStream)
 
-let text =
-    use memoryStream = new MemoryStream()
-    blobToDownload.DownloadTo(memoryStream)
-    Text.Encoding.UTF8.GetString(memoryStream.ToArray())
+let text = blobToDownload.DownloadContent().Value.Content.ToString()
 
 //
 // Delete blobs.
@@ -105,13 +95,10 @@ let ListBlobsSegmentedInFlatListing(container:BlobContainerClient) =
         // When the continuation token is null, the last page has been 
         // returned and execution can exit the loop.
 
-        let blobs = List<BlobItem>()
+        for page in container.GetBlobsByHierarchy().AsPages() do
+            for blobHierarchyItem in page.Values do 
+                printf $"The BlobItem is : {blobHierarchyItem.Blob.Name} "
 
-        for page in container.GetBlobs().AsPages() do
-            blobs.AddRange(page.Values)
-
-        for blobItem in blobs do 
-            printf $"The BlobItem is : {blobItem.Name} "
         printfn ""
 
     }

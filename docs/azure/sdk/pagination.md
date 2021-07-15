@@ -1,6 +1,6 @@
 ---
 title: Pagination with the Azure SDK for .NET
-description: Learn how to use pagination with the Azure SDK for .NET
+description: Learn how to use pagination with the Azure SDK for .NET.
 ms.date: 07/14/2021
 ms.custom: devx-track-dotnet
 ms.author: dapine
@@ -107,7 +107,7 @@ You could consume the `ToObservable` extension method as follows:
 
 ### More methods
 
-`System.Linq.Async` provides other useful methods like `Select`, `Where`, `OrderBy`, `GroupBy`, etc. that provide functionality equivalent to their synchronous [`Enumerable` counterparts](https://docs.microsoft.com/dotnet/api/system.linq.enumerable).
+`System.Linq.Async` provides other useful methods like `Select`, `Where`, `OrderBy`, `GroupBy`, etc. that provide functionality equivalent to their synchronous [`Enumerable` counterparts](xref:System.Linq.Enumerable).
 
 ### Beware client-side evaluation
 

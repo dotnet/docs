@@ -54,13 +54,11 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
 ## Options
 
-- **`--add-source <SOURCE>`**
+<!-- markdownlint-disable MD012 -->
 
-  Adds an additional NuGet package source to use during installation.
+[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
-- **`--configfile <FILE>`**
-
-  The NuGet configuration (*nuget.config*) file to use.
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 - **`--disable-parallel`**
 
@@ -74,17 +72,13 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
   Specifies that the update is for a user-wide tool. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies that the tool to be updated is a local tool.
 
-- **`-h|--help`**
-
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--ignore-failed-sources`**
 
   Treat package source failures as warnings.
 
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action (for example to complete authentication).
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`--local`**
 
@@ -102,9 +96,7 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
   Specifies the location where the global tool is installed. PATH can be absolute or relative. Can't be combined with the `--global` option. Omitting both `--global` and `--tool-path` specifies that the tool to be updated is a local tool.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 - **`--version <VERSION>`**
 

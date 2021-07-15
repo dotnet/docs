@@ -89,6 +89,8 @@ items:
           href: networking/6.0/webrequest-deprecated.md
       - name: SDK and MSBuild
         items:
+        - name: -p option for `dotnet run` is deprecated
+          href: sdk/6.0/deprecate-p-option-dotnet-run.md
         - name: Generate apphost for macOS
           href: sdk/6.0/apphost-generated-for-macos.md
         - name: Generate error for duplicate files in publish output
@@ -309,6 +311,8 @@ items:
           href: networking/5.0/winhttphandler-removed-from-runtime.md
       - name: SDK and MSBuild
         items:
+        - name: -p option for `dotnet run` is deprecated
+          href: sdk/6.0/deprecate-p-option-dotnet-run.md
         - name: Generate apphost for macOS
           href: sdk/6.0/apphost-generated-for-macos.md
         - name: Error when referencing mismatched executable

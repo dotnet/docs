@@ -38,6 +38,8 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`-d|--disable-buffering`**
 
   Disables buffering when pushing to an HTTP(S) server to reduce memory usage.
@@ -46,13 +48,9 @@ The command pushes an existing package. It doesn't create a package. To create a
 
   Forces the application to run using an invariant, English-based culture.
 
-- **`-h|--help`**
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out a short help for the command.
-
-- **`--interactive`**
-
-  Allows the command to block and requires manual action for operations like authentication. Option available since .NET Core 2.2 SDK.
+[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 - **`-k|--api-key <API_KEY>`**
 

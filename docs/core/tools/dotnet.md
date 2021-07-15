@@ -60,6 +60,8 @@ Different options are available for `dotnet` by itself, for running a command, a
 
 ### Options for dotnet by itself
 
+<!-- markdownlint-disable MD012 -->
+
 The following options are for `dotnet` by itself. For example, `dotnet --info`. They print out information about the environment.
 
 - **`--info`**
@@ -78,7 +80,7 @@ The following options are for `dotnet` by itself. For example, `dotnet --info`. 
 
   Prints out a list of the installed .NET SDKs.
 
-- **`-h|--help`**
+- **`-?|-h|--help`**
 
   Prints out a list of available commands.
 
@@ -94,7 +96,7 @@ The following options are for `dotnet` with a command. For example, `dotnet buil
 
   Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command. See specific command page to determine if this option is available.
 
-- **`-h|--help`**
+- **`-?|-h|--help`**
 
   Prints out documentation for a given command, such as `dotnet build --help`.
 

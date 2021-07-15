@@ -76,7 +76,7 @@ In the preceding C# code:
 
 ## Use `System.Linq.Async` with `AsyncPageable`
 
-The [`System.Linq.Async`](https://www.nuget.org/packages/System.Linq.Async) package provides a set of LINQ methods that operate on <xref:System.Collections.Generic.IAsyncEnumerable%601> type. Because `AsyncPageable<T>` implements [`IAsyncEnumerable<T>`](xref:System.Collections.Generic.IAsyncEnumerable%601) you can use `System.Linq.Async` to easily query and transform the data.
+The [`System.Linq.Async`](https://www.nuget.org/packages/System.Linq.Async) package provides a set of [LINQ](../../standard/linq/index.md) methods that operate on <xref:System.Collections.Generic.IAsyncEnumerable%601> type. Because `AsyncPageable<T>` implements [`IAsyncEnumerable<T>`](xref:System.Collections.Generic.IAsyncEnumerable%601) you can use `System.Linq.Async` to easily query and transform the data.
 
 ### Convert to a `List<T>`
 
@@ -115,7 +115,7 @@ int expensiveSecretCount = await client.GetPropertiesOfSecretsAsync().CountAsync
 
 The [`System.Linq.Async`](https://www.nuget.org/packages/System.Linq.Async) package is primarily used to provide observer pattern capabilities over `IAsyncEnumerable<T>` sequences. Asynchronous streams are pull-based, meaning as their items are iterated over the next available item is *pulled*. This is in juxtaposition with the observer pattern, which is push-based; as items become available they're *pushed* to subscribers who act as observers. The `System.Linq.Async` package provides the `ToObservable` extension method that lets you convert an `IAsyncEnumerable<T>` to an [`IObservable<T>`](xref:System.IObservable%601).
 
-Imagine a simple `IObserver<SecretProperties>` implemenation:
+Imagine a simple `IObserver<SecretProperties>` implementation:
 
 :::code source="snippets/pagination/Program.cs" range="127-133":::
 
@@ -136,8 +136,12 @@ In the preceding C# code:
 
 :::code source="snippets/pagination/Program.cs" range="108-116":::
 
+> [!IMPORTANT]
+> While this synchronous API is available, for a better experience use the asynchronous API alternatives.
+
 ## See also
 
 - [Dependency injection with the Azure SDK for .NET](dependency-injection.md)
 - [Thread safety and client lifetime management for Azure SDK objects](thread-safety.md)
 - [`System.Linq.Async`](https://www.nuget.org/packages/System.Linq.Async)
+- [Task-based asynchronous pattern](../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md)

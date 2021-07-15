@@ -38,7 +38,7 @@ await TakeAsync();
 
 IterateWithPageable();
 
-using IDisposable subscription = ToObservable();
+using IDisposable subscription = UseTheToObservableMethod();
 
 await host.RunAsync();
 
@@ -115,7 +115,7 @@ void IterateWithPageable()
     }
 }
 
-IDisposable ToObservable()
+IDisposable UseTheToObservableMethod()
 {
     AsyncPageable<SecretProperties> allSecrets = client.GetPropertiesOfSecretsAsync();
 

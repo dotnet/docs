@@ -1,6 +1,6 @@
 ---
 title: dotnet workload uninstall command
-description: The 'dotnet workload uninstall' command uninstalls workloads.
+description: The 'dotnet workload uninstall' command uninstalls a specified workload.
 ms.date: 07/08/2021
 ---
 # dotnet workload uninstall
@@ -9,7 +9,7 @@ ms.date: 07/08/2021
 
 ## Name
 
-`dotnet workload uninstall` - Uninstalls workloads.
+`dotnet workload uninstall` - Uninstalls a specified workload.
 
 ## Synopsis
 

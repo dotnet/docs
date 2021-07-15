@@ -15,7 +15,7 @@ ms.date: 07/08/2021
 
 ```dotnetcli
 dotnet workload update
-    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--source <SOURCE>] [--configfile <FILE>]
     [--disable-parallel] [--download-to-cache <CACHE>]
     [--from-cache <CACHE>] [--from-previous-sdk]
     [--ignore-failed-sources] [--include-previews]
@@ -26,7 +26,7 @@ dotnet workload update -?|-h|--help
 
 ## Description
 
-The `dotnet workload update` command queries Nuget.org for updated workload manifests. It then updates local manifests, downloads new versions of the installed workloads, and removes all old versions of each workload.
+The `dotnet workload update` command updates all installed workloads to the newest available versions. It queries Nuget.org for updated workload manifests. It then updates local manifests, downloads new versions of the installed workloads, and removes all old versions of each workload.
 
 For more information about the `dotnet workload` commands, see the [dotnet workload install](dotnet-workload-install.md#description) command.
 
@@ -34,7 +34,7 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 <!-- markdownlint-disable MD012 -->
 
-[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
+[!INCLUDE [source](../../../includes/cli-source.md)]
 
 [!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 
@@ -86,9 +86,9 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
   dotnet workload update
   ```
 
-- Download the `microsoft.ios.sdk.full` workload to a cache located in the *workload-cache* directory under the current directory. Then update installed workloads from that cache location:
+- Download the assets needed for updating installed workloads to a cache located in the *workload-cache* directory under the current directory. Then update installed workloads from that cache location:
 
   ```dotnetcli
-  dotnet workload install microsoft-ios-sdk-full --download-to-cache ./workload-cache
+  dotnet workload update --download-to-cache ./workload-cache
   dotnet workload update --from-cache ./workload-cache
   ```

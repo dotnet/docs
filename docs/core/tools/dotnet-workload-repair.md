@@ -1,6 +1,6 @@
 ---
 title: dotnet workload repair command
-description: The 'dotnet workload repair' command repairs workloads.
+description: The 'dotnet workload repair' command repairs workload installations.
 ms.date: 07/08/2021
 ---
 # dotnet workload repair
@@ -9,13 +9,13 @@ ms.date: 07/08/2021
 
 ## Name
 
-`dotnet workload repair` - Repairs workloads.
+`dotnet workload repair` - Repairs workloads installations.
 
 ## Synopsis
 
 ```dotnetcli
-dotnet workload repair <WORKLOAD_ID>
-    [--add-source <SOURCE>] [--configfile <FILE>]
+dotnet workload repair
+    [--source <SOURCE>] [--configfile <FILE>]
     [--sdk-version <VERSION>] [-v|--verbosity <LEVEL>]
 
 dotnet workload repair -?|-h|--help
@@ -37,7 +37,7 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 <!-- markdownlint-disable MD012 -->
 
-[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
+[!INCLUDE [source](../../../includes/cli-source.md)]
 
 [!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 

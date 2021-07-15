@@ -15,7 +15,7 @@ ms.date: 07/08/2021
 
 ```dotnetcli
 dotnet workload install <WORKLOAD_ID>
-    [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
+    [--source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--download-to-cache <CACHE>] [--from-cache <CACHE>]
     [--ignore-failed-sources] [--include-previews] [--interactive]
     [--no-cache] [--sdk-version <VERSION>] [--skip-manifest-update]
@@ -26,25 +26,27 @@ dotnet workload install -?|-h|--help
 
 ## Description
 
-The `dotnet workload install` command installs an *optional workload*. Optional workloads cn be installed on top of the .NET SDK to provide support for various application types, such as [.NET MAUI](/dotnet/maui/what-is-maui) and [Blazor WebAssembly AOT](https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-6-preview-4/#blazor-webassembly-ahead-of-time-aot-compilation).
+The `dotnet workload install` command installs an *optional workload*. Optional workloads can be installed on top of the .NET SDK to provide support for various application types, such as [.NET MAUI](/dotnet/maui/what-is-maui) and [Blazor WebAssembly AOT](https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-6-preview-4/#blazor-webassembly-ahead-of-time-aot-compilation).
 
 Use [dotnet workload search](dotnet-workload-search.md) to learn what workloads are available to install.
 
-The `dotnet workload install` command copies the workloads from NuGet.org into your SDK install folder, so it needs to run elevated if that folder requires administrator write permissions.
+The `dotnet workload install` command installs workload packs, which are packaged and hosted on Nuget.org. For macOS and Linux SDK installations that are installed to a protected directory, the command needs to run elevated. On Windows the command doesn't need to run elevated even if the SDK is installed to the *Program Files* directory. For Windows the command uses MSI installers for that location.
 
-The `dotnet workload` commands operate in the context of specific SDK versions. Suppose you have both .NET 6 SDK and .NET 7 SDK  installed. The `dotnet workload` commands will provide different results depending on which SDK version you select. The commands provide the `--sdk-version` option to let you select an SDK version other than the one selected by default or by *global.json*.
+The `dotnet workload` commands operate in the context of specific SDK versions. Suppose you have both .NET 6.0.100 SDK and .NET 7.0.100 SDK installed. The `dotnet workload` commands will give different results depending on which SDK version you select. This behavior applies to major and minor version and feature band differences, not to patch version differences. For example, .NET SDK 6.0.101 and 6.0.102 give the same results, whereas 6.0.100 and 6.0.200 give different results.
+
+ The commands provide the `--sdk-version` option to let you select an SDK version other than the one selected by default or by *global.json*.
 
 ## Arguments
 
 - **`WORKLOAD_ID`**
 
-  The workload ID of the workload to install.
+  The workload ID of the workload to install. Use [dotnet workload search](dotnet-workload-search.md) to learn what workloads are available to install.
 
 ## Options
 
 <!-- markdownlint-disable MD012 -->
 
-[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
+[!INCLUDE [source](../../../includes/cli-source.md)]
 
 [!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 
@@ -90,15 +92,15 @@ The `dotnet workload` commands operate in the context of specific SDK versions. 
 
 ## Examples
 
-- Install the `microsoft.ios.sdk.full` workload:
+- Install the `maui` workload:
 
   ```dotnetcli
-  dotnet workload install microsoft.ios.sdk.full
+  dotnet workload install maui
   ```
 
-- Download the `microsoft.ios.sdk.full` workload to a cache located in the *workload-cache* directory under the current directory. Then install it from the same cache location:
+- Download assets needed for the `maui` workload to a cache located in the *workload-cache* directory under the current directory. Then install it from the same cache location:
 
   ```dotnetcli
-  dotnet workload install microsoft-ios-sdk-full --download-to-cache ./workload-cache
-  dotnet workload install microsoft-ios-sdk-full --from-cache ./workload-cache
+  dotnet workload install maui --download-to-cache ./workload-cache
+  dotnet workload install maui --from-cache ./workload-cache
   ```

@@ -25,6 +25,8 @@ dotnet workload repair -?|-h|--help
 
 The `dotnet workload repair` command reinstalls all installed workloads. Workloads are made up of multiple workload packs and it's possible to get into a state where some installed successfully but others didn't. For example, a [`dotnet workload install`](dotnet-workload-install.md) command might not finish installing because of a dropped internet connection.
 
+For more information about the `dotnet workload` commands, see the [dotnet workload install](dotnet-workload-install.md#description) command.
+
 ## Arguments
 
 - **`WORKLOAD_ID`**

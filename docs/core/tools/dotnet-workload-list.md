@@ -23,6 +23,8 @@ dotnet workload list [-?|-h|--help]
 
 The `dotnet workload list` command lists all installed workloads.
 
+For more information about the `dotnet workload` commands, see the [dotnet workload install](dotnet-workload-install.md#description) command.
+
 ## Options
 
 <!-- markdownlint-disable MD012 -->

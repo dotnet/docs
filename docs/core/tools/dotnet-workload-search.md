@@ -24,6 +24,8 @@ dotnet workload search -?|-h|--help
 
 The `dotnet workload search` command lists available workloads. You can filter the list by specifying all or part of the workload ID you're looking for.
 
+For more information about the `dotnet workload` commands, see the [dotnet workload install](dotnet-workload-install.md#description) command.
+
 ## Arguments
 
 - **`SEARCH_STRING`**

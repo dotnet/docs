@@ -28,6 +28,8 @@ dotnet workload update -?|-h|--help
 
 The `dotnet workload update` command queries Nuget.org for updated workload manifests. It then updates local manifests, downloads new versions of the installed workloads, and removes all old versions of each workload.
 
+For more information about the `dotnet workload` commands, see the [dotnet workload install](dotnet-workload-install.md#description) command.
+
 ## Options
 
 <!-- markdownlint-disable MD012 -->

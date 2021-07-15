@@ -208,6 +208,17 @@ Command | Function
 [dotnet nuget remove source](dotnet-nuget-remove-source.md) | Removes a NuGet source.
 [dotnet nuget update source](dotnet-nuget-update-source.md) | Updates a NuGet source.
 
+### Workload commands
+
+Command | Function
+--- | ---
+[dotnet workload install](dotnet-workload-install.md) | Installs an optional workload.
+[dotnet workload list](dotnet-workload-list.md) | Lists all installed workloads.
+[dotnet workload repair](dotnet-workload-repair.md) | Repairs all installed workloads.
+[dotnet workload search](dotnet-workload-search.md) | List selected workloads or all available workloads.
+[dotnet workload uninstall](dotnet-workload-install.md) | Uninstalls a workload.
+[dotnet workload update](dotnet-workload-update.md) | Reinstalls all installed workloads.
+
 ### Global, tool-path, and local tools commands
 
 Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third parties. Tools are also known as global tools, tool-path tools, and local tools. For more information, see [.NET tools overview](global-tools.md). Global and tool-path tools are available starting with .NET Core SDK 2.1. Local tools are available starting with .NET Core SDK 3.0.

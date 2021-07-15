@@ -23,6 +23,8 @@ dotnet workload uninstall -?|-h|--help
 
 The `dotnet workload uninstall` command uninstalls a workload.
 
+For more information about the `dotnet workload` commands, see the [dotnet workload install](dotnet-workload-install.md#description) command.
+
 ## Arguments
 
 - **`WORKLOAD_ID`**

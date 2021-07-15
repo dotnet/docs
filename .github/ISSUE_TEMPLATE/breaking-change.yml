@@ -19,7 +19,7 @@ body:
       description: What version of .NET introduced the breaking change?
       options:
         - .NET 6 Preview 6
-        - .NET 6 Preview 7 (Default)
+        - .NET 6 Preview 7
         - .NET 6 Preview 8
         - .NET 6 Preview 9
         - .NET 6 Preview 10
@@ -72,7 +72,7 @@ body:
       description: What feature area(s) does the change affect?
       multiple: true
       options:
-        - [ ] ASP.NET Core
+        - ASP.NET Core
         - C#
         - Code analysis
         - Core .NET libraries

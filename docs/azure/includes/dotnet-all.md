@@ -78,7 +78,7 @@
 | Azure.Communication.Administration | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Administration/1.0.0-beta.3) |  |  |
 | Azure.Communication.Calling | NuGet [1.0.0-beta.28](https://www.nuget.org/packages/Azure.Communication.Calling/1.0.0-beta.28) |  |  |
 | Azure.Communication.CallingServer | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Communication.CallingServer/1.0.0-beta.1) |  |  |
-| Azure.Communication.NetworkTraversal | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Communication.NetworkTraversal/1.0.0-beta.1) |  |  |
+| Azure.Communication.NetworkTraversal | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.Communication.NetworkTraversal/1.0.0-beta.2) |  |  |
 | Azure.IoT.TimeSeriesInsights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
 | Azure.Quantum.Jobs | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.Quantum.Jobs/1.0.0-beta.2) |  |  |
 | IoT Models Repository | NuGet [1.0.0-preview.3](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.3) |  |  |
@@ -363,9 +363,9 @@
 | WebJobs Extensions - Microsoft Graph | NuGet [1.0.0-beta6](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MicrosoftGraph/1.0.0-beta6) |  | GitHub [1.0.0-beta6](https://github.com/Azure/azure-functions-microsoftgraph-extension) |
 | WebJobs Extensions - Mobile Apps | NuGet [3.0.0-beta8](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MobileApps/3.0.0-beta8) |  | GitHub [3.0.0-beta8](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.0-beta8/src/WebJobs.Extensions.MobileApps) |
 | WebJobs Extensions - Notification Hubs | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.NotificationHubs/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
-| WebJobs Extensions - OpenAPI | NuGet [0.8.0-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/0.8.0-preview) |  |  |
-| WebJobs Extensions - OpenAPI Configuration AppSettings | NuGet [0.8.0-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/0.8.0-preview) |  |  |
-| WebJobs Extensions - OpenAPI Core | NuGet [0.8.0-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Core/0.8.0-preview) |  |  |
+| WebJobs Extensions - OpenAPI | NuGet [0.7.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/0.7.2-preview) |  |  |
+| WebJobs Extensions - OpenAPI Configuration AppSettings | NuGet [0.7.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/0.7.2-preview) |  |  |
+| WebJobs Extensions - OpenAPI Core | NuGet [0.7.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Core/0.7.2-preview) |  |  |
 | WebJobs Extensions - RabbitMQ | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.RabbitMQ/1.0.0)<br>NuGet [1.0.0-beta](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.RabbitMQ/1.0.0-beta) |  | GitHub [1.0.0](https://github.com/Azure/azure-functions-rabbitmq-extension/tree/v0.2.2029-beta) |
 | WebJobs Extensions - SendGrid | NuGet [3.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.SendGrid/3.0.2) |  | GitHub [3.0.2](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.0/src/WebJobs.Extensions.SendGrid) |
 | WebJobs Extensions - Service Bus | NuGet [5.0.0-beta.5](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.ServiceBus/5.0.0-beta.5) | [docs](/dotnet/api/overview/azure/Microsoft.Azure.WebJobs.Extensions.ServiceBus-readme-pre) | GitHub [5.0.0-beta.5](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.WebJobs.Extensions.ServiceBus_5.0.0-beta.5/sdk/servicebus/Microsoft.Azure.WebJobs.Extensions.ServiceBus/) |

@@ -46,7 +46,7 @@ In the preceding C# code:
 - In an `await foreach` loop, each `SecretProperties` is asynchronously yielded.
 - As each `secret` is materialized, it's `Name` is written to the console.
 
-## Iterate over `AsyncPageable` with while
+## Iterate over `AsyncPageable` with `while`
 
 To iterate over an `AsyncPageable<T>` when the `await foreach` syntax isn't available, use a `while` loop.
 
@@ -93,25 +93,6 @@ In the preceding C# code:
 
 :::code source="snippets/pagination/Program.cs" range="98-105":::
 
-### As an observable sequence
-
-Asynchronous streams are pull-based, meaning as their items are iterated over the next available item is pulled. This is in juxtaposition with the observable-pattern, which is push-based. The `System.Linq.Async` package provides the `ToObservable` extension method that lets you convert an `IAsyncEnumerable<T>` to an [`IObservable<T>`](xref:System.IObservable%601).
-
-Imagine a simple `IObserver<SecretProperties>` implemenation:
-
-:::code source="snippets/pagination/Program.cs" range="127-133":::
-
-You could consume the `ToObservable` extension method as follows:
-
-:::code source="snippets/pagination/Program.cs" range="118-125":::
-
-In the preceding C# code:
-
-- The <xref:Azure.Security.KeyVault.Secrets.SecretClient.GetPropertiesOfSecretsAsync%2A?displayProperty=nameWithType> method is invoked, and returns an `AsyncPageable<SecretProperties>` object.
-- The `ToObservable()` method is called on the `AsyncPageable<SecretProperties>` instance, returning an `IObservable<SecretProperties>`.
-- The `observable` is subscribed to, passing in the observer implementation, returning the subscription to the caller.
-- The subscription is an `IDisposable`, when it's disposed the subscription ends.
-
 ### More methods
 
 `System.Linq.Async` provides other useful methods like `Select`, `Where`, `OrderBy`, `GroupBy`, etc. that provide functionality equivalent to their synchronous [`Enumerable` counterparts](xref:System.Linq.Enumerable).
@@ -127,6 +108,25 @@ int expensiveSecretCount = await client.GetPropertiesOfSecretsAsync().CountAsync
 
 > [!WARNING]
 > The same warning applies to operators like `Where`. Always prefer server-side filtering, aggregation, or projections of data if available.
+
+## As an observable sequence
+
+The [`System.Linq.Async`](https://www.nuget.org/packages/System.Linq.Async) package is primarily used to provide observer pattern capabilities over `IAsyncEnumerable<T>` sequences. Asynchronous streams are pull-based, meaning as their items are iterated over the next available item is *pulled*. This is in juxtaposition with the observer pattern, which is push-based; as items become available they're *pushed* to subscribers who act as observers. The `System.Linq.Async` package provides the `ToObservable` extension method that lets you convert an `IAsyncEnumerable<T>` to an [`IObservable<T>`](xref:System.IObservable%601).
+
+Imagine a simple `IObserver<SecretProperties>` implemenation:
+
+:::code source="snippets/pagination/Program.cs" range="127-133":::
+
+You could consume the `ToObservable` extension method as follows:
+
+:::code source="snippets/pagination/Program.cs" range="118-125":::
+
+In the preceding C# code:
+
+- The <xref:Azure.Security.KeyVault.Secrets.SecretClient.GetPropertiesOfSecretsAsync%2A?displayProperty=nameWithType> method is invoked, and returns an `AsyncPageable<SecretProperties>` object.
+- The `ToObservable()` method is called on the `AsyncPageable<SecretProperties>` instance, returning an `IObservable<SecretProperties>`.
+- The `observable` is subscribed to, passing in the observer implementation, returning the subscription to the caller.
+- The subscription is an `IDisposable`, when it's disposed the subscription ends.
 
 ## Iterate over pageable
 

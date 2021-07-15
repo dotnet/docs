@@ -15,7 +15,7 @@ ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
 ---
 # Security Issues in Reflection Emit
 
-The .NET Framework provides three ways to emit Microsoft intermediate language (MSIL), each with its own security issues:
+.NET Framework provides three ways to emit Microsoft intermediate language (MSIL), each with its own security issues:
 
 - [Dynamic assemblies](#Dynamic_Assemblies)
 
@@ -26,13 +26,13 @@ The .NET Framework provides three ways to emit Microsoft intermediate language (
  Regardless of the way you generate dynamic code, executing the generated code requires all the permissions that are required by the types and methods the generated code uses.
 
 > [!NOTE]
-> The permissions that are required for reflecting on code and emitting code have changed with succeeding releases of the .NET Framework. See [Version Information](#Version_Information), later in this topic.
+> The permissions that are required for reflecting on code and emitting code have changed with succeeding releases of .NET Framework. See [Version Information](#Version_Information), later in this article.
 
 <a name="Dynamic_Assemblies"></a>
 
 ## Dynamic Assemblies
 
- Dynamic assemblies are created by using overloads of the <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=nameWithType> method. Most overloads of this method are deprecated in the .NET Framework 4, because of the elimination of machine-wide security policy. (See [Security Changes](/previous-versions/dotnet/framework/windows-identity-foundation/security-changes).) The remaining overloads can be executed by any code, regardless of trust level. These overloads fall into two groups: those that specify a list of attributes to apply to the dynamic assembly when it is created, and those that do not. If you do not specify the transparency model for the assembly, by applying the <xref:System.Security.SecurityRulesAttribute> attribute when you create it, the transparency model is inherited from the emitting assembly.
+ Dynamic assemblies are created by using overloads of the <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=nameWithType> method. Most overloads of this method are deprecated in .NET Framework 4, because of the elimination of machine-wide security policy. The remaining overloads can be executed by any code, regardless of trust level. These overloads fall into two groups: those that specify a list of attributes to apply to the dynamic assembly when it is created, and those that do not. If you do not specify the transparency model for the assembly, by applying the <xref:System.Security.SecurityRulesAttribute> attribute when you create it, the transparency model is inherited from the emitting assembly.
 
 > [!NOTE]
 > Attributes that you apply to the dynamic assembly after it is created, by using the <xref:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute%2A> method, do not take effect until the assembly has been saved to disk and loaded into memory again.
@@ -77,7 +77,7 @@ The .NET Framework provides three ways to emit Microsoft intermediate language (
 
  As with any other emitted code, executing the dynamic method requires whatever permissions are demanded by the methods the dynamic method uses.
 
- The system assembly that hosts anonymously-hosted dynamic methods uses the <xref:System.Security.SecurityRuleSet.Level1?displayProperty=nameWithType> transparency model, which is the transparency model that was used in the .NET Framework before the .NET Framework 4.
+ The system assembly that hosts anonymously-hosted dynamic methods uses the <xref:System.Security.SecurityRuleSet.Level1?displayProperty=nameWithType> transparency model, which is the transparency model that was used in .NET Framework before .NET Framework 4.
 
  For more information, see the <xref:System.Reflection.Emit.DynamicMethod> class.
 
@@ -143,20 +143,20 @@ The .NET Framework provides three ways to emit Microsoft intermediate language (
 
 ## Version Information
 
- Starting with the .NET Framework 4, machine-wide security policy is eliminated and security transparency becomes the default enforcement mechanism. See [Security Changes](/previous-versions/dotnet/framework/windows-identity-foundation/security-changes).
+ Starting with .NET Framework 4, machine-wide security policy is eliminated and security transparency becomes the default enforcement mechanism.
 
- Starting with the .NET Framework 2.0 Service Pack 1, <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag is no longer required when emitting dynamic assemblies and dynamic methods. This flag is required in all earlier versions of the .NET Framework.
+ Starting with .NET Framework 2.0 Service Pack 1, <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag is no longer required when emitting dynamic assemblies and dynamic methods. This flag is required in all earlier versions of .NET Framework.
 
 > [!NOTE]
-> <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag is included by default in the `FullTrust` and `LocalIntranet` named permission sets, but not in the `Internet` permission set. Therefore, in earlier versions of the .NET Framework, a library can be used with Internet permissions only if it executes an <xref:System.Security.PermissionSet.Assert%2A> for <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>. Such libraries require careful security review because coding errors could result in security holes. The .NET Framework 2.0 SP1 allows code to be emitted in partial trust scenarios without issuing any security demands, because generating code is not inherently a privileged operation. That is, the generated code has no more permissions than the assembly that emits it. This allows libraries that emit code to be security transparent and removes the need to assert <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>, which simplifies the task of writing a secure library.
+> <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag is included by default in the `FullTrust` and `LocalIntranet` named permission sets, but not in the `Internet` permission set. Therefore, in earlier versions of .NET Framework, a library can be used with Internet permissions only if it executes an <xref:System.Security.PermissionSet.Assert%2A> for <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>. Such libraries require careful security review because coding errors could result in security holes. .NET Framework 2.0 SP1 allows code to be emitted in partial trust scenarios without issuing any security demands, because generating code is not inherently a privileged operation. That is, the generated code has no more permissions than the assembly that emits it. This allows libraries that emit code to be security transparent and removes the need to assert <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>, which simplifies the task of writing a secure library.
 
- In addition, the .NET Framework 2.0 SP1 introduces the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag for accessing nonpublic types and members from partially trusted dynamic methods. Earlier versions of the .NET Framework require the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag for dynamic methods that access nonpublic types and members; this is a permission that should never be granted to partially trusted code.
+ In addition, .NET Framework 2.0 SP1 introduces the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag for accessing nonpublic types and members from partially trusted dynamic methods. Earlier versions of the .NET Framework require the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag for dynamic methods that access nonpublic types and members; this is a permission that should never be granted to partially trusted code.
 
- Finally, the .NET Framework 2.0 SP1 introduces anonymously hosted methods.
+ Finally, .NET Framework 2.0 SP1 introduces anonymously hosted methods.
 
 ### Obtaining Information on Types and Members
 
- Starting with the .NET Framework 2.0, no permissions are required to obtain information about nonpublic types and members. Reflection is used to obtain information needed to emit dynamic methods. For example, <xref:System.Reflection.MethodInfo> objects are used to emit method calls. Earlier versions of the .NET Framework require <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation?displayProperty=nameWithType> flag. For more information, see [Security Considerations for Reflection](security-considerations-for-reflection.md).
+ Starting with .NET Framework 2.0, no permissions are required to obtain information about nonpublic types and members. Reflection is used to obtain information needed to emit dynamic methods. For example, <xref:System.Reflection.MethodInfo> objects are used to emit method calls. Earlier versions of .NET Framework require <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation?displayProperty=nameWithType> flag. For more information, see [Security Considerations for Reflection](security-considerations-for-reflection.md).
 
 ## See also
 

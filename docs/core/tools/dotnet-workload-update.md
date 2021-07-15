@@ -34,7 +34,7 @@ The `dotnet workload update` command queries Nuget.org for updated workload mani
 
 [!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
-[!INCLUDE [config-file](../../../includes/cli-config-file.md)]
+[!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 
 - **`--disable-parallel`**
 

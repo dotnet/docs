@@ -3,7 +3,7 @@ title: dotnet workload uninstall command
 description: The 'dotnet workload uninstall' command uninstalls workloads.
 ms.date: 07/08/2021
 ---
-# dotnet workload
+# dotnet workload uninstall
 
 **This article applies to:** ✔️ .NET 6 Preview SDK and later versions
 

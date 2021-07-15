@@ -3,7 +3,7 @@ title: dotnet workload repair command
 description: The 'dotnet workload repair' command repairs workloads.
 ms.date: 07/08/2021
 ---
-# dotnet workload
+# dotnet workload repair
 
 **This article applies to:** ✔️ .NET 6 Preview SDK and later versions
 
@@ -37,7 +37,7 @@ The `dotnet workload repair` command reinstalls all installed workloads. Workloa
 
 [!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
-[!INCLUDE [config-file](../../../includes/cli-config-file.md)]
+[!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

@@ -3,7 +3,7 @@ title: dotnet workload install command
 description: The 'dotnet workload install' command installs optional workloads.
 ms.date: 07/08/2021
 ---
-# dotnet workload
+# dotnet workload install
 
 **This article applies to:** ✔️ .NET 6 Preview SDK and later versions
 
@@ -40,7 +40,7 @@ The `dotnet workload install` command installs an optional workload.
 
 [!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
-[!INCLUDE [config-file](../../../includes/cli-config-file.md)]
+[!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 
 - **`--disable-parallel`**
 

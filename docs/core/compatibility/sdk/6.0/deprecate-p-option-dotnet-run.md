@@ -19,11 +19,11 @@ In previous .NET versions, `-p` indicated `--project`.
 
 ## New behavior
 
-Starting in .NET 6, passing `-p` to `dotnet run` results in a warning that it is deprecated and to use the full `--project` option instead. Despite the warning, `-p` is still a valid abbreviation for `--project`, unless the argument includes an equals `=` character (in which case the option is interpreted as `--property`).
+Starting in .NET 6, passing `-p` to `dotnet run` results in a warning that it is deprecated and to use the full `--project` option instead. Despite the warning, `-p` is still a valid abbreviation for `--project`.
 
 ## Reason for change
 
-We are deprecating `-p` because of the close relationship `dotnet run` has with `dotnet build` and `dotnet publish`. This breaking change is the first step in aligning abbreviations for these commands.
+We are deprecating `-p` because of the close relationship `dotnet run` has with `dotnet build` and `dotnet publish`. This breaking change is the first step in aligning abbreviations for these commands. For more information, see [Spec for resolving '-p' in 'dotnet run'](https://github.com/dotnet/designs/pull/229/files).
 
 ## Recommended action
 

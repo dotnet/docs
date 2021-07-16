@@ -1,7 +1,7 @@
 ---
 title: "How to: Write a Simple Parallel.For Loop"
 description: Learn to write Parallel.For loops in .NET in which you don't need to cancel the loop, break out of loop iterations, or maintain any thread-local state.
-ms.date: "03/30/2017"
+ms.date: "07/16/2021"
 dev_langs:
   - "csharp"
   - "vb"

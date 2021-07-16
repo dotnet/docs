@@ -16,4 +16,10 @@ Learn how to use VoTT (Visual Object Tagging Tool) to tag images for object dete
 
 1. [Download VoTT](https://github.com/Microsoft/VoTT/releases) (Visual Object Tagging Tool).
 1. Open VoTT and select **New Project**.
-1. 
+
+      ![VoTT Home Screen](../media/vott.png)
+
+1. In **Project Settings**, change the **Display Name** to the name of your choosing.
+1. Change the **Security Token** to *Generate New Security Token*.
+1. Next to **Source Connection**, select **Add Connection**.
+1. In **Connection Settings**, change the **Display Name** for the source connection to a name of your choosing, and select *Local File System* as the **Provider**. For the **Folder Path**, select the folder that contains the training images, and then select **Save Connection**.

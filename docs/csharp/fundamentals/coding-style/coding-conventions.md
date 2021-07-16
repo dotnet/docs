@@ -162,7 +162,7 @@ Good layout uses formatting to emphasize the structure of your code and to make 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet3":::
 
 - Don't create formatted blocks of asterisks around comments.
-- Ensure all the publicly exposed members like Methods and Properties that are being accessed from outside the class or the assembly have necessary XML comments providing appropriate descriptions about their behaviour.
+- Ensure all public members have the necessary XML comments providing appropriate descriptions about their behavior.
 
 ## Language guidelines
 

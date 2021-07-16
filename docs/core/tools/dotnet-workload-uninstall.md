@@ -14,22 +14,22 @@ ms.date: 07/08/2021
 ## Synopsis
 
 ```dotnetcli
-dotnet workload uninstall <WORKLOAD_ID>
+dotnet workload uninstall <WORKLOAD_ID...>
 
 dotnet workload uninstall -?|-h|--help
 ```
 
 ## Description
 
-The `dotnet workload uninstall` command uninstalls a workload.
+The `dotnet workload uninstall` command uninstalls one or more workloads.
 
 For more information about the `dotnet workload` commands, see the [dotnet workload install](dotnet-workload-install.md#description) command.
 
 ## Arguments
 
-- **`WORKLOAD_ID`**
+- **`WORKLOAD_ID...`**
 
-  The workload ID to uninstall.
+  The workload ID or multiple IDs to uninstall.
 
 ## Options
 
@@ -43,4 +43,10 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
   ```dotnetcli
   dotnet workload uninstall maui
+  ```
+
+- Uninstall the `maui-android` and `maui-ios` workloads:
+
+  ```dotnetcli
+  dotnet workload uninstall maui-android maui-ios
   ```

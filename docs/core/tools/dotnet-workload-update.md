@@ -15,11 +15,12 @@ ms.date: 07/08/2021
 
 ```dotnetcli
 dotnet workload update
-    [--source <SOURCE>] [--configfile <FILE>]
-    [--disable-parallel] [--download-to-cache <CACHE>]
-    [--from-cache <CACHE>] [--from-previous-sdk]
-    [--ignore-failed-sources] [--include-previews]
-    [--interactive] [--no-cache] [--sdk-version <VERSION>] [--temp-dir <PATH>] [-v|--verbosity <LEVEL>]
+    [--configfile <FILE>] [--disable-parallel]
+    [--download-to-cache <CACHE>] [--from-cache <CACHE>]
+    [--from-previous-sdk] [--ignore-failed-sources]
+    [--include-previews] [--interactive] [--no-cache]
+    [--sdk-version <VERSION>] [--source <SOURCE>]
+    [--temp-dir <PATH>] [-v|--verbosity <LEVEL>]
 
 dotnet workload update -?|-h|--help
 ```
@@ -33,8 +34,6 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 ## Options
 
 <!-- markdownlint-disable MD012 -->
-
-[!INCLUDE [source](../../../includes/cli-source.md)]
 
 [!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 
@@ -72,11 +71,13 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 [!INCLUDE [sdk-version](../../../includes/cli-sdk-version.md)]
 
+[!INCLUDE [source](../../../includes/cli-source.md)]
+
 - **`--temp-dir <PATH>`**
 
-  Configure the temporary directory used for this command (must be secure).
+  Configures the temporary directory used for this command (must be secure).
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-packages.md)]
 
 ## Examples
 

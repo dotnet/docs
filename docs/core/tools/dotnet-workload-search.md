@@ -36,8 +36,6 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 <!-- markdownlint-disable MD012 -->
 
-[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
-
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 [!INCLUDE [sdk-version](../../../includes/cli-sdk-version.md)]

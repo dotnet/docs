@@ -15,11 +15,11 @@ ms.date: 07/08/2021
 
 ```dotnetcli
 dotnet workload install <WORKLOAD_ID>
-    [--source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
+    [--configfile <FILE>] [--disable-parallel]
     [--download-to-cache <CACHE>] [--from-cache <CACHE>]
     [--ignore-failed-sources] [--include-previews] [--interactive]
     [--no-cache] [--sdk-version <VERSION>] [--skip-manifest-update]
-    [--temp-dir <PATH>] [-v|--verbosity <LEVEL>]
+    [--source <SOURCE>] [--temp-dir <PATH>] [-v|--verbosity <LEVEL>]
 
 dotnet workload install -?|-h|--help
 ```
@@ -45,8 +45,6 @@ The `dotnet workload` commands operate in the context of specific SDK versions. 
 ## Options
 
 <!-- markdownlint-disable MD012 -->
-
-[!INCLUDE [source](../../../includes/cli-source.md)]
 
 [!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 
@@ -84,11 +82,13 @@ The `dotnet workload` commands operate in the context of specific SDK versions. 
 
   Skip updating the workload manifests. The workload manifests define what assets and versions need to be installed for each workload.
 
+[!INCLUDE [source](../../../includes/cli-source.md)]
+
 - **`--temp-dir <PATH>`**
 
   Configure the temporary directory used for this command (must be secure).
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-packages.md)]
 
 ## Examples
 

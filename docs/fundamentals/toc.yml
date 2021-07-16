@@ -212,6 +212,8 @@ items:
         href: ../core/tools/sdk-errors/netsdk1141.md
       - name: NETSDK1145
         href: ../core/tools/sdk-errors/netsdk1145.md
+      - name: NETSDK1147
+        href: ../core/tools/sdk-errors/netsdk1147.md
       - name: NETSDK1149
         href: ../core/tools/sdk-errors/netsdk1149.md
       - name: NETSDK1174
@@ -315,6 +317,20 @@ items:
           href: ../core/tools/dotnet-tool-update.md
       - name: dotnet vstest
         href: ../core/tools/dotnet-vstest.md
+      - name: dotnet workload
+        items:
+        - name: dotnet workload install
+          href: ../core/tools/dotnet-workload-install.md
+        - name: dotnet workload list
+          href: ../core/tools/dotnet-workload-list.md
+        - name: dotnet workload repair
+          href: ../core/tools/dotnet-workload-repair.md
+        - name: dotnet workload search
+          href: ../core/tools/dotnet-workload-search.md
+        - name: dotnet workload uninstall
+          href: ../core/tools/dotnet-workload-uninstall.md
+        - name: dotnet workload update
+          href: ../core/tools/dotnet-workload-update.md
       - name: dotnet-install scripts
         href: ../core/tools/dotnet-install-script.md
       - name: Project reference commands

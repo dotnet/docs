@@ -19,7 +19,8 @@ dotnet workload update
     [--disable-parallel] [--download-to-cache <CACHE>]
     [--from-cache <CACHE>] [--from-previous-sdk]
     [--ignore-failed-sources] [--include-previews]
-    [--interactive] [--no-cache] [--sdk-version <VERSION>] [--temp-dir <PATH>] [-v|--verbosity <LEVEL>]
+    [--interactive] [--no-cache] [--sdk-version <VERSION>]
+    [--temp-dir <PATH>] [-v|--verbosity <LEVEL>]
 
 dotnet workload update -?|-h|--help
 ```
@@ -76,7 +77,7 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
   Configure the temporary directory used for this command (must be secure).
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-packages.md)]
 
 ## Examples
 

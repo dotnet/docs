@@ -23,7 +23,7 @@ The following options control compiler output generation. The new MSBuild syntax
 
 ## DocumentationFile
 
-The **DocumentationFile** option allows you to place documentation comments in an XML file. To learn more about documenting your code, see [Recommended Tags for Documentation Comments](/dotnet/csharp/language-reference/xmldoc/recommended-tags). The value specifies the path to the output XML file. The XML file contains the comments in the source code files of the compilation.
+The **DocumentationFile** option allows you to place documentation comments in an XML file. To learn more about documenting your code, see [Recommended Tags for Documentation Comments](../xmldoc/recommended-tags.md). The value specifies the path to the output XML file. The XML file contains the comments in the source code files of the compilation.
 
 ```xml
 <DocumentationFile>path/to/file.xml</DocumentationFile>

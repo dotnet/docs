@@ -30,7 +30,7 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 - **`SEARCH_STRING`**
 
-  The workload ID to search for, or part of it. For example, if you specify `maui`, the command lists all of the workload IDs that begin with `maui`.
+  The workload ID to search for, or part of it. For example, if you specify `maui`, the command lists all of the workload IDs that have `maui` in their workload ID.
 
 ## Options
 

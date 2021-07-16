@@ -75,7 +75,7 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 - **`--temp-dir <PATH>`**
 
-  Configure the temporary directory used for this command (must be secure).
+  Configures the temporary directory used for this command (must be secure).
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-packages.md)]
 

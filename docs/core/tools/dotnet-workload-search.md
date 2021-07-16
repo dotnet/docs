@@ -30,7 +30,7 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 - **`SEARCH_STRING`**
 
-  The workload ID to search for, or part of it. For example, if you specify `tvos`, the command might list `microsoft-tvos-sdk-full` and `microsoft-net-runtime-tvos`.
+  The workload ID to search for, or part of it. For example, if you specify `maui`, the command lists all of the workload IDs that begin with `maui`.
 
 ## Options
 
@@ -52,8 +52,8 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
   dotnet workload search
   ```
 
-- List all available workloads that have "tvos" in their workload ID:
+- List all available workloads that have "maui" in their workload ID:
 
   ```dotnetcli
-  dotnet workload search tvos
+  dotnet workload search maui
   ```

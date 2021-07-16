@@ -39,8 +39,8 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 ## Examples
 
-- Uninstall the `microsoft.ios.sdk.full` workload:
+- Uninstall the `maui` workload:
 
   ```dotnetcli
-  dotnet workload uninstall microsoft.ios.sdk.full
+  dotnet workload uninstall maui
   ```

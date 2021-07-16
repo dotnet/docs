@@ -82,7 +82,7 @@ The `dotnet workload` commands operate in the context of specific SDK versions. 
 
 - **`--skip-manifest-update`**
 
-  Skip updating the workload manifests.
+  Skip updating the workload manifests. The workload manifests define what assets and versions need to be installed for each workload.
 
 - **`--temp-dir <PATH>`**
 

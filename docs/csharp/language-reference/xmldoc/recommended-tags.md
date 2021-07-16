@@ -92,17 +92,17 @@ helpviewer_keywords:
 ---
 # Recommend XML tags for C# documentation comments
 
-C# documentation comments use XML elements to define the structure of the output documentation. One consequence of this decision is that you can add any valid XML in your documentation comments. The C# compiler copies these elements into the output XML file. While you can use any valid XML in your comments (including any valid HTML element), Documenting code is recommended for many reasons. What follows are some best practices, general use case scenarios, and things that you should know when using XML documentation tags in your C# code. While you can put any tags into your documentation comments, this article describes the recommended tags for the most common language constructs. In all cases, you should adhere to these recommendations:
+C# documentation comments use XML elements to define the structure of the output documentation. One consequence of this decision is that you can add any valid XML in your documentation comments. The C# compiler copies these elements into the output XML file. While you can use any valid XML in your comments (including any valid HTML element), Documenting code is recommended for many reasons. What follows are some recommendations, general use case scenarios, and things that you should know when using XML documentation tags in your C# code. While you can put any tags into your documentation comments, this article describes the recommended tags for the most common language constructs. In all cases, you should adhere to these recommendations:
 
 - For the sake of consistency, all publicly visible types and their members should be documented.
-- Private members can also be documented using XML comments. However, this exposes the inner (potentially confidential) workings of your library.
+- Private members can also be documented using XML comments. However, it exposes the inner (potentially confidential) workings of your library.
 - At a bare minimum, types and their members should have a `<summary>` tag because its content is needed for IntelliSense.
 - Documentation text should be written using complete sentences ending with full stops.
 - Partial classes are fully supported, and documentation information will be concatenated into a single entry for that type.
 
 XML documentation starts with `///`. When you create a new project, the templates put some starter `///` lines in for you. The processing of these comments has some restrictions:
 
-- The documentation must be well-formed XML. If the XML is not well-formed, a warning is generated and the documentation file will contain a comment that says that an error was encountered.
+- The documentation must be well-formed XML. If the XML isn't well formed, the compiler generates a warning. The documentation file will contain a comment that says that an error was encountered.
 - Developers are free to create their own set of tags. Some of the recommended tags have special meanings:
   - The `<param>` tag is used to describe parameters. If used, the compiler verifies that the parameter exists and that all parameters are described in the documentation. If the verification fails, the compiler issues a warning.
   - The `cref` attribute can be attached to any tag to reference a code element. The compiler verifies that this code element exists. If the verification fails, the compiler issues a warning. The compiler respects any `using` statements when it looks for a type described in the `cref` attribute.
@@ -112,7 +112,7 @@ XML documentation starts with `///`. When you create a new project, the template
 
 Some of the recommended tags can be used on any language element. Others have more specialized usage. Finally, some of the tags are used to format text in your documentation. this article describes the recommended tags organized by their use:
 
-- [General Tags](#general-tags) used for multiple elements - These are the minimum set for any API tasks.
+- [General Tags](#general-tags) used for multiple elements - These tags are the minimum set for any API.
   - [`<summary>`](#summary)
   - [`<remarks>`](#remarks) \*\*
 - [Tags used for members](#document-members) - These tags are used when documenting methods and properties.
@@ -144,7 +144,7 @@ The compiler verifies the syntax of the elements followed by a single \* in the 
 > [!NOTE]
 > Documentation comments cannot be applied to a namespace.
 
-If you want angle brackets to appear in the text of a documentation comment, use the HTML encoding of `<` and `>` which is `&lt;` and `&gt;` respectively. This encoding is shown in the following example.
+If you want angle brackets to appear in the text of a documentation comment, use the HTML encoding of `<` and `>`, which is `&lt;` and `&gt;` respectively. This encoding is shown in the following example.
 
 ```csharp
 /// <summary>
@@ -218,7 +218,7 @@ The `<exception>` tag lets you specify which exceptions can be thrown. This tag 
 <value>property-description</value>
 ```
 
-The `<value>` tag lets you describe the value that a property represents. When you add a property via code wizard in the Visual Studio .NET development environment, it adds a [\<summary>](#summary) tag for the new property. You should then manually add a `<value>` tag to describe the value that the property represents.
+The `<value>` tag lets you describe the value that a property represents. When you add a property via code wizard in the Visual Studio .NET development environment, it adds a [\<summary>](#summary) tag for the new property. You manually add a `<value>` tag to describe the value that the property represents.
 
 ## Format documentation output
 
@@ -252,7 +252,7 @@ The `<para>` tag is for use inside a tag, such as [\<summary>](#summary), [\<rem
 </list>
 ```
 
-The `<listheader>` block is used to define the heading row of either a table or definition list. When defining a table, you only need to supply an entry for term in the heading. Each item in the list is specified with an `<item>` block. When creating a definition list, you will need to specify both `term` and `description`. However, for a table, bulleted list, or numbered list, you only need to supply an entry for `description`. A list or table can have as many `<item>` blocks as needed.
+The `<listheader>` block is used to define the heading row of either a table or definition list. When defining a table, you only need to supply an entry for term in the heading. Each item in the list is specified with an `<item>` block. When creating a definition list, you'll need to specify both `term` and `description`. However, for a table, bulleted list, or numbered list, you only need to supply an entry for `description`. A list or table can have as many `<item>` blocks as needed.
 
 ### \<c>
 
@@ -285,7 +285,7 @@ This shows how to increment an integer.
 </example>
 ```
 
-The `<example>` tag lets you specify an example of how to use a method or other library member. This commonly involves using the [\<code>](#code) tag.
+The `<example>` tag lets you specify an example of how to use a method or other library member. An example commonly involves using the [\<code>](#code) tag.
 
 ## Reuse documentation text
 
@@ -295,12 +295,12 @@ The `<example>` tag lets you specify an example of how to use a method or other 
 <inheritdoc [cref=""] [path=""]/>
 ```  
 
-Inherit XML comments from base classes, interfaces, and similar methods. This eliminates unwanted copying and pasting of duplicate XML comments and automatically keeps XML comments synchronized.
+Inherit XML comments from base classes, interfaces, and similar methods. Using `inheritdoc` eliminates unwanted copying and pasting of duplicate XML comments and automatically keeps XML comments synchronized.
 
 - `cref`:  Specify the member to inherit documentation from. Already defined tags on the current member are not overridden by the inherited ones.
-- `path`: The XPath expression query that will result in a node set to show. You can use this attribute to filter which tags to include or exclude from the inherited documentation.
+- `path`: The XPath expression query that will result in a node set to show. You can use this attribute to filter the tags to include or exclude from the inherited documentation.
   
-Add your XML comments in base classes or interfaces and let InheritDoc copy the comments to implementing classes. Add your XML comments to your synchronous methods and let InheritDoc copy the comments to your asynchronous versions of the same methods. If you want to copy the comments from a specific member you can use the `cref` attribute to specify the member.
+Add your XML comments in base classes or interfaces and let InheritDoc copy the comments to implementing classes. Add your XML comments to your synchronous methods and let InheritDoc copy the comments to your asynchronous versions of the same methods. If you want to copy the comments from a specific member, you use the `cref` attribute to specify the member.
 
 ### \<include>
 
@@ -313,7 +313,7 @@ Add your XML comments in base classes or interfaces and let InheritDoc copy the 
 - `name`: The name specifier in the tag that precedes the comments; `name` will have an `id`.
 - `id`: The ID for the tag that precedes the comments. Enclose the ID in double quotation marks (" ").
 
-The `<include>` tag lets you refer to comments in another file that describe the types and members in your source code. This is an alternative to placing documentation comments directly in your source code file. By putting the documentation in a separate file, you can apply source control to the documentation separately from the source code. One person can have the source code file checked out and someone else can have the documentation file checked out. The `<include>` tag uses the XML XPath syntax. Refer to XPath documentation for ways to customize your `<include>` use.
+The `<include>` tag lets you refer to comments in another file that describe the types and members in your source code. Including an external file is an alternative to placing documentation comments directly in your source code file. By putting the documentation in a separate file, you can apply source control to the documentation separately from the source code. One person can have the source code file checked out and someone else can have the documentation file checked out. The `<include>` tag uses the XML XPath syntax. Refer to XPath documentation for ways to customize your `<include>` use.
 
 ## Generate links and references
 
@@ -378,7 +378,7 @@ Use this tag to enable consumers of the documentation file to format the word in
 
 ### User-defined tags
 
-All the tags outlined above represent those that are recognized by the C# compiler. However, a user is free to define their own tags.
+All the tags outlined above represent those tags that are recognized by the C# compiler. However, a user is free to define their own tags.
 Tools like Sandcastle bring support for extra tags like [\<event>](https://ewsoftware.github.io/XMLCommentsGuide/html/81bf7ad3-45dc-452f-90d5-87ce2494a182.htm) and [\<note>](https://ewsoftware.github.io/XMLCommentsGuide/html/4302a60f-e4f4-4b8d-a451-5f453c4ebd46.htm),
 and even support [documenting namespaces](https://ewsoftware.github.io/XMLCommentsGuide/html/BD91FAD4-188D-4697-A654-7C07FD47EF31.htm).
 Custom or in-house documentation generation tools can also be used with the standard tags and multiple output formats from HTML to PDF can be supported.

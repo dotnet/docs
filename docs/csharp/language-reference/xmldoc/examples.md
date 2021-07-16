@@ -30,7 +30,7 @@ The second file, *xml_include_tag.xml*, contains the documentation comments.
 
 ## Generic types
 
-Generic types and methods will use the `<TypeParam>` tag to describe type paramaeters. Also, the value for the `cref` attribute requires new syntax to reference a generic method or class:
+Generic types and methods will use the `<TypeParam>` tag to describe type parameters. Also, the value for the `cref` attribute requires new syntax to reference a generic method or class:
 
 :::code language="csharp" source="./snippets/xmldoc/DocComments.cs" ID="GenericExample":::
 

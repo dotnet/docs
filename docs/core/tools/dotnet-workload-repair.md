@@ -15,8 +15,8 @@ ms.date: 07/08/2021
 
 ```dotnetcli
 dotnet workload repair
-    [--source <SOURCE>] [--configfile <FILE>]
-    [--sdk-version <VERSION>] [-v|--verbosity <LEVEL>]
+    [--configfile <FILE>] [--sdk-version <VERSION>]
+    [--source <SOURCE>] [-v|--verbosity <LEVEL>]
 
 dotnet workload repair -?|-h|--help
 ```
@@ -37,15 +37,15 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 <!-- markdownlint-disable MD012 -->
 
-[!INCLUDE [source](../../../includes/cli-source.md)]
-
 [!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 [!INCLUDE [sdk-version](../../../includes/cli-sdk-version.md)]
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+[!INCLUDE [source](../../../includes/cli-source.md)]
+
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-no-effect.md)]
 
 ## Examples
 

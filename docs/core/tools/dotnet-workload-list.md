@@ -31,7 +31,7 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-no-effect.md)]
 
 ## Examples
 

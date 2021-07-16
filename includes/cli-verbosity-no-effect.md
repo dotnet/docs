@@ -1,3 +1,3 @@
 - **`-v|--verbosity <LEVEL>`**
 
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `normal`. For more information, see <xref:Microsoft.Build.Framework.LoggerVerbosity>.
+  Although `-v|--verbosity` is accepted as a valid option, the verbosity setting has no effect on the command's output.

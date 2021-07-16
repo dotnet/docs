@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 public class Example
 {
-   public static void Main()
+   public static void Main(string[] args)
    {
       long totalSize = 0;
 
-      String[] args = Environment.GetCommandLineArgs();
       if (args.Length == 1) {
          Console.WriteLine("There are no command line arguments.");
          return;

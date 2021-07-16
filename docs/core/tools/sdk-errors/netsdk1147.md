@@ -16,10 +16,10 @@ This error is caused by trying to compile a project that requires an optional wo
 >
 > To install these workloads, run the following command: dotnet workload install \<workload ID>
 
-For example, if your project targets `net6.0-android`, you might have to run the [`dotnet workload install`](../dotnet-workload-install.md) command and specify workload ID `maui-android`:
+For example, if your project targets `net6.0-android`, you might have to run the [`dotnet workload install`](../dotnet-workload-install.md) command and specify workload ID `android`:
 
 ```dotnetcli
-dotnet workload install maui-android
+dotnet workload install android
 ```
 
 For more information, see [`dotnet workload install`](../dotnet-workload-install.md).

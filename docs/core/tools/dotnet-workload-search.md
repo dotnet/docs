@@ -40,7 +40,7 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 [!INCLUDE [sdk-version](../../../includes/cli-sdk-version.md)]
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-no-effect.md)]
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ## Examples
 

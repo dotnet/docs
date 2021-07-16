@@ -158,7 +158,7 @@ In the preceding formatter implementation:
 - Messages that are written are wrapped with the configured prefix, and suffix.
 - A timestamp is added after the prefix, but before the message using the configured <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions.UseUtcTimestamp?displayProperty=nameWithType> and <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions.TimestampFormat%2A?displayProperty=nameWithType> values.
 
-To use custom configuration options,with custom formatter implementations, add when calling <xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.ConfigureLogging(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Logging.ILoggingBuilder})>.
+To use custom configuration options, with custom formatter implementations, add when calling <xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.ConfigureLogging(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Logging.ILoggingBuilder})>.
 
 :::code language="csharp" source="snippets/logging/console-formatter-custom-with-config/Program.cs" highlight="14-16":::
 

@@ -80,6 +80,9 @@ namespace XmlTags
     /// The list above uses the "table" style. You could
     /// also use the "bullet" or "number" style. Neither
     /// would typically use the "term" element.
+    /// <br/>
+    /// Note: paragraphs are double spaced. Use the *br* 
+    /// tag for single spaced lines.
     /// </para>
     /// </remarks>
     public class ExampleClass
@@ -125,7 +128,7 @@ namespace XmlTags
         /// </example>
         /// <exception cref="System.OverflowException">
         /// Thrown when one parameter is 
-        /// <see cref="Int32.MaxValue"/> and the other is
+        /// <see cref="Int32.MaxValue">MaxValue</see> and the other is
         /// greater than 0.
         /// Note that here you can also use 
         /// <see href="https://docs.microsoft.com/dotnet/api/system.int32.maxvalue"/>
@@ -195,11 +198,24 @@ namespace InheritDoc
     /// </remarks>
     public interface ITestInterface
     {
+        /// <summary>
+        /// This method is part of the test interface.
+        /// </summary>
+        /// <remarks>
+        /// This content would be inherited by classes 
+        /// that implement this interface when the 
+        /// implementing class uses "inheritdoc"
+        /// </remarks>
+        /// <returns>The value of <paramref name="arg" /> </returns>
+        /// <param name="arg">The argument to the method</param>
+        int Method(int arg);
     }
 
     ///<inheritdoc cref="ITestInterface"/>
     public class ImplementingClass : ITestInterface
     {
+        // doc comments are inherited here.
+        public int Method(int arg) => arg;
     }
 
     /// <summary>
@@ -222,6 +238,9 @@ namespace InheritDoc
         public static bool MyChildMethod() { return false; }
     }
 
+    /// <Summary>
+    /// This class shows an example ofsharing comments across methods.
+    /// </Summary>
     public class InheritAllButRemarks
     {
         /// <summary>
@@ -273,6 +292,9 @@ class GenericClass<T>
     // Fields and members.
 }
 
+/// <Summary>
+/// This shows examples of typeparamref and typeparam tags
+/// </Summary>
 public class ParamsAndParamRefs
 {
     /// <summary>

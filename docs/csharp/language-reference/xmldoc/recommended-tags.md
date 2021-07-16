@@ -113,14 +113,14 @@ XML documentation starts with `///`. When you create a new project, the template
 Some of the recommended tags can be used on any language element. Others have more specialized usage. Finally, some of the tags are used to format text in your documentation. this article describes the recommended tags organized by their use:
 
 - [General Tags](#general-tags) used for multiple elements - These tags are the minimum set for any API.
-  - [`<summary>`](#summary)
+  - [`<summary>`](#summary): The value of this element is displayed in intellisense in Visual Studio.
   - [`<remarks>`](#remarks) \*\*
 - [Tags used for members](#document-members) - These tags are used when documenting methods and properties.
-  - [`<returns>`](#returns)
-  - [`<param>`](#param) \*
+  - [`<returns>`](#returns): The value of this element is displayed in intellisense in Visual Studio.
+  - [`<param>`](#param) \*: The value of this element is displayed in intellisense in Visual Studio.
   - [`<paramref>`](#paramref)
   - [`<exception>`](#exception) \*
-  - [`<value>`](#value)
+  - [`<value>`](#value): The value of this element is displayed in intellisense in Visual Studio.
 - [Format documentation output](#format-documentation-output) - These tags provide formatting directions for tools that generate documentation.
   - [`<para>`](#para)
   - [`<list>`](#list)
@@ -136,10 +136,10 @@ Some of the recommended tags can be used on any language element. Others have mo
   - [`<cref>`](#cref-attribute)
   - [`<href>`](#href-attribute)
 - [Tags for generic types and methods](#generic-types-and-methods) - These tags are used only on generic types and methods
-  - [`<typeparam>`](#typeparam) \*
+  - [`<typeparam>`](#typeparam) \*: The value of this element is displayed in intellisense in Visual Studio.
   - [`<typeparamref>`](#typeparamref)
 
-The compiler verifies the syntax of the elements followed by a single \* in the preceding list. Visual Studio provides intellisense for the tags verified by the compiler and all tags followed by \*\* in the preceding list.
+The compiler verifies the syntax of the elements followed by a single \* in the preceding list. Visual Studio provides intellisense for the tags verified by the compiler and all tags followed by \*\* in the preceding list. In addition to the tags listed here, the compiler and Visual Studio validate the `<b>`, `<i>`, `<u>`, `<br/>`, and `<a>`. The compiler also validates `<tt>`, which is deprecated HTML.
 
 > [!NOTE]
 > Documentation comments cannot be applied to a namespace.
@@ -170,7 +170,7 @@ description
 </remarks>
 ```
 
-The `<remarks>` tag is used to add information about a type, supplementing the information specified with [\<summary>](#summary). This information is displayed in the Object Browser window.
+The `<remarks>` tag is used to add information about a type, supplementing the information specified with [\<summary>](#summary). This information is displayed in the Object Browser window. This tag may include more lengthy explanations. You may find that using `CDATA` sections for markdown make writing it more convenient. Tools such as [docfx](https://dotnet.github.io/docfx/) process the markdown text in `CDATA` sections.
 
 ## Document members
 
@@ -235,7 +235,7 @@ The `<value>` tag lets you describe the value that a property represents. When y
 </remarks>
 ```
 
-The `<para>` tag is for use inside a tag, such as [\<summary>](#summary), [\<remarks>](#remarks), or [\<returns>](#returns), and lets you add structure to the text.
+The `<para>` tag is for use inside a tag, such as [\<summary>](#summary), [\<remarks>](#remarks), or [\<returns>](#returns), and lets you add structure to the text. The `<para>` tag creates a double spaced paragraph. Use the `<br/>` if you want a single spaced paragraph.
 
 ### \<list>
 
@@ -295,7 +295,7 @@ The `<example>` tag lets you specify an example of how to use a method or other 
 <inheritdoc [cref=""] [path=""]/>
 ```  
 
-Inherit XML comments from base classes, interfaces, and similar methods. Using `inheritdoc` eliminates unwanted copying and pasting of duplicate XML comments and automatically keeps XML comments synchronized.
+Inherit XML comments from base classes, interfaces, and similar methods. Using `inheritdoc` eliminates unwanted copying and pasting of duplicate XML comments and automatically keeps XML comments synchronized. Note that when you add the `<inheritdoc>` tag to a type, all members will inherit the comments as well.
 
 - `cref`:  Specify the member to inherit documentation from. Already defined tags on the current member are not overridden by the inherited ones.
 - `path`: The XPath expression query that will result in a node set to show. You can use this attribute to filter the tags to include or exclude from the inherited documentation.
@@ -322,16 +322,18 @@ The `<include>` tag lets you refer to comments in another file that describe the
 ```csharp
 /// <see cref="member"/>
 // or
+/// <see cref="member">Link text</see>
+// or
 /// <see href="link">Link Text</see>
 // or
 /// <see langword="keyword"/>
 ```
 
-- `cref="member"`: A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. Place *member* within double quotation marks (" ").
+- `cref="member"`: A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. Place *member* within double quotation marks (" "). You can provide different link text for a "cref", by using a separate closing tag.
 - `href="link"`: A clickable link to a given URL. For example, `<see href="https://github.com">GitHub</see>` produces a clickable link with text :::no-loc text="GitHub"::: that links to `https://github.com`.
 - `langword="keyword"`: A language keyword, such as `true`.
 
-The `<see>` tag lets you specify a link from within text. Use [\<seealso>](#seealso) to indicate that text should be placed in a See Also section. Use the [cref Attribute](#cref-attribute) to create internal hyperlinks to documentation pages for code elements. Also, ``href`` is a valid Attribute that will function as a hyperlink. The following example shows a `<see>` tag within a summary section.
+The `<see>` tag lets you specify a link from within text. Use [\<seealso>](#seealso) to indicate that text should be placed in a See Also section. Use the [cref Attribute](#cref-attribute) to create internal hyperlinks to documentation pages for code elements. You include the type parameters to specify a reference to a generic type or method, such as `cref="cref="IDictionary{T, U}"`. Also, ``href`` is a valid Attribute that will function as a hyperlink.
 
 ### \<seealso>
 
@@ -344,7 +346,7 @@ The `<see>` tag lets you specify a link from within text. Use [\<seealso>](#seea
 - `cref="member"`: A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML.`member` must appear within double quotation marks (" ").
 - `href="link"`: A clickable link to a given URL. For example, `<seealso href="https://github.com">GitHub</seealso>` produces a clickable link with text :::no-loc text="GitHub"::: that links to `https://github.com`.
 
-The `<seealso>` tag lets you specify the text that you might want to appear in a **See Also** section. Use [\<see>](#see) to specify a link from within text.
+The `<seealso>` tag lets you specify the text that you might want to appear in a **See Also** section. Use [\<see>](#see) to specify a link from within text. Note that you cannot next the `seealso` tag inside the `summary` tag.
 
 ### cref attribute
 

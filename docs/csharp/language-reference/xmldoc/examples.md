@@ -16,7 +16,7 @@ The following example shows common language elements, and the tags you'll likely
 
 ## Document a hierarchy of classes and interfaces
 
-The `<InheritDoc>` element means a type or member *inherits* documentation comments from a base class or interface. You can also use the `<InheritDoc>` element with the `cref` attribute to inherit comments from a member of the same type. The following example shows ways to use this tag:
+The `<InheritDoc>` element means a type or member *inherits* documentation comments from a base class or interface. You can also use the `<InheritDoc>` element with the `cref` attribute to inherit comments from a member of the same type. The following example shows ways to use this tag. Note that when you add the `inheritdoc` attribute to a type, all member comments are also inherited.
 
 :::code language="csharp" source="./snippets/xmldoc/DocComments.cs" ID="InheritDocTag":::
 

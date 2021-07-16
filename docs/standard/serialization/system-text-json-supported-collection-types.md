@@ -50,13 +50,13 @@ The following sections are organized by namespace and show which types are suppo
 | <xref:System.Collections.BitArray>        | ✔️           | ❌              |
 | <xref:System.Collections.DictionaryEntry> | ✔️           | ✔️              |
 | <xref:System.Collections.Hashtable>       | ✔️           | ✔️              |
-| <xref:System.Collections.Queue>           | ✔️           | ✔️              |
-| <xref:System.Collections.SortedList>      | ✔️           | ✔️              |
-| <xref:System.Collections.Stack>           | ✔️           | ✔️              |
 | <xref:System.Collections.ICollection>     | ✔️           | ✔️              |
 | <xref:System.Collections.IDictionary>     | ✔️           | ✔️              |
 | <xref:System.Collections.IEnumerable>     | ✔️           | ✔️              |
 | <xref:System.Collections.IList>           | ✔️           | ✔️              |
+| <xref:System.Collections.Queue>           | ✔️           | ✔️              |
+| <xref:System.Collections.SortedList>      | ✔️           | ✔️              |
+| <xref:System.Collections.Stack>           | ✔️           | ✔️              |
 
 ## System.Collections.Generic namespace
 
@@ -123,15 +123,6 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 |-----------------------------------------------------------|---------------|-----------------|
 | <xref:System.Collections.Generic.Dictionary%602> \*       | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.HashSet%601>             | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.KeyValuePair%602>        | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.LinkedList%601>          | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.LinkedListNode%601>      | ✔️           | ❌              |
-| <xref:System.Collections.Generic.List%601>                | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.Queue%601>               | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.SortedDictionary%602> \* | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.SortedList%602> \*       | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.SortedSet%601>           | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.Stack%601>               | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.IAsyncEnumerable%601>    | ❌           | ❌              |
 | <xref:System.Collections.Generic.ICollection%601>         | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.IDictionary%602> \*      | ✔️           | ✔️              |
@@ -141,6 +132,15 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 | <xref:System.Collections.Generic.IReadOnlyDictionary%602> \* | ✔️        | ✔️              |
 | <xref:System.Collections.Generic.IReadOnlyList%601>       | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.ISet%601>                | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.KeyValuePair%602>        | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.LinkedList%601>          | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.LinkedListNode%601>      | ✔️           | ❌              |
+| <xref:System.Collections.Generic.List%601>                | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.Queue%601>               | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.SortedDictionary%602> \* | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.SortedList%602> \*       | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.SortedSet%601>           | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.Stack%601>               | ✔️           | ✔️              |
 
 \* See [Supported key types](#supported-key-types).
 
@@ -152,15 +152,6 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 |-------------------------------------------------------------------------------------------------|---------------|-----------------|
 | [Dictionary\<string, TValue>](xref:System.Collections.Generic.Dictionary%602) \*                | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.HashSet%601>                                                   | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.KeyValuePair%602>                                              | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.LinkedList%601>                                                | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.LinkedListNode%601>                                            | ✔️           | ❌              |
-| <xref:System.Collections.Generic.List%601>                                                      | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.Queue%601>                                                     | ✔️           | ✔️              |
-| [SortedDictionary\<string, TValue>](xref:System.Collections.Generic.SortedDictionary%602) \*    | ✔️           | ✔️              |
-| [SortedList\<string, TValue>](xref:System.Collections.Generic.SortedList%602) \*                | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.SortedSet%601>                                                 | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.Stack%601>                                                     | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.IAsyncEnumerable%601>                                          | ❌           | ❌              |
 | <xref:System.Collections.Generic.ICollection%601>                                               | ✔️           | ✔️              |
 | [IDictionary\<string, TValue>](xref:System.Collections.Generic.IDictionary%602) \*              | ✔️           | ✔️              |
@@ -170,6 +161,15 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 | [IReadOnlyDictionary\<string, TValue>](xref:System.Collections.Generic.IReadOnlyDictionary%602) \* | ✔️        | ✔️              |
 | <xref:System.Collections.Generic.IReadOnlyList%601>                                             | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.ISet%601>                                                      | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.KeyValuePair%602>                                              | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.LinkedList%601>                                                | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.LinkedListNode%601>                                            | ✔️           | ❌              |
+| <xref:System.Collections.Generic.List%601>                                                      | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.Queue%601>                                                     | ✔️           | ✔️              |
+| [SortedDictionary\<string, TValue>](xref:System.Collections.Generic.SortedDictionary%602) \*    | ✔️           | ✔️              |
+| [SortedList\<string, TValue>](xref:System.Collections.Generic.SortedList%602) \*                | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.SortedSet%601>                                                 | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.Stack%601>                                                     | ✔️           | ✔️              |
 
 \* See [Supported key types](#supported-key-types).
 
@@ -181,19 +181,18 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 
 | Type                                                              | Serialization | Deserialization |
 |-------------------------------------------------------------------|---------------|-----------------|
-| <xref:System.Collections.Immutable.ImmutableArray%601>            | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableDictionary%602> \*\*  | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableHashSet%601>          | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.IImmutableList%601>            | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableQueue%601>            | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableSortedDictionary%602> \*\* | ✔️      | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableSortedSet%601>        | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableStack%601> \*         | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.IImmutableDictionary%602> \*\* | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.IImmutableList%601>            | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.IImmutableQueue%601>           | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.IImmutableSet%601>             | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.IImmutableStack%601> \*        | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.ImmutableArray%601>            | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.ImmutableDictionary%602> \*\*  | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.ImmutableHashSet%601>          | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.ImmutableQueue%601>            | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.ImmutableSortedDictionary%602> \*\* | ✔️      | ✔️              |
+| <xref:System.Collections.Immutable.ImmutableSortedSet%601>        | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.ImmutableStack%601> \*         | ✔️           | ✔️              |
 
 ::: zone-end
 
@@ -201,6 +200,11 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 
 | Type                                                                                                          | Serialization | Deserialization |
 |---------------------------------------------------------------------------------------------------------------|---------------|-----------------|
+| [IImmutableDictionary\<string, TValue>](xref:System.Collections.Immutable.IImmutableDictionary%602) \*\*      | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.IImmutableList%601>                                                        | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.IImmutableQueue%601>                                                       | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.IImmutableSet%601>                                                         | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.IImmutableStack%601> \*                                                    | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.ImmutableArray%601>                                                        | ✔️           | ✔️              |
 | [ImmutableDictionary\<string, TValue>](xref:System.Collections.Immutable.ImmutableDictionary%602) \*\*        | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.ImmutableHashSet%601>                                                      | ✔️           | ✔️              |
@@ -209,11 +213,6 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 | [ImmutableSortedDictionary\<string, TValue>](xref:System.Collections.Immutable.ImmutableSortedDictionary%602) \*\*| ✔️       | ✔️              |
 | <xref:System.Collections.Immutable.ImmutableSortedSet%601>                                                    | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.ImmutableStack%601> \*                                                     | ✔️           | ✔️              |
-| [IImmutableDictionary\<string, TValue>](xref:System.Collections.Immutable.IImmutableDictionary%602) \*\*      | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.IImmutableList%601>                                                        | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.IImmutableQueue%601>                                                       | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.IImmutableSet%601>                                                         | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.IImmutableStack%601> \*                                                    | ✔️           | ✔️              |
 
 ::: zone-end
 
@@ -229,9 +228,9 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 | <xref:System.Collections.Specialized.HybridDictionary>    | ✔️           | ✔️              |
 | <xref:System.Collections.Specialized.IOrderedDictionary>  | ✔️           | ❌              |
 | <xref:System.Collections.Specialized.ListDictionary>      | ✔️           | ✔️              |
+| <xref:System.Collections.Specialized.NameValueCollection> | ✔️           | ❌              |
 | <xref:System.Collections.Specialized.StringCollection>    | ✔️           | ❌              |
 | <xref:System.Collections.Specialized.StringDictionary>    | ✔️           | ❌              |
-| <xref:System.Collections.Specialized.NameValueCollection> | ✔️           | ❌              |
 
 \* When <xref:System.Collections.Specialized.BitVector32> is deserialized, the <xref:System.Collections.Specialized.BitVector32.Data> property is skipped because it doesn't have a public setter. No exception is thrown.
 

@@ -37,12 +37,6 @@ This sample showcases the new Azure Functions tooling for C# Class Libraries in 
 
 [Customer Reviews App with Cognitive Services](/samples/azure-samples/functions-customer-reviews/customer-reviews-cognitive-services/)
 
-## Docker Linux image support
-
-This sample demonstrates how to create a `Dockerfile` to build and run Azure Functions on a Linux Docker container.
-
-[Azure Functions on Linux](/samples/azure-samples/functions-linux-custom-image/azure-functions-on-linux-custom-image-tutorial-sample-project/)
-
 ## File processing and validation
 
 This example parses a set of CSV files from hypothetical customers. It ensures that all files required for a customer "batch" are ready, then validates the structure of each file. Different solutions are presented using Azure Functions, Logic Apps, and Durable Functions.
@@ -79,12 +73,6 @@ A reference architecture that walks you through the decision-making process invo
 
 [Serverless Microservices reference architecture](/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/)
 
-## Migrate console apps to serverless
-
-This sample is a generic function (`.csx` file) that can be used to convert any console application to an HTTP web service in Azure Functions. All you have to do is edit a configuration file and specify what input parameters will be passed as arguments to the `.exe`.
-
-[Run Console Apps on Azure Functions](/samples/azure-samples/functions-dotnet-migrating-console-apps/run-console-apps-on-azure-functions/)
-
 ## Serverless for mobile
 
 Azure Functions are easy to implement and maintain, and accessible through HTTP. They are a great way to implement an API for a mobile application. Microsoft offers great cross-platform tools for iOS, Android, and Windows with Xamarin. As such, Xamarin and Azure Functions are working great together. This article shows how to implement an Azure Function in the Azure portal or in Visual Studio at first, and build a cross-platform client with Xamarin.Forms running on Android, iOS, and Windows.
@@ -99,7 +87,6 @@ This sample shows how to utilize Durable Functions' fan-out pattern to load an a
 
 ## Recommended resources
 
-- [Azure Functions on Linux](/samples/azure-samples/functions-linux-custom-image/azure-functions-on-linux-custom-image-tutorial-sample-project/)
 - [Big Data Processing: Serverless MapReduce on Azure](/samples/azure-samples/durablefunctions-mapreduce-dotnet/big-data-processing-serverless-mapreduce-on-azure/)
 - [Create serverless applications](/learn/paths/create-serverless-applications/)
 - [Customer Reviews App with Cognitive Services](/samples/azure-samples/functions-customer-reviews/customer-reviews-cognitive-services/)
@@ -108,7 +95,6 @@ This sample shows how to utilize Durable Functions' fan-out pattern to load an a
 - [In-editor game telemetry visualization](/samples/azure-samples/gaming-in-editor-telemetry/in-editor-telemetry-visualization/)
 - [IoT Reliable Edge Relay](/samples/azure-samples/iot-reliable-edge-relay/iot-reliable-edge-relay/)
 - [Produce and Consume messages through Service Bus, Event Hubs, and Storage Queues with Azure Functions](/samples/azure-samples/durable-functions-producer-consumer/product-consume-messages-az-functions/)
-- [Run Console Apps on Azure Functions](/samples/azure-samples/functions-dotnet-migrating-console-apps/run-console-apps-on-azure-functions/)
 - [Serverless functions for GraphQL](https://github.com/softchris/graphql-workshop-dotnet/blob/master/docs/workshop/4.md)
 - [Serverless Microservices reference architecture](/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/)
 

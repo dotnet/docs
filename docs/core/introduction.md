@@ -204,7 +204,7 @@ For more information, see [NuGet documentation](/nuget/).
 For more information, see the following resources:
 
 * [.NET In-Browser Tutorial](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1)
-* [Using .NET notebooks with Jupyter on your machine](https://github.com/dotnet/interactive/blob/main/docs/NotebooksLocalExperience.md)
+* [Using .NET notebooks with Jupyter on your machine](https://github.com/dotnet/interactive/blob/main/docs/NotebookswithJupyter.md)
 * [.NET Interactive documentation](https://github.com/dotnet/interactive/blob/main/docs/README.md)
 
 ## Execution models

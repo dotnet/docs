@@ -191,7 +191,7 @@ The `<returns>` tag should be used in the comment for a method declaration to de
 <param name="name">description</param>
 ```
 
-- `name`: The name of a method parameter. Enclose the name in double quotation marks (" "). The names for parameters must match the API signature. If one or more parameter aren't covered, the compiler issues a warning. The compiler also issues a warning if the value of `name` doesn't match a formal parameter in the method declaration.    
+- `name`: The name of a method parameter. Enclose the name in double quotation marks (" "). The names for parameters must match the API signature. If one or more parameter aren't covered, the compiler issues a warning. The compiler also issues a warning if the value of `name` doesn't match a formal parameter in the method declaration.
 
 The `<param>` tag should be used in the comment for a method declaration to describe one of the parameters for the method. To document multiple parameters, use multiple `<param>` tags. The text for the `<param>` tag is displayed in IntelliSense, the Object Browser, and the Code Comment Web Report.
 

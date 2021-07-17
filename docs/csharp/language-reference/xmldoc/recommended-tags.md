@@ -92,7 +92,9 @@ helpviewer_keywords:
 ---
 # Recommend XML tags for C# documentation comments
 
-C# documentation comments use XML elements to define the structure of the output documentation. One consequence of this feature is that you can add any valid XML in your documentation comments. The C# compiler copies these elements into the output XML file. While you can use any valid XML in your comments (including any valid HTML element), documenting code is recommended for many reasons. What follows are some recommendations, general use case scenarios, and things that you should know when using XML documentation tags in your C# code. While you can put any tags into your documentation comments, this article describes the recommended tags for the most common language constructs. In all cases, you should adhere to these recommendations:
+C# documentation comments use XML elements to define the structure of the output documentation. One consequence of this feature is that you can add any valid XML in your documentation comments. The C# compiler copies these elements into the output XML file. While you can use any valid XML in your comments (including any valid HTML element), documenting code is recommended for many reasons.
+
+What follows are some recommendations, general use case scenarios, and things that you should know when using XML documentation tags in your C# code. While you can put any tags into your documentation comments, this article describes the recommended tags for the most common language constructs. In all cases, you should adhere to these recommendations:
 
 - For the sake of consistency, all publicly visible types and their public members should be documented.
 - Private members can also be documented using XML comments. However, it exposes the inner (potentially confidential) workings of your library.
@@ -103,24 +105,27 @@ C# documentation comments use XML elements to define the structure of the output
 XML documentation starts with `///`. When you create a new project, the templates put some starter `///` lines in for you. The processing of these comments has some restrictions:
 
 - The documentation must be well-formed XML. If the XML isn't well formed, the compiler generates a warning. The documentation file will contain a comment that says that an error was encountered.
-- Developers are free to create their own set of tags. Some of the recommended tags have special meanings:
+- Some of the recommended tags have special meanings:
   - The `<param>` tag is used to describe parameters. If used, the compiler verifies that the parameter exists and that all parameters are described in the documentation. If the verification fails, the compiler issues a warning.
   - The `cref` attribute can be attached to any tag to reference a code element. The compiler verifies that this code element exists. If the verification fails, the compiler issues a warning. The compiler respects any `using` statements when it looks for a type described in the `cref` attribute.
   - The `<summary>` tag is used by IntelliSense inside Visual Studio to display additional information about a type or member.
     > [!NOTE]
     > The XML file does not provide full information about the type and members (for example, it does not contain any type information). To get full information about a type or member, use the documentation file together with reflection on the actual type or member.
+- Developers are free to create their own set of tags. The compiler will copy these to the output file.
 
-Some of the recommended tags can be used on any language element. Others have more specialized usage. Finally, some of the tags are used to format text in your documentation. This article describes the recommended tags organized by their use:
+Some of the recommended tags can be used on any language element. Others have more specialized usage. Finally, some of the tags are used to format text in your documentation. This article describes the recommended tags organized by their use.
+
+The compiler verifies the syntax of the elements followed by a single \* in the following list. Visual Studio provides IntelliSense for the tags verified by the compiler and all tags followed by \*\* in the following list. In addition to the tags listed here, the compiler and Visual Studio validate the `<b>`, `<i>`, `<u>`, `<br/>`, and `<a>` tags. The compiler also validates `<tt>`, which is deprecated HTML.
 
 - [General Tags](#general-tags) used for multiple elements - These tags are the minimum set for any API.
   - [`<summary>`](#summary): The value of this element is displayed in IntelliSense in Visual Studio.
   - [`<remarks>`](#remarks) \*\*
 - [Tags used for members](#document-members) - These tags are used when documenting methods and properties.
-  - [`<returns>`](#returns): The value of this element is displayed in intellisense in Visual Studio.
-  - [`<param>`](#param) \*: The value of this element is displayed in intellisense in Visual Studio.
+  - [`<returns>`](#returns): The value of this element is displayed in IntelliSense in Visual Studio.
+  - [`<param>`](#param) \*: The value of this element is displayed in IntelliSense in Visual Studio.
   - [`<paramref>`](#paramref)
   - [`<exception>`](#exception) \*
-  - [`<value>`](#value): The value of this element is displayed in intellisense in Visual Studio.
+  - [`<value>`](#value): The value of this element is displayed in IntelliSense in Visual Studio.
 - [Format documentation output](#format-documentation-output) - These tags provide formatting directions for tools that generate documentation.
   - [`<para>`](#para)
   - [`<list>`](#list)
@@ -136,10 +141,8 @@ Some of the recommended tags can be used on any language element. Others have mo
   - [`<cref>`](#cref-attribute)
   - [`<href>`](#href-attribute)
 - [Tags for generic types and methods](#generic-types-and-methods) - These tags are used only on generic types and methods
-  - [`<typeparam>`](#typeparam) \*: The value of this element is displayed in intellisense in Visual Studio.
+  - [`<typeparam>`](#typeparam) \*: The value of this element is displayed in IntelliSense in Visual Studio.
   - [`<typeparamref>`](#typeparamref)
-
-The compiler verifies the syntax of the elements followed by a single \* in the preceding list. Visual Studio provides intellisense for the tags verified by the compiler and all tags followed by \*\* in the preceding list. In addition to the tags listed here, the compiler and Visual Studio validate the `<b>`, `<i>`, `<u>`, `<br/>`, and `<a>` tags. The compiler also validates `<tt>`, which is deprecated HTML.
 
 > [!NOTE]
 > Documentation comments cannot be applied to a namespace.
@@ -188,7 +191,7 @@ The `<returns>` tag should be used in the comment for a method declaration to de
 <param name="name">description</param>
 ```
 
-- `name`: The name of a method parameter. Enclose the name in double quotation marks (" ").
+- `name`: The name of a method parameter. Enclose the name in double quotation marks (" "). The names for parameters must match the API signature. If one or more parameter aren't covered, the compiler issues a warning. The compiler also issues a warning if the value of `name` doesn't match a formal parameter in the method declaration.    
 
 The `<param>` tag should be used in the comment for a method declaration to describe one of the parameters for the method. To document multiple parameters, use multiple `<param>` tags. The text for the `<param>` tag is displayed in IntelliSense, the Object Browser, and the Code Comment Web Report.
 
@@ -300,7 +303,7 @@ Inherit XML comments from base classes, interfaces, and similar methods. Using `
 - `cref`:  Specify the member to inherit documentation from. Already defined tags on the current member are not overridden by the inherited ones.
 - `path`: The XPath expression query that will result in a node set to show. You can use this attribute to filter the tags to include or exclude from the inherited documentation.
   
-Add your XML comments in base classes or interfaces and let InheritDoc copy the comments to implementing classes. Add your XML comments to your synchronous methods and let InheritDoc copy the comments to your asynchronous versions of the same methods. If you want to copy the comments from a specific member, you use the `cref` attribute to specify the member.
+Add your XML comments in base classes or interfaces and let inheritdoc copy the comments to implementing classes. Add your XML comments to your synchronous methods and let inheritdoc copy the comments to your asynchronous versions of the same methods. If you want to copy the comments from a specific member, you use the `cref` attribute to specify the member.
 
 ### \<include>
 
@@ -366,7 +369,7 @@ The `href` attribute means a reference to a web page. You can use it to directly
 
 - `TResult`: The name of the type parameter. Enclose the name in double quotation marks (" ").
 
-The `<typeparam>` tag should be used in the comment for a generic type or method declaration to describe a type parameter. Add a tag for each type parameter of the generic type or method. The text for the `<typeparam>` tag will be displayed in IntelliSense, the [Object Browser window](/visualstudio/ide/viewing-the-structure-of-code#BKMK_ObjectBrowser), and the code comment web report.
+The `<typeparam>` tag should be used in the comment for a generic type or method declaration to describe a type parameter. Add a tag for each type parameter of the generic type or method. The text for the `<typeparam>` tag will be displayed in IntelliSense.
 
 ### \<typeparamref>
 

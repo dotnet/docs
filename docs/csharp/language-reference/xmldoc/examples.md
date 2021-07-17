@@ -14,13 +14,7 @@ The following example shows common language elements, and the tags you'll likely
 
 :::code language="csharp" source="./snippets/xmldoc/DocComments.cs" ID="ClassExample":::
 
-## Document a hierarchy of classes and interfaces
-
-The `<InheritDoc>` element means a type or member *inherits* documentation comments from a base class or interface. You can also use the `<InheritDoc>` element with the `cref` attribute to inherit comments from a member of the same type. The following example shows ways to use this tag. Note that when you add the `inheritdoc` attribute to a type, all member comments are also inherited.
-
-:::code language="csharp" source="./snippets/xmldoc/DocComments.cs" ID="InheritDocTag":::
-
-You use the `<Include>` tag to separate your XML comments from your source. Your source code references an XML file with the `<Include>` tag:
+Adding documentation can clutter your source code with large sets of comments intended for users of your library. You use the `<Include>` tag to separate your XML comments from your source. Your source code references an XML file with the `<Include>` tag:
 
 :::code language="csharp" source="./snippets/xmldoc/DocComments.cs" ID="IncludeTag":::
 
@@ -28,9 +22,15 @@ The second file, *xml_include_tag.xml*, contains the documentation comments.
 
 :::code language="xml" source="./snippets/xmldoc/xml_include_tag.xml" :::
 
+## Document a hierarchy of classes and interfaces
+
+The `<inheritdoc>` element means a type or member *inherits* documentation comments from a base class or interface. You can also use the `<inheritdoc>` element with the `cref` attribute to inherit comments from a member of the same type. The following example shows ways to use this tag. Note that when you add the `inheritdoc` attribute to a type, member comments are inherited. You can prevent the use of inherited comments by writing comments on the members in the derived type. Those will be chosen over the inherited comments.
+
+:::code language="csharp" source="./snippets/xmldoc/DocComments.cs" ID="InheritDocTag":::
+
 ## Generic types
 
-Use the `<TypeParam>` tag to describe type parameters on generic types and methods. The value for the `cref` attribute requires new syntax to reference a generic method or class:
+Use the `<typeparam>` tag to describe type parameters on generic types and methods. The value for the `cref` attribute requires new syntax to reference a generic method or class:
 
 :::code language="csharp" source="./snippets/xmldoc/DocComments.cs" ID="GenericExample":::
 

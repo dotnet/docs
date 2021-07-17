@@ -15,17 +15,17 @@ ms.assetid: 803b7f7b-7428-4725-b5db-9a6cff273199
 ---
 # XML documentation comments
 
-C# source files can have structured comments that produce API documentation for the types defined in those files. The C# compiler produces an *XML* file that contains structured data representing the comments and the API signatures. Other tools can process that XML output to create human-readable documentation. Formats include web pages, PDF files, and other formats.
+C# source files can have structured comments that produce API documentation for the types defined in those files. The C# compiler produces an *XML* file that contains structured data representing the comments and the API signatures. Other tools can process that XML output to create human-readable documentation in the form of web pages or PDF files, for example.
 
 This process provides many advantages for you to add API documentation in your code:
 
 - The C# compiler combines the structure of the C# code with the text of the comments into a single XML document.
-- The C# compiler validates the comments match the API signatures for relevant tags.
-- Tools that process the XML documentation files can define XML elements and attributes specific to that tool.
+- The C# compiler verifies that the comments match the API signatures for relevant tags.
+- Tools that process the XML documentation files can define XML elements and attributes specific to those tools.
 
-Tools like Visual Studio provide intellisense for many common XML elements used in documentation comments.
+Tools like Visual Studio provide IntelliSense for many common XML elements used in documentation comments.
 
-This article covers these activities:
+This article covers these topics:
 
 - Documentation comments and XML file generation
 - Tags validated by the C# compiler and Visual Studio
@@ -42,19 +42,19 @@ You create documentation for your code by writing special comment fields indicat
 public class MyClass {}
 ```
 
-You set the [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) option and the compiler will find all comment fields with XML tags in the source code and create an XML documentation file from those comments. When this option is enabled, the compiler generates the [cs1591](../compiler-messages/cs1591.md) warning for any publicly visible member declared in your project.
+You set the [**DocumentationFile**](../../language-reference/compiler-options/output.md#documentationfile) option and the compiler will find all comment fields with XML tags in the source code and create an XML documentation file from those comments. When this option is enabled, the compiler generates the [CS1591](../compiler-messages/cs1591.md) warning for any publicly visible member declared in your project without XML documentation comments.
 
 ## XML comment formats
 
 The use of XML doc comments requires delimiters that indicate where a documentation comment begins and ends. You use the following delimiters with the XML documentation tags:
 
-- `///` Single-line delimiter: The documentation examples C# project templates use this form. If there's white space following the delimiter, it isn't included in the XML output.
+- `///` Single-line delimiter: The documentation examples and C# project templates use this form. If there's white space following the delimiter, it isn't included in the XML output.
   > [!NOTE]
-  > Visual Studio automatically inserts the `<summary>` and `</summary>` tags and moves your cursor within these tags after you type the `///` delimiter in the code editor. You can turn this feature on or off in the [Options dialog box](/visualstudio/ide/reference/options-text-editor-csharp-advanced).
+  > Visual Studio automatically inserts the `<summary>` and `</summary>` tags and positions your cursor within these tags after you type the `///` delimiter in the code editor. You can turn this feature on or off in the [Options dialog box](/visualstudio/ide/reference/options-text-editor-csharp-advanced).
 - `/** */` Multiline delimiters: The `/** */` delimiters have the following formatting rules:
   - On the line that contains the `/**` delimiter, if the rest of the line is white space, the line isn't processed for comments. If the first character after the `/**` delimiter is white space, that white-space character is ignored and the rest of the line is processed. Otherwise, the entire text of the line after the `/**` delimiter is processed as part of the comment.
   - On the line that contains the `*/` delimiter, if there's only white space up to the `*/` delimiter, that line is ignored. Otherwise, the text on the line up to the `*/` delimiter is processed as part of the comment.
-  - For the lines after the one that begins with the `/**` delimiter, the compiler looks for a common pattern at the beginning of each line. The pattern can consist of optional white space and an asterisk (`*`), followed by more optional white space. If the compiler finds a common pattern at the beginning of each line that doesn't begin with the `/**` delimiter or the `*/` delimiter, it ignores that pattern for each line.
+  - For the lines after the one that begins with the `/**` delimiter, the compiler looks for a common pattern at the beginning of each line. The pattern can consist of optional white space and an asterisk (`*`), followed by more optional white space. If the compiler finds a common pattern at the beginning of each line that doesn't begin with the `/**` delimiter or end with the `*/` delimiter, it ignores that pattern for each line.
   - The only part of the following comment that's processed is the line that begins with `<summary>`. The three tag formats produce the same comments.
 
     ```csharp
@@ -108,9 +108,9 @@ To refer to XML elements (for example, your function processes specific XML elem
 
 The following tools create output from XML comments:
 
-- [DocFX](https://dotnet.github.io/docfx/): *DocFX* is an API documentation generator for .NET, which currently supports C#, VB and F#. It also allows you to customize the generated reference documentation. DocFX builds a static HTML website from your source code and Markdown files. Also, DocFX provides you the flexibility to customize the layout and style of your website through templates. You can also create custom templates.
-- [Sandcastle](https://github.com/EWSoftware/SHFB): The *Sandcastle tools* create help files for managed class libraries containing both conceptual and API reference pages. The Sandcastle tools are command-line based and have no GUI front-end, project management features, or an automated build process. The Sandcastle Help File Builder provides standalone GUI and command-line based tools to build a help file in an automated fashion. A Visual Studio integration package is also available for it so that help projects can be created and managed entirely from within Visual Studio.
-- [Doxygen](https://github.com/doxygen/doxygen): *Doxygen* generates an on-line documentation browser (in HTML) or an off-line reference manual (in LaTeX) from a set of documented source files. There's also support for generating output in RTF (MS-Word), PostScript, hyperlinked PDF, compressed HTML, DocBook, and Unix man pages. You can configure Doxygen to extract the code structure from undocumented source files.
+- [DocFX](https://dotnet.github.io/docfx/): *DocFX* is an API documentation generator for .NET, which currently supports C#, VB, and F#. It also allows you to customize the generated reference documentation. DocFX builds a static HTML website from your source code and Markdown files. Also, DocFX provides you the flexibility to customize the layout and style of your website through templates. You can also create custom templates.
+- [Sandcastle](https://github.com/EWSoftware/SHFB): The *Sandcastle tools* create help files for managed class libraries containing both conceptual and API reference pages. The Sandcastle tools are command-line based and have no GUI front-end, project management features, or automated build process. The Sandcastle Help File Builder provides standalone GUI and command-line based tools to build a help file in an automated fashion. A Visual Studio integration package is also available for it so that help projects can be created and managed entirely from within Visual Studio.
+- [Doxygen](https://github.com/doxygen/doxygen): *Doxygen* generates an on-line documentation browser (in HTML) or an off-line reference manual (in LaTeX) from a set of documented source files. There's also support for generating output in RTF (MS Word), PostScript, hyperlinked PDF, compressed HTML, DocBook, and Unix man pages. You can configure Doxygen to extract the code structure from undocumented source files.
 
 ### ID strings
 

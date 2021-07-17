@@ -1,12 +1,12 @@
 ---
 title: "Example XML documentation comments"
-description: See examples on many different C# language elements. Learn which tags to use in different situations and for different language elements.
+description: See documentation examples on many different C# language elements. Learn which tags to use in different situations and for different language elements.
 ms.date: 07/14/2021
 ms.topic: how-to
 ---
 # Example XML documentation comments
 
-This article contains examples for adding XML documentation comments to most C# language elements. This article contains three sets of examples. The first shows how you document a class with different members. The second shows how you would reuse explanations for a hierarchy of classes or interfaces. The third shows how tags you'll use for generic classes and members. The second and third examples use concepts that are covered in the first example.
+This article contains three examples for adding XML documentation comments to most C# language elements. The first example shows how you document a class with different members. The second shows how you would reuse explanations for a hierarchy of classes or interfaces. The third shows tags to use for generic classes and members. The second and third examples use concepts that are covered in the first example.
 
 ## Document a class, struct, or interface
 
@@ -30,7 +30,7 @@ The second file, *xml_include_tag.xml*, contains the documentation comments.
 
 ## Generic types
 
-Generic types and methods will use the `<TypeParam>` tag to describe type parameters. Also, the value for the `cref` attribute requires new syntax to reference a generic method or class:
+Use the `<TypeParam>` tag to describe type parameters on generic types and methods. The value for the `cref` attribute requires new syntax to reference a generic method or class:
 
 :::code language="csharp" source="./snippets/xmldoc/DocComments.cs" ID="GenericExample":::
 

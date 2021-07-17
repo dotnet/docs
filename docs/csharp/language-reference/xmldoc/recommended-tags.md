@@ -92,13 +92,13 @@ helpviewer_keywords:
 ---
 # Recommend XML tags for C# documentation comments
 
-C# documentation comments use XML elements to define the structure of the output documentation. One consequence of this decision is that you can add any valid XML in your documentation comments. The C# compiler copies these elements into the output XML file. While you can use any valid XML in your comments (including any valid HTML element), Documenting code is recommended for many reasons. What follows are some recommendations, general use case scenarios, and things that you should know when using XML documentation tags in your C# code. While you can put any tags into your documentation comments, this article describes the recommended tags for the most common language constructs. In all cases, you should adhere to these recommendations:
+C# documentation comments use XML elements to define the structure of the output documentation. One consequence of this feature is that you can add any valid XML in your documentation comments. The C# compiler copies these elements into the output XML file. While you can use any valid XML in your comments (including any valid HTML element), documenting code is recommended for many reasons. What follows are some recommendations, general use case scenarios, and things that you should know when using XML documentation tags in your C# code. While you can put any tags into your documentation comments, this article describes the recommended tags for the most common language constructs. In all cases, you should adhere to these recommendations:
 
-- For the sake of consistency, all publicly visible types and their members should be documented.
+- For the sake of consistency, all publicly visible types and their public members should be documented.
 - Private members can also be documented using XML comments. However, it exposes the inner (potentially confidential) workings of your library.
 - At a bare minimum, types and their members should have a `<summary>` tag because its content is needed for IntelliSense.
 - Documentation text should be written using complete sentences ending with full stops.
-- Partial classes are fully supported, and documentation information will be concatenated into a single entry for that type.
+- Partial classes are fully supported, and documentation information will be concatenated into a single entry for each type.
 
 XML documentation starts with `///`. When you create a new project, the templates put some starter `///` lines in for you. The processing of these comments has some restrictions:
 
@@ -110,10 +110,10 @@ XML documentation starts with `///`. When you create a new project, the template
     > [!NOTE]
     > The XML file does not provide full information about the type and members (for example, it does not contain any type information). To get full information about a type or member, use the documentation file together with reflection on the actual type or member.
 
-Some of the recommended tags can be used on any language element. Others have more specialized usage. Finally, some of the tags are used to format text in your documentation. this article describes the recommended tags organized by their use:
+Some of the recommended tags can be used on any language element. Others have more specialized usage. Finally, some of the tags are used to format text in your documentation. This article describes the recommended tags organized by their use:
 
 - [General Tags](#general-tags) used for multiple elements - These tags are the minimum set for any API.
-  - [`<summary>`](#summary): The value of this element is displayed in intellisense in Visual Studio.
+  - [`<summary>`](#summary): The value of this element is displayed in IntelliSense in Visual Studio.
   - [`<remarks>`](#remarks) \*\*
 - [Tags used for members](#document-members) - These tags are used when documenting methods and properties.
   - [`<returns>`](#returns): The value of this element is displayed in intellisense in Visual Studio.
@@ -128,7 +128,7 @@ Some of the recommended tags can be used on any language element. Others have mo
   - [`<code>`](#code)
   - [`<example>`](#example) \*\*
 - [Reuse documentation text](#reuse-documentation-text) - These tags provide tools that make it easier to reuse XML comments.
-  - `[<inheritdoc>`](#inheritdoc) \*\*
+  - [`<inheritdoc>`](#inheritdoc) \*\*
   - [`<include>`](#include) \*
 - [Generate links and references](#generate-links-and-references) - These tags generate links to other documentation.
   - [`<see>`](#see) \*
@@ -139,7 +139,7 @@ Some of the recommended tags can be used on any language element. Others have mo
   - [`<typeparam>`](#typeparam) \*: The value of this element is displayed in intellisense in Visual Studio.
   - [`<typeparamref>`](#typeparamref)
 
-The compiler verifies the syntax of the elements followed by a single \* in the preceding list. Visual Studio provides intellisense for the tags verified by the compiler and all tags followed by \*\* in the preceding list. In addition to the tags listed here, the compiler and Visual Studio validate the `<b>`, `<i>`, `<u>`, `<br/>`, and `<a>`. The compiler also validates `<tt>`, which is deprecated HTML.
+The compiler verifies the syntax of the elements followed by a single \* in the preceding list. Visual Studio provides intellisense for the tags verified by the compiler and all tags followed by \*\* in the preceding list. In addition to the tags listed here, the compiler and Visual Studio validate the `<b>`, `<i>`, `<u>`, `<br/>`, and `<a>` tags. The compiler also validates `<tt>`, which is deprecated HTML.
 
 > [!NOTE]
 > Documentation comments cannot be applied to a namespace.
@@ -160,7 +160,7 @@ If you want angle brackets to appear in the text of a documentation comment, use
 <summary>description</summary>
 ```
 
-The `<summary>` tag should be used to describe a type or a type member. Use [\<remarks>](#remarks) to add supplemental information to a type description. Use the [cref Attribute](#cref-attribute) to enable documentation tools such as [DocFX](https://dotnet.github.io/docfx/) and [Sandcastle](https://github.com/EWSoftware/SHFB) to create internal hyperlinks to documentation pages for code elements. The text for the `<summary>` tag is the only source of information about the type in IntelliSense, and is also displayed in the Object Browser Window.
+The `<summary>` tag should be used to describe a type or a type member. Use [\<remarks>](#remarks) to add supplemental information to a type description. Use the [cref attribute](#cref-attribute) to enable documentation tools such as [DocFX](https://dotnet.github.io/docfx/) and [Sandcastle](https://github.com/EWSoftware/SHFB) to create internal hyperlinks to documentation pages for code elements. The text for the `<summary>` tag is the only source of information about the type in IntelliSense, and is also displayed in the Object Browser window.
 
 ### \<remarks>
 
@@ -170,7 +170,7 @@ description
 </remarks>
 ```
 
-The `<remarks>` tag is used to add information about a type, supplementing the information specified with [\<summary>](#summary). This information is displayed in the Object Browser window. This tag may include more lengthy explanations. You may find that using `CDATA` sections for markdown make writing it more convenient. Tools such as [docfx](https://dotnet.github.io/docfx/) process the markdown text in `CDATA` sections.
+The `<remarks>` tag is used to add information about a type or a type member, supplementing the information specified with [\<summary>](#summary). This information is displayed in the Object Browser window. This tag may include more lengthy explanations. You may find that using `CDATA` sections for markdown make writing it more convenient. Tools such as [docfx](https://dotnet.github.io/docfx/) process the markdown text in `CDATA` sections.
 
 ## Document members
 
@@ -235,7 +235,7 @@ The `<value>` tag lets you describe the value that a property represents. When y
 </remarks>
 ```
 
-The `<para>` tag is for use inside a tag, such as [\<summary>](#summary), [\<remarks>](#remarks), or [\<returns>](#returns), and lets you add structure to the text. The `<para>` tag creates a double spaced paragraph. Use the `<br/>` if you want a single spaced paragraph.
+The `<para>` tag is for use inside a tag, such as [\<summary>](#summary), [\<remarks>](#remarks), or [\<returns>](#returns), and lets you add structure to the text. The `<para>` tag creates a double spaced paragraph. Use the `<br/>` tag if you want a single spaced paragraph.
 
 ### \<list>
 
@@ -252,7 +252,7 @@ The `<para>` tag is for use inside a tag, such as [\<summary>](#summary), [\<rem
 </list>
 ```
 
-The `<listheader>` block is used to define the heading row of either a table or definition list. When defining a table, you only need to supply an entry for term in the heading. Each item in the list is specified with an `<item>` block. When creating a definition list, you'll need to specify both `term` and `description`. However, for a table, bulleted list, or numbered list, you only need to supply an entry for `description`. A list or table can have as many `<item>` blocks as needed.
+The `<listheader>` block is used to define the heading row of either a table or definition list. When defining a table, you only need to supply an entry for `term` in the heading. Each item in the list is specified with an `<item>` block. When creating a definition list, you'll need to specify both `term` and `description`. However, for a table, bulleted list, or numbered list, you only need to supply an entry for `description`. A list or table can have as many `<item>` blocks as needed.
 
 ### \<c>
 
@@ -333,7 +333,7 @@ The `<include>` tag lets you refer to comments in another file that describe the
 - `href="link"`: A clickable link to a given URL. For example, `<see href="https://github.com">GitHub</see>` produces a clickable link with text :::no-loc text="GitHub"::: that links to `https://github.com`.
 - `langword="keyword"`: A language keyword, such as `true`.
 
-The `<see>` tag lets you specify a link from within text. Use [\<seealso>](#seealso) to indicate that text should be placed in a See Also section. Use the [cref Attribute](#cref-attribute) to create internal hyperlinks to documentation pages for code elements. You include the type parameters to specify a reference to a generic type or method, such as `cref="cref="IDictionary{T, U}"`. Also, ``href`` is a valid Attribute that will function as a hyperlink.
+The `<see>` tag lets you specify a link from within text. Use [\<seealso>](#seealso) to indicate that text should be placed in a See Also section. Use the [cref attribute](#cref-attribute) to create internal hyperlinks to documentation pages for code elements. You include the type parameters to specify a reference to a generic type or method, such as `cref="cref="IDictionary{T, U}"`. Also, ``href`` is a valid attribute that will function as a hyperlink.
 
 ### \<seealso>
 
@@ -343,10 +343,10 @@ The `<see>` tag lets you specify a link from within text. Use [\<seealso>](#seea
 /// <seealso href="link">Link Text</seealso>
 ```
 
-- `cref="member"`: A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML.`member` must appear within double quotation marks (" ").
+- `cref="member"`: A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. `member` must appear within double quotation marks (" ").
 - `href="link"`: A clickable link to a given URL. For example, `<seealso href="https://github.com">GitHub</seealso>` produces a clickable link with text :::no-loc text="GitHub"::: that links to `https://github.com`.
 
-The `<seealso>` tag lets you specify the text that you might want to appear in a **See Also** section. Use [\<see>](#see) to specify a link from within text. Note that you cannot next the `seealso` tag inside the `summary` tag.
+The `<seealso>` tag lets you specify the text that you might want to appear in a **See Also** section. Use [\<see>](#see) to specify a link from within text. You cannot nest the `seealso` tag inside the `summary` tag.
 
 ### cref attribute
 
@@ -366,7 +366,7 @@ The `href` attribute means a reference to a web page. You can use it to directly
 
 - `TResult`: The name of the type parameter. Enclose the name in double quotation marks (" ").
 
-The `<typeparam>` tag should be used in the comment for a generic type or method declaration to describe a type parameter. Add a tag for each type parameter of the generic type or method. The text for the `<typeparam>` tag will be displayed in IntelliSense, the [Object Browser Window](/visualstudio/ide/viewing-the-structure-of-code#BKMK_ObjectBrowser) code comment web report.
+The `<typeparam>` tag should be used in the comment for a generic type or method declaration to describe a type parameter. Add a tag for each type parameter of the generic type or method. The text for the `<typeparam>` tag will be displayed in IntelliSense, the [Object Browser window](/visualstudio/ide/viewing-the-structure-of-code#BKMK_ObjectBrowser), and the code comment web report.
 
 ### \<typeparamref>
 
@@ -383,4 +383,4 @@ Use this tag to enable consumers of the documentation file to format the word in
 All the tags outlined above represent those tags that are recognized by the C# compiler. However, a user is free to define their own tags.
 Tools like Sandcastle bring support for extra tags like [\<event>](https://ewsoftware.github.io/XMLCommentsGuide/html/81bf7ad3-45dc-452f-90d5-87ce2494a182.htm) and [\<note>](https://ewsoftware.github.io/XMLCommentsGuide/html/4302a60f-e4f4-4b8d-a451-5f453c4ebd46.htm),
 and even support [documenting namespaces](https://ewsoftware.github.io/XMLCommentsGuide/html/BD91FAD4-188D-4697-A654-7C07FD47EF31.htm).
-Custom or in-house documentation generation tools can also be used with the standard tags and multiple output formats from HTML to PDF can be supported.
+Custom or in-house documentation generation tools can also be used with the standard tags, and multiple output formats from HTML to PDF can be supported.

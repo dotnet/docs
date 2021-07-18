@@ -84,7 +84,7 @@ If this is your first time using .NET for Apache Spark, check out the [Get start
        .Read()
        .Schema("id INT, url STRING, owner_id INT, " +
        "name STRING, descriptor STRING, language STRING, " +
-       "created_at STRING, forked_from INT, deleted STRING" +
+       "created_at STRING, forked_from INT, deleted STRING," +
        "updated_at STRING")
        .Csv("filepath");
 

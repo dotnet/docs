@@ -2,6 +2,7 @@
 title: "Breaking change: ClientCertificate property no longer triggers renegotiation for HttpSys"
 description: "Learn about the breaking change in ASP.NET Core 6.0 where the ClientCertificate property no longer triggers renegotiation for HttpSys."
 ms.date: 07/20/2021
+no-loc: [ Kestrel ]
 ---
 # ClientCertificate property no longer triggers renegotiation for HttpSys
 
@@ -21,7 +22,7 @@ Setting `HttpSysOptions.ClientCertificateMethod = ClientCertificateMethod.AllowR
 
 ## Reason for change
 
-When implementing the same features for Kestrel, it became clear that applications need to be able to check the state of the client certificate before triggering a renegotiation. Checking the state enables the following usage pattern to deal with issues like the request body conflicting with the renegotiation:
+When implementing the same features for Kestrel, it became clear that applications need to be able to check the state of the client certificate before triggering a renegotiation. For issues like the request body conflicting with the renegotiation, checking the state enables the following usage pattern to deal with the issue:
 
 ```csharp
 if (connection.ClientCertificate == null)

@@ -47,7 +47,7 @@ body:
       description: Does this change affect binary or source compatibility?
       options:
         - label: Binary incompatible (code must be recompiled to use the newer API version)
-        - label: Source incompatible (successfully recompiling against the newer API version requires source changes)
+        - label: Source incompatible (code must be changed and recompiled to use the newer API version)
     validations:
       required: true
   - type: textarea

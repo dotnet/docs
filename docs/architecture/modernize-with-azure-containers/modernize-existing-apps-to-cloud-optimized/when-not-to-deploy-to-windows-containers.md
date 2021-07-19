@@ -11,8 +11,6 @@ Cases not supported in Windows Containers, as of May 2018:
 
 - Microsoft Message Queuing (MSMQ) currently is only available in Windows Containers based on Windows Server v1803 release, but not in any other prior releases.
 
-  - [UserVoice request forum](https://windowsserver.uservoice.com/forums/304624-containers/suggestions/15719031-create-base-container-image-with-msmq-server)
-
   - [Discussion forum](https://social.msdn.microsoft.com/Forums/bce99a7d-aa60-44fa-a348-450855650810/msmqserver-is-it-supported?forum=windowscontainers)
 
 - Microsoft Distributed Transaction Coordinator (MSDTC) currently is not supported in Windows Containers.
@@ -21,13 +19,9 @@ Cases not supported in Windows Containers, as of May 2018:
 
 - Microsoft Office currently does not support containers.
 
-  - [UserVoice request forum](https://windowsserver.uservoice.com/forums/304624-containers/suggestions/19686220-provide-office-support-for-containers)
-
 - UI apps (client apps with a visual user interface) are not supported scenarios.
 
 - Windows infrastructure roles (DNS, DHCP, DC, NTP, PRINT, File server, IAM etc.) are not supported scenarios.
-
-For other nonsupported scenarios and requests from the community, see the UserVoice forum for Windows Containers: <https://windowsserver.uservoice.com/forums/304624-containers>.
 
 ### Additional resources
 

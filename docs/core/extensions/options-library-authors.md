@@ -3,7 +3,7 @@ title: Options pattern guidance for .NET library authors
 author: IEvangelist
 description: Learn how to expose the options pattern as a library author in .NET.
 ms.author: dapine
-ms.date: 04/12/2021
+ms.date: 07/16/2021
 ---
 
 # Options pattern guidance for .NET library authors
@@ -47,6 +47,9 @@ In the preceding code, the `AddMyLibraryService`:
 When you author a library that exposes many options to consumers, you may want to consider requiring an `IConfiguration` parameter extension method. The expected `IConfiguration` instance should be scoped to a named section of the configuration by using the <xref:Microsoft.Extensions.Configuration.IConfiguration.GetSection%2A?displayProperty=nameWithType> function.
 
 :::code language="csharp" source="snippets/configuration/options-configparam/ServiceCollectionExtensions.cs" highlight="10,12-14":::
+
+> [!TIP]
+> The <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)> method is part of the [`Microsoft.Extensions.Options.ConfigurationExtensions`](https://www.nuget.org/packages/Microsoft.Extensions.Options.ConfigurationExtensions) NuGet package.
 
 In the preceding code, the `AddMyLibraryService`:
 

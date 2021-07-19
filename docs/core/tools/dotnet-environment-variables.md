@@ -33,17 +33,17 @@ Specifies whether data about the .NET tools usage is collected and sent to Micro
 
 Specifies whether .NET runtime, shared framework, or SDK are resolved from the global location. If not set, it defaults to 1 (logical `true`). Set to 0 (logical `false`) to not resolve from the global location and have isolated .NET installations. For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
 
-## `DOTNET_ROLL_FORWARD` **Available starting with .NET Core 3.x.**
+## `DOTNET_ROLL_FORWARD`
 
-Determines roll forward behavior. For more information, see the `--roll-forward` option earlier in this article.
+Determines roll forward behavior. For more information, see the `--roll-forward` option earlier in this article.  **Available starting with .NET Core 3.x.**
 
-## `DOTNET_ROLL_FORWARD_TO_PRERELEASE` **Available starting with .NET Core 3.x.**
+## `DOTNET_ROLL_FORWARD_TO_PRERELEASE`
 
-If set to `1` (enabled), enables rolling forward to a pre-release version from a release version. By default (`0` - disabled), when a release version of .NET runtime is requested, roll-forward will only consider installed release versions.
+If set to `1` (enabled), enables rolling forward to a pre-release version from a release version. By default (`0` - disabled), when a release version of .NET runtime is requested, roll-forward will only consider installed release versions. **Available starting with .NET Core 3.x.**
 
 For more information, see [Roll forward](../whats-new/dotnet-core-3-0.md#major-version-runtime-roll-forward).
 
-## `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX` **Available in .NET Core 2.x.**
+## `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX`
 
 Disables minor version roll forward, if set to `0`. For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
 
@@ -79,7 +79,7 @@ Specifies a directory to which a single-file application is extracted before it 
 
 For more information, see [Single-file executables](../whats-new/dotnet-core-3-0.md#single-file-executables).
 
-## `COREHOST_TRACE``
+## `COREHOST_TRACE`
 
 Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, `hostfxr`, and `hostpolicy`.
 

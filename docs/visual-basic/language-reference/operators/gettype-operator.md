@@ -46,7 +46,6 @@ GetType(typename)
  The `GetType` operator can be useful in the following circumstance:  
   
 - You must access the metadata for a type at run time. The <xref:System.Type> object supplies metadata such as type members and deployment information. You need this, for example, to reflect over an assembly. For more information, see also <xref:System.Reflection?displayProperty=nameWithType>.  
-
   
 ## Example  
 

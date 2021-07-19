@@ -95,5 +95,6 @@ Use the following environment variables to configure the .NET SDK, .NET CLI, and
 
 ## See also
 
+- [dotnet command](dotnet.md)
 - [Runtime Configuration Files](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md)
 - [.NET run-time configuration settings](../run-time-config/index.md)

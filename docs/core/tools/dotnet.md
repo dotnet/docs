@@ -268,5 +268,6 @@ dotnet myapp.dll
 
 ## See also
 
+- [Environment variables used by .NET SDK, .NET CLI, and .NET runtime](dotnet-environment-variables.md)
 - [Runtime Configuration Files](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md)
 - [.NET run-time configuration settings](../run-time-config/index.md)

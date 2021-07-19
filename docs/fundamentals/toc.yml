@@ -227,18 +227,6 @@ items:
       href: ../core/tools/index.md
     - name: dotnet
       href: ../core/tools/dotnet.md
-    - name: dotnet build
-      href: ../core/tools/dotnet-build.md
-    - name: dotnet build-server
-      href: ../core/tools/dotnet-build-server.md
-    - name: dotnet clean
-      href: ../core/tools/dotnet-clean.md
-    - name: dotnet help
-      href: ../core/tools/dotnet-help.md
-    - name: dotnet migrate
-      href: ../core/tools/dotnet-migrate.md
-    - name: dotnet msbuild
-      href: ../core/tools/dotnet-msbuild.md
     - name: dotnet add/list/remove package
       items:
       - name: dotnet add package
@@ -255,6 +243,18 @@ items:
         href: ../core/tools/dotnet-list-reference.md
       - name: dotnet remove reference
         href: ../core/tools/dotnet-remove-reference.md
+    - name: dotnet build
+      href: ../core/tools/dotnet-build.md
+    - name: dotnet build-server
+      href: ../core/tools/dotnet-build-server.md
+    - name: dotnet clean
+      href: ../core/tools/dotnet-clean.md
+    - name: dotnet help
+      href: ../core/tools/dotnet-help.md
+    - name: dotnet migrate
+      href: ../core/tools/dotnet-migrate.md
+    - name: dotnet msbuild
+      href: ../core/tools/dotnet-msbuild.md
     - name: dotnet new
       items:
       - name: dotnet new

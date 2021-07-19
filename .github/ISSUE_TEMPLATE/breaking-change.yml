@@ -44,10 +44,10 @@ body:
     id: change-type
     attributes:
       label: Type of breaking change
-      description: Does this change affect binary compatibility, source compatibility, or both?
+      description: Does this change affect binary or source compatibility?
       options:
-        - label: Binary compatibility (code must be recompiled to use the newer API version)
-        - label: Source compatibility (successfully recompiling against the newer API version requires source changes)
+        - label: Binary incompatible (code must be recompiled to use the newer API version)
+        - label: Source incompatible (code must be changed and recompiled to use the newer API version)
     validations:
       required: true
   - type: textarea

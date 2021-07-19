@@ -184,6 +184,12 @@ items:
       href: ../core/sdk.md
     - name: Environment variables
       href: ../core/tools/dotnet-environment-variables.md
+    - name: dotnet-install scripts
+      href: ../core/tools/dotnet-install-script.md
+    - name: global.json overview
+      href: ../core/tools/global-json.md
+    - name: Telemetry
+      href: ../core/tools/telemetry.md
     - name: Error messages
       items:
       - name: NETSDK1004
@@ -347,12 +353,6 @@ items:
         href: ../core/tools/dotnet-workload-uninstall.md
       - name: dotnet workload update
         href: ../core/tools/dotnet-workload-update.md
-    - name: dotnet-install scripts
-      href: ../core/tools/dotnet-install-script.md
-    - name: global.json overview
-      href: ../core/tools/global-json.md
-    - name: Telemetry
-      href: ../core/tools/telemetry.md
     - name: Elevated access
       href: ../core/tools/elevated-access.md
     - name: Enable Tab completion

@@ -73,9 +73,9 @@ Location of the "shared store" which assembly resolution falls back to in some c
 
 List of assemblies to load and execute startup hooks from.
 
-## `DOTNET_BUNDLE_EXTRACT_BASE_DIR` **Available starting with .NET Core 3.x.**
+## `DOTNET_BUNDLE_EXTRACT_BASE_DIR`
 
-Specifies a directory to which a single-file application is extracted before it is executed.
+Specifies a directory to which a single-file application is extracted before it is executed. **Available starting with .NET Core 3.x.**
 
 For more information, see [Single-file executables](../whats-new/dotnet-core-3-0.md#single-file-executables).
 
@@ -85,11 +85,13 @@ Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, 
 
 * `COREHOST_TRACE=[0/1]` - default is `0` - tracing disabled. If set to `1`, diagnostics tracing is enabled.
 * `COREHOST_TRACEFILE=<file path>` - only has effect if tracing is enabled via `COREHOST_TRACE=1`. When set, the tracing information is written to the specified file, otherwise the tracing information is written to `stderr`. **Available starting with .NET Core 3.x.**
-* `COREHOST_TRACE_VERBOSITY=[1/2/3/4]` - default is `4`. The setting is used only when tracing is enabled via`COREHOST_TRACE=1`. **Available starting with .NET Core 3.x.**
+* `COREHOST_TRACE_VERBOSITY=[1/2/3/4]` - default is `4`. The setting is used only when tracing is enabled via `COREHOST_TRACE=1`. **Available starting with .NET Core 3.x.**
+
   * `4` - all tracing information is written
   * `3` - only informational, warning and error messages are written
   * `2` - only warning and error messages are written
   * `1` - only error messages are written
+
 The typical way to get detailed trace information about application startup is to set `COREHOST_TRACE=1` and`COREHOST_TRACEFILE=host_trace.txt` and then run the application. A new file `host_trace.txt` will be created in the current directory with the detailed information.
 
 ## See also

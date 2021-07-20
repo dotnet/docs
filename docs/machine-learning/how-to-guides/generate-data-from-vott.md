@@ -17,7 +17,7 @@ Learn how to use VoTT (Visual Object Tagging Tool) to tag images for object dete
 1. [Download VoTT](https://github.com/Microsoft/VoTT/releases) (Visual Object Tagging Tool).
 1. Open VoTT and select **New Project**.
 
-      ![VoTT Home Screen](../media/vott.png)
+      ![VoTT Home Screen](./media/vott/vott.png)
 
 1. In **Project Settings**, change the **Display Name** to the name of your choosing.
 1. Change the **Security Token** to *Generate New Security Token*.
@@ -33,7 +33,7 @@ You should now see a window with preview images of all the training images on th
 
 1. Select the first (plus-shaped) icon in the **Tags** toolbar to add a new tag.
 
-    ![VoTT New Tag Icon](./media/vott-new-tag-icon.png)
+    ![VoTT New Tag Icon](./media/vott/vott-new-tag-icon.png)
 
 1. Name the tag and hit <kbd>Enter</kbd> on your keyboard.
 
@@ -59,6 +59,6 @@ Once you have labeled all of your training images, you can export the file that 
 
 1. Select **Save Export Settings**..
 
-    ![VoTT Export Button](./media/vott-export-button.png)
+    ![VoTT Export Button](./media/vott/vott-export-button.png)
 
 This export will create a new folder called *vott-json-export* in your *Stop-Sign-Images* folder and will generate a JSON file named *ProjectName-export* in that new folder. You will use this JSON file in for training an object detection model in Model Builder.

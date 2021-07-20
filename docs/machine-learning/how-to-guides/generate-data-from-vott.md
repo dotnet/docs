@@ -1,7 +1,7 @@
 ---
 title: Generate Data from VoTT
 description: How to use VoTT to generate data for object detection in Model Builder
-ms.date: 07/16/2021
+ms.date: 07/20/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to

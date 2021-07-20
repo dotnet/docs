@@ -1,4 +1,4 @@
-using Microsoft.Extensions.Hosting;
+﻿using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Threading;
@@ -8,9 +8,9 @@ namespace CachingExamples.Memory
 {
     public class CacheWorker : BackgroundService
     {
-        private readonly ILogger<Worker> _logger;
+        private readonly ILogger<CacheWorker> _logger;
 
-        public CacheWorker(ILogger<Worker> logger) => _logger = logger;
+        public CacheWorker(ILogger<CacheWorker> logger) => _logger = logger;
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {

@@ -1,7 +1,7 @@
 ---
 title: dotnet workload update command
 description: The 'dotnet workload update' command updates installed workloads.
-ms.date: 07/08/2021
+ms.date: 07/20/2021
 ---
 # dotnet workload update
 
@@ -15,6 +15,7 @@ ms.date: 07/08/2021
 
 ```dotnetcli
 dotnet workload update
+    [--advertising-manifests-only]
     [--configfile <FILE>] [--disable-parallel]
     [--download-to-cache <CACHE>] [--from-cache <CACHE>]
     [--from-previous-sdk] [--ignore-failed-sources]
@@ -34,6 +35,10 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 ## Options
 
 <!-- markdownlint-disable MD012 -->
+
+- **`--advertising-manifests-only`**
+
+  Downloads [advertising manifests](dotnet-workload-install.md#advertising-manifests) but doesn't update any workloads. Available starting in .NET 6 Preview 7.
 
 [!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 

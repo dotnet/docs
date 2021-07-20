@@ -32,13 +32,11 @@ Use [dotnet workload search](dotnet-workload-search.md) to learn what workloads 
 
 ### When to run elevated
 
-For macOS and Linux SDK installations that are installed to a protected directory, the command needs to run elevated. On Windows, the command doesn't need to run elevated even if the SDK is installed to the *Program Files* directory. For Windows, the command uses MSI installers for that location.
+For macOS and Linux SDK installations that are installed to a protected directory, the command needs to run elevated (use the `sudo` command). On Windows, the command doesn't need to run elevated even if the SDK is installed to the *Program Files* directory. For Windows, the command uses MSI installers for that location.
 
 ### Results vary by SDK version
 
-The `dotnet workload` commands operate in the context of specific SDK versions. Suppose you have both .NET 6.0.100 SDK and .NET 6.0.200 SDK installed. The `dotnet workload` commands will give different results depending on which SDK version you select. This behavior applies to major and minor version and feature band differences, not to patch version differences. For example, .NET SDK 6.0.101 and 6.0.102 give the same results, whereas 6.0.100 and 6.0.200 give different results.
-
- The commands provide the `--sdk-version` option to let you select an SDK version other than the one selected by default or by *global.json*.
+The `dotnet workload` commands operate in the context of specific SDK versions. Suppose you have both .NET 6.0.100 SDK and .NET 6.0.200 SDK installed. The `dotnet workload` commands will give different results depending on which SDK version you select. This behavior applies to major and minor version and feature band differences, not to patch version differences. For example, .NET SDK 6.0.101 and 6.0.102 give the same results, whereas 6.0.100 and 6.0.200 give different results. You can specify the SDK version by using the [*global.json* file](global-json.md) or the `--sdk-version` option of the `dotnet workload` commands.
 
 ### Advertising manifests
 

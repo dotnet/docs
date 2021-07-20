@@ -44,7 +44,6 @@ body:
     id: change-type
     attributes:
       label: Type of breaking change
-      description: Does this change affect binary or source compatibility?
       options:
         - label: Binary incompatible (code must be recompiled to use the newer API version)
         - label: Source incompatible (code must be changed and recompiled to use the newer API version)

@@ -49,11 +49,11 @@ Setting an expiration will cause entries in the cache to be *evicted* if they're
 
 To use the default <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> implementation, call the <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache%2A> extension method to register all the required services with DI. In the following code sample, the generic host is used to expose the <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureServices%2A> functionality:
 
-:::code source="snippets/caching/memory-apis/Program.cs" range="3-9" highlight="5":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="3-9" highlight="6":::
 
 Depending on your .NET workload, you may access the `IMemoryCache` differently; such as constructor injection. In this sample, you use the `IServiceProvider` instance on the `host` and call generic <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService%60%601(System.IServiceProvider)> extension method:
 
-:::code source="snippets/caching/memory-apis/Program.cs" range="12-13":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="11-12":::
 
 With in-memory caching services registered, and resolved through DI - you're ready to start caching. This sample iterates through the letters in the English alphabet 'A' through 'Z'. There is a `record` that holds the reference to the letter, and generates a message.
 
@@ -70,7 +70,7 @@ In the preceding C# code:
 
 To add items to the cache call one of the `Create`, or `Set` APIs:
 
-:::code source="snippets/caching/memory-apis/Program.cs" range="37-55":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="37-55" highlight="12-13":::
 
 In the preceding C# code:
 

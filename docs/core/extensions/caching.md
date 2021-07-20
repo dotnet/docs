@@ -49,19 +49,19 @@ Setting an expiration will cause entries in the cache to be *evicted* if they're
 
 To use the default <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> implementation, call the <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache%2A> extension method to register all the required services with DI. In the following code sample, the generic host is used to expose the <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureServices%2A> functionality:
 
-:::code source="snippets/caching/memory/Program.cs" range="3-9" highlight="5":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="3-9" highlight="5":::
 
 Depending on your .NET workload, you may access the `IMemoryCache` differently; such as constructor injection. In this sample, you use the `IServiceProvider` instance on the `host` and call generic <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService%60%601(System.IServiceProvider)> extension method:
 
-:::code source="snippets/caching/memory/Program.cs" range="12-13":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="12-13":::
 
 With in-memory caching services registered, and resolved through DI - you're ready to start caching. This sample iterates through the letters in the English alphabet 'A' through 'Z'. There is a `record` that holds the reference to the letter, and generates a message.
 
-:::code source="snippets/caching/memory/Program.cs" range="70-74":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="70-74":::
 
 The sample includes a helper function that iterates through the alphabet letters:
 
-:::code source="snippets/caching/memory/Program.cs" range="26-35":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="26-35":::
 
 In the preceding C# code:
 
@@ -70,7 +70,7 @@ In the preceding C# code:
 
 To add items to the cache call one of the `Create`, or `Set` APIs:
 
-:::code source="snippets/caching/memory/Program.cs" range="37-55":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="37-55":::
 
 In the preceding C# code:
 
@@ -86,11 +86,11 @@ For each letter in the alphabet, a cache entry is written with an expiration, an
 
 The post eviction callback writes the details of the value that was evicted to the console:
 
-:::code source="snippets/caching/memory/Program.cs" range="17-24":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="17-24":::
 
 Now that the cache is populated, another call to `IterateAlphabetAsync` is awaited, but this time you'll call <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache.TryGetValue%2A?displayProperty=nameWithType>:
 
-:::code source="snippets/caching/memory/Program.cs" range="57-66":::
+:::code source="snippets/caching/memory-apis/Program.cs" range="57-66":::
 
 If the `cache` contains the `letter` key, and the `value` is an instance of an `AlphabetLetter` it's written to the console. When the `letter` key is not in the cache, it was evicted and its post eviction callback was invoked.
 
@@ -101,9 +101,65 @@ The entire sample app source code is a top-level program and requires two NuGet 
 - [`Microsoft.Extensions.Caching.Memory`](/dotnet/api/microsoft.extensions.caching.memory)
 - [`Microsoft.Extensions.Hosting`](/dotnet/api/microsoft.extensions.hosting)
 
-:::code source="snippets/caching/memory/Program.cs":::
+:::code source="snippets/caching/memory-apis/Program.cs":::
 
-Feel free to adjust the `MillisecondsDelayAfterAdd` and `MillisecondsAbsoluteExpiration` values to observe the changes in behavior to the expiration and eviction of cached entries.
+Feel free to adjust the `MillisecondsDelayAfterAdd` and `MillisecondsAbsoluteExpiration` values to observe the changes in behavior to the expiration and eviction of cached entries. The following is sample output from running this code, due to the nature of .NET events - there is no guarantee that your output will be identical.
+
+```console
+A was cached.
+B was cached.
+C was cached.
+D was cached.
+E was cached.
+F was cached.
+G was cached.
+H was cached.
+I was cached.
+J was cached.
+K was cached.
+L was cached.
+M was cached.
+N was cached.
+O was cached.
+P was cached.
+Q was cached.
+R was cached.
+S was cached.
+T was cached.
+U was cached.
+V was cached.
+W was cached.
+X was cached.
+Y was cached.
+Z was cached.
+
+Q is still in cache. The 'Q' character is the 17 letter in the English alphabet.
+R is still in cache. The 'R' character is the 18 letter in the English alphabet.
+S is still in cache. The 'S' character is the 19 letter in the English alphabet.
+T is still in cache. The 'T' character is the 20 letter in the English alphabet.
+U is still in cache. The 'U' character is the 21 letter in the English alphabet.
+D was evicted for Expired.
+C was evicted for Expired.
+G was evicted for Expired.
+E was evicted for Expired.
+F was evicted for Expired.
+B was evicted for Expired.
+M was evicted for Expired.
+V is still in cache. The 'V' character is the 22 letter in the English alphabet.
+H was evicted for Expired.
+I was evicted for Expired.
+J was evicted for Expired.
+K was evicted for Expired.
+L was evicted for Expired.
+A was evicted for Expired.
+N was evicted for Expired.
+W is still in cache. The 'W' character is the 23 letter in the English alphabet.
+O was evicted for Expired.
+P was evicted for Expired.
+X is still in cache. The 'X' character is the 24 letter in the English alphabet.
+Y is still in cache. The 'Y' character is the 25 letter in the English alphabet.
+Z is still in cache. The 'Z' character is the 26 letter in the English alphabet.
+```
 
 ## Distributed caching
 

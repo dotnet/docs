@@ -96,7 +96,7 @@ The typical way to get detailed trace information about application startup is t
 
 ## DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_DISABLE
 
-Disables background download of advertising manifests for workloads. Default is `0` - not disabled. If set to `1`, downloading is disabled.
+Disables background download of advertising manifests for workloads. Default is `0` - not disabled. If set to `1`, downloading is disabled. For more information, see [Advertising manifests](dotnet-workload-install.md#advertising-manifests).
 
 ## DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_INTERVAL_HOURS
 

@@ -28,7 +28,7 @@ All of the `Microsoft.Extensions.*` packages come dependency injection (DI) read
 In this section, you'll learn about the [`Microsoft.Extensions.Caching.Memory`](/dotnet/api/microsoft.extensions.caching.memory) package. The current implementation of the <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> is a wrapper around the <xref:System.Collections.Concurrent.ConcurrentDictionary%602>, exposing a feature-rich API. Entries within the cache are represented by the <xref:Microsoft.Extensions.Caching.Memory.ICacheEntry>, and can be any `object`. The in-memory cache solution is great for apps that run in a single server, where all the cached data rents memory in the app's process.
 
 > [!TIP]
-> For multi-server caching scenarios, consider the [Distributed caching](#distributed-caching) approach as an alternative simple in-memory caching.
+> For multi-server caching scenarios, consider the [Distributed caching](#distributed-caching) approach as an alternative to in-memory caching.
 
 ### In-memory caching API
 
@@ -38,12 +38,12 @@ The consumer of the cache has control over both sliding and absolute expirations
 - <xref:Microsoft.Extensions.Caching.Memory.ICacheEntry.AbsoluteExpirationRelativeToNow?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Caching.Memory.ICacheEntry.SlidingExpiration?displayProperty=nameWithType>
 
-Setting an expiration will cause entries in the cache to be *evicted* if they're not accessed within the expiration time allotment. Consumers have additional options for controlling cache entries, through the <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions>. Each <xref:Microsoft.Extensions.Caching.Memory.ICacheEntry> is paired with <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions> which exposes expiration eviction functionality with <xref:Microsoft.Extensions.Primitives.IChangeToken>, priority settings with <xref:Microsoft.Extensions.Caching.Memory.CacheItemPriority>, and controlling the <xref:Microsoft.Extensions.Caching.Memory.ICacheEntry.Size?displayProperty=nameWithType>.
+Setting an expiration will cause entries in the cache to be *evicted* if they're not accessed within the expiration time allotment. Consumers have additional options for controlling cache entries, through the <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions>. Each <xref:Microsoft.Extensions.Caching.Memory.ICacheEntry> is paired with <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions> which exposes expiration eviction functionality with <xref:Microsoft.Extensions.Primitives.IChangeToken>, priority settings with <xref:Microsoft.Extensions.Caching.Memory.CacheItemPriority>, and controlling the <xref:Microsoft.Extensions.Caching.Memory.ICacheEntry.Size?displayProperty=nameWithType>. Consider the following extension methods:
 
-- <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.AddExpirationToken%2A>
-- <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.RegisterPostEvictionCallback%2A>
-- <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.SetSize%2A>
-- <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.SetPriority%2A>
+- <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.AddExpirationToken%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.RegisterPostEvictionCallback%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.SetSize%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.SetPriority%2A?displayProperty=nameWithType>
 
 ### In-memory cache example
 
@@ -55,7 +55,7 @@ Depending on your .NET workload, you may access the `IMemoryCache` differently; 
 
 :::code source="snippets/caching/memory-apis/Program.cs" range="11-12":::
 
-With in-memory caching services registered, and resolved through DI - you're ready to start caching. This sample iterates through the letters in the English alphabet 'A' through 'Z'. There is a `record` that holds the reference to the letter, and generates a message.
+With in-memory caching services registered, and resolved through DI &mdash; you're ready to start caching. This sample iterates through the letters in the English alphabet 'A' through 'Z'. There is a `record` that holds the reference to the letter, and generates a message.
 
 :::code source="snippets/caching/memory-apis/Program.cs" range="70-74":::
 
@@ -103,7 +103,7 @@ The entire sample app source code is a top-level program and requires two NuGet 
 
 :::code source="snippets/caching/memory-apis/Program.cs":::
 
-Feel free to adjust the `MillisecondsDelayAfterAdd` and `MillisecondsAbsoluteExpiration` values to observe the changes in behavior to the expiration and eviction of cached entries. The following is sample output from running this code, due to the nature of .NET events - there is no guarantee that your output will be identical.
+Feel free to adjust the `MillisecondsDelayAfterAdd` and `MillisecondsAbsoluteExpiration` values to observe the changes in behavior to the expiration and eviction of cached entries. The following is sample output from running this code, due to the non-deterministic nature of .NET events &mdash; there is no guarantee that your output will be identical.
 
 ```console
 A was cached.
@@ -160,6 +160,8 @@ X is still in cache. The 'X' character is the 24 letter in the English alphabet.
 Y is still in cache. The 'Y' character is the 25 letter in the English alphabet.
 Z is still in cache. The 'Z' character is the 26 letter in the English alphabet.
 ```
+
+Since the absolute expiration is set, all the cached items will eventually be evicted.
 
 ## Distributed caching
 

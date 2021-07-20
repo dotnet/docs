@@ -96,9 +96,14 @@ If the `cache` contains the `letter` key, and the `value` is an instance of an `
 
 #### Put it all together
 
-The entire sample app source code is a top-level program:
+The entire sample app source code is a top-level program and requires two NuGet packages:
+
+- [`Microsoft.Extensions.Caching.Memory`](/dotnet/api/microsoft.extensions.caching.memory)
+- [`Microsoft.Extensions.Hosting`](/dotnet/api/microsoft.extensions.hosting)
 
 :::code source="snippets/caching/memory/Program.cs":::
+
+Feel free to adjust the `MillisecondsDelayAfterAdd` and `MillisecondsAbsoluteExpiration` values to observe the changes in behavior to the expiration and eviction of cached entries.
 
 ## Distributed caching
 

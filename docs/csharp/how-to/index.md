@@ -29,7 +29,7 @@ You create classes, records, and structs to implement your program. These techni
 - [Define constants](../programming-guide/classes-and-structs/how-to-define-constants.md).
 - [Override the `ToString` method to provide string output](../programming-guide/classes-and-structs/how-to-override-the-tostring-method.md).
 - [Define abstract properties](../programming-guide/classes-and-structs/how-to-define-abstract-properties.md).
-- [Use the xml documentation features to document your code](../programming-guide/xmldoc/how-to-use-the-xml-documentation-features.md).
+- [Use the xml documentation features to document your code](../language-reference/xmldoc/index.md).
 - [Explicitly implement interface members](../programming-guide/interfaces/how-to-explicitly-implement-interface-members.md) to keep your public interface concise.
 - [Explicitly implement members of two interfaces](../programming-guide/interfaces/how-to-explicitly-implement-members-of-two-interfaces.md).
 

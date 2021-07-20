@@ -3,7 +3,7 @@
     // To detect redundant calls
     bool _disposed = false;
 
-    ~DerivedClassWithFinalizer() => this.Dispose(true);
+    ~DerivedClassWithFinalizer() => this.Dispose(false);
 
     // Protected implementation of Dispose pattern.
     protected override void Dispose(bool disposing)

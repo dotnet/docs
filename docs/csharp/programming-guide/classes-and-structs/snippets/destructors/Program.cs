@@ -28,7 +28,7 @@ Test with code like the following:
     Third t = new Third();
     t = null;
 
-When oejcts are finalized, the output would be:
+When objects are finalized, the output would be:
 Third's finalizer is called.
 Second's finalizer is called.
 First's finalizer is called.

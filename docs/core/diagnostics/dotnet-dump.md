@@ -144,7 +144,7 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 
 | Command                             | Function                                                                                      |
 | ----------------------------------- | --------------------------------------------------------------------------------------------- |
-| `soshelp`                           | Displays all available commands                                                               |
+| `soshelp|help`                      | Displays all available commands                                                               |
 | `soshelp|help <command>`            | Displays the specified command.                                                               |
 | `exit|quit`                         | Exits interactive mode.                                                                       |
 | `clrstack <arguments>`              | Provides a stack trace of managed code only.                                                  |

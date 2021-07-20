@@ -7,7 +7,7 @@ ms.date: 07/20/2021
 
 .NET 6 introduces implicit namespace support for C# projects. To reduce the amount of `using` directives boilerplate in .NET C# project templates, namespaces are implicitly included by utilizing the `global using` feature introduced in C# 10.
 
-The implicit namespace feature is enabled by default for C# projects that target the `net6.0` TFM or higher and use Microsoft.NET.Sdk, Microsoft.NET.Sdk.Web, or Microsoft.NET.Sdk.Worker SDK. The feature generates a source file that's passed to the compiler and contains `global using` directives for the default namespaces.
+The implicit namespace feature is enabled by default for C# projects that target the `net6.0` TFM or higher and use the Microsoft.NET.Sdk, Microsoft.NET.Sdk.Web, or Microsoft.NET.Sdk.Worker SDK. The feature generates a source file that's passed to the compiler and contains `global using` directives for the default namespaces.
 
 If your project uses a C# version less than 10, you must explicitly [disable this feature](#recommended-action).
 
@@ -37,7 +37,7 @@ The default namespaces are included by adding `global using` directives to a gen
 
 ## Change category
 
-This change may affect *source compatibility* if there are type conflicts to resolve.
+This change may affect [*source compatibility*](../../categories.md#source-compatibility) if there are type conflicts to resolve.
 
 ## Reason for change
 

@@ -77,7 +77,7 @@ The first thing you need to do is annotate your images, or draw bounding boxes a
 1. In **Project Settings**, change the **Source Connection** to *StopSignImages* (the connection you just created).
 1. Change the **Target Connection** to *StopSignImages* as well. Your **Project Settings** should now look similar to this screenshot:
 
-    ![VoTT Project Settings Dialog](./media/vott-new-project.png)
+    ![VoTT Project Settings Dialog](./media/object-detection-model-builder/vott-new-project.png)
 
 1. Select **Save Project**.
 

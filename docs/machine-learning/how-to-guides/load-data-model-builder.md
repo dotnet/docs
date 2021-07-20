@@ -16,7 +16,7 @@ Learn how to load your training datasets from a file or a SQL Server database fo
 
 Model Builder limits the amount and type of data you can use for training models:
 
-- SQL Server data: 100,000 rows
+- SQL Server data: No size limit
 - CSV and TSV files: No size limit
 - Images: PNG and JPG only.
 
@@ -48,13 +48,27 @@ You're done setting up your data source file for Model Builder. Click the **Next
 
 Model Builder supports loading data from local and remote SQL Server databases.
 
-To load data from a SQL Server database into Module Builder:
+To load data from a SQL Server database file into Module Builder:
 
 1. In the data step of Model Builder, select **SQL Server** as the data source type.
 1. Select the **Choose data source** button.
     1. In the **Choose Data Source** dialog, select **Microsoft SQL Server Database File**.
     1. Uncheck the **Always use this selection** checkbox and select **Continue**
     1. In the **Connection Properties** dialog, select **Browse** and select the downloaded .MDF file.
+    1. Select **OK**
+1. Choose the dataset name from the **Table Name** dropdown.
+1. From the **Column to Predict (Label)** dropdown, choose the data category on which you want to make a prediction.
+1. Update the data in the **Advanced data options** link to set column settings or to update the data formatting.
+
+To load data from a SQL Server database connection into Model Builder:
+
+1. In the data step of Model Builder, select **SQL Server** as the data source type.
+1. Select the **Choose data source** button.
+    1. In the **Choose Data Source** dialog, select **Microsoft SQL Server**.
+1. In the **Connection Properties** dialog, input the properties of your Microsoft SQL database.
+    1. Provide the server name that has the table that you want to connect to.
+    1. Set up the authentication to the server. If **SQL Server Authentication** is selected, input the server's username and password.
+    1. Select what database to connect to in the **Select or enter a database name** dropdown. This should auto-populate if the server name and log in information are correct.
     1. Select **OK**
 1. Choose the dataset name from the **Table Name** dropdown.
 1. From the **Column to Predict (Label)** dropdown, choose the data category on which you want to make a prediction.

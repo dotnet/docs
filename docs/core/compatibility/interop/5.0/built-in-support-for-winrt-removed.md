@@ -29,10 +29,12 @@ This breaking change was made for the following reasons:
 - Remove references to the [Microsoft.Windows.SDK.Contracts package](https://www.nuget.org/packages/Microsoft.Windows.SDK.Contracts).  Instead, specify the version of the Windows APIs that you want to access via the `TargetFramework` property of the project.  For example:
 
   ```xml
-  <TargetFramework>net5.0-windows10.0.19041</TargetFramework>
+  <TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
   ```
 
 - Use the [C#/WinRT](/windows/uwp/csharp-winrt/) tool chain to generate or customize WinRT APIs and types for .NET 5 and later versions.
+
+For more information, see [Call Windows Runtime APIs in desktop apps](/windows/apps/desktop/modernize/desktop-to-uwp-enhance).
 
 ## Affected APIs
 

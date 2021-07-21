@@ -77,4 +77,4 @@ The Identity Model infrastructure in Windows Communication Foundation (WCF) supp
 - <xref:System.ServiceModel.ServiceAuthorizationManager>
 - [How to: Compare Claims](how-to-compare-claims.md)
 - [How to: Create a Custom Authorization Manager for a Service](how-to-create-a-custom-authorization-manager-for-a-service.md)
-- [Authorization Policy](/previous-versions/dotnet/framework/wcf/samples/authorization-policy)
+- [Authorization Policy](../samples/authorization-policy.md)

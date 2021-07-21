@@ -18,7 +18,7 @@ This section describes how to use queued communication in Windows Communication 
   
  Caveats about queued binding in WCF include:  
   
-- All service operations must be one-way because the default queued binding in WCF does not support duplex communication using queues. A two-way communication sample ([Two-Way Communication](/previous-versions/dotnet/framework/wcf/samples/two-way-communication)) illustrates how to use two one-way contracts to implement duplex communication using queues.  
+- All service operations must be one-way because the default queued binding in WCF does not support duplex communication using queues. A two-way communication sample ([Two-Way Communication](../samples/two-way-communication.md)) illustrates how to use two one-way contracts to implement duplex communication using queues.  
   
 - To generate a WCF client using metadata exchange requires an additional HTTP endpoint on the service so that it can be queried directly to generate the WCF client and obtain binding information to appropriately configure queued communication.  
   
@@ -36,7 +36,7 @@ This section describes how to use queued communication in Windows Communication 
   
  MSMQ queues can also be secured using a Windows identity registered with the Active Directory directory service. When installing MSMQ, you can install Active Directory integration, which requires the computer to be part of a Windows domain network.  
   
- For more information about MSMQ, see [Installing Message Queuing (MSMQ)](/previous-versions/dotnet/framework/wcf/samples/installing-message-queuing-msmq).  
+ For more information about MSMQ, see [Installing Message Queuing (MSMQ)](../samples/installing-message-queuing-msmq.md).  
   
 ### NetMsmqBinding  
 
@@ -117,19 +117,19 @@ This section describes how to use queued communication in Windows Communication 
   
  For a completed code sample illustrating the use of MSMQ in WCF see the following topics:  
   
-- [Transacted MSMQ Binding](/previous-versions/dotnet/framework/wcf/samples/transacted-msmq-binding)  
+- [Transacted MSMQ Binding](../samples/transacted-msmq-binding.md)  
   
-- [Volatile Queued Communication](/previous-versions/dotnet/framework/wcf/samples/volatile-queued-communication)  
+- [Volatile Queued Communication](../samples/volatile-queued-communication.md)  
   
-- [Dead Letter Queues](/previous-versions/dotnet/framework/wcf/samples/dead-letter-queues)  
+- [Dead Letter Queues](../samples/dead-letter-queues.md)  
   
-- [Sessions and Queues](/previous-versions/dotnet/framework/wcf/samples/sessions-and-queues)  
+- [Sessions and Queues](../samples/sessions-and-queues.md)  
   
-- [Two-Way Communication](/previous-versions/dotnet/framework/wcf/samples/two-way-communication)
+- [Two-Way Communication](../samples/two-way-communication.md)
   
-- [SRMP](/previous-versions/dotnet/framework/wcf/samples/srmp)  
+- [SRMP](../samples/srmp.md)  
   
-- [Message Security over Message Queuing](/previous-versions/dotnet/framework/wcf/samples/message-security-over-message-queuing)  
+- [Message Security over Message Queuing](../samples/message-security-over-message-queuing.md)  
   
 ## See also
 

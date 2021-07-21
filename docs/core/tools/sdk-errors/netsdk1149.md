@@ -1,5 +1,5 @@
 ---
-title: "NETSDK1149: Built-in WinRT support not provided in .NET 5+"
+title: "NETSDK1149: Built-in WinRT support not provided in .NET 5 and later"
 description: How to reference a component with built-in WinRT support from an app that targets .NET 5 or later.
 author: tdykstra
 ms.author: tdykstra
@@ -8,7 +8,7 @@ ms.date: 06/28/2021
 f1_keywords:
 - NETSDK1149
 ---
-# NETSDK1149: Built-in WinRT support not provided in .NET 5+"
+# NETSDK1149: Built-in WinRT support not provided in .NET 5 and later
 
 NETSDK1149 indicates that you're trying to reference a component that requires WinRT in an application that targets .NET 5 or a later version. These .NET versions don't have built-in support for WinRT. The full error message is similar to the following example:
 

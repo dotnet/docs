@@ -358,7 +358,7 @@ public void Test(string id)
     {
         _logger.LogWarning(
             AppLogEvents.Error, ex,
-            "Failed to process iteration: {Id}", id)
+            "Failed to process iteration: {Id}", id);
     }
 }
 ```

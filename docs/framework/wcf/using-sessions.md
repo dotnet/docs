@@ -130,7 +130,7 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
   
 - A terminating operation on either type of WCF client object (by default, no operations are terminating; the contract must explicitly specify a terminating operation). When the first operation is called, the WCF client object automatically opens the channel and initiates a session.  
   
- For examples, see [How to: Create a Service That Requires Sessions](./feature-details/how-to-create-a-service-that-requires-sessions.md) as well as the [Default Service Behavior](/previous-versions/dotnet/framework/wcf/samples/default-service-behavior) and [Instancing](/previous-versions/dotnet/framework/wcf/samples/instancing) samples.  
+ For examples, see [How to: Create a Service That Requires Sessions](./feature-details/how-to-create-a-service-that-requires-sessions.md) as well as the [Default Service Behavior](./samples/default-service-behavior.md) and [Instancing](./samples/instancing.md) samples.  
   
  For more information about clients and sessions, see [Accessing Services Using a WCF Client](./feature-details/accessing-services-using-a-client.md).  
   

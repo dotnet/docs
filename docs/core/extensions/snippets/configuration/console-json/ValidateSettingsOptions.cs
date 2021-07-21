@@ -9,7 +9,7 @@ namespace ConsoleJson.Example
         public SettingsOptions _settings { get; private set; }
 
         public ValidateSettingsOptions(IConfiguration config) =>
-            _settings = config.GetSection(SettingsOptions.Settings)
+            _settings = config.GetSection(SettingsOptions.ConfigurationSectionName)
                               .Get<SettingsOptions>();
 
         public ValidateOptionsResult Validate(string name, SettingsOptions options)

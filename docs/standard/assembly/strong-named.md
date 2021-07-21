@@ -34,7 +34,7 @@ For .NET Framework, strong-named assemblies are useful in the following scenario
 
 - You want to centralize servicing for your app by applying publisher policy, which means the assembly must be installed in the global assembly cache.
 
-For .NET Core, strong-named assemblies do not provide material benefits.
+For .NET Core and .NET 5+, strong-named assemblies do not provide material benefits. The runtime never validates the strong-name signature, nor does it use the strong-name for assembly binding.
 
 If you are an open-source developer and you want the identity benefits of a strong-named assembly for better compatibility with .NET Framework, consider checking in the private key associated with an assembly to your source control system.
 

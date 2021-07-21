@@ -162,7 +162,7 @@ In Windows Communication Foundation (WCF), creating a client for a *federated se
   
 ## See also
 
-- [Federation Sample](/previous-versions/dotnet/framework/wcf/samples/federation-sample)
+- [Federation Sample](../samples/federation-sample.md)
 - [How to: Disable Secure Sessions on a WSFederationHttpBinding](how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)
 - [How to: Create a WSFederationHttpBinding](how-to-create-a-wsfederationhttpbinding.md)
 - [How to: Configure Credentials on a Federation Service](how-to-configure-credentials-on-a-federation-service.md)

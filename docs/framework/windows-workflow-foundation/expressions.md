@@ -1,12 +1,12 @@
 ---
-description: "Learn more about expressions in Windows Workflow Foundation."
+description: "Learn more about: Expressions"
 title: "Expressions - WF"
 ms.date: "03/30/2017"
 ms.assetid: c42341a9-43a1-462c-bffb-c5de004aa428
 ---
-# Expressions (WF)
+# Expressions
 
-A Windows Workflow Foundation (WF) expression is any activity that returns a result. All expression activities derive indirectly from <xref:System.Activities.Activity%601>, which contains an <xref:System.Activities.OutArgument> property named <xref:System.Activities.Activity%601.Result%2A> as the activity’s return value. WF ships with a wide range of expression activities from simple ones like <xref:System.Activities.Expressions.VariableValue%601> and <xref:System.Activities.Expressions.VariableReference%601>, which provide access to single workflow variable through operator activities, to complex activities such as <xref:Microsoft.VisualBasic.Activities.VisualBasicReference%601> and <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> that offer access to the full breadth of Visual Basic language to produce the result. Additional expression activities can be created by deriving from <xref:System.Activities.CodeActivity%601> or <xref:System.Activities.NativeActivity%601>.
+A Windows Workflow Foundation (WF) expression is any activity that returns a result. All expression activities derive indirectly from <xref:System.Activities.Activity%601>, which contains an <xref:System.Activities.OutArgument> property named <xref:System.Activities.Activity%601.Result%2A> as the activity’s return value. [!INCLUDE[wf1](../../../includes/wf1-md.md)] ships with a wide range of expression activities from simple ones like <xref:System.Activities.Expressions.VariableValue%601> and <xref:System.Activities.Expressions.VariableReference%601>, which provide access to single workflow variable through operator activities, to complex activities such as <xref:Microsoft.VisualBasic.Activities.VisualBasicReference%601> and <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> that offer access to the full breadth of Visual Basic language to produce the result. Additional expression activities can be created by deriving from <xref:System.Activities.CodeActivity%601> or <xref:System.Activities.NativeActivity%601>.
 
 ## Using Expressions
 
@@ -66,7 +66,7 @@ Sequence w = new Sequence
 ```
 
  The same workflow can be expressed more compactly by using C# lambda expressions, as shown in the following example:
-
+  
 ```csharp
 Variable<int> a = new Variable<int>("a", 1);
 Variable<int> b = new Variable<int>("b", 2);
@@ -88,7 +88,7 @@ Sequence w = new Sequence
 
 ## Extending Available Expressions with Custom Expression Activities
 
- Expressions in .NET Framework 4.6.1 are extensible allowing for additional expression activities to be created. The following example shows an activity that returns a sum of three integer values.
+ Expressions in [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] are extensible allowing for additional expression activities to be created. The following example shows an activity that returns a sum of three integer values.
 
 ```csharp
 using System;

@@ -16,7 +16,7 @@ You must have the following software installed to use this walkthrough:
 
 2. Visual Studio 2012
 
-3. Microsoft  .NET Framework 4.6.1
+3. Microsoft  [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]
 
 4. You are familiar with WCF and Visual Studio 2012 and know how to create projects/solutions.
 

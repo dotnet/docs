@@ -19,7 +19,7 @@ Depending on the workflow hosting option, a tracking participant can be added ei
 
 ## Configuring Workflow Application Tracking
 
-A workflow can run using the <xref:System.Activities.WorkflowApplication> class. This topic demonstrates how tracking is configured for a .NET Framework 4.6.1 workflow application by adding a tracking participant to the <xref:System.Activities.WorkflowApplication> workflow host. In this case, the workflow runs as a workflow application. You configure a workflow application through code (rather than by using a configuration file), which is a self-hosted .exe file using the <xref:System.Activities.WorkflowApplication> class. The tracking participant is added as an extension to the <xref:System.Activities.WorkflowApplication> instance. This is done by adding the <xref:System.Activities.Tracking.TrackingParticipant> to the extensions collection for the WorkflowApplication instance.
+A workflow can run using the <xref:System.Activities.WorkflowApplication> class. This topic demonstrates how tracking is configured for a [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] workflow application by adding a tracking participant to the <xref:System.Activities.WorkflowApplication> workflow host. In this case, the workflow runs as a workflow application. You configure a workflow application through code (rather than by using a configuration file), which is a self-hosted .exe file using the <xref:System.Activities.WorkflowApplication> class. The tracking participant is added as an extension to the <xref:System.Activities.WorkflowApplication> instance. This is done by adding the <xref:System.Activities.Tracking.TrackingParticipant> to the extensions collection for the WorkflowApplication instance.
 
 For a workflow application, you can add the <xref:System.Activities.Tracking.EtwTrackingParticipant> behavior extension as shown in the following code.
 
@@ -46,7 +46,7 @@ instance.Extensions.Add(trackingParticipant);
 
 ### Configuring Workflow Service Tracking
 
-A workflow can be exposed as a WCF service when hosted in the <xref:System.ServiceModel.Activities.WorkflowServiceHost> service host. <xref:System.ServiceModel.Activities.WorkflowServiceHost> is a specialized .NET ServiceHost implementation for a workflow-based service. This section explains how to configure tracking for a .NET Framework 4.6.1 workflow service running in <xref:System.ServiceModel.Activities.WorkflowServiceHost>. It is configured through a Web.config file (for a Web-hosted service) or an App.config file (for a service hosted in a stand-alone application, such as a console application) by specifying a service behavior or through code by adding a tracking-specific behavior to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> collection for the service host.
+A workflow can be exposed as a WCF service when hosted in the <xref:System.ServiceModel.Activities.WorkflowServiceHost> service host. <xref:System.ServiceModel.Activities.WorkflowServiceHost> is a specialized .NET ServiceHost implementation for a workflow-based service. This section explains how to configure tracking for a [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] workflow service running in <xref:System.ServiceModel.Activities.WorkflowServiceHost>. It is configured through a Web.config file (for a Web-hosted service) or an App.config file (for a service hosted in a stand-alone application, such as a console application) by specifying a service behavior or through code by adding a tracking-specific behavior to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> collection for the service host.
 
 For a workflow service hosted in <xref:System.ServiceModel.WorkflowServiceHost>, you can add the <xref:System.Activities.Tracking.EtwTrackingParticipant> using the <`behavior`> element in a configuration file, as shown in the following example.
 
@@ -192,7 +192,7 @@ If events need to be written to a specific application log, follow these steps t
     </system.serviceModel>
     ```
 
-2. Copy the manifest file from %windir%\Microsoft.NET\Framework\\\<latest version of .NET Framework 4.6.1>\Microsoft.Windows.ApplicationServer.Applications.man to a temporary location, and rename it to Microsoft.Windows.ApplicationServer.Applications_Provider1.man
+2. Copy the manifest file from %windir%\Microsoft.NET\Framework\\\<latest version of [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]>\Microsoft.Windows.ApplicationServer.Applications.man to a temporary location, and rename it to Microsoft.Windows.ApplicationServer.Applications_Provider1.man
 
 3. Change the GUID in the manifest file to the new GUID.
 

@@ -22,7 +22,7 @@ The messaging activities allow you to implement any of these basic MEPs as well 
 
 ## Messaging activities
 
-The .NET Framework 4.6.1 defines the following messaging activities:
+The [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] defines the following messaging activities:
 
 - <xref:System.ServiceModel.Activities.Send>- Use the <xref:System.ServiceModel.Activities.Send> activity to send a message.
 

@@ -92,7 +92,7 @@ When selecting the Custom filter type, you must provide a customType value that 
 MyCustomMsgFilter custom1=new MyCustomMsgFilter("Custom Data");
 ```
 
-If you need to perform custom matching logic against a message that is not covered by the filters provided with .NET Framework 4.6.1, you must create a custom filter that is an implementation of the **MessageFilter** class. For example, you might create a custom filter that compares a field in the incoming message against a list of known values given to the filter as configuration, or that hashes a particular message element and then examines that value to determine whether the filter should return `true` or `false`.
+If you need to perform custom matching logic against a message that is not covered by the filters provided with [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)], you must create a custom filter that is an implementation of the **MessageFilter** class. For example, you might create a custom filter that compares a field in the incoming message against a list of known values given to the filter as configuration, or that hashes a particular message element and then examines that value to determine whether the filter should return `true` or `false`.
 
 ### EndpointName
 

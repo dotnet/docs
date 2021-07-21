@@ -6,12 +6,12 @@ ms.topic: "reference"
 ---
 # Error Handling Activities in WF
 
-.NET Framework 4.6.1 provides several system-provided activities for implementing error handling and recovery. For more information, see [Exceptions](exceptions.md).
-
-## Error handling activities
-
-|||
-|-|-|
-|<xref:System.Activities.Statements.Rethrow>|Rethrows the last exception thrown from within a `TryCatch` activity.|
-|<xref:System.Activities.Statements.Throw>|Throws an exception.|
+[!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] provides several system-provided activities for implementing error handling and recovery. For more information, see [Exceptions](exceptions.md).  
+  
+## Error handling activities  
+  
+|||  
+|-|-|  
+|<xref:System.Activities.Statements.Rethrow>|Rethrows the last exception thrown from within a `TryCatch` activity.|  
+|<xref:System.Activities.Statements.Throw>|Throws an exception.|  
 |<xref:System.Activities.Statements.TryCatch>|Implements exception handling.|

@@ -60,6 +60,8 @@ Classification is used to categorize data into categories.
 
 Value prediction, which falls under the regression task, is used to predict numbers.
 
+
+
 ![Diagram showing regression examples such as price prediction, sales forecasting, and predictive maintenance](media/regression-examples.png)
 
 #### Image classification

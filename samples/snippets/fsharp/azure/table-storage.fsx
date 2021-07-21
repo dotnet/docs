@@ -116,23 +116,23 @@ let singleResult = table.GetEntityAsync<Customer>("Smith", "Ben").Result.Value
 printfn "customer: %A %A" singleResult.RowKey singleResult.PartitionKey
 
 //
-// Replace an entity.
+// Update an entity.
 //
 
 try
     singleResult.PhoneNumber <- "425-555-0103"
-    ignore(table.UpdateEntity(singleResult, Azure.ETag.All, TableUpdateMode.Replace))
+    ignore(table.UpdateEntity(singleResult, new ETag("etag"), TableUpdateMode.Replace))
     Console.WriteLine("Update succeeeded")
 with e ->
     Console.WriteLine("Update failed")
 
 //
-// Merge an entity.
+// Upsert an entity.
 //
 
 try
     singleResult.PhoneNumber <- "425-555-0104"
-    ignore(table.UpdateEntity(singleResult, Azure.ETag.All, TableUpdateMode.Merge))
+    ignore(table.UpsertEntity(singleResult, TableUpdateMode.Replace))
     Console.WriteLine("Update succeeeded")
 with e ->
     Console.WriteLine("Update failed")

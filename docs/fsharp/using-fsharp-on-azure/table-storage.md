@@ -79,7 +79,7 @@ This example shows how to create a table if it does not already exist:
 
 ### Add an entity to a table
 
-An entity has to have a type that inherits from `TableEntity`. You can extend `TableEntity` in any way you like, the sample using interface `ITableEntity` here, but your type *must* have a parameter-less constructor. Only properties that have both `get` and `set` are stored in your Azure Table.
+An entity has to have a type that implements `ITableEntity`. You can extend `ITableEntity` in any way you like, but your type *must* have a parameter-less constructor. Only properties that have both `get` and `set` are stored in your Azure Table.
 
 An entity's partition and row key uniquely identify the entity in the table. Entities with the same partition key can be queried faster than those with different partition keys, but using diverse partition keys allows for greater scalability of parallel operations.
 
@@ -87,7 +87,7 @@ Here's an example of a `Customer` that uses the `lastName` as the partition key 
 
 [!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L39-L65)]
 
-Now add `Customer` to the table. To do so, we can use AddEntity() method.
+Now add `Customer` to the table. To do so, we can use the AddEntity() method.
 
 [!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L67-L68)]
 
@@ -126,7 +126,7 @@ You now print the results:
 
 ### Retrieve a single entity
 
-You can write a query to retrieve a single, specific entity. Here, you use a `GetEntityAsync` to specify the customer "Ben Smith". Instead of a collection, you get back a `Customer`. Specifying both the partition key and the row key in a query is the fastest way to retrieve a single entity from the Table service.
+To retrieve a single, specific entity, use `GetEntityAsync` to specify the customer "Ben Smith". Instead of a collection, you get back a `Customer`. Specifying both the partition key and the row key in a query is the fastest way to retrieve a single entity from the Table service.
 
 [!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L113)]
 
@@ -134,15 +134,15 @@ You now print the results:
 
 [!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L116)]
 
-### Replace an entity
+### Update an entity
 
 To update an entity, retrieve it from the Table service, modify the entity object, and then save the changes back to the Table service using a `TableUpdateMode.Replace` operation. This causes the entity to be fully replaced on the server, unless the entity on the server has changed since it was retrieved, in which case the operation fails. This failure is to prevent your application from inadvertently overwriting changes from other sources.
 
 [!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L122-L127)]
 
-### Insert-or-replace an entity
+### Upsert an entity
 
-Sometimes, you don't know whether an entity exists in the table. And if it does, the current values stored in it are no longer needed. You can use `TableUpdateMode.Merge` to create the entity, or replace it if it exists, regardless of its state.
+Sometimes, you don't know whether an entity exists in the table. And if it does, the current values stored in it are no longer needed. You can use `UpsertEntity` method to create the entity, or replace it if it exists, regardless of its state.
 
 [!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L133-L138)]
 

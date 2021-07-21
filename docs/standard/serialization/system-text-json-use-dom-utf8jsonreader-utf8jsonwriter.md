@@ -1,7 +1,7 @@
 ---
 title: How to use a JSON DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
 description: "Learn how to use a JSON DOM, Utf8JsonReader, and Utf8JsonWriter."
-ms.date: 07/01/2021
+ms.date: 07/21/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 dev_langs:
@@ -43,7 +43,7 @@ Working with a DOM is an alternative to deserialization:
 
 :::zone pivot="dotnet-6-0"
 
-* `JsonNode` and the classes that derive from it in the `System.Text.Json.Nodes` namespace provide the ability to create a mutable DOM. The JSON elements that compose the payload can be accessed via the `JsonNode`, `JsonObject`, `JsonArray`, `JsonValue`, and <xref:System.Text.Json.JsonElement> types. For more information, see [Use JsonNode](#use-jsonnode) later in this article.
+* <xref:System.Text.Json.Nodes.JsonNode> and the classes that derive from it in the <xref:System.Text.Json.Nodes> namespace provide the ability to create a mutable DOM. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.Nodes.JsonNode>, <xref:System.Text.Json.Nodes.JsonObject>, <xref:System.Text.Json.Nodes.JsonArray>, <xref:System.Text.Json.Nodes.JsonValue>, and <xref:System.Text.Json.JsonElement> types. For more information, see [Use `JsonNode`](#use-jsonnode) later in this article.
 
 Consider the following factors when choosing between `JsonDocument` and `JsonNode`:
 
@@ -54,7 +54,7 @@ Consider the following factors when choosing between `JsonDocument` and `JsonNod
 
 :::zone pivot="dotnet-5-0,dotnet-core-3-1"
 
-* Starting in .NET 6, `JsonNode` and the classes that derive from it in the `System.Text.Json.Nodes` namespace provide the ability to create a mutable DOM. For more information, see the [.NET 6 version of this article](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0).
+* Starting in .NET 6, <xref:System.Text.Json.Nodes.JsonNode> and the classes that derive from it in the <xref:System.Text.Json.Nodes> namespace provide the ability to create a mutable DOM. For more information, see the [.NET 6 version of this article](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0).
 
 :::zone-end
 
@@ -62,7 +62,7 @@ Consider the following factors when choosing between `JsonDocument` and `JsonNod
 
 ## Use `JsonNode`
 
-The following example shows how to use `JsonNode` and the other types in the `System.Text.Json.Nodes` namespace to:
+The following example shows how to use <xref:System.Text.Json.Nodes.JsonNode> and the other types in the <xref:System.Text.Json.Nodes> namespace to:
 
 * Create a DOM from a JSON string
 * Write JSON from a DOM.

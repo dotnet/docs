@@ -72,6 +72,8 @@ rm packages-microsoft-prod.deb
 
 ## 20.04 ❌
 
+[!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
+
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
 ```bash

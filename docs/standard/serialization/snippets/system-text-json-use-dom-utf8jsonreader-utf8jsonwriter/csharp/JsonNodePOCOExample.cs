@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Text;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 
@@ -45,15 +47,21 @@ namespace JsonNodePOCOExample
             JsonNode forecastNode = JsonNode.Parse(jsonString);
 
             // Get a subsection and deserialize it into a custom type.
-            JsonNode trNode = forecastNode["TemperatureRanges"];
-            TemperatureRanges tr = JsonSerializer.Deserialize<TemperatureRanges>(trNode.ToJsonString());
-            Console.WriteLine($"Cold.Low={tr["Cold"].Low}, Hot.High={tr["Hot"].High}");
+            JsonObject temperatureRangesObject = forecastNode["TemperatureRanges"].AsObject();
+            using var stream = new MemoryStream();
+            using var writer = new Utf8JsonWriter(stream);
+            temperatureRangesObject.WriteTo(writer);
+            writer.Flush();
+            TemperatureRanges temperatureRanges = 
+                JsonSerializer.Deserialize<TemperatureRanges>(stream.ToArray());
+
+            Console.WriteLine($"Cold.Low={temperatureRanges["Cold"].Low}, Hot.High={temperatureRanges["Hot"].High}");
             // output:
             //Cold.Low=-10, Hot.High=60
 
             // Get a subsection and deserialize it into an array.
             JsonArray datesAvailable = forecastNode["DatesAvailable"].AsArray();
-            Console.WriteLine($"datesAvailable[0]={datesAvailable[0]}");
+            Console.WriteLine($"DatesAvailable[0]={datesAvailable[0]}");
             // output:
             //DatesAvailable[0]=8/1/2019 12:00:00 AM
         }

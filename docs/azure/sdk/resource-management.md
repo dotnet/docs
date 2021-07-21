@@ -5,7 +5,7 @@ ms.date: 07/21/2020
 ms.author: nickzhums
 author: nickzhums
 ---
-# Resource Management using Azure .NET SDK 
+#  Resource Management using Azure .NET SDK 
 
 The .NET SDK's management (or "management plane") libraries, the names of which all begin with `Azure.ResourceManager` (for example: `Azure.ResourceManager.Compute`), help you create, provision and otherwise manage Azure resources from .NET code. All Azure services have corresponding management libraries.
 
@@ -13,16 +13,16 @@ With the management libraries, you can write configuration and deployment progra
 
 Those `Azure.ResourceManager.*`package follows the [new Azure SDK guidelines](https://azure.github.io/azure-sdk/general_introduction.html), which provide core capabilities that are shared amongst all Azure SDKs, including:
 
-- The intuitive Azure Identity library that provides authentication modules
-- User-friendly API design that resembles the Azure resource hierachy 
-- An HTTP pipeline with custom policies.
-- Error handling.
-- Distributed tracing
+-  The intuitive Azure Identity library that provides authentication modules
+-  User-friendly API design that resembles the Azure resource hierachy 
+-  An HTTP pipeline with custom policies.
+-  Error handling.
+-  Distributed tracing
 
 > [!NOTE]
 > *Azure.ResourceManager.** packages are currently in Public Preview and may be subject to breaking changes in the future.
 
-## Getting started 
+##  Getting started 
 
 ### Install the package
 
@@ -38,12 +38,16 @@ Install-Package Azure.ResourceManager.Resources -Version 1.0.0-beta.1
 ```
 
 ### Prerequisites
+
 Set up a way to authenticate to Azure with Azure Identity.
 
 Some options are:
+
 - Through the [Azure CLI Login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli).
-- Via [Visual Studio](https://docs.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet#authenticating-via-visual-studio).
-- Setting [Environment Variables](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager.Core/docs/AuthUsingEnvironmentVariables.md).
+
+- Via [Visual Studio](https://docs.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet#authenticating-via-visual-studio)
+
+- Setting [Environment Variables](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager.Core/docs/AuthUsingEnvironmentVariables.md)
 
 More information and different authentication approaches using Azure Identity can be found in [this document](https://docs.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet).
 
@@ -67,6 +71,7 @@ var armClient = new ArmClient(new DefaultAzureCredential());
 Additional documentation for the `Azure.Identity.DefaultAzureCredential` class can be found in [this document](https://docs.microsoft.com/dotnet/api/azure.identity.defaultazurecredential).
 
 ## Key concepts
+
 ### Understanding Azure Resource Hierarchy
 
 To reduce both the number of clients needed to perform common tasks and the amount of redundant parameters that each of those clients take, we have introduced an object hierarchy in the SDK that mimics the object hierarchy in Azure. Each resource client in the SDK has methods to access the resource clients of its children that is already scoped to the proper subscription and resource group.
@@ -74,6 +79,7 @@ To reduce both the number of clients needed to perform common tasks and the amou
 To accomplish this, we're introducing 4 standard types for all resources in Azure:
 
 #### [Resource]Data
+
 This represents the data that makes up a given resource. Typically, this is the response data from a service call such as HTTP GET and provides details about the underlying resource. Previously, this was represented by a **Model** class.
 
 #### [Resource]Operations
@@ -92,6 +98,7 @@ It also has access to all of the operations and like the **[Resource]Operations*
 to a specific resource in Azure.
 
 ### Structured Resource Identifier
+
 Instead of implementing your own parsing logic, you can implicitly cast a resource identifier string into an object which will do the parsing for you.
 
 There are 3 types of ResourceIdentifiers and they correspond to which level the resource lives at:
@@ -102,6 +109,7 @@ There are 3 types of ResourceIdentifiers and they correspond to which level the 
 You can usually tell by the id string itself which type it is, but if you are unsure you can always cast it onto a `ResourceIdentifier` and use the Try methods to retrieve the values.
 
 #### Casting to a specific type
+
 ```C# Snippet:Readme_CastToSpecificType
 string resourceId = "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/workshop2021-rg/providers/Microsoft.Network/virtualNetworks/myVnet/subnets/mySubnet";
 // We know the subnet is a resource group level identifier since it has a resource group name in its string
@@ -113,6 +121,7 @@ Console.WriteLine($"Subnet: {id.Name}");
 ```
 
 #### Casting to the base resource identifier
+
 ```C# Snippet:Readme_CastToBaseResourceIdentifier
 string resourceId = "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/workshop2021-rg/providers/Microsoft.Network/virtualNetworks/myVnet/subnets/mySubnet";
 // Assume we don't know what type of resource id we have we can cast to the base type
@@ -127,6 +136,7 @@ Console.WriteLine($"Subnet: {id.Name}");
 ```
 
 ### Managing Existing Resources By Id
+
 Performing operations on resources that already exist is a common use case when using the management SDK. In this scenario you usually have the identifier of the resource you want to work on as a string. Although the new object hierarchy is great for provisioning and working within the scope of a given parent, it is a tad awkward when it comes to this specific scenario.  
 
 Here is an example how you to access an `AvailabilitySet` object and manage it directly with its id: 
@@ -177,6 +187,7 @@ You can find an example for these methods [below](#check-if-resource-group-exist
 ## Examples
 
 ### Create a resource group
+
 ```C# Snippet:Managing_Resource_Groups_CreateAResourceGroup
 // First, initialize the ArmClient and get the default subscription
 var armClient = new ArmClient(new DefaultAzureCredential());
@@ -191,6 +202,7 @@ ResourceGroup resourceGroup = await rgContainer.Construct(location).CreateOrUpda
 ```
 
 ### List all resource groups
+
 ```C# Snippet:Managing_Resource_Groups_ListAllResourceGroup
 // First, initialize the ArmClient and get the default subscription
 var armClient = new ArmClient(new DefaultAzureCredential());
@@ -206,6 +218,7 @@ await foreach (ResourceGroup rg in response)
 ```
 
 ### Update a resource group
+
 ```C# Snippet:Managing_Resource_Groups_UpdateAResourceGroup
 // Note: Resource group named 'myRgName' should exist for this example to work.
 var armClient = new ArmClient(new DefaultAzureCredential());
@@ -216,6 +229,7 @@ resourceGroup = await resourceGroup.AddTagAsync("key", "value");
 ```
 
 ### Delete a resource group
+
 ```C# Snippet:Managing_Resource_Groups_DeleteResourceGroup
 var armClient = new ArmClient(new DefaultAzureCredential());
 Subscription subscription = armClient.DefaultSubscription;
@@ -225,6 +239,7 @@ await resourceGroup.DeleteAsync();
 ```
 
 ### Check if Resource Group exists
+
 ```C# Snippet:Readme_DoesExistsRG
 var armClient = new ArmClient(new DefaultAzureCredential());
 Subscription subscription = armClient.DefaultSubscription;
@@ -265,6 +280,7 @@ if (myRG == null)
 
 
 ### Add a tag to a virtual machine
+
 Imagine that our company requires all virtual machines to be tagged with the owner. We're tasked with writing a program to add the tag to any missing virtual machines in a given resource group.
 
  ```csharp

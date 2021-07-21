@@ -1,3 +1,10 @@
+---
+title: Resource Management
+description: Learn how to use the Azure .NET SDK to manage Azure resources
+ms.date: 07/21/2020
+ms.author: xinrzhu
+author: xinrzhu
+---
 # Resource Management using Azure .NET SDK 
 
 The .NET SDK's management (or "management plane") libraries, the names of which all begin with `Azure.ResourceManager` (for example: `Azure.ResourceManager.Compute`), help you create, provision and otherwise manage Azure resources from .NET code. All Azure services have corresponding management libraries.

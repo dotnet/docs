@@ -52,9 +52,8 @@ namespace JsonNodePOCOExample
             //Cold.Low=-10, Hot.High=60
 
             // Get a subsection and deserialize it into an array.
-            JsonNode daNode = forecastNode["DatesAvailable"];
-            DatesAvailable = (JsonSerializer.Deserialize<DateTime[]>(daNode.ToJsonString()));
-            Console.WriteLine($"DatesAvailable[0]={DatesAvailable[0]}");
+            JsonArray datesAvailable = forecastNode["DatesAvailable"].AsArray();
+            Console.WriteLine($"datesAvailable[0]={datesAvailable[0]}");
             // output:
             //DatesAvailable[0]=8/1/2019 12:00:00 AM
         }

@@ -12,7 +12,7 @@ The [HiringProcess sample](https://github.com/dotnet/samples/tree/main/framework
 
  The `ResumeRequest` workflow (implemented as a <xref:System.Activities.Statements.Sequence>) publishes a job posting in Contoso's external careers Web site and manages the acquisition of resumes. A job posting is available in the external Web site for a fixed period of time (until a timeout expires) or until an employee from Contoso decides to remove it.
 
- This sample demonstrates the following features of [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]:
+ This sample demonstrates the following features of .NET Framework 4.6.1:
 
 - <xref:System.Activities.Statements.Flowchart> and <xref:System.Activities.Statements.Sequence> workflows for modeling business processes.
 
@@ -120,7 +120,7 @@ The [HiringProcess sample](https://github.com/dotnet/samples/tree/main/framework
 
 ## Data Storage
 
- Data is stored in a SQL Server database called `ContosoHR` (the script for creating this database is located in the `DbSetup` folder). Workflow instances are stored in a SQL Server database called `InstanceStore` (the scripts for creating the instance store are part of the [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] distribution).
+ Data is stored in a SQL Server database called `ContosoHR` (the script for creating this database is located in the `DbSetup` folder). Workflow instances are stored in a SQL Server database called `InstanceStore` (the scripts for creating the instance store are part of the .NET Framework 4.6.1 distribution).
 
  Both databases are created by running Setup.cmd script from a  Developer Command Prompt for Visual Studio.
 

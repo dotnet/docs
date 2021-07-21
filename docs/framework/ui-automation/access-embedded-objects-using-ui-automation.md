@@ -26,7 +26,7 @@ ms.topic: how-to
  ![Embedded objects in a text container.](./media/uia-textpattern-embeddedobjects.PNG "UIA_TextPattern_EmbeddedObjects")
 A sample document with textual content, ("Did You Know?"…) and two embedded objects (a picture of a whale and a text hyperlink), used as a target for the code examples.
 
-## Example
+## Example 1
 
  The following code example demonstrates how to retrieve a collection of embedded objects from within a UI Automation text provider. For the sample document provided in the introduction, two objects would be returned (an image element and a text element).
 
@@ -40,7 +40,7 @@ A sample document with textual content, ("Did You Know?"…) and two embedded ob
 [!code-csharp[FindText#GetChildren](../../../samples/snippets/csharp/VS_Snippets_Wpf/FindText/CSharp/SearchWindow.cs#getchildren)]
 [!code-vb[FindText#GetChildren](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/FindText/VisualBasic/SearchWindow.vb#getchildren)]
 
-## Example
+## Example 2
 
  The following code example demonstrates how to obtain a text range from an embedded object within a UI Automation text provider. The text range retrieved is an empty range where the starting endpoint follows "… ocean.(space)" and the ending endpoint precedes the closing "." representing the embedded hyperlink (as shown by the image provided in the introduction). Even though this is an empty range, it is not considered a degenerate range because it has a non-zero span.
 

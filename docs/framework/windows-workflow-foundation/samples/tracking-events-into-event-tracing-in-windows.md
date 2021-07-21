@@ -17,7 +17,7 @@ Windows Workflow Foundation provides a tracking infrastructure to track the exec
 |Component|Description|
 |---------------|-----------------|
 |Tracking runtime|Provides the infrastructure to emit tracking records.|
-|Tracking participants|Accesses the tracking records. [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] ships with a tracking participant that writes tracking records as Event Tracing for Windows (ETW) events.|
+|Tracking participants|Accesses the tracking records. .NET Framework 4.6.1 ships with a tracking participant that writes tracking records as Event Tracing for Windows (ETW) events.|
 |Tracking profile|A filtering mechanism that allows a tracking participant to subscribe for a subset of the tracking records emitted from a workflow instance.|
 
 The following table details the tracking records that the workflow runtime emits.
@@ -78,7 +78,7 @@ The tracking participant subscribes for a subset of the emitted tracking records
 
 11. Repeat steps 9 and 10 with an input of data other than 0, so that no error is thrown.
 
-Tracking profiles allow you to subscribe to events that are emitted by the runtime when the state of a workflow instance changes. Depending on your monitoring requirements, you can create a profile that is very coarse, which subscribes to a small set of high-level state changes on a workflow. On the other hand, you can create a very precise profile whose output is rich enough to reconstruct the execution later. The sample demonstrates the events emitted from the workflow runtime to ETW using the `HealthMonitoring Tracking Profile`, which emits a small set of events. A different profile that emits more workflow tracking events is also provided in the Web.config that is named `Troubleshooting Tracking Profile`. When the [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] is installed, a default profile with an empty name is configured in the Machine.config file. This profile is used by the ETW tracking behavior configuration when no profile name or an empty profile name is specified.
+Tracking profiles allow you to subscribe to events that are emitted by the runtime when the state of a workflow instance changes. Depending on your monitoring requirements, you can create a profile that is very coarse, which subscribes to a small set of high-level state changes on a workflow. On the other hand, you can create a very precise profile whose output is rich enough to reconstruct the execution later. The sample demonstrates the events emitted from the workflow runtime to ETW using the `HealthMonitoring Tracking Profile`, which emits a small set of events. A different profile that emits more workflow tracking events is also provided in the Web.config that is named `Troubleshooting Tracking Profile`. When the .NET Framework 4.6.1 is installed, a default profile with an empty name is configured in the Machine.config file. This profile is used by the ETW tracking behavior configuration when no profile name or an empty profile name is specified.
 
 The health monitoring tracking profile emits workflow instance records and activity fault propagation records. This profile is created by adding the following tracking profile to a Web.config configuration file.
 

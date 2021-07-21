@@ -19,14 +19,14 @@ ms.topic: how-to
 
  This topic contains example code that shows how to navigate among Microsoft UI Automation elements by using the <xref:System.Windows.Automation.TreeWalker> class.
 
-## Example
+## Example 1
 
  The following example uses <xref:System.Windows.Automation.TreeWalker.GetParent%2A> to walk up the Microsoft UI Automation tree until it finds the root element, or desktop. The element just below that is the parent window of the specified element.
 
  [!code-csharp[UIAFocusTracker_snip#102](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAFocusTracker_snip/CSharp/FocusTracker.cs#102)]
  [!code-vb[UIAFocusTracker_snip#102](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFocusTracker_snip/VisualBasic/FocusTracker.vb#102)]
 
-## Example
+## Example 2
 
  The following example uses <xref:System.Windows.Automation.TreeWalker.GetFirstChild%2A> and <xref:System.Windows.Automation.TreeWalker.GetNextSibling%2A> to create a <xref:System.Windows.Forms.TreeView> that shows an entire subtree of Microsoft UI Automation elements that are in the control view and that are enabled.
 

@@ -18,7 +18,7 @@ When a service configured for announcements joins a network and becomes discover
 > [!TIP]
 > You can customize the announcement functionality, allowing you to send announcements whenever you choose.
 
-[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] defines the <xref:System.ServiceModel.Discovery.AnnouncementEndpoint> and <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint> as standard endpoints to allow services and clients to easily send Hello and Bye announcements.
+.NET Framework 4.6.1 defines the <xref:System.ServiceModel.Discovery.AnnouncementEndpoint> and <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint> as standard endpoints to allow services and clients to easily send Hello and Bye announcements.
 
 ### Announcements on the Service
 

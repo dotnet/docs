@@ -6,7 +6,7 @@ ms.assetid: 0143448f-2044-40a0-8a3d-941f6d12468b
 ---
 # Visual Workflow Tracking
 
-The [VisualWorkflowTracking sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/application/VisualWorkflowTracking/CS) demonstrates how to write a visual workflow tracking application using the debug functionality available through the [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)].
+The [VisualWorkflowTracking sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/application/VisualWorkflowTracking/CS) demonstrates how to write a visual workflow tracking application using the debug functionality available through the .NET Framework 4.6.1.
 
 ## Sample Details
 

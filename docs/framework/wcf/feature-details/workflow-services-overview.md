@@ -33,7 +33,7 @@ When implementing a WCF service, you define a number of contracts that describe 
 The end result of contract inference is a description of the service using the same data structures as WCF services and operation contracts. This information is then used to expose WSDL for the workflow service.
 
 > [!NOTE]
-> [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] does not allow you to write workflow services using an existing contract definition without some additional tooling support. Workflow service contracts are created by the contract inference process discussed previously. Message contracts and data contracts are fully supported, however.
+> .NET Framework 4.6.1 does not allow you to write workflow services using an existing contract definition without some additional tooling support. Workflow service contracts are created by the contract inference process discussed previously. Message contracts and data contracts are fully supported, however.
 
 ## Workflow services and MSMQ-based bindings
 

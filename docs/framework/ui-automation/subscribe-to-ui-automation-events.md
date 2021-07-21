@@ -19,14 +19,14 @@ ms.topic: how-to
 
  This topic shows how to subscribe to events raised by UI Automation providers.
 
-## Example
+## Example 1
 
  The following example code registers an event handler for the event that is raised when a control such as a button is invoked, and removes it when the application form closes. The event is identified by an <xref:System.Windows.Automation.AutomationEvent> passed as a parameter to <xref:System.Windows.Automation.Automation.AddAutomationEventHandler%2A>.
 
  [!code-csharp[UIAClient_snip#101](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#101)]
  [!code-vb[UIAClient_snip#101](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#101)]
 
-## Example
+## Example 2
 
  The following example shows how to use Microsoft UI Automation to subscribe to an event that is raised when the focus changes. The event handler is unregistered in a method that could be called on application shutdown, or when notification of UI events is no longer required.
 

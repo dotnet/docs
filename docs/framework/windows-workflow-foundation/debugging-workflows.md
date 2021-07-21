@@ -6,7 +6,7 @@ ms.assetid: b23b4814-ebb1-4c51-b7a9-469f4da7a96d
 ---
 # Debugging Workflows
 
-[!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] offers several options for debugging running workflows from the development environment. Workflows can be debugged in the designer, in XAML, and in code.
+.NET Framework 4.6.1 offers several options for debugging running workflows from the development environment. Workflows can be debugged in the designer, in XAML, and in code.
 
 ## Debugging in the Workflow Designer
 

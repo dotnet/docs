@@ -9,7 +9,7 @@ ms.assetid: c09b1e99-21b5-4d96-9c04-ec31db3f4436
 ---
 # How to: Create an Activity
 
-Activities are the core unit of behavior in [!INCLUDE[wf1](../../../includes/wf1-md.md)]. The execution logic of an activity can be implemented in managed code or it can be implemented by using other activities. This topic demonstrates how to create two activities. The first activity is a simple activity that uses code to implement its execution logic. The implementation of the second activity is defined by using other activities. These activities are used in following steps in the tutorial.
+Activities are the core unit of behavior in WF. The execution logic of an activity can be implemented in managed code or it can be implemented by using other activities. This topic demonstrates how to create two activities. The first activity is a simple activity that uses code to implement its execution logic. The implementation of the second activity is defined by using other activities. These activities are used in following steps in the tutorial.
 
 ## Create the activity library project
 

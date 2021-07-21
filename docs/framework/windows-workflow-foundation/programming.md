@@ -21,7 +21,7 @@ This section contains a set of primer topics that you should understand to becom
  Topics that describes the system-provided activities available in Windows Workflow Foundation (WF).  
   
  [Windows Workflow Foundation Data Model](data-model.md)  
- Topics that describe variables, arguments and expressions in [!INCLUDE[wf1](../../../includes/wf1-md.md)].  
+ Topics that describe variables, arguments and expressions in WF.  
   
  [Waiting for Input in a Workflow](waiting-for-input-in-a-workflow.md)  
  Topics that describes how to use bookmarks and messaging activities.  

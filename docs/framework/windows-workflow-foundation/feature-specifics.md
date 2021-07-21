@@ -79,7 +79,7 @@ An order-processing workflow is used to handle new order creation and updating e
 
 ## Simplified Configuration
 
-The WCF configuration schema is complex and provides users with many hard to find features. In [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)], we have focused on helping WCF users configure their services with the following features:
+The WCF configuration schema is complex and provides users with many hard to find features. In .NET Framework 4.6.1, we have focused on helping WCF users configure their services with the following features:
 
 - Removing the need for explicit per-service configuration. If you do not configure any \<service> elements for your service, and your service does not define programmatically any endpoint, then a set of endpoints will be automatically added to your service, one per service base address and per contract implemented by your service.
 

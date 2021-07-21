@@ -57,3 +57,15 @@ For example, if you have the following code, then you _should_ provide a `Uint8A
 ```csharp
 var bytes = await _jsRuntime.InvokeAsync<byte[]>("someJSMethodReturningAByteArray");
 ```
+
+<!--
+
+## Category
+
+ASP.NET Core
+
+## Affected APIs
+
+Not detectable via API analysis
+
+-->

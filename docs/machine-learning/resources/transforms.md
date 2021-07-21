@@ -1,7 +1,7 @@
 ---
 title: Data transformations
 description: Explore the feature engineering components supported in ML.NET.
-ms.date: 03/31/2021
+ms.date: 06/30/2021
 ---
 
 # Data transformations
@@ -38,6 +38,7 @@ Other data transformations don't require training data. For example: the <xref:M
 | <xref:Microsoft.ML.NormalizationCatalog.NormalizeBinning%2A> | Assign the input value to a bin index and divide by the number of bins to produce a float value between 0 and 1. The bin boundaries are calculated to evenly distribute the training data across bins |  Yes |
 | <xref:Microsoft.ML.NormalizationCatalog.NormalizeSupervisedBinning%2A> | Assign the input value to a bin based on its correlation with label column | Yes |
 | <xref:Microsoft.ML.NormalizationCatalog.NormalizeMinMax%2A> | Scale the input by the difference between the minimum and maximum values in the training data | Yes |
+| <xref:Microsoft.ML.NormalizationCatalog.NormalizeRobustScaling%2A> | Scale each value using statistics that are robust to outliers that will center the data around 0 and scales the data according to the quantile range. | Yes |
 
 ## Conversions between data types
 
@@ -76,6 +77,7 @@ Other data transformations don't require training data. For example: the <xref:M
 | <xref:Microsoft.ML.ImageEstimatorsCatalog.ConvertToImage%2A> | Convert a vector of pixels to <xref:Microsoft.ML.Transforms.Image.ImageDataViewType> | No |
 | <xref:Microsoft.ML.ImageEstimatorsCatalog.ExtractPixels%2A> | Convert pixels from input image into a vector of numbers | No |
 | <xref:Microsoft.ML.ImageEstimatorsCatalog.LoadImages%2A> | Load images from a folder into memory | No |
+| <xref:Microsoft.ML.ImageEstimatorsCatalog.LoadRawImageBytes%2A> | Loads images of raw bytes into a new column. | No |
 | <xref:Microsoft.ML.ImageEstimatorsCatalog.ResizeImages%2A> | Resize images | No |
 | <xref:Microsoft.ML.OnnxCatalog.DnnFeaturizeImage%2A> | Applies a pre-trained deep neural network (DNN) model to transform an input image into a feature vector | No |
 
@@ -96,6 +98,10 @@ Other data transformations don't require training data. For example: the <xref:M
 | <xref:Microsoft.ML.TimeSeriesCatalog.ForecastBySsa%2A> | Forecast time series data using singular spectrum analysis (SSA) | No |
 | <xref:Microsoft.ML.TimeSeriesCatalog.DetectSpikeBySsa%2A> | Detect spikes in time series data using singular spectrum analysis (SSA) | No |
 | <xref:Microsoft.ML.TimeSeriesCatalog.DetectIidSpike%2A> | Detect spikes in independent and identically distributed (IID) time series data using adaptive kernel density estimations and martingale scores | No |
+| <xref:Microsoft.ML.TimeSeriesCatalog.DetectEntireAnomalyBySrCnn%2A> | Detect anomalies for the entire input data using the SRCNN algorithm. | No |
+| <xref:Microsoft.ML.TimeSeriesCatalog.DetectSeasonality%2A> | Detect seasonality using fourier analysis. | No |
+| <xref:Microsoft.ML.TimeSeriesCatalog.LocalizeRootCause%2A> | Localizes root cause from time series input using a decision tree algorithm. | No |
+| <xref:Microsoft.ML.TimeSeriesCatalog.LocalizeRootCauses%2A> | Localizes root causes from tie series input. | No |
 
 ## Missing values
 
@@ -144,4 +150,7 @@ Other data transformations don't require training data. For example: the <xref:M
 
 | Transform | Definition | ONNX Exportable |
 | --- | --- | --- |
+| <xref:Microsoft.ML.CustomMappingCatalog.FilterByCustomPredicate%2A> | Drops rows where a specified predicate returns true. | No |
+| <xref:Microsoft.ML.CustomMappingCatalog.FilterByStatefulCustomPredicate%2A> | Drops rows where a specified predicate returns true, but allows for a specified state. | No |
 | <xref:Microsoft.ML.CustomMappingCatalog.CustomMapping%2A> | Transform existing columns onto new ones with a user-defined mapping | No |
+| <xref:Microsoft.ML.ExpressionCatalog.Expression%2A> | Apply an expression to transform columns into new ones | No |

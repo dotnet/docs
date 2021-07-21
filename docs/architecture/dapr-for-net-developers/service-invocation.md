@@ -272,7 +272,7 @@ Information is retrieved by the ASP.NET `CollectionController` class in the Fine
 
     // get owner info (Dapr service invocation)
     var vehicleInfo = _vehicleRegistrationService.GetVehicleInfo(speedingViolation.VehicleId).Result;
-     
+
     // ...
  }
  ```
@@ -282,7 +282,7 @@ The code uses a proxy of type `VehicleRegistrationService` to call the VehicleRe
  ```csharp
  public CollectionController(
      ILogger<CollectionController> logger,
-     IFineCalculator fineCalculator, 
+     IFineCalculator fineCalculator,
      VehicleRegistrationService vehicleRegistrationService,
      DaprClient daprClient)
  {
@@ -300,7 +300,7 @@ The `VehicleRegistrationService` class contains a single method: `GetVehicleInfo
      {
          _httpClient = httpClient;
      }
- 
+
      public async Task<VehicleInfo> GetVehicleInfo(string licenseNumber)
      {
          return await _httpClient.GetFromJsonAsync<VehicleInfo>(
@@ -314,7 +314,7 @@ The code doesn't depend on any Dapr classes directly. It instead leverages the D
 ```csharp
 // ...
 
-services.AddSingleton<VehicleRegistrationService>(_ => 
+services.AddSingleton<VehicleRegistrationService>(_ =>
     new VehicleRegistrationService(DaprClient.CreateInvokeHttpClient(
         "vehicleregistrationservice", $"http://localhost:{daprHttpPort}"
     )));

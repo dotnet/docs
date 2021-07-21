@@ -26,9 +26,9 @@ The `dotnet new --install` command installs a template package from the `PATH` o
 
 ## Options
 
-- **`--interactive`**
-  
-  Allows the command to stop and wait for user input or action (for example to complete authentication). Available since .NET Core 5.0 SDK.
+<!-- markdownlint-disable MD012 -->
+
+[!INCLUDE [interactive](../../../includes/cli-interactive-5-0.md)]
 
 - **`--nuget-source <SOURCE>`**
   

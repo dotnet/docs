@@ -88,6 +88,8 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`--dry-run`**
 
   Displays a summary of what would happen if the given command were run if it would result in a template creation. Available since .NET Core 2.2 SDK.
@@ -96,7 +98,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
   Forces content to be generated even if it would change existing files. This is required when the template chosen would override existing files in the output directory.
 
-- **`-h|--help`**
+- **`-?|-h|--help`**
 
   Prints out help for the command. It can be invoked for the `dotnet new` command itself or for any template. For example, `dotnet new mvc --help`.
 
@@ -133,10 +135,10 @@ Each template may have additional options defined. For more information, see [.N
   dotnet new console --language "F#"
   ```
 
-- Create a .NET Standard class library project in the specified directory:
+- Create a .NET Standard 2.0 class library project in the specified directory:
 
   ```dotnetcli
-  dotnet new classlib --language VB -o MyLibrary
+  dotnet new classlib --framework "netstandard2.0" -o MyLibrary
   ```
 
 - Create a new ASP.NET Core C# MVC project in the current directory with no authentication:

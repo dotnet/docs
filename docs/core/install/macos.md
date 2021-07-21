@@ -23,7 +23,7 @@ The latest version of .NET is 5.0.
 
 ## Supported releases
 
-The following table is a list of currently supported .NET releases and the versions of macOS they're supported on. These versions remain supported either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+The following table is a list of currently supported .NET releases and the versions of macOS they're supported on. These versions remain supported until the version of .NET reaches [end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 - A ✔️ indicates that the version of .NET Core is still supported.
 - A ❌ indicates that the version of .NET Core isn't supported.

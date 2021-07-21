@@ -12,7 +12,7 @@ ms.assetid: 110e60f7-5b03-4b69-b667-31721b8e3152
 ---
 # Delegation and Impersonation with WCF
 
-*Impersonation* is a common technique that services use to restrict client access to a service domain's resources. Service domain resources can either be machine resources, such as local files (impersonation), or a resource on another machine, such as a file share (delegation). For a sample application, see [Impersonating the Client](/previous-versions/dotnet/framework/wcf/samples/impersonating-the-client). For an example of how to use impersonation, see [How to: Impersonate a Client on a Service](../how-to-impersonate-a-client-on-a-service.md).  
+*Impersonation* is a common technique that services use to restrict client access to a service domain's resources. Service domain resources can either be machine resources, such as local files (impersonation), or a resource on another machine, such as a file share (delegation). For a sample application, see [Impersonating the Client](../samples/impersonating-the-client.md). For an example of how to use impersonation, see [How to: Impersonate a Client on a Service](../how-to-impersonate-a-client-on-a-service.md).  
   
 > [!IMPORTANT]
 > Be aware that when impersonating a client on a service, the service runs with the client's credentials, which may have higher privileges than the server process.  
@@ -226,6 +226,6 @@ sh.Credentials.ClientCertificate.Authentication.MapClientCertificateToWindowsAcc
 - <xref:System.ServiceModel.ChannelFactory%601>
 - <xref:System.Security.Principal.TokenImpersonationLevel.Identification>
 - [Using Impersonation with Transport Security](using-impersonation-with-transport-security.md)
-- [Impersonating the Client](/previous-versions/dotnet/framework/wcf/samples/impersonating-the-client)
+- [Impersonating the Client](../samples/impersonating-the-client.md)
 - [How to: Impersonate a Client on a Service](../how-to-impersonate-a-client-on-a-service.md)
 - [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)

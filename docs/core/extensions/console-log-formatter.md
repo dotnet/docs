@@ -3,7 +3,7 @@ title: Console log formatting
 description: Learn how to use available console log formatting, or implement custom log formatting for your .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/17/2020
+ms.date: 07/14/2021
 ---
 
 # Console log formatting
@@ -62,7 +62,7 @@ dotnet new webapp -o Console.ExampleFormatters.Json
 
 When running the app, using the template code, you get the default log format below:
 
-```
+```console
 info: Microsoft.Hosting.Lifetime[0]
       Now listening on: https://localhost:5001
 ```
@@ -128,6 +128,46 @@ For inspiration on further customizing formatting, see the existing implementati
 - [SimpleConsoleFormatter](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.Extensions.Logging.Console/src/SimpleConsoleFormatter.cs).
 - [SystemdConsoleFormatter](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.Extensions.Logging.Console/src/SystemdConsoleFormatter.cs)
 - [JsonConsoleFormatter](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.Extensions.Logging.Console/src/JsonConsoleFormatter.cs)
+
+### Custom configuration options
+
+To further customize the logging extensibility, your derived <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions> class can be configured from any [configuration provider](configuration-providers.md). For example, you could use the [JSON configuration provider](configuration-providers.md#json-configuration-provider) to define your custom options. First define your <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions> subclass.
+
+:::code language="csharp" source="snippets/logging/console-formatter-custom-with-config/CustomWrappingConsoleFormatterOptions.cs":::
+
+The preceding console formatter options class defines two custom properties, representing a prefix and suffix. Next, define the *appsettings.json* file that will configure your console formatter options.
+
+:::code language="json" source="snippets/logging/console-formatter-custom-with-config/appsettings.json" highlight="8,14-17":::
+
+In the preceding JSON config file:
+
+- The `"Logging"` node defines a `"Console"`.
+- The `"Console"` node specifies a `"FormatterName"` of `"CustomTimePrefixingFormatter"`, which maps to a custom formatter.
+- The `"FormatterOptions"` node defines a `"CustomPrefix"`, and `"CustomSuffix"`, as well as a few other derived options.
+
+> [!TIP]
+> The `$.Logging.Console.FormatterOptions` JSON path is reserved, and will map to a custom <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions> when added using the <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddConsoleFormatter%2A> extension method. This provides the ability to define custom properties, in addition to the ones available.
+
+Consider the following `CustomDatePrefixingFormatter`:
+
+:::code language="csharp" source="snippets/logging/console-formatter-custom-with-config/CustomTimePrefixingFormatter.cs":::
+
+In the preceding formatter implementation:
+
+- The `CustomWrappingConsoleFormatterOptions` are monitored for change, and updated accordingly.
+- Messages that are written are wrapped with the configured prefix, and suffix.
+- A timestamp is added after the prefix, but before the message using the configured <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions.UseUtcTimestamp?displayProperty=nameWithType> and <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions.TimestampFormat%2A?displayProperty=nameWithType> values.
+
+To use custom configuration options, with custom formatter implementations, add when calling <xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.ConfigureLogging(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Logging.ILoggingBuilder})>.
+
+:::code language="csharp" source="snippets/logging/console-formatter-custom-with-config/Program.cs" highlight="14-16":::
+
+The following console output is similar to what you might expect to see from using this `CustomTimePrefixingFormatter`.
+
+```console
+|-<[ 15:03:15.6179 Hello World! ]>-|
+|-<[ 15:03:15.6347 The .NET developer community happily welcomes you. ]>-|
+```
 
 ## Implement custom color formatting
 

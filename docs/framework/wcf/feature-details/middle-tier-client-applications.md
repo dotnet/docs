@@ -28,7 +28,7 @@ This topic discusses various issues specific to middle-tier client applications 
   
 - You must handle faulted channels regardless of whether you share the channel. When channels are reused, however, a faulting channel can take down more than one pending request or send.  
   
- For an example that demonstrates best practices for reusing a client for multiple requests, see [Data Binding in an ASP.NET Client](/previous-versions/dotnet/framework/wcf/samples/data-binding-in-an-aspnet-client).  
+ For an example that demonstrates best practices for reusing a client for multiple requests, see [Data Binding in an ASP.NET Client](../samples/data-binding-in-an-aspnet-client.md).  
   
  In addition, you can increase the startup performance for those clients that use data types that are serializable using the <xref:System.Xml.Serialization.XmlSerializer> generate and compile serialization code for those data types at runtime, which can result in slow start-up performance. The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) can improve start-up performance for these applications by generating the necessary serialization code from the compiled assemblies for the application. For more information, see [How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer](startup-time-of-wcf-client-applications-using-the-xmlserializer.md).  
   

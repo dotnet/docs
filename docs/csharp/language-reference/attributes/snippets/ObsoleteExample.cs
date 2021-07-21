@@ -1,4 +1,5 @@
-﻿using System;
+﻿// <Snippet1>
+using System;
 
 namespace AttributeExamples
 {
@@ -31,5 +32,20 @@ namespace AttributeExamples
             // b.OldMethod();
         }
     }
+}
+// </Snippet1>
+
+namespace ExampleConstantInterpolation
+{
+    // <Snippet2>
+    public class B
+    {
+        [Obsolete($"use {nameof(NewMethod)} instead", true)]
+        public void OldMethod() { }
+
+        public void NewMethod() { }
+    }
+    // </Snippet2>
+
 }
 

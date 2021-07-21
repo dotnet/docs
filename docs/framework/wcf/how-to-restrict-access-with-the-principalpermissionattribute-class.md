@@ -13,7 +13,7 @@ ms.assetid: 5162f5c4-8781-4cc4-9425-bb7620eaeaf4
 ---
 # How to: Restrict Access with the PrincipalPermissionAttribute Class
 
-Controlling the access to resources on a Windows-domain computer is a basic security task. For example, only certain users should be able to view sensitive data, such as payroll information. This topic explains how to restrict access to a method by demanding that the user belong to a predefined group. For a working sample, see [Authorizing Access to Service Operations](/previous-versions/dotnet/framework/wcf/samples/authorizing-access-to-service-operations).  
+Controlling the access to resources on a Windows-domain computer is a basic security task. For example, only certain users should be able to view sensitive data, such as payroll information. This topic explains how to restrict access to a method by demanding that the user belong to a predefined group. For a working sample, see [Authorizing Access to Service Operations](./samples/authorizing-access-to-service-operations.md).  
   
  The task consists of two separate procedures. The first creates the group and populates it with users. The second applies the <xref:System.Security.Permissions.PrincipalPermissionAttribute> class to specify the group.  
   
@@ -86,6 +86,6 @@ Controlling the access to resources on a Windows-domain computer is a basic secu
 - <xref:System.Security.Permissions.PrincipalPermissionAttribute>
 - <xref:System.Security.Permissions.SecurityAction.Demand>
 - <xref:System.Security.Permissions.PrincipalPermissionAttribute.Role%2A>
-- [Authorizing Access to Service Operations](/previous-versions/dotnet/framework/wcf/samples/authorizing-access-to-service-operations)
+- [Authorizing Access to Service Operations](./samples/authorizing-access-to-service-operations.md)
 - [Security Overview](./feature-details/security-overview.md)
 - [Implementing Service Contracts](implementing-service-contracts.md)

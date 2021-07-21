@@ -14,7 +14,7 @@ The following series of tutorials introduce you to the Windows Communication Fou
 
 The tutorial assumes you're using Visual Studio as the development environment. If you're using another development environment, ignore the Visual Studio-specific instructions.
 
-For sample WCF applications that you can download and run, see [Windows Communication Foundation samples](/previous-versions/dotnet/framework/wcf/samples/index). For an introduction to the samples, see [Getting started sample](/previous-versions/dotnet/framework/wcf/samples/getting-started-sample).
+For sample WCF applications that you can download and run, see [Windows Communication Foundation samples](samples/index.md). For an introduction to the samples, see [Getting started sample](samples/getting-started-sample.md).
 
 For more in-depth information about creating services and clients, see [Basic WCF programming](basic-wcf-programming.md).
 
@@ -64,6 +64,6 @@ The next two tutorials describe how to create, configure, and use a client appli
 - [How to: Use Svcutil.exe to download metadata documents](feature-details/how-to-use-svcutil-exe-to-download-metadata-documents.md)
 - [How to: Publish metadata for a service using a configuration file](feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)
 - [Using bindings to configure services and clients](using-bindings-to-configure-services-and-clients.md)
-- [Getting started sample](/previous-versions/dotnet/framework/wcf/samples/getting-started-sample)
-- [Windows Communication Foundation samples](/previous-versions/dotnet/framework/wcf/samples/index)
-- [Self-Host](/previous-versions/dotnet/framework/wcf/samples/self-host)
+- [Getting started sample](samples/getting-started-sample.md)
+- [Windows Communication Foundation samples](samples/index.md)
+- [Self-Host](samples/self-host.md)

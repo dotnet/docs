@@ -13,7 +13,7 @@ Provided here is guidance about the Windows Communication Foundation (WCF) docum
   
 ## New to Windows Communication Foundation Programming  
   
-- If you are new to programming with WCF and you just want to see sample applications that work, see the topics listed in [Windows Communication Foundation Samples](/previous-versions/dotnet/framework/wcf/samples/index).  
+- If you are new to programming with WCF and you just want to see sample applications that work, see the topics listed in [Windows Communication Foundation Samples](./samples/index.md).  
   
 - For a tutorial that walks through the basic steps of creating a WCF service and client, see [Getting Started Tutorial](getting-started-tutorial.md).  
   
@@ -59,7 +59,7 @@ Provided here is guidance about the Windows Communication Foundation (WCF) docum
   
 ## See also
 
-- [Windows Communication Foundation Samples](/previous-versions/dotnet/framework/wcf/samples/index)
+- [Windows Communication Foundation Samples](./samples/index.md)
 - [Conceptual Overview](conceptual-overview.md)
 - [Guidelines and Best Practices](guidelines-and-best-practices.md)
 - [Building Clients](building-clients.md)

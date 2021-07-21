@@ -53,6 +53,7 @@ The following versions of .NET are no longer supported. The downloads for these 
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
@@ -64,6 +65,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/20.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
@@ -75,6 +77,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
@@ -88,6 +91,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
@@ -101,6 +105,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/19.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
@@ -114,6 +119,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/18.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
@@ -125,6 +131,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
@@ -138,6 +145,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/17.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
@@ -151,6 +159,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/17.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
@@ -164,6 +173,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/16.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
@@ -175,6 +185,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]

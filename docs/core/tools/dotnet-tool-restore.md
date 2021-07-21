@@ -29,13 +29,11 @@ The `dotnet tool restore` command finds the tool manifest file that is in scope 
 
 ## Options
 
-- **`--configfile <FILE>`**
+<!-- markdownlint-disable MD012 -->
 
-  The NuGet configuration (*nuget.config*) file to use.
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
-- **`--add-source <SOURCE>`**
-
-  Adds an additional NuGet package source to use during installation.
+[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
 - **`--tool-manifest <PATH>`**
 
@@ -53,17 +51,11 @@ The `dotnet tool restore` command finds the tool manifest file that is in scope 
 
   Do not cache packages and http requests.
 
-- **`--interactive`**
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
-  Allows the command to stop and wait for user input or action (for example to complete authentication).
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`-h|--help`**
-
-  Prints out a short help for the command.
-
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 ## Example
 

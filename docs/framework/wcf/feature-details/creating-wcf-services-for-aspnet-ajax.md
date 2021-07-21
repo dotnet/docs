@@ -51,7 +51,7 @@ The Web Programming Model described in the [WCF Web HTTP Programming Model Overv
 
 - To take advantage of ASP.NET features, for example, URL-based authentication and accessing the ASP.NET session information, you may want to enable the ASP.NET Compatibility Mode through configuration.
 
-AJAX endpoints in WCF may even be consumed without the ASP.NET AJAX framework. Doing so requires an understanding of the support architecture of AJAX support in WCF. For a discussion of this architecture, see [WCF Web HTTP Programming Object Model](wcf-web-http-programming-object-model.md). For a code sample demonstrating this approach, see the [AJAX Service with JSON and XML](/previous-versions/dotnet/framework/wcf/samples/ajax-service-with-json-and-xml-sample).
+AJAX endpoints in WCF may even be consumed without the ASP.NET AJAX framework. Doing so requires an understanding of the support architecture of AJAX support in WCF. For a discussion of this architecture, see [WCF Web HTTP Programming Object Model](wcf-web-http-programming-object-model.md). For a code sample demonstrating this approach, see the [AJAX Service with JSON and XML](../samples/ajax-service-with-json-and-xml-sample.md).
 
 ## See also
 

@@ -13,7 +13,7 @@ ms.assetid: f0045808-b9fe-4d31-88d1-473d9957211e
 
 This walkthrough demonstrates how you can use Visual Basic language features to write Language-Integrated Query (LINQ) query expressions. The walkthrough demonstrates how to create queries on a list of Student objects, how to run the queries, and how to modify them. The queries incorporate several features including object initializers, local type inference, and anonymous types.
 
-After completing this walkthrough, you will be ready to move on to the samples and documentation for the specific LINQ provider you are interested in. LINQ providers include [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)], LINQ to DataSet, and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].
+After completing this walkthrough, you will be ready to move on to the samples and documentation for the specific LINQ provider you are interested in. LINQ providers include [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)], LINQ to DataSet, and LINQ to XML.
 
 ## Create a Project
 

@@ -11,7 +11,7 @@ The .NET SDK's management (or "management plane") libraries, the names of which 
 
 With the management libraries, you can write configuration and deployment programs to perform the same tasks that you can through the Azure portal, Azure CLI, or other resource management tools. 
 
-Those `Azure.ResourceManager.*`package follows the [new Azure SDK guidelines](https://azure.github.io/azure-sdk/general_introduction.html), which provide core capabilities that are shared amongst all Azure SDKs, including:
+Those `Azure.ResourceManager.*` packages follow the [new Azure SDK guidelines](https://azure.github.io/azure-sdk/general_introduction.html). The guidelines enforce core capabilities that are shared amongst all Azure SDKs. For example:
 
 -  The intuitive Azure Identity library that provides authentication modules
 -  User-friendly API design that resembles the Azure resource hierachy 

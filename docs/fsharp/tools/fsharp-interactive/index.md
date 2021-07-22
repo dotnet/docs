@@ -188,7 +188,8 @@ dotnet fsi Script2.fsx
 
 You can specify as many `#load` directives as you like in a script.
 
-> Note that the `open Script1` declaration is required. This is because constructs in an F# script are compiled into a top-level module that is the name of the script file it is in. If the script file has a lowercase name such as `script3.fsx` then the implied module name is automatically capitalized, and you will need to use `open Script3`.  If you would like a loadable-script to define constructs in a specific namespace of module you can include a namespace of module declaration, for example:
+> [!NOTE]
+> The `open Script1` declaration is required. This is because constructs in an F# script are compiled into a top-level module that is the name of the script file it is in. If the script file has a lowercase name such as `script3.fsx` then the implied module name is automatically capitalized, and you will need to use `open Script3`. If you would like a loadable-script to define constructs in a specific namespace of module you can include a namespace of module declaration, for example:
 >
 > ```fsharp
 > module MyScriptLibrary

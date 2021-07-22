@@ -26,7 +26,7 @@ Those `Azure.ResourceManager.*` packages follow the [new Azure SDK guidelines](h
 
 ### Install the package
 
-Install the Azure Resources management libraries for .NET with [NuGet](https://www.nuget.org/).
+Install the Azure Resources management packages for .NET with [NuGet](https://www.nuget.org/).
 
 For example:
 
@@ -68,7 +68,7 @@ Additional documentation for the `Azure.Identity.DefaultAzureCredential` class c
 
 ## Key concepts
 
-### Understanding Azure Resource Hierarchy
+### Understand Azure resource hierarchy
 
 To reduce both the number of clients needed to perform common tasks and the amount of redundant parameters that each of those clients take, we have introduced an object hierarchy in the SDK that mimics the object hierarchy in Azure. Each resource client in the SDK has methods to access the resource clients of its children that is already scoped to the proper subscription and resource group.
 
@@ -102,7 +102,7 @@ There are 3 types of ResourceIdentifiers and they correspond to which level the 
 
 You can usually tell by the id string itself which type it is, but if you are unsure you can always cast it onto a `ResourceIdentifier` and use the Try methods to retrieve the values.
 
-#### Casting to a specific type
+#### Cast to a specific type
 
 ```csharp
 string resourceId = "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/workshop2021-rg/providers/Microsoft.Network/virtualNetworks/myVnet/subnets/mySubnet";
@@ -116,7 +116,7 @@ Console.WriteLine($"Subnet: {id.Name}");
 
 #### Casting to the base resource identifier
 
-```C# Snippet:Readme_CastToBaseResourceIdentifier
+```csharp
 string resourceId = "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/workshop2021-rg/providers/Microsoft.Network/virtualNetworks/myVnet/subnets/mySubnet";
 // Assume we don't know what type of resource id we have we can cast to the base type
 ResourceIdentifier id = resourceId;
@@ -134,6 +134,7 @@ Console.WriteLine($"Subnet: {id.Name}");
 Performing operations on resources that already exist is a common use case when using the management SDK. In this scenario you usually have the identifier of the resource you want to work on as a string. Although the new object hierarchy is great for provisioning and working within the scope of a given parent, it is a tad awkward when it comes to this specific scenario.  
 
 Here is an example how you to access an `AvailabilitySet` object and manage it directly with its id: 
+
 ```csharp
 using Azure.Identity;
 using Azure.ResourceManager.Core;
@@ -182,7 +183,7 @@ You can find an example for these methods [below](#check-if-resource-group-exist
 
 ### Create a resource group
 
-```C# Snippet:Managing_Resource_Groups_CreateAResourceGroup
+```csharp
 // First, initialize the ArmClient and get the default subscription
 var armClient = new ArmClient(new DefaultAzureCredential());
 // Now we get a ResourceGroup container for that subscription
@@ -197,7 +198,7 @@ ResourceGroup resourceGroup = await rgContainer.Construct(location).CreateOrUpda
 
 ### List all resource groups
 
-```C# Snippet:Managing_Resource_Groups_ListAllResourceGroup
+```csharp
 // First, initialize the ArmClient and get the default subscription
 var armClient = new ArmClient(new DefaultAzureCredential());
 Subscription subscription = armClient.DefaultSubscription;
@@ -213,7 +214,7 @@ await foreach (ResourceGroup rg in response)
 
 ### Update a resource group
 
-```C# Snippet:Managing_Resource_Groups_UpdateAResourceGroup
+```csharp
 // Note: Resource group named 'myRgName' should exist for this example to work.
 var armClient = new ArmClient(new DefaultAzureCredential());
 Subscription subscription = armClient.DefaultSubscription;
@@ -224,7 +225,7 @@ resourceGroup = await resourceGroup.AddTagAsync("key", "value");
 
 ### Delete a resource group
 
-```C# Snippet:Managing_Resource_Groups_DeleteResourceGroup
+```csharp
 var armClient = new ArmClient(new DefaultAzureCredential());
 Subscription subscription = armClient.DefaultSubscription;
 string rgName = "myRgName";
@@ -234,7 +235,7 @@ await resourceGroup.DeleteAsync();
 
 ### Check if Resource Group exists
 
-```C# Snippet:Readme_DoesExistsRG
+```csharp
 var armClient = new ArmClient(new DefaultAzureCredential());
 Subscription subscription = armClient.DefaultSubscription;
 string rgName = "myRgName";
@@ -256,7 +257,7 @@ else
 
 Another way to do this is by using `tryGet()`:
 
-```C# Snippet:Readme_TryGetRG
+```csharp
 var armClient = new ArmClient(new DefaultAzureCredential());
 Subscription subscription = armClient.DefaultSubscription;
 string rgName = "myRgName";

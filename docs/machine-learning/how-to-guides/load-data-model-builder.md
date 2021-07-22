@@ -76,9 +76,9 @@ To load data from a SQL Server database connection into Model Builder:
 
 You're done setting up your data source file for Model Builder. Click the **Next step** button link to move to the next step in Model Builder.
 
-## Set up image data files
+## Set up image classification data files
 
-Model Builder expects image data to be JPG or PNG files organized in folders that correspond to the categories of the classification.
+Model Builder expects image classification data to be JPG or PNG files organized in folders that correspond to the categories of the classification.
 
 To load images into Model Builder, provide the path to a single top-level directory:
 
@@ -115,10 +115,22 @@ In the folder structure illustrated below, the top-level directory is *flower_ph
             10791227_7168491604.jpg
 ```
 
+## Set up object detection image data files
+
+Model Builder expects object detection image data to be in JSON format generated from [VoTT](https://github.com/Microsoft/VoTT/releases). The JSON file is located in the **vott-json-export** folder in the **Target Location** that is specified in the project settings.
+
+The JSON file consists of the following information generated from VoTT:
+
+- All tags that were created
+- The image file locations
+- The image bounding box information
+- The tag associated with the image
+
 ## Next steps
 
 Follow these tutorials to build machine learning apps with Model Builder:
 
+- [Generate object detection data from VoTT](./how-to-guides/generate-data-from-vott.md)
 - [Predict prices using regression](../tutorials/predict-prices-with-model-builder.md)
 - [Analyze sentiment in a web application using binary classification](../tutorials/sentiment-analysis-model-builder.md)
 

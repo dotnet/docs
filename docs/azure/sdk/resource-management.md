@@ -1,6 +1,6 @@
 ---
 title: Resource Management
-description: Learn how to use the Azure .NET SDK to manage Azure resources
+description: Learn how to use the Azure SDK for .NET to manage Azure resources.
 ms.date: 07/21/2020
 ms.author: nickzhums
 author: nickzhums

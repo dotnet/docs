@@ -76,7 +76,7 @@ Additional documentation for the `Azure.Identity.DefaultAzureCredential` class c
 
 To reduce both the number of clients needed to perform common tasks and the amount of redundant parameters that each of those clients take, we have introduced an object hierarchy in the SDK that mimics the object hierarchy in Azure. Each resource client in the SDK has methods to access the resource clients of its children that is already scoped to the proper subscription and resource group.
 
-To accomplish this, we're introducing 4 standard types for all resources in Azure:
+To accomplish this, there are four standard types for all resources in Azure:
 
 #### [Resource]Data
 

@@ -81,6 +81,10 @@ items:
           href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
+      - name: Globalization
+        items:
+        - name: Culture creation and case mapping in globalization-invariant mode
+          href: globalization/6.0/culture-creation-invariant-mode.md
       - name: JIT compiler
         items:
         - name: Call argument coercion
@@ -633,6 +637,10 @@ items:
         href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Globalization
       items:
+      - name: .NET 6
+        items:
+        - name: Culture creation and case mapping in globalization-invariant mode
+          href: globalization/6.0/culture-creation-invariant-mode.md
       - name: .NET 5
         items:
         - name: Use ICU libraries on Windows

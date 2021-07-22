@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Culture creation and case mapping in globalization-invariant mode"
 description: Learn about the globalization breaking change in .NET 6 where the creation of new cultures is restricted and case mapping support extends to all characters in globalization-invariant mode.
-ms.date: 07/21/2021
+ms.date: 07/22/2021
 ---
 # Culture creation and case mapping in globalization-invariant mode
 
@@ -9,13 +9,30 @@ ms.date: 07/21/2021
 
 This breaking change has two facets:
 
-- Previously, .NET allowed any culture to be created in globalization-invariant mode, as long as the culture name conformed to [BCP-47](https://tools.ietf.org/search/bcp47). However, the invariant culture data was used instead of the real culture data. Starting in .NET 6, an exception is thrown if you create any culture other than the invariant culture in globalization-invariant mode.
+- Previously, .NET allowed any culture to be created in globalization-invariant mode, as long as the culture name conformed to [BCP-47](https://tools.ietf.org/search/bcp47). However, [the invariant culture](/dotnet/api/system.globalization.cultureinfo?view=net-5.0#invariant-neutral-and-specific-cultures) data was used instead of the real culture data. Starting in .NET 6, an exception is thrown if you create any culture other than the invariant culture in globalization-invariant mode.
+- Previously, globalization-invariant mode only supported case mapping for ASCII characters. Starting in .NET 6, globalization-invariant mode provides full case-mapping support for all Unicode-defined characters. Case mapping is used in operations such as string comparisons, string searches, and upper or lower casing strings.
 
 ## Old behavior
 
+In previous .NET versions:
+
+- When globalization-invariant mode is turned on and the app creates a culture that's not the invariant culture, the operation succeeds but the returned culture always use the invariant culture data instead of the real culture data.
+- Case mapping was performed only for ASCII characters. For example:
+
+  ```csharp
+  if ("Á".Equals("á", StringComparison.CurrentCultureIgnoreCase)) // Evaluates to false.
+  ```
 
 ## New behavior
 
+Starting in .NET 6:
+
+- When globalization-invariant mode is turned on and the app attempts to create a culture that's not the invariant culture, a <xref:System.Globalization.CultureNotFoundException> exception is thrown.
+- Case mapping is performed for all Unicode-defined characters. For example:
+
+  ```csharp
+  if ("Á".Equals("á", StringComparison.CurrentCultureIgnoreCase)) // Evaluates to true.
+  ```
 
 ## Version introduced
 
@@ -29,7 +46,7 @@ The full case-mapping support was introduced for better usability and experience
 
 ## Recommended action
 
-In most cases, no action is needed. However, if you desire the old behavior in globalization-invariant mode, you can use a configuration switch or environment variable.
+In most cases, no action is needed. However, if you desire the previous behavior, you can set a configuration switch or environment variable to allow creation of any culture in globalization-invariant mode.
 
 Application configuration file:
 
@@ -41,17 +58,13 @@ Set `DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY` to `false`.
 
 ## Affected APIs
 
-
+- <xref:System.Globalization.CultureInfo.%23ctor%2A>
+- <xref:System.Globalization.CultureInfo.CreateSpecificCulture(System.String)?displayProperty=fullName>
+- <xref:System.Globalization.CultureInfo.GetCultureInfo%2A?displayProperty=fullName>
+- <xref:System.Globalization.CultureAndRegionInfoBuilder?displayProperty=fullName>
+- Any APIs that perform string casing, comparison, or searching
 
 ## See also
 
 - [.NET globalization invariant mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md)
-
-
-<!--
-
-### Category
-
-- Globalization
-
--->
+- [Invariant, neutral, and specific cultures](/dotnet/api/system.globalization.cultureinfo?view=net-5.0#invariant-neutral-and-specific-cultures)

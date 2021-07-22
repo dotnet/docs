@@ -31,13 +31,13 @@ Using a combination of host headers and redirects, an existing ASP.NET MVC app c
 
 ## Apply the Strangler pattern
 
-Large ASP.NET MVC apps can be gradually replaced with a new ASP.NET Core app by incrementally migrating pieces of functionality. One approach to this is called the [strangler pattern](https://docs.microsoft.com/azure/architecture/patterns/strangler), named for strangler vines that strangle and eventually tear down trees. This approach relies on first implementing a facade layer over top of the existing solution. This facade should be built using the new approach to the problem, or an off-the-shelf solution such as an API gateway.
+Large ASP.NET MVC apps can be gradually replaced with a new ASP.NET Core app by incrementally migrating pieces of functionality. One approach to this is called the [strangler pattern](/azure/architecture/patterns/strangler), named for strangler vines that strangle and eventually tear down trees. This approach relies on first implementing a facade layer over top of the existing solution. This facade should be built using the new approach to the problem, or an off-the-shelf solution such as an API gateway.
 
 Once the facade is in place, you can route part of it to a new ASP.NET Core app. As you port more of the original .NET Framework app to .NET Core, you continue to update the facade layer accordingly, sending more of the facade's total functionality to the new system. Figure 3-5 shows the strangler pattern progression over time.
 
 ## Multi-targeting approaches
 
-Large apps that target .NET Framework may be migrated to ASP.NET Core over time by using multi-targeting and separate code paths for each framework. For example, code that must run in both environments could be modified with [preprocessor `#if`](https://docs.microsoft.com/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) directives to implement different functionality or use different dependencies when run in .NET Framework versus .NET Core. Another option is to modify project files to include different sets of files based on which framework is being targeted. Project files can use different globbing patterns, such as `*.core.cs`, to include different sets of source files depending on the framework being targeted.
+Large apps that target .NET Framework may be migrated to ASP.NET Core over time by using multi-targeting and separate code paths for each framework. For example, code that must run in both environments could be modified with [preprocessor `#if`](../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) directives to implement different functionality or use different dependencies when run in .NET Framework versus .NET Core. Another option is to modify project files to include different sets of files based on which framework is being targeted. Project files can use different globbing patterns, such as `*.core.cs`, to include different sets of source files depending on the framework being targeted.
 
 These techniques allow a single common codebase to be maintained while new functionality is added and (parts of) the app are ported to use .NET Core.
 
@@ -55,8 +55,8 @@ Frequently, large ASP.NET MVC and Web API apps won't be ported to ASP.NET Core a
 
 - [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook)
 - [eShopOnContainers Reference Microservices Application](https://github.com/dotnet-architecture/eShopOnContainers)
-- [Host ASP.NET Core on Windows with IIS](https://docs.microsoft.com/aspnet/core/host-and-deploy/iis/)
-- [Strangler pattern](https://docs.microsoft.com/azure/architecture/patterns/strangler)
+- [Host ASP.NET Core on Windows with IIS](/aspnet/core/host-and-deploy/iis/)
+- [Strangler pattern](/azure/architecture/patterns/strangler)
 
 >[!div class="step-by-step"]
 >[Previous](understand-update-dependencies.md)

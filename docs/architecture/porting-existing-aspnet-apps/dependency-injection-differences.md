@@ -25,14 +25,14 @@ Either way, you should consider using the built-in support for DI that ships wit
 
 ASP.NET Core assumes apps will use DI. It's not just built into the framework, but is required in order to bring support for framework features into your ASP.NET Core apps. In app startup, a call is made to `ConfigureServices` which is responsible for registering all of the types that the DI container (service collection/service provider) can create and inject in the app. Built-in ASP.NET Core features like Entity Framework Core, Identity, and even MVC are brought into the app by configuring them as services in the `ConfigureServices` method.
 
-In addition to using the default implementation, apps can still use custom containers. The [documentation covers how to replace the default service container](https://docs.microsoft.com/dotnet/core/extensions/dependency-injection-guidelines#default-service-container-replacement).
+In addition to using the default implementation, apps can still use custom containers. The [documentation covers how to replace the default service container](../../core/extensions/dependency-injection-guidelines.md#default-service-container-replacement).
 
 DI is fundamental to ASP.NET Core. If your team isn't already well-versed in this practice, you'll want to understand it before porting your app.
 
 ## References
 
-- [Dependency Injection in .NET](https://docs.microsoft.com/dotnet/core/extensions/dependency-injection)
-- [Dependency Injection in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection)
+- [Dependency Injection in .NET](../../core/extensions/dependency-injection.md)
+- [Dependency Injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection)
 
 >[!div class="step-by-step"]
 >[Previous](serving-static-files.md)

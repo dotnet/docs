@@ -30,6 +30,19 @@ issues:
           fail:
             - labels-add: [":watch: Not Triaged"]
 
+    # Checks for binary/source incompatible checkboxes and adds a label
+    - check:
+        - type: query
+          value: "contains(Issue.body, '- [x] Binary incompatible') == `true`"
+      pass:
+        - labels-add: ["binary incompatible"]
+
+    - check:
+        - type: query
+          value: "contains(Issue.body, '- [x] Source incompatible') == `true`"
+      pass:
+        - labels-add: ["source incompatible"]
+
     # Add to .NET 6 project if .NET 6 label added
     - check:
         - type: query

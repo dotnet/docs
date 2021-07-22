@@ -3,7 +3,7 @@ title: Caching in .NET
 description: Learn how to use various in-memory and distributed caching mechanisms in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/20/2021
+ms.date: 07/22/2021
 ---
 
 # Caching in .NET
@@ -93,6 +93,12 @@ Now that the cache is populated, another call to `IterateAlphabetAsync` is await
 :::code source="snippets/caching/memory-apis/Program.cs" range="57-66":::
 
 If the `cache` contains the `letter` key, and the `value` is an instance of an `AlphabetLetter` it's written to the console. When the `letter` key is not in the cache, it was evicted and its post eviction callback was invoked.
+
+#### Additional extension methods
+
+The `IMemoryCache` comes with many convenience-based extension methods, including an asynchronous version
+
+<xref:Microsoft.Extensions.Caching.Memory.CacheExtensions.GetOrCreateAsync%2A>
 
 #### Put it all together
 

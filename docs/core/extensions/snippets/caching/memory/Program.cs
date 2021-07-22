@@ -6,6 +6,7 @@ IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {
         services.AddMemoryCache();
+        services.AddHttpClient<CacheWorker>();
         services.AddHostedService<CacheWorker>();
     })
     .Build();

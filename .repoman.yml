@@ -43,6 +43,17 @@ issues:
       pass:
         - labels-add: ["source incompatible"]
 
+    # Checks breaking change version and adds a label
+    - check:
+        - type: query
+          value: "contains(Issue.body, '.NET 6 Preview 7') == `true` 
+          || contains(Issue.body, '.NET 6 Preview 8') == `true` 
+          || contains(Issue.body, '.NET 6 Preview RC1') == `true`
+          || contains(Issue.body, '.NET 6 Preview RC2') == `true`
+          || contains(Issue.body, '.NET 6 Preview GA') == `true`"
+      pass:
+        - labels-add: [":checkered_flag: Release .NET 6"]
+
     # Add to .NET 6 project if .NET 6 label added
     - check:
         - type: query

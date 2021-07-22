@@ -127,7 +127,7 @@ var sdcaModel = sdcaEstimator.Fit(preprocessedTrainData);
 In ML.NET use the [`PermutationFeatureImportance`](xref:Microsoft.ML.PermutationFeatureImportanceExtensions) method for your respective task.
 
 ```csharp
-ImmutableArray<RegressionMetricsStatistics> permutationFeatureImportance =
+var permutationFeatureImportance =
     mlContext
         .Regression
         .PermutationFeatureImportance(sdcaModel, preprocessedTrainData, permutationCount:3);

@@ -55,7 +55,7 @@ Whether or not finalizers are run as part of application termination is implemen
 > [!NOTE]
 > The .NET Framework implementation makes every reasonable effort to call finalizers for all of its objects that have not yet been garbage collected, unless such cleanup has been suppressed (by a call to the library method `GC.SuppressFinalize`, for example).
   
- If you need to perform cleanup reliably when an application exist, register a handler for the <xref:System.AppDomain.ProcessExit?displayProperty=fullName> event. That handler would ensure <xref:System.IDisposable.Dispose?displayProperty=nameWithType> (or, <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType>) has been called for all objects that require cleanup before application exit. Because you can't call *Finalize* directly, and you can't guarantee the garbage collector calls all finalizers before exit, you must use `Dispose` or `DisposeAsync` to ensure resources are freed.
+ If you need to perform cleanup reliably when an application exits, register a handler for the <xref:System.AppDomain.ProcessExit?displayProperty=fullName> event. That handler would ensure <xref:System.IDisposable.Dispose?displayProperty=nameWithType> (or, <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType>) has been called for all objects that require cleanup before application exit. Because you can't call *Finalize* directly, and you can't guarantee the garbage collector calls all finalizers before exit, you must use `Dispose` or `DisposeAsync` to ensure resources are freed.
 
 ## Using finalizers to release resources
 

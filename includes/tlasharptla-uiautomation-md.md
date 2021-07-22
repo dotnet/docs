@@ -1,1 +1,0 @@
-Microsoft UI Automation

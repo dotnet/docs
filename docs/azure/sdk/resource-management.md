@@ -47,7 +47,7 @@ Set up a way to authenticate to Azure with Azure Identity. Some options are:
 
 More information and different authentication approaches using Azure Identity can be found in [this document](https://docs.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet).
 
-### Authenticate the Client
+### Authenticate the client
 
 The default option to create an authenticated client is to use `DefaultAzureCredential`. Since all management APIs go through the same endpoint, in order to interact with resources, only one top-level `ArmClient` has to be created.
 

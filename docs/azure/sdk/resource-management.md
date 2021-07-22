@@ -129,7 +129,7 @@ Console.WriteLine($"Vnet: {id.Parent.Name}");
 Console.WriteLine($"Subnet: {id.Name}");
 ```
 
-### Managing Existing Resources By Id
+### Manage Existing Resources By Id
 
 Performing operations on resources that already exist is a common use case when using the management SDK. In this scenario you usually have the identifier of the resource you want to work on as a string. Although the new object hierarchy is great for provisioning and working within the scope of a given parent, it is a tad awkward when it comes to this specific scenario.  
 
@@ -148,7 +148,7 @@ string resourceId = "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourc
 // We know the availability set is a resource group level identifier since it has a resource group name in its string
 ResourceGroupResourceIdentifier id = resourceId;
 // We then construct a new armClient to work with
-ArmClient armClient = new ArmClient(new DefaultAzureCredential());
+var armClient = new ArmClient(new DefaultAzureCredential());
 // Next we get the specific subscription this resource belongs to
 Subscription subscription = await armClient.GetSubscriptions().GetAsync(id.SubscriptionId);
 // Next we get the specific resource group this resource belongs to
@@ -278,7 +278,7 @@ if (myRG == null)
 
 Imagine that our company requires all virtual machines to be tagged with the owner. We're tasked with writing a program to add the tag to any missing virtual machines in a given resource group.
 
- ```csharp
+```csharp
 // First we construct our armClient
 var armClient = new ArmClient(new DefaultAzureCredential());
 
@@ -301,9 +301,9 @@ await foreach(VirtualMachine vm in vmContainer.ListAsync())
         await vm.StartAddTag("owner", GetOwner()).WaitForCompletionAsync();
     }
 }
- ```
+```
 
-For more detailed examples, take a look at [samples](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/resourcemanager/Azure.ResourceManager.Core/samples) we have available.
+For more detailed examples, see the [samples](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/resourcemanager/Azure.ResourceManager.Core/samples) we have available.
 
 ## Troubleshoot
 

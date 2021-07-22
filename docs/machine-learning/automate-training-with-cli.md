@@ -1,7 +1,7 @@
 ---
 title: Automate model training with the ML.NET CLI
 description: Discover how to use the ML.NET CLI tool to automatically train the best model from the command-line.
-ms.date: 06/03/2020
+ms.date: 07/22/2021
 ms.custom: how-to, mlnet-tooling
 #Customer intent: As a developer, I want to use ML.NET CLI to automatically train the "best model" from the command-prompt. I also want to understand the output provided by the tool (metrics and output assets)
 ---
@@ -47,10 +47,10 @@ You can run it the same way on *Windows PowerShell*, *macOS/Linux bash*, or *Win
 
 The ML task commands in the CLI generate the following assets in the output folder:
 
-- A serialized model .zip ("best model") ready to use for running predictions.
 - C# solution with:
-  - C# code to run/score that generated model (to make predictions in your end-user apps with that model).
-  - C# code with the training code used to generate that model (for learning purposes or model retraining).
+  - A console app to run/score the generated model (to make predictions in your end-user apps with that model).
+  - A console app with the training code used to generate that model (for learning purposes or model retraining).
+    - This also include the serialized model .zip ("best model") ready to use for running predictions.
 - Log file with information of all iterations/sweeps across the multiple algorithms evaluated, including their detailed configuration/pipeline.
 
 The first two assets can directly be used in your end-user apps (ASP.NET Core web app, services, desktop app, etc.) to make predictions with that generated ML model.

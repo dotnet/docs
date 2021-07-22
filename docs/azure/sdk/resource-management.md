@@ -22,7 +22,7 @@ Those `Azure.ResourceManager.*`package follows the [new Azure SDK guidelines](ht
 > [!NOTE]
 > *Azure.ResourceManager.** packages are currently in Public Preview and may be subject to breaking changes in the future.
 
-##  Getting started 
+## Get started 
 
 ### Install the package
 

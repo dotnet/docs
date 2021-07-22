@@ -13,11 +13,11 @@ With the management libraries, you can write configuration and deployment progra
 
 Those `Azure.ResourceManager.*` packages follow the [new Azure SDK guidelines](https://azure.github.io/azure-sdk/general_introduction.html). The guidelines enforce core capabilities that are shared amongst all Azure SDKs. For example:
 
--  The intuitive Azure Identity library that provides authentication modules
--  User-friendly API design that resembles the Azure resource hierachy 
+-  The intuitive Azure Identity library that provides authentication modules.
+-  User-friendly API design that resembles the Azure resource hierarchy.
 -  An HTTP pipeline with custom policies.
 -  Error handling.
--  Distributed tracing
+-  Distributed tracing.
 
 > [!NOTE]
 > *Azure.ResourceManager.** packages are currently in Public Preview and may be subject to breaking changes in the future.

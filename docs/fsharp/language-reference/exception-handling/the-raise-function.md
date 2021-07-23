@@ -1,7 +1,7 @@
 ---
 title: "Exceptions: raise and reraise functions"
 description: Learn how the F# 'raise' and 'reraise' functions are used to indicate that an error or exceptional condition has occurred.
-ms.date: 05/16/2016
+ms.date: 07/23/2021
 ---
 # Exceptions: the raise Function
 

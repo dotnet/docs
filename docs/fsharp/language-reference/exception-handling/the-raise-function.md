@@ -36,7 +36,7 @@ argument from a caller to some other library method, and the library method rais
 must be passed on to the caller.
 
 The `reraise` function may not be used on the `with` block of `try`/`with` constructs in computed lists,
-arrays, sequences or computation expressions including `task { .. }` or `async { .. }`.
+arrays, sequences, or computation expressions including `task { .. }` or `async { .. }`.
 
 ```fsharp
 open System

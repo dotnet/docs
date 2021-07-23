@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Culture creation and case mapping in globalization-invariant mode"
 description: Learn about the globalization breaking change in .NET 6 where the creation of new cultures is restricted and case mapping support extends to all characters in globalization-invariant mode.
-ms.date: 07/22/2021
+ms.date: 07/23/2021
 ---
 # Culture creation and case mapping in globalization-invariant mode
 
@@ -40,28 +40,20 @@ Starting in .NET 6:
 
 ## Reason for change
 
-The culture-creation change was introduced to more easily diagnosis culture-related problems. Some users are unaware that their apps are running in an environment where globalization-invariant mode is enabled. They may experience unexpected behaviors due to globalization-invariant mode and don't make the association, so it's hard to diagnose the issue.
+The culture-creation change was introduced to more easily diagnose culture-related problems. Some users are unaware that their apps are running in an environment where globalization-invariant mode is enabled. They may experience unexpected behavior and don't make the association with globalization-invariant mode, so it's hard to diagnose the issue.
 
 The full case-mapping support was introduced for better usability and experience in globalization-invariant mode.
 
 ## Recommended action
 
-In most cases, no action is needed. However, if you desire the previous behavior, you can set a configuration switch or environment variable to allow creation of any culture in globalization-invariant mode.
-
-Application configuration file:
-
-Set `System.Globalization.PredefinedCulturesOnly` to `false`.
-
-Environment variable:
-
-Set `DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY` to `false`.
+In most cases, no action is needed. However, if you desire the previous behavior, you can set a run-time configuration option to allow creation of any culture in globalization-invariant mode. For more information, see [Predefined cultures](../../../run-time-config/globalization.md#predefined-cultures).
 
 ## Affected APIs
 
 - <xref:System.Globalization.CultureInfo.%23ctor%2A>
 - <xref:System.Globalization.CultureInfo.CreateSpecificCulture(System.String)?displayProperty=fullName>
 - <xref:System.Globalization.CultureInfo.GetCultureInfo%2A?displayProperty=fullName>
-- <xref:System.Globalization.CultureAndRegionInfoBuilder?displayProperty=fullName>
+- <xref:System.Globalization.RegionInfo.%23ctor%2A>
 - Any APIs that perform string casing, comparison, or searching
 
 ## See also

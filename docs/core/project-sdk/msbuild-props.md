@@ -621,6 +621,7 @@ You can configure some run-time behaviors by specifying MSBuild properties in th
 
 - [ConcurrentGarbageCollection](#concurrentgarbagecollection)
 - [InvariantGlobalization](#invariantglobalization)
+- [PredefinedCulturesOnly](#predefinedculturesonly)
 - [RetainVMGarbageCollection](#retainvmgarbagecollection)
 - [ServerGarbageCollection](#servergarbagecollection)
 - [ThreadPoolMaxThreads](#threadpoolmaxthreads)
@@ -648,6 +649,18 @@ The `InvariantGlobalization` property configures whether the app runs in *global
   <InvariantGlobalization>true</InvariantGlobalization>
 </PropertyGroup>
 ```
+
+### PredefinedCulturesOnly
+
+In .NET 6 and later versions, the `PredefinedCulturesOnly` property configures whether apps can create cultures other than the invariant culture when [globalization-invariant mode(https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md) is enabled. The default is `true`. Set the value to `false` to allow creation of any new culture in globalization-invariant mode.
+
+```xml
+<PropertyGroup>
+  <PredefinedCulturesOnly>false</PredefinedCulturesOnly>
+</PropertyGroup>
+```
+
+For more information, see [Culture creation and case mapping in globalization-invariant mode](../compatibility/globalization/6.0/culture-creation-invariant-mode.md).
 
 ### RetainVMGarbageCollection
 

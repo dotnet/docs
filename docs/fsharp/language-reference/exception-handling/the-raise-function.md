@@ -6,7 +6,7 @@ ms.date: 05/16/2016
 # Exceptions: the raise Function
 
 The `raise` function is used to indicate that an error or exceptional condition has occurred. Information about the error is captured in an exception object.
-The `reraise` function is used in certain `try`/`with` constructs to rethrow an exception handled in a `with` block.
+The `reraise` function is used to propagate a handled exception up the call chain.
 
 ## Syntax
 

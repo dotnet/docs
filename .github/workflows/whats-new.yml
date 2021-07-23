@@ -54,6 +54,7 @@ jobs:
         id: dotnet-whatsnew
         env:
           GitHubKey: ${{ secrets.GITHUB_TOKEN }}
+          OspoKey: ${{ secrets.OSPO_KEY }}
         run: |
           ./.github/workflows/dependencies/run-dotnet-whatsnew.sh -o dotnet -r docs -s './docs/whats-new'
 

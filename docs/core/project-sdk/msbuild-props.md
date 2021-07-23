@@ -652,7 +652,7 @@ The `InvariantGlobalization` property configures whether the app runs in *global
 
 ### PredefinedCulturesOnly
 
-In .NET 6 and later versions, the `PredefinedCulturesOnly` property configures whether apps can create cultures other than the invariant culture when [globalization-invariant mode(https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md) is enabled. The default is `true`. Set the value to `false` to allow creation of any new culture in globalization-invariant mode.
+In .NET 6 and later versions, the `PredefinedCulturesOnly` property configures whether apps can create cultures other than the invariant culture when [globalization-invariant mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md) is enabled. The default is `true`. Set the value to `false` to allow creation of any new culture in globalization-invariant mode.
 
 ```xml
 <PropertyGroup>

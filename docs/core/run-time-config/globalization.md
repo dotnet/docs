@@ -90,7 +90,7 @@ Project file:
 
 ## Predefined cultures
 
-- Configures whether apps can create cultures other than the invariant culture when [globalization-invariant mode(https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md) is enabled.
+- Configures whether apps can create cultures other than the invariant culture when [globalization-invariant mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md) is enabled.
 - If you omit this setting, .NET restricts the creation of cultures in globalization-invariant mode. This is equivalent to setting the value to `true`.
 - For more information, see [Culture creation and case mapping in globalization-invariant mode](../compatibility/globalization/6.0/culture-creation-invariant-mode.md).
 

@@ -96,6 +96,6 @@ Project file:
 
 | | Setting name | Values | Introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.Globalization.PredefinedCulturesOnly` | `false` - Allow creation of any culture.<br/>`true` - In globalization-invariant mode, don't allow creation of any culture except the invariant culture. | .NET 6 |
-| **MSBuild property** | `PredefinedCulturesOnly` | `false` - Allow creation of any culture.<br/>`true` - In globalization-invariant mode, don't allow creation of any culture except the invariant culture. | .NET 6 |
-| **Environment variable** | `DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY` | `false` - Allow creation of any culture.<br/>`true` - In globalization-invariant mode, don't allow creation of any culture except the invariant culture. | .NET 6 |
+| **runtimeconfig.json** | `System.Globalization.PredefinedCulturesOnly` | `true` - In globalization-invariant mode, don't allow creation of any culture except the invariant culture.<br/>`false` - Allow creation of any culture. | .NET 6 |
+| **MSBuild property** | `PredefinedCulturesOnly` | `true` - In globalization-invariant mode, don't allow creation of any culture except the invariant culture.<br/>`false` - Allow creation of any culture. | .NET 6 |
+| **Environment variable** | `DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY` | `true` - In globalization-invariant mode, don't allow creation of any culture except the invariant culture.<br/>`false` - Allow creation of any culture. | .NET 6 |

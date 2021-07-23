@@ -1,7 +1,7 @@
 ---
 title: How to handle overflow JSON or use JsonElement or JsonNode in System.Text.Json
 description: "Learn how to handle overflow JSON or use JsonElement or JsonNode while using System.Text.Json to serialize and deserialize JSON in .NET."
-ms.date: 11/30/2020
+ms.date: 07/21/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 dev_langs:
@@ -17,7 +17,7 @@ ms.topic: how-to
 
 # How to handle overflow JSON or use JsonElement or JsonNode in System.Text.Json
 
-This article shows how to handle overflow JSON with the [`System.Text.Json`](xref:System.Text.Json) namespace. It also shows how to deserialize into `JsonElement` or `JsonNode`, as an alternative for other scenarios where the target type might not perfectly match all of the JSON being deserialized.
+This article shows how to handle overflow JSON with the [`System.Text.Json`](xref:System.Text.Json) namespace. It also shows how to deserialize into <xref:System.Text.Json.JsonElement> or <xref:System.Text.Json.Nodes.JsonNode>, as an alternative for other scenarios where the target type might not perfectly match all of the JSON being deserialized.
 
 ## Handle overflow JSON
 
@@ -89,7 +89,7 @@ The following example shows a round trip from JSON to a deserialized object and 
 
 ::: zone pivot="dotnet-6-0"
 
-If you just want to be flexible about what JSON to accept for a particular property, an alternative is to deserialize into <xref:System.Text.Json.JsonElement> or `JsonNode`. Any valid JSON property can be deserialized into `JsonElement` or `JsonNode`. Choose `JsonElement` to create an immutable object or `JsonNode` to create a mutable object.
+If you just want to be flexible about what JSON to accept for a particular property, an alternative is to deserialize into <xref:System.Text.Json.JsonElement> or <xref:System.Text.Json.Nodes.JsonNode>. Any valid JSON property can be deserialized into `JsonElement` or `JsonNode`. Choose `JsonElement` to create an immutable object or `JsonNode` to create a mutable object.
 
 The following example shows a round trip from JSON and back to JSON for a class that includes properties of type `JsonElement` and `JsonNode`.
 
@@ -99,7 +99,7 @@ The following example shows a round trip from JSON and back to JSON for a class 
 
 ::: zone pivot="dotnet-core-3-1,dotnet-5-0"
 
-If you just want to be flexible about what JSON to accept for a particular property, an alternative is to deserialize into <xref:System.Text.Json.JsonElement>. Any valid JSON property can be deserialized into `JsonElement`. `JsonNode` is not supported in .NET 5 and earlier versions.
+If you just want to be flexible about what JSON to accept for a particular property, an alternative is to deserialize into <xref:System.Text.Json.JsonElement>. Any valid JSON property can be deserialized into <xref:System.Text.Json.JsonElement>. <xref:System.Text.Json.Nodes.JsonNode> is not supported in .NET 5 and earlier versions.
 
 The following example shows a round trip from JSON and back to JSON for a class that includes properties of type `JsonElement`.
 

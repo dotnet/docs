@@ -66,6 +66,8 @@ In addition to its options, the `dotnet build` command accepts MSBuild options, 
 
 Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; however, the default verbosity of the output is different.
 
+[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+
 ## Arguments
 
 `PROJECT | SOLUTION`

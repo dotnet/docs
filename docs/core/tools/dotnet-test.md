@@ -1,7 +1,7 @@
 ---
 title: dotnet test command
 description: The dotnet test command is used to execute unit tests in a given project.
-ms.date: 04/29/2020
+ms.date: 07/20/2021
 ---
 # dotnet test
 
@@ -47,6 +47,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 ### Implicit restore
 
 [!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
+
+[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
 
 ## Arguments
 

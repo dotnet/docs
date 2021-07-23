@@ -84,6 +84,8 @@ For more information, see the following resources:
 - [Visual Studio publish profiles (.pubxml) for ASP.NET Core app deployment](/aspnet/core/host-and-deploy/visual-studio-publish-profiles)
 - [dotnet msbuild](dotnet-msbuild.md)
 
+[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+
 ## Arguments
 
 - **`PROJECT|SOLUTION`**

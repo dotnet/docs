@@ -54,6 +54,8 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
+[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+
 ## Arguments
 
 `PROJECT | SOLUTION`

@@ -48,6 +48,8 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
+[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+
 ## Options
 
 <!-- markdownlint-disable MD012 -->

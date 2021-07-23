@@ -96,9 +96,13 @@ If the `cache` contains the `letter` key, and the `value` is an instance of an `
 
 #### Additional extension methods
 
-The `IMemoryCache` comes with many convenience-based extension methods, including an asynchronous version
+The `IMemoryCache` comes with many convenience-based extension methods, including an asynchronous `GetOrCreateAsync`:
 
-<xref:Microsoft.Extensions.Caching.Memory.CacheExtensions.GetOrCreateAsync%2A>
+- <xref:Microsoft.Extensions.Caching.Memory.CacheExtensions.Get%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Memory.CacheExtensions.GetOrCreate%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Memory.CacheExtensions.GetOrCreateAsync%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Memory.CacheExtensions.Set%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Memory.CacheExtensions.TryGetValue%2A?displayProperty=nameWithType>
 
 #### Put it all together
 
@@ -168,6 +172,10 @@ Z is still in cache. The 'Z' character is the 26 letter in the English alphabet.
 ```
 
 Since the absolute expiration is set, all the cached items will eventually be evicted.
+
+### Worker service caching strategy
+
+
 
 ## Distributed caching
 

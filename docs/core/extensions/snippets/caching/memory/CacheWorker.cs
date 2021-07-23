@@ -1,11 +1,11 @@
-﻿using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
+﻿using System;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace CachingExamples.Memory
 {
@@ -13,6 +13,7 @@ namespace CachingExamples.Memory
     {
         private readonly ILogger<CacheWorker> _logger;
         private readonly HttpClient _httpClient;
+        private readonly PhotoCacheSignal _cacheSignal;
         private readonly IMemoryCache _cache;
         private readonly TimeSpan _updateInterval = TimeSpan.FromHours(3);
 
@@ -21,8 +22,9 @@ namespace CachingExamples.Memory
         public CacheWorker(
             ILogger<CacheWorker> logger,
             HttpClient httpClient,
+            PhotoCacheSignal cacheSignal,
             IMemoryCache cache) =>
-            (_logger, _httpClient, _cache) = (logger, httpClient, cache);
+            (_logger, _httpClient, _cacheSignal, _cache) = (logger, httpClient, cacheSignal, cache);
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
@@ -30,20 +32,27 @@ namespace CachingExamples.Memory
             {
                 _logger.LogInformation("Updating cache.");
 
-                Photo[]? photos =
-                    await _httpClient.GetFromJsonAsync<Photo[]>(
-                        Url, stoppingToken);
+                try
+                {
+                    Photo[]? photos =
+                        await _httpClient.GetFromJsonAsync<Photo[]>(
+                            Url, stoppingToken);
 
-                if (photos is { Length: > 0 })
-                {
-                    _cache.Set("Photos", photos);
-                    _logger.LogInformation(
-                        "Cache updated with {Count} photos.", photos.Length);
+                    if (photos is { Length: > 0 })
+                    {
+                        _cache.Set("Photos", photos);
+                        _logger.LogInformation(
+                            "Cache updated with {Count:#,#} photos.", photos.Length);
+                    }
+                    else
+                    {
+                        _logger.LogWarning(
+                            "Unable to fetch photos to update cache.");
+                    }
                 }
-                else
+                finally
                 {
-                    _logger.LogWarning(
-                        "Unable to fetch photos to update cache.");
+                    _cacheSignal.Set();
                 }
 
                 try

@@ -38,6 +38,25 @@ must be passed on to the caller.
 The `reraise` function may not be used on the `with` block of `try`/`with` constructs in computed lists,
 arrays, sequences or computation expressions including `task { .. }` or `async { .. }`.
 
+```fsharp
+open System
+
+let getFirstCharacter(value: string) =
+    try
+        value.[0]
+    with :? IndexOutOfRangeException as e ->
+        reraise()
+
+let s = getFirstCharacter("")
+Console.WriteLine($"The first character is {s}")
+
+// The example displays the following output:
+//   System.IndexOutOfRangeException: Index was outside the bounds of the array.
+//      at System.String.get_Chars(Int32 index)
+//      at getFirstCharacter(String value)
+//      at <StartupCode>.main@()
+```
+
 ## See also
 
 - [Exception Handling](index.md)

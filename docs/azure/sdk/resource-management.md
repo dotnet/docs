@@ -320,6 +320,6 @@ For more detailed examples, see the [samples](https://github.com/Azure/azure-sdk
 - [Creating a Virtual Network](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager.Core/samples/Sample3_CreatingAVirtualNetwork.md)
 - [.NET Management Library Code Samples](https://docs.microsoft.com/samples/browse/?branch=master&languages=csharp&term=managing%20using%20Azure%20.NET%20SDK)
 
-### Additional Documentation
+### Additional resources
 
 For more information on Azure SDK, please refer to [this website](https://azure.github.io/azure-sdk/).

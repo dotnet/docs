@@ -90,11 +90,11 @@ This mainly consists of List or Create operations. For most things, the parent w
 
 This represents a full resource object which contains a `Data` property exposing the details as a **[Resource]Data** type. It also has access to all of the operations and like the **[Resource]Operations** object is already scoped to a specific resource in Azure.
 
-### Structured Resource Identifier
+### Structured resource identifier
 
 Instead of implementing your own parsing logic, you can implicitly cast a resource identifier string into an object which will do the parsing for you.
 
-There are 3 types of ResourceIdentifiers and they correspond to which level the resource lives at:
+There are three types of resource identifiers and they correspond to the level at which the resource lives at:
 
 - A resource that lives on a tenant will have a `TenantResourceIdentifier`.
 - A resource that lives under a subscription will have a `SubscriptionResourceIdentifer`.
@@ -131,9 +131,9 @@ Console.WriteLine($"Subnet: {id.Name}");
 
 ### Manage Existing Resources By Id
 
-Performing operations on resources that already exist is a common use case when using the management SDK. In this scenario you usually have the identifier of the resource you want to work on as a string. Although the new object hierarchy is great for provisioning and working within the scope of a given parent, it is a tad awkward when it comes to this specific scenario.  
+Performing operations on resources that already exist is a common use case when using the management SDK. In this scenario, you usually have the identifier of the resource you want to work on as a string. Although the new object hierarchy is great for provisioning and working within the scope of a given parent, it's a tad awkward when it comes to this specific scenario.  
 
-Here is an example how you to access an `AvailabilitySet` object and manage it directly with its id: 
+The following example shows how to access an `AvailabilitySet` object and manage it directly with its ID: 
 
 ```csharp
 using Azure.Identity;
@@ -322,4 +322,4 @@ For more detailed examples, see the [samples](https://github.com/Azure/azure-sdk
 
 ### Additional resources
 
-For more information on Azure SDK, please refer to [this website](https://azure.github.io/azure-sdk/).
+For more information on Azure SDK, refer to [this website](https://azure.github.io/azure-sdk/).

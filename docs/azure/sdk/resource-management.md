@@ -5,24 +5,24 @@ ms.date: 07/21/2020
 ms.author: nickzhums
 author: nickzhums
 ---
-#  Resource management using the Azure SDK for .NET
+# Resource management using the Azure SDK for .NET
 
 The .NET SDK's management (or "management plane") libraries, the names of which all begin with `Azure.ResourceManager` (for example: `Azure.ResourceManager.Compute`), help you create, provision, and otherwise manage Azure resources from .NET code. All Azure services have corresponding management libraries.
 
-With the management libraries, you can write configuration and deployment programs to perform the same tasks that you can through the Azure portal, Azure CLI, or other resource management tools. 
+With the management libraries, you can write configuration and deployment programs to perform the same tasks that you can through the Azure portal, Azure CLI, or other resource management tools.
 
 Those `Azure.ResourceManager.*` packages follow the [new Azure SDK guidelines](https://azure.github.io/azure-sdk/general_introduction.html). The guidelines enforce core capabilities that are shared amongst all Azure SDKs. For example:
 
--  The intuitive Azure Identity library that provides authentication modules.
--  User-friendly API design that resembles the Azure resource hierarchy.
--  An HTTP pipeline with custom policies.
--  Error handling.
--  Distributed tracing.
+- The intuitive Azure Identity library that provides authentication modules.
+- User-friendly API design that resembles the Azure resource hierarchy.
+- An HTTP pipeline with custom policies.
+- Error handling.
+- Distributed tracing.
 
 > [!NOTE]
 > *Azure.ResourceManager.** packages are currently in Public Preview and may be subject to breaking changes in the future.
 
-## Get started 
+## Get started
 
 ### Install the package
 
@@ -36,12 +36,11 @@ Install-Package Azure.ResourceManager.Compute -Version 1.0.0-beta.1
 Install-Package Azure.ResourceManager.Network -Version 1.0.0-beta.1
 Install-Package Azure.ResourceManager.Resources -Version 1.0.0-beta.1
 ```
-
 ### Prerequisites
 
 Set up a way to authenticate to Azure with Azure Identity. Some options are:
 
-- Through the [Azure CLI login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli).
+- Through the [Azure CLI login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli)
 - Via [Visual Studio](https://docs.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet#authenticating-via-visual-studio)
 - Setting [environment variables](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager.Core/docs/AuthUsingEnvironmentVariables.md)
 
@@ -96,8 +95,9 @@ This represents a full resource object which contains a `Data` property exposing
 Instead of implementing your own parsing logic, you can implicitly cast a resource identifier string into an object which will do the parsing for you.
 
 There are 3 types of ResourceIdentifiers and they correspond to which level the resource lives at:
+
 - A resource that lives on a tenant will have a `TenantResourceIdentifier`.
-- A resource that lives under a subscription will have a `SubscriptionResourceIdentifer`.  
+- A resource that lives under a subscription will have a `SubscriptionResourceIdentifer`.
 - A resource that lives under a resource group will have a `ResourceGroupResourceIdentifier`.
 
 You can usually tell by the id string itself which type it is, but if you are unsure you can always cast it onto a `ResourceIdentifier` and use the Try methods to retrieve the values.
@@ -173,6 +173,7 @@ AvailabilitySet availabilitySet = await availabilitySetOperations.GetAsync();
 ```
 
 ### `tryGet` and `doesExists` convenience methods
+
 If you are not sure if a resource you want to get exists, or you just want to check if it exists, you can use `tryGet()` or `doesExists()` methods, which can be invoque from any [Resource]Container class.
 
 `tryGet()` and `tryGetAsync()` are going to return a null object if the specified resource name or id does not exists. On the other hand, `doesExists()` and `doesExistsAsync()` is going to return a boolean, depending if the specified resource exists.
@@ -307,12 +308,12 @@ For more detailed examples, see the [samples](https://github.com/Azure/azure-sdk
 
 ## Troubleshoot
 
--   If you find a bug or have a suggestion, file an issue via [GitHub issues](https://github.com/Azure/azure-sdk-for-net/issues) and make sure you add the "Preview" label to the issue.
--   If you need help, check [previous
-    questions](https://stackoverflow.com/questions/tagged/azure+.net)
-    or ask new ones on StackOverflow using azure and .NET tags.
--   If having trouble with authentication, go to [DefaultAzureCredential documentation](https://docs.microsoft.com/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet).
+- If you find a bug or have a suggestion, file an issue via [GitHub issues](https://github.com/Azure/azure-sdk-for-net/issues) and make sure you add the "Preview" label to the issue.
+- If you need help, check [previous questions](https://stackoverflow.com/questions/tagged/azure+.net) or ask new ones on StackOverflow using azure and .NET tags.
+- If having trouble with authentication, go to [DefaultAzureCredential documentation](https://docs.microsoft.com/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet).
+
 ## Next steps
+
 ### More sample code
 
 - [Managing Resource Groups](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager.Core/samples/Sample2_ManagingResourceGroups.md)
@@ -320,4 +321,5 @@ For more detailed examples, see the [samples](https://github.com/Azure/azure-sdk
 - [.NET Management Library Code Samples](https://docs.microsoft.com/samples/browse/?branch=master&languages=csharp&term=managing%20using%20Azure%20.NET%20SDK)
 
 ### Additional Documentation
+
 For more information on Azure SDK, please refer to [this website](https://azure.github.io/azure-sdk/).

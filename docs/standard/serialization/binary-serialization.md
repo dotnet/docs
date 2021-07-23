@@ -31,7 +31,7 @@ Binary serialization allows modifying private members inside an object and there
 
 ### Serializable types
 
-> [!div class="mx-tdCol2BreakAll"]
+> [!div class="mx-tdBreakAll"]
 > | Type | Notes |
 > | - | - |
 > | <xref:Microsoft.CSharp.RuntimeBinder.RuntimeBinderException?displayProperty=nameWithType> | Starting in .NET Core 2.0.4. |

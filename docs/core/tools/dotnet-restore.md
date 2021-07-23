@@ -75,6 +75,8 @@ There are three specific settings that `dotnet restore` ignores:
 
   Support for cross-platform package signature verification was added in the .NET 5.0.100 SDK.
 
+[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+
 ## Arguments
 
 - **`ROOT`**

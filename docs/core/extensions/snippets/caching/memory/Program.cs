@@ -11,7 +11,7 @@ using IHost host = Host.CreateDefaultBuilder(args)
         services.AddHttpClient<CacheWorker>();
         services.AddHostedService<CacheWorker>();
         services.AddScoped<PhotoService>();
-        services.AddSingleton<PhotoCacheSignal>();
+        services.AddSingleton(typeof(CacheSignal<>));
     })
     .Build();
 

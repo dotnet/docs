@@ -9,16 +9,16 @@ namespace CachingExamples.Memory
     public sealed class PhotoService
     {
         private readonly IMemoryCache _cache;
-        private readonly PhotoCacheSignal _cacheSignal;
+        private readonly CacheSignal<Photo> _cacheSignal;
         private readonly ILogger<PhotoService> _logger;
 
         public PhotoService(
             IMemoryCache cache,
-            PhotoCacheSignal cacheSignal,
+            CacheSignal<Photo> cacheSignal,
             ILogger<PhotoService> logger) =>
             (_cache, _cacheSignal, _logger) = (cache, cacheSignal, logger);
 
-        public async IAsyncEnumerable<Photo> GetPhotosAsync(Func<Photo, bool> filter)
+        public async IAsyncEnumerable<Photo> GetPhotosAsync(Func<Photo, bool>? filter = default)
         {
             try
             {
@@ -32,6 +32,9 @@ namespace CachingExamples.Memory
 
                             return Task.FromResult(Array.Empty<Photo>());
                         });
+
+                // If no filter is provided, use a pass-thru.
+                filter ??= _ => true;
 
                 foreach (Photo? photo in photos)
                 {

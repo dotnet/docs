@@ -2,7 +2,7 @@
 
 namespace CachingExamples.Memory
 {
-    public class PhotoCacheSignal
+    public sealed class CacheSignal<T>
     {
         private AsyncAutoResetEvent _signal = new(false);
 

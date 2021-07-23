@@ -13,7 +13,7 @@ namespace CachingExamples.Memory
     {
         private readonly ILogger<CacheWorker> _logger;
         private readonly HttpClient _httpClient;
-        private readonly PhotoCacheSignal _cacheSignal;
+        private readonly CacheSignal<Photo> _cacheSignal;
         private readonly IMemoryCache _cache;
         private readonly TimeSpan _updateInterval = TimeSpan.FromHours(3);
 
@@ -22,7 +22,7 @@ namespace CachingExamples.Memory
         public CacheWorker(
             ILogger<CacheWorker> logger,
             HttpClient httpClient,
-            PhotoCacheSignal cacheSignal,
+            CacheSignal<Photo> cacheSignal,
             IMemoryCache cache) =>
             (_logger, _httpClient, _cacheSignal, _cache) = (logger, httpClient, cacheSignal, cache);
 

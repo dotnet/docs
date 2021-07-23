@@ -173,12 +173,18 @@ Z is still in cache. The 'Z' character is the 26 letter in the English alphabet.
 
 Since the absolute expiration is set, all the cached items will eventually be evicted.
 
-### Worker Service caching strategy
+## Worker Service caching strategy
 
 One common strategy for caching data, is updating the cache independently from the consuming data services. The *Worker Service* template is a great example, as the <xref:Microsoft.Extensions.Hosting.BackgroundService> runs independent (or in the background) from the other application code. When an application starts running that hosts an implementation of the <xref:Microsoft.Extensions.Hosting.IHostedService>, the corresponding implementation (in this case the `BackgroundService` or "worker") start running in the same process. These hosted services are registered with DI as singletons, through the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)> extension method. Other services can be registered with DI with any [service lifetime](dependency-injection.md#service-lifetimes).
 
 > [!IMPORTANT]
 > The service lifetime's are very important to understand. When you call <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache%2A> to register all of the in-memory caching services, the services are registered as singletons.
+
+### Photo service scenario
+
+Imagine you're developing a photo service that relies on third-party API accessible via HTTP. This photo data doesn't change very often, but there is a lot of it. Each photo is represented by a simple `record`:
+
+:::code source="snippets/caching/memory/Photo.cs":::
 
 In the following example, you'll see several services being registered with DI. Each service has a single responsibility.
 
@@ -188,19 +194,19 @@ In the preceding C# code:
 
 - The generic host is created with [defaults](generic-host.md#default-builder-settings).
 - In-memory caching services are registered with <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache%2A>.
-- An `HttpClient` instance is registered for DI specific to the `CacheWorker` class with <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)>.
-- The `CacheWorker` class is registered for DI as a hosted service with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)>.
-- The `PhotoService` class is registered for DI as a scoped lifetime with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)>.
-- The `PhotoCacheSignal` class is registered for DI as a singleton lifetime with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection,%60%600)>.
-- A `host` is instantiated from the builder, and started asynchronously.
+- An `HttpClient` instance is registered for the `CacheWorker` class with <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)>.
+- The `CacheWorker` class is registered with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)>.
+- The `PhotoService` class is registered with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)>.
+- The `CacheSignal<T>` class is registered with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A>.
+- The `host` is instantiated from the builder, and started asynchronously.
 
-The `PhotoService` is responsible for getting photos that match a given criteria:
+The `PhotoService` is responsible for getting photos that match a given criteria (or `filter`):
 
-:::code source="snippets/caching/memory/PhotoService.cs":::
+:::code source="snippets/caching/memory/PhotoService.cs" highlight="10-14":::
 
 In the preceding C# code:
 
-- The constructor requires an `IMemoryCache`, `PhotoCacheSignal`, and `ILogger`.
+- The constructor requires an `IMemoryCache`, `CacheSignal<Photo>`, and `ILogger`.
 - The `GetPhotosAsync` method:
   - Defines a `Func<Photo, bool> filter` parameter, and returns an `IAsyncEnumerable<Photo>`.
   - Calls and waits for the `_cacheSignal.WaitAsync()` to release, this ensures that the cache is populated before accessing the cache.
@@ -214,6 +220,28 @@ Consumers of this service are free to call `GetPhotosAsync` method, and handle p
 The `CacheWorker` is a subclass of <xref:Microsoft.Extensions.Hosting.BackgroundService>:
 
 :::code source="snippets/caching/memory/CacheWorker.cs":::
+
+In the preceding C# code:
+
+- The constructor requires an `Ilogger`, `HttpClient`, `CacheSignal<Photo>`, and `IMemoryCache`.
+- The defines an `_updateInterval` of three hours.
+- The `ExecuteAsync` method:
+  - Loops while the app is running.
+  - Makes an HTTP request to `"https://jsonplaceholder.typicode.com/photos"`, and maps the response as an array of `Photo` objects.
+  - The array of photos is placed in the `IMemoryCache` under the `"Photos"` key.
+  - The `_cacheSignal.Set()` is called, releasing any consumers who were waiting for the signal.
+  - The call to <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> is awaited, given the update interval.
+  - After delaying for three hours, the cache is again updated.
+
+The asynchronous signal is based on an "async coordination primitive" detailed in an old DevBlog from Stephen Toub, which is still relevant today. For more information, see [Building async coordination primitives: `AsyncAutoResetEvent`](https://devblogs.microsoft.com/pfxteam/building-async-coordination-primitives-part-2-asyncautoresetevent).
+
+:::code source="snippets/caching/memory/AsyncAutoResetEvent.cs":::
+
+The `CacheSignal<T>` relies on an instance of `AsyncAutoResetEvent`:
+
+:::code source="snippets/caching/memory/CacheSignal.cs":::
+
+In the preceding C# code, the decorator pattern is used to wrap an instance of the `AsyncAutoResetEvent`. Since the `CacheSignal<T>` is registered as a singleton, it can be used across all service lifetimes with any generic type &mdash; in this case, the `Photo`. It is responsible for signaling the seeding of the cache.
 
 ## Distributed caching
 

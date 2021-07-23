@@ -34,14 +34,14 @@ The following steps assume that a valid <xref:System.Data.Linq.DataContext> conn
 
 3. Submit the change to the database.
 
-## Example
+## Example 1
 
 This first code example queries the database for order details that belong to Order #11000, marks these order details for deletion, and submits these changes to the database.
 
 [!code-csharp[System.Data.Linq.Table#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/system.data.linq.table/cs/program.cs#3)]
 [!code-vb[System.Data.Linq.Table#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.table/vb/module1.vb#3)]
 
-## Example
+## Example 2
 
 In this second example, the objective is to remove an order (#10250). The code first examines the `OrderDetails` table to see whether the order to be removed has children there. If the order has children, first the children and then the order are marked for removal. The <xref:System.Data.Linq.DataContext> puts the actual deletes in correct order so that delete commands sent to the database abide by the database constraints.
 

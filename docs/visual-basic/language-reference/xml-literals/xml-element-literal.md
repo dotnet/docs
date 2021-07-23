@@ -114,7 +114,7 @@ In accordance with the scoping rules for XML namespaces, local prefixes take pre
 
 The Visual Basic compiler converts each global XML namespace that is used by an XML literal into a one local namespace definition in the generated code. Global XML namespaces that are not used do not appear in the generated code.
 
-## Example
+## Example 1
 
 The following example shows how to create a simple XML element that has two nested empty elements.
 
@@ -129,7 +129,7 @@ The example displays the following text. Notice that the literal preserves the s
 </outer>
 ```
 
-## Example
+## Example 2
 
 The following example shows how to use embedded expressions to name an element and create attributes.
 

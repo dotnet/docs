@@ -239,13 +239,13 @@ The return type of an iterator function can be <xref:System.Collections.IEnumera
 
 For more information, see [Iterators](../../programming-guide/concepts/iterators.md).
 
-## Example
+## Example 1
 
 The following example uses the `Function` statement to declare the name, parameters, and code that form the body of a `Function` procedure. The `ParamArray` modifier enables the function to accept a variable number of arguments.
 
 [!code-vb[VbVbalrStatements#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#25)]
 
-## Example
+## Example 2
 
 The following example invokes the function declared in the preceding example.
 

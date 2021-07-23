@@ -71,7 +71,7 @@ If you supply `element`, it must represent a *container element*, that is, a pro
 
 The scope of the elements made available by an `Imports` statement depends on whether you specify `element`. If you specify only `namespace`, all uniquely named members of that namespace, and members of container elements within that namespace, are available without qualification. If you specify both `namespace` and `element`, only the members of that element are available without qualification.
 
-## Example
+## Example 1
 
 The following example returns all the folders in the *C:\\* directory by using the <xref:System.IO.DirectoryInfo> class:
 
@@ -79,7 +79,7 @@ The code has no `Imports` statements at the top of the file. Therefore, the <xre
 
 [!code-vb[VbVbalrStatements#152](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class12.vb#152)]
 
-## Example
+## Example 2
 
 The following example includes `Imports` statements for the referenced namespaces. Therefore, the types do not have to be fully qualified with the namespaces.
 
@@ -87,7 +87,7 @@ The following example includes `Imports` statements for the referenced namespace
 
 [!code-vb[VbVbalrStatements#154](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class12.vb#154)]
   
-## Example
+## Example 3
 
 The following example includes `Imports` statements that create aliases for the referenced namespaces. The types are qualified with the aliases.
 
@@ -95,7 +95,7 @@ The following example includes `Imports` statements that create aliases for the 
 
 [!code-vb[VbVbalrStatements#156](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class12.vb#156)]
 
-## Example
+## Example 4
 
 The following example includes `Imports` statements that create aliases for the referenced types. Aliases are used to specify the types.
 

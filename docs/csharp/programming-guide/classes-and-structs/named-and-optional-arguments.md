@@ -62,7 +62,7 @@ Positional arguments that follow any out-of-order named arguments are invalid.
 PrintOrderDetails(productName: "Red Mug", 31, "Gift Shop");
 ```
 
-## Example
+## Example 1
 
 The following code implements the examples from this section along with some additional ones.  
 
@@ -101,7 +101,7 @@ IntelliSense uses brackets to indicate optional parameters, as shown in the foll
 > [!NOTE]
 > You can also declare optional parameters by using the .NET <xref:System.Runtime.InteropServices.OptionalAttribute> class. `OptionalAttribute` parameters do not require a default value.
 
-## Example
+## Example 2
 
 In the following example, the constructor for `ExampleClass` has one parameter, which is optional. Instance method `ExampleMethod` has one required parameter, `required`, and two optional parameters, `optionalstr` and `optionalint`. The code in `Main` shows the different ways in which the constructor and method can be invoked.
 

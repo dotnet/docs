@@ -194,6 +194,27 @@ In the preceding C# code:
 - The `PhotoCacheSignal` class is registered for DI as a singleton lifetime with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection,%60%600)>.
 - A `host` is instantiated from the builder, and started asynchronously.
 
+The `PhotoService` is responsible for getting photos that match a given criteria:
+
+:::code source="snippets/caching/memory/PhotoService.cs":::
+
+In the preceding C# code:
+
+- The constructor requires an `IMemoryCache`, `PhotoCacheSignal`, and `ILogger`.
+- The `GetPhotosAsync` method:
+  - Defines a `Func<Photo, bool> filter` parameter, and returns an `IAsyncEnumerable<Photo>`.
+  - Calls and waits for the `_cacheSignal.WaitAsync()` to release, this ensures that the cache is populated before accessing the cache.
+  - Calls `_cache.GetOrCreateAsync()`, asynchronously getting all of the photos in the cache.
+  - The `factory` argument logs a warning, and returns an empty photo array - this should never happen.
+  - Each photo in the cache is iterated, filtered and materialized with `yield return`.
+  - Finally, the cache signal is reset.
+
+Consumers of this service are free to call `GetPhotosAsync` method, and handle photos accordingly. No `HttpClient` is required as the cache contains the photos.
+
+The `CacheWorker` is a subclass of <xref:Microsoft.Extensions.Hosting.BackgroundService>:
+
+:::code source="snippets/caching/memory/CacheWorker.cs":::
+
 ## Distributed caching
 
 In some scenarios, a distributed cache is required. A distributed cache can support higher scale-out than an in-memory cache. Using a distributed cache offloads the cache memory to an external process.

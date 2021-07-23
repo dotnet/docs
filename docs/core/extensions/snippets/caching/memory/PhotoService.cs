@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 
 namespace CachingExamples.Memory
 {
-    public class PhotoService
+    public sealed class PhotoService
     {
         private readonly IMemoryCache _cache;
         private readonly PhotoCacheSignal _cacheSignal;

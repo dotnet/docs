@@ -7,14 +7,14 @@ namespace CachingExamples.Memory
     /// Inspired by:
     ///   https://devblogs.microsoft.com/pfxteam/building-async-coordination-primitives-part-2-asyncautoresetevent/
     /// </summary>
-    public sealed class AsyncAutoResetEvent
+    internal sealed class AsyncAutoResetEvent
     {
         private readonly Queue<TaskCompletionSource<bool>> _completionQueue = new();
         private bool _isSet;
 
-        public AsyncAutoResetEvent(bool isSet = false) => _isSet = isSet;
+        internal AsyncAutoResetEvent(bool isSet = false) => _isSet = isSet;
 
-        public Task WaitAsync()
+        internal Task WaitAsync()
         {
             lock (_completionQueue)
             {
@@ -32,7 +32,7 @@ namespace CachingExamples.Memory
             }
         }
 
-        public void Set()
+        internal void Set()
         {
             TaskCompletionSource<bool>? toRelease = null;
 

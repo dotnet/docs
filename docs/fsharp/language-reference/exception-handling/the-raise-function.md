@@ -31,7 +31,7 @@ The `raise` function can also be used to raise .NET exceptions, as shown in the 
 ## Reraising an exception
 
 The `reraise` function can be used in a `with` block to propagate a handled exception up the call chain.
-Note that `reraise` does not take an exception operand. It is most useful when a method passes on an
+`reraise` does not take an exception operand. It's most useful when a method passes on an
 argument from a caller to some other library method, and the library method raises an exception that
 must be passed on to the caller.
 

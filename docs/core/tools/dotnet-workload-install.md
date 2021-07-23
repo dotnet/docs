@@ -40,11 +40,11 @@ The `dotnet workload` commands operate in the context of specific SDK versions. 
 
 ### Advertising manifests
 
-The names and versions of the assets that a workload installation requires are maintained in *manifests*. The `dotnet workload install` command downloads the available manifests before it installs a workload. The local copy of a manifest then provides the information needed to find and download the assets for a workload.
+The names and versions of the assets that a workload installation requires are maintained in *manifests*. By default, the `dotnet workload install` command downloads the latest available manifests before it installs a workload. The local copy of a manifest then provides the information needed to find and download the assets for a workload.
 
-The `dotnet workload list` command compares the versions of installed workloads with the currently available versions. It gets the currently available versions from the locally stored manifests.  When it finds that a version newer than the installed version is available, it advertises that fact in the command output. For this reason, the manifests are also known as *advertising manifests*. These newer-version notifications in `dotnet workload list` are available starting in .NET 6 Preview 7.
+The `dotnet workload list` command compares the versions of installed workloads with the currently available versions.  When it finds that a version newer than the installed version is available, it advertises that fact in the command output. These newer-version notifications in `dotnet workload list` are available starting in .NET 6 Preview 7.
 
-To ensure that the local manifest copies are up-to-date, the advertising manifests are downloaded asynchronously in the background when any of the following commands are run:
+To enable these notifications, the latest available versions of the manifests are downloaded and stored as *advertising manifests*.  These downloads happen asynchronously in the background when any of the following commands are run.
 
 * [dotnet build](dotnet-build.md)
 * [dotnet pack](dotnet-pack.md)

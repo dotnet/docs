@@ -6,7 +6,7 @@ ms.assetid: 09b53aa1-b13c-476c-a461-e82fcacd2a8b
 ---
 # Channel Factory
 
-This sample demonstrates how a client application can create a channel with the <xref:System.ServiceModel.ChannelFactory> class instead of a generated client. This sample is based on the [Getting Started](getting-started-sample.md) that implements a calculator service.
+The [ChannelFactory sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how a client application can create a channel with the <xref:System.ServiceModel.ChannelFactory> class instead of a generated client. This sample is based on the [Getting Started](getting-started-sample.md) that implements a calculator service.
 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
@@ -62,17 +62,8 @@ Press <ENTER> to terminate client.
 
 ### To run the sample cross machine
 
-1. Replace "localhost" in the following code with the fully-qualified name of the machine that is running the service.
+Replace "localhost" in the following code with the fully-qualified name of the machine that is running the service.
 
-    ```csharp
-    EndpointAddress address = new EndpointAddress("http://localhost/servicemodelsamples/service.svc");
-    ```
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Client\ChannelFactory`
+```csharp
+EndpointAddress address = new EndpointAddress("http://localhost/servicemodelsamples/service.svc");
+```

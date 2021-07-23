@@ -31,7 +31,7 @@ Binary serialization allows modifying private members inside an object and there
 
 ### Serializable types
 
-> [!div class="mx-tdCol2BreakAll"]
+> [!div class="mx-tdBreakAll"]
 > | Type | Notes |
 > | - | - |
 > | <xref:Microsoft.CSharp.RuntimeBinder.RuntimeBinderException?displayProperty=nameWithType> | Starting in .NET Core 2.0.4. |
@@ -341,7 +341,7 @@ Contains classes that can be used for serializing and deserializing objects.
 - [XML and SOAP Serialization](xml-and-soap-serialization.md)\
 Describes the XML serialization mechanism that is included with the common language runtime.
 
-- [Security and Serialization](../../framework/misc/security-and-serialization.md)\
+- [Security and Serialization](/previous-versions/dotnet/framework/code-access-security/security-and-serialization)\
 Describes the secure coding guidelines to follow when writing code that performs serialization.
 
 - [.NET Remoting](/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))\

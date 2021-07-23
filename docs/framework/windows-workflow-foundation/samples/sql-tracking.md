@@ -6,7 +6,7 @@ ms.assetid: bcaebeb1-b9e5-49e8-881b-e49af66fd341
 ---
 # SQL tracking
 
-This sample demonstrates how to write a custom SQL tracking participant that writes tracking records to a SQL database. Windows Workflow Foundation (WF) provides workflow tracking to gain visibility into the execution of a workflow instance. The tracking runtime emits workflow tracking records during the execution of the workflow. For more information about workflow tracking, see [Workflow Tracking and Tracing](../workflow-tracking-and-tracing.md).
+The [SqlTracking sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/basic/Tracking/SqlTracking/CS) demonstrates how to write a custom SQL tracking participant that writes tracking records to a SQL database. Windows Workflow Foundation (WF) provides workflow tracking to gain visibility into the execution of a workflow instance. The tracking runtime emits workflow tracking records during the execution of the workflow. For more information about workflow tracking, see [Workflow Tracking and Tracing](../workflow-tracking-and-tracing.md).
 
 ## Use the sample
 
@@ -17,7 +17,7 @@ This sample demonstrates how to write a custom SQL tracking participant that wri
    > [!NOTE]
    > The script creates the database on the default instance of SQL Express. If you want to install it on a different database instance, edit the Trackingsetup.cmd script.
 
-3. Open SqlTrackingSample.sln in Visual Studio 2010.
+3. Open SqlTrackingSample.sln in Visual Studio.
 
 4. Press **Ctrl**+**Shift**+**B** to build the solution.
 
@@ -47,15 +47,6 @@ This sample demonstrates how to write a custom SQL tracking participant that wri
 
     > [!NOTE]
     > The Trackingcleanup.cmd attempts to delete the database in your local computer SQL Express. If you are using another SQL server instance, edit Trackingcleanup.cmd.
-
-> [!IMPORTANT]
-> The samples may already be installed on your computer. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\SqlTracking`
 
 ## See also
 

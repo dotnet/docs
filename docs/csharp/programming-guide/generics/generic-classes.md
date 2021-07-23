@@ -31,7 +31,7 @@ Generic classes encapsulate operations that are not specific to a particular dat
   
      For example, if you are designing a class that will be used to create items in a generics-based collection, you may have to implement an interface such as <xref:System.IComparable%601> where `T` is the type of your class.  
   
- For an example of a simple generic class, see [Introduction to Generics](./index.md).  
+ For an example of a simple generic class, see [Introduction to Generics](../../fundamentals/types/generics.md).  
   
  The rules for type parameters and constraints have several implications for generic class behavior, especially regarding inheritance and member accessibility. Before proceeding, you should understand some terms. For a generic class `Node<T>,` client code can reference the class either by specifying a type argument, to create a closed constructed type (`Node<int>`). Alternatively, it can leave the type parameter unspecified, for example when you specify a generic base class, to create an open constructed type (`Node<T>`). Generic classes can inherit from concrete, closed constructed, or open constructed base classes:  
   
@@ -65,6 +65,6 @@ Generic classes encapsulate operations that are not specific to a particular dat
 
 - <xref:System.Collections.Generic>
 - [C# Programming Guide](../index.md)
-- [Generics](./index.md)
+- [Generics](../../fundamentals/types/generics.md)
 - [Saving the State of Enumerators](/archive/blogs/wesdyer/saving-the-state-of-enumerators)
 - [An Inheritance Puzzle, Part One](/archive/blogs/ericlippert/an-inheritance-puzzle-part-one)

@@ -46,4 +46,4 @@ You can consult the documents in the [More Resources](#more-resources) section b
 ## More resources
 
 * [Common Type System](./base-types/common-type-system.md)
-* [Common Language Specification](language-independence-and-language-independent-components.md)
+* [Common Language Specification](language-independence.md)

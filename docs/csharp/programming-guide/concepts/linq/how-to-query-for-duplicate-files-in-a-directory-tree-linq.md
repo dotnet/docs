@@ -1,6 +1,7 @@
 ---
 title: "How to query for duplicate files in a directory tree (LINQ) (C#)"
 description: Learn how to use LINQ in C# to query for duplicate file names in different directories and how to query for files whose size and LastWrite times also match.
+ms.topic: how-to
 ms.date: 07/20/2015
 ms.assetid: 1ff5562b-0d30-46d1-b426-a04e8f78c840
 ---

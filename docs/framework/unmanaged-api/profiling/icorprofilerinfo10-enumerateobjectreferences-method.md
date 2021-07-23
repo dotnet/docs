@@ -27,17 +27,14 @@ HRESULT EnumerateObjectReferences( [in] ObjectID objectId,
 
 ## Parameters
 
-- `objectId`
+`objectId`
+[in] The object to enumerate references on.
 
-  \[in] The object to enumerate references on.
+`callback`
+[in] The function that will be called with the references for the object.
 
-- `callback`
-
-  \[in] The function that will be called with the references for the object.
-
-- `clientData`
-
-  \[in] Profiler-provided data to pass to the `callback` function.
+`clientData`
+[in] Profiler-provided data to pass to the `callback` function.
 
 ## Remarks
 
@@ -51,7 +48,7 @@ The `EnumerateObjectReferences` method is similar to [ObjectReferences](icorprof
 
 **Library:** CorGuids.lib
 
-**.NET Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
+**.NET Versions:** [!INCLUDE[net_core_30](../../../../includes/net-core-30-md.md)]
 
 ## See also
 

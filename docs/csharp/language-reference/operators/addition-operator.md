@@ -1,7 +1,7 @@
 ---
-description: "+ and += operators - C# reference"
 title: "+ and += operators - C# reference"
-ms.date: 04/23/2020
+description: "Learn about the C# addition operator and how it works with operands of numeric, string, or delegate types."
+ms.date: 06/30/2021
 f1_keywords: 
   - "+_CSharpKeyword"
   - "+=_CSharpKeyword"
@@ -30,6 +30,8 @@ When one or both operands are of type [string](../builtin-types/reference-types.
 Beginning with C# 6, [string interpolation](../tokens/interpolated.md) provides a more convenient way to format strings:
 
 [!code-csharp-interactive[string interpolation](snippets/shared/AdditionOperator.cs#UseStringInterpolation)]
+
+Beginning with C# 10, you can use string interpolation to initialize a constant string when all the expressions used for placeholders are also constant strings.
 
 ## Delegate combination
 

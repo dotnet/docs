@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: Argument '<argument1>' must be less than or equal to the length of argument '<argument2>"
+description: "Learn more about: Argument '<argument1>' must be less than or equal to the length of argument '<argument2>'"
 title: "Argument '<argument1>' must be less than or equal to the length of argument '<argument2>'"
 ms.date: 07/20/2015
 f1_keywords: 

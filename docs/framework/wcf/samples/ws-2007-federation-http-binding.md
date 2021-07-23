@@ -6,7 +6,7 @@ ms.assetid: 91c1b477-a96e-4bf5-9330-5e9312113371
 ---
 # WS 2007 Federation HTTP Binding
 
-This sample demonstrates the use of <xref:System.ServiceModel.WS2007FederationHttpBinding>, a standard binding that you can use to build federated scenarios that support version 1.3 of the WS-Trust specification.
+The [WS2007FederationHttp sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates the use of <xref:System.ServiceModel.WS2007FederationHttpBinding>, a standard binding that you can use to build federated scenarios that support version 1.3 of the WS-Trust specification.
 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
@@ -33,7 +33,7 @@ The sample makes the `ICalculator` contract available using the `ws2007Federatio
 ```
 
 On the [\<security>](../../configure-apps/file-schema/wcf/security-element-of-ws2007federationhttpbinding.md), the `security` value specifies which security mode should be used. In this sample, `message` security is used, which is why the [\<message>](../../configure-apps/file-schema/wcf/message-element-of-ws2007federationhttpbinding.md) is specified inside the [\<security>](../../configure-apps/file-schema/wcf/security-element-of-ws2007federationhttpbinding.md). The [\<issuer>](../../configure-apps/file-schema/wcf/issuer.md) element inside the [\<message>](../../configure-apps/file-schema/wcf/message-element-of-ws2007federationhttpbinding.md) specifies the address and binding for the STS that issues a security token to the client so that the client can authenticate to the `ICalculator` service.
-  
+
 The configuration of this binding on the service is shown in the following code:
 
 ```xml
@@ -87,7 +87,7 @@ The behavior for the service is shown in the following code:
   </serviceBehaviors>
 </behaviors>
 ```
-  
+
 The [\<issuedTokenAuthentication>](../../configure-apps/file-schema/wcf/issuedtokenauthentication-of-servicecredentials.md)> allows the service to specify constraints on the tokens it allows clients to present during authentication. This configuration specifies that tokens signed by a certificate whose subject name is CN=STS are accepted by the service.
 
 STS makes a single endpoint available using the standard <xref:System.ServiceModel.WS2007HttpBinding>. The service responds to requests from clients for tokens. If the client is authenticated using a Windows account, the service issues a token that contains the client's user name as a claim. As part of creating the token, STS signs the token using the private key associated with the CN=STS certificate. In addition, it creates a symmetric key and encrypts it using the public key associated with the CN=localhost certificate. In returning the token to the client, STS also returns the symmetric key. The client presents the issued token to the `ICalculator` service and proves that it knows the symmetric key by signing the message with that key.
@@ -105,22 +105,13 @@ Press <ENTER> to terminate client.
 The *Setup.bat* file included with this sample allows you to configure the server and STS with the relevant certificates to run a self-hosted application. The batch file creates two certificates in the LocalMachine/TrustedPeople certificate store. The first certificate has a subject name of CN=STS and is used by STS to sign the security tokens that it issues to the client. The second certificate has a subject name of CN=localhost and is used by STS to encrypt a key in a way that the service can decrypt.
 
 ## To set up, build, and run the sample
-  
+
 1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).
 
 2. Open a Developer Command Prompt for Visual Studio with administrator privileges and run the Setup.bat file to create the required certificates.
 
- This batch file uses *Certmgr.exe* and Makecert.exe, which are distributed with the Windows SDK. However, you must run *Setup.bat* from within a Visual Studio command prompt to enable the script to find these tools.
+This batch file uses *Certmgr.exe* and Makecert.exe, which are distributed with the Windows SDK. However, you must run *Setup.bat* from within a Visual Studio command prompt to enable the script to find these tools.
 
 1. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
 2. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md). If you are using Windows Vista, you must run *Service.exe*, *Client.exe*, and *SecurityTokenService.exe* with elevated privileges (right-click the files and then click **Run as administrator**).
-
-> [!IMPORTANT]
-> The samples may already be installed on your computer. Check for the following (default) directory before continuing:
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory:
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\WS\WS2007FederationHttp`

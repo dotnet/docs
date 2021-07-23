@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: BC30685: '<membername>' is ambiguous across the inherited interfaces '<interfacename1>' and '<interfacename2>"
+description: "Learn more about: BC30685: '<membername>' is ambiguous across the inherited interfaces '<interfacename1>' and '<interfacename2>'"
 title: "'<membername>' is ambiguous across the inherited interfaces '<interfacename1>' and '<interfacename2>'"
 ms.date: 07/20/2015
 f1_keywords:

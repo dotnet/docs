@@ -6,21 +6,12 @@ ms.assetid: 42f03841-286b-42d8-ba58-18c75422bc8e
 ---
 # User Name Password Validator
 
-This sample demonstrates how to implement a custom UserNamePassword Validator. This is useful in cases where none of the built-in UserNamePassword Validation modes is appropriate for the requirements of the application; for example, when username/password pairs are stored in some external store, such as a database. This sample shows a service that has a custom validator that checks for two particular username/password pairs. The client uses such a username/password pair to authenticate to the service.
+The [UserNamePasswordValidator sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how to implement a custom UserNamePassword Validator. This is useful in cases where none of the built-in UserNamePassword Validation modes is appropriate for the requirements of the application; for example, when username/password pairs are stored in some external store, such as a database. This sample shows a service that has a custom validator that checks for two particular username/password pairs. The client uses such a username/password pair to authenticate to the service.
 
-> [!IMPORTANT]
-> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
->
-> `<InstallDrive>:\WF_WCF_Samples`  
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Security\UserNamePasswordValidator`  
-  
 > [!NOTE]
 > Because anyone can construct a Username credential that uses the username/password pairs that the custom validator accepts, the service is less secure than the default behavior provided by the standard UserNamePassword Validator. The standard UserNamePassword Validator attempts to map the provided username/password pair to a Windows account and fails authentication if this mapping fails. The custom UserNamePassword Validator in this sample MUST NOT be used in production code, it is for illustration purposes only.
 
- In summary this sample demonstrates how:
+In summary this sample demonstrates how:
 
 - The client can be authenticated using a Username Token.
 
@@ -28,7 +19,7 @@ This sample demonstrates how to implement a custom UserNamePassword Validator. T
 
 - The server is authenticated using the server's X.509 certificate.
 
- The service exposes a single endpoint for communicating with the service, defined using the configuration file, App.config. The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard `wsHttpBinding` that defaults to using WS-Security and username authentication. The service behavior specifies the `Custom` mode for validating client username/password pairs along with the type of the validator class. The behavior also specifies the server certificate using the `serviceCertificate` element. The server certificate has to contain the same value for the `SubjectName` as the `findValue` in the [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md).
+The service exposes a single endpoint for communicating with the service, defined using the configuration file, App.config. The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard `wsHttpBinding` that defaults to using WS-Security and username authentication. The service behavior specifies the `Custom` mode for validating client username/password pairs along with the type of the validator class. The behavior also specifies the server certificate using the `serviceCertificate` element. The server certificate has to contain the same value for the `SubjectName` as the `findValue` in the [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md).
 
 ```xml
 <system.serviceModel>
@@ -84,7 +75,7 @@ This sample demonstrates how to implement a custom UserNamePassword Validator. T
 </system.serviceModel>
 ```
 
- The client endpoint configuration consists of a configuration name, an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate mode and message `clientCredentialType`.
+The client endpoint configuration consists of a configuration name, an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate mode and message `clientCredentialType`.
 
 ```xml
 <system.serviceModel>
@@ -133,7 +124,7 @@ address="http://localhost:8001/servicemodelsamples/service/username"
   </system.serviceModel>
 ```
 
- The client implementation prompts the user to enter a username and password.
+The client implementation prompts the user to enter a username and password.
 
 ```csharp
 // Get the username and password
@@ -193,7 +184,7 @@ try
 }
 ```
 
- This sample uses a custom UserNamePasswordValidator to validate username/password pairs. The sample implements `CustomUserNamePasswordValidator`, derived from <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>. See the documentation for <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> for more information. This particular custom validator sample implements the `Validate` method to accept two particular username/password pairs as shown in the following code.
+This sample uses a custom UserNamePasswordValidator to validate username/password pairs. The sample implements `CustomUserNamePasswordValidator`, derived from <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>. See the documentation for <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> for more information. This particular custom validator sample implements the `Validate` method to accept two particular username/password pairs as shown in the following code.
 
 ```csharp
 public class CustomUserNameValidator : UserNamePasswordValidator
@@ -203,7 +194,7 @@ public class CustomUserNameValidator : UserNamePasswordValidator
  // This code is for illustration purposes only and
  // MUST NOT be used in a production environment because it
  // is NOT secure.
- public override void Validate(string userName, string password)
+public override void Validate(string userName, string password)
  {
   if (null == userName || null == password)
   {
@@ -218,14 +209,14 @@ public class CustomUserNameValidator : UserNamePasswordValidator
  }
 ```
 
- Once the validator is implemented in service code, the service host must be informed about the validator instance to use. This is done using the following code.
+Once the validator is implemented in service code, the service host must be informed about the validator instance to use. This is done using the following code.
 
 ```csharp
 serviceHost.Credentials.UserNameAuthentication.UserNamePasswordValidationMode = UserNamePasswordValidationMode.Custom;
 serviceHost.Credentials. UserNameAuthentication.CustomUserNamePasswordValidator = new CustomUserNamePasswordValidator();
 ```
 
- Or you can do the same thing in configuration as follows.
+Or you can do the same thing in configuration as follows.
 
 ```xml
 <behaviors>
@@ -244,13 +235,13 @@ serviceHost.Credentials. UserNameAuthentication.CustomUserNamePasswordValidator 
 </behaviors>
 ```
 
- When you run the sample, the operation requests and responses are displayed in the client console window. The client should successfully call all the methods. Press ENTER in the client window to shut down the client.
+When you run the sample, the operation requests and responses are displayed in the client console window. The client should successfully call all the methods. Press ENTER in the client window to shut down the client.
 
 ## Setup Batch File
 
- The Setup.bat batch file included with this sample allows you to configure the server with relevant certificates to run a self-hosted application that requires server certificate-based security. This batch file must be modified to work across machines or to work in a non-self-hosted case.
+The Setup.bat batch file included with this sample allows you to configure the server with relevant certificates to run a self-hosted application that requires server certificate-based security. This batch file must be modified to work across machines or to work in a non-self-hosted case.
 
- The following provides a brief overview of the different sections of the batch files so that they can be modified to run in the appropriate configuration.
+The following provides a brief overview of the different sections of the batch files so that they can be modified to run in the appropriate configuration.
 
 - Creating the server certificate:
 
@@ -282,39 +273,39 @@ serviceHost.Credentials. UserNameAuthentication.CustomUserNamePasswordValidator 
 
 #### To run the sample on the same machine
 
-1. Run Setup.bat from the sample install folder inside a Visual Studio 2012 command prompt. This installs all the certificates required for running the sample.
+1. Run Setup.bat from the sample install folder inside a Visual Studio command prompt. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    > The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.  
-  
-2. Launch Service.exe from service\bin.  
-  
-3. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
-  
-4. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
-  
-#### To run the sample across machines  
-  
-1. Create a directory on the service machine for the service binaries.  
-  
-2. Copy the service program files the service directory on the service machine. Also copy the Setup.bat and Cleanup.bat files to the service machine.  
-  
-3. You need a server certificate with the subject name that contains the fully-qualified domain name of the machine. The configuration file for the server must be updated to reflect this new certificate name.  
-  
-4. Copy the server certificate into the CurrentUser-TrustedPeople store of the client. You need to do this only if the server certificate is not issued by a trusted issuer.  
-  
-5. In the App.config file on the service machine, change the value of the base address to specify a fully-qualified machine name instead of localhost.  
-  
-6. On the service machine, launch Service.exe from a command prompt window.  
-  
-7. Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client machine.  
-  
-8. In the Client.exe.config file on the client machine, change the address value of the endpoint to match the new address of your service.  
-  
-9. On the client machine, launch Client.exe from a command prompt window.  
-  
-10. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
-  
-#### To clean up after the sample  
-  
+    > The Setup.bat batch file is designed to be run from a Visual Studio Command Prompt. The PATH environment variable set within the Visual Studio Command Prompt points to the directory that contains executables required by the Setup.bat script.
+
+2. Launch Service.exe from service\bin.
+
+3. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.
+
+4. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
+
+#### To run the sample across machines
+
+1. Create a directory on the service machine for the service binaries.
+
+2. Copy the service program files the service directory on the service machine. Also copy the Setup.bat and Cleanup.bat files to the service machine.
+
+3. You need a server certificate with the subject name that contains the fully-qualified domain name of the machine. The configuration file for the server must be updated to reflect this new certificate name.
+
+4. Copy the server certificate into the CurrentUser-TrustedPeople store of the client. You need to do this only if the server certificate is not issued by a trusted issuer.
+
+5. In the App.config file on the service machine, change the value of the base address to specify a fully-qualified machine name instead of localhost.
+
+6. On the service machine, launch Service.exe from a command prompt window.
+
+7. Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client machine.
+
+8. In the Client.exe.config file on the client machine, change the address value of the endpoint to match the new address of your service.
+
+9. On the client machine, launch Client.exe from a command prompt window.
+
+10. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
+
+#### To clean up after the sample
+
 1. Run Cleanup.bat in the samples folder once you have finished running the sample. This removes the server certificate from the certificate store.

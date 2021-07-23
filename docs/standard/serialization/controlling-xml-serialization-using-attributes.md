@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "attributes [.NET], XML serialization"
   - "serialization, examples"
   - "serialization, attributes"
-ms.assetid: 47d4c39d-30e1-4c7b-8a2e-301325390647
+ms.topic: how-to
 ---
 # Control XML serialization using attributes
 

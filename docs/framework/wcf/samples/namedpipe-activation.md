@@ -7,19 +7,10 @@ ms.assetid: f3c0437d-006c-442e-bfb0-6b29216e4e29
 
 # NamedPipe Activation
 
-This sample demonstrates hosting a service that uses Windows Process Activation Service (WAS) to activate a service that communicates over names pipes. This sample is based on the [Getting Started](getting-started-sample.md) and requires Windows Vista to run.
+The [NamedPipeActivation sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates hosting a service that uses Windows Process Activation Service (WAS) to activate a service that communicates over named pipes. This sample is based on the [Getting Started](getting-started-sample.md) and requires Windows Vista to run.
 
 > [!NOTE]
 > The set-up procedure and build instructions for this sample are located at the end of this topic.
-
-> [!IMPORTANT]
-> The samples may already be installed on your computer. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Hosting\WASHost\NamedPipeActivation`
 
 ## Sample Details
 
@@ -67,7 +58,7 @@ public class CalculatorService : ICalculator
 }
 ```
 
-The sample uses a modified `netNamedPipeBinding` binding with no security. The binding is specified in the configuration files for the client and service. The binding type for the service is specified in the endpoint element’s `binding` attribute as shown in the following sample configuration.
+The sample uses a modified `netNamedPipeBinding` binding with no security. The binding is specified in the configuration files for the client and service. The binding type for the service is specified in the endpoint element's `binding` attribute as shown in the following sample configuration.
 
 If you want use a secured named pipe binding, change the server's security mode to the desired security setting and run svcutil.exe again on the client to obtain an updated client configuration file.
 
@@ -110,7 +101,7 @@ If you want use a secured named pipe binding, change the server's security mode 
   </system.serviceModel>
 ```
 
-The client’s endpoint information is configured as shown in the following sample code.
+The client's endpoint information is configured as shown in the following sample code.
 
 ```xml
 <system.serviceModel>

@@ -6,12 +6,12 @@ ms.assetid: 502c50b2-9982-46af-ac92-53ad9f61d486
 ---
 # Syndication
 
-This section contains samples that demonstrate Windows Communication Foundation (WCF) syndication.  
-  
-## In This Section  
+This section contains samples that demonstrate Windows Communication Foundation (WCF) syndication.
 
- [Stand-Alone Diagnostics Feed](stand-alone-diagnostics-feed-sample.md)  
- Demonstrates how to create an RSS/Atom feed for syndication with WCF.  
-  
- [Loosely-Typed Extensions](loosely-typed-extensions-sample.md)  
- Demonstrates the basic techniques for working with extension data.
+## In This Section
+
+ [Stand-Alone Diagnostics Feed](stand-alone-diagnostics-feed-sample.md)
+Demonstrates how to create an RSS/Atom feed for syndication with WCF.
+
+ [Loosely-Typed Extensions](loosely-typed-extensions-sample.md)
+Demonstrates the basic techniques for working with extension data.

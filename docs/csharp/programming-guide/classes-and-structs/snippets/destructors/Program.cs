@@ -23,17 +23,15 @@ class Third : Second
     }
 }
 
-class TestDestructors
-{
-    static void Main()
-    {
-        Third t = new Third();
-    }
-}
-/* Output (to VS Output Window):
-    Third's finalizer is called.
-    Second's finalizer is called.
-    First's finalizer is called.
+/* 
+Test with code like the following:
+    Third t = new Third();
+    t = null;
+
+When objects are finalized, the output would be:
+Third's finalizer is called.
+Second's finalizer is called.
+First's finalizer is called.
 */
 //</Snippet1>
 

@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "strings [.NET], comparing"
   - "culture-insensitive string operations, comparisons"
   - "culture parameter"
-ms.assetid: abae50ef-32f7-4a50-a540-fd256fd1aed0
+ms.topic: how-to
 ---
 # Performing Culture-Insensitive String Comparisons
 

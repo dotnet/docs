@@ -13,7 +13,7 @@ ms.assetid: 634132c2-5646-44aa-98c6-f773e2e63882
 
 A variable, property, or function return is declared with a data type that is not CLS-compliant.
 
- For an application to be compliant with the [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS), it must use only CLS-compliant types.
+ For an application to be compliant with the [Language Independence and Language-Independent Components](../../../standard/language-independence.md) (CLS), it must use only CLS-compliant types.
 
  The following Visual Basic data types are not CLS-compliant:
 

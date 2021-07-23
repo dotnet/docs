@@ -3,22 +3,22 @@ title: Syntax used by DebugView property (C#)
 description: Describes the special syntax used by the DebugView property to produce a string representation of expression trees
 author: zspitz
 ms.author: wiwagn
-ms.date: 05/22/2019
+ms.date: 02/14/2021
 ms.topic: reference
 helpviewer_keywords:
 - "expression trees"
 - "debugview"
 ---
 
-# `DebugView` syntax
+# **DebugView** syntax
 
-The `DebugView` property (available only when debugging) provides a string rendering of expression trees. Most of the syntax is fairly straightforward to understand; the special cases are described in the following sections.
+The **DebugView** property (available only when debugging) provides a string rendering of expression trees. Most of the syntax is fairly straightforward to understand; the special cases are described in the following sections.
 
-Each example is followed by a block comment, containing the `DebugView`.
+Each example is followed by a block comment, containing the **DebugView**.
 
 ## ParameterExpression
 
-<xref:System.Linq.Expressions.ParameterExpression?displayProperty=nameWithType> variable names are displayed with a `$` symbol at the beginning.
+<xref:System.Linq.Expressions.ParameterExpression> variable names are displayed with a `$` symbol at the beginning.
 
 If a parameter does not have a name, it is assigned an automatically generated name, such as `$var1` or `$var2`.
 
@@ -38,7 +38,7 @@ ParameterExpression numParam =  Expression.Parameter(typeof(int));
 
 ## ConstantExpression
 
-For <xref:System.Linq.Expressions.ConstantExpression?displayProperty=nameWithType> objects that represent integer values, strings, and `null`, the value of the constant is displayed.
+For <xref:System.Linq.Expressions.ConstantExpression> objects that represent integer values, strings, and `null`, the value of the constant is displayed.
 
 For numeric types that have standard suffixes as C# literals, the suffix is added to the value. The following table shows the suffixes associated with various numeric types.
 
@@ -69,7 +69,7 @@ ConstantExpression expr = Expression.Constant(num);
 
 ## BlockExpression
 
-If the type of a <xref:System.Linq.Expressions.BlockExpression?displayProperty=nameWithType> object differs from the type of the last expression in the block, the type is displayed within angle brackets (`<` and `>`). Otherwise, the type of the <xref:System.Linq.Expressions.BlockExpression> object is not displayed.
+If the type of a <xref:System.Linq.Expressions.BlockExpression> object differs from the type of the last expression in the block, the type is displayed within angle brackets (`<` and `>`). Otherwise, the type of the <xref:System.Linq.Expressions.BlockExpression> object is not displayed.
 
 ### Examples
 
@@ -91,7 +91,7 @@ BlockExpression block =  Expression.Block(typeof(Object), Expression.Constant("t
 
 ## LambdaExpression
 
-<xref:System.Linq.Expressions.LambdaExpression?displayProperty=nameWithType> objects are displayed together with their delegate types.
+<xref:System.Linq.Expressions.LambdaExpression> objects are displayed together with their delegate types.
 
 If a lambda expression does not have a name, it is assigned an automatically generated name, such as `#Lambda1` or `#Lambda2`.
 
@@ -115,7 +115,7 @@ LambdaExpression lambda =  Expression.Lambda<Func<int>>(Expression.Constant(1), 
 
 ## LabelExpression
 
-If you specify a default value for the <xref:System.Linq.Expressions.LabelExpression?displayProperty=nameWithType> object, this value is displayed before the <xref:System.Linq.Expressions.LabelTarget?displayProperty=nameWithType> object.
+If you specify a default value for the <xref:System.Linq.Expressions.LabelExpression> object, this value is displayed before the <xref:System.Linq.Expressions.LabelTarget> object.
 
 The `.Label` token indicates the start of the label. The `.LabelTarget` token indicates the destination of the target to jump to.
 

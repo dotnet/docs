@@ -2,7 +2,7 @@
 title: "What's New in Windows Workflow Foundation in .NET Framework 4.5"
 description: Windows Workflow Foundation in .NET Framework 4.5 introduces many new features, such as new activities, designer capabilities, and workflow development models.
 ms.date: "03/30/2017"
-ms.assetid: 195c43a8-e0a8-43d9-aead-d65a9e6751ec
+ms.topic: "reference"
 ---
 
 # What's New in Windows Workflow Foundation in .NET Framework 4.5
@@ -35,7 +35,7 @@ The built-in activity library contains new activities and new features for exist
 
 ### <a name="BKMK_NoPersistScope"></a> NoPersist Scope
 
-<xref:System.Activities.Statements.NoPersistScope> is a new container activity that prevents a workflow from being persisted when the NoPersistScope’s child activities are executing. This is useful in scenarios where it is not appropriate for the workflow to be persisted, such as when the workflow is using machine-specific resources such as file handles, or during database transactions. Previously, to prevent persistence from occurring during an activity's execution, a custom <xref:System.Activities.NativeActivity> that used a <xref:System.Activities.NoPersistHandle> was required.
+<xref:System.Activities.Statements.NoPersistScope> is a new container activity that prevents a workflow from being persisted when the NoPersistScope's child activities are executing. This is useful in scenarios where it is not appropriate for the workflow to be persisted, such as when the workflow is using machine-specific resources such as file handles, or during database transactions. Previously, to prevent persistence from occurring during an activity's execution, a custom <xref:System.Activities.NativeActivity> that used a <xref:System.Activities.NoPersistHandle> was required.
 
 ### <a name="BKMK_NewFlowchartCapabilities"></a> New Flowchart Capabilities
 
@@ -76,7 +76,7 @@ Workflows in .NET Framework 4 required a fully trusted application domain. In .N
 
 7. Expressions cannot be compiled using <xref:System.Activities.XamlIntegration.TextExpressionCompiler> or the Visual Basic hosted compiler in partial trust, but previously compiled expressions can be run.
 
-8. A single assembly that uses [Level 2 Transparency](../misc/security-transparent-code-level-2.md) cannot be used in .NET Framework 4, [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in full trust, and [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in partial trust.
+8. A single assembly that uses [Level 2 Transparency](/previous-versions/dotnet/framework/code-access-security/security-transparent-code-level-2) cannot be used in .NET Framework 4, [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in full trust, and [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in partial trust.
 
 ## <a name="BKMK_NewDesignerCapabilites"></a> New Designer Capabilities
 
@@ -192,7 +192,7 @@ Activities in .NET Framework 4 used <xref:System.Activities.ActivityDelegate> ob
 
 ### <a name="BKMK_BuildTimeValidation"></a> Build-time validation
 
-In .NET Framework 4, workflow validation errors weren’t counted as build errors during the build of a workflow project. This meant that building a workflow project could succeed even when there were workflow validation errors. In .NET Framework 4.5, workflow validation errors cause the build to fail.
+In .NET Framework 4, workflow validation errors weren't counted as build errors during the build of a workflow project. This meant that building a workflow project could succeed even when there were workflow validation errors. In .NET Framework 4.5, workflow validation errors cause the build to fail.
 
 ### <a name="BKMK_DesignTimeValidation"></a> Design-time background validation
 

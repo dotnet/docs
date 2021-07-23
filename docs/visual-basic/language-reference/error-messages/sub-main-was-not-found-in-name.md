@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: BC30420: 'Sub Main' was not found in '<name>"
+description: "Learn more about: BC30420: 'Sub Main' was not found in '<name>'"
 title: "'Sub Main' was not found in '<name>'"
 ms.date: 07/20/2015
 f1_keywords:

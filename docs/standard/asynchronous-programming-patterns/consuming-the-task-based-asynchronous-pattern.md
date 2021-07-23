@@ -65,7 +65,7 @@ Starting with .NET Framework 4, TAP methods that support cancellation provide at
 
 ```csharp
 var cts = new CancellationTokenSource();
-string result = await DownloadStringAsync(url, cts.Token);
+string result = await DownloadStringTaskAsync(url, cts.Token);
 … // at some point later, potentially on another thread
 cts.Cancel();
 ```
@@ -74,7 +74,7 @@ cts.Cancel();
 
 ```csharp
 var cts = new CancellationTokenSource();
-    IList<string> results = await Task.WhenAll(from url in urls select DownloadStringAsync(url, cts.Token));
+    IList<string> results = await Task.WhenAll(from url in urls select DownloadStringTaskAsync(url, cts.Token));
     // at some point later, potentially on another thread
     …
     cts.Cancel();
@@ -114,7 +114,7 @@ private async void btnDownload_Click(object sender, RoutedEventArgs e)
     btnDownload.IsEnabled = false;
     try
     {
-        txtResult.Text = await DownloadStringAsync(txtUrl.Text,
+        txtResult.Text = await DownloadStringTaskAsync(txtUrl.Text,
             new Progress<int>(p => pbDownloadProgress.Value = p));
     }
     finally { btnDownload.IsEnabled = true; }
@@ -223,14 +223,14 @@ catch(Exception exc)
 
 ```csharp
 string [] pages = await Task.WhenAll(
-    from url in urls select DownloadStringAsync(url));
+    from url in urls select DownloadStringTaskAsync(url));
 ```
 
  You can use the same exception-handling techniques we discussed in the previous void-returning scenario:
 
 ```csharp
 Task<string> [] asyncOps =
-    (from url in urls select DownloadStringAsync(url)).ToArray();
+    (from url in urls select DownloadStringTaskAsync(url)).ToArray();
 try
 {
     string [] pages = await Task.WhenAll(asyncOps);
@@ -583,7 +583,7 @@ public static async Task<T> RetryOnFault<T>(
 ```csharp
 // Download the URL, trying up to three times in case of failure
 string pageContents = await RetryOnFault(
-    () => DownloadStringAsync(url), 3);
+    () => DownloadStringTaskAsync(url), 3);
 ```
 
  You could extend the `RetryOnFault` function further. For example, the function could accept another `Func<Task>` that will be invoked between retries to determine when to try the operation again; for example:
@@ -608,7 +608,7 @@ public static async Task<T> RetryOnFault<T>(
 // Download the URL, trying up to three times in case of failure,
 // and delaying for a second between retries
 string pageContents = await RetryOnFault(
-    () => DownloadStringAsync(url), 3, () => Task.Delay(1000));
+    () => DownloadStringTaskAsync(url), 3, () => Task.Delay(1000));
 ```
 
 ### NeedOnlyOne
@@ -747,7 +747,7 @@ public class AsyncCache<TKey, TValue>
 
 ```csharp
 private AsyncCache<string,string> m_webPages =
-    new AsyncCache<string,string>(DownloadStringAsync);
+    new AsyncCache<string,string>(DownloadStringTaskAsync);
 ```
 
  You can then use this cache in asynchronous methods whenever you need the contents of a web page. The `AsyncCache` class ensures that you're downloading as few pages as possible, and caches the results.

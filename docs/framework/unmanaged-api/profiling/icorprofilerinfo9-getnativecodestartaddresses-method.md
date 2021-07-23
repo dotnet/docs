@@ -29,25 +29,20 @@ HRESULT GetNativeCodeStartAddresses( [in]  FunctionID functionID,
 
 ## Parameters
 
-- `functionId`
+`functionId`
+[in] The ID of the function whose native code start addresses should be returned.
 
-  \[in] The ID of the function whose native code start addresses should be returned.
+`reJitId`
+[in] The identity of the JIT-recompiled function.
 
-- `reJitId`
+`cCodeStartAddresses`
+[in] The maximum size of the `codeStartAddresses` array.
 
-  \[in] The identity of the JIT-recompiled function.
+`pcCodeStartAddresses`
+[out] The number of available addresses.
 
-- `cCodeStartAddresses`
-
-  \[in] The maximum size of the `codeStartAddresses` array.
-
-- `pcCodeStartAddresses`
-
-  \[out] The number of available addresses.
-
-- `codeStartAddresses`
-
-  \[out] An array of `UINT_PTR`, each one of which is the start address for a native body for the specified function.
+`codeStartAddresses`
+[out] An array of `UINT_PTR`, each one of which is the start address for a native body for the specified function.
 
 ## Remarks
 
@@ -61,7 +56,7 @@ When tiered compilation is enabled, a function may have more than one native cod
 
 **Library:** CorGuids.lib
 
-**.NET Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)]
+**.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]
 
 ## See also
 

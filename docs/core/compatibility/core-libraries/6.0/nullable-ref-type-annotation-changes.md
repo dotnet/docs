@@ -1,19 +1,19 @@
 ---
 title: "Breaking change: Nullable reference type annotation changes"
-description: Learn about the .NET 6.0 breaking change in core .NET libraries where some nullable reference type annotations have changed.
-ms.date: 02/11/2021
+description: Learn about the .NET 6 breaking change in core .NET libraries where some nullable reference type annotations have changed.
+ms.date: 06/17/2021
 ---
 # Changes to nullable reference type annotations
 
-In .NET 6.0, some nullability annotations in the .NET libraries have changed.
+In .NET 6, some nullability annotations in the .NET libraries have changed.
 
 ## Change description
 
-In previous .NET versions, some nullable reference type annotations are incorrect, and build warnings are either absent or incorrect. Starting in .NET 6.0, some annotations that were previously applied have been updated. New build warnings will be produced and incorrect build warnings will no longer be produced for the affected APIs.
+In previous .NET versions, some nullable reference type annotations are incorrect, and build warnings are either absent or incorrect. Starting in .NET 6, some annotations that were previously applied have been updated. New build warnings will be produced and incorrect build warnings will no longer be produced for the affected APIs.
 
-Some of these changes are considered to be *breaking* because they can lead to new build-time warnings. When you migrate to .NET 6.0, code that references these APIs will need to be updated.
+Some of these changes are considered to be *breaking* because they can lead to new build-time warnings. When you migrate to .NET 6, code that references these APIs will need to be updated.
 
-Other changes that aren't considered to be breaking are also documented on this page. Any code that references the updated APIs may benefit from removing operators or pragmas that are no longer unnecessary.
+Other changes that aren't considered to be breaking are also documented on this page. Any code that references the updated APIs may benefit from removing operators or pragmas that are no longer necessary.
 
 ## Version introduced
 
@@ -57,6 +57,35 @@ The following table lists the affected APIs:
 | <xref:System.Data.IDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)?displayProperty=nameWithType> | `buffer` parameter type is nullable | Breaking | Preview 1 |
 | <xref:System.Data.Common.DbDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)?displayProperty=nameWithType> | `buffer` parameter type is nullable | Breaking | Preview 1 |
 | <xref:System.Data.Common.DbDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)?displayProperty=nameWithType> | `buffer` parameter type is nullable | Breaking | Preview 1 |
+| <xref:System.Net.HttpListenerContext.AcceptWebSocketAsync%2A?displayProperty=fullName> | `subProtocol` parameter type is nullable | Nonbreaking | Preview 2 |
+| Methods that override <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> and [many others that return `bool`](https://github.com/dotnet/runtime/pull/47598/files) | `[NotNullWhen(true)]` added to first nullable parameter | Breaking | Preview 2 |
+| <xref:System.Collections.Immutable.ImmutableArray%601.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| <xref:System.Collections.Specialized.BitVector32.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `o` parameter | Breaking | Preview 2 |
+| <xref:System.Collections.Specialized.BitVector32.Section.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `o` parameter | Breaking | Preview 2 |
+| <xref:System.Reflection.Metadata.BlobContentId.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| <xref:System.Reflection.Metadata.BlobHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| <xref:System.Reflection.Metadata.CustomDebugInformationHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| <xref:System.Reflection.Metadata.DocumentNameBlobHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| <xref:System.Reflection.Metadata.EntityHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| <xref:System.Reflection.Metadata.GuidHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| <xref:System.Reflection.Metadata.Handle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| <xref:System.Reflection.Metadata.ImportScopeHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| <xref:System.Reflection.Metadata.LocalConstantHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| <xref:System.Reflection.Metadata.NamespaceDefinitionHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| <xref:System.Reflection.Metadata.SequencePoint.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| <xref:System.Reflection.Metadata.SignatureHeader.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| <xref:System.Reflection.Metadata.Ecma335.EditAndContinueLogEntry.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| <xref:System.Reflection.Metadata.Ecma335.LabelHandle.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| <xref:System.Reflection.Emit.Label.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| <xref:System.Reflection.Emit.OpCode.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+| `DateOnly.Equals(System.Object)` | `NotNullWhen(true)` was added to the `value` parameter | Breaking | Preview 2 |
+| `TimeOnly.Equals(System.Object)` | `NotNullWhen(true)` was added to the `value` parameter | Breaking | Preview 2 |
+| <xref:System.Reflection.Pointer.Equals(System.Object)?displayProperty=nameWithType> | `NotNullWhen(true)` was added to the `obj` parameter | Breaking | Preview 2 |
+
+## See also
+
+- [Attributes for null-state static analysis](../../../../csharp/language-reference/attributes/nullable-analysis.md)
+- [Nullable reference type annotation changes in ASP.NET Core](../../aspnet-core/6.0/nullable-reference-type-annotations-changed.md)
 
 <!--
 

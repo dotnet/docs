@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "system.xml.serialization element"
   - "XML serialization, configuration"
   - "<system.xml.serialization> element"
-ms.assetid: 3ce45919-388a-418c-8968-6df0372c73ec
+ms.topic: reference
 ---
 # \<system.xml.serialization> Element
 

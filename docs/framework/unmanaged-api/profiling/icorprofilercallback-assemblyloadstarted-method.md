@@ -30,9 +30,8 @@ HRESULT AssemblyLoadStarted(
   
 ## Parameters
 
-- `assemblyId`
-
-  \[in] Identifies the assembly that is being loaded.
+`assemblyId`
+[in] Identifies the assembly that is being loaded.
 
 ## Remarks  
 

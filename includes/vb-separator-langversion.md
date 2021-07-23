@@ -7,4 +7,4 @@ To use the underscore character as a leading separator, you must add the followi
 </PropertyGroup>
 ```
 
-For more information see [setting the Visual Basic language version](../docs/visual-basic/language-reference/configure-language-version.md).
+For more information see [Select the Visual Basic language version](../docs/visual-basic/language-reference/configure-language-version.md).

@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: BC32053: Copying the value of 'ByRef' parameter '<parametername>' back to the matching argument narrows from type '<typename1>' to type '<typename2>"
+description: "Learn more about: BC32053: Copying the value of 'ByRef' parameter '<parametername>' back to the matching argument narrows from type '<typename1>' to type '<typename2>'"
 title: "Copying the value of 'ByRef' parameter '<parametername>' back to the matching argument narrows from type '<typename1>' to type '<typename2>'"
 ms.date: 07/20/2015
 f1_keywords:

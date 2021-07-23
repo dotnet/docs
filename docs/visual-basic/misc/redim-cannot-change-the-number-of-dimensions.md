@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: ReDim' cannot change the number of dimensions"
+description: "Learn more about: 'ReDim' cannot change the number of dimensions"
 title: "'ReDim' cannot change the number of dimensions"
 ms.date: 07/20/2015
 f1_keywords: 

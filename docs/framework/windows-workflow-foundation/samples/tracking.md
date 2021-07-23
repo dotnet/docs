@@ -14,7 +14,7 @@ This section contains samples that demonstrate workflow tracking in Windows Work
  Demonstrates how to create a custom tracking participant and write the contents of the tracking data to console.
 
  [Tracking Events into Event Tracing in Windows](tracking-events-into-event-tracing-in-windows.md)
- Demonstrates how to enable [!INCLUDE[wf1](../../../../includes/wf1-md.md)] tracking on a workflow service and emit the tracking events in Event Tracing for Windows (ETW).
+ Demonstrates how to enable WF tracking on a workflow service and emit the tracking events in Event Tracing for Windows (ETW).
 
  [SQL Tracking](sql-tracking.md)
  Demonstrates how to write a custom SQL tracking participant that writes tracking records to a SQL database.

@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: BC30955: Value of type '<typename1>' cannot be converted to '<typename2>"
+description: "Learn more about: BC30955: Value of type '<typename1>' cannot be converted to '<typename2>'"
 title: "Value of type '<typename1>' cannot be converted to '<typename2>'"
 ms.date: 07/20/2015
 f1_keywords:

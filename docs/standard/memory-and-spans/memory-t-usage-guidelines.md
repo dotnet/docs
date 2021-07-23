@@ -1,7 +1,7 @@
 ---
 title: "Memory<T> and Span<T> usage guidelines"
 description: This article describes Memory<T> and Span<T>, which are buffers of structured data in .NET Core that can be used in pipelines.
-ms.date: "10/01/2018"
+ms.date: 02/05/2021
 helpviewer_keywords: 
   - "Memory&lt;T&gt; and Span&lt;T&gt; best practices"
   - "using Memory&lt;T&gt; and Span&lt;T&gt;"
@@ -22,7 +22,7 @@ Since buffers can be passed around between APIs, and since buffers can sometimes
 
 - **Lease**. The lease is the length of time that a particular component is allowed to be the consumer of the buffer.
 
-The following pseudo-code example illustrates these three concepts. It includes a `Main` method that instantiates a <xref:System.Memory%601> buffer of type <xref:System.Char>, calls the `WriteInt32ToBuffer` method to write the string representation of an integer to the buffer, and then calls the `DisplayBufferToConsole` method to display the value of the buffer.
+The following pseudo-code example illustrates these three concepts. `Buffer` in the pseudo-code represents a <xref:System.Memory%601> or <xref:System.Span%601> buffer of type <xref:System.Char>. The `Main` method instantiates the buffer, calls the `WriteInt32ToBuffer` method to write the string representation of an integer to the buffer, and then calls the `DisplayBufferToConsole` method to display the value of the buffer.
 
 ```csharp
 using System;
@@ -53,7 +53,7 @@ class Program
 }
 ```
 
-The `Main` method creates the buffer (in this case an <xref:System.Span%601> instance) and so is its owner. Therefore, `Main` is responsible for destroying the buffer when it's no longer in use. It does this by calling the buffer's <xref:System.Span%601.Clear?displayProperty=nameWithType> method. (The <xref:System.Span%601.Clear> method here actually clears the buffer's memory; the <xref:System.Span%601> structure doesn't actually have a method that destroys the buffer.)
+The `Main` method creates the buffer and so is its owner. Therefore, `Main` is responsible for destroying the buffer when it's no longer in use. The pseudo-code illustrates this by calling a `Destroy` method on the buffer. (Neither <xref:System.Memory%601> nor <xref:System.Span%601> actually has a `Destroy` method. You'll see actual code examples later in this article.)
 
 The buffer has two consumers, `WriteInt32ToBuffer` and `DisplayBufferToConsole`. There is only one consumer at a time (first `WriteInt32ToBuffer`, then `DisplayBufferToConsole`), and neither of the consumers owns the buffer. Note also that "consumer" in this context doesn't imply a read-only view of the buffer; consumers can modify the buffer's contents, as `WriteInt32ToBuffer` does, if given a read/write view of the buffer.
 
@@ -222,9 +222,9 @@ class Person
 
 **Rule #7: If you have an IMemoryOwner\<T> reference, you must at some point dispose of it or transfer its ownership (but not both).**
 
-Since a <xref:System.Memory%601> instance may be backed by either managed or unmanaged memory, the owner must call <xref:System.Buffers.MemoryPool%601.Dispose%2A?displayProperty=nameWithType> when work performed on the <xref:System.Memory%601> instance is complete. Alternatively, the owner may transfer ownership of the <xref:System.Buffers.IMemoryOwner%601> instance to a different component, at which point the acquiring component becomes responsible for calling <xref:System.Buffers.MemoryPool%601.Dispose%2A?displayProperty=nameWithType> at the appropriate time (more on this later).
+Since a <xref:System.Memory%601> instance may be backed by either managed or unmanaged memory, the owner must call `Dispose` on <xref:System.Buffers.IMemoryOwner%601> when work performed on the <xref:System.Memory%601> instance is complete. Alternatively, the owner may transfer ownership of the <xref:System.Buffers.IMemoryOwner%601> instance to a different component, at which point the acquiring component becomes responsible for calling `Dispose` at the appropriate time (more on this later).
 
-Failure to call the <xref:System.Buffers.MemoryPool%601.Dispose%2A> method may lead to unmanaged memory leaks or other performance degradation.
+Failure to call the `Dispose` method on an <xref:System.Buffers.IMemoryOwner%601> instance may lead to unmanaged memory leaks or other performance degradation.
 
 This rule also applies to code that calls factory methods like <xref:System.Buffers.MemoryPool%601.Rent%2A?displayProperty=nameWithType>. The caller becomes the owner of the returned <xref:System.Buffers.IMemoryOwner%601> and is responsible for disposing of the instance when finished.
 
@@ -235,7 +235,7 @@ Accepting an instance of this type signals that your component intends to take o
 Any component that transfers ownership of the <xref:System.Buffers.IMemoryOwner%601> instance to a different component should no longer use that instance after the method call completes.
 
 > [!IMPORTANT]
-> If your constructor accepts <xref:System.Buffers.IMemoryOwner%601> as a parameter, its type should implement <xref:System.IDisposable>, and your <xref:System.IDisposable.Dispose%2A> method should call <xref:System.Buffers.MemoryPool%601.Dispose%2A?displayProperty=nameWithType>.
+> If your constructor accepts <xref:System.Buffers.IMemoryOwner%601> as a parameter, its type should implement <xref:System.IDisposable>, and your <xref:System.IDisposable.Dispose%2A> method should call `Dispose` on the <xref:System.Buffers.IMemoryOwner%601> object.
 
 **Rule #9: If you're wrapping a synchronous p/invoke method, your API should accept Span\<T> as a parameter.**
 

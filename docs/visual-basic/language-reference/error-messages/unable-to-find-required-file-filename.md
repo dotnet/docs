@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: BC30655: Unable to find required file '<filename>"
+description: "Learn more about: BC30655: Unable to find required file '<filename>'"
 title: "Unable to find required file '<filename>'"
 ms.date: 07/20/2015
 f1_keywords:
@@ -21,4 +21,4 @@ A file that is required by Visual Studio is missing or damaged.
 
 ## See also
 
-- [Talk to Us](/visualstudio/ide/feedback-options)
+- [Visual Studio feedback options](/visualstudio/ide/feedback-options)

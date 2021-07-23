@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: Method '<methodname>' has no parameter named '<parametername>"
+description: "Learn more about: Method '<methodname>' has no parameter named '<parametername>'"
 title: "Method '<methodname>' has no parameter named '<parametername>'"
 ms.date: 07/20/2015
 f1_keywords: 

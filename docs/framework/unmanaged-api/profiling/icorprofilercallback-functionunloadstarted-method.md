@@ -30,9 +30,8 @@ HRESULT FunctionUnloadStarted(
   
 ## Parameters
 
-- `functionId`
-
-  \[in] The ID of the function that is being unloaded.
+`functionId`
+[in] The ID of the function that is being unloaded.
 
 ## Remarks  
 

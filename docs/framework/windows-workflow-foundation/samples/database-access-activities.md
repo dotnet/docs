@@ -8,18 +8,9 @@ ms.assetid: 174a381e-1343-46a8-a62c-7c2ae2c4f0b2
 
 Database access activities allow you to access a database within a workflow. These activities allow accessing databases to retrieve or modify information and use [ADO.NET](../../data/adonet/index.md) to access the database.
 
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to (download page) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\DbActivities`
-
 ## Database Activities
 
-The following sections detail the list of activities included in this sample.
+The following sections detail the list of activities included in the [DbActivities sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/scenario/ActivityLibrary/DbActivities/CS).
 
 ## DbUpdate
 
@@ -317,7 +308,7 @@ The Setup.cmd script invokes the CreateDb.sql script file, which contains SQL co
 
 ##### To run the sample
 
-1. Open the solution in Visual Studio 2010
+1. Open the solution in Visual Studio
 
 2. To compile the solution, press CTRL+SHIFT+B.
 
@@ -328,6 +319,6 @@ The Setup.cmd script invokes the CreateDb.sql script file, which contains SQL co
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and WF samples. This sample is located in the following directory.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\DbActivities`

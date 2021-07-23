@@ -54,8 +54,6 @@ These rules are the same whether a security-critical member is accessed directly
 
 Application code that is run from the command line runs with full trust. As long as it is not marked as transparent, it can use reflection to access security-critical members. When the same code is run with partial trust (for example, in a sandboxed application domain) the assembly's trust level determines whether it can access security-critical code: If the assembly has a strong name and is installed in the global assembly cache, it is a trusted assembly and can call security-critical members. If it is not trusted, it becomes transparent even though it was not marked as transparent, and it cannot access security-critical members.
 
-For more information about the security model in the .NET Framework 4, see [Security Changes](/previous-versions/dotnet/framework/security/security-changes).
-
 ## Reflection and Transparency
 
 Beginning with the .NET Framework 4, the common language runtime determines the transparency level of a type or member from several factors, including the trust level of the assembly and the trust level of the application domain. Reflection provides the <xref:System.Type.IsSecurityCritical%2A>, <xref:System.Type.IsSecuritySafeCritical%2A>, and <xref:System.Type.IsSecurityTransparent%2A> properties to enable you to discover the transparency level of a type. The following table shows the valid combinations of these properties.
@@ -110,8 +108,7 @@ Avoid writing public members that take <xref:System.Reflection.MethodInfo> param
 - <xref:System.Security.Permissions.ReflectionPermissionFlag>
 - <xref:System.Security.Permissions.ReflectionPermission>
 - <xref:System.Security.Permissions.SecurityPermission>
-- [Security Changes](/previous-versions/dotnet/framework/security/security-changes)
-- [Code Access Security](../misc/code-access-security.md)
+- [Code Access Security](/previous-versions/dotnet/framework/code-access-security/code-access-security)
 - [Security Issues in Reflection Emit](security-issues-in-reflection-emit.md)
 - [Viewing Type Information](viewing-type-information.md)
 - [Applying Attributes](../../standard/attributes/applying-attributes.md)

@@ -6,6 +6,7 @@ ms.author: casoper
 ms.date: 11/13/2020
 ms.topic: tutorial
 ms.prod: dotnet
+recommendations: false
 ---
 <!--markdownlint-disable DOCSMD011 -->
 # Read values from an analog-to-digital converter
@@ -17,7 +18,7 @@ In this topic, you will use .NET to read values from an ADC as you modulate the 
 ## Prerequisites
 
 - [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
-- [MCP3008](https://www.microchip.com/wwwproducts/MCP3008) <span class="docon docon-navigate-external x-hidden-focus"></span> analog-to-digital converter
+- [MCP3008](https://www.microchip.com/wwwproducts/MCP3008) analog-to-digital converter
 - Three-pin potentiometer
 - Breadboard
 - Jumper wires
@@ -98,7 +99,7 @@ Congratulations! You've used SPI to read values from an analog-to-digital conver
 
 ## Get the source code
 
-The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/AdcTutorial) <span class="docon docon-navigate-external x-hidden-focus"></span>.
+The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/AdcTutorial).
 
 ## Next steps
 

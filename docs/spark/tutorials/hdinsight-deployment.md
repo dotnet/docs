@@ -4,6 +4,7 @@ description: Discover how to deploy a .NET for Apache Spark application to HDIns
 ms.date: 10/09/2020
 ms.topic: tutorial
 ms.custom: mvc
+recommendations: false
 #Customer intent: As a developer, I want to deployment .NET for Apache Spark application to HDInsight.
 ---
 
@@ -126,7 +127,7 @@ Next, you use the Azure Storage Explorer to upload the following five files to t
 
 3. The *install-worker.sh* is a script that lets you copy .NET for Apache Spark dependent files into the nodes of your cluster.
 
-   Create a new file named **install-worker.sh** in your local computer, and paste the [install-worker.sh contents](https://raw.githubusercontent.com/dotnet/spark/master/deployment/install-worker.sh) located on GitHub. Then, upload *install-worker.sh* to your blob container.
+   Create a new file named **install-worker.sh** in your local computer, and paste the [install-worker.sh contents](https://raw.githubusercontent.com/dotnet/spark/main/deployment/install-worker.sh) located on GitHub. Then, upload *install-worker.sh* to your blob container.
 
 4. Your cluster needs the *publish.zip* file that contains your app's published files. Navigate to your published folder, **mySparkApp/bin/Release/netcoreapp3.1/ubuntu.16.04-x64**, and locate **publish.zip**. Then upload *publish.zip* to your blob container.
 

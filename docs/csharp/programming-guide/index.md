@@ -15,25 +15,25 @@ ms.assetid: ac0f23a2-6bf3-4077-be99-538ae5fd3bc5
 
 This section provides detailed information on key C# language features and features accessible to C# through .NET.  
   
- Most of this section assumes that you already know something about C# and general programming concepts. If you are a complete beginner with programming or with C#, you might want to visit the [Introduction to C# Tutorials](../tutorials/intro-to-csharp/index.md) or [.NET In-Browser Tutorial](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1), where no prior programming knowledge is required.  
+ Most of this section assumes that you already know something about C# and general programming concepts. If you are a complete beginner with programming or with C#, you might want to visit the [Introduction to C# Tutorials](../tour-of-csharp/tutorials/index.md) or [.NET In-Browser Tutorial](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1), where no prior programming knowledge is required.  
   
  For information about specific keywords, operators, and preprocessor directives, see [C# Reference](../language-reference/index.md). For information about the C# Language Specification, see [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction).  
   
 ## Program sections
 
-[Inside a C# Program](./inside-a-program/index.md)  
+[Inside a C# Program](/dotnet/csharp/fundamentals/program-structure)  
   
-[Main() and Command-Line Arguments](./main-and-command-args/index.md)  
+[Main() and Command-Line Arguments](../fundamentals/program-structure/main-command-line.md)  
 
 ## Language Sections
 
 [Statements, Expressions, and Operators](./statements-expressions-operators/index.md)  
 
- [Types](./types/index.md)  
+ [Types](/dotnet/csharp/fundamentals/types)  
 
- [Classes and Structs](./classes-and-structs/index.md)  
+ [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)  
   
- [Interfaces](./interfaces/index.md)  
+ [Interfaces](../fundamentals/types/interfaces.md)  
 
  [Delegates](./delegates/index.md)  
 
@@ -47,17 +47,17 @@ This section provides detailed information on key C# language features and featu
   
  [Events](./events/index.md)  
   
- [Generics](./generics/index.md)  
+ [Generics](../fundamentals/types/generics.md)  
   
  [Iterators](./concepts/iterators.md)
   
  [LINQ Query Expressions](../linq/index.md)  
   
- [Namespaces](./namespaces/index.md)  
+ [Namespaces](../fundamentals/types/namespaces.md)  
   
- [Unsafe Code and Pointers](./unsafe-code-pointers/index.md)  
+ [Unsafe Code and Pointers](../language-reference/unsafe-code.md)  
   
- [XML Documentation Comments](./xmldoc/index.md)  
+ [XML Documentation Comments](/dotnet/csharp/language-reference/xmldoc)  
   
 ## Platform Sections
 
@@ -69,7 +69,7 @@ This section provides detailed information on key C# language features and featu
   
  [Collections](./concepts/collections.md)  
   
- [Exceptions and Exception Handling](./exceptions/index.md)  
+ [Exceptions and Exception Handling](/dotnet/csharp/fundamentals/exceptions)  
   
  [File System and the Registry (C# Programming Guide)](./file-system/index.md)  
   

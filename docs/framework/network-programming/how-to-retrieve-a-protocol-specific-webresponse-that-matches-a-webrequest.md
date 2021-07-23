@@ -14,13 +14,13 @@ This example shows how to retrieve a protocol-specific WebResponse that matches 
 ## Example  
   
 ```csharp  
-WebRequest req = WebRequest.Create("http://www.contoso.com/");  
-WebResponse resp = req.GetResponse();  
+HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://www.contoso.com/");
+HttpWebResponse resp = (HttpWebResponse)req.GetResponse();
 ```  
   
 ```vb  
-Dim req As WebRequest = WebRequest.Create("http://www.contoso.com")  
-Dim resp As WebResponse = req.GetResponse()  
+Dim req As HttpWebRequest = CType(WebRequest.Create("http://www.contoso.com"), HttpWebRequest)
+Dim resp As HttpWebResponse = CType(req.GetResponse(), HttpWebResponse)
 ```  
   
 ## Compiling the Code  

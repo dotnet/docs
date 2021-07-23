@@ -1,13 +1,13 @@
 ---
-title: Manage dependencies in .NET
-description: Explains how to manage project dependencies for a .NET application.
+title: Manage package dependencies in .NET
+description: Explains how to manage NuGet package dependencies for a .NET application.
 no-loc: [dotnet add package, dotnet remove package, dotnet list package]
 ms.topic: how-to
 ms.date: 01/28/2021
 ---
-# Manage dependencies in .NET applications
+# Manage package dependencies in .NET applications
 
-This article explains how to add and remove dependencies by editing the project file or by using the CLI.
+This article explains how to add and remove package dependencies by editing the project file or by using the CLI.
 
 ## The \<PackageReference> element
 
@@ -70,5 +70,5 @@ dotnet remove package Microsoft.EntityFrameworkCore
 
 ## See also
 
-* [Package references in project files](../project-sdk/msbuild-props.md#reference-properties-and-items)
+* [Package references in project files](../project-sdk/msbuild-props.md#reference-properties)
 * [dotnet list package command](dotnet-list-package.md)

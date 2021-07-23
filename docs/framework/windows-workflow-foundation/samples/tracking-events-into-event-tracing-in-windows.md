@@ -6,7 +6,7 @@ ms.assetid: f812659b-0943-45ff-9430-4defa733182b
 ---
 # Tracking Events into Event Tracing in Windows
 
-This sample demonstrates how to enable Windows Workflow Foundation (WF) tracking on a workflow service and emit the tracking events in Event Tracing for Windows (ETW). To emit workflow tracking records into ETW, the sample uses the ETW tracking participant (<xref:System.Activities.Tracking.EtwTrackingParticipant>).
+The [EtwTracking sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/basic/Tracking/EtwTracking/CS) demonstrates how to enable Windows Workflow Foundation (WF) tracking on a workflow service and emit the tracking events in Event Tracing for Windows (ETW). To emit workflow tracking records into ETW, the sample uses the ETW tracking participant (<xref:System.Activities.Tracking.EtwTrackingParticipant>).
 
 The workflow in the sample receives a request, assigns the reciprocal of the input data to the input variable and returns the reciprocal back to the client. When the input data is 0, a divide by zero exception occurs that is unhandled that causes the workflow to abort. With tracking enabled, the error track record is emitted to ETW, which can help troubleshoot the error later. The ETW tracking participant is configured with a tracking profile to subscribe to tracking records. The tracking profile is defined in the Web.config file and provided as a configuration parameter to the ETW tracking participant. The ETW tracking participant is configured in the Web.config file of the workflow service and is applied to the service as a service behavior. In this sample, you view the tracking events in the event log using Event Viewer.
 
@@ -34,9 +34,9 @@ The following table details the tracking records that the workflow runtime emits
 
 The tracking participant subscribes for a subset of the emitted tracking records using tracking profiles. A tracking profile contains tracking queries that allow subscribing for a particular tracking record type. Tracking profiles can be specified in code or in configuration.
 
-#### To use this sample
+## To use this sample
 
-1. Using Visual Studio 2010, open the EtwTrackingParticipantSample.sln solution file.
+1. Using Visual Studio, open the EtwTrackingParticipantSample.sln solution file.
 
 2. To build the solution, press CTRL+SHIFT+B.
 
@@ -46,9 +46,9 @@ The tracking participant subscribes for a subset of the emitted tracking records
 
 4. Using File Explorer, open the WCF test client.
 
-    The WCF test client (WcfTestClient.exe) is located in the \<Visual Studio 2010 installation folder>\Common7\IDE\ folder.
+    The WCF test client (WcfTestClient.exe) is located in the \<Visual Studio installation folder>\Common7\IDE\ folder.
 
-    The default Visual Studio 2010 installation folder is C:\Program Files\Microsoft Visual Studio 10.0.
+    The default Visual Studio installation folder is C:\Program Files\Microsoft Visual Studio 10.0.
 
 5. In WCF test client, select **Add Service** from the **File** menu.
 
@@ -118,7 +118,7 @@ The health monitoring tracking profile emits workflow instance records and activ
 </behaviors>
 ```
 
-#### To clean up (Optional)
+## To clean up (Optional)
 
 1. Open Event Viewer.
 
@@ -136,15 +136,6 @@ The health monitoring tracking profile emits workflow instance records and activ
 > The description for Event ID \<id> from source Microsoft-Windows-Application Server-Applications cannot be found. Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer.
 >
 > If you encounter this error, click refresh in the actions pane. The event should now decode properly.
-
-> [!IMPORTANT]
-> The samples may already be installed on your computer. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\EtwTracking`
 
 ## See also
 

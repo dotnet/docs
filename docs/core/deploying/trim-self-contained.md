@@ -7,18 +7,22 @@ ms.date: 04/03/2020
 ---
 # Trim self-contained deployments and executables
 
-The [framework-dependent deployment model](index.md#publish-framework-dependent) has been the most successful deployment model since the inception of .NET. In this scenario, the application developer bundles only the application and third-party assemblies with the expectation that the .NET runtime and framework libraries will be available in the client machine. This deployment model continues to be the dominant one in .NET Core as well but there are some scenarios where the framework-dependent model is not optimal. The alternative is to publish a [self-contained application](index.md#publish-self-contained), where the .NET Core runtime and framework are bundled together with the application and third-party assemblies.
+The [framework-dependent deployment model](index.md#publish-framework-dependent) has been the most successful deployment model since the inception of .NET. In this scenario, the application developer bundles only the application and third-party assemblies with the expectation that the .NET runtime and runtime libraries will be available in the client machine. This deployment model continues to be the dominant one in the latest .NET release, however, there are some scenarios where the framework-dependent model is not the best choice. The alternative is to publish a [self-contained application](index.md#publish-self-contained), where the .NET runtime and runtime libraries are bundled together with the application and third-party assemblies.
 
 The trim-self-contained deployment model is a specialized version of the self-contained deployment model that is optimized to reduce deployment size. Minimizing deployment size is a critical requirement for some client-side scenarios like Blazor applications. Depending on the complexity of the application, only a subset of the framework assemblies are referenced, and a subset of the code within each assembly is required to run the application. The unused parts of the libraries are unnecessary and can be trimmed from the packaged application.
 
 However, there is a risk that the build time analysis of the application can cause failures at runtime, due to not being able to reliably analyze various problematic code patterns (largely centered on reflection use). Because reliability can't be guaranteed, this deployment model is offered as a preview feature.
 
-The build time analysis engine provides warnings to the developer of code patterns that are problematic to detect which other code is required. Code can be annotated with attributes to tell the trimmer what else to include. Many reflection patterns can be replaced with build-time code generation using [Source Generators](https://github.com/dotnet/roslyn/blob/master/docs/features/source-generators.md).
+The build time analysis engine provides warnings to the developer of code patterns that are problematic to detect which other code is required. Code can be annotated with attributes to tell the trimmer what else to include. Many reflection patterns can be replaced with build-time code generation using [Source Generators](https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.md).
 
 The trim mode for the applications is configured with the `TrimMode` setting. The default value is `copyused` and bundles referenced assemblies with the application. The `link` value is used with Blazor WebAssembly applications and trims unused code within assemblies. Trim analysis warnings give information on code patterns where a full dependency analysis was not possible. These warnings are suppressed by default and can be turned on by setting the flag `SuppressTrimAnalysisWarnings` to `false`. For more information about the trim options available, see [Trimming options](trimming-options.md).
 
 > [!NOTE]
 > Trimming is an experimental feature in .NET Core 3.1 and .NET 5.0. Trimming is _only_ available to applications that are published self-contained.
+
+## Components that cause trimming problems
+
+Any code that causes build time analysis challenges, isn't suitable for trimming. Some common coding patterns that are problematic when used by an application, originate from unbounded reflection usage and external dependencies that aren't visible at build time. An example of unbounded reflection is a legacy serializer, such as [XML serialization](../../standard/serialization/introducing-xml-serialization.md) and example of invisible external dependencies is [built-in COM](../../standard/native-interop/cominterop.md). Any Windows desktop applications that depend on built-in COM support might have challenges with trimming. This includes Windows Forms and Windows Presentation Foundation (WPF) applications. The trimming engine generates warnings during build time when it detects code in an application that uses problematic coding patterns. For more information, see [Prepare .NET libraries for trimming](prepare-libraries-for-trimming.md).
 
 ## Prevent assemblies from being trimmed
 
@@ -32,71 +36,49 @@ When the code is indirectly referencing an assembly through reflection, you can 
 </ItemGroup>
 ```
 
-### Support for SSL certificates
-
-If your app loads SSL certificates, such as in an ASP.NET Core app, you'll want to ensure that when trimming you prevent trimming assemblies that will help with loading SSL certificates.
-
-We can update our project file to include the following for ASP.NET Core 3.1:
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk.Web">
-  <PropertyGroup>...</PropertyGroup>
-  <!--Include the following for .aspnetcore 3.1-->
-  <ItemGroup>
-    <TrimmerRootAssembly Include="System.Net" />
-    <TrimmerRootAssembly Include="System.Net.Security" />
-    <TrimmerRootAssembly Include="System.Security" />
-  </ItemGroup>
-  ...
-</Project>
-```
-
-If we're using .Net 5.0, we can update our project file to include the following:
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk.Web">
- <PropertyGroup>...</PropertyGroup>
- <!--Include the following for .net 5.0-->
- <ItemGroup>
-    <TrimmerRootAssembly Include="System.Net.Security" />
-    <TrimmerRootAssembly Include="System.Security" />
-  </ItemGroup>
-  ...
-</Project>
-```
-
 ## Trim your app - CLI
 
-Trim your application using the [dotnet publish](../tools/dotnet-publish.md) command. When you publish your app, set the following properties:
+Trim your application using the [dotnet publish](../tools/dotnet-publish.md) command.
 
-- Publish as a self-contained app for a specific runtime: `-r win-x64`
-- Enable trimming: `/p:PublishTrimmed=true`
+01. Add `<PublishTrimmed>true</PublishTrimmed>` to your project file.
 
-The following example publishes an app for Windows as self-contained and trims the output.
+    This will produce a trimmed app on self-contained publish. It also turns off trim-incompatible features and shows trim compatibility warnings during build.
+
+    ```xml
+    <PropertyGroup>
+        <PublishTrimmed>true</PublishTrimmed>
+    </PropertyGroup>
+    ```
+
+01. Publish a self-contained app for a specific runtime identifier using `dotnet publish -r <RID>`
+
+    The following example publishes the app for Windows as trimmed self-contained application.
+
+    `dotnet publish -r win-x64`
+
+    Note that trimming is only supported for self-contained apps.
+
+The following example configures an app in the aggressive trim mode where unused code within assemblies will be trimmed and trimmer warnings enabled.
 
 ```xml
 <PropertyGroup>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-    <PublishTrimmed>true</PublishTrimmed>
-</PropertyGroup>
-```
-
-The following example publishes an app in the aggressive trim mode where unused code within assemblies will be trimmed and trimmer warnings enabled.
-
-```xml
-<PropertyGroup>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <PublishTrimmed>true</PublishTrimmed>
     <TrimMode>link</TrimMode>
     <SuppressTrimAnalysisWarnings>false</SuppressTrimAnalysisWarnings>
 </PropertyGroup>
 ```
 
+`<PublishTrimmed>` should be set in the project file so that trim-incompatible features are disabled during `dotnet build`, but it is also possible to pass these options as `dotnet publish` arguments:
+
+`dotnet publish -r win-x64 -p:PublishTrimmed=true`
+
 For more information, see [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).
 
 ## Trim your app - Visual Studio
 
 Visual Studio creates reusable publishing profiles that control how your application is published.
+
+01. Add `<PublishTrimmed>true</PublishTrimmed>` to your project file.
 
 01. On the **Solution Explorer** pane, right-click on the project you want to publish. Select **Publish...**.
 

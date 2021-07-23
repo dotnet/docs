@@ -1,3 +1,4 @@
+items:
 - name: Windows Workflow Samples
   href: index.md
   items:
@@ -61,8 +62,6 @@
       items:
       - name: Creating and Running a Workflow Instance
         href: creating-and-running-a-workflow-instance.md
-      - name: WorkflowHostingEndpoint Resume Bookmark
-        href: workflowhostingendpoint-resume-bookmark.md
       - name: Bookmark Resolver for WorkflowHostingEndpoint
         href: bookmark-resolver-for-workflowhostingendpoint.md
     - name: Tracking

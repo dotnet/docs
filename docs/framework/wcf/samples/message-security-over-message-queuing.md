@@ -6,9 +6,9 @@ ms.assetid: 329aea9c-fa80-45c0-b2b9-e37fd7b85b38
 ---
 # Message Security over Message Queuing
 
-This sample demonstrates how to implement an application that uses WS-Security with X.509v3 certificate authentication for the client and requires server authentication using the server's X.509v3 certificate over MSMQ. Message security is sometimes more desirable to ensure that the messages in the MSMQ store stay encrypted and the application can perform its own authentication of the message.
+The [MessageSecurity sample](https://github.com/dotnet/samples/tree/main/framework/wcf/Basic/Binding/Net/MSMQ/MessageSecurity/CS) demonstrates how to implement an application that uses WS-Security with X.509v3 certificate authentication for the client and requires server authentication using the server's X.509v3 certificate over MSMQ. Message security is sometimes more desirable to ensure that the messages in the MSMQ store stay encrypted and the application can perform its own authentication of the message.
 
- This sample is based on the [Transacted MSMQ Binding](transacted-msmq-binding.md) sample. The messages are encrypted and signed.
+This sample is based on the [Transacted MSMQ Binding](transacted-msmq-binding.md) sample. The messages are encrypted and signed.
 
 ### To set up, build, and run the sample
 
@@ -35,64 +35,64 @@ This sample demonstrates how to implement an application that uses WS-Security w
 2. Run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    > Ensure that you remove the certificates by running Cleanup.bat when you have finished with the sample. Other security samples use the same certificates.  
-  
-3. Launch Service.exe from \service\bin.  
-  
-4. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
-  
-5. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
-  
-### To run the sample across computers  
-  
-1. Copy the Setup.bat, Cleanup.bat, and ImportClientCert.bat files to the service computer.  
-  
-2. Create a directory on the client computer for the client binaries.  
-  
-3. Copy the client program files to the client directory on the client computer. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.  
-  
-4. On the server, run `setup.bat service`. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computer and exports the service certificate to a file named Service.cer.  
-  
-5. Edit service's service.exe.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the computer.  
-  
-6. Copy the Service.cer file from the service directory to the client directory on the client computer.  
-  
-7. On the client, run `setup.bat client`. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.  
-  
-8. In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service. Do this by replacing localhost with the fully-qualified domain name of the server.  You must also change the certificate name of the service to be the same as the fully-qualified domain name of the service computer (in the `findValue` attribute in the `defaultCertificate` element of `serviceCertificate` under `clientCredentials`).  
-  
-9. Copy the Client.cer file from the client directory to the service directory on the server.  
-  
-10. On the client, run `ImportServiceCert.bat`. This imports the service certificate from the Service.cer file into the CurrentUser - TrustedPeople store.  
-  
-11. On the server, run `ImportClientCert.bat`, This imports the client certificate from the Client.cer file into the LocalMachine - TrustedPeople store.  
-  
-12. On the service computer, launch Service.exe from the command prompt.  
-  
-13. On the client computer, launch Client.exe from the command prompt. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
-  
-### To clean up after the sample  
-  
-- Run Cleanup.bat in the samples folder once you have finished running the sample.  
-  
+    > Ensure that you remove the certificates by running Cleanup.bat when you have finished with the sample. Other security samples use the same certificates.
+
+3. Launch Service.exe from \service\bin.
+
+4. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.
+
+5. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
+
+### To run the sample across computers
+
+1. Copy the Setup.bat, Cleanup.bat, and ImportClientCert.bat files to the service computer.
+
+2. Create a directory on the client computer for the client binaries.
+
+3. Copy the client program files to the client directory on the client computer. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.
+
+4. On the server, run `setup.bat service`. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computer and exports the service certificate to a file named Service.cer.
+
+5. Edit service's service.exe.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the computer.
+
+6. Copy the Service.cer file from the service directory to the client directory on the client computer.
+
+7. On the client, run `setup.bat client`. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.
+
+8. In the Client.exe.config file on the client computer, change the address value of the endpoint to match the new address of your service. Do this by replacing localhost with the fully-qualified domain name of the server. You must also change the certificate name of the service to be the same as the fully-qualified domain name of the service computer (in the `findValue` attribute in the `defaultCertificate` element of `serviceCertificate` under `clientCredentials`).
+
+9. Copy the Client.cer file from the client directory to the service directory on the server.
+
+10. On the client, run `ImportServiceCert.bat`. This imports the service certificate from the Service.cer file into the CurrentUser - TrustedPeople store.
+
+11. On the server, run `ImportClientCert.bat`, This imports the client certificate from the Client.cer file into the LocalMachine - TrustedPeople store.
+
+12. On the service computer, launch Service.exe from the command prompt.
+
+13. On the client computer, launch Client.exe from the command prompt. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
+
+### To clean up after the sample
+
+- Run Cleanup.bat in the samples folder once you have finished running the sample.
+
     > [!NOTE]
     > This script does not remove service certificates on a client when running this sample across computers. If you have run Windows Communication Foundation (WCF) samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.
 
 ## Requirements
 
- This sample requires that MSMQ is installed and running.
+This sample requires that MSMQ is installed and running.
 
 ## Demonstrates
 
- The client encrypts the message using the public key of the service and signs the message using its own certificate. The service reading the message from the queue authenticates the client certificate with the certificate in its trusted people store. It then decrypts the message and dispatches the message to the service operation.
+The client encrypts the message using the public key of the service and signs the message using its own certificate. The service reading the message from the queue authenticates the client certificate with the certificate in its trusted people store. It then decrypts the message and dispatches the message to the service operation.
 
- Because the Windows Communication Foundation (WCF) message is carried as a payload in the body of the MSMQ message, the body remains encrypted in the MSMQ store. This secures the message from unwanted disclosure of the message. Note that MSMQ itself is not aware whether the message it is carrying is encrypted.
+Because the Windows Communication Foundation (WCF) message is carried as a payload in the body of the MSMQ message, the body remains encrypted in the MSMQ store. This secures the message from unwanted disclosure of the message. Note that MSMQ itself is not aware whether the message it is carrying is encrypted.
 
- The sample demonstrates how mutual authentication at the message level can be used with MSMQ. The certificates are exchanged out-of-band. This is always the case with queued application because the service and the client do not have to be up and running at the same time.
+The sample demonstrates how mutual authentication at the message level can be used with MSMQ. The certificates are exchanged out-of-band. This is always the case with queued application because the service and the client do not have to be up and running at the same time.
 
 ## Description
 
- The sample client and service code are the same as the [Transacted MSMQ Binding](transacted-msmq-binding.md) sample with one difference. The operation contract is annotated with protection level, which suggests that the message must be signed and encrypted.
+The sample client and service code are the same as the [Transacted MSMQ Binding](transacted-msmq-binding.md) sample with one difference. The operation contract is annotated with protection level, which suggests that the message must be signed and encrypted.
 
 ```csharp
 // Define a service contract.
@@ -104,9 +104,9 @@ public interface IOrderProcessor
 }
 ```
 
- To ensure that the message is secured using the required token to identify the service and client, the App.config contains credential information.
+To ensure that the message is secured using the required token to identify the service and client, the App.config contains credential information.
 
- The client configuration specifies the service certificate to authenticate the service. It uses its LocalMachine store as the trusted store to rely on the validity of the service. It also specifies the client certificate that is attached with the message for service authentication of the client.
+The client configuration specifies the service certificate to authenticate the service. It uses its LocalMachine store as the trusted store to rely on the validity of the service. It also specifies the client certificate that is attached with the message for service authentication of the client.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -164,9 +164,9 @@ public interface IOrderProcessor
 </configuration>
 ```
 
- Note that the security mode is set to Message and the ClientCredentialType is set to Certificate.
+Note that the security mode is set to Message and the ClientCredentialType is set to Certificate.
 
- The service configuration includes a service behavior that specifies the service's credentials that are used when the client authenticates the service. The server certificate subject name is specified in the `findValue` attribute in the [\<serviceCredentials>](../../configure-apps/file-schema/wcf/servicecredentials.md).
+The service configuration includes a service behavior that specifies the service's credentials that are used when the client authenticates the service. The server certificate subject name is specified in the `findValue` attribute in the [\<serviceCredentials>](../../configure-apps/file-schema/wcf/servicecredentials.md).
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -242,7 +242,7 @@ public interface IOrderProcessor
 </configuration>
 ```
 
- The sample demonstrates controlling authentication using configuration, and how to obtain the caller’s identity from the security context, as shown in the following sample code:
+The sample demonstrates controlling authentication using configuration, and how to obtain the caller's identity from the security context, as shown in the following sample code:
 
 ```csharp
 // Service class which implements the service contract.
@@ -268,7 +268,7 @@ public class OrderProcessorService : IOrderProcessor
 }
 ```
 
- When run, the service code displays the client identification. The following is a sample output from the service code:
+When run, the service code displays the client identification. The following is a sample output from the service code:
 
 ```console
 The service is ready.
@@ -297,7 +297,7 @@ Processing Purchase Order: 6536e097-da96-4773-9da3-77bab4345b5d
     makecert.exe -sr CurrentUser -ss MY -a sha1 -n CN=%CLIENT_NAME% -sky exchange -pe
     ```
 
-- Installing the client certificate into server’s trusted certificate store.
+- Installing the client certificate into server's trusted certificate store.
 
      The following line in the batch file copies the client certificate into the server's TrustedPeople store so that the server can make the relevant trust or no-trust decisions. For a certificate installed in the TrustedPeople store to be trusted by a Windows Communication Foundation (WCF) service, the client certificate validation mode must be set to `PeerOrChainTrust` or `PeerTrust` value. See the previous service configuration sample to learn how this can be done using a configuration file.
 
@@ -324,7 +324,7 @@ Processing Purchase Order: 6536e097-da96-4773-9da3-77bab4345b5d
 
      The %SERVER_NAME% variable specifies the server name. The certificate is stored in the LocalMachine store. If the setup batch file is run with an argument of service (such as, `setup.bat service`) the %SERVER_NAME% contains the fully-qualified domain name of the computer.Otherwise it defaults to localhost
 
-- Installing server certificate into the client’s trusted certificate store.
+- Installing server certificate into the client's trusted certificate store.
 
      The following line copies the server certificate into the client trusted people store. This step is required because certificates generated by Makecert.exe are not implicitly trusted by the client system. If you already have a certificate that is rooted in a client trusted root certificate—for example, a Microsoft-issued certificate—this step of populating the client certificate store with the server certificate is not required.
 
@@ -334,12 +334,3 @@ Processing Purchase Order: 6536e097-da96-4773-9da3-77bab4345b5d
 
     > [!NOTE]
     > If you are using a non-U.S. English edition of Microsoft Windows you must edit the Setup.bat file and replace the "NT AUTHORITY\NETWORK SERVICE" account name with your regional equivalent.
-
-> [!IMPORTANT]
-> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
->
-> `<InstallDrive>:\WF_WCF_Samples`  
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\MessageSecurity`

@@ -1,29 +1,39 @@
 ---
 title: Cross-platform targeting for .NET libraries
 description: Best practice recommendations for creating cross-platform .NET libraries.
-ms.date: 08/12/2019
+ms.date: 05/04/2021
 ---
+
 # Cross-platform targeting
 
 Modern .NET supports multiple operating systems and devices. It's important for .NET open-source libraries to support as many developers as possible, whether they're building an ASP.NET website hosted in Azure, or a .NET game in Unity.
 
-## .NET Standard
+## .NET and .NET Standard targets
 
-.NET Standard is the best way to add cross-platform support to a .NET library. [.NET Standard](../net-standard.md) is a specification of .NET APIs that are available on all .NET implementations. Targeting .NET Standard lets you produce libraries that are constrained to use APIs that are in a given version of .NET Standard, which means it's usable by all platforms that implement that version of .NET Standard.
+.NET and .NET Standard targets are the best way to add cross-platform support to a .NET library.
+
+* [.NET Standard](../net-standard.md) is a specification of .NET APIs that are available on all .NET implementations. Targeting .NET Standard lets you produce libraries that are constrained to use APIs that are in a given version of .NET Standard, which means it's usable by all platforms that implement that version of .NET Standard.
+* .NET 5 is an implementation of .NET that Microsoft is actively developing. It's a single product with a uniform set of capabilities and APIs that can be used for Windows desktop apps and cross-platform console apps, cloud services, and websites.
+
+For more information about how .NET compares to .NET Standard, see [.NET 5 and .NET Standard](../net-standard.md#net-5-and-net-standard).
 
 ![.NET Standard](./media/cross-platform-targeting/platforms-netstandard.png ".NET Standard")
 
-Targeting .NET Standard, and successfully compiling your project, doesn't guarantee the library will run successfully on all platforms:
+Targeting .NET or .NET Standard, and successfully compiling your project, doesn't guarantee the library will run successfully on all platforms:
 
 1. Platform-specific APIs will fail on other platforms. For example, <xref:Microsoft.Win32.Registry?displayProperty=nameWithType> will succeed on Windows and throw <xref:System.PlatformNotSupportedException> when used on any other OS.
 2. APIs can behave differently. For example, reflection APIs have different performance characteristics when an application uses ahead-of-time compilation on iOS or UWP.
 
 > [!TIP]
-> The .NET team [offers a Roslyn analyzer](../analyzers/api-analyzer.md) to help you discover possible issues.
+> The .NET team offers a [Platform compatibility analyzer](../analyzers/platform-compat-analyzer.md) to help you discover possible issues.
 
 ✔️ DO start with including a `netstandard2.0` target.
 
 > Most general-purpose libraries should not need APIs outside of .NET Standard 2.0. .NET Standard 2.0 is supported by all modern platforms and is the recommended way to support multiple platforms with one target.
+
+✔️ DO include a `net5.0` target or later if you require new APIs introduced in a modern .NET.
+
+> .NET 5 or later apps can use a `netstandard2.0` target so `net5.0` isn't required. Explicitly targeting `net5.0` should be added when you want to use new .NET APIs.
 
 ❌ AVOID including a `netstandard1.x` target.
 

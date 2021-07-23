@@ -2,6 +2,7 @@
 title: "How to modify expression trees (C#)"
 description: Learn how to modify an expression tree by creating a copy of an existing expression tree and making the required changes.
 ms.date: 07/20/2015
+ms.topic: how-to
 ms.assetid: 9b0cd8c2-457e-4833-9e36-31e79545f442
 ---
 # How to modify expression trees (C#)

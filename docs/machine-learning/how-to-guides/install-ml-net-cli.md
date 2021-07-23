@@ -1,7 +1,7 @@
 ---
 title: How to install the ML.NET Command-Line Interface (CLI) tool
 description: Learn how to install, upgrade, downgrade, and uninstall the ML.NET Command-Line Interface (CLI) tool.
-ms.date: 06/08/2020
+ms.date: 07/13/2021
 ms.custom: mlnet-tooling
 ---
 
@@ -16,7 +16,7 @@ The ML.NET CLI generates good quality ML.NET models and source code using automa
 
 ## Pre-requisites
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet/3.1)
 
 - (Optional) [Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
 
@@ -51,6 +51,15 @@ mlnet
 
 You should see the help for available commands for the mlnet tool such as the 'classification' command.
 
+> [!IMPORTANT]
+> If you are running Linux or macOS, note that if you're using a console other than Bash (for example, zsh, which is the new default for macOS), then you'll need to give `mlnet` executable permissions and include `mlnet` to the system path. Instructions on how to do this should appear in the terminal when you install `mlnet` (or any global tool).
+>
+> Alternatively, you can try using the following command to run the mlnet tool:
+>
+> ```console
+> ~/.dotnet/tools/mlnet
+> ```
+
 ## Install a specific release version
 
 If you're trying to install a pre-release version or a specific version of the tool, you can specify the [framework](../../standard/frameworks.md) using the following format:
@@ -80,38 +89,6 @@ Type the following command to update the package from your local machine:
 ```dotnetcli
 dotnet tool update -g mlnet
 ```
-
-## Set up CLI suggestions (tab-based auto-completion)
-
-Since the ML.NET CLI is based on `System.CommandLine`, it has built-in support for tab completion.
-
-An example of how tab auto completion works is shown in the following animation:
-
-![image](./media/cli-tab-completion.gif)
-
-'Tab-based auto-completion' (parameter suggestions) works on *Windows PowerShell* and *macOS/Linux bash* but it won't work on *Windows CMD*.
-
-To enable it, in the current preview version, the end user has to take a few steps once per shell, outlined below. Once this is done, completions will work for all apps written using `System.CommandLine` such as the ML.NET CLI.
-
-On the machine where you'd like to enable completion, you'll need to do two things.
-
-1. Install the `dotnet-suggest` global tool by running the following command:
-
-    ```dotnetcli
-    dotnet tool install dotnet-suggest -g
-    ```
-
-2. Add the appropriate shim script to your shell profile. You may have to create a shell profile file. The shim script will forward completion requests from your shell to the `dotnet-suggest` tool, which delegates to the appropriate `System.CommandLine`-based app.
-
-    - For bash, add the contents of [dotnet-suggest-shim.bash](https://github.com/dotnet/System.CommandLine/blob/master/src/System.CommandLine.Suggest/dotnet-suggest-shim.bash) to `~/.bash_profile`.
-
-    - For PowerShell, add the contents of [dotnet-suggest-shim.ps1](https://github.com/dotnet/System.CommandLine/blob/master/src/System.CommandLine.Suggest/dotnet-suggest-shim.ps1) to your PowerShell profile. You can find the expected path to your PowerShell profile by running the following command in your console:
-
-    ```console
-    echo $profile
-    ```
-
-(For other shells, [look for](https://github.com/dotnet/System.CommandLine/issues?q=is%3Aissue+is%3Aopen+label%3A%22shell+suggestion%22) or open an [issue](https://github.com/dotnet/System.CommandLine/issues).)
 
 ## Installation directory
 

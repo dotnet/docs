@@ -4,48 +4,52 @@
   - name: LINQ to Entities
     href: linq-to-entities.md
     items:
-    - name: Queries in LINQ to Entities
+    - name: Queries
       href: queries-in-linq-to-entities.md
       items:
-      - name: "Method-Based Query Syntax Examples: Projection"
-        href: method-based-query-syntax-examples-projection.md
-      - name: "Method-Based Query Syntax Examples: Filtering"
-        href: method-based-query-syntax-examples-filtering.md
-      - name: "Method-Based Query Syntax Examples: Ordering"
-        href: method-based-query-syntax-examples-ordering.md
-      - name: "Method-Based Query Syntax Examples: Aggregate Operators"
-        href: method-based-query-syntax-examples-aggregate-operators.md
-      - name: "Method-Based Query Syntax Examples: Partitioning"
-        href: method-based-query-syntax-examples-partitioning.md
-      - name: "Method-Based Query Syntax Examples: Conversion"
-        href: method-based-query-syntax-examples-conversion.md
-      - name: "Method-Based Query Syntax Examples: Join Operators"
-        href: method-based-query-syntax-examples-join-operators.md
-      - name: "Method-Based Query Syntax Examples: Element Operators"
-        href: method-based-query-syntax-examples-element-operators.md
-      - name: "Method-Based Query Syntax Examples: Grouping"
-        href: method-based-query-syntax-examples-grouping.md
-      - name: "Method-Based Query Syntax Examples: Navigating Relationships"
-        href: method-based-query-syntax-examples-navigating-relationships.md
-      - name: "Query Expression Syntax Examples: Projection"
-        href: query-expression-syntax-examples-projection.md
-      - name: "Query Expression Syntax Examples: Filtering"
-        href: query-expression-syntax-examples-filtering.md
-      - name: "Query Expression Syntax Examples: Ordering"
-        href: query-expression-syntax-examples-ordering.md
-      - name: "Query Expression Syntax Examples: Aggregate Operators"
-        href: query-expression-syntax-examples-aggregate-operators.md
-      - name: "Query Expression Syntax Examples: Partitioning"
-        href: query-expression-syntax-examples-partitioning.md
-      - name: "Query Expression Syntax Examples: Join Operators"
-        href: query-expression-syntax-examples-join-operators.md
-      - name: "Query Expression Syntax Examples: Element Operators"
-        href: query-expression-syntax-examples-element-operators.md
-      - name: "Query Expression Syntax Examples: Grouping"
-        href: query-expression-syntax-examples-grouping.md
-      - name: "Query Expression Syntax Examples: Navigating Relationships"
-        href: query-expression-syntax-examples-navigating-relationships.md
-    - name: Expressions in LINQ to Entities Queries
+      - name: Method-based query syntax examples
+        items:
+        - name: Projection
+          href: method-based-query-syntax-examples-projection.md
+        - name: Filtering
+          href: method-based-query-syntax-examples-filtering.md
+        - name: Ordering
+          href: method-based-query-syntax-examples-ordering.md
+        - name: Aggregate Operators
+          href: method-based-query-syntax-examples-aggregate-operators.md
+        - name: Partitioning
+          href: method-based-query-syntax-examples-partitioning.md
+        - name: Conversion
+          href: method-based-query-syntax-examples-conversion.md
+        - name: Join Operators
+          href: method-based-query-syntax-examples-join-operators.md
+        - name: Element Operators
+          href: method-based-query-syntax-examples-element-operators.md
+        - name: Grouping
+          href: method-based-query-syntax-examples-grouping.md
+        - name: Navigating Relationships
+          href: method-based-query-syntax-examples-navigating-relationships.md
+      - name: Query expression syntax examples
+        items:
+        - name: Projection
+          href: query-expression-syntax-examples-projection.md
+        - name: Filtering
+          href: query-expression-syntax-examples-filtering.md
+        - name: Ordering
+          href: query-expression-syntax-examples-ordering.md
+        - name: Aggregate Operators
+          href: query-expression-syntax-examples-aggregate-operators.md
+        - name: Partitioning
+          href: query-expression-syntax-examples-partitioning.md
+        - name: Join Operators
+          href: query-expression-syntax-examples-join-operators.md
+        - name: Element Operators
+          href: query-expression-syntax-examples-element-operators.md
+        - name: Grouping
+          href: query-expression-syntax-examples-grouping.md
+        - name: Navigating Relationships
+          href: query-expression-syntax-examples-navigating-relationships.md
+    - name: Expressions in queries
       href: expressions-in-linq-to-entities-queries.md
       items:
       - name: Constant Expressions
@@ -56,7 +60,7 @@
         href: null-comparisons.md
       - name: Initialization Expressions
         href: initialization-expressions.md
-    - name: Calling Functions in LINQ to Entities Queries
+    - name: Calling functions in queries
       href: calling-functions-in-linq-to-entities-queries.md
       items:
       - name: "How to: Call Canonical Functions"
@@ -69,19 +73,19 @@
         href: how-to-call-model-defined-functions-in-queries.md
       - name: "How to: Call Model-Defined Functions as Object Methods"
         href: how-to-call-model-defined-functions-as-object-methods.md
-    - name: Compiled Queries  (LINQ to Entities)
+    - name: Compiled Queries
       href: compiled-queries-linq-to-entities.md
     - name: Query Execution
       href: query-execution.md
     - name: Query Results
       href: query-results.md
-    - name: Standard Query Operators in LINQ to Entities Queries
+    - name: Standard Query Operators
       href: standard-query-operators-in-linq-to-entities-queries.md
     - name: CLR Method to Canonical Function Mapping
       href: clr-method-to-canonical-function-mapping.md
-    - name: Supported and Unsupported LINQ Methods (LINQ to Entities)
+    - name: Supported and Unsupported LINQ Methods
       href: supported-and-unsupported-linq-methods-linq-to-entities.md
-    - name: Known Issues and Considerations in LINQ to Entities
+    - name: Known Issues and Considerations
       href: known-issues-and-considerations-in-linq-to-entities.md
   - name: Entity SQL Language
     href: entity-sql-language.md
@@ -91,7 +95,7 @@
       items:
       - name: How Entity SQL Differs from Transact-SQL
         href: how-entity-sql-differs-from-transact-sql.md
-      - name: Entity SQL Quick Reference
+      - name: Quick Reference
         href: entity-sql-quick-reference.md
       - name: Type System
         href: type-system-entity-sql.md

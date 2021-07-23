@@ -111,7 +111,7 @@ public class ProductsController : ApiController
 {
     // matched by name and (lack of) parameters
     public IEnumerable<Product> GetAll() { }
-    
+
     // matched by GET and string parameter
     [HttpGet]
     public IEnumerable<Product> FindProductsByName(string name) { }
@@ -183,4 +183,4 @@ Using this attribute, classes inheriting from this type would route URLs to acti
 
 >[!div class="step-by-step"]
 >[Previous](configuration-differences.md)
->[Next](comparing-razor-pages-aspnet-mvc.md)
+>[Next](logging-differences.md)

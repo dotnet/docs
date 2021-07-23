@@ -6,7 +6,7 @@ ms.assetid: 954a75e4-9a97-41d6-94fc-43765d4205a9
 ---
 # Announcements Sample
 
-This sample shows how to use the Announcement functionality of the Discovery feature. Announcements allow services to send out announcement messages that contain metadata about the service. By default a hello announcement is sent when the service starts up and a bye announcement is sent when the service shuts down. These announcements can be multicast or they can be sent point-to-point. This sample consists of two projects service and client.
+The [Announcements sample](https://github.com/dotnet/samples/tree/main/framework/wcf/Basic/Discovery/Announcements) shows how to use the Announcement functionality of the Discovery feature. Announcements allow services to send out announcement messages that contain metadata about the service. By default a hello announcement is sent when the service starts up and a bye announcement is sent when the service shuts down. These announcements can be multicast or they can be sent point-to-point. This sample consists of two projects service and client.
 
 ## Service
 
@@ -75,12 +75,3 @@ static void OnOfflineEvent(object sender, AnnouncementEventArgs e)
 4. Run the service.exe application. Note the client receives an online announcement.
 
 5. Close the service.exe application. Note the client receives an offline announcement.
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Discovery\Announcements`

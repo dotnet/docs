@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: ReDim' can only change the right-most dimension"
+description: "Learn more about: 'ReDim' can only change the right-most dimension"
 title: "'ReDim' can only change the right-most dimension"
 ms.date: 07/20/2015
 f1_keywords: 

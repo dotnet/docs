@@ -80,6 +80,13 @@ When you write out the name of a type that is a tuple, you use the `*` symbol to
 int * float * string
 ```
 
+Note that outer parentheses are mandatory when creating a type alias for a struct tuple type.
+
+```fsharp
+type TupleAlias = string * float
+type StructTupleAlias = (struct (string * float))
+```
+
 ## Interoperation with C# Tuples
 
 C# 7.0 introduced tuples to the language.  Tuples in C# are structs, and are equivalent to struct tuples in F#.  If you need to interoperate with C#, you must use struct tuples.

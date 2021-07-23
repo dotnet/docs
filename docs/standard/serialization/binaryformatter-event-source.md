@@ -4,6 +4,7 @@ description: Learn how to use the BinaryFormatter event source to log when seria
 ms.date: 12/03/2020
 ms.author: levib
 author: GrabYourPitchforks
+ms.topic: reference
 ---
 # BinaryFormatter event source
 

@@ -1,2 +1,0 @@
-> [!IMPORTANT]
-> We strongly discourage the use of portable class libraries in new application development, because they target only a very specific subset of .NET implementations. If you're building a reusable library to share code between .NET Framework and other .NET implementations, the recommended replacement is a .NET Standard 2.0 library. Otherwise, use .NET 5 or later. For more information, see [.NET Standard](~/docs/standard/net-standard.md).

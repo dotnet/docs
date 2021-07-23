@@ -15,11 +15,11 @@ landingContent:
       - linkListType: get-started
         links:
           - text: Online, interactive Hello world
-            url: tutorials/intro-to-csharp/hello-world.yml
+            url: ./tour-of-csharp/tutorials/hello-world.yml
           - text: "Math and numbers in C#"
-            url: tutorials/intro-to-csharp/numbers-in-csharp.yml
+            url: ./tour-of-csharp/tutorials/numbers-in-csharp.yml
           - text: Introductory tutorials
-            url: tutorials/intro-to-csharp/index.md
+            url: ./tour-of-csharp/tutorials/index.md
           - text: "Create C# apps with Visual Studio"
             url: /visualstudio/get-started/csharp/tutorial-console
           - text: C# on Q&A
@@ -48,7 +48,7 @@ landingContent:
       - linkListType: concept
         links:
           - text: "The C# and .NET type system"
-            url: programming-guide/types/index.md
+            url: fundamentals/types/index.md
           - text: Language Integrated Query (LINQ)
             url: linq/index.md
           - text: async and await
@@ -62,7 +62,7 @@ landingContent:
           - text: Format text using string interpolation
             url: tutorials/string-interpolation.md
           - text: Browse all tutorials
-            url: tutorials/index.md
+            url: ./tutorials/intro-to-csharp/introduction-to-classes.md
   
   - title: "New features in C# 9.0"
     linkLists:
@@ -70,25 +70,34 @@ landingContent:
         links:
           - text: "What's new in C# 9.0"
             url: whats-new/csharp-9.md
-
-  - title: "New features in C# 9.0"
-    linkLists:
-      - linkListType: whats-new
-        links:
-          - text: "What's new in C# 9.0"
-            url: whats-new/csharp-9.md
+          - text: "What's new in C# 8.0"
+            url: whats-new/csharp-8.md
+          - text: "What's new in C# 7"
+            url: whats-new/csharp-7.md
       - linkListType: tutorial
         links:
           - text: Explore record types
-            url: tutorials/exploration/records.md
+            url: whats-new/tutorials/records.md
           - text: Explore top level statements
-            url: tutorials/exploration/top-level-statements.md
+            url: whats-new/tutorials/top-level-statements.md
           - text: Explore new patterns
-            url: tutorials/exploration/patterns-objects.md
+            url: whats-new/tutorials/patterns-objects.md
+          - text: Safely update interfaces
+            url: whats-new/tutorials/default-interface-methods-versions.md
+          - text: Create mixins with interfaces
+            url: whats-new/tutorials/mixins-with-default-interface-methods.md
+          - text: Explore indexes and ranges
+            url: whats-new/tutorials/ranges-indexes.md
+          - text: Nullable reference types
+            url: whats-new/tutorials/nullable-reference-types.md
+          - text: Explore async streams
+            url: whats-new/tutorials/generate-consume-asynchronous-stream.md
       - linkListType: reference
         links:
           - text: Breaking changes in the C# compiler
             url: whats-new/breaking-changes.md
+          - text: Version compatibility
+            url: whats-new/version-update-considerations.md
 
   - title: "C# language reference"
     linkLists:

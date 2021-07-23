@@ -2,17 +2,18 @@
 title: Platform Invoke (P/Invoke)
 description: Learn how to call native functions via P/Invoke in .NET.
 ms.date: 01/18/2019
+ms.topic: how-to
 ---
 
 # Platform Invoke (P/Invoke)
 
 P/Invoke is a technology that allows you to access structs, callbacks, and functions in unmanaged libraries from your managed code. Most of the P/Invoke API is contained in two namespaces: `System` and `System.Runtime.InteropServices`. Using these two namespaces give you the tools to describe how you want to communicate with the native component.
 
-Let’s start from the most common example, and that is calling unmanaged functions in your managed code. Let’s show a message box from a command-line application:
+Let's start from the most common example, and that is calling unmanaged functions in your managed code. Let's show a message box from a command-line application:
 
 [!code-csharp[MessageBox](~/samples/snippets/standard/interop/pinvoke/messagebox.cs)]
 
-The previous example is simple, but it does show off what's needed to invoke unmanaged functions from managed code. Let’s step through the example:
+The previous example is simple, but it does show off what's needed to invoke unmanaged functions from managed code. Let's step through the example:
 
 - Line #2 shows the using statement for the `System.Runtime.InteropServices` namespace that holds all the items needed.
 - Line #8 introduces the `DllImport` attribute. This attribute is crucial, as it tells the runtime that it should load the unmanaged DLL. The string passed in is the DLL our target function is in. Additionally, it specifies which [character set](./charset.md) to use for marshalling the strings. Finally, it specifies that this function calls [SetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) and that the runtime should capture that error code so the user can retrieve it via <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error?displayProperty=nameWithType>.
@@ -40,7 +41,7 @@ Before walking through the example, it's good to review the signatures of the un
 
 The first parameter is a callback. The said callback has the following signature: `BOOL CALLBACK EnumWindowsProc (HWND hwnd, LPARAM lParam);`
 
-Now, let’s walk through the example:
+Now, let's walk through the example:
 
 - Line #9 in the example defines a delegate that matches the signature of the callback from unmanaged code. Notice how the LPARAM and HWND types are represented using `IntPtr` in the managed code.
 - Lines #13 and #14 introduce the `EnumWindows` function from the user32.dll library.

@@ -80,16 +80,36 @@ Open an elevated command prompt and run `regsvr32 ProjectName.comhost.dll`. That
 
 The resulting output will now also have a `ProjectName.X.manifest` file. This file is the side-by-side manifest for use with Registry-Free COM.
 
+## Embedding type libraries in the COM host
+
+Unlike in .NET Framework, there is no support in .NET Core or .NET 5+ for generating a [COM Type Library (TLB)](/windows/win32/midl/com-dcom-and-type-libraries#type-library) from a .NET assembly. The guidance is to either manually write an IDL file or a C/C++ header for the native declarations of the COM interfaces. If you decide to write an IDL file, you can compile it with the Visual C++ SDK's MIDL compiler to produce a TLB.
+
+In .NET 6 Preview 5 and later versions, the .NET SDK supports embedding already-compiled TLBs into the COM host as part of your project build.
+
+To embed a type library into your application, follow these steps:
+
+1. Open the `.csproj` project file and add `<ComHostTypeLibrary Include="path/to/typelib.tlb" Id="<id>" />` inside an `<ItemGroup></ItemGroup>` tag.
+2. Replace `<id>` with a positive integer value. The value must be unique among the TLBs you specify to be embedded in the COM host.
+   - The `Id` attribute is optional if you only add one `ComHostTypeLibrary` to your project.
+
+For example, the following code block adds the `Server.tlb` type library at index `1` to the COM host:
+
+```xml
+<ItemGroup>
+    <ComHostTypeLibrary Include="Server.tlb" Id="1" />
+</ItemGroup>
+```
+
 ## Sample
 
-There is a fully functional [COM server sample](https://github.com/dotnet/samples/tree/master/core/extensions/COMServerDemo) in the dotnet/samples repository on GitHub.
+There is a fully functional [COM server sample](https://github.com/dotnet/samples/tree/main/core/extensions/COMServerDemo) in the dotnet/samples repository on GitHub.
 
 ## Additional notes
 
-Unlike in .NET Framework, there is no support in .NET Core for generating a COM Type Library (TLB) from a .NET Core assembly. The guidance is to either manually write an IDL file or a C/C++ header for the native declarations of the COM interfaces.
-
 > [!IMPORTANT]
 > In .NET Framework, an "Any CPU" assembly can be consumed by both 32-bit and 64-bit clients. By default, in .NET Core, .NET 5, and later versions, "Any CPU" assemblies are accompanied by a 64-bit *\*.comhost.dll*. Because of this, they can only be consumed by 64-bit clients. That is the default because that is what the SDK represents. This behavior is identical to how the "self-contained" feature is published: by default it uses what the SDK provides. The `NETCoreSdkRuntimeIdentifier` MSBuild property determines the bitness of *\*.comhost.dll*. The managed part is actually bitness agnostic as expected, but the accompanying native asset defaults to the targeted SDK.
+
+During activation, the assembly containing the COM component is loaded in a separate <xref:System.Runtime.Loader.AssemblyLoadContext> based on the assembly path. If there is one assembly providing multiple COM servers, the `AssemblyLoadContext` is reused such that all of the servers from that assembly reside in the same load context. If there are multiple assemblies providing COM servers, a new `AssemblyLoadContext` is created for each assembly, and each server resides in the load context that corresponds to its assembly.
 
 [Self-contained deployments](../deploying/index.md#publish-self-contained) of COM components are not supported. Only [framework-dependent deployments](../deploying/index.md#publish-framework-dependent) of COM components are supported.
 

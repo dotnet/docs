@@ -4,6 +4,7 @@ description: Learn how to use the code coverage capabilities for .NET unit tests
 author: IEvangelist
 ms.author: dapine
 ms.date: 02/10/2021
+recommendations: false
 ---
 
 # Use code coverage for unit testing
@@ -22,7 +23,7 @@ The "system under test" refers to the code that you're writing unit tests agains
 
 ### Create a class library
 
-From a command prompt in a new directory named `UnitTestingCodeCoverage`, create a new .NET standard class library using the [`dotnet new classlib`](../tools/dotnet-new.md#classlib) command:
+From a command prompt in a new directory named `UnitTestingCodeCoverage`, create a new .NET standard class library using the [`dotnet new classlib`](../tools/dotnet-new-sdk-templates.md#classlib) command:
 
 ```dotnetcli
 dotnet new classlib -n Numbers
@@ -60,7 +61,7 @@ namespace System.Numbers
 
 ### Create test projects
 
-Create two new **xUnit Test Project (.NET Core)** templates from the same command prompt using the [`dotnet new xunit`](../tools/dotnet-new.md#test) command:
+Create two new **xUnit Test Project (.NET Core)** templates from the same command prompt using the [`dotnet new xunit`](../tools/dotnet-new-sdk-templates.md#test) command:
 
 ```dotnetcli
 dotnet new xunit -n XUnit.Coverlet.Collector
@@ -281,8 +282,8 @@ Run the tool and provide the desired options, given the output *coverage.cobertu
 
 ```console
 reportgenerator
-"-reports:Path\To\TestProject\TestResults\{guid}\coverage.cobertura.xml"
-"-targetdir:coveragereport"
+-reports:"Path\To\TestProject\TestResults\{guid}\coverage.cobertura.xml"
+-targetdir:"coveragereport"
 -reporttypes:Html
 ```
 

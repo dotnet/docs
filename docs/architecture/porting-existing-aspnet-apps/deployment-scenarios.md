@@ -68,7 +68,8 @@ A common approach to porting large apps from .NET Framework to ASP.NET Core is t
 - [URL Rewrite](https://www.iis.net/downloads/microsoft/url-rewrite)
 - [ASP.NET Core Module](/aspnet/core/host-and-deploy/aspnet-core-module?preserve-view=true&view=aspnetcore-2.1)
 - [Share authentication cookies among ASP.NET apps](/aspnet/core/host-and-deploy/iis/)
+- [Samples used in this section](https://github.com/ardalis/MigrateDotNetWithIIS)
 
 >[!div class="step-by-step"]
->[Previous](example-migration-eshop.md)
+>[Previous](more-migration-scenarios.md)
 >[Next](summary.md)

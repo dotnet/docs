@@ -37,13 +37,13 @@ The `dotnet nuget locals` command clears or lists local NuGet resources in the h
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`--force-english-output`**
 
   Forces the application to run using an invariant, English-based culture.
 
-- **`-h|--help`**
-
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`-c|--clear`**
 
@@ -58,7 +58,7 @@ The `dotnet nuget locals` command clears or lists local NuGet resources in the h
 - Displays the paths of all the local cache directories (http-cache directory, global-packages cache directory, and temporary cache directory):
 
   ```dotnetcli
-  dotnet nuget locals all –l
+  dotnet nuget locals all -l
   ```
 
 - Displays the path for the local http-cache directory:

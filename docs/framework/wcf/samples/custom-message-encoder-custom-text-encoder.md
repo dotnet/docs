@@ -6,16 +6,7 @@ ms.assetid: 68ff5c74-3d33-4b44-bcae-e1d2f5dea0de
 ---
 # Custom Message Encoder: Custom Text Encoder
 
-This sample demonstrates how to implement a custom text message encoder using Windows Communication Foundation (WCF).
-
-> [!WARNING]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\MessageEncoder\Text`
+The [Text sample](https://github.com/dotnet/samples/tree/main/framework/wcf/Extensibility/MessageEncoder/Text/CS) demonstrates how to implement a custom text message encoder using Windows Communication Foundation (WCF).
 
 The <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement> of WCF supports only the UTF-8, UTF-16 and big-endian Unicode encodings. The custom text message encoder in this sample supports all platform-supported character encodings that may be required for interoperability. The sample consists of a client console program (.exe), a service library (.dll) hosted by Internet Information Services (IIS), and a text message encoder library (.dll). The service implements a contract that defines a request-reply communication pattern. The contract is defined by the `ICalculator` interface, which exposes math operations (Add, Subtract, Multiply, and Divide). The client makes synchronous requests to a given math operation and the service replies with the result. Both client and service uses the `CustomTextMessageEncoder` instead of the default <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>.
 

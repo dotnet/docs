@@ -19,7 +19,7 @@ In this article, you'll learn how to install .NET on Windows. .NET is made up of
 The latest version of .NET is 5.0.
 
 > [!div class="button"]
-> [Download .NET](https://dotnet.microsoft.com/download/dotnet-core)
+> [Download .NET](https://dotnet.microsoft.com/download/dotnet)
 
 ## Supported releases
 
@@ -42,8 +42,9 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 | Windows 10, Version 1607    | ✔️           | ✔️            | ✔️    |
 | Windows 8.1                 | ✔️           | ✔️            | ✔️    |
 | Windows 7 SP1 [ESU][esu]    | ✔️           | ✔️            | ✔️    |
-| Windows Server 2019<br>Windows Server 2016<br>Windows Server 2012 R2<br>      | ✔️           | ✔️            | ✔️    |
+| Windows Server 2019<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012| ✔️           | ✔️            | ✔️    |
 | Windows Server Core 2012 R2 | ✔️           | ✔️            | ✔️    |
+| Windows Server Core 2012    | ✔️           | ✔️            | ✔️    |
 | Nano Server, Version 1809+  | ✔️           | ✔️            | ✔️    |
 | Nano Server, Version 1803   | ✔️           | ✔️            | ❌    |
 
@@ -71,7 +72,7 @@ There are three different runtimes you can install on Windows:
   This runtime is the simplest runtime and doesn't include any other runtime. It's highly recommended that you install both *ASP.NET Core runtime* and *Desktop runtime* for the best compatibility with .NET apps.
 
 > [!div class="button"]
-> [Download .NET Runtime](https://dotnet.microsoft.com/download/dotnet-core)
+> [Download .NET Runtime](https://dotnet.microsoft.com/download/dotnet)
 
 ## SDK information
 
@@ -93,11 +94,11 @@ The following Windows versions are supported with .NET 5.0:
 |---------------------|---------------|-----------------|
 | Windows 10 Client   | Version 1607+ | x64, x86, ARM64 |
 | Windows Client      | 7 SP1+, 8.1   | x64, x86        |
-| Windows Server      | 2012 R2+      | x64, x86        |
-| Windows Server Core | 2012 R2+      | x64, x86        |
+| Windows Server      | 2012+         | x64, x86        |
+| Windows Server Core | 2012+         | x64, x86        |
 | Nano Server         | Version 1809+ | x64             |
 
-For more information about .NET 5.0 supported operating systems, distributions, and lifecycle policy, see [.NET 5.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0-supported-os.md).
+For more information about .NET 5.0 supported operating systems, distributions, and lifecycle policy, see [.NET 5.0 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md).
 
 # [.NET Core 3.1](#tab/netcore31)
 
@@ -110,10 +111,10 @@ The following Windows versions are supported with .NET Core 3.1:
 | ----------------------------- | ------------------------------ | --------------- |
 | Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
 | Windows 10 Client             | Version 1607+                  | x64, x86        |
-| Windows Server                | 2012 R2+                       | x64, x86        |
+| Windows Server                | 2012+                          | x64, x86        |
 | Nano Server                   | Version 1803+                  | x64, ARM32      |
 
-For more information about .NET Core 3.1 supported operating systems, distributions, and lifecycle policy, see [.NET Core 3.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md).
+For more information about .NET Core 3.1 supported operating systems, distributions, and lifecycle policy, see [.NET Core 3.1 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/3.1/3.1-supported-os.md).
 
 # [.NET Core 3.0](#tab/netcore30)
 
@@ -131,7 +132,7 @@ The following Windows versions are supported with .NET Core 3.0:
 | Windows Server                | 2012 R2+                       | x64, x86        |
 | Nano Server                   | Version 1803+                  | x64, ARM32      |
 
-For more information about .NET Core 3.0 supported operating systems, distributions, and lifecycle policy, see [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md).
+For more information about .NET Core 3.0 supported operating systems, distributions, and lifecycle policy, see [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/3.0/3.0-supported-os.md).
 
 # [.NET Core 2.2](#tab/netcore22)
 
@@ -149,7 +150,7 @@ The following Windows versions are supported with .NET Core 2.2:
 | Windows Server                | 2008 R2 SP1+                   | x64, x86        |
 | Nano Server                   | Version 1803+                   | x64, ARM32      |
 
-For more information about .NET Core 2.2 supported operating systems, distributions, and lifecycle policy, see [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md).
+For more information about .NET Core 2.2 supported operating systems, distributions, and lifecycle policy, see [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/2.2/2.2-supported-os.md).
 
 # [.NET Core 2.1](#tab/netcore21)
 
@@ -165,7 +166,7 @@ The following Windows versions are supported with .NET Core 2.1:
 | Windows Server                | 2008 R2 SP1+                   | x64, x86        |
 | Nano Server                   | Version 1803+                  | x64,            |
 
-For more information about .NET Core 2.1 supported operating systems, distributions, and lifecycle policy, see [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md).
+For more information about .NET Core 2.1 supported operating systems, distributions, and lifecycle policy, see [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/2.1/2.1-supported-os.md).
 
 ### Offline install for Windows 7
 
@@ -193,6 +194,7 @@ More dependencies are required if you're installing the .NET SDK or runtime on t
 | Windows Vista SP 2       | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |
 | Windows 8.1              | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |
 | Windows Server 2008 R2   | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |
+| Windows Server 2012      | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |
 | Windows Server 2012 R2   | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |
 
 The previous requirements are also required if you receive an error related to either of the following dlls:
@@ -258,12 +260,12 @@ Visual Studio Code is a powerful and lightweight source code editor that runs on
 While Visual Studio Code doesn't come with an automated .NET Core installer like Visual Studio does, adding .NET Core support is simple.
 
 01. [Download and install Visual Studio Code](https://code.visualstudio.com/Download).
-01. [Download and install the .NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core).
+01. [Download and install the .NET Core SDK](https://dotnet.microsoft.com/download/dotnet).
 01. [Install the C# extension from the Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
 
 ## Windows Installer
 
-The [download page](https://dotnet.microsoft.com/download/dotnet-core) for .NET provides Windows Installer executables.
+The [download page](https://dotnet.microsoft.com/download/dotnet) for .NET provides Windows Installer executables.
 
 When you use the Windows installers to install .NET, you can customize the installation path by setting the `DOTNETHOME_X64` and `DOTNETHOME_X86` parameters:
 
@@ -293,14 +295,14 @@ For more information, see [Standard Installer Command-Line Options](/windows/win
 
 ## Download and manually install
 
-As an alternative to the Windows installers for .NET, you can download and manually install the SDK or runtime. Manual install is usually done as part of continuous integration testing. For a developer or user, it's generally better to use an [installer](https://dotnet.microsoft.com/download/dotnet-core).
+As an alternative to the Windows installers for .NET, you can download and manually install the SDK or runtime. Manual install is usually done as part of continuous integration testing. For a developer or user, it's generally better to use an [installer](https://dotnet.microsoft.com/download/dotnet).
 
 Both .NET SDK and .NET Runtime can be manually installed after they've been downloaded. If you install .NET SDK, you don't need to install the corresponding runtime. First, download a binary release for either the SDK or the runtime from one of the following sites:
 
 - [.NET 5.0 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
-- [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-- [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1)
-- [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet-core)
+- [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet/3.1)
+- [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet/2.1)
+- [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)
 
 Create a directory to extract .NET to, for example `%USERPROFILE%\dotnet`. Then, extract the downloaded zip file into that directory.
 
@@ -324,7 +326,7 @@ Containers provide a lightweight way to isolate your application from the rest o
 
 Microsoft provides images that are tailored for specific scenarios. For example, the [ASP.NET Core repository](https://hub.docker.com/_/microsoft-dotnet-aspnet) provides images that are built for running ASP.NET Core apps in production.
 
-For more information about using .NET in a Docker container, see [Introduction to .NET and Docker](../docker/introduction.md) and [Samples](https://github.com/dotnet/dotnet-docker/blob/master/samples/README.md).
+For more information about using .NET in a Docker container, see [Introduction to .NET and Docker](../docker/introduction.md) and [Samples](https://github.com/dotnet/dotnet-docker/blob/main/samples/README.md).
 
 ## Next steps
 

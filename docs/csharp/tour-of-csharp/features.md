@@ -58,7 +58,7 @@ An interpolated string is declared using the `$` token. String interpolation eva
 
 ## Pattern matching
 
-The C# language provides [***pattern matching***](../pattern-matching.md) expressions to query the state of an object and execute code based on that state. You can inspect types and the values of properties and fields to determine which action to take. The `switch` expression is the primary expression for pattern matching.
+The C# language provides [***pattern matching***](../fundamentals/functional/pattern-matching.md) expressions to query the state of an object and execute code based on that state. You can inspect types and the values of properties and fields to determine which action to take. The `switch` expression is the primary expression for pattern matching.
 
 ## Delegates and lambda expressions
 
@@ -112,7 +112,7 @@ The following code sample demonstrates how to get the `HelpAttribute` instances 
 
 ## Learn more
 
-You can explore more about C# by trying one of our [tutorials](../tutorials/index.md).
+You can explore more about C# by trying one of our [tutorials](../fundamentals/tutorials/classes.md).
 
 >[!div class="step-by-step"]
 >[Previous](program-building-blocks.md)

@@ -2,6 +2,7 @@
 title: "Walkthrough: Writing Queries in C# (LINQ)"
 description: This walkthrough shows how C# language features are used in LINQ query expressions. This article uses Visual Studio as a development environment.
 ms.date: 07/20/2015
+ms.topic: tutorial
 helpviewer_keywords: 
   - "LINQ [C#], walkthroughs"
   - "LINQ [C#], writing queries"
@@ -130,7 +131,7 @@ This walkthrough demonstrates the C# language features that are used to write LI
   
 #### To make the variables implicitly typed  
   
-1. Explicitly coding `IEnumerables` of `IGroupings` can quickly become tedious. You can write the same query and `foreach` loop much more conveniently by using `var`. The `var` keyword does not change the types of your objects; it just instructs the compiler to infer the types. Change the type of `studentQuery` and the iteration variable `group` to `var` and rerun the query. Note that in the inner `foreach` loop, the iteration variable is still typed as `Student`, and the query works just as before. Change the `s` iteration variable to `var` and run the query again. You see that you get exactly the same results.  
+1. Explicitly coding `IEnumerables` of `IGroupings` can quickly become tedious. You can write the same query and `foreach` loop much more conveniently by using `var`. The `var` keyword does not change the types of your objects; it just instructs the compiler to infer the types. Change the type of `studentQuery` and the iteration variable `group` to `var` and rerun the query. Note that in the inner `foreach` loop, the iteration variable is still typed as `Student`, and the query works just as before. Change the `student` iteration variable to `var` and run the query again. You see that you get exactly the same results.  
   
      [!code-csharp[CsLINQGettingStarted#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#16)]  
   

@@ -58,7 +58,7 @@ You use the `.` token to access a member of a namespace or a type, as the follow
 
   Use a [`using` directive](../keywords/using-directive.md) to make the use of qualified names optional.
 
-- Use `.` to access [type members](../../programming-guide/classes-and-structs/index.md#members), static and non-static, as the following code shows:
+- Use `.` to access [type members](/dotnet/csharp/fundamentals/object-oriented#members), static and non-static, as the following code shows:
 
   [!code-csharp-interactive[type members](snippets/shared/MemberAccessOperators.cs#TypeMemberAccess)]
 
@@ -176,7 +176,7 @@ Available in C# 8.0 and later, the `^` operator indicates the element position f
 
 As the preceding example shows, expression `^e` is of the <xref:System.Index?displayProperty=nameWithType> type. In expression `^e`, the result of `e` must be implicitly convertible to `int`.
 
-You can also use the `^` operator with the [range operator](#range-operator-) to create a range of indices. For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
+You can also use the `^` operator with the [range operator](#range-operator-) to create a range of indices. For more information, see [Indices and ranges](../../whats-new/tutorials/ranges-indexes.md).
 
 ## Range operator ..
 
@@ -194,7 +194,7 @@ You can omit any of the operands of the `..` operator to obtain an open-ended ra
 
 [!code-csharp[ranges with omitted operands](snippets/shared/MemberAccessOperators.cs#RangesOptional)]
 
-For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
+For more information, see [Indices and ranges](../../whats-new/tutorials/ranges-indexes.md).
 
 ## Operator overloadability
 

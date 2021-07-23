@@ -11,12 +11,12 @@ helpviewer_keywords:
 ---
 # Overview of .NET source code analysis
 
-.NET compiler platform (Roslyn) analyzers inspect your C# or Visual Basic code for code quality and code style issues. Starting in .NET 5.0, these analyzers are included with the .NET SDK and you don't need to install them separately. If your project targets .NET 5 or later, code analysis is enabled by default. If your project target a different .NET implementation, for example, .NET Core, .NET Standard, or .NET Framework, you must manually enable code analysis by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property to `true`.
+.NET compiler platform (Roslyn) analyzers inspect your C# or Visual Basic code for code quality and style issues. Starting in .NET 5.0, these analyzers are included with the .NET SDK and you don't need to install them separately. If your project targets .NET 5 or later, code analysis is enabled by default. If your project targets a different .NET implementation, for example, .NET Core, .NET Standard, or .NET Framework, you must manually enable code analysis by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property to `true`.
 
-If you don't want to move to the .NET 5+ SDK or if you prefer a NuGet package-based model, the analyzers are also available in the [Microsoft.CodeAnalysis.NetAnalyzers NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers). You might prefer a package-based model for on-demand version updates.
+If you don't want to move to the .NET 5+ SDK, have a non-SDK-style .NET Framework project, or prefer a NuGet package-based model, the analyzers are also available in the [Microsoft.CodeAnalysis.NetAnalyzers NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers). You might prefer a package-based model for on-demand version updates.
 
 > [!NOTE]
-> .NET analyzers are target-framework agnostic. That is, your project does not need to target a specific .NET implementation. The analyzers work for projects that target `net5.0` as well as earlier .NET versions, such as `netcoreapp3.1` and `net472`.
+> .NET analyzers are target-framework agnostic. That is, your project does not need to target a specific .NET implementation. The analyzers work for projects that target `net5.0` as well as earlier .NET versions, such as `netcoreapp3.1` and `net472`. However, to enable code analysis using the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property, your project must reference a [project SDK](../../core/project-sdk/overview.md).
 
 If rule violations are found by an analyzer, they're reported as a suggestion, warning, or error, depending on how each rule is [configured](configuration-options.md). Code analysis violations appear with the prefix "CA" or "IDE" to differentiate them from compiler errors.
 
@@ -47,7 +47,7 @@ The following rules are enabled, by default, in .NET 5.0.
 
 You can change the severity of these rules to disable them or elevate them to errors. You can also [enable more rules](#enable-additional-rules).
 
-- For a list of rules that are included with each .NET SDK version, see [Analyzer releases](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
+- For a list of rules that are included with each .NET SDK version, see [Analyzer releases](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
 - For a list of all the code quality rules, see [Code quality rules](quality-rules/index.md).
 
 ### Enable additional rules
@@ -60,7 +60,7 @@ You can change the severity of these rules to disable them or elevate them to er
 | `AllEnabledByDefault` | This is the most aggressive mode. All rules are enabled as build warnings. You can selectively [opt out of](configuration-options.md) individual rules to disable them.<br /><br />`<AnalysisMode>AllEnabledByDefault</AnalysisMode>` |
 | `Default` | The default mode, where a handful of rules are enabled as warnings, others are enabled only as Visual Studio IDE suggestions with corresponding code fixes, and the rest are disabled completely. You can selectively [opt into or out of](configuration-options.md) individual rules to disable them.<br /><br />`<AnalysisMode>Default</AnalysisMode>` |
 
-To find the default severity for each available rule and whether or not the rule is enabled in the default analysis mode, see the [full list of rules](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
+To find the default severity for each available rule and whether or not the rule is enabled in the default analysis mode, see the [full list of rules](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
 
 ### Treat warnings as errors
 
@@ -91,7 +91,10 @@ By default, you'll get the latest code analysis rules and default rule severitie
 
   For more information, and to see a list of possible values, see [AnalysisLevel](../../core/project-sdk/msbuild-props.md#analysislevel).
 
-- Install the [Microsoft.CodeAnalysis.NetAnalyzers NuGet package](https://github.com/dotnet/roslyn-analyzers#microsoftcodeanalysisnetanalyzers) to decouple rule updates from .NET SDK updates. Installing the package turns off the built-in SDK analyzers and generates a build warning if the SDK contains a newer analyzer assembly version than that of the NuGet package.
+- Install the [Microsoft.CodeAnalysis.NetAnalyzers NuGet package](https://github.com/dotnet/roslyn-analyzers#microsoftcodeanalysisnetanalyzers) to decouple rule updates from .NET SDK updates. For projects that target .NET 5+, installing the package turns off the built-in SDK analyzers. You'll get a build warning if the SDK contains a newer analyzer assembly version than that of the NuGet package. To disable the warning, set the `_SkipUpgradeNetAnalyzersNuGetWarning` property to `true`.
+
+  > [!NOTE]
+  > If you install the Microsoft.CodeAnalysis.NetAnalyzers NuGet package, you should not add the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property to either your project file or a *Directory.Build.props* file. When the NuGet package is installed and the `EnableNETAnalyzers` property is set to `true`, a build warning is generated.
 
 ## Code-style analysis
 

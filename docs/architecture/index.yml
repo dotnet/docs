@@ -23,6 +23,8 @@ landingContent:
             url: blazor-for-web-forms-developers/index.md
           - text: ASP.NET Core gRPC for WCF developers
             url: grpc-for-wcf-developers/index.md
+          - text: Porting existing ASP.NET apps to .NET Core
+            url: porting-existing-aspnet-apps/index.md
 
   # Card
   - title: Develop cloud-native .NET apps for Azure
@@ -35,6 +37,8 @@ landingContent:
             url: serverless/index.md
           - text: ".NET Microservices: Architecture for containerized .NET applications"
             url: microservices/index.md
+          - text: Dapr for .NET Developers
+            url: dapr-for-net-developers/index.md
       - linkListType: learn
         links:
           - text: Hello World Microservice tutorial
@@ -62,9 +66,9 @@ landingContent:
       - linkListType: concept
         links:
           - text: Containerized Docker application lifecycle with Microsoft platform and tools
-            url: containerized-lifecycle/index.md
-          - text: ASP.NET Core DevOps with Azure
-            url: /aspnet/core/azure/devops/
+            url:  containerized-lifecycle/index.md
+          - text: DevOps for ASP.NET Core Developers
+            url:  devops-for-aspnet-developers/index.md
 
   # Card
   - title: Modernize desktop apps

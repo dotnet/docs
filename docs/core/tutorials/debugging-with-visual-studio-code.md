@@ -2,6 +2,7 @@
 title: Debug a .NET console application using Visual Studio Code
 description: Learn how to debug a .NET console app using Visual Studio Code.
 ms.date: 05/26/2020
+recommendations: false
 ---
 # Tutorial: Debug a .NET console application using Visual Studio Code
 
@@ -41,15 +42,7 @@ The breakpoint is located after a `Console.ReadLine` method call. The **Debug Co
 
 1. Open *.vscode/launch.json*.
 
-1. Change the `console` setting to `integratedTerminal`.
-
-   From:
-
-   ```json
-   "console": "internalConsole",
-   ```
-
-   To:
+1. Change the `console` setting from `internalConsole` to `integratedTerminal`:
 
    ```json
    "console": "integratedTerminal",
@@ -87,9 +80,9 @@ The **Debug Console** window lets you interact with the application you're debug
 
    :::image type="content" source="media/debugging-with-visual-studio-code/change-variable-values.png" alt-text="Change variable values":::
 
-1. Enter `date = DateTime.Parse("2019-11-16T17:25:00Z").ToUniversalTime()` at the bottom of the **Debug Console** window and press the <kbd>Enter</kbd> key.
+1. Enter `currentDate = DateTime.Parse("2019-11-16T17:25:00Z").ToUniversalTime()` at the bottom of the **Debug Console** window and press the <kbd>Enter</kbd> key.
 
-   The **Variables** window displays the new values of the `name` and `date` variables.
+   The **Variables** window displays the new values of the `name` and `currentDate` variables.
 
 1. Continue program execution by selecting the **Continue** button in the toolbar. Another way to continue is by pressing <kbd>F5</kbd>.
 
@@ -157,7 +150,7 @@ Visual Studio Code also allows you to step line by line through a program and mo
 
    Visual Studio Code highlights the breakpoint line.
 
-   At this point, the **Variables** window shows that the `args` array is empty, and `name` and `date` have default values.
+   At this point, the **Variables** window shows that the `args` array is empty, and `name` and `currentDate` have default values.
 
 1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
 
@@ -179,11 +172,11 @@ Visual Studio Code also allows you to step line by line through a program and mo
 
 1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
 
-   Visual Studio Code highlights the `date` variable assignment. The **Variables** window shows the value returned by the call to the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method. The **Terminal** tab displays the string you entered at the prompt.
+   Visual Studio Code highlights the `currentDate` variable assignment. The **Variables** window shows the value returned by the call to the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method. The **Terminal** tab displays the string you entered at the prompt.
 
 1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
 
-   The **Variables** window shows the value of the `date` variable after the assignment from the <xref:System.DateTime.Now?displayProperty=nameWithType> property.
+   The **Variables** window shows the value of the `currentDate` variable after the assignment from the <xref:System.DateTime.Now?displayProperty=nameWithType> property.
 
 1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
 

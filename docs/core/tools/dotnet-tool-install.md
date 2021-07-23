@@ -15,18 +15,21 @@ ms.date: 02/14/2020
 
 ```dotnetcli
 dotnet tool install <PACKAGE_NAME> -g|--global
-    [--add-source <SOURCE>] [--configfile <FILE>]
-    [--framework <FRAMEWORK>] [-v|--verbosity <LEVEL>]
+    [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
+    [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
+    [--no-cache] [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
-    [--add-source <SOURCE>] [--configfile <FILE>]
-    [--framework <FRAMEWORK>] [-v|--verbosity <LEVEL>]
+    [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
+    [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
+    [--no-cache] [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
     [--version <VERSION_NUMBER>]
 
-dotnet tool install <PACKAGE_NAME>
-    [--add-source <SOURCE>] [--configfile <FILE>]
-    [--framework <FRAMEWORK>] [-v|--verbosity <LEVEL>]
+dotnet tool install <PACKAGE_NAME> [--local]
+    [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
+    [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
+    [--no-cache] [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
     [--version <VERSION_NUMBER>]
 
 dotnet tool install -h|--help
@@ -65,15 +68,17 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 ## Options
 
-- **`add-source <SOURCE>`**
+<!-- markdownlint-disable MD012 -->
 
-  Adds an additional NuGet package source to use during installation.
+[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
-- **`configfile <FILE>`**
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
-  The NuGet configuration (*nuget.config*) file to use.
+- **`--disable-parallel`**
 
-- **`framework <FRAMEWORK>`**
+  Prevent restoring multiple projects in parallel.
+
+- **`--framework <FRAMEWORK>`**
 
   Specifies the [target framework](../../standard/frameworks.md) to install the tool for. By default, the .NET SDK tries to choose the most appropriate target framework.
 
@@ -81,17 +86,31 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Specifies that the installation is user wide. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies a local tool installation.
 
-- **`-h|--help`**
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out a short help for the command.
+- **`--ignore-failed-sources`**
 
-- **`tool-path <PATH>`**
+  Treat package source failures as warnings.
+
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+
+- **`--local`**
+
+  Update the tool and the local tool manifest. Can't be combined with the `--global` option or the `--tool-path` option.
+
+- **`--no-cache`**
+
+  Do not cache packages and HTTP requests.
+
+- **`--tool-manifest <PATH>`**
+
+  Path to the manifest file.
+
+- **`--tool-path <PATH>`**
 
   Specifies the location where to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Omitting both `--global` and `--tool-path` specifies a local tool installation.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 - **`--version <VERSION_NUMBER>`**
 

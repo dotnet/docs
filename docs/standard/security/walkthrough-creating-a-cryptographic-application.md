@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Creating a Cryptographic Application"
 description: Walk through the creation of a cryptographic application. Learn how to encrypt and decrypt content in a Windows Forms application.
-ms.date: 07/14/2020
+ms.date: 07/07/2021
 dev_langs: 
   - "csharp"
   - "vb"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "cryptography [NET], example"
   - "cryptography [NET], cryptographic application example"
   - "cryptography [NET], application example"
-ms.assetid: abf48c11-1e72-431d-9562-39cf23e1a8ff
+ms.topic: tutorial
 ---
 # Walkthrough: Creating a Cryptographic Application
 
@@ -69,7 +69,7 @@ Most of the code examples in this walkthrough are designed to be event handlers 
   
 ## Declaring Global Objects  
 
-Add the following code to the Form's constructor. Edit the string variables for your environment and preferences.  
+Add the following code as part of the declaration of the class Form1. Edit the string variables for your environment and preferences.  
   
 [!code-csharp[CryptoWalkThru#1](../../../samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs/Form1.cs#1)]
 [!code-vb[CryptoWalkThru#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#1)]  

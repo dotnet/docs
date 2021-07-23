@@ -1,16 +1,16 @@
 ---
 title: "SqlClient Support for High Availability, Disaster Recovery"
-description: Learn about SqlClient application support for high-availability, disaster recovery in SQL Server, using AlwaysOn Availability Groups.
+description: Learn about SqlClient application support for high-availability, disaster recovery in SQL Server, using Always On Availability Groups or Always On Failover Cluster Instances.
 ms.date: "03/30/2017"
 ms.assetid: 61e0b396-09d7-4e13-9711-7dcbcbd103a0
 ---
 # SqlClient Support for High Availability, Disaster Recovery
 
-This topic discusses SqlClient support (added in .NET Framework 4.5) for high-availability, disaster recovery -- AlwaysOn Availability Groups.  AlwaysOn Availability Groups feature was added to SQL Server 2012. For more information about AlwaysOn Availability Groups, see SQL Server Books Online.  
+This topic discusses SqlClient support (added in .NET Framework 4.5) for high-availability, disaster recovery with the Always On features -- Always On availability groups (AGs) and Always On failover cluster instances (FCIs) with SQL Server 2012 or later.  For more information about either Always On feature, see SQL Server Books Online.  
   
- You can now specify the availability group listener of a (high-availability, disaster-recovery) availability group (AG) or SQL Server 2012 Failover Cluster Instance in the connection property. If a SqlClient application is connected to an AlwaysOn database that fails over, the original connection is broken and the application must open a new connection to continue work after the failover.  
+ You can now specify an availability group listener or the name of an FCI in the connection property. If a SqlClient application is connected to a database that fails over, the original connection is broken and the application must open a new connection to continue work after the failover.  
   
- If you are not connecting to an availability group listener or SQL Server 2012 Failover Cluster Instance, and if multiple IP addresses are associated with a hostname, SqlClient will iterate sequentially through all IP addresses associated with DNS entry. This can be time consuming if the first IP address returned by DNS server is not bound to any network interface card (NIC). When connecting to an availability group listener or SQL Server 2012 Failover Cluster Instance, SqlClient attempts to establish connections to all IP addresses in parallel and if a connection attempt succeeds, the driver will discard any pending connection attempts.  
+ If you are not connecting to an AG or FCI, and if multiple IP addresses are associated with a hostname, SqlClient will iterate sequentially through all IP addresses associated with DNS entry. This can be time consuming if the first IP address returned by DNS server is not bound to any network interface card (NIC). When connecting an FCI, or to the listener of an availability group, SqlClient attempts to establish connections to all IP addresses in parallel and if a connection attempt succeeds, the driver discards any pending connection attempts.  
   
 > [!NOTE]
 > Increasing connection timeout and implementing connection retry logic will increase the probability that an application will connect to an availability group. Also, because a connection can fail because of a failover, you should implement connection retry logic, retrying a failed connection until it reconnects.  
@@ -32,19 +32,19 @@ This topic discusses SqlClient support (added in .NET Framework 4.5) for high-av
   
 ## Connecting With MultiSubnetFailover  
 
- Always specify `MultiSubnetFailover=True` when connecting to a SQL Server 2012 availability group listener or SQL Server 2012 Failover Cluster Instance. `MultiSubnetFailover` enables faster failover for all Availability Groups and or Failover Cluster Instance in SQL Server 2012 and will significantly reduce failover time for single and multi-subnet AlwaysOn topologies. During a multi-subnet failover, the client will attempt connections in parallel. During a subnet failover, will aggressively retry the TCP connection.  
+ Always specify `MultiSubnetFailover=True` when connecting to the FCI or the listener of an AG. `MultiSubnetFailover` enables faster failover for all AGs and or FCIs in SQL Server 2012 or later and significantly reduces failover time for single and multi-subnet Always On topologies. During a multi-subnet failover, the client attempts connections in parallel. During a subnet failover, the client aggressively retries the TCP connection.  
   
- The `MultiSubnetFailover` connection property indicates that the application is being deployed in an availability group or SQL Server 2012 Failover Cluster Instance and that SqlClient will try to connect to the database on the primary SQL Server instance by trying to connect to all the IP addresses. When `MultiSubnetFailover=True` is specified for a connection, the client retries TCP connection attempts faster than the operating system’s default TCP retransmit intervals. This enables faster reconnection after failover of either an AlwaysOn Availability Group or an AlwaysOn Failover Cluster Instance, and is applicable to both single- and multi-subnet Availability Groups and Failover Cluster Instances.  
+ The `MultiSubnetFailover` connection property indicates that the application is using either an AG or FCI and that SqlClient will try to connect to the database on the primary SQL Server instance by trying to connect to all the IP addresses. When `MultiSubnetFailover=True` is specified for a connection, the client retries TCP connection attempts faster than the operating system’s default TCP retransmit intervals. This enables faster reconnection after failover of either an AG or FCI, and is applicable to both single- and multi-subnet AGs and FCIs.  
   
  For more information about connection string keywords in SqlClient, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.  
   
- Specifying `MultiSubnetFailover=True` when connecting to something other than a availability group listener or SQL Server 2012 Failover Cluster Instance may result in a negative performance impact, and is not supported.  
+ Specifying `MultiSubnetFailover=True` when connecting to something other than an AG or FCI may result in a negative performance impact, and is not supported.  
   
- Use the following guidelines to connect to a server in an availability group or SQL Server 2012 Failover Cluster Instance:  
+ Use the following guidelines to connect to a server using one of the Always On features:  
   
 - Use the `MultiSubnetFailover` connection property when connecting to a single subnet or multi-subnet; it will improve performance for both.  
   
-- To connect to an availability group, specify the availability group listener of the availability group as the server in your connection string.  
+- To connect to an AG, specify the listener of the availability group as the server in your connection string.  
   
 - Connecting to a SQL Server instance configured with more than 64 IP addresses will cause a connection failure.  
   

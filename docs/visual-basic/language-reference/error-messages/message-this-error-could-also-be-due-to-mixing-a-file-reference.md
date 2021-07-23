@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: BC30971: <message> This error could also be due to mixing a file reference with a project reference to assembly '<assemblyname>"
+description: "Learn more about: BC30971: <message> This error could also be due to mixing a file reference with a project reference to assembly '<assemblyname>'"
 title: "<message> This error could also be due to mixing a file reference with a project reference to assembly '<assemblyname>'"
 ms.date: 07/20/2015
 f1_keywords:

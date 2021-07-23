@@ -1,7 +1,7 @@
 ---
 title: Breaking changes and .NET libraries
 description: Best practice recommendations for navigating breaking changes when creating .NET libraries.
-ms.date: 10/02/2018
+ms.date: 05/13/2021
 ---
 # Breaking changes
 
@@ -52,6 +52,8 @@ For example, ASP.NET Core MVC has the concept of a [compatibility version](/aspn
 
 ✔️ CONSIDER leaving new features off by default, if they affect existing users, and let developers opt in to the feature with a setting.
 
+For more information about behavior breaking changes in .NET APIs, see [.NET behavioral changes compatibility](../../core/compatibility/index.md#behavioral-changes).
+
 ### Binary breaking change
 
 A binary breaking change happens when you change the public API of your library, so assemblies compiled against older versions of your library are no longer able to call the API. For example, changing a method's signature by adding a new parameter will cause assemblies compiled against the older version of the library to throw a <xref:System.MissingMethodException>.
@@ -90,11 +92,13 @@ public class Document
 
 > Removing APIs is a binary breaking change. Considering keeping obsolete types and methods if maintaining them is low cost and doesn't add lot of technical debt to your library. Not removing types and methods can help avoid the worst-case scenarios mentioned above.
 
+For more information about what .NET API changes break binary compatibility, see [.NET public contract compatibility](../../core/compatibility/index.md#modifications-to-the-public-contract).
+
 ## See also
 
 - [Version and update considerations for C# developers](../../csharp/whats-new/version-update-considerations.md)
 - [A definitive guide to API-breaking changes in .NET](https://stackoverflow.com/questions/1456785/a-definitive-guide-to-api-breaking-changes-in-net)
-- [.NET breaking change rules](https://github.com/dotnet/runtime/blob/master/docs/coding-guidelines/breaking-change-rules.md)
+- [.NET breaking change rules](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/breaking-change-rules.md)
 
 >[!div class="step-by-step"]
 >[Previous](versioning.md)

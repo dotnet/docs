@@ -7,7 +7,7 @@ ms.date: 01/06/2021
 
 ![Book cover](./media/devops-book-cover-large-we.png)
 
-**EDITION v5.0** - Updated to ASP.NET Core 5.0
+**EDITION v5.0.1** - Updated to ASP.NET Core 5.0
 
 Refer [changelog](https://aka.ms/DockerLifecycleEbookChangelog) for the book updates and community contributions.
 
@@ -52,6 +52,8 @@ Participants and reviewers:
 > **Miguel Veloso**, Software Development Engineer at Plain Concepts
 >
 > **Sumit Ghosh**, Principal Consultant at Neudesic
+>
+> **Colin Dembovsky**, DevOps Practice Lead, Cognizant Microsoft Business Group
 
 ## Copyright
 

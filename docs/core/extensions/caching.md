@@ -173,7 +173,7 @@ Z is still in cache. The 'Z' character is the 26 letter in the English alphabet.
 
 Since the absolute expiration is set, all the cached items will eventually be evicted.
 
-## Worker Service caching strategy
+## Worker Service caching
 
 One common strategy for caching data, is updating the cache independently from the consuming data services. The *Worker Service* template is a great example, as the <xref:Microsoft.Extensions.Hosting.BackgroundService> runs independent (or in the background) from the other application code. When an application starts running that hosts an implementation of the <xref:Microsoft.Extensions.Hosting.IHostedService>, the corresponding implementation (in this case the `BackgroundService` or "worker") start running in the same process. These hosted services are registered with DI as singletons, through the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)> extension method. Other services can be registered with DI with any [service lifetime](dependency-injection.md#service-lifetimes).
 
@@ -202,7 +202,7 @@ In the preceding C# code:
 
 The `PhotoService` is responsible for getting photos that match a given criteria (or `filter`):
 
-:::code source="snippets/caching/memory/PhotoService.cs" highlight="10-14":::
+:::code source="snippets/caching/memory/PhotoService.cs":::
 
 In the preceding C# code:
 

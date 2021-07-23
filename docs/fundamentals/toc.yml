@@ -590,13 +590,6 @@ items:
         href: ../core/diagnostics/debug-linux-dumps.md
       - name: SOS debugger extension
         href: ../core/diagnostics/sos-debugging-extension.md
-    - name: EventCounters
-      items:
-      - name: Overview
-        displayName: EventCounters
-        href: ../core/diagnostics/event-counters.md
-      - name: Well-known Counters in .NET
-        href: ../core/diagnostics/available-counters.md
     - name: EventPipe
       href: ../core/diagnostics/eventpipe.md
     - name: Logging and tracing
@@ -616,6 +609,17 @@ items:
           href: ../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
         - name: Collection
           href: ../core/diagnostics/distributed-tracing-collection-walkthroughs.md
+    - name: Metrics
+      items:
+      - name: Overview
+        href: ../core/diagnostics/metrics.md
+      - name: EventCounters
+        items:
+        - name: Overview
+          displayName: EventCounters
+          href: ../core/diagnostics/event-counters.md
+        - name: Well-known Counters in .NET
+          href: ../core/diagnostics/available-counters.md
     - name: Symbols
       href: ../core/diagnostics/symbols.md
     - name: Microsoft.Diagnostics.NETCore.Client library

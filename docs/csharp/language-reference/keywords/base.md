@@ -24,7 +24,7 @@ It is an error to use the `base` keyword from within a static method.
 
 The base class that is accessed is the base class specified in the class declaration. For example, if you specify `class ClassB : ClassA`, the members of ClassA are accessed from ClassB, regardless of the base class of ClassA.
 
-## Example
+## Example 1
 
 In this example, both the base class, `Person`, and the derived class, `Employee`, have a method named `Getinfo`. By using the `base` keyword, it is possible to call the `Getinfo` method on the base class, from within the derived class.
 
@@ -32,7 +32,7 @@ In this example, both the base class, `Person`, and the derived class, `Employee
 
 For additional examples, see [new](new-modifier.md), [virtual](virtual.md), and [override](override.md).
 
-## Example
+## Example 2
 
 This example shows how to specify the base-class constructor called when creating instances of a derived class.
 

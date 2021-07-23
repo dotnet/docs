@@ -141,7 +141,7 @@ This code displays the following text:
 <book isbn="1234" author="My Author" year="1999" title="My Book" />
 ```
 
-## Example
+## Example 3
 
 The following example declares `ns` as an XML namespace prefix. It then uses the prefix of the namespace to create an XML literal and displays the element's final form.
 

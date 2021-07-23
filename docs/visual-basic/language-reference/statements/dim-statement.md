@@ -312,7 +312,7 @@ The following example lists the prime numbers between 1 and 30. The scope of loc
 
 [!code-vb[VbVbalrStatements#142](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class11.vb#142)]
 
-## Example
+## Example 3
 
 In the following example, the `speedValue` variable is declared at the class level. The `Private` keyword is used to declare the variable. The variable can be accessed by any procedure in the `Car` class.
 

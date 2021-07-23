@@ -22,19 +22,7 @@ You can provide the common language runtime with configuration information for a
 
  The following example creates an instance of the **AppDomainSetup** class, uses this class to create a new application domain, writes the information to console, and then unloads the application domain.
 
-## Example  
-
-something
-
-## Example 1
-
-something
-
-## Example 2
-
-something
-
-## Example 2
+## Example
 
  [!code-cpp[ADApplicationBase#2](../../../samples/snippets/cpp/VS_Snippets_CLR/ADApplicationBase/CPP/source2.cpp#2)]
  [!code-csharp[ADApplicationBase#2](../../../samples/snippets/csharp/VS_Snippets_CLR/ADApplicationBase/CS/source2.cs#2)]

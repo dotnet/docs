@@ -171,7 +171,7 @@ The following example iterates through an enumeration that's declared by using a
 
 [!code-vb[VbVbalrStatements#116](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#116)]
 
-## Example
+## Example 3
 
 In the following example, the statement parameters use a class that has operator overloads for the `+`, `-`, `>=`, and `<=` operators.
 

@@ -70,7 +70,7 @@ You can also nest an `if` statement inside an else block, as the following parti
 
 [!code-csharp[csrefKeywordsSelection#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsSelection/CS/csrefKeywordsSelection.cs#5)]
 
-## Example
+## Example 3
 
 The following example determines whether an input character is a lowercase letter, an uppercase letter, or a number. If all three conditions are false, the character isn’t an alphanumeric character. The example displays a message for each case.
 

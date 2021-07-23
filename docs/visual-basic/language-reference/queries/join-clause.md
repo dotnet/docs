@@ -74,7 +74,7 @@ This example will produce output similar to the following:
 
 `cmd (5136), Command Window`
 
-## Example
+## Example 3
 
 The following code example joins two collections by using the `Join` clause with two key columns.
 

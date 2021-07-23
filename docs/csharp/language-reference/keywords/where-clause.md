@@ -25,7 +25,7 @@ Within a single `where` clause, you can specify as many predicates as necessary 
 
 [!code-csharp[cscsrefQueryKeywords#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Where.cs#6)]  
 
-## Example
+## Example 3
 
 A `where` clause may contain one or more methods that return Boolean values. In the following example, the `where` clause uses a method to determine whether the current value of the range variable is even or odd.
 

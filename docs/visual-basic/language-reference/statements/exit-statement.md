@@ -74,7 +74,7 @@ The following example assigns the return value to the function name `myFunction`
 
 [!code-vb[VbVbalrStatements#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#23)]
 
-## Example
+## Example 3
 
 The following example uses the [Return Statement](return-statement.md) to assign the return value and exit the function:
 

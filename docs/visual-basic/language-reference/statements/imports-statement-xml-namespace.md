@@ -79,7 +79,7 @@ This code displays the following text:
 
 Notice that the compiler converted the XML namespace prefix from a global prefix to a local prefix definition.
 
-## Example
+## Example 3
 
 The following example imports the XML namespace prefix `ns`. It then uses the prefix of the namespace to create an XML literal and access the first child node with the qualified name `ns:name`.
 

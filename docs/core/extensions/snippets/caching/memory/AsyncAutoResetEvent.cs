@@ -35,6 +35,7 @@ namespace CachingExamples.Memory
         public void Set()
         {
             TaskCompletionSource<bool>? toRelease = null;
+
             lock (_completionQueue)
             {
                 if (_completionQueue is { Count: > 0 })

@@ -3,7 +3,7 @@ title: Caching in .NET
 description: Learn how to use various in-memory and distributed caching mechanisms in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/22/2021
+ms.date: 07/23/2021
 ---
 
 # Caching in .NET
@@ -173,9 +173,26 @@ Z is still in cache. The 'Z' character is the 26 letter in the English alphabet.
 
 Since the absolute expiration is set, all the cached items will eventually be evicted.
 
-### Worker service caching strategy
+### Worker Service caching strategy
 
+One common strategy for caching data, is updating the cache independently from the consuming data services. The *Worker Service* template is a great example, as the <xref:Microsoft.Extensions.Hosting.BackgroundService> runs independent (or in the background) from the other application code. When an application starts running that hosts an implementation of the <xref:Microsoft.Extensions.Hosting.IHostedService>, the corresponding implementation (in this case the `BackgroundService` or "worker") start running in the same process. These hosted services are registered with DI as singletons, through the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)> extension method. Other services can be registered with DI with any [service lifetime](dependency-injection.md#service-lifetimes).
 
+> [!IMPORTANT]
+> The service lifetime's are very important to understand. When you call <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache%2A> to register all of the in-memory caching services, the services are registered as singletons.
+
+In the following example, you'll see several services being registered with DI. Each service has a single responsibility.
+
+:::code source="snippets/caching/memory/Program.cs" range="1-18":::
+
+In the preceding C# code:
+
+- The generic host is created with [defaults](generic-host.md#default-builder-settings).
+- In-memory caching services are registered with <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache%2A>.
+- An `HttpClient` instance is registered for DI specific to the `CacheWorker` class with <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)>.
+- The `CacheWorker` class is registered for DI as a hosted service with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)>.
+- The `PhotoService` class is registered for DI as a scoped lifetime with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)>.
+- The `PhotoCacheSignal` class is registered for DI as a singleton lifetime with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection,%60%600)>.
+- A `host` is instantiated from the builder, and started asynchronously.
 
 ## Distributed caching
 

@@ -27,7 +27,7 @@ A `FROM` clause is a comma-separated list of one or more `FROM` clause items. Th
 
 ## FROM Clause Items
 
-Each `FROM` clause item refers to a source collection in the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports the following classes of `FROM` clause items: simple `FROM` clause items, `JOIN FROM` clause items, and `APPLY FROM` clause items. Each of these `FROM` clause items is described in more detail in the following sections.
+Each `FROM` clause item refers to a source collection in the Entity SQL query. Entity SQL supports the following classes of `FROM` clause items: simple `FROM` clause items, `JOIN FROM` clause items, and `APPLY FROM` clause items. Each of these `FROM` clause items is described in more detail in the following sections.
 
 ### Simple FROM Clause Item
 
@@ -43,11 +43,11 @@ The alias specification is optional. An alternate specification of the above fro
 LOB.Customers
 ```
 
-If no alias is specified, [!INCLUDE[esql](../../../../../../includes/esql-md.md)] attempts to generate an alias based on the collection expression.
+If no alias is specified, Entity SQL attempts to generate an alias based on the collection expression.
 
 ### JOIN FROM Clause Item
 
-A `JOIN FROM` clause item represents a join between two `FROM` clause items. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports cross joins, inner joins, left and right outer joins, and full outer joins. All these joins are supported similar to the way that they are supported in Transact-SQL. As in Transact-SQL, the two `FROM` clause items involved in the `JOIN` must be independent. That is, they cannot be correlated. A `CROSS APPLY` or `OUTER APPLY` can be used for these cases.
+A `JOIN FROM` clause item represents a join between two `FROM` clause items. Entity SQL supports cross joins, inner joins, left and right outer joins, and full outer joins. All these joins are supported similar to the way that they are supported in Transact-SQL. As in Transact-SQL, the two `FROM` clause items involved in the `JOIN` must be independent. That is, they cannot be correlated. A `CROSS APPLY` or `OUTER APPLY` can be used for these cases.
 
 #### Cross Joins
 
@@ -86,7 +86,7 @@ The previous query expression processes a combination of every element of the co
 
 ### APPLY Clause Item
 
-[!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports two kinds of `APPLY`: `CROSS APPLY` and `OUTER APPLY`.
+Entity SQL supports two kinds of `APPLY`: `CROSS APPLY` and `OUTER APPLY`.
 
 A `CROSS APPLY` produces a unique pairing of each element of the collection on the left with an element of the collection produced by evaluating the expression on the right. With a `CROSS APPLY`, the expression on the right is functionally dependent on the element on the left, as illustrated in the following associated collection example:
 
@@ -99,7 +99,7 @@ An `OUTER APPLY` resembles a `CROSS APPLY`, except a pairing is still produced e
 `SELECT c, f FROM C AS c OUTER APPLY c.Assoc AS f`
 
 > [!NOTE]
-> Unlike in Transact-SQL, there is no need for an explicit unnest step in [!INCLUDE[esql](../../../../../../includes/esql-md.md)].
+> Unlike in Transact-SQL, there is no need for an explicit unnest step in Entity SQL.
 
 > [!NOTE]
 > `CROSS` and `OUTER APPLY` operators were introduced in SQL Server 2005. In some cases, the query pipeline might produce Transact-SQL that contains `CROSS APPLY` and/or `OUTER APPLY` operators. Because some backend providers, including versions of SQL Server earlier than SQL Server 2005, do not support these operators, such queries cannot be executed on these backend providers.
@@ -140,13 +140,13 @@ Logically, the collections in the `FROM` clause are assumed to be part of an `n`
 
 The `FROM` clause logically produces a multiset of rows of type Row(c, d, e) where fields c, d, and e are assumed to be of the element type of `C`, `D`, and `c.Names`.
 
-[!INCLUDE[esql](../../../../../../includes/esql-md.md)] introduces an alias for each simple `FROM` clause item in scope. For example, in the following FROM clause snippet, The names introduced into scope are c, d, and e.
+Entity SQL introduces an alias for each simple `FROM` clause item in scope. For example, in the following FROM clause snippet, The names introduced into scope are c, d, and e.
 
 ```sql
 from (C as c join D as d) cross apply c.Names as e
 ```
 
-In [!INCLUDE[esql](../../../../../../includes/esql-md.md)] (unlike Transact-SQL), the `FROM` clause only introduces the aliases into scope. Any references to columns (properties) of these collections must be qualified with the alias.
+In Entity SQL (unlike Transact-SQL), the `FROM` clause only introduces the aliases into scope. Any references to columns (properties) of these collections must be qualified with the alias.
 
 ## Pulling Up Keys from Nested Queries
 

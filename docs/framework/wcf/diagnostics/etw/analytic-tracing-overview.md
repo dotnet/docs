@@ -12,7 +12,7 @@ Analytic tracing in [!INCLUDE[netfx_current_long](../../../../../includes/netfx-
 
 For more information about ETW, see [Improve Debugging and Performance Tuning with ETW](/archive/msdn-magazine/2007/april/event-tracing-improve-debugging-and-performance-tuning-with-etw).
 
- In addition to using the Windows System, Security, and Application event logs to analyze application, Windows Vista and Windows Server 2008 introduced additional logs under the Applications and Services Logs top-level node. The purpose of these new logs is to store events for a particular application or specific component instead of global events that have a system-wide impact (such as the type of events that the Security event log might record). [!INCLUDE[netfx_current_short](../../../../../includes/netfx-current-short-md.md)] unifies and correlates the logging of WCF Trace Events, WCF Message Logs, and [!INCLUDE[wf1](../../../../../includes/wf1-md.md)] Tracking records to the Applications and Services Logs.
+ In addition to using the Windows System, Security, and Application event logs to analyze application, Windows Vista and Windows Server 2008 introduced additional logs under the Applications and Services Logs top-level node. The purpose of these new logs is to store events for a particular application or specific component instead of global events that have a system-wide impact (such as the type of events that the Security event log might record). [!INCLUDE[netfx_current_short](../../../../../includes/netfx-current-short-md.md)] unifies and correlates the logging of WCF Trace Events, WCF Message Logs, and WF Tracking records to the Applications and Services Logs.
 
 The following sections cover concepts and capabilities that apply to WCF analytic tracing.
 

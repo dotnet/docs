@@ -6,13 +6,13 @@ ms.assetid: 67d2b3e8-3777-49f8-9084-abbb33b5a766
 ---
 # Windows Workflow Foundation 4 Performance
 
- .NET Framework 4 includes a major revision of the Windows Workflow Foundation (WF) with heavy investments in performance. This new revision introduces significant design changes from the previous versions of [!INCLUDE[wf1](../../../includes/wf1-md.md)] that shipped as part of .NET Framework 3.0 and .NET Framework 3.5. It has been re-architected from the core of the programming model, runtime, and tooling to greatly improve performance and usability. This topic shows the important performance characteristics of these revisions and compares them against those of the previous version.
+ .NET Framework 4 includes a major revision of the Windows Workflow Foundation (WF) with heavy investments in performance. This new revision introduces significant design changes from the previous versions of WF that shipped as part of .NET Framework 3.0 and .NET Framework 3.5. It has been re-architected from the core of the programming model, runtime, and tooling to greatly improve performance and usability. This topic shows the important performance characteristics of these revisions and compares them against those of the previous version.
 
  Individual workflow component performance has increased by orders of magnitude between WF3 and WF4.  This leaves the gap between hand-coded Windows Communication Foundation (WCF) services and WCF workflow services to be quite small.  Workflow latency has been significantly reduced in WF4.  Persistence performance has increased by a factor of 2.5 - 3.0.  Health monitoring by means of workflow tracking has significantly less overhead.  These are compelling reasons to migrate to or adopt WF4 in your applications.
 
 ## Terminology
 
- The version of [!INCLUDE[wf1](../../../includes/wf1-md.md)] introduced in .NET Framework 4 will be referred to as WF4 for the rest of this topic. [!INCLUDE[wf1](../../../includes/wf1-md.md)] was introduced in .NET Framework 3.0 and had a few minor revisions through .NET Framework 3.5 SP1. The .NET Framework 3.5 version of Workflow Foundation will be referred to as WF3 for the rest of this topic. WF3 is shipped in .NET Framework 4 side-by-side with WF4. For more information about migrating WF3 artifacts to WF4 see: [Windows Workflow Foundation 4 Migration Guide](migration-guidance.md).
+ The version of WF introduced in .NET Framework 4 will be referred to as WF4 for the rest of this topic. WF was introduced in .NET Framework 3.0 and had a few minor revisions through .NET Framework 3.5 SP1. The .NET Framework 3.5 version of Workflow Foundation will be referred to as WF3 for the rest of this topic. WF3 is shipped in .NET Framework 4 side-by-side with WF4. For more information about migrating WF3 artifacts to WF4 see: [Windows Workflow Foundation 4 Migration Guide](migration-guidance.md).
 
  Windows Communication Foundation (WCF) is Microsoft’s unified programming model for building service-oriented applications. It was first introduced as part of .NET Framework 3.0 together with WF3 and now is one of the key components of the .NET Framework.
 
@@ -28,13 +28,13 @@ ms.assetid: 67d2b3e8-3777-49f8-9084-abbb33b5a766
 
 ### WF Runtime
 
- At the core of the [!INCLUDE[wf1](../../../includes/wf1-md.md)] runtime is an asynchronous scheduler that drives the execution of the activities in a workflow. It provides a performant, predictable execution environment for activities. The environment has a well-defined contract for execution, continuation, completion, cancellation, exceptions, and a predictable threading model.
+ At the core of the WF runtime is an asynchronous scheduler that drives the execution of the activities in a workflow. It provides a performant, predictable execution environment for activities. The environment has a well-defined contract for execution, continuation, completion, cancellation, exceptions, and a predictable threading model.
 
  In comparison to WF3, the WF4 runtime has a more efficient scheduler. It leverages the same I/O thread pool that is used for WCF, which is very efficient at executing batched work items. The internal work item scheduler queue is optimized for most common usage patterns. The WF4 runtime also manages the execution states in a very lightweight way with minimal synchronization and event handling logic, while WF3 depends on heavy-weight event registration and invocation to perform complex synchronization for state transitions.
 
 ### Data Storage and Flow
 
- In WF3, data associated with an activity is modeled through dependency properties implemented by the type <xref:System.Windows.DependencyProperty>. The dependency property pattern was introduced in Windows Presentation Foundation (WPF). In general, this pattern is very flexible to support easy data binding and other UI features. However, the pattern requires the properties to be defined as static fields in the workflow definition. Whenever the [!INCLUDE[wf1](../../../includes/wf1-md.md)] runtime sets or gets the property values, it involves heavily-weighted look-up logic.
+ In WF3, data associated with an activity is modeled through dependency properties implemented by the type <xref:System.Windows.DependencyProperty>. The dependency property pattern was introduced in Windows Presentation Foundation (WPF). In general, this pattern is very flexible to support easy data binding and other UI features. However, the pattern requires the properties to be defined as static fields in the workflow definition. Whenever the WF runtime sets or gets the property values, it involves heavily-weighted look-up logic.
 
  WF4 uses clear data scoping logic to greatly improve how data is handled in a workflow. It separates the data stored in an activity from the data that is flowing across the activity boundaries by using two different concepts: variables and arguments. By using a clear hierarchical scope for variables and "In/Out/InOut" arguments, the data usage complexity for activities is dramatically reduced and the lifetime of the data is also automatically scoped. Activities have a well-defined signature described by its arguments. By simply inspecting an activity you can determine what data it expects to receive and what data will be produced by it as the result of its execution.
 
@@ -42,7 +42,7 @@ ms.assetid: 67d2b3e8-3777-49f8-9084-abbb33b5a766
 
 ### Control Flow
 
- Just as in any programming language, [!INCLUDE[wf1](../../../includes/wf1-md.md)] provides support for control flows for workflow definitions by introducing a set of control flow activities for sequencing, looping, branching and other patterns. In WF3, when the same activity needs to be re-executed, a new <xref:System.Workflow.ComponentModel.ActivityExecutionContext> is created and the activity is cloned through a heavy-weight serialization and deserialization logic based on <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>. Usually the performance for iterative control flows is much slower than executing a sequence of activities.
+ Just as in any programming language, WF provides support for control flows for workflow definitions by introducing a set of control flow activities for sequencing, looping, branching and other patterns. In WF3, when the same activity needs to be re-executed, a new <xref:System.Workflow.ComponentModel.ActivityExecutionContext> is created and the activity is cloned through a heavy-weight serialization and deserialization logic based on <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>. Usually the performance for iterative control flows is much slower than executing a sequence of activities.
 
  WF4 handles this quite differently. It takes the activity template, creates a new ActivityInstance object, and adds it to the scheduler queue. This whole process only involves explicit object creation and is very lightweight.
 
@@ -186,17 +186,17 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 
  ![Column chart comparing WF3 and WF4 performance test data](./media/performance/performance-test-chart.gif)
 
- All tests are measured in workflows per second with the exception of the transaction scope test.  As can be seen above, the [!INCLUDE[wf1](../../../includes/wf1-md.md)] runtime performance has improved across the board, especially in areas that require multiple executions of the same activity like the while loop.
+ All tests are measured in workflows per second with the exception of the transaction scope test.  As can be seen above, the WF runtime performance has improved across the board, especially in areas that require multiple executions of the same activity like the while loop.
 
 ## Service Composition Scenario
 
- As is shown in the previous section, "Component-level Performance Comparisons," there has been a significant reduction in overhead between WF3 and WF4.  WCF workflow services can now almost match the performance of hand-coded WCF services but still have all the benefits of the [!INCLUDE[wf1](../../../includes/wf1-md.md)] runtime.  This test scenario compares a WCF service against a WCF workflow service in WF4.
+ As is shown in the previous section, "Component-level Performance Comparisons," there has been a significant reduction in overhead between WF3 and WF4.  WCF workflow services can now almost match the performance of hand-coded WCF services but still have all the benefits of the WF runtime.  This test scenario compares a WCF service against a WCF workflow service in WF4.
 
 ### Online Store Service
 
  One of the strengths of Windows Workflow Foundation is the ability to compose processes using several services.  For this example, there is an online store service that orchestrates two service calls to purchase an order.  The first step is to validate the order using an Order Validating Service.  The second step is to fill the order using a Warehouse Service.
 
- The two backend services, Order Validating Service and Warehouse Service, remain the same for both tests.  The part that changes is the Online Store Service that performs the orchestration.  In one case, the service is hand-coded as a WCF service.  For the other case, the service is written as a WCF workflow service in WF4. [!INCLUDE[wf1](../../../includes/wf1-md.md)]-specific features like tracking and persistence are turned off for this test.
+ The two backend services, Order Validating Service and Warehouse Service, remain the same for both tests.  The part that changes is the Online Store Service that performs the orchestration.  In one case, the service is hand-coded as a WCF service.  For the other case, the service is written as a WCF workflow service in WF4. WF-specific features like tracking and persistence are turned off for this test.
 
 ### Environment
 
@@ -208,7 +208,7 @@ The following diagram shows the basic compensation workflow. The WF3 workflow is
 
 ![Column chart showing online Store Service performance](./media/performance/online-store-performance-graph.gif)
 
- Connecting to backend TCP services without channel pooling, the [!INCLUDE[wf1](../../../includes/wf1-md.md)] service has a 17.2% impact on throughput.  With channel pooling, the penalty is about 23.8%.  For HTTP, the impact is much less: 4.3% without pooling and 8.1% with pooling.  It is also important to note that the channel pooling provides very little benefit when using HTTP.
+ Connecting to backend TCP services without channel pooling, the WF service has a 17.2% impact on throughput.  With channel pooling, the penalty is about 23.8%.  For HTTP, the impact is much less: 4.3% without pooling and 8.1% with pooling.  It is also important to note that the channel pooling provides very little benefit when using HTTP.
 
  While there is overhead from the WF4 runtime compared with a hand-coded WCF service in this test, it could be considered a worst-case scenario.  The two backend services in this test do very little work.  In a real end-to-end scenario, these services would perform more expensive operations like database calls, making the performance impact of the transport layer less important.  This plus the benefits of the features available in WF4 makes Workflow Foundation a viable choice for creating orchestration services.
 
@@ -474,7 +474,7 @@ public class Workflow1 : Activity
 
 ## Interop
 
- WF4 is almost a complete rewrite of [!INCLUDE[wf1](../../../includes/wf1-md.md)] and therefore WF3 workflows and activities are not directly compatible with WF4.  Many customers that adopted Windows Workflow Foundation early will have in-house or third-party workflow definitions and custom activities for WF3.  One way to ease the transition to WF4 is to use the Interop activity, which can execute WF3 activities from within a WF4 workflow.  It is recommended that the <xref:System.Activities.Statements.Interop> activity only be used when necessary. For more information about migrating to WF4 check out the [WF4 Migration Guidance](migration-guidance.md).
+ WF4 is almost a complete rewrite of WF and therefore WF3 workflows and activities are not directly compatible with WF4.  Many customers that adopted Windows Workflow Foundation early will have in-house or third-party workflow definitions and custom activities for WF3.  One way to ease the transition to WF4 is to use the Interop activity, which can execute WF3 activities from within a WF4 workflow.  It is recommended that the <xref:System.Activities.Statements.Interop> activity only be used when necessary. For more information about migrating to WF4 check out the [WF4 Migration Guidance](migration-guidance.md).
 
 ### Environment Setup
 
@@ -494,4 +494,4 @@ The following table shows the results of running a workflow containing five acti
 
 ## Summary
 
- Heavy investments in performance for WF4 have paid off in many crucial areas.  Individual workflow component performance is in some cases hundreds of times faster in WF4 compared to WF3 due to a leaner [!INCLUDE[wf1](../../../includes/wf1-md.md)] runtime.  Latency numbers are significantly better as well.  This means the performance penalty for using [!INCLUDE[wf1](../../../includes/wf1-md.md)] as opposed to hand-coding WCF orchestration services is very small considering the added benefits of using [!INCLUDE[wf1](../../../includes/wf1-md.md)].  Persistence performance has increased by a factor of 2.5 - 3.0.  Health monitoring by means of workflow tracking now has very little overhead.  A comprehensive set of migration guides are available for those that are considering moving from WF3 to WF4.  All of this should make WF4 an attractive option for writing complex applications.
+ Heavy investments in performance for WF4 have paid off in many crucial areas.  Individual workflow component performance is in some cases hundreds of times faster in WF4 compared to WF3 due to a leaner WF runtime.  Latency numbers are significantly better as well.  This means the performance penalty for using WF as opposed to hand-coding WCF orchestration services is very small considering the added benefits of using WF.  Persistence performance has increased by a factor of 2.5 - 3.0.  Health monitoring by means of workflow tracking now has very little overhead.  A comprehensive set of migration guides are available for those that are considering moving from WF3 to WF4.  All of this should make WF4 an attractive option for writing complex applications.

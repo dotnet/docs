@@ -6,7 +6,7 @@ ms.assetid: cb65c132-58c9-4028-b3d4-1efc71d5e60e
 ---
 # Migration guidance
 
-In .NET Framework 4, Microsoft released the second major version of Windows Workflow Foundation (WF). [!INCLUDE[wf1](../../../includes/wf1-md.md)] was released in WinFX (this included the types in the System.Workflow.\* namespaces; now referred to as WF3) and enhanced in .NET Framework 3.5. WF3 is also part of .NET Framework 4, but it exists there alongside new workflow technology (the types in the System.Activities.\* namespaces; referred to as WF4). When considering when to adopt WF4, it is important to first recognize that you control the timing.
+In .NET Framework 4, Microsoft released the second major version of Windows Workflow Foundation (WF). WF was released in WinFX (this included the types in the System.Workflow.\* namespaces; now referred to as WF3) and enhanced in .NET Framework 3.5. WF3 is also part of .NET Framework 4, but it exists there alongside new workflow technology (the types in the System.Activities.\* namespaces; referred to as WF4). When considering when to adopt WF4, it is important to first recognize that you control the timing.
 
 - WF3 is a fully supported part of .NET Framework 4.
 

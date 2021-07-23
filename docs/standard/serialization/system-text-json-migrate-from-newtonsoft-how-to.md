@@ -4,7 +4,7 @@ description: "Learn how to migrate from Newtonsoft.Json to System.Text.Json. Inc
 author: tdykstra
 ms.author: tdykstra
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 12/14/2020
+ms.date: 07/21/2021
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
   - "JSON serialization"
@@ -898,7 +898,7 @@ The decision to exclude `TypeNameHandling.All`-equivalent functionality from `Sy
 The `JsonDocument` DOM doesn't support querying by using [JSON Path](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm).
 
 ::: zone pivot="dotnet-6-0"
-In a `JsonNode` DOM, each `JsonNode` instance has a `GetPath` method that returns a path to that node. But there is no built-in API to handle queries based on JSON Path query strings.
+In a <xref:System.Text.Json.Nodes.JsonNode> DOM, each `JsonNode` instance has a `GetPath` method that returns a path to that node. But there is no built-in API to handle queries based on JSON Path query strings.
 ::: zone-end
 
 ## Additional resources

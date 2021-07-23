@@ -6,41 +6,41 @@ ms.assetid: 41743e89-79cb-4d7b-8a27-355b45024b61
 ---
 # OVERLAPS (Entity SQL)
 
-Determines whether two collections have common elements.  
-  
-## Syntax  
-  
-```sql  
-expression OVERLAPS expression  
-```  
-  
-## Arguments  
+Determines whether two collections have common elements.
 
- `expression`  
- Any valid query expression that returns a collection to compare with the collection returned from another query expression. All expressions must be of the same type or of a common base or derived type as `expression`.  
-  
-## Return Value  
+## Syntax
 
- `true` if the two collections have common elements; otherwise, `false`.  
-  
-## Remarks  
+```sql
+expression OVERLAPS expression
+```
 
- OVERLAPS provides functionally equivalent to the following:  
-  
- `EXISTS ( expression INTERSECT expression )`  
-  
- OVERLAPS is one of the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators. All [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators are evaluated from left to right. For precedence information for the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators, see [EXCEPT](except-entity-sql.md).  
-  
-## Example  
+## Arguments
 
- The following Entity SQL query uses the OVERLAPS operator to determines whether two collections have a common value. The query is based on the AdventureWorks Sales Model. To compile and run this, follow these steps:  
-  
-1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  
-  
-2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
-  
- [!code-sql[DP EntityServices Concepts#OVERLAPS](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#overlaps)]  
-  
+ `expression`
+ Any valid query expression that returns a collection to compare with the collection returned from another query expression. All expressions must be of the same type or of a common base or derived type as `expression`.
+
+## Return Value
+
+ `true` if the two collections have common elements; otherwise, `false`.
+
+## Remarks
+
+ OVERLAPS provides functionally equivalent to the following:
+
+ `EXISTS ( expression INTERSECT expression )`
+
+ OVERLAPS is one of the Entity SQL set operators. All Entity SQL set operators are evaluated from left to right. For precedence information for the Entity SQL set operators, see [EXCEPT](except-entity-sql.md).
+
+## Example
+
+ The following Entity SQL query uses the OVERLAPS operator to determines whether two collections have a common value. The query is based on the AdventureWorks Sales Model. To compile and run this, follow these steps:
+
+1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).
+
+2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:
+
+ [!code-sql[DP EntityServices Concepts#OVERLAPS](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#overlaps)]
+
 ## See also
 
 - [Entity SQL Reference](entity-sql-reference.md)

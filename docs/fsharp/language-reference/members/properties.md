@@ -1,9 +1,9 @@
 ---
-title: Properties
+title: Properties in F#
 description: Learn about F# properties, which are members that represent values associated with an object.
 ms.date: 05/16/2016
 ---
-# Properties
+# Properties (F#)
 
 *Properties* are members that represent values associated with an object.
 

@@ -1,9 +1,9 @@
 ---
-title: Metadata
+title: Metadata (Sqlite)
 ms.date: 12/13/2019
-description: Learn how to retrieve metadata about the database.
+description: Learn how to retrieve metadata about a Sqlite database.
 ---
-# Metadata
+# Metadata (Sqlite)
 
 There are two APIs for retrieving metadata in ADO.NET. One retrieves metadata about query results. The other retrieves metadata about the database schema.
 

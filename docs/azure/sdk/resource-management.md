@@ -36,6 +36,7 @@ Install-Package Azure.ResourceManager.Compute -Version 1.0.0-beta.1
 Install-Package Azure.ResourceManager.Network -Version 1.0.0-beta.1
 Install-Package Azure.ResourceManager.Resources -Version 1.0.0-beta.1
 ```
+
 ### Prerequisites
 
 Set up a way to authenticate to Azure with Azure Identity. Some options are:

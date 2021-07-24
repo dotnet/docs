@@ -1,5 +1,6 @@
 ---
 title: Records in F#
+titleSuffix: ""
 description: Learn how F# records represent simple aggregates of named values, optionally with members.
 ms.date: 08/15/2020
 ---

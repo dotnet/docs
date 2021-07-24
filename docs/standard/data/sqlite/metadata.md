@@ -1,5 +1,6 @@
 ---
 title: Metadata (Sqlite)
+titleSuffix: ""
 ms.date: 12/13/2019
 description: Learn how to retrieve metadata about a Sqlite database.
 ---

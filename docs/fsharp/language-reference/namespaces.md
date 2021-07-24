@@ -1,5 +1,6 @@
 ---
 title: Namespaces in F#
+titleSuffix: ""
 description: Learn how an F# namespace allows you to organize code into areas of related functionality by enabling you to attach a name to a grouping of program elements.
 ms.date: 12/08/2018
 ---

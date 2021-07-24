@@ -1,6 +1,7 @@
 ---
 description: "Learn more about metadata in WCF"
 title: "Metadata in WCF"
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "metadata [WCF]"

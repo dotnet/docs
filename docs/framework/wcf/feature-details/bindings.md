@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Windows Communication Foundation Bindings"
 title: "Bindings in WCF"
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WCF [WCF], bindings"

@@ -1,5 +1,6 @@
 ---
 title: Delegates in F#
+titleSuffix: ""
 description: Learn how to work with delegates in F#.
 ms.date: 05/16/2016
 ---

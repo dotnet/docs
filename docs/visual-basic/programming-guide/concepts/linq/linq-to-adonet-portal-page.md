@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: LINQ to ADO.NET (Portal Page)"
 title: "LINQ to ADO.NET (Visual Basic)"
+titleSuffix: ""
 ms.date: 07/20/2015
 ms.assetid: bbbd7c76-2981-4b91-b8d2-437547181f52
 ---

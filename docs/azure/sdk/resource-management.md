@@ -178,7 +178,7 @@ AvailabilitySet availabilitySet = await availabilitySetOperations.GetAsync();
 
 If you aren't sure whether a resource you want to get exists, or you just want to check if it exists, use the `TryGet` or `DoesExist` methods. The methods can be invoked from any `[Resource]Container` class.
 
-`tryGet()` and `tryGetAsync()` are going to return a null object if the specified resource name or id does not exists. On the other hand, `doesExists()` and `doesExistsAsync()` is going to return a boolean, depending if the specified resource exists.
+The `TryGet` and `TryGetAsync` methods return a null object if the specified resource name or ID doesn't exist. On the other hand, the `DoesExist` and `DoesExistAsync` methods return a boolean indicating whether the specified resource exists.
 
 You can find an example for these methods [below](#check-if-resource-group-exists).
 

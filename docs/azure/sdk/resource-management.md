@@ -95,13 +95,13 @@ This represents a full resource object which contains a `Data` property exposing
 
 Instead of implementing your own parsing logic, you can implicitly cast a resource identifier string into an object which will do the parsing for you.
 
-There are three types of resource identifiers and they correspond to the level at which the resource lives at:
+There are three types of resource identifiers. The identifiers correspond to the level at which the resource lives. A resource that lives:
 
-- A resource that lives on a tenant will have a `TenantResourceIdentifier`.
-- A resource that lives under a subscription will have a `SubscriptionResourceIdentifer`.
-- A resource that lives under a resource group will have a `ResourceGroupResourceIdentifier`.
+- On a tenant will have a `TenantResourceIdentifier`.
+- Under a subscription will have a `SubscriptionResourceIdentifer`.
+- Under a resource group will have a `ResourceGroupResourceIdentifier`.
 
-You can usually tell by the id string itself which type it is, but if you are unsure you can always cast it onto a `ResourceIdentifier` and use the Try methods to retrieve the values.
+You can usually tell by the ID string itself which type it is. If you're unsure, cast it to a `ResourceIdentifier` and use the `Try` methods to retrieve the values.
 
 #### Cast to a specific type
 

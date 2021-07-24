@@ -157,7 +157,8 @@ ResourceGroup resourceGroup = await subscription.GetResourceGroups().GetAsync(id
 // Note: for this last stept in this example, Azure.ResourceManager.Compute is needed
 AvailabilitySet availabilitySet = await resourceGroup.GetAvailabilitySets().GetAsync(id.Name);
 ```
-However, this approach required a lot of code and 3 API calls to Azure. The same can be done with less code and without any API calls by using extension methods that we have provided on the client itself. These extension methods allow you to pass in a resource identifier and retrieve a scoped client. The object returned is a *[Resource]Operations* mentioned above, since it has not reached out to Azure to retrieve the data yet.
+
+However, this approach required a lot of code and three API calls to Azure. The same can be done with less code and without any API calls by using extension methods that we have provided on the client itself. These extension methods allow you to pass in a resource identifier and retrieve a scoped client. The object returned is a `[Resource]Operations` mentioned above, since it has not reached out to Azure to retrieve the data yet.
 
 The previous example would end up looking like this:
 

@@ -13,11 +13,11 @@ F# programming is data-oriented, where code involves transforming data with func
 ```fsharp
 open System // Gets access to functionality in System namespace.
 
-// Defines a function that takes a name and produces a greeting.
-let getGreeting name = $"Hello, {name}"
-
 // Defines a list of names
 let names = [ "Peter"; "Julia"; "Xi" ]
+
+// Defines a function that takes a name and produces a greeting.
+let getGreeting name = $"Hello, {name}"
 
 // Prints a greeting for each name!
 names

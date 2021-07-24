@@ -1,14 +1,14 @@
 ---
 title: What is F#
 description: Learn about what the F# programming language is and what F# programming is like. Learn about rich types, functions, and how they fit together.
-ms.date: 08/03/2018
+ms.date: 24/07/2021
 ---
 # What is F\#
 
 F# is an open-source, cross-platform, interoperable programming language for writing succinct, robust and performant code.
 
-F# programming is data-oriented and code involves transforming data with functions. An F# program is often
-a succinct definition of types that model a domain and functions that implement your chosen transformations.
+F# programming is data-oriented, where code involves transforming data with functions. An F# program
+contains types that model a domain and functions that implement your chosen transformations.
 Your focus remains on your problem domain, rather than the details of programming.
 
 ```fsharp

@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Statements (Visual Basic)"
-title: "Statements in Visual Basic"
+title: "Statements (Visual Basic)"
 titleSuffix: ""
 ms.date: 07/20/2015
 helpviewer_keywords: 

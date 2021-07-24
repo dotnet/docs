@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Concatenation Operators (Visual Basic)"
-title: "Concatenation Operators in Visual Basic"
+title: "Concatenation Operators (Visual Basic)"
 titleSuffix: ""
 ms.date: 07/20/2015
 helpviewer_keywords: 

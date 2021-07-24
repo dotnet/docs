@@ -305,7 +305,7 @@ await foreach(VirtualMachine vm in vmContainer.ListAsync())
 }
 ```
 
-For more detailed examples, see the [samples](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/resourcemanager/Azure.ResourceManager.Core/samples) we have available.
+For more detailed examples, see the [samples](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/resourcemanager/Azure.ResourceManager.Core/samples).
 
 ## Troubleshoot
 

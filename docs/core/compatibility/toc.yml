@@ -85,6 +85,10 @@ items:
           href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
+      - name: Globalization
+        items:
+        - name: Culture creation and case mapping in globalization-invariant mode
+          href: globalization/6.0/culture-creation-invariant-mode.md
       - name: JIT compiler
         items:
         - name: Call argument coercion
@@ -103,6 +107,8 @@ items:
           href: sdk/6.0/duplicate-files-in-output.md
         - name: GetTargetFrameworkProperties and GetNearestTargetFramework removed
           href: sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md
+        - name: Implicit namespaces in C# projects
+          href: sdk/6.0/implicit-namespaces.md
       - name: Windows Forms
         items:
         - name: APIs throw ArgumentNullException
@@ -317,10 +323,6 @@ items:
           href: networking/5.0/winhttphandler-removed-from-runtime.md
       - name: SDK and MSBuild
         items:
-        - name: -p option for `dotnet run` is deprecated
-          href: sdk/6.0/deprecate-p-option-dotnet-run.md
-        - name: Generate apphost for macOS
-          href: sdk/6.0/apphost-generated-for-macos.md
         - name: Error when referencing mismatched executable
           href: sdk/5.0/referencing-executable-generates-error.md
         - name: OutputType set to WinExe
@@ -641,6 +643,10 @@ items:
         href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Globalization
       items:
+      - name: .NET 6
+        items:
+        - name: Culture creation and case mapping in globalization-invariant mode
+          href: globalization/6.0/culture-creation-invariant-mode.md
       - name: .NET 5
         items:
         - name: Use ICU libraries on Windows
@@ -693,10 +699,16 @@ items:
       items:
       - name: .NET 6
         items:
+        - name: -p option for `dotnet run` is deprecated
+          href: sdk/6.0/deprecate-p-option-dotnet-run.md
+        - name: Generate apphost for macOS
+          href: sdk/6.0/apphost-generated-for-macos.md
         - name: Generate error for duplicate files in publish output
           href: sdk/6.0/duplicate-files-in-output.md
         - name: GetTargetFrameworkProperties and GetNearestTargetFramework removed
           href: sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md
+        - name: Implicit namespaces in C# projects
+          href: sdk/6.0/implicit-namespaces.md
       - name: .NET 5
         items:
         - name: Directory.Packages.props files imported by default

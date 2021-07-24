@@ -235,7 +235,7 @@ ResourceGroup resourceGroup = await subscription.GetResourceGroups().GetAsync(rg
 await resourceGroup.DeleteAsync();
 ```
 
-### Check if Resource Group exists
+### Check if resource group exists
 
 ```csharp
 var armClient = new ArmClient(new DefaultAzureCredential());

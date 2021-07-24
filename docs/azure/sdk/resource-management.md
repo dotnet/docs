@@ -129,7 +129,7 @@ Console.WriteLine($"Vnet: {id.Parent.Name}");
 Console.WriteLine($"Subnet: {id.Name}");
 ```
 
-### Manage Existing Resources By Id
+### Manage existing resources by ID
 
 Performing operations on resources that already exist is a common use case when using the management SDK. In this scenario, you usually have the identifier of the resource you want to work on as a string. Although the new object hierarchy is great for provisioning and working within the scope of a given parent, it's a tad awkward when it comes to this specific scenario.  
 

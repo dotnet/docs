@@ -308,7 +308,7 @@ For more detailed examples, see the [samples](https://github.com/Azure/azure-sdk
 ## Troubleshoot
 
 - If you find a bug or have a suggestion, file an issue via [GitHub issues](https://github.com/Azure/azure-sdk-for-net/issues).
-- If you need help, check [previous questions](https://stackoverflow.com/questions/tagged/azure+.net) or ask new ones on StackOverflow using azure and .NET tags.
+- If you need help, check [previous questions](https://stackoverflow.com/questions/tagged/azure+.net) or ask new ones on Stack Overflow using Azure and .NET tags.
 - If having trouble with authentication, go to [DefaultAzureCredential documentation](https://docs.microsoft.com/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet).
 
 ## Next steps

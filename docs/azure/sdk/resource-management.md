@@ -164,7 +164,7 @@ So, the previous example would end up looking like this:
 ```csharp
 string resourceId = "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/workshop2021-rg/providers/Microsoft.Compute/availabilitySets/ws2021availSet";
 // We construct a new armClient to work with
-ArmClient armClient = new ArmClient(new DefaultAzureCredential());
+var armClient = new ArmClient(new DefaultAzureCredential());
 // Next we get the AvailabilitySetOperations object from the client
 // The method takes in a ResourceIdentifier but we can use the implicit cast from string
 AvailabilitySetOperations availabilitySetOperations = armClient.GetAvailabilitySetOperations(resourceId);

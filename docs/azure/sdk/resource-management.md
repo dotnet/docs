@@ -321,4 +321,4 @@ For more detailed examples, see the [samples](https://github.com/Azure/azure-sdk
 
 ### Additional resources
 
-For more information on Azure SDK, refer to [this website](https://azure.github.io/azure-sdk/).
+For more information on the Azure SDK, see [this website](https://azure.github.io/azure-sdk/).

@@ -89,7 +89,7 @@ This mainly consists of List or Create operations. For most things, the parent w
 
 #### [Resource]
 
-This represents a full resource object which contains a `Data` property exposing the details as a **[Resource]Data** type. It also has access to all of the operations and like the **[Resource]Operations** object is already scoped to a specific resource in Azure.
+This represents a full resource object which contains a `Data` property exposing the details as a `[Resource]Data` type. It also has access to all of the operations and like the `[Resource]Operations` object is already scoped to a specific resource in Azure.
 
 ### Structured resource identifier
 

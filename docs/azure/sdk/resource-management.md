@@ -274,7 +274,6 @@ if (myRG == null)
 // At this point, we are sure that myRG is a not null Resource Group, so we can use this object to perform any operations we want.
 ```
 
-
 ### Add a tag to a virtual machine
 
 Imagine that our company requires all virtual machines to be tagged with the owner. We're tasked with writing a program to add the tag to any missing virtual machines in a given resource group.

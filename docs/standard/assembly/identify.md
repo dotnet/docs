@@ -43,7 +43,7 @@ The <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method loads the te
 
 3. Create a <xref:System.Reflection.PortableExecutable.PEReader?displayProperty=nameWithType> instance, passing your file stream into the constructor.
 
-4. Check the value of the <xref:System.Reflection.PortableExecutable.PEReader.HasMetadata> property. If the value is `false`, the file is not an assembly. 
+4. Check the value of the <xref:System.Reflection.PortableExecutable.PEReader.HasMetadata> property. If the value is `false`, the file is not an assembly.
 
 5. Call the <xref:System.Reflection.Metadata.PEReaderExtensions.GetMetadataReader%2A> method on your PE reader instance to create a metadata reader.
 

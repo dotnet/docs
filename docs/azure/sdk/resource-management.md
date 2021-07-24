@@ -258,7 +258,7 @@ else
 }
 ```
 
-Another way to do this is by using `tryGet()`:
+Another way to do this is by calling `TryGetAsync`:
 
 ```csharp
 var armClient = new ArmClient(new DefaultAzureCredential());

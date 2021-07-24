@@ -176,7 +176,7 @@ AvailabilitySet availabilitySet = await availabilitySetOperations.GetAsync();
 
 ### `tryGet` and `doesExists` convenience methods
 
-If you are not sure if a resource you want to get exists, or you just want to check if it exists, you can use `tryGet()` or `doesExists()` methods, which can be invoque from any [Resource]Container class.
+If you aren't sure whether a resource you want to get exists, or you just want to check if it exists, use the `TryGet` or `DoesExist` methods. The methods can be invoked from any `[Resource]Container` class.
 
 `tryGet()` and `tryGetAsync()` are going to return a null object if the specified resource name or id does not exists. On the other hand, `doesExists()` and `doesExistsAsync()` is going to return a boolean, depending if the specified resource exists.
 

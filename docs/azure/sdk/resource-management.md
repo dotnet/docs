@@ -174,7 +174,7 @@ AvailabilitySetOperations availabilitySetOperations = armClient.GetAvailabilityS
 AvailabilitySet availabilitySet = await availabilitySetOperations.GetAsync();
 ```
 
-### `tryGet` and `doesExists` convenience methods
+### `TryGet` and `DoesExist` convenience methods
 
 If you aren't sure whether a resource you want to get exists, or you just want to check if it exists, use the `TryGet` or `DoesExist` methods. The methods can be invoked from any `[Resource]Container` class.
 

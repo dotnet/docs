@@ -6,9 +6,9 @@ ms.date: 24/07/2021
 # What is F\#
 
 F# is an open-source, cross-platform, interoperable programming language for writing succinct, robust and performant code.
+Your focus remains on your problem domain, rather than the details of programming.
 
 F# programming is data-oriented, where code involves transforming data with functions.
-Your focus remains on your problem domain, rather than the details of programming.
 
 ```fsharp
 open System // Gets access to functionality in System namespace.
@@ -39,8 +39,8 @@ A full set of features are documented in the [F# language reference](./language-
 
 ## Rich data types
 
-Data types such as [Records](./language-reference/records.md) and [Discriminated Unions](./language-reference/discriminated-unions.md) let you represent data and
-domain models.
+Types such as [Records](./language-reference/records.md) and [Discriminated Unions](./language-reference/discriminated-unions.md)
+let you represent your data.
 
 ```fsharp
 // Group data with Records

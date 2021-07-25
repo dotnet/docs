@@ -37,9 +37,9 @@ dotnet new sln
 
 ## Options
 
-- **`-h|--help`**
+<!-- markdownlint-disable MD012 -->
 
-  Prints out a description of how to use the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Commands
 
@@ -61,10 +61,8 @@ dotnet sln list [-h|--help]
 
 #### Options
 
-- **`-h|--help`**
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out a description of how to use the command.
-  
 ### `add`
 
 Adds one or more projects to the solution file.
@@ -98,9 +96,7 @@ dotnet sln add [-h|--help]
 
 #### Options
 
-- **`-h|--help`**
-
-  Prints out a description of how to use the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--in-root`**
 
@@ -133,9 +129,7 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 
 #### Options
 
-- **`-h|--help`**
-
-  Prints out a description of how to use the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

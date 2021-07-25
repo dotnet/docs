@@ -132,6 +132,31 @@ A `delegate` is a reference type that can be used to encapsulate a named or an a
 
 The delegate must be instantiated with a method or lambda expression that has a compatible return type and input parameters. For more information on the degree of variance that is allowed in the method signature, see [Variance in Delegates](../../programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md). For use with anonymous methods, the delegate and the code to be associated with it are declared together.
 
+Delegate combination and removal fails with a runtime exception when the delegate types involved at runtime are different due to variant conversion. The following example demonstrates a situation which fails:
+
+```csharp
+Action<string> stringAction = str => {};
+Action<object> objectAction = obj => {};
+  
+// Valid due to implicit reference conversion of
+// objectAction to Action<string>, but may fail
+// at runtime.
+Action<string> combination = stringAction + objectAction;
+```
+
+You can create a delegate with the correct runtime type by creating a new delegate object. The following example demonstrates how this workaround may be applied to the preceding example.
+
+```csharp
+Action<string> stringAction = str => {};
+Action<object> objectAction = obj => {};
+  
+// Creates a new delegate instance with a runtime type of Action<string>.
+Action<string> wrappedObjectAction = new Action<string>(objectAction);
+
+// The two Action<string> delegate instances can now be combined.
+Action<string> combination = stringAction + wrappedObjectAction;
+```
+
 Beginning with C# 9, you can declare [*function pointers*](../unsafe-code.md#function-pointers), which use similar syntax. A function pointer uses the `calli` instruction instead of instantiating a delegate type and calling the virtual `Invoke` method.
 
 ## The dynamic type

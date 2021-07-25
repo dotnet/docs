@@ -7,7 +7,7 @@ ms.assetid: 593c4e9d-8a49-4e12-8257-cee5e6b4c075
 
 # How to: Create a Custom Instance Store
 
-[!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] contains <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>, an instance store that uses SQL Server to persist workflow data. If your application is required to persist workflow data to another medium, such as a different database or a file system, you can implement a custom instance store. A custom instance store is created by extending the abstract <xref:System.Runtime.DurableInstancing.InstanceStore> class and implementing the methods that are required for the implementation. For a complete implementation of a custom instance store, see the [Corporate Purchase Process](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/corporate-purchase-process) sample.
+[!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] contains <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>, an instance store that uses SQL Server to persist workflow data. If your application is required to persist workflow data to another medium, such as a different database or a file system, you can implement a custom instance store. A custom instance store is created by extending the abstract <xref:System.Runtime.DurableInstancing.InstanceStore> class and implementing the methods that are required for the implementation. For a complete implementation of a custom instance store, see the [Corporate Purchase Process](./samples/corporate-purchase-process.md) sample.
 
 ## Implementing the BeginTryCommand method
 
@@ -226,7 +226,7 @@ To implement a custom instance store, assign an instance of the instance store t
 
 ## A sample instance store
 
-The following code sample is a complete instance store implementation, taken from the [Corporate Purchase Process](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/corporate-purchase-process) sample. This instance store persists workflow data to a file using XML.
+The following code sample is a complete instance store implementation, taken from the [Corporate Purchase Process](./samples/corporate-purchase-process.md) sample. This instance store persists workflow data to a file using XML.
 
 ```csharp
 using System;

@@ -15,7 +15,7 @@ In this example, a client is created to use a calculator service and the binding
   
  The client is built in two parts. Svcutil.exe generates the `ClientCalculator` that implements the `ICalculator` interface. This client application is then constructed by constructing an instance of `ClientCalculator` and then specifying the binding and the address for the service in code.  
   
- For the source copy of this example, see the [BasicBinding](/previous-versions/dotnet/framework/wcf/samples/basicbinding) sample.  
+ For the source copy of this example, see the [BasicBinding](./samples/basicbinding.md) sample.  
   
 ### To specify a custom binding in code  
   

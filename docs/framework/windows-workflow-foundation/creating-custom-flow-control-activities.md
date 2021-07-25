@@ -6,7 +6,7 @@ ms.assetid: 27f409f6-2d1d-4cfb-9765-93eb2ad667d5
 ---
 # Creating custom flow control activities
 
-The .NET Framework contains a variety of flow-control activities that function similarly to abstract programming structures (such as <xref:System.Activities.Statements.Flowchart>)   or to standard programming statements (such as <xref:System.Activities.Statements.If>). This topic discusses the architecture of one of the sample projects, [Non-Generic ForEach](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/non-generic-foreach).  
+The .NET Framework contains a variety of flow-control activities that function similarly to abstract programming structures (such as <xref:System.Activities.Statements.Flowchart>)   or to standard programming statements (such as <xref:System.Activities.Statements.If>). This topic discusses the architecture of one of the sample projects, [Non-Generic ForEach](./samples/non-generic-foreach.md).  
   
 ## Creating the custom class  
 

@@ -2,7 +2,7 @@
 title: The Dapr bindings building block
 description: A description of the bindings building block, its features, benefits, and how to apply it
 author: edwinvw
-ms.date: 02/17/2021
+ms.date: 06/16/2021
 ---
 
 # The Dapr bindings building block
@@ -13,9 +13,9 @@ Cloud-based *serverless* offerings, such as Azure Functions and AWS Lambda, have
 
 Dapr resource bindings enable your services to integrate business operations across external resources outside of the immediate application. An event from an external system could trigger an operation in your service passing in contextual information. Your service could then expand the operation by triggering an event in another external system, passing in contextual payload information. Your service communicates without coupling or awareness of the external resource. The plumbing is encapsulated inside pre-defined Dapr components. The Dapr component to use can be easily swapped at runtime without code changes.
 
-Consider, for example, a Twitter account that triggers an event whenever a user tweets a keyword. Your service exposes an event handler that receives and processes the tweet. Once complete, your service triggers an event that invokes an external Twilio service. Twilio sends an SMS message that includes the tweet. Figure 8-1 show the conceptual architecture of this operation.
+Consider, for example, a Twitter account that triggers an event whenever a user tweets a keyword. Your service exposes an event handler that receives and processes the tweet. Once complete, your service triggers an event that invokes an external Twilio service. Twilio sends an SMS message that includes the tweet. Figure 8-1 show the conceptual architecture of this operation:
 
-![Input binding](media/bindings/bindings-architecture.png)
+:::image type="content" source="./media/bindings/bindings-architecture.png" alt-text="Conceptual architecture of a Dapr resource binding.":::
 
 **Figure 8-1**. Conceptual architecture of a Dapr resource binding.
 
@@ -32,7 +32,7 @@ Dapr resource binding starts with a component configuration file. This YAML file
 
 Input bindings trigger your code with incoming events from external resources. To receive events and data, you register a public endpoint from your service that becomes the *event handler*. Figure 8-2 shows the flow:
 
-![Dapr input binding flow](media/bindings/input-binding-flow.png)
+:::image type="content" source="./media/bindings/input-binding-flow.png" alt-text="Dapr input binding flow.":::
 
 **Figure 8-2**. Dapr input binding flow.
 
@@ -72,13 +72,13 @@ public class SomeController : ControllerBase
 }
 ```
 
-If the operation should error, you would return the appropriate 400 or 500 level HTTP status code. For bindings that feature *at-least-once-delivery* guarantees, the Dapr sidecar will retry the trigger. Check out [Dapr documentation for resource bindings][1] to see whether they offer *at-least-once* or *exactly-once* delivery guarantees.
+If the operation should error, you would return the appropriate 400 or 500 level HTTP status code. For bindings that feature *at-least-once* delivery guarantees, the Dapr sidecar will retry the trigger. Check out [Dapr documentation for resource bindings](https://docs.dapr.io/operations/components/setup-bindings/supported-bindings) to see whether they offer *at-least-once* or *exactly-once* delivery guarantees.
 
 ### Output bindings
 
 Dapr also includes *output binding* capabilities. They enable your service to trigger an event that invokes an external resource. Again, you start by configuring a binding configuration YAML file that describes the output binding. Once in place, you trigger an event that invokes the bindings API on the Dapr sidecar of your application. Figure 8-3 shows the flow of an output binding:
 
-![Dapr output binding flow](media/bindings/output-binding-flow.png)
+:::image type="content" source="./media/bindings/output-binding-flow.png" alt-text="Dapr output binding flow.":::
 
 **Figure 8-3**. Dapr output binding flow.
 
@@ -111,7 +111,7 @@ The structure of the payload (that is, message sent) will vary per binding. In t
 
 It's up to the author of the binding which operations the binding supports. The documentation for each binding describes the available operations and how to invoke them.
 
-## Using the Dapr .NET SDK
+## Use the Dapr .NET SDK
 
 The Dapr .NET SDK provides language-specific support for .NET Core developers. In the following example, the call to the `HttpClient.PostAsync()` is replaced with the `DaprClient.InvokeBindingAsync()` method. This specialized method simplifies invoking a configured output binding:
 
@@ -168,7 +168,7 @@ In the `spec` element, you specify the `type` of the binding along with binding 
 
 A binding can be configured for input, output, or both. Interestingly, the binding doesn't explicitly specify input or output configuration. Instead, the direction is inferred by the usage of the binding along with configuration values.
 
-The [Dapr documentation for resource bindings][1] provides a complete list of the available bindings and their specific configuration settings.
+The [Dapr documentation for resource bindings](https://docs.dapr.io/operations/components/setup-bindings/supported-bindings/) provides a complete list of the available bindings and their specific configuration settings.
 
 ### Cron binding
 
@@ -190,46 +190,197 @@ spec:
 
 In this example, Dapr triggers a service by invoking the `/checkOrderBacklog` endpoint every 30 minutes. There are several patterns available for specifying the `schedule` value. For more information, see the [Cron binding documentation](https://docs.dapr.io/operations/components/setup-bindings/supported-bindings/cron/).
 
-## Reference application: eShopOnDapr
+## Sample application: Dapr Traffic Control
 
-The accompanying eShopOnDapr reference application implements an output binding example. It triggers the Dapr [SendGrid](https://docs.dapr.io/operations/components/setup-bindings/supported-bindings/sendgrid/) binding to send a user an email when a new order is placed. You can find this binding in the `eshop-email.yaml` file in the components folder:
+In the Dapr Traffic Control sample application, the TrafficControl service uses the MQTT input binding to retrieve messages from the CameraSimulation. Figure 8-4 shows the conceptual architecture of the Dapr Traffic Control sample application. The Dapr input binding is used in flows marked with number 5 in the diagram:
+
+:::image type="content" source="./media/bindings/dapr-solution-input-binding.png" alt-text="Conceptual architecture of the Dapr Traffic Control sample application - input binding.":::
+
+**Figure 8-4**. Conceptual architecture of the Dapr Traffic Control sample application.
+
+### MQTT input binding
+
+MQTT is a lightweight pub/sub messaging protocol, often used in IoT scenarios. Producers sent MQTT messages to a topic; subscribers then retrieve messages from the topic. There are several MQTT message broker products available. The Traffic Control sample application uses [Eclipse Mosquitto](https://mosquitto.org/).
+
+The CameraSimulation doesn't depend on any Dapr building blocks. It uses the [`System.Net.Mqtt`](https://www.nuget.org/packages/System.Net.Mqtt) library to send MQTT messages:
+
+```csharp
+// ...
+
+// simulate entry
+DateTime entryTimestamp = DateTime.Now;
+var vehicleRegistered = new VehicleRegistered
+{
+    Lane = _camNumber,
+    LicenseNumber = GenerateRandomLicenseNumber(),
+    Timestamp = entryTimestamp
+};
+_trafficControlService.SendVehicleEntry(vehicleRegistered);
+
+// ...
+```
+
+The code uses a proxy of type `ITrafficControlService` to call the TrafficControl service. .NET injects an implementation of the `ITrafficControlService` interface using constructor injection:
+
+ ```csharp
+public CameraSimulation(int camNumber, ITrafficControlService trafficControlService)
+{
+    _camNumber = camNumber;
+    _trafficControlService = trafficControlService;
+}
+ ```
+
+The `MqttTrafficControlService` class implements the `ITrafficControlService` interface. It exposes two methods: `SendVehicleEntryAsync` and `SendVehicleExitAsync`. They both use the MQTT client to send messages to the `trafficcontrol/entrycam` and `trafficcontrol/exitcam` topics respectively:
+
+```csharp
+public async Task SendVehicleEntryAsync(VehicleRegistered vehicleRegistered)
+{
+    var eventJson = JsonSerializer.Serialize(vehicleRegistered);
+    var message = new MqttApplicationMessage("trafficcontrol/entrycam", Encoding.UTF8.GetBytes(eventJson));
+    await _client.PublishAsync(message, MqttQualityOfService.AtMostOnce);
+}
+
+public async Task SendVehicleExitAsync(VehicleRegistered vehicleRegistered)
+{
+    var eventJson = JsonSerializer.Serialize(vehicleRegistered);
+    var message = new MqttApplicationMessage("trafficcontrol/exitcam", Encoding.UTF8.GetBytes(eventJson));
+    await _client.PublishAsync(message, MqttQualityOfService.AtMostOnce);
+}
+```
+
+The constructor sets up the MQTT client to send messages to the MQTT broker (Mosquitto) running on port 1883.
+
+On the other end, the TrafficControl service uses the MQTT input binding to receive `VehicleRegistered` messages sent by the CameraSimulation. For each subscribed topic, there's a separate component configuration file in the `/dapr/components` folder. The first one is `entrycam.yaml`:
+
+```yaml
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: entrycam
+  namespace: dapr-trafficcontrol
+spec:
+  type: bindings.mqtt
+  version: v1
+  metadata:
+  - name: url
+    value: mqtt://localhost:1883
+  - name: topic
+    value: trafficcontrol/entrycam
+scopes:
+  - trafficcontrolservice
+```
+
+The configuration specifies the binding type: `bindings.mqtt`. It also specifies that the broker runs on `localhost:1883`, the standard port that Mosquitto uses. It also exposes the `topic`, `trafficcontrol/entrycam`. Using `scopes`, the config file specifies that only the service with app-id `trafficcontrolservice` will have access to the binding.
+
+When the TrafficControl service starts, the Dapr sidecar automatically subscribes to the `trafficcontrol/entrycam` MQTT topic specified in the component configuration. When messages arrive on the topic, the Dapr sidecar invokes an HTTP endpoint on your service. The sidecar determines the URL of the HTTP endpoint to call by looking at the `metadata.name` field in the binding configuration. In the example above, the endpoint URL is `/entrycam`. Within the TrafficControl service, no code needs to be added to support the endpoint:
+
+```csharp
+[HttpPost("entrycam")]
+public async Task<ActionResult> VehicleEntry(VehicleRegistered msg)
+{
+    // ...
+}
+```
+
+The `exitcam.yaml` component configuration file configures everything for the `exitcam` endpoint:
+
+```yaml
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: exitcam
+  namespace: dapr-trafficcontrol
+spec:
+  type: bindings.mqtt
+  version: v1
+  metadata:
+  - name: url
+    value: mqtt://localhost:1883
+  - name: topic
+    value: trafficcontrol/exitcam
+scopes:
+  - trafficcontrolservice
+```
+
+### SMTP output binding
+
+The FineCollection service uses the Dapr SMTP output binding to send emails. Figure 8-5 shows the conceptual architecture of the Dapr Traffic Control sample application. The Dapr input binding is used in flows marked with number 4 in the diagram:
+
+:::image type="content" source="./media/bindings/dapr-solution-output-binding.png" alt-text="Conceptual architecture of the Dapr Traffic Control sample application - output binding.":::
+
+**Figure 8-5**. Conceptual architecture of the Dapr Traffic Control sample application.
+
+ The `CollectFine` method on the CollectionController in the FineCollection service contains code that uses the Dapr client to invoke the output binding:
+
+```csharp
+// ...
+
+// send fine by email (Dapr output binding)
+var body = EmailUtils.CreateEmailBody(speedingViolation, vehicleInfo, fineString);
+var metadata = new Dictionary<string, string>
+{
+    ["emailFrom"] = "noreply@cfca.gov",
+    ["emailTo"] = vehicleInfo.OwnerEmail,
+    ["subject"] = $"Speeding violation on the {speedingViolation.RoadId}"
+};
+await daprClient.InvokeBindingAsync("sendmail", "create", body, metadata);
+
+// ...
+```
+
+The code uses a simple utility class to create an HTML email body containing the necessary information. It also creates a dictionary with metadata specific to the SMTP binding. This binding component interprets the metadata when invoked.
+
+The following arguments are required to invoke the binding:
+
+- The name of the binding component. In this case `sendmail`.
+- The operation the binding needs to perform. In this case `create`.
+- The body of the message to send. In this case, the HTML email body.
+- The metadata for sending the email.
+
+The Dapr output binding named `sendmail` is configured in the `email.yaml` component configuration file in the `/dapr/components` folder:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
   name: sendmail
-  namespace: eshop
+  namespace: dapr-trafficcontrol
 spec:
-  type: bindings.twilio.sendgrid
+  type: bindings.smtp
   version: v1
   metadata:
-  - name: apiKey
+  - name: host
+    value: localhost
+  - name: port
+    value: 4025
+  - name: user
     secretKeyRef:
-      name: sendGridAPIKey
+      name: smtp.user
+      key: smtp.user
+  - name: password
+    secretKeyRef:
+      name: smtp.password
+      key: smtp.password
+  - name: skipTLSVerify
+    value: true
 auth:
-  secretStore: eshop-secretstore
+  secretStore: trafficcontrol-secrets
+scopes:
+  - finecollectionservice
 ```
 
-This configuration uses the [Twilio SendGrid](https://github.com/dapr/components-contrib/tree/master/bindings/twilio) binding component. Note how the API key for connecting to the service consumes a Dapr secret reference. This approach keeps secrets outside of the configuration file. Read the [secrets building block chapter](secrets.md) to learn more about Dapr secrets.
+The configuration specifies the binding type: `bindings.smtp`.
 
-The binding configuration specifies a binding component that can be invoked using the `/sendmail` endpoint on the Dapr sidecar. Here's a code snippet in which an email is sent whenever an order is started:
+The metadata section contains the information for connecting to the SMTP server. See [the binding's documentation](https://docs.dapr.io/reference/components-reference/supported-bindings/smtp/) for specific metadata required for this binding. The username and password to connect to the SMTP server are retrieved from a secrets store. See the [Secrets management building block](secrets-management.md) chapter for more information on how this works.
 
-```csharp
-public Task Handle(OrderStartedDomainEvent notification, CancellationToken cancellationToken)
-{
-    var string message = CreateEmailBody(notification);
-    var metadata = new Dictionary<string, string>
-    {
-        {"emailFrom", "eShopOn@dapr.io"},
-        {"emailTo", notification.UserName},
-        {"subject", $"Your eShopOnDapr order #{notification.Order.Id}"}
-    };
-    return _daprClient.InvokeBindingAsync("sendmail", "create", message, metadata, cancellationToken);
-}
-```
+The `scopes` element specifies that only the service with app-id `finecollectonservice` can access this binding.
 
-As you can see in this example, `message` contains the message body. The `CreateEmailBody` method simply formats a string with the body text. The `metadata` specifies the email sender, recipient, and the subject for the email message. If these values are static, they can also be included in the metadata fields in the configuration file. The name of the binding to invoke is `sendmail` and the operation is `create`.
+The Traffic Control sample application uses [MailDev](https://github.com/maildev/maildev). MailDev is a development SMTP server that doesn't actually send out emails (by default). Instead, it collects emails and presents them in an inbox web application. MailDev is extremely useful for dev/test and demo scenarios.
+
+Using Dapr bindings in the Traffic Control sample application provides the following benefits:
+
+1. Using MQTT messaging and SMTP without the need to learn this protocol or a specific MQTT API.
+1. Using SMTP to send an email without the need to learn this protocol or a specific SMTP API.
 
 ## Summary
 
@@ -244,7 +395,9 @@ You implement a binding with a Dapr component. These components are contributed 
 ### References
 
 - [Dapr documentation for resource bindings](https://docs.dapr.io/operations/components/setup-bindings/supported-bindings/)
+- [Mosquitto MQTT broker](https://mosquitto.org/)
+- [MailDev development SMTP server](https://github.com/maildev/maildev)
 
 >[!div class="step-by-step"]
 >[Previous](publish-subscribe.md)
->[Next](observability.md)
+>[Next](actors.md)

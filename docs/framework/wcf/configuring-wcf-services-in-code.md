@@ -95,7 +95,7 @@ public class Service1 : IService1
 - [Configuring Services Using Configuration Files](configuring-services-using-configuration-files.md)
 - [Configuring Client Behaviors](configuring-client-behaviors.md)
 - [Simplified Configuration](simplified-configuration.md)
-- [Configuration](/previous-versions/dotnet/framework/wcf/samples/configuration-sample)
+- [Configuration](./samples/configuration-sample.md)
 - [Configuration-Based Activation in IIS and WAS](./feature-details/configuration-based-activation-in-iis-and-was.md)
 - [Configuration and Metadata Support](./extending/configuration-and-metadata-support.md)
 - [Configuration](./diagnostics/exceptions-reference/configuration.md)

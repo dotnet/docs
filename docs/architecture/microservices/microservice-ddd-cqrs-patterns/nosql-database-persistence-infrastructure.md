@@ -1,7 +1,7 @@
 ---
 title: Using NoSQL databases as a persistence infrastructure
 description: Understand the use of NoSql databases in general, and Azure Cosmos DB in particular, as an option to implement persistence.
-ms.date: 01/13/2021
+ms.date: 06/23/2021
 ---
 # Use NoSQL databases as a persistence infrastructure
 
@@ -282,7 +282,7 @@ The following code shows the `.env` file with the Azure Cosmos DB connection str
 # .env file, in eShopOnContainers root folder
 # Other Docker environment variables
 
-ESHOP_EXTERNAL_DNS_NAME_OR_IP=localhost
+ESHOP_EXTERNAL_DNS_NAME_OR_IP=host.docker.internal
 ESHOP_PROD_EXTERNAL_DNS_NAME_OR_IP=<YourDockerHostIP>
 
 #ESHOP_AZURE_COSMOSDB=<YourAzureCosmosDBConnData>

@@ -297,4 +297,4 @@ The following is a complete listing of the configuration file used in this examp
 
 ## See also
 
-- [Routing Services](/previous-versions/dotnet/framework/wcf/samples/routing-services)
+- [Routing Services](../samples/routing-services.md)

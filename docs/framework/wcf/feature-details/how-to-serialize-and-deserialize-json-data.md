@@ -15,7 +15,7 @@ This article demonstrates how to serialize .NET type objects into JSON-encoded d
 
 Normally, JSON serialization and deserialization are handled automatically by Windows Communication Foundation (WCF) when you use data contract types in service operations that are exposed over AJAX-enabled endpoints. However, in some cases you may need to work with JSON data directly.
 
-This article is based on the [DataContractJsonSerializer sample](/previous-versions/dotnet/framework/wcf/samples/json-serialization).
+This article is based on the [DataContractJsonSerializer sample](../samples/json-serialization.md).
 
 ## To define the data contract for a Person type
 

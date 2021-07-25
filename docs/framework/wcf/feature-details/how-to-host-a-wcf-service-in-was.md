@@ -31,7 +31,7 @@ This topic outlines the basic steps required to create a Windows Process Activat
   
  Otherwise, the endpoint that is initialized first always determines the values of these properties, and endpoints added later throw a <xref:System.ServiceModel.ServiceActivationException> if they do not match those settings.  
   
- For the source copy of this example, see [TCP Activation](/previous-versions/dotnet/framework/wcf/samples/tcp-activation).  
+ For the source copy of this example, see [TCP Activation](../samples/tcp-activation.md).  
   
 ### To create a basic service hosted by WAS  
   
@@ -96,5 +96,5 @@ This topic outlines the basic steps required to create a Windows Process Activat
   
 ## See also
 
-- [TCP Activation](/previous-versions/dotnet/framework/wcf/samples/tcp-activation)
+- [TCP Activation](../samples/tcp-activation.md)
 - [Windows Server App Fabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10))

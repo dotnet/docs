@@ -9,7 +9,7 @@ ms.assetid: c09b1e99-21b5-4d96-9c04-ec31db3f4436
 ---
 # How to: Create an Activity
 
-Activities are the core unit of behavior in [!INCLUDE[wf1](../../../includes/wf1-md.md)]. The execution logic of an activity can be implemented in managed code or it can be implemented by using other activities. This topic demonstrates how to create two activities. The first activity is a simple activity that uses code to implement its execution logic. The implementation of the second activity is defined by using other activities. These activities are used in following steps in the tutorial.
+Activities are the core unit of behavior in WF. The execution logic of an activity can be implemented in managed code or it can be implemented by using other activities. This topic demonstrates how to create two activities. The first activity is a simple activity that uses code to implement its execution logic. The implementation of the second activity is defined by using other activities. These activities are used in following steps in the tutorial.
 
 ## Create the activity library project
 
@@ -101,4 +101,4 @@ For instructions on how to create a workflow by using these activities, see the 
 - [Designing and Implementing Custom Activities](designing-and-implementing-custom-activities.md)
 - [Getting Started Tutorial](getting-started-tutorial.md)
 - [How to: Create a Workflow](how-to-create-a-workflow.md)
-- [Using the ExpressionTextBox in a Custom Activity Designer](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/using-the-expressiontextbox-in-a-custom-activity-designer)
+- [Using the ExpressionTextBox in a Custom Activity Designer](./samples/using-the-expressiontextbox-in-a-custom-activity-designer.md)

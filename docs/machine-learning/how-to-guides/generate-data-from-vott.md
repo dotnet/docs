@@ -1,7 +1,7 @@
 ---
 title: Generate Data from VoTT
 description: How to use VoTT to generate data for object detection in Model Builder
-ms.date: 07/20/2021
+ms.date: 07/25/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to
@@ -61,4 +61,8 @@ Once you have labeled all of your training images, you can export the file that 
 
     ![VoTT Export Button](./media/vott/vott-export-button.png)
 
-This export will create a new folder called *vott-json-export* in your *Stop-Sign-Images* folder and will generate a JSON file named *ProjectName-export* in that new folder. You will use this JSON file in for training an object detection model in Model Builder.
+This export will create a new folder called *vott-json-export* in your project folder and will generate a JSON file named *ProjectName-export* in that new folder. You will use this JSON file in for training an object detection model in Model Builder.
+
+## Next steps
+
+- To use VoTT with an object detection scenario in Model Builder, see [Detect stop signs in images with Model Builder](../tutorials/object-detection-model-builder.md).

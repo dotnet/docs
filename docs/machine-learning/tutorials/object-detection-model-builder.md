@@ -3,7 +3,7 @@ title: 'Tutorial: Detect objects in images with Model Builder'
 description: This tutorial illustrates how to build an object detection model using ML.NET Model Builder and Azure ML to detect stop signs in images.
 author: briacht
 ms.author: brachtma
-ms.date: 04/13/2021
+ms.date: 07/25/2021
 ms.topic: tutorial
 ms.custom: mlnet-tooling
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to detect stop signs in images using Model Builder.
@@ -55,9 +55,10 @@ This sample creates a C# .NET Core console application that detects stop signs i
 
 The Stop Sign dataset consists of 50 images downloaded from [Unsplash](https://unsplash.com/), each of which contain at least one stop sign.
 
-The first thing you need to do is annotate your images, or draw bounding boxes around the stop signs in each image. To do this you can follow the [Generate Data from VoTT](../how-to-guides/generate-data-from-vott.md) document.
+You can download the dataset [here](https://aka.ms/mlnet-object-detection-tutorial-assets). The download includes of the raw image data files and two JSON files to describe the objects in the images.
 
-> If you want to skip the data labeling steps, you can [download this version of the dataset](https://aka.ms/mlnet-object-detection-tutorial-assets) and continue this tutorial.
+- The ***-asset.json files** contain bounding box information for the respective image.
+- The **StopSignObjDetection-export.json** file has the references to the image files and bounding box information from asset files. It's an aggregate of all the asset files. This file is used to load the data for training in Model Builder.
 
 ## Create a console application
 

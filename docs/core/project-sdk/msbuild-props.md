@@ -297,7 +297,7 @@ The `CopyLocalLockFileAssemblies` property is useful for plugin projects that ha
 > [!TIP]
 > Alternatively, you can use `dotnet publish` to publish the class library. For more information, see [dotnet publish](../tools/dotnet-publish.md).
 
-## ErrorOnDuplicatePublishOutputFiles
+### ErrorOnDuplicatePublishOutputFiles
 
 The `ErrorOnDuplicatePublishOutputFiles` property relates to whether the SDK generates error NETSDK1148 when MSBuild detects duplicate files in the publish output, but can't determine which files to remove. Set the `ErrorOnDuplicatePublishOutputFiles` property to `false` if you don't want the error to be generated.
 
@@ -621,6 +621,7 @@ You can configure some run-time behaviors by specifying MSBuild properties in th
 
 - [ConcurrentGarbageCollection](#concurrentgarbagecollection)
 - [InvariantGlobalization](#invariantglobalization)
+- [PredefinedCulturesOnly](#predefinedculturesonly)
 - [RetainVMGarbageCollection](#retainvmgarbagecollection)
 - [ServerGarbageCollection](#servergarbagecollection)
 - [ThreadPoolMaxThreads](#threadpoolmaxthreads)
@@ -648,6 +649,18 @@ The `InvariantGlobalization` property configures whether the app runs in *global
   <InvariantGlobalization>true</InvariantGlobalization>
 </PropertyGroup>
 ```
+
+### PredefinedCulturesOnly
+
+In .NET 6 and later versions, the `PredefinedCulturesOnly` property configures whether apps can create cultures other than the invariant culture when [globalization-invariant mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md) is enabled. The default is `true`. Set the value to `false` to allow creation of any new culture in globalization-invariant mode.
+
+```xml
+<PropertyGroup>
+  <PredefinedCulturesOnly>false</PredefinedCulturesOnly>
+</PropertyGroup>
+```
+
+For more information, see [Culture creation and case mapping in globalization-invariant mode](../compatibility/globalization/6.0/culture-creation-invariant-mode.md).
 
 ### RetainVMGarbageCollection
 
@@ -834,6 +847,30 @@ The `EnableDynamicLoading` property indicates that an assembly is a dynamically 
   <EnableDynamicLoading>true</EnableDynamicLoading>
 </PropertyGroup>
 ```
+
+## Generated file properties
+
+The following properties concern code in generated files:
+
+- [DisableImplicitNamespaceImports](#disableimplicitnamespaceimports)
+
+### DisableImplicitNamespaceImports
+
+The `DisableImplicitNamespaceImports` property can be used to disable [implicit namespaces](../compatibility/sdk/6.0/implicit-namespaces.md) in C# projects that target .NET 6 or a later version. Implicit namespaces are the default namespaces that are globally included in a project based on the type of SDK. Set this property to `true` to disable implicit namespaces.
+
+```xml
+<PropertyGroup>
+  <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
+</PropertyGroup>
+```
+
+Setting the `DisableImplicitNamespaceImports` property to `true` completely disables the implicit namespaces feature of the .NET SDK. If you want to disable only a set of implicit namespaces, use one of the following SDK-specific properties instead.
+
+| Property | SDK | Affected namespaces |
+| - | - | - |
+| `DisableImplicitNamespaceImports_DotNet` | Microsoft.NET.Sdk | System<br/>System.Collections.Generic<br/>System.IO<br/>System.Linq<br/>System.Net.Http<br/>System.Threading<br/>System.Threading.Tasks |
+| `DisableImplicitNamespaceImports_Web` | Microsoft.NET.Sdk.Web | System.Net.Http.Json<br/>Microsoft.AspNetCore.Builder<br/>Microsoft.AspNetCore.Hosting<br/>Microsoft.AspNetCore.Http<br/>Microsoft.AspNetCore.Routing<br/>Microsoft.Extensions.Configuration<br/>Microsoft.Extensions.DependencyInjection<br/>Microsoft.Extensions.Hosting<br/>Microsoft.Extensions.Logging |
+| `DisableImplicitNamespaceImports_Worker` | Microsoft.NET.Sdk.Worker | Microsoft.Extensions.Configuration<br/>Microsoft.Extensions.DependencyInjection<br/>Microsoft.Extensions.Hosting<br/>Microsoft.Extensions.Logging |
 
 ## Items
 

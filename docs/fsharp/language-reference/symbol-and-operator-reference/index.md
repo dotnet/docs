@@ -58,8 +58,8 @@ The following table describes the comparison operators in the F# language and pr
 |`<>`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is not equal to the right side; otherwise, returns false.<br /></li></ul>|
 |`<=`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is less than or equal to the right side; otherwise, returns `false`.<br /></li></ul>|
 |`=`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is equal to the right side; otherwise, returns `false`.<br /></li></ul>|
-|`>`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is greater than the right side; otherwise, returns `false`.<br /></li></ul>|r /></li></ul>|
-|`>=`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is greater than or equal to the right side; otherwise, returns `false`.<br 
+|`>`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is greater than the right side; otherwise, returns `false`.<br /></li></ul>|
+|`>=`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is greater than or equal to the right side; otherwise, returns `false`.<br /></li></ul>|
 
 ## Boolean operators
 

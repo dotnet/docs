@@ -39,6 +39,8 @@ Example of usage (classification scenario):
 mlnet classification --dataset "yelp_labelled.txt" --label-col 1 --has-header false --train-time 10
 ```
 
+There is also a command where you can train using an `mbconfig` file. The `mbconfig` file gets created when starting a Model Builder session.
+
 ![ML.NET classification from the command line](media/automate-training-with-cli/mlnet-classification-powershell.gif)
 
 You can run it the same way on *Windows PowerShell*, *macOS/Linux bash*, or *Windows CMD*. However, tabular auto-completion (parameter suggestions) won't work on *Windows CMD*.

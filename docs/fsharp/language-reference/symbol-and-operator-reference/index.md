@@ -136,7 +136,7 @@ The following table describes symbols related to reference cells and provides a 
 
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
-|`!`|[Reference Cells](../reference-cells.md)<br /><br />[Computation Expressions](../computation-expressions.md)|<ul><li>Dereferences a reference cell.<br /></li><li>After a keyword, indicates a modified version of the keyword's behavior as controlled by a workflow.<br /></li></ul>|
+|`!`|[Reference Cells](../reference-cells.md)|<ul><li>Dereferences a reference cell.<br /></li></ul>|
 |`:=`|[Reference Cells](../reference-cells.md)|<ul><li>Assigns a value to a reference cell.<br /></li></ul>|
 
 ## Symbols used in quotations
@@ -163,6 +163,7 @@ The following table describes additional symbols used in expressions
 |`? ... <- ...`||<ul><li>Used as an operator for setting dynamic properties. You must provide your own implementation.<br /></li></ul>|
 |`;`|[Verbose Syntax](../verbose-syntax.md)<br /><br />[Lists](../lists.md)<br /><br />[Records](../records.md)|<ul><li>Separates expressions (used mostly in verbose syntax).<br /></li><li>Separates elements of a list.<br /></li><li>Separates fields of a record.<br /></li></ul>|
 |`->`|[Sequences](../sequences.md)|<ul><li>Yields an expression (in sequence expressions); equivalent to the `do yield` keywords.<br /></li></ul>|
+|`!`|[Computation Expressions](../computation-expressions.md)|<ul><li>After a keyword, indicates a modified version of the keyword's behavior as controlled by a workflow.<br /></li></ul>|
 
 ## Additional symbols used in match patterns
 

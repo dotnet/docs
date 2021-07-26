@@ -30,7 +30,7 @@ The following table describes symbols related to strings and provides a brief de
 |------------------|-----|-----------|
 |`"`|[Literals](../literals.md)<br /><br />[Strings](../strings.md)|<ul><li>Delimits a text string.<br /></li></ul>|
 |`"""`|[Strings](../strings.md)|Delimits a verbatim text string. Differs from `@"..."` in that a you can indicate a quotation mark character by using a single quote in the string.|
-|`$"`|[Strings](../strings.md)|Starts an interpolated string.|
+|`$"`|[Interpolated Strings](../interpolated-strings.md)|Starts an interpolated string.|
 |`'`|[Literals](../literals.md)|<ul><li>Delimits a single-character literal.<br /></li></ul>|
 |<code>&#96;&#96;...&#96;&#96;</code>||<ul><li>Delimits an identifier that would otherwise not be a legal identifier, such as a language keyword.<br /></li></ul>|
 |`\`|[Strings](../strings.md)|<ul><li>Escapes the next character; used in character and string literals.<br /></li></ul>|

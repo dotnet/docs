@@ -289,7 +289,7 @@ To read values from the distributed cache, call one of the get APIs:
 - <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.GetAsync%2A?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Get%2A?displayProperty=nameWithType>
 
-:::code source="snippets/caching/distributed/Program.cs" range="61-67" highlight="4-5":::
+:::code source="snippets/caching/distributed/Program.cs" range="61-67" highlight="5-6":::
 
 Once a cache entry is read out of the cache, you can get the UTF8 encoded `string` representation from the `byte[]`
 

@@ -41,7 +41,7 @@ particular base class. You don't need to implement a specific interface.
 The only requirement is to provide the implementation of one method that
 is fundamental to the task at hand.
 
-## Building Your Own Components with Delegates
+## Build Your Own Components with Delegates
 
 Let's build on that example by creating a component using a design that
 relies on delegates.
@@ -91,12 +91,12 @@ the WriteMessage delegate declared in the logger:
 
 [!code-csharp[ConnectDelegate](../../samples/snippets/csharp/delegates-and-events/Program.cs#ConnectDelegate "Connect to the delegate")]
 
-## Practices
+### Practices
 
 Our sample so far is fairly simple, but it still demonstrates some
 of the important guidelines for designs involving delegates.
 
-Using the delegate types defined in the Core Framework makes it easier
+Using the delegate types defined in the core framework makes it easier
 for users to work with the delegates. You don't need to define new types,
 and developers using your library do not need to learn new, specialized
 delegate types.
@@ -105,7 +105,7 @@ The interfaces used are as minimal and as flexible as possible: To create
 a new output logger, you must create one method. That method may be a static
 method, or an instance method. It may have any access.
 
-## Formatting Output
+## Format Output
 
 Let's make this first version a bit more robust, and then start
 creating other logging mechanisms.
@@ -121,7 +121,7 @@ that are sent to the log's output.
 
 [!code-csharp[FinalLogger](../../samples/snippets/csharp/delegates-and-events/Logger.cs#LoggerFinal "Finish the Logger")]
 
-## Practices
+### Practices
 
 You've added new features to the logging infrastructure. Because
 the logger component is very loosely coupled to any output mechanism,
@@ -134,7 +134,7 @@ any changes to other locations. In fact, in a larger application, the logger
 output classes might be in a different assembly, and not even need to be
 rebuilt.
 
-## Building a Second Output Engine
+## Build a Second Output Engine
 
 The Log component is coming along well. Let's add one more output
 engine that logs messages to a file. This will be a slightly more
@@ -167,7 +167,7 @@ delegates without any other issues to the system:
 Logger.WriteMessage -= LoggingMethods.LogToConsole;
 ```
 
-## Practices
+### Practices
 
 Now, you've added a second output handler for the logging sub-system.
 This one needs a bit more infrastructure to correctly support the file
@@ -195,7 +195,7 @@ more coupling between the classes.
 None of the code in the Logger class would need to be updated
 in order to support either scenario.
 
-## Handling Null Delegates
+## Handle Null Delegates
 
 Finally, let's update the LogMessage method so that it is robust
 for those cases when no output mechanism is selected. The current

@@ -13,7 +13,7 @@ Windows Communication Foundation (WCF) configures behaviors in two ways: either 
   
  When using a configuration file, behavior configuration is a named collection of configuration settings. The name of each behavior configuration must be unique. This string is used in the `behaviorConfiguration` attribute of an endpoint configuration to link the endpoint to the behavior.  
   
-## Example  
+## Example 1
 
  The following configuration code defines a behavior called `myBehavior`. The client endpoint references this behavior in the `behaviorConfiguration` attribute.  
   
@@ -43,7 +43,7 @@ Windows Communication Foundation (WCF) configures behaviors in two ways: either 
 
  You can also configure or insert behaviors programmatically by locating the appropriate `Behaviors` property on the Windows Communication Foundation (WCF) client object or on the client channel factory object prior to opening the client.  
   
-## Example  
+## Example 2  
 
  The following code example shows how to programmatically insert a behavior by accessing the <xref:System.ServiceModel.Description.ServiceEndpoint.Behaviors%2A> property on the <xref:System.ServiceModel.Description.ServiceEndpoint> returned from the <xref:System.ServiceModel.ChannelFactory.Endpoint%2A> property prior to the creation of the channel object.  
   

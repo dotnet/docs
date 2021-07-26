@@ -48,7 +48,7 @@ RaiseEvent eventname[( argumentlist )]
 > [!NOTE]
 > You can change the default behavior of events by defining a custom event. For custom events, the `RaiseEvent` statement invokes the event's `RaiseEvent` accessor. For more information on custom events, see [Event Statement](event-statement.md).  
   
-## Example  
+## Example 1
 
  The following example uses events to count down seconds from 10 to 0. The code illustrates several of the event-related methods, properties, and statements, including the `RaiseEvent` statement.  
   
@@ -64,7 +64,7 @@ RaiseEvent eventname[( argumentlist )]
   
  [!code-vb[VbVbalrEvents#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#14)]  
   
-## Example  
+## Example 2  
 
  Add the following code to the code for `Form1`. Replace any duplicate procedures that may exist, such as `Form_Load`, or `Button_Click`.  
   

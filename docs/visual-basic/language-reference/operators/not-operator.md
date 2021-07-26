@@ -61,7 +61,7 @@ result = Not expression
 
  The `Not` operator can be *overloaded*, which means that a class or structure can redefine its behavior when its operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).  
   
-## Example  
+## Example 1
 
  The following example uses the `Not` operator to perform logical negation on a `Boolean` expression. The result is a `Boolean` value that represents the reverse of the value of the expression.  
   
@@ -69,7 +69,7 @@ result = Not expression
   
  The preceding example produces results of `False` and `True`, respectively.  
   
-## Example  
+## Example 2  
 
  The following example uses the `Not` operator to perform logical negation of the individual bits of a numeric expression. The bit in the result pattern is set to the reverse of the corresponding bit in the operand pattern, including the sign bit.  
   

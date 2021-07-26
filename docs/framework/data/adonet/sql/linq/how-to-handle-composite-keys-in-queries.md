@@ -11,14 +11,14 @@ ms.assetid: ce2f14fd-1038-458a-91e3-a078c61f0d10
 
 Some operators can take only one argument. If your argument must include more than one column from the database, you must create an anonymous type to represent the combination.  
   
-## Example  
+## Example 1
 
  The following example shows a query that invokes the `GroupBy` operator, which can take only one `key` argument.  
   
  [!code-csharp[DLinqCompositeKeys#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqCompositeKeys/cs/Program.cs#1)]
  [!code-vb[DLinqCompositeKeys#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqCompositeKeys/vb/Module1.vb#1)]  
   
-## Example  
+## Example 2  
 
  The same situation pertains to joins, as in the following example:  
   

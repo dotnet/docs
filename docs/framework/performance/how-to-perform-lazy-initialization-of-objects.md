@@ -13,7 +13,7 @@ ms.assetid: 8cd68620-dcc3-4f20-8835-c728a6820e71
 
 The <xref:System.Lazy%601?displayProperty=nameWithType> class simplifies the work of performing lazy initialization and instantiation of objects. By initializing objects in a lazy manner, you can avoid having to create them at all if they are never needed, or you can postpone their initialization until they are first accessed. For more information, see [Lazy Initialization](lazy-initialization.md).  
   
-## Example  
+## Example 1
 
  The following example shows how to initialize a value with <xref:System.Lazy%601>. Assume that the lazy variable might not be needed, depending on some other code that sets the `someCondition` variable to true or false.  
   
@@ -65,7 +65,7 @@ End Sub
   }  
 ```  
   
-## Example  
+## Example 2  
 
  The following example shows how to use the <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> class to initialize a type that is visible only to the current object instance on the current thread.  
   

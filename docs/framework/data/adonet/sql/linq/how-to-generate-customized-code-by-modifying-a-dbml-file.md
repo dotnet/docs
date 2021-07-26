@@ -18,7 +18,7 @@ You can generate Visual Basic or C# source code from a database markup language 
   
  The following examples use the SQLMetal command-line tool. For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../tools/sqlmetal-exe-code-generation-tool.md).  
   
-## Example  
+## Example 1
 
  The following code generates a .dbml file from the Northwind sample database. As source for the database metadata, you can use either the name of the database or the name of the .mdf file.  
   
@@ -27,7 +27,7 @@ sqlmetal /server:myserver /database:northwind /dbml:mymeta.dbml
 sqlmetal /dbml:mymeta.dbml mydbfile.mdf  
 ```  
   
-## Example  
+## Example 2  
 
  The following code generates Visual Basic or C# source code file from a .dbml file.  
   

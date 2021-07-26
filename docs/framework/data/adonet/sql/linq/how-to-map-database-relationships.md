@@ -31,7 +31,7 @@ You can encode as property references in your entity class any data relationship
     >
     >  Objects in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], on the other hand, refer to each other by using property references or collections of references that you navigate by using *dot* notation.  
   
-## Example  
+## Example 1
 
  In the following one-to-many example, the `Customer` class has a property that declares the relationship between customers and their orders.  The `Orders` property is of type <xref:System.Data.Linq.EntitySet%601>. This type signifies that this relationship is one-to-many (one customer to many orders). The <xref:System.Data.Linq.Mapping.AssociationAttribute.OtherKey%2A> property is used to describe how this association is accomplished, namely, by specifying the name of the property in the related class to be compared with this one. In this example, the `CustomerID` property is compared, just as a database *join* would compare that column value.  
   
@@ -41,7 +41,7 @@ You can encode as property references in your entity class any data relationship
  [!code-csharp[DlinqCustomize#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqCustomize/cs/Program.cs#3)]
  [!code-vb[DlinqCustomize#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqCustomize/vb/Module1.vb#3)]  
   
-## Example  
+## Example 2  
 
  You can also reverse the situation. Instead of using the `Customer` class to describe the association between customers and orders, you can use the `Order` class. The `Order` class uses the <xref:System.Data.Linq.EntityRef%601> type to describe the relationship back to the customer, as in the following code example.  
   

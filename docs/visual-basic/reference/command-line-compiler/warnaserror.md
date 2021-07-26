@@ -44,7 +44,7 @@ Causes the compiler to treat the first occurrence of a warning as an error.
 |---|  
 |1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.<br />2.  Click the **Compile** tab.<br />3.  Make sure the **Disable all warnings** check box is unchecked.<br />4.  Make sure the **Treat all warnings as errors** check box is unchecked.<br />5.  Select **Error** from the **Notification** column adjacent to the warning that should be treated as an error.|  
   
-## Example  
+## Example 1
 
  The following code compiles `In.vb` and directs the compiler to display an error for the first occurrence of every warning it finds.  
   
@@ -52,7 +52,7 @@ Causes the compiler to treat the first occurrence of a warning as an error.
 vbc -warnaserror in.vb  
 ```  
   
-## Example  
+## Example 2  
 
  The following code compiles `T2.vb` and treats only the warning for unused local variables (42024) as an error.  
   

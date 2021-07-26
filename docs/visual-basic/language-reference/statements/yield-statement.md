@@ -79,7 +79,7 @@ Next
   
  On each subsequent iteration of the `For Each` loop, the execution of the iterator body continues from where it left off, again stopping when it reaches a `Yield` statement. The `For Each` loop completes when the end of the iterator function or a `Return` or `Exit Function` statement is reached.  
   
-## Example  
+## Example 1
 
  The following example has a `Yield` statement that is inside a [For…Next](for-next-statement.md) loop. Each iteration of the [For Each](for-each-next-statement.md) statement body in `Main` creates a call to the `Power` iterator function. Each call to the iterator function proceeds to the next execution of the `Yield` statement, which occurs during the next iteration of the `For…Next` loop.  
   
@@ -87,7 +87,7 @@ Next
   
  [!code-vb[VbVbalrStatements#98](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#98)]  
   
-## Example  
+## Example 2  
 
  The following example demonstrates a `Get` accessor that is an iterator. The property declaration includes an `Iterator` modifier.  
   

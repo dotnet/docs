@@ -8,7 +8,7 @@ fl_keywords:
 # Symbol and operator reference
 
 This article includes tables describing the symbols and operators that are used in the F# language. Some symbols
-and operators have two entries.
+and operators have two or more entries when used in multiple roles.
 
 ## Comment, compiler directive and attribute symbols
 
@@ -139,7 +139,20 @@ The following table describes symbols related to reference cells and provides a 
 |`!`|[Reference Cells](../reference-cells.md)<br /><br />[Computation Expressions](../computation-expressions.md)|<ul><li>Dereferences a reference cell.<br /></li><li>After a keyword, indicates a modified version of the keyword's behavior as controlled by a workflow.<br /></li></ul>|
 |`:=`|[Reference Cells](../reference-cells.md)|<ul><li>Assigns a value to a reference cell.<br /></li></ul>|
 
-## Symbols used in expressions
+## Symbols used in quotations
+
+The following table describes symbols related to quotations.
+
+|Symbol or operator|Links|Description|
+|------------------|-----|-----------|
+|`<@...@>`|[Code Quotations](../code-quotations.md)|<ul><li>Delimits a typed code quotation.<br /></li></ul>|
+|`<@@...@@>`|[Code Quotations](../code-quotations.md)|<ul><li>Delimits an untyped code quotation.<br /></li></ul>|
+|`%`|[Code Quotations](../code-quotations.md)|<ul><li>Used for splicing expressions into typed code quotations.<br /></li></ul>|
+|`%%`|[Code Quotations](../code-quotations.md)|<ul><li>Used for splicing expressions into untyped code quotations.<br /></li></ul>|
+
+## Additional symbols used in expressions 
+
+The following table describes additional symbols used in expressions
 
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
@@ -151,7 +164,7 @@ The following table describes symbols related to reference cells and provides a 
 |`;`|[Verbose Syntax](../verbose-syntax.md)<br /><br />[Lists](../lists.md)<br /><br />[Records](../records.md)|<ul><li>Separates expressions (used mostly in verbose syntax).<br /></li><li>Separates elements of a list.<br /></li><li>Separates fields of a record.<br /></li></ul>|
 |`->`|[Sequences](../sequences.md)|<ul><li>Yields an expression (in sequence expressions); equivalent to the `do yield` keywords.<br /></li></ul>|
 
-## Symbols used in match expressions and patterns
+## Additional symbols used in match patterns
 
 The following table describes symbols related to pattern matching and provides a brief description of each.
 
@@ -162,9 +175,9 @@ The following table describes symbols related to pattern matching and provides a
 |`_`|[Match Expressions](../match-expressions.md)<br /><br />[Generics](../generics/index.md)|<ul><li>Indicates a wildcard pattern.<br /></li><li>Specifies an anonymous generic parameter.<br /></li></ul>|
 |<code>&#124;</code>|[Match Expressions](../match-expressions.md)|<ul><li>Delimits individual match cases, individual discriminated union cases, and enumeration values.<br /></li></ul>|
 
-## Symbols used in declarations
+## Additional symbols used in declarations
 
-The following table describes symbols related to declarations:
+The following table describes symbols related to declarations.
 
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
@@ -173,20 +186,9 @@ The following table describes symbols related to declarations:
 |`~-`|[Operator Overloading](../operator-overloading.md)|<ul><li>Used to declare an overload for the unary minus operator.<br /></li></ul>|
 |`~+`|[Operator Overloading](../operator-overloading.md)|<ul><li>Used to declare an overload for the unary plus operator.<br /></li></ul>|
 
-## Symbols used in quotations
-
-The following table describes symbols related to quotations and provides a brief description of each.
-
-|Symbol or operator|Links|Description|
-|------------------|-----|-----------|
-|`<@...@>`|[Code Quotations](../code-quotations.md)|<ul><li>Delimits a typed code quotation.<br /></li></ul>|
-|`<@@...@@>`|[Code Quotations](../code-quotations.md)|<ul><li>Delimits an untyped code quotation.<br /></li></ul>|
-|`%`|[Code Quotations](../code-quotations.md)|<ul><li>Used for splicing expressions into typed code quotations.<br /></li></ul>|
-|`%%`|[Code Quotations](../code-quotations.md)|<ul><li>Used for splicing expressions into untyped code quotations.<br /></li></ul>|
-
 ## Nullable operators
 
-[Nullable Operators](nullable-operators.md) are defined for use in F# queries. The following table shows these operators:
+[Nullable Operators](nullable-operators.md) are defined for use in F# queries. The following table shows these operators.
 
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|

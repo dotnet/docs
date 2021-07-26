@@ -1,15 +1,15 @@
 ---
-title: Defining Cloud Native
+title: What is Cloud Native?
 description: Learn about the foundational pillars that provide the bedrock for cloud-native systems
 author: robvet
 ms.date: 07/25/2021
 ---
 
-# Defining cloud native
+# What is Cloud Native?
 
 Stop what you're doing and text 10 of your colleagues. Ask them to define the term "Cloud Native". Good chance you'll get 10 different answers.
 
-As stated earlier, Cloud native is all about changing the way you construct critical business systems. Cloud-native systems are designed to embrace rapid change, large scale, and resilience.
+As mentioned earlier, cloud native is all about changing the way you construct critical business systems. Cloud-native systems are designed to embrace rapid change, large scale, and resilience.
 
 The Cloud Native Computing Foundation provides an [official definition](https://github.com/cncf/foundation/blob/master/charter.md):
 

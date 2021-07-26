@@ -1,9 +1,10 @@
 ---
 title: Attributes
+titleSuffix: ""
 description: Learn how F# Attributes enable metadata to be applied to a programming construct.
 ms.date: 02/19/2020
 ---
-# Attributes
+# Attributes (F#)
 
 Attributes enable metadata to be applied to a programming construct.
 

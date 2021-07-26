@@ -10,11 +10,6 @@ open System.Text
 //
 
 let storageConnString = "..." // fill this in from your storage account
-(*
-// To fetch the connection string from a configuration file.
-let storageConnString = 
-    CloudConfigurationManager.GetSetting("StorageConnectionString")
-*)
 
 //
 // Create some local dummy data.

@@ -14,16 +14,16 @@ Obtaining packages for Azure development is easy when you use a package manager.
 If you're using [Paket](https://fsprojects.github.io/Paket/) as your dependency manager, you can use the `paket.exe` tool to add Azure dependencies. For example:
 
 ```console
-> paket add nuget WindowsAzure.Storage
+> paket add nuget Azure.Storage.Blobs
 ```
 
 Or, if you're using [Mono](https://www.mono-project.com/) for cross-platform .NET development:
 
 ```console
-> mono paket.exe add nuget WindowsAzure.Storage
+> mono paket.exe add nuget Azure.Storage.Blobs
 ```
 
-This will add `WindowsAzure.Storage` to your set of package dependencies for the project in the current directory, modify the `paket.dependencies` file, and download the package. If you have previously set up dependencies, or are working with a project where dependencies have been set up by another developer, you can resolve and install dependencies locally like this:
+This will add `WAzure.Storage.Blobs` to your set of package dependencies for the project in the current directory, modify the `paket.dependencies` file, and download the package. If you have previously set up dependencies, or are working with a project where dependencies have been set up by another developer, you can resolve and install dependencies locally like this:
 
 ```console
 > paket install
@@ -52,16 +52,16 @@ Or, for Mono development:
 If you're using [NuGet](https://www.nuget.org/) as your dependency manager, you can use the `nuget.exe` tool to add Azure dependencies. For example:
 
 ```console
-> nuget install WindowsAzure.Storage -ExcludeVersion
+> nuget install Azure.Storage.Blobs -ExcludeVersion
 ```
 
 Or, for Mono development:
 
 ```console
-> mono nuget.exe install WindowsAzure.Storage -ExcludeVersion
+> mono nuget.exe install Azure.Storage.Blobs -ExcludeVersion
 ```
 
-This will add `WindowsAzure.Storage` to your set of package dependencies for the project in the current directory, and download the package. If you have previously set up dependencies, or are working with a project where dependencies have been set up by another developer, you can resolve and install dependencies locally like this:
+This will add `Azure.Storage.Blobs` to your set of package dependencies for the project in the current directory, and download the package. If you have previously set up dependencies, or are working with a project where dependencies have been set up by another developer, you can resolve and install dependencies locally like this:
 
 ```console
 > nuget restore
@@ -90,20 +90,20 @@ Or, for Mono development:
 In order to use your packages in your F# script, you need to reference the assemblies included in the packages using a `#r` directive. For example:
 
 ```fsharp
-> #r "packages/WindowsAzure.Storage/lib/net40/Microsoft.WindowsAzure.Storage.dll"
+> #r "packages/Azure.Storage.Blobs/lib/net40/Azure.Storage.Blobs.dll"
 ```
 
 As you can see, you'll need to specify the relative path to the DLL and the full DLL name, which may not be exactly the same as the package name. The path will include a framework version and possibly a package version number. To find all the installed assemblies, you can use something like this on a Windows command line:
 
 ```console
-> cd packages/WindowsAzure.Storage
+> cd packages/Azure.Storage.Blobs
 > dir /s/b *.dll
 ```
 
 Or in a Unix shell, something like this:
 
 ```console
-> find packages/WindowsAzure.Storage -name "*.dll"
+> find packages/Azure.Storage.Blobs -name "*.dll"
 ```
 
 This will give you the paths to the installed assemblies. From there, you can select the correct path for your framework version.

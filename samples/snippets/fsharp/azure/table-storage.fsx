@@ -9,11 +9,6 @@ open System.Collections.Generic
 //
 
 let storageConnString = "..." // fill this in from your storage account
-(*
-// Parse the connection string and return a reference to the storage account.
-let storageConnString = 
-    CloudConfigurationManager.GetSetting("StorageConnectionString")
-*)
 
 //
 // Create the Table service client.

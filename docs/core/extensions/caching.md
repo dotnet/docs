@@ -171,7 +171,7 @@ Y is still in cache. The 'Y' character is the 25 letter in the English alphabet.
 Z is still in cache. The 'Z' character is the 26 letter in the English alphabet.
 ```
 
-Since the absolute expiration is set, all the cached items will eventually be evicted.
+Since the absolute expiration (<xref:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions.AbsoluteExpirationRelativeToNow?displayProperty=nameWithType>) is set, all the cached items will eventually be evicted.
 
 ## Worker Service caching
 
@@ -184,11 +184,11 @@ One common strategy for caching data, is updating the cache independently from t
 
 Imagine you're developing a photo service that relies on third-party API accessible via HTTP. This photo data doesn't change very often, but there is a lot of it. Each photo is represented by a simple `record`:
 
-:::code source="snippets/caching/memory/Photo.cs":::
+:::code source="snippets/caching/memory-worker/Photo.cs":::
 
 In the following example, you'll see several services being registered with DI. Each service has a single responsibility.
 
-:::code source="snippets/caching/memory/Program.cs" range="1-18":::
+:::code source="snippets/caching/memory-worker/Program.cs" range="1-18":::
 
 In the preceding C# code:
 
@@ -202,7 +202,7 @@ In the preceding C# code:
 
 The `PhotoService` is responsible for getting photos that match a given criteria (or `filter`):
 
-:::code source="snippets/caching/memory/PhotoService.cs":::
+:::code source="snippets/caching/memory-worker/PhotoService.cs":::
 
 In the preceding C# code:
 
@@ -219,11 +219,11 @@ Consumers of this service are free to call `GetPhotosAsync` method, and handle p
 
 The `CacheWorker` is a subclass of <xref:Microsoft.Extensions.Hosting.BackgroundService>:
 
-:::code source="snippets/caching/memory/CacheWorker.cs":::
+:::code source="snippets/caching/memory-worker/CacheWorker.cs":::
 
 In the preceding C# code:
 
-- The constructor requires an `Ilogger`, `HttpClient`, `CacheSignal<Photo>`, and `IMemoryCache`.
+- The constructor requires an `ILogger`, `HttpClient`, `CacheSignal<Photo>`, and `IMemoryCache`.
 - The defines an `_updateInterval` of three hours.
 - The `ExecuteAsync` method:
   - Loops while the app is running.
@@ -235,11 +235,11 @@ In the preceding C# code:
 
 The asynchronous signal is based on an "async coordination primitive" detailed in an old DevBlog from Stephen Toub, which is still relevant today. For more information, see [Building async coordination primitives: `AsyncAutoResetEvent`](https://devblogs.microsoft.com/pfxteam/building-async-coordination-primitives-part-2-asyncautoresetevent).
 
-:::code source="snippets/caching/memory/AsyncAutoResetEvent.cs":::
+:::code source="snippets/caching/memory-worker/AsyncAutoResetEvent.cs":::
 
 The `CacheSignal<T>` relies on an instance of `AsyncAutoResetEvent`:
 
-:::code source="snippets/caching/memory/CacheSignal.cs":::
+:::code source="snippets/caching/memory-worker/CacheSignal.cs":::
 
 In the preceding C# code, the decorator pattern is used to wrap an instance of the `AsyncAutoResetEvent`. Since the `CacheSignal<T>` is registered as a singleton, it can be used across all service lifetimes with any generic type &mdash; in this case, the `Photo`. It is responsible for signaling the seeding of the cache.
 
@@ -275,6 +275,13 @@ Using the `AlphabetLetter` record from the in-memory cache example, you could se
 
 Much like in-memory caching, cache entries can have options to help fine tune their existence in the cache &mdash; in this case, the <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions>.
 
+##### Create extension methods
+
+There are several convenience-based extension methods for creating values, that help to avoid encoding `string` representations of objects into a `byte[]`:
+
+- <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.SetStringAsync%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.SetString%2A?displayProperty=nameWithType>
+
 #### Read values
 
 To read values from the distributed cache, call one of the get APIs:
@@ -285,6 +292,13 @@ To read values from the distributed cache, call one of the get APIs:
 :::code source="snippets/caching/distributed/Program.cs" range="61-67" highlight="4-5":::
 
 Once a cache entry is read out of the cache, you can get the UTF8 encoded `string` representation from the `byte[]`
+
+##### Read extension methods
+
+There are several convenience-based extension methods for reading values, that help to avoid decoding `byte[]` into `string` representations of objects:
+
+- <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetString%2A?displayProperty=nameWithType>
 
 #### Update values
 

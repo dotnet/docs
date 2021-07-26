@@ -3,7 +3,7 @@ title: 'Tutorial: Predict prices using regression with Model Builder'
 description: This tutorial illustrates how to build a regression model using ML.NET Model Builder to predict prices, specifically, New York City taxi fares.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 11/21/2019
+ms.date: 07/25/2021
 ms.topic: tutorial
 ms.custom: mvc, mlnet-tooling
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to predict prices using Model Builder.
@@ -34,7 +34,7 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 ## Create a console application
 
-1. Create a **C# .NET Core Console Application** called "TaxiFarePrediction". Make sure **Place solution and project in the same directory** is **unchecked** (VS 2019), or **Create directory for solution** is **checked** (VS 2017).
+1. Create a **C# .NET Core Console Application** called "TaxiFarePrediction". Make sure **Place solution and project in the same directory** is **unchecked** (VS 2019).
 
 ## Prepare and understand the data
 
@@ -66,11 +66,16 @@ Each row in the `taxi-fare-train.csv` data set contains details of trips made by
 
 The `label` is the column you want to predict. When performing a regression task, the goal is to predict a numerical value. In this price prediction scenario, the cost of a taxi ride is being predicted. Therefore, the **fare_amount** is the label. The identified `features` are the inputs you give the model to predict the `label`. In this case, the rest of the columns with the exception of **trip_time_in_secs** are used as features or inputs to predict the fare amount.
 
+## Create Model Builder Config File
+
+When first adding Model Builder to the solution it will prompt you to create an **mbconfig** file. This file consists of 
+
+1. In **Solution Explorer**, right-click the *TaxiFarePrediction* project, and select **Add** > **Machine Learning**.
+
 ## Choose a scenario
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is `Price Prediction`.
 
-1. In **Solution Explorer**, right-click the *TaxiFarePrediction* project, and select **Add** > **Machine Learning**.
 1. In the scenario step of the Model Builder tool, select *Price Prediction* scenario.
 
 ## Load the data

@@ -7,6 +7,10 @@ ms.date: 05/16/2016
 
 Nullable operators are binary arithmetic or comparison operators that work with nullable arithmetic types on one or both sides. Nullable types arise frequently when you work with data from sources such as databases that allow nulls in place of actual values. Nullable operators are used frequently in query expressions. In addition to nullable operators for arithmetic and comparison, conversion operators can be used to convert between nullable types. There are also nullable versions of certain query operators.
 
+> [!NOTE]
+> Nullable operators are generally only used in [query expressions](../query-expressions.md). If you do not use query expressions, you do not need to
+> know or use these operators.
+
 ## Table of Nullable Operators
 
 The following table lists nullable operators supported in the F# language.

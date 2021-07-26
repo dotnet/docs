@@ -1,7 +1,7 @@
 ---
 title: Nullable Operators in Queries
 description: Learn about the nullable operators that are available in the F# programming language, for use in query expressions.
-ms.date: 05/16/2016
+ms.date: 07/26/2021
 ---
 # Nullable Operators in Queries
 

@@ -15,7 +15,7 @@ let (|identifier|) [arguments] valueToMatch = expression
 
 // Active Pattern with multiple choices.
 // Uses a FSharp.Core.Choice<_,...,_> based on the number of case names. In F#, the limitation n <= 7 applies.
-let (|identifer1|identifier2|...|) valueToMatch = expression
+let (|identifier1|identifier2|...|) valueToMatch = expression
 
 // Partial active pattern definition.
 // Uses a FSharp.Core.option<_> to represent if the type is satisfied at the call site.

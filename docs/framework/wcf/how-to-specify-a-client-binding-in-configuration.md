@@ -16,7 +16,7 @@ In this example, a client console application is created to use a calculator ser
   
  You can perform all of the following configuration steps by using the [Configuration Editor Tool (SvcConfigEditor.exe)](configuration-editor-tool-svcconfigeditor-exe.md).  
   
- For the source copy of this example, see the [BasicBinding](/previous-versions/dotnet/framework/wcf/samples/basicbinding) sample.  
+ For the source copy of this example, see the [BasicBinding](./samples/basicbinding.md) sample.  
   
 ### Specifying a client binding in configuration  
   

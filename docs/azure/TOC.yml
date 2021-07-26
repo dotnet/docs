@@ -7,20 +7,20 @@
       href: intro.md
     - name: Key Azure services for .NET developers
       href: key-azure-services.md
-    - name: Configure your development environment
-      items:
-      - name: Create an Azure account
-        href: create-azure-account.md
-      - name: Configure Visual Studio for Azure development (Windows)
-        href: configure-visual-studio.md
-      - name: Configure VS Code for Azure development (cross-platform)
-        href: configure-vs-code.md
-      - name: Install the Azure CLI
-        href: install-azure-cli.md
-      - name: Install additional tools
-        href: azure-tools.md
-      - name: Development setup checklist
-        href: dotnet-dev-env-checklist.md
+- name: Configure your development environment
+  items:
+  - name: Create an Azure account
+    href: create-azure-account.md
+  - name: Configure Visual Studio for Azure development (Windows)
+    href: configure-visual-studio.md
+  - name: Configure VS Code for Azure development (cross-platform)
+    href: configure-vs-code.md
+  - name: Install the Azure CLI
+    href: install-azure-cli.md
+  - name: Install additional tools
+    href: azure-tools.md
+  - name: Development setup checklist
+    href: dotnet-dev-env-checklist.md
 - name: Migrate to Azure
   items:
     - name: Choose the right Azure hosting option
@@ -40,9 +40,11 @@
     - name: Dependency injection
       href: ./sdk/dependency-injection.md
     - name: Thread safety
-      href: ./sdk/thread-safety.md      
+      href: ./sdk/thread-safety.md
     - name: Logging
       href: ./sdk/logging.md
+    - name: Pagination
+      href: ./sdk/pagination.md
     - name: Configure a proxy server
       href: ./sdk/azure-sdk-configure-proxy.md
     - name: Packages list

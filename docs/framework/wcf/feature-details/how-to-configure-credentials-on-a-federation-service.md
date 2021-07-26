@@ -72,7 +72,7 @@ In Windows Communication Foundation (WCF), creating a federated service consists
 
 - [Federation](federation.md)
 - [Federation and Trust](federation-and-trust.md)
-- [Federation Sample](/previous-versions/dotnet/framework/wcf/samples/federation-sample)
+- [Federation Sample](../samples/federation-sample.md)
 - [How to: Disable Secure Sessions on a WSFederationHttpBinding](how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)
 - [How to: Create a WSFederationHttpBinding](how-to-create-a-wsfederationhttpbinding.md)
 - [How to: Create a Federated Client](how-to-create-a-federated-client.md)

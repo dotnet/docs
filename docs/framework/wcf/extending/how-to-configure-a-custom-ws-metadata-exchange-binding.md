@@ -9,7 +9,7 @@ ms.assetid: cdba4d73-da64-4805-bc56-9822becfd1e4
 ---
 # How to: Configure a Custom WS-Metadata Exchange Binding
 
-This article explains how to configure a custom WS-Metadata exchange binding. Windows Communication Foundation (WCF) includes four system-defined metadata bindings, but you can publish metadata using any binding you want. This article shows you how to publish metadata using the `wsHttpBinding`. This binding gives you the option of exposing metadata in a secure way. The code in this article is based on the [Getting Started](/previous-versions/dotnet/framework/wcf/samples/getting-started-sample).  
+This article explains how to configure a custom WS-Metadata exchange binding. Windows Communication Foundation (WCF) includes four system-defined metadata bindings, but you can publish metadata using any binding you want. This article shows you how to publish metadata using the `wsHttpBinding`. This binding gives you the option of exposing metadata in a secure way. The code in this article is based on the [Getting Started](../samples/getting-started-sample.md).  
   
 ### Using a configuration file  
   
@@ -111,8 +111,8 @@ This article explains how to configure a custom WS-Metadata exchange binding. Wi
   
 ## See also
 
-- [Metadata Publishing Behavior](/previous-versions/dotnet/framework/wcf/samples/metadata-publishing-behavior)
-- [Retrieve Metadata](/previous-versions/dotnet/framework/wcf/samples/retrieve-metadata)
+- [Metadata Publishing Behavior](../samples/metadata-publishing-behavior.md)
+- [Retrieve Metadata](../samples/retrieve-metadata.md)
 - [Metadata](../feature-details/metadata.md)
 - [Publishing Metadata](../feature-details/publishing-metadata.md)
 - [Publishing Metadata Endpoints](../publishing-metadata-endpoints.md)

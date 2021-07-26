@@ -11,7 +11,7 @@ ms.assetid: f2d34e43-fa8b-46d2-91cf-d2960e13e16b
 
 The *identity* feature of Windows Communication Foundation (WCF) enables a client to specify in advance the expected identity of the service. Whenever a server authenticates itself to the client, the identity is checked against the expected identity. (For an explanation of identity and how it works, see [Service Identity and Authentication](../feature-details/service-identity-and-authentication.md).)
 
- If needed, the verification can be customized using a custom identity verifier. For example, you can perform additional service identity verification checks. In this example, the custom identity verifier checks additional claims in the X.509 certificate returned from the server. For a sample application, see [Service Identity Sample](/previous-versions/dotnet/framework/wcf/samples/service-identity-sample).
+ If needed, the verification can be customized using a custom identity verifier. For example, you can perform additional service identity verification checks. In this example, the custom identity verifier checks additional claims in the X.509 certificate returned from the server. For a sample application, see [Service Identity Sample](../samples/service-identity-sample.md).
 
 ### To extend the EndpointIdentity class
 
@@ -84,5 +84,5 @@ The *identity* feature of Windows Communication Foundation (WCF) enables a clien
 - <xref:System.ServiceModel.ServiceAuthorizationManager>
 - <xref:System.ServiceModel.EndpointIdentity>
 - <xref:System.ServiceModel.Security.IdentityVerifier>
-- [Service Identity Sample](/previous-versions/dotnet/framework/wcf/samples/service-identity-sample)
-- [Authorization Policy](/previous-versions/dotnet/framework/wcf/samples/authorization-policy)
+- [Service Identity Sample](../samples/service-identity-sample.md)
+- [Authorization Policy](../samples/authorization-policy.md)

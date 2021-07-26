@@ -13,7 +13,7 @@ Windows Communication Foundation (WCF) uses a Windows service called the Net.TCP
   
  After you enable the Net.TCP Port Sharing Service and start it manually, see [How to: Configure a WCF Service to Use Port Sharing](how-to-configure-a-wcf-service-to-use-port-sharing.md) for information about how to configure your service to use this service.  
   
- For a sample that uses net.tcp:// port sharing, see the [Net.TCP Port Sharing Sample](/previous-versions/dotnet/framework/wcf/samples/net-tcp-port-sharing-sample).  
+ For a sample that uses net.tcp:// port sharing, see the [Net.TCP Port Sharing Sample](../samples/net-tcp-port-sharing-sample.md).  
   
 ### To enable the Net.TCP Port Sharing Service using MMC  
   

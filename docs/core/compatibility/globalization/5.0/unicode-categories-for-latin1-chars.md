@@ -57,5 +57,5 @@ Additionally, any class that depends on <xref:System.Char> to obtain the Unicode
 
 - Core .NET libraries
 - Globalization
--
+
 -->

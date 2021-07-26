@@ -32,10 +32,13 @@ This section describes the programming model, samples, and tools of Windows Work
  A set of walkthrough topics that introduce you to programming Windows Workflow Foundation applications.
 
  [Windows Workflow Foundation Programming](programming.md)\
- A set of primer topics that you should understand to become a proficient [!INCLUDE[wf1](../../../includes/wf1-md.md)] programmer.
+ A set of primer topics that you should understand to become a proficient WF programmer.
 
  [Extending Windows Workflow Foundation](extend.md)\
  A set of topics that discusses how to extend or customize Windows Workflow Foundation to suit your needs.
 
  [Windows Workflow Foundation Glossary for .NET Framework 4.5](glossary.md)\
  Defines a list of terms that are specific to WF.
+
+ [Windows Workflow Samples](./samples/index.md)\
+ Contains sample applications that demonstrate WF features and scenarios.

@@ -14,13 +14,13 @@ ms.assetid: 21f87f48-d69d-4e95-9a52-6fec47b37e1f
 
 In a query expression, the `orderby` clause causes the returned sequence or subsequence (group) to be sorted in either ascending or descending order. Multiple keys can be specified in order to perform one or more secondary sort operations. The sorting is performed by the default comparer for the type of the element. The default sort order is ascending. You can also specify a custom comparer. However, it is only available by using method-based syntax. For more information, see [Sorting Data](../../programming-guide/concepts/linq/sorting-data.md).
 
-## Example
+## Example 1
 
 In the following example, the first query sorts the words in alphabetical order starting from A, and second query sorts the same words in descending order. (The `ascending` keyword is the default sort value and can be omitted.)
 
 [!code-csharp[cscsrefQueryKeywords#20](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Orderby.cs#20)]
 
-## Example
+## Example 2
 
 The following example performs a primary sort on the students' last names, and then a secondary sort on their first names.
 

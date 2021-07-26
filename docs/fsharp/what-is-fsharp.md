@@ -1,31 +1,28 @@
 ---
 title: What is F#
-description: Learn about what the F# programming language is and what F# programming is like. Learn about rich data types, functions, and how they fit together.
-ms.date: 08/03/2018
+description: Learn about what the F# programming language is and what F# programming is like. Learn about rich types, functions, and how they fit together.
+ms.date: 07/24/2021
 ---
 # What is F\#
 
-F# is a functional programming language that makes it easy to write correct and maintainable code.
+F# is an open-source, cross-platform, interoperable programming language for writing succinct, robust and performant code.
+Your focus remains on your problem domain, rather than the details of programming.
 
-F# programming primarily involves defining types and functions that are type-inferred and generalized automatically. This allows your focus to remain on the problem domain and manipulating its data, rather than the details of programming.
+F# programming is data-oriented, where code involves transforming data with functions.
 
 ```fsharp
 open System // Gets access to functionality in System namespace.
 
+// Defines a list of names
+let names = [ "Peter"; "Julia"; "Xi" ]
+
 // Defines a function that takes a name and produces a greeting.
-let getGreeting name = $"Hello, {name}! Isn't F# great?"
+let getGreeting name = $"Hello, {name}"
 
-[<EntryPoint>]
-let main args =
-    // Defines a list of names
-    let names = [ "Don"; "Julia"; "Xi" ]
-
-    // Prints a greeting for each name!
-    names
-    |> List.map getGreeting
-    |> List.iter (fun greeting -> printfn $"{greeting}")
-
-    0
+// Prints a greeting for each name!
+names
+|> List.map getGreeting
+|> List.iter (fun greeting -> printfn $"{greeting}! Enjoy your F#")
 ```
 
 F# has numerous features, including:
@@ -42,7 +39,8 @@ A full set of features are documented in the [F# language reference](./language-
 
 ## Rich data types
 
-Data types such as [Records](./language-reference/records.md) and [Discriminated Unions](./language-reference/discriminated-unions.md) let you represent complex data and domains.
+Types such as [Records](./language-reference/records.md) and [Discriminated Unions](./language-reference/discriminated-unions.md)
+let you represent your data.
 
 ```fsharp
 // Group data with Records
@@ -65,9 +63,9 @@ type WithdrawalResult =
 
 F# records and discriminated unions are non-null, immutable, and comparable by default, making them very easy to use.
 
-## Enforced correctness with functions and pattern matching
+## Correctness with functions and pattern matching
 
-F# functions are easy to declare and powerful in practice. When combined with [pattern matching](./language-reference/pattern-matching.md), they allow you to define behavior whose correctness is enforced by the compiler.
+F# functions are easy to define. When combined with [pattern matching](./language-reference/pattern-matching.md), they allow you to define behavior whose correctness is enforced by the compiler.
 
 ```fsharp
 // Returns a WithdrawalResult
@@ -88,7 +86,7 @@ F# functions are also first-class, meaning they can be passed as parameters and 
 
 ## Functions to define operations on objects
 
-F# has full support for objects, which are useful data types when you need to blend data and functionality. F# functions are used to manipulate objects.
+F# has full support for objects, which are useful when you need to blend data and functionality. F# members and functions can be defined to manipulate objects.
 
 ```fsharp
 type Set<'T when 'T: comparison>(elements: seq<'T>) =
@@ -109,7 +107,7 @@ module Set =
     let add value (set: Set<'T>) = set.Add(value)
 ```
 
-Rather than writing code that is object-oriented, in F#, you will often write code that treats objects as another data type for functions to manipulate. Features such as [generic interfaces](./language-reference/interfaces.md), [object expressions](./language-reference/object-expressions.md), and judicious use of [members](./language-reference/members/index.md) are common in larger F# programs.
+In F#, you will often write code that treats objects as a type for functions to manipulate. Features such as [generic interfaces](./language-reference/interfaces.md), [object expressions](./language-reference/object-expressions.md), and judicious use of [members](./language-reference/members/index.md) are common in larger F# programs.
 
 ## Next steps
 

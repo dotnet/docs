@@ -100,7 +100,7 @@ Beyond the guidance provided from the twelve-factor methodology, there are sever
 
 *Communication*
 
-How will front-end client applications communicate with backed-end core services? Will you allow direct communication? Or, might you abstract the back-end services with a gateway façade that provides  flexibility, control, and security?
+How will front-end client applications communicate with backed-end core services? Will you allow direct communication? Or, might you abstract the back-end services with a gateway facade that provides  flexibility, control, and security?
 
 How will back-end core services communicate with each other? Will you allow direct HTTP calls that lead to coupling and impact performance and agility? Or might you consider decoupled messaging with queue and topic technologies?
 

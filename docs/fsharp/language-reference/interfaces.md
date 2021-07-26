@@ -1,9 +1,10 @@
 ---
-title: Interfaces
+title: Interfaces in F#
+titleSuffix: ""
 description: Learn how F# Interfaces specify sets of related members that other classes implement.
 ms.date: 08/15/2020
 ---
-# Interfaces
+# Interfaces (F#)
 
 *Interfaces* specify sets of related members that other classes implement.
 

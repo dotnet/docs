@@ -7,11 +7,11 @@ ms.assetid: 41fa7bde-8d20-4a3f-a3d2-fb791e128010
 # Constructing Types (Entity SQL)
 
 <!-- markdownlint-disable DOCSMD001 -->
-[!INCLUDE[esql](../../../../../../includes/esql-md.md)] provides three kinds of constructors: row constructors, named type constructors, and collection constructors.
+Entity SQL provides three kinds of constructors: row constructors, named type constructors, and collection constructors.
 
 ## Row Constructors
 
-You use row constructors in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] to construct anonymous, structurally typed records from one or more values. The result type of a row constructor is a row type whose field types correspond to the types of the values used to construct the row. For example, the following expression constructs a value of type `Record(a int, b string, c int)`:
+You use row constructors in Entity SQL to construct anonymous, structurally typed records from one or more values. The result type of a row constructor is a row type whose field types correspond to the types of the values used to construct the row. For example, the following expression constructs a value of type `Record(a int, b string, c int)`:
 
 `ROW(1 AS a, "abc" AS b, a + 34 AS c)`
 
@@ -26,7 +26,7 @@ For more information about row constructors, see [ROW](row-entity-sql.md).
 
 ## Collection Constructors
 
-You use collection constructors in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] to create an instance of a multiset from a list of values. All the values in the constructor must be of mutually compatible type `T`, and the constructor produces a collection of type `Multiset<T>`. For example, the following expression creates a collection of integers:
+You use collection constructors in Entity SQL to create an instance of a multiset from a list of values. All the values in the constructor must be of mutually compatible type `T`, and the constructor produces a collection of type `Multiset<T>`. For example, the following expression creates a collection of integers:
 
 `Multiset(1, 2, 3)`
 
@@ -40,7 +40,7 @@ For more information, see [MULTISET](multiset-entity-sql.md).
 
 ## Named Type Constructors (NamedType Initializers)
 
-[!INCLUDE[esql](../../../../../../includes/esql-md.md)] allows type constructors (initializers) to create instances of named complex types and entity types. For example, the following expression creates an instance of a `Person` type.
+Entity SQL allows type constructors (initializers) to create instances of named complex types and entity types. For example, the following expression creates an instance of a `Person` type.
 
 `Person("abc", 12)`
 

@@ -678,7 +678,7 @@ The `CalculateFine` method expects a string containing a `licenseKey` as its fir
             }
 
             // ...
-            
+
             else if (violationInKmh == 35)
             {
                 fine += 372;

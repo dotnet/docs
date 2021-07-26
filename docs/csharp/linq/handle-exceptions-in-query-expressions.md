@@ -10,13 +10,13 @@ It's possible to call any method in the context of a query expression. However, 
 
 The final example shows how to handle those cases when you must throw an exception during execution of a query.
 
-## Example
+## Example 1
 
 The following example shows how to move exception handling code outside a query expression. This is only possible when the method does not depend on any variables local to the query.
 
 [!code-csharp[csProgGuideLINQ#10](~/samples/snippets/csharp/concepts/linq/how-to-handle-exceptions-in-query-expressions_1.cs)]
 
-## Example
+## Example 2
 
 In some cases, the best response to an exception that is thrown from within a query might be to stop the query execution immediately. The following example shows how to handle exceptions that might be thrown from inside a query body. Assume that `SomeMethodThatMightThrow` can potentially cause an exception that requires the query execution to stop.
 

@@ -30,6 +30,6 @@ This topic summarizes information about the Windows Communication Foundation (WC
 
 - [Basic WCF Programming](basic-wcf-programming.md)
 - [Guidelines and Best Practices](guidelines-and-best-practices.md)
-- [Windows Communication Foundation Samples](/previous-versions/dotnet/framework/wcf/samples/index)
+- [Windows Communication Foundation Samples](./samples/index.md)
 - [Tools](./diagnostics/exceptions-reference/tools.md)
 - [General Reference](general-reference.md)

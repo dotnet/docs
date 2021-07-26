@@ -1,7 +1,7 @@
 ---
 description: "C# Compiler Options for language feature rules. These options control how the compiler interprets certain language constructs."
 title: "C# Compiler Options - language feature rules"
-ms.date: 03/12/2021
+ms.date: 07/06/2021
 f1_keywords: 
   - "cs.build.options"
 helpviewer_keywords: 
@@ -105,6 +105,8 @@ The following table lists the minimum versions of the SDK with the C# compiler t
 
 | C# version | Minimum SDK version                                                                  |
 |------------|--------------------------------------------------------------------------------------|
+| C# 10.0    | Microsoft Visual Studio/Build Tools 2022, or .NET 6.0 SDK                            |
+| C# 9.0     | Microsoft Visual Studio/Build Tools 2019, version 16.8, or .NET 5.0 SDK              |
 | C# 8.0     | Microsoft Visual Studio/Build Tools 2019, version 16.3, or .NET Core 3.0 SDK         |
 | C# 7.3     | Microsoft Visual Studio/Build Tools 2017, version 15.7                               |
 | C# 7.2     | Microsoft Visual Studio/Build Tools 2017, version 15.5                               |

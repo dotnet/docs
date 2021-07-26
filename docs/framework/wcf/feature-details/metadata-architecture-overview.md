@@ -55,7 +55,7 @@ Windows Communication Foundation (WCF) provides a rich infrastructure for export
 >
 > You can work around this issue by either adding the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in the configuration file or adding both the endpoint and <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in code.  
 >
-> For an example of adding <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in an application configuration file, see the [Getting Started](/previous-versions/dotnet/framework/wcf/samples/getting-started-sample). For an example of adding <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in code, see the [Self-Host](/previous-versions/dotnet/framework/wcf/samples/self-host) sample.  
+> For an example of adding <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in an application configuration file, see the [Getting Started](../samples/getting-started-sample.md). For an example of adding <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in code, see the [Self-Host](../samples/self-host.md) sample.  
 
 > [!CAUTION]
 > When publishing metadata for a service that exposes two different service contracts in which each contain an operation of the same name an exception is thrown. For example, if you have a service that exposes a service contract called ICarService that has an operation Get(Car c) and the same service exposes a service contract called IBookService that has an operation Get(Book b), an exception is thrown or an error message is displayed when generating the service's metadata. To work around this issue do one of the following:  

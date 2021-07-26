@@ -79,7 +79,7 @@ The following example demonstrates how to add a relative address ("MyService") t
 
 If no endpoints are specified in code or in configuration then the runtime provides default endpoints by adding one default endpoint on each base address for each service contract implemented by the service. The base address can be specified in code or in configuration, and the default endpoints are added when <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> is called on the <xref:System.ServiceModel.ServiceHost>.
 
-If endpoints are explicitly provided, the default endpoints can still be added by calling <xref:System.ServiceModel.ServiceHostBase.AddDefaultEndpoints%2A> on the <xref:System.ServiceModel.ServiceHost> before calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](simplified-configuration.md) and [Simplified Configuration for WCF Services](/previous-versions/dotnet/framework/wcf/samples/simplified-configuration-for-wcf-services).
+If endpoints are explicitly provided, the default endpoints can still be added by calling <xref:System.ServiceModel.ServiceHostBase.AddDefaultEndpoints%2A> on the <xref:System.ServiceModel.ServiceHost> before calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](simplified-configuration.md) and [Simplified Configuration for WCF Services](./samples/simplified-configuration-for-wcf-services.md).
 
 ## See also
 

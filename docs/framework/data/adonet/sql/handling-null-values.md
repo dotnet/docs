@@ -81,24 +81,6 @@ WHERE TerritoryID IN (1, 2, 3)
   
 > [!NOTE]
 > The `Nullable<T>` or <xref:System.Nullable> structure is not currently supported in the `DataSet`.  
-  
-### Multiple Column (Row) Assignment  
-
- `DataTable.Add`, `DataTable.LoadDataRow`, or other APIs that accept an <xref:System.Data.DataRow.ItemArray%2A> that gets mapped to a row, map 'null' to the DataColumn's default value. If an object in the array contains `DbNull.Value` or its strongly typed counterpart, the same rules as described above are applied.  
-  
- In addition, the following rules apply for an instance of `DataRow.["columnName"]` null assignments:  
-  
-1. The *default* value is `DbNull.Value` for all except the strongly typed null columns where it is the appropriate strongly typed null value.  
-  
-2. Null values are never written out during serialization to XML files (as in "xsi:nil").  
-  
-3. All non-null values, including defaults, are always written out while serializing to XML. This is unlike XSD/XML semantics where a null value (xsi:nil) is explicit and the default value is implicit (if not present in XML, a validating parser can get it from an associated XSD schema). The opposite is true for a `DataTable`: a null value is implicit and the default value is explicit.  
-  
-4. All missing column values for rows read from XML input are assigned NULL. Rows created using <xref:System.Data.DataTable.NewRow%2A> or similar methods are assigned the DataColumn's default value.  
-  
-5. The <xref:System.Data.DataRow.IsNull%2A> method returns `true` for both `DbNull.Value` and `INullable.Null`.  
-  
-## Assigning Null Values  
 
  The default value for any <xref:System.Data.SqlTypes> instance is null.  
   
@@ -120,6 +102,22 @@ isColumnNull=False, ID=123, Description=Side Mirror
 isColumnNull=True, ID=Null, Description=Null  
 ```  
   
+### Multiple Column (Row) Assignment  
+
+ `DataTable.Add`, `DataTable.LoadDataRow`, or other APIs that accept an <xref:System.Data.DataRow.ItemArray%2A> that gets mapped to a row, map 'null' to the DataColumn's default value. If an object in the array contains `DbNull.Value` or its strongly typed counterpart, the same rules as described above are applied.  
+  
+ In addition, the following rules apply for an instance of `DataRow.["columnName"]` null assignments:  
+  
+1. The *default* value is `DbNull.Value` for all except the strongly typed null columns where it is the appropriate strongly typed null value.  
+  
+2. Null values are never written out during serialization to XML files (as in "xsi:nil").  
+  
+3. All non-null values, including defaults, are always written out while serializing to XML. This is unlike XSD/XML semantics where a null value (xsi:nil) is explicit and the default value is implicit (if not present in XML, a validating parser can get it from an associated XSD schema). The opposite is true for a `DataTable`: a null value is implicit and the default value is explicit.  
+  
+4. All missing column values for rows read from XML input are assigned NULL. Rows created using <xref:System.Data.DataTable.NewRow%2A> or similar methods are assigned the DataColumn's default value.  
+  
+5. The <xref:System.Data.DataRow.IsNull%2A> method returns `true` for both `DbNull.Value` and `INullable.Null`.  
+
 ## Comparing Null Values with SqlTypes and CLR Types  
 
  When comparing null values, it is important to understand the difference between the way the `Equals` method evaluates null values in <xref:System.Data.SqlTypes> as compared with the way it works with CLR types. All of the <xref:System.Data.SqlTypes>`Equals` methods use database semantics for evaluating null values: if either or both of the values is null, the comparison yields null. On the other hand, using the CLR `Equals` method on two <xref:System.Data.SqlTypes> will yield true if both are null. This reflects the difference between using an instance method such as the CLR `String.Equals` method, and using the static/shared method, `SqlString.Equals`.  

@@ -1,0 +1,19 @@
+on: [pull_request_target]
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v4
+        env:
+          SHOULD_COMMENT: ${{ github.base_ref == 'refs/heads/live' && !(github.event.issue.user.login == 'cxwtool' || github.head_ref == 'refs/heads/main') }}
+        with:
+          script: |
+            if (process.env.SHOULD_COMMENT == 'true') {
+              github.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: 'It looks like this pull request may have been opened on the `live` branch by mistake. In general, PRs should target the `main` branch.'
+              })
+            }

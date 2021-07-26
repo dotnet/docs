@@ -18,7 +18,7 @@ This article details the settings you can use to configure .NET debugging and pr
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `DOTNET_EnableDiagnostics` | `1` - enabled<br/>`0` - disabled |
+| **Environment variable** | `COMPlus_EnableDiagnostics` or `DOTNET_EnableDiagnostics` | `1` - enabled<br/>`0` - disabled |
 
 ## Enable profiling
 
@@ -59,7 +59,7 @@ This article details the settings you can use to configure .NET debugging and pr
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `DOTNET_PerfMapEnabled` | `0` - disabled<br/>`1` - enabled |
+| **Environment variable** | `COMPlus_PerfMapEnabled` or `DOTNET_PerfMapEnabled` | `0` - disabled<br/>`1` - enabled |
 
 ## Perf log markers
 
@@ -69,7 +69,7 @@ This article details the settings you can use to configure .NET debugging and pr
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `DOTNET_PerfMapIgnoreSignal` | `0` - disabled<br/>`1` - enabled |
+| **Environment variable** | `COMPlus_PerfMapIgnoreSignal` or `DOTNET_PerfMapIgnoreSignal` | `0` - disabled<br/>`1` - enabled |
 
 > [!NOTE]
 > This setting is ignored if [DOTNET_PerfMapEnabled](#write-perf-map) is omitted or set to `0` (that is, disabled).

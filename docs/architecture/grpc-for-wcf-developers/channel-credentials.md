@@ -1,7 +1,7 @@
 ---
 title: Channel credentials - gRPC for WCF Developers
 description: How to implement and use gRPC channel credentials in ASP.NET Core 3.0.
-ms.date: 12/15/2020
+ms.date: 06/28/2021
 ---
 
 # Channel credentials
@@ -92,6 +92,10 @@ public class Startup
 
 With the `Grpc.Net.Client` package, you configure certificates on an <xref:System.Net.Http.HttpClient> instance that is provided to the `GrpcChannel` used for the connection.
 
+### Load a client certificate from a .PFX file
+
+A certificate can be loaded from a _.pfx_ file.
+
 ```csharp
 class Program
 {
@@ -116,6 +120,49 @@ class Program
     }
 }
 ```
+
+### Load a client certificate from certificate and private key .PEM files
+
+A certificate can be loaded from a certificate and private key _.pem_ file.
+
+```csharp
+class Program
+{
+    static async Task Main(string[] args)
+    {
+        // Assume path to a certificate and private key .pem files are passed from command line
+        string certificatePem = File.ReadAllText(args[0]);
+        string privateKeyPem = File.ReadAllText(args[1]);
+        var cert = X509Certificate2.CreateFromPem(certificatePem, privateKeyPem);
+
+        var handler = new HttpClientHandler();
+        handler.ClientCertificates.Add(cert);
+        using HttpClient httpClient = new(handler);
+
+        var channel = GrpcChannel.ForAddress("https://localhost:5001/", new GrpcChannelOptions
+        {
+            HttpClient = httpClient
+        });
+
+        var grpc = new Greeter.GreeterClient(channel);
+        var response = await grpc.SayHelloAsync(new HelloRequest { Name = "Bob" });
+        System.Console.WriteLine(response.Message);
+    }
+}
+```
+
+> [!NOTE]
+> Due to an internal Windows bug as [documented here](https://github.com/dotnet/runtime/issues/23749#issuecomment-388231655), you'll need to apply the following workaround if the certificate is created from a certificate and private key PEM data.
+>
+> ```csharp
+> X509Certificate2 cert = X509Certificate2.CreateFromPem(certificatePem, rsaPrivateKeyPem);
+> if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+> {
+>     var originalCert = cert;
+>     cert = new X509Certificate2(cert.Export(X509ContentType.Pkcs12));
+>     originalCert.Dispose();
+> }
+> ```
 
 ## Combine ChannelCredentials and CallCredentials
 

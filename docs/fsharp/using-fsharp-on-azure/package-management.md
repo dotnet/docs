@@ -23,7 +23,7 @@ Or, if you're using [Mono](https://www.mono-project.com/) for cross-platform .NE
 > mono paket.exe add nuget Azure.Storage.Blobs
 ```
 
-This will add `WAzure.Storage.Blobs` to your set of package dependencies for the project in the current directory, modify the `paket.dependencies` file, and download the package. If you have previously set up dependencies, or are working with a project where dependencies have been set up by another developer, you can resolve and install dependencies locally like this:
+This will add `Azure.Storage.Blobs` to your set of package dependencies for the project in the current directory, modify the `paket.dependencies` file, and download the package. If you have previously set up dependencies, or are working with a project where dependencies have been set up by another developer, you can resolve and install dependencies locally like this:
 
 ```console
 > paket install

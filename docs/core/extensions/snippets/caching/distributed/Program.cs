@@ -76,6 +76,20 @@ await IterateAlphabetAsync(async letter =>
     }
 });
 
+await IterateAlphabetAsync(async letter =>
+{
+    await cache.RefreshAsync(letter.ToString());
+
+    Console.WriteLine($"{letter} was refreshed in the cache.");
+});
+
+await IterateAlphabetAsync(async letter =>
+{
+    await cache.RemoveAsync(letter.ToString());
+
+    Console.WriteLine($"{letter} was removed from the cache.");
+});
+
 await host.RunAsync();
 
 record AlphabetLetter(char Letter)

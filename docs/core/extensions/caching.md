@@ -3,7 +3,7 @@ title: Caching in .NET
 description: Learn how to use various in-memory and distributed caching mechanisms in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/23/2021
+ms.date: 07/26/2021
 ---
 
 # Caching in .NET
@@ -245,9 +245,65 @@ In the preceding C# code, the decorator pattern is used to wrap an instance of t
 
 ## Distributed caching
 
-In some scenarios, a distributed cache is required. A distributed cache can support higher scale-out than an in-memory cache. Using a distributed cache offloads the cache memory to an external process.
+In some scenarios, a distributed cache is required &mdash; such is the case with multiple app servers. A distributed cache supports higher scale-out than the in-memory caching approach. Using a distributed cache offloads the cache memory to an external process, but does require extra network I/O and introduces a bit more latency (even if nominal).
 
-<!-- TODO: Add a lot more content here. -->
+The distributed caching abstractions are part of the [`Microsoft.Extensions.Caching.Memory`](/dotnet/api/microsoft.extensions.caching.memory) NuGet package, and there is even an `AddDistributedMemoryCache` extension method.
+
+> [!CAUTION]
+> The <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddDistributedMemoryCache%2A> should only be used in development and/or testing scenarios, and is **not** a viable production implementation.
+
+Consider any of the available implementations of the `IDistributedCache` from the following packages:
+
+- [`Microsoft.Extensions.Caching.SqlServer`](https://www.nuget.org/packages/Microsoft.Extensions.Caching.SqlServer)
+- [`Microsoft.Extensions.Caching.StackExchangeRedis`](https://www.nuget.org/packages/Microsoft.Extensions.Caching.StackExchangeRedis)
+- [`NCache.Microsoft.Extensions.Caching.OpenSource`](https://www.nuget.org/packages/NCache.Microsoft.Extensions.Caching.OpenSource)
+
+### Distributed caching API
+
+The distributed caching APIs are a bit more primitive than their in-memory caching API counterparts. The key-value pairs are a bit more basic. In-memory caching keys are based on an `object`, whereas the distributed keys are a `string`. With in-memory caching, the value can be any strongly-typed generic, whereas values in distributed caching are persisted as `byte[]`. That's not to say that various implementations don't expose strongly-typed generic values but that would be an implementation detail.
+
+#### Create values
+
+To create values in the distributed cache, call one of the set APIs:
+
+- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.SetAsync%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Set%2A?displayProperty=nameWithType>
+
+Using the `AlphabetLetter` record from the in-memory cache example, you could serialize the object to JSON and then encode the `string` as a `byte[]`:
+
+:::code source="snippets/caching/distributed/Program.cs" range="41-51" highlight="7-9":::
+
+Much like in-memory caching, cache entries can have options to help fine tune their existence in the cache &mdash; in this case, the <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions>.
+
+#### Read values
+
+To read values from the distributed cache, call one of the get APIs:
+
+- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.GetAsync%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Get%2A?displayProperty=nameWithType>
+
+:::code source="snippets/caching/distributed/Program.cs" range="61-67" highlight="4-5":::
+
+Once a cache entry is read out of the cache, you can get the UTF8 encoded `string` representation from the `byte[]`
+
+#### Update values
+
+There is no way to actually update the values in the distributed cache with a single API call, instead values can have their sliding expirations reset with one of the refresh APIs:
+
+- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.RefreshAsync%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Refresh%2A?displayProperty=nameWithType>
+
+If the actual value needs to be updated, you'd have to delete the value and then re-add it.
+
+#### Delete values
+
+To delete values in the distributed cache, call one of the remove APIs:
+
+- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.RemoveAsync%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Remove%2A?displayProperty=nameWithType>
+
+> [!TIP]
+> While there are synchronous versions of the aforementioned APIs, please consider the fact that implementations of distributed caches are reliant on network I/O. For this reason, it is preferred more often than not to use the asynchronous APIs.
 
 ## See also
 

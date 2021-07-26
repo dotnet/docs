@@ -150,7 +150,7 @@ The following table describes symbols related to quotations.
 |`%`|[Code Quotations](../code-quotations.md)|<ul><li>Used for splicing expressions into typed code quotations.<br /></li></ul>|
 |`%%`|[Code Quotations](../code-quotations.md)|<ul><li>Used for splicing expressions into untyped code quotations.<br /></li></ul>|
 
-## Additional symbols used in expressions 
+## Additional symbols used in expressions
 
 The following table describes additional symbols used in expressions
 

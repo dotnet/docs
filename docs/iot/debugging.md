@@ -45,9 +45,9 @@ The new configuration in *launch.json* should look similar to one of the followi
         "name": ".NET Remote Launch - Self-contained",
         "type": "coreclr",
         "request": "launch",
-        "program": "debug.pi",
+        "program": "~/sample/sample",
         "args": [],
-        "cwd": "~/debug.pi",
+        "cwd": "~/sample",
         "stopAtEntry": false,
         "console": "internalConsole",
         "pipeTransport": {

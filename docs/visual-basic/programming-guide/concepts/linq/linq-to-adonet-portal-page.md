@@ -1,10 +1,11 @@
 ---
 description: "Learn more about: LINQ to ADO.NET (Portal Page)"
-title: "LINQ to ADO.NET (Portal Page)"
+title: "LINQ to ADO.NET (Visual Basic)"
+titleSuffix: ""
 ms.date: 07/20/2015
 ms.assetid: bbbd7c76-2981-4b91-b8d2-437547181f52
 ---
-# LINQ to ADO.NET (Portal Page)
+# LINQ to ADO.NET (Visual Basic)
 
 LINQ to ADO.NET enables you to query over any enumerable object in ADO.NET by using the Language-Integrated Query (LINQ) programming model.  
   

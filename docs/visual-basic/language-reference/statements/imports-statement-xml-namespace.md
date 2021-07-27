@@ -43,7 +43,7 @@ Global XML namespaces follow the same scoping and definition rules as .NET Frame
 
 Each source file can contain any number of `Imports` statements. These must follow option declarations, such as the `Option Strict` statement, and they must precede programming element declarations, such as `Module` or `Class` statements.
 
-## Example
+## Example 1
 
 The following example imports a default XML namespace and an XML namespace identified with the prefix `ns`. It then creates XML literals that use both namespaces.
 
@@ -60,7 +60,7 @@ This code displays the following text:
 </ns:outer>
 ```
 
-## Example
+## Example 2
 
 The following example imports the XML namespace prefix `ns`. It then creates an XML literal that uses the namespace prefix and displays the element's final form.
 
@@ -79,7 +79,7 @@ This code displays the following text:
 
 Notice that the compiler converted the XML namespace prefix from a global prefix to a local prefix definition.
 
-## Example
+## Example 3
 
 The following example imports the XML namespace prefix `ns`. It then uses the prefix of the namespace to create an XML literal and access the first child node with the qualified name `ns:name`.
 

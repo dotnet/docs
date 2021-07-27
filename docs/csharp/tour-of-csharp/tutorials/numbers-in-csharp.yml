@@ -249,8 +249,6 @@ items:
     Console.WriteLine(c / d);
     ```
 
-    The `M` suffix on the numbers is how you indicate that a constant should use the
-    `decimal` type.
 
     Notice that the math using the decimal type has more digits to the right
     of the decimal point.

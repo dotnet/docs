@@ -36,7 +36,7 @@ The `Optional` modifier can be used in these contexts:
 > [!NOTE]
 > You can also define a procedure with optional parameters by using overloading. If you have one optional parameter, you can define two overloaded versions of the procedure, one that accepts the parameter and one that doesn’t. For more information, see [Procedure Overloading](../../programming-guide/language-features/procedures/procedure-overloading.md).
 
-## Example
+## Example 1
 
 The following example defines a procedure that has an optional parameter.
 
@@ -59,7 +59,7 @@ Public Function FindMatches(ByRef values As List(Of String),
 End Function
 ```
 
-## Example
+## Example 2
 
 The following example demonstrates how to call a procedure with arguments passed by position and with arguments passed by name. The procedure has two optional parameters.
 

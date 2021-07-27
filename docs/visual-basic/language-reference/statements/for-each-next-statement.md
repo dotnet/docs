@@ -161,13 +161,13 @@ The previous example can modify the `BackColor` member of each `thisControl` ele
 
 **Traversing Arrays.** Because the <xref:System.Array> class implements the <xref:System.Collections.IEnumerable> interface, all arrays expose the <xref:System.Array.GetEnumerator%2A> method. This means that you can iterate through an array with a `For Each`...`Next` loop. However, you can only read the array elements. You cannot change them.
 
-## Example
+## Example 1
 
 The following example lists all the folders in the C:\ directory by using the <xref:System.IO.DirectoryInfo> class.
 
 :::code language="vb" source="./snippets/for-each-next-statement/vb/Examples.vb" id="foreachdir":::
 
-## Example
+## Example 2
 
 The following example illustrates a procedure for sorting a collection. The example sorts instances of a `Car` class that are stored in a <xref:System.Collections.Generic.List%601>. The `Car` class implements the <xref:System.IComparable%601> interface, which requires that the <xref:System.IComparable%601.CompareTo%2A> method be implemented.
 

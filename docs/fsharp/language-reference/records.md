@@ -1,9 +1,10 @@
 ---
-title: Records
+title: Records in F#
+titleSuffix: ""
 description: Learn how F# records represent simple aggregates of named values, optionally with members.
 ms.date: 08/15/2020
 ---
-# Records
+# Records (F#)
 
 Records represent simple aggregates of named values, optionally with members. They can either be structs or reference types.  They are reference types by default.
 

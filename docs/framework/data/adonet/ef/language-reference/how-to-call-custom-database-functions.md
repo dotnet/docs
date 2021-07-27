@@ -29,7 +29,7 @@ The procedure below provides a high-level outline for calling a custom database 
 
 4. Call the method in a LINQ to Entities query.  
 
-## Example
+## Example 1
 
 The following example demonstrates how to call a custom database function from within a LINQ to Entities query. The example uses the School model. For information about the School model, see [Creating the School Sample Database](/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)) and [Generating the School .edmx File](/previous-versions/dotnet/netframework-4.0/bb399739(v=vs.100)).
 
@@ -40,20 +40,20 @@ The following code adds the `AvgStudentGrade` function to the School sample data
 
 [!code-sql[DP L2E MapToDBFunction#1](~/samples/snippets/tsql/VS_Snippets_Data/dp l2e maptodbfunction/tsql/create_avgstudentgrade.sql#1)]
 
-## Example
+## Example 2
 
 Next, declare a function in the store schema definition language (SSDL) of your *.edmx* file. The following code declares the `AvgStudentGrade` function in SSDL:
 
 [!code-xml[DP L2E MapToDBFunction#2](~/samples/snippets/csharp/VS_Snippets_Data/dp l2e maptodbfunction/cs/school.edmx#2)]
 
-## Example
+## Example 3
 
 Now, create a method and map it to the function declared in the SSDL. The method in the following class is mapped to the function defined in the SSDL (above) by using an <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute>. When this method is called, the corresponding function in the database is executed.
 
 [!code-csharp[DP L2E MapToDBFunction#3](~/samples/snippets/csharp/VS_Snippets_Data/dp l2e maptodbfunction/cs/program.cs#3)]
 [!code-vb[DP L2E MapToDBFunction#3](~/samples/snippets/visualbasic/VS_Snippets_Data/dp l2e maptodbfunction/vb/module1.vb#3)]
 
-## Example
+## Example 4
 
 Finally, call the method in a LINQ to Entities query. The following code displays students' last names and average grades to the console:
 

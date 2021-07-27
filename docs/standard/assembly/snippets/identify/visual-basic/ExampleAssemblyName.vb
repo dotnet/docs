@@ -2,12 +2,13 @@
 Imports System
 Imports System.IO
 Imports System.Reflection
+Imports System.Runtime.InteropServices
 
 Module ExampleAssemblyName
     Sub CheckAssembly()
         Try
             Dim filePath As String = Path.Combine(
-                System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory(),
+                RuntimeEnvironment.GetRuntimeDirectory(),
                 "System.Net.dll")
 
             Dim testAssembly As AssemblyName =

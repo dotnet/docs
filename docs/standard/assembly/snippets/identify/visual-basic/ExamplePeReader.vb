@@ -4,6 +4,7 @@ Imports System.Collections.Generic
 Imports System.IO
 Imports System.Reflection.Metadata
 Imports System.Reflection.PortableExecutable
+Imports System.Runtime.InteropServices
 
 Module ExamplePeReader
     Function IsAssembly(path As String) As Boolean
@@ -25,7 +26,7 @@ Module ExamplePeReader
 
     Sub CheckAssembly()
         Dim filePath As String = Path.Combine(
-                System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory(),
+                RuntimeEnvironment.GetRuntimeDirectory(),
                 "System.Net.dll")
 
         Try

@@ -38,15 +38,15 @@ System.TypeInitializationException : The type initializer for 'Gdip' threw an ex
 
 ## Type of breaking change
 
-Breaks source compatibility.
+This change breaks source compatibility.
 
 ## Reason for change
 
 Because `System.Drawing.Common` was designed to be a thin wrapper over Windows technologies, its cross-platform implementation is subpar.
 
-`libgdiplus` is the main provider of the cross-platform implementation of `System.Drawing.Common` on the native side. `libgdiplus` is effectively a reimplementation of the parts of Windows that `System.Drawing.Common` depends on. That implementation makes `libgdiplus` a non-trivial component. It's around 30,000 lines of C code, virtually untested, and lacks a lot of functionality. `libgdiplus` also has numerous external dependencies for image processing and text rendering, such as `cairo`, `pango`, and other native libraries. Those dependencies make maintaining and shipping it even more challenging. Since the inclusion of the Mono cross-platform implementation, we have redirected numerous issues to `libgdiplus` that never got fixed. In comparison, other external dependencies we have taken, such as `icu` or `openssl`, are high-quality libraries. It's not viable to get `libgdiplus` to the point where its feature set and quality is on par with the rest of the .NET stack.
+`libgdiplus` is the main provider of the cross-platform implementation of `System.Drawing.Common` on the native side. `libgdiplus` is effectively a reimplementation of the parts of Windows that `System.Drawing.Common` depends on. That implementation makes `libgdiplus` a non-trivial component. It's around 30,000 lines of C code that's largely untested, and it lacks a lot of functionality. `libgdiplus` also has numerous external dependencies for image processing and text rendering, such as `cairo`, `pango`, and other native libraries. Those dependencies make maintaining and shipping the component even more challenging. Since the inclusion of the Mono cross-platform implementation, we have redirected numerous issues to `libgdiplus` that never got fixed. In comparison, other external dependencies we have taken, such as `icu` or `openssl`, are high-quality libraries. It's not viable to get `libgdiplus` to the point where its feature set and quality is on par with the rest of the .NET stack.
 
-From analysis of NuGet packages, we've observed that `System.Drawing.Common` is used cross-platform mostly for image manipulation like QR code generators and text rendering. We haven't noticed heavy graphics usage, as our cross-platform graphics support is incomplete. The usages we see of `System.Drawing.Common` in non-Windows environments are typically well supported with SkiaSharp and ImageSharp.
+From analysis of NuGet packages, we've observed that `System.Drawing.Common` is used cross-platform mostly for image manipulation, such as QR code generators and text rendering. We haven't noticed heavy graphics usage, as our cross-platform graphics support is incomplete. The usages we see of `System.Drawing.Common` in non-Windows environments are typically well supported with SkiaSharp and ImageSharp.
 
 `System.Drawing.Common` will continue to evolve only in the context of Windows Forms and GDI+.
 
@@ -58,9 +58,7 @@ To use these APIs for cross-platform apps, migrate to one of the following libra
 - [SkiaSharp](https://github.com/mono/SkiaSharp)
 - [Microsoft.Maui.Graphics](https://github.com/dotnet/Microsoft.Maui.Graphics)
 
-Alternatively, you can enable Unix support by setting the `System.Drawing.EnableUnixSupport` run-time configuration switch to `true`.
-
-In the *runtimeconfig.json* file:
+Alternatively, you can enable Unix support by setting the `System.Drawing.EnableUnixSupport` run-time configuration switch to `true` in the *runtimeconfig.json* file:
 
 ```json
 {
@@ -105,14 +103,14 @@ This configuration switch was added to give cross-platform apps that depend heav
 <xref:System.Drawing.Drawing2D?displayProperty=fullName> namespace:
 
 - <xref:System.Drawing.Drawing2D.AdjustableArrowCap>
-- <xref:System.Drawing.Drawing2D.>
-- <xref:System.Drawing.Drawing2D.>
-- <xref:System.Drawing.Drawing2D.>
-- <xref:System.Drawing.Drawing2D.>
-- <xref:System.Drawing.Drawing2D.>
-- <xref:System.Drawing.Drawing2D.>
-- <xref:System.Drawing.Drawing2D.>
-- <xref:System.Drawing.Drawing2D.>
+- <xref:System.Drawing.Drawing2D.CustomLineCap>
+- <xref:System.Drawing.Drawing2D.GraphicsPath>
+- <xref:System.Drawing.Drawing2D.GraphicsPathIterator>
+- <xref:System.Drawing.Drawing2D.GraphicsState>
+- <xref:System.Drawing.Drawing2D.HatchBrush>
+- <xref:System.Drawing.Drawing2D.LinearGradientBrush>
+- <xref:System.Drawing.Drawing2D.Matrix>
+- <xref:System.Drawing.Drawing2D.PathGradientBrush>
 
 <xref:System.Drawing.Imaging?displayProperty=fullName> namespace:
 

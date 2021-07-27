@@ -1,5 +1,5 @@
 ---
-title: Generate Data from VoTT
+title: Label images for object detection
 description: How to use VoTT to generate data for object detection in Model Builder
 ms.date: 07/25/2021
 author: luisquintanilla

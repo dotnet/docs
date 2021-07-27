@@ -176,7 +176,7 @@ The following algorithm is used for each provider when an `ILogger` is created f
 
 ## Log category
 
-When an `ILogger` object is created, a *category* is specified. That category is included with each log message created by that instance of `ILogger`. The category string is arbitrary, but the convention is to use the class name. For example, in an application with a service define like the following object, the category might be `"Example.DefaultService"`:
+When an `ILogger` object is created, a *category* is specified. That category is included with each log message created by that instance of `ILogger`. The category string is arbitrary, but the convention is to use the class name. For example, in an application with a service defined like the following object, the category might be `"Example.DefaultService"`:
 
 ```csharp
 namespace Example
@@ -280,7 +280,7 @@ The following JSON sets `Logging:Console:LogLevel:Microsoft:Information`:
 
 ## Log event ID
 
-Each log can specify an *event identifer*, the <xref:Microsoft.Extensions.Logging.EventId> is a structure with an `Id` and optional `Name` readonly properties. The sample source code uses the `AppLogEvents` class to define event IDs:
+Each log can specify an *event identifier*, the <xref:Microsoft.Extensions.Logging.EventId> is a structure with an `Id` and optional `Name` readonly properties. The sample source code uses the `AppLogEvents` class to define event IDs:
 
 ```csharp
 internal static class AppLogEvents

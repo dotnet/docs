@@ -138,20 +138,25 @@ A hosted service process can be stopped in the following ways:
 
 1. If someone doesn't call <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run%2A> or <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.WaitForShutdown%2A?displayProperty=nameWithType> and the app exits normally with `Main` completing.
 1. If the app crashes.
-1. If the app is forcefully shut down, SIGKILL (or <kbd>CTRL</kbd>+<kbd>Z</kbd>).
+1. If the app is forcefully shut down, [SIGKILL][sigkill] (or <kbd>CTRL</kbd>+<kbd>Z</kbd>).
 
 All of these scenarios aren't handled directly by the hosting code. The owner of the process needs to deal with
 them the same as any application. There are several additional ways in which a hosted service process can be stopped:
 
 1. If `ConsoleLifetime` is used it listens for the following signals, and attempts to stop the host gracefully.
-    1. SIGINT (or <kbd>CTRL</kbd>+<kbd>C</kbd>).
-    1. SIGQUIT (or <kbd>CTRL</kbd>+<kbd>BREAK</kbd> on Windows, <kbd>CTRL</kbd>+<kbd>\\</kbd> on Unix).
-    1. SIGTERM (sent by other apps, such as `docker stop`).
+    1. [SIGINT][sigint] (or <kbd>CTRL</kbd>+<kbd>C</kbd>).
+    1. [SIGQUIT][sigquit](or <kbd>CTRL</kbd>+<kbd>BREAK</kbd> on Windows, <kbd>CTRL</kbd>+<kbd>\\</kbd> on Unix).
+    1. [SIGTERM][sigterm] (sent by other apps, such as `docker stop`).
 1. If the app calls <xref:System.Environment.Exit%2A?displayProperty=nameWithType>.
 
 These scenarios are handled by the built-in hosting logic. Specifically by the `ConsoleLifetime`
 class. `ConsoleLifetime` tries to handle the "shutdown" signals, SIGINT, SIGQUIT, and SIGTERM to allow for a graceful exit to the
 application.
+
+[sigkill]: https://en.wikipedia.org/wiki/Signal_(IPC)#SIGKILL
+[sigint]: https://en.wikipedia.org/wiki/Signal_(IPC)#SIGINT
+[sigquit]: https://en.wikipedia.org/wiki/Signal_(IPC)#SIGQUIT
+[sigterm]: https://en.wikipedia.org/wiki/Signal_(IPC)#SIGTERM
 
 Before .NET 6, there wasn't a way for .NET code to gracefully handle SIGTERM. To work around this limitation,
 `ConsoleLifetime` would subscribe to <xref:System.AppDomain.ProcessExit?displayProperty=fullName>. When `ProcessExit` was raised,

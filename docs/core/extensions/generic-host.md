@@ -3,7 +3,7 @@ title: .NET Generic Host
 author: IEvangelist
 description: Learn about the .NET Generic Host, which is responsible for app startup and lifetime management.
 ms.author: dapine
-ms.date: 07/26/2021
+ms.date: 07/27/2021
 ---
 
 # .NET Generic Host
@@ -141,7 +141,7 @@ For more information, see [Configuration in .NET](configuration.md).
 
 A hosted service process can be stopped in the following ways:
 
-1. If someone doesn't call `Run` or `WaitForShutdown` and the app exits normally with `Main` completing.
+1. If someone doesn't call <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run%2A> or <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.WaitForShutdown%2A?displayProperty=nameWithType> and the app exits normally with `Main` completing.
 1. If the app crashes.
 1. If the app is forcefully shut down, SIGKILL (or <kbd>CTRL</kbd>+<kbd>Z</kbd>).
 
@@ -161,23 +161,26 @@ application.
 Before .NET 6, there wasn't a way for .NET code to gracefully handle SIGTERM. To work around this limitation,
 `ConsoleLifetime` would subscribe to <xref:System.AppDomain.ProcessExit?displayProperty=fullName>. When `ProcessExit` was raised,
 `ConsoleLifetime` would signal the host to stop, and block the `ProcessExit` thread, waiting for the host to stop.
-This would allow for the clean up code in the application to run &mdash; for example, <xref:Microsoft.Extensions.Hosting.IHost.StopAsync%2A?displayProperty=nameWithType> and code after [`Host.Run`](xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run%2A) in the `Main` method.
+This would allow for the clean up code in the application to run &mdash; for example, <xref:Microsoft.Extensions.Hosting.IHost.StopAsync%2A?displayProperty=nameWithType> and code after <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run%2A?displayProperty=nameWithType> in the `Main` method.
 
 This caused other issues because SIGTERM wasn't the only way `ProcessExit` was raised. It is also raised by code
 in the application calling `Environment.Exit`. `Environment.Exit` isn't a graceful way of shutting down a process
 in the `Microsoft.Extensions.Hosting` app model. It raises the `ProcessExit` event and then exits the process. The end of the
 `Main` method doesn't get executed. Background and foreground threads are terminated, and `finally` blocks are *not* executed.
 
-Since `ConsoleLifetime` blocked `ProcessExit` waiting for the host to shutdown, this behavior lead to [deadlocks][deadlocks]
+Since `ConsoleLifetime` blocked `ProcessExit` waiting for the host to shutdown, this behavior led to [deadlocks][deadlocks]
 from `Environment.Exit` also blocking waiting for `ProcessExit` to return. Additionally, since the SIGTERM handling was attempting
 to gracefully shut down the process, `ConsoleLifetime` would set the <xref:System.Environment.ExitCode> to `0`, which [clobbered][clobbered] the user's exit code passed to `Environment.Exit`.
 
 [deadlocks]: https://github.com/dotnet/runtime/issues/50397
 [clobbered]: https://github.com/dotnet/runtime/issues/42224
 
-In .NET 6, [POSIX signals][POSIX signals] are supported and handled. This allows for `ConsoleLifetime` to handle SIGTERM gracefully, and no longer get involved when `Environment.Exit` is invoked. For .NET 6+, `ConsoleLifetime` no longer has logic to handle scenario `Environment.Exit`. Apps that call `Environment.Exit`, and need to do clean up logic, can subscribe to `ProcessExit` themselves. Hosting will no longer attempt to gracefully stop the host in this scenario.
+In .NET 6, [POSIX signals][POSIX signals] are supported and handled. This allows for `ConsoleLifetime` to handle SIGTERM gracefully, and no longer get involved when `Environment.Exit` is invoked.
 
 [POSIX signals]: https://github.com/dotnet/runtime/issues/50527
+
+> [!TIP]
+> For .NET 6+, `ConsoleLifetime` no longer has logic to handle scenario `Environment.Exit`. Apps that call `Environment.Exit`, and need to do clean up logic, can subscribe to `ProcessExit` themselves. Hosting will no longer attempt to gracefully stop the host in this scenario.
 
 If your application uses hosting, and you want to gracefully stop the host, you can call
 <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.StopApplication%2A?displayProperty=nameWithType> instead of `Environment.Exit`.
@@ -203,6 +206,9 @@ to exit gracefully.
 
 ## See also
 
+- [Dependency injection in .NET](dependency-injection.md)
+- [Logging in .NET](logging.md)
 - [Configuration in .NET](configuration.md)
+- [Worker Services in .NET](workers.md)
 - [ASP.NET Core Web Host](/aspnet/core/fundamentals/host/web-host)
 - Generic host bugs should be created in the [github.com/dotnet/extensions](https://github.com/dotnet/extensions/issues) repo

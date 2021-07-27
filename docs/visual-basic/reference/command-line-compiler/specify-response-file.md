@@ -40,7 +40,7 @@ Visual Basic provides the Vbc.rsp file, which is located in the same directory a
 > [!NOTE]
 > The `@` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.
 
-## Example
+## Example 1
 
 The following lines are from a sample response file.
 
@@ -52,7 +52,7 @@ source1.vb
 source2.vb
 ```
 
-## Example
+## Example 2
 
 The following example demonstrates how to use the `@` option with the response file named `File1.rsp`.
 

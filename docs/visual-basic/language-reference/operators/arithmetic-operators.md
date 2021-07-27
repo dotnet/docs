@@ -1,6 +1,7 @@
 ---
 description: "Learn more about: Arithmetic Operators (Visual Basic)"
-title: "Arithmetic Operators"
+title: "Arithmetic Operators in Visual Basic"
+titleSuffix: ""
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "operators [Visual Basic], arithmetic"

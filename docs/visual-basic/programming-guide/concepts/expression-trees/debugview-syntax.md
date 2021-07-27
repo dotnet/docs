@@ -10,7 +10,7 @@ helpviewer_keywords:
 - "debugview"
 ---
 
-# **DebugView** syntax
+# DebugView syntax (expression trees)
 
 The **DebugView** property (available only when debugging) provides a string rendering of expression trees. Most of the syntax is fairly straightforward to understand; the special cases are described in the following sections.
 

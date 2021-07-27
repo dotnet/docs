@@ -43,7 +43,11 @@ The default date and time formatting methods, such as <xref:System.DateTime.ToSt
  [!code-vb[Formatting.HowTo.Millisecond#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.Millisecond/vb/Millisecond.vb#3)]  
   
 > [!NOTE]
-> It is possible to display very small fractional units of a second, such as ten thousandths of a second or hundred-thousandths of a second. However, these values may not be meaningful. The precision of date and time values depends on the resolution of the system clock. On Windows NT 3.5 and later, and Windows Vista operating systems, the clock's resolution is approximately 10-15 milliseconds.  
+> It is possible to display very small fractional units of a second, such as ten thousandths of a second or hundred-thousandths of a second. However, these values may not be meaningful. The precision of a date and time value depends on the resolution of the operating system clock. For more information, see the API your operating system uses:
+>
+> - Windows 7: [GetSystemTimeAsFileTime](https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-GetSystemTimeAsFileTime)
+> - Windows 8 and above: [GetSystemTimePreciseAsFileTime](https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemtimepreciseasfiletime)
+> - Linux and macOS: [clock_gettime](https://linux.die.net/man/3/clock_gettime)
   
 ## See also
 

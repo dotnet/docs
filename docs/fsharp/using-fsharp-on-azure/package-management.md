@@ -22,6 +22,7 @@ Or, if you're using [.Net Core](https://fsprojects.github.io/Paket/get-started.h
 1. Install .NET Core 3.0 or higher, If you don't have it already, you'll need to [download and install the latest .NET Core](https://dotnet.microsoft.com/download).
 
 2. Install and restore Paket as a local tool in the root of your codebase:
+
 ```.NET CLI
 > dotnet new tool-manifest
 > dotnet tool install paket
@@ -29,11 +30,13 @@ Or, if you're using [.Net Core](https://fsprojects.github.io/Paket/get-started.h
 ```
 
 3. Initialize Paket by creating a dependencies file:
+
 ```.NET CLI
 > dotnet paket init
 ```
 
 4. Make the dependencies file look like this to continue:
+
 ```paket.dependencies
 source https://api.nuget.org/v3/index.json
 

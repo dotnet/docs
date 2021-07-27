@@ -4,12 +4,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection.Metadata;
 using System.Reflection.PortableExecutable;
+using System.Runtime.InteropServices;
 
 static class ExamplePeReader
 {
     static bool IsAssembly(string path)
     {
-        var fs = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+        using var fs = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
 
         // Try to read CLI metadata from the PE file.
         using var peReader = new PEReader(fs);
@@ -26,8 +27,8 @@ static class ExamplePeReader
 
     public static void CheckAssembly()
     {
-        string path = System.IO.Path.Combine(
-                System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory(),
+        string path = Path.Combine(
+                RuntimeEnvironment.GetRuntimeDirectory(),
                 "System.Net.dll");
 
         try

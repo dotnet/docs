@@ -2,6 +2,7 @@
 using System;
 using System.IO;
 using System.Reflection;
+using System.Runtime.InteropServices;
 
 static class ExampleAssemblyName
 {
@@ -10,7 +11,7 @@ static class ExampleAssemblyName
         try
         {
             string path = Path.Combine(
-                System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory(),
+                RuntimeEnvironment.GetRuntimeDirectory(),
                 "System.Net.dll");
 
             AssemblyName testAssembly = AssemblyName.GetAssemblyName(path);

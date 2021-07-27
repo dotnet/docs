@@ -17,10 +17,27 @@ If you're using [Paket](https://fsprojects.github.io/Paket/) as your dependency 
 > paket add nuget Azure.Storage.Blobs
 ```
 
-Or, if you're using [Mono](https://www.mono-project.com/) for cross-platform .NET development:
+Or, if you're using [.Net Core](https://fsprojects.github.io/Paket/get-started.html#NET-Core-preferred) for cross-platform .NET development:
 
-```console
-> mono paket.exe add nuget Azure.Storage.Blobs
+1. Install .NET Core 3.0 or higher, If you don't have it already, you'll need to [download and install the latest .NET Core](https://dotnet.microsoft.com/download).
+
+2. Install and restore Paket as a local tool in the root of your codebase:
+```.NET CLI
+> dotnet new tool-manifest
+> dotnet tool install paket
+> dotnet tool restore
+```
+
+3. Initialize Paket by creating a dependencies file:
+```.NET CLI
+> dotnet paket init
+```
+
+4. Make the dependencies file look like this to continue:
+```paket.dependencies
+source https://api.nuget.org/v3/index.json
+
+nuget Azure.Storage.Blobs
 ```
 
 This will add `Azure.Storage.Blobs` to your set of package dependencies for the project in the current directory, modify the `paket.dependencies` file, and download the package. If you have previously set up dependencies, or are working with a project where dependencies have been set up by another developer, you can resolve and install dependencies locally like this:
@@ -29,10 +46,10 @@ This will add `Azure.Storage.Blobs` to your set of package dependencies for the 
 > paket install
 ```
 
-Or, for Mono development:
+Or, for .Net Core development:
 
-```console
-> mono paket.exe install
+```.NET CLI
+> dotnet paket install
 ```
 
 You can update all your package dependencies to the latest version like this:
@@ -41,10 +58,10 @@ You can update all your package dependencies to the latest version like this:
 > paket update
 ```
 
-Or, for Mono development:
+Or, for .Net Core development:
 
-```console
-> mono paket.exe update
+```.NET CLI
+> dotnet paket update
 ```
 
 ## Using NuGet
@@ -55,10 +72,10 @@ If you're using [NuGet](https://www.nuget.org/) as your dependency manager, you 
 > nuget install Azure.Storage.Blobs -ExcludeVersion
 ```
 
-Or, for Mono development:
+Or, for .Net Core development:
 
-```console
-> mono nuget.exe install Azure.Storage.Blobs -ExcludeVersion
+```.NET CLI
+> dotnet add package Azure.Storage.Blobs --version <VERSION>
 ```
 
 This will add `Azure.Storage.Blobs` to your set of package dependencies for the project in the current directory, and download the package. If you have previously set up dependencies, or are working with a project where dependencies have been set up by another developer, you can resolve and install dependencies locally like this:
@@ -67,10 +84,10 @@ This will add `Azure.Storage.Blobs` to your set of package dependencies for the 
 > nuget restore
 ```
 
-Or, for Mono development:
+Or, for .Net Core development:
 
-```console
-> mono nuget.exe restore
+```.NET CLI
+> dotnet restore
 ```
 
 You can update all your package dependencies to the latest version like this:
@@ -79,18 +96,16 @@ You can update all your package dependencies to the latest version like this:
 > nuget update
 ```
 
-Or, for Mono development:
+Or, for .Net Core development:
 
-```console
-> mono nuget.exe update
-```
+NuGet installs the latest version of the package when you use the `dotnet add package` command unless you specify the package version (`-v` switch).
 
 ## Referencing Assemblies
 
 In order to use your packages in your F# script, you need to reference the assemblies included in the packages using a `#r` directive. For example:
 
 ```fsharp
-> #r "packages/Azure.Storage.Blobs/lib/net40/Azure.Storage.Blobs.dll"
+> #r "packages/Azure.Storage.Blobs/lib/netstandard2.0/Azure.Storage.Blobs.dll"
 ```
 
 As you can see, you'll need to specify the relative path to the DLL and the full DLL name, which may not be exactly the same as the package name. The path will include a framework version and possibly a package version number. To find all the installed assemblies, you can use something like this on a Windows command line:

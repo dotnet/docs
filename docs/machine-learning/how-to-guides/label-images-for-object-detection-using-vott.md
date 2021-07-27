@@ -1,6 +1,6 @@
 ---
 title: Label images for object detection
-description: How to use VoTT to generate data for object detection in Model Builder
+description: How to use VoTT to label images for object detection in Model Builder
 ms.date: 07/25/2021
 author: luisquintanilla
 ms.author: luquinta
@@ -8,9 +8,9 @@ ms.custom: mvc,how-to
 #Customer intent: As a non-developer, I want to be able to tag images and use the data in Model Builder.
 ---
 
-# Generate JSON Data from VoTT
+# Label Images for Object Detection using VoTT
 
-Learn how to use VoTT (Visual Object Tagging Tool) to tag images for object detection to be used within Model Builder.
+Learn how to use VoTT (Visual Object Tagging Tool) to label images for object detection to be used within Model Builder.
 
 ## Create a new VoTT Project
 

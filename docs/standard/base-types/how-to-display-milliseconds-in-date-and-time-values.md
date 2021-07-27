@@ -44,9 +44,9 @@ The default date and time formatting methods, such as <xref:System.DateTime.ToSt
   
 > [!NOTE]
 > It is possible to display very small fractional units of a second, such as ten thousandths of a second or hundred-thousandths of a second. However, these values may not be meaningful. The precision of a date and time value depends on the resolution of the operating system clock. For more information, see the API your operating system uses:
->   - Windows 7: [GetSystemTimeAsFileTime](https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-GetSystemTimeAsFileTime)
->   - Windows 8 and above: [GetSystemTimePreciseAsFileTime](https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemtimepreciseasfiletime)
->   - Linux: [clock_gettime](https://linux.die.net/man/3/clock_gettime)
+> - Windows 7: [GetSystemTimeAsFileTime](https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-GetSystemTimeAsFileTime)
+> - Windows 8 and above: [GetSystemTimePreciseAsFileTime](https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemtimepreciseasfiletime)
+> - Linux and macOS: [clock_gettime](https://linux.die.net/man/3/clock_gettime)
   
 ## See also
 

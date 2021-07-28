@@ -32,11 +32,9 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 2. Create a directory named *Data* in your project to save your data set files.
 
-3. Install the **Microsoft.ML NuGet Package**:
+3. Install the **Microsoft.ML NuGet Package** version **1.5.2**:
 
-    [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
-
-    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML** and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.TimeSeries**.
+    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML** and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.TimeSeries** version **1.5.2**.
 
 4. Add the following `using` statements at the top of your *Program.cs* file:
 

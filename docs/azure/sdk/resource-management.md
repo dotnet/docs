@@ -55,7 +55,7 @@ To authenticate to Azure and create an `ArmClient`, do the following:
 
 ```csharp
 using Azure.Identity;
-using Azure.ResourceManager.Core;
+using Azure.ResourceManager;
 using System;
 using System.Threading.Tasks;
 

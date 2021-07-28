@@ -31,7 +31,7 @@ Install the Azure Resources management packages for .NET with [NuGet](https://ww
 For example:
 
 ```PowerShell
-Install-Package Azure.ResourceManager.Core -Version 1.0.0-beta.1
+Install-Package Azure.ResourceManager -Version 1.0.0-beta.1
 Install-Package Azure.ResourceManager.Compute -Version 1.0.0-beta.1
 Install-Package Azure.ResourceManager.Network -Version 1.0.0-beta.1
 Install-Package Azure.ResourceManager.Resources -Version 1.0.0-beta.1

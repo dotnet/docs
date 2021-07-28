@@ -20,7 +20,7 @@ Anonymous pipes provide interprocess communication on a local computer. They off
   
  To implement anonymous pipes, use the <xref:System.IO.Pipes.AnonymousPipeServerStream> and <xref:System.IO.Pipes.AnonymousPipeClientStream> classes.  
   
-## Example  
+## Example 1
 
  The following example demonstrates a way to send a string from a parent process to a child process using anonymous pipes. This example creates an <xref:System.IO.Pipes.AnonymousPipeServerStream> object in a parent process with a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection.Out>. The parent process then creates a child process by using a client handle to create an <xref:System.IO.Pipes.AnonymousPipeClientStream> object. The child process has a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection.In>.  
   
@@ -34,7 +34,7 @@ Anonymous pipes provide interprocess communication on a local computer. They off
 
 [!INCLUDE [localized code comments](../../../includes/code-comments-loc.md)]
   
-## Example  
+## Example 2  
 
  The following example shows the client process. The server process starts the client process and gives that process a client handle. The resulting executable from the client code should be named `pipeClient.exe` and be copied to the same directory as the server executable before running the server process.  
   

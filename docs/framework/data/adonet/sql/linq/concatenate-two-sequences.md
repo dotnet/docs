@@ -15,14 +15,14 @@ Use the <xref:System.Linq.Queryable.Concat%2A> operator to concatenate two seque
   
  Ordering in SQL is the final step before results are produced. For this reason, the <xref:System.Linq.Queryable.Concat%2A> operator is implemented by using `UNION ALL` and does not preserve the order of its arguments. To make sure ordering is correct in the results, make sure to explicitly order the results.  
   
-## Example  
+## Example 1
 
  This example uses <xref:System.Linq.Queryable.Concat%2A> to return a sequence of all `Customer` and `Employee` telephone and fax numbers.  
   
  [!code-csharp[DLinqQueryExamples#39](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#39)]
  [!code-vb[DLinqQueryExamples#39](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#39)]  
   
-## Example  
+## Example 2  
 
  This example uses <xref:System.Linq.Queryable.Concat%2A> to return a sequence of all `Customer` and `Employee` name and telephone number mappings.  
   

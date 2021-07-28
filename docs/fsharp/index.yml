@@ -42,10 +42,6 @@ landingContent:
         links:
           - text: "Tour of F#"
             url: tour.md
-          - text: "Introduction to Functional Programming in F#"
-            url: introduction-to-functional-programming/index.md
-          - text: "First-class functions"
-            url: introduction-to-functional-programming/first-class-functions.md
       - linkListType: concept
         links:
           - text: "F# style guide"
@@ -56,8 +52,14 @@ landingContent:
             url: style-guide/conventions.md
       - linkListType: tutorial
         links:
+          - text: "Introduction to Functional Programming in F#"
+            url: introduction-to-functional-programming/index.md
+          - text: "First-class functions"
+            url: introduction-to-functional-programming/first-class-functions.md
           - text: "Async programming in F#"
             url: tutorials/asynchronous-and-concurrent-programming/async.md
+          - text: "Type providers"
+            url: tutorials/type-providers/
 
   - title: "New features in F#"
     linkLists:

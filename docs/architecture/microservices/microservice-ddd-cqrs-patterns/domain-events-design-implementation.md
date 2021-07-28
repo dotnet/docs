@@ -99,9 +99,9 @@ public class OrderStartedDomainEvent : INotification
     public Order Order { get; }
 
     public OrderStartedDomainEvent(Order order, string userId, string userName,
-                                    int cardTypeId, string cardNumber,
-                                    string cardSecurityNumber, string cardHolderName,
-                                    DateTime cardExpiration)
+                                   int cardTypeId, string cardNumber,
+                                   string cardSecurityNumber, string cardHolderName,
+                                   DateTime cardExpiration)
     {
         Order = order;
         UserId = userId;

@@ -16,16 +16,18 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
+          - text: "What is F#?"
+            url: what-is-fsharp.md
           - text: "First steps in F#"
             url: /learn/modules/fsharp-first-steps/
           - text: "Install F#"
             url: get-started/install-fsharp.md
-          - text: "Learn F#"
-            url: https://dotnet.microsoft.com/learn/fsharp
           - text: "Get started with F# in Visual Studio"
             url: get-started/get-started-visual-studio.md
           - text: "Get started with F# in Visual Studio Code"
             url: get-started/get-started-vscode.md
+          - text: "Further learning"
+            url: https://dotnet.microsoft.com/learn/fsharp
       - linkListType: video
         links:
           - text: "Beginning F# video series"

@@ -31,7 +31,7 @@ Within a Bash console on the Raspberry Pi (either locally or via SSH), execute t
 curl -sSL https://aka.ms/getvsdbgsh | /bin/sh /dev/stdin -v latest -l ~/vsdbg
 ```
 
-### Setup launch.json in Visual Studio Code
+### Set up launch.json in Visual Studio Code
 
 On the development computer, add a launch configuration to the project's *launch.json*. If the project doesn't have a *launch.json* file, add one by switching to the **Run** tab, selecting **create a launch.json file**, and selecting **.NET** or **.NET Core** in the dialog.
 
@@ -69,7 +69,7 @@ Notice the following:
 - `pipeProgram` is the path to an SSH client on the local machine.
 - `pipeArgs` are the parameters to be passed to the SSH client. Be sure to specify the password parameter, as well as the `pi` user in the format `<user>@<hostname>`.
 
-### [Framework-dependant](#tab/framework-dependent)
+### [Framework-dependent](#tab/framework-dependent)
 
 ```json
 "configurations": [
@@ -105,7 +105,7 @@ Notice the following:
 ---
 
 > [!IMPORTANT]
-> The above examples use *plink*, a component of the [PuTTY](https://www.ssh.com/ssh/putty/)<span class="docon docon-navigate-external x-hidden-focus"></span> SSH client. [OpenSSH](https://www.openssh.com/)<span class="docon docon-navigate-external x-hidden-focus"></span>, which is included in recent versions of Windows and Linux, may be used instead. However, OpenSSH doesn't support sending passwords as a command-line parameter. To use OpenSSH, [configure your Raspberry Pi for passwordless SSH access](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md).
+> The previous examples use *plink*, a component of the [PuTTY](https://www.ssh.com/ssh/putty/)<span class="docon docon-navigate-external x-hidden-focus"></span> SSH client. [OpenSSH](https://www.openssh.com/)<span class="docon docon-navigate-external x-hidden-focus"></span>, which is included in recent versions of Windows and Linux, may be used instead. However, OpenSSH doesn't support sending passwords as a command-line parameter. To use OpenSSH, [configure your Raspberry Pi for passwordless SSH access](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md).
 
 ### Deploy the app
 
@@ -115,7 +115,7 @@ Deploy the app as described in [Deploy .NET apps to Raspberry Pi](deployment.md)
 
 On the **Run** tab, select the **.NET Core Launch (remote console)** configuration and select **Start Debugging**. The app launches on the Raspberry Pi. The debugger may be used to set breakpoints, inspect locals, and more.
 
-## References
+### References
 
 [Remote Debugging on Linux ARM](https://github.com/OmniSharp/omnisharp-vscode/wiki/Remote-Debugging-On-Linux-Arm) (OmniSharp documentation)
 

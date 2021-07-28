@@ -1,10 +1,10 @@
 ---
-title: Summary
+title: Summary - Architecting cloud-native .NET apps for Azure
 description: A summary of key conclusions from the Architecting Cloud-Native .NET Apps for Azure guide/e-book.
 ms.date: 05/13/2020
 ---
 
-# Summary
+# Summary: Architecting cloud-native apps
 
 In summary, here are important conclusions from this guide:
 

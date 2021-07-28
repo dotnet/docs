@@ -9,15 +9,17 @@ metadata:
   ms.topic: landing-page # Required
   author: cartermp
   ms.author: phcart
-  ms.date: 08/29/2020
+  ms.date: 07/28/2021
 
 landingContent:
   - title: "Learn to program in F#"
     linkLists:
       - linkListType: get-started
         links:
-          - text: "What is F#?"
-            url: what-is-fsharp.md
+          - text: "Hello World tutorial"
+            url: https://dotnet.microsoft.com/learn/languages/fsharp-hello-world-tutorial
+          - text: "Learn F#"
+            url: https://dotnet.microsoft.com/learn/fsharp
           - text: "Install F#"
             url: get-started/install-fsharp.md
           - text: "Get started with F# in Visual Studio"
@@ -28,10 +30,6 @@ landingContent:
         links:
           - text: Download the .NET Core SDK
             url: https://dotnet.microsoft.com/download
-      - linkListType: get-started
-        links:
-          - text: F# on Q&A
-            url: /answers/topics/dotnet-fsharp.html
   - title: "F# fundamentals"
     linkLists:
       - linkListType: overview

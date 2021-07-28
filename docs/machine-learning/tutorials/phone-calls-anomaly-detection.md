@@ -143,7 +143,11 @@ In the first step, we invoke the `DetectSeasonality` function to determine the p
 
     [!code-csharp[DisplayPeriod](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#DisplayPeriod)]
 
-4. Add the following call to the `DetectPeriod` method in the `Main` method:
+4. Return the period value.
+
+    [!code-csharp[ReturnPeriod](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#L52)]
+
+5. Add the following call to the `DetectPeriod` method in the `Main` method:
 
     [!code-csharp[CallDetectPeriod](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#CallDetectPeriod)]
 

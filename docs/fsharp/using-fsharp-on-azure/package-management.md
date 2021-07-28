@@ -11,13 +11,7 @@ Obtaining packages for Azure development is easy when you use a package manager.
 
 ## Using Paket
 
-If you're using [Paket](https://fsprojects.github.io/Paket/) as your dependency manager, you can use the `paket.exe` tool to add Azure dependencies. For example:
-
-```console
-> paket add nuget Azure.Storage.Blobs
-```
-
-Or, if you're using [.Net Core](https://fsprojects.github.io/Paket/get-started.html#NET-Core-preferred) for cross-platform .NET development:
+If you're using [Paket](https://fsprojects.github.io/Paket/) as your dependency manager:
 
 Install .NET Core 3.0 or higher, If you don't have it already, you'll need to [download and install the latest .NET Core](https://dotnet.microsoft.com/download).
 
@@ -45,23 +39,11 @@ nuget Azure.Storage.Blobs
 
 This will add `Azure.Storage.Blobs` to your set of package dependencies for the project in the current directory, modify the `paket.dependencies` file, and download the package. If you have previously set up dependencies, or are working with a project where dependencies have been set up by another developer, you can resolve and install dependencies locally like this:
 
-```console
-> paket install
-```
-
-Or, for .Net Core development:
-
 ```.NET CLI
 > dotnet paket install
 ```
 
 You can update all your package dependencies to the latest version like this:
-
-```console
-> paket update
-```
-
-Or, for .Net Core development:
 
 ```.NET CLI
 > dotnet paket update
@@ -69,13 +51,7 @@ Or, for .Net Core development:
 
 ## Using NuGet
 
-If you're using [NuGet](https://www.nuget.org/) as your dependency manager, you can use the `nuget.exe` tool to add Azure dependencies. For example:
-
-```console
-> nuget install Azure.Storage.Blobs -ExcludeVersion
-```
-
-Or, for .Net Core development:
+If you're using [NuGet](https://www.nuget.org/) as your dependency manager:
 
 ```.NET CLI
 > dotnet add package Azure.Storage.Blobs --version <VERSION>
@@ -83,23 +59,15 @@ Or, for .Net Core development:
 
 This will add `Azure.Storage.Blobs` to your set of package dependencies for the project in the current directory, and download the package. If you have previously set up dependencies, or are working with a project where dependencies have been set up by another developer, you can resolve and install dependencies locally like this:
 
-```console
-> nuget restore
-```
-
-Or, for .Net Core development:
-
 ```.NET CLI
 > dotnet restore
 ```
 
 You can update all your package dependencies to the latest version like this:
 
-```console
-> nuget update
+```.NET CLI
+> dotnet add package
 ```
-
-Or, for .Net Core development:
 
 NuGet installs the latest version of the package when you use the `dotnet add package` command unless you specify the package version (`-v` switch).
 

@@ -36,6 +36,7 @@ landingContent:
         links:
           - text: Download the .NET Core SDK
             url: https://dotnet.microsoft.com/download
+
   - title: "F# fundamentals"
     linkLists:
       - linkListType: overview
@@ -86,18 +87,23 @@ landingContent:
             url: language-reference/symbol-and-operator-reference/index.md
           - text: "Functions"
             url: language-reference/functions/index.md
-          - text: "F# types"
+          - text: "Types"
             url: language-reference/fsharp-types.md
-  - title: "F# Tools"
+
+  - title: "F# tools"
     linkLists:
       - linkListType: reference
         links:
           - text: "F# Interactive"
             url: tools/fsharp-interactive/index.md
+          - text: "F# development tools"
+            url: https://dotnet.microsoft.com/languages/fsharp/tools
 
-  - title: "F# Core Library reference"
+  - title: "F# library reference"
     linkLists:
       - linkListType: reference
         links:
-          - text: "FSharp.Core API reference"
-            url: https://fsharp.github.io/fsharp-core-docs/
+          - text: "F# core library reference"
+            url: https://fsharp.github.io/fsharp-core-docs
+          - text: ".NET library reference"
+            url: /dotnet/api/?view=net-5.0

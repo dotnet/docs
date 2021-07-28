@@ -68,24 +68,33 @@ The `label` is the column you want to predict. When performing a regression task
 
 ## Create Model Builder Config File
 
-When first adding Model Builder to the solution it will prompt you to create an **mbconfig** file. This file consists of 
+When first adding Model Builder to the solution it will prompt you to create an `mbconfig` file. The `mbconfig` file keeps track of everything you do in Model Builder to allow you to reopen the session.
 
 1. In **Solution Explorer**, right-click the *TaxiFarePrediction* project, and select **Add** > **Machine Learning**.
+1. Name the `mbconfig` project **TaxiFarePrediction**, and click the **Add** button.
 
 ## Choose a scenario
 
-To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is `Price Prediction`.
+To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is `Value prediction`.
 
-1. In the scenario step of the Model Builder tool, select *Price Prediction* scenario.
+1. In the scenario step of the Model Builder tool, select *Value prediction* scenario.
+
+## Select the environment
+
+Model Builder can run the training on different environments depending on the scenario that was selected. Some scenarios can run on your local machine, and others can run on the Azure ML service which will allow you to train with a GPU.
+
+1. Confirm the `Local (CPU)` item is selected, and click the **Next step** button.
 
 ## Load the data
 
 Model Builder accepts data from two sources, a SQL Server database or a local file in csv or tsv format.
 
-1. In the data step of the Model Builder tool, select *File* from the data source dropdown.
-1. Select the button next to the *Select a file* text box and use File Explorer to browse and select the *taxi-fare-test.csv* in the *Data* directory
+1. In the data step of the Model Builder tool, select *File* from the data source type selection.
+1. Select the **Browse** button next to the text box and use File Explorer to browse and select the *taxi-fare-test.csv* in the *Data* directory
 1. Choose *fare_amount* in the *Column to Predict (Label)* dropdown.
-1. Expand the *Input Columns (Features)* dropdown and uncheck the *trip_time_in_secs* column to exclude it as a feature during training.  Navigate to the train step of the Model Builder tool.
+1. Click the **Advanced data options** link.
+1. In the **Column settings** tab, select the **Purpose** dropdown for the *trip_time_in_secs* column, and select **Ignore** to exclude it as a feature during training. Click the **Save** button to close the dialog.
+1. Click the **Next step** button.
 
 ## Train the model
 
@@ -96,22 +105,33 @@ The time required for the model to train is proportionate to the amount of data.
 1. Leave the default value as is for *Time to train (seconds)* unless you prefer to train for a longer time.
 2. Select *Start Training*.
 
-Throughout the training process, progress data is displayed in the `Progress` section of the train step.
+Throughout the training process, progress data is displayed in the `Training results` section of the train step.
 
 - Status displays the completion status of the training process.
 - Best accuracy displays the accuracy of the best performing model found by Model Builder so far. Higher accuracy means the model predicted more correctly on test data.
 - Best algorithm displays the name of the best performing algorithm performed found by Model Builder so far.
 - Last algorithm displays the name of the algorithm most recently used by Model Builder to train the model.
 
-Once training is complete, navigate to the evaluate step.
+Once training is complete, click the **Next step** to navigate to the evaluate step.
 
 ## Evaluate the model
 
-The result of the training step will be one model which had the best performance. In the evaluate step of the Model Builder tool, the output section, will contain the algorithm used by the best performing model in the *Best Model* entry along with metrics in *Best Model Quality (RSquared)*. Additionally, a summary table containing top five models and their metrics.
+The result of the training step will be one model which had the best performance. In the evaluate step of the Model Builder tool, in the **Best model** section, will contain the algorithm used by the best performing model in the *Model* entry along with metrics for that model in *RSquared*.
 
-If you're not satisfied with your accuracy metrics, some easy ways to try and improve model accuracy are to increase the amount of time to train the model or use more data. Otherwise, navigate to the code step.
+Additionally, in the **Output** window of Visual Studio, there will be a summary table containing top five models and their metrics.
 
-## Add the code to make predictions
+This section will also allow you to test your model by performing a single prediction. It will offer text boxes to fill in values and you can click the **Predict** button to get a prediction from the best model. By default this will be filled in by a random row in your dataset.
+
+If you're not satisfied with your accuracy metrics, some easy ways to try and improve model accuracy are to increase the amount of time to train the model or use more data. Otherwise, click **Next step** to navigate to the consume step.
+
+## Consume the model
+
+This step will have project templates that you can use to consume the model.
+
+- Console App
+- Web API
+
+### Console App
 
 Two projects will be created as a result of the training process.
 

@@ -113,7 +113,7 @@ Deploy the app as described in [Deploy .NET apps to Raspberry Pi](deployment.md)
 
 ### Launch the debugger
 
-On the **Run** tab, select the **.NET Core Launch (remote console)** configuration and select **Start Debugging**. The app launches on the Raspberry Pi. The debugger may be used to set breakpoints, inspect locals, and more.
+On the **Run** tab, select the configuration you added to *launch.json* and select **Start Debugging**. The app launches on the Raspberry Pi. The debugger may be used to set breakpoints, inspect locals, and more.
 
 ### References
 

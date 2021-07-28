@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Detect anomalies in phone calls'
 description: Learn how to build an anomaly detection application for time series data. This tutorial creates a .NET Core console application using C# in Visual Studio 2019.
-ms.date: 12/04/2020
+ms.date: 07/28/2021
 ms.topic: tutorial
 ms.custom: mvc
 recommendations: false
@@ -129,7 +129,7 @@ In the first step, we invoke the `DetectSeasonality` function to determine the p
 1. Create the `DetectPeriod` method, just below the `Main` method, using the following code:
 
     ```csharp
-    static void DetectPeriod(MLContext mlContext, IDataView phoneCalls)
+    static int DetectPeriod(MLContext mlContext, IDataView phoneCalls)
     {
 
     }

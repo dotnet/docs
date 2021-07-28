@@ -17,6 +17,11 @@ ms.topic: how-to
 
 # How to use a DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
 
+:::zone pivot="dotnet-6-0"
+> [!IMPORTANT]
+> Some information relates to prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+:::zone-end
+
 This article shows how to use:
 
 * A [JSON Document Object Model (DOM)](#json-dom-choices) for random access to data in a JSON payload.
@@ -31,11 +36,6 @@ This article shows how to use:
 > * [Utf8JsonWriter compared to JsonTextWriter](system-text-json-migrate-from-newtonsoft-how-to.md#utf8jsonwriter-compared-to-jsontextwriter)
 
 ## JSON DOM choices
-
-:::zone pivot="dotnet-6-0"
-> [!IMPORTANT]
-> Some information relates to prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-:::zone-end
 
 Working with a DOM is an alternative to deserialization:
 

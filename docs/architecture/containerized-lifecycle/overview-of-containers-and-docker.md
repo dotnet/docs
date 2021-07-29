@@ -1,9 +1,9 @@
 ---
-title: Introduction to Containers and Docker
+title: Overview of Containers and Docker
 description: Get a high level overview of the main benefits of using Docker.
 ms.date: 04/15/2020
 ---
-# Introduction to containers and Docker
+# Overview of Containers and Docker
 
 *Containerization is an approach to software development in which an application or service, its dependencies, and its configuration (abstracted as deployment manifest files) are packaged together as a container image. You then can test the containerized application as a unit and deploy it as a container image instance to the host operating system (OS).*
 

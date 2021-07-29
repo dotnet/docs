@@ -1,9 +1,9 @@
 ---
-title: Docker terminology
-description: Learn some basic terminology that's used everyday when working with Docker.
+title: Understanding of different Docker specific terminologies
+description: Learn some basic terminology that gets used frequently, when working with Docker.
 ms.date: 01/06/2021
 ---
-# Docker terminology
+# Understanding of different Docker specific terminologies
 
 This section lists terms and definitions you should be familiar with before getting deeper into Docker. For further definitions, see the extensive [glossary](https://docs.docker.com/glossary/) provided by Docker.
 

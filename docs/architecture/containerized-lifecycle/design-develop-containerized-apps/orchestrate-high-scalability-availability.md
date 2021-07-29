@@ -1,9 +1,9 @@
 ---
-title: Orchestrating microservices and multi-container applications for high scalability and availability
+title: Orchestrate microservices and multi-container applications for high scalability and availability
 description: Real production applications have to be deployed and managed with orchestrators that handle the health, workload and life cycles of all containers.
 ms.date: 08/06/2020
 ---
-# Orchestrating microservices and multi-container applications for high scalability and availability
+# Orchestrate microservices and multi-container applications for high scalability and availability
 
 Using orchestrators for production-ready applications is essential if your application is based on microservices or split across multiple containers. As introduced previously, in a microservice-based approach, each microservice owns its model and data so that it will be autonomous from a development and deployment point of view. But even if you have a more traditional application that's composed of multiple services (like SOA), you'll also have multiple containers or services comprising a single business application that need to be deployed as a distributed system. These kinds of systems are complex to scale out and manage; therefore, you absolutely need an orchestrator if you want to have a production-ready and scalable multi-container application.
 

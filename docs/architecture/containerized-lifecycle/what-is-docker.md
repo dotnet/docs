@@ -1,9 +1,9 @@
 ---
-title: What is Docker?
+title: Understanding of Docker
 description: Get a little deeper in your understanding of Docker, a simple analogy here might help you.
 ms.date: 08/06/2020
 ---
-# What is Docker?
+# Understanding of Docker
 
 [Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) for automating the deployment of applications as portable, self-sufficient containers that can run on the cloud or on-premises. Docker is also a [company](https://www.docker.com/) that promotes and evolves this technology, working in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
 
@@ -74,5 +74,5 @@ You can think of an image as an auxiliary read-only hard disk ready to be instal
 Similarly, you can think of a container as the "computer" with the image hard disk installed. The container, just like a computer, can be powered on or off.
 
 >[!div class="step-by-step"]
->[Previous](introduction-to-containers-and-docker.md)
+>[Previous](overview-of-containers-and-docker.md)
 >[Next](docker-terminology.md)

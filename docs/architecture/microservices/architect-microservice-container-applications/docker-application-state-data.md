@@ -59,6 +59,12 @@ Volumes can be shared between containers, but only in the same host, unless you 
 
 **Relational databases and NoSQL databases.** There are many choices for external databases, from relational databases like SQL Server, PostgreSQL, Oracle, or NoSQL databases like Azure Cosmos DB, MongoDB, etc. These databases are not going to be explained as part of this guide since they are in a completely different subject.
 
+If you're reading the microservices ebook...
 >[!div class="step-by-step"]
 >[Previous](containerize-monolithic-applications.md)
 >[Next](service-oriented-architecture.md)
+
+If you're reading the containerized lifecycle ebook...
+>[!div class="step-by-step"]
+>[Previous](../../containerized-lifecycle/design-develop-containerized-apps/monolithic-applications.md)
+>[Next](../../containerized-lifecycle/design-develop-containerized-apps/soa-applications.md)

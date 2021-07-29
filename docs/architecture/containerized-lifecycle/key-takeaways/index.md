@@ -4,7 +4,7 @@ description: Review the key takeaways for the guide.
 ms.date: 08/06/2020
 ---
 
-# Key Takeaways - Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+# Key Takeaways: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 
 - Container-based solutions provide important cost-saving benefits because containers solve deployment problems caused by dependency failures in production environments, thereby improving DevOps and production operations significantly.
 

@@ -45,8 +45,8 @@ body:
     attributes:
       label: Type of breaking change
       options:
-        - label: Binary incompatible (code must be recompiled to use the newer API version)
-        - label: Source incompatible (code must be changed and recompiled to use the newer API version)
+        - label: Binary incompatible (existing binaries may encounter a breaking change in behavior - for example, failure to load/execute or different run-time behavior)
+        - label: Source incompatible (existing source code may encounter a breaking change in behavior when targeting the new runtime/component/SDK - for example, compile errors or different run-time behavior)
     validations:
       required: true
   - type: textarea

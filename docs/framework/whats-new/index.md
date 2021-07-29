@@ -1074,19 +1074,19 @@ For applications that target .NET Framework 4.6.1 and earlier but are running on
 
 ```xml
 <AppContextSwitchOverrides
-    value="Switch.System.ServiceModel.DisableCngCertificates=false"
+    value="Switch.System.IdentityModel.DisableCngCertificates=false"
 />
 ```
 
 This can also be done programmatically with code like the following:
 
 ```csharp
-private const string DisableCngCertificates = @"Switch.System.ServiceModel.DisableCngCertificates";
+private const string DisableCngCertificates = @"Switch.System.IdentityModel.DisableCngCertificates";
 AppContext.SetSwitch(disableCngCertificates, false);
 ```
 
 ```vb
-Const DisableCngCertificates As String = "Switch.System.ServiceModel.DisableCngCertificates"
+Const DisableCngCertificates As String = "Switch.System.IdentityModel.DisableCngCertificates"
 AppContext.SetSwitch(disableCngCertificates, False)
 ```
 

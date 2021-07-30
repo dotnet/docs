@@ -12,24 +12,17 @@ ms.custom: mvc, how-to, mlnet-tooling
 
 Learn how to load your training datasets from a file or a SQL Server database for use in one of the Model Builder scenarios for ML.NET. Model Builder scenarios can use SQL Server databases, image files, and CSV or TSV file formats as training data.
 
-## Training dataset limitations in Model Builder
-
-Model Builder limits the amount and type of data you can use for training models:
-
-- SQL Server data: No size limit
-- CSV and TSV files: No size limit
-- Images: PNG and JPG only.
+Model Builder only accepts TSV, CSV, and TXT files with comma, tab, and semi-colon delimiters and PNG and JPG images.
 
 ## Model Builder scenarios
 
 Model Builder helps you create models for the following machine learning scenarios:
 
 - Sentiment analysis (binary classification): Classify textual data into two categories.
-- Issue classification (multiclass classification): Classify textual data into 3 or more categories.
-- Price prediction (regression): Predict a numeric value.
+- Text classification (multiclass classification): Classify textual data into 3 or more categories.
+- Value prediction (regression): Predict a numeric value.
 - Image classification (deep learning): Categorize images based on characteristics.
 - Object detection (deep learning): Find objects within images. This can find one or more objects and label them accordingly.
-- Custom scenario: Build custom scenarios from your data using regression, classification, and other tasks.
 
 This article covers classification and regression scenarios with textual or numerical data, image classification, and object detection scenarios.
 
@@ -44,9 +37,11 @@ You can load text or numeric data from a file into Model Builder. It accepts com
 
 You're done setting up your data source file for Model Builder. Click the **Next step** button to move to the next step in Model Builder.
 
-## Load data from a SQL Server database
+### Load data from a SQL Server database
 
 Model Builder supports loading data from local and remote SQL Server databases.
+
+### Local database file
 
 To load data from a SQL Server database file into Module Builder:
 
@@ -59,6 +54,8 @@ To load data from a SQL Server database file into Module Builder:
 1. Choose the dataset name from the **Table Name** dropdown.
 1. From the **Column to Predict (Label)** dropdown, choose the data category on which you want to make a prediction.
 1. Update the data in the **Advanced data options** link to set column settings or to update the data formatting.
+
+### Remote database
 
 To load data from a SQL Server database connection into Model Builder:
 
@@ -125,6 +122,8 @@ The JSON file consists of the following information generated from VoTT:
 - The image file locations
 - The image bounding box information
 - The tag associated with the image
+
+For more information on preparing data for object detection, see [Generate object detection data from VoTT](./how-to-guides/generate-data-from-vott.md).
 
 ## Next steps
 

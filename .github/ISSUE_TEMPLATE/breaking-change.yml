@@ -44,11 +44,14 @@ body:
     id: change-type
     attributes:
       label: Type of breaking change
+      description: This information will be used to label the issue appropriately.
       options:
-        - label: Binary incompatible
-          Existing binaries may encounter a breaking change in behavior&mdash;for example, failure to load/execute or different run-time behavior.
-        - label: Source incompatible
-          Source code may encounter a breaking change in behavior when targeting the new runtime/component/SDK&mdash;for example, compile errors or different run-time behavior.
+        - label: |
+          **Binary incompatible**: Existing binaries may encounter a breaking change in behavior.
+          Examples: failure to load/execute; different run-time behavior.
+        - label: |
+          **Source incompatible**: Source code may encounter a breaking change in behavior when targeting the new runtime/component/SDK.
+          Examples: compile errors; different run-time behavior.
     validations:
       required: true
   - type: textarea

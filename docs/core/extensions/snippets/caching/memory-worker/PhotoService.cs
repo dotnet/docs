@@ -46,7 +46,7 @@ namespace CachingExamples.Memory
             }
             finally
             {
-                _cacheSignal.Reset(true);
+                _cacheSignal.Release();
             }
         }
     }

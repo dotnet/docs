@@ -1,29 +1,23 @@
-﻿using System.Threading.Tasks;
+﻿using System.Threading;
+using System.Threading.Tasks;
 
 namespace CachingExamples.Memory
 {
     public sealed class CacheSignal<T>
     {
-        private AsyncAutoResetEvent _signal = new(false);
+        private readonly SemaphoreSlim _semaphore = new(1, 1);
 
         /// <summary>
         /// Exposes a <see cref="Task"/> that represents the asynchronous wait operation.
-        /// When signaled (consumer calls <see cref="Set"/>), the 
+        /// When signaled (consumer calls <see cref="Release"/>), the 
         /// <see cref="Task.Status"/> is set as <see cref="TaskStatus.RanToCompletion"/>.
         /// </summary>
-        public Task WaitAsync() => _signal.WaitAsync();
-
-        /// <summary>
-        /// Reset's the signal. When called with <c>false</c>, the <see cref="WaitAsync"/>
-        /// will not release until <see cref="Set"/> is called. When called with 
-        /// <c>true</c>, the <see cref="WaitAsync"/> will release immediately when awaited.
-        /// </summary>
-        public void Reset(bool isSet) => _signal = new(isSet);
+        public Task WaitAsync() => _semaphore.WaitAsync();
 
         /// <summary>
         /// Exposes the ability to signal the release of the <see cref="WaitAsync"/>'s operation.
         /// Callers who were waiting, will be able to continue.
         /// </summary>
-        public void Set() => _signal.Set();
+        public void Release() => _semaphore.Release();
     }
 }

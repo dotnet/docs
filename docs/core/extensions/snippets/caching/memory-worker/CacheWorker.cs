@@ -26,6 +26,12 @@ namespace CachingExamples.Memory
             IMemoryCache cache) =>
             (_logger, _httpClient, _cacheSignal, _cache) = (logger, httpClient, cacheSignal, cache);
 
+        public override async Task StartAsync(CancellationToken cancellationToken)
+        {
+            await _cacheSignal.WaitAsync();
+            await base.StartAsync(cancellationToken);
+        }
+
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             while (!stoppingToken.IsCancellationRequested)
@@ -52,7 +58,7 @@ namespace CachingExamples.Memory
                 }
                 finally
                 {
-                    _cacheSignal.Set();
+                    _cacheSignal.Release();
                 }
 
                 try

@@ -221,6 +221,9 @@ The `CacheWorker` is a subclass of <xref:Microsoft.Extensions.Hosting.Background
 
 :::code source="snippets/caching/memory-worker/CacheWorker.cs":::
 
+> [!IMPORTANT]
+> You need to `override` <xref:Microsoft.Extensions.Hosting.BackgroundService.StartAsync%2A?displayProperty=nameWithType> and call `await _cacheSignal.WaitAsync()` in order to prevent a race condition between the starting of the `CacheWorker` and a call to `PhotoService.GetPhotosAsync`.
+
 In the preceding C# code:
 
 - The constructor requires an `ILogger`, `HttpClient`, `CacheSignal<Photo>`, and `IMemoryCache`.
@@ -229,19 +232,15 @@ In the preceding C# code:
   - Loops while the app is running.
   - Makes an HTTP request to `"https://jsonplaceholder.typicode.com/photos"`, and maps the response as an array of `Photo` objects.
   - The array of photos is placed in the `IMemoryCache` under the `"Photos"` key.
-  - The `_cacheSignal.Set()` is called, releasing any consumers who were waiting for the signal.
+  - The `_cacheSignal.Release()` is called, releasing any consumers who were waiting for the signal.
   - The call to <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> is awaited, given the update interval.
   - After delaying for three hours, the cache is again updated.
 
-The asynchronous signal is based on an "async coordination primitive" detailed in an old DevBlog from Stephen Toub, which is still relevant today. For more information, see [Building async coordination primitives: `AsyncAutoResetEvent`](https://devblogs.microsoft.com/pfxteam/building-async-coordination-primitives-part-2-asyncautoresetevent).
-
-:::code source="snippets/caching/memory-worker/AsyncAutoResetEvent.cs":::
-
-The `CacheSignal<T>` relies on an instance of `AsyncAutoResetEvent`:
+The asynchronous signal is based on an encapsulated <xref:System.Threading.SemaphoreSlim> instance, within a generic-type constrained singleton. The `CacheSignal<T>` relies on an instance of `SemaphoreSlim`:
 
 :::code source="snippets/caching/memory-worker/CacheSignal.cs":::
 
-In the preceding C# code, the decorator pattern is used to wrap an instance of the `AsyncAutoResetEvent`. Since the `CacheSignal<T>` is registered as a singleton, it can be used across all service lifetimes with any generic type &mdash; in this case, the `Photo`. It is responsible for signaling the seeding of the cache.
+In the preceding C# code, the decorator pattern is used to wrap an instance of the `SemaphoreSlim`. Since the `CacheSignal<T>` is registered as a singleton, it can be used across all service lifetimes with any generic type &mdash; in this case, the `Photo`. It is responsible for signaling the seeding of the cache.
 
 ## Distributed caching
 

@@ -20,7 +20,13 @@ You'll also need your storage access key for this account.
 
 The samples in this article can be used in either an F# application or an F# script. To create an F# script, create a file with the `.fsx` extension, for example `files.fsx`, in your F# development environment.
 
-Next, use a [package manager](package-management.md) such as [Paket](https://fsprojects.github.io/Paket/) or [NuGet](https://www.nuget.org/) to install the `Azure.Storage.Blobs` and `Azure.Storage.Sas` and `Azure.Storage.Files.Shares` and `Azure.Storage.Files.Shares.Models` packages and reference `Azure.Storage.Blobs.dll` and `Azure.Storage.Files.Shares.dll` in your script using a `#r` directive.
+### How to execute scripts
+
+Highlight a line and press `ALT + ENTER` to execute it section by section, the results are shown in the FSI console.
+
+### Add packages in a script
+
+Use `#r` `nuget:package name` to install the `Azure.Storage.Blobs` and `Azure.Storage.Sas` and `Azure.Storage.Files.Shares` and `Azure.Storage.Files.Shares.Models` packages.
 
 ### Add namespace declarations
 

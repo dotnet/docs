@@ -10,7 +10,7 @@ ms.date: 07/27/2021
 
 The Worker Service templates create a .NET Generic Host, <xref:Microsoft.Extensions.Hosting.HostBuilder>. The Generic Host can be used with other types of .NET applications, such as Console apps.
 
-A *host* is an object that encapsulates an app's resources, and lifetime functionality, such as:
+A *host* is an object that encapsulates an app's resources and lifetime functionality, such as:
 
 - Dependency injection (DI)
 - Logging
@@ -137,20 +137,20 @@ For more information, see [Configuration in .NET](configuration.md).
 A hosted service process can be stopped in the following ways:
 
 1. If someone doesn't call <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run%2A> or <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.WaitForShutdown%2A?displayProperty=nameWithType> and the app exits normally with `Main` completing.
-1. If the app crashes.
-1. If the app is forcefully shut down, [SIGKILL][sigkill] (or <kbd>CTRL</kbd>+<kbd>Z</kbd>).
+- If the app crashes.
+1. If the app is forcefully shut down using [SIGKILL][sigkill] (or <kbd>CTRL</kbd>+<kbd>Z</kbd>).
 
 All of these scenarios aren't handled directly by the hosting code. The owner of the process needs to deal with
 them the same as any application. There are several additional ways in which a hosted service process can be stopped:
 
-1. If `ConsoleLifetime` is used it listens for the following signals, and attempts to stop the host gracefully.
+- If `ConsoleLifetime` is used, it listens for the following signals and attempts to stop the host gracefully.
     1. [SIGINT][sigint] (or <kbd>CTRL</kbd>+<kbd>C</kbd>).
-    1. [SIGQUIT][sigquit](or <kbd>CTRL</kbd>+<kbd>BREAK</kbd> on Windows, <kbd>CTRL</kbd>+<kbd>\\</kbd> on Unix).
+    1. [SIGQUIT][sigquit] (or <kbd>CTRL</kbd>+<kbd>BREAK</kbd> on Windows, <kbd>CTRL</kbd>+<kbd>\\</kbd> on Unix).
     1. [SIGTERM][sigterm] (sent by other apps, such as `docker stop`).
-1. If the app calls <xref:System.Environment.Exit%2A?displayProperty=nameWithType>.
+- If the app calls <xref:System.Environment.Exit%2A?displayProperty=nameWithType>.
 
-These scenarios are handled by the built-in hosting logic. Specifically by the `ConsoleLifetime`
-class. `ConsoleLifetime` tries to handle the "shutdown" signals, SIGINT, SIGQUIT, and SIGTERM to allow for a graceful exit to the
+These scenarios are handled by the built-in hosting logic, specifically the `ConsoleLifetime`
+class. `ConsoleLifetime` tries to handle the "shutdown" signals SIGINT, SIGQUIT, and SIGTERM to allow for a graceful exit to the
 application.
 
 [sigkill]: https://en.wikipedia.org/wiki/Signal_(IPC)#SIGKILL
@@ -160,8 +160,8 @@ application.
 
 Before .NET 6, there wasn't a way for .NET code to gracefully handle SIGTERM. To work around this limitation,
 `ConsoleLifetime` would subscribe to <xref:System.AppDomain.ProcessExit?displayProperty=fullName>. When `ProcessExit` was raised,
-`ConsoleLifetime` would signal the host to stop, and block the `ProcessExit` thread, waiting for the host to stop.
-This would allow for the clean up code in the application to run &mdash; for example, <xref:Microsoft.Extensions.Hosting.IHost.StopAsync%2A?displayProperty=nameWithType> and code after <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run%2A?displayProperty=nameWithType> in the `Main` method.
+`ConsoleLifetime` would signal the host to stop and block the `ProcessExit` thread, waiting for the host to stop.
+This would allow for the clean-up code in the application to run &mdash; for example, <xref:Microsoft.Extensions.Hosting.IHost.StopAsync%2A?displayProperty=nameWithType> and code after <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run%2A?displayProperty=nameWithType> in the `Main` method.
 
 This caused other issues because SIGTERM wasn't the only way `ProcessExit` was raised. It is also raised by code
 in the application calling `Environment.Exit`. `Environment.Exit` isn't a graceful way of shutting down a process
@@ -180,21 +180,21 @@ In .NET 6, [POSIX signals][POSIX signals] are supported and handled. This allows
 [POSIX signals]: https://github.com/dotnet/runtime/issues/50527
 
 > [!TIP]
-> For .NET 6+, `ConsoleLifetime` no longer has logic to handle scenario `Environment.Exit`. Apps that call `Environment.Exit`, and need to do clean up logic, can subscribe to `ProcessExit` themselves. Hosting will no longer attempt to gracefully stop the host in this scenario.
+> For .NET 6+, `ConsoleLifetime` no longer has logic to handle scenario `Environment.Exit`. Apps that call `Environment.Exit` and need to perform clean-up logic can subscribe to `ProcessExit` themselves. Hosting will no longer attempt to gracefully stop the host in this scenario.
 
 If your application uses hosting, and you want to gracefully stop the host, you can call
 <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.StopApplication%2A?displayProperty=nameWithType> instead of `Environment.Exit`.
 
 ### Hosting shutdown process
 
-The following sequence diagram shows how the signals are handled internally in the hosting code. It isn't necessary for the majority of users to understand this process. But for developers that need a deep understanding, this may help them get started.
+The following sequence diagram shows how the signals are handled internally in the hosting code. It isn't necessary for most users to understand this process. But for developers that need a deep understanding, this may help you get started.
 
 After the host has been started, when a user calls `Run` or `WaitForShutdown`, a handler gets registered for <xref:Microsoft.Extensions.Hosting.IApplicationLifetime.ApplicationStopping%2A?displayProperty=nameWithType>. Execution is paused in `WaitForShutdown`, waiting for the `ApplicationStopping` event to be raised. This is how the `Main` method doesn't return right away, and the app stays running until
-`Run` / `WaitForShutdown` returns.
+`Run` or `WaitForShutdown` returns.
 
 When a signal is sent to the process, it initiates the following sequence:
 
-:::image type="content" source="media/hosting-shutdown-sequence.svg" lightbox="media/hosting-shutdown-sequence.svg" alt-text="Hosting shutdown sequence diagram":::
+:::image type="content" source="media/hosting-shutdown-sequence.svg" lightbox="media/hosting-shutdown-sequence.svg" alt-text="Hosting shutdown sequence diagram.":::
 
 1. The control flows from `ConsoleLifetime` to `ApplicationLifetime` to raise the `ApplicationStopping` event. This signals
 `WaitForShutdownAsync` to unblock the `Main` execution code. In the meantime, the POSIX signal handler returns with

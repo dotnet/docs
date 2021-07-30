@@ -1,7 +1,7 @@
 ---
 title: Load training data for Model Builder
 description: Learn how to load training data from a SQL Server database or a file for use in one of the Model Builder scenarios for ML.NET.
-ms.date: 07/15/2021
+ms.date: 07/28/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to, mlnet-tooling
@@ -129,7 +129,7 @@ For more information on preparing data for object detection, see [Generate objec
 
 Follow these tutorials to build machine learning apps with Model Builder:
 
-- [Generate object detection data from VoTT](./how-to-guides/generate-data-from-vott.md)
+- [Generate object detection data from VoTT](./label-images-for-object-detection-using-vott.md)
 - [Predict prices using regression](../tutorials/predict-prices-with-model-builder.md)
 - [Analyze sentiment in a web application using binary classification](../tutorials/sentiment-analysis-model-builder.md)
 

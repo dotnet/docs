@@ -19,7 +19,7 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
 > - Prepare and understand the data
-> - Create an `mbconfig` file
+> - Create a Model Builder Config file
 > - Choose a scenario
 > - Load the data
 > - Train the model
@@ -74,11 +74,6 @@ When first adding Model Builder to the solution it will prompt you to create an 
 1. In **Solution Explorer**, right-click the *TaxiFarePrediction* project, and select **Add** > **Machine Learning**.
 1. Name the `mbconfig` project **TaxiFarePrediction**, and click the **Add** button.
 
-The `mbconfig` file will have the generated model after training and two C# files with it:
-
-- **TaxiFare.consumption.cs**: This file has a public method that will load the model and create a prediction engine with it and return the prediction.
-- **TaxiFare.training.cs**: This file consists of the training pipeline that Model Builder came up with to build the best model including any hyperparameters that it used.
-
 ## Choose a scenario
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is `Value prediction`.
@@ -118,7 +113,12 @@ Throughout the training process, progress data is displayed in the `Training res
 - Best algorithm displays the name of the best performing algorithm performed found by Model Builder so far.
 - Last algorithm displays the name of the algorithm most recently used by Model Builder to train the model.
 
-Once training is complete, click the **Next step** to navigate to the evaluate step.
+Once training is complete the `mbconfig` file will have the generated model after training and two C# files with it:
+
+- **TaxiFare.consumption.cs**: This file has a public method that will load the model and create a prediction engine with it and return the prediction.
+- **TaxiFare.training.cs**: This file consists of the training pipeline that Model Builder came up with to build the best model including any hyperparameters that it used.
+
+Click the **Next step** button to navigate to the evaluate step.
 
 ## Evaluate the model
 
@@ -132,7 +132,7 @@ If you're not satisfied with your accuracy metrics, some easy ways to try and im
 
 ## Consume the model
 
-This step will have project templates that you can use to consume the model.
+This step will have project templates that you can use to consume the model. This step is optional and you can choose the method that best suits your needs on how to serve the model.
 
 - Console App
 - Web API
@@ -158,6 +158,27 @@ When adding a web API to your solution, you will be prompted to name the project
 1. Name the console project **TaxiFare_API**.
 1. Click *Add to solution** to add the project to your current solution.
 1. Run the application.
+1. Open PowerShell and enter the following code where PORT is the port your application is listening on.
+
+    ```powershell
+    $body = @{
+        Vendor_id="CMT"
+        Rate_code=1.0
+        Passenger_count=1.0
+        Trip_distance=3.8
+        Payment_type="CRD"
+    }
+
+    Invoke-RestMethod "https://localhost:<PORT>/predict" -Method Post -Body ($body | ConvertTo-Json) -ContentType "application/json"
+    ```
+
+1. If successful, the output should look similar to the text below:
+
+    ```powershell
+    score
+    -----
+    15.020833
+    ```
 
 ## Next Steps
 

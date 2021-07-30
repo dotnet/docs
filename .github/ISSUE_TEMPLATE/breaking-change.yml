@@ -1,7 +1,7 @@
 name: ".NET breaking change"
 description: Report a change in .NET that breaks something that worked in a previous version. Intended mostly for product-team use.
 title: "[Breaking change]: "
-labels: breaking-change
+labels: breaking-change,Pri1,doc-idea
 assignees:
  - gewarren
 body:
@@ -44,9 +44,10 @@ body:
     id: change-type
     attributes:
       label: Type of breaking change
+      description: This information will be used to label the issue appropriately.
       options:
-        - label: Binary incompatible (code must be recompiled to use the newer API version)
-        - label: Source incompatible (code must be changed and recompiled to use the newer API version)
+        - label: "**Binary incompatible**: Existing binaries may encounter a breaking change in behavior, such as failure to load/execute or different run-time behavior."
+        - label:  "**Source incompatible**: Source code may encounter a breaking change in behavior when targeting the new runtime/component/SDK, such as compile errors or different run-time behavior."
     validations:
       required: true
   - type: textarea

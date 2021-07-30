@@ -63,6 +63,8 @@ Each row in the *wikipedia-detox-250-line-data.tsv* dataset represents a differe
 
 ## Create a Model Builder config file
 
+When first adding Model Builder to the solution it will prompt you to create an `mbconfig` file. The `mbconfig` file keeps track of everything you do in Model Builder to allow you to reopen the session.
+
 1. In **Solution Explorer**, right-click the *SentimentRazor* project, and select **Add** > **Machine Learning**.
 1. In the dialog, name the Model Builder project **SentimentAnalysis**, and click **Add**.
 
@@ -74,19 +76,19 @@ To train your model, you need to select from the list of available machine learn
 
 1. For this sample, the scenario is sentiment analysis. In the *scenario* step of the Model Builder tool, select the **Text Classification** scenario.
 
-## Choose an environment
+## Select an environment
 
-
+Model Builder can run the training on different environments depending on the scenario that was selected.
 
 ## Load the data
 
 Model Builder accepts data from two sources, a SQL Server database or a local file in `csv`, `tsv`, or `txt` format.
 
-1. In the data step of the Model Builder tool, select **File** from the data source dropdown.
-1. Select the button next to the **Select a file** text box and use File Explorer to browse and select the *wikipedia-detox-250-line-data.tsv* file.
+1. In the data step of the Model Builder tool, select **File** from the data source type selection.
+1. Select the **Browse** button and use File Explorer to browse and select the *wikipedia-detox-250-line-data.tsv* file.
 1. Choose **Sentiment** in the **Column to Predict (Label)** dropdown.
-1. Leave the default values for the **Input Columns (Features)** dropdown.
-1. Select the **Train** link to move to the next step in the Model Builder tool.
+1. Leave the default values inside the **Advanced data options** link.
+1. Click the **Next step** button to move to the training step in the Model Builder tool.
 
 ## Train the model
 
@@ -95,26 +97,29 @@ The machine learning task used to train the sentiment analysis model in this tut
 The time required for the model to train is proportionate to the amount of data. Model Builder automatically selects a default value for **Time to train (seconds)** based on the size of your data source.
 
 1. Although Model Builder sets the value of **Time to train (seconds)** to 10 seconds, increase it to 30 seconds. Training for a longer period of time allows Model Builder to explore a larger number of algorithms and combination of parameters in search of the best model.
-1. Select **Start Training**.
+1. Click the **Start Training** button.
 
-    Throughout the training process, progress data is displayed in the `Progress` section of the train step.
+    Throughout the training process, progress data is displayed in the `Training results` section of the train step.
 
     - Status displays the completion status of the training process.
     - Best accuracy displays the accuracy of the best performing model found by Model Builder so far. Higher accuracy means the model predicted more correctly on test data.
-    - Best algorithm displays the name of the best performing algorithm performed found by Model Builder so far.
-    - Last algorithm displays the name of the algorithm most recently used by Model Builder to train the model.
+    - Best model the name of the best performing algorithm performed found by Model Builder so far.
+    - Models explored displays the number of models that were tried with the dataset.
 
-1. Once training is complete, select the **evaluate** link to move to the next step.
+1. Once training is complete, select the **Next step** button to move to the Evaluate step.
 
 ## Evaluate the model
 
-The result of the training step will be one model that has the best performance. In the evaluate step of the Model Builder tool, the output section will contain the algorithm used by the best-performing model in the **Best Model** entry along with metrics in **Best Model Accuracy**. Additionally, a summary table containing the top five models and their metrics is shown.
+The result of the training step will be one model that has the best performance. In the evaluate step of the Model Builder tool, the **Best model** section will contain the algorithm used by the best-performing model along with metrics.
 
-If you're not satisfied with your accuracy metrics, some easy ways to try to improve model accuracy are to increase the amount of time to train the model or use more data. Otherwise, select the **code** link to move to the final step in the Model Builder tool.
+If you're not satisfied with your accuracy metrics, some easy ways to try to improve model accuracy are to increase the amount of time to train the model or use more data. Otherwise, select the **Next step** button to move to the final step in the Model Builder tool to consume the model.
 
-## Add the code to make predictions
+## Consume the model
 
-Two projects will be created as a result of the training process.
+This step will have project templates that you can use to consume the model. This step is optional and you can choose the method that best suits your needs on how to serve the model.
+
+- Console App
+- Web API
 
 ### Reference the trained model
 

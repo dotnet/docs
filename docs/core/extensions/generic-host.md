@@ -138,15 +138,15 @@ A hosted service process can be stopped in the following ways:
 
 - If someone doesn't call <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run%2A> or <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.WaitForShutdown%2A?displayProperty=nameWithType> and the app exits normally with `Main` completing.
 - If the app crashes.
-1. If the app is forcefully shut down using [SIGKILL][sigkill] (or <kbd>CTRL</kbd>+<kbd>Z</kbd>).
+- If the app is forcefully shut down using [SIGKILL][sigkill] (or <kbd>CTRL</kbd>+<kbd>Z</kbd>).
 
 All of these scenarios aren't handled directly by the hosting code. The owner of the process needs to deal with
 them the same as any application. There are several additional ways in which a hosted service process can be stopped:
 
 - If `ConsoleLifetime` is used, it listens for the following signals and attempts to stop the host gracefully.
-    - [SIGINT][sigint] (or <kbd>CTRL</kbd>+<kbd>C</kbd>).
-    - [SIGQUIT][sigquit] (or <kbd>CTRL</kbd>+<kbd>BREAK</kbd> on Windows, <kbd>CTRL</kbd>+<kbd>\\</kbd> on Unix).
-    - [SIGTERM][sigterm] (sent by other apps, such as `docker stop`).
+  - [SIGINT][sigint] (or <kbd>CTRL</kbd>+<kbd>C</kbd>).
+  - [SIGQUIT][sigquit] (or <kbd>CTRL</kbd>+<kbd>BREAK</kbd> on Windows, <kbd>CTRL</kbd>+<kbd>\\</kbd> on Unix).
+  - [SIGTERM][sigterm] (sent by other apps, such as `docker stop`).
 - If the app calls <xref:System.Environment.Exit%2A?displayProperty=nameWithType>.
 
 These scenarios are handled by the built-in hosting logic, specifically the `ConsoleLifetime`

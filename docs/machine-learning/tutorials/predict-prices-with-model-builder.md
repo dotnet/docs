@@ -3,7 +3,7 @@ title: 'Tutorial: Predict prices using regression with Model Builder'
 description: This tutorial illustrates how to build a regression model using ML.NET Model Builder to predict prices, specifically, New York City taxi fares.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 07/28/2021
+ms.date: 07/30/2021
 ms.topic: tutorial
 ms.custom: mvc, mlnet-tooling
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to predict prices using Model Builder.
@@ -82,7 +82,7 @@ To train your model, you need to select from the list of available machine learn
 
 ## Select the environment
 
-Model Builder can run the training on different environments depending on the scenario that was selected. Some scenarios can run on your local machine, and others can run on the Azure ML service which will allow you to train with a GPU.
+Model Builder can run the training on different environments depending on the scenario that was selected.
 
 1. Confirm the `Local (CPU)` item is selected, and click the **Next step** button.
 
@@ -113,7 +113,7 @@ Throughout the training process, progress data is displayed in the `Training res
 - Best algorithm displays the name of the best performing algorithm performed found by Model Builder so far.
 - Last algorithm displays the name of the algorithm most recently used by Model Builder to train the model.
 
-Once training is complete the `mbconfig` file will have the generated model after training and two C# files with it:
+Once training is complete the `mbconfig` file will have the generated model called `TaxiFarePrediction.zip` after training and two C# files with it:
 
 - **TaxiFare.consumption.cs**: This file has a public method that will load the model and create a prediction engine with it and return the prediction.
 - **TaxiFare.training.cs**: This file consists of the training pipeline that Model Builder came up with to build the best model including any hyperparameters that it used.
@@ -130,7 +130,7 @@ This section will also allow you to test your model by performing a single predi
 
 If you're not satisfied with your accuracy metrics, some easy ways to try and improve model accuracy are to increase the amount of time to train the model or use more data. Otherwise, click **Next step** to navigate to the consume step.
 
-## Consume the model
+## (Optional) Consume the model
 
 This step will have project templates that you can use to consume the model. This step is optional and you can choose the method that best suits your needs on how to serve the model.
 

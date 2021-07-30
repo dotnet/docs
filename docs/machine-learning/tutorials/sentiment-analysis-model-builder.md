@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Analyze sentiment - binary classification'
 description: This tutorial shows you how to create a Razor Pages application that classifies sentiment from website comments and takes the appropriate action. The binary sentiment classifier uses Model Builder in Visual Studio.
-ms.date: 11/21/2019
+ms.date: 07/30/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.topic: tutorial
@@ -21,6 +21,7 @@ In this tutorial, you learn how to:
 >
 > - Create an ASP.NET Core Razor Pages application
 > - Prepare and understand the data
+> - Create a Model Builder config file
 > - Choose a scenario
 > - Load the data
 > - Train the model
@@ -60,18 +61,26 @@ Each row in the *wikipedia-detox-250-line-data.tsv* dataset represents a differe
 1 | == OK! ==  IM GOING TO VANDALIZE WILD ONES WIKI THEN!!!
 0 | I hope this helps.
 
+## Create a Model Builder config file
+
+1. In **Solution Explorer**, right-click the *SentimentRazor* project, and select **Add** > **Machine Learning**.
+1. In the dialog, name the Model Builder project **SentimentAnalysis**, and click **Add**.
+
 ## Choose a scenario
 
 ![Model Builder wizard in Visual Studio](./media/sentiment-analysis-model-builder/model-builder-screen.png)
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder.
 
-1. In **Solution Explorer**, right-click the *SentimentRazor* project, and select **Add** > **Machine Learning**.
-1. For this sample, the scenario is sentiment analysis. In the *scenario* step of the Model Builder tool, select the **Sentiment Analysis** scenario.
+1. For this sample, the scenario is sentiment analysis. In the *scenario* step of the Model Builder tool, select the **Text Classification** scenario.
+
+## Choose an environment
+
+
 
 ## Load the data
 
-Model Builder accepts data from two sources, a SQL Server database or a local file in `csv` or `tsv` format.
+Model Builder accepts data from two sources, a SQL Server database or a local file in `csv`, `tsv`, or `txt` format.
 
 1. In the data step of the Model Builder tool, select **File** from the data source dropdown.
 1. Select the button next to the **Select a file** text box and use File Explorer to browse and select the *wikipedia-detox-250-line-data.tsv* file.

@@ -7,12 +7,12 @@ ms.date: 07/30/2021
 
 Starting in .NET 6, the project templates that ship with the .NET SDK use the latest C# language features. The following language features are used in template-generated code or enabled by default in the project:
 
-[Top-level statements](../../../../csharp/fundamentals/program-structure/top-level-statements.md)
-[Global using directives](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-10.0/GlobalUsingDirective.md)
-[File-scoped namespaces](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-10.0/file-scoped-namespaces.md)
-[Target-typed new expressions](/dotnet/csharp/language-reference/proposals/csharp-9.0/target-typed-new)
-[Nullable reference types](../../../../csharp/nullable-references.md)
-[`async` Main method](/dotnet/csharp/language-reference/proposals/csharp-7.1/async-main)
+- [Top-level statements](../../../../csharp/fundamentals/program-structure/top-level-statements.md)
+- [Global using directives](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-10.0/GlobalUsingDirective.md)
+- [File-scoped namespaces](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-10.0/file-scoped-namespaces.md)
+- [Target-typed new expressions](/dotnet/csharp/language-reference/proposals/csharp-9.0/target-typed-new)
+- [Nullable reference types](../../../../csharp/nullable-references.md)
+- [`async` Main method](/dotnet/csharp/language-reference/proposals/csharp-7.1/async-main)
 
 Some of the latest C# language features are not supported by previous target frameworks, so you might experience issues in the following scenarios:
 
@@ -25,7 +25,7 @@ Some of the latest C# language features are not supported by previous target fra
 
 ## Old behavior
 
-In previous .NET versions, you can change the target framework to a previous version or add an additional version without having to change the C# code created from a template.
+In previous .NET versions, you can change the target framework to a previous version or add an additional version without having to change the C# code created by the project template.
 
 ## New behavior
 
@@ -37,7 +37,7 @@ This change affects [*source compatibility*](../../categories.md#source-compatib
 
 ## Reason for change
 
-We want the project templates to be synchronized with the latest language features. The main usage scenario of targeting the latest framework only uses the latest C# language features.
+We want the project templates to be synchronized with the latest language features. The main usage scenario of singly targeting the latest framework uses the latest C# language features.
 
 ## Recommended action
 
@@ -46,7 +46,7 @@ If you encounter compile-time errors and warnings when you retarget to an earlie
 To avoid compile-time errors when targeting an older framework, follow these suggestions:
 
 - Avoid changing the target framework to a previous version. Instead, select the target framework you want during project creation in Visual Studio or at the command line by using `dotnet new <templateName> --framework <targetFramework>`.
-- When creating a multi-target project, select the *lowest* target-framework version during project creation in Visual Studio or using `dotnet new`. Add the additional target frameworks after the project is created.
+- When creating a multi-target project, select the *lowest* target-framework version when you create the project. Add the additional target frameworks after the project is created.
 
 ## Affected APIs
 

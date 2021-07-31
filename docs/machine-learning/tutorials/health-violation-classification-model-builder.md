@@ -61,7 +61,7 @@ The `label` is the column you want to predict. When performing a classification 
 
 ## Choose a scenario
 
-![Model Builder wizard in Visual Studio](./media/sentiment-analysis-model-builder/model-builder-screen.png)
+![Model Builder wizard in Visual Studio](../media/model-builder-screen.png)
 
 To train your model, select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is *Issue Classification*.
 

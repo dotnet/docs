@@ -76,6 +76,8 @@ When first adding Model Builder to the solution it will prompt you to create an 
 
 ## Choose a scenario
 
+![Model Builder wizard in Visual Studio](../media/model-builder-screen.png)
+
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is `Value prediction`.
 
 1. In the scenario step of the Model Builder tool, select *Value prediction* scenario.

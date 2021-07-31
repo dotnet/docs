@@ -101,6 +101,8 @@ items:
         items:
         - name: -p option for `dotnet run` is deprecated
           href: sdk/6.0/deprecate-p-option-dotnet-run.md
+        - name: C# code in templates not supported by earlier versions
+          href: sdk/6.0/csharp-template-code.md
         - name: Generate apphost for macOS
           href: sdk/6.0/apphost-generated-for-macos.md
         - name: Generate error for duplicate files in publish output
@@ -701,6 +703,7 @@ items:
         items:
         - name: -p option for `dotnet run` is deprecated
           href: sdk/6.0/deprecate-p-option-dotnet-run.md
+        - name: C# code in templates not supported by earlier versions
         - name: Generate apphost for macOS
           href: sdk/6.0/apphost-generated-for-macos.md
         - name: Generate error for duplicate files in publish output

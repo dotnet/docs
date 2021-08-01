@@ -2,26 +2,24 @@
 title: What is Cloud Native?
 description: Learn about the foundational pillars that provide the bedrock for cloud-native systems
 author: robvet
-ms.date: 07/25/2021
+ms.date: 07/31/2021
 ---
 
 # What is Cloud Native?
 
-Stop what you're doing and text 10 of your colleagues. Ask them to define the term "Cloud Native". Good chance you'll get 10 different answers.
+Stop what you're doing and text several of your colleagues. Ask them to define the term "Cloud Native". Good chance you'll get many different answers.
 
-As mentioned earlier, cloud native is all about changing the way you construct critical business systems. Cloud-native systems are designed to embrace rapid change, large scale, and resilience.
-
-The Cloud Native Computing Foundation provides an [official definition](https://github.com/cncf/foundation/blob/master/charter.md):
+Let's start by defining cloud native. The Cloud Native Computing Foundation provides the [official definition](https://github.com/cncf/foundation/blob/master/charter.md):
 
 > *Cloud-native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.*
 
 > *These techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil.*
 
-Applications have become increasingly complex with users demanding more. Users expect rapid responsiveness, innovative features, and zero downtime. Performance problems, recurring errors, and the inability to move fast are no longer acceptable. They'll easily move to your competitor.
+Cloud native is about *speed* and *agility*. Business systems are evolving from enabling business capabilities to becoming weapons of strategic transformation that accelerate business velocity and growth. It's imperative to get new ideas to market immediately.
 
-Cloud native is about *speed* and *agility*. Business systems are evolving from enabling business capabilities to being weapons of strategic transformation that accelerate business velocity and growth. It's imperative to get ideas to market immediately.
+At the same time, business systems have also become increasingly complex with users demanding more. Users expect rapid responsiveness, innovative features, and zero downtime. Performance problems, recurring errors, and the inability to move fast are no longer acceptable. They'll easily move to your competitor. Cloud-native systems are designed to embrace rapid change, large scale, and resilience
 
-Here are some companies who have implemented these techniques. Think about the speed, agility, and scalability they've achieved.
+Here are some companies who have implemented cloud-native techniques. Think about the speed, agility, and scalability they've achieved.
 
 | Company | Experience |
 | :-------- | :-------- |
@@ -29,9 +27,9 @@ Here are some companies who have implemented these techniques. Think about the s
 | [Uber](https://eng.uber.com/micro-deploy/) | Has 1,000+ services in production. Deploys several thousand times each week. |
 | [WeChat](https://www.cs.columbia.edu/~ruigu/papers/socc18-final100.pdf) | Has 3,000+ services in production. Deploys 1,000 times a day. |
 
-As you can see, Netflix, Uber, and WeChat expose systems that consist of hundreds of independent microservices. This architectural style enables them to rapidly respond to market conditions. They can instantaneously update small areas of a live, complex application, and individually scale those areas as needed.
+As you can see, Netflix, Uber, and, WeChat expose cloud-native systems that consist of hundreds of independent services. This architectural style enables them to rapidly respond to market conditions. They can instantaneously update small areas of a live, complex application, without a full redeployment. They can individually scale services as needed.
 
-The speed and agility of cloud native come about from many factors. Foremost is cloud infrastructure. Five other foundational pillars shown in Figure 1-3 also provide the bedrock for cloud-native systems.
+The speed and agility of cloud native derive from many factors. Foremost is cloud infrastructure. But there's more: Five other foundational pillars shown in Figure 1-3 also provide the bedrock for cloud-native systems.
 
 ![Cloud-native foundational pillars](./media/cloud-native-foundational-pillars.png)
 
@@ -43,9 +41,9 @@ Let's take some time to better understand the significance of each pillar.
 
 Cloud-native systems take full advantage of the cloud service model.
 
-Designed to thrive in a dynamic, virtualized cloud environment, these systems make extensive use of [Platform as a Service (PaaS)](https://azure.microsoft.com/overview/what-is-paas/) compute infrastructure and managed services. They treat the underlying infrastructure as *disposable* - provisioned in minutes and resized, scaled, moved, or destroyed on demand – via automation.
+Designed to thrive in a dynamic, virtualized cloud environment, these systems make extensive use of [Platform as a Service (PaaS)](https://azure.microsoft.com/overview/what-is-paas/) compute infrastructure and managed services. They treat the underlying infrastructure as *disposable* - provisioned in minutes and resized, scaled, or destroyed on demand – via automation.
 
-Consider the widely accepted DevOps concept of [Pets vs. Cattle](https://medium.com/@Joachim8675309/devops-concepts-pets-vs-cattle-2380b5aab313). In a traditional data center, servers are treated as *Pets*: a physical machine, given a meaningful name, and cared for. You scale by adding more resources to the same machine (scaling up). If the server becomes sick, you nurse it back to health. Should the server become unavailable, everyone notices.
+Consider the widely accepted DevOps concept of [Pets vs. Cattle](https://medium.com/@Joachim8675309/devops-concepts-pets-vs-cattle-2380b5aab313). In a traditional data center, servers are treated as *Pets*: a physical machine, given a meaningful name, and *cared* for. You scale by adding more resources to the same machine (scaling up). If the server becomes sick, you nurse it back to health. Should the server become unavailable, everyone notices.
 
 The *Cattle* service model is different. You provision each instance as a virtual machine or container. They're identical and assigned a system identifier such as Service-01, Service-02, and so on. You scale by creating more of them (scaling out). When one becomes unavailable, nobody notices.
 
@@ -73,16 +71,16 @@ The following table highlights the Twelve-Factor methodology:
 | 2 | Dependencies | Each microservice isolates and packages its own dependencies, embracing changes without impacting the entire system. |
 | 3 | Configurations  | Configuration information is moved out of the microservice and externalized through a configuration management tool outside of the code. The same deployment can propagate across environments with the correct configuration applied.  |
 | 4 | Backing Services | Ancillary resources (data stores, caches, message brokers) should be exposed via an addressable URL. Doing so decouples the resource from the application, enabling it to be interchangeable.  |
-| 5 | Build, Release, Run | Each release must enforce a strict separation across the build, release, and run stages. Each should be tagged with a unique ID and support the ability to roll back. Modern CI/CD systems help fulfill this principle. |
-| 6 | Processes | Each microservice should execute in its own process,  isolated from other running services. Externalize required state to a backing service such as a distributed cache or data store. |
+| 5 | Build, Release, Run | Each release must enforce a strict separation across the build, release, and run stages. Each should be tagged with a unique ID and support the ability to roll back. Modern CI/CD pipelines help fulfill this principle. |
+| 6 | Processes | Each microservice should execute in its own process, isolated from other running services. Externalize state to a backing service such as a distributed cache or data store. |
 | 7 | Port Binding | Each microservice should be self-contained with its interfaces and functionality exposed on its own port. Doing so provides isolation from other microservices. |
-| 8 | Concurrency | Services scale out across a large number of small identical processes (copies) as opposed to scaling-up a single large instance on the most powerful machine available. |
-| 9 | Disposability | Service instances should be disposable, favoring fast startups to increase scalability opportunities and graceful shutdowns to leave the system in a correct state. Docker containers along with an orchestrator inherently satisfy this requirement. |
+| 8 | Concurrency | Scale out services horizontally across a large number of small identical processes (copies) as opposed to scaling-up a single large instance on the most powerful machine available. |
+| 9 | Disposability | Service instances should be disposable. Favor fast startup to increase scalability opportunities and graceful shutdowns to leave the system in a correct state. Docker containers along with an orchestrator inherently satisfy this requirement. |
 | 10 | Dev/Prod Parity | Keep environments across the application lifecycle as similar as possible, avoiding costly shortcuts. Here, the adoption of containers can greatly contribute by promoting the same execution environment. |
-| 11 | Logging | Treat logs generated by microservices as event streams. Process them with an event aggregator and propagate the data to data-mining/log management tools like Azure Monitor or Splunk and eventually long-term archival. |
-| 12 | Admin Processes | Run administrative/management tasks as one-off processes. Tasks can include data cleanup and pulling analytics for a report. Tools executing these tasks should be  invoked from the production environment, but separately from the application. |
+| 11 | Logging | Treat logs generated by microservices as event streams. Process them with an event aggregator. Propagate log data to data-mining/log management tools like Azure Monitor or Splunk and eventually to long-term archival. |
+| 12 | Admin Processes | Run administrative/management tasks as one-off processes. Tasks can include data cleanup and pulling analytics for a report. Tools executing these tasks should be invoked from the production environment and separately from the application. |
 
-In the book, [Beyond the Twelve-Factor App](https://content.pivotal.io/blog/beyond-the-twelve-factor-app), author Kevin Hoffman details each of the original 12 factors (written in 2011). Additionally, he discusses three extra factors that reflect today's modern cloud application design.
+In the book, [Beyond the Twelve-Factor App](https://content.pivotal.io/blog/beyond-the-twelve-factor-app), author Kevin Hoffman details each of the original 12 factors (written in 2011). Additionally, he discusses three additional factors that reflect today's modern cloud application design.
 
 |    |  New Factor | Explanation  |
 | :-------- | :-------- | :-------- |
@@ -92,15 +90,29 @@ In the book, [Beyond the Twelve-Factor App](https://content.pivotal.io/blog/bey
 
 We'll refer to many of the 12+ factors in this chapter and throughout the book.
 
+### Azure Well Architected Framework and Azure Landing Zones
+
+he assessment was developed to assess most cloud based workload. However, they fit best if you have chosen a cloud native architecture.
+
+Whether you’re developing cloud native applications on Amazon Web Services (AWS) or modernizing existing applications and migrating them to AWS, you have many decisions to make throughout the application lifecycle. Some of the decisions will be based on opinion or experience, such as which language to use or which application programming interfaces (APIs) will be needed.
+
+However, many of the decisions that you make—such as sizing for AWS instances or data storage type—should be based on data-driven best practices. Taking a data-led, best-practice approach helps you create a well-architected application and application environment on AWS.
+
+That’s what the AWS Well-Architected Framework (WAF) is all about: providing “a consistent approach for customers and partners to evaluate architectures and implement designs that will scale over time.” 
+
+The WAF is the result of years of experience with thousands of customers creating architectures that are built to be secure, high-performing, resilient, and efficient. Based on five pillars—operational excellence, security, reliability, performance efficiency, and cost optimization—the WAF offers detailed guidance, best practices, and foundational questions to evaluate and implement architectures that will scale over time. 
+
+-- landing zone
+https://blog.jcorioland.io/archives/2021/06/07/building-cloud-native-platform-microsoft-azure-kubernetes.html
 ### Critical Design Considerations
 
 Beyond the guidance provided from the twelve-factor methodology, there are several critical design decisions you must make when constructing distributed systems.
 
 *Communication*
 
-How will front-end client applications communicate with backed-end core services? Will you allow direct communication? Or, might you abstract the back-end services with a gateway façade that provides  flexibility, control, and security?
+How will front-end client applications communicate with backed-end core services? Will you allow direct communication? Or, might you abstract the back-end services with a gateway façade that provides flexibility, control, and security?
 
-How will back-end core services communicate with each other? Will you allow direct HTTP calls that lead to coupling and impact performance and agility? Or might you consider decoupled messaging with queue and topic technologies?
+How will back-end core services communicate with each other? Will you allow direct HTTP calls that can increase coupling and impact performance and agility? Or might you consider decoupled messaging with queue and topic technologies?
 
 Communication is covered in detail Chapter 4, *Cloud-Native Communication Patterns*.
 
@@ -118,7 +130,7 @@ Distributed data is covered in detail Chapter 5, *Cloud-Native Data Patterns*.
 
 *Identity*
 
-How will your service identify who is accessing it and what permissions they have?
+How will your service authenticate who is accessing it and authorize what permissions they have?
 
 Identity is covered in detail Chapter 8, *Identity*.
 

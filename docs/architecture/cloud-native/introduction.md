@@ -7,9 +7,9 @@ ms.date: 07/25/2021
 
 # Introduction to cloud-native applications
 
-Another productive day, at the office, working on "the next big thing."
+Another day, at the office, working on "the next big thing."
 
-Your cellphone rings. It's your friendly recruiter - the one who calls you every day with exciting new opportunities.
+Your cellphone rings. It's your friendly recruiter - the one who calls daily with exciting new opportunities.
 
 But this time it's different: Start-up, equity, and plenty of funding.
 

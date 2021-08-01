@@ -17,7 +17,7 @@ If your project uses a C# version less than 10, you must explicitly [disable thi
 
 ## Old behavior
 
-No implicit namespaces are added to C# projects.
+No implicit namespaces are added to C# projects and there are no type conflicts.
 
 ## New behavior
 
@@ -31,9 +31,16 @@ The default namespaces are included by adding `global using` directives to a gen
 
 | SDK | Default namespaces |
 | - | - |
-| Microsoft.NET.Sdk | System<br/>System.Collections.Generic<br/>System.IO<br/>System.Linq<br/>System.Net.Http<br/>System.Threading<br/>System.Threading.Tasks |
-| Microsoft.NET.Sdk.Web | System.Net.Http.Json<br/>Microsoft.AspNetCore.Builder<br/>Microsoft.AspNetCore.Hosting<br/>Microsoft.AspNetCore.Http<br/>Microsoft.AspNetCore.Routing<br/>Microsoft.Extensions.Configuration<br/>Microsoft.Extensions.DependencyInjection<br/>Microsoft.Extensions.Hosting<br/>Microsoft.Extensions.Logging |
-| Microsoft.NET.Sdk.Worker | Microsoft.Extensions.Configuration<br/>Microsoft.Extensions.DependencyInjection<br/>Microsoft.Extensions.Hosting<br/>Microsoft.Extensions.Logging |
+| Microsoft.NET.Sdk | <xref:System><br/><xref:System.Collections.Generic?displayProperty=fullName><br/><xref:System.IO?displayProperty=fullName><br/><xref:System.Linq?displayProperty=fullName><br/><xref:System.Net.Http?displayProperty=fullName><br/><xref:System.Threading?displayProperty=fullName><br/><xref:System.Threading.Tasks?displayProperty=fullName> |
+| Microsoft.NET.Sdk.Web | <xref:System.Net.Http.Json?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Builder?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Hosting?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Http?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Routing?displayProperty=fullName><br/><xref:Microsoft.Extensions.Configuration?displayProperty=fullName><br/><xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName><br/><xref:Microsoft.Extensions.Hosting?displayProperty=fullName><br/><xref:Microsoft.Extensions.Logging?displayProperty=fullName> |
+| Microsoft.NET.Sdk.Worker | <xref:Microsoft.Extensions.Configuration?displayProperty=fullName><br/><xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName><br/><xref:Microsoft.Extensions.Hosting?displayProperty=fullName><br/><xref:Microsoft.Extensions.Logging?displayProperty=fullName> |
+
+These implicit namespaces may cause type conflicts. For example, if you're authoring an MSBuild task, and thus deriving from the abstract <xref:Microsoft.Build.Utilities.Task?displayProperty=fullName> class, you'll see a conflict with the <xref:System.Threading.Tasks.Task?displayProperty=fullName> class. This conflict occurs because the <xref:System.Threading.Tasks?displayProperty=fullName> namespace is implicitly included. The error looks similar to:
+
+```txt
+... error CS0104: 'Task' is an ambiguous reference between 'Microsoft.Build.Utilities.Task' and 'System.Threading.Tasks.Task' 
+... error CS0115: 'SomeTask.Execute()': no suitable method found to override
+```
 
 ## Change category
 

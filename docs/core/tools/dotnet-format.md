@@ -31,7 +31,7 @@ The MSBuild project or solution to run code formatting on. If a project or solut
 
 ## Options
 
-* **`--diagnostics <diagnostics>`**
+* **`--diagnostics <DIAGNOSTICS>`**
 
   A space separated list of diagnostic ids to use as a filter when fixing code style or 3rd party issues. [default: whichever ids are listed in the editorconfig file]
 
@@ -47,11 +47,11 @@ The MSBuild project or solution to run code formatting on. If a project or solut
 
   Verify no formatting changes would be performed. Terminates with a non zero exit code if any files would have been formatted.
 
-* **`--include <include>`**
+* **`--include <INCLUDE>`**
 
   A list of relative file or folder paths to include in formatting. All files are formatted if empty. [default: all files in the solution or project]
 
-* **`--exclude <exclude>`**
+* **`--exclude <EXCLUDE>`**
 
   A list of relative file or folder paths to exclude from formatting.  [default: none]
 
@@ -63,11 +63,11 @@ The MSBuild project or solution to run code formatting on. If a project or solut
 
   Set the verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Default value is `m[inimal]`.
 
-* **`--binarylog <binary-log-path>`**
+* **`--binarylog <BINARY-LOG-PATH>`**
 
   Log all project or solution load information to a binary log file.
 
-* **`--report <report-path>`**
+* **`--report <REPORT-PATH>`**
 
   Accepts a file path, which if provided, will produce a json report in the given directory..
 

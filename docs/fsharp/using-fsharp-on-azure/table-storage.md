@@ -37,11 +37,19 @@ The samples in this article can be used in either an F# application or an F# scr
 
 ### How to execute scripts
 
-Highlight a line and press `ALT + ENTER` to execute it section by section, the results are shown in the FSI console.
+F# Interactive, `dotnet fsi`, can be launched interactively, or it can be launched from the command line to run a script. The command-line syntax is
+
+```.NET CLI
+> dotnet fsi [options] [ script-file [arguments] ]
+```
 
 ### Add packages in a script
 
-Next, use `#r` `nuget:package name` to install the `Azure.Data.Tables` package.
+Next, use `#r` `nuget:package name` to install the `Azure.Data.Tables` package. Such as
+
+```fsharp
+> #r "nuget: Azure.Data.Tables"
+```
 
 ### Add namespace declarations
 

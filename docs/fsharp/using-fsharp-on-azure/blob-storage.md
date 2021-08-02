@@ -23,11 +23,21 @@ The samples in this article can be used in either an F# application or an F# scr
 
 ### How to execute scripts
 
-Highlight a line and press `ALT + ENTER` to execute it section by section, the results are shown in the FSI console.
+F# Interactive, `dotnet fsi`, can be launched interactively, or it can be launched from the command line to run a script. The command-line syntax is
+
+```.NET CLI
+> dotnet fsi [options] [ script-file [arguments] ]
+```
 
 ### Add packages in a script
 
-Next, use `#r` `nuget:package name` to install the `Azure.Storage.Blobs` and `Azure.Storage.Blobs.Models` and `Azure.Storage.Blobs.Specialized` packages.
+Next, use `#r` `nuget:package name` to install the `Azure.Storage.Blobs` and `Azure.Storage.Blobs.Models` and `Azure.Storage.Blobs.Specialized` packages.Such as
+
+```fsharp
+> #r "nuget: Azure.Storage.Blobs"
+> #r "nuget: Azure.Storage.Blobs.Models"
+> #r "nuget: Azure.Storage.Blobs.Specialized"
+```
 
 ### Add namespace declarations
 

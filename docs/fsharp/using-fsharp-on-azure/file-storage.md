@@ -16,7 +16,7 @@ For a conceptual overview of file storage, see [the .NET guide for file storage]
 To use this guide, you must first [create an Azure storage account](/azure/storage/storage-create-storage-account).
 You'll also need your storage access key for this account.
 
-## Create an F# Script and Start F# Interactive
+## Create an F\# script and start F\# interactive
 
 The samples in this article can be used in either an F# application or an F# script. To create an F# script, create a file with the `.fsx` extension, for example `files.fsx`, in your F# development environment.
 
@@ -42,7 +42,7 @@ For the tutorial, you'll enter your connection string in your script, like this:
 
 [!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L14-L14)]
 
-### Create the File service client
+### Create the file service client
 
 The `ShareClient` type enables you to programmatically use files stored in File storage. Here's one way to create the service client:
 

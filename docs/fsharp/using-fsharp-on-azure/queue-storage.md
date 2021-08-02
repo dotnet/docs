@@ -20,7 +20,7 @@ For a conceptual overview of queue storage, see [the .NET guide for queue storag
 To use this guide, you must first [create an Azure storage account](/azure/storage/storage-create-storage-account).
 You'll also need your storage access key for this account.
 
-## Create an F# Script and Start F# Interactive
+## Create an F\# script and start F\# interactive
 
 The samples in this article can be used in either an F# application or an F# script. To create an F# script, create a file with the `.fsx` extension, for example `queues.fsx`, in your F# development environment.
 
@@ -46,7 +46,7 @@ For the tutorial, you'll enter your connection string in your script, like this:
 
 [!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L9-L9)]
 
-### Create the Queue service client
+### Create the queue service client
 
 The `QueueClient` class enables you to retrieve queues stored in Queue storage. Here's one way to create the client:
 

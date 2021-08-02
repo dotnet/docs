@@ -5,7 +5,7 @@ author: sylvanc
 ms.date: 03/26/2018
 ms.custom: "devx-track-fsharp"
 ---
-# Get started with Azure Table Storage and the Azure Cosmos DB Table API using F\#
+# Get started with Azure Table Storage and the Azure Cosmos DB Table api using F\#
 
 Azure Table Storage is a service that stores structured NoSQL data in the cloud. Table storage is a key/attribute store with a schemaless design. Because Table storage is schemaless, it's easy to adapt your data as the needs of your application evolve. Access to data is fast and cost-effective for all kinds of applications. Table storage is typically significantly lower in cost than traditional SQL for similar volumes of data.
 
@@ -31,7 +31,7 @@ This tutorial shows how to write F# code to do some common tasks using Azure Tab
 
 To use this guide, you must first [create an Azure storage account](/azure/storage/storage-create-storage-account) or [Azure Cosmos DB account](https://azure.microsoft.com/try/cosmosdb/).
 
-## Create an F# Script and Start F# Interactive
+## Create an F\# script and start F\# interactive
 
 The samples in this article can be used in either an F# application or an F# script. To create an F# script, create a file with the `.fsx` extension, for example `tables.fsx`, in your F# development environment.
 
@@ -61,7 +61,7 @@ For the tutorial, enter your connection string in your script, like the followin
 
 [!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L11-L11)]
 
-### Create the Table service client
+### Create the table service client
 
 The `TableServiceClient` class enables you to retrieve tables and entities in Table storage. Here's one way to create the service client:
 

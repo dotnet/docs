@@ -18,7 +18,7 @@ let storageConnString = "..." // fill this in from your storage account
 //
 
 // Create a dummy file to upload
-let localFile = "/myfile.txt"
+let localFile = "./myfile.txt"
 File.WriteAllText(localFile, "some data")
 
 //

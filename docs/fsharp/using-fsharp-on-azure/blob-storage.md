@@ -17,7 +17,7 @@ For a conceptual overview of blob storage, see [the .NET guide for blob storage]
 
 To use this guide, you must first [create an Azure storage account](/azure/storage/common/storage-account-create). You also need your storage access key for this account.
 
-## Create an F# Script and Start F# Interactive
+## Create an F\# script and start F\# interactive
 
 The samples in this article can be used in either an F# application or an F# script. To create an F# script, create a file with the `.fsx` extension, for example `blobs.fsx`, in your F# development environment.
 
@@ -49,7 +49,7 @@ Before you begin, create some dummy local data in the directory of our script. L
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L20-L22)]
 
-### Create the Blob service client
+### Create the blob service client
 
 The `BlobContainerClient` type enables you to create containers and retrieve blobs stored in Blob storage. Here's one way to create the container client:
 
@@ -127,7 +127,7 @@ This example shows a hierarchical listing, by using the `GetBlobsByHierarchy` me
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L84-L96)]
 
-We can now use this hierarchical listing routine as follows. First you upload some dummy data (using the local
+We can now use this hierarchical listing routine as follows. First, upload some dummy data (using the local
 file created earlier in this tutorial).
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L100-L103)]

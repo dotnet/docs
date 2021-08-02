@@ -21,7 +21,7 @@ dotnet clean -h|--help
 
 ## Description
 
-`dotnet format` is a code formatter that applies style preferences to a project or solution. Preferences will be read from an .editorconfig file, if present, otherwise a default set of preferences will be used.
+`dotnet format` is a code formatter that applies style preferences to a project or solution. Preferences will be read from an .editorconfig file, if present, otherwise a default set of preferences will be used. For more information on editorconfig files see the documentation [here](https://docs.microsoft.com/dotnet/fundamentals/code-analysis/configuration-files#editorconfig).
 
 ## Arguments
 
@@ -35,7 +35,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 * **`--diagnostics <DIAGNOSTICS>`**
 
-  A space separated list of diagnostic ids to use as a filter when fixing code style or 3rd party issues. [default: whichever ids are listed in the editorconfig file]
+  A space separated list of diagnostic ids to use as a filter when fixing code style or 3rd party issues. Default value is whichever ids are listed in the editorconfig file. For a list of built-in analyzer rule ids that you can specify see the list of ids [here](https://docs.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/#index-of-rules). 
 
 * **`--severity`**
 

@@ -31,6 +31,8 @@ The MSBuild project or solution to run code formatting on. If a project or solut
 
 ## Options
 
+None of the options below are required for the `dotnet format` command to succeed but can be used to further customize what is formatted and by which rules.
+
 * **`--diagnostics <DIAGNOSTICS>`**
 
   A space separated list of diagnostic ids to use as a filter when fixing code style or 3rd party issues. [default: whichever ids are listed in the editorconfig file]

@@ -1,6 +1,6 @@
 ---
 title: dotnet format command
-description: The dotnet format command formats code to match editorconfig settings for the current directory.
+description: The dotnet format command formats code to match `editorconfig` settings for the current directory.
 ms.date: 07/12/2021
 ---
 # dotnet format
@@ -9,7 +9,7 @@ ms.date: 07/12/2021
 
 ## Name
 
-`dotnet format` - Formats code to match editorconfig settings.
+`dotnet format` - Formats code to match `editorconfig` settings.
 
 ## Synopsis
 
@@ -21,7 +21,7 @@ dotnet clean -h|--help
 
 ## Description
 
-`dotnet format` is a code formatter that applies style preferences to a project or solution. Preferences will be read from an .editorconfig file, if present, otherwise a default set of preferences will be used. For more information on editorconfig files see the documentation [here](https://docs.microsoft.com/dotnet/fundamentals/code-analysis/configuration-files#editorconfig).
+`dotnet format` is a code formatter that applies style preferences to a project or solution. Preferences will be read from an .`editorconfig` file, if present, otherwise a default set of preferences will be used. For more information on `editorconfig` files see the documentation [here](https://docs.microsoft.com/dotnet/fundamentals/code-analysis/configuration-files#`editorconfig`).
 
 ## Arguments
 
@@ -35,7 +35,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 * **`--diagnostics <DIAGNOSTICS>`**
 
-  A space separated list of diagnostic ids to use as a filter when fixing code style or 3rd party issues. Default value is whichever ids are listed in the editorconfig file. For a list of built-in analyzer rule ids that you can specify see the list of ids [here](https://docs.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/#index-of-rules). 
+  A space separated list of diagnostic ids to use as a filter when fixing code style or 3rd party issues. Default value is whichever ids are listed in the `editorconfig` file. For a list of built-in analyzer rule ids that you can specify see the list of ids [here](https://docs.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/#index-of-rules).
 
 * **`--severity`**
 
@@ -76,6 +76,48 @@ None of the options below are required for the `dotnet format` command to succee
 * **`-h|--help`**
 
   Show help and usage information
+
+## Subcommands
+
+### Whitespace
+
+`dotnet format whitespace` - Formats code to match `editorconfig` settings for whitespace.
+
+#### Description
+
+The `dotnet format whitespace` subcommand will only run formatting rule associated with whitespace formatting. For a complete list of possible formatting options that you can specify in your `editorconfig` file see the documentation [here](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-csharp-formatting).
+
+### Style
+
+`dotnet format style` - Formats code to match `editorconfig` settings for code style.
+
+#### Description
+
+The `dotnet format style` subcommand will only run formatting rule associated with code style formatting. For a complete list of possible formatting options that you can specify in your `editorconfig` file see the documentation [here](https://docs.microsoft.com/dotnet/fundamentals/code-analysis/style-rules/language-rules).
+
+#### Options
+
+* **`--severity`**
+
+  The severity of diagnostics to fix. Allowed values are `info`, `warn`, and `error`. The default value is `warn`
+
+### Analyzers
+
+`dotnet format analyzers` - Formats code to match `editorconfig` settings for analyzers.
+
+#### Description
+
+The `dotnet format analyzers` subcommand will only run formatting rule associated with analyzers. For a list of possible analyzer rules that you can specify in your `editorconfig` file see the documentation [here](https://docs.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/#index-of-rules).
+
+##### Options
+
+* **`--diagnostics <DIAGNOSTICS>`**
+
+  A space separated list of diagnostic ids to use as a filter when fixing code style or 3rd party issues. Default value is whichever ids are listed in the `editorconfig` file. For a list of built-in analyzer rule ids that you can specify see the list of ids [here](https://docs.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/#index-of-rules).
+
+* **`--severity`**
+
+  The severity of diagnostics to fix. Allowed values are `info`, `warn`, and `error`. The default value is `warn`
 
 ## Examples
 

@@ -732,7 +732,7 @@ The `ValidateExecutableReferencesMatchSelfContained` property can be used to dis
 
 ### DisableFrameworkReferenceAnalyzers
 
-The `DisableFrameworkReferenceAnalyzers` property can be used to disable all analyzers and/or source generators that are resolved from `FrameworkReference` items.  Similar to [EnableNETAnalyzers](#enablenetanalyzers) which controls analyzers that come from the SDK, however this property can be used to disable analyzers that are part of the framework itself (for example, `net6.0`).
+The `DisableFrameworkReferenceAnalyzers` property can be used to disable all analyzers and source generators that are resolved from `FrameworkReference` items.  This property is similar to [EnableNETAnalyzers](#enablenetanalyzers), which controls analyzers that come from the SDK. However, `DisableFrameworkReferenceAnalyzers` disables analyzers that are part of the framework itself, for example, `net6.0`.
 
 ```xml
 <PropertyGroup>

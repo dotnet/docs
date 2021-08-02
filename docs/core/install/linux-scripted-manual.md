@@ -106,7 +106,7 @@ For more information, see [dotnet-install scripts reference](../tools/dotnet-ins
 
 As an alternative to the package managers, you can download and manually install the SDK and runtime. Manual installation is commonly used as part of continuous integration testing or on an unsupported Linux distribution. For a developer or user, it's better to use a package manager.
 
-If you install the .NET SDK, you will not need to install the corresponding runtime. First, download a **binary** release for either the SDK or the runtime from one of the following sites:
+First, download a **binary** release for either the SDK or the runtime from one of the following sites. If you install the .NET SDK, you will not need to install the corresponding runtime:
 
 - ✔️ [.NET 5.0 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
 - ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet/3.1)

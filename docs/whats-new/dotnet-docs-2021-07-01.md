@@ -12,7 +12,7 @@ Welcome to what's new in the .NET docs from July 1, 2021 through July 31, 2021. 
 
 ### New articles
 
-- [Frequently Asked Questions](../framework/data/adonet/sql/linq/frequently-asked-questions.yml)
+- [Frequently Asked Questions - LINQ to SQL](../framework/data/adonet/sql/linq/frequently-asked-questions.yml)
 
 ### Updated articles
 
@@ -100,7 +100,6 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [Youssef1313](https://github.com/Youssef1313) - Youssef Victor (8)
 - [jwood803](https://github.com/jwood803) - Jon Wood (7)
 - [steveberdy](https://github.com/steveberdy) - Steve Berdy (5)
-- [zedy-wj](https://github.com/zedy-wj) - Wenjie Yu（MSFT） (4)
 - [NewellClark](https://github.com/NewellClark) - Newell Clark (3)
 - [BenjaminMichaelis](https://github.com/BenjaminMichaelis) - Benjamin Michaelis (2)
 - [pbiggar](https://github.com/pbiggar) - Paul Biggar (2)

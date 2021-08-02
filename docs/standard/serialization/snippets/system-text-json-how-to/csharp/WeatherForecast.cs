@@ -8,7 +8,10 @@ namespace SystemTextJsonSamples
     // <WF>
     public class WeatherForecast
     {
+        //<InnerTag>
         public DateTimeOffset Date { get; set; }
+        //</InnerTag>
+
         public int TemperatureCelsius { get; set; }
         public string Summary { get; set; }
     }

@@ -1,10 +1,10 @@
 ---
-title: ".NET docs: What's new for July 1, 2021 - July 31, 2021"
+title: ".NET docs: What's new for July 2021"
 description: "What's new in the .NET docs for July 1, 2021 - July 31, 2021."
 ms.date: 08/01/2021
 ---
 
-# .NET docs: What's new for July 1, 2021 - July 31, 2021
+# .NET docs: What's new for July 2021
 
 Welcome to what's new in the .NET docs from July 1, 2021 through July 31, 2021. This article lists some of the major changes to docs during this period.
 

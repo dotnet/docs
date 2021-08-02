@@ -39,11 +39,11 @@ None of the options below are required for the `dotnet format` command to succee
 
 * **`--severity`**
 
-  The severity of diagnostics to fix. Allowed values are info, warn, and error.
+  The severity of diagnostics to fix. Allowed values are `info`, `warn`, and `error`. The default value is `warn`
 
 * **`--no-restore`**
 
-  Doesn't execute an implicit restore before formatting.
+  Doesn't execute an implicit restore before formatting. Default is to always implicit restore.
 
 * **`--verify-no-changes`**
 
@@ -51,11 +51,11 @@ None of the options below are required for the `dotnet format` command to succee
 
 * **`--include <INCLUDE>`**
 
-  A list of relative file or folder paths to include in formatting. All files are formatted if empty. [default: all files in the solution or project]
+  A space separated list of relative file or folder paths to include in formatting. All files in the solution or project are formatted if empty.
 
 * **`--exclude <EXCLUDE>`**
 
-  A list of relative file or folder paths to exclude from formatting.  [default: none]
+  A space separated list of relative file or folder paths to exclude from formatting.  [default: none]
 
 * **`--include-generated`**
 

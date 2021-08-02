@@ -2,7 +2,7 @@
 title: What is Cloud Native?
 description: Learn about the foundational pillars that provide the bedrock for cloud-native systems
 author: robvet
-ms.date: 07/31/2021
+ms.date: 08/01/2021
 ---
 
 # What is Cloud Native?
@@ -92,17 +92,11 @@ We'll refer to many of the 12+ factors in this chapter and throughout the book.
 
 ### Azure Well Architected Framework and Azure Landing Zones
 
-he assessment was developed to assess most cloud based workload. However, they fit best if you have chosen a cloud native architecture.
+  > WIP: Add brief mention of Azure Well Architected Framework and Landing Zones and tie to cloud native
 
-Whether you’re developing cloud native applications on Amazon Web Services (AWS) or modernizing existing applications and migrating them to AWS, you have many decisions to make throughout the application lifecycle. Some of the decisions will be based on opinion or experience, such as which language to use or which application programming interfaces (APIs) will be needed.
+   > The assessment was developed to assess most cloud based workload. However, they fit best if you have chosen a cloud native architecture. Whether you’re developing cloud native applications on Amazon Web Services (AWS) or modernizing existing applications and migrating them to AWS, you have many decisions to make throughout the application lifecycle. Some of the decisions will be based on opinion or experience, such as which language to use or which application programming interfaces (APIs) will be needed. However, many of the decisions that you make—such as sizing for AWS instances or data storage type—should be based on data-driven best practices. Taking a data-led, best-practice approach helps you create a well-architected application and application environment on AWS. That’s what the AWS Well-Architected Framework (WAF) is all about: providing “a consistent approach for customers and partners to evaluate architectures and implement designs that will scale over time.” The WAF is the result of years of experience with thousands of customers creating architectures that are built to be secure, high-performing, resilient, and efficient. Based on five pillars—operational excellence, security, reliability, performance efficiency, and cost optimization—the WAF offers detailed guidance, best practices, and foundational questions to evaluate and implement architectures that will scale over time. 
 
-However, many of the decisions that you make—such as sizing for AWS instances or data storage type—should be based on data-driven best practices. Taking a data-led, best-practice approach helps you create a well-architected application and application environment on AWS.
-
-That’s what the AWS Well-Architected Framework (WAF) is all about: providing “a consistent approach for customers and partners to evaluate architectures and implement designs that will scale over time.” 
-
-The WAF is the result of years of experience with thousands of customers creating architectures that are built to be secure, high-performing, resilient, and efficient. Based on five pillars—operational excellence, security, reliability, performance efficiency, and cost optimization—the WAF offers detailed guidance, best practices, and foundational questions to evaluate and implement architectures that will scale over time. 
-
--- landing zone
+   > landing zone
 https://blog.jcorioland.io/archives/2021/06/07/building-cloud-native-platform-microsoft-azure-kubernetes.html
 ### Critical Design Considerations
 
@@ -146,19 +140,18 @@ Built as a distributed set of small, independent services that interact through 
 
 - Each is self-contained encapsulating its own data storage technology (SQL, NoSQL) and programming platform.
 
-- Each runs in its own process and communicates with others using standard communication protocols such as HTTP/HTTPS, WebSockets, or [AMQP](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol).
+- Each runs in its own process and communicates with others using standard communication protocols such as HTTP/HTTPS, gRPC, WebSockets, or [AMQP](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol).
 
 - They compose together to form an application.
 
-Figure 1-4 contrasts a monolithic application approach with a microservices approach. Note how the monolith is composed of a layered architecture, which executes in a single process. It typically consumes a relational database. The microservice approach, however, segregates functionality into independent services that include logic and data. Each microservice hosts its own datastore.
+Figure 1-4 contrasts a monolithic application approach with a microservices approach. Note how the monolith is composed of a layered architecture, which executes in a single process. It typically consumes a relational database. The microservice approach, however, segregates functionality into independent services that include logic, state, and data. Each microservice hosts its own datastore.
 
 ![Monolithic deployment versus microservices](./media/monolithic-vs-microservices.png)
 
-**Figure 1-4.** Monolithic deployment versus microservices
+**Figure 1-4.** Monolithic versus microservices architecture
 
-Note how microservices promote the "One Codebase, One Application" principle from the [Twelve-Factor Application](https://12factor.net/), discussed earlier in the chapter.
-
-> *Factor \#1  specifies "A single codebase for each microservice, stored in its own repository. Tracked with version control, it can deploy to multiple environments."*
+> [!NOTE]
+> Note how microservices promote the **Processes** principle from the [Twelve-Factor Application](https://12factor.net/), discussed earlier in the chapter. *Factor \#6  specifies "Each microservice should execute in its own process, isolated from other running services."*
 
 ### Why microservices?
 
@@ -166,29 +159,33 @@ Microservices provide agility.
 
 Earlier in the chapter, we compared an eCommerce application built as a monolith to that with microservices. In the example, we saw some clear benefits:
 
-- Each microservice has an autonomous lifecycle and can evolve independently and deploy frequently. You don't have to wait for a quarterly release to deploy a new features or update. You can update a small area of a complex application with less risk of disrupting the entire system.
+- Each microservice has an autonomous lifecycle and can evolve independently and deploy frequently. You don't have to wait for a quarterly release to deploy a new features or update. You can update a small area of a live application with less risk of disrupting the entire system. The update can be made without a full redeployment of the application.
 
-- Each microservice can scale independently. Instead of scaling the entire application as a single unit, you scale out only those services that require more processing power or network bandwidth. This  fine-grained approach to scaling provides for greater control of your system and helps to reduce overall costs as you scale portions of your system, not everything.
+- Each microservice can scale independently. Instead of scaling the entire application as a single unit, you scale out only those services that require more processing power to meet desired performance levels and service-level agreements. Fine-grained scaling provides for greater control of your system and helps reduce overall costs as you scale portions of your system, not everything.
 
 An excellent reference guide for understanding microservices is [.NET Microservices: Architecture for Containerized .NET Applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook). The book deep dives into microservices design and architecture. It's a companion for a [full-stack microservice reference architecture](https://github.com/dotnet-architecture/eShopOnContainers) available as a free download from Microsoft.
 
 ### Developing microservices
 
-Microservices can be created with any modern development platform.
+Microservices can be created upon any modern development platform.
 
-The Microsoft .NET platform is an excellent choice. Free and open source, it has many built-in features to simplify microservice development. .NET is cross-platform. Applications can be built and run on Windows, macOS, and most flavors of Linux.
+The Microsoft .NET platform is an excellent choice. Free and open source, it has many built-in features that simplify microservice development. .NET is cross-platform. Applications can be built and run on Windows, macOS, and most flavors of Linux.
 
 .NET is highly performant and has scored well in comparison to Node.js and other competing platforms. Interestingly, [TechEmpower](https://www.techempower.com/) conducted an extensive set of [performance benchmarks](https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=plaintext) across many web application platforms and frameworks. .NET scored in the top 10 - well above Node.js and other competing platforms.
 
 .NET is maintained by Microsoft and the .NET community on GitHub.
 
+### Dapr (Distributed Application Runtime)
+
+   > Introduce Dapr and tie to cloud-native development
+
 ## Containers
 
-Nowadays, it's natural to hear the term *container* mentioned in any conversation concerning *cloud native*. In the book, [Cloud Native Patterns](https://www.manning.com/books/cloud-native-patterns), author Cornelia Davis observes that, "Containers are a great enabler of cloud-native software." The Cloud Native Computing Foundation places microservice containerization as the first step in their [Cloud-Native Trail Map](https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png) - guidance for enterprises beginning their cloud-native journey.
+Nowadays, it's natural to hear the term *container* mentioned in any *cloud native* conversation. In the book, [Cloud Native Patterns](https://www.manning.com/books/cloud-native-patterns), author Cornelia Davis observes that, "Containers are a great enabler of cloud-native software." The Cloud Native Computing Foundation places microservice containerization as the first step in their [Cloud-Native Trail Map](https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png) - guidance for enterprises beginning their cloud-native journey.
 
-Containerizing a microservice is simple and straightforward. The code, its dependencies, and runtime are packaged into a binary called a [container image](https://docs.docker.com/glossary/?term=image). Images are stored in a [container registry](https://caylent.com/container-registries/), which acts as a repository or library for images. A registry can be located on your development computer, in your data center, or in a public cloud. Docker itself maintains a public registry via [Docker Hub](https://hub.docker.com/). The Azure cloud features a [container registry](https://azure.microsoft.com/services/container-registry/) to store container images close to the cloud applications that will run them.
+Containerizing a microservice is simple and straightforward. The code, its dependencies, and runtime are packaged into a binary called a [container image](https://docs.docker.com/glossary/?term=image). Images are stored in a [container registry](https://caylent.com/container-registries/), which acts as a repository or library for images. A registry can be located on your development computer, in your data center, or in a public cloud. Docker itself maintains a public registry via [Docker Hub](https://hub.docker.com/). The Azure cloud features a private [container registry](https://azure.microsoft.com/services/container-registry/) to store container images close to the cloud applications that will run them.
 
-When needed, you transform the image into a running container instance. The instance runs on any computer that has a [container runtime](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) engine installed. You can have as many instances of the containerized service as needed.
+When an application starts or scales, you transform the container image into a running container instance. The instance runs on any computer that has a [container runtime](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) engine installed. You can have as many instances of the containerized service as needed.
 
 Figure 1-5 shows three different microservices, each in its own container, running on a single host.
 
@@ -198,27 +195,26 @@ Figure 1-5 shows three different microservices, each in its own container, runni
 
 Note how each container maintains its own set of dependencies and runtime, which can be different. Here, we see different versions of the Product microservice running on the same host. Each container shares a slice of the underlying host operating system, memory, and processor, but is isolated from one another.
 
-Note how well the container model embraces the "Dependencies" principle from the [Twelve-Factor Application](https://12factor.net/).
+> [!NOTE]
+> Note how well the container model embraces the **Dependencies** principle from the [Twelve-Factor Application](https://12factor.net/). *Factor \#2  specifies that "Each microservice isolates and packages its own dependencies, embracing changes without impacting the entire system."*
 
-> *Factor \#2  specifies that "Each microservice isolates and packages its own dependencies, embracing changes without impacting the entire system."*
+Containers support both Linux and Windows workloads. The Azure cloud openly embraces both. Interestingly, it's Linux, not Windows Server, that has become the more popular operating system in Azure.
 
-Containers support both Linux and Windows workloads. The Azure cloud openly embraces both. Interestingly, it's Linux, not Windows Server, that has become the most popular operating system in Azure.
-
-While several container vendors exist, Docker has captured the lion's share of the market. The company has been driving the software container movement. It has become the de facto standard for packaging, deploying, and running cloud-native applications.
+While several container vendors exist, [Docker](https://www.docker.com/) has captured the lion's share of the market. The company has been driving the software container movement. It has become the de facto standard for packaging, deploying, and running cloud-native applications.
 
 ### Why containers?
 
 Containers provide portability and guarantee consistency across environments. By encapsulating everything into a single package, you *isolate* the microservice and its dependencies from the underlying infrastructure.
 
-You can deploy that same container in any environment that has the Docker runtime engine. Containerized workloads also eliminate the expense of pre-configuring each environment with frameworks, software libraries, and runtime engines.
+You can deploy the container in any environment that hosts the Docker runtime engine. Containerized workloads also eliminate the expense of pre-configuring each environment with frameworks, software libraries, and runtime engines.
 
 By sharing the underlying operating system and host resources, containers have a much smaller footprint than a full virtual machine. The smaller size increases the *density*, or number of microservices, that a given host can run at one time.
 
 ### Container orchestration
 
-While tools such as Docker create images and run containers, you also need tools to manage them. Container management is done with a special software program called a container orchestrator. When operating at scale, container orchestration is essential.
+While tools such as Docker create images and run containers, you also need tools to manage them. Container management is done with a special software program called a container orchestrator. When operating at scale with many independent running containers, orchestration is essential.
 
-Figure 1-6 shows management tasks that container orchestrators provide.
+Figure 1-6 shows management tasks that container orchestrators automate.
 
 ![What container orchestrators do](./media/what-container-orchestrators-do.png)
 
@@ -237,17 +233,17 @@ The following table describes common orchestration tasks.
 | Service Discovery | Enable containers to locate each other.|
 | Rolling Upgrades | Coordinate incremental upgrades with zero downtime deployment. Automatically roll back problematic changes.|
 
-Note how orchestrators embrace the disposability and concurrency principles from the [Twelve-Factor Application](https://12factor.net/), discussed earlier in the chapter.
+> [!NOTE]
+> Note how container orchestrators embrace the **Disposability** principle from the [Twelve-Factor Application](https://12factor.net/). *Factor \#9  specifies that "Service instances should be disposable, favoring fast startups to increase scalability opportunities and graceful shutdowns to leave the system in a correct state."* Docker containers along with an orchestrator inherently satisfy this requirement."
 
-> *Factor \#9  specifies that "Service instances should be disposable, favoring fast startups to increase scalability opportunities and graceful shutdowns to leave the system in a correct state. Docker containers along with an orchestrator inherently satisfy this requirement."*
-
-> *Factor \#8  specifies that "Services scale out across a large number of small identical processes (copies) as opposed to scaling-up a single large instance on the most powerful machine available."*
+> [!NOTE]
+> Note also how container orchestrators embrace the **Concurrency** principle from the [Twelve-Factor Application](https://12factor.net/). *Factor \#8  specifies that "Services scale out across a large number of small identical processes (copies) as opposed to scaling-up a single large instance on the most powerful machine available."*
 
 While several container orchestrators exist, [Kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) has become the de facto standard for the cloud-native world. It's a portable, extensible, open-source platform for managing containerized workloads.
 
-You could host your own instance of Kubernetes, but then you'd be responsible for provisioning and managing its resources - which can be complex. The Azure cloud features Kubernetes as a managed service, [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/). A managed service allows you to fully leverage its features, without having to install and maintain it.
+You could host your own instance of Kubernetes, but then you'd be responsible for provisioning and managing its resources - which can be complex. The Azure cloud features Kubernetes as a managed service. Both  [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/) and [Azure RedHat OpenShift (ARO)](https://azure.microsoft.com/services/openshift/) enable you to fully leverage the features and power of Kubernetes as a managed service, without having to install and maintain it.
 
-Azure Kubernetes Services is covered in detail Chapter 2, *Scaling Cloud-Native Applications*.
+Azure Kubernetes Services and Azure RedHat OpenShipft are covered in detail Chapter 3, *Scaling Cloud-Native Applications*.
 
 ## Backing services
 

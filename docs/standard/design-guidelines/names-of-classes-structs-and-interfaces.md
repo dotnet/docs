@@ -36,6 +36,8 @@ The naming guidelines that follow apply to general type naming.
 
  For example, `IComponent` (descriptive noun), `ICustomAttributeProvider` (noun phrase), and `IPersistable` (adjective) are appropriate interface names. As with other type names, avoid abbreviations.
 
+ ❌ DO NOT prefix non-interface names with the letter I.
+
  ✔️ DO ensure that the names differ only by the "I" prefix on the interface name when you are defining a class–interface pair where the class is a standard implementation of the interface.
 
 ## Names of Generic Type Parameters

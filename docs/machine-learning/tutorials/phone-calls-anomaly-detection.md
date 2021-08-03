@@ -34,7 +34,15 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 3. Install the **Microsoft.ML NuGet Package** version **1.5.2**:
 
-    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML** and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.TimeSeries** version **1.5.2**.
+    1. In Solution Explorer, right-click on your project and select **Manage NuGet Packages**.
+    1. Choose "nuget.org" as the Package source.
+    1. Select the **Browse** tab.
+    1. Search for **Microsoft.ML**.
+    1. Select **Microsoft.ML** from the list of packages and choose version **1.5.2** from the **Version** dropdown.
+    1. Select the **Install** button.
+    1. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
+
+    Repeat these steps for **Microsoft.ML.TimeSeries** version **1.5.2**.
 
 4. Add the following `using` statements at the top of your *Program.cs* file:
 

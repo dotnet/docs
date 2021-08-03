@@ -51,7 +51,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 * **`--include <INCLUDE>`**
 
-  A space separated list of relative file or folder paths to include in formatting. All files in the solution or project are formatted if empty.
+  A space-separated list of relative file or folder paths to include in formatting. All files in the solution or project are formatted if empty.
 
 * **`--exclude <EXCLUDE>`**
 

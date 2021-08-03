@@ -139,7 +139,7 @@ The `dotnet format analyzers` subcommand will only run formatting rule associate
   dotnet format --verify-no-changes
   ```
   
-* Clean up all code in the `src` and `tests` directory but not in `src/submodule-a`:
+* Clean up all code in the *src* and *tests* directory but not in *src/submodule-a*:
 
   ```dotnetcli
   dotnet format --include ./src/ ./tests/ --exclude ./src/submodule-a/

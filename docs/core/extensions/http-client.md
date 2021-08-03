@@ -82,7 +82,7 @@ In the preceding code, the request doesn't need to specify a hostname. The code 
 Typed clients:
 
 - Provide the same capabilities as named clients without the need to use strings as keys.
-- Provides IntelliSense and compiler help when consuming clients.
+- Provides [IntelliSense](/visualstudio/ide/using-intellisense) and compiler help when consuming clients.
 - Provide a single location to configure and interact with a particular `HttpClient`. For example, a single typed client might be used:
   - For a single backend endpoint.
   - To encapsulate all logic dealing with the endpoint.
@@ -118,6 +118,8 @@ Consider the following `record` types:
 
 :::code source="snippets/http/shared/ChuckNorrisJoke.cs":::
 
+The following example relies on the [`Refit.HttpClientFactory`](https://www.nuget.org/packages/refit.httpclientfactory) NuGet package.
+
 An interface and a reply are defined to represent the external API and its response:
 
 :::code source="snippets/http/generated/IJokeService.cs":::
@@ -139,7 +141,7 @@ Pooling of handlers is desirable as each handler typically manages its own under
 The default handler lifetime is two minutes. To override the default value use <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.SetHandlerLifetime%2A> per client:
 
 ```csharp
-services.AddHttpClient()
+services.AddHttpClient("Named.Client")
     .SetHandlerLifetime(TimeSpan.FromMinutes(5));
 ```
 
@@ -148,11 +150,45 @@ services.AddHttpClient()
 
 Keeping a single `HttpClient` instance alive for a long duration is a common pattern used before the inception of `IHttpClientFactory`. This pattern becomes unnecessary after migrating to `IHttpClientFactory`.
 
+## Configure the `HttpMessageHandler`
+
+It may be necessary to control the configuration of the inner `HttpMessageHandler` used by a client.
+
+An <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> is returned when adding named or typed clients. The <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigurePrimaryHttpMessageHandler%2A> extension method can be used to define a delegate. The delegate is used to create and configure the primary `HttpMessageHandler` used by that client:
+
+```csharp
+services.AddHttpClient("Named.Client")
+    .ConfigurePrimaryHttpMessageHandler(() =>
+    {
+        return new HttpClientHandler
+        {
+            AllowAutoRedirect = false,
+            UseDefaultCredentials = true
+        };
+    });
+```
+
+### Additional configuration
+
+There are several additional configuration options for controlling the `IHttpClientHandler`:
+
+| Method | Description |
+|--|--|
+| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddHttpMessageHandler%2A> | Adds an additional message handler for a named `HttpClient`. |
+| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTypedClient%2A> | Configured the binding between the `TClient` and the named `HttpClient` associated with the `IHttpClientBuilder`. |
+| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigureHttpClient%2A> | Adds a delegate that will be used to configure a named `HttpClient`. |
+| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigureHttpMessageHandlerBuilder%2A> | Adds a delegate that will be used to configure message handlers using <xref:Microsoft.Extensions.Http.HttpMessageHandlerBuilder> for a named `HttpClient`. |
+| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigurePrimaryHttpMessageHandler%2A> | Configures the primary `HttpMessageHandler` from the dependency injection container for a named `HttpClient`. |
+| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.RedactLoggedHeaders%2A> | Sets the collection of HTTP header names for which values should be redacted before logging. |
+| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.SetHandlerLifetime%2A> | Sets the length of time that a `HttpMessageHandler` instance can be reused. Each named client can have its own configured handler lifetime value. |
+
 ## See also
 
 - [Dependency injection in .NET][di]
 - [Logging in .NET][logging]
 - [Configuration in .NET][config]
+- <xref:System.Net.Http.IHttpClientFactory>
+- <xref:System.Net.Http.HttpClient>
 
 [di]: dependency-injection.md
 [logging]: logging.md

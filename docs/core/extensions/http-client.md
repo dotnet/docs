@@ -128,22 +128,23 @@ A typed client can be added, using Refit to generate the implementation:
 
 The defined interface can be consumed where necessary, with the implementation provided by DI and Refit.
 
-## HttpClient and lifetime management
+## `HttpClient` lifetime management
 
-A new `HttpClient` instance is returned each time `CreateClient` is called on the `IHttpClientFactory`. An <xref:System.Net.Http.HttpClientHandler> is created per named client. The factory manages the lifetimes of the `HttpClientHandler` instances.
+A new `HttpClient` instance is returned each time `CreateClient` is called on the `IHttpClientFactory`. An <xref:System.Net.Http.HttpClientHandler> is created per client. The factory manages the lifetimes of the `HttpClientHandler` instances.
 
 `IHttpClientFactory` pools the `HttpClientHandler` instances created by the factory to reduce resource consumption. An `HttpClientHandler` instance may be reused from the pool when creating a new `HttpClient` instance if its lifetime hasn't expired.
 
-Pooling of handlers is desirable as each handler typically manages its own underlying HTTP connections. Creating more handlers than necessary can result in connection delays. Some handlers also keep connections open indefinitely, which can prevent the handler from reacting to DNS (Domain Name System) changes.
+Pooling of handlers is desirable as each handler typically manages its own underlying HTTP connection. Creating more handlers than necessary can result in connection delays. Some handlers also keep connections open indefinitely, which can prevent the handler from reacting to DNS changes.
 
-The default handler lifetime is two minutes. The default value can be overridden on a per named client basis:
+The default handler lifetime is two minutes. To override the default value use <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.SetHandlerLifetime%2A> per client:
 
 ```csharp
 services.AddHttpClient()
     .SetHandlerLifetime(TimeSpan.FromMinutes(5));
 ```
 
-`HttpClient` instances can generally be treated as .NET objects **not** requiring disposal. Disposal cancels outgoing requests and guarantees the given `HttpClient` instance can't be used after calling <xref:System.IDisposable.Dispose%2A>. `IHttpClientFactory` tracks and disposes resources used by `HttpClient` instances.
+> [!IMPORTANT]
+> `HttpClient` instances can generally be treated as .NET objects **not** requiring disposal. Disposal cancels outgoing requests and guarantees the given `HttpClient` instance can't be used after calling <xref:System.IDisposable.Dispose%2A>. `IHttpClientFactory` tracks and disposes resources used by `HttpClient` instances.
 
 Keeping a single `HttpClient` instance alive for a long duration is a common pattern used before the inception of `IHttpClientFactory`. This pattern becomes unnecessary after migrating to `IHttpClientFactory`.
 

@@ -7,7 +7,7 @@ using Shared;
 
 namespace TypedHttp.Example
 {
-    public sealed class JokeService : IDisposable
+    public sealed class JokeService
     {
         private readonly HttpClient _httpClient = null!;
         private readonly ILogger<JokeService> _logger = null!;
@@ -39,7 +39,5 @@ namespace TypedHttp.Example
 
             return "Oops, something has gone wrong - that's funny at all!";
         }
-
-        void IDisposable.Dispose() => _httpClient?.Dispose();
     }
 }

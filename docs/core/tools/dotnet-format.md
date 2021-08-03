@@ -75,7 +75,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 * **`-h|--help`**
 
-  Show help and usage information
+  Shows help and usage information
 
 ## Subcommands
 

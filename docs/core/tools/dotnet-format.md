@@ -55,7 +55,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 * **`--exclude <EXCLUDE>`**
 
-  A space separated list of relative file or folder paths to exclude from formatting.  [default: none]
+  A space-separated list of relative file or folder paths to exclude from formatting.  The default is none.
 
 * **`--include-generated`**
 

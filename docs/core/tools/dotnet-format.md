@@ -121,7 +121,7 @@ The `dotnet format analyzers` subcommand will only run formatting rule associate
 
 ## Examples
 
-* Clean up all code in the solution:
+* Format all code in the solution:
 
   ```dotnetcli
   dotnet format ./solution.sln

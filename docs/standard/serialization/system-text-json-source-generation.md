@@ -41,7 +41,7 @@ You can use either mode by itself or both.
 
 ### Metadata collection mode
 
-To serialize or deserialize a type, <xref:System.Text.Json.JsonSerializer> needs information about how to access the members of the type. To serialize, `JsonSerializer` needs to know how to access property getters and fields. To deserialize, it needs to know how to access a constructor, property setters, and fields. It also needs to know which attributes from the <xref:System.Text.Json.Serialization> namespace have been used. This information is referred to as *metadata*.
+To serialize or deserialize a type, <xref:System.Text.Json.JsonSerializer> needs information about how to access the members of the type. To serialize, `JsonSerializer` needs to know how to access property getters and fields. To deserialize, it needs to know how to access a constructor, property setters, and fields. It also needs to know if any attributes have been used to customize serialization or deserialization. This information is referred to as *metadata*.
 
 By default, `JsonSerializer` collects metadata at run time by using [Reflection](../../csharp/programming-guide/concepts/reflection.md). Whenever `JsonSerializer` has to serialize or deserialize a type for the first time, it collects and caches this metadata. The metadata collection process takes time and uses memory.
 

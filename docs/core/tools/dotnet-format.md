@@ -67,7 +67,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 * **`--binarylog <BINARY-LOG-PATH>`**
 
-  Log all project or solution load information to a binary log file.
+  Logs all project or solution load information to a binary log file.
 
 * **`--report <REPORT-PATH>`**
 

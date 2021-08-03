@@ -63,7 +63,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 * **`-v|--verbosity <LEVEL>`**
 
-  Set the verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Default value is `m[inimal]`.
+  Sets the verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Default value is `m[inimal]`.
 
 * **`--binarylog <BINARY-LOG-PATH>`**
 

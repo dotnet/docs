@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Shared;
 
-namespace BasicHttp.Example
+namespace NamedHttp.Example
 {
     public class JokeService
     {
@@ -20,14 +20,14 @@ namespace BasicHttp.Example
         public async Task<string> GetRandomJokeAsync()
         {
             // Create the client
-            HttpClient client = _httpClientFactory.CreateClient();
+            HttpClient client = _httpClientFactory.CreateClient(nameof(JokeService));
 
             try
             {
                 // Make HTTP GET request
                 // Parse JSON response deserialize into ChuckNorrisJoke type
                 ChuckNorrisJoke? result = await client.GetFromJsonAsync<ChuckNorrisJoke>(
-                    "https://api.icndb.com/jokes/random?limitTo=[nerdy]",
+                    "jokes/random?limitTo=[nerdy]",
                     DefaultJsonSerialization.Options);
 
                 if (result?.Value?.Joke is not null)

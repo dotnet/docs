@@ -36,13 +36,13 @@ The best approach depends upon the app's requirements.
 
 ### Basic usage
 
-`IHttpClientFactory` can be registered by calling `AddHttpClient`:
+To register the `IHttpClientFactory` call `AddHttpClient`:
 
-[!code-csharp[](http-requests/samples/3.x/HttpClientFactorySample/Startup.cs?name=snippet1&highlight=13)]
+:::code source="snippets/http/basic/Program.cs" range="1-12" highlight="9":::
 
-An `IHttpClientFactory` can be requested using [dependency injection (DI)](xref:fundamentals/dependency-injection). The following code uses `IHttpClientFactory` to create an `HttpClient` instance:
+Consuming services can require the `IHttpClientFactory` as a constructor parameter with [DI][di]. The following code uses `IHttpClientFactory` to create an `HttpClient` instance:
 
-[!code-csharp[](http-requests/samples/3.x/HttpClientFactorySample/Pages/BasicUsage.cshtml.cs?name=snippet1&highlight=9-12,21)]
+:::code source="snippets/http/basic/JokeService.cs" highlight="12,16,18,23":::
 
 Using `IHttpClientFactory` like in the preceding example is a good way to refactor an existing app. It has no impact on how `HttpClient` is used. In places where `HttpClient` instances are created in an existing app, replace those occurrences with calls to <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A>.
 
@@ -51,16 +51,16 @@ Using `IHttpClientFactory` like in the preceding example is a good way to refact
 Named clients are a good choice when:
 
 - The app requires many distinct uses of `HttpClient`.
-- Many `HttpClient`s have different configuration.
+- Many `HttpClient` instances have different configuration.
 
-Configuration for a named `HttpClient` can be specified during registration in `Startup.ConfigureServices`:
+Configuration for a named `HttpClient` can be specified during registration in `ConfigureServices`:
 
-[!code-csharp[](http-requests/samples/3.x/HttpClientFactorySample/Startup.cs?name=snippet2)]
+:::code source="snippets/http/named/Program.cs" range="1-22" highlight="10-19":::
 
 In the preceding code the client is configured with:
 
-- The base address `https://api.github.com/`.
-- Two headers required to work with the GitHub API.
+- The base address `https://api.icndb.com/`.
+- An "User-Agent" header.
 
 #### CreateClient
 
@@ -71,7 +71,7 @@ Each time <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A> is called:
 
 To create a named client, pass its name into `CreateClient`:
 
-[!code-csharp[](http-requests/samples/3.x/HttpClientFactorySample/Pages/NamedClient.cshtml.cs?name=snippet1&highlight=21)]
+:::code source="snippets/http/named/JokeService.cs" highlight="12,16,18,23,29-31":::
 
 In the preceding code, the request doesn't need to specify a hostname. The code can pass just the path, since the base address configured for the client is used.
 
@@ -88,95 +88,50 @@ Typed clients:
 
 A typed client accepts an `HttpClient` parameter in its constructor:
 
-[!code-csharp[](http-requests/samples/5.x/HttpClientFactorySample/GitHub/GitHubService.cs?name=snippet1&highlight=5)]
+:::code source="snippets/http/typed/JokeService.cs" highlight="12,16,18,26-28":::
 
 In the preceding code:
 
-- The configuration is moved into the typed client.
-- The `HttpClient` object is exposed as a public property.
+- The configuration is set when the typed client is added to the service collection.
+- The `HttpClient` is assigned as a class-scoped variable (field), and used with exposed APIs.
 
-API-specific methods can be created that expose `HttpClient` functionality. For example, the `GetAspNetDocsIssues` method encapsulates code to retrieve open issues.
+API-specific methods can be created that expose `HttpClient` functionality. For example, the `GetRandomJokeAsync` method encapsulates code to retrieve a random joke.
 
-The following code calls <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> in `Startup.ConfigureServices` to register a typed client class:
+The following code calls <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> in `ConfigureServices` to register a typed client class:
 
-[!code-csharp[](http-requests/samples/3.x/HttpClientFactorySample/Startup.cs?name=snippet3)]
+:::code source="snippets/http/typed/Program.cs" range="1-21" highlight="10-18":::
 
-The typed client is registered as transient with DI. In the preceding code, `AddHttpClient` registers `GitHubService` as a transient service. This registration uses a factory method to:
+The typed client is registered as transient with DI. In the preceding code, `AddHttpClient` registers `JokeService` as a transient service. This registration uses a factory method to:
 
 1. Create an instance of `HttpClient`.
-1. Create an instance of `GitHubService`, passing in the instance of `HttpClient` to its constructor.
-
-The typed client can be injected and consumed directly:
-
-[!code-csharp[](http-requests/samples/3.x/HttpClientFactorySample/Pages/TypedClient.cshtml.cs?name=snippet1&highlight=11-14,20)]
-
-The configuration for a typed client can be specified during registration in `Startup.ConfigureServices`, rather than in the typed client's constructor:
-
-[!code-csharp[](http-requests/samples/3.x/HttpClientFactorySample/Startup.cs?name=snippet4)]
-
-The `HttpClient` can be encapsulated within a typed client. Rather than exposing it as a property, define a method which calls the `HttpClient` instance internally:
-
-[!code-csharp[](http-requests/samples/3.x/HttpClientFactorySample/GitHub/RepoService.cs?name=snippet1&highlight=4)]
-
-In the preceding code, the `HttpClient` is stored in a private field. Access to the `HttpClient` is by the public `GetRepos` method.
+1. Create an instance of `JokeService`, passing in the instance of `HttpClient` to its constructor.
 
 ### Generated clients
 
-`IHttpClientFactory` can be used in combination with third-party libraries such as [Refit](https://github.com/paulcbetts/refit). Refit is a REST library for .NET. It converts REST APIs into live interfaces. An implementation of the interface is generated dynamically by the `RestService`, using `HttpClient` to make the external HTTP calls.
+`IHttpClientFactory` can be used in combination with third-party libraries such as [Refit](https://github.com/paulcbetts/refit). Refit is a REST library for .NET. It allows for declarative REST API definitions, mapping interface methods to endpoints. An implementation of the interface is generated dynamically by the `RestService`, using `HttpClient` to make the external HTTP calls.
+
+Consider the following `record` types:
+
+:::code source="snippets/http/shared/IdentifiableJokeValue.cs":::
+
+:::code source="snippets/http/shared/ChuckNorrisJoke.cs":::
 
 An interface and a reply are defined to represent the external API and its response:
 
-```csharp
-public interface IHelloClient
-{
-    [Get("/helloworld")]
-    Task<Reply> GetMessageAsync();
-}
-
-public class Reply
-{
-    public string Message { get; set; }
-}
-```
+:::code source="snippets/http/generated/IJokeService.cs":::
 
 A typed client can be added, using Refit to generate the implementation:
 
-```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-    services.AddHttpClient("hello", c =>
-    {
-        c.BaseAddress = new Uri("http://localhost:5000");
-    })
-    .AddTypedClient(c => Refit.RestService.For<IHelloClient>(c));
+:::code source="snippets/http/generated/Program.cs" range="1-22" highlight="10-21":::
 
-    services.AddControllers();
-}
-```
-
-The defined interface can be consumed where necessary, with the implementation provided by DI and Refit:
-
-```csharp
-[ApiController]
-public class ValuesController : ControllerBase
-{
-    private readonly IHelloClient _client;
-
-    public ValuesController(IHelloClient client)
-    {
-        _client = client;
-    }
-
-    [HttpGet("/")]
-    public async Task<ActionResult<Reply>> Index()
-    {
-        return await _client.GetMessageAsync();
-    }
-}
-```
+The defined interface can be consumed where necessary, with the implementation provided by DI and Refit.
 
 ## See also
 
-- [Dependency injection in .NET](dependency-injection.md)
-- [Logging in .NET](logging.md)
-- [Configuration in .NET](configuration.md)
+- [Dependency injection in .NET][di]
+- [Logging in .NET][logging]
+- [Configuration in .NET][config]
+
+[di]: dependency-injection.md
+[logging]: logging.md
+[config]: configuration.md

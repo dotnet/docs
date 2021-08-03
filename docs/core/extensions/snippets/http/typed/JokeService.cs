@@ -5,28 +5,25 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Shared;
 
-namespace BasicHttp.Example
+namespace TypedHttp.Example
 {
-    public class JokeService
+    public sealed class JokeService : IDisposable
     {
-        private readonly IHttpClientFactory _httpClientFactory = null!;
+        private readonly HttpClient _httpClient = null!;
         private readonly ILogger<JokeService> _logger = null!;
 
         public JokeService(
-            IHttpClientFactory httpClientFactory,
+            HttpClient httpClient,
             ILogger<JokeService> logger) =>
-            (_httpClientFactory, _logger) = (httpClientFactory, logger);
+            (_httpClient, _logger) = (httpClient, logger);
 
         public async Task<string> GetRandomJokeAsync()
         {
-            // Create the client
-            HttpClient client = _httpClientFactory.CreateClient();
-
             try
             {
                 // Make HTTP GET request
                 // Parse JSON response deserialize into ChuckNorrisJoke type
-                ChuckNorrisJoke? result = await client.GetFromJsonAsync<ChuckNorrisJoke>(
+                ChuckNorrisJoke? result = await _httpClient.GetFromJsonAsync<ChuckNorrisJoke>(
                     "https://api.icndb.com/jokes/random?limitTo=[nerdy]",
                     DefaultJsonSerialization.Options);
 
@@ -42,5 +39,7 @@ namespace BasicHttp.Example
 
             return "Oops, something has gone wrong - that's funny at all!";
         }
+
+        void IDisposable.Dispose() => _httpClient?.Dispose();
     }
 }

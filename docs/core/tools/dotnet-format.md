@@ -16,7 +16,7 @@ ms.date: 07/12/2021
 ```dotnetcli
 dotnet format [options] [<PROJECT | SOLUTION>]
 
-dotnet clean -h|--help
+dotnet format -h|--help
 ```
 
 ## Description

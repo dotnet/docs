@@ -39,7 +39,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 * **`--severity`**
 
-  The severity of diagnostics to fix. Allowed values are `info`, `warn`, and `error`. The default value is `warn`
+  The minumum severity of diagnostics to fix. Allowed values are `info`, `warn`, and `error`. The default value is `warn`
 
 * **`--no-restore`**
 
@@ -99,7 +99,7 @@ The `dotnet format style` subcommand will only run formatting rule associated wi
 
 * **`--severity`**
 
-  The severity of diagnostics to fix. Allowed values are `info`, `warn`, and `error`. The default value is `warn`
+  The minimum severity of diagnostics to fix. Allowed values are `info`, `warn`, and `error`. The default value is `warn`
 
 ### Analyzers
 
@@ -117,7 +117,7 @@ The `dotnet format analyzers` subcommand will only run formatting rule associate
 
 * **`--severity`**
 
-  The severity of diagnostics to fix. Allowed values are `info`, `warn`, and `error`. The default value is `warn`
+  The minimum severity of diagnostics to fix. Allowed values are `info`, `warn`, and `error`. The default value is `warn`
 
 ## Examples
 

@@ -2,7 +2,7 @@
 title: Obsolete features in .NET 5+
 titleSuffix: ""
 description: Learn about APIs that are marked as obsolete in .NET 5 and later versions that produce SYSLIB compiler warnings.
-ms.date: 04/23/2021
+ms.date: 07/16/2021
 ---
 
 # Obsolete features in .NET 5+
@@ -47,6 +47,11 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0024][0024] | Warning | Creating and unloading [AppDomains](xref:System.AppDomain) is not supported and throws an exception. |
 | [SYSLIB0025][0025] | Warning | <xref:System.Runtime.CompilerServices.SuppressIldasmAttribute> has no effect in .NET 6+. |
 | [SYSLIB0026][0026] | Warning | <xref:System.Security.Cryptography.X509Certificates.X509Certificate> and <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> are immutable. Use the appropriate constructor to create a new certificate. |
+| [SYSLIB0027][0027] | Warning | <xref:System.Security.Cryptography.X509Certificates.PublicKey.Key?displayProperty=nameWithType> is obsolete. Use the appropriate method to get the public key, such as <xref:System.Security.Cryptography.X509Certificates.PublicKey.GetRSAPublicKey>. |
+| [SYSLIB0028][0028] | Warning | <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.PrivateKey?displayProperty=nameWithType> is obsolete. Use the appropriate method to get the private key, such as <xref:System.Security.Cryptography.X509Certificates.RSACertificateExtensions.GetRSAPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2)?displayProperty=nameWithType>, or use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.CopyWithPrivateKey(System.Security.Cryptography.ECDiffieHellman)?displayProperty=nameWithType> method to create a new instance with a private key. |
+| [SYSLIB0029][0029] | Warning | `ProduceLegacyHmacValues` is obsolete. Producing legacy HMAC values is no longer supported. |
+| [SYSLIB0030][0030] | Warning | `HMACSHA1` always uses the algorithm implementation provided by the platform. Use a constructor without the `useManagedSha1` parameter. |
+| [SYSLIB0031][0031] | Warning | <xref:System.Security.Cryptography.CryptoConfig.EncodeOID(System.String)?displayProperty=nameWithType> is obsolete. Use the ASN.1 functionality provided in <xref:System.Formats.Asn1?displayProperty=fullName>. |
 
 <!-- Include adds ## Suppress warnings (H2 heading) -->
 [!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]
@@ -77,3 +82,8 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 [0024]: syslib0024.md
 [0025]: syslib0025.md
 [0026]: syslib0026.md
+[0027]: syslib0027.md
+[0028]: syslib0028.md
+[0029]: syslib0029.md
+[0030]: syslib0030.md
+[0031]: syslib0031.md

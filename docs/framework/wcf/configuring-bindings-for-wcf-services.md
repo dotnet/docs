@@ -32,7 +32,7 @@ When creating an application, you often want to defer decisions to the administr
   
 ### ServiceModel Elements  
 
- You can use the section bounded by the `system.ServiceModel` element to configure a service type with one or more endpoints, as well as settings for a service. Each endpoint can then be configured with an address, a contract, and a binding. For more information about endpoints, see [Endpoint Creation Overview](endpoint-creation-overview.md). If no endpoints are specified, the runtime adds default endpoints. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](simplified-configuration.md) and [Simplified Configuration for WCF Services](/previous-versions/dotnet/framework/wcf/samples/simplified-configuration-for-wcf-services).  
+ You can use the section bounded by the `system.ServiceModel` element to configure a service type with one or more endpoints, as well as settings for a service. Each endpoint can then be configured with an address, a contract, and a binding. For more information about endpoints, see [Endpoint Creation Overview](endpoint-creation-overview.md). If no endpoints are specified, the runtime adds default endpoints. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](simplified-configuration.md) and [Simplified Configuration for WCF Services](./samples/simplified-configuration-for-wcf-services.md).  
   
  A binding specifies transports (HTTP, TCP, pipes, Message Queuing) and protocols (Security, Reliability, Transaction flows) and consists of binding elements, each of which specifies an aspect of how an endpoint communicates with the world.  
   

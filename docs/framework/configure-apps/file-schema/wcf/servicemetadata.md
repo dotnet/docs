@@ -63,7 +63,7 @@ Specifies the publication of service metadata and associated information.
 
  This configuration element allows you to control the metadata publishing features of a service. To prevent unintentional disclosure of potentially sensitive service metadata, the default configuration for Windows Communication Foundation (WCF) services disables metadata publishing. This behavior is secure by default, but also means that you cannot use a metadata import tool (such as Svcutil.exe) to generate the client code required to call the service unless the service’s metadata publishing behavior is explicitly enabled in configuration. Using this configuration element, you can enable this publishing behavior for your service.  
   
- For a detailed example of configuring this behavior, see [Metadata Publishing Behavior](/previous-versions/dotnet/framework/wcf/samples/metadata-publishing-behavior).  
+ For a detailed example of configuring this behavior, see [Metadata Publishing Behavior](../../../wcf/samples/metadata-publishing-behavior.md).  
   
  The optional `httpGetBinding` and `httpsGetBinding` attributes allow you to configure the bindings used for metadata retrieval via HTTP GET (or HTTPS GET). If they are not specified, the default bindings (`HttpTransportBindingElement`, in the case of HTTP and `HttpsTransportBindingElement`, in the case of HTTPS) are used for metadata retrieval as appropriate. Notice that you cannot use these attributes with the built-in WCF bindings. Only bindings with inner binding elements that support <xref:System.ServiceModel.Channels.IReplyChannel> will be supported. Additionally, the <xref:System.ServiceModel.Channels.MessageVersion> property of the binding must be <xref:System.ServiceModel.Channels.MessageVersion.None%2A>.  
   
@@ -122,4 +122,4 @@ Specifies the publication of service metadata and associated information.
 - <xref:System.ServiceModel.Configuration.ServiceMetadataPublishingElement>
 - <xref:System.ServiceModel.Description.ServiceMetadataBehavior>
 - [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)
-- [Metadata Publishing Behavior](/previous-versions/dotnet/framework/wcf/samples/metadata-publishing-behavior)
+- [Metadata Publishing Behavior](../../../wcf/samples/metadata-publishing-behavior.md)

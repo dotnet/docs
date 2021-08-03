@@ -18,7 +18,7 @@ This article details the settings you can use to configure threading in .NET.
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `DOTNET_Thread_UseAllCpuGroups` | `0` - disabled<br/>`1` - enabled |
+| **Environment variable** | `COMPlus_Thread_UseAllCpuGroups` or `DOTNET_Thread_UseAllCpuGroups` | `0` - disabled<br/>`1` - enabled |
 
 ## Minimum threads
 

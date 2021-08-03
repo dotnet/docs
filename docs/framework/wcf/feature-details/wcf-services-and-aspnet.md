@@ -96,7 +96,7 @@ The following table illustrates how the application-wide compatibility mode sett
 > [!NOTE]
 > IIS 7.0 and WAS allows WCF services to communicate over protocols other than HTTP. However, WCF services running in applications that have enabled ASP.NET compatibility mode are not permitted to expose non-HTTP endpoints. Such a configuration generates an activation exception when the service receives its first message.
 
-For more information about enabling ASP.NET compatibility mode for WCF services, see <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode> and the [ASP.NET Compatibility](/previous-versions/dotnet/framework/wcf/samples/aspnet-compatibility) sample.
+For more information about enabling ASP.NET compatibility mode for WCF services, see <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode> and the [ASP.NET Compatibility](../samples/aspnet-compatibility.md) sample.
 
 ## See also
 

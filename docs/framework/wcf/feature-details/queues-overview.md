@@ -77,10 +77,10 @@ This section introduces the general and core concepts behind queued communicatio
 ## See also
 
 - [Queuing in WCF](queuing-in-wcf.md)
-- [Sessions and Queues](/previous-versions/dotnet/framework/wcf/samples/sessions-and-queues)
-- [Dead Letter Queues](/previous-versions/dotnet/framework/wcf/samples/dead-letter-queues)
-- [Volatile Queued Communication](/previous-versions/dotnet/framework/wcf/samples/volatile-queued-communication)
-- [Windows Communication Foundation to Message Queuing](/previous-versions/dotnet/framework/wcf/samples/wcf-to-message-queuing)
-- [Installing Message Queuing (MSMQ)](/previous-versions/dotnet/framework/wcf/samples/installing-message-queuing-msmq)
-- [Message Queuing to Windows Communication Foundation](/previous-versions/dotnet/framework/wcf/samples/message-queuing-to-wcf)
-- [Message Security over Message Queuing](/previous-versions/dotnet/framework/wcf/samples/message-security-over-message-queuing)
+- [Sessions and Queues](../samples/sessions-and-queues.md)
+- [Dead Letter Queues](../samples/dead-letter-queues.md)
+- [Volatile Queued Communication](../samples/volatile-queued-communication.md)
+- [Windows Communication Foundation to Message Queuing](../samples/wcf-to-message-queuing.md)
+- [Installing Message Queuing (MSMQ)](../samples/installing-message-queuing-msmq.md)
+- [Message Queuing to Windows Communication Foundation](../samples/message-queuing-to-wcf.md)
+- [Message Security over Message Queuing](../samples/message-security-over-message-queuing.md)

@@ -63,7 +63,7 @@ items:
     - name: Interfaces
       href: fundamentals/types/interfaces.md
     - name: Generics
-      href: fundamentals/types/generics.md    
+      href: fundamentals/types/generics.md
     - name: Anonymous Types
       href: fundamentals/types/anonymous-types.md
     # TODO: Delegates, lambdas and events
@@ -168,7 +168,7 @@ items:
     items:
     - name: Explore record types
       href: whats-new/tutorials/records.md
-    - name: Explore top level statements
+    - name: Explore top-level statements
       href: whats-new/tutorials/top-level-statements.md
     - name: Explore patterns in objects
       href: whats-new/tutorials/patterns-objects.md
@@ -296,8 +296,6 @@ items:
       href: expression-trees-summary.md
   - name: Native interoperability
     href: programming-guide/interop/index.md
-  - name: Documenting your code
-    href: codedoc.md
   - name: Versioning
     href: versioning.md
 - name: How-to C# articles
@@ -331,8 +329,8 @@ items:
     href: roslyn-sdk/work-with-workspace.md
   - name: Explore code with the syntax visualizer
     href: roslyn-sdk/syntax-visualizer.md
-  - name: Source Generators 
-    href: roslyn-sdk/source-generators-overview.md  
+  - name: Source Generators
+    href: roslyn-sdk/source-generators-overview.md
   - name: Quick starts
     items:
     - name: Syntax analysis
@@ -824,61 +822,6 @@ items:
       href: programming-guide/namespaces/using-namespaces.md
     - name: "How to use the My namespace"
       href: programming-guide/namespaces/how-to-use-the-my-namespace.md
-  - name: XML documentation comments
-    items:
-    - name: Overview
-      displayName: xml documentation comments
-      href: programming-guide/xmldoc/index.md
-    - name: Recommended tags for documentation comments
-      href: programming-guide/xmldoc/recommended-tags-for-documentation-comments.md
-    - name: Processing the XML file
-      href: programming-guide/xmldoc/processing-the-xml-file.md
-    - name: Delimiters for documentation tags
-      href: programming-guide/xmldoc/delimiters-for-documentation-tags.md
-    - name: How to use the XML documentation features
-      href: programming-guide/xmldoc/how-to-use-the-xml-documentation-features.md
-    - name: Documentation tag reference
-      items:
-      - name: <c>
-        href: programming-guide/xmldoc/code-inline.md
-      - name: <code>
-        href: programming-guide/xmldoc/code.md
-      - name: cref attribute
-        href: programming-guide/xmldoc/cref-attribute.md
-      - name: <example>
-        href: programming-guide/xmldoc/example.md
-      - name: <exception>
-        href: programming-guide/xmldoc/exception.md
-      - name: <include>
-        href: programming-guide/xmldoc/include.md
-      - name: <inheritdoc>
-        href: programming-guide/xmldoc/inheritdoc.md
-      - name: <list>
-        href: programming-guide/xmldoc/list.md
-      - name: <para>
-        href: programming-guide/xmldoc/para.md
-      - name: <param>
-        href: programming-guide/xmldoc/param.md
-      - name: <paramref>
-        href: programming-guide/xmldoc/paramref.md
-      - name: <permission>
-        href: programming-guide/xmldoc/permission.md
-      - name: <remarks>
-        href: programming-guide/xmldoc/remarks.md
-      - name: <returns>
-        href: programming-guide/xmldoc/returns.md
-      - name: <see>
-        href: programming-guide/xmldoc/see.md
-      - name: <seealso>
-        href: programming-guide/xmldoc/seealso.md
-      - name: <summary>
-        href: programming-guide/xmldoc/summary.md
-      - name: <typeparam>
-        href: programming-guide/xmldoc/typeparam.md
-      - name: <typeparamref>
-        href: programming-guide/xmldoc/typeparamref.md
-      - name: <value>
-        href: programming-guide/xmldoc/value.md
   - name: File System and the Registry
     items:
     - name: Overview
@@ -1332,7 +1275,7 @@ items:
       displayName: CheckForOverflowUnderflow, checked, AllowUnsafeBlocks, unsafe, DefineConstants, define, LangVersion, langversion, Nullable, nullable
       href: language-reference/compiler-options/language.md
     - name: Output options
-      displayName: DocumentationFile, doc, OutputAssembly, out, PlatformTarget, platform, ProduceReferenceAssembly, refout, TargetType, target, 
+      displayName: DocumentationFile, doc, OutputAssembly, out, PlatformTarget, platform, ProduceReferenceAssembly, refout, TargetType, target,
       href: language-reference/compiler-options/output.md
     - name: Input options
       displayName: References, reference, references, AddModules, addmodule, EmbedInteropTypes, link
@@ -1355,6 +1298,14 @@ items:
     - name: Advanced options
       displayName: MainEntryPoint, StartupObject, main, PdbFile, pdb, PathMap, pathmap, ApplicationConfiguration, appconfig, AdditionalLibPaths, lib, GenerateFullPaths, fullpath, PreferredUILang, preferreduilang, BaseAddress, baseaddress, ChecksumAlgorithm, checksumalgorithm, CodePage, codepage, Utf8Output, utf8output, FileAlignment, filealign, ErrorEndLocation, errorendlocation, NoStandardLib, nostdlib, SubsystemVersion, subsystemversion, ModuleAssemblyName, moduleassemblyname
       href: language-reference/compiler-options/advanced.md
+  - name: XML documentation comments
+    items:
+    - name: Generate API documentation
+      href: language-reference/xmldoc/index.md
+    - name: Recommended tags
+      href: language-reference/xmldoc/recommended-tags.md
+    - name: Examples
+      href: language-reference/xmldoc/examples.md 
   - name: Compiler messages
     href: language-reference/compiler-messages/index.md
 - name: Specifications

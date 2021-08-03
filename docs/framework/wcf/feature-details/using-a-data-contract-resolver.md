@@ -82,10 +82,10 @@ if (serializerBehavior == null)
 SerializerBehavior.DataContractResolver = new MyCustomerResolver();  
 ```  
   
- You can declaratively specify a data contract resolver by implementing an attribute that can be applied to a service.  For more information, see the [KnownAssemblyAttribute](/previous-versions/dotnet/framework/wcf/samples/knownassemblyattribute) sample. This sample implements an attribute called "KnownAssembly" that adds a custom data contract resolver to the service’s behavior.  
+ You can declaratively specify a data contract resolver by implementing an attribute that can be applied to a service.  For more information, see the [KnownAssemblyAttribute](../samples/knownassemblyattribute.md) sample. This sample implements an attribute called "KnownAssembly" that adds a custom data contract resolver to the service’s behavior.  
   
 ## See also
 
 - [Data Contract Known Types](data-contract-known-types.md)
-- [DataContractSerializer Sample](/previous-versions/dotnet/framework/wcf/samples/datacontractserializer-sample)
-- [KnownAssemblyAttribute](/previous-versions/dotnet/framework/wcf/samples/knownassemblyattribute)
+- [DataContractSerializer Sample](../samples/datacontractserializer-sample.md)
+- [KnownAssemblyAttribute](../samples/knownassemblyattribute.md)

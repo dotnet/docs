@@ -54,6 +54,8 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
+[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+
 ## Arguments
 
 `PROJECT | SOLUTION`
@@ -62,17 +64,15 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 ## Options
 
-- **`-c|--configuration <CONFIGURATION>`**
+<!-- markdownlint-disable MD012 -->
 
-  Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project.
+[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
 - **`--force`**
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
-- **`-h|--help`**
-
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--include-source`**
 
@@ -82,9 +82,7 @@ Web projects aren't packable by default. To override the default behavior, add t
 
   Includes the debug symbols NuGet packages in addition to the regular NuGet packages in the output directory.
 
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action (for example, to complete authentication). Available since .NET Core 3.0 SDK.
+[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 - **`--no-build`**
 
@@ -118,9 +116,7 @@ Web projects aren't packable by default. To override the default behavior, add t
 
   Defines the value for the `$(VersionSuffix)` MSBuild property in the project.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 ## Examples
 

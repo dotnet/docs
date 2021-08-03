@@ -165,12 +165,9 @@ In the preceding steps, you can observe:
 
 ## Put it all together
 
-The [dotnet/samples](https://github.com/dotnet/samples) GitHub repository is home to many .NET sample source code projects, including the app in this tutorial.
+The [dotnet/samples](https://github.com/dotnet/samples) GitHub repository is home to many .NET sample source code projects, including [the app in this tutorial](https://github.com/dotnet/samples/tree/main/github-actions/DotNet.GitHubAction).
 
-- The app is available in the [samples browser](/samples/dotnet/samples/create-dotnet-github-action).
-- The generated [*CODE_METRICS.md*](https://github.com/dotnet/samples/blob/main/github-actions/DotNet.GitHubAction/CODE_METRICS.md) file is navigable.
-
-The *CODE_METRICS.md* file represents the hierarchy of the projects it analyzed. Each project has a top-level section, and an emoji the represents the overall status of the highest cyclomatic complexity for nested objects. As you navigate the file, each section exposes drill-down opportunities with a summary of each area. The markdown has collapsible sections as an added convenience.
+The generated [*CODE_METRICS.md*](https://github.com/dotnet/samples/blob/main/github-actions/DotNet.GitHubAction/CODE_METRICS.md) file is navigable. This file represents the hierarchy of the projects it analyzed. Each project has a top-level section, and an emoji the represents the overall status of the highest cyclomatic complexity for nested objects. As you navigate the file, each section exposes drill-down opportunities with a summary of each area. The markdown has collapsible sections as an added convenience.
 
 The hierarchy progresses from:
 

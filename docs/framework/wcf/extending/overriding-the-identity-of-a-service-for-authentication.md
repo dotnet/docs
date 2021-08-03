@@ -13,7 +13,7 @@ Typically, you do not have to set the identity on a service because the selectio
 
  The following Web Services Description Language (WSDL) fragment shows the identity for the endpoint previously defined. In this example, the service is running as a self-hosted service under a particular user account (username@contoso.com) and therefore the user principal name (UPN) identity contains the account name. The UPN is also known as the user sign-in name in a Windows domain.  
 
- For a sample application that demonstrates identity setting, see [Service Identity Sample](/previous-versions/dotnet/framework/wcf/samples/service-identity-sample). For more information about service identity, see [Service Identity and Authentication](../feature-details/service-identity-and-authentication.md).  
+ For a sample application that demonstrates identity setting, see [Service Identity Sample](../samples/service-identity-sample.md). For more information about service identity, see [Service Identity and Authentication](../feature-details/service-identity-and-authentication.md).  
   
 ## Kerberos Authentication and Identity  
 

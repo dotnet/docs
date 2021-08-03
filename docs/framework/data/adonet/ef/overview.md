@@ -44,9 +44,9 @@ More than just another object-relational mapping solution, the Entity Framework 
 
 - LINQ to Entities. Provides Language-Integrated Query (LINQ) support for querying entity types that are defined in a conceptual model. For more information, see [LINQ to Entities](./language-reference/linq-to-entities.md).
 
-- [!INCLUDE[esql](../../../../../includes/esql-md.md)]. A storage-independent dialect of SQL that works directly with entities in the conceptual model and that supports Entity Data Model concepts. [!INCLUDE[esql](../../../../../includes/esql-md.md)] is used both with object queries and queries that are executed by using the EntityClient provider. For more information, see [Entity SQL Overview](./language-reference/entity-sql-overview.md).
+- Entity SQL. A storage-independent dialect of SQL that works directly with entities in the conceptual model and that supports Entity Data Model concepts. Entity SQL is used both with object queries and queries that are executed by using the EntityClient provider. For more information, see [Entity SQL Overview](./language-reference/entity-sql-overview.md).
 
-The Entity Framework includes the EntityClient data provider. This provider manages connections, translates entity queries into data source-specific queries, and returns a data reader that the Entity Framework uses to materialize entity data into objects. When object materialization is not required, the EntityClient provider can also be used like a standard ADO.NET data provider by enabling applications to execute [!INCLUDE[esql](../../../../../includes/esql-md.md)] queries and consume the returned read-only data reader. For more information, see [EntityClient Provider for the Entity Framework](entityclient-provider-for-the-entity-framework.md).
+The Entity Framework includes the EntityClient data provider. This provider manages connections, translates entity queries into data source-specific queries, and returns a data reader that the Entity Framework uses to materialize entity data into objects. When object materialization is not required, the EntityClient provider can also be used like a standard ADO.NET data provider by enabling applications to execute Entity SQL queries and consume the returned read-only data reader. For more information, see [EntityClient Provider for the Entity Framework](entityclient-provider-for-the-entity-framework.md).
 
 The following diagram illustrates the Entity Framework architecture for accessing data:
 
@@ -56,7 +56,7 @@ The Entity Data Model Tools can generate a class derived from `System.Data.Objec
 
 ## Data providers
 
-The `EntityClient` provider extends the ADO.NET provider model by accessing data in terms of conceptual entities and relationships. It executes queries that use [!INCLUDE[esql](../../../../../includes/esql-md.md)]. [!INCLUDE[esql](../../../../../includes/esql-md.md)] provides the underlying query language that enables `EntityClient` to communicate with the database. For more information, see [EntityClient Provider for the Entity Framework](entityclient-provider-for-the-entity-framework.md).
+The `EntityClient` provider extends the ADO.NET provider model by accessing data in terms of conceptual entities and relationships. It executes queries that use Entity SQL. Entity SQL provides the underlying query language that enables `EntityClient` to communicate with the database. For more information, see [EntityClient Provider for the Entity Framework](entityclient-provider-for-the-entity-framework.md).
 
 The Entity Framework includes an updated SqlClient Data Provider that supports canonical command trees. For more information, see [SqlClient for the Entity Framework](sqlclient-for-the-entity-framework.md).
 

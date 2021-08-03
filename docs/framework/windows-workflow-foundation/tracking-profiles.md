@@ -384,6 +384,6 @@ Here are some of the common examples of tracking profiles.
 
 ## See also
 
-- [SQL Tracking](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/sql-tracking)
+- [SQL Tracking](./samples/sql-tracking.md)
 - [Windows Server App Fabric Monitoring](/previous-versions/appfabric/ee677251(v=azure.10))
 - [Monitoring Applications with App Fabric](/previous-versions/appfabric/ee677276(v=azure.10))

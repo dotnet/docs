@@ -70,7 +70,7 @@ svcutil /language:vb /out:ClientCode.vb /config:app.config http://computerName/M
   
  This class can be created as a local object using one of the constructors, configured, and then used to connect to a service of the type `ISampleService`.  
   
- It is recommended that you create your WCF client object first, and then use it and close it inside a single try/catch block. Don't use the `using` statement (`Using` in Visual Basic) because it can mask exceptions in certain failure modes. For more information, see the following sections as well as [Use Close and Abort to release WCF client resources](/previous-versions/dotnet/framework/wcf/samples/use-close-abort-release-wcf-client-resources).  
+ It is recommended that you create your WCF client object first, and then use it and close it inside a single try/catch block. Don't use the `using` statement (`Using` in Visual Basic) because it can mask exceptions in certain failure modes. For more information, see the following sections as well as [Use Close and Abort to release WCF client resources](./samples/use-close-abort-release-wcf-client-resources.md).  
   
 ### Contracts, Bindings, and Addresses  
 
@@ -129,13 +129,13 @@ Namespace Microsoft.ServiceModel.Samples
 End Interface  
 ```  
   
- You can call operations by creating a WCF client object and calling its methods, as the following code example demonstrates. The opening, calling, and closing of the WCF client object occurs within a single try/catch block. For more information, see [Accessing Services Using a WCF Client](./feature-details/accessing-services-using-a-client.md) and [Use Close and Abort to release WCF client resources](/previous-versions/dotnet/framework/wcf/samples/use-close-abort-release-wcf-client-resources).  
+ You can call operations by creating a WCF client object and calling its methods, as the following code example demonstrates. The opening, calling, and closing of the WCF client object occurs within a single try/catch block. For more information, see [Accessing Services Using a WCF Client](./feature-details/accessing-services-using-a-client.md) and [Use Close and Abort to release WCF client resources](./samples/use-close-abort-release-wcf-client-resources.md).  
   
  [!code-csharp[C_GeneratedCodeFiles#20](../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#20)]  
   
 ## Handling Errors  
 
- Exceptions can occur in a client application when opening the underlying client channel (whether explicitly or automatically by calling an operation), using the client or channel object to call operations, or when closing the underlying client channel. It is recommended at a minimum that applications expect to handle possible <xref:System.TimeoutException?displayProperty=nameWithType> and <xref:System.ServiceModel.CommunicationException?displayProperty=nameWithType> exceptions in addition to any <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> objects thrown as a result of SOAP faults returned by operations. SOAP faults specified in the operation contract are raised to client applications as a <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType> where the type parameter is the detail type of the SOAP fault. For more information about handling error conditions in a client application, see [Sending and Receiving Faults](sending-and-receiving-faults.md). For a complete sample the shows how to handle errors in a client, see [Expected Exceptions](/previous-versions/dotnet/framework/wcf/samples/expected-exceptions).  
+ Exceptions can occur in a client application when opening the underlying client channel (whether explicitly or automatically by calling an operation), using the client or channel object to call operations, or when closing the underlying client channel. It is recommended at a minimum that applications expect to handle possible <xref:System.TimeoutException?displayProperty=nameWithType> and <xref:System.ServiceModel.CommunicationException?displayProperty=nameWithType> exceptions in addition to any <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> objects thrown as a result of SOAP faults returned by operations. SOAP faults specified in the operation contract are raised to client applications as a <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType> where the type parameter is the detail type of the SOAP fault. For more information about handling error conditions in a client application, see [Sending and Receiving Faults](sending-and-receiving-faults.md). For a complete sample the shows how to handle errors in a client, see [Expected Exceptions](./samples/expected-exceptions.md).  
   
 ## Configuring and Securing Clients  
 
@@ -159,7 +159,7 @@ End Interface
   
  Duplex WCF client objects function like their nonduplex counterparts, with the exception that they expose the functionality necessary to support callbacks, including the configuration of the callback service.  
   
- For example, you can control various aspects of callback object runtime behavior by using properties of the <xref:System.ServiceModel.CallbackBehaviorAttribute?displayProperty=nameWithType> attribute on the callback class. Another example is the use of the <xref:System.ServiceModel.Description.CallbackDebugBehavior?displayProperty=nameWithType> class to enable the return of exception information to services that call the callback object. For more information, see [Duplex Services](./feature-details/duplex-services.md). For a complete sample, see [Duplex](/previous-versions/dotnet/framework/wcf/samples/duplex).  
+ For example, you can control various aspects of callback object runtime behavior by using properties of the <xref:System.ServiceModel.CallbackBehaviorAttribute?displayProperty=nameWithType> attribute on the callback class. Another example is the use of the <xref:System.ServiceModel.Description.CallbackDebugBehavior?displayProperty=nameWithType> class to enable the return of exception information to services that call the callback object. For more information, see [Duplex Services](./feature-details/duplex-services.md). For a complete sample, see [Duplex](./samples/duplex.md).  
   
  On Windows XP computers running Internet Information Services (IIS) 5.1, duplex clients must specify a client base address using the <xref:System.ServiceModel.WSDualHttpBinding?displayProperty=nameWithType> class or an exception is thrown. The following code example shows how to do this in code.  
   

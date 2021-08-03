@@ -124,4 +124,4 @@ If your scenario has any of the following characteristics, then you must serious
 ## See also
 
 - [Using Bindings to Configure Services and Clients](../using-bindings-to-configure-services-and-clients.md)
-- [WS Reliable Session](/previous-versions/dotnet/framework/wcf/samples/ws-reliable-session)
+- [WS Reliable Session](../samples/ws-reliable-session.md)

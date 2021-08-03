@@ -12,7 +12,7 @@ ms.assetid: 322c56e0-938f-4f19-a981-7b6530045b90
 
 The ASP.NET membership provider is a feature that enables ASP.NET developers to create Web sites that allow users to create unique user name and password combinations. With this facility, any user can establish an account with the site, and sign in for exclusive access to the site and its services. This is in contrast to Windows security, which requires users to have accounts in a Windows domain. Instead, any user that supplies their credentials (the user name/password combination) can use the site and its services.
 
-For a sample application, see [Membership and Role Provider](/previous-versions/dotnet/framework/wcf/samples/membership-and-role-provider). For information about using the ASP.NET role provider feature, see [How to: Use the ASP.NET Role Provider with a Service](how-to-use-the-aspnet-role-provider-with-a-service.md).
+For a sample application, see [Membership and Role Provider](../samples/membership-and-role-provider.md). For information about using the ASP.NET role provider feature, see [How to: Use the ASP.NET Role Provider with a Service](how-to-use-the-aspnet-role-provider-with-a-service.md).
 
 The membership feature requires using a SQL Server database to store the user information. The feature also includes methods for prompting with a question any users who have forgotten their password.
 
@@ -154,4 +154,4 @@ The following code shows the configuration for a service that uses the ASP membe
 ## See also
 
 - [How to: Use the ASP.NET Role Provider with a Service](how-to-use-the-aspnet-role-provider-with-a-service.md)
-- [Membership and Role Provider](/previous-versions/dotnet/framework/wcf/samples/membership-and-role-provider)
+- [Membership and Role Provider](../samples/membership-and-role-provider.md)

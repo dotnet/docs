@@ -11,7 +11,7 @@ This topic outlines the steps required to enable a reliable session using one of
 
 The key part of this procedure is that the endpoint configuration element contain a `bindingConfiguration` attribute that references a binding configuration named `Binding1`. The [**\<binding>**](../../configure-apps/file-schema/wcf/bindings.md) configuration element references this name to enable reliable sessions by setting the `enabled` attribute of the [**\<reliableSession>**](/previous-versions/dotnet/netframework-4.0/ms731302(v=vs.100)) element to `true`. You specify the ordered delivery assurances for the reliable session by setting the `ordered` attribute to `true`.
 
-For the source copy of this example, see [WS Reliable Session](/previous-versions/dotnet/framework/wcf/samples/ws-reliable-session).
+For the source copy of this example, see [WS Reliable Session](../samples/ws-reliable-session.md).
 
 ### Configure the service with a WSHttpBinding to use a reliable session
 

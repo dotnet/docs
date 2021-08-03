@@ -6,7 +6,7 @@ ms.assetid: b69dbe20-92a1-4911-89d8-ffbc3dad4663
 ---
 # How to: Import Metadata into Service Endpoints
 
-This topic explains how to import metadata into a collection of service endpoints and use the service defined in the [Getting Started](/previous-versions/dotnet/framework/wcf/samples/getting-started-sample). This topic show how to create a client application that imports metadata from the service and then calls the `Add` method on the service.  
+This topic explains how to import metadata into a collection of service endpoints and use the service defined in the [Getting Started](../samples/getting-started-sample.md). This topic show how to create a client application that imports metadata from the service and then calls the `Add` method on the service.  
   
 ### To import metadata into service endpoints  
   
@@ -36,4 +36,4 @@ This topic explains how to import metadata into a collection of service endpoint
 ## See also
 
 - [Metadata](metadata.md)
-- [Getting Started](/previous-versions/dotnet/framework/wcf/samples/getting-started-sample)
+- [Getting Started](../samples/getting-started-sample.md)

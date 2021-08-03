@@ -44,7 +44,7 @@ This topic discusses how clients address services that read from queues and how 
   
  The queue address is used as the Listen URI by the Listener to read messages from. In other words, the queue address is equivalent to the listen port of TCP socket.  
   
- An endpoint that reads from a queue must specify the address of the queue using the same scheme specified previously when opening the ServiceHost. For examples, see [Net MSMQ Binding](/previous-versions/dotnet/framework/wcf/samples/net-msmq-binding).  
+ An endpoint that reads from a queue must specify the address of the queue using the same scheme specified previously when opening the ServiceHost. For examples, see [Net MSMQ Binding](../samples/net-msmq-binding.md).  
   
 ### Multiple Contracts in a Queue  
 
@@ -92,7 +92,7 @@ This topic discusses how clients address services that read from queues and how 
   
  net.msmq: //localhost/ [private/]  \<*custom-dead-letter-queue-name*>.  
   
- A WCF service verifies that all messages it receives were addressed to the particular queue it is listening on. If the message’s destination queue does not match the queue it is found in, the service does not process the message. This is an issue that services listening to a dead-letter queue must address because any message in the dead-letter queue was meant to be delivered elsewhere. To read messages from a dead-letter queue, or from a poison queue, a `ServiceBehavior` with the <xref:System.ServiceModel.AddressFilterMode.Any> parameter must be used. For an example, see [Dead Letter Queues](/previous-versions/dotnet/framework/wcf/samples/dead-letter-queues).  
+ A WCF service verifies that all messages it receives were addressed to the particular queue it is listening on. If the message’s destination queue does not match the queue it is found in, the service does not process the message. This is an issue that services listening to a dead-letter queue must address because any message in the dead-letter queue was meant to be delivered elsewhere. To read messages from a dead-letter queue, or from a poison queue, a `ServiceBehavior` with the <xref:System.ServiceModel.AddressFilterMode.Any> parameter must be used. For an example, see [Dead Letter Queues](../samples/dead-letter-queues.md).  
   
 ## MsmqIntegrationBinding and Service Addressing  
 

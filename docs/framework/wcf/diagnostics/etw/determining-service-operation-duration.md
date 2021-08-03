@@ -14,7 +14,7 @@ If analytic tracing is enabled in a Windows Communication Foundation (WCF) appli
   
 2. If you haven’t enabled analytic tracing, expand **Applications and Services Logs**, **Microsoft**, **Windows**, **Application Server-Applications**. Select **View**, **Show Analytic and Debug Logs**. Right-click **Analytic** and select **Enable Log**. Leave Event Viewer open so that traces can be viewed after the service operation is run.  
   
-3. Next, open a WCF application that includes a service project and a client project that interacts with that service.  You can create such an application by following the [Getting Started Tutorial](../../getting-started-tutorial.md).  If you have the WCF samples installed, you can open the [Getting Started](/previous-versions/dotnet/framework/wcf/samples/getting-started-sample), which contains the completed project created in the tutorial.  
+3. Next, open a WCF application that includes a service project and a client project that interacts with that service.  You can create such an application by following the [Getting Started Tutorial](../../getting-started-tutorial.md).  If you have the WCF samples installed, you can open the [Getting Started](../../samples/getting-started-sample.md), which contains the completed project created in the tutorial.  
   
 4. Execute the server application by pressing **F5**. Execute the client application by right-clicking on the **Client** project and selecting **Debug**, **Start New Instance**.  
   

@@ -40,4 +40,4 @@ This section contains topics describing how to create custom activity designers 
   
 ## External Resources  
 
- [Custom Activities](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/custom-activities)
+ [Custom Activities](./samples/custom-activities.md)

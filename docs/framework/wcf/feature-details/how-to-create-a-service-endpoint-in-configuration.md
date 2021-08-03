@@ -120,7 +120,7 @@ Endpoints provide clients with access to the functionality a Windows Communicati
 
 ## Example 7
 
- To use the default endpoints provided by the runtime, do not specify any service endpoints in either the code or the configuration file. In this example, the runtime creates the default endpoints when the service is opened. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../simplified-configuration.md) and [Simplified Configuration for WCF Services](/previous-versions/dotnet/framework/wcf/samples/simplified-configuration-for-wcf-services).
+ To use the default endpoints provided by the runtime, do not specify any service endpoints in either the code or the configuration file. In this example, the runtime creates the default endpoints when the service is opened. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../simplified-configuration.md) and [Simplified Configuration for WCF Services](../samples/simplified-configuration-for-wcf-services.md).
 
 ```xml
 <configuration>

@@ -75,7 +75,7 @@ The benefits of migrating WSE 3.0 Web services to Windows Communication Foundati
   
  When there is not a WCF authentication mode that is equivalent to a custom policy assertion that secures SOAP messages, derive a class from <xref:System.ServiceModel.Channels.TransportSecurityBindingElement>, <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> or <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>WCF classes and specify the equivalent binding element. For more details, see [How to: Create a Custom Binding Using the SecurityBindingElement](how-to-create-a-custom-binding-using-the-securitybindingelement.md).  
   
- To convert a custom policy assertion that does not secure a SOAP message, see [Filtering](filtering.md) and the sample [Custom Message Interceptor](/previous-versions/dotnet/framework/wcf/samples/custom-message-interceptor).  
+ To convert a custom policy assertion that does not secure a SOAP message, see [Filtering](filtering.md) and the sample [Custom Message Interceptor](../samples/custom-message-interceptor.md).  
   
 ### WSE 3.0 Custom Security Token  
 
@@ -120,7 +120,7 @@ The benefits of migrating WSE 3.0 Web services to Windows Communication Foundati
   
 ### TCP  
 
- By default, WSE 3.0 clients and Web services that send SOAP messages using the TCP transport do not interoperate with WCF clients and Web services. This incompatibility is due to differences in the framing used in the TCP protocol and for performance reasons. However, a WCF sample details how to implement a custom TCP session that interoperates with WSE 3.0. For details about this sample, see [Transport: WSE 3.0 TCP Interoperability](/previous-versions/dotnet/framework/wcf/samples/transport-wse-3-0-tcp-interoperability).  
+ By default, WSE 3.0 clients and Web services that send SOAP messages using the TCP transport do not interoperate with WCF clients and Web services. This incompatibility is due to differences in the framing used in the TCP protocol and for performance reasons. However, a WCF sample details how to implement a custom TCP session that interoperates with WSE 3.0. For details about this sample, see [Transport: WSE 3.0 TCP Interoperability](../samples/transport-wse-3-0-tcp-interoperability.md).  
   
  To specify that a WCF application uses the TCP transport, use the [\<netTcpBinding>](../../configure-apps/file-schema/wcf/nettcpbinding.md).  
   

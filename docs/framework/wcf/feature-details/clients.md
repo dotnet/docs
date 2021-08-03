@@ -24,4 +24,4 @@ The topics in this section cover the client architecture, how to access a Window
   
 ## See also
 
-- [Client Samples](/previous-versions/dotnet/framework/wcf/samples/client)
+- [Client Samples](../samples/client.md)

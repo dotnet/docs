@@ -1,7 +1,7 @@
 ---
 title: Get Started with F# in Visual Studio Code
 description: Learn how to use F# with Visual Studio Code and the Ionide plugin suite.
-ms.date: 12/23/2018
+ms.date: 07/23/2021
 ---
 # Get Started with F# in Visual Studio Code
 
@@ -25,16 +25,6 @@ code .
 ```
 
 After the project loads on Visual Studio Code, you should see the F# Solution Explorer pane on the left-hand side of your window open. This means Ionide has successfully loaded the project you just created. You can write code in the editor before this point in time, but once this happens, everything has finished loading.
-
-## Configure F# interactive
-
-First, ensure that .NET Core scripting is your default scripting environment:
-
-1. Open the Visual Studio Code settings (**Code** > **Preferences** > **Settings**).
-1. Search for the term **F# Script**.
-1. Click the checkbox that says **FSharp: use SDK scripts**.
-
-This is currently necessary due to some legacy behaviors in .NET Framework-based scripting that don't work with .NET Core scripting, and Ionide is currently striving for that backwards compatibility. In the future, .NET Core scripting will become the default.
 
 ### Write your first script
 

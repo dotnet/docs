@@ -6,7 +6,7 @@ ms.assetid: 2292e124-81b2-4317-b881-ce9c1ec66ecb
 ---
 # How to: Retrieve Metadata Over a non-MEX Binding
 
-This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX binding. The code in this sample is based on the [Custom Secure Metadata Endpoint](/previous-versions/dotnet/framework/wcf/samples/custom-secure-metadata-endpoint) sample.  
+This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX binding. The code in this sample is based on the [Custom Secure Metadata Endpoint](../samples/custom-secure-metadata-endpoint.md) sample.  
   
 ### To retrieve metadata over a non-MEX binding  
   

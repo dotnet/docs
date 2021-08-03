@@ -72,7 +72,7 @@ public class SomeController : ControllerBase
 }
 ```
 
-If the operation should error, you would return the appropriate 400 or 500 level HTTP status code. For bindings that feature *at-least-once* delivery guarantees, the Dapr sidecar will retry the trigger. Check out [Dapr documentation for resource bindings][1] to see whether they offer *at-least-once* or *exactly-once* delivery guarantees.
+If the operation should error, you would return the appropriate 400 or 500 level HTTP status code. For bindings that feature *at-least-once* delivery guarantees, the Dapr sidecar will retry the trigger. Check out [Dapr documentation for resource bindings](https://docs.dapr.io/operations/components/setup-bindings/supported-bindings) to see whether they offer *at-least-once* or *exactly-once* delivery guarantees.
 
 ### Output bindings
 
@@ -168,7 +168,7 @@ In the `spec` element, you specify the `type` of the binding along with binding 
 
 A binding can be configured for input, output, or both. Interestingly, the binding doesn't explicitly specify input or output configuration. Instead, the direction is inferred by the usage of the binding along with configuration values.
 
-The [Dapr documentation for resource bindings][1] provides a complete list of the available bindings and their specific configuration settings.
+The [Dapr documentation for resource bindings](https://docs.dapr.io/operations/components/setup-bindings/supported-bindings/) provides a complete list of the available bindings and their specific configuration settings.
 
 ### Cron binding
 

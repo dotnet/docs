@@ -63,7 +63,7 @@ A *data contract* is a formal agreement between a service and a client that abst
  [!code-csharp[C_DataContract#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_datacontract/cs/source.cs#4)]
  [!code-vb[C_DataContract#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_datacontract/vb/source.vb#4)]  
   
- For a complete code sample of a WCF service that defines a data contract see the [Basic Data Contract](/previous-versions/dotnet/framework/wcf/samples/basic-data-contract) sample.  
+ For a complete code sample of a WCF service that defines a data contract see the [Basic Data Contract](../samples/basic-data-contract.md) sample.  
   
 ## See also
 

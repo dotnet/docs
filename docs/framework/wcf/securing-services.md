@@ -57,7 +57,7 @@ Security of a Windows Communication Foundation (WCF) service consists of two pri
   
 #### Using ASP.NET Membership and Role Providers  
 
- ASP.NET includes a membership and role provider. The provider is a database of user name/password pairs for authenticating callers that also allows you to specify each caller's access privileges. With WCF, you can easily use a pre-existing membership and role provider through configuration. For a sample application that demonstrates this, see the [Membership and Role Provider](/previous-versions/dotnet/framework/wcf/samples/membership-and-role-provider) sample.  
+ ASP.NET includes a membership and role provider. The provider is a database of user name/password pairs for authenticating callers that also allows you to specify each caller's access privileges. With WCF, you can easily use a pre-existing membership and role provider through configuration. For a sample application that demonstrates this, see the [Membership and Role Provider](./samples/membership-and-role-provider.md) sample.  
   
 ### Credentials Used by IIS  
 

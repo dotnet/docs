@@ -21,11 +21,11 @@ In this case, the validator is a client validator because this endpoint behavior
 
 ### To create the endpoint validator
 
-1. Create an <xref:System.ServiceModel.Description.IEndpointBehavior> with the desired validation steps in the <xref:System.ServiceModel.Description.IEndpointBehavior.Validate%2A> method. The following code provides an example. (The `InternetClientValidatorBehavior` is taken from the [Security Validation](/previous-versions/dotnet/framework/wcf/samples/security-validation) sample.)
+1. Create an <xref:System.ServiceModel.Description.IEndpointBehavior> with the desired validation steps in the <xref:System.ServiceModel.Description.IEndpointBehavior.Validate%2A> method. The following code provides an example. (The `InternetClientValidatorBehavior` is taken from the [Security Validation](../samples/security-validation.md) sample.)
 
     [!code-csharp[LockdownValidation#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/lockdownvalidation/cs/internetclientvalidatorbehavior.cs#2)]
 
-2. Create new <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> that registers the endpoint validator created in step 1. The following code example shows this. (The original code for this example is in the [Security Validation](/previous-versions/dotnet/framework/wcf/samples/security-validation) sample.)
+2. Create new <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> that registers the endpoint validator created in step 1. The following code example shows this. (The original code for this example is in the [Security Validation](../samples/security-validation.md) sample.)
 
     [!code-csharp[LockdownValidation#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/lockdownvalidation/cs/internetclientvalidatorelement.cs#3)]
 
@@ -53,7 +53,7 @@ In this case, the validator is a client validator because this endpoint behavior
 
 ## Example
 
-The following code example shows how to add a common behavior to the machine.config file and save a copy to the disk. The `InternetClientValidatorBehavior` is taken from the [Security Validation](/previous-versions/dotnet/framework/wcf/samples/security-validation) sample.
+The following code example shows how to add a common behavior to the machine.config file and save a copy to the disk. The `InternetClientValidatorBehavior` is taken from the [Security Validation](../samples/security-validation.md) sample.
 
 [!code-csharp[LockdownValidation#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/lockdownvalidation/cs/hostapplication.cs#1)]
 

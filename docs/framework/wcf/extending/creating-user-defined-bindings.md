@@ -54,7 +54,7 @@ Binding customBinding = new CustomBinding(
 );  
 ```  
   
- How you write your new binding element depends on its exact functionality. One of the samples, [Transport: UDP](/previous-versions/dotnet/framework/wcf/samples/transport-udp), provides a detailed description of how to implement one kind of binding element.  
+ How you write your new binding element depends on its exact functionality. One of the samples, [Transport: UDP](../samples/transport-udp.md), provides a detailed description of how to implement one kind of binding element.  
   
 ## Creating a New Binding  
 

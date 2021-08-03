@@ -8,23 +8,24 @@ ms.date: 04/16/2021
 
 # Prepare .NET libraries for trimming
 
-The .NET SDK makes it possible to reduce the size of self-contained apps by [trimming](trim-self-contained.md), removing unused code from the app and its dependencies. Not all code is compatible with trimming, so .NET 6 provides trim analysis [warnings](trimming-options.md#analysis-warnings) to detect patterns that may break trimmed apps. This document describes how to prepare libraries for trimming with the aid of these warnings, including recommendations for fixing some common cases.
+The .NET SDK makes it possible to reduce the size of self-contained apps by [trimming](trim-self-contained.md), removing unused code from the app and its dependencies. Not all code is compatible with trimming, so .NET 6 provides trim analysis [warnings](trimming-options.md#analysis-warnings) to detect patterns that may break trimmed apps. This article describes how to prepare libraries for trimming with the aid of these warnings, including recommendations for fixing some common cases.
 
 ## Trim warnings in apps
 
-In .NET 6+, when publishing an app, the `PublishTrimmed` project file element will produce trim analysis warnings for patterns that are not statically understood to be compatible with trimming, including patterns in your code and in dependencies.
+In .NET 6+, when publishing an app, the `PublishTrimmed` project file element produces trim analysis warnings for patterns that are not statically understood to be compatible with trimming, including patterns in your code and in dependencies.
 
-You will encounter detailed warnings originating from your own code and `ProjectReference` dependencies. You may also see warnings like `warning IL2104: Assembly 'SomeAssembly' produced trim warnings` for `PackageReference` libraries. This warning means that the library contained patterns which are not guaranteed to work in the context of the trimmed app, and may result in a broken app. Consider contacting the author to see if the library can be annotated for trimming.
+You will encounter detailed warnings originating from your own code and `ProjectReference` dependencies. You may also see warnings like `warning IL2104: Assembly 'SomeAssembly' produced trim warnings` for `PackageReference` libraries. This warning means that the library contained patterns that are not guaranteed to work in the context of the trimmed app, and may result in a broken app. Consider contacting the author to see if the library can be annotated for trimming.
 
 To resolve warnings originating from the app code, see [resolving trim warnings](#resolve-trim-warnings). If you are interested in making your own `ProjectReference` libraries trim friendly, follow the instructions to [enable library trim warnings](#enable-library-trim-warnings).
 
-If your app only uses parts of a library that are compatible with trimming, consider [enabling trimming](trimming-options.md#trim-additional-assemblies) of this library if it is not already being trimmed. This will only produce warnings if your app uses problematic parts of the library. (You can also [show detailed warnings](trimming-options.md#show-detailed-warnings) for the library to see which parts of it are problematic.)
+If your app only uses parts of a library that are compatible with trimming, consider [enabling trimming](trimming-options.md#trim-additional-assemblies) if it's not already being trimmed. By enabling trimming, .NET only produces warnings if your app uses problematic parts of the library. (You can also [show detailed warnings](trimming-options.md#show-detailed-warnings) for the library to see which parts of it are problematic.)
 
 ## Enable library trim warnings
 
 These instructions show how to enable and resolve static analysis warnings to prepare a library for trimming. Follow these steps if you are authoring a library and either want to proactively make your library trimmable, or have been contacted by app authors who encountered trim warnings from your library.
 
-Ensure you are using the .NET 6 SDK for these steps. They will not work correctly in previous versions.
+> [!TIP]
+> Ensure you're using the .NET 6 SDK or later for these steps. They will not work correctly in previous versions.
 
 ### Set IsTrimmable
 
@@ -101,8 +102,7 @@ public class MyLibrary
 }
 ```
 
-This means the library calls a method which has explicitly been annotated as incompatible with trimming, using [`RequiresUnreferencedCodeAttribute`](
-https://docs.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.requiresunreferencedcodeattribute?view=net-5.0&preserve-view=true). To get rid of the warning, consider whether `Method` needs to call `DynamicBehavior` to do its job. If so, annotate the caller `Method` with `RequiresUnreferencedCode` as well; this will "bubble up" the warning so that callers of `Method` get a warning instead:
+This means the library calls a method that has explicitly been annotated as incompatible with trimming, using <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute>. To get rid of the warning, consider whether `Method` needs to call `DynamicBehavior` to do its job. If so, annotate the caller `Method` with `RequiresUnreferencedCode` as well; this will "bubble up" the warning so that callers of `Method` get a warning instead:
 
 ```csharp
 // Warn for calls to Method, but not for Method's call to DynamicBehavior.
@@ -113,7 +113,7 @@ public static void Method()
 }
 ```
 
-Once you have "bubbled up" the attribute all the way to public APIs (so that these warnings are produced only for public methods, if at all), you are done. Apps which call your library will now get warnings if they call those public APIs, but these will no longer produce warnings like `IL2104: Assembly 'MyLibrary' produced trim warnings`.
+Once you have "bubbled up" the attribute all the way to public APIs (so that these warnings are produced only for public methods, if at all), you are done. Apps that call your library will now get warnings if they call those public APIs, but these will no longer produce warnings like `IL2104: Assembly 'MyLibrary' produced trim warnings`.
 
 ### DynamicallyAccessedMembers
 
@@ -147,7 +147,7 @@ static void UseMethods(
 }
 ```
 
-Now any calls to `UseMethods` will produce warnings if they pass in values which don't satisfy the `PublicMethods` requirement. Like with `RequiresUnreferencedCode`, once you have bubbled up such warnings to public APIs, you are done.
+Now any calls to `UseMethods` will produce warnings if they pass in values that don't satisfy the `PublicMethods` requirement. Like with `RequiresUnreferencedCode`, once you have bubbled up such warnings to public APIs, you are done.
 
 Here is another example where an unknown `Type` flows into the annotated method parameter, this time from a field:
 
@@ -163,7 +163,7 @@ static void UseMethodsHelper()
 }
 ```
 
-Similarly, here the problem is that the field `type` is passed into a parameter with these requinements. You can fix it by adding `DynamicallyAccessedMembers` to the field. This will warn about code that assigns incompatible values to the field instead. Sometimes this process will continue until a public API is annotated, and other times it will end when a concrete type flows into a location with these requirements. For example:
+Similarly, here the problem is that the field `type` is passed into a parameter with these requirements. You can fix it by adding `DynamicallyAccessedMembers` to the field. This will warn about code that assigns incompatible values to the field instead. Sometimes this process will continue until a public API is annotated, and other times it will end when a concrete type flows into a location with these requirements. For example:
 
 ```csharp
 [DynamicallyAccessedMembers(DynamicallyAccessedMembers.PublicMethods)]
@@ -184,17 +184,17 @@ In general, try to avoid reflection if possible. When using reflection, limit it
 - Avoid using non-understood patterns in places like static constructors that will result in the warning propagating to all members of the class.
 - Avoid annotating virtual methods or interface methods, which will require all overrides to have matching annotations.
 - In some cases, you will be able to mechanically propagate warnings through your code without issues. Sometimes this will result in much of your public API being annotated with `RequiresUnreferencedCode`, which is the right thing to do if the library indeed behaves in ways that can't be understood statically by the trim analysis.
-- In other cases, you might discover that your code uses patterns which can't be expressed in terms of the `DynamicallyAccessedMembers` attributes, even if it only uses reflection to operate on statically-known types. In these cases, you may need to reorganize some of your code to make it follow an analyzable pattern.
+- In other cases, you might discover that your code uses patterns that can't be expressed in terms of the `DynamicallyAccessedMembers` attributes, even if it only uses reflection to operate on statically known types. In these cases, you may need to reorganize some of your code to make it follow an analyzable pattern.
 - Sometimes the existing design of an API will render it mostly trim-incompatible, and you may need to find other ways to accomplish what it is doing. A common example is reflection-based serializers. In these cases, consider adopting other technology like source generators to produce code that is more easily statically analyzed.
 
 ## Resolve warnings for non-analyzable patterns
 
-You should prefer resolving warnings by expressing the intent of your code using `RequiresUnreferencedCode` and `DynamicallyAccessedMembers` when possible. However, in some cases you may be interested in enabling trimming of a library that uses patterns which can't be expressed with those attributes, or without refactoring existing code. This section describes additional advanced ways to resolve trim analysis warnings.
+It's better to resolve warnings by expressing the intent of your code using `RequiresUnreferencedCode` and `DynamicallyAccessedMembers` when possible. However, in some cases you may be interested in enabling trimming of a library that uses patterns that can't be expressed with those attributes, or without refactoring existing code. This section describes some advanced ways to resolve trim analysis warnings.
 
 > [!WARNING]
 > These techniques might break your code if used incorrectly.
 
-When suppressing warnings, you are responsible for guaranteeing the trim compatibility of your code based on invariants that you know to be true by inspection. Be very careful with these annotations, because if they are incorrect, or if invariants of your code change, they might end up hiding real issues.
+When suppressing warnings, you are responsible for guaranteeing the trim compatibility of your code based on invariants that you know to be true by inspection. Be careful with these annotations, because if they are incorrect, or if invariants of your code change, they might end up hiding real issues.
 
 ### UnconditionalSuppressMessage
 

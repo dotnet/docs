@@ -144,6 +144,6 @@ This topic describes how to set up an IIS-hosted WCF service to use HTTP transpo
 ## See also
 
 - [Hosting in Internet Information Services](hosting-in-internet-information-services.md)
-- [Internet Information Service Hosting Instructions](/previous-versions/dotnet/framework/wcf/samples/internet-information-service-hosting-instructions)
+- [Internet Information Service Hosting Instructions](../samples/internet-information-service-hosting-instructions.md)
 - [Internet Information Services Hosting Best Practices](internet-information-services-hosting-best-practices.md)
-- [IIS Hosting Using Inline Code](/previous-versions/dotnet/framework/wcf/samples/iis-hosting-using-inline-code)
+- [IIS Hosting Using Inline Code](../samples/iis-hosting-using-inline-code.md)

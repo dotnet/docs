@@ -97,12 +97,12 @@ In all cases, closing the channel instructs the channel to begin closing any und
 
 Because closing the channel can also throw exceptions, then, it is recommended that in addition to catching fault exceptions in the correct order, it is important to abort the channel that was used in making the call in the catch block.
 
-If the fault conveys error information specific to an operation and it remains possible that others can use it, there is no need to abort the channel (although these cases are rare). In all other cases, it is recommended that you abort the channel. For a sample that demonstrates all of these points, see [Expected Exceptions](/previous-versions/dotnet/framework/wcf/samples/expected-exceptions).
+If the fault conveys error information specific to an operation and it remains possible that others can use it, there is no need to abort the channel (although these cases are rare). In all other cases, it is recommended that you abort the channel. For a sample that demonstrates all of these points, see [Expected Exceptions](./samples/expected-exceptions.md).
 
 The following code example shows how to handle SOAP fault exceptions in a basic client application, including a declared fault and an undeclared fault.
 
 > [!NOTE]
-> This sample code does not use the `using` construct. Because closing channels can throw exceptions, it is recommended that applications create a WCF client first, and then open, use, and close the WCF client in the same try block. For details, see [WCF Client Overview](wcf-client-overview.md) and [Use Close and Abort to release WCF client resources](/previous-versions/dotnet/framework/wcf/samples/use-close-abort-release-wcf-client-resources).
+> This sample code does not use the `using` construct. Because closing channels can throw exceptions, it is recommended that applications create a WCF client first, and then open, use, and close the WCF client in the same try block. For details, see [WCF Client Overview](wcf-client-overview.md) and [Use Close and Abort to release WCF client resources](./samples/use-close-abort-release-wcf-client-resources.md).
 
 [!code-csharp[FaultContractAttribute#3](../../../samples/snippets/csharp/VS_Snippets_CFX/faultcontractattribute/cs/client.cs#3)]
 [!code-vb[FaultContractAttribute#3](../../../samples/snippets/visualbasic/VS_Snippets_CFX/faultcontractattribute/vb/client.vb#3)]
@@ -112,5 +112,5 @@ The following code example shows how to handle SOAP fault exceptions in a basic 
 - <xref:System.ServiceModel.FaultException>
 - <xref:System.ServiceModel.FaultException%601>
 - <xref:System.ServiceModel.CommunicationException?displayProperty=nameWithType>
-- [Expected Exceptions](/previous-versions/dotnet/framework/wcf/samples/expected-exceptions)
-- [Use Close and Abort to release WCF client resources](/previous-versions/dotnet/framework/wcf/samples/use-close-abort-release-wcf-client-resources)
+- [Expected Exceptions](./samples/expected-exceptions.md)
+- [Use Close and Abort to release WCF client resources](./samples/use-close-abort-release-wcf-client-resources.md)

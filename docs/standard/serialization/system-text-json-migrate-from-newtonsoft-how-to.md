@@ -4,7 +4,7 @@ description: "Learn how to migrate from Newtonsoft.Json to System.Text.Json. Inc
 author: tdykstra
 ms.author: tdykstra
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 12/14/2020
+ms.date: 07/21/2021
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
   - "JSON serialization"
@@ -81,6 +81,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Allow single quotes around string values              | ❌ [Not supported](#json-strings-property-names-and-string-values) |
 | Allow non-string JSON values for string properties    | ❌ [Not supported](#non-string-values-for-string-properties) |
 | `TypeNameHandling.All` global setting                 | ❌ [Not supported](#typenamehandlingall-not-supported) |
+| Support for `JsonPath` queries                        | ❌ [Not supported](#json-path-queries-not-supported) |
 ::: zone-end
 
 ::: zone pivot="dotnet-5-0"
@@ -124,6 +125,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Allow single quotes around string values              | ❌ [Not supported](#json-strings-property-names-and-string-values) |
 | Allow non-string JSON values for string properties    | ❌ [Not supported](#non-string-values-for-string-properties) |
 | `TypeNameHandling.All` global setting                 | ❌ [Not supported](#typenamehandlingall-not-supported) |
+| Support for `JsonPath` queries                        | ❌ [Not supported](#json-path-queries-not-supported) |
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -167,6 +169,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Allow single quotes around string values              | ❌ [Not supported](#json-strings-property-names-and-string-values) |
 | Allow non-string JSON values for string properties    | ❌ [Not supported](#non-string-values-for-string-properties) |
 | `TypeNameHandling.All` global setting                 | ❌ [Not supported](#typenamehandlingall-not-supported) |
+| Support for `JsonPath` queries                        | ❌ [Not supported](#json-path-queries-not-supported) |
 ::: zone-end
 
 This is not an exhaustive list of `Newtonsoft.Json` features. The list includes many of the scenarios that have been requested in [GitHub issues](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json) or [StackOverflow](https://stackoverflow.com/questions/tagged/system.text.json) posts. If you implement a workaround for one of the scenarios listed here that doesn't currently have sample code, and if you want to share your solution, select **This page** in the **Feedback** section at the bottom of this page. That creates an issue in this documentation's GitHub repo and lists it in the **Feedback** section on this page too.
@@ -682,7 +685,7 @@ During deserialization, `Newtonsoft.Json` adds objects to a collection even if t
 <xref:System.Text.Json.JsonDocument?displayProperty=fullName> provides the ability to parse and build a **read-only** Document Object Model (DOM) from existing JSON payloads. The DOM provides random access to data in a JSON payload. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property.
 
 :::zone pivot="dotnet-6-0"
-Documentation for mutable DOM support is being developed. Until it's added, see the [.NET 6 Preview 4 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-4/#system-text-json-writable-dom-feature).
+Starting in .NET 6, you can parse and build a **mutable** DOM from existing JSON payloads by using the <xref:System.Text.Json.Nodes.JsonNode> type and other types in the <xref:System.Text.Json.Nodes> namespace. For more information, see [Use `JsonNode`](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-jsonnode).
 :::zone-end
 
 ### JsonDocument is IDisposable
@@ -735,7 +738,7 @@ Searches for JSON tokens using `JObject` or `JArray` from `Newtonsoft.Json` tend
 * Use the built-in enumerators (<xref:System.Text.Json.JsonElement.EnumerateArray%2A> and <xref:System.Text.Json.JsonElement.EnumerateObject%2A>) rather than doing your own indexing or loops.
 * Don't do a sequential search on the whole `JsonDocument` through every property by using `RootElement`. Instead, search on nested JSON objects based on the known structure of the JSON data. For example, if you're looking for a `Grade` property in `Student` objects, loop through the `Student` objects and get the value of `Grade` for each, rather than searching through all `JsonElement` objects looking for `Grade` properties. Doing the latter will result in unnecessary passes over the same data.
 
-For a code example, see [Use JsonDocument for access to data](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-jsondocument-for-access-to-data).
+For a code example, see [Use JsonDocument](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-jsondocument).
 
 ## Utf8JsonReader compared to JsonTextReader
 
@@ -889,6 +892,14 @@ If you need to continue to use `Newtonsoft.Json` for certain target frameworks, 
 ## TypeNameHandling.All not supported
 
 The decision to exclude `TypeNameHandling.All`-equivalent functionality from `System.Text.Json` was intentional. Allowing a JSON payload to specify its own type information is a common source of vulnerabilities in web applications. In particular, configuring `Newtonsoft.Json` with `TypeNameHandling.All` allows the remote client to embed an entire executable application within the JSON payload itself, so that during deserialization the web application extracts and runs the embedded code. For more information, see [Friday the 13th JSON attacks PowerPoint](https://www.blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-Json-Attacks.pdf) and [Friday the 13th JSON attacks details](https://www.blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-JSON-Attacks-wp.pdf).
+
+## JSON Path queries not supported
+
+The `JsonDocument` DOM doesn't support querying by using [JSON Path](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm).
+
+::: zone pivot="dotnet-6-0"
+In a <xref:System.Text.Json.Nodes.JsonNode> DOM, each `JsonNode` instance has a `GetPath` method that returns a path to that node. But there is no built-in API to handle queries based on JSON Path query strings.
+::: zone-end
 
 ## Additional resources
 

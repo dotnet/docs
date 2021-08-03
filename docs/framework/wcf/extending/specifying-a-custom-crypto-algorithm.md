@@ -122,7 +122,7 @@ WSHttpBinding binding = new WSHttpBinding();
             binding.Security.Message.AlgorithmSuite = new MyCustomAlgorithmSuite();  
 ```  
   
- For a complete code example, see the [Cryptographic Agility in WCF Security](/previous-versions/dotnet/framework/wcf/samples/cryptographic-agility-in-wcf-security) sample.  
+ For a complete code example, see the [Cryptographic Agility in WCF Security](../samples/cryptographic-agility-in-wcf-security.md) sample.  
   
 ## See also
 

@@ -53,7 +53,7 @@ Specifies the throttling mechanism of a Windows Communication Foundation (WCF) s
   
 ## Example  
 
- The following configuration example specifies that the service limits the maximum concurrent calls to 2, and the maximum number of concurrent instances to 10. For a detailed example of running this example, see [Throttling](/previous-versions/dotnet/framework/wcf/samples/throttling).  
+ The following configuration example specifies that the service limits the maximum concurrent calls to 2, and the maximum number of concurrent instances to 10. For a detailed example of running this example, see [Throttling](../../../wcf/samples/throttling.md).  
   
 ```xml  
 <behaviors>

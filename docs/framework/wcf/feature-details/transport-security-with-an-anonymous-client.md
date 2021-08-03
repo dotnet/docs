@@ -11,7 +11,7 @@ ms.assetid: 056653a5-384e-4a02-ae3c-1b0157d2ccb4
 
 This Windows Communication Foundation (WCF) scenario uses transport security (HTTPS) to ensure confidentiality and integrity. The server must be authenticated with a Secure Sockets Layer (SSL) certificate, and the clients must trust the server's certificate. The client is not authenticated by any mechanism and is, therefore, anonymous.
 
-For a sample application, see [WS Transport Security](/previous-versions/dotnet/framework/wcf/samples/ws-transport-security). For more information about transport security, see [Transport Security Overview](transport-security-overview.md).
+For a sample application, see [WS Transport Security](../samples/ws-transport-security.md). For more information about transport security, see [Transport Security Overview](transport-security-overview.md).
 
 For more information about using a certificate with a service, see [Working with Certificates](working-with-certificates.md) and [How to: Configure a Port with an SSL Certificate](how-to-configure-a-port-with-an-ssl-certificate.md).
 
@@ -119,6 +119,6 @@ The following configuration can be used instead of the code to set up the servic
 ## See also
 
 - [Security Overview](security-overview.md)
-- [WS Transport Security](/previous-versions/dotnet/framework/wcf/samples/ws-transport-security)
+- [WS Transport Security](../samples/ws-transport-security.md)
 - [Transport Security Overview](transport-security-overview.md)
 - [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

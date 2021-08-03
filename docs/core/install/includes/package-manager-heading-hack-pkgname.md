@@ -21,7 +21,7 @@ The version of the SDK or runtime to install. This article will always give the 
   - 3.0
   - 2.1
 
-  It's possible the SDK/runtime you're trying to download is not available for your Linux distribution. For a list of supported distributions, see [.NET Core dependencies and requirements](../linux.md).
+  It's possible the SDK/runtime you're trying to download is not available for your Linux distribution. For a list of supported distributions, see [Install .NET on Linux](../linux.md).
 
 ### Examples
 
@@ -32,4 +32,4 @@ The version of the SDK or runtime to install. This article will always give the 
 
 ### Package missing
 
-If the package-version combination doesn't work, it's not available. For example, there isn't an ASP.NET Core SDK, the SDK components are included with the .NET SDK. The value `aspnetcore-sdk-2.2` is incorrect and should be `dotnet-sdk-2.2`. For a list of Linux distributions supported by .NET Core, see [.NET dependencies and requirements](../linux.md).
+If the package-version combination doesn't work, it's not available. For example, there isn't an ASP.NET Core SDK, the SDK components are included with the .NET SDK. The value `aspnetcore-sdk-2.2` is incorrect and should be `dotnet-sdk-2.2`. For a list of Linux distributions supported by .NET, see [.NET dependencies and requirements](../linux.md).

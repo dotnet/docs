@@ -67,5 +67,5 @@ Console.WriteLine("Found {0} ICalculatorService endpoint(s).", findResponse.Endp
 
 - [WCF Discovery Overview](wcf-discovery-overview.md)
 - [Using the Discovery Client Channel](using-the-discovery-client-channel.md)
-- [Discovery with Scopes](/previous-versions/dotnet/framework/wcf/samples/discovery-with-scopes-sample)
-- [Basic](/previous-versions/dotnet/framework/wcf/samples/basic-sample)
+- [Discovery with Scopes](../samples/discovery-with-scopes-sample.md)
+- [Basic](../samples/basic-sample.md)

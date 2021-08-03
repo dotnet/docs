@@ -78,7 +78,7 @@ Windows Communication Foundation (WCF) is an XML-based communications infrastruc
   
 ### Enabling MTOM  
 
- When interoperability is a requirement and large binary data must be sent, then MTOM message encoding is the alternative encoding strategy that you can enable on the standard <xref:System.ServiceModel.BasicHttpBinding> or <xref:System.ServiceModel.WSHttpBinding> bindings by setting the respective `MessageEncoding` property to <xref:System.ServiceModel.WSMessageEncoding.Mtom> or by composing the <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement> into a <xref:System.ServiceModel.Channels.CustomBinding>. The following example code, extracted from the [MTOM Encoding](/previous-versions/dotnet/framework/wcf/samples/mtom-encoding) sample demonstrates how to enable MTOM in configuration.  
+ When interoperability is a requirement and large binary data must be sent, then MTOM message encoding is the alternative encoding strategy that you can enable on the standard <xref:System.ServiceModel.BasicHttpBinding> or <xref:System.ServiceModel.WSHttpBinding> bindings by setting the respective `MessageEncoding` property to <xref:System.ServiceModel.WSMessageEncoding.Mtom> or by composing the <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement> into a <xref:System.ServiceModel.Channels.CustomBinding>. The following example code, extracted from the [MTOM Encoding](../samples/mtom-encoding.md) sample demonstrates how to enable MTOM in configuration.  
   
 ```xml  
 <system.serviceModel>  

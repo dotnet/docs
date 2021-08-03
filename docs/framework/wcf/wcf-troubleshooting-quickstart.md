@@ -106,9 +106,9 @@ public class MyServiceHost : ServiceHost
   
 - You might need to change the client endpoint addresses to the host name and not "localhost".  
   
-- You might need to open the port to the application. For details, see [Firewall Instructions](/previous-versions/dotnet/framework/wcf/samples/firewall-instructions) from the SDK samples.  
+- You might need to open the port to the application. For details, see [Firewall Instructions](./samples/firewall-instructions.md) from the SDK samples.  
   
-- For other possible issues, see the samples topic [Running the Windows Communication Foundation Samples](/previous-versions/dotnet/framework/wcf/samples/running-the-samples).  
+- For other possible issues, see the samples topic [Running the Windows Communication Foundation Samples](./samples/running-the-samples.md).  
   
 - If your client is using Windows credentials and the exception is a <xref:System.ServiceModel.Security.SecurityNegotiationException>, configure Kerberos as follows.  
   

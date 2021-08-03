@@ -147,7 +147,7 @@ Sub Hello (ByVal greeting As String)
   
  To implement a duplex pattern, you must create a second interface that contains the method declarations that are called on the client.  
   
- For an example of creating a service, and a client that accesses that service, see [How to: Create a Duplex Contract](./feature-details/how-to-create-a-duplex-contract.md) and [How to: Access Services with a Duplex Contract](./feature-details/how-to-access-services-with-a-duplex-contract.md). For a working sample, see [Duplex](/previous-versions/dotnet/framework/wcf/samples/duplex). For more information about issues using duplex contracts, see [Duplex Services](./feature-details/duplex-services.md).  
+ For an example of creating a service, and a client that accesses that service, see [How to: Create a Duplex Contract](./feature-details/how-to-create-a-duplex-contract.md) and [How to: Access Services with a Duplex Contract](./feature-details/how-to-access-services-with-a-duplex-contract.md). For a working sample, see [Duplex](./samples/duplex.md). For more information about issues using duplex contracts, see [Duplex Services](./feature-details/duplex-services.md).  
   
 > [!CAUTION]
 > When a service receives a duplex message, it looks at the `ReplyTo` element in that incoming message to determine where to send the reply. If the channel that is used to receive the message is not secured, then an untrusted client could send a malicious message with a target machine's `ReplyTo`, leading to a denial of service (DOS) of that target machine.  

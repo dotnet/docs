@@ -1,7 +1,7 @@
 ---
 title: dotnet test command
 description: The dotnet test command is used to execute unit tests in a given project.
-ms.date: 04/29/2020
+ms.date: 07/20/2021
 ---
 # dotnet test
 
@@ -48,6 +48,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 [!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
 
+[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+
 ## Arguments
 
 - **`PROJECT | SOLUTION | DIRECTORY | DLL`**
@@ -60,6 +62,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   If not specified, it searches for a project or a solution in the current directory.
 
 ## Options
+
+<!-- markdownlint-disable MD012 -->
 
 - **`-a|--test-adapter-path <ADAPTER_PATH>`**
 
@@ -106,9 +110,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   When no unit is used (for example, 5400000), the value is assumed to be in milliseconds. When used together with data driven tests, the timeout behavior depends on the test adapter used. For xUnit and NUnit the timeout is renewed after every test case. For MSTest, the timeout is used for all test cases. This option is supported on Windows with netcoreapp2.1 and later, on Linux with netcoreapp3.1 and later, and on macOS with net5.0 or later. Implies `--blame` and `--blame-hang`.
 
-- **`-c|--configuration <CONFIGURATION>`**
-
-  Defines the build configuration. The default value is `Debug`, but your project's configuration could override this default SDK setting.
+[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
 - **`--collect <DATA_COLLECTOR_NAME>`**
 
@@ -130,13 +132,9 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Filters out tests in the current project using the given expression. For more information, see the [Filter option details](#filter-option-details) section. For more information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
 
-- **`-h|--help`**
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out a short help for the command.
-
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action. For example, to complete authentication. Available since .NET Core 3.0 SDK.
+[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 - **`-l|--logger <LOGGER>`**
 
@@ -177,9 +175,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   List the discovered tests instead of running the tests.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`. For more information, see <xref:Microsoft.Build.Framework.LoggerVerbosity>.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 - **`RunSettings`** arguments
 

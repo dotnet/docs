@@ -11,7 +11,7 @@ ms.assetid: 36335cb9-76b8-4443-92c7-44f081eabb21
 
 The following illustration shows an Windows Communication Foundation (WCF) service and client secured using message-level security. The service is authenticated with an X.509 certificate. The client authenticates using a user name and password.  
   
- For a sample application, see [Message Security User Name](/previous-versions/dotnet/framework/wcf/samples/message-security-user-name).  
+ For a sample application, see [Message Security User Name](../samples/message-security-user-name.md).  
   
  ![Message security using username authentication](media/1fb10a61-7e1d-42f5-b1af-195bfee5b3c6.gif "1fb10a61-7e1d-42f5-b1af-195bfee5b3c6")  
   
@@ -129,7 +129,7 @@ The following illustration shows an Windows Communication Foundation (WCF) servi
 ## See also
 
 - [Security Overview](security-overview.md)
-- [Message Security User Name](/previous-versions/dotnet/framework/wcf/samples/message-security-user-name)
+- [Message Security User Name](../samples/message-security-user-name.md)
 - [Service Identity and Authentication](service-identity-and-authentication.md)
 - [\<identity>](../../configure-apps/file-schema/wcf/identity.md)
 - [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

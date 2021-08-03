@@ -69,4 +69,4 @@ Factory="WebScriptServiceHostFactory"
 
 ## See also
 
-- [Custom Service Host](/previous-versions/dotnet/framework/wcf/samples/custom-service-host)
+- [Custom Service Host](../../../wcf/samples/custom-service-host.md)

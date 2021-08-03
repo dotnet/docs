@@ -104,5 +104,5 @@ The following code sample shows code for setting up a `WSFederationHttpBinding` 
 ## See also
 
 - [Federation](federation.md)
-- [Federation Sample](/previous-versions/dotnet/framework/wcf/samples/federation-sample)
+- [Federation Sample](../samples/federation-sample.md)
 - [How to: Disable Secure Sessions on a WSFederationHttpBinding](how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)

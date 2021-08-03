@@ -6,7 +6,7 @@ ms.assetid: b62cd369-5409-4030-8490-9759a462dd3a
 ---
 # \<bindings>
 
-You can use the `bindings` element to configure a collection of standard and custom bindings for Windows Communication Foundation (WCF). Each entry is a `binding` element that can be identified by its unique `name`. Services use bindings by linking them using the `name`. Starting with .NET Framework 4, bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](/previous-versions/dotnet/framework/wcf/samples/simplified-configuration-for-wcf-services).
+You can use the `bindings` element to configure a collection of standard and custom bindings for Windows Communication Foundation (WCF). Each entry is a `binding` element that can be identified by its unique `name`. Services use bindings by linking them using the `name`. Starting with .NET Framework 4, bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../wcf/samples/simplified-configuration-for-wcf-services.md).
 
 ## System-provided bindings
 

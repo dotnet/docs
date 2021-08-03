@@ -172,7 +172,7 @@ The Web Services Security Protocols provide Web services security mechanisms tha
   
  WCF supports all four modes for security header layout. Security header structure and message examples for authentication modes below follow the "Strict" mode.  
   
-## 2. Common Message Security Parameters  
+## 6. Authentication mode policies
 
  This section provides example policies for each authentication mode along with examples showing security header structure in messages exchanged by client and service.  
   
@@ -1569,7 +1569,7 @@ http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey
 </wsse:Security>  
 ```  
   
-## 6.3 Kerberos  
+### 6.3 Kerberos  
 
  With this authentication mode the client authenticates to the service using a Kerberos ticket. That same ticket also provides server authentication. The binding used is a symmetric binding with the following properties;  
   

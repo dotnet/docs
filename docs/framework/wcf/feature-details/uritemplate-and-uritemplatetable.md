@@ -335,6 +335,6 @@ When a variable is given a default value of `null` there are some additional con
 
 - [WCF Web HTTP Programming Model Overview](wcf-web-http-programming-model-overview.md)
 - [WCF Web HTTP Programming Object Model](wcf-web-http-programming-object-model.md)
-- [UriTemplate](/previous-versions/dotnet/framework/wcf/samples/uritemplate-sample)
-- [UriTemplate Table](/previous-versions/dotnet/framework/wcf/samples/uritemplate-table-sample)
-- [UriTemplate Table Dispatcher](/previous-versions/dotnet/framework/wcf/samples/uritemplate-table-dispatcher-sample)
+- [UriTemplate](../samples/uritemplate-sample.md)
+- [UriTemplate Table](../samples/uritemplate-table-sample.md)
+- [UriTemplate Table Dispatcher](../samples/uritemplate-table-dispatcher-sample.md)

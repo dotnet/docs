@@ -86,6 +86,6 @@ The following sample code shows how to specify the client endpoint address in co
 
 ## See also
 
-- [Duplex](/previous-versions/dotnet/framework/wcf/samples/duplex)
+- [Duplex](../samples/duplex.md)
 - [Specifying Client Run-Time Behavior](../specifying-client-run-time-behavior.md)
 - [How to: Create a Channel Factory and Use it to Create and Manage Channels](how-to-create-a-channel-factory-and-use-it-to-create-and-manage-channels.md)

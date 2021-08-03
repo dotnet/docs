@@ -53,9 +53,9 @@ This topic provides recommended practices for queued communication in Windows Co
   
 - Transacted batching. Transacted batching ensures that many messages can be read in a single transaction. This optimizes transaction commits, increasing overall performance. The cost of batching is that if a failure occurs in a single message within a batch, then the entire batch is rolled back and the messages must be processed one at a time until it is safe to batch again. In most cases, poison messages are rare, so batching is the preferred way to increase system performance, particularly when you have other resource managers that participate in the transaction. For more information, see [Batching Messages in a Transaction](batching-messages-in-a-transaction.md).  
   
-- Concurrency. Concurrency increases throughput, but concurrency also affects contention to shared resources. For more information, see [Concurrency](/previous-versions/dotnet/framework/wcf/samples/concurrency).  
+- Concurrency. Concurrency increases throughput, but concurrency also affects contention to shared resources. For more information, see [Concurrency](../samples/concurrency.md).  
   
-- Throttling. For optimal performance, throttle the number of messages in the dispatcher pipeline. For an example of how to do this, see [Throttling](/previous-versions/dotnet/framework/wcf/samples/throttling).  
+- Throttling. For optimal performance, throttle the number of messages in the dispatcher pipeline. For an example of how to do this, see [Throttling](../samples/throttling.md).  
   
  When using batching, be aware that concurrency and throttling translate to concurrent batches.  
   

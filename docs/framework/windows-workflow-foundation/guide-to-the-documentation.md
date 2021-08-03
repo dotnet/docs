@@ -13,7 +13,7 @@ This topic contains information about how to use the Windows Workflow Foundation
   
 ## New to Windows Workflow Foundation Programming  
   
-- If you are new to programming with Windows Workflow Foundation and you just want to see some sample applications that work, see the topics listed under [Windows Workflow Samples](/previous-versions/dotnet/framework/windows-workflow-foundation/samples/index).  
+- If you are new to programming with Windows Workflow Foundation and you just want to see some sample applications that work, see the topics listed under [Windows Workflow Samples](./samples/index.md).  
   
 - For a discussion of the various Windows Workflow Foundation flow-control models, see [Designing Workflows](designing-workflows.md).  
   

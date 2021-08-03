@@ -56,7 +56,7 @@ Windows Communication Foundation (WCF) AJAX services can be accessed from any Ja
 </configuration>  
 ```  
   
- For a working example, see the [AJAX Service with JSON and XML](/previous-versions/dotnet/framework/wcf/samples/ajax-service-with-json-and-xml-sample).  
+ For a working example, see the [AJAX Service with JSON and XML](../samples/ajax-service-with-json-and-xml-sample.md).  
   
 ## Creating an AJAX-Compatible Service Contract  
 
@@ -107,4 +107,4 @@ string[] GetCities(string firstLetters, int maxNumber);
   
  HTTP GET requests contain all the request parameters in the URL itself.  
   
- It is up to the user to decide how to create the HTTP request to the endpoint. Also, the user has full control over constructing the JSON that forms the body of the request. For an example of creating a request from JavaScript, see the [AJAX Service with JSON and XML](/previous-versions/dotnet/framework/wcf/samples/ajax-service-with-json-and-xml-sample).
+ It is up to the user to decide how to create the HTTP request to the endpoint. Also, the user has full control over constructing the JSON that forms the body of the request. For an example of creating a request from JavaScript, see the [AJAX Service with JSON and XML](../samples/ajax-service-with-json-and-xml-sample.md).

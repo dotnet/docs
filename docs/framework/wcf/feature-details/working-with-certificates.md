@@ -86,7 +86,7 @@ You can also set the property using configuration. The following elements are us
 
 The `CertificateValidationMode` property also enables you to customize how certificates are authenticated. By default, the level is set to `ChainTrust`. To use the <xref:System.ServiceModel.Security.X509CertificateValidationMode.Custom> value, you must also set the `CustomCertificateValidatorType` attribute to an assembly and type used to validate the certificate. To create a custom validator, you must inherit from the abstract <xref:System.IdentityModel.Selectors.X509CertificateValidator> class.
 
-When creating a custom authenticator, the most important method to override is the <xref:System.IdentityModel.Selectors.X509CertificateValidator.Validate%2A> method. For an example of custom authentication, see the [X.509 Certificate Validator](/previous-versions/dotnet/framework/wcf/samples/x-509-certificate-validator) sample. For more information, see [Custom Credential and Credential Validation](../extending/custom-credential-and-credential-validation.md).
+When creating a custom authenticator, the most important method to override is the <xref:System.IdentityModel.Selectors.X509CertificateValidator.Validate%2A> method. For an example of custom authentication, see the [X.509 Certificate Validator](../samples/x-509-certificate-validator.md) sample. For more information, see [Custom Credential and Credential Validation](../extending/custom-credential-and-credential-validation.md).
 
 ## Using the PowerShell New-SelfSignedCertificate Cmdlet to Build a Certificate Chain
 

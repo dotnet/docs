@@ -83,7 +83,7 @@ Figure 2-3 shows the execution of multiple VM migrations by using Azure Site Rec
 
     <https://aka.ms/azuremigrate>
 
-- **Azure migration center**
+- **Azure migration and modernization center**
 
     <https://azure.microsoft.com/migration/>
 

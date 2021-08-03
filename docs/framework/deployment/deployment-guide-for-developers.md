@@ -9,7 +9,7 @@ ms.assetid: 094d043e-33c4-40ba-a503-e0b20b55f4cf
 ---
 # .NET Framework deployment guide for developers
 
-This article provides information for developers who want to install any version of the .NET Framework from .NET Framework 4.5 to [!INCLUDE[net_current](../../../includes/net-current-version.md)] with their apps.
+This article provides information for developers who want to install any version of .NET Framework from .NET Framework 4.5 to [!INCLUDE[net_current](../../../includes/net-current-version.md)] with their apps.
 
 You can download the redistributable packages and language packs for .NET Framework from the download pages:
 
@@ -225,8 +225,6 @@ The .NET Framework installer writes registry keys when installation is successfu
 
 > [!IMPORTANT]
 > Check for a value  **greater than or equal to** the release keyword value when attempting to detect whether a specific version is present.
-
-[!INCLUDE[Release key values note](~/includes/version-keys-note.md)]
 
 |Version|Value of the Release DWORD|
 |-------------|--------------------------------|

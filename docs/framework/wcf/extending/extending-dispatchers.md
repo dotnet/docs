@@ -40,25 +40,25 @@ Use the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> to acquire the 
 
 There a number of reasons to extend the dispatcher:
 
-- Custom Message Validation. Users can enforce that a message is valid for a certain schema. This can be done by implementing the message interceptor interfaces. For an example, see [Message Inspectors](/previous-versions/dotnet/framework/wcf/samples/message-inspectors).
+- Custom Message Validation. Users can enforce that a message is valid for a certain schema. This can be done by implementing the message interceptor interfaces. For an example, see [Message Inspectors](../samples/message-inspectors.md).
 
 - Custom Message Logging. Users can inspect and log some set of application messages that flow through an endpoint. This can also be accomplished with the message interceptor interfaces.
 
 - Custom Message Transformations. Users can apply certain transformations to the message in the runtime (for example, for versioning). This can be accomplished, again, with the message interceptor interfaces.
 
-- Custom Data Model. Users can have a data serialization model other than those supported by default in WCF (namely, <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>, <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>, and raw messages). This can be done by implement the message formatter interfaces. For an example, see [Operation Formatter and Operation Selector](/previous-versions/dotnet/framework/wcf/samples/operation-formatter-and-operation-selector).
+- Custom Data Model. Users can have a data serialization model other than those supported by default in WCF (namely, <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>, <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>, and raw messages). This can be done by implement the message formatter interfaces. For an example, see [Operation Formatter and Operation Selector](../samples/operation-formatter-and-operation-selector.md).
 
 - Custom Parameter Validation. Users can enforce that typed parameters are valid (as opposed to XML). This can be done using the parameter inspector interfaces.
 
-- Custom Operation Dispatching. Users can implement dispatching on something other than action – for example, on the body element, or on a custom message property. This can be done using the <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector> interface. For an example, see [Operation Formatter and Operation Selector](/previous-versions/dotnet/framework/wcf/samples/operation-formatter-and-operation-selector).
+- Custom Operation Dispatching. Users can implement dispatching on something other than action – for example, on the body element, or on a custom message property. This can be done using the <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector> interface. For an example, see [Operation Formatter and Operation Selector](../samples/operation-formatter-and-operation-selector.md).
 
-- Object Pooling. Users can pool instances rather than allocating a new one for every call. This can be implemented using the instance provider interfaces. For an example, see [Pooling](/previous-versions/dotnet/framework/wcf/samples/pooling).
+- Object Pooling. Users can pool instances rather than allocating a new one for every call. This can be implemented using the instance provider interfaces. For an example, see [Pooling](../samples/pooling.md).
 
 - Instance Leasing. Users can implement a leasing pattern for instance lifetime, similar to that of .NET Framework Remoting. This can be done using the instance context lifetime interfaces.
 
 - Custom Error Handling. Users can control how both local errors are processed and how faults are communicated back to clients. This can be implemented using the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interfaces.
 
-- Custom Authorization Behaviors. Users can implement custom access control by extending the Contract or Operation run-time pieces and adding security checks based upon the tokens present in the message. This can be accomplished using either the message interceptor or parameter interceptor interfaces. For examples, see [Security Extensibility](/previous-versions/dotnet/framework/wcf/samples/security-extensibility).
+- Custom Authorization Behaviors. Users can implement custom access control by extending the Contract or Operation run-time pieces and adding security checks based upon the tokens present in the message. This can be accomplished using either the message interceptor or parameter interceptor interfaces. For examples, see [Security Extensibility](../samples/security-extensibility.md).
 
   > [!CAUTION]
   > Because altering security properties has the potential to compromise the security of WCF applications, it is strongly recommended that you undertake security-related modifications with care and test thoroughly prior to deployment.

@@ -80,7 +80,7 @@ Specifies the parameters for a security token issued in a Federated security sce
 - [Custom Bindings](../../../wcf/extending/custom-bindings.md)
 - [\<customBinding>](custombinding.md)
 - [How to: Create a Custom Binding Using the SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
-- [Custom Binding Security](/previous-versions/dotnet/framework/wcf/samples/custom-binding-security)
+- [Custom Binding Security](../../../wcf/samples/custom-binding-security.md)
 - [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md)
 - [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md)
 - [Security Capabilities with Custom Bindings](../../../wcf/feature-details/security-capabilities-with-custom-bindings.md)

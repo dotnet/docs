@@ -33,6 +33,8 @@ items:
           href: aspnet-core/6.0/blazor-eventargstype-property-replaced.md
         - name: "Blazor: Byte-array interop"
           href: aspnet-core/6.0/byte-array-interop.md
+        - name: ClientCertificate doesn't trigger renegotiation
+          href: aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md
         - name: "Kestrel: Log message attributes changed"
           href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
         - name: "MessagePack: Library changed in @microsoft/signalr-protocol-msgpack"
@@ -63,6 +65,10 @@ items:
           href: core-libraries/6.0/obsolete-apis-with-custom-diagnostics.md
         - name: Environment.ProcessorCount behavior on Windows
           href: core-libraries/6.0/environment-processorcount-on-windows.md
+        - name: FileStream no longer synchronizes offset with OS
+          href: core-libraries/6.0/filestream-doesnt-sync-offset-with-os.md
+        - name: FileStream.Position updated after completion
+          href: core-libraries/6.0/filestream-position-updates-after-readasync-writeasync-completion.md
         - name: New diagnostic IDs for obsoleted APIs
           href: core-libraries/6.0/diagnostic-id-change-for-obsoletions.md
         - name: New Queryable method overloads
@@ -79,6 +85,10 @@ items:
           href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
+      - name: Globalization
+        items:
+        - name: Culture creation and case mapping in globalization-invariant mode
+          href: globalization/6.0/culture-creation-invariant-mode.md
       - name: JIT compiler
         items:
         - name: Call argument coercion
@@ -89,10 +99,16 @@ items:
           href: networking/6.0/webrequest-deprecated.md
       - name: SDK and MSBuild
         items:
+        - name: -p option for `dotnet run` is deprecated
+          href: sdk/6.0/deprecate-p-option-dotnet-run.md
+        - name: Generate apphost for macOS
+          href: sdk/6.0/apphost-generated-for-macos.md
         - name: Generate error for duplicate files in publish output
           href: sdk/6.0/duplicate-files-in-output.md
         - name: GetTargetFrameworkProperties and GetNearestTargetFramework removed
           href: sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md
+        - name: Implicit namespaces in C# projects
+          href: sdk/6.0/implicit-namespaces.md
       - name: Windows Forms
         items:
         - name: APIs throw ArgumentNullException
@@ -393,6 +409,8 @@ items:
           href: aspnet-core/6.0/blazor-eventargstype-property-replaced.md
         - name: "Blazor: Byte-array interop"
           href: aspnet-core/6.0/byte-array-interop.md
+        - name: ClientCertificate doesn't trigger renegotiation
+          href: aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md
         - name: "Kestrel: Log message attributes changed"
           href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
         - name: "MessagePack: Library changed in @microsoft/signalr-protocol-msgpack"
@@ -521,6 +539,10 @@ items:
           href: core-libraries/6.0/obsolete-apis-with-custom-diagnostics.md
         - name: Environment.ProcessorCount behavior on Windows
           href: core-libraries/6.0/environment-processorcount-on-windows.md
+        - name: FileStream no longer synchronizes offset with OS
+          href: core-libraries/6.0/filestream-doesnt-sync-offset-with-os.md
+        - name: FileStream.Position updated after completion
+          href: core-libraries/6.0/filestream-position-updates-after-readasync-writeasync-completion.md
         - name: New diagnostic IDs for obsoleted APIs
           href: core-libraries/6.0/diagnostic-id-change-for-obsoletions.md
         - name: New Queryable method overloads
@@ -621,6 +643,10 @@ items:
         href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Globalization
       items:
+      - name: .NET 6
+        items:
+        - name: Culture creation and case mapping in globalization-invariant mode
+          href: globalization/6.0/culture-creation-invariant-mode.md
       - name: .NET 5
         items:
         - name: Use ICU libraries on Windows
@@ -673,10 +699,16 @@ items:
       items:
       - name: .NET 6
         items:
+        - name: -p option for `dotnet run` is deprecated
+          href: sdk/6.0/deprecate-p-option-dotnet-run.md
+        - name: Generate apphost for macOS
+          href: sdk/6.0/apphost-generated-for-macos.md
         - name: Generate error for duplicate files in publish output
           href: sdk/6.0/duplicate-files-in-output.md
         - name: GetTargetFrameworkProperties and GetNearestTargetFramework removed
           href: sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md
+        - name: Implicit namespaces in C# projects
+          href: sdk/6.0/implicit-namespaces.md
       - name: .NET 5
         items:
         - name: Directory.Packages.props files imported by default

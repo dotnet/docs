@@ -84,13 +84,13 @@ The following table describes the results of various combinations of specifying 
 |Yes|No|`Dim qty As Integer`|The variable is initialized to the default value for the data type. For more information, see [Dim Statement](dim-statement.md).|
 |Yes|Yes|`Dim qty  As Integer = 5`|If the data type of the initializer is not convertible to the specified data type, a compile-time error occurs.|
 
-## Example
+## Example 1
 
 The following examples demonstrate how the `Option Infer` statement enables local type inference.
 
 [!code-vb[VbVbalrTypeInference#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#6)]
 
-## Example
+## Example 2
 
 The following example demonstrates that the run-time type can differ when a variable is identified as an `Object`.
 

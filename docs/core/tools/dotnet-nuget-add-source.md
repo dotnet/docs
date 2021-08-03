@@ -36,9 +36,9 @@ The `dotnet nuget add source` command adds a new package source to your NuGet co
 
 ## Options
 
-- **`--configfile <FILE>`**
+<!-- markdownlint-disable MD012 -->
 
-  The NuGet configuration file. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior).
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 - **`-n|--name <SOURCE_NAME>`**
 

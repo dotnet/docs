@@ -76,4 +76,4 @@ In addition, you can define your own binding elements and insert them between an
 - [System-Provided Bindings](../system-provided-bindings.md)
 - [How to: Customize a System-Provided Binding](how-to-customize-a-system-provided-binding.md)
 - [\<customBinding>](../../configure-apps/file-schema/wcf/custombinding.md)
-- [Custom Binding](/previous-versions/dotnet/framework/wcf/samples/custom-binding)
+- [Custom Binding](../samples/custom-binding.md)

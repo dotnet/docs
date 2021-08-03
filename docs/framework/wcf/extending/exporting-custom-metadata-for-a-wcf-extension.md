@@ -32,7 +32,7 @@ In Windows Communication Foundation (WCF), metadata export is the process of des
   
  The <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%2A> method is called on all <xref:System.ServiceModel.Description.IWsdlExportExtension> implementations within the <xref:System.ServiceModel.Description.ContractDescription?displayProperty=nameWithType> instance that is being exported.  The <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint%2A> method is called on all <xref:System.ServiceModel.Description.IWsdlExportExtension> implementations with the <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=nameWithType> instance that is being exported.  
   
- For more information, see [How to: Export Custom WSDL](how-to-export-custom-wsdl.md) and the sample [Custom WSDL Publication](/previous-versions/dotnet/framework/wcf/samples/custom-wsdl-publication).  
+ For more information, see [How to: Export Custom WSDL](how-to-export-custom-wsdl.md) and the sample [Custom WSDL Publication](../samples/custom-wsdl-publication.md).  
   
 ## Exporting Custom Policy Assertions  
 

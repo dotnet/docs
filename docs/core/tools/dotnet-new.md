@@ -88,6 +88,8 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`--dry-run`**
 
   Displays a summary of what would happen if the given command were run if it would result in a template creation. Available since .NET Core 2.2 SDK.
@@ -96,7 +98,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
   Forces content to be generated even if it would change existing files. This is required when the template chosen would override existing files in the output directory.
 
-- **`-h|--help`**
+- **`-?|-h|--help`**
 
   Prints out help for the command. It can be invoked for the `dotnet new` command itself or for any template. For example, `dotnet new mvc --help`.
 

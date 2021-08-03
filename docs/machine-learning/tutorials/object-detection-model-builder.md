@@ -3,7 +3,7 @@ title: 'Tutorial: Detect objects in images with Model Builder'
 description: This tutorial illustrates how to build an object detection model using ML.NET Model Builder and Azure ML to detect stop signs in images.
 author: briacht
 ms.author: brachtma
-ms.date: 07/07/2021
+ms.date: 07/25/2021
 ms.topic: tutorial
 ms.custom: mlnet-tooling
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to detect stop signs in images using Model Builder.
@@ -55,68 +55,10 @@ This sample creates a C# .NET Core console application that detects stop signs i
 
 The Stop Sign dataset consists of 50 images downloaded from [Unsplash](https://unsplash.com/), each of which contain at least one stop sign.
 
-The first thing you need to do is annotate your images, or draw bounding boxes around the stop signs in each image. In this tutorial, you will annotate your images with a tool called [VoTT](https://github.com/microsoft/VoTT).
+You can download the dataset [here](https://aka.ms/mlnet-object-detection-tutorial-assets). The download includes of the raw image data files and two JSON files to describe the objects in the images.
 
-> If you want to skip the data labeling steps below, you can [download this version of the dataset](https://aka.ms/mlnet-object-detection-tutorial-assets) and skip to [Create a console application](object-detection-model-builder.md#create-a-console-application).
-
-### Create a new VoTT project
-
-1. [Download the dataset](https://aka.ms/mlnet-object-detection-tutorial-dataset) of 50 stop sign images and unzip.
-1. [Download VoTT](https://github.com/Microsoft/VoTT/releases) (Visual Object Tagging Tool).
-1. Open VoTT and select **New Project**.
-
-    ![VoTT Home Screen](./media/object-detection-model-builder/vott.png)
-
-1. In **Project Settings**, change the **Display Name** to "StopSignObjDetection".
-1. Change the **Security Token** to *Generate New Security Token*.
-1. Next to **Source Connection**, select **Add Connection**.
-1. In **Connection Settings**, change the **Display Name** for the source connection to "StopSignImages", and select *Local File System* as the **Provider**. For the **Folder Path**, select the *Stop-Signs* folder which contains the 50 training images, and then select **Save Connection**.
-
-    ![VoTT New Connection Dialog](./media/object-detection-model-builder/vott-new-connection.png)
-
-1. In **Project Settings**, change the **Source Connection** to *StopSignImages* (the connection you just created).
-1. Change the **Target Connection** to *StopSignImages* as well. Your **Project Settings** should now look similar to this screenshot:
-
-    ![VoTT Project Settings Dialog](./media/object-detection-model-builder/vott-new-project.png)
-
-1. Select **Save Project**.
-
-### Add tag and label images
-
-You should now see a window with preview images of all the training images on the left, a preview of the selected image in the middle, and a **Tags** column on the right. This screen is the **Tags editor**.
-
-1. Select the first (plus-shaped) icon in the **Tags** toolbar to add a new tag.
-
-    ![VoTT New Tag Icon](./media/object-detection-model-builder/vott-new-tag-icon.png)
-
-1. Name the tag "Stop-Sign" and hit <kbd>Enter</kbd> on your keyboard.
-
-    ![VoTT New Tag](./media/object-detection-model-builder/vott-new-tag.png)
-
-1. Click and drag to draw a rectangle around each stop sign in the image. If the cursor does not let you draw a rectangle, try selecting the **Draw Rectangle** tool from the toolbar on the top, or use the keyboard shortcut <kbd>R</kbd>.
-1. After drawing your rectangle, select the **Stop-Sign** tag that you created in the previous steps to add the tag to the bounding box.
-1. Click on the preview image for the next image in the dataset and repeat this process.
-1. Continue steps 3-4 for every stop sign in every image.
-
-    ![VoTT Annotating Images](./media/object-detection-model-builder/vott-annotating.gif)
-
-### Export your VoTT JSON
-
-Once you have labeled all of your training images, you can export the file that will be used by Model Builder for training.
-
-1. Select the fourth icon in the left toolbar (the one with the diagonal arrow in a box) to go to the **Export Settings**.
-1. Leave the **Provider** as *VoTT JSON*.
-1. Change the **Asset State** to *Only tagged Assets*.
-1. Uncheck **Include Images**. If you include the images, then the training images will be copied to the export folder that is generated, which is not necessary.
-1. Select **Save Export Settings**.
-
-    ![VoTT Export Settings](./media/object-detection-model-builder/vott-export.png)
-
-1. Go back to the **Tags editor** (the second icon in the left toolbar shaped like a ribbon). In the top toolbar, select the **Export Project** icon (the last icon shaped like an arrow in a box), or use the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>E</kbd>.
-
-    ![VoTT Export Button](./media/object-detection-model-builder/vott-export-button.png)
-
-This export will create a new folder called *vott-json-export* in your *Stop-Sign-Images* folder and will generate a JSON file named *StopSignObjDetection-export* in that new folder. You will use this JSON file in the next steps for training an object detection model in Model Builder.
+- The ***-asset.json files** contain bounding box information for the respective image.
+- The **StopSignObjDetection-export.json** file has the references to the image files and bounding box information from asset files. It's an aggregate of all the asset files. This file is used to load the data for training in Model Builder.
 
 ## Create a console application
 

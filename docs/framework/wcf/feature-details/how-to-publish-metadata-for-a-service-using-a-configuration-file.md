@@ -9,7 +9,7 @@ ms.assetid: f061443f-92df-4824-b36a-609c4cd14a17
 This is one of two how-to topics that demonstrate publishing metadata for a Windows Communication Foundation (WCF) service. There are two ways to specify how a service should publish metadata, using a configuration file and using code. This topic shows how to publish metadata for a service using a configuration file.  
   
 > [!CAUTION]
-> This topic shows how to publish metadata in an unsecure manner. Any client can retrieve the metadata from the service. If you require your service to publish metadata in a secure manner, see [Custom Secure Metadata Endpoint](/previous-versions/dotnet/framework/wcf/samples/custom-secure-metadata-endpoint).  
+> This topic shows how to publish metadata in an unsecure manner. Any client can retrieve the metadata from the service. If you require your service to publish metadata in a secure manner, see [Custom Secure Metadata Endpoint](../samples/custom-secure-metadata-endpoint.md).  
   
  For more information about publishing metadata in code, see [How to: Publish Metadata for a Service Using Code](how-to-publish-metadata-for-a-service-using-code.md). Publishing metadata allows clients to retrieve the metadata using a WS-Transfer GET request or an HTTP/GET request using the `?wsdl` query string. To be sure that the code is working, create a basic WCF service. For simplicity, a basic self-hosted service is provided in the following code.  
   
@@ -175,7 +175,7 @@ namespace Metadata.Samples
     </configuration>  
     ```  
   
-     Because the service has a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> with the `httpGetEnabled` set to `true`, the service has publishing metadata enabled, and because no endpoints were explicitly added, the runtime adds the default endpoints. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../simplified-configuration.md) and [Simplified Configuration for WCF Services](/previous-versions/dotnet/framework/wcf/samples/simplified-configuration-for-wcf-services).  
+     Because the service has a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> with the `httpGetEnabled` set to `true`, the service has publishing metadata enabled, and because no endpoints were explicitly added, the runtime adds the default endpoints. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../simplified-configuration.md) and [Simplified Configuration for WCF Services](../samples/simplified-configuration-for-wcf-services.md).  
   
 ## Example  
 
@@ -254,7 +254,7 @@ namespace Metadata.Samples
 
 - <xref:System.ServiceModel.Description.ServiceMetadataBehavior>
 - [How to: Host a WCF Service in a Managed Application](../how-to-host-a-wcf-service-in-a-managed-application.md)
-- [Self-Host](/previous-versions/dotnet/framework/wcf/samples/self-host)
+- [Self-Host](../samples/self-host.md)
 - [Metadata Architecture Overview](metadata-architecture-overview.md)
 - [Using Metadata](using-metadata.md)
 - [How to: Publish Metadata for a Service Using Code](how-to-publish-metadata-for-a-service-using-code.md)

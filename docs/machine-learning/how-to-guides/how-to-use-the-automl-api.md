@@ -1,7 +1,7 @@
 ---
 title: How to use the ML.NET automated ML API
 description: The ML.NET automated ML API automates the model building process and generates a model ready for deployment. Learn the options that you can use to configure automated machine learning tasks.
-ms.date: 12/18/2019
+ms.date: 07/11/2021
 ms.custom: mvc,how-to
 ---
 
@@ -34,6 +34,7 @@ Before creating an experiment, determine the kind of machine learning problem yo
 * Multiclass Classification
 * Regression
 * Recommendation
+* Ranking
 
 ## Create experiment settings
 
@@ -61,6 +62,12 @@ Create experiment settings for the determined ML task type:
 
   ```csharp
   var experimentSettings = new RecommendationExperimentSettings();
+  ```
+
+* Ranking
+
+  ```csharp
+  var experimentSettings = new RankingExperimentSettings();
   ```
 
 ## Configure experiment settings
@@ -113,21 +120,22 @@ The list of supported trainers per ML task can be found at the corresponding lin
 * [Supported Multiclass Classification Algorithms](xref:Microsoft.ML.AutoML.MulticlassClassificationTrainer)
 * [Supported Regression Algorithms](xref:Microsoft.ML.AutoML.RegressionTrainer)
 * [Supported Recommendation Algorithms](xref:Microsoft.ML.AutoML.RecommendationTrainer)
+* [Supported Ranking Algorithms](xref:Microsoft.ML.AutoML.RankingTrainer)
 
 ## Optimizing metric
 
 The optimizing metric, as shown in the example above, determines the metric to be optimized during model training. The optimizing metric you can select is determined by the task type you choose. Below is a list of available metrics.
 
-|[Binary Classification](xref:Microsoft.ML.AutoML.BinaryClassificationMetric) | [Multiclass Classification](xref:Microsoft.ML.AutoML.MulticlassClassificationMetric) |[Regression & Recommendation](xref:Microsoft.ML.AutoML.RegressionMetric)
-|-- |-- |--
-|Accuracy| LogLoss | RSquared
-|AreaUnderPrecisionRecallCurve | LogLossReduction | MeanAbsoluteError
-|AreaUnderRocCurve | MacroAccuracy | MeanSquaredError
-|F1Score | MicroAccuracy | RootMeanSquaredError
-|NegativePrecision | TopKAccuracy
-|NegativeRecall |
-|PositivePrecision
-|PositiveRecall
+|[Binary Classification](xref:Microsoft.ML.AutoML.BinaryClassificationMetric)  | [Multiclass Classification](xref:Microsoft.ML.AutoML.MulticlassClassificationMetric) | [Regression & Recommendation](xref:Microsoft.ML.AutoML.RegressionMetric)  | [Ranking](xref:Microsoft.ML.AutoML.RankingMetric)  |
+|---------|---------|---------|---------|
+|Accuracy                     | LogLoss         | RSquared             | Discounted Cumulative Gains            |
+|AreaUnderPrecisionRecallCurve| LogLossReduction| MeanAbsoluteError    | Normalized Discounted Cumulative Gains |
+|AreaUnderRocCurve            | MacroAccuracy   | MeanSquaredError     |                                        |
+|F1Score                      | MicroAccuracy   | RootMeanSquaredError |                                        |
+|NegativePrecision            | TopKAccuracy    |                      |                                        |
+|NegativeRecall               |                 |                      |                                        |
+|PositivePrecision            |                 |                      |                                        |
+|PositiveRecall               |                 |                      |                                        |
 
 ## Data pre-processing and featurization
 
@@ -223,6 +231,7 @@ The following are all the available metrics per ML task:
 * [Binary classification metrics](xref:Microsoft.ML.AutoML.BinaryClassificationMetric)
 * [Multiclass classification metrics](xref:Microsoft.ML.AutoML.MulticlassClassificationMetric)
 * [Regression & recommendation metrics](xref:Microsoft.ML.AutoML.RegressionMetric)
+* [Ranking](xref:Microsoft.ML.AutoML.RankingMetric)
 
 ## See also
 

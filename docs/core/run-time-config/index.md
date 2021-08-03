@@ -1,11 +1,11 @@
 ---
 title: Run-time config options
-description: Learn how to configure .NET Core applications by using run-time configuration settings.
-ms.date: 01/21/2020
+description: Learn how to configure .NET applications by using run-time configuration settings.
+ms.date: 07/23/2021
 ---
-# .NET Core run-time configuration settings
+# .NET run-time configuration settings
 
-.NET Core supports the use of configuration files and environment variables to configure the behavior of .NET Core applications at run time. Run-time configuration is an attractive option if:
+.NET 5+ (including .NET Core versions) supports the use of configuration files and environment variables to configure the behavior of .NET applications at run time. Run-time configuration is an attractive option if:
 
 - You don't own or control the source code for an application and therefore are unable to configure it programmatically.
 
@@ -14,7 +14,7 @@ ms.date: 01/21/2020
 > [!NOTE]
 > This documentation is a work in progress. If you notice that the information presented here is either incomplete or inaccurate, either [open an issue](https://github.com/dotnet/docs/issues) to let us know about it, or [submit a pull request](https://github.com/dotnet/docs/pulls) to address the issue. For information about submitting pull requests for the dotnet/docs repository, see the [contributor's guide](/contribute/dotnet/dotnet-contribute).
 
-.NET Core provides the following mechanisms for configuring application behavior at run time:
+.NET provides the following mechanisms for configuring application behavior at run time:
 
 - The [runtimeconfig.json file](#runtimeconfigjson)
 
@@ -23,7 +23,7 @@ ms.date: 01/21/2020
 - [Environment variables](#environment-variables)
 
 > [!TIP]
-> Configuring a run-time option by using an environment variable applies the setting to all .NET Core apps. Configuring a run-time option in the *runtimeconfig.json* or project file applies the setting to that application only.
+> Configuring a run-time option by using an environment variable applies the setting to all .NET apps. Configuring a run-time option in the *runtimeconfig.json* or project file applies the setting to that application only.
 
 Some configuration values can also be set programmatically by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.
 

@@ -34,7 +34,7 @@ In a calling application, the service model layer is responsible for translating
   
 - Custom Data Model. A user may want to have a data or serialization model other than those supported by default in WCF (namely, <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>, <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>, and <xref:System.ServiceModel.Channels.Message?displayProperty=nameWithType> objects). This can be done by implementing the message formatter interfaces. For more information, see <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter?displayProperty=nameWithType> and the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter%2A?displayProperty=nameWithType> property.  
   
-- Custom Parameter Validation. A user may want to enforce that typed parameters are valid (as opposed to XML). This can be done using the parameter inspector interfaces. For an example, see [How to: Inspect or Modify Parameters](how-to-inspect-or-modify-parameters.md) or [Client Validation](/previous-versions/dotnet/framework/wcf/samples/client-validation).  
+- Custom Parameter Validation. A user may want to enforce that typed parameters are valid (as opposed to XML). This can be done using the parameter inspector interfaces. For an example, see [How to: Inspect or Modify Parameters](how-to-inspect-or-modify-parameters.md) or [Client Validation](../samples/client-validation.md).  
   
 ### Using the ClientRuntime Class  
 

@@ -43,7 +43,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 * **`--no-restore`**
 
-  Doesn't execute an implicit restore before formatting. Default is to always implicit restore.
+  Doesn't execute an implicit restore before formatting. Default is to do implicit restore.
 
 * **`--verify-no-changes`**
 

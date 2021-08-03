@@ -89,7 +89,7 @@ The `dotnet format whitespace` subcommand will only run formatting rule associat
 
 ### Style
 
-`dotnet format style` - Formats code to match `editorconfig` settings for code style.
+`dotnet format style` - Formats code to match EditorConfig settings for code style.
 
 #### Description
 

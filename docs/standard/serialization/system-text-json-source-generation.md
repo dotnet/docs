@@ -97,7 +97,7 @@ Choose one or both source generation modes based on the following benefits that 
 
 The performance improvements can be substantial. For example, [test results](https://devblogs.microsoft.com/dotnet/try-the-new-system-text-json-source-generator/#how-source-generation-provides-benefits) have shown up to 40% or more startup time reduction, private memory reduction, throughput speed increase, and app size reduction.
 
-\* As explained in the [preceding section](#serialization-optimization), the optimized code doesn't support some features. Do performance testing with your options and workloads to determine how much benefit you can actually get from serialization optimization mode. Also, the ability to fall back to `JsonSerializer` code requires metadata collection mode. If you select only serialization optimization mode, serialization might fail for types that need to fall back to `JsonSerializer` code.
+\* As explained in the [preceding section](#serialization-optimization-mode), the optimized code doesn't support some features. Do performance testing with your options and workloads to determine how much benefit you can actually get from serialization optimization mode. Also, the ability to fall back to `JsonSerializer` code requires metadata collection mode. If you select only serialization optimization mode, serialization might fail for types that need to fall back to `JsonSerializer` code.
 
 ## Get the source generation functionality
 

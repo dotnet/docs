@@ -5,6 +5,10 @@ open Azure.Storage.Blobs.Models
 open Azure.Storage.Blobs.Specialized
 open System.Text
 
+//
+// Switch to the source directory that this is used implicitly when interacting with the File object.
+//
+
 System.Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
 
 //

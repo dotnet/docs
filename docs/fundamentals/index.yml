@@ -130,6 +130,38 @@ landingContent:
             url: ../core/tools/dotnet-publish.md
 
   # Card
+  - title: Runtime libraries
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Runtime libraries overview
+            url: ../standard/runtime-libraries-overview.md
+      - linkListType: concept
+        links:
+          - text: Dependency injection in .NET
+            url: ../core/extensions/dependency-injection.md
+          - text: Configuration in .NET
+            url: ../core/extensions/configuration.md
+          - text: Logging in .NET
+            url: ../core/extensions/logging.md
+          - text: .NET Generic Host
+            url: ../core/extensions/generic-host.md
+          - text: Worker Services in .NET
+            url: ../core/extensions/workers.md
+          - text: Caching in .NET
+            url: ../core/extensions/caching.md
+          - name: Modern HTTP with .NET
+            url: ../core/extensions/http-client.md
+      - linkListType: tutorial
+        links:
+          - text: Implement a custom configuration provider
+            url: ../core/extensions/custom-configuration-provider.md
+          - text: Compile-time logging source generation
+            url: ../core/extensions/logger-message-generator.md
+          - text: Create a Windows Service using BackgroundService
+            url: ../core/extensions/windows-service.md
+
+  # Card
   - title: Unit test with .NET Core
     linkLists:
       - linkListType: overview

@@ -80,6 +80,12 @@ landingContent:
   # Card
   - title: Get started with .NET Core
     linkLists:
+      - linkListType: overview
+        links:
+          - text: Port from .NET Framework to .NET Core
+            url: ../core/porting/index.md
+          - text: Upgrade Assistant
+            url: ../core/porting/upgrade-assistant-overview.md
       - linkListType: video
         links:
           - text: "Tutorial: Hello World in 10 minutes"
@@ -96,16 +102,6 @@ landingContent:
         links:
           - text: App publishing
             url: ../core/deploying/index.md
-
-  # Card
-  - title: Migrate from .NET Framework
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Port from .NET Framework to .NET Core
-            url: ../core/porting/index.md
-          - text: Upgrade Assistant
-            url: ../core/porting/upgrade-assistant-overview.md
 
   # Card
   - title: Use .NET Core from the command line

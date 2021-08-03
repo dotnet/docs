@@ -85,7 +85,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 #### Description
 
-The `dotnet format whitespace` subcommand will only run formatting rules associated with whitespace formatting. For a complete list of possible formatting options that you can specify in your *.editorconfig* file see the [whitespace formatting documentation](/visualstudio/ide/reference/options-text-editor-csharp-formatting).
+The `dotnet format whitespace` subcommand will only run formatting rules associated with whitespace formatting. For a complete list of possible formatting options that you can specify in your *.editorconfig* file, see the [whitespace formatting documentation](/visualstudio/ide/reference/options-text-editor-csharp-formatting).
 
 ### Style
 

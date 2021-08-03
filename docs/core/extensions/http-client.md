@@ -14,7 +14,9 @@ With modern application development principles driving best practices, the <xref
 
 ## Explore the `IHttpClientFactory`
 
-All of the sample source code relies on the [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) NuGet package. When you call any of the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> extension methods, you're adding the `IHttpClientFactory` and related services to the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The `IHttpClientFactory` offers the following benefits:
+All of the sample source code relies on the [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) NuGet package. Additionally, ["The Internet Chuck Norris Database"](https://www.icndb.com) free API is used to make HTTP GET requests for "nerdy" jokes.
+
+When you call any of the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> extension methods, you're adding the `IHttpClientFactory` and related services to the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The `IHttpClientFactory` offers the following benefits:
 
 - Exposes the `HttpClient` class as a DI-ready type.
 - Provides a central location for naming and configuring logical `HttpClient` instances.
@@ -125,6 +127,22 @@ A typed client can be added, using Refit to generate the implementation:
 :::code source="snippets/http/generated/Program.cs" range="1-22" highlight="10-21":::
 
 The defined interface can be consumed where necessary, with the implementation provided by DI and Refit.
+
+## HttpClient and lifetime management
+
+A new `HttpClient` instance is returned each time `CreateClient` is called on the `IHttpClientFactory`. An <xref:System.Net.Http.HttpMessageHandler> is created per named client. The factory manages the lifetimes of the `HttpMessageHandler` instances.
+
+`IHttpClientFactory` pools the `HttpMessageHandler` instances created by the factory to reduce resource consumption. An `HttpMessageHandler` instance may be reused from the pool when creating a new `HttpClient` instance if its lifetime hasn't expired.
+
+Pooling of handlers is desirable as each handler typically manages its own underlying HTTP connections. Creating more handlers than necessary can result in connection delays. Some handlers also keep connections open indefinitely, which can prevent the handler from reacting to DNS (Domain Name System) changes.
+
+The default handler lifetime is two minutes. The default value can be overridden on a per named client basis:
+
+[!code-csharp[](http-requests/samples/3.x/HttpClientFactorySample/Startup5.cs?name=snippet1)]
+
+`HttpClient` instances can generally be treated as .NET objects **not** requiring disposal. Disposal cancels outgoing requests and guarantees the given `HttpClient` instance can't be used after calling <xref:System.IDisposable.Dispose%2A>. `IHttpClientFactory` tracks and disposes resources used by `HttpClient` instances.
+
+Keeping a single `HttpClient` instance alive for a long duration is a common pattern used before the inception of `IHttpClientFactory`. This pattern becomes unnecessary after migrating to `IHttpClientFactory`.
 
 ## See also
 

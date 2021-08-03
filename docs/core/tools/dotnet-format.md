@@ -113,7 +113,7 @@ The `dotnet format analyzers` subcommand will only run formatting rule associate
 
 * **`--diagnostics <DIAGNOSTICS>`**
 
-  A space separated list of diagnostic ids to use as a filter when fixing code style or 3rd party issues. Default value is whichever ids are listed in the `editorconfig` file. For a list of built-in analyzer rule ids that you can specify see the list of ids see the [documentation of code-analysis quality rules](../../fundamentals/code-analysis/quality-rules/index.md).
+  A space separated list of diagnostic ids to use as a filter when fixing code quality or 3rd party issues. Default value is whichever ids are listed in the `editorconfig` file. For a list of built-in analyzer rule ids that you can specify see the list of ids see the [documentation of code-analysis quality rules](../../fundamentals/code-analysis/quality-rules/index.md).
 
 * **`--severity`**
 

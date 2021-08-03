@@ -93,7 +93,7 @@ The `dotnet format whitespace` subcommand will only run formatting rules associa
 
 #### Description
 
-The `dotnet format style` subcommand will only run formatting rule associated with code style formatting. For a complete list of possible formatting options that you can specify in your `editorconfig` file see the [code style documentation](../../fundamentals/code-analysis/style-rules/language-rules.md).
+The `dotnet format style` subcommand will only run formatting rule associated with code style formatting. For a complete list of possible formatting options that you can specify in your `editorconfig` file see the [code style documentation](../../fundamentals/code-analysis/style-rules/index.md).
 
 #### Options
 

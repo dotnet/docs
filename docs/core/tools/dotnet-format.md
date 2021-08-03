@@ -47,7 +47,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 * **`--verify-no-changes`**
 
-  Verify no formatting changes would be performed. Terminates with a non zero exit code if any files would have been formatted.
+  Verifies that no formatting changes would be performed. Terminates with a non zero exit code if any files would have been formatted.
 
 * **`--include <INCLUDE>`**
 

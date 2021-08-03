@@ -202,11 +202,11 @@ with the following code:
 
 In the preceding code, `[Theory]` and `[InlineData]` enable testing several values less than two. Two is the smallest prime number.
 
-Add the following code after the class declaration and before the [Theory] attribute:
+Add the following code after the class declaration and before the `[Theory]` attribute:
 
  :::code language="csharp" source="../../../samples/snippets/core/testing/unit-testing-using-dotnet-test/csharp/PrimeService.Tests/PrimeService_IsPrimeShould.cs" id="Sample_InitCode":::
 
-Run `dotnet test`, two of the tests fail. To make all of the tests pass, update the `IsPrime` method with the following code:
+Run `dotnet test`, and two of the tests fail. To make all of the tests pass, update the `IsPrime` method with the following code:
 
 ```csharp
 public bool IsPrime(int candidate)

@@ -75,7 +75,6 @@ The following example shows how to use <xref:System.Text.Json.Nodes.JsonNode> an
 
 :::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeFromStringExample.cs":::
 
-
 ### Create a JsonNode DOM with object initializers and make changes
 
 The following example shows how to:

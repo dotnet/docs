@@ -3,7 +3,7 @@ title: Modern HTTP with .NET
 description: Learn how to use the HttpClient and IHttpClientFactory implementations with dependency injection in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/03/2021
+ms.date: 08/04/2021
 ---
 
 # Modern HTTP with .NET
@@ -57,14 +57,15 @@ Named clients are a good choice when:
 
 Configuration for a named `HttpClient` can be specified during registration in `ConfigureServices`:
 
-:::code source="snippets/http/named/Program.cs" range="1-22" highlight="10-19":::
+:::code source="snippets/http/named/Program.cs" range="1-23" highlight="10-20":::
 
 In the preceding code the client is configured with:
 
+- The named is pulled from the configuration under the `"JokeHttpClientName"`.
 - The base address `https://api.icndb.com/`.
 - An "User-Agent" header.
 
-#### CreateClient
+#### Create client
 
 Each time <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A> is called:
 

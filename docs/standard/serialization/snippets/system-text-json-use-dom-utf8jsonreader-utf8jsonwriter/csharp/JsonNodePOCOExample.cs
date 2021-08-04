@@ -61,7 +61,6 @@ namespace JsonNodePOCOExample
             writer.Flush();
             TemperatureRanges temperatureRanges = 
                 JsonSerializer.Deserialize<TemperatureRanges>(stream.ToArray());
-
             Console.WriteLine($"Cold.Low={temperatureRanges["Cold"].Low}, Hot.High={temperatureRanges["Hot"].High}");
             // output:
             //Cold.Low=-10, Hot.High=60

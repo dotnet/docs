@@ -38,7 +38,7 @@ namespace SerializeOnlyWithOptions
             // <SerializeWithContext>
             jsonString = JsonSerializer.Serialize(
                 weatherForecast, typeof(WeatherForecast), SerializationModeOptionsContext.Default);
-            // <SerializeWithContext>
+            // </SerializeWithContext>
             Console.WriteLine(jsonString);
             // output:
             //{
@@ -52,7 +52,7 @@ namespace SerializeOnlyWithOptions
             // <SerializeWithTypeInfo>
             jsonString = JsonSerializer.Serialize(
                 weatherForecast, SerializationModeOptionsContext.Default.WeatherForecast);
-            // <Serialize>
+            // <SerializeWithTypeInfo>
             Console.WriteLine(jsonString);
             // output:
             //{

@@ -8,9 +8,9 @@ ms.date: 08/04/2021
 
 # HTTP with .NET
 
-In this article you'll how to use the `IHttpClientFactory` and the `HttpClient` with various .NET fundamentals such as, dependency injection (DI), logging, and configuration. The <xref:System.Net.Http.HttpClient> was introduced in .NET Framework 4.5, which was released in 2012. In other words, it's been around for while. The `HttpClient` itself is used for making HTTP requests and handling HTTP responses from web resources identified by a <xref:System.Uri>. The HTTP protocol makes up the vast majority of all internet traffic.
+In this article you'll how to use the `IHttpClientFactory` and the `HttpClient` types with various .NET fundamentals, such as dependency injection (DI), logging, and configuration. The <xref:System.Net.Http.HttpClient> type was introduced in .NET Framework 4.5, which was released in 2012. In other words, it's been around for while. `HttpClient` is used for making HTTP requests and handling HTTP responses from web resources identified by a <xref:System.Uri>. The HTTP protocol makes up the vast majority of all internet traffic.
 
-With modern application development principles driving best practices, the <xref:System.Net.Http.IHttpClientFactory> serves as a factory abstraction that can create `HttpClient` instances with custom configurations &mdash; it was introduced in .NET Core 2.1. Common HTTP-based .NET workloads can take advantage of resilient and transient-fault-handling 3rd party middleware with ease.
+With modern application development principles driving best practices, the <xref:System.Net.Http.IHttpClientFactory> serves as a factory abstraction that can create `HttpClient` instances with custom configurations. <xref:System.Net.Http.IHttpClientFactory> was introduced in .NET Core 2.1. Common HTTP-based .NET workloads can take advantage of resilient and transient-fault-handling third-party middleware with ease.
 
 ## Explore the `IHttpClientFactory`
 
@@ -38,7 +38,7 @@ The best approach depends upon the app's requirements.
 
 ### Basic usage
 
-To register the `IHttpClientFactory` call `AddHttpClient`:
+To register the `IHttpClientFactory`, call `AddHttpClient`:
 
 :::code source="snippets/http/basic/Program.cs" range="1-12" highlight="9":::
 
@@ -61,7 +61,7 @@ Configuration for a named `HttpClient` can be specified during registration in `
 
 In the preceding code the client is configured with:
 
-- The named is pulled from the configuration under the `"JokeHttpClientName"`.
+- A name that's pulled from the configuration under the `"JokeHttpClientName"`.
 - The base address `https://api.icndb.com/`.
 - An `"User-Agent"` header.
 
@@ -89,7 +89,7 @@ In the preceding code, the HTTP request doesn't need to specify a hostname. The 
 Typed clients:
 
 - Provide the same capabilities as named clients without the need to use strings as keys.
-- Provides [IntelliSense](/visualstudio/ide/using-intellisense) and compiler help when consuming clients.
+- Provide [IntelliSense](/visualstudio/ide/using-intellisense) and compiler help when consuming clients.
 - Provide a single location to configure and interact with a particular `HttpClient`. For example, a single typed client might be used:
   - For a single backend endpoint.
   - To encapsulate all logic dealing with the endpoint.
@@ -134,8 +134,8 @@ The following example relies on the [`Refit.HttpClientFactory`](https://www.nuge
 
 The preceding C# interface:
 
-- Defines a `Task<ChuckNorrisJoke>` returning method named `GetRandomJokeAsync`.
-- Declares a `Refit.GetAttribute` with the path and query string to the external API.
+- Defines a method named `GetRandomJokeAsync` that returns a `Task<ChuckNorrisJoke>` instance.
+- Declares a `Refit.GetAttribute` attribute with the path and query string to the external API.
 
 A typed client can be added, using Refit to generate the implementation:
 
@@ -183,13 +183,13 @@ To learn more about using different HTTP verbs with `HttpClient`, see <xref:Syst
 
 ## `HttpClient` lifetime management
 
-A new `HttpClient` instance is returned each time `CreateClient` is called on the `IHttpClientFactory`. An <xref:System.Net.Http.HttpClientHandler> is created per client. The factory manages the lifetimes of the `HttpClientHandler` instances.
+A new `HttpClient` instance is returned each time `CreateClient` is called on the `IHttpClientFactory`. One <xref:System.Net.Http.HttpClientHandler> instance is created per client. The factory manages the lifetimes of the `HttpClientHandler` instances.
 
 `IHttpClientFactory` pools the `HttpClientHandler` instances created by the factory to reduce resource consumption. An `HttpClientHandler` instance may be reused from the pool when creating a new `HttpClient` instance if its lifetime hasn't expired.
 
 Pooling of handlers is desirable as each handler typically manages its own underlying HTTP connection. Creating more handlers than necessary can result in connection delays. Some handlers also keep connections open indefinitely, which can prevent the handler from reacting to DNS changes.
 
-The default handler lifetime is two minutes. To override the default value call <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.SetHandlerLifetime%2A> per client, on the `IServiceCollection`:
+The default handler lifetime is two minutes. To override the default value, call <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.SetHandlerLifetime%2A> for each client, on the `IServiceCollection`:
 
 ```csharp
 services.AddHttpClient("Named.Client")
@@ -197,7 +197,7 @@ services.AddHttpClient("Named.Client")
 ```
 
 > [!IMPORTANT]
-> `HttpClient` instances can generally be treated as .NET objects **not** requiring disposal. Disposal cancels outgoing requests and guarantees the given `HttpClient` instance can't be used after calling <xref:System.IDisposable.Dispose%2A>. `IHttpClientFactory` tracks and disposes resources used by `HttpClient` instances.
+> You can generally treat `HttpClient` instances as objects that **do not** require disposal. Disposal cancels outgoing requests and guarantees the given `HttpClient` instance can't be used after calling <xref:System.IDisposable.Dispose%2A>. `IHttpClientFactory` tracks and disposes resources used by `HttpClient` instances.
 
 Keeping a single `HttpClient` instance alive for a long duration is a common pattern used before the inception of `IHttpClientFactory`. This pattern becomes unnecessary after migrating to `IHttpClientFactory`.
 
@@ -205,7 +205,7 @@ Keeping a single `HttpClient` instance alive for a long duration is a common pat
 
 It may be necessary to control the configuration of the inner `HttpMessageHandler` used by a client.
 
-An <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> is returned when adding named or typed clients. The <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigurePrimaryHttpMessageHandler%2A> extension method can be used to define a delegate one the `IServiceCollection`. The delegate is used to create and configure the primary `HttpMessageHandler` used by that client:
+An <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> is returned when adding named or typed clients. The <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigurePrimaryHttpMessageHandler%2A> extension method can be used to define a delegate on the `IServiceCollection`. The delegate is used to create and configure the primary `HttpMessageHandler` used by that client:
 
 ```csharp
 services.AddHttpClient("Named.Client")
@@ -226,7 +226,7 @@ There are several additional configuration options for controlling the `IHttpCli
 | Method | Description |
 |--|--|
 | <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddHttpMessageHandler%2A> | Adds an additional message handler for a named `HttpClient`. |
-| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTypedClient%2A> | Configured the binding between the `TClient` and the named `HttpClient` associated with the `IHttpClientBuilder`. |
+| <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTypedClient%2A> | Configures the binding between the `TClient` and the named `HttpClient` associated with the `IHttpClientBuilder`. |
 | <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigureHttpClient%2A> | Adds a delegate that will be used to configure a named `HttpClient`. |
 | <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigureHttpMessageHandlerBuilder%2A> | Adds a delegate that will be used to configure message handlers using <xref:Microsoft.Extensions.Http.HttpMessageHandlerBuilder> for a named `HttpClient`. |
 | <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigurePrimaryHttpMessageHandler%2A> | Configures the primary `HttpMessageHandler` from the dependency injection container for a named `HttpClient`. |

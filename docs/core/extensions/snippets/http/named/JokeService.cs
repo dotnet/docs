@@ -45,7 +45,7 @@ namespace NamedHttp.Example
                 _logger.LogError("Error getting something fun to say: {Error}", ex);
             }
 
-            return "Oops, something has gone wrong - that's funny at all!";
+            return "Oops, something has gone wrong - that's not funny at all!";
         }
     }
 }

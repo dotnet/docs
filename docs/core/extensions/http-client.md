@@ -8,15 +8,15 @@ ms.date: 08/04/2021
 
 # HTTP with .NET
 
-In this article you'll how to use the `IHttpClientFactory` and the `HttpClient` types with various .NET fundamentals, such as dependency injection (DI), logging, and configuration. The <xref:System.Net.Http.HttpClient> type was introduced in .NET Framework 4.5, which was released in 2012. In other words, it's been around for while. `HttpClient` is used for making HTTP requests and handling HTTP responses from web resources identified by a <xref:System.Uri>. The HTTP protocol makes up the vast majority of all internet traffic.
+In this article, you'll learn how to use the `IHttpClientFactory` and the `HttpClient` types with various .NET fundamentals, such as dependency injection (DI), logging, and configuration. The <xref:System.Net.Http.HttpClient> type was introduced in .NET Framework 4.5, which was released in 2012. In other words, it's been around for while. `HttpClient` is used for making HTTP requests and handling HTTP responses from web resources identified by a <xref:System.Uri>. The HTTP protocol makes up the vast majority of all internet traffic.
 
 With modern application development principles driving best practices, the <xref:System.Net.Http.IHttpClientFactory> serves as a factory abstraction that can create `HttpClient` instances with custom configurations. <xref:System.Net.Http.IHttpClientFactory> was introduced in .NET Core 2.1. Common HTTP-based .NET workloads can take advantage of resilient and transient-fault-handling third-party middleware with ease.
 
-## Explore the `IHttpClientFactory`
+## Explore the `IHttpClientFactory` type
 
-All of the sample source code relies on the [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) NuGet package. Additionally, ["The Internet Chuck Norris Database"](https://www.icndb.com) free API is used to make HTTP GET requests for "nerdy" jokes.
+All of the sample source code in this article relies on the [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) NuGet package. Additionally, [The Internet Chuck Norris Database](https://www.icndb.com) free API is used to make HTTP GET requests for "nerdy" jokes.
 
-When you call any of the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> extension methods, you're adding the `IHttpClientFactory` and related services to the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The `IHttpClientFactory` offers the following benefits:
+When you call any of the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> extension methods, you're adding the `IHttpClientFactory` and related services to the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The `IHttpClientFactory` type offers the following benefits:
 
 - Exposes the `HttpClient` class as a DI-ready type.
 - Provides a central location for naming and configuring logical `HttpClient` instances.
@@ -59,13 +59,13 @@ Configuration for a named `HttpClient` can be specified during registration in `
 
 :::code source="snippets/http/named/Program.cs" range="1-23" highlight="10-20":::
 
-In the preceding code the client is configured with:
+In the preceding code, the client is configured with:
 
 - A name that's pulled from the configuration under the `"JokeHttpClientName"`.
 - The base address `https://api.icndb.com/`.
-- An `"User-Agent"` header.
+- A `"User-Agent"` header.
 
-You can use configuration to specify HTTP client names, which is helpful to avoid misnaming clients when adding and creating. In this example, the *appsettings.json* is used to configure the HTTP client name:
+You can use configuration to specify HTTP client names, which is helpful to avoid misnaming clients when adding and creating. In this example, the *appsettings.json* file is used to configure the HTTP client name:
 
 :::code language="json" source="snippets/http/named/appsettings.json":::
 

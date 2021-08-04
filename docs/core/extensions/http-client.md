@@ -1,12 +1,12 @@
 ---
-title: Modern HTTP with .NET
+title: HTTP with .NET
 description: Learn how to use the HttpClient and IHttpClientFactory implementations with dependency injection in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
 ms.date: 08/04/2021
 ---
 
-# Modern HTTP with .NET
+# HTTP with .NET
 
 In this article you'll how to use the `IHttpClientFactory` and the `HttpClient` with various .NET fundamentals such as, dependency injection (DI), logging, and configuration. The <xref:System.Net.Http.HttpClient> was introduced in .NET Framework 4.5, which was released in 2012. In other words, it's been around for while. The `HttpClient` itself is used for making HTTP requests and handling HTTP responses from web resources identified by a <xref:System.Uri>. The HTTP protocol makes up the vast majority of all internet traffic.
 

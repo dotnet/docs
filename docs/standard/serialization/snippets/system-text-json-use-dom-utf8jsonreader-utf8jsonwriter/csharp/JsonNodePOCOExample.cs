@@ -16,6 +16,7 @@ namespace JsonNodePOCOExample
         public int High { get; set; }
         public int Low { get; set; }
     }
+
     public class Program
     {
         public static DateTime[] DatesAvailable { get; set; }
@@ -45,6 +46,12 @@ namespace JsonNodePOCOExample
 ";
             // Parse all of the JSON.
             JsonNode forecastNode = JsonNode.Parse(jsonString);
+
+            // Get a single value
+            int hotHigh = forecastNode["TemperatureRanges"]["Hot"]["High"].GetValue<int>();
+            Console.WriteLine($"Hot.High={hotHigh}");
+            // output:
+            //Hot.High=60
 
             // Get a subsection and deserialize it into a custom type.
             JsonObject temperatureRangesObject = forecastNode["TemperatureRanges"].AsObject();

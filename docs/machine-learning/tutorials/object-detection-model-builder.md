@@ -61,7 +61,7 @@ The Stop Sign dataset consists of 50 images downloaded from [Unsplash](https://u
 1. [Download VoTT](https://github.com/Microsoft/VoTT/releases) (Visual Object Tagging Tool).
 1. Open VoTT and select **New Project**.
 
-    ![VoTT Home Screen](./media/object-detection-model-builder/vott.png)
+    ![VoTT Home Screen](../how-to-guides/media/vott/vott.png)
 
 1. In **Project Settings**, change the **Display Name** to "StopSignObjDetection".
 1. Change the **Security Token** to *Generate New Security Token*.
@@ -83,7 +83,7 @@ You should now see a window with preview images of all the training images on th
 
 1. Select the first (plus-shaped) icon in the **Tags** toolbar to add a new tag.
 
-    ![VoTT New Tag Icon](./media/object-detection-model-builder/vott-new-tag-icon.png)
+    ![VoTT New Tag Icon](../how-to-guides/media/vott/vott-new-tag-icon.png)
 
 1. Name the tag "Stop-Sign" and hit <kbd>Enter</kbd> on your keyboard.
 
@@ -110,7 +110,7 @@ Once you have labeled all of your training images, you can export the file that 
 
 1. Go back to the **Tags editor** (the second icon in the left toolbar shaped like a ribbon). In the top toolbar, select the **Export Project** icon (the last icon shaped like an arrow in a box), or use the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>E</kbd>.
 
-    ![VoTT Export Button](./media/object-detection-model-builder/vott-export-button.png)
+    ![VoTT Export Button](../how-to-guides/media/vott/vott-export-button.png)
 
 This export will create a new folder called *vott-json-export* in your *Stop-Sign-Images* folder and will generate a JSON file named *StopSignObjDetection-export* in that new folder. You will use this JSON file in the next steps for training an object detection model in Model Builder.
 

@@ -126,7 +126,7 @@ Click the **Next step** button to navigate to the evaluate step.
 
 The result of the training step will be one model which had the best performance. In the evaluate step of the Model Builder tool, in the **Best model** section, will contain the algorithm used by the best performing model in the *Model* entry along with metrics for that model in *RSquared*.
 
-Additionally, in the **Output** window of Visual Studio, there will be a summary table containing top five models and their metrics.
+Additionally, in the **Output** window of Visual Studio, there will be a summary table containing top models and their metrics.
 
 This section will also allow you to test your model by performing a single prediction. It will offer text boxes to fill in values and you can click the **Predict** button to get a prediction from the best model. By default this will be filled in by a random row in your dataset.
 

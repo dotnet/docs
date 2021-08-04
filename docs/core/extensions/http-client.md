@@ -63,7 +63,7 @@ In the preceding code the client is configured with:
 
 - The named is pulled from the configuration under the `"JokeHttpClientName"`.
 - The base address `https://api.icndb.com/`.
-- An "User-Agent" header.
+- An `"User-Agent"` header.
 
 You can use configuration to specify HTTP client names, which is helpful to avoid misnaming clients when adding and creating. In this example, the *appsettings.json* is used to configure the HTTP client name:
 
@@ -114,6 +114,9 @@ The typed client is registered as transient with DI. In the preceding code, `Add
 
 1. Create an instance of `HttpClient`.
 1. Create an instance of `JokeService`, passing in the instance of `HttpClient` to its constructor.
+
+> [!TIP]
+> A call to `AddHttpClient<TClient>` doesn't add the `TClient` service to the `IServiceCollection`. You still need to explicitly add it with `Add{ServiceLifetime}`.
 
 ### Generated clients
 

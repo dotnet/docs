@@ -67,7 +67,7 @@ In the preceding code the client is configured with:
 
 You can use configuration to specify HTTP client names, which is helpful to avoid misnaming clients when adding and creating. In this example, the *appsettings.json* is used to configure the HTTP client name:
 
-:::code source="snippets/http/named/appsettings.json":::
+:::code language="json" source="snippets/http/named/appsettings.json":::
 
 It's easy to extend this configuration and store more details about how you'd like your HTTP client to function. For more information, see [Configuration in .NET][config].
 

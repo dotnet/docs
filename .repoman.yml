@@ -33,13 +33,13 @@ issues:
     # Checks for binary/source incompatible checkboxes and adds a label
     - check:
         - type: query
-          value: "contains(Issue.body, '- [x] Binary incompatible') == `true` || contains(Issue.body, '- [X] Binary incompatible') == `true`"
+          value: "contains(Issue.body, '- [x] **Binary incompatible**') == `true` || contains(Issue.body, '- [X] **Binary incompatible**') == `true`"
       pass:
         - labels-add: ["binary incompatible"]
 
     - check:
         - type: query
-          value: "contains(Issue.body, '- [x] Source incompatible') == `true` || contains(Issue.body, '- [X] Source incompatible') == `true`"
+          value: "contains(Issue.body, '- [x] **Source incompatible**') == `true` || contains(Issue.body, '- [X] **Source incompatible**') == `true`"
       pass:
         - labels-add: ["source incompatible"]
 

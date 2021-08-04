@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Shared;
 
@@ -10,17 +11,21 @@ namespace NamedHttp.Example
     public class JokeService
     {
         private readonly IHttpClientFactory _httpClientFactory = null!;
+        private readonly IConfiguration _configuration = null!;
         private readonly ILogger<JokeService> _logger = null!;
 
         public JokeService(
             IHttpClientFactory httpClientFactory,
+            IConfiguration configuration,
             ILogger<JokeService> logger) =>
-            (_httpClientFactory, _logger) = (httpClientFactory, logger);
+            (_httpClientFactory, _configuration, _logger) =
+                (httpClientFactory, configuration, logger);
 
         public async Task<string> GetRandomJokeAsync()
         {
             // Create the client
-            HttpClient client = _httpClientFactory.CreateClient(nameof(JokeService));
+            string httpClientName = _configuration["JokeHttpClientName"];
+            HttpClient client = _httpClientFactory.CreateClient(httpClientName);
 
             try
             {

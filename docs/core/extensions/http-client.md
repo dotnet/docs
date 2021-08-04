@@ -138,7 +138,7 @@ A new `HttpClient` instance is returned each time `CreateClient` is called on th
 
 Pooling of handlers is desirable as each handler typically manages its own underlying HTTP connection. Creating more handlers than necessary can result in connection delays. Some handlers also keep connections open indefinitely, which can prevent the handler from reacting to DNS changes.
 
-The default handler lifetime is two minutes. To override the default value use <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.SetHandlerLifetime%2A> per client:
+The default handler lifetime is two minutes. To override the default value call <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.SetHandlerLifetime%2A> per client, on the `IServiceCollection`:
 
 ```csharp
 services.AddHttpClient("Named.Client")
@@ -154,7 +154,7 @@ Keeping a single `HttpClient` instance alive for a long duration is a common pat
 
 It may be necessary to control the configuration of the inner `HttpMessageHandler` used by a client.
 
-An <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> is returned when adding named or typed clients. The <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigurePrimaryHttpMessageHandler%2A> extension method can be used to define a delegate. The delegate is used to create and configure the primary `HttpMessageHandler` used by that client:
+An <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> is returned when adding named or typed clients. The <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigurePrimaryHttpMessageHandler%2A> extension method can be used to define a delegate one the `IServiceCollection`. The delegate is used to create and configure the primary `HttpMessageHandler` used by that client:
 
 ```csharp
 services.AddHttpClient("Named.Client")
@@ -189,7 +189,9 @@ There are several additional configuration options for controlling the `IHttpCli
 - [Configuration in .NET][config]
 - <xref:System.Net.Http.IHttpClientFactory>
 - <xref:System.Net.Http.HttpClient>
+- [Implement HTTP retry with exponential backoff][http-retry]
 
 [di]: dependency-injection.md
 [logging]: logging.md
 [config]: configuration.md
+[http-retry]: ../../architecture/microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md

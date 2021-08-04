@@ -112,16 +112,12 @@ public class Example
 {
     public static void Main()
     {
-        var result = QueryCityData("New York City");
-
-        var city = result.Item1;
-        var pop = result.Item2;
-        var size = result.Item3;
+        var (_, pop, _) = QueryCityData("New York City");
 
          // Do something with the data.
     }
 
-    private static (string, int, double) QueryCityData(string name)
+    private static (string name, int pop, double size) QueryCityData(string name)
     {
         if (name == "New York City")
             return (name, 8175133, 468.48);

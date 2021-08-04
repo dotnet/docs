@@ -189,7 +189,7 @@ To deserialize from a file by using asynchronous code, call the <xref:System.Tex
 > [!TIP]
 > If you have JSON that you want to deserialize, and you don't have the class to deserialize it into, you have options other than manually creating the class that you need:
 >
-> 1. Deserialize into a [JSON DOM (document object model)](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md) and extract what you need from the DOM. The DOM also lets you navigate to a subsection of a JSON payload and deserialize a single value, a custom type, or an array. For more information, see [Deserialize subsections of a JSON payload](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#deserialize-subsections-of-a-json-payload)
+> 1. Deserialize into a [JSON DOM (document object model)](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md) and extract what you need from the DOM. The DOM lets you navigate to a subsection of a JSON payload and deserialize a single value, a custom type, or an array. For more information, see [Deserialize subsections of a JSON payload](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#deserialize-subsections-of-a-json-payload)
 > 1. Use the [Utf8JsonReader](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-utf8jsonreader) directly.
 > 1. Use Visual Studio 2019 to automatically generate the class you need:
 >    1. Copy the JSON that you need to deserialize.

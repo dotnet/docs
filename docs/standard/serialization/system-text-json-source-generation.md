@@ -236,7 +236,7 @@ When using `JsonSourceGenerationOptionsAttribute` to specify serialization optio
 
 * The <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo%601.Serialize%2A?displayProperty=nameWithType> method. Use the `TypeInfo<TValue>` instance from the context instance provided by the `Default` static property of your context class:
 
-  :::code language="csharp" source="snippets/system-text-json-source-generation/csharp/SerializeOnlyWithOptions.cs" id="Serialize":::
+  :::code language="csharp" source="snippets/system-text-json-source-generation/csharp/SerializeOnlyWithOptions.cs" id="SerializeDirect":::
 
 If you call a method that lets you pass in your own instance of `Utf8JsonWriter`, the writer's <xref:System.Text.Json.JsonWriterOptions.Indented> setting is honored instead of the `JsonSourceGenerationOptionsAttribute.WriteIndented` option.
 

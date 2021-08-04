@@ -140,6 +140,44 @@ A typed client can be added, using Refit to generate the implementation:
 
 The defined interface can be consumed where necessary, with the implementation provided by DI and Refit.
 
+## Make POST, PUT, and DELETE requests
+
+In the preceding examples, all HTTP requests use the GET HTTP verb. `HttpClient` also supports other HTTP verbs, including:
+
+- POST
+- PUT
+- DELETE
+- PATCH
+
+For a complete list of supported HTTP verbs, see <xref:System.Net.Http.HttpMethod>.
+
+The following example shows how to make an HTTP POST request:
+
+:::code source="snippets/http/basic/ItemService.cs" range="17-28":::
+
+In the preceding code, the `CreateItemAsync` method:
+
+- Serializes the `Item` parameter to JSON using `System.Text.Json`. This uses an instance of <xref:System.Text.Json.JsonSerializerOptions> to configure the serialization process.
+- Creates an instance of <xref:System.Net.Http.StringContent> to package the serialized JSON for sending in the HTTP request's body.
+- Calls <xref:System.Net.Http.HttpClient.PostAsync%2A> to send the JSON content to the specified URL. This is a relative URL that gets added to the [HttpClient.BaseAddress](xref:System.Net.Http.HttpClient.BaseAddress).
+- Calls <xref:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode%2A> to throw an exception if the response status code does not indicate success.
+
+`HttpClient` also supports other types of content. For example, <xref:System.Net.Http.MultipartContent> and <xref:System.Net.Http.StreamContent>. For a complete list of supported content, see <xref:System.Net.Http.HttpContent>.
+
+The following example shows an HTTP PUT request:
+
+:::code source="snippets/http/basic/ItemService.cs" range="30-41":::
+
+The preceding code is very similar to the POST example. The `UpdateItemAsync` method calls <xref:System.Net.Http.HttpClient.PutAsync%2A> instead of `PostAsync`.
+
+The following example shows an HTTP DELETE request:
+
+:::code source="snippets/http/basic/ItemService.cs" range="43-49":::
+
+In the preceding code, the `DeleteItemAsync` method calls <xref:System.Net.Http.HttpClient.DeleteAsync%2A>. Because HTTP DELETE requests typically contain no body, the `DeleteAsync` method doesn't provide an overload that accepts an instance of `HttpContent`.
+
+To learn more about using different HTTP verbs with `HttpClient`, see <xref:System.Net.Http.HttpClient>.
+
 ## `HttpClient` lifetime management
 
 A new `HttpClient` instance is returned each time `CreateClient` is called on the `IHttpClientFactory`. An <xref:System.Net.Http.HttpClientHandler> is created per client. The factory manages the lifetimes of the `HttpClientHandler` instances.

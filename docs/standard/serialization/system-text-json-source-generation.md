@@ -161,7 +161,7 @@ The preceding examples call `JsonSerializer` methods. These methods use optimize
 
 :::code language="csharp" source="snippets/system-text-json-source-generation/csharp/BothModesNoOptions.cs" id="SerializeDirect":::
 
-This method provides an advantage for assembly trimming, as it can trim `JsonSerializer` if you don't use it.
+This method provides an advantage for assembly trimming, because `JsonSerializer` can be trimmed if you don't use it.
 
 The <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo%601.Serialize%2A?displayProperty=nameWithType> method is only available when you select serialization optimization mode or both modes. When you select only metadata collection mode, `Serialize` is null.
 

@@ -52,7 +52,7 @@ namespace SerializeOnlyWithOptions
             // <SerializeWithTypeInfo>
             jsonString = JsonSerializer.Serialize(
                 weatherForecast, SerializationModeOptionsContext.Default.WeatherForecast);
-            // <SerializeWithTypeInfo>
+            // </SerializeWithTypeInfo>
             Console.WriteLine(jsonString);
             // output:
             //{
@@ -62,13 +62,13 @@ namespace SerializeOnlyWithOptions
             //}
 
             // <SerializeDirect>
-            using MemoryStream ms = new();
-            using Utf8JsonWriter writer = new(ms);
+            using MemoryStream stream = new();
+            using Utf8JsonWriter writer = new(stream);
             SerializationModeOptionsContext.Default.WeatherForecast.Serialize(
                 writer, weatherForecast);
             writer.Flush();
             // </SerializeDirect>
-            Console.WriteLine(Encoding.UTF8.GetString(ms.ToArray()));
+            Console.WriteLine(Encoding.UTF8.GetString(stream.ToArray()));
             // output:
             //{"date":"2019-08-01T00:00:00","temperatureCelsius":25,"summary":"Hot"}
         }

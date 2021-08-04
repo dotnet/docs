@@ -63,7 +63,7 @@ namespace MetadataOnlyNoOptions
             // <DeserializeMetadataOnlyContext> 
             weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(
                 jsonString, MetadataOnlyContext.Default.WeatherForecast);
-            // <DeserializeMetadataOnlyContext> 
+            // </DeserializeMetadataOnlyContext> 
             Console.WriteLine($"Date={weatherForecast.Date}");
             // output:
             //Date=8/1/2019 12:00:00 AM

@@ -86,7 +86,7 @@ The following example shows how to:
 
 ### Deserialize subsections of a JSON payload
 
-The following example shows how to navigate to a subsection of a JSON tree and deserialize a single value, a custom type, or an array from that subsection.
+The following example shows how to use [JsonNode](#json-dom-choices) to navigate to a subsection of a JSON tree and deserialize a single value, a custom type, or an array from that subsection.
 
 :::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodePOCOExample.cs":::
 

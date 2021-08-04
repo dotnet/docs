@@ -80,9 +80,9 @@ Each time <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A> is called:
 
 To create a named client, pass its name into `CreateClient`:
 
-:::code source="snippets/http/named/JokeService.cs" highlight="12,16,18,23,29-31":::
+:::code source="snippets/http/named/JokeService.cs" highlight="13,18,21-22,27-28,34-36":::
 
-In the preceding code, the request doesn't need to specify a hostname. The code can pass just the path, since the base address configured for the client is used.
+In the preceding code, the HTTP request doesn't need to specify a hostname. The code can pass just the path, since the base address configured for the client is used.
 
 ### Typed clients
 
@@ -125,15 +125,18 @@ Consider the following `record` types:
 
 :::code source="snippets/http/shared/ChuckNorrisJoke.cs":::
 
-The following example relies on the [`Refit.HttpClientFactory`](https://www.nuget.org/packages/refit.httpclientfactory) NuGet package.
-
-An interface and a reply are defined to represent the external API and its response:
+The following example relies on the [`Refit.HttpClientFactory`](https://www.nuget.org/packages/refit.httpclientfactory) NuGet package, and is a simple interface:
 
 :::code source="snippets/http/generated/IJokeService.cs":::
 
+The preceding C# interface:
+
+- Defines a `Task<ChuckNorrisJoke>` returning method named `GetRandomJokeAsync`.
+- Declares a `Refit.GetAttribute` with the path and query string to the external API.
+
 A typed client can be added, using Refit to generate the implementation:
 
-:::code source="snippets/http/generated/Program.cs" range="1-22" highlight="10-21":::
+:::code source="snippets/http/generated/Program.cs" range="1-22" highlight="12-20":::
 
 The defined interface can be consumed where necessary, with the implementation provided by DI and Refit.
 

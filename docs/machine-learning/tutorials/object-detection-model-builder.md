@@ -274,7 +274,7 @@ When adding a web API to your solution, you will be prompted to name the project
     >    1. Multiply the top and bottom coordinates by the original image height, and multiply the left and right coordinates by the original image width.
     >    1. Divide the top and bottom coordinates by 600, and divide the left and right coordinates by 800.
     >
-    >    For example, given the original image dimensions,u
+    >    For example, given the original image dimensions,`actualImageHeight` and `actualImageWidth`, and a `ModelOutput` called `prediction`, the following code snippet shows how to scale the `BoundingBox` coordinates:
     >    ```csharp
     >    var top = originalImageHeight * prediction.Top / 600;
     >    var bottom = originalImageHeight * prediction.Bottom / 600;

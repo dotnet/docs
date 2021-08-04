@@ -157,7 +157,7 @@ When adding a console app to your solution, you will be prompted to name the pro
 
 When adding a web API to your solution, you will be prompted to name the project.
 
-1. Name the console project **TaxiFare_API**.
+1. Name the Web API project **TaxiFare_API**.
 1. Click *Add to solution** to add the project to your current solution.
 1. Run the application.
 1. Open PowerShell and enter the following code where PORT is the port your application is listening on.

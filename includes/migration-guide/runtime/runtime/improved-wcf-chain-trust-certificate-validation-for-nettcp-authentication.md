@@ -8,19 +8,19 @@
 
 - Validate if your server and client certification has the required EKU OID. If not, update your certification.
 - Validate if your root certificate is invalid. If so, update the root certificate.
-- How to opt out of the change: If you can't update the certificate, you can work around the breaking change temporarily with the following configuration setting,  However, opting out of the change will leave your system vulnerable to the security issue.
+- If you can't update the certificate, you can work around the breaking change temporarily with the following configuration setting. However, opting out of the change will leave your system vulnerable to the security issue.
 
-```xml
-<appSettings>
-  <add key="wcf:useLegacyCertificateUsagePolicy" value="true" />
-</appSettings>
-```
+  ```xml
+  <appSettings>
+    <add key="wcf:useLegacyCertificateUsagePolicy" value="true" />
+  </appSettings>
+  ```
 
-| Name    | Value       |
-|:--------|:------------|
-| Scope   |Minor|
-|Version|4.7.2|
-|Type|Runtime|
+| Name    | Value   |
+| :------ | :------ |
+| Scope   | Minor   |
+| Version | 4.7.2   |
+| Type    | Runtime |
 
 #### Affected APIs
 

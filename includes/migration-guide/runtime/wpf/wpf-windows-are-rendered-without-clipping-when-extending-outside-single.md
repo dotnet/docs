@@ -6,7 +6,7 @@ In the .NET Framework 4.6 running on Windows 8 and above, the entire window is r
 
 #### Suggestion
 
-This behavior (whether to clip or not) can be explicitly set using the `&lt;EnableMultiMonitorDisplayClipping&gt;` element in `&lt;appSettings&gt;` in an application's configuration file, or by setting the `EnableMultiMonitorDisplayClipping` property at app startup.
+This behavior (whether to clip or not) can be explicitly set using the `<EnableMultiMonitorDisplayClipping>` element in `<appSettings>` in an application's configuration file, or by setting the `EnableMultiMonitorDisplayClipping` property at app startup.
 
 | Name    | Value       |
 |:--------|:------------|

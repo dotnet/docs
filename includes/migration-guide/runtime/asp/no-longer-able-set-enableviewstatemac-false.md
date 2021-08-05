@@ -2,7 +2,7 @@
 
 #### Details
 
-ASP.NET no longer allows developers to specify `&lt;pages enableViewStateMac=&quot;false&quot;/&gt;` or `&lt;@Page EnableViewStateMac=&quot;false&quot; %&gt;`. The view state message authentication code (MAC) is now enforced for all requests with embedded view state. Only apps that explicitly set the EnableViewStateMac property to `false` are affected.
+ASP.NET no longer allows developers to specify `<pages enableViewStateMac=&quot;false&quot;/>` or `<@Page EnableViewStateMac=&quot;false&quot; %>`. The view state message authentication code (MAC) is now enforced for all requests with embedded view state. Only apps that explicitly set the EnableViewStateMac property to `false` are affected.
 
 #### Suggestion
 

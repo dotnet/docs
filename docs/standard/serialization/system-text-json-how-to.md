@@ -191,7 +191,7 @@ To deserialize from a file by using asynchronous code, call the <xref:System.Tex
 >
 > * Deserialize into a [JSON DOM (document object model)](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md) and extract what you need from the DOM.
 >
->   The DOM lets you navigate to a subsection of a JSON payload and deserialize a single value, a custom type, or an array. For information about the `JsonNode` DOM in .NET 6, see [Deserialize subsections of a JSON payload](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#deserialize-subsections-of-a-json-payload). For information about the `JsonDocument` DOM, see [How to search a JsonDocument and JsonElement for sub-elements](system-text-json-migrate-from-newtonsoft-how-to.md#how-to-search-a-jsondocument-and-jsonelement-for-sub-elements).
+>   The DOM lets you navigate to a subsection of a JSON payload and deserialize a single value, a custom type, or an array. For information about the <xref:System.Text.Json.Nodes.JsonNode> DOM in .NET 6, see [Deserialize subsections of a JSON payload](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#deserialize-subsections-of-a-json-payload). For information about the <xref:System.Text.Json.JsonDocument> DOM, see [How to search a JsonDocument and JsonElement for sub-elements](system-text-json-migrate-from-newtonsoft-how-to.md#how-to-search-a-jsondocument-and-jsonelement-for-sub-elements).
 >
 > * Use the [Utf8JsonReader](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-utf8jsonreader) directly.
 > * Use Visual Studio 2019 to automatically generate the class you need:

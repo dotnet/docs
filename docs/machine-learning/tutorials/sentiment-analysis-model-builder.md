@@ -39,15 +39,17 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 ## Create a Razor Pages application
 
-1. Create a **ASP.NET Core Razor Pages Application**.
+1. Create a **ASP.NET Core Web Application**.
 
     1. Open Visual Studio and select **File > New > Project** from the menu bar.
-    1. In the New Project dialog, select the **Visual C#** node followed by the **Web** node.
-    1. Then select the **ASP.NET Core Web Application** project template.
+    1. In the Create a New Project page, select **C#** in the left most dropdown followed by **Web** in the right most dropdown.
+    1. Then select the **ASP.NET Core Web App** project template and click the **Next** button.
+
+        ![Create an ASP.NET Core project](./media/sentiment-analysis-model-builder/asp-net-core-selection.png#lightbox)
+
     1. In the **Name** text box, type "SentimentRazor".
-    1. Make sure **Place solution and project in the same directory** is **unchecked** (VS 2019), or **Create directory for solution** is **checked** (VS 2017).
-    1. Select the **OK** button.
-    1. Choose **Web Application** in the window that displays the different types of ASP.NET Core Projects, and then select the **OK** button.
+    1. Make sure **Place solution and project in the same directory** is **unchecked** (VS 2019).
+    1. Click the **Create** button to accept the default additional information and to create the project.
 
 ## Prepare and understand the data
 
@@ -160,6 +162,9 @@ When adding a web API to your solution, you will be prompted to name the project
 To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionEngine%602>. <xref:Microsoft.ML.PredictionEngine%602> which is not thread-safe. Additionally, you have to create an instance of it everywhere it's needed within your application. As your application grows, this process can become unmanageable. For improved performance and thread safety, use a combination of dependency injection and the `PredictionEnginePool` service, which creates an <xref:Microsoft.Extensions.ObjectPool.ObjectPool%601> of <xref:Microsoft.ML.PredictionEngine%602> objects for use throughout your application.
 
 1. Install the *Microsoft.Extensions.ML* NuGet package:
+
+    > [!NOTE]
+    > If the version of ML.NET produced by Model Builder is not > yet updated, you can manually update it in the **Manage NuGet Packages** page.
 
     1. In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**.
     1. Choose "nuget.org" as the Package source.

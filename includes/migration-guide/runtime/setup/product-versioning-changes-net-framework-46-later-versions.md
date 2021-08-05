@@ -16,7 +16,11 @@ For more information, see [How to: Determine which .NET Framework Versions Are I
 In general, applications should depend on the recommended techniques for detecting such things as the runtime version of the .NET Framework and the installation directory:
 
 - To detect the runtime version of the .NET Framework, see [How to: Determine Which .NET Framework Versions Are Installed](~/docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md).
-- To determine the installation path for the .NET Framework, use the value of the `InstallPath` entry in the `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full` key. <blockquote> [!IMPORTANT] The subkey name is `NET Framework Setup`, not `.NET Framework Setup`.</blockquote> 
+- To determine the installation path for the .NET Framework, use the value of the `InstallPath` entry in the `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full` key.
+
+> [!IMPORTANT]
+> The subkey name is `NET Framework Setup`, not `.NET Framework Setup`.
+
 - To determine the directory path to the .NET Framework common language runtime, call the <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory?displayProperty=nameWithType> method.
 - To get the CLR version, call the <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetSystemVersion?displayProperty=nameWithType> method. For the .NET Framework 4 and its point releases (the .NET Framework 4.5, 4.5.1, 4.5.2, and .NET Framework 4.6, 4.6.1, 4.6.2, 4.7, and 4.7.1), it returns the string v4.0.30319.
 

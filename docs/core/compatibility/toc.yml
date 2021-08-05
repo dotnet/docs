@@ -339,6 +339,8 @@ items:
           href: sdk/5.0/publishdepsfilepath-behavior-change.md
         - name: TargetFramework change from netcoreapp to net
           href: sdk/5.0/targetframework-name-change.md
+        - name: Use WindowsSdkPackageVersion for Windows SDK
+          href: sdk/5.0/override-windows-sdk-package-versions.md
       - name: Security
         items:
         - name: Code access security APIs are obsolete
@@ -727,6 +729,8 @@ items:
           href: sdk/5.0/publishdepsfilepath-behavior-change.md
         - name: TargetFramework change from netcoreapp to net
           href: sdk/5.0/targetframework-name-change.md
+        - name: Use WindowsSdkPackageVersion for Windows SDK
+          href: sdk/5.0/override-windows-sdk-package-versions.md
         - name: WinForms and WPF apps use Microsoft.NET.Sdk
           href: sdk/5.0/sdk-and-target-framework-change.md
       - name: .NET Core 2.1 - 3.1

@@ -25,6 +25,8 @@ items:
         href: 6.0.md
       - name: ASP.NET Core
         items:
+        - name: AddDataAnnotationsValidation method made obsolete
+          href: aspnet-core/6.0/adddataannotationsvalidation-obsolete.md
         - name: Assemblies removed from shared framework
           href: aspnet-core/6.0/assemblies-removed-from-shared-framework.md
         - name: "Blazor: Parameter name changed in RequestImageFileAsync method"
@@ -129,8 +131,6 @@ items:
         href: 5.0.md
       - name: ASP.NET Core
         items:
-        - name: AddDataAnnotationsValidation method made obsolete
-          href: aspnet-core/6.0/adddataannotationsvalidation-obsolete.md
         - name: ASP.NET Core apps deserialize quoted numbers
           href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
         - name: AzureAD.UI and AzureADB2C.UI APIs obsolete

@@ -29,9 +29,9 @@ helpviewer_keywords:
 
 The *integral numeric types* represent integer numbers. All integral numeric types are [value types](value-types.md). They are also [simple types](value-types.md#built-in-value-types) and can be initialized with [literals](#integer-literals). All integral numeric types support [arithmetic](../operators/arithmetic-operators.md), [bitwise logical](../operators/bitwise-and-shift-operators.md), [comparison](../operators/comparison-operators.md), and [equality](../operators/equality-operators.md) operators.
 
-## Characteristics of the integral types
+## Characteristics of the integral numeric types
 
-C# supports the following predefined integral types:
+C# supports the following predefined integral numeric types:
 
 |C# type/keyword|Range|Size|.NET type|
 |----------|-----------|----------|-------------|
@@ -55,7 +55,7 @@ System.Int32 b = 123;
 
 The `nint` and `nuint` types in the last two rows of the table are native-sized integers. They are represented internally by the indicated .NET types, but in each case the keyword and the .NET type are not interchangeable. The compiler provides operations and conversions for `nint` and `nuint` as integer types that it doesn't provide for the pointer types `System.IntPtr` and `System.UIntPtr`. For more information, see [`nint` and `nuint` types](nint-nuint.md).
 
-The default value of each integral type is zero, `0`. Each of the integral types except the native-sized types has `MinValue` and `MaxValue` constants that provide the minimum and maximum value of that type.
+The default value of each integral type is zero, `0`. Each of the integral numeric types except the native-sized types has `MinValue` and `MaxValue` constants that provide the minimum and maximum value of that type.
 
 Use the <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure to represent a signed integer with no upper or lower bounds.
 

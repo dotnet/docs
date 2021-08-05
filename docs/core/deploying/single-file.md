@@ -11,7 +11,7 @@ Bundling all application-dependent files into a single binary provides an applic
 
 Single File deployment is available for both the [framework-dependent deployment model](index.md#publish-framework-dependent) and [self-contained applications](index.md#publish-self-contained). The size of the single file in a self-contained application will be large since it will include the runtime and the framework libraries. The single file deployment option can be combined with [ReadyToRun](ready-to-run.md) and [Trim (an experimental feature in .NET 5.0)](trim-self-contained.md) publish options.
 
-Single file deployment is not compatible with Windows 7.
+Single file deployment isn't compatible with Windows 7.
 
 ## Output differences from .NET 3.x
 

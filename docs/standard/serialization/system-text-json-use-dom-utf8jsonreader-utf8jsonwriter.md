@@ -1,7 +1,7 @@
 ---
 title: How to use a JSON DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
 description: "Learn how to use a JSON DOM, Utf8JsonReader, and Utf8JsonWriter."
-ms.date: 07/28/2021
+ms.date: 08/04/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 dev_langs:
@@ -75,6 +75,8 @@ The following example shows how to use <xref:System.Text.Json.Nodes.JsonNode> an
 
 :::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeFromStringExample.cs":::
 
+### Create a JsonNode DOM with object initializers and make changes
+
 The following example shows how to:
 
 * Create a DOM by using object initializers.
@@ -82,7 +84,9 @@ The following example shows how to:
 
 :::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeFromObjectExample.cs":::
 
-The following example shows how to navigate to a subsection of a JSON tree and deserialize a custom type or read an array from that subsection.
+### Deserialize subsections of a JSON payload
+
+The following example shows how to use [JsonNode](#json-dom-choices) to navigate to a subsection of a JSON tree and deserialize a single value, a custom type, or an array from that subsection.
 
 :::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodePOCOExample.cs":::
 

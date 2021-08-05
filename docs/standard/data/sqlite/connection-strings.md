@@ -1,6 +1,7 @@
 ---
 title: Connection strings
 ms.date: 07/14/2021
+no-loc: Command Timeout,Default Timeout,Data Source,Recursive Triggers
 description: The supported keywords and values of connection strings.
 ---
 # Connection strings

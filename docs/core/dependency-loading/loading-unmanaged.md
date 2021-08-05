@@ -3,7 +3,6 @@ title: Unmanaged library loading algorithm - .NET Core
 description: Description of the details of the unmanaged assembly loading algorithm in .NET Core
 ms.date: 10/09/2019
 author: sdmaclea
-ms.author: stmaclea
 ---
 # Unmanaged (native) library loading algorithm
 

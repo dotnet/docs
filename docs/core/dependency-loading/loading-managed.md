@@ -3,7 +3,6 @@ title: Managed assembly loading algorithm - .NET Core
 description: Description of the details of the managed assembly loading algorithm in .NET Core
 ms.date: 08/09/2019
 author: sdmaclea
-ms.author: stmaclea
 ---
 # Managed assembly loading algorithm
 

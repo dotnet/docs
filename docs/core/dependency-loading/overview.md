@@ -3,7 +3,6 @@ title: Dependency loading - .NET Core
 description: Overview of managed and unmanaged dependency loading in .NET Core
 ms.date: 08/09/2019
 author: sdmaclea
-ms.author: stmaclea
 ms.topic: overview
 #customer intent: As a .NET Core developer, I want to understand assembly loading so that I can design and debug assembly loading issues.
 ---

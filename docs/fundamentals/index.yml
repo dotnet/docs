@@ -102,6 +102,8 @@ landingContent:
         links:
           - text: App publishing
             url: ../core/deploying/index.md
+          - text: GitHub Actions: publish .NET apps
+            url: ../devops/dotnet-publish-github-action.md
 
   # Card
   - title: Use .NET Core from the command line

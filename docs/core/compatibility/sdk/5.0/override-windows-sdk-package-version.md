@@ -8,7 +8,7 @@ ms.date: 08/04/2021
 Starting in .NET 5.0.8 (which includes .NET SDK 5.0.302 and .NET SDK 5.0.205), developers targeting Windows can't use the `FrameworkReference` item to override their version of the Windows SDK targeting package. The `WindowsSdkPackageVersion` property replaces this functionality.
 
 > [!NOTE]
-> We don't recommend overriding the Windows SDK version, because the Windows SDK targeting packages are included with the .NET 5+ SDK. Instead, to reference the latest Windows SDK package, update your version of the .NET SDK. This property should only be used in rare cases such as using preview packages or needing to override the version of C#/WinRT.
+> We don't recommend overriding the Windows SDK version, because the Windows SDK targeting packages are included with the .NET 5+ SDK. Instead, to reference the latest Windows SDK package, update your version of the .NET SDK.
 
 ## Version introduced
 

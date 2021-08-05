@@ -5,7 +5,7 @@ ms.date: 06/20/2016
 ms.assetid: 0ff8fdfd-6a11-4327-b061-0f2526f35b43
 ---
 
-# Common Patterns for Delegates
+# Common patterns for delegates
 
 [Previous](delegates-strongly-typed.md)
 
@@ -33,7 +33,7 @@ public static IEnumerable<TSource> Where<TSource> (this IEnumerable<TSource> sou
 
 This example is repeated with all the methods that are part of LINQ. They
 all rely on delegates for the code that manages the specific query. This API
-design pattern is a very powerful one to learn and understand.
+design pattern is a powerful one to learn and understand.
 
 This simple example illustrates how delegates require very little coupling
 between components. You don't need to create a class that derives from a
@@ -68,7 +68,7 @@ make it easy to support storage mechanisms that may be added in the future.
 
 Under this design, the primary log component can be a non-virtual, even
 sealed class. You can plug in any set of delegates to write the messages
-to different storage media. The built in support for multicast delegates
+to different storage media. The built-in support for multicast delegates
 makes it easy to support scenarios where messages must be written to multiple
 locations (a file, and a console).
 
@@ -143,7 +143,7 @@ file operations, and ensures that the file is always closed after
 each write. That ensures that all the data is flushed to disk after
 each message is generated.
 
-Here is that file based logger:
+Here is that file-based logger:
 
 [!code-csharp[FileLogger](../../samples/snippets/csharp/delegates-and-events/FileLogger.cs#FileLogger "Log to files")]
 
@@ -169,7 +169,7 @@ Logger.WriteMessage -= LoggingMethods.LogToConsole;
 
 ### Practices
 
-Now, you've added a second output handler for the logging sub-system.
+Now, you've added a second output handler for the logging subsystem.
 This one needs a bit more infrastructure to correctly support the file
 system. The delegate is an instance method. It's also a private method.
 There's no need for greater accessibility because the delegate
@@ -188,11 +188,11 @@ on the invocation won't be invoked.
 
 As a last note, the file logger must manage its resources by opening and
 closing the file on each log message. You could choose to keep the file
-open and implement IDisposable to close the file when you are completed.
+open and implement `IDisposable` to close the file when you are completed.
 Either method has its advantages and disadvantages. Both do create a bit
 more coupling between the classes.
 
-None of the code in the Logger class would need to be updated
+None of the code in the `Logger` class would need to be updated
 in order to support either scenario.
 
 ## Handle Null Delegates
@@ -225,12 +225,11 @@ return type.
 ## Summary of Practices
 
 You've seen the beginnings of a log component that could be expanded
-with other writers, and other features. By using delegates in the design
-these different components are very loosely coupled. This provides
-several advantages. It's very easy to create new output mechanisms
+with other writers, and other features. By using delegates in the design,
+these different components are loosely coupled. This provides
+several advantages. It's easy to create new output mechanisms
 and attach them to the system. These other mechanisms only need one
-method: the method that writes the log message. It's a design that
-is very resilient when new features are added. The contract required
+method: the method that writes the log message. It's a design that's resilient when new features are added. The contract required
 for any writer is to implement one method. That method could be a
 static or instance method. It could be public, private, or any other
 legal access.

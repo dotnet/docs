@@ -24,20 +24,22 @@ using IHost host = Host.CreateDefaultBuilder(args)
     {
         services.AddLocalization();
         services.AddTransient<MessageService>();
+        services.AddTransient<ParameterizedMessageService>();
     })
     .ConfigureLogging(options => options.SetMinimumLevel(LogLevel.Warning))
     .Build();
 
-(MessageService messageService, ILogger<MessageService> logger) =
-    GetRequiredServices<MessageService, ILogger<MessageService>>(host.Services);
+var services = host.Services;
+
+MessageService messageService =
+    services.GetRequiredService<MessageService>();
+ParameterizedMessageService parameterizedMessageService =
+    services.GetRequiredService<ParameterizedMessageService>();
+ILogger logger =
+    services.GetRequiredService<ILoggerFactory>()
+        .CreateLogger("Localization.Example");
 
 logger.LogWarning(messageService.GetGreetingMessage());
-logger.LogWarning(messageService.GetFormattedMessage(DateTime.Today.AddDays(-3), 37.63));
+logger.LogWarning(parameterizedMessageService.GetFormattedMessage(DateTime.Today.AddDays(-3), 37.63));
 
 await host.RunAsync();
-
-static (TServiceOne one, TServiceTwo two) GetRequiredServices<TServiceOne, TServiceTwo>(
-    IServiceProvider services)
-    where TServiceOne : notnull
-    where TServiceTwo : notnull =>
-    (services.GetRequiredService<TServiceOne>(), services.GetRequiredService<TServiceTwo>());

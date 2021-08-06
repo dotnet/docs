@@ -56,6 +56,14 @@ However, if your app was running with the <xref:System.Globalization.CultureInfo
 
 The "culture fallback" will entirely ignore locales, meaning resource file number four is selected if there are no corresponding matches. If the culture was set to `"fr-CA"`, localization would end up falling to the *MessageService.resx* file as it's the default.
 
+### Resource lookup
+
+Resource files are automatically resolved as part of a lookup routine. If your project file name different than the root namespace of your project, the assembly name might differ. This can prevent resource lookup. To address this mismatch, use the <xref:Microsoft.Extensions.Localization.RootNamespaceAttribute> to provide a hint to the localization services. This is used during resource lookup.
+
+In the sample source, the project is named *example.csproj* which creates *example.dll* and *example.exe* &mdash; however, the namespace that is used is `Localization.Example`. Apply an `assembly` level attribute:
+
+:::code source="snippets/localization/example/Program.cs" range="11":::
+
 ## Register localization services
 
 To register localization services call one of the <xref:Microsoft.Extensions.DependencyInjection.LocalizationServiceCollectionExtensions.AddLocalization%2A> extension methods durning the configuration of services. This will enable dependency injection (DI), of the following types:
@@ -97,13 +105,22 @@ After you've [registered](#register-localization-services) (and optionally [conf
 
 To create a message service that is capable of returning localized strings, consider the following `MessageService`:
 
-:::code source="snippets/localization/example/MessageService.cs" highlight="9,11-12,17,24":::
+:::code source="snippets/localization/example/MessageService.cs" highlight="9,11-12,17":::
 
 In the preceding C# code:
 
 - A `IStringLocalizer<MessageService> _localizer` field is declared.
 - The constructor takes a `IStringLocalizer<MessageService>` parameter and assigns it to the `_localizer` field.
 - The `GetGreetingMessage` method invokes the <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String)?displayProperty=nameWithType> passing `"GreetingMessage"` as an argument.
+
+The `IStringLocalizer` also supports parameterized string resources, consider the following `ParameterizedMessageService`:
+
+:::code source="snippets/localization/example/ParameterizedMessageService.cs" highlight="9,11-12,17":::
+
+In the preceding C# code:
+
+- A `IStringLocalizer _localizer` field is declared.
+- The constructor takes a `IStringLocalizerFactory` parameter, which is used to create a `IStringLocalizer` from the `ParameterizedMessageService` type, and assigns it to the `_localizer` field.
 - The `GetFormattedMessage` method invokes the <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String,System.Object[])?displayProperty=nameWithType> passing `"DinnerPriceFormat"`, a `dateTime`, and the `dinnerPrice` as arguments.
 
 Both <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item%2A?displayProperty=nameWithType> indexers return a <xref:Microsoft.Extensions.Localization.LocalizedString>, which have [implicit conversions](xref:Microsoft.Extensions.Localization.LocalizedString.op_Implicit(Microsoft.Extensions.Localization.LocalizedString)~System.String) to `string?`.

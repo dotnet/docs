@@ -1,27 +1,19 @@
-﻿using System;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using Microsoft.Extensions.Localization;
 
 namespace Localization.Example
 {
     public class MessageService
     {
-        private readonly IStringLocalizer _localizer = null!;
+        private readonly IStringLocalizer<MessageService> _localizer = null!;
 
-        public MessageService(IStringLocalizer localizer) =>
+        public MessageService(IStringLocalizer<MessageService> localizer) =>
             _localizer = localizer;
 
         [return: NotNullIfNotNull("_localizer")]
         public string? GetGreetingMessage()
         {
             LocalizedString localizedString = _localizer["GreetingMessage"];
-            return localizedString;
-        }
-
-        [return: NotNullIfNotNull("_localizer")]
-        public string? GetFormattedMessage(DateTime dateTime, double dinnerPrice)
-        {
-            LocalizedString localizedString = _localizer["DinnerPriceFormat", dateTime, dinnerPrice];
             return localizedString;
         }
     }

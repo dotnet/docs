@@ -150,19 +150,19 @@ In the preceding C# code:
 
 Each of the `*MessageService` classes, define a set of *.resx* files, each with a single entry. Here is the example content for the `MessageService` resource files:
 
-| Resource file                    | Resource key      | Resource value                                                                                   |
-|----------------------------------|-------------------|--------------------------------------------------------------------------------------------------|
-| *MessageService.resx*            | `GreetingMessage` | :::no-loc text="Hi friends, the ".NET" developer community is excited to see you here!":::       |
-| *MessageService.sr-Cyrl-RS.resx* | `GreetingMessage` | :::no-loc text="Здраво пријатељи, ".NЕТ" девелопер заједница је узбуђена што вас види овде!":::  |
-| *MessageService.sr-Latn.resx*    | `GreetingMessage` | :::no-loc text="Zdravo prijatelji, ".NET" developer zajednica je uzbuđena što vas vidi ovde!"::: |
+| Resource file                    | Resource `GreetingMessage` value                                                                 |
+|----------------------------------|--------------------------------------------------------------------------------------------------|
+| *MessageService.resx*            | :::no-loc text="Hi friends, the \".NET\" developer community is excited to see you here!":::       |
+| *MessageService.sr-Cyrl-RS.resx* | :::no-loc text="Здраво пријатељи, \".NЕТ\" девелопер заједница је узбуђена што вас види овде!":::  |
+| *MessageService.sr-Latn.resx*    | :::no-loc text="Zdravo prijatelji, \".NET\" developer zajednica je uzbuđena što vas vidi ovde!"::: |
 
 Here is the example content for the `ParameterizedMessageService` resource files:
 
-| Resource file                                 | Resource key        | Resource value                                            |
-|-----------------------------------------------|---------------------|-----------------------------------------------------------|
-| *ParameterizedMessageService.resx*            | `DinnerPriceFormat` | :::no-loc text="On {0:D} my dinner cost {1:C}.":::        |
-| *ParameterizedMessageService.sr-Cyrl-RS.resx* | `DinnerPriceFormat` | :::no-loc text="У {0:D} моја вечера је коштала {1:C}."::: |
-| *ParameterizedMessageService.sr-Latn.resx*    | `DinnerPriceFormat` | :::no-loc text="U {0:D} moja večera je koštala {1:C}."::: |
+| Resource file                                 | Resource `DinnerPriceFormat` value                        |
+|-----------------------------------------------|-----------------------------------------------------------|
+| *ParameterizedMessageService.resx*            | :::no-loc text="On {0:D} my dinner cost {1:C}.":::        |
+| *ParameterizedMessageService.sr-Cyrl-RS.resx* | :::no-loc text="У {0:D} моја вечера је коштала {1:C}."::: |
+| *ParameterizedMessageService.sr-Latn.resx*    | :::no-loc text="U {0:D} moja večera je koštala {1:C}."::: |
 
 ### Example runs
 

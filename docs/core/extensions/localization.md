@@ -127,6 +127,9 @@ In the preceding C# code:
 - The constructor takes a `IStringLocalizerFactory` parameter, which is used to create a `IStringLocalizer` from the `ParameterizedMessageService` type, and assigns it to the `_localizer` field.
 - The `GetFormattedMessage` method invokes the <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String,System.Object[])?displayProperty=nameWithType> passing `"DinnerPriceFormat"`, a `dateTime`, and the `dinnerPrice` as arguments.
 
+> [!IMPORTANT]
+> The `IStringLocalizerFactory` isn't required. Instead, it is preferred for consuming services to require the <xref:Microsoft.Extensions.Localization.IStringLocalizer%601>.
+
 Both <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item%2A?displayProperty=nameWithType> indexers return a <xref:Microsoft.Extensions.Localization.LocalizedString>, which have [implicit conversions](xref:Microsoft.Extensions.Localization.LocalizedString.op_Implicit(Microsoft.Extensions.Localization.LocalizedString)~System.String) to `string?`.
 
 ## Put it all together

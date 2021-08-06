@@ -14,7 +14,11 @@ All of the example source code in this article relies on the [`Microsoft.Extensi
 
 ## Resource files
 
-The primary mechanism for isolating localizable strings is with **resource files**. A resource file is an XML file with the *.resx* file extension. Resource files are translated prior to the execution of the consuming application &mdash; in other words, they represent translated content at rest. A resource file name most commonly contains a locale identifier, and takes on the following form `{FullTypeName}[.Locale].resx` where:
+The primary mechanism for isolating localizable strings is with **resource files**. A resource file is an XML file with the *.resx* file extension. Resource files are translated prior to the execution of the consuming application &mdash; in other words, they represent translated content at rest. A resource file name most commonly contains a locale identifier, and takes on the following form:
+
+**`{FullTypeName}[.Locale].resx`**
+
+Where:
 
 - The `{FullTypeName}` represents localizable resources for a specific type.
 - The optional `[.Locale]` represents the locale of the of the resource file contents.
@@ -54,7 +58,7 @@ However, if your app was running with the <xref:System.Globalization.CultureInfo
 1. *MessageService.sr.resx*
 1. *MessageService.resx*
 
-The "culture fallback" will entirely ignore locales, meaning resource file number four is selected if there are no corresponding matches. If the culture was set to `"fr-CA"`, localization would end up falling to the *MessageService.resx* file as it's the default.
+The "culture fallback" will entirely ignore locales, meaning resource file number four is selected if there are no corresponding matches. If the culture was set to `"fr-FR"`, localization would end up falling to the *MessageService.resx* file as it's the default.
 
 ### Resource lookup
 
@@ -105,7 +109,7 @@ After you've [registered](#register-localization-services) (and optionally [conf
 
 To create a message service that is capable of returning localized strings, consider the following `MessageService`:
 
-:::code source="snippets/localization/example/MessageService.cs" highlight="9,11-12,17":::
+:::code source="snippets/localization/example/MessageService.cs" highlight="8,10-11,16":::
 
 In the preceding C# code:
 
@@ -115,7 +119,7 @@ In the preceding C# code:
 
 The `IStringLocalizer` also supports parameterized string resources, consider the following `ParameterizedMessageService`:
 
-:::code source="snippets/localization/example/ParameterizedMessageService.cs" highlight="9,12-13,18":::
+:::code source="snippets/localization/example/ParameterizedMessageService.cs" highlight="9,11-12,17":::
 
 In the preceding C# code:
 
@@ -143,19 +147,19 @@ In the preceding C# code:
 
 Each of the `*MessageService` classes, define a set of *.resx* files, each with a single entry. Here is the example content for the `MessageService` resource files:
 
-| Resource file                    | Resource key                        | Resource value                                                                                   |
-|---------------------------------:|-------------------------------------|--------------------------------------------------------------------------------------------------|
-| *MessageService.resx*            | :::no-loc text="GreetingMessage"::: | :::no-loc text="Hi friends, the ".NET" developer community is excited to see you here!":::       |
-| *MessageService.sr-Cyrl-RS.resx* | :::no-loc text="GreetingMessage"::: | :::no-loc text="Здраво пријатељи, ".NЕТ" девелопер заједница је узбуђена што вас види овде!":::  |
-| *MessageService.sr-Latn.resx*    | :::no-loc text="GreetingMessage"::: | :::no-loc text="Zdravo prijatelji, ".NET" developer zajednica je uzbuđena što vas vidi ovde!"::: |
+| Resource file                    | Resource key      | Resource value                                                                                   |
+|----------------------------------|-------------------|--------------------------------------------------------------------------------------------------|
+| *MessageService.resx*            | `GreetingMessage` | :::no-loc text="Hi friends, the ".NET" developer community is excited to see you here!":::       |
+| *MessageService.sr-Cyrl-RS.resx* | `GreetingMessage` | :::no-loc text="Здраво пријатељи, ".NЕТ" девелопер заједница је узбуђена што вас види овде!":::  |
+| *MessageService.sr-Latn.resx*    | `GreetingMessage` | :::no-loc text="Zdravo prijatelji, ".NET" developer zajednica je uzbuđena što vas vidi ovde!"::: |
 
 Here is the example content for the `ParameterizedMessageService` resource files:
 
-| Resource file                                 | Resource key                          | Resource value                                            |
-|----------------------------------------------:|---------------------------------------|-----------------------------------------------------------|
-| *ParameterizedMessageService.resx*            | :::no-loc text="DinnerPriceFormat"::: | :::no-loc text="On {0:D} my dinner cost {1:C}.":::        |
-| *ParameterizedMessageService.sr-Cyrl-RS.resx* | :::no-loc text="DinnerPriceFormat"::: | :::no-loc text="У {0:D} моја вечера је коштала {1:C}."::: |
-| *ParameterizedMessageService.sr-Latn.resx*    | :::no-loc text="DinnerPriceFormat"::: | :::no-loc text="U {0:D} moja večera je koštala {1:C}."::: |
+| Resource file                                 | Resource key        | Resource value                                            |
+|-----------------------------------------------|---------------------|-----------------------------------------------------------|
+| *ParameterizedMessageService.resx*            | `DinnerPriceFormat` | :::no-loc text="On {0:D} my dinner cost {1:C}.":::        |
+| *ParameterizedMessageService.sr-Cyrl-RS.resx* | `DinnerPriceFormat` | :::no-loc text="У {0:D} моја вечера је коштала {1:C}."::: |
+| *ParameterizedMessageService.sr-Latn.resx*    | `DinnerPriceFormat` | :::no-loc text="U {0:D} moja večera je koštala {1:C}."::: |
 
 ### Example runs
 
@@ -163,6 +167,7 @@ The following example runs show the various localized outputs, given targeted lo
 
 ```dotnetcli
 dotnet run --project .\example\example.csproj sr-Latn
+
 warn: Localization.Example[0]
       Zdravo prijatelji, ".NET" developer zajednica je uzbuđena što vas vidi ovde!
 warn: Localization.Example[0]
@@ -173,6 +178,7 @@ When omitting an argument to the [.NET CLI to run](../tools/dotnet-run.md) the p
 
 ```dotnetcli
 dotnet run --project .\example\example.csproj
+
 warn: Localization.Example[0]
       Hi friends, the ".NET" developer community is excited to see you here!
 warn: Localization.Example[0]
@@ -183,21 +189,26 @@ When passing `"sr-Cryl-RS"`, the correct corresponding resource files are found 
 
 ```dotnetcli
 dotnet run --project .\example\example.csproj sr-Cryl-RS
+
 warn: Localization.Example[0]
       Здраво пријатељи, ".NЕТ" девелопер заједница је узбуђена што вас види овде!
 warn: Localization.Example[0]
       У уторак, 03. август 2021. моја вечера је коштала 38 RSD.
 ```
 
-The sample application does not provide resource files for `"fr-CA"`, but when called with that locale, the non-locale resource files are fallen back to. But interestingly enough, since the culture is found when formatting is applied you end up with partial localization:
+The sample application does not provide resource files for `"fr-CA"`, but when called with that culture, the non-locale resource files are fallen back to.
 
-```dotnetcli
-dotnet run --project .\example\example.csproj fr-CA
-warn: Localization.Example[0]
-      Hi friends, the ".NET" developer community is excited to see you here!
-warn: Localization.Example[0]
-      On mardi 3 août 2021 my dinner cost 37,63 $.
-```
+> [!WARNING]
+> Since the culture is found but the correct resource files are not, when formatting is applied you end up with partial localization:
+>
+> ```dotnetcli
+> dotnet run --project .\example\example.csproj fr-CA
+>
+> warn: Localization.Example[0]
+>      Hi friends, the ".NET" developer community is excited to see you here!
+> warn: Localization.Example[0]
+>      On mardi 3 août 2021 my dinner cost 37,63 $.
+>```
 
 ## See also
 

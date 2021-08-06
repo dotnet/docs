@@ -394,7 +394,7 @@ By default, the built-in <xref:System.Text.Json.Serialization.JsonStringEnumConv
 
 For more information, see [dotnet/runtime GitHub issue #31619](https://github.com/dotnet/runtime/issues/31619).
 
-:::code language="csharp" source="snippets/system-text-json-converters-how-to/csharp/EnumConverter.cs" id="Register":::
+:::code language="csharp" source="snippets/system-text-json-converters-how-to/csharp/EnumConverter.cs" id="Converter":::
 
 ::: zone-end
 

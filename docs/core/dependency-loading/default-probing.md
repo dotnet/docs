@@ -3,7 +3,6 @@ title: Default probing - .NET Core
 description: Overview of .NET Core's System.Runtime.Loader.AssemblyLoadContext.Default probing logic to locate dependencies.
 ms.date: 08/09/2019
 author: sdmaclea
-ms.author: stmaclea
 ---
 # Default probing
 

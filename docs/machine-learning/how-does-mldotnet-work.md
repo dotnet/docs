@@ -280,4 +280,4 @@ In real-life applications, your model training and evaluation code will be separ
 
 * Learn about specific topics in more depth in the [How To Guides](./how-to-guides/index.md).
 
-* If you're super keen, you can dive straight into the [API Reference documentation](../../api/index.md?view=ml-dotnet).
+* If you're super keen, you can dive straight into the [API Reference documentation](../../api/index.md?preserve-view=ml-dotnet).

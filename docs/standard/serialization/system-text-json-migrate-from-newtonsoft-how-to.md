@@ -4,7 +4,7 @@ description: "Learn how to migrate from Newtonsoft.Json to System.Text.Json. Inc
 author: tdykstra
 ms.author: tdykstra
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 07/21/2021
+ms.date: 08/06/2021
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
   - "JSON serialization"
@@ -602,6 +602,8 @@ The required properties converter would require additional logic if you need to 
 * A property is missing from the JSON.
 * A property for a non-nullable type is present in the JSON, but the value is the default for the type, such as zero for an `int`.
 * A property for a nullable value type is present in the JSON, but the value is null.
+
+If you're using System.Text.Json from an ASP.NET Core controller, you might be able to use a [`[Required]`](xref:System.ComponentModel.DataAnnotations.RequiredAttribute) attribute on properties of the model class instead of implementing a System.Text.Json converter.
 
 ### Specify date format
 

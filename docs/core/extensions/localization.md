@@ -25,7 +25,7 @@ Where:
 
 ### Specifying locales
 
-The locale at a bare minimum should define the language, but it can also define the culture (dialect), and even the country. These segments are commonly delimited by the `-` character. With the added specificity of a culture, the "culture fallback" rules are applied where best matches are prioritized. The locale should map to a well-known language tags, see <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType>.
+The locale at a bare minimum should define the language, but it can also define the culture (dialect), and even the country. These segments are commonly delimited by the `-` character. With the added specificity of a culture, the "culture fallback" rules are applied where best matches are prioritized. The locale should map to a well-known language tag, see <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType>.
 
 ### Culture fallback scenarios
 
@@ -58,13 +58,13 @@ However, if your app was running with the <xref:System.Globalization.CultureInfo
 1. *MessageService.sr.resx*
 1. *MessageService.resx*
 
-The "culture fallback" will entirely ignore locales, meaning resource file number four is selected if there are no corresponding matches. If the culture was set to `"fr-FR"`, localization would end up falling to the *MessageService.resx* file as it's the default.
+The "culture fallback" rule will ignore locales when there are no corresponding matches, meaning resource file number four is selected if it's unable to find a match. If the culture was set to `"fr-FR"`, localization would end up falling to the *MessageService.resx* file which can be problematic.
 
 ### Resource lookup
 
-Resource files are automatically resolved as part of a lookup routine. If your project file name different than the root namespace of your project, the assembly name might differ. This can prevent resource lookup. To address this mismatch, use the <xref:Microsoft.Extensions.Localization.RootNamespaceAttribute> to provide a hint to the localization services. This is used during resource lookup.
+Resource files are automatically resolved as part of a lookup routine. If your project file name is different than the root namespace of your project, the assembly name might differ. This can prevent resource lookup from being otherwise successful. To address this mismatch, use the <xref:Microsoft.Extensions.Localization.RootNamespaceAttribute> to provide a hint to the localization services. When provided it is used during resource lookup.
 
-In the sample source, the project is named *example.csproj* which creates *example.dll* and *example.exe* &mdash; however, the namespace that is used is `Localization.Example`. Apply an `assembly` level attribute:
+The example project is named *example.csproj*, which creates a *example.dll* and *example.exe* &mdash; however; the `Localization.Example` namespace is used. Apply an `assembly` level attribute to correct this mismatch:
 
 :::code source="snippets/localization/example/Program.cs" range="11":::
 
@@ -104,8 +104,8 @@ This would cause the localization services to look in the *Resources* directory 
 
 After you've [registered](#register-localization-services) (and optionally [configured](#configure-localization-options)) the localization services, you can use the following types with DI:
 
-- <xref:Microsoft.Extensions.Localization.IStringLocalizer%601?displayProperty=fullName>
-- <xref:Microsoft.Extensions.Localization.IStringLocalizerFactory?displayProperty=fullName>
+- <xref:Microsoft.Extensions.Localization.IStringLocalizer%601>
+- <xref:Microsoft.Extensions.Localization.IStringLocalizerFactory>
 
 To create a message service that is capable of returning localized strings, consider the following `MessageService`:
 

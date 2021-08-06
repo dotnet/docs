@@ -1,7 +1,7 @@
 ---
 title: How to customize property names and values with System.Text.Json
 description: "Learn how to customize property names and values when serializing with System.Text.Json in .NET."
-ms.date: 02/01/2021
+ms.date: 08/06/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
@@ -167,10 +167,12 @@ The resulting JSON looks like the following example:
 }
 ```
 
-Enum string names can be deserialized as well, as shown in the following example:
+The built-in <xref:System.Text.Json.Serialization.JsonStringEnumConverter> can deserialize string values as well. It works without a specified naming policy or with <xref:System.Text.Json.JsonNamingPolicy.CamelCase> naming policy. It doesn't support other naming policies, such as snake case. The following example shows deserialization using `CamelCase`:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripEnumAsString.cs" id="Deserialize":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripEnumAsString.vb" id="Deserialize":::
+
+For an example of a custom converter that supports deserialization while using a snake case naming policy, see [support enum string value deserialization](system-text-json-converters-how-to.md#support-enum-string-value-deserialization).
 
 ## See also
 

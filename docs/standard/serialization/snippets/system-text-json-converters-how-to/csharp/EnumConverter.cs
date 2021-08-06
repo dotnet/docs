@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Reflection;
 using System.Text.Encodings.Web;
 using System.Text.Json;
@@ -16,20 +17,27 @@ namespace EnumConverter
         {
             JsonSerializerOptions options = new() { Converters = { new CustomEnumConverterFactory() } };
 
-            // If serialization happens first then we likely can support arbitrary values and flag combinations.
+            // If serialization happens first then we likely can support
+            // arbitrary values and flag combinations.
             SerializeThenDeserialize(DayOfWeek.Monday);
-            SerializeThenDeserialize(BindingFlags.Instance | BindingFlags.Public);
+            SerializeThenDeserialize(BindingFlags.DeclaredOnly | BindingFlags.NonPublic);
+            SerializeThenDeserialize(BindingFlags.NonPublic | BindingFlags.DeclaredOnly);
 
             // Deserialize a "known" enum value without serializing first.
-            BindingFlags value = JsonSerializer.Deserialize<BindingFlags>(@"""declaredOnly, createInstance""", options);
+            BindingFlags value = JsonSerializer.Deserialize<BindingFlags>(@"""declared_only, create_instance""", options);
             Console.WriteLine(value);
 
-            // Deserialize an "unknown" enum value without serializing first. Recall Enum.ToString() has specific and deterministic ordering for flags.
+            // Deserialize an "unknown" enum value without serializing first.
+            // Enum.ToString() has specific and deterministic ordering for flags --
+            // DeclaredOnly is rendered before CreateInstance.
             try
             {
-                JsonSerializer.Deserialize<BindingFlags>(@"""createInstance, declaredOnly""", options);
+                JsonSerializer.Deserialize<BindingFlags>(@"""create_instance, declared_only""", options);
             }
-            catch (JsonException) { }
+            catch (JsonException ex) 
+            {
+                Console.WriteLine(ex.Message);
+            }
 
             void SerializeThenDeserialize(object enumVal)
             {
@@ -41,6 +49,13 @@ namespace EnumConverter
             }
         }
 
+        public class SimpleSnakeCasePolicy : JsonNamingPolicy
+        {
+            public override string ConvertName(string name)
+            {
+                return string.Concat(name.Select((x, i) => i > 0 && char.IsUpper(x) ? "_" + x.ToString() : x.ToString())).ToLower();
+            }
+        }
         // <Converter>
         private sealed class CustomEnumConverterFactory : JsonConverterFactory
         {
@@ -59,7 +74,7 @@ namespace EnumConverter
                     typeof(CustomEnumConverter<>).MakeGenericType(typeToConvert),
                     BindingFlags.Instance | BindingFlags.Public,
                     binder: null,
-                    args: new object?[] { JsonNamingPolicy.CamelCase, options, knownValues },
+                    args: new object?[] { new SimpleSnakeCasePolicy(), options, knownValues },
                     culture: null)!;
             }
         }
@@ -71,12 +86,16 @@ namespace EnumConverter
             private readonly Dictionary<string, T> _readCache = new();
             private readonly Dictionary<T, JsonEncodedText> _writeCache = new();
 
-            // This converter will only support up to 64 enum values (including flags) on serialization and deserialization
+            // This converter will only support up to 64 enum values
+            // (including flags) on serialization and deserialization.
             private const int NameCacheLimit = 64;
 
             private const string ValueSeparator = ", ";
 
-            public CustomEnumConverter(JsonNamingPolicy namingPolicy, JsonSerializerOptions options, object[]? knownValues)
+            public CustomEnumConverter(
+                JsonNamingPolicy namingPolicy, 
+                JsonSerializerOptions options, 
+                object[]? knownValues)
             {
                 _namingPolicy = namingPolicy;
 
@@ -130,14 +149,18 @@ namespace EnumConverter
                 return value;
             }
 
-            public override void Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+            public override void Write(
+                Utf8JsonWriter writer, 
+                T value, 
+                JsonSerializerOptions options)
             {
                 if (!_writeCache.TryGetValue(value, out JsonEncodedText formatted))
                 {
                     if (_writeCache.Count == NameCacheLimit)
                     {
                         Debug.Assert(_readCache.Count == NameCacheLimit);
-                        throw new ArgumentOutOfRangeException("Cache count = cache limit", "");
+                        throw new ArgumentOutOfRangeException(
+                            "_writeCache.Count == NameCacheLimit", "");
                     }
 
                     formatted = FormatAndAddToCaches(value, options.Encoder);
@@ -177,7 +200,7 @@ namespace EnumConverter
 
                 return (converted, JsonEncodedText.Encode(converted, encoder));
             }
-            // </Converter>
         }
+        // </Converter>
     }
 }

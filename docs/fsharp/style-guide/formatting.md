@@ -1012,21 +1012,22 @@ with
     printfn "A second that was a multiple of 3"
 ```
 
-Always add a `|` for each clause, even when only having a single clause.
+Add a `|` for each clause, except when there is only a single clause consisting of a simple value pattern:
 
 ```fsharp
 // OK
+try
+    persistState currentState
+with ex ->
+    printfn "Something went wrong: %A" ex
+
+// Not OK
 try
     persistState currentState
 with
 | ex ->
     printfn "Something went wrong: %A" ex
 
-// Not OK
-try
-    persistState currentState
-with ex ->
-    printfn "Something went wrong: %A" ex
 ```
 
 ## Formatting function parameter application

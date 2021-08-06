@@ -75,7 +75,7 @@ using IHost host = Host.CreateDefaultBuilder(args)
         {
             options.ResourcesPath = "Resources");
         }
-    })
+    });
 
 // Omitted for brevity.
 ```
@@ -87,6 +87,26 @@ Resource files can live anywhere in a project, but there are common practices in
 - Calls `AddLocalization` to the service collection, specifying <xref:Microsoft.Extensions.Localization.LocalizationOptions.ResourcesPath?displayProperty=nameWithType> as `"Resources"`.
 
 This would cause the localization services to look in the *Resources* directory for resource files.
+
+## Use `IStringLocalizer<T>` and `IStringLocalizerFactory`
+
+After you've [registered](#register-localization-services) (and optionally [configured](#configure-localization-options)) the localization services, you can use the following types with DI:
+
+- <xref:Microsoft.Extensions.Localization.IStringLocalizer%601?displayProperty=fullName>
+- <xref:Microsoft.Extensions.Localization.IStringLocalizerFactory?displayProperty=fullName>
+
+To create a message service that is capable of returning localized strings, consider the following `MessageService`:
+
+:::code source="snippets/localization/example/MessageService.cs" highlight="9,11-12,17,24":::
+
+In the preceding C# code:
+
+- A `IStringLocalizer<MessageService> _localizer` field is declared.
+- The constructor takes a `IStringLocalizer<MessageService>` parameter and assigns it to the `_localizer` field.
+- The `GetGreetingMessage` method invokes the <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String)?displayProperty=nameWithType> passing `"GreetingMessage"` as an argument.
+- The `GetFormattedMessage` method invokes the <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String,System.Object[])?displayProperty=nameWithType> passing `"DinnerPriceFormat"`, a `dateTime`, and the `dinnerPrice` as arguments.
+
+Both <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item%2A?displayProperty=nameWithType> indexers return a <xref:Microsoft.Extensions.Localization.LocalizedString>, which have [implicit conversions](xref:Microsoft.Extensions.Localization.LocalizedString.op_Implicit(Microsoft.Extensions.Localization.LocalizedString)~System.String) to `string?`.
 
 ## See also
 

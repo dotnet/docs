@@ -386,7 +386,7 @@ The following code registers the converter:
 
 ### Support enum string value deserialization
 
-By default, the built-in <xref:System.Text.Json.Serialization.JsonStringEnumConverter> can serialize and deserialize string values for enums. It works with no specified naming policy or <xref:System.Text.Json.JsonNamingPolicy.CamelCase> naming policy. It doesn't support other naming policies, such as snake case. The following example shows a custom converter that enables round-tripping to and from enum string values while using a snake case naming policy. The example:
+By default, the built-in <xref:System.Text.Json.Serialization.JsonStringEnumConverter> can serialize and deserialize string values for enums. It works without a specified naming policy or with the <xref:System.Text.Json.JsonNamingPolicy.CamelCase> naming policy. It doesn't support other naming policies, such as snake case. The following example shows a custom converter that enables round-tripping to and from enum string values while using a snake case naming policy. The example:
 
 * Supports serialization and deserialization of arbitrary enum types according to a specified naming policy and encoder, using size-limited caches to specify a range of supported enum values.
 * Dynamically adds transformed enum string representations to the caches on serialization which can also be used on deserialization. This behavior is mostly useful for flags, and it is done only so long as the cache size limit hasn't been reached.

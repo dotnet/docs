@@ -20,7 +20,7 @@ ML.NET runs on Windows, Linux, and macOS using .NET Core, or Windows using .NET 
 Examples of the type of predictions that you can make with ML.NET:
 
 |||
-|-|-|
+|---|---|
 |**Classification/Categorization**|Automatically divide customer feedback into positive and negative categories|
 |**Regression/Predict continuous values**|Predict the price of houses based on size and location|
 |**Anomaly Detection**|Detect fraudulent banking transactions |
@@ -167,7 +167,7 @@ In this section, we go through the architectural patterns of ML.NET. If you are 
 An ML.NET application starts with an <xref:Microsoft.ML.MLContext> object. This singleton object contains **catalogs**. A catalog is a factory for data loading and saving, transforms, trainers, and model operation components. Each catalog object has methods to create the different types of components:
 
 |||||
-|-|-|-|-|
+|---|---|---|---|
 |**Data loading and saving**||<xref:Microsoft.ML.DataOperationsCatalog>||
 |**Data preparation**||<xref:Microsoft.ML.TransformsCatalog>||
 |**Training algorithms**|Binary classification|<xref:Microsoft.ML.BinaryClassificationCatalog>||

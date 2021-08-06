@@ -8,8 +8,7 @@ namespace Localization.Example
     {
         private readonly IStringLocalizer _localizer = null!;
 
-        public ParameterizedMessageService(
-            IStringLocalizerFactory factory) =>
+        public ParameterizedMessageService(IStringLocalizerFactory factory) =>
             _localizer = factory.Create(typeof(ParameterizedMessageService));
 
         [return: NotNullIfNotNull("_localizer")]

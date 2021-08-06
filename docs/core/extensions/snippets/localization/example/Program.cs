@@ -29,17 +29,21 @@ using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureLogging(options => options.SetMinimumLevel(LogLevel.Warning))
     .Build();
 
-var services = host.Services;
+IServiceProvider services = host.Services;
 
-MessageService messageService =
-    services.GetRequiredService<MessageService>();
-ParameterizedMessageService parameterizedMessageService =
-    services.GetRequiredService<ParameterizedMessageService>();
 ILogger logger =
     services.GetRequiredService<ILoggerFactory>()
         .CreateLogger("Localization.Example");
 
-logger.LogWarning(messageService.GetGreetingMessage());
-logger.LogWarning(parameterizedMessageService.GetFormattedMessage(DateTime.Today.AddDays(-3), 37.63));
+MessageService messageService =
+    services.GetRequiredService<MessageService>();
+logger.LogWarning(
+    messageService.GetGreetingMessage());
+
+ParameterizedMessageService parameterizedMessageService =
+    services.GetRequiredService<ParameterizedMessageService>();
+logger.LogWarning(
+    parameterizedMessageService.GetFormattedMessage(
+        DateTime.Today.AddDays(-3), 37.63));
 
 await host.RunAsync();

@@ -148,21 +148,32 @@ In the preceding C# code:
 - The `MessageService` is resolved from the `IServiceProvider` instance and its resulting message is logged.
 - The `ParameterizedMessageService` is resolved from the `IServiceProvider` instance and its resulting formatted message is logged.
 
-Each of the `*MessageService` classes, define a set of *.resx* files, each with a single entry. Here is the example content for the `MessageService` resource files:
+Each of the `*MessageService` classes, define a set of *.resx* files, each with a single entry. Here is the example content for the `MessageService` resource files, starting with *MessageService.resx*:
 
-| Resource file                    | Resource `GreetingMessage` value                                                                 |
-|----------------------------------|--------------------------------------------------------------------------------------------------|
-| *MessageService.resx*            | :::no-loc text="Hi friends, the \".NET\" developer community is excited to see you here!":::       |
-| *MessageService.sr-Cyrl-RS.resx* | :::no-loc text="Здраво пријатељи, \".NЕТ\" девелопер заједница је узбуђена што вас види овде!":::  |
-| *MessageService.sr-Latn.resx*    | :::no-loc text="Zdravo prijatelji, \".NET\" developer zajednica je uzbuđena što vas vidi ovde!"::: |
+:::code language="xml" source="snippets/localization/example/MessageService.resx" range="1-2,120-123":::
 
-Here is the example content for the `ParameterizedMessageService` resource files:
+*MessageService.sr-Cyrl-RS.resx*:
 
-| Resource file                                 | Resource `DinnerPriceFormat` value                        |
-|-----------------------------------------------|-----------------------------------------------------------|
-| *ParameterizedMessageService.resx*            | :::no-loc text="On {0:D} my dinner cost {1:C}.":::        |
-| *ParameterizedMessageService.sr-Cyrl-RS.resx* | :::no-loc text="У {0:D} моја вечера је коштала {1:C}."::: |
-| *ParameterizedMessageService.sr-Latn.resx*    | :::no-loc text="U {0:D} moja večera je koštala {1:C}."::: |
+:::code language="xml" source="snippets/localization/example/MessageService.sr-Cyrl-RS.resx" range="1-2,120-123":::
+
+*MessageService.sr-Latn.resx*:
+
+:::code language="xml" source="snippets/localization/example/MessageService.sr-Latn.resx" range="1-2,120-123":::
+
+Here is the example content for the `ParameterizedMessageService` resource files, starting with *ParameterizedMessageService.resx*:
+
+:::code language="xml" source="snippets/localization/example/ParameterizedMessageService.resx" range="1-2,120-123":::
+
+*ParameterizedMessageService.sr-Cyrl-RS.resx*:
+
+:::code language="xml" source="snippets/localization/example/ParameterizedMessageService.sr-Cyrl-RS.resx" range="1-2,120-123":::
+
+*ParameterizedMessageService.sr-Latn.resx*:
+
+:::code language="xml" source="snippets/localization/example/ParameterizedMessageService.sr-Latn.resx" range="1-2,120-123":::
+
+> [!TIP]
+> All of the resource file XML comments, schema and `<resheader>` elements are intentionally omitted for brevity.
 
 ### Example runs
 

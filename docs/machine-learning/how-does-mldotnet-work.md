@@ -1,7 +1,7 @@
 ---
 title: What is ML.NET and how does it work?
 description: ML.NET gives you the ability to add machine learning to .NET applications, in either online or offline scenarios. With this capability, you can make automatic predictions using the data available to your application without having to be connected to a network to use ML.NET. This article explains the basics of machine learning in ML.NET.
-ms.date: 11/5/2019
+ms.date: 08/06/2021
 ms.topic: overview
 ms.custom: mvc
 #Customer intent: As a developer, I want to learn how ML.NET works so that I can leverage machine learning in my applications.
@@ -21,12 +21,12 @@ Examples of the type of predictions that you can make with ML.NET:
 
 |||
 |-|-|
-|Classification/Categorization|Automatically divide customer feedback into positive and negative categories|
-|Regression/Predict continuous values|Predict the price of houses based on size and location|
-|Anomaly Detection|Detect fraudulent banking transactions |
-|Recommendations|Suggest products that online shoppers may want to buy, based on their previous purchases|
-|Time series/sequential data|Forecast the weather/product sales|
-|Image classification|Categorize pathologies in medical images|
+|**Classification/Categorization**|Automatically divide customer feedback into positive and negative categories|
+|**Regression/Predict continuous values**|Predict the price of houses based on size and location|
+|**Anomaly Detection**|Detect fraudulent banking transactions |
+|**Recommendations**|Suggest products that online shoppers may want to buy, based on their previous purchases|
+|**Time series/sequential data**|Forecast the weather/product sales|
+|**Image classification**|Categorize pathologies in medical images|
 
 ## Hello ML.NET World
 
@@ -168,9 +168,9 @@ An ML.NET application starts with an <xref:Microsoft.ML.MLContext> object. This 
 
 |||||
 |-|-|-|-|
-|Data loading and saving||<xref:Microsoft.ML.DataOperationsCatalog>||
-|Data preparation||<xref:Microsoft.ML.TransformsCatalog>||
-|Training algorithms|Binary classification|<xref:Microsoft.ML.BinaryClassificationCatalog>||
+|**Data loading and saving**||<xref:Microsoft.ML.DataOperationsCatalog>||
+|**Data preparation**||<xref:Microsoft.ML.TransformsCatalog>||
+|**Training algorithms**|Binary classification|<xref:Microsoft.ML.BinaryClassificationCatalog>||
 ||Multiclass classification|<xref:Microsoft.ML.MulticlassClassificationCatalog>||
 ||Anomaly detection|<xref:Microsoft.ML.AnomalyDetectionCatalog>||
 ||Clustering|<xref:Microsoft.ML.ClusteringCatalog>||
@@ -179,7 +179,7 @@ An ML.NET application starts with an <xref:Microsoft.ML.MLContext> object. This 
 ||Regression|<xref:Microsoft.ML.RegressionCatalog>||
 ||Recommendation|<xref:Microsoft.ML.RecommendationCatalog>|add the `Microsoft.ML.Recommender` NuGet package|
 ||TimeSeries|<xref:Microsoft.ML.TimeSeriesCatalog>|add the `Microsoft.ML.TimeSeries` NuGet package|
-|Model usage ||<xref:Microsoft.ML.ModelOperationsCatalog>||
+|**Model usage** ||<xref:Microsoft.ML.ModelOperationsCatalog>||
 
 You can navigate to the creation methods in each of the above categories. Using Visual Studio, the catalogs show up via IntelliSense.
 

@@ -1012,13 +1012,19 @@ with
     printfn "A second that was a multiple of 3"
 ```
 
-Add a `|` for each clause, except when there is only a single clause consisting of a simple value pattern:
+Add a `|` for each clause, except when there is only a single clause:
 
 ```fsharp
 // OK
 try
     persistState currentState
 with ex ->
+    printfn "Something went wrong: %A" ex
+
+// OK
+try
+    persistState currentState
+with :? System.ApplicationException as ex ->
     printfn "Something went wrong: %A" ex
 
 // Not OK
@@ -1028,6 +1034,12 @@ with
 | ex ->
     printfn "Something went wrong: %A" ex
 
+// Not OK
+try
+    persistState currentState
+with
+| :? System.ApplicationException as ex ->
+    printfn "Something went wrong: %A" ex
 ```
 
 ## Formatting function parameter application

@@ -123,7 +123,7 @@ The JSON file consists of the following information generated from VoTT:
 - The image bounding box information
 - The tag associated with the image
 
-For more information on preparing data for object detection, see [Generate object detection data from VoTT](./how-to-guides/generate-data-from-vott.md).
+For more information on preparing data for object detection, see [Generate object detection data from VoTT](label-images-for-object-detection-using-vott.md).
 
 ## Next steps
 

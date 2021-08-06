@@ -603,7 +603,7 @@ The required properties converter would require additional logic if you need to 
 * A property for a non-nullable type is present in the JSON, but the value is the default for the type, such as zero for an `int`.
 * A property for a nullable value type is present in the JSON, but the value is null.
 
-If you're using System.Text.Json from an ASP.NET Core controller, you might be able to use a [`[Required]`](xref:System.ComponentModel.DataAnnotations.RequiredAttribute) attribute on properties of the model class instead of implementing a System.Text.Json converter.
+**Note:** If you're using System.Text.Json from an ASP.NET Core controller, you might be able to use a [`[Required]`](xref:System.ComponentModel.DataAnnotations.RequiredAttribute) attribute on properties of the model class instead of implementing a System.Text.Json converter.
 
 ### Specify date format
 

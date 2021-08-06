@@ -785,6 +785,19 @@ The `ValidateExecutableReferencesMatchSelfContained` property can be used to dis
 </PropertyGroup>
 ```
 
+### WindowsSdkPackageVersion
+
+The `WindowsSdkPackageVersion` property can be used to override the version of the [Windows SDK targeting package](https://www.nuget.org/packages/Microsoft.Windows.SDK.NET.Ref). This property was introduced in .NET 5, and replaces the use of the `FrameworkReference` item for this purpose.
+
+```xml
+<PropertyGroup>
+  <WindowsSdkPackageVersion>10.0.19041.18</WindowsSdkPackageVersion>
+</PropertyGroup>
+```
+
+> [!NOTE]
+> We don't recommend overriding the Windows SDK version, because the Windows SDK targeting packages are included with the .NET 5+ SDK. Instead, to reference the latest Windows SDK package, update your version of the .NET SDK. This property should only be used in rare cases such as using preview packages or needing to override the version of C#/WinRT.
+
 ## Run-related properties
 
 The following properties are used for launching an app with the [`dotnet run`](../tools/dotnet-run.md) command:

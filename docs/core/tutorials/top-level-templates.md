@@ -57,3 +57,5 @@ These two features simplify the code that makes up your application. To follow a
 If you'd prefer to use the older format, you can copy the code from the second example in this article, and continue the tutorial as before.
 
 You can learn more about top-level statements in the tutorial exploration on [top level statements](../../csharp/whats-new/tutorials/top-level-statements.md).
+
+If you want to opt-out of that behavior and manually control all namespaces in your project, add [`<DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>`](../project-sdk/msbuild-props.md#disableimplicitnamespaceimports) in the project file.

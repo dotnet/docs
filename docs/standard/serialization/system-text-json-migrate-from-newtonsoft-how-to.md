@@ -901,6 +901,8 @@ The `JsonDocument` DOM doesn't support querying by using [JSON Path](https://www
 In a <xref:System.Text.Json.Nodes.JsonNode> DOM, each `JsonNode` instance has a `GetPath` method that returns a path to that node. But there is no built-in API to handle queries based on JSON Path query strings.
 ::: zone-end
 
+For more information, see the [dotnet/runtime #31068 GitHub issue](https://github.com/dotnet/runtime/issues/31068).
+
 ## Additional resources
 
 * [System.Text.Json overview](system-text-json-overview.md)

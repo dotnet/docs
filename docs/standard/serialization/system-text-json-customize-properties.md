@@ -172,7 +172,7 @@ The built-in <xref:System.Text.Json.Serialization.JsonStringEnumConverter> can d
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripEnumAsString.cs" id="Deserialize":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripEnumAsString.vb" id="Deserialize":::
 
-For an example of a custom converter that supports deserialization while using a snake case naming policy, see [support enum string value deserialization](system-text-json-converters-how-to.md#support-enum-string-value-deserialization).
+For an example of a custom converter that supports deserialization while using a snake case naming policy, see [Support enum string value deserialization](system-text-json-converters-how-to.md#support-enum-string-value-deserialization).
 
 ## See also
 

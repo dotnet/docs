@@ -384,7 +384,7 @@ The following code registers the converter:
 
 ::: zone pivot="dotnet-5-0,dotnet-6-0"
 
-### support enum string value deserialization
+### Support enum string value deserialization
 
 By default, the built-in <xref:System.Text.Json.Serialization.JsonStringEnumConverter> can serialize and deserialize string values for enums. It works with no specified naming policy or <xref:System.Text.Json.JsonNamingPolicy.CamelCase> naming policy. It doesn't support other naming policies, such as snake case. The following example shows a custom converter that enables round-tripping to and from enum string values while using a snake case naming policy. The example:
 

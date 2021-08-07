@@ -18,6 +18,7 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
 > - Prepare and understand the data
+> - Create a Model Builder config file
 > - Choose a scenario
 > - Load data from a database
 > - Train the model

@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Analyze sentiment - binary classification'
 description: This tutorial shows you how to create a Razor Pages application that classifies sentiment from website comments and takes the appropriate action. The binary sentiment classifier uses Model Builder in Visual Studio.
-ms.date: 08/04/2021
+ms.date: 08/07/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.topic: tutorial
@@ -91,7 +91,9 @@ Model Builder accepts data from two sources, a SQL Server database or a local fi
 1. In the data step of the Model Builder tool, select **File** from the data source type selection.
 1. Select the **Browse** button and use File Explorer to browse and select the *wikipedia-detox-250-line-data.tsv* file.
 1. Choose **Sentiment** in the **Column to Predict (Label)** dropdown.
-1. Leave the default values inside the **Advanced data options** link.
+1. Click the **Advanced data options** link.
+    1. Inside the **Advanced data options** dialog click the **Purpose** dropdown for the **LoggedIn** column and set it to **Ignore**.
+    1. Click the **Save** button.
 1. Click the **Next step** button to move to the training step in the Model Builder tool.
 
 ## Train the model
@@ -100,7 +102,7 @@ The machine learning task used to train the sentiment analysis model in this tut
 
 The time required for the model to train is proportionate to the amount of data. Model Builder automatically selects a default value for **Time to train (seconds)** based on the size of your data source.
 
-1. Although Model Builder sets the value of **Time to train (seconds)** to 10 seconds, increase it to 30 seconds. Training for a longer period of time allows Model Builder to explore a larger number of algorithms and combination of parameters in search of the best model.
+1. Although Model Builder sets the value of **Time to train (seconds)** to 10 seconds, increase it to 60 seconds. Training for a longer period of time allows Model Builder to explore a larger number of algorithms and combination of parameters in search of the best model.
 1. Click the **Start Training** button.
 
     Throughout the training process, progress data is displayed in the `Training results` section of the train step.
@@ -151,10 +153,18 @@ When adding a web API to your solution, you will be prompted to name the project
 
     ```powershell
     $body = @{
-        SentimentText="Model Builder is cool!"
+        SentimentText="Model Builder is cool!",
     }
 
     Invoke-RestMethod "https://localhost:<PORT>/predict" -Method Post -Body ($body | ConvertTo-Json) -ContentType "application/json"
+    ```
+
+1. If successful, the output should look similar to the text below:
+
+    ```powershell
+    prediction score
+    ---------- -----
+    0 {0.022516366, 0.97748363}
     ```
 
 ### Configure the PredictionEngine pool
@@ -179,7 +189,6 @@ To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionE
     ```csharp
     using System.IO;
     using Microsoft.Extensions.ML;
-    using SentimentRazorML.Model;
     ```
 
 1. Create a global variable in the **Startup** class to store the location of the trained model file.
@@ -218,11 +227,10 @@ To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionE
 
 Predictions will be made inside the main page of the application. Therefore, a method that takes the user input and uses the `PredictionEnginePool` to return a prediction needs to be added.
 
-1. Open the *Index.cshtml.cs* file located in the *Pages* directory and add the following using statements:
+1. Open the *Index.cshtml.cs* file located in the *Pages* directory and add the following using statement:
 
     ```csharp
     using Microsoft.Extensions.ML;
-    using SentimentRazorML.Model;
     ```
 
     In order to use the `PredictionEnginePool` configured in the `Startup` class, you have to inject it into the constructor of the model where you want to use it.
@@ -321,8 +329,6 @@ When the application launches, enter *Model Builder is cool!* into the text area
 
 ![Running window with the predicted sentiment window](./media/sentiment-analysis-model-builder/web-app.png)
 
-If you need to reference the Model Builder generated projects at a later time inside of another solution, you can find them inside the `C:\Users\%USERNAME%\AppData\Local\Temp\MLVSTools` directory.
-
 ## Next steps
 
 In this tutorial, you learned how to:
@@ -330,6 +336,7 @@ In this tutorial, you learned how to:
 >
 > - Create an ASP.NET Core Razor Pages application
 > - Prepare and understand the data
+> - Created a Model Builder config file
 > - Choose a scenario
 > - Load the data
 > - Train the model

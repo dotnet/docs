@@ -14,7 +14,7 @@ ms.assetid: 7e542583-1e31-4e10-b523-8cf2f29cb4a4
 
 The common language runtime exposes COM objects through a proxy called the runtime callable wrapper (RCW). Although the RCW appears to be an ordinary object to .NET clients, its primary function is to marshal calls between a .NET client and a COM object.  
   
- The runtime creates exactly one RCW for each COM object, regardless of the number of references that exist on that object. The runtime maintains a single RCW per process for each object.  If you create an RCW in one application domain or apartment, and then pass a reference to another application domain or apartment, a proxy to the first object will be used.  As the following illustration shows, any number of managed clients can hold a reference to the COM objects that expose INew and INewer interfaces.  
+ The runtime creates exactly one RCW for each COM object, regardless of the number of references that exist on that object. The runtime maintains a single RCW per process for each object.  If you create an RCW in one application domain or apartment, and then pass a reference to another application domain or apartment, a proxy to the first object will be used. Note that this proxy is a new managed object and not the same as the initial RCW; this means the two managed objects are not equal but do represent the same COM object.  As the following illustration shows, any number of managed clients can hold a reference to the COM objects that expose `INew` and `INewer` interfaces.  
 
 The following image shows the process for accessing COM objects through the runtime callable wrapper:
 
@@ -24,7 +24,7 @@ The following image shows the process for accessing COM objects through the runt
   
  Among other activities, the RCW marshals data between managed and unmanaged code, on behalf of the wrapped object. Specifically, the RCW provides marshaling for method arguments and method return values whenever the client and server have different representations of the data passed between them.  
   
- The standard wrapper enforces built-in marshaling rules. For example, when a .NET client passes a String type as part of an argument to an unmanaged object, the wrapper converts the string to a BSTR type. Should the COM object return a BSTR to its managed caller, the caller receives a String. Both the client and the server send and receive data that is familiar to them. Other types require no conversion. For instance, a standard wrapper will always pass a 4-byte integer between managed and unmanaged code without converting the type.  
+ The standard wrapper enforces built-in marshaling rules. For example, when a .NET client passes a `string` type as part of an argument to an unmanaged object, the wrapper converts the `string` to a `BSTR` type. Should the COM object return a `BSTR` to its managed caller, the caller receives a `string`. Both the client and the server send and receive data that is familiar to them. Other types require no conversion. For instance, a standard wrapper will always pass a 4-byte integer between managed and unmanaged code without converting the type.
   
 ## Marshaling selected interfaces  
 

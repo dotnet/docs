@@ -6,13 +6,16 @@ If an assembly of compiled regular expressions is built with the .NET Framework 
 
 #### Suggestion
 
-To work around this problem, you can do either of the following:<ul><li>Build the assembly that contains the regular expressions with the .NET Framework 4.</li><li>Use an interpreted regular expression.</li></ul>
+To work around this problem, you can do either of the following:
 
-| Name    | Value       |
-|:--------|:------------|
-| Scope   |Minor|
-|Version|4.5|
-|Type|Runtime|
+- Build the assembly that contains the regular expressions with the .NET Framework 4.
+- Use an interpreted regular expression.
+
+| Name    | Value   |
+| :------ | :------ |
+| Scope   | Minor   |
+| Version | 4.5     |
+| Type    | Runtime |
 
 #### Affected APIs
 

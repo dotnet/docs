@@ -2544,6 +2544,8 @@ items:
   items:
   - name: Overview
     href: ../core/porting/index.md
+  - name: Port .NET Framework libraries to .NET
+    href: ../core/porting/libraries.md
   - name: General Information
     items:
     - name: About .NET
@@ -2562,6 +2564,8 @@ items:
         href: ../core/porting/upgrade-assistant-winforms-framework.md
       - name: ASP.NET Core
         href: ../core/porting/upgrade-assistant-aspnetmvc.md
+      - name: Telemetry
+        href: ../core/porting/upgrade-assistant-telemetry.md
     - name: Breaking changes
       displayName: app compatibility
       href: ../core/porting/breaking-changes.md

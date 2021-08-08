@@ -215,5 +215,5 @@ You can continue with the [object oriented programming](oop.md) tutorial.
 
 You can learn more about these concepts in these articles:
 
-- [If and else statement](../../language-reference/keywords/if-else.md)
+- [Selection statements](../../language-reference/statements/selection-statements.md)
 - [Iteration statements](../../language-reference/statements/iteration-statements.md)

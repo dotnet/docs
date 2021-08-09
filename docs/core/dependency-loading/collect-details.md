@@ -30,7 +30,7 @@ This will collect a trace of the specified `<pid>`, enabling the `AssemblyLoader
 
 Sometimes it may be useful to collect a trace of a process from its startup. For apps running .NET 5.0 or later, you can use dotnet-trace to do this.
 
-This will launch hello.exe with arg1 and arg2 as its command line arguments and collect a trace from its runtime startup:
+The following command launches hello.exe with `arg1` and `arg2` as its command line arguments and collects a trace from its runtime startup:
 
 ```console
 dotnet-trace collect --providers Microsoft-Windows-DotNETRuntime:4 -- hello.exe arg1 arg2

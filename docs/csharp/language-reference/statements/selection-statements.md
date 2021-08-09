@@ -40,7 +40,7 @@ You can nest `if` statements to check multiple conditions, as the following exam
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/selection-statements/IfStatement.cs" id="NestedIf":::
 
-In an expression context, you can use the [conditional operator `?:`](../operators/conditional-operator.md) to execute one of the two expressions based on the value of a Boolean expression.
+In an expression context, you can use the [conditional operator `?:`](../operators/conditional-operator.md) to evaluate one of the two expressions based on the value of a Boolean expression.
 
 ## The `switch` statement
 

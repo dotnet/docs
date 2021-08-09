@@ -7,8 +7,8 @@ ms.date: 05/14/2021
 
 C# is an object-oriented programming language. The four basic principles of object-oriented programming are:
 
-- *Abstraction* Modeling the relevant attributes and interactions of entities as classes to define an abstract representation of a system.
-- *Encapsulation* Hiding the internal state and functionality of an object and only allowing access through a public set of functions.
+- *Abstraction* is a process of hiding the implementation details and displaying the essential features.
+- *Encapsulation* is a process of binding the data members and member functions into a single unit.
 - *Inheritance* Ability to create new abstractions based on existing abstractions.
 - *Polymorphism* Ability to implement inherited properties or methods in different ways across multiple abstractions.
 

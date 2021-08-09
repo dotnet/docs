@@ -57,7 +57,7 @@ For information about the patterns supported by the `switch` statement, see [Pat
 
 The preceding example also demonstrates the `default` case. The `default` case specifies statements to execute when a match expression doesn't match any other case pattern. If a match expression doesn't match any case pattern and there is no `default` case, control falls through a `switch` statement.
 
-A `switch` statement evaluates the first section whose case pattern matches a match expression and whose [case guard](#case-guards), if present, evaluates to `true`. A `switch` statement evaluates case patterns in text order from top to bottom. The compiler generates an error when a `switch` statement contains an unreachable case. That is a case that is already handled by an upper case or whose pattern is impossible to match.
+A `switch` statement executes the *statement list* in the first *switch section* whose *case pattern* matches a match expression and whose [case guard](#case-guards), if present, evaluates to `true`. A `switch` statement evaluates case patterns in text order from top to bottom. The compiler generates an error when a `switch` statement contains an unreachable case. That is a case that is already handled by an upper case or whose pattern is impossible to match.
 
 > [!NOTE]
 > The `default` case can appear in any place within a `switch` statement. Regardless of its position, the `default` case is always evaluated last and only if all other case patterns aren't matched.

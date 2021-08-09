@@ -89,7 +89,7 @@ If you access the `Score` property of the `prediction` object, you should get a 
 >
 > For examples on how to use the [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool%602) service, see [deploy a model to a web API](serve-model-web-api-ml-net.md) and [deploy a model to Azure Functions](serve-model-serverless-azure-functions-ml-net.md).
 >
-> See [dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection) for more information. 
+> See [dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection) for more information.
 
 
 ## Multiple predictions (IDataView)

@@ -36,7 +36,7 @@ The following command launches hello.exe with `arg1` and `arg2` as its command l
 dotnet-trace collect --providers Microsoft-Windows-DotNETRuntime:4 -- hello.exe arg1 arg2
 ```
 
-You can stop collecting the trace by pressing <kbd>Enter</kbd> or <kbd>Ctrl</kbd> + <kbd>C</kbd>. This also closes hello.exe.
+You can stop collecting the trace by pressing <kbd>Enter</kbd> or <kbd>Ctrl</kbd> + <kbd>C</kbd>. This also closes _hello.exe_.
 
 > [!NOTE]
 >

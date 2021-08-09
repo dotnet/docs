@@ -17,6 +17,7 @@ Starting with .NET 5.0, the runtime can emit events through `EventPipe` with det
 ## Collect a trace with assembly loading events
 
 ### Tracing an existing process
+
 To enable assembly loading events in the runtime and collect a trace of them, use `dotnet-trace` with the following command:
 
 ```console
@@ -26,6 +27,7 @@ dotnet-trace collect --providers Microsoft-Windows-DotNETRuntime:4 --process-id 
 This will collect a trace of the specified `<pid>`, enabling the `AssemblyLoader` events in the `Microsoft-Windows-DotNETRuntime` provider. The result is a `.nettrace` file.
 
 ### Using dotnet-trace to launch a child process and trace it from startup
+
 Sometimes it may be useful to collect a trace of a process from its startup. For apps running .NET 5.0 or later, it is possible to do this by using dotnet-trace.
 
 This will launch hello.exe with arg1 and arg2 as its command line arguments and collect a trace from its runtime startup:

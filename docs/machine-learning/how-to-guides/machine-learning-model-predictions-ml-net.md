@@ -91,7 +91,6 @@ If you access the `Score` property of the `prediction` object, you should get a 
 >
 > See [dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection) for more information.
 
-
 ## Multiple predictions (IDataView)
 
 Given the following data, load it into an [`IDataView`](xref:Microsoft.ML.IDataView). In this case, the name of the [`IDataView`](xref:Microsoft.ML.IDataView) is `inputData`. Because `CurrentPrice` is the target or label you're trying to predict using new data, it's assumed there is no value for it at the moment.

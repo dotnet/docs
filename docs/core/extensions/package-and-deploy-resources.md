@@ -1,7 +1,7 @@
 ---
-title: "Packaging and Deploying Resources in .NET Apps"
+title: "Package and deploy resources in .NET Apps"
 description: Package and deploy resources in .NET apps using a main assembly (hub) and satellite assemblies (spokes). A spoke contains localized resources but no code.
-ms.date: "03/30/2017"
+ms.date: 08/09/2021
 dev_langs:
   - "csharp"
   - "vb"
@@ -29,9 +29,9 @@ helpviewer_keywords:
 ms.assetid: b224d7c0-35f8-4e82-a705-dd76795e8d16
 ---
 
-# Packaging and Deploying Resources in .NET Apps
+# Package and Deploy resources in .NET Apps
 
-Applications rely on the .NET Framework Resource Manager, represented by the <xref:System.Resources.ResourceManager> class, to retrieve localized resources. The Resource Manager assumes that a hub and spoke model is used to package and deploy resources. The hub is the main assembly that contains the nonlocalizable executable code and the resources for a single culture, called the neutral or default culture. The default culture is the fallback culture for the application; it is the culture whose resources are used if localized resources cannot be found. Each spoke connects to a satellite assembly that contains the resources for a single culture, but does not contain any code.
+Applications rely on the .NET Framework Resource Manager, represented by the <xref:System.Resources.ResourceManager> class, to retrieve localized resources. The Resource Manager assumes that a hub and spoke model is used to package and deploy resources. The hub is the main assembly that contains the non-localizable executable code and the resources for a single culture, called the neutral or default culture. The default culture is the fallback culture for the application; it is the culture whose resources are used if localized resources cannot be found. Each spoke connects to a satellite assembly that contains the resources for a single culture, but does not contain any code.
 
 There are several advantages to this model:
 
@@ -56,7 +56,7 @@ When you package your application's resources, you must name them using the reso
 
 <a name="cpconpackagingdeployingresourcesanchor1"></a>
 
-## The Resource Fallback Process
+## The resource fallback process
 
 The hub and spoke model for packaging and deploying resources uses a fallback process to locate appropriate resources. If an application requests a localized resource  that is unavailable, the common language runtime searches the hierarchy of cultures for an appropriate fallback resource that most closely matches the user's application's request, and throws an exception only as a last resort. At each level of the hierarchy, if an appropriate resource is found, the runtime uses it. If the resource is not found, the search continues at the next level.
 
@@ -67,9 +67,9 @@ To improve lookup performance, apply the <xref:System.Resources.NeutralResources
 The .NET Framework resource fallback process involves the following steps:
 
 > [!TIP]
-> You may be able to use the [\<relativeBindForResources>](../configure-apps/file-schema/runtime/relativebindforresources-element.md) configuration element to optimize the resource fallback process and the process by which the runtime probes for resource assemblies. For more information, see the [Optimizing the Resource Fallback Process](packaging-and-deploying-resources-in-desktop-apps.md#Optimizing) section.
+> You may be able to use the [\<relativeBindForResources>](../../framework/configure-apps/file-schema/runtime/relativebindforresources-element.md) configuration element to optimize the resource fallback process and the process by which the runtime probes for resource assemblies. For more information, see the [Optimizing the Resource Fallback Process](packaging-and-deploying-resources-in-desktop-apps.md#Optimizing) section.
 
-1. The runtime first checks the [global assembly cache](../app-domains/gac.md) for an assembly that matches the requested culture for your application.
+1. The runtime first checks the [global assembly cache](../../framework/app-domains/gac.md) for an assembly that matches the requested culture for your application.
 
      The global assembly cache can store resource assemblies that are shared by many applications. This frees you from having to include specific sets of resources in the directory structure of every application you create. If the runtime finds a reference to the assembly, it searches the assembly for the requested resource. If it finds the entry in the assembly, it uses the requested resource. If it doesn't find the entry, it continues the search.
 
@@ -102,17 +102,17 @@ For example, suppose the application requests a resource localized for Spanish (
 
 <a name="Optimizing"></a>
 
-#### Optimizing the .NET Framework Resource Fallback Process
+#### Optimize the .NET Framework resource fallback process
 
 Under the following conditions, you can optimize the process by which the runtime searches for resources in satellite assemblies
 
-- Satellite assemblies are deployed in the same location as the code assembly. If the code assembly is installed in the [Global Assembly Cache](../app-domains/gac.md), satellite assemblies are also installed in the global assembly cache. If the code assembly is installed in a directory, satellite assemblies are installed in culture-specific folders of that directory.
+- Satellite assemblies are deployed in the same location as the code assembly. If the code assembly is installed in the [Global Assembly Cache](../../framework/app-domains/gac.md), satellite assemblies are also installed in the global assembly cache. If the code assembly is installed in a directory, satellite assemblies are installed in culture-specific folders of that directory.
 
 - Satellite assemblies are not installed on demand.
 
 - Application code does not handle the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.
 
-You optimize the probe for satellite assemblies by including the [\<relativeBindForResources>](../configure-apps/file-schema/runtime/relativebindforresources-element.md) element and setting its `enabled` attribute to `true` in the application configuration file, as shown in the following example.
+You optimize the probe for satellite assemblies by including the [\<relativeBindForResources>](../../framework/configure-apps/file-schema/runtime/relativebindforresources-element.md) element and setting its `enabled` attribute to `true` in the application configuration file, as shown in the following example.
 
 ```xml
 <configuration>
@@ -122,7 +122,7 @@ You optimize the probe for satellite assemblies by including the [\<relativeBind
 </configuration>
 ```
 
-The optimized probe for satellite assemblies is an opt-in feature. That is, the runtime follows the steps documented in [The Resource Fallback Process](packaging-and-deploying-resources-in-desktop-apps.md#cpconpackagingdeployingresourcesanchor1) unless the [\<relativeBindForResources>](../configure-apps/file-schema/runtime/relativebindforresources-element.md) element is present in the application's configuration file and its `enabled` attribute is set to `true`. If this is the case, the process of probing for a satellite assembly is modified as follows:
+The optimized probe for satellite assemblies is an opt-in feature. That is, the runtime follows the steps documented in [The resource fallback process](packaging-and-deploying-resources-in-desktop-apps.md#cpconpackagingdeployingresourcesanchor1) unless the [\<relativeBindForResources>](../../framework/configure-apps/file-schema/runtime/relativebindforresources-element.md) element is present in the application's configuration file and its `enabled` attribute is set to `true`. If this is the case, the process of probing for a satellite assembly is modified as follows:
 
 - The runtime uses the location of the parent code assembly to probe for the satellite assembly. If the parent assembly is installed in the global assembly cache, the runtime probes in the cache but not in the application's directory. If the parent assembly is installed in an application directory, the runtime probes in the application directory but not in the global assembly cache.
 
@@ -164,7 +164,7 @@ The .NET Core resource fallback process involves the following steps:
 
 5. Finally, if the runtime doesn't find a resource file for a default (fallback) culture, a <xref:System.Resources.MissingManifestResourceException> or <xref:System.Resources.MissingSatelliteAssemblyException> exception is thrown to indicate that the resource could not be found. If the resource file is found but the requested resource is not present the request returns `null`.
 
-### Ultimate Fallback to Satellite Assembly
+### Ultimate fallback to satellite assembly
 
 You can optionally remove resources from the main assembly and specify that the runtime should load the ultimate fallback resources from a satellite assembly that corresponds to a specific culture. To control the fallback process, you use the <xref:System.Resources.NeutralResourcesLanguageAttribute.%23ctor%28System.String%2CSystem.Resources.UltimateResourceFallbackLocation%29> constructor and supply a value for the <xref:System.Resources.UltimateResourceFallbackLocation> parameter that specifies whether Resource Manager should extract the fallback resources from the main assembly or from a satellite assembly.
 
@@ -180,21 +180,29 @@ The second, resources,ru.txt, contains a Russian language resource.
 Greeting=Добрый день
 ```
 
-These two files are compiled to .resources files by running the [resource file generator (Resgen.exe)](../tools/resgen-exe-resource-file-generator.md) from the command line. For the French language resource, the command is:
+These two files are compiled to .resources files by running the [resource file generator (*resgen.exe*)](../../framework/tools/resgen-exe-resource-file-generator.md) from the command line. For the French language resource, the command is:
 
-**resgen.exe resources.fr.txt**
+```console
+resgen.exe resources.fr.txt
+```
 
 For the Russian language resource, the command is:
 
-**resgen.exe resources.ru.txt**
+```console
+resgen.exe resources.ru.txt
+```
 
-The .resources files are embedded into dynamic link libraries by running [assembly linker (Al.exe)](../tools/al-exe-assembly-linker.md) from the command line for the French language resource as follows:
+The .resources files are embedded into dynamic link libraries by running [assembly linker (*al.exe*)](../../framework/tools/al-exe-assembly-linker.md) from the command line for the French language resource as follows:
 
-**al /t:lib /embed:resources.fr.resources /culture:fr /out:fr\Example1.resources.dll**
+```console
+al /t:lib /embed:resources.fr.resources /culture:fr /out:fr\Example1.resources.dll
+```
 
 and for the Russian language resource as follows:
 
-**al /t:lib /embed:resources.ru.resources /culture:ru /out:ru\Example1.resources.dll**
+```console
+al /t:lib /embed:resources.ru.resources /culture:ru /out:ru\Example1.resources.dll
+```
 
 The application source code resides in a file named Example1.cs or Example1.vb. It includes the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to indicate that the default application resource is in the fr subdirectory. It instantiates the Resource Manager, retrieves the value of the `Greeting` resource, and displays it to the console.
 
@@ -221,13 +229,13 @@ When you run the example from a system whose language is anything other than Rus
 Bon jour!
 ```
 
-## Suggested Packaging Alternative
+## Suggested packaging alternative
 
 Time or budget constraints might prevent you from creating a set of resources for every subculture that your application supports. Instead, you can create a single satellite assembly for a parent culture that all related subcultures can use. For example, you can provide a single English satellite assembly (en) that is retrieved by users who request region-specific English resources, and a single German satellite assembly (de) for users who request region-specific German resources. For example, requests for German as spoken in Germany (de-DE), Austria (de-AT), and Switzerland (de-CH) would fall back to the German satellite assembly (de). The default resources are the final fallback and therefore should be the resources that will be requested by the majority of your application's users, so choose these resources carefully. This approach deploys resources that are less culturally specific, but can significantly reduce your application's localization costs.
 
 ## See also
 
-- [Resources in Desktop Apps](index.md)
-- [Global Assembly Cache](../app-domains/gac.md)
-- [Creating Resource Files](creating-resource-files-for-desktop-apps.md)
-- [Creating Satellite Assemblies](creating-satellite-assemblies-for-desktop-apps.md)
+- [Resources in Desktop Apps](resources.md)
+- [Global Assembly Cache](../../framework/app-domains/gac.md)
+- [Create resource files](create-resource-files.md)
+- [Create satellite assemblies](create-satellite-assemblies.md)

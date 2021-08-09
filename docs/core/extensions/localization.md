@@ -230,7 +230,7 @@ The sample application does not provide resource files for `"fr-CA"`, but when c
 ## See also
 
 - [Globalizing and localizing .NET applications](../../standard/globalization-localization/index.md)
-- [Packaging and Deploying resources in .NET Apps](../../framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)
+- [Package and deploy resources in .NET Apps](package-and-deploy-resources.md)
 - [`Microsoft.Extensions.Localization`](https://www.nuget.org/packages/microsoft.extensions.localization)
 - [Dependency injection in .NET](dependency-injection.md)
 - [Logging in .NET](logging.md)

@@ -12,7 +12,11 @@ Starting with .NET 5.0, the runtime can emit events through `EventPipe` with det
 ## Prerequisites
 
 - [.NET 5.0 SDK](https://dotnet.microsoft.com/download) or later versions
-- [dotnet-trace](../diagnostics/dotnet-trace.md) tool.
+- [`dotnet-trace`](../diagnostics/dotnet-trace.md) tool.
+
+> [!NOTE]
+>
+> For more details on usage of `dotnet-trace` please refer to [`dotnet-trace`](../diagnostics/dotnet-trace.md) tool documentation.  The scope of `dotnet-trace` capabilities is greater than collecting detailed assembly loading information.
 
 ## Collect a trace with assembly loading events
 

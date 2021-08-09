@@ -19,7 +19,7 @@ The `goto` statement is also useful to get out of deeply nested loops.
 
 ## Example 1
 
-The following example demonstrates using `goto` in a [switch](switch.md) statement.
+The following example demonstrates using `goto` in a [`switch` statement](../statements/selection-statements.md#the-switch-statement).
 
 [!code-csharp[csrefKeywordsJump#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#4)]
 

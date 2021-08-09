@@ -19,7 +19,7 @@ helpviewer_keywords:
 ---
 # Selection statements (C# reference)
 
-The following statements select statements to execute out of a number of possible statements based on the value of an expression:
+The following statements select statements to execute from a number of possible statements based on the value of an expression:
 
 - The [`if` statement](#the-if-statement): selects a statement to execute based on the value of a Boolean expression.
 - The [`switch` statement](#the-switch-statement): selects a statement list to execute based on a pattern match with an expression.
@@ -66,13 +66,13 @@ You can specify multiple case patterns for one section of a `switch` statement, 
 
 :::code language="csharp" source="snippets/selection-statements/SwitchStatement.cs" id="MultipleCases":::
 
-Within a `switch` statement, control cannot fall through from one switch section to the next. As the examples in this section show, typically you use the `break` statement at the end of each switch section of a `switch` statement to pass control out of a `switch` statement. You can also use the [return](../keywords/return.md) and [throw](../keywords/throw.md) statements to pass control out of a `switch` statement. To imitate the fall-through behavior and pass control to other switch section of a `switch` statement, you can use the [`goto` statement](../keywords/goto.md).
+Within a `switch` statement, control cannot fall through from one switch section to the next. As the examples in this section show, typically you use the `break` statement at the end of each switch section to pass control out of a `switch` statement. You can also use the [return](../keywords/return.md) and [throw](../keywords/throw.md) statements to pass control out of a `switch` statement. To imitate the fall-through behavior and pass control to other switch section, you can use the [`goto` statement](../keywords/goto.md).
 
 In an expression context, you can use the [`switch` expression](../operators/switch-expression.md) to evaluate a single expression from a list of candidate expressions based on a pattern match with an expression.
 
 ### Case guards
 
-A case pattern may be not expressive enough to specify the condition for the evaluation of the section of a `switch` statement. In such a case, you can use a *case guard*. That is an additional condition that must be satisfied together with a matched pattern. A case guard must be a Boolean expression. You specify a case guard after the `when` keyword that follows a pattern, as the following example shows:
+A case pattern may be not expressive enough to specify the condition for the execution of the switch section. In such a case, you can use a *case guard*. That is an additional condition that must be satisfied together with a matched pattern. A case guard must be a Boolean expression. You specify a case guard after the `when` keyword that follows a pattern, as the following example shows:
 
 :::code language="csharp" source="snippets/selection-statements/SwitchStatement.cs" id="WithCaseGuard":::
 

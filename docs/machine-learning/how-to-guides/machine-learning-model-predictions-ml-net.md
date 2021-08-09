@@ -87,7 +87,10 @@ If you access the `Score` property of the `prediction` object, you should get a 
 > [!TIP]
 > [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. Additionally, you have to create an instance of it everywhere it is needed within your application. As your application grows, this process can become unmanageable. For improved performance and thread safety, use a combination of dependency injection and the [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool%602) service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) objects for use throughout your application.
 >
-> The following link provides more information if you want to learn more about [dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection).
+> For examples on how to use the [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool%602) service, see [deploy a model to a web API](serve-model-web-api-ml-net.md) and [deploy a model to Azure Functions](serve-model-serverless-azure-functions-ml-net.md).
+>
+> See [dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection) for more information. 
+
 
 ## Multiple predictions (IDataView)
 

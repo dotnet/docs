@@ -144,7 +144,7 @@ To make multiple predictions using [PredictionEnginePool](xref:Microsoft.Extensi
 This code sample assumes you have a [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool%602) called `predictionEnginePool` and an `IEnumerable<HousingData>` called `inputs`.
 
 ```csharp
-IEnumerable<HousingOutputs> predictions = inputs.Select(input => predictionEnginePool.Predict(input));
+IEnumerable<HousingPrediction> predictions = inputs.Select(input => predictionEnginePool.Predict(input));
 ```
 
 The result is an an `IEnumerable` containing instances of your predictions. In this case, it would be `IEnumerable<HousingPrediction>`.

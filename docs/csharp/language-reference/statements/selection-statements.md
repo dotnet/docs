@@ -72,7 +72,7 @@ In an expression context, you can use the [`switch` expression](../operators/swi
 
 ### Case guards
 
-A case pattern may be not expressive enough to specify the condition for the evaluation of the section of a `switch` statement. In such a case, you can use a case guard. That is an additional condition that must be satisfied together with a matched pattern. A case guard must be a Boolean expression. You specify a case guard after the `when` keyword that follows a pattern, as the following example shows:
+A case pattern may be not expressive enough to specify the condition for the evaluation of the section of a `switch` statement. In such a case, you can use a *case guard*. That is an additional condition that must be satisfied together with a matched pattern. A case guard must be a Boolean expression. You specify a case guard after the `when` keyword that follows a pattern, as the following example shows:
 
 :::code language="csharp" source="snippets/selection-statements/SwitchStatement.cs" id="WithCaseGuard":::
 

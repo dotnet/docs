@@ -16,12 +16,12 @@ All of the example source code in this article relies on the [`Microsoft.Extensi
 
 The primary mechanism for isolating localizable strings is with **resource files**. A resource file is an XML file with the *.resx* file extension. Resource files are translated prior to the execution of the consuming application &mdash; in other words, they represent translated content at rest. A resource file name most commonly contains a locale identifier, and takes on the following form:
 
-**`{FullTypeName}[.Locale].resx`**
+**`<FullTypeName><.Locale>.resx`**
 
 Where:
 
-- The `{FullTypeName}` represents localizable resources for a specific type.
-- The optional `[.Locale]` represents the locale of the of the resource file contents.
+- The `<FullTypeName>` represents localizable resources for a specific type.
+- The optional `<.Locale>` represents the locale of the of the resource file contents.
 
 ### Specifying locales
 
@@ -143,7 +143,8 @@ In the preceding C# code:
 - The <xref:Microsoft.Extensions.Localization.RootNamespaceAttribute> sets `"Localization.Example"` as the root namespace.
 - The <xref:System.Console.OutputEncoding?displayProperty=nameWithType> is assigned to <xref:System.Text.Encoding.Unicode?displayProperty=nameWithType>.
 - When a single argument is passed to `args`, the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=nameWithType> are assigned the result of <xref:System.Globalization.CultureInfo.GetCultureInfo(System.String)?displayProperty=nameWithType> given the `arg[0]`.
-- The host is created with [defaults](generic-host.md#default-builder-settings), localization services, `MessageService`, and `ParameterizedMessageService` are all added to the `IServiceCollection` for DI.
+- The <xref:Microsoft.Extensions.Hosting.Host> is created with [defaults](generic-host.md#default-builder-settings).
+- The localization services, `MessageService`, and `ParameterizedMessageService` are registered to the `IServiceCollection` for DI.
 - To remove noise, logging is configured to ignore any log level lower than a warning.
 - The `MessageService` is resolved from the `IServiceProvider` instance and its resulting message is logged.
 - The `ParameterizedMessageService` is resolved from the `IServiceProvider` instance and its resulting formatted message is logged.
@@ -229,6 +230,7 @@ The sample application does not provide resource files for `"fr-CA"`, but when c
 ## See also
 
 - [Globalizing and localizing .NET applications](../../standard/globalization-localization/index.md)
+- [Packaging and Deploying resources in .NET Apps](../../framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)
 - [`Microsoft.Extensions.Localization`](https://www.nuget.org/packages/microsoft.extensions.localization)
 - [Dependency injection in .NET](dependency-injection.md)
 - [Logging in .NET](logging.md)

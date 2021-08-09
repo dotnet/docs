@@ -25,7 +25,7 @@ Where:
 
 ### Specifying locales
 
-The locale at a bare minimum should define the language, but it can also define the culture (dialect), and even the country. These segments are commonly delimited by the `-` character. With the added specificity of a culture, the "culture fallback" rules are applied where best matches are prioritized. The locale should map to a well-known language tag, see <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType>.
+The locale should define the language, at a bare minimum, but it can also define the culture (dialect), and even the country. These segments are commonly delimited by the `-` character. With the added specificity of a culture, the "culture fallback" rules are applied where best matches are prioritized. The locale should map to a well-known language tag. For more information, see <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType>.
 
 ### Culture fallback scenarios
 
@@ -62,22 +62,22 @@ The "culture fallback" rule will ignore locales when there are no corresponding 
 
 ### Resource lookup
 
-Resource files are automatically resolved as part of a lookup routine. If your project file name is different than the root namespace of your project, the assembly name might differ. This can prevent resource lookup from being otherwise successful. To address this mismatch, use the <xref:Microsoft.Extensions.Localization.RootNamespaceAttribute> to provide a hint to the localization services. When provided it is used during resource lookup.
+Resource files are automatically resolved as part of a lookup routine. If your project file name is different than the root namespace of your project, the assembly name might differ. This can prevent resource lookup from being otherwise successful. To address this mismatch, use the <xref:Microsoft.Extensions.Localization.RootNamespaceAttribute> to provide a hint to the localization services. When provided, it is used during resource lookup.
 
-The example project is named *example.csproj*, which creates a *example.dll* and *example.exe* &mdash; however; the `Localization.Example` namespace is used. Apply an `assembly` level attribute to correct this mismatch:
+The example project is named *example.csproj*, which creates a *example.dll* and *example.exe* &mdash; however, the `Localization.Example` namespace is used. Apply an `assembly` level attribute to correct this mismatch:
 
 :::code source="snippets/localization/example/Program.cs" range="11":::
 
 ## Register localization services
 
-To register localization services call one of the <xref:Microsoft.Extensions.DependencyInjection.LocalizationServiceCollectionExtensions.AddLocalization%2A> extension methods durning the configuration of services. This will enable dependency injection (DI), of the following types:
+To register localization services, call one of the <xref:Microsoft.Extensions.DependencyInjection.LocalizationServiceCollectionExtensions.AddLocalization%2A> extension methods during the configuration of services. This will enable dependency injection (DI) of the following types:
 
 - <xref:Microsoft.Extensions.Localization.IStringLocalizer%601?displayProperty=fullName>
 - <xref:Microsoft.Extensions.Localization.IStringLocalizerFactory?displayProperty=fullName>
 
 ### Configure localization options
 
-The <xref:Microsoft.Extensions.DependencyInjection.LocalizationServiceCollectionExtensions.AddLocalization(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Localization.LocalizationOptions})> overload, accepts a `setupAction` parameter of `Action<LocalizationOptions>` type. This allows for the configuring of localization options.
+The <xref:Microsoft.Extensions.DependencyInjection.LocalizationServiceCollectionExtensions.AddLocalization(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Localization.LocalizationOptions})> overload accepts a `setupAction` parameter of type `Action<LocalizationOptions>`. This allows you to configure localization options.
 
 ```csharp
 using IHost host = Host.CreateDefaultBuilder(args)
@@ -125,7 +125,7 @@ In the preceding C# code:
 
 - A `IStringLocalizer _localizer` field is declared.
 - The constructor takes a `IStringLocalizerFactory` parameter, which is used to create a `IStringLocalizer` from the `ParameterizedMessageService` type, and assigns it to the `_localizer` field.
-- The `GetFormattedMessage` method invokes the <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String,System.Object[])?displayProperty=nameWithType> passing `"DinnerPriceFormat"`, a `dateTime`, and the `dinnerPrice` as arguments.
+- The `GetFormattedMessage` method invokes <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String,System.Object[])?displayProperty=nameWithType>, passing `"DinnerPriceFormat"`, a `dateTime` object, and `dinnerPrice` as arguments.
 
 > [!IMPORTANT]
 > The `IStringLocalizerFactory` isn't required. Instead, it is preferred for consuming services to require the <xref:Microsoft.Extensions.Localization.IStringLocalizer%601>.
@@ -134,7 +134,7 @@ Both <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item%2A?displayPro
 
 ## Put it all together
 
-To exemplify an app using both message services, with localization and resource files consider the following *Program.cs* file:
+To exemplify an app using both message services, along with localization and resource files, consider the following *Program.cs* file:
 
 :::code source="snippets/localization/example/Program.cs":::
 
@@ -144,11 +144,11 @@ In the preceding C# code:
 - The <xref:System.Console.OutputEncoding?displayProperty=nameWithType> is assigned to <xref:System.Text.Encoding.Unicode?displayProperty=nameWithType>.
 - When a single argument is passed to `args`, the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=nameWithType> are assigned the result of <xref:System.Globalization.CultureInfo.GetCultureInfo(System.String)?displayProperty=nameWithType> given the `arg[0]`.
 - The host is created with [defaults](generic-host.md#default-builder-settings), localization services, `MessageService`, and `ParameterizedMessageService` are all added to the `IServiceCollection` for DI.
-- Logging is configured to ignore any log level lower than a warning to remove noise.
+- To remove noise, logging is configured to ignore any log level lower than a warning.
 - The `MessageService` is resolved from the `IServiceProvider` instance and its resulting message is logged.
 - The `ParameterizedMessageService` is resolved from the `IServiceProvider` instance and its resulting formatted message is logged.
 
-Each of the `*MessageService` classes, define a set of *.resx* files, each with a single entry. Here is the example content for the `MessageService` resource files, starting with *MessageService.resx*:
+Each of the `*MessageService` classes defines a set of *.resx* files, each with a single entry. Here is the example content for the `MessageService` resource files, starting with *MessageService.resx*:
 
 :::code language="xml" source="snippets/localization/example/MessageService.resx" range="1-2,120-123":::
 
@@ -173,11 +173,13 @@ Here is the example content for the `ParameterizedMessageService` resource files
 :::code language="xml" source="snippets/localization/example/ParameterizedMessageService.sr-Latn.resx" range="1-2,120-123":::
 
 > [!TIP]
-> All of the resource file XML comments, schema and `<resheader>` elements are intentionally omitted for brevity.
+> All of the resource file XML comments, schema, and `<resheader>` elements are intentionally omitted for brevity.
 
 ### Example runs
 
-The following example runs show the various localized outputs, given targeted locales &mdash; consider `"sr-Latn"`:
+The following example runs show the various localized outputs, given targeted locales.
+
+Consider `"sr-Latn"`:
 
 ```dotnetcli
 dotnet run --project .\example\example.csproj sr-Latn
@@ -210,7 +212,7 @@ warn: Localization.Example[0]
       У уторак, 03. август 2021. моја вечера је коштала 38 RSD.
 ```
 
-The sample application does not provide resource files for `"fr-CA"`, but when called with that culture, the non-locale resource files are fallen back to.
+The sample application does not provide resource files for `"fr-CA"`, but when called with that culture, the non-localized resource files are used.
 
 > [!WARNING]
 > Since the culture is found but the correct resource files are not, when formatting is applied you end up with partial localization:

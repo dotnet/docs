@@ -28,7 +28,7 @@ This will collect a trace of the specified `<pid>`, enabling the `AssemblyLoader
 
 ### Using dotnet-trace to launch a child process and trace it from startup
 
-Sometimes it may be useful to collect a trace of a process from its startup. For apps running .NET 5.0 or later, it is possible to do this by using dotnet-trace.
+Sometimes it may be useful to collect a trace of a process from its startup. For apps running .NET 5.0 or later, you can use dotnet-trace to do this.
 
 This will launch hello.exe with arg1 and arg2 as its command line arguments and collect a trace from its runtime startup:
 ```console

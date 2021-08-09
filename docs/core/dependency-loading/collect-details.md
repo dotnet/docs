@@ -26,7 +26,7 @@ dotnet-trace collect --providers Microsoft-Windows-DotNETRuntime:4 --process-id 
 
 This will collect a trace of the specified `<pid>`, enabling the `AssemblyLoader` events in the `Microsoft-Windows-DotNETRuntime` provider. The result is a `.nettrace` file.
 
-### Using dotnet-trace to launch a child process and trace it from startup
+### Use dotnet-trace to launch a child process and trace it from startup
 
 Sometimes it may be useful to collect a trace of a process from its startup. For apps running .NET 5.0 or later, you can use dotnet-trace to do this.
 

@@ -61,7 +61,7 @@ Every Azure DevOps account has a hosted pool with a single agent that can run on
 
 |Feature|GitHub|Azure Pipelines|Links|
 |-------|------|---------------|-----|
-|Hosted agents for public repos/projects|Free|[No free minutes](https://devblogs.microsoft.com/devops/change-in-azure-pipelines-grant-for-public-projects/) for public projects|[Azure Pipelines](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml&preserve-view=true#capabilities-and-limitations) [GitHub](https://github.com/features/actions)|
+|Hosted agents for public repos/projects|Free|[No free minutes](https://devblogs.microsoft.com/devops/change-in-azure-pipelines-grant-for-public-projects/) for public projects|[Azure Pipelines](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml&preserve-view=true#capabilities-and-limitations&preserve-view=false&preserve-view=false) [GitHub](https://github.com/features/actions)|
 |Hosted agents for private repos/projects|2,000 minutes free per month, 3,000 minutes for Pro and Team licenses, 50,000 minutes for Enterprise license. Additional minutes may be purchased.|One free parallel job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month. You can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours).||
 |Cross-platform|Yes|Yes||
 |Scale set agents|No|Yes| [Azure virtual machine scale set agents](/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops&preserve-view=true)|

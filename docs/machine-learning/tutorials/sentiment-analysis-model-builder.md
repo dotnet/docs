@@ -227,7 +227,7 @@ To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionE
 
 Predictions will be made inside the main page of the application. Therefore, a method that takes the user input and uses the `PredictionEnginePool` to return a prediction needs to be added.
 
-1. Open the *Index.cshtml.cs* file located in the *Pages* directory and add the following using statement:
+1. Open the *Index.cshtml.cs* file located in the *Pages* directory and add the following `using` statement:
 
     ```csharp
     using Microsoft.Extensions.ML;

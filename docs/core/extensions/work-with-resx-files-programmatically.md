@@ -43,7 +43,7 @@ The following example creates a .resx file named CarResources.resx that stores s
 > [!TIP]
 > You can also use [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) to create .resx files. At compile time, Visual Studio uses the [Resource File Generator (Resgen.exe)](../../framework/tools/resgen-exe-resource-file-generator.md) to convert the .resx file to a binary resource (.resources) file, and also embeds it in either an application assembly or a satellite assembly.
 
-You cannot embed a .resx file in a runtime executable or compile it into a satellite assembly. You must convert your .resx file into a binary resource (.resources) file by using the [Resource File Generator (Resgen.exe)](../../framework/tools/resgen-exe-resource-file-generator.md). The resulting .resources file can then be embedded in an application assembly or a satellite assembly. For more information, see [Creating Resource Files](creating-resource-files-for-desktop-apps.md).
+You cannot embed a .resx file in a runtime executable or compile it into a satellite assembly. You must convert your .resx file into a binary resource (.resources) file by using the [Resource File Generator (Resgen.exe)](../../framework/tools/resgen-exe-resource-file-generator.md). The resulting .resources file can then be embedded in an application assembly or a satellite assembly. For more information, see [Create resource files](create-resource-files.md).
 
 ## Enumerate resources
 
@@ -93,6 +93,6 @@ al resourcesFilename -out: assemblyFilename
 
 ## See also
 
-- [Creating Resource Files](creating-resource-files-for-desktop-apps.md)
-- [Resgen.exe (Resource File Generator)](../../framework/tools/resgen-exe-resource-file-generator.md)
-- [Al.exe (Assembly Linker)](../../framework/tools/al-exe-assembly-linker.md)
+- [Create resource files](create-resource-files.md)
+- [Resource file generator (*resgen.exe*))](../../framework/tools/resgen-exe-resource-file-generator.md)
+- [Assembly linker (*al.exe*)](../../framework/tools/al-exe-assembly-linker.md)

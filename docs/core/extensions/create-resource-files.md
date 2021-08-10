@@ -19,13 +19,13 @@ You can include resources, such as strings, images, or object data, in resources
 
 - Create a text file that contains string resources. You can use [Resource file generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md) to convert the text file into a binary resource (.resources) file. You can then embed the binary resource file  in an application executable or an application library by using a language compiler, or you can embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md). For more information, see the [Resources in text files](create-resource-files.md#TextFiles) section.
 
-- Create an XML resource (.resx) file that contains string, image, or object data. You can use [Resource file generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md) to convert the .resx file into a binary resource (.resources) file. You can then embed the binary resource file in an application executable or an application library by using a language compiler, or you can embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md). For more information, see the [Resources in .resx Files](creat-resource-files.md#ResxFiles) section.
+- Create an XML resource (.resx) file that contains string, image, or object data. You can use [Resource file generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md) to convert the .resx file into a binary resource (.resources) file. You can then embed the binary resource file in an application executable or an application library by using a language compiler, or you can embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md). For more information, see the [Resources in .resx Files](#ResxFiles) section.
 
 - Create an XML resource (.resx) file programmatically by using types in the <xref:System.Resources> namespace. You can create a .resx file, enumerate its resources, and retrieve specific resources by name. For more information, see [Working with .resx Files Programmatically](work-with-resx-files-programmatically.md).
 
 - Create a binary resource (.resources) file programmatically. You can then embed the file in an application executable or an application library by using a language compiler, or you can embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md). For more information, see the [Resources in .resources Files](create-resource-files.md#ResourcesFiles) section.
 
-- Use [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) to create a resource file and include it in your project. Visual Studio provides a resource editor that lets you add, delete, and modify resources. At compile time, the resource file is automatically converted to a binary .resources file and embedded in an application assembly or satellite assembly. For more information, see the [Resource Files in Visual Studio](create-resource-files.md#VSResFiles) section.
+- Use [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) to create a resource file and include it in your project. Visual Studio provides a resource editor that lets you add, delete, and modify resources. At compile time, the resource file is automatically converted to a binary .resources file and embedded in an application assembly or satellite assembly. For more information, see the [Resource files in Visual Studio](#VSResFiles) section.
 
 <a name="TextFiles"></a>
 
@@ -169,7 +169,7 @@ csc greeting.cs -resource:GreetingResources.resources
 ```
 
 > [!IMPORTANT]
-> Because .resx files must consist of well-formed XML in a predefined format, we do not recommend working with .resx files manually, particularly when the .resx files contain resources other than strings. Instead, [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) provides a transparent interface for creating and manipulating .resx files. For more information, see the [Resource files in Visual Studio](create-resource-files-for-desktop-apps.md#VSResFiles) section. You can also create and manipulate .resx files programmatically. For more information, see [Work with .resx files programmatically](work-with-resx-files-programmatically.md).
+> Because .resx files must consist of well-formed XML in a predefined format, we do not recommend working with .resx files manually, particularly when the .resx files contain resources other than strings. Instead, [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) provides a transparent interface for creating and manipulating .resx files. For more information, see the [Resource files in Visual Studio](#VSResFiles) section. You can also create and manipulate .resx files programmatically. For more information, see [Work with .resx files programmatically](work-with-resx-files-programmatically.md).
 
 <a name="ResourcesFiles"></a>
 
@@ -188,8 +188,8 @@ You can use the <xref:System.Resources.ResourceWriter?displayProperty=nameWithTy
 
  The following example programmatically creates a .resources file named CarResources.resources that stores six strings, an icon, and two application-defined objects (two `Automobile` objects). The `Automobile` class, which is defined and instantiated in the example, is tagged with the <xref:System.SerializableAttribute> attribute, which allows it to be persisted by the binary serialization formatter.
 
- [!code-csharp[Conceptual.Resources.Resources#1](../../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.resources/cs/resources1.cs#1)]
- [!code-vb[Conceptual.Resources.Resources#1](../../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.resources/vb/resources1.vb#1)]
+[!code-csharp[Conceptual.Resources.Resources#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.resources/cs/resources1.cs#1)]
+[!code-vb[Conceptual.Resources.Resources#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.resources/vb/resources1.vb#1)]
 
  After you create the .resources file, you can embed it in a run-time executable or library by including the language compiler's `/resource` switch, or embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md).
 

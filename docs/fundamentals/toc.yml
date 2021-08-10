@@ -2110,19 +2110,19 @@ items:
   - name: Resources in .NET apps
     items:
     - name: Overview
-      href: resources.md
+      href: ../core/extensions/resources.md
     - name: Create resource files
       items:
       - name: Overview
-        href: create-resource-files.md
+        href: ../core/extensions/create-resource-files.md
       - name: Work with .resx files programmatically
-        href: work-with-resx-files-programmatically.md
+        href: ../core/extensions/work-with-resx-files-programmatically.md
     - name: Create satellite assemblies
-      href: creating-satellite-assemblies-for-desktop-apps.md
+      href: ../core/extensions/creating-satellite-assemblies-for-desktop-apps.md
     - name: Package and deploy resources
-      href: package-and-deploy-resources.md
+      href: ../core/extensions/package-and-deploy-resources.md
     - name: Retrieve resources
-      href: retrieve-resources.md
+      href: ../core/extensions/retrieve-resources.md
   - name: Localization in .NET
     href: ../core/extensions/localization.md
   - name: Worker Services

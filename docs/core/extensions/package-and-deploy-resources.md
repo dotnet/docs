@@ -51,8 +51,8 @@ When you package your application's resources, you must name them using the reso
 > [!NOTE]
 > There are some exceptions for the two-letter culture names, such as `zh-Hans` for Chinese (Simplified).
 
-> [!NOTE]
-> For information about creating resource files, see [Creating Resource Files](creating-resource-files-for-desktop-apps.md) and [Creating Satellite Assemblies](creating-satellite-assemblies-for-desktop-apps.md).
+> [!TIP]
+> For information about creating resource files, see [Create resource files](create-resource-files.md) and [Create satellite assemblies](creatie-satellite-assemblies.md).
 
 <a name="cpconpackagingdeployingresourcesanchor1"></a>
 
@@ -67,7 +67,7 @@ To improve lookup performance, apply the <xref:System.Resources.NeutralResources
 The .NET Framework resource fallback process involves the following steps:
 
 > [!TIP]
-> You may be able to use the [\<relativeBindForResources>](../../framework/configure-apps/file-schema/runtime/relativebindforresources-element.md) configuration element to optimize the resource fallback process and the process by which the runtime probes for resource assemblies. For more information, see the [Optimizing the Resource Fallback Process](packaging-and-deploying-resources-in-desktop-apps.md#Optimizing) section.
+> You may be able to use the [\<relativeBindForResources>](../../framework/configure-apps/file-schema/runtime/relativebindforresources-element.md) configuration element to optimize the resource fallback process and the process by which the runtime probes for resource assemblies. For more information, see [Optimizing the resource fallback process](#Optimizing).
 
 1. The runtime first checks the [global assembly cache](../../framework/app-domains/gac.md) for an assembly that matches the requested culture for your application.
 
@@ -122,7 +122,7 @@ You optimize the probe for satellite assemblies by including the [\<relativeBind
 </configuration>
 ```
 
-The optimized probe for satellite assemblies is an opt-in feature. That is, the runtime follows the steps documented in [The resource fallback process](packaging-and-deploying-resources-in-desktop-apps.md#cpconpackagingdeployingresourcesanchor1) unless the [\<relativeBindForResources>](../../framework/configure-apps/file-schema/runtime/relativebindforresources-element.md) element is present in the application's configuration file and its `enabled` attribute is set to `true`. If this is the case, the process of probing for a satellite assembly is modified as follows:
+The optimized probe for satellite assemblies is an opt-in feature. That is, the runtime follows the steps documented in [The resource fallback process](#cpconpackagingdeployingresourcesanchor1) unless the [\<relativeBindForResources>](../../framework/configure-apps/file-schema/runtime/relativebindforresources-element.md) element is present in the application's configuration file and its `enabled` attribute is set to `true`. If this is the case, the process of probing for a satellite assembly is modified as follows:
 
 - The runtime uses the location of the parent code assembly to probe for the satellite assembly. If the parent assembly is installed in the global assembly cache, the runtime probes in the cache but not in the application's directory. If the parent assembly is installed in an application directory, the runtime probes in the application directory but not in the global assembly cache.
 

@@ -194,7 +194,7 @@ sn –R StringLibrary.resources.dll RealKeyPair.snk
 
 ### Install a satellite assembly in the Global Assembly Cache
 
-When the runtime searches for resources in the resource fallback process, it looks in the [global assembly cache](../app-domains/gac.md) first. (For more information, see the "Resource Fallback Process" section of the [Package and deploy resources](package-and-deploy-resources.md) topic.) As soon as a satellite assembly is signed with a strong name, it can be installed in the global assembly cache by using the [Global Assembly Cache Tool (Gacutil.exe)](../../framework/tools/gacutil-exe-gac-tool.md).
+When the runtime searches for resources in the resource fallback process, it looks in the [global assembly cache](../../framework/app-domains/gac.md) first. (For more information, see the "Resource Fallback Process" section of the [Package and deploy resources](package-and-deploy-resources.md) topic.) As soon as a satellite assembly is signed with a strong name, it can be installed in the global assembly cache by using the [Global Assembly Cache tool (*gacutil.exe*)](../../framework/tools/gacutil-exe-gac-tool.md).
 
 The following *Gacutil.exe* command installs *StringLibrary.resources.dll** in the global assembly cache:
 

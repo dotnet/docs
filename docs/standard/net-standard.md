@@ -30,7 +30,7 @@ To find the highest version of .NET Standard that you can target, do the followi
 
 We recommend you target .NET Standard 2.0, unless you need to support an earlier version. Most general-purpose libraries should not need APIs outside of .NET Standard 2.0. .NET Standard 2.0 is supported by all modern platforms and is the recommended way to support multiple platforms with one target.
 
-If you need to support .NET Standard 1.x, we recommend that you *also* target .NET Standard 2.0. .NET Standard 1.x is distributed as a granular set of NuGet packages, which creates a large package dependency graph and results in developers downloading a lot of packages when building. Modern .NET implementations support .NET Standard 2.0. You should only target .NET Standard 1.x if you specifically need to target an older platform. For more information, see [Cross-platform targeting](library-guidance/cross-platform-targeting.md) and [.NET 5 and .NET Standard](#net-5-and-net-standard) later in this article.
+If you need to support .NET Standard 1.x, we recommend that you *also* target .NET Standard 2.0. .NET Standard 1.x is distributed as a granular set of NuGet packages, which creates a large package dependency graph and results in developers downloading a lot of packages when building. For more information, see [Cross-platform targeting](library-guidance/cross-platform-targeting.md) and [.NET 5 and .NET Standard](#net-5-and-net-standard) later in this article.
 
 ### .NET Standard versioning rules
 

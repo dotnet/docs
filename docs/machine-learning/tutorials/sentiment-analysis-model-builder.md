@@ -48,7 +48,7 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
         ![Create an ASP.NET Core project](./media/sentiment-analysis-model-builder/asp-net-core-selection.png#lightbox)
 
     1. In the **Name** text box, type "SentimentRazor".
-    1. Make sure **Place solution and project in the same directory** is **unchecked** (VS 2019).
+    1. Make sure **Place solution and project in the same directory** is **unchecked**.
     1. Click the **Create** button to accept the default additional information and to create the project.
 
 ## Prepare and understand the data

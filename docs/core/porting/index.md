@@ -158,5 +158,4 @@ When porting your application to .NET, consider the following suggestions in ord
 - [ASP.NET to ASP.NET Core migration](/aspnet/core/migration/proper-to-2x)
 - [Migrate .NET Framework WPF apps to .NET](/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0&preserve-view=true)
 - [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true)
-- [Port .NET Framework libraries to .NET](libraries.md)
 - [.NET 5 vs. .NET Framework for server apps](../../standard/choosing-core-framework-server.md)

@@ -97,4 +97,3 @@ You may have a dependency that isn't a NuGet package, such as a DLL in the file 
 ## Next steps
 
 - [Overview of porting from .NET Framework to .NET](index.md)
-- [Port libraries](libraries.md)

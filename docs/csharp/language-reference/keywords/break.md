@@ -11,7 +11,7 @@ ms.assetid: be2571ed-efb0-4965-b122-81e5b09db0b9
 ---
 # break (C# Reference)
 
-The `break` statement terminates the closest enclosing loop or [switch](./switch.md) statement in which it appears. Control is passed to the statement that follows the terminated statement, if any.
+The `break` statement terminates the closest enclosing loop or [`switch` statement](../statements/selection-statements.md#the-switch-statement) in which it appears. Control is passed to the statement that follows the terminated statement, if any.
 
 ## Example 1
 
@@ -21,7 +21,7 @@ In this example, the conditional statement contains a counter that is supposed t
 
 ## Example 2
 
-This example demonstrates the use of `break` in a [switch](./switch.md) statement.
+This example demonstrates the use of `break` in a `switch` statement.
 
 [!code-csharp[csrefKeywordsJump#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#2)]
 
@@ -40,7 +40,7 @@ In this example, the `break` statement is used to break out of an inner nested l
 
 ## Example 4
 
-In this example, the `break` statement is only used to break out of the current branch during each iteration of the loop. The loop itself is unaffected by the instances of `break` that belong to the nested [switch](./switch.md) statement.
+In this example, the `break` statement is only used to break out of the current branch during each iteration of the loop. The loop itself is unaffected by the instances of `break` that belong to the nested `switch` statement.
 
 [!code-csharp[csrefKeywordsJump#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#8)]
 
@@ -53,4 +53,4 @@ In this example, the `break` statement is only used to break out of the current 
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
-- [switch](./switch.md)
+- [`switch` statement](../statements/selection-statements.md#the-switch-statement)

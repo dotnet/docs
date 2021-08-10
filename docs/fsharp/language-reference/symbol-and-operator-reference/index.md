@@ -7,12 +7,12 @@ fl_keywords:
 ---
 # Symbol and operator reference
 
-This article includes tables describing the symbols and operators that are used in the F# language. Some symbols
+This article includes tables describing the symbols and operators that are used in the F# language  and provides a brief description of each. Some symbols
 and operators have two or more entries when used in multiple roles.
 
 ## Comment, compiler directive and attribute symbols
 
-The following table describes symbols related to comments, compiler directives and attributes and provides a brief description of each.
+The following table describes symbols related to comments, compiler directives and attributes.
 
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
@@ -24,12 +24,13 @@ The following table describes symbols related to comments, compiler directives a
 
 ## String and identifier symbols
 
-The following table describes symbols related to strings and provides a brief description of each.
+The following table describes symbols related to strings.
 
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
-|`"`|[Literals](../literals.md)<br /><br />[Strings](../strings.md)|<ul><li>Delimits a text string.<br /></li></ul>|
-|`"""`|[Strings](../strings.md)|Delimits a verbatim text string. Differs from `@"..."` in that a you can indicate a quotation mark character by using a single quote in the string.|
+|`"`|[Strings](../strings.md)|<ul><li>Delimits a text string.<br /></li></ul>|
+|`@"`|[Strings](../strings.md)|Starts a verbatim text string, which may include backslashes and other characters.|
+|`"""`|[Strings](../strings.md)|Delimits a triple-quoted text string, which may include backslashes, double quotation marks and other characters.|
 |`$"`|[Interpolated Strings](../interpolated-strings.md)|Starts an interpolated string.|
 |`'`|[Literals](../literals.md)|<ul><li>Delimits a single-character literal.<br /></li></ul>|
 |<code>&#96;&#96;...&#96;&#96;</code>||<ul><li>Delimits an identifier that would otherwise not be a legal identifier, such as a language keyword.<br /></li></ul>|
@@ -37,7 +38,7 @@ The following table describes symbols related to strings and provides a brief de
 
 ## Arithmetic operators
 
-The following table describes the arithmetic operators in the F# language and provides a brief description of each.
+The following table describes the arithmetic operators.
 
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
@@ -50,7 +51,7 @@ The following table describes the arithmetic operators in the F# language and pr
 
 ## Comparison operators
 
-The following table describes the comparison operators in the F# language and provides a brief description of each.
+The following table describes the comparison operators.
 
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
@@ -63,7 +64,7 @@ The following table describes the comparison operators in the F# language and pr
 
 ## Boolean operators
 
-The following table describes the arithmetic and boolean operators symbols used in the F# language and provides a brief description of each.
+The following table describes the arithmetic and boolean operators symbols.
 
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
@@ -72,7 +73,7 @@ The following table describes the arithmetic and boolean operators symbols used 
 
 ## Bitwise operators
 
-The following table describes bitwise operators used in the F# language and provides a brief description of each.
+The following table describes bitwise operators.
 
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
@@ -85,7 +86,7 @@ The following table describes bitwise operators used in the F# language and prov
 
 ## Function symbols and operators
 
-The following table describes the operators and symbols related to functions used in the F# language and provides a brief description of each.
+The following table describes the operators and symbols related to functions.
 
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
@@ -101,7 +102,7 @@ The following table describes the operators and symbols related to functions use
 
 ## Type symbols and operators
 
-The following table describes symbols related to type annotation and type tests used in the F# language and provides a brief description of each.
+The following table describes symbols related to type annotation and type tests.
 
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
@@ -115,59 +116,49 @@ The following table describes symbols related to type annotation and type tests 
 |`<...>`|[Automatic Generalization](../generics/automatic-generalization.md)|<ul><li>Delimits type parameters.<br /></li></ul>|
 |`^`|[Statically Resolved Type Parameters](../generics/statically-resolved-type-parameters.md)<br /><br />[Strings](../strings.md)|<ul><li>Specifies type parameters that must be resolved at compile time, not at runtime.<br /></li><li>Concatenates strings.<br /></li></ul>|
 
-## Tuple, list, array, unit value symbols and operators
+## Symbols used in member lookup and slice expressions
 
-The following table describes symbols related to tuples, lists, unit values and arrays and provides a brief description of each.
+The following table describes additional symbols used in member lookup and slice expressions.
+
+|Symbol or operator|Links|Description|
+|------------------|-----|-----------|
+|`.`|[Members](../members/index.md)|<ul><li>Accesses a member, and separates individual names in a fully qualified name.<br /></li></ul>|
+|`.[...]`|[Arrays](../arrays.md)<br /><br />[Indexed Properties](../members/indexed-properties.md)<br /><br />[Slice Expressions](../slices.md)|<ul><li>Indexes into an array, string or collection, or takes a slice of a collection.<br /></li></ul>|
+
+## Symbols used in tuple, list, array, unit expressions and patterns
+
+The following table describes symbols related to tuples, lists, unit values and arrays.
 
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
 |`( )`|[Unit Type](../unit-type.md)|<ul><li>Represents the single value of the unit type.<br /></li></ul>|
-|`(...)`|[Tuples](../tuples.md)<br /><br />[Operator Overloading](../operator-overloading.md)|<ul><li>Indicates the order in which expressions are evaluated.<br /></li><li>Delimits a tuple.<br /></li><li>Used in operator definitions.<br /></li></ul>|
-|<code>(&#124;...&#124;)</code>|[Active Patterns](../active-patterns.md)|<ul><li>Delimits an active pattern name. Also called *banana clips*.<br /></li></ul>|
 |`,`|[Tuples](../tuples.md)|<ul><li>Separates the elements of a tuple, or type parameters.<br /></li></ul>|
 |`::`|[Lists](../lists.md)<br /><br />[Match Expressions](../match-expressions.md)|<ul><li>Creates a list. The element on the left side is prepended to the list on the right side.<br /></li><li>Used in pattern matching to separate the parts of a list.<br /></li></ul>|
-|`@`|[Lists](../lists.md)<br /><br />[Strings](../strings.md)|<ul><li>Concatenates two lists.<br /></li><li>When placed before a string literal, indicates that the string is to be interpreted verbatim, with no interpretation of escape characters.<br /></li></ul>|
+|`@`|[Lists](../lists.md)|<ul><li>Concatenates two lists.<br /></li></ul>|
 |`[...]`|[Lists](../lists.md)|<ul><li>Delimits the elements of a list.<br /></li></ul>|
 |<code>[&#124;...&#124;]</code>|[Arrays](../arrays.md)|<ul><li>Delimits the elements of an array.<br /></li></ul>|
 
-## Reference cell operators
+## Symbols used in imperative expressions
 
-The following table describes symbols related to reference cells and provides a brief description of each.
-
-|Symbol or operator|Links|Description|
-|------------------|-----|-----------|
-|`!`|[Reference Cells](../reference-cells.md)|<ul><li>Dereferences a reference cell.<br /></li></ul>|
-|`:=`|[Reference Cells](../reference-cells.md)|<ul><li>Assigns a value to a reference cell.<br /></li></ul>|
-
-## Symbols used in quotations
-
-The following table describes symbols related to quotations.
+The following table describes additional symbols used in expressions.
 
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
-|`<@...@>`|[Code Quotations](../code-quotations.md)|<ul><li>Delimits a typed code quotation.<br /></li></ul>|
-|`<@@...@@>`|[Code Quotations](../code-quotations.md)|<ul><li>Delimits an untyped code quotation.<br /></li></ul>|
-|`%`|[Code Quotations](../code-quotations.md)|<ul><li>Used for splicing expressions into typed code quotations.<br /></li></ul>|
-|`%%`|[Code Quotations](../code-quotations.md)|<ul><li>Used for splicing expressions into untyped code quotations.<br /></li></ul>|
-
-## Additional symbols used in expressions
-
-The following table describes additional symbols used in expressions
-
-|Symbol or operator|Links|Description|
-|------------------|-----|-----------|
-|`.`|[Members](../members/index.md)<br /><br />[Primitive Types](../basic-types.md)|<ul><li>Accesses a member, and separates individual names in a fully qualified name.<br /></li><li>Specifies a decimal point in floating point numbers.<br /></li></ul>|
-|`.[...]`|[Arrays](../arrays.md)|<ul><li>Accesses an array element.<br /></li></ul>|
 |`<-`|[Values](../values/index.md)|<ul><li>Assigns a value to a variable.<br /></li></ul>|
-|`?`||<ul><li>Used as an operator for dynamic method and property calls. You must provide your own implementation.<br /></li></ul>|
-|`? ... <- ...`||<ul><li>Used as an operator for setting dynamic properties. You must provide your own implementation.<br /></li></ul>|
-|`;`|[Verbose Syntax](../verbose-syntax.md)<br /><br />[Lists](../lists.md)<br /><br />[Records](../records.md)|<ul><li>Separates expressions (used mostly in verbose syntax).<br /></li><li>Separates elements of a list.<br /></li><li>Separates fields of a record.<br /></li></ul>|
+|`;`|[Verbose Syntax](../verbose-syntax.md)<br /><br />|<ul><li>Separates expressions (used mostly in verbose syntax). Also separates elements of a list or fields of a record.<br /></li></ul>|
+
+## Additional symbols used in sequences and computation expressions
+
+The following table describes additional symbols used in [Sequences](../sequences.md) and [Computation Expressions](../computation-expressions.md).
+
+|Symbol or operator|Links|Description|
+|------------------|-----|-----------|
 |`->`|[Sequences](../sequences.md)|<ul><li>Yields an expression (in sequence expressions); equivalent to the `do yield` keywords.<br /></li></ul>|
-|`!`|[Computation Expressions](../computation-expressions.md)|<ul><li>After a keyword, indicates a modified version of the keyword's behavior as controlled by a workflow.<br /></li></ul>|
+|`!`|[Computation Expressions](../computation-expressions.md)|<ul><li>After a keyword, indicates a modified version of the keyword's behavior as controlled by a computation expression.<br /></li></ul>|
 
 ## Additional symbols used in match patterns
 
-The following table describes symbols related to pattern matching and provides a brief description of each.
+The following table describes symbols related to pattern matching.
 
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
@@ -182,14 +173,45 @@ The following table describes symbols related to declarations.
 
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
+|<code>(&#124;...&#124;)</code>|[Active Patterns](../active-patterns.md)|<ul><li>Delimits an active pattern name. Also called *banana clips*.<br /></li></ul>|
 |`?`|[Parameters and Arguments](../parameters-and-arguments.md)|<ul><li>Specifies an optional argument.<br /></li></ul>|
 |`~~`|[Operator Overloading](../operator-overloading.md)|<ul><li>Used to declare an overload for the unary negation operator.<br /></li></ul>|
 |`~-`|[Operator Overloading](../operator-overloading.md)|<ul><li>Used to declare an overload for the unary minus operator.<br /></li></ul>|
 |`~+`|[Operator Overloading](../operator-overloading.md)|<ul><li>Used to declare an overload for the unary plus operator.<br /></li></ul>|
 
+## Additional symbols used in quotations
+
+The following table describes symbols related to [Code Quotations](../code-quotations.md).
+
+|Symbol or operator|Links|Description|
+|------------------|-----|-----------|
+|`<@...@>`|[Code Quotations](../code-quotations.md)|<ul><li>Delimits a typed code quotation.<br /></li></ul>|
+|`<@@...@@>`|[Code Quotations](../code-quotations.md)|<ul><li>Delimits an untyped code quotation.<br /></li></ul>|
+|`%`|[Code Quotations](../code-quotations.md)|<ul><li>Used for splicing expressions into typed code quotations.<br /></li></ul>|
+|`%%`|[Code Quotations](../code-quotations.md)|<ul><li>Used for splicing expressions into untyped code quotations.<br /></li></ul>|
+
+## Additional symbols used in dynamic lookup expressions
+
+The following table describes additional symbols used in dynamic lookup expressions. They are not generally used in routine F# programming
+and no implementations of these operator are provided in the F# core library.
+
+|Symbol or operator|Links|Description|
+|------------------|-----|-----------|
+|`?`||<ul><li>Used as an operator for dynamic method and property calls.<br /></li></ul>|
+|`? ... <- ...`||<ul><li>Used as an operator for setting dynamic properties.<br /></li></ul>|
+
+## Reference cell operators
+
+The following table describes symbols related to [Reference Cells](../reference-cells.md).
+
+|Symbol or operator|Links|Description|
+|------------------|-----|-----------|
+|`!`|[Reference Cells](../reference-cells.md)|<ul><li>Dereferences a reference cell.<br /></li></ul>|
+|`:=`|[Reference Cells](../reference-cells.md)|<ul><li>Assigns a value to a reference cell.<br /></li></ul>|
+
 ## Nullable operators
 
-[Nullable Operators](nullable-operators.md) are defined for use in F# queries. The following table shows these operators.
+[Nullable Operators](nullable-operators.md) are defined for use in [Query Expressions](../query-expressions.md). The following table shows these operators.
 
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|

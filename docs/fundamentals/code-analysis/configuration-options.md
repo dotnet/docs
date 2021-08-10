@@ -66,23 +66,31 @@ The following table shows the different rule severities that you can configure f
 
 #### Scope
 
-To set the rule severity for a single rule, use the following syntax.
+- **Single rule**
 
-```ini
-dotnet_diagnostic.<rule ID>.severity = <severity value>
-```
+  To set the rule severity for a single rule, use the following syntax.
 
-To set the default rule severity for a [category of rules](categories.md), use the following syntax. The category for each rule is provided in the individual rule reference pages, for example, [CA1000](quality-rules/ca1000.md).
+  ```ini
+  dotnet_diagnostic.<rule ID>.severity = <severity value>
+  ```
 
-```ini
-dotnet_analyzer_diagnostic.category-<rule category>.severity = <severity value>
-```
+- **Category of rules**
 
-To set the default rule severity for all analyzer rules, use the following syntax.
+  To set the default rule severity for a category of rules, use the following syntax.
 
-```ini
-dotnet_analyzer_diagnostic.severity = <severity value>
-```
+  ```ini
+  dotnet_analyzer_diagnostic.category-<rule category>.severity = <severity value>
+  ```
+
+  The different categories are described at [Rule categories](categories.md). In addition, you can find the category for a specific rule on its reference page, for example, [CA1000](quality-rules/ca1000.md).
+
+- **All rules**
+
+  To set the default rule severity for all analyzer rules, use the following syntax.
+
+  ```ini
+  dotnet_analyzer_diagnostic.severity = <severity value>
+  ```
 
 > [!IMPORTANT]
 > When you configure the severity level for multiple rules with a single entry, either for a *category* of rules or for *all* rules, the severity only applies to rules that are [enabled by default](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). To enable rules that are disabled by default, you must either:

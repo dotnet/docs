@@ -524,19 +524,16 @@ The `EnableDefaultNoneItems` property controls whether `None` items (files that 
 The following MSBuild properties are documented in this section:
 
 - [AnalysisLevel](#analysislevel)
+- [AnalysisLevel\<Category>](#analysislevelcategory)
 - [AnalysisMode](#analysismode)
+- [AnalysisMode\<Category>](#analysismodecategory)
 - [CodeAnalysisTreatWarningsAsErrors](#codeanalysistreatwarningsaserrors)
 - [EnableNETAnalyzers](#enablenetanalyzers)
 - [EnforceCodeStyleInBuild](#enforcecodestyleinbuild)
 
 ### AnalysisLevel
 
-The `AnalysisLevel` property lets you specify a code-analysis level. For example, if you want access to preview code analyzers, set `AnalysisLevel` to `preview`.
-
-Default value:
-
-- If your project targets .NET 5.0 or later, or if you've added the [AnalysisMode](#analysismode) property, the default value is `latest`.
-- Otherwise, this property is omitted unless you explicitly add it to the project file.
+The `AnalysisLevel` property lets you specify a version of code analyzers. For example, if you want access to preview code analyzers, set `AnalysisLevel` to `preview`.
 
 ```xml
 <PropertyGroup>
@@ -544,17 +541,73 @@ Default value:
 </PropertyGroup>
 ```
 
-The following table shows the available options.
+Optionally, starting in .NET 6, you can specify a compound value for this property that also specifies how aggressively to enable rules. Compound values take the form `<level>-<mode>`, where the `<mode>` value is one of the [AnalysisMode](#analysismode) values. The following example uses the preview version of code analyzers, and enables the recommended set of rules.
+
+```xml
+<PropertyGroup>
+  <AnalysisLevel>preview-recommended</AnalysisLevel>
+</PropertyGroup>
+```
+
+Default value:
+
+- If your project targets .NET 5 or later, or if you've added the [AnalysisMode](#analysismode) property, the default value is `latest`.
+- Otherwise, this property is omitted unless you explicitly add it to the project file.
+
+The following table shows the values you can specify.
 
 | Value | Meaning |
 |-|-|
 | `latest` | The latest code analyzers that have been released are used. This is the default. |
+| `latest-<mode>` | The latest code analyzers that have been released are used. The `<mode>` value determines which rules are enabled. |
 | `preview` | The latest code analyzers are used, even if they are in preview. |
-| `5.0` | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
-| `5` | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
+| `preview-<mode>` | The latest code analyzers are used, even if they are in preview. The `<mode>` value determines which rules are enabled. |
+| `6.0` | The set of code analyzers that was available for the .NET 6 release is used, even if newer code analyzers are available. |
+| `6.0-<mode>` | The set of code analyzers that was available for the .NET 6 release is used, even if newer code analyzers are available. The `<mode>` value determines which rules are enabled. |
+| `6` | The set of code analyzers that was available for the .NET 6 release is used, even if newer code analyzers are available. |
+| `6-<mode>` | The set of code analyzers that was available for the .NET 6 release is used, even if newer code analyzers are available. The `<mode>` value determines which rules are enabled. |
+| `5.0` | The set of code analyzers that was available for the .NET 5 release is used, even if newer code analyzers are available. |
+| `5.0-<mode>` | The set of code analyzers that was available for the .NET 5 release is used, even if newer code analyzers are available. The `<mode>` value determines which rules are enabled. |
+| `5` | The set of code analyzers that was available for the .NET 5 release is used, even if newer code analyzers are available. |
+| `5-<mode>` | The set of code analyzers that was available for the .NET 5 release is used, even if newer code analyzers are available. The `<mode>` value determines which rules are enabled. |
 
 > [!NOTE]
-> This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
+>
+> - In .NET 5 and earlier versions, this property only affects [code-quality (CAXXXX) rules](../../fundamentals/code-analysis/quality-rules/index.md). Starting in .NET 6, if [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) is set to `true`, this property also affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md).
+> - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
+
+### AnalysisLevel\<Category>
+
+This property is the same as [AnalysisLevel](#analysislevel), except that it only applies to a specific [category of code-analysis rules](../../fundamentals/code-analysis/categories.md). This property allows you to use a different version of code analyzers for a specific category, or to enable or disable rules at a different level to the other rule categories. If you omit this property for a particular category of rules, it defaults to the [AnalysisLevel](#analysislevel) value. The available values are the same as those for [AnalysisLevel](#analysislevel).
+
+```xml
+<PropertyGroup>
+  <AnalysisLevelSecurity>preview</AnalysisLevelSecurity>
+</PropertyGroup>
+```
+
+```xml
+<PropertyGroup>
+  <AnalysisLevelSecurity>preview-recommended</AnalysisLevelSecurity>
+</PropertyGroup>
+```
+
+The following table lists the property name for each rule category.
+
+| Property name | Rule category |
+| - |
+| `<AnalysisLevelDesign>` | Design rules |
+| `<AnalysisLevelDocumentation>` | Documentation rules |
+| `<AnalysisLevelGlobalization>` | Globalization rules |
+| `<AnalysisLevelInteroperability>` | Portability an interoperability rules |
+| `<AnalysisLevelMaintainability>` | Maintainability rules |
+| `<AnalysisLevelNaming>` | Naming rules |
+| `<AnalysisLevelPerformance>` | Performance rules |
+| `<AnalysisLevelSingleFile>` | Single-file application rules |
+| `<AnalysisLevelReliability>` | Reliability rules |
+| `<AnalysisLevelSecurity>` | Security rules |
+| `<AnalysisLevelStyle>` | All code-style (IDEXXXX) rules |
+| `<AnalysisLevelUsage>` | Usage rules |
 
 ### AnalysisMode
 
@@ -562,20 +615,56 @@ Starting with .NET 5.0, the .NET SDK ships with all of the ["CA" code quality ru
 
 ```xml
 <PropertyGroup>
-  <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+  <AnalysisMode>All</AnalysisMode>
 </PropertyGroup>
 ```
 
 The following table shows the available options.
 
-| Value | Meaning |
+none, default, minimum, recommended, all
+
+| Value | Introduced | Meaning |
 |-|-|
-| `Default` | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. |
-| `AllEnabledByDefault` | Aggressive or opt-out mode, where all rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. |
-| `AllDisabledByDefault` | Conservative or opt-in mode, where all rules are disabled by default. You can selectively [opt into](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them. |
+| `All` | .NET 6 | Aggressive or opt-out mode, where all rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them.<br />This value replaces `AllEnabledByDefault` in .NET 6. |
+| `Default` | .NET 5 | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. |
+| `Minimum` | .NET 6 | More aggressive mode than the `Default` mode. Certain IDE code-style suggestions that are highly recommended for build enforcement (for example, file header analyzer) are enabled as build warnings. |
+| `None` | .NET 6 | Conservative or opt-in mode, where all rules are disabled by default. You can selectively [opt into](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them.<br />This value replaces `AllDisabledByDefault` in .NET 6. |
+| `Recommended` | .NET 6 | More aggressive mode than the `Minimum` mode, where more IDE code-style rules are enabled as build warnings. |
+| `AllEnabledByDefault` (deprecated) | .NET 5 | Aggressive or opt-out mode, where all rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. |
+| `AllDisabledByDefault` (deprecated) | .NET 5 | Conservative or opt-in mode, where all rules are disabled by default. You can selectively [opt into](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them. |
 
 > [!NOTE]
-> This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
+>
+> - In .NET 5 and earlier versions, this property only affects [code-quality (CAXXXX) rules](../../fundamentals/code-analysis/quality-rules/index.md). Starting in .NET 6, if [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) is set to `true`, this property also affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md).
+> - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>5-recommended</AnalysisLevel>`, you can omit this property entirely.
+> - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
+
+### AnalysisMode<Category>
+
+This property is the same as [AnalysisMode](#analysismode), except that it only applies to a specific [category of code-analysis rules](../../fundamentals/code-analysis/categories.md). This property allows you to enable or disable rules at a different level to the other rule categories. If you omit this property for a particular category of rules, it defaults to the [AnalysisMode](#analysismode) value. The available values are the same as those for [AnalysisMode](#analysismode).
+
+```xml
+<PropertyGroup>
+  <AnalysisModeSecurity>All</AnalysisModeSecurity>
+</PropertyGroup>
+```
+
+The following table lists the property name for each rule category.
+
+| Property name | Rule category |
+| - |
+| `<AnalysisModeDesign>` | Design rules |
+| `<AnalysisModeDocumentation>` | Documentation rules |
+| `<AnalysisModeGlobalization>` | Globalization rules |
+| `<AnalysisModeInteroperability>` | Portability an interoperability rules |
+| `<AnalysisModeMaintainability>` | Maintainability rules |
+| `<AnalysisModeNaming>` | Naming rules |
+| `<AnalysisModePerformance>` | Performance rules |
+| `<AnalysisModeSingleFile>` | Single-file application rules |
+| `<AnalysisModeReliability>` | Reliability rules |
+| `<AnalysisModeSecurity>` | Security rules |
+| `<AnalysisModeStyle>` | All code-style (IDEXXXX) rules |
+| `<AnalysisModeUsage>` | Usage rules |
 
 ### CodeAnalysisTreatWarningsAsErrors
 

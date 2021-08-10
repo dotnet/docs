@@ -3,13 +3,15 @@ title: Implement a custom logging provider in .NET
 description: Learn how to implement a custom logging provider in your .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/22/2021
+ms.date: 07/30/2021
 ms.topic: how-to
 ---
 
 # Implement a custom logging provider in .NET
 
 There are many [logging providers](logging-providers.md) available for common logging needs. You may need to implement a custom <xref:Microsoft.Extensions.Logging.ILoggerProvider> when one of the available providers doesn't suit your application needs. In this article, you'll learn how to implement a custom logging provider that can be used to colorize logs in the console.
+
+[!INCLUDE [logging-samples-browser](includes/logging-samples-browser.md)]
 
 ### Sample custom logger configuration
 

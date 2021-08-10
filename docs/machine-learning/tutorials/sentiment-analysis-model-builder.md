@@ -72,7 +72,7 @@ When first adding Model Builder to the solution it will prompt you to create an 
 
 ## Choose a scenario
 
-![Model Builder wizard in Visual Studio](./media/sentiment-analysis-model-builder/model-builder-screen.png)
+![Model Builder wizard in Visual Studio](../media/model-builder-screen.png)
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder.
 

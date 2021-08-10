@@ -1562,6 +1562,10 @@ items:
       href: ../core/deploying/trimming-options.md
     - name: Trimming libraries
       href: ../core/deploying/prepare-libraries-for-trimming.md
+    - name: Trim warnings
+      items:
+        - name: IL2026
+          href: ../core/deploying/trim-warnings/il2026.md
   - name: Runtime package store
     href: ../core/deploying/runtime-store.md
   - name: Runtime Identifier (RID) catalog
@@ -2097,6 +2101,8 @@ items:
       href: ../core/extensions/console-log-formatter.md
   - name: HostBuilder (generic host)
     href: ../core/extensions/generic-host.md
+  - name: HTTP with .NET
+    href: ../core/extensions/http-client.md
   - name: Worker Services
     items:
     - name: Overview
@@ -2112,7 +2118,8 @@ items:
       href: ../core/extensions/timer-service.md
     - name: Deploy a Worker Service to Azure
       href: ../core/extensions/cloud-service.md
-
+  - name: Caching
+    href: ../core/extensions/caching.md
 - name: Data access
   items:
   - name: LINQ
@@ -2555,6 +2562,8 @@ items:
         href: ../core/porting/upgrade-assistant-winforms-framework.md
       - name: ASP.NET Core
         href: ../core/porting/upgrade-assistant-aspnetmvc.md
+      - name: Telemetry
+        href: ../core/porting/upgrade-assistant-telemetry.md
     - name: Breaking changes
       displayName: app compatibility
       href: ../core/porting/breaking-changes.md

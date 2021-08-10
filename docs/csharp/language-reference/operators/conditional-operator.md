@@ -70,9 +70,9 @@ The following example demonstrates the usage of a conditional ref expression:
 
 [!code-csharp-interactive[conditional ref](snippets/shared/ConditionalOperator.cs#ConditionalRef)]
 
-## Conditional operator and an `if..else` statement
+## Conditional operator and an `if` statement
 
-Use of the conditional operator instead of an [if-else](../keywords/if-else.md) statement might result in more concise code in cases when you need conditionally to compute a value. The following example demonstrates two ways to classify an integer as negative or nonnegative:
+Use of the conditional operator instead of an [`if` statement](../statements/selection-statements.md#the-if-statement) might result in more concise code in cases when you need conditionally to compute a value. The following example demonstrates two ways to classify an integer as negative or nonnegative:
 
 [!code-csharp[conditional and if-else](snippets/shared/ConditionalOperator.cs#CompareWithIf)]
 
@@ -93,7 +93,7 @@ For more information about features added in C# 7.2 and later, see the following
 
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
-- [if-else statement](../keywords/if-else.md)
+- [if statement](../statements/selection-statements.md#the-if-statement)
 - [?. and ?[] operators](member-access-operators.md#null-conditional-operators--and-)
 - [?? and ??= operators](null-coalescing-operator.md)
 - [ref keyword](../keywords/ref.md)

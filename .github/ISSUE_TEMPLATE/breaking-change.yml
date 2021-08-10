@@ -98,9 +98,6 @@ body:
     attributes:
       label: Affected APIs
       description: List all the APIs affected by this change. For methods, clarify if it's all overloads or specific overloads.
-      placeholder: None.
-    validations:
-      required: true
   - type: markdown
     attributes:
       value: |

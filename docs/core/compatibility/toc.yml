@@ -25,6 +25,8 @@ items:
         href: 6.0.md
       - name: ASP.NET Core
         items:
+        - name: AddDataAnnotationsValidation method made obsolete
+          href: aspnet-core/6.0/adddataannotationsvalidation-obsolete.md
         - name: Assemblies removed from shared framework
           href: aspnet-core/6.0/assemblies-removed-from-shared-framework.md
         - name: "Blazor: Parameter name changed in RequestImageFileAsync method"
@@ -101,6 +103,8 @@ items:
         items:
         - name: -p option for `dotnet run` is deprecated
           href: sdk/6.0/deprecate-p-option-dotnet-run.md
+        - name: C# code in templates not supported by earlier versions
+          href: sdk/6.0/csharp-template-code.md
         - name: Generate apphost for macOS
           href: sdk/6.0/apphost-generated-for-macos.md
         - name: Generate error for duplicate files in publish output
@@ -127,8 +131,6 @@ items:
         href: 5.0.md
       - name: ASP.NET Core
         items:
-        - name: AddDataAnnotationsValidation method made obsolete
-          href: aspnet-core/6.0/adddataannotationsvalidation-obsolete.md
         - name: ASP.NET Core apps deserialize quoted numbers
           href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
         - name: AzureAD.UI and AzureADB2C.UI APIs obsolete
@@ -337,6 +339,8 @@ items:
           href: sdk/5.0/publishdepsfilepath-behavior-change.md
         - name: TargetFramework change from netcoreapp to net
           href: sdk/5.0/targetframework-name-change.md
+        - name: Use WindowsSdkPackageVersion for Windows SDK
+          href: sdk/5.0/override-windows-sdk-package-version.md
       - name: Security
         items:
         - name: Code access security APIs are obsolete
@@ -701,6 +705,8 @@ items:
         items:
         - name: -p option for `dotnet run` is deprecated
           href: sdk/6.0/deprecate-p-option-dotnet-run.md
+        - name: C# code in templates not supported by earlier versions
+          href: sdk/6.0/csharp-template-code.md
         - name: Generate apphost for macOS
           href: sdk/6.0/apphost-generated-for-macos.md
         - name: Generate error for duplicate files in publish output
@@ -723,6 +729,8 @@ items:
           href: sdk/5.0/publishdepsfilepath-behavior-change.md
         - name: TargetFramework change from netcoreapp to net
           href: sdk/5.0/targetframework-name-change.md
+        - name: Use WindowsSdkPackageVersion for Windows SDK
+          href: sdk/5.0/override-windows-sdk-package-version.md
         - name: WinForms and WPF apps use Microsoft.NET.Sdk
           href: sdk/5.0/sdk-and-target-framework-change.md
       - name: .NET Core 2.1 - 3.1

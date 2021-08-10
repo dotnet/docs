@@ -3,7 +3,7 @@ title: Localization in .NET
 description: Learn how to use the IStringLocalizer and IStringLocalizerFactory implementations with dependency injection in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/06/2021
+ms.date: 08/10/2021
 ---
 
 # Localization in .NET
@@ -58,7 +58,7 @@ However, if your app was running with the <xref:System.Globalization.CultureInfo
 1. *MessageService.sr.resx*
 1. *MessageService.resx*
 
-The "culture fallback" rule will ignore locales when there are no corresponding matches, meaning resource file number four is selected if it's unable to find a match. If the culture was set to `"fr-FR"`, localization would end up falling to the *MessageService.resx* file which can be problematic.
+The "culture fallback" rule will ignore locales when there are no corresponding matches, meaning resource file number four is selected if it's unable to find a match. If the culture was set to `"fr-FR"`, localization would end up falling to the *MessageService.resx* file which can be problematic. For more information, see [The resource fallback process](package-and-deploy-resources.md#the-resource-fallback-process).
 
 ### Resource lookup
 

@@ -52,7 +52,7 @@ When you package your application's resources, you must name them using the reso
 > There are some exceptions for the two-letter culture names, such as `zh-Hans` for Chinese (Simplified).
 
 > [!TIP]
-> For information about creating resource files, see [Create resource files](create-resource-files.md) and [Create satellite assemblies](creatie-satellite-assemblies.md).
+> For information about creating resource files, see [Create resource files](create-resource-files.md) and [Create satellite assemblies](create-satellite-assemblies.md).
 
 <a name="cpconpackagingdeployingresourcesanchor1"></a>
 

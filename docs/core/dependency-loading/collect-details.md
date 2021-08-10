@@ -19,7 +19,6 @@ Starting with .NET 5.0, the runtime can emit events through `EventPipe` with det
 
 ## Collect a trace with assembly loading events
 
-
 You can use `dotnet-trace` to trace an existing process or to launch a child process and trace it from startup.
 
 ### Trace an existing process

@@ -165,7 +165,7 @@ When adding a web API to your solution, you will be prompted to name the project
     Invoke-RestMethod "https://localhost:<PORT>/predict" -Method Post -Body ($body | ConvertTo-Json) -ContentType "application/json"
     ```
 
-1. If successful, the output should look similar to the text below:
+1. If successful, the output should look similar to the text below. The output has the predicted **RiskCategory** as _Moderate Risk_ and it has the scores of each of the input labels - _Low Risk_, _High Risk_, and _Moderate Risk_.
 
     ```powershell
     prediction    score

@@ -993,12 +993,6 @@ items:
       items:
       - name: Statement categories
         href: language-reference/keywords/statement-keywords.md
-      - name: Selection Statements
-        items:
-        - name: if-else
-          href: language-reference/keywords/if-else.md
-        - name: switch
-          href: language-reference/keywords/switch.md
       - name: Jump Statements
         items:
         - name: break
@@ -1225,7 +1219,7 @@ items:
       displayName: stack allocation, span, stackalloc operator
     - name: switch expression
       href: language-reference/operators/switch-expression.md
-      displayName: pattern matching, patterns
+      displayName: pattern matching, patterns, when
     - name: true and false operators
       href: language-reference/operators/true-false-operators.md
     - name: with expression
@@ -1238,6 +1232,9 @@ items:
     - name: Iteration statements
       displayName: for, foreach, do, while, loop
       href: language-reference/statements/iteration-statements.md
+    - name: Selection statements
+      displayName: if, else, switch, case, when
+      href: language-reference/statements/selection-statements.md
   - name: Special characters
     items:
     - name: Overview

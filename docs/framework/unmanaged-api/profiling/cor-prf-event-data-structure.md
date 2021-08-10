@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: COR_PRF_EVENT_DATA Enumeration"
-title: "COR_PRF_EVENT_DATA Enumeration"
+description: "Learn more about: COR_PRF_EVENT_DATA structure"
+title: "COR_PRF_EVENT_DATA structure"
 ms.date: "03/19/2021"
 api_name: 
   - "COR_PRF_EVENT_DATA"
@@ -10,7 +10,7 @@ api_location:
 api_type: 
   - "COM"
 ---
-# COR_PRF_EVENT_DATA Enumeration
+# COR_PRF_EVENT_DATA structure
 
 Describes the event data for an EventPipe event being written.
   
@@ -35,7 +35,7 @@ typedef struct
   
 ## Remarks  
 
- The `COR_PRF_EVENT_DATA` structure is used by the [ICorProfilerInfo12::EventPipeWriteEvent](icorprofilerinfo12-eventpipewriteevent-method.md) method to providate the data payload for the event being written.
+ The `COR_PRF_EVENT_DATA` structure is used by the [ICorProfilerInfo12::EventPipeWriteEvent](icorprofilerinfo12-eventpipewriteevent-method.md) method to provide the data payload for the event being written.
   
 ## Requirements  
 

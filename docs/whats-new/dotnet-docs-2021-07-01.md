@@ -117,7 +117,7 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [Der-Kraken](https://github.com/Der-Kraken) (1)
 - [eriawan](https://github.com/eriawan) - Eriawan Kusumawardhono (1)
 - [erri120](https://github.com/erri120) - erri120 (1)
-- [github-actions](https://github.com/github-actions) -  (1)
+- github-actions -  (1)
 - [GitHubPang](https://github.com/GitHubPang) (1)
 - [gozeloglu](https://github.com/gozeloglu) - Gökhan Özeloğlu (1)
 - [guillermo-ruffino](https://github.com/guillermo-ruffino) (1)

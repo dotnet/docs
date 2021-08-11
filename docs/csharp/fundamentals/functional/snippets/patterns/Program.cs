@@ -27,7 +27,8 @@ namespace patterns
             else if (sequence is null)
             {
                 throw new ArgumentNullException(nameof(sequence), "Sequence can't be null.");
-            } else
+            }
+            else
             {
                 int halfLength = sequence.Count() / 2 - 1;
                 if (halfLength < 0) halfLength = 0;

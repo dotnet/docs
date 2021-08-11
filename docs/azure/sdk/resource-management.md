@@ -2,7 +2,7 @@
 title: Resource management
 description: Learn how to use the Azure SDK for .NET to manage Azure resources.
 ms.date: 07/21/2020
-ms.author: nickzhums
+ms.author: xinrzhu
 author: nickzhums
 ---
 # Resource management using the Azure SDK for .NET
@@ -41,11 +41,11 @@ Install-Package Azure.ResourceManager.Resources -Version 1.0.0-beta.1
 
 Set up a way to authenticate to Azure with Azure Identity. Some options are:
 
-- Through the [Azure CLI login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli)
-- Via [Visual Studio](https://docs.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet#authenticating-via-visual-studio)
+- Through the [Azure CLI login](/cli/azure/authenticate-azure-cli)
+- Via [Visual Studio](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet#authenticating-via-visual-studio&preserve-view=false)
 - Setting [environment variables](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager.Core/docs/AuthUsingEnvironmentVariables.md)
 
-More information and different authentication approaches using Azure Identity can be found in [this document](https://docs.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet).
+More information and different authentication approaches using Azure Identity can be found in [this document](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet&preserve-view=false).
 
 ### Authenticate the client
 
@@ -64,7 +64,7 @@ using System.Threading.Tasks;
 var armClient = new ArmClient(new DefaultAzureCredential());
 ```
 
-Additional documentation for the `Azure.Identity.DefaultAzureCredential` class can be found in [this document](https://docs.microsoft.com/dotnet/api/azure.identity.defaultazurecredential).
+For more information about the `Azure.Identity.DefaultAzureCredential` class, see [DefaultAzureCredential Class](/dotnet/api/azure.identity.defaultazurecredential).
 
 ## Key concepts
 
@@ -311,7 +311,7 @@ For more detailed examples, see the [samples](https://github.com/Azure/azure-sdk
 
 - If you find a bug or have a suggestion, file an issue via [GitHub issues](https://github.com/Azure/azure-sdk-for-net/issues).
 - If you need help, check [previous questions](https://stackoverflow.com/questions/tagged/azure+.net) or ask new ones on Stack Overflow using Azure and .NET tags.
-- If having trouble with authentication, see the [DefaultAzureCredential documentation](https://docs.microsoft.com/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet).
+- If having trouble with authentication, see the [DefaultAzureCredential documentation](/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet&preserve-view=false).
 
 ## Next steps
 
@@ -319,7 +319,7 @@ For more detailed examples, see the [samples](https://github.com/Azure/azure-sdk
 
 - [Managing Resource Groups](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager/samples/Sample2_ManagingResourceGroups.md)
 - [Creating a Virtual Network](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager/samples/Sample3_CreatingAVirtualNetwork.md)
-- [.NET Management Library Code Samples](https://docs.microsoft.com/samples/browse/?branch=master&languages=csharp&term=managing%20using%20Azure%20.NET%20SDK)
+- [.NET Management Library Code Samples](/samples/browse/?branch=master&languages=csharp&term=managing%20using%20Azure%20.NET%20SDK)
 
 ### Additional resources
 

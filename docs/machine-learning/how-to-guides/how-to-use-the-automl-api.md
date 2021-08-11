@@ -72,7 +72,7 @@ Create experiment settings for the determined ML task type:
 
 ## Configure experiment settings
 
-Experiments are highly configurable. See the [AutoML API docs](/dotnet/api/microsoft.ml.automl?view=ml-dotnet-preview) for a full list of configuration settings.
+Experiments are highly configurable. See the [AutoML API docs](/dotnet/api/microsoft.ml.automl?view=ml-dotnet-preview&preserve-view=false) for a full list of configuration settings.
 
 Some examples include:
 

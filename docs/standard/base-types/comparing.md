@@ -153,8 +153,8 @@ The following example uses the `IndexOf` method to search for the first occurren
 
 ## See also
 
-- [Best Practices for Using Strings in .NET](best-practices-strings.md)
-- [Basic String Operations](basic-string-operations.md)
-- [Performing Culture-Insensitive String Operations](../globalization-localization/performing-culture-insensitive-string-operations.md)
-- [Sorting Weight Tables](https://www.microsoft.com/download/details.aspx?id=10921) - used by .NET Framework and .NET Core 1.0-3.1 on Windows
-- [Default Unicode Collation Element Table](https://www.unicode.org/Public/UCA/latest/allkeys.txt) - used by .NET 5 on all platforms, and by .NET Core on Linux and macOS
+- [Best practices for using strings in .NET](best-practices-strings.md)
+- [Basic string operations](basic-string-operations.md)
+- [Perform culture-insensitive string operations](../../core/extensions/performing-culture-insensitive-string-operations.md)
+- [Sorting weight tables](https://www.microsoft.com/download/details.aspx?id=10921) - used by .NET Framework and .NET Core 1.0-3.1 on Windows
+- [Default Unicode collation element table](https://www.unicode.org/Public/UCA/latest/allkeys.txt) - used by .NET 5 on all platforms, and by .NET Core on Linux and macOS

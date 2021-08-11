@@ -3,7 +3,7 @@ title: 'Tutorial: Classify health violations with Model Builder'
 description: This tutorial illustrates how to build a multiclass classification model using ML.NET Model Builder to classify restaurant health violation severity in San Francisco.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 08/05/2021
+ms.date: 08/11/2021
 ms.topic: tutorial
 ms.custom: mvc,mlnet-tooling
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to classify violation severity using Model Builder.
@@ -120,7 +120,6 @@ The result of the training step will be one model which had the best performance
 Additionally, in the **Output** window of Visual Studio, there will be a summary table containing top models and their metrics.
 
 This section will also allow you to test your model by performing a single prediction. It will offer text boxes to fill in values and you can click the **Predict** button to get a prediction from the best model. By default this will be filled in by a random row in your dataset.
-
 
 ## (Optional) Consume the model
 

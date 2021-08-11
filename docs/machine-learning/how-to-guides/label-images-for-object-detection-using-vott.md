@@ -27,7 +27,7 @@ Learn how to use VoTT (Visual Object Tagging Tool) to label images for object de
 1. Change the **Target Connection** to the same connection as well.
 1. Select **Save Project**.
 
-### Add tag and label images
+## Add tag and label images
 
 You should now see a window with preview images of all the training images on the left, a preview of the selected image in the middle, and a **Tags** column on the right. This screen is the **Tags editor**.
 
@@ -45,7 +45,7 @@ You should now see a window with preview images of all the training images on th
 
 1. Continue steps 3-4 for every image.
 
-### Export your VoTT JSON
+## Export your VoTT JSON
 
 Once you have labeled all of your training images, you can export the file that will be used by Model Builder for training.
 

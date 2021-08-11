@@ -1,7 +1,7 @@
 ---
 title: Make predictions with a trained model
 description: Learn to make predictions using a trained ML.NET model
-ms.date: 08/09/2021
+ms.date: 08/11/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
@@ -141,12 +141,12 @@ The predicted values in the score column should look like the following:
 
 ## Multiple predictions (PredictionEnginePool)
 
-To make multiple predictions using [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool%602), you can take an `IEnumerable` containing multiple instances of your model input. For example and `IEnumerable<HousingInput>` and apply the [`Predict`](xref:Microsoft.Extensions.ML.PredictionEnginePoolExtensions.Predict%2A) method to each element using LINQ's [`Select`](xref:System.Linq.Enumerable.Select%2A) method.
+To make multiple predictions using [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool%602), you can take an `IEnumerable` containing multiple instances of your model input. For example an `IEnumerable<HousingInput>` and apply the [`Predict`](xref:Microsoft.Extensions.ML.PredictionEnginePoolExtensions.Predict%2A) method to each element using LINQ's [`Select`](xref:System.Linq.Enumerable.Select%2A) method.
 
-This code sample assumes you have a [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool%602) called `predictionEnginePool` and an `IEnumerable<HousingData>` called `inputs`.
+This code sample assumes you have a [PredictionEnginePool](xref:Microsoft.Extensions.ML.PredictionEnginePool%602) called `predictionEnginePool` and an `IEnumerable<HousingData>` called `housingData`.
 
 ```csharp
-IEnumerable<HousingPrediction> predictions = inputs.Select(input => predictionEnginePool.Predict(input));
+IEnumerable<HousingPrediction> predictions = housingData.Select(input => predictionEnginePool.Predict(input));
 ```
 
 The result is an `IEnumerable` containing instances of your predictions. In this case, it would be `IEnumerable<HousingPrediction>`.

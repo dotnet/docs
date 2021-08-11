@@ -82,7 +82,7 @@ The following table shows the different rule severities that you can configure f
   dotnet_analyzer_diagnostic.category-<rule category>.severity = <severity value>
   ```
 
-  The different categories are described at [Rule categories](categories.md). In addition, you can find the category for a specific rule on its reference page, for example, [CA1000](quality-rules/ca1000.md).
+  The different categories are listed and described at [Rule categories](categories.md). In addition, you can find the category for a specific rule on its reference page, for example, [CA1000](quality-rules/ca1000.md).
 
 - **All rules**
 

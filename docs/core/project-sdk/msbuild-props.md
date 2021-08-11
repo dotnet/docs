@@ -639,7 +639,7 @@ none, default, minimum, recommended, all
 > - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>5-recommended</AnalysisLevel>`, you can omit this property entirely.
 > - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
 
-### AnalysisMode<Category>
+### AnalysisMode\<Category>
 
 This property is the same as [AnalysisMode](#analysismode), except that it only applies to a specific [category of code-analysis rules](../../fundamentals/code-analysis/categories.md). This property allows you to enable or disable rules at a different level to the other rule categories. If you omit this property for a particular category of rules, it defaults to the [AnalysisMode](#analysismode) value. The available values are the same as those for [AnalysisMode](#analysismode).
 

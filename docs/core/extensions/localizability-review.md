@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Localizability review"
 title: "Localizability Review"
-ms.date: "03/30/2017"
+ms.date: 08/11/2021
 dev_langs:
   - "csharp"
   - "vb"

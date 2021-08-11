@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Best practices for developing world-ready applications"
 title: "Best Practices for Developing World-Ready Applications"
-ms.date: "03/30/2017"
+ms.date: 08/11/2021
 helpviewer_keywords:
   - "global applications, best practices"
   - "world-ready applications, best practices"
@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "international applications [.NET], best practices"
 ms.assetid: f08169c7-aad8-4ec3-9a21-9ebd3b89986c
 ---
+
 # Best practices for developing world-ready applications
 
 This section describes the best practices to follow when developing world-ready applications.
@@ -51,7 +52,7 @@ This section describes the best practices to follow when developing world-ready 
 
 2. Do not hardcode strings or user interface resources.
 
-3. Do not put nonlocalizable resources into the resource-only DLLs. This causes confusion for translators.
+3. Do not put non-localizable resources into the resource-only DLLs. This causes confusion for translators.
 
 4. Do not use composite strings that are built at run time from concatenated phrases. Composite strings are difficult to localize because they often assume an English grammatical order that does not apply to all languages.
 
@@ -67,7 +68,7 @@ This section describes the best practices to follow when developing world-ready 
 
 10. Arrange for professional localization (translation).
 
-11. For a complete description of creating and localizing resources, see [Resources in Applications](../../framework/resources/index.md).
+11. For a complete description of creating and localizing resources, see [Resources in .NET apps](resources.md).
 
 ## Globalization best practices for ASP.NET applications
 
@@ -85,7 +86,7 @@ This section describes the best practices to follow when developing world-ready 
 
 4. Specify the values for the requestEncoding, responseEncoding, fileEncoding, culture, and uiCulture attributes in the following three places in an ASP.NET application:
 
-    - In the globalization section of a Web.config file. This file is external to the ASP.NET application. For more information, see [\<globalization> Element](/previous-versions/dotnet/netframework-4.0/hy4kkhe0(v=vs.100)).
+    - In the globalization section of a Web.config file. This file is external to the ASP.NET application. For more information, see [\<globalization> element](/previous-versions/dotnet/netframework-4.0/hy4kkhe0(v=vs.100)).
 
     - In a page directive. Note that, when an application is in a page, the file has already been read. Therefore, it is too late to specify fileEncoding and requestEncoding. Only uiCulture, Culture, and responseEncoding can be specified in a page directive.
 
@@ -95,5 +96,5 @@ This section describes the best practices to follow when developing world-ready 
 
 ## See also
 
-- [Globalization and Localization](index.md)
-- [Resources in Desktop Apps](../../framework/resources/index.md)
+- [Globalization and Localization](globalization-and-localization.md)
+- [Resources in .NET apps](resources.md)

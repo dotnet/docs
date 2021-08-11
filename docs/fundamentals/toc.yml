@@ -2107,6 +2107,32 @@ items:
     href: ../core/extensions/generic-host.md
   - name: HTTP with .NET
     href: ../core/extensions/http-client.md
+  - name: Globalization and localization
+    href: ../core/extensions/globalization-and-localization.md
+    items:
+    - name: Globalization
+      href: ../core/extensions/globalization.md
+    - name: Globalization and ICU
+      href: ../core/extensions/globalization-icu.md
+    - name: Localizability review
+      href: ../core/extensions/localizability-review.md
+    - name: Localization
+      href: ../core/extensions/localization.md
+    - name: Culture-insensitive string operations
+      href: ../core/extensions/culture-insensitive-string-operations.md
+      items:
+      - name: Overview
+        href: ../core/extensions/performing-culture-insensitive-string-operations.md
+      - name: String comparisons
+        href: ../core/extensions/performing-culture-insensitive-string-comparisons.md
+      - name: Case changes
+        href: ../core/extensions/performing-culture-insensitive-case-changes.md
+      - name: String operations in collections
+        href: ../core/extensions/performing-culture-insensitive-string-operations-in-collections.md
+      - name: String operations in arrays
+        href: ../core/extensions/performing-culture-insensitive-string-operations-in-arrays.md
+    - name: Best practices for developing world-ready apps
+      href: best-practices-for-developing-world-ready-apps.md
   - name: Resources in .NET apps
     items:
     - name: Overview
@@ -2123,8 +2149,6 @@ items:
       href: ../core/extensions/package-and-deploy-resources.md
     - name: Retrieve resources
       href: ../core/extensions/retrieve-resources.md
-  - name: Localization in .NET
-    href: ../core/extensions/localization.md
   - name: Worker Services
     items:
     - name: Overview

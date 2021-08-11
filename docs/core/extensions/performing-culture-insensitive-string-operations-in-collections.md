@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Performing Culture-Insensitive String Operations in Collections"
 title: "Performing Culture-Insensitive String Operations in Collections"
-ms.date: "03/30/2017"
+ms.date: 08/11/2021
 dev_langs:
   - "csharp"
   - "vb"

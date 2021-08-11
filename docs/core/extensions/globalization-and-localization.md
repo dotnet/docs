@@ -1,7 +1,7 @@
 ---
-title: "Globalizing and localizing .NET applications"
+title: "Globalize and localize .NET applications"
 description: Learn how to develop a world-ready application. Read about globalization, localizability review, and localization in .NET.
-ms.date: "06/08/2018"
+ms.date: 08/11/2021
 helpviewer_keywords:
   - "international applications [.NET]"
   - "globalization [.NET], encoding"
@@ -12,7 +12,8 @@ helpviewer_keywords:
   - "multilingual application development"
 ms.assetid: 9a59696b-d89b-45bd-946d-c75da4732d02
 ---
-# Globalizing and localizing .NET applications
+
+# Globalize and localize .NET applications
 
 Developing a world-ready application, including an application that can be localized into one or more languages, involves three steps: globalization, localizability review, and localization.
 

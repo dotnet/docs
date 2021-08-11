@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Performing Culture-Insensitive String Operations in Arrays"
 title: "Performing Culture-Insensitive String Operations in Arrays"
-ms.date: "03/30/2017"
+ms.date: 08/11/2021
 helpviewer_keywords:
   - "culture-insensitive string operations, in arrays"
   - "arrays [.NET], culture-insensitive string operations"

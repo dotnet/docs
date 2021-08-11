@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Performing Culture-Insensitive Case Changes"
 title: "Performing Culture-Insensitive Case Changes"
-ms.date: "03/30/2017"
+ms.date: 08/11/2021
 dev_langs: 
   - "csharp"
   - "vb"

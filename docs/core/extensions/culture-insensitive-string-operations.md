@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Culture-insensitive string operations"
 title: "Culture-Insensitive String Operations"
-ms.date: "03/30/2017"
+ms.date: 08/11/2021
 helpviewer_keywords:
   - "culture, culture-insensitive string operations"
   - "case-sensitive comparisons"
@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "culture-insensitive string operations"
 ms.assetid: e6e2bb94-a95d-44e2-b68c-cfdd1db77784
 ---
+
 # Culture-insensitive string operations
 
 Culture-sensitive string operations can be an advantage if you are creating applications designed to display results to users on a per-culture basis. By default, culture-sensitive methods obtain the culture to use from the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> property for the current thread.
@@ -27,4 +28,4 @@ Whether or not you're developing an application that includes code to handle loc
 
 ## See also
 
-- [Globalization and Localization](index.md)
+- [Globalization and Localization](globalization-and-localization.md)

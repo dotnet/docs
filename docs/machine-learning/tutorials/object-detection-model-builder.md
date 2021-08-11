@@ -18,6 +18,7 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
 > - Prepare and understand the data
+> - Create a Model Builder config file
 > - Choose the scenario
 > - Choose the training environment
 > - Load the data
@@ -221,7 +222,7 @@ The **Score threshold**, which can be increased or decreased with the threshold 
 
 If you're not satisfied with your accuracy metrics, one easy way to try to improve model accuracy is to use more data. Otherwise, select the **Next step** link to move on to the **Consume** step in Model Builder.
 
-## Add the code to make predictions
+## (Optional) Consume the model
 
 This step will have project templates that you can use to consume the model. This step is optional and you can choose the method that best suits your needs on how to serve the model.
 
@@ -261,7 +262,7 @@ When adding a web API to your solution, you will be prompted to name the project
      Invoke-RestMethod "https://localhost:<PORT>/predict" -Method Post -Body ($body | ConvertTo-Json) -ContentType "application/json"
     ```
 
-1. If successful, the output should look similar to the text below:
+1. If successful, the output should look similar to the text below. The `boxes` object gives the bounding boxes of the object that was detected. The items here go to the left, top, right, and bottom locations. The labels are the index of the predicted labels. The scores gives the score of that label.
 
     ```powershell
     boxes                                      labels scores       boundingBoxes

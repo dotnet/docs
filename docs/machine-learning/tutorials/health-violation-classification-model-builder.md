@@ -121,7 +121,6 @@ Additionally, in the **Output** window of Visual Studio, there will be a summary
 
 This section will also allow you to test your model by performing a single prediction. It will offer text boxes to fill in values and you can click the **Predict** button to get a prediction from the best model. By default this will be filled in by a random row in your dataset.
 
-## Add the code to make predictions
 
 ## (Optional) Consume the model
 

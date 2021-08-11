@@ -84,4 +84,4 @@ Provides properties and classes for accessing the application's resources.
 ## See also
 
 - [Managing Application Resources (.NET)](/visualstudio/ide/managing-application-resources-dotnet)
-- [Resources in .NET apps](../../../core/extensions/resources.md)
+- [Resources in .NET apps](/dotnet/core/extensions/resources)

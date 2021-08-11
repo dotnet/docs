@@ -20,7 +20,7 @@ Provides properties and classes for accessing the application's resources.
 
  The `My.Resources` object exposes only global resources. It does not provide access to resource files associated with forms. You must access the form resources from the form.
 
- You can access the application's culture-specific resource files from the `My.Resources` object. By default, the `My.Resources` object looks up resources from the resource file that matches the culture in the <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.UICulture%2A> property. However, you can override this behavior and specify a particular culture to use for the resources. For more information, see [Resources in .NET apps](.../../../core/extensions/resources.md).
+ You can access the application's culture-specific resource files from the `My.Resources` object. By default, the `My.Resources` object looks up resources from the resource file that matches the culture in the <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.UICulture%2A> property. However, you can override this behavior and specify a particular culture to use for the resources. For more information, see [Resources in .NET apps](../../../core/extensions/resources.md).
 
 ## Properties
 
@@ -84,4 +84,4 @@ Provides properties and classes for accessing the application's resources.
 ## See also
 
 - [Managing Application Resources (.NET)](/visualstudio/ide/managing-application-resources-dotnet)
-- [Resources in .NET apps](/dotnet/core/extensions/resources)
+- [Resources in .NET apps](../../../core/extensions/resources.md)

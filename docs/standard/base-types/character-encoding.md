@@ -262,4 +262,4 @@ The following code then instantiates the `CustomMapper` object and passes an ins
 - <xref:System.Text.DecoderFallback>
 - <xref:System.Text.Encoding>
 - <xref:System.Text.EncoderFallback>
-- [Globalization and Localization](../globalization-localization/index.md)
+- [Globalization and localization](../../core/extensions/globalization-and-localization.md)

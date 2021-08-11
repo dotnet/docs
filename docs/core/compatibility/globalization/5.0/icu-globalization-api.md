@@ -48,7 +48,7 @@ System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.
 string text = string.Format("{0:C}", 100);
 ```
 
-- In previous versions of .NET on Windows, the value of text is `"100,00 €"`.
+- In previous versions of .NET on Windows, the value of text is `"100,00 &euro;"`.
 - In .NET 5 and later versions on Windows 19H1 and later versions, the value of text is `"100,00 ¤"`, which uses the international currency symbol instead of the euro. In ICU, the design is that a currency is a property of a country or region, not a language.
 
 ## Reason for change
@@ -61,7 +61,7 @@ This change was introduced to unify .NET's globalization behavior across all sup
 
 ## Recommended action
 
-No action is required on the part of the developer. However, if you wish to continue using NLS globalization APIs, you can set a [run-time switch](../../../run-time-config/globalization.md#nls) to revert to that behavior. For more information about the available switches, see the [.NET globalization and ICU](../../../../standard/globalization-localization/globalization-icu.md) article.
+No action is required on the part of the developer. However, if you wish to continue using NLS globalization APIs, you can set a [run-time switch](../../../run-time-config/globalization.md#nls) to revert to that behavior. For more information about the available switches, see the [.NET globalization and ICU](../../../../core/extensions/globalization-icu.md) article.
 
 ## Affected APIs
 

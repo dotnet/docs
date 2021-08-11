@@ -747,6 +747,10 @@ items:
           href: core-libraries/5.0/utf-7-code-paths-obsolete.md
     - name: Serialization
       items:
+      - name: .NET 6
+        items:
+        - name: JsonNode no longer supports C# `dynamic`
+          href: serialization/6.0/jsonnode-dynamic-type.md
       - name: .NET 5
         items:
         - name: BinaryFormatter.Deserialize rewraps exceptions

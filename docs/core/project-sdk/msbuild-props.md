@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 02/14/2020
+ms.date: 08/10/2021
 ms.topic: reference
 ms.custom: updateeachrelease
 ---

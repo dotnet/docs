@@ -1,7 +1,7 @@
 ---
 title: Configure code analysis rules
 description: Learn how to configure code analysis rules in an analyzer configuration file.
-ms.date: 09/24/2020
+ms.date: 08/21/2021
 no-loc: ["EditorConfig"]
 ---
 # Configuration options for code analysis

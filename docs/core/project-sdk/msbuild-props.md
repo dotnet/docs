@@ -627,9 +627,9 @@ none, default, minimum, recommended, all
 |-|-|
 | `All` | .NET 6 | Aggressive or opt-out mode, where all rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them.<br />This value replaces `AllEnabledByDefault` in .NET 6. |
 | `Default` | .NET 5 | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. |
-| `Minimum` | .NET 6 | More aggressive mode than the `Default` mode. Certain IDE code-style suggestions that are highly recommended for build enforcement (for example, file header analyzer) are enabled as build warnings. |
+| `Minimum` | .NET 6 | More aggressive mode than the `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. |
 | `None` | .NET 6 | Conservative or opt-in mode, where all rules are disabled by default. You can selectively [opt into](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them.<br />This value replaces `AllDisabledByDefault` in .NET 6. |
-| `Recommended` | .NET 6 | More aggressive mode than the `Minimum` mode, where more IDE code-style rules are enabled as build warnings. |
+| `Recommended` | .NET 6 | More aggressive mode than the `Minimum` mode, where more rules are enabled as build warnings. |
 | `AllEnabledByDefault` (deprecated) | .NET 5 | Aggressive or opt-out mode, where all rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. |
 | `AllDisabledByDefault` (deprecated) | .NET 5 | Conservative or opt-in mode, where all rules are disabled by default. You can selectively [opt into](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them. |
 

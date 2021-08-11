@@ -245,8 +245,8 @@ The sample application does not provide resource files for `"fr-CA"`, but when c
 
 ## See also
 
-- [Globalizing and localizing .NET applications](../../standard/globalization-localization/index.md)
-- [Package and deploy resources in .NET Apps](package-and-deploy-resources.md)
+- [Globalizing and localizing .NET applications](globalization-and-localization.md)
+- [Package and deploy resources in .NET apps](package-and-deploy-resources.md)
 - [`Microsoft.Extensions.Localization`](https://www.nuget.org/packages/microsoft.extensions.localization)
 - [Dependency injection in .NET](dependency-injection.md)
 - [Logging in .NET](logging.md)

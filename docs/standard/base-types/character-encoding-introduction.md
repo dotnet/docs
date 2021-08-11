@@ -1,7 +1,7 @@
 ---
 title: Introduction to character encoding in .NET
 description: Learn about character encoding and decoding in .NET.
-ms.date: 03/09/2020
+ms.date: 08/11/2021
 ms.topic: conceptual
 no-loc: [Rune, char, string]
 dev_langs:
@@ -9,6 +9,7 @@ dev_langs:
 helpviewer_keywords:
   - "encoding, understanding"
 ---
+
 # Character encoding in .NET
 
 This article provides an introduction to character encoding systems that are used by .NET. The article explains how the <xref:System.String>, <xref:System.Char>, <xref:System.Text.Rune>, and <xref:System.Globalization.StringInfo> types work with Unicode, UTF-16, and UTF-8.
@@ -99,17 +100,17 @@ The Unicode Standard defines over 1.1 million [code points](https://www.unicode.
 
 Here are some examples of code point assignments, with links to Unicode charts in which they appear:
 
-|Decimal|Hex       |Example|Description|
-|------:|----------|-------|-----------|
-|10     | `U+000A` |N/A| [LINE FEED](https://www.unicode.org/charts/PDF/U0000.pdf) |
-|97     | `U+0061` | a | [LATIN SMALL LETTER A](https://www.unicode.org/charts/PDF/U0000.pdf) |
-|562    | `U+0232` | Ȳ | [LATIN CAPITAL LETTER Y WITH MACRON](https://www.unicode.org/charts/PDF/U0180.pdf) |
-|68,675 | `U+10C43`| 𐱃 | [OLD TURKIC LETTER ORKHON AT](https://www.unicode.org/charts/PDF/U10C00.pdf) |
-|127,801| `U+1F339`| 🌹 | [ROSE emoji](https://www.unicode.org/charts/PDF/U1F300.pdf) |
+| Decimal | Hex       | Example | Description                                                                        |
+|--------:|-----------|---------|------------------------------------------------------------------------------------|
+| 10      | `U+000A`  | N/A     | [LINE FEED](https://www.unicode.org/charts/PDF/U0000.pdf)                          |
+| 97      | `U+0061`  | a       | [LATIN SMALL LETTER A](https://www.unicode.org/charts/PDF/U0000.pdf)               |
+| 562     | `U+0232`  | Ȳ       | [LATIN CAPITAL LETTER Y WITH MACRON](https://www.unicode.org/charts/PDF/U0180.pdf) |
+| 68,675  | `U+10C43` | 𐱃     | [OLD TURKIC LETTER ORKHON AT](https://www.unicode.org/charts/PDF/U10C00.pdf)       |
+| 127,801 | `U+1F339` | 🌹     | [ROSE emoji](https://www.unicode.org/charts/PDF/U1F300.pdf)                        |
 
 Code points are customarily referred to by using the syntax `U+xxxx`, where `xxxx` is the hex-encoded integer value.
 
-Within the full range of code points there are two subranges:
+Within the full range of code points there are two sub-ranges:
 
 * The **Basic Multilingual Plane (BMP)** in the range `U+0000..U+FFFF`. This 16-bit range provides 65,536 code points, enough to cover the majority of the world's writing systems.
 * **Supplementary code points** in the range `U+10000..U+10FFFF`. This 21-bit range provides more than a million additional code points that can be used for less well-known languages and other purposes such as emojis.
@@ -381,4 +382,4 @@ For information about how to use the built-in `Encoding` classes, see [How to us
 - <xref:System.String>
 - <xref:System.Char>
 - <xref:System.Text.Rune>
-- [Globalization and Localization](../globalization-localization/index.md)
+- [Globalization and localization](../../core/extensions/globalization-and-localization.md)

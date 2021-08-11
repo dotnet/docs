@@ -344,7 +344,7 @@ resgen StringResources.txt /str:vb,,StringResources
 ## See also
 
 - [Tools](index.md)
-- [Resources in Desktop Apps](../resources/index.md)
+- [Resources in .NET apps](../../core/extensions/resources.md)
 - [Create resource files](../../core/extensions/create-resource-files.md)
 - [Al.exe (Assembly Linker)](al-exe-assembly-linker.md)
 - [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

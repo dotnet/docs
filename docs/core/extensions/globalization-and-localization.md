@@ -37,8 +37,6 @@ Following these three steps provides two advantages:
 
 .NET provides extensive support for the development of world-ready and localized applications. In particular, many type members in the .NET class library aid globalization by returning values that reflect the conventions of either the current user's culture or a specified culture. Also, .NET supports satellite assemblies, which facilitate the process of localizing an application.
 
-For additional information, see the [Globalization documentation](/globalization/).
-
 ## In this section
 
 [Globalization](globalization.md)

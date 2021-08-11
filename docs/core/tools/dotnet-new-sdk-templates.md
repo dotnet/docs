@@ -2,7 +2,7 @@
 title: .NET default templates for dotnet new
 description: The information about dotnet new templates shipped with dotnet SDK.
 no-loc: [Blazor, WebAssembly]
-ms.date: 04/29/2021
+ms.date: 08/11/2021
 ---
 # .NET default templates for dotnet new
 
@@ -70,6 +70,8 @@ Each template may have additional options available. The core templates have the
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
 
+  To create a project that targets a framework earlier than the SDK that you're using, install the NuGet package for the template. For example, find the package name for a `console` project template by searching for "Microsoft.DotNet.Common.ProjectTemplates" in NuGet.org. To create a `console` project that targets `netcoreapp1.0`, run [`dotnet new --install`](dotnet-new-install.md) on `Microsoft.DotNet.Common.ProjectTemplates.1.x`. For different project types there are different package names. For example, for `web` projects search for "Microsoft.DotNet.Web.ProjectTemplates". As an alternative, you can install an earlier SDK version and use [global.json](global-json.md) to specify the earlier SDK version to create a project that targets the earlier framework.
+
 - **`--langVersion <VERSION_NUMBER>`**
 
   Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#. Available since .NET Core 2.2 SDK.
@@ -88,6 +90,8 @@ Each template may have additional options available. The core templates have the
 
   Specifies the [framework](../../standard/frameworks.md) to target. Values: `net5.0` or `netcoreapp<version>` to create a .NET Class Library or `netstandard<version>` to create a .NET Standard Class Library. The default value for .NET 5.0 SDK is `net5.0`.
 
+  To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
+
 - **`--langVersion <VERSION_NUMBER>`**
 
   Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#. Available since .NET Core 2.2 SDK.
@@ -105,6 +109,8 @@ Each template may have additional options available. The core templates have the
 - **`-f|--framework <FRAMEWORK>`**
 
   Specifies the [framework](../../standard/frameworks.md) to target. The default value is `net5.0`. Available since .NET Core 3.1 SDK.
+
+  To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
 - **`--langVersion <VERSION_NUMBER>`**
 
@@ -138,6 +144,8 @@ Each template may have additional options available. The core templates have the
 
   Specifies the [framework](../../standard/frameworks.md) to target. The default value is `netcoreapp3.1`. Available since .NET Core 3.1 SDK.
 
+  To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
+
 - **`--exclude-launch-settings`**
 
   Excludes *launchSettings.json* from the generated template.
@@ -161,6 +169,8 @@ Each template may have additional options available. The core templates have the
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
+
+  To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
 - **`-p|--enable-pack`**
 
@@ -187,6 +197,8 @@ Each template may have additional options available. The core templates have the
   | 3.0         | `netcoreapp3.0` |
   | 2.2         | `netcoreapp2.2` |
   | 2.1         | `netcoreapp2.1` |
+
+  To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
 - **`-p|--enable-pack`**
 
@@ -302,6 +314,8 @@ Each template may have additional options available. The core templates have the
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
 
+  To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
+
 - **`--no-restore`**
 
   Doesn't execute an implicit restore during project creation.
@@ -412,6 +426,8 @@ Each template may have additional options available. The core templates have the
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.1` |
 
+  To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
+
 - **`--no-restore`**
 
   Doesn't execute an implicit restore during project creation.
@@ -499,6 +515,8 @@ Each template may have additional options available. The core templates have the
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
 
+  To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
+
 - **`--no-restore`**
 
   Doesn't execute an implicit restore during project creation.
@@ -553,6 +571,8 @@ Each template may have additional options available. The core templates have the
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.0` |
 
+  To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
+
 ***
 
 ## `reactredux`
@@ -573,6 +593,8 @@ Each template may have additional options available. The core templates have the
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.0` |
+
+  To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
 - **`--no-restore`**
 
@@ -659,6 +681,8 @@ Each template may have additional options available. The core templates have the
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.1` |
+
+  To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
 - **`--no-restore`**
 

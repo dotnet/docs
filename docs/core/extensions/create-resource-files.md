@@ -17,9 +17,9 @@ ms.assetid: 6c5ad891-66a0-4e7a-adcf-f41863ba6d8d
 
 You can include resources, such as strings, images, or object data, in resources files to make them easily available to your application. The .NET Framework offers five ways to create resources files:
 
-- Create a text file that contains string resources. You can use [Resource file generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md) to convert the text file into a binary resource (.resources) file. You can then embed the binary resource file  in an application executable or an application library by using a language compiler, or you can embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md). For more information, see the [Resources in text files](create-resource-files.md#TextFiles) section.
+- Create a text file that contains string resources. You can use [Resource File Generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md) to convert the text file into a binary resource (.resources) file. You can then embed the binary resource file  in an application executable or an application library by using a language compiler, or you can embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md). For more information, see the [Resources in text files](create-resource-files.md#TextFiles) section.
 
-- Create an XML resource (.resx) file that contains string, image, or object data. You can use [Resource file generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md) to convert the .resx file into a binary resource (.resources) file. You can then embed the binary resource file in an application executable or an application library by using a language compiler, or you can embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md). For more information, see the [Resources in .resx Files](#ResxFiles) section.
+- Create an XML resource (.resx) file that contains string, image, or object data. You can use [Resource File Generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md) to convert the .resx file into a binary resource (.resources) file. You can then embed the binary resource file in an application executable or an application library by using a language compiler, or you can embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md). For more information, see the [Resources in .resx Files](#ResxFiles) section.
 
 - Create an XML resource (.resx) file programmatically by using types in the <xref:System.Resources> namespace. You can create a .resx file, enumerate its resources, and retrieve specific resources by name. For more information, see [Working with .resx Files Programmatically](work-with-resx-files-programmatically.md).
 
@@ -73,9 +73,9 @@ HelpMenuName=Help
 EmptyString=
 ```
 
- Starting with .NET Framework 4.5 and in all versions of .NET Core, text files support conditional compilation with the `#ifdef`*symbol*... `#endif` and `#if !`*symbol*... `#endif` constructs. You can then use the `/define` switch with [Resource file generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md) to define symbols. Each resource requires its own `#ifdef`*symbol*... `#endif` or `#if !`*symbol*... `#endif` construct. If you use an `#ifdef` statement and *symbol* is defined, the associated resource is included in the .resources file; otherwise, it is not included. If you use an `#if !` statement and *symbol* is not defined, the associated resource is included in the .resources file; otherwise, it is not included.
+ Starting with .NET Framework 4.5 and in all versions of .NET Core, text files support conditional compilation with the `#ifdef`*symbol*... `#endif` and `#if !`*symbol*... `#endif` constructs. You can then use the `/define` switch with [Resource File Generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md) to define symbols. Each resource requires its own `#ifdef`*symbol*... `#endif` or `#if !`*symbol*... `#endif` construct. If you use an `#ifdef` statement and *symbol* is defined, the associated resource is included in the .resources file; otherwise, it is not included. If you use an `#if !` statement and *symbol* is not defined, the associated resource is included in the .resources file; otherwise, it is not included.
 
- Comments are optional in text files and are preceded either by a semicolon (;) or by a pound sign (#) at the beginning of a line. Lines that contain comments can be placed anywhere in the file. Comments are not included in a compiled .resources file that is created by using [Resource file generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md).
+ Comments are optional in text files and are preceded either by a semicolon (;) or by a pound sign (#) at the beginning of a line. Lines that contain comments can be placed anywhere in the file. Comments are not included in a compiled .resources file that is created by using [Resource File Generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md).
 
  Any blank lines in the text files are considered to be white space and are ignored.
 
@@ -87,13 +87,13 @@ OKButton=OK
 CancelButton=Cancel
 ```
 
- If the text file contains duplicate occurrences of *name*, [Resource file generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md) displays a warning and ignores the second name.
+ If the text file contains duplicate occurrences of *name*, [Resource File Generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md) displays a warning and ignores the second name.
 
  *value* cannot contain new line characters, but you can use C language-style escape characters such as `\n` to represent a new line and `\t` to represent a tab. You can also include a backslash character if it is escaped (for example, "\\\\"). In addition, an empty string is permitted.
 
- Save resources in text file format by using UTF-8 encoding or UTF-16 encoding in either little-endian or big-endian byte order. However, [Resource file generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md), which converts a .txt file to a .resources file, treats files as UTF-8 by default. If you want Resgen.exe to recognize a file that was encoded using UTF-16, you must include a Unicode byte order mark (U+FEFF) at the beginning of the file.
+ Save resources in text file format by using UTF-8 encoding or UTF-16 encoding in either little-endian or big-endian byte order. However, [Resource File Generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md), which converts a .txt file to a .resources file, treats files as UTF-8 by default. If you want Resgen.exe to recognize a file that was encoded using UTF-16, you must include a Unicode byte order mark (U+FEFF) at the beginning of the file.
 
- To embed a resource file in text format into a .NET assembly, you must convert the file to a binary resource (.resources) file by using [Resource file generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md). You can then embed the .resources file in a .NET assembly by using a language compiler or embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md).
+ To embed a resource file in text format into a .NET assembly, you must convert the file to a binary resource (.resources) file by using [Resource File Generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md). You can then embed the .resources file in a .NET assembly by using a language compiler or embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../../framework/tools/al-exe-assembly-linker.md).
 
  The following example uses a resource file in text format named GreetingResources.txt for a simple "Hello World" console application. The text file defines two strings, `prompt` and `greeting`, that prompt the user to enter their name and display a greeting.
 
@@ -175,7 +175,7 @@ csc greeting.cs -resource:GreetingResources.resources
 
 ## Resources in .resources files
 
-You can use the <xref:System.Resources.ResourceWriter?displayProperty=nameWithType> class to programmatically create a binary resource (.resources) file directly from code. You can also use [Resource file generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md) to create a .resources file from a text file or a .resx file. The .resources file can contain binary data (byte arrays) and object data in addition to string data. Programmatically creating a .resources file requires the following steps:
+You can use the <xref:System.Resources.ResourceWriter?displayProperty=nameWithType> class to programmatically create a binary resource (.resources) file directly from code. You can also use [Resource File Generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md) to create a .resources file from a text file or a .resx file. The .resources file can contain binary data (byte arrays) and object data in addition to string data. Programmatically creating a .resources file requires the following steps:
 
 1. Create a <xref:System.Resources.ResourceWriter> object with a unique file name. You can do this by specifying either a file name or a file stream to a <xref:System.Resources.ResourceWriter> class constructor.
 

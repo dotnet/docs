@@ -15,18 +15,17 @@ helpviewer_keywords:
   - "user interface blocks"
   - "localization [.NET], about localization"
   - "localizing resources"
-ms.assetid: 49d520d7-92d7-44ee-bb24-8b615db1d41b
 ---
 
 # Localization in .NET
 
-In this article, you will learn how to use the <xref:Microsoft.Extensions.Localization.IStringLocalizer%601> and <xref:Microsoft.Extensions.Localization.IStringLocalizerFactory> implementations. Localization is the process of translating an application's resources into localized versions for each culture that the application will support. You should proceed to the localization step only after completing the [Localizability review](localizability-review.md) step to verify that the globalized application is ready for localization.
+Localization is the process of translating an application's resources into localized versions for each culture that the application will support. You should proceed to the localization step only after completing the [Localizability review](localizability-review.md) step to verify that the globalized application is ready for localization.
 
 An application that is ready for localization is separated into two conceptual blocks: a block that contains all user interface elements and a block that contains executable code. The user interface block contains only localizable user-interface elements such as strings, error messages, dialog boxes, menus, embedded object resources, and so on for the neutral culture. The code block contains only the application code to be used by all supported cultures. The common language runtime supports a satellite assembly resource model that separates an application's executable code from its resources. For more information about implementing this model, see [Resources in .NET](resources.md).
 
 For each localized version of your application, add a new satellite assembly that contains the localized user interface block translated into the appropriate language for the target culture. The code block for all cultures should remain the same. The combination of a localized version of the user interface block with the code block produces a localized version of your application.
 
-All of the example source code in this article relies on the [`Microsoft.Extensions.Localization`](https://www.nuget.org/packages/microsoft.extensions.localization) and [`Microsoft.Extensions.Hosting`](https://www.nuget.org/packages/microsoft.extensions.hosting) NuGet packages. For more information on hosting, see [.NET Generic Host](generic-host.md).
+In this article, you will learn how to use the <xref:Microsoft.Extensions.Localization.IStringLocalizer%601> and <xref:Microsoft.Extensions.Localization.IStringLocalizerFactory> implementations. All of the example source code in this article relies on the [`Microsoft.Extensions.Localization`](https://www.nuget.org/packages/microsoft.extensions.localization) and [`Microsoft.Extensions.Hosting`](https://www.nuget.org/packages/microsoft.extensions.hosting) NuGet packages. For more information on hosting, see [.NET Generic Host](generic-host.md).
 
 ## Resource files
 

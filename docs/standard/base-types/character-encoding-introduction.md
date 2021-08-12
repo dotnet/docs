@@ -110,7 +110,7 @@ Here are some examples of code point assignments, with links to Unicode charts i
 
 Code points are customarily referred to by using the syntax `U+xxxx`, where `xxxx` is the hex-encoded integer value.
 
-Within the full range of code points there are two sub-ranges:
+Within the full range of code points there are two subranges:
 
 * The **Basic Multilingual Plane (BMP)** in the range `U+0000..U+FFFF`. This 16-bit range provides 65,536 code points, enough to cover the majority of the world's writing systems.
 * **Supplementary code points** in the range `U+10000..U+10FFFF`. This 21-bit range provides more than a million additional code points that can be used for less well-known languages and other purposes such as emojis.

@@ -56,7 +56,7 @@ The following image shows the satellite assembly directory:
 
 ## Compile satellite assemblies
 
-You use [Resource file generator (*resgen.exe*)](../../framework/tools/resgen-exe-resource-file-generator.md) to compile text files or XML (*.resx*) files that contain resources to binary *.resources* files. You then use [Assembly linker (*al.exe*)](../../framework/tools/al-exe-assembly-linker.md) to compile *.resources* files into satellite assemblies. *al.exe* creates an assembly from the *.resources* files that you specify. Satellite assemblies can contain only resources; they cannot contain any executable code.
+You use [Resource File Generator (*resgen.exe*)](../../framework/tools/resgen-exe-resource-file-generator.md) to compile text files or XML (*.resx*) files that contain resources to binary *.resources* files. You then use [Assembly Linker (*al.exe*)](../../framework/tools/al-exe-assembly-linker.md) to compile *.resources* files into satellite assemblies. *al.exe* creates an assembly from the *.resources* files that you specify. Satellite assemblies can contain only resources; they cannot contain any executable code.
 
 The following *al.exe* command creates a satellite assembly for the application `Example` from the German resources file *strings.de.resources*.
 
@@ -80,7 +80,7 @@ The following table describes the *al.exe* options used in these commands in mor
 | `-out:Example.resources.dll` | Specifies the name of the output file. The name must follow the naming standard *baseName*.resources.*extension*, where *baseName* is the name of the main assembly and *extension* is a valid file name extension (such as .dll). Note that the runtime is not able to determine the culture of a satellite assembly based on its output file name; you must use the **/culture** option to specify it. |
 | `-template:Example.dll` | Specifies an assembly from which the satellite assembly will inherit all assembly metadata except the culture field. This option affects satellite assemblies only if you specify an assembly that has a [strong name](../../standard/assembly/strong-named.md). |
 
-For a complete list of options available with *al.exe*, see [Assembly linker (*al.exe*)](../../framework/tools/al-exe-assembly-linker.md).
+For a complete list of options available with *al.exe*, see [Assembly Linker (*al.exe*)](../../framework/tools/al-exe-assembly-linker.md).
 
 ## Satellite assemblies example
 
@@ -172,7 +172,7 @@ sn –p TestKeyPair.snk PublicKey.snk
 
 ### Delay signing an Assembly
 
-After you obtain or create the public key, you use the [Assembly linker (*al.exe*)](../../framework/tools/al-exe-assembly-linker.md) to compile the assembly and specify delayed signing.
+After you obtain or create the public key, you use the [Assembly Linker (*al.exe*)](../../framework/tools/al-exe-assembly-linker.md) to compile the assembly and specify delayed signing.
 
 The following *al.exe* command creates a strong-named satellite assembly for the application StringLibrary from the *strings.ja.resources* file:
 

@@ -1,6 +1,6 @@
 ---
-title: "Retrieving Resources in Desktop Apps"
-description: Retrieve resources in desktop apps. Package resources for the default (neutral) culture with the main assembly and create a satellite assembly for each culture.
+title: "Retrieve resources in .NET apps"
+description: Retrieve resources in .NET apps. Package resources for the default (neutral) culture with the main assembly and create a satellite assembly for each culture.
 ms.date: 08/09/2021
 dev_langs: 
  - "csharp"

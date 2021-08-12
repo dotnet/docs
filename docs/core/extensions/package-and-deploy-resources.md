@@ -31,7 +31,7 @@ ms.assetid: b224d7c0-35f8-4e82-a705-dd76795e8d16
 
 # Package and deploy resources in .NET Apps
 
-Applications rely on the .NET Framework Resource Manager, represented by the <xref:System.Resources.ResourceManager> class, to retrieve localized resources. The Resource Manager assumes that a hub and spoke model is used to package and deploy resources. The hub is the main assembly that contains the non-localizable executable code and the resources for a single culture, called the neutral or default culture. The default culture is the fallback culture for the application; it is the culture whose resources are used if localized resources cannot be found. Each spoke connects to a satellite assembly that contains the resources for a single culture, but does not contain any code.
+Applications rely on the .NET Framework Resource Manager, represented by the <xref:System.Resources.ResourceManager> class, to retrieve localized resources. The Resource Manager assumes that a hub and spoke model is used to package and deploy resources. The hub is the main assembly that contains the nonlocalizable executable code and the resources for a single culture, called the neutral or default culture. The default culture is the fallback culture for the application; it is the culture whose resources are used if localized resources cannot be found. Each spoke connects to a satellite assembly that contains the resources for a single culture, but does not contain any code.
 
 There are several advantages to this model:
 
@@ -179,7 +179,7 @@ The second, resources,ru.txt, contains a Russian language resource.
 Greeting=Добрый день
 ```
 
-These two files are compiled to .resources files by running the [resource file generator (*resgen.exe*)](../../framework/tools/resgen-exe-resource-file-generator.md) from the command line. For the French language resource, the command is:
+These two files are compiled to .resources files by running [Resource File Generator (*resgen.exe*)](../../framework/tools/resgen-exe-resource-file-generator.md) from the command line. For the French language resource, the command is:
 
 ```console
 resgen.exe resources.fr.txt
@@ -191,7 +191,7 @@ For the Russian language resource, the command is:
 resgen.exe resources.ru.txt
 ```
 
-The .resources files are embedded into dynamic link libraries by running [assembly linker (*al.exe*)](../../framework/tools/al-exe-assembly-linker.md) from the command line for the French language resource as follows:
+The .resources files are embedded into dynamic link libraries by running [Assembly Linker (*al.exe*)](../../framework/tools/al-exe-assembly-linker.md) from the command line for the French language resource as follows:
 
 ```console
 al /t:lib /embed:resources.fr.resources /culture:fr /out:fr\Example1.resources.dll

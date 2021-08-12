@@ -1,7 +1,7 @@
 ---
 title: dotnet workload repair command
 description: The 'dotnet workload repair' command repairs workload installations.
-ms.date: 07/08/2021
+ms.date: 08/12/2021
 ---
 # dotnet workload repair
 
@@ -15,8 +15,10 @@ ms.date: 07/08/2021
 
 ```dotnetcli
 dotnet workload repair
-    [--configfile <FILE>] [--sdk-version <VERSION>]
-    [--source <SOURCE>] [-v|--verbosity <LEVEL>]
+    [--configfile] [--disable-parallel] [--ignore-failed-sources]
+    [--interactive] [--no-cache] [--sdk-version <VERSION>]
+    [-s|--source <SOURCE>] [--temp-dir <PATH>]
+    [-v|--verbosity <LEVEL>]
 
 dotnet workload repair -?|-h|--help
 ```
@@ -39,11 +41,33 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 [!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 
+- **`--disable-parallel`**
+
+  Prevents restoring multiple projects in parallel.
+
 [!INCLUDE [help](../../../includes/cli-help.md)]
+
+- **`--ignore-failed-sources`**
+
+  Treats package source failures as warnings.
+
+- **`--include-previews`**
+
+  Allows prerelease workload manifests.
+
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+
+- **`--no-cache`**
+
+  Prevents caching of packages and http requests.
 
 [!INCLUDE [sdk-version](../../../includes/cli-sdk-version.md)]
 
 [!INCLUDE [source](../../../includes/cli-source.md)]
+
+- **`--temp-dir <PATH>`**
+
+  Specify the temporary directory used to download and extract NuGet packages (must be secure).
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 

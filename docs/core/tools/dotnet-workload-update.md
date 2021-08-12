@@ -20,7 +20,7 @@ dotnet workload update
     [--download-to-cache <CACHE>] [--from-cache <CACHE>]
     [--from-previous-sdk] [--ignore-failed-sources]
     [--include-previews] [--interactive] [--no-cache]
-    [--sdk-version <VERSION>] [--source <SOURCE>]
+    [--sdk-version <VERSION>] [-s|--source <SOURCE>]
     [--temp-dir <PATH>] [-v|--verbosity <LEVEL>]
 
 dotnet workload update -?|-h|--help

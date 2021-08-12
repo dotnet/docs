@@ -1,7 +1,7 @@
 ---
 title: dotnet workload list command
 description: The 'dotnet workload list' command lists installed workloads.
-ms.date: 07/08/2021
+ms.date: 08/12/2021
 ---
 # dotnet workload list
 
@@ -14,7 +14,10 @@ ms.date: 07/08/2021
 ### Synopsis
 
 ```dotnetcli
-dotnet workload list [-v|--verbosity <LEVEL>]
+dotnet workload list [--disable-parallel]
+    [--ignore-failed-sources] [--include-previews]
+    [--interactive] [--no-cache] [--sdk-version <VERSION>]
+    [--temp-dir <PATH>] [-v|--verbosity <LEVEL>]
 
 dotnet workload list [-?|-h|--help]
 ```
@@ -29,9 +32,33 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 <!-- markdownlint-disable MD012 -->
 
+- **`--disable-parallel`**
+
+  Prevents restoring multiple projects in parallel.
+
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- **`--ignore-failed-sources`**
+
+  Treats package source failures as warnings.
+
+- **`--include-previews`**
+
+  Allows prerelease workload manifests.
+
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+
+- **`--no-cache`**
+
+  Prevents caching of packages and http requests.
+
+[!INCLUDE [sdk-version](../../../includes/cli-sdk-version.md)]
+
+- **`--temp-dir <PATH>`**
+
+  Specify the temporary directory used to download and extract NuGet packages (must be secure).
+
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-packages.md)]
 
 ## Examples
 

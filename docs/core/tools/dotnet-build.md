@@ -1,7 +1,7 @@
 ---
 title: dotnet build command
 description: The dotnet build command builds a project and all of its dependencies.
-ms.date: 02/14/2020
+ms.date: 08/12/2021
 ---
 # dotnet build
 
@@ -14,9 +14,10 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet build [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
-    [-f|--framework <FRAMEWORK>] [--force] [--interactive] [--no-dependencies]
-    [--no-incremental] [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
+dotnet build [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
+    [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
+    [--force] [--interactive] [--no-dependencies] [--no-incremental]
+    [--no-restore] [--nologo] [--os <OS>] [-o|--output <OUTPUT_DIRECTORY>]
     [-r|--runtime <RUNTIME_IDENTIFIER>] [--source <SOURCE>]
     [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
@@ -78,6 +79,8 @@ The project or solution file to build. If a project or solution file isn't speci
 
 <!-- markdownlint-disable MD012 -->
 
+[!INCLUDE [arch](../../../includes/cli-arch.md)]
+
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
 - **`-f|--framework <FRAMEWORK>`**
@@ -111,6 +114,8 @@ The project or solution file to build. If a project or solution file isn't speci
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
   Directory in which to place the built binaries. If not specified, the default path is `./bin/<configuration>/<framework>/`.  For projects with multiple target frameworks (via the `TargetFrameworks` property), you also need to define `--framework` when you specify this option.
+
+[!INCLUDE [os](../../../includes/cli-os.md)]
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 

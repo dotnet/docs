@@ -1,7 +1,7 @@
 ---
 title: dotnet publish command
 description: The dotnet publish command publishes a .NET project or solution to a directory.
-ms.date: 02/03/2021
+ms.date: 08/12/2021
 ---
 # dotnet publish
 
@@ -14,11 +14,13 @@ ms.date: 02/03/2021
 ## Synopsis
 
 ```dotnetcli
-dotnet publish [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
+dotnet publish [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
+    [-c|--configuration <CONFIGURATION>]
     [-f|--framework <FRAMEWORK>] [--force] [--interactive]
     [--manifest <PATH_TO_MANIFEST_FILE>] [--no-build] [--no-dependencies]
     [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
-    [-r|--runtime <RUNTIME_IDENTIFIER>] [--self-contained [true|false]]
+    [--os <OS>] [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [--self-contained [true|false]]
     [--no-self-contained] [-v|--verbosity <LEVEL>]
     [--version-suffix <VERSION_SUFFIX>]
 
@@ -100,6 +102,8 @@ For more information, see the following resources:
 
 <!-- markdownlint-disable MD012 -->
 
+[!INCLUDE [arch](../../../includes/cli-arch.md)]
+
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
 - **`-f|--framework <FRAMEWORK>`**
@@ -157,6 +161,8 @@ For more information, see the following resources:
     If you specify a relative path when publishing a project, the generated output directory is relative to the project file location, not to the current working directory.
 
     If you specify a relative path when publishing a solution, each project's output goes into a separate folder relative to the project file location. If you specify an absolute path when publishing a solution, all publish output for all projects goes into the specified folder.
+
+[!INCLUDE [os](../../../includes/cli-os.md)]
 
 - **`--self-contained [true|false]`**
 

@@ -68,15 +68,6 @@ Examples of the type of predictions that you can make with ML.NET:
     :::column-end:::
 :::row-end:::
 
-<!-- |||
-|---|---|
-|**Classification/Categorization**|Automatically divide customer feedback into positive and negative categories|
-|**Regression/Predict continuous values**|Predict the price of houses based on size and location|
-|**Anomaly Detection**|Detect fraudulent banking transactions |
-|**Recommendations**|Suggest products that online shoppers may want to buy, based on their previous purchases|
-|**Time series/sequential data**|Forecast the weather/product sales|
-|**Image classification**|Categorize pathologies in medical images| -->
-
 ## Hello ML.NET World
 
 The code in the following snippet demonstrates the simplest ML.NET application. This example constructs a linear regression model to predict house prices using house size and price data.
@@ -322,21 +313,6 @@ An ML.NET application starts with an <xref:Microsoft.ML.MLContext> object. This 
         <xref:Microsoft.ML.ModelOperationsCatalog>
     :::column-end:::
 :::row-end:::
-
-<!-- |||||
-|---|---|---|---|
-|**Data loading and saving**||<xref:Microsoft.ML.DataOperationsCatalog>||
-|**Data preparation**||<xref:Microsoft.ML.TransformsCatalog>||
-|**Training algorithms**|Binary classification|<xref:Microsoft.ML.BinaryClassificationCatalog>||
-||Multiclass classification|<xref:Microsoft.ML.MulticlassClassificationCatalog>||
-||Anomaly detection|<xref:Microsoft.ML.AnomalyDetectionCatalog>||
-||Clustering|<xref:Microsoft.ML.ClusteringCatalog>||
-||Forecasting|<xref:Microsoft.ML.ForecastingCatalog>||
-||Ranking|<xref:Microsoft.ML.RankingCatalog>||
-||Regression|<xref:Microsoft.ML.RegressionCatalog>||
-||Recommendation|<xref:Microsoft.ML.RecommendationCatalog>|add the `Microsoft.ML.Recommender` NuGet package|
-||TimeSeries|<xref:Microsoft.ML.TimeSeriesCatalog>|add the `Microsoft.ML.TimeSeries` NuGet package|
-|**Model usage** ||<xref:Microsoft.ML.ModelOperationsCatalog>|| -->
 
 You can navigate to the creation methods in each of the above categories. Using Visual Studio, the catalogs show up via IntelliSense.
 

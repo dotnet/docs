@@ -48,7 +48,7 @@ System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.
 string text = string.Format("{0:C}", 100);
 ```
 
-- In previous versions of .NET on Windows, the value of text is `"100,00 &euro;"`.
+- In previous versions of .NET on Windows, the value of text is `"100,00 €"`.
 - In .NET 5 and later versions on Windows 19H1 and later versions, the value of text is `"100,00 ¤"`, which uses the international currency symbol instead of the euro. In ICU, the design is that a currency is a property of a country or region, not a language.
 
 ## Reason for change

@@ -262,7 +262,7 @@ When adding a web API to your solution, you will be prompted to name the project
      Invoke-RestMethod "https://localhost:<PORT>/predict" -Method Post -Body ($body | ConvertTo-Json) -ContentType "application/json"
     ```
 
-1. If successful, the output should look similar to the text below. 
+1. If successful, the output should look similar to the text below.
 
     ```powershell
     boxes                                      labels scores       boundingBoxes
@@ -271,7 +271,7 @@ When adding a web API to your solution, you will be prompted to name the project
     ```
 
     - The `boxes` column gives the bounding box coordinates of the object that was detected. The values here belong to the left, top, right, and bottom coordinates respectively.
-    - The `labels` are the index of the predicted labels. In this case, the value 1 is a stop sign. 
+    - The `labels` are the index of the predicted labels. In this case, the value 1 is a stop sign.
     - The `scores` defines how confident the model is that the bounding box belongs to that label.
 
     > [!NOTE]

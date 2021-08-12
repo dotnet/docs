@@ -176,7 +176,7 @@ For more information, see the following resources:
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). For more information, see [.NET application publishing](../deploying/index.md) and [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md).
+  Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). For more information, see [.NET application publishing](../deploying/index.md) and [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md). If you use this option, use `--self-contained` or `--no-self-contained` also.
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 

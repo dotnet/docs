@@ -17,8 +17,9 @@ ms.date: 08/12/2021
 dotnet build [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
     [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
     [--force] [--interactive] [--no-dependencies] [--no-incremental]
-    [--no-restore] [--nologo] [--os <OS>] [-o|--output <OUTPUT_DIRECTORY>]
-    [-r|--runtime <RUNTIME_IDENTIFIER>] [--source <SOURCE>]
+    [--no-restore] [--nologo] [--no-self-contained] [--os <OS>]
+    [-o|--output <OUTPUT_DIRECTORY>] [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [--self-contained [true|false]] [--source <SOURCE>]
     [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
 dotnet build -h|--help
@@ -111,6 +112,10 @@ The project or solution file to build. If a project or solution file isn't speci
 
   Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
 
+- **`--no-self-contained`**
+
+  Publishes the application as a framework dependent application. A compatible .NET runtime must be installed on the target machine to run the application.
+
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
   Directory in which to place the built binaries. If not specified, the default path is `./bin/<configuration>/<framework>/`.  For projects with multiple target frameworks (via the `TargetFrameworks` property), you also need to define `--framework` when you specify this option.
@@ -119,7 +124,11 @@ The project or solution file to build. If a project or solution file isn't speci
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
+  Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). If you use this option, use `--self-contained` or `--no-self-contained` also.
+
+- **`--self-contained [true|false]`**
+
+  Publishes the .NET runtime with the application so the runtime doesn't need to be installed on the target machine. The default is `true` if a runtime identifier is specified.
 
 - **`--source <SOURCE>`**
 

@@ -166,7 +166,115 @@ In this section, we go through the architectural patterns of ML.NET. If you are 
 
 An ML.NET application starts with an <xref:Microsoft.ML.MLContext> object. This singleton object contains **catalogs**. A catalog is a factory for data loading and saving, transforms, trainers, and model operation components. Each catalog object has methods to create the different types of components:
 
-|||||
+:::row:::
+    :::column:::
+        **Data loading and saving**
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.DataOperationsCatalog>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        **Data preparation**
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.TransformsCatalog>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="3":::
+        **Training algorithms**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Binary classification
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.BinaryClassificationCatalog>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Multiclass classification
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.MulticlassClassificationCatalog>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Anomaly detection
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.AnomalyDetectionCatalog>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Clustering
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.ClusteringCatalog>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Forecasting
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.ForecastingCatalog>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Ranking
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.RankingCatalog>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Regression
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.RegressionCatalog>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Recommendation
+    :::column-end:::
+    :::column span="":::
+        <xref:Microsoft.ML.RecommendationCatalog>
+    :::column-end:::
+    :::column span="":::
+        Add the `Microsoft.ML.Recommender` NuGet package
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        TimeSeries
+    :::column-end:::
+    :::column span="":::
+        <xref:Microsoft.ML.TimeSeriesCatalog>
+    :::column-end:::
+    :::column span="":::
+        Add the `Microsoft.ML.TimeSeries` NuGet package
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        **Model usage**
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.ModelOperationsCatalog>
+    :::column-end:::
+:::row-end:::
+
+<!-- |||||
 |---|---|---|---|
 |**Data loading and saving**||<xref:Microsoft.ML.DataOperationsCatalog>||
 |**Data preparation**||<xref:Microsoft.ML.TransformsCatalog>||
@@ -179,7 +287,7 @@ An ML.NET application starts with an <xref:Microsoft.ML.MLContext> object. This 
 ||Regression|<xref:Microsoft.ML.RegressionCatalog>||
 ||Recommendation|<xref:Microsoft.ML.RecommendationCatalog>|add the `Microsoft.ML.Recommender` NuGet package|
 ||TimeSeries|<xref:Microsoft.ML.TimeSeriesCatalog>|add the `Microsoft.ML.TimeSeries` NuGet package|
-|**Model usage** ||<xref:Microsoft.ML.ModelOperationsCatalog>||
+|**Model usage** ||<xref:Microsoft.ML.ModelOperationsCatalog>|| -->
 
 You can navigate to the creation methods in each of the above categories. Using Visual Studio, the catalogs show up via IntelliSense.
 

@@ -19,14 +19,64 @@ ML.NET runs on Windows, Linux, and macOS using .NET Core, or Windows using .NET 
 
 Examples of the type of predictions that you can make with ML.NET:
 
-|||
+:::row:::
+    :::column:::
+        **Classification/Categorization**
+    :::column-end:::
+    :::column:::
+        Automatically divide customer feedback into positive and negative categories
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        **Regression/Predict continuous values**
+    :::column-end:::
+    :::column:::
+        Predict the price of houses based on size and location
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        **Anomaly Detection**
+    :::column-end:::
+    :::column:::
+        Detect fraudulent banking transactions
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        **Recommendations**
+    :::column-end:::
+    :::column:::
+        Suggest products that online shoppers may want to buy, based on their previous purchases
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        **Time series/sequential data**
+    :::column-end:::
+    :::column:::
+        Forecast the weather/product sales
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        **Image classification**
+    :::column-end:::
+    :::column:::
+        Categorize pathologies in medical images
+    :::column-end:::
+:::row-end:::
+
+
+<!-- |||
 |---|---|
 |**Classification/Categorization**|Automatically divide customer feedback into positive and negative categories|
 |**Regression/Predict continuous values**|Predict the price of houses based on size and location|
 |**Anomaly Detection**|Detect fraudulent banking transactions |
 |**Recommendations**|Suggest products that online shoppers may want to buy, based on their previous purchases|
 |**Time series/sequential data**|Forecast the weather/product sales|
-|**Image classification**|Categorize pathologies in medical images|
+|**Image classification**|Categorize pathologies in medical images| -->
 
 ## Hello ML.NET World
 

@@ -15,7 +15,7 @@ Occasionally, you may want to have unit tests run in a specific order. Ideally, 
 If you prefer to browse the source code, see the [order .NET Core unit tests](/samples/dotnet/samples/order-unit-tests-cs) sample repository.
 
 > [!TIP]
-> In addition to the ordering capabilities outlined in this article, consider [creating custom playlists with Visual Studio](/visualstudio/test/run-unit-tests-with-test-explorer?view=vs-2019#create-custom-playlists) as an alternative.
+> In addition to the ordering capabilities outlined in this article, consider [creating custom playlists with Visual Studio](/visualstudio/test/run-unit-tests-with-test-explorer#create-custom-playlists) as an alternative.
 
 :::zone pivot="mstest"
 

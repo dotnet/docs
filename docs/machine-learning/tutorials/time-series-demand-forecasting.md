@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Forecast bike rental demand - time series'
 description: This tutorial shows you how to forecast demand for a bike rental service using univariate time-series analysis and ML.NET.
-ms.date: 06/30/2020
+ms.date: 08/09/2021
 ms.topic: tutorial
 ms.custom: mvc
 ms.author: luquinta
@@ -25,7 +25,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later or Visual Studio 2017 version 15.6 or later with the ".NET Core cross-platform development" workload installed.
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later with the ".NET Core cross-platform development" workload installed.
 
 ## Time series forecasting sample overview
 

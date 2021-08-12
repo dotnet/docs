@@ -533,7 +533,9 @@ The following MSBuild properties are documented in this section:
 
 ### AnalysisLevel
 
-The `AnalysisLevel` property lets you specify a version of code analyzers. For example, if you want access to preview code analyzers, set `AnalysisLevel` to `preview`.
+The `AnalysisLevel` property lets you specify a set of code analyzers to run according to a .NET release. Each .NET release, starting in .NET 5, has a set of code analysis rules. Of that set, the rules that are enabled by default for that release will analyze your code.
+
+For example, if you upgrade to .NET 6 but don't want the default set of code analysis rules to change, set `AnalysisLevel` to `5`.
 
 ```xml
 <PropertyGroup>
@@ -573,7 +575,8 @@ The following table shows the values you can specify.
 
 > [!NOTE]
 >
-> - In .NET 5 and earlier versions, this property only affects [code-quality (CAXXXX) rules](../../fundamentals/code-analysis/quality-rules/index.md). Starting in .NET 6, if [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) is set to `true`, this property also affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md).
+> - In .NET 5 and earlier versions, this property only affects [code-quality (CAXXXX) rules](../../fundamentals/code-analysis/quality-rules/index.md). Starting in .NET 6, if you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) too.
+> - If you set a compound value for `AnalysisLevel`, you don't need to specify an [AnalysisMode](#analysismode). However, if you do, `AnalysisLevel` takes precedence over `AnalysisMode`.
 > - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
 
 ### AnalysisLevel\<Category>
@@ -635,8 +638,8 @@ none, default, minimum, recommended, all
 
 > [!NOTE]
 >
-> - In .NET 5 and earlier versions, this property only affects [code-quality (CAXXXX) rules](../../fundamentals/code-analysis/quality-rules/index.md). Starting in .NET 6, if [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) is set to `true`, this property also affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md).
-> - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>5-recommended</AnalysisLevel>`, you can omit this property entirely.
+> - In .NET 5 and earlier versions, this property only affects [code-quality (CAXXXX) rules](../../fundamentals/code-analysis/quality-rules/index.md). Starting in .NET 6, if you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) too.
+> - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>5-recommended</AnalysisLevel>`, you can omit this property entirely. However, if you specify both properties, `AnalysisLevel` takes precedence over `AnalysisMode`.
 > - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
 
 ### AnalysisMode\<Category>

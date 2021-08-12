@@ -18,6 +18,8 @@ If WebSockets are unavailable for a circuit (for example, due to network issues 
 
 ## New behavior
 
+The following table shows the error message you'll receive for each combination of client and server configurations.
+
 | Client | Server | Message |
 |---|---|---|
 | WS (without browser WS support) | WebSockets | `Unable to connect, please ensure you are using an updated browser that supports WebSockets.` |
@@ -31,7 +33,7 @@ This change was mode to improve the overall end-user experience by enforcing Web
 
 ## Recommended action
 
-Ensure WebSockets are functioning as expected with your application. If you must use LongPolling, you can enable it by making the following client and server side changes:
+Ensure WebSockets are functioning as expected with your application. If you must use LongPolling, you can enable it by making the following client and server side changes.
 
 ### Server side
 
@@ -46,7 +48,7 @@ endpoints.MapBlazorHub(configureOptions: options =>
 
 ### Client side
 
-Add the following script to `_Layout.cshtml` before the closing `</body>` tag. The supported <xref:Microsoft.AspNetCore.Http.Connections.HttpTransportType> fields are <xref:Microsoft.AspNetCore.Http.Connections.HttpTransportType.WebSockets?displayProperty=nameWithType> (`1`) and <xref:Microsoft.AspNetCore.Http.Connections.HttpTransportType.LongPolling?displayProperty=nameWithType>.
+Add the following script to `_Layout.cshtml` before the closing `</body>` tag. The supported <xref:Microsoft.AspNetCore.Http.Connections.HttpTransportType> fields are <xref:Microsoft.AspNetCore.Http.Connections.HttpTransportType.WebSockets?displayProperty=nameWithType> (`1`) and <xref:Microsoft.AspNetCore.Http.Connections.HttpTransportType.LongPolling?displayProperty=nameWithType> (`4`).
 
 ```html
 <script>

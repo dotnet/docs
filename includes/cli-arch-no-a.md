@@ -6,4 +6,4 @@ ms.topic: include
 ---
 - **`[--arch] <ARCHITECTURE>`**
 
-  Specifies the target architecture. This value overrides the architecture part of the default Runtime Identifier (RID). If you use this option, don't use `-r|--runtime`. Available since .NET 6 Preview 7.
+  Specifies the target architecture. This value sets the architecture part of the [Runtime Identifier (RID)](../docs/core/rid-catalog.md). If you use this option, don't use `-r|--runtime`. Available since .NET 6 Preview 7.

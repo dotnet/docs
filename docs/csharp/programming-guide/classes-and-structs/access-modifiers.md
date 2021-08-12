@@ -18,6 +18,17 @@ All types and type members have an accessibility level. The accessibility level 
 - [protected internal](../../language-reference/keywords/protected-internal.md): The type or member can be accessed by any code in the assembly in which it's declared, or from within a derived `class` in another assembly.
 - [private protected](../../language-reference/keywords/private-protected.md): The type or member can be accessed only within its declaring assembly, by code in the same `class` or in a type that is derived from that `class`.
 
+**Summary Table**
+Caller's location ↓  | public | protected internal | protected | internal | private protected | private 
+-- | -- | -- | -- | -- | -- | --
+**<ins>Within the assembly</ins>** |   |   |   |   |   |  
+Within the class | ✔ | ✔ | ✔ | ✔ | ✔ | ✔
+Derived class | ✔ | ✔ | ✔ | ✔ | ✔ | ❌
+Non-derived class | ✔ | ✔ | ❌ | ✔ | ❌ | ❌
+**<ins>In an external assembly</ins>** |   |   |   |   |   |  
+Derived class | ✔ | ✔ | ✔ | ❌ | ❌ | ❌
+Non-derived class | ✔ | ❌ | ❌ | ❌ | ❌ | ❌
+
 The following examples demonstrate how to specify access modifiers on a type and member:
 
 [!code-csharp[PublicAccess](~/samples/snippets/csharp/objectoriented/accessmodifiers.cs#PublicAccess)]

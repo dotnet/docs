@@ -1,7 +1,7 @@
 ---
 title: What is ML.NET and how does it work?
 description: ML.NET gives you the ability to add machine learning to .NET applications, in either online or offline scenarios. With this capability, you can make automatic predictions using the data available to your application without having to be connected to a network to use ML.NET. This article explains the basics of machine learning in ML.NET.
-ms.date: 08/06/2021
+ms.date: 08/12/2021
 ms.topic: overview
 ms.custom: mvc
 #Customer intent: As a developer, I want to learn how ML.NET works so that I can leverage machine learning in my applications.
@@ -67,7 +67,6 @@ Examples of the type of predictions that you can make with ML.NET:
         Categorize pathologies in medical images
     :::column-end:::
 :::row-end:::
-
 
 <!-- |||
 |---|---|

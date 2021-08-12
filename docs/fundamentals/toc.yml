@@ -2108,8 +2108,9 @@ items:
   - name: HTTP with .NET
     href: ../core/extensions/http-client.md
   - name: Globalization and localization
-    href: ../core/extensions/globalization-and-localization.md
     items:
+    - name: Overview
+      href: ../core/extensions/globalization-and-localization.md
     - name: Globalization
       href: ../core/extensions/globalization.md
     - name: Globalization and ICU

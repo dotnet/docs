@@ -1,6 +1,6 @@
 ---
 title: Localization in .NET
-description: Learn how to use the IStringLocalizer and IStringLocalizerFactory implementations with dependency injection in your .NET workloads.
+description: Learn the concepts of localization while learning how to use the IStringLocalizer and IStringLocalizerFactory implementations in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
 ms.date: 08/10/2021

@@ -20,7 +20,7 @@ All types and type members have an accessibility level. The accessibility level 
 
 **Summary table**
 
-| Caller's location ↓  | public | protected internal | protected | internal | private protected | private |
+| Caller's location  | `public` | `protected internal` | `protected` | `internal` | `private protected` | `private` |
 | -- | -- | -- | -- | -- | -- | -- |
 | ***Within the assembly*** |   |   |   |   |   |   |
 | Within the class | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |

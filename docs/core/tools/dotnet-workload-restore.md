@@ -42,45 +42,29 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 [!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 
-- **`--disable-parallel`**
+[!INCLUDE [disable-parallel](../../../includes/cli-disable-parallel.md)]
 
-  Prevents restoring multiple projects in parallel.
+[!INCLUDE [download-to-cache](../../../includes/cli-download-to-cache.md)]
 
-- **`--download-to-cache <PATH_TO_CACHE>`**
-
-  Downloads packages needed for a workload to a folder that can be used for offline installation.
-
-- **`--from-cache <PATH_TO_CACHE>`**
-
-  Complete the operation from cache (offline).
+[!INCLUDE [from-cache](../../../includes/cli-from-cache.md)]
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`--ignore-failed-sources`**
+[!INCLUDE [ignore-failed-sources](../../../includes/cli-ignore-failed-sources.md)]
 
-  Treats package source failures as warnings.
-
-- **`--include-previews`**
-
-  Allows prerelease workload manifests.
+[!INCLUDE [include-previews](../../../includes/cli-include-previews.md)]
 
 [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
-- **`--no-cache`**
-
-  Prevents caching of packages and http requests.
+[!INCLUDE [no-cache](../../../includes/cli-no-cache.md)]
 
 [!INCLUDE [sdk-version](../../../includes/cli-sdk-version.md)]
 
-- **`--skip-manifest-update`**
-
-  Skip updating the workload manifests. The workload manifests define what assets and versions need to be installed for each workload.
+[!INCLUDE [skip-manifest-update](../../../includes/cli-skip-manifest-update.md)]
 
 [!INCLUDE [source](../../../includes/cli-source.md)]
 
-- **`--temp-dir <PATH>`**
-
-  Configure the temporary directory used for this command (must be secure).
+[!INCLUDE [temp-dir](../../../includes/cli-temp-dir.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-packages.md)]
 

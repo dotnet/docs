@@ -41,33 +41,23 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 [!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 
-- **`--disable-parallel`**
-
-  Prevents restoring multiple projects in parallel.
+[!INCLUDE [disable-parallel](../../../includes/cli-disable-parallel.md)]
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`--ignore-failed-sources`**
+[!INCLUDE [ignore-failed-sources](../../../includes/cli-ignore-failed-sources.md)]
 
-  Treats package source failures as warnings.
-
-- **`--include-previews`**
-
-  Allows prerelease workload manifests.
+[!INCLUDE [include-previews](../../../includes/cli-include-previews.md)]
 
 [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
-- **`--no-cache`**
-
-  Prevents caching of packages and http requests.
+[!INCLUDE [no-cache](../../../includes/cli-no-cache.md)]
 
 [!INCLUDE [sdk-version](../../../includes/cli-sdk-version.md)]
 
 [!INCLUDE [source](../../../includes/cli-source.md)]
 
-- **`--temp-dir <PATH>`**
-
-  Specify the temporary directory used to download and extract NuGet packages (must be secure).
+[!INCLUDE [temp-dir](../../../includes/cli-temp-dir.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 

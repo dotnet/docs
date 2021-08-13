@@ -48,7 +48,7 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 [!INCLUDE [temp-dir](../../../includes/cli-temp-dir.md)]
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-packages.md)]
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ## Examples
 

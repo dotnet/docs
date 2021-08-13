@@ -131,7 +131,7 @@ In fact, if we combine this rule and Rule #1, we can do even better and rewrite 
 void DisplayBufferToConsole(ReadOnlySpan<char> buffer);
 ```
 
-The `DisplayBufferToConsole` method now works with virtually every buffer type imaginable: `T[]`, storage allocated with [stackalloc](../../csharp/language-reference/operators/stackalloc.md), and so on. You can even pass a <xref:System.String> directly into it!
+The `DisplayBufferToConsole` method now works with any type of memory allocated on the heap.  `Memory<T>` can't be used with memory allocated on the stack with stackalloc. Stack-allocated memory is only supported by Span<T>.
 
 **Rule #3: If your method accepts Memory\<T> and returns `void`, you must not use the Memory\<T> instance after your method returns.**
 

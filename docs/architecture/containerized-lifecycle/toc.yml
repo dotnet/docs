@@ -2,14 +2,14 @@
   href: index.md
   items:
   - name: Introduction to Containers and Docker
-    href: ../microservices/container-docker-introduction/index.md
+    href: ../microservices/container-docker-introduction/index.md?toc=/dotnet/architecture/containerized-lifecycle/toc.json&bc=/dotnet/breadcrumb/toc.json
     items:
     - name: What is Docker?
-      href: ../microservices/container-docker-introduction/docker-defined.md
+      href: ../microservices/container-docker-introduction/docker-defined.md?toc=/dotnet/architecture/containerized-lifecycle/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Docker terminology
-      href: ../microservices/container-docker-introduction/docker-terminology.md
+      href: ../microservices/container-docker-introduction/docker-terminology.md?toc=/dotnet/architecture/containerized-lifecycle/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Docker containers, images, and registries
-      href: ../microservices/container-docker-introduction/docker-containers-images-registries.md
+      href: ../microservices/container-docker-introduction/docker-containers-images-registries.md?toc=/dotnet/architecture/containerized-lifecycle/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: Introduction to the Docker application lifecycle
     href: docker-application-lifecycle/index.md
     items:

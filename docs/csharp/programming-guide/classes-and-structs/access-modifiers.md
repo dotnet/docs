@@ -19,7 +19,7 @@ All types and type members have an accessibility level. The accessibility level 
 - [private protected](../../language-reference/keywords/private-protected.md): The type or member can be accessed only within its declaring assembly, by code in the same `class` or in a type that is derived from that `class`.
 
 **Summary Table**
-| Caller's location ↓  | public | protected internal | protected | internal | private protected | private 
+| Caller's location ↓  | public | protected internal | protected | internal | private protected | private
 | -- | -- | -- | -- | -- | -- | --
 | ***Within the assembly*** |   |   |   |   |   |  
 | Within the class | ✔ | ✔ | ✔ | ✔ | ✔ | ✔

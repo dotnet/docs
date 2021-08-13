@@ -21,11 +21,11 @@ All types and type members have an accessibility level. The accessibility level 
 **Summary Table**
 | Caller's location ↓  | public | protected internal | protected | internal | private protected | private 
 | -- | -- | -- | -- | -- | -- | --
-| **<ins>Within the assembly</ins>** |   |   |   |   |   |  
+| ***Within the assembly*** |   |   |   |   |   |  
 | Within the class | ✔ | ✔ | ✔ | ✔ | ✔ | ✔
 | Derived class | ✔ | ✔ | ✔ | ✔ | ✔ | ❌
 | Non-derived class | ✔ | ✔ | ❌ | ✔ | ❌ | ❌
-| **<ins>In an external assembly</ins>** |   |   |   |   |   |  
+| ***In an external assembly*** |   |   |   |   |   |  
 | Derived class | ✔ | ✔ | ✔ | ❌ | ❌ | ❌
 | Non-derived class | ✔ | ❌ | ❌ | ❌ | ❌ | ❌
 

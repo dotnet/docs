@@ -31,13 +31,13 @@ boolean_expression || boolean_expression
 
  Double vertical bars (&#124;&#124;) have the same functionality as the OR operator.
 
- The following table shows possible input values and return types.
+ The following matrix shows possible input value combinations and return values.
 
-||`TRUE`|`FALSE`|`NULL`|
-|-|------------|-------------|------------|
-|`TRUE`|TRUE|TRUE|TRUE|
-|`FALSE`|TRUE|FALSE|NULL|
-|`NULL`|TRUE|NULL|NULL|
+|             | `TRUE` | `FALSE` | `NULL` |
+| ----------- | ------ | ------- | ------ |
+| **`TRUE`**  | TRUE   | TRUE    | TRUE   |
+| **`FALSE`** | TRUE   | FALSE   | NULL   |
+| **`NULL`**  | TRUE   | NULL    | NULL   |
 
 ## Example
 

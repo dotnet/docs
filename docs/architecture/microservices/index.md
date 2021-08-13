@@ -43,7 +43,7 @@ After you have studied this guide, your next step would be to learn about produc
 
 ## Version
 
-This guide has been revised to cover **.NET 5** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 5 release. That’s why the book version has also been updated to version **5.0**.
+This guide has been revised to cover **.NET 5** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 5 release. That's why the book version has also been updated to version **5.0**.
 
 ## What this guide does not cover
 
@@ -143,6 +143,8 @@ Participants and reviewers:
 > **Miguel Veloso**, Software Development Engineer at Plain Concepts
 >
 > **Sumit Ghosh**, Principal Consultant at Neudesic
+>
+> **David Pine**, Sr. Content Developer, C+E, Microsoft Corp.
 
 ## Copyright
 
@@ -156,7 +158,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright © 2021 by Microsoft Corporation
+Copyright &copy; 2021 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 

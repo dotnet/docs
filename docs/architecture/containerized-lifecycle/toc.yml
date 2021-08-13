@@ -2,18 +2,16 @@
   href: index.md
   items:
   - name: Introduction to Containers and Docker
-    href: introduction-to-containers-and-docker.md
+    href: ../microservices/container-docker-introduction/index.md
     items:
     - name: What is Docker?
-      href: what-is-docker.md
+      href: ../microservices/container-docker-introduction/what-is-docker.md
     - name: Docker terminology
-      href: docker-terminology.md
+      href: ../microservices/container-docker-introduction/docker-terminology.md
     - name: Docker containers, images, and registries
-      href: docker-containers-images-and-registries.md
-    - name: Road to modern applications based on containers
-      href: road-to-modern-applications-based-on-containers.md
+      href: ../microservices/container-docker-introduction/docker-containers-images-and-registries.md
   - name: Introduction to the Docker application lifecycle
-    href: Docker-application-lifecycle/index.md
+    href: docker-application-lifecycle/index.md
     items:
     - name: Containers as the foundation for DevOps collaboration
       href: Docker-application-lifecycle/containers-foundation-for-devops-collaboration.md

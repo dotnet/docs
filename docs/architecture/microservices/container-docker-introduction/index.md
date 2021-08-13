@@ -1,9 +1,9 @@
 ---
-title: Introduction to Containers and Docker
-description: .NET Microservices Architecture for Containerized .NET Applications | Introduction to Containers and Docker
-ms.date: 01/13/2021
+title: Introduction to containers and Docker
+description: .NET Microservices Architecture for Containerized .NET Applications | Introduction to containers and Docker
+ms.date: 08/13/2021
 ---
-# Introduction to Containers and Docker
+# Introduction to containers and Docker
 
 Containerization is an approach to software development in which an application or service, its dependencies, and its configuration (abstracted as deployment manifest files) are packaged together as a container image. The containerized application can be tested as a unit and deployed as a container image instance to the host operating system (OS).
 

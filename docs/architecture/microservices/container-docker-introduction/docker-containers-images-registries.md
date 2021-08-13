@@ -1,7 +1,7 @@
 ---
 title: Docker containers, images, and registries
 description: .NET Microservices Architecture for Containerized .NET Applications | Docker containers, images, and registries
-ms.date: 01/13/2021
+ms.date: 08/13/2021
 ---
 # Docker containers, images, and registries
 

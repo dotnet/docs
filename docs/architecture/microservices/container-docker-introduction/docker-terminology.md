@@ -1,7 +1,7 @@
 ---
 title: Docker terminology
 description: .NET Microservices Architecture for Containerized .NET Applications | Docker terminology
-ms.date: 01/13/2021
+ms.date: 08/13/2021
 ---
 # Docker terminology
 

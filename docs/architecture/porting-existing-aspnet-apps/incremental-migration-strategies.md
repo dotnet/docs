@@ -31,8 +31,6 @@ By the time the app is running on .NET Core 3.1, migrating to the current .NET 5
 
 Instead of a "bottom up" approach, another alternative is to start with the web app (or even the entire solution) and use an automated tool to assist with the upgrade. The [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant) can be used to help upgrade .NET Framework apps to .NET Core / .NET 5. It automates many of the common tasks related to upgrading apps, such as modifying project file format, setting appropriate target frameworks, updating NuGet dependencies, and more.
 
-Instead of a "bottom up" approach, another alternative is to start with the web app (or even the entire solution) and use an automated tool to assist with the upgrade. The [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant) can be used to help upgrade .NET Framework apps to .NET Core / .NET 5. It automates many of the common tasks related to upgrading apps, such as modifying project file format, setting appropriate target frameworks, updating NuGet dependencies, and more.
-
 ## References
 
 - [What is .NET Standard?](https://dotnet.microsoft.com/platform/dotnet-standard)

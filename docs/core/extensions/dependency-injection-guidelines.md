@@ -139,6 +139,7 @@ The following third-party containers can be used with ASP.NET Core apps:
 - [Lamar](https://jasperfx.github.io/lamar/)
 - [Stashbox](https://github.com/z4kn4fein/stashbox-extensions-dependencyinjection)
 - [Unity](https://www.nuget.org/packages/Unity.Microsoft.DependencyInjection)
+- [Simple Injector](https://docs.simpleinjector.org/en/latest/aspnetintegration.html)
 
 ## Thread safety
 

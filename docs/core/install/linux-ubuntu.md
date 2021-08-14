@@ -58,7 +58,9 @@ rm packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
 
-## 20.10 ✔️
+## 20.10 ❌
+
+[!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -70,9 +72,7 @@ rm packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
 
-## 20.04 ❌
-
-[!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
+## 20.04 ✔️
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 

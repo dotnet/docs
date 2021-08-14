@@ -91,7 +91,7 @@ f "asdf" // does not match
 
 ## Nameof with instance members
 
-F# requries an instance in order to extract the name of an instance member with `nameof`.  If an instance is not easily available, then one can be obtained using `Unchecked.defaultof`.
+F# requires an instance in order to extract the name of an instance member with `nameof`. If an instance is not easily available, then one can be obtained using `Unchecked.defaultof`.
 
 ```fsharp
 type MyRecord = { MyField: int }

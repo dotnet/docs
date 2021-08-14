@@ -62,7 +62,7 @@ The following MSBuild properties change the output of `dotnet publish`.
 
   Compiles application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation. For more information, see [ReadyToRun images](../deploying/ready-to-run.md). Available since .NET Core 3.0 SDK.
 
-  To see warnings about missing dependencies that could cause runtime failures, use `PublishReadyToRunShowWarning=true`.
+  To see warnings about missing dependencies that could cause runtime failures, use `PublishReadyToRunShowWarnings=true`.
 
   We recommend that you specify `PublishReadyToRun` in a publish profile rather than on the command line.
 

@@ -232,5 +232,4 @@ for (int i = 0; i < Array.Length; i++)
 
 ## See also
 
-- [Performance Counters](performance-counters.md)
 - [Runtime Profiling](runtime-profiling.md)

@@ -2,22 +2,26 @@
 title: What is Cloud Native?
 description: Learn about the foundational pillars that provide the bedrock for cloud-native systems
 author: robvet
-ms.date: 08/01/2021
+ms.date: 08/15/2021
 ---
 
 # What is Cloud Native?
 
 Stop what you're doing and text several of your colleagues. Ask them to define the term "Cloud Native". Good chance you'll get many different answers.
 
-Let's start by defining cloud native. The Cloud Native Computing Foundation provides the [official definition](https://github.com/cncf/foundation/blob/master/charter.md):
+Let's start with a simple definition:
+
+> *Cloud-native architecture and technologies are an approach to designing, constructing, and operating workloads that are built in the cloud and take full advantage of the cloud computing model.*
+
+The [Cloud Native Computing Foundation](https://www.cncf.io/) provides the [official definition](https://github.com/cncf/foundation/blob/master/charter.md):
 
 > *Cloud-native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.*
 
 > *These techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil.*
 
-Cloud native is about *speed* and *agility*. Business systems are evolving from business capability enablers to weapons of strategic transformation that accelerate business velocity and growth. It's imperative to get new ideas to market immediately.
+Cloud native is about *speed* and *agility*. Business systems are evolving from business capability enablement to weapons of strategic transformation that accelerate business velocity and growth. It's imperative to get new ideas to market immediately.
 
-At the same time, business systems have also become increasingly complex with users demanding more. Users expect rapid responsiveness, innovative features, and zero downtime. Performance problems, recurring errors, and the inability to move fast are no longer acceptable. Users will quickly move to your competitor. Cloud-native systems are designed to embrace rapid change, large scale, and resilience
+At the same time, business systems have also become increasingly complex with users demanding more. They expect rapid responsiveness, innovative features, and zero downtime. Performance problems, recurring errors, and the inability to move fast are no longer acceptable. Your users will simply visit your competitor. Cloud-native systems are designed to embrace rapid change, large scale, and resilience
 
 Here are some companies who have implemented cloud-native techniques. Think about the speed, agility, and scalability they've achieved.
 
@@ -29,7 +33,7 @@ Here are some companies who have implemented cloud-native techniques. Think abou
 
 As you can see, Netflix, Uber, and, WeChat expose cloud-native systems that consist of hundreds of independent services. This architectural style enables them to rapidly respond to market conditions. They can instantaneously update small areas of a live, complex application, without a full redeployment. They can individually scale services as needed.
 
-The speed and agility of cloud native derive from many factors. Foremost is cloud infrastructure. But there's more: Five other foundational pillars shown in Figure 1-3 also provide the bedrock for cloud-native systems.
+The speed and agility of cloud native derive from many factors. Foremost is *cloud infrastructure*. But there's more: Five other foundational pillars shown in Figure 1-3 also provide the bedrock for cloud-native systems.
 
 ![Cloud-native foundational pillars](./media/cloud-native-foundational-pillars.png)
 
@@ -344,7 +348,7 @@ In the previous figure, pay special attention to separation of tasks:
 
 Applying these practices, organizations have radically evolved how they ship software. Many have moved from quarterly releases to on-demand updates. The goal is to catch problems early in the development cycle when they're less expensive to fix. The longer the duration between integrations, the more expensive problems become to resolve.  With consistency in the integration process, teams can commit code changes more frequently, leading to better collaboration and software quality.
 
-Infrastructure as code and deployment automation, along with GitHub and Azure DevOps are discussed in detail in [DevOps](DevOps.md)
+Infrastructure as code and deployment automation, along with GitHub and Azure DevOps are discussed in detail in [DevOps](./DevOps.md)
 
 >[!div class="step-by-step"]
 >[Previous](introduction.md)

@@ -206,7 +206,7 @@ In the next example, you'll create a multi-container application. You'll also us
 
 Make sure you've configured your local environment for Dapr and installed the [.NET 5 Development Tools](https://dotnet.microsoft.com/download/dotnet-core/5.0) (instructions are available at the beginning of this chapter).
 
-Additionally, you'll need complete this sample using [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) with the **.NET cross-platform development** workload installed.
+Additionally, you'll need to complete this sample using [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) with the **.NET cross-platform development** workload installed.
 
 ### Create the application
 

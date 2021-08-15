@@ -55,11 +55,11 @@ This sample creates a UWP application that categorizes land use from map satelli
 ## Create ASP.NET Core Web API
 
 1. In Solution Explorer, right-click the **LandUse** solution, then select **Add > New Project**.
-1. In the New Project dialog, type "ASP.NET Core Web Application" into the search box.
-1. Select the **ASP.NET Core Web Application** C# project template, then select the **Next** button.
+1. In the New Project dialog, type "ASP.NET Core Web App" into the search box.
+1. Select the **ASP.NET Core Web App** C# project template, then select the **Next** button.
 1. In the **Name** text box, type "LandUseAPI".
-1. Select **Create**.
-1. Choose **API** in the window that displays the different types of ASP.NET Core Projects, then select the **Create** button.
+1. Select **Next**.
+1. In the "Additional Information" window, click **Create** to accept the default values.
 
 ## Prepare and understand the data
 
@@ -71,19 +71,29 @@ This sample creates a UWP application that categorizes land use from map satelli
 
 The EuroSAT dataset contains a collection of satellite images divided into ten categories (rural, industrial, river, etc.). The original dataset contains 27,000 images. For convenience, this tutorial only uses 2,000 of those images.
 
-  ![Model Builder Scenario Screen](media/image-classification-model-builder/dataset-images.png)
+  ![Dataset](./media/image-classification-model-builder/dataset-images.png)
 
 1. Download the subset of the [EuroSAT dataset](https://github.com/dotnet/machinelearning-samples/blob/master/samples/modelbuilder/ImageClassification_Azure_LandUse/assets.zip) and save it anywhere on your computer.
 1. Unzip it.
 
+## Create a Model Builder config file
+
+When first adding Model Builder to the solution it will prompt you to create an `mbconfig` file. The `mbconfig` file keeps track of everything you do in Model Builder to allow you to reopen the session.
+
+1. In Solution Explorer, right-click the **LandUseAPI** project, and select **Add > Machine Learning**.
+1. In the dialog, name the Model Builder project **LandUse**, and click **Add**.
+
 ## Choose a scenario
 
-![Model Builder Scenario Screen](media/sentiment-analysis-model-builder/model-builder-screen.png)
+![Model Builder Scenario Screen](../media/model-builder-screen.png)
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder.
 
-1. In Solution Explorer, right-click the **LandUseAPI** project, and select **Add > Machine Learning**.
 1. For this sample, the scenario is image classification. In the scenario step of the Model Builder tool, select the **Image Classification** scenario.
+
+## Choose an enviornment
+
+
 
 ## Load the data
 

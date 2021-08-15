@@ -33,6 +33,8 @@ Here are some companies who have implemented cloud-native techniques. Think abou
 
 As you can see, Netflix, Uber, and, WeChat expose cloud-native systems that consist of hundreds of independent services. This architectural style enables them to rapidly respond to market conditions. They can instantaneously update small areas of a live, complex application, without a full redeployment. They can individually scale services as needed.
 
+## The pillars of cloud native
+
 The speed and agility of cloud native derive from many factors. Foremost is *cloud infrastructure*. But there's more: Five other foundational pillars shown in Figure 1-3 also provide the bedrock for cloud-native systems.
 
 ![Cloud-native foundational pillars](./media/cloud-native-foundational-pillars.png)
@@ -57,7 +59,7 @@ Cloud-native systems embrace the Cattle service model. They continue to run as t
 
 The Azure cloud platform supports this type of highly elastic infrastructure with automatic scaling, self-healing, and monitoring capabilities.
 
-## Modern design
+##3 Modern design
 
 How would you design a cloud-native app? What would your architecture look like? To what principles, patterns, and best practices would you adhere? What infrastructure and operational concerns would be important?
 

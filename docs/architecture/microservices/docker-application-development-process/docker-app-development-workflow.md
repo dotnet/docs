@@ -336,7 +336,7 @@ When you use Visual Studio to create a project with Docker support, you don't ex
 
 ## Step 4. Define your services in docker-compose.yml when building a multi-container Docker application
 
-The [docker-compose.yml](https://docs.docker.com/compose/compose-file/) file lets you define a set of related services to be deployed as a composed application with deployment commands. It also configures its dependency relations and run-time configuration.
+The [docker-compose.yml](https://docs.docker.com/compose/compose-file/) file lets you define a set of related services to be deployed as a composed application with deployment commands. It also configures its dependency relations and runtime configuration.
 
 To use a docker-compose.yml file, you need to create the file in your main or root solution folder, with content similar to that in the following example:
 

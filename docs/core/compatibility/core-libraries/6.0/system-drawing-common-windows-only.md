@@ -7,7 +7,7 @@ ms.date: 07/27/2021
 
 The [System.Drawing.Common](https://www.nuget.org/packages/System.Drawing.Common/) NuGet package is now attributed as a Windows-specific library. The platform analyzer emits warning at compile time when compiling for non-Windows operating systems.
 
-On non-Windows operating systems, unless you set a run-time configuration switch, a <xref:System.TypeInitializationException> exception is thrown with <xref:System.PlatformNotSupportedException> as the inner exception.
+On non-Windows operating systems, unless you set a runtime configuration switch, a <xref:System.TypeInitializationException> exception is thrown with <xref:System.PlatformNotSupportedException> as the inner exception.
 
 ## Old behavior
 
@@ -58,7 +58,7 @@ To use these APIs for cross-platform apps, migrate to one of the following libra
 - [SkiaSharp](https://github.com/mono/SkiaSharp)
 - [Microsoft.Maui.Graphics](https://github.com/dotnet/Microsoft.Maui.Graphics)
 
-Alternatively, you can enable Unix support by setting the `System.Drawing.EnableUnixSupport` [run-time configuration switch](../../../run-time-config/index.md) to `true` in the *runtimeconfig.json* file:
+Alternatively, you can enable Unix support by setting the `System.Drawing.EnableUnixSupport` [runtime configuration switch](../../../run-time-config/index.md) to `true` in the *runtimeconfig.json* file:
 
 ```json
 {

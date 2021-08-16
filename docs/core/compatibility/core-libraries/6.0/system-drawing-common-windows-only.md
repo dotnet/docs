@@ -38,7 +38,7 @@ System.TypeInitializationException : The type initializer for 'Gdip' threw an ex
 
 ## Type of breaking change
 
-This change breaks source compatibility.
+This change can affect [source compatibility](../../categories.md#source-compatibility) and [binary compatibility](../../categories.md#binary-compatibility).
 
 ## Reason for change
 
@@ -58,7 +58,7 @@ To use these APIs for cross-platform apps, migrate to one of the following libra
 - [SkiaSharp](https://github.com/mono/SkiaSharp)
 - [Microsoft.Maui.Graphics](https://github.com/dotnet/Microsoft.Maui.Graphics)
 
-Alternatively, you can enable Unix support by setting the `System.Drawing.EnableUnixSupport` run-time configuration switch to `true` in the *runtimeconfig.json* file:
+Alternatively, you can enable Unix support by setting the `System.Drawing.EnableUnixSupport` [run-time configuration switch](../../../run-time-config/index.md) to `true` in the *runtimeconfig.json* file:
 
 ```json
 {

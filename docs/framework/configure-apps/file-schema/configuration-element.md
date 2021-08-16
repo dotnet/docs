@@ -35,7 +35,7 @@ None
 
 ## Child elements
 
-|     | Description |
+| Element | Description |
 | --- | ----------- |
 | [**\<assemblyBinding>**](assemblybinding-element-for-configuration.md) | Specifies assembly binding policy at the configuration level.|
 | [**\<startup>** Settings Schema](./startup/index.md) | All elements in the startup settings schema. |

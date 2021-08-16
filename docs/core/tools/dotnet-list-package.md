@@ -1,7 +1,7 @@
 ---
 title: dotnet list package command
 description: The 'dotnet list package' command provides a convenient option to list the package references for a project or solution.
-ms.date: 11/11/2020
+ms.date: 08/16/2021
 ---
 # dotnet list package
 
@@ -15,7 +15,7 @@ ms.date: 11/11/2020
 
 ```dotnetcli
 dotnet list [<PROJECT>|<SOLUTION>] package [--config <SOURCE>]
-    [--deprecated]
+    [--deprecated] [--vulnerable]
     [--framework <FRAMEWORK>] [--highest-minor] [--highest-patch]
     [--include-prerelease] [--include-transitive] [--interactive]
     [--outdated] [--source <SOURCE>] [-v|--verbosity <LEVEL>]
@@ -79,6 +79,10 @@ The project or solution file to operate on. If not specified, the command search
 
   Displays packages that have been deprecated.
 
+- **`--vulnerable`**
+
+  Lists packages that have known vulnerabilities. Cannot be combined with `--deprecated` or `--outdated` options.
+  
 - **`--framework <FRAMEWORK>`**
 
   Displays only the packages applicable for the specified [target framework](../../standard/frameworks.md). To specify multiple frameworks, repeat the option multiple times. For example: `--framework netcoreapp2.2 --framework netstandard2.0`.

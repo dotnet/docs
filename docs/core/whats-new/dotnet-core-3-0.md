@@ -173,7 +173,7 @@ To disable TC completely, use this MSBuild property in your project file:
 > [!TIP]
 > If you change these settings in the project file, you may need to perform a clean build for the new settings to be reflected (delete the `obj` and `bin` directories and rebuild).
 
-For more information about configuring compilation at run time, see [Run-time configuration options for compilation](../run-time-config/compilation.md).
+For more information about configuring compilation at run time, see [Runtime configuration options for compilation](../run-time-config/compilation.md).
 
 ### ReadyToRun images
 
@@ -216,7 +216,7 @@ For more information, see [Ready to Run](../deploying/ready-to-run.md).
 .NET Core 3.0 introduces an opt-in feature that allows your app to roll forward to the latest major version of .NET Core. Additionally, a new setting has been added to control how roll forward is applied to your app. This can be configured in the following ways:
 
 - Project file property: `RollForward`
-- Run-time configuration file property: `rollForward`
+- Runtime configuration file property: `rollForward`
 - Environment variable: `DOTNET_ROLL_FORWARD`
 - Command-line argument: `--roll-forward`
 

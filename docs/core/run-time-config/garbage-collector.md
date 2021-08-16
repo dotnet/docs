@@ -4,7 +4,7 @@ description: Learn about run-time settings for configuring how the garbage colle
 ms.date: 07/10/2020
 ms.topic: reference
 ---
-# Run-time configuration options for garbage collection
+# Runtime configuration options for garbage collection
 
 This page contains information about garbage collector (GC) settings that can be changed at run time. If you're trying to achieve peak performance of a running app, consider using these settings. However, the defaults provide optimum performance for most applications in typical situations.
 

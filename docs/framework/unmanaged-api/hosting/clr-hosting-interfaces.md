@@ -23,7 +23,7 @@ This section describes the interfaces that unmanaged hosts can use to integrate 
  Provides methods for making callbacks within an apartment.  
   
  [IAppDomainBinding Interface](iappdomainbinding-interface.md)  
- Provides methods for setting run-time configuration.  
+ Provides methods for setting runtime configuration.  
   
  [ICatalogServices Interface](icatalogservices-interface.md)  
  Provides methods for cataloging services. (This interface supports the .NET Framework infrastructure and is not intended to be used directly from your code.)  

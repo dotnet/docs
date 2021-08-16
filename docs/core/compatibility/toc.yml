@@ -85,6 +85,8 @@ items:
           href: core-libraries/6.0/partial-byte-reads-in-streams.md
         - name: Standard numeric format parsing precision
           href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
+        - name: System.Drawing.Common only supported on Windows
+          href: core-libraries/6.0/system-drawing-common-windows-only.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
       - name: Globalization
@@ -561,6 +563,8 @@ items:
           href: core-libraries/6.0/partial-byte-reads-in-streams.md
         - name: Standard numeric format parsing precision
           href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
+        - name: System.Drawing.Common only supported on Windows
+          href: core-libraries/6.0/system-drawing-common-windows-only.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
       - name: .NET 5
@@ -747,6 +751,10 @@ items:
           href: core-libraries/5.0/utf-7-code-paths-obsolete.md
     - name: Serialization
       items:
+      - name: .NET 6
+        items:
+        - name: JsonNode no longer supports C# `dynamic`
+          href: serialization/6.0/jsonnode-dynamic-type.md
       - name: .NET 5
         items:
         - name: BinaryFormatter.Deserialize rewraps exceptions

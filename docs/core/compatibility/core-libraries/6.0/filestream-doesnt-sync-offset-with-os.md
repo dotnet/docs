@@ -53,7 +53,7 @@ With this change, <xref:System.IO.FileStream.ReadAsync%2A> operations are up to 
 
 - To enable the .NET 5 behavior in .NET 6, specify an `AppContext` switch or an environment variable. By setting the switch to `true`, you opt out of all performance improvements made to `FileStream` in .NET 6.
 
-  ```xml
+  ```json
   {
       "configProperties": {
           "System.IO.UseNet5CompatFileStream": true

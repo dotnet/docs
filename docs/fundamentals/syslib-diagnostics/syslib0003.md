@@ -1,7 +1,7 @@
 ---
 title: SYSLIB0003 warning
 description: Learn about the obsoletions that generate compile-time warning SYSLIB0003.
-ms.date: 10/20/2020
+ms.date: 08/16/2021
 ---
 # SYSLIB0003: Code access security is not supported
 
@@ -146,6 +146,7 @@ The complete list of obsolete CAS APIs is as follows:
 - <xref:System.Security.Policy.StrongNameMembershipCondition?displayProperty=fullName>
 - <xref:System.Security.Policy.Url?displayProperty=fullName>
 - <xref:System.Security.Policy.Zone?displayProperty=fullName>
+- <xref:System.Security.SecurityContext?displayProperty=fullName>
 - <xref:System.Security.SecurityManager?displayProperty=fullName>
 - <xref:System.ServiceProcess.ServiceControllerPermission?displayProperty=fullName>
 - <xref:System.ServiceProcess.ServiceControllerPermissionAttribute?displayProperty=fullName>

@@ -221,6 +221,7 @@ Classes and members that depend on code access security types:
 - <xref:System.Security.Policy.Site?displayProperty=fullName>
 - <xref:System.Security.Policy.Url?displayProperty=fullName>
 - <xref:System.Security.Policy.Zone?displayProperty=fullName>
+- <xref:System.Security.SecurityContext?displayProperty=fullName>
 - <xref:System.Security.SecurityManager?displayProperty=fullName>
 
 ### SYSLIB0004

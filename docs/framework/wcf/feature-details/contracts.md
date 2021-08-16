@@ -20,7 +20,7 @@ This section shows you how to define and implement Windows Communication Foundat
   
 - Understand what a service contract is, how it works, and how to create one.  
   
-- Understand that contracts state minimum requirements that runtime configuration or the hosting environment may not support.  
+- Understand that contracts state minimum requirements that run-time configuration or the hosting environment may not support.  
   
 ## Service Contracts  
 
@@ -60,7 +60,7 @@ This section shows you how to define and implement Windows Communication Foundat
 
  A service contract groups the operations; specifies the MEP, message types, and data types those messages carry; and indicates categories of run-time behavior an implementation must have to support the contract (for example, it may require that messages be encrypted and signed). The service contract itself, however, does not specify precisely how these requirements are met, only that they must be. What type of encryption or how a message is signed is up to the implementation and configuration of a compliant service.  
   
- Notice the way that the contract requires certain things of the service contract implementation and the runtime configuration to add behavior. The set of requirements that must be met to expose a service for use builds on the preceding set of requirements. If a contract makes requirements of the implementation, an implementation can require yet more of the configuration and bindings that enable the service to run. Finally, the host application must also support any requirements that the service configuration and bindings add.  
+ Notice the way that the contract requires certain things of the service contract implementation and the run-time configuration to add behavior. The set of requirements that must be met to expose a service for use builds on the preceding set of requirements. If a contract makes requirements of the implementation, an implementation can require yet more of the configuration and bindings that enable the service to run. Finally, the host application must also support any requirements that the service configuration and bindings add.  
   
  This additive requirement process is important to keep in mind while designing, implementing, configuring, and hosting your Windows Communication Foundation (WCF) service application. For example, the contract can specify that it needs to support a session. If so, then you must configure the binding to support that contractual requirement, or the service implementation will not work. Or if your service requires Integrated Windows authentication and is hosted in Internet Information Services (IIS), the Web application in which the service resides must have Integrated Windows authentication turned on and anonymous support turned off. For more information about the features and impact of the different service host application types, see [Hosting](hosting.md).  
   

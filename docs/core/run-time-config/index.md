@@ -103,7 +103,7 @@ Here is an example SDK-style project file with MSBuild properties for configurin
 </Project>
 ```
 
-MSBuild properties for configuring run-time behavior are noted in the individual articles for each area, for example, [garbage collection](garbage-collector.md). They are also listed in the [Runtime configuration](../project-sdk/msbuild-props.md#run-time-configuration-properties) section of the MSBuild properties reference for SDK-style projects.
+MSBuild properties for configuring run-time behavior are noted in the individual articles for each area, for example, [garbage collection](garbage-collector.md). They are also listed in the [Runtime configuration](../project-sdk/msbuild-props.md#runtime-configuration-properties) section of the MSBuild properties reference for SDK-style projects.
 
 ## Environment variables
 

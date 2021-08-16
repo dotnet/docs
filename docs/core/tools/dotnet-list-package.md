@@ -15,10 +15,11 @@ ms.date: 08/16/2021
 
 ```dotnetcli
 dotnet list [<PROJECT>|<SOLUTION>] package [--config <SOURCE>]
-    [--deprecated] [--vulnerable]
+    [--deprecated]
     [--framework <FRAMEWORK>] [--highest-minor] [--highest-patch]
     [--include-prerelease] [--include-transitive] [--interactive]
     [--outdated] [--source <SOURCE>] [-v|--verbosity <LEVEL>]
+    [--vulnerable]
 
 dotnet list package -h|--help
 ```
@@ -78,10 +79,6 @@ The project or solution file to operate on. If not specified, the command search
 - **`--deprecated`**
 
   Displays packages that have been deprecated.
-
-- **`--vulnerable`**
-
-  Lists packages that have known vulnerabilities. Cannot be combined with `--deprecated` or `--outdated` options.
   
 - **`--framework <FRAMEWORK>`**
 
@@ -116,6 +113,10 @@ The project or solution file to operate on. If not specified, the command search
   The NuGet sources to use when searching for newer packages. Requires the `--outdated` or `--deprecated` option.
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+
+- **`--vulnerable`**
+
+  Lists packages that have known vulnerabilities. Cannot be combined with `--deprecated` or `--outdated` options.
 
 ## Examples
 

@@ -13,11 +13,17 @@ In .NET 5, a change was made to automatically change `OutputType` from `Exe` to 
 
 ## Previous behavior
 
-If a project targeted .NET 5 or higher, the `OutputType` was `Exe`, and `UseWindowsForms` or `UseWPF` was set to `true`, then the .NET SDK would change the `OutputType` to `WinExe`.
+If a project targeted .NET 5 or higher, `OutputType` was set to `Exe`, and `UseWindowsForms` or `UseWPF` was set to `true`, then the .NET SDK would change `OutputType` to `WinExe`.
 
 ## New behavior
 
 `OutputType` is no longer changed from what's in the project file.
+
+```xml
+<PropertyGroup>
+  <OutputType>Exe</OutputType>
+</PropertyGroup>
+```
 
 ## Change category
 
@@ -25,7 +31,7 @@ This change may affect [*source compatibility*](../../categories.md#source-compa
 
 ## Reason for change
 
-The [.NET 5 change](../5.0/automatically-infer-winexe-output-type.md) was intended to simplify .NET MAUI apps, so that the `OutputType` wouldn't need to be conditioned on the `TargetFramework`. However:
+The [.NET 5 change](../5.0/automatically-infer-winexe-output-type.md) was intended to simplify .NET MAUI apps, so that `OutputType` wouldn't need to be conditioned on the target framework. However:
 
 - Automatically inferring `OutputType` broke user expectations and frustrated developers. For more information, see [dotnet/sdk#16563](https://github.com/dotnet/sdk/issues/16563) and its linked issues.
 - .NET MAUI apps will use WinUI by default, not Windows Forms or WPF, so the automatic inference doesn't even apply to .NET MAUI apps.

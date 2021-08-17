@@ -52,14 +52,14 @@ This sample creates a UWP application that categorizes land use from map satelli
 1. In the **Name** text box, type "LandUse".
 1. Select **Create**.
 
-## Create ASP.NET Core Web API
+## Create a Console Project
 
 1. In Solution Explorer, right-click the **LandUse** solution, then select **Add > New Project**.
-1. In the New Project dialog, type "ASP.NET Core Web App" into the search box.
-1. Select the **ASP.NET Core Web App** C# project template, then select the **Next** button.
-1. In the **Name** text box, type "LandUseAPI".
+1. In the New Project dialog, type "Console" into the search box.
+1. Select the **Console Application** C# project template, then select the **Next** button.
+1. In the **Name** text box, type "LandUse".
 1. Select **Next**.
-1. In the "Additional Information" window, click **Create** to accept the default values.
+1. In the "Additional Information" window, click **Create** to accept the default target framework.
 
 ## Prepare and understand the data
 
@@ -80,7 +80,7 @@ The EuroSAT dataset contains a collection of satellite images divided into ten c
 
 When first adding Model Builder to the solution it will prompt you to create an `mbconfig` file. The `mbconfig` file keeps track of everything you do in Model Builder to allow you to reopen the session.
 
-1. In Solution Explorer, right-click the **LandUseAPI** project, and select **Add > Machine Learning**.
+1. In Solution Explorer, right-click the **LandUse** project, and select **Add > Machine Learning**.
 1. In the dialog, name the Model Builder project **LandUse**, and click **Add**.
 
 ## Choose a scenario
@@ -91,19 +91,11 @@ To train your model, you need to select from the list of available machine learn
 
 1. For this sample, the scenario is image classification. In the scenario step of the Model Builder tool, select the **Image Classification** scenario.
 
-## Choose an enviornment
+## Select an enviornment
 
+Model Builder can run the training on different environments depending on the scenario that was selected.
 
-
-## Load the data
-
-1. In the data step of the Model Builder tool, select the button next to the **Select a folder** text box.
-1. Use File Explorer to browse and select the unzipped directory containing the images.
-1. Select the **Train** button to move to the next step in the Model Builder tool.
-
-## Train the model
-
-Training on Azure is only available for the Model Builder image classification scenario. The algorithm used to train these models is a Deep Neural Network based on the ResNet50 architecture. During the model training process, Model Builder trains separate models using ResNet50 algorithm and settings to find the best performing model for your dataset.
+1. Select "Azure" as your environment and click the **Set up workspace** button.
 
 ### Create experiment in Azure
 
@@ -111,8 +103,6 @@ An Azure Machine Learning experiment is a resource that needs to be created befo
 
 The experiment encapsulates the configuration and results for one or more machine learning training runs. Experiments belong to a specific workspace. The first time an experiment is created, its name is registered in the workspace. Any subsequent runs - if the same experiment name is used - are logged as part of the same experiment. Otherwise, a new experiment is created.
 
-1. From the Choose Your Training Environment set of options, select **Azure**.
-1. Then, select *Create Experiment**.
 1. In the Create New Experiment dialog, choose your subscription from the **Subscription** dropdown.
 
 ### Create workspace
@@ -147,14 +137,23 @@ An Azure Machine Learning compute is a cloud-based Linux VM used for training.
 1. Choose **Standard_NC24** from the **Compute size** dropdown. Model Builder uses GPU-optimized compute types. Visit the [NC-series Linux VM documentation](https://docs.microsoft.com/azure/virtual-machines/nc-series?toc=/azure/virtual-machines/linux/toc.json&bc=/azure/virtual-machines/linux/breadcrumb/toc.json) for more details on GPU optimized compute types.
 1. Select **Create**. The compute resources may take a few minutes to provision.
 1. Once the provisioning process is complete, choose your newly created workspace from the **Compute name** dropdown in the Create New Experiment dialog.
+1. Select the **Next step** button to load in the data.
+
+## Load the data
+
+1. In the data step of the Model Builder tool, select the button next to the **Select a folder** text box.
+1. Use File Explorer to browse and select the unzipped directory containing the images.
+1. Select the **Next step** button to move to the next step in the Model Builder tool.
+
+## Train the model
+
+Training on Azure is only available for the Model Builder image classification scenario. The algorithm used to train these models is a Deep Neural Network based on the ResNet50 architecture. During the model training process, Model Builder trains separate models using ResNet50 algorithm and settings to find the best performing model for your dataset.
 
 ### Start training
 
 Once you've configured your workspace and compute type, it's time to finish creating the experiment and start training.
 
-1. In the Create New Experiment dialog, leave the default value in the **Experiment name** text box.
-1. Select **Create**. Once created, your experiment details appear in the Model Builder train step.
-1. Select **Start Training**.
+1. Click the **Start Training** button.
 
     The training process takes some time and the amount of time may vary depending on the size of compute selected as well as amount of data. The first time a model is trained, you can expect a slightly longer training time because resources have to be provisioned. You can track the progress of your runs by selecting the **Monitor current run in Azure portal** link in Visual Studio.
 
@@ -164,128 +163,20 @@ Once you've configured your workspace and compute type, it's time to finish crea
     - Best accuracy displays the accuracy of the best performing model found by Model Builder so far. Higher accuracy means the model predicted more correctly on test data.
     - Algorithm displays the name of the best performing algorithm performed found by Model Builder so far.
 
-1. Once training is complete, select the **Evaluate** button to move to the next step.
+1. Once training is complete, select the **Next step** button to move to evaluate the model.
 
-## Evaluate the model
+### Evaluate the model
 
 The result of the training step is one model that had the best performance. In the evaluate step of the Model Builder tool, the **Details** tab in the output section, will contain the algorithm used by the best performing model in the **Algorithm** entry along with metrics in the **Best model Accuracy** entry.
 
-If you're not satisfied with your accuracy metrics, some easy ways to try and improve model accuracy are to use more data or augment the existing data. Otherwise, select the **Code** button to move to the final step in the Model Builder tool.
+If you're not satisfied with your accuracy metrics, some easy ways to try and improve model accuracy are to use more data or augment the existing data. Otherwise, select the **Next step** button to move to the final step in the Model Builder tool.
 
-## Add the code to make predictions
+### Add the code to make predictions
 
-Two projects are created as a result of the training process.
+This step will have project templates that you can use to consume the model. We will use the Web API project template.
 
-### Reference the trained model
-
-In the code step of the Model Builder tool, select **Add Projects** to add the autogenerated projects to the solution.
-
-Two projects are added to your solution:
-
-- *LandUseML.ConsoleApp*: A C# .NET Core console application that provides starter code to build the prediction pipeline and make predictions.
-- *LandUseML.Model*: A C# .NET Standard application that contains the data models that define the schema of input and output model data as well as the following assets:
-
-  - *bestModel.onnx*: A serialized version of the model in Open Neural Network Exchange (ONNX) format. ONNX is an open-source format for AI models that supports interoperability between frameworks like ML.NET, PyTorch, and TensorFlow.
-  - *bestModelMap.json*: A list of categories used when making predictions to map the model output to a text category.
-  - *MLModel.zip*: A serialized version of the ML.NET prediction pipeline that uses the serialized version of the model *bestModel.onnx* to make predictions and maps outputs using the *bestModelMap.json* file.
-
-The `ModelInput` and `ModelOutput` classes in the `LandUseML.Model` project define the schema of the model's expected input and output respectively.
-
-In an image classification scenario, the `ModelInput` contains two columns:
-
-- `ImageSource`: The string path of the image location.
-- `Label`: The actual category the image belongs to. `Label` is only used as an input when training and does not need to be provided when making predictions.
-
-The `ModelOutput` contains two columns:
-
-- `Prediction`: The image's predicted category.
-- `Score`: The list of probabilities for all categories (the highest belongs to the `Prediction`).
-
-### Install NuGet packages
-
-To work with images in the `LandUseAPI` project, install the **System.Drawing.Common** NuGet package.
-
-1. In Solution Explorer, right-click the **LandUseAPI** project and select **Manage NuGet Packages**.
-Choose "nuget.org" as the Package source.
-1. Select the **Browse** tab and search for **System.Drawing.Common**.
-1. Select the package in the list, and select the **Install** button.
-1. Select the **OK** button on the Preview Changes dialog
-1. Select the **I Accept** button on the License Acceptance dialog if you agree with the license terms for the packages listed.
-
-### Configure the prediction engine
-
-The [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) convenience API, makes predictions on a single data instance. To use it in your application, you have to create an instance of it everywhere it's needed. As your application grows, this process can become unmanageable. By configuring the [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) in the *Startup.cs* class, you can leverage dependency injection to make it easier to create instances of it throughout your application.
-
-1. Open the *Startup.cs* file.
-1. Replace the using statements to the top of the file with the following:
-
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseAPI/Startup.cs" range="1-9":::
-
-1. Add the following code inside the `ConfigureService` method.
-
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseAPI/Startup.cs" range="25-46":::
-
-### Create image classification handler
-
-To process your incoming HTTP requests, create a controller.
-
-1. In Solution Explorer, right-click the **Controllers** directory in the `LandUseAPI` project, and then select **Add > Controller**.
-1. In the Add New Item dialog box, select **API Controller Empty**, then select **Add**.
-1. In the prompt, change the Controller Name text box to *ClassificationController.cs*.
-1. Select **Add**.
-
-    The *ClassificationController.cs* file opens in the code editor. Replace the using statements at the top of the file with the following:
-
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseAPI/Controllers/ClassificationController.cs" range="1-9":::
-
-1. Add the following inside the `ClassificationController` class.
-
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseAPI/Controllers/ClassificationController.cs" range="17-18":::
-
-1. Create a constructor for the controller and initialize the `_predictionEngine`.
-
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseAPI/Controllers/ClassificationController.cs" range="20-23":::
-
-1. Create a new method called `ClassifyImage` to handle POST requests.
-
-    ```csharp
-    [HttpPost]
-    public async Task<string> ClassifyImage([FromBody] Dictionary<string,string> input)
-    {
-
-    }
-    ```
-
-1. Inside the `ClassifyImage` method, add the following code
-
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseAPI/Controllers/ClassificationController.cs" range="28-29":::
-
-1. Then, convert the Base64 string representation of the image in the request body to a `byte[]`.
-
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseAPI/Controllers/ClassificationController.cs" range="32":::
-
-1. Create a new [`MemoryStream`](xref:System.IO.MemoryStream) from the `imageBytes`.
-
-    ```csharp
-    using(var ms = new MemoryStream(imageBytes))
-    {
-
-    }
-    ```
-
-1. Inside the `using` statement, save the image.
-
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseAPI/Controllers/ClassificationController.cs" range="37-38":::
-
-1. Outside the using statement, use the prediction engine to classify the input image.
-
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseAPI/Controllers/ClassificationController.cs" range="41-46":::
-
-    Because [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread safe, make sure to use the [`lock`](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/lock-statement) statement to safely make predictions.
-
-1. Finally, return the prediction.
-
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseAPI/Controllers/ClassificationController.cs" range="48":::
+1. Click the **Add to solution** button for the Web API project template.
+1. Name the project "LandUseApi" and click the **Add to solution** button to add the project to your solution.
 
 ## Consume the model in UWP application
 
@@ -296,7 +187,7 @@ The UWP application is the interface users interact with. When a user searches f
 1. In Solution Explorer, right-click the **LandUse** solution, and select **Add > New Project**.
 1. In the New Project dialog, type "Universal Windows" into the search box.
 1. Select the **Blank App (Universal Windows)** C# project template, then select the **Next** button.
-1. In the **Name** text box, type "LandUseUWP".
+1. In the **Project name** text box, type "LandUseUWP".
 1. Select **Create**.
 1. The target version/minimum version dialog appears. Keep the default settings, then select **OK**.
 

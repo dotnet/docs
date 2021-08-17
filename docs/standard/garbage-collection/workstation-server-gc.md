@@ -55,4 +55,4 @@ If you're running hundreds of instances of an application, consider using workst
 ## See also
 
 - [Background garbage collection](background-gc.md)
-- [Run-time configuration options for garbage collection](../../core/run-time-config/garbage-collector.md)
+- [Runtime configuration options for garbage collection](../../core/run-time-config/garbage-collector.md)

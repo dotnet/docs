@@ -106,4 +106,4 @@ Specifies the minimum number of hours between background downloads of advertisin
 
 - [dotnet command](dotnet.md)
 - [Runtime Configuration Files](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md)
-- [.NET run-time configuration settings](../run-time-config/index.md)
+- [.NET runtime configuration settings](../run-time-config/index.md)

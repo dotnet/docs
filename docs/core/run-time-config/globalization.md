@@ -4,7 +4,7 @@ description: Learn about run-time settings that configure globalization aspects 
 ms.date: 05/18/2020
 ms.topic: reference
 ---
-# Run-time configuration options for globalization
+# Runtime configuration options for globalization
 
 ## Invariant mode
 

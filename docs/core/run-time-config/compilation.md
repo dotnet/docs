@@ -4,7 +4,7 @@ description: Learn about run-time settings that configure how the JIT compiler w
 ms.date: 11/27/2019
 ms.topic: reference
 ---
-# Run-time configuration options for compilation
+# Runtime configuration options for compilation
 
 This article details the settings you can use to configure .NET compilation.
 

@@ -8,8 +8,8 @@ ms.date: 04/20/2021
 
 There are two supported .NET implementations for building server-side apps:
 
-* *.NET Framework*
 * *.NET Core/5+*, which includes .NET Core, .NET 5, and later versions.
+* *.NET Framework*, legacy versions.
 
 Both share many of the same components, and you can share code across the two. However, there are fundamental differences between the two and your choice depends on what you want to accomplish. This article provides guidance on when to use each.
 

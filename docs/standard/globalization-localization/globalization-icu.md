@@ -85,7 +85,7 @@ Using ICU instead of NLS may result in behavioral differences with some globaliz
 > [!NOTE]
 > A value set in the project or in the `runtimeconfig.json` file takes precedence over the environment variable.
 
-For more information, see [Run-time config settings](../../core/run-time-config/globalization.md#nls).
+For more information, see [Runtime config settings](../../core/run-time-config/globalization.md#nls).
 
 ## App-local ICU
 

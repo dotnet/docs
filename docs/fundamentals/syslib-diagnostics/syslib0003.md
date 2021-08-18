@@ -149,6 +149,8 @@ The complete list of obsolete CAS APIs is as follows:
 - <xref:System.Security.SecurityManager?displayProperty=fullName>
 - <xref:System.ServiceProcess.ServiceControllerPermission?displayProperty=fullName>
 - <xref:System.ServiceProcess.ServiceControllerPermissionAttribute?displayProperty=fullName>
+- <xref:System.Threading.Thread.GetCompressedStack?displayProperty=fullName>
+- <xref:System.Threading.Thread.SetCompressedStack(System.Threading.CompressedStack)?displayProperty=fullName>
 - <xref:System.Transactions.DistributedTransactionPermission?displayProperty=fullName>
 - <xref:System.Transactions.DistributedTransactionPermissionAttribute?displayProperty=fullName>
 - <xref:System.Web.AspNetHostingPermission?displayProperty=fullName>

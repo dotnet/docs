@@ -1,4 +1,7 @@
-﻿// <Snippet1>
+﻿namespace OldCode
+{
+
+// <Snippet1>
 using System;
 
 public class Circle
@@ -26,11 +29,4 @@ public class Circle
    }
 }
 // </Snippet1>
-
-class Program
-{
-   static void Main()
-   {
-      Console.WriteLine("Hello World!");
-   }
 }

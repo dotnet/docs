@@ -302,7 +302,7 @@ Congratulations! You have now built an application that uses Model Builder to tr
 
 If you no longer plan to use the Azure resources you created, delete them. This prevents you from being charged for unutilized resources that are still running.
 
-1. Navigate to the [Azure portal](portal.azure.com) and select **Resource groups** in the portal menu.
+1. Navigate to the [Azure portal](https://portal.azure.com/) and select **Resource groups** in the portal menu.
 1. From the list of resource groups, select the resource group you created. In this case, it's "landuse-rg".
 1. Select **Delete resource group**.
 1. Type the resource group name, "landuse-rg", into the text box and then select **Enter**.

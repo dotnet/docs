@@ -37,31 +37,52 @@ Managed debugging assistants (MDAs) are debugging aids that work in conjunction 
 
 You can [enable or disable](#enable-and-disable-mdas) all MDAs by adding a key to the Windows registry or by setting an environment variable. You can enable specific MDAs by using application configuration settings. You can set additional configuration settings for some individual MDAs in the application's configuration file. Because these configuration files are parsed when the runtime is loaded, you must enable the MDA before the managed application starts. You cannot enable it for applications that have already started.
 
-The following table lists the MDAs that ship with the .NET Framework:
+The following table lists the MDAs that ship with .NET Framework:
 
-|||
-|-|-|
-|[asynchronousThreadAbort](asynchronousthreadabort-mda.md)|[bindingFailure](bindingfailure-mda.md)|
-|[callbackOnCollectedDelegate](callbackoncollecteddelegate-mda.md)|[contextSwitchDeadlock](contextswitchdeadlock-mda.md)|
-|[dangerousThreadingAPI](dangerousthreadingapi-mda.md)|[dateTimeInvalidLocalFormat](datetimeinvalidlocalformat-mda.md)|
-|[dirtyCastAndCallOnInterface](dirtycastandcalloninterface-mda.md)|[disconnectedContext](disconnectedcontext-mda.md)|
-|[dllMainReturnsFalse](dllmainreturnsfalse-mda.md)|[exceptionSwallowedOnCallFromCom](exceptionswallowedoncallfromcom-mda.md)|
-|[failedQI](failedqi-mda.md)|[fatalExecutionEngineError](fatalexecutionengineerror-mda.md)|
-|[gcManagedToUnmanaged](gcmanagedtounmanaged-mda.md)|[gcUnmanagedToManaged](gcunmanagedtomanaged-mda.md)|
-|[illegalPrepareConstrainedRegion](illegalprepareconstrainedregion-mda.md)|[invalidApartmentStateChange](invalidapartmentstatechange-mda.md)|
-|[invalidCERCall](invalidcercall-mda.md)|[invalidFunctionPointerInDelegate](invalidfunctionpointerindelegate-mda.md)|
-|[invalidGCHandleCookie](invalidgchandlecookie-mda.md)|[invalidIUnknown](invalidiunknown-mda.md)|
-|[invalidMemberDeclaration](invalidmemberdeclaration-mda.md)|[invalidOverlappedToPinvoke](invalidoverlappedtopinvoke-mda.md)|
-|[invalidVariant](invalidvariant-mda.md)|[jitCompilationStart](jitcompilationstart-mda.md)|
-|[loaderLock](loaderlock-mda.md)|[loadFromContext](loadfromcontext-mda.md)|
-|[marshalCleanupError](marshalcleanuperror-mda.md)|[marshaling](marshaling-mda.md)|
-|[memberInfoCacheCreation](memberinfocachecreation-mda.md)|[moduloObjectHashcode](moduloobjecthashcode-mda.md)|
-|[nonComVisibleBaseClass](noncomvisiblebaseclass-mda.md)|[notMarshalable](notmarshalable-mda.md)|
-|[openGenericCERCall](opengenericcercall-mda.md)|[overlappedFreeError](overlappedfreeerror-mda.md)|
-|[pInvokeLog](pinvokelog-mda.md)|[pInvokeStackImbalance](pinvokestackimbalance-mda.md)|
-|[raceOnRCWCleanup](raceonrcwcleanup-mda.md)|[reentrancy](reentrancy-mda.md)|
-|[releaseHandleFailed](releasehandlefailed-mda.md)|[reportAvOnComRelease](reportavoncomrelease-mda.md)|
-|[streamWriterBufferedDataLost](streamwriterbuffereddatalost-mda.md)|[virtualCERCall](virtualcercall-mda.md)|
+| MDA                                                                         |
+| --------------------------------------------------------------------------- |
+| [asynchronousThreadAbort](asynchronousthreadabort-mda.md)                   |
+| [bindingFailure](bindingfailure-mda.md)                                     |
+| [callbackOnCollectedDelegate](callbackoncollecteddelegate-mda.md)           |
+| [contextSwitchDeadlock](contextswitchdeadlock-mda.md)                       |
+| [dangerousThreadingAPI](dangerousthreadingapi-mda.md)                       |
+| [dateTimeInvalidLocalFormat](datetimeinvalidlocalformat-mda.md)             |
+| [dirtyCastAndCallOnInterface](dirtycastandcalloninterface-mda.md)           |
+| [disconnectedContext](disconnectedcontext-mda.md)                           |
+| [dllMainReturnsFalse](dllmainreturnsfalse-mda.md)                           |
+| [exceptionSwallowedOnCallFromCom](exceptionswallowedoncallfromcom-mda.md)   |
+| [failedQI](failedqi-mda.md)                                                 |
+| [fatalExecutionEngineError](fatalexecutionengineerror-mda.md)               |
+| [gcManagedToUnmanaged](gcmanagedtounmanaged-mda.md)                         |
+| [gcUnmanagedToManaged](gcunmanagedtomanaged-mda.md)                         |
+| [illegalPrepareConstrainedRegion](illegalprepareconstrainedregion-mda.md)   |
+| [invalidApartmentStateChange](invalidapartmentstatechange-mda.md)           |
+| [invalidCERCall](invalidcercall-mda.md)                                     |
+| [invalidFunctionPointerInDelegate](invalidfunctionpointerindelegate-mda.md) |
+| [invalidGCHandleCookie](invalidgchandlecookie-mda.md)                       |
+| [invalidIUnknown](invalidiunknown-mda.md)                                   |
+| [invalidMemberDeclaration](invalidmemberdeclaration-mda.md)                 |
+| [invalidOverlappedToPinvoke](invalidoverlappedtopinvoke-mda.md)             |
+| [invalidVariant](invalidvariant-mda.md)                                     |
+| [jitCompilationStart](jitcompilationstart-mda.md)                           |
+| [loaderLock](loaderlock-mda.md)                                             |
+| [loadFromContext](loadfromcontext-mda.md)                                   |
+| [marshalCleanupError](marshalcleanuperror-mda.md)                           |
+| [marshaling](marshaling-mda.md)                                             |
+| [memberInfoCacheCreation](memberinfocachecreation-mda.md)                   |
+| [moduloObjectHashcode](moduloobjecthashcode-mda.md)                         |
+| [nonComVisibleBaseClass](noncomvisiblebaseclass-mda.md)                     |
+| [notMarshalable](notmarshalable-mda.md)                                     |
+| [openGenericCERCall](opengenericcercall-mda.md)                             |
+| [overlappedFreeError](overlappedfreeerror-mda.md)                           |
+| [pInvokeLog](pinvokelog-mda.md)                                             |
+| [pInvokeStackImbalance](pinvokestackimbalance-mda.md)                       |
+| [raceOnRCWCleanup](raceonrcwcleanup-mda.md)                                 |
+| [reentrancy](reentrancy-mda.md)                                             |
+| [releaseHandleFailed](releasehandlefailed-mda.md)                           |
+| [reportAvOnComRelease](reportavoncomrelease-mda.md)                         |
+| [streamWriterBufferedDataLost](streamwriterbuffereddatalost-mda.md)         |
+| [virtualCERCall](virtualcercall-mda.md)                                     |
 
 By default, the .NET Framework activates a subset of MDAs for all managed debuggers. You can view the default set in Visual Studio by choosing **Windows** > **Exception Settings** on the **Debug** menu, and then expanding the **Managed Debugging Assistants** list.
 

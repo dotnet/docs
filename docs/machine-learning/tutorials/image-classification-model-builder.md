@@ -177,6 +177,12 @@ This step will have project templates that you can use to consume the model. We 
 1. Click the **Add to solution** button for the Web API project template.
 1. Name the project "LandUseApi" and click the **Add to solution** button to add the project to your solution.
 
+### Update what the API returns
+
+Once the project is added to the solution, we would need to make a small update to it to return just the prediction instead of all of the objects.
+
+1. In the "LandUseApi" project, open the "Program.cs" file and update the `WriteAsJsonAsync` method to take in the `prediction.Prediction` value.
+
 ## Consume the model in UWP application
 
 The UWP application is the interface users interact with. When a user searches for an address, a satellite image of the location renders and is categorized by the model hosted in the ASP.NET Core Web API.

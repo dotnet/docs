@@ -34,10 +34,11 @@ F# Interactive, `dotnet fsi`, can be launched interactively, or it can be launch
 
 ### Add packages in a script
 
-Next, use `#r` `nuget:package name` to install the `Azure.Storage.Queues` package.Such as
+Next, use `#r` `nuget:package name` to install the `Azure.Storage.Queues` package and `open` namespaces.Such as
 
 ```fsharp
 > #r "nuget: Azure.Storage.Queues"
+open Azure.Storage.Queues
 ```
 
 ### Add namespace declarations

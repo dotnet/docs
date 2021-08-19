@@ -31,12 +31,13 @@ F# Interactive, `dotnet fsi`, can be launched interactively, or it can be launch
 
 ### Add packages in a script
 
-Next, use `#r` `nuget:package name` to install the `Azure.Storage.Blobs` and `Azure.Storage.Blobs.Models` and `Azure.Storage.Blobs.Specialized` packages.Such as
+Next, use `#r` `nuget:package name` to install the `Azure.Storage.Blobs` package and `open` namespaces.Such as
 
 ```fsharp
 > #r "nuget: Azure.Storage.Blobs"
-> #r "nuget: Azure.Storage.Blobs.Models"
-> #r "nuget: Azure.Storage.Blobs.Specialized"
+open Azure.Storage.Blobs
+open Azure.Storage.Blobs.Models
+open Azure.Storage.Blobs.Specialized
 ```
 
 ### Add namespace declarations

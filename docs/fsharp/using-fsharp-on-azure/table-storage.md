@@ -45,10 +45,11 @@ F# Interactive, `dotnet fsi`, can be launched interactively, or it can be launch
 
 ### Add packages in a script
 
-Next, use `#r` `nuget:package name` to install the `Azure.Data.Tables` package. Such as
+Next, use `#r` `nuget:package name` to install the `Azure.Data.Tables` package and `open` namespaces. Such as
 
 ```fsharp
 > #r "nuget: Azure.Data.Tables"
+open Azure.Data.Tables
 ```
 
 ### Add namespace declarations

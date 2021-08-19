@@ -6,10 +6,10 @@ ms.assetid: cdcc8e3d-e2aa-4c5e-a580-bdf581a66709
 ---
 # 3312 - MessageReadByEncoder
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3312|  
 |Keywords|Channel|  
 |Level|Information|  

@@ -6,10 +6,10 @@ ms.assetid: 1d212383-5a34-43f5-8522-9b15ed8ebd87
 ---
 # 3326 - ClientFormatterSerializeRequestStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3326|  
 |Keywords|ServiceModel|  
 |Level|Verbose|  

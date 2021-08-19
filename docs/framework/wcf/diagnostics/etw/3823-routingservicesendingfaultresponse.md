@@ -6,10 +6,10 @@ ms.assetid: 843cbce6-f2df-4067-aaf2-394b65034282
 ---
 # 3823 - RoutingServiceSendingFaultResponse
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3823|  
 |Keywords|RoutingServices|  
 |Level|Warning|  

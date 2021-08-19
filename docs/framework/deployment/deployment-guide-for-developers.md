@@ -257,7 +257,7 @@ For example, to detect whether the full Japanese language pack (LCID=1041) is in
 |           | Value                                                                      |
 |-----------|----------------------------------------------------------------------------|
 | **Key**   | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\1041 |
-| **Value** | Release                                                                    |
+| **Entry** | Release                                                                    |
 | **Type**  | DWORD                                                                      |
 
 To determine whether the final release version of a language pack is installed for a particular version of .NET Framework from 4.5 through 4.7.2, check the value of the RELEASE key DWORD value described in the previous section, [Detecting .NET Framework](#detect_net).

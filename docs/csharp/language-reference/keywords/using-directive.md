@@ -64,8 +64,7 @@ You may add `global using` directives to any source file. Typically, you'll want
 
 The `global` modifier may be combined with the `static` modifier. The `global` modifier may be applied to a *using alias directive*. In both cases, the directive's scope is all files in the current compilation.
 
-> [!IMPORTANT]
-> The .NET 6.0 SDK adds a set of *implicit* `global using` directives based on the workload of the project. Those implicit global usings include the most common namespaces for that project type.
+[!INCLUDE [csharp10-templates](../../../../includes/csharp10-templates.md)]
 
 ## static modifier
 

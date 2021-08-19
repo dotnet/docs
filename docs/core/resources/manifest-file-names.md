@@ -42,16 +42,15 @@ For example, the manifest name for the resource file that's defined in the follo
 >
 >   The following example works correctly:
 >
->   ```
+>   ```xml
 >   <EmbeddedResource Include="X.resx" />
 >   ```
 >
 >   The following example doesn't work:
 >
+>   ```xml
+>   <EmbeddedResource Include="X.fr-FR.resx" />
 >   ```
->   <EmbeddedResource Include="X.fr-FR.resx"></EmbeddedResource>
->   ```
-
 
 ## ManifestResourceName metadata
 

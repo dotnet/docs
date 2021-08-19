@@ -8,13 +8,73 @@ ms.assetid: 32a9e547-c1b7-40f2-8118-7eef1d19649e
 
 The following table contains a listing of Visual Basic language statements.  
   
-|||||  
-|---|---|---|---|  
-|[RaiseEvent](raiseevent-statement.md)|[ReDim](redim-statement.md)|[REM](rem-statement.md)|[RemoveHandler](removehandler-statement.md)|  
-|[Resume](resume-statement.md)|[Return](return-statement.md)|[Select...Case](select-case-statement.md)|[Set](set-statement.md)|  
-|[Stop](stop-statement.md)|[Structure](structure-statement.md)|[Sub](sub-statement.md)|[SyncLock](synclock-statement.md)|  
-|[Then](then-statement.md)|[Throw](throw-statement.md)|[Try...Catch...Finally](try-catch-finally-statement.md)|[Using](using-statement.md)|  
-|[While...End While](while-end-while-statement.md)|[With...End With](with-end-with-statement.md)|[Yield](yield-statement.md)||  
+:::row:::
+   :::column span="":::
+      [RaiseEvent](raiseevent-statement.md)
+   :::column-end:::
+   :::column span="":::
+      [ReDim](redim-statement.md)
+   :::column-end:::
+   :::column span="":::
+      [REM](rem-statement.md)
+   :::column-end:::
+   :::column span="":::
+      [RemoveHandler](removehandler-statement.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Resume](resume-statement.md)
+   :::column-end:::
+   :::column span="":::
+      [Return](return-statement.md)
+   :::column-end:::
+   :::column span="":::
+      [Select...Case](select-case-statement.md)
+   :::column-end:::
+   :::column span="":::
+      [Set](set-statement.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Stop](stop-statement.md)
+   :::column-end:::
+   :::column span="":::
+      [Structure](structure-statement.md)
+   :::column-end:::
+   :::column span="":::
+      [Sub](sub-statement.md)
+   :::column-end:::
+   :::column span="":::
+      [SyncLock](synclock-statement.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Then](then-statement.md)
+   :::column-end:::
+   :::column span="":::
+      [Throw](throw-statement.md)
+   :::column-end:::
+   :::column span="":::
+      [Try...Catch...Finally](try-catch-finally-statement.md)
+   :::column-end:::
+   :::column span="":::
+      [Using](using-statement.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [While...End While](while-end-while-statement.md)
+   :::column-end:::
+   :::column span="":::
+      [With...End With](with-end-with-statement.md)
+   :::column-end:::
+   :::column span="":::
+      [Yield](yield-statement.md)
+   :::column-end:::
+:::row-end:::
   
 ## See also
 

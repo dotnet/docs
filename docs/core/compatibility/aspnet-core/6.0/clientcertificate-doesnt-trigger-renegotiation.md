@@ -14,11 +14,11 @@ ASP.NET Core 6.0
 
 ### Old behavior
 
-Setting `HttpSysOptions.ClientCertificateMethod = ClientCertificateMethod.AllowRenegotiation` allowed renegotiation to be triggered by both `HttpContext.Connection.ClientCertificate` and `HttpContext.Connection.GetClientCertifiateAsync`.
+Setting `HttpSysOptions.ClientCertificateMethod = ClientCertificateMethod.AllowRenegotiation` allowed renegotiation to be triggered by both `HttpContext.Connection.ClientCertificate` and `HttpContext.Connection.GetClientCertificateAsync`.
 
 ### New behavior
 
-Setting `HttpSysOptions.ClientCertificateMethod = ClientCertificateMethod.AllowRenegotiation` allows renegotiation to be triggered only by `HttpContext.Connection.GetClientCertifiateAsync`. `HttpContext.Connection.ClientCertificate` returns the current certificate if available, but does not renegotiate with the client to request the certificate.
+Setting `HttpSysOptions.ClientCertificateMethod = ClientCertificateMethod.AllowRenegotiation` allows renegotiation to be triggered only by `HttpContext.Connection.GetClientCertificateAsync`. `HttpContext.Connection.ClientCertificate` returns the current certificate if available, but does not renegotiate with the client to request the certificate.
 
 ## Reason for change
 

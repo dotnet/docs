@@ -1,7 +1,7 @@
 ---
 title: "How to write custom converters for JSON serialization - .NET"
 description: "Learn how to create custom converters for the JSON serialization classes that are provided in the System.Text.Json namespace."
-ms.date: 08/06/2021
+ms.date: 08/19/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
@@ -215,6 +215,7 @@ The following sections provide converter samples that address some common scenar
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+* [Support enum string value deserialization](#support-enum-string-value-deserialization)
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -386,15 +387,7 @@ The following code registers the converter:
 
 ### Support enum string value deserialization
 
-By default, the built-in <xref:System.Text.Json.Serialization.JsonStringEnumConverter> can serialize and deserialize string values for enums. It works without a specified naming policy or with the <xref:System.Text.Json.JsonNamingPolicy.CamelCase> naming policy. It doesn't support other naming policies, such as snake case. The following example shows a custom converter that enables round-tripping to and from enum string values while using a snake case naming policy. The example:
-
-* Supports serialization and deserialization of arbitrary enum types according to a specified naming policy and encoder, using size-limited caches to specify a range of supported enum values.
-* Dynamically adds transformed enum string representations to the caches on serialization which can also be used on deserialization. This behavior is mostly useful for flags, and it is done only so long as the cache size limit hasn't been reached.
-* Provides a mechanism to specify "known" enum flag values which can be used for deserialization even when serialization has not occurred.
-
-For more information, see [dotnet/runtime GitHub issue #31619](https://github.com/dotnet/runtime/issues/31619).
-
-:::code language="csharp" source="snippets/system-text-json-converters-how-to/csharp/EnumConverter.cs" id="Converter":::
+By default, the built-in <xref:System.Text.Json.Serialization.JsonStringEnumConverter> can serialize and deserialize string values for enums. It works without a specified naming policy or with the <xref:System.Text.Json.JsonNamingPolicy.CamelCase> naming policy. It doesn't support other naming policies, such as snake case. For information about custom converter code that can support round-tripping to and from enum string values while using a snake case naming policy, see GitHub issue [dotnet/runtime #31619](https://github.com/dotnet/runtime/issues/31619).
 
 ::: zone-end
 

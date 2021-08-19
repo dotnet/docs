@@ -31,13 +31,12 @@ For information on the support lifecycle of .NET Framework versions, see [Micros
 
 ## Hardware requirements
 
-|                          |        |
-| ------------------------ | ------ |
-| **Processor**            | 1 GHz  |
-| **RAM**                  | 512 MB |
-| **Disk space (minimum)** |        |
-| 32-bit                   | 4.5 GB |
-| 64-bit                   | 4.5 GB |
+|                                 | Requirement |
+|---------------------------------|-------------|
+| **Processor**                   | 1 GHz       |
+| **RAM**                         | 512 MB      |
+| **Minimum disk space (32-bit)** | 4.5 GB      |
+| **Minimum disk space (64-bit)** | 4.5 GB      |
 
 ## Installation requirements
 

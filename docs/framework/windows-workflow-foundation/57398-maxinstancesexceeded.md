@@ -6,10 +6,10 @@ ms.assetid: f943d209-dfeb-43e5-b572-c9a06217936e
 ---
 # 57398 - MaxInstancesExceeded
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|57398|  
 |Keywords|WFServices|  
 |Level|Warning|  

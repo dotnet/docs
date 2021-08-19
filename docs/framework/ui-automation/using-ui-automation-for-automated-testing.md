@@ -37,11 +37,11 @@ ms.assetid: 3a0435c0-a791-4ad7-ba92-a4c1d1231fde
 
  As mentioned earlier, without the unified model provided by UI Automation, test tools and developers are required to know framework-specific information in order to expose properties and behaviors of controls in that framework. Since there can be several different UI frameworks present at any single time within Windows operating systems, including Win32, Windows Forms, and Windows Presentation Foundation (WPF), it can be a daunting task to test multiple applications with controls that seem similar. For example, the following table outlines the framework-specific property names required to retrieve the name (or text) associated with a button control and shows the single equivalent UI Automation property.
 
-|UI Automation Control Type|UI Framework|Framework Specific Property|UI Automation Property|
-|--------------------------------|------------------|---------------------------------|----------------------------|
-|Button|Windows Presentation Foundation|Content|NameProperty|
-|Button|Win32|Caption|NameProperty|
-|Image|HTML|alt|NameProperty|
+| UI Automation Control Type | UI Framework                    | Framework Specific Property | UI Automation Property |
+|----------------------------|---------------------------------|-----------------------------|------------------------|
+| Button                     | Windows Presentation Foundation | Content                     | NameProperty           |
+| Button                     | Win32                           | Caption                     | NameProperty           |
+| Image                      | HTML                            | alt                         | NameProperty           |
 
  UI Automation providers are responsible for mapping the framework-specific properties of their controls to the equivalent UI Automation properties.
 
@@ -88,14 +88,14 @@ ms.assetid: 3a0435c0-a791-4ad7-ba92-a4c1d1231fde
 
 ### Implementing UI Automation in a Test Application
 
-|||
+| Step | Description |
 |-|-|
 |Add the UI Automation References.|The UI Automation dll's necessary for UI Automation clients are listed here.<br /><br /> -   UIAutomationClient.dll provides access to the UI Automation client-side APIs.<br />-   UIAutomationClientSideProvider.dll provides the ability to automate Win32 controls. See [UI Automation Support for Standard Controls](ui-automation-support-for-standard-controls.md).<br />-   UIAutomationTypes.dll provides access to the specific types defined in UI Automation.|
 |Add the <xref:System.Windows.Automation> namespace.|This namespace contains everything UI Automation clients need to use the capabilities of UI Automation except text handling.|
 |Add the <xref:System.Windows.Automation.Text> namespace.|This namespace contains everything a UI Automation clients need to use the capabilities of UI Automation text handling.|
-|Find controls of interest|Automated test scripts locate UI Automation elements that represent controls of interest within the automation tree.<br /><br /> There are multiple ways to obtain UI Automation elements with code.<br /><br /> -   Query the UI using a <xref:System.Windows.Automation.Condition> statement. This is typically where the language-neutral <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> is used. **Note:**  An <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> can be obtained using a tool such as Inspect.exe that is able to itemize the UI Automation properties of a control. <br /><br /> -   Use the <xref:System.Windows.Automation.TreeWalker> class to traverse the entire UI Automation tree or a subset thereof.<br />-   Track focus.<br />-   Use the hWnd of the control.<br />-   Use screen location, such as the location of the mouse cursor.<br /><br /> See [Obtaining UI Automation Elements](obtaining-ui-automation-elements.md)|
-|Obtain Control Patterns|Control patterns expose common behaviors for functionally similar controls.<br /><br /> After locating the controls that require testing, automated test scripts obtain the control patterns of interest from those UI Automation elements. For example, the <xref:System.Windows.Automation.InvokePattern> control pattern for typical button functionality or the <xref:System.Windows.Automation.WindowPattern> control pattern for window functionality.<br /><br /> See [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md).|
-|Automate the UI|Automated test scripts can now control any UI of interest from a UI framework using the information and functionality exposed by the UI Automation control patterns.|
+|Find controls of interest.|Automated test scripts locate UI Automation elements that represent controls of interest within the automation tree.<br /><br /> There are multiple ways to obtain UI Automation elements with code.<br /><br /> -   Query the UI using a <xref:System.Windows.Automation.Condition> statement. This is typically where the language-neutral <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> is used. **Note:**  An <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> can be obtained using a tool such as Inspect.exe that is able to itemize the UI Automation properties of a control. <br /><br /> -   Use the <xref:System.Windows.Automation.TreeWalker> class to traverse the entire UI Automation tree or a subset thereof.<br />-   Track focus.<br />-   Use the hWnd of the control.<br />-   Use screen location, such as the location of the mouse cursor.<br /><br /> See [Obtaining UI Automation Elements](obtaining-ui-automation-elements.md)|
+|Obtain Control Patterns.|Control patterns expose common behaviors for functionally similar controls.<br /><br /> After locating the controls that require testing, automated test scripts obtain the control patterns of interest from those UI Automation elements. For example, the <xref:System.Windows.Automation.InvokePattern> control pattern for typical button functionality or the <xref:System.Windows.Automation.WindowPattern> control pattern for window functionality.<br /><br /> See [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md).|
+|Automate the UI.|Automated test scripts can now control any UI of interest from a UI framework using the information and functionality exposed by the UI Automation control patterns.|
 
 ## Related Tools and Technologies
 

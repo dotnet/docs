@@ -6,10 +6,10 @@ ms.assetid: 4995f0d5-c182-4d97-981f-6951da6df1fb
 ---
 # 221 - MessageReceivedFromTransport
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|221|  
 |Keywords|EndToEndMonitoring, Troubleshooting, ServiceModel|  
 |Level|Information|  

@@ -6,10 +6,10 @@ ms.assetid: 4a0aa0f5-e20e-4004-bdeb-15c19a5477d9
 ---
 # 4803 - DiscoveryClientReceivedMulticastSuppression
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4803|  
 |Keywords|Discovery|  
 |Level|Information|  

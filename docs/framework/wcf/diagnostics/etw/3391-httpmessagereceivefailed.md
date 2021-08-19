@@ -6,10 +6,10 @@ ms.assetid: 9fc527ed-57ad-46fe-8b81-940f4b992368
 ---
 # 3391 - HttpMessageReceiveFailed
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3391|  
 |Keywords|HTTP|  
 |Level|Warning|  

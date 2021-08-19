@@ -6,10 +6,10 @@ ms.assetid: 42cb442e-ff16-4809-bbee-6d31f012b9b2
 ---
 # 5001 - DCSerializeWithSurrogateStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5001|  
 |Keywords|Serialization|  
 |Level|Verbose|  

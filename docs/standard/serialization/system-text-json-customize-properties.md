@@ -18,14 +18,14 @@ ms.topic: how-to
 
 By default, property names and dictionary keys are unchanged in the JSON output, including case. Enum values are represented as numbers. In this article, you'll learn how to:
 
-> [!NOTE]
-> The [web default](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions) is camel case.
-
 * [Customize individual property names](#customize-individual-property-names)
 * [Convert all property names to camel case](#use-camel-case-for-all-json-property-names)
 * [Implement a custom property naming policy](#use-a-custom-json-property-naming-policy)
 * [Convert dictionary keys to camel case](#camel-case-dictionary-keys)
 * [Convert enums to strings and camel case](#enums-as-strings)
+
+> [!NOTE]
+> The [web default](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions) is camel case.
 
 For other scenarios that require special handling of JSON property names and values, you can [implement custom converters](system-text-json-converters-how-to.md).
 

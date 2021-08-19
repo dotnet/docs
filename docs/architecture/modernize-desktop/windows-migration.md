@@ -104,7 +104,7 @@ When the user uninstalls a package, all files and folders located under `C:\Pro
 For details about how a packaged application handles installation, file access, registry, and uninstallation, see
 <https://docs.microsoft.com/windows/msix/desktop/desktop-to-uwp-behind-the-scenes>.
 
-You can get a complete list of things to check on <https://docs.microsoft.com/windows/msix/desktop/desktop-to-uwp-prepare>.
+You can get a complete list of things to check on [https://docs.microsoft.com/windows/msix/desktop/desktop-to-uwp-prepare](/windows/msix/desktop/desktop-to-uwp-prepare).
 
 ## How to add WinRT APIs to your desktop project
 
@@ -290,7 +290,7 @@ Besides the inbox Windows 10 controls that comes with the OS, the same UWP XAML 
 
 WinUI 2 is open source and you can find information at <https://github.com/microsoft/microsoft-ui-xaml>.
 
-The following article demonstrates how to host a UWP XAML control from the WinUI 2 library: <https://docs.microsoft.com/windows/apps/desktop/modernize/host-custom-control-with-xaml-islands>
+The following article demonstrates how to host a UWP XAML control from the WinUI 2 library: [https://docs.microsoft.com/windows/apps/desktop/modernize/host-custom-control-with-xaml-islands](/windows/apps/desktop/modernize/host-custom-control-with-xaml-islands)
 
 ### Do you need XAML Islands
 

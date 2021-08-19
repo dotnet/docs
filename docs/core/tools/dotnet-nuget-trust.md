@@ -139,7 +139,7 @@ Adds a trusted signer with the given name, based on the repository signature or 
 #### Synopsis
 
 ```dotnetcli
-dotnet nuget trust repository <NAME> <PACKAGE> [--allow-untrusted-root] [--configfile <PATH>] [-h|--help] [--owners <List>] [-v, --verbosity <LEVEL>]
+dotnet nuget trust repository <NAME> <PACKAGE> [--allow-untrusted-root] [--configfile <PATH>] [-h|--help] [--owners <LIST>] [-v, --verbosity <LEVEL>]
 ```
 
 #### Arguments
@@ -162,7 +162,7 @@ dotnet nuget trust repository <NAME> <PACKAGE> [--allow-untrusted-root] [--confi
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`--owners <List>`**
+- **`--owners <LIST>`**
 
   Semicolon-separated list of trusted owners to further restrict the trust of a repository.
 
@@ -211,7 +211,7 @@ Adds a trusted signer based on a given package source.
 #### Synopsis
 
 ```dotnetcli
-dotnet nuget trust source <NAME> [--configfile <PATH>] [-h|--help] [--owners <List>] [--source-url] [-v, --verbosity <LEVEL>]
+dotnet nuget trust source <NAME> [--configfile <PATH>] [-h|--help] [--owners <LIST>] [--source-url] [-v, --verbosity <LEVEL>]
 ```
 
 #### Arguments
@@ -226,7 +226,7 @@ dotnet nuget trust source <NAME> [--configfile <PATH>] [-h|--help] [--owners <Li
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`--owners <List>`**
+- **`--owners <LIST>`**
 
   Semicolon-separated list of trusted owners to further restrict the trust of a repository.
 

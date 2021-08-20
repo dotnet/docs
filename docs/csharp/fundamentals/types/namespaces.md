@@ -30,8 +30,7 @@ Beginning with C# 10.0, you can declare a namespace for all types defined in tha
 
 :::code language="csharp" source="snippets/namespaces/filescopednamespace.cs":::
 
-The advantage of this new syntax is that it's simpler, saving some extra braces. That makes your code easier to read.
-
+The advantage of this new syntax is that it's simpler, saving horizontal space and braces. That makes your code easier to read.
 
 ## Namespaces overview
 

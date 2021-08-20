@@ -74,7 +74,7 @@ The `using static` directive names a type whose static members and nested types 
 using static <fully-qualified-type-name>;
 ```
 
-where *fully-qualified-type-name* is the name of the type whose static members and nested types can be referenced without specifying a type name. If you don't provide a fully qualified type name (the full namespace name along with the type name), C# generates compiler error [CS0246](../compiler-messages/cs0246.md): "The type or namespace name 'type/namespace' couldn't be found (are you missing a using directive or an assembly reference?)".
+The `<fully-qualified-type-name>` is the name of the type whose static members and nested types can be referenced without specifying a type name. If you don't provide a fully qualified type name (the full namespace name along with the type name), C# generates compiler error [CS0246](../compiler-messages/cs0246.md): "The type or namespace name 'type/namespace' couldn't be found (are you missing a using directive or an assembly reference?)".
 
 The `using static` directive applies to any type that has static members (or nested types), even if it also has instance members. However, instance members can only be invoked through the type instance.
 
@@ -102,9 +102,9 @@ By eliminating the need to explicitly reference the <xref:System.Math> class eac
 
 `using static` imports only accessible static members and nested types declared in the specified type.  Inherited members aren't imported.  You can import from any named type with a using static directive, including Visual Basic modules.  If F# top-level functions appear in metadata as static members of a named type whose name is a valid C# identifier, then the F# functions can be imported.
 
- `using static` makes extension methods declared in the specified type available for extension method lookup.  However, the names of the extension methods aren't imported into scope for unqualified reference in code.
+`using static` makes extension methods declared in the specified type available for extension method lookup.  However, the names of the extension methods aren't imported into scope for unqualified reference in code.
 
- Methods with the same name imported from different types by different `using static` directives in the same compilation unit or namespace form a method group.  Overload resolution within these method groups follows normal C# rules.
+Methods with the same name imported from different types by different `using static` directives in the same compilation unit or namespace form a method group.  Overload resolution within these method groups follows normal C# rules.
 
 The following example uses the `using static` directive to make the static members of the <xref:System.Console>, <xref:System.Math>, and <xref:System.String> classes available without having to specify their type name.
 

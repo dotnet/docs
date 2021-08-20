@@ -65,4 +65,3 @@ namespace SomeNameSpace
 }
 // Output: Hello
 //</snippet3>
-}

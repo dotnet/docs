@@ -1,5 +1,4 @@
-﻿// <Snippet1>
-using System;
+﻿using System;
 using static System.Math;
 
 public class Circle
@@ -24,14 +23,5 @@ public class Circle
    public double Area
    {
       get { return PI * Pow(Radius, 2); }
-   }
-}
-// </Snippet1>
-
-class Program
-{
-   static void Main()
-   {
-      Console.WriteLine("Hello World!");
    }
 }

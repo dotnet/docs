@@ -1,4 +1,7 @@
-﻿using System;
+﻿namespace FullSample
+{
+// <Snippet1>
+using System;
 using static System.Console;
 using static System.Math;
 using static System.String;
@@ -57,3 +60,5 @@ public class Circle
 //          Diameter: 24.90
 //          Circumference: 78.23
 //          Area: 486.95
+// </Snippet1>
+}

@@ -20,6 +20,8 @@ Create a directory named *numbers-quickstart*. Make it the current directory and
 dotnet new console -n NumbersInCSharp -o .
 ```
 
+[!INCLUDE [csharp10-templates](../../../../includes/csharp10-templates.md)]
+
 Open *Program.cs* in your favorite editor, and replace the contents of the file with the following code:
 
 ```csharp

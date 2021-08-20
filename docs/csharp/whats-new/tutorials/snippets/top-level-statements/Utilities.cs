@@ -1,7 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-
-namespace MyNamespace
+﻿namespace MyNamespace
 {
     public static class Utilities
     {

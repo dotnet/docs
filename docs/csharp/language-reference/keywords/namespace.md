@@ -42,7 +42,6 @@ namespace ANestedNamespace // Not allowed!
 }
 ```
 
-
 Within a namespace, you can declare zero or more of the following types:
 
 - [class](class.md)

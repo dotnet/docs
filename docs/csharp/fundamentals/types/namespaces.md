@@ -20,6 +20,8 @@ Namespaces are heavily used in C# programming in two ways. First, .NET uses name
 
 For more information, see the [using Directive](../../language-reference/keywords/using-directive.md).
 
+[!INCLUDE [csharp10-templates](../../../../includes/csharp10-templates.md)]
+
 Second, declaring your own namespaces can help you control the scope of class and method names in larger programming projects. Use the [namespace](../../language-reference/keywords/namespace.md) keyword to declare a namespace, as in the following example:
 
 :::code language="csharp" source="snippets/namespaces/Program.cs" ID="Snippet6":::

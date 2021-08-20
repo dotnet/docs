@@ -45,7 +45,7 @@ To learn how to implement strategies for handling partial failures in the cloud,
 
 - **The Transient Fault Handling Application Block**
 
-- <https://docs.microsoft.com/previous-versions/msp-n-p/hh680934(v=pandp.50)>
+- [https://docs.microsoft.com/previous-versions/msp-n-p/hh680934(v=pandp.50)](/previous-versions/msp-n-p/hh680934(v=pandp.50))
 
 - **Polly library for resilient HTTP communication**
 

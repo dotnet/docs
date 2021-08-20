@@ -112,8 +112,6 @@ Common properties include:
    This is a list of assembly paths (delimited by ';' on Windows and ':' on Linux) which the runtime will be able to resolve by default. Some hosts have hard-coded manifests listing assemblies they can load. Others will put any library in certain locations (next to *coreclr.dll*, for example) on this list.
 * `APP_PATHS`
    This is a list of paths to probe in for an assembly if it can't be found in the trusted platform assemblies (TPA) list. Because the host has more control over which assemblies are loaded using the TPA list, it is a best practice for hosts to determine which assemblies they expect to load and list them explicitly. If probing at run time is needed, however, this property can enable that scenario.
-* `APP_NI_PATHS`
-   This list is similar to APP_PATHS except that it's meant to be paths that will be probed for native images.
 * `NATIVE_DLL_SEARCH_DIRECTORIES`
    This property is a list of paths the loader should probe when looking for native libraries called via p/invoke.
 * `PLATFORM_RESOURCE_ROOTS`

@@ -27,7 +27,7 @@ The garbage collector provides the following benefits:
 
 - Reclaims objects that are no longer being used, clears their memory, and keeps the memory available for future allocations. Managed objects automatically get clean content to start with, so their constructors don't have to initialize every data field.
 
-- Provides memory safety by making sure that an object cannot use the content of another object.
+- Provides memory safety by making sure that an object cannot use for itself the memory allocated for another object.
 
 ## Fundamentals of memory
 

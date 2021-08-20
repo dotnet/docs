@@ -6,10 +6,10 @@ ms.assetid: ab7d50a0-5347-4390-8445-1def4dfdff6a
 ---
 # 101 - WorkflowInstanceUnhandledExceptionRecord
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |Id|101|  
 |Keywords|EndToEndMonitoring, Troubleshooting, HealthMonitoring, WFTracking|  
 |Level|Error|  

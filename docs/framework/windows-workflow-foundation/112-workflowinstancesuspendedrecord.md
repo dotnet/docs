@@ -6,10 +6,10 @@ ms.assetid: bc825c7c-8c90-48f7-9336-9a978a8246c6
 ---
 # 112 - WorkflowInstanceSuspendedRecord
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |Id|112|  
 |Keywords|EndToEndMonitoring, Troubleshooting, HealthMonitoring, WFTracking|  
 |Level|Information|  

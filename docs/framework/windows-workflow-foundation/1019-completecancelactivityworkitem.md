@@ -6,10 +6,10 @@ ms.assetid: 75a4a1ab-e5a3-4f4e-88e4-d19806e671d7
 ---
 # 1019 - CompleteCancelActivityWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1019|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

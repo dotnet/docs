@@ -6,10 +6,10 @@ ms.assetid: 71ebd2ee-aedd-47ef-9a2b-00f778f7e225
 ---
 # 3414 - HttpPipelineProcessResponseStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3414|  
 |Keywords|HTTP|  
 |Level|Verbose|  

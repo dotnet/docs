@@ -6,10 +6,10 @@ ms.assetid: fb2c81be-3dae-45a8-8558-c5d0cbb8958a
 ---
 # 3401 - SignatureVerificationStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3401|  
 |Keywords|Security|  
 |Level|Verbose|  

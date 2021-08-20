@@ -6,10 +6,10 @@ ms.assetid: 4f865de5-62c1-443c-9dcd-1675ca127334
 ---
 # 57396 - ThrowingException
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|57396|  
 |Keywords|Infrastructure|  
 |Level|Warning|  

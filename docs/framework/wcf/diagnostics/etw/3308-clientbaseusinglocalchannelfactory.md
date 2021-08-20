@@ -6,10 +6,10 @@ ms.assetid: f1488c75-38ab-47a0-9951-852488683f2a
 ---
 # 3308 - ClientBaseUsingLocalChannelFactory
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3308|  
 |Keywords|ServiceModel|  
 |Level|Information|  

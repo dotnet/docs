@@ -290,13 +290,13 @@ This functional test exercises the full ASP.NET Core MVC / Razor Pages applicati
 > ### References – Test ASP.NET Core MVC apps
 >
 > - **Testing in ASP.NET Core** \
->   <https://docs.microsoft.com/aspnet/core/testing/>
+>   [https://docs.microsoft.com/aspnet/core/testing/](/aspnet/core/testing/)
 > - **Unit Test Naming Convention** \
 >   <https://ardalis.com/unit-test-naming-convention>
 > - **Testing EF Core** \
->   <https://docs.microsoft.com/ef/core/miscellaneous/testing/>
+>   [https://docs.microsoft.com/ef/core/miscellaneous/testing/](/ef/core/miscellaneous/testing/)
 > - **Integration tests in ASP.NET Core** \
->   <https://docs.microsoft.com/aspnet/core/test/integration-tests>
+>   [https://docs.microsoft.com/aspnet/core/test/integration-tests](/aspnet/core/test/integration-tests)
 
 >[!div class="step-by-step"]
 >[Previous](work-with-data-in-asp-net-core-apps.md)

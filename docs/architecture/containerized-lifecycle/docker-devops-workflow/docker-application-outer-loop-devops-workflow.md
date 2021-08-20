@@ -95,7 +95,7 @@ With these Visual Studio Team Services tasks, a build Linux-Docker Host/VM provi
 >   <https://hub.docker.com/_/microsoft-azure-pipelines-vsts-agent>
 >
 > - Building .NET Linux Docker images with Azure DevOps Services: \
->   <https://docs.microsoft.com/archive/blogs/stevelasker/building-net-core-linux-docker-images-with-visual-studio-team-services>
+>   [https://docs.microsoft.com/archive/blogs/stevelasker/building-net-core-linux-docker-images-with-visual-studio-team-services](/archive/blogs/stevelasker/building-net-core-linux-docker-images-with-visual-studio-team-services)
 >
 > - Building a Linux-based Visual Studio Team Service build machine with Docker support: \
 >   <https://www.donovanbrown.com/post/Building-a-Linux-Based-Visual-Studio-Team-Service-Build-Machine-with-Docker-Support>

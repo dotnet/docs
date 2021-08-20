@@ -14,7 +14,6 @@ The `using` keyword has three major uses:
 
 - The [using statement](using-statement.md) defines a scope at the end of which an object will be disposed.
 - The [using directive](using-directive.md) creates an alias for a namespace or imports types defined in other namespaces.
-- The [using static directive](using-static.md) imports the members of a single class.
 
 ## See also
 

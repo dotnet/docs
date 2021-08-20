@@ -6,10 +6,10 @@ ms.assetid: eae255f8-13fd-4d8e-9f9e-56aea0d588c3
 ---
 # 3303 - ReceiveContextAbandonWithException
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3303|  
 |Keywords|Channel|  
 |Level|Information|  

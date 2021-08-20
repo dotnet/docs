@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: .NET globalization and ICU"
 title: "Globalization and ICU"
-ms.date: "05/21/2020"
+ms.date: 08/11/2021
 helpviewer_keywords:
   - "globalization [.NET], about globalization"
   - "global applications, globalization"
@@ -54,7 +54,7 @@ To fix this code by conducting an ordinal search instead of a culture-sensitive 
 
 You can run code analysis rules [CA1307: Specify StringComparison for clarity](../../../docs/fundamentals/code-analysis/quality-rules/ca1307.md) and [CA1309: Use ordinal StringComparison](../../../docs/fundamentals/code-analysis/quality-rules/ca1309.md) to find these call sites in your code.
 
-For more information, see [Behavior changes when comparing strings on .NET 5+](../base-types/string-comparison-net-5-plus.md).
+For more information, see [Behavior changes when comparing strings on .NET 5+](../../standard/base-types/string-comparison-net-5-plus.md).
 
 ### Use NLS instead of ICU
 

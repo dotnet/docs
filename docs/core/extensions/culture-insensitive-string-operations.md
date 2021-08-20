@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Culture-insensitive string operations"
 title: "Culture-Insensitive String Operations"
-ms.date: "03/30/2017"
+ms.date: 08/11/2021
 helpviewer_keywords:
   - "culture, culture-insensitive string operations"
   - "case-sensitive comparisons"
@@ -13,11 +13,12 @@ helpviewer_keywords:
   - "culture-insensitive string operations"
 ms.assetid: e6e2bb94-a95d-44e2-b68c-cfdd1db77784
 ---
+
 # Culture-insensitive string operations
 
 Culture-sensitive string operations can be an advantage if you are creating applications designed to display results to users on a per-culture basis. By default, culture-sensitive methods obtain the culture to use from the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> property for the current thread.
 
-Sometimes, culture-sensitive string operations are not the desired behavior. Using culture-sensitive operations when results should be independent of culture can cause application code to fail on cultures with custom case mappings and sorting rules. For an example, see the ["String Comparisons that Use the Current Culture"](../base-types/best-practices-strings.md#string-comparisons-that-use-the-current-culture) section in the [Best Practices for Using Strings](../base-types/best-practices-strings.md) article.
+Sometimes, culture-sensitive string operations are not the desired behavior. Using culture-sensitive operations when results should be independent of culture can cause application code to fail on cultures with custom case mappings and sorting rules. For an example, see the ["String Comparisons that Use the Current Culture"](../../standard/base-types/best-practices-strings.md#string-comparisons-that-use-the-current-culture) section in the [Best Practices for Using Strings](../../standard/base-types/best-practices-strings.md) article.
 
 Whether string operations should be culture-sensitive or culture-insensitive depends on how your application uses the results. String operations that display results to the user should typically be culture-sensitive. For example, if an application displays a sorted list of localized strings in a list box, the application should perform a culture-sensitive sort.
 
@@ -27,4 +28,4 @@ Whether or not you're developing an application that includes code to handle loc
 
 ## See also
 
-- [Globalization and Localization](index.md)
+- [Globalization and Localization](globalization-and-localization.md)

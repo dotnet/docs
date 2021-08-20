@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Localizability review"
-title: "Localizability Review"
-ms.date: "03/30/2017"
+title: Localizability review
+description: Learn about localizability reviews, and when they should occur and how to use them.
+ms.date: 08/11/2021
 dev_langs:
   - "csharp"
   - "vb"
@@ -17,17 +17,18 @@ helpviewer_keywords:
   - "localizing resources"
 ms.assetid: 3aee2fbb-de47-4e37-8fe4-ddebb9719247
 ---
+
 # Localizability review
 
 The localizability review is an intermediate step in the development of a world-ready application. It verifies that a globalized application is ready for localization and identifies any code or any aspects of the user interface that require special handling. This step also helps ensure that the localization process will not introduce any functional defects into your application. When all the issues raised by the localizability review have been addressed, your application is ready for localization. If the localizability review is thorough, you should not have to modify any source code during the localization process.
 
 The localizability review consists of the following three checks:
 
-- [Are the globalization recommendations implemented?](#global)
-
-- [Are culture-sensitive features handled correctly?](#culture)
-
-- [Have you tested your application with international data?](#test)
+> [!div class="checklist"]
+>
+> * [Are the globalization recommendations implemented?](#global)
+> * [Are culture-sensitive features handled correctly?](#culture)
+> * [Have you tested your application with international data?](#test)
 
 <a name="global"></a>
 
@@ -76,7 +77,7 @@ If you've followed the globalization recommendations when developing your applic
 
 ## See also
 
-- [Globalization and Localization](index.md)
+- [Globalization and Localization](globalization-and-localization.md)
 - [Localization](localization.md)
 - [Globalization](globalization.md)
-- [Resources in Desktop Apps](../../framework/resources/index.md)
+- [Resources in .NET apps](resources.md)

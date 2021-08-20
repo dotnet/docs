@@ -696,49 +696,49 @@ The following keywords are not reserved, which means you can use them as names f
 
 :::row:::
    :::column:::
-      [`Aggregate`](../queries/aggregate-clause.md)
-      [`Auto`](../modifiers/auto.md)
-      [`Custom`](../statements/event-statement.md)
-      [`From`](../queries/from-clause.md)
-      [`IsFalse`](../operators/isfalse-operator.md)
-      [`Key`](../modifiers/key.md)
-      [`Preserve`](../statements/redim-statement.md)
-      [`Take`](../queries/take-clause.md)
-      [`Until`](../statements/do-loop-statement.md)
-      [`#Region`](../directives/region-directive.md)
+      [`Aggregate`](../queries/aggregate-clause.md)\
+      [`Auto`](../modifiers/auto.md)\
+      [`Custom`](../statements/event-statement.md)\
+      [`From`](../queries/from-clause.md)\
+      [`IsFalse`](../operators/isfalse-operator.md)\
+      [`Key`](../modifiers/key.md)\
+      [`Preserve`](../statements/redim-statement.md)\
+      [`Take`](../queries/take-clause.md)\
+      [`Until`](../statements/do-loop-statement.md)\
+      [`#Region`](../directives/region-directive.md)\
    :::column-end:::
    :::column:::
-      [`Ansi`](../modifiers/ansi.md)
-      [`Await`](../operators/await-operator.md)
-      [`Distinct`](../queries/distinct-clause.md)
-      [`Group By`](../queries/group-by-clause.md)
-      [`IsTrue`](../operators/istrue-operator.md)
-      [`Mid`](../statements/mid-statement.md)
-      [`Skip`](../queries/skip-clause.md)
-      [`Take While`](../queries/take-while-clause.md)
-      [`Where`](../queries/where-clause.md)
+      [`Ansi`](../modifiers/ansi.md)\
+      [`Await`](../operators/await-operator.md)\
+      [`Distinct`](../queries/distinct-clause.md)\
+      [`Group By`](../queries/group-by-clause.md)\
+      [`IsTrue`](../operators/istrue-operator.md)\
+      [`Mid`](../statements/mid-statement.md)\
+      [`Skip`](../queries/skip-clause.md)\
+      [`Take While`](../queries/take-while-clause.md)\
+      [`Where`](../queries/where-clause.md)\
    :::column-end:::
    :::column:::
-      [`Assembly`](../modifiers/assembly.md)
-      [`Binary`](../statements/option-compare-statement.md)
-      [`Equals`](../queries/equals-clause.md)
-      [`Group Join`](../queries/group-join-clause.md)
-      [`Iterator`](../modifiers/iterator.md)
-      [`Off`](../../misc/off.md)
-      [`Skip While`](../queries/skip-while-clause.md)
-      [`Text`](../statements/option-compare-statement.md)
-      [`Yield`](../statements/yield-statement.md)
+      [`Assembly`](../modifiers/assembly.md)\
+      [`Binary`](../statements/option-compare-statement.md)\
+      [`Equals`](../queries/equals-clause.md)\
+      [`Group Join`](../queries/group-join-clause.md)\
+      [`Iterator`](../modifiers/iterator.md)\
+      [`Off`](../../misc/off.md)\
+      [`Skip While`](../queries/skip-while-clause.md)\
+      [`Text`](../statements/option-compare-statement.md)\
+      [`Yield`](../statements/yield-statement.md)\
    :::column-end:::
    :::column:::
-      [`Async`](../modifiers/async.md)
-      [`Compare`](../statements/option-compare-statement.md)
-      [`Explicit`](../statements/option-explicit-statement.md)
-      [`Into`](../statements/into-clause.md)
-      [`Join`](../queries/join-clause.md)
-      [`Order By`](../queries/order-by-clause.md)
-      [`Strict`](../statements/option-strict-statement.md)
-      [`Unicode`](../modifiers/unicode.md)
-      [`#ExternalSource`](../directives/externalsource-directive.md)
+      [`Async`](../modifiers/async.md)\
+      [`Compare`](../statements/option-compare-statement.md)\
+      [`Explicit`](../statements/option-explicit-statement.md)\
+      [`Into`](../statements/into-clause.md)\
+      [`Join`](../queries/join-clause.md)\
+      [`Order By`](../queries/order-by-clause.md)\
+      [`Strict`](../statements/option-strict-statement.md)\
+      [`Unicode`](../modifiers/unicode.md)\
+      [`#ExternalSource`](../directives/externalsource-directive.md)\
    :::column-end:::
 :::row-end:::
 

@@ -6,10 +6,10 @@ ms.assetid: 436b3767-4460-46b0-9ea3-fc2963260c11
 ---
 # 1132 - InvokeMethodDoesNotUseAsyncPattern
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1132|  
 |Keywords|WFRuntime|  
 |Level|Information|  

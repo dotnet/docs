@@ -1,7 +1,7 @@
 ---
 title: Top-level statements - C# tutorial
 description: This tutorial shows how you can use top-level statements to experiment and prove concepts while exploring your ideas
-ms.date: 10/28/2020
+ms.date: 08/19/2021
 ---
 # Tutorial: Explore ideas using top-level statements to build code as you learn
 
@@ -15,7 +15,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET 5, which includes the C# 9 compiler. The C# 9 compiler is available starting with [Visual Studio 2019 version 16.9 preview 1](https://visualstudio.microsoft.com/vs/preview/) or [.NET 5.0 SDK](https://dot.net/get-dotnet5).
+You'll need to set up your machine to run .NET 6, which includes the C# 10.0 compiler. The C# 10.0 compiler is available starting with [Visual Studio 2022](https://visualstudio.microsoft.com/vs/preview/) or [.NET 6.0 SDK](https://dot.net/get-dotnet6).
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
 
@@ -41,10 +41,11 @@ namespace Application
 The preceding code is the result of running the `dotnet new console` command and creating a new console application. Those 11 lines contain only one line of executable code. You can simplify that program with the new top-level statements feature. That enables you to remove all but two of the lines in this program:
 
 ```csharp
-using System;
-
-Console.WriteLine("Hello World!");
+// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World!");
 ```
+
+[!INCLUDE [csharp10-templates](../../../../includes/csharp10-templates.md)]
 
 This feature simplifies what's needed to begin exploring new ideas. You can use top-level statements for scripting scenarios, or to explore. Once you've got the basics working, you can start refactoring the code and create methods, classes, or other assemblies for reusable components you've built. Top-level statements do enable quick experimentation and beginner tutorials. They also provide a smooth path from experimentation to full programs.
 
@@ -57,8 +58,6 @@ For this tutorial, let's build a console application that answers a "yes" or "no
 A good starting point is to write the question back to the console. You can start by writing the following code:
 
 ```csharp
-using System;
-
 Console.WriteLine(args);
 ```
 
@@ -113,16 +112,13 @@ using System.Threading.Tasks;
 
 The `using` statements must be before any other statements in the file. Otherwise, it's a compiler error. You can run the program again and see the animation. That makes a better experience. Experiment with the length of the delay to match your taste.
 
-The preceding code creates a set of spinning lines separated by a space. Adding the `await` keyword instructs the compiler to generate the program entry point as a method that has the `async` modifier, and returns a <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>. This program does not return a value, so the program entry point returns a `Task`. If your program returns an integer value, you would add a return statement to the end of your top-level statements. That return statement would specify the integer value to return. If your top-level statements include an `await` expression, the return type becomes <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>.
+The preceding code creates a set of spinning lines separated by a space. Adding the `await` keyword instructs the compiler to generate the program entry point as a method that has the `async` modifier, and returns a <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>. This program doesn't return a value, so the program entry point returns a `Task`. If your program returns an integer value, you would add a return statement to the end of your top-level statements. That return statement would specify the integer value to return. If your top-level statements include an `await` expression, the return type becomes <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>.
 
 ## Refactoring for the future
 
 Your program should look like the following code:
 
 ```csharp
-using System;
-using System.Threading.Tasks;
-
 Console.WriteLine();
 foreach(var s in args)
 {
@@ -210,7 +206,7 @@ Now you have a complete application, and you've refactored the reusable parts fo
 
 :::code language="csharp" source="snippets/top-level-statements/Program.cs":::
 
-This adds the call to `Utilities.ShowConsoleAnimation`, and adds an additional `using` statement.
+The preceding example adds the call to `Utilities.ShowConsoleAnimation`, and adds an additional `using` statement.
 
 ## Summary
 

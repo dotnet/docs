@@ -1,6 +1,6 @@
 ---
 title: "Diagnosing Errors with Managed Debugging Assistants"
-description: Diagnose errors in .NET with managed debugging assistants. MDAs are debugging aids working in conjunction with the CLR to provide runtime state information.
+description: Diagnose errors in .NET with managed debugging assistants. MDAs are debugging aids working with the CLR to provide runtime state information.
 ms.date: 08/14/2018
 f1_keywords:
   - "EHMDA"
@@ -33,7 +33,7 @@ ms.assetid: 76994ee6-9fa9-4059-b813-26578d24427c
 ---
 # Diagnose Errors with Managed Debugging Assistants
 
-Managed debugging assistants (MDAs) are debugging aids that work in conjunction with the common language runtime (CLR) to provide information on runtime state. The assistants generate informational messages about runtime events that you cannot otherwise trap. You can use MDAs to isolate hard-to-find application bugs that occur when transitioning between managed and unmanaged code.
+Managed debugging assistants (MDAs) are debugging aids that work with the common language runtime (CLR) to provide information on runtime state. The assistants generate informational messages about runtime events that you cannot otherwise trap. You can use MDAs to isolate hard-to-find application bugs that occur when transitioning between managed and unmanaged code.
 
 You can [enable or disable](#enable-and-disable-mdas) all MDAs by adding a key to the Windows registry or by setting an environment variable. You can enable specific MDAs by using application configuration settings. You can set additional configuration settings for some individual MDAs in the application's configuration file. Because these configuration files are parsed when the runtime is loaded, you must enable the MDA before the managed application starts. You cannot enable it for applications that have already started.
 
@@ -115,7 +115,7 @@ Windows Registry Editor Version 5.00
 "MDA"="1"
 ```
 
-See [Application-Specific Configuration Settings](#application-specific-configuration-settings) for more information. The registry setting can be overridden by the COMPLUS_MDA environment variable. See [Environment Variable](#environment-variable) for more information.
+See [Application-Specific Configuration Settings](#application-specific-configuration-settings) for more information. The registry setting can be overridden by the `COMPLUS_MDA` environment variable. See [Environment Variable](#environment-variable) for more information.
 
 To disable MDAs, set the MDA subkey to **0** (zero) using the Windows Registry Editor.
 
@@ -123,7 +123,7 @@ By default, some MDAs are enabled when you run an application that is attached t
 
 ### Environment Variable
 
-MDA activation can also controlled by the environment variable COMPLUS_MDA, which overrides the registry key. The COMPLUS_MDA string is a case-insensitive, semicolon-delimited list of MDA names or other special control strings. Starting under a managed or unmanaged debugger enables a set of MDAs by default. This is done by implicitly prepending the semicolon-delimited list of MDAs enabled by default under debuggers to the value of the environment variable or registry key. The special control strings are the following:
+MDA activation can also be controlled by the environment variable `COMPLUS_MDA`, which overrides the registry key. The `COMPLUS_MDA` string is a case-insensitive, semicolon-delimited list of MDA names or other special control strings. Starting under a managed or unmanaged debugger enables a set of MDAs by default. This is done by implicitly prepending the semicolon-delimited list of MDAs enabled by default under debuggers to the value of the environment variable or registry key. The special control strings are the following:
 
 - `0` - Deactivates all MDAs.
 
@@ -143,7 +143,7 @@ If there are conflicting settings, the most recent settings override previous se
 
 ### Application-Specific Configuration Settings
 
-You can enable, disable, and configure some assistants individually in the MDA configuration file for the application. To enable the use of an application configuration file for configuring MDAs, either the MDA registry key or the COMPLUS_MDA environment variable must be set. The application configuration file is typically located in the same directory as the application's executable (.exe) file. The file name takes the form *ApplicationName*.mda.config; for example, notepad.exe.mda.config. Assistants that are enabled in the application configuration file may have attributes or elements specifically designed to control that assistant's behavior.
+You can enable, disable, and configure some assistants individually in the MDA configuration file for the application. To enable the use of an application configuration file for configuring MDAs, either the MDA registry key or the `COMPLUS_MDA` environment variable must be set. The application configuration file is typically located in the same directory as the application's executable (.exe) file. The file name takes the form *ApplicationName*.mda.config; for example, notepad.exe.mda.config. Assistants that are enabled in the application configuration file may have attributes or elements designed to control that assistant's behavior.
 
 The following example shows how to enable and configure the [marshaling](marshaling-mda.md):
 

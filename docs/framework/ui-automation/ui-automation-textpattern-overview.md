@@ -61,11 +61,11 @@ Document controls let a user navigate and obtain information from multiple pages
 
 ## TextPattern Client APIs
 
-|||
+| Type | Description |
 |-|-|
-|`System.Windows.Automation.TextPattern Class`|The entry point for the Microsoft UI Automation text model.<br /><br /> This class also contains the two <xref:System.Windows.Automation.TextPattern> event listeners, <xref:System.Windows.Automation.TextPattern.TextSelectionChangedEvent> and <xref:System.Windows.Automation.TextPattern.TextChangedEvent>.|
-|`System.Windows.Automation.Text.TextPatternRange Class`|The representation of a span of text within a text container that supports <xref:System.Windows.Automation.TextPattern>.<br /><br /> UI Automation clients should be careful about the current validity of a text range created using <xref:System.Windows.Automation.Text.TextPatternRange>. If the original text in the text control is completely replaced by new text, the current text range becomes invalid. However, the text range may still have some viability if only part of the original text is changed and the underlying text control is managing its text "pointer" with anchors (or endpoints) rather than with absolute character positioning.<br /><br /> Clients can listen for a <xref:System.Windows.Automation.TextPattern.TextChangedEvent> for notification of any changes to the textual content they are working with.|
-|`System.Windows.Automation.AutomationTextAttribute Class`|Used to identify the formatting attributes of a text range.|
+|`System.Windows.Automation.TextPattern` class|The entry point for the Microsoft UI Automation text model.<br /><br /> This class also contains the two <xref:System.Windows.Automation.TextPattern> event listeners, <xref:System.Windows.Automation.TextPattern.TextSelectionChangedEvent> and <xref:System.Windows.Automation.TextPattern.TextChangedEvent>.|
+|`System.Windows.Automation.Text.TextPatternRange` class|The representation of a span of text within a text container that supports <xref:System.Windows.Automation.TextPattern>.<br /><br /> UI Automation clients should be careful about the current validity of a text range created using <xref:System.Windows.Automation.Text.TextPatternRange>. If the original text in the text control is completely replaced by new text, the current text range becomes invalid. However, the text range may still have some viability if only part of the original text is changed and the underlying text control is managing its text "pointer" with anchors (or endpoints) rather than with absolute character positioning.<br /><br /> Clients can listen for a <xref:System.Windows.Automation.TextPattern.TextChangedEvent> for notification of any changes to the textual content they are working with.|
+|`System.Windows.Automation.AutomationTextAttribute` class|Used to identify the formatting attributes of a text range.|
 
 <a name="TextPattern_Provider_API_s"></a>
 
@@ -75,18 +75,18 @@ UI elements or controls that support <xref:System.Windows.Automation.TextPattern
 
 A <xref:System.Windows.Automation.TextPattern> provider does not have to support all text attributes if the control lacks support for any particular attributes.
 
-A <xref:System.Windows.Automation.TextPattern> provider must support the <xref:System.Windows.Automation.TextPattern.GetSelection%2A> and <xref:System.Windows.Automation.Text.TextPatternRange.Select%2A> functions if the control supports text selection or placement of the text cursor (or system caret) within the text area. If the control does not support this functionality then it does not need to support either of these methods. However, the control must expose the type of text selection it supports by implementing the <xref:System.Windows.Automation.Provider.ITextProvider.SupportedTextSelection%2A> property.
+A <xref:System.Windows.Automation.TextPattern> provider must support the <xref:System.Windows.Automation.TextPattern.GetSelection%2A> and <xref:System.Windows.Automation.Text.TextPatternRange.Select%2A> functions if the control supports text selection or placement of the text cursor (or system caret) within the text area. If the control does not support this functionality, then it does not need to support either of these methods. However, the control must expose the type of text selection it supports by implementing the <xref:System.Windows.Automation.Provider.ITextProvider.SupportedTextSelection%2A> property.
 
 A <xref:System.Windows.Automation.TextPattern> provider must always support the <xref:System.Windows.Automation.Text.TextUnit> constants <xref:System.Windows.Automation.Text.TextUnit.Character> and <xref:System.Windows.Automation.Text.TextUnit.Document> as well as any other <xref:System.Windows.Automation.Text.TextUnit> constants it is capable of supporting.
 
 > [!NOTE]
 > The provider may skip support for a specific <xref:System.Windows.Automation.Text.TextUnit> by deferring to the next largest <xref:System.Windows.Automation.Text.TextUnit> supported in the following order: <xref:System.Windows.Automation.Text.TextUnit.Character>, <xref:System.Windows.Automation.Text.TextUnit.Format>, <xref:System.Windows.Automation.Text.TextUnit.Word>, <xref:System.Windows.Automation.Text.TextUnit.Line>, <xref:System.Windows.Automation.Text.TextUnit.Paragraph>, <xref:System.Windows.Automation.Text.TextUnit.Page>, and <xref:System.Windows.Automation.Text.TextUnit.Document>.
 
-|||
+| API | Description |
 |-|-|
-|`ITextProvider Interface`|Exposes methods, properties and attributes that support <xref:System.Windows.Automation.TextPattern> in client applications (see <xref:System.Windows.Automation.Provider.ITextProvider>).|
-|`ITextRangeProvider Interface`|Represents a span of text in a text provider (see <xref:System.Windows.Automation.Provider.ITextRangeProvider>).|
-|`System.Windows.Automation.TextPatternIdentifiers Class`|Contains values that are used as identifiers for text providers (see <xref:System.Windows.Automation.TextPatternIdentifiers>).|
+|`ITextProvider` interface|Exposes methods, properties and attributes that support <xref:System.Windows.Automation.TextPattern> in client applications (see <xref:System.Windows.Automation.Provider.ITextProvider>).|
+|`ITextRangeProvider` interface|Represents a span of text in a text provider (see <xref:System.Windows.Automation.Provider.ITextRangeProvider>).|
+|`System.Windows.Automation.TextPatternIdentifiers` class|Contains values that are used as identifiers for text providers (see <xref:System.Windows.Automation.TextPatternIdentifiers>).|
 
 <a name="Security"></a>
 

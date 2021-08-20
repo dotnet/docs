@@ -6,10 +6,10 @@ ms.assetid: c31e8b2d-14ba-41c4-ab9b-205d591b078d
 ---
 # 3389 - ClientSendPreambleStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3389|  
 |Keywords|Channel|  
 |Level|Verbose|  

@@ -6,10 +6,10 @@ ms.assetid: 73f0dc73-f0b7-4c13-8328-9fdc262009ec
 ---
 # 4024 - WasCloseAllListenerChannelInstancesFailed
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4024|  
 |Keywords|ActivationServices|  
 |Level|Error|  

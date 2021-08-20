@@ -20,6 +20,8 @@ Create a directory named *branches-tutorial*. Make that the current directory an
 dotnet new console -n BranchesAndLoops -o .
 ```
 
+[!INCLUDE [csharp10-templates](../../../../includes/csharp10-templates.md)]
+
 This command creates a new .NET console application in the current directory. Open *Program.cs* in your favorite editor, and replace the contents with the following code:
 
 ```csharp

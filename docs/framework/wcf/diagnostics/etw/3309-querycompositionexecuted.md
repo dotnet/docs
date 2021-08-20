@@ -6,10 +6,10 @@ ms.assetid: a7ae2267-b478-4115-8317-a89ce4ced65d
 ---
 # 3309 - QueryCompositionExecuted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3309|  
 |Keywords|ServiceModel|  
 |Level|Information|  

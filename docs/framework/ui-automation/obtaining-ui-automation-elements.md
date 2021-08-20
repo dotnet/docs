@@ -76,11 +76,11 @@ ms.topic: how-to
 
  You can use <xref:System.Windows.Automation.TreeWalker> either by creating an object of the class (defining the elements of interest by passing a <xref:System.Windows.Automation.Condition>), or by using one of the following predefined objects that are defined as fields of <xref:System.Windows.Automation.TreeWalker>.
 
-|||
-|-|-|
-|<xref:System.Windows.Automation.TreeWalker.ContentViewWalker>|Finds only elements whose <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsContentElement%2A> property is `true`.|
-|<xref:System.Windows.Automation.TreeWalker.ControlViewWalker>|Finds only elements whose <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsControlElement%2A> property is `true`.|
-|<xref:System.Windows.Automation.TreeWalker.RawViewWalker>|Finds all elements.|
+| Field                                                         | Description                                                                                                                                       |
+| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <xref:System.Windows.Automation.TreeWalker.ContentViewWalker> | Finds only elements whose <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsContentElement%2A> property is `true`. |
+| <xref:System.Windows.Automation.TreeWalker.ControlViewWalker> | Finds only elements whose <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsControlElement%2A> property is `true`. |
+| <xref:System.Windows.Automation.TreeWalker.RawViewWalker>     | Finds all elements.                                                                                                                               |
 
  After you have obtained a <xref:System.Windows.Automation.TreeWalker>, using it is straightforward. Simply call the `Get` methods to navigate among elements of the subtree.
 

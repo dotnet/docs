@@ -3,7 +3,7 @@ title: Single file application
 description: Learn what single file application is and why you should consider using this application deployment model.
 author: lakshanf
 ms.author: lakshanf
-ms.date: 12/17/2020
+ms.date: 08/10/2021
 ---
 # Single file deployment and executable
 
@@ -41,7 +41,7 @@ We have some recommendations for fixing common scenarios:
 
 * To find the file name of the executable, use the first element of <xref:System.Environment.GetCommandLineArgs?displayProperty=nameWithType>.
 
-* To avoid shipping loose files entirely, consider using [embedded resources](../../framework/resources/creating-resource-files-for-desktop-apps.md).
+* To avoid shipping loose files entirely, consider using [embedded resources](../extensions/create-resource-files.md).
 
 ## Attaching a debugger
 

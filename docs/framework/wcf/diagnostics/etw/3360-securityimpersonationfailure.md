@@ -6,10 +6,10 @@ ms.assetid: 5ef28970-7822-4eb3-b266-f6554deb1b5b
 ---
 # 3360 - SecurityImpersonationFailure
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3360|  
 |Keywords|Security|  
 |Level|Warning|  

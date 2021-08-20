@@ -352,6 +352,12 @@ Applying these practices, organizations have radically evolved how they ship sof
 
 Infrastructure as code and deployment automation, along with GitHub and Azure DevOps are discussed in detail in [DevOps](./DevOps.md)
 
+## The last pillar: Culture and mindset
+
+Perhaps the most important pillar to embracing a cloud-native architecture is the culture of your organization and the mindset of your team.
+
+> Work-in-process: Adding content here...
+
 >[!div class="step-by-step"]
 >[Previous](introduction.md)
 >[Next](candidate-apps.md)

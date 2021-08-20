@@ -20,7 +20,28 @@ The `namespace` keyword is used to declare a scope that contains a set of relate
 
 :::code language="csharp" source="snippets/filescopednamespace.cs" :::
 
-The preceding example doesn't include a nested namespace. File scoped namespaces can't include additional nested namespace declarations.
+The preceding example doesn't include a nested namespace. File scoped namespaces can't include additional namespace declarations. You cannot declare a nested namesapce or a second file-scoped namespace:
+
+```csharp
+namespace SampleNamespace;
+
+class AnotherSampleClass
+{
+    public void AnotherSampleMethod()
+    {
+        System.Console.WriteLine(
+            "SampleMethod inside SampleNamespace");
+    }
+}
+
+namespace AnotherNamespace; // Not allowed!
+
+namespace ANestedNamespace // Not allowed!
+{
+   // declarations...
+}
+```
+
 
 Within a namespace, you can declare zero or more of the following types:
 

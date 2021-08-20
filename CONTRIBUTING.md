@@ -1,4 +1,4 @@
-# Contributing
+# Contribute
 
 Thank you for your interest in contributing to the .NET documentation!
 

@@ -111,7 +111,7 @@ Update the versions of the packages you've found to be compatible, as shown in t
 
 If your application depends on APIs that aren't available on .NET, such as Registry, ACLs, or WCF, you have to include a reference to the `Microsoft.Windows.Compatibility` package to add these Windows-specific APIs. They work on .NET but aren't included as they aren't cross-platform.
 
-There's a tool called API Analyzer ([https://docs.microsoft.com/dotnet/standard/analyzers/api-analyzer](../../standard/analyzers/api-analyzer.md)) that helps you identify APIs that aren't compatible with your code.
+There's a tool called Platform compatibility analyzer ([https://docs.microsoft.com/dotnet/standard/analyzers/platform-compat-analyzer](../../standard/analyzers/platform-compat-analyzer.md)) that helps you identify APIs that aren't compatible with your code.
 
 #### Use \#if directives
 

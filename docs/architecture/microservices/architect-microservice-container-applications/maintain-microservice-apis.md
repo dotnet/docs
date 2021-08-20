@@ -23,7 +23,7 @@ Finally, if you're using a REST architecture, [Hypermedia](https://www.infoq.com
   <https://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx>
 
 - **Versioning a RESTful web API** \
-  <https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api>
+  [https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api](/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)
 
 - **Roy Fielding. Versioning, Hypermedia, and REST** \
   <https://www.infoq.com/articles/roy-fielding-on-versioning>

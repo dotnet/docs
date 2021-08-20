@@ -16,7 +16,7 @@ The `using` directive allows you to use types defined in a namespace without spe
 using System.Text;
 ```
 
-You can apply two different modifiers to a `using` directive:
+You can apply two modifiers to a `using` directive:
 
 - The `global` modifier has the same effect as adding the same `using` directive to every source file in your project. This modifier was introduced in C# 10.0.
 - The `static` modifier imports that `static` members and nested types from a single type rather than the types in a namespace. This modifier was introduced in C# 6.0.
@@ -62,7 +62,11 @@ A *global using* directive can appear at the beginning of any source code file. 
 
 You may add `global using` directives to any source file. Typically, you'll want to keep them in a single location. The order of `global using` directives doesn't matter, either in a single file, or between files.
 
-The `global` modifier may be combined with the `static` modifier. The `global` modifier may be applied to a *using alias directive*. In both cases, the directive's scope is all files in the current compilation.
+The `global` modifier may be combined with the `static` modifier. The `global` modifier may be applied to a *using alias directive*. In both cases, the directive's scope is all files in the current compilation. The following example enables using all the methods declared in the <xref:System.Math?displayProperty=fullName> in all files in your project:
+
+```csharp
+global using static System.Math;
+```
 
 [!INCLUDE [csharp10-templates](../../../../includes/csharp10-templates.md)]
 

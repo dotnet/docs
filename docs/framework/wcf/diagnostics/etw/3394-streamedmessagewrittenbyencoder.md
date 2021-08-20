@@ -6,10 +6,10 @@ ms.assetid: 8b3a1a76-e5f7-4421-86cf-d201d724671e
 ---
 # 3394 - StreamedMessageWrittenByEncoder
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3394|  
 |Keywords|Channel|  
 |Level|Information|  

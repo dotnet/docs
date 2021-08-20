@@ -6,10 +6,10 @@ ms.assetid: bac6387b-1096-4e17-9907-8e464ee780db
 ---
 # 3556 - CreateWorkflowServiceHostStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3556|  
 |Keywords|WebHost|  
 |Level|Information|  

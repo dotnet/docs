@@ -6,10 +6,10 @@ ms.assetid: a157fdd5-b1b7-4498-9b0c-8a68c6f1f020
 ---
 # 717 - HttpSendStreamedMessageStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|717|  
 |Keywords|HTTP|  
 |Level|Information|  

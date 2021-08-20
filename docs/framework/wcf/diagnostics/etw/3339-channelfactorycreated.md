@@ -6,10 +6,10 @@ ms.assetid: 97a395dd-d0d4-471b-b42f-eb4368cd15e4
 ---
 # 3339 - ChannelFactoryCreated
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3339|  
 |Keywords|ServiceModel|  
 |Level|Verbose|  

@@ -6,10 +6,10 @@ ms.assetid: b64e15c2-cb2c-4314-9074-ce2c6717232e
 ---
 # 1103 - WorkflowActivitySuspend
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1103|  
 |Keywords|WFRuntime|  
 |Level|Information|  

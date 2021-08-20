@@ -6,10 +6,10 @@ ms.assetid: aef4e781-240b-45bc-bff8-400053037e71
 ---
 # 220 - MessageSentToTransport
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |Id|220|  
 |Keywords|EndToEndMonitoring, Troubleshooting, ServiceModel|  
 |Level|Information|  

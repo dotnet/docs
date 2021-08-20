@@ -6,10 +6,10 @@ ms.assetid: 7021eca6-6fdf-4f23-96aa-02d7df0c7dfe
 ---
 # 5013 - DCJsonGenReaderStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5013|  
 |Keywords|Serialization|  
 |Level|Verbose|  

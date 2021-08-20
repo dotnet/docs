@@ -114,27 +114,26 @@ For each separate _MethodName_**Async** method signature:
 
 ## Optionally Support Cancellation
 
-If your class will support canceling asynchronous operations, cancellation should be exposed to the client as described below. Note that there are two decision points that need to be reached before defining your cancellation support:
+If your class will support canceling asynchronous operations, cancellation should be exposed to the client as described below. There are two decision points that need to be reached before defining your cancellation support:
 
 - Does your class, including future anticipated additions to it, have only one asynchronous operation that supports cancellation?
-
 - Can the asynchronous operations that support cancellation support multiple pending operations? That is, does the _MethodName_**Async** method take a `userState` parameter, and does it allow multiple invocations before waiting for any to finish?
 
 Use the answers to these two questions in the table below to determine what the signature for your cancellation method should be.
 
 ### Visual Basic
 
-||Multiple Simultaneous Operations Supported|Only One Operation at a Time|
-|------|------------------------------------------------|----------------------------------|
-|One Async Operation in entire class|`Sub MethodNameAsyncCancel(ByVal userState As Object)`|`Sub MethodNameAsyncCancel()`|
-|Multiple Async Operations in class|`Sub CancelAsync(ByVal userState As Object)`|`Sub CancelAsync()`|
+|                                         | Multiple Simultaneous Operations Supported             | Only One Operation at a Time  |
+| --------------------------------------- | ------------------------------------------------------ | ----------------------------- |
+| **One Async Operation in entire class** | `Sub MethodNameAsyncCancel(ByVal userState As Object)` | `Sub MethodNameAsyncCancel()` |
+| **Multiple Async Operations in class**  | `Sub CancelAsync(ByVal userState As Object)`           | `Sub CancelAsync()`           |
 
 ### C\#
 
-||Multiple Simultaneous Operations Supported|Only One Operation at a Time|
-|------|------------------------------------------------|----------------------------------|
-|One Async Operation in entire class|`void MethodNameAsyncCancel(object userState);`|`void MethodNameAsyncCancel();`|
-|Multiple Async Operations in class|`void CancelAsync(object userState);`|`void CancelAsync();`|
+|                                         | Multiple Simultaneous Operations Supported      | Only One Operation at a Time    |
+| --------------------------------------- | ----------------------------------------------- | ------------------------------- |
+| **One Async Operation in entire class** | `void MethodNameAsyncCancel(object userState);` | `void MethodNameAsyncCancel();` |
+| **Multiple Async Operations in class**  | `void CancelAsync(object userState);`           | `void CancelAsync();`           |
 
 If you define the `CancelAsync(object userState)` method, clients must be careful when choosing their state values to make them capable of distinguishing among all asynchronous methods invoked on the object, and not just between all invocations of a single asynchronous method.
 

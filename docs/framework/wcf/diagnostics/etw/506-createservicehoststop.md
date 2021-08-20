@@ -6,10 +6,10 @@ ms.assetid: f51e4903-1162-47bd-bf8a-f4177c48768a
 ---
 # 506 - CreateServiceHostStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|506|  
 |Keywords|WebHost|  
 |Level|Information|  

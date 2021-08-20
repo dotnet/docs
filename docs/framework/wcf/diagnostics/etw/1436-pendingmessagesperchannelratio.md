@@ -6,10 +6,10 @@ ms.assetid: 1f5b779b-1ca1-4653-b79b-db31df8fbb8b
 ---
 # 1436 - PendingMessagesPerChannelRatio
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1436|  
 |Keywords|Quota|  
 |Level|Verbose|  

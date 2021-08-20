@@ -6,10 +6,10 @@ ms.assetid: 156d92a9-1de5-4ba8-a7a3-e8bf487c5523
 ---
 # 5007 - DCResolverResolve
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5007|  
 |Keywords|Serialization|  
 |Level|Verbose|  

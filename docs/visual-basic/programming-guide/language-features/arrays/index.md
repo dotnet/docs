@@ -157,12 +157,12 @@ You can resize an array variable by assigning a new array object to it or by usi
 
 There are several things to keep in mind when dealing with the size of an array.
 
-|||
+| | Notes |
 |---|---|
-|Dimension Length|The index of each dimension is 0-based, which means it ranges from 0 to its upper bound. Therefore, the length of a given dimension is one greater than the declared upper bound of that dimension.|
-|Length Limits|The length of every dimension of an array is limited to the maximum value of the `Integer` data type, which is <xref:System.Int32.MaxValue?displayProperty=nameWithType> or (2 ^ 31) - 1. However, the total size of an array is also limited by the memory available on your system. If you attempt to initialize an array that exceeds the amount of available memory, the runtime throws an <xref:System.OutOfMemoryException>.|
-|Size and Element Size|An array's size is independent of the data type of its elements. The size always represents the total number of elements, not the number of bytes that they consume in memory.|
-|Memory Consumption|It is not safe to make any assumptions regarding how an array is stored in memory. Storage varies on platforms of different data widths, so the same array can consume more memory on a 64-bit system than on a 32-bit system. Depending on system configuration when you initialize an array, the common language runtime (CLR) can assign storage either to pack elements as close together as possible, or to align them all on natural hardware boundaries. Also, an array requires a storage overhead for its control information, and this overhead increases with each added dimension.|
+|**Dimension Length**|The index of each dimension is 0-based, which means it ranges from 0 to its upper bound. Therefore, the length of a given dimension is one greater than the declared upper bound of that dimension.|
+|**Length Limits**|The length of every dimension of an array is limited to the maximum value of the `Integer` data type, which is <xref:System.Int32.MaxValue?displayProperty=nameWithType> or (2 ^ 31) - 1. However, the total size of an array is also limited by the memory available on your system. If you attempt to initialize an array that exceeds the amount of available memory, the runtime throws an <xref:System.OutOfMemoryException>.|
+|**Size and Element Size**|An array's size is independent of the data type of its elements. The size always represents the total number of elements, not the number of bytes that they consume in memory.|
+|**Memory Consumption**|It is not safe to make any assumptions regarding how an array is stored in memory. Storage varies on platforms of different data widths, so the same array can consume more memory on a 64-bit system than on a 32-bit system. Depending on system configuration when you initialize an array, the common language runtime (CLR) can assign storage either to pack elements as close together as possible, or to align them all on natural hardware boundaries. Also, an array requires a storage overhead for its control information, and this overhead increases with each added dimension.|
 
 ## The array type
 

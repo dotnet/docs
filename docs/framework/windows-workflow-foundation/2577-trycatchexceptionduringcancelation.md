@@ -6,10 +6,10 @@ ms.assetid: 35ee9f55-227f-4566-bcb4-4c7c75dea85b
 ---
 # 2577 - TryCatchExceptionDuringCancelation
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|2577|  
 |Keywords|WFActivities|  
 |Level|Warning|  

@@ -6,10 +6,10 @@ ms.assetid: 2fdf39ec-3aad-45bf-ba80-759e6e10fe37
 ---
 # 3415 - WebSocketConnectionRequestSendStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3415|  
 |Keywords|HTTP|  
 |Level|Verbose|  

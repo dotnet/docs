@@ -6,10 +6,10 @@ ms.assetid: fc9850a5-0dc3-4b84-a09a-744301c7c18e
 ---
 # 441- StopSignpostEvent1
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|441|  
 |Keywords|Troubleshooting|  
 |Level|Information|  

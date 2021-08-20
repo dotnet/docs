@@ -6,10 +6,10 @@ ms.assetid: 4415fbdb-0329-4019-803f-aea66e75f3da
 ---
 # 1022 - StartBookmarkWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1022|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

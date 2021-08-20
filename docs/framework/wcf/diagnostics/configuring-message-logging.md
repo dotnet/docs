@@ -103,19 +103,19 @@ The `source` field in a message log specifies in which context the message is lo
 
 For malformed messages, `source`  is equal to `Malformed`. Otherwise, source has the following values based on the context.
 
-For Request/Reply
+For Request/Reply:
 
-||Send Request|Receive Request|Send Reply|Receive Reply|
+| Layer |Send Request|Receive Request|Send Reply|Receive Reply|
 |-|------------------|---------------------|----------------|-------------------|
 |Service Model layer|Service<br /><br /> Level<br /><br /> Send<br /><br /> Request|Service<br /><br /> Level<br /><br /> Receive<br /><br /> Request|Service<br /><br /> Level<br /><br /> Send<br /><br /> Reply|Service<br /><br /> Level<br /><br /> Receive<br /><br /> Reply|
 |Transport layer|Transport<br /><br /> Send|Transport<br /><br /> Receive|Transport<br /><br /> Send|Transport<br /><br /> Receive|
 
-For One-way Request
+For One-way Request:
 
-||Send Request|Receive Request|
-|-|------------------|---------------------|
-|Service Model layer|Service<br /><br /> Level<br /><br /> Send<br /><br /> Datagram|Service<br /><br /> Level<br /><br /> Receive<br /><br /> Datagram|
-|Transport layer|Transport<br /><br /> Send|Transport<br /><br /> Receive|
+| Layer               | Send Request                                                    | Receive Request                                                    |
+|---------------------|-----------------------------------------------------------------|--------------------------------------------------------------------|
+| Service Model layer | Service<br /><br /> Level<br /><br /> Send<br /><br /> Datagram | Service<br /><br /> Level<br /><br /> Receive<br /><br /> Datagram |
+| Transport layer     | Transport<br /><br /> Send                                      | Transport<br /><br /> Receive                                      |
 
 ## Message Filters
 

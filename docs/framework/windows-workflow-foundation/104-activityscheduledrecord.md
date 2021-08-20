@@ -6,10 +6,10 @@ ms.assetid: ae202178-8fb1-4646-a3aa-18beeda8ff93
 ---
 # 104 - ActivityScheduledRecord
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |Id|104|  
 |Keywords|EndToEndMonitoring, Troubleshooting, HealthMonitoring, WFTracking|  
 |Level|Information|  

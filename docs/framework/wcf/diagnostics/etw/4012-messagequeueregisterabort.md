@@ -6,10 +6,10 @@ ms.assetid: b992f9ee-bae5-4bad-99ad-e141e2f0b036
 ---
 # 4012 - MessageQueueRegisterAbort
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4012|  
 |Keywords|ActivationServices|  
 |Level|Error|  

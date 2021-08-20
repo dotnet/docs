@@ -6,10 +6,10 @@ ms.assetid: 980c24e8-47d5-4f1e-86cc-1cb1c0736d19
 ---
 # 3377 - SocketReadStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3377|  
 |Keywords|TCP|  
 |Level|Verbose|  

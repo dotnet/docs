@@ -6,10 +6,10 @@ ms.assetid: e8e9fcda-7dbc-4670-bb47-b365219f3046
 ---
 # 3345 - SessionPreambleUnderstood
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3345|  
 |Keywords|Channel|  
 |Level|Verbose|  

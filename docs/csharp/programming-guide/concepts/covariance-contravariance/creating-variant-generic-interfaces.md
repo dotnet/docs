@@ -107,7 +107,7 @@ ICovariant<Object> iobj = ibutton;
 SampleImplementation<Button> button = new SampleImplementation<Button>();
 // The following statement generates a compiler error
 // because classes are invariant.
-// SampleImplementation<Object> obj = button;
+// object obj = button;
 ```
 
 ## Extending Variant Generic Interfaces

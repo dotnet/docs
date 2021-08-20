@@ -1,7 +1,7 @@
 ---
 title: dotnet workload repair command
 description: The 'dotnet workload repair' command repairs workload installations.
-ms.date: 07/08/2021
+ms.date: 08/12/2021
 ---
 # dotnet workload repair
 
@@ -15,8 +15,10 @@ ms.date: 07/08/2021
 
 ```dotnetcli
 dotnet workload repair
-    [--configfile <FILE>] [--sdk-version <VERSION>]
-    [--source <SOURCE>] [-v|--verbosity <LEVEL>]
+    [--configfile] [--disable-parallel] [--ignore-failed-sources]
+    [--interactive] [--no-cache] [--sdk-version <VERSION>]
+    [-s|--source <SOURCE>] [--temp-dir <PATH>]
+    [-v|--verbosity <LEVEL>]
 
 dotnet workload repair -?|-h|--help
 ```
@@ -39,11 +41,23 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 [!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 
+[!INCLUDE [disable-parallel](../../../includes/cli-disable-parallel.md)]
+
 [!INCLUDE [help](../../../includes/cli-help.md)]
+
+[!INCLUDE [ignore-failed-sources](../../../includes/cli-ignore-failed-sources.md)]
+
+[!INCLUDE [include-previews](../../../includes/cli-include-previews.md)]
+
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+
+[!INCLUDE [no-cache](../../../includes/cli-no-cache.md)]
 
 [!INCLUDE [sdk-version](../../../includes/cli-sdk-version.md)]
 
 [!INCLUDE [source](../../../includes/cli-source.md)]
+
+[!INCLUDE [temp-dir](../../../includes/cli-temp-dir.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 

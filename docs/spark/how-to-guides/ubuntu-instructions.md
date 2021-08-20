@@ -48,7 +48,7 @@ If you already have all of the following prerequisites, skip to the [build](#bui
       ```bash
       mkdir -p ~/bin/maven
       cd ~/bin/maven
-      wget https://www-us.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz
+      wget https://archive.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz
       tar -xvzf apache-maven-3.6.0-bin.tar.gz
       ln -s apache-maven-3.6.0 current
       export M2_HOME=~/bin/maven/current

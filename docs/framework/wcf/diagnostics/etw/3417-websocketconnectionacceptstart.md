@@ -6,10 +6,10 @@ ms.assetid: 9d595fe3-2276-4d77-85c8-b6a966199c5b
 ---
 # 3417 - WebSocketConnectionAcceptStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3417|  
 |Keywords|HTTP|  
 |Level|Verbose|  

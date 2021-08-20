@@ -17,7 +17,7 @@ helpviewer_keywords:
 C# introduced pattern matching in C# 7.0. Since then, each major C# version extends pattern matching capabilities. The following C# expressions and statements support pattern matching:
 
 - [`is` expression](is.md)
-- `switch` [statement](../keywords/switch.md)
+- `switch` [statement](../statements/selection-statements.md#the-switch-statement)
 - `switch` [expression](switch-expression.md) (introduced in C# 8.0)
 
 In those constructs, you can match an input expression against any of the following patterns:

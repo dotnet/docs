@@ -3,7 +3,7 @@ title: High-performance logging in .NET
 author: IEvangelist
 description: Learn how to use LoggerMessage to create cacheable delegates that require fewer object allocations for high-performance logging scenarios.
 ms.author: dapine
-ms.date: 01/04/2021
+ms.date: 07/30/2021
 ---
 
 # High-performance logging in .NET
@@ -16,6 +16,8 @@ The <xref:Microsoft.Extensions.Logging.LoggerMessage> class exposes functionalit
 - Logger extension methods must parse the message template (named format string) every time a log message is written. <xref:Microsoft.Extensions.Logging.LoggerMessage> only requires parsing a template once when the message is defined.
 
 The sample app demonstrates <xref:Microsoft.Extensions.Logging.LoggerMessage> features with a priority queue processing worker service. The app processes work items in priority order. As these operations occur, log messages are generated using the <xref:Microsoft.Extensions.Logging.LoggerMessage> pattern.
+
+[!INCLUDE [logging-samples-browser](includes/logging-samples-browser.md)]
 
 ## Define a logger message
 

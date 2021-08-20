@@ -13,14 +13,14 @@ Use the <xref:System.Linq.Enumerable.Count%2A> operator to count the number of e
   
  Running this query against the Northwind sample database produces an output of `91`.  
   
-## Example  
+## Example 1
 
  The following example counts the number of `Customers` in the database.  
   
  [!code-csharp[DLinqQueryExamples#4](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#4)]
  [!code-vb[DLinqQueryExamples#4](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#4)]  
   
-## Example  
+## Example 2  
 
  The following example counts the number of products in the database that have not been discontinued.  
   

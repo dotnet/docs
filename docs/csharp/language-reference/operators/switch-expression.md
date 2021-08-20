@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # switch expression (C# reference)
 
-Beginning with C# 8.0, you use the `switch` expression to evaluate a single expression from a list of candidate expressions based on a pattern match with an input expression. For information about the `switch` statement that supports `switch`-like semantics in a statement context, see the [`switch` statement](../keywords/switch.md) article.
+Beginning with C# 8.0, you use the `switch` expression to evaluate a single expression from a list of candidate expressions based on a pattern match with an input expression. For information about the `switch` statement that supports `switch`-like semantics in a statement context, see the [`switch` statement](../statements/selection-statements.md#the-switch-statement) section of the [Selection statements](../statements/selection-statements.md) article.
 
 The following example demonstrates a `switch` expression, which converts values of an [`enum`](../builtin-types/enum.md) representing visual directions in an online map to the corresponding cardinal directions:
 
@@ -23,10 +23,11 @@ The preceding example shows the basic elements of a `switch` expression:
 
 At the preceding example, a `switch` expression uses the following patterns:
 
-- A [constant pattern](patterns.md#constant-pattern) that is used to handle the defined values of the `Direction` enumeration.
-- A [discard pattern](patterns.md#discard-pattern) that is used to handle any integer value that doesn't have the corresponding member of the `Direction` enumeration (for example, `(Direction)10`). That makes the `switch` expression [exhaustive](#non-exhaustive-switch-expressions).
+- A [constant pattern](patterns.md#constant-pattern): to handle the defined values of the `Direction` enumeration.
+- A [discard pattern](patterns.md#discard-pattern): to handle any integer value that doesn't have the corresponding member of the `Direction` enumeration (for example, `(Direction)10`). That makes the `switch` expression [exhaustive](#non-exhaustive-switch-expressions).
 
-For information about the patterns supported by a `switch` expression, see [Patterns](patterns.md).
+> [!IMPORTANT]
+> For information about the patterns supported by the `switch` expression and more examples, see [Patterns](patterns.md).
 
 The result of a `switch` expression is the value of the expression of the first `switch` expression arm whose pattern matches the input expression and whose case guard, if present, evaluates to `true`. The `switch` expression arms are evaluated in text order.
 
@@ -34,7 +35,7 @@ The compiler generates an error when a lower `switch` expression arm can't be ch
 
 ## Case guards
 
-A pattern may be not expressive enough to specify the condition for the evaluation of an arm's expression. In such a case, you can use a case guard. That is an additional condition that must be satisfied together with a matched pattern. You specify a case guard after the `when` keyword that follows a pattern, as the following example shows:
+A pattern may be not expressive enough to specify the condition for the evaluation of an arm's expression. In such a case, you can use a case guard. That is an additional condition that must be satisfied together with a matched pattern. A case guard must be a Boolean expression. You specify a case guard after the `when` keyword that follows a pattern, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/SwitchExpressions.cs" id="CaseGuardExample":::
 
@@ -57,4 +58,4 @@ For more information, see the [`switch` expression](~/_csharplang/proposals/csha
 - [C# operators and expressions](index.md)
 - [Patterns](patterns.md)
 - [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/pattern-matching.md)
-- [`switch` statement](../keywords/switch.md)
+- [`switch` statement](../statements/selection-statements.md#the-switch-statement)

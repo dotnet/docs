@@ -6,10 +6,10 @@ ms.assetid: e1ed8fc2-2a31-4878-a851-5db8b869283a
 ---
 # 1024 - CreateBookmarkScope
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1024|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

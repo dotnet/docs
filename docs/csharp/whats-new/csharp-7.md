@@ -100,7 +100,7 @@ Discards are supported in the following scenarios:
 
 - When deconstructing tuples or user-defined types.
 - When calling methods with [out](../language-reference/keywords/out-parameter-modifier.md) parameters.
-- In a pattern matching operation with the [is](../language-reference/operators/is.md) and [switch](../language-reference/keywords/switch.md) statements.
+- In a pattern matching operation with the [`is` operator](../language-reference/operators/is.md) and [`switch` statement](../language-reference/statements/selection-statements.md#the-switch-statement).
 - As a standalone identifier when you want to explicitly identify the value of an assignment as a discard.
 
 The following example defines a `QueryCityData` method that returns a 3-tuple that contains data for a city for two different years. The method call in the example is concerned only with the two population values returned by the method and so treats the remaining values in the tuple as discards when it deconstructs the tuple.
@@ -112,16 +112,12 @@ public class Example
 {
     public static void Main()
     {
-        var result = QueryCityData("New York City");
-
-        var city = result.Item1;
-        var pop = result.Item2;
-        var size = result.Item3;
+        var (_, pop, _) = QueryCityData("New York City");
 
          // Do something with the data.
     }
 
-    private static (string, int, double) QueryCityData(string name)
+    private static (string name, int pop, double size) QueryCityData(string name)
     {
         if (name == "New York City")
             return (name, 8175133, 468.48);

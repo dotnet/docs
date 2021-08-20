@@ -4,7 +4,7 @@ description: Learn about run-time settings that configure how the JIT compiler w
 ms.date: 11/27/2019
 ms.topic: reference
 ---
-# Run-time configuration options for compilation
+# Runtime configuration options for compilation
 
 This article details the settings you can use to configure .NET compilation.
 
@@ -23,7 +23,7 @@ This article details the settings you can use to configure .NET compilation.
 | - | - | - |
 | **runtimeconfig.json** | `System.Runtime.TieredCompilation` | `true` - enabled<br/>`false` - disabled |
 | **MSBuild property** | `TieredCompilation` | `true` - enabled<br/>`false` - disabled |
-| **Environment variable** | `COMPLUS_TieredCompilation` or `DOTNET_TieredCompilation` | `1` - enabled<br/>`0` - disabled |
+| **Environment variable** | `COMPlus_TieredCompilation` or `DOTNET_TieredCompilation` | `1` - enabled<br/>`0` - disabled |
 
 ### Examples
 
@@ -63,7 +63,7 @@ Project file:
 | - | - | - |
 | **runtimeconfig.json** | `System.Runtime.TieredCompilation.QuickJit` | `true` - enabled<br/>`false` - disabled |
 | **MSBuild property** | `TieredCompilationQuickJit` | `true` - enabled<br/>`false` - disabled |
-| **Environment variable** | `COMPLUS_TC_QuickJit` or `DOTNET_TC_QuickJit` | `1` - enabled<br/>`0` - disabled |
+| **Environment variable** | `COMPlus_TC_QuickJit` or `DOTNET_TC_QuickJit` | `1` - enabled<br/>`0` - disabled |
 
 ### Examples
 
@@ -102,7 +102,7 @@ Project file:
 | - | - | - |
 | **runtimeconfig.json** | `System.Runtime.TieredCompilation.QuickJitForLoops` | `false` - disabled<br/>`true` - enabled |
 | **MSBuild property** | `TieredCompilationQuickJitForLoops` | `false` - disabled<br/>`true` - enabled |
-| **Environment variable** | `COMPLUS_TC_QuickJitForLoops` or `DOTNET_TC_QuickJitForLoops` | `0` - disabled<br/>`1` - enabled |
+| **Environment variable** | `COMPlus_TC_QuickJitForLoops` or `DOTNET_TC_QuickJitForLoops` | `0` - disabled<br/>`1` - enabled |
 
 ### Examples
 
@@ -138,4 +138,4 @@ Project file:
 
 | | Setting name | Values |
 | - | - | - |
-| **Environment variable** | `COMPLUS_ReadyToRun` or `DOTNET_ReadyToRun` | `1` - enabled<br/>`0` - disabled |
+| **Environment variable** | `COMPlus_ReadyToRun` or `DOTNET_ReadyToRun` | `1` - enabled<br/>`0` - disabled |

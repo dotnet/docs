@@ -1,9 +1,10 @@
 ---
-title: Delegates
+title: Delegates in F#
+titleSuffix: ""
 description: Learn how to work with delegates in F#.
 ms.date: 05/16/2016
 ---
-# Delegates
+# Delegates (F#)
 
 A delegate represents a function call as an object. In F#, you ordinarily should use function values to represent functions as first-class values; however, delegates are used in the .NET Framework and so are needed when you interoperate with APIs that expect them. They may also be used when authoring libraries designed for use from other .NET Framework languages.
 

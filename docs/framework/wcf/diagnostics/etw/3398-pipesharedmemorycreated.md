@@ -6,10 +6,10 @@ ms.assetid: d68ec947-a174-4425-9c12-de56dd3a7f7a
 ---
 # 3398 - PipeSharedMemoryCreated
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3398|  
 |Keywords|Channel|  
 |Level|Verbose|  

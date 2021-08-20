@@ -6,10 +6,10 @@ ms.assetid: 22a9f6ea-5b5f-4110-8a4e-9be9c983fbbb
 ---
 # 452 - MessageLogWarning
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|452|  
 |Keywords|Troubleshooting, WCFMessageLogging|  
 |Level|Warning|  

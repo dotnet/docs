@@ -45,8 +45,8 @@ using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.ReadWrit
 
 This change was introduced to allow for 100% asynchronous file I/O with <xref:System.IO.FileStream> and to fix the following issues:
 
-- [FileStream.FlushAsync ends up doing synchronous writes](https://github.com/dotnet/runtime/issue/27643)
-- [Win32 FileStream turns async reads into sync reads](https://github.com/dotnet/runtime/issue/16341)
+- [FileStream.FlushAsync ends up doing synchronous writes](https://github.com/dotnet/runtime/issues/27643)
+- [Win32 FileStream turns async reads into sync reads](https://github.com/dotnet/runtime/issues/16341)
 
 Now, when buffering is enabled (that is, the `bufferSize` argument that's passed to the [FileStream constructor](xref:System.IO.FileStream.%23ctor%2A) is greater than 1), every <xref:System.IO.FileStream.ReadAsync%2A> and <xref:System.IO.FileStream.WriteAsync%2A> operation is serialized.
 
@@ -56,7 +56,7 @@ Now, when buffering is enabled (that is, the `bufferSize` argument that's passed
 
 - To enable the .NET 5 behavior in .NET 6, specify an `AppContext` switch or an environment variable. By setting the switch to `true`, you opt out of all performance improvements made to `FileStream` in .NET 6.
 
-  ```xml
+  ```json
   {
       "configProperties": {
           "System.IO.UseNet5CompatFileStream": true

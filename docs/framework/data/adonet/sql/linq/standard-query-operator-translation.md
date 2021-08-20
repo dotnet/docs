@@ -142,12 +142,22 @@ The following helper functions that are used by the Visual Basic compiler are tr
 
 Conversion methods:
 
-|||||
-|-|-|-|-|
-|ToBoolean|ToSByte|ToByte|ToChar|
-|ToCharArrayRankOne|ToDate|ToDecimal|ToDouble|
-|ToInteger|ToUInteger|ToLong|ToULong|
-|ToShort|ToUShort|ToSingle|ToString|
+- `ToBoolean`
+- `ToSByte`
+- `ToByte`
+- `ToChar`
+- `ToCharArrayRankOne`
+- `ToDate`
+- `ToDecimal`
+- `ToDouble`
+- `ToInteger`
+- `ToUInteger`
+- `ToLong`
+- `ToULong`
+- `ToShort`
+- `ToUShort`
+- `ToSingle`
+- `ToString`
 
 ## Inheritance Support
 

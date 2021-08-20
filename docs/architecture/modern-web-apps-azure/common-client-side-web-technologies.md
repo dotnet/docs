@@ -189,9 +189,9 @@ Frameworks continue to evolve with breakneck speed. Use the considerations liste
 > - **Sass vs. LESS**  
 > <https://www.keycdn.com/blog/sass-vs-less/>
 > - **Styling ASP.NET Core Apps with LESS, Sass, and Font Awesome**  
-> <https://docs.microsoft.com/aspnet/core/client-side/less-sass-fa>
+> [https://docs.microsoft.com/aspnet/core/client-side/less-sass-fa](/aspnet/core/client-side/less-sass-fa)
 > - **Client-Side Development in ASP.NET Core**  
-> <https://docs.microsoft.com/aspnet/core/client-side/>
+> [https://docs.microsoft.com/aspnet/core/client-side/](/aspnet/core/client-side/)
 > - **jQuery**  
 > <https://jquery.com/>
 > - **jQuery vs AngularJS**  

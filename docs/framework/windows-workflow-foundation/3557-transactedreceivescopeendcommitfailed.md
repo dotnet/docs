@@ -6,10 +6,10 @@ ms.assetid: 079f0188-8146-49ee-b6ae-a08f4e4d2b9b
 ---
 # 3557 - TransactedReceiveScopeEndCommitFailed
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3557|  
 |Keywords|WFServices|  
 |Level|Information|  

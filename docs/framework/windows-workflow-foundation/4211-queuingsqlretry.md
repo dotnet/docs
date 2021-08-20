@@ -6,10 +6,10 @@ ms.assetid: df569f88-c86b-4503-840d-1399b67f4df7
 ---
 # 4211 - QueuingSqlRetry
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4211|  
 |Keywords|WFInstanceStore|  
 |Level|Warning|  

@@ -78,7 +78,7 @@ In the following steps, you'll look at the files created by the publish process.
 
    * *HelloWorld.runtimeconfig.json*
 
-      This is the application's run-time configuration file. It identifies the version of .NET that your application was built to run on. You can also add configuration options to it. For more information, see [.NET run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
+      This is the application's runtime configuration file. It identifies the version of .NET that your application was built to run on. You can also add configuration options to it. For more information, see [.NET runtime configuration settings](../run-time-config/index.md#runtimeconfigjson).
 
 ## Run the published app
 
@@ -87,7 +87,7 @@ In the following steps, you'll look at the files created by the publish process.
 1. Open a command prompt and navigate to the *publish* folder. To do that, enter `cd` and then paste the full path. For example:
 
    ```console
-   cd C:\Projects\HelloWorld\bin\Release\netcoreapp3.1\publish\
+   cd C:\Projects\HelloWorld\bin\Release\net5.0\publish\
    ```
 
 1. Run the app by using the executable:

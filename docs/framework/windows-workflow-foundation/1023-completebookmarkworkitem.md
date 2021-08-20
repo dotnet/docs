@@ -6,10 +6,10 @@ ms.assetid: fc5dac57-b3eb-4826-b505-c6d269e4774d
 ---
 # 1023 - CompleteBookmarkWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1023|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

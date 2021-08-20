@@ -6,7 +6,7 @@ In .NET Framework 4.5, when a WPF text box control is inactive (it doesn't have 
 
 #### Suggestion
 
-The previous (.NET Framework 4.0) behavior may be restored by setting the <xref:System.Windows.FrameworkCompatibilityPreferences.AreInactiveSelectionHighlightBrushKeysSupported> property to <code>false</code>.
+The previous (.NET Framework 4.0) behavior may be restored by setting the <xref:System.Windows.FrameworkCompatibilityPreferences.AreInactiveSelectionHighlightBrushKeysSupported> property to `false`.
 
 | Name    | Value       |
 |:--------|:------------|

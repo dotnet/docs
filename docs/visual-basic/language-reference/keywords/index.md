@@ -24,665 +24,665 @@ The following keywords are *reserved*, which means that you cannot use them as n
 > We do not recommend that you use escaped names, because it can make your code hard to read, and it can lead to subtle errors that can be difficult to find.
 
 :::row:::
-   :::column span="":::
+   :::column:::
       [`AddHandler`](../statements/addhandler-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`AddressOf`](../operators/addressof-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Alias`](../statements/alias-clause.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`And`](../operators/and-operator.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`AndAlso`](../operators/andalso-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`As`](../statements/as-clause.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Boolean`](../data-types/boolean-data-type.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`ByRef`](../modifiers/byref.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Byte`](../data-types/byte-data-type.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`ByVal`](../modifiers/byval.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Call`](../statements/call-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Case`](../statements/select-case-statement.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Catch`](../statements/try-catch-finally-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`CBool`](../functions/type-conversion-functions.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`CByte`](../functions/type-conversion-functions.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`CChar`](../functions/type-conversion-functions.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`CDate`](../functions/type-conversion-functions.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`CDbl`](../functions/type-conversion-functions.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`CDec`](../functions/type-conversion-functions.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Char`](../data-types/char-data-type.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`CInt`](../functions/type-conversion-functions.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Class` Constraint](../statements/type-list.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Class` Statement](../statements/class-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`CLng`](../functions/type-conversion-functions.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`CObj`](../functions/type-conversion-functions.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Const`](../statements/const-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Continue`](../statements/continue-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`CSByte`](../functions/type-conversion-functions.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`CShort`](../functions/type-conversion-functions.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`CSng`](../functions/type-conversion-functions.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`CStr`](../functions/type-conversion-functions.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`CType`](../functions/type-conversion-functions.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`CUInt`](../functions/type-conversion-functions.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`CULng`](../functions/type-conversion-functions.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`CUShort`](../functions/type-conversion-functions.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Date`](../data-types/date-data-type.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Decimal`](../data-types/decimal-data-type.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Declare`](../statements/declare-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Default`](../modifiers/default.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Delegate`](../statements/delegate-statement.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Dim`](../statements/dim-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`DirectCast`](../operators/directcast-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Do`](../statements/do-loop-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Double`](../data-types/double-data-type.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Each`](../statements/for-each-next-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Else`](../statements/else-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`ElseIf`](../statements/if-then-else-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`End` Statement](../statements/end-statement.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`End` \<keyword>](../statements/end-keyword-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       `EndIf`
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Enum`](../statements/enum-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Erase`](../statements/erase-statement.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Error`](../statements/on-error-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Event`](../statements/event-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Exit`](../statements/exit-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`False`](../data-types/boolean-data-type.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Finally`](../statements/try-catch-finally-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`For` (in `For…Next`)](../statements/for-next-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`For Each…Next`](../statements/for-each-next-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Friend`](../modifiers/friend.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Function`](../statements/function-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Get`](../statements/get-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`GetType`](../operators/gettype-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`GetXMLNamespace`](../operators/getxmlnamespace-operator.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Global`](../../programming-guide/program-structure/namespaces.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       `GoSub`
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`GoTo`](../statements/goto-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Handles`](../statements/handles-clause.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`If`](../statements/if-then-else-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`If()`](../operators/if-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Implements`](../statements/implements-clause.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Implements` Statement](../statements/implements-statement.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Imports` (.NET Namespace and Type)](../statements/imports-statement-net-namespace-and-type.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Imports` (XML Namespace)](../statements/imports-statement-xml-namespace.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`In`](../statements/in-clause.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`In` (Generic Modifier)](../modifiers/in-generic-modifier.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Inherits`](../statements/inherits-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Integer`](../data-types/integer-data-type.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Interface`](../statements/interface-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Is`](../operators/is-operator.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`IsNot`](../operators/isnot-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Let`](../queries/let-clause.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Lib`](../statements/declare-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Like`](../operators/like-operator.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Long`](../data-types/long-data-type.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Loop`](../statements/do-loop-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Me`](../../programming-guide/program-structure/me-my-mybase-and-myclass.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Mod`](../operators/mod-operator.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Module`](../modifiers/module-keyword.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Module` Statement](../statements/module-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`MustInherit`](../modifiers/mustinherit.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`MustOverride`](../modifiers/mustoverride.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`MyBase`](../../programming-guide/language-features/objects-and-classes/inheritance-basics.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`MyClass`](../../programming-guide/language-features/objects-and-classes/inheritance-basics.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`NameOf`](../operators/nameof.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Namespace`](../statements/namespace-statement.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Narrowing`](../modifiers/narrowing.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`New` Constraint](../statements/type-list.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`New` Operator](../operators/new-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Next`](../statements/for-next-statement.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Next` (in `Resume`)](../statements/resume-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Not`](../operators/not-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Nothing`](../nothing.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`NotInheritable`](../modifiers/notinheritable.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`NotOverridable`](../modifiers/notoverridable.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Object`](../data-types/object-data-type.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Of`](../statements/of-clause.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`On`](../../misc/on.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Operator`](../statements/operator-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Option`](../statements/option-keyword-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Optional`](../modifiers/optional.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Or`](../operators/or-operator.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`OrElse`](../operators/orelse-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Out` (Generic Modifier)](../modifiers/out-generic-modifier.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Overloads`](../modifiers/overloads.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Overridable`](../modifiers/overridable.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Overrides`](../modifiers/overrides.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`ParamArray`](../modifiers/paramarray.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Partial`](../modifiers/partial.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Private`](../modifiers/private.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Property`](../statements/property-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Protected`](../modifiers/protected.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Public`](../modifiers/public.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`RaiseEvent`](../statements/raiseevent-statement.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`ReadOnly`](../modifiers/readonly.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`ReDim`](../statements/redim-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`REM`](../statements/rem-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`RemoveHandler`](../statements/removehandler-statement.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Resume`](../statements/resume-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Return`](../statements/return-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`SByte`](../data-types/sbyte-data-type.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Select`](../statements/select-case-statement.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Set`](../statements/set-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Shadows`](../modifiers/shadows.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Shared`](../modifiers/shared.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Short`](../data-types/short-data-type.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Single`](../data-types/single-data-type.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Static`](../modifiers/static.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Step`](../statements/for-next-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Stop`](../statements/stop-statement.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`String`](../data-types/string-data-type.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Structure` Constraint](../statements/type-list.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Structure` Statement](../statements/structure-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Sub`](../statements/sub-statement.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`SyncLock`](../statements/synclock-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Then`](../statements/then-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Throw`](../statements/throw-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`To`](../statements/for-next-statement.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`True`](../data-types/boolean-data-type.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Try`](../statements/try-catch-finally-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`TryCast`](../operators/trycast-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`TypeOf…Is`](../operators/typeof-operator.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`UInteger`](../data-types/uinteger-data-type.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`ULong`](../data-types/ulong-data-type.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`UShort`](../data-types/ushort-data-type.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`Using`](../statements/using-statement.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       `Variant`
    :::column-end:::
-   :::column span="":::
+   :::column:::
       `Wend`
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`When`](../statements/try-catch-finally-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`While`](../statements/while-end-while-statement.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Widening`](../modifiers/widening.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`With`](../statements/with-end-with-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`WithEvents`](../modifiers/withevents.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`WriteOnly`](../modifiers/writeonly.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Xor`](../operators/xor-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`#Const`](../directives/const-directive.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`#Else`](../directives/if-then-else-directives.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`#ElseIf`](../directives/if-then-else-directives.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`#End`](../directives/if-then-else-directives.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`#If`](../directives/if-then-else-directives.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`=`](../operators/assignment-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`&`](../operators/concatenation-operator.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`&=`](../operators/and-assignment-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`*`](../operators/multiplication-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`*=`](../operators/multiplication-assignment-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`/`](../operators/floating-point-division-operator.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`/=`](../operators/floating-point-division-assignment-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`\`](../operators/integer-division-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`\=`](../operators/integer-division-assignment-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`^`](../operators/exponentiation-operator.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`^=`](../operators/exponentiation-assignment-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`+`](../operators/addition-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`+=`](../operators/addition-assignment-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`-`](../operators/subtraction-operator.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`-=`](../operators/subtraction-assignment-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`>>` Operator](../operators/right-shift-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [`>>=` Operator](../operators/right-shift-assignment-operator.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
       [<<](../operators/left-shift-operator.md)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column:::
       [`<<=`](../operators/left-shift-assignment-operator.md)
    :::column-end:::
 :::row-end:::
@@ -695,134 +695,50 @@ The following keywords are *reserved*, which means that you cannot use them as n
 The following keywords are not reserved, which means you can use them as names for your programming elements. However, doing this is not recommended, because it can make your code hard to read and can lead to subtle errors that can be difficult to find.
 
 :::row:::
-   :::column span="":::
+   :::column:::
       [`Aggregate`](../queries/aggregate-clause.md)
-   :::column-end:::
-   :::column span="":::
-      [`Ansi`](../modifiers/ansi.md)
-   :::column-end:::
-   :::column span="":::
-      [`Assembly`](../modifiers/assembly.md)
-   :::column-end:::
-   :::column span="":::
-      [`Async`](../modifiers/async.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
       [`Auto`](../modifiers/auto.md)
-   :::column-end:::
-   :::column span="":::
-      [`Await`](../operators/await-operator.md)
-   :::column-end:::
-   :::column span="":::
-      [`Binary`](../statements/option-compare-statement.md)
-   :::column-end:::
-   :::column span="":::
-      [`Compare`](../statements/option-compare-statement.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
       [`Custom`](../statements/event-statement.md)
-   :::column-end:::
-   :::column span="":::
-      [`Distinct`](../queries/distinct-clause.md)
-   :::column-end:::
-   :::column span="":::
-      [`Equals`](../queries/equals-clause.md)
-   :::column-end:::
-   :::column span="":::
-      [`Explicit`](../statements/option-explicit-statement.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
       [`From`](../queries/from-clause.md)
-   :::column-end:::
-   :::column span="":::
-      [`Group By`](../queries/group-by-clause.md)
-   :::column-end:::
-   :::column span="":::
-      [`Group Join`](../queries/group-join-clause.md)
-   :::column-end:::
-   :::column span="":::
-      [`Into`](../statements/into-clause.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
       [`IsFalse`](../operators/isfalse-operator.md)
-   :::column-end:::
-   :::column span="":::
-      [`IsTrue`](../operators/istrue-operator.md)
-   :::column-end:::
-   :::column span="":::
-      [`Iterator`](../modifiers/iterator.md)
-   :::column-end:::
-   :::column span="":::
-      [`Join`](../queries/join-clause.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
       [`Key`](../modifiers/key.md)
-   :::column-end:::
-   :::column span="":::
-      [`Mid`](../statements/mid-statement.md)
-   :::column-end:::
-   :::column span="":::
-      [`Off`](../../misc/off.md)
-   :::column-end:::
-   :::column span="":::
-      [`Order By`](../queries/order-by-clause.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
       [`Preserve`](../statements/redim-statement.md)
-   :::column-end:::
-   :::column span="":::
-      [`Skip`](../queries/skip-clause.md)
-   :::column-end:::
-   :::column span="":::
-      [`Skip While`](../queries/skip-while-clause.md)
-   :::column-end:::
-   :::column span="":::
-      [`Strict`](../statements/option-strict-statement.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
       [`Take`](../queries/take-clause.md)
-   :::column-end:::
-   :::column span="":::
-      [`Take While`](../queries/take-while-clause.md)
-   :::column-end:::
-   :::column span="":::
-      [`Text`](../statements/option-compare-statement.md)
-   :::column-end:::
-   :::column span="":::
-      [`Unicode`](../modifiers/unicode.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
       [`Until`](../statements/do-loop-statement.md)
+      [`#Region`](../directives/region-directive.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
+      [`Ansi`](../modifiers/ansi.md)
+      [`Await`](../operators/await-operator.md)
+      [`Distinct`](../queries/distinct-clause.md)
+      [`Group By`](../queries/group-by-clause.md)
+      [`IsTrue`](../operators/istrue-operator.md)
+      [`Mid`](../statements/mid-statement.md)
+      [`Skip`](../queries/skip-clause.md)
+      [`Take While`](../queries/take-while-clause.md)
       [`Where`](../queries/where-clause.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
+      [`Assembly`](../modifiers/assembly.md)
+      [`Binary`](../statements/option-compare-statement.md)
+      [`Equals`](../queries/equals-clause.md)
+      [`Group Join`](../queries/group-join-clause.md)
+      [`Iterator`](../modifiers/iterator.md)
+      [`Off`](../../misc/off.md)
+      [`Skip While`](../queries/skip-while-clause.md)
+      [`Text`](../statements/option-compare-statement.md)
       [`Yield`](../statements/yield-statement.md)
    :::column-end:::
-   :::column span="":::
+   :::column:::
+      [`Async`](../modifiers/async.md)
+      [`Compare`](../statements/option-compare-statement.md)
+      [`Explicit`](../statements/option-explicit-statement.md)
+      [`Into`](../statements/into-clause.md)
+      [`Join`](../queries/join-clause.md)
+      [`Order By`](../queries/order-by-clause.md)
+      [`Strict`](../statements/option-strict-statement.md)
+      [`Unicode`](../modifiers/unicode.md)
       [`#ExternalSource`](../directives/externalsource-directive.md)
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [`#Region`](../directives/region-directive.md)
    :::column-end:::
 :::row-end:::
 

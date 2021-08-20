@@ -31,9 +31,9 @@ For WCF, the following bindings are supported:
 |--|--|
 | `BasicHttp` |  |
 | `WSHttp` |  |
-| `WSDualHttpBinding` | [Web socket support](/azure/app-service/web-sites-configure) must be enabled. | [Web socket support](/azure/app-service/web-sites-configure) must be enabled. |
-| `NetHttpBinding` | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. |
-| `NetHttpsBinding` | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. |
+| `WSDualHttpBinding` | [Web socket support](/azure/app-service/web-sites-configure) must be enabled. |
+| `NetHttpBinding` | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. |
+| `NetHttpsBinding` | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. |
 | `BasicHttpContextBinding` |  |
 | `WebHttpBinding` |  |
 | `WSHttpContextBinding` |  |

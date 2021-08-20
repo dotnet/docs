@@ -20,7 +20,7 @@ dotnet workload update
     [--download-to-cache <CACHE>] [--from-cache <CACHE>]
     [--from-previous-sdk] [--ignore-failed-sources]
     [--include-previews] [--interactive] [--no-cache]
-    [--sdk-version <VERSION>] [--source <SOURCE>]
+    [--sdk-version <VERSION>] [-s|--source <SOURCE>]
     [--temp-dir <PATH>] [-v|--verbosity <LEVEL>]
 
 dotnet workload update -?|-h|--help
@@ -38,21 +38,15 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 - **`--advertising-manifests-only`**
 
-  Downloads [advertising manifests](dotnet-workload-install.md#advertising-manifests) but doesn't update any workloads. Available starting in .NET 6 Preview 7.
+  Downloads [advertising manifests](dotnet-workload-install.md#advertising-manifests) but doesn't update any workloads.
 
 [!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 
-- **`--disable-parallel`**
+[!INCLUDE [disable-parallel](../../../includes/cli-disable-parallel.md)]
 
-  Prevents restoring multiple projects in parallel.
+[!INCLUDE [download-to-cache](../../../includes/cli-download-to-cache.md)]
 
-- **`--download-to-cache <PATH_TO_CACHE>`**
-
-  Downloads packages needed for a workload to a folder that can be used for offline installation.
-
-- **`--from-cache <PATH_TO_CACHE>`**
-
-  Completes the operation from cache (offline).
+[!INCLUDE [from-cache](../../../includes/cli-from-cache.md)]
 
 - **`--from-previous-sdk`**
 
@@ -60,27 +54,19 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`--ignore-failed-sources`**
+[!INCLUDE [ignore-failed-sources](../../../includes/cli-ignore-failed-sources.md)]
 
-  Treat package source failures as warnings.
-
-- **`--include-previews`**
-
-  Allow prerelease workload manifests.
+[!INCLUDE [include-previews](../../../includes/cli-include-previews.md)]
 
 [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
-- **`--no-cache`**
-
-  Don't cache packages and HTTP requests.
+[!INCLUDE [no-cache](../../../includes/cli-no-cache.md)]
 
 [!INCLUDE [sdk-version](../../../includes/cli-sdk-version.md)]
 
 [!INCLUDE [source](../../../includes/cli-source.md)]
 
-- **`--temp-dir <PATH>`**
-
-  Configures the temporary directory used for this command (must be secure).
+[!INCLUDE [temp-dir](../../../includes/cli-temp-dir.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-packages.md)]
 

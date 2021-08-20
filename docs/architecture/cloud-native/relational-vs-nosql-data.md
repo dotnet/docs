@@ -200,13 +200,13 @@ Development teams can migrate existing Mongo, Gremlin, or Cassandra databases in
 
 In the previous table, note the [Table API](/azure/cosmos-db/table-introduction) option. This API is an evolution of Azure Table Storage. Both share the same underlying table model, but the Cosmos DB Table API adds premium enhancements not available in the Azure Storage API. The following table contrasts the features.
 
-|  | Azure Table Storage  | Azure Cosmos DB  |
-| :-------- | :-------- |:-------- |
-| Latency | Fast | Single-digit millisecond latency for reads and writes anywhere in the world |
-| Throughput | Limit of 20,000 operations per table | Unlimited operations per table |
-| Global Distribution | Single region with optional single secondary read region | Turnkey distributions to all regions with automatic failover |
-| Indexing | Available for partition and row key properties only | Automatic indexing of all properties |
-| Pricing | Optimized for cold workloads (low throughput : storage ratio) | Optimizied for hot workloads (high throughput : storage ratio) |
+| Feature             | Azure Table Storage                                           | Azure Cosmos DB                                                             |
+|:--------------------|:--------------------------------------------------------------|:----------------------------------------------------------------------------|
+| Latency             | Fast                                                          | Single-digit millisecond latency for reads and writes anywhere in the world |
+| Throughput          | Limit of 20,000 operations per table                          | Unlimited operations per table                                              |
+| Global Distribution | Single region with optional single secondary read region      | Turnkey distributions to all regions with automatic failover                |
+| Indexing            | Available for partition and row key properties only           | Automatic indexing of all properties                                        |
+| Pricing             | Optimized for cold workloads (low throughput : storage ratio) | Optimizied for hot workloads (high throughput : storage ratio)              |
 
 Microservices that consume Azure Table storage can easily migrate to the Cosmos DB Table API. No code changes are required.
 

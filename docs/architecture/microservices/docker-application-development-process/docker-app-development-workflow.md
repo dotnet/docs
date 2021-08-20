@@ -336,7 +336,7 @@ When you use Visual Studio to create a project with Docker support, you don't ex
 
 ## Step 4. Define your services in docker-compose.yml when building a multi-container Docker application
 
-The [docker-compose.yml](https://docs.docker.com/compose/compose-file/) file lets you define a set of related services to be deployed as a composed application with deployment commands. It also configures its dependency relations and run-time configuration.
+The [docker-compose.yml](https://docs.docker.com/compose/compose-file/) file lets you define a set of related services to be deployed as a composed application with deployment commands. It also configures its dependency relations and runtime configuration.
 
 To use a docker-compose.yml file, you need to create the file in your main or root solution folder, with content similar to that in the following example:
 
@@ -490,7 +490,7 @@ The important point here is that, as shown in Figure 5-12, in Visual Studio 2019
 ### Additional resources
 
 - **Deploy an ASP.NET container to a remote Docker host** \
-  <https://docs.microsoft.com/visualstudio/containers/hosting-web-apps-in-docker>
+  [https://docs.microsoft.com/visualstudio/containers/hosting-web-apps-in-docker](/visualstudio/containers/hosting-web-apps-in-docker)
 
 ### A note about testing and deploying with orchestrators
 

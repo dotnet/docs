@@ -34,12 +34,12 @@ When using Windows authentication as a security mechanism, the Security Support 
   
  The table headers show possible account types used by the server. The left column shows possible account types used by the client.  
   
-||Local User|Local System|Domain User|Domain Machine|  
-|-|----------------|------------------|-----------------|--------------------|  
-|Local User|NTLM|NTLM|NTLM|NTLM|  
-|Local System|Anonymous NTLM|Anonymous NTLM|Anonymous NTLM|Anonymous NTLM|  
-|Domain User|NTLM|NTLM|Kerberos|Kerberos|  
-|Domain Machine|NTLM|NTLM|Kerberos|Kerberos|  
+|                    | Local User     | Local System   | Domain User    | Domain Machine |
+| ------------------ | -------------- | -------------- | -------------- | -------------- |
+| **Local User**     | NTLM           | NTLM           | NTLM           | NTLM           |
+| **Local System**   | Anonymous NTLM | Anonymous NTLM | Anonymous NTLM | Anonymous NTLM |
+| **Domain User**    | NTLM           | NTLM           | Kerberos       | Kerberos       |
+| **Domain Machine** | NTLM           | NTLM           | Kerberos       | Kerberos       |
   
  Specifically, the four account types include:  
   

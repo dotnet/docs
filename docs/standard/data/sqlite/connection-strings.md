@@ -1,6 +1,7 @@
 ---
 title: Connection strings
-ms.date: 12/08/2020
+ms.date: 07/14/2021
+no-loc: Command Timeout,Default Timeout,Data Source,Recursive Triggers
 description: The supported keywords and values of connection strings.
 ---
 # Connection strings
@@ -13,7 +14,7 @@ keywords and values.
 
 The following connection string keywords can be used with Microsoft.Data.Sqlite:
 
-### Data source
+### Data Source
 
 The path to the database file. *DataSource* (without a space) and *Filename* are aliases of this keyword.
 
@@ -74,7 +75,7 @@ A value indicating whether to enable foreign key constraints.
 There's no need enable foreign keys if, like in e_sqlite3, SQLITE_DEFAULT_FOREIGN_KEYS was used to compile the native
 SQLite library.
 
-### Recursive triggers
+### Recursive Triggers
 
 A value that indicates whether to enable recursive triggers.
 
@@ -85,6 +86,15 @@ A value that indicates whether to enable recursive triggers.
 | ----- | --------------------------------------------------------------------------- |
 | True  | Sends `PRAGMA recursive_triggers` immediately after opening the connection. |
 | False | Doesn't send `PRAGMA recursive_triggers`. This is the default.              |
+
+### Default Timeout
+
+The default timeout (in seconds) for executing commands. The default value is 30. *Command Timeout* is an alias of this keyword.
+
+This value can be overridden using <xref:Microsoft.Data.Sqlite.SqliteConnection.DefaultTimeout> which in turn can be overridden using <xref:Microsoft.Data.Sqlite.SqliteCommand.CommandTimeout>.
+
+> [!NOTE]
+> The Default Timeout keyword was added in version 6.0.
 
 ## Connection string builder
 

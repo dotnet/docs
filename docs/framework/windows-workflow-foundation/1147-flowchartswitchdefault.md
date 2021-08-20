@@ -6,10 +6,10 @@ ms.assetid: 03bb91f4-bfa4-4420-97fe-8443ee9b03e5
 ---
 # 1147 - FlowchartSwitchDefault
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1147|  
 |Keywords|WFActivities|  
 |Level|Information|  

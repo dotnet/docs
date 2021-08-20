@@ -34,10 +34,9 @@ public static TelemetryClient telemetry = new TelemetryClient()
 The following code measures how long it takes to insert a new row into an [Azure Table Storage](/azure/cosmos-db/table-storage-overview) instance:
 
 ```csharp
-var operation = TableOperation.Insert(entry);
 var startTime = DateTime.UtcNow;
 var timer = System.Diagnostics.Stopwatch.StartNew();
-await table.ExecuteAsync(operation);
+await tableClient.AddEntityAsync(entry);
 telemetry.TrackDependency("AzureTableStorageInsert", "Insert", startTime, timer.Elapsed, true);
 ```
 

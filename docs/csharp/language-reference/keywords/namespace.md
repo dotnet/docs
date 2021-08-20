@@ -55,6 +55,6 @@ For more information, see the [Namespaces](~/_csharplang/spec/namespaces.md) sec
 - [C# reference](../index.md)
 - [C# keywords](index.md)
 - [using](using-directive.md)
-- [using static](using-static.md)
+- [using static](using-directive.md)
 - [Namespace alias qualifier `::`](../operators/namespace-alias-qualifier.md)
 - [Namespaces](../../fundamentals/types/namespaces.md)

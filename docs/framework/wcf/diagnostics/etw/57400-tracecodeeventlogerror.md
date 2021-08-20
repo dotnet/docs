@@ -6,10 +6,10 @@ ms.assetid: 89864cd9-24fd-4568-920f-d0ba434b6f15
 ---
 # 57400 - TraceCodeEventLogError
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|57400|  
 |Keywords|Infrastructure|  
 |Level|Error|  

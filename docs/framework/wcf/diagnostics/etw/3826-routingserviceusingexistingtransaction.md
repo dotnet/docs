@@ -6,10 +6,10 @@ ms.assetid: e73b2492-10e9-418e-bdf3-a2605d046acb
 ---
 # 3826 - RoutingServiceUsingExistingTransaction
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3826|  
 |Keywords|RoutingServices|  
 |Level|Verbose|  

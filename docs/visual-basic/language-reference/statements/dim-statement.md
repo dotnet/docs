@@ -300,19 +300,19 @@ If a class holds onto a particularly valuable and scarce resource (such as a dat
 
 The `Using` statement automates the process of acquiring a resource, executing a set of statements, and then disposing of the resource. However, the resource must implement the <xref:System.IDisposable> interface. For more information, see [Using Statement](using-statement.md).
 
-## Example
+## Example 1
 
 The following example declares variables by using the `Dim` statement with various options.
 
 [!code-vb[VbVbalrStatements#141](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class11.vb#141)]
 
-## Example
+## Example 2
 
 The following example lists the prime numbers between 1 and 30. The scope of local variables is described in code comments.
 
 [!code-vb[VbVbalrStatements#142](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class11.vb#142)]
 
-## Example
+## Example 3
 
 In the following example, the `speedValue` variable is declared at the class level. The `Private` keyword is used to declare the variable. The variable can be accessed by any procedure in the `Car` class.
 

@@ -23,7 +23,7 @@ After a deeper analysis of the application's needs, the product selected could b
 
 - **Choose an Azure compute service for your application**
 
-    <https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree>
+    [https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree](/azure/architecture/guide/technology-choices/compute-decision-tree)
 
 > [!div class="step-by-step"]
 > [Previous](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)

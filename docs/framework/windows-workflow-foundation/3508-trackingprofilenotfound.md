@@ -6,10 +6,10 @@ ms.assetid: 4cee3c4a-0490-4c94-aa19-ef7ce7287c02
 ---
 # 3508 - TrackingProfileNotFound
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3508|  
 |Keywords|WFServices|  
 |Level|Verbose|  

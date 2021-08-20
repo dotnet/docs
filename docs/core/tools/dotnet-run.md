@@ -14,10 +14,11 @@ ms.date: 02/19/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet run [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
-    [--force] [--interactive] [--launch-profile <NAME>] [--no-build]
+dotnet run [-a|--arch <ARCHITECTURE>] [-c|--configuration <CONFIGURATION>]
+    [-f|--framework <FRAMEWORK>] [--force] [--interactive]
+    [--launch-profile <NAME>] [--no-build]
     [--no-dependencies] [--no-launch-profile] [--no-restore]
-    [--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [--os <OS>] [--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
     [-v|--verbosity <LEVEL>] [[--] [application arguments]]
 
 dotnet run -h|--help
@@ -58,6 +59,8 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Delimits arguments to `dotnet run` from arguments for the application being run. All arguments after this delimiter are passed to the application run.
 
+[!INCLUDE [arch](../../../includes/cli-arch.md)]
+
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
 - **`-f|--framework <FRAMEWORK>`**
@@ -91,6 +94,8 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 - **`--no-restore`**
 
   Doesn't execute an implicit restore when running the command.
+
+[!INCLUDE [os](../../../includes/cli-os.md)]
 
 - **`--project <PATH>`**
 

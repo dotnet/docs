@@ -6,10 +6,10 @@ ms.assetid: a2c7bb92-f02d-4947-98fd-247b0a55d814
 ---
 # 4001 - TransportListenerSessionsReceived
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4001|  
 |Keywords|ActivationServices|  
 |Level|Verbose|  

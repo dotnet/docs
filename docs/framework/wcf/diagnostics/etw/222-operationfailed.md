@@ -6,10 +6,10 @@ ms.assetid: 6b530ded-8f20-4d78-8bfe-1875276df6ba
 ---
 # 222 - OperationFailed
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|222|  
 |Keywords|EndToEndMonitoring, HealthMonitoring, Troubleshooting, ServiceModel|  
 |Level|Warning|  

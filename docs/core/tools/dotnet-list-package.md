@@ -1,7 +1,7 @@
 ---
 title: dotnet list package command
 description: The 'dotnet list package' command provides a convenient option to list the package references for a project or solution.
-ms.date: 11/11/2020
+ms.date: 08/16/2021
 ---
 # dotnet list package
 
@@ -19,6 +19,7 @@ dotnet list [<PROJECT>|<SOLUTION>] package [--config <SOURCE>]
     [--framework <FRAMEWORK>] [--highest-minor] [--highest-patch]
     [--include-prerelease] [--include-transitive] [--interactive]
     [--outdated] [--source <SOURCE>] [-v|--verbosity <LEVEL>]
+    [--vulnerable]
 
 dotnet list package -h|--help
 ```
@@ -78,7 +79,7 @@ The project or solution file to operate on. If not specified, the command search
 - **`--deprecated`**
 
   Displays packages that have been deprecated.
-
+  
 - **`--framework <FRAMEWORK>`**
 
   Displays only the packages applicable for the specified [target framework](../../standard/frameworks.md). To specify multiple frameworks, repeat the option multiple times. For example: `--framework netcoreapp2.2 --framework netstandard2.0`.
@@ -112,6 +113,10 @@ The project or solution file to operate on. If not specified, the command search
   The NuGet sources to use when searching for newer packages. Requires the `--outdated` or `--deprecated` option.
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+
+- **`--vulnerable`**
+
+  Lists packages that have known vulnerabilities. Cannot be combined with `--deprecated` or `--outdated` options.
 
 ## Examples
 

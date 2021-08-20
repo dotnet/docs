@@ -71,7 +71,7 @@ result = expression1 And expression2
 > [!NOTE]
 > The `And` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).  
   
-## Example  
+## Example 1
 
  The following example uses the `And` operator to perform a logical conjunction on two expressions. The result is a `Boolean` value that represents whether both of the expressions are `True`.  
   
@@ -79,7 +79,7 @@ result = expression1 And expression2
   
  The preceding example produces results of `True` and `False`, respectively.  
   
-## Example  
+## Example 2  
 
  The following example uses the `And` operator to perform logical conjunction on the individual bits of two numeric expressions. The bit in the result pattern is set if the corresponding bits in the operands are both set to 1.  
   

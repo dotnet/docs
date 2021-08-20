@@ -4,7 +4,7 @@ description: Learn about run-time settings that configure threading for .NET Cor
 ms.date: 11/27/2019
 ms.topic: reference
 ---
-# Run-time configuration options for threading
+# Runtime configuration options for threading
 
 This article details the settings you can use to configure threading in .NET.
 
@@ -18,7 +18,7 @@ This article details the settings you can use to configure threading in .NET.
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `COMPLUS_Thread_UseAllCpuGroups` or `DOTNET_Thread_UseAllCpuGroups` | `0` - disabled<br/>`1` - enabled |
+| **Environment variable** | `COMPlus_Thread_UseAllCpuGroups` or `DOTNET_Thread_UseAllCpuGroups` | `0` - disabled<br/>`1` - enabled |
 
 ## Minimum threads
 

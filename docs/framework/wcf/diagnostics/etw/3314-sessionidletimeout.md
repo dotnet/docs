@@ -6,10 +6,10 @@ ms.assetid: a00f104e-3bea-4185-b7b0-ec1ed8212a74
 ---
 # 3314 - SessionIdleTimeout
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3314|  
 |Keywords|ServiceModel|  
 |Level|Error|  

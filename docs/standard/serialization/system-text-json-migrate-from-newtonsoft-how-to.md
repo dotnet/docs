@@ -4,7 +4,7 @@ description: "Learn how to migrate from Newtonsoft.Json to System.Text.Json. Inc
 author: tdykstra
 ms.author: tdykstra
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 07/21/2021
+ms.date: 08/06/2021
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
   - "JSON serialization"
@@ -603,6 +603,8 @@ The required properties converter would require additional logic if you need to 
 * A property for a non-nullable type is present in the JSON, but the value is the default for the type, such as zero for an `int`.
 * A property for a nullable value type is present in the JSON, but the value is null.
 
+**Note:** If you're using System.Text.Json from an ASP.NET Core controller, you might be able to use a [`[Required]`](xref:System.ComponentModel.DataAnnotations.RequiredAttribute) attribute on properties of the model class instead of implementing a System.Text.Json converter.
+
 ### Specify date format
 
 `Newtonsoft.Json` provides several ways to control how properties of `DateTime` and `DateTimeOffset` types are serialized and deserialized:
@@ -685,7 +687,7 @@ During deserialization, `Newtonsoft.Json` adds objects to a collection even if t
 <xref:System.Text.Json.JsonDocument?displayProperty=fullName> provides the ability to parse and build a **read-only** Document Object Model (DOM) from existing JSON payloads. The DOM provides random access to data in a JSON payload. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property.
 
 :::zone pivot="dotnet-6-0"
-Documentation for mutable DOM support is being developed. Until it's added, see the [.NET 6 Preview 4 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-4/#system-text-json-writable-dom-feature).
+Starting in .NET 6, you can parse and build a **mutable** DOM from existing JSON payloads by using the <xref:System.Text.Json.Nodes.JsonNode> type and other types in the <xref:System.Text.Json.Nodes> namespace. For more information, see [Use `JsonNode`](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-jsonnode).
 :::zone-end
 
 ### JsonDocument is IDisposable
@@ -738,7 +740,7 @@ Searches for JSON tokens using `JObject` or `JArray` from `Newtonsoft.Json` tend
 * Use the built-in enumerators (<xref:System.Text.Json.JsonElement.EnumerateArray%2A> and <xref:System.Text.Json.JsonElement.EnumerateObject%2A>) rather than doing your own indexing or loops.
 * Don't do a sequential search on the whole `JsonDocument` through every property by using `RootElement`. Instead, search on nested JSON objects based on the known structure of the JSON data. For example, if you're looking for a `Grade` property in `Student` objects, loop through the `Student` objects and get the value of `Grade` for each, rather than searching through all `JsonElement` objects looking for `Grade` properties. Doing the latter will result in unnecessary passes over the same data.
 
-For a code example, see [Use JsonDocument for access to data](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-jsondocument-for-access-to-data).
+For a code example, see [Use JsonDocument](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-jsondocument).
 
 ## Utf8JsonReader compared to JsonTextReader
 
@@ -900,6 +902,8 @@ The `JsonDocument` DOM doesn't support querying by using [JSON Path](https://www
 ::: zone pivot="dotnet-6-0"
 In a <xref:System.Text.Json.Nodes.JsonNode> DOM, each `JsonNode` instance has a `GetPath` method that returns a path to that node. But there is no built-in API to handle queries based on JSON Path query strings.
 ::: zone-end
+
+For more information, see the [dotnet/runtime #31068 GitHub issue](https://github.com/dotnet/runtime/issues/31068).
 
 ## Additional resources
 

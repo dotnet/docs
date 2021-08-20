@@ -6,10 +6,10 @@ ms.assetid: 35ae79a1-ec00-4db7-9073-4a5dbd62dc82
 ---
 # 3404 - WrappedKeyDecryptionSuccess
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3404|  
 |Keywords|Security|  
 |Level|Verbose|  

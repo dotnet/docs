@@ -255,6 +255,8 @@ items:
       href: ../core/tools/dotnet-build-server.md
     - name: dotnet clean
       href: ../core/tools/dotnet-clean.md
+    - name: dotnet format
+      href: ../core/tools/dotnet-format.md
     - name: dotnet help
       href: ../core/tools/dotnet-help.md
     - name: dotnet migrate
@@ -1001,6 +1003,8 @@ items:
             href: code-analysis/quality-rules/ca2015.md
           - name: CA2016
             href: code-analysis/quality-rules/ca2016.md
+          - name: CA2018
+            href: code-analysis/quality-rules/ca2018.md
         - name: Security rules
           items:
           - name: Overview
@@ -1562,6 +1566,10 @@ items:
       href: ../core/deploying/trimming-options.md
     - name: Trimming libraries
       href: ../core/deploying/prepare-libraries-for-trimming.md
+    - name: Trim warnings
+      items:
+        - name: IL2026
+          href: ../core/deploying/trim-warnings/il2026.md
   - name: Runtime package store
     href: ../core/deploying/runtime-store.md
   - name: Runtime Identifier (RID) catalog
@@ -2097,6 +2105,50 @@ items:
       href: ../core/extensions/console-log-formatter.md
   - name: HostBuilder (generic host)
     href: ../core/extensions/generic-host.md
+  - name: HTTP with .NET
+    href: ../core/extensions/http-client.md
+  - name: Globalization and localization
+    items:
+    - name: Overview
+      href: ../core/extensions/globalization-and-localization.md
+    - name: Globalization
+      href: ../core/extensions/globalization.md
+    - name: Globalization and ICU
+      href: ../core/extensions/globalization-icu.md
+    - name: Localizability review
+      href: ../core/extensions/localizability-review.md
+    - name: Localization
+      href: ../core/extensions/localization.md
+    - name: Culture-insensitive string operations
+      items:
+      - name: Overview
+        href: ../core/extensions/performing-culture-insensitive-string-operations.md
+      - name: String comparisons
+        href: ../core/extensions/performing-culture-insensitive-string-comparisons.md
+      - name: Case changes
+        href: ../core/extensions/performing-culture-insensitive-case-changes.md
+      - name: String operations in collections
+        href: ../core/extensions/performing-culture-insensitive-string-operations-in-collections.md
+      - name: String operations in arrays
+        href: ../core/extensions/performing-culture-insensitive-string-operations-in-arrays.md
+    - name: Best practices for developing world-ready apps
+      href: ../core/extensions/best-practices-for-developing-world-ready-apps.md
+  - name: Resources in .NET apps
+    items:
+    - name: Overview
+      href: ../core/extensions/resources.md
+    - name: Create resource files
+      items:
+      - name: Overview
+        href: ../core/extensions/create-resource-files.md
+      - name: Work with .resx files programmatically
+        href: ../core/extensions/work-with-resx-files-programmatically.md
+    - name: Create satellite assemblies
+      href: ../core/extensions/create-satellite-assemblies.md
+    - name: Package and deploy resources
+      href: ../core/extensions/package-and-deploy-resources.md
+    - name: Retrieve resources
+      href: ../core/extensions/retrieve-resources.md
   - name: Worker Services
     items:
     - name: Overview
@@ -2112,7 +2164,8 @@ items:
       href: ../core/extensions/timer-service.md
     - name: Deploy a Worker Service to Azure
       href: ../core/extensions/cloud-service.md
-
+  - name: Caching
+    href: ../core/extensions/caching.md
 - name: Data access
   items:
   - name: LINQ
@@ -2424,8 +2477,6 @@ items:
       href: ../standard/native-interop/exceptions-interoperability.md
   - name: .NET distribution packaging
     href: ../core/distribution-packaging.md
-  - name: Globalization and localization
-    href: ../standard/globalization-localization/
   - name: Open-source library guidance
     href: ../standard/library-guidance/
   - name: Framework design guidelines
@@ -2555,6 +2606,8 @@ items:
         href: ../core/porting/upgrade-assistant-winforms-framework.md
       - name: ASP.NET Core
         href: ../core/porting/upgrade-assistant-aspnetmvc.md
+      - name: Telemetry
+        href: ../core/porting/upgrade-assistant-telemetry.md
     - name: Breaking changes
       displayName: app compatibility
       href: ../core/porting/breaking-changes.md

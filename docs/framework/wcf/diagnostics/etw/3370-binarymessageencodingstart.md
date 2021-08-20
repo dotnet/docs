@@ -6,10 +6,10 @@ ms.assetid: 624f8dab-a150-468e-9709-613621a8627f
 ---
 # 3370 - BinaryMessageEncodingStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3370|  
 |Keywords|Channel|  
 |Level|Verbose|  

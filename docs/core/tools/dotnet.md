@@ -122,7 +122,7 @@ The following options are available when `dotnet` runs an application. For examp
 
 - **`--runtimeconfig`**
 
-  Path to a *runtimeconfig.json* file. A *runtimeconfig.json* file is a configuration file that contains run-time settings. For more information, see [.NET run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
+  Path to a *runtimeconfig.json* file. A *runtimeconfig.json* file is a configuration file that contains run-time settings. For more information, see [.NET runtime configuration settings](../run-time-config/index.md#runtimeconfigjson).
 
 - **`--roll-forward <SETTING>`** **Available starting with .NET Core SDK 3.0.**
 
@@ -137,7 +137,7 @@ The following options are available when `dotnet` runs an application. For examp
 
   With the exception of `Disable`, all settings will use the highest available patch version.
 
-  Roll forward behavior can also be configured in a project file property, a run-time configuration file property, and an environment variable. For more information, see [Major-version runtime roll forward](../whats-new/dotnet-core-3-0.md#major-version-runtime-roll-forward).
+  Roll forward behavior can also be configured in a project file property, a runtime configuration file property, and an environment variable. For more information, see [Major-version runtime roll forward](../whats-new/dotnet-core-3-0.md#major-version-runtime-roll-forward).
 
 - **`--roll-forward-on-no-candidate-fx <N>`** **Available in .NET Core 2.x SDK.**
 
@@ -270,4 +270,4 @@ dotnet myapp.dll
 
 - [Environment variables used by .NET SDK, .NET CLI, and .NET runtime](dotnet-environment-variables.md)
 - [Runtime Configuration Files](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md)
-- [.NET run-time configuration settings](../run-time-config/index.md)
+- [.NET runtime configuration settings](../run-time-config/index.md)

@@ -6,10 +6,10 @@ ms.assetid: 9ff637f1-cc26-4400-ab9b-546f70e5057d
 ---
 # 201 - ClientMessageInspectorAfterReceiveInvoked
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|201|  
 |Keywords|Troubleshooting, ServiceModel|  
 |Level|Information|  

@@ -6,10 +6,10 @@ ms.assetid: 285e5cb8-e90d-4914-ac06-e9b176ffefa2
 ---
 # 1102 - WorkflowActivityStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1102|  
 |Keywords|WFRuntime|  
 |Level|Information|  

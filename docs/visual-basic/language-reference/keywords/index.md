@@ -705,7 +705,7 @@ The following keywords are not reserved, which means you can use them as names f
       [`Preserve`](../statements/redim-statement.md)\
       [`Take`](../queries/take-clause.md)\
       [`Until`](../statements/do-loop-statement.md)\
-      [`#Region`](../directives/region-directive.md)\
+      [`#Region`](../directives/region-directive.md)
    :::column-end:::
    :::column:::
       [`Ansi`](../modifiers/ansi.md)\
@@ -716,7 +716,7 @@ The following keywords are not reserved, which means you can use them as names f
       [`Mid`](../statements/mid-statement.md)\
       [`Skip`](../queries/skip-clause.md)\
       [`Take While`](../queries/take-while-clause.md)\
-      [`Where`](../queries/where-clause.md)\
+      [`Where`](../queries/where-clause.md)
    :::column-end:::
    :::column:::
       [`Assembly`](../modifiers/assembly.md)\
@@ -727,7 +727,7 @@ The following keywords are not reserved, which means you can use them as names f
       [`Off`](../../misc/off.md)\
       [`Skip While`](../queries/skip-while-clause.md)\
       [`Text`](../statements/option-compare-statement.md)\
-      [`Yield`](../statements/yield-statement.md)\
+      [`Yield`](../statements/yield-statement.md)
    :::column-end:::
    :::column:::
       [`Async`](../modifiers/async.md)\
@@ -738,7 +738,7 @@ The following keywords are not reserved, which means you can use them as names f
       [`Order By`](../queries/order-by-clause.md)\
       [`Strict`](../statements/option-strict-statement.md)\
       [`Unicode`](../modifiers/unicode.md)\
-      [`#ExternalSource`](../directives/externalsource-directive.md)\
+      [`#ExternalSource`](../directives/externalsource-directive.md)
    :::column-end:::
 :::row-end:::
 

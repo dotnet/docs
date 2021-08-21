@@ -131,22 +131,22 @@ Figure 11-1 shows an example reference architecture. This diagram describes a re
   <https://azure.microsoft.com/solutions/architecture/>
 
 - Azure Basic Web Application Architecture\
-  <https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app>
+  [https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app](/azure/architecture/reference-architectures/app-service-web-app/basic-web-app)
 
 - Design Patterns for Microservices\
-  <https://docs.microsoft.com/azure/architecture/microservices/design/patterns>
+  [https://docs.microsoft.com/azure/architecture/microservices/design/patterns](/azure/architecture/microservices/design/patterns)
 
 - Azure Developer Guide\
   <https://azure.microsoft.com/campaigns/developer-guide/>
 
 - Web Apps overview\
-  <https://docs.microsoft.com/azure/app-service/app-service-web-overview>
+  [https://docs.microsoft.com/azure/app-service/app-service-web-overview](/azure/app-service/app-service-web-overview)
 
 - Web App for Containers\
   <https://azure.microsoft.com/services/app-service/containers/>
 
 - Introduction to Azure Kubernetes Service (AKS)\
-  <https://docs.microsoft.com/azure/aks/intro-kubernetes>
+  [https://docs.microsoft.com/azure/aks/intro-kubernetes](/azure/aks/intro-kubernetes)
 
 >[!div class="step-by-step"]
 >[Previous](development-process-for-azure.md)

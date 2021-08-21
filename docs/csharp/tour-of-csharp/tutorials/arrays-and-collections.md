@@ -15,6 +15,8 @@ The tutorial expects that you have a machine set up for local development. On Wi
 
 Create a directory named *list-tutorial*. Make that the current directory and run `dotnet new console`.
 
+[!INCLUDE [csharp10-templates](../../../../includes/csharp10-templates.md)]
+
 Open *Program.cs* in your favorite editor, and replace the existing code with the following:
 
 ```csharp

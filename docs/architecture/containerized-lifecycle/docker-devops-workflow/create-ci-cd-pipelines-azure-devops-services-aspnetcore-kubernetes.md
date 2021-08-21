@@ -1,6 +1,6 @@
 ---
 title: Create CI/CD pipelines in Azure DevOps Services for a .NET application on Containers and deploying to a Kubernetes cluster
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Learn about creating CI/CD pipelines in Azure DevOps Services for a .NET application on Containers and deploying to a Kubernetes cluster
 ms.date: 01/06/2021
 ---
 # Create CI/CD pipelines in Azure DevOps Services for a .NET application on Containers and deploying to a Kubernetes cluster

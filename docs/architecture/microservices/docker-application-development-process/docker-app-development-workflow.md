@@ -490,7 +490,7 @@ The important point here is that, as shown in Figure 5-12, in Visual Studio 2019
 ### Additional resources
 
 - **Deploy an ASP.NET container to a remote Docker host** \
-  <https://docs.microsoft.com/visualstudio/containers/hosting-web-apps-in-docker>
+  [https://docs.microsoft.com/visualstudio/containers/hosting-web-apps-in-docker](/visualstudio/containers/hosting-web-apps-in-docker)
 
 ### A note about testing and deploying with orchestrators
 

@@ -38,7 +38,7 @@ The default namespaces are included by adding `global using` directives to a gen
 These implicit namespaces may cause type conflicts. For example, if you're authoring an MSBuild task, and thus deriving from the abstract <xref:Microsoft.Build.Utilities.Task?displayProperty=fullName> class, you'll see a conflict with the <xref:System.Threading.Tasks.Task?displayProperty=fullName> class. This conflict occurs because the <xref:System.Threading.Tasks?displayProperty=fullName> namespace is implicitly included. The error looks similar to:
 
 ```txt
-... error CS0104: 'Task' is an ambiguous reference between 'Microsoft.Build.Utilities.Task' and 'System.Threading.Tasks.Task' 
+... error CS0104: 'Task' is an ambiguous reference between 'Microsoft.Build.Utilities.Task' and 'System.Threading.Tasks.Task'
 ... error CS0115: 'SomeTask.Execute()': no suitable method found to override
 ```
 

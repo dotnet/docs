@@ -1,3 +1,8 @@
-﻿using System;
+﻿
+using System.Text;
 
-Console.WriteLine("Hello World!");
+StringBuilder builder = new();
+builder.AppendLine("Hello");
+builder.AppendLine("World!");
+
+Console.WriteLine(builder.ToString());

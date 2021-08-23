@@ -44,7 +44,7 @@ class Circle : Shape
   
 ## Example 1  
 
- The following example demonstrates a class with two class constructors, one without arguments and one with two arguments.  
+ The following example demonstrates a class with two class constructors, one without parameters and one with two parameters.  
   
  [!code-csharp[CoordsFullExample#4](snippets/instance-constructors/coords/Program.cs#4)]
   

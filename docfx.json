@@ -109,6 +109,15 @@
       }
     ],
     "externalReference": [],
+    "rules" : {
+      "docs-link-absolute": {
+        "exclude" : [
+          "_csharplang/proposals/csharp-7.2/private-protected.md",
+          "_csharplang/proposals/csharp-7.3/blittable.md"
+        ]
+      }
+
+    },
     "globalMetadata": {
       "apiPlatform": "dotnet",
       "author": "dotnet-bot",

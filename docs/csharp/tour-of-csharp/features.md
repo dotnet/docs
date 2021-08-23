@@ -1,7 +1,7 @@
 ---
 title: A Tour of C# - Major language areas
 description: New to C#? Learn the basics of the language. This article contains a survey of major language features.
-ms.date: 08/06/2020
+ms.date: 08/23/2021
 ---
 # Major language areas
 
@@ -76,7 +76,7 @@ Delegates can also be created using anonymous functions, which are "inline metho
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="UseDelegate":::
 
-A delegate doesn't know or care about the class of the method it references. All that matters is that the referenced method has the same parameters and return type as the delegate.
+A delegate doesn't know or care about the class of the method it references. The referenced method must have the same parameters and return type as the delegate.
 
 ## async / await
 
@@ -92,7 +92,7 @@ This small sample shows the major features for asynchronous programming:
 
 ## Attributes
 
-Types, members, and other entities in a C# program support modifiers that control certain aspects of their behavior. For example, the accessibility of a method is controlled using the `public`, `protected`, `internal`, and `private` modifiers. C# generalizes this capability such that user-defined types of declarative information can be attached to program entities and retrieved at run-time. Programs specify this additional declarative information by defining and using [***attributes***](../programming-guide/concepts/attributes/index.md).
+Types, members, and other entities in a C# program support modifiers that control certain aspects of their behavior. For example, the accessibility of a method is controlled using the `public`, `protected`, `internal`, and `private` modifiers. C# generalizes this capability such that user-defined types of declarative information can be attached to program entities and retrieved at run-time. Programs specify this declarative information by defining and using [***attributes***](../programming-guide/concepts/attributes/index.md).
 
 The following example declares a `HelpAttribute` attribute that can be placed on program entities to provide links to their associated documentation.
 

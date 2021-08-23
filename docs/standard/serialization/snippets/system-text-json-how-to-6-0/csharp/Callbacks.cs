@@ -55,4 +55,14 @@ namespace Callbacks
     }
 }
 // output:
-//{"Date":"2019-08-01T00:00:00-07:00","TemperatureCelsius":25,"Summary":"Hot"}
+//Begin serializing
+//The 'Summary' property is 'null'.
+//Finished serializing
+//{"Date":"2019-08-01T00:00:00","TemperatureCelsius":25,"Summary":null}
+
+//Begin deserializing
+//The 'Summary' property is 'null'.
+//Finished deserializing
+//Date=8/1/2019 12:00:00 AM
+//TemperatureCelsius = 25
+//Summary=

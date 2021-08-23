@@ -4,7 +4,7 @@ description: "Learn how to migrate from Newtonsoft.Json to System.Text.Json. Inc
 author: tdykstra
 ms.author: tdykstra
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 08/06/2021
+ms.date: 08/23/2021
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
   - "JSON serialization"
@@ -63,6 +63,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Support for non-public property setters and getters   | ✔️ [JsonInclude attribute](#non-public-property-setters-and-getters) |
 | `[JsonConstructor]` attribute                         | ✔️ [[JsonConstructor] attribute](#specify-constructor-to-use-when-deserializing) |
 | `ReferenceLoopHandling` global setting                | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
+| Callbacks                                             | ⚠️ [Callbacks](#callbacks) |
 | Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
 | Polymorphic serialization                             | ⚠️ [Not supported, workaround, sample](#polymorphic-serialization) |
 | Polymorphic deserialization                           | ⚠️ [Not supported, workaround, sample](#polymorphic-deserialization) |
@@ -71,7 +72,6 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `Required` setting on `[JsonProperty]` attribute        | ⚠️ [Not supported, workaround, sample](#required-properties) |
 | `DefaultContractResolver` to ignore properties       | ⚠️ [Not supported, workaround, sample](#conditionally-ignore-a-property) |
 | `DateTimeZoneHandling`, `DateFormatString` settings   | ⚠️ [Not supported, workaround, sample](#specify-date-format) |
-| Callbacks                                             | ⚠️ [Not supported, workaround, sample](#callbacks) |
 | `JsonConvert.PopulateObject` method                   | ⚠️ [Not supported, workaround](#populate-existing-objects) |
 | `ObjectCreationHandling` global setting               | ⚠️ [Not supported, workaround](#reuse-rather-than-replace-properties) |
 | Add to collections without setters                    | ⚠️ [Not supported, workaround](#add-to-collections-without-setters) |
@@ -573,7 +573,12 @@ The following JSON is deserialized without error:
 }
 ```
 
-To make deserialization fail if no `Date` property is in the JSON, implement a custom converter. The following sample converter code throws an exception if the `Date` property isn't set after deserialization is complete:
+To make deserialization fail if no `Date` property is in the JSON, choose one of the following options:
+
+* Implement a custom converter.
+* Implement an [`OnDeserialized` callback (.NET 6 and later)](#callbacks?pivots=dotnet-6-0)
+
+The following sample converter code throws an exception if the `Date` property isn't set after deserialization is complete:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecastRequiredPropertyConverter.cs":::
 
@@ -629,6 +634,24 @@ For more information, see [DateTime and DateTimeOffset support in System.Text.Js
 * OnSerializing (when beginning to serialize an object)
 * OnSerialized (when finished serializing an object)
 
+::: zone pivot="dotnet-6-0"
+
+System.Text.Json exposes the same notifications during serialization and deserialization. To use them, implement one or more of the following interfaces from the <xref:System.Text.Json.Serialization> namespace:
+
+* <xref:System.Text.Json.Serialization.IJsonOnDeserializing>
+* <xref:System.Text.Json.Serialization.IJsonOnDeserialized>
+* <xref:System.Text.Json.Serialization.IJsonOnSerializing>
+* <xref:System.Text.Json.Serialization.IJsonOnSerialized>
+
+Here's an example that checks for a null property and writes messages at start and end of serialization and deserialization:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-6-0/csharp/Callbacks.cs":::
+
+The `OnDeserializing` code doesn't have access to the new POCO instance. To manipulate the new POCO instance at the start of deserialization, put that code in the POCO constructor.
+
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1,dotnet-5-0"
 In <xref:System.Text.Json>, you can simulate callbacks by writing a custom converter. The following example shows a custom converter for a POCO. The converter includes code that displays a message at each point that corresponds to a `Newtonsoft.Json` callback.
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecastCallbacksConverter.cs":::
@@ -641,6 +664,8 @@ If you use a custom converter that follows the preceding sample:
 * Avoid an infinite loop by registering the converter in the options object and not passing in the options object when recursively calling `Serialize` or `Deserialize`.
 
 For more information about custom converters that recursively call `Serialize` or `Deserialize`, see the [Required properties](#required-properties) section earlier in this article.
+
+::: zone-end
 
 ### Non-public property setters and getters
 

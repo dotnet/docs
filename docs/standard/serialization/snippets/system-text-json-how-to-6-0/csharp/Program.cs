@@ -13,6 +13,8 @@ namespace SystemTextJsonSamples
             RoundtripJsonElementAndNode.Program.Main();
             Console.WriteLine("\n============================= Serialize and IgnoreCycles\n");
             SerializeIgnoreCycles.Program.Main();
+            Console.WriteLine("\n============================= Callbacks / Notifications\n");
+            Callbacks.Program.Main();
         }
     }
 }

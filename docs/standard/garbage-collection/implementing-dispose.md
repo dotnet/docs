@@ -1,7 +1,7 @@
 ---
 title: "Implement a Dispose method"
 description: In this article, learn to implement the Dispose method, which releases unmanaged resources used by your code in .NET.
-ms.date: 05/18/2021
+ms.date: 08/20/2021
 dev_langs:
   - "csharp"
   - "vb"
@@ -108,7 +108,7 @@ Here's the general pattern for implementing the dispose pattern for a base class
 :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/base2.vb":::
 
 > [!TIP]
-> In C#, you create a [finalizer](../../csharp/programming-guide/classes-and-structs/destructors.md) by overriding <xref:System.Object.Finalize%2A?displayProperty=nameWithType>. In Visual Basic, this is done with `Protected Overrides Sub Finalize()`.
+> In C#, you create a finalizer by providing a [destructor](../../csharp/programming-guide/classes-and-structs/destructors.md), not by overriding <xref:System.Object.Finalize%2A?displayProperty=nameWithType>. In Visual Basic, you create a finalizer with `Protected Overrides Sub Finalize()`.
 
 ## Implement the dispose pattern for a derived class
 

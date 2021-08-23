@@ -15,7 +15,7 @@ C# 10.0 adds the following features and enhancements to the C# language (as of .
 - Allow both assignment and declaration in the same deconstruction.
 - Allow `AsyncMethodBuilder` attribute on methods.
 - `global using` directives.
-- File-scoped `using` directives.
+- File-scoped namespace declaration.
 
 Some of the features you can try are available only when you set your language version to "preview". These features may have more refinements in future previews before .NET 6.0 is released.
 

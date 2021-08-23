@@ -1,7 +1,7 @@
 ---
 title: dotnet pack command
 description: The dotnet pack command creates NuGet packages for your .NET project.
-ms.date: 08/20/2021
+ms.date: 08/23/2021
 ---
 # dotnet pack
 
@@ -118,7 +118,7 @@ Web projects aren't packable by default. To override the default behavior, add t
 
   Defines the value for the `VersionSuffix` MSBuild property. The effect of this property on the package version depends on the values of the `Version` and `VersionPrefix` properties, as shown in the following table:
 
-  | Properties with values              | Version in package                  |
+  | Properties with values              | Package version                     |
   |-------------------------------------|-------------------------------------|
   | None                                | `1.0.0`                             |
   | `Version`                           | `$(Version)`                        |

@@ -86,7 +86,7 @@
 | Microsoft.Azure.Cosmos.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Templates/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Analyzers | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Analyzers/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Authentication.WebAssembly | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.0)<br>NuGet [1.0.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.1-preview) |  |  |
-| Microsoft.Azure.Functions.Worker.Core | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.2.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Core | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.3.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Abstractions | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.0.0)<br>NuGet [1.0.0-preview5](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.0.0-preview5) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [3.0.9](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/3.0.9)<br>NuGet [3.0.9-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/3.0.9-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [2.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/2.1.0)<br>NuGet [2.1.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/2.1.0-preview1) |  |  |
@@ -269,7 +269,7 @@
 | Microsoft.Azure.Devices.Provisioning.Transport.Http | NuGet [1.14.0](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Http/1.14.0)<br>NuGet [1.14.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Http/1.14.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Provisioning.Transport.Mqtt | NuGet [1.16.0](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.16.0)<br>NuGet [1.16.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.16.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Shared | NuGet [1.29.0](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.29.0)<br>NuGet [1.29.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.29.0-preview-001) |  |  |
-| Microsoft.Azure.Functions.Worker | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.4.0) |  |  |
+| Microsoft.Azure.Functions.Worker | NuGet [1.5.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.5.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.0.4) |  |  |
 | Microsoft.Azure.uamqp | NuGet [1.2.11](https://www.nuget.org/packages/Microsoft.Azure.uamqp/1.2.11) |  |  |
 | Microsoft.Azure.umqtt | NuGet [1.1.11](https://www.nuget.org/packages/Microsoft.Azure.umqtt/1.1.11) |  |  |
@@ -525,7 +525,7 @@
 | Management - Mixed Reality | NuGet [3.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.MixedReality/3.0.0) | [docs](/dotnet/api/overview/azure/mixed-reality) | GitHub [3.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.MixedReality_3.0.0/sdk/mixedreality/Microsoft.Azure.Management.MixedReality/) |
 | Management - Monitor | NuGet [0.25.4-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Monitor/0.25.4-preview) |  | GitHub [0.25.4-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Monitor_0.25.4-preview/sdk/monitor/Microsoft.Azure.Management.Monitor/) |
 | Management - Monitor Fluent | NuGet [1.37.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Monitor.Fluent/1.37.1) | [docs](/dotnet/api/overview/azure/monitor) |  |
-| Management - MySQL | NuGet [0.1.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.MySQL/0.1.0-preview) |  |  |
+| Management - MySQL | NuGet [0.1.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.MySQL/0.1.1-preview) |  |  |
 | Management - NetApp | NuGet [1.13.0](https://www.nuget.org/packages/Microsoft.Azure.Management.NetApp/1.13.0) |  | GitHub [1.13.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.NetApp_1.13.0/sdk/netapp/Microsoft.Azure.Management.NetApp/) |
 | Management - Network | NuGet [20.5.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Network/20.5.0) |  | GitHub [20.5.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Network_20.5.0/sdk/network/Microsoft.Azure.Management.Network/) |
 | Management - Network Fluent | NuGet [1.37.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent/1.37.1) | [docs](/dotnet/api/overview/azure/virtual-network) |  |

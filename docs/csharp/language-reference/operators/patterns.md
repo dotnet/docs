@@ -160,7 +160,7 @@ A property pattern is a recursive pattern. That is, you can use any pattern as a
 
 The preceding example uses two features available in C# 9.0 and later: `or` [pattern combinator](#logical-patterns) and [record types](../builtin-types/record.md).
 
-Beginning with C# 10.0, you can reference nested properties or fields within a property pattern. For example, the pattern in the following code is equivalent to the pattern from the preceding example:
+Beginning with C# 10.0, you can reference nested properties or fields within a property pattern. For example, you can refactor the method from the preceding example into the following equivalent code:
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="ExtendedPropertyPattern":::
 

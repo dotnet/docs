@@ -576,7 +576,7 @@ The following JSON is deserialized without error:
 To make deserialization fail if no `Date` property is in the JSON, choose one of the following options:
 
 * Implement a custom converter.
-* Implement an [`OnDeserialized` callback (.NET 6 and later)](#callbacks?pivots=dotnet-6-0)
+* Implement an [`OnDeserialized` callback (.NET 6 and later)](?pivots=dotnet-6-0#callbacks)
 
 The following sample converter code throws an exception if the `Date` property isn't set after deserialization is complete:
 

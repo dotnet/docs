@@ -1,7 +1,8 @@
 ---
 title: How to customize property names and values with System.Text.Json
 description: "Learn how to customize property names and values when serializing with System.Text.Json in .NET."
-ms.date: 02/01/2021
+ms.date: 08/23/2021
+zone_pivot_groups: dotnet-version
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
@@ -16,7 +17,14 @@ ms.topic: how-to
 
 # How to customize property names and values with System.Text.Json
 
+:::zone pivot="dotnet-6-0"
+> [!IMPORTANT]
+> Some information relates to prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+:::zone-end
+
+:::zone pivot="dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
 By default, property names and dictionary keys are unchanged in the JSON output, including case. Enum values are represented as numbers. In this article, you'll learn how to:
+::: zone-end
 
 > [!NOTE]
 > The [web default](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions) is camel case.
@@ -26,6 +34,11 @@ By default, property names and dictionary keys are unchanged in the JSON output,
 * [Implement a custom property naming policy](#use-a-custom-json-property-naming-policy)
 * [Convert dictionary keys to camel case](#camel-case-dictionary-keys)
 * [Convert enums to strings and camel case](#enums-as-strings)
+
+:::zone pivot="dotnet-6-0"
+
+* [Configure the order of serialized properties](#configure-the-order-of-serialized-properties)
+::: zone-end
 
 For other scenarios that require special handling of JSON property names and values, you can [implement custom converters](system-text-json-converters-how-to.md).
 
@@ -171,6 +184,15 @@ Enum string names can be deserialized as well, as shown in the following example
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripEnumAsString.cs" id="Deserialize":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripEnumAsString.vb" id="Deserialize":::
+
+:::zone pivot="dotnet-6-0"
+
+## Configure the order of serialized properties
+
+The [`[JsonPropertyOrder]`](xref:System.Text.Json.Serialization.JsonPropertyOrderAttribute) attribute lets you specify the order of properties in the JSON output from serialization. The default value of the `Order` property is zero. Set `Order` to a positive number to position a property after those that have the default value. A negative `Order` positions a property before those that have the default value. Here's an example:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-6-0/csharp/PropertyOrder.cs":::
+::: zone-end
 
 ## See also
 

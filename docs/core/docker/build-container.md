@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with Docker tutorial
 description: In this tutorial, you'll learn how to containerize a .NET Core application with Docker.
-ms.date: 9/23/2021
+ms.date: 8/23/2021
 ms.topic: tutorial
 ms.custom: "mvc"
 #Customer intent: As a developer, I want to containerize my .NET Core app so that I can deploy it to the cloud.

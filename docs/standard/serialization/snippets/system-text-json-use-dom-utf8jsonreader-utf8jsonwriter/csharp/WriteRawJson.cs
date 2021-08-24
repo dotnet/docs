@@ -52,3 +52,22 @@ namespace WriteRawJson
         }
     }
 }
+// output:
+//{
+//  "defaultJsonFormatting": [
+//    {
+//      "value": 50.4
+//    },
+//    {
+//      "value": 51
+//    }
+//  ],
+//  "customJsonFormatting": [
+//    {
+//      "value": 50.4
+//    },
+//    {
+//      "value": 51.0
+//    }
+//  ]
+//}

@@ -19,9 +19,9 @@ using System.Text;
 You can apply two modifiers to a `using` directive:
 
 - The `global` modifier has the same effect as adding the same `using` directive to every source file in your project. This modifier was introduced in C# 10.0.
-- The `static` modifier imports that `static` members and nested types from a single type rather than the types in a namespace. This modifier was introduced in C# 6.0.
+- The `static` modifier imports the `static` members and nested types from a single type rather than importing all the types in a namespace. This modifier was introduced in C# 6.0.
 
-Both modifiers can be applied to import the static members from a type in all source files in your project.
+You can combine both modifiers to import the static members from a type in all source files in your project.
 
 You can also create an alias for a namespace or a type with a *using alias directive*.
 
@@ -38,8 +38,8 @@ The scope of a `using` directive without the `global` modifier is the file in wh
 
 The `using` directive can appear:
 
-- At the beginning of a source code file, before any namespace or type definitions.
-- In any namespace, but before any namespace or types declared in this namespace, unless the `global` modifier is used.
+- At the beginning of a source code file, before any namespace or type declarations.
+- In any namespace, but before any namespaces or types declared in that namespace, unless the `global` modifier is used, in which case the directive must appear before all namespace and type declarations.
 
 Otherwise, compiler error [CS1529](../../misc/cs1529.md) is generated.
 
@@ -57,8 +57,8 @@ where *fully-qualified-namespace* is the fully qualified name of the namespace w
 
 A *global using* directive can appear at the beginning of any source code file. All `global using` directives in a single file must appear before:
 
-- all `using` directives without the `global` modifier.
-- all namespace and type declarations in the file.
+- All `using` directives without the `global` modifier.
+- All namespace and type declarations in the file.
 
 You may add `global using` directives to any source file. Typically, you'll want to keep them in a single location. The order of `global using` directives doesn't matter, either in a single file, or between files.
 
@@ -104,7 +104,7 @@ By eliminating the need to explicitly reference the <xref:System.Math> class eac
 
 :::code language="csharp" source="./snippets/using-static2.cs":::
 
-`using static` imports only accessible static members and nested types declared in the specified type.  Inherited members aren't imported.  You can import from any named type with a using static directive, including Visual Basic modules.  If F# top-level functions appear in metadata as static members of a named type whose name is a valid C# identifier, then the F# functions can be imported.
+`using static` imports only accessible static members and nested types declared in the specified type.  Inherited members aren't imported.  You can import from any named type with a `using static` directive, including Visual Basic modules.  If F# top-level functions appear in metadata as static members of a named type whose name is a valid C# identifier, then the F# functions can be imported.
 
 `using static` makes extension methods declared in the specified type available for extension method lookup.  However, the names of the extension methods aren't imported into scope for unqualified reference in code.
 

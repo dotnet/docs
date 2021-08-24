@@ -202,8 +202,8 @@ Namespace SerializationGuidelines
             '</Snippet10>
             If info Is Nothing Then
                 Throw New System.ArgumentNullException("info")
-                info.AddValue("name", FullName)
             End If
+            info.AddValue("name", FullName)
         End Sub
 
         Public Property FullName As String

@@ -6,20 +6,36 @@ ms.date: 07/06/2021
 # What's new in C# 10.0
 
 > [!IMPORTANT]
-> This article discusses the features available in C# 10 as of .NET 6 preview 5. Check for updates on each preview release.
+> This article discusses the features available in C# 10 as of .NET 6 preview 7. Documenting the enhancements for C# 10 is in progress. You can check [this project](https://github.com/dotnet/docs/projects/133) for progress on documentation.
 
-C# 10.0 adds the following features and enhancements to the C# language (as of .NET 6 Preview 5):
+C# 10.0 adds the following features and enhancements to the C# language (as of .NET 6 Preview 7):
 
 - Allow `const` interpolated strings.
 - Record types can seal `ToString()`.
 - Allow both assignment and declaration in the same deconstruction.
 - Allow `AsyncMethodBuilder` attribute on methods.
+- `global using` directives.
+- File-scoped namespace declaration.
 
 Some of the features you can try are available only when you set your language version to "preview". These features may have more refinements in future previews before .NET 6.0 is released.
 
 C# 10.0 is supported on **.NET 6**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
 You can download the latest .NET 6.0 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022 preview](https://visualstudio.microsoft.com/vs/preview/vs2022/), which includes the .NET 6.0 preview SDK.
+
+## Global using directives
+
+You can add the `global` modifier to any [using directive](../language-reference/keywords/using-directive.md) to instruct the compiler that the directive applies to all source files in the compilation. This is typically all source files in a project.
+
+## File-scoped namespace declaration
+
+You can use a new form of the [`namespace` declaration](../language-reference/keywords/namespace.md) to declare that all subsequent declarations are members of the declared namespace:
+
+```csharp
+namespace MyNamespace;
+```
+
+This new syntax saves both horizontal and vertical space for the most common `namespace` declarations.
 
 ## Constant interpolated strings
 

@@ -19,11 +19,11 @@ To match files in the file system based on user-defined patterns, start by insta
 
 Both `AddExclude` and `AddInclude` methods can be called any number of times, to add various file name patterns to either exclude or include from results.
 
-### Extensions
+## Extensions
 
 The `Matcher` object has several convenience based extension methods.
 
-#### Multiple exclusions
+### Multiple exclusions
 
 To add multiple exclude patterns you can use:
 
@@ -43,7 +43,7 @@ matcher.AddExcludePatterns(new [] { "*.txt", "*.asciidoc", "*.md" });
 
 This extension method iterates over all of the provided patterns calling <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.AddExclude%2A> on your behalf.
 
-#### Multiple inclusions
+### Multiple inclusions
 
 To add multiple include patterns you can use:
 
@@ -63,7 +63,7 @@ matcher.AddIncludePatterns(new[] { "*.txt", "*.asciidoc", "*.md" });
 
 This extension method iterates over all of the provided patterns calling <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.AddInclude%2A> on your behalf.
 
-#### Get all matching files
+### Get all matching files
 
 To get all matching files, you have to call <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.Execute(Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase)?displayProperty=nameWithType> either directly or indirectly. To call it directly you need a search directory:
 
@@ -114,7 +114,7 @@ The preceding C# code:
 - Declares and assigns the search directory value.
 - Calls `GetResultsInFullPath` given the `searchDirectory` value to yield all matching files as a `IEnumerable<string>`.
 
-#### Match overloads
+### Match overloads
 
 The <xref:Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult> object represents a collection of <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch> instances, and exposes a `boolean` value indicating whether the result has matches &mdash; <xref:Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult.HasMatches?displayProperty=nameWithType>.
 
@@ -141,7 +141,7 @@ The preceding C# code:
 
 The additional `Match` overloads work in similar ways.
 
-### Pattern formats
+## Pattern formats
 
 The patterns that are specified in the `AddExclude` and `AddInclude` methods can use the following formats to match multiple files or directories.
 
@@ -175,29 +175,29 @@ The patterns that are specified in the `AddExclude` and `AddInclude` methods can
 
     To match all files in a directory named "shared" at the sibling level to the base directory given to <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.Execute(Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase)?displayProperty=nameWithType>, use `../shared/*`.
 
-## More examples
+## Examples
 
 Consider the following example directory, and each file within its corresponding folder.
 
-```Console
+```Directory
 📁 parent
-│   file.md
-│   README.md
+│    file.md
+│    README.md
 │
 └───📁 child
-    │   file.MD
-    │   index.js
-    │   more.md
-    │   sample.mtext
+    │    file.MD
+    │    index.js
+    │    more.md
+    │    sample.mtext
     │
     ├───📁 assets
-    │       image.png
-    │       image.svg
+    │        image.png
+    │        image.svg
     │
     └───📁 grandchild
-            file.md
-            style.css
-            sub.text
+             file.md
+             style.css
+             sub.text
 ```
 
 > [!TIP]

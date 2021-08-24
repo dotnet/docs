@@ -229,6 +229,19 @@ C:\app\parent\child\assets\image.png
 C:\app\parent\child\assets\image.svg
 ```
 
+To get any files where the directory name contains the word *child* at an arbitrary depth, and the file extensions are not *.md*, *.text*, or *.mtext*:
+
+:::code source="snippets/fileglobbing/example/Example.ChildDirectoriesWeb.cs" id="ChildDirectoriesWeb":::
+
+Running the application would output results similar to the following:
+
+```Console
+C:\app\parent\child\index.js
+C:\app\parent\child\assets\image.png
+C:\app\parent\child\assets\image.svg
+C:\app\parent\child\grandchild\style.css
+```
+
 ## See also
 
 - [Runtime libraries overview](../../standard/runtime-libraries-overview.md)

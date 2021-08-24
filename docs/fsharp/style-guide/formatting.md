@@ -1120,29 +1120,32 @@ functionName
 
 If the body of a lambda expression is multiple lines long, you should consider refactoring it into a locally-scoped function.
 
-// TODO: Is https://github.com/dotnet/docs/issues/22834 still relevant?
-
-Parameters should generally be indented relative to the function or `fun`/`function` keyword, regardless of the context in which the function appears:
+Note that in combination of infix operators the body of a lambda expression should be indented one indent further from the current line.
+This is not the case when all arguments are indented one from the function application, there the indent should be in respect to the function name.
 
 ```fsharp
 // With 4 spaces indentation
 list1
-|> List.fold
-       someLongParam
-       anotherLongParam
+|> List.iter (fun elem ->
+    // one indent starting from the pipe
+    printfn $"A very long line to format the value: %d{elem}")
 
 list1
-|> List.iter (fun elem ->
-    printfn $"A very long line to format the value: %d{elem}")
+|> List.fold
+       // one indent from the function name 
+       someLongParam
+       anotherLongParam
 
 // With 2 spaces indentation
 list1
 |> List.fold
+     // one indent from the function name 
      someLongParam
      anotherLongParam
 
 list1
 |> List.iter (fun elem ->
+  // one indent starting from the pipe
   printfn $"A very long line to format the value: %d{elem}")
 ```
 

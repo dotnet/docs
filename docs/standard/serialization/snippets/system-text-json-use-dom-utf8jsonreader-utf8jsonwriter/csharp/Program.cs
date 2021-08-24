@@ -17,6 +17,8 @@ namespace SystemTextJsonSamples
             JsonNodePOCOExample.Program.Main();
             Console.WriteLine("\n============================= Average Grades example\n");
             JsonNodeAverageGradeExample.Program.Main();
+            Console.WriteLine("\n============================= Write raw JSON\n");
+            WriteRawJson.Program.Main();
         }
     }
 }

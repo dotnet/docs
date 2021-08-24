@@ -1,7 +1,7 @@
 ---
 title: How to use a JSON DOM, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json
 description: "Learn how to use a JSON DOM, Utf8JsonReader, and Utf8JsonWriter."
-ms.date: 08/04/2021
+ms.date: 08/24/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 dev_langs:
@@ -154,6 +154,17 @@ The following example shows how to use the <xref:System.Text.Json.Utf8JsonWriter
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/Utf8WriterToStream.cs" id="Serialize":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/Utf8WriterToStream.vb" id="Serialize":::
+
+### Write raw JSON
+
+In some scenarios, you might want to write "raw" JSON to a JSON payload that you're creating with `Utf8JsonWriter`. Here are typical scenarios:
+
+* You have an existing JSON payload that you want to enclose in new JSON.
+* You want to format values differently from the default Utf8JsonWriter formatting.
+
+  For example, you might want to customize number formatting. By default, System.Text.Json omits the decimal point for whole numbers, writing `1` rather than `1.0`, for example. The rationale is that writing fewer bytes is good for performance. But suppose the consumer of your JSON treats numbers with decimals as doubles, and numbers without decimals as integers. You might want to ensure that the numbers in an array are all recognized as doubles, by writing a decimal point and zero for whole numbers. The following example shows how to do that:
+
+  :::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/WriteRawJson.cs":::
 
 ## Use `Utf8JsonReader`
 

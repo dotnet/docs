@@ -721,11 +721,10 @@ type MyRecord =
 
 let foo a =
     a
-    |> Option.map
-           (fun x ->
-                {
-                    MyField = x
-                })
+    |> Option.map (fun x ->
+        {
+            MyField = x
+        })
 ```
 
 The same rules apply for list and array elements.
@@ -976,11 +975,10 @@ Pattern matching of anonymous functions, starting by `function`, should generall
 
 ```fsharp
 lambdaList
-|> List.map
-       (function
-            | Abs(x, body) -> 1 + sizeLambda 0 body
-            | App(lam1, lam2) -> sizeLambda (sizeLambda 0 lam1) lam2
-            | Var v -> 1)
+|> List.map (function
+    | Abs(x, body) -> 1 + sizeLambda 0 body
+    | App(lam1, lam2) -> sizeLambda (sizeLambda 0 lam1) lam2
+    | Var v -> 1)
 ```
 
 Pattern matching in functions defined by `let` or `let rec` should be indented four spaces after starting of `let`, even if `function` keyword is used:
@@ -1069,7 +1067,7 @@ let printVolumes x =
         (convertVolumeImperialPint x)
 ```
 
-For lambda expressions, you may also want to consider placing the body of a lambda expression on a new line, indented by one scope, if it is long enough:
+For lambda expressions, you may also want to consider placing the body of a lambda expression on a new line, indented by one scope, if it is long enough or followed by other arguments:
 
 ```fsharp
 let printListWithOffset a list1 =
@@ -1077,40 +1075,78 @@ let printListWithOffset a list1 =
         (fun elem ->
              printfn $"A very long line to format the value: %d{a + elem}")
         list1
+```
+
+If the lambda argument is the last argument in a function application, place all arguments until the arrow on the same line.
+
+```fsharp
+Target.create "Build" (fun ctx ->
+    // code
+    // here
+    ())
 
 let printListWithOffsetPiped a list1 =
     list1
-    |> List.iter
-           (fun elem ->
-                printfn $"A very long line to format the value: %d{a + elem}")
+    |> List.iter (fun elem ->
+        printfn $"A very long line to format the value: %d{a + elem}")
+```
+
+Treat match lambda's in a similar fashion.
+
+```fsharp
+functionName arg1 arg2 arg3 (function
+    | Choice1of2 x
+    | Choice2of2 y)
+```
+
+Unless there are many leading or multiline arguments before the lambda. In that case, indent all arguments with one scope.
+
+```fsharp
+functionName 
+    arg1 
+    arg2 
+    arg3 
+    (fun arg4 ->
+        bodyExpr)
+
+functionName 
+    arg1 
+    arg2 
+    arg3 
+    (function
+     | Choice1of2 x
+     | Choice2of2 y)
 ```
 
 If the body of a lambda expression is multiple lines long, you should consider refactoring it into a locally-scoped function.
 
-Parameters should generally be indented relative to the function or `fun`/`function` keyword, regardless of the context in which the function appears:
+Note that in combination of infix operators the body of a lambda expression should be indented one indent further from the current line.
+This is not the case when all arguments are indented one from the function application, there the indent should be in respect to the function name.
 
 ```fsharp
 // With 4 spaces indentation
 list1
-|> List.fold
-       someLongParam
-       anotherLongParam
+|> List.iter (fun elem ->
+    // one indent starting from the pipe
+    printfn $"A very long line to format the value: %d{elem}")
 
 list1
-|> List.iter
-       (fun elem ->
-            printfn $"A very long line to format the value: %d{elem}")
+|> List.fold
+       // one indent from the function name 
+       someLongParam
+       anotherLongParam
 
 // With 2 spaces indentation
 list1
 |> List.fold
+     // one indent from the function name 
      someLongParam
      anotherLongParam
 
 list1
-|> List.iter
-       (fun elem ->
-          printfn $"A very long line to format the value: %d{elem}")
+|> List.iter (fun elem ->
+  // one indent starting from the pipe
+  printfn $"A very long line to format the value: %d{elem}")
 ```
 
 When the function take a single multiline tuple argument, the same rules for [Formatting constructors, static members, and member invocations](#formatting-constructors-static-members-and-member-invocations) apply.

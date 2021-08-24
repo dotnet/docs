@@ -19,11 +19,11 @@ namespace WriteRawJson
             writer.WriteStartObject();
 
             writer.WriteStartArray("defaultJsonFormatting");
-            foreach (double result in new double[] { 50.4, 51 })
+            foreach (double number in new double[] { 50.4, 51 })
             {
                 writer.WriteStartObject();
                 writer.WritePropertyName("value");
-                writer.WriteNumberValue(result);
+                writer.WriteNumberValue(number);
                 writer.WriteEndObject();
             }
             writer.WriteEndArray();

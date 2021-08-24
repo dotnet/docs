@@ -12,12 +12,12 @@ In this article you'll learn how to use file globbing with the [`Microsoft.Exten
 
 ## Patterns
 
-To match files in the file system based on user-defined patterns, start by instantiating a <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher> object. A `Matcher` can be instantiated with no parameters, or with a <xref:System.StringComparison?displayProperty=nameWithType> &mdash; which would be used for comparing patterns to file names. The `Matcher` exposes several additive methods:
+To match files in the file system based on user-defined patterns, start by instantiating a <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher> object. A `Matcher` can be instantiated with no parameters, or with a <xref:System.StringComparison?displayProperty=nameWithType> &mdash; which is used internally for comparing patterns to file names. The `Matcher` exposes several additive methods:
 
 - <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.AddExclude%2A?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.AddInclude%2A?displayProperty=nameWithType>
 
-Both `AddExclude` and `AddInclude` methods can be called any number of times, to add various file name patterns to either exclude or include from results.
+Both `AddExclude` and `AddInclude` methods can be called any number of times, to add various file name patterns to either exclude or include from results. Once you've instantiated a `Matcher` and added patterns, it's then used to evaluate matches from a starting directory with the <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.Execute%2A?displayProperty=nameWithType> method.
 
 ## Extensions
 

@@ -1,3 +1,3 @@
-﻿using Microsoft.Extensions.FileSystemGlobbing;
+﻿Example.MatchAllMarkdownFiles();
 
-Matcher matcher = new(String)
+Example.AssetsDirectory();

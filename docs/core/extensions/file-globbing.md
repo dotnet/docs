@@ -3,7 +3,7 @@ title: File globbing in .NET
 author: IEvangelist
 description: Learn how to use file globbing in .NET to match various files with the same partial names, extensions, or segments.
 ms.author: dapine
-ms.date: 08/23/2021
+ms.date: 08/24/2021
 ---
 
 # File globbing in .NET
@@ -21,7 +21,7 @@ Both `AddExclude` and `AddInclude` methods can be called any number of times, to
 
 ### Extensions
 
-The `Matcher` object has several convenience-based extension methods available.
+The `Matcher` object has several convenience based extension methods.
 
 #### Multiple exclusions
 
@@ -63,7 +63,83 @@ matcher.AddIncludePatterns(new[] { "*.txt", "*.asciidoc", "*.md" });
 
 This extension method iterates over all of the provided patterns calling <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.AddInclude%2A> on your behalf.
 
+#### Get all matching files
 
+To get all matching files, you have to call <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.Execute(Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase)?displayProperty=nameWithType> either directly or indirectly. To call it directly you need a search directory:
+
+```csharp
+Matcher matcher = new();
+matcher.AddIncludePatterns(new[] { "*.txt", "*.asciidoc", "*.md" });
+
+string searchDirectory = "../starting-folder/";
+
+PatternMatchingResult result = matcher.Execute(
+    new DirectoryInfoWrapper(
+        new DirectoryInfo(searchDirectory)));
+
+// Use result.HasMatches and results.Files.
+// The files in the results object are file paths relative to the search directory.
+```
+
+The preceding C# code:
+
+- Instantiates a <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher> object.
+- Calls <xref:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions.AddIncludePatterns(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.Collections.Generic.IEnumerable{System.String}[])> to add several file name patterns to include.
+- Declares and assigns the search directory value.
+- Instantiates a <xref:System.IO.DirectoryInfo> from the given `searchDirectory`.
+- Instantiates a <xref:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper> from the `DirectoryInfo` it wraps.
+- Calls `Execute` given the `DirectoryInfoWrapper` instance to yield a <xref:Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult> object.
+
+> [!NOTE]
+> The `DirectoryInfoWrapper` type is defined in the `Microsoft.Extensions.FileSystemGlobbing.Abstractions` namespace, and the `DirectoryInfo` type is defined in the `System.IO` namespace. To avoid unnecessary `using` statements, you can use the provided extension methods.
+
+There is another convenience based extension method that yields an `IEnumerable<string>` representing the matching files:
+
+```csharp
+Matcher matcher = new();
+matcher.AddIncludePatterns(new[] { "*.txt", "*.asciidoc", "*.md" });
+
+string searchDirectory = "../starting-folder/";
+
+IEnumerable<string> matchingFiles = matcher.GetResultsInFullPath(searchDirectory);
+
+// Use matchingFiles if there are any found.
+// The files in this collection are fully qualified file system paths.
+```
+
+The preceding C# code:
+
+- Instantiates a <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher> object.
+- Calls <xref:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions.AddIncludePatterns(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.Collections.Generic.IEnumerable{System.String}[])> to add several file name patterns to include.
+- Declares and assigns the search directory value.
+- Calls `GetResultsInFullPath` given the `searchDirectory` value to yield all matching files as a `IEnumerable<string>`.
+
+#### Match overloads
+
+The <xref:Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult> object represents a collection of <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch> instances, and exposes a `boolean` value indicating whether the result has matches &mdash; <xref:Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult.HasMatches?displayProperty=nameWithType>.
+
+With a `Matcher` instance, you can call the any of the various `Match` overloads to get a pattern matching result. The `Match` methods invert the responsibility on the caller to provide a file or a collection of files in which to evaluate for matches. In other words, the caller is responsible for passing the file to match on.
+
+> [!IMPORTANT]
+> When using any of the `Match` overloads, there is no file system I/O involved. All of the file globbing is done in memory with the include and exclude patterns of the `matcher` instance. The parameters of the `Match` overloads do not have to be fully qualified paths. The current directory (<xref:System.IO.Directory.GetCurrentDirectory?displayProperty=nameWithType>) is used when not specified.
+
+To match a single file:
+
+```csharp
+Matcher matcher = new();
+matcher.AddInclude("**/*.md");
+
+PatternMatchingResult result = matcher.Match("file.md");
+```
+
+The preceding C# code:
+
+- Matches any file with the *.md* file extension, at an arbitrary directory depth.
+- If a file named *file.md* exists in a subdirectory from the current directory:
+  - `result.HasMatches` would be `true`.
+  - and `result.Files` would have one match.
+
+The additional `Match` overloads work in similar ways.
 
 ### Pattern formats
 
@@ -99,19 +175,61 @@ The patterns that are specified in the `AddExclude` and `AddInclude` methods can
 
     To match all files in a directory named "shared" at the sibling level to the base directory given to <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.Execute(Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase)?displayProperty=nameWithType>, use `../shared/*`.
 
-## Example
+## More examples
 
 Consider the following example directory, and each file within its corresponding folder.
 
-```Directory
+```Console
 📁 parent
-│   file.txt
+│   file.md
+│   README.md
 │
 └───📁 child
-    │   file.TXT
-    │   more.txt
+    │   file.MD
+    │   index.js
+    │   more.md
+    │   sample.mtext
+    │
+    ├───📁 assets
+    │       image.png
+    │       image.svg
     │
     └───📁 grandchild
-            file.txt
+            file.md
+            style.css
             sub.text
 ```
+
+> [!TIP]
+> Some file extensions are in uppercase, while others are in lowercase. This is an important consideration, use the <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.%23ctor(System.StringComparison)?displayProperty=nameWithType> constructor for finite string comparison control. By default, <xref:System.StringComparer.OrdinalIgnoreCase?displayProperty=nameWithType> is used.
+
+To get all of the markdown files, where the file extension is either the *.md* or *.mtext* (regardless of their file name character casing):
+
+:::code source="snippets/fileglobbing/example/Example.MarkdownFiles.cs" id="MarkdownFiles":::
+
+Running the application would output results similar to the following:
+
+```Console
+C:\app\parent\file.md
+C:\app\parent\README.md
+C:\app\parent\child\file.MD
+C:\app\parent\child\more.md
+C:\app\parent\child\sample.mtext
+C:\app\parent\child\grandchild\file.md
+```
+
+To get any files in an *assets* directory at an arbitrary depth:
+
+:::code source="snippets/fileglobbing/example/Example.AssetsDirectory.cs" id="AssetsDirectory":::
+
+Running the application would output results similar to the following:
+
+```Console
+C:\app\parent\child\assets\image.png
+C:\app\parent\child\assets\image.svg
+```
+
+## See also
+
+- [Runtime libraries overview](../../standard/runtime-libraries-overview.md)
+- [File and Stream I/O](../../standard/io/index.md)

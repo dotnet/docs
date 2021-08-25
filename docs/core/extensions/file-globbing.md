@@ -8,20 +8,20 @@ ms.date: 08/24/2021
 
 # File globbing in .NET
 
-In this article you'll learn how to use file globbing with the [`Microsoft.Extensions.FileSystemGlobbing`](https://www.nuget.org/packages/Microsoft.Extensions.FileSystemGlobbing) NuGet package. A *glob* is a term used to define patterns for matching file and directory names based on wildcards. Globbing is that act of defining one or more glob pattern, and yielding files from either inclusive or exclusive matches.
+In this article you'll learn how to use file globbing with the [`Microsoft.Extensions.FileSystemGlobbing`](https://www.nuget.org/packages/Microsoft.Extensions.FileSystemGlobbing) NuGet package. A *glob* is a term used to define patterns for matching file and directory names based on wildcards. Globbing is the act of defining one or more glob patterns, and yielding files from either inclusive or exclusive matches.
 
 ## Patterns
 
-To match files in the file system based on user-defined patterns, start by instantiating a <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher> object. A `Matcher` can be instantiated with no parameters, or with a <xref:System.StringComparison?displayProperty=nameWithType> &mdash; which is used internally for comparing patterns to file names. The `Matcher` exposes several additive methods:
+To match files in the file system based on user-defined patterns, start by instantiating a <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher> object. A `Matcher` can be instantiated with no parameters, or with a <xref:System.StringComparison?displayProperty=nameWithType> parameter &mdash; which is used internally for comparing patterns to file names. The `Matcher` exposes the following additive methods:
 
 - <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.AddExclude%2A?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.AddInclude%2A?displayProperty=nameWithType>
 
 Both `AddExclude` and `AddInclude` methods can be called any number of times, to add various file name patterns to either exclude or include from results. Once you've instantiated a `Matcher` and added patterns, it's then used to evaluate matches from a starting directory with the <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.Execute%2A?displayProperty=nameWithType> method.
 
-## Extensions
+## Extension methods
 
-The `Matcher` object has several convenience based extension methods.
+The `Matcher` object has several extension methods.
 
 ### Multiple exclusions
 
@@ -93,7 +93,7 @@ The preceding C# code:
 > [!NOTE]
 > The `DirectoryInfoWrapper` type is defined in the `Microsoft.Extensions.FileSystemGlobbing.Abstractions` namespace, and the `DirectoryInfo` type is defined in the `System.IO` namespace. To avoid unnecessary `using` statements, you can use the provided extension methods.
 
-There is another convenience based extension method that yields an `IEnumerable<string>` representing the matching files:
+There is another extension method that yields an `IEnumerable<string>` representing the matching files:
 
 ```csharp
 Matcher matcher = new();
@@ -201,9 +201,9 @@ Consider the following example directory, and each file within its corresponding
 ```
 
 > [!TIP]
-> Some file extensions are in uppercase, while others are in lowercase. This is an important consideration, use the <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.%23ctor(System.StringComparison)?displayProperty=nameWithType> constructor for finite string comparison control. By default, <xref:System.StringComparer.OrdinalIgnoreCase?displayProperty=nameWithType> is used.
+> Some file extensions are in uppercase, while others are in lowercase. By default, <xref:System.StringComparer.OrdinalIgnoreCase?displayProperty=nameWithType> is used. To specify different string comparison behavior, use the <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.%23ctor(System.StringComparison)?displayProperty=nameWithType> constructor. 
 
-To get all of the markdown files, where the file extension is either the *.md* or *.mtext* (regardless of their file name character casing):
+To get all of the markdown files, where the file extension is either *.md* or *.mtext*, regardless of character case:
 
 :::code source="snippets/fileglobbing/example/Example.MarkdownFiles.cs" id="MarkdownFiles":::
 

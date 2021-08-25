@@ -3,7 +3,7 @@ title: Deploy a Worker Service to Azure
 description: Learn how to deploy a .NET Worker Service to Azure.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/06/2021
+ms.date: 08/25/2021
 ms.topic: tutorial
 zone_pivot_groups: development-environment-one
 ---
@@ -31,6 +31,9 @@ In this tutorial, you learn how to:
   - [Visual Studio, Visual Studio Code, or Visual Studio for Mac](https://visualstudio.microsoft.com).
   - [.NET CLI](../tools/index.md)
   - [Azure CLI](/cli/azure/install-azure-cli).
+
+> [!TIP]
+> If you're using **Visual Studio Code**, install the [Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account).
 
 <!-- ## Create a new project -->
 [!INCLUDE [zoned-file-new-worker](includes/zoned-file-new-worker.md)]

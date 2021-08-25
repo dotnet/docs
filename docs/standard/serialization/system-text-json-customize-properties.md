@@ -26,9 +26,6 @@ ms.topic: how-to
 By default, property names and dictionary keys are unchanged in the JSON output, including case. Enum values are represented as numbers. In this article, you'll learn how to:
 ::: zone-end
 
-> [!NOTE]
-> The [web default](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions) is camel case.
-
 * [Customize individual property names](#customize-individual-property-names)
 * [Convert all property names to camel case](#use-camel-case-for-all-json-property-names)
 * [Implement a custom property naming policy](#use-a-custom-json-property-naming-policy)
@@ -39,6 +36,9 @@ By default, property names and dictionary keys are unchanged in the JSON output,
 
 * [Configure the order of serialized properties](#configure-the-order-of-serialized-properties)
 ::: zone-end
+
+> [!NOTE]
+> The [web default](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions) is camel case.
 
 For other scenarios that require special handling of JSON property names and values, you can [implement custom converters](system-text-json-converters-how-to.md).
 
@@ -180,10 +180,12 @@ The resulting JSON looks like the following example:
 }
 ```
 
-Enum string names can be deserialized as well, as shown in the following example:
+The built-in <xref:System.Text.Json.Serialization.JsonStringEnumConverter> can deserialize string values as well. It works without a specified naming policy or with the <xref:System.Text.Json.JsonNamingPolicy.CamelCase> naming policy. It doesn't support other naming policies, such as snake case. The following example shows deserialization using `CamelCase`:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripEnumAsString.cs" id="Deserialize":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripEnumAsString.vb" id="Deserialize":::
+
+For information about custom converter code that supports deserialization while using a snake case naming policy, see [Support enum string value deserialization](system-text-json-converters-how-to.md#support-enum-string-value-deserialization).
 
 :::zone pivot="dotnet-6-0"
 
@@ -211,5 +213,7 @@ The [`[JsonPropertyOrder]`](xref:System.Text.Json.Serialization.JsonPropertyOrde
 * [Use DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
+* [How to use source generation](system-text-json-source-generation.md)
+* [Supported collection types](system-text-json-supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

@@ -4,7 +4,7 @@ description: "Learn how to migrate from Newtonsoft.Json to System.Text.Json. Inc
 author: tdykstra
 ms.author: tdykstra
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 08/06/2021
+ms.date: 08/25/2021
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
   - "JSON serialization"
@@ -75,6 +75,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `JsonConvert.PopulateObject` method                   | ⚠️ [Not supported, workaround](#populate-existing-objects) |
 | `ObjectCreationHandling` global setting               | ⚠️ [Not supported, workaround](#reuse-rather-than-replace-properties) |
 | Add to collections without setters                    | ⚠️ [Not supported, workaround](#add-to-collections-without-setters) |
+| Snake-case property names                             | ⚠️ [Not supported, workaround](#snake-case-naming-policy)|
 | Support for `System.Runtime.Serialization` attributes | ❌ [Not supported](#systemruntimeserialization-attributes) |
 | `MissingMemberHandling` global setting                | ❌ [Not supported](#missingmemberhandling) |
 | Allow property names without quotes                   | ❌ [Not supported](#json-strings-property-names-and-string-values) |
@@ -118,6 +119,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `JsonConvert.PopulateObject` method                   | ⚠️ [Not supported, workaround](#populate-existing-objects) |
 | `ObjectCreationHandling` global setting               | ⚠️ [Not supported, workaround](#reuse-rather-than-replace-properties) |
 | Add to collections without setters                    | ⚠️ [Not supported, workaround](#add-to-collections-without-setters) |
+| Snake-case property names                             | ⚠️ [Not supported, workaround](#snake-case-naming-policy)|
 | `ReferenceLoopHandling` global setting                | ❌ [Not supported](#preserve-object-references-and-handle-loops) |
 | Support for `System.Runtime.Serialization` attributes | ❌ [Not supported](#systemruntimeserialization-attributes) |
 | `MissingMemberHandling` global setting                | ❌ [Not supported](#missingmemberhandling) |
@@ -161,6 +163,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `JsonConvert.PopulateObject` method                   | ⚠️ [Not supported, workaround](#populate-existing-objects) |
 | `ObjectCreationHandling` global setting               | ⚠️ [Not supported, workaround](#reuse-rather-than-replace-properties) |
 | Add to collections without setters                    | ⚠️ [Not supported, workaround](#add-to-collections-without-setters) |
+| Snake-case property names                             | ⚠️ [Not supported, workaround](#snake-case-naming-policy)|
 | `PreserveReferencesHandling` global setting           | ❌ [Not supported](#preserve-object-references-and-handle-loops) |
 | `ReferenceLoopHandling` global setting                | ❌ [Not supported](#preserve-object-references-and-handle-loops) |
 | Support for `System.Runtime.Serialization` attributes | ❌ [Not supported](#systemruntimeserialization-attributes) |
@@ -666,6 +669,10 @@ The `Newtonsoft.Json` `ObjectCreationHandling` setting lets you specify that obj
 
 During deserialization, `Newtonsoft.Json` adds objects to a collection even if the property has no setter. <xref:System.Text.Json> ignores properties that don't have setters. Custom converters can provide this functionality.
 
+### Snake case naming policy
+
+The only built-in property naming policy in System.Text.Json is for [camel case](system-text-json-customize-properties.md#use-camel-case-for-all-json-property-names). `Newtonsoft.Json` can convert property names to snake case. A [custom naming policy](system-text-json-customize-properties.md#use-a-custom-json-property-naming-policy) can provide this functionality. For more information, see GitHub issue [dotnet/runtime #782](https://github.com/dotnet/runtime/issues/782).
+
 ### System.Runtime.Serialization attributes
 
 <xref:System.Text.Json> doesn't support attributes from the `System.Runtime.Serialization` namespace, such as `DataMemberAttribute` and `IgnoreDataMemberAttribute`.
@@ -922,5 +929,7 @@ For more information, see the [dotnet/runtime #31068 GitHub issue](https://githu
 * [Use DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
+* [How to use source generation](system-text-json-source-generation.md)
+* [Supported collection types](system-text-json-supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

@@ -151,11 +151,11 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-Quality|--quality <QUALITY>`**
 
-  Downloads the latest build of the specified quality in the channel. The possible values are: `daily`, `signed`, `validated`, `preview`, `GA`. Works only in combination with channel. Not applicable for current and LTS channels and will be ignored if one of those channels is used.
+  Downloads the latest build of the specified quality in the channel. The possible values are: `daily`, `signed`, `validated`, `preview`, `GA`. Works only in combination with `channel`. Not applicable for current and LTS channels and will be ignored if one of those channels is used.
 
-  For SDK, use `channel` in `A.B.Cxx` format: using `quality` together with `channel` in `A.B` format is not supported.
+  For an SDK installation, use `channel` in `A.B.Cxx` format: using `quality` together with `channel` in `A.B` format is not supported.
 
-  The `version` parameter overrides the `channel` parameter when any version other than `latest` is used, so it also overrides the `quality` parameter.
+  The `version` parameter overrides the `channel` and `quality` parameters when any `version` other than `latest` is used.
 
   Available since since the 5.0 release.
 
@@ -221,18 +221,18 @@ The install scripts do not update the registry on Windows. They just download th
   ./dotnet-install.sh --channel LTS
   ```
 
-- Install the latest preview version from the 6.0 channel to the specified location:
+- Install the latest preview version of the 6.0.1xx SDK to the specified location:
 
   Windows:
 
   ```powershell
-  ./dotnet-install.ps1 -Channel 6.0 -Quality preview -InstallDir C:\cli
+  ./dotnet-install.ps1 -Channel 6.0.1xx -Quality preview -InstallDir C:\cli
   ```
 
   macOS/Linux:
 
   ```bash
-  ./dotnet-install.sh --channel 6.0 --quality preview --install-dir ~/cli
+  ./dotnet-install.sh --channel 6.0.1xx --quality preview --install-dir ~/cli
   ```
 
 - Install the 3.0.0 version of the shared runtime:

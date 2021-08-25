@@ -892,7 +892,7 @@ The `Newtonsoft.Json` `WriteRawValue` method writes raw JSON where a value is ex
 
 ::: zone-end
 
-::: zone pivot="dotnet-5-0,dotnet-core-3-0"
+::: zone pivot="dotnet-5-0,dotnet-core-3-1"
 
 The `Newtonsoft.Json` `WriteRawValue` method writes raw JSON where a value is expected. <xref:System.Text.Json> has no direct equivalent, but here's a workaround that ensures only valid JSON is written:
 

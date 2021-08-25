@@ -80,16 +80,28 @@ Use these guidelines to determine which TFM to use in your app:
 
 #### OS version in TFMs
 
-You can also specify an optional OS version at the end of the TFM, for example, `net6.0-ios13.0`, which indicates what APIs are available to your app. (The corresponding .NET SDK will be updated to include support for newer OS versions as they are released.) To gain access to newly released APIs, increment the OS version in the TFM. You can still make your app compatible with earlier OS versions (and add guards around calls to later-version APIs) by adding the `SupportedOSPlatformVersion` element to your project file. The `SupportedOSPlatformVersion` element indicates the minimum OS version required to run your app.
+You can also specify an optional OS version at the end of an OS-specific TFM, for example, `net6.0-ios15.0`, which indicates what APIs are available to your app or library. It does not control the OS version that your app or library supports at runtime. It is used to select the reference assemblies that your project compiles against, and to select assets from NuGet packages. This version may be called the "platform version" or "OS API version" to disambiguate it from the runtime OS version.
 
-For example, the following project file excerpt specifies that iOS 14 APIs are available to the app, but it can run on iOS 13 or later machines.
+When an OS-specific TFM does not specify the platform version explicitly, it has a implied value that can be inferred from the base TFM and platform name. For example, the default platform value for iOS in .NET 6.0 is `15.0`, which means that `net6.0-ios` is shorthand for the canonical `net6.0-ios15.0` TFM. The implied platform version for a newer base TFM may be higher, for example a future `net7.0-ios` TFM could map to `net7.0-ios16.0`. The shorthand form is intended for use in project files only, and is expanded to the canonical form by the .NET SDK's MSBuild targets before being passed to other tools such as NuGet.
+
+The .NET SDK is designed to be able to support newly released APIs for an individual platform without a new version of the base TFM. This enables you to access platform-specific functionality without waiting for a major release of .NET. You can gain access to these newly released APIs by incrementing the platform version in the TFM. For example, if the iOS platform added iOS 15.1 APIs in a .NET 6.0.x SDK update, you could access them by using the TFM `net6.0-ios15.1`.
+
+#### Supporting older OS versions
+
+Although a platform-specific app or library is compiled against APIs from a specific version of that OS, you can make it compatible with earlier OS versions by adding the `SupportedOSPlatformVersion` element to your project file. The `SupportedOSPlatformVersion` element indicates the minimum OS version required to run your app or library. If this minimum runtime OS version is not specified explicitly in the project, it defaults to the platform version from the TFM.
+
+To run correctly on an older OS version, you cannot call APIs that do not exist on that version of the OS. However, you can add guards around calls to newer APIs so they are only called when running on a version of the OS that supports them. This pattern allows you to design your app or library to support running on older OS versions while taking advantage of newer OS functionality when running on newer OS versions.
+
+The `SupportedOSPlatformVersion` value is used by the [platform compatibility analyzers](analyzers/platform-compat-analyzer), which detect and warn about unguarded calls to newer APIs. It may also affect app packaging and platform-specific app build processes, but details of this depend on the specific platform.
+
+Here is an example excerpt of a project file that uses the `TargetFramework` and `SupportedOSPlatformVersion` MSBuild properties to specify that the app or library has access to iOS 15.0 APIs but supports running on iOS 13.0 and above:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0-ios14.0</TargetFramework>
-    <SupportedOSPlatformVersion>13.0</SupportedOSPlatformVersion> (minimum os platform version)
+    <TargetFramework>net6.0-ios15.0</TargetFramework>
+    <SupportedOSPlatformVersion>13.0</SupportedOSPlatformVersion>
   </PropertyGroup>
 
   ...

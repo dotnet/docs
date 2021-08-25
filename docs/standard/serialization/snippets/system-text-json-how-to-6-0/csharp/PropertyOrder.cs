@@ -6,11 +6,15 @@ namespace PropertyOrder
 {
     public class WeatherForecast
     {
-        [JsonPropertyOrder(1)]
+        [JsonPropertyOrder(-5)]
         public DateTime Date { get; set; }
-        public int TemperatureCelsius { get; set; }
-        [JsonPropertyOrder(-1)]
+        public int TemperatureC { get; set; }
+        [JsonPropertyOrder(-2)]
+        public int TemperatureF { get; set; }
+        [JsonPropertyOrder(5)]
         public string Summary { get; set; }
+        [JsonPropertyOrder(2)]
+        public int WindSpeed { get; set; }
     }
 
     public class Program
@@ -20,14 +24,23 @@ namespace PropertyOrder
             var weatherForecast = new WeatherForecast
             {
                 Date = DateTime.Parse("2019-08-01"),
-                TemperatureCelsius = 25,
-                Summary = "Hot"
+                TemperatureC = 25,
+                TemperatureF = 25,
+                Summary = "Hot",
+                WindSpeed = 10
             };
 
-            string jsonString = JsonSerializer.Serialize(weatherForecast);
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            string jsonString = JsonSerializer.Serialize(weatherForecast, options);
             Console.WriteLine(jsonString);
         }
     }
 }
 // output:
-//{"Summary":"Hot","TemperatureCelsius":25,"Date":"2019-08-01T00:00:00"}
+//{
+//  "Date": "2019-08-01T00:00:00",
+//  "TemperatureF": 25,
+//  "TemperatureC": 25,
+//  "WindSpeed": 10,
+//  "Summary": "Hot"
+//}

@@ -1,7 +1,7 @@
 ---
 title: How to customize property names and values with System.Text.Json
 description: "Learn how to customize property names and values when serializing with System.Text.Json in .NET."
-ms.date: 08/23/2021
+ms.date: 08/25/2021
 zone_pivot_groups: dotnet-version
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
@@ -189,7 +189,7 @@ Enum string names can be deserialized as well, as shown in the following example
 
 ## Configure the order of serialized properties
 
-The [`[JsonPropertyOrder]`](xref:System.Text.Json.Serialization.JsonPropertyOrderAttribute) attribute lets you specify the order of properties in the JSON output from serialization. The default value of the `Order` property is zero. Set `Order` to a positive number to position a property after those that have the default value. A negative `Order` positions a property before those that have the default value. Here's an example:
+The [`[JsonPropertyOrder]`](xref:System.Text.Json.Serialization.JsonPropertyOrderAttribute) attribute lets you specify the order of properties in the JSON output from serialization. The default value of the `Order` property is zero. Set `Order` to a positive number to position a property after those that have the default value. A negative `Order` positions a property before those that have the default value. Properties are written in order from the lowest `Order` value to the highest. Here's an example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-6-0/csharp/PropertyOrder.cs":::
 ::: zone-end

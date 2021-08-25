@@ -250,7 +250,7 @@ In between the `<PropertyGroup>` tags, add the following element:
   <EnableDynamicLoading>true</EnableDynamicLoading>
 ```
 
-The `<EnableDynamicLoading>true</EnableDynamicLoading>` prepares the project so that it can be used as a plugin. Among other things, this will copy all of its dependencies to the output of the project. For more details see [`EnableDynamicLoading`](..\project-sdk\msbuild-props.md#enabledynamicloading).
+The `<EnableDynamicLoading>true</EnableDynamicLoading>` prepares the project so that it can be used as a plugin. Among other things, this will copy all of its dependencies to the output of the project. For more details see [`EnableDynamicLoading`](../project-sdk/msbuild-props.md#enabledynamicloading).
 
 In between the `<Project>` tags, add the following elements:
 

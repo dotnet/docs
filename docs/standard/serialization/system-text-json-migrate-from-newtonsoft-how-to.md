@@ -671,7 +671,7 @@ During deserialization, `Newtonsoft.Json` adds objects to a collection even if t
 
 ### Snake case naming policy
 
-The only built-in property naming policy in System.Text.Json is for [camel case](system-text-json-customize-properties.md#use-camel-case-for-all-json-property-names). `Newtonsoft.Json` can also convert property names to snake case. Custom converters can provide this functionality.
+The only built-in property naming policy in System.Text.Json is for [camel case](system-text-json-customize-properties.md#use-camel-case-for-all-json-property-names). `Newtonsoft.Json` can also convert property names to snake case. A custom naming policy that derives from <xref:System.Text.Json.JsonNamingPolicy> can provide this functionality. For more information, see GitHub issue [dotnet/runtime #782](https://github.com/dotnet/runtime/issues/782).
 
 ### System.Runtime.Serialization attributes
 

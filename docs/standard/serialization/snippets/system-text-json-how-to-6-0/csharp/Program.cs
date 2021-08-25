@@ -15,6 +15,8 @@ namespace SystemTextJsonSamples
             SerializeIgnoreCycles.Program.Main();
             Console.WriteLine("\n============================= Callbacks / Notifications\n");
             Callbacks.Program.Main();
+            Console.WriteLine("\n============================= Set property order\n");
+            PropertyOrder.Program.Main();
         }
     }
 }

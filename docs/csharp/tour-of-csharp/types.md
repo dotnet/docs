@@ -1,7 +1,7 @@
 ---
 title: Define types and their members - A tour of C#
 description: The building blocks of programs are types. Learn how to create classes, structs, interfaces, and more in C#.
-ms.date: 08/06/2020
+ms.date: 08/23/2021
 ---
 # Types and members
 
@@ -63,7 +63,7 @@ Classes define types that support inheritance and polymorphism. They enable you 
 
 ## Interfaces
 
-An [***interface***](../fundamentals/types/interfaces.md) defines a contract that can be implemented by classes and structs. An interface can contain methods, properties, events, and indexers. An interface typically doesn't provide implementations of the members it defines—it merely specifies the members that must be supplied by classes or structs that implement the interface.
+An [***interface***](../fundamentals/types/interfaces.md) defines a contract that can be implemented by classes and structs. You define an *interface* to declare capabilities that are shared among distinct types. For example, the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface defines a consistent way to traverse all the items in a collection, such as an array.  An interface can contain methods, properties, events, and indexers. An interface typically doesn't provide implementations of the members it defines—it merely specifies the members that must be supplied by classes or structs that implement the interface.
 
 Interfaces may employ ***multiple inheritance***. In the following example, the interface `IComboBox` inherits from both `ITextBox` and `IListBox`.
 

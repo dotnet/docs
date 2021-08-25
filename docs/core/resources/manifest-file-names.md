@@ -36,6 +36,22 @@ For example, the manifest name for the resource file that's defined in the follo
 <EmbeddedResource Include="X.fr-FR.resx" LogicalName="SomeName.resources" />
 ```
 
+> [!NOTE]
+>
+> - If `LogicalName` is not specified, an `EmbeddedResource` with two dots (`.`) in the file name doesn't work, which means that `GetManifestResourceNames` doesn't return that file.
+>
+>   The following example works correctly:
+>
+>   ```xml
+>   <EmbeddedResource Include="X.resx" />
+>   ```
+>
+>   The following example doesn't work:
+>
+>   ```xml
+>   <EmbeddedResource Include="X.fr-FR.resx" />
+>   ```
+
 ## ManifestResourceName metadata
 
 If a resource file is explicitly included in the project file as an `EmbeddedResource` item with `ManifestResourceName` metadata (and `LogicalName` is absent), the `ManifestResourceName` value, combined with the file extension *.resources*, is used as the manifest file name.

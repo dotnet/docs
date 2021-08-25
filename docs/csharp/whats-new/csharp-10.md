@@ -1,21 +1,22 @@
 ---
 title: What's new in C# 10.0 - C# Guide
 description: Get an overview of the new features available in C# 10.0.
-ms.date: 07/06/2021
+ms.date: 08/24/2021
 ---
 # What's new in C# 10.0
 
 > [!IMPORTANT]
-> This article discusses the features available in C# 10 as of .NET 6 preview 7. Documenting the enhancements for C# 10 is in progress. You can check [this project](https://github.com/dotnet/docs/projects/133) for progress on documentation.
+> This article discusses the features available in C# 10.0 as of .NET 6 preview 7. Documenting the enhancements for C# 10.0 is in progress. You can check [this project](https://github.com/dotnet/docs/projects/133) for progress on documentation.
 
 C# 10.0 adds the following features and enhancements to the C# language (as of .NET 6 Preview 7):
 
-- Allow `const` interpolated strings.
-- Record types can seal `ToString()`.
-- Allow both assignment and declaration in the same deconstruction.
-- Allow `AsyncMethodBuilder` attribute on methods.
-- `global using` directives.
-- File-scoped namespace declaration.
+- [`global using` directives](#global-using-directives)
+- [File-scoped namespace declaration](#file-scoped-namespace-declaration)
+- [Extended property patterns](#extended-property-patterns)
+- [Allow `const` interpolated strings](#constant-interpolated-strings)
+- [Record types can seal `ToString()`](#record-types-can-seal-tostring)
+- [Allow both assignment and declaration in the same deconstruction](#assignment-and-declaration-in-same-deconstruction)
+- [Allow `AsyncMethodBuilder` attribute on methods](#allow-asyncmethodbuilder-attribute-on-methods)
 
 Some of the features you can try are available only when you set your language version to "preview". These features may have more refinements in future previews before .NET 6.0 is released.
 
@@ -36,6 +37,24 @@ namespace MyNamespace;
 ```
 
 This new syntax saves both horizontal and vertical space for the most common `namespace` declarations.
+
+## Extended property patterns
+
+Beginning with C# 10.0, you can reference nested properties or fields within a property pattern. For example, a pattern of the form
+
+```csharp
+{ Prop1.Prop2: pattern }
+```
+
+is valid in C# 10.0 and later and equivalent to
+
+```csharp
+{ Prop1: { Prop2: pattern } }
+```
+
+that is valid in C# 8.0 and later.
+
+For more information, see the [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md) feature proposal note. For more information about a property pattern, see the [Property pattern](../language-reference/operators/patterns.md#property-pattern) section of the [Patterns](../language-reference/operators/patterns.md) article.
 
 ## Constant interpolated strings
 
@@ -77,6 +96,6 @@ int x = 0;
 
 ## Allow AsyncMethodBuilder attribute on methods
 
-In C# 10, you can specify a different async method builder for a single method, in addition to specifying the method builder type for all methods that return a given task-like type. This enables advanced performance tuning scenarios where a given method may benefit from a custom builder.
+In C# 10.0 and later, you can specify a different async method builder for a single method, in addition to specifying the method builder type for all methods that return a given task-like type. This enables advanced performance tuning scenarios where a given method may benefit from a custom builder.
 
 To learn more, see the section on [`AsyncMethodBuilder`](../language-reference/attributes/general.md#asyncmethodbuilder-attribute) in the article on attributes read by the compiler.

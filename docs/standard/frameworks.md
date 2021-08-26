@@ -92,7 +92,7 @@ Although a platform-specific app or library is compiled against APIs from a spec
 
 To run correctly on an older OS version, you cannot call APIs that do not exist on that version of the OS. However, you can add guards around calls to newer APIs so they are only called when running on a version of the OS that supports them. This pattern allows you to design your app or library to support running on older OS versions while taking advantage of newer OS functionality when running on newer OS versions.
 
-The `SupportedOSPlatformVersion` value is used by the [platform compatibility analyzers](analyzers/platform-compat-analyzer), which detect and warn about unguarded calls to newer APIs. It may also affect app packaging and platform-specific app build processes, but details of this depend on the specific platform.
+The `SupportedOSPlatformVersion` value (whether explicit or default) is used by the [platform compatibility analyzers](analyzers/platform-compat-analyzer), which detect and warn about unguarded calls to newer APIs. It is burned into the project's compiled assembly as a [SupportedOSPlatformAttribute](../api/system.runtime.versioning.supportedosplatformattribute) so that the platform compatibility analyzers can detect unguarded calls to that assembly's APIs from projects with a lower `SupportedOSPlatformVersion` value. On some platforms it affects platform-specific app packaging and build processes, which is covered in the documentation for those platforms.
 
 Here is an example excerpt of a project file that uses the `TargetFramework` and `SupportedOSPlatformVersion` MSBuild properties to specify that the app or library has access to iOS 15.0 APIs but supports running on iOS 13.0 and above:
 

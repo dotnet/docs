@@ -4,7 +4,7 @@ description: "Learn how to migrate from Newtonsoft.Json to System.Text.Json. Inc
 author: tdykstra
 ms.author: tdykstra
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 08/06/2021
+ms.date: 08/25/2021
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
   - "JSON serialization"
@@ -15,6 +15,11 @@ ms.topic: how-to
 ---
 
 # How to migrate from Newtonsoft.Json to System.Text.Json
+
+:::zone pivot="dotnet-6-0"
+> [!IMPORTANT]
+> Some information relates to prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+:::zone-end
 
 This article shows how to migrate from [Newtonsoft.Json](https://www.newtonsoft.com/json) to <xref:System.Text.Json>.
 
@@ -63,6 +68,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Support for non-public property setters and getters   | ✔️ [JsonInclude attribute](#non-public-property-setters-and-getters) |
 | `[JsonConstructor]` attribute                         | ✔️ [[JsonConstructor] attribute](#specify-constructor-to-use-when-deserializing) |
 | `ReferenceLoopHandling` global setting                | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
+| Callbacks                                             | ✔️ [Callbacks](#callbacks) |
 | Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
 | Polymorphic serialization                             | ⚠️ [Not supported, workaround, sample](#polymorphic-serialization) |
 | Polymorphic deserialization                           | ⚠️ [Not supported, workaround, sample](#polymorphic-deserialization) |
@@ -71,10 +77,10 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `Required` setting on `[JsonProperty]` attribute        | ⚠️ [Not supported, workaround, sample](#required-properties) |
 | `DefaultContractResolver` to ignore properties       | ⚠️ [Not supported, workaround, sample](#conditionally-ignore-a-property) |
 | `DateTimeZoneHandling`, `DateFormatString` settings   | ⚠️ [Not supported, workaround, sample](#specify-date-format) |
-| Callbacks                                             | ⚠️ [Not supported, workaround, sample](#callbacks) |
 | `JsonConvert.PopulateObject` method                   | ⚠️ [Not supported, workaround](#populate-existing-objects) |
 | `ObjectCreationHandling` global setting               | ⚠️ [Not supported, workaround](#reuse-rather-than-replace-properties) |
 | Add to collections without setters                    | ⚠️ [Not supported, workaround](#add-to-collections-without-setters) |
+| Snake-case property names                             | ⚠️ [Not supported, workaround](#snake-case-naming-policy)|
 | Support for `System.Runtime.Serialization` attributes | ❌ [Not supported](#systemruntimeserialization-attributes) |
 | `MissingMemberHandling` global setting                | ❌ [Not supported](#missingmemberhandling) |
 | Allow property names without quotes                   | ❌ [Not supported](#json-strings-property-names-and-string-values) |
@@ -118,6 +124,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `JsonConvert.PopulateObject` method                   | ⚠️ [Not supported, workaround](#populate-existing-objects) |
 | `ObjectCreationHandling` global setting               | ⚠️ [Not supported, workaround](#reuse-rather-than-replace-properties) |
 | Add to collections without setters                    | ⚠️ [Not supported, workaround](#add-to-collections-without-setters) |
+| Snake-case property names                             | ⚠️ [Not supported, workaround](#snake-case-naming-policy)|
 | `ReferenceLoopHandling` global setting                | ❌ [Not supported](#preserve-object-references-and-handle-loops) |
 | Support for `System.Runtime.Serialization` attributes | ❌ [Not supported](#systemruntimeserialization-attributes) |
 | `MissingMemberHandling` global setting                | ❌ [Not supported](#missingmemberhandling) |
@@ -161,6 +168,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `JsonConvert.PopulateObject` method                   | ⚠️ [Not supported, workaround](#populate-existing-objects) |
 | `ObjectCreationHandling` global setting               | ⚠️ [Not supported, workaround](#reuse-rather-than-replace-properties) |
 | Add to collections without setters                    | ⚠️ [Not supported, workaround](#add-to-collections-without-setters) |
+| Snake-case property names                             | ⚠️ [Not supported, workaround](#snake-case-naming-policy)|
 | `PreserveReferencesHandling` global setting           | ❌ [Not supported](#preserve-object-references-and-handle-loops) |
 | `ReferenceLoopHandling` global setting                | ❌ [Not supported](#preserve-object-references-and-handle-loops) |
 | Support for `System.Runtime.Serialization` attributes | ❌ [Not supported](#systemruntimeserialization-attributes) |
@@ -573,7 +581,12 @@ The following JSON is deserialized without error:
 }
 ```
 
-To make deserialization fail if no `Date` property is in the JSON, implement a custom converter. The following sample converter code throws an exception if the `Date` property isn't set after deserialization is complete:
+To make deserialization fail if no `Date` property is in the JSON, choose one of the following options:
+
+* Implement a custom converter.
+* Implement an [`OnDeserialized` callback (.NET 6 and later)](system-text-json-migrate-from-newtonsoft-how-to.md?pivots=dotnet-6-0#callbacks).
+
+The following sample converter code throws an exception if the `Date` property isn't set after deserialization is complete:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecastRequiredPropertyConverter.cs":::
 
@@ -629,6 +642,24 @@ For more information, see [DateTime and DateTimeOffset support in System.Text.Js
 * OnSerializing (when beginning to serialize an object)
 * OnSerialized (when finished serializing an object)
 
+::: zone pivot="dotnet-6-0"
+
+System.Text.Json exposes the same notifications during serialization and deserialization. To use them, implement one or more of the following interfaces from the <xref:System.Text.Json.Serialization> namespace:
+
+* <xref:System.Text.Json.Serialization.IJsonOnDeserializing>
+* <xref:System.Text.Json.Serialization.IJsonOnDeserialized>
+* <xref:System.Text.Json.Serialization.IJsonOnSerializing>
+* <xref:System.Text.Json.Serialization.IJsonOnSerialized>
+
+Here's an example that checks for a null property and writes messages at start and end of serialization and deserialization:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-6-0/csharp/Callbacks.cs":::
+
+The `OnDeserializing` code doesn't have access to the new POCO instance. To manipulate the new POCO instance at the start of deserialization, put that code in the POCO constructor.
+
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1,dotnet-5-0"
 In <xref:System.Text.Json>, you can simulate callbacks by writing a custom converter. The following example shows a custom converter for a POCO. The converter includes code that displays a message at each point that corresponds to a `Newtonsoft.Json` callback.
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecastCallbacksConverter.cs":::
@@ -641,6 +672,8 @@ If you use a custom converter that follows the preceding sample:
 * Avoid an infinite loop by registering the converter in the options object and not passing in the options object when recursively calling `Serialize` or `Deserialize`.
 
 For more information about custom converters that recursively call `Serialize` or `Deserialize`, see the [Required properties](#required-properties) section earlier in this article.
+
+::: zone-end
 
 ### Non-public property setters and getters
 
@@ -665,6 +698,10 @@ The `Newtonsoft.Json` `ObjectCreationHandling` setting lets you specify that obj
 ### Add to collections without setters
 
 During deserialization, `Newtonsoft.Json` adds objects to a collection even if the property has no setter. <xref:System.Text.Json> ignores properties that don't have setters. Custom converters can provide this functionality.
+
+### Snake case naming policy
+
+The only built-in property naming policy in System.Text.Json is for [camel case](system-text-json-customize-properties.md#use-camel-case-for-all-json-property-names). `Newtonsoft.Json` can convert property names to snake case. A [custom naming policy](system-text-json-customize-properties.md#use-a-custom-json-property-naming-policy) can provide this functionality. For more information, see GitHub issue [dotnet/runtime #782](https://github.com/dotnet/runtime/issues/782).
 
 ### System.Runtime.Serialization attributes
 

@@ -201,7 +201,7 @@ Consider the following example directory, and each file within its corresponding
 ```
 
 > [!TIP]
-> Some file extensions are in uppercase, while others are in lowercase. By default, <xref:System.StringComparer.OrdinalIgnoreCase?displayProperty=nameWithType> is used. To specify different string comparison behavior, use the <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.%23ctor(System.StringComparison)?displayProperty=nameWithType> constructor. 
+> Some file extensions are in uppercase, while others are in lowercase. By default, <xref:System.StringComparer.OrdinalIgnoreCase?displayProperty=nameWithType> is used. To specify different string comparison behavior, use the <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.%23ctor(System.StringComparison)?displayProperty=nameWithType> constructor.
 
 To get all of the markdown files, where the file extension is either *.md* or *.mtext*, regardless of character case:
 

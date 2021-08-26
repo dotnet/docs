@@ -3,7 +3,7 @@ title: High-performance logging in .NET
 author: IEvangelist
 description: Learn how to use LoggerMessage to create cacheable delegates that require fewer object allocations for high-performance logging scenarios.
 ms.author: dapine
-ms.date: 07/30/2021
+ms.date: 08/26/2021
 ---
 
 # High-performance logging in .NET
@@ -139,6 +139,19 @@ info: WorkerServiceOptions.Example.Worker[1]
       => Processing work, started at: 09/25/2020 14:30:45
       Processing priority item: Priority-Deferred (37bf736c-7a26-4a2a-9e56-e89bcf3b8f35): 'Set process state'
 ```
+
+## Log level guarded optimizations
+
+An additional performance optimization can be made by checking the <xref:Microsoft.Extensions.Logging.LogLevel>, with <xref:Microsoft.Extensions.Logging.ILogger.IsEnabled(Microsoft.Extensions.Logging.LogLevel)?displayProperty=nameWithType> before an invocation to the corresponding `Log*` method. When logging isn't configured for the given `LogLevel`, the following statements are true:
+
+- <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> is not called.
+- An allocation of `object[]` representing the parameters is avoided.
+- Value type boxing is avoided.
+
+For additional information:
+
+- [Micro benchmarks in the .NET runtime](https://github.com/dotnet/runtime/issues/51927#issuecomment-842993859)
+- [Background and motivation for log level checks](https://github.com/dotnet/runtime/issues/45290#issue-752502603)
 
 ## See also
 

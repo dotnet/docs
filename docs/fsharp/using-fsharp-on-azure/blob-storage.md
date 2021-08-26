@@ -2,7 +2,7 @@
 title: Get started with Azure Blob Storage using F#
 description: Store unstructured data in the cloud with Azure Blob Storage.
 author: sylvanc
-ms.date: 09/20/2016
+ms.date: 08/26/2021
 ms.custom: "devx-track-fsharp"
 ---
 # Get started with Azure Blob Storage using F\#

@@ -148,7 +148,7 @@ An additional performance optimization can be made by checking the <xref:Microso
 - An allocation of `object[]` representing the parameters is avoided.
 - Value type boxing is avoided.
 
-For additional information:
+For more information:
 
 - [Micro benchmarks in the .NET runtime](https://github.com/dotnet/runtime/issues/51927#issuecomment-842993859)
 - [Background and motivation for log level checks](https://github.com/dotnet/runtime/issues/45290#issue-752502603)

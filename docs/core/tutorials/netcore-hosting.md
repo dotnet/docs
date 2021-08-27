@@ -27,7 +27,7 @@ Prior to .NET Core 3.0, the only option for hosting the runtime was through the 
 
 ## Create a host using `nethost.h` and `hostfxr.h`
 
-A [sample host](https://github.com/dotnet/samples/tree/main/core/hosting/HostingWithHostFxr) demonstrating the steps outlined in the tutorial below is available in the dotnet/samples GitHub repository. Comments in the sample clearly associate the numbered steps from this tutorial with where they're performed in the sample. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
+A [sample host](https://github.com/dotnet/samples/tree/main/core/hosting) demonstrating the steps outlined in the tutorial below is available in the dotnet/samples GitHub repository. Comments in the sample clearly associate the numbered steps from this tutorial with where they're performed in the sample. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
 
 Keep in mind that the sample host is meant to be used for learning purposes, so it is light on error checking and designed to emphasize readability over efficiency.
 

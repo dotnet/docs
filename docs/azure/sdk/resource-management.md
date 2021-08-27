@@ -228,7 +228,7 @@ If you are not sure if a resource you want to get exists, or you just want to ch
 
 `GetIfExists()` and `GetIfExistsAsync()` return a `Response<T>` where T is null if the specified resource does not exist. On the other hand, `CheckIfExists()` and `CheckIfExistsAsync()` return `Response<bool>` where the bool will be false if the specified resource does not exist.  Both of these methods still give you access to the underlying raw response.
 
-Before these methods were introduced you would need to catch the `RequestFailedException` and inspect the status code for 404.
+In previous versions of packages, you would have to catch the `RequestFailedException` and inspect the status code for 404. With this new API, we hope that this can boost the developer productivity and optimize resource access. .
 
 ```C# Snippet:Readme_OldCheckIfExistsRG
 ArmClient armClient = new ArmClient(new DefaultAzureCredential());

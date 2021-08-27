@@ -179,7 +179,7 @@ Console.WriteLine($"Subnet: {id.Name}");
 
 Performing operations on resources that already exist is a common use case when using the management client libraries. In this scenario you usually have the identifier of the resource you want to work on as a string. Although the new object hierarchy is great for provisioning and working within the scope of a given parent, it is not the most efficient when it comes to this specific scenario.  
 
-Here is an example how you to access an `AvailabilitySet` object and manage it directly with its id: 
+Here is an example how you to access an `AvailabilitySet` object and manage it directly with its id:
 
 ```csharp
 using Azure.Identity;

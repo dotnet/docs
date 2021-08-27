@@ -350,7 +350,7 @@ For more detailed examples, take a look at [samples](https://github.com/Azure/az
 
 ## Troubleshooting
 
-- If you find a bug or have a suggestion, file an issue via [GitHub issues](https://github.com/Azure/azure-sdk-for-net/issues) and make sure you add the "Preview" label to the issue.
+- If you have a bug to report or have a suggestion, file an issue via [GitHub issues](https://github.com/Azure/azure-sdk-for-net/issues) and make sure you add the "Preview" label to the issue.
 - If you need help, check [previous
   questions](https://stackoverflow.com/questions/tagged/azure+.net)
   or ask new ones on StackOverflow using azure and .NET tags.

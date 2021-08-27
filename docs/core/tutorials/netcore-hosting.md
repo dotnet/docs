@@ -21,15 +21,15 @@ You will also need to build a .NET Core component to test the host with, so you 
 
 ## Hosting APIs
 
-Hosting the .NET Core runtime in .NET Core 3.0 and above is done with the `nethost` and `hostfxr` libraries' APIs. These entry points handle the complexity of finding and setting up the runtime for initialization and allow both launching a managed application and calling into a static managed method.
+Hosting the .NET runtime in .NET Core 3.0 and above is done with the `nethost` and `hostfxr` libraries' APIs. These entry points handle the complexity of finding and setting up the runtime for initialization and allow both launching a managed application and calling into a static managed method.
 
-For .NET Core runtime prior to .NET Core 3.0 the only option for hosting the runtime was through the [`coreclrhost.h`](https://github.com/dotnet/runtime/blob/main/src/coreclr/hosts/inc/coreclrhost.h) API. This hosting API is obsolete now and should not be used for hosting .NET Core 3.0 and higher runtimes.
+Prior to .NET Core 3.0, the only option for hosting the runtime was through the [`coreclrhost.h`](https://github.com/dotnet/runtime/blob/main/src/coreclr/hosts/inc/coreclrhost.h) API. This hosting API is obsolete now and should not be used for hosting .NET Core 3.0 and higher runtimes.
 
 ## Create a host using `nethost.h` and `hostfxr.h`
 
-[Sample host](https://github.com/dotnet/samples/tree/main/core/hosting/HostingWithHostFxr) demonstrating the steps outlined in the tutorials below are available in the dotnet/samples GitHub repository. Comments in the samples clearly associate the numbered steps from these tutorials with where they're performed in the sample. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
+A [sample host](https://github.com/dotnet/samples/tree/main/core/hosting/HostingWithHostFxr) demonstrating the steps outlined in the tutorial below is available in the dotnet/samples GitHub repository. Comments in the sample clearly associate the numbered steps from this tutorial with where they're performed in the sample. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
 
-Keep in mind that the sample hosts are meant to be used for learning purposes, so they are light on error checking and are designed to emphasize readability over efficiency.
+Keep in mind that the sample host is meant to be used for learning purposes, so it is light on error checking and designed to emphasize readability over efficiency.
 
 The following steps detail how to use the `nethost` and `hostfxr` libraries to start the .NET Core runtime in a native application and call into a managed static method. The [sample](https://github.com/dotnet/samples/tree/main/core/hosting/HostWithHostFxr) uses the `nethost` header and library installed with the .NET SDK and copies of the [`coreclr_delegates.h`](https://github.com/dotnet/runtime/blob/main/src/native/corehost/coreclr_delegates.h) and [`hostfxr.h`](https://github.com/dotnet/runtime/blob/main/src/native/corehost/hostfxr.h) files from the [dotnet/runtime](https://github.com/dotnet/runtime) repository.
 

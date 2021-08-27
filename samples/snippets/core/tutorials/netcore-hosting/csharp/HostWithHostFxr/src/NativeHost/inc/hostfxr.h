@@ -68,7 +68,7 @@ typedef void(HOSTFXR_CALLTYPE *hostfxr_error_writer_fn)(const char_t *message);
 //
 // If the hostfxr invokes functions in hostpolicy as part of its operation, the error writer
 // will be propagated to hostpolicy for the duration of the call. This means that errors from
-// both hostfxr and hostpolicy will be reporter through the same error writer.
+// both hostfxr and hostpolicy will be reported through the same error writer.
 //
 typedef hostfxr_error_writer_fn(HOSTFXR_CALLTYPE *hostfxr_set_error_writer_fn)(hostfxr_error_writer_fn error_writer);
 

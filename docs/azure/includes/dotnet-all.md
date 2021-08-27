@@ -96,7 +96,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.0.13](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.0.13) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [3.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/3.2.1)<br>NuGet [3.2.1-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/3.2.1-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.OpenApi | NuGet [0.8.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/0.8.1-preview) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ | NuGet [1.0.0-beta](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ/1.0.0-beta) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ/1.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SendGrid | NuGet [3.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SendGrid/3.0.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ServiceBus | NuGet [4.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/4.2.1)<br>NuGet [5.0.0-beta.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/5.0.0-beta.4) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SignalRService | NuGet [1.2.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SignalRService/1.2.2)<br>NuGet [1.2.2-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SignalRService/1.2.2-preview1) |  |  |

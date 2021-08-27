@@ -886,12 +886,24 @@ This approach also works if you need to do custom escaping. `System.Text.Json` d
 
 ### Write raw values
 
+::: zone pivot="dotnet-6-0"
+
+The `Newtonsoft.Json` `WriteRawValue` method writes raw JSON where a value is expected. <xref:System.Text.Json> has a direct equivalent: <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue%2A?displayProperty=nameWithType>. For more information, see [Write raw JSON](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#write-raw-json).
+
+::: zone-end
+
+::: zone pivot="dotnet-5-0,dotnet-core-3-1"
+
 The `Newtonsoft.Json` `WriteRawValue` method writes raw JSON where a value is expected. <xref:System.Text.Json> has no direct equivalent, but here's a workaround that ensures only valid JSON is written:
 
 ```csharp
 using JsonDocument doc = JsonDocument.Parse(string);
 doc.WriteTo(writer);
 ```
+
+There is a <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue%2A?displayProperty=nameWithType> method in .NET 6. For more information, see [Write raw JSON](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#write-raw-json).
+
+::: zone-end
 
 ### Customize character escaping
 

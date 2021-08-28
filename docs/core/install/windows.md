@@ -32,7 +32,8 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 
 | Operating System            | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
 |-----------------------------|---------------|---------------|--------|
-| Windows 11 (Preview) / Windows Server 2022  | ❌           | ✔️            | ✔️    |
+| Windows 11 (Preview)        | ❌           | ✔️            | ✔️    |
+| Windows Server 2022         | ❌           | ✔️            | ✔️    |
 | Windows 10 Version 21H1     | ✔️           | ✔️            | ✔️    |
 | Windows 10 / Windows Server, Version 20H2    | ✔️           | ✔️            | ✔️    |
 | Windows 10 / Windows Server, Version 2004    | ✔️           | ✔️            | ✔️    |

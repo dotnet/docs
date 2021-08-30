@@ -143,7 +143,7 @@ module MyAssembly
 let myFunction x y = x + 2 * y
 ```
 
-One compiled, you can reference it in a file called `Script.fsx` like so:
+Once compiled, you can reference it in a file called `Script.fsx` like so:
 
 ```fsharp
 #r "path/to/MyAssembly.dll"

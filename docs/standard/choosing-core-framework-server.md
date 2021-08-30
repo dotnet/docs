@@ -6,10 +6,12 @@ ms.date: 04/20/2021
 ---
 # .NET Core/5+ vs. .NET Framework for server apps
 
-There are two supported .NET implementations for building server-side apps:
+There are two supported .NET implementations for building server-side apps.
 
-* *.NET Core/5+*, which includes .NET Core, .NET 5, and later versions.
-* *.NET Framework*, legacy versions.
+| Implementation | Included versions |
+| - | - |
+| .NET Core/5+ | .NET Core 1.0 - 3.1, .NET 5, and later versions. |
+| .NET Framework | .NET Framework 1.0 - 4.8 |
 
 Both share many of the same components, and you can share code across the two. However, there are fundamental differences between the two and your choice depends on what you want to accomplish. This article provides guidance on when to use each.
 
@@ -34,7 +36,7 @@ The following sections give a more detailed explanation of the previously stated
 
 ### Cross-platform needs
 
-If your application (web/service) needs to run on multiple platforms (Windows, Linux, and macOS), use .NET Core/5+.
+If your web or service application needs to run on multiple platforms, for example, Windows, Linux, and macOS, use .NET Core/5+.
 
 .NET Core/5+ supports the previously mentioned operating systems as your development workstation. Visual Studio provides an Integrated Development Environment (IDE) for Windows and macOS. You can also use Visual Studio Code, which runs on macOS, Linux, and Windows. Visual Studio Code supports .NET Core/5+, including IntelliSense and debugging. Most third-party editors, such as Sublime, Emacs, and VI, work with .NET Core/5+. These third-party editors get editor IntelliSense using [Omnisharp](https://www.omnisharp.net/). You can also avoid any code editor and directly use the [.NET CLI](../core/tools/index.md), available for all supported platforms.
 

@@ -79,7 +79,7 @@ The following table might help you decide how to set these options.
 > [!TIP]
 > For further details on the services implementation and use of Visual Studio Tools for Docker, read the following articles:
 >
-> Use the Containers tool window to view container details such as the filesystem, logs, environment, ports, and more: <https://docs.microsoft.com/visualstudio/containers/view-and-diagnose-containers>
+> Use the Containers tool window to view container details such as the filesystem, logs, environment, ports, and more: [https://docs.microsoft.com/visualstudio/containers/view-and-diagnose-containers](/visualstudio/containers/view-and-diagnose-containers)
 
 > Debug apps in a local Docker container: <https://docs.microsoft.com/visualstudio/containers/edit-and-refresh>
 >

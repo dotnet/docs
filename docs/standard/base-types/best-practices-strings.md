@@ -296,4 +296,4 @@ The following example instantiates a <xref:System.Collections.Hashtable> object 
 
 ## See also
 
-- [Globalization in .NET apps](../globalization-localization/globalization.md)
+- [Globalization in .NET apps](../../core/extensions/globalization.md)

@@ -3,7 +3,7 @@ title: Install .NET on Windows
 description: Learn about what versions of Windows you can install .NET on.
 author: adegeo
 ms.author: adegeo
-ms.date: 01/06/2021
+ms.date: 08/27/2021
 ---
 
 # Install .NET on Windows
@@ -32,6 +32,9 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 
 | Operating System            | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
 |-----------------------------|---------------|---------------|--------|
+| Windows 11 (Preview)        | ❌           | ✔️            | ✔️    |
+| Windows Server 2022         | ❌           | ✔️            | ✔️    |
+| Windows 10 Version 21H1     | ✔️           | ✔️            | ✔️    |
 | Windows 10 / Windows Server, Version 20H2    | ✔️           | ✔️            | ✔️    |
 | Windows 10 / Windows Server, Version 2004    | ✔️           | ✔️            | ✔️    |
 | Windows 10 / Windows Server, Version 1909    | ✔️           | ✔️            | ✔️    |
@@ -92,6 +95,7 @@ The following Windows versions are supported with .NET 5.0:
 
 | OS                  | Version       | Architectures   |
 |---------------------|---------------|-----------------|
+| Windows 11          | Preview       | x64, ARM64      |
 | Windows 10 Client   | Version 1607+ | x64, x86, ARM64 |
 | Windows Client      | 7 SP1+, 8.1   | x64, x86        |
 | Windows Server      | 2012+         | x64, x86        |
@@ -109,8 +113,9 @@ The following Windows versions are supported with .NET Core 3.1:
 
 | OS                            | Version                        | Architectures   |
 | ----------------------------- | ------------------------------ | --------------- |
-| Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
+| Windows 11                    | Preview                        | x64, ARM64      |
 | Windows 10 Client             | Version 1607+                  | x64, x86        |
+| Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
 | Windows Server                | 2012+                          | x64, x86        |
 | Nano Server                   | Version 1803+                  | x64, ARM32      |
 
@@ -153,6 +158,8 @@ The following Windows versions are supported with .NET Core 2.2:
 For more information about .NET Core 2.2 supported operating systems, distributions, and lifecycle policy, see [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/main/release-notes/2.2/2.2-supported-os.md).
 
 # [.NET Core 2.1](#tab/netcore21)
+
+*.NET Core 2.1 is currently ❌ out of support. For more information, see the [.NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
 
 The following Windows versions are supported with .NET Core 2.1:
 
@@ -301,7 +308,6 @@ Both .NET SDK and .NET Runtime can be manually installed after they've been down
 
 - [.NET 5.0 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
 - [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet/3.1)
-- [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet/2.1)
 - [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)
 
 Create a directory to extract .NET to, for example `%USERPROFILE%\dotnet`. Then, extract the downloaded zip file into that directory.

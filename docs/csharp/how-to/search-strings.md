@@ -59,8 +59,6 @@ The following code uses regular expressions to validate the format of each strin
 | `^`     | matches the beginning of the string |
 | `\d{3}` | matches exactly 3 digit characters  |
 | `-`     | matches the '-' character           |
-| `\d{3}` | matches exactly 3 digit characters  |
-| `-`     | matches the '-' character           |
 | `\d{4}` | matches exactly 4 digit characters  |
 | `$`     | matches the end of the string       |
 

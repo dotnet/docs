@@ -25,7 +25,7 @@ To deal with partial failures, use one of the strategies described here.
   [https://docs.microsoft.com/azure/architecture/framework/resiliency/reliability-patterns](/azure/architecture/framework/resiliency/reliability-patterns)
 
 - **Adding Resilience and Optimizing Performance**\
-  <https://docs.microsoft.com/previous-versions/msp-n-p/jj591574(v=pandp.10)>
+  [https://docs.microsoft.com/previous-versions/msp-n-p/jj591574(v=pandp.10)](/previous-versions/msp-n-p/jj591574(v=pandp.10))
 
 - **Bulkhead.** GitHub repo. Implementation with Polly policy.\
   <https://github.com/App-vNext/Polly/wiki/Bulkhead>

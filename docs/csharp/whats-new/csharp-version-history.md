@@ -121,7 +121,7 @@ But `async` and `await` are the real stars of this release. When these features 
 
 With versions 3.0 and 5.0, C# had added major new features in an object-oriented language. With version 6.0, released with Visual Studio 2015, it would go away from doing a dominant killer feature and instead release many smaller features that made C# programming more productive. Here are some of them:
 
-- [Static imports](../language-reference/keywords/using-static.md)
+- [Static imports](../language-reference/keywords/using-directive.md)
 - [Exception filters](../language-reference/keywords/when.md)
 - [Auto-property initializers](../properties.md)
 - [Expression bodied members](../language-reference/operators/lambda-operator.md#expression-body-definition)

@@ -322,7 +322,7 @@ Now, you'll configure communication between the services using Dapr [service inv
     @{
         ViewData["Title"] = "Home page";
     }
-    
+
     <div class="text-center">
         <h1 class="display-4">Welcome</h1>
         <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
@@ -355,7 +355,7 @@ In the final part of this example, you'll add container support and run the solu
 
     ```yaml
     version: "3.4"
-    
+
     services:
       daprfrontend:
         image: ${DOCKER_REGISTRY-}daprfrontend
@@ -375,7 +375,7 @@ In the final part of this example, you'll add container support and run the solu
     WORKDIR /app
     EXPOSE 80
     EXPOSE 443
-    
+
     FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
     WORKDIR /src
     COPY ["DaprFrontEnd/DaprFrontEnd.csproj", "DaprFrontEnd/"]
@@ -383,10 +383,10 @@ In the final part of this example, you'll add container support and run the solu
     COPY . .
     WORKDIR "/src/DaprFrontEnd"
     RUN dotnet build "DaprFrontEnd.csproj" -c Release -o /app/build
-    
+
     FROM build AS publish
     RUN dotnet publish "DaprFrontEnd.csproj" -c Release -o /app/publish
-    
+
     FROM base AS final
     WORKDIR /app
     COPY --from=publish /app/publish .

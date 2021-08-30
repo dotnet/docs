@@ -1,12 +1,12 @@
 ---
 title: "Breaking change: Blazor server: Disable LongPolling fallback transport"
-description: "Learn about the breaking change in ASP.NET Core 6.0 where LongPolling is not used as a fallback transport utilized when WebSockets aren't available."
+description: "Learn about the breaking change in ASP.NET Core 6.0 where LongPolling is not used as a fallback transport when WebSockets aren't available."
 ms.date: 08/12/2021
 no-loc: [ Blazor, WebSocket, LongPolling ]
 ---
 # Blazor server: Disable long polling fallback transport
 
-*LongPolling* is a fallback transport utilized when WebSockets aren't available. The LongPolling fallback can lead to a degraded user experience, so it has been removed. Both the client and server now support only WebSockets by default.
+Prior to .NET 6, *LongPolling* was a fallback transport utilized when WebSockets weren't available. The LongPolling fallback can lead to a degraded user experience, so it has been removed. Both the client and server now support only WebSockets by default.
 
 ## Version introduced
 
@@ -29,7 +29,7 @@ The following table shows the error message you'll receive for each combination 
 
 ## Reason for change
 
-This change was mode to improve the overall end-user experience by enforcing WebSocket use.
+This change was made to improve the overall end-user experience by enforcing WebSocket use.
 
 ## Recommended action
 

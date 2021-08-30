@@ -168,7 +168,7 @@ After the initial architecture and patterns explanation sections, the next secti
   <https://microservices.io/patterns/apigateway.html>
 
 - **API Gateway pattern** \
-  <https://docs.microsoft.com/azure/architecture/microservices/gateway>
+  [https://docs.microsoft.com/azure/architecture/microservices/gateway](/azure/architecture/microservices/gateway)
 
 - **Aggregation and composition pattern** \
   <https://microservices.io/patterns/data/api-composition.html>

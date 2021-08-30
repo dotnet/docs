@@ -1,9 +1,9 @@
 ---
-title: Docker containers, images, and registries
+title: Learn docker containers, images, and registries
 description: Learn the key role that registries play overall in the Docker way of deploying applications.
 ms.date: 08/06/2020
 ---
-# Docker containers, images, and registries
+# Learn docker containers, images, and registries
 
 When using Docker, you create an app or service and package it and its dependencies into a container image. An image is a static representation of the app or service and its configuration and dependencies.
 

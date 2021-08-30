@@ -4,7 +4,7 @@ description: Learn about run-time settings that configure threading for .NET Cor
 ms.date: 11/27/2019
 ms.topic: reference
 ---
-# Run-time configuration options for threading
+# Runtime configuration options for threading
 
 This article details the settings you can use to configure threading in .NET.
 

@@ -6,10 +6,10 @@ ms.assetid: b2ca1131-0017-4a5f-ab7b-2b0f73589e84
 ---
 # 3351 - ServerMaxPooledConnectionsQuotaReached
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3351|  
 |Keywords|Quota|  
 |Level|Verbose|  

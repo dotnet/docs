@@ -1,9 +1,6 @@
 ﻿namespace FirstPass
 {
     // <SnippetUtilities>
-    using System;
-    using System.Threading.Tasks;
-
     namespace MyNamespace
     {
         public static class Utilities

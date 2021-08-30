@@ -6,10 +6,10 @@ ms.assetid: f4ea4452-28e3-4e66-93c6-eb12ee29bcb1
 ---
 # 1007 - WorkflowApplicationPersisted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1007|  
 |Keywords|WFRuntime|  
 |Level|Information|  

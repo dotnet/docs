@@ -8,8 +8,8 @@ ms.date: 07/13/2021
 Starting with the .NET 6 Preview 7 SDK, the console app template generates the following code:
 
 ```csharp
-Console.WriteLine("Hello, World!");
 // See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World!");
 ```
 
 The new output uses recent C# features that simplify the code you need to write for a program. Traditionally, the console app template generated the following code:

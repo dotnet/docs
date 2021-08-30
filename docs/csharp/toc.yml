@@ -147,7 +147,7 @@ items:
       href: fundamentals/exceptions/how-to-execute-cleanup-code-using-finally.md
 - name: What's new in C#
   items:
-  - name: C# 10.0 (Preview 5)
+  - name: C# 10.0 (Preview 7)
     displayName: what's new
     href: whats-new/csharp-10.md
   - name: C# 9.0
@@ -993,12 +993,6 @@ items:
       items:
       - name: Statement categories
         href: language-reference/keywords/statement-keywords.md
-      - name: Selection Statements
-        items:
-        - name: if-else
-          href: language-reference/keywords/if-else.md
-        - name: switch
-          href: language-reference/keywords/switch.md
       - name: Jump Statements
         items:
         - name: break
@@ -1054,8 +1048,6 @@ items:
           href: language-reference/keywords/using.md
         - name: using Directive
           href: language-reference/keywords/using-directive.md
-        - name: using static Directive
-          href: language-reference/keywords/using-static.md
         - name: using Statement
           href: language-reference/keywords/using-statement.md
       - name: extern alias
@@ -1225,7 +1217,7 @@ items:
       displayName: stack allocation, span, stackalloc operator
     - name: switch expression
       href: language-reference/operators/switch-expression.md
-      displayName: pattern matching, patterns
+      displayName: pattern matching, patterns, when
     - name: true and false operators
       href: language-reference/operators/true-false-operators.md
     - name: with expression
@@ -1238,6 +1230,9 @@ items:
     - name: Iteration statements
       displayName: for, foreach, do, while, loop
       href: language-reference/statements/iteration-statements.md
+    - name: Selection statements
+      displayName: if, else, switch, case, when
+      href: language-reference/statements/selection-statements.md
   - name: Special characters
     items:
     - name: Overview
@@ -1350,7 +1345,7 @@ items:
       href: ../../_csharplang/spec/unsafe-code.md
     - name: Documentation comments
       href: ../../_csharplang/spec/documentation-comments.md
-  - name: C# 7.0 - 9.0 features
+  - name: C# 7.0 - 10.0 features
     items:
     - name: C# 7.0 features
       items:
@@ -1474,3 +1469,33 @@ items:
         href: ../../_csharplang/proposals/csharp-9.0/skip-localsinit.md
       - name: Unconstrained type parameter annotations
         href: ../../_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md
+    - name: C# 10.0 features
+      items:
+      - name: Record structs
+        href: ../../_csharplang/proposals/csharp-10.0/record-structs.md
+      - name: Parameterless struct constructors
+        href: ../../_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md
+      - name: Global using directive
+        href: ../../_csharplang/proposals/csharp-10.0/GlobalUsingDirective.md
+      - name: File scoped namespaces
+        href: ../../_csharplang/proposals/csharp-10.0/file-scoped-namespaces.md
+      - name: Extended property patterns
+        href: ../../_csharplang/proposals/csharp-10.0/extended-property-patterns.md
+      - name: Improved interpolated strings
+        href: ../../_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md
+      - name: Constant interpolated strings
+        href: ../../_csharplang/proposals/csharp-10.0/constant_interpolated_strings.md
+      - name: Lambda improvements
+        href: ../../_csharplang/proposals/csharp-10.0/lambda-improvements.md
+      - name: Lambda attributes
+        href: ../../_csharplang/proposals/csharp-10.0/lambda-attributes.md
+      - name: Caller argument expression
+        href: ../../_csharplang/proposals/csharp-10.0/caller-argument-expression.md
+      - name: "Enhanced #line directives"
+        href: ../../_csharplang/proposals/csharp-10.0/enhanced-line-directives.md
+      - name: Generic attributes
+        href: ../../_csharplang/proposals/csharp-10.0/generic-attributes.md
+      - name: Improved definite assignment analysis
+        href: ../../_csharplang/proposals/csharp-10.0/improved-definite-assignment.md
+      - name: AsyncMethodBuilder override
+        href: ../../_csharplang/proposals/csharp-10.0/async-method-builders.md

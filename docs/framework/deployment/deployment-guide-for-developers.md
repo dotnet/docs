@@ -60,12 +60,12 @@ When you're ready to publish your app to a web server or other centralized locat
 
 .NET Framework is available in two redistributable packages: web installer (bootstrapper) and offline installer (stand-alone redistributable). All .NET Framework downloads are hosted on the [Download .NET Framework page](https://dotnet.microsoft.com/download/dotnet-framework/). The following table compares the two packages:
 
-||Web installer|Offline installer|
-|-|-------------------|-----------------------|
-|Internet connection required?|Yes|No|
-|Size of download|Smaller (includes installer for target platform only)*|Larger*|
-|Language packs|Included**|Must be [installed separately](#chain_langpack), unless you use the package that targets all operating systems|
-|Deployment method|Supports all methods:<br /><br />- [ClickOnce](#clickonce-deployment)<br />- [InstallAware](#installaware-deployment)<br />- [InstallShield](#installshield-deployment)<br />- [Windows Installer XML (WiX)](#wix)<br />- [Manual installation](#installing_manually)<br />- [Custom setup (chaining)](#chaining)|Supports all methods:<br /><br /> - [ClickOnce](#clickonce-deployment)<br />- [InstallAware](#installaware-deployment)<br />- [InstallShield](#installshield-deployment)<br />- [Windows Installer XML (WiX)](#wix)<br />- [Manual installation](#installing_manually)<br />- [Custom setup (chaining)](#chaining)|
+|                                   | Web installer                                          | Offline installer                                                                                              |
+|-----------------------------------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| **Internet connection required?** | Yes                                                    | No                                                                                                             |
+| **Size of download**              | Smaller (includes installer for target platform only)*| Larger*                                                                                                        |
+| **Language packs**                | Included**                                             | Must be [installed separately](#chain_langpack), unless you use the package that targets all operating systems |
+| **Deployment method**             | Supports all methods:<br /><br />- [ClickOnce](#clickonce-deployment)<br />- [InstallAware](#installaware-deployment)<br />- [InstallShield](#installshield-deployment)<br />- [Windows Installer XML (WiX)](#wix)<br />- [Manual installation](#installing_manually)<br />- [Custom setup (chaining)](#chaining) | Supports all methods:<br /><br />- [ClickOnce](#clickonce-deployment)<br />- [InstallAware](#installaware-deployment)<br />- [InstallShield](#installshield-deployment)<br />- [Windows Installer XML (WiX)](#wix)<br />- [Manual installation](#installing_manually)<br />- [Custom setup (chaining)](#chaining)|
 
 \* The offline installer is larger because it contains the components for all the target platforms. When you finish running setup, the Windows operating system caches only the installer that was used. If the offline installer is deleted after the installation, the disk space used is the same as that used by the web installer. If the tool you use (for example, [InstallAware](#installaware-deployment) or [InstallShield](#installshield-deployment)) to create your app's setup program provides a setup file folder that is removed after installation, the offline installer can be automatically deleted by placing it into the setup folder.
 
@@ -226,27 +226,27 @@ The .NET Framework installer writes registry keys when installation is successfu
 > [!IMPORTANT]
 > Check for a value  **greater than or equal to** the release keyword value when attempting to detect whether a specific version is present.
 
-|Version|Value of the Release DWORD|
-|-------------|--------------------------------|
-|.NET Framework 4.8 installed on Windows 10 May 2020 Update and Windows 10 October 2020 Update|528372|
-|.NET Framework 4.8 installed on Windows 10 May 2019 Update and Windows 10 November 2019 Update|528040|
-|.NET Framework 4.8 installed on all OS versions other than the listed Windows 10 Update versions|528049|
-|.NET Framework 4.7.2 installed on Windows 10 April 2018 Update and on Windows Server, version 1803|461808|
-|.NET Framework 4.7.2 installed on all OS versions other than Windows 10 April 2018 Update, and Windows Server, version 1803. This includes Windows 10 October 2018 Update. |461814|
-|.NET Framework 4.7.1 installed on Windows 10 Fall Creators Update and on Windows Server, version 1709|461308|
-|.NET Framework 4.7.1 installed on all OS versions other than Windows 10 Fall Creators Update and Windows Server, version 1709|461310|
-|.NET Framework 4.7 installed on Windows 10 Creators Update|460798|
-|.NET Framework 4.7 installed on all OS versions other than Windows 10 Creators Update|460805|
-|.NET Framework 4.6.2 installed on Windows 10 Anniversary Edition and on Windows Server 2016|394802|
-|.NET Framework 4.6.2 installed on all OS versions other than Windows 10 Anniversary Edition and Windows Server 2016|394806|
-|.NET Framework 4.6.1 installed on Windows 10 November Update|394254|
-|.NET Framework 4.6.1 installed on all OS versions other than Windows 10 November Update|394271|
-|.NET Framework 4.6 installed on Windows 10|393295|
-|.NET Framework 4.6 installed on all OS versions other than Windows 10|393297|
-|.NET Framework 4.5.2|379893|
-|.NET Framework 4.5.1 installed with Windows 8.1 or Windows Server 2012 R2|378675|
-|.NET Framework 4.5.1 installed on Windows 8, Windows 7|378758|
-|.NET Framework 4.5|378389|
+| Version                                                                                                                                                                    | Value of the Release DWORD |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
+| .NET Framework 4.8 installed on Windows 10 May 2020 Update and Windows 10 October 2020 Update                                                                              | 528372                     |
+| .NET Framework 4.8 installed on Windows 10 May 2019 Update and Windows 10 November 2019 Update                                                                             | 528040                     |
+| .NET Framework 4.8 installed on all OS versions other than the listed Windows 10 Update versions                                                                           | 528049                     |
+| .NET Framework 4.7.2 installed on Windows 10 April 2018 Update and on Windows Server, version 1803                                                                         | 461808                     |
+| .NET Framework 4.7.2 installed on all OS versions other than Windows 10 April 2018 Update, and Windows Server, version 1803. This includes Windows 10 October 2018 Update. | 461814                     |
+| .NET Framework 4.7.1 installed on Windows 10 Fall Creators Update and on Windows Server, version 1709                                                                      | 461308                     |
+| .NET Framework 4.7.1 installed on all OS versions other than Windows 10 Fall Creators Update and Windows Server, version 1709                                              | 461310                     |
+| .NET Framework 4.7 installed on Windows 10 Creators Update                                                                                                                 | 460798                     |
+| .NET Framework 4.7 installed on all OS versions other than Windows 10 Creators Update                                                                                      | 460805                     |
+| .NET Framework 4.6.2 installed on Windows 10 Anniversary Edition and on Windows Server 2016                                                                                | 394802                     |
+| .NET Framework 4.6.2 installed on all OS versions other than Windows 10 Anniversary Edition and Windows Server 2016                                                        | 394806                     |
+| .NET Framework 4.6.1 installed on Windows 10 November Update                                                                                                               | 394254                     |
+| .NET Framework 4.6.1 installed on all OS versions other than Windows 10 November Update                                                                                    | 394271                     |
+| .NET Framework 4.6 installed on Windows 10                                                                                                                                 | 393295                     |
+| .NET Framework 4.6 installed on all OS versions other than Windows 10                                                                                                      | 393297                     |
+| .NET Framework 4.5.2                                                                                                                                                       | 379893                     |
+| .NET Framework 4.5.1 installed with Windows 8.1 or Windows Server 2012 R2                                                                                                  | 378675                     |
+| .NET Framework 4.5.1 installed on Windows 8, Windows 7                                                                                                                     | 378758                     |
+| .NET Framework 4.5                                                                                                                                                         | 378389                     |
 
 ### Detect language packs
 
@@ -254,13 +254,13 @@ You can test whether a specific language pack is installed by checking the HKEY_
 
 For example, to detect whether the full Japanese language pack (LCID=1041) is installed, retrieve the following named value from the registry:
 
-| | |
-|-|-|
-| Key | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\1041 |
-| Name | Release |
-| Type | DWORD |
+|           | Value                                                                      |
+|-----------|----------------------------------------------------------------------------|
+| **Key**   | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\1041 |
+| **Entry** | Release                                                                    |
+| **Type**  | DWORD                                                                      |
 
-To determine whether the final release version of a language pack is installed for a particular version of the .NET Framework from 4.5 through 4.7.2, check the value of the RELEASE key DWORD value described in the previous section, [Detecting the .NET Framework](#detect_net).
+To determine whether the final release version of a language pack is installed for a particular version of .NET Framework from 4.5 through 4.7.2, check the value of the RELEASE key DWORD value described in the previous section, [Detecting .NET Framework](#detect_net).
 
 <a name="chain_langpack"></a>
 
@@ -298,14 +298,14 @@ For a complete list of command-line options, see the [Command-Line Options](#com
 
 The following table lists the most common return codes for the .NET Framework redistributable installer. The return codes are the same for all versions of the installer. For links to detailed information, see the next section.
 
-|Return code|Description|
-|-----------------|-----------------|
-|0|Installation completed successfully.|
-|1602|The user canceled installation.|
-|1603|A fatal error occurred during installation.|
-|1641|A restart is required to complete the installation. This message indicates success.|
-|3010|A restart is required to complete the installation. This message indicates success.|
-|5100|The user's computer does not meet system requirements.|
+| Return code | Description                                                                         |
+|-------------|-------------------------------------------------------------------------------------|
+| 0           | Installation completed successfully.                                                |
+| 1602        | The user canceled installation.                                                     |
+| 1603        | A fatal error occurred during installation.                                         |
+| 1641        | A restart is required to complete the installation. This message indicates success. |
+| 3010        | A restart is required to complete the installation. This message indicates success. |
+| 5100        | The user's computer does not meet system requirements.                              |
 
 #### Download error codes
 
@@ -360,31 +360,31 @@ The following table lists options that you can include when you chain the .NET F
 
 The following table lists .NET Framework language packs that are available for .NET Framework 4.5 and later versions.
 
-|LCID|Language – country/region|Culture|
-|----------|--------------------------------|-------------|
-|1025|Arabic - Saudi Arabia|ar|
-|1028|Chinese – Traditional|zh-Hant|
-|1029|Czech|cs|
-|1030|Danish|da|
-|1031|German – Germany|de|
-|1032|Greek|el|
-|1035|Finnish|fi|
-|1036|French – France|fr|
-|1037|Hebrew|he|
-|1038|Hungarian|hu|
-|1040|Italian – Italy|it|
-|1041|Japanese|ja|
-|1042|Korean|ko|
-|1043|Dutch – Netherlands|nl|
-|1044|Norwegian (Bokmål)|no|
-|1045|Polish|pl|
-|1046|Portuguese – Brazil|pt-BR|
-|1049|Russian|ru|
-|1053|Swedish|sv|
-|1055|Turkish|tr|
-|2052|Chinese – Simplified|zh-Hans|
-|2070|Portuguese – Portugal|pt-PT|
-|3082|Spanish - Spain (Modern Sort)|es|
+| LCID | Language – country/region     | Culture |
+|------|-------------------------------|---------|
+| 1025 | Arabic - Saudi Arabia         | ar      |
+| 1028 | Chinese – Traditional         | zh-Hant |
+| 1029 | Czech                         | cs      |
+| 1030 | Danish                        | da      |
+| 1031 | German – Germany              | de      |
+| 1032 | Greek                         | el      |
+| 1035 | Finnish                       | fi      |
+| 1036 | French – France               | fr      |
+| 1037 | Hebrew                        | he      |
+| 1038 | Hungarian                     | hu      |
+| 1040 | Italian – Italy               | it      |
+| 1041 | Japanese                      | ja      |
+| 1042 | Korean                        | ko      |
+| 1043 | Dutch – Netherlands           | nl      |
+| 1044 | Norwegian (Bokmål)            | no      |
+| 1045 | Polish                        | pl      |
+| 1046 | Portuguese – Brazil           | pt-BR   |
+| 1049 | Russian                       | ru      |
+| 1053 | Swedish                       | sv      |
+| 1055 | Turkish                       | tr      |
+| 2052 | Chinese – Simplified          | zh-Hans |
+| 2070 | Portuguese – Portugal         | pt-PT   |
+| 3082 | Spanish - Spain (Modern Sort) | es      |
 
 ## See also
 

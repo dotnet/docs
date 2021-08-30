@@ -1,7 +1,7 @@
 ---
 title: "Top-level statements - programs without Main methods"
 description: Learn about top-level statements in C# 9 and later. You can create programs without the ceremony of a Program class and a Main method.
-ms.date: 05/14/2021
+ms.date: 08/19/2021
 helpviewer_keywords:
   - "C# language, top-level statements"
   - "C# language, Main method"
@@ -10,9 +10,11 @@ helpviewer_keywords:
 
 Starting in C# 9, you don't have to explicitly include a `Main` method in a console application project. Instead, you can use the *top-level statements* feature to minimize the code you have to write. In this case, the compiler generates a class and `Main` method entry point for the application.
 
-Here's a *Program.cs* file that is a complete C# program in C# 9:
+Here's a *Program.cs* file that is a complete C# program in C# 10.0:
 
-:::code language="csharp" source="snippets/top-level-statements-1/Program.cs":::
+```csharp
+Console.WriteLine("Hello World!");
+```
 
 Top-level statements let you write simple programs for small utilities such as Azure Functions and GitHub Actions. They also make it simpler for new C# programmers to get started learning and writing code.
 
@@ -20,7 +22,7 @@ The following sections explain the rules on what you can and can't do with top-l
 
 ## Only one top-level file
 
-An application must have only one entry point, so a project can have only one file with top-level statements. Putting top-level statements in more than one file in a project results in the following compiler error:
+An application must have only one entry point. A project can have only one file with top-level statements. Putting top-level statements in more than one file in a project results in the following compiler error:
 
 > CS8802 Only one compilation unit can have top-level statements.
 
@@ -82,4 +84,4 @@ The compiler generates a method to serve as the program entry point for a projec
 ## C# language specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
-[Top-level statements](~/_csharplang/proposals/csharp-9.0/top-level-statements.md)
+[Feature specification - Top-level statements](~/_csharplang/proposals/csharp-9.0/top-level-statements.md)

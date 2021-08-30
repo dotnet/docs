@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with Docker tutorial
 description: In this tutorial, you'll learn how to containerize a .NET Core application with Docker.
-ms.date: 03/22/2021
+ms.date: 8/23/2021
 ms.topic: tutorial
 ms.custom: "mvc"
 #Customer intent: As a developer, I want to containerize my .NET Core app so that I can deploy it to the cloud.
@@ -222,7 +222,7 @@ counter-image                           latest              e6780479db63        
 mcr.microsoft.com/dotnet/aspnet         5.0                 e6780479db63        4 days ago          190MB
 ```
 
-Notice that the two images share the same **IMAGE ID** value. The value is the same between both images because the only command in the *Dockerfile* was to base the new image on an existing image. Let's add three commands to the *Dockerfile*. Each command creates a new image layer with the final command representing the **counter-image** repository entry points to.
+Notice that the two images share the same **IMAGE ID** value. The value is the same between both images because the only command in the *Dockerfile* was to base the new image on an existing image. Let's add three commands to the *Dockerfile*. Each command (or instruction) creates a new image layer &mdash; the final command represents the resulting **counter-image** repository entry point.
 
 ```dockerfile
 COPY bin/Release/net5.0/publish/ App/

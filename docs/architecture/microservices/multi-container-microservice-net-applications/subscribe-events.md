@@ -295,7 +295,7 @@ Some message processing is inherently idempotent. For example, if a system gener
 ### Additional resources
 
 - **Honoring message idempotency** \
-  <https://docs.microsoft.com/previous-versions/msp-n-p/jj591565(v=pandp.10)#honoring-message-idempotency>
+  [https://docs.microsoft.com/previous-versions/msp-n-p/jj591565(v=pandp.10)#honoring-message-idempotency](/previous-versions/msp-n-p/jj591565(v=pandp.10)#honoring-message-idempotency)
 
 ## Deduplicating integration event messages
 
@@ -328,7 +328,7 @@ If the "redelivered" flag is set, the receiver must take that into account, beca
     <https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html>
 
 - **Communicating Between Bounded Contexts** \
-    <https://docs.microsoft.com/previous-versions/msp-n-p/jj591572(v=pandp.10)>
+    [https://docs.microsoft.com/previous-versions/msp-n-p/jj591572(v=pandp.10)](/previous-versions/msp-n-p/jj591572(v=pandp.10))
 
 - **Eventual Consistency** \
     <https://en.wikipedia.org/wiki/Eventual_consistency>
@@ -343,7 +343,7 @@ If the "redelivered" flag is set, the receiver must take that into account, beca
     <https://microservices.io/patterns/data/event-sourcing.html>
 
 - **Introducing Event Sourcing** \
-    <https://docs.microsoft.com/previous-versions/msp-n-p/jj591559(v=pandp.10)>
+    [https://docs.microsoft.com/previous-versions/msp-n-p/jj591559(v=pandp.10)](/previous-versions/msp-n-p/jj591559(v=pandp.10))
 
 - **Event Store database**. Official site. \
     <https://geteventstore.com/>
@@ -358,10 +358,10 @@ If the "redelivered" flag is set, the receiver must take that into account, beca
     <https://www.quora.com/What-Is-CAP-Theorem-1>
 
 - **Data Consistency Primer** \
-    <https://docs.microsoft.com/previous-versions/msp-n-p/dn589800(v=pandp.10)>
+    [https://docs.microsoft.com/previous-versions/msp-n-p/dn589800(v=pandp.10)](/previous-versions/msp-n-p/dn589800(v=pandp.10))
 
 - **Rick Saling. The CAP Theorem: Why "Everything is Different" with the Cloud and Internet** \
-    <https://docs.microsoft.com/archive/blogs/rickatmicrosoft/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/>
+    [https://docs.microsoft.com/archive/blogs/rickatmicrosoft/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/](/archive/blogs/rickatmicrosoft/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/)
 
 - **Eric Brewer. CAP Twelve Years Later: How the "Rules" Have Changed** \
     <https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed>

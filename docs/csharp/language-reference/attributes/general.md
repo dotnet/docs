@@ -112,23 +112,23 @@ The constructor to the `AsyncMethodBuilder` attribute specifies the type of the 
 * a `Start` method with the following API signature:
 
   ```csharp
-  void Start<TStateMachine>(ref TStateMachine stateMachine) 
+  void Start<TStateMachine>(ref TStateMachine stateMachine)
             where TStateMachine : System.Runtime.CompilerServices.IAsyncStateMachine
   ```
 
 * An `AwaitOnCompleted` method with the following signature:
 
   ```csharp
-  public void AwaitOnCompleted<TAwaiter, TStateMachine>(ref TAwaiter awaiter, ref TStateMachine stateMachine) 
-      where TAwaiter : System.Runtime.CompilerServices.INotifyCompletion 
+  public void AwaitOnCompleted<TAwaiter, TStateMachine>(ref TAwaiter awaiter, ref TStateMachine stateMachine)
+      where TAwaiter : System.Runtime.CompilerServices.INotifyCompletion
       where TStateMachine : System.Runtime.CompilerServices.IAsyncStateMachine
   ```
 
 * An `AwaitUnsafeOnCompleted` method with the following signature:
 
   ```csharp
-        public void AwaitUnsafeOnCompleted<TAwaiter, TStateMachine>(ref TAwaiter awaiter, ref TStateMachine stateMachine) 
-            where TAwaiter : System.Runtime.CompilerServices.ICriticalNotifyCompletion 
+        public void AwaitUnsafeOnCompleted<TAwaiter, TStateMachine>(ref TAwaiter awaiter, ref TStateMachine stateMachine)
+            where TAwaiter : System.Runtime.CompilerServices.ICriticalNotifyCompletion
             where TStateMachine : System.Runtime.CompilerServices.IAsyncStateMachine
   ```
 

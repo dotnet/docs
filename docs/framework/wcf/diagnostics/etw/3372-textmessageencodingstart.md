@@ -6,10 +6,10 @@ ms.assetid: c57e3fe3-b12d-415e-925e-b09590722d0c
 ---
 # 3372 - TextMessageEncodingStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3372|  
 |Keywords|Channel|  
 |Level|Verbose|  

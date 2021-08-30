@@ -615,9 +615,9 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 
 All code style rules that are [configured](../../fundamentals/code-analysis/overview.md#code-style-analysis) to be warnings or errors will execute on build and report violations.
 
-## Run-time configuration properties
+## Runtime configuration properties
 
-You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [Run-time configuration settings](../run-time-config/index.md).
+You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [Runtime configuration settings](../run-time-config/index.md).
 
 - [ConcurrentGarbageCollection](#concurrentgarbagecollection)
 - [InvariantGlobalization](#invariantglobalization)
@@ -849,7 +849,7 @@ For more information, see [Expose .NET components to COM](../native-interop/expo
 
 ### EnableDynamicLoading
 
-The `EnableDynamicLoading` property indicates that an assembly is a dynamically loaded component. The component could be a [COM library](/windows/win32/com/the-component-object-model) or a non-COM library that can be [used from a native host](../tutorials/netcore-hosting.md). Setting this property to `true` has the following effects:
+The `EnableDynamicLoading` property indicates that an assembly is a dynamically loaded component. The component could be a [COM library](/windows/win32/com/the-component-object-model) or a non-COM library that can be [used from a native host](../tutorials/netcore-hosting.md) or [used as a plugin](../tutorials/creating-app-with-plugin-support.md). Setting this property to `true` has the following effects:
 
 - A *.runtimeconfig.json* file is generated.
 - [RollForward](#rollforward) is set to `LatestMinor`.

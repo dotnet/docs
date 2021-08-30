@@ -77,7 +77,7 @@ xsd {file.dll | file.exe} [-outputdir:directory] [/type:typename [...]][/paramet
 
 The following table shows the operations that Xsd.exe performs.
 
-| | |
+| Operation | Description |
 |------------|-----------------|
 |XDR to XSD|Generates an XML schema from an XML-Data-Reduced schema file. XDR is an early XML-based schema format.|
 |XML to XSD|Generates an XML schema from an XML file.|

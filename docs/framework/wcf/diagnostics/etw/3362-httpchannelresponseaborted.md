@@ -6,10 +6,10 @@ ms.assetid: 94bb6f7c-fa87-400c-9f11-75a139f51de4
 ---
 # 3362 - HttpChannelResponseAborted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3362|  
 |Keywords|HTTP|  
 |Level|Warning|  

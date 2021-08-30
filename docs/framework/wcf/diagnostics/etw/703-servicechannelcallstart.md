@@ -6,10 +6,10 @@ ms.assetid: a2595b36-a894-45c3-b722-e945107c0542
 ---
 # 703 - ServiceChannelCallStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|703|  
 |Keywords|ServiceModel|  
 |Level|Information|  

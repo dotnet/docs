@@ -143,7 +143,7 @@ In the DockerFile, you can also instruct Docker to listen to the TCP port that y
 You can specify additional configuration settings in the Dockerfile, depending on the language and framework you're using. For instance, the `ENTRYPOINT` line with `["dotnet", "WebMvcApplication.dll"]` tells Docker to run a .NET application. If you're using the SDK and the .NET CLI (`dotnet CLI`) to build and run the .NET application, this setting would be different. The key point here is that the ENTRYPOINT line and other settings depend on the language and platform you choose for your application.
 
 > [!TIP]
-> For more information about building Docker images for .NET applications, go to <https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images>.
+> For more information about building Docker images for .NET applications, go to [https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images](/dotnet/core/docker/building-net-docker-images).
 >
 > To learn more about building your own images, go to <https://docs.docker.com/engine/tutorials/dockerimages/>.
 
@@ -290,7 +290,7 @@ Visual Studio Code supports debugging Docker if you're using Node.js and other p
 You also can debug .NET or .NET Framework containers in Docker when using Visual Studio for Windows or Mac, as described in the next section.
 
 > [!TIP]
-> To learn more about debugging Node.js Docker containers, see <https://blog.docker.com/2016/07/live-debugging-docker/> and <https://docs.microsoft.com/archive/blogs/user_ed/visual-studio-code-new-features-13-big-debugging-updates-rich-object-hover-conditional-breakpoints-node-js-mono-more>.
+> To learn more about debugging Node.js Docker containers, see <https://blog.docker.com/2016/07/live-debugging-docker/> and [https://docs.microsoft.com/archive/blogs/user_ed/visual-studio-code-new-features-13-big-debugging-updates-rich-object-hover-conditional-breakpoints-node-js-mono-more](/archive/blogs/user_ed/visual-studio-code-new-features-13-big-debugging-updates-rich-object-hover-conditional-breakpoints-node-js-mono-more).
 
 > [!div class="step-by-step"]
 > [Previous](docker-apps-development-environment.md)

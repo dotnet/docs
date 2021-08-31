@@ -27,7 +27,7 @@ In this topic, you will use .NET to read environmental conditions from a sensor.
 > [!IMPORTANT]
 > There are many manufacturers of BME280 breakouts. Most designs are similar, and the manufacturer shouldn't make any difference to the functionality. This tutorial attempts to account for variations. Ensure your BME280 breakout includes an Inter-Integrated Circuit (I2C) interface.
 >
-> Components like the BME280 are generally sold with the pin header unsoldered. If you are not comfortable with soldering, you might want look for a BME280 breakout board with a pre-soldered header or a different connector. While this is a good option, consider that now might be the time to learn how to solder! It's not as hard as it looks. [Here's a guide to get you started](https://learn.adafruit.com/adafruit-guide-excellent-soldering).
+> Components like BME280 breakouts are generally sold with the pin header unsoldered. If you're' not comfortable with soldering, you might want look for a BME280 breakout board with a pre-soldered header or a different connector. Better yet, consider learning how to solder! It's not as hard as you may think. [Here's a guide to get you started](https://learn.adafruit.com/adafruit-guide-excellent-soldering).
 
 [!INCLUDE [prepare-pi-i2c](../includes/prepare-pi-i2c.md)]
 

@@ -104,6 +104,12 @@ The `dotnet workload update` command also downloads advertising manifests. The d
   ```dotnetcli
   dotnet workload install maui
   ```
+  
+- Install the `maui-android` and `maui-ios` workloads:
+  
+  ```dotnetcli
+  dotnet workload install maui-android maui-ios
+  ```
 
 - Download assets needed for the `maui` workload to a cache located in the *workload-cache* directory under the current directory. Then install it from the same cache location:
 

@@ -1,7 +1,7 @@
 ---
 title: dotnet workload install command
 description: The 'dotnet workload install' command installs optional workloads.
-ms.date: 07/20/2021
+ms.date: 08/31/2021
 ---
 # dotnet workload install
 
@@ -18,7 +18,7 @@ dotnet workload install <WORKLOAD_ID>...
     [--configfile <FILE>] [--disable-parallel]
     [--download-to-cache <CACHE>] [--from-cache <CACHE>]
     [--ignore-failed-sources] [--include-previews] [--interactive]
-    [--no-cache] [--sdk-version <VERSION>] [--skip-manifest-update]
+    [--no-cache] [--skip-manifest-update]
     [--source <SOURCE>] [--temp-dir <PATH>] [-v|--verbosity <LEVEL>]
 
 dotnet workload install -?|-h|--help
@@ -86,8 +86,6 @@ The `dotnet workload update` command also downloads advertising manifests. The d
 [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 [!INCLUDE [no-cache](../../../includes/cli-no-cache.md)]
-
-[!INCLUDE [sdk-version](../../../includes/cli-sdk-version.md)]
 
 [!INCLUDE [skip-manifest-update](../../../includes/cli-skip-manifest-update.md)]
 

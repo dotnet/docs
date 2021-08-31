@@ -21,16 +21,25 @@ The Visual Basic compiler can process documentation comments in your code to an 
   
  The compiler processes any tag that is valid XML. The following tags provide commonly used functionality in user documentation.  
   
-||||  
-|---|---|---|  
-|[\<c>](c.md)|[\<code>](code.md)|[\<example>](example.md)|  
-|[\<exception>](exception.md) <sup>1</sup>|[\<include>](include.md) <sup>1</sup>|[\<list>](list.md)|  
-|[\<para>](para.md)|[\<param>](param.md) <sup>1</sup>|[\<paramref>](paramref.md)|  
-|[\<permission>](permission.md) <sup>1</sup>|[\<remarks>](remarks.md)|[\<returns>](returns.md)|  
-|[\<see>](see.md) <sup>1</sup>|[\<seealso>](seealso.md) <sup>1</sup>|[\<summary>](summary.md)|  
-|[\<typeparam>](typeparam.md) <sup>1</sup>|[\<value>](value.md)||  
+- [\<c>](c.md)
+- [\<code>](code.md)
+- [\<example>](example.md)
+- [\<exception>](exception.md) <sup>1</sup>
+- [\<include>](include.md) <sup>1</sup>
+- [\<list>](list.md)
+- [\<para>](para.md)
+- [\<param>](param.md) <sup>1</sup>
+- [\<paramref>](paramref.md)
+- [\<permission>](permission.md) <sup>1</sup>
+- [\<remarks>](remarks.md)
+- [\<returns>](returns.md)
+- [\<see>](see.md) <sup>1</sup>
+- [\<seealso>](seealso.md) <sup>1</sup>
+- [\<summary>](summary.md)
+- [\<typeparam>](typeparam.md) <sup>1</sup>
+- [\<value>](value.md)
   
- (<sup>1</sup> The compiler verifies syntax.)  
+(<sup>1</sup> The compiler verifies syntax.)  
   
 > [!NOTE]
 > If you want angle brackets to appear in the text of a documentation comment, use `&lt;` and `&gt;`. For example, the string `"&lt;text in angle brackets&gt;"` will appear as `<text in angle brackets>`.  

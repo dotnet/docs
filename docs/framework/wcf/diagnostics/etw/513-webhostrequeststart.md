@@ -6,10 +6,10 @@ ms.assetid: d664cf1e-f114-4441-8c59-65b98ea498e9
 ---
 # 513 - WebHostRequestStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|513|  
 |Keywords|WebHost|  
 |Level|Information|  

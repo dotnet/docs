@@ -1,7 +1,7 @@
 ---
 title: "How to serialize and deserialize JSON using C# - .NET"
 description: "Learn how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. Includes sample code."
-ms.date: 01/19/2021
+ms.date: 08/04/2021
 ms.custom: contperf-fy21q2
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
@@ -189,12 +189,16 @@ To deserialize from a file by using asynchronous code, call the <xref:System.Tex
 > [!TIP]
 > If you have JSON that you want to deserialize, and you don't have the class to deserialize it into, you have options other than manually creating the class that you need:
 >
-> 1. Use [JsonDocument and Utf8JsonReader](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md) directly.
-> 1. Use Visual Studio 2019 to automatically generate the class you need:
->    1. Copy the JSON that you need to deserialize.
->    1. Create a class file and delete the template code.
->    1. Choose **Edit** > **Paste Special** > **Paste JSON as Classes**.
->    The result is a class that you can use for your deserialization target.
+> * Deserialize into a [JSON DOM (document object model)](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md) and extract what you need from the DOM.
+>
+>   The DOM lets you navigate to a subsection of a JSON payload and deserialize a single value, a custom type, or an array. For information about the <xref:System.Text.Json.Nodes.JsonNode> DOM in .NET 6, see [Deserialize subsections of a JSON payload](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#deserialize-subsections-of-a-json-payload). For information about the <xref:System.Text.Json.JsonDocument> DOM, see [How to search a JsonDocument and JsonElement for sub-elements](system-text-json-migrate-from-newtonsoft-how-to.md#how-to-search-a-jsondocument-and-jsonelement-for-sub-elements).
+>
+> * Use the [Utf8JsonReader](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md#use-utf8jsonreader) directly.
+> * Use Visual Studio 2019 to automatically generate the class you need:
+>   * Copy the JSON that you need to deserialize.
+>   * Create a class file and delete the template code.
+>   * Choose **Edit** > **Paste Special** > **Paste JSON as Classes**.
+>   The result is a class that you can use for your deserialization target.
 
 ## Deserialize from UTF-8
 
@@ -299,6 +303,7 @@ Extension methods on `HttpClient` and `HttpContent` are not available in System.
 * [Use DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
-* [Supported collection types in System.Text.Json](system-text-json-supported-collection-types.md)
+* [How to use source generation](system-text-json-source-generation.md)
+* [Supported collection types](system-text-json-supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

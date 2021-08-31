@@ -6,10 +6,10 @@ ms.assetid: b3805218-4865-42d8-976a-cbbd4ff6fcc8
 ---
 # 4814 - EndpointDiscoverabilityDisabled
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4814|  
 |Keywords|Discovery|  
 |Level|Information|  

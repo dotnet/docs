@@ -117,7 +117,7 @@ In most cases, you don't need to take any action. However, for apps that have pr
 
 - If you must support `Encoding.GetEncoding("utf-7", ...)`:
 
-  You can re-enable support for this via a compatibility switch. This compatibility switch can be specified in the application's *.csproj* file or in a [run-time configuration file](../../../run-time-config/index.md), as shown in the following examples.
+  You can re-enable support for this via a compatibility switch. This compatibility switch can be specified in the application's *.csproj* file or in a [runtime configuration file](../../../run-time-config/index.md), as shown in the following examples.
 
   In the application's *.csproj* file:
 

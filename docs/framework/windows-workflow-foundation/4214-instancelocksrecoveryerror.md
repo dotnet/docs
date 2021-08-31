@@ -6,10 +6,10 @@ ms.assetid: d28fb2d5-bf15-4648-8d20-8141ad16f04b
 ---
 # 4214 - InstanceLocksRecoveryError
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4214|  
 |Keywords|WFInstanceStore|  
 |Level|Error|  

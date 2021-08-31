@@ -80,6 +80,12 @@ landingContent:
   # Card
   - title: Get started with .NET Core
     linkLists:
+      - linkListType: overview
+        links:
+          - text: Port from .NET Framework to .NET Core
+            url: ../core/porting/index.md
+          - text: Upgrade Assistant
+            url: ../core/porting/upgrade-assistant-overview.md
       - linkListType: video
         links:
           - text: "Tutorial: Hello World in 10 minutes"
@@ -96,16 +102,8 @@ landingContent:
         links:
           - text: App publishing
             url: ../core/deploying/index.md
-
-  # Card
-  - title: Migrate from .NET Framework
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Port from .NET Framework to .NET Core
-            url: ../core/porting/index.md
-          - text: Upgrade Assistant
-            url: ../core/porting/upgrade-assistant-overview.md
+          - text: Publish .NET apps with GitHub Actions
+            url: ../devops/dotnet-publish-github-action.md
 
   # Card
   - title: Use .NET Core from the command line
@@ -130,6 +128,42 @@ landingContent:
             url: ../core/tools/dotnet-publish.md
 
   # Card
+  - title: Runtime libraries
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Runtime libraries overview
+            url: ../standard/runtime-libraries-overview.md
+      - linkListType: concept
+        links:
+          - text: Dependency injection in .NET
+            url: ../core/extensions/dependency-injection.md
+          - text: Configuration in .NET
+            url: ../core/extensions/configuration.md
+          - text: Logging in .NET
+            url: ../core/extensions/logging.md
+          - text: .NET generic host
+            url: ../core/extensions/generic-host.md
+          - text: Worker services in .NET
+            url: ../core/extensions/workers.md
+          - text: Caching in .NET
+            url: ../core/extensions/caching.md
+          - text: HTTP with .NET
+            url: ../core/extensions/http-client.md
+          - text: Localization in .NET
+            url: ../core/extensions/localization.md
+          - text: File globbing in .NET
+            url: ../core/extensions/file-globbing.md
+      - linkListType: tutorial
+        links:
+          - text: Implement a custom configuration provider
+            url: ../core/extensions/custom-configuration-provider.md
+          - text: Compile-time logging source generation
+            url: ../core/extensions/logger-message-generator.md
+          - text: Create a Windows Service using BackgroundService
+            url: ../core/extensions/windows-service.md
+
+  # Card
   - title: Unit test with .NET Core
     linkLists:
       - linkListType: overview
@@ -148,7 +182,6 @@ landingContent:
         links:
           - text: Best practices for writing unit tests 
             url: ../core/testing/unit-testing-best-practices.md
-
 
   # Card
   - title: Serialize data

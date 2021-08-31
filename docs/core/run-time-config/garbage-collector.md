@@ -4,7 +4,7 @@ description: Learn about run-time settings for configuring how the garbage colle
 ms.date: 07/10/2020
 ms.topic: reference
 ---
-# Run-time configuration options for garbage collection
+# Runtime configuration options for garbage collection
 
 This page contains information about garbage collector (GC) settings that can be changed at run time. If you're trying to achieve peak performance of a running app, consider using these settings. However, the defaults provide optimum performance for most applications in typical situations.
 
@@ -37,7 +37,7 @@ Use the following settings to select flavors of garbage collection:
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.Server` | `false` - workstation<br/>`true` - server | .NET Core 1.0 |
 | **MSBuild property** | `ServerGarbageCollection` | `false` - workstation<br/>`true` - server | .NET Core 1.0 |
-| **Environment variable** | `COMPLUS_gcServer` | `0` - workstation<br/>`1` - server | .NET Core 1.0 |
+| **Environment variable** | `COMPlus_gcServer` | `0` - workstation<br/>`1` - server | .NET Core 1.0 |
 | **Environment variable** | `DOTNET_gcServer` | `0` - workstation<br/>`1` - server | .NET 6 |
 | **app.config for .NET Framework** | [GCServer](../../framework/configure-apps/file-schema/runtime/gcserver-element.md) | `false` - workstation<br/>`true` - server |  |
 
@@ -77,7 +77,7 @@ Project file:
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.Concurrent` | `true` - background GC<br/>`false` - non-concurrent GC | .NET Core 1.0 |
 | **MSBuild property** | `ConcurrentGarbageCollection` | `true` - background GC<br/>`false` - non-concurrent GC | .NET Core 1.0 |
-| **Environment variable** | `COMPLUS_gcConcurrent` | `1` - background GC<br/>`0` - non-concurrent GC | .NET Core 1.0 |
+| **Environment variable** | `COMPlus_gcConcurrent` | `1` - background GC<br/>`0` - non-concurrent GC | .NET Core 1.0 |
 | **Environment variable** | `DOTNET_gcConcurrent` | `1` - background GC<br/>`0` - non-concurrent GC | .NET 6 |
 | **app.config for .NET Framework** | [gcConcurrent](../../framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) | `true` - background GC<br/>`false` - non-concurrent GC |  |
 
@@ -136,7 +136,7 @@ For more information about some of these settings, see the [Middle ground betwee
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.HeapCount` | *decimal value* | .NET Core 3.0 |
-| **Environment variable** | `COMPLUS_GCHeapCount` | *hexadecimal value* | .NET Core 3.0 |
+| **Environment variable** | `COMPlus_GCHeapCount` | *hexadecimal value* | .NET Core 3.0 |
 | **Environment variable** | `DOTNET_GCHeapCount` | *hexadecimal value* | .NET 6 |
 | **app.config for .NET Framework** | [GCHeapCount](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md) | *decimal value* | .NET Framework 4.6.2 |
 
@@ -165,7 +165,7 @@ Example:
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.HeapAffinitizeMask` | *decimal value* | .NET Core 3.0 |
-| **Environment variable** | `COMPLUS_GCHeapAffinitizeMask` | *hexadecimal value* | .NET Core 3.0 |
+| **Environment variable** | `COMPlus_GCHeapAffinitizeMask` | *hexadecimal value* | .NET Core 3.0 |
 | **Environment variable** | `DOTNET_GCHeapAffinitizeMask` | *hexadecimal value* | .NET 6 |
 | **app.config for .NET Framework** | [GCHeapAffinitizeMask](../../framework/configure-apps/file-schema/runtime/gcheapaffinitizemask-element.md) | *decimal value* | .NET Framework 4.6.2 |
 
@@ -193,7 +193,7 @@ Example:
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.GCHeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:70" | .NET Core 3.0 |
-| **Environment variable** | `COMPLUS_GCHeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:70" | .NET Core 3.0 |
+| **Environment variable** | `COMPlus_GCHeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:70" | .NET Core 3.0 |
 | **Environment variable** | `DOTNET_GCHeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:70" | .NET 6 |
 
 Example:
@@ -221,7 +221,7 @@ Example:
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.CpuGroup` | `0` - disabled<br/>`1` - enabled | .NET 5 |
-| **Environment variable** | `COMPLUS_GCCpuGroup` | `0` - disabled<br/>`1` - enabled | .NET Core 1.0 |
+| **Environment variable** | `COMPlus_GCCpuGroup` | `0` - disabled<br/>`1` - enabled | .NET Core 1.0 |
 | **Environment variable** | `DOTNET_GCCpuGroup` | `0` - disabled<br/>`1` - enabled | .NET 6 |
 | **app.config for .NET Framework** | [GCCpuGroup](../../framework/configure-apps/file-schema/runtime/gccpugroup-element.md) | `false` - disabled<br/>`true` - enabled |  |
 
@@ -237,7 +237,7 @@ Example:
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.NoAffinitize` | `false` - affinitize<br/>`true` - don't affinitize | .NET Core 3.0 |
-| **Environment variable** | `COMPLUS_GCNoAffinitize` | `0` - affinitize<br/>`1` - don't affinitize | .NET Core 3.0 |
+| **Environment variable** | `COMPlus_GCNoAffinitize` | `0` - affinitize<br/>`1` - don't affinitize | .NET Core 3.0 |
 | **Environment variable** | `DOTNET_GCNoAffinitize` | `0` - affinitize<br/>`1` - don't affinitize | .NET 6 |
 | **app.config for .NET Framework** | [GCNoAffinitize](../../framework/configure-apps/file-schema/runtime/gcnoaffinitize-element.md) | `false` - affinitize<br/>`true` - don't affinitize | .NET Framework 4.6.2 |
 
@@ -266,7 +266,7 @@ Example:
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.HeapHardLimit` | *decimal value* | .NET Core 3.0 |
-| **Environment variable** | `COMPLUS_GCHeapHardLimit` | *hexadecimal value* | .NET Core 3.0 |
+| **Environment variable** | `COMPlus_GCHeapHardLimit` | *hexadecimal value* | .NET Core 3.0 |
 | **Environment variable** | `DOTNET_GCHeapHardLimit` | *hexadecimal value* | .NET 6 |
 
 Example:
@@ -299,7 +299,7 @@ Example:
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.HeapHardLimitPercent` | *decimal value* | .NET Core 3.0 |
-| **Environment variable** | `COMPLUS_GCHeapHardLimitPercent` | *hexadecimal value* | .NET Core 3.0 |
+| **Environment variable** | `COMPlus_GCHeapHardLimitPercent` | *hexadecimal value* | .NET Core 3.0 |
 | **Environment variable** | `DOTNET_GCHeapHardLimitPercent` | *hexadecimal value* | .NET 6 |
 
 Example:
@@ -327,19 +327,19 @@ You can specify the GC's allowable heap usage on a per-object-heap basis. The di
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.HeapHardLimitSOH` | *decimal value* | .NET 5 |
-| **Environment variable** | `COMPLUS_GCHeapHardLimitSOH` | *hexadecimal value* | .NET 5 |
+| **Environment variable** | `COMPlus_GCHeapHardLimitSOH` | *hexadecimal value* | .NET 5 |
 | **Environment variable** | `DOTNET_GCHeapHardLimitSOH` | *hexadecimal value* | .NET 6 |
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.HeapHardLimitLOH` | *decimal value* | .NET 5 |
-| **Environment variable** | `COMPLUS_GCHeapHardLimitLOH` | *hexadecimal value* | .NET 5 |
+| **Environment variable** | `COMPlus_GCHeapHardLimitLOH` | *hexadecimal value* | .NET 5 |
 | **Environment variable** | `DOTNET_GCHeapHardLimitLOH` | *hexadecimal value* | .NET 6 |
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.HeapHardLimitPOH` | *decimal value* | .NET 5 |
-| **Environment variable** | `COMPLUS_GCHeapHardLimitPOH` | *hexadecimal value* | .NET 5 |
+| **Environment variable** | `COMPlus_GCHeapHardLimitPOH` | *hexadecimal value* | .NET 5 |
 | **Environment variable** | `DOTNET_GCHeapHardLimitPOH` | *hexadecimal value* | .NET 6 |
 
 > [!TIP]
@@ -357,19 +357,19 @@ You can specify the GC's allowable heap usage on a per-object-heap basis. The di
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.HeapHardLimitSOHPercent` | *decimal value* | .NET 5 |
-| **Environment variable** | `COMPLUS_GCHeapHardLimitSOHPercent` | *hexadecimal value* | .NET 5 |
+| **Environment variable** | `COMPlus_GCHeapHardLimitSOHPercent` | *hexadecimal value* | .NET 5 |
 | **Environment variable** | `DOTNET_GCHeapHardLimitSOHPercent` | *hexadecimal value* | .NET 6 |
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.HeapHardLimitLOHPercent` | *decimal value* | .NET 5 |
-| **Environment variable** | `COMPLUS_GCHeapHardLimitLOHPercent` | *hexadecimal value* | .NET 5 |
+| **Environment variable** | `COMPlus_GCHeapHardLimitLOHPercent` | *hexadecimal value* | .NET 5 |
 | **Environment variable** | `DOTNET_GCHeapHardLimitLOHPercent` | *hexadecimal value* | .NET 6 |
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.HeapHardLimitPOHPercent` | *decimal value* | .NET 5 |
-| **Environment variable** | `COMPLUS_GCHeapHardLimitPOHPercent` | *hexadecimal value* | .NET 5 |
+| **Environment variable** | `COMPlus_GCHeapHardLimitPOHPercent` | *hexadecimal value* | .NET 5 |
 | **Environment variable** | `DOTNET_GCHeapHardLimitPOHPercent` | *hexadecimal value* | .NET 6 |
 
 > [!TIP]
@@ -387,7 +387,7 @@ The high memory load threshold can be adjusted by the `DOTNET_GCHighMemPercent` 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.HighMemoryPercent` | *decimal value* | .NET 5 |
-| **Environment variable** | `COMPLUS_GCHighMemPercent` | *hexadecimal value* | .NET Core 3.0<br/>.NET Framework 4.7.2 |
+| **Environment variable** | `COMPlus_GCHighMemPercent` | *hexadecimal value* | .NET Core 3.0<br/>.NET Framework 4.7.2 |
 | **Environment variable** | `DOTNET_GCHighMemPercent` | *hexadecimal value* | .NET 6 |
 
 > [!TIP]
@@ -402,7 +402,7 @@ The high memory load threshold can be adjusted by the `DOTNET_GCHighMemPercent` 
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.RetainVM` | `false` - release to OS<br/>`true` - put on standby | .NET Core 1.0 |
 | **MSBuild property** | `RetainVMGarbageCollection` | `false` - release to OS<br/>`true` - put on standby | .NET Core 1.0 |
-| **Environment variable** | `COMPLUS_GCRetainVM` | `0` - release to OS<br/>`1` - put on standby | .NET Core 1.0 |
+| **Environment variable** | `COMPlus_GCRetainVM` | `0` - release to OS<br/>`1` - put on standby | .NET Core 1.0 |
 | **Environment variable** | `DOTNET_GCRetainVM` | `0` - release to OS<br/>`1` - put on standby | .NET 6 |
 
 #### Examples
@@ -440,7 +440,7 @@ Project file:
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | N/A | N/A | N/A |
-| **Environment variable** | `COMPLUS_GCLargePages` | `0` - disabled<br/>`1` - enabled | .NET Core 3.0 |
+| **Environment variable** | `COMPlus_GCLargePages` | `0` - disabled<br/>`1` - enabled | .NET Core 3.0 |
 | **Environment variable** | `DOTNET_GCLargePages` | `0` - disabled<br/>`1` - enabled | .NET 6 |
 
 ## Allow large objects
@@ -452,7 +452,7 @@ Project file:
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | N/A | N/A | N/A |
-| **Environment variable** | `COMPLUS_gcAllowVeryLargeObjects` | `1` - enabled<br/> `0` - disabled | .NET Core 1.0 |
+| **Environment variable** | `COMPlus_gcAllowVeryLargeObjects` | `1` - enabled<br/> `0` - disabled | .NET Core 1.0 |
 | **Environment variable** | `DOTNET_gcAllowVeryLargeObjects` | `1` - enabled<br/> `0` - disabled | .NET 6 |
 | **app.config for .NET Framework** | [gcAllowVeryLargeObjects](../../framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md) | `1` - enabled<br/> `0` - disabled | .NET Framework 4.5 |
 
@@ -465,7 +465,7 @@ Project file:
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.LOHThreshold` | *decimal value* | .NET Core 1.0 |
-| **Environment variable** | `COMPLUS_GCLOHThreshold` | *hexadecimal value* | .NET Core 1.0 |
+| **Environment variable** | `COMPlus_GCLOHThreshold` | *hexadecimal value* | .NET Core 1.0 |
 | **Environment variable** | `DOTNET_GCLOHThreshold` | *hexadecimal value* | .NET 6 |
 | **app.config for .NET Framework** | [GCLOHThreshold](../../framework/configure-apps/file-schema/runtime/gclohthreshold-element.md) | *decimal value* | .NET Framework 4.8 |
 
@@ -492,5 +492,5 @@ Example:
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | N/A | N/A | N/A |
-| **Environment variable** | `COMPLUS_GCName` | *string_path* | .NET Core 2.0 |
+| **Environment variable** | `COMPlus_GCName` | *string_path* | .NET Core 2.0 |
 | **Environment variable** | `DOTNET_GCName` | *string_path* | .NET 6 |

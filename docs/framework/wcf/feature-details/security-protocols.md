@@ -10,23 +10,23 @@ ms.assetid: 57ffcbea-807c-4e43-a41c-44b3db8ed2af
 
 The Web Services Security Protocols provide Web services security mechanisms that cover all existing enterprise messaging security requirements. This section describes the Windows Communication Foundation (WCF) details (implemented in the <xref:System.ServiceModel.Channels.SecurityBindingElement>) for the following Web services security protocols.  
   
-|Specification/Document|Link|  
-|-|-|  
-|WSS: SOAP Message Security 1.0|<http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0.pdf>|  
-|WSS: Username Token Profile 1.0|<http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0.pdf>|  
-|WSS: X509 Token Profile 1.0|<http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0.pdf>|  
-|WSS: SAML 1.1 Token Profile 1.0|<http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.0.pdf>|  
-|WSS: SOAP Message Security 1.1|<http://www.oasis-open.org/committees/download.php/16790/wss-v1.1-spec-os-SOAPMessageSecurity.pdf>|  
-|WSS Username Token Profile 1.1|<http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0.pdf>|  
-|WSS: X.509 Token Profile 1.1|<http://www.oasis-open.org/committees/download.php/16785/wss-v1.1-spec-os-x509TokenProfile.pdf>|  
-|WSS: Kerberos Token Profile 1.1|<http://www.oasis-open.org/committees/download.php/16788/wss-v1.1-spec-os-KerberosTokenProfile.pdf>|  
-|WSS: SAML 1.1 Token Profile 1.1|<http://www.oasis-open.org/committees/download.php/16768/wss-v1.1-spec-os-SAMLTokenProfile.pdf>|  
-|WS-Secure Conversation 1.3|<http://docs.oasis-open.org/ws-sx/ws-secureconversation/200512/ws-secureconversation-1.3-os.pdf>|  
-|WS-Trust 1.3|<http://docs.oasis-open.org/ws-sx/ws-trust/200512/ws-trust-1.3-os.pdf>|  
-|Application Note:<br /><br /> Using WS-Trust for TLS Handshake|To be published|  
-|Application Note:<br /><br /> Using WS-Trust for SPNEGO|To be published|  
-|Application Note:<br /><br /> Web Services Addressing Endpoint References And Identity|To be published|  
-|WS-SecurityPolicy 1.2 (2007/04)|<http://www.oasis-open.org/committees/download.php/23821/ws-securitypolicy-1.2-spec-cs.pdf>|  
+| Specification/Document                                                                 | Link                                                                                                |
+| -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| WSS: SOAP Message Security 1.0                                                         | <http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0.pdf>             |
+| WSS: Username Token Profile 1.0                                                        | <http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0.pdf>            |
+| WSS: X509 Token Profile 1.0                                                            | <http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0.pdf>                |
+| WSS: SAML 1.1 Token Profile 1.0                                                        | <http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.0.pdf>                               |
+| WSS: SOAP Message Security 1.1                                                         | <http://www.oasis-open.org/committees/download.php/16790/wss-v1.1-spec-os-SOAPMessageSecurity.pdf>  |
+| WSS Username Token Profile 1.1                                                         | <http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0.pdf>            |
+| WSS: X.509 Token Profile 1.1                                                           | <http://www.oasis-open.org/committees/download.php/16785/wss-v1.1-spec-os-x509TokenProfile.pdf>     |
+| WSS: Kerberos Token Profile 1.1                                                        | <http://www.oasis-open.org/committees/download.php/16788/wss-v1.1-spec-os-KerberosTokenProfile.pdf> |
+| WSS: SAML 1.1 Token Profile 1.1                                                        | <http://www.oasis-open.org/committees/download.php/16768/wss-v1.1-spec-os-SAMLTokenProfile.pdf>     |
+| WS-Secure Conversation 1.3                                                             | <http://docs.oasis-open.org/ws-sx/ws-secureconversation/200512/ws-secureconversation-1.3-os.pdf>    |
+| WS-Trust 1.3                                                                           | <http://docs.oasis-open.org/ws-sx/ws-trust/200512/ws-trust-1.3-os.pdf>                              |
+| Application Note:<br /><br /> Using WS-Trust for TLS Handshake                         | To be published                                                                                     |
+| Application Note:<br /><br /> Using WS-Trust for SPNEGO                                | To be published                                                                                     |
+| Application Note:<br /><br /> Web Services Addressing Endpoint References And Identity | To be published                                                                                     |
+| WS-SecurityPolicy 1.2 (2007/04)                                                        | <http://www.oasis-open.org/committees/download.php/23821/ws-securitypolicy-1.2-spec-cs.pdf>         |
   
  WCF, version 1, provides 17 authentication modes that can be used as the basis for Web services security configuration. Each mode is optimized for a common set of deployment requirements, such as:  
   
@@ -36,25 +36,25 @@ The Web Services Security Protocols provide Web services security mechanisms tha
   
 - Message exchange patterns.  
   
-|Authentication Mode|Client Authentication|Server Authentication|Mode|  
-|-------------------------|---------------------------|---------------------------|----------|  
-|UserNameOverTransport|User name/password|X509|Transport|  
-|CertificateOverTransport|X509|X509|Transport|  
-|KerberosOverTransport|Windows|X509|Transport|  
-|IssuedTokenOverTransport|Federated|X509|Transport|  
-|SspiNegotiatedOverTransport|Windows Sspi Negotiated|Windows Sspi Negotiated|Transport|  
-|AnonymousForCertificate|None|X509|Message|  
-|UserNameForCertificate|User name/password|X509|Message|  
-|MutualCertificate|X509|X509|Message|  
-|MutualCertificateDuplex|X509|X509|Message|  
-|IssuedTokenForCertificate|Federated|X509|Message|  
-|Kerberos|Windows|Windows|Message|  
-|IssuedToken|Federated|Federated|Message|  
-|SspiNegotiated|Windows Sspi Negotiated|Windows Sspi Negotiated|Message|  
-|AnonymousForSslNegotiated|None|X509, TLS-Nego|Message|  
-|UserNameForSslNegotiated|User name/password|X509, TLS-Nego|Message|  
-|MutualSslNegotiated|X509|X509, TLS-Nego|Message|  
-|IssuedTokenForSslNegotiated|Federated|X509, TLS-Nego|Message|  
+| Authentication Mode         | Client Authentication   | Server Authentication   | Mode      |
+| --------------------------- | ----------------------- | ----------------------- | --------- |
+| UserNameOverTransport       | User name/password      | X509                    | Transport |
+| CertificateOverTransport    | X509                    | X509                    | Transport |
+| KerberosOverTransport       | Windows                 | X509                    | Transport |
+| IssuedTokenOverTransport    | Federated               | X509                    | Transport |
+| SspiNegotiatedOverTransport | Windows Sspi Negotiated | Windows Sspi Negotiated | Transport |
+| AnonymousForCertificate     | None                    | X509                    | Message   |
+| UserNameForCertificate      | User name/password      | X509                    | Message   |
+| MutualCertificate           | X509                    | X509                    | Message   |
+| MutualCertificateDuplex     | X509                    | X509                    | Message   |
+| IssuedTokenForCertificate   | Federated               | X509                    | Message   |
+| Kerberos                    | Windows                 | Windows                 | Message   |
+| IssuedToken                 | Federated               | Federated               | Message   |
+| SspiNegotiated              | Windows Sspi Negotiated | Windows Sspi Negotiated | Message   |
+| AnonymousForSslNegotiated   | None                    | X509, TLS-Nego          | Message   |
+| UserNameForSslNegotiated    | User name/password      | X509, TLS-Nego          | Message   |
+| MutualSslNegotiated         | X509                    | X509, TLS-Nego          | Message   |
+| IssuedTokenForSslNegotiated | Federated               | X509, TLS-Nego          | Message   |
   
  Endpoints using such authentication modes can express their security requirements using WS-SecurityPolicy (WS-SP). This document describes the structure of security header and infrastructure messages for each authentication mode and provides examples of policies and messages.  
   
@@ -64,20 +64,20 @@ The Web Services Security Protocols provide Web services security mechanisms tha
   
  The following prefixes and namespaces are used in this document.  
   
-|Prefix|Namespace|  
-|------------|---------------|  
-|s|`http://www.w3.org/2003/05/soap-envelope`|  
-|sp|`http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702`|  
-|a|`http://www.w3.org/2005/08/addressing`|  
-|wsse|TBD – OASIS WSS 1.0 URI|  
-|wsse11|TBD – OASIS WSS 1.1 URI|  
-|wsu|`http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd`|  
-|ds|TBD – W3C XMLDSig URI|  
-|wst|TBD – WS-Trust 2005/02 URI|  
-|wssc|TBD – WS-SecureConversation 2005/02 URI|  
-|wsaw|`http://www.w3.org/2006/05/addressing/wsdl`|  
-|wsp|`http://schemas.xmlsoap.org/ws/2004/09/policy`|  
-|mssp|`http://schemas.microsoft.com/ws/2005/07/securitypolicy`|  
+| Prefix | Namespace                                                                            |
+| ------ | ------------------------------------------------------------------------------------ |
+| s      | `http://www.w3.org/2003/05/soap-envelope`                                            |
+| sp     | `http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702`                          |
+| a      | `http://www.w3.org/2005/08/addressing`                                               |
+| wsse   | TBD – OASIS WSS 1.0 URI                                                              |
+| wsse11 | TBD – OASIS WSS 1.1 URI                                                              |
+| wsu    | `http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd` |
+| ds     | TBD – W3C XMLDSig URI                                                                |
+| wst    | TBD – WS-Trust 2005/02 URI                                                           |
+| wssc   | TBD – WS-SecureConversation 2005/02 URI                                              |
+| wsaw   | `http://www.w3.org/2006/05/addressing/wsdl`                                          |
+| wsp    | `http://schemas.xmlsoap.org/ws/2004/09/policy`                                       |
+| mssp   | `http://schemas.microsoft.com/ws/2005/07/securitypolicy`                             |
   
 ## 1. Token Profiles  
 
@@ -165,12 +165,12 @@ The Web Services Security Protocols provide Web services security mechanisms tha
 
  Each authentication mode describes a certain layout for the security header. Elements within the security header are semi-ordered. To define the order of security header child elements, WS-Security Policy defines the following security header layout modes:  
   
-|||  
-|-|-|  
-|Strict|Items are added to the security header following the numbered layout rules described in Security Policy section 7.7.1 according to a general principle of "declare before use".|  
-|Lax|Items are added to the security header in any order that conforms to WSS: SOAP Message Security.|  
-|LaxTimestampFirst|Same as Lax except that the first item in the security header must be a wsse:Timestamp|  
-|LaxTimestampLast|Same as lax except that the last item in the security header must be a wsse:Timestamp|  
+| Layout mode       | Element order                                                                                                                                                                   |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Strict            | Items are added to the security header following the numbered layout rules described in Security Policy section 7.7.1 according to a general principle of "declare before use". |
+| Lax               | Items are added to the security header in any order that conforms to WSS: SOAP Message Security.                                                                                |
+| LaxTimestampFirst | Same as Lax except that the first item in the security header must be a wsse:Timestamp.                                                                                         |
+| LaxTimestampLast  | Same as Lax except that the last item in the security header must be a wsse:Timestamp.                                                                                          |
   
  WCF supports all four modes for security header layout. Security header structure and message examples for authentication modes below follow the "Strict" mode.  
   
@@ -182,7 +182,7 @@ The Web Services Security Protocols provide Web services security mechanisms tha
 
  WCF provides five authentication modes that use secure transport to protect messages; UserNameOverTransport, CertificateOverTransport, KerberosOverTransport, IssuedTokenOverTransport and SspiNegotiatedOverTransport.  
   
- These authentication modes are constructed using the transport binding described in SecurityPolicy. For the UserNameOverTransport authentication mode the UsernameToken is a signed supporting token. For the other authentication modes the token appears as a signed endorsing token. Appendix C.1.2 and C.1.3 of SecurityPolicy describe the security header layout in detail. The following example security headers show the Strict layout for a given authentication mode.  
+ These authentication modes are constructed using the transport binding described in SecurityPolicy. For the UserNameOverTransport authentication mode the UsernameToken is a signed supporting token. For the other authentication modes the token appears as a signed endorsing token. Appendix C.1.2 and C.1.3 of SecurityPolicy describe the security header layout in detail. The following example security headers show the Strict layout for a given authentication mode.
   
  The value of the "Derived Keys" property for the tokens in all cases is "false".  
   

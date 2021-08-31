@@ -22,6 +22,8 @@ In this article, you will learn about console log formatters. The sample source 
   - Update configuration via <xref:Microsoft.Extensions.Options.IOptionsMonitor%601>
   - Enable custom color formatting
 
+[!INCLUDE [logging-samples-browser](includes/logging-samples-browser.md)]
+
 ## Register formatter
 
 The [`Console` logging provider](logging-providers.md#console) has several predefined formatters, and exposes the ability to author your own custom formatter. To register any of the available formatters, use the corresponding `Add{Type}Console` extension method:

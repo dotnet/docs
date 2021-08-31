@@ -6,10 +6,10 @@ ms.assetid: 41f0d433-487a-4e48-b397-d8d7b6b64b50
 ---
 # 5017 - GenXmlSerializableStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5017|  
 |Keywords|Serialization|  
 |Level|Verbose|  

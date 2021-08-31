@@ -17,7 +17,7 @@ ms.assetid: ae1a0610-90b9-4877-8eb6-4e30bc5e00cf
 
 The default date and time formatting methods, such as <xref:System.DateTime.ToString?displayProperty=nameWithType>, include the hours, minutes, and seconds of a time value but exclude its milliseconds component. This topic shows how to include a date and time's millisecond component in formatted date and time strings.  
   
-### To display the millisecond component of a DateTime value  
+## To display the millisecond component of a DateTime value  
   
 1. If you are working with the string representation of a date, convert it to a <xref:System.DateTime> or a <xref:System.DateTimeOffset> value by using the static <xref:System.DateTime.Parse%28System.String%29?displayProperty=nameWithType> or <xref:System.DateTimeOffset.Parse%28System.String%29?displayProperty=nameWithType> method.  
   
@@ -43,7 +43,11 @@ The default date and time formatting methods, such as <xref:System.DateTime.ToSt
  [!code-vb[Formatting.HowTo.Millisecond#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.Millisecond/vb/Millisecond.vb#3)]  
   
 > [!NOTE]
-> It is possible to display very small fractional units of a second, such as ten thousandths of a second or hundred-thousandths of a second. However, these values may not be meaningful. The precision of date and time values depends on the resolution of the system clock. On Windows NT 3.5 and later, and Windows Vista operating systems, the clock's resolution is approximately 10-15 milliseconds.  
+> It is possible to display very small fractional units of a second, such as ten thousandths of a second or hundred-thousandths of a second. However, these values may not be meaningful. The precision of a date and time value depends on the resolution of the operating system clock. For more information, see the API your operating system uses:
+>
+> - Windows 7: [GetSystemTimeAsFileTime](/windows/win32/api/sysinfoapi/nf-sysinfoapi-GetSystemTimeAsFileTime)
+> - Windows 8 and above: [GetSystemTimePreciseAsFileTime](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemtimepreciseasfiletime)
+> - Linux and macOS: [clock_gettime](https://linux.die.net/man/3/clock_gettime)
   
 ## See also
 

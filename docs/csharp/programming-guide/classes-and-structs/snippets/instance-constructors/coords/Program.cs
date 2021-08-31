@@ -24,7 +24,7 @@ namespace CoordsWithTwoArgumentsConstructorAndToString
     {
         public int x, y;
 
-        // Default constructor.
+        // Parameterless constructor.
         public Coords()
         {
             x = 0;
@@ -32,7 +32,7 @@ namespace CoordsWithTwoArgumentsConstructorAndToString
         }
 
         //<Snippet2>
-        // A constructor with two arguments.
+        // A constructor with two parameters.
         public Coords(int x, int y)
         {
             this.x = x;
@@ -40,7 +40,6 @@ namespace CoordsWithTwoArgumentsConstructorAndToString
         }
         //</Snippet2>
 
-        // Override the ToString method.
         public override string ToString()
         {
             return $"({x},{y})";
@@ -56,7 +55,6 @@ namespace CoordsWithTwoArgumentsConstructorAndToString
             var p2 = new Coords(5, 3);
             //</Snippet3>
 
-            // Display the results using the overriden ToString method.
             Console.WriteLine($"Coords #1 at {p1}");
             Console.WriteLine($"Coords #2 at {p2}");
             Console.ReadKey();

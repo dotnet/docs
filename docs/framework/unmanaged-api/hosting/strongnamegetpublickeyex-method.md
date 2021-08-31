@@ -68,9 +68,7 @@ HRESULT StrongNameGetPublicKey (
   
 ## Remarks  
 
- The public key is contained in a [PublicKeyBlob](../strong-naming/publickeyblob-structure.md) structure.  
-  
-## Remarks  
+ The public key is contained in a [PublicKeyBlob](../strong-naming/publickeyblob-structure.md) structure.
 
  The following table shows the set of accepted values for the `uHashAlgId` parameter.  
   

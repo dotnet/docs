@@ -25,6 +25,8 @@ items:
         href: 6.0.md
       - name: ASP.NET Core
         items:
+        - name: AddDataAnnotationsValidation method made obsolete
+          href: aspnet-core/6.0/adddataannotationsvalidation-obsolete.md
         - name: Assemblies removed from shared framework
           href: aspnet-core/6.0/assemblies-removed-from-shared-framework.md
         - name: "Blazor: Parameter name changed in RequestImageFileAsync method"
@@ -33,6 +35,8 @@ items:
           href: aspnet-core/6.0/blazor-eventargstype-property-replaced.md
         - name: "Blazor: Byte-array interop"
           href: aspnet-core/6.0/byte-array-interop.md
+        - name: "Blazor server: Disable long-polling fallback"
+          href: aspnet-core/6.0/blazor-long-polling-fallback.md
         - name: ClientCertificate doesn't trigger renegotiation
           href: aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md
         - name: "Kestrel: Log message attributes changed"
@@ -83,6 +87,8 @@ items:
           href: core-libraries/6.0/partial-byte-reads-in-streams.md
         - name: Standard numeric format parsing precision
           href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
+        - name: System.Drawing.Common only supported on Windows
+          href: core-libraries/6.0/system-drawing-common-windows-only.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
       - name: Globalization
@@ -101,6 +107,8 @@ items:
         items:
         - name: -p option for `dotnet run` is deprecated
           href: sdk/6.0/deprecate-p-option-dotnet-run.md
+        - name: C# code in templates not supported by earlier versions
+          href: sdk/6.0/csharp-template-code.md
         - name: Generate apphost for macOS
           href: sdk/6.0/apphost-generated-for-macos.md
         - name: Generate error for duplicate files in publish output
@@ -109,6 +117,8 @@ items:
           href: sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md
         - name: Implicit namespaces in C# projects
           href: sdk/6.0/implicit-namespaces.md
+        - name: OutputType not automatically set to WinExe
+          href: sdk/6.0/outputtype-not-set-automatically.md
       - name: Windows Forms
         items:
         - name: APIs throw ArgumentNullException
@@ -127,8 +137,6 @@ items:
         href: 5.0.md
       - name: ASP.NET Core
         items:
-        - name: AddDataAnnotationsValidation method made obsolete
-          href: aspnet-core/6.0/adddataannotationsvalidation-obsolete.md
         - name: ASP.NET Core apps deserialize quoted numbers
           href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
         - name: AzureAD.UI and AzureADB2C.UI APIs obsolete
@@ -337,6 +345,8 @@ items:
           href: sdk/5.0/publishdepsfilepath-behavior-change.md
         - name: TargetFramework change from netcoreapp to net
           href: sdk/5.0/targetframework-name-change.md
+        - name: Use WindowsSdkPackageVersion for Windows SDK
+          href: sdk/5.0/override-windows-sdk-package-version.md
       - name: Security
         items:
         - name: Code access security APIs are obsolete
@@ -409,6 +419,8 @@ items:
           href: aspnet-core/6.0/blazor-eventargstype-property-replaced.md
         - name: "Blazor: Byte-array interop"
           href: aspnet-core/6.0/byte-array-interop.md
+        - name: "Blazor server: Disable long-polling fallback"
+          href: aspnet-core/6.0/blazor-long-polling-fallback.md
         - name: ClientCertificate doesn't trigger renegotiation
           href: aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md
         - name: "Kestrel: Log message attributes changed"
@@ -557,6 +569,8 @@ items:
           href: core-libraries/6.0/partial-byte-reads-in-streams.md
         - name: Standard numeric format parsing precision
           href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
+        - name: System.Drawing.Common only supported on Windows
+          href: core-libraries/6.0/system-drawing-common-windows-only.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
       - name: .NET 5
@@ -701,6 +715,8 @@ items:
         items:
         - name: -p option for `dotnet run` is deprecated
           href: sdk/6.0/deprecate-p-option-dotnet-run.md
+        - name: C# code in templates not supported by earlier versions
+          href: sdk/6.0/csharp-template-code.md
         - name: Generate apphost for macOS
           href: sdk/6.0/apphost-generated-for-macos.md
         - name: Generate error for duplicate files in publish output
@@ -709,6 +725,8 @@ items:
           href: sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md
         - name: Implicit namespaces in C# projects
           href: sdk/6.0/implicit-namespaces.md
+        - name: OutputType not automatically set to WinExe
+          href: sdk/6.0/outputtype-not-set-automatically.md
       - name: .NET 5
         items:
         - name: Directory.Packages.props files imported by default
@@ -723,6 +741,8 @@ items:
           href: sdk/5.0/publishdepsfilepath-behavior-change.md
         - name: TargetFramework change from netcoreapp to net
           href: sdk/5.0/targetframework-name-change.md
+        - name: Use WindowsSdkPackageVersion for Windows SDK
+          href: sdk/5.0/override-windows-sdk-package-version.md
         - name: WinForms and WPF apps use Microsoft.NET.Sdk
           href: sdk/5.0/sdk-and-target-framework-change.md
       - name: .NET Core 2.1 - 3.1
@@ -739,6 +759,10 @@ items:
           href: core-libraries/5.0/utf-7-code-paths-obsolete.md
     - name: Serialization
       items:
+      - name: .NET 6
+        items:
+        - name: JsonNode no longer supports C# `dynamic`
+          href: serialization/6.0/jsonnode-dynamic-type.md
       - name: .NET 5
         items:
         - name: BinaryFormatter.Deserialize rewraps exceptions

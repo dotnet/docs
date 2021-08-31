@@ -1,6 +1,6 @@
 ---
 title: Build ASP.NET Core applications deployed as Linux containers into AKS/Kubernetes clusters
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Learn about creating ASP.NET Core applications deployed as Linux containers into AKS/Kubernetes clusters
 ms.date: 01/06/2021
 ---
 

@@ -66,13 +66,13 @@ Unless the block contains a loop, the statements run only once. You can nest dif
 >
 > If you're using a `With` block only to initialize the properties or fields of an object that you've just instantiated, consider using an object initializer instead.
 
-## Example
+## Example 1
 
 In the following example, each `With` block executes a series of statements on a single object.
 
 [!code-vb[VbVbalrWithStatement#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrwithstatement/vb/mainwindow.xaml.vb#2)]
 
-## Example
+## Example 2
 
 The following example nests `With…End With` statements. Within the nested `With` statement, the syntax refers to the inner object.
 

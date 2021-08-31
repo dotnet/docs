@@ -7,7 +7,7 @@ ms.date: 07/23/2021
 
 This breaking change affects *globalization-invariant mode* in two ways:
 
-- Previously, .NET allowed any culture to be created in globalization-invariant mode, as long as the culture name conformed to [BCP-47](https://tools.ietf.org/search/bcp47). However, [the invariant culture](/dotnet/api/system.globalization.cultureinfo?view=net-5.0#invariant-neutral-and-specific-cultures) data was used instead of the real culture data. Starting in .NET 6, an exception is thrown if you create any culture other than the invariant culture in globalization-invariant mode.
+- Previously, .NET allowed any culture to be created in globalization-invariant mode, as long as the culture name conformed to [BCP-47](https://tools.ietf.org/rfc/bcp/bcp47.txt). However, [the invariant culture](/dotnet/api/system.globalization.cultureinfo?view=net-5.0#invariant-neutral-and-specific-cultures&preserve-view=false) data was used instead of the real culture data. Starting in .NET 6, an exception is thrown if you create any culture other than the invariant culture in globalization-invariant mode.
 - Previously, globalization-invariant mode only supported case mapping for ASCII characters. Starting in .NET 6, globalization-invariant mode provides full case-mapping support for all Unicode-defined characters. Case mapping is used in operations such as string comparisons, string searches, and upper or lower casing strings.
 
 [Globalization-invariant mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md) is used for apps that don't required any globalization support. That is, the app runs without access to culture-specific data and behavior. Globalization-invariant mode is enabled by default on some Docker containers, for example, Alpine containers.
@@ -46,7 +46,7 @@ The full case-mapping support was introduced for better usability and experience
 
 ## Recommended action
 
-In most cases, no action is needed. However, if you desire the previous culture-creation behavior, you can set a run-time configuration option to allow creation of any culture in globalization-invariant mode. For more information, see [Predefined cultures](../../../run-time-config/globalization.md#predefined-cultures).
+In most cases, no action is needed. However, if you desire the previous culture-creation behavior, you can set a runtime configuration option to allow creation of any culture in globalization-invariant mode. For more information, see [Predefined cultures](../../../run-time-config/globalization.md#predefined-cultures).
 
 ## Affected APIs
 
@@ -59,4 +59,4 @@ In most cases, no action is needed. However, if you desire the previous culture-
 ## See also
 
 - [.NET globalization invariant mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md)
-- [Invariant, neutral, and specific cultures](/dotnet/api/system.globalization.cultureinfo?view=net-5.0#invariant-neutral-and-specific-cultures)
+- [Invariant, neutral, and specific cultures](/dotnet/api/system.globalization.cultureinfo?view=net-5.0#invariant-neutral-and-specific-cultures&preserve-view=false)

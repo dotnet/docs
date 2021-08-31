@@ -3,7 +3,7 @@ title: Create a Queue Service
 description: Learn how to create a queue service subclass of BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/26/2021
+ms.date: 08/30/2021
 ms.topic: tutorial
 ---
 
@@ -18,6 +18,8 @@ In this tutorial, you learn how to:
 > - Create a queue service.
 > - Delegate work to a task queue.
 > - Register a console key-listener from <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime> events.
+
+[!INCLUDE [workers-samples-browser](includes/workers-samples-browser.md)]
 
 ## Prerequisites
 

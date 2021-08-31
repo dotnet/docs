@@ -6,10 +6,10 @@ ms.assetid: 95423f9d-d29a-460e-bcd8-096e80af5bd0
 ---
 # 1028 - CompleteTransactionContextWorkItem
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1028|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

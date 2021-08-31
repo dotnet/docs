@@ -42,10 +42,10 @@ Having SQL Server running as a container is not just useful for a demo where you
 ### Additional resources
 
 - **Run the SQL Server Docker image on Linux, Mac, or Windows** \
-  <https://docs.microsoft.com/sql/linux/sql-server-linux-setup-docker>
+  [https://docs.microsoft.com/sql/linux/sql-server-linux-setup-docker](/sql/linux/sql-server-linux-setup-docker)
 
 - **Connect and query SQL Server on Linux with sqlcmd** \
-  <https://docs.microsoft.com/sql/linux/sql-server-linux-connect-and-query-sqlcmd>
+  [https://docs.microsoft.com/sql/linux/sql-server-linux-connect-and-query-sqlcmd](/sql/linux/sql-server-linux-connect-and-query-sqlcmd)
 
 ## Seeding with test data on Web application startup
 

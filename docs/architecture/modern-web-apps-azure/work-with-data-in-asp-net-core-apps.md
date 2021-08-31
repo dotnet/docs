@@ -267,9 +267,9 @@ The first DbContext is the \_catalogContext and the second DbContext is within t
 > ### References – Entity Framework Core
 >
 > - **EF Core Docs**
->   <https://docs.microsoft.com/ef/>
+>   [https://docs.microsoft.com/ef/](/ef/)
 > - **EF Core: Related Data**
->   <https://docs.microsoft.com/ef/core/querying/related-data>
+>   [https://docs.microsoft.com/ef/core/querying/related-data](/ef/core/querying/related-data)
 > - **Avoid Lazy Loading Entities in ASPNET Applications**
 >   <https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications>
 
@@ -350,7 +350,7 @@ The Azure Cosmos DB query language is a simple yet powerful interface for queryi
 **References – Azure Cosmos DB**
 
 - Azure Cosmos DB Introduction
-  <https://docs.microsoft.com/azure/cosmos-db/introduction>
+  [https://docs.microsoft.com/azure/cosmos-db/introduction](/azure/cosmos-db/introduction)
 
 ## Other persistence options
 
@@ -367,7 +367,7 @@ In addition to relational and NoSQL storage options, ASP.NET Core applications c
 **References – Azure Storage**
 
 - Azure Storage Introduction
-  <https://docs.microsoft.com/azure/storage/common/storage-introduction>
+  [https://docs.microsoft.com/azure/storage/common/storage-introduction](/azure/storage/common/storage-introduction)
 
 ## Caching
 
@@ -549,7 +549,7 @@ Once you have the data you need, you'll typically track changes locally. When yo
 **References – Blazor Data**
 
 - Call a web API from ASP.NET Core Blazor
-  <https://docs.microsoft.com/aspnet/core/blazor/call-web-api>
+  [https://docs.microsoft.com/aspnet/core/blazor/call-web-api](/aspnet/core/blazor/call-web-api)
 
 >[!div class="step-by-step"]
 >[Previous](develop-asp-net-core-mvc-apps.md)

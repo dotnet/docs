@@ -6,10 +6,10 @@ ms.assetid: 6b1ccbb8-5a43-4b36-9949-702877cef90a
 ---
 # 602 - CBAMatchFound
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|602|  
 |Keywords||  
 |Level|Verbose|  

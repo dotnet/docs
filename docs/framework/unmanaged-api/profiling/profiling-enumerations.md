@@ -49,6 +49,9 @@ This section describes the unmanaged enumerations that the profiling API uses.
   
  [COR_PRF_MONITOR Enumeration](cor-prf-monitor-enumeration.md)  
  Contains values that are used to specify behavior, capabilities, or events to which the profiler wishes to subscribe.  
+
+[COR_PRF_REJIT_FLAGS Enumeration](cor-prf-rejit-flags-enumeration.md)\
+Contains values that indicate how the [ICorProfilerInfo10::RequestReJITWithInliners](icorprofilerinfo10-requestrejitwithinliners-method.md) API should behave.
   
  [COR_PRF_RUNTIME_TYPE Enumeration](cor-prf-runtime-type-enumeration.md)  
  Contains values that indicate the version of the common language runtime.  

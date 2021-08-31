@@ -3,7 +3,7 @@ title: Create a Windows Service using BackgroundService
 description: Learn how to create a Windows Service using the BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/26/2021
+ms.date: 08/30/2021
 ms.topic: tutorial
 ---
 
@@ -21,6 +21,8 @@ In this tutorial, you'll learn how to:
 > - Start and stop the Windows Service.
 > - View event logs.
 > - Delete the Windows Service.
+
+[!INCLUDE [workers-samples-browser](includes/workers-samples-browser.md)]
 
 ## Prerequisites
 
@@ -91,6 +93,8 @@ In the preceding code, the `JokeService` is injected along with an `ILogger`. Bo
 > ```
 >
 > For more information on configuring log levels, see [Logging providers in .NET: Configure Windows EventLog](logging-providers.md#windows-eventlog).
+
+## Rewrite the Program class
 
 Replace the template *Program.cs* file contents with the following C# code:
 

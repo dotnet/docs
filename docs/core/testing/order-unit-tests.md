@@ -72,7 +72,7 @@ Then in a test class you set the test case order with the `TestCaseOrdererAttrib
 
 ## Order by priority
 
-To order tests explicitly, NUnit provides an [`OrderAttribute`](https://github.com/nunit/docs/wiki/Order-Attribute). Tests with this attribute are started before tests without. The order value is used to determined the order to run the unit tests.
+To order tests explicitly, NUnit provides an [`OrderAttribute`](https://github.com/nunit/docs/wiki/Order-Attribute). Tests with this attribute are started before tests without. The order value is used to determine the order to run the unit tests.
 
 :::code language="csharp" source="snippets/order-unit-tests/csharp/NUnit.TestProject/ByOrder.cs":::
 

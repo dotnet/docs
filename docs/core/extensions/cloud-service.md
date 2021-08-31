@@ -3,7 +3,7 @@ title: Deploy a Worker Service to Azure
 description: Learn how to deploy a .NET Worker Service to Azure.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/25/2021
+ms.date: 08/30/2021
 ms.topic: tutorial
 zone_pivot_groups: development-environment-one
 ---
@@ -21,6 +21,8 @@ In this tutorial, you learn how to:
 > - Push an image to container registry.
 > - Deploy as container instance.
 > - Verify worker service functionality.
+
+[!INCLUDE [workers-samples-browser](includes/workers-samples-browser.md)]
 
 ## Prerequisites
 

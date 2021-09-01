@@ -64,6 +64,7 @@ Welcome to what's new in the .NET docs from August 1, 2021 through August 31, 20
 ### Updated articles
 
 - [using directive](../csharp/language-reference/keywords/using-directive.md) - C# 10 - Add articles for global using
+- [namespace keyword](../csharp/language-reference/keywords/namespace.md) - C# 10 - Add file scoped namespace
 
 ## ML.NET
 

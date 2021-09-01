@@ -3,7 +3,7 @@ title: ReadyToRun deployment overview
 description: Learn what ReadyToRun deployments are and why you should consider using it as part of the publishing your app with .NET 5 and .NET Core 3.0 and later.
 author: davidwrighton
 ms.author: davidwr
-ms.date: 09/21/2020
+ms.date: 08/23/2021
 ---
 # ReadyToRun Compilation
 
@@ -51,6 +51,14 @@ Ahead-of-time generated code is not as highly optimized as code produced by the 
 
 The SDK will precompile the assemblies that are distributed with the application. For self-contained applications, this set of assemblies will include the framework. C++/CLI binaries are not eligible for ReadyToRun compilation.
 
+To exclude specific assemblies from ReadyToRun processing, use the `<PublishReadyToRunExclude>` list.
+
+```xml
+<ItemGroup>
+  <PublishReadyToRunExclude Include="Contoso.Example.dll" />
+</ItemGroup>
+```
+
 ## How is the set of methods to precompile chosen?
 
 The compiler will attempt to pre-compile as many methods as it can. However, for various reasons, it's not expected that using the ReadyToRun feature will prevent the JIT from executing. Such reasons may include, but are not limited to:
@@ -61,13 +69,52 @@ The compiler will attempt to pre-compile as many methods as it can. However, for
 - Certain unusual IL patterns.
 - Dynamic method creation via reflection or LINQ.
 
+## Symbol generation for use with profilers
+
+When compiling an application with ReadyToRun, profilers may require symbols for examining the generated ReadyToRun files. To enable symbol generation, specify the `<PublishReadyToRunEmitSymbols>` property.
+
+```xml
+<PropertyGroup>
+  <PublishReadyToRunEmitSymbols>true<PublishReadyToRunEmitSymbols/>
+</PropertyGroup>
+```
+
+These symbols will be placed in the publish directory and for Windows will have a file extension of .ni.pdb, and for Linux will have a file extension of .r2rmap. These files are not generally redistributed to end customers, but instead would typically be stored in a symbol server. In general these symbols are useful for debugging performance issues related to startup of applications, as [Tiered Compilation](../run-time-config/compilation.md#tiered-compilation) will replace the ReadyToRun generated code with dynamically generated code. However, if attempting to profile an application that disables [Tiered Compilation](../run-time-config/compilation.md#tiered-compilation) the symbols will be useful.
+
+## Composite ReadyToRun
+
+Normal ReadyToRun compilation produces binaries which can be serviced and manipulated individually. Starting in .NET 6, support for Composite ReadyToRun compilation has been added. Composite ReadyToRun compiles a set of assemblies which must be distributed together. This has the advantage that the compiler is able to perform better optimizations and reduces the set of methods that cannot be compiled via the ReadyToRun process. However, as a tradeoff, compilation speed is significantly decreased, and the overall file size of the application is significantly increased. Due to these tradeoffs use of Composite ReadyToRun is only recommended for applications which disable [Tiered Compilation](../run-time-config/compilation.md#tiered-compilation) or applications running on Linux which are seeking the best startup time with [self-contained](index.md#publish-self-contained) deployment. To enable composite ReadyToRun compilation, specify the `<PublishReadyToRunComposite>` property.
+
+```xml
+<PropertyGroup>
+  <PublishReadyToRunComposite>true<PublishReadyToRunComposite/>
+</PropertyGroup>
+```
+
+> [!NOTE]
+> In .NET 6.0 Composite ReadyToRun is only supported for [self-contained](index.md#publish-self-contained) deployment.
+
 ## Cross platform/architecture restrictions
 
-For some SDK platforms, the ReadyToRun compiler is capable of cross-compiling for other target platforms. Supported compilation targets are described in the following table.
+For some SDK platforms, the ReadyToRun compiler is capable of cross-compiling for other target platforms.
+
+Supported compilation targets are described in the table below when targetting .NET 6.0 and above.
 
 | SDK platform | Supported target platforms |
 | ------------ | --------------------------- |
-| Windows X64  | Windows X86, Windows X64, Windows ARM32, Windows ARM64 |
+| Windows X64  | Windows (X86, X64, ARM64), Linux (X64, ARM32, ARM64), macOS (X64, ARM64) |
+| Windows X86  | Windows (X86), Linux (ARM32) |
+| Linux X64    | Linux (X64, ARM32, ARM64), macOS (X64, ARM64) |
+| Linux ARM32  | Linux ARM32 |
+| Linux ARM64  | Linux (X64, ARM32, ARM64), macOS (X64, ARM64) |
+| macOS X64    | Linux (X64, ARM32, ARM64), macOS (X64, ARM64) |
+| macOS ARM64    | Linux (X64, ARM32, ARM64), macOS (X64, ARM64) |
+
+Supported compilation targets are described in the table below when targetting .NET 5 and below.
+
+| SDK platform | Supported target platforms |
+| ------------ | --------------------------- |
+| Windows X64  | Windows X86, Windows X64, Windows ARM64 |
 | Windows X86  | Windows X86, Windows ARM32 |
 | Linux X64    | Linux X86, Linux X64, Linux ARM32, Linux ARM64 |
 | Linux ARM32  | Linux ARM32 |

@@ -77,6 +77,7 @@ The following table lists code quality analysis rules.
 > | [CA1401: P/Invokes should not be visible](ca1401.md) | A public or protected method in a public type has the System.Runtime.InteropServices.DllImportAttribute attribute (also implemented by the Declare keyword in Visual Basic). Such methods should not be exposed. |
 > | [CA1416: Validate platform compatibility](ca1416.md) | Using platform-dependent APIs on a component makes the code no longer work across all platforms. |
 > | [CA1417: Do not use `OutAttribute` on string parameters for P/Invokes](ca1417.md) | String parameters passed by value with the `OutAttribute` can destabilize the runtime if the string is an interned string. |
+> | [CA1418: Use valid platform string](ca1418.md) | Platform compatibility analyzer requires a valid platform name and version. |
 > | [CA1501: Avoid excessive inheritance](ca1501.md) | A type is more than four levels deep in its inheritance hierarchy. Deeply nested type hierarchies can be difficult to follow, understand, and maintain. |
 > | [CA1502: Avoid excessive complexity](ca1502.md) | This rule measures the number of linearly independent paths through the method, which is determined by the number and complexity of conditional branches. |
 > | [CA1505: Avoid unmaintainable code](ca1505.md) | A type or method has a low maintainability index value. A low maintainability index indicates that a type or method is probably difficult to maintain and would be a good candidate for redesign. |

@@ -75,7 +75,7 @@ Specifying `IncludeAllContentForSelfExtract` will extract all files (even the ma
 > [!NOTE]
 > In some Linux environments (for example under *systemd*) the default extraction will not work because `$HOME` is not defined. In such cases it's recommended to set `$DOTNET_BUNDLE_EXTRACT_BASE_DIR` explicitly.
 >
-> For *systemd* a good alternative seems to be defining DOTNET_BUNDLE_EXTRACT_BASE_DIR in your service's unit file as `%h/.net`, which systemd expands correctly to `$HOME/.net` for the account running the service. 
+> For *systemd* a good alternative seems to be defining DOTNET_BUNDLE_EXTRACT_BASE_DIR in your service's unit file as `%h/.net`, which systemd expands correctly to `$HOME/.net` for the account running the service.
 >
 > ```
 > [Service]

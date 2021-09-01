@@ -6,7 +6,7 @@ ms.date: 04/20/2021
 ---
 # .NET vs. .NET Framework for server apps
 
-There are two supported .NET implementations for building server-side apps.
+There are two supported [.NET implementations](glossary.md#implementation-of-net) for building server-side apps.
 
 | Implementation | Included versions |
 | - | - |

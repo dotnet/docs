@@ -23,7 +23,6 @@ Welcome to what's new in the .NET docs from August 1, 2021 through August 31, 20
 - [File globbing in .NET](../core/extensions/file-globbing.md)
 - [OutputType not changed from Exe to WinExe for Windows Forms and WPF projects](../core/compatibility/sdk/6.0/outputtype-not-set-automatically.md)
 - [CA2018: The `count` argument to `Buffer.BlockCopy` should specify the number of bytes to copy](../fundamentals/code-analysis/quality-rules/ca2018.md)
-- [CA1839: Avoid `const` arrays](../fundamentals/code-analysis/quality-rules/ca1839.md)
 - [dotnet workload restore](../core/tools/dotnet-workload-restore.md)
 - [Blazor server: Disable long polling fallback transport](../core/compatibility/aspnet-core/6.0/blazor-long-polling-fallback.md)
 - [JsonNode no longer supports C# `dynamic` type](../core/compatibility/serialization/6.0/jsonnode-dynamic-type.md)

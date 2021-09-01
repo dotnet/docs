@@ -18,12 +18,12 @@ This section describes the options interpreted by the C# compiler.
 
 ## Index
 
-- [Options for language feature rules](language.md)
+- [Language feature options](language.md)
 - [Options that control compiler output](output.md)
 - [Options that specify inputs](inputs.md)
 - [Options to report errors and warnings](errors-warnings.md)
-- [Options that control code generation](code-generation.md)
-- [Options for security options](security.md)
+- [Code generation options](code-generation.md)
+- [Security options](security.md)
 - [Options that specify resources](resources.md)
 - [Miscellaneous options](miscellaneous.md)
 - [Advanced options](advanced.md)

@@ -91,6 +91,9 @@ Normal ReadyToRun compilation produces binaries which can be serviced and manipu
 </PropertyGroup>
 ```
 
+> [!NOTE]
+> In .NET 6.0 Composite ReadyToRun is only supported for [self-contained](index.md#publish-self-contained) deployment.
+
 ## Cross platform/architecture restrictions
 
 For some SDK platforms, the ReadyToRun compiler is capable of cross-compiling for other target platforms.

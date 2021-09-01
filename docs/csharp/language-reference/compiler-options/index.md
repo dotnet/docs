@@ -1,7 +1,7 @@
 ---
 description: "C# Compiler Options. Learn the options that control the behavior of the C# compiler."
 title: "C# Compiler Options"
-ms.date: 03/12/2021
+ms.date: 09/01/2021
 f1_keywords: 
   - "cs.build.options"
 helpviewer_keywords: 
@@ -12,14 +12,43 @@ helpviewer_keywords:
   - "Visual C#, compiler options"
 ms.assetid: d3403556-1816-4546-a782-e8223a772e44
 ---
-# C# Compiler Options
+# C# compiler options
 
-This section describes the options interpreted by the C# compiler. There are two different ways to set compiler options in .NET projects:
+This section describes the options interpreted by the C# compiler.
 
-- ***Specify option in your \*.csproj file***: You can add XML elements for any compiler option in your *\*.csproj* file. The element name is the same as the compiler option. The value of the XML element sets the value of the compiler option. For more information on setting options in project files, see the article [MSBuild properties for .NET SDK Projects](../../../core/project-sdk/msbuild-props.md).
-- ***Using the Visual Studio Property pages***: Visual Studio provides property pages to edit build properties. To learn more about them, see [Manage project and solution properties - Windows](/visualstudio/ide/managing-project-and-solution-properties#c-visual-basic-and-f-projects) or [Manage project and solution properties - Mac](/visualstudio/mac/managing-solutions-and-project-properties).
+## Index
 
-## .NET Framework projects
+- [Options for language feature rules](language.md)
+- [Options that control compiler output](output.md)
+- [Options that specify inputs](inputs.md)
+- [Options to report errors and warnings](errors-warnings.md)
+- [Options that control code generation](code-generation.md)
+- [Options for security options](security.md)
+- [Options that specify resources](resources.md)
+- [Miscellaneous options](miscellaneous.md)
+- [Advanced options](advanced.md)
+
+## How to set options
+
+There are two different ways to set compiler options in .NET projects:
+
+- ***In your \*.csproj file***
+
+  You can add MSBuild properties for any compiler option in your *\*.csproj* file in XML format. The property name is the same as the compiler option. The value of the property sets the value of the compiler option. For example, the following project file snippet sets the `LangVersion` property.
+
+  ```xml
+  <PropertyGroup>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+  ```
+
+  For more information on setting options in project files, see the article [MSBuild properties for .NET SDK Projects](../../../core/project-sdk/msbuild-props.md).
+
+- ***Using the Visual Studio Property pages***
+
+  Visual Studio provides property pages to edit build properties. To learn more about them, see [Manage project and solution properties - Windows](/visualstudio/ide/managing-project-and-solution-properties#c-visual-basic-and-f-projects) or [Manage project and solution properties - Mac](/visualstudio/mac/managing-solutions-and-project-properties).
+
+### .NET Framework projects
 
 > [!IMPORTANT]
 > This section applies to .NET Framework projects only.

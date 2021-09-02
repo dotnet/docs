@@ -38,7 +38,7 @@ let class-name (argument-list) =
 
 ## Remarks
 
-Interface declarations resemble class declarations except that no members are implemented. Instead, all the members are abstract, as indicated by the keyword `abstract`. You do not provide a method body for abstract methods.
+Interface declarations resemble class declarations except that no members are implemented. Instead, all the members are abstract, as indicated by the keyword `abstract`. You do not provide a method body for abstract methods. F# cannot define a default method implementation on an interface, but it is compatible with default implementations defined by C#. Default implementations using the `default` keyword are only supported when inheriting from a non-interface base class.
 
 The default accessibility for interfaces is `public`.
 

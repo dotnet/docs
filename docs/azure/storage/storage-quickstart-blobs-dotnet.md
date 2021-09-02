@@ -15,10 +15,10 @@ The [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs/) p
 
 ## Sample application
 
-The sample application for this tutorial may be cloned or downloaded from the repository [https://github.com/DavidCBerry13/AzureBlobStorageDemo/tree/main](https://github.com/DavidCBerry13/AzureBlobStorageDemo/tree/main).  Both a starter and completed app are included in the sample repository.
+The sample application for this tutorial may be cloned or downloaded from the repository [https://github.com/Azure-Samples/msdocs-azure-blob-storage-dotnet](https://github.com/Azure-Samples/msdocs-azure-blob-storage-dotnet).  Both a starter and completed app are included in the sample repository.
 
 ```bash
-git clone https://github.com/DavidCBerry13/AzureBlobStorageDemo/tree/main
+git clone https://github.com/Azure-Samples/msdocs-azure-blob-storage-dotnet
 ```
 
 When complete, the sample application will allow you to create blob containers, upload blobs to a storage account as well as visualize the relationship between containers and blobs in the storage account.
@@ -95,7 +95,7 @@ To access the storage account, your app will need the connection string for the 
 
 ### [Azure Portal](#tab/azure-portal)
 
-In the [Azure Portal](https://portal.azure.com/), navigate to the storage account and retrieve the connection string using the following instruction.
+In the [Azure portal](https://portal.azure.com/), navigate to the storage account and retrieve the connection string using the following instruction.
 
 | Instructions    | Screenshot |
 |:----------------|-----------:|
@@ -125,11 +125,11 @@ Write-Host $storageConnectionString
 
 ---
 
-The connection string for your storage account is considered an app secret and must be protected like any other app secret or password.  This example uses the Secret Manager tool to store the connection string during development and make it available to the application.  The Secret Manager tool can be accessed from either Visual Studio or the .NET CLI.
+The connection string for your storage account is considered an app secret and must be protected like any other app secret or password.  This example uses the [Secret Manager](/aspnet/core/security/app-secrets#secret-manager) tool to store the connection string during development and make it available to the application.  The Secret Manager tool can be accessed from either Visual Studio or the .NET CLI.
 
 ### [Visual Studio](#tab/visual-studio)
 
-To open the Secret Manager tool from Visual Studio, right click on the project and select **Manage User Secrets** from the context menu.  This will open the "secrets.json" file for the project.  Replace the contents of the file with the JSON below, substituting in your storage connection string.
+To open the Secret Manager tool from Visual Studio, right click on the project and select **Manage User Secrets** from the context menu.  This will open the *secrets.json* file for the project.  Replace the contents of the file with the JSON below, substituting in your storage connection string.
 
 ```json
 {
@@ -155,9 +155,9 @@ dotnet user-secrets set "ConnectionStrings:AzureStorage" "<storage connection st
 
 ---
 
-## 3 - Install Azure SDK package
+## 3 - Install Azure.Storage.Blobs NuGet package
 
-To access Azure Blob Storage from a .NET application, you need to install the [Azure.Storage.Blobs package from NuGet](https://www.nuget.org/packages/Azure.Storage.Blobs).
+To access Azure Blob Storage from a .NET application, you need to install the [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs) package from NuGet.
 
 ### [Visual Studio](#tab/visual-studio)
 
@@ -177,7 +177,7 @@ dotnet add package Azure.Storage.Blobs
 
 The Azure SDK communicates with Azure using client objects to execute different operations against Azure.  The [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient) object is the top level object used to communicate with a storage account.
 
-An application will typically create a single [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient) object per storage account to be used throughout the application.  It is recommended to use dependency injection and register the [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient) object as a singleton to accomplish this.  For more information about using DI with the Azure SDK, see [Dependency injection with the Azure SDK for .NET](../sdk/dependency-injection.md).
+An application will typically create a single [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient) object per storage account to be used throughout the application.  It is recommended to use dependency injection (DI) and register the [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient) object as a singleton to accomplish this.  For more information about using DI with the Azure SDK, see [Dependency injection with the Azure SDK for .NET](../sdk/dependency-injection.md).
 
 In the Startup.cs file of the application, edit the ConfigureServices() method to include the highlighted code.
 
@@ -197,7 +197,7 @@ public void ConfigureServices(IServiceCollection services)
 
 ## 5 - Implement Azure Storage operations in code
 
-All storage operations for the sample app are implemented in the `StorageDemoService` class located in the Services folder.  You will need to import the `Azure`, `Azure.Storage.Blobs`, and `Azure.Storage.Blobs.Models` namespaces at the top of this file to work with objects in the Azure.Storage.Blobs SDK package.
+All storage operations for the sample app are implemented in the `StorageDemoService` class located in the *Services* directory.  You will need to import the `Azure`, `Azure.Storage.Blobs`, and `Azure.Storage.Blobs.Models` namespaces at the top of this file to work with objects in the `Azure.Storage.Blobs` SDK package.
 
 ```csharp
 using Azure;

@@ -18,7 +18,7 @@ HTTP/3 and QUIC have a number of benefits compared to HTTP/1.1 and HTTP/2:
 
 > **Important**
 >
-> HTTP/3 is available in .NET 6 as a _preview feature_ because the HTTP/3 specification isn&#39;t finalized and behavioral or performance issues may exist in HTTP/3 with .NET 6.
+> HTTP/3 is available in .NET 6 as a _preview feature_ because the HTTP/3 specification is not finalized and behavioral or performance issues may exist in HTTP/3 with .NET 6.
 >
 > For more information on preview features, see [**the preview features specification**](https://github.com/dotnet/designs/blob/main/accepted/2021/preview-features/preview-features.md#are-preview-features-supported).
 >
@@ -35,6 +35,7 @@ HTTP/3 support is in preview, and needs to be enabled via a configuration flag w
     <RuntimeHostConfigurationOption Include="System.Net.SocketsHttpHandler.Http3Support" Value="true">
 </ItemGroup>
 ```
+
 Or using [`AppContext.SetSwitch`](https://docs.microsoft.com/en-us/dotnet/api/system.appcontext.setswitch?view=net-5.0).
 
 The HTTP version can be configured by setting `HttpRequestMessage.Version` to 3.0. However, because not all routers, firewalls, and proxies properly support HTTP/3, we recommend configuring HTTP/3 together with HTTP/1.1 and HTTP/2. In HttpClient, this can be done by specifying:
@@ -46,7 +47,7 @@ The reason for requiring a configuration flag for HTTP/3 is to protect apps from
 
 ### Platform Dependencies
 
-HTTP/3 uses QUIC as its transport protocol. The .NET implementation of HTTP/3 uses [MsQuic](https://github.com/microsoft/msquic) to provide QUIC functionality. MsQuic is included in specific builds of windows and as a library for Linux. If the platform that HttpClient is running on doesn&#39;t have all the requirements for HTTP/3 then it&#39;s disabled.
+HTTP/3 uses QUIC as its transport protocol. The .NET implementation of HTTP/3 uses [MsQuic](https://github.com/microsoft/msquic) to provide QUIC functionality. MsQuic is included in specific builds of windows and as a library for Linux. If the platform that HttpClient is running on doesn't have all the requirements for HTTP/3 then it's disabled.
 
 **Windows**
 
@@ -62,6 +63,7 @@ On Linux, libmsquic is published via Microsoft official Linux package repository
 ```shell
 sudo apt install libmsquic
 ```
+
 **macOS**
 
 HTTP/3 is not currently supported on macOS but may be available in a future release.
@@ -104,7 +106,7 @@ HTTP/3 is supported by ASP.NET with the Kestrel server in .NET 6. For more detai
 
 ### Public test servers
 
-Cloudflare hosts a site for HTTP/3 which can be used to test the client against at https://cloudflare-quic.com/
+Cloudflare hosts a site for HTTP/3 which can be used to test the client against at [https://cloudflare-quic.com/](https://cloudflare-quic.com/)
 
 ## See also
 

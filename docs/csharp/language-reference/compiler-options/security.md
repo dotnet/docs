@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "KeyContainer compiler option [C#]"
   - "HighEntropyVA compiler option [C#]"
 ---
-# C# Compiler Options for security options
+# C# compiler options for security
 
 The following options control compiler security options. The new MSBuild syntax is shown in **Bold**. The older *csc.exe* syntax is shown in `code style`.
 

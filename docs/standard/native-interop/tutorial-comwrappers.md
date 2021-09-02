@@ -7,6 +7,7 @@ We will be implementing the following interface definitions. These interfaces an
 All source code used in this tutorial is available in the final section of this document.
 
 **C# definitions**
+
 ```csharp
 interface IDemoGetType
 {
@@ -20,6 +21,7 @@ interface IDemoStoreType
 ```
 
 **Win32 C++ definitions**
+
 ```c++
 MIDL_INTERFACE("92BAA992-DB5A-4ADD-977B-B22838EE91FD")
 IDemoGetType : public IUnknown
@@ -306,6 +308,7 @@ Unlike the Managed Object Wrapper, which is controlled by calls to its `AddRef()
 We now have a `ComWrappers` subclass that can be tested. In order to avoid creating a native library that returns a COM instance that implements `IDemoGetType` and `IDemoStoreType` we are going to use the Managed Object Wrapper and treat it as a COM instance &ndash; this must be possible in order to pass it COM anyways.
 
 Let's create a Managed Object Wrapper first. We will instantiate a `DemoImpl` instance display its current string state.
+
 ```csharp
 var demo = new DemoImpl();
 
@@ -314,6 +317,7 @@ Console.WriteLine($"Initial string: {value ?? "<null>"}");
 ```
 
 Now we can create an instance of `DemoComWrappers` and create a Managed Object Wrapper that we could then pass into a COM environment.
+
 ```csharp
 var cw = new DemoComWrappers();
 
@@ -321,11 +325,13 @@ IntPtr ccw = cw.GetOrCreateComInterfaceForObject(demo, CreateComInterfaceFlags.N
 ```
 
 Instead of passing the Managed Object Wrapper to a COM environment let's pretend we just received this COM instance and instead create a Native Object Wrapper for it.
+
 ```csharp
 var rcw = cw.GetOrCreateObjectForComInstance(ccw, CreateObjectFlags.UniqueInstance);
 ```
 
 With the Native Object Wrapper we should be able to cast it to one of the desired interfaces and use it as a normal managed object. We can examine the `DemoImpl` instance and observe the impact of operations on the Native Object Wrapper that is wrapping a Managed Object Wrapper that is in turn wrapping the managed instance is reflected.
+
 ```csharp
 var getter = (IDemoGetType)rcw;
 var store = (IDemoStoreType)rcw;
@@ -346,6 +352,7 @@ Console.WriteLine($"Get string through wrapper: {value}");
 ```
 
 Since our `ComWrapper` subclass was designed to support `CreateObjectFlags.UniqueInstance` we can clean up the Native Object Wrapper immediately instead of waiting for a GC to occur.
+
 ```csharp
 (rcw as IDisposable)?.Dispose();
 ```

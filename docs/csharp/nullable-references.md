@@ -8,7 +8,7 @@ ms.date: 09/01/2021
 
 C# 8.0 introduces features that you can use to minimize the likelihood that your code causes the runtime to throw <xref:System.NullReferenceException?displayProperty=nameWithType>. There are three features that help you avoid these exceptions.
 
-- Improved static flow analysis that determines if a variable may be `null` before dereferencing it. 
+- Improved static flow analysis that determines if a variable may be `null` before dereferencing it.
 - Attributes that annotate APIs so that the flow analysis determines *null-state*.
 - Variable annotations that developers use to explicitly declare the intended *null-state* for a variable.
 

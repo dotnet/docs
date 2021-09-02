@@ -8,11 +8,11 @@ ms.date: 08/24/2021
 
 # File globbing in .NET
 
-In this article you'll learn how to use file globbing with the [`Microsoft.Extensions.FileSystemGlobbing`](https://www.nuget.org/packages/Microsoft.Extensions.FileSystemGlobbing) NuGet package. A *glob* is a term used to define patterns for matching file and directory names based on wildcards. Globbing is the act of defining one or more glob patterns, and yielding files from either inclusive or exclusive matches.
+In this article, you'll learn how to use file globbing with the [`Microsoft.Extensions.FileSystemGlobbing`](https://www.nuget.org/packages/Microsoft.Extensions.FileSystemGlobbing) NuGet package. A *glob* is a term used to define patterns for matching file and directory names based on wildcards. Globbing is the act of defining one or more glob patterns, and yielding files from either inclusive or exclusive matches.
 
 ## Patterns
 
-To match files in the file system based on user-defined patterns, start by instantiating a <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher> object. A `Matcher` can be instantiated with no parameters, or with a <xref:System.StringComparison?displayProperty=nameWithType> parameter &mdash; which is used internally for comparing patterns to file names. The `Matcher` exposes the following additive methods:
+To match files in the file system based on user-defined patterns, start by instantiating a <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher> object. A `Matcher` can be instantiated with no parameters, or with a <xref:System.StringComparison?displayProperty=nameWithType> parameter, which is used internally for comparing patterns to file names. The `Matcher` exposes the following additive methods:
 
 - <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.AddExclude%2A?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.AddInclude%2A?displayProperty=nameWithType>
@@ -25,7 +25,7 @@ The `Matcher` object has several extension methods.
 
 ### Multiple exclusions
 
-To add multiple exclude patterns you can use:
+To add multiple exclude patterns, you can use:
 
 ```csharp
 Matcher matcher = new();
@@ -45,7 +45,7 @@ This extension method iterates over all of the provided patterns calling <xref:M
 
 ### Multiple inclusions
 
-To add multiple include patterns you can use:
+To add multiple include patterns, you can use:
 
 ```csharp
 Matcher matcher = new();
@@ -65,7 +65,7 @@ This extension method iterates over all of the provided patterns calling <xref:M
 
 ### Get all matching files
 
-To get all matching files, you have to call <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.Execute(Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase)?displayProperty=nameWithType> either directly or indirectly. To call it directly you need a search directory:
+To get all matching files, you have to call <xref:Microsoft.Extensions.FileSystemGlobbing.Matcher.Execute(Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase)?displayProperty=nameWithType> either directly or indirectly. To call it directly, you need a search directory:
 
 ```csharp
 Matcher matcher = new();
@@ -116,9 +116,9 @@ The preceding C# code:
 
 ### Match overloads
 
-The <xref:Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult> object represents a collection of <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch> instances, and exposes a `boolean` value indicating whether the result has matches &mdash; <xref:Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult.HasMatches?displayProperty=nameWithType>.
+The <xref:Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult> object represents a collection of <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch> instances, and exposes a `boolean` value indicating whether the result has matches&mdash;<xref:Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult.HasMatches?displayProperty=nameWithType>.
 
-With a `Matcher` instance, you can call the any of the various `Match` overloads to get a pattern matching result. The `Match` methods invert the responsibility on the caller to provide a file or a collection of files in which to evaluate for matches. In other words, the caller is responsible for passing the file to match on.
+With a `Matcher` instance, you can call any of the various `Match` overloads to get a pattern matching result. The `Match` methods invert the responsibility on the caller to provide a file or a collection of files in which to evaluate for matches. In other words, the caller is responsible for passing the file to match on.
 
 > [!IMPORTANT]
 > When using any of the `Match` overloads, there is no file system I/O involved. All of the file globbing is done in memory with the include and exclude patterns of the `matcher` instance. The parameters of the `Match` overloads do not have to be fully qualified paths. The current directory (<xref:System.IO.Directory.GetCurrentDirectory?displayProperty=nameWithType>) is used when not specified.

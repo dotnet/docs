@@ -1,7 +1,7 @@
 ---
 title: dotnet workload search command
 description: The 'dotnet workload search' command searches for optional workloads.
-ms.date: 07/08/2021
+ms.date: 08/31/2021
 ---
 # dotnet workload search
 
@@ -14,8 +14,7 @@ ms.date: 07/08/2021
 ## Synopsis
 
 ```dotnetcli
-dotnet workload search [<SEARCH_STRING>]
-    [--sdk-version <VERSION>] [-v|--verbosity <LEVEL>]
+dotnet workload search [<SEARCH_STRING>] [-v|--verbosity <LEVEL>]
 
 dotnet workload search -?|-h|--help
 ```
@@ -37,8 +36,6 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 <!-- markdownlint-disable MD012 -->
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
-
-[!INCLUDE [sdk-version](../../../includes/cli-sdk-version.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 

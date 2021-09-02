@@ -14,19 +14,7 @@ ms.assetid: d3403556-1816-4546-a782-e8223a772e44
 ---
 # C# compiler options
 
-This section describes the options interpreted by the C# compiler.
-
-## Index
-
-- [Language feature options](language.md)
-- [Options that control compiler output](output.md)
-- [Options that specify inputs](inputs.md)
-- [Options to report errors and warnings](errors-warnings.md)
-- [Code generation options](code-generation.md)
-- [Security options](security.md)
-- [Options that specify resources](resources.md)
-- [Miscellaneous options](miscellaneous.md)
-- [Advanced options](advanced.md)
+This section describes the options interpreted by the C# compiler. Options are grouped into separate articles based on what they control, for example, language features, code generation, and output. Use the table of contents to navigate amongst them.
 
 ## How to set options
 

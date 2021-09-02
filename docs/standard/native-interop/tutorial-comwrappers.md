@@ -1,7 +1,7 @@
 ---
 title: "Using the ComWrappers API"
 description: A tutorial on properly implementing the ComWrappers API.
-author: arobins
+author: AaronRobinsonMSFT
 ms.date: "02/09/2021"
 helpviewer_keywords:
   - "COM interop, ComWrappers"

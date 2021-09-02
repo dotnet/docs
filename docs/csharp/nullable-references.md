@@ -137,9 +137,9 @@ You must explicitly opt in to use these features in your projects. That provides
   - The null forgiveness operator suppresses warnings for a possible assignment to `null`.
 - *warnings*: The compiler performs all null analysis and emits warnings when code might dereference `null`.
   - All new nullable warnings are enabled.
-  - You can't use the `?` suffix to declare a nullable reference type.
-  - All reference type variables are allowed to be null. However, member variables have the *null-state* of *not-null* at the opening brace of all members.
-  - The can use the null forgiving operator, `!`, but it has no effect.
+  - Use of the `?` suffix to declare a nullable reference type produces a warning.
+  - All reference type variables are allowed to be null. However, members have the *null-state* of *not-null* at the opening brace of all methods unless declared with the `?` suffix.
+  - The can use the null forgiving operator, `!`.
 - *annotations*: The compiler doesn't perform null analysis or emits warnings when code might dereference `null`.
   - All new nullable warnings are disabled.
   - You can use the `?` suffix to declare a nullable reference type.

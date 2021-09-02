@@ -11,6 +11,9 @@ The implicit namespace feature is enabled by default for C# projects that target
 
 If your project uses a C# version less than 10, you must explicitly [disable this feature](#recommended-action).
 
+> [!IMPORTANT]
+> The implicit namespaces feature was [changed in .NET 6 RC1](implicit-namespaces-rc1.md), such that this is only a breaking change for the Preview 7 version of .NET 6.
+
 ## Version introduced
 
 .NET 6 Preview 7

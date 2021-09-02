@@ -1,3 +1,15 @@
+---
+title: "Using the ComWrappers API"
+description: A tutorial on properly implementing the ComWrappers API.
+author: arobins
+ms.date: "02/09/2021"
+helpviewer_keywords:
+  - "COM interop, ComWrappers"
+  - "RCW"
+  - "CCW"
+  - "interoperation with unmanaged code, COM wrappers"
+  - "NativeAOT"
+---
 # Using the `ComWrappers` API
 
 In this tutorial we are going to see how to properly subclass the [`ComWrappers`][api_comwrappers] type to provide an optimized and AOT friendly COM interop solution. It is assumed the reader of this document is familiar COM, its architecture, and existing COM interop solutions.
@@ -375,22 +387,22 @@ Aside from the lifetime, type system, and functional features that are discussed
 
 <!-- Reusable links -->
 
-[api_allocatetypeassociatedmemory]:https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.runtimehelpers.allocatetypeassociatedmemory
-[api_comwrappers]:https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.comwrappers
-[api_dynamicinterfacecastableimplementation]:https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.dynamicinterfacecastableimplementationattribute
-[api_idynamicinterfacecastable]:https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
-[api_marshalqueryinterface]:https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.marshal.queryinterface
-[api_referencetracker]:https://docs.microsoft.com/windows/win32/api/windows.ui.xaml.hosting.referencetracker/
-[api_rogetagilereference]:https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-rogetagilereference
-[api_unmanagedcallersonly]:https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.unmanagedcallersonlyattribute
+[api_allocatetypeassociatedmemory]:/dotnet/api/system.runtime.compilerservices.runtimehelpers.allocatetypeassociatedmemory
+[api_comwrappers]:/dotnet/api/system.runtime.interopservices.comwrappers
+[api_dynamicinterfacecastableimplementation]:/dotnet/api/system.runtime.interopservices.dynamicinterfacecastableimplementationattribute
+[api_idynamicinterfacecastable]:/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+[api_marshalqueryinterface]:/dotnet/api/system.runtime.interopservices.marshal.queryinterface
+[api_referencetracker]:/windows/win32/api/windows.ui.xaml.hosting.referencetracker/
+[api_rogetagilereference]:/windows/win32/api/combaseapi/nf-combaseapi-rogetagilereference
+[api_unmanagedcallersonly]:/dotnet/api/system.runtime.interopservices.unmanagedcallersonlyattribute
 
-[doc_comapartments]:https://docs.microsoft.com/windows/win32/com/processes--threads--and-apartments
-[doc_comsecurity]:https://docs.microsoft.com/windows/win32/com/security-in-com
-[doc_globalinterfacetable]:https://docs.microsoft.com/windows/win32/com/when-to-use-the-global-interface-table
-[doc_impliunknown]:https://docs.microsoft.com/windows/win32/com/using-and-implementing-iunknown
-[doc_nullable]:https://docs.microsoft.com//dotnet/csharp/nullable-references
-[doc_unloadability]:https://docs.microsoft.com/dotnet/standard/assembly/unloadability
-[doc_unsafekeyword]:https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/unsafe
+[doc_comapartments]:/windows/win32/com/processes--threads--and-apartments
+[doc_comsecurity]:/windows/win32/com/security-in-com
+[doc_globalinterfacetable]:/windows/win32/com/when-to-use-the-global-interface-table
+[doc_impliunknown]:/windows/win32/com/using-and-implementing-iunknown
+[doc_nullable]:/dotnet/csharp/nullable-references
+[doc_unloadability]:/dotnet/standard/assembly/unloadability
+[doc_unsafekeyword]:/dotnet/csharp/language-reference/keywords/unsafe
 
 [repo_cswinrt]:https://github.com/microsoft/CsWinRT
 

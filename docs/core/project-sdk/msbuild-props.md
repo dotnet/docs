@@ -880,7 +880,7 @@ The `DisableImplicitNamespaceImports` property can be used to disable [implicit 
 
 ### ImplicitUsings
 
-The `ImplicitUsings` property can be used to enable implicit namespaces in C# projects that target .NET 6 or a later version and that use C# 10.0 or a later version. Implicit namespaces are the default namespaces that are globally included in a project based on the type of SDK. Set this property to `true` to enable implicit namespaces.
+The `ImplicitUsings` property can be used to enable implicit namespaces in C# projects that target .NET 6 or a later version and C# 10.0 or a later version. Implicit namespaces are the default namespaces that are globally included in a project based on the type of SDK. Set this property to `true` or `enable` to enable implicit namespaces.
 
 ```xml
 <PropertyGroup>
@@ -894,6 +894,7 @@ The `ImplicitUsings` property can be used to enable implicit namespaces in C# pr
 
 - [PackageReference](#packagereference)
 - [TrimmerRootAssembly](#trimmerrootassembly)
+- [Using](#using)
 
 You can use any of the standard [item attributes](/visualstudio/msbuild/item-element-msbuild#attributes-and-elements), for example, `Include` and `Update`, on these items. Use `Include` to add a new item, and use `Update` to modify an existing item. For example, `Update` is often used to modify an item that has implicitly been added by the .NET SDK.
 
@@ -945,13 +946,18 @@ The `Using` item lets you [globally include a namespace](../../csharp/language-r
 </ItemGroup>
 ```
 
-You can also use the `Using` item to define global `using <alias>` and `using static <type>` directives. For example, `<Using Include="Microsoft.AspNetCore.Http.Results" Alias="Results" />` emits `global using Results = global::Microsoft.AspNetCore.Http.Results;`, and `<Using Include="Microsoft.AspNetCore.Http.Results" Static="True" />` emits `global using static global::Microsoft.AspNetCore.Http.Results;`.
+You can also use the `Using` item to define global `using <alias>` and `using static <type>` directives.
 
 ```xml
 <ItemGroup>
   <Using Include="My.Awesome.Namespace" Alias="Awesome" />
 </ItemGroup>
 ```
+
+For example:
+ 
+- `<Using Include="Microsoft.AspNetCore.Http.Results" Alias="Results" />` emits `global using Results = global::Microsoft.AspNetCore.Http.Results;`
+- `<Using Include="Microsoft.AspNetCore.Http.Results" Static="True" />` emits `global using static global::Microsoft.AspNetCore.Http.Results;`
 
 For more information about aliased `using` directives and `using static <type>` directives, see [using directive](../../csharp/language-reference/keywords/using-directive.md#static-modifier).
 

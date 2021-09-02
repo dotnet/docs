@@ -28,18 +28,18 @@ In addition, you could:
 
 Starting in .NET 6 RC 1, no implicit namespaces are included, by default. However, you can enable the feature in your C# project by setting the [`ImplicitUsings` MSBuild property](../../../project-sdk/msbuild-props.md#implicitusings) to `true` or `enable`.
 
-If you enable the feature, the default namespaces are included by adding `global using` directives to a generated file in the project's *obj* directory. The default namespaces are as follows:
+In addition, for C# projects:
+
+- The MSBuild property used to enable or disable the feature is renamed to `ImplicitUsings`, and the SDK-specific properties, such as `DisableImplicitNamespaceImports_DotNet`, are no longer valid. The feature is either completely enabled or completely disabled.
+- The item type to include a specific namespaces is renamed to `Using`. For Visual Basic projects, you can continue to use the `Import` item type.
+
+If you enable implicit namespaces, the .NET SDK includes the default namespaces by adding `global using` directives to a generated file in the project's *obj* directory. The default namespaces are as follows:
 
 | SDK | Default namespaces |
 | - | - |
 | Microsoft.NET.Sdk | <xref:System><br/><xref:System.Collections.Generic?displayProperty=fullName><br/><xref:System.IO?displayProperty=fullName><br/><xref:System.Linq?displayProperty=fullName><br/><xref:System.Net.Http?displayProperty=fullName><br/><xref:System.Threading?displayProperty=fullName><br/><xref:System.Threading.Tasks?displayProperty=fullName> |
 | Microsoft.NET.Sdk.Web | <xref:System.Net.Http.Json?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Builder?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Hosting?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Http?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Routing?displayProperty=fullName><br/><xref:Microsoft.Extensions.Configuration?displayProperty=fullName><br/><xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName><br/><xref:Microsoft.Extensions.Hosting?displayProperty=fullName><br/><xref:Microsoft.Extensions.Logging?displayProperty=fullName> |
 | Microsoft.NET.Sdk.Worker | <xref:Microsoft.Extensions.Configuration?displayProperty=fullName><br/><xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName><br/><xref:Microsoft.Extensions.Hosting?displayProperty=fullName><br/><xref:Microsoft.Extensions.Logging?displayProperty=fullName> |
-
-In addition, for C# projects:
-
-- The MSBuild property used to enable or disable the feature is renamed to `ImplicitUsings`, and the SDK-specific properties, such as `DisableImplicitNamespaceImports_DotNet`, are no longer valid. The feature is either completely enabled or completely disabled.
-- The item type to include a specific namespaces is renamed to `Using`. For Visual Basic projects, you can continue to use the `Import` item type.
 
 ## Change category
 

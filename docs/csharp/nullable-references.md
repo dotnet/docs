@@ -8,11 +8,18 @@ ms.date: 09/01/2021
 
 C# 8.0 introduces features that you can use to minimize the likelihood that your code causes the runtime to throw <xref:System.NullReferenceException?displayProperty=nameWithType>. There are three features that help you avoid these exceptions.
 
-- Improved static flow analysis that determines if a variable may be `null` before dereferencing it.
+- Improved static flow analysis that determines if a variable may be `null` before dereferencing it. 
 - Attributes that annotate APIs so that the flow analysis determines *null-state*.
 - Variable annotations that developers use to explicitly declare the intended *null-state* for a variable.
 
-The rest of this article describes how those three feature areas work to produce warnings when your code may be dereferencing a `null` value.
+The rest of this article describes how those three feature areas work to produce warnings when your code may be **dereferencing** a `null` value. Dereferencing a variable means to access one of its members using the `.` (dot) operator, as shown in the following example:
+
+```csharp
+string message = "Hello, World!";
+int length = message.Length; // dereferencing "message"
+```
+
+When you dereference a variable whose value is `null`, the runtime throws a <xref:System.NullReferenceException?displayProperty=nameWithType>.
 
 ## Null state analysis
 
@@ -110,7 +117,7 @@ Sometimes you must override a warning when you know a variable isn't null, but t
 name!.Length;
 ```
 
-Nullable reference types and nullable value types provide a similar semantic concept: A variable can represent a value or object, or that variable may refer to nothing. When a variable refers to nothing, it's `null`. However, nullable reference types and nullable value types are implemented differently: nullable value types are implemented using <xref:System.Nullable%601?displayProperty=nameWithType>, and nullable reference types are implemented by attributes read by the compiler. For example, `string?` and `string` are both represented by the same type: <xref:System.String?displayProperty=nameWithType>. However, `int?` and `int` are represented by `System.Nullable<System.Int32>` and <xref:System.Int32?displayProperty=nameWithType>, respectively.
+Nullable reference types and nullable value types provide a similar semantic concept: A variable can represent a value or object, or that variable may be `null`. However, nullable reference types and nullable value types are implemented differently: nullable value types are implemented using <xref:System.Nullable%601?displayProperty=nameWithType>, and nullable reference types are implemented by attributes read by the compiler. For example, `string?` and `string` are both represented by the same type: <xref:System.String?displayProperty=nameWithType>. However, `int?` and `int` are represented by `System.Nullable<System.Int32>` and <xref:System.Int32?displayProperty=nameWithType>, respectively.
 
 ## Generics
 
@@ -217,7 +224,7 @@ These options provide two distinct strategies to [update an existing codebase](n
 
 ## Known pitfalls
 
-Arrays and structs that contain reference types are known pitfalls in nullable references and the static analysis that determines null safety.
+Arrays and structs that contain reference types are known pitfalls in nullable references and the static analysis that determines null safety. In both situations, a non-nullable reference may be initialized to `null`, without generating warnings.
 
 ### Structs
 
@@ -240,7 +247,7 @@ public static class Program
     public static void PrintStudent(Student student)
     {
         Console.WriteLine($"First name: {student.FirstName.ToUpper()}");
-        Console.WriteLine($"Middle name: {student.MiddleName.ToUpper()}");
+        Console.WriteLine($"Middle name: {student.MiddleName?.ToUpper()}");
         Console.WriteLine($"Last name: {student.LastName.ToUpper()}");
     }
 

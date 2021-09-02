@@ -30,21 +30,28 @@ Consider the following example:
 
 ```csharp
 string message = null;
-Console.WriteLine($"The length of the message is {message.Length}); // warning: dereference null.
+
+// warning: dereference null.
+Console.WriteLine($"The length of the message is {message.Length});
+
 var originalMessage = message;
 message = "Hello, World!";
-Console.WriteLine($"The length of the message is {message.Length}); // No warning. Analysis determined "message" is not null.
-Console.WriteLine(originalMessage.Length); // warning!
+
+// No warning. Analysis determined "message" is not null.
+Console.WriteLine($"The length of the message is {message.Length});
+
+// warning!
+Console.WriteLine(originalMessage.Length);
 ```
 
 In the preceding example, the compiler determines that `message` is *maybe-null* when the first message is printed. There's no warning for the second message. The final line of code produces a warning because `originalMessage` might be null. The following example shows a more practical use for traversing a tree of nodes to the root, processing each node during the traversal:
 
 ```csharp
-void FindRoot(Node node, Action<Node> ProcessNode)
+void FindRoot(Node node, Action<Node> processNode)
 {
     for (var current = node; current != null; current = current.Parent)
     {
-        ProcessNode(current);
+        processNode(current);
     }
 }
 ```
@@ -65,7 +72,7 @@ public void PrintMessage(string message)
 }
 ```
 
-Based on inspection, any developer would consider this code safe, and shouldn't generate warnings. The compiler doesn't know that `IsNullOrWhiteSpace` provides a null check. You apply attributes to inform the compiler that `message` is *not-null* if and only if `IsNullOrWhiteSpace` returns `false`. In the previous example, the signature includes the `NotNullWhen` to indicate the null state of `message`:
+Based on inspection, any developer would consider this code safe, and shouldn't generate warnings. The compiler doesn't know that `IsNullOrWhiteSpace` provides a null check. You apply attributes to inform the compiler that `message` is *not-null* if and only if `IsNullOrWhiteSpace` returns `false`. In the previous example, the signature includes the [`NotNullWhen`](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute) to indicate the null state of `message`:
 
 ```csharp
 public static bool IsNullOrWhiteSpace([NotNullWhen(false)] string message);
@@ -153,7 +160,7 @@ You can choose which setting is best for your project:
 - Choose *annotations* to express your design intent before enabling warnings.
 - Choose *enabled* for new projects and active projects where you want to protect against null reference exceptions.
 
-The nullable annotation context and nullable warning context can be set for a project using the `Nullable` element in your *.csproj* file. This element configures how the compiler interprets the nullability of types and what warnings are generated. Valid settings are:
+The nullable annotation context and nullable warning context can be set for a project using the `<Nullable>` element in your *.csproj* file. This element configures how the compiler interprets the nullability of types and what warnings are generated. Valid settings are:
 
 - `enable`
 - `warnings`

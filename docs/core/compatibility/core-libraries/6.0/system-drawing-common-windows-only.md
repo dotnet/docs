@@ -70,7 +70,7 @@ Alternatively, you can enable support for non-Windows platforms by setting the `
 }
 ```
 
-This configuration switch was added to give cross-platform apps that depend heavily on this package time to migrate to more modern libraries. However, non-Windows bugs will not be fixed. In addition, we may completely remove support for non-Windows platforms in a future release, even if you enable it using the runtime configuration switch. 
+This configuration switch was added to give cross-platform apps that depend heavily on this package time to migrate to more modern libraries. However, non-Windows bugs will not be fixed. In addition, we may completely remove support for non-Windows platforms in a future release, even if you enable it using the runtime configuration switch.
 
 > [!NOTE]
 > Despite the name of the runtime switch, `System.Drawing.EnableUnixSupport`, it applies to various non-Windows platforms, such as macOS and Android, which can generally be considered flavors of Unix.

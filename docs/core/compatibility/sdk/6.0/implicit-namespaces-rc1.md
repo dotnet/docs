@@ -1,11 +1,11 @@
 ---
-title: "Preview-to-preview breaking change: Implicit namespaces disabled by default"
-description: Learn about the preview-to-preview breaking change in .NET 6 where the implicit namespaces feature is disabled by default in C# projects.
+title: "Preview-to-preview breaking change: Implicit `global using` directives disabled for existing projects"
+description: Learn about the preview-to-preview breaking change in .NET 6 where the implicit `global using` directives feature is disabled by default for existing C# projects.
 ms.date: 09/02/2021
 ---
-# Implicit namespaces disabled by default
+# Implicit `global using` directives disabled by default
 
-C# 10.0 introduced [global namespace](../../../../csharp/language-reference/keywords/using-directive.md#global-modifier) support for C# projects. In Preview 7, [the .NET SDK implicitly added global namespaces](implicit-namespaces.md) to .NET projects, and the feature was enabled by default. In .NET 6 RC 1, implicit namespaces are disabled by default, and some of the associated MSBuild property and item names have changed. You may need to re-enable the feature or explicitly include namespaces that your project depends on.
+C# 10.0 introduced [`global using`](../../../../csharp/language-reference/keywords/using-directive.md#global-modifier) directive support for C# projects. In Preview 7, [the .NET SDK implicitly added `global using` directives](implicit-namespaces.md) to new and existing .NET projects, by default. In .NET 6 RC 1, implicit `global using` directives are disabled for existing projects, and some of the associated MSBuild property and item names have changed. You may need to re-enable the feature or explicitly include namespaces that your project depends on.
 
 ## Version introduced
 
@@ -13,7 +13,7 @@ C# 10.0 introduced [global namespace](../../../../csharp/language-reference/keyw
 
 ## Old behavior
 
-In .NET 6 Preview 7, the .NET SDK implicitly includes a set of default namespaces for C# projects that target .NET 6 or later and that use one of the following SDKs:
+In .NET 6 Preview 7, the .NET SDK implicitly included a set of default namespaces for new *and existing* C# projects that target .NET 6 or later and that use one of the following SDKs:
 
 - Microsoft.NET.Sdk
 - Microsoft.NET.Sdk.Web
@@ -26,14 +26,15 @@ In addition, you could:
 
 ## New behavior
 
-Starting in .NET 6 RC 1, no implicit namespaces are included, by default. However, you can enable the feature in your C# project by setting the [`ImplicitUsings` MSBuild property](../../../project-sdk/msbuild-props.md#implicitusings) to `true` or `enable`.
+Starting in .NET 6 RC 1, no implicit `global using` directives are added when you retarget an existing project to .NET 6 or later. However, you can enable the feature in your C# project by setting the [`ImplicitUsings` MSBuild property](../../../project-sdk/msbuild-props.md#implicitusings) to `true` or `enable`.
 
 In addition, for C# projects:
 
+- For *new* projects that target .NET 6 or later, the `ImplicitUsings` property is set to `true`, so `global using` directives are added.
 - The MSBuild property used to enable or disable the feature is renamed to `ImplicitUsings`, and the SDK-specific properties, such as `DisableImplicitNamespaceImports_DotNet`, are no longer valid. The feature is either completely enabled or completely disabled.
 - The item type to include a specific namespaces is renamed to `Using`. For Visual Basic projects, you can continue to use the `Import` item type.
 
-If you enable implicit namespaces, the .NET SDK includes the default namespaces by adding `global using` directives to a generated file in the project's *obj* directory. The default namespaces are as follows:
+If you enable implicit `global using` directives, the .NET SDK adds `global using` directives for a set of default namespaces to a generated file in the project's *obj* directory. The default namespaces are as follows:
 
 | SDK | Default namespaces |
 | - | - |
@@ -53,8 +54,8 @@ The [Preview 7 breaking change](implicit-namespaces.md) caused a few issues in s
 
 If you relied on namespaces being implicitly included in your C# project, you can:
 
-- Re-enable implicit namespaces by setting the [`ImplicitUsings` MSBuild property](../../../project-sdk/msbuild-props.md#implicitusings) to `true` or `enable`.
-- Add `using` directives to your source files.
+- Re-enable implicit `global using` directives by setting the [`ImplicitUsings` MSBuild property](../../../project-sdk/msbuild-props.md#implicitusings) to `true` or `enable`.
+
 - Include the namespaces globally by adding `Using` items to your project file (or renaming your existing `Import` items). For example:
 
   ```xml
@@ -62,6 +63,8 @@ If you relied on namespaces being implicitly included in your C# project, you ca
     <Using Include="System.IO.Pipes" />
   </ItemGroup>
   ```
+
+- Add `using` directives to your source files or `global using` directives to a single source file.
 
 ## Affected APIs
 

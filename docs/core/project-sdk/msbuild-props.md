@@ -870,7 +870,7 @@ The following properties concern code in generated files:
 
 ### DisableImplicitNamespaceImports
 
-The `DisableImplicitNamespaceImports` property can be used to disable [implicit namespaces](../compatibility/sdk/6.0/implicit-namespaces.md) in Visual Basic projects that target .NET 6 or a later version. Implicit namespaces are the default namespaces that are globally included in a Visual Basic project. Set this property to `true` to disable implicit namespaces.
+The `DisableImplicitNamespaceImports` property can be used to disable [implicit `global using` directives](../compatibility/sdk/6.0/implicit-namespaces.md) in Visual Basic projects that target .NET 6 or a later version. Implicit namespaces are the default namespaces that are globally included in a Visual Basic project. Set this property to `true` to disable implicit namespaces.
 
 ```xml
 <PropertyGroup>
@@ -880,7 +880,7 @@ The `DisableImplicitNamespaceImports` property can be used to disable [implicit 
 
 ### ImplicitUsings
 
-The `ImplicitUsings` property can be used to enable implicit namespaces in C# projects that target .NET 6 or a later version and C# 10.0 or a later version. Implicit namespaces are the default namespaces that are globally included in a project based on the type of SDK. Set this property to `true` or `enable` to enable implicit namespaces.
+The `ImplicitUsings` property can be used to enable and disable implicit `global using` directives in C# projects that target .NET 6 or a later version and C# 10.0 or a later version. Implicit `global using` directives are added for a set of default namespaces based on the type of SDK. Set this property to `true` or `enable` to enable implicit `global using` directives. Set it to `false` to disable implicit `global using` directives.
 
 ```xml
 <PropertyGroup>

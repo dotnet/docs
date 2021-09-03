@@ -2,7 +2,7 @@
 title: "Using the ComWrappers API"
 description: A tutorial on properly implementing the ComWrappers API.
 author: AaronRobinsonMSFT
-ms.date: "02/09/2021"
+ms.date: "09/02/2021"
 helpviewer_keywords:
   - "COM interop, ComWrappers"
   - "RCW"
@@ -10,13 +10,17 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, COM wrappers"
   - "NativeAOT"
 ---
-# Using the `ComWrappers` API
+# Tutorial: Use the `ComWrappers` API
 
-In this tutorial we are going to see how to properly subclass the [`ComWrappers`][api_comwrappers] type to provide an optimized and AOT friendly COM interop solution. It is assumed the reader of this document is familiar COM, its architecture, and existing COM interop solutions.
+In this tutorial, you'll learn how to properly subclass the [`ComWrappers`][api_comwrappers] type to provide an optimized and AOT-friendly COM interop solution. Before starting this tutorial, you should be familiar with COM, its architecture, and existing COM interop solutions.
 
-We will be implementing the following interface definitions. These interfaces and their implementation will allow us to see an example of marshalling and unmarshalling types across the COM/.NET boundary, two distinct approaches to consuming native COM objects in .NET, and a recommended pattern for enabling custom COM interop in .NET 5 and beyond.
+In this tutorial, you'll implement the following interface definitions. These interfaces and their implementations will demonstrate:
 
-All source code used in this tutorial is available in the final section of this document.
+- Marshalling and unmarshalling types across the COM/.NET boundary.
+- Two distinct approaches to consuming native COM objects in .NET.
+- A recommended pattern for enabling custom COM interop in .NET 5 and beyond.
+
+All source code used in this tutorial is available in the [final section of this article](#sample-code).
 
 **C# definitions**
 
@@ -34,7 +38,7 @@ interface IDemoStoreType
 
 **Win32 C++ definitions**
 
-```c++
+```cpp
 MIDL_INTERFACE("92BAA992-DB5A-4ADD-977B-B22838EE91FD")
 IDemoGetType : public IUnknown
 {
@@ -50,18 +54,18 @@ IDemoStoreType : public IUnknown
 
 ## Overview of the `ComWrappers` design
 
-The [`ComWrappers`][api_comwrappers] API was designed to provide the minimal runtime interaction needed to accomplish COM interop with the .NET 5+ runtime. This means that many of the niceties that exist with the build-in COM interop system are not present and must be built up from basic building blocks. The two primary responsibilities of the API are:
+The [`ComWrappers`][api_comwrappers] API was designed to provide the minimal interaction needed to accomplish COM interop with the .NET 5+ runtime. This means that many of the niceties that exist with the built-in COM interop system are not present and must be built up from basic building blocks. The two primary responsibilities of the API are:
 
 - Enable efficient object identity (for example, mapping between an `IUnknown*` instance and a managed object).
 - Efficient Garbage Collector (GC) interaction.
 
-The above are accomplished by requiring wrapper creation and acquisition to go through the `ComWrappers` API.
+These efficiencies are accomplished by requiring wrapper creation and acquisition to go through the `ComWrappers` API.
 
-Since the `ComWrappers` API has so few responsibilities it stands to reason the majority of the interop work is to be handled by the consumer &ndash; this is true. However, the additional work is largely mechanical and is expected to be performed by a source generation solution. As an example, the [C#/WinRT tool chain][repo_cswinrt] is a source generator solution that is built on top of `ComWrappers` to provide WinRT interop support.
+Since the `ComWrappers` API has so few responsibilities, it stands to reason that the majority of the interop work should be handled by the consumer &ndash; this is true. However, the additional work is largely mechanical and is expected to be performed by a source-generation solution. As an example, the [C#/WinRT tool chain][repo_cswinrt] is a source-generator solution that's built on top of `ComWrappers` to provide WinRT interop support.
 
-## Implementing a `ComWrappers` subclass
+## Implement a `ComWrappers` subclass
 
-Providing a `ComWrappers` subclass means giving enough information to the .NET runtime in order to create and record wrappers for managed objects being projected into COM and COM objects being projected into .NET. Before we look at an outline of the subclass we should define some terms.
+Providing a `ComWrappers` subclass means giving enough information to the .NET runtime to create and record wrappers for managed objects being projected into COM and COM objects being projected into .NET. Before we look at an outline of the subclass, we should define some terms.
 
 **Managed Object Wrapper** &ndash; Managed .NET objects require wrappers to enable consumption from a non-.NET environment. These wrappers are historically called COM Callable Wrappers (**CCW**).
 
@@ -69,7 +73,7 @@ Providing a `ComWrappers` subclass means giving enough information to the .NET r
 
 ### Step 1 &ndash; Define methods to implement and understand their intent
 
-The following 3 methods are required to be implemented in order to extend the `ComWrappers` type. Each of these methods represent the user's participation in the creation or deletion of a type of wrapper. The `ComputeVtables()` and `CreateObject()` are for the creation of a Managed Object Wrapper and Native Object Wrapper respectively, and the `ReleaseObjects()` is used by the runtime to make a request for the supplied collection of wrappers be "released" from the underlying native object. The `ReleaseObjects()` can typically be left as throwing `NotImplementedException` since it is only called in an advanced scenario involving the [Reference Tracker framework][api_referencetracker].
+To extend the `ComWrappers` type, you must implement the following three methods. Each of these methods represents the user's participation in the creation or deletion of a type of wrapper. The `ComputeVtables()` and `CreateObject()` methods create a Managed Object Wrapper and Native Object Wrapper, respectively. The `ReleaseObjects()` method is used by the runtime to make a request for the supplied collection of wrappers to be "released" from the underlying native object. In most cases, the body of the `ReleaseObjects()` method can simply throw `NotImplementedException`, since it's only called in an advanced scenario involving the [Reference Tracker framework][api_referencetracker].
 
 ```csharp
 class DemoComWrappers : ComWrappers
@@ -85,7 +89,7 @@ class DemoComWrappers : ComWrappers
 }
 ```
 
-Implementing the `ComputeVtables()` method requires deciding what managed types one would like to support. For this tutorial we will be supporting the two aforementioned interfaces (that is, `IDemoGetType` and `IDemoStoreType`) and a managed type implementing the two interfaces (that is, `DemoImpl`).
+To implement the `ComputeVtables()` method, decide which managed types you'd like to support. For this tutorial, we'll support the two previously interfaces (`IDemoGetType` and `IDemoStoreType`) and a managed type that implements the two interfaces (`DemoImpl`).
 
 ```csharp
 class DemoImpl : IDemoGetType, IDemoStoreType
@@ -96,13 +100,13 @@ class DemoImpl : IDemoGetType, IDemoStoreType
 }
 ```
 
-For the `CreateObject()` method we will also need to determine what we would like to support. In this case though, we only know the COM interfaces we are interested in not the COM classes. The interfaces being consumed from the COM side are the same as the ones we are projecting from the .NET side (that is, `IDemoGetType` and `IDemoStoreType`).
+For the `CreateObject()` method, you'll also need to determine what you'd like to support. In this case, though, we only know the COM interfaces we're interested in, not the COM classes. The interfaces being consumed from the COM side are the same as the ones we're projecting from the .NET side (that is, `IDemoGetType` and `IDemoStoreType`).
 
-In this tutorial we will not be implementing `ReleaseObjects()`.
+We won't implement `ReleaseObjects()` in this tutorial.
 
-### Step 2 &ndash; Implementing `ComputeVtables()`
+### Step 2 &ndash; Implement `ComputeVtables()`
 
-Let's start with the Managed Object Wrapper first &ndash; they are actually much easier. We will be building a [Virtual Method Table][wiki_vtable], or a "vtable", for each interface in order to project them into the COM environment. For this tutorial, we are going to define a vtable as a sequence of pointers, where each pointer represents an implementation of a function on an interface &ndash; order is _very_ important here. In COM, every interface inherits from `IUnknown`. The `IUnknown` type has 3 methods defined in the following order: `QueryInterface()`, `AddRef()`, and `Release()`. After the `IUnknown` methods come the specific interface methods. For example, consider `IDemoGetType` and `IDemoStoreType`. Conceptually, the vtables for the types would look like the following:
+Let's start with the Managed Object Wrapper &ndash; these wrappers are easier. You'll build a [Virtual Method Table][wiki_vtable], or *vtable*, for each interface in order to project them into the COM environment. For this tutorial, you'll define a vtable as a sequence of pointers, where each pointer represents an implementation of a function on an interface &ndash; order is _very_ important here. In COM, every interface inherits from `IUnknown`. The `IUnknown` type has three methods defined in the following order: `QueryInterface()`, `AddRef()`, and `Release()`. After the `IUnknown` methods come the specific interface methods. For example, consider `IDemoGetType` and `IDemoStoreType`. Conceptually, the vtables for the types would look like the following:
 
 ```
   IDemoGetType  |  IDemoStoreType
@@ -113,22 +117,22 @@ Release         | Release
 GetString       | StoreString
 ```
 
-Looking at `DemoImpl`, we already have an implementation for `GetString()` and `StoreString()`, but what about the `IUnknown` functions? How to [implement an `IUnknown` instance][doc_impliunknown] is beyond the scope of this tutorial but it can be done manually in `ComWrappers`. However, in this tutorial we are going to let the runtime handle that part. We can get the `IUnknown` implementation using the [`ComWrappers.GetIUnknownImpl()`][api_comwrappers] method.
+Looking at `DemoImpl`, we already have an implementation for `GetString()` and `StoreString()`, but what about the `IUnknown` functions? How to [implement an `IUnknown` instance][doc_impliunknown] is beyond the scope of this tutorial, but it can be done manually in `ComWrappers`. However, in this tutorial, you'll let the runtime handle that part. You can get the `IUnknown` implementation using the [`ComWrappers.GetIUnknownImpl()`][api_comwrappers] method.
 
-It would appear we have the implementation for all our methods but unfortunately only the `IUnknown` functions are consumable in a COM vtable. Since COM is outside of the runtime, we will need to create native function pointers to our `DemoImpl` implementation. This can be done easily using C# function pointers and the [`UnmanagedCallersOnlyAttribute`][api_unmanagedcallersonly]. We can create a function to insert into the vtable by creating a `static` function that mimics the COM function signature. Below is an example of the COM signature for `IDemoGetType.GetString()` &ndash; recall from the COM ABI that the first argument is the instance itself.
+It might seem like you've implemented all the methods, but unfortunately, only the `IUnknown` functions are consumable in a COM vtable. Since COM is outside of the runtime, you'll need to create native function pointers to your `DemoImpl` implementation. This can be done easily using C# function pointers and the [`UnmanagedCallersOnlyAttribute`][api_unmanagedcallersonly]. You can create a function to insert into the vtable by creating a `static` function that mimics the COM function signature. Following is an example of the COM signature for `IDemoGetType.GetString()` &ndash; recall from the COM ABI that the first argument is the instance itself.
 
 ```csharp
 [UnmanagedCallersOnly]
 public static int GetString(IntPtr _this, IntPtr* str);
 ```
 
-The wrapper implementation of `IDemoGetType.GetString()` should consist of marshalling logic and then a dispatch to the managed object being wrapped. All the state for dispatch is contained within the provided `_this` argument. The `_this` argument will actually be of type `ComInterfaceDispatch*`. This type represents a low-level structure with a single member that will be discussed shortly. Further details of this type and its layout are an implementation detail of the runtime and should not be depended upon. In order to retrieve the managed instance from a `ComInterfaceDispatch*` instance, one should use the following:
+The wrapper implementation of `IDemoGetType.GetString()` should consist of marshalling logic and then a dispatch to the managed object being wrapped. All the state for dispatch is contained within the provided `_this` argument. The `_this` argument will actually be of type `ComInterfaceDispatch*`. This type represents a low-level structure with a single member that will be discussed shortly. Further details of this type and its layout are an implementation detail of the runtime and should not be depended upon. In order to retrieve the managed instance from a `ComInterfaceDispatch*` instance, use the following code:
 
 ```csharp
 IDemoGetType inst = ComInterfaceDispatch.GetInstance<IDemoGetType>((ComInterfaceDispatch*)_this);
 ```
 
-Now that we have a C# method that can be inserted into a vtable we can construct it. Note the use of [`RuntimeHelpers.AllocateTypeAssociatedMemory()`][api_allocatetypeassociatedmemory] for allocating memory in a way that works with [unloadable][doc_unloadability] assemblies.
+Now that you have a C# method that can be inserted into a vtable, you can construct it. Note the use of [`RuntimeHelpers.AllocateTypeAssociatedMemory()`][api_allocatetypeassociatedmemory] for allocating memory in a way that works with [unloadable][doc_unloadability] assemblies.
 
 ```csharp
 GetIUnknownImpl(
@@ -152,7 +156,7 @@ IDemoGetTypeManagedWrapper.GetString;
 }
 ```
 
-The allocation of vtables is the first part of implementing `ComputeVtables()`. We should also construct comprehensive definitions for types that we are planning to support &ndash; think `DemoImpl`. Using the constructed vtables we can now create a series of `ComInterfaceEntry` instances that represent the complete view of the managed object in COM.
+The allocation of vtables is the first part of implementing `ComputeVtables()`. You should also construct comprehensive definitions for types that you're planning to support &ndash; think `DemoImpl`. Using the constructed vtables, you can now create a series of `ComInterfaceEntry` instances that represent the complete view of the managed object in COM.
 
 ```csharp
 {
@@ -188,7 +192,7 @@ out int count)
 }
 ```
 
-Once the `ComputeVtables()` method is implemented the `ComWrappers` subclass will be able to produce Managed Object Wrappers for instances of `DemoImpl`. Be aware that the returned Managed Object Wrapper is of type `IUnknown*`. If the native API that is being passed the wrapper requires a different interface, a [`Marshal.QueryInterface()`][api_marshalqueryinterface] for that interface must be performed.
+Once you've implemented the `ComputeVtables()` method, the `ComWrappers` subclass will be able to produce Managed Object Wrappers for instances of `DemoImpl`. Be aware that the returned Managed Object Wrapper is of type `IUnknown*`. If the native API that's being passed to the wrapper requires a different interface, a [`Marshal.QueryInterface()`][api_marshalqueryinterface] for that interface must be performed.
 
 ```csharp
 var cw = new DemoComWrappers();
@@ -196,13 +200,13 @@ var demo = new DemoImpl();
 IntPtr ccw = cw.GetOrCreateComInterfaceForObject(demo, CreateComInterfaceFlags.None);
 ```
 
-### Step 3 &ndash; Implementing `CreateObject()`
+### Step 3 &ndash; Implement `CreateObject()`
 
-Construction of Native Object Wrappers has more implementation options and a great deal more nuance. The first question to address is permissive the `ComWrappers` subclass will be in support COM types. If the idea is to support all COM types, which is possible, a substantial amount of code will need to be written and/or some very clever uses of `Reflection.Emit` will need to be employed. For this tutorial we will only be support COM instances that implement both `IDemoGetType` and `IDemoStoreType`. Since we know there is a finite set and have restricted that any supplied COM instance must implement both interfaces we could provide a single statically defined wrapper; however, dynamic cases are common enough in COM we will explore both options.
+Constructing a Native Object Wrapper has more implementation options and a great deal more nuance than constructing a Managed Object Wrapper. The first question to address is how permissive the `ComWrappers` subclass will be in supporting COM types. To support all COM types, which is possible, you'll need to write a substantial amount of code or employ some clever uses of `Reflection.Emit`. For this tutorial, you'll only support COM instances that implement both `IDemoGetType` and `IDemoStoreType`. Since you know there is a finite set and have restricted that any supplied COM instance must implement both interfaces, you could provide a single, statically defined wrapper; however, dynamic cases are common enough in COM that we'll explore both options.
 
 #### Static Native Object Wrapper
 
-We will look at the static implementation first. The static Native Object Wrapper involves defining a managed type that implements the .NET interfaces and can then forward the calls on the managed type to the COM instance. A rough outline of the static wrapper is below.
+Let's look at the static implementation first. The static Native Object Wrapper involves defining a managed type that implements the .NET interfaces and can then forward the calls on the managed type to the COM instance. A rough outline of the static wrapper follows.
 
 ```csharp
 class DemoNativeStaticWrapper
@@ -217,7 +221,7 @@ class DemoNativeStaticWrapper
 }
 ```
 
-Constructing an instance of this class and providing it as a wrapper requires defining some policy. If this type is used as a wrapper it would seem that since it implements both interfaces that the underlying COM instance should implement both interfaces too. Given that we adopting this policy we need to ensure this through calls to [`Marshal.QueryInterface()`][api_marshalqueryinterface] on the COM instance to confirm.
+To construct an instance of this class and provide it as a wrapper, you must define some policy. If this type is used as a wrapper, it would seem that since it implements both interfaces, the underlying COM instance should implement both interfaces too. Given that you're adopting this policy, you'll need to confirm this through calls to [`Marshal.QueryInterface()`][api_marshalqueryinterface] on the COM instance.
 
 ```csharp
 int hr = Marshal.QueryInterface(ptr, ref IDemoGetType.IID_IDemoGetType, out IntPtr IDemoGetTypeInst);
@@ -242,7 +246,7 @@ return new DemoNativeStaticWrapper()
 
 #### Dynamic Native Object Wrapper
 
-Dynamic wrappers are more flexible in that they provide a way for types to be query at run time instead of statically. In order to provide this support we will utilize [`IDynamicInterfaceCastable`][api_idynamicinterfacecastable]. Observe that `DemoNativeDynamicWrapper` only implements this interface. The functionality that the interface provides is a chance at run time to determine what type is supported.
+Dynamic wrappers are more flexible because they provide a way for types to be queried at run time instead of statically. In order to provide this support, you'll utilize [`IDynamicInterfaceCastable`][api_idynamicinterfacecastable]. Observe that `DemoNativeDynamicWrapper` only implements this interface. The functionality that the interface provides is a chance to determine what type is supported at run time.
 
 ```csharp
 internal class DemoNativeDynamicWrapper
@@ -256,7 +260,7 @@ internal class DemoNativeDynamicWrapper
 }
 ```
 
-Let's look at one of the types that `DemoNativeDynamicWrapper` will dynamically support. The `IDataStoreType` is defined below using the default interface methods feature.
+Let's look at one of the types that `DemoNativeDynamicWrapper` will dynamically support. The following code defines the `IDataStoreType` type using the *default interface methods* feature.
 
 ```csharp
 [DynamicInterfaceCastableImplementation]
@@ -272,9 +276,12 @@ unsafe interface IDemoStoreTypeNativeWrapper : IDemoStoreType
 }
 ```
 
-There are two important things to note in this example. The first is `DynamicInterfaceCastableImplementationAttribute`. This attribute is required on any type that is returned from a `IDynamicInterfaceCastable` method. It has the added benefit of making IL Linking easier which means NativeAOT scenarios are more reliable. The second is the cast to `DemoNativeDynamicWrapper`. This is part of the dynamic nature of `IDynamicInterfaceCastable`. The type that is returned from `IDynamicInterfaceCastable.GetInterfaceImplementation()` is used to blanket the type that implements `IDynamicInterfaceCastable`.
+There are two important things to note in this example:
 
-Regardless of which Native Object Wrapper is used, the ability to invoke functions on a COM instance is needed. The implementation of `IDemoStoreTypeNativeWrapper.StoreString()` can serve as an example employing `unmanaged` C# function pointers.
+1) The `DynamicInterfaceCastableImplementationAttribute` attribute. This attribute is required on any type that is returned from a `IDynamicInterfaceCastable` method. It has the added benefit of making IL Linking easier, which means NativeAOT scenarios are more reliable.
+2) The cast to `DemoNativeDynamicWrapper`. This is part of the dynamic nature of `IDynamicInterfaceCastable`. The type that's returned from `IDynamicInterfaceCastable.GetInterfaceImplementation()` is used to blanket the type that implements `IDynamicInterfaceCastable`.
+
+Regardless of which Native Object Wrapper is used, you need the ability to invoke functions on a COM instance. The implementation of `IDemoStoreTypeNativeWrapper.StoreString()` can serve as an example of employing `unmanaged` C# function pointers.
 
 ```csharp
 public static void StoreString(IntPtr inst, int len, string? str)
@@ -289,7 +296,7 @@ public static void StoreString(IntPtr inst, int len, string? str)
 }
 ```
 
-The dereferencing of the COM instance to access its vtable implementation warrants examining. The COM ABI defines that the first pointer of an object is to the type's vtable and from there the desired slot can be accessed. Let's assume the address of the COM object is `0x10000`. The first pointer sized value should be the address of the vtable &ndash; in this example `0x20000`. Once we are at the vtable we look for the 4th slot (3 in zero-based indexing) to access the `StoreString()` implementation.
+Let's examine the dereferencing of the COM instance to access its vtable implementation. The COM ABI defines that the first pointer of an object is to the type's vtable and, from there, the desired slot can be accessed. Let's assume the address of the COM object is `0x10000`. The first pointer-sized value should be the address of the vtable &ndash; in this example `0x20000`. Once you're at the vtable, you look for the fourth slot (index 3 in zero-based indexing) to access the `StoreString()` implementation.
 
 ```
 COM instance
@@ -302,9 +309,9 @@ VTable for IDemoStoreType
 0x20018  <Address of StoreString>
 ```
 
-Having the function pointer then allows us to dispatch to that member function on that object by passing the object instance as the fist parameter &ndash; that should look familiar based on the function definitions when implementing the Managed Object Wrapper.
+Having the function pointer then allows you to dispatch to that member function on that object by passing the object instance as the first parameter. This pattern should look familiar based on the function definitions of the Managed Object Wrapper implementation.
 
-Once the `CreateObject()` method is implemented the `ComWrappers` subclass will be able to produce Native Object Wrappers for COM instances that implement both `IDemoGetType` and `IDemoStoreType`.
+Once the `CreateObject()` method is implemented, the `ComWrappers` subclass will be able to produce Native Object Wrappers for COM instances that implement both `IDemoGetType` and `IDemoStoreType`.
 
 ```csharp
 IntPtr iunk = ...; // Get a COM instance from native code.
@@ -313,19 +320,22 @@ object rcw = cw.GetOrCreateObjectForComInstance(ccw, CreateObjectFlags.UniqueIns
 
 ### Step 4 &ndash; Native Object Wrapper lifetime details
 
-The `ComputeVtables()` and `CreateObject()` implementations discussed some wrapper lifetime details but further details need discussion. This can be a short step but can also significantly increase the complexity of the `ComWrappers` design.
+The `ComputeVtables()` and `CreateObject()` implementations covered some wrapper lifetime details, but there are further considerations. While this can be a short step, it can also significantly increase the complexity of the `ComWrappers` design.
 
-Unlike the Managed Object Wrapper, which is controlled by calls to its `AddRef()`/`Release()`, the lifetime of a Native Object Wrapper is non-deterministically handled by the GC. The question here is, when does the Native Object Wrapper call `Release()` on the `IntPtr` that represents the COM instance? There are two general buckets here.
+Unlike the Managed Object Wrapper, which is controlled by calls to its `AddRef()` and `Release()` methods, the lifetime of a Native Object Wrapper is nondeterministically handled by the GC. The question here is, when does the Native Object Wrapper call `Release()` on the `IntPtr` that represents the COM instance? There are two general buckets:
 
-1) The Native Object Wrapper's Finalizer should be responsible for calling the COM instance's `Release()`. This is the only time when it is safe to call this method since at this point it has been correctly determined by the GC there are no other references to the Native Object Wrapper in the .NET runtime. There can be complexity here if one is properly supporting COM Apartments &ndash; see the "Additional considerations" section.
+1) The Native Object Wrapper's Finalizer is responsible for calling the COM instance's `Release()` method. This is the only time when it's safe to call this method. At this point, it's been correctly determined by the GC that there are no other references to the Native Object Wrapper in the .NET runtime. There can be complexity here if you're properly supporting COM Apartments; for more information, see the [Additional considerations](#additional-considerations) section.
 
-2) Have the returned Native Object Wrapper implement `IDisposable` and call `Release()` in `Dispose()`. This pattern should only be supported if during the `CreateObject()` call the `CreateObjectFlags.UniqueInstance` flag was passed in. **Note** if this requirement is not followed it is possible for disposed Native Object Wrappers to be reused after being disposed.
+2) The Native Object Wrapper implements `IDisposable` and calls `Release()` in `Dispose()`.
+
+  > [!NOTE]
+  > This pattern should only be supported if, during the `CreateObject()` call, the `CreateObjectFlags.UniqueInstance` flag was passed in. If this requirement is not followed, it's possible for disposed Native Object Wrappers to be reused after being disposed.
 
 ## Using the `ComWrappers` subclass
 
-We now have a `ComWrappers` subclass that can be tested. In order to avoid creating a native library that returns a COM instance that implements `IDemoGetType` and `IDemoStoreType` we are going to use the Managed Object Wrapper and treat it as a COM instance &ndash; this must be possible in order to pass it COM anyways.
+You now have a `ComWrappers` subclass that can be tested. To avoid creating a native library that returns a COM instance that implements `IDemoGetType` and `IDemoStoreType`, you'll use the Managed Object Wrapper and treat it as a COM instance &ndash; this must be possible in order to pass it COM anyways.
 
-Let's create a Managed Object Wrapper first. We will instantiate a `DemoImpl` instance display its current string state.
+Let's create a Managed Object Wrapper first. Instantiate a `DemoImpl` instance and display its current string state.
 
 ```csharp
 var demo = new DemoImpl();
@@ -334,7 +344,7 @@ string? value = demo.GetString();
 Console.WriteLine($"Initial string: {value ?? "<null>"}");
 ```
 
-Now we can create an instance of `DemoComWrappers` and create a Managed Object Wrapper that we could then pass into a COM environment.
+Now you can create an instance of `DemoComWrappers` and a Managed Object Wrapper that you can then pass into a COM environment.
 
 ```csharp
 var cw = new DemoComWrappers();
@@ -342,13 +352,13 @@ var cw = new DemoComWrappers();
 IntPtr ccw = cw.GetOrCreateComInterfaceForObject(demo, CreateComInterfaceFlags.None);
 ```
 
-Instead of passing the Managed Object Wrapper to a COM environment let's pretend we just received this COM instance and instead create a Native Object Wrapper for it.
+Instead of passing the Managed Object Wrapper to a COM environment, pretend you just received this COM instance, so you'll create a Native Object Wrapper for it instead.
 
 ```csharp
 var rcw = cw.GetOrCreateObjectForComInstance(ccw, CreateObjectFlags.UniqueInstance);
 ```
 
-With the Native Object Wrapper we should be able to cast it to one of the desired interfaces and use it as a normal managed object. We can examine the `DemoImpl` instance and observe the impact of operations on the Native Object Wrapper that is wrapping a Managed Object Wrapper that is in turn wrapping the managed instance is reflected.
+With the Native Object Wrapper, you should be able to cast it to one of the desired interfaces and use it as a normal managed object. You can examine the `DemoImpl` instance and observe the impact of operations on the Native Object Wrapper that's wrapping a Managed Object Wrapper that's in turn wrapping the managed instance.
 
 ```csharp
 var getter = (IDemoGetType)rcw;
@@ -369,7 +379,7 @@ value = getter.GetString();
 Console.WriteLine($"Get string through wrapper: {value}");
 ```
 
-Since our `ComWrapper` subclass was designed to support `CreateObjectFlags.UniqueInstance` we can clean up the Native Object Wrapper immediately instead of waiting for a GC to occur.
+Since your `ComWrapper` subclass was designed to support `CreateObjectFlags.UniqueInstance`, you can clean up the Native Object Wrapper immediately instead of waiting for a GC to occur.
 
 ```csharp
 (rcw as IDisposable)?.Dispose();
@@ -377,19 +387,19 @@ Since our `ComWrapper` subclass was designed to support `CreateObjectFlags.Uniqu
 
 ## Additional considerations
 
-**Native AOT** &ndash; Ahead of Time (AOT) compilation provides improved startup cost as JIT compilation is avoided. Removing the need for JIT compilation is also often required on some platforms. Supporting AOT was a goal of the `ComWrappers` API but any wrapper implementation must be careful not to inadvertantly introduce cases where AOT breaks down, such as using Reflection. The `Type.GUID` property is one such example of where Reflection is used but in a non-obvious way. The `Type.GUID` property uses Reflection to inspect the type's attributes and then potentially the type's name and containing Assembly in order to generate its value.
+**Native AOT** &ndash; Ahead of Time (AOT) compilation provides improved startup cost as JIT compilation is avoided. Removing the need for JIT compilation is also often required on some platforms. Supporting AOT was a goal of the `ComWrappers` API, but any wrapper implementation must be careful not to inadvertantly introduce cases where AOT breaks down, such as using reflection. The `Type.GUID` property is an example of where reflection is used, but in a non-obvious way. The `Type.GUID` property uses reflection to inspect the type's attributes and then potentially the type's name and containing assembly in order to generate its value.
 
-**Source generation** &ndash; The vast majority of the code that is needed for COM interop and a `ComWrappers` implementation can and in all likelihood be auto-generated by some tooling. Source for both types of wrappers could be generated given the proper COM definitions (for example, Type Library (TLB), IDL, or a Primary Interop Assembly (PIA)).
+**Source generation** &ndash; Most of the code that's needed for COM interop and a `ComWrappers` implementation can likely be autogenerated by some tooling. Source for both types of wrappers could be generated given the proper COM definitions (for example, Type Library (TLB), IDL, or a Primary Interop Assembly (PIA)).
 
-**Global registration** &ndash; Since the `ComWrappers` was designed as a new phase of COM interop it is needed to have some way to partially integrate with the existing system. There are globally impacting static methods on the `ComWrappers` API that permit registration of a global instance for various support. These methods are designed for `ComWrappers` instances that are expecting to provide comprehensive COM interop support in all cases &ndash; akin to the built-in COM interop system.
+**Global registration** &ndash; Since the `ComWrappers` API was designed as a new phase of COM interop, it needed to have some way to partially integrate with the existing system. There are globally impacting static methods on the `ComWrappers` API that permit registration of a global instance for various support. These methods are designed for `ComWrappers` instances that are expecting to provide comprehensive COM interop support in all cases &ndash; akin to the built-in COM interop system.
 
-[**Reference Tracker support**][api_referencetracker] &ndash; This support is primary used for WinRT scenarios and represents an advanced scenario. For the majority of `ComWrapper` implementations either a `CreateComInterfaceFlags.TrackerSupport` or `CreateObjectFlags.TrackerObject` flags should throw a `NotSupportedException`. If one would like to enable this support, perhaps on a Windows or even non-Windows platform, it is highly recommended to reference the [C#/WinRT tool chain][repo_cswinrt].
+[**Reference Tracker support**][api_referencetracker] &ndash; This support is primary used for WinRT scenarios and represents an advanced scenario. For the majority of `ComWrapper` implementations, either a `CreateComInterfaceFlags.TrackerSupport` or `CreateObjectFlags.TrackerObject` flag should throw a `NotSupportedException`. If you'd like to enable this support, perhaps on a Windows or even non-Windows platform, it is highly recommended to reference the [C#/WinRT tool chain][repo_cswinrt].
 
-Aside from the lifetime, type system, and functional features that are discussed above, a COM compliant implementation of `ComWrappers` requires additional considerations. The following should also be considered for any implementation that will be used on the Windows platform.
+Aside from the lifetime, type system, and functional features that are discussed previously, a COM-compliant implementation of `ComWrappers` requires additional considerations. For any implementation that will be used on the Windows platform, there are additional considerations:
 
-[**Apartments**][doc_comapartments] &ndash; COM's organizational structure for threading is called "Apartments" and has strict rules that must be followed for stable operations. This tutorial does not implement apartment aware Native Object Wrappers but for any production ready implementation it must. In order to accomplish this we recommend using the [`RoGetAgileReference`][api_rogetagilereference] API introduced in Windows 8. Prior to Windows 8 needs should consider the [Global Interface Table][doc_globalinterfacetable].
+- [**Apartments**][doc_comapartments] &ndash; COM's organizational structure for threading is called "Apartments" and has strict rules that must be followed for stable operations. This tutorial does not implement apartment-aware Native Object Wrappers, but any production ready implementation should be apartment-aware. To accomplish this, we recommend using the [`RoGetAgileReference`][api_rogetagilereference] API introduced in Windows 8. For versions prior to Windows 8, consider the [Global Interface Table][doc_globalinterfacetable].
 
-[**Security**][doc_comsecurity] &ndash; COM provides a rich security model for class activation and proxied permission.
+- [**Security**][doc_comsecurity] &ndash; COM provides a rich security model for class activation and proxied permission.
 
 <!-- Reusable links -->
 
@@ -406,9 +416,9 @@ Aside from the lifetime, type system, and functional features that are discussed
 [doc_comsecurity]:/windows/win32/com/security-in-com
 [doc_globalinterfacetable]:/windows/win32/com/when-to-use-the-global-interface-table
 [doc_impliunknown]:/windows/win32/com/using-and-implementing-iunknown
-[doc_nullable]:/dotnet/csharp/nullable-references
-[doc_unloadability]:/dotnet/standard/assembly/unloadability
-[doc_unsafekeyword]:/dotnet/csharp/language-reference/keywords/unsafe
+[doc_nullable]:../../csharp/nullable-references.md
+[doc_unloadability]:../assembly/unloadability.md
+[doc_unsafekeyword]:../../csharp/language-reference/keywords/unsafe.md
 
 [repo_cswinrt]:https://github.com/microsoft/CsWinRT
 
@@ -416,7 +426,7 @@ Aside from the lifetime, type system, and functional features that are discussed
 
 ## Sample code
 
-The following source code can be copied into a new .NET 5+ console application. The project will need to be updated to allow [`unsafe` code blocks][doc_unsafekeyword] and enable [Nullable][doc_nullable] annotations.
+The following source code can be copied into a new .NET 5+ console application. You'll need to update the project to allow [`unsafe` code blocks][doc_unsafekeyword] and enable [Nullable][doc_nullable] annotations.
 
 ```csharp
 using System;

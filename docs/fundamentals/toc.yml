@@ -41,7 +41,6 @@ items:
         href: ../core/install/linux-snap.md
       - name: Install script & binaries
         href: ../core/install/linux-scripted-manual.md
-
     - name: Remove outdated runtimes and SDKs
       href: ../core/install/remove-runtime-sdk-versions.md
     - name: Manage .NET templates
@@ -1528,7 +1527,7 @@ items:
       href: ../core/versions/index.md
     - name: .NET version selection
       href: ../core/versions/selection.md
-  - name: Run-time configuration
+  - name: Runtime configuration
     items:
     - name: Settings
       href: ../core/run-time-config/index.md
@@ -2617,7 +2616,7 @@ items:
       href: ../core/porting/breaking-changes.md
   - name: Pre-Migration
     items:
-    - name: Asses the portability of your project
+    - name: Assess the portability of your project
       items:
       - name: Unsupported Dependencies
         href: ../core/porting/third-party-deps.md

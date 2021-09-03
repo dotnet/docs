@@ -72,6 +72,16 @@ Specifying `IncludeAllContentForSelfExtract` will extract all files (even the ma
 >
 > To prevent tampering, these directories should not be writable by users or services with different privileges, (so **not** _/tmp_ or _/var/tmp_ on most Linux and MacOS systems).
 
+> [!NOTE]
+> In some Linux environments (for example under *systemd*) the default extraction will not work because `$HOME` is not defined. In such cases it's recommended to set `$DOTNET_BUNDLE_EXTRACT_BASE_DIR` explicitly.
+>
+> For *systemd* a good alternative seems to be defining DOTNET_BUNDLE_EXTRACT_BASE_DIR in your service's unit file as `%h/.net`, which systemd expands correctly to `$HOME/.net` for the account running the service.
+>
+> ```
+> [Service]
+> Environment="DOTNET_BUNDLE_EXTRACT_BASE_DIR=%h/.net"
+> ```
+
 ## Other considerations
 
 Single-file application will have all related PDB files alongside it and will not be bundled by default. If you want to include PDBs inside the assembly for projects you build, set the `DebugType` to `embedded` as described [below](#include-pdb-files-inside-the-bundle) in detail.

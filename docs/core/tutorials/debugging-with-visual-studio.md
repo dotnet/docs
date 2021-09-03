@@ -33,7 +33,7 @@ In the Debug configuration, a program compiles with full symbolic debug informat
 
    The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile the Debug version of the app:
 
-   :::image type="content" source="./media/debugging-with-visual-studio/visual-studio-toolbar-debug-net6.png" alt-text="Visual Studio toolbar with debug highlighted":::
+   :::image type="content" source="./media/debugging-with-visual-studio/visual-studio-toolbar-debug.png" alt-text="Visual Studio toolbar with debug highlighted":::
 
 ## Set a breakpoint
 
@@ -137,7 +137,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    C#
 
-   :::image type="content" source="./media/debugging-with-visual-studio/step-into-method-net6.png" alt-text="Visual Studio step into method - C#":::
+   :::image type="content" source="./media/debugging-with-visual-studio/step-into-method.png" alt-text="Visual Studio step into method - C#":::
 
    Visual Basic
 
@@ -153,7 +153,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    Visual Basic
 
-   :::image type="content" source="./media/debugging-with-visual-studio/vb-step-into-source-method-net6.png" alt-text="Visual Studio step into method source - Visual Basic":::
+   :::image type="content" source="./media/debugging-with-visual-studio/vb-step-into-source-method.png" alt-text="Visual Studio step into method source - Visual Basic":::
 
 1. Press <kbd>F11</kbd>. Visual Studio highlights the statement that includes the `name` variable assignment. The **Locals** window shows that `name` is `null`, and the console window displays the string "What is your name?".
 
@@ -177,7 +177,7 @@ Once you've tested the Debug version of your application, you should also compil
 
 To build and test the Release version of your console application, change the build configuration on the toolbar from **Debug** to **Release**.
 
-:::image type="content" source="./media/debugging-with-visual-studio/visual-studio-toolbar-release-net6.png" alt-text="default Visual Studio toolbar with release highlighted":::
+:::image type="content" source="./media/debugging-with-visual-studio/visual-studio-toolbar-release.png" alt-text="default Visual Studio toolbar with release highlighted":::
 
 When you press <kbd>F5</kbd> or choose **Build Solution** from the **Build** menu, Visual Studio compiles the Release version of the application. You can test it as you did the Debug version.
 

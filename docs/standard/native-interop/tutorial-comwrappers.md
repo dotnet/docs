@@ -20,7 +20,7 @@ In this tutorial, you'll implement the following interface definitions. These in
 - Two distinct approaches to consuming native COM objects in .NET.
 - A recommended pattern for enabling custom COM interop in .NET 5 and beyond.
 
-All source code used in this tutorial is available in the [final section of this article](#sample-code).
+All source code used in this tutorial is available in the [dotnet/samples repository](https://github.com/dotnet/samples/tree/main/core/interop/comwrappers/Tutorial).
 
 **C# definitions**
 
@@ -56,12 +56,12 @@ IDemoStoreType : public IUnknown
 
 The [`ComWrappers`][api_comwrappers] API was designed to provide the minimal interaction needed to accomplish COM interop with the .NET 5+ runtime. This means that many of the niceties that exist with the built-in COM interop system are not present and must be built up from basic building blocks. The two primary responsibilities of the API are:
 
-- Enable efficient object identity (for example, mapping between an `IUnknown*` instance and a managed object).
-- Efficient Garbage Collector (GC) interaction.
+- Efficient object identification (for example, mapping between an `IUnknown*` instance and a managed object).
+- [Garbage Collector (GC)][doc_garbage_collection] interaction.
 
 These efficiencies are accomplished by requiring wrapper creation and acquisition to go through the `ComWrappers` API.
 
-Since the `ComWrappers` API has so few responsibilities, it stands to reason that the majority of the interop work should be handled by the consumer &ndash; this is true. However, the additional work is largely mechanical and is expected to be performed by a source-generation solution. As an example, the [C#/WinRT tool chain][repo_cswinrt] is a source-generator solution that's built on top of `ComWrappers` to provide WinRT interop support.
+Since the `ComWrappers` API has so few responsibilities, it stands to reason that the majority of the interop work should be handled by the consumer &ndash; this is true. However, the additional work is largely mechanical and is expected to be performed by a source-generation solution. As an example, the [C#/WinRT tool chain][repo_cswinrt] is a source-generation solution that's built on top of `ComWrappers` to provide WinRT interop support.
 
 ## Implement a `ComWrappers` subclass
 
@@ -106,7 +106,7 @@ We won't implement `ReleaseObjects()` in this tutorial.
 
 ### Step 2 &ndash; Implement `ComputeVtables()`
 
-Let's start with the Managed Object Wrapper &ndash; these wrappers are easier. You'll build a [Virtual Method Table][wiki_vtable], or *vtable*, for each interface in order to project them into the COM environment. For this tutorial, you'll define a vtable as a sequence of pointers, where each pointer represents an implementation of a function on an interface &ndash; order is _very_ important here. In COM, every interface inherits from `IUnknown`. The `IUnknown` type has three methods defined in the following order: `QueryInterface()`, `AddRef()`, and `Release()`. After the `IUnknown` methods come the specific interface methods. For example, consider `IDemoGetType` and `IDemoStoreType`. Conceptually, the vtables for the types would look like the following:
+Let's start with the Managed Object Wrapper &ndash; these wrappers are easier. You'll build a [Virtual Method Table][wiki_vtable], or *vtable*, for each interface in order to project them into the COM environment. For this tutorial, you'll define a vtable as a sequence of pointers, where each pointer represents an implementation of a function on an interface &ndash; order is _very_ important here. In COM, every interface inherits from [`IUnknown`][api_iunknown]. The `IUnknown` type has three methods defined in the following order: `QueryInterface()`, `AddRef()`, and `Release()`. After the `IUnknown` methods come the specific interface methods. For example, consider `IDemoGetType` and `IDemoStoreType`. Conceptually, the vtables for the types would look like the following:
 
 ```
 IDemoGetType    | IDemoStoreType
@@ -126,7 +126,7 @@ It might seem like you've implemented all the methods, but unfortunately, only t
 public static int GetString(IntPtr _this, IntPtr* str);
 ```
 
-The wrapper implementation of `IDemoGetType.GetString()` should consist of marshalling logic and then a dispatch to the managed object being wrapped. All the state for dispatch is contained within the provided `_this` argument. The `_this` argument will actually be of type `ComInterfaceDispatch*`. This type represents a low-level structure with a single member that will be discussed shortly. Further details of this type and its layout are an implementation detail of the runtime and should not be depended upon. In order to retrieve the managed instance from a `ComInterfaceDispatch*` instance, use the following code:
+The wrapper implementation of `IDemoGetType.GetString()` should consist of marshalling logic and then a dispatch to the managed object being wrapped. All the state for dispatch is contained within the provided `_this` argument. The `_this` argument will actually be of type `ComInterfaceDispatch*`. This type represents a low-level structure with a single field, `Vtable`, that will be discussed later. Further details of this type and its layout are an implementation detail of the runtime and should not be depended upon. In order to retrieve the managed instance from a `ComInterfaceDispatch*` instance, use the following code:
 
 ```csharp
 IDemoGetType inst = ComInterfaceDispatch.GetInstance<IDemoGetType>((ComInterfaceDispatch*)_this);
@@ -156,7 +156,7 @@ IDemoGetTypeManagedWrapper.GetString;
 }
 ```
 
-The allocation of vtables is the first part of implementing `ComputeVtables()`. You should also construct comprehensive definitions for types that you're planning to support &ndash; think `DemoImpl`. Using the constructed vtables, you can now create a series of `ComInterfaceEntry` instances that represent the complete view of the managed object in COM.
+The allocation of vtables is the first part of implementing `ComputeVtables()`. You should also construct comprehensive definitions for types that you're planning to support &ndash; think `DemoImpl`. Using the constructed vtables, you can now create a series of [`ComInterfaceEntry`][api_cominterfaceentry] instances that represent the complete view of the managed object in COM.
 
 ```csharp
 {
@@ -280,6 +280,8 @@ There are two important things to note in this example:
 
 1) The `DynamicInterfaceCastableImplementationAttribute` attribute. This attribute is required on any type that is returned from a `IDynamicInterfaceCastable` method. It has the added benefit of making IL trimming easier, which means NativeAOT scenarios are more reliable.
 2) The cast to `DemoNativeDynamicWrapper`. This is part of the dynamic nature of `IDynamicInterfaceCastable`. The type that's returned from `IDynamicInterfaceCastable.GetInterfaceImplementation()` is used to blanket the type that implements `IDynamicInterfaceCastable`.
+
+#### Forward calls to the COM instance
 
 Regardless of which Native Object Wrapper is used, you need the ability to invoke functions on a COM instance. The implementation of `IDemoStoreTypeNativeWrapper.StoreString()` can serve as an example of employing `unmanaged` C# function pointers.
 
@@ -405,8 +407,10 @@ Aside from the lifetime, type system, and functional features that are discussed
 
 [api_allocatetypeassociatedmemory]:/dotnet/api/system.runtime.compilerservices.runtimehelpers.allocatetypeassociatedmemory
 [api_comwrappers]:/dotnet/api/system.runtime.interopservices.comwrappers
+[api_cominterfaceentry]:/dotnet/api/system.runtime.interopservices.comwrappers.cominterfaceentry
 [api_dynamicinterfacecastableimplementation]:/dotnet/api/system.runtime.interopservices.dynamicinterfacecastableimplementationattribute
 [api_idynamicinterfacecastable]:/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+[api_iunknown]:/windows/win32/api/unknwn/nn-unknwn-iunknown
 [api_marshalqueryinterface]:/dotnet/api/system.runtime.interopservices.marshal.queryinterface
 [api_referencetracker]:/windows/win32/api/windows.ui.xaml.hosting.referencetracker/
 [api_rogetagilereference]:/windows/win32/api/combaseapi/nf-combaseapi-rogetagilereference
@@ -414,6 +418,7 @@ Aside from the lifetime, type system, and functional features that are discussed
 
 [doc_comapartments]:/windows/win32/com/processes--threads--and-apartments
 [doc_comsecurity]:/windows/win32/com/security-in-com
+[doc_garbage_collection]:../garbage-collection/index.md
 [doc_globalinterfacetable]:/windows/win32/com/when-to-use-the-global-interface-table
 [doc_impliunknown]:/windows/win32/com/using-and-implementing-iunknown
 [doc_nullable]:../../csharp/nullable-references.md
@@ -423,524 +428,3 @@ Aside from the lifetime, type system, and functional features that are discussed
 [repo_cswinrt]:https://github.com/microsoft/CsWinRT
 
 [wiki_vtable]:https://wikipedia.org/wiki/Virtual_method_table
-
-## Sample code
-
-The following source code can be copied into a new .NET 5+ console application. You'll need to update the project to allow [`unsafe` code blocks][doc_unsafekeyword] and enable [Nullable][doc_nullable] annotations.
-
-```csharp
-using System;
-using System.Collections;
-using System.Diagnostics;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
-
-using static System.Runtime.InteropServices.ComWrappers;
-
-#pragma warning disable CA1416 // This is only needed in .NET 5.
-
-namespace ComWrappersTutorial
-{
-    class Program
-    {
-        static void Main(string[] _)
-        {
-            var cw = new DemoComWrappers();
-
-            var demo = new DemoImpl();
-
-            string? value = demo.GetString();
-            Console.WriteLine($"Initial string: {value ?? "<null>"}");
-
-            // Create a managed object wrapper for the Demo object.
-            IntPtr ccw = cw.GetOrCreateComInterfaceForObject(demo, CreateComInterfaceFlags.None);
-
-            // Create a native object wrapper for the managed object wrapper of the Demo object.
-            var rcw = cw.GetOrCreateObjectForComInstance(ccw, CreateObjectFlags.UniqueInstance);
-
-            // Release the managed object wrapper because the native object wrapper now manages
-            // its lifetime. See the native wrapper implementation that will handle the final two releases.
-            int count = Marshal.Release(ccw);
-            Debug.Assert(count == 2);
-
-            var getter = (IDemoGetType)rcw;
-            var store = (IDemoStoreType)rcw;
-
-            string msg = "hello world!";
-            store.StoreString(msg.Length, msg);
-            Console.WriteLine($"Setting string through wrapper: {msg}");
-
-            value = demo.GetString();
-            Console.WriteLine($"Get string through managed object: {value}");
-
-            msg = msg.ToUpper();
-            demo.StoreString(msg.Length, msg.ToUpper());
-            Console.WriteLine($"Setting string through managed object: {msg}");
-
-            value = getter.GetString();
-            Console.WriteLine($"Get string through wrapper: {value}");
-
-            // The DemoComWrappers supports creation of UniqueInstances - see above. This means
-            // the IDisposable contract may be provided to enable immediate COM object release.
-            (rcw as IDisposable)?.Dispose();
-        }
-    }
-
-    /// <summary>
-    /// IUnknown based COM interface.
-    /// </summary>
-    /// <remarks>
-    /// Win32 C/C++ definition:
-    /// <code>
-    /// MIDL_INTERFACE("92BAA992-DB5A-4ADD-977B-B22838EE91FD")
-    /// IDemoGetType : public IUnknown
-    /// {
-    ///     HRESULT STDMETHODCALLTYPE GetString(_Outptr_ wchar_t** str) = 0;
-    /// };
-    /// </code>
-    /// </remarks>
-    interface IDemoGetType
-    {
-        /// <summary>
-        /// Statically defined Interface ID.
-        /// </summary>
-        /// <remarks>
-        /// Used instead of Type.GUID to be AOT-friendly and avoid using Reflection.
-        /// </remarks>
-        public static Guid IID_IDemoGetType = new("92BAA992-DB5A-4ADD-977B-B22838EE91FD");
-
-        /// <summary>
-        /// Get the currently stored string.
-        /// </summary>
-        /// <returns>Returns the stored string or <c>null</c>.</returns>
-        string? GetString();
-    }
-
-    /// <summary>
-    /// IUnknown-based COM interface.
-    /// </summary>
-    /// <remarks>
-    /// Win32 C/C++ definition:
-    /// <code>
-    /// MIDL_INTERFACE("30619FEA-E995-41EA-8C8B-9A610D32ADCB")
-    /// IDemoStoreType : public IUnknown
-    /// {
-    ///     HRESULT STDMETHODCALLTYPE StoreString(int len, _In_ wchar_t* str) = 0;
-    /// };
-    /// </code>
-    /// </remarks>
-    interface IDemoStoreType
-    {
-        /// <summary>
-        /// Statically defined Interface ID.
-        /// </summary>
-        /// <remarks>
-        /// Used instead of Type.GUID to be AOT-friendly and avoid using Reflection.
-        /// </remarks>
-        public static Guid IID_IDemoStoreType = new("30619FEA-E995-41EA-8C8B-9A610D32ADCB");
-
-        /// <summary>
-        /// Store the supplied string.
-        /// </summary>
-        /// <param name="len">The length of the string to store.</param>
-        /// <param name="str">The string to store.</param>
-        void StoreString(int len, string? str);
-    }
-
-    /// <summary>
-    /// Managed implementation
-    /// </summary>
-    class DemoImpl : IDemoGetType, IDemoStoreType
-    {
-        string? _string;
-        public string? GetString() => _string;
-        public void StoreString(int _, string? str) => _string = str;
-    }
-
-    /// <summary>
-    /// User-defined ComWrappers 
-    /// </summary>
-    sealed unsafe class DemoComWrappers : ComWrappers
-    {
-        static readonly IntPtr s_IDemoGetTypeVTable;
-        static readonly IntPtr s_IDemoStoreVTable;
-        static readonly ComInterfaceEntry* s_DemoImplDefinition;
-        static readonly int s_DemoImplDefinitionLen;
-
-        /// <summary>
-        /// Preallocate COM artifacts to avoid penalty during wrapper creation.
-        /// </summary>
-        static DemoComWrappers()
-        {
-            // Get system-provided IUnknown implementation.
-            GetIUnknownImpl(
-                out IntPtr fpQueryInterface,
-                out IntPtr fpAddRef,
-                out IntPtr fpRelease);
-
-            //
-            // Construct VTables for supported interfaces
-            //
-            {
-                int tableCount = 4;
-                int idx = 0;
-                var vtable = (IntPtr*)RuntimeHelpers.AllocateTypeAssociatedMemory(
-                    typeof(DemoComWrappers),
-                    IntPtr.Size * tableCount);
-                vtable[idx++] = fpQueryInterface;
-                vtable[idx++] = fpAddRef;
-                vtable[idx++] = fpRelease;
-                vtable[idx++] = (IntPtr)(delegate* unmanaged<IntPtr, IntPtr*, int>)&ABI.IDemoGetTypeManagedWrapper.GetString;
-                Debug.Assert(tableCount == idx);
-                s_IDemoGetTypeVTable = (IntPtr)vtable;
-            }
-            {
-                int tableCount = 4;
-                int idx = 0;
-                var vtable = (IntPtr*)RuntimeHelpers.AllocateTypeAssociatedMemory(
-                    typeof(DemoComWrappers),
-                    IntPtr.Size * tableCount);
-                vtable[idx++] = fpQueryInterface;
-                vtable[idx++] = fpAddRef;
-                vtable[idx++] = fpRelease;
-                vtable[idx++] = (IntPtr)(delegate* unmanaged<IntPtr, int, IntPtr, int>)&ABI.IDemoStoreTypeManagedWrapper.StoreString;
-                Debug.Assert(tableCount == idx);
-                s_IDemoStoreVTable = (IntPtr)vtable;
-            }
-
-            //
-            // Construct entries for supported managed types
-            //
-            {
-                s_DemoImplDefinitionLen = 2;
-                int idx = 0;
-                var entries = (ComInterfaceEntry*)RuntimeHelpers.AllocateTypeAssociatedMemory(
-                    typeof(DemoComWrappers),
-                    sizeof(ComInterfaceEntry) * s_DemoImplDefinitionLen);
-                entries[idx].IID = IDemoGetType.IID_IDemoGetType;
-                entries[idx++].Vtable = s_IDemoGetTypeVTable;
-                entries[idx].IID = IDemoStoreType.IID_IDemoStoreType;
-                entries[idx++].Vtable = s_IDemoStoreVTable;
-                Debug.Assert(s_DemoImplDefinitionLen == idx);
-                s_DemoImplDefinition = entries;
-            }
-        }
-
-        readonly delegate* <IntPtr, object?> _createIfSupported;
-
-        public DemoComWrappers(bool useDynamicNativeWrapper = false)
-        {
-            // Determine which wrapper create function to use.
-            _createIfSupported = useDynamicNativeWrapper
-                ? &ABI.DemoNativeDynamicWrapper.CreateIfSupported
-                : &ABI.DemoNativeStaticWrapper.CreateIfSupported;
-        }
-
-        protected override unsafe ComInterfaceEntry* ComputeVtables(object obj, CreateComInterfaceFlags flags, out int count)
-        {
-            Debug.Assert(flags.HasFlag(CreateComInterfaceFlags.None));
-
-            if (obj is DemoImpl)
-            {
-                count = s_DemoImplDefinitionLen;
-                return s_DemoImplDefinition;
-            }
-
-            // [TODO] Handle cases where the passed in object implements one or both of the supported interfaces
-            // but is not the expected .NET class.
-            count = 0;
-            return null;
-        }
-
-        protected override object CreateObject(IntPtr externalComObject, CreateObjectFlags flags)
-        {
-            Debug.Assert(flags.HasFlag(CreateObjectFlags.UniqueInstance));
-
-            // Throw an exception if the type is not supported by the implementation.
-            // Null can be returned as well, but an ArgumentNullException will be thrown for
-            // the consumer of this ComWrappers instance.
-            return _createIfSupported(externalComObject) ?? throw new NotSupportedException();
-        }
-
-        protected override void ReleaseObjects(IEnumerable objects)
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    namespace ABI
-    {
-        internal enum HRESULT : int
-        {
-            S_OK = 0
-        }
-
-        /// <summary>
-        /// Managed object wrapper for IDemoGetType.
-        /// </summary>
-        internal static unsafe class IDemoGetTypeManagedWrapper
-        {
-            [UnmanagedCallersOnly]
-            public static int GetString(IntPtr _this, IntPtr* str)
-            {
-                try
-                {
-                    string? s = ComInterfaceDispatch.GetInstance<IDemoGetType>((ComInterfaceDispatch*)_this).GetString();
-
-                    // Marshal to COM
-                    *str = Marshal.StringToCoTaskMemUni(s);
-                }
-                catch (Exception e)
-                {
-                    return e.HResult;
-                }
-
-                return (int)HRESULT.S_OK;
-            }
-        }
-
-        /// <summary>
-        /// Managed object wrapper for IDemoStoreType.
-        /// </summary>
-        internal static unsafe class IDemoStoreTypeManagedWrapper
-        {
-            [UnmanagedCallersOnly]
-            public static int StoreString(IntPtr _this, int len, IntPtr str)
-            {
-                try
-                {
-                    // Marshal to .NET
-                    string? strLocal = str == IntPtr.Zero ? null : Marshal.PtrToStringUni(str, len);
-
-                    // Since we've taken ownership we need to free the native memory.
-                    // This is a policy decision because the API could require returning the same pointer
-                    // stored and not just a copy.
-                    Marshal.FreeCoTaskMem(str);
-
-                    ComInterfaceDispatch.GetInstance<IDemoStoreType>((ComInterfaceDispatch*)_this).StoreString(len, strLocal);
-                }
-                catch (Exception e)
-                {
-                    return e.HResult;
-                }
-
-                return (int)HRESULT.S_OK;
-            }
-        }
-
-        /// <summary>
-        /// Native object wrapper static implementation.
-        /// </summary>
-        /// <remarks>
-        /// This class statically implements two desired Demo interfaces and is limited to
-        /// those interfaces that it implements. For scenarios involving native objects
-        /// with a potentially unknown number of interfaces see <see cref="DemoNativeDynamicWrapper"/>.
-        /// </remarks>
-        internal class DemoNativeStaticWrapper
-            : IDemoGetType
-            , IDemoStoreType
-            , IDisposable
-        {
-            bool _isDisposed = false;
-            private DemoNativeStaticWrapper() { }
-
-            ~DemoNativeStaticWrapper()
-            {
-                DisposeInternal();
-            }
-
-            public IntPtr IDemoGetTypeInst { get; init; }
-            public IntPtr IDemoStoreTypeInst { get; init; }
-
-            public static DemoNativeStaticWrapper? CreateIfSupported(IntPtr ptr)
-            {
-                int hr = Marshal.QueryInterface(ptr, ref IDemoGetType.IID_IDemoGetType, out IntPtr IDemoGetTypeInst);
-                if (hr != (int)HRESULT.S_OK)
-                {
-                    return default;
-                }
-
-                hr = Marshal.QueryInterface(ptr, ref IDemoStoreType.IID_IDemoStoreType, out IntPtr IDemoStoreTypeInst);
-                if (hr != (int)HRESULT.S_OK)
-                {
-                    Marshal.Release(ptr);
-                    return default;
-                }
-
-                return new DemoNativeStaticWrapper()
-                {
-                    IDemoGetTypeInst = IDemoGetTypeInst,
-                    IDemoStoreTypeInst = IDemoStoreTypeInst
-                };
-            }
-
-            public void Dispose()
-            {
-                DisposeInternal();
-                GC.SuppressFinalize(this);
-            }
-
-            public string? GetString() =>
-                IDemoGetTypeNativeWrapper.GetString(IDemoGetTypeInst);
-
-            public void StoreString(int len, string? str) =>
-                IDemoStoreTypeNativeWrapper.StoreString(IDemoStoreTypeInst, len, str);
-
-            void DisposeInternal()
-            {
-                if (_isDisposed)
-                    return;
-
-                // [WARNING] This is unsafe for COM objects that have specific thread affinity.
-                Marshal.Release(IDemoGetTypeInst);
-                Marshal.Release(IDemoStoreTypeInst);
-
-                _isDisposed = true;
-            }
-        }
-
-        /// <summary>
-        /// Native object wrapper dynamic implementation.
-        /// </summary>
-        /// <remarks>
-        /// This class relies upon IDynamicInterfaceCastable to enable COM style casting
-        /// via QueryInterface. The current implementation validates the supplied COM pointer
-        /// implements the two desired Demo interfaces, but this check could be delayed and
-        /// enable a highly dynamic scenario.
-        /// </remarks>
-        internal class DemoNativeDynamicWrapper
-            : IDynamicInterfaceCastable
-            , IDisposable
-        {
-            bool _isDisposed = false;
-            private DemoNativeDynamicWrapper() { }
-
-            ~DemoNativeDynamicWrapper()
-            {
-                DisposeInternal();
-            }
-
-            public IntPtr IDemoGetTypeInst { get; init; }
-            public IntPtr IDemoStoreTypeInst { get; init; }
-
-            public static DemoNativeDynamicWrapper? CreateIfSupported(IntPtr ptr)
-            {
-                int hr = Marshal.QueryInterface(ptr, ref IDemoGetType.IID_IDemoGetType, out IntPtr IDemoGetTypeInst);
-                if (hr != (int)HRESULT.S_OK)
-                {
-                    return default;
-                }
-
-                hr = Marshal.QueryInterface(ptr, ref IDemoStoreType.IID_IDemoStoreType, out IntPtr IDemoStoreTypeInst);
-                if (hr != (int)HRESULT.S_OK)
-                {
-                    Marshal.Release(ptr);
-                    return default;
-                }
-
-                return new DemoNativeDynamicWrapper()
-                {
-                    IDemoGetTypeInst = IDemoGetTypeInst,
-                    IDemoStoreTypeInst = IDemoStoreTypeInst
-                };
-            }
-
-            public RuntimeTypeHandle GetInterfaceImplementation(RuntimeTypeHandle interfaceType)
-            {
-                if (interfaceType.Equals(typeof(IDemoGetType).TypeHandle))
-                {
-                    return typeof(IDemoGetTypeNativeWrapper).TypeHandle;
-                }
-                else if (interfaceType.Equals(typeof(IDemoStoreType).TypeHandle))
-                {
-                    return typeof(IDemoStoreTypeNativeWrapper).TypeHandle;
-                }
-
-                return default;
-            }
-
-            public bool IsInterfaceImplemented(RuntimeTypeHandle interfaceType, bool throwIfNotImplemented)
-            {
-                if (interfaceType.Equals(typeof(IDemoGetType).TypeHandle)
-                    || interfaceType.Equals(typeof(IDemoStoreType).TypeHandle))
-                {
-                    return true;
-                }
-
-                if (throwIfNotImplemented)
-                    throw new InvalidCastException($"{nameof(DemoNativeDynamicWrapper)} doesn't support {interfaceType}");
-
-                return false;
-            }
-
-            public void Dispose()
-            {
-                DisposeInternal();
-                GC.SuppressFinalize(this);
-            }
-
-            void DisposeInternal()
-            {
-                if (_isDisposed)
-                    return;
-
-                // [WARNING] This is unsafe for COM objects that have specific thread affinity.
-                Marshal.Release(IDemoGetTypeInst);
-                Marshal.Release(IDemoStoreTypeInst);
-
-                _isDisposed = true;
-            }
-        }
-
-        /// <summary>
-        /// Native object wrapper for IDemoGetType.
-        /// </summary>
-        [DynamicInterfaceCastableImplementation]
-        internal unsafe interface IDemoGetTypeNativeWrapper : IDemoGetType
-        {
-            public static string? GetString(IntPtr inst)
-            {
-                IntPtr str;
-                int hr = ((delegate* unmanaged<IntPtr, IntPtr*, int>)(*(*(void***)inst + 3 /* IDemoGetType.GetString slot */)))(inst, &str);
-                if (hr != (int)HRESULT.S_OK)
-                    Marshal.ThrowExceptionForHR(hr);
-
-                string? strLocal = Marshal.PtrToStringUni(str);
-                Marshal.FreeCoTaskMem(str);
-
-                return strLocal;
-            }
-
-            string? IDemoGetType.GetString()
-            {
-                var inst = ((DemoNativeDynamicWrapper)this).IDemoGetTypeInst;
-                return GetString(inst);
-            }
-        }
-
-        /// <summary>
-        /// Native object wrapper for IDemoStoreType.
-        /// </summary>
-        [DynamicInterfaceCastableImplementation]
-        internal unsafe interface IDemoStoreTypeNativeWrapper : IDemoStoreType
-        {
-            public static void StoreString(IntPtr inst, int len, string? str)
-            {
-                IntPtr strLocal = Marshal.StringToCoTaskMemUni(str);
-                int hr = ((delegate* unmanaged<IntPtr, int, IntPtr, int>)(*(*(void***)inst + 3 /* IDemoStoreType.StoreString slot */)))(inst, len, strLocal);
-                if (hr != (int)HRESULT.S_OK)
-                {
-                    Marshal.FreeCoTaskMem(strLocal);
-                    Marshal.ThrowExceptionForHR(hr);
-                }
-            }
-
-            void IDemoStoreType.StoreString(int len, string? str)
-            {
-                var inst = ((DemoNativeDynamicWrapper)this).IDemoStoreTypeInst;
-                StoreString(inst, len, str);
-            }
-        }
-    }
-}
-```

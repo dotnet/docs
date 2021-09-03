@@ -68,6 +68,8 @@ The `global` modifier may be combined with the `static` modifier. The `global` m
 global using static System.Math;
 ```
 
+You can also globally include a namespace by adding a `<Using>` item to your project file, for example, `<Using Include="My.Awesome.Namespace" />`. For more information, see [`<Using>` item](../../../core/project-sdk/msbuild-props.md#using).
+
 [!INCLUDE [csharp10-templates](../../../../includes/csharp10-templates.md)]
 
 ## static modifier

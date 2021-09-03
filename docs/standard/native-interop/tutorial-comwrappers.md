@@ -260,7 +260,7 @@ internal class DemoNativeDynamicWrapper
 }
 ```
 
-Let's look at one of the types that `DemoNativeDynamicWrapper` will dynamically support. The following code defines the `IDataStoreType` type using the *default interface methods* feature.
+Let's look at one of the interfaces that `DemoNativeDynamicWrapper` will dynamically support. The following code provides the implementation of `IDemoStoreType` using the *default interface methods* feature.
 
 ```csharp
 [DynamicInterfaceCastableImplementation]
@@ -278,7 +278,7 @@ unsafe interface IDemoStoreTypeNativeWrapper : IDemoStoreType
 
 There are two important things to note in this example:
 
-1) The `DynamicInterfaceCastableImplementationAttribute` attribute. This attribute is required on any type that is returned from a `IDynamicInterfaceCastable` method. It has the added benefit of making IL Linking easier, which means NativeAOT scenarios are more reliable.
+1) The `DynamicInterfaceCastableImplementationAttribute` attribute. This attribute is required on any type that is returned from a `IDynamicInterfaceCastable` method. It has the added benefit of making IL trimming easier, which means NativeAOT scenarios are more reliable.
 2) The cast to `DemoNativeDynamicWrapper`. This is part of the dynamic nature of `IDynamicInterfaceCastable`. The type that's returned from `IDynamicInterfaceCastable.GetInterfaceImplementation()` is used to blanket the type that implements `IDynamicInterfaceCastable`.
 
 Regardless of which Native Object Wrapper is used, you need the ability to invoke functions on a COM instance. The implementation of `IDemoStoreTypeNativeWrapper.StoreString()` can serve as an example of employing `unmanaged` C# function pointers.
@@ -315,7 +315,7 @@ Once the `CreateObject()` method is implemented, the `ComWrappers` subclass will
 
 ```csharp
 IntPtr iunk = ...; // Get a COM instance from native code.
-object rcw = cw.GetOrCreateObjectForComInstance(ccw, CreateObjectFlags.UniqueInstance);
+object rcw = cw.GetOrCreateObjectForComInstance(iunk, CreateObjectFlags.UniqueInstance);
 ```
 
 ### Step 4 &ndash; Handle Native Object Wrapper lifetime details

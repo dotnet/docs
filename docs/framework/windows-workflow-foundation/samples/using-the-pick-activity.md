@@ -6,11 +6,11 @@ ms.assetid: b89be812-a247-4025-b0e3-ffb20db027a6
 ---
 # Using the Pick Activity
 
-This sample demonstrates how to use the <xref:System.Activities.Statements.Pick> activity.
+The [Pick sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/basic/Built-InActivities/Pick) demonstrates how to use the <xref:System.Activities.Statements.Pick> activity.
 
  The <xref:System.Activities.Statements.Pick> activity provides event-based control modeling. It behaves similar to the C# `switch` statement, which executes only one of the branches in the `switch` statement. Unlike the `switch` statement in which a branch is executed based upon on a value, the <xref:System.Activities.Statements.Pick> activity executes a branch based upon how an activity completes.
 
- This sample prompts a user to type in their name on the console within a given time period. The <xref:System.Activities.Statements.Pick> activity in the sample has two branches that are executed based upon whether the user types in their name within 5 seconds or not. If the user types in their name within 5 seconds, the first branch is executed, which contains a custom `ReadLine` activity; otherwise the other branch is executed, which contains a <xref:System.Activities.Statements.Delay> activity. Once a user’s name is typed in on the console, the user’s name is printed on the console. If an input is not entered within 5 seconds, the operation is timed out.
+ This sample prompts a user to type in their name on the console within a given time period. The <xref:System.Activities.Statements.Pick> activity in the sample has two branches that are executed based upon whether the user types in their name within 5 seconds or not. If the user types in their name within 5 seconds, the first branch is executed, which contains a custom `ReadLine` activity; otherwise the other branch is executed, which contains a <xref:System.Activities.Statements.Delay> activity. Once a user's name is typed in on the console, the user's name is printed on the console. If an input is not entered within 5 seconds, the operation is timed out.
 
 ## Demonstrates
 
@@ -38,17 +38,8 @@ This sample demonstrates how to use the <xref:System.Activities.Statements.Pick>
 
 #### To use this sample
 
-1. Using Visual Studio 2010, open the Pick.sln solution file.
+1. Using Visual Studio, open the Pick.sln solution file.
 
 2. To build the solution, press CTRL+SHIFT+B.
 
 3. To run the solution, press F5.
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->
-> `<InstallDrive>:\WF_WCF_Samples`  
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->
-> `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Built-InActivities\Pick`

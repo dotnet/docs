@@ -8,7 +8,7 @@ ms.assetid: 8cd4401c-b12c-4116-a421-f3dcffa65670
 
 The following information exposes some issues you might encounter in your [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] applications, and provides suggestions to avoid or otherwise reduce the effect of these issues.  
   
- Additional issues are addressed in [Frequently Asked Questions](frequently-asked-questions.md).  
+ Additional issues are addressed in [Frequently Asked Questions](frequently-asked-questions.yml).  
   
 ## Unsupported Standard Query Operators  
 
@@ -79,4 +79,4 @@ The following information exposes some issues you might encounter in your [!INCL
 ## See also
 
 - [Debugging Support](debugging-support.md)
-- [Frequently Asked Questions](frequently-asked-questions.md)
+- [Frequently Asked Questions](frequently-asked-questions.yml)

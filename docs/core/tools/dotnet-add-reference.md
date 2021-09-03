@@ -44,17 +44,15 @@ The `dotnet add reference` command provides a convenient option to add project r
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`-f|--framework <FRAMEWORK>`**
 
   Adds project references only when targeting a specific [framework](../../standard/frameworks.md) using the TFM format.
 
-- **`-h|--help`**
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out a short help for the command.
-
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action (typically used to complete authentication). Available since .NET Core 3.0 SDK.
+[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 ## Examples
 

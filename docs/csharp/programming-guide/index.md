@@ -57,7 +57,7 @@ This section provides detailed information on key C# language features and featu
   
  [Unsafe Code and Pointers](../language-reference/unsafe-code.md)  
   
- [XML Documentation Comments](./xmldoc/index.md)  
+ [XML Documentation Comments](/dotnet/csharp/language-reference/xmldoc)  
   
 ## Platform Sections
 

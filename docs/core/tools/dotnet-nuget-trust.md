@@ -26,9 +26,9 @@ The `dotnet nuget trust` command manages the trusted signers. By default, NuGet 
 
 ## Options
 
-- **`-h|--help`**
+<!-- markdownlint-disable MD012 -->
 
-  Prints out a description of how to use the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Commands
 
@@ -46,17 +46,11 @@ dotnet nuget trust list [--configfile <PATH>] [-h|--help] [-v, --verbosity <LEVE
 
 #### Options:
 
-- **`--configfile <PATH>`**
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
-  Specific NuGet file to use instead of the standard hierarchy.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`-h|--help`**
-
-  Prints out a description of how to use the command.
-
-- **`-v, --verbosity <LEVEL>`**
-
-  Set the verbosity level. Defaults to m[inimal]. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ### `sync`
 
@@ -76,17 +70,11 @@ dotnet nuget trust sync <NAME> [--configfile <PATH>] [-h|--help] [-v, --verbosit
 
 #### Options:
 
-- **`--configfile <PATH>`**
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
-  Specific NuGet file to use instead of the standard hierarchy.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`-h|--help`**
-
-  Prints out a description of how to use the command.
-
-- **`-v, --verbosity <LEVEL>`**
-
-  Set the verbosity level. Defaults to m[inimal]. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ### `remove`
 
@@ -106,17 +94,11 @@ dotnet nuget trust remove <NAME> [--configfile <PATH>] [-h|--help] [-v, --verbos
   
 #### Options:
 
-- **`--configfile <PATH>`**
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
-  Specific NuGet file to use instead of the standard hierarchy.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`-h|--help`**
-
-  Prints out a description of how to use the command.
-
-- **`-v, --verbosity <LEVEL>`**
-
-  Set the verbosity level. Defaults to m[inimal]. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ### `author`
 
@@ -144,17 +126,11 @@ dotnet nuget trust author <NAME> <PACKAGE> [--allow-untrusted-root] [--configfil
 
   Specifies if the certificate for the trusted signer should be allowed to chain to an untrusted root. This is not recommended.
 
-- **`--configfile <PATH>`**
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
-  Specific NuGet file to use instead of the standard hierarchy.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`-h|--help`**
-
-  Prints out a description of how to use the command.
-
-- **`-v, --verbosity <LEVEL>`**
-
-  Set the verbosity level. Defaults to m[inimal]. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ### `repository`
 
@@ -163,7 +139,7 @@ Adds a trusted signer with the given name, based on the repository signature or 
 #### Synopsis
 
 ```dotnetcli
-dotnet nuget trust repository <NAME> <PACKAGE> [--allow-untrusted-root] [--configfile <PATH>] [-h|--help] [-v, --verbosity <LEVEL>]
+dotnet nuget trust repository <NAME> <PACKAGE> [--allow-untrusted-root] [--configfile <PATH>] [-h|--help] [--owners <LIST>] [-v, --verbosity <LEVEL>]
 ```
 
 #### Arguments
@@ -182,17 +158,15 @@ dotnet nuget trust repository <NAME> <PACKAGE> [--allow-untrusted-root] [--confi
 
   Specifies if the certificate for the trusted signer should be allowed to chain to an untrusted root. This is not recommended.
 
-- **`--configfile <PATH>`**
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
-  Specific NuGet file to use instead of the standard hierarchy.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`-h|--help`**
+- **`--owners <LIST>`**
 
-  Prints out a description of how to use the command.
+  Semicolon-separated list of trusted owners to further restrict the trust of a repository.
 
-- **`-v, --verbosity <LEVEL>`**
-
-  Set the verbosity level. Defaults to m[inimal]. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ### `certificate`
 
@@ -224,17 +198,11 @@ dotnet nuget trust certificate <NAME> <FINGERPRINT> [--algorithm <ALGORITHM>] [-
 
   Specifies if the certificate for the trusted signer should be allowed to chain to an untrusted root. This is not recommended.
 
-- **`--configfile <PATH>`**
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
-  Specific NuGet file to use instead of the standard hierarchy.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`-h|--help`**
-
-  Prints out a description of how to use the command.
-
-- **`-v, --verbosity <LEVEL>`**
-
-  Set the verbosity level. Defaults to m[inimal]. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ### `source`
 
@@ -243,7 +211,7 @@ Adds a trusted signer based on a given package source.
 #### Synopsis
 
 ```dotnetcli
-dotnet nuget trust source <NAME> [--configfile <PATH>] [-h|--help] [--owners <List>] [--source-url] [-v, --verbosity <LEVEL>]
+dotnet nuget trust source <NAME> [--configfile <PATH>] [-h|--help] [--owners <LIST>] [--source-url] [-v, --verbosity <LEVEL>]
 ```
 
 #### Arguments
@@ -254,15 +222,11 @@ dotnet nuget trust source <NAME> [--configfile <PATH>] [-h|--help] [--owners <Li
 
 #### Options:
 
-- **`--configfile <PATH>`**
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
-  Specific NuGet file to use instead of the standard hierarchy.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-- **`-h|--help`**
-
-  Prints out a description of how to use the command.
-
-- **`--owners <List>`**
+- **`--owners <LIST>`**
 
   Semicolon-separated list of trusted owners to further restrict the trust of a repository.
 
@@ -270,9 +234,7 @@ dotnet nuget trust source <NAME> [--configfile <PATH>] [-h|--help] [--owners <Li
 
   If a `source-url` is provided, it must be a v3 package source URL (like `https://api.nuget.org/v3/index.json`). Other package source types are not supported.
 
-- **`-v, --verbosity <LEVEL>`**
-
-  Set the verbosity level. Defaults to m[inimal]. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ## Examples
 

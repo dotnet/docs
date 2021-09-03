@@ -1,7 +1,7 @@
 ---
 title: What is ML.NET and how does it work?
 description: ML.NET gives you the ability to add machine learning to .NET applications, in either online or offline scenarios. With this capability, you can make automatic predictions using the data available to your application without having to be connected to a network to use ML.NET. This article explains the basics of machine learning in ML.NET.
-ms.date: 11/5/2019
+ms.date: 08/12/2021
 ms.topic: overview
 ms.custom: mvc
 #Customer intent: As a developer, I want to learn how ML.NET works so that I can leverage machine learning in my applications.
@@ -19,14 +19,54 @@ ML.NET runs on Windows, Linux, and macOS using .NET Core, or Windows using .NET 
 
 Examples of the type of predictions that you can make with ML.NET:
 
-|||
-|-|-|
-|Classification/Categorization|Automatically divide customer feedback into positive and negative categories|
-|Regression/Predict continuous values|Predict the price of houses based on size and location|
-|Anomaly Detection|Detect fraudulent banking transactions |
-|Recommendations|Suggest products that online shoppers may want to buy, based on their previous purchases|
-|Time series/sequential data|Forecast the weather/product sales|
-|Image classification|Categorize pathologies in medical images|
+:::row:::
+    :::column:::
+        **Classification/Categorization**
+    :::column-end:::
+    :::column:::
+        Automatically divide customer feedback into positive and negative categories
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        **Regression/Predict continuous values**
+    :::column-end:::
+    :::column:::
+        Predict the price of houses based on size and location
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        **Anomaly Detection**
+    :::column-end:::
+    :::column:::
+        Detect fraudulent banking transactions
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        **Recommendations**
+    :::column-end:::
+    :::column:::
+        Suggest products that online shoppers may want to buy, based on their previous purchases
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        **Time series/sequential data**
+    :::column-end:::
+    :::column:::
+        Forecast the weather/product sales
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        **Image classification**
+    :::column-end:::
+    :::column:::
+        Categorize pathologies in medical images
+    :::column-end:::
+:::row-end:::
 
 ## Hello ML.NET World
 
@@ -166,20 +206,113 @@ In this section, we go through the architectural patterns of ML.NET. If you are 
 
 An ML.NET application starts with an <xref:Microsoft.ML.MLContext> object. This singleton object contains **catalogs**. A catalog is a factory for data loading and saving, transforms, trainers, and model operation components. Each catalog object has methods to create the different types of components:
 
-|||||
-|-|-|-|-|
-|Data loading and saving||<xref:Microsoft.ML.DataOperationsCatalog>||
-|Data preparation||<xref:Microsoft.ML.TransformsCatalog>||
-|Training algorithms|Binary classification|<xref:Microsoft.ML.BinaryClassificationCatalog>||
-||Multiclass classification|<xref:Microsoft.ML.MulticlassClassificationCatalog>||
-||Anomaly detection|<xref:Microsoft.ML.AnomalyDetectionCatalog>||
-||Clustering|<xref:Microsoft.ML.ClusteringCatalog>||
-||Forecasting|<xref:Microsoft.ML.ForecastingCatalog>||
-||Ranking|<xref:Microsoft.ML.RankingCatalog>||
-||Regression|<xref:Microsoft.ML.RegressionCatalog>||
-||Recommendation|<xref:Microsoft.ML.RecommendationCatalog>|add the `Microsoft.ML.Recommender` NuGet package|
-||TimeSeries|<xref:Microsoft.ML.TimeSeriesCatalog>|add the `Microsoft.ML.TimeSeries` NuGet package|
-|Model usage ||<xref:Microsoft.ML.ModelOperationsCatalog>||
+:::row:::
+    :::column:::
+        **Data loading and saving**
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.DataOperationsCatalog>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        **Data preparation**
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.TransformsCatalog>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="3":::
+        **Training algorithms**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Binary classification
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.BinaryClassificationCatalog>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Multiclass classification
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.MulticlassClassificationCatalog>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Anomaly detection
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.AnomalyDetectionCatalog>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Clustering
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.ClusteringCatalog>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Forecasting
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.ForecastingCatalog>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Ranking
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.RankingCatalog>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Regression
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.RegressionCatalog>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Recommendation
+    :::column-end:::
+    :::column span="":::
+        <xref:Microsoft.ML.RecommendationCatalog>
+    :::column-end:::
+    :::column span="":::
+        Add the `Microsoft.ML.Recommender` NuGet package
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        TimeSeries
+    :::column-end:::
+    :::column span="":::
+        <xref:Microsoft.ML.TimeSeriesCatalog>
+    :::column-end:::
+    :::column span="":::
+        Add the `Microsoft.ML.TimeSeries` NuGet package
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        **Model usage**
+    :::column-end:::
+    :::column span="2":::
+        <xref:Microsoft.ML.ModelOperationsCatalog>
+    :::column-end:::
+:::row-end:::
 
 You can navigate to the creation methods in each of the above categories. Using Visual Studio, the catalogs show up via IntelliSense.
 
@@ -280,4 +413,4 @@ In real-life applications, your model training and evaluation code will be separ
 
 * Learn about specific topics in more depth in the [How To Guides](./how-to-guides/index.md).
 
-* If you're super keen, you can dive straight into the [API Reference documentation](../../api/index.md?view=ml-dotnet).
+* If you're super keen, you can dive straight into the [API Reference documentation](../../api/index.md?preserve-view=ml-dotnet).

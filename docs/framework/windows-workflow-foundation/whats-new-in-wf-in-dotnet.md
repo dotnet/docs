@@ -76,7 +76,7 @@ Workflows in .NET Framework 4 required a fully trusted application domain. In .N
 
 7. Expressions cannot be compiled using <xref:System.Activities.XamlIntegration.TextExpressionCompiler> or the Visual Basic hosted compiler in partial trust, but previously compiled expressions can be run.
 
-8. A single assembly that uses [Level 2 Transparency](../misc/security-transparent-code-level-2.md) cannot be used in .NET Framework 4, [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in full trust, and [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in partial trust.
+8. A single assembly that uses [Level 2 Transparency](/previous-versions/dotnet/framework/code-access-security/security-transparent-code-level-2) cannot be used in .NET Framework 4, [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in full trust, and [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in partial trust.
 
 ## <a name="BKMK_NewDesignerCapabilites"></a> New Designer Capabilities
 

@@ -42,7 +42,7 @@ class Contact
     //public void ChangeName(string newName) => Name = newName;
 
     // Address is assignable here.
-    public void ChangeAddress(string newAddress) => Address = newAddress
+    public void ChangeAddress(string newAddress) => Address = newAddress;
 }
 ```
 

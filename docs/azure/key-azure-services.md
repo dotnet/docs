@@ -12,8 +12,8 @@ author: DavidCBerry13
 
 While Azure contains over 100 services, the following Azure services are the services you will use most frequently as a .NET developer.
 
-| **Service** |         | **Description**      |
-| :--:|:------|:------------|
+| Icon | Service | Description |
+|:----:|:--------|:------------|
 | ![App Service Icon](./media/app-services.svg) | **Azure App Service** | Azure App Service is a fully managed platform for hosting web applications and APIs in Azure.  It features automatic load balancing and auto-scaling in a highly available environment.  You pay only for the compute resources you use and free tiers are available. |
 | ![Azure Functions Icon](./media/azure-functions.svg) | **Azure Functions** | Azure Functions is a serverless compute service that lets you write small, discrete segments of code that can be executed in a scalable and cost-effective manner, all without managing any servers or runtimes.  Functions can be invoked by a variety of different events and easily integrate with other Azure services through the use of input and output bindings.        |
 | ![Azure SQL Icon](./media/azure-sql.svg) | **Azure SQL**            | Azure SQL is a fully managed cloud based version of SQL Server. Azure automatically performs traditional administrative tasks like patching and backups for you and features built-in high availability.  |

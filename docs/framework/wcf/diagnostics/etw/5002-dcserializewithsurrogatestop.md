@@ -6,10 +6,10 @@ ms.assetid: 66fd4496-8b94-46d4-b987-19040b4ea4bc
 ---
 # 5002 - DCSerializeWithSurrogateStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5002|  
 |Keywords|Serialization|  
 |Level|Verbose|  

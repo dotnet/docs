@@ -26,6 +26,13 @@ namespace object_collection_initializers
         }
         // </SnippetCatDeclaration>
 
+        // <SnippetCatOwnerDeclaration>
+        public class CatOwner
+        {
+            public IList<Cat> Cats { get; } = new List<Cat>();
+        }
+        // </SnippetCatOwnerDeclaration>
+
         // <SnippetMatrixDeclaration>
         public class Matrix
         {
@@ -113,6 +120,29 @@ namespace object_collection_initializers
                 {42, "forty-two" }
             };
             // </SnippetDictionaryAddInitializer>
+
+            {
+                // <SnippetReadOnlyPropertyCollectionInitializer>
+                CatOwner owner = new CatOwner
+                {
+                    Cats =
+                    {
+                        new Cat{ Name = "Sylvester", Age=8 },
+                        new Cat{ Name = "Whiskers", Age=2 },
+                        new Cat{ Name = "Sasha", Age=14 }
+                    }
+                };
+                // </SnippetReadOnlyPropertyCollectionInitializer>
+            }
+
+            {
+                // <SnippetReadOnlyPropertyCollectionInitializerTranslation>
+                CatOwner owner = new CatOwner();
+                owner.Cats.Add(new Cat{ Name = "Sylvester", Age=8 });
+                owner.Cats.Add(new Cat{ Name = "Whiskers", Age=2 });
+                owner.Cats.Add(new Cat{ Name = "Sasha", Age=14 });
+                // </SnippetReadOnlyPropertyCollectionInitializerTranslation>
+            }
 
             InitializationSample.Main();
             FullExample.Main();

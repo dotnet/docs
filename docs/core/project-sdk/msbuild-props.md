@@ -250,9 +250,12 @@ The following MSBuild properties are documented in this section:
 - [AppendRuntimeIdentifierToOutputPath](#appendruntimeidentifiertooutputpath)
 - [AppendTargetFrameworkToOutputPath](#appendtargetframeworktooutputpath)
 - [CopyLocalLockFileAssemblies](#copylocallockfileassemblies)
+- [ErrorOnDuplicatePublishOutputFiles](#erroronduplicatepublishoutputfiles)
 - [IsPublishable](#ispublishable)
 - [PreserveCompilationContext](#preservecompilationcontext)
 - [PreserveCompilationReferences](#preservecompilationreferences)
+- [RollForward](#rollforward)
+- [RuntimeFrameworkVersion](#runtimeframeworkversion)
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
 - [UseAppHost](#useapphost)
@@ -294,6 +297,18 @@ The `CopyLocalLockFileAssemblies` property is useful for plugin projects that ha
 > [!TIP]
 > Alternatively, you can use `dotnet publish` to publish the class library. For more information, see [dotnet publish](../tools/dotnet-publish.md).
 
+### ErrorOnDuplicatePublishOutputFiles
+
+The `ErrorOnDuplicatePublishOutputFiles` property relates to whether the SDK generates error NETSDK1148 when MSBuild detects duplicate files in the publish output, but can't determine which files to remove. Set the `ErrorOnDuplicatePublishOutputFiles` property to `false` if you don't want the error to be generated.
+
+```xml
+<PropertyGroup>
+  <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+</PropertyGroup>
+```
+
+This property was introduced in .NET 6.
+
 ### IsPublishable
 
 The `IsPublishable` property allows the `Publish` target to run. This property only affects processes that use *.\*proj* files and the `Publish` target, such as the [dotnet publish](../tools/dotnet-publish.md) command. It does not affect publishing in Visual Studio, which uses the `PublishOnly` target. The default value is `true`.
@@ -329,6 +344,34 @@ The `PreserveCompilationReferences` property is similar to the [PreserveCompilat
 ```
 
 For more information, see [Razor SDK properties](/aspnet/core/razor-pages/sdk#properties).
+
+### RollForward
+
+The `RollForward` property controls how the application chooses a runtime when multiple runtime versions are available. This value is output to the *.runtimeconfig.json* as the `rollForward` setting.
+
+```xml
+<PropertyGroup>
+  <RollForward>LatestMinor</RollForward>
+</PropertyGroup>
+```
+
+Set `RollForward` to one of the following values:
+
+[!INCLUDE [roll-forward-table](../../../includes/roll-forward-table.md)]
+
+For more information, see [Control roll-forward behavior](../versions/selection.md#control-roll-forward-behavior).
+
+### RuntimeFrameworkVersion
+
+The `RuntimeFrameworkVersion` property specifies the version of the runtime to use when publishing. Specify a runtime version:
+
+``` xml
+<PropertyGroup>
+  <RuntimeFrameworkVersion>5.0.7</RuntimeFrameworkVersion>
+</PropertyGroup>
+```
+
+When publishing a framework-dependent application, this value specifies the *minimum* version required. When publishing a self-contained application, this value specifies the *exact* version required.
 
 ### RuntimeIdentifier
 
@@ -372,7 +415,8 @@ For more information about deployment, see [.NET application deployment](../depl
 The following MSBuild properties are documented in this section:
 
 - [EmbeddedResourceUseDependentUponConvention](#embeddedresourceusedependentuponconvention)
-- [LangVersion](#langversion)
+
+C# compiler options can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
 
 ### EmbeddedResourceUseDependentUponConvention
 
@@ -388,18 +432,6 @@ By default, in a new .NET project, this property is set to `true`. If set to `fa
   <EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
 </PropertyGroup>
 ```
-
-### LangVersion
-
-The `LangVersion` property lets you specify a specific programming language version. For example, if you want access to C# preview features, set `LangVersion` to `preview`.
-
-```xml
-<PropertyGroup>
-  <LangVersion>preview</LangVersion>
-</PropertyGroup>
-```
-
-For more information, see [C# language versioning](../../csharp/language-reference/configure-language-version.md#override-a-default).
 
 ## Default item inclusion properties
 
@@ -572,12 +604,13 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 
 All code style rules that are [configured](../../fundamentals/code-analysis/overview.md#code-style-analysis) to be warnings or errors will execute on build and report violations.
 
-## Run-time configuration properties
+## Runtime configuration properties
 
-You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [Run-time configuration settings](../run-time-config/index.md).
+You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [Runtime configuration settings](../run-time-config/index.md).
 
 - [ConcurrentGarbageCollection](#concurrentgarbagecollection)
 - [InvariantGlobalization](#invariantglobalization)
+- [PredefinedCulturesOnly](#predefinedculturesonly)
 - [RetainVMGarbageCollection](#retainvmgarbagecollection)
 - [ServerGarbageCollection](#servergarbagecollection)
 - [ThreadPoolMaxThreads](#threadpoolmaxthreads)
@@ -605,6 +638,18 @@ The `InvariantGlobalization` property configures whether the app runs in *global
   <InvariantGlobalization>true</InvariantGlobalization>
 </PropertyGroup>
 ```
+
+### PredefinedCulturesOnly
+
+In .NET 6 and later versions, the `PredefinedCulturesOnly` property configures whether apps can create cultures other than the invariant culture when [globalization-invariant mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md) is enabled. The default is `true`. Set the value to `false` to allow creation of any new culture in globalization-invariant mode.
+
+```xml
+<PropertyGroup>
+  <PredefinedCulturesOnly>false</PredefinedCulturesOnly>
+</PropertyGroup>
+```
+
+For more information, see [Culture creation and case mapping in globalization-invariant mode](../compatibility/globalization/6.0/culture-creation-invariant-mode.md).
 
 ### RetainVMGarbageCollection
 
@@ -729,6 +774,19 @@ The `ValidateExecutableReferencesMatchSelfContained` property can be used to dis
 </PropertyGroup>
 ```
 
+### WindowsSdkPackageVersion
+
+The `WindowsSdkPackageVersion` property can be used to override the version of the [Windows SDK targeting package](https://www.nuget.org/packages/Microsoft.Windows.SDK.NET.Ref). This property was introduced in .NET 5, and replaces the use of the `FrameworkReference` item for this purpose.
+
+```xml
+<PropertyGroup>
+  <WindowsSdkPackageVersion>10.0.19041.18</WindowsSdkPackageVersion>
+</PropertyGroup>
+```
+
+> [!NOTE]
+> We don't recommend overriding the Windows SDK version, because the Windows SDK targeting packages are included with the .NET 5+ SDK. Instead, to reference the latest Windows SDK package, update your version of the .NET SDK. This property should only be used in rare cases such as using preview packages or needing to override the version of C#/WinRT.
+
 ## Run-related properties
 
 The following properties are used for launching an app with the [`dotnet run`](../tools/dotnet-run.md) command:
@@ -780,10 +838,10 @@ For more information, see [Expose .NET components to COM](../native-interop/expo
 
 ### EnableDynamicLoading
 
-The `EnableDynamicLoading` property indicates that an assembly is a dynamically loaded component. The component could be a [COM library](/windows/win32/com/the-component-object-model) or a non-COM library that can be [used from a native host](../tutorials/netcore-hosting.md). Setting this property to `true` has the following effects:
+The `EnableDynamicLoading` property indicates that an assembly is a dynamically loaded component. The component could be a [COM library](/windows/win32/com/the-component-object-model) or a non-COM library that can be [used from a native host](../tutorials/netcore-hosting.md) or [used as a plugin](../tutorials/creating-app-with-plugin-support.md). Setting this property to `true` has the following effects:
 
 - A *.runtimeconfig.json* file is generated.
-- [Roll forward](../whats-new/dotnet-core-3-0.md#major-version-runtime-roll-forward) is set to `LatestMinor`.
+- [RollForward](#rollforward) is set to `LatestMinor`.
 - NuGet references are copied locally.
 
 ```xml
@@ -791,6 +849,30 @@ The `EnableDynamicLoading` property indicates that an assembly is a dynamically 
   <EnableDynamicLoading>true</EnableDynamicLoading>
 </PropertyGroup>
 ```
+
+## Generated file properties
+
+The following properties concern code in generated files:
+
+- [DisableImplicitNamespaceImports](#disableimplicitnamespaceimports)
+
+### DisableImplicitNamespaceImports
+
+The `DisableImplicitNamespaceImports` property can be used to disable [implicit namespaces](../compatibility/sdk/6.0/implicit-namespaces.md) in C# projects that target .NET 6 or a later version. Implicit namespaces are the default namespaces that are globally included in a project based on the type of SDK. Set this property to `true` to disable implicit namespaces.
+
+```xml
+<PropertyGroup>
+  <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
+</PropertyGroup>
+```
+
+Setting the `DisableImplicitNamespaceImports` property to `true` completely disables the implicit namespaces feature of the .NET SDK. If you want to disable only a set of implicit namespaces, use one of the following SDK-specific properties instead.
+
+| Property | SDK | Affected namespaces |
+| - | - | - |
+| `DisableImplicitNamespaceImports_DotNet` | Microsoft.NET.Sdk | System<br/>System.Collections.Generic<br/>System.IO<br/>System.Linq<br/>System.Net.Http<br/>System.Threading<br/>System.Threading.Tasks |
+| `DisableImplicitNamespaceImports_Web` | Microsoft.NET.Sdk.Web | System.Net.Http.Json<br/>Microsoft.AspNetCore.Builder<br/>Microsoft.AspNetCore.Hosting<br/>Microsoft.AspNetCore.Http<br/>Microsoft.AspNetCore.Routing<br/>Microsoft.Extensions.Configuration<br/>Microsoft.Extensions.DependencyInjection<br/>Microsoft.Extensions.Hosting<br/>Microsoft.Extensions.Logging |
+| `DisableImplicitNamespaceImports_Worker` | Microsoft.NET.Sdk.Worker | Microsoft.Extensions.Configuration<br/>Microsoft.Extensions.DependencyInjection<br/>Microsoft.Extensions.Hosting<br/>Microsoft.Extensions.Logging |
 
 ## Items
 

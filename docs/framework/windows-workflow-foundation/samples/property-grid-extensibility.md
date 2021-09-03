@@ -6,20 +6,11 @@ ms.assetid: 3530c3a3-756d-4712-9f10-fb2897414d3a
 ---
 # Property grid extensibility
 
-A developer can customize the property grid that is displayed when a given activity is selected within the designer. This can be done to create a rich editing experience. This sample shows how this can be done.
+You can customize the property grid that's displayed when a given activity is selected within the designer, creating a rich editing experience. The [PropertyGridExtensibility sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/basic/Designer/PropertyGridExtensibility/cs) shows how this can be done.
 
 ## Demonstrates
 
 Workflow designer property grid extensibility.
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Designer\PropertyGridExtensibility`
 
 ## Discussion
 
@@ -121,12 +112,3 @@ The dialog editor sample demonstrates the following:
 2. Drag a **SimpleCodeActivity** from the toolbox onto the designer canvas.
 
 3. Click the **SimpleCodeActivity** and then open the property grid where there is a slider control and a file picking control.
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Designer\PropertyGridExtensibility`

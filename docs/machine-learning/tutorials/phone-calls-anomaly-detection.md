@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Detect anomalies in phone calls'
 description: Learn how to build an anomaly detection application for time series data. This tutorial creates a .NET Core console application using C# in Visual Studio 2019.
-ms.date: 12/04/2020
+ms.date: 07/28/2021
 ms.topic: tutorial
 ms.custom: mvc
 recommendations: false
@@ -32,11 +32,17 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 2. Create a directory named *Data* in your project to save your data set files.
 
-3. Install the **Microsoft.ML NuGet Package**:
+3. Install the **Microsoft.ML NuGet Package** version **1.5.2**:
 
-    [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
+    1. In Solution Explorer, right-click on your project and select **Manage NuGet Packages**.
+    1. Choose "nuget.org" as the Package source.
+    1. Select the **Browse** tab.
+    1. Search for **Microsoft.ML**.
+    1. Select **Microsoft.ML** from the list of packages and choose version **1.5.2** from the **Version** dropdown.
+    1. Select the **Install** button.
+    1. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
-    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML** and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.TimeSeries**.
+    Repeat these steps for **Microsoft.ML.TimeSeries** version **1.5.2**.
 
 4. Add the following `using` statements at the top of your *Program.cs* file:
 
@@ -129,7 +135,7 @@ In the first step, we invoke the `DetectSeasonality` function to determine the p
 1. Create the `DetectPeriod` method, just below the `Main` method, using the following code:
 
     ```csharp
-    static void DetectPeriod(MLContext mlContext, IDataView phoneCalls)
+    static int DetectPeriod(MLContext mlContext, IDataView phoneCalls)
     {
 
     }
@@ -143,7 +149,11 @@ In the first step, we invoke the `DetectSeasonality` function to determine the p
 
     [!code-csharp[DisplayPeriod](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#DisplayPeriod)]
 
-4. Add the following call to the `DetectPeriod` method in the `Main` method:
+4. Return the period value.
+
+    [!code-csharp[ReturnPeriod](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#L52)]
+
+5. Add the following call to the `DetectPeriod` method in the `Main` method:
 
     [!code-csharp[CallDetectPeriod](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#CallDetectPeriod)]
 

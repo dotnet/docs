@@ -1,59 +1,66 @@
 open System
-open System.IO
-open Microsoft.Azure // Namespace for CloudConfigurationManager
-open Microsoft.Azure.Storage // Namespace for CloudStorageAccount
-open Microsoft.Azure.Storage.Table // Namespace for Table storage types
+open Azure
+open Azure.Data.Tables // Namespace for Table storage types
+open System.Linq
+open System.Collections.Generic
 
 //
 // Get your connection string.
 //
 
 let storageConnString = "..." // fill this in from your storage account
-(*
-// Parse the connection string and return a reference to the storage account.
-let storageConnString = 
-    CloudConfigurationManager.GetSetting("StorageConnectionString")
-*)
-//
-// Parse the connection string.
-//
-
-// Parse the connection string and return a reference to the storage account.
-let storageAccount = CloudStorageAccount.Parse(storageConnString)
 
 //
 // Create the Table service client.
 //
 
 // Create the table client.
-let tableClient = storageAccount.CreateCloudTableClient()
+let tableClient = TableServiceClient(storageConnString)
 
 //
 // Create a table.
 //
 
 // Retrieve a reference to the table.
-let table = tableClient.GetTableReference("people")
+let table = tableClient.GetTableClient("people")
 
 // Create the table if it doesn't exist.
-table.CreateIfNotExists()
+ignore(table.CreateIfNotExists())
 
 //
 // Add an entity to a table. The last name is used as a partition key.
 //
 
 type Customer(firstName, lastName, email: string, phone: string) =
-    inherit TableEntity(partitionKey=lastName, rowKey=firstName)
+    interface ITableEntity with
+        member this.ETag
+            with get (): ETag = 
+                raise (System.NotImplementedException())
+            and set (v: ETag): unit = 
+                raise (System.NotImplementedException())
+        member this.PartitionKey
+            with get (): string = 
+                raise (System.NotImplementedException())
+            and set (v: string): unit = 
+                raise (System.NotImplementedException())
+        member this.RowKey
+            with get (): string = 
+                raise (System.NotImplementedException())
+            and set (v: string): unit = 
+                raise (System.NotImplementedException())
+        member this.Timestamp
+            with get (): Nullable<DateTimeOffset> = 
+                raise (System.NotImplementedException())
+            and set (v: Nullable<DateTimeOffset>): unit = 
+                raise (System.NotImplementedException())
     new() = Customer(null, null, null, null)
     member val Email = email with get, set
     member val PhoneNumber = phone with get, set
+    member val PartitionKey = lastName with get, set
+    member val RowKey = firstName with get, set
 
-let customer = 
-    Customer("Walter", "Harp", "Walter@contoso.com", "425-555-0101")
-
-let insertOp = TableOperation.Insert(customer)
-table.Execute(insertOp)
-
+let customer = Customer("Walter", "Harp", "Walter@contoso.com", "425-555-0101")
+ignore(table.AddEntity(customer))
 
 //
 // Insert a batch of entities. All must have the same partition key.
@@ -65,77 +72,62 @@ let customer1 =
 let customer2 =
     Customer("Ben", "Smith", "Ben@contoso.com", "425-555-0103")
 
-let batchOp = TableBatchOperation()
-batchOp.Insert(customer1)
-batchOp.Insert(customer2)
-table.ExecuteBatch(batchOp)
+let entityList = [ customer1; customer2]
+
+// Create the batch.
+let addEntitiesBatch = List<TableTransactionAction>()
+
+// Add the entities to be added to the batch.
+addEntitiesBatch.AddRange(entityList.Select(fun e -> TableTransactionAction(TableTransactionActionType.Add, e)))
+
+// Submit the batch.
+let response = table.SubmitTransactionAsync(addEntitiesBatch).ConfigureAwait(false)
 
 //
 // Retrieve all entities in a partition.
 //
 
-let query =
-    TableQuery<Customer>().Where(
-        TableQuery.GenerateFilterCondition(
-            "PartitionKey", QueryComparisons.Equal, "Smith"))
+let results = table.Query<Customer>("PartitionKey eq 'Smith'")
 
-let result = table.ExecuteQuery(query)
-
-for customer in result do 
-    printfn "customer: %A %A" customer.RowKey customer.PartitionKey
+for customer in results do 
+    printfn $"customer: {customer.RowKey} {customer.PartitionKey}"
 
 //
 // Retrieve a range of entities in a partition.
 //
 
-let range =
-    TableQuery<Customer>().Where(
-        TableQuery.CombineFilters(
-            TableQuery.GenerateFilterCondition(
-                "PartitionKey", QueryComparisons.Equal, "Smith"),
-            TableOperators.And,
-            TableQuery.GenerateFilterCondition(
-                "RowKey", QueryComparisons.LessThan, "M")))
-
-let rangeResult = table.ExecuteQuery(range)
+let rangeResult = table.Query<Customer>("PartitionKey eq 'Smith' and RowKey lt 'M'")
 
 for customer in rangeResult do 
-    printfn "customer: %A %A" customer.RowKey customer.PartitionKey
+    printfn $"customer: {customer.RowKey} {customer.PartitionKey}"
 
 //
 // Retrieve a single entity.
 //
 
-let retrieveOp = TableOperation.Retrieve<Customer>("Smith", "Ben")
-
-let retrieveResult = table.Execute(retrieveOp)
+let singleResult = table.GetEntityAsync<Customer>("Smith", "Ben").Result.Value
 
 // Show the result
-let retrieveCustomer = retrieveResult.Result :?> Customer
-printfn "customer: %A %A" retrieveCustomer.RowKey retrieveCustomer.PartitionKey
+printfn $"customer: {singleResult.RowKey} {singleResult.PartitionKey}"
 
 //
-// Replace an entity.
+// Update an entity.
 //
 
 try
-    let customer = retrieveResult.Result :?> Customer
-    customer.PhoneNumber <- "425-555-0103"
-    let replaceOp = TableOperation.Replace(customer)
-    table.Execute(replaceOp) |> ignore
+    singleResult.PhoneNumber <- "425-555-0103"
+    ignore(table.UpdateEntity(singleResult, new ETag("etag"), TableUpdateMode.Replace))
     Console.WriteLine("Update succeeeded")
 with e ->
     Console.WriteLine("Update failed")
 
 //
-// Insert-or-update an entity.
+// Upsert an entity.
 //
 
 try
-    let customer = retrieveResult.Result :?> Customer
-    customer.PhoneNumber <- "425-555-0104"
-    let replaceOp = TableOperation.InsertOrReplace(customer)
-    table.Execute(replaceOp) |> ignore
+    singleResult.PhoneNumber <- "425-555-0104"
+    ignore(table.UpsertEntity(singleResult, TableUpdateMode.Replace))
     Console.WriteLine("Update succeeeded")
 with e ->
     Console.WriteLine("Update failed")
@@ -144,51 +136,30 @@ with e ->
 // Query a subset of entity properties.
 //
 
-// Define the query, and select only the Email property.
-let projectionQ = TableQuery<DynamicTableEntity>().Select [|"Email"|]
-
-// Define an entity resolver to work with the entity after retrieval.
-let resolver = EntityResolver<string>(fun pk rk ts props etag ->
-    if props.ContainsKey("Email") then
-        props.["Email"].StringValue
-    else
-        null
-    )
-
-let resolvedResults = table.ExecuteQuery(projectionQ, resolver, null, null)
+let subsetResults = query{
+    for customer in table.Query<Customer>() do 
+    select customer.Email
+}
 
 //
 // Retrieve entities in pages asynchronously.
 //
 
-let tableQ = TableQuery<Customer>()
+let pagesResults = table.Query<Customer>()
 
-let asyncQuery = 
-    let rec loop (cont: TableContinuationToken) = async {
-        let! ct = Async.CancellationToken
-        let! result = table.ExecuteQuerySegmentedAsync(tableQ, cont, ct) |> Async.AwaitTask
-
-        // ...process the result here...
-        
-        // Continue to the next segment
-        match result.ContinuationToken with
-        | null -> ()
-        | cont -> return! loop cont 
-    }
-    loop null
-
-let asyncResults = asyncQuery |> Async.RunSynchronously
+for page in pagesResults.AsPages() do 
+    printfn "This is a new page!" 
+    for qEntity in page.Values do
+        printfn $"customer: {qEntity.RowKey} {qEntity.PartitionKey}"
 
 //
 // Delete an entity.
 //
 
-let deleteOp = TableOperation.Delete(customer)
-table.Execute(deleteOp)
+ignore(table.DeleteEntity("Smith", "Ben"))
 
 //
 // Delete a table.
 //
 
-table.DeleteIfExists()
-
+ignore(table.Delete())

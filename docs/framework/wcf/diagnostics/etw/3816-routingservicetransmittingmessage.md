@@ -6,10 +6,10 @@ ms.assetid: a7ee6e3b-4a02-47bd-b004-46abb6dd820e
 ---
 # 3816 - RoutingServiceTransmittingMessage
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3816|  
 |Keywords|RoutingServices|  
 |Level|Information|  

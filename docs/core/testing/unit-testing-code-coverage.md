@@ -282,8 +282,8 @@ Run the tool and provide the desired options, given the output *coverage.cobertu
 
 ```console
 reportgenerator
-"-reports:Path\To\TestProject\TestResults\{guid}\coverage.cobertura.xml"
-"-targetdir:coveragereport"
+-reports:"Path\To\TestProject\TestResults\{guid}\coverage.cobertura.xml"
+-targetdir:"coveragereport"
 -reporttypes:Html
 ```
 

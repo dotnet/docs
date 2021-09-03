@@ -1,7 +1,7 @@
 ---
 title: "C# Coding Conventions"
 description: Learn about coding conventions in C#. Coding conventions create a consistent look to the code and facilitate copying, changing, and maintaining the code.
-ms.date: 05/14/2021
+ms.date: 07/16/2021
 helpviewer_keywords:
   - "coding conventions, C#"
   - "Visual C#, coding conventions"
@@ -162,6 +162,7 @@ Good layout uses formatting to emphasize the structure of your code and to make 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet3":::
 
 - Don't create formatted blocks of asterisks around comments.
+- Ensure all public members have the necessary XML comments providing appropriate descriptions about their behavior.
 
 ## Language guidelines
 

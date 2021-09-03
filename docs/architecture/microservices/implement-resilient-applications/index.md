@@ -21,7 +21,7 @@ The many individual components of your application should also incorporate healt
 > The Polly library is still used to add resilience to database connections, specially while starting up the services.
 
 >[!WARNING]
-> All code samples in this section were valid before using Linkerd and are not updated to reflect the current actual code. So they make sense in the context of this section.
+> All code samples and images in this section were valid before using Linkerd and are not updated to reflect the current actual code. So they make sense in the context of this section.
 
 >[!div class="step-by-step"]
 >[Previous](../microservice-ddd-cqrs-patterns/microservice-application-layer-implementation-web-api.md)

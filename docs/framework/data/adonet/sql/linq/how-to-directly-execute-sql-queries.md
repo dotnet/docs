@@ -15,7 +15,7 @@ ms.assetid: e491b9bf-741a-4296-9f51-76c25ddf6a82
   
  In cases where a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] query is insufficient for a specialized task, you can use the <xref:System.Data.Linq.DataContext.ExecuteQuery%2A> method to execute a SQL query, and then convert the result of your query directly into objects.  
   
-## Example  
+## Example 1
 
  In the following example, assume that the data for the `Customer` class is spread over two tables (customer1 and customer2). The query returns a sequence of `Customer` objects.  
   
@@ -24,7 +24,7 @@ ms.assetid: e491b9bf-741a-4296-9f51-76c25ddf6a82
   
  As long as the column names in the tabular results match column properties of your entity class, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] creates your objects out of any SQL query.  
   
-## Example  
+## Example 2  
 
  The <xref:System.Data.Linq.DataContext.ExecuteQuery%2A> method also allows for parameters. Use code such as the following to execute a parameterized query.  
   

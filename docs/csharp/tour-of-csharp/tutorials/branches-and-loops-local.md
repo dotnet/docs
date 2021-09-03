@@ -20,6 +20,8 @@ Create a directory named *branches-tutorial*. Make that the current directory an
 dotnet new console -n BranchesAndLoops -o .
 ```
 
+[!INCLUDE [csharp10-templates](../../../../includes/csharp10-templates.md)]
+
 This command creates a new .NET console application in the current directory. Open *Program.cs* in your favorite editor, and replace the contents with the following code:
 
 ```csharp
@@ -287,5 +289,5 @@ your own development environment.
 
 You can learn more about these concepts in these articles:
 
-- [If and else statement](../../language-reference/keywords/if-else.md)
+- [Selection statements](../../language-reference/statements/selection-statements.md)
 - [Iteration statements](../../language-reference/statements/iteration-statements.md)

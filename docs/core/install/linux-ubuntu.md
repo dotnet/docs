@@ -25,7 +25,7 @@ The following table is a list of currently supported .NET releases and the versi
 | Ubuntu                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
 | ✔️ [21.04](#2104-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [20.10](#2010-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ❌ [20.10](#2010-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [20.04 (LTS)](#2004-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ❌ [19.10](#1910-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ❌ [19.04](#1904-)       | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
@@ -53,17 +53,21 @@ The following versions of .NET are no longer supported. The downloads for these 
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
 
-## 20.10 ✔️
+## 20.10 ❌
+
+[!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/20.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
@@ -75,6 +79,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
@@ -88,6 +93,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
@@ -101,6 +107,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/19.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
@@ -114,6 +121,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/18.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
@@ -125,6 +133,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
@@ -138,6 +147,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/17.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
@@ -151,6 +161,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/17.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
@@ -164,6 +175,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/16.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
@@ -175,6 +187,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]

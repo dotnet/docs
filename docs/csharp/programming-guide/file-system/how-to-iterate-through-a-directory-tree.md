@@ -23,7 +23,7 @@ root.GetDirectories("*.*", System.IO.SearchOption.AllDirectories);
   
  The weakness in this approach is that if any one of the subdirectories under the specified root causes a <xref:System.IO.DirectoryNotFoundException> or <xref:System.UnauthorizedAccessException>, the whole method fails and returns no directories. The same is true when you use the <xref:System.IO.DirectoryInfo.GetFiles%2A> method. If you have to handle these exceptions on specific subfolders, you must manually walk the directory tree, as shown in the following examples.  
   
- When you manually walk a directory tree, you can handle the subdirectories first (*pre-order traversal*), or the files first (*post-order traversal*). If you perform a pre-order traversal, you walk the whole tree under the current folder before iterating through the files that are directly in that folder itself. The examples later in this document perform post-order traversal, but you can easily modify them to perform pre-order traversal.  
+ When you manually walk a directory tree, you can handle the files first (*pre-order traversal*), or the subdirectories first (*post-order traversal*). If you perform a pre-order traversal, you visit files directly under that folder itself, and then walk the whole tree under the current folder. Post-order traversal is the other way around, walking the whole tree beneath before getting to the current folder's files. The examples later in this document perform pre-order traversal, but you can easily modify them to perform post-order traversal.  
   
  Another option is whether to use recursion or a stack-based traversal. The examples later in this document show both approaches.  
   

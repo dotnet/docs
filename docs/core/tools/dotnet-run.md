@@ -14,10 +14,11 @@ ms.date: 02/19/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet run [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
-    [--force] [--interactive] [--launch-profile <NAME>] [--no-build]
+dotnet run [-a|--arch <ARCHITECTURE>] [-c|--configuration <CONFIGURATION>]
+    [-f|--framework <FRAMEWORK>] [--force] [--interactive]
+    [--launch-profile <NAME>] [--no-build]
     [--no-dependencies] [--no-launch-profile] [--no-restore]
-    [-p|--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [--os <OS>] [--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
     [-v|--verbosity <LEVEL>] [[--] [application arguments]]
 
 dotnet run -h|--help
@@ -48,15 +49,19 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
+[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+
 ## Options
+
+<!-- markdownlint-disable MD012 -->
 
 - **`--`**
 
   Delimits arguments to `dotnet run` from arguments for the application being run. All arguments after this delimiter are passed to the application run.
 
-- **`-c|--configuration <CONFIGURATION>`**
+[!INCLUDE [arch](../../../includes/cli-arch.md)]
 
-  Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project.
+[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -66,13 +71,9 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
-- **`-h|--help`**
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out a short help for the command.
-
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action (for example, to complete authentication). Available since .NET Core 3.0 SDK.
+[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 - **`--launch-profile <NAME>`**
 
@@ -94,17 +95,17 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Doesn't execute an implicit restore when running the command.
 
-- **`-p|--project <PATH>`**
+[!INCLUDE [os](../../../includes/cli-os.md)]
 
-  Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory.
+- **`--project <PATH>`**
+
+  Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory. The [`-p` abbreviation for `--project` is deprecated](../compatibility/sdk/6.0/deprecate-p-option-dotnet-run.md) starting in .NET 6 Preview SDK.
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
   Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). `-r` short option available since .NET Core 3.0 SDK.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default value is `m`. Available since .NET Core 2.1 SDK.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ## Examples
 

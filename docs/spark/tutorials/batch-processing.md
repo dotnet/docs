@@ -84,7 +84,7 @@ If this is your first time using .NET for Apache Spark, check out the [Get start
        .Read()
        .Schema("id INT, url STRING, owner_id INT, " +
        "name STRING, descriptor STRING, language STRING, " +
-       "created_at STRING, forked_from INT, deleted STRING" +
+       "created_at STRING, forked_from INT, deleted STRING," +
        "updated_at STRING")
        .Csv("filepath");
 
@@ -117,7 +117,7 @@ The goal of this app is to gain some insights about the GitHub projects data. Ad
    // Average number of times each language has been forked
    DataFrame groupedDF = cleanedProjects
        .GroupBy("language")
-       .Agg(Avg(cleanedProjects["forked_from"]);
+       .Agg(Avg(cleanedProjects["forked_from"]));
    ```
 
 1. Add the following block of code to order the average number of forks in descending order to see which languages are the most forked. That is, the largest number of forks will appear first.
@@ -133,7 +133,7 @@ The goal of this app is to gain some insights about the GitHub projects data. Ad
    spark.Udf().Register<string, bool>(
        "MyUDF",
        (date) => DateTime.TryParse(date, out DateTime convertedDate) &&
-           (convertedDate > s_referenceDate);
+           (convertedDate > s_referenceDate));
    cleanedProjects.CreateOrReplaceTempView("dateView");
 
    DataFrame dateDf = spark.Sql(

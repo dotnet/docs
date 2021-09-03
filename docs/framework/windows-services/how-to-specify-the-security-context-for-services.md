@@ -14,6 +14,8 @@ ms.assetid: 02187c7b-dbf2-45f2-96c2-e11010225a22
 ---
 # How to: Specify the Security Context for Services
 
+[!INCLUDE [windows-service-disambiguation](../../core/extensions/includes/windows-service-disambiguation.md)]
+
 By default, services run in a different security context than that of the logged-in user. Services run in the context of the default system account, called `LocalSystem`, which gives them different access privileges to system resources than the user. You can change this behavior to specify a different user account under which your service should run.  
   
  You set the security context by manipulating the <xref:System.ServiceProcess.ServiceProcessInstaller.Account%2A> property for the process within which the service runs. This property allows you to set the service to one of four account types:  

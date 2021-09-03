@@ -17,7 +17,9 @@ public sealed class ColorConsoleLoggerProvider : ILoggerProvider
     }
 
     public ILogger CreateLogger(string categoryName) =>
-        _loggers.GetOrAdd(categoryName, name => new ColorConsoleLogger(name, _currentConfig));
+        _loggers.GetOrAdd(categoryName, name => new ColorConsoleLogger(name, GetCurrentConfig));
+
+    private ColorConsoleLoggerConfiguration GetCurrentConfig() => _currentConfig;
 
     public void Dispose()
     {

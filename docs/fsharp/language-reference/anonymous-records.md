@@ -257,7 +257,7 @@ Anonymous records do not support pattern matching, unlike named records. There a
 
 1. A pattern would have to account for every field of an anonymous record, unlike named record types. This is because anonymous records do not support structural subtyping – they are nominal types.
 2. Because of (1), there is no ability to have additional patterns in a pattern match expression, as each distinct pattern would imply a different anonymous record type.
-3. Because of (3), any anonymous record pattern would be more verbose than the use of “dot” notation.
+3. Because of (2), any anonymous record pattern would be more verbose than the use of “dot” notation.
 
 There is an open language suggestion to [allow pattern matching in limited contexts](https://github.com/fsharp/fslang-suggestions/issues/713).
 

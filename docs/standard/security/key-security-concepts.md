@@ -29,7 +29,7 @@ During just-in-time (JIT) compilation, an optional verification process examines
   
 Although verification of type safety is not mandatory to run managed code, type safety plays a crucial role in assembly isolation and security enforcement. When code is type safe, the common language runtime can completely isolate assemblies from each other. This isolation helps ensure that assemblies cannot adversely affect each other and it increases application reliability. Type-safe components can execute safely in the same process even if they are trusted at different levels. When code is not type safe, unwanted side effects can occur. For example, the runtime cannot prevent managed code from calling into native (unmanaged) code and performing malicious operations. When code is type safe, the runtime's security enforcement mechanism ensures that it does not access native code unless it has permission to do so. All code that is not type safe must have been granted <xref:System.Security.Permissions.SecurityPermission> with the passed enum member <xref:System.Security.Permissions.SecurityPermissionAttribute.SkipVerification%2A> to run.  
   
-For more information, see [Code Access Security Basics](../../framework/misc/code-access-security-basics.md).  
+For more information, see [Code Access Security Basics](/previous-versions/dotnet/framework/code-access-security/code-access-security-basics).  
   
 ## Principal  
 

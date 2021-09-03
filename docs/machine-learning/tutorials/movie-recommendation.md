@@ -2,7 +2,7 @@
 title: 'Tutorial: Build a movie recommender - matrix factorization'
 description: This tutorial shows you how to build a movie recommender with ML.NET in a .NET Core console application. The steps use C# and Visual Studio 2019.
 author: briacht
-ms.date: 06/30/2020
+ms.date: 08/06/2021
 ms.custom: mvc, title-hack-0516
 ms.topic: tutorial
 recommendations: false
@@ -202,8 +202,8 @@ For instance, if User 1 and User 2 rate movies similarly, then User 2 is more li
 
 | | `Incredibles 2 (2018)` | `The Avengers (2012)` | `Guardians of the Galaxy (2014)` |
 | -------------:|-------------:| -----:|-----:|
-| User 1 | Watched and liked movie | Watched and liked movie | Watched and liked movie |
-| User 2 | Watched and liked movie | Watched and liked movie | Has not watched -- RECOMMEND movie |
+| **User 1** | Watched and liked movie | Watched and liked movie | Watched and liked movie |
+| **User 2** | Watched and liked movie | Watched and liked movie | Has not watched -- RECOMMEND movie |
 
 The `Matrix Factorization` trainer has several [Options](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options), which you can read more about in the [Algorithm hyperparameters](#algorithm-hyperparameters) section below.
 

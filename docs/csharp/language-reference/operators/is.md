@@ -11,7 +11,7 @@ ms.assetid: bc62316a-d41f-4f90-8300-c6f4f0556e43
 ---
 # is operator (C# reference)
 
-In C# 6 and earlier, the `is` operator checks if the result of an expression is compatible with a given type. For information about the type-testing `is` operator, see the [is operator](type-testing-and-cast.md#is-operator) section of the [Type-testing and cast operators](type-testing-and-cast.md) article.
+The `is` operator checks if the result of an expression is compatible with a given type. For information about the type-testing `is` operator, see the [is operator](type-testing-and-cast.md#is-operator) section of the [Type-testing and cast operators](type-testing-and-cast.md) article.
 
 Beginning with C# 7.0, you can also use the `is` operator to match an expression against a pattern, as the following example shows:
 
@@ -37,7 +37,8 @@ The `is` operator can be useful in the following scenarios:
 
   :::code language="csharp" source="snippets/shared/IsOperator.cs" id="NonNullCheck":::
 
-For the complete list of patterns supported by the `is` operator, see [Patterns](patterns.md).
+> [!NOTE]
+> For the complete list of patterns supported by the `is` operator, see [Patterns](patterns.md).
 
 ## C# language specification
 

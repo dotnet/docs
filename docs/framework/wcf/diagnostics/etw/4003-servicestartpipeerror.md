@@ -6,10 +6,10 @@ ms.assetid: 6001510b-49b1-40b3-9173-de1f0031a8e7
 ---
 # 4003 - ServiceStartPipeError
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4003|  
 |Keywords|ActivationServices|  
 |Level|Error|  

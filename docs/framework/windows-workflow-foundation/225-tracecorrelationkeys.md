@@ -6,10 +6,10 @@ ms.assetid: d9083aaf-3816-4c1c-bae0-2d7f49628345
 ---
 # 225 - TraceCorrelationKeys
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|225|  
 |Keywords|Troubleshooting, ServiceModel|  
 |Level|Information|  

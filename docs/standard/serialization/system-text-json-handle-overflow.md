@@ -1,8 +1,9 @@
 ---
-title: How to handle overflow JSON with System.Text.Json
-description: "Learn how to handle overflow JSON while serializing to and deserializing from JSON in .NET."
-ms.date: 11/30/2020
+title: How to handle overflow JSON or use JsonElement or JsonNode in System.Text.Json
+description: "Learn how to handle overflow JSON or use JsonElement or JsonNode while using System.Text.Json to serialize and deserialize JSON in .NET."
+ms.date: 07/21/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
+zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"
@@ -14,9 +15,9 @@ helpviewer_keywords:
 ms.topic: how-to
 ---
 
-# How to handle overflow JSON with System.Text.Json
+# How to handle overflow JSON or use JsonElement or JsonNode in System.Text.Json
 
-This article shows how to handle overflow JSON with the [`System.Text.Json`](xref:System.Text.Json) namespace.
+This article shows how to handle overflow JSON with the [`System.Text.Json`](xref:System.Text.Json) namespace. It also shows how to deserialize into <xref:System.Text.Json.JsonElement> or <xref:System.Text.Json.Nodes.JsonNode>, as an alternative for other scenarios where the target type might not perfectly match all of the JSON being deserialized.
 
 ## Handle overflow JSON
 
@@ -84,11 +85,27 @@ The following example shows a round trip from JSON to a deserialized object and 
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripExtensionData.cs" highlight="13-14":::
 
-## Deserialize into JsonElement
+## Deserialize into JsonElement or JsonNode
 
-If you just want to be flexible about what JSON to accept for a particular property, an alternative is to deserialize into <xref:System.Text.Json.JsonElement>. Any valid JSON property can be deserialized into `JsonElement`. The following example shows a round trip from JSON and back to JSON for a class that includes properties of type `JsonElement`.
+::: zone pivot="dotnet-6-0"
+
+If you just want to be flexible about what JSON to accept for a particular property, an alternative is to deserialize into <xref:System.Text.Json.JsonElement> or <xref:System.Text.Json.Nodes.JsonNode>. Any valid JSON property can be deserialized into `JsonElement` or `JsonNode`. Choose `JsonElement` to create an immutable object or `JsonNode` to create a mutable object.
+
+The following example shows a round trip from JSON and back to JSON for a class that includes properties of type `JsonElement` and `JsonNode`.
+
+:::code language="csharp" source="snippets/system-text-json-how-to-6-0/csharp/RoundtripJsonElementAndNode.cs" highlight="12-13":::
+
+:::zone-end
+
+::: zone pivot="dotnet-core-3-1,dotnet-5-0"
+
+If you just want to be flexible about what JSON to accept for a particular property, an alternative is to deserialize into <xref:System.Text.Json.JsonElement>. Any valid JSON property can be deserialized into <xref:System.Text.Json.JsonElement>. <xref:System.Text.Json.Nodes.JsonNode> is not supported in .NET 5 and earlier versions.
+
+The following example shows a round trip from JSON and back to JSON for a class that includes properties of type `JsonElement`.
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripJsonElement.cs" highlight="11-12":::
+
+:::zone-end
 
 ## See also
 
@@ -99,13 +116,15 @@ If you just want to be flexible about what JSON to accept for a particular prope
 * [Customize property names and values](system-text-json-customize-properties.md)
 * [Ignore properties](system-text-json-ignore-properties.md)
 * [Allow invalid JSON](system-text-json-invalid-json.md)
-* [Preserve references](system-text-json-preserve-references.md)
-* [Immutable types and non-public accessors](system-text-json-immutability.md)
+* [Preserve references and handle circular references](system-text-json-preserve-references.md)
+* [Deserialize to immutable types and non-public accessors](system-text-json-immutability.md)
 * [Polymorphic serialization](system-text-json-polymorphism.md)
 * [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
 * [Customize character encoding](system-text-json-character-encoding.md)
-* [Use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
+* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
+* [How to use source generation](system-text-json-source-generation.md)
+* [Supported collection types](system-text-json-supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

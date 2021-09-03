@@ -96,6 +96,8 @@ Certain commands send additional data. A subset of commands sends the first argu
 | `dotnet list <arg>`   | The word `package` or `reference`.      |
 | `dotnet sln <arg>`    | The word `add`, `list`, or `remove`.    |
 | `dotnet nuget <arg>`  | The word `delete`, `locals`, or `push`. |
+| `dotnet workload <subcommand> <arg>`  | The word `install`, `update`, `list`, `search`, `uninstall`, `repair`, `restore` and the workload name (hashed). |
+| `dotnet tool <subcommand> <arg>`  | The word `install`, `update`, `list`, `search`, `uninstall`, `run` and the dotnet tool name (hashed). |
 
 A subset of commands sends selected options if they're used, along with their values:
 

@@ -6,7 +6,7 @@ ms.assetid: f82e73e7-a256-4a4d-82b7-c0d62f4ab5e7
 ---
 # Using the ExpressionTextBox in a Custom Activity Designer
 
-This sample shows how to use the <xref:System.Activities.Presentation.View.ExpressionTextBox> in a custom activity designer. The custom activity, `MultiAssign`, assigns two string values to two string variables. Some <xref:System.Activities.Presentation.View.ExpressionTextBox> controls bind to <xref:System.Activities.InArgument>s and some bind to <xref:System.Activities.OutArgument>s.
+The [ExpressionTextBox sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/basic/CustomActivities/CustomActivityDesigners/ExpressionTextBox/cs) shows how to use the <xref:System.Activities.Presentation.View.ExpressionTextBox> in a custom activity designer. The custom activity, `MultiAssign`, assigns two string values to two string variables. Some <xref:System.Activities.Presentation.View.ExpressionTextBox> controls bind to <xref:System.Activities.InArgument>s and some bind to <xref:System.Activities.OutArgument>s.
 
 ## Sample details
 
@@ -18,13 +18,13 @@ This sample shows how to use the <xref:System.Activities.Presentation.View.Expre
 
  An ExpressionTextBox can only be bound to arguments, and cannot be bound to CLR properties.
 
-#### To use this sample
+## To use this sample
 
-1. Using Visual Studio 2010, open the ExpressionTextBoxSample.sln file.
+1. Using Visual Studio, open the ExpressionTextBoxSample.sln file.
 
 2. To build the solution, press CTRL+SHIFT+B.
 
-#### To run this sample
+## To run this sample
 
 1. Add a new Workflow Console Application to the solution.
 
@@ -34,15 +34,6 @@ This sample shows how to use the <xref:System.Activities.Presentation.View.Expre
 
 4. Drag the **MultiAssign** activity from the toolbox and drop it into the workflow.
 
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->
-> `<InstallDrive>:\WF_WCF_Samples`  
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->
-> `<InstallDrive>:\WF_WCF_Samples\WF\Basic\CustomActivities\CustomActivityDesigners\ExpressionTextBox`  
-  
 ## See also
 
 - <xref:System.Activities.Presentation.View.ExpressionTextBox>

@@ -6,10 +6,10 @@ ms.assetid: 1421a473-c99e-45bb-b1ab-6a9f8da6fcd2
 ---
 # 2027 - CacheRootMetadataStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|2027|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

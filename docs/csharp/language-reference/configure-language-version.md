@@ -2,7 +2,7 @@
 title: C# language versioning - C# Guide
 description: Learn about how the C# language version is determined based on your project and the reasons behind that choice. Learn how to override the default manually.
 ms.custom: "updateeachrelease"
-ms.date: 08/11/2020
+ms.date: 07/06/2021
 ---
 
 # C# language versioning
@@ -26,13 +26,14 @@ The compiler determines a default based on these rules:
 
 | Target framework | version | C# language version default |
 |------------------|---------|-----------------------------|
-| .NET             | 5.x     | C# 9.0                      |
-| .NET Core        | 3.x     | C# 8.0                      |
-| .NET Core        | 2.x     | C# 7.3                      |
-| .NET Standard    | 2.1     | C# 8.0                      |
-| .NET Standard    | 2.0     | C# 7.3                      |
-| .NET Standard    | 1.x     | C# 7.3                      |
-| .NET Framework   | all     | C# 7.3                      |
+| .NET             | 6.x     | C# 10.0                     |
+| .NET             | 5.x     | C#  9.0                     |
+| .NET Core        | 3.x     | C#  8.0                     |
+| .NET Core        | 2.x     | C#  7.3                     |
+| .NET Standard    | 2.1     | C#  8.0                     |
+| .NET Standard    | 2.0     | C#  7.3                     |
+| .NET Standard    | 1.x     | C#  7.3                     |
+| .NET Framework   | all     | C#  7.3                     |
 
 When your project targets a preview framework that has a corresponding preview language version, the language version used is the preview language version. You use the latest features with that preview in any environment, without affecting projects that target a released .NET Core version.
 
@@ -81,32 +82,3 @@ Builds in all subdirectories of the directory containing that file will use the 
 The following table shows all current C# language versions. Your compiler may not necessarily understand every value if it's older. If you install the latest .NET SDK, then you have access to everything listed.
 
 [!INCLUDE [langversion-table](includes/langversion-table.md)]
-
-> [!TIP]
-> Open [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell), and run the following command to see the listing of language versions available on your machine.
->
-> ```CMD
-> csc -langversion:?
-> ```
->
-> Querying the [**LangVersion](compiler-options/language.md#langversion) compile option like this prints something similar to the following:
->
-> ```CMD
-> Supported language versions:
-> default
-> 1
-> 2
-> 3
-> 4
-> 5
-> 6
-> 7.0
-> 7.1
-> 7.2
-> 7.3
-> 8.0
-> 9.0 (default)
-> latestmajor
-> preview
-> latest
-> ```

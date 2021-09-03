@@ -43,4 +43,4 @@ Portable subset projects enable .NET assembly programmers to maintain a single s
 ## See also
 
 - [Accessing Services Using a WCF Client](accessing-services-using-a-wcf-client.md)
-- [Portable Class Library](../cross-platform/portable-class-library.md)
+- [Portable Class Library](/previous-versions/dotnet/framework/cross-platform/portable-class-library)

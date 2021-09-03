@@ -35,12 +35,11 @@ namespace RoundtripJsonElement
 
             var serializeOptions = new JsonSerializerOptions { WriteIndented = true };
             jsonString = JsonSerializer.Serialize(weatherForecast, serializeOptions);
-            Console.WriteLine($"JSON output:\n{jsonString}\n");
+            Console.WriteLine(jsonString);
         }
     }
 }
 // output:
-//JSON output:
 //{
 //  "Date": "2019-08-01T00:00:00-07:00",
 //  "TemperatureCelsius": 25,

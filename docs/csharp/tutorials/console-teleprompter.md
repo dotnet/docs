@@ -247,7 +247,7 @@ namespace TeleprompterConsole
 Put that class in a new file, and enclose that class in the
 `TeleprompterConsole` namespace as shown above. You'll also need to add a `using static`
 statement so that you can reference the `Min` and `Max` methods without the
-enclosing class or namespace names. A [`using static`](../language-reference/keywords/using-static.md) statement imports the
+enclosing class or namespace names. A [`using static`](../language-reference/keywords/using-directive.md) statement imports the
 methods from one class. This is in contrast with the `using` statements used
 up to this point that have imported all classes from a namespace.
 

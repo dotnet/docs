@@ -1,9 +1,10 @@
 ---
-title: Interfaces
+title: Interfaces in F#
+titleSuffix: ""
 description: Learn how F# Interfaces specify sets of related members that other classes implement.
 ms.date: 08/15/2020
 ---
-# Interfaces
+# Interfaces (F#)
 
 *Interfaces* specify sets of related members that other classes implement.
 
@@ -37,7 +38,7 @@ let class-name (argument-list) =
 
 ## Remarks
 
-Interface declarations resemble class declarations except that no members are implemented. Instead, all the members are abstract, as indicated by the keyword `abstract`. You do not provide a method body for abstract methods. However, you can provide a default implementation by also including a separate definition of the member as a method together with the `default` keyword. Doing so is equivalent to creating a virtual method in a base class in other .NET languages. Such a virtual method can be overridden in classes that implement the interface.
+Interface declarations resemble class declarations except that no members are implemented. Instead, all the members are abstract, as indicated by the keyword `abstract`. You do not provide a method body for abstract methods. F# cannot define a default method implementation on an interface, but it is compatible with default implementations defined by C#. Default implementations using the `default` keyword are only supported when inheriting from a non-interface base class.
 
 The default accessibility for interfaces is `public`.
 

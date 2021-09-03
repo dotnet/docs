@@ -189,7 +189,7 @@ Several technologies available to .NET Framework libraries aren't available for 
 The [Windows Compatibility Pack](../../core/porting/windows-compat-pack.md) provides access to APIs that were previously available only for .NET Framework. It can be used on .NET Core and .NET Standard projects.
 
 For more information on API compatibility, you can find documentation about breaking changes and deprecated/legacy APIs at
-<https://docs.microsoft.com/dotnet/core/compatibility/fx-core>.
+[https://docs.microsoft.com/dotnet/core/compatibility/fx-core](../../core/compatibility/fx-core.md).
 
 ### AppDomains
 

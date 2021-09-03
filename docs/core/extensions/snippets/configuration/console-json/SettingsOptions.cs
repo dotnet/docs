@@ -5,7 +5,7 @@ namespace ConsoleJson.Example
 {
     public class SettingsOptions
     {
-        public const string Settings = nameof(Settings);
+        public const string ConfigurationSectionName = "MyCustomSettingsSection";
 
         [RegularExpression(@"^[a-zA-Z''-'\s]{1,40}$")]
         public string SiteTitle { get; set; }

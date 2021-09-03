@@ -1,12 +1,13 @@
 ---
 title: Analyze dependencies to port code
 description: Learn how to analyze external dependencies to port your project from .NET Framework to .NET.
-author: cartermp
-ms.date: 03/04/2021
+author: StephenBonikowsky
+ms.author: stebon
+ms.date: 06/14/2021
 ---
 # Analyze your dependencies to port code from .NET Framework to .NET
 
-To port your code to .NET or .NET Standard, you must understand your dependencies. External dependencies are the NuGet packages or `.dll` files you reference in your project, but that you don't build yourself.
+To identify the unsupported third-party dependencies in your project, you must first understand your dependencies. External dependencies are the NuGet packages or `.dll` files you reference in your project, but that you don't build yourself.
 
 Porting your code to .NET Standard 2.0 or below ensures that it can be used with both .NET Framework and .NET. However, if you don't need to use the library with .NET Framework, consider targeting the latest version of .NET.
 
@@ -96,4 +97,3 @@ You may have a dependency that isn't a NuGet package, such as a DLL in the file 
 ## Next steps
 
 - [Overview of porting from .NET Framework to .NET](index.md)
-- [Port libraries](libraries.md)

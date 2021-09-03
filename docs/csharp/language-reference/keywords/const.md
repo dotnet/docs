@@ -1,7 +1,7 @@
 ---
 description: "const keyword - C# Reference"
 title: "const keyword - C# Reference"
-ms.date: 07/20/2015
+ms.date: 06/20/2021
 f1_keywords: 
   - "const_CSharpKeyword"
   - "const"
@@ -17,6 +17,15 @@ You use the `const` keyword to declare a constant field or a constant local. Con
 const int X = 0;
 public const double GravitationalConstant = 6.673e-11;
 private const string ProductName = "Visual C#";
+```
+
+Beginning with C# 10, [interpolated strings](../tokens/interpolated.md) may be constants, if all expressions used are also constant strings. This feature can improve the code that builds constant strings:
+
+```csharp
+const string Language = "C#";
+const string Platform = ".NET";
+const string Version = "10.0";
+const string FullProductName = $"{Platform} - Language: {Language} Version: {Version}";
 ```
 
 ## Remarks
@@ -43,11 +52,9 @@ public const int C2 = C1 + 100;
 > [!NOTE]
 > The [readonly](./readonly.md) keyword differs from the `const` keyword. A `const` field can only be initialized at the declaration of the field. A `readonly` field can be initialized either at the declaration or in a constructor. Therefore, `readonly` fields can have different values depending on the constructor used. Also, although a `const` field is a compile-time constant, the `readonly` field can be used for run-time constants, as in this line: `public static readonly uint l1 = (uint)DateTime.Now.Ticks;`
 
-## Example
+## Examples
 
 [!code-csharp[csrefKeywordsModifiers#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#5)]
-
-## Example
 
 This example demonstrates how to use constants as local variables.
 

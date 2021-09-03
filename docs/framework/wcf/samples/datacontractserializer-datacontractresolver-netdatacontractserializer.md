@@ -6,15 +6,15 @@ ms.assetid: 1376658f-f695-45f7-a7e0-94664e9619ff
 ---
 # Using DataContractSerializer and DataContractResolver to Provide the Functionality of NetDataContractSerializer
 
-This sample demonstrates how the use of <xref:System.Runtime.Serialization.DataContractSerializer> with an appropriate <xref:System.Runtime.Serialization.DataContractResolver> provides the same functionality as <xref:System.Runtime.Serialization.NetDataContractSerializer>. This sample shows how to create the appropriate <xref:System.Runtime.Serialization.DataContractResolver> and how to add it to the <xref:System.Runtime.Serialization.DataContractSerializer>.
+The [NetDcSasDcSwithDCR sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how the use of <xref:System.Runtime.Serialization.DataContractSerializer> with an appropriate <xref:System.Runtime.Serialization.DataContractResolver> provides the same functionality as <xref:System.Runtime.Serialization.NetDataContractSerializer>. This sample shows how to create the appropriate <xref:System.Runtime.Serialization.DataContractResolver> and how to add it to the <xref:System.Runtime.Serialization.DataContractSerializer>.
 
 ## Sample details
 
  <xref:System.Runtime.Serialization.NetDataContractSerializer> differs from <xref:System.Runtime.Serialization.DataContractSerializer> in one important way: <xref:System.Runtime.Serialization.NetDataContractSerializer> includes CLR type information in the serialized XML, whereas <xref:System.Runtime.Serialization.DataContractSerializer> does not. Therefore, <xref:System.Runtime.Serialization.NetDataContractSerializer> can be used only if both the serializing and deserializing ends share the same CLR types. However, it is recommended to use <xref:System.Runtime.Serialization.DataContractSerializer> because its performance is better than <xref:System.Runtime.Serialization.NetDataContractSerializer>. You can change the information that is serialized in <xref:System.Runtime.Serialization.DataContractSerializer> by adding a <xref:System.Runtime.Serialization.DataContractResolver> to it.
 
- This sample consists of two projects. The first project uses <xref:System.Runtime.Serialization.NetDataContractSerializer> to serialize an object. The second project uses <xref:System.Runtime.Serialization.DataContractSerializer> with a <xref:System.Runtime.Serialization.DataContractResolver> to provide the same functionality as the first project.
+This sample consists of two projects. The first project uses <xref:System.Runtime.Serialization.NetDataContractSerializer> to serialize an object. The second project uses <xref:System.Runtime.Serialization.DataContractSerializer> with a <xref:System.Runtime.Serialization.DataContractResolver> to provide the same functionality as the first project.
 
- The following code example shows the implementation of a custom <xref:System.Runtime.Serialization.DataContractResolver> named `MyDataContractResolver` that is added to the <xref:System.Runtime.Serialization.DataContractSerializer> in the DCSwithDCR project.
+The following code example shows the implementation of a custom <xref:System.Runtime.Serialization.DataContractResolver> named `MyDataContractResolver` that is added to the <xref:System.Runtime.Serialization.DataContractSerializer> in the DCSwithDCR project.
 
 ```csharp
 class MyDataContractResolver : DataContractResolver
@@ -51,7 +51,7 @@ class MyDataContractResolver : DataContractResolver
 
 #### To use this sample
 
-1. Using Visual Studio 2012, open the DCRSample.sln solution file.
+1. Using Visual Studio, open the DCRSample.sln solution file.
 
 2. Right-click the solution file and choose **Properties**.
 
@@ -63,15 +63,6 @@ class MyDataContractResolver : DataContractResolver
 
 6. Click **OK** to close the dialog.
 
-7. To build the solution, press CTRL+SHIFT+B.
+7. To build the solution, press **Ctrl**+**Shift**+**B**.
 
-8. To run the solution, press CTRL+F5.
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->
-> `<InstallDrive>:\WF_WCF_Samples`  
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\NetDcSasDcSwithDCR`  
+8. To run the solution, press **Ctrl**+**F5**.

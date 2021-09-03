@@ -12,7 +12,7 @@ metadata:
   ms.collection: collection
   author: BillWagner
   ms.author: wiwagn
-  ms.date: 03/11/2021
+  ms.date: 06/22/2021
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -81,7 +81,7 @@ conceptualContent:
           text: .NET developer community
         - url: standard/library-guidance/index.md
           itemType: concept
-          text: Open source library guidance
+          text: Library guidance
     # Card
     - title: .NET concepts
       links:
@@ -209,6 +209,8 @@ additionalContent:
             text: Xamarin.Android
           - url: /azure/developer/mobile-apps
             text: Develop Xamarin apps with Azure
+          - url: /dotnet/maui
+            text: .NET Multi-platform App UI (MAUI)
       # Card
       - title: Desktop
         links:
@@ -224,6 +226,8 @@ additionalContent:
             text: Windows Forms (.NET Framework)
           - url: /xamarin/mac
             text: Xamarin for macOS
+          - url: /dotnet/maui
+            text: .NET Multi-platform App UI (MAUI)          
       # Card
       - title: Microservices
         links:
@@ -235,6 +239,8 @@ additionalContent:
             text: Serverless apps with Azure
           - url: architecture/microservices/index.md
             text: Architecture for containerized .NET apps
+          - url: core/extensions/cloud-service.md
+            text: Deploy a Worker Service to Azure
       # Card
       - title: Cloud
         links:

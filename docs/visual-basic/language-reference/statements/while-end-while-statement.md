@@ -2,10 +2,10 @@
 description: "Learn more about: While...End While Statement (Visual Basic)"
 title: "While...End While Statement"
 ms.date: 07/20/2015
-f1_keywords: 
+f1_keywords:
   - "vb.While"
   - "vb.While...EndWhile"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "While statement [Visual Basic], While...End While"
   - "While statement [Visual Basic]"
   - "While...End While statements [Visual Basic]"
@@ -13,75 +13,75 @@ ms.assetid: b931d1ce-e8ed-44d8-a13d-92a4f5458a1e
 ---
 # While...End While Statement (Visual Basic)
 
-Runs a series of statements as long as a given condition is `True`.  
-  
-## Syntax  
-  
-```vb  
-While condition  
-    [ statements ]  
-    [ Continue While ]  
-    [ statements ]  
-    [ Exit While ]  
-    [ statements ]  
-End While  
-```  
-  
-## Parts  
-  
-|Term|Definition|  
-|---|---|  
-|`condition`|Required. `Boolean` expression. If `condition` is `Nothing`, Visual Basic treats it as `False`.|  
-|`statements`|Optional. One or more statements following `While`, which run every time `condition` is `True`.|  
-|`Continue While`|Optional. Transfers control to the next iteration of the `While` block.|  
-|`Exit While`|Optional. Transfers control out of the `While` block.|  
-|`End While`|Required. Terminates the definition of the `While` block.|  
-  
-## Remarks  
+Runs a series of statements as long as a given condition is `True`.
 
- Use a `While...End While` structure when you want to repeat a set of statements an indefinite number of times, as long as a condition remains `True`. If you want more flexibility with where you test the condition or what result you test it for, you might prefer the [Do...Loop Statement](do-loop-statement.md). If you want to repeat the statements a set number of times, the [For...Next Statement](for-next-statement.md) is usually a better choice.  
-  
+## Syntax
+
+```vb
+While condition
+    [ statements ]
+    [ Continue While ]
+    [ statements ]
+    [ Exit While ]
+    [ statements ]
+End While
+```
+
+## Parts
+
+|Term|Definition|
+|---|---|
+|`condition`|Required. `Boolean` expression. If `condition` is `Nothing`, Visual Basic treats it as `False`.|
+|`statements`|Optional. One or more statements following `While`, which run every time `condition` is `True`.|
+|`Continue While`|Optional. Transfers control to the next iteration of the `While` block.|
+|`Exit While`|Optional. Transfers control out of the `While` block.|
+|`End While`|Required. Terminates the definition of the `While` block.|
+
+## Remarks
+
+ Use a `While...End While` structure when you want to repeat a set of statements an indefinite number of times, as long as a condition remains `True`. If you want more flexibility with where you test the condition or what result you test it for, you might prefer the [Do...Loop Statement](do-loop-statement.md). If you want to repeat the statements a set number of times, the [For...Next Statement](for-next-statement.md) is usually a better choice.
+
 > [!NOTE]
-> The `While` keyword is also used in the [Do...Loop Statement](do-loop-statement.md), the [Skip While Clause](../queries/skip-while-clause.md) and the [Take While Clause](../queries/take-while-clause.md).  
-  
- If `condition` is `True`, all of the `statements` run until the `End While` statement is encountered. Control then returns to the `While` statement, and `condition` is again checked. If `condition` is still `True`, the process is repeated. If it’s `False`, control passes to the statement that follows the `End While` statement.  
-  
- The `While` statement always checks the condition before it starts the loop. Looping continues while the condition remains `True`. If `condition` is `False` when you first enter the loop, it doesn’t run even once.  
-  
- The `condition` usually results from a comparison of two values, but it can be any expression that evaluates to a [Boolean Data Type](../data-types/boolean-data-type.md) value (`True` or `False`). This expression can include a value of another data type, such as a numeric type, that has been converted to `Boolean`.  
-  
- You can nest `While` loops by placing one loop within another. You can also nest different kinds of control structures within one another. For more information, see [Nested Control Structures](../../programming-guide/language-features/control-flow/nested-control-structures.md).  
-  
-## Exit While  
+> The `While` keyword is also used in the [Do...Loop Statement](do-loop-statement.md), the [Skip While Clause](../queries/skip-while-clause.md) and the [Take While Clause](../queries/take-while-clause.md).
 
- The [Exit While](exit-statement.md) statement can provide another way to exit a `While` loop. `Exit While` immediately transfers control to the statement that follows the `End While` statement.  
-  
- You typically use `Exit While` after some condition is evaluated (for example, in an `If...Then...Else` structure). You might want to exit a loop if you detect a condition that makes it unnecessary or impossible to continue iterating, such as an erroneous value or a termination request. You can use `Exit While` when you test for a condition that could cause an *endless loop*, which is a loop that could run an extremely large or even infinite number of times. You can then use `Exit While` to escape the loop.  
-  
- You can place any number of `Exit While` statements anywhere in the `While` loop.  
-  
- When used within nested `While` loops, `Exit While` transfers control out of the innermost loop and into the next higher level of nesting.  
-  
- The `Continue While` statement immediately transfers control to the next iteration of the loop. For more information, see [Continue Statement](continue-statement.md).  
-  
-## Example  
+ If `condition` is `True`, all of the `statements` run until the `End While` statement is encountered. Control then returns to the `While` statement, and `condition` is again checked. If `condition` is still `True`, the process is repeated. If it’s `False`, control passes to the statement that follows the `End While` statement.
 
- In the following example, the statements in the loop continue to run until the `index` variable is greater than 10.  
-  
- [!code-vb[VbVbalrStatements#171](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#171)]  
-  
-## Example  
+ The `While` statement always checks the condition before it starts the loop. Looping continues while the condition remains `True`. If `condition` is `False` when you first enter the loop, it doesn’t run even once.
 
- The following example illustrates the use of the `Continue While` and `Exit While` statements.  
-  
- [!code-vb[VbVbalrStatements#172](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#172)]  
-  
-## Example  
+ The `condition` usually results from a comparison of two values, but it can be any expression that evaluates to a [Boolean Data Type](../data-types/boolean-data-type.md) value (`True` or `False`). This expression can include a value of another data type, such as a numeric type, that has been converted to `Boolean`.
 
- The following example reads all lines in a text file. The <xref:System.IO.File.OpenText%2A> method opens the file and returns a <xref:System.IO.StreamReader> that reads the characters. In the `While` condition, the <xref:System.IO.StreamReader.Peek%2A> method of the `StreamReader` determines whether the file contains additional characters.  
-  
- [!code-vb[VbVbalrStatements#173](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#173)]  
-  
+ You can nest `While` loops by placing one loop within another. You can also nest different kinds of control structures within one another. For more information, see [Nested Control Structures](../../programming-guide/language-features/control-flow/nested-control-structures.md).
+
+## Exit While
+
+ The [Exit While](exit-statement.md) statement can provide another way to exit a `While` loop. `Exit While` immediately transfers control to the statement that follows the `End While` statement.
+
+ You typically use `Exit While` after some condition is evaluated (for example, in an `If...Then...Else` structure). You might want to exit a loop if you detect a condition that makes it unnecessary or impossible to continue iterating, such as an erroneous value or a termination request. You can use `Exit While` when you test for a condition that could cause an *endless loop*, which is a loop that could run an extremely large or even infinite number of times. You can then use `Exit While` to escape the loop.
+
+ You can place any number of `Exit While` statements anywhere in the `While` loop.
+
+ When used within nested `While` loops, `Exit While` transfers control out of the innermost loop and into the next higher level of nesting.
+
+ The `Continue While` statement immediately transfers control to the next iteration of the loop. For more information, see [Continue Statement](continue-statement.md).
+
+## Example 1
+
+ In the following example, the statements in the loop continue to run until the `index` variable is greater than 10.
+
+ [!code-vb[VbVbalrStatements#171](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#171)]
+
+## Example 2
+
+ The following example illustrates the use of the `Continue While` and `Exit While` statements.
+
+ [!code-vb[VbVbalrStatements#172](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#172)]
+
+## Example 3
+
+ The following example reads all lines in a text file. The <xref:System.IO.File.OpenText%2A> method opens the file and returns a <xref:System.IO.StreamReader> that reads the characters. In the `While` condition, the <xref:System.IO.StreamReader.Peek%2A> method of the `StreamReader` determines whether the file contains additional characters.
+
+ [!code-vb[VbVbalrStatements#173](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#173)]
+
 ## See also
 
 - [Loop Structures](../../programming-guide/language-features/control-flow/loop-structures.md)

@@ -103,6 +103,34 @@ The preceding sample generates code that calls the <xref:System.Collections.Gene
 
 This initializer example calls <xref:System.Collections.Generic.Dictionary%602.Add(%600,%601)> to add the three items into the dictionary. These two different ways to initialize associative collections have slightly different behavior because of the method calls the compiler generates. Both variants work with the `Dictionary` class. Other types may only support one or the other based on their public API.
 
+## Object Initializers with collection read-only property initialization
+
+Some classes may have collection properties where the property is read-only, like the `Cats` property of `CatOwner` in the following case:
+
+[!code-csharp[ObjectInitializer1](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#CatOwnerDeclaration)]
+
+You will not be able to use collection initializer syntax discussed so far since the property cannot be assigned a new list:
+
+```csharp
+CatOwner owner = new CatOwner
+{
+    Cats = new List<Cat>
+    {
+        new Cat{ Name = "Sylvester", Age=8 },
+        new Cat{ Name = "Whiskers", Age=2 },
+        new Cat{ Name = "Sasha", Age=14 }
+    }
+};
+```
+
+However, new entries can be added to `Cats` nonetheless using the initialization syntax by omitting the list creation (`new List<Cat>`), as shown next:
+
+[!code-csharp[ListInitializer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#ReadOnlyPropertyCollectionInitializer)]
+
+The set of entries to be added simply appear surrounded by braces. The above is identical to writing:
+
+[!code-csharp[ListInitializer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#ReadOnlyPropertyCollectionInitializerTranslation)]
+
 ## Examples
 
 The following example combines the concepts of object and collection initializers.

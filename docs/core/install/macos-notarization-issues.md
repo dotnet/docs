@@ -68,7 +68,7 @@ Another example, by default, ASP.NET Core imports a default SSL certificate thro
 
 If certificate sharing is required, macOS provides configuration options with the `security` utility.
 
-For more information on how to troubleshoot ASP.NET Core certificate issues, see [Enforce HTTPS in ASP.NET Core](/aspnet/core/security/enforcing-ssl?view=aspnetcore-3.1&tabs=visual-studio#troubleshoot-certificate-problems).
+For more information on how to troubleshoot ASP.NET Core certificate issues, see [Enforce HTTPS in ASP.NET Core](/aspnet/core/security/enforcing-ssl?view=aspnetcore-3.1&tabs=visual-studio#troubleshoot-certificate-problems&preserve-view=false).
 
 ## Default entitlements
 

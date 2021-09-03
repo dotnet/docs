@@ -12,6 +12,8 @@ ms.assetid: 3abbb2ec-78d2-41e6-b9f9-6662d4e2cdc7
 ---
 # How to: Write Services Programmatically
 
+[!INCLUDE [windows-service-disambiguation](../../core/extensions/includes/windows-service-disambiguation.md)]
+
 If you choose not to use the Windows Service project template, you can write your own services by setting up the inheritance and other infrastructure elements yourself. When you create a service programmatically, you must perform several steps that the template would otherwise handle for you:  
   
 - You must set up your service class to inherit from the <xref:System.ServiceProcess.ServiceBase> class.  

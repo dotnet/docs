@@ -9,7 +9,7 @@ ms.date: 02/17/2021
 
 ![cover image](./media/cover.png)
 
-**PREVIEW EDITION**
+**EDITION v1.0**
 
 PUBLISHED BY
 

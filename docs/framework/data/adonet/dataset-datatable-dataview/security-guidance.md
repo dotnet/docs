@@ -213,7 +213,7 @@ If an app must remove all type limiting restrictions from `DataSet` and `DataTab
 * The options available depend on the framework the app targets.
 
 > [!WARNING]
-> Removing all type restrictions can introduce a security hole inside the app. When using this mechanism, ensure the app does **not** use `DataSet` or `DataTable` to read untrusted input. For more information, see [CVE-2020-1147](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2020-1147) and the following section titled [Safety with regard to untrusted input](#swr).
+> Removing all type restrictions can introduce a security hole inside the app. When using this mechanism, ensure the app does **not** use `DataSet` or `DataTable` to read untrusted input. For more information, see [CVE-2020-1147](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2020-1147) and the following section titled [Safety with regard to untrusted input](#swr).
 
 #### Through AppContext configuration (.NET Framework 4.6 - 4.8, .NET Core 2.1 and later, .NET 5.0 and later)
 
@@ -255,7 +255,7 @@ In .NET Core, .NET 5, and ASP.NET Core, this setting is controlled by _runtimeco
 }
 ```
 
-For more information, see [".NET Core run-time configuration settings"](../../../../core/run-time-config/index.md).
+For more information, see [".NET Core runtime configuration settings"](../../../../core/run-time-config/index.md).
 
 `AllowArbitraryDataSetTypeInstantiation` can also be set programmatically via [AppContext.SetSwitch](/dotnet/api/system.appcontext.setswitch) instead of using a configuration file, as shown in the following code:
 

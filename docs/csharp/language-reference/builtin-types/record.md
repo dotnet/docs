@@ -1,7 +1,7 @@
 ---
 title: "Records - C# reference"
 description: Learn about the record type in C#
-ms.date: 02/25/2021
+ms.date: 07/01/2021
 f1_keywords: 
   - "record_CSharpKeyword"
 helpviewer_keywords: 
@@ -60,7 +60,7 @@ A record type doesn't have to declare any positional properties. You can declare
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="MixedSyntax":::
 
-If you define properties by using standard property syntax but omit the access modifier, the properties are implicitly `public`.
+If you define properties by using standard property syntax but omit the access modifier, the properties are implicitly `private`.
 <!-- Todo -- Explain issues surrounding use of attributes on positional properties. -->
 
 ## Immutability
@@ -113,7 +113,7 @@ The `with` expression can set positional properties or properties created by usi
 
 The result of a `with` expression is a *shallow copy*, which means that for a reference property, only the reference to an instance is copied. Both the original record and the copy end up with a reference to the same instance.
 
-To implement this feature, the compiler synthesizes a clone method and a copy constructor. The constructor takes an instance of the record to be copied and calls the clone method. When you use a `with` expression, the compiler creates code that calls the copy constructor and then sets the properties that are specified in the `with` expression.
+To implement this feature, the compiler synthesizes a clone method and a copy constructor. The virtual clone method returns a new record initialized by the copy constructor. When you use a `with` expression, the compiler creates code that calls the clone method and then sets the properties that are specified in the `with` expression.
 
 If you need different copying behavior, you can write your own copy constructor. If you do that, the compiler won't synthesize one. Make your constructor `private` if the record is `sealed`, otherwise make it `protected`.
 
@@ -136,7 +136,7 @@ The `ToString` override creates a <xref:System.Text.StringBuilder> object with t
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="ToStringOverrideDefault":::
 
-You can provide your own implementation of `PrintMembers` or the `ToString` override. Examples are provided in the [`PrintMembers` formatting in derived records](#printmembers-formatting-in-derived-records) section later in this article.
+You can provide your own implementation of `PrintMembers` or the `ToString` override. Examples are provided in the [`PrintMembers` formatting in derived records](#printmembers-formatting-in-derived-records) section later in this article. In C# 10 and later, your implementation of `ToString` may include the `sealed` modifier, which prevents the compiler from synthesizing a `ToString` implementation for any derived records. Effectively, that means the `ToString` output will not include the runtime type information. (All members and values are displayed, because derived records will still have a PrintMembers method generated.)
 
 ## Inheritance
 
@@ -164,7 +164,7 @@ When comparing two instances of a derived type, the synthesized equality methods
 
 ### `with` expressions in derived records
 
-Because the synthesized clone method uses a [covariant return type](~/_csharplang/proposals/csharp-9.0/covariant-returns.md), the result of a `with` expression has the same run-time type as the expression's operand. All properties of the run-time type get copied, but you can only set properties of the compile-time type, as the following example shows:
+The result of a `with` expression has the same run-time type as the expression's operand. All properties of the run-time type get copied, but you can only set properties of the compile-time type, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="WithExpressionInheritance":::
 
@@ -184,6 +184,9 @@ You can provide your own implementation of the `PrintMembers` method. If you do 
 Here is an example of code that replaces the synthesized `PrintMembers` methods, one for a record type that derives from object, and one for a record type that derives from another record:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PrintMembersImplementation":::
+
+> [!NOTE]
+> In C# 10.0 and later, the compiler will synthesize `PrintMembers` when a base record has sealed the `ToString` method. You can also create your own implementation of `PrintMembers`.
 
 ### Deconstructor behavior in derived records
 

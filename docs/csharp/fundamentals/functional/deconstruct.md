@@ -1,7 +1,7 @@
 ---
 title: Deconstructing tuples and other types
 description: Learn how to deconstruct tuples and other types.
-ms.date: 03/22/2021
+ms.date: 06/30/2021
 ---
 # Deconstructing tuples and other types
 
@@ -41,12 +41,14 @@ There are three ways to deconstruct a tuple:
 
     :::code language="csharp" source="./snippets/deconstructing-tuples/deconstruct-tuple5.cs" ID="Snippet1":::
 
+- Beginning in C# 10, you can mix variable declaration and assignment in a deconstruction.
+
+    :::code language="csharp" source="./snippets/deconstructing-tuples/deconstruct-tuple6.cs" ID="Snippet1":::
+
 You can't specify a specific type outside the parentheses even if every field in the tuple has the
 same type. Doing so generates compiler error CS8136, "Deconstruction 'var (...)' form disallows a specific type for 'var'.".
 
 You must assign each element of the tuple to a variable. If you omit any elements, the compiler generates error CS8132, "Can't deconstruct a tuple of 'x' elements into 'y' variables."
-
-You can't mix declarations and assignments to existing variables on the left-hand side of a deconstruction. The compiler generates error CS8184, "a deconstruction can't mix declarations and expressions on the left-hand-side." when the members include newly declared and existing variables.
 
 ## Tuple elements with discards
 

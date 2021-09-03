@@ -1,7 +1,7 @@
 ---
 title: "Finalizers - C# Programming Guide"
 description: Finalizers in C# perform any necessary final clean-up when a class instance is being collected by the garbage collector.
-ms.date: 06/09/2021
+ms.date: 08/20/2021
 helpviewer_keywords: 
   - "~ [C#], in finalizers"
   - "C# language, finalizers"
@@ -33,7 +33,7 @@ The finalizer implicitly calls <xref:System.Object.Finalize%2A> on the base clas
 protected override void Finalize()
 {
     try
-    { 
+    {
         // Cleanup statements...
     }
     finally
@@ -50,12 +50,10 @@ This design means that the `Finalize` method is called recursively for all insta
 
 The programmer has no control over when the finalizer is called; the garbage collector decides when to call it. The garbage collector checks for objects that are no longer being used by the application. If it considers an object eligible for finalization, it calls the finalizer (if any) and reclaims the memory used to store the object. It's possible to force garbage collection by calling <xref:System.GC.Collect%2A>, but most of the time, this call should be avoided because it may create performance issues.
 
-Whether or not finalizers are run as part of application termination is implementation-specific.
-
 > [!NOTE]
-> The .NET Framework implementation makes every reasonable effort to call finalizers for all of its objects that have not yet been garbage collected, unless such cleanup has been suppressed (by a call to the library method `GC.SuppressFinalize`, for example).
+> Whether or not finalizers are run as part of application termination is specific to each [implementation of .NET](../../../standard/glossary.md#implementation-of-net). When an application terminates, .NET Framework makes every reasonable effort to call finalizers for objects that haven't yet been garbage collected, unless such cleanup has been suppressed (by a call to the library method `GC.SuppressFinalize`, for example). .NET 5 (including .NET Core) and later versions don't call finalizers as part of application termination. For more information, see GitHub issue [dotnet/csharpstandard #291](https://github.com/dotnet/csharpstandard/issues/291).
   
- If you need to perform cleanup reliably when an application exist, register a handler for the <xref:System.AppDomain.ProcessExit?displayProperty=fullName> event. That handler would ensure <xref:System.IDisposable.Dispose?displayProperty=nameWithType> (or, <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType>) has been called for all objects that require cleanup before application exit. Because you can't call *Finalize* directly, and you can't guarantee the garbage collector calls all finalizers before exit, you must use `Dispose` or `DisposeAsync` to ensure resources are freed.
+ If you need to perform cleanup reliably when an application exits, register a handler for the <xref:System.AppDomain.ProcessExit?displayProperty=fullName> event. That handler would ensure <xref:System.IDisposable.Dispose?displayProperty=nameWithType> (or, <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType>) has been called for all objects that require cleanup before application exit. Because you can't call *Finalize* directly, and you can't guarantee the garbage collector calls all finalizers before exit, you must use `Dispose` or `DisposeAsync` to ensure resources are freed.
 
 ## Using finalizers to release resources
 
@@ -69,12 +67,15 @@ For more information about cleaning up resources, see the following articles:
 
 - [Cleaning Up Unmanaged Resources](../../../standard/garbage-collection/unmanaged.md)
 - [Implementing a Dispose Method](../../../standard/garbage-collection/implementing-dispose.md)
-- [Implementing a Dispose Method](../../../standard/garbage-collection/implementing-disposeasync.md)
+- [Implementing a DisposeAsync Method](../../../standard/garbage-collection/implementing-disposeasync.md)
 - [using Statement](../../language-reference/keywords/using-statement.md)
 
 ## Example
 
-The following example creates three classes that make a chain of inheritance. The class `First` is the base class, `Second` is derived from `First`, and `Third` is derived from `Second`. All three have finalizers. In `Main`, an instance of the most-derived class is created. When the program runs, notice that the finalizers for the three classes are called automatically, and in order, from the most-derived to the least-derived.
+The following example creates three classes that make a chain of inheritance. The class `First` is the base class, `Second` is derived from `First`, and `Third` is derived from `Second`. All three have finalizers. In `Main`, an instance of the most-derived class is created. The output from this code depends on which implementation of .NET the application targets:
+
+* .NET Framework: The output shows that the finalizers for the three classes are called automatically when the application terminates, in order from the most-derived to the least-derived.
+* .NET 5 (including .NET Core) or a later version: There's no output, because this implementation of .NET doesn't call finalizers when the application terminates.
 
 :::code language="csharp" source="snippets/destructors/Program.cs" ID="Snippet1":::
   

@@ -13,6 +13,8 @@ ms.assetid: e24d8a3d-edc6-485c-b6e0-5672d91fb607
 ---
 # Tutorial: Create a Windows service app
 
+[!INCLUDE [windows-service-disambiguation](../../core/extensions/includes/windows-service-disambiguation.md)]
+
 This article demonstrates how to create a Windows service app in Visual Studio that writes messages to an event log.
 
 ## Create a service

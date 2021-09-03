@@ -187,9 +187,9 @@ conceptualContent:
           url: /azure/event-grid/custom-event-quickstart
     - title: Diagnostics and monitoring
       links:
-        - itemType: overview
-          text: Azure Monitor
-          url: /azure/azure-monitor/overview
+        - itemType: quickstart
+          text: "Azure Monitor Application Insights quickstart"
+          url: /azure/azure-monitor/app/dotnet-quickstart
         - itemType: learn
           text: Capture and view page load times in your Azure web app
           url: /learn/modules/capture-page-load-times-application-insights/
@@ -197,7 +197,7 @@ conceptualContent:
           text: Troubleshoot ASP.NET Core on Azure App Service and IIS
           url: /aspnet/core/test/troubleshoot-azure-iis
         - itemType: how-to-guide
-          text: Application Insights with .NET Core ILogger
+          text: Capture Application Insights telemetry with .NET Core ILogger
           url: /azure/azure-monitor/app/ilogger
         - itemType: how-to-guide
           text: Application Insights for Worker Service applications

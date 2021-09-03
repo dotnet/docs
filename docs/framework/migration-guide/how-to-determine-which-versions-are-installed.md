@@ -122,7 +122,10 @@ The following examples check the value of the **Release** entry to determine whe
 
 01. Check the **Release** REG_DWORD value to determine the installed version. To be forward-compatible, check for a value greater than or equal to the value listed in the [.NET Framework version table](#version_table).
 
-The following example checks the value of the **Release** entry in the registry to find the versions of .NET Framework 4.5-4.8 that are installed:
+The following example checks the value of the **Release** entry in the registry to find the versions of .NET Framework 4.5-4.8 that are installed.
+
+> [!TIP]
+> Add the directive `using Microsoft.Win32` or `Imports Microsoft.Win32` at the top of your code file if you haven't already done so.
 
 :::code language="csharp" source="snippets/csharp/versions-installed.cs" id="2":::
 

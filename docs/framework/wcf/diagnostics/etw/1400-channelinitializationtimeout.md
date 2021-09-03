@@ -8,12 +8,12 @@ ms.assetid: 95de02d3-7986-4bbc-934f-c9dc4a809682
 
 ## Properties  
   
-|||  
-|-|-|  
-|ID|1400|  
-|Keywords|ServiceModel|  
-|Level|Error|  
-|Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
+| Property | Value                                                      |
+| -------- | ---------------------------------------------------------- |
+| ID       | 1400                                                       |
+| Keywords | ServiceModel                                               |
+| Level    | Error                                                      |
+| Channel  | Microsoft-Windows-Application Server-Applications/Analytic |
   
 ## Description  
 

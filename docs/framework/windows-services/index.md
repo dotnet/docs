@@ -14,6 +14,8 @@ ms.assetid: ba72d648-9553-4849-b829-069ad5ea014b
 ---
 # Develop Windows service apps
 
+[!INCLUDE [windows-service-disambiguation](../../core/extensions/includes/windows-service-disambiguation.md)]
+
 Using Visual Studio or the .NET Framework SDK, you can easily create services by creating an application that is installed as a service. This type of application is called a Windows service. With framework features, you can create services, install them, and start, stop, and otherwise control their behavior.
 
 > [!NOTE]

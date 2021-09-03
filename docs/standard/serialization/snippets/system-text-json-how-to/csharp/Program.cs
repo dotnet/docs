@@ -134,6 +134,11 @@ namespace SystemTextJsonSamples
 
             Console.WriteLine("\n============================= Utf8Writer to Stream\n");
             Utf8WriterToStream.Run();
+
+            Console.WriteLine("\n============================= Roundtrip to DataTable\n");
+            RoundtripDataTable.Program.Main();
+
+
         }
     }
 }

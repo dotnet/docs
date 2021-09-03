@@ -1,6 +1,6 @@
 ---
 title: Syntax used by DebugView property
-description: Describes the special syntax used by the DebugView property to produce a string representation of expression trees
+description: Learn about the special syntax used by the DebugView property to produce a string representation of expression trees in Visual Basic.
 author: zspitz
 ms.author: wiwagn
 ms.date: 02/14/2021
@@ -10,7 +10,7 @@ helpviewer_keywords:
 - "debugview"
 ---
 
-# **DebugView** syntax
+# DebugView syntax (expression trees)
 
 The **DebugView** property (available only when debugging) provides a string rendering of expression trees. Most of the syntax is fairly straightforward to understand; the special cases are described in the following sections.
 

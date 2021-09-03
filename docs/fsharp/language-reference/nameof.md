@@ -88,3 +88,18 @@ let f (str: string) =
 f "str" // matches
 f "asdf" // does not match
 ```
+
+## Nameof with instance members
+
+F# requires an instance in order to extract the name of an instance member with `nameof`. If an instance is not easily available, then one can be obtained using `Unchecked.defaultof`.
+
+```fsharp
+type MyRecord = { MyField: int }
+type MyClass() =
+    member _.MyProperty = ()
+    member _.MyMethod () = ()
+
+nameof Unchecked.defaultof<MyRecord>.MyField   // MyField
+nameof Unchecked.defaultof<MyClass>.MyProperty // MyProperty
+nameof Unchecked.defaultof<MyClass>.MyMethod   // MyMethod
+```

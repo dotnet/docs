@@ -21,6 +21,10 @@
             "redirect_url": "/dotnet/architecture/cloud-native/distributed-data"
         },
         {
+            "source_path": "docs/architecture/dapr-for-net-developers/secrets.md",
+            "redirect_url": "/dotnet/architecture/dapr-for-net-developers/secrets-management"
+        },
+        {
             "source_path": "docs/architecture/microservices/architect-microservice-container-applications/communication-between-microservices.md",
             "redirect_url": "/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture",
             "redirect_document_id": true
@@ -178,6 +182,10 @@
             "redirect_url": "/dotnet/azure/vs2015-install"
         },
         {
+            "source_path": "docs/azure/vs2015-install.md",
+            "redirect_url": "/dotnet/azure/tools"
+        },
+        {
             "source_path": "docs/cli-preview3/tools/dotnet-nuget-delete.md",
             "redirect_url": "/dotnet/core/tools/dotnet-nuget-delete"
         },
@@ -249,6 +257,31 @@
         {
             "source_path": "docs/core/compatibility/framework-core.md",
             "redirect_url": "/dotnet/core/compatibility/fx-core"
+        },
+        {
+            "source_path": "docs/core/compatibility/msbuild/5.0/directory-packages-props-imported-by-default.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/5.0/directory-packages-props-imported-by-default",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/compatibility/msbuild/5.0/netcoreapp3_1-preprocessor-symbol-not-defined.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/5.0/netcoreapp3_1-preprocessor-symbol-not-defined",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/compatibility/msbuild/5.0/publishdepsfilepath-behavior-change.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/5.0/publishdepsfilepath-behavior-change",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/compatibility/msbuild/5.0/targetframework-name-change.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/5.0/targetframework-name-change",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/compatibility/msbuild/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/core/compatibility/serialization.md",
@@ -587,6 +620,10 @@
             "redirect_url": "/dotnet/core/deploying"
         },
         {
+            "source_path": "docs/core/porting/libraries.md",
+            "redirect_url": "/dotnet/core/porting/"
+        },
+        {
             "source_path": "docs/core/porting/nuget-packages.md",
             "redirect_url": "/dotnet/core/deploying"
         },
@@ -915,6 +952,10 @@
             "redirect_url": "/dotnet/csharp"
         },
         {
+            "source_path": "docs/csharp/codedoc.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
             "source_path": "docs/csharp/deconstruct.md",
             "redirect_url": "/dotnet/csharp/fundamentals/functional/deconstruct"
         },
@@ -1009,7 +1050,7 @@
             "source_path": "docs/csharp/how-to/safely-cast-using-pattern-matching-is-and-as-operators.md",
             "redirect_url": "/dotnet/csharp/fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators"
         },
-        
+
         {
             "source_path": "docs/csharp/implicitly-typed-lambda-expressions.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/lambda-expressions"
@@ -1403,6 +1444,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/operators/namespace-alias-qualifier"
         },
         {
+            "source_path": "docs/csharp/language-reference/keywords/if-else.md",
+            "redirect_url": "/dotnet/csharp/language-reference/statements/selection-statements"
+        },
+        {
             "source_path": "docs/csharp/language-reference/keywords/implicit-numeric-conversions-table.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/numeric-conversions"
         },
@@ -1484,7 +1529,7 @@
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/selection-statements.md",
-            "redirect_url": "/dotnet/csharp/language-reference/keywords/statement-keywords"
+            "redirect_url": "/dotnet/csharp/language-reference/statements/selection-statements"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/short.md",
@@ -1505,6 +1550,10 @@
         {
             "source_path": "docs/csharp/language-reference/keywords/struct.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/struct"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/switch.md",
+            "redirect_url": "/dotnet/csharp/language-reference/statements/selection-statements"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/true-false-operators.md",
@@ -1541,6 +1590,10 @@
         {
             "source_path": "docs/csharp/language-reference/keywords/ushort.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/using-static.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/using-directive"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/value-types-table.md",
@@ -1725,7 +1778,7 @@
         {
             "source_path": "docs/csharp/language-reference/preprocessor-directives/index.md",
             "redirect_url": "/dotnet/csharp/language-reference/preprocessor-directives",
-            "redirect_document_id":true
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/csharp/language-reference/preprocessor-directives/preprocessor-define.md",
@@ -2882,7 +2935,8 @@
         {
             "source_path": "docs/csharp/programming-guide/exceptions/exceptions-and-exception-handling.md",
             "redirect_url": "/dotnet/csharp/programming-guide/exceptions/index"
-        },        {
+        },
+        {
             "source_path": "docs/csharp/programming-guide/exceptions/using-exceptions.md",
             "redirect_url": "/dotnet/csharp/fundamentals/exceptions/using-exceptions"
         },
@@ -3212,6 +3266,110 @@
             "redirect_url": "/dotnet/csharp/language-reference/unsafe-code#pointer-types"
         },
         {
+            "source_path": "docs/csharp/programming-guide/xmldoc/code.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/code-inline.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/cref-attribute.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/delimiters-for-documentation-tags.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/xmldoc"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/example.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/exception.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/how-to-use-the-xml-documentation-features.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/xmldoc/index"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/include.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/inheritdoc.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/list.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/para.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/param.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/paramref.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/permission.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/index"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/processing-the-xml-file.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/processing-the-xml-file.md#id-strings",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc#id-strings"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/remarks.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/returns.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/see.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/seealso.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/summary.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/typeparam.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/typeparamref.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/value.md",
+            "redirect_url": "/dotnet/csharp/language-reference/xmldoc/recommended-tags"
+        },
+        {
             "source_path": "docs/csharp/programming-guide/xmldoc/xml-documentation-comments.md",
             "redirect_url": "/dotnet/csharp/programming-guide/xmldoc"
         },
@@ -3412,7 +3570,7 @@
         },
         {
             "source_path": "docs/csharp/tutorials/index.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/introduction-to-classes"
+            "redirect_url": "/dotnet/csharp/fundamentals/tutorials/how-to-display-command-line-arguments"
         },
         {
             "source_path": "docs/csharp/tutorials/inheritance.md",
@@ -3468,12 +3626,12 @@
         },
         {
             "source_path": "docs/csharp/whats-new.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-9",
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-10",
             "redirect_document_id": true
         },
         {
             "source_path": "docs/csharp/whats-new/index.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-9",
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-10",
             "ms.custom": "updateeachrelease"
         },
         {
@@ -3978,6 +4136,220 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/add.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/add",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/audienceuris.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/audienceuris",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/caches.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/caches",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/certificatereference.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/certificatereference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/certificatevalidation.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/certificatevalidation",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/certificatevalidator.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/certificatevalidator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/chunkedcookiehandler.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/chunkedcookiehandler",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/claimsauthenticationmanager.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/claimsauthenticationmanager",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/claimsauthorizationmanager.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/claimsauthorizationmanager",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/claimtype.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/claimtype",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/claimtyperequired.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/claimtyperequired",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/clear.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/clear",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/cookiehandler",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/customcookiehandler.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/customcookiehandler",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/federationconfiguration",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/identityconfiguration",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/index.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/issuernameregistry.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/issuernameregistry",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/issuertokenresolver.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/issuertokenresolver",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/nameclaimtype.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/nameclaimtype",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/remove.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/remove",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/roleclaimtype.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/roleclaimtype",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/samlsecuritytokenrequirement.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/samlsecuritytokenrequirement",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlerconfiguration.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/securitytokenhandlerconfiguration",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlers.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/securitytokenhandlers",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/servicecertificate.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/servicecertificate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/servicetokenresolver.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/servicetokenresolver",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/sessionsecuritytokencache.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/sessionsecuritytokencache",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/sessiontokenrequirement.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/sessiontokenrequirement",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/system-identitymodel-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/system-identitymodel",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/tokenreplaycache.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/tokenreplaycache",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/tokenreplaydetection.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/tokenreplaydetection",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/trustedissuers.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/trustedissuers",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/usernamesecuritytokenhandlerrequirement.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/usernamesecuritytokenhandlerrequirement",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/wsfederation.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/wsfederation",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/windows-identity-foundation/x509securitytokenhandlerrequirement.md",
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/file-schema/x509securitytokenhandlerrequirement",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md",
+            "redirect_url": "/previous-versions/dotnet/framework/cross-platform/app-resources-for-libraries-that-target-multiple-platforms",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/cross-platform/index.md",
+            "redirect_url": "/previous-versions/dotnet/framework/cross-platform/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/cross-platform/passing-a-uri-to-the-windows-runtime.md",
+            "redirect_url": "/previous-versions/dotnet/framework/cross-platform/passing-a-uri-to-the-windows-runtime",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/cross-platform/portable-class-library.md",
+            "redirect_url": "/previous-versions/dotnet/framework/cross-platform/portable-class-library",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/cross-platform/support-for-windows-store-apps-and-windows-runtime.md",
+            "redirect_url": "/previous-versions/dotnet/framework/cross-platform/support-for-windows-store-apps-and-windows-runtime",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/cross-platform/using-portable-class-library-with-model-view-view-model.md",
+            "redirect_url": "/previous-versions/dotnet/framework/cross-platform/using-portable-class-library-with-model-view-view-model"
+        },
+        {
             "source_path": "docs/framework/data/adonet/ef/architecture-and-design.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee794151(v=vs.100)"
         },
@@ -4034,8 +4406,453 @@
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/bb882676(v=vs.100)"
         },
         {
+            "source_path": "docs/framework/data/adonet/sql/sql-server-security.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/adonet/sql/sql-server-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/adonet/sql/overview-of-sql-server-security.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/adonet/sql/overview-of-sql-server-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/adonet/sql/authentication-in-sql-server.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/adonet/sql/authentication-in-sql-server",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/adonet/sql/authorization-and-permissions-in-sql-server.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/adonet/sql/authorization-and-permissions-in-sql-server",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/adonet/sql/server-and-database-roles-in-sql-server.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/adonet/sql/server-and-database-roles-in-sql-server",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/adonet/sql/ownership-and-user-schema-separation-in-sql-server.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/adonet/sql/ownership-and-user-schema-separation-in-sql-server",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/adonet/sql/data-encryption-in-sql-server.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/adonet/sql/data-encryption-in-sql-server",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/adonet/sql/clr-integration-security-in-sql-server.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/adonet/sql/clr-integration-security-in-sql-server",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/adonet/sql/application-security-scenarios-in-sql-server",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/adonet/sql/managing-permissions-with-stored-procedures-in-sql-server.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/adonet/sql/managing-permissions-with-stored-procedures-in-sql-server",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/adonet/sql/writing-secure-dynamic-sql-in-sql-server.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/adonet/sql/writing-secure-dynamic-sql-in-sql-server",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/adonet/sql/signing-stored-procedures-in-sql-server.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/adonet/sql/signing-stored-procedures-in-sql-server",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/adonet/sql/customizing-permissions-with-impersonation-in-sql-server.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/adonet/sql/customizing-permissions-with-impersonation-in-sql-server",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/adonet/sql/granting-row-level-permissions-in-sql-server.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/adonet/sql/granting-row-level-permissions-in-sql-server",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/adonet/sql/creating-application-roles-in-sql-server.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/adonet/sql/creating-application-roles-in-sql-server",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/adonet/sql/enabling-cross-database-access-in-sql-server.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/adonet/sql/enabling-cross-database-access-in-sql-server",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/adonet/sql/sql-server-express-security.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/adonet/sql/sql-server-express-security",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/framework/data/wcf/writing-a-windows-store-app-that-consumes-an-odata-service.md",
             "redirect_url": "/dotnet/framework/data/wcf/"
+        },
+        {
+            "source_path": "docs/framework/data/wcf/index.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/wcf-data-services-overview.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/wcf-data-services-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/getting-started-with-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/getting-started-with-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/exposing-your-data-as-a-service-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/exposing-your-data-as-a-service-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/accessing-data-service-resources-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/accessing-data-service-resources-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/using-a-data-service-in-a-client-application-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/using-a-data-service-in-a-client-application-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/quickstart-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/quickstart-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/creating-the-data-service.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/creating-the-data-service",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/accessing-the-service-from-a-web-browser-wcf-data-services-quickstart",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/creating-the-dotnet-client-application-wcf-data-services-quickstart.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/creating-the-dotnet-client-application-wcf-data-services-quickstart",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/application-scenarios-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/application-scenarios-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/wcf-data-services-resources.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/wcf-data-services-resources",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/defining-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/defining-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/configuring-the-data-service-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/configuring-the-data-service-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-develop-a-wcf-data-service-running-on-iis.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-develop-a-wcf-data-service-running-on-iis",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-enable-access-to-the-data-service-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-enable-access-to-the-data-service-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-enable-paging-of-data-service-results-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-enable-paging-of-data-service-results-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/data-services-providers-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/data-services-providers-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/entity-framework-provider-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/entity-framework-provider-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/create-a-data-service-using-an-adonet-ef-data-wcf.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/create-a-data-service-using-an-adonet-ef-data-wcf",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/reflection-provider-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/reflection-provider-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/create-a-data-service-using-rp-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/create-a-data-service-using-rp-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/create-a-data-service-using-linq-to-sql-wcf.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/create-a-data-service-using-linq-to-sql-wcf",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/custom-data-service-providers-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/custom-data-service-providers-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/streaming-provider-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/streaming-provider-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/service-operations-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/service-operations-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-define-a-service-operation-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-define-a-service-operation-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/feed-customization-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/feed-customization-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-customize-feeds-with-ef-provider-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-customize-feeds-with-ef-provider-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-customize-feeds-with-the-reflection-provider-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-customize-feeds-with-the-reflection-provider-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/interceptors-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/interceptors-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/developing-and-deploying-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/securing-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/securing-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/hosting-the-data-service-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/data-service-versioning-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/data-service-versioning-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/wcf-data-services-protocol-implementation-details.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/wcf-data-services-protocol-implementation-details",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/using-actions-to-implement-server-side-behavior.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/using-actions-to-implement-server-side-behavior",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/wcf-data-services-client-library.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/wcf-data-services-client-library",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/generating-the-data-service-client-library-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/generating-the-data-service-client-library-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/wcf-data-service-client-utility-datasvcutil-exe.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/wcf-data-service-client-utility-datasvcutil-exe",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-add-a-data-service-reference-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-add-a-data-service-reference-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-manually-generate-client-data-service-classes-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-manually-generate-client-data-service-classes-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/querying-the-data-service-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/query-projections-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/query-projections-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-project-query-results-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/linq-considerations-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/linq-considerations-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/object-materialization-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/object-materialization-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-add-query-options-to-a-data-service-query-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-add-query-options-to-a-data-service-query-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/number-of-entities-returned-by-a-query-wcf.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/number-of-entities-returned-by-a-query-wcf",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/specify-client-creds-for-a-data-service-request-wcf.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/specify-client-creds-for-a-data-service-request-wcf",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-set-headers-in-the-client-request-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-set-headers-in-the-client-request-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/loading-deferred-content-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/loading-deferred-content-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-load-related-entities-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-load-related-entities-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-load-paged-results-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-load-paged-results-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/updating-the-data-service-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/updating-the-data-service-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/attach-an-existing-entity-to-dc-wcf-data.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/attach-an-existing-entity-to-dc-wcf-data",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/asynchronous-operations-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-execute-asynchronous-data-service-queries-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-execute-asynchronous-data-service-queries-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/create-an-asynchronous-wpf-application-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/create-an-asynchronous-wpf-application-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/batching-operations-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/batching-operations-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-execute-queries-in-a-batch-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-execute-queries-in-a-batch-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/binding-data-to-controls-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/binding-data-to-controls-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/bind-data-to-wpf-elements-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/bind-data-to-wpf-elements-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-bind-data-using-a-project-data-source-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-bind-data-using-a-project-data-source-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/how-to-customize-data-binding-behaviors-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/how-to-customize-data-binding-behaviors-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/calling-service-operations-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/calling-service-operations-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/managing-the-data-service-context-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/managing-the-data-service-context-wcf-data-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/data/wcf/working-with-binary-data-wcf-data-services.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/wcf/working-with-binary-data-wcf-data-services",
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/framework/deployment/repair.md",
@@ -4090,6 +4907,21 @@
             "redirect_url": "/dotnet/framework/install/dotnet-35-windows-10"
         },
         {
+            "source_path": "docs/framework/install/on-windows-vista.md",
+            "redirect_url": "/previous-versions/dotnet/framework/install/on-windows-vista",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/install/on-windows-xp.md",
+            "redirect_url": "/previous-versions/dotnet/framework/install/on-windows-xp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/install/on-windows-7.md",
+            "redirect_url": "/previous-versions/dotnet/framework/install/on-windows-7",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/framework/interop/applying-interop-attributes.md",
             "redirect_url": "/dotnet/standard/native-interop/apply-interop-attributes",
             "redirect_document_id": true
@@ -4113,6 +4945,16 @@
             "source_path": "docs/framework/interop/runtime-callable-wrapper.md",
             "redirect_url": "/dotnet/standard/native-interop/runtime-callable-wrapper",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/mef/composition-analysis-tool-mefx.md",
+            "redirect_url": "/previous-versions/dotnet/framework/mef/composition-analysis-tool-mefx",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/mef/mef-for-net-for-windows-store-apps.md",
+            "redirect_url": "/previous-versions/dotnet/framework/mef/mef-for-net-for-windows-store-apps",
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5-1.md",
@@ -4257,6 +5099,91 @@
         {
             "source_path": "docs/framework/misc/binding.md",
             "redirect_url": "/dotnet/framework/configure-apps/file-schema/wcf/bindings"
+        },
+        {
+            "source_path": "docs/framework/misc/code-access-security-basics.md",
+            "redirect_url": "/previous-versions/dotnet/framework/code-access-security/code-access-security-basics",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/misc/code-access-security-policy-compatibility-and-migration.md",
+            "redirect_url": "/previous-versions/dotnet/framework/code-access-security/code-access-security-policy-compatibility-and-migration",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/misc/code-access-security.md",
+            "redirect_url": "/previous-versions/dotnet/framework/code-access-security/code-access-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/misc/dangerous-permissions-and-policy-administration.md",
+            "redirect_url": "/previous-versions/dotnet/framework/code-access-security/dangerous-permissions-and-policy-administration",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md",
+            "redirect_url": "/previous-versions/dotnet/framework/code-access-security/how-to-run-partially-trusted-code-in-a-sandbox",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/misc/link-demands.md",
+            "redirect_url": "/previous-versions/dotnet/framework/code-access-security/link-demands",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/misc/securing-exception-handling.md",
+            "redirect_url": "/previous-versions/dotnet/framework/code-access-security/securing-exception-handling",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/misc/securing-method-access.md",
+            "redirect_url": "/previous-versions/dotnet/framework/code-access-security/securing-method-access",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/misc/securing-wrapper-code.md",
+            "redirect_url": "/previous-versions/dotnet/framework/code-access-security/securing-wrapper-code",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/misc/security-and-public-read-only-array-fields.md",
+            "redirect_url": "/previous-versions/dotnet/framework/code-access-security/security-and-public-read-only-array-fields",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/misc/security-and-remoting-considerations.md",
+            "redirect_url": "/previous-versions/dotnet/framework/code-access-security/security-and-remoting-considerations",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/misc/security-and-serialization.md",
+            "redirect_url": "/previous-versions/dotnet/framework/code-access-security/security-and-serialization",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/misc/security-transparent-code-level-1.md",
+            "redirect_url": "/previous-versions/dotnet/framework/code-access-security/security-transparent-code-level-1",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/misc/security-transparent-code-level-2.md",
+            "redirect_url": "/previous-versions/dotnet/framework/code-access-security/security-transparent-code-level-2",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/misc/security-transparent-code.md",
+            "redirect_url": "/previous-versions/dotnet/framework/code-access-security/security-transparent-code",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/misc/using-libraries-from-partially-trusted-code.md",
+            "redirect_url": "/previous-versions/dotnet/framework/code-access-security/using-libraries-from-partially-trusted-code",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/framework/misc/using-the-assert-method.md",
+            "redirect_url": "/previous-versions/dotnet/framework/code-access-security/using-the-assert-method",
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/framework/network-programming/httplistener.md",
@@ -4412,87 +5339,87 @@
         },
         {
             "source_path": "docs/framework/security/building-my-first-claims-aware-aspnet-web-app.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/building-my-first-claims-aware-aspnet-web-app"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/building-my-first-claims-aware-aspnet-web-app"
         },
         {
             "source_path": "docs/framework/security/building-my-first-claims-aware-wcf-service.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/building-my-first-claims-aware-wcf-service"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/building-my-first-claims-aware-wcf-service"
         },
         {
             "source_path": "docs/framework/security/claims-aware-aspnet-app-forms-authentication.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/claims-aware-aspnet-app-forms-authentication"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/claims-aware-aspnet-app-forms-authentication"
         },
         {
             "source_path": "docs/framework/security/claims-based-authorization-using-wif.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/claims-based-authorization-using-wif"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/claims-based-authorization-using-wif"
         },
         {
             "source_path": "docs/framework/security/claims-based-identity-model.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/claims-based-identity-model"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/claims-based-identity-model"
         },
         {
             "source_path": "docs/framework/security/custom-token-handlers.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/custom-token-handlers"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/custom-token-handlers"
         },
         {
             "source_path": "docs/framework/security/downloading-the-json-web-token-handler-package.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/downloading-the-json-web-token-handler-package"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/downloading-the-json-web-token-handler-package"
         },
         {
             "source_path": "docs/framework/security/downloading-the-validating-issuer-name-registry-package.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/downloading-the-validating-issuer-name-registry-package"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/downloading-the-validating-issuer-name-registry-package"
         },
         {
             "source_path": "docs/framework/security/getting-started-with-wif.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/getting-started-with-wif"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/getting-started-with-wif"
         },
         {
             "source_path": "docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5"
         },
         {
             "source_path": "docs/framework/security/how-to-build-claims-aware-aspnet-app-using-windows-authentication.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-build-claims-aware-aspnet-app-using-windows-authentication"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/how-to-build-claims-aware-aspnet-app-using-windows-authentication"
         },
         {
             "source_path": "docs/framework/security/how-to-build-claims-aware-aspnet-mvc-web-app-using-wif.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-build-claims-aware-aspnet-mvc-web-app-using-wif"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/how-to-build-claims-aware-aspnet-mvc-web-app-using-wif"
         },
         {
             "source_path": "docs/framework/security/how-to-build-claims-aware-aspnet-web-forms-app-using-wif.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-build-claims-aware-aspnet-web-forms-app-using-wif"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/how-to-build-claims-aware-aspnet-web-forms-app-using-wif"
         },
         {
             "source_path": "docs/framework/security/how-to-debug-claims-aware-applications-and-services-using-wif-tracing.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-debug-claims-aware-applications-and-services-using-wif-tracing"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/how-to-debug-claims-aware-applications-and-services-using-wif-tracing"
         },
         {
             "source_path": "docs/framework/security/how-to-display-signed-in-status-using-wif.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-display-signed-in-status-using-wif"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/how-to-display-signed-in-status-using-wif"
         },
         {
             "source_path": "docs/framework/security/how-to-enable-token-replay-detection.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-enable-token-replay-detection"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/how-to-enable-token-replay-detection"
         },
         {
             "source_path": "docs/framework/security/how-to-enable-wif-for-a-wcf-web-service-application.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-enable-wif-for-a-wcf-web-service-application"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/how-to-enable-wif-for-a-wcf-web-service-application"
         },
         {
             "source_path": "docs/framework/security/how-to-enable-wif-tracing.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-enable-wif-tracing"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/how-to-enable-wif-tracing"
         },
         {
             "source_path": "docs/framework/security/how-to-transform-incoming-claims.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-transform-incoming-claims"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/how-to-transform-incoming-claims"
         },
         {
             "source_path": "docs/framework/security/identity-and-access-tool-for-vs.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/identity-and-access-tool-for-vs"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/identity-and-access-tool-for-vs"
         },
         {
             "source_path": "docs/framework/security/index.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/index"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/index"
         },
         {
             "source_path": "docs/framework/security/json-web-token-handler-api-reference.md",
@@ -4500,87 +5427,87 @@
         },
         {
             "source_path": "docs/framework/security/json-web-token-handler.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/json-web-token-handler"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/json-web-token-handler"
         },
         {
             "source_path": "docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/namespace-mapping-between-wif-3-5-and-wif-4-5"
         },
         {
             "source_path": "docs/framework/security/secure-coding-guidelines-for-unmanaged-code.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/secure-coding-guidelines-for-unmanaged-code"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/secure-coding-guidelines-for-unmanaged-code"
         },
         {
             "source_path": "docs/framework/security/security-changes.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/security-changes"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/security-changes"
         },
         {
             "source_path": "docs/framework/security/validating-issuer-name-registry-api-reference.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/validating-issuer-name-registry-api-reference"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/validating-issuer-name-registry-api-reference"
         },
         {
             "source_path": "docs/framework/security/validating-issuer-name-registry.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/validating-issuer-name-registry"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/validating-issuer-name-registry"
         },
         {
             "source_path": "docs/framework/security/whats-new-in-wif.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/whats-new-in-wif"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/whats-new-in-wif"
         },
         {
             "source_path": "docs/framework/security/wif-and-web-farms.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/wif-and-web-farms"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/wif-and-web-farms"
         },
         {
             "source_path": "docs/framework/security/wif-api-reference.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/wif-api-reference"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/wif-api-reference"
         },
         {
             "source_path": "docs/framework/security/wif-claims-programming-model.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/wif-claims-programming-model"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/wif-claims-programming-model"
         },
         {
             "source_path": "docs/framework/security/wif-code-sample-index.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/wif-code-sample-index"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/wif-code-sample-index"
         },
         {
             "source_path": "docs/framework/security/wif-configuration-reference.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/wif-configuration-reference"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/wif-configuration-reference"
         },
         {
             "source_path": "docs/framework/security/wif-configuration-schema-conventions.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/wif-configuration-schema-conventions"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/wif-configuration-schema-conventions"
         },
         {
             "source_path": "docs/framework/security/wif-extensions.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/wif-extensions"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/wif-extensions"
         },
         {
             "source_path": "docs/framework/security/wif-features.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/wif-features"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/wif-features"
         },
         {
             "source_path": "docs/framework/security/wif-guidelines.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/wif-guidelines"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/wif-guidelines"
         },
         {
             "source_path": "docs/framework/security/wif-how-tos-index.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/wif-how-tos-index"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/wif-how-tos-index"
         },
         {
             "source_path": "docs/framework/security/wif-overview.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/wif-overview"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/wif-overview"
         },
         {
             "source_path": "docs/framework/security/wif-session-management.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/wif-session-management"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/wif-session-management"
         },
         {
             "source_path": "docs/framework/security/wsfederation-authentication-module-overview.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/wsfederation-authentication-module-overview"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/wsfederation-authentication-module-overview"
         },
         {
             "source_path": "docs/framework/security/wstrustchannelfactory-and-wstrustchannel.md",
-            "redirect_url": "/previous-versions/dotnet/framework/security/wstrustchannelfactory-and-wstrustchannel"
+            "redirect_url": "/previous-versions/dotnet/framework/windows-identity-foundation/wstrustchannelfactory-and-wstrustchannel"
         },
         {
             "source_path": "docs/framework/tools/developer-command-prompt-for-vs.md",
@@ -12499,6 +13426,86 @@
             "redirect_url": "/dotnet/standard/data/xml/index"
         },
         {
+            "source_path": "docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xslt-transformations-with-the-xsltransform-class",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/standard/data/xml/implementation-of-discretionary-behaviors-in-the-xsltransform-class.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/implementation-of-discretionary-behaviors-in-the-xsltransform-class",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xsltransform-class-implements-the-xslt-processor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/standard/data/xml/outputs-from-an-xsltransform.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/outputs-from-an-xsltransform",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/standard/data/xml/xslt-transformations-over-different-stores.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xslt-transformations-over-different-stores",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/standard/data/xml/resolving-external-xslt-style-sheets-and-documents.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/resolving-external-xslt-style-sheets-and-documents",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/standard/data/xml/xsltargumentlist-for-style-sheet-parameters-and-extension-objects.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xsltargumentlist-for-style-sheet-parameters-and-extension-objects",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/standard/data/xml/xslt-stylesheet-scripting-using-msxsl-script.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xslt-stylesheet-scripting-using-msxsl-script",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/standard/data/xml/support-for-the-msxsl-node-set-function.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/support-for-the-msxsl-node-set-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/standard/data/xml/node-sets-in-transformations.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/node-sets-in-transformations",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/standard/data/xml/result-tree-fragment-in-transformations.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/result-tree-fragment-in-transformations",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/standard/data/xml/xpathnavigator-in-transformations.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xpathnavigator-in-transformations",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/standard/data/xml/xpathnodeiterator-in-transformations.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xpathnodeiterator-in-transformations",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/standard/data/xml/xpathdocument-input-to-xsltransform.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xpathdocument-input-to-xsltransform",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/standard/data/xml/xmldatadocument-input-to-xsltransform.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xmldatadocument-input-to-xsltransform",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/standard/data/xml/xmldocument-input-to-xsltransform.md",
+            "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/xmldocument-input-to-xsltransform",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/standard/design-guidelines/choosing-between-anonymous-and-tuple.md",
             "redirect_url": "/dotnet/standard/base-types/choosing-between-anonymous-and-tuple"
         },
@@ -14033,6 +15040,96 @@
         {
             "source_path": "docs/standard/analyzers/api-analyzer.md",
             "redirect_url": "/dotnet/standard/analyzers/platform-compat-analyzer"
+        },
+        {
+            "source_path": "docs/framework/resources/index.md",
+            "redirect_url": "/dotnet/core/extensions/resources",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/resources/creating-resource-files-for-desktop-apps.md",
+            "redirect_url": "/dotnet/core/extensions/create-resource-files",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md",
+            "redirect_url": "/dotnet/core/extensions/create-satellite-assemblies",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md",
+            "redirect_url": "/dotnet/core/extensions/package-and-deploy-resources",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/resources/retrieving-resources-in-desktop-apps.md",
+            "redirect_url": "/dotnet/core/extensions/retrieve-resources",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/resources/working-with-resx-files-programmatically.md",
+            "redirect_url": "/dotnet/core/extensions/work-with-resx-files-programmatically",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/globalization-localization/best-practices-for-developing-world-ready-apps.md",
+            "redirect_url": "/dotnet/core/extensions/best-practices-for-developing-world-ready-apps",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/globalization-localization/culture-insensitive-string-operations.md",
+            "redirect_url": "/dotnet/core/extensions/culture-insensitive-string-operations",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/globalization-localization/index.md",
+            "redirect_url": "/dotnet/core/extensions/globalization-and-localization",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/globalization-localization/globalization-icu.md",
+            "redirect_url": "/dotnet/core/extensions/globalization-icu",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/globalization-localization/globalization.md",
+            "redirect_url": "/dotnet/core/extensions/globalization",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/globalization-localization/localizability-review.md",
+            "redirect_url": "/dotnet/core/extensions/localizability-review",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/globalization-localization/performing-culture-insensitive-case-changes.md",
+            "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-case-changes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/globalization-localization/performing-culture-insensitive-string-comparisons.md",
+            "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-string-comparisons",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-arrays.md",
+            "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-string-operations-in-arrays",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md",
+            "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-string-operations-in-collections",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md",
+            "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-string-operations",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/globalization-localization/localization.md",
+            "redirect_url": "/dotnet/core/extensions/localization",
+            "redirect_document_id": true
         }
     ]
 }

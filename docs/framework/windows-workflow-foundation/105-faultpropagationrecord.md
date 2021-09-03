@@ -6,10 +6,10 @@ ms.assetid: 168473b1-b1e5-4e9f-8a2a-35bbdb2ef531
 ---
 # 105 - FaultPropagationRecord
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |Id|105|  
 |Keywords|EndToEndMonitoring, Troubleshooting, HealthMonitoring, WFTracking|  
 |Level|Warning|  

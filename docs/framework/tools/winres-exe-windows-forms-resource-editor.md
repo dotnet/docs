@@ -15,7 +15,7 @@ ms.assetid: cb8bc835-9221-4888-af53-1a4f5fad6c48
 ---
 # Winres.exe (Windows Resource Localization Editor)
 
-The Windows Resource Localization Editor, Winres.exe, is a visual layout tool that helps localization experts localize Windows Forms user interface (UI) resources used by forms. The .resx or .resources files that are used as input to Winres.exe can be created using a visual design environment such as Microsoft Visual Studio. For information on deploying resources in .NET Framework applications, see [Resources in Desktop Apps](../resources/index.md).
+The Windows Resource Localization Editor, Winres.exe, is a visual layout tool that helps localization experts localize Windows Forms user interface (UI) resources used by forms. The .resx or .resources files that are used as input to Winres.exe can be created using a visual design environment such as Microsoft Visual Studio. For information on deploying resources in .NET Framework applications, see [Resources in .NET apps](../../core/extensions/resources.md).
 
 Winres.exe is installed with Visual Studio. To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
 
@@ -69,7 +69,7 @@ To localize using Winres.exe, you must first develop an application using a visu
 > [!NOTE]
 > Winres.exe cannot be used to edit the default resource file. Winres.exe interprets all changed properties as localized properties and saves them to the target culture resource file.
 
-The final versions of the culture resource files can finally be used to create localized versions of the application. For more information, see [Resources in Desktop Apps](../resources/index.md).
+The final versions of the culture resource files can finally be used to create localized versions of the application. For more information, see [Resources in .NET apps](../../core/extensions/resources.md).
 
 Winres.exe has the following features and capabilities:
 
@@ -128,7 +128,7 @@ You should use the version of Winres.exe that was released with the .NET Framewo
 
 5. Select the appropriate culture and file mode then click **OK**.
 
-   The tool saves the file using the naming convention that the run time expects for localized resource files. For example, if you localize `TestApp.resources` for German in Germany, the tool saves the file as `TestApp.de-DE.resources`. If you localize `TestApp.resx` for German in Germany, the tool saves the file as `TestApp.de-DE.resx`. For more information about resource naming conventions, see [Packaging and Deploying Resources](../resources/packaging-and-deploying-resources-in-desktop-apps.md). For a list of the predefined culture names used by the run time, see the <xref:System.Globalization.CultureInfo> class.
+   The tool saves the file using the naming convention that the run time expects for localized resource files. For example, if you localize `TestApp.resources` for German in Germany, the tool saves the file as `TestApp.de-DE.resources`. If you localize `TestApp.resx` for German in Germany, the tool saves the file as `TestApp.de-DE.resx`. For more information about resource naming conventions, see [Package and Deploy resources](../../core/extensions/package-and-deploy-resources.md). For a list of the predefined culture names used by the run time, see the <xref:System.Globalization.CultureInfo> class.
 
 ## See also
 
@@ -138,5 +138,5 @@ You should use the version of Winres.exe that was released with the .NET Framewo
 - <xref:System.Resources.ResourceReader>
 - <xref:System.Resources.ResourceWriter>
 - [Tools](index.md)
-- [Resources in Desktop Apps](../resources/index.md)
-- [Globalization and Localization](../../standard/globalization-localization/index.md)
+- [Resources in .NET apps](../../core/extensions/resources.md)
+- [Globalization and localization](../../core/extensions/globalization-and-localization.md)

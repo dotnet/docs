@@ -50,5 +50,5 @@ You can reference the `Microsoft.Extensions.Logging` package from .NET Framework
 - [Microsoft.Extensions.Logging NuGet Package](https://www.nuget.org/packages/microsoft.extensions.logging/)
 
 >[!div class="step-by-step"]
->[Previous](middleware-modules-handlers.md)
->[Next](routing-differences.md)
+>[Previous](routing-differences.md)
+>[Next](comparing-razor-pages-aspnet-mvc.md)

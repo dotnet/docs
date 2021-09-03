@@ -183,4 +183,4 @@ Using this attribute, classes inheriting from this type would route URLs to acti
 
 >[!div class="step-by-step"]
 >[Previous](configuration-differences.md)
->[Next](comparing-razor-pages-aspnet-mvc.md)
+>[Next](logging-differences.md)

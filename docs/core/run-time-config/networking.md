@@ -4,7 +4,7 @@ description: Learn about run-time settings that configure networking for .NET Co
 ms.date: 11/27/2019
 ms.topic: reference
 ---
-# Run-time configuration options for networking
+# Runtime configuration options for networking
 
 ## HTTP/2 protocol
 

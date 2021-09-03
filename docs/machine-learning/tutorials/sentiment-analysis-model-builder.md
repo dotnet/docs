@@ -62,7 +62,7 @@ Each row in the *wikipedia-detox-250-line-data.tsv* dataset represents a differe
 
 ## Choose a scenario
 
-![Model Builder wizard in Visual Studio](./media/sentiment-analysis-model-builder/model-builder-screen.png)
+![Model Builder wizard in Visual Studio](../media/model-builder-screen.png)
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder.
 

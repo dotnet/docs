@@ -27,7 +27,7 @@ The garbage collector provides the following benefits:
 
 - Reclaims objects that are no longer being used, clears their memory, and keeps the memory available for future allocations. Managed objects automatically get clean content to start with, so their constructors don't have to initialize every data field.
 
-- Provides memory safety by making sure that an object cannot use the content of another object.
+- Provides memory safety by making sure that an object cannot use for itself the memory allocated for another object.
 
 ## Fundamentals of memory
 
@@ -179,7 +179,7 @@ A garbage collection has the following phases:
   Ordinarily, the large object heap (LOH) is not compacted, because copying large objects imposes a performance penalty. However, in .NET Core and in .NET Framework 4.5.1 and later, you can use the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to compact the large object heap on demand. In addition, the LOH is automatically compacted when a hard limit is set by specifying either:
 
   - A memory limit on a container.
-  - The [GCHeapHardLimit](../../core/run-time-config/garbage-collector.md#heap-limit) or [GCHeapHardLimitPercent](../../core/run-time-config/garbage-collector.md#heap-limit-percent) run-time configuration options.
+  - The [GCHeapHardLimit](../../core/run-time-config/garbage-collector.md#heap-limit) or [GCHeapHardLimitPercent](../../core/run-time-config/garbage-collector.md#heap-limit-percent) runtime configuration options.
 
 The garbage collector uses the following information to determine whether objects are live:
 

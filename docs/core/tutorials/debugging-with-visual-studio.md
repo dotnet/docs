@@ -141,7 +141,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    Visual Basic
 
-   :::image type="content" source="./media/debugging-with-visual-studio/vb-step-into-method-net6.png" alt-text="Visual Studio step into method - Visual Basic":::
+   :::image type="content" source="./media/debugging-with-visual-studio/vb-step-into-method.png" alt-text="Visual Studio step into method - Visual Basic":::
 
    At this point, the **Locals** window shows that the `args` array is empty, and `name` and `currentDate` have default values. In addition, Visual Studio has opened a blank console window.
 

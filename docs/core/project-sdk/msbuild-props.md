@@ -415,7 +415,8 @@ For more information about deployment, see [.NET application deployment](../depl
 The following MSBuild properties are documented in this section:
 
 - [EmbeddedResourceUseDependentUponConvention](#embeddedresourceusedependentuponconvention)
-- [LangVersion](#langversion)
+
+C# compiler options can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
 
 ### EmbeddedResourceUseDependentUponConvention
 
@@ -431,18 +432,6 @@ By default, in a new .NET project, this property is set to `true`. If set to `fa
   <EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
 </PropertyGroup>
 ```
-
-### LangVersion
-
-The `LangVersion` property lets you specify a specific programming language version. For example, if you want access to C# preview features, set `LangVersion` to `preview`.
-
-```xml
-<PropertyGroup>
-  <LangVersion>preview</LangVersion>
-</PropertyGroup>
-```
-
-For more information, see [C# language versioning](../../csharp/language-reference/configure-language-version.md#override-a-default).
 
 ## Default item inclusion properties
 

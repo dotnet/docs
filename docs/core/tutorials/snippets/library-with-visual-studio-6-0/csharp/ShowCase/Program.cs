@@ -17,6 +17,7 @@ class Program
             Console.WriteLine("Begins with uppercase? " +
                  $"{(input.StartsWithUpper() ? "Yes" : "No")}");
             Console.WriteLine();
+            row += 4;
         } while (true);
         return;
 

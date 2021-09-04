@@ -195,7 +195,7 @@ Without `DynamicDependency`, trimming might remove `Helper` from `MyAssembly` or
 
 The attribute specifies the members to keep via a `string` or via `DynamicallyAccessedMemberTypes`. The type and assembly are either implicit in the attribute context, or explicitly specified in the attribute (by `Type`, or by `string`s for the type and assembly name).
 
-The type and member strings use the format described at https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format, without the member prefix. The member string should not include the name of the declaring type, and may omit parameters to keep all members of the specified name. Some examples of the format follow:
+The type and member strings use the format described at C# documentation comment [format](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format), without the member prefix. The member string should not include the name of the declaring type, and may omit parameters to keep all members of the specified name. Some examples of the format follow:
 
 ```csharp
 [DynamicDependency("Method()")]

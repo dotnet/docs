@@ -1,15 +1,15 @@
 ---
 description: "Learn more about: Creating New Attributes for Elements in the DOM"
-title: "Creating New Attributes for Elements in the DOM"
-ms.date: "03/30/2017"
+title: Creating New Attributes for Elements in the DOM
+ms.date: 09/02/2021
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: dd6dc920-b011-418a-b3db-f1580a7d9251
 ---
-# Creating New Attributes for Elements in the DOM
+# Create new attributes for elements in the DOM
 
-Creating new attributes is different than creating other node types, because attributes are not nodes, but are properties of an element node and are contained in an **XmlAttributeCollection** associated with the element. There are multiple ways to create an attribute and attach it to an element:
+Creating new attributes is different than creating other node types, because attributes are not nodes. They are properties of an element node and are contained in an **XmlAttributeCollection** associated with the element. There are multiple ways to create an attribute and attach it to an element:
 
 - Get the element node and use **SetAttribute** to add an attribute to the attribute collection of that element.
 
@@ -64,7 +64,7 @@ public class Sample
 }
 ```
 
-The following example shows a new attribute being created using the **CreateAttribute** method. It then shows the attribute added to the attribute collection of the **book** element using the **SetAttributeNode** method.
+The following example shows how to create a new attribute using the **CreateAttribute** method. The attribute is then added to the attribute collection of the **book** element using the **SetAttributeNode** method.
 
 Given the following XML:
   
@@ -74,7 +74,7 @@ Given the following XML:
 </book>
 ```
 
-create a new attribute and give it a value:
+Create a new attribute and give it a value:
 
 ```vb
 Dim attr As XmlAttribute = doc.CreateAttribute("publisher")
@@ -86,7 +86,7 @@ XmlAttribute attr = doc.CreateAttribute("publisher");
 attr.Value = "WorldWide Publishing";
 ```
 
-and attach it to the element:
+Attach the attribute to the element:
 
 ```vb
 doc.DocumentElement.SetAttributeNode(attr)
@@ -105,8 +105,6 @@ doc.DocumentElement.SetAttributeNode(attr);
 ```
 
 The full code sample can be found at <xref:System.Xml.XmlDocument.CreateAttribute%2A>.
-
-You can also create an **XmlAttribute** node and use the **InsertBefore** or **InsertAfter** methods to place it in the appropriate position in the collection. If an attribute with the same name is already present in the attribute collection, the existing **XmlAttribute** node is removed from the collection and the new **XmlAttribute** node is inserted. This performs the same way as the **SetAttribute** method. These methods take, as a parameter, an existing node as a reference point to do the **InsertBefore** and **InsertAfter**. If you do not provide a reference node indicating where to insert the new node, the default for the **InsertAfter** method is to insert the new node at the beginning of the collection. The default position for the **InsertBefore**, if no reference node is provided, is at the end of the collection.
 
 If you created an **XmlNamedNodeMap** of attributes, you can add an attribute by name using the <xref:System.Xml.XmlNamedNodeMap.SetNamedItem%2A> method. For more information, see [Node Collections in NamedNodeMaps and NodeLists](node-collections-in-namednodemaps-and-nodelists.md).
 

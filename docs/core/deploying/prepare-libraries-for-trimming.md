@@ -177,6 +177,43 @@ static void InitializeTypeField()
 
 In this case the trim analysis will simply keep public methods of `System.Tuple`, and will not produce further warnings.
 
+### DynamicDependency
+
+This attribute can be used to indicate that a member has a dynamic dependency on other members. This results in the referenced members being kept whenever the member with the attribute is kept, but doesn't silence warnings on its own.
+This can be used together with `UnconditionalSuppressMessageAttribute` to fix some analysis warnings.
+
+```csharp
+[DynamicDependency("Helper", "MyType", "MyAssembly")]
+static void RunHelper()
+{
+    var helper = Assembly.Load ("MyAssembly").GetType("MyType").GetMethod("Helper");
+    helper.Invoke(null, null);
+}
+```
+
+Without `DynamicDependency`, trimming might remove `Helper` from `MyAssembly` or remove `MyAssembly` completely if it's not referenced elsewhere, producing a warning that indicates a possible failure at runtime. The attribute ensures that `Helper` is kept.
+
+The attribute specifies the members to keep via a `string` or via `DynamicallyAccessedMemberTypes`. The type and assembly are either implicit in the attribute context, or explicitly specified in the attribute (by `Type`, or by `string`s for the type and assembly name).
+
+The type and member strings use the format described at https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format, without the member prefix. The member string should not include the name of the declaring type, and may omit parameters to keep all members of the specified name. Some examples of the format follow:
+
+```csharp
+[DynamicDependency("Method()")]
+[DynamicDependency("Method(System,Boolean,System.String)")]
+[DynamicDependency("MethodOnDifferentType()", typeof(ContainingType))]
+[DynamicDependency("MemberName")]
+[DynamicDependency("MemberOnUnreferencedAssembly", "ContainingType", "UnreferencedAssembly")]
+[DynamicDependency("MemberName", "Namespace.ContainingType.NestedType", "Assembly")]
+// generics
+[DynamicDependency("GenericMethodName`1")]
+[DynamicDependency("GenericMethod``2(``0,``1)")]
+[DynamicDependency("MethodWithGenericParameterTypes(System.Collections.Generic.List{System.String})")]
+[DynamicDependency("MethodOnGenericType(`0)", "GenericType`1", "UnreferencedAssembly")]
+[DynamicDependency("MethodOnGenericType(`0)", typeof(GenericType<>))]
+```
+
+This attribute is designed to be used in cases where a method contains reflection patterns that can not be analyzed even with the help of DynamicallyAccessedMembers.
+
 ## Recommendations
 
 In general, try to avoid reflection if possible. When using reflection, limit it in scope so that it is reachable only from a small part of the library.

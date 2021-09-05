@@ -420,7 +420,7 @@ The following example shows the extension of the existing `FSharp.Linq.QueryBuil
 
 ```fsharp
 open System
-open Microsoft.FSharp.Linq
+open FSharp.Linq
 
 type QueryBuilder with
 

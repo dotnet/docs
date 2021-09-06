@@ -13,7 +13,7 @@ This article offers guidelines for how to format your code so that your F# code 
 
 These guidelines are based on [A comprehensive guide to F# Formatting Conventions](https://github.com/dungpa/fantomas/blob/master/docs/FormattingConventions.md) by [Anh-Dung Phan](https://github.com/dungpa).
 
-See also [Coding conventions](../conventions) and [Component design guidelines](../component-design-guidelines), which also covers naming conventions.
+See also [Coding conventions](../conventions.md) and [Component design guidelines](../component-design-guidelines.md), which also covers naming conventions.
 
 ## General rules for formatting
 

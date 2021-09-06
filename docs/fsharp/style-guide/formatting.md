@@ -162,25 +162,35 @@ someFunction1 x.IngredientName
 someFunction1(x.IngredientName)
 ```
 
-By convention, space is added when applying functions to tupled arguments:
+In default formatting conventions, a space is added when applying lower-case functions to tupled or parenthesized arguments:
+
 ```fsharp
 // OK
-someFunction1 (x.IngredientName, x.Quantity)
+someFunction2 ()
 
-// OK, but formatting tools will add the extra space by default
-someFunction1(x.IngredientName, x.Quantity)
+// OK
+someFunction3 (x.Quantity1 + x.Quantity2)
+
+// Not OK, formatting tools will add the extra space by default
+someFunction2()
+
+// Not OK, formatting tools will add the extra space by default
+someFunction3(x.IngredientName, x.Quantity)
 ```
 
-For capitalized methods accepting tupled arguments, no space is added. This is because these are often used with fluent programming:
+In default formatting conventions, no space is added when applying capitalized methods to tupled arguments. This is because these are often used with fluent programming:
 
 ```fsharp
-// OK - Methods accepting tuples are applied without a space:
+// OK - Methods accepting parenthesize arguments are applied without a space
+SomeClass.Invoke()
+
+// OK - Methods accepting tuples are applied without a space
 String.Format(x.IngredientName, x.Quantity)
 
-// OK - it's important not to use a space if using fluent programming with chained '.' invocations
-String.Format(x.IngredientName, x.Quantity).Length
+// Not OK, formatting tools will remove the extra space by default
+SomeClass.Invoke ()
 
-// OK, but formatting tools will remove the extra space by default
+// Not OK, formatting tools will remove the extra space by default
 String.Format (x.IngredientName, x.Quantity)
 ```
 

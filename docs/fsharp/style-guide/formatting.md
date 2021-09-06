@@ -1114,6 +1114,7 @@ type PostalAddress = {
 ```
 
 When XML documentation is added for record fields, it becomes normal to indent and add whitespace:
+
 ```fsharp
 type PostalAddress =
     {

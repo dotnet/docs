@@ -28,7 +28,7 @@ Some of the following examples rely on `record` type that represents planets in 
 
 The `record Planet` is a positional record, which requires a `Name`, `Type`, and `OrderFromSun` values to instantiate it. There are several `static readonly` planet instances on the `Planet` type. These are convenience-based definitions for well-known planets. The `Type` member identifies the planet type.
 
-:::code source="snippets/set-operators/PlanetTye.cs":::
+:::code source="snippets/set-operators/PlanetType.cs":::
 
 ## `Distinct` and `DistinctBy`
 

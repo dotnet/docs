@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 02/14/2020
+ms.date: 09/02/2021
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -855,10 +855,11 @@ The `EnableDynamicLoading` property indicates that an assembly is a dynamically 
 The following properties concern code in generated files:
 
 - [DisableImplicitNamespaceImports](#disableimplicitnamespaceimports)
+- [ImplicitUsings](#implicitusings)
 
 ### DisableImplicitNamespaceImports
 
-The `DisableImplicitNamespaceImports` property can be used to disable [implicit namespaces](../compatibility/sdk/6.0/implicit-namespaces.md) in C# projects that target .NET 6 or a later version. Implicit namespaces are the default namespaces that are globally included in a project based on the type of SDK. Set this property to `true` to disable implicit namespaces.
+The `DisableImplicitNamespaceImports` property can be used to disable [implicit namespace imports](../compatibility/sdk/6.0/implicit-namespaces.md) in Visual Basic projects that target .NET 6 or a later version. Implicit namespaces are the default namespaces that are imported globally in a Visual Basic project. Set this property to `true` to disable implicit namespace imports.
 
 ```xml
 <PropertyGroup>
@@ -866,13 +867,18 @@ The `DisableImplicitNamespaceImports` property can be used to disable [implicit 
 </PropertyGroup>
 ```
 
-Setting the `DisableImplicitNamespaceImports` property to `true` completely disables the implicit namespaces feature of the .NET SDK. If you want to disable only a set of implicit namespaces, use one of the following SDK-specific properties instead.
+### ImplicitUsings
 
-| Property | SDK | Affected namespaces |
-| - | - | - |
-| `DisableImplicitNamespaceImports_DotNet` | Microsoft.NET.Sdk | System<br/>System.Collections.Generic<br/>System.IO<br/>System.Linq<br/>System.Net.Http<br/>System.Threading<br/>System.Threading.Tasks |
-| `DisableImplicitNamespaceImports_Web` | Microsoft.NET.Sdk.Web | System.Net.Http.Json<br/>Microsoft.AspNetCore.Builder<br/>Microsoft.AspNetCore.Hosting<br/>Microsoft.AspNetCore.Http<br/>Microsoft.AspNetCore.Routing<br/>Microsoft.Extensions.Configuration<br/>Microsoft.Extensions.DependencyInjection<br/>Microsoft.Extensions.Hosting<br/>Microsoft.Extensions.Logging |
-| `DisableImplicitNamespaceImports_Worker` | Microsoft.NET.Sdk.Worker | Microsoft.Extensions.Configuration<br/>Microsoft.Extensions.DependencyInjection<br/>Microsoft.Extensions.Hosting<br/>Microsoft.Extensions.Logging |
+The `ImplicitUsings` property can be used to enable and disable implicit `global using` directives in C# projects that target .NET 6 or a later version and C# 10.0 or a later version. When the feature is enabled, the .NET SDK adds `global using` directives for a set of default namespaces based on the type of project SDK. Set this property to `true` or `enable` to enable implicit `global using` directives. To disable implicit `global using` directives, remove the property or set it to `false` .
+
+```xml
+<PropertyGroup>
+  <ImplicitUsings>true</ImplicitUsings>
+</PropertyGroup>
+```
+
+> [!NOTE]
+> For new C# projects that target .NET 6 or later, `ImplicitUsings` is set to `true` by default.
 
 ## Items
 
@@ -880,6 +886,7 @@ Setting the `DisableImplicitNamespaceImports` property to `true` completely disa
 
 - [PackageReference](#packagereference)
 - [TrimmerRootAssembly](#trimmerrootassembly)
+- [Using](#using)
 
 You can use any of the standard [item attributes](/visualstudio/msbuild/item-element-msbuild#attributes-and-elements), for example, `Include` and `Update`, on these items. Use `Include` to add a new item, and use `Update` to modify an existing item. For example, `Update` is often used to modify an item that has implicitly been added by the .NET SDK.
 
@@ -920,6 +927,31 @@ The following XML excludes the `System.Security` assembly from trimming.
   <TrimmerRootAssembly Include="System.Security" />
 </ItemGroup>
 ```
+
+### Using
+
+The `Using` item lets you [globally include a namespace](../../csharp/language-reference/keywords/using-directive.md#global-modifier) across your C# project, such that you don't have to add a `using` directive for the namespace at the top of your source files. This item is similar to the `Import` item that can be used for the same purpose in Visual Basic projects. This property is available starting in .NET 6.
+
+```xml
+<ItemGroup>
+  <Using Include="My.Awesome.Namespace" />
+</ItemGroup>
+```
+
+You can also use the `Using` item to define global `using <alias>` and `using static <type>` directives.
+
+```xml
+<ItemGroup>
+  <Using Include="My.Awesome.Namespace" Alias="Awesome" />
+</ItemGroup>
+```
+
+For example:
+
+- `<Using Include="Microsoft.AspNetCore.Http.Results" Alias="Results" />` emits `global using Results = global::Microsoft.AspNetCore.Http.Results;`
+- `<Using Include="Microsoft.AspNetCore.Http.Results" Static="True" />` emits `global using static global::Microsoft.AspNetCore.Http.Results;`
+
+For more information about aliased `using` directives and `using static <type>` directives, see [using directive](../../csharp/language-reference/keywords/using-directive.md#static-modifier).
 
 ## Item metadata
 

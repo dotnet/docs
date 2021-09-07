@@ -121,11 +121,41 @@ Nullable reference types and nullable value types provide a similar semantic con
 
 ## Generics
 
-The implementation differences for nullable value types and nullable reference types introduce complexities for generic classes and methods. The meaning of `T?` depends on whether `T` is a `class` or `struct`. You clarify this using constraints:
+The implementation differences for nullable value types and nullable reference types introduce complexities for generic classes and methods. The meaning of `T?` depends on whether `T` is a `class` or `struct`. There are more complications if `T` is itself a nullable type. For example, if `T` is `int?`, the expression `T?` now becomes `int??`, which is an invalid expression. Similarly, when `T` is `string?`, the expression `T?` becomes `T??`, which is also an invalid expression.
 
-- The `class` constraint now means that `T` must be a non-nullable reference type (for example `string`).
-- The new `class?` constraint means that `T` must be a reference type, either non-nullable (`string`) or a nullable reference type (for example `string?`).
-- The `notnull` constraint means that `T` must be a non-nullable reference type, or a non-nullable value type.
+Furthermore, APIs such as <xref:System.Linq.Enumerable.FirstOrDefault%2A?displayProperty=nameWithType> use `T` as the return type. When that API returns the *default* value, the meaning is different when reference types or value types are used for `T`:
+
+- When `T` is a value type, the *default* return is the 0-bit pattern, which is the default value for that value type.
+- When `T` is a reference type, the *default* return is `null`, which is the default value for that type.
+
+In the first case, the return value is best represented by `T`, not `T?`. In the second case, the return value should be represented by a `T?`. Consider this method, written before C# 8:
+
+```csharp
+public T Find<T>(IEnumerable<T> sequence, Func<T, bool> predicate)
+```
+
+There are four different cases, without any constraints applied to `T`:
+
+- **`T` is a non-nullable value type, such as `int`**: The sequence and the return value are the type `T`, for example, `int`. When the return value represents the *default*, the return value is the 0-bit pattern.
+- **`T` is a nullable value type, such as `int?`**: The sequence and the return value are the type `T?`, for example, `int?`. When the return value represents the *default*, the return value is equal to `null`.
+- **`T` is a reference type, such as `string`**:  The sequence and the return value are the type `T`, for example, `string`. When the return value represents the *default*, the return value is `null`.
+- **`T` is a nullable reference type, such as `string?`**:  The sequence and the return value are the non-nullable type for `T`, for example, `string`. When the return value represents the *default*, the return value is `null`.
+
+Suppose the signature changes to the following, where the return value is always the nullable type for `T`:
+
+```csharp
+public T? Find<T>(IEnumerable<T> sequence, Func<T, bool> predicate)
+```
+
+In the cases where `T` is a value type, the return value is always the value type, `T`. For example, using `int` makes the return value an `int`, not an `int?`. When the type parameter is a nullable value type such as `int?`, the return value is still `T`, an `int?`. The nullable annotation for a value type is stripped off the type parameter.
+
+In the cases where `T` is a reference type, such as `string`, the return type is a `T?`. The compiler sets the *null-state* of the return value to *maybe-null*. If `T` is a nullable reference type, such as `string?`, the return type is `T?`, or `string?`, not `T??`. The *null-state* of the return value is *maybe-null*.
+
+You clarify this using constraints:
+
+- The `class` constraint now means that `T` must be a non-nullable reference type (for example `string`). The compiler produces a warning if you use a nullable reference type, such as `string?` for `T`.
+- The new `class?` constraint means that `T` must be a reference type, either non-nullable (`string`) or a nullable reference type (for example `string?`). When the type parameter is a nullable reference type, such as `string?`, an expression of `T?` becomes `T`, for example, `string?`.
+- The `notnull` constraint means that `T` must be a non-nullable reference type, or a non-nullable value type. If you use a nullable reference type or a nullable value type for the type parameter, the compiler produces a warning. Furthermore, when `T` is a value type, the return value is that value type, not the corresponding nullable value type.
 
 These constraints help provide more information to the compiler on how `T` will be used. That helps when developers choose the type for `T`, and provides better *null-state* analysis when an instance of the generic type is used.
 
@@ -206,7 +236,7 @@ For any line of code, you can set any of the following combinations:
 | disabled        | project default    | Rarely                                 |
 | disabled        | enabled            | Rarely                                 |
 
-Those nine combinations provide you with fine-grained control over the diagnostics the compiler emits for your code. You can enable more features in any area you are updating, without seeing additional warnings you aren't ready to address yet.
+Those nine combinations provide you with fine-grained control over the diagnostics the compiler emits for your code. You can enable more features in any area you're updating, without seeing additional warnings you aren't ready to address yet.
 
 > [!IMPORTANT]
 > The global nullable context does not apply for generated code files. Under either strategy, the nullable context is *disabled* for any source file marked as generated. This means any APIs in generated files are not annotated. There are four ways a file is marked as generated:

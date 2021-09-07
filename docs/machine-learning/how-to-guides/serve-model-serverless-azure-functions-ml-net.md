@@ -1,7 +1,7 @@
 ---
 title: Deploy a model to Azure Functions
 description: Serve ML.NET sentiment analysis machine learning model for prediction over the internet using Azure Functions
-ms.date: 09/07/2020
+ms.date: 09/07/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to

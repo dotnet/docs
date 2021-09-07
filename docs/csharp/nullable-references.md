@@ -39,13 +39,13 @@ Consider the following example:
 string message = null;
 
 // warning: dereference null.
-Console.WriteLine($"The length of the message is {message.Length});
+Console.WriteLine($"The length of the message is {message.Length}");
 
 var originalMessage = message;
 message = "Hello, World!";
 
 // No warning. Analysis determined "message" is not null.
-Console.WriteLine($"The length of the message is {message.Length});
+Console.WriteLine($"The length of the message is {message.Length}");
 
 // warning!
 Console.WriteLine(originalMessage.Length);
@@ -74,7 +74,7 @@ public void PrintMessage(string message)
 {
     if (!string.IsNullOrWhiteSpace(message))
     {
-        Console.WriteLine($"{DateTime.Now}: {message});
+        Console.WriteLine($"{DateTime.Now}: {message}");
     }
 }
 ```

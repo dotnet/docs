@@ -48,7 +48,7 @@ IDemoGetType : public IUnknown
 MIDL_INTERFACE("30619FEA-E995-41EA-8C8B-9A610D32ADCB")
 IDemoStoreType : public IUnknown
 {
-    HRESULT STDMETHODCALLTYPE StoreString(int len, _In_ wchar_t* str) = 0;
+    HRESULT STDMETHODCALLTYPE StoreString(int len, _In_z_ const wchar_t* str) = 0;
 };
 ```
 
@@ -117,9 +117,9 @@ Release         | Release
 GetString       | StoreString
 ```
 
-Looking at `DemoImpl`, we already have an implementation for `GetString()` and `StoreString()`, but what about the `IUnknown` functions? How to [implement an `IUnknown` instance][doc_impliunknown] is beyond the scope of this tutorial, but it can be done manually in `ComWrappers`. However, in this tutorial, you'll let the runtime handle that part. You can get the `IUnknown` implementation using the [`ComWrappers.GetIUnknownImpl()`][api_comwrappers] method.
+Looking at `DemoImpl`, we already have an implementation for `GetString()` and `StoreString()`, but what about the `IUnknown` functions? How to [implement an `IUnknown` instance][doc_impliunknown] is beyond the scope of this tutorial, but it can be done manually in `ComWrappers`. However, in this tutorial, you'll let the runtime handle that part. You can get the `IUnknown` implementation using the [`ComWrappers.GetIUnknownImpl()`][api_comwrappers_getiunknownimpl] method.
 
-It might seem like you've implemented all the methods, but unfortunately, only the `IUnknown` functions are consumable in a COM vtable. Since COM is outside of the runtime, you'll need to create native function pointers to your `DemoImpl` implementation. This can be done easily using C# function pointers and the [`UnmanagedCallersOnlyAttribute`][api_unmanagedcallersonly]. You can create a function to insert into the vtable by creating a `static` function that mimics the COM function signature. Following is an example of the COM signature for `IDemoGetType.GetString()` &ndash; recall from the COM ABI that the first argument is the instance itself.
+It might seem like you've implemented all the methods, but unfortunately, only the `IUnknown` functions are consumable in a COM vtable. Since COM is outside of the runtime, you'll need to create native function pointers to your `DemoImpl` implementation. This can be done using C# function pointers and the [`UnmanagedCallersOnlyAttribute`][api_unmanagedcallersonly]. You can create a function to insert into the vtable by creating a `static` function that mimics the COM function signature. Following is an example of the COM signature for `IDemoGetType.GetString()` &ndash; recall from the COM ABI that the first argument is the instance itself.
 
 ```csharp
 [UnmanagedCallersOnly]
@@ -140,38 +140,35 @@ GetIUnknownImpl(
     out IntPtr fpAddRef,
     out IntPtr fpRelease);
 
-{
-    int tableCount = 4;
-    int idx = 0;
-    var vtable = (IntPtr*)RuntimeHelpers.AllocateTypeAssociatedMemory(
-        typeof(DemoComWrappers),
-        IntPtr.Size * tableCount);
-    vtable[idx++] = fpQueryInterface;
-    vtable[idx++] = fpAddRef;
-    vtable[idx++] = fpRelease;
-    vtable[idx++] = (IntPtr)(delegate* unmanaged<IntPtr, IntPtr*, int>)&ABI.
-IDemoGetTypeManagedWrapper.GetString;
-    Debug.Assert(tableCount == idx);
-    s_IDemoGetTypeVTable = (IntPtr)vtable;
-}
+// Local variables with increment act as a guard against incorrect construction of
+// the native vtable. It also enables a quick validation of final size.
+int tableCount = 4;
+int idx = 0;
+var vtable = (IntPtr*)RuntimeHelpers.AllocateTypeAssociatedMemory(
+    typeof(DemoComWrappers),
+    IntPtr.Size * tableCount);
+vtable[idx++] = fpQueryInterface;
+vtable[idx++] = fpAddRef;
+vtable[idx++] = fpRelease;
+vtable[idx++] = (IntPtr)(delegate* unmanaged<IntPtr, IntPtr*, int>)&ABI.IDemoGetTypeManagedWrapper.GetString;
+Debug.Assert(tableCount == idx);
+s_IDemoGetTypeVTable = (IntPtr)vtable;
 ```
 
-The allocation of vtables is the first part of implementing `ComputeVtables()`. You should also construct comprehensive definitions for types that you're planning to support &ndash; think `DemoImpl`. Using the constructed vtables, you can now create a series of [`ComInterfaceEntry`][api_cominterfaceentry] instances that represent the complete view of the managed object in COM.
+The allocation of vtables is the first part of implementing `ComputeVtables()`. You should also construct comprehensive COM definitions for types that you're planning to support &ndash; think `DemoImpl` and what parts of it should be usable from COM. Using the constructed vtables, you can now create a series of [`ComInterfaceEntry`][api_cominterfaceentry] instances that represent the complete view of the managed object in COM.
 
 ```csharp
-{
-    s_DemoImplDefinitionLen = 2;
-    int idx = 0;
-    var entries = (ComInterfaceEntry*)RuntimeHelpers.AllocateTypeAssociatedMemory(
-        typeof(DemoComWrappers),
-        sizeof(ComInterfaceEntry) * s_DemoImplDefinitionLen);
-    entries[idx].IID = IDemoGetType.IID_IDemoGetType;
-    entries[idx++].Vtable = s_IDemoGetTypeVTable;
-    entries[idx].IID = IDemoStoreType.IID_IDemoStoreType;
-    entries[idx++].Vtable = s_IDemoStoreVTable;
-    Debug.Assert(s_DemoImplDefinitionLen == idx);
-    s_DemoImplDefinition = entries;
-}
+s_DemoImplDefinitionLen = 2;
+int idx = 0;
+var entries = (ComInterfaceEntry*)RuntimeHelpers.AllocateTypeAssociatedMemory(
+    typeof(DemoComWrappers),
+    sizeof(ComInterfaceEntry) * s_DemoImplDefinitionLen);
+entries[idx].IID = IDemoGetType.IID_IDemoGetType;
+entries[idx++].Vtable = s_IDemoGetTypeVTable;
+entries[idx].IID = IDemoStoreType.IID_IDemoStoreType;
+entries[idx++].Vtable = s_IDemoStoreVTable;
+Debug.Assert(s_DemoImplDefinitionLen == idx);
+s_DemoImplDefinition = entries;
 ```
 
 The allocation of vtables and entries for the Managed Object Wrapper can and should be done ahead of time since the data can be used for all instances of the type. The work here could be performed in a `static` constructor or a module initializer, but it should be done ahead of time so the `ComputeVtables()` method is as simple and quick as possible.
@@ -233,7 +230,7 @@ if (hr != 0)
 hr = Marshal.QueryInterface(ptr, ref IDemoStoreType.IID_IDemoStoreType, out IntPtr IDemoStoreTypeInst);
 if (hr != 0)
 {
-    Marshal.Release(ptr);
+    Marshal.Release(IDemoGetTypeInst);
     return null;
 }
 
@@ -246,7 +243,7 @@ return new DemoNativeStaticWrapper()
 
 #### Dynamic Native Object Wrapper
 
-Dynamic wrappers are more flexible because they provide a way for types to be queried at run time instead of statically. In order to provide this support, you'll utilize [`IDynamicInterfaceCastable`][api_idynamicinterfacecastable]. Observe that `DemoNativeDynamicWrapper` only implements this interface. The functionality that the interface provides is a chance to determine what type is supported at run time.
+Dynamic wrappers are more flexible because they provide a way for types to be queried at run time instead of statically. In order to provide this support, you'll utilize [`IDynamicInterfaceCastable`][api_idynamicinterfacecastable] &ndash; further details can be found [here][doc_idynamicinterfacecastable]. Observe that `DemoNativeDynamicWrapper` only implements this interface. The functionality that the interface provides is a chance to determine what type is supported at run time. The source for this tutorial does a static check during creation but that is simply for code sharing since the check could be deferred until a call is made to `DemoNativeDynamicWrapper.IsInterfaceImplemented()`.
 
 ```csharp
 internal class DemoNativeDynamicWrapper
@@ -279,7 +276,7 @@ unsafe interface IDemoStoreTypeNativeWrapper : IDemoStoreType
 There are two important things to note in this example:
 
 1) The `DynamicInterfaceCastableImplementationAttribute` attribute. This attribute is required on any type that is returned from a `IDynamicInterfaceCastable` method. It has the added benefit of making IL trimming easier, which means NativeAOT scenarios are more reliable.
-2) The cast to `DemoNativeDynamicWrapper`. This is part of the dynamic nature of `IDynamicInterfaceCastable`. The type that's returned from `IDynamicInterfaceCastable.GetInterfaceImplementation()` is used to blanket the type that implements `IDynamicInterfaceCastable`.
+2) The cast to `DemoNativeDynamicWrapper`. This is part of the dynamic nature of `IDynamicInterfaceCastable`. The type that's returned from `IDynamicInterfaceCastable.GetInterfaceImplementation()` is used to "blanket" the type that implements `IDynamicInterfaceCastable`. The gist here is the `this` pointer isn't what it pretends to be because we are permitting a case from `DemoNativeDynamicWrapper` to `IDemoStoreTypeNativeWrapper`.
 
 #### Forward calls to the COM instance
 
@@ -407,6 +404,7 @@ Aside from the lifetime, type system, and functional features that are discussed
 
 [api_allocatetypeassociatedmemory]:/dotnet/api/system.runtime.compilerservices.runtimehelpers.allocatetypeassociatedmemory
 [api_comwrappers]:/dotnet/api/system.runtime.interopservices.comwrappers
+[api_comwrappers_getiunknownimpl]:/dotnet/api/system.runtime.interopservices.comwrappers.getiunknownimpl
 [api_cominterfaceentry]:/dotnet/api/system.runtime.interopservices.comwrappers.cominterfaceentry
 [api_dynamicinterfacecastableimplementation]:/dotnet/api/system.runtime.interopservices.dynamicinterfacecastableimplementationattribute
 [api_idynamicinterfacecastable]:/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
@@ -418,6 +416,7 @@ Aside from the lifetime, type system, and functional features that are discussed
 
 [doc_comapartments]:/windows/win32/com/processes--threads--and-apartments
 [doc_comsecurity]:/windows/win32/com/security-in-com
+[doc_idynamicinterfacecastable]:https://devblogs.microsoft.com/dotnet/improvements-in-native-code-interop-in-net-5-0/#idynamicinterfacecastable
 [doc_garbage_collection]:../garbage-collection/index.md
 [doc_globalinterfacetable]:/windows/win32/com/when-to-use-the-global-interface-table
 [doc_impliunknown]:/windows/win32/com/using-and-implementing-iunknown

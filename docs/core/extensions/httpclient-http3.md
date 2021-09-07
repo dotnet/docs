@@ -36,7 +36,7 @@ HTTP/3 support is in preview, and needs to be enabled via a configuration flag w
 </ItemGroup>
 ```
 
-Or using [`AppContext.SetSwitch`](https://docs.microsoft.com/en-us/dotnet/api/system.appcontext.setswitch?view=net-5.0).
+Or using [`AppContext.SetSwitch`](/dotnet/api/system.appcontext.setswitch).
 
 The HTTP version can be configured by setting `HttpRequestMessage.Version` to 3.0. However, because not all routers, firewalls, and proxies properly support HTTP/3, we recommend configuring HTTP/3 together with HTTP/1.1 and HTTP/2. In HttpClient, this can be done by specifying:
 
@@ -58,7 +58,7 @@ The preceding Windows 11 Build versions may require the use of a [Windows Inside
 
 **Linux**
 
-On Linux, libmsquic is published via Microsoft official Linux package repository packages.microsoft.com. In order to consume it, it must be added manually. See [Linux Software Repository for Microsoft Products](https://docs.microsoft.com/en-us/windows-server/administration/linux-package-repository-for-microsoft-software). After configuring the package feed, it can be installed via the package manager of your distro, for example, for Ubuntu:
+On Linux, libmsquic is published via Microsoft official Linux package repository packages.microsoft.com. In order to consume it, it must be added manually. See [Linux Software Repository for Microsoft Products](https://windows-server/administration/linux-package-repository-for-microsoft-software). After configuring the package feed, it can be installed via the package manager of your distro, for example, for Ubuntu:
 
 ```shell
 sudo apt install libmsquic
@@ -102,7 +102,7 @@ Console.WriteLine($"status: {resp.StatusCode}, version: {resp.Version}, body: {b
 
 ### HTTP/3 Server
 
-HTTP/3 is supported by ASP.NET with the Kestrel server in .NET 6. For more details see  [use HTTP/3 with the ASP.NET Core Kestrel web server](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel/http3).
+HTTP/3 is supported by ASP.NET with the Kestrel server in .NET 6. For more details see  [use HTTP/3 with the ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel/http3).
 
 ### Public test servers
 
@@ -113,4 +113,4 @@ Cloudflare hosts a site for HTTP/3 which can be used to test the client against 
 - <xref:System.Net.Http.HttpClient>
 - [HTTP/3 support in Kestrel][http3Kestrel]
 
-[http3Kestrel]: https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel/http3
+[http3Kestrel]: /aspnet/core/fundamentals/servers/kestrel/http3

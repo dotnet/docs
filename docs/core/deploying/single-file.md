@@ -123,6 +123,10 @@ For example, add the following property to the project file of an assembly to em
 </PropertyGroup>
 ```
 
+## Compress assemblies in single file app
+
+Starting with .NET 6, single file apps can be created with compression enabled on the embedded assemblies. Set `EnableCompressionInSingleFile` property to `true` to achieve this. The produced single-file will have all of the embedded assemblies compressed which can significantly reduce the size of the executable. Compression comes with a performance cost. On application start, the assemblies must be decompressed into memory, which takes some time. It's recommended to measure both the size impact and startup cost impact of enabling compression before using it as the impact varies a lot between different applications.
+
 ## Publish a single file app - sample project file
 
 Here's a sample project file that specifies single-file publishing:

@@ -13,22 +13,32 @@ The standard query operator methods that perform set operations are listed in th
 
 ## Methods
 
-| Method name | Description | Reference link |
+| Method names | Description | Reference link |
 |--|--|--|
-| Distinct | Removes duplicate values from a collection. | <xref:System.Linq.Enumerable.Distinct%2A?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.DistinctBy%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Distinct%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.DistinctBy%2A?displayProperty=nameWithType> |
-| Except | Returns the set difference, which means the elements of one collection that do not appear in a second collection. | <xref:System.Linq.Enumerable.Except%2A?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.ExceptBy%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Except%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.ExceptBy%2A?displayProperty=nameWithType> |
-| Intersect | Returns the set intersection, which means elements that appear in each of two collections. | <xref:System.Linq.Enumerable.Intersect%2A?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.IntersectBy%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Intersect%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.IntersectBy%2A?displayProperty=nameWithType> |
-| Union | Returns the set union, which means unique elements that appear in either of two collections. | <xref:System.Linq.Enumerable.Union%2A?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.UnionBy%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Union%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.UnionBy%2A?displayProperty=nameWithType> |
+| `Distinct` or `DistinctBy` | Removes duplicate values from a collection. | <xref:System.Linq.Enumerable.Distinct%2A?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.DistinctBy%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Distinct%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.DistinctBy%2A?displayProperty=nameWithType> |
+| `Except` or `ExceptBy` | Returns the set difference, which means the elements of one collection that do not appear in a second collection. | <xref:System.Linq.Enumerable.Except%2A?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.ExceptBy%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Except%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.ExceptBy%2A?displayProperty=nameWithType> |
+| `Intersect` or `IntersectBy` | Returns the set intersection, which means elements that appear in each of two collections. | <xref:System.Linq.Enumerable.Intersect%2A?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.IntersectBy%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Intersect%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.IntersectBy%2A?displayProperty=nameWithType> |
+| `Union` or `UnionBy` | Returns the set union, which means unique elements that appear in either of two collections. | <xref:System.Linq.Enumerable.Union%2A?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.UnionBy%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Union%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.UnionBy%2A?displayProperty=nameWithType> |
 
-## Distinct and DistinctBy
+## Examples
 
-The following example depicts the behavior of the <xref:System.Linq.Enumerable.Distinct%2A?displayProperty=nameWithType> method on a sequence of characters. The returned sequence contains the unique elements from the input sequence.
+Some of the following examples rely on `record` type that represents planets in our solar system.
+
+:::code source="snippets/set-operators/Planet.cs":::
+
+The `record Planet` is a positional record, which requires a `Name`, `Type`, and `OrderFromSun` values to instantiate it. There are several `static readonly` planet instances on the `Planet` type. These are convenience-based definitions for well-known planets. The `Type` member identifies the planet type.
+
+:::code source="snippets/set-operators/PlanetTye.cs":::
+
+## `Distinct` and `DistinctBy`
+
+The following example depicts the behavior of the <xref:System.Linq.Enumerable.Distinct%2A?displayProperty=nameWithType> method on a sequence of strings. The returned sequence contains the unique elements from the input sequence.
 
 ![Graphic showing the behavior of Distinct().](./media/set-operations/distinct-method-behavior.png)
 
 [!code-csharp-interactive[Distinct](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQSetOperation/CS/SetOperation.cs#1)]
 
-The `DistinctBy` is an alternative approach to `Distinct`, which takes a `keySelector`. The `keySelector` is used as the comparative discriminator of the source type. Consider the following planet array:
+The [`DistinctBy`](xref:System.Linq.Enumerable.DistinctBy%2A?displayProperty=nameWithType) is an alternative approach to `Distinct`, which takes a `keySelector`. The `keySelector` is used as the comparative discriminator of the source type. Consider the following planet array:
 
 :::code source="snippets/set-operators/Program.DistinctBy.cs" id="Planets":::
 
@@ -41,7 +51,7 @@ In the preceding C# code:
 - The `Planet` array is filtered distinctly to the first occurrence of each unique plane type.
 - The resulting `planet` instance is written to the console.
 
-## Except and ExceptBy
+## `Except` and `ExceptBy`
 
 The following example depicts the behavior of <xref:System.Linq.Enumerable.Except%2A?displayProperty=nameWithType>. The returned sequence contains only the elements from the first input sequence that are not in the second input sequence.
 
@@ -49,7 +59,7 @@ The following example depicts the behavior of <xref:System.Linq.Enumerable.Excep
 
 [!code-csharp-interactive[Except](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQSetOperation/CS/SetOperation.cs#2)]
 
-The `ExceptBy` is an alternative approach to `Except`, which takes two sequences of the heterogenous types and a `keySelector`. The `keySelector` is the same type as the second collections type, and it is used as the comparative discriminator of the source type. Consider the following planet arrays:
+The [`ExceptBy`](xref:System.Linq.Enumerable.ExceptBy%2A?displayProperty=nameWithType) is an alternative approach to `Except`, which takes two sequences of the heterogenous types and a `keySelector`. The `keySelector` is the same type as the second collections type, and it is used as the comparative discriminator of the source type. Consider the following planet arrays:
 
 :::code source="snippets/set-operators/Program.ExceptBy.cs" id="Planets":::
 
@@ -63,7 +73,7 @@ In the preceding C# code:
 - The first planet array is filtered to planets that are not found in the second planet array, based on their name.
 - The resulting `planet` instance is written to the console.
 
-## Intersect and IntersectBy
+## `Intersect` and `IntersectBy`
 
 The following example depicts the behavior of <xref:System.Linq.Enumerable.Intersect%2A?displayProperty=nameWithType>. The returned sequence contains the elements that are common to both of the input sequences.
 
@@ -71,7 +81,7 @@ The following example depicts the behavior of <xref:System.Linq.Enumerable.Inter
 
 [!code-csharp-interactive[Intersect](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQSetOperation/CS/SetOperation.cs#3)]
 
-The `IntersectBy` is an alternative approach to `Intersect`, which takes two sequences of the heterogenous types and a `keySelector`. The `keySelector` is used as the comparative discriminator of the second collection's type. Consider the following planet arrays:
+The [`IntersectBy`](xref:System.Linq.Enumerable.IntersectBy%2A?displayProperty=nameWithType) is an alternative approach to `Intersect`, which takes two sequences of the heterogenous types and a `keySelector`. The `keySelector` is used as the comparative discriminator of the second collection's type. Consider the following planet arrays:
 
 :::code source="snippets/set-operators/Program.IntersectBy.cs" id="Planets":::
 
@@ -85,7 +95,7 @@ In the preceding C# code:
 - Only planets that are found in both arrays are present in the resulting sequence.
 - The resulting `planet` instance is written to the console.
 
-## Union and UnionBy
+## `Union` and `UnionBy`
 
 The following example depicts a union operation on two sequences of strings. The returned sequence contains the unique elements from both input sequences.
 
@@ -93,7 +103,7 @@ The following example depicts a union operation on two sequences of strings. The
 
 [!code-csharp-interactive[Union](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQSetOperation/CS/SetOperation.cs#4)]
 
-The `UnionBy` is an alternative approach to `Union`, which takes two sequences of the same type and a `keySelector`. The `keySelector` is used as the comparative discriminator of the source type. Consider the following planet arrays:
+The [`UnionBy`](xref:System.Linq.Enumerable.UnionBy%2A?displayProperty=nameWithType)is an alternative approach to `Union`, which takes two sequences of the same type and a `keySelector`. The `keySelector` is used as the comparative discriminator of the source type. Consider the following planet arrays:
 
 :::code source="snippets/set-operators/Program.UnionBy.cs" id="Planets":::
 

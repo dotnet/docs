@@ -102,7 +102,7 @@ For reasons covered under [Generic definitions and nullability](../../nullable-m
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="FindMethod" :::
 
-The method returns `null` when the sought item isn't found. You can avoid changing the signature by adding the `MaybeNull` annotation to the method return:
+The method returns `null` when the sought item isn't found. You can avoid adding the `?` to the return type by adding the `MaybeNull` annotation to the method return:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="FindMethodMaybeNull" :::
 
@@ -147,7 +147,7 @@ Another use for these attributes is the `Try*` pattern. The postconditions for `
 
 The preceding method follows a typical .NET idiom: the return value indicates if `message` was set to the found value or, if no message is found, to the default value. If the method returns `true`, the value of `message` isn't null; otherwise, the method sets `message` to null.
 
-You can communicate that idiom using the `NotNullWhen` attribute. When you update the signature for nullable reference types, make `message` a `string?` and add an attribute:
+You can communicate that idiom using the `NotNullWhen` attribute. When you annotate parameters for nullable reference types, make `message` a `string?` and add an attribute:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="NotNullWhenTryGet" :::
 
@@ -157,7 +157,7 @@ There's one final attribute you may also need. Sometimes the null state of a ret
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="ExtractComponent" :::
 
-If the `url` argument isn't null, the output isn't `null`. Once nullable references are enabled, that signature works correctly, provided your API never accepts a null argument. However, if the argument could be null, then return value could also be null. You could change the signature to the following code:
+If the `url` argument isn't null, the output isn't `null`. Once nullable references are enabled you need to add more annotations if your API may accept a null argument. You could annotate the return type as shown in the following code:
 
 ```csharp
 string? GetTopLevelDomainFromFullUrl(string? url)

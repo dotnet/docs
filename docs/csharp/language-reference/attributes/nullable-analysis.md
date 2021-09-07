@@ -40,8 +40,8 @@ The rule for `key` can be expressed succinctly in C# 8.0: `key` should be a non-
 | [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute) | [Conditional postcondition](#conditional-post-conditions-notnullwhen-maybenullwhen-and-notnullifnotnull) | A return value isn't null if the argument for the specified parameter isn't null. |
 | [MemberNotNull](xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute) | [Constructor helper methods](#constructor-helper-methods-membernotnull-and-membernotnullwhen) | The listed member won't be null when the method returns. |
 | [MemberNotNullWhen](xref:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute) | [Constructor helper methods](#constructor-helper-methods-membernotnull-and-membernotnullwhen) | The listed member won't be null when the method returns the specified `bool` value. |
-| [DoesNotReturn](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute) | [Unreachable code](#verify-unreachable-code) | A method never returns. In other words, it always throws an exception. |
-| [DoesNotReturnIf](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute) | [Unreachable code](#verify-unreachable-code) | This method never returns if the associated `bool` parameter has the specified value. |
+| [DoesNotReturn](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute) | [Unreachable code](#stop-nullable-analysis-when-called-method-throws) | A method never returns. In other words, it always throws an exception. |
+| [DoesNotReturnIf](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute) | [Unreachable code](#stop-nullable-analysis-when-called-method-throws) | This method never returns if the associated `bool` parameter has the specified value. |
 
 The preceding descriptions are a quick reference to what each attribute does. The following sections describe the behavior and meaning of these attributes more thoroughly.
 
@@ -185,7 +185,7 @@ You can specify multiple field names as arguments to the `MemberNotNull` attribu
 
 The <xref:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute> has a `bool` argument. You use `MemberNotNullWhen` in situations where your helper method returns a `bool` indicating whether your helper method initialized fields.
 
-## Don't perform nullable static analysis in code that won't be reached.
+## Stop nullable analysis when called method throws
 
 Some methods, typically exception helpers or other utility methods, always exit by throwing an exception. Or, a helper may throw an exception based on the value of a Boolean argument.
 

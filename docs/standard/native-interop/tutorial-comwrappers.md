@@ -61,7 +61,7 @@ The [`ComWrappers`][api_comwrappers] API was designed to provide the minimal int
 
 These efficiencies are accomplished by requiring wrapper creation and acquisition to go through the `ComWrappers` API.
 
-Since the `ComWrappers` API has so few responsibilities, it stands to reason that most the interop work should be handled by the consumer &ndash; this is true. However, the additional work is largely mechanical and can be performed by a source-generation solution. As an example, the [C#/WinRT tool chain][repo_cswinrt] is a source-generation solution that's built on top of `ComWrappers` to provide WinRT interop support.
+Since the `ComWrappers` API has so few responsibilities, it stands to reason that most of the interop work should be handled by the consumer &ndash; this is true. However, the additional work is largely mechanical and can be performed by a source-generation solution. As an example, the [C#/WinRT tool chain][repo_cswinrt] is a source-generation solution that's built on top of `ComWrappers` to provide WinRT interop support.
 
 ## Implement a `ComWrappers` subclass
 

@@ -4,7 +4,7 @@ public static partial class Program
 {
     internal static void ExceptByExample()
     {
-        WriteLine("ExceptBy:");
+        Console.WriteLine("ExceptBy:");
 
         // <Planets>
         Planet[] planets =
@@ -32,13 +32,13 @@ public static partial class Program
             planets.ExceptBy(
                 morePlanets.Select(PlanetNameSelector), PlanetNameSelector))
         {
-            WriteLine(planet);
+            Console.WriteLine(planet);
         }
 
         // This code produces the following output:
         //     Planet { Name = Venus, Type = Rock, OrderFromSun = 2 }
         // </ExceptBy>
 
-        WriteLine();
+        Console.WriteLine();
     }
 }

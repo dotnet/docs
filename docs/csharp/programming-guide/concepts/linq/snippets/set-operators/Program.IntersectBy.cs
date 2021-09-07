@@ -4,7 +4,7 @@ public static partial class Program
 {
     internal static void IntersectByExample()
     {
-        WriteLine("IntersectBy:");
+        Console.WriteLine("IntersectBy:");
 
         // <Planets>
         Planet[] firstFivePlanetsFromTheSun =
@@ -31,7 +31,7 @@ public static partial class Program
             firstFivePlanetsFromTheSun.IntersectBy(
                 lastFivePlanetsFromTheSun, planet => planet))
         {
-            WriteLine(planet);
+            Console.WriteLine(planet);
         }
 
         // This code produces the following output:
@@ -39,6 +39,6 @@ public static partial class Program
         //     Planet { Name = Jupiter, Type = Gas, OrderFromSun = 5 }
         // </IntersectBy>
 
-        WriteLine();
+        Console.WriteLine();
     }
 }

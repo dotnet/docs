@@ -4,7 +4,7 @@ public static partial class Program
 {
     internal static void DistinctByExample()
     {
-        WriteLine("DistinctBy:");
+        Console.WriteLine("DistinctBy:");
 
         // <Planets>
         Planet[] planets =
@@ -24,7 +24,7 @@ public static partial class Program
         // <DistinctBy>
         foreach (Planet planet in planets.DistinctBy(p => p.Type))
         {
-            WriteLine(planet);
+            Console.WriteLine(planet);
         }
 
         // This code produces the following output:
@@ -34,6 +34,6 @@ public static partial class Program
         //     Planet { Name = Pluto, Type = Ice, OrderFromSun = 9 }
         // </DistinctBy>
 
-        WriteLine();
+        Console.WriteLine();
     }
 }

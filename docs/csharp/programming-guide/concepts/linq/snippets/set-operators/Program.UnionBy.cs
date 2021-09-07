@@ -4,7 +4,7 @@ public static partial class Program
 {
     internal static void UnionByExample()
     {
-        WriteLine("UnionBy:");
+        Console.WriteLine("UnionBy:");
 
         // <Planets>
         Planet[] firstFivePlanetsFromTheSun =
@@ -31,7 +31,7 @@ public static partial class Program
             firstFivePlanetsFromTheSun.UnionBy(
                 lastFivePlanetsFromTheSun, planet => planet))
         {
-            WriteLine(planet);
+            Console.WriteLine(planet);
         }
 
         // This code produces the following output:
@@ -45,6 +45,6 @@ public static partial class Program
         //     Planet { Name = Neptune, Type = Liquid, OrderFromSun = 8 }
         // </UnionBy>
 
-        WriteLine();
+        Console.WriteLine();
     }
 }

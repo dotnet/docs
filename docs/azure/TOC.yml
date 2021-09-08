@@ -23,16 +23,54 @@
     href: dotnet-dev-env-checklist.md
 - name: Web development
   items:
-    - name: Deploy ASP.NET/ASP.NET Core application with SQL DB
-      href: ./web-development/aspnet-with-sqldb.md
-    - name: Deploy Single Page App with .NET back-end
-      href: http://microsoft.com
-    - name: Deploy Blazor WASM application
-      href: http://microsoft.com
+    - name: Choose a web hosting strategy
+      href: /azure/architecture/guide/technology-choices/compute-decision-tree
+    - name: ASP.NET + Database on Azure
+      href: /azure/app-service/tutorial-dotnetcore-sqldb-app?pivots=platform-windows
+    - name: Single Page App with .NET back-end
+      href: /azure/app-service/tutorial-dotnetcore-sqldb-app?pivots=platform-windows
+    - name: Deploy Blazor WASM application on Azure
+      href: /azure/app-service/tutorial-dotnetcore-sqldb-app?pivots=platform-windows
+    - name: Securing Azure Web apps
+      items: 
+        - name: Securely accessing Azure services with Managed Identity
+          href: /azure/app-service/app-service-web-tutorial-connect-msi?tabs=windowsclient%2Cdotnet
+        - name: Reference secrets from Key Vault
+          href: /azure/app-service/app-service-key-vault-references
+    - name: Performance monitoring
+      items:
+        - name: Configure synthetic monitoring
+          href: /azure/app-service/monitor-instances-health-check
+        - name: Configure App Insights
+          href: /azure/azure-monitor/app/asp-net-core
+        - name: Capture logs with App Insights
+          href: /azure/azure-monitor/app/ilogger
+        - name: Analyze App Insights data
+          href: /azure/azure-monitor/app/tutorial-performance
+        - name: Alert on Application Health
+          href: /azure/azure-monitor/app/tutorial-alert
+    - name: User Authentication
+      items:
+        - name: Authenticate with Azure AD
+          href: /azure/app-service/configure-authentication-provider-aad
+    - name: Deploying to Azure
+      items:
+        - name: Deploy via FTP
+          href: /azure/app-service/deploy-ftp?tabs=portal
+        - name: Deploy via local Git
+          href: /azure/app-service/deploy-local-git?tabs=cli 
+        - name: Deploying using GitHub Actions
+          href: /azure/app-service/deploy-github-actions?tabs=applevel
 - name: Serverless development
   items:
     - name: Build your first serverless function
-      href: http://microsoft.com
+      href: /azure/azure-functions/functions-create-your-first-function-visual-studio?tabs=in-process
+    - name: Build Apps with Azure Functions
+      items: 
+        - name: Build a serverless API
+          href: /azure/azure-functions/functions-create-your-first-function-visual-studio?tabs=in-process
+        - name: Ingest data using Azure Functions
+          href: /azure/azure-functions/functions-create-your-first-function-visual-studio?tabs=in-process
 - name: Containers on Azure
   items:
     - name: Overview

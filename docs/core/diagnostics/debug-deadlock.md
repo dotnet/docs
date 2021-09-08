@@ -73,7 +73,7 @@ To start the core dump analysis, open the core dump using the following `dotnet-
 dotnet-dump analyze  ~/.dotnet/tools/core_20190513_143916
 ```
 
-Since you're looking at a potential unresponsive application, you want an overall feel for the thread activity in the process. You can use the `threads` command as shown below:
+Since you're looking at a potentially unresponsive application, you want an overall feel for the thread activity in the process. You can use the `threads` command as shown below:
 
 ```console
 > threads

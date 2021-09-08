@@ -2,7 +2,7 @@
 
 #### Details
 
-Fixed a problem where a virtualizing<xref:System.Windows.Controls.ItemsControl> can stop responding during scrolling when its Items collection contains duplicate value-typed objects.
+Fixed a problem where a virtualizing <xref:System.Windows.Controls.ItemsControl> can stop responding during scrolling when its `Items` collection contains duplicate value-typed objects.
 
 | Name    | Value       |
 |:--------|:------------|

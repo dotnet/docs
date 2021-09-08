@@ -1,4 +1,4 @@
-### Resizing a Grid can cause it to stop responding
+### Resizing a Grid can cause the application to become unresponsive
 
 #### Details
 

@@ -1,4 +1,4 @@
-### Resizing a Grid can hang
+### Resizing a Grid can cause it to stop responding
 
 #### Details
 

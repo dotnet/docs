@@ -40,7 +40,7 @@ Or using [`AppContext.SetSwitch`](/dotnet/api/system.appcontext.setswitch).
 
 The HTTP version can be configured by setting `HttpRequestMessage.Version` to 3.0. However, because not all routers, firewalls, and proxies properly support HTTP/3, we recommend configuring HTTP/3 together with HTTP/1.1 and HTTP/2. In HttpClient, this can be done by specifying:
 
-- `HttpRequestMessage.Version` to 2.0.
+- `HttpRequestMessage.Version` to 1.1.
 - `HttpRequestMessage.VersionPolicy` to `HttpVersionPolicy.RequestVersionOrHigher`.
 
 The reason for requiring a configuration flag for HTTP/3 is to protect apps from future breakage when using version policy `RequestVersionOrHigher`. When calling a server that currently uses HTTP/1.1 and HTTP/2, if the server later upgrades to HTTP/3, the client would try to use HTTP/3 and potentially be incompatible as the standard is not final and therefore may change after .NET 6 is released.
@@ -95,7 +95,7 @@ client.DefaultRequestVersion =  HttpVersion.Version30;
 client.DefaultVersionPolicy = HttpVersionPolicy.RequestVersionExcat;
 
 Console.WriteLine("--- Localhost:5001 ---");
-var resp =await client.GetAsync("https://localhost:5001/");
+var resp = await client.GetAsync("https://localhost:5001/");
 var body = await resp.Content.ReadAsStringAsync();
 Console.WriteLine($"status: {resp.StatusCode}, version: {resp.Version}, body: {body.Substring(0, Math.Min(100, body.Length))}");
 ```

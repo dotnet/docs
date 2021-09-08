@@ -16,7 +16,7 @@ You use `void` as the return type of a [method](../../programming-guide/classes-
 
 [!code-csharp[void method](snippets/shared/VoidType.cs#VoidExample)]
 
-You can also use `void` as a referent type to declare a pointer to an unknown type. For more information, see [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md).
+You can also use `void` as a referent type to declare a pointer to an unknown type. For more information, see [Pointer types](../unsafe-code.md#pointer-types).
 
 You cannot use `void` as the type of a variable.
 

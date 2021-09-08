@@ -3,7 +3,7 @@ title: Dependency injection in .NET
 description: Learn how .NET implements dependency injection and how to use it.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: overview
 ---
 
@@ -132,16 +132,17 @@ The `ConfigureServices` method registers services that the app uses, including p
 
 The following table lists a small sample of these framework-registered services:
 
-| Service Type                                                                       | Lifetime  |
-|------------------------------------------------------------------------------------|-----------|
-| <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime>                       | Singleton |
-| <xref:Microsoft.Extensions.Logging.ILogger%601?displayProperty=fullName>           | Singleton |
-| <xref:Microsoft.Extensions.Logging.ILoggerFactory?displayProperty=fullName>        | Singleton |
-| <xref:Microsoft.Extensions.ObjectPool.ObjectPoolProvider?displayProperty=fullName> | Singleton |
-| <xref:Microsoft.Extensions.Options.IConfigureOptions%601?displayProperty=fullName> | Transient |
-| <xref:Microsoft.Extensions.Options.IOptions%601?displayProperty=fullName>          | Singleton |
-| <xref:System.Diagnostics.DiagnosticListener?displayProperty=fullName>              | Singleton |
-| <xref:System.Diagnostics.DiagnosticSource?displayProperty=fullName>                | Singleton |
+| Service Type                                                                                  | Lifetime  |
+|-----------------------------------------------------------------------------------------------|-----------|
+| <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory?displayProperty=fullName> | Singleton |
+| <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime>                                  | Singleton |
+| <xref:Microsoft.Extensions.Logging.ILogger%601?displayProperty=fullName>                      | Singleton |
+| <xref:Microsoft.Extensions.Logging.ILoggerFactory?displayProperty=fullName>                   | Singleton |
+| <xref:Microsoft.Extensions.ObjectPool.ObjectPoolProvider?displayProperty=fullName>            | Singleton |
+| <xref:Microsoft.Extensions.Options.IConfigureOptions%601?displayProperty=fullName>            | Transient |
+| <xref:Microsoft.Extensions.Options.IOptions%601?displayProperty=fullName>                     | Singleton |
+| <xref:System.Diagnostics.DiagnosticListener?displayProperty=fullName>                         | Singleton |
+| <xref:System.Diagnostics.DiagnosticSource?displayProperty=fullName>                           | Singleton |
 
 ## Service lifetimes
 
@@ -187,9 +188,6 @@ Every subsequent request of the service implementation from the dependency injec
 Register singleton services with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A>. Singleton services must be thread safe and are often used in stateless services.
 
 In apps that process requests, singleton services are disposed when the <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider> is disposed on application shutdown. Because memory is not released until the app is shut down, consider memory use with a singleton service.
-
-> [!WARNING]
-> Do ***not*** resolve a scoped service from a singleton. It may cause the service to have incorrect state when processing subsequent requests. It's fine to resolve a singleton service from a scoped or transient service.
 
 ## Service registration methods
 
@@ -306,6 +304,23 @@ When the app runs in the `Development` environment and calls [CreateDefaultBuild
 The root service provider is created when <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> is called. The root service provider's lifetime corresponds to the app's lifetime when the provider starts with the app and is disposed when the app shuts down.
 
 Scoped services are disposed by the container that created them. If a scoped service is created in the root container, the service's lifetime is effectively promoted to singleton because it's only disposed by the root container when the app shuts down. Validating service scopes catches these situations when `BuildServiceProvider` is called.
+
+## Scope scenarios
+
+The <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory> is always registered as a singleton, but the <xref:System.IServiceProvider> can vary based on the lifetime of the containing class. For example, if you resolve services from a scope, and any of those services take an <xref:System.IServiceProvider>, it'll be a scoped instance.
+
+To achieve scoping services within implementations of <xref:Microsoft.Extensions.Hosting.IHostedService>, such as the <xref:Microsoft.Extensions.Hosting.BackgroundService>, do *not* inject the service dependencies via constructor injection. Instead, inject <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>, create a scope, then resolve dependencies from the scope to use the appropriate service lifetime.
+
+:::code language="csharp" source="snippets/configuration/worker-scope/Worker.cs" highlight="13,15-16,22":::
+
+In the preceding code, while the app is running, the background service:
+
+- Depends on the <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>.
+- Creates an <xref:Microsoft.Extensions.DependencyInjection.IServiceScope> for resolving additional services.
+- Resolves scoped services for consumption.
+- Works on processing objects and then relaying them, and finally marks them as processed.
+
+From the sample source code, you can see how implementations of <xref:Microsoft.Extensions.Hosting.IHostedService> can benefit from scoped service lifetimes.
 
 ## See also
 

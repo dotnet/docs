@@ -116,6 +116,9 @@ A production-ready solution with support for RabbitMQ.
 - **MassTransit** \
   <https://masstransit-project.com/>
   
+- **Rebus** - Open source .NET Service Bus
+  <https://github.com/rebus-org/Rebus>
+
 > [!div class="step-by-step"]
 > [Previous](integration-event-based-microservice-communications.md)
 > [Next](subscribe-events.md)

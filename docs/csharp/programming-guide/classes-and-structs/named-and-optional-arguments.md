@@ -24,7 +24,7 @@ When you use named and optional arguments, the arguments are evaluated in the or
 
 Named and optional parameters enable you to supply arguments for selected parameters. This capability greatly eases calls to COM interfaces such as the Microsoft Office Automation APIs.
 
-## Named Arguments
+## Named arguments
 
 Named arguments free you from matching the order of parameters in the parameter lists of called methods. The parameter for each argument can be specified by parameter name. For example, a function that prints order details (such as, seller name, order number & product name) can be called by sending arguments by position, in the order defined by the function.
 
@@ -62,13 +62,13 @@ Positional arguments that follow any out-of-order named arguments are invalid.
 PrintOrderDetails(productName: "Red Mug", 31, "Gift Shop");
 ```
 
-## Example
+### Example
 
 The following code implements the examples from this section along with some additional ones.  
 
 [!code-csharp[csProgGuideNamedAndOptional#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidenamedandoptional/cs/program.cs#1)]
 
-## Optional Arguments
+## Optional arguments
 
 The definition of a method, constructor, indexer, or delegate can specify its parameters are required or optional. Any call must provide arguments for all required parameters, but can omit arguments for optional parameters.
 
@@ -101,7 +101,7 @@ IntelliSense uses brackets to indicate optional parameters, as shown in the foll
 > [!NOTE]
 > You can also declare optional parameters by using the .NET <xref:System.Runtime.InteropServices.OptionalAttribute> class. `OptionalAttribute` parameters do not require a default value.
 
-## Example
+### Example
 
 In the following example, the constructor for `ExampleClass` has one parameter, which is optional. Instance method `ExampleMethod` has one required parameter, `required`, and two optional parameters, `optionalstr` and `optionalint`. The code in `Main` shows the different ways in which the constructor and method can be invoked.
 
@@ -109,7 +109,7 @@ In the following example, the constructor for `ExampleClass` has one parameter, 
 
 The preceding code shows a number of examples where optional parameters aren't applied correctly. The first illustrates that an argument must be supplied for the first parameter, which is required.
   
-## COM Interfaces
+## COM interfaces
 
 Named and optional arguments, along with support for dynamic objects, greatly improve interoperability with COM APIs, such as Office Automation APIs.
 
@@ -127,7 +127,7 @@ However, you can greatly simplify the call to `AutoFormat` by using named and op
 
 For more information and examples, see [How to use named and optional arguments in Office programming](./how-to-use-named-and-optional-arguments-in-office-programming.md) and [How to access Office interop objects by using C# features](../interop/how-to-access-office-onterop-objects.md).
   
-## Overload Resolution
+## Overload resolution
 
 Use of named and optional arguments affects overload resolution in the following ways:
 
@@ -135,6 +135,6 @@ Use of named and optional arguments affects overload resolution in the following
 - If more than one candidate is found, overload resolution rules for preferred conversions are applied to the arguments that are explicitly specified. Omitted arguments for optional parameters are ignored.
 - If two candidates are judged to be equally good, preference goes to a candidate that doesn't have optional parameters for which arguments were omitted in the call. Overload resolution generally prefers candidates that have fewer parameters.
   
-## C# Language Specification
+## C# language specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]

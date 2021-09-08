@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: ReDim' Preserve operand cannot be Nothing"
+description: "Learn more about: 'ReDim' Preserve operand cannot be Nothing"
 title: "'ReDim' Preserve operand cannot be Nothing"
 ms.date: 07/20/2015
 ms.assetid: b857f313-3fc2-4262-a577-88df1718b811

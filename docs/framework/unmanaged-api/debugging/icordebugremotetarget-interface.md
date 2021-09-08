@@ -43,7 +43,7 @@ interface ICorDebugRemoteTarget  : IUnknown
   
 ## Remarks  
 
- Mixed-mode (that is, managed and native code) debugging is not supported on Windows 95, Windows 98, or Windows ME, or on non-x86 platforms (such as IA-64 and AMD64).  
+ Mixed-mode (that is, managed and native code) debugging is not supported on non-x86 platforms (such as IA-64 and AMD64).  
   
 ## Requirements  
 

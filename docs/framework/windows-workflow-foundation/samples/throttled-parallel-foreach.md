@@ -10,6 +10,8 @@ The `ThrottleParallelForEach` activity is similar to the <xref:System.Activities
 
 ## Projects
 
+The [ThrottledParallelForEach sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/scenario/ActivityLibrary/ThrottledParallelForEach/CS) contains the following projects.
+
 |**ProjectName**|**Description**|**Main Files**|
 |-|-|-|
 |ThrottledParallelForEach|Contains `ThrottledParallelForEach` activity and its designer.|ThrottledParallelForEach.cs<br /><br /> The `ThrottledParallelForEach` activity definition.|
@@ -17,17 +19,8 @@ The `ThrottleParallelForEach` activity is similar to the <xref:System.Activities
 
 ## To use this sample
 
-1. Using Visual Studio 2010, open the ThrottledParallelForEach.sln file.
+1. Using Visual Studio, open the ThrottledParallelForEach.sln file.
 
 2. To build the solution, press CTRL+SHIFT+B.
 
 3. To run the solution, press F5.
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\ThrottledParallelForEach`

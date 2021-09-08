@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: a49ee7a3-b2c2-4d49-9b5c-b7c6c41f4f13
+ms.topic: how-to
 ---
 
 # How to retrieve a collection of attributes (LINQ to XML)

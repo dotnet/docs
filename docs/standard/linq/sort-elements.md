@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: aee6fbbc-81fd-4b3e-b40f-6ed7b3bd3fee
+ms.topic: how-to
 ---
 
 # How to sort elements (LINQ to XML)

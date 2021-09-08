@@ -1,6 +1,6 @@
 ---
-description: "! (null-forgiving) operator - C# reference"
 title: "! (null-forgiving) operator - C# reference"
+description: "Learn about the C# null-forgiving, or null-suppression, operator that is used to declare that an expression of a reference type isn't null."
 ms.date: 11/13/2020
 f1_keywords: 
   - "nullForgiving_CSharpKeyword"
@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # ! (null-forgiving) operator (C# reference)
 
-Available in C# 8.0 and later, the unary postfix `!` operator is the null-forgiving, or null-suppression, operator. In an enabled [nullable annotation context](../../nullable-references.md#nullable-annotation-context), you use the null-forgiving operator to declare that expression `x` of a reference type isn't `null`: `x!`. The unary prefix `!` operator is the [logical negation operator](boolean-logical-operators.md#logical-negation-operator-).
+Available in C# 8.0 and later, the unary postfix `!` operator is the null-forgiving, or null-suppression, operator. In an enabled [nullable annotation context](../../nullable-references.md#nullable-contexts), you use the null-forgiving operator to declare that expression `x` of a reference type isn't `null`: `x!`. The unary prefix `!` operator is the [logical negation operator](boolean-logical-operators.md#logical-negation-operator-).
 
 The null-forgiving operator has no effect at run time. It only affects the compiler's static flow analysis by changing the null state of the expression. At run time, expression `x!` evaluates to the result of the underlying expression `x`.
 
@@ -48,4 +48,4 @@ For more information, see [The null-forgiving operator](~/_csharplang/proposals/
 
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
-- [Tutorial: Design with nullable reference types](../../tutorials/nullable-reference-types.md)
+- [Tutorial: Design with nullable reference types](../../whats-new/tutorials/nullable-reference-types.md)

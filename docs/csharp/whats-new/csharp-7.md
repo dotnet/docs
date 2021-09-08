@@ -49,7 +49,7 @@ Finally, the compiler has new options:
 
 The remainder of this article provides an overview of each feature. For each feature, you'll learn the reasoning behind it and the syntax. You can explore these features in your environment using the `dotnet try` global tool:
 
-1. Install the [dotnet-try](https://github.com/dotnet/try/blob/master/README.md#setup) global tool.
+1. Install the [dotnet-try](https://github.com/dotnet/try/blob/main/DotNetTryLocal.md) global tool.
 1. Clone the [dotnet/try-samples](https://github.com/dotnet/try-samples) repository.
 1. Set the current directory to the *csharp7* subdirectory for the *try-samples* repository.
 1. Run `dotnet try`.
@@ -100,14 +100,34 @@ Discards are supported in the following scenarios:
 
 - When deconstructing tuples or user-defined types.
 - When calling methods with [out](../language-reference/keywords/out-parameter-modifier.md) parameters.
-- In a pattern matching operation with the [is](../language-reference/keywords/is.md) and [switch](../language-reference/keywords/switch.md) statements.
+- In a pattern matching operation with the [`is` operator](../language-reference/operators/is.md) and [`switch` statement](../language-reference/statements/selection-statements.md#the-switch-statement).
 - As a standalone identifier when you want to explicitly identify the value of an assignment as a discard.
 
-The following example defines a `QueryCityDataForYears` method that returns a 6-tuple that contains data for a city for two different years. The method call in the example is concerned only with the two population values returned by the method and so treats the remaining values in the tuple as discards when it deconstructs the tuple.
+The following example defines a `QueryCityData` method that returns a 3-tuple that contains data for a city for two different years. The method call in the example is concerned only with the two population values returned by the method and so treats the remaining values in the tuple as discards when it deconstructs the tuple.
 
-[!code-csharp[Tuple-discard](~/samples/snippets/csharp/programming-guide/deconstructing-tuples/discard-tuple1.cs)]
+```csharp
+using System;
 
-For more information, see [Discards](../discards.md).
+public class Example
+{
+    public static void Main()
+    {
+        var (_, pop, _) = QueryCityData("New York City");
+
+         // Do something with the data.
+    }
+
+    private static (string name, int pop, double size) QueryCityData(string name)
+    {
+        if (name == "New York City")
+            return (name, 8175133, 468.48);
+
+        return ("", 0, 0);
+    }
+}
+```
+
+For more information, see [Discards](../fundamentals/functional/discards.md).
 
 ## Pattern matching
 
@@ -115,7 +135,7 @@ For more information, see [Discards](../discards.md).
 
 Pattern matching supports `is` expressions and `switch` expressions. Each enables inspecting an object and its properties to determine if that object satisfies the sought pattern. You use the `when` keyword to specify additional rules to the pattern.
 
-The `is` pattern expression extends the familiar [`is` operator](../language-reference/keywords/is.md#pattern-matching-with-is) to query an object about its type and assign the result in one instruction. The following code checks if a variable is an `int`, and if so, adds it to the current sum:
+The `is` pattern expression extends the familiar [`is` operator](../language-reference/operators/is.md) to query an object about its type and assign the result in one instruction. The following code checks if a variable is an `int`, and if so, adds it to the current sum:
 
 ```csharp
 if (input is int count)
@@ -162,15 +182,15 @@ public static int SumPositiveNumbers(IEnumerable<object> sequence)
 }
 ```
 
-- `case 0:` is the familiar constant pattern.
-- `case IEnumerable<int> childSequence:` is a type pattern.
-- `case int n when n > 0:` is a type pattern with an additional `when` condition.
-- `case null:` is the null pattern.
+- `case 0:` is a [constant pattern](../language-reference/operators/patterns.md#constant-pattern).
+- `case IEnumerable<int> childSequence:` is a [declaration pattern](../language-reference/operators/patterns.md#declaration-and-type-patterns).
+- `case int n when n > 0:` is a declaration pattern with an additional `when` condition.
+- `case null:` is the `null` constant pattern.
 - `default:` is the familiar default case.
 
 Beginning with C# 7.1, the pattern expression for `is` and the `switch` type pattern may have the type of a generic type parameter. This can be most useful when checking types that may be either `struct` or `class` types, and you want to avoid boxing.
 
-You can learn more about pattern matching in [Pattern Matching in C#](../pattern-matching.md).
+You can learn more about pattern matching in [Pattern Matching in C#](../fundamentals/functional/pattern-matching.md).
 
 ## Async main
 
@@ -204,7 +224,7 @@ static async Task Main()
 }
 ```
 
-You can read more about the details in the [async main](../programming-guide/main-and-command-args/index.md) article in the programming guide.
+You can read more about the details in the [async main](../fundamentals/program-structure/main-command-line.md) article in the programming guide.
 
 ## Local functions
 
@@ -392,7 +412,7 @@ ref VeryLargeStruct refLocal = ref veryLargeStruct; // initialization
 refLocal = ref anotherVeryLargeStruct; // reassigned, refLocal refers to different storage.
 ```
 
-For more information, see the article on [`ref` returns and `ref` locals](../programming-guide/classes-and-structs/ref-returns.md), and the article on [`foreach`](../language-reference/keywords/foreach-in.md).
+For more information, see the article on [`ref` returns and `ref` locals](../programming-guide/classes-and-structs/ref-returns.md), and the article on [`foreach`](../language-reference/statements/iteration-statements.md#the-foreach-statement).
 
 For more information, see the [ref keyword](../language-reference/keywords/ref.md) article.
 
@@ -523,18 +543,18 @@ New compiler options support new build and DevOps scenarios for C# programs.
 ### Reference assembly generation
 
 There are two new compiler options that generate *reference-only assemblies*:
-[-refout](../language-reference/compiler-options/refout-compiler-option.md)
-and [-refonly](../language-reference/compiler-options/refonly-compiler-option.md).
+[**ProduceReferenceAssembly**](../language-reference/compiler-options/output.md#producereferenceassembly)
+and [**ProduceOnlyReferenceAssembly**](../language-reference/compiler-options/code-generation.md#produceonlyreferenceassembly).
 The linked articles explain these options and reference assemblies in more detail.
 
 ### Public or Open Source signing
 
-The `-publicsign` compiler option instructs the compiler to sign the assembly using a public key. The assembly is marked as signed, but the signature is taken from the public key. This option enables you to build signed assemblies from open-source projects using a public key.
+The **PublicSign** compiler option instructs the compiler to sign the assembly using a public key. The assembly is marked as signed, but the signature is taken from the public key. This option enables you to build signed assemblies from open-source projects using a public key.
 
-For more information, see the [-publicsign compiler option](../language-reference/compiler-options/publicsign-compiler-option.md) article.
+For more information, see the [**PublicSign** compiler option](../language-reference/compiler-options/security.md#publicsign) article.
 
 ### pathmap
 
-The `-pathmap` compiler option instructs the compiler to replace source paths from the build environment with mapped source paths. The `-pathmap` option controls the source path written by the compiler to PDB files or for the <xref:System.Runtime.CompilerServices.CallerFilePathAttribute>.
+The **PathMap** compiler option instructs the compiler to replace source paths from the build environment with mapped source paths. The **PathMap** option controls the source path written by the compiler to PDB files or for the <xref:System.Runtime.CompilerServices.CallerFilePathAttribute>.
 
-For more information, see the [-pathmap compiler option](../language-reference/compiler-options/pathmap-compiler-option.md) article.
+For more information, see the [**PathMap** compiler option](../language-reference/compiler-options/advanced.md#pathmap) article.

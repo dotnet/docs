@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WCF, tools"
   - "Windows Communication Foundation, tools"
-ms.assetid: 399a47b4-bfea-434b-8e83-f76b5063d79d
+ms.topic: reference
 ---
 # Windows Communication Foundation Tools
 

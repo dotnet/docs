@@ -57,7 +57,7 @@ Azure Migrate gives you confidence that your workloads can migrate with minimal 
 
 Figure 2-2 shows you the built-in dependency mapping for all server and application connections performed by Azure Migrate.
 
-![Positioning Cloud Infrastructure-Ready applications](./media/image2-2.png)
+![Dependencies of server and application connections](./media/image2-2.png)
 
 **Figure 2-2.** Positioning Cloud Infrastructure-Ready applications
 
@@ -69,7 +69,7 @@ Site Recovery is also made specifically for hybrid environments that are partly 
 
 Figure 2-3 shows the execution of multiple VM migrations by using Azure Site Recovery.
 
-![Positioning Cloud Infrastructure-Ready applications](./media/image2-3.png)
+![VM migrations using Azure Site Recovery](./media/image2-3.png)
 
 **Figure 2-3.** Positioning Cloud Infrastructure-Ready applications
 
@@ -83,21 +83,21 @@ Figure 2-3 shows the execution of multiple VM migrations by using Azure Site Rec
 
     <https://aka.ms/azuremigrate>
 
-- **Azure migration center**
+- **Azure migration and modernization center**
 
     <https://azure.microsoft.com/migration/>
 
 - **Migrate to Azure with Site Recovery**
 
-    <https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-to-azure>
+    [https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-to-azure](/azure/site-recovery/site-recovery-migrate-to-azure)
 
 - **Azure Site Recovery service overview**
 
-    <https://docs.microsoft.com/azure/site-recovery/site-recovery-overview>
+    [https://docs.microsoft.com/azure/site-recovery/site-recovery-overview](/azure/site-recovery/site-recovery-overview)
 
 - **Migrating VMs in AWS to Azure VMs**
 
-    <https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-aws-to-azure>
+    [https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-aws-to-azure](/azure/site-recovery/site-recovery-migrate-aws-to-azure)
 
 >[!div class="step-by-step"]
 >[Previous](index.md)

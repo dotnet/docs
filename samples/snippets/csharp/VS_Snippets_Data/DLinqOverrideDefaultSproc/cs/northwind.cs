@@ -20,8 +20,8 @@ using System.Reflection;
 
 
 
-[System.Data.Linq.Mapping.DatabaseAttribute(Name="northwnd")]
-public partial class Northwnd : System.Data.Linq.DataContext
+[System.Data.Linq.Mapping.DatabaseAttribute(Name="northwind")]
+public partial class Northwind : System.Data.Linq.DataContext
 {
 	
 	private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
@@ -69,29 +69,29 @@ public partial class Northwnd : System.Data.Linq.DataContext
   partial void DeleteTerritory(Territory instance);
   #endregion
 	
-	static Northwnd()
+	static Northwind()
 	{
 	}
 	
-	public Northwnd(string connection) :
+	public Northwind(string connection) :
 			base(connection, mappingSource)
 	{
 		OnCreated();
 	}
 	
-	public Northwnd(System.Data.IDbConnection connection) :
+	public Northwind(System.Data.IDbConnection connection) :
 			base(connection, mappingSource)
 	{
 		OnCreated();
 	}
 	
-	public Northwnd(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) :
+	public Northwind(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) :
 			base(connection, mappingSource)
 	{
 		OnCreated();
 	}
 	
-	public Northwnd(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) :
+	public Northwind(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) :
 			base(connection, mappingSource)
 	{
 		OnCreated();
@@ -4328,7 +4328,7 @@ public partial class TenMostExpensiveProductsResult
 }
 
 // <Snippet2>
-public class NorthwindThroughSprocs : Northwnd
+public class NorthwindThroughSprocs : Northwind
 {
 
     public NorthwindThroughSprocs(string connection) :

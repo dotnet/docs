@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "CLR ETW levels"
   - "ETW, CLR keywords"
   - "ETW, CLR levels"
-ms.assetid: fdf5856d-516b-4042-849d-911c4518a6cb
+ms.topic: reference
 ---
 # CLR ETW Keywords and Levels
 

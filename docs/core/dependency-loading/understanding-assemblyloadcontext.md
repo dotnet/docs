@@ -3,7 +3,6 @@ title: Understanding AssemblyLoadContext - .NET Core
 description: Key concepts to understand the purpose and behavior of AssemblyLoadContext in .NET Core.
 ms.date: 08/09/2019
 author: sdmaclea
-ms.author: stmaclea
 ---
 # Understanding System.Runtime.Loader.AssemblyLoadContext
 
@@ -50,7 +49,7 @@ The articles
 This section covers the general principles for the relevant events and functions.
 
 - **Be repeatable**. A query for a specific dependency must always result in the same response. The same loaded dependency instance must be returned. This requirement is fundamental  for cache consistency. For managed assemblies in particular, we're creating an <xref:System.Reflection.Assembly> cache. The cache key is a simple assembly name, <xref:System.Reflection.AssemblyName.Name?displayProperty=nameWithType>.
-- **Typically don't throw**.  It's expected that these functions return `null` rather than throw when unable to find the requested dependency. Throwing will prematurely end the search and be propagate an exception to the caller. Throwing should be restricted to unexpected errors like a corrupted assembly or an out of memory condition.
+- **Typically don't throw**.  It's expected that these functions return `null` rather than throw when unable to find the requested dependency. Throwing will prematurely end the search and propagate an exception to the caller. Throwing should be restricted to unexpected errors like a corrupted assembly or an out of memory condition.
 - **Avoid recursion**. Be aware that these functions and handlers implement the loading rules for locating dependencies. Your implementation shouldn't call APIs that trigger recursion. Your code should typically call **AssemblyLoadContext** load functions that require a specific path or memory reference argument.
 - **Load into the correct AssemblyLoadContext**. The choice of where to load dependencies is application-specific.  The choice is implemented by these events and functions. When your code calls **AssemblyLoadContext** load-by-path functions call them on the instance where you want the code loaded. Sometime returning `null` and letting the <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> handle the load may be the simplest option.
 - **Be aware of thread races**. Loading can be triggered by multiple threads. The AssemblyLoadContext handles thread races by atomically adding assemblies to its cache. The race loser's instance is discarded. In your implementation logic, don't add extra logic that doesn't handle multiple threads properly.

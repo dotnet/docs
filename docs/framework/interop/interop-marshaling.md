@@ -63,7 +63,7 @@ The author of the component sets the thread affinity of a COM server. The follow
 
 When a managed client and unmanaged server are in the same apartment, the interop marshaling service handles all data marshaling. However, when client and server are initialized in different apartments, COM marshaling is also required. The following illustration shows the elements of a cross-apartment call:
 
-![COM marshaling](./media/interop-marshaling/single-process-across-multi-apartment.gif "Cross-apartment call between a .NET client and COM object")
+![Cross-apartment call between a .NET client and COM object](./media/interop-marshaling/single-process-across-multi-apartment.gif)
 
 For cross-apartment marshaling, you can do the following:
 
@@ -84,7 +84,7 @@ As with cross-apartment marshaling, COM marshaling is involved in each call betw
 
 The following illustration shows how interop marshaling and COM marshaling provide communications channels across process and host boundaries:
 
-![COM marshaling](./media/interop-marshaling/interop-and-com-marshaling.gif "Cross-process marshaling")
+![Cross-process marshaling](./media/interop-marshaling/interop-and-com-marshaling.gif)
 
 ### Preserving Identity
 

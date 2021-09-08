@@ -6,6 +6,7 @@ ms.topic: conceptual
 ms.custom: devx-track-dotnet
 ms.author: daberry
 author: daberry
+recommendations: false
 ---
 
 # Create an Azure account

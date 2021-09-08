@@ -18,17 +18,30 @@ The Assembly Binding Log Viewer displays details for assembly binds. This inform
 > [!IMPORTANT]
 > You must run fuslogvw.exe with administrator privileges.
 
-This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7) with administrator credentials. For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell) with administrator credentials.
 
-At the command prompt, type the following:
+At the command prompt, enter the following command:
 
 ```console
 fuslogvw
 ```
 
-The viewer displays an entry for each failed assembly bind. For each failure, the viewer describes the application that initiated the bind; the assembly the bind is for, including name, version, culture and public key; and the date and time of the failure.
+The viewer displays an entry for each failed assembly bind. For each failure, the viewer describes:
 
-### To change the log location view
+- the application that initiated the bind
+- the assembly the bind is for, including name, version, culture and public key
+- the date and time of the failure
+
+## How to...
+
+- [Change the log location view](#change-the-log-location-view)
+- [View details about a specific failure](#view-details-about-a-specific-failure)
+- [Delete entries](#delete-entries)
+- [Refresh the user interface](#refresh-the-user-interface)
+- [Change the log settings](#change-the-log-settings)
+- [View the About dialog](#view-the-about-dialog)
+
+### Change the log location view
 
 1. Select the **Default** option button to view bind failures for all application types. By default, log entries are stored in per-user directories on disk in the wininet cache.
 
@@ -37,7 +50,7 @@ The viewer displays an entry for each failed assembly bind. For each failure, th
     > [!NOTE]
     > The default bind location is preferable to the custom bind location. The runtime stores the default bind location in the wininet cache, and therefore automatically cleans it out. If you specify a custom bind location, you are responsible for cleaning it out.
 
-### To view details about a specific failure
+### View details about a specific failure
 
 1. Select the application name of the desired entry in the viewer.
 
@@ -91,33 +104,35 @@ LOG: Attempting download of new URL file:///C:/Program Files/Microsoft.NET/Frame
 LOG: All probing URLs attempted and failed.
 ```
 
-### To delete a single entry from the log
+### Delete entries
+
+To delete a single entry from the log:
 
 1. Select an entry in the viewer.
 
 2. Click the **Delete Entry** button.
 
-### To delete all entries from the log
+To delete all entries from the log:
 
 - Click the **Delete All** button.
 
-### To refresh the user interface
+### Refresh the user interface
 
 - Click the **Refresh** button. The viewer does not automatically detect new log entries while it is running. You must use the **Refresh** button to display them.
 
-### To change the log settings
+### Change the log settings
 
-- Click the **Settings** button to open the **Log Settings** dialog.
+Click the **Settings** button to open the **Log Settings** dialog.
 
-### To view the About dialog
+### View the About dialog
 
-- Click the **About** button.
+Click the **About** button.
 
-## Binding Logs for Native Images
+## Binding logs for native images
 
 By default, Fuslogvw.exe logs normal assembly bind requests. Alternatively, you can log assembly binds for native images that were created using the [Ngen.exe (Native Image Generator)](ngen-exe-native-image-generator.md).
 
-#### To log assembly binds for native images
+### Log assembly binds for native images
 
 - In the **Log Categories** group, select the **Native Images** option button.
 
@@ -175,27 +190,27 @@ Rejecting native image because it failed the security check. The assembly's perm
 Discarding native image.
 ```
 
-## The Log Settings Dialog
+## The Log Settings dialog
 
 You can use the **Log Settings** dialog to perform the following actions.
 
-#### To disable logging
+### To disable logging
 
 - Select the **Log disabled** option button.  Note that this option is selected by default.
 
-#### To log assembly binds in exceptions
+### To log assembly binds in exceptions
 
 - Select the **Log in exception text** option button. Only the least detailed fusion log information is logged in exception text. To view full information, use one of the other settings.
 
   See the Important note regarding assemblies that are loaded as domain neutral.
 
-#### To log assembly bind failures
+### To log assembly bind failures
 
 - Select the **Log bind failures to disk** option button.
 
   See the Important note regarding assemblies that are loaded as domain neutral.
 
-#### To log all assembly binds
+### To log all assembly binds
 
 - Select the **Log all binds to disk** option button.
 
@@ -204,7 +219,7 @@ You can use the **Log Settings** dialog to perform the following actions.
 > [!IMPORTANT]
 > When an assembly is loaded as domain neutral, for example by setting the <xref:System.AppDomainSetup.LoaderOptimization%2A> property to <xref:System.LoaderOptimization.MultiDomain?displayProperty=nameWithType> or <xref:System.LoaderOptimization.MultiDomainHost?displayProperty=nameWithType>, turning on logging might leak memory in some cases. This can happen if a log entry is made when a domain-neutral module is loaded into an application domain, and later the application domain is unloaded. The log entry might not be released until the process ends. Some debuggers automatically turn on logging.
 
-#### To enable a custom log path
+### To enable a custom log path
 
 1. Select the **Enable custom log path** option button.
 
@@ -213,9 +228,9 @@ You can use the **Log Settings** dialog to perform the following actions.
 > [!NOTE]
 > The [Assembly Binding Log Viewer (Fuslogvw.exe)](fuslogvw-exe-assembly-binding-log-viewer.md) uses the Internet Explorer (IE) cache to store its binding log. Due to occasional corruption in the IE cache, the [Assembly Binding Log Viewer (Fuslogvw.exe)](fuslogvw-exe-assembly-binding-log-viewer.md) can sometimes stop showing new binding logs in the viewing window. As a result of this corruption, the .NET binding infrastructure (fusion) cannot write to or read from the binding log. (This issue is not encountered if you use a custom log path.)  To fix the corruption and allow fusion to show binding logs again, clear the IE cache by deleting temporary internet files from within the IE Internet Options dialog.
 >
-> If your unmanaged application hosts the common language runtime by implementing the `IHostAssemblyManager` and `IHostAssemblyStore` interfaces, log entries can't be stored in the wininet cache.  To view log entries for custom hosts that implement these interfaces, you must specify an alternate log path.
+> If your unmanaged application hosts the common language runtime by implementing the `IHostAssemblyManager` and `IHostAssemblyStore` interfaces, log entries can't be stored in the wininet cache. To view log entries for custom hosts that implement these interfaces, you must specify an alternate log path.
 
-#### To enable logging for apps running in the Windows app container
+### To enable logging for apps running in the Windows app container
 
 1. Enable a custom log path, as described in the previous procedure. By default, apps that are running in the Windows app container have limited access to the hard disk. The directory you specify will have read/write access for all apps in the app container.
 
@@ -230,4 +245,4 @@ You can use the **Log Settings** dialog to perform the following actions.
 - [Tools](index.md)
 - [Global Assembly Cache](../app-domains/gac.md)
 - [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md)
-- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

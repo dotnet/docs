@@ -6,10 +6,10 @@ ms.assetid: 093aeefe-1609-4409-b6d2-00f71772bcf7
 ---
 # 3354 - ServiceSecurityNegotiationCompleted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3354|  
 |Keywords|Security|  
 |Level|Verbose|  

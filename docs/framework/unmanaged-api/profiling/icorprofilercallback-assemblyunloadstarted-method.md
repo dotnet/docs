@@ -30,9 +30,8 @@ HRESULT AssemblyUnloadStarted(
   
 ## Parameters
 
-- `assemblyId`
-
-  \[in] Identifies the assembly that is being unloaded.
+`assemblyId`
+[in] Identifies the assembly that is being unloaded.
 
 ## Remarks  
 

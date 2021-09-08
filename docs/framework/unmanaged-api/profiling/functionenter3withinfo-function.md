@@ -30,13 +30,11 @@ void __stdcall FunctionEnter3WithInfo(
   
 ## Parameters
 
-- `functionIDOrClientID`
+`functionIDOrClientID`
+[in] The identifier of the function to which control is passed.
 
-  \[in] The identifier of the function to which control is passed.
-
-- `eltInfo`
-
-  \[in] An opaque handle that represents information about a given stack frame. This handle is valid only during the callback to which it is passed.
+`eltInfo`
+[in] An opaque handle that represents information about a given stack frame. This handle is valid only during the callback to which it is passed.
 
 ## Remarks  
 

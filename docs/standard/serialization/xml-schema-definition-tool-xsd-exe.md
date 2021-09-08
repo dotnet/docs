@@ -77,7 +77,7 @@ xsd {file.dll | file.exe} [-outputdir:directory] [/type:typename [...]][/paramet
 
 The following table shows the operations that Xsd.exe performs.
 
-| | |
+| Operation | Description |
 |------------|-----------------|
 |XDR to XSD|Generates an XML schema from an XML-Data-Reduced schema file. XDR is an early XML-based schema format.|
 |XML to XSD|Generates an XML schema from an XML file.|
@@ -230,7 +230,7 @@ xsd myAssembly.dll
 - <xref:System.Data.DataSet>
 - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
 - [Tools](../../framework/tools/index.md)
-- [Command Prompts](../../framework/tools/developer-command-prompt-for-vs.md)
+- [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)
 - [LINQ to DataSet Overview](../../framework/data/adonet/linq-to-dataset-overview.md)
 - [Querying Typed DataSets](../../framework/data/adonet/querying-typed-datasets.md)
 - [LINQ (Language-Integrated Query) (C#)](../../csharp/programming-guide/concepts/linq/index.md)

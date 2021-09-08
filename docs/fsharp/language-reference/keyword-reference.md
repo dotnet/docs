@@ -91,7 +91,7 @@ The following table shows all F# keywords in alphabetical order, together with b
 |-------|----|-----------|
 |`abstract`|[Members](./members/index.md)<br /><br />[Abstract Classes](abstract-classes.md)|Indicates a method that either has no implementation in the type in which it is declared or that is virtual and has a default implementation.|
 |`and`|[`let` Bindings](./functions/let-bindings.md)<br /><br />[Records](records.md)<br /><br />[Members](./members/index.md)<br /><br />[Constraints](./generics/constraints.md)|Used in mutually recursive bindings and records, in property declarations, and with multiple constraints on generic parameters.|
-|`as`|[Classes](classes.md)<br /><br />[Pattern Matching](Pattern-Matching.md)|Used to give the current class object an object name. Also used to give a name to a whole pattern within a pattern match.|
+|`as`|[Classes](classes.md)<br /><br />[Pattern Matching](pattern-matching.md)|Used to give the current class object an object name. Also used to give a name to a whole pattern within a pattern match.|
 |`assert`|[Assertions](assertions.md)|Used to verify code during debugging.|
 |`base`|[Classes](classes.md)<br /><br />[Inheritance](inheritance.md)|Used as the name of the base class object.|
 |`begin`|[Verbose Syntax](verbose-syntax.md)|In verbose syntax, indicates the start of a code block.|
@@ -139,7 +139,7 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`private`|[Access Control](access-control.md)|Restricts access to a member to code in the same type or module.|
 |`public`|[Access Control](access-control.md)|Allows access to a member from outside the type.|
 |`rec`|[Functions](./functions/index.md)|Used to indicate that a function is recursive.|
-|`return`|[Asynchronous Workflows](Asynchronous-Workflows.md)<br /><br />[Computation Expressions](computation-expressions.md)|Used to indicate a value to provide as the result of a computation expression.|
+|`return`|[Asynchronous Workflows](asynchronous-workflows.md)<br /><br />[Computation Expressions](computation-expressions.md)|Used to indicate a value to provide as the result of a computation expression.|
 |`return!`|[Computation Expressions](computation-expressions.md)<br /><br />[Asynchronous Workflows](asynchronous-workflows.md)|Used to indicate a computation expression that, when evaluated, provides the result of the containing computation expression.|
 |`select`|[Query Expressions](query-expressions.md)|Used in query expressions to specify what fields or columns to extract. Note that this is a contextual keyword, which means that it is not actually a reserved word and it only acts like a keyword in appropriate context.|
 |`static`|[Members](./members/index.md)|Used to indicate a method or property that can be called without an instance of a type, or a value member that is shared among all instances of a type.|
@@ -176,22 +176,16 @@ If you use the `--mlcompatibility` compiler option, the above keywords are avail
 
 The following tokens are reserved as keywords for future expansion of the F# language:
 
-- `atomic`
 - `break`
 - `checked`
 - `component`
 - `const`
 - `constraint`
-- `constructor`
 - `continue`
-- `eager`
 - `event`
 - `external`
-- `functor`
 - `include`
-- `method`
 - `mixin`
-- `object`
 - `parallel`
 - `process`
 - `protected`
@@ -200,7 +194,20 @@ The following tokens are reserved as keywords for future expansion of the F# lan
 - `tailcall`
 - `trait`
 - `virtual`
-- `volatile`
+
+The following tokens were once reserved as keywords but were [released](https://github.com/fsharp/fslang-design/blob/main/FSharp-4.1/FS-1016-unreserve-keywords.md) in F# 4.1, so now you can use them as identifiers:
+
+Keyword | Reason
+-|-
+`method` | the F# commmunity are happy with `member` to introduce methods
+`constructor` | the F# commmunity are happy with `new` to introduce constructors
+`atomic` | this was related to the fad for transactional memory circa 2006. In F# this would now be a library-defined computation expression
+`eager` | this is no longer needed, it was initially designed to be `let eager` to match a potential `let lazy`
+`object` | there is no need to reserve this
+`recursive` | F# is happy using `rec`
+`functor` | If F# added parametereized modules, we would use `module M(args) = ...`
+`measure` | There is no specific reason to reserve this these days, the `[<Measure>]` attribute suffices
+`volatile` | There is no specific reason to reserve this these days, the `[<Volatile>]` attribute suffices
 
 ## See also
 

@@ -18,7 +18,7 @@ Visual Studio for Mac also supports and includes .NET Core 3.1 in Visual Studio 
 
 For more information about the release, see the [.NET Core 3.1 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-1/).
 
-- [Download and get started with .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1) on Windows, macOS, or Linux.
+- [Download and get started with .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1) on Windows, macOS, or Linux.
 
 ## Long-term support
 
@@ -87,7 +87,7 @@ We recommend you update your applications to .NET Core 3.1 and move to the repla
 
 Support has been added for creating C++/CLI (also known as "managed C++") projects. Binaries produced from these projects are compatible with .NET Core 3.0 and later versions.
 
-To add support for C++/CLI in Visual Studio 2019 version 16.4, install the [Desktop development with C++ workload](/cpp/build/vscpp-step-0-installation?view=vs-2019#step-4---choose-workloads). This workload adds two templates to Visual Studio:
+To add support for C++/CLI in Visual Studio 2019 version 16.4, install the [Desktop development with C++ workload](/cpp/build/vscpp-step-0-installation#step-4---choose-workloads). This workload adds two templates to Visual Studio:
 
 - CLR Class Library (.NET Core)
 - CLR Empty Project (.NET Core)

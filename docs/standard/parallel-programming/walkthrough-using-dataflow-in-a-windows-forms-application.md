@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "TPL dataflow library, in Windows Forms"
   - "Task Parallel Library, dataflows"
   - "Windows Forms, and TPL"
-ms.assetid: 9c65cdf7-660c-409f-89ea-59d7ec8e127c
+ms.topic: tutorial
 ---
 # Walkthrough: Using Dataflow in a Windows Forms Application
 

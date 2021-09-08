@@ -82,7 +82,7 @@ AreaRegistration.RegisterAllAreas();
 
 ### Attribute routing in ASP.NET Web API 2
 
-[Attribute routing in ASP.NET Web API 2](https://docs.microsoft.com/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2) is similar to routing in ASP.NET MVC 5, with minor differences. Configuring Web API 2 is typically done in its own class, which is called during app startup. Attribute routing configuration is handled in this class:
+[Attribute routing in ASP.NET Web API 2](/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2) is similar to routing in ASP.NET MVC 5, with minor differences. Configuring Web API 2 is typically done in its own class, which is called during app startup. Attribute routing configuration is handled in this class:
 
 ```csharp
 public static class WebApiConfig
@@ -104,14 +104,14 @@ public static class WebApiConfig
 
 As shown in the preceding code, attribute routing may be combined with convention-based routing in Web API apps.
 
-In addition to attribute routing, [ASP.NET Web API chooses which action to call](https://docs.microsoft.com/aspnet/web-api/overview/web-api-routing-and-actions/routing-and-action-selection) based on the HTTP method (for example, GET or POST), the `{action}` placeholder in a route (if any), and parameters of the action. In many cases, the name of the action will help determine whether it's matched, since prefixing the action name with "Get" or "Post" is used to match the appropriate HTTP method to it. Alternatively, actions can be decorated with an appropriate HTTP method attribute, like `[HttpGet]`, allowing the use of action names that aren't prefixed with an HTTP method.
+In addition to attribute routing, [ASP.NET Web API chooses which action to call](/aspnet/web-api/overview/web-api-routing-and-actions/routing-and-action-selection) based on the HTTP method (for example, GET or POST), the `{action}` placeholder in a route (if any), and parameters of the action. In many cases, the name of the action will help determine whether it's matched, since prefixing the action name with "Get" or "Post" is used to match the appropriate HTTP method to it. Alternatively, actions can be decorated with an appropriate HTTP method attribute, like `[HttpGet]`, allowing the use of action names that aren't prefixed with an HTTP method.
 
 ```csharp
 public class ProductsController : ApiController
 {
     // matched by name and (lack of) parameters
     public IEnumerable<Product> GetAll() { }
-    
+
     // matched by GET and string parameter
     [HttpGet]
     public IEnumerable<Product> FindProductsByName(string name) { }
@@ -174,13 +174,13 @@ Using this attribute, classes inheriting from this type would route URLs to acti
 
 ## References
 
-- [ASP.NET MVC Routing Overview](https://docs.microsoft.com/aspnet/mvc/overview/older-versions-1/controllers-and-routing/asp-net-mvc-routing-overview-cs)
+- [ASP.NET MVC Routing Overview](/aspnet/mvc/overview/older-versions-1/controllers-and-routing/asp-net-mvc-routing-overview-cs)
 - [Attribute Routing in ASP.NET MVC 5](https://devblogs.microsoft.com/aspnet/attribute-routing-in-asp-net-mvc-5/)
-- [Attribute routing in ASP.NET Web API 2](https://docs.microsoft.com/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2)
-- [Routing and Action Selection in ASP.NET Web API](https://docs.microsoft.com/aspnet/web-api/overview/web-api-routing-and-actions/routing-and-action-selection)
-- [Routing in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/routing)
-- [Routing to controller actions in ASP.NET Core MVC](https://docs.microsoft.com/aspnet/core/mvc/controllers/routing)
+- [Attribute routing in ASP.NET Web API 2](/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2)
+- [Routing and Action Selection in ASP.NET Web API](/aspnet/web-api/overview/web-api-routing-and-actions/routing-and-action-selection)
+- [Routing in ASP.NET Core](/aspnet/core/fundamentals/routing)
+- [Routing to controller actions in ASP.NET Core MVC](/aspnet/core/mvc/controllers/routing)
 
 >[!div class="step-by-step"]
 >[Previous](configuration-differences.md)
->[Next](comparing-razor-pages-aspnet-mvc.md)
+>[Next](logging-differences.md)

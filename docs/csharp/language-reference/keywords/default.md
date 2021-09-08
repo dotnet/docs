@@ -1,7 +1,7 @@
 ---
-description: "default - C# Reference"
-title: "default - C# Reference"
-ms.date: 08/04/2017
+description: "default - C# reference"
+title: "default - C# reference"
+ms.date: 04/28/2021
 f1_keywords: 
   - "default"
 helpviewer_keywords: 
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14c48aaa-7d35-4058-a1a4-f53353050579
 ---
 
-# default (C# Reference)
+# default (C# reference)
 
-The `default` keyword can be used in two ways:
+You can use the `default` keyword in the following contexts:
 
-- To specify the default label in the [`switch` statement](switch.md).
+- To specify the default case in the [`switch` statement](../statements/selection-statements.md#the-switch-statement).
 - As the [default operator or literal](../operators/default.md) to produce the default value of a type.
+- As the [`default` type constraint](where-generic-type-constraint.md) on a generic method override or explicit interface implementation.
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Keywords](index.md)
+- [C# reference](../index.md)
+- [C# keywords](index.md)

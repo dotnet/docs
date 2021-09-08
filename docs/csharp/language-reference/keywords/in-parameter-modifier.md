@@ -9,7 +9,7 @@ helpviewer_keywords:
 
 # in parameter modifier (C# Reference)
 
-The `in` keyword causes arguments to be passed by reference. It makes the formal parameter an alias for the argument, which must be a variable. In other words, any operation on the parameter is made on the argument. It is like the [ref](ref.md) or [out](out-parameter-modifier.md) keywords, except that `in` arguments cannot be modified by the called method. Whereas `ref` arguments may be modified, `out` arguments must be modified by the called method, and those modifications are observable in the calling context.
+The `in` keyword causes arguments to be passed by reference but ensures the argument is not modified. It makes the formal parameter an alias for the argument, which must be a variable. In other words, any operation on the parameter is made on the argument. It is like the [ref](ref.md) or [out](out-parameter-modifier.md) keywords, except that `in` arguments cannot be modified by the called method. Whereas `ref` arguments may be modified, `out` arguments must be modified by the called method, and those modifications are observable in the calling context.
 
 [!code-csharp-interactive[cs-in-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/InParameterModifier.cs#1)]  
 
@@ -22,7 +22,7 @@ Variables passed as `in` arguments must be initialized before being passed in a 
 
 The `in` parameter modifier is available in C# 7.2 and later. Previous versions generate compiler error `CS8107` ("Feature 'readonly references' is not available in C# 7.0. Please use language version 7.2 or greater.") To configure the compiler language version, see [Select the C# language version](../configure-language-version.md).
 
-The `in`, `ref`, and `out` keywords are not considered part of the method signature for the purpose of overload resolution. Therefore, methods cannot be overloaded if the only difference is that one method takes a `ref` or `in` argument and the other takes an `out` argument. The following code, for example, will not compile:  
+Although `in`, `out,` and `ref` parameter modifiers are considered part of a signature, members declared in a single type cannot differ in signature solely by `in`, `ref` and `out`. Therefore, methods cannot be overloaded if the only difference is that one method takes a `ref` or `in` argument and the other takes an `out` argument. The following code, for example, will not compile:  
   
 ```csharp
 class CS0663_Example
@@ -115,14 +115,8 @@ You can't use the `in`, `ref`, and `out` keywords for the following kinds of met
 - The first argument of an extension method cannot have the `in` modifier unless that argument is a struct.
 - The first argument of an extension method where that argument is a generic type (even when that type is constrained to be a struct.)
 
+You can learn more about the `in` modifier, how it differs from `ref` and `out` in the article on [Write safe efficient code](../../write-safe-efficient-code.md).
+
 ## C# Language Specification  
 
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
-  
-## See also
-
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Keywords](index.md)
-- [Method Parameters](method-parameters.md)
-- [Write safe efficient code](../../write-safe-efficient-code.md)

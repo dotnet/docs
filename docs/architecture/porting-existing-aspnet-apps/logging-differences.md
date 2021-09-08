@@ -15,7 +15,7 @@ There's no built-in logging solution in ASP.NET MVC and Web API apps. Instead, m
 
 ## ASP.NET Core logging
 
-In ASP.NET Core, [logging is a built-in feature](https://docs.microsoft.com/aspnet/core/fundamentals/logging/) that can be configured and extended when the app starts up. Third-party loggers, including those mentioned above, can be integrated with ASP.NET Core to enhance its functionality.
+In ASP.NET Core, [logging is a built-in feature](/aspnet/core/fundamentals/logging/) that can be configured and extended when the app starts up. Third-party loggers, including those mentioned above, can be integrated with ASP.NET Core to enhance its functionality.
 
 ASP.NET Core logging uses categories and levels to control what is logged and how. Classes typically use instances of the `ILogger<T>` interface, with the class's type used as the generic `T` type. In this scenario, the class's fully qualified name is used as the category. Loggers can also be created with a custom category using an `ILoggerFactory`. Log levels range from the most detailed, `Trace`, to the most important, `Critical`. Using configuration, apps can specify what minimum level of logging should be included on a per-category (with wildcards) basis.
 
@@ -32,7 +32,7 @@ A typical logging configuration could log `Information` and above information by
 }
 ```
 
-Support for logging in ASP.NET Core is extensive and flexible. For more detailed information, [refer to the docs](https://docs.microsoft.com/aspnet/core/fundamentals/logging/).
+Support for logging in ASP.NET Core is extensive and flexible. For more detailed information, [refer to the docs](/aspnet/core/fundamentals/logging/).
 
 ## Migrate logging
 
@@ -46,9 +46,9 @@ You can reference the `Microsoft.Extensions.Logging` package from .NET Framework
 
 ## References
 
-- [Logging in .NET Core and ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/logging/)
+- [Logging in .NET Core and ASP.NET Core](/aspnet/core/fundamentals/logging/)
 - [Microsoft.Extensions.Logging NuGet Package](https://www.nuget.org/packages/microsoft.extensions.logging/)
 
 >[!div class="step-by-step"]
->[Previous](middleware-modules-handlers.md)
->[Next](routing-differences.md)
+>[Previous](routing-differences.md)
+>[Next](comparing-razor-pages-aspnet-mvc.md)

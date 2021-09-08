@@ -7,7 +7,7 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo9 Interface
 
-A subclass of [ICorProfilerInfo8](icorprofilerinfo8-interface.md) that provides methods to query information about functions with multiple native code versions.  
+A subclass of [ICorProfilerInfo8](icorprofilerinfo8-interface.md) that provides methods to query information about functions with multiple native code versions.
 
 ## Methods  
 
@@ -21,7 +21,7 @@ A subclass of [ICorProfilerInfo8](icorprofilerinfo8-interface.md) that provides 
 
 **Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).  
 **Header:** CorProf.idl, CorProf.h  
-**.NET Versions:** [!INCLUDE[net_core](../../../../includes/net-core-22-md.md)]  
+**.NET Versions:** [!INCLUDE[net_core](../../../../includes/net-core-21-md.md)]  
 
 ## See also
 

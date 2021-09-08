@@ -20,7 +20,7 @@ Repackage any zip archive that exhibits these problems.
 
 #### Category
 
-CoreFx
+Core .NET libraries
 
 #### Affected APIs
 

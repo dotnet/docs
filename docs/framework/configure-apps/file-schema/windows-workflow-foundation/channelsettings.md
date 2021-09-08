@@ -2,7 +2,6 @@
 description: "Learn more about: <channelSettings>"
 title: "<channelSettings>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: 94a4457f-f43f-458d-a47e-2d11103ee75e
 ---
 # \<channelSettings>

@@ -149,7 +149,7 @@ The .NET Framework provides the following options for distributing applications:
 
 To determine where to deploy your application's assemblies so they can be found by the runtime, see [How the Runtime Locates Assemblies](how-the-runtime-locates-assemblies.md).
 
-Security considerations can also affect how you deploy your application. Security permissions are granted to managed code according to where the code is located. Deploying an application or component to a location where it receives little trust, such as the Internet, limits what the application or component can do. For more information about deployment and security considerations, see [Code Access Security Basics](../misc/code-access-security-basics.md).
+Security considerations can also affect how you deploy your application. Security permissions are granted to managed code according to where the code is located. Deploying an application or component to a location where it receives little trust, such as the Internet, limits what the application or component can do. For more information about deployment and security considerations, see [Code Access Security Basics](/previous-versions/dotnet/framework/code-access-security/code-access-security-basics).
 
 ## Related Topics
 
@@ -162,7 +162,7 @@ Security considerations can also affect how you deploy your application. Securit
 |[Deployment Guide for Developers](deployment-guide-for-developers.md)|Explains how developers can install .NET Framework on their users' computers with their applications.|
 |[Deploying Applications, Services, and Components](/visualstudio/deployment/deploying-applications-services-and-components)|Discusses deployment options in Visual Studio, including instructions for publishing an application using the ClickOnce and Windows Installer technologies.|
 |[Publishing ClickOnce Applications](/visualstudio/deployment/publishing-clickonce-applications)|Describes how to package a Windows Forms application and deploy it with ClickOnce to client computers on a network.|
-|[Packaging and Deploying Resources](../resources/packaging-and-deploying-resources-in-desktop-apps.md)|Describes the hub and spoke model that the .NET Framework uses to package and deploy resources; covers resource naming conventions, fallback process, and packaging alternatives.|
+|[Package and Deploy resources](../../core/extensions/package-and-deploy-resources.md)|Describes the hub and spoke model that the .NET Framework uses to package and deploy resources; covers resource naming conventions, fallback process, and packaging alternatives.|
 |[Deploying an Interop Application](../interop/deploying-an-interop-application.md)|Explains how to ship and install interop applications, which typically include a .NET Framework client assembly, one or more interop assemblies representing distinct COM type libraries, and one or more registered COM components.|
 |[How to: Get Progress from the .NET Framework 4.5 Installer](how-to-get-progress-from-the-dotnet-installer.md)|Describes how to silently launch and track the .NET Framework setup process while showing your own view of the setup progress.|
 

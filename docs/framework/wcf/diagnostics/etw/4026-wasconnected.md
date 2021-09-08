@@ -6,10 +6,10 @@ ms.assetid: e0ba2cbf-28cf-4b8b-b40b-bfdb8a77afa0
 ---
 # 4026 - WasConnected
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4026|  
 |Keywords|ActivationServices|  
 |Level|Verbose|  

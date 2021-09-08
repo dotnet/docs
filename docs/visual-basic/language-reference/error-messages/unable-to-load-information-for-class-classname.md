@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: BC30712: Unable to load information for class '<classname>"
+description: "Learn more about: BC30712: Unable to load information for class '<classname>'"
 title: "Unable to load information for class '<classname>'"
 ms.date: 07/20/2015
 f1_keywords:

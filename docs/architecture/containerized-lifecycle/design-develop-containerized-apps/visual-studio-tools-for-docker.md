@@ -40,7 +40,7 @@ When you add or enable Docker support, Visual Studio adds a _Dockerfile_ file to
 
 When you want to compose a multi-container solution, add container orchestration support to your projects. This lets you run and debug a group of containers (a whole solution) at the same time if they're defined in the same _docker-compose.yml_ file.
 
-To add container orchestration support, right-click on the solution or project node in **Solution Explorer**, and choose **Add > Container Orchestration Support**. Then choose **Kubernetes/Helm** or **Docker Compose** to manage the containers.
+To add container orchestration support, right-click on the project node in **Solution Explorer**, and choose **Add > Container Orchestration Support**. Then choose **Kubernetes/Helm** or **Docker Compose** to manage the containers.
 
 After you add container orchestration support to your project, you see a Dockerfile added to the project and a **docker-compose** folder added to the solution in **Solution Explorer**, as shown in Figure 4-33:
 
@@ -79,9 +79,10 @@ The following table might help you decide how to set these options.
 > [!TIP]
 > For further details on the services implementation and use of Visual Studio Tools for Docker, read the following articles:
 >
-> Debug apps in a local Docker container: <https://docs.microsoft.com/visualstudio/containers/edit-and-refresh>
+> Use the Containers tool window to view container details such as the filesystem, logs, environment, ports, and more: [https://docs.microsoft.com/visualstudio/containers/view-and-diagnose-containers](/visualstudio/containers/view-and-diagnose-containers)
+> Debug apps in a local Docker container: [https://docs.microsoft.com/visualstudio/containers/edit-and-refresh](/visualstudio/containers/edit-and-refresh)
 >
-> Deploy an ASP.NET container to a container registry using Visual Studio: <https://docs.microsoft.com/visualstudio/containers/hosting-web-apps-in-docker>
+> Deploy an ASP.NET container to a container registry using Visual Studio: [https://docs.microsoft.com/visualstudio/containers/hosting-web-apps-in-docker](/visualstudio/containers/hosting-web-apps-in-docker)
 
 > [!div class="step-by-step"]
 > [Previous](docker-apps-inner-loop-workflow.md)

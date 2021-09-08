@@ -4,6 +4,7 @@ description: Learn about .NET for Apache Spark, a free, open-source, and cross-p
 author: mamccrea
 ms.topic: overview
 ms.date: 10/09/2020
+recommendations: false
 ---
 
 # What is .NET for Apache Spark?
@@ -36,11 +37,11 @@ You can learn about interop support for Spark language extensions from [the prop
 
 When compared against Python and Scala using the [TPC-H benchmark](http://www.tpc.org/tpch/), .NET for Apache Spark performs well in most cases and is 2x faster than Python when user-defined function performance is critical. There is an ongoing effort to improve and benchmark performance.
 
-To do your own benchmarking, see the benchmarks available on the [.NET for Apache Spark GitHub](https://github.com/dotnet/spark/tree/master/benchmark).
+To do your own benchmarking, see the benchmarks available on the [.NET for Apache Spark GitHub](https://github.com/dotnet/spark/tree/main/benchmark).
 
 ## .NET for Apache Spark roadmap
 
-Learn about short term and long term plans from the official [.NET for Apache Spark roadmap](https://github.com/dotnet/spark/blob/master/ROADMAP.md).
+Learn about short term and long term plans from the official [.NET for Apache Spark roadmap](https://github.com/dotnet/spark/blob/main/ROADMAP.md).
 
 ## .NET Foundation
 

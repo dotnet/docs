@@ -14,7 +14,7 @@ Source Link is a technology that enables source code debugging of .NET assemblie
 
 ## Using Source Link
 
-Instructions for using Source Link can be found on the [dotnet/sourcelink](https://github.com/dotnet/sourcelink/blob/master/README.md) GitHub repository.
+Instructions for using Source Link can be found on the [dotnet/sourcelink](https://github.com/dotnet/sourcelink/blob/main/README.md) GitHub repository.
 
 You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer) to confirm that the Source Link metadata has been successfully embedded in the package. Check the `Repository` metadata is present with a commit identifier and that .pdb files are located with each target's .dll.
 

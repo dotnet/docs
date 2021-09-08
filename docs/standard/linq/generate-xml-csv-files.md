@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 57b9ccde-f983-4a21-ae61-70ecede30307
+ms.topic: how-to
 ---
 
 # How to generate XML from CSV files (LINQ to XML)

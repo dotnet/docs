@@ -112,7 +112,7 @@ The following provides a brief overview of the different sections of the batch f
 1. Open a Developer Command Prompt for Visual Studio window with administrator privileges and run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    > The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.
+    > The Setup.bat batch file is designed to be run from a Visual Studio Command Prompt. The PATH environment variable set within the Visual Studio Command Prompt points to the directory that contains executables required by the Setup.bat script.
 
 2. Launch Service.exe from \service\bin.
 
@@ -161,7 +161,7 @@ The following provides a brief overview of the different sections of the batch f
 
         Steps c, d, and e are not necessary if the certificate is issued by a Trusted Issuer.
 
-    6. Modify the client’s App.config file as follows:
+    6. Modify the client's App.config file as follows:
 
         ```xml
         <client>

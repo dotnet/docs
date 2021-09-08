@@ -2,7 +2,7 @@
 description: "Learn more about: Renaming a WCF Service"
 title: "Renaming a WCF Service"
 ms.date: "03/30/2017"
-ms.assetid: 14235a65-b1c5-409d-b6cc-a979acd54bbd
+ms.topic: how-to
 ---
 # Renaming a WCF Service
 

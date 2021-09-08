@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "JIT tracing events [.NET Framework]"
   - "ETW, JIT tracing events (CLR)"
-ms.assetid: 926adde2-c123-452e-bf4f-4b977bf06ffb
+ms.topic: reference
 ---
 # JIT Tracing ETW Events
 

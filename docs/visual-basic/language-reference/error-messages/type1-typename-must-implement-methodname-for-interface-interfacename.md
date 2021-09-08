@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: BC30149: <type1>'<typename>' must implement '<methodname>' for interface '<interfacename>"
+description: "Learn more about: BC30149: <type1>'<typename>' must implement '<methodname>' for interface '<interfacename>'"
 title: "<type1>'<typename>' must implement '<methodname>' for interface '<interfacename>'"
 ms.date: 07/20/2015
 f1_keywords:

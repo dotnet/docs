@@ -51,11 +51,9 @@ It is also possible to perform the boxing explicitly as in the following example
 
 [!code-csharp[csProgGuideTypes#19](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#19)]
 
-## Description
+### Example
 
 This example converts an integer variable `i` to an object `o` by using boxing. Then, the value stored in the variable `i` is changed from `123` to `456`. The example shows that the original value type and the boxed object use separate memory locations, and therefore can store different values.
-
-## Example
 
 [!code-csharp[csProgGuideTypes#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#16)]
 
@@ -77,7 +75,7 @@ The following figure demonstrates the result of the previous statements:
 
 For the unboxing of value types to succeed at run time, the item being unboxed must be a reference to an object that was previously created by boxing an instance of that value type. Attempting to unbox `null` causes a <xref:System.NullReferenceException>. Attempting to unbox a reference to an incompatible value type causes an <xref:System.InvalidCastException>.
 
-## Example
+### Example
 
 The following example demonstrates a case of invalid unboxing and the resulting `InvalidCastException`. Using `try` and `catch`, an error message is displayed when the error occurs.
 
@@ -90,13 +88,13 @@ This program outputs:
 If you change the statement:
 
 ```csharp
-int j = (short) o;
+int j = (short)o;
 ```
 
 to:
 
 ```csharp
-int j = (int) o;
+int j = (int)o;
 ```
 
 the conversion will be performed, and you will get the output:

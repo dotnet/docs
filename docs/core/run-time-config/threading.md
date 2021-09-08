@@ -4,7 +4,11 @@ description: Learn about run-time settings that configure threading for .NET Cor
 ms.date: 11/27/2019
 ms.topic: reference
 ---
-# Run-time configuration options for threading
+# Runtime configuration options for threading
+
+This article details the settings you can use to configure threading in .NET.
+
+[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
 ## CPU groups
 
@@ -14,7 +18,7 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `COMPlus_Thread_UseAllCpuGroups` | `0` - disabled<br/>`1` - enabled |
+| **Environment variable** | `COMPlus_Thread_UseAllCpuGroups` or `DOTNET_Thread_UseAllCpuGroups` | `0` - disabled<br/>`1` - enabled |
 
 ## Minimum threads
 
@@ -85,6 +89,42 @@ Project file:
 
   <PropertyGroup>
     <ThreadPoolMaxThreads>20</ThreadPoolMaxThreads>
+  </PropertyGroup>
+
+</Project>
+```
+
+## `AutoreleasePool` for managed threads
+
+- Configures whether each managed thread receives an implicit [`NSAutoreleasePool`](https://developer.apple.com/documentation/foundation/nsautoreleasepool) when running on a supported macOS platform.
+
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.Threading.Thread.EnableAutoreleasePool` | `true` or `false` | .NET 6.0 |
+| **MSBuild property** | `AutoreleasePoolSupport` | `true` or `false` | .NET 6.0 |
+| **Environment variable** | N/A | N/A | N/A |
+
+### Examples
+
+*runtimeconfig.json* file:
+
+```json
+{
+   "runtimeOptions": {
+      "configProperties": {
+         "System.Threading.Thread.EnableAutoreleasePool": true
+      }
+   }
+}
+```
+
+Project file:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AutoreleasePoolSupport>true</AutoreleasePoolSupport>
   </PropertyGroup>
 
 </Project>

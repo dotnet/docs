@@ -1,7 +1,7 @@
 ---
 title: "Commonly Used Collection Types"
 description: Learn about commonly used collection types in .NET, such as hash tables, queues, stacks, bags, dictionaries, and lists.
-ms.date: "03/30/2017"
+ms.date: "06/09/2021"
 helpviewer_keywords: 
   - "collections [.NET], generic"
   - "objects [.NET], grouping in collections"
@@ -13,19 +13,66 @@ helpviewer_keywords:
   - "generic collections"
 ms.assetid: f5d4c6a4-0d7b-4944-a9fb-3b12d9ebfd55
 ---
-# Commonly Used Collection Types
+# Commonly used collection types
 
-Collection types are the common variations of data collections, such as hash tables, queues, stacks, bags, dictionaries, and lists.  
+Collection types represent different ways to collect data, such as hash tables, queues, stacks, bags, dictionaries, and lists.
+
+All collections are based on the <xref:System.Collections.ICollection> or <xref:System.Collections.Generic.ICollection%601> interfaces, either directly or indirectly. <xref:System.Collections.IList> and <xref:System.Collections.IDictionary> and their generic counterparts all derive from these two interfaces.
+
+In collections based on <xref:System.Collections.IList> or directly on <xref:System.Collections.ICollection>, every element contains only a value. These types include:
+
+- <xref:System.Array>
+- <xref:System.Collections.ArrayList>
+- <xref:System.Collections.Generic.List%601>
+- <xref:System.Collections.Queue>
+- <xref:System.Collections.Concurrent.ConcurrentQueue%601>
+- <xref:System.Collections.Stack>
+- <xref:System.Collections.Concurrent.ConcurrentStack%601>
+- <xref:System.Collections.Generic.LinkedList%601>
+
+In collections based on the <xref:System.Collections.IDictionary> interface, every element contains both a key and a value. These types include:
+
+- <xref:System.Collections.Hashtable>
+- <xref:System.Collections.SortedList>
+- <xref:System.Collections.Generic.SortedList%602>
+- <xref:System.Collections.Generic.Dictionary%602>
+- <xref:System.Collections.Concurrent.ConcurrentDictionary%602>
+
+The <xref:System.Collections.ObjectModel.KeyedCollection%602> class is unique because it is a list of values with keys embedded within the values. As a result, it behaves both like a list and like a dictionary.  
+
+When you need efficient multi-threaded collection access, use the generic collections in the <xref:System.Collections.Concurrent> namespace.
+
+The <xref:System.Collections.Queue> and <xref:System.Collections.Generic.Queue%601> classes provide first-in-first-out lists. The <xref:System.Collections.Stack> and <xref:System.Collections.Generic.Stack%601> classes provide last-in-first-out lists.
+
+## Strong typing
+
+Generic collections are the best solution to strong typing. For example, adding an element of any type other than an <xref:System.Int32> to a `List<Int32>` collection causes a compile-time error. However, if your language does not support generics, the <xref:System.Collections> namespace includes abstract base classes that you can extend to create collection classes that are strongly typed. These base classes include:
+
+- <xref:System.Collections.CollectionBase>
+- <xref:System.Collections.ReadOnlyCollectionBase>
+- <xref:System.Collections.DictionaryBase>
+
+## How collections vary
   
- Collections are based on the <xref:System.Collections.ICollection> interface, the <xref:System.Collections.IList> interface, the <xref:System.Collections.IDictionary> interface, or their generic counterparts. The <xref:System.Collections.IList> interface and the <xref:System.Collections.IDictionary> interface are both derived from the <xref:System.Collections.ICollection> interface; therefore, all collections are based on the <xref:System.Collections.ICollection> interface either directly or indirectly. In collections based on the <xref:System.Collections.IList> interface (such as <xref:System.Array>, <xref:System.Collections.ArrayList>, or <xref:System.Collections.Generic.List%601>) or directly on the <xref:System.Collections.ICollection> interface (such as <xref:System.Collections.Queue>, <xref:System.Collections.Concurrent.ConcurrentQueue%601>, <xref:System.Collections.Stack>, <xref:System.Collections.Concurrent.ConcurrentStack%601>, or <xref:System.Collections.Generic.LinkedList%601>), every element contains only a value. In collections based on the <xref:System.Collections.IDictionary> interface (such as the <xref:System.Collections.Hashtable> and <xref:System.Collections.SortedList> classes, the <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Generic.SortedList%602> generic classes), or the <xref:System.Collections.Concurrent.ConcurrentDictionary%602> classes, every element contains both a key and a value.  The <xref:System.Collections.ObjectModel.KeyedCollection%602> class is unique because it is a list of values with keys embedded within the values and, therefore, it behaves like a list and like a dictionary.  
+Collections vary in how they store, sort, and compare elements, and how they perform searches.
+
+The <xref:System.Collections.SortedList> class and the <xref:System.Collections.Generic.SortedList%602> generic class provide sorted versions of the <xref:System.Collections.Hashtable> class and the <xref:System.Collections.Generic.Dictionary%602> generic class.
+
+All collections use zero-based indexes except <xref:System.Array>, which allows arrays that are not zero-based.
+
+You can access the elements of a <xref:System.Collections.SortedList> or a <xref:System.Collections.ObjectModel.KeyedCollection%602> by either the key or the element's index. You can only access the elements of a <xref:System.Collections.Hashtable> or a <xref:System.Collections.Generic.Dictionary%602> by the element's key.
+
+## Use LINQ with collection types
   
- Generic collections are the best solution to strong typing. However, if your language does not support generics, the <xref:System.Collections> namespace includes base collections, such as <xref:System.Collections.CollectionBase>, <xref:System.Collections.ReadOnlyCollectionBase>, and <xref:System.Collections.DictionaryBase>, which are abstract base classes that can be extended to create collection classes that are strongly typed. When efficient multi-threaded collection access is required, use the generic collections in the <xref:System.Collections.Concurrent> namespace.  
+The LINQ to Objects feature provides a common pattern for accessing in-memory objects of any type that implements <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601>. LINQ queries have several benefits over standard constructs like `foreach` loops:
+
+- They are concise and easier to understand.
+- They can filter, order, and group data.
+- They can improve performance.
   
- Collections can vary, depending on how the elements are stored, how they are sorted, how searches are performed, and how comparisons are made. The <xref:System.Collections.Queue> class and the <xref:System.Collections.Generic.Queue%601> generic class provide first-in-first-out lists, while the <xref:System.Collections.Stack> class and the <xref:System.Collections.Generic.Stack%601> generic class provide last-in-first-out lists. The <xref:System.Collections.SortedList> class and the <xref:System.Collections.Generic.SortedList%602> generic class provide sorted versions of the <xref:System.Collections.Hashtable> class and the <xref:System.Collections.Generic.Dictionary%602> generic class. The elements of a <xref:System.Collections.Hashtable> or a <xref:System.Collections.Generic.Dictionary%602> are accessible only by the key of the element, but the elements of a <xref:System.Collections.SortedList> or a <xref:System.Collections.ObjectModel.KeyedCollection%602> are accessible either by the key or by the index of the element. The indexes in all collections are zero-based, except <xref:System.Array>, which allows arrays that are not zero-based.  
+For more information, see [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md), and [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md).  
   
- The LINQ to Objects feature allows you to use LINQ queries to access in-memory objects as long as the object type implements <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601>. LINQ queries provide a common pattern for accessing data; are typically more concise and readable than standard `foreach` loops; and provide filtering, ordering, and grouping capabilities. LINQ queries can also improve performance. For more information, see [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md), and [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md).  
-  
-## Related Topics  
+## Related topics  
   
 |Title|Description|  
 |-----------|-----------------|  

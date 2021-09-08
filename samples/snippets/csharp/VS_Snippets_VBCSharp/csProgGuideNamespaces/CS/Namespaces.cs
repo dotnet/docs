@@ -35,24 +35,6 @@ namespace AliasExample
 //</Snippet5>
 
 //-----------------------------------------------------------------------------
-namespace WrapSampleNamespace
-{
-    //<Snippet6>
-    namespace SampleNamespace
-    {
-        class SampleClass
-        {
-            public void SampleMethod()
-            {
-                System.Console.WriteLine(
-                  "SampleMethod inside SampleNamespace");
-            }
-        }
-    }
-    //</Snippet6>
-}
-
-//-----------------------------------------------------------------------------
 //<Snippet8>
 namespace SampleNamespace
 {

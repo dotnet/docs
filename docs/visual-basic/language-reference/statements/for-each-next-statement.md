@@ -61,7 +61,7 @@ Use a `For Each`...`Next` loop when you want to repeat a set of statements for e
 
 In the following example, the `For Each`…`Next` statement iterates through all the elements of a List collection.
 
-[!code-vb[VbVbalrStatements#121](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class9.vb#121)]
+:::code language="vb" source="./snippets/for-each-next-statement/vb/Examples.vb" id="init":::
 
 For more examples, see [Collections](../../../standard/collections/index.md) and [Arrays](../../programming-guide/language-features/arrays/index.md).
 
@@ -71,7 +71,7 @@ You can nest `For Each` loops by putting one loop within another.
 
 The following example demonstrates nested `For Each`…`Next` structures.
 
-[!code-vb[VbVbalrStatements#122](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class9.vb#122)]
+:::code language="vb" source="./snippets/for-each-next-statement/vb/Examples.vb" id="nested":::
 
 When you nest loops, each loop must have a unique `element` variable.
 
@@ -85,7 +85,7 @@ The `Continue For` statement transfers control immediately to the next iteration
 
 The following example shows how to use the `Continue For` and `Exit For` statements.
 
-[!code-vb[VbVbalrStatements#123](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class9.vb#123)]
+:::code language="vb" source="./snippets/for-each-next-statement/vb/Examples.vb" id="exitcontinue":::
 
 You can put any number of `Exit For` statements in a `For Each` loop. When used within nested `For Each` loops, `Exit For` causes execution to exit the innermost loop and transfers control to the next higher level of nesting.
 
@@ -105,7 +105,7 @@ You call an iterator by using a `For Each...Next` statement. Each iteration of t
 
 The following example uses an iterator function. The iterator function has a `Yield` statement that's inside a [For…Next](for-next-statement.md) loop. In the `ListEvenNumbers` method, each iteration of the `For Each` statement body creates a call to the iterator function, which proceeds to the next `Yield` statement.
 
-[!code-vb[VbVbalrStatements#127](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class9.vb#127)]
+:::code language="vb" source="./snippets/for-each-next-statement/vb/Examples.vb" id="iterator":::
 
 For more information, see [Iterators](../../programming-guide/concepts/iterators.md), [Yield Statement](yield-statement.md), and [Iterator](../modifiers/iterator.md).
 
@@ -135,7 +135,7 @@ When `Option Strict` is set to `On`, narrowing conversions ordinarily cause comp
 
 In the following example, the assignment of `m` as the initial value for `n` doesn't compile when `Option Strict` is on because the conversion of a `Long` to an `Integer` is a narrowing conversion. In the `For Each` statement, however, no compiler error is reported, even though the assignment to `number` requires the same conversion from `Long` to `Integer`. In the `For Each` statement that contains a large number, a run-time error occurs when <xref:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger%2A> is applied to the large number.
 
-[!code-vb[VbVbalrStatements#89](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class3.vb#89)]
+:::code language="vb" source="./snippets/for-each-next-statement/vb/Program.vb":::
 
 ### IEnumerator Calls
 
@@ -161,13 +161,13 @@ The previous example can modify the `BackColor` member of each `thisControl` ele
 
 **Traversing Arrays.** Because the <xref:System.Array> class implements the <xref:System.Collections.IEnumerable> interface, all arrays expose the <xref:System.Array.GetEnumerator%2A> method. This means that you can iterate through an array with a `For Each`...`Next` loop. However, you can only read the array elements. You cannot change them.
 
-## Example
+## Example 1
 
 The following example lists all the folders in the C:\ directory by using the <xref:System.IO.DirectoryInfo> class.
 
-[!code-vb[VbVbalrStatements#124](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class9.vb#124)]
+:::code language="vb" source="./snippets/for-each-next-statement/vb/Examples.vb" id="foreachdir":::
 
-## Example
+## Example 2
 
 The following example illustrates a procedure for sorting a collection. The example sorts instances of a `Car` class that are stored in a <xref:System.Collections.Generic.List%601>. The `Car` class implements the <xref:System.IComparable%601> interface, which requires that the <xref:System.IComparable%601.CompareTo%2A> method be implemented.
 
@@ -175,7 +175,7 @@ Each call to the <xref:System.IComparable%601.CompareTo%2A> method makes a singl
 
 In the `ListCars` method, the `cars.Sort()` statement sorts the list. This call to the <xref:System.Collections.Generic.List%601.Sort%2A> method of the <xref:System.Collections.Generic.List%601> causes the `CompareTo` method to be called automatically for the `Car` objects in the `List`.
 
-[!code-vb[VbVbalrStatements#125](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class9.vb#125)]
+:::code language="vb" source="./snippets/for-each-next-statement/vb/Examples.vb" id="sort":::
 
 ## See also
 

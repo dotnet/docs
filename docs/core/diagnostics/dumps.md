@@ -17,7 +17,7 @@ Dumps can be collected in a variety of ways depending on which platform you are 
 > [!NOTE]
 > Dumps may contain sensitive information because they can contain the full memory of the running process. Handle them with any security restrictions and guidances in mind.
 
-### Collecting dumps on crash
+### Collect dumps on crash
 
 You can use environment variables to configure your application to collect a dump upon a crash. This is helpful when you want to get an understanding of why a crash happened. For example, capturing a dump when an exception is thrown helps you identify an issue by examining the state of the app when it crashed.
 
@@ -25,12 +25,14 @@ The following table shows the environment variables you can configure for collec
 
 |Environment variable|Description|Default value|
 |-------|---------|---|
-|`COMPlus_DbgEnableMiniDump`|If set to 1, enable core dump generation.|0|
-|`COMPlus_DbgMiniDumpType`|Type of dump to be collected. For more information, see the table below|2 (`MiniDumpWithPrivateReadWriteMemory`)|
-|`COMPlus_DbgMiniDumpName`|Path to a file to write the dump to.|`/tmp/coredump.<pid>`|
-|`COMPlus_CreateDumpDiagnostics`|If set to 1, enable diagnostic logging of dump process.|0|
+|`COMPlus_DbgEnableMiniDump` or `DOTNET_DbgEnableMiniDump`|If set to 1, enable core dump generation.|0|
+|`COMPlus_DbgMiniDumpType` or `DOTNET_DbgMiniDumpType`|Type of dump to be collected. For more information, see the table below|2 (`MiniDumpWithPrivateReadWriteMemory`)|
+|`COMPlus_DbgMiniDumpName` or `DOTNET_DbgMiniDumpName`|Path to a file to write the dump to.|`/tmp/coredump.<pid>`|
+|`COMPlus_CreateDumpDiagnostics` or `DOTNET_CreateDumpDiagnostics`|If set to 1, enable diagnostic logging of dump process.|0|
 
-The table below shows all the options you may use for `COMPlus_DbgMiniDumpType` which can be specified as a value. For example, setting `COMPlus_DbgMiniDumpType` to 1 means `MiniDumpNormal` type dump will be collected on a crash.
+[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
+
+The following table shows all the values you can use for `DOTNET_DbgMiniDumpType`. For example, setting `DOTNET_DbgMiniDumpType` to 1 means `MiniDumpNormal` type dump will be collected on a crash.
 
 |Value|Name|Description|
 |-----|----|-----------|
@@ -39,7 +41,7 @@ The table below shows all the options you may use for `COMPlus_DbgMiniDumpType` 
 |3|`MiniDumpFilterTriage`|Include just the information necessary to capture stack traces for all existing threads in a process. Limited GC heap memory and information.|
 |4|`MiniDumpWithFullMemory`|Include all accessible memory in the process. The raw memory data is included at the end, so that the initial structures can be mapped directly without the raw memory information. This option can result in a very large file.|
 
-### Collecting dumps at specific point in time
+### Collect dumps at a specific point in time
 
 You may want to collect a dump when the app hasn't crashed yet. For example, if you want to examine the state of an application that seems to be in a deadlock, configuring the environment variables to collect dumps on crash will not be helpful because the app is still running.
 
@@ -50,7 +52,7 @@ To collect dump at your own request, you can use `dotnet-dump`, which is a CLI t
 You can anlayze dumps using the [`dotnet-dump`](dotnet-dump.md) CLI tool or with [Visual Studio](/visualstudio/debugger/using-dump-files).
 
 > [!NOTE]
-> Visual Studio version 16.8 and later allows you to [open Linux dumps](https://devblogs.microsoft.com/visualstudio/linux-managed-memory-dump-debugging/) generated on .NET Core 3.1.7 or later.  
+> Visual Studio version 16.8 and later allows you to [open Linux dumps](https://devblogs.microsoft.com/visualstudio/linux-managed-memory-dump-debugging/) generated on .NET Core 3.1.7 or later.
 > [!NOTE]
 > If native debugging is necessary, the [SOS debugger extension](sos-debugging-extension.md) can be used with [LLDB on Linux and macOS](debug-linux-dumps.md#analyze-dumps-on-linux). SOS is also supported with [Windbg/cdb](/windows-hardware/drivers/debugger/debugger-download-tools) on Windows, although Visual Studio is recommended.
 

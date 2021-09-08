@@ -29,6 +29,8 @@ dotnet store -h|--help
 
 ## Required options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`-f|--framework <FRAMEWORK>`**
 
   Specifies the [target framework](../../standard/frameworks.md). The target framework has to be specified in the project file.
@@ -47,9 +49,7 @@ dotnet store -h|--help
 
   Specifies the .NET SDK version. This option enables you to select a specific framework version beyond the framework specified by the `-f|--framework` option.
 
-- **`-h|--help`**
-
-  Shows help information.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
@@ -63,9 +63,7 @@ dotnet store -h|--help
 
   Skips symbol generation. Currently, you can only generate symbols on Windows and Linux.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 - **`-w|--working-dir <WORKING_DIRECTORY>`**
 

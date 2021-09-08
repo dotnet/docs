@@ -3,12 +3,14 @@ title: Logging in .NET
 author: IEvangelist
 description: Learn how to use the logging framework provided by the Microsoft.Extensions.Logging NuGet package.
 ms.author: dapine
-ms.date: 09/30/2020
+ms.date: 07/30/2021
 ---
 
 # Logging in .NET
 
 .NET supports a logging API that works with a variety of built-in and third-party logging providers. This article shows how to use the logging API with built-in providers. Most of the code examples shown in this article apply to any .NET app that uses the [Generic Host](generic-host.md). For apps that don't use the Generic Host, see [Non-host console app](#non-host-console-app).
+
+[!INCLUDE [logging-samples-browser](includes/logging-samples-browser.md)]
 
 ## Create logs
 
@@ -87,28 +89,74 @@ In the preceding sample:
 
 ### Set log level by command line, environment variables, and other configuration
 
-Log level can be set by any of the [configuration providers](configuration-providers.md).
+Log level can be set by any of the [configuration providers](configuration-providers.md). For example, you can create a persisted environment variable named `Logging:LogLevel:Microsoft` with a value of `Information`.
 
-The following commands:
+## [Command Line](#tab/command-line)
 
-- Set the environment key `Logging:LogLevel:Microsoft` to a value of `Information` on Windows.
-- Test the settings when using an app created with the .NET Worker service templates. The `dotnet run` command must be run in the project directory after using `set`.
+Create and assign persisted environment variable, given the log level value.
 
-```cmd
-set Logging__LogLevel__Microsoft=Information
+```CMD
+:: Assigns the env var to the value
+setx "Logging__LogLevel__Microsoft" "Information" /M
+```
+
+In a *new* instance of the **Command Prompt**, read the environment variable.
+
+```CMD
+:: Prints the env var value
+echo %Logging__LogLevel__Microsoft%
+```
+
+## [PowerShell](#tab/powershell)
+
+Create and assign persisted environment variable, given the log level value.
+
+```powershell
+# Assigns the env var to the value
+[System.Environment]::SetEnvironmentVariable(
+    "Logging__LogLevel__Microsoft", "Information", "Machine")
+```
+
+In a *new* instance of the **PowerShell**, read the environment variable.
+
+```powershell
+# Prints the env var value
+[System.Environment]::GetEnvironmentVariable(
+    "Logging__LogLevel__Microsoft", "Machine")
+```
+
+## [Bash](#tab/bash)
+
+Create and assign persisted environment variable, given the log level value.
+
+```Bash
+# Assigns the env var to the value, persists it across sessions
+echo export Logging__LogLevel__Microsoft="Information" >> ~/.bashrc && source ~/.bashrc
+```
+
+To read the environment variable.
+
+```Bash
+# Prints the env var value
+echo $Logging__LogLevel__Microsoft
+
+# Or use printenv:
+# printenv Logging__LogLevel__Microsoft
+```
+
+> [!NOTE]
+> When configuring environment variables with names that contain `.` (periods), consider the "Exporting a variable with a dot (.) in it" question on **Stack Exchange** and its corresponding [accepted answer](https://unix.stackexchange.com/a/93533).
+
+---
+
+The preceding environment setting is persisted in the environment. To test the settings when using an app created with the .NET Worker service templates, use the `dotnet run` command in the project directory after the environment variable is assigned.
+
+```dotnetcli
 dotnet run
 ```
 
-The preceding environment setting:
-
-- Is only set in processes launched from the command window they were set in.
-- Isn't read by apps launched with Visual Studio.
-
-The following [setx](/windows-server/administration/windows-commands/setx) command also sets the environment key and value on Windows. Unlike `set`, `setx` settings are persisted. The `/M` switch sets the variable in the system environment. If `/M` isn't used, a user environment variable is set.
-
-```cmd
-setx Logging__LogLevel__Microsoft=Information /M
-```
+> [!TIP]
+> After setting an environment variable, restart your integrated development environment (IDE) to ensure that newly added environment variables are available.
 
 On [Azure App Service](https://azure.microsoft.com/services/app-service/), select **New application setting** on the **Settings > Configuration** page. Azure App Service application settings are:
 
@@ -130,7 +178,7 @@ The following algorithm is used for each provider when an `ILogger` is created f
 
 ## Log category
 
-When an `ILogger` object is created, a *category* is specified. That category is included with each log message created by that instance of `ILogger`. The category string is arbitrary, but the convention is to use the class name. For example, in an application with a service define like the following object, the category might be `"Example.DefaultService"`:
+When an `ILogger` object is created, a *category* is specified. That category is included with each log message created by that instance of `ILogger`. The category string is arbitrary, but the convention is to use the class name. For example, in an application with a service defined like the following object, the category might be `"Example.DefaultService"`:
 
 ```csharp
 namespace Example
@@ -234,7 +282,7 @@ The following JSON sets `Logging:Console:LogLevel:Microsoft:Information`:
 
 ## Log event ID
 
-Each log can specify an *event identifer*, the <xref:Microsoft.Extensions.Logging.EventId> is a structure with an `Id` and optional `Name` readonly properties. The sample source code uses the `AppLogEvents` class to define event IDs:
+Each log can specify an *event identifier*, the <xref:Microsoft.Extensions.Logging.EventId> is a structure with an `Id` and optional `Name` readonly properties. The sample source code uses the `AppLogEvents` class to define event IDs:
 
 ```csharp
 internal static class AppLogEvents
@@ -312,7 +360,7 @@ public void Test(string id)
     {
         _logger.LogWarning(
             AppLogEvents.Error, ex,
-            "Failed to process iteration: {Id}", id)
+            "Failed to process iteration: {Id}", id);
     }
 }
 ```

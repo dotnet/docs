@@ -2,7 +2,7 @@
 title: "Understanding WebRequest Problems and Exceptions"
 description: WebRequest and derived classes throw exceptions to signal abnormal conditions. Use these possible solutions to resolve these conditions in the .NET Framework.
 ms.date: "03/30/2017"
-ms.assetid: 74a361a5-e912-42d3-8f2e-8e9a96880a2b
+ms.topic: reference
 ---
 # Understanding WebRequest Problems and Exceptions
 

@@ -2,6 +2,7 @@
 title: "SOS Debugging Extension for .NET"
 description: Learn about the SOS debugging extension for .NET, which provides information about the internal CLR environment.
 ms.date: "12/21/2020"
+ms.topic: reference
 helpviewer_keywords:
   - "debugging extensions"
   - "SOS debugging extensions"

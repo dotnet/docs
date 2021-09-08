@@ -1,7 +1,6 @@
 ---
 title: "Breaking change: Security: IdentityModel NuGet package versions updated"
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled Security: IdentityModel NuGet package versions updated"
-author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
 ---

@@ -2,6 +2,7 @@
 title: "Tutorial: Create a Windows service app"
 description: In this tutorial, create a Windows service app in Visual Studio that writes messages to an event log. Add features, set status, add installers, and more.
 ms.date: 03/27/2019
+ms.topic: tutorial
 dev_langs:
   - "csharp"
   - "vb"
@@ -11,6 +12,8 @@ helpviewer_keywords:
 ms.assetid: e24d8a3d-edc6-485c-b6e0-5672d91fb607
 ---
 # Tutorial: Create a Windows service app
+
+[!INCLUDE [windows-service-disambiguation](../../core/extensions/includes/windows-service-disambiguation.md)]
 
 This article demonstrates how to create a Windows service app in Visual Studio that writes messages to an event log.
 
@@ -464,9 +467,9 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
 
 Now that you've built the Windows service, you can install it. To install a Windows service, you must have administrator credentials on the computer where it's installed.
 
-1. Open [Developer Command Prompt for Visual Studio](../tools/developer-command-prompt-for-vs.md) with administrative credentials. From the Windows **Start** menu, select **Developer Command Prompt for VS 2017** in the Visual Studio folder, then select **More** > **Run as Administrator** from the shortcut menu.
+1. Open [Developer Command Prompt for Visual Studio](/visualstudio/ide/reference/command-prompt-powershell) with administrative credentials.
 
-2. In the **Developer Command Prompt for Visual Studio** window, navigate to the folder that contains your project's output (by default, the *\bin\Debug* subdirectory of your project).
+2. In **Developer Command Prompt for Visual Studio**, navigate to the folder that contains your project's output (by default, the *\bin\Debug* subdirectory of your project).
 
 3. Enter the following command:
 

@@ -2,6 +2,7 @@
 title: "How to read a text file one line at a time - C# Programming Guide"
 description: Learn how to read a text file one line at a time. See a code example and view additional available resources.
 ms.date: 07/20/2015
+ms.topic: how-to
 helpviewer_keywords: 
   - "ReadLine method [C#]"
   - "reading text files, line by line"

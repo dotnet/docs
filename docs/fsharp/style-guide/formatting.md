@@ -248,30 +248,92 @@ This is a way to avoid too long lines (in case return type might have long name)
 
 ### Type annotations
 
-#### Right-pad function argument type annotations
+#### Right-pad value and function argument type annotations
 
-When defining arguments with type annotations, use white space after the `:` symbol:
+When defining values or arguments with type annotations, use white space after the `:` symbol, but not before:
 
 ```fsharp
 // OK
 let complexFunction (a: int) (b: int) c = a + b + c
+let expensiveToCompute: int = 0 // Type annotation for let-bound value
+
+type C() =
+    member _.Property: int = 1
 
 // Bad
 let complexFunctionBad (a :int) (b :int) (c:int) = a + b + c
+let expensiveToComputeBad1:int = 1
+let expensiveToComputeBad2 :int = 2
 ```
 
 #### Surround return type annotations with white space
 
-In a let-bound function or value type annotation (return type in the case of a function), use white space before and after the `:` symbol:
+In function or member return type annotations, use white space before and after the `:` symbol:
 
 ```fsharp
 // OK
-let expensiveToCompute : int = 0 // Type annotation for let-bound value
 let myFun (a: decimal) b c : decimal = a + b + c // Type annotation for the return type of a function
+let anotherFun (arg: int) : unit = () // Type annotation for return type of a function
+type C() =
+    member _.SomeMethod(x: int) : int = 1 // Type annotation for return type of a member
+
 // Bad
-let expensiveToComputeBad1:int = 1
-let expensiveToComputeBad2 :int = 2
 let myFunBad (a: decimal) b c:decimal = a + b + c
+let anotherFunBad (arg: int): unit = ()
+type C() =
+    member _.SomeMethod(x: int): int = 1
+```
+
+### Formatting bindings
+
+In all cases, the right-hand side of a binding either all goes on one line, or (if it's too long) goes on a new line indented one scope.
+
+For example, the following are non-compliant:
+
+```fsharp
+let a = """
+foobar, long string
+"""
+
+type File =
+    member this.SaveAsync(path: string) : Async<unit> = async {
+        // IO operation
+        return ()
+    }
+
+let c = {
+    Name = "Bilbo"
+    Age = 111
+    Region = "The Shire"
+}
+
+let d = while f do
+    printfn "%A" x
+```
+
+The following are compliant:
+
+```fsharp
+let a =
+    """
+foobar, long string
+"""
+
+type File =
+    member this.SaveAsync(path: string) : Async<unit> =
+        async {
+            // IO operation
+            return ()
+        }
+
+let c =
+    { Name = "Bilbo"
+      Age = 111
+      Region = "The Shire" }
+
+let d =
+    while f do
+        printfn "%A" x
 ```
 
 ## Formatting blank lines
@@ -300,6 +362,17 @@ Inline comments should capitalize the first letter.
 ```fsharp
 let f x = x + 1 // Increment by one.
 ```
+
+## Formatting string literals and interpolated strings
+
+String literals and interpolated strings can just be left on a single line, regardless of how long the line is.
+
+```fsharp
+let serviceStorageConnection =
+    $"DefaultEndpointsProtocol=https;AccountName=%s{serviceStorageAccount.Name};AccountKey=%s{serviceStorageAccountKey.Value}"
+```
+
+Multi-line interpolated expressions are strongly discouraged. Instead, bind the expression result to a value and use that in the interpolated string.
 
 ## Naming conventions
 
@@ -493,15 +566,59 @@ type Volume =
 | ImperialPint of float
 ```
 
+When there is a single short union, you can omit the leading `|`.
+
+```fsharp
+type Address = Address of string
+```
+
+For a longer or multiline union, keep the `|`.
+
+```fsharp
+[<NoEquality; NoComparison>]
+type SynBinding =
+    | SynBinding of
+        accessibility: SynAccess option *
+        kind: SynBindingKind *
+        mustInline: bool *
+        isMutable: bool *
+        attributes: SynAttributes *
+        xmlDoc: PreXmlDoc *
+        valData: SynValData *
+        headPat: SynPat *
+        returnInfo: SynBindingReturnInfo option *
+        expr: SynExpr *
+        range: range *
+        seqPoint: DebugPointAtBinding
+```
+
+You can also use triple-slash `///` comments.
+
+```fsharp
+type Foobar =
+    /// Code comment
+    | Foobar of int
+```
+
 ## Formatting discriminated unions
+
+Use a space before parenthesized/tupled parameters to discriminated union cases:
+
+```fsharp
+// OK
+let opt = Some ("A", 1)
+
+// Not OK
+let opt = Some("A", 1)
+```
 
 Instantiated Discriminated Unions that split across multiple lines should give contained data a new scope with indentation:
 
 ```fsharp
 let tree1 =
     BinaryNode
-        (BinaryNode(BinaryValue 1, BinaryValue 2),
-         BinaryNode(BinaryValue 3, BinaryValue 4))
+        (BinaryNode (BinaryValue 1, BinaryValue 2),
+         BinaryNode (BinaryValue 3, BinaryValue 4))
 ```
 
 The closing parenthesis can also be on a new line:
@@ -509,8 +626,8 @@ The closing parenthesis can also be on a new line:
 ```fsharp
 let tree1 =
     BinaryNode(
-        BinaryNode(BinaryValue 1, BinaryValue 2),
-        BinaryNode(BinaryValue 3, BinaryValue 4)
+        BinaryNode (BinaryValue 1, BinaryValue 2),
+        BinaryNode (BinaryValue 3, BinaryValue 4)
     )
 ```
 
@@ -604,11 +721,10 @@ type MyRecord =
 
 let foo a =
     a
-    |> Option.map
-        (fun x ->
-            {
-                MyField = x
-            })
+    |> Option.map (fun x ->
+        {
+            MyField = x
+        })
 ```
 
 The same rules apply for list and array elements.
@@ -785,6 +901,46 @@ else
     e4
 ```
 
+If a condition is long, place it on the next line with an extra indent.
+Align the `if` and the `then` keywords.
+
+```fsharp
+if
+    complexExpression a b && env.IsDevelopment()
+    || secondLongerExpression
+        aVeryLongparameterNameOne
+        aVeryLongparameterNameTwo
+        aVeryLongparameterNameThree
+        """
+Multiline
+    string
+        """
+then
+        e1
+    else
+        e2
+```
+
+If you have a condition that is this long, first consider refactoring it into a separate function and calling that function instead
+
+```fsharp
+let condition () =
+    complexExpression a b && env.IsDevelopment()
+    || secondLongerExpression
+        aVeryLongparameterNameOne
+        aVeryLongparameterNameTwo
+        aVeryLongparameterNameThree
+        """
+Multiline
+    string
+        """
+
+if condition () then
+    e1
+else
+    e2
+```
+
 ### Pattern matching constructs
 
 Use a `|` for each clause of a match with no indentation. If the expression is short, you can consider using a single line if each subexpression is also simple.
@@ -819,17 +975,17 @@ Pattern matching of anonymous functions, starting by `function`, should generall
 
 ```fsharp
 lambdaList
-|> List.map
-    (function
-        | Abs(x, body) -> 1 + sizeLambda 0 body
-        | App(lam1, lam2) -> sizeLambda (sizeLambda 0 lam1) lam2
-        | Var v -> 1)
+|> List.map (function
+    | Abs(x, body) -> 1 + sizeLambda 0 body
+    | App(lam1, lam2) -> sizeLambda (sizeLambda 0 lam1) lam2
+    | Var v -> 1)
 ```
 
 Pattern matching in functions defined by `let` or `let rec` should be indented four spaces after starting of `let`, even if `function` keyword is used:
 
 ```fsharp
-let rec sizeLambda acc = function
+let rec sizeLambda acc =
+    function
     | Abs(x, body) -> sizeLambda (succ acc) body
     | App(lam1, lam2) -> sizeLambda (sizeLambda acc lam1) lam2
     | Var v -> succ acc
@@ -852,6 +1008,36 @@ with
     printfn "A second that was not a multiple of 3"
 | _ ->
     printfn "A second that was a multiple of 3"
+```
+
+Add a `|` for each clause, except when there is only a single clause:
+
+```fsharp
+// OK
+try
+    persistState currentState
+with ex ->
+    printfn "Something went wrong: %A" ex
+
+// OK
+try
+    persistState currentState
+with :? System.ApplicationException as ex ->
+    printfn "Something went wrong: %A" ex
+
+// Not OK
+try
+    persistState currentState
+with
+| ex ->
+    printfn "Something went wrong: %A" ex
+
+// Not OK
+try
+    persistState currentState
+with
+| :? System.ApplicationException as ex ->
+    printfn "Something went wrong: %A" ex
 ```
 
 ## Formatting function parameter application
@@ -894,23 +1080,101 @@ let printVolumes x =
         (convertVolumeImperialPint x)
 ```
 
-For lambda expressions, you may also want to consider placing the body of a lambda expression on a new line, indented by one scope, if it is long enough:
+For lambda expressions, you may also want to consider placing the body of a lambda expression on a new line, indented by one scope, if it is long enough or followed by other arguments:
 
 ```fsharp
 let printListWithOffset a list1 =
     List.iter
         (fun elem ->
-            printfn $"%d{a + elem}")
+             printfn $"A very long line to format the value: %d{a + elem}")
         list1
+```
+
+If the lambda argument is the last argument in a function application, place all arguments until the arrow on the same line.
+
+```fsharp
+Target.create "Build" (fun ctx ->
+    // code
+    // here
+    ())
 
 let printListWithOffsetPiped a list1 =
     list1
-    |> List.iter
-        (fun elem ->
-            printfn $"%d{a + elem}")
+    |> List.iter (fun elem ->
+        printfn $"A very long line to format the value: %d{a + elem}")
+```
+
+Treat match lambda's in a similar fashion.
+
+```fsharp
+functionName arg1 arg2 arg3 (function
+    | Choice1of2 x
+    | Choice2of2 y)
+```
+
+Unless there are many leading or multiline arguments before the lambda. In that case, indent all arguments with one scope.
+
+```fsharp
+functionName 
+    arg1 
+    arg2 
+    arg3 
+    (fun arg4 ->
+        bodyExpr)
+
+functionName 
+    arg1 
+    arg2 
+    arg3 
+    (function
+     | Choice1of2 x
+     | Choice2of2 y)
 ```
 
 If the body of a lambda expression is multiple lines long, you should consider refactoring it into a locally-scoped function.
+
+Note that in combination of infix operators the body of a lambda expression should be indented one indent further from the current line.
+This is not the case when all arguments are indented one from the function application, there the indent should be in respect to the function name.
+
+```fsharp
+// With 4 spaces indentation
+list1
+|> List.iter (fun elem ->
+    // one indent starting from the pipe
+    printfn $"A very long line to format the value: %d{elem}")
+
+list1
+|> List.fold
+       // one indent from the function name 
+       someLongParam
+       anotherLongParam
+
+// With 2 spaces indentation
+list1
+|> List.fold
+     // one indent from the function name 
+     someLongParam
+     anotherLongParam
+
+list1
+|> List.iter (fun elem ->
+  // one indent starting from the pipe
+  printfn $"A very long line to format the value: %d{elem}")
+```
+
+When the function take a single multiline tuple argument, the same rules for [Formatting constructors, static members, and member invocations](#formatting-constructors-static-members-and-member-invocations) apply.
+
+```fsharp
+let myFunction (a: int, b: string, c: int, d: bool) =
+    ()
+
+myFunction(
+    478815516,
+    "A very long string making all of this multi-line",
+    1515,
+    false
+)
+```
 
 ### Formatting infix operators
 
@@ -1068,6 +1332,70 @@ let untypedRes =
         sourceText,
         parsingOptionsWithDefines
     )
+```
+
+The same rules apply even if there is only a single multiline argument.
+
+```fsharp
+let poemBuilder = StringBuilder()
+poemBuilder.AppendLine(
+    """
+The last train is nearly due
+The Underground is closing soon
+And in the dark, deserted station
+Restless in anticipation
+A man waits in the shadows
+    """
+)
+
+Option.traverse(
+    create
+    >> Result.setError [ invalidHeader "Content-Checksum" ]
+)
+```
+
+## Formatting generic type arguments and constraints
+
+The guidelines below apply to both functions, members, and type definitions.
+
+Keep generic type arguments and constraints on a single line if it’s not too long:
+
+```fsharp
+let f<'T1, 'T2 when 'T1: equality and 'T2: comparison> param =
+    // function body
+```
+
+If both generic type arguments/constraints and function parameters don’t fit, but the type parameters/constraints alone do, place the parameters on new lines:
+
+```fsharp
+let f<'T1, 'T2 when 'T1 : equality and 'T2 : comparison>
+    param
+    =
+    // function body
+```
+
+If the type parameters or constraints are too long, break and align them as shown below. Keep the list of type parameters on the same line as the function, regardless of its length. For constraints, place `when` on the first line, and keep each constraint on a single line regardless of its length. Place `>` at the end of the last line. Indent the constraints by one level.
+
+```fsharp
+let inline f< ^T1, ^T2
+    when ^T1 : (static member Foo1: unit -> ^T2)
+    and ^T2 : (member Foo2: unit -> int)
+    and ^T2 : (member Foo3: string -> ^T1 option)>
+    arg1
+    arg2
+    =
+    // function body
+```
+
+If the type parameters/constraints are broken up, but there are no normal function parameters, place the `=` on a new line regardless:
+
+```f#
+let inline f<^T1, ^T2
+    when ^T1 : (static member Foo1: unit -> ^T2)
+    and ^T2 : (member Foo2: unit -> int)
+    and ^T2 : (member Foo3: string -> ^T1 option)>
+    =
+    // function body
 ```
 
 ## Formatting attributes

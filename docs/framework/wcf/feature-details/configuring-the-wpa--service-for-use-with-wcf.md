@@ -2,7 +2,7 @@
 description: "Learn more about: Configuring the Windows Process Activation Service for Use with Windows Communication Foundation"
 title: "Configuring the Windows Process Activation Service for Use with Windows Communication Foundation"
 ms.date: "03/30/2017"
-ms.assetid: 1d50712e-53cd-4773-b8bc-a1e1aad66b78
+ms.topic: how-to
 ---
 # Configuring the Windows Process Activation Service for Use with Windows Communication Foundation
 
@@ -50,7 +50,7 @@ appcmd.exe set site "Default Web Site" -+bindings.[protocol='net.tcp',bindingInf
 appcmd.exe set app "Default Web Site/appOne" /enabledProtocols:net.tcp  
 ```  
   
- The list of enabled protocols can also be set in the \<applicationDefaults> element of the site’s XML configuration stored in ApplicationHost.config.  
+ The list of enabled protocols can also be set in the \<applicationDefaults> element of the site's XML configuration stored in ApplicationHost.config.  
   
  The following XML code from applicationHost.config illustrates a site bound to both HTTP and non-HTTP protocols. The additional configuration required to support non-HTTP protocols is called out with comments.  
   

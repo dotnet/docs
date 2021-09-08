@@ -1,6 +1,6 @@
 ---
 title: "Ilasm.exe (IL Assembler)"
-description: Get started with Ilasm.exe, the IL Assembler. This tool generates a portable executable (PE) file from intermediate language (IL).
+description: Get started with Ilasm.exe, the IL Assembler. This tool generates a portable executable (PE) file from intermediate language (IL) assembly.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MSIL generators"
@@ -15,9 +15,9 @@ ms.assetid: 4ca3a4f0-4400-47ce-8936-8e219961c76f
 ---
 # Ilasm.exe (IL Assembler)
 
-The IL Assembler generates a portable executable (PE) file from intermediate language (IL). (For more information on IL, see [Managed Execution Process](../../standard/managed-execution-process.md).) You can run the resulting executable, which contains IL and the required metadata, to determine whether the IL performs as expected.
+The IL Assembler generates a portable executable (PE) file from intermediate language (IL) assembly. (For more information on IL, see [Managed Execution Process](../../standard/managed-execution-process.md).) You can run the resulting executable, which contains IL and the required metadata, to determine whether the IL performs as expected.
 
-This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
 
 At the command prompt, type the following:
 
@@ -225,4 +225,4 @@ The following IL code example corresponds to the previous C# code example. You c
 - [Tools](index.md)
 - [*Ildasm.exe* (IL Disassembler)](ildasm-exe-il-disassembler.md)
 - [Managed Execution Process](../../standard/managed-execution-process.md)
-- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

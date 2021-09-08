@@ -28,7 +28,7 @@ namespace Pipes
                 {
                     if (TryParseMessage(ref buffer, out Message message))
                     {
-                        // A single message was successfully parsed so mark the start as the
+                        // A single message was successfully parsed so mark the start of the
                         // parsed buffer as consumed. TryParseMessage trims the buffer to
                         // point to the data after the message was parsed.
                         consumed = buffer.Start;

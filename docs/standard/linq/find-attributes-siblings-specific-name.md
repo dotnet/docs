@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: c3133d64-523f-422d-8838-73d36b945ca0
+ms.topic: how-to
 ---
 
 # How to find attributes of siblings with a specific name (LINQ to XML)

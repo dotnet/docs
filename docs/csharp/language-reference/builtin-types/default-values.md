@@ -12,7 +12,7 @@ The following table shows the default values of C# types:
 
 |Type|Default value|
 |---------|------------------|
-|Any reference type|`null`|
+|Any [reference type](../keywords/reference-types.md)|`null`|
 |Any [built-in integral numeric type](integral-numeric-types.md)|0 (zero)|
 |Any [built-in floating-point numeric type](floating-point-numeric-types.md)|0 (zero)|
 |[bool](bool.md)|`false`|

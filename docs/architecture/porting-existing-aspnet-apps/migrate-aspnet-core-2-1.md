@@ -7,9 +7,9 @@ ms.date: 11/13/2020
 
 # Migrate to ASP.NET Core 2.1
 
-ASP.NET Core 2.1 is an interesting release because it's the only currently supported .NET Core release to support both .NET Core and .NET Framework runtimes. As such, it may offer an easier upgrade path for some apps when compared to upgrading all parts of the app to .NET Core at once. As an LTS release, support for .NET Core 2.1 will continue through August 2021. Support for ASP.NET Core 2.1 running on .NET Framework will continue for as long as its underlying .NET Framework is supported.
+ASP.NET Core 2.1 is an interesting release because it's the only currently supported ASP.NET Core release to support both .NET Core and .NET Framework runtimes. As such, it may offer an easier upgrade path for some apps when compared to upgrading all parts of the app to .NET Core at once. As an LTS release, support for .NET Core 2.1 will continue through August 2021. Support for ASP.NET Core 2.1 running on .NET Framework will continue for as long as its underlying .NET Framework is supported.
 
-## Should apps run on .NET Framework with ASP.NET Core 2.1?
+## Should apps run on .NET Framework with ASP.NET Core 2.1
 
 ASP.NET Core 2.2 and earlier supported both .NET Core and .NET Framework runtimes. Does it make sense to migrate some or all of an app to ASP.NET Core 2.1 as a stepping stone, before porting over completely to .NET Core? Apps, or subsets of apps, could see their front-end ASP.NET logic ported to use ASP.NET Core, while still consuming .NET Framework libraries for business logic and infrastructure consumption. This approach may make sense when there's a relatively thin UI layer without much business logic, and a much larger set of functionality in class libraries.
 
@@ -23,7 +23,7 @@ Keep in mind that ASP.NET Core 2.1 is the last LTS release of .NET Core that sup
 
 ## References
 
-[Migrating from ASP.NET to ASP.NET Core 2.1](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/?view=aspnetcore-2.1&preserve-view=true)
+[Migrating from ASP.NET to ASP.NET Core 2.1](/aspnet/core/migration/proper-to-2x/?preserve-view=true&view=aspnetcore-2.1)
 
 >[!div class="step-by-step"]
 >[Previous](migration-considerations.md)

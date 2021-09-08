@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "viewing assembly information"
   - "MSIL"
   - "viewing MSIL information"
-ms.assetid: fb7baaab-4c0d-47ad-8fd3-4591cf834709
+ms.topic: how-to
 dev_langs:
   - "csharp"
   - "vb"
@@ -114,7 +114,7 @@ The following table describes each directive in the assembly manifest of the *He
 An assembly manifest can contain a number of different directives, depending on the contents of the assembly. For an extensive list of the directives in the assembly manifest, see the Ecma documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set":
 
 - [ECMA C# and Common Language Infrastructure standards](../components.md#applicable-standards)
-- [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://www.ecma-international.org/publications/standards/Ecma-335.htm)
+- [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/)
 
 ## See also
 

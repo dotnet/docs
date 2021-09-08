@@ -1,15 +1,15 @@
 ---
 title: "Breaking change: Removed status bar controls"
-description: Learn about the breaking change in .NET 5.0 where some Windows Forms controls are no longer available.
+description: Learn about the breaking change in .NET 5 where some Windows Forms controls are no longer available.
 ms.date: 07/18/2020
 ---
 # Removed status bar controls
 
-Starting in .NET 5.0, some Windows Forms controls are no longer available.
+Starting in .NET 5, some Windows Forms controls are no longer available.
 
 ## Change description
 
-Starting with .NET 5.0, some of the status bar-related Windows Forms controls are no longer available. Replacement controls that have better design and support were introduced in .NET Framework 2.0. The deprecated controls were previously removed from designer toolboxes but were still available to be used. Now, they have been completely removed.
+Starting with .NET 5, some of the status bar-related Windows Forms controls are no longer available. Replacement controls that have better design and support were introduced in .NET Framework 2.0. The deprecated controls were previously removed from designer toolboxes but were still available to be used. Now, they have been completely removed.
 
 The following types are no longer available:
 

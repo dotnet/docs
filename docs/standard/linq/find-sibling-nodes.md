@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: e2c73d10-a8ca-4e11-b5aa-d055de285874
+ms.topic: how-to
 ---
 
 # How to find sibling nodes (LINQ to XML)

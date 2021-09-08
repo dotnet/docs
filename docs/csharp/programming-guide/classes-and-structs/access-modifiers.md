@@ -18,25 +18,35 @@ All types and type members have an accessibility level. The accessibility level 
 - [protected internal](../../language-reference/keywords/protected-internal.md): The type or member can be accessed by any code in the assembly in which it's declared, or from within a derived `class` in another assembly.
 - [private protected](../../language-reference/keywords/private-protected.md): The type or member can be accessed only within its declaring assembly, by code in the same `class` or in a type that is derived from that `class`.
 
+## Summary table
+
+| Caller's location                      | `public` | `protected internal` | `protected` | `internal` | `private protected` | `private` |
+| -------------------------------------- | :------: | :------------------: | :---------: | :--------: | :-----------------: | :-------: |
+| Within the class                       |   ✔️️   |         ✔️         |     ✔️     |     ✔️     |         ✔️          |    ✔️     |
+| Derived class (same assembly)          |   ✔️   |         ✔️         |     ✔️     |     ✔️     |         ✔️          |    ❌     |
+| Non-derived class (same assembly)      |   ✔️   |         ✔️         |     ❌     |     ✔️     |         ❌          |    ❌     |
+| Derived class (different assembly)     |   ✔️   |         ✔️         |     ✔️     |     ❌     |         ❌          |    ❌     |
+| Non-derived class (different assembly) |   ✔️   |         ❌         |     ❌     |     ❌     |         ❌          |    ❌     |
+
 The following examples demonstrate how to specify access modifiers on a type and member:
 
 [!code-csharp[PublicAccess](~/samples/snippets/csharp/objectoriented/accessmodifiers.cs#PublicAccess)]
 
 Not all access modifiers are valid for all types or members in all contexts. In some cases, the accessibility of a type member is constrained by the accessibility of its containing type.
 
-## Class and struct accessibility  
+## Class, record, and struct accessibility  
 
-Classes and structs declared directly within a namespace (in other words, that aren't nested within other classes or structs) can be either `public` or `internal`. `internal` is the default if no access modifier is specified.
+Classes, records, and structs declared directly within a namespace (in other words, that aren't nested within other classes or structs) can be either `public` or `internal`. `internal` is the default if no access modifier is specified.
 
 Struct members, including nested classes and structs, can be declared `public`, `internal`, or `private`. Class members, including nested classes and structs, can be `public`, `protected internal`, `protected`, `internal`, `private protected`, or `private`. Class and struct members,  including nested classes and structs, have `private` access by default. Private nested types aren't accessible from outside the containing type.
 
-Derived classes can't have greater accessibility than their base types. You can't declare a public class `B` that derives from an internal class `A`. If allowed, it would have the effect of making `A` public, because all `protected` or `internal` members of `A` are accessible from the derived class.
+Derived classes and derived records can't have greater accessibility than their base types. You can't declare a public class `B` that derives from an internal class `A`. If allowed, it would have the effect of making `A` public, because all `protected` or `internal` members of `A` are accessible from the derived class.
 
 You can enable specific other assemblies to access your internal types by using the `InternalsVisibleToAttribute`. For more information, see [Friend Assemblies](../../../standard/assembly/friend.md).
 
-## Class and struct member accessibility  
+## Class, record, and struct member accessibility  
 
-Class members (including nested classes and structs) can be declared with any of the six types of access. Struct members can't be declared as `protected`, `protected internal`, or `private protected` because structs don't support inheritance.
+Class and record members (including nested classes, records and structs) can be declared with any of the six types of access. Struct members can't be declared as `protected`, `protected internal`, or `private protected` because structs don't support inheritance.
 
 Normally, the accessibility of a member isn't greater than the accessibility of the type that contains it. However, a `public` member of an internal class might be accessible from outside the assembly if the member implements interface methods or overrides virtual methods that are defined in a public base class.
 
@@ -46,7 +56,7 @@ User-defined operators must always be declared as `public` and `static`. For mor
 
 Finalizers can't have accessibility modifiers.
 
-To set the access level for a `class` or `struct` member, add the appropriate keyword to the member declaration, as shown in the following example.
+To set the access level for a `class`, `record`, or `struct` member, add the appropriate keyword to the member declaration, as shown in the following example.
 
 [!code-csharp[MethodAccess](~/samples/snippets/csharp/objectoriented/accessmodifiers.cs#MethodAccess)]
 
@@ -65,8 +75,8 @@ Delegates behave like classes and structs. By default, they have `internal` acce
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes and Structs](./index.md)
-- [Interfaces](../interfaces/index.md)
+- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
+- [Interfaces](../../fundamentals/types/interfaces.md)
 - [private](../../language-reference/keywords/private.md)
 - [public](../../language-reference/keywords/public.md)
 - [internal](../../language-reference/keywords/internal.md)

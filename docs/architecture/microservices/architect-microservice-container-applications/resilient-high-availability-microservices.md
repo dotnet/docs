@@ -57,13 +57,13 @@ Different orchestrators might sound similar, but the diagnostics and health chec
   <https://github.com/Azure/diagnostics-eventflow>
 
 - **What is Azure Diagnostics** \
-  <https://docs.microsoft.com/azure/azure-diagnostics>
+  [https://docs.microsoft.com/azure/azure-diagnostics](/azure/azure-diagnostics)
 
 - **Connect Windows computers to the Azure Monitor service** \
-  <https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows>
+  [https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows](/azure/azure-monitor/platform/agent-windows)
 
 - **Logging What You Mean: Using the Semantic Logging Application Block** \
-  <https://docs.microsoft.com/previous-versions/msp-n-p/dn440729(v=pandp.60)>
+  [https://docs.microsoft.com/previous-versions/msp-n-p/dn440729(v=pandp.60)](/previous-versions/msp-n-p/dn440729(v=pandp.60))
 
 - **Splunk** Official site. \
   <https://www.splunk.com/>

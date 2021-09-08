@@ -1,6 +1,7 @@
 ---
 title: "How to compare the contents of two folders (LINQ) (C#)"
 description: This example demonstrates three ways to compare file listings by using LINQ queries in C#. Adapt these techniques to compare sequences of objects of any type.
+ms.topic: how-to
 ms.date: 07/20/2015
 ms.assetid: c7c4870e-c500-4de3-afa4-2c8e07f510e6
 ---

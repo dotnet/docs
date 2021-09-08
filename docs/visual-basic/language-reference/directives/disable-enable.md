@@ -9,7 +9,15 @@ helpviewer_keywords:
 ---
 # #Disable and #Enable directives (Visual Basic)
 
-The `#Disable` and `#Enable` directives are Visual Basic source code compiler directives. They are used to disable and re-enable specific warnings for regions of code.
+The `#Disable` and `#Enable` directives are Visual Basic source code compiler directives. They are used to disable and re-enable all or specific warnings for regions of code.
+
+```vb
+    Dim variable1    'warning BC42024: Unused local variable: 'variable1'.
+#Disable Warning
+    Dim variable2    'no warning
+#Enable Warning
+    Dim variable3    'warning BC42024: Unused local variable: 'variable3'.
+```
 
 ```vb
 ' Suppress warning about no awaits in this method.

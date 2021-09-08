@@ -2,7 +2,7 @@
 title: "WCF Service Host (WcfSvcHost.exe)"
 description: Use WCF Service Host to host and test a service you have implemented. You can test the service using WCF Test Client or your own client.
 ms.date: "03/30/2017"
-ms.assetid: 8643a63d-a357-4c39-bd6c-cdfdf71e370e
+ms.topic: reference
 ---
 # WCF Service Host (WcfSvcHost.exe)
 
@@ -10,7 +10,7 @@ Windows Communication Foundation (WCF) Service Host (WcfSvcHost.exe) allows you 
 
 ## WCF Service Host
 
-WCF Service Host enumerates the services in a WCF service project, loads the project’s configuration, and instantiates a host for each service that it finds. The tool is integrated into Visual Studio through the WCF Service template and is invoked when you start to debug your project.
+WCF Service Host enumerates the services in a WCF service project, loads the project's configuration, and instantiates a host for each service that it finds. The tool is integrated into Visual Studio through the WCF Service template and is invoked when you start to debug your project.
 
 By using WCF Service Host, you can host a WCF service (in a WCF service library project) without writing extra code or committing to a specific host during development.
 

@@ -1,17 +1,17 @@
 ---
 title: "Breaking change: Thread.Abort is obsolete"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where the Thread.Abort APIs are obsolete.
+description: Learn about the .NET 5 breaking change in core .NET libraries where the Thread.Abort APIs are obsolete.
 ms.date: 11/01/2020
 ---
 # Thread.Abort is obsolete
 
-The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> APIs are obsolete. Projects that target .NET 5.0 or a later version will encounter compile-time warning `SYSLIB0006` if these methods are called.
+The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> APIs are obsolete. Projects that target .NET 5 or a later version will encounter compile-time warning `SYSLIB0006` if these methods are called.
 
 ## Change description
 
 Previously, calls to <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> did not produce compile-time warnings, however, the method did throw a <xref:System.PlatformNotSupportedException> at run time.
 
-Starting in .NET 5.0, <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> is marked obsolete as warning. Calling this method produces compiler warning `SYSLIB0006`. The implementation of the method is unchanged, and it continues to throw a <xref:System.PlatformNotSupportedException>.
+Starting in .NET 5, <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> is marked obsolete as warning. Calling this method produces compiler warning `SYSLIB0006`. The implementation of the method is unchanged, and it continues to throw a <xref:System.PlatformNotSupportedException>.
 
 ## Reason for change
 

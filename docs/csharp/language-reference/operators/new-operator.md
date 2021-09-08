@@ -1,6 +1,6 @@
 ---
-description: "new operator - C# reference"
 title: "new operator - C# reference"
+description: "Learn about the C# new operator that is used to create a new instance of a type."
 ms.date: 10/02/2020
 f1_keywords:
  - new_CSharpKeyword
@@ -46,7 +46,7 @@ For more information about arrays, see [Arrays](../../programming-guide/arrays/i
 
 ## Instantiation of anonymous types
 
-To create an instance of an [anonymous type](../../programming-guide/classes-and-structs/anonymous-types.md), use the `new` operator and object initializer syntax:
+To create an instance of an [anonymous type](../../fundamentals/types/anonymous-types.md), use the `new` operator and object initializer syntax:
 
 [!code-csharp-interactive[anonymous type](snippets/shared/NewOperator.cs#AnonymousType)]
 

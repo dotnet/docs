@@ -75,7 +75,7 @@ An anonymous type is constructed by the compiler and the type name is only avail
 select new {name = cust.Name, phone = cust.Phone};
 ```
 
-For more information, see [Anonymous Types](../../classes-and-structs/anonymous-types.md).
+For more information, see [Anonymous Types](../../../fundamentals/types/anonymous-types.md).
 
 ## Extension Methods
 

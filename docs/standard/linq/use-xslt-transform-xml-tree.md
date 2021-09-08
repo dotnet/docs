@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 373a2699-d4c5-471b-9bda-c1f0ab73b477
+ms.topic: how-to
 ---
 # Use XSLT to transform an XML tree (LINQ to XML)
 

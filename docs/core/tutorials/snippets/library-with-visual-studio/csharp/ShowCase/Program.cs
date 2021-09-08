@@ -15,7 +15,7 @@ class Program
             string input = Console.ReadLine();
             if (string.IsNullOrEmpty(input)) break;
             Console.WriteLine($"Input: {input} {"Begins with uppercase? ",30}: " +
-                              $"{(input.StartsWithUpper() ? "Yes" : "No")}\n");
+                              $"{(input.StartsWithUpper() ? "Yes" : "No")}{Environment.NewLine}");
             row += 3;
         } while (true);
         return;
@@ -29,7 +29,7 @@ class Program
                 Console.ReadKey();
             }
             Console.Clear();
-            Console.WriteLine("\nPress <Enter> only to exit; otherwise, enter a string and press <Enter>:\n");
+            Console.WriteLine($"{Environment.NewLine}Press <Enter> only to exit; otherwise, enter a string and press <Enter>:{Environment.NewLine}");
             row = 3;
         }
     }

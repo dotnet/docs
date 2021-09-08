@@ -1,6 +1,6 @@
 ---
 title: "C# operators and expressions - C# reference"
-description: "Learn about C# operators and expressions, operator precedence, and operator associativity"
+description: "Learn about C# operators and expressions, operator precedence, and operator associativity."
 ms.date: 08/04/2020
 f1_keywords: 
   - "cs.operators"

@@ -149,7 +149,7 @@ The stages in the boards aren't the only organizational tool. Depending on the c
 
 The description field supports the normal styles you'd expect (bold, italic underscore and strike through) and the ability to insert images. This makes it a powerful tool for use when specifying work or bugs.
 
-Tasks can be rolled up into features, which define a larger unit of work. Features, in turn, can be [rolled up into epics](/azure/devops/boards/backlogs/define-features-epics?view=azure-devops). Classifying tasks in this hierarchy makes it much easier to understand how close a large feature is to rolling out.
+Tasks can be rolled up into features, which define a larger unit of work. Features, in turn, can be [rolled up into epics](/azure/devops/boards/backlogs/define-features-epics?view=azure-devops&preserve-view=true). Classifying tasks in this hierarchy makes it much easier to understand how close a large feature is to rolling out.
 
 ![Figure 10-6 Work item types configured by default in the Basic process template](./media/board-issue-types.png)
 
@@ -251,7 +251,7 @@ This build definition uses a number of built-in tasks that make creating builds 
 
 Builds can be triggered manually, by a check-in, on a schedule, or by the completion of another build. In most cases, building on every check-in is desirable. Builds can be filtered so that different builds run against different parts of the repository or against different branches. This allows for scenarios like running fast builds with reduced testing on pull requests and running a full regression suite against the trunk on a nightly basis.
 
-The end result of a build is a collection of files known as build artifacts. These artifacts can be passed along to the next step in the build process or added to an Azure Artifact feed, so they can be consumed by other builds.
+The end result of a build is a collection of files known as build artifacts. These artifacts can be passed along to the next step in the build process or added to an Azure Artifacts feed, so they can be consumed by other builds.
 
 ### Azure DevOps releases
 

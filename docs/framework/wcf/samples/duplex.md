@@ -8,7 +8,7 @@ ms.assetid: bc5de6b6-1a63-42a3-919a-67d21bae24e0
 ---
 # Duplex
 
-The Duplex sample demonstrates how to define and implement a duplex contract. Duplex communication occurs when a client establishes a session with a service and gives the service a channel on which the service can send messages back to the client. This sample is based on the [Getting Started](getting-started-sample.md). A duplex contract is defined as a pair of interfaces—a primary interface from the client to the service and a callback interface from the service to the client. In this sample, the `ICalculatorDuplex` interface allows the client to perform math operations, calculating the result over a session. The service returns results on the `ICalculatorDuplexCallback` interface. A duplex contract requires a session, because a context must be established to correlate the set of messages being sent between the client and the service.
+The [Duplex sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how to define and implement a duplex contract. Duplex communication occurs when a client establishes a session with a service and gives the service a channel on which the service can send messages back to the client. This sample is based on the [Getting Started](getting-started-sample.md). A duplex contract is defined as a pair of interfaces—a primary interface from the client to the service and a callback interface from the service to the client. In this sample, the `ICalculatorDuplex` interface allows the client to perform math operations, calculating the result over a session. The service returns results on the `ICalculatorDuplexCallback` interface. A duplex contract requires a session, because a context must be established to correlate the set of messages being sent between the client and the service.
 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
@@ -180,12 +180,3 @@ When you run the sample, you see the messages that are returned to the client on
         </binding>
     </wsDualHttpBinding>
     ```
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Service\Duplex`

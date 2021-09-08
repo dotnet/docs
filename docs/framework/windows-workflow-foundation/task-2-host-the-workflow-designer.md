@@ -2,7 +2,7 @@
 description: "Learn more about: Task 2: Host the Workflow Designer"
 title: "Task 2: Host the Workflow Designer"
 ms.date: "03/30/2017"
-ms.assetid: 0a29b138-270d-4846-b78e-2b875e34e501
+ms.topic: "tutorial"
 ---
 # Task 2: Host the Workflow Designer
 

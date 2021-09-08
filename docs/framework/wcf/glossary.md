@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Communication Foundation [WCF], glossary"
   - "WCF [WCF], glossary"
-ms.assetid: 39cd36f4-8a28-4d0b-a830-98d55c9d30ae
+ms.topic: reference
 ---
 
 # Windows Communication Foundation Glossary for .NET Framework 4.5

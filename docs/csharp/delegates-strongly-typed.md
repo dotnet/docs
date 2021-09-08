@@ -13,7 +13,7 @@ ms.assetid: 564a683d-352b-4e57-8bac-b466529daf6b
 In the previous article, you saw that you create specific delegate
 types using the `delegate` keyword.
 
-The abstract Delegate class provide the infrastructure for loose coupling
+The abstract Delegate class provides the infrastructure for loose coupling
 and invocation. Concrete Delegate types become much more useful by embracing
 and enforcing type safety for the methods that are added to the invocation
 list for a delegate object. When you use the `delegate` keyword and define
@@ -25,7 +25,7 @@ after a time. Every new feature requires new delegate types.
 
 Thankfully, this isn't necessary. The .NET Core framework contains several
 types that you can reuse whenever you need delegate types. These are
-[generic](programming-guide/generics/index.md) definitions so you can declare customizations
+[generic](fundamentals/types/generics.md) definitions so you can declare customizations
 when you need new method declarations.
 
 The first of these types is the <xref:System.Action> type, and several variations:

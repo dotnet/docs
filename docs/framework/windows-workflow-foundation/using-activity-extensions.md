@@ -2,7 +2,7 @@
 description: "Learn more about: Using Activity Extensions"
 title: "Using Activity Extensions"
 ms.date: "03/30/2017"
-ms.assetid: 500eb96a-c009-4247-b6b5-b36faffdf715
+ms.topic: "how-to"
 ---
 # Using Activity Extensions
 

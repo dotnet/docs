@@ -5,25 +5,25 @@ Class MyMethodInfo
     Public Shared Sub Main()
         Console.WriteLine("Reflection.MethodInfo")
         ' Gets and displays the Type.
-        Dim MyType As Type = Type.GetType("System.Reflection.FieldInfo")
+        Dim myType As Type = Type.GetType("System.Reflection.FieldInfo")
         ' Specifies the member for which you want type information.
-        Dim Mymethodinfo As MethodInfo = MyType.GetMethod("GetValue")
-        Console.WriteLine((MyType.FullName & "." & Mymethodinfo.Name))
+        Dim myMethodInfo As MethodInfo = myType.GetMethod("GetValue")
+        Console.WriteLine((myType.FullName & "." & myMethodInfo.Name))
         ' Gets and displays the MemberType property.
-        Dim Mymembertypes As MemberTypes = Mymethodinfo.MemberType
-        If MemberTypes.Constructor = Mymembertypes Then
+        Dim myMemberTypes As MemberTypes = myMethodInfo.MemberType
+        If MemberTypes.Constructor = myMemberTypes Then
             Console.WriteLine("MemberType is of type All")
-        ElseIf MemberTypes.Custom = Mymembertypes Then
+        ElseIf MemberTypes.Custom = myMemberTypes Then
             Console.WriteLine("MemberType is of type Custom")
-        ElseIf MemberTypes.Event = Mymembertypes Then
+        ElseIf MemberTypes.Event = myMemberTypes Then
             Console.WriteLine("MemberType is of type Event")
-        ElseIf MemberTypes.Field = Mymembertypes Then
+        ElseIf MemberTypes.Field = myMemberTypes Then
             Console.WriteLine("MemberType is of type Field")
-        ElseIf MemberTypes.Method = Mymembertypes Then
+        ElseIf MemberTypes.Method = myMemberTypes Then
             Console.WriteLine("MemberType is of type Method")
-        ElseIf MemberTypes.Property = Mymembertypes Then
+        ElseIf MemberTypes.Property = myMemberTypes Then
             Console.WriteLine("MemberType is of type Property")
-        ElseIf MemberTypes.TypeInfo = Mymembertypes Then
+        ElseIf MemberTypes.TypeInfo = myMemberTypes Then
             Console.WriteLine("MemberType is of type TypeInfo")
         End If
         Return

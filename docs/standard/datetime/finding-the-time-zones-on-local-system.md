@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "time zones [.NET], retrieving"
   - "UTC times, finding local system time zones"
   - "time zones [.NET], UTC"
-ms.assetid: 3f63b1bc-9a4b-4bde-84ea-ab028a80d3e1
+ms.topic: how-to
 ---
 # Finding the time zones defined on a local system
 

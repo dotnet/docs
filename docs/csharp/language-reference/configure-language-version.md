@@ -2,7 +2,7 @@
 title: C# language versioning - C# Guide
 description: Learn about how the C# language version is determined based on your project and the reasons behind that choice. Learn how to override the default manually.
 ms.custom: "updateeachrelease"
-ms.date: 08/11/2020
+ms.date: 07/06/2021
 ---
 
 # C# language versioning
@@ -26,13 +26,14 @@ The compiler determines a default based on these rules:
 
 | Target framework | version | C# language version default |
 |------------------|---------|-----------------------------|
-| .NET             | 5.x     | C# 9.0                      |
-| .NET Core        | 3.x     | C# 8.0                      |
-| .NET Core        | 2.x     | C# 7.3                      |
-| .NET Standard    | 2.1     | C# 8.0                      |
-| .NET Standard    | 2.0     | C# 7.3                      |
-| .NET Standard    | 1.x     | C# 7.3                      |
-| .NET Framework   | all     | C# 7.3                      |
+| .NET             | 6.x     | C# 10.0                     |
+| .NET             | 5.x     | C#  9.0                     |
+| .NET Core        | 3.x     | C#  8.0                     |
+| .NET Core        | 2.x     | C#  7.3                     |
+| .NET Standard    | 2.1     | C#  8.0                     |
+| .NET Standard    | 2.0     | C#  7.3                     |
+| .NET Standard    | 1.x     | C#  7.3                     |
+| .NET Framework   | all     | C#  7.3                     |
 
 When your project targets a preview framework that has a corresponding preview language version, the language version used is the preview language version. You use the latest features with that preview in any environment, without affecting projects that target a released .NET Core version.
 
@@ -45,10 +46,10 @@ If you must specify your C# version explicitly, you can do so in several ways:
 
 - Manually edit your [project file](#edit-the-project-file).
 - Set the language version [for multiple projects in a subdirectory](#configure-multiple-projects).
-- Configure the [`-langversion` compiler option](compiler-options/langversion-compiler-option.md).
+- Configure the [**LangVersion** compiler option](compiler-options/language.md#langversion).
 
 > [!TIP]
-> To know what language version you're currently using, put `#error version` (case sensitive) in your code. This makes the compiler produce a diagnostic, CS8304, with a message containing the compiler version being used and the current selected language version.
+> To know what language version you're currently using, put `#error version` (case sensitive) in your code. This makes the compiler report a compiler error, CS8304, with a message containing the compiler version being used and the current selected language version. See [#error (C# Reference)](preprocessor-directives.md#error-and-warning-information) for more information.
 
 ### Edit the project file
 
@@ -74,39 +75,10 @@ To configure multiple projects, you can create a **Directory.Build.props** file 
 </Project>
 ```
 
-Builds in all subdirectories of the directory containing that file will use the preview C# version. For more information, see the article on [Customize your build](/visualstudio/msbuild/customize-your-build).
+Builds in all subdirectories of the directory containing that file will use the preview C# version. For more information, see [Customize your build](/visualstudio/msbuild/customize-your-build).
 
 ## C# language version reference
 
 The following table shows all current C# language versions. Your compiler may not necessarily understand every value if it's older. If you install the latest .NET SDK, then you have access to everything listed.
 
 [!INCLUDE [langversion-table](includes/langversion-table.md)]
-
-> [!TIP]
-> Open the [Developer Command Prompt for Visual Studio](../../framework/tools/developer-command-prompt-for-vs.md), and run the following command to see the listing of language versions available on your machine.
->
-> ```CMD
-> csc -langversion:?
-> ```
->
-> Questioning the [-langversion](compiler-options/langversion-compiler-option.md) compile option like this, will print something similar to the following:
->
-> ```CMD
-> Supported language versions:
-> default
-> 1
-> 2
-> 3
-> 4
-> 5
-> 6
-> 7.0
-> 7.1
-> 7.2
-> 7.3
-> 8.0
-> 9.0 (default)
-> latestmajor
-> preview
-> latest
-> ```

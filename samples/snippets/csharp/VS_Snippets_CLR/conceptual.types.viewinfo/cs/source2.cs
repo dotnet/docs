@@ -3,21 +3,21 @@ using System;
 using System.IO;
 using System.Reflection;
 
-class Mymemberinfo
+class MyMemberInfo
 {
     public static void Main()
     {
         Console.WriteLine ("\nReflection.MemberInfo");
         // Gets the Type and MemberInfo.
-        Type MyType = Type.GetType("System.IO.File");
-        MemberInfo[] Mymemberinfoarray = MyType.GetMembers();
+        Type myType = Type.GetType("System.IO.File");
+        MemberInfo[] myMemberInfoArray = myType.GetMembers();
         // Gets and displays the DeclaringType method.
         Console.WriteLine("\nThere are {0} members in {1}.",
-            Mymemberinfoarray.Length, MyType.FullName);
-        Console.WriteLine("{0}.", MyType.FullName);
-        if (MyType.IsPublic)
+            myMemberInfoArray.Length, myType.FullName);
+        Console.WriteLine("{0}.", myType.FullName);
+        if (myType.IsPublic)
         {
-            Console.WriteLine("{0} is public.", MyType.FullName);
+            Console.WriteLine("{0} is public.", myType.FullName);
         }
     }
 }

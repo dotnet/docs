@@ -29,17 +29,17 @@ HRESULT DynamicMethodJITCompilationStarted(
   
 ## Parameters  
 
-[in] `functionId`  
-The identifier of the in-memory function for which JIT compilation is started.
+`functionId`  
+[in] The identifier of the in-memory function for which JIT compilation is started.
 
-[in] `fIsSafeToBlock`
-`true` to indicate that blocking may cause the runtime to wait for the calling thread to return from this callback; `false` to indicate that blocking will not affect the operation of the runtime.  
+`fIsSafeToBlock`
+[in] `true` to indicate that blocking may cause the runtime to wait for the calling thread to return from this callback; `false` to indicate that blocking will not affect the operation of the runtime.  
 
-[in] `pILHeader`
-A pointer to the first byte of the method's IL header.
+`pILHeader`
+[in] A pointer to the first byte of the method's IL header.
 
-[in] `cbILHeader`
-The number of bytes in the IL header.
+`cbILHeader`
+[in] The number of bytes in the IL header.
 
 ## Remarks  
 

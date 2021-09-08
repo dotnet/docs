@@ -3,6 +3,7 @@ title: Debug high CPU usage - .NET Core
 description: A tutorial that walks you through debugging high CPU usage in .NET Core.
 ms.topic: tutorial
 ms.date: 07/20/2020
+recommendations: false
 ---
 
 # Debug high CPU usage in .NET Core
@@ -25,7 +26,7 @@ In this tutorial, you will:
 
 The tutorial uses:
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) or a later version.
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version.
 - [Sample debug target](/samples/dotnet/samples/diagnostic-scenarios) to trigger the scenario.
 - [dotnet-trace](dotnet-trace.md) to list processes and generate a profile.
 - [dotnet-counters](dotnet-counters.md) to monitor cpu usage.
@@ -113,12 +114,14 @@ When analyzing a slow request, you need a diagnostics tool that can provide insi
 
 The `perf` tool can be used to generate .NET Core app profiles. Exit the previous instance of the [sample debug target](/samples/dotnet/samples/diagnostic-scenarios).
 
-Set the `COMPlus_PerfMapEnabled` environment variable to cause the .NET Core app to create a `map` file in the `/tmp` directory. This `map` file is used by `perf` to map CPU address to JIT-generated functions by name. For more information, see [Write perf map](../run-time-config/debugging-profiling.md#write-perf-map).
+Set the `DOTNET_PerfMapEnabled` environment variable to cause the .NET Core app to create a `map` file in the `/tmp` directory. This `map` file is used by `perf` to map CPU address to JIT-generated functions by name. For more information, see [Write perf map](../run-time-config/debugging-profiling.md#write-perf-map).
+
+[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
 Run the [sample debug target](/samples/dotnet/samples/diagnostic-scenarios) in the same terminal session.
 
 ```dotnetcli
-export COMPlus_PerfMapEnabled=1
+export DOTNET_PerfMapEnabled=1
 dotnet run
 ```
 
@@ -166,7 +169,7 @@ Open the `nettrace` with [`PerfView`](https://github.com/microsoft/perfview/blob
 - [dotnet-trace](dotnet-trace.md) to list processes
 - [dotnet-counters](dotnet-counters.md) to check managed memory usage
 - [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file
-- [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/master/documentation/tutorial)
+- [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/main/documentation/tutorial)
 
 ## Next steps
 

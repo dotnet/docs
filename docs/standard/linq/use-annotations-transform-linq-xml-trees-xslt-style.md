@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 12a95902-a6b7-4a1e-ad52-04a518db226f
+ms.topic: how-to
 ---
 # How to use annotations to transform LINQ to XML trees in an XSLT style (LINQ to XML)
 

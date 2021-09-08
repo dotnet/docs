@@ -2,6 +2,7 @@
 title: Publish a .NET console application using Visual Studio for Mac
 description: Learn how to use Visual Studio for Mac to create the set of files that are needed to run a .NET application.
 ms.date: 11/30/2020
+recommendations: false
 ---
 # Tutorial: Publish a .NET console application using Visual Studio for Mac
 
@@ -57,7 +58,7 @@ As the preceding image shows, the published output includes the following files:
 
 * *HelloWorld.runtimeconfig.json*
 
-   This is the application's run-time configuration file. It identifies the version of .NET that your application was built to run on. You can also add configuration options to it. For more information, see [.NET run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
+   This is the application's runtime configuration file. It identifies the version of .NET that your application was built to run on. You can also add configuration options to it. For more information, see [.NET runtime configuration settings](../run-time-config/index.md#runtimeconfigjson).
 
 ## Run the published app
 

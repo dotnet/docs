@@ -33,20 +33,20 @@ In the Azure portal, select the **HDInsight Spark cluster** you created in the p
 
 1. From the portal, select **Overview**, and then select **Ambari home**. If prompted, enter the login credentials for the cluster.
 
-   ![Stop Livy Server](./media/hdinsight-notebook-installation/select-ambari.png)
+   ![Select Ambari home under Cluster dashboards](./media/hdinsight-notebook-installation/select-ambari.png)
 
 2. Select **Spark2** from the left navigation menu, and select **LIVY FOR SPARK2 SERVER**.
 
-   ![Stop Livy Server](./media/hdinsight-notebook-installation/select-livyserver.png)
+   ![Select Livy for Spark2 Server](./media/hdinsight-notebook-installation/select-livyserver.png)
 
 3. Select **hn0... host**.
 
-   ![Stop Livy Server](./media/hdinsight-notebook-installation/select-host.png)
+   ![Hosts showing "hno..." selected](./media/hdinsight-notebook-installation/select-host.png)
 
 4. Select the ellipsis next to **Livy for Spark2 Server** and select **Stop**. When prompted, select **OK** to proceed.
 
    Stop Livy for Spark2 Server.
-   ![Stop Livy Server](./media/hdinsight-notebook-installation/stop-server.png)
+   ![Select the ellipsis and then Stop](./media/hdinsight-notebook-installation/stop-server.png)
 
 5. Repeat the previous steps for **hn1... host**.
 
@@ -54,7 +54,7 @@ In the Azure portal, select the **HDInsight Spark cluster** you created in the p
 
 1. The `install-interactive-notebook.sh` is a script that installs .NET for Apache Spark and makes changes to Apache Livy and sparkmagic. Before you submit a script action to HDInsight, you need to create and upload `install-interactive-notebook.sh`.
 
-   Create a new file named **install-interactive-notebook.sh** in your local computer and paste the contents of [install-interactive-notebook.sh contents](https://raw.githubusercontent.com/dotnet/spark/master/deployment/HDI-Spark/Notebooks/install-interactive-notebook.sh).
+   Create a new file named **install-interactive-notebook.sh** in your local computer and paste the contents of [install-interactive-notebook.sh contents](https://raw.githubusercontent.com/dotnet/spark/main/deployment/HDI-Spark/Notebooks/install-interactive-notebook.sh).
 
    Upload the script to a [URI](/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux#understand-script-actions) that's accessible from the HDInsight cluster. For example, `https://<my storage account>.blob.core.windows.net/<my container>/<some dir>/install-interactive-notebook.sh`.
 
@@ -82,9 +82,9 @@ Follow the instructions in the [Stop Livy server](#stop-the-livy-server) section
 
 2. Select **Spark2** and **CONFIGS**. Then, select **Custom spark2-defaults**.
 
-   ![Set Configs](./media/hdinsight-notebook-installation/spark-configs.png)
+   ![Configs tab in Ambari](./media/hdinsight-notebook-installation/spark-configs.png)
 
-3. Select **Add Property...** to add Spark default settings.
+3. Select **Add Property** to add Spark default settings.
 
    ![Add Property](./media/hdinsight-notebook-installation/add-property.png)
 
@@ -104,7 +104,7 @@ Follow the instructions in the [Stop Livy server](#stop-the-livy-server) section
 
    For example, the following image captures the setting for adding property 1:
 
-   ![Set Configs](./media/hdinsight-notebook-installation/add-sparkconfig.png)
+   ![Add a text property](./media/hdinsight-notebook-installation/add-sparkconfig.png)
 
    After adding the three properties, select **SAVE**. If you see a warning screen of config recommendations, select **PROCEED ANYWAY**.
 
@@ -112,7 +112,7 @@ Follow the instructions in the [Stop Livy server](#stop-the-livy-server) section
 
    After adding the new properties, you need to restart components that were affected by the changes. At the top, select **RESTART**, and then **Restart All Affected** from the drop-down.
 
-   ![Set Configs](./media/hdinsight-notebook-installation/restart-affected.png)
+   ![Configs tab with Restart > Restart All Affected highlighted](./media/hdinsight-notebook-installation/restart-affected.png)
 
    When prompted, select **CONFIRM RESTART ALL** to continue, then click **OK** to finish.
 
@@ -137,7 +137,7 @@ After finishing the previous steps, you can now submit your .NET for Apache Spar
    df.Show();
    ```
 
-   ![Submit Spark Job](./media/hdinsight-notebook-installation/create-df.png)
+   ![Create a DataFrame showing command execution](./media/hdinsight-notebook-installation/create-df.png)
 
    Use the following code snippet to register a user-defined function (UDF) and use the UDF with DataFrames:
 
@@ -146,7 +146,7 @@ After finishing the previous steps, you can now submit your .NET for Apache Spar
    df.Select(myawesomeudf(df["id"])).Show();
    ```
 
-   ![Submit Spark Job](./media/hdinsight-notebook-installation/run-udf.png)
+   ![Register a UDF and use it](./media/hdinsight-notebook-installation/run-udf.png)
 
 ## Next steps
 

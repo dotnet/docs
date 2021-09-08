@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Remoting APIs are obsolete"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where some remoting-related APIs are marked as obsolete and generate a warning with a custom diagnostic ID.
+description: Learn about the .NET 5 breaking change in core .NET libraries where some remoting-related APIs are marked as obsolete and generate a warning with a custom diagnostic ID.
 ms.date: 11/01/2020
 ---
 # Remoting APIs are obsolete
@@ -18,7 +18,7 @@ The following remoting APIs are marked obsolete.
 
 In .NET Framework 2.x - 4.x, the <xref:System.MarshalByRefObject.GetLifetimeService> and <xref:System.MarshalByRefObject.InitializeLifetimeService> methods control the lifetime of instances involved with .NET remoting. In .NET Core 2.x- 3.x, these methods always throw a <xref:System.PlatformNotSupportedException> at run time.
 
-In .NET 5.0 and later versions, the <xref:System.MarshalByRefObject.GetLifetimeService> and <xref:System.MarshalByRefObject.InitializeLifetimeService> methods are marked obsolete as warning, but continue to throw a <xref:System.PlatformNotSupportedException> at run time.
+In .NET 5 and later versions, the <xref:System.MarshalByRefObject.GetLifetimeService> and <xref:System.MarshalByRefObject.InitializeLifetimeService> methods are marked obsolete as warning, but continue to throw a <xref:System.PlatformNotSupportedException> at run time.
 
 ```csharp
 // MemoryStream, like all Stream instances, subclasses MarshalByRefObject.
@@ -31,7 +31,7 @@ This is a compile-time only change. There is no run-time change from previous ve
 
 ## Reason for change
 
-[.NET remoting](/previous-versions/dotnet/netframework-1.1/kwdt6w2k(v=vs.71)) is a legacy technology. It allows instantiating an object in another process (potentially even on a different machine) and interacting with that object as if it were an ordinary, in-process .NET object instance. The .NET remoting infrastructure only exists in .NET Framework 2.x - 4.x. .NET Core and .NET 5.0 and later versions don't have support for .NET remoting, and the remoting APIs either don't exist or always throw exceptions on these runtimes.
+[.NET remoting](/previous-versions/dotnet/netframework-1.1/kwdt6w2k(v=vs.71)) is a legacy technology. It allows instantiating an object in another process (potentially even on a different machine) and interacting with that object as if it were an ordinary, in-process .NET object instance. The .NET remoting infrastructure only exists in .NET Framework 2.x - 4.x. .NET Core and .NET 5 and later versions don't have support for .NET remoting, and the remoting APIs either don't exist or always throw exceptions on these runtimes.
 
 To help steer developers away from these APIs, we are obsoleting selected remoting-related APIs. These APIs may be removed entirely in a future version of .NET.
 

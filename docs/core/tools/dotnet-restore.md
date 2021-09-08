@@ -73,7 +73,9 @@ There are three specific settings that `dotnet restore` ignores:
 
 - [trustedSigners](/nuget/schema/nuget-config-file#trustedsigners-section)
 
-  This setting isn't applicable as [NuGet doesn't yet support cross-platform verification](https://github.com/NuGet/Home/issues/7939) of trusted packages.
+  Support for cross-platform package signature verification was added in the .NET 5.0.100 SDK.
+
+[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
 
 ## Arguments
 
@@ -83,9 +85,9 @@ There are three specific settings that `dotnet restore` ignores:
 
 ## Options
 
-- **`--configfile <FILE>`**
+<!-- markdownlint-disable MD012 -->
 
-  The NuGet configuration file (*nuget.config*) to use for the restore operation.
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 - **`--disable-parallel`**
 
@@ -99,17 +101,13 @@ There are three specific settings that `dotnet restore` ignores:
 
   Forces restore to reevaluate all dependencies even if a lock file already exists.
 
-- **`-h|--help`**
-
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--ignore-failed-sources`**
 
   Only warn about failed sources if there are packages meeting the version requirement.
 
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action (for example to complete authentication). Since .NET Core 2.1.400.
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`--lock-file-path <LOCK_FILE_PATH>`**
 
@@ -143,9 +141,7 @@ There are three specific settings that `dotnet restore` ignores:
 
   Enables project lock file to be generated and used with restore.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Default value is `minimal`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ## Examples
 

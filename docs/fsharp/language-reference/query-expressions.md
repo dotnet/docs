@@ -72,7 +72,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
 
 ### Table 1. Query Operators
 
-<table style="width:100%">
+<table>
   <tr>
     <th>Operator</th>
     <th>Description</th>
@@ -495,7 +495,7 @@ The following table shows some common Transact-SQL queries and their equivalents
 
 ### Table 2. Transact-SQL and F# Query Expressions
 
-<table style="width:100%">
+<table>
   <tr>
     <th>Transact-SQL (not case sensitive)</th>
     <th>F# Query Expression (case sensitive)</th>
@@ -2432,4 +2432,4 @@ end
 
 - [F# Language Reference](index.md)
 - [QueryBuilder Class](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-linq-querybuilder.html)
-- [Computation Expressions](Computation-Expressions.md)
+- [Computation Expressions](computation-expressions.md)

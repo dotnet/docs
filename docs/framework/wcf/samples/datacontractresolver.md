@@ -6,11 +6,11 @@ ms.assetid: 6c200c02-bc14-4b8d-bbab-9da31185b805
 ---
 # DataContractResolver
 
-This sample demonstrates how the serialization and deserialization processes can be customized by using the <xref:System.Runtime.Serialization.DataContractResolver> class. This sample shows how to use a DataContractResolver to map CLR types to and from an xsi:type representation during serialization and deserialization.
+The [DataContractResolver sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how the serialization and deserialization processes can be customized by using the <xref:System.Runtime.Serialization.DataContractResolver> class. This sample shows how to use a DataContractResolver to map CLR types to and from an xsi:type representation during serialization and deserialization.
 
 ## Sample Details
 
- The sample defines the following CLR types.
+The sample defines the following CLR types.
 
 ```csharp
 using System;
@@ -44,13 +44,13 @@ namespace Types
 }
 ```
 
- The sample loads the assembly, extracts each of these types, and then serializes and deserializes them. The <xref:System.Runtime.Serialization.DataContractResolver> is plugged into the serialization process by passing an instance of the <xref:System.Runtime.Serialization.DataContractResolver>-derived class to the <xref:System.Runtime.Serialization.DataContractSerializer> constructor, as shown in the following example.
+The sample loads the assembly, extracts each of these types, and then serializes and deserializes them. The <xref:System.Runtime.Serialization.DataContractResolver> is plugged into the serialization process by passing an instance of the <xref:System.Runtime.Serialization.DataContractResolver>-derived class to the <xref:System.Runtime.Serialization.DataContractSerializer> constructor, as shown in the following example.
 
 ```csharp
 this.serializer = new DataContractSerializer(typeof(Object), null, int.MaxValue, false, true, null, new MyDataContractResolver(assembly));
 ```
 
- The sample then serializes the CLR types as shown in the following code example.
+The sample then serializes the CLR types as shown in the following code example.
 
 ```csharp
 Assembly assembly = Assembly.Load(new AssemblyName("Types"));
@@ -79,7 +79,7 @@ public void serialize(Type type)
 }
 ```
 
- The sample then deserializes the xsi:types as shown in the following code example.
+The sample then deserializes the xsi:types as shown in the following code example.
 
 ```csharp
 public void deserialize(Type type)
@@ -94,9 +94,9 @@ public void deserialize(Type type)
 }
 ```
 
- Since the custom <xref:System.Runtime.Serialization.DataContractResolver> is passed in to the <xref:System.Runtime.Serialization.DataContractSerializer> constructor, the <xref:System.Runtime.Serialization.DataContractResolver.TryResolveType%2A> is called during serialization to map a CLR type to an equivalent `xsi:type`. Similarly the <xref:System.Runtime.Serialization.DataContractResolver.ResolveName%2A> is called during deserialization to map the `xsi:type` to an equivalent CLR type. In this sample, the <xref:System.Runtime.Serialization.DataContractResolver> is defined as shown in the following example.
+Since the custom <xref:System.Runtime.Serialization.DataContractResolver> is passed in to the <xref:System.Runtime.Serialization.DataContractSerializer> constructor, the <xref:System.Runtime.Serialization.DataContractResolver.TryResolveType%2A> is called during serialization to map a CLR type to an equivalent `xsi:type`. Similarly the <xref:System.Runtime.Serialization.DataContractResolver.ResolveName%2A> is called during deserialization to map the `xsi:type` to an equivalent CLR type. In this sample, the <xref:System.Runtime.Serialization.DataContractResolver> is defined as shown in the following example.
 
- The following code example is a class deriving from <xref:System.Runtime.Serialization.DataContractResolver>.
+The following code example is a class deriving from <xref:System.Runtime.Serialization.DataContractResolver>.
 
 ```csharp
 class MyDataContractResolver : DataContractResolver
@@ -145,23 +145,14 @@ class MyDataContractResolver : DataContractResolver
 }
 ```
 
- As part of the sample, the Types project generates the assembly with all the types that are used in this sample. Use this project to add, remove or modify the types that will be serialized.
+As part of the sample, the Types project generates the assembly with all the types that are used in this sample. Use this project to add, remove or modify the types that will be serialized.
 
 #### To use this sample
 
-1. Using Visual Studio 2012, open the DCRSample.sln solution file.
+1. Using Visual Studio, open the DCRSample.sln solution file.
 
-2. To run the solution, press F5
+2. To run the solution, press **F5**.
 
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->
-> `<InstallDrive>:\WF_WCF_Samples`  
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\DataContractResolver`  
-  
 ## See also
 
 - [Using a Data Contract Resolver](../feature-details/using-a-data-contract-resolver.md)

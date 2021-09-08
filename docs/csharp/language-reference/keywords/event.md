@@ -32,13 +32,13 @@ The following keywords apply to events.
 |Keyword|Description|For more information|
 |-------------|-----------------|--------------------------|
 |[static](./static.md)|Makes the event available to callers at any time, even if no instance of the class exists.|[Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md)|
-|[virtual](./virtual.md)|Allows derived classes to override the event behavior by using the [override](./override.md) keyword.|[Inheritance](../../programming-guide/classes-and-structs/inheritance.md)|
+|[virtual](./virtual.md)|Allows derived classes to override the event behavior by using the [override](./override.md) keyword.|[Inheritance](../../fundamentals/object-oriented/inheritance.md)|
 |[sealed](./sealed.md)|Specifies that for derived classes it is no longer virtual.||
 |[abstract](./abstract.md)|The compiler will not generate the `add` and `remove` event accessor blocks and therefore derived classes must provide their own implementation.||
 
 An event may be declared as a static event by using the [static](./static.md) keyword. This makes the event available to callers at any time, even if no instance of the class exists. For more information, see [Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md).
 
-An event can be marked as a virtual event by using the [virtual](./virtual.md) keyword. This enables derived classes to override the event behavior by using the [override](./override.md) keyword. For more information, see [Inheritance](../../programming-guide/classes-and-structs/inheritance.md). An event overriding a virtual event can also be [sealed](./sealed.md), which specifies that for derived classes it is no longer virtual. Lastly, an event can be declared [abstract](./abstract.md), which means that the compiler will not generate the `add` and `remove` event accessor blocks. Therefore derived classes must provide their own implementation.
+An event can be marked as a virtual event by using the [virtual](./virtual.md) keyword. This enables derived classes to override the event behavior by using the [override](./override.md) keyword. For more information, see [Inheritance](../../fundamentals/object-oriented/inheritance.md). An event overriding a virtual event can also be [sealed](./sealed.md), which specifies that for derived classes it is no longer virtual. Lastly, an event can be declared [abstract](./abstract.md), which means that the compiler will not generate the `add` and `remove` event accessor blocks. Therefore derived classes must provide their own implementation.
 
 ## C# language specification
 

@@ -3,7 +3,7 @@ title: Use dependency injection in .NET
 description: Learn how to use dependency injection in your .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/13/2020
+ms.date: 04/12/2021
 ms.topic: tutorial
 no-loc: [Transient, Scoped, Singleton, Example]
 ---
@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) or later.
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
 - Familiarity with creating new .NET applications and installing NuGet packages.
 
 ## Create a new console application
@@ -80,10 +80,10 @@ Update *Program.cs* with the following code:
 
 :::code language="csharp" source="snippets/configuration/console-di/Program.cs" range="1-18,35-60" highlight="22-26":::
 
-> Each `services.Add{SERVICE_NAME}` extension method adds, and potentially configures, services. We recommended that apps follow this convention. Place extension methods in the <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> namespace to encapsulate groups of service registrations. Including the namespace portion `Microsoft.Extensions.DependencyInjection` for DI extension methods also:
->
-> - Allows them to be displayed in [IntelliSense](/visualstudio/ide/using-intellisense) without adding additional `using` blocks.
-> - Prevents excessive `using` statements in the `Program` or `Startup` classes where these extension methods are typically called.
+Each `services.Add{SERVICE_NAME}` extension method adds (and potentially configures) services. We recommended that apps follow this convention. Place extension methods in the <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> namespace to encapsulate groups of service registrations. Including the namespace portion `Microsoft.Extensions.DependencyInjection` for DI extension methods also:
+
+- Allows them to be displayed in [IntelliSense](/visualstudio/ide/using-intellisense) without adding additional `using` blocks.
+- Prevents excessive `using` statements in the `Program` or `Startup` classes where these extension methods are typically called.
 
 The app:
 

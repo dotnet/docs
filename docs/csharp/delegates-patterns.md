@@ -5,7 +5,7 @@ ms.date: 06/20/2016
 ms.assetid: 0ff8fdfd-6a11-4327-b061-0f2526f35b43
 ---
 
-# Common Patterns for Delegates
+# Common patterns for delegates
 
 [Previous](delegates-strongly-typed.md)
 
@@ -33,7 +33,7 @@ public static IEnumerable<TSource> Where<TSource> (this IEnumerable<TSource> sou
 
 This example is repeated with all the methods that are part of LINQ. They
 all rely on delegates for the code that manages the specific query. This API
-design pattern is a very powerful one to learn and understand.
+design pattern is a powerful one to learn and understand.
 
 This simple example illustrates how delegates require very little coupling
 between components. You don't need to create a class that derives from a
@@ -41,7 +41,7 @@ particular base class. You don't need to implement a specific interface.
 The only requirement is to provide the implementation of one method that
 is fundamental to the task at hand.
 
-## Building Your Own Components with Delegates
+## Build Your Own Components with Delegates
 
 Let's build on that example by creating a component using a design that
 relies on delegates.
@@ -68,7 +68,7 @@ make it easy to support storage mechanisms that may be added in the future.
 
 Under this design, the primary log component can be a non-virtual, even
 sealed class. You can plug in any set of delegates to write the messages
-to different storage media. The built in support for multicast delegates
+to different storage media. The built-in support for multicast delegates
 makes it easy to support scenarios where messages must be written to multiple
 locations (a file, and a console).
 
@@ -91,12 +91,12 @@ the WriteMessage delegate declared in the logger:
 
 [!code-csharp[ConnectDelegate](../../samples/snippets/csharp/delegates-and-events/Program.cs#ConnectDelegate "Connect to the delegate")]
 
-## Practices
+### Practices
 
 Our sample so far is fairly simple, but it still demonstrates some
 of the important guidelines for designs involving delegates.
 
-Using the delegate types defined in the Core Framework makes it easier
+Using the delegate types defined in the core framework makes it easier
 for users to work with the delegates. You don't need to define new types,
 and developers using your library do not need to learn new, specialized
 delegate types.
@@ -105,7 +105,7 @@ The interfaces used are as minimal and as flexible as possible: To create
 a new output logger, you must create one method. That method may be a static
 method, or an instance method. It may have any access.
 
-## Formatting Output
+## Format Output
 
 Let's make this first version a bit more robust, and then start
 creating other logging mechanisms.
@@ -121,7 +121,7 @@ that are sent to the log's output.
 
 [!code-csharp[FinalLogger](../../samples/snippets/csharp/delegates-and-events/Logger.cs#LoggerFinal "Finish the Logger")]
 
-## Practices
+### Practices
 
 You've added new features to the logging infrastructure. Because
 the logger component is very loosely coupled to any output mechanism,
@@ -134,7 +134,7 @@ any changes to other locations. In fact, in a larger application, the logger
 output classes might be in a different assembly, and not even need to be
 rebuilt.
 
-## Building a Second Output Engine
+## Build a Second Output Engine
 
 The Log component is coming along well. Let's add one more output
 engine that logs messages to a file. This will be a slightly more
@@ -143,7 +143,7 @@ file operations, and ensures that the file is always closed after
 each write. That ensures that all the data is flushed to disk after
 each message is generated.
 
-Here is that file based logger:
+Here is that file-based logger:
 
 [!code-csharp[FileLogger](../../samples/snippets/csharp/delegates-and-events/FileLogger.cs#FileLogger "Log to files")]
 
@@ -167,9 +167,9 @@ delegates without any other issues to the system:
 Logger.WriteMessage -= LoggingMethods.LogToConsole;
 ```
 
-## Practices
+### Practices
 
-Now, you've added a second output handler for the logging sub-system.
+Now, you've added a second output handler for the logging subsystem.
 This one needs a bit more infrastructure to correctly support the file
 system. The delegate is an instance method. It's also a private method.
 There's no need for greater accessibility because the delegate
@@ -188,14 +188,14 @@ on the invocation won't be invoked.
 
 As a last note, the file logger must manage its resources by opening and
 closing the file on each log message. You could choose to keep the file
-open and implement IDisposable to close the file when you are completed.
+open and implement `IDisposable` to close the file when you are completed.
 Either method has its advantages and disadvantages. Both do create a bit
 more coupling between the classes.
 
-None of the code in the Logger class would need to be updated
+None of the code in the `Logger` class would need to be updated
 in order to support either scenario.
 
-## Handling Null Delegates
+## Handle Null Delegates
 
 Finally, let's update the LogMessage method so that it is robust
 for those cases when no output mechanism is selected. The current
@@ -225,12 +225,11 @@ return type.
 ## Summary of Practices
 
 You've seen the beginnings of a log component that could be expanded
-with other writers, and other features. By using delegates in the design
-these different components are very loosely coupled. This provides
-several advantages. It's very easy to create new output mechanisms
+with other writers, and other features. By using delegates in the design,
+these different components are loosely coupled. This provides
+several advantages. It's easy to create new output mechanisms
 and attach them to the system. These other mechanisms only need one
-method: the method that writes the log message. It's a design that
-is very resilient when new features are added. The contract required
+method: the method that writes the log message. It's a design that's resilient when new features are added. The contract required
 for any writer is to implement one method. That method could be a
 static or instance method. It could be public, private, or any other
 legal access.

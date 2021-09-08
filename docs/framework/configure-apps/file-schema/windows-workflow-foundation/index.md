@@ -2,7 +2,6 @@
 description: "Learn more about: Windows Workflow Foundation Configuration Schema"
 title: "Windows Workflow Foundation Configuration Schema"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: 7ae70357-b150-4342-8f2a-d5eb6f9c6a0d
 ---
 # Windows Workflow Foundation Configuration Schema

@@ -3,25 +3,23 @@
 //<Snippet1>
 public class CalendarEntry
 {
-    // private field
-    private DateTime date;
 
-    // public field (Generally not recommended.)
-    public string day;
+    // private field (Located near wrapping "Date" property).
+    private DateTime _date;
 
-    // Public property exposes date field safely.
+    // Public property exposes _date field safely.
     public DateTime Date
     {
         get
         {
-            return date;
+            return _date;
         }
         set
         {
             // Set some reasonable boundaries for likely birth dates.
             if (value.Year > 1900 && value.Year <= DateTime.Today.Year)
             {
-                date = value;
+                _date = value;
             }
             else
             {
@@ -30,7 +28,10 @@ public class CalendarEntry
         }
     }
 
-    // Public method also exposes date field safely.
+    // public field (Generally not recommended).
+    public string Day;
+
+    // Public method also exposes _date field safely.
     // Example call: birthday.SetDate("1975, 6, 30");
     public void SetDate(string dateString)
     {
@@ -39,7 +40,7 @@ public class CalendarEntry
         // Set some reasonable boundaries for likely birth dates.
         if (dt.Year > 1900 && dt.Year <= DateTime.Today.Year)
         {
-            date = dt;
+            _date = dt;
         }
         else
         {
@@ -51,9 +52,9 @@ public class CalendarEntry
     {
         DateTime dt = Convert.ToDateTime(dateString);
 
-        if (dt.Ticks < date.Ticks)
+        if (dt.Ticks < _date.Ticks)
         {
-            return date - dt;
+            return _date - dt;
         }
         else
         {
@@ -69,7 +70,7 @@ class TestCalendarDate
     {
         //<Snippet2>
         CalendarEntry birthday = new CalendarEntry();
-        birthday.day = "Saturday";
+        birthday.Day = "Saturday";
         //</Snippet2>
     }
 }
@@ -77,7 +78,7 @@ class TestCalendarDate
 //<Snippet3>
 public class CalendarDateWithInitialization
 {
-    public string day = "Monday";
+    public string Day = "Monday";
     //...
 }
 //</Snippet3>

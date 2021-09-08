@@ -21,8 +21,8 @@ ms.prod: dotnet
 
 The .NET IoT Libraries are composed of two NuGet packages:
 
-- [System.Device.Gpio](https://www.nuget.org/packages/System.Device.Gpio/) <span class="docon docon-navigate-external x-hidden-focus"></span>
-- [Iot.Device.Bindings](https://www.nuget.org/packages/Iot.Device.Bindings/) <span class="docon docon-navigate-external x-hidden-focus"></span>
+- [System.Device.Gpio](https://www.nuget.org/packages/System.Device.Gpio/)
+- [Iot.Device.Bindings](https://www.nuget.org/packages/Iot.Device.Bindings/)
 
 ### System.Device.Gpio
 
@@ -38,23 +38,23 @@ The .NET IoT Libraries are composed of two NuGet packages:
 
 The `Iot.Device.Bindings` package:
 
-* Contains [device bindings](https://github.com/dotnet/iot/blob/master/src/devices/README.md) <span class="docon docon-navigate-external x-hidden-focus"></span> to streamline app development by wrapping System.Device.Gpio.
+* Contains [device bindings](https://github.com/dotnet/iot/blob/main/src/devices/README.md) to streamline app development by wrapping System.Device.Gpio.
 * Is community-supported, and additional bindings are added continually.
 
 Commonly used device bindings include:
 
-- [CharacterLcd - LCD character display](https://github.com/dotnet/iot/tree/master/src/devices/CharacterLcd) <span class="docon docon-navigate-external x-hidden-focus"></span>
-- [SN74HC595 - 8-bit shift register](https://github.com/dotnet/iot/tree/master/src/devices/Sn74hc595) <span class="docon docon-navigate-external x-hidden-focus"></span>
-- [BrickPi3](https://github.com/dotnet/iot/tree/master/src/devices/BrickPi3) <span class="docon docon-navigate-external x-hidden-focus"></span>
-- [Max7219 - LED Matrix driver](https://github.com/dotnet/iot/tree/master/src/devices/Max7219) <span class="docon docon-navigate-external x-hidden-focus"></span>
-- [RGBLedMatrix - RGB LED Matrix](https://github.com/dotnet/iot/tree/master/src/devices/RGBLedMatrix) <span class="docon docon-navigate-external x-hidden-focus"></span>
+- [CharacterLcd - LCD character display](https://github.com/dotnet/iot/tree/main/src/devices/CharacterLcd)
+- [SN74HC595 - 8-bit shift register](https://github.com/dotnet/iot/tree/main/src/devices/Sn74hc595)
+- [BrickPi3](https://github.com/dotnet/iot/tree/main/src/devices/BrickPi3)
+- [Max7219 - LED Matrix driver](https://github.com/dotnet/iot/tree/main/src/devices/Max7219)
+- [RGBLedMatrix - RGB LED Matrix](https://github.com/dotnet/iot/tree/main/src/devices/RGBLedMatrix)
 
 ## Supported operating systems
 
 `System.Device.Gpio` is supported on most versions of Linux that support ARM/ARM64 and Windows 10 IoT Core.
 
 > [!TIP]
-> For Raspberry Pi, [Raspberry Pi OS](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)  <span class="docon docon-navigate-external x-hidden-focus"></span> (formerly Raspbian) is recommended.
+> For Raspberry Pi, [Raspberry Pi OS](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)  (formerly Raspbian) is recommended.
 
 ## Supported hardware platforms
 
@@ -67,4 +67,4 @@ PC platforms are supported via the use of a USB to SPI/I2C bridge.
 
 ## Resources
 
-- [.NET IoT Libraries on Github](https://github.com/dotnet/iot) <span class="docon docon-navigate-external x-hidden-focus"></span>
+- [.NET IoT Libraries on Github](https://github.com/dotnet/iot)

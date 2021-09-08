@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 93c5d426-dea2-4709-a991-60204de42e8f
+ms.topic: how-to
 ---
 
 # How to transform the shape of an XML tree (LINQ to XML)

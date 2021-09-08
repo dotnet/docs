@@ -17,7 +17,7 @@ Consider the common scenario of a large web app that currently is hosted on IIS 
 
 Assuming the task of porting the app is split such that either the MVC functionality or the API functionality is migrated to ASP.NET Core first, how would the original site continue to function seamlessly with the new ASP.NET Core app running somewhere else? Users of the system should continue to see the same URLs they did prior to the migration, unless it's absolutely necessary to change them.
 
-Fortunately, IIS is a very feature-rich web server, and two features it has had for some time are its [URL Rewrite module and Application Request Routing](https://docs.microsoft.com/iis/extensions/url-rewrite-module/reverse-proxy-with-url-rewrite-v2-and-application-request-routing). Using these features, IIS can act as a [reverse proxy](https://docs.microsoft.com/iis/extensions/url-rewrite-module/reverse-proxy-with-url-rewrite-v2-and-application-request-routing), routing client requests to the appropriate back-end web app. To configure IIS as a reverse proxy, check the **Enable proxy** checkbox in the Application Request Routing feature, then add a URL Rewrite rule like this one:
+Fortunately, IIS is a feature-rich web server, and two features it has are [URL Rewrite module](/iis/extensions/url-rewrite-module/url-rewrite-module-video-walkthrough) and [Application Request Routing](/iis/extensions/planning-for-arr/application-request-routing-version-2-overview). Using these features, IIS can act as a [reverse proxy](/iis/extensions/url-rewrite-module/reverse-proxy-with-url-rewrite-v2-and-application-request-routing), routing client requests to the appropriate back-end web app. To configure IIS as a reverse proxy, check the **Enable proxy** checkbox in the Application Request Routing feature, then add a URL Rewrite rule like this one:
 
 ```xml
 <rule name="NetCoreProxy">
@@ -33,7 +33,7 @@ Using just the URL Rewrite module (perhaps combined with host headers), IIS can 
 > [!IMPORTANT]
 > Subdomains typically refer to the portion of a domain preceding the top two levels. For example, in the domain `api.contoso.com`, `api` is a subdomain of the `contoso.com` domain (which itself is composed of the `contoso` domain name and the `.com` top-level domain or TLD). URL paths refer to portion of the URL that follows the domain name, starting with a `/`. The URL `https://contoso.com/api` has a path of `/api`.
 
-There are pros and cons to using the same or different subdomains (and domains) to host a single app. Features like cookies and intra-app communication using mechanisms like [CORS](https://docs.microsoft.com/aspnet/core/security/cors) may require more configuration to work properly in distributed apps. However, apps that use different subdomains can more easily use DNS to route requests to entirely different network destinations, and so can more easily be deployed to many different servers (virtual or otherwise) without the need for IIS to act as a reverse proxy.
+There are pros and cons to using the same or different subdomains (and domains) to host a single app. Features like cookies and intra-app communication using mechanisms like [CORS](/aspnet/core/security/cors) may require more configuration to work properly in distributed apps. However, apps that use different subdomains can more easily use DNS to route requests to entirely different network destinations, and so can more easily be deployed to many different servers (virtual or otherwise) without the need for IIS to act as a reverse proxy.
 
 In the example described above, assume the API endpoints are designated as the first part of the app to be ported to ASP.NET Core. In this case, a new ASP.NET Core app is created and hosted in IIS as a separate web *application* within the existing ASP.NET MVC web *site*. Since it will be added as a child of the original web site and will be named *api*, its default route should no longer begin with `api/`. Keeping this would result in it matching URLs of the form `/api/api/endpoint`.
 
@@ -43,7 +43,7 @@ Figure 5-1 shows how the ASP.NET Core 2.1 *api* app appears in IIS Manager as a 
 
 **Figure 5-1**. .NET Framework Site with .NET Core app in IIS.
 
-The *DotNetMvcApp* site is hosted as an MVC 5 app running on .NET Framework 4.7.2. It has its own IIS app pool configured in integrated mode and running .NET CLR version 4.0.30319. The *api* app is an ASP.NET Core app running on .NET Framework 4.6.1 (`net461`). It was added to the *DotNetMvcApp* as a new IIS app and configured to use its own Application Pool. Its Application Pool is also running in integrated mode but is configured with a .NET CLR version of **No Managed Code** since it will be executed using the [ASP.NET Core Module](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-2.1&preserve-view=true). The version of the ASP.NET Core app is just an example. It could also be configured to run on .NET Core 3.1 or .NET 5.0. Though at that point, it would no longer be able to target .NET Framework libraries (see [Choose the Right .NET Core Version](choose-net-core-version.md))
+The *DotNetMvcApp* site is hosted as an MVC 5 app running on .NET Framework 4.7.2. It has its own IIS app pool configured in integrated mode and running .NET CLR version 4.0.30319. The *api* app is an ASP.NET Core app running on .NET Framework 4.6.1 (`net461`). It was added to the *DotNetMvcApp* as a new IIS app and configured to use its own Application Pool. Its Application Pool is also running in integrated mode but is configured with a .NET CLR version of **No Managed Code** since it will be executed using the [ASP.NET Core Module](/aspnet/core/host-and-deploy/aspnet-core-module?preserve-view=true&view=aspnetcore-2.1). The version of the ASP.NET Core app is just an example. It could also be configured to run on .NET Core 3.1 or .NET 5.0. Though at that point, it would no longer be able to target .NET Framework libraries (see [Choose the Right .NET Core Version](choose-net-core-version.md))
 
 Configured in this manner, the only change that must be made in order for the ASP.NET Core app's APIs to be routed properly is to change its default route template from `[Route("[api/controller]")]` to `[Route("[controller]")]`.
 
@@ -55,7 +55,7 @@ As an example, the same ASP.NET Core app used in Figure 5-1 can be deployed to a
 
 **Figure 5-2**. Rewrite rule to rewrite subfolder requests to another web site.
 
-If your app requires single sign-on between different sites or apps within IIS, refer to the documentation on [how to share authentication cookies among ASP.NET apps](https://docs.microsoft.com/aspnet/core/host-and-deploy/iis/) for detailed instructions on supporting this scenario.
+If your app requires single sign-on between different sites or apps within IIS, refer to the documentation on [how to share authentication cookies among ASP.NET apps](/aspnet/core/host-and-deploy/iis/) for detailed instructions on supporting this scenario.
 
 ## Summary
 
@@ -63,12 +63,13 @@ A common approach to porting large apps from .NET Framework to ASP.NET Core is t
 
 ## References
 
-- [Host ASP.NET Core on Windows with IIS](https://docs.microsoft.com/aspnet/core/host-and-deploy/iis/)
-- [URL Rewrite module and Application Request Routing](https://docs.microsoft.com/iis/extensions/url-rewrite-module/reverse-proxy-with-url-rewrite-v2-and-application-request-routing)
+- [Host ASP.NET Core on Windows with IIS](/aspnet/core/host-and-deploy/iis/)
+- [URL Rewrite module and Application Request Routing](/iis/extensions/url-rewrite-module/reverse-proxy-with-url-rewrite-v2-and-application-request-routing)
 - [URL Rewrite](https://www.iis.net/downloads/microsoft/url-rewrite)
-- [ASP.NET Core Module](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-2.1&preserve-view=true)
-- [Share authentication cookies among ASP.NET apps](https://docs.microsoft.com/aspnet/core/host-and-deploy/iis/)
+- [ASP.NET Core Module](/aspnet/core/host-and-deploy/aspnet-core-module?preserve-view=true&view=aspnetcore-2.1)
+- [Share authentication cookies among ASP.NET apps](/aspnet/core/host-and-deploy/iis/)
+- [Samples used in this section](https://github.com/ardalis/MigrateDotNetWithIIS)
 
 >[!div class="step-by-step"]
->[Previous](example-migration-eshop.md)
+>[Previous](more-migration-scenarios.md)
 >[Next](summary.md)

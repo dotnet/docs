@@ -172,9 +172,9 @@ Without these types, when passing such items as a portion of an array or a secti
 
 The following example uses a <xref:System.Span%601> and <xref:System.Memory%601> instance to provide a virtual view of 10 elements of an array.
 
-[!code-csharp[Span\<T>](./snippets/dotnet-core-2-1/csharp/program.cs)]
+[!code-csharp[Span\<T>](./snippets/dotnet-core-2-1/csharp/Program.cs)]
 
-[!code-vb[Memory\<T>](./snippets/dotnet-core-2-1/vb/program.vb)]
+[!code-vb[Memory\<T>](./snippets/dotnet-core-2-1/vb/Program.vb)]
 
 ### Brotli compression
 

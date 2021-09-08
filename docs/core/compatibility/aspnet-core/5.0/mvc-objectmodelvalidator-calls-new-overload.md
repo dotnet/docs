@@ -1,7 +1,6 @@
 ---
 title: "Breaking change: MVC: ObjectModelValidator calls a new overload of ValidationVisitor.Validate"
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled MVC: ObjectModelValidator calls a new overload of ValidationVisitor.Validate"
-author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
 ---

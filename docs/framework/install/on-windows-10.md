@@ -1,7 +1,7 @@
 ---
 title: Install the .NET Framework on Windows 10
 description: Learn how to install the .NET Framework on Windows 10 or Windows Server 2016.
-ms.date: 04/18/2019
+ms.date: 08/27/2021
 ---
 # Install the .NET Framework on Windows 10 and Windows Server 2016 and later
 
@@ -13,9 +13,13 @@ You may have arrived on this page after trying to run an application and seeing 
 
 ## .NET Framework 4.8
 
-The .NET Framework 4.8 is included with:
+.NET Framework 4.8 is included with:
 
-- [Windows 10 May 2019 Update](https://support.microsoft.com/help/4028685/windows-10-get-the-update)
+- [Windows 10 May 2021 Update](/windows/whats-new/whats-new-windows-10-version-21h1)
+- [Windows 10 October 2020 Update](/windows/whats-new/whats-new-windows-10-version-20h2)
+- [Windows 10 May 2020 Update](/windows/whats-new/whats-new-windows-10-version-2004)
+- [Windows 10 November 2019 Update](/windows/whats-new/whats-new-windows-10-version-1909)
+- [Windows 10 May 2019 Update](/windows/whats-new/whats-new-windows-10-version-1903)
 
 > [!div class="button"]
 > [Download .NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)

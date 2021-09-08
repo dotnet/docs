@@ -28,9 +28,8 @@ void __stdcall FunctionEnter3(FunctionOrRemappedID functionOrRemappedID);
   
 ## Parameters
 
-- `functionOrRemappedID`
-
-  \[in] The identifier of the function to which control is passed.
+`functionOrRemappedID`
+[in] The identifier of the function to which control is passed.
 
 ## Remarks  
 

@@ -3,7 +3,7 @@ title: Options pattern in .NET
 author: IEvangelist
 description: Learn how to use the options pattern to represent groups of related settings in .NET apps.
 ms.author: dapine
-ms.date: 01/21/2021
+ms.date: 07/06/2021
 ---
 
 # Options pattern in .NET
@@ -68,6 +68,18 @@ services.Configure<TransientFaultHandlingOptions>(
         key: nameof(TransientFaultHandlingOptions)));
 ```
 
+To access both the `services` and the `configurationRoot` objects, you must use the <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureServices%2A> method &mdash; the <xref:Microsoft.Extensions.Configuration.IConfiguration> is available as the <xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration?displayProperty=nameWithType> property.
+
+```csharp
+Host.CreateDefaultBuilder(args)
+    .ConfigureServices((context, services) =>
+    {
+        var configurationRoot = context.Configuration;
+        services.Configure<TransientFaultHandlingOptions>(
+            configurationRoot.GetSection(nameof(TransientFaultHandlingOptions)));
+    });
+```
+
 > [!TIP]
 > The `key` parameter is the name of the configuration section to search for. It does *not* have to match the name of the type that represents it. For example, you could have a section named `"FaultHandling"` and it could be represented by the `TransientFaultHandlingOptions` class. In this instance, you'd pass `"FaultHandling"` to the <xref:Microsoft.Extensions.Configuration.IConfiguration.GetSection%2A> function instead. The `nameof` operator is used as a convenience when the named section matches the type it corresponds to.
 
@@ -101,10 +113,18 @@ In the preceding code, changes to the JSON configuration file after the app has 
   - [Named options](#named-options-support-using-iconfigurenamedoptions)
   - [Reloadable configuration](#use-ioptionssnapshot-to-read-updated-data)
   - Selective options invalidation (<xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601>)
-  
+
 <xref:Microsoft.Extensions.Options.IOptionsFactory%601> is responsible for creating new options instances. It has a single <xref:Microsoft.Extensions.Options.IOptionsFactory%601.Create%2A> method. The default implementation takes all registered <xref:Microsoft.Extensions.Options.IConfigureOptions%601> and <xref:Microsoft.Extensions.Options.IPostConfigureOptions%601> and runs all the configurations first, followed by the post-configuration. It distinguishes between <xref:Microsoft.Extensions.Options.IConfigureNamedOptions%601> and <xref:Microsoft.Extensions.Options.IConfigureOptions%601> and only calls the appropriate interface.
 
 <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601> is used by <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> to cache `TOptions` instances. The <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601> invalidates options instances in the monitor so that the value is recomputed (<xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.TryRemove%2A>). Values can be manually introduced with <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.TryAdd%2A>. The <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.Clear%2A> method is used when all named instances should be recreated on demand.
+
+### Options interfaces benefits
+
+Using a generic wrapper type gives you the ability to decouple the lifetime of the option from the DI container. The <xref:Microsoft.Extensions.Options.IOptions%601.Value?displayProperty=nameWithType> interface provides a layer of abstraction, including generic constraints, on your options type. This provides the following benefits:
+
+- The evaluation of the `T` configuration instance is deferred to the accessing of <xref:Microsoft.Extensions.Options.IOptions%601.Value?displayProperty=nameWithType>, rather than when it is injected. This is important because you can consume the `T` option from various places and choose the lifetime semantics without changing anything about `T`.
+- When registering options of type `T`, you do not need to explicitly register the `T` type. This is a convenience when you're [authoring a library](options-library-authors.md) with simple defaults, and you don't want to force the caller to register options into the DI container with a specific lifetime.
+- From the perspective of the API, it allows for constraints on the type `T` (in this case, `T` is constrained to a reference type).
 
 ## Use IOptionsSnapshot to read updated data
 
@@ -144,6 +164,11 @@ The following example uses <xref:Microsoft.Extensions.Options.IOptionsMonitor%60
 :::code language="csharp" source="snippets/configuration/console-json/MonitorService.cs":::
 
 In the preceding code, changes to the JSON configuration file after the app has started are read.
+
+> [!TIP]
+> Some file systems, such as Docker containers and network shares, may not reliably send change notifications. When using the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> interface in these environments, set the `DOTNET_USE_POLLING_FILE_WATCHER` environment variable to `1` or `true` to poll the file system for changes. The interval at which changes are polled is every four seconds and is not configurable.
+>
+> For more information on Docker containers, see [Containerize a .NET app](../docker/build-container.md).
 
 ## Named options support using IConfigureNamedOptions
 
@@ -247,7 +272,7 @@ Consider the following *appsettings.json* file:
 
 ```json
 {
-  "Settings": {
+  "MyCustomSettingsSection": {
     "SiteTitle": "Amazing docs from Awesome people!",
     "Scale": 10,
     "VerbosityLevel": 32
@@ -255,9 +280,14 @@ Consider the following *appsettings.json* file:
 }
 ```
 
-The following class binds to the `"Settings"` configuration section and applies a couple of `DataAnnotations` rules:
+The following class binds to the `"MyCustomSettingsSection"` configuration section and applies a couple of `DataAnnotations` rules:
 
 :::code language="csharp" source="snippets/configuration/console-json/SettingsOptions.cs":::
+
+In the preceding `SettingsOptions` class, the `ConfigurationSectionName` property contains the name of the configuration section to bind to. In this scenario, the options object provides the name of its configuration section.
+
+> [!TIP]
+> The configuration section name is independent of the configuration object that it's binding to. In other words, a configuration section named `"FooBarOptions"` can be bound to an options object named `ZedOptions`. Although it might be common to name them the same, it's *not* necessary and can actually cause name conflicts.
 
 The following code:
 
@@ -266,7 +296,7 @@ The following code:
 
 ```csharp
 services.AddOptions<SettingsOptions>()
-    .Bind(Configuration.GetSection(SettingsOptions.Settings))
+    .Bind(Configuration.GetSection(SettingsOptions.ConfigurationSectionName))
     .ValidateDataAnnotations();
 ```
 
@@ -280,7 +310,7 @@ The following code applies a more complex validation rule using a delegate:
 
 ```csharp
 services.AddOptions<SettingsOptions>()
-    .Bind(Configuration.GetSection(SettingsOptions.Settings))
+    .Bind(Configuration.GetSection(SettingsOptions.ConfigurationSectionName))
     .ValidateDataAnnotations()
     .Validate(config =>
     {
@@ -306,7 +336,7 @@ Using the preceding code, validation is enabled in `ConfigureServices` with the 
 ```csharp
 services.Configure<SettingsOptions>(
     Configuration.GetSection(
-        SettingsOptions.Settings));
+        SettingsOptions.ConfigurationSectionName));
 services.TryAddEnumerable(
     ServiceDescriptor.Singleton
         <IValidateOptions<SettingsOptions>, ValidateSettingsOptions>());

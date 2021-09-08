@@ -1,116 +1,161 @@
 ---
-title: Port from .NET Framework to .NET Core
-description: Understand the porting process and discover tools you may find helpful when porting a .NET Framework project to .NET Core.
-author: cartermp
-ms.date: 10/22/2019
+title: Port from .NET Framework to .NET 5
+description: Understand the porting process and discover tools you may find helpful when porting a .NET Framework project to .NET 5 (and .NET Core 3.1).
+author: adegeo
+ms.date: 05/04/2021
+no-loc: ["package.config", PackageReference]
 ---
-# Overview of porting from .NET Framework to .NET Core
+# Overview of porting from .NET Framework to .NET
 
-You might have code that currently runs on the .NET Framework that you're interested in porting to .NET Core. This article provides:
+This article provides an overview of what you should consider when porting your code from .NET Framework to .NET (formerly named .NET Core). Porting to .NET from .NET Framework for many projects is relatively straightforward. The complexity of your projects dictates how much work you'll do after the initial migration of the project files.
 
-* An overview of the porting process.
-* A list of tools that you may find helpful when you're porting your code to .NET Core.
+Projects where the app-model is available in .NET (such as libraries, console apps, and desktop apps) usually require little change. Projects that require a new app model, such as moving to ASP.NET Core from ASP.NET, require more work. Many patterns from the old app model have equivalents that can be used during the conversion.
 
-## Overview of the porting process
+## Unavailable technologies
 
-Porting to .NET Core (or .NET Standard) from .NET Framework for many projects is relatively straightforward. There are a number of changes that are required, but many of them follow the patterns outlined below. Projects where the app-model is available in .NET Core (such as libraries, console apps, and desktop applications) usually require little changes. Projects that require a new app model, such as moving to ASP.NET Core from ASP.NET, require a bit more work, but many patterns have analogs that can be used during the conversion. This document should help with identifying the main strategies that have been employed by users to successfully convert their code bases to target .NET Standard or .NET Core and will address the conversion at two levels: solution-wide and project specific. See the links at the bottom for directions on app-model specific conversions.
+There are a few technologies in .NET Framework that don't exist in .NET:
 
-We recommend you use the following process when porting your project to .NET Core. Each of these steps introduces potential places for behavior changes, so ensure that you adequately test your library or application before continuing on to later steps. The first steps are to get your project ready for a switch to .NET Standard or .NET Core. If you have unit tests, it's best to convert them first so that you can continue testing changes in the product you're working on. Because porting to .NET Core is such a significant change to your codebase, it's highly recommended to port your test projects so that you can run tests as you port your code over. MSTest, xUnit, and NUnit all work on .NET Core.
+- [Application domains](net-framework-tech-unavailable.md#application-domains)
 
-## Getting started
+  Creating additional application domains isn't supported. For code isolation, use separate processes or containers as an alternative.
 
-The following tools will be used throughout the process:
+- [Remoting](net-framework-tech-unavailable.md#remoting)
 
-- Visual Studio 2019
-- Download [.NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md)
-- _Optional_ Install [dotnet try-convert](https://github.com/dotnet/try-convert)
+  Remoting is used for communicating across application domains, which are no longer supported. For simple communication across processes, consider inter-process communication (IPC) mechanisms as an alternative to remoting, such as the <xref:System.IO.Pipes> class or the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> class. For more complex scenarios, consider frameworks such as [StreamJsonRpc](https://github.com/microsoft/vs-streamjsonrpc) or [ASP.NET Core](https://docs.microsoft.com/aspnet/core) (either using [gRPC](https://docs.microsoft.com/aspnet/core/grpc) or [RESTful Web API services](https://docs.microsoft.com/aspnet/core/web-api)).
 
-## Porting a solution
+- [Code access security (CAS)](net-framework-tech-unavailable.md#code-access-security-cas)
 
-When there are multiple projects in a solution, the porting can seem more complicated because you must address projects in a specific order. The conversion process should be a bottom-up approach, where the projects with no dependencies on other projects in the solution are converted first, and continue up through the whole solution.
+  CAS was a sandboxing technique supported by .NET Framework but deprecated in .NET Framework 4.0. It was replaced by Security Transparency and it's not supported in .NET. Instead, use security boundaries provided by the operating system, such as virtualization, containers, or user accounts.
 
-In order to identify the order projects should be migrated, you can use the following tools:
+- [Security transparency](net-framework-tech-unavailable.md#security-transparency)
 
-- [Dependency Diagrams in Visual Studio](/visualstudio/modeling/create-layer-diagrams-from-your-code) can create a directed graph of the code in a solution.
-- Run `msbuild _SolutionPath_ /t:GenerateRestoreGraphFile /p:RestoreGraphOutputPath=graph.dg.json` to generate a json document that includes list of project references.
-- Run [.NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md) with the `-r DGML` switch to retrieve a dependency diagram of the assemblies. For more information, see [here](../../standard/analyzers/portability-analyzer.md#solution-wide-view).
+  Similar to CAS, this sandboxing technique is no longer recommended for .NET Framework applications and it's not supported in .NET. Instead, use security boundaries provided by the operating system, such as virtualization, containers, or user accounts.
+  
+- <xref:System.EnterpriseServices?displayProperty=fullName>
 
-Once you have dependency information, you can use that information to start at the leaf nodes and work your way up the dependency tree applying the steps in the next section.
+  <xref:System.EnterpriseServices?displayProperty=fullName> (COM+) isn't supported in .NET.
 
-## Per project steps
+- Windows Workflow Foundation (WF) and Windows Communication Foundation (WCF)
 
-We recommend you use the following process when porting your project to .NET Core:
+  WF and WCF aren't supported in .NET 5+ (including .NET Core). For alternatives, see [CoreWF](https://github.com/UiPath/corewf) and [CoreWCF](https://github.com/CoreWCF/CoreWCF).
 
-1. Convert all of your `packages.config` dependencies to the [PackageReference](/nuget/consume-packages/package-references-in-project-files) format with the [conversion tool in Visual Studio](/nuget/consume-packages/migrate-packages-config-to-package-reference).
+For more information about these unsupported technologies, see [.NET Framework technologies unavailable on .NET Core and .NET 5+](net-framework-tech-unavailable.md).
 
-   This step involves converting your dependencies from the legacy `packages.config` format. `packages.config` doesn't work on .NET Core, so this conversion is required if you have package dependencies. It also only requires the dependencies you are directly using in a project, which makes later steps easier by reducing the number of dependencies you must manage.
+## Windows desktop technologies
 
-1. Convert your project file to the new SDK-style files structure. You can create new projects for .NET Core and copy over source files, or attempt to convert your existing project file with a tool.
+Many applications created for .NET Framework use a desktop technology such as Windows Forms or Windows Presentation Foundation (WPF). Both Windows Forms and WPF have been ported to .NET, but these remain Windows-only technologies.
 
-   .NET Core uses a simplified (and different) [project file format](../project-sdk/overview.md) than .NET Framework. You'll need to convert your project files into this format to continue. This project style allows you to also target .NET Framework, which at this point you'll still want to target.
+Consider the following dependencies before you migrate a Windows Forms or WPF application:
 
-   You can attempt to port smaller solutions or individual projects in one operation to the .NET Core project file format with the [dotnet try-convert](https://github.com/dotnet/try-convert) tool. `dotnet try-convert` is not guaranteed to work for all your projects, and it may cause subtle changes in behavior that you depended on. Use it as a _starting point_ that automates the basic things that can be automated. It isn't a guaranteed solution to migrating a project, as there are many differences in the targets used by the SDK style projects compared to the old-style project files.
+01. Project files for .NET use a different format than .NET Framework.
+01. Your project may use an API that isn't available in .NET.
+01. 3rd-party controls and libraries may not have been ported to .NET and remain only available to .NET Framework.
+01. Your project uses a [technology that is no longer available](net-framework-tech-unavailable.md) in .NET.
 
-1. Retarget all projects you wish to port to target .NET Framework 4.7.2 or higher.
+.NET uses the open-source versions of Windows Forms and WPF and includes enhancements over .NET Framework.
 
-   This step ensures that you can use API alternatives for .NET Framework-specific targets when .NET Core doesn't support a particular API.
+For tutorials on migrating your desktop application to .NET 5, see one of the following articles:
 
-1. Update all dependencies to the latest version. Projects may be using older versions of libraries that may not have .NET Standard support. However, later versions may support it with a simple switch. This may require code changes if there are breaking changes in libraries.
+- [Migrate .NET Framework WPF apps to .NET](/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0&preserve-view=true)
+- [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true)
 
-1. Use the [.NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md) to analyze your assemblies and see if they're portable to .NET Core.
+## Windows-specific APIs
 
-   The .NET Portability Analyzer tool analyzes your compiled assemblies and generates a report. This report shows a high-level portability summary and a breakdown of each API you're using that isn't available on .NET Core. While using the tool, only submit the individual project you are converting to focus on the API changes that are potentially needed. Many of the APIs have equivalent availability in .NET Core, which you'll want to switch to.
+Applications can still P/Invoke native libraries on platforms supported by .NET. This technology isn't limited to Windows. However, if the library you're referencing is Windows-specific, such as a _user32.dll_ or _kernel32.dll_, then the code only works on Windows. For each platform you want your app to run on, you'll have to either find platform-specific versions, or make your code generic enough to run on all platforms.
 
-   While reading the reports generated by the analyzer, the important information is the actual APIs that are being used and not necessarily the percentage of support for the target platform. Many APIs have equivalent options in .NET Standard/Core, and so understanding the scenarios your library or application needs the API for will help determine the implication for portability.
+When porting an application from .NET Framework to .NET, your application probably used a library provided distributed with the .NET Framework. Many APIs that were available in .NET Framework weren't ported to .NET because they relied on Windows-specific technology, such as the Windows Registry or the GDI+ drawing model.
 
-   There are some cases where APIs are not equivalent and you'll need to do some compiler preprocessor directives (that is, `#if NET45`) to special case the platforms. At this point, your project will still be targeting .NET Framework. For each of these targeted cases, it is recommended to use well-known conditionals that can be understood as a scenario.  For example, AppDomain support in .NET Core is limited, but for the scenario of loading and unloading assemblies, there is a new API that's not available in .NET Core. A common way to handle this in code would be something like this:
+The **Windows Compatibility Pack** provides a large portion of the .NET Framework API surface to .NET and is provided via the [Microsoft.Windows.Compatibility NuGet package](https://www.nuget.org/packages/Microsoft.Windows.Compatibility).
 
-   ```csharp
-   #if FEATURE_APPDOMAIN_LOADING
-   // Code that uses appdomains
-   #elif FEATURE_ASSEMBLY_LOAD_CONTEXT
-   // Code that uses assembly load context
-   #else
-   #error Unsupported platform
-   #endif
-   ```
+For more information, see [Use the Windows Compatibility Pack to port code to .NET](windows-compat-pack.md).
 
-1. Install the [.NET API analyzer](../../standard/analyzers/api-analyzer.md) into your projects to identify APIs that throw <xref:System.PlatformNotSupportedException> on some platforms and some other potential compatibility issues.
+## .NET Framework compatibility mode
 
-   This tool is similar to the portability analyzer, but instead of analyzing if code can build on .NET Core, it analyzes whether you're using an API in a way that will throw a <xref:System.PlatformNotSupportedException> at run time. Although this isn't common if you're moving from .NET Framework 4.7.2 or higher, it's good to check. For more information about APIs that throw exceptions on .NET Core, see [APIs that always throw exceptions on .NET Core](../compatibility/unsupported-apis.md).
+The .NET Framework compatibility mode was introduced in .NET Standard 2.0. This compatibility mode allows .NET Standard and .NET 5+ (and .NET Core 3.1) projects to reference .NET Framework libraries on Windows-only. Referencing .NET Framework libraries doesn't work for all projects, such as if the library uses Windows Presentation Foundation (WPF) APIs, but it does unblock many porting scenarios. For more information, see the [Analyze your dependencies to port code from .NET Framework to .NET](third-party-deps.md#net-framework-compatibility-mode).
 
-1. At this point, you can switch to targeting .NET Core (generally for applications) or .NET Standard (for libraries).
+## Cross-platform
 
-   The choice between .NET Core and .NET Standard is largely dependent on where the project will be run. If it is a library that will be consumed by other applications or distributed via NuGet, the preference is usually to target .NET Standard. However, there may be APIs that are only available on .NET Core for performance or other reasons; if that's the case, .NET Core should be targeted with potentially a .NET Standard build available as well with reduced performance or functionality. By targeting .NET Standard, the project will be ready to run on new platforms (such as WebAssembly). If the project has dependencies on specific app frameworks (such as ASP.NET Core), then the target will be limited by what the dependencies support.
+.NET (formerly known as .NET Core) is designed to be cross-platform. If your code doesn't depend on Windows-specific technologies, it may run on other platforms such as macOS, Linux, and Android. This includes project types like:
 
-   If there are no preprocessor directives to conditional compile code for .NET Framework or .NET Standard, this will be as simple as finding the following in the project file:
+- Libraries
+- Console-based tools
+- Automation
+- ASP.NET sites
 
-   ```xml
-   <TargetFramework>net472</TargetFramework>
-   ```
+.NET Framework is a Windows-only component. When your code uses Windows-specific technologies or APIs, such as Windows Forms and Windows Presentation Foundation (WPF), the code can still run on .NET but it won't run on other operating systems.
 
-   and switch it to the desired framework. For .NET Core 3.1, this would be:
+It's possible that your library or console-based application can be used cross-platform without changing much. When porting to .NET, you may want to take this into consideration and test your application on other platforms.
 
-   ```xml
-   <TargetFramework>netcoreapp3.1</TargetFramework>
-   ```
+## The future of .NET Standard
 
-   However, if this is a library for which you want to continue supporting .NET Framework-specific builds, you can [multi-target](../../standard/library-guidance/cross-platform-targeting.md) by replacing it with the following:
+[.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that are available on multiple .NET implementations. The motivation behind .NET Standard was to establish greater uniformity in the .NET ecosystem. Starting with .NET 5, a different approach to establishing uniformity has been adopted, and this new approach eliminates the need for .NET Standard in many scenarios. For more information, see [.NET 5 and .NET Standard](../../standard/net-standard.md#net-5-and-net-standard).
 
-   ```xml
-   <TargetFrameworks>net472;netstandard2.0</TargetFrameworks>
-   ```
+.NET Standard 2.0 was the last version to support .NET Framework.
 
-   If you're using Windows-specific APIs (such as registry access), install the [Windows Compatibility Pack](./windows-compat-pack.md).
+## Tools to assist porting
 
-## Next steps
+Instead of manually porting an application from .NET Framework to .NET, you can use different tools to help automate some aspects of the migration. Porting a complex project is, in itself, a complex process. These tools may help in that journey.
 
-> [!div class="nextstepaction"]
-> [Analyze dependencies](third-party-deps.md)
-> [Package a NuGet package](../deploying/creating-nuget-packages.md)
+Even if you use a tool to help port your application, you should review the [Considerations when porting section](#considerations-when-porting) in this article.
+
+### .NET Upgrade Assistant
+
+The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can be run on different kinds of .NET Framework apps. It's designed to assist with upgrading .NET Framework apps to .NET 5. After running the tool, **in most cases the app will require more effort to complete the migration**. The tool includes the installation of analyzers that can assist with completing the migration. This tool works on the following types of .NET Framework applications:
+
+- Windows Forms
+- WPF
+- ASP.NET MVC
+- Console
+- Class libraries
+
+This tool uses the other tools listed in this article and guides the migration process. For more information about the tool, see [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md).
+
+### try-convert
+
+The try-convert tool is a .NET global tool that can convert a project or entire solution to the .NET SDK, including moving desktop apps to .NET 5. However, this tool isn't recommended if your project has a complicated build process such as custom tasks, targets, or imports.
+
+For more information, see the [try-convert GitHub repository](https://github.com/dotnet/try-convert).
+
+### .NET Portability Analyzer
+
+The .NET Portability Analyzer is a tool that analyzes assemblies and provides a detailed report on .NET APIs that are missing for the applications or libraries to be portable on your specified targeted .NET platforms.
+
+To use the .NET Portability Analyzer in Visual Studio, install the [extension from the marketplace](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer).
+
+For more information, see [The .NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md).
+
+### Platform compatibility analyzer
+
+The [Platform compatibility analyzer](../../standard/analyzers/platform-compat-analyzer.md) analyzes whether or not you're using an API that will throw a <xref:System.PlatformNotSupportedException> at run time. Although this isn't common if you're moving from .NET Framework 4.7.2 or higher, it's good to check. For more information about APIs that throw exceptions on .NET, see [APIs that always throw exceptions on .NET Core](../compatibility/unsupported-apis.md).
+
+For more information, see [Platform compatibility analyzer](../../standard/analyzers/platform-compat-analyzer.md).
+
+## Considerations when porting
+
+When porting your application to .NET, consider the following suggestions in order.
+
+✔️ CONSIDER using the [.NET Upgrade Assistant](upgrade-assistant-overview.md) to migrate your projects. Even though this tool is in preview, it automates most of the manual steps detailed in this article and gives you a great starting point for continuing your migration path.
+
+✔️ CONSIDER examining your dependencies first. Your dependencies must target .NET 5, .NET Standard, or .NET Core.
+
+✔️ DO migrate from a NuGet _packages.config_ file to [PackageReference](/nuget/consume-packages/package-references-in-project-files) settings in the project file. Use Visual Studio to [convert the _package.config_ file](/nuget/consume-packages/migrate-packages-config-to-package-reference#migration-steps).
+
+✔️ CONSIDER upgrading to the latest project file format even if you can't yet port your app. .NET Framework projects use an outdated project format. Even though the latest project format, known as SDK-style projects, was created for .NET Core and beyond, they work with .NET Framework. Having your project file in the latest format gives you a good basis for porting your app in the future.
+
+✔️ DO retarget your .NET Framework project to at least .NET Framework 4.7.2. This ensures the availability of the latest API alternatives for cases where .NET Standard doesn't support existing APIs.
+
+✔️ CONSIDER targeting .NET 5 instead of .NET Core 3.1. While .NET Core 3.1 is under long-term support (LTS), .NET 5 is the latest and .NET 6 will be LTS when released.
+
+✔️ DO target .NET 5 for **Windows Forms and WPF** projects. .NET 5 contains many improvements for Desktop apps.
+
+✔️ CONSIDER targeting .NET Standard 2.0 if you're migrating a library that may also be used with .NET Framework projects. You can also multitarget your library, targeting both .NET Framework and .NET Standard.
+
+✔️ DO add reference to the [Microsoft.Windows.Compatibility NuGet package](https://www.nuget.org/packages/Microsoft.Windows.Compatibility) if, after migrating, you get errors of missing APIs. A large portion of the .NET Framework API surface is available to .NET via the NuGet package.
 
 ## See also
 
+- [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
 - [ASP.NET to ASP.NET Core migration](/aspnet/core/migration/proper-to-2x)
-- [Migrate WPF apps to .NET Core](/dotnet/desktop/wpf/migration/convert-project-from-net-framework)
+- [Migrate .NET Framework WPF apps to .NET](/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0&preserve-view=true)
 - [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true)
+- [.NET 5 vs. .NET Framework for server apps](../../standard/choosing-core-framework-server.md)

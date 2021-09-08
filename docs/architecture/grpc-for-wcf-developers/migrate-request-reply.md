@@ -162,7 +162,7 @@ message GetAllRequest {
     string trader_id = 1;
 }
 
-message PortfolioList {
+message GetAllResponse {
     repeated Portfolio portfolios = 1;
 }
 

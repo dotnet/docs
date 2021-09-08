@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: BC30561: '<name1>' is ambiguous, imported from the namespaces or types '<name2>"
+description: "Learn more about: BC30561: '<name1>' is ambiguous, imported from the namespaces or types '<name2>'"
 title: "'<name1>' is ambiguous, imported from the namespaces or types '<name2>'"
 ms.date: 07/20/2015
 f1_keywords:

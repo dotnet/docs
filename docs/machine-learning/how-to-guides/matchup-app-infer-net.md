@@ -3,6 +3,7 @@ title: Infer.NET game match-up app - probabilistic programming
 description: Discover how to use probabilistic programming with Infer.NET to create a game match-up list app based on a simplified version of TrueSkill.
 ms.date: 01/30/2020
 ms.custom: mvc,how-to
+recommendations: false
 #Customer intent: As a developer, I want to use probabilistic programming with Infer.NET to create a game matchup list app based on a simplified version of TrueSkill.
 ---
 

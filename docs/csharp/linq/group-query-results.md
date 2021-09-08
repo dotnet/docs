@@ -20,13 +20,13 @@ Grouping is one of the most powerful capabilities of LINQ. The following example
 
 In addition, the last two queries project their results into a new anonymous type that contains only the student's first and last name. For more information, see the [group clause](../language-reference/keywords/group-clause.md).
 
-## Example
+## Example helper class and data source
 
 All the examples in this topic use the following helper classes and data sources.
 
 [!code-csharp[csProgGuideLINQ#15](~/samples/snippets/csharp/concepts/linq/how-to-group-query-results_1.cs)]
 
-## Example
+## Group by single property example
 
 The following example shows how to group source elements by using a single property of the element as the group key. In this case the key is a `string`, the student's last name. It is also possible to use a substring for the key. The grouping operation uses the default equality comparer for the type.
 
@@ -34,7 +34,7 @@ Paste the following method into the `StudentClass` class. Change the calling sta
 
 [!code-csharp[csProgGuideLINQ#17](~/samples/snippets/csharp/concepts/linq/how-to-group-query-results_2.cs)]
 
-## Example
+## Group by value example
 
 The following example shows how to group source elements by using something other than a property of the object for the group key. In this example, the key is the first letter of the student's last name.
 
@@ -42,7 +42,7 @@ Paste the following method into the `StudentClass` class. Change the calling sta
 
 [!code-csharp[csProgGuideLINQ#18](~/samples/snippets/csharp/concepts/linq/how-to-group-query-results_3.cs)]
 
-## Example
+## Group by a range example
 
 The following example shows how to group source elements by using a numeric range as a group key. The query then projects the results into an anonymous type that contains only the first and last name and the percentile range to which the student belongs. An anonymous type is used because it is not necessary to use the complete `Student` object to display the results. `GetPercentile` is a helper function that calculates a percentile based on the student's average score. The method returns an integer between 0 and 10.
 
@@ -52,7 +52,7 @@ Paste the following method into the `StudentClass` class. Change the calling sta
 
 [!code-csharp[csProgGuideLINQ#19](~/samples/snippets/csharp/concepts/linq/how-to-group-query-results_5.cs)]
 
-## Example
+## Group by comparison example
 
 The following example shows how to group source elements by using a Boolean comparison expression. In this example, the Boolean expression tests whether a student's average exam score is greater than 75. As in previous examples, the results are projected into an anonymous type because the complete source element is not needed. Note that the properties in the anonymous type become properties on the `Key` member and can be accessed by name when the query is executed.
 
@@ -60,7 +60,7 @@ Paste the following method into the `StudentClass` class. Change the calling sta
 
 [!code-csharp[csProgGuideLINQ#20](~/samples/snippets/csharp/concepts/linq/how-to-group-query-results_6.cs)]
 
-## Example
+## Group by anonymous type
 
 The following example shows how to use an anonymous type to encapsulate a key that contains multiple values. In this example, the first key value is the first letter of the student's last name. The second key value is a Boolean that specifies whether the student scored over 85 on the first exam. You can order the groups by any property in the key.
 
@@ -74,7 +74,7 @@ Paste the following method into the `StudentClass` class. Change the calling sta
 - <xref:System.Linq.IGrouping%602>
 - [Language Integrated Query (LINQ)](index.md)
 - [group clause](../language-reference/keywords/group-clause.md)
-- [Anonymous Types](../programming-guide/classes-and-structs/anonymous-types.md)
+- [Anonymous Types](../fundamentals/types/anonymous-types.md)
 - [Perform a Subquery on a Grouping Operation](perform-a-subquery-on-a-grouping-operation.md)
 - [Create a Nested Group](create-a-nested-group.md)
 - [Grouping Data](../programming-guide/concepts/linq/grouping-data.md)

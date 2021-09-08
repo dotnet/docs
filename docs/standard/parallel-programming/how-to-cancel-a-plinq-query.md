@@ -19,7 +19,7 @@ The following examples show two ways to cancel a PLINQ query. The first example 
 >
 > This example is intended to demonstrate usage, and might not run faster than the equivalent sequential LINQ to Objects query. For more information about speedup, see [Understanding Speedup in PLINQ](understanding-speedup-in-plinq.md).
 
-## Example
+## Example 1
 
 [!code-csharp[PLINQ#16](../../../samples/snippets/csharp/VS_Snippets_Misc/plinq/cs/plinqsamples.cs#16)]
 [!code-vb[PLINQ#16](../../../samples/snippets/visualbasic/VS_Snippets_Misc/plinq/vb/plinqsnippets1.vb#16)]
@@ -32,7 +32,7 @@ The general guidance on cancellation is as follows:
 
 2. If cancellation occurs and no other exceptions are thrown, then handle an <xref:System.OperationCanceledException> rather than an <xref:System.AggregateException>.
 
-## Example
+## Example 2
 
 The following example shows how to handle cancellation when you have a computationally expensive function in user code.
 

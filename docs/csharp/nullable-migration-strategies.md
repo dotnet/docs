@@ -63,7 +63,7 @@ Which of these strategies you pick depends on how much active development is tak
 > 1. Start the file name with *TemporaryGeneratedFile_*
 > 1. End the file name with *.designer.cs*, *.generated.cs*, *.g.cs*, or *.g.i.cs*.
 >
-> Generators can opt-in using the [`#nullable`](language-reference/preprocessor-directives/preprocessor-nullable.md) preprocessor directive.
+> Generators can opt-in using the [`#nullable`](language-reference/preprocessor-directives.md#nullable-context) preprocessor directive.
 
 ## Should nullable warnings introduce breaking changes?
 
@@ -85,7 +85,7 @@ However, for public libraries, or libraries with large user bases, you may prefe
 
 Several attributes have been added to express additional information about the null state of variables. All code you wrote before C# 8 introduced nullable reference types was *null oblivious*. That means any reference type variable may be null, but null checks aren't required. Once your code is *nullable aware*, those rules change. Reference types should never be the `null` value, and nullable reference types must be checked against `null` before being dereferenced.
 
-The rules for your APIs are likely more complicated, as you saw with the `TryGetValue` API scenario. Many of your APIs have more complex rules for when variables can or can't be `null`. In these cases, you'll use attributes to express those rules. The attributes that describe the semantics of your API are found in the article on [Attributes that impact nullable analysis](./language-reference/attributes/nullable-analysis.md).
+The rules for your APIs are likely more complicated, as you saw with the `TryGetMessage` API scenario. Many of your APIs have more complex rules for when variables can or can't be `null`. In these cases, you'll use attributes to express those rules. The attributes that describe the semantics of your API are found in the article on [Attributes that impact nullable analysis](./language-reference/attributes/nullable-analysis.md).
 
 ## Generic definitions and nullability
 
@@ -95,7 +95,7 @@ This fact doesn't mean you can't use a nullable type (either value type or refer
 
 What it does mean is that you can't use `T?` in a generic class or method declaration without constraints. For example, <xref:System.Linq.Enumerable.FirstOrDefault%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D)?displayProperty=nameWithType> won't be changed to return `T?`. You can overcome this limitation by adding either the `struct` or `class` constraint. With either of those constraints, the compiler knows how to generate code for both `T` and `T?`.
 
-You may want to restrict the types used for a generic type argument to be non-nullable types. You can do that by adding the `notnull` constraint on that type argument. When that constraint is applied, the type argument must not be a nullable type.
+You may want to restrict the types used for a generic type argument to be non-nullable types. You can do that by adding the `notnull` constraint on that type argument. When that constraint is applied in a nullable context, the type argument must not be a nullable type.
 
 ## Late-initialized properties, Data Transfer Objects, and nullability
 
@@ -210,5 +210,5 @@ You'll never observe an actual null value at runtime except as a result of a pro
 
 ## See also
 
-- [Migrate an existing codebase to nullable references](tutorials/upgrade-to-nullable-references.md)
+- [Migrate an existing codebase to nullable references](whats-new/tutorials/upgrade-to-nullable-references.md)
 - [Working with Nullable Reference Types in EF Core](/ef/core/miscellaneous/nullable-reference-types)

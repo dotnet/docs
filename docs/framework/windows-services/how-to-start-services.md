@@ -9,6 +9,8 @@ ms.assetid: 9ea77955-2d96-4c3d-913c-14db7604cdad
 ---
 # How to: Start Services
 
+[!INCLUDE [windows-service-disambiguation](../../core/extensions/includes/windows-service-disambiguation.md)]
+
 After a service is installed, it must be started. Starting calls the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method on the service class. Usually, the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method defines the useful work the service will perform. After a service starts, it remains active until it is manually paused or stopped.
 
 Services can be set up to start automatically or manually. A service that starts automatically will be started when the computer on which it is installed is rebooted or first turned on. A user must start a service that starts manually.
@@ -20,7 +22,7 @@ There are several ways you can manually start a service — from **Server Explor
 
 You set the <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> property on the <xref:System.ServiceProcess.ServiceInstaller> class to determine whether a service should be started manually or automatically.
 
-### To specify how a service should start
+## Specify how a service should start
 
 1. After creating your service, add the necessary installers for it. For more information, see [How to: Add Installers to Your Service Application](how-to-add-installers-to-your-service-application.md).
 
@@ -41,32 +43,21 @@ You set the <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> property 
 
     There are several ways you can start a service that has its <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> process set to **Manual** — from **Server Explorer**, from the **Windows Services Control Manager**, or from code. It is important to note that not all of these methods actually start the service in the context of the **Services Control Manager**; **Server Explorer** and programmatic methods of starting the service actually manipulate the controller.
 
-### To manually start a service from Server Explorer
+## Start a service from Server Explorer
 
 1. In **Server Explorer**, add the server you want if it is not already listed. For more information, see How to: Access and Initialize Server Explorer-Database Explorer.
 
 2. Expand the **Services** node, and then locate the service you want to start.
 
-3. Right-click the name of the service, and click **Start**.
+3. Right-click the name of the service, and then select **Start**.
 
-### To manually start a service from Services Control Manager
+### Start a service from Services
 
-1. Open the **Services Control Manager** by doing one of the following:
+1. Open the **Services** app.
 
-    - In Windows XP and 2000 Professional, right-click **My Computer** on the desktop, and then click **Manage**. In the dialog box that appears, expand the **Services and Applications** node.
+2. Select your service in the list, right-click it, and then select **Start**.
 
-      \- or -
-
-    - In Windows Server 2003 and Windows 2000 Server, click **Start**, point to **Programs**, click **Administrative Tools**, and then click **Services**.
-
-      > [!NOTE]
-      > In Windows NT version 4.0, you can open this dialog box from **Control Panel**.
-
-    You should now see your service listed in the **Services** section of the window.
-
-2. Select your service in the list, right-click it, and then click **Start**.
-
-### To manually start a service from code
+## Start a service from code
 
 1. Create an instance of the <xref:System.ServiceProcess.ServiceController> class, and configure it to interact with the service you want to administer.
 

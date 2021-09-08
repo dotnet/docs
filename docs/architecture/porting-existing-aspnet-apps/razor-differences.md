@@ -7,7 +7,7 @@ ms.date: 11/13/2020
 
 # Compare Razor usage in ASP.NET MVC and ASP.NET Core
 
-The basic syntax of Razor hasn't changed substantially between ASP.NET MVC and ASP.NET Core. However, there are certain differences, such as the introduction of [Tag Helpers](https://docs.microsoft.com/aspnet/core/mvc/views/tag-helpers/intro) and Razor Pages, that should be considered when migrating. If your app makes heavy use of custom Razor functionality, refer to the [Razor syntax reference for ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages) to see what changes may be required when you migrate to ASP.NET Core.
+The basic syntax of Razor hasn't changed substantially between ASP.NET MVC and ASP.NET Core. However, there are certain differences, such as the introduction of [Tag Helpers](/aspnet/core/mvc/views/tag-helpers/intro) and Razor Pages, that should be considered when migrating. If your app makes heavy use of custom Razor functionality, refer to the [Razor syntax reference for ASP.NET Core](/aspnet/core/razor-pages) to see what changes may be required when you migrate to ASP.NET Core.
 
 ## Tag Helpers
 
@@ -19,10 +19,10 @@ Razor Pages offer an alternative to controllers, actions, and views for page- an
 
 ## References
 
-- [Migrate from ASP.NET MVC to ASP.NET Core MVC: Controllers and Views](https://docs.microsoft.com/aspnet/core/migration/mvc#migrate-controllers-and-views)
-- [Tag Helpers in ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/views/tag-helpers/intro)
-- [Introduction to Razor Pages in ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages)
-- [Razor syntax reference for ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages)
+- [Migrate from ASP.NET MVC to ASP.NET Core MVC: Controllers and Views](/aspnet/core/migration/mvc#migrate-controllers-and-views)
+- [Tag Helpers in ASP.NET Core](/aspnet/core/mvc/views/tag-helpers/intro)
+- [Introduction to Razor Pages in ASP.NET Core](/aspnet/core/razor-pages)
+- [Razor syntax reference for ASP.NET Core](/aspnet/core/razor-pages)
 
 >[!div class="step-by-step"]
 >[Previous](controller-differences.md)

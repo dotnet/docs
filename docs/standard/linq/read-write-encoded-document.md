@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 84f64e71-39a6-42c6-ad68-f052bb158a03
+ms.topic: how-to
 ---
 
 # How to read and write an encoded document (LINQ to XML)

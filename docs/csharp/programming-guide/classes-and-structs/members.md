@@ -29,4 +29,4 @@ Classes and structs have members that represent their data and behavior. A class
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes](./classes.md)
+- [Classes](../../fundamentals/types/classes.md)

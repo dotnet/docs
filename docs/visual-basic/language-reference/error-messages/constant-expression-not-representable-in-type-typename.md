@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: BC30439: Constant expression not representable in type '<typename>"
+description: "Learn more about: BC30439: Constant expression not representable in type '<typename>'"
 title: "Constant expression not representable in type '<typename>'"
 ms.date: 07/20/2015
 f1_keywords:

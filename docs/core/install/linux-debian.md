@@ -45,6 +45,7 @@ The following versions of .NET are no longer supported. The downloads for these 
 ```bash
 wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
@@ -93,6 +94,8 @@ When a new patch release is available for .NET, you can simply upgrade it throug
 sudo apt-get update
 sudo apt-get upgrade
 ```
+
+If you've upgraded your Linux distribution since installing .NET, you may need to reconfigure the Microsoft package repository. Run the installation instructions for your current distribution version to upgrade to the appropriate package repository for .NET updates.
 
 ## APT troubleshooting
 

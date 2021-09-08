@@ -2,6 +2,7 @@
 title: dotnet-dump diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-dump CLI tool to collect and analyze Windows and Linux dumps without any native debugger.
 ms.date: 11/17/2020
+ms.topic: reference
 ---
 # Dump collection and analysis utility (dotnet-dump)
 
@@ -143,7 +144,7 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 
 | Command                             | Function                                                                                      |
 | ----------------------------------- | --------------------------------------------------------------------------------------------- |
-| `soshelp`                           | Displays all available commands                                                               |
+| `soshelp|help`                      | Displays all available commands                                                               |
 | `soshelp|help <command>`            | Displays the specified command.                                                               |
 | `exit|quit`                         | Exits interactive mode.                                                                       |
 | `clrstack <arguments>`              | Provides a stack trace of managed code only.                                                  |
@@ -183,7 +184,7 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 
 ## Using `dotnet-dump`
 
-The first step is to collect a dump. This step can be skipped if a core dump has already been generated. The operating system or the .NET Core runtime's built-in [dump generation feature](https://github.com/dotnet/runtime/blob/master/docs/design/coreclr/botr/xplat-minidump-generation.md) can each create core dumps.
+The first step is to collect a dump. This step can be skipped if a core dump has already been generated. The operating system or the .NET Core runtime's built-in [dump generation feature](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/botr/xplat-minidump-generation.md) can each create core dumps.
 
 ```console
 $ dotnet-dump collect --process-id 1902

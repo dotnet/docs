@@ -8,10 +8,6 @@ ms.date: 06/26/2019
 
 **This article applies to:** ✔️ .NET Core 1.x SDK and later versions
 
-<!-- todo: uncomment when all CLI commands are reviewed
-[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
--->
-
 ## Name
 
 `dotnet nuget delete` - Deletes or unlists a package from the server.
@@ -42,17 +38,15 @@ The `dotnet nuget delete` command deletes or unlists a package from the server. 
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 * **`--force-english-output`**
 
   Forces the application to run using an invariant, English-based culture.
 
-* **`-h|--help`**
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out a short help for the command.
-
-* **`--interactive`**
-
-  Allows the command to block and requires manual action for operations like authentication. Option available since .NET Core 2.2 SDK.
+[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 * **`-k|--api-key <API_KEY>`**
 

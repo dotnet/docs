@@ -31,7 +31,7 @@ You can run the ML.NET CLI on any command-prompt (Windows, Mac, or Linux) to gen
 
 ## Pre-requisites
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1) or later
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet/3.1) or later
 - (Optional) [Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
 - [ML.NET CLI](../how-to-guides/install-ml-net-cli.md)
 

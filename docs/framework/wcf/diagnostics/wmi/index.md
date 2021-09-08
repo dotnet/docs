@@ -148,7 +148,7 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
 Whoami /user  
 ```  
   
- This provides the SID of the current user, but this method cannot be used to get the SID on any arbitrary user. Another method to get the SID is to use the [getsid.exe](/windows/win32/wmisdk/using-wmi) tool from the Windows 2000 Resource Kit Tools for administrative tasks. This tool compares the SID of two users (local or domain), and as a side effect prints the two SIDs to the command line. For more information, see [Well Known SIDs](https://support.microsoft.com/help/243330/well-known-security-identifiers-in-windows-operating-systems).  
+For more information, see [Well Known SIDs](/troubleshoot/windows-server/identity/security-identifiers-in-windows).  
   
 ## Accessing Remote WMI Object Instances  
 

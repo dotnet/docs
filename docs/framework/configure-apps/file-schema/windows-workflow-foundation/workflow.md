@@ -2,7 +2,6 @@
 description: "Learn more about: <workflow>"
 title: "<workflow>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: 560aa9b6-9cf3-460e-b798-f87d14b1d2de
 ---
 # \<workflow>

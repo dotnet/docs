@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 3320ecbf-cdbe-480e-979c-2c14bbef9988
+ms.topic: how-to
 ---
 
 # How to serialize using DataContractSerializer (LINQ to XML)

@@ -134,7 +134,7 @@ For .NET 2.1, you must use the following switches with the `dotnet publish` comm
   This switch uses an identifier (RID) to specify the target platform. For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).
 
 - `--self-contained false`
-  This switch tells the .NET Core SDK to create an executable as an FDE.
+  This switch disables the default behavior of the `-r` switch, which is to create a self-contained deployment (SCD). This switch creates an FDE.
 
 | Publish Mode                   | SDK Version | Command                                                     |
 |--------------------------------|-------------|-------------------------------------------------------------|
@@ -146,11 +146,11 @@ Whenever you use the `-r` switch, the output folder path changes to: `./bin/<BUI
 If you use the [example app](#sample-app), run `dotnet publish -f net5.0 -r win10-x64 --self-contained false`. This command creates the following executable: `./bin/Debug/net5.0/win10-x64/publish/apptest1.exe`
 
 > [!NOTE]
-> You can reduce the total size of your deployment by enabling **globalization invariant mode**. This mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture). For more information about **globalization invariant mode** and how to enable it, see [.NET Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/master/docs/design/features/globalization-invariant-mode.md).
+> You can reduce the total size of your deployment by enabling **globalization invariant mode**. This mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture). For more information about **globalization invariant mode** and how to enable it, see [.NET Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).
 
 ## Self-contained deployment
 
-When you publish a self-contained deployment (SCD), the .NET SDK creates a platform-specific executable. Publishing an SCD includes all required .NET files to run your app but it doesn't include the [native dependencies of .NET](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md). These dependencies must be present on the system before the app runs.
+When you publish a self-contained deployment (SCD), the .NET SDK creates a platform-specific executable. Publishing an SCD includes all required .NET files to run your app but it doesn't include the [native dependencies of .NET](https://github.com/dotnet/core/blob/main/Documentation/prereqs.md). These dependencies must be present on the system before the app runs.
 
 Publishing an SCD creates an app that doesn't roll forward to the latest available .NET security patch. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#self-contained-deployments-include-the-selected-runtime).
 
@@ -169,7 +169,7 @@ You must use the following switches with the `dotnet publish` command to publish
 |                                | 5.0         | `dotnet publish -c Release -r <RID> --self-contained true`  |
 
 > [!NOTE]
-> You can reduce the total size of your deployment by enabling **globalization invariant mode**. This mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture). For more information about **globalization invariant mode** and how to enable it, see [.NET Core Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/master/docs/design/features/globalization-invariant-mode.md).
+> You can reduce the total size of your deployment by enabling **globalization invariant mode**. This mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture). For more information about **globalization invariant mode** and how to enable it, see [.NET Core Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).
 
 ## See also
 

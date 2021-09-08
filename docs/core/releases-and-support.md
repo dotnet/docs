@@ -87,7 +87,7 @@ If you're building a client application that will be distributed to consumers, s
 
 You need to regularly install servicing updates to ensure that your apps are in a secure and supported state. For example, if the latest servicing update for .NET Core 3.1 is 3.1.8 and we ship 3.1.9, then 3.1.8 is no longer the latest. The supported servicing level for 3.1 is then 3.1.9.
 
-For information about the latest servicing updates for each major and minor version, see the [.NET downloads page](https://dotnet.microsoft.com/download/dotnet-core).
+For information about the latest servicing updates for each major and minor version, see the [.NET downloads page](https://dotnet.microsoft.com/download/dotnet).
 
 ## End of support
 
@@ -99,7 +99,7 @@ End of support refers to the date after which Microsoft no longer provides fixes
 
 When an operating system version goes out of support, we stop testing that version and providing support for that version. Users need to move forward to a supported operating system version to get support.
 
-For more information, see the [.NET OS Lifecycle Policy](https://github.com/dotnet/core/blob/master/os-lifecycle-policy.md).
+For more information, see the [.NET OS Lifecycle Policy](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
 ## Get support
 

@@ -1,7 +1,6 @@
 ---
 title: "Breaking change: Blazor: Updated browser support"
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled Blazor: Updated browser support"
-author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
 no-loc: [Blazor, "Blazor WebAssembly", "Blazor Server"]
@@ -33,7 +32,7 @@ New Blazor features in ASP.NET Core 5.0 are incompatible with these older browse
 
 ## Recommended action
 
-Upgrade from these older browsers to the [new, Chromium-based Microsoft Edge](https://www.microsoft.com/edge). For Blazor apps that need to support these older browsers, use ASP.NET Core 3.1. The supported browsers list for Blazor in ASP.NET Core 3.1 hasn't changed and is documented at [Supported platforms](/aspnet/core/blazor/supported-platforms?view=aspnetcore-3.1).
+Upgrade from these older browsers to the [new, Chromium-based Microsoft Edge](https://www.microsoft.com/edge). For Blazor apps that need to support these older browsers, use ASP.NET Core 3.1. The supported browsers list for Blazor in ASP.NET Core 3.1 hasn't changed and is documented at [Supported platforms](/aspnet/core/blazor/supported-platforms?view=aspnetcore-3.1&preserve-view=true).
 
 ## Affected APIs
 

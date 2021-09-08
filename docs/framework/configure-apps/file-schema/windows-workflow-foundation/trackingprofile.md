@@ -2,7 +2,6 @@
 description: "Learn more about: <trackingProfile>"
 title: "<trackingProfile>"
 ms.date: "03/30/2017"
-ms.topic: "reference"
 ms.assetid: 154830ff-ddd3-4397-a3b5-5b334907777f
 ---
 # \<trackingProfile>

@@ -9,12 +9,12 @@ ms.assetid: bc5f6637-5513-4d27-99bb-51aad7741e4a
 ---
 # How to: Create Temporary Certificates for Use During Development
 
-When developing a secure service or client using Windows Communication Foundation (WCF), it is often necessary to supply an X.509 certificate to be used as a credential. The certificate typically is part of a chain of certificates with a root authority found in the Trusted Root Certification Authorities store of the computer. Having a certificate chain enables you to scope a set of certificates where typically the root authority is from your organization or business unit. To emulate this at development time, you can create two certificates to satisfy the security requirements. The first is a self-signed certificate that is placed in the Trusted Root Certification Authorities store, and the second certificate is created from the first and is placed in either the Personal store of the Local Machine location, or the Personal store of the Current User location. This topic walks through the steps to create these two certificates using the PowerShell [New-SelfSignedCertificate)](/powershell/module/pkiclient/new-selfsignedcertificate) cmdlet.
+When developing a secure service or client using Windows Communication Foundation (WCF), it is often necessary to supply an X.509 certificate to be used as a credential. The certificate typically is part of a chain of certificates with a root authority found in the Trusted Root Certification Authorities store of the computer. Having a certificate chain enables you to scope a set of certificates where typically the root authority is from your organization or business unit. To emulate this at development time, you can create two certificates to satisfy the security requirements. The first is a self-signed certificate that is placed in the Trusted Root Certification Authorities store, and the second certificate is created from the first and is placed in either the Personal store of the Local Machine location, or the Personal store of the Current User location. This topic walks through the steps to create these two certificates using the PowerShell [New-SelfSignedCertificate)](/powershell/module/pki/new-selfsignedcertificate) cmdlet.
 
 > [!IMPORTANT]
 > The certificates that the New-SelfSignedCertificate cmdlet generates are provided for testing purposes only. When deploying a service or client, be sure to use an appropriate certificate provided by a certification authority. This could either be from a Windows Server certificate server in your organization or a third party.
 >
-> By default, the [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate) cmdlet creates certificates that are self-signed and these certificates are insecure. Placing the self-signed certificates in the Trusted Root Certification Authorities store enables you to create a development environment that more closely simulates your deployment environment.
+> By default, the [New-SelfSignedCertificate](/powershell/module/pki/new-selfsignedcertificate) cmdlet creates certificates that are self-signed and these certificates are insecure. Placing the self-signed certificates in the Trusted Root Certification Authorities store enables you to create a development environment that more closely simulates your deployment environment.
 
  For more information about creating and using certificates, see [Working with Certificates](working-with-certificates.md). For more information about using a certificate as a credential, see [Securing Services and Clients](securing-services-and-clients.md). For a tutorial about using Microsoft Authenticode technology, see [Authenticode Overviews and Tutorials](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537360(v=vs.85)).
 
@@ -23,15 +23,15 @@ When developing a secure service or client using Windows Communication Foundatio
 The following command creates a self-signed certificate with a subject name of "RootCA" in the Current User Personal store.
 
 ```powershell
-$rootcert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -DnsName "RootCA" -TextExtension @("2.5.29.19={text}CA=true") -KeyUsage CertSign,CrlSign,DigitalSignature
+$rootCert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -DnsName "RootCA" -TextExtension @("2.5.29.19={text}CA=true") -KeyUsage CertSign,CrlSign,DigitalSignature
 ```
 
-We need to export the certificate to a PFX file so that it can be imported to where it's needed in a later step. When exporting a certificate with the private key, a password is needed to protect it. We save the password in a `SecureString` and use the [Export-PfxCertificate](/powershell/module/pkiclient/export-pfxcertificate) cmdlet to export the certificate with the associated private key to a PFX file. We also save just the public certificate into a CRT file using the [Export-Certificate](/powershell/module/pkiclient/export-certificate) cmdlet.
+We need to export the certificate to a PFX file so that it can be imported to where it's needed in a later step. When exporting a certificate with the private key, a password is needed to protect it. We save the password in a `SecureString` and use the [Export-PfxCertificate](/powershell/module/pki/export-pfxcertificate) cmdlet to export the certificate with the associated private key to a PFX file. We also save just the public certificate into a CRT file using the [Export-Certificate](/powershell/module/pki/export-certificate) cmdlet.
 
 ```powershell
-[System.Security.SecureString]$rootcertPassword = ConvertTo-SecureString -String "password" -Force -AsPlainText
-[String]$rootCertPath = Join-Path -Path 'cert:\CurrentUser\My\' -ChildPath "$($rootcert.Thumbprint)"
-Export-PfxCertificate -Cert $rootCertPath -FilePath 'RootCA.pfx' -Password $rootcertPassword
+[System.Security.SecureString]$rootCertPassword = ConvertTo-SecureString -String "password" -Force -AsPlainText
+[String]$rootCertPath = Join-Path -Path 'cert:\CurrentUser\My\' -ChildPath "$($rootCert.Thumbprint)"
+Export-PfxCertificate -Cert $rootCertPath -FilePath 'RootCA.pfx' -Password $rootCertPassword
 Export-Certificate -Cert $rootCertPath -FilePath 'RootCA.crt'
 ```
 
@@ -47,7 +47,7 @@ Similarly, we save the signed certificate with private key into a PFX file and j
 
 ```powershell
 [String]$testCertPath = Join-Path -Path 'cert:\LocalMachine\My\' -ChildPath "$($testCert.Thumbprint)"
-Export-PfxCertificate -Cert $testCertPath -FilePath testcert.pfx -Password $rootcertPassword
+Export-PfxCertificate -Cert $testCertPath -FilePath testcert.pfx -Password $rootCertPassword
 Export-Certificate -Cert $testCertPath -FilePath testcert.crt
 ```
 

@@ -17,7 +17,7 @@ sgen [options]
 ```
   
 > [!TIP]
-> For .NET Framework tools to function properly, you must set your `Path`, `Include`, and `Lib` environment variables correctly. Set these environment variables by running SDKVars.bat, which is located in the \<SDK>\\\<version>\Bin directory. SDKVars.bat must be executed in every command shell.
+> For .NET Framework tools to function properly, you must either use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell) or set the `Path`, `Include`, and `Lib` environment variables correctly. To set these environment variables, run *SDKVars.bat*, which is located in the *\<SDK>\\\<version>\Bin* directory.
   
 ## Parameters  
   
@@ -61,4 +61,4 @@ sgen Data.dll
 ## See also
 
 - [Tools](../../framework/tools/index.md)
-- [Command Prompts](../../framework/tools/developer-command-prompt-for-vs.md)
+- [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

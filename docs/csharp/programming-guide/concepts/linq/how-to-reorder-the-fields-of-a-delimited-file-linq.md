@@ -1,6 +1,7 @@
 ---
 title: "How to reorder the fields of a delimited file (LINQ) (C#)"
 description: Learn how to rearrange fields in a .csv file in LINQ in C#. The example changes orders of columns, merges to columns, and sorts the rows by a column value.
+ms.topic: how-to
 ms.date: 07/20/2015
 ms.assetid: 4e62d82c-61b7-4f18-b9a1-86723746d7d2
 ---

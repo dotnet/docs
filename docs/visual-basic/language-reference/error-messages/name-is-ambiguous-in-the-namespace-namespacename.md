@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: BC30560: '<name>' is ambiguous in the namespace '<namespacename>"
+description: "Learn more about: BC30560: '<name>' is ambiguous in the namespace '<namespacename>'"
 title: "'<name>' is ambiguous in the namespace '<namespacename>'"
 ms.date: 07/20/2015
 f1_keywords:

@@ -2,13 +2,15 @@
 name: Snippets 5000
 
 # Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
+# events on the main branch only.
 on:
   pull_request:
     paths:
       - "**.cs"
       - "**.vb"
       - "**.fs"
+      - "**.cpp"
+      - "**.h"
       - "**.xaml"
       - "**.razor"
       - "**.cshtml"
@@ -16,14 +18,15 @@ on:
       - "**.csproj"
       - "**.vbproj"
       - "**.fsproj"
+      - "**.vcxproj"
       - "**.sln"
       - "**global.json"
       - "**snippets.5000.json"
-    branches: [ master ]
+    branches: [ main ]
 
 env:
-  DOTNET_INSTALLER_CHANNEL: 'release/5.0.1xx'
-  DOTNET_DO_INSTALL: 'false'
+  DOTNET_INSTALLER_CHANNEL: '6.0'
+  DOTNET_DO_INSTALL: 'true'
   EnableNuGetPackageRestore: 'True'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -61,7 +64,7 @@ jobs:
     - name: Locate projects for PR
       env:
         GitHubKey: ${{ secrets.GITHUB_TOKEN }}
-        LocateExts: ".cs;.vb;.fs;.cpp;.h;.xaml;.razor;.cshtml;.vbhtml;.csproj;.fsproj;.vbproj;.sln"
+        LocateExts: ".cs;.vb;.fs;.cpp;.h;.xaml;.razor;.cshtml;.vbhtml;.csproj;.fsproj;.vbproj;.vcxproj;.sln"
       run: |
         ./.github/workflows/dependencies/Get-MSBuildResults.ps1 "${{ github.workspace }}" -PullRequest ${{ github.event.number }} -RepoOwner ${{ github.repository_owner }} -RepoName ${{ github.event.repository.name }}
         
@@ -76,6 +79,3 @@ jobs:
     - name: Report status
       run: |
         ./.github/workflows/dependencies/Out-GithubActionStatus.ps1
-      
-      
-      

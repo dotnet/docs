@@ -6,10 +6,10 @@ ms.assetid: 0576aa4a-544c-45c1-8319-1b214824e83e
 ---
 # 57397 - UnhandledException
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|57397|  
 |Keywords|Infrastructure|  
 |Level|Critical|  

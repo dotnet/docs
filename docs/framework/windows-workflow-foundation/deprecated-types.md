@@ -2,7 +2,7 @@
 description: "Learn more about: Deprecated types in Windows Workflow Foundation"
 title: "Deprecated types in Windows Workflow Foundation"
 ms.date: "03/30/2017"
-ms.assetid: 4aebe928-a964-4c1c-abf7-0dbbd3604b13
+ms.topic: "reference"
 ---
 # Deprecated types in Windows Workflow Foundation
 

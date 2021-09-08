@@ -70,7 +70,7 @@ so this load may be dangerous. If this load is not intended to sandbox the assem
 
 To load the assembly and execute its code, you must either:
 
-- Explicitly create a sandbox for the assembly (see [How to: Run Partially Trusted Code in a Sandbox](../../../misc/how-to-run-partially-trusted-code-in-a-sandbox.md)).
+- Explicitly create a sandbox for the assembly (see [How to: Run Partially Trusted Code in a Sandbox](/previous-versions/dotnet/framework/code-access-security/how-to-run-partially-trusted-code-in-a-sandbox)).
 
 - Run the assembly's code in full trust. You do this by configuring the `<loadFromRemoteSources>` element. It lets you specify that the assemblies that run in partial trust in earlier versions of the .NET Framework now run in full trust in the .NET Framework 4 and later versions.
 
@@ -114,7 +114,7 @@ The following example shows how to grant full trust to assemblies loaded from re
 ## See also
 
 - [More Implicit Uses of CAS Policy: loadFromRemoteSources](/archive/blogs/shawnfa/more-implicit-uses-of-cas-policy-loadfromremotesources)
-- [How to: Run Partially Trusted Code in a Sandbox](../../../misc/how-to-run-partially-trusted-code-in-a-sandbox.md)
+- [How to: Run Partially Trusted Code in a Sandbox](/previous-versions/dotnet/framework/code-access-security/how-to-run-partially-trusted-code-in-a-sandbox)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
 - <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>

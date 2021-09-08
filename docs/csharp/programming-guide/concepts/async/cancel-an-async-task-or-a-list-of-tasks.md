@@ -4,6 +4,7 @@ description: Learn how to use cancellation tokens to signal a cancellation reque
 ms.date: 02/03/2021
 ms.topic: tutorial
 ms.assetid: eec32dbb-70ea-4c88-bd27-fa2e34546914
+recommendations: false
 ---
 
 # Cancel a list of tasks (C#)
@@ -28,7 +29,7 @@ This tutorial requires the following:
 
 ### Create example application
 
-Create a new .NET Core console application. You can create one by using the [`dotnet new console`](../../../../core/tools/dotnet-new.md#console) command or from [Visual Studio](/visualstudio/install/install-visual-studio). Open the *Program.cs* file in your favorite code editor.
+Create a new .NET Core console application. You can create one by using the [`dotnet new console`](../../../../core/tools/dotnet-new-sdk-templates.md#console) command or from [Visual Studio](/visualstudio/install/install-visual-studio). Open the *Program.cs* file in your favorite code editor.
 
 ### Replace using statements
 

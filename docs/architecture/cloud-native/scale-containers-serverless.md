@@ -10,7 +10,7 @@ There are two ways to scale an application: up or out. The former refers to addi
 
 ## The simple solution: scaling up
 
-Upgrading an existing host server with increased CPU, memory, disk I/O speed, and network I/O speed is known as *scaling up*. Scaling up a cloud-native application involves choosing more capable resources from the cloud vendor. For example, you can a new node pool with larger VMs in your Kubernetes cluster. Then, migrate your containerized services to the new pool.
+Upgrading an existing host server with increased CPU, memory, disk I/O speed, and network I/O speed is known as *scaling up*. Scaling up a cloud-native application involves choosing more capable resources from the cloud vendor. For example, you can create a new node pool with larger VMs in your Kubernetes cluster. Then, migrate your containerized services to the new pool.
 
 Serverless apps scale up by choosing the [premium Functions plan](/azure/azure-functions/functions-scale) or premium instance sizes from a dedicated app service plan.
 

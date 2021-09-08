@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: BC36532: Nested function does not have a signature that is compatible with delegate '<delegatename>"
+description: "Learn more about: BC36532: Nested function does not have a signature that is compatible with delegate '<delegatename>'"
 title: "Nested function does not have a signature that is compatible with delegate '<delegatename>'"
 ms.date: 07/20/2015
 f1_keywords:

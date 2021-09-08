@@ -27,7 +27,7 @@ C# statements can execute in either checked or unchecked context. In a checked c
   
 - Explicit numeric conversions between integral types, or from `float` or `double` to an integral type.  
   
- If neither `checked` nor `unchecked` is specified, the default context for non-constant expressions (expressions that are evaluated at run time) is defined by the value of the [-checked](../compiler-options/checked-compiler-option.md) compiler option. By default the value of that option is unset and arithmetic operations are executed in an unchecked context.
+ If neither `checked` nor `unchecked` is specified, the default context for non-constant expressions (expressions that are evaluated at run time) is defined by the value of the [**CheckForOverflowUnderflow**](../compiler-options/language.md#checkforoverflowunderflow) compiler option. By default the value of that option is unset and arithmetic operations are executed in an unchecked context.
 
  For constant expressions (expressions that can be fully evaluated at compile time), the default context is always checked. Unless a constant expression is explicitly placed in an unchecked context, overflows that occur during the compile-time evaluation of the expression cause compile-time errors.
   

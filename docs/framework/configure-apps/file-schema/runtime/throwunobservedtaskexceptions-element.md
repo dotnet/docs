@@ -70,7 +70,7 @@ Specifies whether unhandled task exceptions should terminate a running process.
   
 - By setting the registry DWORD value ThrowUnobservedTaskExceptions = 1 in the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework key.  
   
-## Example  
+## Example 1
 
  The following example shows how to enable the throwing of exceptions in tasks by using an application configuration file.  
   
@@ -82,7 +82,7 @@ Specifies whether unhandled task exceptions should terminate a running process.
 </configuration>  
 ```  
   
-## Example  
+## Example 2  
 
  The following example demonstrates how an unobserved exception is thrown from a task. The code must be run as a released program to work correctly.  
   

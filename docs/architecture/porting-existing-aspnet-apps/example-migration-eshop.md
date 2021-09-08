@@ -17,11 +17,13 @@ The initial version of the project is shown in Figure 4-1. It's a fairly standar
 
 **Figure 4-1.** The *eShopModernizing* MVC sample project structure.
 
+This chapter demonstrates how to perform many of the upgrade steps by hand. Alternatively, you can use the [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant) to perform many of the initial steps, like converting the project file, changing the target framework, and updating NuGet packages.
+
 ## Run *ApiPort* to identify problematic APIs
 
-The first step in preparing to migrate is to run the *ApiPort* tool. The tool identifies how many .NET Framework APIs the app calls and how many of these have .NET Standard or .NET Core equivalents. Focus primarily on your own app's logic, not third-party dependencies, and pay attention to `System.Web` dependencies that will need to be ported. The ApiPort tool was introduced in the last chapter on [understanding and updating dependencies](/understand-update-dependencies.md).
+The first step in preparing to migrate is to run the *ApiPort* tool. The tool identifies how many .NET Framework APIs the app calls and how many of these have .NET Standard or .NET Core equivalents. Focus primarily on your own app's logic, not third-party dependencies, and pay attention to `System.Web` dependencies that will need to be ported. The ApiPort tool was introduced in the last chapter on [understanding and updating dependencies](understand-update-dependencies.md).
 
-After [installing and configuring the *ApiPort* tool](https://docs.microsoft.com/dotnet/standard/analyzers/portability-analyzer), run the analysis from within Visual Studio, as shown in Figure 4-2.
+After [installing and configuring the *ApiPort* tool](../../standard/analyzers/portability-analyzer.md), run the analysis from within Visual Studio, as shown in Figure 4-2.
 
 ![Figure 4-2](media/Figure4-2.png)
 
@@ -51,7 +53,7 @@ Most of the incompatible types refer to `Controller` and various related attribu
 
 ## Update project files and NuGet reference syntax
 
-Next, migrate from the older *.csproj* file structure to the newer, simpler structure introduced with .NET Core. In doing so, you'll also migrate from using a *packages.config* file for NuGet references to using `<PackageReference>` elements in the project file.
+Next, migrate from the older *.csproj* file structure to the newer, simpler structure introduced with .NET Core. In doing so, you'll also migrate from using a *packages.config* file for NuGet references to using `<PackageReference>` elements in the project file. Old-style project files may also use `<PackageReference>` elements, so it usually makes sense to migrate all NuGet package references to this format first, before upgrading to the new project file format.
 
 The original project's *eShopLegacyMVC.csproj* file is 418 lines long. A sample of the project file is shown in Figure 4-6. To offer a sense of its overall size and complexity, the right side of the image contains a miniature view of the entire file.
 
@@ -67,7 +69,7 @@ In addition to the C# project file, NuGet dependencies are stored in a separate 
 
 **Figure 4-7.** The *packages.config* file.
 
-After upgrading to the new *.csproj* file format, you can migrate *packages.config* in class library projects using Visual Studio. This functionality doesn't work with ASP.NET projects, however. [Learn more about migrating *packages.config* to `<PackageReference>` in Visual Studio](https://docs.microsoft.com/nuget/consume-packages/migrate-packages-config-to-package-reference). If you have a large number of projects to migrate, [this community tool may help](https://github.com/MarkKharitonov/NuGetPCToPRMigrator).
+You can migrate *packages.config* in class library projects using Visual Studio. This functionality doesn't work with ASP.NET projects, however. [Learn more about migrating *packages.config* to `<PackageReference>` in Visual Studio](/nuget/consume-packages/migrate-packages-config-to-package-reference). If you have a large number of projects to migrate, [this community tool may help](https://github.com/MarkKharitonov/NuGetPCToPRMigrator). If you're using a tool to migrate the project file to the new format, you should do that after you've finished migrating all NuGet references to use `<PackageReverence>`.
 
 ## Create new ASP.NET Core project
 
@@ -104,7 +106,7 @@ In most ASP.NET MVC apps, many client-side dependencies like Bootstrap and jQuer
 - popper.js
 - Respond
 
-The static client files installed by NuGet for these packages will be copied over to the new project's *wwwroot* folder and hosted from there. It's worth considering whether these files are still needed by the app, and whether it makes sense to continue hosting them or to use a content delivery network (CDN) instead. These library versions can be managed at build time using tools like [LibMan](https://docs.microsoft.com/aspnet/core/client-side/libman/) or [npm](https://www.npmjs.com/). Figure 4-10 shows the full *eShopPorted.csproj* file after migrating package references using the conversion tool shown and removing unnecessary packages.
+The static client files installed by NuGet for these packages will be copied over to the new project's *wwwroot* folder and hosted from there. It's worth considering whether these files are still needed by the app, and whether it makes sense to continue hosting them or to use a content delivery network (CDN) instead. These library versions can be managed at build time using tools like [LibMan](/aspnet/core/client-side/libman/) or [npm](https://www.npmjs.com/). Figure 4-10 shows the full *eShopPorted.csproj* file after migrating package references using the conversion tool shown and removing unnecessary packages.
 
 ![Figure 4-10](media/Figure4-10.png)
 
@@ -139,7 +141,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
     }
 
     app.UseStaticFiles();
-    
+
     // ...
 }
 ```
@@ -245,7 +247,7 @@ With these changes, the project compiles once more. It's generally a better prac
 
 ## Migrate views
 
-The two biggest ASP.NET Core MVC features related to views are [Razor Pages](https://docs.microsoft.com/aspnet/core/razor-pages/) and [Tag Helpers](https://docs.microsoft.com/aspnet/core/mvc/views/tag-helpers/built-in/). For the initial migration, we won't use either feature. You should, however, keep the features in mind if you continue supporting the app once it's been migrated. The next step is to copy the *Views* folder from the original project into the new one. After building, there are nine errors:
+The two biggest ASP.NET Core MVC features related to views are [Razor Pages](/aspnet/core/razor-pages/) and [Tag Helpers](/aspnet/core/mvc/views/tag-helpers/built-in/). For the initial migration, we won't use either feature. You should, however, keep the features in mind if you continue supporting the app once it's been migrated. The next step is to copy the *Views* folder from the original project into the new one. After building, there are nine errors:
 
 - HttpContext does not exist (2)
 - Scripts does not exist (5)
@@ -305,20 +307,13 @@ Building again reveals one more error loading jQuery Validation on the *Create* 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" integrity="sha512-O/nUTF5mdFkhEoQHFn9N5wmgYyW323JO6v8kr6ltSRKriZyTr/8417taVWeabVS4iONGk2V444QD0P2cwhuTkg==" crossorigin="anonymous"></script>
 ```
 
-The last thing to fix in the views is the reference to `Session` to display how long the app has been running, and on which machine. We can collect this data in `Startup` as static variables and display the variables on the layout page. Add the following properties to *Startup.cs*:
-
-```csharp
-public static DateTime StartTime { get; } = DateTime.UtcNow;
-public static string MachineName { get; } = Environment.MachineName;
-```
-
-Then replace the content of the footer in the layout with the following code:
+The last thing to fix in the views is the reference to `Session` to display how long the app has been running, and on which machine. We can display this data directly in the site's *_Layout.cshtml* by using `System.Environment.MachineName` and `System.Diagnostics.Process.GetCurrentProcess().StartTime`:
 
 ```razor
 <section class="col-sm-6">
     <img class="esh-app-footer-text hidden-xs" src="~/images/main_footer_text.png" width="335" height="26" alt="footer text image" />
     <br />
-<small>@eShopPorted.Startup.MachineName - @eShopPorted.Startup.StartTime.ToString() UTC</small>
+<small>@Environment.MachineName - @System.Diagnostics.Process.GetCurrentProcess().StartTime.ToString() UTC</small>
 </section>
 ```
 
@@ -346,7 +341,7 @@ protected void Application_Start()
 
 Looking at these lines one by one, the `RegisterContainer` method sets up dependency injection, which will be ported below. The next three lines configure different parts of MVC: areas, filters, and routes. Bundles are replaced by static files in the ported app. The last line sets up data access for the app, which will be shown in a later section.
 
-Since this app isn't actually using areas, there's nothing that needs to be done to migrate the area registration call. If your app does need to migrate areas, the [docs specify how to configure areas in ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/controllers/areas).
+Since this app isn't actually using areas, there's nothing that needs to be done to migrate the area registration call. If your app does need to migrate areas, the [docs specify how to configure areas in ASP.NET Core](/aspnet/core/mvc/controllers/areas).
 
 The call to register global filters invokes a helper on the `FilterConfig` class in the app's *App_Start* folder:
 
@@ -394,7 +389,7 @@ public static void RegisterRoutes(RouteCollection routes)
 
 Taking this code line-by-line, the first line sets up support for attribute routes. This is built into ASP.NET Core, so it's unnecessary to configure it separately. Likewise, *{resource}.axd* files aren't used with ASP.NET Core, so there's no need to ignore such routes. The `MapRoute` method configures the default for MVC, which uses the typical `{controller}/{action}/{id}` route template. It also specifies the defaults for this template, such that the `CatalogController` is the default controller used and the `Index` method is the default action. Larger apps will frequently include more calls to `MapRoute` to set up additional routes.
 
-ASP.NET Core MVC supports [conventional routing and attribute routing](https://docs.microsoft.com/aspnet/core/mvc/controllers/routing?view=aspnetcore-2.2&preserve-view=true). Conventional routing is analogous to how the route table is configured in the `RegisterRoutes` method listed previously. To set up conventional routing with a default route like the one used in the *eShop* app, add the following code to the bottom of the `Configure` method in *Startup.cs*:
+ASP.NET Core MVC supports [conventional routing and attribute routing](/aspnet/core/mvc/controllers/routing?preserve-view=true&view=aspnetcore-2.2). Conventional routing is analogous to how the route table is configured in the `RegisterRoutes` method listed previously. To set up conventional routing with a default route like the one used in the *eShop* app, add the following code to the bottom of the `Configure` method in *Startup.cs*:
 
 ```csharp
 app.UseMvc(routes =>
@@ -440,7 +435,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-The preceding code is the minimal configuration required to get MVC features working. There are many additional features that can be configured from this call, but for now this will suffice to build the app. Running it now routes the default request properly, but since we've not yet configured DI, an error occurs while activating `CatalogController`, because no implementation of type `ICatalogService` has been provided yet. We'll return to configure MVC further in a moment. For now, let's migrate the app's dependency injection.
+The preceding code is the minimal configuration required to get MVC features working. There are many additional features that can be configured from this call (some of which are detailed later in this chapter), but for now this will suffice to build the app. Running it now routes the default request properly, but since we've not yet configured DI, an error occurs while activating `CatalogController`, because no implementation of type `ICatalogService` has been provided yet. We'll return to configure MVC further in a moment. For now, let's migrate the app's dependency injection.
 
 #### Migrate dependency injection configuration
 
@@ -498,7 +493,7 @@ For now, the setting for `useMockData` is set to `true`. This setting will be re
 
 #### Migrate app settings
 
-ASP.NET Core uses a new [configuration system](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.2&preserve-view=true), which by default leverages an *appsettings.json* file. By using `CreateDefaultBuilder` in *Program.cs*, the default configuration is already set up in the app. To access configuration, classes just need to request it in their constructor. The `Startup` class is no exception. To start accessing configuration in `Startup` and the rest of the app, request an instance of `IConfiguration` from its constructor:
+ASP.NET Core uses a new [configuration system](/aspnet/core/fundamentals/configuration/?preserve-view=true&view=aspnetcore-2.2), which by default leverages an *appsettings.json* file. By using `CreateDefaultBuilder` in *Program.cs*, the default configuration is already set up in the app. To access configuration, classes just need to request it in their constructor. The `Startup` class is no exception. To start accessing configuration in `Startup` and the rest of the app, request an instance of `IConfiguration` from its constructor:
 
 ```csharp
 public Startup(IConfiguration configuration)
@@ -514,7 +509,7 @@ The original app referenced its settings using `ConfigurationManager.AppSettings
 - `UseMockData`
 - `UseCustomizationData`
 
-If your app has more complex configuration, especially if it's using custom configuration sections, you'll probably want to create and bind objects to different parts of your app's configuration. These types can then be accessed using the [options pattern](https://docs.microsoft.com/dotnet/core/extensions/options). However, as noted in the referenced doc, this pattern shouldn't be used in `ConfigureServices`. Instead the ported app will reference the `UseMockData` configuration value directly.
+If your app has more complex configuration, especially if it's using custom configuration sections, you'll probably want to create and bind objects to different parts of your app's configuration. These types can then be accessed using the [options pattern](../../core/extensions/options.md). However, as noted in the referenced doc, this pattern shouldn't be used in `ConfigureServices`. Instead the ported app will reference the `UseMockData` configuration value directly.
 
 First, modify the ported app's `appsettings.json` file and add the two settings in the root:
 
@@ -603,11 +598,11 @@ builder.RegisterModule(new ApplicationModule(useMockData, connectionString));
 
 With this code in place, the app runs as it did before, connecting to a SQL Server database when `UseMockData` is `false`.
 
-The app can be deployed and run in production at this point, converted to ASP.NET Core but still running on .NET Framework and EF 6. If desired, the app can be migrated to run on .NET Core and Entity Framework Core, which will bring additional advantages described in earlier chapters. Specific to Entity Framework, [this documentation compares EF Core and EF 6](https://docs.microsoft.com/ef/efcore-and-ef6/) and includes a grid showing which library supports each of dozens of individual features.
+The app can be deployed and run in production at this point, converted to ASP.NET Core but still running on .NET Framework and EF 6. If desired, the app can be migrated to run on .NET Core and Entity Framework Core, which will bring additional advantages described in earlier chapters. Specific to Entity Framework, [this documentation compares EF Core and EF 6](/ef/efcore-and-ef6/) and includes a grid showing which library supports each of dozens of individual features.
 
 ### Migrate to Entity Framework Core
 
-Assuming a decision is made to migrate to EF Core, the steps can be fairly straightforward, especially if the original app used a code-based model approach. When [preparing to port from EF 6 to EF Core](https://docs.microsoft.com/ef/efcore-and-ef6/porting/), review the availability of features in the destination version of EF Core you'll be using. Review the documentation on [porting from and EDMX-based model](https://docs.microsoft.com/ef/efcore-and-ef6/porting/port-edmx) versus [porting from a code-based model](https://docs.microsoft.com/ef/efcore-and-ef6/porting/port-code).
+Assuming a decision is made to migrate to EF Core, the steps can be fairly straightforward, especially if the original app used a code-based model approach. When [preparing to port from EF 6 to EF Core](/ef/efcore-and-ef6/porting/), review the availability of features in the destination version of EF Core you'll be using. Review the documentation on [porting from and EDMX-based model](/ef/efcore-and-ef6/porting/port-edmx) versus [porting from a code-based model](/ef/efcore-and-ef6/porting/port-code).
 
 To upgrade to EF Core 2.2, the basic steps involved are to add the appropriate NuGet package(s) and update namespaces. Then adjust how the connection string is passed to the `DbContext` type and how they're wired up for dependency injection.
 
@@ -668,7 +663,7 @@ namespace eShopPorted.Models.Config
 }
 ```
 
-The `CatalogDBInitializer` and its base class, `CreateDatabaseIfNotExists<T>`, are incompatible with EF Core. The purpose of this class is to create and seed the database. Using EF Core will [create and drop the associated database for a `DbContext`](https://docs.microsoft.com/ef/core/managing-schemas/ensure-created) using these methods:
+The `CatalogDBInitializer` and its base class, `CreateDatabaseIfNotExists<T>`, are incompatible with EF Core. The purpose of this class is to create and seed the database. Using EF Core will [create and drop the associated database for a `DbContext`](/ef/core/managing-schemas/ensure-created) using these methods:
 
 ```csharp
 dbContext.Database.EnsureDeleted();
@@ -742,7 +737,7 @@ public class ApplicationModule : Module
     {
         _useMockData = useMockData;
     }
-    
+
     protected override void Load(ContainerBuilder builder)
     {
         if (_useMockData)
@@ -800,7 +795,7 @@ With this change, running the app reveals the images work as before.
 
 ## Additional MVC customizations
 
-The *eShopLegacyMVC* app is fairly simple, so there isn't much to configure in terms of default MVC behavior. However, if you do need to configure additional MVC components, such as CORS, filters, and route constraints, you generally provide this information in `Startup.ConfigureServices`, where `UseMvc` is called. For example, the following code listing configures [CORS](https://docs.microsoft.com/aspnet/core/security/cors?view=aspnetcore-2.2&preserve-view=true) and sets up a global action filter:
+The *eShopLegacyMVC* app is fairly simple, so there isn't much to configure in terms of default MVC behavior. However, if you do need to configure additional MVC components, such as CORS, filters, and route constraints, you generally provide this information in `Startup.ConfigureServices`, where `UseMvc` is called. For example, the following code listing configures [CORS](/aspnet/core/security/cors?preserve-view=true&view=aspnetcore-2.2) and sets up a global action filter:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -824,7 +819,7 @@ public void ConfigureServices(IServiceCollection services)
 > [!Note]
 > To finish configuring CORS, you must also call `app.UseCors()` in `Configure`.
 
-Other advanced scenarios, like adding [custom model binders](https://docs.microsoft.com/aspnet/core/mvc/advanced/custom-model-binding?view=aspnetcore-2.2&preserve-view=true), formatters, and more are covered in the detailed ASP.NET Core docs. Generally these can be applied on an individual controller or action basis, or globally using the same options approach shown in the previous code listing.
+Other advanced scenarios, like adding [custom model binders](/aspnet/core/mvc/advanced/custom-model-binding?preserve-view=true&view=aspnetcore-2.2), formatters, and more are covered in the detailed ASP.NET Core docs. Generally these can be applied on an individual controller or action basis, or globally using the same options approach shown in the previous code listing.
 
 ## Other dependencies
 
@@ -844,10 +839,11 @@ Rather than relying on config files for its settings, WCF clients and other .NET
 ## References
 
 - [eShopModernizing GitHub repository](https://github.com/dotnet-architecture/eShopModernizing)
+- [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant)
 - [Your API and ViewModels Should Not Reference Domain Models](https://ardalis.com/your-api-and-view-models-should-not-reference-domain-models/)
-- [Developer Exception Page Middleware](https://docs.microsoft.com/aspnet/core/fundamentals/error-handling#developer-exception-page)
-- [Deep Dive into EF Core HasData](https://docs.microsoft.com/archive/msdn-magazine/2018/august/data-points-deep-dive-into-ef-core-hasdata-seeding)
+- [Developer Exception Page Middleware](/aspnet/core/fundamentals/error-handling#developer-exception-page)
+- [Deep Dive into EF Core HasData](/archive/msdn-magazine/2018/august/data-points-deep-dive-into-ef-core-hasdata-seeding)
 
 >[!div class="step-by-step"]
 >[Previous](strategies-migrating-in-production.md)
->[Next](deployment-scenarios.md)
+>[Next](more-migration-scenarios.md)

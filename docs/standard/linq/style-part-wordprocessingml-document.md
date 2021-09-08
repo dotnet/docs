@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 5458bccf-3898-4661-904b-7d280c9239a9
+ms.topic: how-to
 ---
 
 # Style part of a WordprocessingML document (LINQ to XML)

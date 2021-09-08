@@ -2,7 +2,7 @@
 title: "How to: Load and unload assemblies"
 description: The CLR automatically loads .NET assemblies referenced by a program. You can also dynamically load specific assemblies into the current application domain.
 ms.date: 08/19/2019
-ms.assetid: 6a4f490f-3576-471f-9533-003737cad4a3
+ms.topic: how-to
 ---
 # How to: Load and unload assemblies
 

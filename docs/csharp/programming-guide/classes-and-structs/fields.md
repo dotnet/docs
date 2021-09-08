@@ -20,11 +20,11 @@ Fields are declared in the class block by specifying the access level of the fie
 
 [!code-csharp[fields#1](snippets/fields/Program.cs#1)]
 
-To access a field in an object, add a period after the object name, followed by the name of the field, as in `objectname.fieldname`. For example:
+To access a field in an object, add a period after the object name, followed by the name of the field, as in `objectname._fieldName`. For example:
 
 [!code-csharp[fields#2](snippets/fields/Program.cs#2)]
 
-A field can be given an initial value by using the assignment operator when the field is declared. To automatically assign the `day` field to `"Monday"`, for example, you would declare `day` as in the following example:
+A field can be given an initial value by using the assignment operator when the field is declared. To automatically assign the `Day` field to `"Monday"`, for example, you would declare `Day` as in the following example:
 
 [!code-csharp[fields#3](snippets/fields/Program.cs#3)]
 
@@ -46,8 +46,8 @@ A field can be declared [readonly](../../language-reference/keywords/readonly.md
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes and Structs](./index.md)
+- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
 - [Using Constructors](./using-constructors.md)
-- [Inheritance](./inheritance.md)
+- [Inheritance](../../fundamentals/object-oriented/inheritance.md)
 - [Access Modifiers](./access-modifiers.md)
 - [Abstract and Sealed Classes and Class Members](./abstract-and-sealed-classes-and-class-members.md)

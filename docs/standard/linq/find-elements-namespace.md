@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: cae1c4ac-6cd5-46cf-9b1c-bd85bc9b7ea9m
+ms.topic: how-to
 ---
 
 # How to find elements in a namespace (LINQ to XML)

@@ -36,7 +36,7 @@ This section provides reference information for various aspects of the Visual Ba
  [Data Types](data-types/index.md)  
  Documents the data types available in Visual Basic.  
   
- [Directives](directives/index.md)  
+ [Directives](./directives/disable-enable.md)  
  Documents the compiler directives available in Visual Basic.  
   
  [Functions](functions/index.md)  

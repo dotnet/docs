@@ -13,7 +13,7 @@ ms.assetid: e190e342-36ef-4651-a0b4-0e8c2c0281cb
 
 The Assembly Registration tool reads the metadata within an assembly and adds the necessary entries to the registry, which allows COM clients to create .NET Framework classes transparently. Once a class is registered, any COM client can use it as though the class were a COM class. The class is registered only once, when the assembly is installed. Instances of classes within the assembly cannot be created from COM until they are actually registered.
 
-To run the tool, use the Developer Command Prompt for Visual Studio. For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
+To run the tool, use [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
 
 At the command prompt, type the following:
 
@@ -83,4 +83,4 @@ regasm myTest.dll /tlb:myTest.tlb
 - [Tlbexp.exe (Type Library Exporter)](tlbexp-exe-type-library-exporter.md)
 - [Tlbimp.exe (Type Library Importer)](tlbimp-exe-type-library-importer.md)
 - [Registering Assemblies with COM](../interop/registering-assemblies-with-com.md)
-- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

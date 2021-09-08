@@ -13,7 +13,7 @@ A transaction consists of a single command or a group of commands that execute a
 > [!NOTE]
 > Transactions that involve multiple resources can lower concurrency if locks are held too long. Therefore, keep transactions as short as possible.  
   
- If a transaction involves multiple tables in the same database or server, then explicit transactions in stored procedures often perform better. You can create transactions in SQL Server stored procedures by using the Transact-SQL `BEGIN TRANSACTION`, `COMMIT TRANSACTION`, and `ROLLBACK TRANSACTION` statements. For more information, see SQL Server Books Online.  
+ If a transaction involves multiple tables in the same database or server, then explicit transactions in stored procedures often perform better. You can create transactions in SQL Server stored procedures by using the Transact-SQL `BEGIN TRANSACTION`, `COMMIT TRANSACTION`, and `ROLLBACK TRANSACTION` statements.
   
  Transactions involving different resource managers, such as a transaction between SQL Server and Oracle, require a distributed transaction.  
   

@@ -2,7 +2,7 @@
 title: Runtime libraries overview
 description: Learn what is included in the Runtime libraries section of the table of contents.
 author: tdykstra
-ms.date: 11/12/2020
+ms.date: 08/24/2021
 ---
 # Runtime libraries overview
 
@@ -18,9 +18,23 @@ These libraries provide the foundational types and utility functionality and are
 
 Some libraries are provided in NuGet packages rather than included in the runtime's [shared framework](glossary.md#shared-framework). For example:
 
-* [Logging](../core/extensions/logging.md)
-* [Dependency injection](../core/extensions/dependency-injection.md)
-* [Configuration](../core/extensions/configuration.md)
+| Conceptual content                                                 | NuGet package                                         |
+|--------------------------------------------------------------------|-------------------------------------------------------|
+| [Configuration](../core/extensions/configuration.md)               | [`Microsoft.Extensions.Configuration`][configuration] |
+| [Dependency injection](../core/extensions/dependency-injection.md) | [`Microsoft.Extensions.DependencyInjection`][di]      |
+| [File globbing](../core/extensions/file-globbing.md)               | [`Microsoft.Extensions.FileSystemGlobbing`][fsg]      |
+| [Generic Host](../core/extensions/generic-host.md)                 | [`Microsoft.Extensions.Hosting`][host]                |
+| [HTTP](../core/extensions/http-client.md)                          | [`Microsoft.Extensions.Http`][http]                   |
+| [Localization](../core/extensions/localization.md)                 | [`Microsoft.Extensions.Localization`][loc]            |
+| [Logging](../core/extensions/logging.md)                           | [`Microsoft.Extensions.Logging`][log]                 |
+
+[configuration]: https://www.nuget.org/packages/Microsoft.Extensions.Configuration
+[di]: https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection
+[fsg]: https://www.nuget.org/packages/Microsoft.Extensions.FileSystemGlobbing
+[host]: https://www.nuget.org/packages/Microsoft.Extensions.Hosting
+[http]: https://www.nuget.org/packages/Microsoft.Extensions.Http
+[loc]: https://www.nuget.org/packages/Microsoft.Extensions.Localization
+[log]: https://www.nuget.org/packages/Microsoft.Extensions.Logging
 
 ## See also
 

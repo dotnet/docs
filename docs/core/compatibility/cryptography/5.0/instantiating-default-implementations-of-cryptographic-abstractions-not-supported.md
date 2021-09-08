@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Instantiating default implementations of cryptographic abstractions is not supported"
-description: Learn about the breaking change in .NET 5.0 where the parameterless Create() overloads on cryptographic abstractions are obsolete.
+description: Learn about the breaking change in .NET 5 where the parameterless Create() overloads on cryptographic abstractions are obsolete.
 ms.date: 10/16/2020
 ---
 # Instantiating default implementations of cryptographic abstractions is not supported
@@ -35,7 +35,7 @@ In .NET Core 2.0 - 3.1, abstract cryptographic primitive factories such as <xref
 HashAlgorithm alg = HashAlgorithm.Create();
 ```
 
-In .NET 5.0 and later versions, abstract cryptographic primitive factories such as <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> are marked obsolete and produce a compile-time warning with ID `SYSLIB0007`. At run time, these methods continue to throw a <xref:System.PlatformNotSupportedException>.
+In .NET 5 and later versions, abstract cryptographic primitive factories such as <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> are marked obsolete and produce a compile-time warning with ID `SYSLIB0007`. At run time, these methods continue to throw a <xref:System.PlatformNotSupportedException>.
 
 ```csharp
 // Throws PlatformNotSupportedException.

@@ -31,13 +31,11 @@ HRESULT GetFunctionFromIP(
   
 ## Parameters
 
-- `ip`
+`ip`
+[in] The instruction pointer in managed code.
 
-  \[in] The instruction pointer in managed code.
-
-- `pFunctionId`
-
-  \[out] The returned function ID.
+`pFunctionId`
+[out] The returned function ID.
 
 ## Requirements  
 

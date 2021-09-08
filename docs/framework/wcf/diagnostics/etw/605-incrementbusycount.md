@@ -6,10 +6,10 @@ ms.assetid: 33ea5f9e-cd58-4833-8082-b99bab5cb254
 ---
 # 605 - IncrementBusyCount
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|605|  
 |Keywords|WebHost|  
 |Level|Verbose|  

@@ -210,7 +210,7 @@
       href: language-reference/exception-handling/the-try-with-expression.md
     - name: The try...finally Expression
       href: language-reference/exception-handling/the-try-finally-expression.md
-    - name: The raise Function
+    - name: The raise & reraise Functions
       href: language-reference/exception-handling/the-raise-function.md
     - name: The failwith Function
       href: language-reference/exception-handling/the-failwith-function.md
@@ -290,5 +290,3 @@
     href: using-fsharp-on-azure/queue-storage.md
   - name: Get started with Azure Table Storage using F#
     href: using-fsharp-on-azure/table-storage.md
-  - name: Package Management for F# Azure Dependencies
-    href: using-fsharp-on-azure/package-management.md

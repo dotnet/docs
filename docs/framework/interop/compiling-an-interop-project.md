@@ -25,7 +25,7 @@ COM interop projects that reference one or more assemblies containing imported C
 
  Embedding interop types with Visual Studio is demonstrated in [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio](../../standard/assembly/embed-types-visual-studio.md).
 
- To reference an interop assembly with a command-line compiler and embed type information in your executables, use the [-link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md) or the [-link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md) compiler switch and specify the name of the interop assembly.
+ To reference an interop assembly with a command-line compiler and embed type information in your executables, use the [-link (C# Compiler Options)](../../csharp/language-reference/compiler-options/inputs.md#embedinteroptypes) or the [-link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md) compiler switch and specify the name of the interop assembly.
 
 > [!NOTE]
 > Visual C++ applications cannot embed type information, but they can interoperate with applications or add-ins that do.
@@ -35,7 +35,7 @@ COM interop projects that reference one or more assemblies containing imported C
 ## See also
 
 - [Exposing COM Components to the .NET Framework](exposing-com-components.md)
-- [Language Independence and Language-Independent Components](../../standard/language-independence-and-language-independent-components.md)
+- [Language Independence and Language-Independent Components](../../standard/language-independence.md)
 - [Using COM Types in Managed Code](/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100))
 - [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio](../../standard/assembly/embed-types-visual-studio.md)
 - [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)

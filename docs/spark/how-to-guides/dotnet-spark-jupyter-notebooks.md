@@ -31,7 +31,7 @@ See the [getting started tutorial](../tutorials/get-started.md) for more informa
 
 To work with Jupyter Notebooks, you'll need two things.
 
-1. Install the [.NET Interactive global .NET tool](https://github.com/dotnet/interactive/blob/main/docs/NotebooksLocalExperience.md)
+1. Install the [.NET Interactive global .NET tool](https://github.com/dotnet/interactive/blob/main/docs/NotebookswithJupyter.md)
 1. Download the `Microsoft.Spark` NuGet package.
     1. Navigate to the [Microsoft.Spark](https://www.nuget.org/packages/Microsoft.Spark/) NuGet package page.
 

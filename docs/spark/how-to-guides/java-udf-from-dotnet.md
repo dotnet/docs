@@ -40,7 +40,7 @@ In this article, you learn how to call a Java User-Defined Function (UDF) from y
 ## Register and call Java UDFs in .NET for Apache Spark
 
 1. Use the [`RegisterJava`](https://github.com/dotnet/spark/blob/8dcdcdc7c60d5f42cba5a90f1346d854ab5bf7bb/src/csharp/Microsoft.Spark/Sql/UDFRegistration.cs#L424) API to register your Java UDF with Spark SQL.
-2. Register the `DataFrame` on which you want to call your UDF as an SQL Table using the [`CreateOrReplaceTempView`](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/DataFrame.cs#L982) function.
+2. Register the `DataFrame` on which you want to call your UDF as an SQL Table using the [`CreateOrReplaceTempView`](https://github.com/dotnet/spark/blob/main/src/csharp/Microsoft.Spark/Sql/DataFrame.cs#L982) function.
 3. Use `SparkSession.Sql` to call the UDF on the table view using Spark SQL.
 A basic example to illustrate the above steps:
 

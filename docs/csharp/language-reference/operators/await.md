@@ -1,6 +1,6 @@
 ---
-description: "await operator - C# reference"
 title: "await operator - C# reference"
+description: "Learn about the C# await operator that suspends evaluation of the enclosing async method."
 ms.date: 07/13/2020
 f1_keywords: 
   - "await_CSharpKeyword"
@@ -17,7 +17,7 @@ In the following example, the <xref:System.Net.Http.HttpClient.GetByteArrayAsync
 
 [!code-csharp[await example](snippets/shared/AwaitOperator.cs)]
 
-The preceding example uses the [async `Main` method](../../programming-guide/main-and-command-args/index.md), which is possible beginning with C# 7.1. For more information, see the [await operator in the Main method](#await-operator-in-the-main-method) section.
+The preceding example uses the [async `Main` method](../../fundamentals/program-structure/main-command-line.md), which is possible beginning with C# 7.1. For more information, see the [await operator in the Main method](#await-operator-in-the-main-method) section.
 
 > [!NOTE]
 > For an introduction to asynchronous programming, see [Asynchronous programming with async and await](../../programming-guide/concepts/async/index.md). Asynchronous programming with `async` and `await` follows the [task-based asynchronous pattern](../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md).
@@ -34,13 +34,13 @@ The `async` and `await` keywords are available in C# 5 and later.
 
 Beginning with C# 8.0, you can work with asynchronous streams and disposables.
 
-You use the `await foreach` statement to consume an asynchronous stream of data. For more information, see the [`foreach` statement](../keywords/foreach-in.md) article and the [Asynchronous streams](../../whats-new/csharp-8.md#asynchronous-streams) section of the [What's new in C# 8.0](../../whats-new/csharp-8.md) article.
+You use the `await foreach` statement to consume an asynchronous stream of data. For more information, see the [`foreach` statement](../statements/iteration-statements.md#the-foreach-statement) section of the [Iteration statements](../statements/iteration-statements.md) article and the [Asynchronous streams](../../whats-new/csharp-8.md#asynchronous-streams) section of the [What's new in C# 8.0](../../whats-new/csharp-8.md) article.
 
 You use the `await using` statement to work with an asynchronously disposable object, that is, an object of a type that implements an <xref:System.IAsyncDisposable> interface. For more information, see the [Using async disposable](../../../standard/garbage-collection/implementing-disposeasync.md#using-async-disposable) section of the [Implement a DisposeAsync method](../../../standard/garbage-collection/implementing-disposeasync.md) article.
 
 ## await operator in the Main method
 
-Beginning with C# 7.1, the [`Main` method](../../programming-guide/main-and-command-args/index.md), which is the application entry point, can return `Task` or `Task<int>`, enabling it to be async so you can use the `await` operator in its body. In earlier C# versions, to ensure that the `Main` method waits for the completion of an asynchronous operation, you can retrieve the value of the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property of the <xref:System.Threading.Tasks.Task%601> instance that is returned by the corresponding async method. For asynchronous operations that don't produce a value, you can call the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method. For information about how to select the language version, see [C# language versioning](../configure-language-version.md).
+Beginning with C# 7.1, the [`Main` method](../../fundamentals/program-structure/main-command-line.md), which is the application entry point, can return `Task` or `Task<int>`, enabling it to be async so you can use the `await` operator in its body. In earlier C# versions, to ensure that the `Main` method waits for the completion of an asynchronous operation, you can retrieve the value of the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property of the <xref:System.Threading.Tasks.Task%601> instance that is returned by the corresponding async method. For asynchronous operations that don't produce a value, you can call the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method. For information about how to select the language version, see [C# language versioning](../configure-language-version.md).
 
 ## C# language specification
 
@@ -55,4 +55,4 @@ For more information, see the [Await expressions](~/_csharplang/spec/expressions
 - [Asynchronous programming](../../async.md)
 - [Async in depth](../../../standard/async-in-depth.md)
 - [Walkthrough: accessing the Web by using async and await](../../programming-guide/concepts/async/index.md)
-- [Tutorial: Generate and consume async streams using C# 8.0 and .NET Core 3.0](../../tutorials/generate-consume-asynchronous-stream.md)
+- [Tutorial: Generate and consume async streams using C# 8.0 and .NET Core 3.0](../../whats-new/tutorials/generate-consume-asynchronous-stream.md)

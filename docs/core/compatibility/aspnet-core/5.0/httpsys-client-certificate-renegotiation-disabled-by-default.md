@@ -1,7 +1,6 @@
 ---
 title: "Breaking change: HttpSys: Client certificate renegotiation disabled by default"
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled HttpSys: Client certificate renegotiation disabled by default"
-author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
 ---
@@ -29,7 +28,7 @@ Renegotiation caused a number of performance and deadlock issues. It's also not 
 
 Apps that require client certificates should use *netsh.exe* to set the `clientcertnegotiation` option to `enabled`. For more information, see [netsh http commands](/windows-server/networking/technologies/netsh/netsh-http).
 
-If you want client certificates enabled for only some parts of your app, see the guidance at [Optional client certificates](/aspnet/core/security/authentication/certauth?view=aspnetcore-3.1#optional-client-certificates).
+If you want client certificates enabled for only some parts of your app, see the guidance at [Optional client certificates](/aspnet/core/security/authentication/certauth?view=aspnetcore-3.1#optional-client-certificates&preserve-view=false).
 
 If you need the old renegotiate behavior, set `HttpSysOptions.ClientCertificateMethod` to the old value `ClientCertificateMethod.AllowRenegotiate`. This isn't recommended for the reasons outlined above and in the linked guidance.
 

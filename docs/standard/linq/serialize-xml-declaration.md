@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: c237fa4a-a042-40fd-886f-17b54c66bb75
+ms.topic: how-to
 ---
 
 # Serialize with an XML declaration (LINQ to XML)

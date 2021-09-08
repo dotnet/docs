@@ -139,6 +139,14 @@ As an alternative to the ASP.NET Core Runtime, you can install the .NET Core Run
 
 Consult the [Red Hat documentation for .NET](https://access.redhat.com/documentation/net/5.0/) on the steps required to install other releases of .NET.
 
+## Troubleshoot the package manager
+
+This section provides information on common errors you may get while using the package manager to install .NET or .NET Core.
+
+### Errors related to missing `fxr`, `libhostfxr.so`, or `FrameworkList.xml`
+
+For more information about solving these problems, see [Troubleshoot `fxr`, `libhostfxr.so`, and `FrameworkList.xml` errors](linux-package-mixup.md).
+
 ## Next steps
 
 - [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)

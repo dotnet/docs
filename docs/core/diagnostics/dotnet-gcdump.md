@@ -2,6 +2,7 @@
 title: dotnet-gcdump diagnostic tool - .NET CLI
 description: Learn how to install and use dotnet-gcdump CLI tool to collect GC (Garbage Collector) dumps of live .NET processes using the .NET EventPipe.
 ms.date: 11/17/2020
+ms.topic: reference
 ---
 # Heap analysis tool (dotnet-gcdump)
 

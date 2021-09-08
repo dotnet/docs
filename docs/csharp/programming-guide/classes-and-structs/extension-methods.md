@@ -101,7 +101,7 @@ Extending predefined types can be difficult with `struct` types because they're 
 
 While it's still considered preferable to add functionality by modifying an object's code or deriving a new type whenever it's reasonable and possible to do so, extension methods have become a crucial option for creating reusable functionality throughout the .NET ecosystem. For those occasions when the original source isn't under your control, when a derived object is inappropriate or impossible, or when the functionality shouldn't be exposed beyond its applicable scope, Extension methods are an excellent choice.
 
-For more information on derived types, see [Inheritance](./inheritance.md).
+For more information on derived types, see [Inheritance](../../fundamentals/object-oriented/inheritance.md).
 
 When using an extension method to extend a type whose source code you aren't in control of, you run the risk that a change in the implementation of the type will cause your extension method to break.
 

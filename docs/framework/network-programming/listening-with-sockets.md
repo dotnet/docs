@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "protocols, sockets"
   - "listening with sockets"
   - "Internet, sockets"
-ms.assetid: 40e426cc-13db-4371-95eb-f7388bd23ebf
+ms.topic: how-to
 ---
 # Listening with Sockets
 

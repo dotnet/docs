@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Obsolete properties on ConsoleLoggerOptions"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where the ConsoleLoggerFormat type and some properties on ConsoleLoggerOptions are now obsolete.
+description: Learn about the .NET 5 breaking change in core .NET libraries where the ConsoleLoggerFormat type and some properties on ConsoleLoggerOptions are now obsolete.
 ms.date: 11/01/2020
 ---
 # Obsolete properties on ConsoleLoggerOptions
@@ -9,7 +9,7 @@ The <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerFormat?displayProper
 
 ## Change description
 
-Starting in .NET 5.0, the <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerFormat?displayProperty=nameWithType> type and several properties on <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions> are obsolete. The obsolete properties are:
+Starting in .NET 5, the <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerFormat?displayProperty=nameWithType> type and several properties on <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions> are obsolete. The obsolete properties are:
 
 - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.DisableColors?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.IncludeScopes?displayProperty=nameWithType>
@@ -43,7 +43,7 @@ The remaining properties were set on <xref:Microsoft.Extensions.Logging.Console.
   There are several differences between <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.FormatterName> and <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.Format>:
 
   - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.Format> has only two possible options: `Default` and `Systemd`.
-  - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.FormatterName> is case insensitive and can be any string. The reserved, built-in names are `Simple`, `Systemd`, and `Json` (.NET 5.0 and later).
+  - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.FormatterName> is case insensitive and can be any string. The reserved, built-in names are `Simple`, `Systemd`, and `Json` (.NET 5 and later).
   - `"Format": "Systemd"` maps to `"FormatterName": "Systemd"`.
   - `"Format": "Default"` maps to `"FormatterName": "Simple"`.
 

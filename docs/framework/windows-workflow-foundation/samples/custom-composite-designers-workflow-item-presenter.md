@@ -8,7 +8,7 @@ ms.assetid: f85224cf-9e30-44a5-9a81-3bc438a34364
 
 The <xref:System.Activities.Presentation.WorkflowItemPresenter> is a key type in the WF designer programming model that allows for the creation of a "drop zone" where an arbitrary activity can be placed. This sample shows how to build an activity designer that surfaces such a "drop zone."
 
-This sample demonstrates:
+The [WorkflowItemPresenter sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/basic/CustomActivities/CustomActivityDesigners/WorkflowItemPresenter/cs) demonstrates:
 
 - Creating a custom activity designer with a <xref:System.Activities.Presentation.WorkflowItemPresenter>.
 
@@ -65,15 +65,6 @@ The code for this sample shows:
 1. Open the solution in Visual Studio.
 
 2. Press **F5** to compile and run the application.
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WF\Basic\CustomActivities\CustomActivityDesigners\WorkflowItemPresenter`
 
 ## See also
 

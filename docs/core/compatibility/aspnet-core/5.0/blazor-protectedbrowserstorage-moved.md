@@ -1,7 +1,6 @@
 ---
 title: "Breaking change: Blazor: ProtectedBrowserStorage feature moved to shared framework"
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled Blazor: ProtectedBrowserStorage feature moved to shared framework"
-author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
 ---

@@ -66,16 +66,6 @@ If you put iterator logic into a local function, argument validation exceptions 
 
 :::code language="csharp" source="snippets/local-functions/IteratorWithLocal.cs" :::
 
-You can use local functions in a similar way with asynchronous operations. Exceptions thrown in an async method surface when the corresponding task is awaited. Local functions allow your code to fail fast and allow your exception to be both thrown and observed synchronously.
-
-The following example uses an asynchronous method named `GetMultipleAsync` to pause for a specified number of seconds and return a value that is a random multiple of that number of seconds. The maximum delay is 5 seconds; an <xref:System.ArgumentOutOfRangeException> results if the value is greater than 5. As the following example shows, the exception that is thrown when a value of 6 is passed to the `GetMultipleAsync` method is observed only when the task is awaited.
-
-:::code language="csharp" source="snippets/local-functions/AsyncWithoutLocal.cs" :::
-
-Like with the method iterator, you can refactor the preceding example and put the code of asynchronous operation in a local function. As the output from the following example shows, the <xref:System.ArgumentOutOfRangeException> is thrown as soon as the `GetMultiple` method is called.
-
-:::code language="csharp" source="snippets/local-functions/AsyncWithLocal.cs" :::
-
 ## Local functions vs. lambda expressions
 
 At first glance, local functions and [lambda expressions](../../language-reference/operators/lambda-expressions.md) are very similar. In many cases, the choice between using lambda expressions and local functions is a matter of style and personal preference. However, there are real differences in where you can use one or the other that you should be aware of.
@@ -112,7 +102,7 @@ If you declare a local function and only reference it by calling it like a metho
 
 ### Variable capture
 
-The rules of [definite assignment](../../../../_csharplang/spec/variables.md#definite-assignment) also affect any variables that are captured by the local function or lambda expression. The compiler can perform static analysis that enables local functions to definitely assign captured variables in the enclosing scope. Consider this example:
+The rules of [definite assignment](~/_csharplang/spec/variables.md#definite-assignment) also affect any variables that are captured by the local function or lambda expression. The compiler can perform static analysis that enables local functions to definitely assign captured variables in the enclosing scope. Consider this example:
 
 ```csharp
 int M()

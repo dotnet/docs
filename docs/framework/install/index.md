@@ -14,12 +14,12 @@ You can install .NET Framework on various Windows versions.
 - [Windows 10 and Windows Server 2016](on-windows-10.md)
 - [Windows 8.1 and Windows Server 2012 R2](on-windows-8-1.md)
 - [Windows 8 and Windows Server 2012](on-windows-8.md)
-- [Windows 7 and Windows Server 2008 R2](on-windows-7.md)
-- [Windows Vista and Windows Server 2008](on-windows-vista.md)
 
 ## Unsupported Windows versions
 
-- [Windows XP and Windows Server 2003](on-windows-xp.md)
+- [Windows XP and Windows Server 2003](/previous-versions/dotnet/framework/install/on-windows-xp)
+- [Windows 7 and Windows Server 2008 R2](/previous-versions/dotnet/framework/install/on-windows-7)
+- [Windows Vista and Windows Server 2008](/previous-versions/dotnet/framework/install/on-windows-vista)
 
 ## See also
 

@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: BC42026: Expression recursively calls the containing property '<propertyname>"
+description: "Learn more about: BC42026: Expression recursively calls the containing property '<propertyname>'"
 title: "Expression recursively calls the containing property '<propertyname>'"
 ms.date: 07/20/2015
 f1_keywords:

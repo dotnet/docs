@@ -31,13 +31,11 @@ UINT_PTR __stdcall FunctionIDMapper (
   
 ## Parameters
 
-- `funcId`
+`funcId`
+[in] The function identifier to be remapped.
 
-  \[in] The function identifier to be remapped.
-
-- `pbHookFunction`
-
-  \[out] A pointer to a value that the profiler sets to `true` if it wants to receive `FunctionEnter2`, `FunctionLeave2`, and `FunctionTailcall2` callbacks; otherwise, it sets this value to `false`.
+`pbHookFunction`
+[out] A pointer to a value that the profiler sets to `true` if it wants to receive `FunctionEnter2`, `FunctionLeave2`, and `FunctionTailcall2` callbacks; otherwise, it sets this value to `false`.
 
 ## Return Value  
 

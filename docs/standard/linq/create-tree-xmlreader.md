@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 60951c9c-7087-406c-b5bb-c60e58609b21
+ms.topic: how-to
 ---
 
 # How to create a tree from an XmlReader (LINQ to XML)

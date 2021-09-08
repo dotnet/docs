@@ -11,7 +11,7 @@ As you're planning and executing your migration from ASP.NET MVC and/or Web API 
 
 ## Official documentation
 
-The official documentation website, [docs.microsoft.com](https://docs.microsoft.com/), has the most up-to-date information available about versions, frameworks, breaking changes, and support options. You'll find many links in this book to docs articles, but for any problem you're facing it's often worth at least doing a quick search of the docs to see if there is already information covering the issue and offering a solution or workaround.
+The official documentation website, [docs.microsoft.com](/), has the most up-to-date information available about versions, frameworks, breaking changes, and support options. You'll find many links in this book to docs articles, but for any problem you're facing it's often worth at least doing a quick search of the docs to see if there is already information covering the issue and offering a solution or workaround.
 
 ## GitHub
 
@@ -27,6 +27,7 @@ Because .NET Core is an open-source project, many issues are discovered, reporte
   - [Docs](https://github.com/dotnet/docs)
   - [Docs Samples](https://github.com/dotnet/samples)
   - [Try Convert](https://github.com/dotnet/try-convert)
+  - [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant)
 - [.NET Architecture Reference Apps](https://github.com/dotnet-architecture)
   - [eShopModernizing](https://github.com/dotnet-architecture/eShopModernizing)
   - [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb)
@@ -51,8 +52,9 @@ You'll find many other ways to connect with .NET developers on the [.NET Communi
 
 ## References
 
-- [Overview of porting from .NET Framework to .NET Core](https://docs.microsoft.com/dotnet/core/porting/)
-- [Migrate from ASP.NET to ASP.NET Core](https://docs.microsoft.com/dotnet/core/porting/)
+- [Overview of porting from .NET Framework to .NET Core](../../core/porting/index.md)
+- [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant)
+- [Migrate from ASP.NET to ASP.NET Core](../../core/porting/index.md)
 - [.NET Community Resources](https://dotnet.microsoft.com/platform/community)
 
 >[!div class="step-by-step"]

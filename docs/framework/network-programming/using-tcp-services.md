@@ -16,7 +16,7 @@ helpviewer_keywords:
   - "TCP"
   - "protocols, TCP"
   - "Internet, TCP"
-ms.assetid: d2811830-3bcb-495c-b82d-cda9cf919aad
+ms.topic: how-to
 ---
 # Using TCP Services
 

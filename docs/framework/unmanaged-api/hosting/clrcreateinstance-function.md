@@ -4,6 +4,7 @@ title: "CLRCreateInstance Function"
 ms.date: "03/30/2017"
 api_name: 
   - "CLRCreateInstance"
+  - "CreateInterface"
 api_location: 
   - "mscoree.dll"
   - "mscoreei.dll"
@@ -11,8 +12,10 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CLRCreateInstance"
+  - "CreateInterface"
 helpviewer_keywords: 
   - "CLRCreateInstance function [.NET Framework hosting]"
+  - "CreateInterface function"
 ms.assetid: 5de13327-96c6-4697-a89e-b8bf40717855
 topic_type: 
   - "apiref"
@@ -78,6 +81,17 @@ hr = CLRCreateInstance (CLSID_CLRMetaHostPolicy, IID_ICLRMetaHostPolicy,
 hr = CLRCreateInstance (CLSID_CLRDebugging, IID_ICLRDebugging,  
                     (LPVOID*)&pCLRDebugging);  
 ```  
+
+The `CreateInterface` function is aliased to `CLRCreateInstance`.  Both `CLRCreateInstance` and `CreateInterface` functions can be used interchangeably. For example:
+
+```cpp
+HMODULE hModule = LoadLibrary(L"mscoree.dll");
+CreateInterfaceFnPtr createInterface = (CreateInterfaceFnPtr)GetProcAddress(hModule, "CreateInterface");
+HRESULT hr;
+hr = createInterface(CLSID_CLRMetaHost, IID_ICLRMetaHost, (LPVOID*)&pMetaHost);
+hr = createInterface (CLSID_CLRMetaHostPolicy, IID_ICLRMetaHostPolicy,  (LPVOID*)&pMetaHostPolicy);  
+hr = createInterface (CLSID_CLRDebugging, IID_ICLRDebugging,  (LPVOID*)&pCLRDebugging);
+```
   
 ## Requirements  
 

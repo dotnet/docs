@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 4cc3ee03-ef4c-429b-a408-fedd10b728cd
+ms.topic: how-to
 ---
 
 # Serialize to an XmlReader (invoke XSLT) (LINQ to XML)

@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "WCF services [WCF]"
   - "WCF services [WCF], running"
 ms.assetid: 31774d36-923b-4e2d-812e-aa190127266f
+recommendations: false
 ---
 # Tutorial: Host and run a basic Windows Communication Foundation service
 

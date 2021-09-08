@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: NotifyIcon.Text maximum text length increased"
-description: Learn about the breaking change in .NET 6.0 where some the maximum text length for the NotifyIcon.Text property increased.
+description: Learn about the breaking change in .NET 6 where some the maximum text length for the NotifyIcon.Text property increased.
 ms.date: 01/19/2021
 ---
 # NotifyIcon.Text maximum text length increased
@@ -9,7 +9,7 @@ The maximum text length allowed for the <xref:System.Windows.Forms.NotifyIcon.Te
 
 ## Change description
 
-In previous .NET versions, the maximum text length allowed for the <xref:System.Windows.Forms.NotifyIcon.Text?displayProperty=nameWithType> property is 63 characters. Starting in .NET 6.0, the maximum allowed text length is 127 characters. In any version, an <xref:System.ArgumentException> is thrown when you attempt to set a value that's longer than the limit.
+In previous .NET versions, the maximum text length allowed for the <xref:System.Windows.Forms.NotifyIcon.Text?displayProperty=nameWithType> property is 63 characters. Starting in .NET 6, the maximum allowed text length is 127 characters. In any version, an <xref:System.ArgumentException> is thrown when you attempt to set a value that's longer than the limit.
 
 ## Reason for change
 
@@ -17,7 +17,7 @@ The maximum allowed text length was increased to be in line with the [underlying
 
 ## Version introduced
 
-.NET 6.0 Preview 1
+.NET 6 Preview 1
 
 ## Recommended action
 

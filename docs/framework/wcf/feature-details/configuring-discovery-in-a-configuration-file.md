@@ -2,7 +2,7 @@
 description: "Learn more about: Configuring Discovery in a Configuration File"
 title: "Configuring Discovery in a Configuration File"
 ms.date: "03/30/2017"
-ms.assetid: b9884c11-8011-4763-bc2c-c526b80175d0
+ms.topic: how-to
 ---
 # Configuring Discovery in a Configuration File
 
@@ -10,7 +10,7 @@ There are four major groups of configuration settings used in discovery. This to
   
 ## Behavior Configuration  
 
- Discovery uses service behaviors and endpoint behaviors. The <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> behavior enables discovery for all of a service’s endpoints and allows you to specify announcement endpoints.  The following example shows how to add the <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> and specify an announcement endpoint.  
+ Discovery uses service behaviors and endpoint behaviors. The <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> behavior enables discovery for all of a service's endpoints and allows you to specify announcement endpoints.  The following example shows how to add the <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> and specify an announcement endpoint.  
   
 ```xml  
 <behaviors>  
@@ -232,7 +232,7 @@ There are four major groups of configuration settings used in discovery. This to
 </standardEndpoints>
 ```  
   
- Once you’ve added the standard endpoint configuration, reference the configuration in the <`endpoint`> element for each endpoint as shown in the following sample.  
+ Once you've added the standard endpoint configuration, reference the configuration in the <`endpoint`> element for each endpoint as shown in the following sample.  
   
 ```xml  
 <services>  

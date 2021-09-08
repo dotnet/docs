@@ -1,7 +1,7 @@
 ---
 title: Health monitoring
 description: Explore one way of implementing health monitoring.
-ms.date: 01/13/2021
+ms.date: 06/23/2021
 ---
 # Health monitoring
 
@@ -193,9 +193,9 @@ app.UseHealthChecks("/hc", new HealthCheckOptions()
 
 ### Query your microservices to report about their health status
 
-When you've configured health checks as described in this article and you have the microservice running in Docker, you can directly check from a browser if it's healthy. You have to publish the container port in the Docker host, so you can access the container through the external Docker host IP or through `localhost`, as shown in figure 8-8.
+When you've configured health checks as described in this article and you have the microservice running in Docker, you can directly check from a browser if it's healthy. You have to publish the container port in the Docker host, so you can access the container through the external Docker host IP or through `host.docker.internal`, as shown in figure 8-8.
 
-![Screenshot of the JSON response returned by a health check.](./media/monitor-app-health/health-check-json-response.png)
+![Screenshot of the JSON response returned by a health check.](media/monitor-app-health/health-check-json-response.png)
 
 **Figure 8-8**. Checking health status of a single service from a browser
 
@@ -224,11 +224,11 @@ Sample configuration file for health check UI:
     "HealthChecks": [
       {
         "Name": "Ordering HTTP Check",
-        "Uri": "http://localhost:5102/hc"
+        "Uri": "http://host.docker.internal:5102/hc"
       },
       {
         "Name": "Ordering HTTP Background Check",
-        "Uri": "http://localhost:5111/hc"
+        "Uri": "http://host.docker.internal:5111/hc"
       },
       //...
     ]}

@@ -28,11 +28,11 @@ WCF, IIS, and ASP.NET must be installed for IIS-hosted WCF services to function 
 
 Instructions for installing IIS on other operating systems can be found at [Install IIS on Windows Vista and Windows 7](/iis/install/installing-iis-7/installing-iis-on-windows-vista-and-windows-7) and [Install IIS 8.5 on Windows Server 2012 R2](/iis/install/installing-iis-85/installing-iis-85-on-windows-server-2012-r2).
 
-The installation process for .NET Framework automatically registers WCF with IIS if IIS is already present on the machine. If IIS is installed after the .NET Framework, an additional step is required to register WCF with IIS and ASP.NET. You can do this as follows, depending on your operating system:
+The installation process for .NET Framework automatically registers WCF with IIS if IIS is already present on the machine. If IIS is installed after .NET Framework, an additional step is required to register WCF with IIS and ASP.NET. You can do this as follows, depending on your operating system:
 
-- Windows 7 and Windows Server 2003: Use the [ServiceModel Registration Tool (ServiceModelReg.exe)](../servicemodelreg-exe.md) tool to register WCF with IIS. To use this tool, type **ServiceModelReg.exe /i /x** in the [Developer Command Prompt for Visual Studio](../../tools/developer-command-prompt-for-vs.md).
+- Windows 7 and Windows Server 2003: Use the [ServiceModel Registration Tool (ServiceModelReg.exe)](../servicemodelreg-exe.md) tool to register WCF with IIS. To use this tool, enter `ServiceModelReg.exe /i /x` in [Visual Studio Developer Command Prompt or Visual Studio Developer PowerShell](/visualstudio/ide/reference/command-prompt-powershell).
 
-- Windows 7: Finally, you must verify that ASP.NET is configured to use the .NET Framework version 4 or later. You do this by running the ASPNET_Regiis tool with the `–i` option. For more information, see [ASP.NET IIS Registration Tool](/previous-versions/dotnet/netframework-3.5/k6h9cz8h(v=vs.90)).
+- Windows 7: Finally, you must verify that ASP.NET is configured to use .NET Framework version 4 or later. You do this by running the ASPNET_Regiis tool with the `–i` option. For more information, see [ASP.NET IIS Registration Tool](/previous-versions/dotnet/netframework-3.5/k6h9cz8h(v=vs.90)).
 
 ## Create a New IIS Application or Reuse an Existing ASP.NET Application
 

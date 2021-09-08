@@ -38,7 +38,7 @@
 /docs/csharp/ @BillWagner
 
 # The F# Guide:
-/docs/fsharp/ @cartermp
+/docs/fsharp/ @dotnet/docs @cartermp
 
 # The Visual Basic Guide:
 /docs/visual-basic/ @KathleenDollard @BillWagner
@@ -54,6 +54,9 @@
 
 # Azure Guide
 /docs/azure/ @CamSoper
+
+# Azure SDK package list
+/docs/azure/includes/ @dotnet/docs
 
 # IoT Guide
 /docs/iot/ @CamSoper
@@ -72,7 +75,7 @@
 # Deployment
 /docs/core/deploying/ @adegeo
 # Diagnostics
-/docs/core/diagnostics/ @sywhang @sdmaclea @dotnet/docs
+/docs/core/diagnostics/ @tommcdon @dotnet/docs
 # Docker
 /docs/core/docker/ @IEvangelist
 # Install
@@ -116,7 +119,7 @@
 # XAML Services
 /docs/framework/xaml-services/ @adegeo
 # ADO.NET
-/docs/framework/data/ @stevestein
+/docs/framework/data/ @mcleblanc
 # NCL
 /docs/framework/configure-apps/file-schema/network/ @karelz
 /docs/framework/network-programming/ @karelz
@@ -192,7 +195,7 @@
 # Visual Basic snippets:
 /samples/snippets/visualbasic/ @BillWagner
 # F# Snippets:
-/samples/snippets/fsharp/ @cartermp
+/samples/snippets/fsharp/ @dotnet/docs @cartermp
 
 # WPF folders:
 /samples/snippets/xaml/wpf/   @adegeo

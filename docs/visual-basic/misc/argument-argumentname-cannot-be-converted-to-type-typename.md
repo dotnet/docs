@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: Argument '<argumentname>' cannot be converted to type '<typename>"
+description: "Learn more about: Argument '<argumentname>' cannot be converted to type '<typename>'"
 title: "Argument '<argumentname>' cannot be converted to type '<typename>'"
 ms.date: 07/20/2015
 f1_keywords: 

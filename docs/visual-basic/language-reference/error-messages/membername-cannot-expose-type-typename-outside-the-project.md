@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: BC30909: '<membername>' cannot expose type '<typename>' outside the project through <containertype> '<containertypename>"
+description: "Learn more about: BC30909: '<membername>' cannot expose type '<typename>' outside the project through <containertype> '<containertypename>'"
 title: "'<membername>' cannot expose type '<typename>' outside the project through <containertype> '<containertypename>'"
 ms.date: 07/20/2015
 f1_keywords:

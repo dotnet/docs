@@ -396,9 +396,6 @@ csharp_indent_case_contents_when_block = true
 | **Introduced version** | Visual Studio 2017 version 15.3 |
 | **Option values** | `true` - Indent `switch` case contents<br /><br />`false` - Do not indent `switch` case contents |
 
-- When this rule is set to **true**, i.
-- When this rule is set to **false**, d.
-
 Code examples:
 
 ```csharp
@@ -1034,7 +1031,7 @@ for (int i = 0; i < x.Length; i++)
 for (int i = 0;i < x.Length;i++)
 ```
 
-##### csharp_space_before_semicolon_in_for_statement
+#### csharp_space_before_semicolon_in_for_statement
 
 |Property|Value|
 |-|-|

@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: Before' and 'After' arguments cannot be combined"
+description: "Learn more about: 'Before' and 'After' arguments cannot be combined"
 title: "'Before' and 'After' arguments cannot be combined"
 ms.date: 07/20/2015
 f1_keywords: 

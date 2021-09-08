@@ -6,10 +6,10 @@ ms.assetid: cdebf42c-d880-4509-82be-8fdc9f88d203
 ---
 # 4022 - WebhostUnregisterProtocolFailed
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4022|  
 |Keywords|ActivationServices|  
 |Level|Error|  

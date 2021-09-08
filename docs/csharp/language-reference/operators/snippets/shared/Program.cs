@@ -33,6 +33,7 @@ namespace operators
 
             Console.WriteLine("========= Member access operators examples =====");
             MemberAccessOperators.Examples();
+            MemberAccessOperators2.NullConditionalShortCircuiting.Main();
             Console.WriteLine();
 
             Console.WriteLine("======= Pointer related operators examples =====");
@@ -111,6 +112,9 @@ namespace operators
             SwitchExpressions.Examples();
             Console.WriteLine();
 
+            Console.WriteLine("============= is operator example ==============");
+            IsOperator.Examples();
+            Console.WriteLine();
         }
     }
 }

@@ -5,7 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 9ad283f7-7cac-42ff-bf32-92aa866e6883
+ms.topic: how-to
 ---
 # How to generate text files from XML (LINQ to XML)
 

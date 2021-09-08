@@ -45,8 +45,8 @@ Constants are immutable values which are known at compile time and do not change
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes and Structs](./index.md)
+- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
 - [Properties](./properties.md)
-- [Types](../types/index.md)
+- [Types](/dotnet/csharp/fundamentals/types)
 - [readonly](../../language-reference/keywords/readonly.md)
 - [Immutability in C# Part One: Kinds of Immutability](/archive/blogs/ericlippert/immutability-in-c-part-one-kinds-of-immutability)

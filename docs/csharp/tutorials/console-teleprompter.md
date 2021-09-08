@@ -50,7 +50,7 @@ namespace TeleprompterConsole
 
 ## Reading and Echoing the File
 
-The first feature to add is the ability to read a text file and display all that text to the console. First, let's add a text file. Copy the [sampleQuotes.txt](https://github.com/dotnet/samples/raw/master/csharp/getting-started/console-teleprompter/sampleQuotes.txt) file from the GitHub repository for this [sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-teleprompter) into your project directory. This will serve as the script for your application. If you would like information on how to download the sample app for this topic, see the instructions in the [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples) topic.
+The first feature to add is the ability to read a text file and display all that text to the console. First, let's add a text file. Copy the [sampleQuotes.txt](https://github.com/dotnet/samples/raw/main/csharp/getting-started/console-teleprompter/sampleQuotes.txt) file from the GitHub repository for this [sample](https://github.com/dotnet/samples/tree/main/csharp/getting-started/console-teleprompter) into your project directory. This will serve as the script for your application. If you would like information on how to download the sample app for this topic, see the instructions in the [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples) topic.
 
 Next, add the following method in your `Program` class (right below the `Main` method):
 
@@ -247,7 +247,7 @@ namespace TeleprompterConsole
 Put that class in a new file, and enclose that class in the
 `TeleprompterConsole` namespace as shown above. You'll also need to add a `using static`
 statement so that you can reference the `Min` and `Max` methods without the
-enclosing class or namespace names. A [`using static`](../language-reference/keywords/using-static.md) statement imports the
+enclosing class or namespace names. A [`using static`](../language-reference/keywords/using-directive.md) statement imports the
 methods from one class. This is in contrast with the `using` statements used
 up to this point that have imported all classes from a namespace.
 

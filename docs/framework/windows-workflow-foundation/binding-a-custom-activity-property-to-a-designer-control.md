@@ -2,7 +2,7 @@
 description: "Learn more about: Binding a custom activity property to a designer control"
 title: "Binding a custom activity property to a designer control"
 ms.date: "03/30/2017"
-ms.assetid: 2e8061ea-10f5-407c-a31f-d0d74ce12f27
+ms.topic: "how-to"
 ---
 
 # Binding a custom activity property to a designer control

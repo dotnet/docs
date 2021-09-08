@@ -6,10 +6,10 @@ ms.assetid: aaf1896e-b55a-4a91-854f-b59672bab3c7
 ---
 # 701 - ServiceChannelOpenStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|701|  
 |Keywords|ServiceModel|  
 |Level|Information|  

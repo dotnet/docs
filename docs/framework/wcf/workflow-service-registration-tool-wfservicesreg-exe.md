@@ -2,7 +2,7 @@
 description: "Learn more about: WorkFlow Service Registration Tool (WFServicesReg.exe)"
 title: "WorkFlow Service Registration Tool (WFServicesReg.exe)"
 ms.date: "03/30/2017"
-ms.assetid: 9e92c87b-99c5-4e8d-9d53-7944cc2b47d3
+ms.topic: reference
 ---
 # WorkFlow Service Registration Tool (WFServicesReg.exe)
 

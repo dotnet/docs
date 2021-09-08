@@ -1,7 +1,7 @@
 ---
-title: "Specifying Fully Qualified Type Names"
+title: Specify fully qualified type name
 description: For valid input to reflection operations, use fully qualified type names, which have assembly name specifications, namespace specifications, and type names.
-ms.date: "02/21/2019"
+ms.date: 02/21/2019
 helpviewer_keywords:
   - "names [.NET Framework], fully qualified type names"
   - "reflection, fully qualified type names"
@@ -17,7 +17,7 @@ helpviewer_keywords:
 ms.assetid: d90b1e39-9115-4f2a-81c0-05e7e74e5580
 ---
 
-# Specifying fully qualified type names
+# Specify fully qualified type names
 
 You must specify type names to have valid input to various reflection operations. A fully qualified type name consists of an assembly name specification, a namespace specification, and a type name. Type name specifications are used by methods such as <xref:System.Type.GetType%2A?displayProperty=nameWithType>, <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType>, <xref:System.Reflection.Emit.ModuleBuilder.GetType%2A?displayProperty=nameWithType>, and <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>.
 
@@ -108,7 +108,7 @@ AssemblyProperty
 ```
 <!-- markdownlint-enable MD010 -->
 
-## Specifying special characters
+## Specify special characters
 
 In a type name, IDENTIFIER is any valid name determined by the rules of a language.
 
@@ -116,14 +116,14 @@ Use the backslash (\\) as an escape character to separate the following tokens w
 
 |Token|Meaning|
 |-----------|-------------|
-|\\,|Assembly separator.|
-|\\+|Nested type separator.|
-|\\&|Reference type.|
-|\\*|Pointer type.|
-|\\[|Array dimension delimiter.|
-|\\]|Array dimension delimiter.|
-|\\.|Use the backslash before a period only if the period is used in an array specification. Periods in NamespaceSpec do not take the backslash.|
-|\\\|Backslash when needed as a string literal.|
+|`\,`|Assembly separator.|
+|`\+`|Nested type separator.|
+|`\&`|Reference type.|
+|`\*`|Pointer type.|
+|`\[`|Array dimension delimiter.|
+|`\]`|Array dimension delimiter.|
+|`\.`|Use the backslash before a period only if the period is used in an array specification. Periods in NamespaceSpec do not take the backslash.|
+|`\\`|Backslash when needed as a string literal.|
 
 Note that in all TypeSpec components except AssemblyNameSpec, spaces are relevant. In the AssemblyNameSpec, spaces before the ',' separator are relevant, but spaces after the ',' separator are ignored.
 
@@ -133,7 +133,7 @@ For example, the fully qualified name for a type might be `Ozzy.OutBack.Kangaroo
 
 If the namespace were `Ozzy.Out+Back`, then the plus sign must be preceded by a backslash. Otherwise, the parser would interpret it as a nesting separator. Reflection emits this string as `Ozzy.Out\+Back.Kangaroo+Wallaby,MyAssembly`.
 
-## Specifying assembly names
+## Specify assembly names
 
 The minimum information required in an assembly name specification is the textual name (IDENTIFIER) of the assembly. You can follow the IDENTIFIER by a comma-separated list of property/value pairs as described in the following table. IDENTIFIER naming should follow the rules for file naming. The IDENTIFIER is case-insensitive.
 
@@ -181,19 +181,19 @@ com.microsoft.crypto, Culture=en, PublicKeyToken=a5d015c7d5a0b012,
     Version=1.0.0.0
 ```
 
-## Specifying generic types
+## Specify generic types
 
 SimpleTypeSpec\`NUMBER represents an open generic type with from 1 to *n* generic type parameters. For example, to get reference to the open generic type List\<T> or the closed generic type List\<String>, use ``Type.GetType("System.Collections.Generic.List`1")`` To get a reference to the generic type Dictionary\<TKey,TValue>, use ``Type.GetType("System.Collections.Generic.Dictionary`2")``.
 
-## Specifying pointers
+## Specify pointers
 
 SimpleTypeSpec* represents an unmanaged pointer. For example, to get a pointer to type MyType, use `Type.GetType("MyType*")`. To get a pointer to a pointer to type MyType, use `Type.GetType("MyType**")`.
 
-## Specifying references
+## Specify references
 
 SimpleTypeSpec & represents a managed pointer or reference. For example, to get a reference to type MyType, use `Type.GetType("MyType &")`. Note that unlike pointers, references are limited to one level.
 
-## Specifying arrays
+## Specify arrays
 
 In the BNF Grammar, ReflectionEmitDimension only applies to incomplete type definitions retrieved using <xref:System.Reflection.Emit.ModuleBuilder.GetType%2A?displayProperty=nameWithType>. Incomplete type definitions are <xref:System.Reflection.Emit.TypeBuilder> objects constructed using <xref:System.Reflection.Emit?displayProperty=nameWithType> but on which <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> has not been called. ReflectionDimension can be used to retrieve any type definition that has been completed, that is, a type that has been loaded.
 

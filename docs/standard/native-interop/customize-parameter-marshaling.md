@@ -2,6 +2,7 @@
 title: Customizing parameter marshaling - .NET
 description: Learn how to customize how .NET marshals your parameters to a native representation.
 ms.date: 01/18/2019
+ms.topic: how-to
 ---
 
 # Customizing parameter marshaling

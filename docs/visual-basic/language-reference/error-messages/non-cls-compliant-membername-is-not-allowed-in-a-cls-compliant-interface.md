@@ -13,7 +13,7 @@ ms.assetid: 060c4b08-798e-40f1-94cf-c05c524f1b8a
 
 A property, procedure, or event in an interface is marked as `<CLSCompliant(True)>` when the interface itself is marked as `<CLSCompliant(False)>` or is not marked.
 
- For an interface to be compliant with the [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS), all its members must be compliant.
+ For an interface to be compliant with the [Language Independence and Language-Independent Components](../../../standard/language-independence.md) (CLS), all its members must be compliant.
 
  When you apply the <xref:System.CLSCompliantAttribute> to a programming element, you set the attribute's `isCompliant` parameter to either `True` or `False` to indicate compliance or noncompliance. There is no default for this parameter, and you must supply a value.
 

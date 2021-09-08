@@ -1,6 +1,6 @@
 ---
-description: ":: operator - C# reference"
 title: ":: operator - C# reference"
+description: "Learn about the C# namespace alias qualifier :: that is used to access a member of an aliased namespace."
 ms.date: 08/09/2019
 f1_keywords: 
   - "::_CSharpKeyword"

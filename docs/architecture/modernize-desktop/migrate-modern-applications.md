@@ -40,7 +40,7 @@ The configuration API supports the concept of configuration provider, which defi
 
  Or you can build your own.
 
-The new configuration allows a list of name-value pairs that can be grouped into a multi-level hierarchy. Any stored value maps to a string, and there's built-in binding support that allows you to deserialize settings into a custom plain old CLR object (POCO) object.
+The new configuration allows a list of name-value pairs that can be grouped into a multi-level hierarchy. Any stored value maps to a string, and there's built-in binding support that allows you to deserialize settings into a custom plain old CLR object (POCO).
 
 The <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> object lets you add as many configuration providers you may need for your application, using a precedence rule to resolve preference. So, the last provider you add in your code will override the others. This is a great feature for managing different environments for execution since you can define different configurations for development, testing and production environments, and manage them on a single function inside your code.
 
@@ -151,7 +151,7 @@ to Microsoft Access using the <xref:System.Data.Odbc> library.
 
 ## Consuming services
 
-With the raise of service-oriented architectures, desktop applications began to evolve from a client-server model to the three-layer approach. In the client-server approach, a direct database connection is established from the client holding the business logic usually inside a single EXE file. On the other hand, the three-layer approach establishes an intermediate service layer implementing business logic and database access allowing for better security, scalability, and reusability. Instead of working directly with datasets of data, the layer approach relies in a set of services implementing contracts and types objects as a way to implement data transfer.
+With the rise of service-oriented architectures, desktop applications began to evolve from a client-server model to the three-layer approach. In the client-server approach, a direct database connection is established from the client holding the business logic, usually inside a single EXE file. On the other hand, the three-layer approach establishes an intermediate service layer implementing business logic and database access, allowing for better security, scalability, and reusability. Instead of working directly with underlying data, the layered approach relies on a set of services implementing contracts and typed objects for data transfer.
 
 If you have a desktop application using a WCF service and you want to migrate it to .NET, there are some things to consider.
 
@@ -189,7 +189,7 @@ Several technologies available to .NET Framework libraries aren't available for 
 The [Windows Compatibility Pack](../../core/porting/windows-compat-pack.md) provides access to APIs that were previously available only for .NET Framework. It can be used on .NET Core and .NET Standard projects.
 
 For more information on API compatibility, you can find documentation about breaking changes and deprecated/legacy APIs at
-<https://docs.microsoft.com/dotnet/core/compatibility/fx-core>.
+[https://docs.microsoft.com/dotnet/core/compatibility/fx-core](../../core/compatibility/fx-core.md).
 
 ### AppDomains
 

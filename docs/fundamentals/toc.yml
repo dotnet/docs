@@ -41,13 +41,14 @@ items:
         href: ../core/install/linux-snap.md
       - name: Install script & binaries
         href: ../core/install/linux-scripted-manual.md
-
     - name: Remove outdated runtimes and SDKs
       href: ../core/install/remove-runtime-sdk-versions.md
     - name: Manage .NET templates
       href: ../core/install/templates.md
     - name: macOS Notarization issues
       href: ../core/install/macos-notarization-issues.md
+    - name: Troubleshoot .NET Package mix ups on Linux
+      href: ../core/install/linux-package-mixup.md
     - name: How to check .NET versions
       href: ../core/install/how-to-detect-installed-versions.md
     - name: Install localized IntelliSense
@@ -68,6 +69,8 @@ items:
     href: ../standard/glossary.md
   - name: Tutorials
     items:
+    - name: .NET 6 template changes
+      href: ../core/tutorials/top-level-templates.md
     - name: Use Visual Studio
       items:
       - name: Create a console app
@@ -173,11 +176,19 @@ items:
   - name: Overview
     displayName: diagnostics,tools,tooling,productivity,instrumentation
     href: tools-and-productivity.md
-  - name: .NET Core SDK
+  - name: .NET SDK
     items:
     - name: Overview
       displayName: '.net sdk,software development kit,software dev kit,tool'
       href: ../core/sdk.md
+    - name: Environment variables
+      href: ../core/tools/dotnet-environment-variables.md
+    - name: dotnet-install scripts
+      href: ../core/tools/dotnet-install-script.md
+    - name: global.json overview
+      href: ../core/tools/global-json.md
+    - name: Telemetry
+      href: ../core/tools/telemetry.md
     - name: Error messages
       items:
       - name: NETSDK1004
@@ -200,107 +211,149 @@ items:
         href: ../core/tools/sdk-errors/netsdk1073.md
       - name: NETSDK1079
         href: ../core/tools/sdk-errors/netsdk1079.md
+      - name: NETSDK1080
+        href: ../core/tools/sdk-errors/netsdk1080.md
+      - name: NETSDK1130
+        href: ../core/tools/sdk-errors/netsdk1130.md
+      - name: NETSDK1141
+        href: ../core/tools/sdk-errors/netsdk1141.md
       - name: NETSDK1145
         href: ../core/tools/sdk-errors/netsdk1145.md
+      - name: NETSDK1147
+        href: ../core/tools/sdk-errors/netsdk1147.md
+      - name: NETSDK1149
+        href: ../core/tools/sdk-errors/netsdk1149.md
+      - name: NETSDK1174
+        href: ../core/tools/sdk-errors/netsdk1174.md
   - name: .NET CLI
     items:
     - name: Overview
       displayName: '.net cli,command-line interface,cli,tool'
       href: ../core/tools/index.md
-    - name: Reference
+    - name: dotnet
+      href: ../core/tools/dotnet.md
+    - name: dotnet add/list/remove package
       items:
-      - name: dotnet
-        href: ../core/tools/dotnet.md
-      - name: dotnet build
-        href: ../core/tools/dotnet-build.md
-      - name: dotnet build-server
-        href: ../core/tools/dotnet-build-server.md
-      - name: dotnet clean
-        href: ../core/tools/dotnet-clean.md
-      - name: dotnet help
-        href: ../core/tools/dotnet-help.md
-      - name: dotnet migrate
-        href: ../core/tools/dotnet-migrate.md
-      - name: dotnet msbuild
-        href: ../core/tools/dotnet-msbuild.md
+      - name: dotnet add package
+        href: ../core/tools/dotnet-add-package.md
+      - name: dotnet list package
+        href: ../core/tools/dotnet-list-package.md
+      - name: dotnet remove package
+        href: ../core/tools/dotnet-remove-package.md
+    - name: dotnet add/list/remove reference
+      items:
+      - name: dotnet add reference
+        href: ../core/tools/dotnet-add-reference.md
+      - name: dotnet list reference
+        href: ../core/tools/dotnet-list-reference.md
+      - name: dotnet remove reference
+        href: ../core/tools/dotnet-remove-reference.md
+    - name: dotnet build
+      href: ../core/tools/dotnet-build.md
+    - name: dotnet build-server
+      href: ../core/tools/dotnet-build-server.md
+    - name: dotnet clean
+      href: ../core/tools/dotnet-clean.md
+    - name: dotnet format
+      href: ../core/tools/dotnet-format.md
+    - name: dotnet help
+      href: ../core/tools/dotnet-help.md
+    - name: dotnet migrate
+      href: ../core/tools/dotnet-migrate.md
+    - name: dotnet msbuild
+      href: ../core/tools/dotnet-msbuild.md
+    - name: dotnet new
+      items:
       - name: dotnet new
         href: ../core/tools/dotnet-new.md
-      - name: dotnet nuget
-        items:
-        - name: dotnet nuget delete
-          href: ../core/tools/dotnet-nuget-delete.md
-        - name: dotnet nuget locals
-          href: ../core/tools/dotnet-nuget-locals.md
-        - name: dotnet nuget push
-          href: ../core/tools/dotnet-nuget-push.md
-        - name: dotnet nuget add source
-          href: ../core/tools/dotnet-nuget-add-source.md
-        - name: dotnet nuget disable source
-          href: ../core/tools/dotnet-nuget-disable-source.md
-        - name: dotnet nuget enable source
-          href: ../core/tools/dotnet-nuget-enable-source.md
-        - name: dotnet nuget list source
-          href: ../core/tools/dotnet-nuget-list-source.md
-        - name: dotnet nuget remove source
-          href: ../core/tools/dotnet-nuget-remove-source.md
-        - name: dotnet nuget update source
-          href: ../core/tools/dotnet-nuget-update-source.md
-        - name: dotnet nuget verify
-          href: ../core/tools/dotnet-nuget-verify.md
-      - name: dotnet pack
-        href: ../core/tools/dotnet-pack.md
-      - name: dotnet publish
-        href: ../core/tools/dotnet-publish.md
-      - name: dotnet restore
-        href: ../core/tools/dotnet-restore.md
-      - name: dotnet run
-        href: ../core/tools/dotnet-run.md
-      - name: dotnet sln
-        href: ../core/tools/dotnet-sln.md
-      - name: dotnet store
-        href: ../core/tools/dotnet-store.md
-      - name: dotnet test
-        href: ../core/tools/dotnet-test.md
-      - name: dotnet tool
-        items:
-        - name: dotnet tool install
-          href: ../core/tools/dotnet-tool-install.md
-        - name: dotnet tool list
-          href: ../core/tools/dotnet-tool-list.md
-        - name: dotnet tool restore
-          href: ../core/tools/dotnet-tool-restore.md
-        - name: dotnet tool run
-          href: ../core/tools/dotnet-tool-run.md
-        - name: dotnet tool search
-          href: ../core/tools/dotnet-tool-search.md
-        - name: dotnet tool uninstall
-          href: ../core/tools/dotnet-tool-uninstall.md
-        - name: dotnet tool update
-          href: ../core/tools/dotnet-tool-update.md
-      - name: dotnet vstest
-        href: ../core/tools/dotnet-vstest.md
-      - name: dotnet-install scripts
-        href: ../core/tools/dotnet-install-script.md
-      - name: Project reference commands
-        items:
-        - name: dotnet add reference
-          href: ../core/tools/dotnet-add-reference.md
-        - name: dotnet list reference
-          href: ../core/tools/dotnet-list-reference.md
-        - name: dotnet remove reference
-          href: ../core/tools/dotnet-remove-reference.md
-      - name: Project package commands
-        items:
-        - name: dotnet add package
-          href: ../core/tools/dotnet-add-package.md
-        - name: dotnet list package
-          href: ../core/tools/dotnet-list-package.md
-        - name: dotnet remove package
-          href: ../core/tools/dotnet-remove-package.md
-    - name: global.json overview
-      href: ../core/tools/global-json.md
-    - name: Telemetry
-      href: ../core/tools/telemetry.md
+      - name: dotnet new --list
+        href: ../core/tools/dotnet-new-list.md
+      - name: dotnet new --search
+        href: ../core/tools/dotnet-new-search.md
+      - name: dotnet new --install
+        href: ../core/tools/dotnet-new-install.md
+      - name: dotnet new --uninstall
+        href: ../core/tools/dotnet-new-uninstall.md
+      - name: dotnet new --update-*
+        href: ../core/tools/dotnet-new-update.md
+      - name: .NET default templates
+        href: ../core/tools/dotnet-new-sdk-templates.md
+      - name: Custom templates
+        href: ../core/tools/custom-templates.md
+    - name: dotnet nuget
+      items:
+      - name: dotnet nuget delete
+        href: ../core/tools/dotnet-nuget-delete.md
+      - name: dotnet nuget locals
+        href: ../core/tools/dotnet-nuget-locals.md
+      - name: dotnet nuget push
+        href: ../core/tools/dotnet-nuget-push.md
+      - name: dotnet nuget add source
+        href: ../core/tools/dotnet-nuget-add-source.md
+      - name: dotnet nuget disable source
+        href: ../core/tools/dotnet-nuget-disable-source.md
+      - name: dotnet nuget enable source
+        href: ../core/tools/dotnet-nuget-enable-source.md
+      - name: dotnet nuget list source
+        href: ../core/tools/dotnet-nuget-list-source.md
+      - name: dotnet nuget remove source
+        href: ../core/tools/dotnet-nuget-remove-source.md
+      - name: dotnet nuget update source
+        href: ../core/tools/dotnet-nuget-update-source.md
+      - name: dotnet nuget verify
+        href: ../core/tools/dotnet-nuget-verify.md
+      - name: dotnet nuget trust
+        href: ../core/tools/dotnet-nuget-trust.md
+      - name: dotnet nuget sign
+        href: ../core/tools/dotnet-nuget-sign.md
+    - name: dotnet pack
+      href: ../core/tools/dotnet-pack.md
+    - name: dotnet publish
+      href: ../core/tools/dotnet-publish.md
+    - name: dotnet restore
+      href: ../core/tools/dotnet-restore.md
+    - name: dotnet run
+      href: ../core/tools/dotnet-run.md
+    - name: dotnet sdk check
+      href: ../core/tools/dotnet-sdk-check.md
+    - name: dotnet sln
+      href: ../core/tools/dotnet-sln.md
+    - name: dotnet store
+      href: ../core/tools/dotnet-store.md
+    - name: dotnet test
+      href: ../core/tools/dotnet-test.md
+    - name: dotnet tool
+      items:
+      - name: dotnet tool install
+        href: ../core/tools/dotnet-tool-install.md
+      - name: dotnet tool list
+        href: ../core/tools/dotnet-tool-list.md
+      - name: dotnet tool restore
+        href: ../core/tools/dotnet-tool-restore.md
+      - name: dotnet tool run
+        href: ../core/tools/dotnet-tool-run.md
+      - name: dotnet tool search
+        href: ../core/tools/dotnet-tool-search.md
+      - name: dotnet tool uninstall
+        href: ../core/tools/dotnet-tool-uninstall.md
+      - name: dotnet tool update
+        href: ../core/tools/dotnet-tool-update.md
+    - name: dotnet vstest
+      href: ../core/tools/dotnet-vstest.md
+    - name: dotnet workload
+      items:
+      - name: dotnet workload install
+        href: ../core/tools/dotnet-workload-install.md
+      - name: dotnet workload list
+        href: ../core/tools/dotnet-workload-list.md
+      - name: dotnet workload repair
+        href: ../core/tools/dotnet-workload-repair.md
+      - name: dotnet workload search
+        href: ../core/tools/dotnet-workload-search.md
+      - name: dotnet workload uninstall
+        href: ../core/tools/dotnet-workload-uninstall.md
+      - name: dotnet workload update
+        href: ../core/tools/dotnet-workload-update.md
     - name: Elevated access
       href: ../core/tools/elevated-access.md
     - name: Enable Tab completion
@@ -311,8 +364,6 @@ items:
       href: ../core/tutorials/libraries.md
     - name: Create templates for the CLI
       items:
-      - name: Custom templates
-        href: ../core/tools/custom-templates.md
       - name: 1 - Create an item template
         href: ../core/tutorials/cli-templates-create-item-template.md
         displayName: tutorials, cli
@@ -322,6 +373,134 @@ items:
       - name: 3 - Create a template pack
         href: ../core/tutorials/cli-templates-create-template-pack.md
         displayName: tutorials, cli
+  - name: SYSLIB diagnostics
+    items:
+    - name: Obsoletions
+      items:
+      - name: Overview
+        displayName: syslib, obsolete, obsoletion
+        href: syslib-diagnostics/obsoletions-overview.md
+      - name: SYSLIB0001
+        href: syslib-diagnostics/syslib0001.md
+      - name: SYSLIB0002
+        href: syslib-diagnostics/syslib0002.md
+      - name: SYSLIB0003
+        href: syslib-diagnostics/syslib0003.md
+      - name: SYSLIB0004
+        href: syslib-diagnostics/syslib0004.md
+      - name: SYSLIB0005
+        href: syslib-diagnostics/syslib0005.md
+      - name: SYSLIB0006
+        href: syslib-diagnostics/syslib0006.md
+      - name: SYSLIB0007
+        href: syslib-diagnostics/syslib0007.md
+      - name: SYSLIB0008
+        href: syslib-diagnostics/syslib0008.md
+      - name: SYSLIB0009
+        href: syslib-diagnostics/syslib0009.md
+      - name: SYSLIB0010
+        href: syslib-diagnostics/syslib0010.md
+      - name: SYSLIB0011
+        href: syslib-diagnostics/syslib0011.md
+      - name: SYSLIB0012
+        href: syslib-diagnostics/syslib0012.md
+      - name: SYSLIB0013
+        href: syslib-diagnostics/syslib0013.md
+      - name: SYSLIB0014
+        href: syslib-diagnostics/syslib0014.md
+      - name: SYSLIB0015
+        href: syslib-diagnostics/syslib0015.md
+      - name: SYSLIB0016
+        href: syslib-diagnostics/syslib0016.md
+      - name: SYSLIB0017
+        href: syslib-diagnostics/syslib0017.md
+      - name: SYSLIB0018
+        href: syslib-diagnostics/syslib0018.md
+      - name: SYSLIB0019
+        href: syslib-diagnostics/syslib0019.md
+      - name: SYSLIB0020
+        href: syslib-diagnostics/syslib0020.md
+      - name: SYSLIB0021
+        href: syslib-diagnostics/syslib0021.md
+      - name: SYSLIB0022
+        href: syslib-diagnostics/syslib0022.md
+      - name: SYSLIB0023
+        href: syslib-diagnostics/syslib0023.md
+      - name: SYSLIB0024
+        href: syslib-diagnostics/syslib0024.md
+      - name: SYSLIB0025
+        href: syslib-diagnostics/syslib0025.md
+      - name: SYSLIB0026
+        href: syslib-diagnostics/syslib0026.md
+      - name: SYSLIB0027
+        href: syslib-diagnostics/syslib0027.md
+      - name: SYSLIB0028
+        href: syslib-diagnostics/syslib0028.md
+      - name: SYSLIB0029
+        href: syslib-diagnostics/syslib0029.md
+      - name: SYSLIB0030
+        href: syslib-diagnostics/syslib0030.md
+      - name: SYSLIB0031
+        href: syslib-diagnostics/syslib0031.md
+      - name: SYSLIB0032
+        href: syslib-diagnostics/syslib0032.md
+      - name: SYSLIB0033
+        href: syslib-diagnostics/syslib0033.md
+      - name: SYSLIB0034
+        href: syslib-diagnostics/syslib0034.md
+      - name: SYSLIB0035
+        href: syslib-diagnostics/syslib0035.md
+    - name: Source-generated code
+      items:
+      - name: Overview
+        displayName: syslib, diagnostic, diagnostics, source generator
+        href: syslib-diagnostics/source-generator-overview.md
+      - name: SYSLIB1001
+        href: syslib-diagnostics/syslib1001.md
+      - name: SYSLIB1002
+        href: syslib-diagnostics/syslib1002.md
+      - name: SYSLIB1003
+        href: syslib-diagnostics/syslib1003.md
+      - name: SYSLIB1004
+        href: syslib-diagnostics/syslib1004.md
+      - name: SYSLIB1005
+        href: syslib-diagnostics/syslib1005.md
+      - name: SYSLIB1006
+        href: syslib-diagnostics/syslib1006.md
+      - name: SYSLIB1007
+        href: syslib-diagnostics/syslib1007.md
+      - name: SYSLIB1008
+        href: syslib-diagnostics/syslib1008.md
+      - name: SYSLIB1009
+        href: syslib-diagnostics/syslib1009.md
+      - name: SYSLIB1010
+        href: syslib-diagnostics/syslib1010.md
+      - name: SYSLIB1011
+        href: syslib-diagnostics/syslib1011.md
+      - name: SYSLIB1012
+        href: syslib-diagnostics/syslib1012.md
+      - name: SYSLIB1013
+        href: syslib-diagnostics/syslib1013.md
+      - name: SYSLIB1014
+        href: syslib-diagnostics/syslib1014.md
+      - name: SYSLIB1015
+        href: syslib-diagnostics/syslib1015.md
+      - name: SYSLIB1016
+        href: syslib-diagnostics/syslib1016.md
+      - name: SYSLIB1017
+        href: syslib-diagnostics/syslib1017.md
+      - name: SYSLIB1018
+        href: syslib-diagnostics/syslib1018.md
+      - name: SYSLIB1019
+        href: syslib-diagnostics/syslib1019.md
+      - name: SYSLIB1020
+        href: syslib-diagnostics/syslib1020.md
+      - name: SYSLIB1021
+        href: syslib-diagnostics/syslib1021.md
+      - name: SYSLIB1022
+        href: syslib-diagnostics/syslib1022.md
+      - name: SYSLIB1023
+        href: syslib-diagnostics/syslib1023.md
   - name: Integrated development environments (IDEs)
     items:
     - name: Visual Studio
@@ -420,12 +599,29 @@ items:
     - name: Logging and tracing
       items:
       - name: Overview
-        displayName: "logging and tracing"
+        displayName: logging tracing
         href: ../core/diagnostics/logging-tracing.md
       - name: Well-known event providers
         href: ../core/diagnostics/well-known-event-providers.md
-      - name: Distributed Tracing
-        href: ../core/diagnostics/distributed-tracing.md
+      - name: Distributed tracing
+        items:
+        - name: Overview
+          href: ../core/diagnostics/distributed-tracing.md
+        - name: Concepts
+          href: ../core/diagnostics/distributed-tracing-concepts.md
+        - name: Instrumentation
+          href: ../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
+        - name: Collection
+          href: ../core/diagnostics/distributed-tracing-collection-walkthroughs.md
+    - name: Symbols
+      href: ../core/diagnostics/symbols.md
+    - name: Microsoft.Diagnostics.NETCore.Client library
+      items:
+      - name: Overview and examples
+        displayName: diagnostics client library
+        href: ../core/diagnostics/diagnostics-client-library.md
+      - name: API reference
+        href: ../core/diagnostics/microsoft-diagnostics-netcore-client.md
     - name: Runtime events
       items:
       - name: Overview
@@ -458,6 +654,8 @@ items:
         href: ../core/diagnostics/dotnet-gcdump.md
       - name: dotnet-trace
         href: ../core/diagnostics/dotnet-trace.md
+      - name: dotnet-stack
+        href: ../core/diagnostics/dotnet-stack.md
       - name: dotnet-symbol
         href: ../core/diagnostics/dotnet-symbol.md
       - name: dotnet-sos
@@ -649,6 +847,8 @@ items:
             href: code-analysis/quality-rules/ca1416.md
           - name: CA1417
             href: code-analysis/quality-rules/ca1417.md
+          - name: CA1418
+            href: code-analysis/quality-rules/ca1418.md
         - name: Maintainability rules
           items:
           - name: Overview
@@ -764,15 +964,27 @@ items:
             href: code-analysis/quality-rules/ca1837.md
           - name: CA1838
             href: code-analysis/quality-rules/ca1838.md
-        - name: Publish rules
+          - name: CA1841
+            href: code-analysis/quality-rules/ca1841.md
+          - name: CA1844
+            href: code-analysis/quality-rules/ca1844.md
+          - name: CA1845
+            href: code-analysis/quality-rules/ca1845.md
+          - name: CA1846
+            href: code-analysis/quality-rules/ca1846.md
+          - name: CA1847
+            href: code-analysis/quality-rules/ca1847.md
+        - name: SingleFile rules
           items:
           - name: Overview
-            displayName: "publish rules"
-            href: code-analysis/quality-rules/publish-warnings.md
+            displayName: "singlefile rules"
+            href: code-analysis/quality-rules/singlefile-warnings.md
           - name: IL3000
             href: code-analysis/quality-rules/il3000.md
           - name: IL3001
             href: code-analysis/quality-rules/il3001.md
+          - name: IL3002
+            href: code-analysis/quality-rules/il3002.md
         - name: Reliability rules
           items:
           - name: Overview
@@ -800,6 +1012,8 @@ items:
             href: code-analysis/quality-rules/ca2015.md
           - name: CA2016
             href: code-analysis/quality-rules/ca2016.md
+          - name: CA2018
+            href: code-analysis/quality-rules/ca2018.md
         - name: Security rules
           items:
           - name: Overview
@@ -1060,6 +1274,10 @@ items:
             href: code-analysis/quality-rules/ca2248.md
           - name: CA2249
             href: code-analysis/quality-rules/ca2249.md
+          - name: CA2250
+            href: code-analysis/quality-rules/ca2250.md
+          - name: CA2251
+            href: code-analysis/quality-rules/ca2251.md
       - name: Code style rules
         items:
         - name: Overview
@@ -1259,6 +1477,8 @@ items:
             href: code-analysis/style-rules/ide0100.md
           - name: IDE0110
             href: code-analysis/style-rules/ide0110.md
+          - name: IDE0140
+            href: code-analysis/style-rules/ide0140.md
         - name: Miscellaneous rules
           items:
           - name: Overview
@@ -1273,8 +1493,6 @@ items:
           href: code-analysis/style-rules/naming-rules.md
     - name: Platform compatibility analyzer
       href: ../standard/analyzers/platform-compat-analyzer.md
-    - name: API analyzer
-      href: ../standard/analyzers/api-analyzer.md
     - name: Portability analyzer
       href: ../standard/analyzers/portability-analyzer.md
 - name: Execution model
@@ -1317,7 +1535,7 @@ items:
       href: ../core/versions/index.md
     - name: .NET version selection
       href: ../core/versions/selection.md
-  - name: Run-time configuration
+  - name: Runtime configuration
     items:
     - name: Settings
       href: ../core/run-time-config/index.md
@@ -1355,6 +1573,122 @@ items:
       href: ../core/deploying/trim-self-contained.md
     - name: Options
       href: ../core/deploying/trimming-options.md
+    - name: Trimming libraries
+      href: ../core/deploying/prepare-libraries-for-trimming.md
+    - name: Trim warnings
+      items:
+        - name: IL2001
+          href: ../core/deploying/trim-warnings/il2001.md
+        - name: IL2002
+          href: ../core/deploying/trim-warnings/il2002.md
+        - name: IL2003
+          href: ../core/deploying/trim-warnings/il2003.md
+        - name: IL2004
+          href: ../core/deploying/trim-warnings/il2004.md
+        - name: IL2005
+          href: ../core/deploying/trim-warnings/il2005.md
+        - name: IL2007
+          href: ../core/deploying/trim-warnings/il2007.md
+        - name: IL2008
+          href: ../core/deploying/trim-warnings/il2008.md
+        - name: IL2009
+          href: ../core/deploying/trim-warnings/il2009.md
+        - name: IL2010
+          href: ../core/deploying/trim-warnings/il2010.md
+        - name: IL2011
+          href: ../core/deploying/trim-warnings/il2011.md
+        - name: IL2012
+          href: ../core/deploying/trim-warnings/il2012.md
+        - name: IL2013
+          href: ../core/deploying/trim-warnings/il2013.md
+        - name: IL2014
+          href: ../core/deploying/trim-warnings/il2014.md
+        - name: IL2015
+          href: ../core/deploying/trim-warnings/il2015.md
+        - name: IL2016
+          href: ../core/deploying/trim-warnings/il2016.md
+        - name: IL2017
+          href: ../core/deploying/trim-warnings/il2017.md
+        - name: IL2018
+          href: ../core/deploying/trim-warnings/il2018.md
+        - name: IL2019
+          href: ../core/deploying/trim-warnings/il2019.md
+        - name: IL2022
+          href: ../core/deploying/trim-warnings/il2022.md
+        - name: IL2023
+          href: ../core/deploying/trim-warnings/il2023.md
+        - name: IL2024
+          href: ../core/deploying/trim-warnings/il2024.md
+        - name: IL2025
+          href: ../core/deploying/trim-warnings/il2025.md
+        - name: IL2026
+          href: ../core/deploying/trim-warnings/il2026.md
+        - name: IL2027
+          href: ../core/deploying/trim-warnings/il2027.md
+        - name: IL2028
+          href: ../core/deploying/trim-warnings/il2028.md
+        - name: IL2029
+          href: ../core/deploying/trim-warnings/il2029.md
+        - name: IL2030
+          href: ../core/deploying/trim-warnings/il2030.md
+        - name: IL2031
+          href: ../core/deploying/trim-warnings/il2031.md
+        - name: IL2032
+          href: ../core/deploying/trim-warnings/il2032.md
+        - name: IL2033
+          href: ../core/deploying/trim-warnings/il2033.md
+        - name: IL2034
+          href: ../core/deploying/trim-warnings/il2034.md
+        - name: IL2035
+          href: ../core/deploying/trim-warnings/il2035.md
+        - name: IL2036
+          href: ../core/deploying/trim-warnings/il2036.md
+        - name: IL2037
+          href: ../core/deploying/trim-warnings/il2037.md
+        - name: IL2038
+          href: ../core/deploying/trim-warnings/il2038.md
+        - name: IL2039
+          href: ../core/deploying/trim-warnings/il2039.md
+        - name: IL2040
+          href: ../core/deploying/trim-warnings/il2040.md
+        - name: IL2041
+          href: ../core/deploying/trim-warnings/il2041.md
+        - name: IL2042
+          href: ../core/deploying/trim-warnings/il2042.md
+        - name: IL2043
+          href: ../core/deploying/trim-warnings/il2043.md
+        - name: IL2044
+          href: ../core/deploying/trim-warnings/il2044.md
+        - name: IL2045
+          href: ../core/deploying/trim-warnings/il2045.md
+        - name: IL2046
+          href: ../core/deploying/trim-warnings/il2046.md
+        - name: IL2048
+          href: ../core/deploying/trim-warnings/il2048.md
+        - name: IL2049
+          href: ../core/deploying/trim-warnings/il2049.md
+        - name: IL2050
+          href: ../core/deploying/trim-warnings/il2050.md
+        - name: IL2051
+          href: ../core/deploying/trim-warnings/il2051.md
+        - name: IL2052
+          href: ../core/deploying/trim-warnings/il2052.md
+        - name: IL2053
+          href: ../core/deploying/trim-warnings/il2053.md
+        - name: IL2054
+          href: ../core/deploying/trim-warnings/il2054.md
+        - name: IL2055
+          href: ../core/deploying/trim-warnings/il2055.md
+        - name: IL2056
+          href: ../core/deploying/trim-warnings/il2056.md
+        - name: IL2057
+          href: ../core/deploying/trim-warnings/il2057.md
+        - name: IL2058
+          href: ../core/deploying/trim-warnings/il2058.md
+        - name: IL2059
+          href: ../core/deploying/trim-warnings/il2059.md
+        - name: IL2060
+          href: ../core/deploying/trim-warnings/il2060.md
   - name: Runtime package store
     href: ../core/deploying/runtime-store.md
   - name: Runtime Identifier (RID) catalog
@@ -1369,6 +1703,32 @@ items:
       href: ../core/docker/build-container.md
     - name: Container tools in Visual Studio
       href: /visualstudio/containers/overview
+- name: DevOps
+  items:
+  - name: GitHub Actions and .NET
+    href: ../devops/github-actions-overview.md
+    displayName: "continuous integration,continuous deployment,continuous delivery,ci,cd,ci/cd,github,github action,github actions,lifecycle"
+  - name: Tutorials
+    expanded: true
+    items:
+    - name: Create a GitHub Action with .NET
+      href: ../devops/create-dotnet-github-action.md
+      displayName: "continuous integration, continuous deployment, ci, cd, ci/cd, github, github action, github actions, lifecycle"
+  - name: Quickstarts
+    expanded: true
+    items:
+    - name: Create a build GitHub Action
+      href: ../devops/dotnet-build-github-action.md
+      displayName: dotnet restore,dotnet build
+    - name: Create a test GitHub Action
+      href: ../devops/dotnet-test-github-action.md
+      displayName: dotnet restore,dotnet build,dotnet test
+    - name: Create a publish GitHub Action
+      href: ../devops/dotnet-publish-github-action.md
+      displayName: dotnet restore,dotnet build,dotnet test,dotnet publish
+    - name: Create a CodeQL GitHub Action
+      href: ../devops/dotnet-secure-github-action.md
+      displayName: codeql,security,vulnerability,source scan
 - name: Fundamental coding components
   items:
   - name: Base types overview
@@ -1379,8 +1739,6 @@ items:
       href: ../standard/base-types/common-type-system.md
     - name: Language independence
       href: ../standard/language-independence.md
-    - name: Language-independent components
-      href: ../standard/language-independence-and-language-independent-components.md
     - name: Type conversion in .NET
       href: ../standard/base-types/type-conversion.md
     - name: Type conversion tables
@@ -1649,15 +2007,17 @@ items:
           href: ../standard/serialization/system-text-json-ignore-properties.md
         - name: Allow invalid JSON
           href: ../standard/serialization/system-text-json-invalid-json.md
-        - name: Handle overflow JSON
+        - name: Handle overflow JSON, use JsonElement or JsonNode
           href: ../standard/serialization/system-text-json-handle-overflow.md
-        - name: Preserve references
+        - name: Preserve references, handle circular references
           href: ../standard/serialization/system-text-json-preserve-references.md
-        - name: Immutable types and non-public accessors
+        - name: Deserialize to immutable types, non-public accessors
           href: ../standard/serialization/system-text-json-immutability.md
         - name: Polymorphic serialization
           href: ../standard/serialization/system-text-json-polymorphism.md
-      - name: How to migrate from Newtonsoft.Json
+      - name: Use DOM, Utf8JsonReader, Utf8JsonWriter
+        href: ../standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md
+      - name: Migrate from Newtonsoft.Json
         href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
       - name: Supported collection types
         href: ../standard/serialization/system-text-json-supported-collection-types.md
@@ -1665,9 +2025,7 @@ items:
         items:
         - name: Customize character encoding
           href: ../standard/serialization/system-text-json-character-encoding.md
-        - name: Custom serializers and deserializers
-          href: ../standard/serialization/write-custom-serializer-deserializer.md
-        - name: Custom converters
+        - name: Write custom converters
           href: ../standard/serialization/system-text-json-converters-how-to.md
     - name: Binary serialization
       items:
@@ -1855,6 +2213,9 @@ items:
       href: ../core/extensions/logging.md
     - name: Logging providers
       href: ../core/extensions/logging-providers.md
+    - name: Compile-time logging source generation
+      href: ../core/extensions/logger-message-generator.md
+      displayName: LoggerMessage,LoggerMessageAttribute,source generator,compile-time generation
     - name: Implement a custom logging provider
       href: ../core/extensions/custom-logging-provider.md
     - name: High-performance logging
@@ -1863,6 +2224,69 @@ items:
       href: ../core/extensions/console-log-formatter.md
   - name: HostBuilder (generic host)
     href: ../core/extensions/generic-host.md
+  - name: HTTP with .NET
+    href: ../core/extensions/http-client.md
+  - name: File globbing in .NET
+    href: ../core/extensions/file-globbing.md
+  - name: Globalization and localization
+    items:
+    - name: Overview
+      href: ../core/extensions/globalization-and-localization.md
+    - name: Globalization
+      href: ../core/extensions/globalization.md
+    - name: Globalization and ICU
+      href: ../core/extensions/globalization-icu.md
+    - name: Localizability review
+      href: ../core/extensions/localizability-review.md
+    - name: Localization
+      href: ../core/extensions/localization.md
+    - name: Culture-insensitive string operations
+      items:
+      - name: Overview
+        href: ../core/extensions/performing-culture-insensitive-string-operations.md
+      - name: String comparisons
+        href: ../core/extensions/performing-culture-insensitive-string-comparisons.md
+      - name: Case changes
+        href: ../core/extensions/performing-culture-insensitive-case-changes.md
+      - name: String operations in collections
+        href: ../core/extensions/performing-culture-insensitive-string-operations-in-collections.md
+      - name: String operations in arrays
+        href: ../core/extensions/performing-culture-insensitive-string-operations-in-arrays.md
+    - name: Best practices for developing world-ready apps
+      href: ../core/extensions/best-practices-for-developing-world-ready-apps.md
+  - name: Resources in .NET apps
+    items:
+    - name: Overview
+      href: ../core/extensions/resources.md
+    - name: Create resource files
+      items:
+      - name: Overview
+        href: ../core/extensions/create-resource-files.md
+      - name: Work with .resx files programmatically
+        href: ../core/extensions/work-with-resx-files-programmatically.md
+    - name: Create satellite assemblies
+      href: ../core/extensions/create-satellite-assemblies.md
+    - name: Package and deploy resources
+      href: ../core/extensions/package-and-deploy-resources.md
+    - name: Retrieve resources
+      href: ../core/extensions/retrieve-resources.md
+  - name: Worker Services
+    items:
+    - name: Overview
+      displayName: workers,worker service,BackgroundService,IHostedService,queue service,timer service
+      href: ../core/extensions/workers.md
+    - name: Create a Queue Service
+      href: ../core/extensions/queue-service.md
+    - name: Use scoped services with a BackgroundService
+      href: ../core/extensions/scoped-service.md
+    - name: Create a Windows Service using BackgroundService
+      href: ../core/extensions/windows-service.md
+    - name: Implement the IHostedService interface
+      href: ../core/extensions/timer-service.md
+    - name: Deploy a Worker Service to Azure
+      href: ../core/extensions/cloud-service.md
+  - name: Caching
+    href: ../core/extensions/caching.md
 - name: Data access
   items:
   - name: LINQ
@@ -2166,6 +2590,8 @@ items:
           href: ../standard/native-interop/runtime-callable-wrapper.md
         - name: COM-callable wrapper
           href: ../standard/native-interop/com-callable-wrapper.md
+        - name: Tutorial - Use the ComWrappers API
+          href: ../standard/native-interop/tutorial-comwrappers.md
       - name: Qualifying .NET types for COM interop
         href: ../standard/native-interop/qualify-net-types-for-interoperation.md
     - name: Apply interop attributes
@@ -2174,8 +2600,6 @@ items:
       href: ../standard/native-interop/exceptions-interoperability.md
   - name: .NET distribution packaging
     href: ../core/distribution-packaging.md
-  - name: Globalization and localization
-    href: ../standard/globalization-localization/
   - name: Open-source library guidance
     href: ../standard/library-guidance/
   - name: Framework design guidelines
@@ -2285,44 +2709,58 @@ items:
         href: ../standard/design-guidelines/dependency-properties.md
 - name: Migration guide
   items:
-  - name: Breaking changes
-    displayName: app compatibility
-    href: ../core/compatibility/
+  - name: Overview
+    href: ../core/porting/index.md
+  - name: General Information
+    items:
+    - name: About .NET
+      items:
+      - name: Versioning info for .NET SDK, MSBuild, and Visual Studio
+        href: ../core/porting/versioning-sdk-msbuild-vs.md
+      - name: Choose between .NET 5 and .NET Framework for server apps
+        href: ../standard/choosing-core-framework-server.md
+    - name: .NET Upgrade Assistant tool
+      items:
+      - name: Overview
+        href: ../core/porting/upgrade-assistant-overview.md
+      - name: Windows Presentation Foundation
+        href: ../core/porting/upgrade-assistant-wpf-framework.md
+      - name: Windows Forms
+        href: ../core/porting/upgrade-assistant-winforms-framework.md
+      - name: ASP.NET Core
+        href: ../core/porting/upgrade-assistant-aspnetmvc.md
+      - name: Telemetry
+        href: ../core/porting/upgrade-assistant-telemetry.md
+    - name: Breaking changes
+      displayName: app compatibility
+      href: ../core/porting/breaking-changes.md
+  - name: Pre-Migration
+    items:
+    - name: Assess the portability of your project
+      items:
+      - name: Unsupported Dependencies
+        href: ../core/porting/third-party-deps.md
+      - name: Use the Windows Compatibility Pack
+        href: ../core/porting/windows-compat-pack.md
+      - name: Unavailable technologies
+        href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: Unsupported APIs
+        href: ../core/porting/unsupported-apis.md
+    - name: Needed changes before porting code
+      href: ../core/porting/premigration-needed-changes.md
   - name: Migration
     items:
-    - name: .NET Core 2.0 to 2.1
-      href: ../core/migration/20-21.md
-    - name: Migrate from project.json
-      href: ../core/migration/index.md
-    - name: Map between project.json and csproj
-      href: ../core/tools/project-json-to-csproj.md
-    - name: Map AssemblyInfo attributes to properties
-      href: ../core/migration/assembly-info.md
-    - name: Changes in CLI overview
-      href: ../core/tools/cli-msbuild-architecture.md
-    - name: Migrate from DNX
-      href: ../core/migration/from-dnx.md
-  - name: Port from .NET Framework
-    items:
-    - name: Overview
-      href: ../core/porting/index.md
-    - name: Analyze third-party dependencies
-      href: ../core/porting/third-party-deps.md
-    - name: Port libraries
-      href: ../core/porting/libraries.md
-    - name: Organize projects for .NET
-      href: ../core/porting/project-structure.md
-    - name: Unavailable technologies
-      href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-    - name: Tools
-      href: ../core/porting/tools.md
-    - name: Use the Windows Compatibility Pack
-      href: ../core/porting/windows-compat-pack.md
-    - name: Port Windows Forms projects
-      href: /dotnet/desktop/winforms/migration/?view=netdesktop-5.0
-    - name: Port WPF projects
-      href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework
-    - name: Port C++/CLI projects
-      href: ../core/porting/cpp-cli.md
-  - name: Choose between .NET 5 and .NET Framework for server apps
-    href: ../standard/choosing-core-framework-server.md
+    - name: Create a porting plan
+      items:
+      - name: Approaches
+        href: ../core/porting/porting-approaches.md
+      - name: Project structure
+        href: ../core/porting/project-structure.md
+    - name: Application Porting Guides
+      items:
+      - name: Windows Forms
+        href: /dotnet/desktop/winforms/migration/?view=netdesktop-5.0
+      - name: Windows Presentation Foundation
+        href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0
+      - name: Port C++/CLI projects
+        href: ../core/porting/cpp-cli.md

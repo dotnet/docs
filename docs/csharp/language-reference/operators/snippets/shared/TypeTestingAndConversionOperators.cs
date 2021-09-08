@@ -10,7 +10,7 @@ namespace operators
             Cast();
             IsOperatorExample.Main();
             IsOperatorWithInt();
-            IsOperatorTypePattern();
+            IsOperatorDeclarationPattern();
             AsOperator();
             TypeOf();
             TypeOfUnboundGeneric();
@@ -63,9 +63,9 @@ namespace operators
             // </SnippetIsWithInt>
         }
 
-        private static void IsOperatorTypePattern()
+        private static void IsOperatorDeclarationPattern()
         {
-            // <SnippetIsTypePattern>
+            // <SnippetIsDeclarationPattern>
             int i = 23;
             object iBoxed = i;
             int? jNullable = 7;
@@ -73,7 +73,7 @@ namespace operators
             {
                 Console.WriteLine(a + b);  // output 30
             }
-            // </SnippetIsTypePattern>
+            // </SnippetIsDeclarationPattern>
         }
 
         private static void AsOperator()

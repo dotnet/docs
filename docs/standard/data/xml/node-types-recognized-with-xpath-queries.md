@@ -2,7 +2,7 @@
 description: "Learn more about: Node Types Recognized with XPath Queries"
 title: "Node Types Recognized with XPath Queries"
 ms.date: "03/30/2017"
-ms.assetid: 1d33e22d-18e5-43f8-a466-2e3d0a8dd094
+ms.topic: reference
 ---
 # Node Types Recognized with XPath Queries
 

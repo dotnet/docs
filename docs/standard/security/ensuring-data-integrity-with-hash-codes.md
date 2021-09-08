@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "checking hash codes"
   - "encryption [.NET], hash"
   - "hash"
-ms.assetid: 33660f33-b70f-4dca-8c87-ab35cfc2961a
+ms.topic: how-to
 ---
 # Ensuring Data Integrity with Hash Codes
 

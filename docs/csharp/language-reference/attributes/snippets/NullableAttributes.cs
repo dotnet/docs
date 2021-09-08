@@ -107,7 +107,7 @@ namespace attributes
 
         // <FindMethodMaybeNull>
         [return: MaybeNull]
-        public T? Find<T>(IEnumerable<T> sequence, Func<T, bool> predicate)
+        public T Find<T>(IEnumerable<T> sequence, Func<T, bool> predicate)
         // </FindMethodMaybeNull>
         {
             foreach (T item in sequence)

@@ -102,11 +102,11 @@ For reasons covered under [Generic definitions and nullability](../../nullable-m
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="FindMethod" :::
 
-The method returns `null` when the sought item isn't found. You can avoid adding the `?` to the return type by adding the `MaybeNull` annotation to the method return:
+The method returns `null` when the sought item isn't found. You can clarify that the method returns `null` when an item isn't found by adding the `MaybeNull` annotation to the method return:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="FindMethodMaybeNull" :::
 
-The preceding code informs callers that the contract implies a non-nullable type, but the return value *may* actually be null.  Use the `MaybeNull` attribute when your API should be a non-nullable type, typically a generic type parameter, but there may be instances where `null` would be returned.
+The preceding code informs callers that the return value *may* actually be null. It also informs the compiler that the method may return a `null` expression even though the type is non-nullable. When you have a generic method that returns an instance of its type parameter, `T`, you can express that it never returns `null` by using the `NotNull` attribute.
 
 You can also specify that a return value or an argument isn't null even though the type is a nullable reference type. The following method is a helper method that throws if its first argument is `null`:
 

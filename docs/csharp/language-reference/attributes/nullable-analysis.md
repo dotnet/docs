@@ -31,7 +31,7 @@ The rule for `key` can be expressed succinctly in C# 8.0: `key` should be a non-
 
 | Attribute | Category | Meaning |
 | - | - | - |
-| [AllowNull](xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute) | [Precondition](#preconditions-allownull-and-disallownull) | A non-nullable parameter, field or property may be null. |
+| [AllowNull](xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute) | [Precondition](#preconditions-allownull-and-disallownull) | A non-nullable parameter, field, or property may be null. |
 | [DisallowNull](xref:System.Diagnostics.CodeAnalysis.DisallowNullAttribute) | [Precondition](#preconditions-allownull-and-disallownull) | A nullable parameter, field, or property should never be null. |
 | [MaybeNull](xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute) | [Postcondition](#postconditions-maybenull-and-notnull) | A non-nullable parameter, field, property, or return value may be null. |
 | [NotNull](xref:System.Diagnostics.CodeAnalysis.NotNullAttribute) | [Postcondition](#postconditions-maybenull-and-notnull) | A nullable parameter, field, property, or return value will never be null. |
@@ -157,7 +157,7 @@ There's one final attribute you may also need. Sometimes the null state of a ret
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="ExtractComponent" :::
 
-If the `url` argument isn't null, the output isn't `null`. Once nullable references are enabled you need to add more annotations if your API may accept a null argument. You could annotate the return type as shown in the following code:
+If the `url` argument isn't null, the output isn't `null`. Once nullable references are enabled, you need to add more annotations if your API may accept a null argument. You could annotate the return type as shown in the following code:
 
 ```csharp
 string? GetTopLevelDomainFromFullUrl(string? url)
@@ -189,17 +189,17 @@ The <xref:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute> has a `boo
 
 Some methods, typically exception helpers or other utility methods, always exit by throwing an exception. Or, a helper may throw an exception based on the value of a Boolean argument.
 
-In the first case, you can add the <xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute> attribute to the method declaration. The compiler's *null-state* analysis does not check any code in a method that follows a call to a method annotated with `DoesNotReturn`. Consider this method:
+In the first case, you can add the <xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute> attribute to the method declaration. The compiler's *null-state* analysis doesn't check any code in a method that follows a call to a method annotated with `DoesNotReturn`. Consider this method:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="DoesNotReturn":::
 
-The compiler does not issue any warnings after the call to `FailFast`.
+The compiler doesn't issue any warnings after the call to `FailFast`.
 
 In the second case, you add the <xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute?displayProperty=nameWithType> attribute to a Boolean parameter of the method. You can modify the previous example as follows:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="DoesNotReturnIf":::
 
-When the value of the argument matches the value of the `DoesNotReturnIf` constructor, the compiler does not perform any *null-state* analysis after that method.
+When the value of the argument matches the value of the `DoesNotReturnIf` constructor, the compiler doesn't perform any *null-state* analysis after that method.
 
 ## Summary
 
@@ -211,7 +211,7 @@ As you update libraries for a nullable context, add these attributes to guide us
 
 - [AllowNull](xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute): A non-nullable field, parameter, or property may be null.
 - [DisallowNull](xref:System.Diagnostics.CodeAnalysis.DisallowNullAttribute): A nullable field, parameter, or property should never be null.
-- [MaybeNull](xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute): A non-nullable field, parameter, property or return value may be null.
+- [MaybeNull](xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute): A non-nullable field, parameter, property, or return value may be null.
 - [NotNull](xref:System.Diagnostics.CodeAnalysis.NotNullAttribute): A nullable field, parameter, property, or return value will never be null.
 - [MaybeNullWhen](xref:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute): A non-nullable argument may be null when the method returns the specified `bool` value.
 - [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute): A nullable argument won't be null when the method returns the specified `bool` value.

@@ -31,17 +31,17 @@ The rule for `key` can be expressed succinctly in C# 8.0: `key` should be a non-
 
 | Attribute | Category | Meaning |
 | - | - | - |
-| [AllowNull](xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute) | [Precondition](#preconditions-allownull-and-disallownull) | A non-nullable argument may be null. |
-| [DisallowNull](xref:System.Diagnostics.CodeAnalysis.DisallowNullAttribute) | [Precondition](#preconditions-allownull-and-disallownull) | A nullable argument should never be null. |
-| [MaybeNull](xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute) | [Postcondition](#postconditions-maybenull-and-notnull) | A non-nullable return value may be null. |
-| [NotNull](xref:System.Diagnostics.CodeAnalysis.NotNullAttribute) | [Postcondition](#postconditions-maybenull-and-notnull) | A nullable return value will never be null. |
+| [AllowNull](xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute) | [Precondition](#preconditions-allownull-and-disallownull) | A non-nullable parameter, field or property may be null. |
+| [DisallowNull](xref:System.Diagnostics.CodeAnalysis.DisallowNullAttribute) | [Precondition](#preconditions-allownull-and-disallownull) | A nullable parameter, field, or property should never be null. |
+| [MaybeNull](xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute) | [Postcondition](#postconditions-maybenull-and-notnull) | A non-nullable parameter, field, property, or return value may be null. |
+| [NotNull](xref:System.Diagnostics.CodeAnalysis.NotNullAttribute) | [Postcondition](#postconditions-maybenull-and-notnull) | A nullable parameter, field, property, or return value will never be null. |
 | [MaybeNullWhen](xref:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute) | [Conditional postcondition](#conditional-post-conditions-notnullwhen-maybenullwhen-and-notnullifnotnull) | A non-nullable argument may be null when the method returns the specified `bool` value. |
 | [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute) | [Conditional postcondition](#conditional-post-conditions-notnullwhen-maybenullwhen-and-notnullifnotnull) | A nullable argument won't be null when the method returns the specified `bool` value. |
-| [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute) | [Conditional postcondition](#conditional-post-conditions-notnullwhen-maybenullwhen-and-notnullifnotnull) | A return value isn't null if the argument for the specified parameter isn't null. |
-| [MemberNotNull](xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute) | [Constructor helper methods](#constructor-helper-methods-membernotnull-and-membernotnullwhen) | The listed member won't be null when the method returns. |
-| [MemberNotNullWhen](xref:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute) | [Constructor helper methods](#constructor-helper-methods-membernotnull-and-membernotnullwhen) | The listed member won't be null when the method returns the specified `bool` value. |
-| [DoesNotReturn](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute) | [Unreachable code](#stop-nullable-analysis-when-called-method-throws) | A method never returns. In other words, it always throws an exception. |
-| [DoesNotReturnIf](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute) | [Unreachable code](#stop-nullable-analysis-when-called-method-throws) | This method never returns if the associated `bool` parameter has the specified value. |
+| [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute) | [Conditional postcondition](#conditional-post-conditions-notnullwhen-maybenullwhen-and-notnullifnotnull) | A return value, property, or argument isn't null if the argument for the specified parameter isn't null. |
+| [MemberNotNull](xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute) | [Method and property helper methods](#helper-methods-membernotnull-and-membernotnullwhen) | The listed member won't be null when the method returns. |
+| [MemberNotNullWhen](xref:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute) | [Method and property helper methods](#helper-methods-membernotnull-and-membernotnullwhen) | The listed member won't be null when the method returns the specified `bool` value. |
+| [DoesNotReturn](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute) | [Unreachable code](#stop-nullable-analysis-when-called-method-throws) | A method or property never returns. In other words, it always throws an exception. |
+| [DoesNotReturnIf](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute) | [Unreachable code](#stop-nullable-analysis-when-called-method-throws) | This method or property never returns if the associated `bool` parameter has the specified value. |
 
 The preceding descriptions are a quick reference to what each attribute does. The following sections describe the behavior and meaning of these attributes more thoroughly.
 
@@ -175,7 +175,7 @@ You specify conditional postconditions using these attributes:
 - [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute): A nullable argument won't be null when the method returns the specified `bool` value.
 - [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute): A return value isn't null if the argument for the specified parameter isn't null.
 
-## Constructor helper methods: `MemberNotNull` and `MemberNotNullWhen`
+## Helper methods: `MemberNotNull` and `MemberNotNullWhen`
 
 These attributes specify your intent when you've refactored common code from constructors into helper methods. The C# compiler analyzes constructors and field initializers to make sure that all non-nullable reference fields have been initialized before each constructor returns. However, the C# compiler doesn't track field assignments through all helper methods. The compiler issues warning `CS8618` when fields aren't initialized directly in the constructor, but rather in a helper method. You add the <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute> to a method declaration and specify the fields that are initialized to a non-null value in the method. For example, consider the following example:
 
@@ -207,14 +207,14 @@ When the value of the argument matches the value of the `DoesNotReturnIf` constr
 
 Adding nullable reference types provides an initial vocabulary to describe your APIs expectations for variables that could be `null`. The attributes provide a richer vocabulary to describe the null state of variables as preconditions and postconditions. These attributes more clearly describe your expectations and provide a better experience for the developers using your APIs.
 
-As you update libraries for a nullable context, add these attributes to guide users of your APIs to the correct usage. These attributes help you fully describe the null-state of arguments and return values:
+As you update libraries for a nullable context, add these attributes to guide users of your APIs to the correct usage. These attributes help you fully describe the null-state of arguments and return values.
 
-- [AllowNull](xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute): A non-nullable argument may be null.
-- [DisallowNull](xref:System.Diagnostics.CodeAnalysis.DisallowNullAttribute): A nullable argument should never be null.
-- [MaybeNull](xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute): A non-nullable return value may be null.
-- [NotNull](xref:System.Diagnostics.CodeAnalysis.NotNullAttribute): A nullable return value will never be null.
+- [AllowNull](xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute): A non-nullable field, parameter, or property may be null.
+- [DisallowNull](xref:System.Diagnostics.CodeAnalysis.DisallowNullAttribute): A nullable field, parameter, or property should never be null.
+- [MaybeNull](xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute): A non-nullable field, parameter, property or return value may be null.
+- [NotNull](xref:System.Diagnostics.CodeAnalysis.NotNullAttribute): A nullable field, parameter, property, or return value will never be null.
 - [MaybeNullWhen](xref:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute): A non-nullable argument may be null when the method returns the specified `bool` value.
 - [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute): A nullable argument won't be null when the method returns the specified `bool` value.
-- [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute): A return value isn't null if the argument for the specified parameter isn't null.
-- [DoesNotReturn](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute): A method never returns. In other words, it always throws an exception.
-- [DoesNotReturnIf](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute): This method never returns if the associated `bool` parameter has the specified value.
+- [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute): A parameter, property, or return value isn't null if the argument for the specified parameter isn't null.
+- [DoesNotReturn](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute): A method or property never returns. In other words, it always throws an exception.
+- [DoesNotReturnIf](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute): This method or property never returns if the associated `bool` parameter has the specified value.

@@ -2,7 +2,7 @@
 title: Model Builder Azure Training Resources
 description: A guide of resources for Azure Machine Learning
 ms.topic: reference
-ms.date: 06/01/2020
+ms.date: 09/07/2021
 ms.author: luquinta
 author: luisquintanilla
 ---
@@ -31,9 +31,9 @@ To create an Azure Machine Learning workspace, the following are required:
 
 An Azure Machine Learning compute is a cloud-based Linux VM used for training.
 
-To create an Azure Machine Learning workspace, the following are required:
+To create an Azure Machine Learning compute, the following are required:
 
-- Name: A name for your workspace between 2-16 characters. Names may only contain alphanumeric characters and hyphens.
+- Name: A name for your compute between 2-16 characters. Names may only contain alphanumeric characters and hyphens.
 - Compute size
 
     Model Builder can use one of the following GPU-optimized compute types:

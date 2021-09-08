@@ -419,11 +419,14 @@ If you already have a builder class, its custom operations can be extended from 
 The following example shows the extension of the existing `FSharp.Linq.QueryBuilder` class.
 
 ```fsharp
-type FSharp.Linq.QueryBuilder with
+open System
+open FSharp.Linq
+
+type QueryBuilder with
 
     [<CustomOperation("existsNot")>]
     member _.ExistsNot (source: QuerySource<'T, 'Q>, predicate) =
-        Enumerable.Any (source.Source, Func<_,_>(predicate)) |> not
+        System.Linq.Enumerable.Any (source.Source, Func<_,_>(predicate)) |> not
 ```
 
 ## See also

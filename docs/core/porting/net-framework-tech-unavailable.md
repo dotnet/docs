@@ -60,6 +60,12 @@ As an alternative, consider the [ILPack library](https://github.com/Lokad/ILPack
 
 For more information, see [dotnet/runtime issue 15704](https://github.com/dotnet/runtime/issues/15704).
 
+## Loading multi-module assemblies
+
+Assemblies that consist of multiple modules (`OutputType=Module` in MSBuild) are not supported in .NET 5+ (including .NET Core).
+
+As an alternative, consider merging the individual modules into a single assembly file.
+
 ## See also
 
 - [Overview of porting from .NET Framework to .NET](index.md)

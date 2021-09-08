@@ -147,7 +147,7 @@ items:
       href: fundamentals/exceptions/how-to-execute-cleanup-code-using-finally.md
 - name: What's new in C#
   items:
-  - name: C# 10.0 (Preview 5)
+  - name: C# 10.0 (Preview 7)
     displayName: what's new
     href: whats-new/csharp-10.md
   - name: C# 9.0
@@ -1264,7 +1264,7 @@ items:
     displayName: \#if, \#else, \#elif, \#endif, \#define, \#undef, \#warning, \#error, \#line, \#nullable, \#region, \#endregion, \#pragma, warning, checksum
   - name: Compiler options
     items:
-    - name: How to set options
+    - name: Overview
       href: language-reference/compiler-options/index.md
     - name: Language options
       displayName: CheckForOverflowUnderflow, checked, AllowUnsafeBlocks, unsafe, DefineConstants, define, LangVersion, langversion, Nullable, nullable

@@ -41,7 +41,6 @@ items:
         href: ../core/install/linux-snap.md
       - name: Install script & binaries
         href: ../core/install/linux-scripted-manual.md
-
     - name: Remove outdated runtimes and SDKs
       href: ../core/install/remove-runtime-sdk-versions.md
     - name: Manage .NET templates
@@ -840,6 +839,8 @@ items:
             href: code-analysis/quality-rules/ca1416.md
           - name: CA1417
             href: code-analysis/quality-rules/ca1417.md
+          - name: CA1418
+            href: code-analysis/quality-rules/ca1418.md
         - name: Maintainability rules
           items:
           - name: Overview
@@ -1526,7 +1527,7 @@ items:
       href: ../core/versions/index.md
     - name: .NET version selection
       href: ../core/versions/selection.md
-  - name: Run-time configuration
+  - name: Runtime configuration
     items:
     - name: Settings
       href: ../core/run-time-config/index.md
@@ -2107,6 +2108,8 @@ items:
     href: ../core/extensions/generic-host.md
   - name: HTTP with .NET
     href: ../core/extensions/http-client.md
+  - name: File globbing in .NET
+    href: ../core/extensions/file-globbing.md
   - name: Globalization and localization
     items:
     - name: Overview
@@ -2469,6 +2472,8 @@ items:
           href: ../standard/native-interop/runtime-callable-wrapper.md
         - name: COM-callable wrapper
           href: ../standard/native-interop/com-callable-wrapper.md
+        - name: Tutorial - Use the ComWrappers API
+          href: ../standard/native-interop/tutorial-comwrappers.md
       - name: Qualifying .NET types for COM interop
         href: ../standard/native-interop/qualify-net-types-for-interoperation.md
     - name: Apply interop attributes
@@ -2613,7 +2618,7 @@ items:
       href: ../core/porting/breaking-changes.md
   - name: Pre-Migration
     items:
-    - name: Asses the portability of your project
+    - name: Assess the portability of your project
       items:
       - name: Unsupported Dependencies
         href: ../core/porting/third-party-deps.md

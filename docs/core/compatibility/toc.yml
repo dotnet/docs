@@ -35,6 +35,8 @@ items:
           href: aspnet-core/6.0/blazor-eventargstype-property-replaced.md
         - name: "Blazor: Byte-array interop"
           href: aspnet-core/6.0/byte-array-interop.md
+        - name: "Blazor server: Disable long-polling fallback"
+          href: aspnet-core/6.0/blazor-long-polling-fallback.md
         - name: ClientCertificate doesn't trigger renegotiation
           href: aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md
         - name: "Kestrel: Log message attributes changed"
@@ -113,8 +115,10 @@ items:
           href: sdk/6.0/duplicate-files-in-output.md
         - name: GetTargetFrameworkProperties and GetNearestTargetFramework removed
           href: sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md
-        - name: Implicit namespaces in C# projects
+        - name: Implicit `global using` directives in C# projects
           href: sdk/6.0/implicit-namespaces.md
+        - name: Implicit `global using` directives disabled
+          href: sdk/6.0/implicit-namespaces-rc1.md
         - name: OutputType not automatically set to WinExe
           href: sdk/6.0/outputtype-not-set-automatically.md
       - name: Windows Forms
@@ -417,6 +421,8 @@ items:
           href: aspnet-core/6.0/blazor-eventargstype-property-replaced.md
         - name: "Blazor: Byte-array interop"
           href: aspnet-core/6.0/byte-array-interop.md
+        - name: "Blazor server: Disable long-polling fallback"
+          href: aspnet-core/6.0/blazor-long-polling-fallback.md
         - name: ClientCertificate doesn't trigger renegotiation
           href: aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md
         - name: "Kestrel: Log message attributes changed"
@@ -719,8 +725,10 @@ items:
           href: sdk/6.0/duplicate-files-in-output.md
         - name: GetTargetFrameworkProperties and GetNearestTargetFramework removed
           href: sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md
-        - name: Implicit namespaces in C# projects
+        - name: Implicit `global using` directives in C# projects
           href: sdk/6.0/implicit-namespaces.md
+        - name: Implicit `global using` directives disabled
+          href: sdk/6.0/implicit-namespaces-rc1.md
         - name: OutputType not automatically set to WinExe
           href: sdk/6.0/outputtype-not-set-automatically.md
       - name: .NET 5

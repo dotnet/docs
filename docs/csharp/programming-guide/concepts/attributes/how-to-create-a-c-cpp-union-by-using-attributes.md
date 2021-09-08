@@ -47,7 +47,7 @@ struct TestExplicit
     [System.Runtime.InteropServices.FieldOffset(0)]
     public int i1;
 
-    [System.Runtime.InteropServices.FieldOffset(4)]
+    [System.Runtime.InteropServices.FieldOffset(0)]
     public int i2;
 
     [System.Runtime.InteropServices.FieldOffset(8)]

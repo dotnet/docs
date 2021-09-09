@@ -9,7 +9,7 @@ ms.topic: include
 
 :::zone target="docs" pivot="visualstudio"
 
-To create a new Worker Service project with Visual Studio, you'd select **File** > **New** > **Project...**. From the **Create a new project** dialog search for "Worker Service", and select Worker Service template.
+To create a new Worker Service project with Visual Studio, select **File** > **New** > **Project...**. From the **Create a new project** dialog search for "Worker Service", and select Worker Service template. Enter the desired project name, select an appropriate location, and select **Next**. On the **Additional information** page, for the **Target Framework** select `.NET 5.0`, and check the **Enable Docker** option to enable docker support. Select the desired **Docker OS**.
 
 :::zone-end
 :::zone target="docs" pivot="vscode"

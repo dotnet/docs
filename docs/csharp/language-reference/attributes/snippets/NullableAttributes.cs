@@ -15,7 +15,7 @@ namespace attributes
         bool TryGetMessage(string key, out string message)
         {
             if (_messageMap.ContainsKey(key))
-                message = messageMap[key];
+                message = _messageMap[key];
             else
                 message = null;
             return message is not null;
@@ -77,7 +77,7 @@ namespace attributes
         bool TryGetMessage(string key, [NotNullWhen(true)] out string? message)
         {
             if (_messageMap.ContainsKey(key))
-                message = messageMap[key];
+                message = _messageMap[key];
             else
                 message = null;
             return message is not null;

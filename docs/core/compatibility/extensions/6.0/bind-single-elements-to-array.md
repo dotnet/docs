@@ -13,21 +13,17 @@ Starting in .NET 6, the <xref:Microsoft.Extensions.Configuration?displayProperty
 
 ## Previous behavior
 
-Consider the following JSON snippet:
+Consider the following JSON snippet and C# class definitions:
 
 ```json
 {
    "tvshow": {
-        "metadata": [
-            {
-               "name": "PrisonBreak"
-            }
-         ]
+        "metadata": {
+            "name": "PrisonBreak"
+          }
     }
 }
 ```
-
-The JSON configuration provider would bind that JSON to the following classes without any problem:
 
 ```csharp
 public class TvShow
@@ -41,7 +37,21 @@ public class Metadata
 }
 ```
 
-However, when binding the following XML in previous .NET versions, the XML configuration provider has no way of knowing that `TvShows` can contain multiple `Metadata` elements and that they are bound to an array.
+The JSON configuration provider would not bind that JSON because it does not specify an array. The JSON would need to appear as follows in order to bind:
+
+```json
+{
+   "tvshow": {
+        "metadata": [
+            {
+               "name": "PrisonBreak"
+            }
+         ]
+    }
+}
+```
+
+However, when binding the following XML in previous .NET versions, the XML configuration provider has no way of knowing that `TvShows` can contain multiple `Metadata` elements and that they are bound to an array. Thus, the binder fails to bind when a single element is provided. The key doesn't contain any index in the target array, which the binder expects when binding to an array, and the binder returns a `Metadata[]` array with a `null` object.
 
 ```xml
 <TvShow>
@@ -51,13 +61,19 @@ However, when binding the following XML in previous .NET versions, the XML confi
 </TvShow>
 ```
 
-Thus, the binder fails to bind when a single element is provided. The key doesn't contain any index in the target array, which the binder expects when binding to an array, and the binder returns a `Metadata[]` array with a `null` object.
-
 ## New behavior
 
-To support binding to array elements for the XML configuration provider, we changed the binder to account for keys without an index suffix&mdash;that is, there is a single child element.
+To support binding to array elements for the XML configuration provider, we changed the binder to account for keys without an index suffix&mdash;that is, there is a single child element. Now, the following XML will bind to the previous classes and the `Metadata` property will not be `null`.
 
-This is a breaking change for other providers. For example, if you change the JSON shown in the [Previous behavior](#previous-behavior) section so that it does not specify an array, it will still bind to the previous class that contains an array of `Metadata` objects:
+```xml
+<TvShow>
+  <Metadata>
+    <Name>Prison Break</Name>
+  </Metadata>
+</TvShow>
+```
+
+This is a breaking change for other providers. For example, even if the JSON does not specify an array, it will still bind to the previous class that contains an array of `Metadata` objects:
 
 ```json
 {

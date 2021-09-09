@@ -6,7 +6,7 @@ ms.assetid: 9d8fd3fb-dc39-427a-8235-336a7e7162ba
 ---
 # Service Debug Behavior
 
-This sample demonstrates how service debug behavior settings can be configured. The sample is based on the [Getting Started](getting-started-sample.md), which implements the `ICalculator` service contract. This sample explicitly defines service debug behavior in the configuration file. It can also be done imperatively in code.
+The [ServiceDebug sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how service debug behavior settings can be configured. The sample is based on the [Getting Started](getting-started-sample.md), which implements the `ICalculator` service contract. This sample explicitly defines service debug behavior in the configuration file. It can also be done imperatively in code.
 
 In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).
 
@@ -45,12 +45,3 @@ When you run the sample, the operation requests and responses are displayed in t
 2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
 3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
->
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Behaviors\ServiceDebug`

@@ -28,7 +28,7 @@ This walkthrough illustrates the following tasks:
 - [Setting up a simple sandbox for testing partially trusted code](#Setting_up).
 
   > [!IMPORTANT]
-  > This is a simple way to experiment with code in partial trust. To run code that actually comes from untrusted locations, see [How to: Run Partially Trusted Code in a Sandbox](../misc/how-to-run-partially-trusted-code-in-a-sandbox.md).
+  > This is a simple way to experiment with code in partial trust. To run code that actually comes from untrusted locations, see [How to: Run Partially Trusted Code in a Sandbox](/previous-versions/dotnet/framework/code-access-security/how-to-run-partially-trusted-code-in-a-sandbox).
 
 - [Running code in partially trusted application domains](#Running_code).
 
@@ -64,7 +64,7 @@ The following procedure creates a sandboxed application domain that runs your co
 2. Create an <xref:System.AppDomainSetup> object to initialize the application domain with an application path.
 
     > [!IMPORTANT]
-    > For simplicity, this code example uses the current folder. To run code that actually comes from the Internet, use a separate folder for the untrusted code, as described in [How to: Run Partially Trusted Code in a Sandbox](../misc/how-to-run-partially-trusted-code-in-a-sandbox.md).
+    > For simplicity, this code example uses the current folder. To run code that actually comes from the Internet, use a separate folder for the untrusted code, as described in [How to: Run Partially Trusted Code in a Sandbox](/previous-versions/dotnet/framework/code-access-security/how-to-run-partially-trusted-code-in-a-sandbox).
 
     [!code-csharp[HowToEmitCodeInPartialTrust#3](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/cs/source.cs#3)]
     [!code-vb[HowToEmitCodeInPartialTrust#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/vb/source.vb#3)]
@@ -219,4 +219,4 @@ This comparison shows how <xref:System.Security.Permissions.ReflectionPermission
 ## See also
 
 - [Security Issues in Reflection Emit](security-issues-in-reflection-emit.md)
-- [How to: Run Partially Trusted Code in a Sandbox](../misc/how-to-run-partially-trusted-code-in-a-sandbox.md)
+- [How to: Run Partially Trusted Code in a Sandbox](/previous-versions/dotnet/framework/code-access-security/how-to-run-partially-trusted-code-in-a-sandbox)

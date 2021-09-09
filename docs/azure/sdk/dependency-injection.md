@@ -86,7 +86,7 @@ public class MyApiController : ControllerBase
 
 ## Store configuration separately from code
 
-In the [Register client](#register-client) section, you explicitly specify the `keyVaultUrl` and `storageUrl` variables. This approach could cause problems when you run code against different environments during development and production. The .NET team suggests [storing such configurations in environment-dependent JSON files](/dotnet/core/extensions/configuration-providers#json-configuration-provider). For example, you can have an _appsettings.Development.json_ file containing development environment settings. Another _appsettings.Production.json_ file would contain production environment settings, and so on. The file format is:
+In the [Register client](#register-client) section, you explicitly specify the `keyVaultUrl` and `storageUrl` variables. This approach could cause problems when you run code against different environments during development and production. The .NET team suggests [storing such configurations in environment-dependent JSON files](../../core/extensions/configuration-providers.md#json-configuration-provider). For example, you can have an _appsettings.Development.json_ file containing development environment settings. Another _appsettings.Production.json_ file would contain production environment settings, and so on. The file format is:
 
 ```json
 {
@@ -240,6 +240,6 @@ You can also place policy overrides in the _appsettings.json_ file:
 
 ## See also
 
-- [Dependency injection in .NET](/dotnet/core/extensions/dependency-injection)
-- [Configuration in .NET](/dotnet/core/extensions/configuration)
+- [Dependency injection in .NET](../../core/extensions/dependency-injection.md)
+- [Configuration in .NET](../../core/extensions/configuration.md)
 - [Configuration in ASP.NET Core](/aspnet/core/fundamentals/configuration)

@@ -9,7 +9,7 @@ dotnet_code_quality.CAXXXX.excluded_symbol_names = MyType
 Allowed symbol name formats in the option value (separated by `|`):
 
 - Symbol name only (includes all symbols with the name, regardless of the containing type or namespace).
-- Fully qualified names in the symbol's [documentation ID format](../../docs/csharp/programming-guide/xmldoc/processing-the-xml-file.md#id-strings). Each symbol name requires a symbol-kind prefix, such as `M:` for methods, `T:` for types, and `N:` for namespaces.
+- Fully qualified names in the symbol's [documentation ID format](../../docs/csharp/language-reference/xmldoc/index.md#id-strings). Each symbol name requires a symbol-kind prefix, such as `M:` for methods, `T:` for types, and `N:` for namespaces.
 - `.ctor` for constructors and `.cctor` for static constructors.
 
 Examples:

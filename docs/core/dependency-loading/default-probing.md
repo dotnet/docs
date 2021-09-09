@@ -3,7 +3,6 @@ title: Default probing - .NET Core
 description: Overview of .NET Core's System.Runtime.Loader.AssemblyLoadContext.Default probing logic to locate dependencies.
 ms.date: 08/09/2019
 author: sdmaclea
-ms.author: stmaclea
 ---
 # Default probing
 
@@ -21,7 +20,6 @@ Each probing property is optional. If present, each property is a string value t
 |`PLATFORM_RESOURCE_ROOTS`       | List of directory paths to search for satellite resource assemblies. |
 |`NATIVE_DLL_SEARCH_DIRECTORIES` | List of directory paths to search for unmanaged (native) libraries.        |
 |`APP_PATHS`                     | List of directory paths to search for managed assemblies. |
-|`APP_NI_PATHS`                  | List of directory paths to search for native images of managed assemblies. |
 
 ### How are the properties populated?
 
@@ -34,7 +32,7 @@ Additionally, the *\*.deps.json* files for any referenced frameworks are similar
 
 Finally the environment variable `ADDITIONAL_DEPS` can be used to add additional dependencies.  `dotnet.exe` also contains an `--additional-deps` optional parameter to set this value on application startup.
 
-The `APP_PATHS` and `APP_NI_PATHS` properties are not populated by default and are omitted for most applications.
+The `APP_PATHS` property is not populated by default and is omitted for most applications.
 
 The list of all *\*.deps.json* files used by the application can be accessed via `System.AppContext.GetData("APP_CONTEXT_DEPS_FILES")`.
 
@@ -57,7 +55,6 @@ The .NET Core runtime host will output useful trace messages when certain enviro
 When probing to locate a managed assembly, the <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType> looks in order at:
 
 - Files matching the <xref:System.Reflection.AssemblyName.Name?displayProperty=nameWithType> in `TRUSTED_PLATFORM_ASSEMBLIES` (after removing file extensions).
-- Native image assembly files in `APP_NI_PATHS` with common file extensions.
 - Assembly files in `APP_PATHS` with common file extensions.
 
 ## Satellite (resource) assembly probing

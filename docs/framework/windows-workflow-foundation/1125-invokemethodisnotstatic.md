@@ -6,10 +6,10 @@ ms.assetid: ea2b3827-63da-497b-b2c3-d5cebefe57a1
 ---
 # 1125 - InvokeMethodIsNotStatic
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1125|  
 |Keywords|WFRuntime|  
 |Level|Information|  

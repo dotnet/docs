@@ -6,10 +6,10 @@ ms.assetid: a74173b3-13e8-41b0-9753-8eaef9b71b90
 ---
 # 3365 - SharedListenerProxyRegisterStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3365|  
 |Keywords|ActivationServices|  
 |Level|Verbose|  

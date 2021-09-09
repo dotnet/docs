@@ -101,7 +101,7 @@ To learn how to migrate databases by using Azure Database Migration Service, see
 
 - **Choose a cloud SQL Server option: Azure SQL Database (PaaS) or SQL Server on Azure VM (IaaS)**
 
-    <https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas>
+    [https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas](/azure/sql-database/sql-database-paas-vs-sql-server-iaas)
 
 - **Get to the cloud faster with Azure SQL DB Managed Instance and Database Migration Service**
 
@@ -109,7 +109,7 @@ To learn how to migrate databases by using Azure Database Migration Service, see
 
 - **SQL Server database migration to SQL Database in the cloud**
 
-    <https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate>
+    [https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate](/azure/sql-database/sql-database-cloud-migrate)
 
 - **Azure SQL Database**
 

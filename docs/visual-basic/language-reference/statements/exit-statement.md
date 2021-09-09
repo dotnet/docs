@@ -62,19 +62,19 @@ Exit { Do | For | Function | Property | Select | Sub | Try | While }
 
 Do not confuse `Exit` statements with `End` statements. `Exit` does not define the end of a statement.
 
-## Example
+## Example 1
 
 In the following example, the loop condition stops the loop when the `index` variable is greater than 100. The `If` statement in the loop, however, causes the `Exit Do` statement to stop the loop when the index variable is greater than 10.
 
 [!code-vb[VbVbalrStatements#133](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class10.vb#133)]
 
-## Example
+## Example 2
 
 The following example assigns the return value to the function name `myFunction`, and then uses `Exit Function` to return from the function:
 
 [!code-vb[VbVbalrStatements#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#23)]
 
-## Example
+## Example 3
 
 The following example uses the [Return Statement](return-statement.md) to assign the return value and exit the function:
 

@@ -18,7 +18,7 @@ The links on this page provide details on the interactions between COM and .NET 
 
 ## Related sections
 
-| | |
+| Article | Description |
 |---------|---------|
 | [COM Interop](index.md) | Provides links to topics covering COM interoperability in Visual Basic, including COM objects, ActiveX controls, Win32 DLLs, managed objects, and inheritance of COM objects. |
 | [Interoperating with Unmanaged Code](../../../framework/interop/index.md) | Briefly describes some of the interaction issues between managed and unmanaged code, and provides links for further study. |

@@ -44,7 +44,7 @@ You can use EventPipe to trace your .NET application in many ways:
 
 * Use one of the [diagnostics tools](#tools-that-use-eventpipe) that are built on top of EventPipe.
 
-* Use [Microsoft.Diagnostics.NETCore.Client](https://github.com/dotnet/diagnostics/blob/main/documentation/diagnostics-client-library-instructions.md) library to write your own tool to configure and start EventPipe sessions yourself.
+* Use [Microsoft.Diagnostics.NETCore.Client](diagnostics-client-library.md) library to write your own tool to configure and start EventPipe sessions.
 
 * Use [environment variables](#trace-using-environment-variables) to start EventPipe.
 
@@ -64,13 +64,16 @@ This is the easiest way to use EventPipe to trace your application. To learn mor
 
 ## Trace using environment variables
 
-The preferred mechanism for using EventPipe is to use `dotnet-trace` or the `Microsoft.Diagnostics.NETCore.Client` library.
+The preferred mechanism for using EventPipe is to use [`dotnet-trace`](dotnet-trace.md) or the [`Microsoft.Diagnostics.NETCore.Client`](diagnostics-client-library.md) library.
 
 However, you can use the following environment variables to set up an EventPipe session on an app and have it write the trace directly to a file. To stop tracing, exit the application.
 
 * `DOTNET_EnableEventPipe`: Set this to `1` to start an EventPipe session that writes directly to a file. The default value is `0`.
 
 * `DOTNET_EventPipeOutputPath`: The path to the output EventPipe trace file when it's configured to run via `DOTNET_EnableEventPipe`. The default value is `trace.nettrace`, which will be created in the same directory that the app is running from.
+
+  > [!NOTE]
+  > Since .NET 6, instances of the string `{pid}` in `DOTNET_EventPipeOutputPath` are replaced with the process id of the process being traced.
 
 * `DOTNET_EventPipeCircularMB`: A hexadecimal value that represents the size of EventPipe's internal buffer in megabytes. This configuration value is only used when EventPipe is configured to run via `DOTNET_EnableEventPipe`. The default buffer size is 1024MB which translates to this environment variable being set to `400`, since `0x400` == `1024`.
 

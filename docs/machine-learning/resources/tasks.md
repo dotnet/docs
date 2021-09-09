@@ -1,7 +1,7 @@
 ---
 title: Machine learning tasks
 description: Explore the different machine learning tasks and associated tasks that are supported in ML.NET.
-ms.date: 12/23/2019
+ms.date: 07/01/2021
 ---
 # Machine learning tasks in ML.NET
 
@@ -59,7 +59,7 @@ These trainers output the following columns:
 
 A [supervised machine learning](glossary.md#supervised-machine-learning) task that is used to predict the class (category) of an instance of data. The input of a classification algorithm is a set of labeled examples. Each label normally starts as text. It is then run through the TermTransform, which converts it to the Key (numeric) type. The output of a classification algorithm is a classifier, which you can use to predict the class of new unlabeled instances. Examples of multi-class classification scenarios include:
 
-* Determining the breed of a dog as a "Siberian Husky", "Golden Retriever", "Poodle", etc.
+* Categorizing flights as "early", "on time", or "late".
 * Understanding movie reviews as "positive", "neutral", or "negative".
 * Categorizing hotel reviews as "location", "price", "cleanliness", etc.
 
@@ -79,7 +79,6 @@ You can train a multiclass classification model using the following training alg
 * <xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer>
 * <xref:Microsoft.ML.Trainers.OneVersusAllTrainer>
 * <xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer>
-* <xref:Microsoft.ML.Vision.ImageClassificationTrainer>
 
 ### Multiclass classification inputs and outputs
 
@@ -230,3 +229,39 @@ The forecasting task use past time-series data to make predictions about future 
 You can train a forecasting model with the following algorithm:
 
 <xref:Microsoft.ML.TimeSeriesCatalog.ForecastBySsa%2A>
+
+## Image Classification
+
+A [supervised machine learning](glossary.md#supervised-machine-learning) task that is used to predict the class (category) of an image. The input is a set of labeled examples. Each label normally starts as text. It is then run through the TermTransform, which converts it to the Key (numeric) type. The output of the image classification algorithm is a classifier, which you can use to predict the class of new images. The image classification task is a type of multiclass classification. Examples of image classification scenarios include:
+
+* Determining the breed of a dog as a "Siberian Husky", "Golden Retriever", "Poodle", etc.
+* Determining if a manufacturing product is defective or not.
+* Determining what types of flowers as "Rose", "Sunflower", etc.
+
+### Image classification trainers
+
+You can train an image classification model using the following training algorithms:
+
+* <xref:Microsoft.ML.Vision.ImageClassificationTrainer>
+
+### Image classification inputs and outputs
+
+The input label column data must be [key](xref:Microsoft.ML.Data.KeyDataViewType) type.
+The feature column must be a variable-sized vector of <xref:System.Byte>.
+
+This trainer outputs the following columns:
+
+| Output Name | Type | Description|
+| -- | -- | -- |
+| `Score` | <xref:System.Single> | The scores of all classes.Higher value means higher probability to fall into the associated class. If the i-th element has the largest value, the predicted label index would be i.Note that i is zero-based index. |
+| `PredictedLabel` | [Key](xref:Microsoft.ML.Data.KeyDataViewType) type | The predicted label's index. If its value is i, the actual label would be the i-th category in the key-valued input label type. |
+
+## Object Detection
+
+A [supervised machine learning](glossary.md#supervised-machine-learning) task that is used to predict the class (category) of an image but also gives a bounding box to where that category is within the image. Instead of classifying a single object in an image, object detection can detect multiple objects within an image. Examples of object detection include:
+
+* Detecting cars, signs, or people on images of a road.
+* Detecting defects on images of products.
+* Detecting areas of concern on X-Ray images.
+
+Object detection model training is currently only available in [Model Builder](../automate-training-with-model-builder.md) using Azure Machine Learning.

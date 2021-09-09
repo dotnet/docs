@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
@@ -79,7 +80,7 @@ namespace SystemTextJsonSamples
         public int TemperatureCelsius { get; set; }
         public string Summary { get; set; }
         [JsonExtensionData]
-        public Dictionary<string, object> ExtensionData { get; set; }
+        public Dictionary<string, JsonElement> ExtensionData { get; set; }
     }
     // </WFWithExtensionData>
 
@@ -265,7 +266,7 @@ namespace SystemTextJsonSamples
             Console.WriteLine($"ExtensionData:");
             if (wf.ExtensionData != null)
             {
-                foreach (KeyValuePair<string, object> kvp in wf.ExtensionData)
+                foreach (KeyValuePair<string, JsonElement> kvp in wf.ExtensionData)
                 {
                     Console.WriteLine($"  {kvp.Key} {kvp.Value}");
                 }

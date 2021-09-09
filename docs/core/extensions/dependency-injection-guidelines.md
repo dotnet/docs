@@ -139,6 +139,7 @@ The following third-party containers can be used with ASP.NET Core apps:
 - [Lamar](https://jasperfx.github.io/lamar/)
 - [Stashbox](https://github.com/z4kn4fein/stashbox-extensions-dependencyinjection)
 - [Unity](https://www.nuget.org/packages/Unity.Microsoft.DependencyInjection)
+- [Simple Injector](https://docs.simpleinjector.org/en/latest/aspnetintegration.html)
 
 ## Thread safety
 
@@ -195,7 +196,7 @@ When you're running this anti-pattern and the deadlock occurs, you can view the 
 
 ### Captive dependency
 
-The term ["captive dependency"](https://blog.ploeh.dk/2014/06/02/captive-dependency) was coined by [Mark Seeman](https://blog.ploeh.dk/about), and refers to the misconfiguration of service lifetimes, where a longer-lived service holds a shorter-lived service captive.
+The term ["captive dependency"](https://blog.ploeh.dk/2014/06/02/captive-dependency) was coined by [Mark Seemann](https://blog.ploeh.dk/about), and refers to the misconfiguration of service lifetimes, where a longer-lived service holds a shorter-lived service captive.
 
 :::code language="csharp" source="snippets/configuration/di-anti-patterns/Program.cs" range="55-65":::
 

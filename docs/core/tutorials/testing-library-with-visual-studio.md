@@ -30,7 +30,7 @@ Unit tests provide automated software testing during your development and publis
 
    1. On the **Add a new project** page, enter **mstest** in the search box. Choose **C#** or **Visual Basic** from the Language list, and then choose **All platforms** from the Platform list.
 
-   1. Choose the **Unit Test Project** template, and then choose **Next**.
+   1. Choose the **MSTest Test Project** template, and then choose **Next**.
 
    1. On the **Configure your new project** page, enter **StringLibraryTest** in the **Project name** box. Then choose **Next**.
 

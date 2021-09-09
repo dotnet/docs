@@ -1,11 +1,11 @@
 ---
-title: Casting and Conversions
-description: Learn how the F# programming language provides conversion operators for arithmetic conversions between various primitive types.
+title: Casting and conversions
+description: Learn how the F# programming language provides operators for arithmetic conversions between various primitive types.
 ms.date: 02/20/2020
 ---
-# Casting and Conversions (F#)
+# Casting and conversions (F#)
 
-This topic describes support for type conversions in F#.
+This article describes support for type conversions in F#.
 
 ## Arithmetic Types
 
@@ -94,19 +94,9 @@ The following code illustrates the use of the `:>` and `:?>` operators. The code
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4403.fs)]
 
-Because generic operators `downcast` and `upcast` rely on type inference to determine the argument and return type, in the above code, you can replace
+Because the generic operators `downcast` and `upcast` rely on type inference to determine the argument and return type, you can replace `let base1 = d1 :> Base1` in the previous code example with `let base1: Base1 = upcast d1`.
 
-```fsharp
-let base1 = d1 :> Base1
-```
-
-with
-
-```fsharp
-let base1: Base1 = upcast d1
-```
-
-Note that a type annotation is required, since `upcast` by itself could not determine the base class.
+A type annotation is required, because `upcast` by itself could not determine the base class.
 
 ## See also
 

@@ -24,7 +24,7 @@ This section provides reference information for [!INCLUDE[vbtecdlinq](../../../.
  [External Mapping](external-mapping.md)  
  Describes the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] external-mapping approach to mapping a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] object model to a SQL Server database. Provides the XSD schema definition for mapping files.  
   
- [Frequently Asked Questions](frequently-asked-questions.md)  
+ [Frequently Asked Questions](frequently-asked-questions.yml)  
  Provides answers to common questions regarding [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
  [SQL Server Compact and LINQ to SQL](sql-server-compact-and-linq-to-sql.md)  

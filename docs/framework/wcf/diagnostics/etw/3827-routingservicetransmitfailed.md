@@ -6,10 +6,10 @@ ms.assetid: 92e94472-e91e-4c9c-81b1-b5bb11655c04
 ---
 # 3827 - RoutingServiceTransmitFailed
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3827|  
 |Keywords|RoutingServices|  
 |Level|Warning|  

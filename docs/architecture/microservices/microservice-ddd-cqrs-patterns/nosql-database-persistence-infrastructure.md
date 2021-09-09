@@ -1,7 +1,7 @@
 ---
 title: Using NoSQL databases as a persistence infrastructure
 description: Understand the use of NoSql databases in general, and Azure Cosmos DB in particular, as an option to implement persistence.
-ms.date: 01/13/2021
+ms.date: 06/23/2021
 ---
 # Use NoSQL databases as a persistence infrastructure
 
@@ -282,7 +282,7 @@ The following code shows the `.env` file with the Azure Cosmos DB connection str
 # .env file, in eShopOnContainers root folder
 # Other Docker environment variables
 
-ESHOP_EXTERNAL_DNS_NAME_OR_IP=localhost
+ESHOP_EXTERNAL_DNS_NAME_OR_IP=host.docker.internal
 ESHOP_PROD_EXTERNAL_DNS_NAME_OR_IP=<YourDockerHostIP>
 
 #ESHOP_AZURE_COSMOSDB=<YourAzureCosmosDBConnData>
@@ -309,22 +309,22 @@ services:
 #### Additional resources
 
 - **Modeling document data for NoSQL databases** \
-  <https://docs.microsoft.com/azure/cosmos-db/modeling-data>
+  [https://docs.microsoft.com/azure/cosmos-db/modeling-data](/azure/cosmos-db/modeling-data)
 
 - **Vaughn Vernon. The Ideal Domain-Driven Design Aggregate Store?** \
   <https://kalele.io/blog-posts/the-ideal-domain-driven-design-aggregate-store/>
 
 - **Introduction to Azure Cosmos DB: API for MongoDB**  \
-  <https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction>
+  [https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction](/azure/cosmos-db/mongodb-introduction)
 
 - **Azure Cosmos DB: Build a MongoDB API web app with .NET and the Azure portal**  \
-  <https://docs.microsoft.com/azure/cosmos-db/create-mongodb-dotnet>
+  [https://docs.microsoft.com/azure/cosmos-db/create-mongodb-dotnet](/azure/cosmos-db/create-mongodb-dotnet)
 
 - **Use the Azure Cosmos DB Emulator for local development and testing**  \
-  <https://docs.microsoft.com/azure/cosmos-db/local-emulator>
+  [https://docs.microsoft.com/azure/cosmos-db/local-emulator](/azure/cosmos-db/local-emulator)
 
 - **Connect a MongoDB application to Azure Cosmos DB**  \
-  <https://docs.microsoft.com/azure/cosmos-db/connect-mongodb-account>
+  [https://docs.microsoft.com/azure/cosmos-db/connect-mongodb-account](/azure/cosmos-db/connect-mongodb-account)
 
 - **The Cosmos DB Emulator Docker image (Windows Container)**  \
   <https://hub.docker.com/r/microsoft/azure-cosmosdb-emulator/>
@@ -333,7 +333,7 @@ services:
   <https://hub.docker.com/_/mongo/>
 
 - **Use MongoChef (Studio 3T) with an Azure Cosmos DB: API for MongoDB account**  \
-  <https://docs.microsoft.com/azure/cosmos-db/mongodb-mongochef>
+  [https://docs.microsoft.com/azure/cosmos-db/mongodb-mongochef](/azure/cosmos-db/mongodb-mongochef)
 
 >[!div class="step-by-step"]
 >[Previous](infrastructure-persistence-layer-implementation-entity-framework-core.md)

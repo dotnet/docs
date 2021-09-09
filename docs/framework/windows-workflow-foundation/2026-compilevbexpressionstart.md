@@ -6,10 +6,10 @@ ms.assetid: daad57eb-8198-49b5-9920-aa0e7428ccf1
 ---
 # 2026 - CompileVbExpressionStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|2026|  
 |Keywords|WFRuntime|  
 |Level|Verbose|  

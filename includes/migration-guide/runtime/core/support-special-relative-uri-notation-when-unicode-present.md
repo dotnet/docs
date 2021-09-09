@@ -2,17 +2,27 @@
 
 #### Details
 
-<xref:System.Uri> will no longer throw a <xref:System.NullReferenceException> when calling <xref:System.Uri.TryCreate%2A> on certain relative URIs containing Unicode. The simplest reproduction of the <xref:System.NullReferenceException> is below, with the two statements being equivalent:<pre><code class="lang-csharp">bool success = Uri.TryCreate(&quot;http:%C3%A8&quot;, UriKind.RelativeOrAbsolute, out Uri href);&#13;&#10;bool success = Uri.TryCreate(&quot;http:&#232;&quot;, UriKind.RelativeOrAbsolute, out Uri href);&#13;&#10;</code></pre>To reproduce the <xref:System.NullReferenceException>, the following items must be true:<ul><li>The URI must be specified as relative by prepending it with ‘http:’ and not following it with ‘//’.</li><li>The URI must contain percent-encoded Unicode or unreserved symbols.</li></ul>
+<xref:System.Uri> will no longer throw a <xref:System.NullReferenceException> when calling <xref:System.Uri.TryCreate%2A> on certain relative URIs containing Unicode. The simplest reproduction of the <xref:System.NullReferenceException> is below, with the two statements being equivalent:
+
+```csharp
+bool success = Uri.TryCreate("http:%C3%A8", UriKind.RelativeOrAbsolute, out Uri href);
+bool success = Uri.TryCreate("http:è", UriKind.RelativeOrAbsolute, out Uri href);
+```
+
+To reproduce the <xref:System.NullReferenceException>, the following items must be true:
+
+- The URI must be specified as relative by prepending it with 'http:' and not following it with '//'.
+- The URI must contain percent-encoded Unicode or unreserved symbols.
 
 #### Suggestion
 
 Users depending on this behavior to disallow relative URIs should instead specify <xref:System.UriKind.Absolute?displayProperty=nameWithType> when creating a URI.
 
-| Name    | Value       |
-|:--------|:------------|
-| Scope   |Edge|
-|Version|4.7.2|
-|Type|Runtime|
+| Name    | Value   |
+| :------ | :------ |
+| Scope   | Edge    |
+| Version | 4.7.2   |
+| Type    | Runtime |
 
 #### Affected APIs
 

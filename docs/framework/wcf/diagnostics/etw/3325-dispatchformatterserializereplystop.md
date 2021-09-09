@@ -6,10 +6,10 @@ ms.assetid: c96ffb5f-24e2-4c54-92ba-66277b1cea91
 ---
 # 3325 - DispatchFormatterSerializeReplyStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3325|  
 |Keywords|ServiceModel|  
 |Level|Verbose|  

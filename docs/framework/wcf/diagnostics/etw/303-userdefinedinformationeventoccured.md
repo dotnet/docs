@@ -6,10 +6,10 @@ ms.assetid: 5ed5acaf-3755-4417-92c4-4ebc8e854ca1
 ---
 # 303 - UserDefinedInformationEventOccured
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|303|  
 |Keywords|Troubleshooting, HealthMonitoring, UserEvents, ServiceModel, EndToEndMonitoring|  
 |Level|Information|  

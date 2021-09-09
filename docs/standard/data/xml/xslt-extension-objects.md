@@ -17,7 +17,7 @@ Extension objects are used to extend the functionality of style sheets. Extensio
  XSLT extension objects are added to the <xref:System.Xml.Xsl.XsltArgumentList> object using the <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A> method. A qualified name and namespace URI are associated with the extension object at that time.  
   
 > [!NOTE]
-> The FullTrust permission set is required to call the <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A> method. For more information, see [Code Access Security](../../../framework/misc/code-access-security.md) and [Named Permission Sets](/previous-versions/dotnet/netframework-4.0/4652tyx7(v=vs.100)).  
+> The FullTrust permission set is required to call the <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A> method. For more information, see [Code Access Security](/previous-versions/dotnet/framework/code-access-security/code-access-security) and [Named Permission Sets](/previous-versions/dotnet/netframework-4.0/4652tyx7(v=vs.100)).  
   
  The data types returned from extension objects are one of the four basic XPath data types of `number`, `string`, `Boolean`, and `node set`.  
   

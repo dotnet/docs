@@ -33,7 +33,7 @@ Install the .NET Upgrade Assistant with the following command (after installing 
 dotnet tool install -g upgrade-assistant
 ```
 
-Run the tool with the command `upgrade-assistant <project>` in the folder where the project file is located.
+Run the tool with the command `upgrade-assistant upgrade <project>` in the folder where the project file is located.
 
 ## Update NuGet package dependencies
 

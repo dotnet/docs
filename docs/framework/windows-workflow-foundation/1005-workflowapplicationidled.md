@@ -6,10 +6,10 @@ ms.assetid: 74d77dfa-f20d-4fe9-a6ae-e6d1b5fe4182
 ---
 # 1005 - WorkflowApplicationIdled
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1005|  
 |Keywords|WFRuntime|  
 |Level|Information|  

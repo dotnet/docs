@@ -130,6 +130,29 @@ The certificate location will vary by distro. Here are the locations for the dis
 | **OpenSUSE** | `/etc/ssl/ca-bundle.pem`                            |
 | **Solus**    | `/etc/ssl/certs/ca-certificates.crt`                |
 
+## Troubles resolving dotnet
+
+It's common for other apps, such as the OmniSharp extension for Visual Studio Code, to try to resolve the location of the .NET SDK. Typically, this is done by figuring out where the `dotnet` executable is located. A snap-installed .NET SDK may confuse these apps. When these apps can't resolve the .NET SDK, you'll see an error similar to one of the following messages:
+
+- The SDK 'Microsoft.NET.Sdk' specified could not be found
+- The SDK 'Microsoft.NET.Sdk.Web' specified could not be found
+- The SDK 'Microsoft.NET.Sdk.Razor' specified could not be found
+
+To fix this problem, symlink the snap `dotnet` executable to the location that the program is looking for. Two common paths the `dotnet` command is looking for are `/usr/local/bin/dotnet` and `/usr/share/dotnet`. For example, to link the current .NET SDK snap package, use the following command:
+
+```bash
+ln -s /snap/dotnet-sdk/current/dotnet /usr/local/bin/dotnet
+```
+
+You can also review these GitHub issues for information about these problems:
+
+- [SDK resolver doesn't work with snap installations of SDK on Linux](https://github.com/dotnet/sdk/issues/10403)
+- [It wasn't possible to find any installed .NET SDKs](https://github.com/OmniSharp/omnisharp-vscode/issues/4409)
+
+### The dotnet alias
+
+It's possible that if you created the `dotnet` alias for the snap-installed .NET, you'll have a conflict. Use the `snap unalias dotnet` command to remove it, and then add a different alias if you want.
+
 ## Next steps
 
 - [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)

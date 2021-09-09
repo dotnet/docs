@@ -54,13 +54,13 @@ You can perform an implicit join to combine collections without the `Join` claus
 
 You can use the `Group Join` clause to combine collections into a single hierarchical collection. This is like a `LEFT OUTER JOIN` in SQL.
 
-## Example
+## Example 1
 
 The following code example performs an implicit join to combine a list of customers with their orders.
 
 [!code-vb[VbSimpleQuerySamples#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#13)]
 
-## Example
+## Example 2
 
 The following code example joins two collections by using the `Join` clause.
 
@@ -74,7 +74,7 @@ This example will produce output similar to the following:
 
 `cmd (5136), Command Window`
 
-## Example
+## Example 3
 
 The following code example joins two collections by using the `Join` clause with two key columns.
 

@@ -1,6 +1,6 @@
 ---
-title: How to preserve references with System.Text.Json
-description: "Learn how to preserve references and handle circular references while serializing to and deserializing from JSON in .NET."
+title: How to preserve references in System.Text.Json
+description: "Learn how to preserve references and handle or ignore circular references while using System.Text.Json to serialize and deserialize JSON in .NET."
 ms.date: 01/12/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
@@ -15,9 +15,13 @@ helpviewer_keywords:
 ms.topic: how-to
 ---
 
-# How to preserve references and handle circular references with System.Text.Json
+# How to preserve references and handle or ignore circular references in System.Text.Json
 
-::: zone pivot="dotnet-5-0"
+This article shows how to preserve references and handle or ignore circular references while using System.Text.Json to serialize and deserialize JSON in .NET
+
+## Preserve references and handle circular references
+
+::: zone pivot="dotnet-5-0,dotnet-6-0"
 
 To preserve references and handle circular references, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A> to <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>. This setting causes the following behavior:
 
@@ -44,7 +48,7 @@ For more information about how references are serialized and deserialized, see <
 
 The <xref:System.Text.Json.Serialization.ReferenceResolver> class defines the behavior of preserving references on serialization and deserialization. Create a derived class to specify custom behavior. For an example, see [GuidReferenceResolver](https://github.com/dotnet/docs/blob/9d5e88edbd7f12be463775ffebbf07ac8415fe18/docs/standard/serialization/snippets/system-text-json-how-to-5-0/csharp/GuidReferenceResolverExample.cs).
 
-## Persist reference metadata across multiple serialization and deserialization calls
+### Persist reference metadata across multiple serialization and deserialization calls
 
 By default, reference data is only cached for each call to <xref:System.Text.Json.JsonSerializer.Serialize%2A> or <xref:System.Text.Json.JsonSerializer.Deserialize%2A>. To persist references from one `Serialize`/`Deserialize` call to another one, root the <xref:System.Text.Json.Serialization.ReferenceResolver> instance in the call site of `Serialize`/`Deserialize`. The following code shows an example for this scenario:
 
@@ -73,6 +77,31 @@ When the sample code calls the serializer, it uses a <xref:System.Text.Json.Json
 System.Text.Json in .NET Core 3.1 only supports serialization by value and throws an exception for circular references.
 ::: zone-end
 
+## Ignore circular references
+
+::: zone pivot="dotnet-6-0"
+
+Instead of handling circular references, you can ignore them. To ignore circular references, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A> to <xref:System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles%2A>. The serializer sets circular reference properties to `null`, as shown in the following example:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-6-0/csharp/SerializeIgnoreCycles.cs" highlight="34,61":::
+
+In the preceding example, `Manager` under `Adrian King` is serialized as `null` to avoid the circular reference. This behavior has the following advantages over <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A?displayProperty=nameWithType>:
+
+* It decreases payload size.
+* It creates JSON that is comprehensible for serializers other than System.Text.Json and Newtonsoft.Json.
+
+This behavior has the following disadvantages:
+
+* Silent loss of data.
+* Data can't make a round trip from JSON back to the source object.
+
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1,dotnet-5-0"
+System.Text.Json in .NET 5 and earlier doesn't support <xref:System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles?displayProperty=nameWithType>.
+
+::: zone-end
+
 ## See also
 
 * [System.Text.Json overview](system-text-json-overview.md)
@@ -82,13 +111,15 @@ System.Text.Json in .NET Core 3.1 only supports serialization by value and throw
 * [Customize property names and values](system-text-json-customize-properties.md)
 * [Ignore properties](system-text-json-ignore-properties.md)
 * [Allow invalid JSON](system-text-json-invalid-json.md)
-* [Handle overflow JSON](system-text-json-handle-overflow.md)
-* [Immutable types and non-public accessors](system-text-json-immutability.md)
+* [Handle overflow JSON or use JsonElement or JsonNode](system-text-json-handle-overflow.md)
+* [Deserialize to immutable types and non-public accessors](system-text-json-immutability.md)
 * [Polymorphic serialization](system-text-json-polymorphism.md)
 * [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
 * [Customize character encoding](system-text-json-character-encoding.md)
-* [Use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
+* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md)
 * [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
+* [How to use source generation](system-text-json-source-generation.md)
+* [Supported collection types](system-text-json-supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

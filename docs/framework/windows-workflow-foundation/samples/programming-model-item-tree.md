@@ -6,7 +6,7 @@ ms.assetid: 0229efde-19ac-4bdc-a187-c6227a7bd1a5
 ---
 # Programming Model Item Tree
 
-This sample demonstrates how to navigate the <xref:System.Activities.Presentation.Model.ModelItem> tree using declarative data binding from the Windows Presentation Foundation (WPF) Tree View.
+The [ProgrammingModelItemTree sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/basic/Designer/ProgrammingModelItemTree/cs) demonstrates how to navigate the <xref:System.Activities.Presentation.Model.ModelItem> tree using declarative data binding from the Windows Presentation Foundation (WPF) Tree View.
 
 ## Sample Details
 
@@ -24,9 +24,9 @@ ModelItem justAdded = mp.Collection.Last();
 justAdded.Properties["DisplayName"].SetValue("new name");
 ```
 
-#### To use this sample
+## To use this sample
 
-1. Open the ProgrammingModelItemTree.sln solution in Visual Studio 2010.
+1. Open the ProgrammingModelItemTree.sln solution in Visual Studio.
 
 2. Build the solution by selecting **Build Solution** from the **Build** menu.
 
@@ -36,15 +36,6 @@ justAdded.Properties["DisplayName"].SetValue("new name");
 
 5. Clicking the **Change Model Item Tree** button executes the preceding code to add an item into the tree and set a property.
 
-> [!IMPORTANT]
-> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
->
-> `<InstallDrive>:\WF_WCF_Samples`  
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->
-> `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Designer\ProgrammingModelItemTree`  
-  
 ## See also
 
 - <xref:System.Windows.Data.IValueConverter>

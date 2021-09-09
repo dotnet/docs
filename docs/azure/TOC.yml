@@ -94,12 +94,16 @@
     - name: Dependency injection
       href: ./sdk/dependency-injection.md
     - name: Thread safety
-      href: ./sdk/thread-safety.md      
+      href: ./sdk/thread-safety.md
     - name: Logging
       href: ./sdk/logging.md
-    - name: Configuring a proxy server
+    - name: Pagination
+      href: ./sdk/pagination.md
+    - name: Configure a proxy server
       href: ./sdk/azure-sdk-configure-proxy.md
-    - name: Package List
+    - name: Resource management
+      href: ./sdk/resource-management.md
+    - name: Packages list
       href: ./sdk/packages.md
     - name: SDK example
       href: /samples/dotnet/samples/azure-identity-resource-management-storage/

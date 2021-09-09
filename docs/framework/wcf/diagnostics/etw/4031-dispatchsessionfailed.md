@@ -6,10 +6,10 @@ ms.assetid: c9fe9959-aeac-4446-a488-7c7c94c92cef
 ---
 # 4031 - DispatchSessionFailed
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|4031|  
 |Keywords|ActivationServices|  
 |Level|Error|  

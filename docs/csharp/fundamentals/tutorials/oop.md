@@ -177,7 +177,7 @@ Run the program, and check the results.
 
 ## Summary
 
-If you got stuck, you can see the source for this tutorial [in our GitHub repo](https://github.com/dotnet/docs/tree/main/docs/csharp/tutorials/intro-to-csharp/snippets/object-oriented-programming).
+If you got stuck, you can see the source for this tutorial [in our GitHub repo](https://github.com/dotnet/docs/tree/main/docs/csharp/fundamentals/object-oriented/snippets/objects).
 
 This tutorial demonstrated many of the techniques used in Object-Oriented programming:
 

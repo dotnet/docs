@@ -30,7 +30,7 @@ gRPC uses HTTP/2 for its transport protocol. While compatible with HTTP 1.1, HTT
 - Built-in streaming enabling requests and responses to asynchronously stream large data sets.
 - Header compression that reduces network usage.
 
-gRPC is lightweight and highly performant. It can be up to 8x faster than JSON serialization with messages 60-80% smaller. In Microsoft [Windows Communication Foundation (WCF)](../../framework/wcf/whats-wcf.md) parlance, gRPC performance exceeds the speed and efficiency of the highly optimized [NetTCP bindings](/dotnet/api/system.servicemodel.nettcpbinding?view=netframework-4.8). Unlike NetTCP, which favors the Microsoft stack, gRPC is cross-platform.
+gRPC is lightweight and highly performant. It can be up to 8x faster than JSON serialization with messages 60-80% smaller. In Microsoft [Windows Communication Foundation (WCF)](../../framework/wcf/whats-wcf.md) parlance, gRPC performance exceeds the speed and efficiency of the highly optimized [NetTCP bindings](/dotnet/api/system.servicemodel.nettcpbinding?view=netframework-4.8&preserve-view=true). Unlike NetTCP, which favors the Microsoft stack, gRPC is cross-platform.
 
 ## Protocol Buffers
 

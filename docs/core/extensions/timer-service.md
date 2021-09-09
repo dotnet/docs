@@ -3,7 +3,7 @@ title: Implement the IHostedService interface
 description: Learn how to implement a custom IHostedService interface with .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/26/2021
+ms.date: 08/30/2021
 ms.topic: tutorial
 ---
 
@@ -18,6 +18,8 @@ In this tutorial, you learn how to:
 > - Implement the <xref:Microsoft.Extensions.Hosting.IHostedService>, and <xref:System.IAsyncDisposable> interfaces.
 > - Create a timer-based service.
 > - Register the custom implemenation with dependency injection and logging.
+
+[!INCLUDE [workers-samples-browser](includes/workers-samples-browser.md)]
 
 ## Prerequisites
 

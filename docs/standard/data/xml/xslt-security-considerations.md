@@ -59,4 +59,4 @@ The XSLT language has a rich set of features that give you a great deal of power
 
 - [XSLT Transformations](xslt-transformations.md)
 - [Resolving External Resources During XSLT Processing](resolving-external-resources-during-xslt-processing.md)
-- [Code Access Security](../../../framework/misc/code-access-security.md)
+- [Code Access Security](/previous-versions/dotnet/framework/code-access-security/code-access-security)

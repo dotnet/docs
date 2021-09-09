@@ -1,7 +1,7 @@
 ---
 title: "Patterns - C# reference"
 description: "Learn about the patterns supported by C# pattern matching expressions and statements."
-ms.date: 04/05/2021
+ms.date: 08/23/2021
 f1_keywords: 
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
@@ -17,7 +17,7 @@ helpviewer_keywords:
 C# introduced pattern matching in C# 7.0. Since then, each major C# version extends pattern matching capabilities. The following C# expressions and statements support pattern matching:
 
 - [`is` expression](is.md)
-- `switch` [statement](../keywords/switch.md)
+- `switch` [statement](../statements/selection-statements.md#the-switch-statement)
 - `switch` [expression](switch-expression.md) (introduced in C# 8.0)
 
 In those constructs, you can match an input expression against any of the following patterns:
@@ -160,7 +160,11 @@ A property pattern is a recursive pattern. That is, you can use any pattern as a
 
 The preceding example uses two features available in C# 9.0 and later: `or` [pattern combinator](#logical-patterns) and [record types](../builtin-types/record.md).
 
-For more information, see the [Property pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#property-pattern) section of the feature proposal note.
+Beginning with C# 10.0, you can reference nested properties or fields within a property pattern. For example, you can refactor the method from the preceding example into the following equivalent code:
+
+:::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="ExtendedPropertyPattern":::
+
+For more information, see the [Property pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#property-pattern) section of the feature proposal note and the [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md) feature proposal note.
 
 ## Positional pattern
 
@@ -239,6 +243,7 @@ For more information, see the following feature proposal notes:
 - [Pattern matching for C# 7.0](~/_csharplang/proposals/csharp-7.0/pattern-matching.md)
 - [Recursive pattern matching (introduced in C# 8.0)](~/_csharplang/proposals/csharp-8.0/patterns.md)
 - [Pattern-matching changes for C# 9.0](~/_csharplang/proposals/csharp-9.0/patterns3.md)
+- [Extended property patterns (C# 10.0)](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
 
 ## See also
 

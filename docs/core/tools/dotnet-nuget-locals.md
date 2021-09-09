@@ -37,13 +37,13 @@ The `dotnet nuget locals` command clears or lists local NuGet resources in the h
 
 ## Options
 
+<!-- markdownlint-disable MD012 -->
+
 - **`--force-english-output`**
 
   Forces the application to run using an invariant, English-based culture.
 
-- **`-h|--help`**
-
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`-c|--clear`**
 

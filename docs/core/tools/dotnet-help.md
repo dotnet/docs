@@ -29,9 +29,9 @@ The `dotnet help` command opens up the reference page for more detailed informat
 
 ## Options
 
-- **`-h|--help`**
+<!-- markdownlint-disable MD012 -->
 
-  Prints out a short help for the command.
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

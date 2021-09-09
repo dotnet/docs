@@ -44,21 +44,23 @@ The theorem states that distributed data systems will offer a trade-off between 
 
 - *Partition Tolerance.* Guarantees the system continues to operate even if a replicated data node fails or loses connectivity with other replicated data nodes.
 
+CAP theorem explains the tradeoffs associated with managing consistency and availability during a network partition; however tradeoffs with respect to consistency and performance also exist with the absence of a network partition. CAP theorem is often further extended to [PACELC](http://www.cs.umd.edu/~abadi/papers/abadi-pacelc.pdf) to explain the tradeoffs more comprehensively.
+
 Relational databases typically provide consistency and availability, but not partition tolerance. They're typically provisioned to a single server and scale vertically by adding more resources to the machine.
 
 Many relational database systems support built-in replication features where copies of the primary database can be made to other secondary server instances. Write operations are made to the primary instance and replicated to each of the secondaries. Upon a failure, the primary instance can fail over to a secondary to provide high availability. Secondaries can also be used to distribute read operations. While writes operations always go against the primary replica, read operations can be routed to any of the secondaries to reduce system load.
 
-Data can also be horizontally partitioned across multiple nodes, such as with [sharding](/azure/sql-database/sql-database-elastic-scale-introduction). But, sharding dramatically increases operational overhead by spitting data across many pieces that cannot easily communicate. It can be costly and time consuming to manage. It can end up impacting performance, table joins, and referential integrity.
+Data can also be horizontally partitioned across multiple nodes, such as with [sharding](/azure/sql-database/sql-database-elastic-scale-introduction). But, sharding dramatically increases operational overhead by spitting data across many pieces that cannot easily communicate. It can be costly and time consuming to manage. Relational features that include table joins, transactions, and referential integrity require steep performance penalties in sharded deployments.
 
-If data replicas were to lose network connectivity in a "highly consistent" relational database cluster, you wouldn't be able to write to the database. The system would reject the write operation as it can't replicate that change to the other data replica. Every data replica has to update before the transaction can complete.
+Replication consistency and recovery point objectives can be tuned by configuring whether replication occurs synchronously or asynchronously. If data replicas were to lose network connectivity in a "highly consistent" or synchronous relational database cluster, you wouldn't be able to write to the database. The system would reject the write operation as it can't replicate that change to the other data replica. Every data replica has to update before the transaction can complete.
 
-NoSQL databases typically support high availability and partition tolerance. They scale out horizontally, often across commodity servers. This approach provides tremendous availability, both within and across geographical regions at a reduced cost. You partition and replicate data across these machines, or nodes, providing redundancy and fault tolerance. The downside is consistency. A change to data on one NoSQL node can take some time to propagate to other nodes. Typically, a NoSQL database node will provide an immediate response to a query - even if the data that is presented is stale and hasn't updated yet.
+NoSQL databases typically support high availability and partition tolerance. They scale out horizontally, often across commodity servers. This approach provides tremendous availability, both within and across geographical regions at a reduced cost. You partition and replicate data across these machines, or nodes, providing redundancy and fault tolerance. Consistency is typically tuned through consensus protocols or quorum mechanisms. They provide more control when navigating tradeoffs between tuning synchronous versus asynchronous replication in relational systems.
 
-If data replicas were to lose connectivity in a "highly available" NoSQL database cluster, you could still complete a write operation to the database. The database cluster would allow the write operation and update each data replica as it becomes available.
+If data replicas were to lose connectivity in a "highly available" NoSQL database cluster, you could still complete a write operation to the database. The database cluster would allow the write operation and update each data replica as it becomes available. NoSQL databases that support multiple writable replicas can further strengthen high availability by avoiding the need for failover when optimizing recovery time objective.
 
-This kind of result is known as eventual consistency, a characteristic of distributed data systems where ACID transactions aren't supported. It's a brief delay between the update of a data item and time that it takes to propagate that update to each of the replica nodes. Under normal conditions, the lag is typically short, but can increase when problems arise. For example, what would happen if you were to update a product item in a NoSQL database in the United States and query that same data item from a replica node in Europe? You would receive the earlier product information, until the cluster updates the European node with the product change. By immediately returning a query result and not waiting for all replica nodes to update, you gain enormous scale and volume, but with the possibility of presenting older data.
+Modern NoSQL databases typically implement partitioning capabilities as a feature of their system design. Partition management is often built-in to the database, and routing is achieved through placement hints - often called partition keys. A flexible data models enables the NoSQL databases to lower the burden of schema management and improve availablity when deploying application updates that require data model changes.
 
-High availability and massive scalability are often more critical to the business than strong consistency. Developers can implement techniques and patterns such as Sagas, CQRS, and asynchronous messaging to embrace eventual consistency.
+High availability and massive scalability are often more critical to the business than relational table joins and referential integrity. Developers can implement techniques and patterns such as Sagas, CQRS, and asynchronous messaging to embrace eventual consistency.
 
 > Nowadays, care must be taken when considering the CAP theorem constraints. A new type of database, called NewSQL, has emerged which extends the relational database engine to support both horizontal scalability and the scalable performance of NoSQL systems.
 
@@ -68,13 +70,11 @@ Based upon specific data requirements, a cloud-native-based microservice can imp
 
 |  Consider a NoSQL datastore when: | Consider a relational database when: |
 | :-------- | :-------- |
-| You have high volume workloads that require large scale | Your workload volume is consistent and requires medium to large scale |
-| Your workloads don't require ACID guarantees |  ACID guarantees are required |
-| Your data is dynamic and frequently changes | Your data is predictable and highly structured |
-| Data can be expressed without relationships | Data is best expressed relationally |  
-| You need fast writes and write safety isn't critical | Write safety is a requirement |  
-| Data retrieval is simple and tends to be flat | You work with complex queries and reports|
-| Your data requires a wide geographic distribution | Your users are more centralized |
+| You have high volume workloads that require predictable latency at large scale (e.g. latency measured in milliseconds while performing millions of transactions per second) | Your workload volume generally fits within thousands of transactions per second |
+| Your data is dynamic and frequently changes | Your data is highly structured and requires referential integrity |
+| Relationships can be de-normalized data models | Relationships are expressed through table joins on normalized data models |  
+| Data retrieval is simple and expressed without table joins | You work with complex queries and reports|
+| Data is typically replicated across geographies and requires finer control over consistency, availablity, and performance | Data is typically centralized, or can be replicated regions asynchronously |
 | Your application will be deployed to commodity hardware, such as with public clouds | Your application will be deployed to large, high-end hardware |
 
 In the next sections, we'll explore the options available in the Azure cloud for storing and managing your cloud-native data.
@@ -159,7 +159,7 @@ If your services require fast response from anywhere in the world, high availabi
 
 ![Overview of Cosmos DB](./media/cosmos-db-overview.png)
 
-**Figure 5-12**: Overview of Cosmos DB
+**Figure 5-12**: Overview of Azure Cosmos DB
 
 The previous figure presents many of the built-in cloud-native capabilities available in Cosmos DB. In this section, we’ll take a closer look at them.
 
@@ -200,13 +200,13 @@ Development teams can migrate existing Mongo, Gremlin, or Cassandra databases in
 
 In the previous table, note the [Table API](/azure/cosmos-db/table-introduction) option. This API is an evolution of Azure Table Storage. Both share the same underlying table model, but the Cosmos DB Table API adds premium enhancements not available in the Azure Storage API. The following table contrasts the features.
 
-|  | Azure Table Storage  | Azure Cosmos DB  |
-| :-------- | :-------- |:-------- |
-| Latency | Fast | Single-digit millisecond latency for reads and writes anywhere in the world |
-| Throughput | Limit of 20,000 operations per table | 10 Million operations per table |
-| Global Distribution | Single region with optional single secondary read region | Turnkey distributions to all regions with automatic failover |
-| Indexing | Available for partition and row key properties only | Automatic indexing of all properties |
-| Pricing | Based on storage | Based on throughput |
+| Feature             | Azure Table Storage                                           | Azure Cosmos DB                                                             |
+|:--------------------|:--------------------------------------------------------------|:----------------------------------------------------------------------------|
+| Latency             | Fast                                                          | Single-digit millisecond latency for reads and writes anywhere in the world |
+| Throughput          | Limit of 20,000 operations per table                          | Unlimited operations per table                                              |
+| Global Distribution | Single region with optional single secondary read region      | Turnkey distributions to all regions with automatic failover                |
+| Indexing            | Available for partition and row key properties only           | Automatic indexing of all properties                                        |
+| Pricing             | Optimized for cold workloads (low throughput : storage ratio) | Optimizied for hot workloads (high throughput : storage ratio)              |
 
 Microservices that consume Azure Table storage can easily migrate to the Cosmos DB Table API. No code changes are required.
 
@@ -285,7 +285,7 @@ One of the more time-consuming tasks is migrating data from one data platform to
 - Azure Database for MySQL
 - Azure Database for MariaDB
 - Azure Database for PostgreSQL
-- CosmosDB
+- Azure Cosmos DB
   
 The service provides recommendations to guide you through the changes required to execute a migration, both small or large.
 

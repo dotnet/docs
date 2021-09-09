@@ -14,16 +14,16 @@ This article describes how to migrate an application that uses .NET Remoting to 
 
  This section compares the basic building blocks of .NET Remoting with their WCF equivalents. We will use these building blocks later to create some common client-server scenarios in WCF. The following chart summarizes the main similarities and differences between .NET Remoting and WCF.  
   
-||.NET Remoting|WCF|  
-|-|-------------------|---------|  
-|Server type|Subclass MarshalByRefObject|Mark with [ServiceContract] attribute|  
-|Service operations|Public methods on server type|Mark with [OperationContract] attribute|  
-|Serialization|ISerializable or [Serializable]|DataContractSerializer or XmlSerializer|  
-|Objects passed|By-value or by-reference|By-value only|  
-|Errors/exceptions|Any serializable exception|FaultContract\<TDetail>|  
-|Client proxy objects|Strongly typed transparent proxies are created automatically from MarshalByRefObjects|Strongly typed proxies are generated on-demand using ChannelFactory\<TChannel>|  
-|Platform required|Both client and server must use Microsoft OS and .NET|Cross-platform|  
-|Message format|Private|Industry standards (SOAP, WS-*, etc.)|  
+|                          | .NET Remoting                                                                         | WCF                                                                            |
+|--------------------------|---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| **Server type**          | Subclass MarshalByRefObject                                                           | Mark with [ServiceContract] attribute                                          |
+| **Service operations**   | Public methods on server type                                                         | Mark with [OperationContract] attribute                                        |
+| **Serialization**        | ISerializable or [Serializable]                                                       | DataContractSerializer or XmlSerializer                                        |
+| **Objects passed**       | By-value or by-reference                                                              | By-value only                                                                  |
+| **Errors/exceptions**    | Any serializable exception                                                            | FaultContract\<TDetail>                                                        |
+| **Client proxy objects** | Strongly typed transparent proxies are created automatically from MarshalByRefObjects | Strongly typed proxies are generated on-demand using ChannelFactory\<TChannel> |
+| **Platform required**    | Both client and server must use Microsoft OS and .NET                                 | Cross-platform                                                                 |
+| **Message format**       | Private                                                                               | Industry standards (for example, SOAP and WS-*)                                |
   
 ### Server Implementation Comparison  
   
@@ -38,7 +38,7 @@ public class RemotingServer : MarshalByRefObject
 }  
 ```  
   
- The public methods of this server type become the public contract available to clients.  There is no separation between the server’s public interface and its implementation – one type handles both.  
+ The public methods of this server type become the public contract available to clients.  There is no separation between the server's public interface and its implementation - one type handles both.  
   
  Once the server type has been defined, it can be made available to clients, like in the following example:  
   

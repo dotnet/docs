@@ -83,21 +83,21 @@ Figure 2-3 shows the execution of multiple VM migrations by using Azure Site Rec
 
     <https://aka.ms/azuremigrate>
 
-- **Azure migration center**
+- **Azure migration and modernization center**
 
     <https://azure.microsoft.com/migration/>
 
 - **Migrate to Azure with Site Recovery**
 
-    <https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-to-azure>
+    [https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-to-azure](/azure/site-recovery/site-recovery-migrate-to-azure)
 
 - **Azure Site Recovery service overview**
 
-    <https://docs.microsoft.com/azure/site-recovery/site-recovery-overview>
+    [https://docs.microsoft.com/azure/site-recovery/site-recovery-overview](/azure/site-recovery/site-recovery-overview)
 
 - **Migrating VMs in AWS to Azure VMs**
 
-    <https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-aws-to-azure>
+    [https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-aws-to-azure](/azure/site-recovery/site-recovery-migrate-aws-to-azure)
 
 >[!div class="step-by-step"]
 >[Previous](index.md)

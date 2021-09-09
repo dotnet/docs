@@ -117,6 +117,6 @@ peverify myAssembly.exe /break=100 /ignore@ignoreErrors.rsp
 ## See also
 
 - [Tools](index.md)
-- [Writing Verifiably Type-Safe Code](../misc/code-access-security-basics.md#typesafe_code)
+- [Writing Verifiably Type-Safe Code](/previous-versions/dotnet/framework/code-access-security/code-access-security-basics#typesafe_code)
 - [Type Safety and Security](../../standard/security/key-security-concepts.md#type-safety-and-security)
 - [Developer command-line shells](/visualstudio/ide/reference/command-prompt-powershell)

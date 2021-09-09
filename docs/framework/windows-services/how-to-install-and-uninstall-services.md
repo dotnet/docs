@@ -15,6 +15,8 @@ ms.assetid: c89c5169-f567-4305-9d62-db31a1de5481
 ---
 # How to: Install and uninstall Windows services
 
+[!INCLUDE [windows-service-disambiguation](../../core/extensions/includes/windows-service-disambiguation.md)]
+
 If you're developing a Windows service with .NET Framework, you can quickly install your service app by using the [*InstallUtil.exe*](../tools/installutil-exe-installer-tool.md) command-line utility or [PowerShell](/powershell/scripting/overview). Developers who want to release a Windows service that users can install and uninstall can use the free [WiX Toolset](https://wixtoolset.org/) or commercial tools like [Advanced Installer](https://www.advancedinstaller.com/), [InstallShield](https://www.revenera.com/install/products/installshield.html), and others. For more information, see [Create an installer package (Windows desktop)](/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-desktop).
 
 > [!WARNING]
@@ -41,7 +43,7 @@ You can't run Windows service projects directly from the Visual Studio developme
    installutil <yourproject>.exe
    ```
 
-   If you’re using the Developer Command Prompt for Visual Studio, *InstallUtil.exe* is already on the system path. Otherwise, you can add it to the path, or use the fully qualified path to invoke it. This tool is installed with the .NET Framework in *%WINDIR%\Microsoft.NET\Framework[64]\\<framework_version\>*.
+   If you're using the Developer Command Prompt for Visual Studio, *InstallUtil.exe* is already on the system path. Otherwise, you can add it to the path, or use the fully qualified path to invoke it. This tool is installed with the .NET Framework in *%WINDIR%\Microsoft.NET\Framework[64]\\<framework_version\>*.
 
    For example:
 

@@ -6,10 +6,10 @@ ms.assetid: 23b6e14a-019f-48fc-b2d5-aaa3dc88d79a
 ---
 # 3553 - XamlServicesLoadStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3553|  
 |Keywords|WebHost|  
 |Level|Information|  

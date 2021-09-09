@@ -1,140 +1,158 @@
 open System
 open System.IO
-open Microsoft.Azure // Namespace for CloudConfigurationManager
-open Microsoft.Azure.Storage // Namespace for CloudStorageAccount
-open Microsoft.Azure.Storage.File // Namespace for File storage types
+open Azure
+open Azure.Storage // Namespace for StorageSharedKeyCredential
+open Azure.Storage.Blobs // Namespace for BlobContainerClient
+open Azure.Storage.Sas // Namespace for ShareSasBuilder
+open Azure.Storage.Files.Shares // Namespace for File storage types
+open Azure.Storage.Files.Shares.Models // Namespace for ShareServiceProperties
 
 //
 // Get your connection string.
 //
 
 let storageConnString = "..." // fill this in from your storage account
-(*
-// Parse the connection string and return a reference to the storage account.
-let storageConnString = 
-    CloudConfigurationManager.GetSetting("StorageConnectionString")
-*)
-//
-// Parse the connection string.
-//
-
-// Parse the connection string and return a reference to the storage account.
-let storageAccount = CloudStorageAccount.Parse(storageConnString)
 
 //
 // Create the File service client.
 //
 
-let fileClient = storageAccount.CreateCloudFileClient()
+let share = ShareClient(storageConnString, "shareName")
 
 //
 // Create a file share.
 //
 
-let share = fileClient.GetShareReference("myfiles")
-share.CreateIfNotExists()
+share.CreateIfNotExistsAsync()
 
 //
-// Create a root directory and a subdirectory
+// Create a directory
 //
 
-let rootDir = share.GetRootDirectoryReference()
-let subDir = rootDir.GetDirectoryReference("myLogs")
-subDir.CreateIfNotExists()
+// Get a reference to the directory
+let directory = share.GetDirectoryClient("directoryName")
+
+// Create the directory if it doesn't already exist
+directory.CreateIfNotExistsAsync()
 
 //
-// Upload a file to a subdirectory
+// Upload a file to the sample directory
 //
 
-let file = subDir.GetFileReference("log.txt")
-file.UploadText("This is the content of the log file")
+let file = directory.GetFileClient("fileName")
+
+let writeToFile localFilePath = 
+    use stream = File.OpenRead(localFilePath)
+    file.Create(stream.Length)
+    file.UploadRange(
+        HttpRange(0L, stream.Length),
+        stream)
+
+writeToFile "localFilePath"
 
 //
-// Download a file to a local fie
+// Download a file to a local file
 //
 
-file.DownloadToFile("log.txt", FileMode.Append)
+let download = file.Download()
+
+let copyTo saveDownloadPath = 
+    use downStream = File.OpenWrite(saveDownloadPath)
+    download.Value.Content.CopyTo(downStream)
+
+copyTo "Save_Download_Path"
 
 //
 // Set the maximum size for a file share.
 //
 
 // stats.Usage is current usage in GB
-let stats = share.GetStats()
-share.FetchAttributes()
+let ONE_GIBIBYTE = 10_737_420_000L // Number of bytes in 1 gibibyte
+let stats = share.GetStatistics().Value
+let currentGiB = int (stats.ShareUsageInBytes / ONE_GIBIBYTE)
 
 // Set the quota to 10 GB plus current usage
-share.Properties.Quota <- stats.Usage + 10 |> Nullable
-share.SetProperties()
+share.SetQuotaAsync(currentGiB + 10)
 
 // Remove the quota
-share.Properties.Quota <- Nullable()
-share.SetProperties()
+share.SetQuotaAsync(0)
 
 //
 // Generate a shared access signature for a file or file share.
 //
 
+let accountName = "..." // Input your storage account name
+let accountKey = "..." // Input your storage account key
+
 // Create a 24-hour read/write policy.
-let policy = 
-    SharedAccessFilePolicy
-       (SharedAccessExpiryTime = (DateTimeOffset.UtcNow.AddHours(24.) |> Nullable),
-        Permissions = (SharedAccessFilePermissions.Read ||| SharedAccessFilePermissions.Write))
+let expiration = DateTimeOffset.UtcNow.AddHours(24.)
+let fileSAS = ShareSasBuilder(
+      ShareName = "shareName",
+      FilePath = "filePath",
+      Resource = "f",
+      ExpiresOn = expiration)
 
+// Set the permissions for the SAS
+let permissions = ShareFileSasPermissions.All
+fileSAS.SetPermissions(permissions)
 
-// Set the policy on the share.
-let permissions = share.GetPermissions()
-permissions.SharedAccessPolicies.Add("policyName", policy)
-share.SetPermissions(permissions)
+// Create a SharedKeyCredential that we can use to sign the SAS token
+let credential = StorageSharedKeyCredential(accountName, accountKey)
 
-let sasToken = file.GetSharedAccessSignature(policy)
-let sasUri = Uri(file.StorageUri.PrimaryUri.ToString() + sasToken)
-
-let fileSas = CloudFile(sasUri)
-fileSas.UploadText("This write operation is authenticated via SAS")
+// Build a SAS URI
+let fileSasUri = UriBuilder($"https://{accountName}.file.core.windows.net/{fileSAS.ShareName}/{fileSAS.FilePath}")
+fileSasUri.Query = fileSAS.ToSasQueryParameters(credential).ToString()
 
 //
 // Copy a file to another file.
 //
-
-let destFile = subDir.GetFileReference("log_copy.txt")
-destFile.StartCopy(file)
+let sourceFile = ShareFileClient(storageConnString, "shareName", "sourceFilePath")
+let destFile = ShareFileClient(storageConnString, "shareName", "destFilePath")
+destFile.StartCopyAsync(sourceFile.Uri)
 
 //
 // Copy a file to a blob.
 //
 
+// Create a new file SAS 
+let fileSASCopyToBlob = ShareSasBuilder(
+    ShareName = "shareName",
+    FilePath = "sourceFilePath",
+    Resource = "f",
+    ExpiresOn = DateTimeOffset.UtcNow.AddHours(24.))
+let permissionsCopyToBlob = ShareFileSasPermissions.Read
+fileSASCopyToBlob.SetPermissions(permissionsCopyToBlob)
+let fileSasUriCopyToBlob = UriBuilder($"https://{accountName}.file.core.windows.net/{fileSASCopyToBlob.ShareName}/{fileSASCopyToBlob.FilePath}")
+
+// Get a reference to the file.
+let sourceFileCopyToBlob = ShareFileClient(fileSasUriCopyToBlob.Uri)
+
 // Get a reference to the blob to which the file will be copied.
-let blobClient = storageAccount.CreateCloudBlobClient()
-let container = blobClient.GetContainerReference("myContainer")
-container.CreateIfNotExists()
-let destBlob = container.GetBlockBlobReference("log_blob.txt")
-
-let filePolicy = 
-    SharedAccessFilePolicy
-        (Permissions = SharedAccessFilePermissions.Read,
-         SharedAccessExpiryTime = (DateTimeOffset.UtcNow.AddHours(24.) |> Nullable))
-
-let fileSas2 = file.GetSharedAccessSignature(filePolicy)
-let sasUri2 = Uri(file.StorageUri.PrimaryUri.ToString() + fileSas2)
-destBlob.StartCopy(sasUri2)
+let containerCopyToBlob = BlobContainerClient(storageConnString, "containerName");
+containerCopyToBlob.CreateIfNotExists()
+let destBlob = containerCopyToBlob.GetBlobClient("blobName")
+destBlob.StartCopyFromUriAsync(sourceFileCopyToBlob.Uri)
 
 //
 // Troubleshooting File storage using metrics.
 //
 
-open Microsoft.Azure.Storage.File.Protocol
-open Microsoft.Azure.Storage.Shared.Protocol
+// Instatiate a ShareServiceClient
+let shareService = ShareServiceClient(storageConnString);
 
-let props =
-    FileServiceProperties(
-       (HourMetrics = MetricsProperties(
-            MetricsLevel = MetricsLevel.ServiceAndApi,
-            RetentionDays = (14 |> Nullable),
-            Version = "1.0"),
-        MinuteMetrics = MetricsProperties(
-            MetricsLevel = MetricsLevel.ServiceAndApi,
-            RetentionDays = (7 |> Nullable),
-            Version = "1.0"))
+// Set metrics properties for File service
+let props = ShareServiceProperties()
 
-fileClient.SetServiceProperties(props)
+props.HourMetrics = ShareMetrics(
+    Enabled = true,
+    IncludeApis = true,
+    Version = "1.0",
+    RetentionPolicy = ShareRetentionPolicy(Enabled = true,Days = 14))
+
+props.MinuteMetrics = ShareMetrics(
+    Enabled = true,
+    IncludeApis = true,
+    Version = "1.0",
+    RetentionPolicy = ShareRetentionPolicy(Enabled = true,Days = 7))
+
+shareService.SetPropertiesAsync(props)

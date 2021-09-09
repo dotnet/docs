@@ -6,10 +6,10 @@ ms.assetid: 6a8fa431-42a2-4a77-9a04-a269236e83ad
 ---
 # 1445 - ReadPoolMiss
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1445|  
 |Keywords|Quota|  
 |Level|Verbose|  

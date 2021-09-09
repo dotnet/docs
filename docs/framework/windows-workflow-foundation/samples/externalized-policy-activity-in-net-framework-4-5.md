@@ -6,15 +6,15 @@ ms.assetid: 92fd6f92-23a1-4adf-b96a-2754ea93ad3e
 ---
 # Externalized Policy Activity in .NET Framework 4.5
 
-This sample demonstrates how the ExternalizedPolicy4 activity allows executing existing .NET Framework 3.5 Windows Workflow Foundation (WF 3.5) <xref:System.Workflow.Activities.Rules.RuleSet> objects in [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] Windows Workflow Foundation (WF 4.5) directly by using the rules engine that is shipped in WF 3.5. By using this activity, you can open and execute any existing WF 3.5 <xref:System.Workflow.Activities.Rules.RuleSet>. For more information about WF 3.5 Rules Engine included as part of Windows Workflow Foundation, please read [Introduction to the Windows Workflow Foundation Rules Engine](/previous-versions/dotnet/articles/aa480193(v=msdn.10)). For more information about migrating rules to [!INCLUDE[wf1](../../../../includes/wf1-md.md)] in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)], see the [Migration Guidance](../migration-guidance.md).
+The [Rules-ExternalizedPolicy4 sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/scenario/ActivityLibrary/Rules-ExternalizedPolicy4/CS) demonstrates how the ExternalizedPolicy4 activity allows executing existing .NET Framework 3.5 Windows Workflow Foundation (WF 3.5) <xref:System.Workflow.Activities.Rules.RuleSet> objects in [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] Windows Workflow Foundation (WF 4.5) directly by using the rules engine that is shipped in WF 3.5. By using this activity, you can open and execute any existing WF 3.5 <xref:System.Workflow.Activities.Rules.RuleSet>. For more information about WF 3.5 Rules Engine included as part of Windows Workflow Foundation, please read [Introduction to the Windows Workflow Foundation Rules Engine](/previous-versions/dotnet/articles/aa480193(v=msdn.10)). For more information about migrating rules to WF in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)], see the [Migration Guidance](../migration-guidance.md).
 
 ## Projects in this Sample
 
 |Project Name|Description|Main Files|
 |-|-|-|
 |ExternalizedPolicy4|Contains the ExternalizedPolicy4 activity and its WF 4.5 designer.|**ExternalizedPolicy4.cs**: activity definition.<br /><br /> **ExternalizedPolicy4Designer.xaml**: Custom designer for ExternalizedPolicy4 activity. It uses the Rules editor (<xref:System.Workflow.Activities.Rules.Design.RuleSetDialog>) from WF 3.5 Rules Engine.|
-|ImperativeCodeClientSample|Sample client application that configures and runs a workflow using an ExternalizedPolicy4 application using imperative C# code (no designer used).|**ApplyDiscount.rules**: File with [!INCLUDE[wf1](../../../../includes/wf1-md.md)] rule definitions.<br /><br /> **Order.cs**: Type that represents a customer order. Rules are applied to objects of this type.<br /><br /> **Program.cs**: Configures and runs a workflow that has a Policy4 activity to apply rules defined in ApplyDiscount.rules to instances of Order objects.<br /><br /> App.config: The configuration file with the path of the rules file.|
-|DesignerClientSample|Sample client application that configures and runs a workflow using an ExternalPolicy4 application in the [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Designer.|**Sequence1.xaml**: Sequential workflow that uses a Policy4 activity to perform rule evaluations.<br /><br /> **Program.cs**: Runs an instance of the workflow defined in Sequence1.xaml.|
+|ImperativeCodeClientSample|Sample client application that configures and runs a workflow using an ExternalizedPolicy4 application using imperative C# code (no designer used).|**ApplyDiscount.rules**: File with WF rule definitions.<br /><br /> **Order.cs**: Type that represents a customer order. Rules are applied to objects of this type.<br /><br /> **Program.cs**: Configures and runs a workflow that has a Policy4 activity to apply rules defined in ApplyDiscount.rules to instances of Order objects.<br /><br /> App.config: The configuration file with the path of the rules file.|
+|DesignerClientSample|Sample client application that configures and runs a workflow using an ExternalPolicy4 application in the WF Designer.|**Sequence1.xaml**: Sequential workflow that uses a Policy4 activity to perform rule evaluations.<br /><br /> **Program.cs**: Runs an instance of the workflow defined in Sequence1.xaml.|
 
 ## The ExternalizedPolicy4 Activity
 
@@ -76,14 +76,3 @@ This sample contains two client applications: ImperativeCodeClientSample and Des
 3. Press **Ctrl**+**Shift**+**B** to compile the project.
 
 4. Press **Ctrl**+**F5** to run the project.
-
-> [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
->
-> `<InstallDrive>:\WF_WCF_Samples`
->
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples.
->
-> This sample is located in the following directory:
->
-> `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\Rules-ExternalizedPolicy4`

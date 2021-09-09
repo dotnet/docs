@@ -17,6 +17,9 @@
     <ClInclude Include="inc\hostfxr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="inc.vs\nethost.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="nativehost.cpp">

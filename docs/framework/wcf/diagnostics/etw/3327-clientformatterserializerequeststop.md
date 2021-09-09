@@ -6,10 +6,10 @@ ms.assetid: 823b34b0-b386-4df4-bb93-4625515761ef
 ---
 # 3327 - ClientFormatterSerializeRequestStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3327|  
 |Keywords|ServiceModel|  
 |Level|Verbose|  

@@ -69,12 +69,13 @@ If you installed using a tarball, you must remove .NET using the manual method.
 On Linux, you must remove the SDKs and runtimes separately, by removing the versioned directories. These directories may vary depending on your Linux distribution. Removing them deletes the SDK and runtime from disk. For example, to remove the 1.0.1 SDK and runtime, you would use the following bash commands:
 
 ```bash
-version="1.0.1"
-sudo rm -rf /usr/share/dotnet/sdk/$version
-sudo rm -rf /usr/share/dotnet/shared/Microsoft.NETCore.App/$version
-sudo rm -rf /usr/share/dotnet/shared/Microsoft.AspNetCore.All/$version
-sudo rm -rf /usr/share/dotnet/shared/Microsoft.AspNetCore.App/$version
-sudo rm -rf /usr/share/dotnet/host/fxr/$version
+version="6.0.100-preview.7.21379.14"
+fw_version="6.0.0-preview.7.21377.19"
+sudo rm -rf /usr/local/share/dotnet/sdk/$version
+sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.NETCore.App/$fw_version
+sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.All/$fw_version
+sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/$fw_version
+sudo rm -rf /usr/local/share/dotnet/host/fxr/$fw_version
 ```
 
 The parent directories for the SDK and runtime are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.
@@ -86,12 +87,13 @@ The parent directories for the SDK and runtime are listed in the output from the
 On Mac, you must remove the SDKs and runtimes separately, by removing the versioned directories. Removing them deletes the SDK and runtime from disk. For example, to remove the 1.0.1 SDK and runtime, you would use the following bash commands:
 
 ```bash
-version="1.0.1"
+version="6.0.100-preview.7.21379.14"
+fw_version="6.0.0-preview.7.21377.19"
 sudo rm -rf /usr/local/share/dotnet/sdk/$version
-sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.NETCore.App/$version
-sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.All/$version
-sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/$version
-sudo rm -rf /usr/local/share/dotnet/host/fxr/$version
+sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.NETCore.App/$fw_version
+sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.All/$fw_version
+sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/$fw_version
+sudo rm -rf /usr/local/share/dotnet/host/fxr/$fw_version
 ```
 
 The parent directories for the SDK and runtime are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.

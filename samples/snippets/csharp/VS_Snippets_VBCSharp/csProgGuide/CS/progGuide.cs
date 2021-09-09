@@ -56,13 +56,5 @@ class HelloAgain
 		//<Snippet29>
         Console.WriteLine("World!");
 		//</Snippet29>
-
-		//<Snippet30>
-        System.Console.WriteLine("Hello, World!");
-		//</Snippet30>
-
-		//<Snippet31>
-        Console.WriteLine("Hello, World!");
-		//</Snippet31>
     }
 }

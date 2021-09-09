@@ -1,12 +1,22 @@
-﻿using System;
+namespace namespaceexamples
+{
+//<Snippet1>
+using System;
+//</Snippet1>
+
+//<Snippet5>
+using generics = System.Collections.Generic;
 
 //<Snippet14>
 using Alias = System;
 //</Snippet14>
 
-//-----------------------------------------------------------------------------
-//<Snippet5>
-using generics = System.Collections.Generic;
+//<Snippet15>
+namespace Library
+{
+    public class C : Alias::Exception { }
+}
+//</Snippet15>
 
 namespace AliasExample
 {
@@ -34,8 +44,7 @@ namespace AliasExample
 }
 //</Snippet5>
 
-//-----------------------------------------------------------------------------
-//<Snippet8>
+//<Snippet82>
 namespace SampleNamespace
 {
     class SampleClass
@@ -78,9 +87,8 @@ namespace SampleNamespace
         }
     }
 }
-//</Snippet8>
+//</Snippet82>
 
-//-----------------------------------------------------------------------------
 //<Snippet9>
 namespace N1     // N1
 {
@@ -99,7 +107,6 @@ namespace N1     // N1
 }
 //</Snippet9>
 
-//-----------------------------------------------------------------------------
 //<Snippet10>
 namespace N1.N2
 {
@@ -109,10 +116,5 @@ namespace N1.N2
 }
 //</Snippet10>
 
-//-----------------------------------------------------------------------------
-//<Snippet15>
-namespace Library
-{
-    public class C : Alias::Exception { }
+
 }
-//</Snippet15>

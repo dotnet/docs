@@ -1,13 +1,12 @@
 ---
 title: "Using Namespaces - C# Programming Guide"
 description: Learn how to use namespaces in C# programming, such as accessing namespaces, namespace aliases, and using namespaces to control scope.
-ms.date: 07/20/2015
+ms.date: 09/09/2021
 f1_keywords: 
   - "cs.names"
 helpviewer_keywords: 
   - "fully qualified names [C#]"
   - "namespaces [C#], how to use"
-ms.assetid: 1fe8bf39-addc-438a-bd9e-86410e32381d
 ---
 # Using namespaces (C# Programming Guide)
 
@@ -19,27 +18,27 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET cl
   
  For example, by including the line:  
   
- [!code-csharp[csProgGuide#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuide/CS/using.cs#1)]  
+ [!code-csharp[csProgGuide#1](./snippets/Usings.cs#1)]  
   
  At the start of a program, the programmer can use the code:  
   
- [!code-csharp[csProgGuide#31](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuide/CS/progGuide.cs#31)]  
+ [!code-csharp[csProgGuide#31](./snippets/Program.cs#31)]  
   
  Instead of:  
   
- [!code-csharp[csProgGuide#30](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuide/CS/progGuide.cs#30)]  
+ [!code-csharp[csProgGuide#30](./snippets/Program.cs#30)]  
   
 ## Namespace aliases
 
  You can also use the [`using` directive](../../language-reference/keywords/using-directive.md) to create an alias for a namespace. Use the [namespace alias qualifier `::`](../../language-reference/operators/namespace-alias-qualifier.md) to access the members of the aliased namespace. The following example shows how to create and use a namespace alias:
   
-[!code-csharp[csProgGuideNamespaces#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces.cs#5)]
+[!code-csharp[csProgGuideNamespaces#5](./snippets/Usings.cs#5)]
   
 ## Using namespaces to control scope
 
  The `namespace` keyword is used to declare a scope. The ability to create scopes within your project helps organize code and lets you create globally-unique types. In the following example, a class titled `SampleClass` is defined in two namespaces, one nested inside the other. The [`.` token](../../language-reference/operators/member-access-operators.md#member-access-expression-) is used to differentiate which method gets called.  
   
- [!code-csharp[csProgGuideNamespaces#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces.cs#8)]  
+ [!code-csharp[csProgGuideNamespaces#8](./snippets/Usings.cs#82)]  
   
 ## Fully qualified names
 
@@ -47,7 +46,7 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET cl
   
  In the following example, there are nested classes and namespaces. The fully qualified name is indicated as a comment following each entity.  
   
- [!code-csharp[csProgGuideNamespaces#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces.cs#9)]  
+ [!code-csharp[csProgGuideNamespaces#9](./snippets/Usings.cs#9)]  
   
  In the previous code segment:  
   
@@ -61,22 +60,31 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET cl
   
  Using the previous code segment, you can add a new class member, `C3`, to the namespace `N1.N2` as follows:  
   
- [!code-csharp[csProgGuideNamespaces#10](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces.cs#10)]  
+ [!code-csharp[csProgGuideNamespaces#10](./snippets/Usings.cs#10)]  
   
  In general, use the [namespace alias qualifier `::`](../../language-reference/operators/namespace-alias-qualifier.md) to reference a namespace alias or `global::` to reference the global namespace and `.` to qualify types or members.  
   
  It is an error to use `::` with an alias that references a type instead of a namespace. For example:  
-  
- [!code-csharp[csProgGuideNamespaces#11](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces2.cs#11)]  
-  
- [!code-csharp[csProgGuideNamespaces#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces2.cs#12)]  
+
+```csharp  
+using Alias = System.Console;
+
+// Error
+//Alias::WriteLine("Hi");
+
+// OK
+Alias.WriteLine("Hi");
+```
+
   
  Remember that the word `global` is not a predefined alias; therefore, `global.X` does not have any special meaning. It acquires a special meaning only when it is used with `::`.  
   
  Compiler warning CS0440 is generated if you define an alias named global because `global::` always references the global namespace and not an alias. For example, the following line generates the warning:  
-  
- [!code-csharp[csProgGuideNamespaces#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces2.cs#13)]  
-  
+
+```csharp  
+using global = System.Collections;   // Warning
+```
+
  Using `::` with aliases is a good idea and protects against the unexpected introduction of additional types. For example, consider this example:  
   
  [!code-csharp[csProgGuideNamespaces#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces.cs#14)]  

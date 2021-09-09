@@ -87,9 +87,9 @@ using global = System.Collections;   // Warning
 
  Using `::` with aliases is a good idea and protects against the unexpected introduction of additional types. For example, consider this example:  
   
- [!code-csharp[csProgGuideNamespaces#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces.cs#14)]  
+ [!code-csharp[csProgGuideNamespaces#14](./snippets/Usings.cs#14)]  
   
- [!code-csharp[csProgGuideNamespaces#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces.cs#15)]  
+ [!code-csharp[csProgGuideNamespaces#15](./snippets/Usings.cs#15)]  
   
  This works, but if a type named `Alias` were to subsequently be introduced, `Alias.` would bind to that type instead. Using `Alias::Exception` ensures that `Alias` is treated as a namespace alias and not mistaken for a type.  
 

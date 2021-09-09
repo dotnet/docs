@@ -91,6 +91,10 @@ items:
           href: core-libraries/6.0/system-drawing-common-windows-only.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
+      - name: Extensions
+        items:
+        - name: Configuration binder binds single elements to an array
+          href: extensions/6.0/bind-single-elements-to-array.md
       - name: Globalization
         items:
         - name: Culture creation and case mapping in globalization-invariant mode
@@ -657,6 +661,12 @@ items:
         href: /ef/core/what-is-new/ef-core-5.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: EF Core 3.1
         href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+    - name: Extensions
+      items:
+      - name: .NET 6
+        items:
+        - name: Configuration binder binds single elements to an array
+          href: extensions/6.0/bind-single-elements-to-array.md
     - name: Globalization
       items:
       - name: .NET 6

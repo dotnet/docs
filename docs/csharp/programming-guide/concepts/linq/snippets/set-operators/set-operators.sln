@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31612.314
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "set-operators", "set-operators.csproj", "{3FD2B477-9188-45CB-AF56-481D40C2F494}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FD2B477-9188-45CB-AF56-481D40C2F494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FD2B477-9188-45CB-AF56-481D40C2F494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FD2B477-9188-45CB-AF56-481D40C2F494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FD2B477-9188-45CB-AF56-481D40C2F494}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96FDCC77-72F9-4D78-BF86-358A38BC286B}
+	EndGlobalSection
+EndGlobal

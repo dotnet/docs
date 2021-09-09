@@ -22,11 +22,11 @@ The standard query operator methods that perform set operations are listed in th
 
 ## Examples
 
-Some of the following examples rely on `record` type that represents planets in our solar system.
+Some of the following examples rely on a `record` type that represents the planets in our solar system.
 
 :::code source="snippets/set-operators/Planet.cs":::
 
-The `record Planet` is a positional record, which requires a `Name`, `Type`, and `OrderFromSun` values to instantiate it. There are several `static readonly` planet instances on the `Planet` type. These are convenience-based definitions for well-known planets. The `Type` member identifies the planet type.
+The `record Planet` is a positional record, which requires a `Name`, `Type`, and `OrderFromSun` arguments to instantiate it. There are several `static readonly` planet instances on the `Planet` type. These are convenience-based definitions for well-known planets. The `Type` member identifies the planet type.
 
 :::code source="snippets/set-operators/PlanetType.cs":::
 

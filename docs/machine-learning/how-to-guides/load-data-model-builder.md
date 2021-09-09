@@ -19,7 +19,7 @@ Model Builder only accepts TSV, CSV, and TXT files with comma, tab, and semi-col
 Model Builder helps you create models for the following machine learning scenarios:
 
 - Sentiment analysis (binary classification): Classify textual data into two categories.
-- Text classification (multiclass classification): Classify textual data into 3 or more categories.
+- Data classification (multiclass classification): Classify textual data into 3 or more categories.
 - Value prediction (regression): Predict a numeric value.
 - Image classification (deep learning): Categorize images based on characteristics.
 - Object detection (deep learning): Find objects within images. This can find one or more objects and label them accordingly.

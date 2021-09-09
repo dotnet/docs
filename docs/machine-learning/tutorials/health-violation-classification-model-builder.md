@@ -71,7 +71,7 @@ When first adding Model Builder to the solution it will prompt you to create an 
 
 ![Model Builder wizard in Visual Studio](../media/model-builder-screen.png)
 
-To train your model, select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is *Text Classification*.
+To train your model, select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is *Data Classification*.
 
 1. For this sample, the scenario is multiclass classification. In the *Scenario* step of Model Builder, select the **Issue Classification** scenario.
 

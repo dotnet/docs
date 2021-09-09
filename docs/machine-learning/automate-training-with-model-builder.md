@@ -62,7 +62,7 @@ For more information about the different ML Tasks supported by ML.NET see [Machi
 
 In Model Builder, you need to select a scenario. The type of scenario depends on what type of prediction you are trying to make.
 
-#### Text classification
+#### Data classification
 
 Classification is used to categorize data into categories.
 

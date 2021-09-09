@@ -15,7 +15,7 @@ namespace AttributeExamples
         public string Name { get; set; } = string.Empty;
 
         // Attribute attached to backing field:
-        [field:NewPropertyOrField]
+        [field: NewPropertyOrField]
         public string Description { get; set; } = string.Empty;
     }
     // </SnippetUsePropertyAttribute>

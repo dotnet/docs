@@ -10,11 +10,11 @@ namespace attributes
 #nullable disable
     public class NullableOblivious
     {
-        private Dictionary<string, string> messageMap = new ();
+        private Dictionary<string, string> _messageMap = new();
         // <TryGetExample>
         bool TryGetMessage(string key, out string message)
         {
-            if (messageMap.ContainsKey(key))
+            if (_messageMap.ContainsKey(key))
                 message = messageMap[key];
             else
                 message = null;
@@ -71,12 +71,12 @@ namespace attributes
 #nullable restore
     public class NullableAttributes
     {
-        private Dictionary<string, string> messageMap = new();
+        private Dictionary<string, string> _messageMap = new();
 
         // <NotNullWhenTryGet>
         bool TryGetMessage(string key, [NotNullWhen(true)] out string? message)
         {
-            if (messageMap.ContainsKey(key))
+            if (_messageMap.ContainsKey(key))
                 message = messageMap[key];
             else
                 message = null;
@@ -181,7 +181,7 @@ namespace attributes
 
         public void SetFieldState(object? containedField)
         {
-            FailFastIf(containedField==null);
+            FailFastIf(containedField == null);
             // No warning: containedField can't be null here:
             _field = containedField;
         }

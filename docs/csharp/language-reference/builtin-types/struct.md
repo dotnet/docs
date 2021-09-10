@@ -85,7 +85,7 @@ When you design a structure type, you have the same capabilities as with a [clas
   > [!NOTE]
   > Beginning with C# 10.0, you can initialize an instance field or property at its declaration. For more information, see the [Parameterless constructors and field initializers](#parameterless-constructors-and-field-initializers) section.
 
-- A constructor of a structure type must initialize all instance fields and properties of the type.
+- A constructor of a structure type must initialize all instance fields of the type.
 
 - A structure type can't inherit from other class or structure type and it can't be the base of a class. However, a structure type can implement [interfaces](../keywords/interface.md).
 

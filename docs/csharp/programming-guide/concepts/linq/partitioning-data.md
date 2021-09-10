@@ -29,7 +29,7 @@ The standard query operator methods that partition sequences are listed in the f
 
 The `Chunk` operator is used to split elements of a sequence based on a given `size`.
 
-:::code source="snippets/projection/Program.cs":::
+:::code source="snippets/partition/Program.cs":::
 
 The preceding C# code:
 

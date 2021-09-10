@@ -12,16 +12,21 @@ ms.date: 09/08/2021
 
 ## Old behavior
 
-Static interface members could not be marked as `abstract`. Marking them `abstract` resulted in [Compiler error CS0112](../../../../csharp/misc/cs0112.md) and would generate illegal IL.
+If a static interface was marked as `abstract`:
+
+- The C# compiler generated [error CS0112](../../../../csharp/misc/cs0112.md).
+- Tools and other compilers generated illegal IL metadata.
 
 ## New behavior
 
-Static interface members can be marked as `abstract`. The implementation of these members is provided by types that implement the interface.
+Starting in .NET 6, static interface members can be marked as `abstract` and will compile successfully. In addition, the IL metadata patterns that are generated are now considered legal due to changes in the ECMA 335 spec.
 
-Since this is a newly legal IL pattern, existing tooling may incorrectly process the associated metadata and have unexpected behavior. It's likely that tooling will encounter the new metadata pattern, because interfaces with `static abstract` members now appear on the primitive types, for example, <xref:System.Int32?displayProperty=fullName>.
+The implementation of `static abstract` interface members is provided by types that implement the interface.
 
 > [!NOTE]
 > For .NET 6, you must [enable preview features](../../../project-sdk/msbuild-props.md#enablepreviewfeatures) in your project to be able to mark an interface member as `static abstract`.
+
+Since this is a newly legal IL pattern, existing tooling may incorrectly process the associated metadata and have unexpected behavior. It's likely that tooling will encounter the new metadata pattern, because interfaces with `static abstract` members now appear on the primitive types, for example, <xref:System.Int32?displayProperty=fullName>.
 
 ## Version introduced
 

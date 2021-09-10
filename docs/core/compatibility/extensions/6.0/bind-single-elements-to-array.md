@@ -51,7 +51,7 @@ The JSON configuration provider would not bind that JSON because it does not spe
 }
 ```
 
-However, when binding the following XML in previous .NET versions, the XML configuration provider has no way of knowing that `TvShows` can contain multiple `Metadata` elements and that they are bound to an array. Thus, the binder fails to bind when a single element is provided. The key doesn't contain any index in the target array, which the binder expects when binding to an array, and the binder returns a `Metadata[]` array with a `null` object.
+In addition, when binding the following XML in previous .NET versions, the XML configuration provider has no way of knowing that `TvShows` can contain multiple `Metadata` elements and that they are bound to an array. Thus, the binder fails to bind when a single element is provided. The key doesn't contain any index in the target array, which the binder expects when binding to an array, and the binder returns a `Metadata[]` array with a `null` object.
 
 ```xml
 <TvShow>
@@ -91,7 +91,7 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 ## Reason for change
 
-This change was made to allow the XML configuration provider to bind a single element to an array. It was originally requested as an API addition to <xref:Microsoft.Extensions.Configuration.BinderOptions>. For more information, see [dotnet/runtime#57325]().
+This change was made to allow the XML configuration provider to bind a single element to an array. It was originally requested as an API addition to <xref:Microsoft.Extensions.Configuration.BinderOptions>. For more information, see [dotnet/runtime#57325](https://github.com/dotnet/runtime/issues/57325).
 
 ## Recommended action
 

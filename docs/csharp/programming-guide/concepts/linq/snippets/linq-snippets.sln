@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "set-operators", "set-operat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "linq", "extensions\linq.csproj", "{5097A709-D209-45BF-8A1F-96667DE90C37}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projection", "projection\projection.csproj", "{F3A812B5-F587-48B5-8B32-27F066721672}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "partition", "partition\partition.csproj", "{E337A455-676D-4F6D-A40B-0CD9A2117BA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{5097A709-D209-45BF-8A1F-96667DE90C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5097A709-D209-45BF-8A1F-96667DE90C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5097A709-D209-45BF-8A1F-96667DE90C37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3A812B5-F587-48B5-8B32-27F066721672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A812B5-F587-48B5-8B32-27F066721672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A812B5-F587-48B5-8B32-27F066721672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A812B5-F587-48B5-8B32-27F066721672}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E337A455-676D-4F6D-A40B-0CD9A2117BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E337A455-676D-4F6D-A40B-0CD9A2117BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E337A455-676D-4F6D-A40B-0CD9A2117BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E337A455-676D-4F6D-A40B-0CD9A2117BA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

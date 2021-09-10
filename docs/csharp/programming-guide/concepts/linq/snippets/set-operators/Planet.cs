@@ -29,7 +29,7 @@ record Planet(
     public static readonly Planet Neptune =
         new(nameof(Neptune), PlanetType.Liquid, 8);
 
-    // Yes, I know... not techically a planet anymore
+    // Yes, I know... not technically a planet anymore
     public static readonly Planet Pluto =
         new(nameof(Pluto), PlanetType.Ice, 9);
 }

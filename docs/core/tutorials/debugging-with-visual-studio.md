@@ -71,7 +71,7 @@ The **Immediate** window lets you interact with the application you're debugging
 
    The values displayed in the console window correspond to the changes you made in the **Immediate** window.
 
-   :::image type="content" source="./media/debugging-with-visual-studio/console-window-net6.png" alt-text="Console window showing the entered values":::
+   :::image type="content" source="./media/debugging-with-visual-studio/console-window.png" alt-text="Console window showing the entered values":::
 
 1. Press any key to exit the application and stop debugging.
 
@@ -83,7 +83,7 @@ The program displays the string that the user enters. What happens if the user d
 
    :::image type="content" source="./media/debugging-with-visual-studio/breakpoint-settings-net6.png" alt-text="Editor showing breakpoint settings panel - C#":::
 
-1. For the **Conditional Expression**, enter the following code in the field that shows example code that tests if `x` is 5. If the language you want to use is not shown, change the language selector at the top of the page.
+1. For the **Conditional Expression**, enter the following code in the field that shows example code that tests if `x` is 5.
 
    ```csharp
    String.IsNullOrEmpty(name)
@@ -137,7 +137,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    C#
 
-   :::image type="content" source="./media/debugging-with-visual-studio/step-into-method.png" alt-text="Visual Studio step into method - C#":::
+   :::image type="content" source="./media/debugging-with-visual-studio/step-into-method-net6.png" alt-text="Visual Studio step into method - C#":::
 
    Visual Basic
 

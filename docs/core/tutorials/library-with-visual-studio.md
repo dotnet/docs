@@ -1,7 +1,7 @@
 ---
 title: Create a .NET class library using Visual Studio
 description: Learn how to create a .NET class library using Visual Studio.
-ms.date: 08/07/2020
+ms.date: 09/10/2021
 zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
@@ -21,7 +21,7 @@ When you create a class library, you can distribute it as a NuGet package or as 
 
 ## Prerequisites
 
-- [Visual Studio 2022 version 17.0.0 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 6.0 SDK is automatically installed when you select this workload.
+- [Visual Studio 2022 version 17.0.0 Preview](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 6.0 SDK is automatically installed when you select this workload.
 
   For more information, see [Install the .NET SDK with Visual Studio](../install/windows.md#install-with-visual-studio).
 

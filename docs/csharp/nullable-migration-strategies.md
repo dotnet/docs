@@ -210,5 +210,4 @@ You'll never observe an actual null value at runtime except as a result of a pro
 
 ## See also
 
-- [Migrate an existing codebase to nullable references](whats-new/tutorials/upgrade-to-nullable-references.md)
 - [Working with Nullable Reference Types in EF Core](/ef/core/miscellaneous/nullable-reference-types)

@@ -21,7 +21,7 @@ This breaking change was made for the following reasons:
 
 - So WinRT can be developed and improved separately from the .NET runtime.
 - For symmetry with interop systems provided for other operating systems, such as iOS and Android.
-- To take advantage of other .NET features, such as C# features, intermediate language (IL) linking, and ahead-of-time (AOT) compilation.
+- To take advantage of other .NET features, such as C# features, intermediate language (IL) trimming, and ahead-of-time (AOT) compilation.
 - To simplify the .NET runtime codebase.
 
 ## Recommended action

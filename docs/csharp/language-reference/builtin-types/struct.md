@@ -1,7 +1,7 @@
 ---
 title: "Structure types - C# reference"
 description: Learn about the struct type in C#
-ms.date: 09/07/2021
+ms.date: 09/13/2021
 f1_keywords: 
   - "struct_CSharpKeyword"
 helpviewer_keywords: 

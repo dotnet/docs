@@ -157,7 +157,6 @@ For more information on the *global using* modifier, see the [global usings feat
 
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
-- [Using Namespaces](../../programming-guide/namespaces/using-namespaces.md)
 - [C# Keywords](index.md)
 - [Namespaces](../../fundamentals/types/namespaces.md)
 - [using Statement](using-statement.md)

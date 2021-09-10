@@ -3,7 +3,7 @@ title: Deploy a Worker Service to Azure
 description: Learn how to deploy a .NET Worker Service to Azure.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/30/2021
+ms.date: 09/03/2021
 ms.topic: tutorial
 zone_pivot_groups: development-environment-one
 ---
@@ -44,7 +44,9 @@ In this tutorial, you learn how to:
 
 :::zone target="docs" pivot="visualstudio"
 
-In Visual Studio, right-click on the project node in the **Solution Explorer**, and select **Add** > **Docker Support**. You'll be prompted to select a **Target OS**, select **OK** with the default OS selection.
+If you correctly selected the **Enable Docker** checkbox when creating a new Worker project, skip to the [Build the Docker image](#build-the-docker-image) step.
+
+If you didn't select this option, no worries &mdash; you can still add it now. In Visual Studio, right-click on the *project node* in the **Solution Explorer**, and select **Add** > **Docker Support**. You'll be prompted to select a **Target OS**, select **OK** with the default OS selection.
 
 :::image type="content" source="media/docker-file-options.png" alt-text="Docker File Options":::
 
@@ -64,6 +66,8 @@ Docker support requires a *Dockerfile*. This file is a set of comprehensive inst
 To build the Docker image, the Docker Engine must be running.
 
 :::zone target="docs" pivot="visualstudio"
+
+[!INCLUDE [volume-share-alert](../docker/includes/volume-share-alert.md)]
 
 Right-click on the *Dockerfile* in the **Solution Explorer**, and select **Build Docker Image**. The **Output** window displays, reporting the `docker build` command progress.
 

@@ -243,7 +243,7 @@ By default, if the requested version (as specified in `.runtimeconfig.json` for 
 
 The `dotnet build` command now copies NuGet dependencies for your application from the NuGet cache to the build output folder. Previously, dependencies were only copied as part of `dotnet publish`.
 
-There are some operations, like trimming and razor page publishing that will still require publishing.
+There are some operations, like trimming and razor page publishing, that will still require publishing.
 
 ### Local tools
 

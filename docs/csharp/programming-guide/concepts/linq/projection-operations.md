@@ -13,15 +13,13 @@ The standard query operator methods that perform projection are listed in the fo
 
 ## Methods
 
-| Method Name | Description | C# Query Expression Syntax | More Information |
+| Method names | Description | C# query expression syntax | More information |
 |--|--|--|--|
 | Select | Projects values that are based on a transform function. | `select` | <xref:System.Linq.Enumerable.Select%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Select%2A?displayProperty=nameWithType> |
 | SelectMany | Projects sequences of values that are based on a transform function and then flattens them into one sequence. | Use multiple `from` clauses | <xref:System.Linq.Enumerable.SelectMany%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.SelectMany%2A?displayProperty=nameWithType> |
 | Zip | Produces a sequence of tuples with elements from specified sequence(s), and optional result selector. | Not applicable. | <xref:System.Linq.Enumerable.Zip%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Zip%2A?displayProperty=nameWithType> |
 
-## Query expression syntax examples
-
-### Select
+## `Select`
 
 The following example uses the `select` clause to project the first letter from each string in a list of strings.
 
@@ -43,7 +41,7 @@ foreach (string s in query)
 */
 ```
 
-### SelectMany
+## `SelectMany`
 
 The following example uses multiple `from` clauses to project each word from each string in a list of strings.
 
@@ -70,7 +68,7 @@ foreach (string s in query)
 */
 ```
 
-## Zip
+## `Zip`
 
 There are several overloads for the `Zip` projection operator. All of the `Zip` methods work on sequences of two or more heterogenous types. The first two overloads return tuples, with the corresponding positional type from the given sequences.
 
@@ -99,23 +97,23 @@ Much like the previous overload the `Zip` method projects a tuple, but this time
 
 With the preceding `Zip` overload, the specified function is applied to the corresponding elements `numbers` and `letter`, producing a sequence of the `string` results.
 
-## Select versus SelectMany
+## `Select` versus `SelectMany`
 
-The work of both `Select()` and `SelectMany()` is to produce a result value (or values) from source values. `Select()` produces one result value for every source value. The overall result is therefore a collection that has the same number of elements as the source collection. In contrast, `SelectMany()` produces a single overall result that contains concatenated sub-collections from each source value. The transform function that is passed as an argument to `SelectMany()` must return an enumerable sequence of values for each source value. These enumerable sequences are then concatenated by `SelectMany()` to create one large sequence.
+The work of both `Select` and `SelectMany` is to produce a result value (or values) from source values. `Select` produces one result value for every source value. The overall result is therefore a collection that has the same number of elements as the source collection. In contrast, `SelectMany` produces a single overall result that contains concatenated sub-collections from each source value. The transform function that is passed as an argument to `SelectMany` must return an enumerable sequence of values for each source value. These enumerable sequences are then concatenated by `SelectMany` to create one large sequence.
 
 The following two illustrations show the conceptual difference between the actions of these two methods. In each case, assume that the selector (transform) function selects the array of flowers from each source value.
 
-This illustration depicts how `Select()` returns a collection that has the same number of elements as the source collection.
+This illustration depicts how `Select` returns a collection that has the same number of elements as the source collection.
 
 ![Graphic that shows the action of Select()](./media/projection-operations/select-action-graphic.png)
 
-This illustration depicts how `SelectMany()` concatenates the intermediate sequence of arrays into one final result value that contains each value from each intermediate array.
+This illustration depicts how `SelectMany` concatenates the intermediate sequence of arrays into one final result value that contains each value from each intermediate array.
 
 ![Graphic showing the action of SelectMany().](./media/projection-operations/select-many-action-graphic.png)
 
 ### Code example
 
-The following example compares the behavior of `Select()` and `SelectMany()`. The code creates a "bouquet" of flowers by taking the first two items from each list of flower names in the source collection. In this example, the "single value" that the transform function <xref:System.Linq.Enumerable.Select%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29> uses is itself a collection of values. This requires the extra `foreach` loop in order to enumerate each string in each sub-sequence.
+The following example compares the behavior of `Select` and `SelectMany`. The code creates a "bouquet" of flowers by taking the first two items from each list of flower names in the source collection. In this example, the "single value" that the transform function <xref:System.Linq.Enumerable.Select%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29> uses is itself a collection of values. This requires the extra `foreach` loop in order to enumerate each string in each sub-sequence.
 
 ```csharp
 class Bouquet
@@ -128,15 +126,13 @@ static void SelectVsSelectMany()
     List<Bouquet> bouquets = new()
     {
         new Bouquet { Flowers = new List<string> { "sunflower", "daisy", "daffodil", "larkspur" }},
-        new Bouquet{ Flowers = new List<string> { "tulip", "rose", "orchid" }},
-        new Bouquet{ Flowers = new List<string> { "gladiolis", "lily", "snapdragon", "aster", "protea" }},
-        new Bouquet{ Flowers = new List<string> { "larkspur", "lilac", "iris", "dahlia" }}
+        new Bouquet { Flowers = new List<string> { "tulip", "rose", "orchid" }},
+        new Bouquet { Flowers = new List<string> { "gladiolis", "lily", "snapdragon", "aster", "protea" }},
+        new Bouquet { Flowers = new List<string> { "larkspur", "lilac", "iris", "dahlia" }}
     };
 
-    // *********** Select ***********
     IEnumerable<List<string>> query1 = bouquets.Select(bq => bq.Flowers);
 
-    // ********* SelectMany *********
     IEnumerable<string> query2 = bouquets.SelectMany(bq => bq.Flowers);
 
     Console.WriteLine("Results by using Select():");

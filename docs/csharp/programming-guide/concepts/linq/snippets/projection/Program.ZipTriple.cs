@@ -10,7 +10,8 @@
         // <ZipTriple>
         foreach ((int number, char letter, string em) in numbers.Zip(letters, emoji))
         {
-            Console.WriteLine($"Number: {number} is zipped with letter: '{letter}' and emoji: {em}");
+            Console.WriteLine(
+                $"Number: {number} is zipped with letter: '{letter}' and emoji: {em}");
         }
         // This code produces the following output:
         //     Number: 1 is zipped with letter: 'A' and emoji: 🤓

@@ -121,11 +121,22 @@ Nullable reference types and nullable value types provide a similar semantic con
 
 ## Generics
 
-The implementation differences for nullable value types and nullable reference types introduce complexities for generic classes and methods. The meaning of `T?` depends on whether `T` is a `class` or `struct`. You clarify this using constraints:
+Generics require detailed rules to handle `T?` for any type parameter `T`. The rules are necessarily detailed because of history and the different implementation for a nullable value type and a nullable reference type. [Nullable value types](language-reference/builtin-types/nullable-value-types.md) are implemented using the <xref:System.Nullable%601?displayProperty=nameWithType> struct. [Nullable reference types](language-reference/builtin-types/nullable-reference-types.md) are implemented as type annotations that provide semantic rules to the compiler.
 
-- The `class` constraint now means that `T` must be a non-nullable reference type (for example `string`).
-- The new `class?` constraint means that `T` must be a reference type, either non-nullable (`string`) or a nullable reference type (for example `string?`).
-- The `notnull` constraint means that `T` must be a non-nullable reference type, or a non-nullable value type.
+In C# 8.0, using `T?` without constraining `T` to be a `struct` or a `class` did not compile. That enabled the compiler to interpret `T?` clearly. That restriction was removed in C# 9.0, by defining the following rules for an unconstrained type parameter `T`:
+
+- If the type argument for `T` is a reference type, `T?` references the corresponding nullable reference type. For example, if `T` is a `string`, then `T?` is a `string?`.
+- If the type argument for `T` is a value type, `T?` references the same value type, `T`. For example, if `T` is an `int`, the `T?` is also an `int`.
+- If the type argument for `T` is a nullable reference type, `T?` references that same nullable reference type. For example, if `T` is a `string?`, then `T?` is also a `string?`.
+- If the type argument for `T` is a nullable value type, `T?` references that same nullable value type. For example, if `T` is a `int?`, then `T?` is also a `int?`.
+
+For return values, `T?` is equivalent to `[MaybeNull]T`; for argument values, `T?` is equivalent to `[AllowNull]T`. For more information, see the article on [Attributes for null-state analysis](language-reference/attributes/nullable-analysis.md) in the language reference.
+
+You can specify different behavior using [constraints](programming-guide/generics/constraints-on-type-parameters.md):
+
+- The `class` constraint means that `T` must be a non-nullable reference type (for example `string`). The compiler produces a warning if you use a nullable reference type, such as `string?` for `T`.
+- The `class?` constraint means that `T` must be a reference type, either non-nullable (`string`) or a nullable reference type (for example `string?`). When the type parameter is a nullable reference type, such as `string?`, an expression of `T?` references that same nullable reference type, such as `string?`.
+- The `notnull` constraint means that `T` must be a non-nullable reference type, or a non-nullable value type. If you use a nullable reference type or a nullable value type for the type parameter, the compiler produces a warning. Furthermore, when `T` is a value type, the return value is that value type, not the corresponding nullable value type.
 
 These constraints help provide more information to the compiler on how `T` will be used. That helps when developers choose the type for `T`, and provides better *null-state* analysis when an instance of the generic type is used.
 
@@ -206,7 +217,7 @@ For any line of code, you can set any of the following combinations:
 | disabled        | project default    | Rarely                                 |
 | disabled        | enabled            | Rarely                                 |
 
-Those nine combinations provide you with fine-grained control over the diagnostics the compiler emits for your code. You can enable more features in any area you are updating, without seeing additional warnings you aren't ready to address yet.
+Those nine combinations provide you with fine-grained control over the diagnostics the compiler emits for your code. You can enable more features in any area you're updating, without seeing additional warnings you aren't ready to address yet.
 
 > [!IMPORTANT]
 > The global nullable context does not apply for generated code files. Under either strategy, the nullable context is *disabled* for any source file marked as generated. This means any APIs in generated files are not annotated. There are four ways a file is marked as generated:
@@ -302,7 +313,9 @@ In the preceding example, the declaration of the array shows it holds non-nullab
 
 ## See also
 
+- [Nullable reference types proposal](~/_csharplang/proposals/csharp-8.0/nullable-reference-types.md)
 - [Draft nullable reference types specification](~/_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md)
+- [Unconstrained type parameter annotations](~/_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md)
 - [Intro to nullable references tutorial](whats-new/tutorials/nullable-reference-types.md)
 - [Migrate an existing codebase to nullable references](whats-new/tutorials/upgrade-to-nullable-references.md)
 - [**Nullable** (C# Compiler option)](language-reference/compiler-options/language.md#nullable)

@@ -96,23 +96,23 @@ Project file:
 
 ## Thread injection in response to blocking work items
 
-In some cases the thread pool detects work items that block its threads and responds more quickly by injecting more threads to compensate. The following [runtime configuration](https://github.com/dotnet/docs/blob/main/docs/core/run-time-config/index.md) settings may be used to configure thread injection in response to blocking work items. Currently, these settings take effect only for work items that wait for another task to complete, such as in typical [sync-over-async](https://devblogs.microsoft.com/pfxteam/should-i-expose-synchronous-wrappers-for-asynchronous-methods/) cases.
+In some cases, the thread pool detects work items that block its threads. To compensate, it injects more threads. You can use the following [runtime configuration](https://github.com/dotnet/docs/blob/main/docs/core/run-time-config/index.md) settings to configure thread injection in response to blocking work items. Currently, these settings take effect only for work items that wait for another task to complete, such as in typical [sync-over-async](https://devblogs.microsoft.com/pfxteam/should-i-expose-synchronous-wrappers-for-asynchronous-methods/) cases.
 
-| Setting name | Description |
+| *runtimeconfig.json* setting name | Description |
 | - | - |
 | `System.Threading.ThreadPool.Blocking.ThreadsToAddWithoutDelay_ProcCountFactor` | After the thread count based on `MinThreads` is reached, this value (after it is multiplied by the processor count) specifies how many additional threads may be created without a delay. |
-| `System.Threading.ThreadPool.Blocking.ThreadsPerDelayStep_ProcCountFactor` | After the thread count based on `ThreadsToAddWithoutDelay` is reached, this value (after it is multiplied by the processor count) specifies after how many threads an additional DelayStepMs would be added to the delay before each new thread is created. |
+| `System.Threading.ThreadPool.Blocking.ThreadsPerDelayStep_ProcCountFactor` | After the thread count based on `ThreadsToAddWithoutDelay` is reached, this value (after it is multiplied by the processor count) specifies after how many threads an additional `DelayStepMs` would be added to the delay before each new thread is created. |
 | `System.Threading.ThreadPool.Blocking.DelayStepMs` | After the thread count based on `ThreadsToAddWithoutDelay` is reached, this value specifies how much additional delay to add per `ThreadsPerDelayStep` threads, which would be applied before each new thread is created. |
 | `System.Threading.ThreadPool.Blocking.MaxDelayMs` | After the thread count based on `ThreadsToAddWithoutDelay` is reached, this value specifies the max delay to use before each new thread is created. |
 
 ### How the configuration settings take effect
 
-- After the thread count based on `MinThreads` is reached, up to `ThreadsToAddWithoutDelay` additional threads may be created without a delay
-- After that, before each additional thread is created, a delay is induced, starting with `DelayStepMs`
-- For every `ThreadsPerDelayStep` threads that are added with a delay, an additional `DelayStepMs` is added to the delay
-- The delay may not exceed `MaxDelayMs`
+- After the thread count based on `MinThreads` is reached, up to `ThreadsToAddWithoutDelay` additional threads may be created without a delay.
+- After that, before each additional thread is created, a delay is induced, starting with `DelayStepMs`.
+- For every `ThreadsPerDelayStep` threads that are added with a delay, an additional `DelayStepMs` is added to the delay.
+- The delay may not exceed `MaxDelayMs`.
 - Delays are only induced before creating threads. If threads are already available, they would be released without delay to compensate for blocking work items.
-- Physical memory usage and limits are also used and beyond a threshold, the system switches to slower thread injection
+- Physical memory usage and limits are also used and, beyond a threshold, the system switches to slower thread injection.
 
 ### Examples
 

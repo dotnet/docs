@@ -137,6 +137,16 @@ The following example shows how to define a `using` directive and a `using` alia
 
 :::code language="csharp" source="./snippets/csrefKeywordsNamespace2.cs" id="Snippet9":::
 
+## How to use the Visual Basic `My` namespace
+
+The <xref:Microsoft.VisualBasic.MyServices> namespace (`My` in Visual Basic) provides easy and intuitive access to a number of .NET classes, enabling you to write code that interacts with the computer, application, settings, resources, and so on. Although originally designed for use with Visual Basic, the `MyServices` namespace can be used in C# applications.
+
+For more information about using the `MyServices` namespace from Visual Basic, see [Development with My](../../../visual-basic/developing-apps/development-with-my/index.md).
+
+You need to add a reference to the *Microsoft.VisualBasic.dll* assembly in your project. Not all the classes in the `MyServices` namespace can be called from a C# application: for example, the <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy> class is not compatible. In this particular case, the static methods that are part of <xref:Microsoft.VisualBasic.FileIO.FileSystem>, which are also contained in VisualBasic.dll, can be used instead. For example, here is how to use one such method to duplicate a directory:
+
+:::code language="csharp" source="./snippets/Namespaces3.cs" id="Snippet20":::
+
 ## C# language specification
 
 For more information, see [Using directives](~/_csharplang/spec/namespaces.md#using-directives) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
@@ -147,7 +157,6 @@ For more information on the *global using* modifier, see the [global usings feat
 
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
-- [Using Namespaces](../../programming-guide/namespaces/using-namespaces.md)
 - [C# Keywords](index.md)
 - [Namespaces](../../fundamentals/types/namespaces.md)
 - [using Statement](using-statement.md)

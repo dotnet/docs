@@ -5,7 +5,7 @@ ms.date: 08/21/2018
 ---
 # Identifier names
 
-An **identifier** is the name you assign to a type (class, interface, struct, delegate, or enum), member, variable, or namespace. Valid identifiers must follow these rules:
+An **identifier** is the name you assign to a type (class, interface, struct, delegate, or enum), member, variable, declared constant, or namespace. Valid identifiers must follow these rules:
 
 - Identifiers must start with a letter, or `_`.
 - Identifiers may contain Unicode letter characters, decimal digit characters, Unicode connecting characters, Unicode combining characters, or Unicode formatting characters. For more information on Unicode categories, see the [Unicode Category Database](https://www.unicode.org/reports/tr44/).

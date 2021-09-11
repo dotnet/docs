@@ -415,12 +415,14 @@ For more information about deployment, see [.NET application deployment](../depl
 The following MSBuild properties are documented in this section:
 
 - [EmbeddedResourceUseDependentUponConvention](#embeddedresourceusedependentuponconvention)
+- [EnablePreviewFeatures](#enablepreviewfeatures)
+- [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute)
 
 C# compiler options can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
 
 ### EmbeddedResourceUseDependentUponConvention
 
-The `EmbeddedResourceUseDependentUponConvention` property defines whether resource manifest file names are generated from type information in source files that are colocated with resource files. For example, if *Form1.resx* is in the same folder as *Form1.cs*, and `EmbeddedResourceUseDependentUponConvention` is set to `true`, the generated *.resources* file takes its name from the first type that's defined in *Form1.cs*. For example, if `MyNamespace.Form1` is the first type defined in *Form1.cs*, the generated file name is *MyNamespace.Form1.resources*.
+The `EmbeddedResourceUseDependentUponConvention` property defines whether resource manifest file names are generated from type information in source files that are co-located with resource files. For example, if *Form1.resx* is in the same folder as *Form1.cs*, and `EmbeddedResourceUseDependentUponConvention` is set to `true`, the generated *.resources* file takes its name from the first type that's defined in *Form1.cs*. For example, if `MyNamespace.Form1` is the first type defined in *Form1.cs*, the generated file name is *MyNamespace.Form1.resources*.
 
 > [!NOTE]
 > If `LogicalName`, `ManifestResourceName`, or `DependentUpon` metadata is specified for an `EmbeddedResource` item, the generated manifest file name for that resource file is based on that metadata instead.
@@ -432,6 +434,38 @@ By default, in a new .NET project, this property is set to `true`. If set to `fa
   <EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
 </PropertyGroup>
 ```
+
+### EnablePreviewFeatures
+
+The `EnablePreviewFeatures` property defines whether your project depends on any APIs or assemblies that are decorated with the <xref:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute> attribute. This attribute is used to signify that an API or assembly uses features that are considered to be in *preview* for the SDK version you're using. Preview features are not supported and may be removed in a future version. To enable the use of preview features, set the property to `True`.
+
+```xml
+<PropertyGroup>
+  <EnablePreviewFeatures>True</EnablePreviewFeatures>
+</PropertyGroup>
+```
+
+When a project contains this property set to `True`, the following assembly-level attribute is added to the *AssemblyInfo.cs* file:
+
+```csharp
+[assembly: RequiresPreviewFeatures]
+```
+
+An analyzer warns if this attribute is present on dependencies for projects where `EnablePreviewFeatures` is not set to `True`.
+
+### GenerateRequiresPreviewFeaturesAttribute
+
+The `GenerateRequiresPreviewFeaturesAttribute` property is closely related to the [EnablePreviewFeatures](#enablepreviewfeatures) property. If your library uses preview features but you don't want the entire assembly to be marked with the <xref:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute> attribute, which would require any consumers to [enable preview features](#enablepreviewfeatures), set this property to `False`.
+
+```xml
+<PropertyGroup>
+    <EnablePreviewFeatures>True</EnablePreviewFeatures>
+    <GenerateRequiresPreviewFeaturesAttribute>False</GenerateRequiresPreviewFeaturesAttribute>
+</PropertyGroup>
+```
+
+> [!IMPORTANT]
+> If you set the `GenerateRequiresPreviewFeaturesAttribute` property to `False`, you must be certain to decorate all public APIs that rely on preview features with <xref:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute>.
 
 ## Default item inclusion properties
 

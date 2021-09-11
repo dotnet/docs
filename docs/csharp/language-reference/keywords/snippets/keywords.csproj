@@ -7,4 +7,8 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <StartupObject>keywords.Program</StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualBasic" Version="10.4.0-preview.18571.3" />
+  </ItemGroup>
 </Project>

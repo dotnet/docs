@@ -1,7 +1,7 @@
 ---
 title: dotnet workload update command
 description: The 'dotnet workload update' command updates installed workloads.
-ms.date: 08/31/2021
+ms.date: 09/10/2021
 ---
 # dotnet workload update
 
@@ -17,7 +17,6 @@ ms.date: 08/31/2021
 dotnet workload update
     [--advertising-manifests-only]
     [--configfile <FILE>] [--disable-parallel]
-    [--download-to-cache <CACHE>] [--from-cache <CACHE>]
     [--from-previous-sdk] [--ignore-failed-sources]
     [--include-previews] [--interactive] [--no-cache]
     [-s|--source <SOURCE>] [--temp-dir <PATH>]
@@ -43,10 +42,6 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 [!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 
 [!INCLUDE [disable-parallel](../../../includes/cli-disable-parallel.md)]
-
-[!INCLUDE [download-to-cache](../../../includes/cli-download-to-cache.md)]
-
-[!INCLUDE [from-cache](../../../includes/cli-from-cache.md)]
 
 - **`--from-previous-sdk`**
 

@@ -1,7 +1,7 @@
 ---
 title: Code-style naming rules
 description: Learn about the .NET code-style rules for naming code elements.
-ms.date: 09/25/2020
+ms.date: 09/12/2021
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -19,19 +19,22 @@ helpviewer_keywords:
 ---
 # Code-style naming rules
 
-In your `.editorconfig` file, you can define **naming rules** that specify and enforce how .NET programming language code elements&mdash;such as classes, properties, and methods&mdash;should be named. For example, you can specify that public members must be capitalized, or that private fields must begin with `_`.
+In your `.editorconfig` file, you can define **naming rules** that specify and enforce how .NET programming language code elements &ndash;&nbsp;such as classes, properties, and methods&nbsp;&ndash; should be named. For example, you can specify that public members must be capitalized, or that private fields must begin with `_`.
 
 A naming rule has three components:
 
-* The **symbol group** that the rule applies to, for example, public members or private fields.
-* The **naming style** to associate with the rule, for example, that the name must be capitalized or start with an underscore.
-* The severity for enforcing the convention.
+1. The **symbol group** that the rule applies to; for example, public members or private fields.
+1. The **naming style** to apply with the rule; for example, the name must be capitalized or start with an underscore.
+1. The **naming rule**, linking
+   - *symbol group*
+   - *naming style*
+   - *severity* (enforcing the convention)
 
-First, you must specify the symbol group and naming style and give each of them a title. Then you specify the naming rule, which links everything together.
+   for enabling the rule.
 
 ## General syntax
 
-To define a naming rule, symbol group, or naming style, set one or more properties using the following syntax:
+To define a *symbol group*, *naming style*, or *naming rule* component, use the following general syntax:
 
 ```ini
 <kind>.<title>.<propertyName> = <propertyValue>
@@ -39,55 +42,52 @@ To define a naming rule, symbol group, or naming style, set one or more properti
 
 Each property should only be set once, but some settings allow multiple, comma-separated values.
 
-The order of the properties is not important.
-
 ### \<kind>
 
-**\<kind>** specifies which kind of element is being defined&mdash;naming rule, symbol group, or naming style&mdash;and must be one of the following:
+**\<kind>** specifies which component is being defined &ndash;&nbsp;[symbol group](#symbol-group-properties), [naming style](#naming-style-properties), or [naming rule](#naming-rule-properties)&nbsp;&ndash; and must be one of the following:
 
-| To set a property for | Use the \<kind> value | Example |
+| Component | \<kind> value | Example |
 | --- | --- | -- |
+| Symbol group | `dotnet_naming_symbols` | `dotnet_naming_symbols.interfaces.applicable_kinds = interface` |
+| Naming style | `dotnet_naming_style` | `dotnet_naming_style.pascal_casing.capitalization = pascal_case` |
 | Naming rule | `dotnet_naming_rule` | `dotnet_naming_rule.types_should_be_pascal_case.severity = suggestion` |
-| Symbol group | `dotnet_naming_symbols` | `dotnet_naming_symbols.interface.applicable_kinds = interface` |
-| Naming style | `dotnet_naming_style` | `dotnet_naming_style.pascal_case.capitalization = pascal_case` |
-
-Each type of definition&mdash;[naming rule](#naming-rule-properties), [symbol group](#symbol-group-properties), or [naming style](#naming-style-properties)&mdash;has its own supported properties, as described in the following sections.
 
 ### \<title>
 
-**\<title>** is a descriptive name you choose that associates multiple property settings into a single definition. For example, the following properties produce two symbol group definitions, `interface` and `types`, each of which has two properties set on it.
+**\<title>** is an arbitrary descriptive name you choose for assigning multiple property settings to a single component definition.
+
+For example, the following assignments produce three [symbol group](#symbol-group-properties) components, `interface`, `all_classes`, and `my_type_group`, each of which has two properties set on it:
 
 ```ini
 dotnet_naming_symbols.interface.applicable_kinds = interface
 dotnet_naming_symbols.interface.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 
-dotnet_naming_symbols.types.applicable_kinds = class, struct, interface, enum, delegate
-dotnet_naming_symbols.types.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.all_classes.applicable_kinds = class
+dotnet_naming_symbols.all_classes.applicable_accessibilities = *
+
+dotnet_naming_symbols.my_type_group.applicable_kinds = class, struct, interface, enum, delegate
+dotnet_naming_symbols.my_type_group.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 ```
+
+### \<propertyName>
+
+Each of the three naming rule component definitions &ndash;&nbsp;[symbol group](#symbol-group-properties), [naming style](#naming-style-properties), or [naming rule](#naming-rule-properties)&nbsp;&ndash; has its own properties, as described in the following sections.
 
 ## Naming rule properties
 
-All naming rule properties are required for a rule to take effect.
+All three naming rule components &ndash;&nbsp;[symbol group](#symbol-group-properties), [naming style](#naming-style-properties), or [naming rule](#naming-rule-properties)&nbsp;&ndash; are required for a rule to take effect.
 
-| Property | Description |
-| -- | -- |
-| `symbols` | The title of a symbol group; the naming rule will be applied to the symbols in this group |
-| `style` | The title of the naming style which should be associated with this rule |
-| `severity` |  Sets the severity with which to enforce the naming rule. Set the associated value to one of the available [severity levels](../configuration-options.md#severity-level).<sup>1</sup> |
+### *Symbol group* properties
 
-**Notes:**
+You can set the following properties for symbol groups, to define which symbols are affected by the group.
 
-1. Severity specification within a naming rule is only respected inside development IDEs, such as Visual Studio. This setting is not understood by the C# or VB compilers, hence not respected during build. To enforce naming style rules on build, you should instead set the severity by using [code rule severity configuration](#rule-id-ide1006-naming-rule-violation). For more information, see this [GitHub issue](https://github.com/dotnet/roslyn/issues/44201).
+To specify multiple values for a single property, separate the values with a comma.
 
-## Symbol group properties
-
-You can set the following properties for symbol groups, to limit which symbols are included in the group. To specify multiple values for a single property, separate the values with a comma.
-
-| Property | Description | Allowed values | Required |
+| Property | Description | Required | Allowed values |
 | -- | -- | -- | -- |
-| `applicable_kinds` | Kinds of symbols in the group <sup>1</sup> | `*` (use this value to specify all symbols)<br/>`namespace`<br/>`class`<br/>`struct`<br/>`interface`<br/>`enum`<br/>`property`<br/>`method`<br/>`field`<br/>`event`<br/>`delegate`<br/>`parameter`<br/>`type_parameter`<br/>`local`<br/>`local_function` | Yes |
-| `applicable_accessibilities` | Accessibility levels of the symbols in the group | `*` (use this value to specify all accessibility levels)<br/>`public`<br/>`internal` or `friend`<br/>`private`<br/>`protected`<br/>`protected_internal` or `protected_friend`<br/>`private_protected`<br/>`local` (for symbols defined within a method) | Yes |
-| `required_modifiers` | Only match symbols with _all_ the specified modifiers <sup>2</sup> | `abstract` or `must_inherit`<br/>`async`<br/>`const`<br/>`readonly`<br/>`static` or `shared` <sup>3</sup> | No |
+| `applicable_kinds` | Kinds of symbols in the group&nbsp;<sup>1</sup> | Yes | `*` (use this value to specify all symbols)<br/>`namespace`<br/>`class`&nbsp;<sup>4</sup><br/>`struct`<br/>`interface`<br/>`enum`<br/>`property`<br/>`method`<br/>`field`<br/>`event`<br/>`delegate`<br/>`parameter`<br/>`type_parameter`<br/>`local`<br/>`local_function` |
+| `applicable_accessibilities` | Accessibility levels of the symbols in the group | Yes | `*` (use this value to specify all accessibility levels)<br/>`public`<br/>`internal` or `friend`<br/>`private`<br/>`protected`<br/>`protected_internal` or `protected_friend`<br/>`private_protected`<br/>`local` (for symbols defined within a method) |
+| `required_modifiers` | Only match symbols with _all_ the specified modifiers&nbsp;<sup>2</sup> | No | `abstract` or `must_inherit`<br/>`async`<br/>`const`<br/>`readonly`<br/>`static` or `shared`&nbsp;<sup>3</sup> |
 
 **Notes:**
 
@@ -96,27 +96,39 @@ You can set the following properties for symbol groups, to limit which symbols a
 3. If your group has `static` or `shared` in the `required_modifiers` property, the group will also include `const` symbols because they are implicitly `static`/`Shared`. However, if you don't want the `static` naming rule to apply to `const` symbols, you can create a new naming rule with a symbol group of `const`.
 4. `class` includes [C# records](../../../csharp/language-reference/builtin-types/record.md).
 
-## Naming style properties
+### *Naming style* properties
 
-A naming style defines the conventions you want to enforce with the rule. For example:
+You can set the following properties for *naming styles*, to define the conventions you want to enforce. For example:
 
 * Capitalize with `PascalCase`
 * Starts with `m_`
 * Ends with `_g`
 * Separate words with `__`
 
-You can set the following properties for a naming style:
-
-| Property | Description | Allowed values | Required |
+| Property | Description | Required | Allowed values |
 | -- | -- | -- | -- |
-| `capitalization` | Capitalization style for words within the symbol | `pascal_case`<br/>`camel_case`<br/>`first_word_upper`<br/>`all_upper`<br/>`all_lower` | Yes<sup>1</sup> |
-| `required_prefix` | Must begin with these characters | | No |
-| `required_suffix` | Must end with these characters | | No |
-| `word_separator` | Words within the symbol need to be separated with this character | | No |
+| `capitalization` | Capitalization style for words within the symbol | Yes&nbsp;<sup>1</sup> | `pascal_case`<br/>`camel_case`<br/>`first_word_upper`<br/>`all_upper`<br/>`all_lower` |
+| `required_prefix` | Must begin with these characters | No | Any valid token, without quotes |
+| `required_suffix` | Must end with these characters | No | Any valid token, without quotes |
+| `word_separator` | Words within the symbol need to be separated with this character | No | Any valid token, without quotes |
 
 **Notes:**
 
-1. You must specify a capitalization style as part of your naming style, otherwise your naming style might be ignored.
+1. You must specify a capitalization style as part of your naming style, otherwise your naming style will be ignored.
+
+### *Naming rule* properties
+
+The following properties for *naming rules* link a [symbol group](#symbol-group-properties) and a [naming style](#naming-style-properties) with a severity, thereby enabling the rule:
+
+| Property | Description | Required | Allowed values |
+| -- | -- | -- | -- |
+| `symbols` | The title of a *symbol group* to which the naming rule will be applied | Yes |
+| `style` | The title of the *naming style* to apply with this rule | Yes |
+| `severity` |  Severity with which to enforce the naming rule.<br/>Set the associated value to one of the available [severity levels](../configuration-options.md#severity-level).<sup>1</sup> | Yes | `error`<br/>`warning`<br/>`suggestion`<br/>`silent`<br/>`none`<br/>`default` |
+
+**Notes:**
+
+1. Severity specification within a naming rule is only respected inside development IDEs, such as Visual Studio. This setting is not understood by the C# or VB compilers, hence not respected during build. To enforce naming style rules on build, you should set the severity by using [code rule severity configuration](#rule-id-ide1006-naming-rule-violation). For more information, see this [GitHub issue](https://github.com/dotnet/roslyn/issues/44201).
 
 ## Rule order
 
@@ -144,7 +156,7 @@ dotnet_diagnostic.IDE1006.severity = <severity value>
 
 The severity value must be `warning` or `error` to be [enforced on build](../overview.md#code-style-analysis). For all possible severity values, see [severity level](../configuration-options.md#severity-level).
 
-## Example
+## Examples
 
 The following *.editorconfig* file contains a naming convention that specifies that public properties, methods, fields, events, and delegates must be capitalized. Notice that this naming convention specifies multiple kinds of symbol to apply the rule to, using a comma to separate the values.
 
@@ -152,19 +164,38 @@ The following *.editorconfig* file contains a naming convention that specifies t
 [*.{cs,vb}]
 
 # Defining the 'public_symbols' symbol group
-dotnet_naming_symbols.public_symbols.applicable_kinds           = property,method,field,event,delegate
+dotnet_naming_symbols.public_symbols.applicable_kinds = property,method,field,event,delegate
 dotnet_naming_symbols.public_symbols.applicable_accessibilities = public
-dotnet_naming_symbols.public_symbols.required_modifiers         = readonly
+dotnet_naming_symbols.public_symbols.required_modifiers = readonly
 
 # Defining the `first_word_upper_case_style` naming style
 dotnet_naming_style.first_word_upper_case_style.capitalization = first_word_upper
 
 # Defining the `public_members_must_be_capitalized` naming rule, by setting the symbol group to the 'public symbols' symbol group,
-dotnet_naming_rule.public_members_must_be_capitalized.symbols   = public_symbols
+dotnet_naming_rule.public_members_must_be_capitalized.symbols = public_symbols
 # setting the naming style to the `first_word_upper_case_style` naming style,
-dotnet_naming_rule.public_members_must_be_capitalized.style    = first_word_upper_case_style
+dotnet_naming_rule.public_members_must_be_capitalized.style = first_word_upper_case_style
 # and setting the severity.
 dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
+```
+
+The next example enforces private fields to be prefixed by an underscore:
+
+```ini
+[*.{cs,vb}]
+
+# Defining the 'private_field' symbol group
+dotnet_naming_symbols.private_field.applicable_kinds = field
+dotnet_naming_symbols.private_field.applicable_accessibilities = private
+
+# Defining the `underscore_prefix_private_field` naming style
+dotnet_naming_style.underscore_prefix_private_field.capitalization = camel_case ; required for rule to be enabled
+dotnet_naming_style.underscore_prefix_private_field.required_prefix = _
+
+# Defining the 'prefix_private_field_with_underscore' naming rule
+dotnet_naming_rule.prefix_private_field_with_underscore.symbols = private_field
+dotnet_naming_rule.prefix_private_field_with_underscore.style = underscore_prefix_private_field
+dotnet_naming_rule.prefix_private_field_with_underscore.severity = warning
 ```
 
 ## See also

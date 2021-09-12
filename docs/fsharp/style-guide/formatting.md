@@ -971,7 +971,7 @@ match lam with
 
 ```
 
-If using less than 4 spaces of indentation, the expression should still be indented 4 spaces to ensure sufficient separation between the clauses and the subexpression.
+If using less than 4 spaces of indentation, the expression should still be indented 4 spaces to ensure sufficient visual separation between the clauses and the subexpression.
 
 ```fsharp
 // Using 2 spaces of indentation

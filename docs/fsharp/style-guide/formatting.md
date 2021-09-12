@@ -971,6 +971,28 @@ match lam with
 
 ```
 
+If using less than 4 spaces of indentation, the expression should still be indented 4 spaces to ensure sufficient separation between the clauses and the subexpression.
+
+```fsharp
+// Using 2 spaces of indentation
+
+// OK
+match lam with
+| Var v -> 1
+| Abs(x, body) ->
+    1 + sizeLambda body
+| App(lam1, lam2) ->
+    sizeLambda lam1 + sizeLambda lam2
+
+// Not OK
+match lam with
+| Var v -> 1
+| Abs(x, body) ->
+  1 + sizeLambda body
+| App(lam1, lam2) ->
+  sizeLambda lam1 + sizeLambda lam2
+```
+
 Pattern matching of anonymous functions, starting by `function`, should generally not indent too far. For example, indenting one scope as follows is fine:
 
 ```fsharp

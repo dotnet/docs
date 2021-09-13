@@ -3,7 +3,7 @@ title: Deploy a Worker Service to Azure
 description: Learn how to deploy a .NET Worker Service to Azure.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/03/2021
+ms.date: 09/10/2021
 ms.topic: tutorial
 zone_pivot_groups: development-environment-one
 ---
@@ -34,9 +34,6 @@ In this tutorial, you learn how to:
   - [.NET CLI](../tools/index.md)
   - [Azure CLI](/cli/azure/install-azure-cli).
 
-> [!TIP]
-> If you're using **Visual Studio Code**, install the [Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account).
-
 <!-- ## Create a new project -->
 [!INCLUDE [zoned-file-new-worker](includes/zoned-file-new-worker.md)]
 
@@ -53,13 +50,28 @@ If you didn't select this option, no worries &mdash; you can still add it now. I
 :::zone-end
 :::zone target="docs" pivot="vscode"
 
-In Visual Studio Code, you'll need the [Docker extension](https://code.visualstudio.com/docs/containers/overview) installed. Open the Command Palette, and select the **Docker: Add Docker files to workspace** option. If prompted to **Select Application Platform** choose **.NET: Core Console**. If prompted to **Select Project**, choose the Worker Service project you created. When prompted to **Select Operating System**, choose the first listed OS. When prompted whether or not to **Include optional Docker Compose files**, select **No**.
+In Visual Studio Code, you'll need the [Docker extension](https://code.visualstudio.com/docs/containers/overview) and the [Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) installed. Open the Command Palette, and select the **Docker: Add Docker files to workspace** option. If prompted to **Select Application Platform** choose **.NET: Core Console**. If prompted to **Select Project**, choose the Worker Service project you created. When prompted to **Select Operating System**, choose the first listed OS. When prompted whether or not to **Include optional Docker Compose files**, select **No**.
 
 :::zone-end
 
-Docker support requires a *Dockerfile*. This file is a set of comprehensive instructions, for building your .NET Worker Service as a Docker image. The following is an example *Dockerfile*, and should exist at the root directory of the project file:
+Docker support requires a *Dockerfile*. This file is a set of comprehensive instructions, for building your .NET Worker Service as a Docker image. The following is an example *Dockerfile*, and should exist at the root directory of the project file.
+
+:::zone target="docs" pivot="cli"
+
+With the CLI, the *Dockerfile* is **not** created for you. You'll need to copy its contents into a new file name *Dockerfile*, and again this file should be in the root directory of the project.
+
+:::zone-end
 
 :::code language="dockerfile" source="snippets/workers/cloud-service/Dockerfile":::
+
+:::zone target="docs" pivot="cli"
+
+> [!NOTE]
+> You need to update the various lines in the *Dockerfile* that reference *App.CloudService* &mdash; replace this with the name of your project.
+
+For more information on the official .NET images, see [Docker Hub: .NET Runtime](https://hub.docker.com/_/microsoft-dotnet-runtime?tab=description) and [Docker Hub: .NET SDK](https://hub.docker.com/_/microsoft-dotnet-sdk?tab=description).
+
+:::zone-end
 
 ### Build the Docker image
 
@@ -116,6 +128,8 @@ As the `docker build` command runs, it processes each line in the *Dockerfile* a
 
 ## Create container registry
 
+:::zone target="docs" pivot="visualstudio,vscode"
+
 An Azure Container Registry (ACR) resource allows you to build, store, and manage container images and artifacts in a private registry. To create a container registry, you'll need to [create a new resource](https://ms.portal.azure.com/#create/Microsoft.ContainerRegistry) in the Azure portal.
 
 1. Select the **Subscription**, and corresponding **Resource group** (or create a new one).
@@ -127,6 +141,39 @@ An Azure Container Registry (ACR) resource allows you to build, store, and manag
 
 > [!IMPORTANT]
 > In order to use this container registry when creating a container instance, you must enable **Admin user**. Select **Access keys**, and enable **Admin user**.
+
+:::zone-end
+:::zone target="docs" pivot="cli"
+
+An Azure Container Registry (ACR) resource allows you to build, store, and manage container images and artifacts in a private registry. Open a terminal window in the root directory of the *Dockerfile*, and run the following Azure CLI command:
+
+> [!IMPORTANT]
+> To interact with Azure resources from the Azure CLI, you must be authenticated for your terminal session. To authenticate, use the [`az login`](/cli/azure/authenticate-azure-cli) command:
+>
+> ```azurecli
+> az login
+> ```
+>
+> After you're logged in, use the [`az account set`](/cli/azure/account#az_account_set) command to specify your subscription when you have more than one and no default subscription set.
+>
+> ```azurecli
+> az account set --subscription <subscription name or id>
+> ```
+
+Once you login to the Azure CLI, your session can interact with resources accordingly. To create a container registry, you'll need to call the [`az acr create`](/cli/azure/acr#az_acr_create) command.
+
+```azurecli
+az acr create -n <registry-name> -g <resource-group> --sku <sku> --admin-enabled true
+```
+
+Replace the `<registry-name>`, `<resource-group>`, and `<sku>` (for example **Basic**, **Classic**, **Premium**, **Standard**) with your own appropriate values.
+
+The preceding command:
+
+- Creates an Azure Container Registry, given a registry name, in the specified resource group.
+- Enabled an Admin user &mdash; this is required for Azure Container Instances.
+
+:::zone-end
 
 For more information, see [Quickstart: Create an Azure container registry](/azure/container-registry/container-registry-get-started-portal).
 
@@ -162,20 +209,7 @@ The integrated terminal window will report the progress of the `docker push` com
 :::zone-end
 :::zone target="docs" pivot="cli"
 
-Open a terminal window in the root directory of the *Dockerfile*, and run the following Azure CLI command:
-
-> [!IMPORTANT]
-> To interact with Azure resources from the Azure CLI, you must be authenticated for your terminal session. To authenticate, use the [`az login`](/cli/azure/authenticate-azure-cli) command:
->
-> ```azurecli
-> az login
-> ```
->
-> After you're logged in, use the [`az account set`](/cli/azure/account#az_account_set) command to specify your subscription when you have more than one and no default subscription set.
->
-> ```azurecli
-> az account set --subscription <subscription name or id>
-> ```
+To push an image to the container registry, you need to login to the registry first:
 
 ```azurecli
 az acr login -n <registry name>
@@ -212,19 +246,29 @@ Expand the **REGISTRIES** node, select **Azure**, your  subscription > the conta
 :::image type="content" source="media/vs-code-deploy-to-aci.png" alt-text="Visual Studio Code - Docker: Deploy image to Azure Container Instances":::
 
 :::zone-end
+:::zone target="docs" pivot="cli"
 
-:::zone target="docs" pivot="visualstudio,cli"
+To create a container instance, you'll need to create a container group using the [`az container create`](/cli/azure/container#az_container_create) command.
+
+```azurecli
+az container create -g <resource-group> --name <instance-name> --image myAcrRegistry.azurecr.io/myimage:latest --registry-password password
+```
+
+:::zone-end
+:::zone target="docs" pivot="visualstudio"
 
 To create a container instance, you'll need to [create a new resource](https://ms.portal.azure.com/#create/Microsoft.ContainerInstances) in the Azure portal.
 
 1. Select the same **Subscription**, and corresponding **Resource group** from the previous section.
 1. Enter a **Container name** &mdash; `appcloudservice-container`.
 1. Select a **Region** that corresponds to the previous **Location** selection.
-1. Select **Azure Container Registry** as the **Image source**.
+1. For **Image source**, select **Azure Container Registry**.
 1. Select the **Registry** by the name provided in the previous step.
 1. Select the **Image** and **Image tag**.
 1. Select **Review + create**.
 1. Assuming **Validation passed**, select **Create**.
+
+It may take a moment for the resources to be created, once created select the **Go to resource** button.
 
 For more information, see [Quickstart: Create an Azure container instance](/azure/container-instances/container-instances-quickstart-portal).
 

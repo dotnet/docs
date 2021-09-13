@@ -23,20 +23,20 @@ The platform compatibility analyzer is one of the Roslyn code quality analyzers.
 ## How the analyzer determines platform dependency
 
 - An **unattributed API** is considered to work on **all OS platforms**.
-- An API marked with `[SupportedOSPlatform("platform")]` is considered only portable to the specified and parent OS `platform(s)`.
+- An API marked with `[SupportedOSPlatform("platform")]` is considered only portable to the specified platform and its parent OS.
   - The attribute can be applied multiple times to indicate **multiple platform support**, for example `[SupportedOSPlatform("windows"), SupportedOSPlatform("Android29.0")]`.
-  - For [**related** platforms](#related-platforms) the attribute also imply its parent support:
-    - For example `[SupportedOSPlatform("iOS")` annotation imply that the API is supported on `iOS` and also supported on its parent platform: `MacCatalyst`.
+  - For [**related** platforms](#related-platforms), the attribute implies that the parent is also supported.
+    - For example, `[SupportedOSPlatform("iOS")]` implies that the API is supported on `iOS` and also on its parent platform, `MacCatalyst`.
   - The analyzer will produce a **warning** if platform-specific APIs are referenced without a proper **platform context**:
     - **Warns** if the project doesn't target the supported platform (for example, a Windows-specific API called from a project targeting iOS `<TargetFramework>net5.0-ios14.0</TargetFramework>`).
     - **Warns** if the project is cross-platform and calls platform-specific APIs (for example, a Windows-specific API called from cross platform TFM `<TargetFramework>net5.0</TargetFramework>`).
     - **Doesn't warn** if the platform-specific API is referenced within a project that targets any of the **specified platforms** (for example, for a Windows-specific API called from a project targeting windows `<TargetFramework>net5.0-windows</TargetFramework>`).
     - **Doesn't warn** if the platform-specific API call is guarded by corresponding platform-check methods (for example, a Windows-specific API call guarded by `OperatingSystem.IsWindows()`).
     - **Doesn't warn** if the platform-specific API is referenced from the same platform-specific context (**call site also attributed** with `[SupportedOSPlatform("platform")`).
-- An API marked with `[UnsupportedOSPlatform("platform")]` is considered unsupported on the specified and parent OS `platform(s)` but supported for all other platforms.
+- An API marked with `[UnsupportedOSPlatform("platform")]` is considered to be unsupported on the specified platform and its parent OS, but supported for all other platforms.
   - The attribute can be applied multiple times with different platforms, for example, `[UnsupportedOSPlatform("iOS"), UnsupportedOSPlatform("Android29.0")]`.
-  - For [**related** platforms](#related-platforms) the attribute also imply its parent unsupport:
-    - For example: `[UnsupportedOSPlatform("iOS")` annotation imply that the API is unsupported on `iOS` and also unsupported on its parent platform: `MacCatalyst`.
+  - For [**related** platforms](#related-platforms), the attribute implies that the parent platform is also unsupported.
+    - For example, `[UnsupportedOSPlatform("iOS")]` implies that the API is unsupported on `iOS` and also on its parent platform, `MacCatalyst`.
   - The analyzer produces a **warning** only if the `platform` is effective for the call site:
     - **Warns** if the project targets the platform that's attributed as unsupported (for example, if the API is attributed with `[UnsupportedOSPlatform("windows")]` and the call site targets `<TargetFramework>net5.0-windows</TargetFramework>`).
     - **Warns** if the project is multi-targeted and the `platform` is included in the default [MSBuild `<SupportedPlatform>`](https://github.com/dotnet/sdk/blob/main/src/Tasks/Microsoft.NET.Build.Tasks/targets/Microsoft.NET.SupportedPlatforms.props) items group, or the `platform` is manually included within the `MSBuild` \<SupportedPlatform> items group:
@@ -62,15 +62,24 @@ The analyzer does not check target framework moniker (TFM) target platforms from
 
 ### Related platforms
 
-In .NET 6.0 we added new scenario for platforms relation where a platform could be a superset of another platform and the child platform annotation would imply the parent platform support/unsupport. If any platform check method of <xref:System.OperatingSystem> type has a `SupportedOSPlatformGuard("parentPlatform")]` attribute then that `parentPlatform` is accounted as a superset of the OS platform the method is checking.
+.NET 6 introduces the concept of *related platforms*, where one platform can be a superset of another platform. An annotation for the child platform implies the same support (or lack thereof) for the parent platform. If a platform check method in the <xref:System.OperatingSystem> type has a `SupportedOSPlatformGuard("parentPlatform")]` attribute, then `parentPlatform` is considered a superset of the OS platform the method is checking.
 
-For example <xref:System.OperatingSystem.IsIOS?displayProperty=nameWithType> has `SupportedOSPlatformGuard("MacCatalyst")]` therefore:
+For example, the <xref:System.OperatingSystem.IsIOS?displayProperty=nameWithType> method is attributed `[SupportedOSPlatformGuard("MacCatalyst")]`. Therefore, the following statements apply:
 
-  1. <xref:System.OperatingSystem.IsIOS?displayProperty=nameWithType> and <xref:System.OperatingSystem.IsIOSVersionAtLeast%2A?displayProperty=nameWithType> methods not only checking `iOS` platform, it also can be used for checking the platform `MacCatalyst`.
-  2. `[SupportedOSPlatform("iOS")` annotation imply that the API is supported on `iOS` and also supported on its parent platform: `MacCatalyst`.
-    - One can use `[UnsSupportedOSPlatform("MacCatalyst")]` attribute to exclude this implied support.
-  3. `[UnsupportedOSPlatform("iOS")` implies that the API is not supported on `iOS` and `Maccatalyst`
-    - One can use `[SupportedOSPlatform("MacCatalyst")]` attribute to exclude this implied unsupport.
+  - The <xref:System.OperatingSystem.IsIOS?displayProperty=nameWithType> and <xref:System.OperatingSystem.IsIOSVersionAtLeast%2A?displayProperty=nameWithType> methods check not only the `iOS` platform, but also the `MacCatalyst` platform.
+  - `[SupportedOSPlatform("iOS")]` implies that the API is supported on `iOS` and also on its parent platform, `MacCatalyst`.
+    You can use the `[UnsSupportedOSPlatform("MacCatalyst")]` attribute to exclude this implied support.
+  3. `[UnsupportedOSPlatform("iOS")` implies that the API is not supported on `iOS` and `Maccatalyst`.
+    - You can use the `[SupportedOSPlatform("MacCatalyst")]` attribute to exclude this implied lack of support.
+
+Consider the following support matrix.
+
+| | `SupportedOSPlatform(child)` | `SupportedOSPlatform(parent)` | `UnsupportedOSPlatform(child)` | `UnsupportedOSPlatform(parent)` |
+| - | - | - | - | - |
+| **Child OS** | ✔️ | ❌ | ✔️ | ❌ |
+| **Parent OS** | ✔️ | ✔️ | ✔️ | ✔️ |
+
+The following code snippet shows how you can combine attributes to set the right level of support.
 
 ```csharp
   // Macatalyst is a superset of iOS therefore supported on iOS and MacCatalyst  
@@ -94,7 +103,7 @@ For example <xref:System.OperatingSystem.IsIOS?displayProperty=nameWithType> has
   public void ApiUnsupportedOnMacCatalyst() { }
 
   [UnsupportedOSPlatform("iOS")] // Unsupported on iOS and MacCatalyst  
-  [SupportedOSPlatform("MacCatalyst")] // Removes implied MacCatalyst unsupport
+  [SupportedOSPlatform("MacCatalyst")] // Removes implied MacCatalyst unsupportedness
   public void ApiUnsupportedOnIos() { }
 ```
 

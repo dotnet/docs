@@ -66,11 +66,11 @@ The analyzer does not check target framework moniker (TFM) target platforms from
 
 For example, the <xref:System.OperatingSystem.IsIOS?displayProperty=nameWithType> method is attributed `[SupportedOSPlatformGuard("MacCatalyst")]`. Therefore, the following statements apply:
 
-  - The <xref:System.OperatingSystem.IsIOS?displayProperty=nameWithType> and <xref:System.OperatingSystem.IsIOSVersionAtLeast%2A?displayProperty=nameWithType> methods check not only the `iOS` platform, but also the `MacCatalyst` platform.
-  - `[SupportedOSPlatform("iOS")]` implies that the API is supported on `iOS` and also on its parent platform, `MacCatalyst`.
-    You can use the `[UnsSupportedOSPlatform("MacCatalyst")]` attribute to exclude this implied support.
-  3. `[UnsupportedOSPlatform("iOS")` implies that the API is not supported on `iOS` and `Maccatalyst`.
-    - You can use the `[SupportedOSPlatform("MacCatalyst")]` attribute to exclude this implied lack of support.
+- The <xref:System.OperatingSystem.IsIOS?displayProperty=nameWithType> and <xref:System.OperatingSystem.IsIOSVersionAtLeast%2A?displayProperty=nameWithType> methods check not only the `iOS` platform, but also the `MacCatalyst` platform.
+- `[SupportedOSPlatform("iOS")]` implies that the API is supported on `iOS` and also on its parent platform, `MacCatalyst`.
+  - You can use the `[UnsSupportedOSPlatform("MacCatalyst")]` attribute to exclude this implied support.
+- `[UnsupportedOSPlatform("iOS")` implies that the API is not supported on `iOS` and `Maccatalyst`.
+  - You can use the `[SupportedOSPlatform("MacCatalyst")]` attribute to exclude this implied lack of support.
 
 Consider the following support matrix.
 

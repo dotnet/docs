@@ -37,6 +37,10 @@ In this tutorial, you learn how to:
 <!-- ## Create a new project -->
 [!INCLUDE [zoned-file-new-worker](includes/zoned-file-new-worker.md)]
 
+Build the application to ensure it restores the dependent packages, and compiles without error.
+
+[!INCLUDE [zoned-build-app](includes/zoned-build-app.md)]
+
 ### Add Docker support
 
 :::zone target="docs" pivot="visualstudio"

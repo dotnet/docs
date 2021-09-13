@@ -1,4 +1,10 @@
-
+---
+title: Introduction to trim warnings
+description: Learn about why warnings may be produced when publishing a trimmed application, how to address them, and how to make the application "trim compatible."
+author: agocke
+ms.author: angocke
+ms.date: 09/08/2021
+---
 # Introduction to trim warnings
 
 Conceptually, trimming is very simple: when publishing the application, the .NET SDK analyzes the

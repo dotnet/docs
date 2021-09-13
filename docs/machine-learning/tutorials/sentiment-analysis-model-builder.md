@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Analyze sentiment - binary classification'
 description: This tutorial shows you how to create a Razor Pages application that classifies sentiment from website comments and takes the appropriate action. The binary sentiment classifier uses Model Builder in Visual Studio.
-ms.date: 11/21/2019
+ms.date: 08/07/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.topic: tutorial
@@ -21,6 +21,7 @@ In this tutorial, you learn how to:
 >
 > - Create an ASP.NET Core Razor Pages application
 > - Prepare and understand the data
+> - Create a Model Builder config file
 > - Choose a scenario
 > - Load the data
 > - Train the model
@@ -38,15 +39,17 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 ## Create a Razor Pages application
 
-1. Create a **ASP.NET Core Razor Pages Application**.
+1. Create a **ASP.NET Core Web Application**.
 
     1. Open Visual Studio and select **File > New > Project** from the menu bar.
-    1. In the New Project dialog, select the **Visual C#** node followed by the **Web** node.
-    1. Then select the **ASP.NET Core Web Application** project template.
+    1. In the Create a New Project page, select **C#** in the left most dropdown followed by **Web** in the right most dropdown.
+    1. Then select the **ASP.NET Core Web App** project template and click the **Next** button.
+
+        ![Create an ASP.NET Core project](./media/sentiment-analysis-model-builder/asp-net-core-selection.png#lightbox)
+
     1. In the **Name** text box, type "SentimentRazor".
-    1. Make sure **Place solution and project in the same directory** is **unchecked** (VS 2019), or **Create directory for solution** is **checked** (VS 2017).
-    1. Select the **OK** button.
-    1. Choose **Web Application** in the window that displays the different types of ASP.NET Core Projects, and then select the **OK** button.
+    1. Make sure **Place solution and project in the same directory** is **unchecked**.
+    1. Click the **Create** button to accept the default additional information and to create the project.
 
 ## Prepare and understand the data
 
@@ -60,24 +63,38 @@ Each row in the *wikipedia-detox-250-line-data.tsv* dataset represents a differe
 1 | == OK! ==  IM GOING TO VANDALIZE WILD ONES WIKI THEN!!!
 0 | I hope this helps.
 
+## Create a Model Builder config file
+
+When first adding Model Builder to the solution it will prompt you to create an `mbconfig` file. The `mbconfig` file keeps track of everything you do in Model Builder to allow you to reopen the session.
+
+1. In **Solution Explorer**, right-click the *SentimentRazor* project, and select **Add** > **Machine Learning**.
+1. In the dialog, name the Model Builder project **SentimentAnalysis**, and click **Add**.
+
 ## Choose a scenario
 
 ![Model Builder wizard in Visual Studio](../media/model-builder-screen.png)
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder.
 
-1. In **Solution Explorer**, right-click the *SentimentRazor* project, and select **Add** > **Machine Learning**.
-1. For this sample, the scenario is sentiment analysis. In the *scenario* step of the Model Builder tool, select the **Sentiment Analysis** scenario.
+1. For this sample, the scenario is sentiment analysis. In the *scenario* step of the Model Builder tool, select the **Text Classification** scenario.
+
+## Select an environment
+
+Model Builder can run the training on different environments depending on the scenario that was selected.
+
+1. Click the **Next step** button to load the data.
 
 ## Load the data
 
-Model Builder accepts data from two sources, a SQL Server database or a local file in `csv` or `tsv` format.
+Model Builder accepts data from two sources, a SQL Server database or a local file in `csv`, `tsv`, or `txt` format.
 
-1. In the data step of the Model Builder tool, select **File** from the data source dropdown.
-1. Select the button next to the **Select a file** text box and use File Explorer to browse and select the *wikipedia-detox-250-line-data.tsv* file.
+1. In the data step of the Model Builder tool, select **File** from the data source type selection.
+1. Select the **Browse** button and use File Explorer to browse and select the *wikipedia-detox-250-line-data.tsv* file.
 1. Choose **Sentiment** in the **Column to Predict (Label)** dropdown.
-1. Leave the default values for the **Input Columns (Features)** dropdown.
-1. Select the **Train** link to move to the next step in the Model Builder tool.
+1. Click the **Advanced data options** link.
+    1. Inside the **Advanced data options** dialog click the **Purpose** dropdown for the **LoggedIn** column and set it to **Ignore**.
+    1. Click the **Save** button.
+1. Click the **Next step** button to move to the training step in the Model Builder tool.
 
 ## Train the model
 
@@ -85,44 +102,79 @@ The machine learning task used to train the sentiment analysis model in this tut
 
 The time required for the model to train is proportionate to the amount of data. Model Builder automatically selects a default value for **Time to train (seconds)** based on the size of your data source.
 
-1. Although Model Builder sets the value of **Time to train (seconds)** to 10 seconds, increase it to 30 seconds. Training for a longer period of time allows Model Builder to explore a larger number of algorithms and combination of parameters in search of the best model.
-1. Select **Start Training**.
+1. Although Model Builder sets the value of **Time to train (seconds)** to 10 seconds, increase it to 60 seconds. Training for a longer period of time allows Model Builder to explore a larger number of algorithms and combination of parameters in search of the best model.
+1. Click the **Start Training** button.
 
-    Throughout the training process, progress data is displayed in the `Progress` section of the train step.
+    Throughout the training process, progress data is displayed in the `Training results` section of the train step.
 
-    - Status displays the completion status of the training process.
     - Best accuracy displays the accuracy of the best performing model found by Model Builder so far. Higher accuracy means the model predicted more correctly on test data.
-    - Best algorithm displays the name of the best performing algorithm performed found by Model Builder so far.
-    - Last algorithm displays the name of the algorithm most recently used by Model Builder to train the model.
+    - Best model the name of the best performing algorithm performed found by Model Builder so far.
+    - Training times displays the time trained for the best performing model.
+    - Models explored displays the number of models that were tried with the dataset.
 
-1. Once training is complete, select the **evaluate** link to move to the next step.
+1. Once training is complete, select the **Next step** button to move to the Evaluate step.
 
 ## Evaluate the model
 
-The result of the training step will be one model that has the best performance. In the evaluate step of the Model Builder tool, the output section will contain the algorithm used by the best-performing model in the **Best Model** entry along with metrics in **Best Model Accuracy**. Additionally, a summary table containing the top five models and their metrics is shown.
+The result of the training step will be one model that has the best performance. In the evaluate step of the Model Builder tool, the **Best model** section will contain the algorithm used by the best-performing model along with metrics.
 
-If you're not satisfied with your accuracy metrics, some easy ways to try to improve model accuracy are to increase the amount of time to train the model or use more data. Otherwise, select the **code** link to move to the final step in the Model Builder tool.
+If you're not satisfied with your accuracy metrics, some easy ways to try to improve model accuracy are to increase the amount of time to train the model or use more data. Otherwise, select the **Next step** button to move to the final step in the Model Builder tool to consume the model.
 
-## Add the code to make predictions
+## (Optional) Consume the model
 
-Two projects will be created as a result of the training process.
+This step will have project templates that you can use to consume the model. This step is optional and you can choose the method that best suits your needs on how to serve the model.
 
-### Reference the trained model
+- Console App
+- Web API
 
-1. In the *code* step of the Model Builder tool, select **Add Projects** to add the autogenerated projects to the solution.
+When adding a console app to your solution, you will be prompted to name the project.
 
-    The following projects should appear in the **Solution Explorer**:
+1. Name the console project **SentientAnalysis_Console**.
+1. Click **Add to solution** to add the project to your current solution.
+1. Run the application.
 
-    - *SentimentRazorML.ConsoleApp*: A .NET Core Console application that contains the model training and prediction code.
-    - *SentimentRazorML.Model*: A .NET Standard class library containing the data models that define the schema of input and output model data as well as the saved version of the best performing model during training.
+    The output generated by the program should look similar to the snippet below:
 
-    For this tutorial, only the *SentimentRazorML.Model* project is used because predictions will be made in the *SentimentRazor* web application rather than in the console. Although the *SentimentRazorML.ConsoleApp* won't be used for scoring, it can be used to retrain the model using new data at a later time. Retraining is outside the scope of this tutorial though.
+    ```bash
+    SentimentText: ==RUDE== Dude, you are rude upload that carl picture back, or else.
+    LoggedIn: True
+
+    Predicted Sentiment: 1    
+    ```
+
+### Web API
+
+When adding a web API to your solution, you will be prompted to name the project.
+
+1. Name the Web API project **SentimentAnalysis_API**.
+1. Click **Add to solution** to add the project to your current solution.
+1. Run the application.
+1. Open PowerShell and enter the following code where PORT is the port your application is listening on.
+
+    ```powershell
+    $body = @{
+        SentimentText="Model Builder is cool!",
+    }
+
+    Invoke-RestMethod "https://localhost:<PORT>/predict" -Method Post -Body ($body | ConvertTo-Json) -ContentType "application/json"
+    ```
+
+1. If successful, the output should look similar to the text below:
+
+    ```powershell
+    prediction score
+    ---------- -----
+    0 {0.022516366, 0.97748363}
+    ```
 
 ### Configure the PredictionEngine pool
 
-To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionEngine%602>. <xref:Microsoft.ML.PredictionEngine%602> is not thread-safe. Additionally, you have to create an instance of it everywhere it's needed within your application. As your application grows, this process can become unmanageable. For improved performance and thread safety, use a combination of dependency injection and the `PredictionEnginePool` service, which creates an <xref:Microsoft.Extensions.ObjectPool.ObjectPool%601> of <xref:Microsoft.ML.PredictionEngine%602> objects for use throughout your application.
+To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionEngine%602>. <xref:Microsoft.ML.PredictionEngine%602> which is not thread-safe. Additionally, you have to create an instance of it everywhere it's needed within your application. As your application grows, this process can become unmanageable. For improved performance and thread safety, use a combination of dependency injection and the `PredictionEnginePool` service, which creates an <xref:Microsoft.Extensions.ObjectPool.ObjectPool%601> of <xref:Microsoft.ML.PredictionEngine%602> objects for use throughout your application.
 
 1. Install the *Microsoft.Extensions.ML* NuGet package:
+
+    > [!NOTE]
+    > If the version of ML.NET produced by Model Builder is not yet updated, you can manually update it in the **Manage NuGet Packages** page.
 
     1. In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**.
     1. Choose "nuget.org" as the Package source.
@@ -137,10 +189,9 @@ To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionE
     ```csharp
     using System.IO;
     using Microsoft.Extensions.ML;
-    using SentimentRazorML.Model;
     ```
 
-1. Create a global variable to store the location of the trained model file.
+1. Create a global variable in the **Startup** class to store the location of the trained model file.
 
     ```csharp
     private readonly string _modelPath;
@@ -162,13 +213,13 @@ To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionE
 1. Use the `GetAbsolutePath` method in the `Startup` class constructor to set the `_modelPath`.
 
     ```csharp
-    _modelPath = GetAbsolutePath("MLModel.zip");
+    _modelPath = GetAbsolutePath("SentimentAnalysis.zip");
     ```
 
 1. Configure the `PredictionEnginePool` for your application in the `ConfigureServices` method:
 
     ```csharp
-    services.AddPredictionEnginePool<ModelInput, ModelOutput>()
+    services.AddPredictionEnginePool<SentimentAnalysis.ModelInput, SentimentAnalysis.ModelOutput>()
             .FromFile(_modelPath);
     ```
 
@@ -176,11 +227,10 @@ To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionE
 
 Predictions will be made inside the main page of the application. Therefore, a method that takes the user input and uses the `PredictionEnginePool` to return a prediction needs to be added.
 
-1. Open the *Index.cshtml.cs* file located in the *Pages* directory and add the following using statements:
+1. Open the *Index.cshtml.cs* file located in the *Pages* directory and add the following `using` statement:
 
     ```csharp
     using Microsoft.Extensions.ML;
-    using SentimentRazorML.Model;
     ```
 
     In order to use the `PredictionEnginePool` configured in the `Startup` class, you have to inject it into the constructor of the model where you want to use it.
@@ -188,13 +238,13 @@ Predictions will be made inside the main page of the application. Therefore, a m
 1. Add a variable to reference the `PredictionEnginePool` inside the `IndexModel` class.
 
     ```csharp
-    private readonly PredictionEnginePool<ModelInput, ModelOutput> _predictionEnginePool;
+    private readonly PredictionEnginePool<SentimentAnalysis.ModelInput, SentimentAnalysis.ModelOutput> _predictionEnginePool;
     ```
 
 1. Create a constructor in the `IndexModel` class and inject the `PredictionEnginePool` service into it.
 
     ```csharp
-    public IndexModel(PredictionEnginePool<ModelInput, ModelOutput> predictionEnginePool)
+    public IndexModel(PredictionEnginePool<SentimentAnalysis.ModelInput, SentimentAnalysis.ModelOutput> predictionEnginePool)
     {
         _predictionEnginePool = predictionEnginePool;
     }
@@ -220,7 +270,7 @@ Predictions will be made inside the main page of the application. Therefore, a m
     1. Given a valid input, create a new instance of `ModelInput`.
 
         ```csharp
-        var input = new ModelInput { SentimentText = text };
+        var input = new SentimentAnalysis.ModelInput { SentimentText = text };
         ```
 
     1. Use the `PredictionEnginePool` to predict sentiment.
@@ -279,8 +329,6 @@ When the application launches, enter *Model Builder is cool!* into the text area
 
 ![Running window with the predicted sentiment window](./media/sentiment-analysis-model-builder/web-app.png)
 
-If you need to reference the Model Builder generated projects at a later time inside of another solution, you can find them inside the `C:\Users\%USERNAME%\AppData\Local\Temp\MLVSTools` directory.
-
 ## Next steps
 
 In this tutorial, you learned how to:
@@ -288,6 +336,7 @@ In this tutorial, you learned how to:
 >
 > - Create an ASP.NET Core Razor Pages application
 > - Prepare and understand the data
+> - Created a Model Builder config file
 > - Choose a scenario
 > - Load the data
 > - Train the model

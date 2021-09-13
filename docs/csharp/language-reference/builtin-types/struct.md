@@ -97,7 +97,7 @@ Beginning with C# 10.0, you can declare a parameterless instance constructor in 
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="ParameterlessConstructor":::
 
-As the preceding example shows, the [default value expression](../operators/default.md) ignores a parameterless constructor and produces the default value of a structure type, which is the value produced by setting all value-type fields to their [default values](default-values.md) and all reference-type fields to `null`. Structure-type array instantiation also ignores a parameterless constructor and produces an array populated with the default values of a structure type.
+As the preceding example shows, the [default value expression](../operators/default.md) ignores a parameterless constructor and produces the default value of a structure type, which is the value produced by setting all value-type fields to their [default values](default-values.md) (the 0-bit pattern) and all reference-type fields to `null`. Structure-type array instantiation also ignores a parameterless constructor and produces an array populated with the default values of a structure type.
 
 Beginning with C# 10.0, you can also initialize an instance field or property at its declaration, as the following example shows:
 

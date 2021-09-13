@@ -377,7 +377,7 @@ As shown in this example, it is suggested the validate the existence of the cont
 
 Build and run the application to interact with Azure blob storage using the sample application.  The first time the application starts you should see a screen similar to the following.
 
-:::image type="content" source="./media/raw-sample-app-initial-page.png" alt-text="A screenshot showing how the application looks when run the first time.":::
+:::image type="content" source="./media/sample-app-initial-page.png" alt-text="A screenshot showing how the application looks when run the first time.":::
 
 Select the **Create container** button to create a container in your blob storage account.
 

@@ -303,11 +303,34 @@ For more information, see [Quickstart: Create an Azure container instance](/azur
 
 ## Verify service functionality
 
-Immediately after the container instance is created, it starts running. From the Azure portal in the container instance resource, select the **Containers** option.
+Immediately after the container instance is created, it starts running.
+
+:::zone target="docs" pivot="visualstudio,vscode"
+
+:::zone-end
+
+To verify your worker service is functioning correctly, navigate to the Azure portal in the container instance resource, select the **Containers** option.
 
 :::image type="content" source="media/container-instance-running.png" lightbox="media/container-instance-running.png" alt-text="Azure portal: Container instance running":::
 
 You'll see the containers, and their current **State**. In this case it will be **Running**. Select **Logs** to see the .NET worker service output.
+
+:::zone target="docs" pivot="cli"
+
+To verify your worker service is functioning correctly, you can view the logs from your running application. Use the [`az container logs`](/cli/azure/container#az_container_logs) command:
+
+```azurecli
+az container logs -g <resource group> --name <instance name>
+```
+
+Provide the appropriate values:
+
+- `<resource group>`: the resource group name that you've been using in this tutorial.
+- `<instance name>`: the name of the container instance.
+
+You'll see the .NET worker service output logs, which means you've successfully deployed your containerized app to ACI.
+
+:::zone-end
 
 ## See also
 

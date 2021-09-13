@@ -3,7 +3,7 @@ title: Use HTTP/3 with HttpClient
 description: Learn how to use the HttpClient to access HTTP/3 servers in .NET 6
 author: IEvangelist
 ms.author: samsp
-ms.date: 09/02/2021
+ms.date: 09/13/2021
 ---
 
 # Use HTTP/3 with HttpClient
@@ -16,7 +16,7 @@ HTTP/3 and QUIC have a number of benefits compared to HTTP/1.1 and HTTP/2:
 - Improved experience when there is connection packet loss. HTTP/2 multiplexes multiple requests via one TCP connection. Packet loss on the connection affects all requests. This problem is called "head-of-line blocking". Because QUIC provides native multiplexing, lost packets only impact the requests where data has been lost.
 - Supports transitioning between networks. This feature is useful for mobile devices where it is common to switch between WIFI and cellular networks as a mobile device changes location. Currently HTTP/1.1 and HTTP/2 connections fail with an error when switching networks. An app or web browsers must retry any failed HTTP requests. HTTP/3 allows the app or web browser to seamlessly continue when a network changes. HttpClient and Kestrel do not support network transitions in .NET 6. It may be available in a future release.
 
-> **Important**
+> [!IMPORTANT]
 >
 > HTTP/3 is available in .NET 6 as a _preview feature_ because the HTTP/3 specification is not finalized and behavioral or performance issues may exist in HTTP/3 with .NET 6.
 >
@@ -78,31 +78,35 @@ Include the following in the project file to enable HTTP/3 with HttpClient:
 </ItemGroup>
 ```
 
-HTTP3 needs to be specified as the version for the request:
+The following code example uses [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) and demonstrates how to specify HTTP3 in the request:
 
-```c#
+```csharp
 // See https://aka.ms/new-console-template for more information
 using System.Net;
 
-//Needed to ignore certificate errors if working with local servers
+// Needed to ignore certificate errors if working with local servers
 var handler = new HttpClientHandler()
 {
     ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
 };
 
-var client = new HttpClient(handler);
-client.DefaultRequestVersion =  HttpVersion.Version30;
-client.DefaultVersionPolicy = HttpVersionPolicy.RequestVersionExcat;
+var client = new HttpClient(handler)
+{
+    DefaultRequestVersion =  HttpVersion.Version30,
+    DefaultVersionPolicy = HttpVersionPolicy.RequestVersionExcat
+}
 
 Console.WriteLine("--- Localhost:5001 ---");
 var resp = await client.GetAsync("https://localhost:5001/");
 var body = await resp.Content.ReadAsStringAsync();
-Console.WriteLine($"status: {resp.StatusCode}, version: {resp.Version}, body: {body.Substring(0, Math.Min(100, body.Length))}");
+Console.WriteLine(
+    $"status: {resp.StatusCode}, version: {resp.Version}, " +
+    $"body: {body.Substring(0, Math.Min(100, body.Length))}");
 ```
 
 ### HTTP/3 Server
 
-HTTP/3 is supported by ASP.NET with the Kestrel server in .NET 6. For more details see  [use HTTP/3 with the ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel/http3).
+HTTP/3 is supported by ASP.NET with the Kestrel server in .NET 6. For more information, see [use HTTP/3 with the ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel/http3).
 
 ### Public test servers
 

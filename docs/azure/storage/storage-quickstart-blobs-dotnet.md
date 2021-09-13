@@ -375,6 +375,18 @@ As shown in this example, it is suggested the validate the existence of the cont
 
 ## 6 - Run the code
 
+Build and run the application to interact with Azure blob storage using the sample application.  The first time the application starts you should see a screen similar to the following.
+
+:::image type="content" source="./media/raw-sample-app-initial-page.png" alt-text="A screenshot showing how the application looks when run the first time.":::
+
+Select the **Create container** button to create a container in your blob storage account.
+
+:::image type="content" source="./media/sample-app-showing-containers.png" alt-text="A screenshot showing the application after two containers have been created in the storage account.":::
+
+You can expand each container by selecting the container name.  Within a container, select the **Upload file** button to upload files to the blob storage container.
+
+:::image type="content" source="./media/sample-app-blobs-uploaded.png" alt-text="A screenshot showing that files have been uploaded into the container in the storage account.":::
+
 ## Clean up resources
 
 When you are finished with the sample application, you should remove all Azure resources related to this article from your Azure account.  You can do this by deleting the resource group.

@@ -26,9 +26,9 @@ For more information on the .NET CLI build command, see [`dotnet build`](../../t
 To build the application from the .NET CLI, run the `dotnet build` command from the working directory.
 
 ```dotnetcli
-dotnet build
+dotnet build <path/to/project.csproj>
 ```
 
-For more information on the .NET CLI build command, see [`dotnet build`](../../tools/dotnet-build.md).
+Specify your `<path/to/project.csproj>` value, which is the path to the project file to build. For more information on the .NET CLI build command, see [`dotnet build`](../../tools/dotnet-build.md).
 
 :::zone-end

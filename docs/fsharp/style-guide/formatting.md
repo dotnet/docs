@@ -592,6 +592,34 @@ type SynBinding =
         seqPoint: DebugPointAtBinding
 ```
 
+If using less than 4 spaces of indentation, the fields should still be indented 4 spaces to ensure sufficient visual separation between the cases and the fields.
+
+```fsharp
+// Using 2 spaces of indentation
+
+// OK
+type MyUnion =
+  | Case1 of
+      field1: int *
+      field2: string *
+      field3: bool
+  | Case2 of
+      field1: int *
+      field2: string *
+      field3: bool
+      
+// Not OK
+type MyUnion =
+  | Case1 of
+    field1: int *
+    field2: string *
+    field3: bool
+  | Case2 of
+    field1: int *
+    field2: string *
+    field3: bool
+```
+
 You can also use triple-slash `///` comments.
 
 ```fsharp

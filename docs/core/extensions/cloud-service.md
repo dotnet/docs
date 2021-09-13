@@ -54,7 +54,7 @@ In Visual Studio Code, you'll need the [Docker extension](https://code.visualstu
 
 :::zone-end
 
-Docker support requires a *Dockerfile*. This file is a set of comprehensive instructions, for building your .NET Worker Service as a Docker image. The following is an example *Dockerfile*, and should exist at the root directory of the project file.
+Docker support requires a *Dockerfile*. This file is a set of comprehensive instructions, for building your .NET Worker Service as a Docker image. The *Dockerfile* is a file *without* a file extension. The following is an example *Dockerfile*, and should exist at the root directory of the project file.
 
 :::zone target="docs" pivot="cli"
 

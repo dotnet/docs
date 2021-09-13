@@ -166,7 +166,11 @@ Once you login to the Azure CLI, your session can interact with resources accord
 az acr create -n <registry-name> -g <resource-group> --sku <sku> --admin-enabled true
 ```
 
-Replace the `<registry-name>`, `<resource-group>`, and `<sku>` (for example **Basic**, **Classic**, **Premium**, **Standard**) with your own appropriate values.
+Replace placeholders with your own appropriate values:
+
+- `<registry-name>`: the name of the registry.
+- `<resource-group>`: the resource group.
+- `<sku>`: accepted values, **Basic**, **Classic**, **Premium**, or **Standard**.
 
 The preceding command:
 

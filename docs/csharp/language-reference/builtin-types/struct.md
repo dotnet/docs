@@ -103,9 +103,12 @@ Beginning with C# 10.0, you can also initialize an instance field or property at
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializer":::
 
-As the preceding example shows, if you don't declare a parameterless constructor, the implicit parameterless constructor produces the default value of a structure type, regardless of field initializers. However, if a structure type has no explicit instance constructors and has field initializers, the compiler synthesizes a public parameterless constructor that performs the specified field initializations, as the following example shows:
+If you don't declare a parameterless constructor explicitly, a structure type provides a parameterless constructor whose behavior is as follows:
 
-:::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializerNoConstructor":::
+- If a structure type has explicit instance constructors or has no field initializers, an implicit parameterless constructor produces the default value of a structure type, regardless of field initializers, as the preceding example shows.
+- If a structure type has no explicit instance constructors and has field initializers, the compiler synthesizes a public parameterless constructor that performs the specified field initializations, as the following example shows:
+
+  :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializerNoConstructor":::
 
 As the preceding example shows, the default value expression and array instantiation ignore field initializers.
 

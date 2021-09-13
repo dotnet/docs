@@ -160,16 +160,24 @@ An Azure Container Registry (ACR) resource allows you to build, store, and manag
 > az account set --subscription <subscription name or id>
 > ```
 
-Once you login to the Azure CLI, your session can interact with resources accordingly. To create a container registry, you'll need to call the [`az acr create`](/cli/azure/acr#az_acr_create) command.
+Once you login to the Azure CLI, your session can interact with resources accordingly.
+
+If you do not already have a resource group you'd like to associate your worker service with, create one using the [`az group create`](/cli/azure/group#az_group_create) command:
 
 ```azurecli
-az acr create -n <registry-name> -g <resource-group> --sku <sku> --admin-enabled true
+az group create -n <resource group> -l <location>
+```
+
+Provide the `<resource group>` name, and the `<location>`. To create a container registry, you'll need to call the [`az acr create`](/cli/azure/acr#az_acr_create) command.
+
+```azurecli
+az acr create -n <registry name> -g <resource group> --sku <sku> --admin-enabled true
 ```
 
 Replace placeholders with your own appropriate values:
 
-- `<registry-name>`: the name of the registry.
-- `<resource-group>`: the resource group.
+- `<registry name>`: the name of the registry.
+- `<resource group>`: the resource group name that you used above.
 - `<sku>`: accepted values, **Basic**, **Classic**, **Premium**, or **Standard**.
 
 The preceding command:
@@ -255,8 +263,19 @@ Expand the **REGISTRIES** node, select **Azure**, your  subscription > the conta
 To create a container instance, you'll need to create a container group using the [`az container create`](/cli/azure/container#az_container_create) command.
 
 ```azurecli
-az container create -g <resource-group> --name <instance-name> --image myAcrRegistry.azurecr.io/myimage:latest --registry-password password
+az container create -g <resource group> \
+  --name <instance name> \
+  --image <registry name>.azurecr.io/<image name>:latest \
+  --registry-password <password>
 ```
+
+Provide the appropriate values:
+
+- `<resource group>`: the resource group name that you've been using in this tutorial.
+- `<instance name>`: the name of the container instance.
+- `<registry name>`: the name of the container registry.
+- `<image name>`: the name of the image.
+- `<password>`: the password to the container registry &mdash; you can get this from the Azure Portal, Container Registry resource > **Access Keys**.
 
 :::zone-end
 :::zone target="docs" pivot="visualstudio"

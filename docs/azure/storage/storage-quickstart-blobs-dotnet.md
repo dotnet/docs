@@ -15,7 +15,9 @@ The [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs/) p
 
 ## Sample application
 
-The sample application for this tutorial may be cloned or downloaded from the repository [https://github.com/Azure-Samples/msdocs-azure-blob-storage-dotnet](https://github.com/Azure-Samples/msdocs-azure-blob-storage-dotnet).  Both a starter and completed app are included in the sample repository.
+The sample application for this tutorial may be cloned or downloaded from the repository [https://github.com/Azure-Samples/msdocs-azure-blob-storage-dotnet](https://github.com/Azure-Samples/msdocs-azure-blob-storage-dotnet).  
+
+Both a starter and completed app are included in the sample repository.
 
 ```bash
 git clone https://github.com/Azure-Samples/msdocs-azure-blob-storage-dotnet
@@ -47,9 +49,9 @@ Storage accounts are created using the [az storage account create](/cli/azure/st
 Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com) or on a workstation with the [Azure CLI installed](/cli/azure/install-azure-cli).
 
 ```azurecli
-$LOCATION = 'eastus'             # Use 'az account list-locations --output table' to list locations
-$RESOURCE_GROUP_NAME = 'rg-msdocs-blob-storage-demo'
-$STORAGE_ACCOUNT_NAME = 'stblobstoragedemo123'   # Replace 123 with three random numbers to get unique name
+LOCATION='eastus'                             # Use 'az account list-locations --output table' to list locations
+RESOURCE_GROUP_NAME='rg-msdocs-blob-storage-demo'
+STORAGE_ACCOUNT_NAME='stblobstoragedemo123'   # Replace 123 with three random numbers to get unique name
 
 # Create a resource group
 az group create \

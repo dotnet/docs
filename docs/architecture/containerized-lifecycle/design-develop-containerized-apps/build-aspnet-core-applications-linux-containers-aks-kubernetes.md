@@ -44,7 +44,7 @@ Verify that you've selected ASP.NET Core 5.0 as the framework. .NET 5.0 is inclu
 
 Notice Docker support is not enabled now, just to show it can be done after project creation.
 
-If you have any previous version of .NET Core, you can download and install the 3.1 version from <https://dotnet.microsoft.com/download>.
+If you have any previous version of .NET Core, you can download and install the specific version from <https://dotnet.microsoft.com/download>.
 
 To show you can "Dockerize" your project at any time, you'll add Docker support now. So right-click on the project node in Solution Explorer and select **Add** > **Docker support** on the context menu.
 

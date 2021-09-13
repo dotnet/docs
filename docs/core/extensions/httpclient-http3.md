@@ -82,7 +82,7 @@ The following code example uses [top-level statements](../../csharp/fundamentals
 
 ## HTTP/3 Server
 
-HTTP/3 is supported by ASP.NET with the Kestrel server in .NET 6. For more information, see [use HTTP/3 with the ASP.NET Core Kestrel web server](http3Kestrel).
+HTTP/3 is supported by ASP.NET with the Kestrel server in .NET 6. For more information, see [use HTTP/3 with the ASP.NET Core Kestrel web server][http3Kestrel].
 
 ## Public test servers
 

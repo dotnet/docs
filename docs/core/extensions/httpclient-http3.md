@@ -24,9 +24,7 @@ HTTP/3 and QUIC have a number of benefits compared to HTTP/1.1 and HTTP/2:
 >
 > Apps configured to take advantage of HTTP/3 should be designed to also support HTTP/1.1 and HTTP/2. If issues are identified in HTTP/3, we recommended disabling HTTP/3 until the issues are resolved in a future release of .NET.
 
-## HTTP/3 requirements
-
-### HttpClient Settings
+## HttpClient Settings
 
 HTTP/3 support is in preview, and needs to be enabled via a configuration flag which can be set in the project with:
 
@@ -45,18 +43,18 @@ The HTTP version can be configured by setting `HttpRequestMessage.Version` to 3.
 
 The reason for requiring a configuration flag for HTTP/3 is to protect apps from future breakage when using version policy `RequestVersionOrHigher`. When calling a server that currently uses HTTP/1.1 and HTTP/2, if the server later upgrades to HTTP/3, the client would try to use HTTP/3 and potentially be incompatible as the standard is not final and therefore may change after .NET 6 is released.
 
-### Platform Dependencies
+## Platform Dependencies
 
 HTTP/3 uses QUIC as its transport protocol. The .NET implementation of HTTP/3 uses [MsQuic](https://github.com/microsoft/msquic) to provide QUIC functionality. MsQuic is included in specific builds of windows and as a library for Linux. If the platform that HttpClient is running on doesn't have all the requirements for HTTP/3 then it's disabled.
 
-**Windows**
+### Windows
 
 - Windows 11 Build 22000 or later.
 - TLS 1.3 or later connection.
 
 The preceding Windows 11 Build versions may require the use of a [Windows Insider](https://insider.windows.com/) build.
 
-**Linux**
+### Linux
 
 On Linux, libmsquic is published via Microsoft official Linux package repository packages.microsoft.com. In order to consume it, it must be added manually. See [Linux Software Repository for Microsoft Products](https://windows-server/administration/linux-package-repository-for-microsoft-software). After configuring the package feed, it can be installed via the package manager of your distro, for example, for Ubuntu:
 
@@ -64,11 +62,11 @@ On Linux, libmsquic is published via Microsoft official Linux package repository
 sudo apt install libmsquic
 ```
 
-**macOS**
+### macOS
 
 HTTP/3 is not currently supported on macOS but may be available in a future release.
 
-### Get started
+## Using HttpClient
 
 Include the following in the project file to enable HTTP/3 with HttpClient:
 
@@ -80,35 +78,13 @@ Include the following in the project file to enable HTTP/3 with HttpClient:
 
 The following code example uses [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) and demonstrates how to specify HTTP3 in the request:
 
-```csharp
-// See https://aka.ms/new-console-template for more information
-using System.Net;
+:::code language="csharp" source="snippets/http/http3/Program.cs":::
 
-// Needed to ignore certificate errors if working with local servers
-var handler = new HttpClientHandler()
-{
-    ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
-};
+## HTTP/3 Server
 
-var client = new HttpClient(handler)
-{
-    DefaultRequestVersion =  HttpVersion.Version30,
-    DefaultVersionPolicy = HttpVersionPolicy.RequestVersionExcat
-}
+HTTP/3 is supported by ASP.NET with the Kestrel server in .NET 6. For more information, see [use HTTP/3 with the ASP.NET Core Kestrel web server](http3Kestrel).
 
-Console.WriteLine("--- Localhost:5001 ---");
-var resp = await client.GetAsync("https://localhost:5001/");
-var body = await resp.Content.ReadAsStringAsync();
-Console.WriteLine(
-    $"status: {resp.StatusCode}, version: {resp.Version}, " +
-    $"body: {body.Substring(0, Math.Min(100, body.Length))}");
-```
-
-### HTTP/3 Server
-
-HTTP/3 is supported by ASP.NET with the Kestrel server in .NET 6. For more information, see [use HTTP/3 with the ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel/http3).
-
-### Public test servers
+## Public test servers
 
 Cloudflare hosts a site for HTTP/3 which can be used to test the client against at [https://cloudflare-quic.com/](https://cloudflare-quic.com/)
 

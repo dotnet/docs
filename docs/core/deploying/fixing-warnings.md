@@ -12,11 +12,11 @@ entire application and removes all unused code. However, it can be difficult to 
 unused, or more precisely, what is used.
 
 To prevent changes in behavior when trimming applications, the .NET SDK provides static analysis of
-trim compatiblity through "trim warnings." Trim warnings are warnings produced by the trimmer when it
-finds code that may not be compatible with trimming and may produce behavioral changes, or even crashes,
-in an application after it has been trimmed. Ideally, all applications which use trimming should have
-no trim warnings. If there are any trim warnings, the app should be thoroughly tested after trimming to
-ensure that there are no behavior changes.
+trim compatiblity through "trim warnings." Trim warnings are produced by the trimmer when it
+finds code that may not be compatible with trimming. Code which is not trim-compatible may produce
+behavioral changes, or even crashes, in an application after it has been trimmed. Ideally, all
+applications which use trimming should have no trim warnings. If there are any trim warnings, the
+app should be thoroughly tested after trimming to ensure that there are no behavior changes.
 
 This document will help developers understand why some patterns produce trim warnings, and how these
 warnings can be addressed.
@@ -56,11 +56,11 @@ Trim warnings are meant to bring predictability to trimming. There are two big c
 
 ### RequiresUnreferencedCode
 
-[RequiresUnreferencedCode](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.codeanalysis.requiresunreferencedcodeattribute?view=net-5.0)
-is simple and broad: it's an attribute that indicates the member is not trim-compatible, meaning
+<xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute>
+is simple and broad: it's an attribute that means the member has been annotated incompatible with trimming, meaning
 that it might use reflection or some other mechanism to access code that may be trimmed away. This
 attribute is used when code is fundamentally not trim compatible, or the trim dependency is too complex
-to explain to the trimmer.  This would often be true for methods which use the C# `dynamic` keyword,
+to explain to the trimmer. This would often be true for methods which use the C# `dynamic` keyword,
 accessing types from `Assembly.LoadFrom`, or other runtime code generation technologies.  An
 example would be:
 
@@ -79,14 +79,14 @@ void TestMethod()
 There aren't many workarounds for `RequiresUnreferencedCode`. The best fix is to avoid calling the
 method at all when trimming and use something else which is trim-compatible. If you're writing a
 library and it's not in your control whether or not to call the method, you can also add
-`RequiresUnreferencedCode` to your own method. This should be used if you just want to communicate
-to other callers that the method is not trim compatible. Adding `RequiresUnreferencedCode` will
-silence all trimming warnings in the given method, but will produce a warning whenever someone else
-calls it.
+`RequiresUnreferencedCode` to your own method. This will annotate your method as not trim
+compatible. Adding `RequiresUnreferencedCode` will silence all trimming warnings in the given
+method, but will produce a warning whenever someone else calls it. For this reason, it is mostly
+useful to library authors to "bubble up" the warning to a public API.
 
 If you can somehow determine that the call is safe, and all the code that's needed won't be
 trimmed away, you can also suppress the warning using
-[UnconditionalSuppressMessageAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.codeanalysis.unconditionalsuppressmessageattribute?view=net-5.0).
+<xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute>.
 For example:
 
 ```C#
@@ -109,7 +109,7 @@ and you may forget to review all the suppressions.
 
 ### DynamicallyAccessedMembers
 
-[DynamicallyAccessedMembers](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.codeanalysis.dynamicallyaccessedmembersattribute?view=net-5.0)
+<xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute>
 is usually about reflection. Unlike `RequiresUnreferencedCode`, reflection can sometimes be
 understood by the trimmer as long as it's annotated correctly.  Let's take another look at the
 original example:

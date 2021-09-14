@@ -5,6 +5,7 @@ ms.date: 06/26/2021
 ms.topic: article
 ms.custom: devx-track-dotnet
 ms.author: daberry
+ROBOTS: NOINDEX
 ---
 
 # Accessing Azure Blob Storage from .NET applications
@@ -17,7 +18,7 @@ The [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs/) p
 
 The sample application for this tutorial may be cloned or downloaded from the repository [https://github.com/Azure-Samples/msdocs-azure-blob-storage-dotnet](https://github.com/Azure-Samples/msdocs-azure-blob-storage-dotnet).  
 
-Both a starter and completed app are included in the sample repository.
+Both a starter and completed app are included in the sample repository.  After downloading the sample code, open the solution for the starter app in either Visual Studio or VS Code.
 
 ```bash
 git clone https://github.com/Azure-Samples/msdocs-azure-blob-storage-dotnet
@@ -126,12 +127,12 @@ Write-Host $storageConnectionString
 ```
 
 ---
-
+ 
 The connection string for your storage account is considered an app secret and must be protected like any other app secret or password.  This example uses the [Secret Manager](/aspnet/core/security/app-secrets#secret-manager) tool to store the connection string during development and make it available to the application.  The Secret Manager tool can be accessed from either Visual Studio or the .NET CLI.
 
 ### [Visual Studio](#tab/visual-studio)
 
-To open the Secret Manager tool from Visual Studio, right click on the project and select **Manage User Secrets** from the context menu.  This will open the *secrets.json* file for the project.  Replace the contents of the file with the JSON below, substituting in your storage connection string.
+With your solution open in Visual Studio, right click on the *project* **AzureBlobStorageDemo** and select **Manage User Secrets** from the context menu. Be sure to right click on the *project* and not the *solution* in the Visual Studio solution explorer.  This will open the *secrets.json* file for the project.  Replace the contents of the file with the JSON below, substituting in your storage connection string.
 
 ```json
 {
@@ -143,13 +144,15 @@ To open the Secret Manager tool from Visual Studio, right click on the project a
 
 ### [.NET CLI](#tab/netcore-cli)
 
-To use the Secret Manager, you must first initialize it for your project using the `dotnet user-secrets init` command.
+If you are using Visual Studio Code, the Secret Manager is accessed via the .NET CLI.  In a terminal window, change directories into the **AzureBlobStorageDemo** project directory.
+
+Then, to use the Secret Manager, you must first initialize it for your project using the `dotnet user-secrets init` command.
 
 ```dotnetcli
 dotnet user-secrets init
 ```
 
-Then, use the `dotnet user-secrets set` command to add the storage connection string as a secret.
+Finally, use the `dotnet user-secrets set` command to add the storage connection string as a secret.
 
 ```dotnetcli
 dotnet user-secrets set "ConnectionStrings:AzureStorage" "<storage connection string>"
@@ -418,5 +421,3 @@ Remove-AzResourceGroup -Name $resourceGroupName
 ```
 
 ---
-
-## Next Steps

@@ -49,7 +49,7 @@ For more information:
 
 - [Classes](../types/classes.md)
 - [Constructors](../../programming-guide/classes-and-structs/constructors.md)
-- [Finalizers](../../programming-guide/classes-and-structs/destructors.md)
+- [Finalizers](../../programming-guide/classes-and-structs/finalizers.md)
 - [Events](../../programming-guide/events/index.md)
 - [object](../../language-reference/builtin-types/reference-types.md)
 - [Inheritance](./inheritance.md)

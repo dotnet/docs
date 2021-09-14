@@ -5,7 +5,7 @@ public class Destroyer
 {
    public override string ToString() => GetType().Name;
 
-   ~Destroyer() => Console.WriteLine($"The {ToString()} destructor is executing.");
+   ~Destroyer() => Console.WriteLine($"The {ToString()} finalizer is executing.");
 }
 // </Snippet1>
 

@@ -102,6 +102,8 @@ For formatting XML doc comments, see "Formatting declarations" below.
 
 ## Formatting expressions
 
+This section discusses formatting expressions of different kinds.
+
 ### Formatting string expressions
 
 String literals and interpolated strings can just be left on a single line, regardless of how long the line is.
@@ -113,9 +115,15 @@ let serviceStorageConnection =
 
 Multi-line interpolated expressions are discouraged. Instead, bind the expression result to a value and use that in the interpolated string.
 
-## Formatting tuple expressions
+### Formatting tuple expressions
 
 A tuple instantiation should be parenthesized, and the delimiting commas within it should be followed by a single space, for example: `(1, 2)`, `(x, y, z)`.
+
+```fsharp
+// OK
+let pair = (1, 2)
+let triples = [ (1, 2, 3); (11, 12, 13) ]
+```
 
 It is commonly accepted to omit parentheses in pattern matching of tuples:
 
@@ -143,7 +151,7 @@ let update model msg =
 
 In summary, prefer parenthesized tuple instantiations, but when using tuples for pattern matching or a return value, it is considered fine to avoid parentheses.
 
-## Formatting application expressions
+### Formatting application expressions
 
 When formatting a function or method application, arguments are provided on the same line when line-width allows:
 
@@ -470,7 +478,7 @@ x &&& y // Bitwise and, also for working with “flags” enumeration
 x ^^^ y // Bitwise xor, also for working with “flags” enumeration
 ```
 
-## Formatting if expressions
+### Formatting if expressions
 
 Indentation of conditionals depends on the size and complexity of the expressions that make them up.
 Write them on one line when:
@@ -518,10 +526,10 @@ If a condition is long, the `then` keyword is still placed at the end of the exp
 ```fsharp
 if
     complexExpression a b && env.IsDevelopment()
-    || secondLongerExpression
-        aVeryLongparameterNameOne
-        aVeryLongparameterNameTwo
-        aVeryLongparameterNameThree then
+    || someFunctionToCall
+        aVeryLongParameterNameOne
+        aVeryLongParameterNameTwo
+        aVeryLongParameterNameThree then
         e1
     else
         e2
@@ -532,10 +540,10 @@ It is, however, better style to refactor long conditions to a let binding or sep
 ```fsharp
 let performAction =
     complexExpression a b && env.IsDevelopment()
-    || secondLongerExpression
-        aVeryLongparameterNameOne
-        aVeryLongparameterNameTwo
-        aVeryLongparameterNameThree
+    || someFunctionToCall
+        aVeryLongParameterNameOne
+        aVeryLongParameterNameTwo
+        aVeryLongParameterNameThree
 
 if performAction then
     e1
@@ -543,7 +551,7 @@ else
     e2
 ```
 
-## Formatting union case expressions
+### Formatting union case expressions
 
 Applying discriminated union cases follows the same rules as function and method applications.
 That is, because the name is capitalized, code formatters will remove a space before a tuple:
@@ -567,7 +575,7 @@ let tree1 =
     )
 ```
 
-## Formatting list and array expressions
+### Formatting list and array expressions
 
 Write `x :: l` with spaces around the `::` operator (`::` is an infix operator, hence surrounded by spaces).
 
@@ -657,7 +665,7 @@ let daysOfWeek' includeWeekend =
 
 In some cases, `do...yield` may aid in readability. These cases, though subjective, should be taken into consideration.
 
-## Formatting record expressions
+### Formatting record expressions
 
 Short records can be written in one line:
 
@@ -696,7 +704,7 @@ let rainbow =
 
 The same rules apply for list and array elements.
 
-## Formatting copy-and-update record expressions
+### Formatting copy-and-update record expressions
 
 A copy-and-update record expression is still a record, so similar guidelines apply.
 
@@ -805,7 +813,7 @@ let rec sizeLambda acc =
     | Var v -> succ acc
 ```
 
-## Formatting try/with expressions
+### Formatting try/with expressions
 
 Pattern matching on the exception type should be indented at the same level as `with`.
 
@@ -900,7 +908,7 @@ let comparer =
 
 ## Formatting declarations
 
-Top-level declarations should be documented and formatted consistently.
+This section discusses formatting declarations of different kinds.
 
 ### Add blank lines between declarations
 
@@ -1108,7 +1116,7 @@ let (!>) x f = f x
 
 For any custom operator that starts with `*` and that has more than one character, you need to add a white space to the beginning of the definition to avoid a compiler ambiguity. Because of this, we recommend that you simply surround the definitions of all operators with a single white-space character.
 
-## Formatting record declarations
+### Formatting record declarations
 
 For record declarations, indent `{` in type definition by four spaces, start the field list on the same line and align any members with the `{` token:
 
@@ -1179,7 +1187,7 @@ type MyRecord =
     interface IMyInterface
 ```
 
-## Formatting discriminated union declarations
+### Formatting discriminated union declarations
 
 For discriminated union declarations, indent `|` in type definition by four spaces:
 
@@ -1253,7 +1261,7 @@ let MyUrl = "www.mywebsitethatiamworkingwith.com"
 
 Avoid placing the attribute on the same line as the value.
 
-## Formatting module declarations
+### Formatting module declarations
 
 Code in a local module must be indented relative to the module, but code in a top-level module should not be indented. Namespace elements do not have to be indented.
 
@@ -1330,7 +1338,50 @@ async {
 }
 ```
 
+### Formatting computation expression operations
+
+When creating custom operations for [computation expressions](../language-reference/computation-expressions.md), it is recommended to use camelCase naming:
+
+```fsharp
+type MathBuilder () =
+    member _.Yield _ = 0
+
+    [<CustomOperation("addOne")>]
+    member _.AddOne (state: int) =
+        state + 1
+
+    [<CustomOperation("subtractOne")>]
+    member _.SubtractOne (state: int) =
+        state - 1
+
+    [<CustomOperation("divideBy")>]
+    member _.DivideBy (state: int, divisor: int) =
+        state / divisor
+
+    [<CustomOperation("multiplyBy")>]
+    member _.MultiplyBy (state: int, factor: int) =
+        state * factor
+
+let math = MathBuilder()
+
+// 10
+let myNumber =
+    math {
+        addOne
+        addOne
+        addOne
+        subtractOne
+        divideBy 2
+        multiplyBy 10
+    }
+```
+
+The domain that's being modeled should ultimately drive the naming convention.
+If it is idiomatic to use a different convention, that convention should be used instead.
+
 ## Formatting types and type annotations
+
+This section discusses formatting types and type annotations. This includes formatting signature files with the `.fsi` extension.
 
 ### For types, prefer prefix syntax for generics (`Foo<T>`), with some specific exceptions
 
@@ -1399,7 +1450,7 @@ type C() =
     member _.SomeMethodBad(x: int): int = 1
 ```
 
-## Formatting types in signatures
+### Formatting types in signatures
 
 When writing full function types in signatures, it is sometimes necessary to split the arguments
 over multiple lines. For a tupled function the arguments are separated by `*`,
@@ -1561,44 +1612,3 @@ type MyRecord =
 ```
 
 When applied to a parameter, they must be on the same line and separated by a `;` separator.
-
-## Formatting computation expression operations
-
-When creating custom operations for [computation expressions](../language-reference/computation-expressions.md), it is recommended to use camelCase naming:
-
-```fsharp
-type MathBuilder () =
-    member _.Yield _ = 0
-
-    [<CustomOperation("addOne")>]
-    member _.AddOne (state: int) =
-        state + 1
-
-    [<CustomOperation("subtractOne")>]
-    member _.SubtractOne (state: int) =
-        state - 1
-
-    [<CustomOperation("divideBy")>]
-    member _.DivideBy (state: int, divisor: int) =
-        state / divisor
-
-    [<CustomOperation("multiplyBy")>]
-    member _.MultiplyBy (state: int, factor: int) =
-        state * factor
-
-let math = MathBuilder()
-
-// 10
-let myNumber =
-    math {
-        addOne
-        addOne
-        addOne
-        subtractOne
-        divideBy 2
-        multiplyBy 10
-    }
-```
-
-The domain that's being modeled should ultimately drive the naming convention.
-If it is idiomatic to use a different convention, that convention should be used instead.

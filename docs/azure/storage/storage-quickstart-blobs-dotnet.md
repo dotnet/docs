@@ -127,7 +127,7 @@ Write-Host $storageConnectionString
 ```
 
 ---
- 
+
 The connection string for your storage account is considered an app secret and must be protected like any other app secret or password.  This example uses the [Secret Manager](/aspnet/core/security/app-secrets#secret-manager) tool to store the connection string during development and make it available to the application.  The Secret Manager tool can be accessed from either Visual Studio or the .NET CLI.
 
 ### [Visual Studio](#tab/visual-studio)

@@ -47,14 +47,14 @@ Build the application to ensure it restores the dependent packages, and compiles
 
 If you correctly selected the **Enable Docker** checkbox when creating a new Worker project, skip to the [Build the Docker image](#build-the-docker-image) step.
 
-If you didn't select this option, no worries &mdash; you can still add it now. In Visual Studio, right-click on the *project node* in the **Solution Explorer**, and select **Add** > **Docker Support**. You'll be prompted to select a **Target OS**, select **OK** with the default OS selection.
+If you didn't select this option, no worries—you can still add it now. In Visual Studio, right-click on the *project node* in the **Solution Explorer**, and select **Add** > **Docker Support**. You'll be prompted to select a **Target OS**, select **OK** with the default OS selection.
 
 :::image type="content" source="media/docker-file-options.png" alt-text="Docker File Options":::
 
 :::zone-end
 :::zone target="docs" pivot="vscode"
 
-In Visual Studio Code, you'll need the [Docker extension](https://code.visualstudio.com/docs/containers/overview) and the [Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) installed. Open the Command Palette, and select the **Docker: Add Docker files to workspace** option. If prompted to **Select Application Platform** choose **.NET: Core Console**. If prompted to **Select Project**, choose the Worker Service project you created. When prompted to **Select Operating System**, choose the first listed OS. When prompted whether or not to **Include optional Docker Compose files**, select **No**.
+In Visual Studio Code, you'll need the [Docker extension](https://code.visualstudio.com/docs/containers/overview) and the [Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) installed. Open the Command Palette, and select the **Docker: Add Docker files to workspace** option. If prompted to **Select Application Platform**, choose **.NET: Core Console**. If prompted to **Select Project**, choose the Worker Service project you created. When prompted to **Select Operating System**, choose the first listed OS. When prompted whether or not to **Include optional Docker Compose files**, select **No**.
 
 :::zone-end
 
@@ -71,7 +71,7 @@ With the CLI, the *Dockerfile* is **not** created for you. You'll need to copy i
 :::zone target="docs" pivot="cli"
 
 > [!NOTE]
-> You need to update the various lines in the *Dockerfile* that reference *App.CloudService* &mdash; replace this with the name of your project.
+> You need to update the various lines in the *Dockerfile* that reference *App.CloudService—replace this with the name of your project.
 
 For more information on the official .NET images, see [Docker Hub: .NET Runtime](https://hub.docker.com/_/microsoft-dotnet-runtime?tab=description) and [Docker Hub: .NET SDK](https://hub.docker.com/_/microsoft-dotnet-sdk?tab=description).
 
@@ -164,7 +164,7 @@ An Azure Container Registry (ACR) resource allows you to build, store, and manag
 > az account set --subscription <subscription name or id>
 > ```
 
-Once you login to the Azure CLI, your session can interact with resources accordingly.
+Once you sign in to the Azure CLI, your session can interact with resources accordingly.
 
 If you do not already have a resource group you'd like to associate your worker service with, create one using the [`az group create`](/cli/azure/group#az_group_create) command:
 
@@ -187,7 +187,7 @@ Replace placeholders with your own appropriate values:
 The preceding command:
 
 - Creates an Azure Container Registry, given a registry name, in the specified resource group.
-- Enabled an Admin user &mdash; this is required for Azure Container Instances.
+- Enabled an Admin user—this is required for Azure Container Instances.
 
 :::zone-end
 
@@ -207,11 +207,11 @@ For the **Specific Target**, select **Azure Container Registry** and then **Next
 
 :::image type="content" source="media/publish-dialog-azure-acr.png" lightbox="media/publish-dialog-azure-acr.png" alt-text="Visual Studio: Publish dialog - select container registry":::
 
-Next, for the **Container Registry**, select your **Subscription name** that you used to created the ACR resrouce. From the **Container registries** selection area, select the container registry that you created, and then select **Finish**.
+Next, for the **Container Registry**, select the **Subscription name** that you used to create the ACR resource. From the **Container registries** selection area, select the container registry that you created, and then select **Finish**.
 
 :::image type="content" source="media/publish-dialog-azure-acr-registry.png" lightbox="media/publish-dialog-azure-acr-registry.png" alt-text="Visual Studio: Publish dialog - select container registry details":::
 
-This creates a publish profile, which can be used to publish the image to container registry. Select the **Publish** button to push the image to the container registry, the **Output** window reports the publish progress &mdash; and when it completes successfully, you'll see a "Successfully published" message.
+This creates a publish profile, which can be used to publish the image to container registry. Select the **Publish** button to push the image to the container registry, the **Output** window reports the publish progress—and when it completes successfully, you'll see a "Successfully published" message.
 
 :::zone-end
 :::zone target="docs" pivot="vscode"
@@ -225,13 +225,13 @@ The integrated terminal window will report the progress of the `docker push` com
 :::zone-end
 :::zone target="docs" pivot="cli"
 
-To push an image to the container registry, you need to login to the registry first:
+To push an image to the container registry, you need to sign in to the registry first:
 
 ```azurecli
 az acr login -n <registry name>
 ```
 
-The [`az acr login`](/cli/azure/acr#az_acr_login) command will log in to a container registry through the Docker CLI. To push the image to the container registry, use the [az acr build](/cli/azure/acr#az_acr_build) command with your container registry name as the `<registry name>`:
+The [`az acr login`](/cli/azure/acr#az_acr_login) command will sign in to a container registry through the Docker CLI. To push the image to the container registry, use the [az acr build](/cli/azure/acr#az_acr_build) command with your container registry name as the `<registry name>`:
 
 ```azurecli
 az acr build -r <registry name> -t appcloudservice .
@@ -253,7 +253,7 @@ To verify that the image was successfully pushed to the container registry, navi
 
 :::zone target="docs" pivot="vscode"
 
-From Visual Studio Code, select **Docker** from the **Activity Bar**. Expand the **REGISTRIES** node, and select **Connect Registry**. Select **Azure** when prompted, and login if required.
+From Visual Studio Code, select **Docker** from the **Activity Bar**. Expand the **REGISTRIES** node, and select **Connect Registry**. Select **Azure** when prompted, and sign in if necessary.
 
 :::image type="content" source="media/vs-code-connect-registry.png" alt-text="Visual Studio Code - Docker: Connect registry":::
 
@@ -279,7 +279,7 @@ Provide the appropriate values:
 - `<instance name>`: the name of the container instance.
 - `<registry name>`: the name of the container registry.
 - `<image name>`: the name of the image.
-- `<password>`: the password to the container registry &mdash; you can get this from the Azure Portal, Container Registry resource > **Access Keys**.
+- `<password>`: the password to the container registry—you can get this from the Azure portal, Container Registry resource > **Access Keys**.
 
 :::zone-end
 :::zone target="docs" pivot="visualstudio"
@@ -287,7 +287,7 @@ Provide the appropriate values:
 To create a container instance, you'll need to [create a new resource](https://ms.portal.azure.com/#create/Microsoft.ContainerInstances) in the Azure portal.
 
 1. Select the same **Subscription**, and corresponding **Resource group** from the previous section.
-1. Enter a **Container name** &mdash; `appcloudservice-container`.
+1. Enter a **Container name**&mdash;`appcloudservice-container`.
 1. Select a **Region** that corresponds to the previous **Location** selection.
 1. For **Image source**, select **Azure Container Registry**.
 1. Select the **Registry** by the name provided in the previous step.
@@ -313,7 +313,7 @@ To verify your worker service is functioning correctly, navigate to the Azure po
 
 :::image type="content" source="media/container-instance-running.png" lightbox="media/container-instance-running.png" alt-text="Azure portal: Container instance running":::
 
-You'll see the containers, and their current **State**. In this case it will be **Running**. Select **Logs** to see the .NET worker service output.
+You'll see the containers, and their current **State**. In this case, it will be **Running**. Select **Logs** to see the .NET worker service output.
 
 :::zone target="docs" pivot="cli"
 

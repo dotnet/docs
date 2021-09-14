@@ -261,7 +261,6 @@ namespace builtin_types
 
                 var p3 = p1 with { X = 1, Y = 4 };
                 Console.WriteLine(p3);  // output: (1, 4)
-
             }
             // </WithExpression>
         }

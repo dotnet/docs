@@ -100,8 +100,8 @@ using IHost host = Host.CreateDefaultBuilder(args)
     {
         services.AddLocalization(options =>
         {
-            options.ResourcesPath = "Resources");
-        }
+            options.ResourcesPath = "Resources";
+        });
     });
 
 // Omitted for brevity.

@@ -321,7 +321,7 @@ The [BlobClient](/dotnet/api/azure.storage.blobs.blobclient) class contains mult
             throw new ApplicationException($"Unable to upload blobs to container '{containerName}' as the container does not exists");
 
         BlobClient blobClient = containerClient.GetBlobClient(blobName);
-        var options = new BlobUploadOptions() { HttpHeaders = new BlobHttpHeaders() { ContentType = contentType } };
+        var options = new BlobUploadOptions { HttpHeaders = new BlobHttpHeaders { ContentType = contentType } };
         var response = blobClient.Upload(content, options);                        
     }
 ```

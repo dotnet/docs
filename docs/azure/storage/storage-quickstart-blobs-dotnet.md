@@ -8,7 +8,7 @@ ms.author: daberry
 ROBOTS: NOINDEX
 ---
 
-# Accessing Azure Blob Storage from .NET applications
+# Access Azure Blob Storage from .NET applications
 
 Azure Blob Storage can be used by .NET applications to store files in the cloud.  Through the use of the [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs/) NuGet package, .NET applications can upload and download files to blob storage as well as create containers (folders) in blob storage to organize their data.  
 

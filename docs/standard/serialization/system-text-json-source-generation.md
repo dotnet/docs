@@ -37,7 +37,7 @@ System.Text.Json provides two modes of source generation:
 * Metadata collection
 * Serialization optimization
 
-You can use either mode by itself or both.
+You can use either mode by itself or in combination.
 
 ### Metadata collection mode
 

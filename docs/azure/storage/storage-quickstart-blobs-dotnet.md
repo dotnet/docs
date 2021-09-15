@@ -291,7 +291,7 @@ public IEnumerable<BlobInfoModel> ListBlobsInContainer(string containerName)
         throw new ApplicationException($"Cannot list blobs in container '{containerName}' as it does not exists");
 
     Pageable<BlobItem> blobs = containerClient.GetBlobs();
-    var models = blobs.Select(b => new BlobInfoModel()
+    var models = blobs.Select(b => new BlobInfoModel
     {
         Name = b.Name,
         Tags = b.Tags,

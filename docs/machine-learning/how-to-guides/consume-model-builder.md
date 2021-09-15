@@ -144,7 +144,7 @@ Since you only need a single route to make predictions, in the `Configure` metho
 
 In the `PredictionHandler` method:
 
-1. The application requests a `PredictionEnginePool`. 
+1. The application requests a `PredictionEnginePool`.
 1. The incoming JSON body of the request is deserialized into an object matching the schema of your input data. In this case, the type is `ModelInput`.
 1. The `Predict` method of the `PredictionEnginePool` is used to make predictions on the input data.
 1. The resulting prediction is returned as a JSON string.

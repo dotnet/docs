@@ -1,5 +1,5 @@
 ---
-title: Accessing Azure Blob Storage from .NET applications
+title: Access Azure Blob Storage from .NET applications
 description: Learn how to connect your applications to Azure Blob Storage
 ms.date: 06/26/2021
 ms.topic: article

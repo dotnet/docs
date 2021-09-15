@@ -345,7 +345,7 @@ In this example, the Blob data is mapped to a Model object which is used by the 
         if (!blobClient.Exists())
             throw new ApplicationException($"Unable to delete blob {blobName} in container '{containerName}' as no blob with this name exists in this container");
                    
-        return new BlobModel()
+        return new BlobModel
         {
             Name = blobName,
             ContentType = blobClient.GetProperties().Value.ContentType,

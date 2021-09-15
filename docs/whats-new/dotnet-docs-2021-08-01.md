@@ -101,7 +101,6 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [dennis-yemelyanov](https://github.com/dennis-yemelyanov) - Dennis Yemelyanov (1)
 - [ElanHasson](https://github.com/ElanHasson) - Elan Hasson (1)
 - [eriawan](https://github.com/eriawan) - Eriawan Kusumawardhono (1)
-- [github-actions](https://github.com/github-actions) -  (1)
 - [jacobslusser](https://github.com/jacobslusser) - Jacob Slusser (1)
 - [jerobado](https://github.com/jerobado) - Jero Bado (1)
 - [joewittmer](https://github.com/joewittmer) - Joe Wittmer (1)

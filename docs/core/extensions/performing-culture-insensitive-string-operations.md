@@ -29,16 +29,16 @@ Most .NET methods that *by default* perform culture-sensitive string operations 
 
 The articles in this section demonstrate how to perform culture-insensitive string operations using .NET methods that are culture-sensitive by default.
 
-[Performing Culture-Insensitive String Comparisons](performing-culture-insensitive-string-comparisons.md)\
+[Performing culture-insensitive string comparisons](performing-culture-insensitive-string-comparisons.md)\
 Describes how to use the <xref:System.String.Compare%2A?displayProperty=nameWithType> and <xref:System.String.CompareTo%2A?displayProperty=nameWithType> methods to perform culture-insensitive string comparisons.
 
-[Performing Culture-Insensitive Case Changes](performing-culture-insensitive-case-changes.md)\
+[Performing culture-insensitive case changes](performing-culture-insensitive-case-changes.md)\
 Describes how to use the <xref:System.String.ToUpper%2A?displayProperty=nameWithType>, <xref:System.String.ToLower%2A?displayProperty=nameWithType>, <xref:System.Char.ToUpper%2A?displayProperty=nameWithType>, and <xref:System.Char.ToLower%2A?displayProperty=nameWithType> methods to perform culture-insensitive case changes.
 
-[Performing Culture-Insensitive String Operations in Collections](performing-culture-insensitive-string-operations-in-collections.md)\
+[Performing culture-insensitive string operations in collections](performing-culture-insensitive-string-operations-in-collections.md)\
 Describes how to use the <xref:System.Collections.CaseInsensitiveComparer>, <xref:System.Collections.CaseInsensitiveHashCodeProvider> class, <xref:System.Collections.SortedList>, <xref:System.Collections.ArrayList.Sort%2A?displayProperty=nameWithType> and <xref:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable%2A?displayProperty=nameWithType> to perform culture-insensitive operations in collections.
 
-[Performing Culture-Insensitive String Operations in Arrays](performing-culture-insensitive-string-operations-in-arrays.md)\
+[Performing culture-insensitive string operations in arrays](performing-culture-insensitive-string-operations-in-arrays.md)\
 Describes how to use the <xref:System.Array.Sort%2A?displayProperty=nameWithType> and <xref:System.Array.BinarySearch%2A?displayProperty=nameWithType> methods to perform culture-insensitive operations in arrays.
 
 ## See also

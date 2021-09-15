@@ -1,6 +1,6 @@
 ---
 title: Install .NET on RHEL - .NET
-description: Demonstrates the various ways to install .NET SDK and .NET Runtime on RHEL.
+description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Red Hat Enterprise Linux.
 author: adegeo
 ms.author: adegeo
 ms.date: 01/06/2021
@@ -8,13 +8,13 @@ ms.date: 01/06/2021
 
 # Install the .NET SDK or the .NET Runtime on RHEL
 
-.NET is supported on RHEL. This article describes how to install .NET on RHEL.
+.NET is supported on Red Hat Enterprise Linux (RHEL). This article describes how to install .NET on RHEL.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
 ## Register your Red Hat subscription
 
-To install .NET from Red Hat on RHEL, you first need to register using the Red Hat Subscription Manager. If this hasn't been done on your system, or if you're unsure, see the [Red Hat Product Documentation for .NET](https://access.redhat.com/documentation/net/5.0/).
+To install .NET from Red Hat on RHEL, you first need to register using the Red Hat Subscription Manager. If this hasn't been done on your system, or if you're unsure, see the [Red Hat Product Documentation for .NET](https://access.redhat.com/documentation/en-us/net/5.0).
 
 ## Supported distributions
 
@@ -24,10 +24,10 @@ The following table is a list of currently supported .NET releases on both RHEL 
 - A ❌ indicates that the version of RHEL or .NET isn't supported on that RHEL release.
 - When both a version of RHEL and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| RHEL                     | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
-|--------------------------|---------------|---------------|----------------|
-| ✔️ [8](#rhel-8-)        | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [7](#rhel-7--net-50) | ✔️ 2.1        | ✔️ [3.1](#rhel-7--net-core-31)        | ✔️ [5.0](#rhel-7--net-50) |
+| RHEL                     | .NET Core 2.1 | .NET Core 3.1                  | .NET 5.0                   |
+| ------------------------ | ------------- | ------------------------------ | -------------------------- |
+| ✔️ [8](#rhel-8-)        | ✔️ 2.1        | ✔️ 3.1                         | ✔️ 5.0                    |
+| ✔️ [7](#rhel-7--net-50) | ✔️ 2.1        | ✔️ [3.1](#rhel-7--net-core-31) | ✔️ [5.0](#rhel-7--net-50) |
 
 The following versions of .NET are no longer supported. The downloads for these still remain published:
 
@@ -137,7 +137,7 @@ As an alternative to the ASP.NET Core Runtime, you can install the .NET Core Run
 
 ## How to install other versions
 
-Consult the [Red Hat documentation for .NET](https://access.redhat.com/documentation/net/5.0/) on the steps required to install other releases of .NET.
+Consult the [Red Hat documentation for .NET](https://access.redhat.com/documentation/en-us/net/5.0) on the steps required to install other releases of .NET.
 
 ## Troubleshoot the package manager
 

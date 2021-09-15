@@ -42,7 +42,7 @@ Set up a way to authenticate to Azure with Azure Identity. Some options are:
 
 - Through the [Azure CLI login](/cli/azure/authenticate-azure-cli)
 - Via [Visual Studio](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet#authenticating-via-visual-studio&preserve-view=false)
-- Setting [environment variables](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager.Core/docs/AuthUsingEnvironmentVariables.md)
+- Setting [environment variables](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager/docs/AuthUsingEnvironmentVariables.md)
 
 More information and different authentication approaches using Azure Identity can be found in [this document](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet&preserve-view=false).
 

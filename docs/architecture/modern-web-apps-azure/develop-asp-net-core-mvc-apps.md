@@ -500,7 +500,7 @@ Blazor Server applications can leverage the same authentication features as any 
 > - **ASP.NET Core Blazor Authentication and Authorization**\
 >   [https://docs.microsoft.com/aspnet/core/blazor/security/](/aspnet/core/blazor/security/)
 > - **Security: Authentication and Authorization in ASP.NET Web Forms and Blazor**\
->   [https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/security-authentication-authorization](/dotnet/architecture/blazor-for-web-forms-developers/security-authentication-authorization)
+>   [https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/security-authentication-authorization](../blazor-for-web-forms-developers/security-authentication-authorization.md)
 
 ### Authorization
 

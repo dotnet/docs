@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5</TargetFramework>
-    <LangVersion>9.0</LangVersion>
+    <TargetFramework>net6</TargetFramework>
+    <Nullable>enable</Nullable>
     <StartupObject>builtin_types.Program</StartupObject>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Platforms>AnyCPU;x86</Platforms>

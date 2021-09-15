@@ -6,9 +6,9 @@ ms.date: 09/15/2021
 ---
 # Update a codebase with nullable reference types to improve null diagnostic warnings
 
-[Nullable reference types](nullable-references.md) enable you to declare if variables of a reference type should or should not ever be assigned a `null` value. The compiler's static analysis and warnings when your code might dereference `null` are the most important benefit of this feature. Once enabled, the compiler generates warnings that help you avoid throwing a <xref:System.NullReferenceException?displayProperty=nameWithType> when your code runs.
+[Nullable reference types](nullable-references.md) enable you to declare if variables of a reference type should or shouldn't be assigned a `null` value. The compiler's static analysis and warnings when your code might dereference `null` are the most important benefit of this feature. Once enabled, the compiler generates warnings that help you avoid throwing a <xref:System.NullReferenceException?displayProperty=nameWithType> when your code runs.
 
-If your codebase is relatively small, you can turn on the [feature in your project](language-reference/compiler-options/language.md#nullable), address warnings, and enjoy the benefits of the improved diagnostics. Larger codebases may require a more structured approach to address warnings over time, enabling the feature for some as you address warnings in different types or files. This article describes different strategies to update a codebase and the tradeoffs associated with these strategies. Before starting your migration, read the conceptual overview of [nullable reference types](nullable-references.md) to understand the compiler's static analysis, *null-state* values of *maybe-null* and *not-null* and the nullable annotations. Once you're familiar with those concepts and terms, you're ready to migrate your code.
+If your codebase is relatively small, you can turn on the [feature in your project](language-reference/compiler-options/language.md#nullable), address warnings, and enjoy the benefits of the improved diagnostics. Larger codebases may require a more structured approach to address warnings over time, enabling the feature for some as you address warnings in different types or files. This article describes different strategies to update a codebase and the tradeoffs associated with these strategies. Before starting your migration, read the conceptual overview of [nullable reference types](nullable-references.md). It covers the compiler's static analysis, *null-state* values of *maybe-null* and *not-null* and the nullable annotations. Once you're familiar with those concepts and terms, you're ready to migrate your code.
 
 ## Plan your migration
 
@@ -16,14 +16,14 @@ Regardless of how you update your codebase, the goal is that nullable warnings a
 
 The first choice is setting the default for the project. Your choices are:
 
-1. ***Nullable disable as the default***: This is the default if you don't add a `Nullable` element to your project file. Use this default when you're not actively adding new files to the codebase and the main activity is to update the library to use nullable reference types. Using this default means you add a nullable pragma to each file as you update its code.
-1. ***Nullable enable as the default***: Set this default when you're actively developing new features, and want all new code to benefit nullable reference types and nullable static analysis. Using this default means you must add a `#pragma nullable disable` to the top of each file. You'll remove that pragma as you begin addressing the warnings in that file.
-1. ***Nullable warnings as the default***: Choose this default for a two phase migration. In the first phase, address warnings. In the second phase, turn on annotations for declaring a variable's expected *null-state*. Using this default means you must add a `#pragma nullable disable` to the top of each file.
+1. ***Nullable disable as the default***: *disable* is the default if you don't add a `Nullable` element to your project file. Use this default when you're not actively adding new files to the codebase. The main activity is to update the library to use nullable reference types. Using this default means you add a nullable pragma to each file as you update its code.
+1. ***Nullable enable as the default***: Set this default when you're actively developing new features. You want all new code to benefit nullable reference types and nullable static analysis. Using this default means you must add a `#pragma nullable disable` to the top of each file. You'll remove that pragma as you begin addressing the warnings in that file.
+1. ***Nullable warnings as the default***: Choose this default for a two-phase migration. In the first phase, address warnings. In the second phase, turn on annotations for declaring a variable's expected *null-state*. Using this default means you must add a `#pragma nullable disable` to the top of each file.
 
 > [!NOTE]
 > You could set ***Nullable annotations*** as the default, but that has minimal benefit for finding potential causes for null reference exceptions.
 
-Enabling nullable as the default create more up-front work to add the pragma to every file. The advantage is that every new code file added to the project will be nullable enabled. Any new work will be nullable aware; only existing code must be updated. Disabling nullable as the default works better if the library is stable, and the main focus of the development is to adopt nullable reference types. You turn on nullable reference types as you annotate APIs. When you've finished, you enable nullable reference types for the entire project. The tradeoff is that the first task when you create a new file is to add the pragma and make it nullable aware. If any developers on your team forget, that new code is now in the backlog of work to make all code nullable aware.
+Enabling nullable as the default create more up-front work to add the pragma to every file. The advantage is that every new code file added to the project will be nullable enabled. Any new work will be nullable aware; only existing code must be updated. Disabling nullable as the default works better if the library is stable, and the main focus of the development is to adopt nullable reference types. You turn on nullable reference types as you annotate APIs. When you've finished, you enable nullable reference types for the entire project. When you create a new file, you must add the pragmas and make it nullable aware. If any developers on your team forget, that new code is now in the backlog of work to make all code nullable aware.
 
 Which of these strategies you pick depends on how much active development is taking place in your project. The more mature and stable your project, the better the second strategy. The more features being developed, the better the first strategy.
 
@@ -39,17 +39,17 @@ Which of these strategies you pick depends on how much active development is tak
 
 ## Understand contexts and warnings
 
-Enabling warnings and annotations control how the compiler views reference types with respect to nullability. Every type has one of three nullabilities:
+Enabling warnings and annotations control how the compiler views reference types and nullability. Every type has one of three nullabilities:
 
 - *oblivious*: All reference types are nullable *oblivious* when the annotation context is disabled.
 - *nonnullable*: An unannotated reference type, `C` is *nonnullable* when the annotation context is enabled.
-- *nullable*: An annotated reference type, `C?`,is *nullable*, but a warning may be issued when the annotation context is disabled. Variables declared with `var` are *nullable* when the annotation context is enabled.
+- *nullable*: An annotated reference type, `C?`, is *nullable*, but a warning may be issued when the annotation context is disabled. Variables declared with `var` are *nullable* when the annotation context is enabled.
 
 The compiler generates warnings based on that nullability:
 
 - *nonnullable* types cause warnings if a potential `null` value is assigned to them.
 - *nullable* types cause warnings if they dereferenced when *maybe-null*.
-- *oblivious* types cause warnings if they are dereferenced when *maybe-null* and the warning context is enabled.
+- *oblivious* types cause warnings if they're dereferenced when *maybe-null* and the warning context is enabled.
 
 Each variable has a default nullable state that depends on its nullability:
 
@@ -65,7 +65,7 @@ If your project uses Entity Framework Core, you should read their guidance on [W
 
 When you start your migration, you should start by enabling warnings only. All declarations remain *nullable oblivious*, but you'll see warnings when you dereference a value after its *null-state* changes to *maybe-null*. As you address these warnings, you'll be checking against null in more locations, and your codebase becomes more resilient. To learn specific techniques for different situations, see the article on [Techniques to resolve nullable warnings](nullable-warnings.md).
 
-You can choose to address warnings and then turn on annotations in each file or class before continuing with other code. However, it's often more efficient to address the warnings generated while the context is *warnings* before enabling the type annotations. That way, all types are *oblivious* until you've addressed the first set of warnings.
+You can address warnings and enable annotations in each file or class before continuing with other code. However, it's often more efficient to address the warnings generated while the context is *warnings* before enabling the type annotations. That way, all types are *oblivious* until you've addressed the first set of warnings.
 
 ## Enable type annotations
 
@@ -73,8 +73,8 @@ After addressing the first set of warnings, you can enable the *annotation conte
 
 ## Attributes extend type annotations
 
-Several attributes have been added to express additional information about the null state of variables. The rules for your APIs are likely more complicated than *not-null* or *maybe-null* for all parameters and return values. Many of your APIs have more complex rules for when variables can or can't be `null`. In these cases, you'll use attributes to express those rules. The attributes that describe the semantics of your API are found in the article on [Attributes that impact nullable analysis](./language-reference/attributes/nullable-analysis.md).
+Several attributes have been added to express additional information about the null state of variables. The rules for your APIs are likely more complicated than *not-null* or *maybe-null* for all parameters and return values. Many of your APIs have more complex rules for when variables can or can't be `null`. In these cases, you'll use attributes to express those rules. The attributes that describe the semantics of your API are found in the article on [Attributes that affect nullable analysis](./language-reference/attributes/nullable-analysis.md).
 
 ## Next steps
 
-Once you've addressed all warnings after enabling annotations, you can set the default context for your project to *enabled*. If you added any pragmas in your code for the nullable annotation or warning context, you can remove them. Over time, you may see new warnings either from code you write, or because a library dependency has been updated to use nullable reference types. Those updates will change the types in that library from *nullable oblivious* to either *nonnullable* or *nullable*.
+Once you've addressed all warnings after enabling annotations, you can set the default context for your project to *enabled*. If you added any pragmas in your code for the nullable annotation or warning context, you can remove them. Over time, you may see new warnings. You may write code that introduces warnings. A library dependency may be  updated for nullable reference types. Those updates will change the types in that library from *nullable oblivious* to either *nonnullable* or *nullable*.

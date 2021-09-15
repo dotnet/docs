@@ -167,7 +167,7 @@
         },
         {
             "source_path": "docs/azure/packages.md",
-            "redirect_url": "/dotnet/azure/sdk/packages"        
+            "redirect_url": "/dotnet/azure/sdk/packages"
         },
         {
             "source_path": "docs/azure/dependency-injection.md",
@@ -1899,14 +1899,18 @@
         {
             "source_path": "docs/csharp/programming-guide/classes-and-structs/anonymous-types.md",
             "redirect_url": "/dotnet/csharp/fundamentals/types/anonymous-types"
-        },        
+        },
         {
             "source_path": "docs/csharp/programming-guide/classes-and-structs/classes.md",
             "redirect_url": "/dotnet/csharp/fundamentals/types/classes"
         },
-        {
+	{
             "source_path": "docs/csharp/programming-guide/classes-and-structs/finalizers.md",
             "redirect_url": "/dotnet/csharp/programming-guide/classes-and-structs/destructors"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/classes-and-structs/finalizers.md",
+            "redirect_url": "/docs/csharp/programming-guide/classes-and-structs/destructors.md"
         },
         {
             "source_path": "docs/csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md",

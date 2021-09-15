@@ -1,7 +1,7 @@
 ---
 title: "Structure types - C# reference"
 description: Learn about the struct type in C#
-ms.date: 09/13/2021
+ms.date: 09/15/2021
 f1_keywords: 
   - "struct_CSharpKeyword"
 helpviewer_keywords: 
@@ -70,6 +70,12 @@ Typically, you apply the `readonly` modifier to the following kinds of instance 
 You can't apply the `readonly` modifier to static members of a structure type.
 
 The compiler may make use of the `readonly` modifier for performance optimizations. For more information, see [Write safe and efficient C# code](../../write-safe-efficient-code.md).
+
+## Nondestructive mutation
+
+Beginning with C# 10.0, you can use the [`with` expression](../operators/with-expression.md) if you need to mutate immutable properties or fields of a structure-type instance. A `with` expression makes a copy of its operand with specified properties and fields modified. You use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values, as the following example shows:
+
+:::code language="csharp" source="snippets/shared/StructType.cs" id="WithExpression":::
 
 ## Limitations with the design of a structure type
 
@@ -171,6 +177,7 @@ For more information about features introduced in C# 7.2 and later, see the foll
 - [Readonly instance members](~/_csharplang/proposals/csharp-8.0/readonly-instance-members.md)
 - [Compile-time safety for ref-like types](~/_csharplang/proposals/csharp-7.2/span-safety.md)
 - [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
+- [Allow `with` expression on structs](~/_csharplang/proposals/csharp-10.0/record-structs.md#allow-with-expression-on-structs)
 
 ## See also
 

@@ -252,7 +252,7 @@ public Type this[int i]
 
 ### DynamicDependency
 
-This attribute can be used to indicate that a member has a dynamic dependency on other members. This results in the referenced members being kept whenever the member with the attribute is kept, but doesn't silence warnings on its own. Unlike the other attributes which teach the trim analysis about the refletion behavior of your code, `DynamicDependency` only keeps additional members. This can be used together with `UnconditionalSuppressMessageAttribute` to fix some analysis warnings.
+This attribute can be used to indicate that a member has a dynamic dependency on other members. This results in the referenced members being kept whenever the member with the attribute is kept, but doesn't silence warnings on its own. Unlike the other attributes which teach the trim analysis about the reflection behavior of your code, `DynamicDependency` only keeps additional members. This can be used together with `UnconditionalSuppressMessageAttribute` to fix some analysis warnings.
 
 > [!WARNING]
 > Use `DynamicDependencyAttribute` only as a last resort when the other approaches aren't viable. It is preferable to express the reflection behavior of your code using `RequiresUnreferencedCodeAttribute` or `DynamicallyAccessedMembersAttribute`.

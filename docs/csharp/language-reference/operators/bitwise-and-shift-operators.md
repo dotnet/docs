@@ -52,7 +52,7 @@ The `~` operator produces a bitwise complement of its operand by reversing each 
 
 [!code-csharp-interactive[bitwise NOT](snippets/shared/BitwiseAndShiftOperators.cs#BitwiseComplement)]
 
-You can also use the `~` symbol to declare finalizers. For more information, see [Finalizers](../../programming-guide/classes-and-structs/destructors.md).
+You can also use the `~` symbol to declare finalizers. For more information, see [Finalizers](../../programming-guide/classes-and-structs/finalizers.md).
 
 ## Left-shift operator \<\<
 

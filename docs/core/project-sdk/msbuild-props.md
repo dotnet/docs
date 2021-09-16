@@ -407,6 +407,9 @@ The `SatelliteResourceLanguages` property lets you specify which languages you w
 </PropertyGroup>
 ```
 
+> [!NOTE]
+> You must specify this property in the project that references the NuGet package with localized resource satellite assemblies.
+
 ### UseAppHost
 
 The `UseAppHost` property controls whether or not a native executable is created for a deployment. A native executable is required for self-contained deployments.

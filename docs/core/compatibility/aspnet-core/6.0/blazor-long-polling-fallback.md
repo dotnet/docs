@@ -48,7 +48,7 @@ endpoints.MapBlazorHub(configureOptions: options =>
 
 ### Client side
 
-In `_Layout.cshtml` update the `blazor.server.js` script tag to include the `autostart="false"` attribute.
+In `Pages/_Layout.cshtml`, update the `blazor.server.js` script tag to include the `autostart="false"` attribute:
 
 ```html
 <script src="_framework/blazor.server.js" autostart="false"></script>

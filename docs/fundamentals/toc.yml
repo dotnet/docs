@@ -348,6 +348,8 @@ items:
         href: ../core/tools/dotnet-workload-list.md
       - name: dotnet workload repair
         href: ../core/tools/dotnet-workload-repair.md
+      - name: dotnet workload restore
+        href: ../core/tools/dotnet-workload-restore.md
       - name: dotnet workload search
         href: ../core/tools/dotnet-workload-search.md
       - name: dotnet workload uninstall
@@ -2029,6 +2031,8 @@ items:
         items:
         - name: Customize character encoding
           href: ../standard/serialization/system-text-json-character-encoding.md
+        - name: Source generation in System.Text.Json
+          href: ../standard/serialization/system-text-json-source-generation.md
         - name: Write custom converters
           href: ../standard/serialization/system-text-json-converters-how-to.md
     - name: Binary serialization

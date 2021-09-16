@@ -55,7 +55,7 @@ Discusses the second stage of creating a localized application, which involves i
 
 Discusses the final stage of creating a localized application, which involves customizing an application's user interface for specific regions or cultures.
 
-[Culture-insensitive string operations](culture-insensitive-string-operations.md)
+[Culture-insensitive string operations](performing-culture-insensitive-string-operations.md)
 
 Describes how to use .NET methods and classes that are culture-sensitive by default to obtain culture-insensitive results.
 

@@ -3,7 +3,7 @@ title: Install .NET on Debian - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Debian.
 author: adegeo
 ms.author: adegeo
-ms.date: 01/06/2021
+ms.date: 09/14/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime on Debian
@@ -24,6 +24,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Debian                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
+| ✔️ [11](#debian-11-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [10](#debian-10-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [9](#debian-9-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ❌ [8](#debian-8-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
@@ -37,6 +38,18 @@ The following versions of .NET are no longer supported. The downloads for these 
 ## Remove preview versions
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
+
+## Debian 11 ✔️
+
+[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
+
+```bash
+wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
 
 ## Debian 10 ✔️
 

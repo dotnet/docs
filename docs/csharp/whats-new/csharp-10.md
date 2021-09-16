@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 10.0 - C# Guide
 description: Get an overview of the new features available in C# 10.0.
-ms.date: 08/24/2021
+ms.date: 09/15/2021
 ---
 # What's new in C# 10.0
 
@@ -10,6 +10,7 @@ ms.date: 08/24/2021
 
 C# 10.0 adds the following features and enhancements to the C# language (as of .NET 6 Preview 7):
 
+- [Improvements of structure types](#improvements-of-structure-types)
 - [`global using` directives](#global-using-directives)
 - [File-scoped namespace declaration](#file-scoped-namespace-declaration)
 - [Extended property patterns](#extended-property-patterns)
@@ -23,6 +24,13 @@ Some of the features you can try are available only when you set your language v
 C# 10.0 is supported on **.NET 6**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
 You can download the latest .NET 6.0 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022 preview](https://visualstudio.microsoft.com/vs/preview/vs2022/), which includes the .NET 6.0 preview SDK.
+
+## Improvements of structure types
+
+C# 10.0 introduces the following improvements related to structure types:
+
+- You can declare an instance parameterless constructor in a structure type and initialize an instance field or property at its declaration. For more information, see the [Parameterless constructors and field initializers](../language-reference/builtin-types/struct.md#parameterless-constructors-and-field-initializers) section of the [Structure types](../language-reference/builtin-types/struct.md) article.
+- A left-hand operand of the [`with` expression](../language-reference/operators/with-expression.md) can be of any structure type.
 
 ## Global using directives
 

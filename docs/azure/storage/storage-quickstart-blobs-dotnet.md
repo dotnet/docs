@@ -12,7 +12,7 @@ ROBOTS: NOINDEX
 
 Azure Blob Storage can be used by .NET applications to store files in the cloud.  Through the use of the [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs/) NuGet package, .NET applications can upload and download files to blob storage as well as create containers (folders) in blob storage to organize their data.  
 
-The [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs/) package is a [.NET Standard 2.0](/dotnet/standard/net-standard) library that works with both .NET Framework (4.6.1 and later) and .NET Core (2.0 and later) applications.
+The [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs/) package is a [.NET Standard 2.0](/dotnet/standard/net-standard) library that works with both .NET Framework (4.7.2 and later) and .NET Core (2.0 and later) applications.
 
 ## Sample application
 
@@ -30,18 +30,18 @@ When complete, the sample application will allow you to create blob containers, 
 
 ## 1 - Create Azure Storage resources
 
-You first need to create a resource group and storage account in Azure for the sample application to use. This can be done using the Azure Portal, Azure CLI, or Azure PowerShell.
+You first need to create a resource group and storage account in Azure for the sample application to use. This can be done using the Azure portal, Azure CLI, or Azure PowerShell.
 
-### [Azure Portal](#tab/azure-portal)
+### [Azure portal](#tab/azure-portal)
 
-Login to the [Azure portal](https://portal.azure.com/) and follow these steps to create a Storage account.
+Sign in to the [Azure portal](https://portal.azure.com/) and follow these steps to create a Storage account.
 
 | Instructions    | Screenshot |
 |:----------------|-----------:|
 | [!INCLUDE [Create storage account step 1](<./includes/create-storage-acct-1.md>)] | :::image type="content" source="./media/azportal-create-storage-account-1-240px.png" alt-text="A screenshot showing how to use the search box in the top tool bar to find storage accounts in Azure." lightbox="./media/azportal-create-storage-account-1.png"::: |
 | [!INCLUDE [Create storage account step 2](<./includes/create-storage-acct-2.md>)] | :::image type="content" source="./media/azportal-create-storage-account-2-240px.png" alt-text="A screenshot showing the create button on the storage accounts page used to create a new storage account." lightbox="./media/azportal-create-storage-account-2.png"::: |
 | [!INCLUDE [Create storage account step 3](<./includes/create-storage-acct-3.md>)] | :::image type="content" source="./media/azportal-create-storage-account-3-240px.png" alt-text="A screenshot showing the form to fill out to create a new storage account in Azure." lightbox="./media/azportal-create-storage-account-3.png"::: |
-| [!INCLUDE [Create storage account step 4](<./includes/create-storage-acct-4.md>)] | :::image type="content" source="./media/azportal-create-storage-account-4-240px.png" alt-text="A screenshot of the completion page after a storage account has been created.  This page contains a button which will take you to the just created storage account." lightbox="./media/azportal-create-storage-account-4.png"::: |
+| [!INCLUDE [Create storage account step 4](<./includes/create-storage-acct-4.md>)] | :::image type="content" source="./media/azportal-create-storage-account-4-240px.png" alt-text="A screenshot of the completion page after a storage account has been created.  This page contains a button that will take you to the storage account you just created." lightbox="./media/azportal-create-storage-account-4.png"::: |
 
 ### [Azure CLI](#tab/azure-cli)
 
@@ -94,9 +94,9 @@ New-AzStorageAccount `
 
 ## 2 - Get Storage connection string
 
-To access the storage account, your app will need the connection string for the storage account.  The connection string can be retrieved using the Azure Portal, Azure CLI or Azure PowerShell.
+To access the storage account, your app will need the connection string for the storage account.  The connection string can be retrieved using the Azure portal, Azure CLI, or Azure PowerShell.
 
-### [Azure Portal](#tab/azure-portal)
+### [Azure portal](#tab/azure-portal)
 
 In the [Azure portal](https://portal.azure.com/), navigate to the storage account and retrieve the connection string using the following instruction.
 
@@ -132,7 +132,7 @@ The connection string for your storage account is considered an app secret and m
 
 ### [Visual Studio](#tab/visual-studio)
 
-With your solution open in Visual Studio, right click on the *project* **AzureBlobStorageDemo** and select **Manage User Secrets** from the context menu. Be sure to right click on the *project* and not the *solution* in the Visual Studio solution explorer.  This will open the *secrets.json* file for the project.  Replace the contents of the file with the JSON below, substituting in your storage connection string.
+With your solution open in Visual Studio, right click on the *project* **AzureBlobStorageDemo** and select **Manage User Secrets** from the context menu. Be sure to right click on the *project* and not the *solution* in the Visual Studio solution explorer.  This will open the *secrets.json* file for the project.  Edit the file to look like the JSON  below, substituting in your storage connection string.
 
 ```json
 {
@@ -180,16 +180,30 @@ dotnet add package Azure.Storage.Blobs
 
 ## 4 - Configure the Azure Storage client in Startup.cs
 
-The Azure SDK communicates with Azure using client objects to execute different operations against Azure.  The [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient) object is the top level object used to communicate with a storage account.
+The Azure SDK communicates with Azure using client objects to execute different operations against Azure.  The [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient) object is the top-level object used to communicate with a storage account.
 
 An application will typically create a single [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient) object per storage account to be used throughout the application.  It is recommended to use dependency injection (DI) and register the [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient) object as a singleton to accomplish this.  For more information about using DI with the Azure SDK, see [Dependency injection with the Azure SDK for .NET](../sdk/dependency-injection.md).
 
-In the Startup.cs file of the application, edit the ConfigureServices() method to include the highlighted code.
+In the `Startup.cs` file of the application, first add the following using statement at the top of the file.
+
+```csharp
+using Azure.Storage.Blobs;
+```
+
+Then, in the `ConfigureServices()` method, add the following three lines after the `services.AddRazorPages()` method call.
+
+```csharp
+var connectionString = Configuration.GetConnectionString("AzureStorage");
+BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);                       
+services.AddSingleton(blobServiceClient);
+```
+
+When finished, the `ConfigureServices()` method should look like the following.
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-    services.AddControllersWithViews();
+    services.AddRazorPages();
 
     // Configure BlobServicesClient object for Azure Storage
     var connectionString = Configuration.GetConnectionString("AzureStorage");
@@ -202,7 +216,7 @@ public void ConfigureServices(IServiceCollection services)
 
 ## 5 - Implement Azure Storage operations in code
 
-All storage operations for the sample app are implemented in the `StorageDemoService` class located in the *Services* directory.  You will need to import the `Azure`, `Azure.Storage.Blobs`, and `Azure.Storage.Blobs.Models` namespaces at the top of this file to work with objects in the `Azure.Storage.Blobs` SDK package.
+All storage operations for the sample app are implemented in the `BlobStorageService.cs` file located in the *Services* directory.  You will need to import the `Azure`, `Azure.Storage.Blobs`, and `Azure.Storage.Blobs.Models` namespaces at the top of this file to work with objects in the `Azure.Storage.Blobs` SDK package.
 
 ```csharp
 using Azure;
@@ -260,7 +274,7 @@ public IEnumerable<StorageContainerModel> GetContainers()
 
 ### Delete a container
 
-To delete a blob container, first a [BlobContainerClient](/dotnet/api/azure.storage.blobs.blobcontainerclient) for the container is obtained from the [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient) by calling the GetBlobContainerClient() method with the name of the container being deleted.  The code makes sure the container exists and then called the `Delete()` method on the [BlobContainerClient](/dotnet/api/azure.storage.blobs.blobcontainerclient).
+To delete a blob container, first a [BlobContainerClient](/dotnet/api/azure.storage.blobs.blobcontainerclient) for the container is obtained from the [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient) by calling the GetBlobContainerClient() method with the name of the container being deleted.  The code makes sure the container exists and then calls the `Delete()` method on the [BlobContainerClient](/dotnet/api/azure.storage.blobs.blobcontainerclient).
 
 Deleting a blob container will also delete all of the blobs in the container.
 
@@ -280,7 +294,7 @@ public void DeleteContainer(string containerName)
 
 To list the blobs in a container, call the [GetBlobs()](/dotnet/api/azure.storage.blobs.blobcontainerclient.getblobs?#Azure_Storage_Blobs_BlobContainerClient_GetBlobs_Azure_Storage_Blobs_Models_BlobTraits_Azure_Storage_Blobs_Models_BlobStates_System_String_System_Threading_CancellationToken_) method on a [BlobContainerClient](/dotnet/api/azure.storage.blobs.blobcontainerclient) object for the container. It is important to check for the existence of the blob container as calling [GetBlobs()](/dotnet/api/azure.storage.blobs.blobcontainerclient.getblobs?#Azure_Storage_Blobs_BlobContainerClient_GetBlobs_Azure_Storage_Blobs_Models_BlobTraits_Azure_Storage_Blobs_Models_BlobStates_System_String_System_Threading_CancellationToken_) on a container that does not exist will result in an exception.  A [Pageable\<BlobItem\>](/dotnet/api/azure.pageable-1) collection will be returned.
 
-In the example application, this collection is mapped into Model objects defined by the application before being returned.  Among the properties available on for each blob are the name of the blob, any tags on the blob, its content type, its creation date and its size in bytes.
+In the example application, this collection is mapped into Model objects defined by the application before being returned.  Among the properties available on for each blob are the name of the blob, any tags on the blob, its content type, its creation date, and its size in bytes.
 
 ```csharp
 public IEnumerable<BlobInfoModel> ListBlobsInContainer(string containerName)
@@ -332,7 +346,7 @@ To download the contents of a blob from Blob Storage you need both the container
 
 The container name is used to get a [BlobContainerClient](/dotnet/api/azure.storage.blobs.blobcontainerclient) object for the container the blob is in.  Then call the [GetBlobClient()](/dotnet/api/azure.storage.blobs.blobcontainerclient.getblobclient#Azure_Storage_Blobs_BlobContainerClient_GetBlobClient_System_String_) with the name of the blob on the [BlobContainerClient](/dotnet/api/azure.storage.blobs.blobcontainerclient) object to get a `BlobClient` object that allows access to the blob.  The [OpenRead()](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.openread#Azure_Storage_Blobs_Specialized_BlobBaseClient_OpenRead_Azure_Storage_Blobs_Models_BlobOpenReadOptions_System_Threading_CancellationToken_) method on the [BlobClient](/dotnet/api/azure.storage.blobs.blobclient) object will return a Stream that can be used to read the blob.
 
-In this example, the Blob data is mapped to a Model object which is used by the application to return a stream of the blob data to the browser for download.
+In this example, the Blob data is mapped to a Model object that is used by the application to return a stream of the blob data to the browser for download.
 
 ```csharp
     public BlobModel GetBlobContents(string containerName, string blobName)
@@ -356,14 +370,14 @@ In this example, the Blob data is mapped to a Model object which is used by the 
 
 ### Delete a blob
 
-To delete a blob from a container, first get the [BlobContainerClient](/dotnet/api/azure.storage.blobs.blobcontainerclient) object for the container the blob is in. Then on the [BlobContainerClient](/dotnet/api/azure.storage.blobs.blobcontainerclient) object call the [GetBlobClient()](/dotnet/api/azure.storage.blobs.blobcontainerclient.getblobclient#Azure_Storage_Blobs_BlobContainerClient_GetBlobClient_System_String_) method  with the name of the blob to get a [BlobClient](/dotnet/api/azure.storage.blobs.blobclient) object which provides operations to manipulate the blob in Azure storage.  Finally, call the [Delete()](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.delete#Azure_Storage_Blobs_Specialized_BlobBaseClient_Delete_Azure_Storage_Blobs_Models_DeleteSnapshotsOption_Azure_Storage_Blobs_Models_BlobRequestConditions_System_Threading_CancellationToken_) method on the [BlobClient](/dotnet/api/azure.storage.blobs.blobclient) object to delete the blob.
+To delete a blob from a container, first get the [BlobContainerClient](/dotnet/api/azure.storage.blobs.blobcontainerclient) object for the container the blob is in. Then on the [BlobContainerClient](/dotnet/api/azure.storage.blobs.blobcontainerclient) object call the [GetBlobClient()](/dotnet/api/azure.storage.blobs.blobcontainerclient.getblobclient#Azure_Storage_Blobs_BlobContainerClient_GetBlobClient_System_String_) method  with the name of the blob to get a [BlobClient](/dotnet/api/azure.storage.blobs.blobclient) object that provides operations to manipulate the blob in Azure storage.  Finally, call the [Delete()](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.delete#Azure_Storage_Blobs_Specialized_BlobBaseClient_Delete_Azure_Storage_Blobs_Models_DeleteSnapshotsOption_Azure_Storage_Blobs_Models_BlobRequestConditions_System_Threading_CancellationToken_) method on the [BlobClient](/dotnet/api/azure.storage.blobs.blobclient) object to delete the blob.
 
-As shown in this example, it is suggested the validate the existence of the container and the blob before deleting the blob to avoid an error.
+As shown in this example, it is suggested to validate the existence of the container and the blob before deleting the blob to avoid an error.
 
 ```csharp
     public void DeleteBlob(string containerName, string blobName)
     {
-        ContainerClient containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
+        BlobContainerClient containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
 
         if (!containerClient.Exists())
             throw new ApplicationException($"Unable to delete blob {blobName} in container '{containerName}' as the container does not exists");
@@ -382,7 +396,7 @@ Build and run the application to interact with Azure blob storage using the samp
 
 :::image type="content" source="./media/sample-app-initial-page.png" alt-text="A screenshot showing how the application looks when run the first time.":::
 
-Select the **Create container** button to create a container in your blob storage account.
+Select the **New container** button to create a container in your blob storage account.
 
 :::image type="content" source="./media/sample-app-showing-containers.png" alt-text="A screenshot showing the application after two containers have been created in the storage account.":::
 
@@ -394,9 +408,9 @@ You can expand each container by selecting the container name.  Within a contain
 
 When you are finished with the sample application, you should remove all Azure resources related to this article from your Azure account.  You can do this by deleting the resource group.
 
-### [Azure Portal](#tab/azure-portal)
+### [Azure portal](#tab/azure-portal)
 
-A resource group can be deleted using the [Azure Portal](https://portal.azure.com/) by doing the following.
+A resource group can be deleted using the [Azure portal](https://portal.azure.com/) by doing the following.
 
 | Instructions    | Screenshot |
 |:----------------|-----------:|

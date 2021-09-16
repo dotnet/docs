@@ -154,7 +154,7 @@ You must explicitly opt in to use these features in your projects. That provides
   - Nullable warnings are disabled.
   - All reference type variables are nullable reference types.
   - You can't declare a variable as a nullable reference type using the `?` suffix on the type.
-  - The can use the null forgiving operator, `!`, but it has no effect.
+  - You can use the null forgiving operator, `!`, but it has no effect.
 - *enabled*: The compiler enables all null reference analysis and all language features.
   - All new nullable warnings are enabled.
   - You can use the `?` suffix to declare a nullable reference type.
@@ -164,12 +164,12 @@ You must explicitly opt in to use these features in your projects. That provides
   - All new nullable warnings are enabled.
   - Use of the `?` suffix to declare a nullable reference type produces a warning.
   - All reference type variables are allowed to be null. However, members have the *null-state* of *not-null* at the opening brace of all methods unless declared with the `?` suffix.
-  - The can use the null forgiving operator, `!`.
+  - You can use the null forgiving operator, `!`.
 - *annotations*: The compiler doesn't perform null analysis or emits warnings when code might dereference `null`.
   - All new nullable warnings are disabled.
   - You can use the `?` suffix to declare a nullable reference type.
   - All other reference type variables are non-nullable reference types.
-  - The can use the null forgiving operator, `!`, but it has no effect.
+  - You can use the null forgiving operator, `!`, but it has no effect.
 
 You can choose which setting is best for your project:
 

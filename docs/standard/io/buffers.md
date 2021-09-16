@@ -56,11 +56,11 @@ The third representation is the most interesting one as it has performance impli
 |`T[]`/`ReadOnlyMemory<T>`|`Length`|`O(1)`|
 |`T[]`/`ReadOnlyMemory<T>`|`GetPosition(long)`|`O(1)`|
 |`T[]`/`ReadOnlyMemory<T>`|`Slice(int, int)`|`O(1)`|
-|`T[]`/`ReadOnlyMemory<T>`|`Slice(SequencePostion,  SequencePostion)`|`O(1)`|
+|`T[]`/`ReadOnlyMemory<T>`|`Slice(SequencePosition,  SequencePosition)`|`O(1)`|
 |`ReadOnlySequenceSegment<T>`|`Length`|`O(1)`|
 |`ReadOnlySequenceSegment<T>`|`GetPosition(long)`|`O(number of segments)`|
 |`ReadOnlySequenceSegment<T>`|`Slice(int, int)`|`O(number of segments)`|
-|`ReadOnlySequenceSegment<T>`|`Slice(SequencePostion, SequencePostion)`|`O(1)`|
+|`ReadOnlySequenceSegment<T>`|`Slice(SequencePosition, SequencePosition)`|`O(1)`|
 
 Because of this mixed representation, the `ReadOnlySequence<T>` exposes indexes as `SequencePosition` instead of an integer. A `SequencePosition`:
 

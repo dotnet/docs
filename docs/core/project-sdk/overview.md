@@ -14,7 +14,7 @@ no-loc: ["EmbeddedResource", "Compile", "None", "Blazor"]
 
 The following SDKs are available:
 
-| ID | Description | Repo|
+| ID |  | Repo|
 | - | - | - |
 | `Microsoft.NET.Sdk` | The .NET SDK | <https://github.com/dotnet/sdk> |
 | `Microsoft.NET.Sdk.Web` | The .NET [Web SDK](/aspnet/core/razor-pages/web-sdk) | <https://github.com/dotnet/sdk> |

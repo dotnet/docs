@@ -48,7 +48,13 @@ endpoints.MapBlazorHub(configureOptions: options =>
 
 ### Client side
 
-Add the following script to `_Layout.cshtml` before the closing `</body>` tag. The supported <xref:Microsoft.AspNetCore.Http.Connections.HttpTransportType> fields are <xref:Microsoft.AspNetCore.Http.Connections.HttpTransportType.WebSockets?displayProperty=nameWithType> (`1`) and <xref:Microsoft.AspNetCore.Http.Connections.HttpTransportType.LongPolling?displayProperty=nameWithType> (`4`).
+In `Pages/_Layout.cshtml`, update the `blazor.server.js` script tag to include the `autostart="false"` attribute:
+
+```html
+<script src="_framework/blazor.server.js" autostart="false"></script>
+```
+
+Below the `blazor.server.js` script tag, add the following snippet. The supported <xref:Microsoft.AspNetCore.Http.Connections.HttpTransportType> fields are <xref:Microsoft.AspNetCore.Http.Connections.HttpTransportType.WebSockets?displayProperty=nameWithType> (`1`) and <xref:Microsoft.AspNetCore.Http.Connections.HttpTransportType.LongPolling?displayProperty=nameWithType> (`4`).
 
 ```html
 <script>

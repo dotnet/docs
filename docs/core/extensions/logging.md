@@ -525,6 +525,58 @@ class Program
 }
 ```
 
+## Create logs in different classes by Dependency Injection
+
+The following code logs in `App` class using Dependency Injection:
+
+```csharp
+using System;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.ApplicationInsights.Channel;
+using Microsoft.ApplicationInsights.Extensibility;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+class Program
+{
+     static void Main(string[] args)
+        {
+            using var channel = new InMemoryChannel();
+            IServiceProvider serviceProvider;
+            try
+            {
+                IServiceCollection services = new ServiceCollection(); 
+                services.Configure<TelemetryConfiguration>(config => config.TelemetryChannel = channel);
+                services.AddLogging(builder =>
+                {
+                    builder.AddApplicationInsights("Azure Application Insights Key");
+                });
+                services.AddSingleton<App>(x =>                {
+                    ILogger<App> logger = x.GetRequiredService<ILogger<App>>();
+                    return new App(logger);
+                });              
+                serviceProvider = services.BuildServiceProvider();                
+                serviceProvider.GetService<App>().Run();               
+            }       
+}
+
+ using Microsoft.Extensions.Logging;
+ class App
+    {
+        private readonly ILogger _logger;
+        public App(ILogger<App> logger)
+        {
+            this._logger = logger;
+        }
+
+        public void Run()
+        {
+            this._logger.LogInformation("Example log message");            
+        }
+    }
+```
+
 ### No asynchronous logger methods
 
 Logging should be so fast that it isn't worth the performance cost of asynchronous code. If a logging data store is slow, don't write to it directly. Consider writing the log messages to a fast store initially, then moving them to the slow store later. For example, when logging to SQL Server, don't do so directly in a `Log` method, since the `Log` methods are synchronous. Instead, synchronously add log messages to an in-memory queue and have a background worker pull the messages out of the queue to do the asynchronous work of pushing data to SQL Server.

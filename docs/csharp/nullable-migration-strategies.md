@@ -19,9 +19,7 @@ The first choice is setting the default for the project. Your choices are:
 1. ***Nullable disable as the default***: *disable* is the default if you don't add a `Nullable` element to your project file. Use this default when you're not actively adding new files to the codebase. The main activity is to update the library to use nullable reference types. Using this default means you add a nullable pragma to each file as you update its code.
 1. ***Nullable enable as the default***: Set this default when you're actively developing new features. You want all new code to benefit nullable reference types and nullable static analysis. Using this default means you must add a `#pragma nullable disable` to the top of each file. You'll remove that pragma as you begin addressing the warnings in that file.
 1. ***Nullable warnings as the default***: Choose this default for a two-phase migration. In the first phase, address warnings. In the second phase, turn on annotations for declaring a variable's expected *null-state*. Using this default means you must add a `#pragma nullable disable` to the top of each file.
-
-> [!NOTE]
-> You could set ***Nullable annotations*** as the default, but that has minimal benefit for finding potential causes for null reference exceptions.
+1. ***Nullable annotations*** as the default. Annotate code before addressing warnings.
 
 Enabling nullable as the default create more up-front work to add the pragma to every file. The advantage is that every new code file added to the project will be nullable enabled. Any new work will be nullable aware; only existing code must be updated. Disabling nullable as the default works better if the library is stable, and the main focus of the development is to adopt nullable reference types. You turn on nullable reference types as you annotate APIs. When you've finished, you enable nullable reference types for the entire project. When you create a new file, you must add the pragmas and make it nullable aware. If any developers on your team forget, that new code is now in the backlog of work to make all code nullable aware.
 

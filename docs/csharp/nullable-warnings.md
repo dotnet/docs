@@ -8,6 +8,13 @@ ms.date: 09/17/2021
 
 The purpose of nullable reference types is to minimize the chance that your application throws a <xref:System.NullReferenceException?displayProperty=nameWithType> when run. To achieve this goal, the compiler uses static analysis and issues warnings when your code has constructs that may lead to null reference exceptions. You provide the compiler with information for its static analysis by applying type annotations and attributes. These annotations and attributes describe the nullability of arguments, parameters, and members of your types. In this article, you'll learn different techniques to address the nullable warnings the compiler generates from its static analysis. The techniques described here are for general C# code. Learn to work with nullable reference types and Entity Framework core in [Working with nullable reference types](/ef/core/miscellaneous/nullable-reference-types.md).
 
+You'll address almost all warnings using one of four techniques:
+
+- Adding necessary null checks.
+- Adding `?` or `!` nullable annotations.
+- Adding attributes that describe null semantics.
+- Initializing variables correctly.
+
 ## Possible dereference of null
 
 One set of warnings alert you that you're dereferencing a variable whose *null-state* is *maybe-null*. One example might be:
@@ -25,7 +32,7 @@ In many instances, you can fix these warnings by checking that a variable isn't 
 
 When your code generates a warning that it may be dereferencing a *maybe-null* reference, make sure you've done a null check. If you haven't, add one. The compiler warning helped you address a possible bug.
 
-Other instances when you get these warnings may be false positive. You may have a private utility method that tests for null. The compiler doesn't know that the method provides a null check. Consider the following example:
+Other instances when you get these warnings may be false positive. You may have a private utility method that tests for null. The compiler doesn't know that the method provides a null check. Consider the following example that uses a private utility method, `IsNotNull`:
 
 :::code language="csharp" source="./snippets/null-warnings/NullTests.cs" id="PrivateNullTest":::
 
@@ -93,9 +100,9 @@ Another alternative may be to change those members to nullable reference types. 
 
 :::code language="csharp" source="./snippets/null-warnings/PersonExamples.cs" id="NullableMember":::
 
-Existing code may require other changes to inform the compiler about the null semantics for those members. You may have created multiple constructors, and your class may have a private helper method that initializes one or more members. The <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute?displayProperty=nameWithType> and <xref:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.%23ctor%2A?displayProperty=nameWithType> attributes inform the compiler that a member is *not-null* after the method has been called.
+Existing code may require other changes to inform the compiler about the null semantics for those members. You may have created multiple constructors, and your class may have a private helper method that initializes one or more members. The <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute?displayProperty=nameWithType> and <xref:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute?displayProperty=nameWithType> attributes inform the compiler that a member is *not-null* after the method has been called.
 
-Finally, you can use the null forgiving operator to indicate that a member is initialized in other code. For example, consider the following classes representing an Entity Framework Core model:
+Finally, you can use the null forgiving operator to indicate that a member is initialized in other code. For another example, consider the following classes representing an Entity Framework Core model:
 
 :::code language="csharp" source="./snippets/null-warnings/Context.cs" id="ExampleModel":::
 

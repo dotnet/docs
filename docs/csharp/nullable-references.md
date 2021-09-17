@@ -214,10 +214,10 @@ For any line of code, you can set any of the following combinations:
 | enabled         | project default    | Fix analysis warnings                  |
 | project default | enabled            | Add type annotations                   |
 | enabled         | enabled            | Code already migrated                  |
+| disabled        | enabled            | Annotate code before fixing warnings   |
 | disabled        | disabled           | Adding legacy code to migrated project |
 | project default | disabled           | Rarely                                 |
 | disabled        | project default    | Rarely                                 |
-| disabled        | enabled            | Rarely                                 |
 
 Those nine combinations provide you with fine-grained control over the diagnostics the compiler emits for your code. You can enable more features in any area you're updating, without seeing additional warnings you aren't ready to address yet.
 

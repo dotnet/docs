@@ -354,7 +354,7 @@ For more detailed examples, take a look at [samples](https://github.com/Azure/az
 - If you need help, check [previous
   questions](https://stackoverflow.com/questions/tagged/azure+.net)
   or ask new ones on StackOverflow using azure and .NET tags.
-- If having trouble with authentication, go to [DefaultAzureCredential documentation](https://docs.microsoft.com/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet).
+- If having trouble with authentication, go to [DefaultAzureCredential documentation](/dotnet/api/azure.identity.defaultazurecredential).
 
 ## Next steps
 
@@ -362,7 +362,7 @@ For more detailed examples, take a look at [samples](https://github.com/Azure/az
 
 - [Managing Resource Groups](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager/samples/Sample2_ManagingResourceGroups.md)
 - [Creating a Virtual Network](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager/samples/Sample3_CreatingAVirtualNetwork.md)
-- [.NET Management Library Code Samples](https://docs.microsoft.com/samples/browse/?branch=master&languages=csharp&term=managing%20using%20Azure%20.NET%20SDK)
+- [.NET Management Library Code Samples](/samples/browse/?branch=master&languages=csharp&term=managing%20using%20Azure%20.NET%20SDK)
 
 ### Additional Documentation
 

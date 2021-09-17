@@ -2,135 +2,173 @@
 title: Resolve nullable warnings
 description: Enabling nullable reference types causes the compiler to issue warnings related to null safety. Learn techniques to address them.
 ms.technology: csharp-null-safety
-ms.date: 09/16/2021
+ms.date: 09/17/2021
 ---
 # Learn techniques to resolve nullable warnings
 
-error codes are here: https://github.com/dotnet/roslyn/blob/main/src/Compilers/CSharp/Portable/Errors/ErrorCode.cs#L1651-L1683
+The purpose of nullable reference types is to provide diagnostics and syntax you can use to minimize the chance that your application throws a <xref:System.NullReferenceException?displayProperty=nameWithType> when run. To achieve this goal, the compiler uses static analysis and issues warnings when your code has constructs that may lead to null reference exceptions. To provide the compiler with more information for its static analysis by applying type annotations and using attributes to describe the nullability of arguments, parameters, and members of your types. In this article, you'll learn different techniques to address the nullable warnings the compiler generates from its static analysis. The techniques described here are for general C# code. You can learn specific advice for working with nullable reference types and Entity Framework core in [Working with nullable reference types](/ef/core/miscellaneous/nullable-reference-types.md) in the Entity Framework Core documentation.
 
-messages are here: https://github.com/dotnet/roslyn/blob/main/src/Compilers/CSharp/Portable/CSharpResources.resx#L5434-L5546
+## Possible dereference of null
 
-## Generic definitions and nullability
-
-Correctly communicating the null state of generic types and generic methods requires special care. The extra care stems from the fact that a nullable value type and a nullable reference type are fundamentally different. An `int?` is a synonym for `Nullable<int>`, whereas `string?` is `string` with an attribute added by the compiler. The result is that the compiler can't generate correct code for `T?` without knowing if `T` is a `class` or a `struct`.
-
-This fact doesn't mean you can't use a nullable type (either value type or reference type) as the type argument for a closed generic type. Both `List<string?>` and `List<int?>` are valid instantiations of `List<T>`.
-
-What it does mean is that you can't use `T?` in a generic class or method declaration without constraints. For example, <xref:System.Linq.Enumerable.FirstOrDefault%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D)?displayProperty=nameWithType> won't be changed to return `T?`. You can overcome this limitation by adding either the `struct` or `class` constraint. With either of those constraints, the compiler knows how to generate code for both `T` and `T?`.
-
-You may want to restrict the types used for a generic type argument to be non-nullable types. You can do that by adding the `notnull` constraint on that type argument. When that constraint is applied in a nullable context, the type argument must not be a nullable type.
-
-## Late-initialized properties, Data Transfer Objects, and nullability
-
-Indicating the nullability of properties that are late-initialized, meaning set after construction, may require special consideration to ensure that your class continues to correctly express the original design intent.
-
-Types that contain late-initialized properties, such as Data Transfer Objects (DTOs), are often instantiated by an external library, like a database ORM (Object Relational Mapper), a deserializer, or some other component that automatically populates properties from another source.
-
-Consider the following DTO class, prior to enabling nullable reference types, that represents a student:
+One set of warnings alert you that you are dereferencing a variable whose *null-state* is *maybe-null*. One example might be:
 
 ```csharp
-class Student
+string message = null;
+Console.WriteLine(message.Length);
+```
+
+To remove these warnings, you need to add code to change that variable's *null-state* to *not-null* before dereferencing it.
+
+In many instances, you can fix these warnings by checking that a variable isn't null before dereferencing it. For example, the above example could be rewritten as:
+
+```csharp
+string message = null;
+if (message is not null)
 {
-    [Required]
-    public string FirstName { get; set; }
-
-    [Required]
-    public string LastName { get; set; }
-
-    public string VehicleRegistration { get; set; }
+    Console.WriteLine(message.Length);
 }
 ```
 
-The design intent (indicated in this case by the `Required` attribute) suggests that in this system, the `FirstName` and `LastName` properties are **mandatory**, and therefore not null.
+When your code generates a warning that it may be dereferencing a *maybe-null* reference, make sure you have done a null check. If you haven't, add one. The compiler warning helped you address a possible bug.
 
-The `VehicleRegistration` property is **not mandatory**, so may be null.
+In other instances when you get these warnings, the compiler may be generating a false positive. You may have a private utility method that tests for null. The compiler doesn't know that the method provides a null check. Consider the following example:
 
-When you enable nullable reference types, you want to indicate which properties on your DTO may be nullable, consistent with your original intent:
+:::code language="csharp" source="./snippets/null-warnings/Program.cs" id="PrivateNullTest":::
+
+The compiler warns that you may be dereferencing null when you write the property `message.Length` because its static analysis determines that `message` may be `null`. You may know that `IsNotNull` provides a null check, and when it returns `true`, the *null-state* of `message` should be *not-null*. You must tell the compiler those facts. One way is to use the null forgiving operator, `!`. You can change the `WriteLine` statement to match the following code:
 
 ```csharp
-class Student
+Console.WriteLine(message!.Length);
+```
+
+The null forgiving operator makes the expression *not-null* even if it was *maybe-null* without the `!` applied. In this example, a better solution is to add an attribute to the signature of `IsNotNull`:
+
+:::code language="csharp" source="./snippets/null-warnings/Program.cs" id="AnnotatedNullCheck":::
+
+The <xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute?displayProperty=nameWithType> informs the compiler that the argument used for the `obj` parameter is *not-null* when the method returns `true`. When the method returns `false`, the argument has the same *null-state* it had before the method was called.
+
+There's a rich set of attributes you can use to describe how your methods and properties affect *null-state*. You can learn about them in the language reference article on [Nullable static analysis attributes](language-reference/attributes/nullable-analysis.md).
+
+Fixing a warning for dereferencing a *maybe-null* variable involves one of three techniques:
+
+- Add a missing null check.
+- Add null analysis attributes on APIs to affect the compiler's *null-state* static analysis. These attributes inform the compiler when a return value or argument should be *maybe-null* or *not-null* after calling the method.
+- Apply the null forgiving operator `!` to the expression to force the state to *not-null*.
+
+## Possible null assigned to a nonnullable reference
+
+The compiler emits these warnings when you attempt to assign an expression that is *maybe-null* to a variable that is nonnullable. For example:
+
+```csharp
+public string? TryGetMessage(int id); 
+
+string msg = TryGetMessage(42); // Possible null assignment.
+```
+
+You can take one of three actions to address these warnings. One is to add the `?` annotation to make the variable a nullable reference type. That make cause other warnings. Changing a variable from a non-nullable reference to a nullable reference changes its default *null-state* from *not-null* to *maybe-null*. The compiler's static analysis may find instances where you dereference a variable that is *maybe-null*.
+
+The other actions instruct the compiler that the right-hand-side of the assignment is *not-null*. The expression on the right-hand-side could be null checked before assignment, as shown in the following example:
+
+```csharp
+public string? TryGetMessage(int id); 
+
+string msg = TryGetMessage(42) ?? $"Unknown message id: {id}";
+```
+
+The previous examples demonstrate assignment to the return value of a method. You may annotate the method (or property) to indicate when a method returns a not-null value. The <xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute?displayProperty=nameWithType> often specifies that a return value is *not-null* when an input argument is *not-null*. Another alternative is to add the null forgiving operator, `!` to the right hand side:
+
+```csharp
+string msg = TryGetMessage(42)!;
+```
+
+Fixing a warning for assigning a *maybe-null* expression to a *not-null* variable involves one of four techniques:
+
+- Change the left side of the assignment to a nullable type. This may introduce new warnings when you dereference that variable.
+- Provide a null-check before the assignment.
+- Annotate the API that produces the right hand side of the assignment.
+- Add the null forgiving operator to the right hand side of the assignment.
+
+## Nonnullable reference not initialized
+
+Another set of warnings are generated when you declare a member variable as a nonnullable reference type, and that member isn't initialized in a constructor or a field initializer. Consider the following class as an example:
+
+```csharp
+public class Person
 {
-    [Required]
-    public string FirstName { get; set; }
-
-    [Required]
-    public string LastName { get; set; }
-
-    public string? VehicleRegistration { get; set; }
+   public string FirstName { get; set;}
+   public string LastName { get; set; }
 }
 ```
 
-For this DTO, the only property that may be null is ``VehicleRegistration``.
-
-However, the compiler raises `CS8618` warnings for both `FirstName` and `LastName`, indicating the non-nullable properties are uninitialized.
-
-There are three options available to you that resolve the compiler warnings in a way that maintains the original intent. Any of these options are valid; you should choose the one that best suits your coding style and design requirements.
-
-### Initialize in the constructor
-
-The ideal way to resolve the uninitialized warnings is to initialize the properties in the constructor:
+Neither `FirstName` nor `LastName` are guaranteed to be initialized. If this is new code, consider changing the public interface. The above example could be updated as follows:
 
 ```csharp
-class Student
+public class Person
 {
-    public Student(string firstName, string lastName)
+    public Person(string first, string last)
     {
-        FirstName = firstName;
-        LastName = lastName;
+        FirstName = first;
+        LastName = lase;
     }
 
-    [Required]
-    public string FirstName { get; set; }
-
-    [Required]
+    public string FirstName { get; set;}
     public string LastName { get; set; }
-
-    public string? VehicleRegistration { get; set; }
 }
 ```
 
-This approach only works if the library that you use to instantiate the class supports passing parameters in the constructor.
-
-A library may support passing *some* properties in the constructor, but not all. For example, EF Core supports [constructor binding](/ef/core/modeling/constructors) for normal column properties, but not navigation properties.
-
-Check the documentation on the library that instantiates your class, to understand the extent to which it supports constructor binding.
-
-### Property with nullable backing field
-
-If constructor binding won't work for you, one way to deal with this problem is to have a non-nullable property with a nullable backing field:
+If you require creating a `Person` object before setting the name, you can initialize the properties using a default non-null value:
 
 ```csharp
-private string? _firstName;
-
-[Required]
-public string FirstName
+public class Person
 {
-    set => _firstName = value;
-    get => _firstName
-           ?? throw new InvalidOperationException("Uninitialized " + nameof(FirstName))
+   public string FirstName { get; set;} = string.Empty;
+   public string LastName { get; set; } = string.Empty;
 }
 ```
 
-In this scenario, if the `FirstName` property is accessed before it has been initialized, then the code throws an `InvalidOperationException`, because the API contract has been used incorrectly.
-
-Consider that some libraries may have special considerations when using backing fields. For example, EF Core may need to be configured to use [backing fields](/ef/core/modeling/backing-field) correctly.
-
-### Initialize the property to null
-
-As a terser alternative to using a nullable backing field, or if the library that instantiates your class isn't compatible with that approach, you can initialize the property to `null` directly, with the help of the null-forgiving operator (`!`):
+Another alternative may be to change those members to nullable reference types. The `Person` class could be defined as follows if `null` should be allowed for the name:
 
 ```csharp
-[Required]
-public string FirstName { get; set; } = null!;
-
-[Required]
-public string LastName { get; set; } = null!;
-
-public string? VehicleRegistration { get; set; }
+public class Person
+{
+   public string? FirstName { get; set;}
+   public string? LastName { get; set; }
+}
 ```
 
-You'll never observe an actual null value at runtime except as a result of a programming bug, by accessing the property before it has been properly initialized.
+Existing code may require other changes to inform the compiler about the null semantics for those members. You may have created multiple constructors, and your class may have a private helper method that initializes one or more members. The <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute?displayProperty=nameWithType> and <xref:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.%23ctor%2A?displayProperty=nameWithType> attributes inform the compiler that a member is *not-null* after the method has been been called.
 
-## See also
+Finally, you can use the null forgiving operator to indicate that a member is initialized in other code. For example, consider the following classes representing an Entity Framework Core model:
 
-- [Working with Nullable Reference Types in EF Core](/ef/core/miscellaneous/nullable-reference-types)
+:::code language="csharp" source="./snippets/nullable-warnings/Context.cs" id=ExampleModel:::
+
+The `DbSet` property is initialized to `null!`. That tells the compiler that the property is set to a *not-null* value. In fact, the base `DbContext` performs the initialization of the set. The compiler's static analysis doesn't pick that up. For more information on working with nullable reference types and Entity Framework Core, see the article on [Working with Nullable Reference Types in EF Core](/ef/core/miscellaneous/nullable-reference-types).
+
+Fixing a warning for not initializing a nonnullable member involves one of four techniques:
+
+- Change the constructors or field initializers to ensure all nonnullable members are initialized.
+- Change one or more members to be nullable types.
+- Annotate any helper methods to indicate which members are assigned.
+- Add an initializer to `null!` to indicate that the member is initialized in other code.
+
+## Mismatch in nullability declaration
+
+Another set of warnings indicate nullability mismatches between signatures for methods, delegates, or type parameters. For example:
+
+:::code language="csharp" source="snippets/nullable-warnings/Hierarchy.cs" id="Hierarchy":::
+
+The preceding example shows a `virtual` method in a base class and an `override` with different nullability. The base class returns a non-nullable string, but the derived class returns a nullable string. If these were reversed, it would be allowed because the derived class is more restrictive. Similarly, parameter declarations should match. Parameters in the override method can allow null even when the base class doesn't.
+
+Other situations can generate these warnings. You may have a mismatch in an interface method declaration and the implementation of that method. Or a delegate type and the expression for that delegate may differ. A type parameter and the type argument may differ in nullability.
+
+To fix these warnings, update the appropriate declaration.
+
+## Code doesn't match attribute declaration
+
+The preceding sections have discussed how you can use [Attributes for nullable static analysis](language-reference/attributes/nullable-analysis.md) to inform the compiler about the null semantics of your code. The compiler warns you if the code doesn't adhere to the promises of that attribute. Consider the following method:
+
+:::code language="csharp" source="snippets/nullable-warnings/Program.cs" id="ViolateAttribute":::
+
+The compiler produces a warning because the `message` parameter is assigned `null` *and* the method returns `true`. The `NotNullWhen` attribute indicates that shouldn't happen.
+
+To address these warnings, update your code so it matches the expectations of the attributes you've applied. That may imply changing the attributes, or the algorithm.

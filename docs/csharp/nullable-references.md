@@ -93,10 +93,10 @@ The *null-state* analysis provides robust analysis for most variables. The compi
 
 You use annotations that can declare whether a variable is a **nullable reference type** or a **non-nullable reference type**. These annotations make important statements about the *null-state* for variables:
 
-- **A reference isn't supposed to be null**. The compiler enforces rules that ensure it's safe to dereference these variables without first checking that it isn't null:
+- **A reference isn't supposed to be null**. The default state of a nonnullable reference variable is *not-null*. The compiler enforces rules that ensure it's safe to dereference these variables without first checking that it isn't null:
   - The variable must be initialized to a non-null value.
   - The variable can never be assigned the value `null`. The compiler issues a warning when code assigns a *maybe-null* expression to a variable that shouldn't be null.
-- **A reference may be null**. The compiler enforces rules to ensure that you've correctly checked for a `null` reference:
+- **A reference may be null**. The default state of a nullable reference variable is *maybe-null*. The compiler enforces rules to ensure that you've correctly checked for a `null` reference:
   - The variable may only be dereferenced when the compiler can guarantee that the value isn't `null`.
   - These variables may be initialized with the default `null` value and may be assigned the value `null` in other code.
   - The compiler doesn't issue warnings when code assigns a *maybe-null* expression to a variable that may be null.
@@ -170,6 +170,8 @@ You must explicitly opt in to use these features in your projects. That provides
   - You can use the `?` suffix to declare a nullable reference type.
   - All other reference type variables are non-nullable reference types.
   - The can use the null forgiving operator, `!`, but it has no effect.
+
+Reference type variables in code compiled before C# 8, or in a *disabled* context is *nullable-oblivious*. You can assign a `null` literal or a *maybe-null* variable to a variable that is *nullable oblivious*. However, the default state of a *nullable-oblivious* variable is *not-null*.
 
 You can choose which setting is best for your project:
 

@@ -50,7 +50,7 @@ The following versions of .NET are no longer supported. The downloads for these 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 
 ```bash
-sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm
+sudo rpm -Uvh https://packages.microsoft.com/rhel/7/prod/packages-microsoft-prod-1.0-1.el7.noarch.rpm
 ```
 
 [!INCLUDE [linux-yum-install-50](includes/linux-install-50-yum.md)]

@@ -41,7 +41,8 @@ The null forgiving operator makes the expression *not-null* even if it was *mayb
 
 The <xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute?displayProperty=nameWithType> informs the compiler that the argument used for the `obj` parameter is *not-null* when the method returns `true`. When the method returns `false`, the argument has the same *null-state* it had before the method was called.
 
-There's a rich set of attributes you can use to describe how your methods and properties affect *null-state*. You can learn about them in the language reference article on [Nullable static analysis attributes](language-reference/attributes/nullable-analysis.md).
+> [!TIP]
+> There's a rich set of attributes you can use to describe how your methods and properties affect *null-state*. You can learn about them in the language reference article on [Nullable static analysis attributes](language-reference/attributes/nullable-analysis.md).
 
 Fixing a warning for dereferencing a *maybe-null* variable involves one of three techniques:
 

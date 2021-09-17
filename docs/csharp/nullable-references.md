@@ -93,10 +93,10 @@ The *null-state* analysis provides robust analysis for most variables. The compi
 
 You use annotations that can declare whether a variable is a **nullable reference type** or a **non-nullable reference type**. These annotations make important statements about the *null-state* for variables:
 
-- **A reference isn't supposed to be null**. The compiler enforces rules that ensure it's safe to dereference these variables without first checking that it isn't null:
+- **A reference isn't supposed to be null**. The default state of a nonnullable reference variable is *not-null*. The compiler enforces rules that ensure it's safe to dereference these variables without first checking that it isn't null:
   - The variable must be initialized to a non-null value.
   - The variable can never be assigned the value `null`. The compiler issues a warning when code assigns a *maybe-null* expression to a variable that shouldn't be null.
-- **A reference may be null**. The compiler enforces rules to ensure that you've correctly checked for a `null` reference:
+- **A reference may be null**. The default state of a nullable reference variable is *maybe-null*. The compiler enforces rules to ensure that you've correctly checked for a `null` reference:
   - The variable may only be dereferenced when the compiler can guarantee that the value isn't `null`.
   - These variables may be initialized with the default `null` value and may be assigned the value `null` in other code.
   - The compiler doesn't issue warnings when code assigns a *maybe-null* expression to a variable that may be null.
@@ -171,6 +171,8 @@ You must explicitly opt in to use these features in your projects. That provides
   - All other reference type variables are non-nullable reference types.
   - You can use the null forgiving operator, `!`, but it has no effect.
 
+Reference type variables in code compiled before C# 8, or in a *disabled* context is *nullable-oblivious*. You can assign a `null` literal or a *maybe-null* variable to a variable that is *nullable oblivious*. However, the default state of a *nullable-oblivious* variable is *not-null*.
+
 You can choose which setting is best for your project:
 
 - Choose *disabled* for legacy projects that you don't want to update based on diagnostics or new features.
@@ -212,10 +214,10 @@ For any line of code, you can set any of the following combinations:
 | enabled         | project default    | Fix analysis warnings                  |
 | project default | enabled            | Add type annotations                   |
 | enabled         | enabled            | Code already migrated                  |
+| disabled        | enabled            | Annotate code before fixing warnings   |
 | disabled        | disabled           | Adding legacy code to migrated project |
 | project default | disabled           | Rarely                                 |
 | disabled        | project default    | Rarely                                 |
-| disabled        | enabled            | Rarely                                 |
 
 Those nine combinations provide you with fine-grained control over the diagnostics the compiler emits for your code. You can enable more features in any area you're updating, without seeing additional warnings you aren't ready to address yet.
 
@@ -317,5 +319,4 @@ In the preceding example, the declaration of the array shows it holds non-nullab
 - [Draft nullable reference types specification](~/_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md)
 - [Unconstrained type parameter annotations](~/_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md)
 - [Intro to nullable references tutorial](whats-new/tutorials/nullable-reference-types.md)
-- [Migrate an existing codebase to nullable references](whats-new/tutorials/upgrade-to-nullable-references.md)
 - [**Nullable** (C# Compiler option)](language-reference/compiler-options/language.md#nullable)

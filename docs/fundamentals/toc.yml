@@ -1715,6 +1715,8 @@ items:
   - name: GitHub Actions and .NET
     href: ../devops/github-actions-overview.md
     displayName: "continuous integration,continuous deployment,continuous delivery,ci,cd,ci/cd,github,github action,github actions,lifecycle"
+  - name: Official .NET Github Actions
+    href: ../devops/dotnet-github-action-reference.md
   - name: Tutorials
     expanded: true
     items:
@@ -1736,8 +1738,6 @@ items:
     - name: Create a CodeQL GitHub Action
       href: ../devops/dotnet-secure-github-action.md
       displayName: codeql,security,vulnerability,source scan
-  - name: Official .NET Github Actions
-    href: ../devops/dotnet-github-action-reference.md
 - name: Fundamental coding components
   items:
   - name: Base types overview

@@ -8,6 +8,9 @@ ms.date: 09/17/2021
 
 This article lists some of the first party .NET GitHub actions that are hosted on the [dotnet GitHub organization](https://github.com/dotnet).
 
+> [!NOTE]
+> This article is a work-in-progress, and may not list all the available .NET GitHub Actions.
+
 ## .NET version sweeper
 
 [dotnet/versionsweeper](https://github.com/dotnet/versionsweeper)

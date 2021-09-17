@@ -95,7 +95,7 @@ When you design a structure type, you have the same capabilities as with a [clas
 
 - A structure type can't inherit from other class or structure type and it can't be the base of a class. However, a structure type can implement [interfaces](../keywords/interface.md).
 
-- You can't declare a [finalizer](../../programming-guide/classes-and-structs/destructors.md) within a structure type.
+- You can't declare a [finalizer](../../programming-guide/classes-and-structs/finalizers.md) within a structure type.
 
 ## Parameterless constructors and field initializers
 

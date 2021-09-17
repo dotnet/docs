@@ -25,6 +25,9 @@ In the above example, `[*.cs]` is an editorconfig section header to select all C
 
 You can apply EditorConfig file conventions to a folder, a project, or an entire repo by placing the file in the corresponding directory. These options are applied when executing the analysis at build time and while you edit code in Visual Studio.
 
+> [!NOTE]
+> EditorConfig options apply only to *source* files in a project or directory. Files that are included in a project as [AdditionalFiles](/visualstudio/ide/build-actions#build-action-values) are not considered *source* files, and EditorConfig options aren't applied to these files. To apply a rule option to non-source files, specify the option in a [global configuration file](#global-analyzerconfig).
+
 If you have an existing *.editorconfig* file for editor settings such as indent size or whether to trim trailing whitespace, you can place your code analysis configuration options in the same file.
 
 > [!TIP]

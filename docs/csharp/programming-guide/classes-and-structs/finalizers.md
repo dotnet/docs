@@ -21,11 +21,11 @@ Finalizers (historically referred to as **destructors**) are used to perform any
 
 For example, the following is a declaration of a finalizer for the `Car` class.
 
-:::code language="csharp" source="snippets/destructors/Program.cs" ID="Snippet2":::
+:::code language="csharp" source="snippets/finalizers/Program.cs" ID="Snippet2":::
 
 A finalizer can also be implemented as an expression body definition, as the following example shows.
 
-:::code language="csharp" source="snippets/destructors/expr-bodied-destructor.cs" ID="Snippet1":::
+:::code language="csharp" source="snippets/finalizers/expr-bodied-finalizer.cs" ID="Snippet1":::
 
 The finalizer implicitly calls <xref:System.Object.Finalize%2A> on the base class of the object. Therefore, a call to a finalizer is implicitly translated to the following code:
 
@@ -77,7 +77,7 @@ The following example creates three classes that make a chain of inheritance. Th
 * .NET Framework: The output shows that the finalizers for the three classes are called automatically when the application terminates, in order from the most-derived to the least-derived.
 * .NET 5 (including .NET Core) or a later version: There's no output, because this implementation of .NET doesn't call finalizers when the application terminates.
 
-:::code language="csharp" source="snippets/destructors/Program.cs" ID="Snippet1":::
+:::code language="csharp" source="snippets/finalizers/Program.cs" ID="Snippet1":::
   
 ## C# language specification  
 

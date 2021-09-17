@@ -399,7 +399,7 @@ The `RuntimeIdentifiers` property lets you specify a semicolon-delimited list of
 
 ## SatelliteResourceLanguages
 
-The `SatelliteResourceLanguages` property lets you specify which languages you want to preserve satellite resource assemblies for during publish. Many NuGet packages include localized resource satellite assemblies in the main package. For projects that reference these NuGet packages that don't require localized resources, the localized assemblies can unnecessarily inflate the publish output size. By adding the `SatelliteResourceLanguages` property to your project file, only localized assemblies for the languages you specify will be included in the publish output. For example, in the following project file, only English (US) resource satellite assemblies will be retained.
+The `SatelliteResourceLanguages` property lets you specify which languages you want to preserve satellite resource assemblies for during build and publish. Many NuGet packages include localized resource satellite assemblies in the main package. For projects that reference these NuGet packages that don't require localized resources, the localized assemblies can unnecessarily inflate the build and publish output size. By adding the `SatelliteResourceLanguages` property to your project file, only localized assemblies for the languages you specify will be included in the build and publish output. For example, in the following project file, only English (US) resource satellite assemblies will be retained.
 
 ```xml
 <PropertyGroup>

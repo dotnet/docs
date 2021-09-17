@@ -56,7 +56,7 @@ let myLongValueName = someExpression
                       |> anotherExpression
 ```
 
-This is sometimes called “vanity alignment” or “vanity indentation”. The primary reasons for avoiding this are:
+The primary reasons for avoiding this are:
 
 * Important code is moved far to the right
 * There is less width left for the actual code

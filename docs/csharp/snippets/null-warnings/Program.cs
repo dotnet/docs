@@ -1,33 +1,19 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿// <ProvideNullCheck>
+string message = null;
+if (message is not null)
+{
+    Console.WriteLine(message.Length);
+}
+// </ProvideNullCheck>
 
-[return:NotNull]
+
+// <PossibleNullAssignment>
 string? TryGetMessage(int id) => "";
 
 string msg = TryGetMessage(42);  // Possible null assignment.
+// </PossibleNullAssignment>
 
-msg = TryGetMessage(42) ?? "Unknown message id: 42";
+// <NullGuard>
+string notNullMsg = TryGetMessage(42) ?? "Unknown message id: 42";
+// </NullGuard>
 
-class Test
-{
-    // <PrivateNullTest>
-    public void WriteMessage(string? message)
-    {
-        if (IsNotNull(message))
-            Console.WriteLine(message.Length);
-    }
-    // </PrivateNullTest>
-
-    // <AnnotatedNullCheck>
-    private static bool IsNotNull([NotNullWhen(true)]object? obj) => obj != null;
-    // </AnnotatedNullCheck>
-
-    // <ViolateAttribute>
-    public bool TryGetMessage(int id, [NotNullWhen(true)]out string? message)
-    {
-        message = null;
-        return true;
-
-    }
-    // </ViolateAttribute>
-
-}

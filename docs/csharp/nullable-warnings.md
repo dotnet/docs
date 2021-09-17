@@ -21,19 +21,13 @@ To remove these warnings, you need to add code to change that variable's *null-s
 
 In many instances, you can fix these warnings by checking that a variable isn't null before dereferencing it. For example, the above example could be rewritten as:
 
-```csharp
-string message = null;
-if (message is not null)
-{
-    Console.WriteLine(message.Length);
-}
-```
+:::code language="csharp" source="snippets/nullable-warnings/Program.cs" id="ProvideNullCheck":::
 
 When your code generates a warning that it may be dereferencing a *maybe-null* reference, make sure you have done a null check. If you haven't, add one. The compiler warning helped you address a possible bug.
 
 In other instances when you get these warnings, the compiler may be generating a false positive. You may have a private utility method that tests for null. The compiler doesn't know that the method provides a null check. Consider the following example:
 
-:::code language="csharp" source="./snippets/null-warnings/Program.cs" id="PrivateNullTest":::
+:::code language="csharp" source="./snippets/null-warnings/NullTests.cs" id="PrivateNullTest":::
 
 The compiler warns that you may be dereferencing null when you write the property `message.Length` because its static analysis determines that `message` may be `null`. You may know that `IsNotNull` provides a null check, and when it returns `true`, the *null-state* of `message` should be *not-null*. You must tell the compiler those facts. One way is to use the null forgiving operator, `!`. You can change the `WriteLine` statement to match the following code:
 
@@ -43,7 +37,7 @@ Console.WriteLine(message!.Length);
 
 The null forgiving operator makes the expression *not-null* even if it was *maybe-null* without the `!` applied. In this example, a better solution is to add an attribute to the signature of `IsNotNull`:
 
-:::code language="csharp" source="./snippets/null-warnings/Program.cs" id="AnnotatedNullCheck":::
+:::code language="csharp" source="./snippets/null-warnings/NullTests.cs" id="AnnotatedNullCheck":::
 
 The <xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute?displayProperty=nameWithType> informs the compiler that the argument used for the `obj` parameter is *not-null* when the method returns `true`. When the method returns `false`, the argument has the same *null-state* it had before the method was called.
 
@@ -59,21 +53,13 @@ Fixing a warning for dereferencing a *maybe-null* variable involves one of three
 
 The compiler emits these warnings when you attempt to assign an expression that is *maybe-null* to a variable that is nonnullable. For example:
 
-```csharp
-public string? TryGetMessage(int id); 
-
-string msg = TryGetMessage(42); // Possible null assignment.
-```
+:::code language="csharp" source="./snippets/null-warnings/Program.cs" id="PossibleNullAssignment":::
 
 You can take one of three actions to address these warnings. One is to add the `?` annotation to make the variable a nullable reference type. That make cause other warnings. Changing a variable from a non-nullable reference to a nullable reference changes its default *null-state* from *not-null* to *maybe-null*. The compiler's static analysis may find instances where you dereference a variable that is *maybe-null*.
 
 The other actions instruct the compiler that the right-hand-side of the assignment is *not-null*. The expression on the right-hand-side could be null checked before assignment, as shown in the following example:
 
-```csharp
-public string? TryGetMessage(int id); 
-
-string msg = TryGetMessage(42) ?? $"Unknown message id: {id}";
-```
+:::code language="csharp" source="./snippets/null-warnings/Program.cs" id="NullGuard":::
 
 The previous examples demonstrate assignment to the return value of a method. You may annotate the method (or property) to indicate when a method returns a not-null value. The <xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute?displayProperty=nameWithType> often specifies that a return value is *not-null* when an input argument is *not-null*. Another alternative is to add the null forgiving operator, `!` to the right hand side:
 
@@ -92,49 +78,19 @@ Fixing a warning for assigning a *maybe-null* expression to a *not-null* variabl
 
 Another set of warnings are generated when you declare a member variable as a nonnullable reference type, and that member isn't initialized in a constructor or a field initializer. Consider the following class as an example:
 
-```csharp
-public class Person
-{
-   public string FirstName { get; set;}
-   public string LastName { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/nullable-warnings/PersonExamples.cs" id="PersonExample":::
 
 Neither `FirstName` nor `LastName` are guaranteed to be initialized. If this is new code, consider changing the public interface. The above example could be updated as follows:
 
-```csharp
-public class Person
-{
-    public Person(string first, string last)
-    {
-        FirstName = first;
-        LastName = lase;
-    }
-
-    public string FirstName { get; set;}
-    public string LastName { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/nullable-warnings/PersonExamples.cs" id="WithConstructor":::
 
 If you require creating a `Person` object before setting the name, you can initialize the properties using a default non-null value:
 
-```csharp
-public class Person
-{
-   public string FirstName { get; set;} = string.Empty;
-   public string LastName { get; set; } = string.Empty;
-}
-```
+:::code language="csharp" source="./snippets/nullable-warnings/PersonExamples.cs" id="Initializer":::
 
 Another alternative may be to change those members to nullable reference types. The `Person` class could be defined as follows if `null` should be allowed for the name:
 
-```csharp
-public class Person
-{
-   public string? FirstName { get; set;}
-   public string? LastName { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/nullable-warnings/PersonExamples.cs" id="NullableMember":::
 
 Existing code may require other changes to inform the compiler about the null semantics for those members. You may have created multiple constructors, and your class may have a private helper method that initializes one or more members. The <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute?displayProperty=nameWithType> and <xref:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.%23ctor%2A?displayProperty=nameWithType> attributes inform the compiler that a member is *not-null* after the method has been been called.
 
@@ -167,7 +123,7 @@ To fix these warnings, update the appropriate declaration.
 
 The preceding sections have discussed how you can use [Attributes for nullable static analysis](language-reference/attributes/nullable-analysis.md) to inform the compiler about the null semantics of your code. The compiler warns you if the code doesn't adhere to the promises of that attribute. Consider the following method:
 
-:::code language="csharp" source="snippets/nullable-warnings/Program.cs" id="ViolateAttribute":::
+:::code language="csharp" source="snippets/nullable-warnings/NullTests.cs" id="ViolateAttribute":::
 
 The compiler produces a warning because the `message` parameter is assigned `null` *and* the method returns `true`. The `NotNullWhen` attribute indicates that shouldn't happen.
 

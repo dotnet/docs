@@ -32,20 +32,26 @@ The syntax for configuring an option for a [*category* of rules](categories.md) 
 
 The following table lists the available values for `<RuleCategory>`.
 
-| Value |
-| - |
-| Design |
-| Documentation |
-| Globalization |
-| Interoperability |
-| Maintainability |
-| Naming |
-| Performance |
-| SingleFile |
-| Reliability |
-| Security |
-| Style |
-| Usage |
+:::row:::
+    :::column:::
+        Design
+        Documentation
+        Globalization
+        Interoperability
+    :::column-end:::
+    :::column:::
+        Maintainability
+        Naming
+        Performance
+        SingleFile
+    :::column-end:::
+    :::column:::
+        Reliability
+        Security
+        Style
+        Usage
+    :::column-end:::
+:::row-end:::
 
 ### Specific rule
 

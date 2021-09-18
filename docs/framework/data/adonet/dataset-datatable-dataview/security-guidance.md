@@ -255,7 +255,7 @@ In .NET Core, .NET 5, and ASP.NET Core, this setting is controlled by _runtimeco
 }
 ```
 
-For more information, see [".NET Core run-time configuration settings"](../../../../core/run-time-config/index.md).
+For more information, see [".NET Core runtime configuration settings"](../../../../core/run-time-config/index.md).
 
 `AllowArbitraryDataSetTypeInstantiation` can also be set programmatically via [AppContext.SetSwitch](/dotnet/api/system.appcontext.setswitch) instead of using a configuration file, as shown in the following code:
 

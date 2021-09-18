@@ -1,57 +1,27 @@
 ---
 title: Update your codebase to use nullable reference types
-description: Choose the best strategy for upgrading your codebase to use nullable reference types.
+description: Learn nullable contexts, how to enable or disable warnings and annotations, and how to diagnose and fix possible null dereferencing issues.
 ms.technology: csharp-null-safety
-ms.date: 07/31/2019
+ms.date: 09/15/2021
 ---
-# Update libraries to use nullable reference types and communicate nullable rules to callers
+# Update a codebase with nullable reference types to improve null diagnostic warnings
 
-The addition of [nullable reference types](nullable-references.md) means you can declare whether or not a `null` value is allowed or expected for every variable. In addition, you can apply a number of attributes: `AllowNull`, `DisallowNull`, `MaybeNull`, `NotNull`, `NotNullWhen`, `MaybeNullWhen`, and `NotNullIfNotNull` to completely describe the null states of argument and return values. That provides a great experience as you write code. You get warnings if a non-nullable variable might be set to `null`. You get warnings if a nullable variable isn't null-checked before you dereference it. Updating your libraries can take time, but the payoffs are worth it. The more information you provide to the compiler about *when* a `null` value is allowed or prohibited, the better warnings users of your API will get. Let's start with a familiar example. Imagine your library has the following API to retrieve a resource string:
+[Nullable reference types](nullable-references.md) enable you to declare if variables of a reference type should or shouldn't be assigned a `null` value. The compiler's static analysis and warnings when your code might dereference `null` are the most important benefit of this feature. Once enabled, the compiler generates warnings that help you avoid throwing a <xref:System.NullReferenceException?displayProperty=nameWithType> when your code runs.
 
-```csharp
-bool TryGetMessage(string key, out string message)
-```
+If your codebase is relatively small, you can turn on the [feature in your project](language-reference/compiler-options/language.md#nullable), address warnings, and enjoy the benefits of the improved diagnostics. Larger codebases may require a more structured approach to address warnings over time, enabling the feature for some as you address warnings in different types or files. This article describes different strategies to update a codebase and the tradeoffs associated with these strategies. Before starting your migration, read the conceptual overview of [nullable reference types](nullable-references.md). It covers the compiler's static analysis, *null-state* values of *maybe-null* and *not-null* and the nullable annotations. Once you're familiar with those concepts and terms, you're ready to migrate your code.
 
-The preceding example follows the familiar `Try*` pattern in .NET. There are two reference arguments for this API: the `key` and the `message` parameter. This API has the following rules relating to the nullness of these arguments:
+## Plan your migration
 
-- Callers shouldn't pass `null` as the argument for `key`.
-- Callers can pass a variable whose value is `null` as the argument for `message`.
-- If the `TryGetMessage` method returns `true`, the value of `message` isn't null. If the return value is `false,` the value of `message` (and its null state) is null.
+Regardless of how you update your codebase, the goal is that nullable warnings and nullable annotations are enabled in your project. Once you reach that goal, you'll have the `<nullable>Enable</nullable>` setting in your project. You won't need any of the pragmas to adjust settings elsewhere.
 
-The rule for `key` can be completely expressed by the variable type: `key` should be a non-nullable reference type. The `message` parameter is more complex. It allows `null` as the argument, but guarantees that, on success, that `out` argument isn't null. For these scenarios, you need a richer vocabulary to describe the expectations.
+The first choice is setting the default for the project. Your choices are:
 
-Updating your library for nullable references requires more than sprinkling `?` on some of the variables and type names. The preceding example shows that you need to examine your APIs and consider your expectations for each input argument. Consider the guarantees for the return value, and any `out` or `ref` arguments upon the method's return. Then communicate those rules to the compiler, and the compiler will provide warnings when callers don't abide by those rules.
+1. ***Nullable disable as the default***: *disable* is the default if you don't add a `Nullable` element to your project file. Use this default when you're not actively adding new files to the codebase. The main activity is to update the library to use nullable reference types. Using this default means you add a nullable pragma to each file as you update its code.
+1. ***Nullable enable as the default***: Set this default when you're actively developing new features. You want all new code to benefit nullable reference types and nullable static analysis. Using this default means you must add a `#pragma nullable disable` to the top of each file. You'll remove that pragma as you begin addressing the warnings in that file.
+1. ***Nullable warnings as the default***: Choose this default for a two-phase migration. In the first phase, address warnings. In the second phase, turn on annotations for declaring a variable's expected *null-state*. Using this default means you must add a `#pragma nullable disable` to the top of each file.
+1. ***Nullable annotations*** as the default. Annotate code before addressing warnings.
 
-This work takes time. Let's start with strategies to make your library or application nullable-aware, while balancing other requirements. You'll see how to balance ongoing development enabling nullable reference types. You'll learn challenges for generic type definitions. You'll learn to apply attributes to describe pre- and post-conditions on individual APIs.
-
-## Choose a strategy for nullable reference types
-
-The first choice is whether nullable reference types should be on or off by default. You have two strategies:
-
-- Enable nullable reference types for the entire project, and disable it in code that's not ready.
-- Only enable nullable reference types for code that's been annotated for nullable reference types.
-
-The first strategy works best when you're adding other features to the library as you update it for nullable reference types. All new development is nullable aware. As you update existing code, you enable nullable reference types in those classes.
-
-Following this first strategy, you do the following steps:
-
-1. Enable nullable reference types for the entire project by adding the `<Nullable>enable</Nullable>` element to your *csproj* files.
-1. Add the `#nullable disable` pragma to every source file in your project.
-1. As you work on each file, remove the pragma and address any warnings.
-
-This first strategy has more up-front work to add the pragma to every file. The advantage is that every new code file added to the project will be nullable enabled. Any new work will be nullable aware; only existing code must be updated.
-
-The second strategy works better if the library is stable, and the main focus of the development is to adopt nullable reference types. You turn on nullable reference types as you annotate APIs. When you've finished, you enable nullable reference types for the entire project.
-
-Following this second strategy you do the following steps:
-
-1. Add the `#nullable enable` pragma to the file you want to make nullable aware.
-1. Address any warnings.
-1. Continue these first two steps until you've made the entire library nullable aware.
-1. Enable nullable types for the entire project by adding the `<Nullable>enable</Nullable>` element to your *csproj* files.
-1. Remove the `#nullable enable` pragmas, as they're no longer needed.
-
-This second strategy has less work up-front. The tradeoff is that the first task when you create a new file is to add the pragma and make it nullable aware. If any developers on your team forget, that new code is now in the backlog of work to make all code nullable aware.
+Enabling nullable as the default create more up-front work to add the pragma to every file. The advantage is that every new code file added to the project will be nullable enabled. Any new work will be nullable aware; only existing code must be updated. Disabling nullable as the default works better if the library is stable, and the main focus of the development is to adopt nullable reference types. You turn on nullable reference types as you annotate APIs. When you've finished, you enable nullable reference types for the entire project. When you create a new file, you must add the pragmas and make it nullable aware. If any developers on your team forget, that new code is now in the backlog of work to make all code nullable aware.
 
 Which of these strategies you pick depends on how much active development is taking place in your project. The more mature and stable your project, the better the second strategy. The more features being developed, the better the first strategy.
 
@@ -65,150 +35,44 @@ Which of these strategies you pick depends on how much active development is tak
 >
 > Generators can opt-in using the [`#nullable`](language-reference/preprocessor-directives.md#nullable-context) preprocessor directive.
 
-## Should nullable warnings introduce breaking changes?
+## Understand contexts and warnings
 
-Before you enable nullable reference types, variables are considered *nullable oblivious*. Once you enable nullable reference types, all those variables are *non-nullable*. The compiler will issue warnings if those variables aren't initialized to non-null values.
+Enabling warnings and annotations control how the compiler views reference types and nullability. Every type has one of three nullabilities:
 
-Another likely source of warnings is return values when the value hasn't been initialized.
+- *oblivious*: All reference types are nullable *oblivious* when the annotation context is disabled.
+- *nonnullable*: An unannotated reference type, `C` is *nonnullable* when the annotation context is enabled.
+- *nullable*: An annotated reference type, `C?`, is *nullable*, but a warning may be issued when the annotation context is disabled. Variables declared with `var` are *nullable* when the annotation context is enabled.
 
-The first step in addressing the compiler warnings is to use `?` annotations on parameter and return types to indicate when arguments or return values may be null. When reference variables must not be null, the original declaration is correct. As you do this task, your goal isn't just to fix warnings. The more important goal is to make the compiler understand your intent for potential null values. As you examine the warnings, you reach your next major decision for your library. Do you want to consider modifying API signatures to more clearly communicate your design intent? A better API signature for the `TryGetMessage` method examined earlier could be:
+The compiler generates warnings based on that nullability:
 
-```csharp
-string? TryGetMessage(string key);
-```
+- *nonnullable* types cause warnings if a potential `null` value is assigned to them.
+- *nullable* types cause warnings if they dereferenced when *maybe-null*.
+- *oblivious* types cause warnings if they're dereferenced when *maybe-null* and the warning context is enabled.
 
-The return value indicates success or failure, and carries the value if the value was found. In many cases, changing API signatures can improve how they communicate null values.
+Each variable has a default nullable state that depends on its nullability:
 
-However, for public libraries, or libraries with large user bases, you may prefer not introducing any API signature changes. For those cases, and other common patterns, you can apply attributes to more clearly define when an argument or return value may be `null`. Whether or not you consider changing the surface of your API, you'll likely find that type annotations alone aren't sufficient for describing `null` values for arguments or return values. In those instances, you can apply attributes to more clearly describe an API.
+- Nullable variables have a default *null-state* of *maybe-null*.
+- Non-nullable variables have a default *null-state* of *not-null*.
+- Nullable oblivious variables have a default *null-state* of *not-null*.
+
+Before you enable nullable reference types, all declarations in your codebase are *nullable oblivious*. That's important because it means all reference types have a default *null-state* of *not-null*.
+
+## Address warnings
+
+If your project uses Entity Framework Core, you should read their guidance on [Working with nullable reference types](/ef/core/miscellaneous/nullable-reference-types.md).
+
+When you start your migration, you should start by enabling warnings only. All declarations remain *nullable oblivious*, but you'll see warnings when you dereference a value after its *null-state* changes to *maybe-null*. As you address these warnings, you'll be checking against null in more locations, and your codebase becomes more resilient. To learn specific techniques for different situations, see the article on [Techniques to resolve nullable warnings](nullable-warnings.md).
+
+You can address warnings and enable annotations in each file or class before continuing with other code. However, it's often more efficient to address the warnings generated while the context is *warnings* before enabling the type annotations. That way, all types are *oblivious* until you've addressed the first set of warnings.
+
+## Enable type annotations
+
+After addressing the first set of warnings, you can enable the *annotation context*. This changes reference types from *oblivious* to *nonnullable*. All variables declared with `var` are *nullable*. This change often introduces new warnings. The first step in addressing the compiler warnings is to use `?` annotations on parameter and return types to indicate when arguments or return values may be `null`. As you do this task, your goal isn't just to fix warnings. The more important goal is to make the compiler understand your intent for potential null values.
 
 ## Attributes extend type annotations
 
-Several attributes have been added to express additional information about the null state of variables. All code you wrote before C# 8 introduced nullable reference types was *null oblivious*. That means any reference type variable may be null, but null checks aren't required. Once your code is *nullable aware*, those rules change. Reference types should never be the `null` value, and nullable reference types must be checked against `null` before being dereferenced.
+Several attributes have been added to express additional information about the null state of variables. The rules for your APIs are likely more complicated than *not-null* or *maybe-null* for all parameters and return values. Many of your APIs have more complex rules for when variables can or can't be `null`. In these cases, you'll use attributes to express those rules. The attributes that describe the semantics of your API are found in the article on [Attributes that affect nullable analysis](./language-reference/attributes/nullable-analysis.md).
 
-The rules for your APIs are likely more complicated, as you saw with the `TryGetValue` API scenario. Many of your APIs have more complex rules for when variables can or can't be `null`. In these cases, you'll use attributes to express those rules. The attributes that describe the semantics of your API are found in the article on [Attributes that impact nullable analysis](./language-reference/attributes/nullable-analysis.md).
+## Next steps
 
-## Generic definitions and nullability
-
-Correctly communicating the null state of generic types and generic methods requires special care. The extra care stems from the fact that a nullable value type and a nullable reference type are fundamentally different. An `int?` is a synonym for `Nullable<int>`, whereas `string?` is `string` with an attribute added by the compiler. The result is that the compiler can't generate correct code for `T?` without knowing if `T` is a `class` or a `struct`.
-
-This fact doesn't mean you can't use a nullable type (either value type or reference type) as the type argument for a closed generic type. Both `List<string?>` and `List<int?>` are valid instantiations of `List<T>`.
-
-What it does mean is that you can't use `T?` in a generic class or method declaration without constraints. For example, <xref:System.Linq.Enumerable.FirstOrDefault%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D)?displayProperty=nameWithType> won't be changed to return `T?`. You can overcome this limitation by adding either the `struct` or `class` constraint. With either of those constraints, the compiler knows how to generate code for both `T` and `T?`.
-
-You may want to restrict the types used for a generic type argument to be non-nullable types. You can do that by adding the `notnull` constraint on that type argument. When that constraint is applied in a nullable context, the type argument must not be a nullable type.
-
-## Late-initialized properties, Data Transfer Objects, and nullability
-
-Indicating the nullability of properties that are late-initialized, meaning set after construction, may require special consideration to ensure that your class continues to correctly express the original design intent.
-
-Types that contain late-initialized properties, such as Data Transfer Objects (DTOs), are often instantiated by an external library, like a database ORM (Object Relational Mapper), a deserializer, or some other component that automatically populates properties from another source.
-
-Consider the following DTO class, prior to enabling nullable reference types, that represents a student:
-
-```csharp
-class Student
-{
-    [Required]
-    public string FirstName { get; set; }
-
-    [Required]
-    public string LastName { get; set; }
-
-    public string VehicleRegistration { get; set; }
-}
-```
-
-The design intent (indicated in this case by the `Required` attribute) suggests that in this system, the `FirstName` and `LastName` properties are **mandatory**, and therefore not null.
-
-The `VehicleRegistration` property is **not mandatory**, so may be null.
-
-When you enable nullable reference types, you want to indicate which properties on your DTO may be nullable, consistent with your original intent:
-
-```csharp
-class Student
-{
-    [Required]
-    public string FirstName { get; set; }
-
-    [Required]
-    public string LastName { get; set; }
-
-    public string? VehicleRegistration { get; set; }
-}
-```
-
-For this DTO, the only property that may be null is ``VehicleRegistration``.
-
-However, the compiler raises `CS8618` warnings for both `FirstName` and `LastName`, indicating the non-nullable properties are uninitialized.
-
-There are three options available to you that resolve the compiler warnings in a way that maintains the original intent. Any of these options are valid; you should choose the one that best suits your coding style and design requirements.
-
-### Initialize in the constructor
-
-The ideal way to resolve the uninitialized warnings is to initialize the properties in the constructor:
-
-```csharp
-class Student
-{
-    public Student(string firstName, string lastName)
-    {
-        FirstName = firstName;
-        LastName = lastName;
-    }
-
-    [Required]
-    public string FirstName { get; set; }
-
-    [Required]
-    public string LastName { get; set; }
-
-    public string? VehicleRegistration { get; set; }
-}
-```
-
-This approach only works if the library that you use to instantiate the class supports passing parameters in the constructor.
-
-A library may support passing *some* properties in the constructor, but not all. For example, EF Core supports [constructor binding](/ef/core/modeling/constructors) for normal column properties, but not navigation properties.
-
-Check the documentation on the library that instantiates your class, to understand the extent to which it supports constructor binding.
-
-### Property with nullable backing field
-
-If constructor binding won't work for you, one way to deal with this problem is to have a non-nullable property with a nullable backing field:
-
-```csharp
-private string? _firstName;
-
-[Required]
-public string FirstName
-{
-    set => _firstName = value;
-    get => _firstName
-           ?? throw new InvalidOperationException("Uninitialized " + nameof(FirstName))
-}
-```
-
-In this scenario, if the `FirstName` property is accessed before it has been initialized, then the code throws an `InvalidOperationException`, because the API contract has been used incorrectly.
-
-Consider that some libraries may have special considerations when using backing fields. For example, EF Core may need to be configured to use [backing fields](/ef/core/modeling/backing-field) correctly.
-
-### Initialize the property to null
-
-As a terser alternative to using a nullable backing field, or if the library that instantiates your class isn't compatible with that approach, you can initialize the property to `null` directly, with the help of the null-forgiving operator (`!`):
-
-```csharp
-[Required]
-public string FirstName { get; set; } = null!;
-
-[Required]
-public string LastName { get; set; } = null!;
-
-public string? VehicleRegistration { get; set; }
-```
-
-You'll never observe an actual null value at runtime except as a result of a programming bug, by accessing the property before it has been properly initialized.
-
-## See also
-
-- [Migrate an existing codebase to nullable references](whats-new/tutorials/upgrade-to-nullable-references.md)
-- [Working with Nullable Reference Types in EF Core](/ef/core/miscellaneous/nullable-reference-types)
+Once you've addressed all warnings after enabling annotations, you can set the default context for your project to *enabled*. If you added any pragmas in your code for the nullable annotation or warning context, you can remove them. Over time, you may see new warnings. You may write code that introduces warnings. A library dependency may be  updated for nullable reference types. Those updates will change the types in that library from *nullable oblivious* to either *nonnullable* or *nullable*.

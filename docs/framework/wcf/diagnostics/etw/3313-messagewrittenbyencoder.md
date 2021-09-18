@@ -6,10 +6,10 @@ ms.assetid: abdb7db5-373e-4862-b53d-befbb0949e32
 ---
 # 3313 - MessageWrittenByEncoder
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3313|  
 |Keywords|Channel|  
 |Level|Information|  

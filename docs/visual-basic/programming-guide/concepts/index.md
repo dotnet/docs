@@ -27,7 +27,7 @@ This section explains programming concepts in the Visual Basic language.
 
 ## Related sections
 
-|||
-|---|---|
-|[Assemblies in .NET](../../../standard/assembly/index.md)|Describes how to create and use assemblies.|
-|[Performance Tips](../../../framework/performance/performance-tips.md) | Discusses several basic rules that may help you increase the performance of your application.|
+| Article                                                                | Description                                                                                   |
+|------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| [Assemblies in .NET](../../../standard/assembly/index.md)              | Describes how to create and use assemblies.                                                   |
+| [Performance Tips](../../../framework/performance/performance-tips.md) | Discusses several basic rules that may help you increase the performance of your application. |

@@ -127,7 +127,7 @@ The `Subscribe` methods (you can have several implementations depending on the a
 Some production-ready messaging solutions:
 
 - **Azure Service Bus** \
-  <https://docs.microsoft.com/azure/service-bus-messaging/>
+  [https://docs.microsoft.com/azure/service-bus-messaging/](/azure/service-bus-messaging/)
   
 - **NServiceBus** \
   <https://particular.net/nservicebus>

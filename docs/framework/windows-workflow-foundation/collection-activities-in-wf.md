@@ -13,12 +13,12 @@ Collection activities are used to work with collection objects in a workflow. [!
   
 ## Collection activities  
   
-|||  
-|-|-|  
-|<xref:System.Activities.Statements.AddToCollection%601>|Adds an item to a specified collection.|  
-|<xref:System.Activities.Statements.ClearCollection%601>|Clears all items from a specified collection.|  
-|<xref:System.Activities.Statements.ExistsInCollection%601>|Returns `true` if an item exists in a collection.|  
-|<xref:System.Activities.Statements.RemoveFromCollection%601>|Removes an item from a specified collection and returns `true` if the item was successfully removed.|  
+| Activity type                                                | Description                                                                                          |
+| ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| <xref:System.Activities.Statements.AddToCollection%601>      | Adds an item to a specified collection.                                                              |
+| <xref:System.Activities.Statements.ClearCollection%601>      | Clears all items from a specified collection.                                                        |
+| <xref:System.Activities.Statements.ExistsInCollection%601>   | Returns `true` if an item exists in a collection.                                                    |
+| <xref:System.Activities.Statements.RemoveFromCollection%601> | Removes an item from a specified collection and returns `true` if the item was successfully removed. |
   
 ## Using collection activities  
 

@@ -6,10 +6,10 @@ ms.assetid: f307ffda-8a89-4527-a7e5-915b820508ee
 ---
 # 5606 - PrincipalSettingFromSessionTokenStarted
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5606|  
 |Keywords|Security|  
 |Level|Verbose|  

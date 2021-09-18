@@ -84,6 +84,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Debian                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
+| ✔️ [11](linux-debian.md#debian-11-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [10](linux-debian.md#debian-10-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [9](linux-debian.md#debian-9-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ❌ [8](linux-debian.md#debian-8-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |

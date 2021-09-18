@@ -1,9 +1,9 @@
 ---
-title: "Breaking change: Implicit namespaces in C# projects"
+title: "Breaking change: Implicit `global using` directives in C# projects"
 description: Learn about the breaking change in .NET 6 where the .NET SDK implicitly includes some namespaces globally in C# projects.
 ms.date: 07/20/2021
 ---
-# Implicit namespaces in C# projects
+# Implicit `global using` directives in C# projects
 
 .NET 6 introduces implicit namespace support for C# projects. To reduce the amount of `using` directives boilerplate in .NET C# project templates, namespaces are implicitly included by utilizing the `global using` feature introduced in C# 10.
 
@@ -11,13 +11,16 @@ The implicit namespace feature is enabled by default for C# projects that target
 
 If your project uses a C# version less than 10, you must explicitly [disable this feature](#recommended-action).
 
+> [!IMPORTANT]
+> The implicit `global using` directives feature was [changed in .NET 6 RC1](implicit-namespaces-rc1.md), such that this is only a breaking change for the Preview 7 version of .NET 6.
+
 ## Version introduced
 
 .NET 6 Preview 7
 
 ## Old behavior
 
-No implicit namespaces are added to C# projects and there are no type conflicts.
+No implicit `global using` directives are added to C# projects and there are no type conflicts.
 
 ## New behavior
 
@@ -38,7 +41,7 @@ The default namespaces are included by adding `global using` directives to a gen
 These implicit namespaces may cause type conflicts. For example, if you're authoring an MSBuild task, and thus deriving from the abstract <xref:Microsoft.Build.Utilities.Task?displayProperty=fullName> class, you'll see a conflict with the <xref:System.Threading.Tasks.Task?displayProperty=fullName> class. This conflict occurs because the <xref:System.Threading.Tasks?displayProperty=fullName> namespace is implicitly included. The error looks similar to:
 
 ```txt
-... error CS0104: 'Task' is an ambiguous reference between 'Microsoft.Build.Utilities.Task' and 'System.Threading.Tasks.Task' 
+... error CS0104: 'Task' is an ambiguous reference between 'Microsoft.Build.Utilities.Task' and 'System.Threading.Tasks.Task'
 ... error CS0115: 'SomeTask.Execute()': no suitable method found to override
 ```
 
@@ -52,10 +55,10 @@ This change was made to reduce the number of boilerplate `using` directives that
 
 ## Recommended action
 
-For most users, you need take no action. However, this change can cause type-name conflicts with the namespaces that are implicitly included. If that happens, modify the list of implicit namespaces or fully qualify your type references. You can modify the list of implicit namespaces in several ways:
+For most users, you need take no action. However, this change can cause type-name conflicts with the namespaces that are implicitly included. If that happens, modify the list of `global using` directives or fully qualify your type references. You can modify the list of `global using` directives in several ways:
 
 - Disable the feature completely by setting `<DisableImplicitNamespaceImports>` to `true` in the project file. For more information, see [DisableImplicitNamespaceImports](../../../project-sdk/msbuild-props.md#disableimplicitnamespaceimports).
-- Disable a set of implicit namespaces added by an SDK by setting the `DisableImplicitNamespaceImports_DotNet`, `DisableImplicitNamespaceImports_Web`, or `DisableImplicitNamespaceImports_Worker` property to `true` in the project file. For more information, see [DisableImplicitNamespaceImports](../../../project-sdk/msbuild-props.md#disableimplicitnamespaceimports).
+- Disable a set of implicit `global using` directives added by an SDK by setting the `DisableImplicitNamespaceImports_DotNet`, `DisableImplicitNamespaceImports_Web`, or `DisableImplicitNamespaceImports_Worker` property to `true` in the project file. For more information, see [DisableImplicitNamespaceImports](../../../project-sdk/msbuild-props.md#disableimplicitnamespaceimports).
 - Add or remove individual namespaces by modifying the `<Import>` item group in the project file. For example:
 
   ```xml

@@ -6,10 +6,10 @@ ms.assetid: 395cc7ca-f35f-4295-be97-39a077f99c97
 ---
 # 404 - ResumeSignpostEvent
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|404|  
 |Keywords|Troubleshooting|  
 |Level|Information|  

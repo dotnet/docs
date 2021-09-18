@@ -6,10 +6,10 @@ ms.assetid: c35025d1-b2a1-454d-a6a1-784fc03e2670
 ---
 # 3335 - GetServiceInstanceStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3335|  
 |Keywords|ServiceModel|  
 |Level|Verbose|  

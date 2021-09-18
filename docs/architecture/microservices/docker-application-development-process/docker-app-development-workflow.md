@@ -318,7 +318,7 @@ To create a custom image in your local environment by using Docker CLI and your 
 
 Optionally, instead of directly running docker build from the project folder, you can first generate a deployable folder with the required .NET libraries and binaries by running `dotnet publish`, and then use the `docker build` command.
 
-This will create a Docker image with the name `cesardl/netcore-webapi-microservice-docker:first`. In this case, :first is a tag representing a specific version. You can repeat this step for each custom image you need to create for your composed Docker application.
+This will create a Docker image with the name `cesardl/netcore-webapi-microservice-docker:first`. In this case, `:first` is a tag that represents a specific version. You can repeat this step for each custom image you need to create for your composed Docker application.
 
 When an application is made of multiple containers (that is, it is a multi-container application), you can also use the `docker-compose up --build` command to build all the related images with a single command by using the metadata exposed in the related docker-compose.yml files.
 
@@ -336,7 +336,7 @@ When you use Visual Studio to create a project with Docker support, you don't ex
 
 ## Step 4. Define your services in docker-compose.yml when building a multi-container Docker application
 
-The [docker-compose.yml](https://docs.docker.com/compose/compose-file/) file lets you define a set of related services to be deployed as a composed application with deployment commands. It also configures its dependency relations and run-time configuration.
+The [docker-compose.yml](https://docs.docker.com/compose/compose-file/) file lets you define a set of related services to be deployed as a composed application with deployment commands. It also configures its dependency relations and runtime configuration.
 
 To use a docker-compose.yml file, you need to create the file in your main or root solution folder, with content similar to that in the following example:
 
@@ -407,7 +407,7 @@ Besides adding a Dockerfile to a project, as we mentioned before, Visual Studio 
 
 When you add container orchestrator support, as shown in Figure 5-7, for the first time, Visual Studio creates the Dockerfile for the project and creates a new (service section) project in your solution with several global `docker-compose*.yml` files, and then adds the project to those files. You can then open the docker-compose.yml files and update them with additional features.
 
-You have to repeat this operation form every project you want to include in the docker-compose.yml file.
+You have to repeat this operation for every project you want to include in the docker-compose.yml file.
 
 At the time of this writing, Visual Studio supports **Docker Compose** and **Kubernetes/Helm** orchestrators.
 
@@ -490,7 +490,7 @@ The important point here is that, as shown in Figure 5-12, in Visual Studio 2019
 ### Additional resources
 
 - **Deploy an ASP.NET container to a remote Docker host** \
-  <https://docs.microsoft.com/visualstudio/containers/hosting-web-apps-in-docker>
+  [https://docs.microsoft.com/visualstudio/containers/hosting-web-apps-in-docker](/visualstudio/containers/hosting-web-apps-in-docker)
 
 ### A note about testing and deploying with orchestrators
 

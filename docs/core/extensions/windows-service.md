@@ -3,7 +3,7 @@ title: Create a Windows Service using BackgroundService
 description: Learn how to create a Windows Service using the BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/26/2021
+ms.date: 09/03/2021
 ms.topic: tutorial
 ---
 
@@ -21,6 +21,8 @@ In this tutorial, you'll learn how to:
 > - Start and stop the Windows Service.
 > - View event logs.
 > - Delete the Windows Service.
+
+[!INCLUDE [workers-samples-browser](includes/workers-samples-browser.md)]
 
 ## Prerequisites
 
@@ -114,9 +116,10 @@ The preceding highlighted lines of the project file define the following behavio
 - `<PublishSingleFile>true</PublishSingleFile>`: Enables single-file publishing.
 - `<RuntimeIdentifier>win-x64</RuntimeIdentifier>`: Specifies the [RID](../rid-catalog.md) of `win-x64`.
 - `<PlatformTarget>x64</PlatformTarget>`: Specify the target platform CPU of 64-bit.
-- `<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>`: Embeds all required .dll files into the resulting .exe file.
 
-To publish the app from Visual Studio, you can create a publish profile. Right-click on the project in the **Solution Explorer**, and select **Publish...**. Then, select **Add a publish profile** to create a profile. From the **Publish** dialog, select **Folder** as your **Target**.
+To publish the app from Visual Studio, you can create a publish profile which is persisted. The publish profile is XML based, and has the *.pubxml* file extension. Visual Studio uses this profile to publish the app implicitly, whereas if you're using the .NET CLI &mdash; you must explicitly specify the publish profile for it to be used.
+
+Right-click on the project in the **Solution Explorer**, and select **Publish...**. Then, select **Add a publish profile** to create a profile. From the **Publish** dialog, select **Folder** as your **Target**.
 
 :::image type="content" source="media/publish-dialog.png" lightbox="media/publish-dialog.png" alt-text="The Visual Studio Publish dialog":::
 
@@ -129,7 +132,7 @@ Ensure that the following settings are specified:
 - **Deployment mode**: Self-contained
 - **Produce single file**: checked
 - **Enable ReadyToRun compilation**: checked
-- **Trim unused assemblies (in preview)**: checked
+- **Trim unused assemblies (in preview)**: unchecked
 
 Finally, select **Publish**. The app is compiled, and the resulting .exe file is published to the */publish* output directory.
 

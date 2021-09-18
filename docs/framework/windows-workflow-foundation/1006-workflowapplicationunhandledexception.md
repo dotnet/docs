@@ -6,10 +6,10 @@ ms.assetid: dfe0f316-e03b-47fb-b6a3-622c56bfd753
 ---
 # 1006 - WorkflowApplicationUnhandledException
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1006|  
 |Keywords|WFRuntime|  
 |Level|Error|  

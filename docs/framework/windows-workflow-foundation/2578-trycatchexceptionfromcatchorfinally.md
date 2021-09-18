@@ -6,10 +6,10 @@ ms.assetid: 4803fee6-b8d8-4937-9907-d5c5fd5299db
 ---
 # 2578 - TryCatchExceptionFromCatchOrFinally
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|2578|  
 |Keywords|WFActivities|  
 |Level|Warning|  

@@ -6,10 +6,10 @@ ms.assetid: 6ae6f58f-cee3-4bb1-8402-4445401f3436
 ---
 # 3305 - ClientBaseCachedChannelFactoryCount
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3305|  
 |Keywords|ServiceModel|  
 |Level|Information|  

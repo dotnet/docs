@@ -31,11 +31,17 @@ The support timeframe for the SDK typically matches the VS it's included in.
 | 5.0.4xx          | 16.11              | 16.8                                | Aug '21      | Feb '22*  |
 | 6.0.100-preview4 | 16.10 (No VS)      | 16.10-preview3                      | May '21      | N/A       |
 | 6.0.100-preview5 | 17.0-preview 1     | 16.10                               | June '21     | N/A       |
+| 6.0.100-preview6 | 17.0-preview 2     | 16.10                               | July         | N/A       |
+| 6.0.100-preview7 | 17.0-preview 3     | 16.10                               | August       | N/A       |
+| 6.0.100-rc1      | 17.0-preview 4     | 16.10                               | September    | N/A       |
 | 6.0.100          | 17.0               | 16.10**                             | Nov. '21     |           |
+
+> [!NOTE]
+> The Minimum version is what's required to load the SDK but doesn't cover what's supported. Targeting net6.0 is officially supported in 17.0+ only.
 
 > \* MSbuild/VS supported for longer
 >
-> \*\* You shouldn't have to upgrade to 17.0 on the day .NET 6 releases. This is the current version and will likely be 16.11 at release.
+> \*\* You won't have to upgrade to 17.0 on the day .NET 6 releases. This is the current version and will likely be 16.11 at release. This version supports downlevel targeting, such as .NET 5 and below, but doesn't allow targeting .NET 6 for the purpose of using .NET 6 or C# 10 features.
 
 Expect breaking changes that require a new MSBuild and VS version at least once a year, for each major SDK release. There shouldn't be breaking changes in SDK feature (patch) updates.
 

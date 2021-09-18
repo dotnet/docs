@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 08/10/2021
+ms.date: 09/02/2021
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -258,6 +258,7 @@ The following MSBuild properties are documented in this section:
 - [RuntimeFrameworkVersion](#runtimeframeworkversion)
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
+- [SatelliteResourceLanguages](#satelliteresourcelanguages)
 - [UseAppHost](#useapphost)
 
 ### AppendTargetFrameworkToOutputPath
@@ -396,6 +397,19 @@ The `RuntimeIdentifiers` property lets you specify a semicolon-delimited list of
 </PropertyGroup>
 ```
 
+## SatelliteResourceLanguages
+
+The `SatelliteResourceLanguages` property lets you specify which languages you want to preserve satellite resource assemblies for during build and publish. Many NuGet packages include localized resource satellite assemblies in the main package. For projects that reference these NuGet packages that don't require localized resources, the localized assemblies can unnecessarily inflate the build and publish output size. By adding the `SatelliteResourceLanguages` property to your project file, only localized assemblies for the languages you specify will be included in the build and publish output. For example, in the following project file, only English (US) resource satellite assemblies will be retained.
+
+```xml
+<PropertyGroup>
+  <SatelliteResourceLanguages>en-US</SatelliteResourceLanguages>
+</PropertyGroup>
+```
+
+> [!NOTE]
+> You must specify this property in the project that references the NuGet package with localized resource satellite assemblies.
+
 ### UseAppHost
 
 The `UseAppHost` property controls whether or not a native executable is created for a deployment. A native executable is required for self-contained deployments.
@@ -415,11 +429,14 @@ For more information about deployment, see [.NET application deployment](../depl
 The following MSBuild properties are documented in this section:
 
 - [EmbeddedResourceUseDependentUponConvention](#embeddedresourceusedependentuponconvention)
-- [LangVersion](#langversion)
+- [EnablePreviewFeatures](#enablepreviewfeatures)
+- [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute)
+
+C# compiler options can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
 
 ### EmbeddedResourceUseDependentUponConvention
 
-The `EmbeddedResourceUseDependentUponConvention` property defines whether resource manifest file names are generated from type information in source files that are colocated with resource files. For example, if *Form1.resx* is in the same folder as *Form1.cs*, and `EmbeddedResourceUseDependentUponConvention` is set to `true`, the generated *.resources* file takes its name from the first type that's defined in *Form1.cs*. For example, if `MyNamespace.Form1` is the first type defined in *Form1.cs*, the generated file name is *MyNamespace.Form1.resources*.
+The `EmbeddedResourceUseDependentUponConvention` property defines whether resource manifest file names are generated from type information in source files that are co-located with resource files. For example, if *Form1.resx* is in the same folder as *Form1.cs*, and `EmbeddedResourceUseDependentUponConvention` is set to `true`, the generated *.resources* file takes its name from the first type that's defined in *Form1.cs*. For example, if `MyNamespace.Form1` is the first type defined in *Form1.cs*, the generated file name is *MyNamespace.Form1.resources*.
 
 > [!NOTE]
 > If `LogicalName`, `ManifestResourceName`, or `DependentUpon` metadata is specified for an `EmbeddedResource` item, the generated manifest file name for that resource file is based on that metadata instead.
@@ -432,17 +449,37 @@ By default, in a new .NET project, this property is set to `true`. If set to `fa
 </PropertyGroup>
 ```
 
-### LangVersion
+### EnablePreviewFeatures
 
-The `LangVersion` property lets you specify a specific programming language version. For example, if you want access to C# preview features, set `LangVersion` to `preview`.
+The `EnablePreviewFeatures` property defines whether your project depends on any APIs or assemblies that are decorated with the <xref:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute> attribute. This attribute is used to signify that an API or assembly uses features that are considered to be in *preview* for the SDK version you're using. Preview features are not supported and may be removed in a future version. To enable the use of preview features, set the property to `True`.
 
 ```xml
 <PropertyGroup>
-  <LangVersion>preview</LangVersion>
+  <EnablePreviewFeatures>True</EnablePreviewFeatures>
 </PropertyGroup>
 ```
 
-For more information, see [C# language versioning](../../csharp/language-reference/configure-language-version.md#override-a-default).
+When a project contains this property set to `True`, the following assembly-level attribute is added to the *AssemblyInfo.cs* file:
+
+```csharp
+[assembly: RequiresPreviewFeatures]
+```
+
+An analyzer warns if this attribute is present on dependencies for projects where `EnablePreviewFeatures` is not set to `True`.
+
+### GenerateRequiresPreviewFeaturesAttribute
+
+The `GenerateRequiresPreviewFeaturesAttribute` property is closely related to the [EnablePreviewFeatures](#enablepreviewfeatures) property. If your library uses preview features but you don't want the entire assembly to be marked with the <xref:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute> attribute, which would require any consumers to [enable preview features](#enablepreviewfeatures), set this property to `False`.
+
+```xml
+<PropertyGroup>
+    <EnablePreviewFeatures>True</EnablePreviewFeatures>
+    <GenerateRequiresPreviewFeaturesAttribute>False</GenerateRequiresPreviewFeaturesAttribute>
+</PropertyGroup>
+```
+
+> [!IMPORTANT]
+> If you set the `GenerateRequiresPreviewFeaturesAttribute` property to `False`, you must be certain to decorate all public APIs that rely on preview features with <xref:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute>.
 
 ## Default item inclusion properties
 
@@ -614,7 +651,7 @@ The following table lists the property name for each rule category.
 
 ### AnalysisMode
 
-Starting with .NET 5.0, the .NET SDK ships with all of the ["CA" code quality rules](../../fundamentals/code-analysis/quality-rules/index.md). By default, only [some rules are enabled](../../fundamentals/code-analysis/overview.md#enabled-rules) as build warnings. The `AnalysisMode` property lets you customize the set of rules that are enabled by default. You can either switch to a more aggressive (opt-out) analysis mode or a more conservative (opt-in) analysis mode. For example, if you want to enable all rules by default as build warnings, set the value to `AllEnabledByDefault`.
+Starting with .NET 5.0, the .NET SDK ships with all of the ["CA" code quality rules](../../fundamentals/code-analysis/quality-rules/index.md). By default, only [some rules are enabled](../../fundamentals/code-analysis/overview.md#enabled-rules) as build warnings. The `AnalysisMode` property lets you customize the set of rules that are enabled by default. You can either switch to a more aggressive (opt-out) analysis mode or a more conservative (opt-in) analysis mode. For example, if you want to enable all rules by default as build warnings, set the value to `All` or `AllEnabledByDefault`.
 
 ```xml
 <PropertyGroup>
@@ -622,23 +659,19 @@ Starting with .NET 5.0, the .NET SDK ships with all of the ["CA" code quality ru
 </PropertyGroup>
 ```
 
-The following table shows the available options.
+The following table shows the available options. They're listed in increasing order of the number of rules they enable.
 
-none, default, minimum, recommended, all
-
-| Value | Introduced | Meaning |
+| Value | Meaning |
 |-|-|
-| `All` | .NET 6 | Aggressive or opt-out mode, where all rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them.<br />This value replaces `AllEnabledByDefault` in .NET 6. |
-| `Default` | .NET 5 | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. |
-| `Minimum` | .NET 6 | More aggressive mode than the `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. |
-| `None` | .NET 6 | Conservative or opt-in mode, where all rules are disabled by default. You can selectively [opt into](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them.<br />This value replaces `AllDisabledByDefault` in .NET 6. |
-| `Recommended` | .NET 6 | More aggressive mode than the `Minimum` mode, where more rules are enabled as build warnings. |
-| `AllEnabledByDefault` (deprecated) | .NET 5 | Aggressive or opt-out mode, where all rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. |
-| `AllDisabledByDefault` (deprecated) | .NET 5 | Conservative or opt-in mode, where all rules are disabled by default. You can selectively [opt into](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them. |
+| `None` or `AllDisabledByDefault` (deprecated) | All rules are disabled by default. You can selectively [opt in to](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them.<br />`None` replaces `AllDisabledByDefault` in .NET 6. |
+| `Default` | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. |
+| `Minimum` | More aggressive mode than the `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. |
+| `Recommended` | More aggressive mode than the `Minimum` mode, where more rules are enabled as build warnings. |
+| `All` or `AllEnabledByDefault` (deprecated) | All rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them.<br />`All` replaces `AllEnabledByDefault` in .NET 6. |
 
 > [!NOTE]
 >
-> - In .NET 5 and earlier versions, this property only affects [code-quality (CAXXXX) rules](../../fundamentals/code-analysis/quality-rules/index.md). Starting in .NET 6, if you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) too.
+> - In .NET 5, this property only affects [code-quality (CAXXXX) rules](../../fundamentals/code-analysis/quality-rules/index.md). Starting in .NET 6, if you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) too.
 > - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>5-recommended</AnalysisLevel>`, you can omit this property entirely. However, if you specify both properties, `AnalysisLevel` takes precedence over `AnalysisMode`.
 > - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
 
@@ -707,9 +740,9 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 
 All code style rules that are [configured](../../fundamentals/code-analysis/overview.md#code-style-analysis) to be warnings or errors will execute on build and report violations.
 
-## Run-time configuration properties
+## Runtime configuration properties
 
-You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [Run-time configuration settings](../run-time-config/index.md).
+You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [Runtime configuration settings](../run-time-config/index.md).
 
 - [ConcurrentGarbageCollection](#concurrentgarbagecollection)
 - [InvariantGlobalization](#invariantglobalization)
@@ -941,7 +974,7 @@ For more information, see [Expose .NET components to COM](../native-interop/expo
 
 ### EnableDynamicLoading
 
-The `EnableDynamicLoading` property indicates that an assembly is a dynamically loaded component. The component could be a [COM library](/windows/win32/com/the-component-object-model) or a non-COM library that can be [used from a native host](../tutorials/netcore-hosting.md). Setting this property to `true` has the following effects:
+The `EnableDynamicLoading` property indicates that an assembly is a dynamically loaded component. The component could be a [COM library](/windows/win32/com/the-component-object-model) or a non-COM library that can be [used from a native host](../tutorials/netcore-hosting.md) or [used as a plugin](../tutorials/creating-app-with-plugin-support.md). Setting this property to `true` has the following effects:
 
 - A *.runtimeconfig.json* file is generated.
 - [RollForward](#rollforward) is set to `LatestMinor`.
@@ -958,10 +991,11 @@ The `EnableDynamicLoading` property indicates that an assembly is a dynamically 
 The following properties concern code in generated files:
 
 - [DisableImplicitNamespaceImports](#disableimplicitnamespaceimports)
+- [ImplicitUsings](#implicitusings)
 
 ### DisableImplicitNamespaceImports
 
-The `DisableImplicitNamespaceImports` property can be used to disable [implicit namespaces](../compatibility/sdk/6.0/implicit-namespaces.md) in C# projects that target .NET 6 or a later version. Implicit namespaces are the default namespaces that are globally included in a project based on the type of SDK. Set this property to `true` to disable implicit namespaces.
+The `DisableImplicitNamespaceImports` property can be used to disable [implicit namespace imports](../compatibility/sdk/6.0/implicit-namespaces.md) in Visual Basic projects that target .NET 6 or a later version. Implicit namespaces are the default namespaces that are imported globally in a Visual Basic project. Set this property to `true` to disable implicit namespace imports.
 
 ```xml
 <PropertyGroup>
@@ -969,13 +1003,18 @@ The `DisableImplicitNamespaceImports` property can be used to disable [implicit 
 </PropertyGroup>
 ```
 
-Setting the `DisableImplicitNamespaceImports` property to `true` completely disables the implicit namespaces feature of the .NET SDK. If you want to disable only a set of implicit namespaces, use one of the following SDK-specific properties instead.
+### ImplicitUsings
 
-| Property | SDK | Affected namespaces |
-| - | - | - |
-| `DisableImplicitNamespaceImports_DotNet` | Microsoft.NET.Sdk | System<br/>System.Collections.Generic<br/>System.IO<br/>System.Linq<br/>System.Net.Http<br/>System.Threading<br/>System.Threading.Tasks |
-| `DisableImplicitNamespaceImports_Web` | Microsoft.NET.Sdk.Web | System.Net.Http.Json<br/>Microsoft.AspNetCore.Builder<br/>Microsoft.AspNetCore.Hosting<br/>Microsoft.AspNetCore.Http<br/>Microsoft.AspNetCore.Routing<br/>Microsoft.Extensions.Configuration<br/>Microsoft.Extensions.DependencyInjection<br/>Microsoft.Extensions.Hosting<br/>Microsoft.Extensions.Logging |
-| `DisableImplicitNamespaceImports_Worker` | Microsoft.NET.Sdk.Worker | Microsoft.Extensions.Configuration<br/>Microsoft.Extensions.DependencyInjection<br/>Microsoft.Extensions.Hosting<br/>Microsoft.Extensions.Logging |
+The `ImplicitUsings` property can be used to enable and disable implicit `global using` directives in C# projects that target .NET 6 or a later version and C# 10.0 or a later version. When the feature is enabled, the .NET SDK adds `global using` directives for a set of default namespaces based on the type of project SDK. Set this property to `true` or `enable` to enable implicit `global using` directives. To disable implicit `global using` directives, remove the property or set it to `false` .
+
+```xml
+<PropertyGroup>
+  <ImplicitUsings>true</ImplicitUsings>
+</PropertyGroup>
+```
+
+> [!NOTE]
+> For new C# projects that target .NET 6 or later, `ImplicitUsings` is set to `true` by default.
 
 ## Items
 
@@ -983,6 +1022,7 @@ Setting the `DisableImplicitNamespaceImports` property to `true` completely disa
 
 - [PackageReference](#packagereference)
 - [TrimmerRootAssembly](#trimmerrootassembly)
+- [Using](#using)
 
 You can use any of the standard [item attributes](/visualstudio/msbuild/item-element-msbuild#attributes-and-elements), for example, `Include` and `Update`, on these items. Use `Include` to add a new item, and use `Update` to modify an existing item. For example, `Update` is often used to modify an item that has implicitly been added by the .NET SDK.
 
@@ -1023,6 +1063,31 @@ The following XML excludes the `System.Security` assembly from trimming.
   <TrimmerRootAssembly Include="System.Security" />
 </ItemGroup>
 ```
+
+### Using
+
+The `Using` item lets you [globally include a namespace](../../csharp/language-reference/keywords/using-directive.md#global-modifier) across your C# project, such that you don't have to add a `using` directive for the namespace at the top of your source files. This item is similar to the `Import` item that can be used for the same purpose in Visual Basic projects. This property is available starting in .NET 6.
+
+```xml
+<ItemGroup>
+  <Using Include="My.Awesome.Namespace" />
+</ItemGroup>
+```
+
+You can also use the `Using` item to define global `using <alias>` and `using static <type>` directives.
+
+```xml
+<ItemGroup>
+  <Using Include="My.Awesome.Namespace" Alias="Awesome" />
+</ItemGroup>
+```
+
+For example:
+
+- `<Using Include="Microsoft.AspNetCore.Http.Results" Alias="Results" />` emits `global using Results = global::Microsoft.AspNetCore.Http.Results;`
+- `<Using Include="Microsoft.AspNetCore.Http.Results" Static="True" />` emits `global using static global::Microsoft.AspNetCore.Http.Results;`
+
+For more information about aliased `using` directives and `using static <type>` directives, see [using directive](../../csharp/language-reference/keywords/using-directive.md#static-modifier).
 
 ## Item metadata
 

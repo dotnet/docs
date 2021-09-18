@@ -10,11 +10,15 @@ namespace attributes
 #nullable disable
     public class NullableOblivious
     {
+        private Dictionary<string, string> _messageMap = new();
         // <TryGetExample>
         bool TryGetMessage(string key, out string message)
         {
-            message = "";
-            return true;
+            if (_messageMap.ContainsKey(key))
+                message = _messageMap[key];
+            else
+                message = null;
+            return message != null;
         }
         // </TryGetExample>
 
@@ -51,7 +55,7 @@ namespace attributes
         // <ThrowWhenNull>
         public static void ThrowWhenNull(object value, string valueExpression = "")
         {
-            if (value is null) throw new ArgumentNullException(valueExpression);
+            if (value is null) throw new ArgumentNullException(nameof(value), valueExpression);
         }
         // </ThrowWhenNull>
 
@@ -67,12 +71,16 @@ namespace attributes
 #nullable restore
     public class NullableAttributes
     {
+        private Dictionary<string, string> _messageMap = new();
 
         // <NotNullWhenTryGet>
         bool TryGetMessage(string key, [NotNullWhen(true)] out string? message)
         {
-            message = "";
-            return true;
+            if (_messageMap.ContainsKey(key))
+                message = _messageMap[key];
+            else
+                message = null;
+            return message is not null;
         }
         // </NotNullWhenTryGet>
 
@@ -110,14 +118,17 @@ namespace attributes
         }
 
         // <NotNullThrowHelper>
-        public static void ThrowWhenNull([NotNull] object? value, string valueExpression = "") =>
-            _ = value ?? throw new ArgumentNullException(valueExpression);
+        public static void ThrowWhenNull([NotNull] object? value, string valueExpression = "")
+        {
+            _ = value ?? throw new ArgumentNullException(nameof(value), valueExpression);
+            // other logic elided
         // </NotNullThrowHelper>
+        }
 
         // <TestThrowHelper>
         public static void LogMessage(string? message)
         {
-            ThrowWhenNull(message, nameof(message));
+            ThrowWhenNull(message, $"{nameof(message)} must not be null");
 
             Console.WriteLine(message.Length);
         }
@@ -147,33 +158,31 @@ namespace attributes
 
         public void SetState(object containedField)
         {
-            if (!isInitialized)
+            if (containedField is null)
             {
                 FailFast();
             }
 
-            // unreachable code:
+            // containedField can't be null:
             _field = containedField;
         }
         // </DoesNotReturn>
 
-        bool isInitialized;
-        object _field;
+        object _field = new object();
 
         // <DoesNotReturnIf>
-        private void FailFastIf([DoesNotReturnIf(false)] bool isValid)
+        private void FailFastIf([DoesNotReturnIf(true)] bool isNull)
         {
-            if (!isValid)
+            if (isNull)
             {
                 throw new InvalidOperationException();
             }
         }
 
-        public void SetFieldState(object containedField)
+        public void SetFieldState(object? containedField)
         {
-            FailFastIf(isInitialized);
-
-            // unreachable code when "isInitialized" is false:
+            FailFastIf(containedField == null);
+            // No warning: containedField can't be null here:
             _field = containedField;
         }
         // </DoesNotReturnIf>

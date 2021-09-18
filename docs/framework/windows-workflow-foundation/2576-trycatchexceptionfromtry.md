@@ -6,10 +6,10 @@ ms.assetid: 47e48973-b17c-4a16-8338-c84b54aa0a6e
 ---
 # 2576 - TryCatchExceptionFromTry
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|2576|  
 |Keywords|WFActivities|  
 |Level|Information|  

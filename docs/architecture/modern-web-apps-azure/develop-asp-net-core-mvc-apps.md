@@ -162,15 +162,15 @@ The end result of this approach is for controllers to be much smaller and focuse
 > ### References – Mapping Requests to Responses
 >
 > - **Routing to Controller Actions**\
- > <https://docs.microsoft.com/aspnet/core/mvc/controllers/routing>
+ > [https://docs.microsoft.com/aspnet/core/mvc/controllers/routing](/aspnet/core/mvc/controllers/routing)
 > - **Model Binding**\
- > <https://docs.microsoft.com/aspnet/core/mvc/models/model-binding>
+ > [https://docs.microsoft.com/aspnet/core/mvc/models/model-binding](/aspnet/core/mvc/models/model-binding)
 > - **Model Validation**\
- > <https://docs.microsoft.com/aspnet/core/mvc/models/validation>
+ > [https://docs.microsoft.com/aspnet/core/mvc/models/validation](/aspnet/core/mvc/models/validation)
 > - **Filters**\
- > <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
+ > [https://docs.microsoft.com/aspnet/core/mvc/controllers/filters](/aspnet/core/mvc/controllers/filters)
 > - **ApiController Attribute**\
- > <https://docs.microsoft.com/aspnet/core/web-api/>
+ > [https://docs.microsoft.com/aspnet/core/web-api/](/aspnet/core/web-api/)
 
 ## Working with dependencies
 
@@ -384,13 +384,13 @@ You can read more about implementing filters and download a working sample from 
 > ### References – Structuring applications
 >
 > - **Areas**\
->   <https://docs.microsoft.com/aspnet/core/mvc/controllers/areas>
+>   [https://docs.microsoft.com/aspnet/core/mvc/controllers/areas](/aspnet/core/mvc/controllers/areas)
 > - **MSDN Magazine – Feature Slices for ASP.NET Core MVC**\
->   <https://docs.microsoft.com/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc>
+>   [https://docs.microsoft.com/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc](/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc)
 > - **Filters**\
->   <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
+>   [https://docs.microsoft.com/aspnet/core/mvc/controllers/filters](/aspnet/core/mvc/controllers/filters)
 > - **MSDN Magazine – Real World ASP.NET Core MVC Filters**\
->   <https://docs.microsoft.com/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters>
+>   [https://docs.microsoft.com/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters](/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters)
 
 ## Security
 
@@ -496,11 +496,11 @@ Blazor Server applications can leverage the same authentication features as any 
 > - **Authentication Actions and Defaults**\
 >   <https://stackoverflow.com/a/52493428>
 > - **Authentication and Authorization for SPAs**\
->   <https://docs.microsoft.com/aspnet/core/security/authentication/identity-api-authorization>
+>   [https://docs.microsoft.com/aspnet/core/security/authentication/identity-api-authorization](/aspnet/core/security/authentication/identity-api-authorization)
 > - **ASP.NET Core Blazor Authentication and Authorization**\
->   <https://docs.microsoft.com/aspnet/core/blazor/security/>
+>   [https://docs.microsoft.com/aspnet/core/blazor/security/](/aspnet/core/blazor/security/)
 > - **Security: Authentication and Authorization in ASP.NET Web Forms and Blazor**\
->   <https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/security-authentication-authorization>
+>   [https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/security-authentication-authorization](../blazor-for-web-forms-developers/security-authentication-authorization.md)
 
 ### Authorization
 
@@ -577,15 +577,15 @@ Be especially careful about "rolling your own" implementation of cryptography, u
 > ### References – Security
 >
 > - **Security Docs Overview**\
->   <https://docs.microsoft.com/aspnet/core/security/>
+>   [https://docs.microsoft.com/aspnet/core/security/](/aspnet/core/security/)
 > - **Enforcing SSL in an ASP.NET Core App**\
->   <https://docs.microsoft.com/aspnet/core/security/enforcing-ssl>
+>   [https://docs.microsoft.com/aspnet/core/security/enforcing-ssl](/aspnet/core/security/enforcing-ssl)
 > - **Introduction to Identity**\
->   <https://docs.microsoft.com/aspnet/core/security/authentication/identity>
+>   [https://docs.microsoft.com/aspnet/core/security/authentication/identity](/aspnet/core/security/authentication/identity)
 > - **Introduction to Authorization**\
->   <https://docs.microsoft.com/aspnet/core/security/authorization/introduction>
+>   [https://docs.microsoft.com/aspnet/core/security/authorization/introduction](/aspnet/core/security/authorization/introduction)
 > - **Authentication and Authorization for API Apps in Azure App Service**\
->   <https://docs.microsoft.com/azure/app-service-api/app-service-api-authentication>
+>   [https://docs.microsoft.com/azure/app-service-api/app-service-api-authentication](/azure/app-service-api/app-service-api-authentication)
 > - **Identity Server**\
 >   <https://github.com/IdentityServer>
 
@@ -738,13 +738,13 @@ _Learn more about Azure deployment options in [Chapter 10](development-process-f
 > ### References – Deployment
 >
 > - **Hosting and Deployment Overview**\
->   <https://docs.microsoft.com/aspnet/core/publishing/>
+>   [https://docs.microsoft.com/aspnet/core/publishing/](/aspnet/core/publishing/)
 > - **When to use Kestrel with a reverse proxy**\
->   <https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy>
+>   [https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy](/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy)
 > - **Host ASP.NET Core apps in Docker**\
->   <https://docs.microsoft.com/aspnet/core/publishing/docker>
+>   [https://docs.microsoft.com/aspnet/core/publishing/docker](/aspnet/core/publishing/docker)
 > - **Introducing Azure Application Gateway**\
->   <https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction>
+>   [https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction](/azure/application-gateway/application-gateway-introduction)
 
 >[!div class="step-by-step"]
 >[Previous](common-client-side-web-technologies.md)

@@ -6,10 +6,10 @@ ms.assetid: a132bd14-15e9-4a14-8a64-41ac85adf620
 ---
 # 5008 - DCGenWriterStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|5008|  
 |Keywords|Serialization|  
 |Level|Verbose|  

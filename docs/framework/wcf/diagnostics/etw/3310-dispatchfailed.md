@@ -6,10 +6,10 @@ ms.assetid: 6b8d7d9f-c6d9-4275-9121-a47519094124
 ---
 # 3310 - DispatchFailed
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3310|  
 |Keywords|ServiceModel|  
 |Level|Error|  

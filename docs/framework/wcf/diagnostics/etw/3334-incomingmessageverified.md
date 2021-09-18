@@ -6,10 +6,10 @@ ms.assetid: 9fed3d02-72d7-4581-9abb-aede74331e22
 ---
 # 3334 - IncomingMessageVerified
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3334|  
 |Keywords|Security ServiceModel|  
 |Level|Verbose|  

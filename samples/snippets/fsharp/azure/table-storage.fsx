@@ -9,11 +9,6 @@ open System.Collections.Generic
 //
 
 let storageConnString = "..." // fill this in from your storage account
-(*
-// Parse the connection string and return a reference to the storage account.
-let storageConnString = 
-    CloudConfigurationManager.GetSetting("StorageConnectionString")
-*)
 
 //
 // Create the Table service client.
@@ -95,7 +90,7 @@ let response = table.SubmitTransactionAsync(addEntitiesBatch).ConfigureAwait(fal
 let results = table.Query<Customer>("PartitionKey eq 'Smith'")
 
 for customer in results do 
-    printfn "customer: %A %A" customer.RowKey customer.PartitionKey
+    printfn $"customer: {customer.RowKey} {customer.PartitionKey}"
 
 //
 // Retrieve a range of entities in a partition.
@@ -104,7 +99,7 @@ for customer in results do
 let rangeResult = table.Query<Customer>("PartitionKey eq 'Smith' and RowKey lt 'M'")
 
 for customer in rangeResult do 
-    printfn "customer: %A %A" customer.RowKey customer.PartitionKey
+    printfn $"customer: {customer.RowKey} {customer.PartitionKey}"
 
 //
 // Retrieve a single entity.
@@ -113,7 +108,7 @@ for customer in rangeResult do
 let singleResult = table.GetEntityAsync<Customer>("Smith", "Ben").Result.Value
 
 // Show the result
-printfn "customer: %A %A" singleResult.RowKey singleResult.PartitionKey
+printfn $"customer: {singleResult.RowKey} {singleResult.PartitionKey}"
 
 //
 // Update an entity.
@@ -155,7 +150,7 @@ let pagesResults = table.Query<Customer>()
 for page in pagesResults.AsPages() do 
     printfn "This is a new page!" 
     for qEntity in page.Values do
-        printfn "customer: %A %A" qEntity.RowKey qEntity.PartitionKey
+        printfn $"customer: {qEntity.RowKey} {qEntity.PartitionKey}"
 
 //
 // Delete an entity.

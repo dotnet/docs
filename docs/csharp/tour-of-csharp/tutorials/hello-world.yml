@@ -190,7 +190,7 @@ items:
     > Watch your punctuation when you test for the text at the end of the string. If the string
     > ends with a period, you must check for a string that ends with a period.
 
-    You should get `true` for starting with "You" and ending with "hello" and false for starting with or ending with "goodbye".
+    You should get `true` for starting with "You" and ending with "hello" and `false` for starting with or ending with "goodbye".
 
 - title: Complete challenge
   durationInMinutes: 3

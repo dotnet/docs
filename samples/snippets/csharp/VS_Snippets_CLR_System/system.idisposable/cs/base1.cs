@@ -23,7 +23,7 @@ class BaseClassWithSafeHandle : IDisposable
 
         if (disposing)
         {
-            _safeHandle?.Dispose();
+            _safeHandle.Dispose();
         }
 
         _disposed = true;

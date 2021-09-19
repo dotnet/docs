@@ -56,6 +56,6 @@ For more information and examples, see [Static Constructors](./static-constructo
 
 - [C# Programming Guide](../index.md)
 - [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
-- [Finalizers](./destructors.md)
+- [Finalizers](./finalizers.md)
 - [static](../../language-reference/keywords/static.md)
 - [Why Do Initializers Run In The Opposite Order As Constructors? Part One](/archive/blogs/ericlippert/why-do-initializers-run-in-the-opposite-order-as-constructors-part-one)

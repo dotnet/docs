@@ -163,12 +163,12 @@ The Web Services Security Protocols provide Web services security mechanisms tha
 
  Each authentication mode describes a certain layout for the security header. Elements within the security header are semi-ordered. To define the order of security header child elements, WS-Security Policy defines the following security header layout modes:  
   
-|||  
-|-|-|  
-|Strict|Items are added to the security header following the numbered layout rules described in Security Policy section 7.7.1 according to a general principle of "declare before use".|  
-|Lax|Items are added to the security header in any order that conforms to WSS: SOAP Message Security.|  
-|LaxTimestampFirst|Same as Lax except that the first item in the security header must be a wsse:Timestamp|  
-|LaxTimestampLast|Same as lax except that the last item in the security header must be a wsse:Timestamp|  
+| Layout mode | Element order |
+|-|-|
+|Strict|Items are added to the security header following the numbered layout rules described in Security Policy section 7.7.1 according to a general principle of "declare before use".|
+|Lax|Items are added to the security header in any order that conforms to WSS: SOAP Message Security.|
+|LaxTimestampFirst|Same as Lax except that the first item in the security header must be a wsse:Timestamp|
+|LaxTimestampLast|Same as lax except that the last item in the security header must be a wsse:Timestamp|
   
  WCF supports all four modes for security header layout. Security header structure and message examples for authentication modes below follow the "Strict" mode.  
   

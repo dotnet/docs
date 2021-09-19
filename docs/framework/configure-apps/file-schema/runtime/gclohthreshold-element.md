@@ -53,4 +53,4 @@ This setting was introduced in .NET Framework 4.8.
 - [Run-time settings schema](index.md)
 - [Configuration file schema](../index.md)
 - [Fundamentals of garbage collection](../../../../standard/garbage-collection/fundamentals.md)
-- [NET Core run-time config options for GC](../../../../core/run-time-config/garbage-collector.md)
+- [NET Core runtime config options for GC](../../../../core/run-time-config/garbage-collector.md)

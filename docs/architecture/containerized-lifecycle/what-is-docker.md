@@ -1,9 +1,9 @@
 ---
-title: What is Docker?
+title: Learn Docker
 description: Get a little deeper in your understanding of Docker, a simple analogy here might help you.
 ms.date: 08/06/2020
 ---
-# What is Docker?
+# Learn Docker
 
 [Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) for automating the deployment of applications as portable, self-sufficient containers that can run on the cloud or on-premises. Docker is also a [company](https://www.docker.com/) that promotes and evolves this technology, working in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
 
@@ -15,7 +15,7 @@ As shown in the above diagram, Docker containers can run anywhere, on-premises i
 
 Developers can use development environments on Windows, Linux, or macOS. On the development computer, the developer runs a Docker host where Docker images are deployed, including the app and its dependencies. Developers who work on Linux or on the Mac, use a Docker host that's Linux-based, and they can only create images for Linux containers. (Developers working on the Mac can edit code or run the Docker command-line interface (CLI) from macOS, but as of this writing, containers don't run directly on macOS.) Developers who work on Windows can create images for either Linux or Windows Containers.
 
-To host containers in development environments and provide additional developer tools, Docker ships [Docker Community Edition (CE)](https://www.docker.com/community-edition) for Windows or for macOS. These products install the necessary VM (the Docker host) to host the containers. Docker also makes available [Docker Enterprise Edition (EE)](https://www.docker.com/enterprise-edition), which is designed for enterprise development and is used by IT teams who build, ship, and run large business-critical applications in production.
+To host containers in development environments and provide additional developer tools, Docker ships Docker Desktop for [Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows) or for [macOS](https://hub.docker.com/editions/community/docker-ce-desktop-mac). These products install the necessary VM (the Docker host) to host the containers.
 
 To run [Windows Containers](/virtualization/windowscontainers/about/), there are two types of runtimes:
 

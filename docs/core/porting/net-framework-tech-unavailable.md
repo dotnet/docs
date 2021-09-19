@@ -22,9 +22,11 @@ To make code migration from .NET Framework easier, .NET 5+ exposes some of the <
 
 .NET Remoting isn't supported on .NET 5+ (and .NET Core). .NET remoting was identified as a problematic architecture. It's used for communicating across application domains, which are no longer supported. Also, remoting requires runtime support, which is expensive to maintain.
 
-For communication across processes, consider inter-process communication (IPC) mechanisms as an alternative to remoting, such as the <xref:System.IO.Pipes> class or the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> class.
+For simple communication across processes, consider inter-process communication (IPC) mechanisms as an alternative to remoting, such as the <xref:System.IO.Pipes> class or the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> class. For more complex scenarios, the open-source [StreamJsonRpc](https://github.com/microsoft/vs-streamjsonrpc) project provides a cross-platform .NET Standard remoting framework that works on top of existing stream or pipe connections.
 
-Across machines, use a network-based solution as an alternative. Preferably, use a low-overhead plain text protocol, such as HTTP. The [Kestrel web server](/aspnet/core/fundamentals/servers/kestrel), which is the web server used by ASP.NET Core, is an option here. Also, consider using <xref:System.Net.Sockets> for network-based, cross-machine scenarios. For more options, see [.NET Open Source Developer Projects: Messaging](https://github.com/Microsoft/dotnet/blob/master/dotnet-developer-projects.md#messaging).
+Across machines, use a network-based solution as an alternative. Preferably, use a low-overhead plain text protocol, such as HTTP. The [Kestrel web server](/aspnet/core/fundamentals/servers/kestrel), which is the web server used by ASP.NET Core, is an option here. Also, consider using <xref:System.Net.Sockets> for network-based, cross-machine scenarios. StreamJsonRpc, mentioned earlier, can be used for JSON or binary (via MessagePack) communication over web sockets.
+
+For more messaging options, see [.NET Open Source Developer Projects: Messaging](https://github.com/Microsoft/dotnet/blob/master/dotnet-developer-projects.md#messaging).
 
 ## Code access security (CAS)
 
@@ -57,6 +59,12 @@ Windows Workflow Foundation (WF) and Windows Communication Foundation (WCF) are 
 As an alternative, consider the [ILPack library](https://github.com/Lokad/ILPack).
 
 For more information, see [dotnet/runtime issue 15704](https://github.com/dotnet/runtime/issues/15704).
+
+## Loading multi-module assemblies
+
+Assemblies that consist of multiple modules (`OutputType=Module` in MSBuild) are not supported in .NET 5+ (including .NET Core).
+
+As an alternative, consider merging the individual modules into a single assembly file.
 
 ## See also
 

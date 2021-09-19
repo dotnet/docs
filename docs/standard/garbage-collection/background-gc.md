@@ -62,4 +62,4 @@ The following illustration shows concurrent garbage collection performed on a se
 ## See also
 
 - [Workstation and server garbage collection](workstation-server-gc.md)
-- [Run-time configuration options for garbage collection](../../core/run-time-config/garbage-collector.md)
+- [Runtime configuration options for garbage collection](../../core/run-time-config/garbage-collector.md)

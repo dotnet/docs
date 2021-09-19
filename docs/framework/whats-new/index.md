@@ -1918,7 +1918,7 @@ For new features in ASP.NET 4.5.1, see [ASP.NET and Web Tools for Visual Studio 
 
 - Support for versioning of cultural string ordering and comparison data. See the <xref:System.Globalization.SortVersion> class.
 
-- Better performance when retrieving resources. See [Packaging and Deploying Resources](../resources/packaging-and-deploying-resources-in-desktop-apps.md).
+- Better performance when retrieving resources. See [Package and deploy resources](../../core/extensions/package-and-deploy-resources.md).
 
 - Zip compression improvements to reduce the size of a compressed file. See the <xref:System.IO.Compression?displayProperty=nameWithType> namespace.
 

@@ -108,7 +108,7 @@ Repositories might be useful, but they are not critical for your DDD design, in 
   <https://martinfowler.com/eaaCatalog/repository.html>
 
 - **The Repository pattern** \
-  <https://docs.microsoft.com/previous-versions/msp-n-p/ff649690(v=pandp.10)>
+  [https://docs.microsoft.com/previous-versions/msp-n-p/ff649690(v=pandp.10)](/previous-versions/msp-n-p/ff649690(v=pandp.10))
 
 - **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of the Repository pattern) \
   <https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/>
@@ -119,7 +119,7 @@ Repositories might be useful, but they are not critical for your DDD design, in 
   <https://martinfowler.com/eaaCatalog/unitOfWork.html>
 
 - **Implementing the Repository and Unit of Work Patterns in an ASP.NET MVC Application** \
-  <https://docs.microsoft.com/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application>
+  [https://docs.microsoft.com/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application](/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)
 
 >[!div class="step-by-step"]
 >[Previous](domain-events-design-implementation.md)

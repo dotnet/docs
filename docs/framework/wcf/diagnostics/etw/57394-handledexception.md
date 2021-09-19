@@ -6,10 +6,10 @@ ms.assetid: c9e63436-6550-4891-9673-cbc72dda20e3
 ---
 # 57394 - HandledException
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|57394|  
 |Keywords|Infrastructure|  
 |Level|Information|  

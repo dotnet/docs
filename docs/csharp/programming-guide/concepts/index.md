@@ -25,6 +25,6 @@ This section explains programming concepts in the C# language.
   
 ## Related Sections  
   
-|||  
-|---|---|  
-|[Performance Tips](../../../framework/performance/performance-tips.md) | Discusses several basic rules that may help you increase the performance of your application.|
+- [Performance Tips](../../../framework/performance/performance-tips.md)
+
+  Discusses several basic rules that may help you increase the performance of your application.

@@ -53,7 +53,8 @@ At the preceding example, the `switch` statement uses the following patterns:
 - A [relational pattern](../operators/patterns.md#relational-patterns): to compare an expression result with a constant.
 - A [constant pattern](../operators/patterns.md#constant-pattern): to test if an expression result equals a constant.
 
-For information about the patterns supported by the `switch` statement, see [Patterns](../operators/patterns.md).
+> [!IMPORTANT]
+> For information about the patterns supported by the `switch` statement, see [Patterns](../operators/patterns.md).
 
 The preceding example also demonstrates the `default` case. The `default` case specifies statements to execute when a match expression doesn't match any other case pattern. If a match expression doesn't match any case pattern and there is no `default` case, control falls through a `switch` statement.
 

@@ -100,7 +100,7 @@ In the last 20 years, while UI desktop technologies were growing and following t
 
 The following table describes the differences between the two concepts:
 
-|   | Modern Application | Desktop Application |
+| Aspect of comparison | Modern Application | Desktop Application |
 | --- | --- | --- |
 | Security | Contained execution &amp; Great Fundamentals. Designed from the ground up to respect user's privacy, manage battery life, and focus to keep the device safe.  | User &amp; Admin level of security. You have native access to the registry and hard drive folders. |
 | Deployment | Installation and updates are managed by the platform.   | MSI, Custom installers &amp; Updates. Traditionally a source of headaches for developers and IT managers.  |

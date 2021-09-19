@@ -83,16 +83,7 @@ The values in the example are the default values.
         requestQueueLimit="5000" />  
   </system.web>  
 </configuration>  
-```  
-  
-## Element Information  
-  
-|||  
-|-|-|  
-|Namespace||  
-|Schema Name||  
-|Validation File||  
-|Can be Empty||  
+```
   
 ## See also
 

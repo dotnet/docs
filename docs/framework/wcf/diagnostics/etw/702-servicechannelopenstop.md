@@ -6,10 +6,10 @@ ms.assetid: 190298c4-8216-4eb5-b8b0-8072400838c5
 ---
 # 702 - ServiceChannelOpenStop
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|702|  
 |Keywords|ServiceModel|  
 |Level|Information|  

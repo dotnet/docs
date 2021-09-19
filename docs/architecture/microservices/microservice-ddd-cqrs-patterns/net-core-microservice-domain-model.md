@@ -169,7 +169,7 @@ For example, in the preceding OrderAggregate code example, there are several pri
   <https://kalele.io/blog-posts/modeling-aggregates-with-ddd-and-entity-framework/>
 
 - **Julie Lerman. Data Points - Coding for Domain-Driven Design: Tips for Data-Focused Devs** \
-  <https://docs.microsoft.com/archive/msdn-magazine/2013/august/data-points-coding-for-domain-driven-design-tips-for-data-focused-devs>
+  [https://docs.microsoft.com/archive/msdn-magazine/2013/august/data-points-coding-for-domain-driven-design-tips-for-data-focused-devs](/archive/msdn-magazine/2013/august/data-points-coding-for-domain-driven-design-tips-for-data-focused-devs)
 
 - **Udi Dahan. How to create fully encapsulated Domain Models** \
   <https://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/>

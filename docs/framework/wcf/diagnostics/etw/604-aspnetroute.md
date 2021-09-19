@@ -6,10 +6,10 @@ ms.assetid: 761748b5-1b7c-4b17-98ba-0579876632f1
 ---
 # 604 - AspNetRoute
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|604|  
 |Keywords|RoutingServices|  
 |Level|Verbose|  

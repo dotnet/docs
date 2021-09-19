@@ -2,7 +2,7 @@
 description: "Learn more about: Work with Buffers in .NET"
 title: "System.Buffers - .NET"
 ms.date: 12/05/2019
-helpviewer_keywords: 
+helpviewer_keywords:
   - "buffers [.NET]"
   - "I/O [.NET], buffers"
 author: rick-anderson
@@ -56,11 +56,11 @@ The third representation is the most interesting one as it has performance impli
 |`T[]`/`ReadOnlyMemory<T>`|`Length`|`O(1)`|
 |`T[]`/`ReadOnlyMemory<T>`|`GetPosition(long)`|`O(1)`|
 |`T[]`/`ReadOnlyMemory<T>`|`Slice(int, int)`|`O(1)`|
-|`T[]`/`ReadOnlyMemory<T>`|`Slice(SequencePostion,  SequencePostion)`|`O(1)`|
+|`T[]`/`ReadOnlyMemory<T>`|`Slice(SequencePosition,  SequencePosition)`|`O(1)`|
 |`ReadOnlySequenceSegment<T>`|`Length`|`O(1)`|
 |`ReadOnlySequenceSegment<T>`|`GetPosition(long)`|`O(number of segments)`|
 |`ReadOnlySequenceSegment<T>`|`Slice(int, int)`|`O(number of segments)`|
-|`ReadOnlySequenceSegment<T>`|`Slice(SequencePostion, SequencePostion)`|`O(1)`|
+|`ReadOnlySequenceSegment<T>`|`Slice(SequencePosition, SequencePosition)`|`O(1)`|
 
 Because of this mixed representation, the `ReadOnlySequence<T>` exposes indexes as `SequencePosition` instead of an integer. A `SequencePosition`:
 
@@ -138,7 +138,7 @@ The preceding code creates a `ReadOnlySequence<byte>` with empty segments and sh
 There are several unusual outcomes when dealing with a `ReadOnlySequence<T>`/`SequencePosition` vs. a normal `ReadOnlySpan<T>`/`ReadOnlyMemory<T>`/`T[]`/`int`:
 
 - `SequencePosition` is a position marker for a specific `ReadOnlySequence<T>`, not an absolute position. Because it's relative to a specific `ReadOnlySequence<T>`, it doesn't have meaning if used outside of the `ReadOnlySequence<T>` where it originated.
-- Arithmetic can't be performed on `SequencePosition` without the `ReadOnlySequence<T>`. That means doing basic things like `position++` is written `ReadOnlySequence<T>.GetPosition(position, 1)`.
+- Arithmetic can't be performed on `SequencePosition` without the `ReadOnlySequence<T>`. That means doing basic things like `position++` is written `position = ReadOnlySequence<T>.GetPosition(1, position)`.
 - `GetPosition(long)` does **not** support negative indexes. That means it's impossible to get the second to last character without walking all segments.
 - Two `SequencePosition` can't be compared, making it difficult to:
   - Know if one position is greater than or less than another position.

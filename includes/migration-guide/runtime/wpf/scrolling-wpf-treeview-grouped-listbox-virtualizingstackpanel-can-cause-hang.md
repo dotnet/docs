@@ -1,8 +1,8 @@
-### Scrolling a WPF TreeView or grouped ListBox in a VirtualizingStackPanel can cause a hang
+### Scrolling a WPF TreeView or grouped ListBox in a VirtualizingStackPanel can cause the application to stop responding
 
 #### Details
 
-In the .NET Framework v4.5, scrolling a WPF <xref:System.Windows.Controls.TreeView?displayProperty=fullName> in a virtualized stack panel can cause hangs if there are margins in the viewport (between the items in the <xref:System.Windows.Controls.TreeView?displayProperty=fullName>, for example, or on an ItemsPresenter element). Additionally, in some cases, different sized items in the view can cause instability even if there are no margins.
+In the .NET Framework v4.5, scrolling a WPF <xref:System.Windows.Controls.TreeView?displayProperty=fullName> in a virtualized stack panel can cause the application to stop responding if there are margins in the viewport (between the items in the <xref:System.Windows.Controls.TreeView?displayProperty=fullName>, for example, or on an ItemsPresenter element). Additionally, in some cases, different sized items in the view can cause instability even if there are no margins.
 
 #### Suggestion
 

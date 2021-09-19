@@ -30,12 +30,24 @@ The tables that follow summarize .NET Framework version history and correlate ea
 - The plus sign icon ➕ denotes OS versions on which .NET Framework doesn't come installed but can be installed.
 - The asterisk **\*** denotes OS versions on which .NET Framework (whether preinstalled or not) must be enabled [in Control Panel](../install/dotnet-35-windows-10.md) or, for Windows Server, through the Server Manager.
 
-| | |
-| - | - |
-| [.NET Framework 4.8](#net-framework-48) | [.NET Framework 4.7.2](#net-framework-472) | [.NET Framework 4.7.1](#net-framework-471) | [.NET Framework 4.7](#net-framework-47) |
-| [.NET Framework 4.6.2](#net-framework-462) | [.NET Framework 4.6.1](#net-framework-461) | [.NET Framework 4.6](#net-framework-46) | [.NET Framework 4.5.2](#net-framework-452) |
-| [.NET Framework 4.5.1](#net-framework-451) | [.NET Framework 4.5](#net-framework-45) | [.NET Framework 4](#net-framework-4) | [.NET Framework 3.5](#net-framework-35) |
-| [.NET Framework 3.0](#net-framework-30) | [.NET Framework 2.0](#net-framework-20) | [.NET Framework 1.1](#net-framework-11) | [.NET Framework 1.0](#net-framework-10) |
+Jump to:
+
+- [.NET Framework 4.8](#net-framework-48)
+- [.NET Framework 4.7.2](#net-framework-472)
+- [.NET Framework 4.7.1](#net-framework-471)
+- [.NET Framework 4.7](#net-framework-47)
+- [.NET Framework 4.6.2](#net-framework-462)
+- [.NET Framework 4.6.1](#net-framework-461)
+- [.NET Framework 4.6](#net-framework-46)
+- [.NET Framework 4.5.2](#net-framework-452)
+- [.NET Framework 4.5.1](#net-framework-451)
+- [.NET Framework 4.5](#net-framework-45)
+- [.NET Framework 4](#net-framework-4)
+- [.NET Framework 3.5](#net-framework-35)
+- [.NET Framework 3.0](#net-framework-30)
+- [.NET Framework 2.0](#net-framework-20)
+- [.NET Framework 1.1](#net-framework-11)
+- [.NET Framework 1.0](#net-framework-10)
 
 ### .NET Framework 4.8
 
@@ -43,12 +55,19 @@ The tables that follow summarize .NET Framework version history and correlate ea
 - [New in accessibility](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-net-framework-48)
 - [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net48/README.md)
 
-|||
+| | Versions |
 |-|-|
-|**CLR version**|4|
-|**Windows versions**|✔️ 10 October 2020 Update<br/>✔️ 10 May 2020 Update<br/>✔️ 10 November 2019 Update<br/>✔️ 10 May 2019 Update<br/>➕ 10 October 2018 Update (Version 1809)<br/>➕ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
-|**Windows Server versions**|➕ Windows Server 2019<br/>➕ Windows Server, version 1809<br/>➕ Windows Server, version 1803<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
-|**To determine installed .NET version**|Use `Release` DWORD:<br/>- 528372 (Windows 10 May 2020 Update and Windows 10 October 2020 Update)<br/>- 528040 (Windows 10 May 2019 Update and Windows 10 November 2019 Update)<br/>- 528049 (all other OS versions)<br/>(See [instructions](how-to-determine-which-versions-are-installed.md))|
+|**CLR**|4|
+|**Windows**|✔️ 10 October 2020 Update<br/>✔️ 10 May 2020 Update<br/>✔️ 10 November 2019 Update<br/>✔️ 10 May 2019 Update<br/>➕ 10 October 2018 Update (Version 1809)<br/>➕ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
+|**Windows Server**|➕ Windows Server 2019<br/>➕ Windows Server, version 1809<br/>➕ Windows Server, version 1803<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
+
+To determine the installed .NET version, use the following `Release` DWORD:
+
+- 528372 (Windows 10 May 2020 Update and Windows 10 October 2020 Update)
+- 528040 (Windows 10 May 2019 Update and Windows 10 November 2019 Update)
+- 528049 (all other OS versions)
+
+For more information, see [instructions](how-to-determine-which-versions-are-installed.md).
 
 ### .NET Framework 4.7.2
 
@@ -56,15 +75,22 @@ The tables that follow summarize .NET Framework version history and correlate ea
 - [New in accessibility](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-net-framework-472)
 - [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net472/README.md)
 
-|||
+| | Versions |
 |-|-|
-|**CLR version**|4|
-|**Included in Visual Studio version**|2019<sup>1</sup>|
-|**Windows versions**|✔️ 10 October 2018 Update (Version 1809)<br/>✔️ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
-|**Windows Server versions**|✔️ Windows Server 2019<br/>✔️ Windows Server, version 1809<br/>✔️ Windows Server, version 1803<br/>➕ Windows Server, version 1709<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
-|**To determine installed .NET version**|Use `Release` DWORD:<br/>- 461814 (Windows 10 October 2018 Update)<br/>- 461808 (Windows 10 April 2018 Update and Windows Server, version 1803)<br/>- 461814 (all other OS versions)<br/>(See [instructions](how-to-determine-which-versions-are-installed.md))|
+|**CLR**|4|
+|**Included in Visual Studio**|2019<sup>1</sup>|
+|**Windows**|✔️ 10 October 2018 Update (Version 1809)<br/>✔️ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
+|**Windows Server**|✔️ Windows Server 2019<br/>✔️ Windows Server, version 1809<br/>✔️ Windows Server, version 1803<br/>➕ Windows Server, version 1709<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
 
 <sup>1</sup> Requires installing the **.NET desktop development**, **ASP.NET and web development**, **Azure development**, **Office/SharePoint development**, **Mobile development with .NET**, or **.NET Core cross-platform development** workloads.
+
+To determine the installed .NET version, use the following `Release` DWORD:
+
+- 461814 (Windows 10 October 2018 Update)
+- 461808 (Windows 10 April 2018 Update and Windows Server, version 1803)
+- 461814 (all other OS versions)
+
+For more information, see [instructions](how-to-determine-which-versions-are-installed.md).
 
 ### .NET Framework 4.7.1
 
@@ -72,89 +98,126 @@ The tables that follow summarize .NET Framework version history and correlate ea
 - [New in accessibility](../whats-new/whats-new-in-accessibility.md#whats-new-in-accessibility-in-net-framework-471)
 - [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net471/README.md)
 
-|||
+| | Versions |
 |-|-|
-|**CLR version**|4|
-|**Windows versions**|✔️ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
-|**Windows Server versions**|➕ Windows Server, version 1803<br/>✔️ Windows Server, version 1709<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
-|**To determine installed .NET version**|Use `Release` DWORD:<br/>- 461308 (Windows 10 Creators Update and Windows Server, version 1709)<br/>- 461310 (all other OS versions)<br/>(See [instructions](how-to-determine-which-versions-are-installed.md))|
+|**CLR**|4|
+|**Windows**|✔️ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
+|**Windows Server**|➕ Windows Server, version 1803<br/>✔️ Windows Server, version 1709<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
+
+To determine the installed .NET version, use the following `Release` DWORD:
+
+- 461308 (Windows 10 Creators Update and Windows Server, version 1709)
+- 461310 (all other OS versions)
+
+For more information, see [instructions](how-to-determine-which-versions-are-installed.md).
 
 ### .NET Framework 4.7
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-47)
 - [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net47/README.md)
 
-|||
-|-|-|
-|**CLR version**|4|
-|**Windows versions**|✔️ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
-|**Windows Server versions**|➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
-|**To determine installed .NET version**|Use `Release` DWORD:<br/>- 460798 (Windows 10 Creators Update)<br/>- 460805 (all other OS versions)<br/>(See [instructions](how-to-determine-which-versions-are-installed.md))|
+|                    | Versions                                                                                              |
+|--------------------|-------------------------------------------------------------------------------------------------------|
+| **CLR**            | 4                                                                                                     |
+| **Windows**        | ✔️ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7 |
+| **Windows Server** | ➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1                                               |
+
+To determine the installed .NET version, use the following `Release` DWORD:
+
+- 460798 (Windows 10 Creators Update)
+- 460805 (all other OS versions)
+
+For more information, see [instructions](how-to-determine-which-versions-are-installed.md).
 
 ### .NET Framework 4.6.2
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-462)
 - [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net462/README.md)
 
-|||
-|-|-|
-|**CLR version**|4|
-|**Windows versions**|✔️ 10 Anniversary Update (Version 1607)<br/>➕ 10 November Update (Version 1511)<br/>➕ 10<br/>➕ 8.1<br />➕ 7|
-|**Windows Server versions**|✔️ 2016<br /><br/>➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 SP1|
-|**To determine installed .NET version**|Use `Release` DWORD:<br /><br/>- 394802 (Windows 10 Anniversary Update and Windows Server 2016)<br/>- 394806 (all other OS versions)<br /><br/>(See [instructions](how-to-determine-which-versions-are-installed.md))|
+|                    | Versions                                                                                                   |
+|--------------------|------------------------------------------------------------------------------------------------------------|
+| **CLR**            | 4                                                                                                          |
+| **Windows**        | ✔️ 10 Anniversary Update (Version 1607)<br/>➕ 10 November Update (Version 1511)<br/>➕ 10<br/>➕ 8.1<br />➕ 7 |
+| **Windows Server** | ✔️ 2016<br /><br/>➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 SP1                                                |
+
+To determine the installed .NET version, use the following `Release` DWORD:
+
+- 394802 (Windows 10 Anniversary Update and Windows Server 2016)
+- 394806 (all other OS versions)
+
+For more information, see [instructions](how-to-determine-which-versions-are-installed.md).
 
 ### .NET Framework 4.6.1
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-461)
 - [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net461/README.md)
 
-|||
-|-|-|
-|**CLR version**|4|
-|**Included in Visual Studio version**|2017<sup>1</sup>|
-|**Windows versions**|✔️ 10 November Update (Version 1511)<br/>➕ 10<br />➕ 8.1<br />➕ 8<br />➕ 7|
-|**Windows Server versions**|➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 SP1|
-|**To determine installed .NET version**|Use `Release` DWORD:<br /><br/>- 394254 (Windows 10 November Update)<br />- 394271 (all other OS versions)<br /><br/>(See [instructions](how-to-determine-which-versions-are-installed.md))|
+|                                       | Versions                                                                  |
+|---------------------------------------|---------------------------------------------------------------------------|
+| **CLR**                               | 4                                                                         |
+| **Included in Visual Studio** | 2017<sup>1</sup>                                                          |
+| **Windows**                           | ✔️ 10 November Update (Version 1511)<br/>➕ 10<br />➕ 8.1<br />➕ 8<br />➕ 7 |
+| **Windows Server**                    | ➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 SP1                                 |
 
 <sup>1</sup> Requires installing the **.NET desktop development**, **ASP.NET and web development**, **Azure development**, **Office/SharePoint development**, **Mobile development with .NET**, or **.NET Core cross-platform development** workloads.
+
+To determine the installed .NET version, use the following `Release` DWORD:
+
+- 394254 (Windows 10 November Update)
+- 394271 (all other OS versions)
+
+For more information, see [instructions](how-to-determine-which-versions-are-installed.md).
 
 ### .NET Framework 4.6
 
 - [New features](../whats-new/index.md#whats-new-in-net-2015)
 - [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net46/README.md)
 
-|||
-|-|-|
-|**CLR version**|4|
-|**Included in Visual Studio version**|2015|
-|**Windows versions**|✔️ 10<br /><br />➕ 8.1<br />➕ 8<br />➕ 7<br />➕ Vista|
-|**Windows Server versions**|➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 SP1<br />➕ 2008 SP2|
-|**To determine installed .NET version**|Use `Release` DWORD:<br /><br />- 393295 (Windows 10)<br />- 393297 (all other OS versions)<br /><br />(See [instructions](how-to-determine-which-versions-are-installed.md))|
+|                                       | Versions                                                 |
+|---------------------------------------|----------------------------------------------------------|
+| **CLR**                               | 4                                                        |
+| **Included in Visual Studio**         | 2015                                                     |
+| **Windows**                           | ✔️ 10<br /><br />➕ 8.1<br />➕ 8<br />➕ 7<br />➕ Vista   |
+| **Windows Server**                    | ➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 SP1<br />➕ 2008 SP2 |
+
+To determine the installed .NET version, use the following `Release` DWORD:
+
+- 393295 (Windows 10)
+- 393297 (all other OS versions)
+
+For more information, see [instructions](how-to-determine-which-versions-are-installed.md).
 
 ### .NET Framework 4.5.2
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-452)
 - [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net452/README.md)
 
-|||
-|-|-|
-|**CLR version**|4|
-|**Windows versions**|➕ 8.1<br />➕ 8<br />➕ 7<br />➕ Vista|
-|**Windows Server versions**|➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 SP1<br />➕ 2008 SP2|
-|**To determine installed .NET version**|Use `Release` DWORD 379893<br /><br />(See [instructions](how-to-determine-which-versions-are-installed.md))|
+|                    | Versions                                                 |
+|--------------------|----------------------------------------------------------|
+| **CLR**            | 4                                                        |
+| **Windows**        | ➕ 8.1<br />➕ 8<br />➕ 7<br />➕ Vista                    |
+| **Windows Server** | ➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 SP1<br />➕ 2008 SP2 |
+
+To determine the installed .NET version, use `Release` DWORD 379893. For more information, see [instructions](how-to-determine-which-versions-are-installed.md).
 
 ### .NET Framework 4.5.1
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-451)
 - [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net451/README.md)
 
-|||
-|-|-|
-|**CLR version**|4|
-|**Included in Visual Studio version**|2013|
-|**Windows versions**|✔️ 8.1<br /><br />➕ 8<br />➕ 7<br />➕ Vista|
-|**Windows Server versions**|✔️ 2012 R2<br /><br />➕ 2012<br />➕ 2008 R2 SP1<br />➕ 2008 SP2|
-|**To determine installed .NET version**|Use `Release` DWORD:<br /><br />- 378675 (Windows 8.1)<br />- 378758 (all other)<br /><br />(See [instructions](how-to-determine-which-versions-are-installed.md))|
+|                                       | Versions                                                       |
+|---------------------------------------|----------------------------------------------------------------|
+| **CLR**                               | 4                                                              |
+| **Included in Visual Studio**         | 2013                                                           |
+| **Windows**                           | ✔️ 8.1<br /><br />➕ 8<br />➕ 7<br />➕ Vista                   |
+| **Windows Server**                    | ✔️ 2012 R2<br /><br />➕ 2012<br />➕ 2008 R2 SP1<br />➕ 2008 SP2 |
+
+To determine the installed .NET version, use the following `Release` DWORD:
+
+- 378675 (Windows 8.1)
+- 378758 (all other Windows versions)
+
+For more information, see [instructions](how-to-determine-which-versions-are-installed.md).
 
 [!INCLUDE [net-framework-vs](../../../includes/net-framework-vs.md)]
 
@@ -163,13 +226,14 @@ The tables that follow summarize .NET Framework version history and correlate ea
 - [New features](../whats-new/index.md#whats-new-in-net-framework-45)
 - [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net45/README.md)
 
-|||
-|-|-|
-|**CLR version**|4|
-|**Included in Visual Studio version**|2012|
-|**Windows versions**|✔️ 8<br />➕ 7<br />➕ Vista|
-|**Windows Server versions**|✔️ 2012<br />➕ 2008 R2 SP1<br />➕ 2008 SP2|
-|**To determine installed .NET version**|Use `Release` DWORD 378389<br /><br />(See [instructions](how-to-determine-which-versions-are-installed.md))|
+|                                       | Versions                                  |
+|---------------------------------------|-------------------------------------------|
+| **CLR**                               | 4                                         |
+| **Included in Visual Studio**         | 2012                                      |
+| **Windows**                           | ✔️ 8<br />➕ 7<br />➕ Vista               |
+| **Windows Server**                    | ✔️ 2012<br />➕ 2008 R2 SP1<br />➕ 2008 SP2 |
+
+To determine the installed .NET version, use `Release` DWORD 378389. For more information, see [instructions](how-to-determine-which-versions-are-installed.md).
 
 [!INCLUDE [net-framework-vs](../../../includes/net-framework-vs.md)]
 
@@ -177,13 +241,14 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 [New features](/previous-versions/dotnet/netframework-4.0/ms171868(v=vs.100))
 
-|||
-|-|-|
-|**CLR version**|4|
-|**Included in Visual Studio version**|2010|
-|**Windows versions**|➕ 7<br />➕ Vista|
-|**Windows Server versions**|➕ 2008 R2 SP1<br />➕ 2008 SP2<br />➕ 2003|
-|**To determine installed .NET version**|See [instructions](how-to-determine-which-versions-are-installed.md)|
+|                               | Versions                                  |
+|-------------------------------|-------------------------------------------|
+| **CLR**                       | 4                                         |
+| **Included in Visual Studio** | 2010                                      |
+| **Windows**                   | ➕ 7<br />➕ Vista                         |
+| **Windows Server**            | ➕ 2008 R2 SP1<br />➕ 2008 SP2<br />➕ 2003 |
+
+**To determine installed .NET version**: See [instructions](how-to-determine-which-versions-are-installed.md).
 
 [!INCLUDE [net-framework-vs](../../../includes/net-framework-vs.md)]
 
@@ -200,13 +265,14 @@ The tables that follow summarize .NET Framework version history and correlate ea
 - Peer-to-Peer networking
 - Add-ins for extensibility
 
-|||
-|-|-|
-|**CLR version**|2.0|
-|**Included in Visual Studio version**|2008|
-|**Windows versions**|✔️ 10\*<br/>✔️ 8.1\*<br />✔️ 8\*<br />✔️ 7<br /><br />➕ Vista|
-|**Windows Server versions**|➕ Windows Server, version 1803\*<br/>➕ Windows Server, version 1709\*<br/>➕ 2016\*<br/>➕ 2012 R2\*<br />➕ 2012\*<br /><br />✔️2008 R2 SP1\*<br /><br/>➕ 2008 SP2<br />➕ 2003|
-|**To determine installed .NET version**|See [instructions](how-to-determine-which-versions-are-installed.md)|
+|                               | Versions                                                                                                                                                                    |
+|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **CLR**                       | 2.0                                                                                                                                                                         |
+| **Included in Visual Studio** | 2008                                                                                                                                                                        |
+| **Windows**                   | ✔️ 10\*<br/>✔️ 8.1\*<br />✔️ 8\*<br />✔️ 7<br /><br />➕ Vista                                                                                                              |
+| **Windows Server**            | ➕ Windows Server, version 1803\*<br/>➕ Windows Server, version 1709\*<br/>➕ 2016\*<br/>➕ 2012 R2\*<br />➕ 2012\*<br /><br />✔️2008 R2 SP1\*<br /><br/>➕ 2008 SP2<br />➕ 2003 |
+
+**To determine installed .NET version**: See [instructions](how-to-determine-which-versions-are-installed.md).
 
 ### .NET Framework 3.0
 
@@ -217,12 +283,13 @@ The tables that follow summarize .NET Framework version history and correlate ea
 - Windows Workflow Foundation
 - Windows CardSpace
 
-|||
-|-|-|
-|**CLR version**|2.0|
-|**Windows versions**|✔️ Vista|
-|**Windows Server versions**|✔️ 2008 R2 SP1*<br />✔️ 2008 SP2\*<br /><br />➕ 2003|
-|**To determine installed .NET version**|See [instructions](how-to-determine-which-versions-are-installed.md).|
+|                    | Versions                                           |
+|--------------------|----------------------------------------------------|
+| **CLR**            | 2.0                                                |
+| **Windows**        | ✔️ Vista                                          |
+| **Windows Server** | ✔️ 2008 R2 SP1*<br />✔️ 2008 SP2\*<br /><br />➕ 2003 |
+
+**To determine installed .NET version**: See [instructions](how-to-determine-which-versions-are-installed.md).
 
 ### .NET Framework 2.0
 
@@ -235,13 +302,14 @@ The tables that follow summarize .NET Framework version history and correlate ea
 - In ASP.NET 2.0, new controls and support for a broad array of browsers
 - 64-bit support
 
-|||
-|-|-|
-|**CLR version**|2.0|
-|**Included in Visual Studio version**|2005|
-|**Windows versions**|N/A|
-|**Windows Server versions**|✔️ 2008 R2 SP1<br />✔️ 2008 SP2<br />✔️ 2003|
-|**To determine installed .NET version**|See [instructions](how-to-determine-which-versions-are-installed.md)|
+|                               | Versions                                  |
+|-------------------------------|-------------------------------------------|
+| **CLR**                       | 2.0                                       |
+| **Included in Visual Studio** | 2005                                      |
+| **Windows**                   | N/A                                       |
+| **Windows Server**            | ✔️ 2008 R2 SP1<br />✔️ 2008 SP2<br />✔️ 2003 |
+
+**To determine installed .NET version**: See [instructions](how-to-determine-which-versions-are-installed.md).
 
 ### .NET Framework 1.1
 
@@ -251,23 +319,25 @@ The tables that follow summarize .NET Framework version history and correlate ea
 - Side-by-side execution
 - IPv6 support
 
-|||
-|-|-|
-|**CLR version**|1.1|
-|**Included in Visual Studio version**|2003|
-|**Windows versions**|N/A|
-|**Windows Server versions**|✔️ 2003|
-|**To determine installed .NET version**|See [instructions](how-to-determine-which-versions-are-installed.md)|
+|                               | Versions |
+|-------------------------------|----------|
+| **CLR**                       | 1.1      |
+| **Included in Visual Studio** | 2003     |
+| **Windows**                   | N/A      |
+| **Windows Server**            | ✔️ 2003 |
+
+**To determine installed .NET version**: See [instructions](how-to-determine-which-versions-are-installed.md).
 
 ### .NET Framework 1.0
 
-|||
-|-|-|
-|**CLR version**|1.0|
-|**Included in Visual Studio version**|Visual Studio .NET|
-|**Windows versions**|N/A|
-|**Windows Server versions**|N/A|
-|**To determine installed .NET version**|See [instructions](how-to-determine-which-versions-are-installed.md)|
+|                               | Versions           |
+|-------------------------------|--------------------|
+| **CLR**                       | 1.0                |
+| **Included in Visual Studio** | Visual Studio .NET |
+| **Windows**                   | N/A                |
+| **Windows Server**            | N/A                |
+
+**To determine installed .NET version**: See [instructions](how-to-determine-which-versions-are-installed.md).
 
 > [!NOTE]
 >
@@ -310,5 +380,5 @@ In addition, if your app targets version 2.0, 3.0, or 3.5, your users may be req
 ## See also
 
 - [Version compatibility](version-compatibility.md)
-| [.NET Framework official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework)
+- [.NET Framework official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework)
 - [Troubleshoot blocked .NET Framework installations and uninstallations](../install/troubleshoot-blocked-installations-and-uninstallations.md)

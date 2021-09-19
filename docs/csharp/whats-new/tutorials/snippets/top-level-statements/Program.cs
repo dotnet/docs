@@ -1,5 +1,4 @@
-﻿using System;
-using MyNamespace;
+﻿using MyNamespace;
 
 Console.WriteLine();
 foreach(var s in args)

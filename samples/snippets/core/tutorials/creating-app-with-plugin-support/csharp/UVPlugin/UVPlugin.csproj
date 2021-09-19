@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
   </PropertyGroup>
 
   <ItemGroup>

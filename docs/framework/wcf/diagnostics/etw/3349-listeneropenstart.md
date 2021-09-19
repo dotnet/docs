@@ -6,10 +6,10 @@ ms.assetid: 9625f9bc-45c0-4a0d-8f97-34d1672f556c
 ---
 # 3349 - ListenerOpenStart
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3349|  
 |Keywords|Channel|  
 |Level|Verbose|  

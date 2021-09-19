@@ -262,9 +262,9 @@ Here's another piece of code with the same problem. It's checking for a non-empt
 
 [!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
-❌ **Unexpected Hang**
+❌ **Unresponsive application**
 
-Unconditionally calling `PipeReader.AdvanceTo` with `buffer.End` in the `examined` position may result in hangs when parsing a single message. The next call to `PipeReader.AdvanceTo` won't return until:
+Unconditionally calling `PipeReader.AdvanceTo` with `buffer.End` in the `examined` position may result in the application becoming unresponsive when parsing a single message. The next call to `PipeReader.AdvanceTo` won't return until:
 
 * There's more data written to the pipe.
 * And the new data wasn't previously examined.

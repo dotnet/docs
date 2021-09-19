@@ -1,7 +1,7 @@
 ---
 title: "Structure types - C# reference"
 description: Learn about the struct type in C#
-ms.date: 10/23/2020
+ms.date: 09/15/2021
 f1_keywords: 
   - "struct_CSharpKeyword"
 helpviewer_keywords: 
@@ -71,19 +71,54 @@ You can't apply the `readonly` modifier to static members of a structure type.
 
 The compiler may make use of the `readonly` modifier for performance optimizations. For more information, see [Write safe and efficient C# code](../../write-safe-efficient-code.md).
 
+## Nondestructive mutation
+
+Beginning with C# 10.0, you can use the [`with` expression](../operators/with-expression.md) if you need to mutate immutable properties or fields of a structure-type instance. A `with` expression makes a copy of its operand with specified properties and fields modified. You use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values, as the following example shows:
+
+:::code language="csharp" source="snippets/shared/StructType.cs" id="WithExpression":::
+
 ## Limitations with the design of a structure type
 
 When you design a structure type, you have the same capabilities as with a [class](../keywords/class.md) type, with the following exceptions:
 
 - You can't declare a parameterless constructor. Every structure type already provides an implicit parameterless constructor that produces the [default value](default-values.md) of the type.
 
+  > [!NOTE]
+  > Beginning with C# 10.0, you can declare a parameterless constructor in a structure type. For more information, see the [Parameterless constructors and field initializers](#parameterless-constructors-and-field-initializers) section.
+
 - You can't initialize an instance field or property at its declaration. However, you can initialize a [static](../keywords/static.md) or [const](../keywords/const.md) field or a static property at its declaration.
+
+  > [!NOTE]
+  > Beginning with C# 10.0, you can initialize an instance field or property at its declaration. For more information, see the [Parameterless constructors and field initializers](#parameterless-constructors-and-field-initializers) section.
 
 - A constructor of a structure type must initialize all instance fields of the type.
 
 - A structure type can't inherit from other class or structure type and it can't be the base of a class. However, a structure type can implement [interfaces](../keywords/interface.md).
 
-- You can't declare a [finalizer](../../programming-guide/classes-and-structs/destructors.md) within a structure type.
+- You can't declare a [finalizer](../../programming-guide/classes-and-structs/finalizers.md) within a structure type.
+
+## Parameterless constructors and field initializers
+
+Beginning with C# 10.0, you can declare a parameterless instance constructor in a structure type, as the following example shows:
+
+:::code language="csharp" source="snippets/shared/StructType.cs" id="ParameterlessConstructor":::
+
+As the preceding example shows, the [default value expression](../operators/default.md) ignores a parameterless constructor and produces the default value of a structure type, which is the value produced by setting all value-type fields to their [default values](default-values.md) (the 0-bit pattern) and all reference-type fields to `null`. Structure-type array instantiation also ignores a parameterless constructor and produces an array populated with the default values of a structure type.
+
+Beginning with C# 10.0, you can also initialize an instance field or property at its declaration, as the following example shows:
+
+:::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializer":::
+
+If you don't declare a parameterless constructor explicitly, a structure type provides a parameterless constructor whose behavior is as follows:
+
+- If a structure type has explicit instance constructors or has no field initializers, an implicit parameterless constructor produces the default value of a structure type, regardless of field initializers, as the preceding example shows.
+- If a structure type has no explicit instance constructors and has field initializers, the compiler synthesizes a public parameterless constructor that performs the specified field initializations, as the following example shows:
+
+  :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializerNoConstructor":::
+
+As the preceding example shows, the default value expression and array instantiation ignore field initializers.
+
+For more information, see the [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md) feature proposal note.
 
 ## Instantiation of a structure type
 
@@ -141,6 +176,8 @@ For more information about features introduced in C# 7.2 and later, see the foll
 - [Readonly structs](~/_csharplang/proposals/csharp-7.2/readonly-ref.md#readonly-structs)
 - [Readonly instance members](~/_csharplang/proposals/csharp-8.0/readonly-instance-members.md)
 - [Compile-time safety for ref-like types](~/_csharplang/proposals/csharp-7.2/span-safety.md)
+- [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
+- [Allow `with` expression on structs](~/_csharplang/proposals/csharp-10.0/record-structs.md#allow-with-expression-on-structs)
 
 ## See also
 

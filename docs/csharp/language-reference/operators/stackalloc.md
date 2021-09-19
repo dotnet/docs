@@ -40,11 +40,12 @@ You can assign the result of a `stackalloc` expression to a variable of one of t
 
 The amount of memory available on the stack is limited. If you allocate too much memory on the stack, a <xref:System.StackOverflowException> is thrown. To avoid that, follow the rules below:
 
-- Limit the amount of memory you allocate with `stackalloc`:
+- Limit the amount of memory you allocate with `stackalloc`. For example, if the intended buffer size is below a certain limit, you allocate the memory on the stack; otherwise, use an array of the required length, as the following code shows:
 
   [!code-csharp[limit stackalloc](snippets/shared/StackallocOperator.cs#LimitStackalloc)]
 
-  Because the amount of memory available on the stack depends on the environment in which the code is executed, be conservative when you define the actual limit value.
+  > [!NOTE]
+  > Because the amount of memory available on the stack depends on the environment in which the code is executed, be conservative when you define the actual limit value.
 
 - Avoid using `stackalloc` inside loops. Allocate the memory block outside a loop and reuse it inside the loop.
 

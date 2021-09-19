@@ -41,8 +41,16 @@ namespace Patterns
         public record Point(int X, int Y);
         public record Segment(Point Start, Point End);
 
-        static bool IsAnyEndAtOrigin(Segment segment) =>
-            segment is { Start: { X: 0, Y: 0 } } or { End: { X: 0, Y: 0 } };
+        static bool IsAnyEndOnXAxis(Segment segment) =>
+            segment is { Start: { Y: 0 } } or { End: { Y: 0 } };
         // </RecursivePropertyPattern>
+
+        private static class Extended
+        {
+            // <ExtendedPropertyPattern>
+            static bool IsAnyEndOnXAxis(Segment segment) =>
+                segment is { Start.Y: 0 } or { End.Y: 0 };
+            // </ExtendedPropertyPattern>
+        }
     }
 }

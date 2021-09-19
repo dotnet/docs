@@ -24,7 +24,7 @@ Welcome to what's new in the .NET docs from July 1, 2021 through July 31, 2021. 
 ### New articles
 
 - [Culture creation and case mapping in globalization-invariant mode](../core/compatibility/globalization/6.0/culture-creation-invariant-mode.md)
-- [Implicit namespaces in C# projects](../core/compatibility/sdk/6.0/implicit-namespaces.md)
+- [Implicit `global using` directives in C# projects](../core/compatibility/sdk/6.0/implicit-namespaces.md)
 - [ClientCertificate property no longer triggers renegotiation for HttpSys](../core/compatibility/aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md)
 - [Environment variables used by .NET SDK, .NET CLI, and .NET runtime](../core/tools/dotnet-environment-variables.md)
 - [SYSLIB0027: PublicKey.Key is obsolete](../fundamentals/syslib-diagnostics/syslib0027.md)
@@ -117,7 +117,7 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [Der-Kraken](https://github.com/Der-Kraken) (1)
 - [eriawan](https://github.com/eriawan) - Eriawan Kusumawardhono (1)
 - [erri120](https://github.com/erri120) - erri120 (1)
-- [github-actions](https://github.com/github-actions) -  (1)
+- github-actions -  (1)
 - [GitHubPang](https://github.com/GitHubPang) (1)
 - [gozeloglu](https://github.com/gozeloglu) - Gökhan Özeloğlu (1)
 - [guillermo-ruffino](https://github.com/guillermo-ruffino) (1)

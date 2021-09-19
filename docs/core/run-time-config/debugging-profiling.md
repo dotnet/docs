@@ -4,7 +4,7 @@ description: Learn about run-time settings that configure debugging and profilin
 ms.date: 11/27/2019
 ms.topic: reference
 ---
-# Run-time configuration options for debugging and profiling
+# Runtime configuration options for debugging and profiling
 
 This article details the settings you can use to configure .NET debugging and profiling.
 

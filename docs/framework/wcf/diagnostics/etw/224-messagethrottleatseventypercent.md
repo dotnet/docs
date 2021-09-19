@@ -6,10 +6,10 @@ ms.assetid: 82bbbfd7-10d2-41fd-805d-2443b0c1b96b
 ---
 # 224 - MessageThrottleAtSeventyPercent
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|224|  
 |Keywords|EndToEndMonitoring, HealthMonitoring, Troubleshooting, ServiceModel|  
 |Level|Warning|  

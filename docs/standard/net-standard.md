@@ -1,7 +1,7 @@
 ---
 title: .NET Standard
 description: Learn about .NET Standard, its versions, and the .NET implementations that support it.
-ms.date: 10/05/2020
+ms.date: 08/10/2021
 ms.prod: dotnet
 ms.technology: dotnet-standard
 ms.custom: "updateeachrelease"
@@ -28,17 +28,9 @@ To find the highest version of .NET Standard that you can target, do the followi
 
 ### Which .NET Standard version to target
 
-When choosing a .NET Standard version to target, consider this trade-off:
+We recommend you target .NET Standard 2.0, unless you need to support an earlier version. Most general-purpose libraries should not need APIs outside of .NET Standard 2.0. .NET Standard 2.0 is supported by all modern platforms and is the recommended way to support multiple platforms with one target.
 
-- The higher the version, the more APIs are available to your library's code.
-- The lower the version, the more apps and libraries can use your library.
-
-We recommend you target the *lowest* version of .NET Standard possible. So, after you find the highest .NET Standard version you can target, follow these steps:
-
-1. Target the next lower version of .NET Standard and build your project.
-2. If your project builds successfully, repeat step 1. Otherwise, retarget to the next higher version and that's the version you should use.
-
-However, targeting lower .NET Standard versions introduces a number of support dependencies. If your project targets .NET Standard 1.x, we recommend that you *also* target .NET Standard 2.0. This simplifies the dependency graph for users of your library that run on .NET Standard 2.0 compatible implementations, and it reduces the number of packages they need to download.
+If you need to support .NET Standard 1.x, we recommend that you *also* target .NET Standard 2.0. .NET Standard 1.x is distributed as a granular set of NuGet packages, which creates a large package dependency graph and results in developers downloading a lot of packages when building. For more information, see [Cross-platform targeting](library-guidance/cross-platform-targeting.md) and [.NET 5 and .NET Standard](#net-5-and-net-standard) later in this article.
 
 ### .NET Standard versioning rules
 
@@ -66,7 +58,7 @@ A given component, like `System.Runtime`, describes:
 
 Derivative artifacts are provided to enable more convenient reading and to enable certain developer scenarios (for example, using a compiler).
 
-- [API list in markdown](https://github.com/dotnet/standard/tree/master/docs/versions)
+- [API list in markdown](https://github.com/dotnet/standard/tree/master/docs/versions).
 - Reference assemblies, distributed as NuGet packages and referenced by the [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library/) metapackage.
 
 ### Package representation

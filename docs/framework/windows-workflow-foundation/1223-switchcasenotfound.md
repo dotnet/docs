@@ -6,10 +6,10 @@ ms.assetid: 332ace82-2d9e-4fd9-a9a8-f077f43b4a08
 ---
 # 1223 - SwitchCaseNotFound
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1223|  
 |Keywords|WFActivities|  
 |Level|Information|  

@@ -6,10 +6,10 @@ ms.assetid: 7fe95d1e-34bd-43ca-b92e-587d2d248fff
 ---
 # 1104 - WorkflowActivityResume
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|1104|  
 |Keywords|WFRuntime|  
 |Level|Information|  

@@ -52,15 +52,22 @@ For simple .NET cloud-native applications, you might consider the [Ocelot Gatewa
 
 Like any API Gateway, its primary functionality is to forward incoming HTTP requests to downstream services. Additionally, it supports a wide variety of capabilities that are configurable in a .NET middleware pipeline. Its feature set is presented in following table.
 
-|Ocelot Features  | |
-| :-------- | :-------- |
-| Routing | Authentication |
-| Request Aggregation | Authorization |
-| Service Discovery (with Consul and Eureka) | Throttling |
-| Load Balancing | Logging, Tracing |
-| Caching | Headers/Query String Transformation |
-| Correlation Pass-Through | Custom Middleware |
-| Quality of Service | Retry Policies |
+| Ocelot Features                            |
+| :----------------------------------------- |
+| Routing                                    |
+| Request Aggregation                        |
+| Service Discovery (with Consul and Eureka) |
+| Load Balancing                             |
+| Caching                                    |
+| Correlation Pass-Through                   |
+| Quality of Service                         |
+| Authentication                             |
+| Authorization                              |
+| Throttling                                 |
+| Logging, Tracing                           |
+| Headers/Query String Transformation        |
+| Custom Middleware                          |
+| Retry Policies                             |
 
 Each Ocelot gateway specifies the upstream and downstream addresses and configurable features in a JSON configuration file. The client sends an HTTP request to the Ocelot gateway. Once received, Ocelot passes the HttpRequest object through its pipeline manipulating it into the state specified by its configuration. At the end of pipeline, Ocelot creates a new HTTPResponseObject and passes it to the downstream service. For the response, Ocelot reverses the pipeline, sending the response back to client.
 

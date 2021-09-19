@@ -21,7 +21,7 @@ The following options control how the compiler reports errors and warnings. The 
 - **WarningLevel** / `-warn`: Set warning level.
 - **TreatWarningsAsErrors** / `-warnaserror`: Treat all warnings as errors
 - **WarningsAsErrors** / `-warnaserror`: Treat one or more warnings as errors
-- **WarningsNotAsErrors** / `-warnaserror`: Treat one or more warnings not as errors
+- **WarningsNotAsErrors** / `-warnnotaserror`: Treat one or more warnings not as errors
 - **DisabledWarnings** / `-nowarn`: Set a list of disabled warnings.
 - **CodeAnalysisRuleSet** / `-ruleset`: Specify a ruleset file that disables specific diagnostics.
 - **ErrorLog** / `-errorlog`: Specify a file to log all compiler and analyzer diagnostics.

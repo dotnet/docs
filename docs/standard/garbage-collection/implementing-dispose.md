@@ -41,16 +41,13 @@ The following derived classes in the <xref:Microsoft.Win32.SafeHandles> namespac
 
 ## Dispose() and Dispose(bool)
 
-The <xref:System.IDisposable> interface requires the implementation of a single parameterless method, <xref:System.IDisposable.Dispose%2A>. Also, any non-sealed class should have an additional `Dispose(bool)` overload method to be implemented:
+The <xref:System.IDisposable> interface requires the implementation of a single parameterless method, <xref:System.IDisposable.Dispose%2A>. Also, any non-sealed class should have an additional `Dispose(bool)` overload method.
 
-- A `public` non-virtual (`NotOverridable` in Visual Basic) <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation that has no parameters.
-- A `protected virtual` (`Overridable` in Visual Basic) `Dispose` method whose signature is:
+Method signatures are:
 
-  :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/Disposable.cs" id="DisposeBool":::
-  :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/Disposable.vb" id="DisposeBool":::
-  
-  > [!IMPORTANT]
-  > The `disposing` parameter should be `false` when called from a finalizer, and `true` when called from the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method. In other words, it is `true` when deterministically called and `false` when non-deterministically called.
+- `public` non-virtual (`NotOverridable` in Visual Basic) (<xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation).
+- `protected virtual` (`Overridable` in Visual Basic) `Dispose(bool)`.
+
 
 ### The Dispose() method
 
@@ -65,8 +62,15 @@ The `Dispose` method performs all object cleanup, so the garbage collector no lo
 
 In the overload, the `disposing` parameter is a <xref:System.Boolean> that indicates whether the method call comes from a <xref:System.IDisposable.Dispose%2A> method (its value is `true`) or from a finalizer (its value is `false`).
 
-The body of the method consists of two blocks of code:
+  :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/Disposable.cs" id="DisposeBool":::
+  :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/Disposable.vb" id="DisposeBool":::
 
+  > [!IMPORTANT]
+  > The `disposing` parameter should be `false` when called from a finalizer, and `true` when called from the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method. In other words, it is `true` when deterministically called and `false` when non-deterministically called.
+
+The body of the method consists of three blocks of code:
+
+- A block for conditional return if object is already disposed.
 - A block that frees unmanaged resources. This block executes regardless of the value of the `disposing` parameter.
 - A conditional block that frees managed resources. This block executes if the value of `disposing` is `true`. The managed resources that it frees can include:
 

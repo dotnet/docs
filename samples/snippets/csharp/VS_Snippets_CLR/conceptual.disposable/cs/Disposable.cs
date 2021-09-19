@@ -15,6 +15,18 @@ public class Disposable : IDisposable
     // <SnippetDisposeBool>
     protected virtual void Dispose(bool disposing)
     {
+    	if (_disposed)    	
+    		return;       	
+    		
+    	// A block that frees unmanaged resources.	
+    	
+    	if(disposing) 
+    	{
+	    	// Deterministic call…
+    		// A conditional block that frees managed resources.    	
+	    }	    
+	    
+	    _disposed = true;	    
     }
     // </SnippetDisposeBool>
 }

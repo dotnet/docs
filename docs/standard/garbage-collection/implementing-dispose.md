@@ -111,7 +111,7 @@ Here's the general pattern for implementing the dispose pattern for a base class
 :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/base2.vb":::
 
 > [!TIP]
-> In C#, you create a finalizer by providing a [destructor](../../csharp/programming-guide/classes-and-structs/destructors.md), not by overriding <xref:System.Object.Finalize%2A?displayProperty=nameWithType>. In Visual Basic, you create a finalizer with `Protected Overrides Sub Finalize()`.
+> In C#, you implement a finalization by providing a [finalizer](../../csharp/programming-guide/classes-and-structs/finalizers.md), not by overriding <xref:System.Object.Finalize%2A?displayProperty=nameWithType>. In Visual Basic, you create a finalizer with `Protected Overrides Sub Finalize()`.
 
 ## Implement the dispose pattern for a derived class
 

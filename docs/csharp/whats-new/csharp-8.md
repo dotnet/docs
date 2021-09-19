@@ -357,7 +357,7 @@ For nonnullable reference types, the compiler uses flow analysis to ensure that 
 
 Nullable reference types aren't checked to ensure they aren't assigned or initialized to null. However, the compiler uses flow analysis to ensure that any variable of a nullable reference type is checked against null before it's accessed or assigned to a nonnullable reference type.
 
-You can learn more about the feature in the overview of [nullable reference types](../nullable-references.md). Try it yourself in a new application in this [nullable reference types tutorial](tutorials/nullable-reference-types.md). Learn about the steps to migrate an existing codebase to make use of nullable reference types in the [migrating an application to use nullable reference types tutorial](tutorials/upgrade-to-nullable-references.md).
+You can learn more about the feature in the overview of [nullable reference types](../nullable-references.md). Try it yourself in a new application in this [nullable reference types tutorial](tutorials/nullable-reference-types.md). Learn about the steps to migrate an existing codebase to make use of nullable reference types in the article on [upgrading to nullable reference types](../nullable-migration-strategies.md).
 
 ## Asynchronous streams
 

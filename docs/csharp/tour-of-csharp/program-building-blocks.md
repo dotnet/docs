@@ -233,7 +233,7 @@ The first `Console.WriteLine` outputs `True` because the two lists contain the s
 
 ### Finalizers
 
-A *finalizer* is a member that implements the actions required to finalize an instance of a class. Typically, a finalizer is needed to release unmanaged resources. Finalizers can't have parameters, they can't have accessibility modifiers, and they can't be invoked explicitly. The finalizer for an instance is invoked automatically during garbage collection. For more information, see the article on [finalizers](../programming-guide/classes-and-structs/destructors.md).
+A *finalizer* is a member that implements the actions required to finalize an instance of a class. Typically, a finalizer is needed to release unmanaged resources. Finalizers can't have parameters, they can't have accessibility modifiers, and they can't be invoked explicitly. The finalizer for an instance is invoked automatically during garbage collection. For more information, see the article on [finalizers](../programming-guide/classes-and-structs/finalizers.md).
 
 The garbage collector is allowed wide latitude in deciding when to collect objects and run finalizers. Specifically, the timing of finalizer invocations isn't deterministic, and finalizers may be executed on any thread. For these and other reasons, classes should implement finalizers only when no other solutions are feasible.
 

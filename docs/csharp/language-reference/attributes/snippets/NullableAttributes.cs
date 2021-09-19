@@ -18,7 +18,7 @@ namespace attributes
                 message = _messageMap[key];
             else
                 message = null;
-            return message is not null;
+            return message != null;
         }
         // </TryGetExample>
 

@@ -487,6 +487,10 @@
             "redirect_url": "/aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker"
         },
         {
+            "source_path": "docs/core/extensions/culture-insensitive-string-operations.md",
+            "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-string-operations"
+        },
+        {
             "source_path": "docs/core/getting-started.md",
             "redirect_url": "/dotnet/core/get-started",
             "redirect_document_id": true
@@ -1903,6 +1907,10 @@
         {
             "source_path": "docs/csharp/programming-guide/classes-and-structs/classes.md",
             "redirect_url": "/dotnet/csharp/fundamentals/types/classes"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/classes-and-structs/destructors.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/classes-and-structs/finalizers"
         },
         {
             "source_path": "docs/csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md",
@@ -3641,6 +3649,10 @@
             "source_path": "docs/csharp/whats-new/index.md",
             "redirect_url": "/dotnet/csharp/whats-new/csharp-10",
             "ms.custom": "updateeachrelease"
+        },
+        {
+            "source_path": "docs/csharp/whats-new/tutorials/upgrade-to-nullable-references.md",
+            "redirect_url": "/dotnet/csharp/nullable-migration-strategies"
         },
         {
             "source_path": "docs/desktop-wpf/data/data-binding-overview.md",

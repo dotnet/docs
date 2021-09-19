@@ -2,6 +2,7 @@
 
 public class Disposable : IDisposable
 {
+    private bool _disposed;
     // <SnippetDispose>
     public void Dispose()
     {

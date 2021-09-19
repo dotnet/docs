@@ -1,5 +1,6 @@
 ﻿Public Class Disposable : Implements IDisposable
 
+    Dim disposed As Boolean
     ' <SnippetDispose>
     Public Sub Dispose() _
         Implements IDisposable.Dispose

@@ -54,7 +54,7 @@ The <xref:System.IDisposable> interface requires the implementation of a single 
 
 ### The Dispose() method
 
-Because the `public`, non-virtual (`NotOverridable` in Visual Basic), parameterless `Dispose` method is called by a consumer of the type, its purpose is to free unmanaged resources, perform general cleanup, and to indicate that the finalizer, if one is present, doesn't have to run. Freeing the actual memory associated with a managed object is always the domain of the [garbage collector](index.md). Because of this, it has a standard implementation:
+Because the `public`, non-virtual (`NotOverridable` in Visual Basic), parameterless `Dispose` method is called when it is no longer needed (by a consumer of the type), its purpose is to free unmanaged resources, perform general cleanup, and to indicate that the finalizer, if one is present, doesn't have to run. Freeing the actual memory associated with a managed object is always the domain of the [garbage collector](index.md). Because of this, it has a standard implementation:
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/Disposable.cs" id="Dispose":::
 :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/Disposable.vb" id="Dispose":::

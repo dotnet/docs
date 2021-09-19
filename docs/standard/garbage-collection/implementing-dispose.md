@@ -133,20 +133,6 @@ Here's the general pattern for implementing the dispose pattern for a derived cl
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/derived2.cs":::
 :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/derived2.vb":::
 
-## Implement the dispose pattern with safe handles
-
-The following example illustrates the dispose pattern for a base class, `DisposableStreamResource`, that uses a safe handle to encapsulate unmanaged resources. It defines a `DisposableStreamResource` class that uses a <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> to wrap a <xref:System.IO.Stream> object that represents an open file. The class also includes a single property, `Size`, that returns the total number of bytes in the file stream.
-
-:::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/DisposableStreamResource.cs":::
-:::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/DisposableStreamResource.vb":::
-
-## Implement the dispose pattern for a derived class with safe handles
-
-The following example illustrates the dispose pattern for a derived class, `DisposableStreamResource2`, that inherits from the `DisposableStreamResource` class presented in the previous example. The class adds an additional method, `WriteFileInfo`, and uses a <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> object to wrap the handle of the writable file.
-
-:::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/DisposableStreamResource2.cs":::
-:::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/DisposableStreamResource2.vb":::
-
 ## See also
 
 - [Disposal of services](../../core/extensions/dependency-injection-guidelines.md#disposal-of-services)

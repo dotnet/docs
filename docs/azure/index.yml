@@ -223,13 +223,13 @@ conceptualContent:
       links:
         - itemType: download
           text: Packages
-          url: packages.md
+          url: ./sdk/packages.md
         - itemType: concept
           text: Authentication for apps
-          url: authentication.md
+          url: ./sdk/authentication.md
         - itemType: concept
           text: Logging
-          url: logging.md
+          url: ./sdk/logging.md
         - itemType: sample
           text: SDK example app
           url: /samples/dotnet/samples/azure-identity-resource-management-storage/

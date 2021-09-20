@@ -165,7 +165,7 @@ For more information, see [Iterators](../concepts/iterators.md).
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
+- [Classes, structs, and records](../../fundamentals/object-oriented/index.md)
 - [Access Modifiers](access-modifiers.md)
 - [Static Classes and Static Class Members](static-classes-and-static-class-members.md)
 - [Inheritance](../../fundamentals/object-oriented/inheritance.md)

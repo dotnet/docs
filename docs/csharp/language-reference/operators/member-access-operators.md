@@ -58,7 +58,7 @@ You use the `.` token to access a member of a namespace or a type, as the follow
 
   Use a [`using` directive](../keywords/using-directive.md) to make the use of qualified names optional.
 
-- Use `.` to access [type members](/dotnet/csharp/fundamentals/object-oriented#members), static and non-static, as the following code shows:
+- Use `.` to access [type members](../../fundamentals/object-oriented/index.md#members), static and non-static, as the following code shows:
 
  :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="TypeMemberAccess" interactive="try-dotnet-method":::
 

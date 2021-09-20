@@ -136,6 +136,6 @@ Documenting code is recommended for many reasons. What follows are some best pra
 
 ## See also
 
-- [C# XML Documentation Comments &#40;C&#35; Programming Guide&#41;](/dotnet/csharp/language-reference/xmldoc).
+- [C# XML Documentation Comments &#40;C&#35; Programming Guide&#41;](../../csharp/language-reference/xmldoc/index.md).
 - [F# Language Reference](index.md)
 - [Compiler Options](compiler-options.md)

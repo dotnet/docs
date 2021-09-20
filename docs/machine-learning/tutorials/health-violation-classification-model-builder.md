@@ -3,7 +3,7 @@ title: 'Tutorial: Classify health violations with Model Builder'
 description: This tutorial illustrates how to build a multiclass classification model using ML.NET Model Builder to classify restaurant health violation severity in San Francisco.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 08/11/2021
+ms.date: 09/20/2021
 ms.topic: tutorial
 ms.custom: mvc,mlnet-tooling
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to classify violation severity using Model Builder.
@@ -71,9 +71,9 @@ When first adding Model Builder to the solution it will prompt you to create an 
 
 ![Model Builder wizard in Visual Studio](../media/model-builder-scenarios.png)
 
-To train your model, select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is *Text Classification*.
+To train your model, select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is *Data Classification*.
 
-1. For this sample, the scenario is multiclass classification. In the *Scenario* step of Model Builder, select the **Issue Classification** scenario.
+1. For this sample, the scenario is multiclass classification. In the *Scenario* step of Model Builder, select the **Data Classification** scenario.
 
 ## Load the data
 

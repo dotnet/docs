@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Analyze sentiment - binary classification'
 description: This tutorial shows you how to create a Razor Pages application that classifies sentiment from website comments and takes the appropriate action. The binary sentiment classifier uses Model Builder in Visual Studio.
-ms.date: 11/21/2019
+ms.date: 09/20/2021
 author: luisquintanilla
 ms.author: luquinta
 ms.topic: tutorial

@@ -64,12 +64,12 @@ The `label` is the column you want to predict. When performing a classification 
 
 When first adding Model Builder to the solution it will prompt you to create an `mbconfig` file. The `mbconfig` file keeps track of everything you do in Model Builder to allow you to reopen the session.
 
-1. In **Solution Explorer**, right-click the *RestaurantViolations* project, and select **Add** > **Machine Learning**.
+1. In **Solution Explorer**, right-click the *RestaurantViolations* project, and select **Add** > **Machine Learning Model...**.
 1. Name the `mbconfig` project **RestaurantViolationsPrediction**, and click the **Add** button.
 
 ## Choose a scenario
 
-![Model Builder wizard in Visual Studio](../media/model-builder-screen.png)
+![Model Builder wizard in Visual Studio](../media/model-builder-scenarios.png)
 
 To train your model, select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is *Text Classification*.
 

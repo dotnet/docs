@@ -121,7 +121,7 @@ In Visual Studio, create a **C# .NET Core console application** called *StopSign
 
 ## Create an `mbconfig` file
 
-1. In **Solution Explorer**, right-click the *StopSignDetection* project, and select **Add** > **Machine Learning** to open the Model Builder UI.
+1. In **Solution Explorer**, right-click the *StopSignDetection* project, and select **Add** > **Machine Learning Model...** to open the Model Builder UI.
 1. In the dialog, name the Model Builder project **StopSignDetection**, and click **Add**.
 
 ## Choose a scenario

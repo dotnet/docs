@@ -62,11 +62,11 @@ Each row in the *wikipedia-detox-250-line-data.tsv* dataset represents a differe
 
 ## Choose a scenario
 
-![Model Builder wizard in Visual Studio](../media/model-builder-screen.png)
+![Model Builder wizard in Visual Studio](../media/model-builder-scenarios.png)
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder.
 
-1. In **Solution Explorer**, right-click the *SentimentRazor* project, and select **Add** > **Machine Learning**.
+1. In **Solution Explorer**, right-click the *SentimentRazor* project, and select **Add** > **Machine Learning Model...**.
 1. For this sample, the scenario is sentiment analysis. In the *scenario* step of the Model Builder tool, select the **Sentiment Analysis** scenario.
 
 ## Load the data

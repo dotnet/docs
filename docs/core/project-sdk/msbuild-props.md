@@ -78,20 +78,26 @@ The `GenerateAssemblyInfo` property controls `AssemblyInfo` attribute generation
 
 The [GeneratedAssemblyInfoFile](#generatedassemblyinfofile) setting controls the name of the generated file.
 
-When the `GenerateAssemblyInfo` value is `true`, [package-related project properties](#package-properties) are transformed into assembly attributes. The following table lists the project properties that generate the attributes. It also lists the properties that you can use to disable that generation on a per-attribute basis.
+When the `GenerateAssemblyInfo` value is `true`, [package-related project properties](#package-properties) are transformed into assembly attributes. The following table lists the project properties that generate the attributes. It also lists the properties that you can use to disable that generation on a per-attribute basis, for example:
 
-| Property | Assembly attribute | Property to disable |
-|-|-|-|
-| `Company`              | <xref:System.Reflection.AssemblyCompanyAttribute> | [`GenerateAssemblyCompanyAttribute`](#generateassemblycompanyattribute) |
-| `Configuration`        | <xref:System.Reflection.AssemblyConfigurationAttribute> | [`GenerateAssemblyConfigurationAttribute`](#generateassemblyconfigurationattribute) |
-| `Copyright`            | <xref:System.Reflection.AssemblyCopyrightAttribute> | [`GenerateAssemblyCopyrightAttribute`](#generateassemblycopyrightattribute) |
-| `Description`          | <xref:System.Reflection.AssemblyDescriptionAttribute> | [`GenerateAssemblyDescriptionAttribute`](#generateassemblydescriptionattribute) |
-| `FileVersion`          | <xref:System.Reflection.AssemblyFileVersionAttribute> | [`GenerateAssemblyFileVersionAttribute`](#generateassemblyfileversionattribute) |
-| `InformationalVersion` | <xref:System.Reflection.AssemblyInformationalVersionAttribute> | [`GenerateAssemblyInformationalVersionAttribute`](#generateassemblyinformationalversionattribute) |
-| `Product`              | <xref:System.Reflection.AssemblyProductAttribute> | [`GenerateAssemblyProductAttribute`](#generateassemblyproductattribute) |
-| `AssemblyTitle`        | <xref:System.Reflection.AssemblyTitleAttribute> | [`GenerateAssemblyTitleAttribute`](#generateassemblytitleattribute) |
-| `AssemblyVersion`      | <xref:System.Reflection.AssemblyVersionAttribute> | [`GenerateAssemblyVersionAttribute`](#generateassemblyversionattribute) |
-| `NeutralLanguage`      | <xref:System.Resources.NeutralResourcesLanguageAttribute> | [`GenerateNeutralResourcesLanguageAttribute`](#generateneutralresourceslanguageattribute) |
+```xml
+<PropertyGroup>
+  <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
+</PropertyGroup>
+```
+
+| MSBuild property       | Assembly attribute                                             | Property to disable attribute generation        |
+| ---------------------- | -------------------------------------------------------------- | ----------------------------------------------- |
+| `Company`              | <xref:System.Reflection.AssemblyCompanyAttribute>              | `GenerateAssemblyCompanyAttribute`              |
+| `Configuration`        | <xref:System.Reflection.AssemblyConfigurationAttribute>        | `GenerateAssemblyConfigurationAttribute`        |
+| `Copyright`            | <xref:System.Reflection.AssemblyCopyrightAttribute>            | `GenerateAssemblyCopyrightAttribute`            |
+| `Description`          | <xref:System.Reflection.AssemblyDescriptionAttribute>          | `GenerateAssemblyDescriptionAttribute`          |
+| `FileVersion`          | <xref:System.Reflection.AssemblyFileVersionAttribute>          | `GenerateAssemblyFileVersionAttribute`          |
+| `InformationalVersion` | <xref:System.Reflection.AssemblyInformationalVersionAttribute> | `GenerateAssemblyInformationalVersionAttribute` |
+| `Product`              | <xref:System.Reflection.AssemblyProductAttribute>              | `GenerateAssemblyProductAttribute`              |
+| `AssemblyTitle`        | <xref:System.Reflection.AssemblyTitleAttribute>                | `GenerateAssemblyTitleAttribute`                |
+| `AssemblyVersion`      | <xref:System.Reflection.AssemblyVersionAttribute>              | `GenerateAssemblyVersionAttribute`              |
+| `NeutralLanguage`      | <xref:System.Resources.NeutralResourcesLanguageAttribute>      | `GenerateNeutralResourcesLanguageAttribute`     |
 
 Notes about these settings:
 
@@ -473,12 +479,12 @@ Default value:
 
 The following table shows the available options.
 
-| Value | Meaning |
-|-|-|
-| `latest` | The latest code analyzers that have been released are used. This is the default. |
-| `preview` | The latest code analyzers are used, even if they are in preview. |
-| `5.0` | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
-| `5` | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
+| Value     | Meaning                                                                                                |
+| --------- | ------------------------------------------------------------------------------------------------------ |
+| `latest`  | The latest code analyzers that have been released are used. This is the default.                       |
+| `preview` | The latest code analyzers are used, even if they are in preview.                                       |
+| `5.0`     | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
+| `5`       | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
 
 > [!NOTE]
 > This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
@@ -495,11 +501,11 @@ Starting with .NET 5.0, the .NET SDK ships with all of the ["CA" code quality ru
 
 The following table shows the available options.
 
-| Value | Meaning |
-|-|-|
-| `Default` | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. |
-| `AllEnabledByDefault` | Aggressive or opt-out mode, where all rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. |
-| `AllDisabledByDefault` | Conservative or opt-in mode, where all rules are disabled by default. You can selectively [opt into](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them. |
+| Value                  | Meaning                                                                                                                                                                                                             |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Default`              | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled.                                                        |
+| `AllEnabledByDefault`  | Aggressive or opt-out mode, where all rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. |
+| `AllDisabledByDefault` | Conservative or opt-in mode, where all rules are disabled by default. You can selectively [opt into](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them.                    |
 
 > [!NOTE]
 > This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.

@@ -57,7 +57,7 @@ namespace System.Numbers
 ```
 
 > [!TIP]
-> It is worth mentioning the that `Numbers` class library was intentionally added to the `System` namespace. This allows for <xref:System.Math?displayProperty=fullName> to be accessible without a `using System;` namespace declaration. For more information, see [namespace (C# Reference)](../../csharp/language-reference/keywords/namespace.md).
+> It is worth mentioning that the `Numbers` class library was intentionally added to the `System` namespace. This allows for <xref:System.Math?displayProperty=fullName> to be accessible without a `using System;` namespace declaration. For more information, see [namespace (C# Reference)](../../csharp/language-reference/keywords/namespace.md).
 
 ### Create test projects
 

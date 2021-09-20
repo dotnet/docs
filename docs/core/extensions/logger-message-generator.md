@@ -224,7 +224,7 @@ Consider the example logging output when using the `JsonConsole` formatter.
 
 ### Indeterminate parameter order
 
-There are no constraints on the ordering of log method parameters. A developer could define the `ILogger` as the last parameter, although it may a appear a bit awkward.
+There are no constraints on the ordering of log method parameters. A developer could define the `ILogger` as the last parameter, although it may appear a bit awkward.
 
 ```csharp
 [LoggerMessage(

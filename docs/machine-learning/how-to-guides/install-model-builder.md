@@ -36,7 +36,7 @@ ML.NET Model builder is built into Visual Studio. To enable it:
 1. In the Visual Studio Installer, select the **Individual components** tab.
 1. From the list of .NET components, **check** the **ML.NET Model Builder (Preview)** checkbox.
 
-:::image type="content" source="media/install-model-builder/enable-model-builder-visual-studio-2019.png" alt-text="Enable Model Builder Visual Studio 2019" lightbox="media/install-model-builder/enable-model-builder-visual-studio-2019.png":::
+    :::image type="content" source="media/install-model-builder/enable-model-builder-visual-studio-2019.png" alt-text="Enable Model Builder Visual Studio 2019" lightbox="media/install-model-builder/enable-model-builder-visual-studio-2019.png":::
 
 [Visual Studio 2022](#tab/vs2022)
 
@@ -45,7 +45,7 @@ ML.NET Model builder is built into Visual Studio. To enable it:
 1. In the Visual Studio Installer, select the **Individual components** tab.
 1. From the list of .NET components, **check** the **ML.NET Model Builder** checkbox.
 
-:::image type="content" source="media/install-model-builder/enable-model-builder-visual-studio-2022.png" alt-text="Enable Model Builder Visual Studio 2022" lightbox="media/install-model-builder/enable-model-builder-visual-studio-2022.png":::
+    :::image type="content" source="media/install-model-builder/enable-model-builder-visual-studio-2022.png" alt-text="Enable Model Builder Visual Studio 2022" lightbox="media/install-model-builder/enable-model-builder-visual-studio-2022.png":::
 
 ---
 
@@ -58,7 +58,7 @@ ML.NET Model builder is built into Visual Studio. To enable it:
 1. In the Visual Studio Installer, select the **Individual components** tab.
 1. From the list of .NET components, **uncheck** the **ML.NET Model Builder (Preview)** checkbox.
 
-:::image type="content" source="media/install-model-builder/disable-model-builder-visual-studio-2019.png" alt-text="Disable Model Builder Visual Studio 2019" lightbox="media/install-model-builder/disable-model-builder-visual-studio-2019.png":::
+    :::image type="content" source="media/install-model-builder/disable-model-builder-visual-studio-2019.png" alt-text="Disable Model Builder Visual Studio 2019" lightbox="media/install-model-builder/disable-model-builder-visual-studio-2019.png":::
 
 [Visual Studio 2022](#tab/vs2022)
 
@@ -67,7 +67,7 @@ ML.NET Model builder is built into Visual Studio. To enable it:
 1. In the Visual Studio Installer, select the **Individual components** tab.
 1. From the list of .NET components, **uncheck** the **ML.NET Model Builder** checkbox.
 
-:::image type="content" source="media/install-model-builder/disable-model-builder-visual-studio-2022.png" alt-text="Disable Model Builder Visual Studio 2022" lightbox="media/install-model-builder/disable-model-builder-visual-studio-2022.png":::
+    :::image type="content" source="media/install-model-builder/disable-model-builder-visual-studio-2022.png" alt-text="Disable Model Builder Visual Studio 2022" lightbox="media/install-model-builder/disable-model-builder-visual-studio-2022.png":::
 
 ---
 

@@ -661,13 +661,13 @@ Starting with .NET 5.0, the .NET SDK ships with all of the ["CA" code quality ru
 
 The following table shows the available options. They're listed in increasing order of the number of rules they enable.
 
-| Value | Meaning |
-|-|-|
-| `None` or `AllDisabledByDefault` (deprecated) | All rules are disabled by default. You can selectively [opt in to](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them.<br />`None` replaces `AllDisabledByDefault` in .NET 6. |
-| `Default` | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. |
-| `Minimum` | More aggressive mode than the `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. |
-| `Recommended` | More aggressive mode than the `Minimum` mode, where more rules are enabled as build warnings. |
-| `All` or `AllEnabledByDefault` (deprecated) | All rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them.<br />`All` replaces `AllEnabledByDefault` in .NET 6. |
+| Value | Meaning | Corresponding deprecated value |
+|-|-|-|
+| `None` | All rules are disabled by default. You can selectively [opt in to](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them. | `AllDisabledByDefault` |
+| `Default` | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. | |
+| `Minimum` | More aggressive mode than the `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. | |
+| `Recommended` | More aggressive mode than the `Minimum` mode, where more rules are enabled as build warnings. | |
+| `All` | All rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. | `AllEnabledByDefault` |
 
 > [!NOTE]
 >

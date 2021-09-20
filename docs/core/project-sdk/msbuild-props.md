@@ -61,74 +61,14 @@ Use the `NetStandardImplicitPackageVersion` property when you want to specify a 
 </PropertyGroup>
 ```
 
-## Assembly info generation properties
+## Assembly attribute properties
 
-- [GenerateAssemblyCompanyAttribute](#generateassemblycompanyattribute)
-- [GenerateAssemblyConfigurationAttribute](#generateassemblyconfigurationattribute)
-- [GenerateAssemblyCopyrightAttribute](#generateassemblycopyrightattribute)
-- [GenerateAssemblyDescriptionAttribute](#generateassemblydescriptionattribute)
-- [GenerateAssemblyFileVersionAttribute](#generateassemblyfileversionattribute)
 - [GenerateAssemblyInfo](#generateassemblyinfo)
-- [GenerateAssemblyInformationalVersionAttribute](#generateassemblyinformationalversionattribute)
-- [GenerateAssemblyProductAttribute](#generateassemblyproductattribute)
-- [GenerateAssemblyTitleAttribute](#generateassemblytitleattribute)
-- [GenerateAssemblyVersionAttribute](#generateassemblyversionattribute)
 - [GeneratedAssemblyInfoFile](#generatedassemblyinfofile)
-- [GenerateNeutralResourcesLanguageAttribute](#generateneutralresourceslanguageattribute)
-
-### GenerateAssemblyCompanyAttribute
-
-This property controls whether or not the `Company` property generates the <xref:System.Reflection.AssemblyCompanyAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyConfigurationAttribute
-
-This property controls whether or not the `Configuration` property generates the <xref:System.Reflection.AssemblyConfigurationAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyCopyrightAttribute
-
-This property controls whether or not the `Copyright` property generates the <xref:System.Reflection.AssemblyCopyrightAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyDescriptionAttribute
-
-This property controls whether or not the `Description` property generates the <xref:System.Reflection.AssemblyDescriptionAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyFileVersionAttribute
-
-This property controls whether or not the `FileVersion` property generates the <xref:System.Reflection.AssemblyFileVersionAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-</PropertyGroup>
-```
 
 ### GenerateAssemblyInfo
 
-Controls `AssemblyInfo` attribute generation for the project. The default value is `true`. Use `false` to disable generation of the file:
+The `GenerateAssemblyInfo` property controls `AssemblyInfo` attribute generation for the project. The default value is `true`. Use `false` to disable generation of the file:
 
 ```xml
 <PropertyGroup>
@@ -138,20 +78,20 @@ Controls `AssemblyInfo` attribute generation for the project. The default value 
 
 The [GeneratedAssemblyInfoFile](#generatedassemblyinfofile) setting controls the name of the generated file.
 
-When the `GenerateAssemblyInfo` value is `true`, project properties are transformed into `AssemblyInfo` attributes. The following table lists the project properties that generate the attributes, and the properties that can disable that generation:
+When the `GenerateAssemblyInfo` value is `true`, [package-related project properties](#package-properties) are transformed into assembly attributes. The following table lists the project properties that generate the attributes. It also lists the properties that you can use to disable that generation on a per-attribute basis.
 
-| Property               | Attribute                                                      | Property to disable                                                                               |
-|------------------------|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| `Company`              | <xref:System.Reflection.AssemblyCompanyAttribute>              | [`GenerateAssemblyCompanyAttribute`](#generateassemblycompanyattribute)                           |
-| `Configuration`        | <xref:System.Reflection.AssemblyConfigurationAttribute>        | [`GenerateAssemblyConfigurationAttribute`](#generateassemblyconfigurationattribute)               |
-| `Copyright`            | <xref:System.Reflection.AssemblyCopyrightAttribute>            | [`GenerateAssemblyCopyrightAttribute`](#generateassemblycopyrightattribute)                       |
-| `Description`          | <xref:System.Reflection.AssemblyDescriptionAttribute>          | [`GenerateAssemblyDescriptionAttribute`](#generateassemblydescriptionattribute)                   |
-| `FileVersion`          | <xref:System.Reflection.AssemblyFileVersionAttribute>          | [`GenerateAssemblyFileVersionAttribute`](#generateassemblyfileversionattribute)                   |
+| Property | Assembly attribute | Property to disable |
+|-|-|-|
+| `Company`              | <xref:System.Reflection.AssemblyCompanyAttribute> | [`GenerateAssemblyCompanyAttribute`](#generateassemblycompanyattribute) |
+| `Configuration`        | <xref:System.Reflection.AssemblyConfigurationAttribute> | [`GenerateAssemblyConfigurationAttribute`](#generateassemblyconfigurationattribute) |
+| `Copyright`            | <xref:System.Reflection.AssemblyCopyrightAttribute> | [`GenerateAssemblyCopyrightAttribute`](#generateassemblycopyrightattribute) |
+| `Description`          | <xref:System.Reflection.AssemblyDescriptionAttribute> | [`GenerateAssemblyDescriptionAttribute`](#generateassemblydescriptionattribute) |
+| `FileVersion`          | <xref:System.Reflection.AssemblyFileVersionAttribute> | [`GenerateAssemblyFileVersionAttribute`](#generateassemblyfileversionattribute) |
 | `InformationalVersion` | <xref:System.Reflection.AssemblyInformationalVersionAttribute> | [`GenerateAssemblyInformationalVersionAttribute`](#generateassemblyinformationalversionattribute) |
-| `Product`              | <xref:System.Reflection.AssemblyProductAttribute>              | [`GenerateAssemblyProductAttribute`](#generateassemblyproductattribute)                           |
-| `AssemblyTitle`        | <xref:System.Reflection.AssemblyTitleAttribute>                | [`GenerateAssemblyTitleAttribute`](#generateassemblytitleattribute)                               |
-| `AssemblyVersion`      | <xref:System.Reflection.AssemblyVersionAttribute>              | [`GenerateAssemblyVersionAttribute`](#generateassemblyversionattribute)                           |
-| `NeutralLanguage`      | <xref:System.Resources.NeutralResourcesLanguageAttribute>      | [`GenerateNeutralResourcesLanguageAttribute`](#generateneutralresourceslanguageattribute)         |
+| `Product`              | <xref:System.Reflection.AssemblyProductAttribute> | [`GenerateAssemblyProductAttribute`](#generateassemblyproductattribute) |
+| `AssemblyTitle`        | <xref:System.Reflection.AssemblyTitleAttribute> | [`GenerateAssemblyTitleAttribute`](#generateassemblytitleattribute) |
+| `AssemblyVersion`      | <xref:System.Reflection.AssemblyVersionAttribute> | [`GenerateAssemblyVersionAttribute`](#generateassemblyversionattribute) |
+| `NeutralLanguage`      | <xref:System.Resources.NeutralResourcesLanguageAttribute> | [`GenerateNeutralResourcesLanguageAttribute`](#generateneutralresourceslanguageattribute) |
 
 Notes about these settings:
 
@@ -164,68 +104,18 @@ Notes about these settings:
 
 #### Migrating from .NET Framework
 
-.NET Framework project templates create a code file with these assembly info attributes set. The file is typically located at *.\Properties\AssemblyInfo.cs* or *.\Properties\AssemblyInfo.vb*. SDK-style projects generate this file for you based on the project settings. **You can't have both.** When porting your code to .NET 5 (and .NET Core 3.1) or later, do one of the following:
+.NET Framework project templates create a code file with these assembly info attributes set. The file is typically located at *.\Properties\AssemblyInfo.cs* or *.\Properties\AssemblyInfo.vb*. SDK-style projects generate this file for you based on the project settings. **You can't have both.** When porting your code to .NET 5 (or .NET Core 3.1) or later, do one of the following:
 
-- Disable the generation of the temporary code file that contains the assembly info attributes by setting `GenerateAssemblyInfo` to `false`. This enables you to keep your *AssemblyInfo* file.
-- Migrate the settings in the `AssemblyInfo` file to the project file, and delete the `AssemblyInfo` file.
-
-### GenerateAssemblyInformationalVersionAttribute
-
-This property controls whether or not the `InformationalVersion` property generates the <xref:System.Reflection.AssemblyInformationalVersionAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyProductAttribute
-
-This property controls whether or not the `Product` property generates the <xref:System.Reflection.AssemblyProductAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyTitleAttribute
-
-This property controls whether or not the `AssemblyTitle` property generates the <xref:System.Reflection.AssemblyTitleAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyVersionAttribute
-
-This property controls whether or not the `AssemblyVersion` property generates the <xref:System.Reflection.AssemblyVersionAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
-</PropertyGroup>
-```
+- Disable the generation of the temporary code file that contains the assembly info attributes by setting `GenerateAssemblyInfo` to `false` in your project file. This enables you to keep your *AssemblyInfo* file.
+- Migrate the settings in the `AssemblyInfo` file to the project file, and then delete the `AssemblyInfo` file.
 
 ### GeneratedAssemblyInfoFile
 
-The property defines the relative or absolute path of the generated assembly info file. Defaults to a file named *[project-name].AssemblyInfo.[cs|vb]* in the `$(IntermediateOutputPath)` (usually the *obj*) directory.
+The `GeneratedAssemblyInfoFile` property defines the relative or absolute path of the generated assembly info file. Defaults to a file named *[project-name].AssemblyInfo.[cs|vb]* in the `$(IntermediateOutputPath)` (usually the *obj*) directory.
 
 ```xml
 <PropertyGroup>
   <GeneratedAssemblyInfoFile>assemblyinfo.cs</GeneratedAssemblyInfoFile>
-</PropertyGroup>
-```
-
-### GenerateNeutralResourcesLanguageAttribute
-
-This property controls whether or not the `NeutralLanguage` property generates the <xref:System.Resources.NeutralResourcesLanguageAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
 </PropertyGroup>
 ```
 
@@ -932,11 +822,35 @@ The `ImplicitUsings` property can be used to enable and disable implicit `global
 
 [MSBuild items](/visualstudio/msbuild/msbuild-items) are inputs into the build system. Items are specified according to their type, which is the element name. For example, `Compile` and `Reference` are two [common item types](/visualstudio/msbuild/common-msbuild-project-items). The following additional item types are made available by the .NET SDK:
 
+- [AssemblyMetadata](#assemblymetadata)
+- [InternalsVisibleTo](#internalsvisibleto)
 - [PackageReference](#packagereference)
 - [TrimmerRootAssembly](#trimmerrootassembly)
 - [Using](#using)
 
 You can use any of the standard [item attributes](/visualstudio/msbuild/item-element-msbuild#attributes-and-elements), for example, `Include` and `Update`, on these items. Use `Include` to add a new item, and use `Update` to modify an existing item. For example, `Update` is often used to modify an item that has implicitly been added by the .NET SDK.
+
+### AssemblyMetadata
+
+The `AssemblyMetadata` item specifies a key-value pair <xref:System.Reflection.AssemblyMetadataAttribute> assembly attribute. The `Include` metadata becomes the key, and the `Value` metadata becomes the value.
+
+```xml
+<ItemGroup>
+  <AssemblyMetadata Include="Serviceable" Value="True" />
+</ItemGroup>
+```
+
+### InternalsVisibleTo
+
+The `InternalsVisibleTo` item generates an <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> assembly attribute for the specified friend assembly.
+
+```xml
+<ItemGroup>
+  <InternalsVisibleTo Include="MyProject.Tests" />
+</ItemGroup>
+```
+
+If the friend assembly is signed, you can specify an optional `Key` metadata to specify its full public key. If you don't specify `Key` metadata and a `$(PublicKey)` is available, that key is used. Otherwise, no public key is added to the attribute.
 
 ### PackageReference
 

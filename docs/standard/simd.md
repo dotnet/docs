@@ -80,7 +80,7 @@ double[] SimdVectorProd(double[] left, double[] right)
     var offset = Vector<double>.Count;
     double[] result = new double[left.Length];
     int i = 0;
-    for (i = 0; i < left.Length; i += offset)
+    for (i = 0; i + offset <= left.Length; i += offset)
     {
         var v1 = new Vector<double>(left, i);
         var v2 = new Vector<double>(right, i);

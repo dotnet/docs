@@ -135,6 +135,8 @@ items:
           href: sdk/6.0/implicit-namespaces-rc1.md
         - name: OutputType not automatically set to WinExe
           href: sdk/6.0/outputtype-not-set-automatically.md
+        - name: RuntimeIdentifier warning if self-contained is unspecified
+          href: sdk/6.0/runtimeidentifier-self-contained.md
       - name: Windows Forms
         items:
         - name: APIs throw ArgumentNullException
@@ -761,6 +763,8 @@ items:
           href: sdk/6.0/implicit-namespaces-rc1.md
         - name: OutputType not automatically set to WinExe
           href: sdk/6.0/outputtype-not-set-automatically.md
+        - name: RuntimeIdentifier warning if self-contained is unspecified
+          href: sdk/6.0/runtimeidentifier-self-contained.md
       - name: .NET 5
         items:
         - name: Directory.Packages.props files imported by default

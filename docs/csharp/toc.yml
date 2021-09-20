@@ -180,8 +180,6 @@ items:
       href: whats-new/tutorials/ranges-indexes.md
     - name: Work with nullable reference types
       href: whats-new/tutorials/nullable-reference-types.md
-    - name: Upgrade an app to nullable reference types
-      href: whats-new/tutorials/upgrade-to-nullable-references.md
     - name: Generate and consume asynchronous streams
       href: whats-new/tutorials/generate-consume-asynchronous-stream.md
 - name: Tutorials
@@ -204,8 +202,10 @@ items:
   items:
   - name: Nullable reference types
     href: nullable-references.md
-  - name: Choose a strategy for enabling nullable reference types
+  - name: Nullable reference migrations
     href: nullable-migration-strategies.md
+  - name: Resolve nullable warnings
+    href: nullable-warnings.md
   - name: Methods
     href: methods.md
   - name: Properties
@@ -709,7 +709,7 @@ items:
       - name: "How to write a copy constructor"
         href: programming-guide/classes-and-structs/how-to-write-a-copy-constructor.md
     - name: Finalizers
-      href: programming-guide/classes-and-structs/destructors.md
+      href: programming-guide/classes-and-structs/finalizers.md
     - name: Object and Collection Initializers
       href: programming-guide/classes-and-structs/object-and-collection-initializers.md
     - name: "How to initialize objects by using an object initializer"

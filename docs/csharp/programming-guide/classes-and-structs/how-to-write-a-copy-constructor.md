@@ -26,4 +26,4 @@ C# [records](../../fundamentals/types/records.md) provide a copy constructor for
 - [C# Programming Guide](../index.md)
 - [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
 - [Constructors](./constructors.md)
-- [Finalizers](./destructors.md)
+- [Finalizers](./finalizers.md)

@@ -17,7 +17,7 @@ There are a few concepts you should be familiar with. The Docker client has a CL
 
 ### Images
 
-An image is an ordered collection of filesystem changes that form the basis of a container. The image doesn't have a state and is read-only. Much the time an image is based on another image, but with some customization. For example, when you create an new image for your application, you would base it on an existing image that already contains the .NET Core runtime.
+An image is an ordered collection of filesystem changes that form the basis of a container. The image doesn't have a state and is read-only. Much the time an image is based on another image, but with some customization. For example, when you create a new image for your application, you would base it on an existing image that already contains the .NET Core runtime.
 
 Because containers are created from images, images have a set of run parameters (such as a starting executable) that run when the container starts.
 

@@ -98,7 +98,7 @@ You've likely written a method like this to return `null` when the name sought w
 public Customer? FindCustomer(string lastName, string firstName)
 ```
 
-For reasons covered under [Generic definitions and nullability](../../nullable-migration-strategies.md#generic-definitions-and-nullability) that technique may not produce the static analysis that matches your API. You may have a generic method that follows a similar pattern:
+For reasons covered under [Generics nullability](../../nullable-references.md#generics) that technique may not produce the static analysis that matches your API. You may have a generic method that follows a similar pattern:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="FindMethod" :::
 

@@ -67,7 +67,7 @@ For example, the <xref:System.OperatingSystem.IsIOS?displayProperty=nameWithType
 - `[SupportedOSPlatform("iOS")]` implies that the API is supported on `iOS` and also on its superset platform, `MacCatalyst`. You can use the `[UnsupportedOSPlatform("MacCatalyst")]` attribute to exclude this implied support.
 - `[UnsupportedOSPlatform("iOS")` implies that the API is not supported on `iOS` and `MacCatalyst`. You can use the `[SupportedOSPlatform("MacCatalyst")]` attribute to exclude this implied lack of support.
 
-Consider the following coverage matrix, where ✔️ signifies that the platform is supported, and ❌ signifies that the platform is *not* supported.
+Consider the following coverage matrix, where ✔️ indicates that the platform is supported, and ❌ indicates that the platform is *not* supported.
 
 | Platform | `SupportedOSPlatform(subset)` | `SupportedOSPlatform(superset)` | `UnsupportedOSPlatform(subset)` | `UnsupportedOSPlatform(superset)` |
 | - | - | - | - | - |

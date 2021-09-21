@@ -17,9 +17,11 @@ This article lists some of the first party .NET GitHub actions that are hosted o
 
 This action sweeps .NET repos for out-of-support target versions of .NET.
 
-The .NET docs team uses the .NET version sweeper GitHub Action to automate issue creation. The Action runs on a schedule (as a cron job). When it detects that .NET projects target out-of-support versions, it creates issues to report its findings. The output is configurable and helpful for tracking .NET version support concerns. The Action is available on [GitHub Marketplace](https://github.com/marketplace/actions/net-version-sweeper).
+The .NET docs team uses the .NET version sweeper GitHub Action to automate issue creation. The Action runs on a schedule (as a cron job). When it detects that .NET projects target out-of-support versions, it creates issues to report its findings. The output is configurable and helpful for tracking .NET version support concerns.
 
-## .NET code analysis GitHub Action
+The Action is available on [GitHub Marketplace](https://github.com/marketplace/actions/net-version-sweeper).
+
+## .NET code analysis
 
 [dotnet/code-analysis](https://github.com/dotnet/code-analysis)
 

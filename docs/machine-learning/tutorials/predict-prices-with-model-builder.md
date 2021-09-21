@@ -94,7 +94,7 @@ Model Builder accepts data from two sources, a SQL Server database or a local fi
 
 1. In the data step of the Model Builder tool, select *File* from the data source type selection.
 1. Select the **Browse** button next to the text box and use File Explorer to browse and select the *taxi-fare-test.csv* in the *Data* directory
-1. Choose *fare_amount* in the *Column to Predict (Label)* dropdown.
+1. Choose *fare_amount* in the **Column to predict (Label)** dropdown.
 1. Click the **Advanced data options** link.
 1. In the **Column settings** tab, select the **Purpose** dropdown for the *trip_time_in_secs* column, and select **Ignore** to exclude it as a feature during training. Click the **Save** button to close the dialog.
 1. Click the **Next step** button.

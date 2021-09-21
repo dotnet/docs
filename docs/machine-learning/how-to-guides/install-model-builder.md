@@ -17,7 +17,7 @@ Learn how to install ML.NET Model Builder to add machine learning to your .NET a
 
 ## Prerequisites
 
-- Visual Studio 2019 or Visual Studio 2022 Preview 4 or later
+- Visual Studio 2019 or in Visual Studio 2022 Preview 4 or later
 - .NET Core 3.1 SDK or later.
 
 ## Limitations
@@ -77,4 +77,4 @@ ML.NET Model builder is built into Visual Studio. To disable it:
 
 Model Builder automatically updates when there's a new version.
 
-However, if you'd prefer to manually install the latest version, either download it version from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=MLNET.07) or use the Extensions Manager in Visual Studio. See [how to update a Visual Studio extension](/visualstudio/extensibility/how-to-update-a-visual-studio-extension) for more information.
+However, if you'd prefer to manually install the latest version, either download it  from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=MLNET.07) or use the Extensions Manager in Visual Studio. See [how to update a Visual Studio extension](/visualstudio/extensibility/how-to-update-a-visual-studio-extension) for more information.

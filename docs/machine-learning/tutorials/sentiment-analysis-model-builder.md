@@ -75,7 +75,7 @@ Model Builder accepts data from two sources, a SQL Server database or a local fi
 
 1. In the data step of the Model Builder tool, select **File** from the data source dropdown.
 1. Select the button next to the **Select a file** text box and use File Explorer to browse and select the *wikipedia-detox-250-line-data.tsv* file.
-1. Choose **Sentiment** in the **Column to Predict (Label)** dropdown.
+1. Choose **Sentiment** in the **Column to predict (Label)** dropdown.
 1. Leave the default values for the **Input Columns (Features)** dropdown.
 1. Select the **Train** link to move to the next step in the Model Builder tool.
 

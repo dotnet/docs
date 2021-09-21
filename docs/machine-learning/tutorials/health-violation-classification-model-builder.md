@@ -38,7 +38,7 @@ This sample creates a C# .NET Core console application that categorizes the risk
 
 ## Create a console application
 
-1. Create a **C# .NET Core console application** called "RestaurantViolations". Make sure **Place solution and project in the same directory** is **unchecked** (VS 2019), or **Create directory for solution** is **checked** (VS 2017).
+1. Create a **C# .NET Core console application** called "RestaurantViolations".
 
 ## Prepare and understand the data
 
@@ -71,9 +71,9 @@ When first adding Model Builder to the solution it will prompt you to create an 
 
 ![Model Builder wizard in Visual Studio](../media/model-builder-scenarios.png)
 
-To train your model, select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is *Data Classification*.
+To train your model, select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is *Data classification*.
 
-1. For this sample, the scenario is multiclass classification. In the *Scenario* step of Model Builder, select the **Data Classification** scenario.
+1. For this sample, the task is multiclass classification. In the *Scenario* step of Model Builder, select the **Data classification** scenario.
 
 ## Load the data
 
@@ -86,7 +86,7 @@ Model Builder accepts data from a SQL Server database or a local file in `csv`, 
     1. In the **Connection Properties** dialog, select **Browse** and select the downloaded *RestaurantScores.mdf* file.
     1. Select **OK**.
 1. Choose **Violations** from the **Table** dropdown.
-1. Choose **RiskCategory** in the **Column to Predict (Label)** dropdown.
+1. Choose **RiskCategory** in the **Column to predict (Label)** dropdown.
 1. Leave the default selections in **Advanced data options**.
 1. Click the **Next step** button to move to the train step in Model Builder.
 

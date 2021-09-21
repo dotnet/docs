@@ -3,7 +3,7 @@ title: 'Tutorial: Train an image classification model in Azure using Model Build
 description: Learn how to train an image classification model to recognize land use from satellite images in Azure using Model Builder
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 08/16/2021
+ms.date: 09/21/2021
 ms.topic: tutorial
 ms.custom: mvc,mlnet-tooling
 #Customer intent: As a non-developer, I want to use Model Builder to automatically train a model in Azure to classify images using Model Builder.
@@ -36,7 +36,6 @@ In this tutorial, you:
 - For a list of pre-requisites and installation instructions, visit the [Model Builder installation guide](https://docs.microsoft.com/dotnet/machine-learning/how-to-guides/install-model-builder).
 - Azure account. If you don't have one, [create a free Azure account](https://aka.ms/AMLFree).
 - ASP.NET and web development workload.
-- Universal Windows Platform development workload.
 
 ## Model Builder image classification overview
 
@@ -78,12 +77,12 @@ The EuroSAT dataset contains a collection of satellite images divided into ten c
 
 When first adding Model Builder to the solution it will prompt you to create an `mbconfig` file. The `mbconfig` file keeps track of everything you do in Model Builder to allow you to reopen the session.
 
-1. In Solution Explorer, right-click the **LandUse** project, and select **Add > Machine Learning**.
+1. In Solution Explorer, right-click the **LandUse** project, and select **Add > Machine Learning Model...**.
 1. In the dialog, name the Model Builder project **LandUse**, and click **Add**.
 
 ## Choose a scenario
 
-![Model Builder Scenario Screen](../media/model-builder-screen.png)
+![Model Builder Scenarios](../media/model-builder-scenarios.png)
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder.
 

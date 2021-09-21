@@ -39,6 +39,8 @@ Create a new console application either in Visual Studio or from the command lin
 <Nullable>enable</Nullable>
 ```
 
+Prior to .NET 6, new projects do not include the `Nullable` element. Beginning with .NET 6, new projects include the `<Nullable>enable</Nullable> element in the project file.
+
 ### Design the types for the application
 
 This survey application requires creating a number of classes:

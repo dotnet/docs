@@ -146,6 +146,10 @@ dotnet_diagnostic.CA1822.severity = none
 
 For more information and other ways to suppress warnings, see [How to suppress code analysis warnings](suppress-warnings.md).
 
+## Run code analysis as a GitHub Action
+
+The [dotnet/code-analysis](https://github.com/dotnet/code-analysis) GitHub Action lets you run .NET code analyzers as part of continuous integration (CI) in an offline mode. For more information, see [.NET code analysis GitHub Action](../../devops/dotnet-github-action-reference.md#net-code-analysis).
+
 ## Third-party analyzers
 
 In addition to the official .NET analyzers, you can also install third party analyzers, such as [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/), and [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).

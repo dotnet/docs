@@ -54,5 +54,5 @@ These examples show you how to perform the following tasks:
 ## See also
 
 - [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)
-- [Types](/dotnet/csharp/fundamentals/types)
+- [Types](../../fundamentals/types/index.md)
 - [How to determine whether a string represents a numeric value](../strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)

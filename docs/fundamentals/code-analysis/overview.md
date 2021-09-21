@@ -148,7 +148,7 @@ For more information and other ways to suppress warnings, see [How to suppress c
 
 ## Run code analysis as a GitHub Action
 
-The [dotnet/code-analysis](https://github.com/dotnet/code-analysis) GitHub Action lets you run .NET code analyzers as part of continuous integration (CI) in an offline mode. For more information, see [.NET code analysis GitHub Action](../../devops/dotnet-github-action-reference.md#net-code-analysis-github-action).
+The [dotnet/code-analysis](https://github.com/dotnet/code-analysis) GitHub Action lets you run .NET code analyzers as part of continuous integration (CI) in an offline mode. For more information, see [.NET code analysis GitHub Action](../../devops/dotnet-github-action-reference.md#net-code-analysis).
 
 ## Third-party analyzers
 

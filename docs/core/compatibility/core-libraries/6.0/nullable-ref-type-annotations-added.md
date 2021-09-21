@@ -13,7 +13,7 @@ The affected method was treated as "oblivious" with regard to reference type nul
 
 ## New behavior
 
-The affected method is now annotated with accurate nullability conditions.
+The parameters of the affected method are now annotated with accurate nullability conditions.
 
 ## Version introduced
 
@@ -33,4 +33,6 @@ Update code that calls this method to reflect the revised nullability contract.
 
 ## Affected APIs
 
-- <xref:System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider.GetTypeDescriptor(System.Type,System.Object)?displayProperty=fullName>
+| API | What changed |
+|-|-|
+| <xref:System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider.GetTypeDescriptor(System.Type,System.Object)?displayProperty=fullName> | `instance` parameter type is nullable |

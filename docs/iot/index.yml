@@ -30,10 +30,6 @@ landingContent:
         links:
           - text: .NET IoT Libraries overview
             url: intro.md
-      - linkListType: learn
-        links:
-          - text: Construct Internet of Things devices using the .NET IoT Libraries
-            url: /learn/modules/create-iot-device-dotnet/ 
       - linkListType: deploy
         links:
           - text: Deploy .NET apps to Raspberry Pi
@@ -47,8 +43,12 @@ landingContent:
           - text: API Reference
             url: ../../api/index.md?view=iot-dotnet-1.1
 
-  - title: Connect to devices
+  - title: Build devices
     linkLists:
+      - linkListType: learn
+        links:
+          - text: Construct Internet of Things devices using the .NET IoT Libraries
+            url: /learn/modules/create-iot-device-dotnet/ 
       - linkListType: tutorial
         links:
           - text: Blink an LED

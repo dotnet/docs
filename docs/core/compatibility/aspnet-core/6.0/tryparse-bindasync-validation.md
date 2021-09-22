@@ -13,6 +13,8 @@ ASP.NET Core 6.0 RC 2
 
 ## Previous behavior
 
+In previous versions of ASP.NET Core 6, if a  `TryParse` or `BindAsync` method has an invalid signature, no exception was thrown, and the framework tried to bind JSON from the body.
+
 ```csharp
 // Todo.TryParse is not in a valid format.
 // Will try to bind from body as JSON instead.

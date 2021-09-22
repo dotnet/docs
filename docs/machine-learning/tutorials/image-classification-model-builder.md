@@ -117,7 +117,7 @@ A workspace is an Azure Machine Learning resource that provides a central place 
 
     The provisioning process takes a few minutes. A request is made to Azure to provision the following cloud resources:
 
-    - Enterprise Azure Machine Learning workspace
+    - Azure Machine Learning workspace
     - Azure Storage Account
     - Azure Application Insights
     - Azure Container Registry

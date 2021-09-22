@@ -77,10 +77,10 @@ The example below demonstrates adding long arrays elements using <xref:System.Nu
 ```csharp
 double[] SimdVectorProd(double[] left, double[] right)
 {
-    var offset = Vector<double>.Count;
+    var vectorSize = Vector<double>.Count;
     double[] result = new double[left.Length];
     int i = 0;
-    for (i = 0; i + offset <= left.Length; i += offset)
+    for (; i <= left.Length - vectorSize; i += vectorSize)
     {
         var v1 = new Vector<double>(left, i);
         var v2 = new Vector<double>(right, i);

@@ -92,7 +92,7 @@ To train your model, you need to select from the list of available machine learn
 
 Model Builder can run the training on different environments depending on the scenario that was selected.
 
-1. Select "Azure" as your environment and click the **Set up workspace** button.
+Select **Azure** as your environment and click the **Set up workspace** button.
 
 ### Create experiment in Azure
 

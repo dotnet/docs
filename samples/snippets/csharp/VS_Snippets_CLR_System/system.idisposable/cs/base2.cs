@@ -24,11 +24,11 @@ class BaseClassWithFinalizer : IDisposable
 
         if (disposing)
         {
-            // TODO: dispose managed state (managed objects).
+        	// Dispose managed objects that implement IDisposable.
+	        // Assign null to managed objects that consume large amounts of memory or consume scarce resources.
         }
 
-        // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
-        // TODO: set large fields to null.
+        // Free unmanaged resources (unmanaged objects).
 
         _disposed = true;
     }

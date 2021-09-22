@@ -33,7 +33,7 @@ In this tutorial, you:
 
 ## Prerequisites
 
-- For a list of pre-requisites and installation instructions, visit the [Model Builder installation guide](https://docs.microsoft.com/dotnet/machine-learning/how-to-guides/install-model-builder).
+- For a list of pre-requisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).
 - Azure account. If you don't have one, [create a free Azure account](https://aka.ms/AMLFree).
 - ASP.NET and web development workload.
 

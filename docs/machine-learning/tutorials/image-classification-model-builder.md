@@ -100,7 +100,7 @@ An Azure Machine Learning experiment is a resource that needs to be created befo
 
 The experiment encapsulates the configuration and results for one or more machine learning training runs. Experiments belong to a specific workspace. The first time an experiment is created, its name is registered in the workspace. Any subsequent runs - if the same experiment name is used - are logged as part of the same experiment. Otherwise, a new experiment is created.
 
-1. In the Create New Experiment dialog, choose your subscription from the **Subscription** dropdown.
+In the Create New Experiment dialog, choose your subscription from the **Subscription** dropdown.
 
 ### Create workspace
 

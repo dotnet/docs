@@ -104,7 +104,7 @@ In the Create New Experiment dialog, choose your subscription from the **Subscri
 
 ### Create workspace
 
-A workspace is an Azure Machine Learning resource that provides a central place for all Azure Machine Learning resources and artifacts created as part of training run.
+A workspace is an Azure Machine Learning resource that provides a central place for all Azure Machine Learning resources and artifacts created as part of a training run.
 
 1. In the Create New Experiment dialog, select the **New** link next to the **Machine Learning Workspace name** dropdown.
 1. In the Create A New Workspace dialog, type "landuse-wkspc" in the **Machine Learning Workspace name** text box.

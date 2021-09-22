@@ -5,7 +5,7 @@ ms.date: 09/22/2021
 ---
 # TryParse and BindAsync methods are validated
 
-Starting in ASP.NET Core 6, ASP.NET Core validates `TryParse` and `BindAsync` methods on parameter types for `Map*` methods. If no valid method is found, ASP.NET Core looks for invalid methods and throws an exception at startup if one is found. The exception helps to avoid unexpected behavior by alerting you that your method signature may be incorrect.
+ASP.NET Core now validates `TryParse` and `BindAsync` methods on parameter types for `Map*` methods. If no valid method is found, ASP.NET Core looks for invalid methods and throws an exception at startup if one is found. The exception helps to avoid unexpected behavior by alerting you that your method signature may be incorrect.
 
 ## Version introduced
 

@@ -19,6 +19,10 @@ Other changes that aren't considered to be breaking are also documented on this 
 
 6.0
 
+## Type of breaking change
+
+This change can affect [source compatibility](../../categories.md#source-compatibility).
+
 ## Reason for change
 
 Starting in .NET Core 3.0, nullability annotations were applied to the .NET libraries. From the outset of the effort, mistakes in these annotations were anticipated. Through feedback and further testing, the nullable annotations for the affected APIs were determined to be inaccurate. The updated annotations correctly represent the nullability contracts for the APIs.
@@ -86,38 +90,3 @@ The following table lists the affected APIs:
 
 - [Attributes for null-state static analysis](../../../../csharp/language-reference/attributes/nullable-analysis.md)
 - [Nullable reference type annotation changes in ASP.NET Core](../../aspnet-core/6.0/nullable-reference-type-annotations-changed.md)
-
-<!--
-
-### Category
-
-Core .NET libraries
-
-### Affected APIs
-
-- `P:System.ComponentModel.ISite.Container`
-- `M:System.Xml.Linq.XContainer.Add(System.Object[])`
-- `M:System.Xml.Linq.XContainer.AddFirst(System.Object[])`
-- `M:System.Xml.Linq.XContainer.ReplaceNodes(System.Object[])`
-- `M:System.Xml.Linq.XDocument.#ctor(System.Object[])`
-- `M:System.Xml.Linq.XDocument.#ctor(System.Xml.Linq.XDeclaration,System.Object[])`
-- `M:System.Xml.Linq.XElement.#ctor(System.Xml.Linq.XName,System.Object[])`
-- `M:System.Xml.Linq.XElement.ReplaceAll(System.Object[])`
-- `M:System.Xml.Linq.XElement.ReplaceAttributes(System.Object[])`
-- `M:System.Xml.Linq.XNode.AddAfterSelf(System.Object[])`
-- `M:System.Xml.Linq.XNode.AddBeforeSelf(System.Object[])`
-- `M:System.Xml.Linq.XNode.ReplaceWith(System.Object[])`
-- `M:System.Xml.Linq.XStreamingElement.#ctor(System.Xml.Linq.XName,System.Object)`
-- `M:System.Xml.Linq.XStreamingElement.#ctor(System.Xml.Linq.XName,System.Object[])`
-- `M:System.Xml.Linq.XStreamingElement.Add(System.Object[])`
-- `O:System.Net.Http.HttpClient.PatchAsync`
-- `O:System.Net.Http.HttpClient.PostAsync`
-- `O:System.Net.Http.HttpClient.PutAsync`
-- `M:System.Linq.Expressions.MethodCallExpression.Update(System.Linq.Expressions.Expression,System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})`
-- `M:System.Linq.Expressions.Expression%601.Update(System.Linq.Expressions.Expression,System.Collections.Generic.IEnumerable{System.Linq.Expressions.ParameterExpression})`
-- `M:System.Data.IDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)`
-- `M:System.Data.IDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)`
-- `M:System.Data.Common.DbDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)`
-- `M:System.Data.Common.DbDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)`
-
--->

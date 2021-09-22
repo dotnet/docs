@@ -523,6 +523,7 @@ items:
       - name: Reference
         items:
         - name: Microsoft.NET.Sdk
+          displayName: msbuild, msbuild properties
           href: ../core/project-sdk/msbuild-props.md
         - name: Microsoft.NET.Sdk.Web
           href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
@@ -1714,6 +1715,8 @@ items:
   - name: GitHub Actions and .NET
     href: ../devops/github-actions-overview.md
     displayName: "continuous integration,continuous deployment,continuous delivery,ci,cd,ci/cd,github,github action,github actions,lifecycle"
+  - name: Official .NET GitHub Actions
+    href: ../devops/dotnet-github-action-reference.md
   - name: Tutorials
     expanded: true
     items:

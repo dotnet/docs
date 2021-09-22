@@ -63,8 +63,20 @@ The following example configures an app in the aggressive trim mode where unused
 ```xml
 <PropertyGroup>
     <PublishTrimmed>true</PublishTrimmed>
-    <TrimMode>link</TrimMode>
     <SuppressTrimAnalysisWarnings>false</SuppressTrimAnalysisWarnings>
+    
+    <!--
+        Enable aggressive trimming for assemblies marked as trimmable.
+        This is the default behavior for .NET 6 and above.
+        The line is only needed when targeting < .NET 6.
+    -->
+    <TrimMode>link</TrimMode>
+    
+    <!--
+        Enable aggressive trimming for all assemblies.
+        This setting is new in .NET 6.
+    -->
+    <TrimmerDefaultAction>link</TrimmerDefaultAction>
 </PropertyGroup>
 ```
 

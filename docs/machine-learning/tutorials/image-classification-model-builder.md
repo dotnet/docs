@@ -86,7 +86,7 @@ When first adding Model Builder to the solution it will prompt you to create an 
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder.
 
-1. For this sample, the scenario is image classification. In the scenario step of the Model Builder tool, select the **Image Classification** scenario.
+1. For this sample, the task is image classification. In the scenario step of the Model Builder tool, select the **Image Classification** scenario.
 
 ## Select an enviornment
 

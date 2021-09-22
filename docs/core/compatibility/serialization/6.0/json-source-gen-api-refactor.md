@@ -5,11 +5,11 @@ ms.date: 09/22/2021
 ---
 # JSON source-generation API refactoring
 
-We updated the APIs that the output of the JSON source generator calls to make them easier to extend with new features in the future. Projects that explicitly use the JSON source generator and were compiled with .NET 6 RC 1 or earlier will fail with run-time exceptions when run on the .NET 6 RC 2 runtime.
+The APIs that the output of the JSON source generator calls have been refactored. The refactoring makes them easier to extend with new features in the future. Projects that explicitly use the JSON source generator and were compiled with .NET 6 RC 1 or earlier will fail with run-time exceptions when run on the .NET 6 RC 2 runtime.
 
 ## Previous behavior
 
-Projects that were compiled using the .NET 6 RC 1 or earlier version of the STJ source generator and library run as expected.
+Projects that were compiled using the .NET 6 RC 1 or earlier version of the System.Text.Jason (STJ) source generator and library run as expected.
 
 ## New behavior
 

@@ -147,6 +147,7 @@ The following MSBuild properties are documented in this section:
 - [AppendTargetFrameworkToOutputPath](#appendtargetframeworktooutputpath)
 - [CopyLocalLockFileAssemblies](#copylocallockfileassemblies)
 - [ErrorOnDuplicatePublishOutputFiles](#erroronduplicatepublishoutputfiles)
+- [GenerateRuntimeConfigurationFiles](#generateruntimeconfigurationfiles)
 - [IsPublishable](#ispublishable)
 - [PreserveCompilationContext](#preservecompilationcontext)
 - [PreserveCompilationReferences](#preservecompilationreferences)
@@ -205,6 +206,16 @@ The `ErrorOnDuplicatePublishOutputFiles` property relates to whether the SDK gen
 ```
 
 This property was introduced in .NET 6.
+
+### GenerateRuntimeConfigurationFiles
+
+The `GenerateRuntimeConfigurationFiles` property controls whether runtime configuration options are copied from the *runtimeconfig.template.json* file to the *[appname].runtimeconfig.json* file. For apps that require a *runtimeconfig.json* file, that is, those whose `OutputType` is `Exe`, this property defaults to `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+</PropertyGroup>
+```
 
 ### IsPublishable
 

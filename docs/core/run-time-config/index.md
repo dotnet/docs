@@ -34,7 +34,9 @@ The articles in this section of the documentation are organized by category, for
 When a project is [built](../tools/dotnet-build.md), an *[appname].runtimeconfig.json* file is generated in the output directory. If a *runtimeconfig.template.json* file exists in the same folder as the project file, any configuration options it contains are inserted into the *[appname].runtimeconfig.json* file. If you're building the app yourself, put any configuration options in the *runtimeconfig.template.json* file. If you're just running the app, insert them directly into the *[appname].runtimeconfig.json* file.
 
 > [!NOTE]
-> The *[appname].runtimeconfig.json* file will get overwritten on subsequent builds.
+>
+> - The *[appname].runtimeconfig.json* file will get overwritten on subsequent builds.
+> - If your app's `OutputType` is not `Exe` and you want configuration options to be copied from *runtimeconfig.template.json* to *[appname].runtimeconfig.json*, you must explicitly set `GenerateRuntimeConfigurationFiles` to `true` in your project file. For apps that require a *runtimeconfig.json* file, this property defaults to `true`.
 
 Specify runtime configuration options in the **configProperties** section of the *runtimeconfig.json* files. This section has the form:
 

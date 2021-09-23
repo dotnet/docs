@@ -57,16 +57,18 @@ This change was made to reduce the number of boilerplate `using` directives that
 
 For most users, you need take no action. However, this change can cause type-name conflicts with the namespaces that are implicitly included. If that happens, modify the list of `global using` directives or fully qualify your type references. You can modify the list of `global using` directives in several ways:
 
-- Disable the feature completely by setting `<DisableImplicitNamespaceImports>` to `true` in the project file. For more information, see [DisableImplicitNamespaceImports](../../../project-sdk/msbuild-props.md#disableimplicitnamespaceimports).
+- Disable the feature completely by setting `<ImplicitUsings>` to `false` in the project file. For more information, see [ImplicitUsings](../../../project-sdk/msbuild-props.md#implicitusings).
 - Disable a set of implicit `global using` directives added by an SDK by setting the `DisableImplicitNamespaceImports_DotNet`, `DisableImplicitNamespaceImports_Web`, or `DisableImplicitNamespaceImports_Worker` property to `true` in the project file. For more information, see [DisableImplicitNamespaceImports](../../../project-sdk/msbuild-props.md#disableimplicitnamespaceimports).
-- Add or remove individual namespaces by modifying the `<Import>` item group in the project file. For example:
+- Add or remove individual namespaces by modifying the `<Using>` item group in the project file. For example:
 
   ```xml
   <ItemGroup>
-    <Import Remove="System.Net.Http" />
-    <Import Include="System.IO.Pipes" />
+    <Using Remove="System.Net.Http" />
+    <Using Include="System.IO.Pipes" />
   </ItemGroup>
   ```
+
+  For more information, see [Using](../../../project-sdk/msbuild-props.md#using)
 
 ## Affected APIs
 

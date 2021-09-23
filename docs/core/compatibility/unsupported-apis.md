@@ -2,7 +2,7 @@
 title: Unsupported APIs on .NET Core and .NET 5+
 titleSuffix: ""
 description: Learn which .NET APIs always throw an exception on .NET Core and .NET 5 and later versions.
-ms.date: 10/13/2020
+ms.date: 09/17/2021
 ---
 # APIs that always throw exceptions on .NET Core and .NET 5+
 
@@ -232,6 +232,7 @@ This article organizes the affected APIs by namespace.
 | Member | Platforms that throw |
 | - | - |
 | <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.CryptoConfig.EncodeOID(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.%23ctor%2A> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.Accessible?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.Exportable?displayProperty=nameWithType> | Linux and macOS |

@@ -9,11 +9,11 @@ The APIs that the output of the JSON source generator calls have been refactored
 
 ## Previous behavior
 
-Projects that were compiled using the .NET 6 RC 1 or earlier version of the System.Text.Jason (STJ) source generator and library run as expected.
+Projects that were compiled using the .NET 6 RC 1 or earlier version of the System.Text.Json source generator and library run as expected.
 
 ## New behavior
 
-Projects that were compiled using the .NET 6 RC 1 version of the STJ source generator and library fail when run against the .NET 6 RC 2 runtime. Projects that are recompiled with the RC 2 SDK work as expected.
+Projects that were compiled using the .NET 6 RC 1 version of the System.Text.Json source generator and library fail when run against the .NET 6 RC 2 runtime. Projects that are recompiled with the RC 2 SDK work as expected.
 
 ## Version introduced
 

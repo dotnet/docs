@@ -26,7 +26,7 @@ Learn how to install ML.NET Model Builder to add machine learning to your .NET a
 - Microsoft SQL Server Data Tools for Visual Studio 2017 is not supported
 
 ## Install Model Builder
-Test
+
 ML.NET Model builder is built into Visual Studio. To enable it:
 
 <!-- markdownlint-disable MD025 -->

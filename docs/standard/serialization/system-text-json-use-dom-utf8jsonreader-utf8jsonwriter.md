@@ -160,7 +160,7 @@ The following example shows how to use the <xref:System.Text.Json.Utf8JsonWriter
 In some scenarios, you might want to write "raw" JSON to a JSON payload that you're creating with `Utf8JsonWriter`. Here are typical scenarios:
 
 * You have an existing JSON payload that you want to enclose in new JSON.
-* You want to format values differently from the default Utf8JsonWriter formatting.
+* You want to format values differently from the default `Utf8JsonWriter` formatting.
 
   For example, you might want to customize number formatting. By default, System.Text.Json omits the decimal point for whole numbers, writing `1` rather than `1.0`, for example. The rationale is that writing fewer bytes is good for performance. But suppose the consumer of your JSON treats numbers with decimals as doubles, and numbers without decimals as integers. You might want to ensure that the numbers in an array are all recognized as doubles, by writing a decimal point and zero for whole numbers. The following example shows how to do that:
 

@@ -77,8 +77,6 @@ items:
           href: core-libraries/6.0/filestream-position-updates-after-readasync-writeasync-completion.md
         - name: New diagnostic IDs for obsoleted APIs
           href: core-libraries/6.0/diagnostic-id-change-for-obsoletions.md
-        - name: New JsonSerializer source generator overloads
-          href: core-libraries/6.0/jsonserializer-source-generator-overloads.md
         - name: New nullable annotation in AssociatedMetadataTypeTypeDescriptionProvider
           href: core-libraries/6.0/nullable-ref-type-annotations-added.md
         - name: New Queryable method overloads
@@ -139,6 +137,14 @@ items:
           href: sdk/6.0/outputtype-not-set-automatically.md
         - name: RuntimeIdentifier warning if self-contained is unspecified
           href: sdk/6.0/runtimeidentifier-self-contained.md
+      - name: Serialization
+        items:
+        - name: JSON source-generation API refactoring
+          href: serialization/6.0/json-source-gen-api-refactor.md
+        - name: JsonNode no longer supports C# `dynamic`
+          href: serialization/6.0/jsonnode-dynamic-type.md
+        - name: New JsonSerializer source generator overloads
+          href: serialization/6.0/jsonserializer-source-generator-overloads.md
       - name: Windows Forms
         items:
         - name: APIs throw ArgumentNullException
@@ -579,8 +585,6 @@ items:
           href: core-libraries/6.0/filestream-position-updates-after-readasync-writeasync-completion.md
         - name: New diagnostic IDs for obsoleted APIs
           href: core-libraries/6.0/diagnostic-id-change-for-obsoletions.md
-        - name: New JsonSerializer source generator overloads
-          href: core-libraries/6.0/jsonserializer-source-generator-overloads.md
         - name: New nullable annotation in AssociatedMetadataTypeTypeDescriptionProvider
           href: core-libraries/6.0/nullable-ref-type-annotations-added.md
         - name: New Queryable method overloads
@@ -803,8 +807,12 @@ items:
       items:
       - name: .NET 6
         items:
+        - name: JSON source-generation API refactoring
+          href: serialization/6.0/json-source-gen-api-refactor.md
         - name: JsonNode no longer supports C# `dynamic`
           href: serialization/6.0/jsonnode-dynamic-type.md
+        - name: New JsonSerializer source generator overloads
+          href: serialization/6.0/jsonserializer-source-generator-overloads.md
       - name: .NET 5
         items:
         - name: BinaryFormatter.Deserialize rewraps exceptions

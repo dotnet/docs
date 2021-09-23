@@ -6,7 +6,7 @@ ms.date: 09/22/2021
 
 # SYSLIB1004: Logging class cannot be in a nested type
 
-A method annotated with the `LoggerMessageAttribute` is contained in a nested type. This is not supported by the logging model in Preview 4 and 5 of .NET 6. 
+A method annotated with the `LoggerMessageAttribute` is contained in a nested type. This is not supported by the logging model in Preview 4 and 5 of .NET 6.
 
 > [!NOTE]
 > Logger methods in nested classes *are supported* starting in .NET 6 Preview 6.

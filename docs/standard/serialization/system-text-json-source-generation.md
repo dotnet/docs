@@ -68,7 +68,7 @@ The following table shows which options specified by `JsonSerializerOptions` are
 | <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler>         | ❌                          |
 | <xref:System.Text.Json.JsonSerializerOptions.WriteIndented> \*         | ✔️                         |
 
-\* Some `Serialize` methods let you pass in a `Utf8JsonWriter` instance. In that case, you can set the `Encoder` and `WriteIndented` options by using <xref:System.Text.Json.JsonWriterOptions.Indented?displayProperty=nameWithType> and <xref:System.Text.Json.JsonWriterOptions.Indented?displayProperty=nameWithType>.
+\* Some `Serialize` methods let you pass in a `Utf8JsonWriter` instance. In that case, you can set the `Encoder` and `WriteIndented` options by using <xref:System.Text.Json.JsonWriterOptions.Encoder?displayProperty=nameWithType> and <xref:System.Text.Json.JsonWriterOptions.Indented?displayProperty=nameWithType>.
 
 The following table shows which attributes are supported by the optimized serialization code:
 

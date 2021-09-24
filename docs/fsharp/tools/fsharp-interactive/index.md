@@ -143,7 +143,7 @@ module MyAssembly
 let myFunction x y = x + 2 * y
 ```
 
-One compiled, you can reference it in a file called `Script.fsx` like so:
+Once compiled, you can reference it in a file called `Script.fsx` like so:
 
 ```fsharp
 #r "path/to/MyAssembly.dll"
@@ -179,8 +179,6 @@ open Script1
 printfn $"%d{square 12}"
 ```
 
-Note that the `open Script1` declaration is required. This is because constructs in an F# script are compiled into a top-level module that is the name of the script file it is in.
-
 You can evaluate `Script2.fsx` like so:
 
 ```console
@@ -189,6 +187,13 @@ dotnet fsi Script2.fsx
 ```
 
 You can specify as many `#load` directives as you like in a script.
+
+> [!NOTE]
+> The `open Script1` declaration is required. This is because constructs in an F# script are compiled into a top-level module that is the name of the script file it is in. If the script file has a lowercase name such as `script3.fsx` then the implied module name is automatically capitalized, and you will need to use `open Script3`. If you would like a loadable-script to define constructs in a specific namespace of module you can include a namespace of module declaration, for example:
+>
+> ```fsharp
+> module MyScriptLibrary
+> ```
 
 ## Using the `fsi` object in F# code
 

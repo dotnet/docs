@@ -6,10 +6,10 @@ ms.assetid: 9c8d6c90-dfa5-4ae0-a589-96679a8fb3ba
 ---
 # 205 - OperationInvoked
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|205|  
 |Keywords|Troubleshooting, ServiceModel|  
 |Level|Information|  

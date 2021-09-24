@@ -23,7 +23,7 @@ Classes and structs have members that represent their data and behavior. A class
 |[Operators](../../language-reference/operators/index.md)|Overloaded operators are considered type members. When you overload an operator, you define it as a public static method in a type. For more information, see [Operator overloading](../../language-reference/operators/operator-overloading.md).|  
 |[Indexers](../indexers/index.md)|Indexers enable an object to be indexed in a manner similar to arrays.|  
 |[Constructors](./constructors.md)|Constructors are methods that are called when the object is first created. They are often used to initialize the data of an object.|  
-|[Finalizers](./destructors.md)|Finalizers are used very rarely in C#. They are methods that are called by the runtime execution engine when the object is about to be removed from memory. They are generally used to make sure that any resources which must be released are handled appropriately.|  
+|[Finalizers](./finalizers.md)|Finalizers are used very rarely in C#. They are methods that are called by the runtime execution engine when the object is about to be removed from memory. They are generally used to make sure that any resources which must be released are handled appropriately.|  
 |[Nested Types](./nested-types.md)|Nested types are types declared within another type. Nested types are often used to describe objects that are used only by the types that contain them.|  
   
 ## See also

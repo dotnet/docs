@@ -6,7 +6,7 @@ Beginning in .NET Framework 4.5, <xref:System.Linq.Enumerable.Empty%60%601> alwa
 
 #### Suggestion
 
-Because the previous behavior was non-deterministic, code is unlikely to depend on it. However, in the unlikely case that empty enumerables are being compared and expected to sometimes be unequal, explicit empty arrays should be created (<code>new T[0]</code>) instead of using <xref:System.Linq.Enumerable.Empty%60%601>.
+Because the previous behavior was non-deterministic, code is unlikely to depend on it. However, in the unlikely case that empty enumerables are being compared and expected to sometimes be unequal, explicit empty arrays should be created (`new T[0]`) instead of using <xref:System.Linq.Enumerable.Empty%60%601>.
 
 | Name    | Value       |
 |:--------|:------------|

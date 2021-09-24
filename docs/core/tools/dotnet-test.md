@@ -1,7 +1,7 @@
 ---
 title: dotnet test command
 description: The dotnet test command is used to execute unit tests in a given project.
-ms.date: 04/29/2020
+ms.date: 07/20/2021
 ---
 # dotnet test
 
@@ -15,7 +15,8 @@ ms.date: 04/29/2020
 
 ```dotnetcli
 dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL>]
-    [-a|--test-adapter-path <ADAPTER_PATH>] [--blame] [--blame-crash]
+    [-a|--test-adapter-path <ADAPTER_PATH>] [--arch <ARCHITECTURE>]
+    [--blame] [--blame-crash]
     [--blame-crash-dump-type <DUMP_TYPE>] [--blame-crash-collect-always]
     [--blame-hang] [--blame-hang-dump-type <DUMP_TYPE>]
     [--blame-hang-timeout <TIMESPAN>]
@@ -24,7 +25,7 @@ dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL>]
     [-d|--diag <LOG_FILE>] [-f|--framework <FRAMEWORK>]
     [--filter <EXPRESSION>] [--interactive]
     [-l|--logger <LOGGER>] [--no-build]
-    [--nologo] [--no-restore] [-o|--output <OUTPUT_DIRECTORY>]
+    [--nologo] [--no-restore] [-o|--output <OUTPUT_DIRECTORY>] [--os <OS>]
     [-r|--results-directory <RESULTS_DIR>] [--runtime <RUNTIME_IDENTIFIER>]
     [-s|--settings <SETTINGS_FILE>] [-t|--list-tests]
     [-v|--verbosity <LEVEL>] [[--] <RunSettings arguments>]
@@ -48,6 +49,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 [!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
 
+[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+
 ## Arguments
 
 - **`PROJECT | SOLUTION | DIRECTORY | DLL`**
@@ -66,6 +69,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`-a|--test-adapter-path <ADAPTER_PATH>`**
 
   Path to a directory to be searched for additional test adapters. Only *.dll* files with suffix `.TestAdapter.dll` are inspected. If not specified, the directory of the test *.dll* is searched.
+
+[!INCLUDE [arch-no-a](../../../includes/cli-arch-no-a.md)]
 
 - **`--blame`**
 
@@ -153,6 +158,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
   Directory in which to find the binaries to run. If not specified, the default path is `./bin/<configuration>/<framework>/`.  For projects with multiple target frameworks (via the `TargetFrameworks` property), you also need to define `--framework` when you specify this option. `dotnet test` always runs tests from the output directory. You can use <xref:System.AppDomain.BaseDirectory%2A?displayProperty=nameWithType> to consume test assets in the output directory.
+
+[!INCLUDE [os](../../../includes/cli-os.md)]
 
 - **`-r|--results-directory <RESULTS_DIR>`**
 

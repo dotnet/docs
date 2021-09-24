@@ -107,10 +107,10 @@ For further information, see [Team Development with Azure Dev Spaces](/azure/dev
 ## Additional resources
 
 - **Getting started with Azure Kubernetes Service (AKS)** \
-  <https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal>
+  [https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal](/azure/aks/kubernetes-walkthrough-portal)
 
 - **Azure Dev Spaces** \
-  <https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces>
+  [https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces](/azure/dev-spaces/azure-dev-spaces)
 
 - **Kubernetes.** The official site. \
   <https://kubernetes.io/>

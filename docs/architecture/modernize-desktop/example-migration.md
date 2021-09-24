@@ -50,7 +50,7 @@ Since the API surface in .NET Framework and .NET is similar but not identical, y
 
 You can find more information about this tool at:
 
-<https://docs.microsoft.com/dotnet/standard/analyzers/portability-analyzer>
+[https://docs.microsoft.com/dotnet/standard/analyzers/portability-analyzer](../../standard/analyzers/portability-analyzer.md)
 
 An interesting aspect of this tool is that it only surfaces the differences from your own code and not code from external packages, which you can't change. Remember you should have updated most of these packages to make them work with .NET.
 
@@ -111,7 +111,7 @@ Update the versions of the packages you've found to be compatible, as shown in t
 
 If your application depends on APIs that aren't available on .NET, such as Registry, ACLs, or WCF, you have to include a reference to the `Microsoft.Windows.Compatibility` package to add these Windows-specific APIs. They work on .NET but aren't included as they aren't cross-platform.
 
-There's a tool called API Analyzer (<https://docs.microsoft.com/dotnet/standard/analyzers/api-analyzer>) that helps you identify APIs that aren't compatible with your code.
+There's a tool called Platform compatibility analyzer ([https://docs.microsoft.com/dotnet/standard/analyzers/platform-compat-analyzer](../../standard/analyzers/platform-compat-analyzer.md)) that helps you identify APIs that aren't compatible with your code.
 
 #### Use \#if directives
 

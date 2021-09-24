@@ -1,4 +1,4 @@
-revision: 1
+revision: 2
 schema-version: 1
 owner-ms-alias: adegeo
 
@@ -29,6 +29,26 @@ issues:
             - labels-remove: [":watch: Not Triaged"]
           fail:
             - labels-add: [":watch: Not Triaged"]
+
+    # Checks for binary/source incompatible checkboxes and adds a label
+    - check:
+        - type: query
+          value: "contains(Issue.body, '- [x] **Binary incompatible**') == `true` || contains(Issue.body, '- [X] **Binary incompatible**') == `true`"
+      pass:
+        - labels-add: ["binary incompatible"]
+
+    - check:
+        - type: query
+          value: "contains(Issue.body, '- [x] **Source incompatible**') == `true` || contains(Issue.body, '- [X] **Source incompatible**') == `true`"
+      pass:
+        - labels-add: ["source incompatible"]
+
+    # Checks breaking change version and adds a label
+    - check:
+        - type: query
+          value: "contains(Issue.body, '.NET 6 Preview') == `true` || contains(Issue.body, '.NET 6 RC') == `true` || contains(Issue.body, '.NET 6 GA') == `true`"
+      pass:
+        - labels-add: [":checkered_flag: Release .NET 6"]
 
     # Add to .NET 6 project if .NET 6 label added
     - check:

@@ -21,7 +21,7 @@ There are a few technologies in .NET Framework that don't exist in .NET:
 
 - [Remoting](net-framework-tech-unavailable.md#remoting)
 
-  Remoting is used for communicating across application domains, which are no longer supported. For communication across processes, consider inter-process communication (IPC) mechanisms as an alternative to remoting, such as the <xref:System.IO.Pipes> class or the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> class.
+  Remoting is used for communicating across application domains, which are no longer supported. For simple communication across processes, consider inter-process communication (IPC) mechanisms as an alternative to remoting, such as the <xref:System.IO.Pipes> class or the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> class. For more complex scenarios, consider frameworks such as [StreamJsonRpc](https://github.com/microsoft/vs-streamjsonrpc) or [ASP.NET Core](/aspnet/core) (either using [gRPC](/aspnet/core/grpc) or [RESTful Web API services](/aspnet/core/web-api)).
 
 - [Code access security (CAS)](net-framework-tech-unavailable.md#code-access-security-cas)
 
@@ -61,7 +61,7 @@ For tutorials on migrating your desktop application to .NET 5, see one of the fo
 
 ## Windows-specific APIs
 
-Applications can still P/Invoke native libraries on platforms supported by .NET. This technology isn't limited to Windows. However, if the library you're referencing is Windows-specific, such as a _user32.dll_ or _kernal32.dll_, then the code only works on Windows. For each platform you want your app to run on, you'll have to either find platform-specific versions, or make your code generic enough to run on all platforms.
+Applications can still P/Invoke native libraries on platforms supported by .NET. This technology isn't limited to Windows. However, if the library you're referencing is Windows-specific, such as a _user32.dll_ or _kernel32.dll_, then the code only works on Windows. For each platform you want your app to run on, you'll have to either find platform-specific versions, or make your code generic enough to run on all platforms.
 
 When porting an application from .NET Framework to .NET, your application probably used a library provided distributed with the .NET Framework. Many APIs that were available in .NET Framework weren't ported to .NET because they relied on Windows-specific technology, such as the Windows Registry or the GDI+ drawing model.
 
@@ -158,5 +158,4 @@ When porting your application to .NET, consider the following suggestions in ord
 - [ASP.NET to ASP.NET Core migration](/aspnet/core/migration/proper-to-2x)
 - [Migrate .NET Framework WPF apps to .NET](/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0&preserve-view=true)
 - [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true)
-- [Port .NET Framework libraries to .NET](libraries.md)
 - [.NET 5 vs. .NET Framework for server apps](../../standard/choosing-core-framework-server.md)

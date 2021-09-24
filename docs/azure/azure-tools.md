@@ -25,7 +25,7 @@ Azure PowerShell is a PowerShell module of cmdlets for managing Azure resource d
 Azure Storage Explorer is a free, GUI tool for managing storage resources and data in Azure.  You can upload, download and manage blobs and files, as well as manage data in Azure queues, tables and CosmosDB.  If you plan on working with any storage resources in Azure, installation of Azure Storage Explorer is recommended.  Versions are available for Windows, macOS and Linux.  
 
 > [!div class="nextstepaction"]
-> [Download Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
+> [Download Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/)
 
 ## Azure Data Studio
 

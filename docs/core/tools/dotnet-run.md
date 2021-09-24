@@ -1,7 +1,7 @@
 ---
 title: dotnet run command
 description: The dotnet run command provides a convenient option to run your application from the source code.
-ms.date: 02/19/2020
+ms.date: 08/18/2021
 ---
 # dotnet run
 
@@ -14,10 +14,11 @@ ms.date: 02/19/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet run [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
-    [--force] [--interactive] [--launch-profile <NAME>] [--no-build]
+dotnet run [-a|--arch <ARCHITECTURE>] [-c|--configuration <CONFIGURATION>]
+    [-f|--framework <FRAMEWORK>] [--force] [--interactive]
+    [--launch-profile <NAME>] [--no-build]
     [--no-dependencies] [--no-launch-profile] [--no-restore]
-    [--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [--os <OS>] [--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
     [-v|--verbosity <LEVEL>] [[--] [application arguments]]
 
 dotnet run -h|--help
@@ -48,6 +49,8 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
+[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+
 ## Options
 
 <!-- markdownlint-disable MD012 -->
@@ -55,6 +58,8 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 - **`--`**
 
   Delimits arguments to `dotnet run` from arguments for the application being run. All arguments after this delimiter are passed to the application run.
+
+[!INCLUDE [arch](../../../includes/cli-arch.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
@@ -90,9 +95,30 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Doesn't execute an implicit restore when running the command.
 
+[!INCLUDE [os](../../../includes/cli-os.md)]
+
 - **`--project <PATH>`**
 
-  Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory. The [`-p` abbreviation for `--project` is deprecated](../compatibility/sdk/6.0/deprecate-p-option-dotnet-run.md) starting in .NET 6 Preview SDK.
+  Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory.
+
+  The [`-p` abbreviation for `--project` is deprecated](../compatibility/sdk/6.0/deprecate-p-option-dotnet-run.md) starting in .NET 6 Preview SDK. For a limited time starting in .NET 6 RC1 SDK, `-p` can still be used for `--project` despite the deprecation warning. If the argument provided for the option doesn't contain `=`, the command accepts `-p` as short for `--project`. Otherwise, the command assumes that `-p` is short for `--property`. This flexible use of `-p` for `--project` will be phased out in .NET 7.
+
+- **`--property:<NAME>=<VALUE>`**
+
+  Sets one or more MSBuild properties. Specify multiple properties delimited by semicolons or by repeating the option:
+
+  ```dotnetcli
+  --property:<NAME1>=<VALUE1>;<NAME2>=<VALUE2>
+  --property:<NAME1>=<VALUE1> --property:<NAME2>=<VALUE2>
+  ```
+
+  The short form `-p` can be used for `--property`. If the argument provided for the option contains `=`, `-p` is accepted as short for `--property`. Otherwise, the command assumes that `-p` is short for `--project`.
+
+  To pass `--property` to the application rather than set an MSBuild property, provide the option after the `--` syntax separator, for example:
+
+  ```dotnetcli
+  dotnet run -- --property name=value
+  ```
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
@@ -112,6 +138,12 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   ```dotnetcli
   dotnet run --project ./projects/proj1/proj1.csproj
+  ```
+
+- Run the project in the current directory, specifying Release configuration:
+
+  ```dotnetcli
+  dotnet run --property:Configuration=Release
   ```
 
 - Run the project in the current directory (the `--help` argument in this example is passed to the application, since the blank `--` option is used):

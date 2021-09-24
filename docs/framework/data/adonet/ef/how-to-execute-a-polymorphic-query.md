@@ -10,7 +10,7 @@ ms.assetid: 2f05da1e-845b-4f14-83e4-c6353a850553
 
 # How to: Execute a Polymorphic Query
 
-This topic shows how to execute a polymorphic [!INCLUDE[esql](../../../../../includes/esql-md.md)] query using the [OFTYPE](./language-reference/oftype-entity-sql.md) operator.
+This topic shows how to execute a polymorphic Entity SQL query using the [OFTYPE](./language-reference/oftype-entity-sql.md) operator.
 
 ### To run the code in this example
 

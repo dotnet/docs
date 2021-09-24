@@ -6,10 +6,10 @@ ms.assetid: 063fc8d2-ceac-4c18-8368-de84f2c78035
 ---
 # 212 - ParameterInspectorBeforeCallInvoked
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|212|  
 |Keywords|Troubleshooting, ServiceModel|  
 |Level|Information|  

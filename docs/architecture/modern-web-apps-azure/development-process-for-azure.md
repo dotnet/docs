@@ -97,7 +97,7 @@ While the Web App is running, you can monitor the health of the application and 
 ## References
 
 **Build and Deploy Your ASP.NET Core App to Azure**  
-<https://docs.microsoft.com/azure/devops/build-release/apps/aspnet/build-aspnet-core>
+[https://docs.microsoft.com/azure/devops/build-release/apps/aspnet/build-aspnet-core](/azure/devops/build-release/apps/aspnet/build-aspnet-core)
 
 >[!div class="step-by-step"]
 >[Previous](test-asp-net-core-mvc-apps.md)

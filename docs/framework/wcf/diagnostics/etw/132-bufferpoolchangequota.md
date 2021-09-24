@@ -10,12 +10,12 @@ BufferPoolChangeQuota
   
 ## Properties  
   
-|||  
-|-|-|  
-|ID|132|  
-|Keywords|Infrastructure|  
-|Level|Verbose|  
-|Channel|Debug|  
+| Property | Value          |
+| -------- | -------------- |
+| ID       | 132            |
+| Keywords | Infrastructure |
+| Level    | Verbose        |
+| Channel  | Debug          |
   
 ## Description  
 
@@ -23,6 +23,4 @@ BufferPoolChangeQuota
   
 ## Message  
 
- BufferPool of size %1, changing quota by %2.  
-  
-## Details
+ BufferPool of size %1, changing quota by %2.

@@ -6,10 +6,10 @@ ms.assetid: fc8309d9-eb3a-4636-a6f0-dd0018c1361d
 ---
 # 3552 - MaxPendingMessagesPerChannelExceeded
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|3552|  
 |Keywords|Quota, WFServices|  
 |Level|Warning|  

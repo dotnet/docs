@@ -117,11 +117,11 @@ Running a container on Windows with or without Hyper-V isolation is a run-time d
 
 - **Windows Containers documentation**
 
-    <https://docs.microsoft.com/virtualization/windowscontainers/>
+    [https://docs.microsoft.com/virtualization/windowscontainers/](/virtualization/windowscontainers/)
 
 - **Windows Containers fundamentals**
 
-    <https://docs.microsoft.com/virtualization/windowscontainers/about/>
+    [https://docs.microsoft.com/virtualization/windowscontainers/about/](/virtualization/windowscontainers/about/)
 
 - **Infographic: Microsoft and containers**
 

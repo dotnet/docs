@@ -49,11 +49,11 @@ Microsoft Azure Stack Development Kit is a single-node deployment of Azure Stack
 
 - **Active Directory Service Accounts for Windows Containers**
 
-    <https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/manage-serviceaccounts>
+    [https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/manage-serviceaccounts](/virtualization/windowscontainers/manage-containers/manage-serviceaccounts)
 
 - **Create a container with Active Directory support**
 
-    <https://docs.microsoft.com/archive/blogs/containerstuff/create-a-container-with-active-directory-support>
+    [https://docs.microsoft.com/archive/blogs/containerstuff/create-a-container-with-active-directory-support](/archive/blogs/containerstuff/create-a-container-with-active-directory-support)
 
 - **Azure Hybrid Benefit licensing**
 

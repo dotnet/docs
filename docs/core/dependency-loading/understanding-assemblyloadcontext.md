@@ -3,7 +3,6 @@ title: Understanding AssemblyLoadContext - .NET Core
 description: Key concepts to understand the purpose and behavior of AssemblyLoadContext in .NET Core.
 ms.date: 08/09/2019
 author: sdmaclea
-ms.author: stmaclea
 ---
 # Understanding System.Runtime.Loader.AssemblyLoadContext
 

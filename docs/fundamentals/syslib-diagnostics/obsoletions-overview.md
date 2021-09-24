@@ -2,7 +2,7 @@
 title: Obsolete features in .NET 5+
 titleSuffix: ""
 description: Learn about APIs that are marked as obsolete in .NET 5 and later versions that produce SYSLIB compiler warnings.
-ms.date: 07/16/2021
+ms.date: 09/07/2021
 ---
 
 # Obsolete features in .NET 5+
@@ -52,6 +52,10 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0029][0029] | Warning | `ProduceLegacyHmacValues` is obsolete. Producing legacy HMAC values is no longer supported. |
 | [SYSLIB0030][0030] | Warning | `HMACSHA1` always uses the algorithm implementation provided by the platform. Use a constructor without the `useManagedSha1` parameter. |
 | [SYSLIB0031][0031] | Warning | <xref:System.Security.Cryptography.CryptoConfig.EncodeOID(System.String)?displayProperty=nameWithType> is obsolete. Use the ASN.1 functionality provided in <xref:System.Formats.Asn1?displayProperty=fullName>. |
+| [SYSLIB0032][0032] | Warning | Recovery from corrupted process state exceptions is not supported; <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> is ignored. |
+| [SYSLIB0033][0033] | Warning | <xref:System.Security.Cryptography.Rfc2898DeriveBytes.CryptDeriveKey(System.String,System.String,System.Int32,System.Byte[])?displayProperty=nameWithType> is obsolete and is not supported. Use <xref:System.Security.Cryptography.PasswordDeriveBytes.CryptDeriveKey(System.String,System.String,System.Int32,System.Byte[])?displayProperty=nameWithType> instead. |
+| [SYSLIB0034][0034] | Warning | <xref:System.Security.Cryptography.Pkcs.CmsSigner.%23ctor(System.Security.Cryptography.CspParameters)> is obsolete. Use an alternative constructor instead. |
+| [SYSLIB0035][0035] | Warning | <xref:System.Security.Cryptography.Pkcs.SignerInfo.ComputeCounterSignature?displayProperty=nameWithType> is obsolete. Use the overload that accepts a <xref:System.Security.Cryptography.Pkcs.CmsSigner> instead. |
 
 <!-- Include adds ## Suppress warnings (H2 heading) -->
 [!INCLUDE [suppress-syslib-warning](includes/suppress-syslib-warning.md)]
@@ -87,3 +91,7 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 [0029]: syslib0029.md
 [0030]: syslib0030.md
 [0031]: syslib0031.md
+[0032]: syslib0032.md
+[0033]: syslib0033.md
+[0034]: syslib0034.md
+[0035]: syslib0035.md

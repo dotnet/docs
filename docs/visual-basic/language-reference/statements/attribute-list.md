@@ -19,12 +19,12 @@ Specifies the attributes to be applied to a declared programming element. Multip
   
 ## Parts  
 
-|||
-|---|---|
-|`attributemodifier`|Required for attributes applied at the beginning of a source file. Can be [Assembly](../modifiers/assembly.md) or [Module](../modifiers/module-keyword.md).|
-|`attributename`| Required. Name of the attribute.|
-|`attributearguments`|Optional. List of positional arguments for this attribute. Multiple arguments are separated by commas.|
-|`attributeinitializer`|Optional. List of variable or property initializers for this attribute. Multiple initializers are separated by commas.|
+| Part                   | Description                                                                                                                                                 |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `attributemodifier`    | Required for attributes applied at the beginning of a source file. Can be [Assembly](../modifiers/assembly.md) or [Module](../modifiers/module-keyword.md). |
+| `attributename`        | Required. Name of the attribute.                                                                                                                            |
+| `attributearguments`   | Optional. List of positional arguments for this attribute. Multiple arguments are separated by commas.                                                      |
+| `attributeinitializer` | Optional. List of variable or property initializers for this attribute. Multiple initializers are separated by commas.                                      |
   
 ## Remarks  
 

@@ -1,3 +1,4 @@
+items:
 - name: Profiling
   href: index.md
   items:
@@ -242,6 +243,13 @@
       items:
       - name: DynamicMethodUnloaded Method
         href: icorprofilercallback9-dynamicmethodunloaded-method.md
+    - name: ICorProfilerCallback10 Interface
+      href: icorprofilercallback10-interface.md
+      items:
+      - name: EventPipeEventDelivered Method
+        href: icorprofilercallback10-eventpipeeventdelivered-method.md
+      - name: EventPipeProviderCreated Method
+        href: icorprofilercallback10-eventpipeprovidercreated-method.md
     - name: ICorProfilerFunctionEnum Interface
       href: icorprofilerfunctionenum-interface.md
       items:
@@ -477,6 +485,30 @@
         href: icorprofilerinfo10-resumeruntime-method.md
       - name: SuspendRuntime Method
         href: icorprofilerinfo10-suspendruntime-method.md
+    - name: ICorProfilerInfo11 Interface
+      href: icorprofilerinfo11-interface.md
+      items:
+      - name: GetEnvironmentVariable Method
+        href: icorprofilerinfo11-getenvironmentvariable-method.md
+      - name: SetEnvironmentVariable Method
+        href: icorprofilerinfo11-setenvironmentvariable-method.md
+    - name: ICorProfilerInfo12 Interface
+      href: icorprofilerinfo12-interface.md
+      items:
+      - name: EventPipeAddProviderToSession Method
+        href: icorprofilerinfo12-eventpipeaddprovidertosession-method.md
+      - name: EventPipeCreateProvider Method
+        href: icorprofilerinfo12-eventpipecreateprovider-method.md
+      - name: EventPipeDefineEvent Method
+        href: icorprofilerinfo12-eventpipedefineevent-method.md
+      - name: EventPipeGetProviderInfo Method
+        href: icorprofilerinfo12-eventpipegetproviderinfo-method.md
+      - name: EventPipeStartSession Method
+        href: icorprofilerinfo12-eventpipestartsession-method.md
+      - name: EventPipeStopSession Method
+        href: icorprofilerinfo12-eventpipestopsession-method.md
+      - name: EventPipeWriteEvent Method
+        href: icorprofilerinfo12-eventpipewriteevent-method.md
     - name: ICorProfilerModuleEnum Interface
       href: icorprofilermoduleenum-interface.md
       items:
@@ -593,6 +625,10 @@
       href: cor-prf-suspend-reason-enumeration.md
     - name: COR_PRF_TRANSITION_REASON Enumeration
       href: cor-prf-transition-reason-enumeration.md
+    - name: COR_PRF_EVENTPIPE_LEVEL Enumeration
+      href: cor-prf-eventpipe-level-enumeration.md
+    - name: COR_PRF_EVENTPIPE_PARAM_TYPE Enumeration
+      href: cor-prf-eventpipe-param-type-enumeration.md
   - name: Profiling Structures
     href: profiling-structures.md
     items:
@@ -600,6 +636,12 @@
       href: cor-prf-assembly-reference-info-structure.md
     - name: COR_PRF_CODE_INFO Structure
       href: cor-prf-code-info-structure.md
+    - name: COR_PRF_EVENT_DATA Structure
+      href: cor-prf-event-data-structure.md
+    - name: COR_PRF_EVENTPIPE_PARAM_DESC Structure
+      href: cor-prf-eventpipe-param-desc-structure.md
+    - name: COR_PRF_EVENTPIPE_PROVIDER_CONFIG Structure
+      href: cor-prf-eventpipe-provider-config-structure.md
     - name: COR_PRF_EX_CLAUSE_INFO Structure
       href: cor-prf-ex-clause-info-structure.md
     - name: COR_PRF_FUNCTION Structure

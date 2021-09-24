@@ -79,10 +79,12 @@ If you add the attribute to the global suppressions file, you [scope](xref:Syste
 [assembly: SuppressMessage("Usage", "CA2200:Rethrow to preserve stack details", Justification = "Not production code.", Scope = "member", Target = "~M:MyApp.Program.IngorableCharacters")]
 ```
 
+Use the *documentation ID* for the API you want to reference in the `Target` attribute. For information about documentation IDs, see [Documentation ID format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format).
+
 To suppress warnings for compiler-generated code that doesn't map to explicitly provided user source, you must put the suppression attribute in a global suppressions file. For example, the following code suppresses a violation against a compiler-emitted constructor:
 
 ```csharp
-[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="MyTools.Type..ctor()")]
+[module: SuppressMessage("Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="MyTools.Type..ctor()")]
 ```
 
 ## See also

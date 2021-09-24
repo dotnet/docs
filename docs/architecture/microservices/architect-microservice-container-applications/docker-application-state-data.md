@@ -1,9 +1,9 @@
 ---
-title: State and data in Docker applications
-description: State and data management in Docker applications. Microservice instances are expendable, but DATA IS NOT, how to handle this with microservices.
+title: Manage state and data in Docker applications
+description: State and data management in Docker applications. Microservice instances are expendable, but data is NOT. Learn how to handle this with microservices.
 ms.date: 09/20/2018
 ---
-# State and data in Docker applications
+# Manage state and data in Docker applications
 
 In most cases, you can think of a container as an instance of a process. A process doesn't maintain persistent state. While a container can write to its local storage, assuming that an instance will be around indefinitely would be like assuming that a single location in memory will be durable. You should assume that container images, like processes, have multiple instances or will eventually be killed. If they're managed with a container orchestrator, you should assume that they might get moved from one node or VM to another.
 

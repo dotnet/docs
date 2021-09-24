@@ -1,7 +1,7 @@
 ---
 title: dotnet pack command
 description: The dotnet pack command creates NuGet packages for your .NET project.
-ms.date: 04/28/2020
+ms.date: 08/23/2021
 ---
 # dotnet pack
 
@@ -53,6 +53,8 @@ Web projects aren't packable by default. To override the default behavior, add t
 ### Implicit restore
 
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
+
+[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
 
 ## Arguments
 
@@ -110,11 +112,23 @@ Web projects aren't packable by default. To override the default behavior, add t
 
   Sets the serviceable flag in the package. For more information, see [.NET Blog: .NET Framework 4.5.1 Supports Microsoft Security Updates for .NET NuGet Libraries](https://aka.ms/nupkgservicing).
 
+[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
+
 - **`--version-suffix <VERSION_SUFFIX>`**
 
-  Defines the value for the `$(VersionSuffix)` MSBuild property in the project.
+  Defines the value for the `VersionSuffix` MSBuild property. The effect of this property on the package version depends on the values of the `Version` and `VersionPrefix` properties, as shown in the following table:
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
+  | Properties with values              | Package version                     |
+  |-------------------------------------|-------------------------------------|
+  | None                                | `1.0.0`                             |
+  | `Version`                           | `$(Version)`                        |
+  | `VersionPrefix` only                | `$(VersionPrefix)`                  |
+  | `VersionSuffix` only                | `1.0.0-$(VersionSuffix)`            |
+  | `VersionPrefix` and `VersionSuffix` | `$(VersionPrefix)-$(VersionSuffix)` |
+
+  If you want to use `--version-suffix`, specify `VersionPrefix` and not `Version` in the project file. For example, if `VersionPrefix` is `0.1.2` and you pass `--version-suffix rc1` to `dotnet pack`, the package version will be `0.1.2-rc1`.
+
+  If `Version` has a value and you pass `--version-suffix` to `dotnet pack`, the value specified for `--version-suffix` is ignored.
 
 ## Examples
 

@@ -1,7 +1,7 @@
 ---
 title: Environment variables used by .NET SDK, .NET CLI, and .NET runtime
 description: Learn about the environment variables that you can use to configure the .NET SDK, .NET CLI, and .NET runtime.
-ms.date: 07/19/2021
+ms.date: 07/20/2021
 ---
 # Environment variables used by .NET SDK, .NET CLI, and .NET runtime
 
@@ -94,8 +94,16 @@ Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, 
 
 The typical way to get detailed trace information about application startup is to set `COREHOST_TRACE=1` and`COREHOST_TRACEFILE=host_trace.txt` and then run the application. A new file `host_trace.txt` will be created in the current directory with the detailed information.
 
+## `DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_DISABLE`
+
+Disables background download of advertising manifests for workloads. Default is `false` - not disabled. If set to `true`, downloading is disabled. For more information, see [Advertising manifests](dotnet-workload-install.md#advertising-manifests).
+
+## `DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_INTERVAL_HOURS`
+
+Specifies the minimum number of hours between background downloads of advertising manifests for workloads. Default is `24` - no more frequently than once a day. For more information, see [Advertising manifests](dotnet-workload-install.md#advertising-manifests).
+
 ## See also
 
 - [dotnet command](dotnet.md)
 - [Runtime Configuration Files](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md)
-- [.NET run-time configuration settings](../run-time-config/index.md)
+- [.NET runtime configuration settings](../run-time-config/index.md)

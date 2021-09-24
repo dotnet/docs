@@ -6,10 +6,10 @@ ms.assetid: 5bee501e-4e00-42cd-b949-e88009c3d4e8
 ---
 # 108 - CustomTrackingRecordInfo
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |Id|108|  
 |Keywords|UserEvents, EndToEndMonitoring, Troubleshooting, HealthMonitoring, WFTracking|  
 |Level|Information|  

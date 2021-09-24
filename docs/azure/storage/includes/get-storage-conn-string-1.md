@@ -1,0 +1,1 @@
+On the left hand side of the Storage account page, locate the menu item named **Access Keys** under the *Security + networking* header and select it. You will be taken to a page where you can retrieve the connection string for the storage account.

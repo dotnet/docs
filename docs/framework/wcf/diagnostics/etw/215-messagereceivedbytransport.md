@@ -6,10 +6,10 @@ ms.assetid: bb32aa60-5207-4711-9f08-110e8ac327e5
 ---
 # 215 - MessageReceivedByTransport
 
-## Properties  
-  
-|||  
-|-|-|  
+## Properties
+
+| Property | Value |
+| - | - |
 |ID|215|  
 |Keywords|Troubleshooting, ServiceModel|  
 |Level|Information|  

@@ -2,7 +2,7 @@
 title: "Breaking change: .NET 6 obsoletions with non-default diagnostic IDs"
 titleSuffix: ""
 description: Learn about the .NET 6 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
-ms.date: 07/18/2021
+ms.date: 09/07/2021
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 6)
 
@@ -30,11 +30,15 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | [SYSLIB0024](../../../../fundamentals/syslib-diagnostics/syslib0024.md) | Creating and unloading [AppDomains](xref:System.AppDomain) is not supported and throws an exception. | Warning |
 | [SYSLIB0025](../../../../fundamentals/syslib-diagnostics/syslib0025.md) | <xref:System.Runtime.CompilerServices.SuppressIldasmAttribute> has no effect in .NET 6+. | Warning |
 | [SYSLIB0026](../../../../fundamentals/syslib-diagnostics/syslib0026.md) | <xref:System.Security.Cryptography.X509Certificates.X509Certificate> and <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> are immutable. Use the appropriate constructor to create a new certificate. | Warning |
-| [SYSLIB0027][../../../../fundamentals/syslib-diagnostics/syslib0027.md] | <xref:System.Security.Cryptography.X509Certificates.PublicKey.Key?displayProperty=nameWithType> is obsolete. Use the appropriate method to get the public key, such as <xref:System.Security.Cryptography.X509Certificates.PublicKey.GetRSAPublicKey>. | Warning |
-| [SYSLIB0028][../../../../fundamentals/syslib-diagnostics/syslib0028.md] | <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.PrivateKey?displayProperty=nameWithType> is obsolete. Use the appropriate method to get the private key, such as <xref:System.Security.Cryptography.X509Certificates.RSACertificateExtensions.GetRSAPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2)?displayProperty=nameWithType>, or use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.CopyWithPrivateKey(System.Security.Cryptography.ECDiffieHellman)?displayProperty=nameWithType> method to create a new instance with a private key. | Warning |
-| [SYSLIB0029][../../../../fundamentals/syslib-diagnostics/syslib0029.md] | `ProduceLegacyHmacValues` is obsolete. Producing legacy HMAC values is no longer supported. | Warning |
-| [SYSLIB0030][../../../../fundamentals/syslib-diagnostics/syslib0030.md] | `HMACSHA1` always uses the algorithm implementation provided by the platform. Use a constructor without the `useManagedSha1` parameter. | Warning |
-| [SYSLIB0031][../../../../fundamentals/syslib-diagnostics/syslib0031.md] | <xref:System.Security.Cryptography.CryptoConfig.EncodeOID(System.String)?displayProperty=nameWithType> is obsolete. Use the ASN.1 functionality provided in <xref:System.Formats.Asn1?displayProperty=fullName>. | Warning |
+| [SYSLIB0027](../../../../fundamentals/syslib-diagnostics/syslib0027.md) | <xref:System.Security.Cryptography.X509Certificates.PublicKey.Key?displayProperty=nameWithType> is obsolete. Use the appropriate method to get the public key, such as <xref:System.Security.Cryptography.X509Certificates.PublicKey.GetRSAPublicKey>. | Warning |
+| [SYSLIB0028](../../../../fundamentals/syslib-diagnostics/syslib0028.md) | <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.PrivateKey?displayProperty=nameWithType> is obsolete. Use the appropriate method to get the private key, such as <xref:System.Security.Cryptography.X509Certificates.RSACertificateExtensions.GetRSAPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2)?displayProperty=nameWithType>, or use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.CopyWithPrivateKey(System.Security.Cryptography.ECDiffieHellman)?displayProperty=nameWithType> method to create a new instance with a private key. | Warning |
+| [SYSLIB0029](../../../../fundamentals/syslib-diagnostics/syslib0029.md) | `ProduceLegacyHmacValues` is obsolete. Producing legacy HMAC values is no longer supported. | Warning |
+| [SYSLIB0030](../../../../fundamentals/syslib-diagnostics/syslib0030.md) | `HMACSHA1` always uses the algorithm implementation provided by the platform. Use a constructor without the `useManagedSha1` parameter. | Warning |
+| [SYSLIB0031](../../../../fundamentals/syslib-diagnostics/syslib0031.md) | <xref:System.Security.Cryptography.CryptoConfig.EncodeOID(System.String)?displayProperty=nameWithType> is obsolete. Use the ASN.1 functionality provided in <xref:System.Formats.Asn1?displayProperty=fullName>. | Warning |
+| [SYSLIB0032](../../../../fundamentals/syslib-diagnostics/syslib0032.md) | Recovery from corrupted process state exceptions is not supported; <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> is ignored. |
+| [SYSLIB0033](../../../../fundamentals/syslib-diagnostics/syslib0033.md) | <xref:System.Security.Cryptography.Rfc2898DeriveBytes.CryptDeriveKey(System.String,System.String,System.Int32,System.Byte[])?displayProperty=nameWithType> is obsolete and is not supported. Use <xref:System.Security.Cryptography.PasswordDeriveBytes.CryptDeriveKey(System.String,System.String,System.Int32,System.Byte[])?displayProperty=nameWithType> instead. |
+| [SYSLIB0034](../../../../fundamentals/syslib-diagnostics/syslib0034.md) | <xref:System.Security.Cryptography.Pkcs.CmsSigner.%23ctor(System.Security.Cryptography.CspParameters)> is obsolete. Use an alternative constructor instead. |
+| [SYSLIB0035](../../../../fundamentals/syslib-diagnostics/syslib0035.md) | <xref:System.Security.Cryptography.Pkcs.SignerInfo.ComputeCounterSignature?displayProperty=nameWithType> is obsolete. Use the overload that accepts a <xref:System.Security.Cryptography.Pkcs.CmsSigner> instead. |
 
 ## Version introduced
 
@@ -150,6 +154,22 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 ### SYSLIB0031
 
 - <xref:System.Security.Cryptography.CryptoConfig.EncodeOID(System.String)?displayProperty=nameWithType>
+
+### SYSLIB0032
+
+- <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=nameWithType>
+
+### SYSLIB0033
+
+- <xref:System.Security.Cryptography.Rfc2898DeriveBytes.CryptDeriveKey(System.String,System.String,System.Int32,System.Byte[])?displayProperty=nameWithType>
+
+### SYSLIB0034
+
+- <xref:System.Security.Cryptography.Pkcs.CmsSigner.%23ctor(System.Security.Cryptography.CspParameters)>
+
+### SYSLIB0035
+
+- <xref:System.Security.Cryptography.Pkcs.SignerInfo.ComputeCounterSignature?displayProperty=nameWithType?displayProperty=nameWithType>
 
 ## See also
 

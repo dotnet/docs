@@ -23,8 +23,7 @@ class BaseClassWithSafeHandle : IDisposable
 
         if (disposing)
         {
-           // Dispose managed state (managed objects).
-            _safeHandle?.Dispose();
+            _safeHandle.Dispose();
         }
 
         _disposed = true;

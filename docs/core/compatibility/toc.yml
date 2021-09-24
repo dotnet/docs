@@ -25,6 +25,8 @@ items:
         href: 6.0.md
       - name: ASP.NET Core
         items:
+        - name: AddDataAnnotationsValidation method made obsolete
+          href: aspnet-core/6.0/adddataannotationsvalidation-obsolete.md
         - name: Assemblies removed from shared framework
           href: aspnet-core/6.0/assemblies-removed-from-shared-framework.md
         - name: "Blazor: Parameter name changed in RequestImageFileAsync method"
@@ -33,6 +35,8 @@ items:
           href: aspnet-core/6.0/blazor-eventargstype-property-replaced.md
         - name: "Blazor: Byte-array interop"
           href: aspnet-core/6.0/byte-array-interop.md
+        - name: "Blazor server: Disable long-polling fallback"
+          href: aspnet-core/6.0/blazor-long-polling-fallback.md
         - name: ClientCertificate doesn't trigger renegotiation
           href: aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md
         - name: "Kestrel: Log message attributes changed"
@@ -55,10 +59,14 @@ items:
           href: aspnet-core/6.0/preservecompilationcontext-not-set-by-default.md
         - name: "Razor: Compiler generates single assembly"
           href: aspnet-core/6.0/razor-compiler-doesnt-produce-views-assembly.md
+        - name: "Razor: Logging ID changes"
+          href: aspnet-core/6.0/razor-pages-logging-ids.md
         - name: "Razor: RazorEngine APIs marked obsolete"
           href: aspnet-core/6.0/razor-engine-apis-obsolete.md
         - name: "SignalR: Java Client updated to RxJava3"
           href: aspnet-core/6.0/signalr-java-client-updated.md
+        - name: TryParse and BindAsync methods are validated
+          href: aspnet-core/6.0/tryparse-bindasync-validation.md
       - name: Core .NET libraries
         items:
         - name: API obsoletions with non-default diagnostic IDs
@@ -71,6 +79,8 @@ items:
           href: core-libraries/6.0/filestream-position-updates-after-readasync-writeasync-completion.md
         - name: New diagnostic IDs for obsoleted APIs
           href: core-libraries/6.0/diagnostic-id-change-for-obsoletions.md
+        - name: New nullable annotation in AssociatedMetadataTypeTypeDescriptionProvider
+          href: core-libraries/6.0/nullable-ref-type-annotations-added.md
         - name: New Queryable method overloads
           href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
         - name: Nullability annotation changes
@@ -83,8 +93,24 @@ items:
           href: core-libraries/6.0/partial-byte-reads-in-streams.md
         - name: Standard numeric format parsing precision
           href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
+        - name: Static abstract members in interfaces
+          href: core-libraries/6.0/static-abstract-interface-methods.md
+        - name: System.Drawing.Common only supported on Windows
+          href: core-libraries/6.0/system-drawing-common-windows-only.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
+      - name: Extensions
+        items:
+        - name: Configuration binder binds single elements to an array
+          href: extensions/6.0/bind-single-elements-to-array.md
+      - name: Globalization
+        items:
+        - name: Culture creation and case mapping in globalization-invariant mode
+          href: globalization/6.0/culture-creation-invariant-mode.md
+      - name: Interop
+        items:
+        - name: Static abstract members in interfaces
+          href: core-libraries/6.0/static-abstract-interface-methods.md
       - name: JIT compiler
         items:
         - name: Call argument coercion
@@ -97,12 +123,30 @@ items:
         items:
         - name: -p option for `dotnet run` is deprecated
           href: sdk/6.0/deprecate-p-option-dotnet-run.md
+        - name: C# code in templates not supported by earlier versions
+          href: sdk/6.0/csharp-template-code.md
         - name: Generate apphost for macOS
           href: sdk/6.0/apphost-generated-for-macos.md
         - name: Generate error for duplicate files in publish output
           href: sdk/6.0/duplicate-files-in-output.md
         - name: GetTargetFrameworkProperties and GetNearestTargetFramework removed
           href: sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md
+        - name: Implicit `global using` directives in C# projects
+          href: sdk/6.0/implicit-namespaces.md
+        - name: Implicit `global using` directives disabled
+          href: sdk/6.0/implicit-namespaces-rc1.md
+        - name: OutputType not automatically set to WinExe
+          href: sdk/6.0/outputtype-not-set-automatically.md
+        - name: RuntimeIdentifier warning if self-contained is unspecified
+          href: sdk/6.0/runtimeidentifier-self-contained.md
+      - name: Serialization
+        items:
+        - name: JSON source-generation API refactoring
+          href: serialization/6.0/json-source-gen-api-refactor.md
+        - name: JsonNode no longer supports C# `dynamic`
+          href: serialization/6.0/jsonnode-dynamic-type.md
+        - name: New JsonSerializer source generator overloads
+          href: serialization/6.0/jsonserializer-source-generator-overloads.md
       - name: Windows Forms
         items:
         - name: APIs throw ArgumentNullException
@@ -121,8 +165,6 @@ items:
         href: 5.0.md
       - name: ASP.NET Core
         items:
-        - name: AddDataAnnotationsValidation method made obsolete
-          href: aspnet-core/6.0/adddataannotationsvalidation-obsolete.md
         - name: ASP.NET Core apps deserialize quoted numbers
           href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
         - name: AzureAD.UI and AzureADB2C.UI APIs obsolete
@@ -317,10 +359,6 @@ items:
           href: networking/5.0/winhttphandler-removed-from-runtime.md
       - name: SDK and MSBuild
         items:
-        - name: -p option for `dotnet run` is deprecated
-          href: sdk/6.0/deprecate-p-option-dotnet-run.md
-        - name: Generate apphost for macOS
-          href: sdk/6.0/apphost-generated-for-macos.md
         - name: Error when referencing mismatched executable
           href: sdk/5.0/referencing-executable-generates-error.md
         - name: OutputType set to WinExe
@@ -335,6 +373,8 @@ items:
           href: sdk/5.0/publishdepsfilepath-behavior-change.md
         - name: TargetFramework change from netcoreapp to net
           href: sdk/5.0/targetframework-name-change.md
+        - name: Use WindowsSdkPackageVersion for Windows SDK
+          href: sdk/5.0/override-windows-sdk-package-version.md
       - name: Security
         items:
         - name: Code access security APIs are obsolete
@@ -407,6 +447,8 @@ items:
           href: aspnet-core/6.0/blazor-eventargstype-property-replaced.md
         - name: "Blazor: Byte-array interop"
           href: aspnet-core/6.0/byte-array-interop.md
+        - name: "Blazor server: Disable long-polling fallback"
+          href: aspnet-core/6.0/blazor-long-polling-fallback.md
         - name: ClientCertificate doesn't trigger renegotiation
           href: aspnet-core/6.0/clientcertificate-doesnt-trigger-renegotiation.md
         - name: "Kestrel: Log message attributes changed"
@@ -429,10 +471,14 @@ items:
           href: aspnet-core/6.0/preservecompilationcontext-not-set-by-default.md
         - name: "Razor: Compiler generates single assembly"
           href: aspnet-core/6.0/razor-compiler-doesnt-produce-views-assembly.md
+        - name: "Razor: Logging ID changes"
+          href: aspnet-core/6.0/razor-pages-logging-ids.md
         - name: "Razor: RazorEngine APIs marked obsolete"
           href: aspnet-core/6.0/razor-engine-apis-obsolete.md
         - name: "SignalR: Java Client updated to RxJava3"
           href: aspnet-core/6.0/signalr-java-client-updated.md
+        - name: TryParse and BindAsync methods are validated
+          href: aspnet-core/6.0/tryparse-bindasync-validation.md
       - name: .NET 5
         items:
         - name: ASP.NET Core apps deserialize quoted numbers
@@ -543,6 +589,8 @@ items:
           href: core-libraries/6.0/filestream-position-updates-after-readasync-writeasync-completion.md
         - name: New diagnostic IDs for obsoleted APIs
           href: core-libraries/6.0/diagnostic-id-change-for-obsoletions.md
+        - name: New nullable annotation in AssociatedMetadataTypeTypeDescriptionProvider
+          href: core-libraries/6.0/nullable-ref-type-annotations-added.md
         - name: New Queryable method overloads
           href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
         - name: Nullability annotation changes
@@ -555,6 +603,10 @@ items:
           href: core-libraries/6.0/partial-byte-reads-in-streams.md
         - name: Standard numeric format parsing precision
           href: core-libraries/6.0/numeric-format-parsing-handles-higher-precision.md
+        - name: Static abstract members in interfaces
+          href: core-libraries/6.0/static-abstract-interface-methods.md
+        - name: System.Drawing.Common only supported on Windows
+          href: core-libraries/6.0/system-drawing-common-windows-only.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
       - name: .NET 5
@@ -639,8 +691,18 @@ items:
         href: /ef/core/what-is-new/ef-core-5.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: EF Core 3.1
         href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+    - name: Extensions
+      items:
+      - name: .NET 6
+        items:
+        - name: Configuration binder binds single elements to an array
+          href: extensions/6.0/bind-single-elements-to-array.md
     - name: Globalization
       items:
+      - name: .NET 6
+        items:
+        - name: Culture creation and case mapping in globalization-invariant mode
+          href: globalization/6.0/culture-creation-invariant-mode.md
       - name: .NET 5
         items:
         - name: Use ICU libraries on Windows
@@ -655,6 +717,10 @@ items:
         href: globalization.md
     - name: Interop
       items:
+      - name: .NET 6
+        items:
+        - name: Static abstract members in interfaces
+          href: core-libraries/6.0/static-abstract-interface-methods.md
       - name: .NET 5
         items:
         - name: Support for WinRT is removed
@@ -693,10 +759,24 @@ items:
       items:
       - name: .NET 6
         items:
+        - name: -p option for `dotnet run` is deprecated
+          href: sdk/6.0/deprecate-p-option-dotnet-run.md
+        - name: C# code in templates not supported by earlier versions
+          href: sdk/6.0/csharp-template-code.md
+        - name: Generate apphost for macOS
+          href: sdk/6.0/apphost-generated-for-macos.md
         - name: Generate error for duplicate files in publish output
           href: sdk/6.0/duplicate-files-in-output.md
         - name: GetTargetFrameworkProperties and GetNearestTargetFramework removed
           href: sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md
+        - name: Implicit `global using` directives in C# projects
+          href: sdk/6.0/implicit-namespaces.md
+        - name: Implicit `global using` directives disabled
+          href: sdk/6.0/implicit-namespaces-rc1.md
+        - name: OutputType not automatically set to WinExe
+          href: sdk/6.0/outputtype-not-set-automatically.md
+        - name: RuntimeIdentifier warning if self-contained is unspecified
+          href: sdk/6.0/runtimeidentifier-self-contained.md
       - name: .NET 5
         items:
         - name: Directory.Packages.props files imported by default
@@ -711,6 +791,8 @@ items:
           href: sdk/5.0/publishdepsfilepath-behavior-change.md
         - name: TargetFramework change from netcoreapp to net
           href: sdk/5.0/targetframework-name-change.md
+        - name: Use WindowsSdkPackageVersion for Windows SDK
+          href: sdk/5.0/override-windows-sdk-package-version.md
         - name: WinForms and WPF apps use Microsoft.NET.Sdk
           href: sdk/5.0/sdk-and-target-framework-change.md
       - name: .NET Core 2.1 - 3.1
@@ -727,6 +809,14 @@ items:
           href: core-libraries/5.0/utf-7-code-paths-obsolete.md
     - name: Serialization
       items:
+      - name: .NET 6
+        items:
+        - name: JSON source-generation API refactoring
+          href: serialization/6.0/json-source-gen-api-refactor.md
+        - name: JsonNode no longer supports C# `dynamic`
+          href: serialization/6.0/jsonnode-dynamic-type.md
+        - name: New JsonSerializer source generator overloads
+          href: serialization/6.0/jsonserializer-source-generator-overloads.md
       - name: .NET 5
         items:
         - name: BinaryFormatter.Deserialize rewraps exceptions

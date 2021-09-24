@@ -1,7 +1,7 @@
 ---
 title: dotnet publish command
 description: The dotnet publish command publishes a .NET project or solution to a directory.
-ms.date: 02/03/2021
+ms.date: 08/12/2021
 ---
 # dotnet publish
 
@@ -14,11 +14,13 @@ ms.date: 02/03/2021
 ## Synopsis
 
 ```dotnetcli
-dotnet publish [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
+dotnet publish [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
+    [-c|--configuration <CONFIGURATION>]
     [-f|--framework <FRAMEWORK>] [--force] [--interactive]
     [--manifest <PATH_TO_MANIFEST_FILE>] [--no-build] [--no-dependencies]
     [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
-    [-r|--runtime <RUNTIME_IDENTIFIER>] [--self-contained [true|false]]
+    [--os <OS>] [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [--self-contained [true|false]]
     [--no-self-contained] [-v|--verbosity <LEVEL>]
     [--version-suffix <VERSION_SUFFIX>]
 
@@ -62,7 +64,7 @@ The following MSBuild properties change the output of `dotnet publish`.
 
   Compiles application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation. For more information, see [ReadyToRun images](../deploying/ready-to-run.md). Available since .NET Core 3.0 SDK.
 
-  To see warnings about missing dependencies that could cause runtime failures, use `PublishReadyToRunShowWarning=true`.
+  To see warnings about missing dependencies that could cause runtime failures, use `PublishReadyToRunShowWarnings=true`.
 
   We recommend that you specify `PublishReadyToRun` in a publish profile rather than on the command line.
 
@@ -84,6 +86,8 @@ For more information, see the following resources:
 - [Visual Studio publish profiles (.pubxml) for ASP.NET Core app deployment](/aspnet/core/host-and-deploy/visual-studio-publish-profiles)
 - [dotnet msbuild](dotnet-msbuild.md)
 
+[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+
 ## Arguments
 
 - **`PROJECT|SOLUTION`**
@@ -97,6 +101,8 @@ For more information, see the following resources:
 ## Options
 
 <!-- markdownlint-disable MD012 -->
+
+[!INCLUDE [arch](../../../includes/cli-arch.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
@@ -156,6 +162,8 @@ For more information, see the following resources:
 
     If you specify a relative path when publishing a solution, each project's output goes into a separate folder relative to the project file location. If you specify an absolute path when publishing a solution, all publish output for all projects goes into the specified folder.
 
+[!INCLUDE [os](../../../includes/cli-os.md)]
+
 - **`--self-contained [true|false]`**
 
   Publishes the .NET runtime with your application so the runtime doesn't need to be installed on the target machine. Default is `true` if a runtime identifier is specified and the project is an executable project (not a library project). For more information, see [.NET application publishing](../deploying/index.md) and [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md).
@@ -168,7 +176,7 @@ For more information, see the following resources:
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). For more information, see [.NET application publishing](../deploying/index.md) and [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md).
+  Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). For more information, see [.NET application publishing](../deploying/index.md) and [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md). If you use this option, use `--self-contained` or `--no-self-contained` also.
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 

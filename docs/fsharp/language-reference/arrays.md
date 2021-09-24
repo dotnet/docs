@@ -1,9 +1,10 @@
 ---
-title: Arrays
+title: Arrays in F#
+titleSuffix: ""
 description: Learn how to create and use arrays in the F# programming language.
 ms.date: 08/13/2020
 ---
-# Arrays
+# Arrays (F#)
 
 Arrays are fixed-size, zero-based, mutable collections of consecutive data elements that are all of the same type.
 

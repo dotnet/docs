@@ -3,7 +3,6 @@ title: Managed assembly loading algorithm - .NET Core
 description: Description of the details of the managed assembly loading algorithm in .NET Core
 ms.date: 08/09/2019
 author: sdmaclea
-ms.author: stmaclea
 ---
 # Managed assembly loading algorithm
 
@@ -41,12 +40,14 @@ The following algorithm describes how the runtime loads a managed assembly.
     - Other APIs infer the `active` <xref:System.Runtime.Loader.AssemblyLoadContext>. For these APIs, the <xref:System.Runtime.Loader.AssemblyLoadContext.CurrentContextualReflectionContext?displayProperty=nameWithType> property is used. If its value is `null`, then the inferred <xref:System.Runtime.Loader.AssemblyLoadContext> instance is used.
     - See table above.
 
-2. For the `Load-by-name` methods, the active <xref:System.Runtime.Loader.AssemblyLoadContext> loads the assembly. In priority order by:
+2. For the `Load-by-name` methods, the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> loads the assembly. In priority order by:
     - Checking its `cache-by-name`.
 
     - Calling the <xref:System.Runtime.Loader.AssemblyLoadContext.Load%2A?displayProperty=nameWithType> function.
 
-    - Checking the <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType> instances' cache and running [managed assembly default probing](default-probing.md#managed-assembly-default-probing) logic.
+    - Checking the <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType> instance's cache and running [managed assembly default probing](default-probing.md#managed-assembly-default-probing) logic.
+
+      - If an assembly is newly loaded, a reference is added to the <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType> instance's `cache-by-name`.
 
     - Raising the <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType> event for the active AssemblyLoadContext.
 
@@ -57,8 +58,7 @@ The following algorithm describes how the runtime loads a managed assembly.
 
     - Loading from the specified path or raw assembly object.
 
+      - If an assembly is newly loaded, a reference is added to `active` <xref:System.Runtime.Loader.AssemblyLoadContext> instance's `cache-by-name`.
+
 4. In either case, if an assembly is newly loaded, then:
    - The <xref:System.AppDomain.AssemblyLoad?displayProperty=nameWithType> event is raised.
-   - A reference is added to the assembly's <xref:System.Runtime.Loader.AssemblyLoadContext> instance's `cache-by-name`.
-
-5. If the assembly is found, a reference is added as needed to the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> instance's `cache-by-name`.

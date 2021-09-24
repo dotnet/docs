@@ -36,13 +36,13 @@ Specifies that a function or `Get` accessor is an iterator.
   
 - [Property Statement](../statements/property-statement.md)  
   
-## Example  
+## Example 1
 
  The following example demonstrates an iterator function. The iterator function has a `Yield` statement that is inside a [For…Next](../statements/for-next-statement.md) loop. Each iteration of the [For Each](../statements/for-each-next-statement.md) statement body in `Main` creates a call to the `Power` iterator function. Each call to the iterator function proceeds to the next execution of the `Yield` statement, which occurs during the next iteration of the `For…Next` loop.  
   
  [!code-vb[VbVbalrStatements#98](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#98)]  
   
-## Example  
+## Example 2  
 
  The following example demonstrates a `Get` accessor that is an iterator. The `Iterator` modifier is in the property declaration.  
   

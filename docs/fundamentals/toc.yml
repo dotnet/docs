@@ -41,7 +41,6 @@ items:
         href: ../core/install/linux-snap.md
       - name: Install script & binaries
         href: ../core/install/linux-scripted-manual.md
-
     - name: Remove outdated runtimes and SDKs
       href: ../core/install/remove-runtime-sdk-versions.md
     - name: Manage .NET templates
@@ -255,6 +254,8 @@ items:
       href: ../core/tools/dotnet-build-server.md
     - name: dotnet clean
       href: ../core/tools/dotnet-clean.md
+    - name: dotnet format
+      href: ../core/tools/dotnet-format.md
     - name: dotnet help
       href: ../core/tools/dotnet-help.md
     - name: dotnet migrate
@@ -347,6 +348,8 @@ items:
         href: ../core/tools/dotnet-workload-list.md
       - name: dotnet workload repair
         href: ../core/tools/dotnet-workload-repair.md
+      - name: dotnet workload restore
+        href: ../core/tools/dotnet-workload-restore.md
       - name: dotnet workload search
         href: ../core/tools/dotnet-workload-search.md
       - name: dotnet workload uninstall
@@ -441,6 +444,14 @@ items:
         href: syslib-diagnostics/syslib0030.md
       - name: SYSLIB0031
         href: syslib-diagnostics/syslib0031.md
+      - name: SYSLIB0032
+        href: syslib-diagnostics/syslib0032.md
+      - name: SYSLIB0033
+        href: syslib-diagnostics/syslib0033.md
+      - name: SYSLIB0034
+        href: syslib-diagnostics/syslib0034.md
+      - name: SYSLIB0035
+        href: syslib-diagnostics/syslib0035.md
     - name: Source-generated code
       items:
       - name: Overview
@@ -512,6 +523,7 @@ items:
       - name: Reference
         items:
         - name: Microsoft.NET.Sdk
+          displayName: msbuild, msbuild properties
           href: ../core/project-sdk/msbuild-props.md
         - name: Microsoft.NET.Sdk.Web
           href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
@@ -838,6 +850,8 @@ items:
             href: code-analysis/quality-rules/ca1416.md
           - name: CA1417
             href: code-analysis/quality-rules/ca1417.md
+          - name: CA1418
+            href: code-analysis/quality-rules/ca1418.md
         - name: Maintainability rules
           items:
           - name: Overview
@@ -1001,6 +1015,8 @@ items:
             href: code-analysis/quality-rules/ca2015.md
           - name: CA2016
             href: code-analysis/quality-rules/ca2016.md
+          - name: CA2018
+            href: code-analysis/quality-rules/ca2018.md
         - name: Security rules
           items:
           - name: Overview
@@ -1192,6 +1208,10 @@ items:
             href: code-analysis/quality-rules/ca5402.md
           - name: CA5403
             href: code-analysis/quality-rules/ca5403.md
+          - name: CA5404
+            href: code-analysis/quality-rules/ca5404.md
+          - name: CA5405
+            href: code-analysis/quality-rules/ca5405.md
         - name: Usage rules
           items:
           - name: Overview
@@ -1522,7 +1542,7 @@ items:
       href: ../core/versions/index.md
     - name: .NET version selection
       href: ../core/versions/selection.md
-  - name: Run-time configuration
+  - name: Runtime configuration
     items:
     - name: Settings
       href: ../core/run-time-config/index.md
@@ -1562,6 +1582,120 @@ items:
       href: ../core/deploying/trimming-options.md
     - name: Trimming libraries
       href: ../core/deploying/prepare-libraries-for-trimming.md
+    - name: Trim warnings
+      items:
+        - name: IL2001
+          href: ../core/deploying/trim-warnings/il2001.md
+        - name: IL2002
+          href: ../core/deploying/trim-warnings/il2002.md
+        - name: IL2003
+          href: ../core/deploying/trim-warnings/il2003.md
+        - name: IL2004
+          href: ../core/deploying/trim-warnings/il2004.md
+        - name: IL2005
+          href: ../core/deploying/trim-warnings/il2005.md
+        - name: IL2007
+          href: ../core/deploying/trim-warnings/il2007.md
+        - name: IL2008
+          href: ../core/deploying/trim-warnings/il2008.md
+        - name: IL2009
+          href: ../core/deploying/trim-warnings/il2009.md
+        - name: IL2010
+          href: ../core/deploying/trim-warnings/il2010.md
+        - name: IL2011
+          href: ../core/deploying/trim-warnings/il2011.md
+        - name: IL2012
+          href: ../core/deploying/trim-warnings/il2012.md
+        - name: IL2013
+          href: ../core/deploying/trim-warnings/il2013.md
+        - name: IL2014
+          href: ../core/deploying/trim-warnings/il2014.md
+        - name: IL2015
+          href: ../core/deploying/trim-warnings/il2015.md
+        - name: IL2016
+          href: ../core/deploying/trim-warnings/il2016.md
+        - name: IL2017
+          href: ../core/deploying/trim-warnings/il2017.md
+        - name: IL2018
+          href: ../core/deploying/trim-warnings/il2018.md
+        - name: IL2019
+          href: ../core/deploying/trim-warnings/il2019.md
+        - name: IL2022
+          href: ../core/deploying/trim-warnings/il2022.md
+        - name: IL2023
+          href: ../core/deploying/trim-warnings/il2023.md
+        - name: IL2024
+          href: ../core/deploying/trim-warnings/il2024.md
+        - name: IL2025
+          href: ../core/deploying/trim-warnings/il2025.md
+        - name: IL2026
+          href: ../core/deploying/trim-warnings/il2026.md
+        - name: IL2027
+          href: ../core/deploying/trim-warnings/il2027.md
+        - name: IL2028
+          href: ../core/deploying/trim-warnings/il2028.md
+        - name: IL2029
+          href: ../core/deploying/trim-warnings/il2029.md
+        - name: IL2030
+          href: ../core/deploying/trim-warnings/il2030.md
+        - name: IL2031
+          href: ../core/deploying/trim-warnings/il2031.md
+        - name: IL2032
+          href: ../core/deploying/trim-warnings/il2032.md
+        - name: IL2033
+          href: ../core/deploying/trim-warnings/il2033.md
+        - name: IL2034
+          href: ../core/deploying/trim-warnings/il2034.md
+        - name: IL2035
+          href: ../core/deploying/trim-warnings/il2035.md
+        - name: IL2036
+          href: ../core/deploying/trim-warnings/il2036.md
+        - name: IL2037
+          href: ../core/deploying/trim-warnings/il2037.md
+        - name: IL2038
+          href: ../core/deploying/trim-warnings/il2038.md
+        - name: IL2039
+          href: ../core/deploying/trim-warnings/il2039.md
+        - name: IL2040
+          href: ../core/deploying/trim-warnings/il2040.md
+        - name: IL2041
+          href: ../core/deploying/trim-warnings/il2041.md
+        - name: IL2042
+          href: ../core/deploying/trim-warnings/il2042.md
+        - name: IL2043
+          href: ../core/deploying/trim-warnings/il2043.md
+        - name: IL2044
+          href: ../core/deploying/trim-warnings/il2044.md
+        - name: IL2045
+          href: ../core/deploying/trim-warnings/il2045.md
+        - name: IL2046
+          href: ../core/deploying/trim-warnings/il2046.md
+        - name: IL2048
+          href: ../core/deploying/trim-warnings/il2048.md
+        - name: IL2049
+          href: ../core/deploying/trim-warnings/il2049.md
+        - name: IL2050
+          href: ../core/deploying/trim-warnings/il2050.md
+        - name: IL2051
+          href: ../core/deploying/trim-warnings/il2051.md
+        - name: IL2052
+          href: ../core/deploying/trim-warnings/il2052.md
+        - name: IL2053
+          href: ../core/deploying/trim-warnings/il2053.md
+        - name: IL2054
+          href: ../core/deploying/trim-warnings/il2054.md
+        - name: IL2055
+          href: ../core/deploying/trim-warnings/il2055.md
+        - name: IL2056
+          href: ../core/deploying/trim-warnings/il2056.md
+        - name: IL2057
+          href: ../core/deploying/trim-warnings/il2057.md
+        - name: IL2058
+          href: ../core/deploying/trim-warnings/il2058.md
+        - name: IL2059
+          href: ../core/deploying/trim-warnings/il2059.md
+        - name: IL2060
+          href: ../core/deploying/trim-warnings/il2060.md
   - name: Runtime package store
     href: ../core/deploying/runtime-store.md
   - name: Runtime Identifier (RID) catalog
@@ -1581,6 +1715,8 @@ items:
   - name: GitHub Actions and .NET
     href: ../devops/github-actions-overview.md
     displayName: "continuous integration,continuous deployment,continuous delivery,ci,cd,ci/cd,github,github action,github actions,lifecycle"
+  - name: Official .NET GitHub Actions
+    href: ../devops/dotnet-github-action-reference.md
   - name: Tutorials
     expanded: true
     items:
@@ -1898,6 +2034,8 @@ items:
         items:
         - name: Customize character encoding
           href: ../standard/serialization/system-text-json-character-encoding.md
+        - name: Source generation in System.Text.Json
+          href: ../standard/serialization/system-text-json-source-generation.md
         - name: Write custom converters
           href: ../standard/serialization/system-text-json-converters-how-to.md
     - name: Binary serialization
@@ -2097,6 +2235,54 @@ items:
       href: ../core/extensions/console-log-formatter.md
   - name: HostBuilder (generic host)
     href: ../core/extensions/generic-host.md
+  - name: HTTP with .NET
+    href: ../core/extensions/http-client.md
+  - name: HTTP/3 with .NET
+    href: ../core/extensions/httpclient-http3.md
+  - name: File globbing in .NET
+    href: ../core/extensions/file-globbing.md
+  - name: Globalization and localization
+    items:
+    - name: Overview
+      href: ../core/extensions/globalization-and-localization.md
+    - name: Globalization
+      href: ../core/extensions/globalization.md
+    - name: Globalization and ICU
+      href: ../core/extensions/globalization-icu.md
+    - name: Localizability review
+      href: ../core/extensions/localizability-review.md
+    - name: Localization
+      href: ../core/extensions/localization.md
+    - name: Culture-insensitive string operations
+      items:
+      - name: Overview
+        href: ../core/extensions/performing-culture-insensitive-string-operations.md
+      - name: String comparisons
+        href: ../core/extensions/performing-culture-insensitive-string-comparisons.md
+      - name: Case changes
+        href: ../core/extensions/performing-culture-insensitive-case-changes.md
+      - name: String operations in collections
+        href: ../core/extensions/performing-culture-insensitive-string-operations-in-collections.md
+      - name: String operations in arrays
+        href: ../core/extensions/performing-culture-insensitive-string-operations-in-arrays.md
+    - name: Best practices for developing world-ready apps
+      href: ../core/extensions/best-practices-for-developing-world-ready-apps.md
+  - name: Resources in .NET apps
+    items:
+    - name: Overview
+      href: ../core/extensions/resources.md
+    - name: Create resource files
+      items:
+      - name: Overview
+        href: ../core/extensions/create-resource-files.md
+      - name: Work with .resx files programmatically
+        href: ../core/extensions/work-with-resx-files-programmatically.md
+    - name: Create satellite assemblies
+      href: ../core/extensions/create-satellite-assemblies.md
+    - name: Package and deploy resources
+      href: ../core/extensions/package-and-deploy-resources.md
+    - name: Retrieve resources
+      href: ../core/extensions/retrieve-resources.md
   - name: Worker Services
     items:
     - name: Overview
@@ -2112,7 +2298,8 @@ items:
       href: ../core/extensions/timer-service.md
     - name: Deploy a Worker Service to Azure
       href: ../core/extensions/cloud-service.md
-
+  - name: Caching
+    href: ../core/extensions/caching.md
 - name: Data access
   items:
   - name: LINQ
@@ -2416,6 +2603,8 @@ items:
           href: ../standard/native-interop/runtime-callable-wrapper.md
         - name: COM-callable wrapper
           href: ../standard/native-interop/com-callable-wrapper.md
+        - name: Tutorial - Use the ComWrappers API
+          href: ../standard/native-interop/tutorial-comwrappers.md
       - name: Qualifying .NET types for COM interop
         href: ../standard/native-interop/qualify-net-types-for-interoperation.md
     - name: Apply interop attributes
@@ -2424,8 +2613,6 @@ items:
       href: ../standard/native-interop/exceptions-interoperability.md
   - name: .NET distribution packaging
     href: ../core/distribution-packaging.md
-  - name: Globalization and localization
-    href: ../standard/globalization-localization/
   - name: Open-source library guidance
     href: ../standard/library-guidance/
   - name: Framework design guidelines
@@ -2555,12 +2742,14 @@ items:
         href: ../core/porting/upgrade-assistant-winforms-framework.md
       - name: ASP.NET Core
         href: ../core/porting/upgrade-assistant-aspnetmvc.md
+      - name: Telemetry
+        href: ../core/porting/upgrade-assistant-telemetry.md
     - name: Breaking changes
       displayName: app compatibility
       href: ../core/porting/breaking-changes.md
   - name: Pre-Migration
     items:
-    - name: Asses the portability of your project
+    - name: Assess the portability of your project
       items:
       - name: Unsupported Dependencies
         href: ../core/porting/third-party-deps.md

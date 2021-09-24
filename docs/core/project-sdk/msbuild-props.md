@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 02/14/2020
+ms.date: 09/02/2021
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -61,74 +61,14 @@ Use the `NetStandardImplicitPackageVersion` property when you want to specify a 
 </PropertyGroup>
 ```
 
-## Assembly info generation properties
+## Assembly attribute properties
 
-- [GenerateAssemblyCompanyAttribute](#generateassemblycompanyattribute)
-- [GenerateAssemblyConfigurationAttribute](#generateassemblyconfigurationattribute)
-- [GenerateAssemblyCopyrightAttribute](#generateassemblycopyrightattribute)
-- [GenerateAssemblyDescriptionAttribute](#generateassemblydescriptionattribute)
-- [GenerateAssemblyFileVersionAttribute](#generateassemblyfileversionattribute)
 - [GenerateAssemblyInfo](#generateassemblyinfo)
-- [GenerateAssemblyInformationalVersionAttribute](#generateassemblyinformationalversionattribute)
-- [GenerateAssemblyProductAttribute](#generateassemblyproductattribute)
-- [GenerateAssemblyTitleAttribute](#generateassemblytitleattribute)
-- [GenerateAssemblyVersionAttribute](#generateassemblyversionattribute)
 - [GeneratedAssemblyInfoFile](#generatedassemblyinfofile)
-- [GenerateNeutralResourcesLanguageAttribute](#generateneutralresourceslanguageattribute)
-
-### GenerateAssemblyCompanyAttribute
-
-This property controls whether or not the `Company` property generates the <xref:System.Reflection.AssemblyCompanyAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyConfigurationAttribute
-
-This property controls whether or not the `Configuration` property generates the <xref:System.Reflection.AssemblyConfigurationAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyCopyrightAttribute
-
-This property controls whether or not the `Copyright` property generates the <xref:System.Reflection.AssemblyCopyrightAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyDescriptionAttribute
-
-This property controls whether or not the `Description` property generates the <xref:System.Reflection.AssemblyDescriptionAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyFileVersionAttribute
-
-This property controls whether or not the `FileVersion` property generates the <xref:System.Reflection.AssemblyFileVersionAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-</PropertyGroup>
-```
 
 ### GenerateAssemblyInfo
 
-Controls `AssemblyInfo` attribute generation for the project. The default value is `true`. Use `false` to disable generation of the file:
+The `GenerateAssemblyInfo` property controls `AssemblyInfo` attribute generation for the project. The default value is `true`. Use `false` to disable generation of the file:
 
 ```xml
 <PropertyGroup>
@@ -138,20 +78,26 @@ Controls `AssemblyInfo` attribute generation for the project. The default value 
 
 The [GeneratedAssemblyInfoFile](#generatedassemblyinfofile) setting controls the name of the generated file.
 
-When the `GenerateAssemblyInfo` value is `true`, project properties are transformed into `AssemblyInfo` attributes. The following table lists the project properties that generate the attributes, and the properties that can disable that generation:
+When the `GenerateAssemblyInfo` value is `true`, [package-related project properties](#package-properties) are transformed into assembly attributes. The following table lists the project properties that generate the attributes. It also lists the properties that you can use to disable that generation on a per-attribute basis, for example:
 
-| Property               | Attribute                                                      | Property to disable                                                                               |
-|------------------------|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| `Company`              | <xref:System.Reflection.AssemblyCompanyAttribute>              | [`GenerateAssemblyCompanyAttribute`](#generateassemblycompanyattribute)                           |
-| `Configuration`        | <xref:System.Reflection.AssemblyConfigurationAttribute>        | [`GenerateAssemblyConfigurationAttribute`](#generateassemblyconfigurationattribute)               |
-| `Copyright`            | <xref:System.Reflection.AssemblyCopyrightAttribute>            | [`GenerateAssemblyCopyrightAttribute`](#generateassemblycopyrightattribute)                       |
-| `Description`          | <xref:System.Reflection.AssemblyDescriptionAttribute>          | [`GenerateAssemblyDescriptionAttribute`](#generateassemblydescriptionattribute)                   |
-| `FileVersion`          | <xref:System.Reflection.AssemblyFileVersionAttribute>          | [`GenerateAssemblyFileVersionAttribute`](#generateassemblyfileversionattribute)                   |
-| `InformationalVersion` | <xref:System.Reflection.AssemblyInformationalVersionAttribute> | [`GenerateAssemblyInformationalVersionAttribute`](#generateassemblyinformationalversionattribute) |
-| `Product`              | <xref:System.Reflection.AssemblyProductAttribute>              | [`GenerateAssemblyProductAttribute`](#generateassemblyproductattribute)                           |
-| `AssemblyTitle`        | <xref:System.Reflection.AssemblyTitleAttribute>                | [`GenerateAssemblyTitleAttribute`](#generateassemblytitleattribute)                               |
-| `AssemblyVersion`      | <xref:System.Reflection.AssemblyVersionAttribute>              | [`GenerateAssemblyVersionAttribute`](#generateassemblyversionattribute)                           |
-| `NeutralLanguage`      | <xref:System.Resources.NeutralResourcesLanguageAttribute>      | [`GenerateNeutralResourcesLanguageAttribute`](#generateneutralresourceslanguageattribute)         |
+```xml
+<PropertyGroup>
+  <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
+</PropertyGroup>
+```
+
+| MSBuild property       | Assembly attribute                                             | Property to disable attribute generation        |
+| ---------------------- | -------------------------------------------------------------- | ----------------------------------------------- |
+| `Company`              | <xref:System.Reflection.AssemblyCompanyAttribute>              | `GenerateAssemblyCompanyAttribute`              |
+| `Configuration`        | <xref:System.Reflection.AssemblyConfigurationAttribute>        | `GenerateAssemblyConfigurationAttribute`        |
+| `Copyright`            | <xref:System.Reflection.AssemblyCopyrightAttribute>            | `GenerateAssemblyCopyrightAttribute`            |
+| `Description`          | <xref:System.Reflection.AssemblyDescriptionAttribute>          | `GenerateAssemblyDescriptionAttribute`          |
+| `FileVersion`          | <xref:System.Reflection.AssemblyFileVersionAttribute>          | `GenerateAssemblyFileVersionAttribute`          |
+| `InformationalVersion` | <xref:System.Reflection.AssemblyInformationalVersionAttribute> | `GenerateAssemblyInformationalVersionAttribute` |
+| `Product`              | <xref:System.Reflection.AssemblyProductAttribute>              | `GenerateAssemblyProductAttribute`              |
+| `AssemblyTitle`        | <xref:System.Reflection.AssemblyTitleAttribute>                | `GenerateAssemblyTitleAttribute`                |
+| `AssemblyVersion`      | <xref:System.Reflection.AssemblyVersionAttribute>              | `GenerateAssemblyVersionAttribute`              |
+| `NeutralLanguage`      | <xref:System.Resources.NeutralResourcesLanguageAttribute>      | `GenerateNeutralResourcesLanguageAttribute`     |
 
 Notes about these settings:
 
@@ -164,68 +110,18 @@ Notes about these settings:
 
 #### Migrating from .NET Framework
 
-.NET Framework project templates create a code file with these assembly info attributes set. The file is typically located at *.\Properties\AssemblyInfo.cs* or *.\Properties\AssemblyInfo.vb*. SDK-style projects generate this file for you based on the project settings. **You can't have both.** When porting your code to .NET 5 (and .NET Core 3.1) or later, do one of the following:
+.NET Framework project templates create a code file with these assembly info attributes set. The file is typically located at *.\Properties\AssemblyInfo.cs* or *.\Properties\AssemblyInfo.vb*. SDK-style projects generate this file for you based on the project settings. **You can't have both.** When porting your code to .NET 5 (or .NET Core 3.1) or later, do one of the following:
 
-- Disable the generation of the temporary code file that contains the assembly info attributes by setting `GenerateAssemblyInfo` to `false`. This enables you to keep your *AssemblyInfo* file.
-- Migrate the settings in the `AssemblyInfo` file to the project file, and delete the `AssemblyInfo` file.
-
-### GenerateAssemblyInformationalVersionAttribute
-
-This property controls whether or not the `InformationalVersion` property generates the <xref:System.Reflection.AssemblyInformationalVersionAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyProductAttribute
-
-This property controls whether or not the `Product` property generates the <xref:System.Reflection.AssemblyProductAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyTitleAttribute
-
-This property controls whether or not the `AssemblyTitle` property generates the <xref:System.Reflection.AssemblyTitleAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
-</PropertyGroup>
-```
-
-### GenerateAssemblyVersionAttribute
-
-This property controls whether or not the `AssemblyVersion` property generates the <xref:System.Reflection.AssemblyVersionAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
-</PropertyGroup>
-```
+- Disable the generation of the temporary code file that contains the assembly info attributes by setting `GenerateAssemblyInfo` to `false` in your project file. This enables you to keep your *AssemblyInfo* file.
+- Migrate the settings in the `AssemblyInfo` file to the project file, and then delete the `AssemblyInfo` file.
 
 ### GeneratedAssemblyInfoFile
 
-The property defines the relative or absolute path of the generated assembly info file. Defaults to a file named *[project-name].AssemblyInfo.[cs|vb]* in the `$(IntermediateOutputPath)` (usually the *obj*) directory.
+The `GeneratedAssemblyInfoFile` property defines the relative or absolute path of the generated assembly info file. Defaults to a file named *[project-name].AssemblyInfo.[cs|vb]* in the `$(IntermediateOutputPath)` (usually the *obj*) directory.
 
 ```xml
 <PropertyGroup>
   <GeneratedAssemblyInfoFile>assemblyinfo.cs</GeneratedAssemblyInfoFile>
-</PropertyGroup>
-```
-
-### GenerateNeutralResourcesLanguageAttribute
-
-This property controls whether or not the `NeutralLanguage` property generates the <xref:System.Resources.NeutralResourcesLanguageAttribute> for the assembly. The default value is `true`.
-
-```xml
-<PropertyGroup>
-  <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
 </PropertyGroup>
 ```
 
@@ -251,6 +147,7 @@ The following MSBuild properties are documented in this section:
 - [AppendTargetFrameworkToOutputPath](#appendtargetframeworktooutputpath)
 - [CopyLocalLockFileAssemblies](#copylocallockfileassemblies)
 - [ErrorOnDuplicatePublishOutputFiles](#erroronduplicatepublishoutputfiles)
+- [GenerateRuntimeConfigurationFiles](#generateruntimeconfigurationfiles)
 - [IsPublishable](#ispublishable)
 - [PreserveCompilationContext](#preservecompilationcontext)
 - [PreserveCompilationReferences](#preservecompilationreferences)
@@ -258,6 +155,7 @@ The following MSBuild properties are documented in this section:
 - [RuntimeFrameworkVersion](#runtimeframeworkversion)
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
+- [SatelliteResourceLanguages](#satelliteresourcelanguages)
 - [UseAppHost](#useapphost)
 
 ### AppendTargetFrameworkToOutputPath
@@ -297,7 +195,7 @@ The `CopyLocalLockFileAssemblies` property is useful for plugin projects that ha
 > [!TIP]
 > Alternatively, you can use `dotnet publish` to publish the class library. For more information, see [dotnet publish](../tools/dotnet-publish.md).
 
-## ErrorOnDuplicatePublishOutputFiles
+### ErrorOnDuplicatePublishOutputFiles
 
 The `ErrorOnDuplicatePublishOutputFiles` property relates to whether the SDK generates error NETSDK1148 when MSBuild detects duplicate files in the publish output, but can't determine which files to remove. Set the `ErrorOnDuplicatePublishOutputFiles` property to `false` if you don't want the error to be generated.
 
@@ -308,6 +206,16 @@ The `ErrorOnDuplicatePublishOutputFiles` property relates to whether the SDK gen
 ```
 
 This property was introduced in .NET 6.
+
+### GenerateRuntimeConfigurationFiles
+
+The `GenerateRuntimeConfigurationFiles` property controls whether runtime configuration options are copied from the *runtimeconfig.template.json* file to the *[appname].runtimeconfig.json* file. For apps that require a *runtimeconfig.json* file, that is, those whose `OutputType` is `Exe`, this property defaults to `true`.
+
+```xml
+<PropertyGroup>
+  <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+</PropertyGroup>
+```
 
 ### IsPublishable
 
@@ -396,6 +304,19 @@ The `RuntimeIdentifiers` property lets you specify a semicolon-delimited list of
 </PropertyGroup>
 ```
 
+## SatelliteResourceLanguages
+
+The `SatelliteResourceLanguages` property lets you specify which languages you want to preserve satellite resource assemblies for during build and publish. Many NuGet packages include localized resource satellite assemblies in the main package. For projects that reference these NuGet packages that don't require localized resources, the localized assemblies can unnecessarily inflate the build and publish output size. By adding the `SatelliteResourceLanguages` property to your project file, only localized assemblies for the languages you specify will be included in the build and publish output. For example, in the following project file, only English (US) resource satellite assemblies will be retained.
+
+```xml
+<PropertyGroup>
+  <SatelliteResourceLanguages>en-US</SatelliteResourceLanguages>
+</PropertyGroup>
+```
+
+> [!NOTE]
+> You must specify this property in the project that references the NuGet package with localized resource satellite assemblies.
+
 ### UseAppHost
 
 The `UseAppHost` property controls whether or not a native executable is created for a deployment. A native executable is required for self-contained deployments.
@@ -415,11 +336,15 @@ For more information about deployment, see [.NET application deployment](../depl
 The following MSBuild properties are documented in this section:
 
 - [EmbeddedResourceUseDependentUponConvention](#embeddedresourceusedependentuponconvention)
-- [LangVersion](#langversion)
+- [EnablePreviewFeatures](#enablepreviewfeatures)
+- [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute)
+- [OptimizeImplicitlyTriggeredBuild](#optimizeimplicitlytriggeredbuild)
+
+C# compiler options can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
 
 ### EmbeddedResourceUseDependentUponConvention
 
-The `EmbeddedResourceUseDependentUponConvention` property defines whether resource manifest file names are generated from type information in source files that are colocated with resource files. For example, if *Form1.resx* is in the same folder as *Form1.cs*, and `EmbeddedResourceUseDependentUponConvention` is set to `true`, the generated *.resources* file takes its name from the first type that's defined in *Form1.cs*. For example, if `MyNamespace.Form1` is the first type defined in *Form1.cs*, the generated file name is *MyNamespace.Form1.resources*.
+The `EmbeddedResourceUseDependentUponConvention` property defines whether resource manifest file names are generated from type information in source files that are co-located with resource files. For example, if *Form1.resx* is in the same folder as *Form1.cs*, and `EmbeddedResourceUseDependentUponConvention` is set to `true`, the generated *.resources* file takes its name from the first type that's defined in *Form1.cs*. For example, if `MyNamespace.Form1` is the first type defined in *Form1.cs*, the generated file name is *MyNamespace.Form1.resources*.
 
 > [!NOTE]
 > If `LogicalName`, `ManifestResourceName`, or `DependentUpon` metadata is specified for an `EmbeddedResource` item, the generated manifest file name for that resource file is based on that metadata instead.
@@ -432,17 +357,47 @@ By default, in a new .NET project, this property is set to `true`. If set to `fa
 </PropertyGroup>
 ```
 
-### LangVersion
+### EnablePreviewFeatures
 
-The `LangVersion` property lets you specify a specific programming language version. For example, if you want access to C# preview features, set `LangVersion` to `preview`.
+The `EnablePreviewFeatures` property defines whether your project depends on any APIs or assemblies that are decorated with the <xref:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute> attribute. This attribute is used to signify that an API or assembly uses features that are considered to be in *preview* for the SDK version you're using. Preview features are not supported and may be removed in a future version. To enable the use of preview features, set the property to `True`.
 
 ```xml
 <PropertyGroup>
-  <LangVersion>preview</LangVersion>
+  <EnablePreviewFeatures>True</EnablePreviewFeatures>
 </PropertyGroup>
 ```
 
-For more information, see [C# language versioning](../../csharp/language-reference/configure-language-version.md#override-a-default).
+When a project contains this property set to `True`, the following assembly-level attribute is added to the *AssemblyInfo.cs* file:
+
+```csharp
+[assembly: RequiresPreviewFeatures]
+```
+
+An analyzer warns if this attribute is present on dependencies for projects where `EnablePreviewFeatures` is not set to `True`.
+
+### GenerateRequiresPreviewFeaturesAttribute
+
+The `GenerateRequiresPreviewFeaturesAttribute` property is closely related to the [EnablePreviewFeatures](#enablepreviewfeatures) property. If your library uses preview features but you don't want the entire assembly to be marked with the <xref:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute> attribute, which would require any consumers to [enable preview features](#enablepreviewfeatures), set this property to `False`.
+
+```xml
+<PropertyGroup>
+    <EnablePreviewFeatures>True</EnablePreviewFeatures>
+    <GenerateRequiresPreviewFeaturesAttribute>False</GenerateRequiresPreviewFeaturesAttribute>
+</PropertyGroup>
+```
+
+> [!IMPORTANT]
+> If you set the `GenerateRequiresPreviewFeaturesAttribute` property to `False`, you must be certain to decorate all public APIs that rely on preview features with <xref:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute>.
+
+### OptimizeImplicitlyTriggeredBuild
+
+To speed up the build time, builds that are implicitly triggered by Visual Studio skip code analysis, including nullable analysis. Visual Studio triggers an implicit build when you run tests, for example. However, implicit builds are optimized only when `TreatWarningsAsErrors` is not `true`. If you have `TreatWarningsAsErrors` set to `true` but you still want implicitly triggered builds to be optimized, you can set `OptimizeImplicitlyTriggeredBuild` to `True`. To turn off build optimization for implicitly triggered builds, set `OptimizeImplicitlyTriggeredBuild` to `False`.
+
+```xml
+<PropertyGroup>
+    <OptimizeImplicitlyTriggeredBuild>True</OptimizeImplicitlyTriggeredBuild>
+</PropertyGroup>
+```
 
 ## Default item inclusion properties
 
@@ -546,12 +501,12 @@ Default value:
 
 The following table shows the available options.
 
-| Value | Meaning |
-|-|-|
-| `latest` | The latest code analyzers that have been released are used. This is the default. |
-| `preview` | The latest code analyzers are used, even if they are in preview. |
-| `5.0` | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
-| `5` | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
+| Value     | Meaning                                                                                                |
+| --------- | ------------------------------------------------------------------------------------------------------ |
+| `latest`  | The latest code analyzers that have been released are used. This is the default.                       |
+| `preview` | The latest code analyzers are used, even if they are in preview.                                       |
+| `5.0`     | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
+| `5`       | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
 
 > [!NOTE]
 > This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
@@ -568,11 +523,11 @@ Starting with .NET 5.0, the .NET SDK ships with all of the ["CA" code quality ru
 
 The following table shows the available options.
 
-| Value | Meaning |
-|-|-|
-| `Default` | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. |
-| `AllEnabledByDefault` | Aggressive or opt-out mode, where all rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. |
-| `AllDisabledByDefault` | Conservative or opt-in mode, where all rules are disabled by default. You can selectively [opt into](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them. |
+| Value                  | Meaning                                                                                                                                                                                                             |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Default`              | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled.                                                        |
+| `AllEnabledByDefault`  | Aggressive or opt-out mode, where all rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. |
+| `AllDisabledByDefault` | Conservative or opt-in mode, where all rules are disabled by default. You can selectively [opt into](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them.                    |
 
 > [!NOTE]
 > This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
@@ -615,12 +570,13 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 
 All code style rules that are [configured](../../fundamentals/code-analysis/overview.md#code-style-analysis) to be warnings or errors will execute on build and report violations.
 
-## Run-time configuration properties
+## Runtime configuration properties
 
-You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [Run-time configuration settings](../run-time-config/index.md).
+You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [Runtime configuration settings](../run-time-config/index.md).
 
 - [ConcurrentGarbageCollection](#concurrentgarbagecollection)
 - [InvariantGlobalization](#invariantglobalization)
+- [PredefinedCulturesOnly](#predefinedculturesonly)
 - [RetainVMGarbageCollection](#retainvmgarbagecollection)
 - [ServerGarbageCollection](#servergarbagecollection)
 - [ThreadPoolMaxThreads](#threadpoolmaxthreads)
@@ -648,6 +604,18 @@ The `InvariantGlobalization` property configures whether the app runs in *global
   <InvariantGlobalization>true</InvariantGlobalization>
 </PropertyGroup>
 ```
+
+### PredefinedCulturesOnly
+
+In .NET 6 and later versions, the `PredefinedCulturesOnly` property configures whether apps can create cultures other than the invariant culture when [globalization-invariant mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md) is enabled. The default is `true`. Set the value to `false` to allow creation of any new culture in globalization-invariant mode.
+
+```xml
+<PropertyGroup>
+  <PredefinedCulturesOnly>false</PredefinedCulturesOnly>
+</PropertyGroup>
+```
+
+For more information, see [Culture creation and case mapping in globalization-invariant mode](../compatibility/globalization/6.0/culture-creation-invariant-mode.md).
 
 ### RetainVMGarbageCollection
 
@@ -772,6 +740,19 @@ The `ValidateExecutableReferencesMatchSelfContained` property can be used to dis
 </PropertyGroup>
 ```
 
+### WindowsSdkPackageVersion
+
+The `WindowsSdkPackageVersion` property can be used to override the version of the [Windows SDK targeting package](https://www.nuget.org/packages/Microsoft.Windows.SDK.NET.Ref). This property was introduced in .NET 5, and replaces the use of the `FrameworkReference` item for this purpose.
+
+```xml
+<PropertyGroup>
+  <WindowsSdkPackageVersion>10.0.19041.18</WindowsSdkPackageVersion>
+</PropertyGroup>
+```
+
+> [!NOTE]
+> We don't recommend overriding the Windows SDK version, because the Windows SDK targeting packages are included with the .NET 5+ SDK. Instead, to reference the latest Windows SDK package, update your version of the .NET SDK. This property should only be used in rare cases such as using preview packages or needing to override the version of C#/WinRT.
+
 ## Run-related properties
 
 The following properties are used for launching an app with the [`dotnet run`](../tools/dotnet-run.md) command:
@@ -823,7 +804,7 @@ For more information, see [Expose .NET components to COM](../native-interop/expo
 
 ### EnableDynamicLoading
 
-The `EnableDynamicLoading` property indicates that an assembly is a dynamically loaded component. The component could be a [COM library](/windows/win32/com/the-component-object-model) or a non-COM library that can be [used from a native host](../tutorials/netcore-hosting.md). Setting this property to `true` has the following effects:
+The `EnableDynamicLoading` property indicates that an assembly is a dynamically loaded component. The component could be a [COM library](/windows/win32/com/the-component-object-model) or a non-COM library that can be [used from a native host](../tutorials/netcore-hosting.md) or [used as a plugin](../tutorials/creating-app-with-plugin-support.md). Setting this property to `true` has the following effects:
 
 - A *.runtimeconfig.json* file is generated.
 - [RollForward](#rollforward) is set to `LatestMinor`.
@@ -835,14 +816,71 @@ The `EnableDynamicLoading` property indicates that an assembly is a dynamically 
 </PropertyGroup>
 ```
 
+## Generated file properties
+
+The following properties concern code in generated files:
+
+- [DisableImplicitNamespaceImports](#disableimplicitnamespaceimports)
+- [ImplicitUsings](#implicitusings)
+
+### DisableImplicitNamespaceImports
+
+The `DisableImplicitNamespaceImports` property can be used to disable [implicit namespace imports](../compatibility/sdk/6.0/implicit-namespaces.md) in Visual Basic projects that target .NET 6 or a later version. Implicit namespaces are the default namespaces that are imported globally in a Visual Basic project. Set this property to `true` to disable implicit namespace imports.
+
+```xml
+<PropertyGroup>
+  <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
+</PropertyGroup>
+```
+
+### ImplicitUsings
+
+The `ImplicitUsings` property can be used to enable and disable implicit `global using` directives in C# projects that target .NET 6 or a later version and C# 10.0 or a later version. When the feature is enabled, the .NET SDK adds `global using` directives for a set of default namespaces based on the type of project SDK. Set this property to `true` or `enable` to enable implicit `global using` directives. To disable implicit `global using` directives, remove the property or set it to `false` or `disable`.
+
+```xml
+<PropertyGroup>
+  <ImplicitUsings>enable</ImplicitUsings>
+</PropertyGroup>
+```
+
+> [!NOTE]
+> The templates for new C# projects that target .NET 6 or later have `ImplicitUsings` set to `enable` by default.
+
+To define an explicit `global using` directive, add a [Using](#using) item.
+
 ## Items
 
 [MSBuild items](/visualstudio/msbuild/msbuild-items) are inputs into the build system. Items are specified according to their type, which is the element name. For example, `Compile` and `Reference` are two [common item types](/visualstudio/msbuild/common-msbuild-project-items). The following additional item types are made available by the .NET SDK:
 
+- [AssemblyMetadata](#assemblymetadata)
+- [InternalsVisibleTo](#internalsvisibleto)
 - [PackageReference](#packagereference)
 - [TrimmerRootAssembly](#trimmerrootassembly)
+- [Using](#using)
 
 You can use any of the standard [item attributes](/visualstudio/msbuild/item-element-msbuild#attributes-and-elements), for example, `Include` and `Update`, on these items. Use `Include` to add a new item, and use `Update` to modify an existing item. For example, `Update` is often used to modify an item that has implicitly been added by the .NET SDK.
+
+### AssemblyMetadata
+
+The `AssemblyMetadata` item specifies a key-value pair <xref:System.Reflection.AssemblyMetadataAttribute> assembly attribute. The `Include` metadata becomes the key, and the `Value` metadata becomes the value.
+
+```xml
+<ItemGroup>
+  <AssemblyMetadata Include="Serviceable" Value="True" />
+</ItemGroup>
+```
+
+### InternalsVisibleTo
+
+The `InternalsVisibleTo` item generates an <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> assembly attribute for the specified friend assembly.
+
+```xml
+<ItemGroup>
+  <InternalsVisibleTo Include="MyProject.Tests" />
+</ItemGroup>
+```
+
+If the friend assembly is signed, you can specify an optional `Key` metadata to specify its full public key. If you don't specify `Key` metadata and a `$(PublicKey)` is available, that key is used. Otherwise, no public key is added to the attribute.
 
 ### PackageReference
 
@@ -881,6 +919,31 @@ The following XML excludes the `System.Security` assembly from trimming.
   <TrimmerRootAssembly Include="System.Security" />
 </ItemGroup>
 ```
+
+### Using
+
+The `Using` item lets you [globally include a namespace](../../csharp/language-reference/keywords/using-directive.md#global-modifier) across your C# project, such that you don't have to add a `using` directive for the namespace at the top of your source files. This item is similar to the `Import` item that can be used for the same purpose in Visual Basic projects. This property is available starting in .NET 6.
+
+```xml
+<ItemGroup>
+  <Using Include="My.Awesome.Namespace" />
+</ItemGroup>
+```
+
+You can also use the `Using` item to define global `using <alias>` and `using static <type>` directives.
+
+```xml
+<ItemGroup>
+  <Using Include="My.Awesome.Namespace" Alias="Awesome" />
+</ItemGroup>
+```
+
+For example:
+
+- `<Using Include="Microsoft.AspNetCore.Http.Results" Alias="Results" />` emits `global using Results = global::Microsoft.AspNetCore.Http.Results;`
+- `<Using Include="Microsoft.AspNetCore.Http.Results" Static="True" />` emits `global using static global::Microsoft.AspNetCore.Http.Results;`
+
+For more information about aliased `using` directives and `using static <type>` directives, see [using directive](../../csharp/language-reference/keywords/using-directive.md#static-modifier).
 
 ## Item metadata
 

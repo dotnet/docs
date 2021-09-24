@@ -3,7 +3,7 @@ title: Compile-time logging source generation
 description: Learn how to use the LoggerMessageAttribute and compile-time source generation for logging in .NET.
 author: maryamariyan
 ms.author: maariyan
-ms.date: 05/18/2021
+ms.date: 08/25/2021
 ---
 
 # Compile-time logging source generation
@@ -224,7 +224,7 @@ Consider the example logging output when using the `JsonConsole` formatter.
 
 ### Indeterminate parameter order
 
-There are no constraints on the ordering of log method parameters. A developer could define the `ILogger` as the last parameter, although it may a appear a bit awkward.
+There are no constraints on the ordering of log method parameters. A developer could define the `ILogger` as the last parameter, although it may appear a bit awkward.
 
 ```csharp
 [LoggerMessage(

@@ -3,7 +3,7 @@ title: Deploy .NET apps to Raspberry Pi
 description: Learn how to deploy .NET apps to Raspberry Pi.
 author: camsoper
 ms.author: casoper
-ms.date: 11/13/2020
+ms.date: 09/22/2021
 ms.topic: how-to
 ms.prod: dotnet
 ---
@@ -45,7 +45,7 @@ To deploy your app as a framework-dependent app, complete the following steps:
         Verify the displayed version matches the version you installed.
 
 1. Publish the app on the development computer as follows, depending on development environment.
-    - If using **Visual Studio**, [deploy the app to a local folder](/visualstudio/deployment/quickstart-deploy-to-local-folder?view=vs-2019). Before publishing, select **Edit** in the publish profile summary and select the **Settings** tab. Ensure that **Deployment mode** is set to *Framework-dependent* and **Target runtime** is set to *Portable*.
+    - If using **Visual Studio**, [deploy the app to a local folder](/visualstudio/deployment/quickstart-deploy-to-local-folder). Before publishing, select **Edit** in the publish profile summary and select the **Settings** tab. Ensure that **Deployment mode** is set to *Framework-dependent* and **Target runtime** is set to *Portable*.
     - If using the **.NET CLI**, use the [dotnet publish](../core/tools/dotnet-publish.md) command. No additional arguments are required.
 
 1. [!INCLUDE [sftp-client](includes/sftp-client.md)]
@@ -63,7 +63,7 @@ To deploy your app as a self-contained app, complete the following steps:
 1. [!INCLUDE [ensure-ssh](includes/ensure-ssh.md)]
 
 1. Publish the app on the development computer as follows, depending on development environment.
-    - If using **Visual Studio**, [deploy the app to a local folder](/visualstudio/deployment/quickstart-deploy-to-local-folder?view=vs-2019). Before publishing, select **Edit** in the publish profile summary and select the **Settings** tab. Ensure that **Deployment mode** is set to *Self-contained* and **Target runtime** is set to *linux-arm*.
+    - If using **Visual Studio**, [deploy the app to a local folder](/visualstudio/deployment/quickstart-deploy-to-local-folder). Before publishing, select **Edit** in the publish profile summary and select the **Settings** tab. Ensure that **Deployment mode** is set to *Self-contained* and **Target runtime** is set to *linux-arm*.
     - If using the **.NET CLI**, use the [dotnet publish](../core/tools/dotnet-publish.md) command with the `-r linux-arm` argument:
 
         ```dotnetcli

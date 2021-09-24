@@ -64,6 +64,6 @@ For more information, see the [Static constructors](~/_csharplang/spec/classes.m
 - [Classes, structs, and records](/dotnet/csharp/fundamentals/object-oriented)
 - [Constructors](./constructors.md)
 - [Static Classes and Static Class Members](./static-classes-and-static-class-members.md)
-- [Finalizers](./destructors.md)
+- [Finalizers](./finalizers.md)
 - [Constructor Design Guidelines](../../../standard/design-guidelines/constructor.md#type-constructor-guidelines)
 - [Security Warning - CA2121: Static constructors should be private](/visualstudio/code-quality/ca2121-static-constructors-should-be-private)

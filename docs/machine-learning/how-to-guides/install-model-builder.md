@@ -84,8 +84,3 @@ ML.NET Model builder is built into Visual Studio. To disable it:
 Model Builder automatically updates when there's a new version.
 
 However, if you'd prefer to manually install the latest version, either download it  from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=MLNET.07) or use the Extensions Manager in Visual Studio. See [how to update a Visual Studio extension](/visualstudio/extensibility/how-to-update-a-visual-studio-extension) for more information.
-
-<!-- markdownlint-disable MD025 -->
-# Hi! Another h1 here!
-
-This is a test

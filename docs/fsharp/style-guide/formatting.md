@@ -1568,7 +1568,7 @@ val SampleMixedFunction:
 
 ### Formatting explicit generic type arguments and constraints
 
-The guidelines below apply to function definitions, member definitions, and type definitions.
+The guidelines below apply to function definitions, member definitions, type definitions, and function applications.
 
 Keep generic type arguments and constraints on a single line if it’s not too long:
 
@@ -1612,6 +1612,24 @@ let inline f<^T1, ^T2
     and ^T2 : (member Foo3: string -> ^T1 option)>
     =
     // function body
+```
+
+The same rules apply for function applications:
+
+```f#
+// ✔️ OK
+myObj
+|> Json.serialize<
+    {| child: {| displayName: string; kind: string |}
+       newParent: {| id: string; displayName: string |}
+       requiresApproval: bool |}>
+       
+// ✔️ OK
+Json.serialize<
+    {| child: {| displayName: string; kind: string |}
+       newParent: {| id: string; displayName: string |}
+       requiresApproval: bool |}>
+    myObj
 ```
 
 ## Formatting attributes

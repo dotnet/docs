@@ -822,9 +822,9 @@ The `ImplicitUsings` property can be used to enable and disable implicit `global
 ```
 
 > [!NOTE]
-> The templates for new C# projects that target .NET 6 or later have `ImplicitUsings` is set to `enable` by default.
+> The templates for new C# projects that target .NET 6 or later have `ImplicitUsings` set to `enable` by default.
 
-To define an explicit `global using` directive, use the [Using](#using) property.
+To define an explicit `global using` directive, add a [Using](#using) item.
 
 ## Items
 

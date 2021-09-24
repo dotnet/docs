@@ -835,16 +835,18 @@ The `DisableImplicitNamespaceImports` property can be used to disable [implicit 
 
 ### ImplicitUsings
 
-The `ImplicitUsings` property can be used to enable and disable implicit `global using` directives in C# projects that target .NET 6 or a later version and C# 10.0 or a later version. When the feature is enabled, the .NET SDK adds `global using` directives for a set of default namespaces based on the type of project SDK. Set this property to `true` or `enable` to enable implicit `global using` directives. To disable implicit `global using` directives, remove the property or set it to `false` .
+The `ImplicitUsings` property can be used to enable and disable implicit `global using` directives in C# projects that target .NET 6 or a later version and C# 10.0 or a later version. When the feature is enabled, the .NET SDK adds `global using` directives for a set of default namespaces based on the type of project SDK. Set this property to `true` or `enable` to enable implicit `global using` directives. To disable implicit `global using` directives, remove the property or set it to `false` or `disable`.
 
 ```xml
 <PropertyGroup>
-  <ImplicitUsings>true</ImplicitUsings>
+  <ImplicitUsings>enable</ImplicitUsings>
 </PropertyGroup>
 ```
 
 > [!NOTE]
-> For new C# projects that target .NET 6 or later, `ImplicitUsings` is set to `true` by default.
+> The templates for new C# projects that target .NET 6 or later have `ImplicitUsings` set to `enable` by default.
+
+To define an explicit `global using` directive, add a [Using](#using) item.
 
 ## Items
 

@@ -3,7 +3,7 @@ title: 'Tutorial: Classify health violations with Model Builder'
 description: This tutorial illustrates how to build a multiclass classification model using ML.NET Model Builder to classify restaurant health violation severity in San Francisco.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 08/11/2021
+ms.date: 09/20/2021
 ms.topic: tutorial
 ms.custom: mvc,mlnet-tooling
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to classify violation severity using Model Builder.
@@ -38,7 +38,7 @@ This sample creates a C# .NET Core console application that categorizes the risk
 
 ## Create a console application
 
-1. Create a **C# .NET Core console application** called "RestaurantViolations". Make sure **Place solution and project in the same directory** is **unchecked** (VS 2019), or **Create directory for solution** is **checked** (VS 2017).
+1. Create a **C# .NET Core console application** called "RestaurantViolations".
 
 ## Prepare and understand the data
 
@@ -64,16 +64,16 @@ The `label` is the column you want to predict. When performing a classification 
 
 When first adding Model Builder to the solution it will prompt you to create an `mbconfig` file. The `mbconfig` file keeps track of everything you do in Model Builder to allow you to reopen the session.
 
-1. In **Solution Explorer**, right-click the *RestaurantViolations* project, and select **Add** > **Machine Learning**.
+1. In **Solution Explorer**, right-click the *RestaurantViolations* project, and select **Add** > **Machine Learning Model...**.
 1. Name the `mbconfig` project **RestaurantViolationsPrediction**, and click the **Add** button.
 
 ## Choose a scenario
 
-![Model Builder wizard in Visual Studio](../media/model-builder-screen.png)
+![Model Builder wizard in Visual Studio](../media/model-builder-scenarios.png)
 
-To train your model, select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is *Text Classification*.
+To train your model, select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is *Data classification*.
 
-1. For this sample, the scenario is multiclass classification. In the *Scenario* step of Model Builder, select the **Issue Classification** scenario.
+1. For this sample, the task is multiclass classification. In the *Scenario* step of Model Builder, select the **Data classification** scenario.
 
 ## Load the data
 
@@ -86,7 +86,7 @@ Model Builder accepts data from a SQL Server database or a local file in `csv`, 
     1. In the **Connection Properties** dialog, select **Browse** and select the downloaded *RestaurantScores.mdf* file.
     1. Select **OK**.
 1. Choose **Violations** from the **Table** dropdown.
-1. Choose **RiskCategory** in the **Column to Predict (Label)** dropdown.
+1. Choose **RiskCategory** in the **Column to predict (Label)** dropdown.
 1. Leave the default selections in **Advanced data options**.
 1. Click the **Next step** button to move to the train step in Model Builder.
 

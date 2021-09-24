@@ -31,7 +31,7 @@ For comparison, the alternative code for the first of these expressions without 
 Dim length As Integer
 If customers IsNot Nothing Then
    length = customers.Length
-else
+Else
     length = Nothing
 End If
 ```

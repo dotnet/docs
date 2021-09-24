@@ -26,7 +26,7 @@ foreach (var m in type.GetMethods())
 }
 ```
 
-In this example, <xref:System.Type.GetType(string)> dynamically requests a type with an unknown name, and then prints the names of all of its methods. Because there's no way to know at publish time what type name is going to be used, there's no way for the trimmer to know which type to preserve in the output. It's very likely that this code could have worked before trimming (as long as the input is something known to exist in the target framework), but would probably produce a null reference exception after trimming (due to `Type.GetType` returning null).
+In this example, <xref:System.Type.GetType> dynamically requests a type with an unknown name, and then prints the names of all of its methods. Because there's no way to know at publish time what type name is going to be used, there's no way for the trimmer to know which type to preserve in the output. It's very likely that this code could have worked before trimming (as long as the input is something known to exist in the target framework), but would probably produce a null reference exception after trimming (due to `Type.GetType` returning null).
 
 In this case, the developer would expect a warning on the call to `Type.GetType`, indicating that it cannot determine which type is going to be used by the pplication.
 
@@ -39,7 +39,7 @@ Trim warnings are meant to bring predictability to trimming. There are two big c
 
 ### RequiresUnreferencedCode
 
-<xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute> is simple and broad: it's an attribute that means the member has been annotated incompatible with trimming, meaning that it might use reflection or some other mechanism to access code that may be trimmed away. This attribute is used when code is fundamentally not trim compatible, or the trim dependency is too complex to explain to the trimmer. This would often be true for methods which use the C# [`dynamic`](../../csharp/language-reference/builtin-types/reference-types.md#the-dynamic-type) keyword, accessing types from <xref:System.Reflection.Assembly.LoadFrom(string)>, or other runtime code generation technologies. An example would be:
+<xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute> is simple and broad: it's an attribute that means the member has been annotated incompatible with trimming, meaning that it might use reflection or some other mechanism to access code that may be trimmed away. This attribute is used when code is fundamentally not trim compatible, or the trim dependency is too complex to explain to the trimmer. This would often be true for methods which use the C# [`dynamic`](../../csharp/language-reference/builtin-types/reference-types.md#the-dynamic-type) keyword, accessing types from <xref:System.Reflection.Assembly.LoadFrom(System.String)>, or other runtime code generation technologies. An example would be:
 
 ```csharp
 [RequiresUnreferencedCode("Use 'MethodFriendlyToTrimming' instead")]

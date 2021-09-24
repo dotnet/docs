@@ -5,11 +5,11 @@ ms.date: 09/23/2021
 ---
 # ListViewGroupCollection methods throw new InvalidOperationException
 
-Previously, an <xref:System.InvalidOperationException> was thrown if <xref:System.Windows.Forms.ListViewGroupCollection> methods were invoked on a <xref:System.Windows.Forms.ListViewItem.ListView> in virtual mode *and* the <xref:System.Windows.Forms.Control.Handle> had already been created. Starting in .NET 6, these <xref:System.Windows.Forms.ListViewGroupCollection> methods now only check if the <xref:System.Windows.Forms.ListViewItem.ListView> is in virtual mode. If it is, they throw an <xref:System.InvalidOperationException> with a more descriptive message.
+Previously, an <xref:System.InvalidOperationException> was thrown if <xref:System.Windows.Forms.ListViewGroupCollection> methods were invoked on a <xref:System.Windows.Forms.ListView> in virtual mode *and* the <xref:System.Windows.Forms.Control.Handle> had already been created. Starting in .NET 6, these <xref:System.Windows.Forms.ListViewGroupCollection> methods now only check if the <xref:System.Windows.Forms.ListView> is in virtual mode. If it is, they throw an <xref:System.InvalidOperationException> with a more descriptive message.
 
 ## Previous behavior
 
-Consider the following code that adds a <xref:System.Windows.Forms.ListViewGroup> to a <xref:System.Windows.Forms.ListViewItem.ListView>:
+Consider the following code that adds a <xref:System.Windows.Forms.ListViewGroup> to a <xref:System.Windows.Forms.ListView>:
 
 ```csharp
 ListViewGroup group1 = new ListViewGroup
@@ -33,7 +33,7 @@ The same code from the [Previous behavior](#previous-behavior) section produces 
 
 ## Reason for change
 
-The new <xref:System.InvalidOperationException> message is more understandable. In addition, it closes a workaround where the developer could add a <xref:System.Windows.Forms.ListViewGroup> to the <xref:System.Windows.Forms.ListViewItem.ListView> before the <xref:System.Windows.Forms.Control.Handle> was created.
+The new <xref:System.InvalidOperationException> message is more understandable. In addition, it closes a workaround where the developer could add a <xref:System.Windows.Forms.ListViewGroup> to the <xref:System.Windows.Forms.ListView> before the <xref:System.Windows.Forms.Control.Handle> was created.
 
 ## Version introduced
 
@@ -41,8 +41,8 @@ The new <xref:System.InvalidOperationException> message is more understandable. 
 
 ## Recommended action
 
-- Review and, if necessary, update your code so that it doesn't add a <xref:System.Windows.Forms.ListViewGroup> to a <xref:System.Windows.Forms.ListViewItem.ListView> in virtual mode.
-- If your code handles <xref:System.InvalidOperationException> exceptions, you may need to update the message to reflect that the <xref:System.Windows.Forms.ListViewItem.ListView> is in virtual mode.
+- Review and, if necessary, update your code so that it doesn't add a <xref:System.Windows.Forms.ListViewGroup> to a <xref:System.Windows.Forms.ListView> in virtual mode.
+- If your code handles <xref:System.InvalidOperationException> exceptions, you may need to update the message to reflect that the <xref:System.Windows.Forms.ListView> is in virtual mode.
 
 ## Affected APIs
 

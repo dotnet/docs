@@ -380,7 +380,7 @@ The `GenerateRequiresPreviewFeaturesAttribute` property is closely related to th
 
 ### OptimizeImplicitlyTriggeredBuild
 
-To speed up the build time, builds that are implicitly triggered by Visual Studio skip code analysis, including nullable analysis. These implicit builds occur when you run tests or start debugging in Visual Studio. However, builds are optimized in this manner only when `TreatWarningsAsErrors` is not `true`. If you have `TreatWarningsAsErrors` set to `true` but you still want implicitly triggered builds to be optimized, you can set `OptimizeImplicitlyTriggeredBuild` to `True`. To turn off build optimization for implicitly triggered builds, set `OptimizeImplicitlyTriggeredBuild` to `False`.
+To speed up the build time, builds that are implicitly triggered by Visual Studio skip code analysis, including nullable analysis. Visual Studio triggers an implicit build when you run tests, for example. However, implicit builds are optimized only when `TreatWarningsAsErrors` is not `true`. If you have `TreatWarningsAsErrors` set to `true` but you still want implicitly triggered builds to be optimized, you can set `OptimizeImplicitlyTriggeredBuild` to `True`. To turn off build optimization for implicitly triggered builds, set `OptimizeImplicitlyTriggeredBuild` to `False`.
 
 ```xml
 <PropertyGroup>

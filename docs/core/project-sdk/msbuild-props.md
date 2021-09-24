@@ -338,6 +338,7 @@ The following MSBuild properties are documented in this section:
 - [EmbeddedResourceUseDependentUponConvention](#embeddedresourceusedependentuponconvention)
 - [EnablePreviewFeatures](#enablepreviewfeatures)
 - [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute)
+- [OptimizeImplicitlyTriggeredBuild](#optimizeimplicitlytriggeredbuild)
 
 C# compiler options can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
 
@@ -387,6 +388,16 @@ The `GenerateRequiresPreviewFeaturesAttribute` property is closely related to th
 
 > [!IMPORTANT]
 > If you set the `GenerateRequiresPreviewFeaturesAttribute` property to `False`, you must be certain to decorate all public APIs that rely on preview features with <xref:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute>.
+
+### OptimizeImplicitlyTriggeredBuild
+
+To speed up the build time, builds that are implicitly triggered by Visual Studio skip code analysis, including nullable analysis. Visual Studio triggers an implicit build when you run tests, for example. However, implicit builds are optimized only when `TreatWarningsAsErrors` is not `true`. If you have `TreatWarningsAsErrors` set to `true` but you still want implicitly triggered builds to be optimized, you can set `OptimizeImplicitlyTriggeredBuild` to `True`. To turn off build optimization for implicitly triggered builds, set `OptimizeImplicitlyTriggeredBuild` to `False`.
+
+```xml
+<PropertyGroup>
+    <OptimizeImplicitlyTriggeredBuild>True</OptimizeImplicitlyTriggeredBuild>
+</PropertyGroup>
+```
 
 ## Default item inclusion properties
 

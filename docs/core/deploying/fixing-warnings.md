@@ -110,7 +110,6 @@ void Method2(Type type)
 
 If you compile the above, now you see a warning:
 
-
 > Trim analysis warning IL2070: net6.Program.Method2(Type): 'this' argument does not satisfy
 > 'DynamicallyAccessedMemberTypes.PublicMethods' in call to 'System.Type.GetMethods()'. The
 > parameter 'type' of method 'net6.Program.Method2(Type)' does not have matching annotations. The

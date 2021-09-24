@@ -29,7 +29,6 @@ Learn how to install ML.NET Model Builder to add machine learning to your .NET a
 
 ML.NET Model builder is built into Visual Studio. To enable it:
 
-<!-- markdownlint-disable MD025 -->
 # [Visual Studio 2019](#tab/visual-studio-2019)
 
 1. Open the Visual Studio Installer.
@@ -49,14 +48,11 @@ ML.NET Model builder is built into Visual Studio. To enable it:
     :::image type="content" source="media/install-model-builder/enable-model-builder-visual-studio-2022.png" alt-text="Enable Model Builder Visual Studio 2022" lightbox="media/install-model-builder/enable-model-builder-visual-studio-2022.png":::
 
 ---
-<!-- markdownlint-enable MD025 -->
 
 ## Uninstall Model Builder
 
 ML.NET Model builder is built into Visual Studio. To disable it:
 
-<!-- markdownlint-disable MD025 -->
-<!-- markdownlint-disable MD024 -->
 # [Visual Studio 2019](#tab/visual-studio-2019)
 
 1. Open the Visual Studio Installer.
@@ -76,8 +72,6 @@ ML.NET Model builder is built into Visual Studio. To disable it:
     :::image type="content" source="media/install-model-builder/disable-model-builder-visual-studio-2022.png" alt-text="Disable Model Builder Visual Studio 2022" lightbox="media/install-model-builder/disable-model-builder-visual-studio-2022.png":::
 
 ---
-<!-- markdownlint-enable MD025 -->
-<!-- markdownlint-enable MD024 -->
 
 ## Upgrade Model Builder
 

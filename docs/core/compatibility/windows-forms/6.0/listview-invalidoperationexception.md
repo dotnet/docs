@@ -41,7 +41,7 @@ The new <xref:System.InvalidOperationException> message is more understandable. 
 
 ## Recommended action
 
-- Review and, if necessary, update your code so that it doesn't use the affected APIs to add a <xref:System.Windows.Forms.ListViewGroup> to a <xref:System.Windows.Forms.ListViewItem.ListView> in virtual mode.
+- Review and, if necessary, update your code so that it doesn't add a <xref:System.Windows.Forms.ListViewGroup> to a <xref:System.Windows.Forms.ListViewItem.ListView> in virtual mode.
 - If your code handles <xref:System.InvalidOperationException> exceptions, you may need to update the message to reflect that the <xref:System.Windows.Forms.ListViewItem.ListView> is in virtual mode.
 
 ## Affected APIs

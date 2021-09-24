@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: ML.NET classification model to categorize images'
 description: Learn how to train a classification model to categorize images using a pre-trained TensorFlow model for image processing. 
-ms.date: 04/13/2021
+ms.date: 09/24/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
 recommendations: false
@@ -198,23 +198,6 @@ Since you'll display the image data and the related predictions more than once, 
 1. Fill in the body of the `DisplayResults` method:
 
     [!code-csharp[DisplayPredictions](./snippets/image-classification/csharp/Program.cs#DisplayPredictions)]
-
-### Create a .tsv file utility method
-
-1. Create the `ReadFromTsv()` method, just after the `DisplayResults()` method, using the following code:
-
-    ```csharp
-    public static IEnumerable<ImageData> ReadFromTsv(string file, string folder)
-    {
-
-    }
-    ```
-
-1. Fill in the body of the `ReadFromTsv` method:
-
-    [!code-csharp[ReadFromTsv](./snippets/image-classification/csharp/Program.cs#ReadFromTsv)]
-
-    The code parses through the `tags.tsv` file to add the file path to the image file name for the `ImagePath` property and load it and the `Label` into an `ImageData` object.
 
 ### Create a method to make a prediction
 

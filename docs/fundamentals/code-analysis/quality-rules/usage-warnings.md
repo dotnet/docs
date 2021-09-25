@@ -54,3 +54,4 @@ Usage rules support proper usage of .NET.
 |[CA2249: Consider using String.Contains instead of String.IndexOf](ca2249.md)|Calls to `string.IndexOf` where the result is used to check for the presence or absence of a substring can be replaced by `string.Contains`.|
 |[CA2250: Use `ThrowIfCancellationRequested`](ca2250.md) | `ThrowIfCancellationRequested` automatically checks whether the token has been canceled, and throws an `OperationCanceledException` if it has.|
 |[CA2251: Use `String.Equals` over `String.Compare`](ca2251.md)|It is both clearer and likely faster to use `String.Equals` instead of comparing the result of `String.Compare` to zero.|
+|[CA2252: Opt in to preview features](ca2252.md)|Opt in to preview features before using preview APIs.|

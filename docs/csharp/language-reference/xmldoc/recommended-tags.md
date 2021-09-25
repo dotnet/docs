@@ -90,7 +90,7 @@ helpviewer_keywords:
   - "cross-references [C#], tags"
   - "<seealso> C# XML tag"
 ---
-# Recommend XML tags for C# documentation comments
+# Recommended XML tags for C# documentation comments
 
 C# documentation comments use XML elements to define the structure of the output documentation. One consequence of this feature is that you can add any valid XML in your documentation comments. The C# compiler copies these elements into the output XML file. While you can use any valid XML in your comments (including any valid HTML element), documenting code is recommended for many reasons.
 

@@ -24,14 +24,11 @@ It is typical when implementing the <xref:System.IAsyncDisposable> interface tha
 
 The <xref:System.IAsyncDisposable> interface declares a single parameterless method, <xref:System.IAsyncDisposable.DisposeAsync>. Any non-sealed class should have an additional `DisposeAsyncCore()` method that also returns a <xref:System.Threading.Tasks.ValueTask>.
 
-- A `public` <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> implementation that has no parameters.
-- A `protected virtual ValueTask DisposeAsyncCore()` method whose signature is:
+Signatures:
 
-  ```csharp
-  protected virtual ValueTask DisposeAsyncCore()
-  {
-  }
-  ```
+- `public ValueTask DisposeAsync()` – an <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> implementation
+- `protected virtual ValueTask DisposeAsyncCore()`
+
 
 ### The DisposeAsync() method
 

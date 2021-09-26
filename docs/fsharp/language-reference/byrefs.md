@@ -100,7 +100,7 @@ All of these rules together mean that the holder of an `inref` pointer may not m
 
 The purpose of `outref<'T>` is to indicate that the pointer should only be written to. Unexpectedly, `outref<'T>` permits reading the underlying value despite its name. This is for compatibility purposes.
 
-Semantically, `outref<'T>` is no different than `byref<'T>`, except for one difference where `outref<'T>` parameters can be implicitly constructed into a tuple with the return value when a tuple-style method can be changed to return a tuple when you only supply non-`outref<'T>` arguments to the method.
+Semantically, `outref<'T>` is no different than `byref<'T>`, except for one difference: methods with `outref<'T>` parameters are implicitly constructed into a tuple return type, just like when calling a method with an `[<Out>]` parameter.
 
 ```fs
 type C =

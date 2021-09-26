@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -28,9 +28,8 @@ public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
         if (disposing)
         {
             _jsonWriter?.Dispose();
+            _jsonWriter = null;
         }
-
-        _jsonWriter = null;
     }
 
     protected virtual async ValueTask DisposeAsyncCore()

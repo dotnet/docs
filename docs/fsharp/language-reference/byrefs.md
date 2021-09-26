@@ -1,7 +1,7 @@
 ---
 title: Byrefs
 description: Learn about byref and byref-like types in F#, which are used for low-level programming.
-ms.date: 2021-09-27
+ms.date: 09/27/2021
 ---
 # Byrefs
 

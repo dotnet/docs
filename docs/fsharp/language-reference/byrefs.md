@@ -1,7 +1,7 @@
 ---
 title: Byrefs
 description: Learn about byref and byref-like types in F#, which are used for low-level programming.
-ms.date: 11/04/2019
+ms.date: 26/11/2021
 ---
 # Byrefs
 
@@ -98,7 +98,48 @@ All of these rules together mean that the holder of an `inref` pointer may not m
 
 ### Outref semantics
 
-The purpose of `outref<'T>` is to indicate that the pointer should only be written to. Unexpectedly, `outref<'T>` permits reading the underlying value despite its name. This is for compatibility purposes. Semantically, `outref<'T>` is no different than `byref<'T>`.
+The purpose of `outref<'T>` is to indicate that the pointer should only be written to. Unexpectedly, `outref<'T>` permits reading the underlying value despite its name. This is for compatibility purposes.
+
+Semantically, `outref<'T>` is no different than `byref<'T>`, except for one difference where `outref<'T>` parameters can be implicitly constructed into a tuple with the return value when a tuple-style method can be changed to return a tuple when you only supply non-`outref<'T>` arguments to the method.
+
+```fs
+type C =
+    static member M1(x, y: _ outref) =
+        y <- x
+        true
+    static member M2(x, y: _ byref) =
+        y <- x
+        true
+        
+match C.M1 1 with
+| true, 1 -> printfn "Expected" // Fine
+| _ -> printfn "Never matched"
+
+match C.M2 1 with // error FS0001: This expression was expected to have type ''a * 'a ref' but here has type 'int'
+| true, 1 -> printfn "Expected" // error FS0001: This expression was expected to have type 'bool'but here has type ''a * 'b' 
+| _ -> printfn "Never matched"
+```
+
+Although programming with `outref<'T>` are not normally seen, this eases interoperability with C#'s e.g. `TryParse` methods, so that instead of being forced to utilise `mutable` variables and more lines of code:
+
+```fs
+let inputString = "1"
+let mutable validInt = 0
+if System.Int32.TryParse(inputString, &validInt) then
+    printfn "It's a valid int: %d" validInt
+else printfn "Nope, it's an invalid int"
+```
+
+, you can just write
+
+```fs
+let inputString = "1"
+match System.Int32.TryParse inputString with
+| true, validInt -> printfn "It's a valid int: %d" validInt
+| _ -> printfn "Nope, it's an invalid int"
+```
+
+and not have to indicate mutation for this immutable operation.
 
 ### Interop with C\#
 

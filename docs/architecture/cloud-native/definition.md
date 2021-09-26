@@ -308,7 +308,7 @@ With this pattern, a backing service can be attached and detached without code c
 
 Cloud vendors provide APIs for you to communicate with their proprietary backing services. These libraries encapsulate the proprietary plumbing and complexity. However, communicating directly with these APIs will tightly couple your code to that specific backing service. It's a better practice to insulate the implementation details of the vendor API. Introduce an intermediation layer, or intermediate API, exposing generic operations to your service code and wrap the vendor code inside it. This loose coupling enables you to swap out one backing service for another or move your code to a different public cloud without having to make changes to the mainline service code.
 
-Backing services are discussed in [Cloud-Native Data Patterns](./distributed-data.ms) and [Cloud-Native Communication Patterns](./communication-patterns.md).
+Backing services are discussed in [Cloud-Native Data Patterns](./distributed-data.md) and [Cloud-Native Communication Patterns](./communication-patterns.md).
 
 ## Automation
 
@@ -350,7 +350,7 @@ In the previous figure, pay special attention to separation of tasks:
 
 Applying these practices, organizations have radically evolved how they ship software. Many have moved from quarterly releases to on-demand updates. The goal is to catch problems early in the development cycle when they're less expensive to fix. The longer the duration between integrations, the more expensive problems become to resolve.  With consistency in the integration process, teams can commit code changes more frequently, leading to better collaboration and software quality.
 
-Infrastructure as code and deployment automation, along with GitHub and Azure DevOps are discussed in detail in [DevOps](./DevOps.md)
+Infrastructure as code and deployment automation, along with GitHub and Azure DevOps are discussed in detail in [DevOps](./devops.md)
 
 ## The last pillar: Culture
 

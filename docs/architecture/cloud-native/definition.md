@@ -59,7 +59,7 @@ Cloud-native systems embrace the Cattle service model. They continue to run as t
 
 The Azure cloud platform supports this type of highly elastic infrastructure with automatic scaling, self-healing, and monitoring capabilities.
 
-##3 Modern design
+## Modern design
 
 How would you design a cloud-native app? What would your architecture look like? To what principles, patterns, and best practices would you adhere? What infrastructure and operational concerns would be important?
 
@@ -352,9 +352,9 @@ Applying these practices, organizations have radically evolved how they ship sof
 
 Infrastructure as code and deployment automation, along with GitHub and Azure DevOps are discussed in detail in [DevOps](./DevOps.md)
 
-## The last pillar: Culture and mindset
+## The last pillar: Culture
 
-Perhaps the most important pillar to embracing a cloud-native architecture is the culture of your organization and the mindset of your team.
+Perhaps the most important pillar to embracing a cloud-native architecture is the culture of your organization, and mindset, of your team. Not only is it a pillar, but also a major constraint, if not done properly.
 
 > Work-in-process: Adding content here...
 

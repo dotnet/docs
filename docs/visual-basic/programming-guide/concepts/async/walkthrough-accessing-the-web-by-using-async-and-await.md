@@ -12,7 +12,7 @@ For more information about the Async feature, see [Asynchronous Programming with
 
 This walkthrough starts with a synchronous Windows Presentation Foundation (WPF) application that sums the number of bytes in a list of websites. The walkthrough then converts the application to an asynchronous solution by using the new features.
 
-If you don't want to build the applications yourself, you can download "Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)" from [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f).
+You can develop the applications by either completing the walkthrough or downloading the sample from the [.NET Sample Browser](/samples/dotnet/samples/async-and-await-vb/). The example code is in the **SerialAsyncExample** project.
 
 In this walkthrough, you complete the following tasks:
 
@@ -655,7 +655,7 @@ End Class
 
 ## See also
 
-- [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)
+- [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](/samples/dotnet/samples/async-and-await-vb/)
 - [Await Operator](../../../language-reference/operators/await-operator.md)
 - [Async](../../../language-reference/modifiers/async.md)
 - [Asynchronous Programming with Async and Await (Visual Basic)](index.md)

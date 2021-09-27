@@ -28,7 +28,7 @@ foreach (var m in type.GetMethods())
 
 In this example, <xref:System.Type.GetType> dynamically requests a type with an unknown name, and then prints the names of all of its methods. Because there's no way to know at publish time what type name is going to be used, there's no way for the trimmer to know which type to preserve in the output. It's likely that this code could have worked before trimming (as long as the input is something known to exist in the target framework), but would probably produce a null reference exception after trimming (due to `Type.GetType` returning null).
 
-In this case, the developer would expect a warning on the call to `Type.GetType`, indicating that it cannot determine which type is going to be used by the application.
+In this case, the trimmer issues a warning on the call to `Type.GetType`, indicating that it cannot determine which type is going to be used by the application.
 
 ## Reacting to trim warnings
 

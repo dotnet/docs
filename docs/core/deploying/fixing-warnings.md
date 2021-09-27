@@ -7,15 +7,15 @@ ms.date: 09/08/2021
 ---
 # Introduction to trim warnings
 
-Conceptually, [trimming](trim-self-contained.md) is very simple: when publishing the application, the .NET SDK analyzes the entire application and removes all unused code. However, it can be difficult to determine what is unused, or more precisely, what is used.
+Conceptually, [trimming](trim-self-contained.md) is simple: when publishing the application, the .NET SDK analyzes the entire application and removes all unused code. However, it can be difficult to determine what is unused, or more precisely, what is used.
 
-To prevent changes in behavior when trimming applications, the .NET SDK provides static analysis of trim compatiblity through "trim warnings." Trim warnings are produced by the trimmer when it finds code that may not be compatible with trimming. Code which is not trim-compatible may produce behavioral changes, or even crashes, in an application after it has been trimmed. Ideally, all applications which use trimming should have no trim warnings. If there are any trim warnings, the app should be thoroughly tested after trimming to ensure that there are no behavior changes.
+To prevent changes in behavior when trimming applications, the .NET SDK provides static analysis of trim compatibility through "trim warnings." Trim warnings are produced by the trimmer when it finds code that may not be compatible with trimming. Code that's not trim-compatible may produce behavioral changes, or even crashes, in an application after it has been trimmed. Ideally, all applications that use trimming should have no trim warnings. If there are any trim warnings, the app should be thoroughly tested after trimming to ensure that there are no behavior changes.
 
-This document will help developers understand why some patterns produce trim warnings, and how these warnings can be addressed.
+This article will help developers understand why some patterns produce trim warnings, and how these warnings can be addressed.
 
 ## Examples of trim warnings
 
-For most C# code it is straightforward to determine what code is used and what code is unused -- the trimmer can walk method calls, field and property references, etc, and determine what code is accessed. Unfortunately, some features, like reflection, present a significant problem. Consider the following code:
+For most C# code, it's straightforward to determine what code is used and what code is unused&mdash;the trimmer can walk method calls, field and property references, and so on, and determine what code is accessed. Unfortunately, some features, like reflection, present a significant problem. Consider the following code:
 
 ```csharp
 string s = Console.ReadLine();
@@ -26,20 +26,20 @@ foreach (var m in type.GetMethods())
 }
 ```
 
-In this example, <xref:System.Type.GetType> dynamically requests a type with an unknown name, and then prints the names of all of its methods. Because there's no way to know at publish time what type name is going to be used, there's no way for the trimmer to know which type to preserve in the output. It's very likely that this code could have worked before trimming (as long as the input is something known to exist in the target framework), but would probably produce a null reference exception after trimming (due to `Type.GetType` returning null).
+In this example, <xref:System.Type.GetType> dynamically requests a type with an unknown name, and then prints the names of all of its methods. Because there's no way to know at publish time what type name is going to be used, there's no way for the trimmer to know which type to preserve in the output. It's likely that this code could have worked before trimming (as long as the input is something known to exist in the target framework), but would probably produce a null reference exception after trimming (due to `Type.GetType` returning null).
 
-In this case, the developer would expect a warning on the call to `Type.GetType`, indicating that it cannot determine which type is going to be used by the pplication.
+In this case, the developer would expect a warning on the call to `Type.GetType`, indicating that it cannot determine which type is going to be used by the application.
 
 ## Reacting to trim warnings
 
-Trim warnings are meant to bring predictability to trimming. There are two big categories of warnings which you will likely see:
+Trim warnings are meant to bring predictability to trimming. There are two large categories of warnings that you will likely see:
 
 1. `RequiresUnreferencedCode`
 2. `DynamicallyAccessedMembers`
 
 ### RequiresUnreferencedCode
 
-<xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute> is simple and broad: it's an attribute that means the member has been annotated incompatible with trimming, meaning that it might use reflection or some other mechanism to access code that may be trimmed away. This attribute is used when code is fundamentally not trim compatible, or the trim dependency is too complex to explain to the trimmer. This would often be true for methods which use the C# [`dynamic`](../../csharp/language-reference/builtin-types/reference-types.md#the-dynamic-type) keyword, accessing types from <xref:System.Reflection.Assembly.LoadFrom(System.String)>, or other runtime code generation technologies. An example would be:
+<xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute> is simple and broad: it's an attribute that means the member has been annotated incompatible with trimming, meaning that it might use reflection or some other mechanism to access code that may be trimmed away. This attribute is used when code is fundamentally not trim compatible, or the trim dependency is too complex to explain to the trimmer. This would often be true for methods that use the C# [`dynamic`](../../csharp/language-reference/builtin-types/reference-types.md#the-dynamic-type) keyword, accessing types from <xref:System.Reflection.Assembly.LoadFrom(System.String)>, or other runtime code generation technologies. An example would be:
 
 ```csharp
 [RequiresUnreferencedCode("Use 'MethodFriendlyToTrimming' instead")]
@@ -53,7 +53,7 @@ void TestMethod()
 }
 ```
 
-There aren't many workarounds for `RequiresUnreferencedCode`. The best fix is to avoid calling the method at all when trimming and use something else which is trim-compatible. If you're writing a library and it's not in your control whether or not to call the method, you can also add `RequiresUnreferencedCode` to your own method. This will annotate your method as not trim compatible. Adding `RequiresUnreferencedCode` will silence all trimming warnings in the given method, but will produce a warning whenever someone else calls it. For this reason, it is mostly useful to library authors to "bubble up" the warning to a public API.
+There aren't many workarounds for `RequiresUnreferencedCode`. The best fix is to avoid calling the method at all when trimming and use something else that's trim-compatible. If you're writing a library and it's not in your control whether or not to call the method, you can also add `RequiresUnreferencedCode` to your own method. This will annotate your method as not trim compatible. Adding `RequiresUnreferencedCode` will silence all trimming warnings in the given method, but will produce a warning whenever someone else calls it. For this reason, it is mostly useful to library authors to "bubble up" the warning to a public API.
 
 If you can somehow determine that the call is safe, and all the code that's needed won't be trimmed away, you can also suppress the warning using <xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute>. For example:
 
@@ -131,6 +131,6 @@ void Method2(
 }
 ```
 
-Now the warning disappears, because the trimmer knows exactly which members to preserve, and which type(s) to preserve them on. In general, this is the best way to deal with `DynamicallyAccessedMembers` warnings: add annotations so the trimmer knows what to preserve.
+Now the warning disappears, because the trimmer knows exactly which members to preserve, and which types to preserve them on. In general, this is the best way to deal with `DynamicallyAccessedMembers` warnings: add annotations so the trimmer knows what to preserve.
 
 As with `RequiresUnreferencedCode` warnings, adding `RequiresUnreferencedCode` or `UnconditionalSuppressMessage` attributes also suppresses warnings, but none of these options make the code compatible with trimming, while adding `DynamicallyAccessedMembers` does.

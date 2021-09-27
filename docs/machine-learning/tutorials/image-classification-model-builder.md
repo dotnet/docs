@@ -33,7 +33,7 @@ In this tutorial, you:
 
 ## Prerequisites
 
-- For a list of pre-requisites and installation instructions, visit the [Model Builder installation guide](https://docs.microsoft.com/dotnet/machine-learning/how-to-guides/install-model-builder).
+- For a list of pre-requisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).
 - Azure account. If you don't have one, [create a free Azure account](https://aka.ms/AMLFree).
 - ASP.NET and web development workload.
 
@@ -73,13 +73,13 @@ When first adding Model Builder to the solution it will prompt you to create an 
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder.
 
-1. For this sample, the scenario is image classification. In the scenario step of the Model Builder tool, select the **Image Classification** scenario.
+1. For this sample, the task is image classification. In the scenario step of the Model Builder tool, select the **Image Classification** scenario.
 
 ## Select an enviornment
 
 Model Builder can run the training on different environments depending on the scenario that was selected.
 
-1. Select "Azure" as your environment and click the **Set up workspace** button.
+Select **Azure** as your environment and click the **Set up workspace** button.
 
 ### Create experiment in Azure
 
@@ -87,11 +87,11 @@ An Azure Machine Learning experiment is a resource that needs to be created befo
 
 The experiment encapsulates the configuration and results for one or more machine learning training runs. Experiments belong to a specific workspace. The first time an experiment is created, its name is registered in the workspace. Any subsequent runs - if the same experiment name is used - are logged as part of the same experiment. Otherwise, a new experiment is created.
 
-1. In the Create New Experiment dialog, choose your subscription from the **Subscription** dropdown.
+In the Create New Experiment dialog, choose your subscription from the **Subscription** dropdown.
 
 ### Create workspace
 
-A workspace is an Azure Machine Learning resource that provides a central place for all Azure Machine Learning resources and artifacts created as part of training run.
+A workspace is an Azure Machine Learning resource that provides a central place for all Azure Machine Learning resources and artifacts created as part of a training run.
 
 1. In the Create New Experiment dialog, select the **New** link next to the **Machine Learning Workspace name** dropdown.
 1. In the Create A New Workspace dialog, type "landuse-wkspc" in the **Machine Learning Workspace name** text box.
@@ -104,7 +104,7 @@ A workspace is an Azure Machine Learning resource that provides a central place 
 
     The provisioning process takes a few minutes. A request is made to Azure to provision the following cloud resources:
 
-    - Enterprise Azure Machine Learning workspace
+    - Azure Machine Learning workspace
     - Azure Storage Account
     - Azure Application Insights
     - Azure Container Registry

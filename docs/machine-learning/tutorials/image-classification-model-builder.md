@@ -3,7 +3,7 @@ title: 'Tutorial: Train an image classification model in Azure using Model Build
 description: Learn how to train an image classification model to recognize land use from satellite images in Azure using Model Builder
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 09/21/2021
+ms.date: 09/27/2021
 ms.topic: tutorial
 ms.custom: mvc,mlnet-tooling
 #Customer intent: As a non-developer, I want to use Model Builder to automatically train a model in Azure to classify images using Model Builder.
@@ -13,7 +13,7 @@ ms.custom: mvc,mlnet-tooling
 
 Learn how to train an image classification model in Azure using Model Builder to categorize land use from satellite images.
 
-This tutorial shows you how to create a Universal Windows Platform (UWP) application that hosts a model in an C# ASP.NET Core Web API to categorize land use based on satellite images.
+This tutorial shows you how to create a C# class library to categorize land use based on satellite images with Model Builder.
 
 In this tutorial, you:
 
@@ -39,24 +39,11 @@ In this tutorial, you:
 
 ## Model Builder image classification overview
 
-This sample creates a UWP application that categorizes land use from map satellite imagery using a deep learning model trained on Azure with Model Builder. The model itself is hosted as a web service in an ASP.NET Core Web API. You can find the source code for this tutorial in the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/modelbuilder/ImageClassification_Azure_LandUse) GitHub repository
+This sample creates C# class library that categorizes land use from map satellite imagery using a deep learning model trained on Azure with Model Builder. The model itself is hosted as a web service in an ASP.NET Core Web API. You can find the source code for this tutorial in the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/modelbuilder/ImageClassification_Azure_LandUse) GitHub repository
 
-## Create solution
+## Create a C# Class Library
 
-1. In Visual Studio, select **File > New > Project** from the menu bar.
-1. In the New Project dialog, type "Solution" into the search box.
-1. Select the **Blank Solution** template, then select the **Next** button.
-1. In the **Name** text box, type "LandUse".
-1. Select **Create**.
-
-## Create a Console Project
-
-1. In Solution Explorer, right-click the **LandUse** solution, then select **Add > New Project**.
-1. In the New Project dialog, type "Console" into the search box.
-1. Select the **Console Application** C# project template, then select the **Next** button.
-1. In the **Name** text box, type "LandUse".
-1. Select **Next**.
-1. In the "Additional Information" window, click **Create** to accept the default target framework.
+1. Create a **C# Class Library** called "LandUse". Make sure **Place solution and project in the same directory** is **unchecked** (VS 2019).
 
 ## Prepare and understand the data
 

@@ -352,11 +352,9 @@ Applying these practices, organizations have radically evolved how they ship sof
 
 Infrastructure as code and deployment automation, along with GitHub and Azure DevOps are discussed in detail in [DevOps](./devops.md)
 
-## The last pillar: Culture
+## Thinking in Cloud Native
 
-Perhaps the most important pillar to embracing a cloud-native architecture is the culture of your organization, and mindset, of your team. Not only is it a pillar, but also a major constraint, if not done properly.
-
-> Work-in-process: Adding content here...
+Perhaps the most important pillar to embracing a cloud-native architecture is the culture of your organization, and mindset, of your teams. Not only is it a pillar, but also a major constraint, if not done properly. Cloud Native is a [culture for building software](https://www.forbes.com/sites/sap/2021/04/19/the-cultural-shift-towards-a-cloud-native-mindset/?sh=32dbfb9f41ad). The culture originates from the top and propagates its way across the organization: Risks must be taken, failures celebrated as a learning process, and a relentless drive for agility.
 
 >[!div class="step-by-step"]
 >[Previous](introduction.md)

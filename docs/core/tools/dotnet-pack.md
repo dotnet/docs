@@ -126,7 +126,7 @@ Web projects aren't packable by default. To override the default behavior, add t
   | `VersionSuffix` only                | `1.0.0-$(VersionSuffix)`            |
   | `VersionPrefix` and `VersionSuffix` | `$(VersionPrefix)-$(VersionSuffix)` |
 
-  If you want to use `--version-suffix`, specify `VersionPrefix` and not `Version` in the project file. For example, if `VersionPrefix` is `0.1.2` and you pass `--version-suffix rc1` to `dotnet pack`, the package version will be `0.1.2-rc1`.
+  If you want to use `--version-suffix`, specify `VersionPrefix` and not `Version` in the project file. For example, if `VersionPrefix` is `0.1.2` and you pass `--version-suffix rc.1` to `dotnet pack`, the package version will be `0.1.2-rc.1`.
 
   If `Version` has a value and you pass `--version-suffix` to `dotnet pack`, the value specified for `--version-suffix` is ignored.
 

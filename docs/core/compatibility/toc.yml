@@ -99,6 +99,8 @@ items:
           href: core-libraries/6.0/system-drawing-common-windows-only.md
         - name: Unhandled exceptions from a BackgroundService
           href: core-libraries/6.0/hosting-exception-handling.md
+      - name: Entity Framework Core
+        href: /ef/core/what-is-new/ef-core-6.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Extensions
         items:
         - name: Configuration binder binds single elements to an array
@@ -135,6 +137,8 @@ items:
           href: sdk/6.0/implicit-namespaces.md
         - name: Implicit `global using` directives disabled
           href: sdk/6.0/implicit-namespaces-rc1.md
+        - name: MSBuild no longer supports calling GetType()
+          href: sdk/6.0/calling-gettype-property-functions.md
         - name: OutputType not automatically set to WinExe
           href: sdk/6.0/outputtype-not-set-automatically.md
         - name: RuntimeIdentifier warning if self-contained is unspecified
@@ -153,6 +157,8 @@ items:
           href: windows-forms/6.0/apis-throw-argumentnullexception.md
         - name: DataGridView APIs throw InvalidOperationException
           href: windows-forms/6.0/null-owner-causes-invalidoperationexception.md
+        - name: ListViewGroupCollection methods throw new InvalidOperationException
+          href: windows-forms/6.0/listview-invalidoperationexception.md
         - name: NotifyIcon.Text maximum text length increased
           href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
         - name: TableLayoutSettings properties throw InvalidEnumArgumentException
@@ -687,7 +693,9 @@ items:
         href: cryptography.md
     - name: Entity Framework Core
       items:
-      - name: EF Core 5.0
+      - name: EF Core 6
+        href: /ef/core/what-is-new/ef-core-6.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: EF Core 5
         href: /ef/core/what-is-new/ef-core-5.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: EF Core 3.1
         href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
@@ -773,6 +781,8 @@ items:
           href: sdk/6.0/implicit-namespaces.md
         - name: Implicit `global using` directives disabled
           href: sdk/6.0/implicit-namespaces-rc1.md
+        - name: MSBuild no longer supports calling GetType()
+          href: sdk/6.0/calling-gettype-property-functions.md
         - name: OutputType not automatically set to WinExe
           href: sdk/6.0/outputtype-not-set-automatically.md
         - name: RuntimeIdentifier warning if self-contained is unspecified
@@ -843,6 +853,8 @@ items:
           href: windows-forms/6.0/apis-throw-argumentnullexception.md
         - name: DataGridView APIs throw InvalidOperationException
           href: windows-forms/6.0/null-owner-causes-invalidoperationexception.md
+        - name: ListViewGroupCollection methods throw new InvalidOperationException
+          href: windows-forms/6.0/listview-invalidoperationexception.md
         - name: NotifyIcon.Text maximum text length increased
           href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
         - name: TableLayoutSettings properties throw InvalidEnumArgumentException

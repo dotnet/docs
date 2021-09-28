@@ -977,6 +977,8 @@ items:
             href: code-analysis/quality-rules/ca1846.md
           - name: CA1847
             href: code-analysis/quality-rules/ca1847.md
+          - name: CA1849
+            href: code-analysis/quality-rules/ca1849.md
         - name: SingleFile rules
           items:
           - name: Overview
@@ -1285,6 +1287,8 @@ items:
             href: code-analysis/quality-rules/ca2250.md
           - name: CA2251
             href: code-analysis/quality-rules/ca2251.md
+          - name: CA2252
+            href: code-analysis/quality-rules/ca2252.md
       - name: Code style rules
         items:
         - name: Overview
@@ -1578,6 +1582,8 @@ items:
     items:
     - name: Overview and how-to
       href: ../core/deploying/trim-self-contained.md
+    - name: Intro to trim warnings
+      href: ../core/deploying/fixing-warnings.md
     - name: Options
       href: ../core/deploying/trimming-options.md
     - name: Trimming libraries

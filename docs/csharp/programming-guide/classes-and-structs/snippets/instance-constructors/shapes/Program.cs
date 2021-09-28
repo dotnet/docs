@@ -18,13 +18,9 @@ class Circle : Shape
 {
     public Circle(double radius)
         : base(radius, 0)
-    {
-    }
+    {  }
 
-    public override double Area()
-    {
-        return pi * x * x;
-    }
+    public override double Area() => pi * x * x;
 }
 
 class Cylinder : Circle
@@ -35,31 +31,22 @@ class Cylinder : Circle
         y = height;
     }
 
-    public override double Area()
-    {
-        return (2 * base.Area()) + (2 * pi * x * y);
-    }
+    public override double Area() => (2 * base.Area()) + (2 * pi * x * y);
 }
 
-class TestShapes
+class Example
 {
     static void Main()
     {
         double radius = 2.5;
         double height = 3.0;
 
-        Circle ring = new Circle(radius);
-        Cylinder tube = new Cylinder(radius, height);
-
-        Console.WriteLine("Area of the circle = {0:F2}", ring.Area());
-        Console.WriteLine("Area of the cylinder = {0:F2}", tube.Area());
-
-        // Keep the console window open in debug mode.
-        Console.WriteLine("Press any key to exit.");
-        Console.ReadKey();
+        var ring = new Circle(radius);
+        Console.WriteLine($"Area of the circle = {ring.Area():F2}");
+        // Output: Area of the circle = 19.63
+        
+        var tube = new Cylinder(radius, height);
+        Console.WriteLine($"Area of the cylinder = {tube.Area():F2}");
+        // Output: Area of the cylinder = 86.39
     }
 }
-/* Output:
-    Area of the circle = 19.63
-    Area of the cylinder = 86.39
-*/

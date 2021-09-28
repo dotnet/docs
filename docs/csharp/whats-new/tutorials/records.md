@@ -5,7 +5,7 @@ ms.date: 07/01/2021
 ---
 # Create record types
 
-C# 9 introduces [*records*](../../language-reference/builtin-types/record.md), a new reference type that you can create instead of classes or structs. Records are distinct from classes in that record types use *value-based equality*. Two variables of a record type are equal if the record type definitions are identical, and if for every field, the values in both records are equal. Two variables of a class type are equal if the objects referred to are the same class type and the variables refer to the same object. Value-based equality implies other capabilities you'll probably want in record types. The compiler generates many of those members when you declare a `record` instead of a `class`.
+C# 9 introduces [*records*](../../language-reference/builtin-types/record.md), a new reference type that you can create instead of classes or structs. C# 10 adds *record structs* so that you can define records as value types. Records are distinct from classes in that record types use *value-based equality*. Two variables of a record type are equal if the record type definitions are identical, and if for every field, the values in both records are equal. Two variables of a class type are equal if the objects referred to are the same class type and the variables refer to the same object. Value-based equality implies other capabilities you'll probably want in record types. The compiler generates many of those members when you declare a `record` instead of a `class`. The compiler generates those same methods for `record struct` types.
 
 In this tutorial, you'll learn how to:
 
@@ -21,7 +21,7 @@ You'll need to set up your machine to run .NET 5 or later, including the C# 9.0 
 
 ## Characteristics of records
 
-You define a *record* by declaring a type with the `record` keyword, instead of the `class` or `struct` keyword. A record is a reference type and follows value-based equality semantics. To enforce value semantics, the compiler generates several methods for your record type:
+You define a *record* by declaring a type with the `record` keyword, instead of the `class` or `struct` keyword. Optionally, you can declare a `record class` to clarify that it is a reference type. A record is a reference type and follows value-based equality semantics. You can define a `record struct` to create a record that is a value type. To enforce value semantics, the compiler generates several methods for your record type (both for `record class` types and `record struct` types):
 
 - An override of <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>.
 - A virtual `Equals` method whose parameter is the record type.
@@ -34,7 +34,7 @@ In addition, records provide an override of <xref:System.Object.ToString?display
 You can also declare *positional records* using a more concise syntax. The compiler synthesizes more methods for you when you declare positional records:
 
 - A primary constructor whose parameters match the positional parameters on the record declaration.
-- Public init-only properties for each parameter of a primary constructor.
+- Public properties for each parameter of a primary constructor. These properties are *init-only* for `record class` types and `readonly record struct` types. For `record struct` types, they are *read-write*.
 - A `Deconstruct` method to extract properties from the record.
 
 ## Build temperature data
@@ -45,7 +45,7 @@ The formula is based on the mean temperature on a given day and a baseline tempe
 
 :::code language="csharp" source="snippets/record-types/InterimSteps.cs" ID="DailyRecord":::
 
-The preceding code defines a *positional record*. You've created a reference type that contains two properties: `HighTemp`, and `LowTemp`. Those properties are *init only properties*, meaning they can be set in the constructor or using a property initializer. The `DailyTemperature` type also has a *primary constructor* that has two parameters that match the two properties. You use the primary constructor to initialize a `DailyTemperature` record:
+The preceding code defines a *positional record*. The `DailyTemperature` record is a `readonly record struct`, because you don't intend to inherit from it, and it should be immutable. The `HighTemp` and `LowTemp` properties are *init only properties*, meaning they can be set in the constructor or using a property initializer. If you wanted the positional parameters to be read-write, you declare a `record struct` instead of a `readonly record struct`. The `DailyTemperature` type also has a *primary constructor* that has two parameters that match the two properties. You use the primary constructor to initialize a `DailyTemperature` record:
 
 :::code language="csharp" source="snippets/record-types/Program.cs" ID="DeclareData":::
 
@@ -98,7 +98,7 @@ Your code calculates the correct number of heating and cooling degree days over 
 
 The `TempRecords` element in the console output isn't useful. It displays the type, but nothing else. You can change this behavior by providing your own implementation of the synthesized `PrintMembers` method. The signature depends on modifiers applied to the `record` declaration:
 
-- If a record type is `sealed`, the signature is `private bool PrintMembers(StringBuilder builder);`
+- If a record type is `sealed`, or a `record struct`, the signature is `private bool PrintMembers(StringBuilder builder);`
 - If a record type isn't `sealed` and derives from `object` (that is, it doesn't declare a base record), the signature is `protected virtual bool PrintMembers(StringBuilder builder);`
 - If a record type isn't `sealed` and derives from another record, the signature is `protected override bool PrintMembers(StringBuilder builder);`
 
@@ -129,7 +129,7 @@ In C# 10.0 and later, you can declare the `ToString` method as `sealed` in a rec
 
 ## Non-destructive mutation
 
-The synthesized members in a positional record don't modify the state of the record. The goal is that you can more easily create immutable records. Look again at the preceding declarations for `HeatingDegreeDays` and `CoolingDegreeDays`. The members added perform computations on the values for the record, but don't mutate state. Positional records make it easier for you to create immutable reference types.
+The synthesized members in a positional record class don't modify the state of the record. The goal is that you can more easily create immutable records. Remember that you declare a `readonly record struct` to create an immutable record struct. Look again at the preceding declarations for `HeatingDegreeDays` and `CoolingDegreeDays`. The members added perform computations on the values for the record, but don't mutate state. Positional records make it easier for you to create immutable reference types.
 
 Creating immutable reference types means you'll want to use non-destructive mutation. You  create new record instances that are similar to existing record instances using [`with` expressions](../../language-reference/operators/with-expression.md). These expressions are a copy construction with additional assignments that modify the copy. The result is a new record instance where each property has been copied from the existing record and optionally modified. The original record is unchanged.
 
@@ -151,8 +151,8 @@ Run the finished application to see the results.
 
 ## Summary
 
-This tutorial showed several aspects of records. Records provide concise syntax for reference types where the fundamental use is storing data. For object-oriented classes, the fundamental use is defining responsibilities. This tutorial focused on *positional records*, where you can use a concise syntax to declare the init-only properties for a record. The compiler synthesizes several members of the record for copying and comparing records. You can add any other members you need for your record types. You can create immutable record types knowing that none of the compiler-generated members would mutate state. And `with` expressions make it easy to support non-destructive mutation.
+This tutorial showed several aspects of records. Records provide concise syntax for types where the fundamental use is storing data. For object-oriented classes, the fundamental use is defining responsibilities. This tutorial focused on *positional records*, where you can use a concise syntax to declare the properties for a record. The compiler synthesizes several members of the record for copying and comparing records. You can add any other members you need for your record types. You can create immutable record types knowing that none of the compiler-generated members would mutate state. And `with` expressions make it easy to support non-destructive mutation.
 
-Records add another way to define types. You use `class` definitions to create object-oriented hierarchies that focus on the responsibilities and behavior of objects. You create `struct` types for data structures that store data and are small enough to copy efficiently. You create `record` types when you want value-based equality and comparison, don't want to copy values, and want to use reference variables.
+Records add another way to define types. You use `class` definitions to create object-oriented hierarchies that focus on the responsibilities and behavior of objects. You create `struct` types for data structures that store data and are small enough to copy efficiently. You create `record` types when you want value-based equality and comparison, don't want to copy values, and want to use reference variables. You create `record struct` types when you want the features of records for a type that is small enough to copy efficiently.
 
-You can learn the complete description of records by reading the [C# language reference article for the record type](../../language-reference/builtin-types/record.md) and the [proposed record type specification](~/_csharplang/proposals/csharp-9.0/records.md).
+You can learn the complete description of records by reading the [C# language reference article for the record type](../../language-reference/builtin-types/record.md) and the [proposed record type specification](~/_csharplang/proposals/csharp-9.0/records.md) and [record struct specification](~/csharplang/proposals/csharp-10.0/record-structs.md).

@@ -54,6 +54,33 @@ let myLongValueName =
 // ❌ Not OK
 let myLongValueName = someExpression
                       |> anotherExpression
+
+// ✔️ OK
+let myOtherVeryLongValueName =
+    match
+        someVeryLongExpressionWithManyParameters
+            parameter1
+            parameter2
+            parameter3
+    with
+    | Some _ -> ()
+    | ...
+// ❌ Not OK
+let myOtherVeryLongValueName =
+    match someVeryLongExpressionWithManyParameters parameter1
+                                                   parameter2
+                                                   parameter3 with
+    | Some _ -> ()
+    | ...
+    
+// ❌ Still Not OK
+let myOtherVeryLongValueName =
+    match someVeryLongExpressionWithManyParameters
+              parameter1
+              parameter2
+              parameter3 with
+    | Some _ -> ()
+    | ...
 ```
 
 The primary reasons for avoiding this are:

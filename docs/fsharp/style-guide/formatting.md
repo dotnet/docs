@@ -65,6 +65,7 @@ let myOtherVeryLongValueName =
     with
     | Some _ -> ()
     | ...
+
 // ❌ Not OK
 let myOtherVeryLongValueName =
     match someVeryLongExpressionWithManyParameters parameter1

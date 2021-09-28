@@ -85,7 +85,7 @@ Based on inspection, any developer would consider this code safe, and shouldn't 
 public static bool IsNullOrWhiteSpace([NotNullWhen(false)] string message);
 ```
 
-Attributes provide detailed information about the null state of arguments, return values, and members of the object instance used to invoke a member. The details on each attribute can found in the language reference article on [nullable reference attributes](language-reference/attributes/nullable-analysis.md). The .NET runtime APIs have all been annotated in .NET 5. You improve the static analysis by annotating your APIs to provide semantic information about the *null-state* of arguments and return values.
+Attributes provide detailed information about the null state of arguments, return values, and members of the object instance used to invoke a member. The details on each attribute can be found in the language reference article on [nullable reference attributes](language-reference/attributes/nullable-analysis.md). The .NET runtime APIs have all been annotated in .NET 5. You improve the static analysis by annotating your APIs to provide semantic information about the *null-state* of arguments and return values.
 
 ## Nullable variable annotations
 

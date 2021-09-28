@@ -91,7 +91,7 @@ The features unique to record types are implemented by compiler-synthesized meth
 
 ## Value equality
 
-For any type you define, you can override <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>, and overload [`operator ==`](operators/equality-operator.md#equality-operator-). If you don't override `Equals` or overload `operator ==`, the type you declare governs how equality is defined:
+For any type you define, you can override <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>, and overload [`operator ==`](../operators/equality-operators.md#equality-operator-). If you don't override `Equals` or overload `operator ==`, the type you declare governs how equality is defined:
 
 - For `class` types, two objects are equal if they refer to the same object in memory.
 - For `record` types, two objects are equal if they store the same values, and are the same type.
@@ -132,7 +132,7 @@ The `with` expression can set positional properties or properties created by usi
 
 The result of a `with` expression is a *shallow copy*, which means that for a reference property, only the reference to an instance is copied. Both the original record and the copy end up with a reference to the same instance.
 
-To implement this feature for `record class` types, the compiler synthesizes a clone method and a copy constructor. The virtual clone method returns a new record initialized by the copy constructor. When you use a `with` expression, the compiler creates code that calls the clone method and then sets the properties that are specified in the `with` expression. 
+To implement this feature for `record class` types, the compiler synthesizes a clone method and a copy constructor. The virtual clone method returns a new record initialized by the copy constructor. When you use a `with` expression, the compiler creates code that calls the clone method and then sets the properties that are specified in the `with` expression.
 
 If you need different copying behavior, you can write your own copy constructor. If you do that, the compiler won't synthesize one. Make your constructor `private` if the record is `sealed`, otherwise make it `protected`. You can write a copy constructor for a `record struct`, but that typically isn't needed.
 

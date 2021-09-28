@@ -102,7 +102,7 @@ You use the [struct](../../language-reference/builtin-types/struct.md) keyword t
 
 :::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="Coords":::
 
-For more information about structs, see [Structure types](../../language-reference/builtin-types/struct.md). For more information about value types, see [Value types](../../language-reference/builtin-types/value-types.md). 
+For more information about structs, see [Structure types](../../language-reference/builtin-types/struct.md). For more information about value types, see [Value types](../../language-reference/builtin-types/value-types.md).
 
 The other category of value types is `enum`. An enum defines a set of named integral constants. For example, the <xref:System.IO.FileMode?displayProperty=nameWithType> enumeration in the .NET class library contains a set of named constant integers that specify how a file should be opened. It's defined as shown in the following example:
 

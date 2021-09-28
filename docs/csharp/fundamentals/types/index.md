@@ -74,15 +74,17 @@ Classes and structs are two of the basic constructs of the common type system in
 
 A class, struct, or record declaration is like a blueprint that is used to create instances or objects at run time. If you define a class, struct, or record named `Person`, `Person` is the name of the type. If you declare and initialize a variable `p` of type `Person`, `p` is said to be an object or instance of `Person`. Multiple instances of the same `Person` type can be created, and each instance can have different values in its properties and fields.  
   
-A class or a record is a reference type. When an object of the type is created, the variable to which the object is assigned holds only a reference to that memory. When the object reference is assigned to a new variable, the new variable refers to the original object. Changes made through one variable are reflected in the other variable because they both refer to the same data.
+A class is a reference type. When an object of the type is created, the variable to which the object is assigned holds only a reference to that memory. When the object reference is assigned to a new variable, the new variable refers to the original object. Changes made through one variable are reflected in the other variable because they both refer to the same data.
   
-A struct is a value type. When a struct is created, the variable to which the struct is assigned holds the struct's actual data. When the struct is assigned to a new variable, it's copied. The new variable and the original variable therefore contain two separate copies of the same data. Changes made to one copy don't affect the other copy.  
+A struct is a value type. When a struct is created, the variable to which the struct is assigned holds the struct's actual data. When the struct is assigned to a new variable, it's copied. The new variable and the original variable therefore contain two separate copies of the same data. Changes made to one copy don't affect the other copy.
+
+Record types may be either reference types (`record class`) or value types (`record struct`).
   
 In general, classes are used to model more complex behavior, or data that is intended to be modified after a class object is created. Structs are best suited for small data structures that contain primarily data that isn't intended to be modified after the struct is created. Record types are for larger data structures that contain primarily data that isn't intended to be modified after the object is created.
 
 ### Value types
 
-Value types derive from <xref:System.ValueType?displayProperty=nameWithType>, which derives from <xref:System.Object?displayProperty=nameWithType>. Types that derive from <xref:System.ValueType?displayProperty=nameWithType> have special behavior in the CLR. Value type variables directly contain their values, which means that the memory is allocated inline in whatever context the variable is declared. There's no separate heap allocation or garbage collection overhead for value-type variables.
+Value types derive from <xref:System.ValueType?displayProperty=nameWithType>, which derives from <xref:System.Object?displayProperty=nameWithType>. Types that derive from <xref:System.ValueType?displayProperty=nameWithType> have special behavior in the CLR. Value type variables directly contain their values, which means that the memory is allocated inline in whatever context the variable is declared. There's no separate heap allocation or garbage collection overhead for value-type variables. You can declare `record struct` types that are value types and include the synthesized members for [records](../../language-reference/builtin-types/record.md).
 
 There are two categories of value types: `struct` and `enum`.
 
@@ -100,7 +102,7 @@ You use the [struct](../../language-reference/builtin-types/struct.md) keyword t
 
 :::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="Coords":::
 
-For more information about structs, see [Structure types](../../language-reference/builtin-types/struct.md). For more information about value types, see [Value types](../../language-reference/builtin-types/value-types.md).
+For more information about structs, see [Structure types](../../language-reference/builtin-types/struct.md). For more information about value types, see [Value types](../../language-reference/builtin-types/value-types.md). 
 
 The other category of value types is `enum`. An enum defines a set of named integral constants. For example, the <xref:System.IO.FileMode?displayProperty=nameWithType> enumeration in the .NET class library contains a set of named constant integers that specify how a file should be opened. It's defined as shown in the following example:
 

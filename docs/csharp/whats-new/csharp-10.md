@@ -10,6 +10,7 @@ ms.date: 09/15/2021
 
 C# 10.0 adds the following features and enhancements to the C# language (as of .NET 6 Preview 7):
 
+- [Record structs](#record-structs)
 - [Improvements of structure types](#improvements-of-structure-types)
 - [`global using` directives](#global-using-directives)
 - [File-scoped namespace declaration](#file-scoped-namespace-declaration)
@@ -24,6 +25,10 @@ Some of the features you can try are available only when you set your language v
 C# 10.0 is supported on **.NET 6**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
 You can download the latest .NET 6.0 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022 preview](https://visualstudio.microsoft.com/vs/preview/vs2022/), which includes the .NET 6.0 preview SDK.
+
+## Record structs
+
+You can declare value type records using the [`record struct` or `readonly record struct` declarations](../language-reference/builtin-types/record.md). You can now clarify that a `record` is a reference type with the `record class` declaration.
 
 ## Improvements of structure types
 

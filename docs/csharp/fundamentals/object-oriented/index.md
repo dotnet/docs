@@ -92,25 +92,17 @@ Within a class or struct method, you can use implicit typing to instruct the com
 
 ## Records
 
-C# 9 introduces the `record` type, a reference type that you can create instead of a class or a struct. Records are classes with built-in behavior for encapsulating data in immutable types. A record provides the following features:
+C# 9 introduces the `record` type, a reference type that you can create instead of a class or a struct. Records are classes with built-in behavior for encapsulating data in immutable types. C# 10 introduces the `record struct` value type. A record (either `record class` or `record struct`) provides the following features:
 
 * Concise syntax for creating a reference type with immutable properties.
-
 * Value equality.
-
   Two variables of a record type are equal if the record type definitions are identical, and if for every field, the values in both records are equal. This differs from classes, which use reference equality: two variables of a class type are equal if they refer to the same object.
-
 * Concise syntax for nondestructive mutation.
-
   A `with` expression lets you create a new record instance that is a copy of an existing instance but with specified property values changed.
-
 * Built-in formatting for display.
-
   The `ToString` method prints the record type name and the names and values of public properties.
-
-* Support for inheritance hierarchies.
-
-  Inheritance is supported because a record is a class under the covers, not a struct.
+* Support for inheritance hierarchies in record classes.
+  Inheritance is supported because a record class is a class under the covers, not a struct. Record structs are structs, and don't support inheritance.
 
 For more information, see [Records](../../language-reference/builtin-types/record.md).
 

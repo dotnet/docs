@@ -8,14 +8,14 @@ helpviewer_keywords:
 ---
 # Introduction to records
 
-A [record](../../language-reference/builtin-types/record.md) is a [class](../../language-reference/keywords/class.md) that provides special syntax and behavior for working with data models. For information about classes, see [Classes](classes.md).
+A [record](../../language-reference/builtin-types/record.md) is a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/keywords/struct.md) that provides special syntax and behavior for working with data models.
 
 ## When to use records
 
-Consider using a record in place of a class in the following scenarios:
+Consider using a record in place of a class or struct in the following scenarios:
 
 * You want to define a data model that depends on [value equality](../../programming-guide/statements-expressions-operators/equality-comparisons.md#value-equality).
-* You want to define a reference type for which objects are immutable.
+* You want to define a type for which objects are immutable.
 
 ### Value equality
 
@@ -29,15 +29,17 @@ An immutable type is one that prevents you from changing any property or field v
 
 Immutability isn't appropriate for all data scenarios. [Entity Framework Core](/ef/core/), for example, doesn't support updating with immutable entity types.
 
-## How records differ from classes
+## How records differ from classes and structs
 
-The same syntax that [declares](classes.md#declaring-classes) and [instantiates](classes.md#creating-objects) classes can be used with records. Just substitute the `record` keyword for the `class` keyword. Likewise, the same syntax for expressing inheritance relationships is supported by records. Records differ from classes in the following ways:
+The same syntax that [declares](classes.md#declaring-classes) and [instantiates](classes.md#creating-objects) classes or structs can be used with records. Just substitute the `record` keyword for the `class` keyword, or use `record struct` instead of `struct`. Likewise, the same syntax for expressing inheritance relationships is supported by record classes. Records differ from classes in the following ways:
 
 * You can use [positional parameters](../../language-reference/builtin-types/record.md#positional-syntax-for-property-definition) to create and instantiate a type with immutable properties.
 * The same methods and operators that indicate reference equality or inequality in classes (such as <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> and `==`), indicate [value equality or inequality](../../language-reference/builtin-types/record.md#value-equality) in records.
 * You can use a [`with` expression](../../language-reference/builtin-types/record.md#nondestructive-mutation) to create a copy of an immutable object with new values in selected properties.
 * A record's `ToString` method creates a formatted string that shows an object's type name and the names and values of all its public properties.
 * A record can [inherit from another record](../../language-reference/builtin-types/record.md#inheritance). A record can't inherit from a class, and a class can't inherit from a record.
+
+Record structs differ from structs in that the compiler synthesizes the methods for equality, and `ToString`.
 
 ## Examples
 

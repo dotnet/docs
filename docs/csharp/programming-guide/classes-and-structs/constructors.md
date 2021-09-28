@@ -1,20 +1,16 @@
 ---
-title: "Constructors - C# Programming Guide"
+title: "Constructors - C# programming guide"
 description: A constructor in C# is called when a class or struct is created. Use constructors to set defaults, limit instantiation, and write flexible, easy-to-read code.
-ms.date: 05/05/2017
+ms.date: 09/27/2021
 helpviewer_keywords: 
   - "constructors [C#]"
   - "classes [C#], constructors"
   - "C# language, constructors"
 ms.assetid: df2e2e9d-7998-418b-8e7d-890c17ff6c95
 ---
-# Constructors (C# Programming Guide)
+# Constructors (C# programming guide)
 
-Whenever a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md) is created, its constructor is called. A class or struct may have multiple constructors that take different arguments. Constructors enable the programmer to set default values, limit instantiation, and write code that is flexible and easy to read. For more information and examples, see [Using Constructors](./using-constructors.md) and [Instance Constructors](./instance-constructors.md).  
-
-## Parameterless constructors
-  
-If you don't provide a constructor for your class, C# creates one by default that instantiates the object and sets member variables to the default values as listed in the [Default values of C# types](../../language-reference/builtin-types/default-values.md) article. If you don't provide a constructor for your struct, C# relies on an *implicit parameterless constructor* to automatically initialize each field to its default value. For more information and examples, see [Instance constructors](instance-constructors.md).  
+Whenever a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md) is created, its constructor is called. A class or struct may have multiple constructors that take different arguments. Constructors enable the programmer to set default values, limit instantiation, and write code that is flexible and easy to read. For more information and examples, see [Instance constructors](instance-constructors.md) and [Using constructors](using-constructors.md).
 
 ## Constructor syntax
 
